@@ -128,7 +128,7 @@ public class MyApp
 
 When the code runs, the runtime loads the module into memory and consults the metadata for this class. Once loaded, the runtime performs extensive analysis of the method's common intermediate language (CIL) stream to convert it to fast native machine instructions. The runtime uses a just-in-time (JIT) compiler to convert the CIL instructions to native machine code one method at a time as needed.
 
-The following example shows part of the CIL produced from the previous code's `Main` function. You can view the CIL and metadata from any .NET application using the [CIL Disassembler (Ildasm.exe)](../framework/tools/ildasm-exe-il-disassembler.md).
+The following example shows part of the CIL produced from the previous code's `Main` function. You can view the CIL and metadata from any .NET application using the [IL Disassembler (Ildasm.exe)](../framework/tools/ildasm-exe-il-disassembler.md).
 
 ```console
 .entrypoint

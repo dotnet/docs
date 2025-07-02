@@ -90,8 +90,6 @@ sudo zypper install krb5
 
 For more information about the dependencies, see [Self-contained Linux apps](https://github.com/dotnet/core/blob/main/Documentation/self-contained-linux-apps.md).
 
-[!INCLUDE [linux-libgdiplus-general](includes/linux-libgdiplus-general.md)]
-
 ## Next steps
 
 - [.NET CLI overview](../tools/index.md)

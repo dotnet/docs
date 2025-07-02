@@ -29,7 +29,7 @@ Expression body definitions can be used with the following type members:
 
 An expression-bodied method consists of a single expression that returns a value whose type matches the method's return type, or, for methods that return `void`, that performs some operation. For example, types that override the <xref:System.Object.ToString%2A> method typically include a single expression that returns the string representation of the current object.
 
-The following example defines a `Person` class that overrides the <xref:System.Object.ToString%2A> method with an expression body definition. It also defines a `DisplayName` method that displays a name to the console. The `return` keyword is not used in the `ToString` expression body definition.
+The following example defines a `Person` class that overrides the <xref:System.Object.ToString%2A> method with an expression body definition. It also defines a `DisplayName` method that displays a name to the console. Additionally, it includes several methods that take parameters, demonstrating how expression-bodied members work with method parameters. The `return` keyword is not used in any of the expression body definitions.
 
 [!code-csharp[expression-bodied-methods](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/ExpressionBodiedMembers/expr-bodied-methods.cs)]
 
@@ -69,7 +69,7 @@ For more information about events, see [Events (C# Programming Guide)](../events
 
 An expression body definition for a constructor typically consists of a single assignment expression or a method call that handles the constructor's arguments or initializes instance state.
 
-The following example defines a `Location` class whose constructor has a single string parameter named *name*. The expression body definition assigns the argument to the `Name` property.
+The following example defines a `Location` class whose constructor has a single string parameter named *name*. The expression body definition assigns the argument to the `Name` property. The example also shows a `Point` class with constructors that take multiple parameters, demonstrating how expression-bodied constructors work with different parameter combinations.
 
 [!code-csharp[expression-bodied-constructor](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/ExpressionBodiedMembers/expr-bodied-ctor.cs#1)]
 

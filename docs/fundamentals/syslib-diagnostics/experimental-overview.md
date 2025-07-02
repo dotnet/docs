@@ -2,7 +2,13 @@
 title: Experimental features in .NET 9+
 titleSuffix: ""
 description: Learn about APIs that are marked as experimental in .NET 9 and later versions that produce SYSLIB compiler warnings.
-ms.date: 10/21/2024
+ms.date: 06/09/2025
+f1_keywords:
+  - syslib5001
+  - syslib5002
+  - syslib5004
+  - syslib5005
+  - syslib5006
 ---
 
 # Experimental features in .NET 9+
@@ -17,13 +23,14 @@ Since each experimental feature has a separate ID, consenting to using one exper
 
 The following table provides an index to the `SYSLIB5XXX` experimental APIs in .NET 9+.
 
-| Diagnostic ID                 | Experimental version | Description                                                          |
-|-------------------------------|----------------------|----------------------------------------------------------------------|
-| SYSLIB5001                    | .NET 9               | <xref:System.Numerics.Tensors.Tensor%601> and related APIs in <xref:System.Numerics.Tensors> are experimental |
-| SYSLIB5002                    | .NET 9               | <xref:System.Drawing.SystemColors> alternate colors are experimental |
-| [SYSLIB5003](./syslib5003.md) | .NET 9               | <xref:System.Runtime.Intrinsics.Arm.Sve> is experimental             |
-| SYSLIB5004                    | .NET 9               | <xref:System.Runtime.Intrinsics.X86.X86Base.DivRem(System.UInt32,System.Int32,System.Int32)> is experimental since performance is not as optimized as `T.DivRem` |
-| SYSLIB5005                    | .NET 9               | <xref:System.Formats.Nrbf> is experimental                           |
+| Diagnostic ID                 | Introduced | Description                                                          |
+|-------------------------------|------------|----------------------------------------------------------------------|
+| SYSLIB5001                    | .NET 9     | <xref:System.Numerics.Tensors.Tensor%601> and related APIs in <xref:System.Numerics.Tensors> are experimental |
+| SYSLIB5002                    | .NET 9     | <xref:System.Drawing.SystemColors> alternate colors are experimental |
+| [SYSLIB5003](./syslib5003.md) | .NET 9     | <xref:System.Runtime.Intrinsics.Arm.Sve> is experimental             |
+| SYSLIB5004                    | .NET 9     | <xref:System.Runtime.Intrinsics.X86.X86Base.DivRem(System.UInt32,System.Int32,System.Int32)> is experimental since performance is not as optimized as `T.DivRem` |
+| SYSLIB5005                    | .NET 9     | <xref:System.Formats.Nrbf> is experimental                           |
+| SYSLIB5006                    | .NET 10    | Types for post-quantum cryptography (PQC) are experimental.          |
 
 ## Suppress warnings
 

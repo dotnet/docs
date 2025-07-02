@@ -2,7 +2,7 @@
 title: System.Globalization.CultureAndRegionInfoBuilder class
 description: Learn more about the System.Globalization.CultureAndRegionInfoBuilder class.
 ms.date: 01/09/2024
-ms.topic: conceptual
+ms.topic: concept-article
 ---
 # <xref:System.Globalization.CultureAndRegionInfoBuilder> class
 

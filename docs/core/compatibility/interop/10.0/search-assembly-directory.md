@@ -1,6 +1,6 @@
 ---
 title: "Breaking change - Specifying DllImportSearchPath.AssemblyDirectory only searches the assembly directory"
-description: "Learn about the breaking change in .NET 10 Preview 5 where specifying DllImportSearchPath.AssemblyDirectory as the only search flag restricts the search to the assembly directory."
+description: "Learn about the breaking change in .NET 10 where specifying DllImportSearchPath.AssemblyDirectory as the only search flag restricts the search to the assembly directory."
 ms.date: 5/9/2025
 ai-usage: ai-assisted
 ms.custom: https://github.com/dotnet/docs/issues/45911
@@ -18,20 +18,18 @@ Starting in .NET 10, if you specify <xref:System.Runtime.InteropServices.DllImpo
 
 When <xref:System.Runtime.InteropServices.DllImportSearchPath.AssemblyDirectory?displayProperty=nameWithType> was specified as the only search flag, the runtime searched the assembly directory first. If the library was not found, it fell back to the operating system's default library search behavior.
 
-Example:
+For example, with the following code, the runtime would search the assembly directory and then fall back to the OS search paths.
 
 ```csharp
 [DllImport("example.dll", DllImportSearchPath = DllImportSearchPath.AssemblyDirectory)]
 public static extern void ExampleMethod();
 ```
 
-In this case, the runtime would search the assembly directory and then fall back to the OS search paths.
-
 ## New behavior
 
-When <xref:System.Runtime.InteropServices.DllImportSearchPath.AssemblyDirectory?displayProperty=nameWithType> is specified as the only search flag, the runtime searches only in the assembly directory. It does not fall back to the operating system's default library search behavior.
+When <xref:System.Runtime.InteropServices.DllImportSearchPath.AssemblyDirectory?displayProperty=nameWithType> is specified as the only search flag, the runtime searches only in the assembly directory. It *doesn't* fall back to the operating system's default library search behavior.
 
-The previous code example would now only search the assembly directory for *example.dll*. If the library is not found there, a <xref:System.DllNotFoundException> will be thrown.
+The previous code example now only searches the assembly directory for *example.dll*. If the library is not found there, a <xref:System.DllNotFoundException> is thrown.
 
 ## Type of breaking change
 
@@ -57,3 +55,7 @@ public static extern void ExampleMethod();
 - P/Invokes using <xref:System.Runtime.InteropServices.DefaultDllImportSearchPathsAttribute>
 - <xref:System.Runtime.InteropServices.NativeLibrary.Load*?displayProperty=fullName>
 - <xref:System.Runtime.InteropServices.NativeLibrary.TryLoad*?displayProperty=fullName>
+
+## See also
+
+- [Single-file apps no longer look for native libraries in executable directory](native-library-search.md)

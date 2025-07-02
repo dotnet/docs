@@ -21,7 +21,7 @@ It's slightly more efficient and straightforward to call a `TryParse` method (fo
 You use `Parse` or `TryParse` methods on the numeric type you expect the string contains, such as the <xref:System.Int32?displayProperty=nameWithType> type. The <xref:System.Convert.ToInt32%2A?displayProperty=nameWithType> method uses <xref:System.Int32.Parse%2A> internally. The `Parse` method returns the converted number; the `TryParse` method returns a boolean value that indicates whether the conversion succeeded, and returns the converted number in an `out` parameter. If the string isn't in a valid format, `Parse` throws an exception, but `TryParse` returns `false`. When calling a `Parse` method, you should always use exception handling to catch a <xref:System.FormatException> when the parse operation fails.
 
 > [!TIP]
-> You can use AI assistance to [convert a string to a number with GitHub Copilot](#use-github-copilot-to-convert-a-string-to-a-number).
+> You can use AI assistance to [convert a string to a number](#use-ai-to-convert-a-string-to-a-number).
 
 ## Call Parse or TryParse methods
 
@@ -55,9 +55,9 @@ The following example calls the <xref:System.Convert.ToInt32%28System.String%29?
 
 [!code-csharp[Parsing with Convert methods](~/samples/snippets/csharp/programming-guide/string-to-number/convert/program.cs)]
 
-## Use GitHub Copilot to convert a string to a number
+## Use AI to convert a string to a number
 
-You can use GitHub Copilot in your IDE to generate C# code to convert a string to a number. You can customize the prompt to use a string per your requirements.
+You can use AI tools, such as GitHub Copilot, to generate C# code to convert a string to a number. You can customize the prompt to use a string per your requirements.
 
 The following text shows an example prompt for Copilot Chat:
 
@@ -67,4 +67,7 @@ Show me how to parse a string as a number, but don't throw an exception if the i
 
 GitHub Copilot is powered by AI, so surprises and mistakes are possible. For more information, see [Copilot FAQs](https://aka.ms/copilot-general-use-faqs).
 
-Learn more about [GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states) and [GitHub Copilot in VS Code](https://code.visualstudio.com/docs/copilot/overview).
+## See also
+
+- [GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states)
+- [GitHub Copilot in VS Code](https://code.visualstudio.com/docs/copilot/overview)

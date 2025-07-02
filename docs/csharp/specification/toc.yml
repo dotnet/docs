@@ -79,6 +79,8 @@ items:
       href: ../../../_csharplang/proposals/csharp-10.0/enhanced-line-directives.md
     - name: "Escape sequence '\\e'"
       href: ../../../_csharplang/proposals/csharp-13.0/esc-escape-sequence.md
+    - name: "Ignored directives"
+      href: ../../../_csharplang/proposals/ignored-directives.md
   - name: Basic concepts
     items:
     - name: Top-level statements
@@ -135,8 +137,6 @@ items:
     items:
     - name: Ranges
       href: ../../../_csharplang/proposals/csharp-8.0/ranges.md
-    - name: Null coalescing assignment
-      href: ../../../_csharplang/proposals/csharp-8.0/null-coalescing-assignment.md
     - name: Target-typed new expressions
       href: ../../../_csharplang/proposals/csharp-9.0/target-typed-new.md
     - name: Target-typed conditional expression
@@ -177,6 +177,8 @@ items:
       href: ../../../_csharplang/proposals/csharp-13.0/overload-resolution-priority.md
     - name: Null conditional assignment
       href: ../../../_csharplang/proposals/null-conditional-assignment.md
+    - name: User defined compound assignment operators
+      href: ../../../_csharplang/proposals/user-defined-compound-assignment.md
   - name: Statements
     items:
     - name: Global using directive
@@ -187,8 +189,6 @@ items:
       href: ../../../_csharplang/proposals/csharp-9.0/local-function-attributes.md
     - name: Pattern based using and using declarations
       href: ../../../_csharplang/proposals/csharp-8.0/using.md
-    - name: Async streams
-      href: ../../../_csharplang/proposals/csharp-8.0/async-streams.md
     - name: Lock object semantics
       href: ../../../_csharplang/proposals/csharp-13.0/lock-object.md
     - name: Allow `ref` and `unsafe`

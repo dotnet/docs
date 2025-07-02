@@ -24,7 +24,7 @@ The `System.Text.Json` namespace provides functionality for serializing to and d
 * .NET Core 2.0, 2.1, and 2.2
 
 > [!TIP]
-> You can use AI assistance to [migrate from `Newtonsoft.Json`](#use-github-copilot-to-migrate).
+> You can use AI assistance to [migrate from `Newtonsoft.Json`](#use-ai-to-migrate).
 
 `System.Text.Json` focuses primarily on performance, security, and standards compliance. It has some key differences in default behavior and doesn't aim to have feature parity with `Newtonsoft.Json`. For some scenarios, `System.Text.Json` currently has no built-in functionality, but there are recommended workarounds. For other scenarios, workarounds are impractical.
 
@@ -630,9 +630,9 @@ System.Text.Json sets limits that can't be changed for some values, such as the 
 
 Newtonsoft parses `NaN`, `Infinity`, and `-Infinity` JSON string tokens. With System.Text.Json, use <xref:System.Text.Json.Serialization.JsonNumberHandling.AllowNamedFloatingPointLiterals?displayProperty=nameWithType>. For information about how to use this setting, see [Allow or write numbers in quotes](invalid-json.md#allow-or-write-numbers-in-quotes).
 
-## Use GitHub Copilot to migrate
+## Use AI to migrate
 
-You can get coding help from GitHub Copilot to migrate your code from `Newtonsoft.Json` to `System.Text.Json` within your IDE. You can customize the prompt per your requirements.
+You can use AI tools, such as GitHub Copilot, to migrate your code from `Newtonsoft.Json` to `System.Text.Json` within your IDE. You can customize the prompt per your requirements.
 
 **Example prompt for Copilot Chat**
 
@@ -651,9 +651,9 @@ Console.WriteLine(output);
 
 GitHub Copilot is powered by AI, so surprises and mistakes are possible. For more information, see [Copilot FAQs](https://aka.ms/copilot-general-use-faqs).
 
-Learn more about [GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states) and [GitHub Copilot in VS Code](https://code.visualstudio.com/docs/copilot/overview).
-
 ## Additional resources
 
 * [System.Text.Json overview](overview.md)
 * [How to serialize and deserialize JSON](how-to.md)
+* [GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states)
+* [GitHub Copilot in VS Code](https://code.visualstudio.com/docs/copilot/overview)

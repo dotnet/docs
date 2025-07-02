@@ -2,7 +2,7 @@ When you're assigned an issue that's labeled "breaking-change", or when you're g
 
 The document should be in Markdown format.
 
-Ignore all breaking change documentation under https://github.com/dotnet/docs/tree/main/docs/framework/migration-guide - that is for legacy .NET Framework breaking changes. Modern .NET breaking changes live in the https://github.com/dotnet/docs/tree/main/docs/core/compatibility folder and its subfolders.
+Ignore all breaking change documentation under https://github.com/dotnet/docs/tree/main/docs/framework/migration-guide - that's for legacy .NET Framework breaking changes. Modern .NET breaking changes live in the https://github.com/dotnet/docs/tree/main/docs/core/compatibility folder and its subfolders.
 
 Rephrase all content to be clear and concise, if necessary.
 
@@ -56,6 +56,6 @@ h2: Affected APIs
 
    (A bullet list of APIs that are affected by the change. If there are no affected APIs (or "No response") write "None.". Use xref-style links as described in the copilot-instructions.md file. At the end of each doc ID, add "?displayProperty=fullName", for example "<xref:System.String?displayProperty=fullName>".)
 
-Then, add the new document to both the "By area" and "By version" sections of the TOC file located at https://github.com/dotnet/docs/blob/main/docs/core/compatibility/toc.yml. Also add an entry to the index file under the appropriate area H2 heading in the https://github.com/dotnet/docs/blob/main/docs/core/compatibility/10.0.md file by adding a row to the table (create a new heading/table if it doesn't exist yet).
+Then, add the new document to the TOC file located at https://github.com/dotnet/docs/blob/main/docs/core/compatibility/toc.yml. Also add an entry to the index file under the appropriate area H2 heading in the https://github.com/dotnet/docs/blob/main/docs/core/compatibility/10.0.md file by adding a row to the table (create a new heading/table if it doesn't exist yet).
 
 Next, create a pull request. In the description, include the text "Fixes #\<issue-number>", where "issue-number" is the GitHub issue number.

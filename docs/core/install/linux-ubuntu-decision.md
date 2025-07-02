@@ -339,14 +339,9 @@ When you install with a package manager, these libraries are installed for you. 
 - libssl1.1 (for 18.x, 20.x)
 - libssl3 (for 22.x or later)
 - libstdc++6
-- libunwind8 (for 22.x or later)
 - zlib1g
 
 [!INCLUDE [linux-ubuntu-deps-example](includes/linux-ubuntu-deps-example.md)]
-
-[!INCLUDE [linux-libgdiplus-general](includes/linux-libgdiplus-general.md)]
-
-You can install a recent version of *libgdiplus* by [adding the Mono repository to your system](https://www.mono-project.com/download/stable/#download-lin-ubuntu).
 
 ## Next steps
 

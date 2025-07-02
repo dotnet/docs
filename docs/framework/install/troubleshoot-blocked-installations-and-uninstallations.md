@@ -1,7 +1,7 @@
 ---
 title: "Troubleshoot blocked .NET Framework installations and uninstallations"
 description: "Troubleshoot issues you encounter that prevent installation of the .NET Framework. Consult status messages for information to resolve issues."
-ms.date: "04/18/2019"
+ms.date: "06/19/2025"
 helpviewer_keywords:
   - ".NET Framework, troubleshooting blocked installations"
   - "blocked .NET Framework installations, troubleshooting"
@@ -11,6 +11,9 @@ ms.assetid: c3fdfbc1-ed99-4202-a2b0-8c4f1646385d
 # Troubleshoot blocked .NET Framework installations and uninstallations
 
 When you run the [web or offline installer](guide-for-developers.md) for the .NET Framework 4.5 or later versions, you might encounter an issue that prevents or blocks the installation of the .NET Framework. The following table lists possible blocking issues and provides links to troubleshooting information.
+
+> [!NOTE]
+> To install or uninstall current versions of .NET (not .NET Framework), visit [the .NET site](https://dotnet.microsoft.com/download) to download the latest versions. For uninstalling newer versions of .NET, see [.NET uninstall tool](../../core/additional-tools/uninstall-tool-overview.md).
 
 In Windows 8 and above, the .NET Framework is an operating system component and cannot be independently uninstalled. Updates to the .NET Framework appear in the **Installed Updates** tab of the Control Panel **Programs and Features** app. For operating systems on which the .NET Framework is not preinstalled, the .NET Framework appears in the **Uninstall or change a program** tab (or the **Add/Remove programs** tab) of the **Program and Features** app in Control Panel. For information on the Windows versions on which the .NET Framework is preinstalled, see [System Requirements](../get-started/system-requirements.md).
 

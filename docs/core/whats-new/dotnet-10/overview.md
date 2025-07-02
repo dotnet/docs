@@ -2,14 +2,14 @@
 title: What's new in .NET 10
 description: Learn about the new features introduced in .NET 10 for the runtime, libraries, and SDK. Also find links to what's new in other areas, such as ASP.NET Core.
 titleSuffix: ""
-ms.date: 05/15/2025
+ms.date: 06/09/2025
 ms.topic: whats-new
 ai-usage: ai-assisted
 ---
 
 # What's new in .NET 10
 
-Learn about the new features in .NET 10 and find links to further documentation. This page is updated for Preview 4.
+Learn about the new features in .NET 10 and find links to further documentation. This page is updated for Preview 5.
 
 .NET 10, the successor to [.NET 9](../dotnet-9/overview.md), is [supported for three years](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) as a long-term support (LTS) release. You can [download .NET 10 here](https://get.dot.net/10).
 
@@ -54,6 +54,8 @@ C# 14 introduces several new features and enhancements to improve developer prod
 - Support for partial instance constructors and partial events, complementing partial methods and properties introduced in C# 13.
 - New `extension` blocks add support for static extension methods, and static and instance extension properties.
 - Null-conditional assignment using the `?.` operator.
+- User-defined compound assignment operators like `+=` and `-=`.
+- User-defined increment (`++`) and decrement (`--`) operators.
 
 For more information, see [What's new in C# 14](../../../csharp/whats-new/csharp-14.md).
 

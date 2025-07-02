@@ -3,6 +3,7 @@ title: What's new in C# 14
 description: Get an overview of the new features in C# 14. C# 14 ships with .NET 10.
 ms.date: 04/17/2025
 ms.topic: whats-new
+ms.update-cycle: 180-days
 ---
 # What's new in C# 14
 
@@ -15,6 +16,7 @@ C# 14 includes the following new features. You can try these features using the 
 - [Modifiers on simple lambda parameters](#simple-lambda-parameters-with-modifiers)
 - [`field` backed properties](#the-field-keyword)
 - [`partial` events and constructors](#more-partial-members)
+- [user-defined compound assignment operators](#user-defined-compound-assignment)
 
 C# 14 is supported on **.NET 10**. For more information, see [C# language versioning](../language-reference/configure-language-version.md).
 
@@ -135,6 +137,10 @@ Partial constructors and partial events must include exactly one *defining decla
 Only the implementing declaration of a partial constructor can include a constructor initializer: `this()` or `base()`. Only one partial type declaration can include the primary constructor syntax.
 
 The implementing declaration of a partial event must include `add` and `remove` accessors. The defining declaration declares a field-like event.
+
+## User defined compound assignment
+
+You can learn more in the feature specification for [user-defined compound assignment](~/_csharplang/proposals/user-defined-compound-assignment.md).
 
 ## Null-conditional assignment
 

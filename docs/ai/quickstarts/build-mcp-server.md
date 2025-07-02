@@ -80,7 +80,7 @@ Configure GitHub Copilot for Visual Studio Code to use your custom MCP server:
 
 1. Open GitHub Copilot in Visual Studio Code and switch to chat mode.
 
-1. Select the **Select tools** icon to verify your **SampleMcpServer** is available with both tools listed.
+1. Select the **Select tools** icon to verify your **SampleMcpServer** is available with the sample tool listed.
 
     :::image type="content" source="../media/mcp/available-tools-nuget.png" alt-text="A screenshot showing the available MCP tools.":::
 
@@ -102,31 +102,34 @@ Configure GitHub Copilot for Visual Studio Code to use your custom MCP server:
     Your random number is 42.
     ```
 
-## Adding inputs and configuration options (optional)
+## Adding inputs and configuration options
 
-In this example, enhance the MCP server to use a configuration value set in an environment variable. This could be configuration needed for the functioning of your MCP server such as an API key, an endpoint to connect to, or a local directory path depending on the purpose of your MCP server.
+In this example, enhance the MCP server to use a configuration value set in an environment variable. This could be configuration needed for the functioning of your MCP server such as an API key, an endpoint to connect to, or a local directory path depending on your needs.
 
-1. Update the tool code to use an environment variable. Replace the `GetRandomNumber` method in `Tools/RandomNumberTools.cs` to the following:
+1. Update the tool code to use an environment variable. Add another tool method after the `GetRandomNumber` method in `Tools/RandomNumberTools.cs`:
 
    ```csharp
-   [McpServerTool(Name = "get_random_number")]
-   [Description("Generates a random number between a provided min and a max value defined by MAX_RANDOM_NUMBER.")]
-   public int GetRandomNumber(
-       [Description("Minimum value (inclusive)")] int min = 0)
+   [McpServerTool(Name = "get_city_weather")]
+   [Description("Describes random weather in the provided city.")]
+   public string GetRandomWeather(
+       [Description("Name of the city to return weather for")] string city)
    {
        // Read the environment variable during tool execution.
        // Alternatively, this could be read during startup and passed via IOptions dependency injection
-       var maxEnv = Environment.GetEnvironmentVariable("MAX_RANDOM_NUMBER");
-       if (string.IsNullOrEmpty(maxEnv) || !int.TryParse(maxEnv, out var max))
+       var weather = Environment.GetEnvironmentVariable("WEATHER_CHOICES");
+       if (string.IsNullOrWhitespace(weather))
        {
-           max = 100;
+           weather = "balmy,rainy,stormy";
        }
 
-       return Random.Shared.Next(min, max);
-   }
+       var weatherChoices = weather.Split(",");
+       var selectedWeatherIndex =  Random.Shared.Next(0, weatherChoices.Length);
+
+       return $"The weather in {city} is {weatherChoices[selectedWeatherIndex]}.";
+    }
    ```
 
-1. Update the `.vscode/mcp.json` to set the `MAX_RANDOM_NUMBER` environment variable for testing.
+1. Update the `.vscode/mcp.json` to set the `WEATHER_CHOICES` environment variable for testing.
 
    ```json
    {
@@ -140,7 +143,7 @@ In this example, enhance the MCP server to use a configuration value set in an e
             "<RELATIVE PATH TO PROJECT DIRECTORY>"
           ],
           "env": {
-             "MAX_RANDOM_NUMBER": 1000
+             "WEATHER_CHOICES": "sunny,humid,freezing"
           }
         }
       }
@@ -150,14 +153,14 @@ In this example, enhance the MCP server to use a configuration value set in an e
 1. Try another prompt with Copilot in VS Code, such as:
 
     ```console
-    Give me a random number greater than 500.
+    What is the weather in Redmond, Washington?
     ```
 
-    VS Code should return a random number between 500 and 1000.
+    VS Code should return a random weather description.
 
 1. Update the `.mcp/server.json` to declare your environment variable input. The `server.json` file schema is defined by the [MCP Registry project](https://github.com/modelcontextprotocol/registry/blob/main/docs/server-json/README.md) and is used by NuGet.org to generate VS Code MCP configuration.
 
-   Use the `environment_variables` property to declare environment variables used by your app and that will be set by the tool (for example, VS Code) using the MCP server. You can use `package_arguments` to define CLI arguments that will be passed to your app. See the MCP Registry project for [more examples](https://github.com/modelcontextprotocol/registry/blob/main/docs/server-json/examples.md).
+   Use the `environment_variables` property to declare environment variables used by your app and that will be set by the client using the MCP server (for example, VS Code). You can use `package_arguments` to define CLI arguments that will be passed to your app. See the MCP Registry project for [more examples](https://github.com/modelcontextprotocol/registry/blob/main/docs/server-json/examples.md).
 
    ```json
    {
@@ -171,8 +174,8 @@ In this example, enhance the MCP server to use a configuration value set in an e
          "package_arguments": [],
          "environment_variables": [
            {
-             "name": "MAX_RANDOM_NUMBER",
-             "description": "Maximum random number to generate",
+             "name": "WEATHER_CHOICES",
+             "description": "Comma separated list of weather descriptions to randomly select.",
              "is_required": true,
              "is_secret": false
            }
@@ -189,7 +192,9 @@ In this example, enhance the MCP server to use a configuration value set in an e
    }
    ```
 
-   The only information used by NuGet.org in the `server.json` is the first `packages` array item with the `registry_name` value matching `nuget`. The other top level properties aside from the `packages` property are currently unused and are intended for the upcoming central MCP Registry. You can leave the placeholder values until the MCP Registry is live and ready for accepting MCP server entries.
+   The only information used by NuGet.org in the `server.json` is the first `packages` array item with the `registry_name` value matching `nuget`. The other top-level properties aside from the `packages` property are currently unused and are intended for the upcoming central MCP Registry. You can leave the placeholder values until the MCP Registry is live and ready to accept MCP server entries.
+
+You can [test your MCP server again](#test-the-mcp-server) before moving forward.
 
 ## Pack and publish to NuGet
 
@@ -202,7 +207,13 @@ In this example, enhance the MCP server to use a configuration value set in an e
 1. Publish the package to NuGet:
 
     ```bash
-    dotnet nuget push bin/Release/*.nupkg --api-key <your-api-key> --source https://api.nuget.org/v3/index.json  
+    dotnet nuget push bin/Release/*.nupkg --api-key <your-api-key> --source https://api.nuget.org/v3/index.json
+    ```
+
+    If you want to test the publishing flow before publishing to NuGet.org, you can register an account on the NuGet Gallery integration environment: [https://int.nugettest.org](https://int.nugettest.org). The `push` command would be modified to:
+
+    ```bash
+    dotnet nuget push bin/Release/*.nupkg --api-key <your-api-key> --source https://apiint.nuget.org/v3/index.json
     ```
 
 For more information, see [Publish a package](/nuget/nuget-org/publish-a-package).
@@ -220,8 +231,8 @@ For more information, see [Publish a package](/nuget/nuget-org/publish-a-package
      "inputs": [
        {
          "type": "promptString",
-         "id": "input-max-random-number",
-         "description": "Maximum random number to generate",
+         "id": "weather-choices",
+         "description": "Comma separated list of weather descriptions to randomly select.",
          "password": false
        }
      ],
@@ -236,38 +247,38 @@ For more information, see [Publish a package](/nuget/nuget-org/publish-a-package
            "--yes"
          ],
          "env": {
-           "MAX_RANDOM_NUMBER": "${input:input-max-random-number}"
+           "WEATHER_CHOICES": "${input:weather-choices}"
          }
        }
      }
    }
    ```
 
-   This will use the package from NuGet.org instead of your local build.
+   If you published to the NuGet Gallery integration environment, you need to add `"--add-source", "https://apiint.nuget.org/v3/index.json"` at the end of the `"args"` array above.
 
 1. Save the file.
 
 1. In GitHub Copilot, select the **Select tools** icon to verify your **SampleMcpServer** is available with the tools listed.
 
-1. Enter a prompt to run the **get_random_number** tool:
+1. Enter a prompt to run the new **get_city_weather** tool:
 
     ```console
-    Give me a random number greater than 25.
+    What is the weather in Redmond?
     ```
 
-1. If you add inputs to your MCP server (for example, `MAX_RANDOM_NUMBER`), you will be prompted to set this input.
+1. If you added inputs to your MCP server (for example, `WEATHER_CHOICES`), you will be prompted to provide values.
 
-1. Verify that the server responds with a random number:
+1. Verify that the server responds with the random weather:
 
     ```output
-    Your random number is 521.
+    The weather in Redmond is balmy.
     ```
 
 ## Common issues
 
 ### The command "dnx" needed to run SampleMcpServer was not found.
 
-If VS Code shows this error when starting the MCP server, then you need to install a compatible version of the .NET SDK.
+If VS Code shows this error when starting the MCP server, you need to install a compatible version of the .NET SDK.
 
 :::image type="content" source="../media/mcp/missing-dnx.png" alt-text="A screenshot showing the missing dnx command in VS Code.":::
 

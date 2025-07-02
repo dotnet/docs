@@ -206,7 +206,7 @@ These environment variables are used only when running apps via generated execut
         -  `DOTNET_ROOT_ARM64` is used for an arm64 process
         -  `DOTNET_ROOT_X64`  is used for an x64 process. This may be running on x64 or arm64 architecture.
         - `DOTNET_ROOT_X86`  is used for an x86 process. This may be running on x86 or x64 architecture.
-2. If running 32-bit executable on 64-bit OS, `DOTNET_ROOT(x86)` is considered.
+2. `DOTNET_ROOT(x86)` is used when running 32-bit process on 64-bit Windows. In other cases this environment variable is ignored.
 3. `DOTNET_ROOT` is used as a fallback.
 
 ### `DOTNET_HOST_PATH`

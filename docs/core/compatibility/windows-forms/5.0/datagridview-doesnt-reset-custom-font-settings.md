@@ -15,7 +15,7 @@ Starting in .NET 5, if you configure font settings in the <xref:System.Windows.F
 
 ## Reason for change
 
-With the [change of the default font in .NET Core 3.0](../../winforms.md#default-control-font-changed-to-segoe-ui-9-pt), the default font settings for the various cell styles also changed. This behavior is undesirable for apps that rely on custom styling in their <xref:System.Windows.Forms.DataGridViewElement.DataGridView> controls, and impeded the migration of these apps from .NET Framework to .NET 5.0.
+With the [change of the default font in .NET Core 3.0](../../3.0.md#windows-forms), the default font settings for the various cell styles also changed. This behavior is undesirable for apps that rely on custom styling in their <xref:System.Windows.Forms.DataGridViewElement.DataGridView> controls, and impeded the migration of these apps from .NET Framework to .NET 5.0.
 
 ## Version introduced
 

@@ -13,7 +13,7 @@ public class ObjectInitializerWithoutNew
     public class Person
     {
         public string Name { get; set; } = "";
-        public Address HomeAddress { get; set; } = new Address(); // Property with setter
+        public Address HomeAddress { get; set; } = new(); // Property with setter
     }
 
     public static void Examples()
@@ -57,7 +57,7 @@ public class ReadOnlyPropertyExample
     {
         public string Name { get; set; } = "";
         // This property is read-only - it can only be set during construction
-        public Settings AppSettings { get; } = new Settings();
+        public Settings AppSettings { get; } = new();
     }
 
     public static void Example()

@@ -4,17 +4,15 @@ namespace ContravarianceExample
 {
     // <snippet1>
     // Custom EventArgs classes to demonstrate the hierarchy
-    public class KeyEventArgs : EventArgs
+    public class KeyEventArgs(string keyCode) : EventArgs
     {
-        public string KeyCode { get; set; }
-        public KeyEventArgs(string keyCode) => KeyCode = keyCode;
+        public string KeyCode { get; set; } = keyCode;
     }
 
-    public class MouseEventArgs : EventArgs  
+    public class MouseEventArgs(int x, int y) : EventArgs  
     {
-        public int X { get; set; }
-        public int Y { get; set; }
-        public MouseEventArgs(int x, int y) { X = x; Y = y; }
+        public int X { get; set; } = x;
+        public int Y { get; set; } = y;
     }
 
     // Define delegate types that match the Windows Forms pattern
@@ -130,9 +128,6 @@ namespace ContravarianceExample
         {
             var form = new Form1();
             form.DemonstrateEvents();
-            
-            Console.WriteLine("\nPress any key to exit...");
-            Console.ReadKey();
         }
     }
 }

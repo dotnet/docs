@@ -79,11 +79,11 @@ This is contravariance in action: you can use a method with a "less specific" (b
   
 ### Code  
 
-[!code-csharp[Contravariance example](snippets/using-variance-in-delegates/ContravarianceExample.cs#snippet1)]
+:::code language="csharp" source="snippets/using-variance-in-delegates/ContravarianceExample.cs" id="snippet1":::
 
 ### Key points about contravariance
 
-[!code-csharp[Contravariance explanation](snippets/using-variance-in-delegates/ContravarianceExample.cs#snippet2)]
+:::code language="csharp" source="snippets/using-variance-in-delegates/ContravarianceExample.cs" id="snippet2":::
 
 When you run this example, you'll see that the same `MultiHandler` method successfully handles both key and mouse events, demonstrating how contravariance enables more flexible and reusable event handling code.  
   

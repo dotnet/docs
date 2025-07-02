@@ -104,7 +104,7 @@ Configure GitHub Copilot for Visual Studio Code to use your custom MCP server:
 
 ## Adding inputs and configuration options (optional)
 
-First, we will enhance the MCP server to require an environment variable to to run. This could be an configuration needed for the functioning of your MCP server.
+In this example, enhance the MCP server to use a value set in an environment variable. This could be a configuration needed for the functioning of your MCP server such as an API key, an endpoint to connect to, or local directory path depending on the purpose of your MCP server.
 
 1. Update the tool code to use an environment variable. Update the `GetRandomNumber` method in `Tools/RandomNumberTools.cs` to the following:
 
@@ -155,7 +155,7 @@ First, we will enhance the MCP server to require an environment variable to to r
 
 1. Update the `.mcp/server.json` to declare your environment variable input for MCP clients. The `server.json` file schema is defined by the [MCP Registry project](https://github.com/modelcontextprotocol/registry/blob/main/docs/server-json/README.md) and is used by NuGet.org to generate VS Code MCP configuration.
 
-   Use `environment_variables` to declare environment variables used by your app and will be set by the tool (e.g. VS Code) using the MCP server. Use `package_arguments` to define CLI arguments that will be passed to your app. See the MCP Registry project for [more examples](https://github.com/modelcontextprotocol/registry/blob/main/docs/server-json/examples.md).
+   Use `environment_variables` to declare environment variables used by your app and that will be set by the tool (for example, VS Code) using the MCP server. Use `package_arguments` to define CLI arguments that will be passed to your app. See the MCP Registry project for [more examples](https://github.com/modelcontextprotocol/registry/blob/main/docs/server-json/examples.md).
    
    ```json
    {
@@ -187,7 +187,7 @@ First, we will enhance the MCP server to require an environment variable to to r
    }
    ```
 
-   The only information used by NuGet.org is the `packages` item with the `registry_name` value matching `nuget`. Other information outside of the `packages` property is currently unused and is intended for the upcoming central MCP Registry.
+   The only information used by NuGet.org in the `server.json` is the first `packages` array item with the `registry_name` value matching `nuget`. The other top level properties aside from the `packages` property are currently unused and are intended for the upcoming central MCP Registry. You can leave the placeholder values until the MCP Registry is live and ready for accepting MCP server entries.
 
 ## Pack and publish to NuGet
 
@@ -251,7 +251,7 @@ For more information, see [Publish a package](/nuget/nuget-org/publish-a-package
     Give me a random number greater than 25.
     ```
 
-1. If you adding inputs to your MCP server (i.e. `MAX_RANDOM_NUMBER`), you will be prompted to set this input.
+1. If you add inputs to your MCP server (for example, `MAX_RANDOM_NUMBER`), you will be prompted to set this input.
 
 1. Verify that the server responds with a random number:
 

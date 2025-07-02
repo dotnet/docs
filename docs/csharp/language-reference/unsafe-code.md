@@ -22,7 +22,7 @@ C# supports an [`unsafe`](keywords/unsafe.md) context, in which you can write *u
 Unsafe code has the following properties:
 
 - Methods, types, and code blocks can be defined as unsafe.
-- In some cases, unsafe code can increase an application's performance by removing array bounds checks.
+- Unsafe code enables algorithms that can potentially increase an application's performance by using pointers to avoid array bounds checks.
 - Unsafe code is required when you call native functions that require pointers.
 - Using unsafe code introduces security and stability risks.
 - The code that contains unsafe blocks must be compiled with the [**AllowUnsafeBlocks**](compiler-options/language.md#allowunsafeblocks) compiler option.

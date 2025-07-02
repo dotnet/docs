@@ -1,35 +1,44 @@
 ---
 title: Application publishing
 description: Learn about the ways to publish a .NET application. .NET can publish platform-specific or cross-platform apps. You can publish an app as self-contained or as framework-dependent. Each mode affects how a user runs your app.
-ms.date: 03/18/2024
+ms.date: 07/01/2025
 ---
 
 # .NET application publishing overview
 
-Applications you create with .NET can be published in two different modes, and the mode affects how a user runs your app.
+INTRO PARA
 
-Publishing your app as *self-contained* produces an application that includes the .NET runtime and libraries, and your application and its dependencies. Users of the application can run it on a machine that doesn't have the .NET runtime installed.
+## What is publishing
 
-Publishing your app as *framework-dependent* produces an application that includes only your application itself and its dependencies. Users of the application have to separately install the .NET runtime.
+Publishing a .NET app means compiling source code to create an executable or binary, along with its dependencies and related files, for distribution. After publishing, you deploy the app to a server, distribution platform, container, or cloud environment. The publishing process prepares an app for deployment and use outside of your development environment.
 
-Both publishing modes produce a platform-specific executable by default. Framework-dependent applications can be created without an executable, and these applications are cross-platform.
+## Publishing modes
 
-When an executable is produced, you can specify the target platform with a runtime identifier (RID). For more information about RIDs, see [.NET RID Catalog](../rid-catalog.md).
+There are two primary ways to publish an app, and depending on how you're going to deploy your app, you would choose one or the other. The choice largly depends on if the deployment environment has the appropriate .NET Runtime installed. The two publishing modes are:
+
+- Publish *self-contained*\
+This mode produces a publishing folder that includes a platform-specific executable used to start the app, a compiled binary containing app code, any app dependencies, and the .NET runtime required to run the app. The environment that runs the app doesn't need have the .NET runtime pre-installed.
+
+- Publishing *framework-dependent*\
+This mode produces a publishing folder that includes a platform-specific executable used to start the app, a compiled binary containing your app code, and any app dependencies. The environment that runs the app must have an version of the .NET runtime installed that the app can use. An optional platform-specific executable can be producted.
+
+> [!IMPORTANT]
+> When an executable is produced, you can specify the target platform with a runtime identifier (RID). For more information about RIDs, see [.NET RID Catalog](../rid-catalog.md).
 
 The following table outlines the commands used to publish an app as framework-dependent or self-contained:
 
-| Type | Command |
-|--|--|
-| [framework-dependent executable](#publish-framework-dependent) for the current platform. | [`dotnet publish`](../tools/dotnet-publish.md) |
-| [framework-dependent executable](#publish-framework-dependent) for a specific platform. | [`dotnet publish -r <RID>`](../tools/dotnet-publish.md) |
-| [framework-dependent binary](#publish-framework-dependent). | [`dotnet publish`](../tools/dotnet-publish.md) |
-| [self-contained executable](#publish-self-contained). | [`dotnet publish -r <RID> --self-contained`](../tools/dotnet-publish.md) |
+| Type                                                                                     | Command                                                                  |
+|------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
+| [framework-dependent executable](#publish-framework-dependent) for the current platform. | [`dotnet publish`](../tools/dotnet-publish.md)                           |
+| [framework-dependent executable](#publish-framework-dependent) for a specific platform.  | [`dotnet publish -r <RID>`](../tools/dotnet-publish.md)                  |
+| [framework-dependent binary](#publish-framework-dependent).                              | [`dotnet publish`](../tools/dotnet-publish.md)                           |
+| [self-contained executable](#publish-self-contained).                                    | [`dotnet publish -r <RID> --self-contained`](../tools/dotnet-publish.md) |
 
 For more information, see [.NET dotnet publish command](../tools/dotnet-publish.md).
 
 ## Produce an executable
 
-Executables aren't cross-platform, they're specific to an operating system and CPU architecture. When publishing your app and creating an executable, you can publish the app as [self-contained](#publish-self-contained) or [framework-dependent](#publish-framework-dependent). Publishing an app as self-contained includes the .NET runtime with the app, and users of the app don't have to worry about installing .NET before running the app. Publishing an app as framework-dependent doesn't include the .NET runtime; only the app and third-party dependencies are included.
+Executables aren't cross-platform, they're specific to an operating system and CPU architecture. When publishing your app and creating an executable, you can publish the app as [self-contained](#publish-self-contained) or [framework-dependent](#publish-framework-dependent). Publishing an app as self-contained includes the .NET runtime with the app, meaning, users don't have to worry about installing .NET before running the app. Publishing an app as framework-dependent doesn't include the .NET runtime; only the app and third-party dependencies are included.
 
 The following commands produce an executable:
 
@@ -41,7 +50,7 @@ The following commands produce an executable:
 
 ## Produce a cross-platform binary
 
-Cross-platform binaries are created when you publish your app as [framework-dependent](#publish-framework-dependent), in the form of a *dll* file. The *dll* file is named after your project. For example, if you have an app named **word_reader**, a file named *word_reader.dll* is created. Apps published in this way are run with the `dotnet <filename.dll>` command and can be run on any platform.
+Cross-platform binaries are created when the app is published as [framework-dependent](#publish-framework-dependent), in the form of a *dll* file. The *dll* file is named after the project. For example, if you have an app named **word_reader**, a file named *word_reader.dll* is created. Apps published in this way are run with the `dotnet <filename.dll>` command.
 
 Cross-platform binaries can be run on any operating system as long as the targeted .NET runtime is already installed. If the targeted .NET runtime isn't installed, the app may run using a newer runtime if the app is configured to roll-forward. For more information, see [framework-dependent apps roll forward](../versions/selection.md#framework-dependent-apps-roll-forward).
 

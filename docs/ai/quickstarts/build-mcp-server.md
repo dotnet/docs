@@ -220,7 +220,7 @@ For more information, see [Publish a package](/nuget/nuget-org/publish-a-package
 
 ## Discover MCP servers on NuGet.org
 
-1. Search for your MCP server package on [NuGet.org](https://www.nuget.org/packages?packagetype=mcpserver) and select it from the list.
+1. Search for your MCP server package on [NuGet.org](https://www.nuget.org/packages?packagetype=mcpserver) (or [int.nugettest.org](https://int.nugettest.org/packages?packagetype=mcpserver) if you published to the integration environment) and select it from the list.
 
 1. View the package details and copy the JSON from the "MCP Server" tab.
 

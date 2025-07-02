@@ -164,7 +164,7 @@ namespace LinqFaroShuffle
 ```
 
 > [!NOTE]
-> If you're using an editor other than Visual Studio (such as Visual Studio Code), you might need to add `using LinqFaroShuffle;` to the top of your `Program.cs` file for the extension methods to be accessible. Visual Studio automatically adds this using statement, but other editors might not.
+> If you're using an editor other than Visual Studio (such as Visual Studio Code), you might need to add `using LinqFaroShuffle;` to the top of your _Program.cs_ file for the extension methods to be accessible. Visual Studio automatically adds this using statement, but other editors might not.
 
 Look at the method signature for a moment, specifically the parameters:
 

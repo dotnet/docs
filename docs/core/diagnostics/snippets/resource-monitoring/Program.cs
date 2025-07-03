@@ -19,6 +19,11 @@ await app.StartAsync();
 
 using var cancellationTokenSource = new CancellationTokenSource();
 var token = cancellationTokenSource.Token;
+Console.CancelKeyPress += (_, e) =>
+{
+    e.Cancel = true;
+    cancellationTokenSource.Cancel();
+};
 
 // <monitor>
 await StartMonitoringAsync(monitor, token);
@@ -64,11 +69,5 @@ async Task StartMonitoringAsync(IResourceMonitor monitor, CancellationToken canc
                 await Task.Delay(window);
             }
         });
-
-    Console.CancelKeyPress += (_, e) =>
-    {
-        e.Cancel = true;
-        cancellationTokenSource.Cancel();
-    };
 }
 // </monitor>

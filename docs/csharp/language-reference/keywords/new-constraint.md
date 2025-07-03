@@ -2,6 +2,10 @@
 description: "new constraint - C# Reference"
 title: "new constraint"
 ms.date: 07/20/2015
+f1_keywords:
+  - "newconstraint"
+  - "newconstraint_CSharpKeyword"
+  - "new_CSharpKeyword"
 helpviewer_keywords: 
   - "new constraint keyword [C#]"
 ms.assetid: 58850b64-cb97-4136-be50-1f3bc7fc1da9

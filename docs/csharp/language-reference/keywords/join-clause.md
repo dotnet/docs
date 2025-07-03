@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "join"
   - "join_CSharpKeyword"
+  - "in_CSharpKeyword"
 helpviewer_keywords: 
   - "join clause [C#]"
   - "join keyword [C#]"

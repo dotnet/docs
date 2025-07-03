@@ -2,6 +2,14 @@
 title: "Method parameters and modifiers"
 description: "Parameter modifiers enable pass-by-reference semantics, with distinctions for read-only, and `out` parameters. The `params` modifier allows optional arguments."
 ms.date: 11/19/2024
+f1_keywords:
+  - "in_CSharpKeyword"
+  - "out_CSharpKeyword"
+  - "ref_CSharpKeyword"
+  - "params_CSharpKeyword"
+  - "inparametermodifier"
+  - "outparametermodifier"
+  - "refparametermodifier"
 helpviewer_keywords: 
   - "methods [C#], parameters"
   - "method parameters [C#]"

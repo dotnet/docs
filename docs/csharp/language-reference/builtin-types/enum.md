@@ -5,6 +5,7 @@ ms.date: 12/13/2019
 f1_keywords:
   - "enum"
   - "enum_CSharpKeyword"
+  - "enumconstraint"
 helpviewer_keywords:
   - "enum keyword [C#]"
   - "enum type [C#]"

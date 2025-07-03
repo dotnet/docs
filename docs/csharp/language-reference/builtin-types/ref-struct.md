@@ -2,6 +2,12 @@
 title: "ref struct types"
 description: Learn about the ref struct type in C#
 ms.date: 01/27/2025
+f1_keywords:
+  - "refstruct"
+  - "refstruct_CSharpKeyword"
+  - "ref_CSharpKeyword"
+helpviewer_keywords:
+  - "ref struct [C#]"
 ---
 # `ref` structure types (C# reference)
 

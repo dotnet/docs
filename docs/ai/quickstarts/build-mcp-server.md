@@ -110,26 +110,7 @@ In this example, you enhance the MCP server to use a configuration value set in 
 
 1. Add another tool method after the `GetRandomNumber` method in `Tools/RandomNumberTools.cs`. Update the tool code to use an environment variable.
 
-   ```csharp
-   [McpServerTool(Name = "get_city_weather")]
-   [Description("Describes random weather in the provided city.")]
-   public string GetCityWeather(
-       [Description("Name of the city to return weather for")] string city)
-   {
-       // Read the environment variable during tool execution.
-       // Alternatively, this could be read during startup and passed via IOptions dependency injection
-       var weather = Environment.GetEnvironmentVariable("WEATHER_CHOICES");
-       if (string.IsNullOrWhitespace(weather))
-       {
-           weather = "balmy,rainy,stormy";
-       }
-
-       var weatherChoices = weather.Split(",");
-       var selectedWeatherIndex =  Random.Shared.Next(0, weatherChoices.Length);
-
-       return $"The weather in {city} is {weatherChoices[selectedWeatherIndex]}.";
-    }
-   ```
+   :::code language="csharp" source="snippets/mcp-server/GetCityWeather.cs" :::
 
 1. Update the `.vscode/mcp.json` to set the `WEATHER_CHOICES` environment variable for testing.
 

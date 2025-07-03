@@ -174,7 +174,7 @@ The following lists the recommended packages:
 - `dotnet-host` - dependency
   - **Version:** \<runtime version>
   - **Example:** dotnet-host
-  - **Contains:** (1),(8),(9),(10),(16)
+  - **Contains:** (1),(8),(9),(10),(16),(22)
 
 - `dotnet-apphost-pack-[major].[minor]` - dependency
   - **Version:** \<runtime version>

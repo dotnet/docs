@@ -1628,7 +1628,7 @@ The following table lists valid values. You can specify multiple values, separat
 | --- | --- |
 | `AppLocal` | App executable's folder |
 | `AppRelative` | Path relative to the app executable as specified by [AppHostRelativeDotNet](#apphostrelativedotnet) |
-| `EnvironmentVariables` | Value of [`DOTNET_ROOT[_<arch>]`](../tools/dotnet-environment-variables.md#dotnet_root-dotnet_rootx86-dotnet_root_x86-dotnet_root_x64) environment variables |
+| `EnvironmentVariable` | Value of [`DOTNET_ROOT[_<arch>]`](../tools/dotnet-environment-variables.md#dotnet_root-dotnet_rootx86-dotnet_root_x86-dotnet_root_x64) environment variables |
 | `Global` | [Registered](https://github.com/dotnet/designs/blob/main/accepted/2020/install-locations.md#global-install-to-custom-location) and [default](https://github.com/dotnet/designs/blob/main/accepted/2020/install-locations.md#global-install-to-default-location) global install locations |
 
 This property was introduced in .NET 9.

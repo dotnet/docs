@@ -61,7 +61,7 @@ Configure GitHub Copilot for Visual Studio Code to use your custom MCP server:
    ```json
    {
      "servers": {
-       "MinimalMcpServer": {
+       "SampleMcpServer": {
          "type": "stdio",
          "command": "dotnet",
          "args": [
@@ -117,7 +117,7 @@ In this example, you enhance the MCP server to use a configuration value set in 
    ```json
    {
       "servers": {
-        "MinimalMcpServer": {
+        "SampleMcpServer": {
           "type": "stdio",
           "command": "dotnet",
           "args": [

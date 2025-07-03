@@ -47,7 +47,7 @@ You use declaration and type patterns to check if the run-time type of an expres
 
 A *declaration pattern* with type `T` matches an expression when an expression result is non-null and any of the following conditions are true:
 
-- The run-time type of an expression result is exactly `T`.
+- The run-time type of an expression result has an identity conversion to `T`.
 - The type `T` is a `ref struct` type and there is an identity conversion from the expression to `T`.
 - The run-time type of an expression result derives from type `T`, implements interface `T`, or another [implicit reference conversion](~/_csharpstandard/standard/conversions.md#1028-implicit-reference-conversions) exists from it to `T`. This covers inheritance relationships and interface implementations. The following example demonstrates two cases when this condition is true:
   :::code language="csharp" source="snippets/patterns/DeclarationAndTypePatterns.cs" id="ReferenceConversion":::

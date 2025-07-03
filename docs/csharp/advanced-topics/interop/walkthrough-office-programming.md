@@ -137,8 +137,8 @@ COM objects use reference counting for memory management, which is different fro
 **Why do you use separate methods with MethodImpl(MethodImplOptions.NoInlining)?**
 The .NET JIT compiler can extend object lifetimes until the end of a method, which means local variable assignments to null aren't guaranteed to release references immediately. By factoring out COM object creation and usage into separate non-inlineable methods, you ensure that object references truly go out of scope when the method returns, allowing reliable cleanup.
 
-**Why call GC.Collect() and GC.WaitForPendingFinalizers()?**
-These calls force immediate garbage collection, which helps ensure that any remaining RCWs are cleaned up promptly. While not always strictly necessary, they provide additional safety in COM interop scenarios.
+**Do I need to call GC.Collect() and GC.WaitForPendingFinalizers()?**
+With the separate non-inlineable method pattern, these calls are typically not necessary. The pattern ensures that COM object references go out of scope reliably when the method returns. However, you can optionally add these calls after the separate method call for additional safety in scenarios where you want to force immediate cleanup.
 
 **What happens if I don't follow this pattern?**
 Without proper cleanup, Office applications remain running in the background even after your application exits. You can verify this by checking Task Manager - you'll see excel.exe or winword.exe processes that weren't properly terminated. These orphaned processes consume memory and can cause issues with future Office automation.

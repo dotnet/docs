@@ -39,7 +39,7 @@ To refer to the `static` member `x`, use the fully qualified name, `MyBaseC.MySt
 Console.WriteLine(MyBaseC.MyStruct.x);
 ```
 
-While an instance of a class contains a separate copy of all instance fields of the class, there's only one copy of each `static` field.
+While an instance of a class contains a separate copy of all instance fields of the class, there's only one copy of each `static` field. For generic types, each closed generic type has its own copy of static fields.
 
 It isn't possible to use [`this`](this.md) to reference `static` methods or property accessors.
 

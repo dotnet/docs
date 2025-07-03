@@ -102,7 +102,7 @@ Configure GitHub Copilot for Visual Studio Code to use your custom MCP server:
     Your random number is 42.
     ```
 
-## Adding inputs and configuration options
+## Add inputs and configuration options
 
 In this example, enhance the MCP server to use a configuration value set in an environment variable. This could be configuration needed for the functioning of your MCP server such as an API key, an endpoint to connect to, or a local directory path depending on your needs.
 

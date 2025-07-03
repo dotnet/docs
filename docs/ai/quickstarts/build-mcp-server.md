@@ -108,7 +108,7 @@ The MCP server template includes a tool called `get_random_number` you can use f
 
 In this example, you enhance the MCP server to use a configuration value set in an environment variable. This could be configuration needed for the functioning of your MCP server, such as an API key, an endpoint to connect to, or a local directory path.
 
-1. Update the tool code to use an environment variable. Add another tool method after the `GetRandomNumber` method in `Tools/RandomNumberTools.cs`:
+1. Add another tool method after the `GetRandomNumber` method in `Tools/RandomNumberTools.cs`. Update the tool code to use an environment variable.:
 
    ```csharp
    [McpServerTool(Name = "get_city_weather")]

@@ -5,7 +5,6 @@ ms.date: 01/27/2025
 f1_keywords:
   - "refstruct"
   - "refstruct_CSharpKeyword"
-  - "ref_CSharpKeyword"
 helpviewer_keywords:
   - "ref struct [C#]"
 ---

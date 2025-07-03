@@ -5,7 +5,6 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "from_CSharpKeyword"
   - "from"
-  - "in_CSharpKeyword"
 helpviewer_keywords: 
   - "from clause [C#]"
   - "from keyword [C#]"

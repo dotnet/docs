@@ -5,7 +5,6 @@ ms.date: 04/17/2025
 f1_keywords:
   - "extension_CSharpKeyword"
   - "extension"
-  - "this_CSharpKeyword"
 helpviewer_keywords:
   - "extension methods [C#]"
   - "this parameter modifier [C#]"

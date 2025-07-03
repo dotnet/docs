@@ -207,7 +207,11 @@ For more information, see [Publish a package](/nuget/nuget-org/publish-a-package
 
 1. Search for your MCP server package on [NuGet.org](https://www.nuget.org/packages?packagetype=mcpserver) (or [int.nugettest.org](https://int.nugettest.org/packages?packagetype=mcpserver) if you published to the integration environment) and select it from the list.
 
+   :::image type="content" source="../media/mcp/nuget-mcp-search.png" alt-text="A screenshot showing a search for MCP servers on NuGet.org.":::
+
 1. View the package details and copy the JSON from the "MCP Server" tab.
+
+   :::image type="content" source="../media/mcp/nuget-mcp-display.png" alt-text="A screenshot showing a specific MCP server displayed on NuGet.org.":::
 
 1. In your `mcp.json` file in the `.vscode` folder, add the copied JSON, which looks like this:
 

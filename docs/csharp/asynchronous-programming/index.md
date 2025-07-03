@@ -273,13 +273,13 @@ Consider a scenario where you need to perform multiple sequential asynchronous o
 
 With `ContinueWith`, each step in a sequence of asynchronous operations requires nested continuations:
 
-:::code language="csharp" source="snippets/index/ContinueWith-comparison/Program.cs" range="14-36":::
+:::code language="csharp" source="snippets/index/ContinueWith-comparison/Program.cs" range="18-54":::
 
 ### Using async/await
 
 The same sequence of operations using `async`/`await` reads much more naturally:
 
-:::code language="csharp" source="snippets/index/ContinueWith-comparison/Program.cs" range="39-54":::
+:::code language="csharp" source="snippets/index/ContinueWith-comparison/Program.cs" range="57-73":::
 
 ### Why async/await is preferred
 

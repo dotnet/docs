@@ -137,7 +137,7 @@ In .NET 9 and later versions, you can configure the .NET installation search pat
 
 - `AppLocal`: app executable's folder
 - `AppRelative`: path relative to the app executable
-- `EnvironmentVariables`: value of [`DOTNET_ROOT[_<arch>]`](../tools/dotnet-environment-variables.md#dotnet_root-dotnet_rootx86-dotnet_root_x86-dotnet_root_x64) environment variables
+- `EnvironmentVariable`: value of [`DOTNET_ROOT[_<arch>]`](../tools/dotnet-environment-variables.md#dotnet_root-dotnet_rootx86-dotnet_root_x86-dotnet_root_x64) environment variables
 - `Global`: [registered](https://github.com/dotnet/designs/blob/main/accepted/2020/install-locations.md#global-install-to-custom-location) and [default](https://github.com/dotnet/designs/blob/main/accepted/2020/install-locations.md#global-install-to-default-location) global install locations
 
 `AppHostRelativeDotNet` specifies the path relative to the executable that will be searched when `AppHostDotNetSearch` contains `AppRelative`.

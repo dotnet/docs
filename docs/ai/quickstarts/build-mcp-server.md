@@ -226,7 +226,7 @@ For more information, see [Publish a package](/nuget/nuget-org/publish-a-package
 
 1. View the package details and copy the JSON from the "MCP Server" tab.
 
-1. In your `mcp.json` file in the `.vscode` folder, add the copied JSON, which will look like:
+1. In your `mcp.json` file in the `.vscode` folder, add the copied JSON, which looks like this:
 
    ```json
    {

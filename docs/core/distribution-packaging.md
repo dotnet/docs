@@ -70,6 +70,7 @@ When installed, .NET consists of several components that are laid out as follows
 │       └── dotnet.1.gz          (9)
 └── usr/bin
         └── dotnet               (10)
+        └── dnx                  (23)
 ```
 
 - (0) **{dotnet_root}** is a shared root for all .NET major and minor versions. If multiple runtimes are installed, they share the **{dotnet_root}** folder, for example, `{dotnet_root}/shared/Microsoft.NETCore.App/6.0.11` and `{dotnet_root}/shared/Microsoft.NETCore.App/7.0.0`. The name of the `{dotnet_root}` folder should be version agnostic, that is, simply `dotnet`.
@@ -96,7 +97,7 @@ The **shared** folder contains frameworks. A shared framework provides a set of 
 
 - (8) **LICENSE.txt,ThirdPartyNotices.txt** are the .NET license and licenses of third-party libraries used in .NET, respectively.
 
-- (9,10) **dotnet.1.gz, dotnet** `dotnet.1.gz` is the dotnet manual page. `dotnet` is a symlink to the dotnet host(1). These files are installed at well-known locations for system integration.
+- (9,10, 23) **dotnet.1.gz, dotnet** `dotnet.1.gz` is the dotnet manual page. `dotnet` is a symlink to the dotnet host(1). `dnx` is a symlink to the `dnx` shell script (22). These files are installed at well-known locations for system integration.
 
 - (11,12) **Microsoft.NETCore.App.Ref,Microsoft.AspNetCore.App.Ref** describe the API of an `x.y` version of .NET and ASP.NET Core respectively. These packs are used when compiling for those target versions.
 

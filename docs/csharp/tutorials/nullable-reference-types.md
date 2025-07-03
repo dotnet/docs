@@ -124,7 +124,7 @@ namespace NullableIntroduction
 }
 ```
 
-As before, you must initialize the list object to a non-null value or the compiler issues a warning. There are no null checks in the second overload of `AddQuestion` because they aren't needed: You've declared that variable to be non-nullable. Its value can't be `null`.
+As before, you must initialize the list object to a non-null value or the compiler issues a warning. There are no null checks in the second overload of `AddQuestion` because the compiler helps enforce the non-nullable contract: You've declared that variable to be non-nullable. While the compiler warns about potential null assignments, runtime null values are still possible. For public APIs, consider adding argument validation even for non-nullable reference types, since client code might not have nullable reference types enabled or could intentionally pass null.
 
 Switch to *Program.cs* in your editor and replace the contents of `Main` with the following lines of code:
 
@@ -203,7 +203,7 @@ Finally, add the following loop at the bottom of the `Main` method:
 
 :::code language="csharp" source="./snippets/NullableIntroduction/Program.cs" id="WriteAnswers":::
 
-You don't need any `null` checks in this code because you've designed the underlying interfaces so that they all return non-nullable reference types.
+You don't need any `null` checks in this code because you've designed the underlying interfaces so that they all return non-nullable reference types. The compiler's static analysis helps ensure these design contracts are followed.
 
 ## Get the code
 

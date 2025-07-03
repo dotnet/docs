@@ -88,15 +88,15 @@ The property grid in the visualizer updates as shown in the following figure: Th
 
 ![Symbol properties in Syntax Visualizer](media/syntax-visualizer/symbol-properties.png)
 
-Try **View TypeSymbol (if any)** for the same **AddExpression** node. The property grid in the visualizer updates as shown in the following figure, indicating that the type of the selected expression is `Int32`.
+Right-click the same **AddExpression** node and select **View TypeSymbol (if any)**. The property grid in the visualizer updates as shown in the following figure, indicating that the type of the selected expression is `Int32`.
 
 ![TypeSymbol properties](media/syntax-visualizer/type-symbol-properties.png)
 
-Try **View Converted TypeSymbol (if any)** for the same **AddExpression** node. The property grid updates indicating that although the type of the expression is `Int32`, the converted type of the expression is `Double` as shown in the following figure. This node includes converted type symbol information because the `Int32` expression occurs in a context where it must be converted to a `Double`. This conversion satisfies the `Double` type specified for the variable `x` on the left-hand side of the assignment operator.
+Right-click the same **AddExpression** node and select **View Converted TypeSymbol (if any)**. The property grid updates indicating that although the type of the expression is `Int32`, the converted type of the expression is `Double` as shown in the following figure. This node includes converted type symbol information because the `Int32` expression occurs in a context where it must be converted to a `Double`. This conversion satisfies the `Double` type specified for the variable `x` on the left-hand side of the assignment operator.
 
 ![Converted TypeSymbol properties](media/syntax-visualizer/converted-type-symbol-properties.png)
 
-Finally, try **View Constant Value (if any)** for the same **AddExpression** node. The property grid shows that the value of the expression is a compile time constant with value `2`.
+Finally, right-click the same **AddExpression** node and select **View Constant Value (if any)**. The property grid shows that the value of the expression is a compile time constant with value `2`.
 
 ![A constant value](media/syntax-visualizer/constant-value.png)
 
@@ -118,17 +118,17 @@ This code introduces an alias named `C` that maps to the type `System.Console` a
 
 ![Properties for the symbol `C` in Syntax Visualizer](media/syntax-visualizer/symbol-visual-basic.png)
 
-Try **View AliasSymbol (if any)** for the same **IdentifierName** node. The property grid indicates the identifier is an alias with name `C` that is bound to the `System.Console` target. In other words, the property grid provides information regarding the **AliasSymbol** corresponding to the identifier `C`.
+Right-click the same **IdentifierName** node and select **View AliasSymbol (if any)**. The property grid indicates the identifier is an alias with name `C` that is bound to the `System.Console` target. In other words, the property grid provides information regarding the **AliasSymbol** corresponding to the identifier `C`.
 
 ![AliasSymbol properties](media/syntax-visualizer/alias-symbol.png)
 
-Inspect the symbol corresponding to any declared type, method, property. Select the corresponding node in the visualizer and click on **View Symbol (if any)**. Select the method `Sub Main()`, including the body of the method. Click on **View Symbol (if any)** for the corresponding **SubBlock** node in the visualizer. The property grid shows the **MethodSymbol** for this **SubBlock** has name `Main` with return type `Void`.
+Inspect the symbol corresponding to any declared type, method, property. Select the corresponding node in the visualizer and right-click to access **View Symbol (if any)**. Select the method `Sub Main()`, including the body of the method. Right-click the corresponding **SubBlock** node in the visualizer and select **View Symbol (if any)**. The property grid shows the **MethodSymbol** for this **SubBlock** has name `Main` with return type `Void`.
 
 ![Viewing symbol for a method declaration](media/syntax-visualizer/method-symbol.png)
 
 The above Visual Basic examples can be easily replicated in C#. Type `using C = System.Console;` in place of `Imports C = System.Console` for the alias. The preceding steps in C# yield identical results in the visualizer window.
 
-Semantic inspection operations are only available on nodes. They are not available on tokens or trivia. Not all nodes have interesting semantic information to inspect. When a node doesn't have interesting semantic information, clicking on **View \* Symbol (if any)** shows a blank property grid.
+Semantic inspection operations are only available on nodes. They are not available on tokens or trivia. Not all nodes have interesting semantic information to inspect. When a node doesn't have interesting semantic information, right-clicking and selecting **View \* Symbol (if any)** shows a blank property grid.
 
 You can read more about APIs for performing semantic analysis in the [Work with semantics](work-with-semantics.md) overview document.
 

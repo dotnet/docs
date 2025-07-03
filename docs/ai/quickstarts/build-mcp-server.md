@@ -144,7 +144,7 @@ In this example, you enhance the MCP server to use a configuration value set in 
 1. Update the `.mcp/server.json` to declare your environment variable input. The `server.json` file schema is defined by the [MCP Registry project](https://github.com/modelcontextprotocol/registry/blob/main/docs/server-json/README.md) and is used by NuGet.org to generate VS Code MCP configuration.
 
    * Use the `environment_variables` property to declare environment variables used by your app that will be set by the client using the MCP server (for example, VS Code).
-   
+
    * Use the `package_arguments` property to define CLI arguments that will be passed to your app. For more examples, see the [MCP Registry project](https://github.com/modelcontextprotocol/registry/blob/main/docs/server-json/examples.md).
 
    ```json

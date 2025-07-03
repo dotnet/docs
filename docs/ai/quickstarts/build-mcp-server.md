@@ -110,7 +110,7 @@ In this example, you enhance the MCP server to use a configuration value set in 
 
 1. Add another tool method after the `GetRandomNumber` method in `Tools/RandomNumberTools.cs`. Update the tool code to use an environment variable.
 
-   :::code language="csharp" source="snippets/mcp-server/GetCityWeather.cs" :::
+   :::code language="csharp" source="snippets/mcp-server/Tools/RandomNumberTools.cs" range="19-36":::
 
 1. Update the `.vscode/mcp.json` to set the `WEATHER_CHOICES` environment variable for testing.
 

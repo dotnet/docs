@@ -8,6 +8,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 //<Snippet1>
 using Excel = Microsoft.Office.Interop.Excel;
@@ -48,6 +49,12 @@ namespace OfficeProgrammingWalkthrough
 
         //<Snippet4>
         static void DisplayInExcel(IEnumerable<Account> accounts)
+        {
+            DisplayInExcelCore(accounts);
+        }
+
+        [MethodImpl(MethodImplOptions.NoInlining)]
+        static void DisplayInExcelCore(IEnumerable<Account> accounts)
         {
             Excel.Application excelApp = null;
             Excel.Workbook workbook = null;
@@ -98,32 +105,31 @@ namespace OfficeProgrammingWalkthrough
                 // Clean up COM objects in reverse order of creation
                 if (workSheet != null)
                 {
-                    System.Runtime.InteropServices.Marshal.FinalReleaseComObject(workSheet);
-                    workSheet = null;
+                    Marshal.FinalReleaseComObject(workSheet);
                 }
                 if (workbook != null)
                 {
                     workbook.Close(true); // Save changes
-                    System.Runtime.InteropServices.Marshal.FinalReleaseComObject(workbook);
-                    workbook = null;
+                    Marshal.FinalReleaseComObject(workbook);
                 }
                 if (excelApp != null)
                 {
                     excelApp.DisplayAlerts = true;
                     excelApp.Quit();
-                    System.Runtime.InteropServices.Marshal.FinalReleaseComObject(excelApp);
-                    excelApp = null;
+                    Marshal.FinalReleaseComObject(excelApp);
                 }
-                
-                // Force garbage collection
-                GC.Collect();
-                GC.WaitForPendingFinalizers();
             }
         }
         //</Snippet4>
 
         //<Snippet9>
         static void CreateIconInWordDoc()
+        {
+            CreateIconInWordDocCore();
+        }
+
+        [MethodImpl(MethodImplOptions.NoInlining)]
+        static void CreateIconInWordDocCore()
         {
             Word.Application wordApp = null;
             Word.Document document = null;
@@ -157,19 +163,13 @@ namespace OfficeProgrammingWalkthrough
                 if (document != null)
                 {
                     document.Close(true); // Save changes
-                    System.Runtime.InteropServices.Marshal.FinalReleaseComObject(document);
-                    document = null;
+                    Marshal.FinalReleaseComObject(document);
                 }
                 if (wordApp != null)
                 {
                     wordApp.Quit(true); // Save changes to all documents
-                    System.Runtime.InteropServices.Marshal.FinalReleaseComObject(wordApp);
-                    wordApp = null;
+                    Marshal.FinalReleaseComObject(wordApp);
                 }
-                
-                // Force garbage collection
-                GC.Collect();
-                GC.WaitForPendingFinalizers();
             }
         }
         //</Snippet9>

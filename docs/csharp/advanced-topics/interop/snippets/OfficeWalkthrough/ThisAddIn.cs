@@ -1,6 +1,7 @@
 ﻿using System;
 //<Usings>
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using Excel = Microsoft.Office.Interop.Excel;
 using Word = Microsoft.Office.Interop.Word;
@@ -44,6 +45,13 @@ namespace OfficeWalkthrough
             //</CallDisplay>
 
             //<PasteIntoWord>
+            CreateWordDocumentWithCleanup();
+            //</PasteIntoWord>
+        }
+
+        [MethodImpl(MethodImplOptions.NoInlining)]
+        private void CreateWordDocumentWithCleanup()
+        {
             Word.Application wordApp = null;
             Word.Document document = null;
             
@@ -66,20 +74,14 @@ namespace OfficeWalkthrough
                 if (document != null)
                 {
                     document.Close(true);
-                    System.Runtime.InteropServices.Marshal.FinalReleaseComObject(document);
-                    document = null;
+                    Marshal.FinalReleaseComObject(document);
                 }
                 if (wordApp != null)
                 {
                     wordApp.Quit(true);
-                    System.Runtime.InteropServices.Marshal.FinalReleaseComObject(wordApp);
-                    wordApp = null;
+                    Marshal.FinalReleaseComObject(wordApp);
                 }
-                
-                GC.Collect();
-                GC.WaitForPendingFinalizers();
             }
-            //</PasteIntoWord>
         }
 
         //<Display>
@@ -105,18 +107,51 @@ namespace OfficeWalkthrough
         //</Display>
 
         //<ProperCleanup>
-        static void CleanupComObject(object comObject)
+        [MethodImpl(MethodImplOptions.NoInlining)]
+        static void CreateComObjectsAndCleanup()
         {
-            if (comObject != null)
+            Excel.Application excelApp = null;
+            Excel.Workbook workbook = null;
+            Excel.Worksheet worksheet = null;
+            
+            try
             {
-                System.Runtime.InteropServices.Marshal.FinalReleaseComObject(comObject);
-                comObject = null;
+                excelApp = new Excel.Application();
+                workbook = excelApp.Workbooks.Add();
+                worksheet = workbook.ActiveSheet;
+                
+                // Use COM objects here...
+            }
+            finally
+            {
+                // Clean up COM objects in reverse order of creation
+                if (worksheet != null)
+                {
+                    Marshal.FinalReleaseComObject(worksheet);
+                }
+                if (workbook != null)
+                {
+                    workbook.Close(true);
+                    Marshal.FinalReleaseComObject(workbook);
+                }
+                if (excelApp != null)
+                {
+                    excelApp.Quit();
+                    Marshal.FinalReleaseComObject(excelApp);
+                }
             }
         }
         //</ProperCleanup>
 
         //<DisplayWithCleanup>
         void DisplayInExcelWithCleanup(IEnumerable<Account> accounts,
+                   Action<Account, Excel.Range> DisplayFunc)
+        {
+            DisplayInExcelCore(accounts, DisplayFunc);
+        }
+
+        [MethodImpl(MethodImplOptions.NoInlining)]
+        void DisplayInExcelCore(IEnumerable<Account> accounts,
                    Action<Account, Excel.Range> DisplayFunc)
         {
             Excel.Application excelApp = null;
@@ -157,26 +192,19 @@ namespace OfficeWalkthrough
                 // Always clean up COM objects in reverse order of creation
                 if (worksheet != null)
                 {
-                    System.Runtime.InteropServices.Marshal.FinalReleaseComObject(worksheet);
-                    worksheet = null;
+                    Marshal.FinalReleaseComObject(worksheet);
                 }
                 if (workbook != null)
                 {
                     workbook.Close(true); // Save changes
-                    System.Runtime.InteropServices.Marshal.FinalReleaseComObject(workbook);
-                    workbook = null;
+                    Marshal.FinalReleaseComObject(workbook);
                 }
                 if (excelApp != null)
                 {
                     excelApp.DisplayAlerts = true;
                     excelApp.Quit();
-                    System.Runtime.InteropServices.Marshal.FinalReleaseComObject(excelApp);
-                    excelApp = null;
+                    Marshal.FinalReleaseComObject(excelApp);
                 }
-                
-                // Force garbage collection to help release any remaining references
-                GC.Collect();
-                GC.WaitForPendingFinalizers();
             }
         }
         //</DisplayWithCleanup>

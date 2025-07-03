@@ -111,7 +111,7 @@ COM objects in Office Interop require explicit cleanup because:
 
 ### Proper cleanup pattern
 
-Use the following pattern to ensure all COM objects are properly released:
+The most reliable way to ensure COM objects are properly released is to factor out the COM object creation and usage into a separate non-inlineable method. This pattern guarantees that object references go out of scope and can be collected:
 
 :::code language="csharp" source="./snippets/OfficeWalkthrough/ThisAddIn.cs" id="ProperCleanup":::
 
@@ -122,6 +122,7 @@ Add the following enhanced version of the `DisplayInExcel` method that includes 
 This pattern ensures that:
 
 - COM objects are released even if an exception occurs
+- Object references are guaranteed to go out of scope when the core method returns
 - Excel processes don't remain orphaned in Task Manager
 - Memory is properly freed
 - The application behaves reliably in production environments
@@ -133,8 +134,8 @@ For production applications, always implement this cleanup pattern for every COM
 **Why can't garbage collection handle this automatically?**
 COM objects use reference counting for memory management, which is different from .NET's garbage collection. The .NET runtime creates a Runtime Callable Wrapper (RCW) around each COM object, but the RCW doesn't automatically release the underlying COM object when it's garbage collected.
 
-**Why must I set objects to null after calling Marshal.FinalReleaseComObject?**
-Setting references to null ensures that your code can't accidentally use a released COM object, which would throw an exception. It also helps the garbage collector by removing any remaining managed references.
+**Why do you use separate methods with MethodImpl(MethodImplOptions.NoInlining)?**
+The .NET JIT compiler can extend object lifetimes until the end of a method, which means local variable assignments to null aren't guaranteed to release references immediately. By factoring out COM object creation and usage into separate non-inlineable methods, you ensure that object references truly go out of scope when the method returns, allowing reliable cleanup.
 
 **Why call GC.Collect() and GC.WaitForPendingFinalizers()?**
 These calls force immediate garbage collection, which helps ensure that any remaining RCWs are cleaned up promptly. While not always strictly necessary, they provide additional safety in COM interop scenarios.

@@ -256,7 +256,7 @@ For more information, see [Publish a package](/nuget/nuget-org/publish-a-package
    }
    ```
 
-   If you published to the NuGet Gallery integration environment, you need to add `"--add-source", "https://apiint.nuget.org/v3/index.json"` at the end of the `"args"` array above.
+   If you published to the NuGet Gallery integration environment, you need to add `"--add-source", "https://apiint.nuget.org/v3/index.json"` at the end of the `"args"` array.
 
 1. Save the file.
 

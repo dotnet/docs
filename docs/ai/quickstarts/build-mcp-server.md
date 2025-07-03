@@ -198,7 +198,7 @@ You can [test your MCP server again](#test-the-mcp-server) before moving forward
     If you want to test the publishing flow before publishing to NuGet.org, you can register an account on the NuGet Gallery integration environment: [https://int.nugettest.org](https://int.nugettest.org). The `push` command would be modified to:
 
     ```bash
-    dotnet nuget push bin/Release/*.nupkg --api-key <your-api-key> --source https://apiint.nuget.org/v3/index.json
+    dotnet nuget push bin/Release/*.nupkg --api-key <your-api-key> --source https://apiint.nugettest.org/v3/index.json
     ```
 
 For more information, see [Publish a package](/nuget/nuget-org/publish-a-package).
@@ -239,7 +239,7 @@ For more information, see [Publish a package](/nuget/nuget-org/publish-a-package
    }
    ```
 
-   If you published to the NuGet Gallery integration environment, you need to add `"--add-source", "https://apiint.nuget.org/v3/index.json"` at the end of the `"args"` array.
+   If you published to the NuGet Gallery integration environment, you need to add `"--add-source", "https://apiint.nugettest.org/v3/index.json"` at the end of the `"args"` array.
 
 1. Save the file.
 

@@ -104,7 +104,7 @@ Configure GitHub Copilot for Visual Studio Code to use your custom MCP server:
 
 ## Add inputs and configuration options
 
-In this example, enhance the MCP server to use a configuration value set in an environment variable. This could be configuration needed for the functioning of your MCP server such as an API key, an endpoint to connect to, or a local directory path depending on your needs.
+In this example, you enhance the MCP server to use a configuration value set in an environment variable. This could be configuration needed for the functioning of your MCP server, such as an API key, an endpoint to connect to, or a local directory path.
 
 1. Update the tool code to use an environment variable. Add another tool method after the `GetRandomNumber` method in `Tools/RandomNumberTools.cs`:
 

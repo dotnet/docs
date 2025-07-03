@@ -263,6 +263,36 @@ The code completes the asynchronous breakfast tasks in about 15 minutes. The tot
 
 The final code is asynchronous. It more accurately reflects how a person might cook breakfast. Compare the final code with the first code sample in the article. The core actions are still clear by reading the code. You can read the final code the same way you read the list of instructions for making a breakfast, as shown at the beginning of the article. The language features for the `async` and `await` keywords provide the translation every person makes to follow the written instructions: Start tasks as you can and don't block while waiting for tasks to complete.
 
+## Async/await vs ContinueWith
+
+The `async` and `await` keywords provide syntactic simplification over using <xref:System.Threading.Tasks.Task.ContinueWith%2A?displayProperty=nameWithType> directly. At the language level, `async`/`await` is essentially syntactic sugar that the compiler transforms into continuation-based code using `ContinueWith`. However, this transformation provides significant readability and maintainability benefits, especially when chaining multiple asynchronous operations.
+
+Consider a scenario where you need to perform multiple sequential asynchronous operations. Here's how the same logic looks when implemented with `ContinueWith` compared to `async`/`await`:
+
+### Using ContinueWith
+
+With `ContinueWith`, each step in a sequence of asynchronous operations requires nested continuations:
+
+:::code language="csharp" source="snippets/index/ContinueWith-comparison/Program.cs" range="14-36":::
+
+### Using async/await
+
+The same sequence of operations using `async`/`await` reads much more naturally:
+
+:::code language="csharp" source="snippets/index/ContinueWith-comparison/Program.cs" range="39-54":::
+
+### Why async/await is preferred
+
+The `async`/`await` approach offers several advantages:
+
+- **Readability**: The code reads like synchronous code, making it easier to understand the flow of operations.
+- **Maintainability**: Adding or removing steps in the sequence requires minimal code changes.
+- **Error handling**: Exception handling with `try`/`catch` blocks works naturally, whereas `ContinueWith` requires careful handling of faulted tasks.
+- **Debugging**: The call stack and debugger experience is much better with `async`/`await`.
+- **Performance**: The compiler optimizations for `async`/`await` are more sophisticated than manual `ContinueWith` chains.
+
+The benefit becomes even more apparent as the number of chained operations increases. While a single continuation might be manageable with `ContinueWith`, sequences of 3-4 or more asynchronous operations quickly become difficult to read and maintain. This pattern, known as "monadic do-notation" in functional programming, allows you to compose multiple asynchronous operations in a sequential, readable manner.
+
 ## Next step
 
 > [!div class="nextstepaction"]

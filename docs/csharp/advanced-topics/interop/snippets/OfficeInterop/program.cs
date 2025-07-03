@@ -8,6 +8,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 //<Snippet1>
 using Excel = Microsoft.Office.Interop.Excel;
 using Word = Microsoft.Office.Interop.Word;
@@ -48,39 +49,128 @@ namespace OfficeProgrammingWalkthrough
         //<Snippet4>
         static void DisplayInExcel(IEnumerable<Account> accounts)
         {
-            var excelApp = new Excel.Application();
-            // Make the object visible.
-            excelApp.Visible = true;
+            Excel.Application excelApp = null;
+            Excel.Workbook workbook = null;
+            Excel.Worksheet workSheet = null;
+            
+            try
+            {
+                excelApp = new Excel.Application();
+                // Make the object visible.
+                excelApp.Visible = true;
 
-            // Create a new, empty workbook and add it to the collection returned
-            // by property Workbooks. The new workbook becomes the active workbook.
-            // Add has an optional parameter for specifying a particular template.
-            // Because no argument is sent in this example, Add creates a new workbook.
-            excelApp.Workbooks.Add();
+                // Create a new, empty workbook and add it to the collection returned
+                // by property Workbooks. The new workbook becomes the active workbook.
+                // Add has an optional parameter for specifying a particular template.
+                // Because no argument is sent in this example, Add creates a new workbook.
+                workbook = excelApp.Workbooks.Add();
 
-            // This example uses a single workSheet. The explicit type casting is
-            // removed in a later procedure.
-            Excel._Worksheet workSheet = (Excel.Worksheet)excelApp.ActiveSheet;
+                // This example uses a single workSheet. The explicit type casting is
+                // removed in a later procedure.
+                workSheet = (Excel.Worksheet)excelApp.ActiveSheet;
+                
+                // Establish column headings in cells A1 and B1.
+                workSheet.Cells[1, "A"] = "ID Number";
+                workSheet.Cells[1, "B"] = "Current Balance";
+
+                var row = 1;
+                foreach (var acct in accounts)
+                {
+                    row++;
+                    workSheet.Cells[row, "A"] = acct.ID;
+                    workSheet.Cells[row, "B"] = acct.Balance;
+                }
+
+                workSheet.Columns[1].AutoFit();
+                workSheet.Columns[2].AutoFit();
+
+                // Put the spreadsheet contents on the clipboard.
+                workSheet.Range["A1:B3"].Copy();
+                
+                // Save the workbook before closing
+                string fileName = System.IO.Path.Combine(
+                    Environment.GetFolderPath(Environment.SpecialFolder.Desktop), 
+                    "BankAccounts.xlsx");
+                workbook.SaveAs(fileName);
+            }
+            finally
+            {
+                // Clean up COM objects in reverse order of creation
+                if (workSheet != null)
+                {
+                    System.Runtime.InteropServices.Marshal.FinalReleaseComObject(workSheet);
+                    workSheet = null;
+                }
+                if (workbook != null)
+                {
+                    workbook.Close(true); // Save changes
+                    System.Runtime.InteropServices.Marshal.FinalReleaseComObject(workbook);
+                    workbook = null;
+                }
+                if (excelApp != null)
+                {
+                    excelApp.DisplayAlerts = true;
+                    excelApp.Quit();
+                    System.Runtime.InteropServices.Marshal.FinalReleaseComObject(excelApp);
+                    excelApp = null;
+                }
+                
+                // Force garbage collection
+                GC.Collect();
+                GC.WaitForPendingFinalizers();
+            }
         }
         //</Snippet4>
 
         //<Snippet9>
         static void CreateIconInWordDoc()
         {
-            var wordApp = new Word.Application();
-            wordApp.Visible = true;
+            Word.Application wordApp = null;
+            Word.Document document = null;
+            
+            try
+            {
+                wordApp = new Word.Application();
+                wordApp.Visible = true;
 
-            // The Add method has four reference parameters, all of which are
-            // optional. Visual C# allows you to omit arguments for them if
-            // the default values are what you want.
-            wordApp.Documents.Add();
+                // The Add method has four reference parameters, all of which are
+                // optional. Visual C# allows you to omit arguments for them if
+                // the default values are what you want.
+                document = wordApp.Documents.Add();
 
-            // PasteSpecial has seven reference parameters, all of which are
-            // optional. This example uses named arguments to specify values
-            // for two of the parameters. Although these are reference
-            // parameters, you do not need to use the ref keyword, or to create
-            // variables to send in as arguments. You can send the values directly.
-            wordApp.Selection.PasteSpecial( Link: true, DisplayAsIcon: true);
+                // PasteSpecial has seven reference parameters, all of which are
+                // optional. This example uses named arguments to specify values
+                // for two of the parameters. Although these are reference
+                // parameters, you do not need to use the ref keyword, or to create
+                // variables to send in as arguments. You can send the values directly.
+                wordApp.Selection.PasteSpecial( Link: true, DisplayAsIcon: true);
+                
+                // Save the document
+                string fileName = System.IO.Path.Combine(
+                    Environment.GetFolderPath(Environment.SpecialFolder.Desktop), 
+                    "BankAccountsLink.docx");
+                document.SaveAs(fileName);
+            }
+            finally
+            {
+                // Clean up COM objects in reverse order of creation
+                if (document != null)
+                {
+                    document.Close(true); // Save changes
+                    System.Runtime.InteropServices.Marshal.FinalReleaseComObject(document);
+                    document = null;
+                }
+                if (wordApp != null)
+                {
+                    wordApp.Quit(true); // Save changes to all documents
+                    System.Runtime.InteropServices.Marshal.FinalReleaseComObject(wordApp);
+                    wordApp = null;
+                }
+                
+                // Force garbage collection
+                GC.Collect();
+                GC.WaitForPendingFinalizers();
+            }
         }
         //</Snippet9>
 

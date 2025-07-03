@@ -96,6 +96,52 @@ This code demonstrates several of the features in C#: the ability to omit the `r
 
 Press F5 to run the application. Excel starts and displays a table that contains the information from the two accounts in `bankAccounts`. Then a Word document appears that contains a link to the Excel table.
 
+## Important: COM object cleanup and resource management
+
+The examples shown above demonstrate basic Office Interop functionality, but they don't include proper cleanup of COM objects. This is a critical issue in production applications because failing to properly release COM objects can result in orphaned Office processes that remain in memory even after your application closes.
+
+### Why COM object cleanup is necessary
+
+COM objects in Office Interop require explicit cleanup because:
+
+- The .NET garbage collector doesn't automatically release COM objects
+- Each Excel or Word object you create holds resources that must be manually released
+- Without proper cleanup, Office applications remain running in the background
+- This applies to all COM objects: Application, Workbooks, Worksheets, Ranges, and more
+
+### Proper cleanup pattern
+
+Use the following pattern to ensure all COM objects are properly released:
+
+:::code language="csharp" source="./snippets/OfficeWalkthrough/ThisAddIn.cs" id="ProperCleanup":::
+
+Add the following enhanced version of the `DisplayInExcel` method that includes proper COM object cleanup:
+
+:::code language="csharp" source="./snippets/OfficeWalkthrough/ThisAddIn.cs" id="DisplayWithCleanup":::
+
+This pattern ensures that:
+
+- COM objects are released even if an exception occurs
+- Excel processes don't remain orphaned in Task Manager
+- Memory is properly freed
+- The application behaves reliably in production environments
+
+For production applications, always implement this cleanup pattern for every COM object you create, including Application, Workbooks, Worksheets, Ranges, and other Office objects.
+
+### Common questions about COM object cleanup
+
+**Why can't garbage collection handle this automatically?**
+COM objects use reference counting for memory management, which is different from .NET's garbage collection. The .NET runtime creates a Runtime Callable Wrapper (RCW) around each COM object, but the RCW doesn't automatically release the underlying COM object when it's garbage collected.
+
+**Why must I set objects to null after calling Marshal.FinalReleaseComObject?**
+Setting references to null ensures that your code can't accidentally use a released COM object, which would throw an exception. It also helps the garbage collector by removing any remaining managed references.
+
+**Why call GC.Collect() and GC.WaitForPendingFinalizers()?**
+These calls force immediate garbage collection, which helps ensure that any remaining RCWs are cleaned up promptly. While not always strictly necessary, they provide additional safety in COM interop scenarios.
+
+**What happens if I don't follow this pattern?**
+Without proper cleanup, Office applications remain running in the background even after your application exits. You can verify this by checking Task Manager - you'll see excel.exe or winword.exe processes that weren't properly terminated. These orphaned processes consume memory and can cause issues with future Office automation.
+
 ## Clean up the completed project
 
 In Visual Studio, select **Clean Solution** on the **Build** menu. Otherwise, the add-in runs every time that you open Excel on your computer.

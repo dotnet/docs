@@ -1,2 +1,2 @@
 ﻿// See https://aka.ms/new-console-template for more information
-ExprBodied.Example.Main();
+ExpressionBodiedMembers.Example.Main();

@@ -118,6 +118,9 @@ Some of the recommended tags can be used on any language element. Others have mo
 
 The compiler verifies the syntax of the elements followed by a single \* in the following list. Visual Studio provides IntelliSense for the tags verified by the compiler and all tags followed by \*\* in the following list. In addition to the tags listed here, the compiler and Visual Studio validate the `<b>`, `<i>`, `<u>`, `<br/>`, and `<a>` tags. The compiler also validates `<tt>`, which is deprecated HTML.
 
+> [!NOTE]
+> HTML tags like `<br/>` are useful for formatting within documentation comments. The `<br/>` tag creates line breaks, while other HTML tags provide text formatting. These tags work in IntelliSense tooltips and generated documentation.
+
 - [General Tags](#general-tags) used for multiple elements - These tags are the minimum set for any API.
   - [`<summary>`](#summary): The value of this element is displayed in IntelliSense in Visual Studio.
   - [`<remarks>`](#remarks) \*\*
@@ -133,6 +136,11 @@ The compiler verifies the syntax of the elements followed by a single \* in the 
   - [`<c>`](#c)
   - [`<code>`](#code)
   - [`<example>`](#example) \*\*
+  - [`<b>`](#b)
+  - [`<i>`](#i)
+  - [`<u>`](#u)
+  - [`<br/>`](#br)
+  - [`<a>`](#a)
 - [Reuse documentation text](#reuse-documentation-text) - These tags provide tools that make it easier to reuse XML comments.
   - [`<inheritdoc>`](#inheritdoc) \*\*
   - [`<include>`](#include) \*
@@ -241,6 +249,10 @@ The `<value>` tag lets you describe the value that a property represents. When y
 
 The `<para>` tag is for use inside a tag, such as [\<summary>](#summary), [\<remarks>](#remarks), or [\<returns>](#returns), and lets you add structure to the text. The `<para>` tag creates a double spaced paragraph. Use the `<br/>` tag if you want a single spaced paragraph.
 
+Here's an example showing the difference between `<para>` and `<br/>`:
+
+:::code language="csharp" source="./snippets/xmldoc/HrefAndBrExamples.cs" id="FormattingExample":::
+
 ### \<list>
 
 ```xml
@@ -302,6 +314,49 @@ This shows how to increment an integer.
 ```
 
 The `<example>` tag lets you specify an example of how to use a method or other library member. An example commonly involves using the [\<code>](#code) tag.
+
+### \<b>
+
+```xml
+<b>text</b>
+```
+
+The `<b>` tag is used to make text bold within documentation comments. This HTML formatting tag is validated by the compiler and Visual Studio, and the formatted text appears in IntelliSense and generated documentation.
+
+### \<i>
+
+```xml
+<i>text</i>
+```
+
+The `<i>` tag is used to make text italic within documentation comments. This HTML formatting tag is validated by the compiler and Visual Studio, and the formatted text appears in IntelliSense and generated documentation.
+
+### \<u>
+
+```xml
+<u>text</u>
+```
+
+The `<u>` tag is used to underline text within documentation comments. This HTML formatting tag is validated by the compiler and Visual Studio, and the formatted text appears in IntelliSense and generated documentation.
+
+### \<br/>
+
+```xml
+Line one<br/>Line two
+```
+
+The `<br/>` tag is used to insert a line break within documentation comments. Use this tag when you want a single spaced paragraph, as opposed to the `<para>` tag which creates double spaced paragraphs.
+
+### \<a>
+
+```xml
+<a href="https://example.com">Link text</a>
+```
+
+The `<a>` tag is used to create hyperlinks within documentation comments. The `href` attribute specifies the URL to link to. This HTML formatting tag is validated by the compiler and Visual Studio.
+
+> [!NOTE]
+> The compiler also validates the `<tt>` tag, which is deprecated HTML. Use the [`<c>`](#c) tag instead for inline code formatting.
 
 ## Reuse documentation text
 
@@ -368,10 +423,14 @@ The XML output for this method is shown in the following example:
 ```
 
 - `cref="member"`: A reference to a member or field that is available to be called from the current compilation environment. The compiler checks that the given code element exists and passes `member` to the element name in the output XML. Place *member* within quotation marks ("). You can provide different link text for a "cref", by using a separate closing tag.
-- `href="link"`: A clickable link to a given URL. For example, `<see href="https://github.com">GitHub</see>` produces a clickable link with text :::no-loc text="GitHub"::: that links to `https://github.com`.
+- `href="link"`: A clickable link to a given URL. For example, `<see href="https://github.com">GitHub</see>` produces a clickable link with text :::no-loc text="GitHub"::: that links to `https://github.com`. Use `href` instead of `cref` when linking to external web pages, as `cref` is designed for code references and won't create clickable links for external URLs.
 - `langword="keyword"`: A language keyword, such as `true` or one of the other valid [keywords](../keywords/index.md).
 
 The `<see>` tag lets you specify a link from within text. Use [\<seealso>](#seealso) to indicate that text should be placed in a See Also section. Use the [cref attribute](#cref-attribute) to create internal hyperlinks to documentation pages for code elements. You include the type parameters to specify a reference to a generic type or method, such as `cref="IDictionary{T, U}"`. Also, ``href`` is a valid attribute that functions as a hyperlink.
+
+Here's an example showing the difference between `cref` and `href` when referencing external URLs:
+
+:::code language="csharp" source="./snippets/xmldoc/HrefAndBrExamples.cs" id="UrlLinkingExample":::
 
 ### \<seealso>
 
@@ -392,7 +451,7 @@ The `cref` attribute in an XML documentation tag means "code reference." It spec
 
 ### href attribute
 
-The `href` attribute means a reference to a web page. You can use it to directly reference online documentation about your API or library.
+The `href` attribute means a reference to a web page. You can use it to directly reference online documentation about your API or library. When you need to link to external URLs in your documentation comments, use `href` instead of `cref` to ensure the links are clickable in IntelliSense tooltips and generated documentation.
 
 ## Generic types and methods
 

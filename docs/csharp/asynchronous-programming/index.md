@@ -265,7 +265,7 @@ The final code is asynchronous. It more accurately reflects how a person might c
 
 ## Async/await vs ContinueWith
 
-The `async` and `await` keywords provide syntactic simplification over using <xref:System.Threading.Tasks.Task.ContinueWith%2A?displayProperty=nameWithType> directly. At the language level, `async`/`await` is essentially syntactic sugar that the compiler transforms into continuation-based code using `ContinueWith`. However, this transformation provides significant readability and maintainability benefits, especially when chaining multiple asynchronous operations.
+The `async` and `await` keywords provide syntactic simplification over using <xref:System.Threading.Tasks.Task.ContinueWith%2A?displayProperty=nameWithType> directly. While `async`/`await` and `ContinueWith` have similar semantics for handling asynchronous operations, the compiler doesn't necessarily translate `await` expressions directly into `ContinueWith` method calls. Instead, the compiler generates optimized state machine code that provides the same logical behavior. This transformation provides significant readability and maintainability benefits, especially when chaining multiple asynchronous operations.
 
 Consider a scenario where you need to perform multiple sequential asynchronous operations. Here's how the same logic looks when implemented with `ContinueWith` compared to `async`/`await`:
 
@@ -273,13 +273,13 @@ Consider a scenario where you need to perform multiple sequential asynchronous o
 
 With `ContinueWith`, each step in a sequence of asynchronous operations requires nested continuations:
 
-:::code language="csharp" source="snippets/index/ContinueWith-comparison/Program.cs" range="18-54":::
+:::code language="csharp" source="snippets/index/ContinueWith-comparison/Program.cs" id="ContinueWithExample":::
 
 ### Using async/await
 
 The same sequence of operations using `async`/`await` reads much more naturally:
 
-:::code language="csharp" source="snippets/index/ContinueWith-comparison/Program.cs" range="57-73":::
+:::code language="csharp" source="snippets/index/ContinueWith-comparison/Program.cs" id="AsyncAwaitExample":::
 
 ### Why async/await is preferred
 

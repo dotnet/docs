@@ -14,6 +14,7 @@ namespace ContinueWithComparison
             await MakeBreakfastWithAsyncAwait();
         }
 
+        // <ContinueWithExample>
         // Using ContinueWith - demonstrates the complexity when chaining operations
         static Task MakeBreakfastWithContinueWith()
         {
@@ -52,7 +53,9 @@ namespace ContinueWithComparison
                     Console.WriteLine("Breakfast completed with ContinueWith!");
                 });
         }
+        // </ContinueWithExample>
 
+        // <AsyncAwaitExample>
         // Using async/await - much cleaner and easier to read
         static async Task MakeBreakfastWithAsyncAwait()
         {
@@ -71,6 +74,7 @@ namespace ContinueWithComparison
             var finalToast = await ApplyJamAsync(butteredToast);
             Console.WriteLine("Breakfast completed with async/await!");
         }
+        // </AsyncAwaitExample>
 
         static async Task<object> StartCookingEggsAsync()
         {

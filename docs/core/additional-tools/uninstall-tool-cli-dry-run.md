@@ -49,7 +49,7 @@ dotnet-core-uninstall dry-run -h|--help|-?
 
 ## Description
 
-The `dotnet-core-uninstall list` command simulates .NET SDK and runtime removal. A status output is provided for each .NET SDK and runtime that would have been removed by the tool.
+The `dotnet-core-uninstall dry-run` command simulates .NET SDK and runtime removal. A status output is provided for each .NET SDK and runtime that would have been removed by the tool.
 
 ### Arguments
 

@@ -71,7 +71,7 @@ Several feature areas of the framework libraries come with trimmer directives th
 | `EnableUnsafeBinaryFormatterSerialization` | When set to `false`, removes BinaryFormatter serialization support. For more information, see [BinaryFormatter serialization methods are obsolete](../../compatibility/serialization/5.0/binaryformatter-serialization-obsolete.md) and [In-box BinaryFormatter implementation removed and always throws](../../compatibility/serialization/9.0/binaryformatter-removal.md). |
 | `EnableUnsafeUTF7Encoding` | When set to `false`, removes insecure UTF-7 encoding code. For more information, see [UTF-7 code paths are obsolete](../../compatibility/core-libraries/5.0/utf-7-code-paths-obsolete.md). |
 | `EventSourceSupport` | When set to `false`, removes EventSource-related code and logic. |
-| `Http3Support` | When set to `false`, removes code related to support for HTTP/3 in <xref:System.Net.Http>. |
+| `Http3Support` (.NET 10+) | When set to `false`, removes code related to support for HTTP/3 in <xref:System.Net.Http>. |
 | `HttpActivityPropagationSupport` | When set to `false`, removes code related to diagnostics support for <xref:System.Net.Http>. |
 | `InvariantGlobalization` | When set to `true`, removes globalization-specific code and data. For more information, see [Invariant mode](../../runtime-config/globalization.md#invariant-mode). |
 | `MetadataUpdaterSupport` | When set to `false`, removes metadata update&ndash;specific logic related to hot reload. |

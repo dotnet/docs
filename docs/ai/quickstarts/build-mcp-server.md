@@ -289,7 +289,7 @@ The `dnx` command is shipped as part of the .NET SDK, starting with version 10 p
 ## Related content
 
 - [Get started with .NET AI and the Model Context Protocol](../get-started-mcp.md)
-- [Model Context Protocol .NET Samples](https://github.com/microsoft/mcp-dotnet-samples)
+- [Model Context Protocol .NET samples](https://github.com/microsoft/mcp-dotnet-samples)
 - [Build a minimal MCP client](build-mcp-client.md)
 - [Publish a package](/nuget/nuget-org/publish-a-package)
 - [Find and evaluate NuGet packages for your project](/nuget/consume-packages/finding-and-choosing-packages)

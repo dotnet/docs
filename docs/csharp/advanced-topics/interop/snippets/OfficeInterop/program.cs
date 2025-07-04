@@ -99,20 +99,19 @@ namespace OfficeProgrammingWalkthrough
                 if (workSheet != null)
                 {
                     Marshal.FinalReleaseComObject(workSheet);
-                    workSheet = null;
                 }
                 if (workbook != null)
                 {
                     workbook.Close(true); // Save changes
                     Marshal.FinalReleaseComObject(workbook);
-                    workbook = null;
                 }
                 if (excelApp != null)
                 {
                     excelApp.DisplayAlerts = true;
-                    excelApp.Quit();
+                    // Note: Not calling excelApp.Quit() here since this method is 
+                    // intended to display data to the user. The Excel instance 
+                    // will remain open for the user to interact with.
                     Marshal.FinalReleaseComObject(excelApp);
-                    excelApp = null;
                 }
             }
         }
@@ -154,13 +153,11 @@ namespace OfficeProgrammingWalkthrough
                 {
                     document.Close(true); // Save changes
                     Marshal.FinalReleaseComObject(document);
-                    document = null;
                 }
                 if (wordApp != null)
                 {
                     wordApp.Quit(true); // Save changes to all documents
                     Marshal.FinalReleaseComObject(wordApp);
-                    wordApp = null;
                 }
             }
         }

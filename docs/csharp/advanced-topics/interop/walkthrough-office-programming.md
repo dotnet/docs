@@ -111,23 +111,21 @@ COM objects in Office Interop require explicit cleanup because:
 
 ### Proper cleanup pattern
 
-The most reliable way to ensure COM objects are properly released is to factor out the COM object creation and usage into a separate non-inlineable method. This pattern guarantees that object references go out of scope and can be collected:
+The essential cleanup pattern is to use try/finally blocks and call `Marshal.FinalReleaseComObject()` on each COM object in reverse order of creation:
 
-:::code language="csharp" source="./snippets/OfficeWalkthrough/ThisAddIn.cs" id="ProperCleanup":::
-
-Add the following enhanced version of the `DisplayInExcel` method that includes proper COM object cleanup:
-
-:::code language="csharp" source="./snippets/OfficeWalkthrough/ThisAddIn.cs" id="DisplayWithCleanup":::
+:::code language="csharp" source="./snippets/OfficeInterop/program.cs" id="Snippet4":::
 
 This pattern ensures that:
 
 - COM objects are released even if an exception occurs
-- Object references are guaranteed to go out of scope when the core method returns
-- Excel processes don't remain orphaned in Task Manager
+- Excel processes don't remain orphaned in Task Manager  
 - Memory is properly freed
 - The application behaves reliably in production environments
 
 For production applications, always implement this cleanup pattern for every COM object you create, including Application, Workbooks, Worksheets, Ranges, and other Office objects.
+
+> [!NOTE]
+> The `DisplayInExcel` method shown above does not call `excelApp.Quit()` because it's intended to display data to the user. The Excel instance remains open for user interaction. For automation scenarios where you want to close Excel automatically, add `excelApp.Quit()` before `Marshal.FinalReleaseComObject(excelApp)`.
 
 ### Common questions about COM object cleanup
 
@@ -135,7 +133,7 @@ For production applications, always implement this cleanup pattern for every COM
 COM objects use reference counting for memory management, which is different from .NET's garbage collection. The .NET runtime creates a Runtime Callable Wrapper (RCW) around each COM object, but the RCW doesn't automatically release the underlying COM object when it's garbage collected.
 
 **Do I need to call GC.Collect() and GC.WaitForPendingFinalizers()?**
-These calls are optional but can help ensure immediate cleanup of Runtime Callable Wrappers (RCWs). The essential cleanup is calling `Marshal.FinalReleaseComObject()` on each COM object and proper shutdown methods like `Quit()`. If you do choose to use `GC.Collect()` and `GC.WaitForPendingFinalizers()`, factor out your COM object usage into a separate method with `MethodImpl(MethodImplOptions.NoInlining)` to ensure object references go out of scope before the GC calls.
+These calls are not usually necessary. The essential cleanup is calling `Marshal.FinalReleaseComObject()` on each COM object and proper shutdown methods like `Quit()` when appropriate. Focus on the basic cleanup pattern shown above.
 
 **What happens if I don't follow this pattern?**
 Without proper cleanup, Office applications remain running in the background even after your application exits. You can verify this by checking Task Manager - you'll see excel.exe or winword.exe processes that weren't properly terminated. These orphaned processes consume memory and can cause issues with future Office automation.

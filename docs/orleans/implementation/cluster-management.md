@@ -23,7 +23,7 @@ The following official implementations of `IMembershipTable` are currently avail
 * and an in-memory implementation for development.
 
 > [!IMPORTANT]
-> Implementations of the `IMembershipTable` interface must use a durable data store. For example, if you are using Redis, ensure that persistence is explicitely enabled. Volatile configurations may result in cluster unavailability.
+> Implementations of the `IMembershipTable` interface must use a durable data store. For example, if you are using Redis, ensure that persistence is explicitly enabled. Volatile configurations may result in cluster unavailability.
 
 In addition to `IMembershipTable`, each silo participates in a fully distributed peer-to-peer membership protocol that detects failed silos and reaches an agreement on the set of alive silos. The internal implementation of Orleans's membership protocol is described below.
 

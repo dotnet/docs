@@ -134,11 +134,8 @@ For production applications, always implement this cleanup pattern for every COM
 **Why can't garbage collection handle this automatically?**
 COM objects use reference counting for memory management, which is different from .NET's garbage collection. The .NET runtime creates a Runtime Callable Wrapper (RCW) around each COM object, but the RCW doesn't automatically release the underlying COM object when it's garbage collected.
 
-**Why do you use separate methods with MethodImpl(MethodImplOptions.NoInlining)?**
-The .NET JIT compiler can extend object lifetimes until the end of a method, which means local variable assignments to null aren't guaranteed to release references immediately. By factoring out COM object creation and usage into separate non-inlineable methods, you ensure that object references truly go out of scope when the method returns, allowing reliable cleanup.
-
 **Do I need to call GC.Collect() and GC.WaitForPendingFinalizers()?**
-With the separate non-inlineable method pattern, these calls are typically not necessary. The pattern ensures that COM object references go out of scope reliably when the method returns. However, you can optionally add these calls after the separate method call for additional safety in scenarios where you want to force immediate cleanup.
+These calls are optional but can help ensure immediate cleanup of Runtime Callable Wrappers (RCWs). The essential cleanup is calling `Marshal.FinalReleaseComObject()` on each COM object and proper shutdown methods like `Quit()`. If you do choose to use `GC.Collect()` and `GC.WaitForPendingFinalizers()`, factor out your COM object usage into a separate method with `MethodImpl(MethodImplOptions.NoInlining)` to ensure object references go out of scope before the GC calls.
 
 **What happens if I don't follow this pattern?**
 Without proper cleanup, Office applications remain running in the background even after your application exits. You can verify this by checking Task Manager - you'll see excel.exe or winword.exe processes that weren't properly terminated. These orphaned processes consume memory and can cause issues with future Office automation.

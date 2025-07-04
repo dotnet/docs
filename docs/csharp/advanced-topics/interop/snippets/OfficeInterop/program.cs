@@ -8,7 +8,6 @@
 
 using System;
 using System.Collections.Generic;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 //<Snippet1>
 using Excel = Microsoft.Office.Interop.Excel;
@@ -49,12 +48,6 @@ namespace OfficeProgrammingWalkthrough
 
         //<Snippet4>
         static void DisplayInExcel(IEnumerable<Account> accounts)
-        {
-            DisplayInExcelCore(accounts);
-        }
-
-        [MethodImpl(MethodImplOptions.NoInlining)]
-        static void DisplayInExcelCore(IEnumerable<Account> accounts)
         {
             Excel.Application excelApp = null;
             Excel.Workbook workbook = null;
@@ -106,17 +99,20 @@ namespace OfficeProgrammingWalkthrough
                 if (workSheet != null)
                 {
                     Marshal.FinalReleaseComObject(workSheet);
+                    workSheet = null;
                 }
                 if (workbook != null)
                 {
                     workbook.Close(true); // Save changes
                     Marshal.FinalReleaseComObject(workbook);
+                    workbook = null;
                 }
                 if (excelApp != null)
                 {
                     excelApp.DisplayAlerts = true;
                     excelApp.Quit();
                     Marshal.FinalReleaseComObject(excelApp);
+                    excelApp = null;
                 }
             }
         }
@@ -124,12 +120,6 @@ namespace OfficeProgrammingWalkthrough
 
         //<Snippet9>
         static void CreateIconInWordDoc()
-        {
-            CreateIconInWordDocCore();
-        }
-
-        [MethodImpl(MethodImplOptions.NoInlining)]
-        static void CreateIconInWordDocCore()
         {
             Word.Application wordApp = null;
             Word.Document document = null;
@@ -164,11 +154,13 @@ namespace OfficeProgrammingWalkthrough
                 {
                     document.Close(true); // Save changes
                     Marshal.FinalReleaseComObject(document);
+                    document = null;
                 }
                 if (wordApp != null)
                 {
                     wordApp.Quit(true); // Save changes to all documents
                     Marshal.FinalReleaseComObject(wordApp);
+                    wordApp = null;
                 }
             }
         }

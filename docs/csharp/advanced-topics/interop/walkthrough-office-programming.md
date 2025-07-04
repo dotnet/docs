@@ -130,7 +130,7 @@ For production applications, always implement this cleanup pattern for every COM
 ### Common questions about COM object cleanup
 
 **Why can't garbage collection handle this automatically?**
-COM objects use reference counting for memory management, which is different from .NET's garbage collection. The .NET runtime creates a Runtime Callable Wrapper (RCW) around each COM object, but the RCW doesn't automatically release the underlying COM object when it's garbage collected.
+COM objects use reference counting for memory management, which is different from .NET's garbage collection. The .NET runtime creates a Runtime Callable Wrapper (RCW) around each COM object. While the RCW does release the underlying COM object when it's garbage collected, garbage collection in .NET is non-deterministic and can be significantly delayed.
 
 **Do I need to call GC.Collect() and GC.WaitForPendingFinalizers()?**
 These calls are not usually necessary. The essential cleanup is calling `Marshal.FinalReleaseComObject()` on each COM object and proper shutdown methods like `Quit()` when appropriate. Focus on the basic cleanup pattern shown above.

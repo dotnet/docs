@@ -107,7 +107,6 @@ namespace OfficeProgrammingWalkthrough
                 }
                 if (excelApp != null)
                 {
-                    excelApp.DisplayAlerts = true;
                     // Note: Not calling excelApp.Quit() here since this method is 
                     // intended to display data to the user. The Excel instance 
                     // will remain open for the user to interact with.

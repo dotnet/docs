@@ -96,48 +96,6 @@ This code demonstrates several of the features in C#: the ability to omit the `r
 
 Press F5 to run the application. Excel starts and displays a table that contains the information from the two accounts in `bankAccounts`. Then a Word document appears that contains a link to the Excel table.
 
-## Important: COM object cleanup and resource management
-
-The examples shown above demonstrate basic Office Interop functionality, but they don't include proper cleanup of COM objects. This is a critical issue in production applications because failing to properly release COM objects can result in orphaned Office processes that remain in memory even after your application closes.
-
-### Why COM object cleanup is necessary
-
-COM objects in Office Interop require explicit cleanup because:
-
-- The .NET garbage collector doesn't automatically release COM objects
-- Each Excel or Word object you create holds resources that must be manually released
-- Without proper cleanup, Office applications remain running in the background
-- This applies to all COM objects: Application, Workbooks, Worksheets, Ranges, and more
-
-### Proper cleanup pattern
-
-The essential cleanup pattern is to use try/finally blocks and call `Marshal.FinalReleaseComObject()` on each COM object in reverse order of creation:
-
-:::code language="csharp" source="./snippets/OfficeInterop/program.cs" id="Snippet4":::
-
-This pattern ensures that:
-
-- COM objects are released even if an exception occurs
-- Excel processes don't remain orphaned in Task Manager  
-- Memory is properly freed
-- The application behaves reliably in production environments
-
-For production applications, always implement this cleanup pattern for every COM object you create, including Application, Workbooks, Worksheets, Ranges, and other Office objects.
-
-> [!NOTE]
-> The `DisplayInExcel` method shown above does not call `excelApp.Quit()` because it's intended to display data to the user. The Excel instance remains open for user interaction. For automation scenarios where you want to close Excel automatically, add `excelApp.Quit()` before `Marshal.FinalReleaseComObject(excelApp)`.
-
-### Common questions about COM object cleanup
-
-**Why can't garbage collection handle this automatically?**
-COM objects use reference counting for memory management, which is different from .NET's garbage collection. The .NET runtime creates a Runtime Callable Wrapper (RCW) around each COM object. While the RCW does release the underlying COM object when it's garbage collected, garbage collection in .NET is non-deterministic and can be significantly delayed.
-
-**Do I need to call GC.Collect() and GC.WaitForPendingFinalizers()?**
-These calls are not usually necessary. The essential cleanup is calling `Marshal.FinalReleaseComObject()` on each COM object and proper shutdown methods like `Quit()` when appropriate. Focus on the basic cleanup pattern shown above.
-
-**What happens if I don't follow this pattern?**
-Without proper cleanup, Office applications remain running in the background even after your application exits. You can verify this by checking Task Manager - you'll see excel.exe or winword.exe processes that weren't properly terminated. These orphaned processes consume memory and can cause issues with future Office automation.
-
 ## Clean up the completed project
 
 In Visual Studio, select **Clean Solution** on the **Build** menu. Otherwise, the add-in runs every time that you open Excel on your computer.

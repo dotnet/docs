@@ -1,8 +1,6 @@
 ﻿using System;
 //<Usings>
 using System.Collections.Generic;
-using System.Runtime.CompilerServices;
-using System.Runtime.InteropServices;
 using Excel = Microsoft.Office.Interop.Excel;
 using Word = Microsoft.Office.Interop.Word;
 //</Usings>
@@ -45,43 +43,11 @@ namespace OfficeWalkthrough
             //</CallDisplay>
 
             //<PasteIntoWord>
-            CreateWordDocumentWithCleanup();
+            var wordApp = new Word.Application();
+            wordApp.Visible = true;
+            wordApp.Documents.Add();
+            wordApp.Selection.PasteSpecial(Link: true, DisplayAsIcon: true);
             //</PasteIntoWord>
-        }
-
-        [MethodImpl(MethodImplOptions.NoInlining)]
-        private void CreateWordDocumentWithCleanup()
-        {
-            Word.Application wordApp = null;
-            Word.Document document = null;
-            
-            try
-            {
-                wordApp = new Word.Application();
-                wordApp.Visible = true;
-                document = wordApp.Documents.Add();
-                wordApp.Selection.PasteSpecial(Link: true, DisplayAsIcon: true);
-                
-                // Save the document
-                string fileName = System.IO.Path.Combine(
-                    Environment.GetFolderPath(Environment.SpecialFolder.Desktop), 
-                    "BankAccountsLink.docx");
-                document.SaveAs(fileName);
-            }
-            finally
-            {
-                // Clean up COM objects
-                if (document != null)
-                {
-                    document.Close(true);
-                    Marshal.FinalReleaseComObject(document);
-                }
-                if (wordApp != null)
-                {
-                    wordApp.Quit(true);
-                    Marshal.FinalReleaseComObject(wordApp);
-                }
-            }
         }
 
         //<Display>
@@ -105,108 +71,6 @@ namespace OfficeWalkthrough
             excelApp.Range["A1:B3"].Copy();
         }
         //</Display>
-
-        //<ProperCleanup>
-        [MethodImpl(MethodImplOptions.NoInlining)]
-        static void CreateComObjectsAndCleanup()
-        {
-            Excel.Application excelApp = null;
-            Excel.Workbook workbook = null;
-            Excel.Worksheet worksheet = null;
-            
-            try
-            {
-                excelApp = new Excel.Application();
-                workbook = excelApp.Workbooks.Add();
-                worksheet = workbook.ActiveSheet;
-                
-                // Use COM objects here...
-            }
-            finally
-            {
-                // Clean up COM objects in reverse order of creation
-                if (worksheet != null)
-                {
-                    Marshal.FinalReleaseComObject(worksheet);
-                }
-                if (workbook != null)
-                {
-                    workbook.Close(true);
-                    Marshal.FinalReleaseComObject(workbook);
-                }
-                if (excelApp != null)
-                {
-                    excelApp.Quit();
-                    Marshal.FinalReleaseComObject(excelApp);
-                }
-            }
-        }
-        //</ProperCleanup>
-
-        //<DisplayWithCleanup>
-        void DisplayInExcelWithCleanup(IEnumerable<Account> accounts,
-                   Action<Account, Excel.Range> DisplayFunc)
-        {
-            DisplayInExcelCore(accounts, DisplayFunc);
-        }
-
-        [MethodImpl(MethodImplOptions.NoInlining)]
-        void DisplayInExcelCore(IEnumerable<Account> accounts,
-                   Action<Account, Excel.Range> DisplayFunc)
-        {
-            Excel.Application excelApp = null;
-            Excel.Workbook workbook = null;
-            Excel.Worksheet worksheet = null;
-            
-            try
-            {
-                excelApp = new Excel.Application();
-                excelApp.Visible = true;
-                
-                // Add a new Excel workbook.
-                workbook = excelApp.Workbooks.Add();
-                worksheet = workbook.ActiveSheet;
-                
-                worksheet.Cells[1, 1].Value = "ID";
-                worksheet.Cells[1, 2].Value = "Balance";
-                
-                int row = 2;
-                foreach (var ac in accounts)
-                {
-                    var cell = worksheet.Cells[row, 1];
-                    DisplayFunc(ac, cell);
-                    row++;
-                }
-                
-                // Save the workbook
-                string fileName = System.IO.Path.Combine(
-                    Environment.GetFolderPath(Environment.SpecialFolder.Desktop), 
-                    "BankAccounts.xlsx");
-                workbook.SaveAs(fileName);
-                
-                // Copy the results to the Clipboard.
-                worksheet.Range["A1:B3"].Copy();
-            }
-            finally
-            {
-                // Always clean up COM objects in reverse order of creation
-                if (worksheet != null)
-                {
-                    Marshal.FinalReleaseComObject(worksheet);
-                }
-                if (workbook != null)
-                {
-                    workbook.Close(true); // Save changes
-                    Marshal.FinalReleaseComObject(workbook);
-                }
-                if (excelApp != null)
-                {
-                    excelApp.Quit();
-                    Marshal.FinalReleaseComObject(excelApp);
-                }
-            }
-        }
-        //</DisplayWithCleanup>
 
 
         private void ThisAddIn_Shutdown(object sender, System.EventArgs e)

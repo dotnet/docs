@@ -136,6 +136,7 @@ namespace OfficeWalkthrough
                 }
                 if (excelApp != null)
                 {
+                    excelApp.DisplayAlerts = true;
                     excelApp.Quit();
                     Marshal.FinalReleaseComObject(excelApp);
                 }

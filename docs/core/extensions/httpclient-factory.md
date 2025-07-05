@@ -221,7 +221,7 @@ An <xref:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder> is returne
 
 :::code source="snippets/http/configurehandler/Program.cs" id="configurehandler":::
 
-Configuring the `HttClientHandler` lets you specify a proxy for the `HttpClient` instance among various other properties of the handler. For more information, see [Proxy per client](../../fundamentals/networking/http/httpclient.md#configure-an-http-proxy).
+Configuring the `HttpClientHandler` lets you specify a proxy for the `HttpClient` instance among various other properties of the handler. For more information, see [Proxy per client](../../fundamentals/networking/http/httpclient.md#configure-an-http-proxy).
 
 ### Additional configuration
 

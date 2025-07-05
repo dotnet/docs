@@ -94,7 +94,8 @@ dotnet-dump collect [-h|--help] [-p|--process-id] [-n|--name] [--type] [-o|--out
 
   - `Full` - The largest dump containing all memory including the module images.
   - `Heap` - A large and relatively comprehensive dump containing module lists, thread lists, all stacks, exception information, handle information, and all memory except for mapped images.
-  - `Mini` - A small dump containing module lists, thread lists, exception information, and all stacks.
+  - `Mini` - A small dump containing module lists, thread lists, exception information and all stacks.
+  - `Triage` - A small dump containing module lists, thread lists, exception information, all stacks and PII removed.
 
   If not specified, `Full` is the default.
 

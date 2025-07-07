@@ -283,19 +283,21 @@ Run this test to make sure it passes. In Visual Studio, open the **Test Explorer
 
 ## Create tests for valid declarations
 
-As a general rule, analyzers should exit as quickly as possible, doing minimal work. Visual Studio calls registered analyzers as the user edits code. Responsiveness is a key requirement. There are several test cases for code that should not raise your diagnostic. Your analyzer already handles one of those tests, the case where a variable is assigned after being initialized. Add the following test method to represent that case:
+As a general rule, analyzers should exit as quickly as possible, doing minimal work. Visual Studio calls registered analyzers as the user edits code. Responsiveness is a key requirement. There are several test cases for code that should not raise your diagnostic. Your analyzer already handles several of those tests. Add the following test methods to represent those cases:
 
 [!code-csharp[variable assigned](snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst.Test/MakeConstUnitTests.cs#VariableAssigned "a variable that is assigned after being initialized won't raise the diagnostic")]
 
-This test passes as well. Next, add test methods for conditions you haven't handled yet:
+[!code-csharp[already const declaration](snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst.Test/MakeConstUnitTests.cs#AlreadyConst "a declaration that is already const should not raise the diagnostic")]
 
-- Declarations that are already `const`, because they are already const:
+[!code-csharp[declarations that have no initializer](snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst.Test/MakeConstUnitTests.cs#NoInitializer "a declaration that has no initializer should not raise the diagnostic")]
 
-   [!code-csharp[already const declaration](snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst.Test/MakeConstUnitTests.cs#AlreadyConst "a declaration that is already const should not raise the diagnostic")]
+These tests pass because your analyzer already handles these conditions:
 
-- Declarations that have no initializer, because there is no value to use:
+- Variables assigned after initialization are detected by data flow analysis.
+- Declarations that are already `const` are filtered out by checking for the `const` keyword.
+- Declarations with no initializer are handled by the data flow analysis that detects assignments outside the declaration.
 
-   [!code-csharp[declarations that have no initializer](snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst.Test/MakeConstUnitTests.cs#NoInitializer "a declaration that has no initializer should not raise the diagnostic")]
+Next, add test methods for conditions you haven't handled yet:
 
 - Declarations where the initializer is not a constant, because they can't be compile-time constants:
 
@@ -307,7 +309,7 @@ It can be even more complicated because C# allows multiple declarations as one s
 
 The variable `i` can be made constant, but the variable `j` cannot. Therefore, this statement cannot be made a const declaration.
 
-Run your tests again, and you'll see these new test cases fail.
+Run your tests again, and you'll see these last two test cases fail.
 
 ## Update your analyzer to ignore correct declarations
 

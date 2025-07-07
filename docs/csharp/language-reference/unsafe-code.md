@@ -1,7 +1,7 @@
 ---
-title: "Unsafe code, pointers to data, and function pointers"
+title: "Unsafe code"
 description: Learn about unsafe code, pointers, and function pointers. C# requires you to declare an unsafe context to use these features to directly manipulate memory or function pointers (unmanaged delegates).
-ms.date: 02/06/2025
+ms.date: 07/07/2025
 f1_keywords:
   - "functionPointer_CSharpKeyword"
 helpviewer_keywords: 
@@ -13,41 +13,66 @@ helpviewer_keywords:
   - "C# language, pointers"
   - "pointers [C#], about pointers"
 ---
-# Unsafe code, pointer types, and function pointers
 
-Most of the C# code you write is "verifiably safe code." *Verifiably safe code* means .NET tools can verify that the code is safe. In general, safe code doesn't directly access memory using pointers. It also doesn't allocate raw memory. It creates managed objects instead.
+# Unsafe code
 
-C# supports an [`unsafe`](keywords/unsafe.md) context, in which you can write *unverifiable* code. In an `unsafe` context, code can use pointers, allocate and free blocks of memory, and call methods using function pointers. Unsafe code in C# isn't necessarily dangerous; it's just code whose safety can't be verified.
+Unsafe code is a dialect of C# that unlocks powerful capabilities often needed for interoperability with native libraries, high-performance algorithms, and other low-level programming needs. However, these capabilities bypass C#'s usual safety checks, placing the responsibility for correctness squarely on the unsafe code author. Mistakes in unsafe code can lead to bugs like buffer overruns and use-after-free errors. To help isolate risks, unsafe code must appear within an [`unsafe`](keywords/unsafe.md) context, keeping it clearly separated from regular safe code and making it easier to audit.
 
-Unsafe code has the following properties:
+In contrast, most C# code is safe code. Safe code always accesses, uses, and releases memory in ways that are proven correct by the C# compiler and .NET runtime.
 
-- Methods, types, and code blocks can be defined as unsafe.
-- In some cases, unsafe code can increase an application's performance by removing array bounds checks.
-- Unsafe code is required when you call native functions that require pointers.
+Within an `unsafe` context, you can use pointers, manually allocate and free blocks of memory, and call methods through function pointers.
+
+Unsafe code has the following characteristics:
+
+- Methods, types, and code blocks can be marked as unsafe.
+- Removing array bounds checks in unsafe code can, in some cases, improve performance.
+- Unsafe code is required for calling native functions that use pointers.
 - Using unsafe code introduces security and stability risks.
-- The code that contains unsafe blocks must be compiled with the [**AllowUnsafeBlocks**](compiler-options/language.md#allowunsafeblocks) compiler option.
+- Code containing unsafe blocks must be compiled with the [`AllowUnsafeBlocks`](compiler-options/language.md#allowunsafeblocks) compiler option.
 
 ## Pointer types
 
-In an unsafe context, a type can be a pointer type, in addition to a value type, or a reference type. A pointer type declaration takes one of the following forms:
+In an unsafe context, a type can be a pointer type, in addition to a value type, or a reference type. A pointer type declaration takes the following forms (with the `*` being the key syntax difference):
 
 ``` csharp
 type* identifier;
-void* identifier; //allowed but not recommended
 ```
 
-The type specified before the `*` in a pointer type is called the **referent type**.
+The pointer indirection operator `*` can be used to access the contents at the location pointed to by the pointer variable. For example, consider the following declaration:
 
-Pointer types don't inherit from [object](builtin-types/reference-types.md) and no conversions exist between pointer types and `object`. Also, boxing and unboxing don't support pointers. However, you can convert between different pointer types and between pointer types and integral types.
-
-When you declare multiple pointers in the same declaration, you write the asterisk (`*`) together with the underlying type only. It isn't used as a prefix to each pointer name. For example:
+The following example demonstrates a complete example of using pointer types.
 
 ```csharp
-int* p1, p2, p3;   // Ok
-int *p1, *p2, *p3;   // Invalid in C#
+int number = 42;
+int numberAgain = 0;
+bool same = false;
+
+unsafe
+{
+    int* pointer = &number; // Assigns the address of number
+    numberAgain = *pointer; // Retrieves the value at that address (42)
+    same = number == numberAgain; // Will resolve to true
+    Console.WriteLine($"Pointer (address): {(ulong)pointer}; Pointer value: {*pointer}");
+}
+
+Console.WriteLine($"NumberAgain: {numberAgain}; Same: {same}");
+
+/* Example output (pointer address will vary each run):
+Pointer (address): 6127673188; Pointer value: 42
+NumberAgain: 42; Same: True
+*/
 ```
 
-The garbage collector doesn't keep track of whether an object is being pointed to by any pointer types. If the referrant is an object in the managed heap (including local variables captured by lambda expressions or anonymous delegates), the object must be [pinned](./statements/fixed.md) for as long as the pointer is used.
+The example also demonstrates how safe and unsafe code can interact. The first call to `Console.WriteLine` must be within the unsafe block because `pointer` can only be used in the `unsafe` context given its `int*` definition.
+
+### Defining pointer types
+
+When you declare multiple pointers in the same declaration, you write the asterisk (`*`) together with the underlying type only. For example:
+
+```csharp
+int* p1, p2, p3;     // Ok
+int *p1, *p2, *p3;   // Invalid
+```
 
 The value of the pointer variable of type `MyType*` is the address of a variable of type `MyType`. The following are examples of pointer type declarations:
 
@@ -57,17 +82,16 @@ The value of the pointer variable of type `MyType*` is the address of a variable
 - `char* p`: `p` is a pointer to a char.
 - `void* p`: `p` is a pointer to an unknown type.
 
-The pointer indirection operator `*` can be used to access the contents at the location pointed to by the pointer variable. For example, consider the following declaration:
-
-```csharp
-int* myVariable;
-```
-
-The expression `*myVariable` denotes the `int` variable found at the address contained in `myVariable`.
 
 There are several examples of pointers in the articles on the [`fixed` statement](statements/fixed.md). The following example uses the `unsafe` keyword and the `fixed` statement, and shows how to increment an interior pointer. You can paste this code into the Main function of a console application to run it. These examples must be compiled with the [**AllowUnsafeBlocks**](compiler-options/language.md#allowunsafeblocks) compiler option set.
 
 :::code language="csharp" source="snippets/unsafe-code/FixedKeywordExamples.cs" ID="5":::
+
+### Using pointer types
+
+Pointer types don't inherit from [object](builtin-types/reference-types.md) and no conversions exist between pointer types and `object`. Also, boxing and unboxing don't support pointers. However, you can convert between different pointer types and between pointer types and integral types.
+
+The garbage collector doesn't keep track of whether an object is being pointed to by any pointer types. If the referrant is an object in the managed heap (including local variables captured by lambda expressions or anonymous delegates), the object must be [pinned](./statements/fixed.md) for as long as the pointer is used.
 
 You can't apply the indirection operator to a pointer of type `void*`. However, you can use a cast to convert a void pointer to any other pointer type, and vice versa.
 

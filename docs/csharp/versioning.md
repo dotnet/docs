@@ -32,11 +32,11 @@ The most basic approach to SemVer is the 3 component format `MAJOR.MINOR.PATCH`,
 - `MINOR` is incremented when you add functionality in a backwards-compatible manner
 - `PATCH` is incremented when you make backwards-compatible bug fixes
 
-#### Understanding version increments with examples
+#### Understand version increments with examples
 
 To help clarify when to increment each version number, here are concrete examples:
 
-**MAJOR version increments (incompatible API changes):**
+### MAJOR version increments (incompatible API changes)
 
 These changes require users to modify their code to work with the new version:
 
@@ -78,7 +78,7 @@ These changes require users to modify their code to work with the new version:
   public string ReadFile(string path) => File.ReadAllText(path); // Now throws exception when file not found
   ```
 
-**MINOR version increments (backwards-compatible functionality):**
+### MINOR version increments (backwards-compatible functionality)
 
 These changes add new features without breaking existing code:
 
@@ -99,16 +99,6 @@ These changes add new features without breaking existing code:
   }
   ```
 
-- Adding optional parameters to existing methods:
-
-  ```csharp
-  // Version 1.0.0
-  public void SaveFile(string filename) { }
-
-  // Version 1.1.0 - MINOR increment
-  public void SaveFile(string filename, bool overwrite = false) { } // Optional parameter
-  ```
-
 - Adding new overloads:
 
   ```csharp
@@ -120,7 +110,20 @@ These changes add new features without breaking existing code:
   public void Log(string message, LogLevel level) { } // New overload added
   ```
 
-**PATCH version increments (backwards-compatible bug fixes):**
+- Adding optional parameters to existing methods:
+
+  ```csharp
+  // Version 1.0.0
+  public void SaveFile(string filename) { }
+
+  // Version 1.1.0 - MINOR increment
+  public void SaveFile(string filename, bool overwrite = false) { } // Optional parameter
+  ```
+
+  > [!NOTE]
+  > This is a *source compatible change*, but a *binary breaking change*. Users of this library must recompile for it to work correctly. Many libraries would consider this only in *major* version changes, not *minor* version changes.
+
+### PATCH version increments (backwards-compatible bug fixes)
 
 These changes fix issues without adding new features or breaking existing functionality:
 

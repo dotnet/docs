@@ -48,7 +48,7 @@ public class Simple
             + "starting the new InstanceCaller thread.");
 
         // Create the thread object, passing in the
-        // serverObject.StaticMethod method using a
+        // ServerClass.StaticMethod method using a
         // ThreadStart delegate.
         Thread StaticCaller = new(new ThreadStart(ServerClass.StaticMethod));
 

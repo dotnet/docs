@@ -14,9 +14,9 @@ ms.date: 08/09/2022
 
 Custom marshaller implementations can either be stateless or stateful. If the marshaller type is a `static` class it's considered stateless, and the implementation methods should do no tracking of state across calls. If it's a value type, it's considered stateful and one instance of that marshaller will be used to marshal a specific parameter or return value, allowing for state to be preserved across the marshalling and unmarshalling process.
 
-# Marshaller shapes
+## Marshaller shapes
 
-The set of methods that the marshalling generator expects from a custom marshaller type is referred to as the marshaller shape. Since the marshalling generator supports stateless, static custom marshaller types in .NET Standard 2.0 (which doesn't support static interface methods), there are not interface types provided that define the marshaller shapes. Instead, the shapes are documented below. The marshaller shape expected depends on the whether the marshaller is stateless or stateful, and whether it supports marshalling from managed to unmanaged, unmanaged to managed, or both (declared with `CustomMarshallerAttribute.MarshalMode`). The .NET SDK includes analyzers and code fixers to help with implementing marshallers that conform to the required shapes.
+The set of methods that the marshalling generator expects from a custom marshaller type is referred to as the marshaller shape. To support stateless, static custom marshaller types in .NET Standard 2.0 (which doesn't support static interface methods), and improve performance, interface types are not used to define and implement the marshaller shapes. Instead, the shapes are documented in the [Custom Marshaller Shapes](custom-marshaller-shapes.md) article. The methods expected depends on the whether the marshaller is stateless or stateful, and whether it supports marshalling from managed to unmanaged, unmanaged to managed, or both (declared with `CustomMarshallerAttribute.MarshalMode`). The .NET SDK includes analyzers and code fixers to help with implementing marshallers that conform to the required shapes.
 
 ### `MarshalMode`
 
@@ -169,37 +169,40 @@ To create a custom marshaller for a generic collection type, you can use the <xr
 
 Apply the <xref:System.Runtime.InteropServices.Marshalling.ContiguousCollectionMarshallerAttribute> to a marshaller entry-point type to indicate that it's for contiguous collections. The marshaller entry-point type must have one more type parameter than the associated managed type. The last type parameter is a placeholder and will be filled in by the source generator with the unmanaged type for the collection's element type.
 
-For example, you can specify custom marshalling for a <xref:System.Collections.Generic.List%601>. In the following code, `ListMarshaller` is both the entry point and the implementation. It conforms to [marshaller shapes][collection_shapes] expected for custom marshalling of a collection. Note that it is an incomplete example.
+For example, you can specify custom marshalling for a <xref:System.Collections.Generic.List%601>. In the following code, `ListMarshaller` is both the entry point and the implementation. It conforms to one of the [marshaller shapes](./custom-marshaller-shapes.md) expected for custom marshalling of a collection. Note that it is an incomplete example.
 
 ```csharp
 [ContiguousCollectionMarshaller]
-[CustomMarshaller(typeof(List<>), MarshalMode.Default, typeof(ListMarshaller<,>))]
+[CustomMarshaller(typeof(List<>), MarshalMode.Default, typeof(ListMarshaller<,>.DefaultMarshaller))]
 public unsafe static class ListMarshaller<T, TUnmanagedElement> where TUnmanagedElement : unmanaged
 {
-    public static byte* AllocateContainerForUnmanagedElements(List<T> managed, out int numElements)
+    public static class DefaultMarshaller
     {
-        numElements = managed.Count;
-        nuint collectionSizeInBytes = managed.Count * /* size of T */;
-        return (byte*)NativeMemory.Alloc(collectionSizeInBytes);
+        public static byte* AllocateContainerForUnmanagedElements(List<T> managed, out int numElements)
+        {
+            numElements = managed.Count;
+            nuint collectionSizeInBytes = managed.Count * /* size of T */;
+            return (byte*)NativeMemory.Alloc(collectionSizeInBytes);
+        }
+
+        public static ReadOnlySpan<T> GetManagedValuesSource(List<T> managed)
+            => CollectionsMarshal.AsSpan(managed);
+
+        public static Span<TUnmanagedElement> GetUnmanagedValuesDestination(byte* unmanaged, int numElements)
+            => new Span<TUnmanagedElement>((TUnmanagedElement*)unmanaged, numElements);
+
+        public static List<T> AllocateContainerForManagedElements(byte* unmanaged, int length)
+            => new List<T>(length);
+
+        public static Span<T> GetManagedValuesDestination(List<T> managed)
+            => CollectionsMarshal.AsSpan(managed);
+
+        public static ReadOnlySpan<TUnmanagedElement> GetUnmanagedValuesSource(byte* nativeValue, int numElements)
+            => new ReadOnlySpan<TUnmanagedElement>((TUnmanagedElement*)nativeValue, numElements);
+
+        public static void Free(byte* unmanaged)
+            => NativeMemory.Free(unmanaged);
     }
-
-    public static ReadOnlySpan<T> GetManagedValuesSource(List<T> managed)
-        => CollectionsMarshal.AsSpan(managed);
-
-    public static Span<TUnmanagedElement> GetUnmanagedValuesDestination(byte* unmanaged, int numElements)
-        => new Span<TUnmanagedElement>((TUnmanagedElement*)unmanaged, numElements);
-
-    public static List<T> AllocateContainerForManagedElements(byte* unmanaged, int length)
-        => new List<T>(length);
-
-    public static Span<T> GetManagedValuesDestination(List<T> managed)
-        => CollectionsMarshal.AsSpan(managed);
-
-    public static ReadOnlySpan<TUnmanagedElement> GetUnmanagedValuesSource(byte* nativeValue, int numElements)
-        => new ReadOnlySpan<TUnmanagedElement>((TUnmanagedElement*)nativeValue, numElements);
-
-    public static void Free(byte* unmanaged)
-        => NativeMemory.Free(unmanaged);
 }
 ```
 
@@ -207,7 +210,7 @@ The `ListMarshaller` in the example is a stateless collection marshaller that im
 
 ```csharp
 [LibraryImport("nativelib")]
-[return: MarshalUsing(typeof(ListMarshaller<,>), CountElementName = "numValues")]
+[return: MarshalUsing(typeof(ListMarshaller<,>), CountElementName = nameof(numValues))]
 internal static partial List<int> ConvertList(
     [MarshalUsing(typeof(ListMarshaller<,>))] List<int> list,
     out int numValues);
@@ -218,11 +221,11 @@ The `ListMarshaller` will handle the collection container and `ExampleMarshaller
 
 ```csharp
 [LibraryImport("nativelib")]
-[MarshalUsing(typeof(ListMarshaller<,>))]
-[MarshalUsing(typeof(ListMarshaller<,>), ElementIndirectionDepth = 1)]
+[MarshalUsing(typeof(ListMarshaller<,>), CountElementName = nameof(numValues))]
+[MarshalUsing(typeof(ExampleMarshaller), ElementIndirectionDepth = 1)]
 internal static partial void ConvertList(
     [MarshalUsing(typeof(ListMarshaller<,>))]
-    [MarshalUsing(typeof(ListMarshaller<,>), ElementIndirectionDepth = 1)]
+    [MarshalUsing(typeof(ExampleMarshaller), ElementIndirectionDepth = 1)]
     List<Example> list,
     out int numValues);
 ```

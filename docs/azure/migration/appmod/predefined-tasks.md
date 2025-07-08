@@ -13,7 +13,7 @@ Predefined tasks capture industry best practices for using Azure services. Curre
 - Migrate to Managed Identity based Database migration to Azure, including Azure SQL DB and Azure PostgreSQL
     - migrate from DB2, Oracle DB to Azure PostgreSQL
     - migrate from local/on-prem SQL server to Azure SQL DB
-- Migrate to Azure Service Bus. 
+- Migrate to Azure Service Bus
     - migrate from Microsoft Message Queue (MSMQ)
     - migrate from RabbitMQ
 - Migrate to Confluent Cloud/Azure Event Hub for Apache Kafka

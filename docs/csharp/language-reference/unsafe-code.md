@@ -169,16 +169,6 @@ Fixed-size buffers differ from regular arrays in the following ways:
 - They're always vectors, or one-dimensional arrays.
 - The declaration should include the length, such as `fixed char id[8]`. You can't use `fixed char id[]`.
 
-## How to use pointers to copy an array of bytes
-
-The following example uses pointers to copy bytes from one array to another.
-
-This example uses the [unsafe](keywords/unsafe.md) keyword, which enables you to use pointers in the `Copy` method. The [fixed](statements/fixed.md) statement is used to declare pointers to the source and destination arrays. The `fixed` statement *pins* the location of the source and destination arrays in memory so that garbage collection doesn't move the arrays. The memory blocks for the arrays are unpinned when the `fixed` block is completed. Because the `Copy` method in this example uses the `unsafe` keyword, it must be compiled with the [**AllowUnsafeBlocks**](compiler-options/language.md#allowunsafeblocks) compiler option.
-
-This example accesses the elements of both arrays using indices rather than a second unmanaged pointer. The declaration of the `pSource` and `pTarget` pointers pins the arrays.
-
-:::code language="csharp" source="snippets/unsafe-code/FixedKeywordExamples.cs" ID="8":::
-
 ## Function pointers
 
 C# provides [`delegate`](builtin-types/reference-types.md#the-delegate-type) types to define safe function pointer objects. Invoking a delegate involves instantiating a type derived from <xref:System.Delegate?displayProperty=nameWithType> and making a virtual method call to its `Invoke` method. This virtual call uses the `callvirt` IL instruction. In performance critical code paths, using the `calli` IL instruction is more efficient.

@@ -23,12 +23,4 @@ ASP.NET Core
 
 #### Affected APIs
 
-<xref:Microsoft.Extensions.Logging.Debug.DebugLogger?displayProperty=nameWithType>
-
-<!--
-
-#### Affected APIs
-
-`T:Microsoft.Extensions.Logging.Debug.DebugLogger`
-
--->
+`Microsoft.Extensions.Logging.Debug.DebugLogger`

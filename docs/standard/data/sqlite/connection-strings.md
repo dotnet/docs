@@ -6,9 +6,7 @@ description: The supported keywords and values of connection strings.
 ---
 # Connection strings
 
-A connection string is used to specify how to connect to the database. Connection strings in Microsoft.Data.Sqlite
-follow the standard [ADO.NET syntax](../../../framework/data/adonet/connection-strings.md) as a semicolon-separated list of
-keywords and values.
+A connection string is used to specify how to connect to the database. Connection strings in Microsoft.Data.Sqlite follow the standard [ADO.NET syntax](../../../framework/data/adonet/connection-strings.md) as a semicolon-separated list of keywords and values.
 
 ## Keywords
 
@@ -66,13 +64,13 @@ A value indicating whether to enable foreign key constraints.
 > [!NOTE]
 > The Foreign Keys keyword was added in version 3.0.
 
-| Value   | Description
-| ------- | --- |
-| True    | Sends `PRAGMA foreign_keys = 1` immediately after opening the connection.
-| False   | Sends `PRAGMA foreign_keys = 0` immediately after opening the connection.
-| (empty) | Doesn't send `PRAGMA foreign_keys`. This is the default. |
+| Value   | Description                                                               |
+|---------|---------------------------------------------------------------------------|
+| True    | Sends `PRAGMA foreign_keys = 1` immediately after opening the connection. |
+| False   | Sends `PRAGMA foreign_keys = 0` immediately after opening the connection. |
+| (empty) | Doesn't send `PRAGMA foreign_keys`. This is the default.                  |
 
-There's no need to enable foreign keys if, like in e_sqlite3, SQLITE_DEFAULT_FOREIGN_KEYS was used to compile the native
+There's no need to enable foreign keys if, like in e_sqlite3, `SQLITE_DEFAULT_FOREIGN_KEYS` was used to compile the native
 SQLite library.
 
 ### Recursive Triggers
@@ -107,6 +105,13 @@ A value indicating whether the connection will be pooled.
 | ----- | --------------------------------------------------- |
 | True  | The connection will be pooled. This is the default. |
 | False | The connection won't be pooled.                     |
+
+### Vfs
+
+A value indicating which [virtual file system (VFS)](https://www.sqlite.org/vfs.html) implementation to use. When empty or not specified, the default VFS for the platform is used.
+
+> [!NOTE]
+> The Vfs keyword was added in version 10.0.
 
 ## Connection string builder
 

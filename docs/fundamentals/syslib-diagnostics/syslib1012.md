@@ -2,6 +2,8 @@
 title: SYSLIB1012 warning
 description: Learn about the diagnostic that generates compile-time warning SYSLIB1012.
 ms.date: 05/07/2021
+f1_keywords:
+  - syslib1012
 ---
 
 # SYSLIB1012: Redundant qualifier in logging message

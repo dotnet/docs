@@ -65,39 +65,154 @@ Although you do not usually need to specify the attribute target explicitly, val
   </tr>
   <tr>
     <td>assembly</td>
-    <td><pre><code class="lang-fsharp">[&lt;assembly: AssemblyVersion("1.0.0.0")&gt;]</code></pre></td>
+    <td>
+
+```fsharp
+[<assembly: AssemblyVersion("1.0.0.0")>]
+```
+
+</td>
   </tr>
   <tr>
     <td>module</td>
-    <td><pre><code class="lang-fsharp">[&lt;``module``: MyCustomAttributeThatWorksOnModules&gt;]</code></pre></td>
+    <td>
+
+```fsharp
+[<``module``: MyCustomAttributeThatWorksOnModules>]
+```
+
+</td>
+  </tr>
+  <tr>
+    <td>method</td>
+    <td>
+
+```fsharp
+[<MyCustomAttributeThatWorksOnMethods>]
+let someFunction() = 42
+```
+
+</td>
+  </tr>
+  <tr>
+    <td>class</td>
+    <td>
+
+```fsharp
+[<MyCustomAttributeThatWorksOnClasses>]
+type MyClass(myValue: int) =
+    member _.MyValue = myValue
+```
+
+</td>
+  </tr>
+  <tr>
+    <td>struct</td>
+    <td>
+
+```fsharp
+[<MyCustomAttributeThatWorksOnStructs>]
+[<Struct>]
+type MyStruct(myValue: int) =
+    member _.MyValue = myValue
+```
+
+</td>
+  </tr>
+  <tr>
+    <td>interface</td>
+    <td>
+
+```fsharp
+[<MyCustomAttributeThatWorksOnInterfaces>]
+type MyInterface =
+    abstract member Prop: string
+```
+
+</td>
+  </tr>
+  <tr>
+    <td>enum</td>
+    <td>
+
+```fsharp
+[<MyCustomAttributeThatWorksOnEnums>]
+type Color =
+    | Red = 0
+    | Green = 1
+    | Blue = 2
+```
+
+</td>
+  </tr>
+  <tr>
+    <td>constructor</td>
+    <td>
+
+```fsharp
+type MyClass(myValue: int) =
+    member _.MyValue = myValue
+
+    [<MyCustomAttributeThatWorksOnCtors>]
+    new () = MyClass 42
+```
+
+</td>
   </tr>
   <tr>
     <td>return</td>
-    <td><pre><code class="lang-fsharp">let function1 x : [&lt;return: MyCustomAttributeThatWorksOnReturns&gt;] int = x + 1</code></pre></td>
+    <td>
+
+```fsharp
+let function1 x : [<return: MyCustomAttributeThatWorksOnReturns>] int = x + 1
+```
+
+</td>
   </tr>
   <tr>
     <td>field</td>
-    <td><pre><code class="lang-fsharp">[&lt;DefaultValue&gt;] val mutable x: int</code></pre></td>
+    <td>
+
+```fsharp
+[<DefaultValue>] val mutable x: int
+```
+
+</td>
   </tr>
   <tr>
     <td>property</td>
-    <td><pre><code class="lang-fsharp">[&lt;Obsolete&gt;] this.MyProperty = x</code></pre></td>
+    <td>
+
+```fsharp
+[<Obsolete>] this.MyProperty = x
+```
+
+</td>
   </tr>
   <tr>
     <td>param</td>
-    <td><pre><code class="lang-fsharp">member this.MyMethod([&lt;Out&gt;] x : ref&lt;int&gt;) = x := 10</code></pre></td>
+    <td>
+
+```fsharp
+member this.MyMethod([<Out>] x : ref<int>) = x := 10
+```
+
+</td>
   </tr>
   <tr>
     <td>type</td>
     <td>
-        <pre><code class="lang-fsharp">
-[&lt;type: StructLayout(LayoutKind.Sequential)&gt;]
+
+```fsharp
+[<type: StructLayout(LayoutKind.Sequential)>]
 type MyStruct =
   struct
     val x : byte
     val y : int
-  end</code></pre>
-    </td>
+  end
+```
+
+</td>
   </tr>
 </table>
 

@@ -1,8 +1,8 @@
 ---
-title: Introduction to delegates and events in C#
+title: Introduction to delegates and events
 description: The first in a series of articles about C# delegates and events. This article introduces basic concepts and discusses language design goals for delegates.
 ms.date: 03/24/2022
-ms.technology: csharp-fundamentals
+ms.subservice: fundamentals
 ---
 
 # Introduction to delegates and events in C\#
@@ -26,7 +26,7 @@ and type safety around the concept.
 As you'll see later in this series, the C# code you write for algorithms
 like this is type safe. The compiler ensures that the types match for arguments and return types.
 
-[Function pointers](language-reference/unsafe-code.md#function-pointers) were added to C# 9 for similar scenarios, where you need more control over the calling convention. The code associated with a delegate is invoked using a virtual method added to a delegate type. Using function pointers, you can specify different conventions.
+[Function pointers](language-reference/unsafe-code.md#function-pointers) support similar scenarios, where you need more control over the calling convention. The code associated with a delegate is invoked using a virtual method added to a delegate type. Using function pointers, you can specify different conventions.
 
 ## Language Design Goals for Delegates
 

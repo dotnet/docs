@@ -21,17 +21,17 @@ Class Class1
         Using connection
 
             ' Create a DataAdapter based on a SELECT query.
-            Dim adapter As OleDbDataAdapter = New OleDbDataAdapter( _
-              "SELECT CategoryID, CategoryName FROM Categories", _
+            Dim adapter As OleDbDataAdapter = New OleDbDataAdapter(
+              "SELECT CategoryID, CategoryName FROM Categories",
               connection)
 
             ' Create the INSERT command for the new category.
-            adapter.InsertCommand = New OleDbCommand( _
+            adapter.InsertCommand = New OleDbCommand(
               "INSERT INTO Categories (CategoryName) Values(?)", connection)
             adapter.InsertCommand.CommandType = CommandType.Text
 
             ' Add the parameter for the CategoryName.
-            adapter.InsertCommand.Parameters.Add( _
+            adapter.InsertCommand.Parameters.Add(
               "@CategoryName", OleDbType.VarWChar, 15, "CategoryName")
             adapter.InsertCommand.UpdatedRowSource = UpdateRowSource.Both
 
@@ -77,7 +77,7 @@ Class Class1
             Dim dataChanges As DataTable = categories.GetChanges()
 
             ' Include an event to fill in the Autonumber value.
-            AddHandler adapter.RowUpdated, _
+            AddHandler adapter.RowUpdated,
               New OleDbRowUpdatedEventHandler(AddressOf OnRowUpdated)
 
             ' Update the database, inserting the new rows.
@@ -105,12 +105,12 @@ Class Class1
     ' </Snippet1>
 
     ' <Snippet2>
-    Private Shared Sub OnRowUpdated( _
+    Private Shared Sub OnRowUpdated(
         ByVal sender As Object, ByVal e As OleDbRowUpdatedEventArgs)
         ' Conditionally execute this code block on inserts only.
         If e.StatementType = StatementType.Insert Then
             ' Retrieve the Autonumber and store it in the CategoryID column.
-            Dim cmdNewID As New OleDbCommand("SELECT @@IDENTITY", _
+            Dim cmdNewID As New OleDbCommand("SELECT @@IDENTITY",
                connection)
             e.Row("CategoryID") = CInt(cmdNewID.ExecuteScalar)
             e.Status = UpdateStatus.SkipCurrentRow
@@ -118,10 +118,6 @@ Class Class1
     End Sub
     ' </Snippet2>
     Private Shared Function GetConnectionString() As String
-        ' To avoid storing the connection string in your code,  
-        ' you can retrieve it from a configuration file.
-        ' Assumes Northwind.mdb is located in c:\Data folder.
-        Return "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" _
-           & "c:\Data\Northwind.mdb;User Id=admin;Password=;"
+        Throw New NotImplementedException()
     End Function
 End Class

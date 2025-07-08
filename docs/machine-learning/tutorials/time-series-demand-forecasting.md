@@ -29,7 +29,7 @@ In this tutorial, you learn how to:
 
 ## Time series forecasting sample overview
 
-This sample is a **C# .NET Core console application** that forecasts demand for bike rentals using a univariate time series analysis algorithm known as Singular Spectrum Analysis. The code for this sample can be found on the [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples/tree/main/samples/csharp/getting-started/Forecasting_BikeSharingDemand) repository on GitHub.
+This sample is a **C# console application** that forecasts demand for bike rentals using a univariate time series analysis algorithm known as Singular Spectrum Analysis. The code for this sample can be found on the [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples/tree/main/samples/csharp/getting-started/Forecasting_BikeSharingDemand) repository on GitHub.
 
 ## Understand the problem
 
@@ -43,7 +43,7 @@ The algorithm used in this tutorial is [Singular Spectrum Analysis(SSA)](http://
 
 1. Create a C# **Console Application** called "BikeDemandForecasting". Click the **Next** button.
 
-1. Choose .NET 6 as the framework to use. Click the **Create** button.
+1. Choose .NET 8 as the framework to use. Click the **Create** button.
 
 1. Install **Microsoft.ML** version NuGet package
 
@@ -62,7 +62,7 @@ The algorithm used in this tutorial is [Singular Spectrum Analysis(SSA)](http://
 1. Download the [*DailyDemand.mdf* database file](https://github.com/dotnet/machinelearning-samples/raw/main/samples/csharp/getting-started/Forecasting_BikeSharingDemand/BikeDemandForecasting/Data/DailyDemand.mdf) and save it to the *Data* directory.
 
 > [!NOTE]
-> The data used in this tutorial comes from the [UCI Bike Sharing Dataset](http://archive.ics.uci.edu/ml/datasets/bike+sharing+dataset). Fanaee-T, Hadi, and Gama, Joao, 'Event labeling combining ensemble detectors and background knowledge', Progress in Artificial Intelligence (2013): pp. 1-15, Springer Berlin Heidelberg, [Web Link](https://link.springer.com/article/10.1007%2Fs13748-013-0040-3).
+> The data used in this tutorial comes from the [UCI Bike Sharing Dataset](http://archive.ics.uci.edu/ml/datasets/bike+sharing+dataset). Hadi Fanaee-T and João Gama, 'Event labeling combining ensemble detectors and background knowledge', Progress in Artificial Intelligence (2013): pp. 1-15, Springer Berlin Heidelberg, [Web Link](https://link.springer.com/article/10.1007%2Fs13748-013-0040-3).
 
 The original dataset contains several columns corresponding to seasonality and weather. For brevity and because the algorithm used in this tutorial only requires the values from a single numerical column, the original dataset has been condensed to include only the following columns:
 
@@ -90,7 +90,7 @@ The following is a sample of the data:
 
 ### Create input and output classes
 
-1. Open *Program.cs* file and replace the existing `using` statements with the following:
+1. Open *Program.cs* file and replace the existing `using` directives with the following:
 
     [!code-csharp [ProgramUsings](~/machinelearning-samples/samples/csharp/getting-started/Forecasting_BikeSharingDemand/BikeDemandForecasting/Program.cs#L1-L4)]
 
@@ -116,7 +116,7 @@ The following is a sample of the data:
 
 ### Define paths and initialize variables
 
-1. Below the using statements define variables to store the location of your data, connection string, and where to save the trained model.
+1. Below the `using` directives define variables to store the location of your data, connection string, and where to save the trained model.
 
     [!code-csharp [DefinePaths](~/machinelearning-samples/samples/csharp/getting-started/Forecasting_BikeSharingDemand/BikeDemandForecasting/Program.cs#L6-L9)]
 

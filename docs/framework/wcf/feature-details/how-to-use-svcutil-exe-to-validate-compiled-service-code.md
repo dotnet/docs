@@ -14,7 +14,7 @@ You can use the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../servicemod
   
 2. Open an SDK command prompt  
   
-3. At the command prompt, launch the Svcutil.exe tool using the following format. For more information on the various parameters, see the Service Validationsection of the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) topic.  
+3. At the command prompt, launch the Svcutil.exe tool using the following format. For more information on the various parameters, see the Service Validation section of the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) topic.  
   
     ```console
     svcutil.exe /validate /serviceName:<serviceConfigName>  <assemblyPath>*  

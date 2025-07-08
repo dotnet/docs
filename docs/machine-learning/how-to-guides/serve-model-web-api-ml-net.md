@@ -11,13 +11,13 @@ ms.topic: how-to
 
 # Deploy a model in an ASP.NET Core Web API
 
-Learn how to serve a pre-trained ML.NET machine learning model on the web using an ASP.NET Core Web API. Serving a model over a web API enables predictions via standard HTTP methods.
+Learn how to serve a pretrained ML.NET machine learning model on the web using an ASP.NET Core Web API. Serving a model over a web API enables predictions via standard HTTP methods.
 
 ## Prerequisites
 
 - [Visual Studio 2022](https://visualstudio.microsoft.com/vs/#download) with the **ASP.NET and web development workload**.
 - PowerShell.
-- Pre-trained model. Use the [ML.NET Sentiment Analysis tutorial](../tutorials/sentiment-analysis.md) to build your own model or download this [pre-trained sentiment analysis machine learning model](https://github.com/dotnet/samples/blob/main/machine-learning/models/sentimentanalysis/sentiment_model.zip)
+- Pre-trained model. Use the [ML.NET Sentiment Analysis tutorial](../tutorials/sentiment-analysis.md) to build your own model or download this [pretrained sentiment analysis machine learning model](https://github.com/dotnet/samples/blob/main/machine-learning/models/sentimentanalysis/sentiment_model.zip).
 
 ## Create ASP.NET Core Web API project
 
@@ -46,7 +46,7 @@ Learn how to serve a pre-trained ML.NET machine learning model on the web using 
 
 ### Add model to ASP.NET Core Web API project
 
-1. Copy your pre-built model to your *SentimentAnalysisWebAPI* project directory.
+1. Copy your prebuilt model to your *SentimentAnalysisWebAPI* project directory.
 1. Configure your project to copy your model file to the output directory. In Solution Explorer:
 
     - Right-click the model zip file and select **Properties**.
@@ -61,7 +61,7 @@ You need to create some classes to define the schema of your model input and out
 
 In your *Program.cs* file:
 
-1. Add the following using statements:
+1. Add the following `using` directives:
 
     ```csharp
     using Microsoft.ML.Data;
@@ -83,7 +83,7 @@ In your *Program.cs* file:
 
     **Model output**
 
-    Once the model evaluates the input, it outputs a prediction with three properties: `Sentiment`, `Probability`, and `Score`. In this case, the `Sentiment` is the predicted sentiment of the user comment and the `Probability` and `Score` are confidence measures for the prediction.  
+    Once the model evaluates the input, it outputs a prediction with three properties: `Sentiment`, `Probability`, and `Score`. In this case, the `Sentiment` is the predicted sentiment of the user comment and the `Probability` and `Score` are confidence measures for the prediction.
 
     ```csharp
     public class ModelOutput
@@ -143,7 +143,7 @@ var predictionHandler =
 app.MapPost("/predict", predictionHandler);
 ```
 
-The `/predict` endpoint accepts HTTP POST requests and uses the prediction engine pool to return a prediction using the provided input.  
+The `/predict` endpoint accepts HTTP POST requests and uses the prediction engine pool to return a prediction using the provided input.
 
 When finished, your *Program.cs* should look like the following:
 
@@ -187,7 +187,7 @@ public class ModelOutput
 Once everything is set up, it's time to test the application.
 
 1. Run the application.
-1. Open PowerShell and enter the following code where PORT is the port your application is listening on.
+1. Open PowerShell and enter the following code, where `PORT` is the port your application is listening on.
 
     ```powershell
     Invoke-RestMethod "https://localhost:<PORT>/predict" -Method Post -Body (@{SentimentText="This was a very bad steak"} | ConvertTo-Json) -ContentType "application/json"
@@ -201,7 +201,7 @@ Once everything is set up, it's time to test the application.
     False         0.5     0
     ```
 
-Congratulations! You have successfully served your model to make predictions over the internet using an ASP.NET Core Web API.
+Congratulations! You've successfully served your model to make predictions over the internet using an ASP.NET Core Web API.
 
 ## Next Steps
 

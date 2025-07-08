@@ -1,7 +1,7 @@
 ---
 title: F# code formatting guidelines
 description: Learn guidelines for formatting F# code.
-ms.date: 09/19/2021
+ms.date: 11/01/2023
 ---
 # F# code formatting guidelines
 
@@ -1300,6 +1300,14 @@ let comparer = {
 }
 ```
 
+Empty type definitions may be formatted on one line:
+
+```fsharp
+type AnEmptyType = class end
+```
+
+Regardless of the chosen page width, `= class end` should always be on the same line.
+
 ### Formatting index/slice expressions
 
 Index expressions shouldn't contain any spaces around the opening and closing brackets.
@@ -1328,7 +1336,7 @@ let y = myList.[ 0 .. 1 ]
 
 ### Formatting quoted expressions
 
-The delimiter symbols (`<@` , `@>`, `<@@`, `@@>`) should be placed on separate lines if the quoted expression is a multi-line expression.
+The delimiter symbols (`<@`, `@>`, `<@@`, `@@>`) should be placed on separate lines if the quoted expression is a multi-line expression.
 
 ```fsharp
 // ✔️ OK
@@ -1643,6 +1651,16 @@ type TypeWithLongConstructor
         aThirdVeryLongCtorParam: AVeryLongTypeThatYouNeedToUse
     ) =
     // ... the body of the class follows
+
+// ✔️ OK
+type TypeWithLongSecondaryConstructor () =
+    new
+        (
+            aVeryLongCtorParam: AVeryLongTypeThatYouNeedToUse,
+            aSecondVeryLongCtorParam: AVeryLongTypeThatYouNeedToUse,
+            aThirdVeryLongCtorParam: AVeryLongTypeThatYouNeedToUse
+        ) =
+        // ... the body of the constructor follows
 ```
 
 If the parameters are curried, place the `=` character along with any return type on a new line:
@@ -2085,13 +2103,14 @@ This section discusses formatting types and type annotations. This includes form
 
 F# allows both postfix style of writing generic types (for example, `int list`) and the prefix style (for example, `list<int>`).
 Postfix style can only be used with a single type argument.
-Always prefer the .NET style, except for five specific types:
+Always prefer the .NET style, except for six specific types:
 
 1. For F# Lists, use the postfix form: `int list` rather than `list<int>`.
 2. For F# Options, use the postfix form: `int option` rather than `option<int>`.
 3. For F# Value Options, use the postfix form: `int voption` rather than `voption<int>`.
-4. For F# arrays, use the syntactic name `int[]` rather than `int array` or `array<int>`.
+4. For F# arrays, use the postfix form: `int array` rather than `array<int>` or `int[]`.
 5. For Reference Cells, use `int ref` rather than `ref<int>` or `Ref<int>`.
+6. For F# Sequences, use the postfix form: `int seq` rather than `seq<int>`.  
 
 For all other types, use the prefix form.
 
@@ -2402,7 +2421,7 @@ type MyClassDerived(y: string) =
         """)
 ```
 
-#### Formating the primary constructor
+#### Formatting the primary constructor
 
 In default formatting conventions, no space is added between the type name and the parentheses for the primary constructor.
 

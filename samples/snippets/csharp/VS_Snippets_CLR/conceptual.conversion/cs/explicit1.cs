@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 public class Example2
 {
@@ -29,11 +29,9 @@ public class Example2
         catch (OverflowException)
         {
             if (number1 > int.MaxValue)
-                Console.WriteLine("Conversion failed: {0} exceeds {1}.",
-                                  number1, int.MaxValue);
+                Console.WriteLine($"Conversion failed: {number1} exceeds {int.MaxValue}.");
             else
-                Console.WriteLine("Conversion failed: {0} is less than {1}.",
-                                  number1, int.MinValue);
+                Console.WriteLine($"Conversion failed: {number1} is less than {int.MinValue}.");
         }
 
         try
@@ -44,8 +42,7 @@ public class Example2
         }
         catch (OverflowException)
         {
-            Console.WriteLine("Conversion failed: {0} exceeds {1}.",
-                              number2, int.MaxValue);
+            Console.WriteLine($"Conversion failed: {number2} exceeds {int.MaxValue}.");
         }
 
         try
@@ -56,8 +53,7 @@ public class Example2
         }
         catch (OverflowException)
         {
-            Console.WriteLine("Conversion failed: {0} exceeds {1}.",
-                              number1, int.MaxValue);
+            Console.WriteLine($"Conversion failed: {number1} exceeds {int.MaxValue}.");
         }
 
         // The example displays the following output:
@@ -108,27 +104,21 @@ public class Example2
         try
         {
             newValue = unchecked((byte)largeValue);
-            Console.WriteLine("Converted the {0} value {1} to the {2} value {3}.",
-                              largeValue.GetType().Name, largeValue,
-                              newValue.GetType().Name, newValue);
+            Console.WriteLine($"Converted the {largeValue.GetType().Name} value {largeValue} to the {newValue.GetType().Name} value {newValue}.");
         }
         catch (OverflowException)
         {
-            Console.WriteLine("{0} is outside the range of the Byte data type.",
-                              largeValue);
+            Console.WriteLine($"{largeValue} is outside the range of the Byte data type.");
         }
 
         try
         {
             newValue = checked((byte)largeValue);
-            Console.WriteLine("Converted the {0} value {1} to the {2} value {3}.",
-                              largeValue.GetType().Name, largeValue,
-                              newValue.GetType().Name, newValue);
+            Console.WriteLine($"Converted the {largeValue.GetType().Name} value {largeValue} to the {newValue.GetType().Name} value {newValue}.");
         }
         catch (OverflowException)
         {
-            Console.WriteLine("{0} is outside the range of the Byte data type.",
-                              largeValue);
+            Console.WriteLine($"{largeValue} is outside the range of the Byte data type.");
         }
         // The example displays the following output:
         //    Converted the Int32 value 2147483647 to the Byte value 255.

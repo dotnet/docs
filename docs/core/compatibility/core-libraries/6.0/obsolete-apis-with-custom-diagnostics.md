@@ -16,7 +16,7 @@ The following table lists the custom diagnostic IDs and their corresponding warn
 
 | Diagnostic ID | Description | Severity |
 | - | - |
-| [SYSLIB0013](../../../../fundamentals/syslib-diagnostics/syslib0013.md) | <xref:System.Uri.EscapeUriString(System.String)?displayProperty=nameWithType> can corrupt the Uri string in some cases. Consider using <xref:System.Uri.EscapeDataString(System.String)?displayProperty=nameWithType> for query string components instead. | Warning |
+| [SYSLIB0013](../../../../fundamentals/syslib-diagnostics/syslib0013.md) | <xref:System.Uri.EscapeUriString(System.String)?displayProperty=nameWithType> can corrupt the URI string in some cases. Consider using <xref:System.Uri.EscapeDataString(System.String)?displayProperty=nameWithType> for query string components instead. | Warning |
 | [SYSLIB0014](../../../../fundamentals/syslib-diagnostics/syslib0014.md) | <xref:System.Net.WebRequest>, <xref:System.Net.HttpWebRequest>, <xref:System.Net.ServicePoint>, and <xref:System.Net.WebClient> are obsolete. Use <xref:System.Net.Http.HttpClient> instead. | Warning |
 | [SYSLIB0015](../../../../fundamentals/syslib-diagnostics/syslib0015.md) | <xref:System.Runtime.CompilerServices.DisablePrivateReflectionAttribute> has no effect in .NET 6+. | Warning |
 | [SYSLIB0016](../../../../fundamentals/syslib-diagnostics/syslib0016.md) | Use the <xref:System.Drawing.Graphics.GetContextInfo%2A?displayProperty=nameWithType> overloads that accept arguments for better performance and fewer allocations. | Warning |

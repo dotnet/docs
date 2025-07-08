@@ -135,7 +135,7 @@ Property name ( [ parameterlist ] ) [ As returntype ] [ Implements implementslis
 
 - `Get`
 
-  Optional. Required if the property is marked `ReadOnly`. Starts a `Get` property procedure that is used to return the value of the property.  The `Get` statement is not used with [auto-implemented properties](../../programming-guide/language-features/procedures/auto-implemented-properties.md).
+  Optional. Required if the property is marked `ReadOnly`. Starts a `Get` property procedure that is used to return the value of the property.  The `Get` statement is not used with [automatically implemented properties](../../programming-guide/language-features/procedures/auto-implemented-properties.md).
 
 - `statements`
 
@@ -147,7 +147,7 @@ Property name ( [ parameterlist ] ) [ As returntype ] [ Implements implementslis
 
 - `Set`
 
-  Optional. Required if the property is marked `WriteOnly`. Starts a `Set` property procedure that is used to store the value of the property.  The `Set` statement is not used with [auto-implemented properties](../../programming-guide/language-features/procedures/auto-implemented-properties.md).
+  Optional. Required if the property is marked `WriteOnly`. Starts a `Set` property procedure that is used to store the value of the property.  The `Set` statement is not used with [automatically implemented properties](../../programming-guide/language-features/procedures/auto-implemented-properties.md).
 
 - `End Set`
 
@@ -159,7 +159,7 @@ Property name ( [ parameterlist ] ) [ As returntype ] [ Implements implementslis
 
 ## Remarks
 
-The `Property` statement introduces the declaration of a property. A property can have a `Get` procedure (read only), a `Set` procedure (write only), or both (read-write). You can omit the `Get` and `Set` procedure when using an auto-implemented property. For more information, see [Auto-Implemented Properties](../../programming-guide/language-features/procedures/auto-implemented-properties.md).
+The `Property` statement introduces the declaration of a property. A property can have a `Get` procedure (read only), a `Set` procedure (write only), or both (read-write). You can omit the `Get` and `Set` procedure when using an automatically implemented property. For more information, see [Automatically implemented properties](../../programming-guide/language-features/procedures/auto-implemented-properties.md).
 
 You can use `Property` only at class level. This means the *declaration context* for a property must be a class, structure, module, or interface, and cannot be a source file, namespace, procedure, or block. For more information, see [Declaration Contexts and Default Access Levels](declaration-contexts-and-default-access-levels.md).
 
@@ -207,7 +207,7 @@ The following example declares a property in a class.
 
 ## See also
 
-- [Auto-Implemented Properties](../../programming-guide/language-features/procedures/auto-implemented-properties.md)
+- [Automatically implemented properties](../../programming-guide/language-features/procedures/auto-implemented-properties.md)
 - [Objects and Classes](../../programming-guide/language-features/objects-and-classes/index.md)
 - [Get Statement](get-statement.md)
 - [Set Statement](set-statement.md)

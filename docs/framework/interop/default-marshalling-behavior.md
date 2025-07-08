@@ -36,7 +36,7 @@ BSTR MethodOne (BSTR b) {
   
  However, if you define the method as a platform invoke prototype, replace each **BSTR** type with a <xref:System.String> type, and call `MethodOne`, the common language runtime attempts to free `b` twice. You can change the marshalling behavior by using <xref:System.IntPtr> types rather than **String** types.  
   
- The runtime always uses the **CoTaskMemFree** method to free memory. If the memory you are working with was not allocated with the **CoTaskMemAlloc** method, you must use an **IntPtr** and free the memory manually using the appropriate method. Similarly, you can avoid automatic memory freeing in situations where memory should never be freed, such as when using the **GetCommandLine** function from Kernel32.dll, which returns a pointer to kernel memory. For details on manually freeing memory, see the [Buffers Sample](/previous-versions/dotnet/netframework-4.0/x3txb6xc(v=vs.100)).  
+ The runtime always uses the **CoTaskMemFree** method on Windows and **free** method on other platforms to free memory. If the memory you are working with was not allocated with the **CoTaskMemAlloc** method on Windows or **malloc** method on other platforms, you must use an **IntPtr** and free the memory manually using the appropriate method. Similarly, you can avoid automatic memory freeing in situations where memory should never be freed, such as when using the **GetCommandLine** function from Kernel32.dll, which returns a pointer to kernel memory. For details on manually freeing memory, see the [Buffers Sample](/previous-versions/dotnet/netframework-4.0/x3txb6xc(v=vs.100)).  
   
 ## Default marshalling for classes  
 

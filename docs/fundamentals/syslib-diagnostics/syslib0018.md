@@ -2,6 +2,8 @@
 title: SYSLIB0018 warning
 description: Learn about the obsoletion of reflection-only load methods that generates compile-time warning SYSLIB0018.
 ms.date: 03/02/2022
+f1_keywords:
+  - syslib0018
 ---
 # SYSLIB0018: Reflection-only loading is not supported and throws PlatformNotSupportedException
 

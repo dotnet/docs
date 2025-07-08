@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Data Contract Schema Reference"
 title: "Data Contract Schema Reference"
+description: "Learn more about: Data Contract Schema Reference"
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "data contracts [WCF], schema reference"
@@ -200,7 +200,7 @@ The rules for the `ref`, `block`, `default`, `fixed`, `form`, and `id` attribute
 |`keyref`|Ignored.|
 |(blank)|Supported.|
 
-\* When using the `simpleType` and `complexType,` mapping for anonymous types is the same as for non-anonymous types, except that there is no anonymous data contracts, and so a named data contract is created, with a generated name derived from the element name. The rules for anonymous types are in the following list:
+\* When using the `simpleType` and `complexType`, mapping for anonymous types is the same as for non-anonymous types, except that there is no anonymous data contracts, and so a named data contract is created, with a generated name derived from the element name. The rules for anonymous types are in the following list:
 
 - WCF implementation detail: If the `xs:element` name does not contain periods, the anonymous type maps to an inner type of the outer data contract type. If the name contains periods, the resulting data contract type is independent (not an inner type).
 

@@ -1,4 +1,4 @@
-﻿// <Snippet10>
+// <Snippet10>
 using System;
 using System.IO;
 
@@ -26,8 +26,7 @@ public class Example6
         foreach (var dateStr in dateStrings)
         {
             DateTime newDate = DateTime.Parse(dateStr);
-            Console.WriteLine("'{0}' --> {1} {2}",
-                              dateStr, newDate, newDate.Kind);
+            Console.WriteLine($"'{dateStr}' --> {newDate} {newDate.Kind}");
         }
     }
 }

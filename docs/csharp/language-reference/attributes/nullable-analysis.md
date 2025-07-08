@@ -1,7 +1,7 @@
 ---
-title: "Attributes interpreted by the C# compiler: Nullable static analysis"
-ms.date: 05/20/2022
+title: "Attributes interpreted by the compiler: Nullable static analysis"
 description: Learn about attributes that are interpreted by the compiler to provide better static analysis for nullable and non-nullable reference types.
+ms.date: 05/20/2022
 ---
 # Attributes for null-state static analysis interpreted by the C# compiler
 
@@ -22,7 +22,7 @@ The preceding example follows the familiar `Try*` pattern in .NET. There are two
 
 - Callers shouldn't pass `null` as the argument for `key`.
 - Callers can pass a variable whose value is `null` as the argument for `message`.
-- If the `TryGetMessage` method returns `true`, the value of `message` isn't null. If the return value is `false,` the value of `message` is null.
+- If the `TryGetMessage` method returns `true`, the value of `message` isn't null. If the return value is `false`, the value of `message` is null.
 
 The rule for `key` can be expressed succinctly: `key` should be a non-nullable reference type. The `message` parameter is more complex. It allows a variable that is `null` as the argument, but guarantees, on success, that the `out` argument isn't `null`. For these scenarios, you need a richer vocabulary to describe the expectations. The `NotNullWhen` attribute, described below describes the *null-state* for the argument used for the `message` parameter.
 
@@ -138,9 +138,6 @@ bool IsNullOrEmpty([NotNullWhen(false)] string? value)
 That informs the compiler that any code where the return value is `false` doesn't need null checks. The addition of the attribute informs the compiler's static analysis that `IsNullOrEmpty` performs the necessary null check: when it returns `false`, the argument isn't `null`.
 
 :::code language="csharp" source="snippets/NullableAttributes.cs" ID="NullCheckExample" :::
-
-> [!NOTE]
-> The preceding example is only valid in C# 11 and later. Starting with C# 11, the [`nameof` expression](../operators/nameof.md) can reference parameter and type parameter names when used in an attribute applied to a method. In C# 10 and earlier, you need to use a string literal instead of the `nameof` expression.
 
 The <xref:System.String.IsNullOrEmpty(System.String)?DisplayProperty=nameWithType> method will be annotated as shown above for .NET Core 3.0. You may have similar methods in your codebase that check the state of objects for null values. The compiler won't recognize custom null check methods, and you'll need to add the annotations yourself. When you add the attribute, the compiler's static analysis knows when the tested variable has been null checked.
 

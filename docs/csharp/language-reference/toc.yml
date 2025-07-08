@@ -1,0 +1,2286 @@
+items:
+- name: C# language reference
+  href: index.yml
+- name: Language version
+  items:
+  - name: Overview
+    href: ./language-versioning.md
+    displayName: language version
+  - name: Configure
+    href: ./configure-language-version.md
+- name: Types
+  items:
+  - name: Built-in types
+    href: ./builtin-types/built-in-types.md
+  - name: Value types
+    items:
+    - name: Overview
+      href: ./builtin-types/value-types.md
+      displayName: "value types, simple types"
+    - name: Integral numeric types
+      href: ./builtin-types/integral-numeric-types.md
+      displayName: sbyte, byte, short, ushort, int, uint, nint, nuint, long, ulong, integer, literal
+    - name: Floating-point numeric types
+      href: ./builtin-types/floating-point-numeric-types.md
+      displayName: float, decimal, double, rational, real, literal
+    - name: Built-in numeric conversions
+      href: ./builtin-types/numeric-conversions.md
+    - name: bool
+      href: ./builtin-types/bool.md
+      displayName: "Boolean, true, false"
+    - name: char
+      href: ./builtin-types/char.md
+      displayName: "Unicode, character, UTF-16"
+    - name: Enumeration types
+      href: ./builtin-types/enum.md
+      displayName: "enum, bit flags, bit field"
+    - name: Struct types
+      href: ./builtin-types/struct.md
+      displayName: "struct type, readonly struct, ref struct, readonly ref struct"
+    - name: Ref struct types
+      href: ./builtin-types/ref-struct.md
+      displayName: "ref struct, readonly ref struct"
+    - name: Tuple types
+      href: ./builtin-types/value-tuples.md
+      displayName: "value tuples, ValueTuple"
+    - name: Nullable value types
+      href: ./builtin-types/nullable-value-types.md
+      displayName: "? token, ? symbol"
+  - name: Reference types
+    items:
+    - name: Features of reference types
+      href: ./keywords/reference-types.md
+    - name: Built-in reference types
+      displayName: object, delegate, dynamic, string
+      href: ./builtin-types/reference-types.md
+    - name: record
+      href: ./builtin-types/record.md
+    - name: class
+      href: ./keywords/class.md
+    - name: interface
+      href: ./keywords/interface.md
+    - name: Nullable reference types
+      href: ./builtin-types/nullable-reference-types.md
+      displayName: "? token, ? symbol"
+    - name: Collections and arrays
+      items:
+      - name: Collections
+        href: ./builtin-types/collections.md
+      - name: Arrays
+        href: ./builtin-types/arrays.md
+  - name: void
+    href: ./builtin-types/void.md
+  - name: Unmanaged types
+    href: ./builtin-types/unmanaged-types.md
+  - name: Default values
+    href: ./builtin-types/default-values.md
+- name: Keywords
+  items:
+  - name: Overview
+    displayName: keywords, contextual keywords
+    href: ./keywords/index.md
+  - name: Modifiers
+    items:
+    - name: Access modifiers
+      items:
+      - name: Quick reference
+        href: ./keywords/access-modifiers.md
+      - name: Accessibility levels
+        href: ./keywords/accessibility-levels.md
+      - name: Accessibility domain
+        href: ./keywords/accessibility-domain.md
+      - name: Restrictions on using accessibility levels
+        href: ./keywords/restrictions-on-using-accessibility-levels.md
+      - name: internal
+        href: ./keywords/internal.md
+      - name: private
+        href: ./keywords/private.md
+      - name: protected
+        href: ./keywords/protected.md
+      - name: public
+        href: ./keywords/public.md
+      - name: protected internal
+        href: ./keywords/protected-internal.md
+      - name: private protected
+        href: ./keywords/private-protected.md
+      - name: file
+        href: ./keywords/file.md
+    - name: abstract
+      href: ./keywords/abstract.md
+    - name: async
+      href: ./keywords/async.md
+      displayName: await
+    - name: const
+      href: ./keywords/const.md
+    - name: event
+      href: ./keywords/event.md
+    - name: extern
+      href: ./keywords/extern.md
+    - name: in (generic modifier)
+      href: ./keywords/in-generic-modifier.md
+    - name: new (member modifier)
+      href: ./keywords/new-modifier.md
+    - name: out (generic modifier)
+      href: ./keywords/out-generic-modifier.md
+    - name: override
+      href: ./keywords/override.md
+    - name: readonly
+      href: ./keywords/readonly.md
+    - name: sealed
+      href: ./keywords/sealed.md
+    - name: static
+      href: ./keywords/static.md
+    - name: unsafe
+      href: ./keywords/unsafe.md
+    - name: virtual
+      href: ./keywords/virtual.md
+    - name: volatile
+      href: ./keywords/volatile.md
+  - name: Statement Keywords
+    href: ./keywords/statement-keywords.md
+  - name: Method Parameters
+    displayName: ref, in, out, params, reference parameter, value parameter, ref readonly
+    href: ./keywords/method-parameters.md
+  - name: Namespace Keywords
+    items:
+    - name: namespace
+      href: ./keywords/namespace.md
+    - name: using directive
+      href: ./keywords/using-directive.md
+    - name: extern alias
+      href: ./keywords/extern-alias.md
+  - name: Generic Type Constraint Keywords
+    items:
+      - name: new constraint
+        href: ./keywords/new-constraint.md
+      - name: where
+        href: ./keywords/where-generic-type-constraint.md
+  - name: Access Keywords
+    items:
+    - name: base
+      href: ./keywords/base.md
+    - name: this
+      href: ./keywords/this.md
+  - name: Literal Keywords
+    items:
+    - name: "null"
+      href: ./keywords/null.md
+    - name: "true and false"
+      href: ./builtin-types/bool.md
+    - name: default
+      href: ./keywords/default.md
+  - name: Contextual Keywords
+    items:
+    - name: add
+      href: ./keywords/add.md
+    - name: extension
+      href: ./keywords/extension.md
+    - name: get
+      href: ./keywords/get.md
+    - name: init
+      href: ./keywords/init.md
+    - name: partial (type)
+      href: ./keywords/partial-type.md
+    - name: partial (member)
+      href: ./keywords/partial-member.md
+    - name: remove
+      href: ./keywords/remove.md
+    - name: required
+      href: ./keywords/required.md
+    - name: set
+      href: ./keywords/set.md
+    - name: when (filter condition)
+      href: ./keywords/when.md
+    - name: field
+      href: ./keywords/field.md  
+    - name: value (implicit parameter)
+      href: ./keywords/value.md
+  - name: Query Keywords
+    items:
+    - name: Quick reference
+      displayName: query keywords
+      href: ./keywords/query-keywords.md
+    - name: from clause
+      href: ./keywords/from-clause.md
+    - name: where clause
+      href: ./keywords/where-clause.md
+    - name: select clause
+      href: ./keywords/select-clause.md
+    - name: group clause
+      href: ./keywords/group-clause.md
+    - name: into
+      href: ./keywords/into.md
+    - name: orderby clause
+      href: ./keywords/orderby-clause.md
+    - name: join clause
+      href: ./keywords/join-clause.md
+    - name: let clause
+      href: ./keywords/let-clause.md
+    - name: ascending
+      href: ./keywords/ascending.md
+    - name: descending
+      href: ./keywords/descending.md
+    - name: "on"
+      href: ./keywords/on.md
+    - name: equals
+      href: ./keywords/equals.md
+    - name: by
+      href: ./keywords/by.md
+    - name: in
+      href: ./keywords/in.md
+- name: Operators and expressions
+  items:
+  - name: Overview
+    href: ./operators/index.md
+    displayName: operator precedence, operator associativity, expressions
+  - name: Arithmetic operators
+    href: ./operators/arithmetic-operators.md
+    displayName: ++, --, +, -, *, /, %, +=, -=, *=, /=, %=, checked, unchecked
+  - name: Boolean logical operators
+    href: ./operators/boolean-logical-operators.md
+    displayName: "!, &&, ||, &, |, ^, &=, |=, ^=, AND, XOR, OR"
+  - name: Bitwise and shift operators
+    href: ./operators/bitwise-and-shift-operators.md
+    displayName: "~, &, |, ^, <<, >>, &=, |=, ^=, <<=, >>=, AND, XOR, OR"
+  - name: Collection expressions
+    displayName: Collection literal, ".. token", ".. symbol", "[] token", "[] symbol"
+    href: ./operators/collection-expressions.md
+  - name: Equality operators
+    href: ./operators/equality-operators.md
+    displayName: ==, !=
+  - name: Comparison operators
+    href: ./operators/comparison-operators.md
+    displayName: ">, <, >=, <=, greater, less"
+  - name: Member access and null-conditional operators and expressions
+    href: ./operators/member-access-operators.md
+    displayName: "., [], ?., ?[], (), indexer, null-conditional, Elvis, invocation, ^, index from end, hat, .., range"
+  - name: Type-testing operators and cast expression
+    href: ./operators/type-testing-and-cast.md
+    displayName: "is operator, is keyword, as operator, as keyword, typeof, (), explicit, conversion"
+  - name: User-defined conversion operators
+    href: ./operators/user-defined-conversion-operators.md
+    displayName: implicit, explicit
+  - name: Pointer-related operators
+    href: ./operators/pointer-related-operators.md
+    displayName: "&, *, ->, [], +, -, ++, --, ==, !=, <, >, <=, >=, dereference, address-of, indirection"
+  - name: Assignment operators
+    href: ./operators/assignment-operator.md
+    displayName: "=, ref, compound"
+  - name: Lambda expressions
+    href: ./operators/lambda-expressions.md
+    displayName: anonymous functions
+  - name: Patterns
+    href: ./operators/patterns.md
+    displayName: pattern matching, and keyword, or keyword, not keyword, pattern reference
+  - name: + and += operators
+    href: ./operators/addition-operator.md
+    displayName: string concatenation, delegate combination, event subscription
+  - name: "- and -= operators"
+    href: ./operators/subtraction-operator.md
+    displayName: delegate removal, event unsubscription
+  - name: "?: operator"
+    href: ./operators/conditional-operator.md
+    displayName: conditional, ternary, ref
+  - name: "! (null-forgiving) operator"
+    href: ./operators/null-forgiving.md
+    displayName: nullable reference, null-forgiveness, null suppression
+  - name: "?? and ??= operators"
+    href: ./operators/null-coalescing-operator.md
+    displayName: null-coalescing, assignment
+  - name: => operator
+    href: ./operators/lambda-operator.md
+    displayName: lambda, expression body definition
+  - name: ":: operator"
+    href: ./operators/namespace-alias-qualifier.md
+    displayName: "namespace alias qualifier, global namespace"
+  - name: await operator
+    href: ./operators/await.md
+    displayName: async
+  - name: default value expressions
+    href: ./operators/default.md
+    displayName: default value, default operator, default literal, type default
+  - name: delegate operator
+    href: ./operators/delegate-operator.md
+    displayName: anonymous
+  - name: is operator
+    href: ./operators/is.md
+    displayName: pattern matching
+  - name: nameof expression
+    href: ./operators/nameof.md
+    displayName: nameof operator
+  - name: new operator
+    href: ./operators/new-operator.md
+    displayName: constructor
+  - name: sizeof operator
+    href: ./operators/sizeof.md
+  - name: stackalloc expression
+    href: ./operators/stackalloc.md
+    displayName: stack allocation, span, stackalloc operator
+  - name: switch expression
+    href: ./operators/switch-expression.md
+    displayName: pattern matching, patterns, when
+  - name: true and false operators
+    href: ./operators/true-false-operators.md
+  - name: with expression
+    href: ./operators/with-expression.md
+    displayName: "records, copy"
+  - name: Deconstruction expression
+    href: ./operators/deconstruction.md
+    displayName: deconstruct, deconstruction
+  - name: Operator overloading
+    href: ./operators/operator-overloading.md
+- name: Statements
+  items:
+  - name: Declaration statements
+    displayName: var, ref, const, local, by-reference
+    href: ./statements/declarations.md
+  - name: Exception-handling statements
+    displayName: throw, try, catch, finally, when, error, fault
+    href: ./statements/exception-handling-statements.md
+  - name: Iteration statements
+    displayName: for, foreach, do, while, loop
+    href: ./statements/iteration-statements.md
+  - name: Selection statements
+    displayName: if, else, switch, case, when
+    href: ./statements/selection-statements.md
+  - name: Jump statements
+    displayName: break, continue, goto, return
+    href: ./statements/jump-statements.md
+  - name: checked and unchecked statements
+    displayName: overflow checking
+    href: ./statements/checked-and-unchecked.md
+  - name: fixed statement
+    displayName: pin, pinned
+    href: ./statements/fixed.md
+  - name: lock statement
+    displayName: thread synchronization, monitor
+    href: ./statements/lock.md
+  - name: using statement
+    displayName: dispose, disposable, await using, using declaration
+    href: ./statements/using.md
+  - name: yield statement
+    displayName: iterator, yield break, yield return
+    href: ./statements/yield.md
+- name: Special characters
+  items:
+  - name: Overview
+    displayName: special characters
+    href: ./tokens/index.md
+  - name: Comments
+    displayName: /* */, //
+    href: ./tokens/comments.md
+  - name: Discard
+    displayName: discard, discard pattern
+    href: ./tokens/discard.md
+  - name: $ -- string interpolation
+    href: ./tokens/interpolated.md
+  - name: "@ -- verbatim identifier"
+    href: ./tokens/verbatim.md
+  - name: "\"\"\" -- raw string literal"
+    displayName: raw string, triple quote
+    href: ./tokens/raw-string.md
+- name: Attributes read by the compiler
+  items:
+  - name: Global attributes
+    displayName: > 
+      AssemblyName, AssemblyVersion, AssemblyCulture, AssemblyFlags, AssemblyProduct, AssemblyTrademark, AssemblyInformationalVersion, 
+      AssemblyCompany, AssemblyCopyright, AssemblyFileVersion, CLSCompliant, AssemblyTitle, AssemblyDescription, AssemblyConfiguration,
+      AssemblyDefaultAlias
+    href: ./attributes/global.md
+  - name: Caller information
+    displayName: CallerFilePath, CallerLineNumber, CallerMemberName, CallerArgumentExpressionAttribute
+    href: ./attributes/caller-information.md
+  - name: Nullable static analysis
+    displayName: >
+      AllowNull, DisallowNull, MaybeNull, NotNull, MaybeNullWhen, NotNullWhen, NotNullIfNotNull, MemberNotNull, MemberNotNullIf,
+      DoesNotReturn, DoesNotReturnIf
+    href: ./attributes/nullable-analysis.md
+  - name: Miscellaneous
+    displayName: > 
+      Conditional, Obsolete, Deprecated, Experimental, SetsRequiredMembers, AttributeUsage, AsyncMethodBuilder, InterpolatedStringHandler,
+      ModuleInitializer, SkipLocalsInit, UnscopedRef, OverloadResolutionPriority. EnumeratorCancellation, CollectionBuilder,
+      IUnknownConstant, IDispatchConstant, module initializer
+    href: ./attributes/general.md
+  - name: Pseudo-attributes
+    displayName: >
+      ComImportAttribute, DllImportAttribute, FieldOffsetAttribute, MarshalAsAttribute, MethodImplAttribute, NonSerializedAttribute,
+      OptionalAttribute, OutAttribute, PreserveSigAttribute, SerializableAttribute, StructLayoutAttribute, IndexerNameAttribute,
+      DefaultParameterValueAttribute, InAttribute, SpecialNameAttribute, UnmanagedCallersOnlyAttribute, CompilerFeatureRequiredAttribute,
+      DecimalConstantAttribute, DefaultMemberAttribute, DynamicAttribute, ExtensionAttribute, FixedBufferAttribute, IsByRefLikeAttribute,
+      IsReadOnlyAttribute, RequiresLocationAttribute, IsUnmanagedAttribute, NullableAttribute, NullableContextAttribute, 
+      NullablePublicOnlyAttribute, ParamArrayAttribute, ParamCollectionAttribute, RefSafetyRulesAttribute, RequiredMemberAttribute,
+      TupleElementNamesAttribute
+    href: ./attributes/pseudo-attributes.md
+- name: Unsafe code and pointers
+  displayName: unsafe code, pointers, fixed size buffer, function pointer
+  href: ./unsafe-code.md
+- name: Preprocessor directives
+  href: ./preprocessor-directives.md
+  displayName: \#if, \#else, \#elif, \#endif, \#define, \#undef, \#warning, \#error, \#line, \#nullable, \#region, \#endregion, \#pragma, warning, checksum
+- name: Compiler options
+  items:
+  - name: Overview
+    href: ./compiler-options/index.md
+  - name: Language options
+    displayName: CheckForOverflowUnderflow, checked, AllowUnsafeBlocks, unsafe, DefineConstants, define, LangVersion, langversion, Nullable, nullable
+    href: ./compiler-options/language.md
+  - name: Output options
+    displayName: DocumentationFile, doc, OutputAssembly, out, PlatformTarget, platform, ProduceReferenceAssembly, refout, TargetType, target,
+    href: ./compiler-options/output.md
+  - name: Input options
+    displayName: References, reference, references, AddModules, addmodule, EmbedInteropTypes, link
+    href: ./compiler-options/inputs.md
+  - name: Error and warning options
+    displayName: WarningLevel, warn, TreatWarningsAsErrors, warnaserror, WarningsAsErrors, WarningsNotAsErrors, DisabledWarnings, nowarn, CodeAnalysisRuleSet, ruleset, ErrorLog, errorlog, ReportAnalyzer, reportanalyzer
+    href: ./compiler-options/errors-warnings.md
+  - name: Code generation options
+    displayName: DebugType, debug, Optimize, optimize, Deterministic, deterministic, ProduceOnlyReferenceAssembly, refonly
+    href: ./compiler-options/code-generation.md
+  - name: Security options
+    displayName: DelaySign, delaysign, KeyFile, keyfile, KeyContainer, keycontainer, PublicSign, publicsign, highentropyva, HighEntropyVA
+    href: ./compiler-options/security.md
+  - name: Resources options
+    displayName: Win32Resource, win32res, Win32Icon, win32icon, Win32Manifest, win32manifest, NoWin32Manifest, nowin32manifest, Resources, resource, LinkResources
+    href: ./compiler-options/resources.md
+  - name: Miscellaneous options
+    displayName: ResponseFiles, @, NoLogo, nologo, NoConfig, noconfig
+    href: ./compiler-options/miscellaneous.md
+  - name: Advanced options
+    displayName: MainEntryPoint, StartupObject, main, PdbFile, pdb, PathMap, pathmap, ApplicationConfiguration, appconfig, AdditionalLibPaths, lib, GenerateFullPaths, fullpath, PreferredUILang, preferreduilang, BaseAddress, baseaddress, ChecksumAlgorithm, checksumalgorithm, CodePage, codepage, Utf8Output, utf8output, FileAlignment, filealign, ErrorEndLocation, errorendlocation, NoStandardLib, nostdlib, SubsystemVersion, subsystemversion, ModuleAssemblyName, moduleassemblyname
+    href: ./compiler-options/advanced.md
+- name: XML documentation comments
+  items:
+  - name: Generate API documentation
+    href: ./xmldoc/index.md
+    displayName: xml documentation comments
+  - name: Recommended tags
+    href: ./xmldoc/recommended-tags.md
+  - name: Examples
+    href: ./xmldoc/examples.md
+- name: C# compiler messages
+  href: ./compiler-messages/index.md
+  items:
+  - name: Feature or version missing
+    href: ./compiler-messages/feature-version-errors.md
+    displayName: >
+      CS0171, CS0188, CS0843, CS8904, CS1738, CS8022, CS8023, CS8024, CS8025, CS8026, CS8058, CS8059, CS8107, CS8192, CS8302,
+      CS8303, CS8304, CS8305, CS8306, CS8314, CS8320, CS8370, CS8371, CS8400, CS8401, CS8511, CS8627, CS8630, CS8652, CS8703,
+      CS8704, CS8706, CS8773, CS8912, CS8919, CS8929, CS8936, CS8957, CS8967, CS9014, CS9015, CS9016, CS9017, CS9058, CS9064,
+      CS9103, CS9171, CS9194, CS9202, CS9204, CS9240, CS9260, CS9268, CS9269, CS9271
+  - name: Assembly references
+    href: ./compiler-messages/assembly-references.md
+    displayName: >
+      CS0012, CS0234, CS0246, CS0400, CS1068, CS1069, CS1070, CS1704, CS1683, CS1714, CS1760, CS7008, CS7068, CS7069,
+      CS7071, CS7079, CS8090, CS8203, CS9286
+  - name: Constructor declarations
+    href: ./compiler-messages/constructor-errors.md
+    displayName: >
+      Primary constructors,
+      CS0514, CS0515, CS0516, CS0517, CS0522, CS0526, CS0568, CS0710, CS0768, CS0824, CS8054, CS8091, CS8358, CS8862, CS8867,
+      CS8868, CS8878, CS8910, CS8958, CS8982, CS8983, CS9105, CS9106, CS9107, CS9108, CS9109, CS9110, CS9111, CS9112, CS9113,
+      CS9114, CS9115, CS9116, CS9117, CS9118, CS9119, CS9120, CS9121, CS9122, CS9124, CS9136, CS9179
+  - name: Parameter / argument mismatch
+    href: ./compiler-messages/parameter-argument-mismatch.md
+    displayName: >
+      CS0182, CS0591, CS0599, CS0617, CS0633, CS0643, CS0655, CS0839, CS1016, CS1739, CS1740, CS1742, CS1744, CS1746, CS7036,
+      CS7067, CS8196, CS8324, CS8861, CS8905, CS8943, CS8944, CS8945, CS8948, CS8949, CS8950, CS8951, CS8964, CS8965, CS8966
+  - name: Reference parameters
+    href: ./compiler-messages/ref-modifiers-errors.md
+    displayName: >
+      ref safety,
+      CS0192, CS0199, CS0206, CS0631, CS0767, CS1510, CS1605, CS1623, CS1649, CS1651, CS1655, CS1657, CS1741, CS1939, CS1988,
+      CS7084, CS8166, CS8167, CS8168, CS8169. CS8325, CS8326, CS8327, CS8329, CS8330, CS8331, CS8332, CS8337, CS8338, CS8351,
+      CS8373, CS8374, CS8388, CS8977, CS9072, CS9077, CS9078, CS9079, CS9085, CS9086, CS9087, CS9089, CS9091, CS9092, CS9093,
+      CS9094, CS9095, CS9096, CS9097, CS9101, CS9102, CS9104, CS9190, CS9191, CS9192, CS9193, CS9195, CS9196, CS9197, CS9198,
+      CS9199, CS9200, CS9201, CS9265
+  - name: "`ref struct` types"
+    href: ./compiler-messages/ref-struct-errors.md
+    displayName: >
+      ref struct,
+      CS8343, CS8344, CS8345, CS9048, CS9050, CS9059, CS9241, CS9242, CS9243, CS9244, CS9245, CS9246, CS9247, CS9267
+  - name: Iterator methods
+    href: ./compiler-messages/iterator-yield.md
+    displayName: >
+      yield return, yield break,
+      CS1622, CS1624, CS1625, CS1626, CS1627, CS1629, CS1631, CS1637, CS4013, CS8154, CS8176, CS9237, CS9238, CS9239
+  - name: Extension declarations
+    href: ./compiler-messages/extension-declarations.md
+    displayName: >
+      CS1100, CS1101, CS1102, CS1103, CS1105, CS1106, CS1109, CS1110, CS1113, CS1112, CS1100, CS1101, CS1102, CS1103,
+      CS1105, CS1106, CS1109, CS1110, CS1112, CS1113, CS1754, CS9281, CS9282, CS9283, CS9284, CS9285, CS9287, CS9288,
+      CS9289, CS9290, CS9292, CS9293, CS9295, CS9300, CS9301, CS9302, CS9303, CS9304, CS9305
+  - name: Partial declarations
+    href: ./compiler-messages/partial-declarations.md
+    displayName: >
+      partial type, partial member, partial method, partial property, partial indexer,
+      CS0260, CS0261, CS0262, CS0263, CS0264, CS0265, CS0267, CS0282, CS0501, CS0750, CS0751, CS0754, CS0755, CS0756, CS0757,
+      CS0759, CS0761, CS0762, CS0763, CS0764, CS1067, CS8142, CS8663, CS8795, CS8796, CS8797, CS8798, CS8799, CS8800, CS8817,
+      CS8818, CS8863, CS8988, CS9248, CS9249, CS9250, CS9251, CS9252, CS9253, CS9254, CS9255, CS9256, CS9257, CS9258, CS9263,
+      CS9264, CS9266, CS9273, CS9275, CS9276, CS9277, CS9278, CS9279, CS9280
+  - name: Params modifier
+    href: ./compiler-messages/params-arrays.md
+    displayName: >
+      CS0225, CS0231, CS0466, CS0674, CS0758, CS1104, CS1611, CS1670, CS1751, CS9218, CS9223, CS9224, CS9225, CS9227, CS9228,
+      CS9272
+  - name: Nullable warnings
+    href: ./compiler-messages/nullable-warnings.md
+    displayName: >
+      CS8597, CS8598, CS8600, CS8601, CS8602, CS8604, CS8605, CS8607, CS8608, CS8609, CS8610, CS8611, CS8612, CS8613, CS8614,
+      CS8615, CS8616, CS8617, CS8618, CS8619, CS8620, CS8621, CS8622, CS8623, CS8624, CS8625, CS8628, CS8629, CS8631, CS8632,
+      CS8634, CS8636, CS8637, CS8639, CS8655, CS8633, CS8643, CS8644, CS8645, CS8762, CS8763, CS8764, CS8765, CS8766, CS8667,
+      CS8768, CS8670, CS8714, CS8767, CS8769, CS8770, CS8774, CS8776, CS8775, CS8777, CS8819, CS8824, CS8825, CS8847
+  - name: Pattern matching warnings
+    href: ./compiler-messages/pattern-matching-warnings.md
+    displayName: CS8509, CS9134, CS9135
+  - name: String literal declarations
+    href: ./compiler-messages/string-literal.md
+    displayName: CS9274
+  - name: Array declarations
+    href: ./compiler-messages/array-declaration-errors.md
+    displayName: >
+      CS0022, CS0178, CS0248, CS0251, CS0270, CS0611, CS0623, CS0650, CS0719, CS0747, CS0820, CS0826, CS0846, CS1062, CS1063,
+      CS1064, CS1552, CS1586, CS1920, CS1921, CS1925, CS1950, CS1954, CS3007, CS3016, CS9174, CS9176, CS9185, CS9186, CS9187,
+      CS9188, CS9203, CS9208, CS9209, CS9210
+  - name: Inline arrays
+    href: ./compiler-messages/inline-array-errors.md
+    displayName: CS9164, CS9165, CS9166, CS9167, CS9168, CS9169, CS9172, CS9173, CS9180, CS9181, CS9182, CS9183, CS9184, CS9259
+  - name: Lambda expressions
+    href: ./compiler-messages/lambda-expression-errors.md
+    displayName: >
+      CS0748, CS1621, CS1628, CS1632, CS1673, CS1686, CS1706, CS1989, CS3006, CS8030, CS8175, CS8916, CS8971, CS8972, CS8975, CS9098,
+      CS9099, CS9100
+  - name: Overload resolution
+    href: ./compiler-messages/overload-resolution.md
+    displayName: >
+      'overload resolution',
+      CS0034, CS0035, CS0111, CS0121, CS0457, CS1007, CS0663, CS1019, CS1020, CS1501, CS1534, CS1535, CS1928, CS1929,
+      CS8315, CS9261, CS9262
+  - name: Restrictions on expression trees
+    href: ./compiler-messages/expression-tree-restrictions.md
+    displayName: >
+      CS0765, CS0831, CS0832, CS0834, CS0835, CS0838, CS0845, CS0853, CS0854, CS0855, CS1944, CS1945, CS1946, CS1951, CS1952,
+      CS1963, CS2037, CS7053, CS8072, CS8074, CS8075, CS8110, CS8122, CS8143, CS8144, CS8153, CS8155, CS8198, CS8207, CS8382,
+      CS8514, CS8640, CS8642, CS8790, CS8791, CS8792, CS8810, CS8849, CS8927, CS8952, CS9170, CS9175
+  - name: Using directive and aliases
+    href: ./compiler-messages/using-directive-errors.md
+    displayName: >
+      CS0105, CS0138, CS0431, CS0432, CS0440, CS0576, CS0687, CS1529, CS1537, CS7000, CS7007, CS8019, CS8083, CS8085, CS8914,
+      CS8915, CS8933, CS9055, CS9130, CS9131, CS9132, CS9133, CS9162, CS9163
+  - name: Source generators
+    href: ./compiler-messages/source-generator-errors.md
+    displayName: >
+      CS9137, CS9138, CS9139, CS9140, CS9141, CS9142, CS9143, CS9144, CS9145, CS9146, CS9147, CS9148, CS9149, CS9150, CS9151,
+      CS9152, CS9153, CS9154, CS9155, CS9156, CS9157, CS9158, CS9159, CS9160, CS9161, CS9177, CS9178, CS9206, CS9207, CS9270
+  - name: static abstract interface members
+    href: ./compiler-messages/static-abstract-interfaces.md
+    displayName: CS8920, CS8921, CS8922, CS8923, CS8924, CS8925, CS8926, CS8928, CS8930, 8931, 8932
+  - name: Thread synchronization
+    href: ./compiler-messages/lock-semantics.md
+    displayName: CS0185, CS9216, CS9217
+  - name: Warning waves
+    href: ./compiler-messages/warning-waves.md
+    displayName: >
+      CS7023, CS8073, CS8848, CS8880, CS8881, CS8882, CS8883, CS8884, CS8885, CS8886, CS8887, CS8892, CS8897, CS8898, CS8826,
+      CS8981
+  - name: Error messages
+    items:
+    - name: CS0001
+      href: ./compiler-messages/cs0001.md
+    - name: CS0003
+      href: ../misc/cs0003.md
+    - name: CS0004
+      href: ../misc/cs0004.md
+    - name: CS0005
+      href: ../misc/cs0005.md
+    - name: CS0006
+      href: ./compiler-messages/cs0006.md
+    - name: CS0007
+      href: ./compiler-messages/cs0007.md
+    - name: CS0008
+      href: ../misc/cs0008.md
+    - name: CS0009
+      href: ../misc/cs0009.md
+    - name: CS0010
+      href: ../misc/cs0010.md
+    - name: CS0011
+      href: ../misc/cs0011.md
+    - name: CS0013
+      href: ../misc/cs0013.md
+    - name: CS0014
+      href: ../misc/cs0014.md
+    - name: CS0015
+      href: ./compiler-messages/cs0015.md
+    - name: CS0016
+      href: ./compiler-messages/cs0016.md
+    - name: CS0017
+      href: ../misc/cs0017.md
+    - name: CS0019
+      href: ./compiler-messages/cs0019.md
+    - name: CS0020
+      href: ../misc/cs0020.md
+    - name: CS0021
+      href: ../misc/cs0021.md
+    - name: CS0023
+      href: ../misc/cs0023.md
+    - name: CS0025
+      href: ../misc/cs0025.md
+    - name: CS0026
+      href: ../misc/cs0026.md
+    - name: CS0027
+      href: ../misc/cs0027.md
+    - name: CS0029
+      href: ./compiler-messages/cs0029.md
+    - name: CS0030
+      href: ../misc/cs0030.md
+    - name: CS0031
+      href: ../misc/cs0031.md
+    - name: CS0036
+      href: ../misc/cs0036.md
+    - name: CS0037
+      href: ../misc/cs0037.md
+    - name: CS0038
+      href: ./compiler-messages/cs0038.md
+    - name: CS0039
+      href: ./compiler-messages/cs0039.md
+    - name: CS0040
+      href: ../misc/cs0040.md
+    - name: CS0041
+      href: ../misc/cs0041.md
+    - name: CS0042
+      href: ../misc/cs0042.md
+    - name: CS0043
+      href: ../misc/cs0043.md
+    - name: CS0050
+      href: ./compiler-messages/cs0050.md
+    - name: CS0051
+      href: ./compiler-messages/cs0051.md
+    - name: CS0052
+      href: ./compiler-messages/cs0052.md
+    - name: CS0053
+      href: ../misc/cs0053.md
+    - name: CS0054
+      href: ../misc/cs0054.md
+    - name: CS0055
+      href: ../misc/cs0055.md
+    - name: CS0056
+      href: ../misc/cs0056.md
+    - name: CS0057
+      href: ../misc/cs0057.md
+    - name: CS0058
+      href: ../misc/cs0058.md
+    - name: CS0059
+      href: ../misc/cs0059.md
+    - name: CS0060
+      href: ../misc/cs0060.md
+    - name: CS0061
+      href: ../misc/cs0061.md
+    - name: CS0065
+      href: ../misc/cs0065.md
+    - name: CS0066
+      href: ../misc/cs0066.md
+    - name: CS0068
+      href: ../misc/cs0068.md
+    - name: CS0069
+      href: ../misc/cs0069.md
+    - name: CS0070
+      href: ../misc/cs0070.md
+    - name: CS0071
+      href: ./compiler-messages/cs0071.md
+    - name: CS0072
+      href: ../misc/cs0072.md
+    - name: CS0073
+      href: ../misc/cs0073.md
+    - name: CS0074
+      href: ../misc/cs0074.md
+    - name: CS0075
+      href: ../misc/cs0075.md
+    - name: CS0076
+      href: ../misc/cs0076.md
+    - name: CS0077
+      href: ../misc/cs0077.md
+    - name: CS0079
+      href: ../misc/cs0079.md
+    - name: CS0080
+      href: ../misc/cs0080.md
+    - name: CS0081
+      href: ../misc/cs0081.md
+    - name: CS0082
+      href: ../misc/cs0082.md
+    - name: CS0100
+      href: ../misc/cs0100.md
+    - name: CS0101
+      href: ../misc/cs0101.md
+    - name: CS0102
+      href: ../misc/cs0102.md
+    - name: CS0103
+      href: ./compiler-messages/cs0103.md
+    - name: CS0104
+      href: ../misc/cs0104.md
+    - name: CS0106
+      href: ./compiler-messages/cs0106.md
+    - name: CS0107
+      href: ../misc/cs0107.md
+    - name: CS0110
+      href: ../misc/cs0110.md
+    - name: CS0112
+      href: ../misc/cs0112.md
+    - name: CS0113
+      href: ../misc/cs0113.md
+    - name: CS0115
+      href: ./compiler-messages/cs0115.md
+    - name: CS0116
+      href: ./compiler-messages/cs0116.md
+    - name: CS0117
+      href: ../misc/cs0117.md
+    - name: CS0118
+      href: ../misc/cs0118.md
+    - name: CS0119
+      href: ../misc/cs0119.md
+    - name: CS0120
+      href: ./compiler-messages/cs0120.md
+    - name: CS0122
+      href: ./compiler-messages/cs0122.md
+    - name: CS0123
+      href: ../misc/cs0123.md
+    - name: CS0126
+      href: ../misc/cs0126.md
+    - name: CS0127
+      href: ../misc/cs0127.md
+    - name: CS0128
+      href: ../misc/cs0128.md
+    - name: CS0131
+      href: ../misc/cs0131.md
+    - name: CS0132
+      href: ../misc/cs0132.md
+    - name: CS0133
+      href: ../misc/cs0133.md
+    - name: CS0134
+      href: ./compiler-messages/cs0134.md
+    - name: CS0135
+      href: ../misc/cs0135.md
+    - name: CS0136
+      href: ../misc/cs0136.md
+    - name: CS0139
+      href: ../misc/cs0139.md
+    - name: CS0140
+      href: ../misc/cs0140.md
+    - name: CS0143
+      href: ../misc/cs0143.md
+    - name: CS0144
+      href: ../misc/cs0144.md
+    - name: CS0145
+      href: ../misc/cs0145.md
+    - name: CS0146
+      href: ../misc/cs0146.md
+    - name: CS0148
+      href: ../misc/cs0148.md
+    - name: CS0149
+      href: ../misc/cs0149.md
+    - name: CS0150
+      href: ../misc/cs0150.md
+    - name: CS0151
+      href: ./compiler-messages/cs0151.md
+    - name: CS0152
+      href: ../misc/cs0152.md
+    - name: CS0153
+      href: ../misc/cs0153.md
+    - name: CS0154
+      href: ../misc/cs0154.md
+    - name: CS0155
+      href: ../misc/cs0155.md
+    - name: CS0156
+      href: ../misc/cs0156.md
+    - name: CS0157
+      href: ../misc/cs0157.md
+    - name: CS0158
+      href: ../misc/cs0158.md
+    - name: CS0159
+      href: ../misc/cs0159.md
+    - name: CS0160
+      href: ../misc/cs0160.md
+    - name: CS0161
+      href: ../misc/cs0161.md
+    - name: CS0163
+      href: ./compiler-messages/cs0163.md
+    - name: CS0165
+      href: ./compiler-messages/cs0165.md
+    - name: CS0167
+      href: ../misc/cs0167.md
+    - name: CS0170
+      href: ../misc/cs0170.md
+    - name: CS0172
+      href: ../misc/cs0172.md
+    - name: CS0173
+      href: ./compiler-messages/cs0173.md
+    - name: CS0174
+      href: ../misc/cs0174.md
+    - name: CS0175
+      href: ../misc/cs0175.md
+    - name: CS0176
+      href: ../misc/cs0176.md
+    - name: CS0177
+      href: ../misc/cs0177.md
+    - name: CS0179
+      href: ../misc/cs0179.md
+    - name: CS0180
+      href: ../misc/cs0180.md
+    - name: CS0181
+      href: ./compiler-messages/cs0181.md
+    - name: CS0186
+      href: ../misc/cs0186.md
+    - name: CS0191
+      href: ../misc/cs0191.md
+    - name: CS0193
+      href: ../misc/cs0193.md
+    - name: CS0196
+      href: ../misc/cs0196.md
+    - name: CS0198
+      href: ../misc/cs0198.md
+    - name: CS0200
+      href: ../misc/cs0200.md
+    - name: CS0201
+      href: ./compiler-messages/cs0201.md
+    - name: CS0202
+      href: ../misc/cs0202.md
+    - name: CS0204
+      href: ../misc/cs0204.md
+    - name: CS0205
+      href: ../misc/cs0205.md
+    - name: CS0208
+      href: ../misc/cs0208.md
+    - name: CS0209
+      href: ../misc/cs0209.md
+    - name: CS0210
+      href: ../misc/cs0210.md
+    - name: CS0211
+      href: ../misc/cs0211.md
+    - name: CS0212
+      href: ../misc/cs0212.md
+    - name: CS0213
+      href: ../misc/cs0213.md
+    - name: CS0214
+      href: ../misc/cs0214.md
+    - name: CS0215
+      href: ../misc/cs0215.md
+    - name: CS0216
+      href: ../misc/cs0216.md
+    - name: CS0217
+      href: ../misc/cs0217.md
+    - name: CS0218
+      href: ../misc/cs0218.md
+    - name: CS0220
+      href: ../misc/cs0220.md
+    - name: CS0221
+      href: ../misc/cs0221.md
+    - name: CS0226
+      href: ../misc/cs0226.md
+    - name: CS0227
+      href: ../misc/cs0227.md
+    - name: CS0228
+      href: ../misc/cs0228.md
+    - name: CS0229
+      href: ./compiler-messages/cs0229.md
+    - name: CS0230
+      href: ../misc/cs0230.md
+    - name: CS0233
+      href: ./compiler-messages/cs0233.md
+    - name: CS0236
+      href: ../misc/cs0236.md
+    - name: CS0238
+      href: ../misc/cs0238.md
+    - name: CS0239
+      href: ../misc/cs0239.md
+    - name: CS0241
+      href: ../misc/cs0241.md
+    - name: CS0242
+      href: ../misc/cs0242.md
+    - name: CS0243
+      href: ../misc/cs0243.md
+    - name: CS0244
+      href: ../misc/cs0244.md
+    - name: CS0245
+      href: ../misc/cs0245.md
+    - name: CS0247
+      href: ../misc/cs0247.md
+    - name: CS0249
+      href: ../misc/cs0249.md
+    - name: CS0250
+      href: ../misc/cs0250.md
+    - name: CS0254
+      href: ../misc/cs0254.md
+    - name: CS0255
+      href: ../misc/cs0255.md
+    - name: CS0266
+      href: ./compiler-messages/cs0266.md
+    - name: CS0268
+      href: ../misc/cs0268.md
+    - name: CS0269
+      href: ./compiler-messages/cs0269.md
+    - name: CS0271
+      href: ../misc/cs0271.md
+    - name: CS0272
+      href: ../misc/cs0272.md
+    - name: CS0273
+      href: ../misc/cs0273.md
+    - name: CS0274
+      href: ../misc/cs0274.md
+    - name: CS0275
+      href: ../misc/cs0275.md
+    - name: CS0276
+      href: ../misc/cs0276.md
+    - name: CS0277
+      href: ../misc/cs0277.md
+    - name: CS0281
+      href: ../misc/cs0281.md
+    - name: CS0283
+      href: ../misc/cs0283.md
+    - name: CS0304
+      href: ./compiler-messages/cs0304.md
+    - name: CS0305
+      href: ../misc/cs0305.md
+    - name: CS0306
+      href: ../misc/cs0306.md
+    - name: CS0307
+      href: ../misc/cs0307.md
+    - name: CS0308
+      href: ../misc/cs0308.md
+    - name: CS0310
+      href: ./compiler-messages/cs0310.md
+    - name: CS0311
+      href: ./compiler-messages/cs0311.md
+    - name: CS0312
+      href: ../misc/cs0312.md
+    - name: CS0313
+      href: ../misc/cs0313.md
+    - name: CS0314
+      href: ../misc/cs0314.md
+    - name: CS0315
+      href: ../misc/cs0315.md
+    - name: CS0316
+      href: ../misc/cs0316.md
+    - name: CS0401
+      href: ../misc/cs0401.md
+    - name: CS0403
+      href: ../misc/cs0403.md
+    - name: CS0404
+      href: ../misc/cs0404.md
+    - name: CS0405
+      href: ../misc/cs0405.md
+    - name: CS0406
+      href: ../misc/cs0406.md
+    - name: CS0407
+      href: ../misc/cs0407.md
+    - name: CS0409
+      href: ../misc/cs0409.md
+    - name: CS0410
+      href: ../misc/cs0410.md
+    - name: CS0411
+      href: ../misc/cs0411.md
+    - name: CS0412
+      href: ../misc/cs0412.md
+    - name: CS0413
+      href: ./compiler-messages/cs0413.md
+    - name: CS0415
+      href: ../misc/cs0415.md
+    - name: CS0416
+      href: ../misc/cs0416.md
+    - name: CS0417
+      href: ./compiler-messages/cs0417.md
+    - name: CS0418
+      href: ../misc/cs0418.md
+    - name: CS0423
+      href: ../misc/cs0423.md
+    - name: CS0424
+      href: ../misc/cs0424.md
+    - name: CS0425
+      href: ../misc/cs0425.md
+    - name: CS0426
+      href: ../misc/cs0426.md
+    - name: CS0428
+      href: ../misc/cs0428.md
+    - name: CS0430
+      href: ../misc/cs0430.md
+    - name: CS0433
+      href: ./compiler-messages/cs0433.md
+    - name: CS0434
+      href: ../misc/cs0434.md
+    - name: CS0438
+      href: ../misc/cs0438.md
+    - name: CS0439
+      href: ../misc/cs0439.md
+    - name: CS0441
+      href: ../misc/cs0441.md
+    - name: CS0442
+      href: ../misc/cs0442.md
+    - name: CS0443
+      href: ../misc/cs0443.md
+    - name: CS0445
+      href: ./compiler-messages/cs0445.md
+    - name: CS0446
+      href: ./compiler-messages/cs0446.md
+    - name: CS0447
+      href: ../misc/cs0447.md
+    - name: CS0448
+      href: ../misc/cs0448.md
+    - name: CS0449
+      href: ../misc/cs0449.md
+    - name: CS0450
+      href: ../misc/cs0450.md
+    - name: CS0451
+      href: ../misc/cs0451.md
+    - name: CS0452
+      href: ../misc/cs0452.md
+    - name: CS0453
+      href: ../misc/cs0453.md
+    - name: CS0454
+      href: ../misc/cs0454.md
+    - name: CS0455
+      href: ../misc/cs0455.md
+    - name: CS0456
+      href: ../misc/cs0456.md
+    - name: CS0459
+      href: ../misc/cs0459.md
+    - name: CS0460
+      href: ../misc/cs0460.md
+    - name: CS0462
+      href: ../misc/cs0462.md
+    - name: CS0463
+      href: ../misc/cs0463.md
+    - name: CS0468
+      href: ../misc/cs0468.md
+    - name: CS0470
+      href: ../misc/cs0470.md
+    - name: CS0471
+      href: ../misc/cs0471.md
+    - name: CS0473
+      href: ../misc/cs0473.md
+    - name: CS0500
+      href: ../misc/cs0500.md
+    - name: CS0502
+      href: ../misc/cs0502.md
+    - name: CS0503
+      href: ../misc/cs0503.md
+    - name: CS0504
+      href: ./compiler-messages/cs0504.md
+    - name: CS0505
+      href: ../misc/cs0505.md
+    - name: CS0506
+      href: ../misc/cs0506.md
+    - name: CS0507
+      href: ./compiler-messages/cs0507.md
+    - name: CS0508
+      href: ../misc/cs0508.md
+    - name: CS0509
+      href: ../misc/cs0509.md
+    - name: CS0513
+      href: ../misc/cs0513.md
+    - name: CS0518
+      href: ./compiler-messages/cs0518.md
+    - name: CS0520
+      href: ../misc/cs0520.md
+    - name: CS0523
+      href: ./compiler-messages/cs0523.md
+    - name: CS0524
+      href: ../misc/cs0524.md
+    - name: CS0525
+      href: ../misc/cs0525.md
+    - name: CS0527
+      href: ../misc/cs0527.md
+    - name: CS0528
+      href: ../misc/cs0528.md
+    - name: CS0529
+      href: ../misc/cs0529.md
+    - name: CS0531
+      href: ../misc/cs0531.md
+    - name: CS0533
+      href: ../misc/cs0533.md
+    - name: CS0534
+      href: ../misc/cs0534.md
+    - name: CS0535
+      href: ../misc/cs0535.md
+    - name: CS0537
+      href: ../misc/cs0537.md
+    - name: CS0538
+      href: ../misc/cs0538.md
+    - name: CS0539
+      href: ../misc/cs0539.md
+    - name: CS0540
+      href: ../misc/cs0540.md
+    - name: CS0541
+      href: ../misc/cs0541.md
+    - name: CS0542
+      href: ../misc/cs0542.md
+    - name: CS0543
+      href: ../misc/cs0543.md
+    - name: CS0544
+      href: ../misc/cs0544.md
+    - name: CS0545
+      href: ./compiler-messages/cs0545.md
+    - name: CS0546
+      href: ../misc/cs0546.md
+    - name: CS0547
+      href: ../misc/cs0547.md
+    - name: CS0548
+      href: ../misc/cs0548.md
+    - name: CS0549
+      href: ../misc/cs0549.md
+    - name: CS0550
+      href: ../misc/cs0550.md
+    - name: CS0551
+      href: ../misc/cs0551.md
+    - name: CS0552
+      href: ./compiler-messages/cs0552.md
+    - name: CS0553
+      href: ../misc/cs0553.md
+    - name: CS0554
+      href: ../misc/cs0554.md
+    - name: CS0555
+      href: ../misc/cs0555.md
+    - name: CS0556
+      href: ../misc/cs0556.md
+    - name: CS0557
+      href: ../misc/cs0557.md
+    - name: CS0558
+      href: ../misc/cs0558.md
+    - name: CS0559
+      href: ../misc/cs0559.md
+    - name: CS0562
+      href: ../misc/cs0562.md
+    - name: CS0563
+      href: ./compiler-messages/cs0563.md
+    - name: CS0564
+      href: ../misc/cs0564.md
+    - name: CS0567
+      href: ../misc/cs0567.md
+    - name: CS0569
+      href: ../misc/cs0569.md
+    - name: CS0570
+      href: ./compiler-messages/cs0570.md
+    - name: CS0571
+      href: ./compiler-messages/cs0571.md
+    - name: CS0572
+      href: ../misc/cs0572.md
+    - name: CS0573
+      href: ../misc/cs0573.md
+    - name: CS0574
+      href: ../misc/cs0574.md
+    - name: CS0575
+      href: ../misc/cs0575.md
+    - name: CS0577
+      href: ../misc/cs0577.md
+    - name: CS0578
+      href: ../misc/cs0578.md
+    - name: CS0579
+      href: ./compiler-messages/cs0579.md
+    - name: CS0582
+      href: ../misc/cs0582.md
+    - name: CS0583
+      href: ../misc/cs0583.md
+    - name: CS0584
+      href: ../misc/cs0584.md
+    - name: CS0585
+      href: ../misc/cs0585.md
+    - name: CS0586
+      href: ../misc/cs0586.md
+    - name: CS0587
+      href: ../misc/cs0587.md
+    - name: CS0588
+      href: ../misc/cs0588.md
+    - name: CS0589
+      href: ../misc/cs0589.md
+    - name: CS0590
+      href: ../misc/cs0590.md
+    - name: CS0592
+      href: ./compiler-messages/cs0592.md
+    - name: CS0594
+      href: ../misc/cs0594.md
+    - name: CS0596
+      href: ../misc/cs0596.md
+    - name: CS0601
+      href: ../misc/cs0601.md
+    - name: CS0609
+      href: ../misc/cs0609.md
+    - name: CS0610
+      href: ../misc/cs0610.md
+    - name: CS0616
+      href: ./compiler-messages/cs0616.md
+    - name: CS0619
+      href: ../misc/cs0619.md
+    - name: CS0620
+      href: ../misc/cs0620.md
+    - name: CS0621
+      href: ../misc/cs0621.md
+    - name: CS0622
+      href: ../misc/cs0622.md
+    - name: CS0625
+      href: ../misc/cs0625.md
+    - name: CS0629
+      href: ../misc/cs0629.md
+    - name: CS0635
+      href: ../misc/cs0635.md
+    - name: CS0636
+      href: ../misc/cs0636.md
+    - name: CS0637
+      href: ../misc/cs0637.md
+    - name: CS0641
+      href: ../misc/cs0641.md
+    - name: CS0644
+      href: ../misc/cs0644.md
+    - name: CS0645
+      href: ../misc/cs0645.md
+    - name: CS0646
+      href: ../misc/cs0646.md
+    - name: CS0647
+      href: ../misc/cs0647.md
+    - name: CS0648
+      href: ../misc/cs0648.md
+    - name: CS0653
+      href: ../misc/cs0653.md
+    - name: CS0656
+      href: ../misc/cs0656.md
+    - name: CS0662
+      href: ../misc/cs0662.md
+    - name: CS0664
+      href: ../misc/cs0664.md
+    - name: CS0666
+      href: ../misc/cs0666.md
+    - name: CS0667
+      href: ../misc/cs0667.md
+    - name: CS0668
+      href: ../misc/cs0668.md
+    - name: CS0669
+      href: ../misc/cs0669.md
+    - name: CS0670
+      href: ../misc/cs0670.md
+    - name: CS0673
+      href: ../misc/cs0673.md
+    - name: CS0677
+      href: ../misc/cs0677.md
+    - name: CS0678
+      href: ../misc/cs0678.md
+    - name: CS0681
+      href: ../misc/cs0681.md
+    - name: CS0682
+      href: ../misc/cs0682.md
+    - name: CS0683
+      href: ../misc/cs0683.md
+    - name: CS0685
+      href: ../misc/cs0685.md
+    - name: CS0686
+      href: ./compiler-messages/cs0686.md
+    - name: CS0689
+      href: ../misc/cs0689.md
+    - name: CS0690
+      href: ../misc/cs0690.md
+    - name: CS0692
+      href: ../misc/cs0692.md
+    - name: CS0694
+      href: ../misc/cs0694.md
+    - name: CS0695
+      href: ../misc/cs0695.md
+    - name: CS0698
+      href: ../misc/cs0698.md
+    - name: CS0699
+      href: ../misc/cs0699.md
+    - name: CS0701
+      href: ../misc/cs0701.md
+    - name: CS0702
+      href: ./compiler-messages/cs0702.md
+    - name: CS0703
+      href: ./compiler-messages/cs0703.md
+    - name: CS0704
+      href: ../misc/cs0704.md
+    - name: CS0706
+      href: ../misc/cs0706.md
+    - name: CS0708
+      href: ../misc/cs0708.md
+    - name: CS0709
+      href: ../misc/cs0709.md
+    - name: CS0711
+      href: ../misc/cs0711.md
+    - name: CS0712
+      href: ../misc/cs0712.md
+    - name: CS0713
+      href: ../misc/cs0713.md
+    - name: CS0714
+      href: ../misc/cs0714.md
+    - name: CS0715
+      href: ../misc/cs0715.md
+    - name: CS0716
+      href: ../misc/cs0716.md
+    - name: CS0717
+      href: ../misc/cs0717.md
+    - name: CS0718
+      href: ../misc/cs0718.md
+    - name: CS0720
+      href: ../misc/cs0720.md
+    - name: CS0721
+      href: ../misc/cs0721.md
+    - name: CS0722
+      href: ../misc/cs0722.md
+    - name: CS0723
+      href: ../misc/cs0723.md
+    - name: CS0724
+      href: ../misc/cs0724.md
+    - name: CS0726
+      href: ../misc/cs0726.md
+    - name: CS0727
+      href: ../misc/cs0727.md
+    - name: CS0729
+      href: ../misc/cs0729.md
+    - name: CS0730
+      href: ../misc/cs0730.md
+    - name: CS0731
+      href: ./compiler-messages/cs0731.md
+    - name: CS0733
+      href: ../misc/cs0733.md
+    - name: CS0734
+      href: ../misc/cs0734.md
+    - name: CS0735
+      href: ../misc/cs0735.md
+    - name: CS0736
+      href: ../misc/cs0736.md
+    - name: CS0737
+      href: ../misc/cs0737.md
+    - name: CS0738
+      href: ../misc/cs0738.md
+    - name: CS0739
+      href: ../misc/cs0739.md
+    - name: CS0742
+      href: ../misc/cs0742.md
+    - name: CS0743
+      href: ../misc/cs0743.md
+    - name: CS0744
+      href: ../misc/cs0744.md
+    - name: CS0745
+      href: ../misc/cs0745.md
+    - name: CS0746
+      href: ../misc/cs0746.md
+    - name: CS0752
+      href: ../misc/cs0752.md
+    - name: CS0753
+      href: ../misc/cs0753.md
+    - name: CS0766
+      href: ../misc/cs0766.md
+    - name: CS0811
+      href: ../misc/cs0811.md
+    - name: CS0815
+      href: ../misc/cs0815.md
+    - name: CS0818
+      href: ../misc/cs0818.md
+    - name: CS0819
+      href: ../misc/cs0819.md
+    - name: CS0821
+      href: ../misc/cs0821.md
+    - name: CS0822
+      href: ../misc/cs0822.md
+    - name: CS0825
+      href: ../misc/cs0825.md
+    - name: CS0828
+      href: ../misc/cs0828.md
+    - name: CS0833
+      href: ../misc/cs0833.md
+    - name: CS0836
+      href: ../misc/cs0836.md
+    - name: CS0837
+      href: ../misc/cs0837.md
+    - name: CS0840
+      href: ./compiler-messages/cs0840.md
+    - name: CS0841
+      href: ../misc/cs0841.md
+    - name: CS0842
+      href: ../misc/cs0842.md
+    - name: CS0844
+      href: ../misc/cs0844.md
+    - name: CS1001
+      href: ./compiler-messages/cs1001.md
+    - name: CS1002
+      href: ../misc/cs1002.md
+    - name: CS1003
+      href: ../misc/cs1003.md
+    - name: CS1004
+      href: ../misc/cs1004.md
+    - name: CS1008
+      href: ../misc/cs1008.md
+    - name: CS1009
+      href: ./compiler-messages/cs1009.md
+    - name: CS1010
+      href: ../misc/cs1010.md
+    - name: CS1011
+      href: ../misc/cs1011.md
+    - name: CS1012
+      href: ../misc/cs1012.md
+    - name: CS1013
+      href: ../misc/cs1013.md
+    - name: CS1014
+      href: ../misc/cs1014.md
+    - name: CS1015
+      href: ../misc/cs1015.md
+    - name: CS1017
+      href: ../misc/cs1017.md
+    - name: CS1018
+      href: ./compiler-messages/cs1018.md
+    - name: CS1021
+      href: ../misc/cs1021.md
+    - name: CS1022
+      href: ../misc/cs1022.md
+    - name: CS1023
+      href: ../misc/cs1023.md
+    - name: CS1024
+      href: ../misc/cs1024.md
+    - name: CS1025
+      href: ../misc/cs1025.md
+    - name: CS1026
+      href: ./compiler-messages/cs1026.md
+    - name: CS1027
+      href: ../misc/cs1027.md
+    - name: CS1028
+      href: ../misc/cs1028.md
+    - name: CS1029
+      href: ./compiler-messages/cs1029.md
+    - name: CS1031
+      href: ../misc/cs1031.md
+    - name: CS1032
+      href: ../misc/cs1032.md
+    - name: CS1033
+      href: ../misc/cs1033.md
+    - name: CS1034
+      href: ../misc/cs1034.md
+    - name: CS1035
+      href: ../misc/cs1035.md
+    - name: CS1036
+      href: ../misc/cs1036.md
+    - name: CS1037
+      href: ../misc/cs1037.md
+    - name: CS1038
+      href: ../misc/cs1038.md
+    - name: CS1039
+      href: ../misc/cs1039.md
+    - name: CS1040
+      href: ../misc/cs1040.md
+    - name: CS1041
+      href: ../misc/cs1041.md
+    - name: CS1043
+      href: ../misc/cs1043.md
+    - name: CS1044
+      href: ../misc/cs1044.md
+    - name: CS1055
+      href: ../misc/cs1055.md
+    - name: CS1056
+      href: ../misc/cs1056.md
+    - name: CS1057
+      href: ../misc/cs1057.md
+    - name: CS1059
+      href: ../misc/cs1059.md
+    - name: CS1061
+      href: ./compiler-messages/cs1061.md
+    - name: CS1065
+      href: ./compiler-messages/cs1065.md
+    - name: CS1107
+      href: ../misc/cs1107.md
+    - name: CS1108
+      href: ../misc/cs1108.md
+    - name: CS1502
+      href: ../misc/cs1503.md
+    - name: CS1503
+      href: ../misc/cs1503.md
+    - name: CS1504
+      href: ../misc/cs1504.md
+    - name: CS1507
+      href: ../misc/cs1507.md
+    - name: CS1508
+      href: ../misc/cs1508.md
+    - name: CS1509
+      href: ../misc/cs1509.md
+    - name: CS1511
+      href: ../misc/cs1511.md
+    - name: CS1512
+      href: ../misc/cs1512.md
+    - name: CS1513
+      href: ../misc/cs1513.md
+    - name: CS1514
+      href: ../misc/cs1514.md
+    - name: CS1515
+      href: ../misc/cs1515.md
+    - name: CS1517
+      href: ../misc/cs1517.md
+    - name: CS1518
+      href: ../misc/cs1518.md
+    - name: CS1519
+      href: ./compiler-messages/cs1519.md
+    - name: CS1520
+      href: ../misc/cs1520.md
+    - name: CS1521
+      href: ../misc/cs1521.md
+    - name: CS1524
+      href: ../misc/cs1524.md
+    - name: CS1525
+      href: ../misc/cs1525.md
+    - name: CS1526
+      href: ../misc/cs1526.md
+    - name: CS1527
+      href: ../misc/cs1527.md
+    - name: CS1528
+      href: ../misc/cs1528.md
+    - name: CS1530
+      href: ../misc/cs1530.md
+    - name: CS1536
+      href: ../misc/cs1536.md
+    - name: CS1540
+      href: ./compiler-messages/cs1540.md
+    - name: CS1541
+      href: ../misc/cs1541.md
+    - name: CS1542
+      href: ../misc/cs1542.md
+    - name: CS1545
+      href: ../misc/cs1545.md
+    - name: CS1546
+      href: ./compiler-messages/cs1546.md
+    - name: CS1547
+      href: ../misc/cs1547.md
+    - name: CS1548
+      href: ./compiler-messages/cs1548.md
+    - name: CS1551
+      href: ../misc/cs1551.md
+    - name: CS1553
+      href: ../misc/cs1553.md
+    - name: CS1554
+      href: ../misc/cs1554.md
+    - name: CS1555
+      href: ../misc/cs1555.md
+    - name: CS1556
+      href: ../misc/cs1556.md
+    - name: CS1557
+      href: ../misc/cs1557.md
+    - name: CS1558
+      href: ../misc/cs1558.md
+    - name: CS1559
+      href: ../misc/cs1559.md
+    - name: CS1560
+      href: ../misc/cs1560.md
+    - name: CS1561
+      href: ../misc/cs1561.md
+    - name: CS1562
+      href: ../misc/cs1562.md
+    - name: CS1563
+      href: ../misc/cs1563.md
+    - name: CS1564
+      href: ./compiler-messages/cs1564.md
+    - name: CS1565
+      href: ../misc/cs1565.md
+    - name: CS1566
+      href: ../misc/cs1566.md
+    - name: CS1567
+      href: ./compiler-messages/cs1567.md
+    - name: CS1569
+      href: ../misc/cs1569.md
+    - name: CS1575
+      href: ../misc/cs1575.md
+    - name: CS1576
+      href: ../misc/cs1576.md
+    - name: CS1577
+      href: ../misc/cs1577.md
+    - name: CS1578
+      href: ../misc/cs1578.md
+    - name: CS1579
+      href: ./compiler-messages/cs1579.md
+    - name: CS1583
+      href: ../misc/cs1583.md
+    - name: CS1585
+      href: ../misc/cs1585.md
+    - name: CS1588
+      href: ../misc/cs1588.md
+    - name: CS1593
+      href: ../misc/cs1593.md
+    - name: CS1594
+      href: ../misc/cs1594.md
+    - name: CS1597
+      href: ../misc/cs1597.md
+    - name: CS1599
+      href: ../misc/cs1599.md
+    - name: CS1600
+      href: ../misc/cs1600.md
+    - name: CS1601
+      href: ../misc/cs1601.md
+    - name: CS1604
+      href: ../misc/cs1604.md
+    - name: CS1606
+      href: ../misc/cs1606.md
+    - name: CS1608
+      href: ../misc/cs1608.md
+    - name: CS1609
+      href: ../misc/cs1609.md
+    - name: CS1612
+      href: ./compiler-messages/cs1612.md
+    - name: CS1613
+      href: ../misc/cs1613.md
+    - name: CS1614
+      href: ./compiler-messages/cs1614.md
+    - name: CS1615
+      href: ../misc/cs1615.md
+    - name: CS1617
+      href: ../misc/cs1617.md
+    - name: CS1618
+      href: ../misc/cs1618.md
+    - name: CS1619
+      href: ../misc/cs1619.md
+    - name: CS1620
+      href: ../misc/cs1620.md
+    - name: CS1630
+      href: ../misc/cs1630.md
+    - name: CS1637
+      href: ./compiler-messages/iterator-yield.md
+    - name: CS1638
+      href: ../misc/cs1638.md
+    - name: CS1639
+      href: ../misc/cs1639.md
+    - name: CS1640
+      href: ./compiler-messages/cs1640.md
+    - name: CS1641
+      href: ../misc/cs1641.md
+    - name: CS1642
+      href: ../misc/cs1642.md
+    - name: CS1643
+      href: ../misc/cs1643.md
+    - name: CS1644
+      href: ./compiler-messages/cs1644.md
+    - name: CS1646
+      href: ../misc/cs1646.md
+    - name: CS1647
+      href: ../misc/cs1647.md
+    - name: CS1648
+      href: ../misc/cs1648.md
+    - name: CS1650
+      href: ../misc/cs1650.md
+    - name: CS1654
+      href: ../misc/cs1654.md
+    - name: CS1656
+      href: ./compiler-messages/cs1656.md
+    - name: CS1660
+      href: ../misc/cs1660.md
+    - name: CS1661
+      href: ../misc/cs1661.md
+    - name: CS1662
+      href: ../misc/cs1662.md
+    - name: CS1663
+      href: ../misc/cs1663.md
+    - name: CS1664
+      href: ../misc/cs1664.md
+    - name: CS1665
+      href: ../misc/cs1665.md
+    - name: CS1666
+      href: ../misc/cs1666.md
+    - name: CS1667
+      href: ../misc/cs1667.md
+    - name: CS1671
+      href: ../misc/cs1671.md
+    - name: CS1672
+      href: ../misc/cs1672.md
+    - name: CS1674
+      href: ./compiler-messages/cs1674.md
+    - name: CS1675
+      href: ../misc/cs1675.md
+    - name: CS1676
+      href: ../misc/cs1676.md
+    - name: CS1677
+      href: ../misc/cs1677.md
+    - name: CS1678
+      href: ../misc/cs1678.md
+    - name: CS1679
+      href: ../misc/cs1679.md
+    - name: CS1680
+      href: ../misc/cs1680.md
+    - name: CS1681
+      href: ../misc/cs1681.md
+    - name: CS1688
+      href: ../misc/cs1688.md
+    - name: CS1689
+      href: ../misc/cs1689.md
+    - name: CS1703
+      href: ./compiler-messages/cs1703.md
+    - name: CS1705
+      href: ./compiler-messages/cs1705.md
+    - name: CS1708
+      href: ./compiler-messages/cs1708.md
+    - name: CS1713
+      href: ../misc/cs1713.md
+    - name: CS1715
+      href: ../misc/cs1715.md
+    - name: CS1716
+      href: ./compiler-messages/cs1716.md
+    - name: CS1719
+      href: ../misc/cs1719.md
+    - name: CS1721
+      href: ./compiler-messages/cs1721.md
+    - name: CS1722
+      href: ../misc/cs1722.md
+    - name: CS1724
+      href: ../misc/cs1724.md
+    - name: CS1725
+      href: ../misc/cs1725.md
+    - name: CS1726
+      href: ./compiler-messages/cs1726.md
+    - name: CS1727
+      href: ../misc/cs1727.md
+    - name: CS1728
+      href: ../misc/cs1728.md
+    - name: CS1729
+      href: ./compiler-messages/cs1729.md
+    - name: CS1730
+      href: ../misc/cs1730.md
+    - name: CS1731
+      href: ../misc/cs1731.md
+    - name: CS1732
+      href: ../misc/cs1732.md
+    - name: CS1733
+      href: ../misc/cs1733.md
+    - name: CS1736
+      href: ./compiler-messages/cs1736.md
+    - name: CS1737
+      href: ./compiler-messages/cs1737.md
+    - name: CS1750
+      href: ./compiler-messages/cs1750.md
+    - name: CS1763
+      href: ./compiler-messages/cs1763.md
+    - name: CS1900
+      href: ../misc/cs1900.md
+    - name: CS1902
+      href: ../misc/cs1902.md
+    - name: CS1906
+      href: ../misc/cs1906.md
+    - name: CS1908
+      href: ../misc/cs1908.md
+    - name: CS1909
+      href: ../misc/cs1909.md
+    - name: CS1910
+      href: ../misc/cs1910.md
+    - name: CS1912
+      href: ../misc/cs1912.md
+    - name: CS1913
+      href: ../misc/cs1913.md
+    - name: CS1914
+      href: ../misc/cs1914.md
+    - name: CS1917
+      href: ../misc/cs1917.md
+    - name: CS1918
+      href: ../misc/cs1918.md
+    - name: CS1919
+      href: ./compiler-messages/cs1919.md
+    - name: CS1922
+      href: ../misc/cs1922.md
+    - name: CS1926
+      href: ./compiler-messages/cs1926.md
+    - name: CS1930
+      href: ../misc/cs1930.md
+    - name: CS1931
+      href: ../misc/cs1931.md
+    - name: CS1932
+      href: ../misc/cs1932.md
+    - name: CS1933
+      href: ./compiler-messages/cs1933.md
+    - name: CS1934
+      href: ../misc/cs1934.md
+    - name: CS1935
+      href: ../misc/cs1935.md
+    - name: CS1936
+      href: ./compiler-messages/cs1936.md
+    - name: CS1937
+      href: ../misc/cs1937.md
+    - name: CS1938
+      href: ../misc/cs1938.md
+    - name: CS1940
+      href: ../misc/cs1940.md
+    - name: CS1941
+      href: ./compiler-messages/cs1941.md
+    - name: CS1942
+      href: ./compiler-messages/cs1942.md
+    - name: CS1943
+      href: ./compiler-messages/cs1943.md
+    - name: CS1947
+      href: ../misc/cs1947.md
+    - name: CS1948
+      href: ../misc/cs1948.md
+    - name: CS1949
+      href: ../misc/cs1949.md
+    - name: CS1955
+      href: ../misc/cs1955.md
+    - name: CS1958
+      href: ../misc/cs1958.md
+    - name: CS1959
+      href: ../misc/cs1959.md
+    - name: CS1983
+      href: ./compiler-messages/cs1983.md
+    - name: CS1986
+      href: ./compiler-messages/cs1986.md
+    - name: CS1994
+      href: ./compiler-messages/cs1994.md
+    - name: CS1996
+      href: ./compiler-messages/cs1996.md
+    - name: CS1997
+      href: ./compiler-messages/cs1997.md
+    - name: CS2001
+      href: ../misc/cs2001.md
+    - name: CS2003
+      href: ../misc/cs2003.md
+    - name: CS2005
+      href: ../misc/cs2005.md
+    - name: CS2006
+      href: ../misc/cs2006.md
+    - name: CS2007
+      href: ../misc/cs2007.md
+    - name: CS2008
+      href: ../misc/cs2008.md
+    - name: CS2011
+      href: ../misc/cs2011.md
+    - name: CS2012
+      href: ../misc/cs2012.md
+    - name: CS2013
+      href: ../misc/cs2013.md
+    - name: CS2015
+      href: ../misc/cs2015.md
+    - name: CS2016
+      href: ../misc/cs2016.md
+    - name: CS2017
+      href: ../misc/cs2017.md
+    - name: CS2018
+      href: ../misc/cs2018.md
+    - name: CS2019
+      href: ../misc/cs2019.md
+    - name: CS2020
+      href: ../misc/cs2020.md
+    - name: CS2021
+      href: ../misc/cs2021.md
+    - name: CS2022
+      href: ../misc/cs2022.md
+    - name: CS2024
+      href: ../misc/cs2024.md
+    - name: CS2032
+      href: ./compiler-messages/cs2032.md
+    - name: CS2033
+      href: ../misc/cs2033.md
+    - name: CS2034
+      href: ../misc/cs2034.md
+    - name: CS2035
+      href: ../misc/cs2035.md
+    - name: CS2036
+      href: ../misc/cs2036.md
+    - name: CS4004
+      href: ./compiler-messages/cs4004.md
+    - name: CS4008
+      href: ./compiler-messages/cs4008.md
+    - name: CS4009
+      href: ../misc/CS4009.md
+    - name: CS4032
+      href: ./compiler-messages/cs4032.md
+    - name: CS4033
+      href: ./compiler-messages/cs4033.md
+    - name: CS5001
+      href: ../misc/cs5001.md
+    - name: CS7003
+      href: ./compiler-messages/cs7003.md
+    - name: CS8124
+      href: ./compiler-messages/cs8124.md
+    - name: CS8125
+      href: ./compiler-messages/cs8125.md
+    - name: CS8127
+      href: ./compiler-messages/cs8127.md
+    - name: CS8129
+      href: ./compiler-messages/cs8129.md
+    - name: CS8130
+      href: ./compiler-messages/cs8130.md
+    - name: CS8131
+      href: ./compiler-messages/cs8131.md
+    - name: CS8132
+      href: ./compiler-messages/cs8132.md
+    - name: CS8139
+      href: ./compiler-messages/cs8139.md
+    - name: CS8140
+      href: ./compiler-messages/cs8140.md
+    - name: CS8141
+      href: ./compiler-messages/cs8141.md
+    - name: CS8145
+      href: ./compiler-messages/cs8145.md
+    - name: CS8146
+      href: ./compiler-messages/cs8146.md
+    - name: CS8147
+      href: ./compiler-messages/cs8147.md
+    - name: CS8148
+      href: ./compiler-messages/cs8148.md
+    - name: CS8149
+      href: ./compiler-messages/cs8149.md
+    - name: CS8150
+      href: ./compiler-messages/cs8150.md
+    - name: CS8151
+      href: ./compiler-messages/cs8151.md
+    - name: CS8152
+      href: ./compiler-messages/cs8152.md
+    - name: CS8156
+      href: ./compiler-messages/cs8156.md
+    - name: CS8157
+      href: ./compiler-messages/cs8157.md
+    - name: CS8158
+      href: ./compiler-messages/cs8158.md
+    - name: CS8159
+      href: ./compiler-messages/cs8159.md
+    - name: CS8160
+      href: ./compiler-messages/cs8160.md
+    - name: CS8161
+      href: ./compiler-messages/cs8161.md
+    - name: CS8162
+      href: ./compiler-messages/cs8162.md
+    - name: CS8163
+      href: ./compiler-messages/cs8163.md
+    - name: CS8170
+      href: ./compiler-messages/cs8170.md
+    - name: CS8171
+      href: ./compiler-messages/cs8171.md
+    - name: CS8172
+      href: ./compiler-messages/cs8172.md
+    - name: CS8173
+      href: ./compiler-messages/cs8173.md
+    - name: CS8174
+      href: ./compiler-messages/cs8174.md
+    - name: CS8177
+      href: ./compiler-messages/cs8177.md
+    - name: CS8178
+      href: ./compiler-messages/cs8178.md
+    - name: CS8210
+      href: ./compiler-messages/cs8210.md
+    - name: CS8333
+      href: ./compiler-messages/cs8333.md
+    - name: CS8334
+      href: ./compiler-messages/cs8334.md
+    - name: CS8352
+      href: ./compiler-messages/cs8352.md
+    - name: CS8354
+      href: ./compiler-messages/cs8354.md
+    - name: CS8355
+      href: ./compiler-messages/cs8355.md
+    - name: CS8403
+      href: ./compiler-messages/cs8403.md
+    - name: CS8410
+      href: ./compiler-messages/cs8410.md
+    - name: CS8411
+      href: ./compiler-messages/cs8411.md
+    - name: CS8422
+      href: ./compiler-messages/cs8422.md
+    - name: CS8515
+      href: ./compiler-messages/cs8515.md
+    - name: CS8802
+      href: ./compiler-messages/cs8802.md
+    - name: CS8803
+      href: ./compiler-messages/cs8803.md
+    - name: CS8812
+      href: ./compiler-messages/cs8812.md
+    - name: CS8515
+      href: ./compiler-messages/cs8515.md
+    - name: CS9036
+      href: ./compiler-messages/cs9036.md
+    - name: CS9043
+      href: ./compiler-messages/cs9043.md
+  - name: Level 1 warning messages
+    items:
+    - name: CS0183
+      href: ../misc/cs0183.md
+    - name: CS0184
+      href: ../misc/cs0184.md
+    - name: CS0197
+      href: ../misc/cs0197.md
+    - name: CS0420
+      href: ./compiler-messages/cs0420.md
+    - name: CS0465
+      href: ./compiler-messages/cs0465.md
+    - name: CS0602
+      href: ../misc/cs0602.md
+    - name: CS0612
+      href: ../misc/cs0612.md
+    - name: CS0626
+      href: ../misc/cs0626.md
+    - name: CS0657
+      href: ../misc/cs0657.md
+    - name: CS0658
+      href: ../misc/cs0658.md
+    - name: CS0672
+      href: ../misc/cs0672.md
+    - name: CS0684
+      href: ../misc/cs0684.md
+    - name: CS0688
+      href: ../misc/cs0688.md
+    - name: CS0809
+      href: ../misc/cs0809.md
+    - name: CS1030
+      href: ../misc/cs1030.md
+    - name: CS1058
+      href: ./compiler-messages/cs1058.md
+    - name: CS1060
+      href: ./compiler-messages/cs1060.md
+    - name: CS1200
+      href: ../misc/cs1200.md
+    - name: CS1201
+      href: ../misc/cs1201.md
+    - name: CS1202
+      href: ../misc/cs1202.md
+    - name: CS1203
+      href: ../misc/cs1203.md
+    - name: CS1522
+      href: ../misc/cs1522.md
+    - name: CS1570
+      href: ../misc/cs1570.md
+    - name: CS1574
+      href: ../misc/cs1574.md
+    - name: CS1580
+      href: ../misc/cs1580.md
+    - name: CS1581
+      href: ../misc/cs1581.md
+    - name: CS1584
+      href: ../misc/cs1584.md
+    - name: CS1589
+      href: ../misc/cs1589.md
+    - name: CS1590
+      href: ../misc/cs1590.md
+    - name: CS1592
+      href: ../misc/cs1592.md
+    - name: CS1598
+      href: ./compiler-messages/cs1598.md
+    - name: CS1607
+      href: ./compiler-messages/cs1607.md
+    - name: CS1616
+      href: ./compiler-messages/cs1616.md
+    - name: CS1633
+      href: ../misc/cs1633.md
+    - name: CS1634
+      href: ../misc/cs1634.md
+    - name: CS1635
+      href: ../misc/cs1635.md
+    - name: CS1645
+      href: ../misc/cs1645.md
+    - name: CS1658
+      href: ./compiler-messages/cs1658.md
+    - name: CS1682
+      href: ../misc/cs1682.md
+    - name: CS1684
+      href: ../misc/cs1684.md
+    - name: CS1685
+      href: ./compiler-messages/cs1685.md
+    - name: CS1687
+      href: ../misc/cs1687.md
+    - name: CS1690
+      href: ./compiler-messages/cs1690.md
+    - name: CS1691
+      href: ./compiler-messages/cs1691.md
+    - name: CS1692
+      href: ../misc/cs1692.md
+    - name: CS1694
+      href: ../misc/cs1694.md
+    - name: CS1695
+      href: ../misc/cs1695.md
+    - name: CS1696
+      href: ../misc/cs1696.md
+    - name: CS1697
+      href: ../misc/cs1697.md
+    - name: CS1699
+      href: ./compiler-messages/cs1699.md
+    - name: CS1707
+      href: ../misc/cs1707.md
+    - name: CS1709
+      href: ../misc/cs1709.md
+    - name: CS1720
+      href: ../misc/cs1720.md
+    - name: CS1723
+      href: ../misc/cs1723.md
+    - name: CS1762
+      href: ./compiler-messages/cs1762.md
+    - name: CS1911
+      href: ../misc/cs1911.md
+    - name: CS1956
+      href: ./compiler-messages/cs1956.md
+    - name: CS1957
+      href: ../misc/cs1957.md
+    - name: CS2002
+      href: ../misc/cs2002.md
+    - name: CS2014
+      href: ../misc/cs2014.md
+    - name: CS2023
+      href: ../misc/cs2023.md
+    - name: CS2029
+      href: ../misc/cs2029.md
+    - name: CS3000
+      href: ../misc/cs3000.md
+    - name: CS3001
+      href: ../misc/cs3001.md
+    - name: CS3002
+      href: ../misc/cs3002.md
+    - name: CS3003
+      href: ./compiler-messages/cs3003.md
+    - name: CS3004
+      href: ../misc/cs3004.md
+    - name: CS3005
+      href: ../misc/cs3005.md
+    - name: CS3008
+      href: ../misc/cs3008.md
+    - name: CS3009
+      href: ./compiler-messages/cs3009.md
+    - name: CS3010
+      href: ../misc/cs3010.md
+    - name: CS3011
+      href: ../misc/cs3011.md
+    - name: CS3012
+      href: ../misc/cs3012.md
+    - name: CS3013
+      href: ../misc/cs3013.md
+    - name: CS3014
+      href: ../misc/cs3014.md
+    - name: CS3015
+      href: ../misc/cs3015.md
+    - name: CS3017
+      href: ../misc/cs3017.md
+    - name: CS3018
+      href: ../misc/cs3018.md
+    - name: CS3022
+      href: ../misc/cs3022.md
+    - name: CS3023
+      href: ../misc/cs3023.md
+    - name: CS3024
+      href: ../misc/cs3024.md
+    - name: CS3026
+      href: ../misc/cs3026.md
+    - name: CS3027
+      href: ../misc/cs3027.md
+    - name: CS4014
+      href: ./compiler-messages/cs4014.md
+    - name: CS5000
+      href: ../misc/cs5000.md
+  - name: Level 2 warning messages
+    items:
+    - name: CS0108
+      href: ./compiler-messages/cs0108.md
+    - name: CS0114
+      href: ../misc/cs0114.md
+    - name: CS0162
+      href: ../misc/cs0162.md
+    - name: CS0164
+      href: ../misc/cs0164.md
+    - name: CS0252
+      href: ../misc/cs0252.md
+    - name: CS0253
+      href: ../misc/cs0253.md
+    - name: CS0278
+      href: ../misc/cs0278.md
+    - name: CS0279
+      href: ../misc/cs0279.md
+    - name: CS0280
+      href: ../misc/cs0280.md
+    - name: CS0435
+      href: ../misc/cs0435.md
+    - name: CS0436
+      href: ../misc/cs0436.md
+    - name: CS0437
+      href: ../misc/cs0437.md
+    - name: CS0444
+      href: ../misc/cs0444.md
+    - name: CS0458
+      href: ../misc/cs0458.md
+    - name: CS0464
+      href: ../misc/cs0464.md
+    - name: CS0467
+      href: ./compiler-messages/cs0467.md
+    - name: CS0469
+      href: ../misc/cs0469.md
+    - name: CS0472
+      href: ../misc/cs0472.md
+    - name: CS0618
+      href: ./compiler-messages/cs0618.md
+    - name: CS0652
+      href: ../misc/cs0652.md
+    - name: CS0728
+      href: ../misc/cs0728.md
+    - name: CS1571
+      href: ../misc/cs1571.md
+    - name: CS1572
+      href: ../misc/cs1572.md
+    - name: CS1587
+      href: ../misc/cs1587.md
+    - name: CS1668
+      href: ../misc/cs1668.md
+    - name: CS1698
+      href: ../misc/cs1698.md
+    - name: CS1701
+      href: ./compiler-messages/cs1701.md
+    - name: CS1710
+      href: ../misc/cs1710.md
+    - name: CS1711
+      href: ../misc/cs1711.md
+    - name: CS1927
+      href: ../misc/cs1927.md
+    - name: CS3019
+      href: ../misc/cs3019.md
+    - name: CS3021
+      href: ../misc/cs3021.md
+  - name: Level 3 warning messages
+    items:
+    - name: CS0067
+      href: ../misc/cs0067.md
+    - name: CS0168
+      href: ../misc/cs0168.md
+    - name: CS0169
+      href: ../misc/cs0169.md
+    - name: CS0219
+      href: ../misc/cs0219.md
+    - name: CS0414
+      href: ../misc/cs0414.md
+    - name: CS0419
+      href: ../misc/cs0419.md
+    - name: CS0642
+      href: ../misc/cs0642.md
+    - name: CS0659
+      href: ../misc/cs0659.md
+    - name: CS0660
+      href: ../misc/cs0660.md
+    - name: CS0661
+      href: ../misc/cs0661.md
+    - name: CS0665
+      href: ../misc/cs0665.md
+    - name: CS0675
+      href: ./compiler-messages/cs0675.md
+    - name: CS0693
+      href: ../misc/cs0693.md
+    - name: CS1700
+      href: ./compiler-messages/cs1700.md
+    - name: CS1702
+      href: ../misc/cs1702.md
+    - name: CS1717
+      href: ../misc/cs1717.md
+    - name: CS1718
+      href: ../misc/cs1718.md
+  - name: Level 4 warning messages
+    items:
+    - name: CS0028
+      href: ../misc/cs0028.md
+    - name: CS0078
+      href: ../misc/cs0078.md
+    - name: CS0109
+      href: ../misc/cs0109.md
+    - name: CS0402
+      href: ../misc/cs0402.md
+    - name: CS0422
+      href: ../misc/cs0422.md
+    - name: CS0429
+      href: ./compiler-messages/cs0429.md
+    - name: CS0628
+      href: ../misc/cs0628.md
+    - name: CS0649
+      href: ../misc/cs0649.md
+    - name: CS1573
+      href: ../misc/cs1573.md
+    - name: CS1591
+      href: ./compiler-messages/cs1591.md
+    - name: CS1610
+      href: ./compiler-messages/cs1610.md
+    - name: CS1712
+      href: ../misc/cs1712.md
+- name: Other C# documentation
+  items:
+  - name: C# conceptual docs
+    href: ../tour-of-csharp/index.yml
+  - name: C# specification
+    href: ../specification/index.yml

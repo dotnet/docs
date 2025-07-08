@@ -134,12 +134,12 @@ The following table shows all F# keywords in alphabetical order, together with b
 |`null`|[Null Values](./values/null-values.md)<br /><br />[Constraints](./generics/constraints.md)|Indicates the absence of an object.<br /><br />Also used in generic parameter constraints.|
 |`of`|[Discriminated Unions](discriminated-unions.md)<br /><br />[Delegates](delegates.md)<br /><br />[Exception Types](./exception-handling/exception-types.md)|Used in discriminated unions to indicate the type of categories of values, and in delegate and exception declarations.|
 |`open`|[Import Declarations: The `open` Keyword](import-declarations-the-open-keyword.md)|Used to make the contents of a namespace or module available without qualification.|
-|`or`|[Symbol and Operator Reference](./symbol-and-operator-reference/index.md)<br /><br />[Constraints](./generics/constraints.md)|Used with Boolean conditions as a Boolean `or` operator. Equivalent to `||`.<br /><br />Also used in member constraints.|
+|`or`|[Symbol and Operator Reference](./symbol-and-operator-reference/index.md)<br /><br />[Constraints](./generics/constraints.md)|Used with Boolean conditions as a Boolean `or` operator. Equivalent to &#124;&#124;.<br /><br />Also used in member constraints.|
 |`override`|[Members](./members/index.md)|Used to implement a version of an abstract or virtual method that differs from the base version.|
 |`private`|[Access Control](access-control.md)|Restricts access to a member to code in the same type or module.|
 |`public`|[Access Control](access-control.md)|Allows access to a member from outside the type.|
 |`rec`|[Functions](./functions/index.md)|Used to indicate that a function is recursive.|
-|`return`|[[Computation Expressions](computation-expressions.md)<br /><br />[Async expressions](async-expressions.md)<br /><br />[Task expressions](task-expressions.md)|Used to indicate a value to provide as the result of a computation expression.|
+|`return`|[Computation Expressions](computation-expressions.md)<br /><br />[Async expressions](async-expressions.md)<br /><br />[Task expressions](task-expressions.md)|Used to indicate a value to provide as the result of a computation expression.|
 |`return!`|[Computation Expressions](computation-expressions.md)<br /><br />[Async expressions](async-expressions.md)<br /><br />[Task expressions](task-expressions.md)|Used to indicate a computation expression that, when evaluated, provides the result of the containing computation expression.|
 |`select`|[Query Expressions](query-expressions.md)|Used in query expressions to specify what fields or columns to extract. Note that this is a contextual keyword, which means that it is not actually a reserved word and it only acts like a keyword in appropriate context.|
 |`static`|[Members](./members/index.md)|Used to indicate a method or property that can be called without an instance of a type, or a value member that is shared among all instances of a type.|
@@ -197,17 +197,17 @@ The following tokens are reserved as keywords for future expansion of F#:
 
 The following tokens were once reserved as keywords but were [released](https://github.com/fsharp/fslang-design/blob/main/FSharp-4.1/FS-1016-unreserve-keywords.md) in F# 4.1, so now you can use them as identifiers:
 
-Keyword | Reason
--|-
-`method` | the F# community are happy with `member` to introduce methods
-`constructor` | the F# community are happy with `new` to introduce constructors
-`atomic` | this was related to the fad for transactional memory circa 2006. In F# this would now be a library-defined computation expression
-`eager` | this is no longer needed, it was initially designed to be `let eager` to match a potential `let lazy`
-`object` | there is no need to reserve this
-`recursive` | F# is happy using `rec`
-`functor` | If F# added parameterized modules, we would use `module M(args) = ...`
-`measure` | There is no specific reason to reserve this these days, the `[<Measure>]` attribute suffices
-`volatile` | There is no specific reason to reserve this these days, the `[<Volatile>]` attribute suffices
+| Keyword       | Reason                                                                                                              |
+|---------------|---------------------------------------------------------------------------------------------------------------------|
+| `method`      | Use `member` to introduce methods.                                                                                  |
+| `constructor` | Use `new` to introduce constructors.                                                                                |
+| `atomic`      | Related to the fad for transactional memory circa 2006. This would now be a library-defined computation expression. |
+| `eager`       | No longer needed; it was initially designed to be `let eager` to match a potential `let lazy`.                      |
+| `object`      | No need to reserve this.                                                                                            |
+| `recursive`   | Use `rec`.                                                                                                          |
+| `functor`     | If F# added parameterized modules, you'd use `module M(args) = ...`.                                                |
+| `measure`     | The `[<Measure>]` attribute suffices.                                                                               |
+| `volatile`    | The `[<Volatile>]` attribute suffices.                                                                              |
 
 ## See also
 

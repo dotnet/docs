@@ -1,5 +1,5 @@
 ---
-title: "// and /* */ - comments in C#"
+title: "// and /* */ - comments"
 description: You use \"//\" for single-line comments. You use \"/*\" to start multi-line comments that end with \"*/\". You add comments to explain your code.
 ms.date: 12/12/2022
 ---

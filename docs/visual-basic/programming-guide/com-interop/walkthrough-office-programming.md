@@ -1,6 +1,6 @@
 ---
 title: "Walkthrough: Office Programming - Visual Basic"
-description: Learn about the features Visual Studio offers in Visual Basic that improve Microsoft Office programming. 
+description: Learn about the features Visual Studio offers in Visual Basic that improve Microsoft Office programming.
 ms.date: 02/15/2023
 ms.topic: tutorial
 dev_langs:
@@ -10,7 +10,7 @@ helpviewer_keywords:
 ---
 # Walkthrough: Office Programming in Visual Basic
 
-Visual Studio offers features in Visual Basic that improve Microsoft Office programming. Features in Visual Basic include auto-implemented properties, statements in lambda expressions, and collection initializers. You can embed type information, which allows deployment of assemblies that interact with COM components without deploying primary interop assemblies (PIAs) to the user's computer. For more information, see [Walkthrough: Embedding Types from Managed Assemblies](../../../standard/assembly/embed-types-visual-studio.md).
+Visual Studio offers features in Visual Basic that improve Microsoft Office programming. Features in Visual Basic include automatically implemented properties, statements in lambda expressions, and collection initializers. You can embed type information, which allows deployment of assemblies that interact with COM components without deploying primary interop assemblies (PIAs) to the user's computer. For more information, see [Walkthrough: Embedding Types from Managed Assemblies](../../../standard/assembly/embed-types-visual-studio.md).
 
 This walkthrough demonstrates these features in the context of Office programming, but many of these features are also useful in general programming. In the walkthrough, you use an Excel Add-in application to create an Excel workbook. Next, you create a Word document that contains a link to the workbook. Finally, you see how to enable and disable the PIA dependency.
 
@@ -58,7 +58,7 @@ You must have Microsoft Office Excel and Microsoft Office Word installed on your
 
 1. In **Solution Explorer**, right-click your project's name, click **Add**, and then click **Class**. Name the class Account.vb. Click **Add**.
 
-2. Replace the definition of the `Account` class with the following code. The class definitions use *auto-implemented properties*. For more information, see [Auto-Implemented Properties](../../../visual-basic/programming-guide/language-features/procedures/auto-implemented-properties.md).
+2. Replace the definition of the `Account` class with the following code. The class definitions use *automatically implemented properties*. For more information, see [Automatically implemented properties](../../../visual-basic/programming-guide/language-features/procedures/auto-implemented-properties.md).
 
      [!code-vb[csOfficeWalkthrough#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/csofficewalkthrough/vb/account.vb#2)]
 
@@ -112,7 +112,7 @@ You must have Microsoft Office Excel and Microsoft Office Word installed on your
 
 2. Select the **Start**. Locate **Microsoft Visual Studio \<version>** and open a developer command prompt.
 
-3. Type `ildasm` in the Developer Command Prompt for Visual Studio window, and then press ENTER. The IL DASM window appears.
+3. Type `ildasm` in the Developer Command Prompt for Visual Studio window, and then press <kbd>Enter</kbd>. The IL DASM window appears.
 
 4. On the **File** menu in the IL DASM window, select **File** > **Open**. Double-click **Visual Studio \<version>**, and then double-click **Projects**. Open the folder for your project, and look in the bin/Debug folder for *your project name*.dll. Double-click *your project name*.dll. A new window displays your project's attributes, in addition to references to other modules and assemblies. Note that namespaces `Microsoft.Office.Interop.Excel` and `Microsoft.Office.Interop.Word` are included in the assembly. By default in Visual Studio, the compiler imports the types you need from a referenced PIA into your assembly.
 
@@ -139,7 +139,7 @@ You must have Microsoft Office Excel and Microsoft Office Word installed on your
 
 ## See also
 
-- [Auto-Implemented Properties (Visual Basic)](../language-features/procedures/auto-implemented-properties.md)
+- [Automatically implemented properties (Visual Basic)](../language-features/procedures/auto-implemented-properties.md)
 - [Collection Initializers](../language-features/collection-initializers/index.md)
 - [Optional Parameters](../language-features/procedures/optional-parameters.md)
 - [Passing Arguments by Position and by Name](../language-features/procedures/passing-arguments-by-position-and-by-name.md)

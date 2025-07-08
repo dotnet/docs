@@ -1,4 +1,3 @@
-# This is a basic workflow to help you get started with Actions
 name: 'Snippets 5000'
 
 # Controls when the action will run. Triggers the workflow on push or pull request
@@ -15,33 +14,37 @@ on:
         default: 'Manual run'
 
 env:
-  DOTNET_INSTALLER_CHANNEL: '8.0'
-  DOTNET_DO_INSTALL: 'true' # True to install preview versions, False to use the pre-installed (released) SDK
+  DOTNET_VERSION: '10.0.*'
+  DOTNET_QUALITY: 'preview'
+  DOTNET_DO_INSTALL: 'true' # To install a version of .NET not provided by the runner, set to true
   EnableNuGetPackageRestore: 'True'
-  repo: 'docs'
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+permissions:
+  contents: read
+
 jobs:
-  # This workflow contains a single job called "snippets-build"
   snippets-build:
-    # The type of runner that the job will run on
     runs-on: windows-2022
     permissions:
         statuses: write
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    - uses: actions/checkout@93ea575cb5d8a053eaa0ac8fa3b40d7e05a33cc8 #@v3.1.0
+    # Checkout the repository for the PR
+    - name: Harden Runner
+      uses: step-security/harden-runner@6c439dc8bdf85cadbbce9ed30d1c7b959517bc49 # v2.12.2
+      with:
+        egress-policy: audit
+
+    - name: Checkout repository
+      uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 #@v4.2.2
 
     # Get the latest preview SDK (or sdk not installed by the runner)
-    - name: Setup .NET SDK
+    - name: Setup .NET
       if: ${{ env.DOTNET_DO_INSTALL == 'true' }}
-      run: |
-        echo "Downloading dotnet-install.ps1"
-        Invoke-WebRequest https://raw.githubusercontent.com/dotnet/install-scripts/master/src/dotnet-install.ps1 -OutFile dotnet-install.ps1
-        echo "Installing dotnet version ${{ env.DOTNET_INSTALLER_CHANNEL }}"
-        .\dotnet-install.ps1 -InstallDir "c:\program files\dotnet" -Channel "${{ env.DOTNET_INSTALLER_CHANNEL }}" -Quality preview
+      uses: actions/setup-dotnet@67a3573c9a986a3f9c594539f4ab511d57bb3ce9 #@4.3.1
+      with:
+        dotnet-version: ${{ env.DOTNET_VERSION }}
+        dotnet-quality: ${{ env.DOTNET_QUALITY }}
 
     # Print dotnet info
     - name: Display .NET info
@@ -51,18 +54,13 @@ jobs:
     # Clone docs tools repo
     - name: Clone docs-tools repository
       run: |
-        git clone https://github.com/dotnet/docs-tools
+        git clone --depth 1 https://github.com/dotnet/docs-tools
 
     # Run snippets 5000
     - name: Run snippets 5000 for PR
       env:
         GitHubKey: ${{ secrets.GITHUB_TOKEN }}
+        ExtensionsCodeTriggers: .cs;.vb;.fs;.xaml;.razor;.cshtml;.vbhtml;.sln;.csproj;.fsproj;.vbproj;.proj
+        ExtensionsProjects: .sln;.csproj;.fsproj;.vbproj;.proj
       run: |
-        dotnet run --project docs-tools\snippets5000\Snippets5000\Snippets5000.csproj -- --sourcepath "${{ github.workspace }}" --pullrequest ${{ github.event.number }} --owner ${{ github.repository_owner }} --repo ${{ github.event.repository.name }}
-
-    # Update build output json file
-    - name: Upload build results
-      uses: actions/upload-artifact@0b7f8abb1508181956e8e162db84b466c27e18ce #@v3.1.2
-      with:
-        name: build
-        path: ./output.json
+        dotnet run --project docs-tools/snippets5000/Snippets5000/Snippets5000.csproj -- --sourcepath "${{ github.workspace }}" --pullrequest ${{ github.event.number }} --owner ${{ github.repository_owner }} --repo ${{ github.event.repository.name }}

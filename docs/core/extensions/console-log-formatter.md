@@ -3,7 +3,7 @@ title: Console log formatting
 description: Learn how to use and implement custom console log formatting in your .NET apps. Register and create new log formatters for better application logging.
 author: IEvangelist
 ms.author: dapine
-ms.date: 06/23/2023
+ms.date: 04/11/2024
 ---
 
 # Console log formatting
@@ -42,6 +42,10 @@ To use the `Simple` console formatter, register it with `AddSimpleConsole`:
 
 In the preceding sample source code, the <xref:Microsoft.Extensions.Logging.Console.ConsoleFormatterNames.Simple?displayProperty=nameWithType> formatter was registered. It provides logs with the ability to not only wrap information such as time and log level in each log message, but also allows for ANSI color embedding and indentation of messages.
 
+When this sample app is run, the log messages are formatted as shown below:
+
+:::image type="content" source="media/console-logs-format-simple.png" lightbox="media/console-logs-format-simple.png" alt-text="Example console logs written with the simple formatter.":::
+
 ### Systemd
 
 The <xref:Microsoft.Extensions.Logging.Console.ConsoleFormatterNames.Systemd?displayProperty=nameWithType> console logger:
@@ -53,6 +57,10 @@ The <xref:Microsoft.Extensions.Logging.Console.ConsoleFormatterNames.Systemd?dis
 This is commonly useful for containers, which often make use of `Systemd` console logging. With .NET 5, the `Simple` console logger also enables a compact version that logs in a single line, and also allows for disabling colors as shown in an earlier sample.
 
 :::code language="csharp" source="snippets/logging/console-formatter-systemd/Program.cs" highlight="5-9":::
+
+The example produces output similar to the following log messages:
+
+:::image type="content" source="media/console-logs-format-systemd.png" lightbox="media/console-logs-format-systemd.png" alt-text="Example console logs written with the Systemd formatter.":::
 
 ### Json
 
@@ -136,7 +144,7 @@ The `AddConsoleFormatter` API:
 
 :::code language="csharp" source="snippets/logging/console-formatter-custom/Program.cs" highlight="6-7":::
 
-Define a `CustomerFormatter` subclass of `ConsoleFormatter`:
+Define a `CustomFormatter` subclass of `ConsoleFormatter`:
 
 :::code language="csharp" source="snippets/logging/console-formatter-custom/CustomFormatter.cs" highlight="22-38":::
 

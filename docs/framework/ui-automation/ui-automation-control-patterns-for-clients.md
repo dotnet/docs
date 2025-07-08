@@ -5,7 +5,6 @@ ms.date: "03/30/2017"
 helpviewer_keywords:
   - "UI Automation, control patterns for clients"
   - "control patterns, UI Automation clients"
-ms.assetid: 571561d8-5f49-43a9-a054-87735194e013
 ---
 # UI Automation Control Patterns for Clients
 
@@ -53,6 +52,6 @@ ms.assetid: 571561d8-5f49-43a9-a054-87735194e013
 - [Invoke a Control Using UI Automation](invoke-a-control-using-ui-automation.md)
 - [Get the Toggle State of a Check Box Using UI Automation](get-the-toggle-state-of-a-check-box-using-ui-automation.md)
 - [Control Pattern Mapping for UI Automation Clients](control-pattern-mapping-for-ui-automation-clients.md)
-- [TextPattern Insert Text Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Accessibility/InsertText)
-- [TextPattern Search and Selection Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Accessibility/FindText)
-- [InvokePattern, ExpandCollapsePattern, and TogglePattern Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Accessibility/InvokePattern)
+- [TextPattern Insert Text Sample](https://github.com/Microsoft/WPF-Samples/tree/main/Accessibility/InsertText)
+- [TextPattern Search and Selection Sample](https://github.com/Microsoft/WPF-Samples/tree/main/Accessibility/FindText)
+- [InvokePattern, ExpandCollapsePattern, and TogglePattern Sample](https://github.com/Microsoft/WPF-Samples/tree/main/Accessibility/InvokePattern)

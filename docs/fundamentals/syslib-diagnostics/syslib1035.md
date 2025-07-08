@@ -2,6 +2,8 @@
 title: SYSLIB1035 error
 description: Learn about the diagnostic that generates compile-time error SYSLIB1035.
 ms.date: 05/07/2021
+f1_keywords:
+  - syslib1035
 ---
 
 # SYSLIB1035: `System.Text.Json` source generator encountered a type with multiple `[JsonExtensionData]` annotations

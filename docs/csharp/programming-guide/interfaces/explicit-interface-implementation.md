@@ -1,5 +1,5 @@
 ---
-title: "Explicit Interface Implementation - C# Programming Guide"
+title: "Explicit Interface Implementation"
 description: A class can implement interfaces that contain a member with the same signature in C#. Explicit implementation creates a class member specific to one interface.
 ms.date: 03/24/2021
 helpviewer_keywords: 
@@ -42,7 +42,6 @@ Any class that implements the `IControl` interface can override the default `Pai
 
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Object oriented programming](../../fundamentals/object-oriented/index.md)
 - [Interfaces](../../fundamentals/types/interfaces.md)
 - [Inheritance](../../fundamentals/object-oriented/inheritance.md)

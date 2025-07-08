@@ -1,7 +1,7 @@
 ---
-title: "Classes"
-description: Learn about the class types and how to create them
-ms.date: 05/24/2023
+title: "Classes in the C# type system."
+description: Learn about class types, how to use classes, and how to create new class type declarations for your app.
+ms.date: 08/15/2024
 helpviewer_keywords: 
   - "classes [C#]"
   - "C# language, classes"
@@ -10,7 +10,7 @@ helpviewer_keywords:
 
 ## Reference types
 
-A type that is defined as a [`class`](../../language-reference/keywords/class.md) is a *reference type*. At run time, when you declare a variable of a reference type, the variable contains the value [`null`](../../language-reference/keywords/null.md) until you explicitly create an instance of the class by using the [`new`](../../language-reference/operators/new-operator.md) operator, or assign it an object of a compatible type that may have been created elsewhere, as shown in the following example:
+A type that is defined as a [`class`](../../language-reference/keywords/class.md) is a *reference type*. At run time, when you declare a variable of a reference type, the variable contains the value [`null`](../../language-reference/keywords/null.md) until you explicitly create an instance of the class by using the [`new`](../../language-reference/operators/new-operator.md) operator, or assign it an object of a compatible type created elsewhere, as shown in the following example:
 
 ```csharp
 //Declaring an object of type MyClass.
@@ -28,7 +28,7 @@ Classes are declared by using the `class` keyword followed by a unique identifie
 
 :::code source="./snippets/classes/Program.cs" id="ClassDeclaration":::
 
-An optional access modifier precedes the `class` keyword. Because [`public`](../../language-reference/keywords/public.md) is used in this case, anyone can create instances of this class. The name of the class follows the `class` keyword. The name of the class must be a valid C# [identifier name](../coding-style/identifier-names.md). The remainder of the definition is the class body, where the behavior and data are defined. Fields, properties, methods, and events on a class are collectively referred to as *class members*.
+An optional access modifier precedes the `class` keyword. The default access for a `class` type is `internal`. Because [`public`](../../language-reference/keywords/public.md) is used in this case, anyone can create instances of this class. The name of the class follows the `class` keyword. The name of the class must be a valid C# [identifier name](../coding-style/identifier-names.md). The remainder of the definition is the class body, where the behavior and data are defined. Fields, properties, methods, and events on a class are collectively referred to as *class members*.
 
 ## Creating objects
 
@@ -42,7 +42,7 @@ When an instance of a class is created, a reference to the object is passed back
 
 :::code source="./snippets/classes/Program.cs" id="DeclareVariable":::
 
-We don't recommend creating object references that don't refer to an object because trying to access an object through such a reference fails at run time. A reference can be made to refer to an object, either by creating a new object, or by assigning it an existing object, such as this:
+We don't recommend creating object references that don't refer to an object because trying to access an object through such a reference fails at run time. A reference can refer to an object, either by creating a new object, or by assigning it an existing object, such as this:
 
 :::code source="./snippets/classes/Program.cs" id="AssignReference":::
 
@@ -94,7 +94,7 @@ Inheritance is accomplished by using a *derivation*, which means a class is decl
 
 When a class declaration includes a base class, it inherits all the members of the base class except the constructors. For more information, see [Inheritance](../object-oriented/inheritance.md).
 
-A class in C# can only directly inherit from one base class. However, because a base class may itself inherit from another class, a class might indirectly inherit multiple base classes. Furthermore, a class can directly implement one or more interfaces. For more information, see [Interfaces](interfaces.md).
+A class in C# can only directly inherit from one base class. However, because a base class can itself inherit from another class, a class might indirectly inherit multiple base classes. Furthermore, a class can directly implement one or more interfaces. For more information, see [Interfaces](interfaces.md).
 
 A class can be declared as [`abstract`](../../language-reference/keywords/abstract.md). An abstract class contains abstract methods that have a signature definition but no implementation. Abstract classes can't be instantiated. They can only be used through derived classes that implement the abstract methods. By contrast, a [sealed](../../language-reference/keywords/sealed.md) class doesn't allow other classes to derive from it. For more information, see [Abstract and Sealed Classes and Class Members](../../programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members.md).
 

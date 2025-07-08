@@ -22,7 +22,6 @@ To use the AutoML API, install the [`Microsoft.ML.AutoML`](https://www.nuget.org
 For more information on installing NuGet packages, see the following guides:
 
 - [Install and use a NuGet package in Visual Studio](/nuget/quickstart/install-and-use-a-package-in-visual-studio)
-- [Install and use a package in Visual Studio for Mac](/nuget/quickstart/install-and-use-a-package-in-visual-studio-mac)
 - [Install and use a package (dotnet CLI)](/nuget/quickstart/install-and-use-a-package-using-the-dotnet-cli)
 
 ## Quick Start
@@ -37,13 +36,13 @@ AutoML provides several defaults for quickly training machine learning models. I
 
 ### Define your problem
 
-Given a dataset stored in a comma-separated file called *taxi-fare-train.csv* that looks like the following:  
+Given a dataset stored in a comma-separated file called *taxi-fare-train.csv* that looks like the following:
 
-| vendor_id | rate_code | passenger_count | trip_time_in_secs | trip_distance|payment_type | fare_amount |
-|---|---|---|---|---|---|---|
-CMT|1|1|1271|3.8|CRD|17.5
-CMT|1|1|474|1.5|CRD|8
-CMT|1|1|637|1.4|CRD|8.5
+| vendor_id | rate_code | passenger_count | trip_time_in_secs | trip_distance | payment_type | fare_amount |
+|-----------|-----------|-----------------|-------------------|---------------|--------------|-------------|
+| CMT       | 1         | 1               | 1271              | 3.8           | CRD          | 17.5        |
+| CMT       | 1         | 1               | 474               | 1.5           | CRD          | 8           |
+| CMT       | 1         | 1               | 637               | 1.4           | CRD          | 8.5         |
 
 ### Load your data
 
@@ -65,15 +64,15 @@ ColumnInferenceResults columnInference =
 
 <xref:Microsoft.ML.AutoML.AutoCatalog.InferColumns%2A> loads a few rows from the dataset. It then inspects the data and tries to guess or infer the data type for each of the columns based on their content.
 
-The default behavior is to group columns of the same type into feature vectors or arrays containing the elements for each of the individual columns. Setting `groupColumns` to `false` overrides that default behavior and only performs column inference without grouping columns. By keeping columns separate, it allows you to apply different data transformations when preprocessing the data at the individual column level rather than the column grouping.  
+The default behavior is to group columns of the same type into feature vectors or arrays containing the elements for each of the individual columns. Setting `groupColumns` to `false` overrides that default behavior and only performs column inference without grouping columns. By keeping columns separate, it allows you to apply different data transformations when preprocessing the data at the individual column level rather than the column grouping.
 
 The result of <xref:Microsoft.ML.AutoML.AutoCatalog.InferColumns%2A> is a <xref:Microsoft.ML.AutoML.ColumnInferenceResults> object that contains the options needed to create a <xref:Microsoft.ML.Data.TextLoader> as well as column information.
 
 For the sample dataset in *taxi-fare-train.csv*, column information might look like the following:
 
-- **LabelColumnName**: fare_amount
-- **CategoricalColumnNames**: vendor_id, payment_type
-- **NumericColumnNames**: rate_code, passenger_count, trip_time_in_secs, trip_distance
+- <xref:Microsoft.ML.AutoML.ColumnInformation.LabelColumnName>: fare_amount
+- <xref:Microsoft.ML.AutoML.ColumnInformation.CategoricalColumnNames>: vendor_id, payment_type
+- <xref:Microsoft.ML.AutoML.ColumnInformation.NumericColumnNames>: rate_code, passenger_count, trip_time_in_secs, trip_distance
 
 Once you have your column information, use the <xref:Microsoft.ML.Data.TextLoader.Options> defined by the <xref:Microsoft.ML.AutoML.ColumnInferenceResults> to create a <xref:Microsoft.ML.Data.TextLoader> to load your data into an <xref:Microsoft.ML.IDataView>.
 
@@ -118,7 +117,7 @@ For training, AutoML provides a sweepable pipeline with default trainers and sea
 - <xref:Microsoft.ML.AutoML.AutoCatalog.MultiClassification%2A>
 - <xref:Microsoft.ML.AutoML.AutoCatalog.Regression%2A>
 
-For the taxi fare prediction problem, since the goal is to predict a numerical value, use `Regression`. For more information on choosing a task, see [Machine learning tasks in ML.NET](../resources/tasks.md)
+For the taxi fare prediction problem, since the goal is to predict a numerical value, use `Regression`. For more information on choosing a task, see [Machine learning tasks in ML.NET](../resources/tasks.md).
 
 ### Configure your experiment
 
@@ -178,7 +177,7 @@ Because <xref:Microsoft.ML.AutoML.AutoCatalog.InferColumns%2A> only loads a subs
 
 For example, in the taxi fare dataset, the data in the `rate_code` column is a number. However, that numerical value represents a category. By default, calling <xref:Microsoft.ML.AutoML.AutoCatalog.InferColumns%2A> will place `rate_code` in the `NumericColumnNames` property instead of `CategoricalColumnNames`. Because these properties are .NET collections, you can use standard operations to add and remove items from them.
 
-You can do the following to update the <xref:Microsoft.ML.AutoML.ColumnInferenceResults.ColumnInformation> for `rate_code`.  
+You can do the following to update the <xref:Microsoft.ML.AutoML.ColumnInferenceResults.ColumnInformation> for `rate_code`.
 
 ```csharp
 columnInference.ColumnInformation.NumericColumnNames.Remove("rate_code");
@@ -234,14 +233,14 @@ var sdcaFactory = (MLContext ctx, SdcaOption param) =>
 };
 ```
 
-A sweepable estimator is the combination of an estimator and a search space. Now that you've defined a search space and used it to create a custom factory method for generating trainers, use the <xref:Microsoft.ML.AutoML.AutoCatalog.CreateSweepableEstimator%2A> method to create a new sweepable estimator.  
+A sweepable estimator is the combination of an estimator and a search space. Now that you've defined a search space and used it to create a custom factory method for generating trainers, use the <xref:Microsoft.ML.AutoML.AutoCatalog.CreateSweepableEstimator%2A> method to create a new sweepable estimator.
 
 ```csharp
 // Define Sdca sweepable estimator (SdcaRegressionTrainer + SdcaOption search space)
 var sdcaSweepableEstimator = ctx.Auto().CreateSweepableEstimator(sdcaFactory, sdcaSearchSpace);
 ```
 
-To use your sweepable estimator in your experiment, add it to your sweepable pipeline.  
+To use your sweepable estimator in your experiment, add it to your sweepable pipeline.
 
 ```csharp
 SweepablePipeline pipeline =
@@ -272,7 +271,7 @@ Search spaces can contain nested search spaces as well.
 
 ```csharp
 var searchSpace = new SearchSpace();
-searchSpace["SingleOption"] = new UniformSingleOption(min:-10f, max:10f, defaultValue=0f) 
+searchSpace["SingleOption"] = new UniformSingleOption(min:-10f, max:10f, defaultValue=0f)
 var nestedSearchSpace = new SearchSpace();
 nestedSearchSpace["IntOption"] = new UniformIntOption(min:-10, max:10, defaultValue=0);
 searchSpace["Nest"] = nestedSearchSpace;
@@ -286,7 +285,7 @@ To extend the search space, create a new class, such as `SdcaExtendedOption`, th
 public class SdcaExtendedOption : SdcaOption
 {
     [Range(0.10f, 1f, 0.01f)]
-    public float BiasLearningRate {get;set;}   
+    public float BiasLearningRate {get;set;}
 }
 ```
 
@@ -294,7 +293,7 @@ To specify the search space range, use <xref:Microsoft.ML.SearchSpace.RangeAttri
 
 Then, anywhere you use your search space, reference the `SdcaExtendedOption` instead of <xref:Microsoft.ML.AutoML.CodeGen.SdcaOption>.
 
-For example, when you initialize your search space, you can do so as follows:  
+For example, when you initialize your search space, you can do so as follows:
 
 ```csharp
 var sdcaSearchSpace = new SearchSpace<SdcaExtendedOption>();
@@ -332,7 +331,7 @@ For example, given restaurant review data that looks like the following:
     :::column-end:::
 :::row-end:::
 
-You want to use the <xref:Microsoft.ML.TorchSharp.NasBert.TextClassificationTrainer> trainer to analyze sentiment where 0 is negative and 1 is positive. However, there is no `ctx.Auto().TextClassification()` configuration.  
+You want to use the <xref:Microsoft.ML.TorchSharp.NasBert.TextClassificationTrainer> trainer to analyze sentiment where 0 is negative and 1 is positive. However, there is no `ctx.Auto().TextClassification()` configuration.
 
 To use AutoML with the text classification trainer, you'll have to:
 
@@ -354,7 +353,7 @@ To use AutoML with the text classification trainer, you'll have to:
     ```csharp
     // Initialize search space
     var tcSearchSpace = new SearchSpace<TCOption>();
-    
+
     // Create factory for Text Classification trainer
     var tcFactory = (MLContext ctx, TCOption param) =>
     {
@@ -362,11 +361,11 @@ To use AutoML with the text classification trainer, you'll have to:
             sentence1ColumnName: textColumnName,
             batchSize:param.BatchSize);
     };
-    
+
     // Create text classification sweepable estimator
-    var tcEstimator = 
+    var tcEstimator =
         ctx.Auto().CreateSweepableEstimator(tcFactory, tcSearchSpace);
-    
+
     // Define text classification pipeline
     var pipeline =
         ctx.Transforms.Conversion.MapValueToKey(columnInference.ColumnInformation.LabelColumnName)
@@ -391,10 +390,10 @@ To use AutoML with the text classification trainer, you'll have to:
         private readonly MulticlassClassificationMetric _metric;
 
         public TCRunner(
-            MLContext context, 
-            TrainTestData data, 
+            MLContext context,
+            TrainTestData data,
             SweepablePipeline pipeline,
-            string labelColumnName = "Label", 
+            string labelColumnName = "Label",
             MulticlassClassificationMetric metric = MulticlassClassificationMetric.MicroAccuracy)
         {
             _context = context;
@@ -506,7 +505,7 @@ To use AutoML with the text classification trainer, you'll have to:
 
     ```csharp
     AutoMLExperiment experiment = ctx.Auto().CreateExperiment();
-    
+
     // Configure AutoML experiment
     experiment
         .SetPipeline(pipeline)
@@ -525,7 +524,7 @@ To use AutoML with the text classification trainer, you'll have to:
 
 ## Choose a different tuner
 
-AutoML supports various tuning algorithms to iterate through the search space in search of the optimal hyperparameters. By default, it uses the Eci Cost Frugal tuner. Using experiment extension methods, you can choose another tuner that best fits your scenario.  
+AutoML supports various tuning algorithms to iterate through the search space in search of the optimal hyperparameters. By default, it uses the Eci Cost Frugal tuner. Using experiment extension methods, you can choose another tuner that best fits your scenario.
 
 Use the following methods to set your tuner:
 
@@ -543,7 +542,7 @@ experiment.SetGridSearchTuner();
 
 ## Configure experiment monitoring
 
-The quickest way to monitor the progress of an experiment is to define the <xref:Microsoft.ML.MLContext.Log> event from <xref:Microsoft.ML.MLContext>. However, the <xref:Microsoft.ML.MLContext.Log> event outputs a raw dump of the logs generated by AutoML during each trial. Because of the large amount of unformatted information, it's difficult.  
+The quickest way to monitor the progress of an experiment is to define the <xref:Microsoft.ML.MLContext.Log> event from <xref:Microsoft.ML.MLContext>. However, the <xref:Microsoft.ML.MLContext.Log> event outputs a raw dump of the logs generated by AutoML during each trial. Because of the large amount of unformatted information, it's difficult.
 
 For a more controlled monitoring experience, implement a class with the <xref:Microsoft.ML.AutoML.IMonitor> interface.
 
@@ -626,13 +625,13 @@ Trial 2 finished training in 3941ms with pipeline ReplaceMissingValues=>OneHotHa
 
 By default, AutoML only stores the <xref:Microsoft.ML.AutoML.TrialResult> for the best model. However, if you wanted to persist each of the trials, you can do so from within your monitor.
 
-Inside your monitor:  
+Inside your monitor:
 
 1. Define a property for your completed trials and a method for accessing them.
 
     ```csharp
     private readonly List<TrialResult> _completedTrials;
-    
+
     public IEnumerable<TrialResult> GetCompletedTrials() => _completedTrials;
     ```
 
@@ -712,14 +711,14 @@ To determine feature importance using AutoML:
     In this case, the task is regression but the same concept applies to other tasks like ranking and classification.
 
     ```csharp
-    var pfiResults = 
+    var pfiResults =
         mlContext.Regression.PermutationFeatureImportance(bestModel, transformedData, permutationCount:3);
     ```
 
 1. Order feature importance by changes to evaluation metrics.
 
     ```csharp
-    var featureImportance = 
-        pfi.Select(x => Tuple.Create(x.Key, x.Value.Regression.RSquared))
-            .OrderByDescending(x => x.Item2);    
+    var featureImportance =
+        pfiResults.Select(x => Tuple.Create(x.Key, x.Value.Regression.RSquared))
+            .OrderByDescending(x => x.Item2);
     ```

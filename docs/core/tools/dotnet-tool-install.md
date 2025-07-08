@@ -1,7 +1,7 @@
 ---
 title: dotnet tool install command
 description: The dotnet tool install command installs the specified .NET tool on your machine.
-ms.date: 07/19/2023
+ms.date: 04/07/2025
 ---
 # dotnet tool install
 
@@ -15,7 +15,7 @@ ms.date: 07/19/2023
 
 ```dotnetcli
 dotnet tool install <PACKAGE_NAME> -g|--global
-    [-a|--arch <ARCHITECTURE>]
+    [--allow-downgrade] [--allow-roll-forward] [-a|--arch <ARCHITECTURE>]
     [--add-source <SOURCE>] [--configfile <FILE>] [--disable-parallel]
     [--framework <FRAMEWORK>] [--ignore-failed-sources] [--interactive]
     [--no-cache] [--prerelease]
@@ -23,7 +23,7 @@ dotnet tool install <PACKAGE_NAME> -g|--global
     [--version <VERSION_NUMBER>]
 
 dotnet tool install <PACKAGE_NAME> --tool-path <PATH>
-    [-a|--arch <ARCHITECTURE>]
+    [--allow-downgrade] [--allow-roll-forward] [-a|--arch <ARCHITECTURE>]
     [--add-source <SOURCE>] [--configfile <FILE>] [--disable-parallel]
     [--framework <FRAMEWORK>] [--ignore-failed-sources] [--interactive]
     [--no-cache] [--prerelease]
@@ -31,7 +31,7 @@ dotnet tool install <PACKAGE_NAME> --tool-path <PATH>
     [--version <VERSION_NUMBER>]
 
 dotnet tool install <PACKAGE_NAME> [--local]
-    [-a|--arch <ARCHITECTURE>]
+    [--allow-downgrade] [--allow-roll-forward] [-a|--arch <ARCHITECTURE>]
     [--add-source <SOURCE>] [--configfile <FILE>]
     [--create-manifest-if-needed] [--disable-parallel]
     [--framework <FRAMEWORK>] [--ignore-failed-sources] [--interactive]
@@ -63,9 +63,15 @@ Global tools are installed in the following directories by default when you spec
 
 Executables are generated in these folders for each globally installed tool, although the actual tool binaries are nested deep into the sibling `.store` directory.
 
+> [!NOTE]
+> On Linux after installing a command-line tool with `dotnet tool`, the tool can be executed only from the `$HOME/.dotnet/tools` path.
+> To make the tool executable from any directory, update the `PATH` environment variable.
+> To make the updated `PATH` environment variable permanent in your shell, update your shell settings.
+> For `Bash`, this is the `$HOME/.bashrc` file.
+
 ### `--tool-path` tools
 
-Local tools with explicit tool paths are stored wherever you specified the `--tool-path` parameter to point to. They're stored in the same way as global tools: an executable binary with the actual binaries in a sibling `.store` directory.
+Tools with explicit tool paths are stored wherever you specified the `--tool-path` parameter to point to. They're stored in the same way as global tools: an executable binary with the actual binaries in a sibling `.store` directory.
 
 ### Local tools
 
@@ -87,6 +93,12 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 
 ## Options
 
+[!INCLUDE [allow-downgrade](../../../includes/cli-allow-downgrade.md)]
+
+- **`--allow-roll-forward`**
+
+  Allow tool to use a newer version of the .NET runtime if the runtime it targets isn't installed.
+
 - **`-a|--arch <ARCHITECTURE>`**
 
   Specifies the target architecture. This is a shorthand syntax for setting the [Runtime Identifier (RID)](../../../docs/core/rid-catalog.md), where the provided value is combined with the default RID. For example, on a `win-x64` machine, specifying `--arch x86` sets the RID to `win-x86`.
@@ -97,15 +109,17 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 
 - **`--create-manifest-if-needed`**
 
-  Applies to local tools. To find a manifest, the search algorithm searches up the directory tree for `dotnet-tools.json` or a `.config` folder that contains a `dotnet-tools.json` file.
+  Applies to local tools. Available starting with .NET 8 SDK. To find a manifest, the search algorithm searches up the directory tree for `dotnet-tools.json` or a `.config` folder that contains a `dotnet-tools.json` file.
 
   If a tool-manifest can't be found and the `--create-manifest-if-needed` option is set to false, the `CannotFindAManifestFile` error occurs.
 
   If a tool-manifest can't be found and the `--create-manifest-if-needed` option is set to true, the tool creates a manifest automatically. It chooses a folder for the manifest as follows:
 
   * Walk up the directory tree searching for a directory that has a `.git` subfolder. If one is found, create the manifest in that directory.
-  * If the previous step doesn't find a directory, walk up the directory tree searching for a directory that has a `.sln/git` file. If one is found, create the manifest in that directory.
+  * If the previous step doesn't find a directory, walk up the directory tree searching for a directory that has a `.sln` or `.git` file. If one is found, create the manifest in that directory.
   * If neither of the previous two steps finds a directory, create the manifest in the current working directory.
+
+  For more information on how manifests are located, see [Install a local tool](global-tools.md#install-a-local-tool).
 
 - **`--disable-parallel`**
 
@@ -119,6 +133,10 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 
   Specifies that the installation is user wide. Can't be combined with the `--tool-path` option. Omitting both `--global` and `--tool-path` specifies a local tool installation.
 
+- **`--source <SOURCE>`**
+
+  Specifies the source for NuGet packages. This source replaces all NuGet package sources.
+
 [!INCLUDE [help](../../../includes/cli-help.md)]
 
 - **`--ignore-failed-sources`**
@@ -131,7 +149,7 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 
   Update the tool and the local tool manifest. Can't be combined with the `--global` option or the `--tool-path` option.
 
-- **`--no-cache`**
+- **`--no-cache` or `--no-http-cache`**
 
   Don't cache packages and HTTP requests.
 
@@ -145,13 +163,15 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 
 - **`--tool-path <PATH>`**
 
-  Specifies the location where to install the Global Tool. PATH can be absolute or relative. If PATH doesn't exist, the command tries to create it. Omitting both `--global` and `--tool-path` specifies a local tool installation.
+  Specifies the location to install the Global Tool. PATH can be absolute or relative. If PATH doesn't exist, the command tries to create it. Omitting both `--global` and `--tool-path` specifies a local tool installation.
 
 [!INCLUDE [verbosity](../../../includes/cli-verbosity.md)]
 
 - **`--version <VERSION_NUMBER>`**
 
   The version of the tool to install. By default, the latest stable package version is installed. Use this option to install preview or older versions of the tool.
+
+  Starting with .NET 8, `--version Major.Minor.Patch` refers to a specific major/minor/patch version, including unlisted versions. To get the latest version of a certain major/minor version instead, use `--version Major.Minor.*`.
 
 ## Examples
 
@@ -174,6 +194,10 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 - **`dotnet tool install dotnetsay`**
 
   Installs [dotnetsay](https://www.nuget.org/packages/dotnetsay/) as a local tool for the current directory.
+
+- **`dotnet tool install -g --verbosity minimal`**
+
+  Installs [dotnetsay](https://www.nuget.org/packages/dotnetsay/) as a global tool with the verbosity of minimal. The default verbosity for global tool is quiet.
 
 ## See also
 

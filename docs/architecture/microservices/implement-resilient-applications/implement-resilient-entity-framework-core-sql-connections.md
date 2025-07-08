@@ -1,7 +1,7 @@
 ---
 title: Implement resilient Entity Framework Core SQL connections
 description: Learn how to implement resilient Entity Framework Core SQL connections. This technique is especially important when using Azure SQL Database in the cloud.
-ms.date: 10/16/2018
+ms.date: 09/10/2024
 ---
 # Implement resilient Entity Framework Core SQL connections
 
@@ -16,16 +16,19 @@ For instance, the following code at the EF Core connection level enables resilie
 // Other code ...
 builder.Services.AddDbContext<CatalogContext>(options =>
     {
-        options.UseSqlServer(builder.Configuration["ConnectionString"],
-        sqlServerOptionsAction: sqlOptions =>
-        {
-            sqlOptions.EnableRetryOnFailure(
-            maxRetryCount: 10,
-            maxRetryDelay: TimeSpan.FromSeconds(30),
-            errorNumbersToAdd: null);
-        });
+        options.UseSqlServer(
+            builder.Configuration["ConnectionString"],
+            sqlServerOptionsAction: sqlOptions =>
+            {
+                sqlOptions.EnableRetryOnFailure(
+                maxRetryCount: 10,
+                maxRetryDelay: TimeSpan.FromSeconds(30),
+                errorNumbersToAdd: null);
+            });
     });
 ```
+
+[!INCLUDE [managed-identities](../../../includes/managed-identities.md)]
 
 ## Execution strategies and explicit transactions using BeginTransaction and multiple DbContexts
 

@@ -37,7 +37,7 @@ Module Example
             Console.WriteLine("Thread '{0}' executing finally block.",
                               Thread.CurrentThread.Name)
         End Try
-        Console.WriteLine("Thread '{0} finishing normal execution.",
+        Console.WriteLine("Thread '{0}' finishing normal execution.",
                           Thread.CurrentThread.Name)
         Console.WriteLine()
     End Sub

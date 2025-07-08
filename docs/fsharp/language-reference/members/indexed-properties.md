@@ -51,7 +51,7 @@ The syntax for accessing a non-default indexed property is to provide the name o
 
 Regardless of which form you use, you should always use the curried form for the set method on an indexed property. For information about curried functions, see [Functions](../functions/index.md).
 
-Prior to F# 6, the syntax `expr.[idx]` was used for indexing. You can activate an optional informational warning (`/warnon:3566` or property `<WarnOn>3566</WarnOn>`) to report uses of the `expr.[idx]` notation.
+Prior to F# 6, the syntax `expr.[idx]` was used for indexing. You can activate an optional informational warning (`/warnon:3366` or property `<WarnOn>3366</WarnOn>`) to report uses of the `expr.[idx]` notation.
 
 ## Example
 

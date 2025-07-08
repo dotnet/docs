@@ -21,13 +21,9 @@ F# can be installed as part of [Visual Studio](https://visualstudio.microsoft.co
 
 F# can be installed as part of [Visual Studio Code](https://code.visualstudio.com/). See [Getting Started with F# in Visual Studio Code](../get-started/get-started-vscode.md).
 
-### F# with Visual Studio for Mac
-
-F# can be installed as part of [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/). See [Getting Started with F# in Visual Studio for Mac](../get-started/get-started-with-visual-studio-for-mac.md).
-
 ### Other development environments
 
-Other IDEs are available for F#, see [F# Tools](https://dotnet.microsoft.com/languages/fsharp/tools)
+Other IDEs are available for F#. For more information, see [F# Tools](https://dotnet.microsoft.com/languages/fsharp/tools).
 
 ## Community Tools
 

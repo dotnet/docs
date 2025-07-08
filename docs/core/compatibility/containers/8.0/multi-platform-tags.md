@@ -2,6 +2,7 @@
 title: "Breaking change: Multi-platform container tags are Linux-only"
 description: Learn about the breaking change in containers where multi-platform container tags are now Linux-only.
 ms.date: 07/11/2023
+ms.custom: linux-related-content
 ---
 # Multi-platform container tags are Linux-only
 
@@ -39,9 +40,6 @@ Update your tag usage to indicate which Windows version you're targeting. Instea
 - `mcr.microsoft.com/dotnet/aspnet:8.0-windowsservercore-ltsc2022`
 
 Select an image name based on whether you're using Nano Server or Windows Server Core and which version of that OS. You can find a full list of all supported tags on .NET's [Docker Hub page](https://hub.docker.com/_/microsoft-dotnet).
-
-> [!NOTE]
-> In the example image names, the `8.0` tag prefix is used, which is the value that will exist once .NET 8 ships. While .NET 8 is still in preview, you can replace `8.0` with `8.0-preview`.
 
 ## Affected APIs
 

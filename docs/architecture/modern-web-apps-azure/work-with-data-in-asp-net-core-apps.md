@@ -174,7 +174,7 @@ public class Basket : BaseEntity
         Quantity = quantity,
         UnitPrice = unitPrice
       });
-    } 
+    }
     else existingItem.Quantity += quantity;
   }
 }

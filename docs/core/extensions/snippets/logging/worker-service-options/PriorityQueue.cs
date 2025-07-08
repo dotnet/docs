@@ -2,8 +2,8 @@
 
 public class PriorityQueue
 {
-    private readonly List<WorkItem> _workItems = new()
-    {
+    private readonly List<WorkItem> _workItems =
+    [
         new WorkItem("Validate collection", Priority.High),
         new WorkItem("Health check network", Priority.Low),
         new WorkItem("Ping weather service", Priority.Deferred),
@@ -11,7 +11,7 @@ public class PriorityQueue
         new WorkItem("Verify communications", Priority.Extreme),
         new WorkItem("Set process state", Priority.Deferred),
         new WorkItem("Enter pooling [contention]", Priority.Medium)
-    };
+    ];
 
     public WorkItem? ProcessNextHighestPriority()
     {

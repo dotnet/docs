@@ -8,8 +8,7 @@ Module Program
                 "\\LOCALHOST\c$\temp\test-file.txt",
                 "\\.\c:\temp\test-file.txt",
                 "\\?\c:\temp\test-file.txt",
-                "\\.\UNC\LOCALHOST\c$\temp\test-file.txt",
-                "\\127.0.0.1\c$\temp\test-file.txt"}
+                "\\.\UNC\LOCALHOST\c$\temp\test-file.txt"}
 
         For Each filename In filenames
             Dim fi As New FileInfo(filename)

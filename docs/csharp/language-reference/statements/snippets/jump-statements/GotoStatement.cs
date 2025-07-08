@@ -13,16 +13,16 @@ public static class GotoStatement
         // <NestedLoops>
         var matrices = new Dictionary<string, int[][]>
         {
-            ["A"] = new[]
-            {
-                new[] { 1, 2, 3, 4 },
-                new[] { 4, 3, 2, 1 }
-            },
-            ["B"] = new[]
-            {
-                new[] { 5, 6, 7, 8 },
-                new[] { 8, 7, 6, 5 }
-            },
+            ["A"] =
+            [
+                [1, 2, 3, 4],
+                [4, 3, 2, 1]
+            ],
+            ["B"] =
+            [
+                [5, 6, 7, 8],
+                [8, 7, 6, 5]
+            ],
         };
 
         CheckMatrices(matrices, 4);

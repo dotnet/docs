@@ -109,7 +109,7 @@ using System.Collections.Generic;
 
 public class OrderQueries : IOrderQueries
 {
-  public async Task<IEnumerable<OrderSummary>> GetOrdersAsync()
+    public async Task<IEnumerable<OrderSummary>> GetOrdersAsync()
     {
         using (var connection = new SqlConnection(_connectionString))
         {
@@ -192,7 +192,7 @@ The image shows some example values based on the ViewModel types and the possibl
 - **ASP.NET Core Web API Help Pages using Swagger**  
   [https://learn.microsoft.com/aspnet/core/tutorials/web-api-help-pages-using-swagger?tabs=visual-studio](/aspnet/core/tutorials/web-api-help-pages-using-swagger?tabs=visual-studio)
 
-- **Create record types** [https://learn.microsoft.com/dotnet/csharp/whats-new/tutorials/records](../../../csharp/whats-new/tutorials/records.md)
+- **Create record types** [https://learn.microsoft.com/dotnet/csharp/whats-new/tutorials/records](../../../csharp/tutorials/records.md)
 
 >[!div class="step-by-step"]
 >[Previous](eshoponcontainers-cqrs-ddd-microservice.md)

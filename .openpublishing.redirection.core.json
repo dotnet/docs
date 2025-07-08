@@ -9,6 +9,10 @@
             "redirect_url": "/dotnet/core/deploying/index"
         },
         {
+            "source_path_from_root": "/docs/core/additional-tools/uninstall-tool.md",
+            "redirect_url": "/dotnet/core/additional-tools/uninstall-tool-overview"
+        },
+        {
             "source_path_from_root": "/docs/core/build/distribution-packaging.md",
             "redirect_url": "/dotnet/core/distribution-packaging",
             "redirect_document_id": true
@@ -62,6 +66,10 @@
             "redirect_url": "/dotnet/core/compatibility/7.0"
         },
         {
+            "source_path_from_root": "/docs/core/compatibility/aspnetcore.md",
+            "redirect_url": "/dotnet/core/compatibility/3.0"
+        },
+        {
             "source_path_from_root": "/docs/core/compatibility/code-analysis.md",
             "redirect_url": "/dotnet/core/compatibility/code-analysis/5.0/ca1416-platform-compatibility-analyzer"
         },
@@ -80,14 +88,42 @@
             "redirect_document_id": true
         },
         {
+            "source_path_from_root": "/docs/core/compatibility/core-libraries/6.0/nullable-ref-type-annotations-added.md",
+            "redirect_url": "/dotnet/core/compatibility/core-libraries/6.0/nullable-ref-type-annotation-changes"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/core-libraries/6.0/xmlresolver-nullable.md",
+            "redirect_url": "/dotnet/core/compatibility/core-libraries/6.0/nullable-ref-type-annotation-changes"
+        },
+        {
             "source_path_from_root": "/docs/core/compatibility/core-libraries/7.0/binaryformatter-apis-produce-errors.md",
             "redirect_url": "/dotnet/core/compatibility/serialization/7.0/binaryformatter-apis-produce-errors",
-            "redirect_document_id": true    
+            "redirect_document_id": true
         },
         {
             "source_path_from_root": "/docs/core/compatibility/core-libraries/7.0/serializationformat-binary.md",
             "redirect_url": "/dotnet/core/compatibility/serialization/7.0/serializationformat-binary",
-            "redirect_document_id": true    
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/core-libraries/8.0/indexofanyvalues-renamed.md",
+            "redirect_url": "/dotnet/core/compatibility/8.0"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/core-libraries/8.0/optimizeforreading-arg.md",
+            "redirect_url": "/dotnet/core/compatibility/8.0"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/corefx.md",
+            "redirect_url": "/dotnet/core/compatibility/3.0"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/cryptography.md",
+            "redirect_url": "/dotnet/core/compatibility/3.0"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/deployment/9.0/assembly-load-directory.md",
+            "redirect_url": "/dotnet/core/compatibility/9.0"
         },
         {
             "source_path_from_root": "/docs/core/compatibility/extensions/6.0/bind-single-elements-to-array.md",
@@ -98,6 +134,10 @@
             "redirect_url": "/dotnet/core/compatibility/fx-core"
         },
         {
+            "source_path_from_root": "/docs/core/compatibility/globalization.md",
+            "redirect_url": "/dotnet/core/compatibility/3.0"
+        },
+        {
             "source_path_from_root": "/docs/core/compatibility/index.md",
             "redirect_url": "/dotnet/core/compatibility/library-change-rules",
             "redirect_document_id": true
@@ -105,6 +145,10 @@
         {
             "source_path_from_root": "/docs/core/compatibility/interop.md",
             "redirect_url": "/dotnet/core/compatibility/interop/5.0/built-in-support-for-winrt-removed"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/msbuild.md",
+            "redirect_url": "/dotnet/core/compatibility/3.0"
         },
         {
             "source_path_from_root": "/docs/core/compatibility/msbuild/5.0/directory-packages-props-imported-by-default.md",
@@ -132,6 +176,10 @@
             "redirect_document_id": true
         },
         {
+            "source_path_from_root": "/docs/core/compatibility/networking.md",
+            "redirect_url": "/dotnet/core/compatibility/3.0"
+        },
+        {
             "source_path_from_root": "/docs/core/compatibility/networking/7.0/connectasync-argumentexception.md",
             "redirect_url": "/dotnet/core/compatibility/7.0"
         },
@@ -142,6 +190,10 @@
         {
             "source_path_from_root": "/docs/core/compatibility/sdk/6.0/implicit-namespaces-rc1.md",
             "redirect_url": "/dotnet/core/compatibility/6.0"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/sdk/8.0/tool-rollforward.md",
+            "redirect_url": "/dotnet/core/compatibility/8.0"
         },
         {
             "source_path_from_root": "/docs/core/compatibility/serialization.md",
@@ -305,6 +357,10 @@
             "redirect_url": "/dotnet/fundamentals/syslib-diagnostics/syslib0012"
         },
         {
+            "source_path_from_root": "/docs/core/compatibility/visualbasic.md",
+            "redirect_url": "/dotnet/core/compatibility/3.0"
+        },
+        {
             "source_path_from_root": "/docs/core/compatibility/windows-forms/5.0/automatically-infer-winexe-output-type.md",
             "redirect_url": "/dotnet/core/compatibility/sdk/5.0/automatically-infer-winexe-output-type",
             "redirect_document_id": true
@@ -315,8 +371,16 @@
             "redirect_document_id": true
         },
         {
+            "source_path_from_root": "/docs/core/compatibility/windows-forms/8.0/anchor-layout.md",
+            "redirect_url": "/dotnet/core/compatibility/8.0"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/winforms.md",
+            "redirect_url": "/dotnet/core/compatibility/3.0"
+        },
+        {
             "source_path_from_root": "/docs/core/compatibility/wpf.md",
-            "redirect_url": "/dotnet/core/compatibility/sdk/5.0/automatically-infer-winexe-output-type"
+            "redirect_url": "/dotnet/core/compatibility/3.0"
         },
         {
             "source_path_from_root": "/docs/core/deploying/applications.md",
@@ -637,6 +701,10 @@
             "redirect_document_id": true
         },
         {
+            "source_path_from_root": "/docs/core/diagnostics/built-in-metrics-aspnetcore.md",
+            "redirect_url": "/aspnet/core/log-mon/metrics/built-in"
+        },
+        {
             "source_path_from_root": "/docs/core/docker/build-docker-netcore-container.md",
             "redirect_url": "/dotnet/core/docker/build-container"
         },
@@ -665,6 +733,10 @@
             "redirect_url": "/dotnet/core/whats-new/dotnet-5"
         },
         {
+            "source_path_from_root": "/docs/core/extensions/artificial-intelligence.md",
+            "redirect_url": "/dotnet/ai/microsoft-extensions-ai"
+        },
+        {
             "source_path_from_root": "/docs/core/extensions/culture-insensitive-string-operations.md",
             "redirect_url": "/dotnet/core/extensions/performing-culture-insensitive-string-operations"
         },
@@ -682,12 +754,16 @@
             "redirect_url": "/dotnet/core/install/windows"
         },
         {
+            "source_path_from_root": "/docs/core/install/linux-centos.md",
+            "redirect_url": "/dotnet/core/install/linux-rhel#where-is-centos-linux"
+        },
+        {
             "source_path_from_root": "/docs/core/install/linux-package-manager-centos7.md",
-            "redirect_url": "/dotnet/core/install/linux-centos"
+            "redirect_url": "/dotnet/core/install/linux-rhel#where-is-centos-linux"
         },
         {
             "source_path_from_root": "/docs/core/install/linux-package-manager-centos8.md",
-            "redirect_url": "/dotnet/core/install/linux-centos"
+            "redirect_url": "/dotnet/core/install/linux-rhel#where-is-centos-linux"
         },
         {
             "source_path_from_root": "/docs/core/install/linux-package-manager-debian10.md",
@@ -738,28 +814,12 @@
             "redirect_url": "/dotnet/core/install/linux-sles"
         },
         {
-            "source_path_from_root": "/docs/core/install/linux-package-manager-ubuntu-1604.md",
-            "redirect_url": "/dotnet/core/install/linux-ubuntu"
-        },
-        {
-            "source_path_from_root": "/docs/core/install/linux-package-manager-ubuntu-1804.md",
-            "redirect_url": "/dotnet/core/install/linux-ubuntu"
-        },
-        {
-            "source_path_from_root": "/docs/core/install/linux-package-manager-ubuntu-1904.md",
-            "redirect_url": "/dotnet/core/install/linux-ubuntu"
-        },
-        {
-            "source_path_from_root": "/docs/core/install/linux-package-manager-ubuntu-1910.md",
-            "redirect_url": "/dotnet/core/install/linux-ubuntu"
-        },
-        {
-            "source_path_from_root": "/docs/core/install/linux-package-manager-ubuntu-2004.md",
-            "redirect_url": "/dotnet/core/install/linux-ubuntu"
-        },
-        {
             "source_path_from_root": "/docs/core/install/linux-package-managers.md",
             "redirect_url": "/dotnet/core/install/linux"
+        },
+        {
+            "source_path_from_root": "/docs/core/install/linux-ubuntu.md",
+            "redirect_url": "/dotnet/core/install/linux-ubuntu-install"
         },
         {
             "source_path_from_root": "/docs/core/install/runtime.md",
@@ -822,12 +882,20 @@
             "redirect_url": "/aspnet/core/migration/mvc"
         },
         {
+            "source_path_from_root": "/docs/core/porting/upgrade-assistant-install-legacy.md",
+            "redirect_url": "/dotnet/core/porting/upgrade-assistant-wcf"
+        },
+        {
+            "source_path_from_root": "/docs/core/porting/upgrade-assistant-uwp-framework.md",
+            "redirect_url": "/windows/apps/windows-app-sdk/migrate-to-windows-app-sdk/upgrade-assistant"
+        },
+        {
             "source_path_from_root": "/docs/core/porting/upgrade-assistant-winforms-framework.md",
-            "redirect_url": "/dotnet/desktop/winforms/migration/?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/migration/"
         },
         {
             "source_path_from_root": "/docs/core/porting/upgrade-assistant-wpf-framework.md",
-            "redirect_url": "/dotnet/desktop/wpf/migration/?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/wpf/migration/"
         },
         {
             "source_path_from_root": "/docs/core/porting/winforms-breaking-changes.md",
@@ -835,11 +903,11 @@
         },
         {
             "source_path_from_root": "/docs/core/porting/winforms.md",
-            "redirect_url": "/dotnet/desktop/winforms/migration/?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/winforms/migration/"
         },
         {
             "source_path_from_root": "/docs/core/porting/wpf.md",
-            "redirect_url": "/dotnet/desktop/wpf/migration/convert-project-from-net-framework?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/wpf/migration/convert-project-from-net-framework"
         },
         {
             "source_path_from_root": "/docs/core/preview3/deploying/index.md",
@@ -858,12 +926,12 @@
         },
         {
             "source_path_from_root": "/docs/core/preview3/tools/dotnet-add-package.md",
-            "redirect_url": "/dotnet/core/tools/dotnet-add-package",
+            "redirect_url": "/dotnet/core/tools/dotnet-package-add",
             "redirect_document_id": true
         },
         {
             "source_path_from_root": "/docs/core/preview3/tools/dotnet-add-reference.md",
-            "redirect_url": "/dotnet/core/tools/dotnet-add-reference",
+            "redirect_url": "/dotnet/core/tools/dotnet-reference-add",
             "redirect_document_id": true
         },
         {
@@ -881,7 +949,7 @@
         },
         {
             "source_path_from_root": "/docs/core/preview3/tools/dotnet-list-reference.md",
-            "redirect_url": "/dotnet/core/tools/dotnet-list-reference",
+            "redirect_url": "/dotnet/core/tools/dotnet-reference-list",
             "redirect_document_id": true
         },
         {
@@ -923,12 +991,12 @@
         },
         {
             "source_path_from_root": "/docs/core/preview3/tools/dotnet-remove-package.md",
-            "redirect_url": "/dotnet/core/tools/dotnet-remove-package",
+            "redirect_url": "/dotnet/core/tools/dotnet-package-remove",
             "redirect_document_id": true
         },
         {
             "source_path_from_root": "/docs/core/preview3/tools/dotnet-remove-reference.md",
-            "redirect_url": "/dotnet/core/tools/dotnet-remove-reference",
+            "redirect_url": "/dotnet/core/tools/dotnet-reference-remove",
             "redirect_document_id": true
         },
         {
@@ -1036,7 +1104,91 @@
         },
         {
             "source_path_from_root": "/docs/core/testing/using-mstest-on-windows.md",
-            "redirect_url": "/dotnet/core/testing/unit-testing-with-mstest",
+            "redirect_url": "/dotnet/core/testing/unit-testing-csharp-with-mstest",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-mstest-analyzers-design.md",
+            "redirect_url": "/dotnet/core/testing/mstest-analyzers/design-rules",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-mstest-analyzers.md",
+            "redirect_url": "/dotnet/core/testing/mstest-analyzers/overview",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-mstest-analyzers-performance.md",
+            "redirect_url": "/dotnet/core/testing/mstest-analyzers/performance-rules",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-mstest-analyzers-usage.md",
+            "redirect_url": "/dotnet/core/testing/mstest-analyzers/usage-rules",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-mstest-analyzers-MSTEST0001.md",
+            "redirect_url": "/dotnet/core/testing/mstest-analyzers/mstest0001",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-mstest-analyzers-MSTEST0002.md",
+            "redirect_url": "/dotnet/core/testing/mstest-analyzers/mstest0002",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-mstest-analyzers-MSTEST0003.md",
+            "redirect_url": "/dotnet/core/testing/mstest-analyzers/mstest0003",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-mstest-analyzers-MSTEST0004.md",
+            "redirect_url": "/dotnet/core/testing/mstest-analyzers/mstest0004",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-mstest-analyzers-MSTEST0005.md",
+            "redirect_url": "/dotnet/core/testing/mstest-analyzers/mstest0005",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-mstest-analyzers-MSTEST0006.md",
+            "redirect_url": "/dotnet/core/testing/mstest-analyzers/mstest0006",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-mstest-runner-exit-codes.md",
+            "redirect_url": "/dotnet/core/testing/microsoft-testing-platform-exit-codes",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-mstest-runner-extensions.md",
+            "redirect_url": "/dotnet/core/testing/microsoft-testing-platform-extensions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-mstest-runner-integrations.md",
+            "redirect_url": "/dotnet/core/testing/microsoft-testing-platform-integration-dotnet-test",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-mstest-runner-runsettings.md",
+            "redirect_url": "/dotnet/core/testing/unit-testing-platform-extensions-vstest-bridge#runsettings-support"
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-mstest-runner-telemetry.md",
+            "redirect_url": "/dotnet/core/testing/microsoft-testing-platform-telemetry",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-mstest-runner-vs-vstest.md",
+            "redirect_url": "/dotnet/core/testing/microsoft-testing-platform-vs-vstest",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-platform-runsettings.md",
+            "redirect_url": "/dotnet/core/testing/unit-testing-platform-extensions-vstest-bridge#runsettings-support",
             "redirect_document_id": true
         },
         {
@@ -1046,6 +1198,30 @@
         {
             "source_path_from_root": "/docs/core/tools/csproj.md",
             "redirect_url": "/dotnet/core/project-sdk/msbuild-props"
+        },
+        {
+            "source_path_from_root": "/docs/core/tools/dotnet-add-package.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-package-add"
+        },
+        {
+            "source_path_from_root": "/docs/core/tools/dotnet-list-package.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-package-list"
+        },
+        {
+            "source_path_from_root": "/docs/core/tools/dotnet-remove-package.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-package-remove"
+        },
+        {
+            "source_path_from_root": "/docs/core/tools/dotnet-add-reference.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-reference-add"
+        },
+        {
+            "source_path_from_root": "/docs/core/tools/dotnet-list-reference.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-reference-list"
+        },
+        {
+            "source_path_from_root": "/docs/core/tools/dotnet-remove-reference.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-reference-remove"
         },
         {
             "source_path_from_root": "/docs/core/tools/extensibility.md",
@@ -1097,11 +1273,11 @@
         },
         {
             "source_path_from_root": "/docs/core/tutorials/using-on-mac-vs-full-solution.md",
-            "redirect_url": "/dotnet/core/tutorials/library-with-visual-studio-mac"
+            "redirect_url": "/dotnet/core/tutorials/library-with-visual-studio-code"
         },
         {
             "source_path_from_root": "/docs/core/tutorials/using-on-mac-vs.md",
-            "redirect_url": "/dotnet/core/tutorials/with-visual-studio-mac"
+            "redirect_url": "/dotnet/core/tutorials/with-visual-studio-code"
         },
         {
             "source_path_from_root": "/docs/core/tutorials/using-on-macos.md",
@@ -1128,6 +1304,26 @@
             "redirect_url": "/dotnet/core/tutorials/with-visual-studio"
         },
         {
+            "source_path_from_root": "/docs/core/tutorials/debugging-with-visual-studio-mac.md",
+            "redirect_url": "/dotnet/core/tutorials/debugging-with-visual-studio-code"
+        },
+        {
+            "source_path_from_root": "/docs/core/tutorials/library-with-visual-studio-mac.md",
+            "redirect_url": "/dotnet/core/tutorials/library-with-visual-studio-code"
+        },
+        {
+            "source_path_from_root": "/docs/core/tutorials/publishing-with-visual-studio-mac.md",
+            "redirect_url": "/dotnet/core/tutorials/publishing-with-visual-studio-code"
+        },
+        {
+            "source_path_from_root": "/docs/core/tutorials/testing-library-with-visual-studio-mac.md",
+            "redirect_url": "/dotnet/core/tutorials/testing-library-with-visual-studio-code"
+        },
+        {
+            "source_path_from_root": "/docs/core/tutorials/with-visual-studio-mac.md",
+            "redirect_url": "/dotnet/core/tutorials/with-visual-studio-code"
+        },
+        {
             "source_path_from_root": "/docs/core/versions/install-management.md",
             "redirect_url": "/dotnet/core/install/remove-runtime-sdk-versions"
         },
@@ -1148,8 +1344,18 @@
             "redirect_url": "/dotnet/core/versions/selection"
         },
         {
+            "source_path_from_root": "/docs/whats-new/dotnet-7-docs.md",
+            "redirect_url": "/dotnet/whats-new/dotnet-docs-mod0",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/whats-new/dotnet-8.md",
+            "redirect_url": "/dotnet/core/whats-new/dotnet-8/overview",
+            "redirect_document_id": true
+        },
+        {
             "source_path_from_root": "/docs/core/whats-new/index.md",
-            "redirect_url": "/dotnet/core/whats-new/dotnet-7",
+            "redirect_url": "/dotnet/core/whats-new/dotnet-10/overview",
             "ms.custom": "updateeachrelease"
         },
         {
@@ -1175,6 +1381,122 @@
         {
             "source_path_from_root": "/docs/fundamentals/networking/tcp/tcp-overview.md",
             "redirect_url": "/dotnet/fundamentals/networking/sockets/tcp-classes"
+        },
+        {
+            "source_path_from_root": "/docs/core/docker/publish-as-container.md",
+            "redirect_url": "/dotnet/core/containers/sdk-publish"
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-fsharp-with-dotnet-test.md",
+            "redirect_url": "/dotnet/core/testing/unit-testing-fsharp-with-xunit"
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-platform-architecture-capabilities.md",
+            "redirect_url": "/dotnet/core/testing/microsoft-testing-platform-architecture-capabilities"
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-platform-architecture-extensions.md",
+            "redirect_url": "/dotnet/core/testing/microsoft-testing-platform-architecture-extensions"
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-platform-architecture-services.md",
+            "redirect_url": "/dotnet/core/testing/microsoft-testing-platform-architecture-services"
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-platform-architecture.md",
+            "redirect_url": "/dotnet/core/testing/microsoft-testing-platform-architecture"
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-platform-config.md",
+            "redirect_url": "/dotnet/core/testing/microsoft-testing-platform-config"
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-platform-diagnostics.md",
+            "redirect_url": "/dotnet/core/testing/microsoft-testing-platform-diagnostics"
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-platform-exit-codes.md",
+            "redirect_url": "/dotnet/core/testing/microsoft-testing-platform-exit-codes"
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-platform-extensions-code-coverage.md",
+            "redirect_url": "/dotnet/core/testing/microsoft-testing-platform-extensions-code-coverage"
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-platform-extensions-diagnostics.md",
+            "redirect_url": "/dotnet/core/testing/microsoft-testing-platform-extensions-diagnostics"
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-platform-extensions-fakes.md",
+            "redirect_url": "/dotnet/core/testing/microsoft-testing-platform-extensions-fakes"
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-platform-faq.md",
+            "redirect_url": "/dotnet/core/testing/microsoft-testing-platform-faq"
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-platform-extensions-hosting.md",
+            "redirect_url": "/dotnet/core/testing/microsoft-testing-platform-extensions-hosting"
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-platform-extensions-output.md",
+            "redirect_url": "/dotnet/core/testing/microsoft-testing-platform-extensions-output"
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-platform-extensions-policy.md",
+            "redirect_url": "/dotnet/core/testing/microsoft-testing-platform-extensions-policy"
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-platform-extensions-test-reports.md",
+            "redirect_url": "/dotnet/core/testing/microsoft-testing-platform-extensions-test-reports"
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-platform-extensions-vstest-bridge.md",
+            "redirect_url": "/dotnet/core/testing/microsoft-testing-platform-extensions-vstest-bridge"
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-platform-extensions.md",
+            "redirect_url": "/dotnet/core/testing/microsoft-testing-platform-extensions"
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-platform-extensions-faq.md",
+            "redirect_url": "/dotnet/core/testing/microsoft-testing-platform-extensions-faq"
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-platform-integration-dotnet-test.md",
+            "redirect_url": "/dotnet/core/testing/microsoft-testing-platform-integration-dotnet-test"
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-platform-intro.md",
+            "redirect_url": "/dotnet/core/testing/microsoft-testing-platform-intro"
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-platform-telemetry.md",
+            "redirect_url": "/dotnet/core/testing/microsoft-testing-platform-telemetry"
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-platform-vs-vstest.md",
+            "redirect_url": "/dotnet/core/testing/microsoft-testing-platform-vs-vstest"
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-published-output.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-vstest"
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-visual-basic-with-dotnet-test.md",
+            "redirect_url": "/dotnet/core/testing/unit-testing-visual-basic-with-xunit"
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-with-mstest.md",
+            "redirect_url": "/dotnet/core/testing/unit-testing-csharp-with-mstest"
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-with-nunit.md",
+            "redirect_url": "/dotnet/core/testing/unit-testing-csharp-with-nunit"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/sdk/9.0/nugetaudit-transitive-packages.md",
+            "redirect_url": "/dotnet/core/compatibility/sdk/10.0/nugetaudit-transitive-packages"
         }
     ]
 }

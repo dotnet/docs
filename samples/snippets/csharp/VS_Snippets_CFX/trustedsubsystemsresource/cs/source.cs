@@ -2,10 +2,6 @@
 //  Copyright (c) Microsoft Corporation.  All Rights Reserved.
 
 using System;
-using System.IdentityModel.Claims;
-using System.IdentityModel.Selectors;
-using System.IdentityModel.Tokens;
-
 using System.ServiceModel;
 using System.ServiceModel.Channels;
 
@@ -22,7 +18,6 @@ namespace Microsoft.ServiceModel.Samples
     // Service class which implements the service contract.
     public class BackendService : ICalculator
     {
-
         public double Multiply(double n1, double n2)
         {
             return n1 * n2;
@@ -53,20 +48,6 @@ namespace Microsoft.ServiceModel.Samples
                 host.Close();
             }
             // </snippet1>
-        }
-    }
-
-    public class MyUserNamePasswordValidator : UserNamePasswordValidator
-    {
-        public override void Validate(string userName, string password)
-        {
-            // ignore the password because it is empty, we trust the facade service to authenticate the client
-            // we just accept the username information here so that application gets access to it
-            if (null == userName)
-            {
-                Console.WriteLine("Invalid username");
-                throw new SecurityTokenValidationException("Invalid username");
-            }
         }
     }
 }

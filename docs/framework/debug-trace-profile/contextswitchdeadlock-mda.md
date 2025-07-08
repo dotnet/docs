@@ -16,6 +16,8 @@ ms.assetid: 26dfaa15-9ddb-4b0a-b6da-999bba664fa6
 ---
 # contextSwitchDeadlock MDA
 
+[!INCLUDE [net-framework-specific](../includes/net-framework-specific.md)]
+
 The `contextSwitchDeadlock` managed debugging assistant (MDA) is activated when a deadlock is detected during an attempted COM context transition.
 
 ## Symptoms

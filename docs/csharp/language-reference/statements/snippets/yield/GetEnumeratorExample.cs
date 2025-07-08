@@ -1,4 +1,4 @@
-public class GetEnumeratorExample
+﻿public class GetEnumeratorExample
 {
     // <GetEnumeratorExample>
     public static void Example()

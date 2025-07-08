@@ -2,6 +2,7 @@
 title: What's new in F# 4.6 - F# Guide
 description: Get an overview of the new features available in F# 4.6.
 ms.date: 11/27/2019
+ms.topic: whats-new
 ---
 # What's new in F# 4.6
 

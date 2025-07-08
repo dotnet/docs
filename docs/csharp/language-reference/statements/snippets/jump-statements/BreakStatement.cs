@@ -12,7 +12,7 @@ public static class BreakStatement
     private static void BasicExample()
     {
         // <BasicExample>
-        int[] numbers = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+        int[] numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
         foreach (int number in numbers)
         {
             if (number == 3)
@@ -58,7 +58,7 @@ public static class BreakStatement
     private static void SwitchInsideLoop()
     {
         // <SwitchInsideLoop>
-        double[] measurements = { -4, 5, 30, double.NaN };
+        double[] measurements = [-4, 5, 30, double.NaN];
         foreach (double measurement in measurements)
         {
             switch (measurement)

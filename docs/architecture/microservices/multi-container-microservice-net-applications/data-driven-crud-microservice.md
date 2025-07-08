@@ -1,7 +1,7 @@
 ---
 title: Creating a simple data-driven CRUD microservice
 description: .NET Microservices Architecture for Containerized .NET Applications | Understand the creation of a simple CRUD (data-driven) microservice within the context of a microservices application.
-ms.date: 06/23/2021
+ms.date: 09/10/2024
 ---
 
 # Creating a simple data-driven CRUD microservice
@@ -211,6 +211,8 @@ builder.Services.AddDbContext<CatalogContext>(options =>
 });
 ```
 
+[!INCLUDE [managed-identities](../../../includes/managed-identities.md)]
+
 ### Additional resources
 
 - **Querying Data** \
@@ -254,9 +256,11 @@ catalog-api:
     - "5101:80"
 ```
 
+[!INCLUDE [managed-identities](../../../includes/managed-identities.md)]
+
 The docker-compose.yml files at the solution level are not only more flexible than configuration files at the project or microservice level, but also more secure if you override the environment variables declared at the docker-compose files with values set from your deployment tools, like from Azure DevOps Services Docker deployment tasks.
 
-Finally, you can get that value from your code by using `builder.Configuration\["ConnectionString"\]`, as shown in an earlier code example.
+Finally, you can get that value from your code by using `builder.Configuration["ConnectionString"]`, as shown in an earlier code example.
 
 However, for production environments, you might want to explore additional ways on how to store secrets like the connection strings. An excellent way to manage application secrets is using [Azure Key Vault](https://azure.microsoft.com/services/key-vault/).
 
@@ -275,9 +279,7 @@ As business requirements change, new collections of resources may be added, the 
 Versioning enables a Web API to indicate the features and resources that it exposes. A client application can then submit requests to a specific version of a feature or resource. There are several approaches to implement versioning:
 
 - URI versioning
-
 - Query string versioning
-
 - Header versioning
 
 Query string and URI versioning are the simplest to implement. Header versioning is a good approach. However, header versioning is not as explicit and straightforward as URI versioning. Because URL versioning is the simplest and most explicit, the eShopOnContainers sample application uses URI versioning.
@@ -361,7 +363,6 @@ Currently, Swashbuckle consists of five internal NuGet packages under the high-l
 After you have installed these NuGet packages in your Web API project, you need to configure Swagger in the _Program.cs_ class, as in the following **simplified** code:
 
 ```csharp
-
 // Add framework services.
 
 builder.Services.AddSwaggerGen(options =>
@@ -377,12 +378,16 @@ builder.Services.AddSwaggerGen(options =>
 
 // Other startup code...
 
-app.UseSwagger()
-    .UseSwaggerUI(c =>
+app.UseSwagger();
+
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwaggerUI(c =>
     {
         c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
     });
-    ```
+}
+```
 
 Once this is done, you can start your application and browse the following Swagger JSON and UI endpoints using URLs like these:
 
@@ -398,13 +403,7 @@ You previously saw the generated UI created by Swashbuckle for a URL like `http:
 
 **Figure 6-9**. Swashbuckle UI testing the Catalog/Items API method
 
-The Swagger UI API detail shows a sample of the response and can be used to execute the real API, which is great for developer discovery. Figure 6-10 shows the Swagger JSON metadata generated from the eShopOnContainers microservice (which is what the tools use underneath) when you request `http://<your-root-url>/swagger/v1/swagger.json` using [Postman](https://www.getpostman.com/).
-
-![Screenshot of a Sample Postman UI showing Swagger JSON metadata.](./media/data-driven-crud-microservice/swagger-json-metadata.png)
-
-**Figure 6-10**. Swagger JSON metadata
-
-It is that simple. And because it is automatically generated, the Swagger metadata will grow when you add more functionality to your API.
+The Swagger UI API detail shows a sample of the response and can be used to execute the real API, which is great for developer discovery. To see the Swagger JSON metadata generated from the eShopOnContainers microservice (which is what the tools use underneath), make a you request `http://<your-root-url>/swagger/v1/swagger.json` using the [Visual Studio Code: REST Client extension](https://marketplace.visualstudio.com/items?itemName=humao.rest-client).
 
 ### Additional resources
 

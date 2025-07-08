@@ -1,19 +1,13 @@
-﻿//<snippetNamespaces>
+//<snippetNamespaces>
 using System;
 using System.Collections.Generic;
-using System.Collections;
-using System.Data.Common;
 using System.Data;
-using System.IO;
-using System.Data.SqlClient;
+using System.Data.Common;
 using System.Data.EntityClient;
 using System.Data.Metadata.Edm;
 //</snippetNamespaces>
-//<snippetIncludes>
 using System.Data.Objects;
-using System.Data.Objects.DataClasses;
-//</snippetIncludes>
-using System.Linq;
+using System.Data.SqlClient;                                                                           
 
 namespace Microsoft.Samples.Entity
 {
@@ -37,8 +31,7 @@ namespace Microsoft.Samples.Entity
 
                 foreach (DbDataRecord rec in query1)
                 {
-                    Console.WriteLine("ContactID = {0}  Average TotalDue = {1} ",
-                        rec[0], rec[1]);
+                    Console.WriteLine($"ContactID = {rec[0]}  Average TotalDue = {rec[1]} ");
                 }
 
                 queryString = @"SELECT TOP(@number2) contactID, AVG(order.TotalDue)
@@ -48,8 +41,7 @@ namespace Microsoft.Samples.Entity
                 query2.Parameters.Add(new ObjectParameter("number2", 10));
                 foreach (DbDataRecord rec in query2)
                 {
-                    Console.WriteLine("ContactID = {0}  Average TotalDue = {1} ",
-                        rec[0], rec[1]);
+                    Console.WriteLine($"ContactID = {rec[0]}  Average TotalDue = {rec[1]} ");
                 }
             }
             //</snippetGroupByPartition>
@@ -105,8 +97,8 @@ namespace Microsoft.Samples.Entity
                         while (rdr.Read())
                         {
                             // Display OnsiteCourse's location.
-                            Console.WriteLine("CourseID: {0} ", rdr["CourseID"]);
-                            Console.WriteLine("Location: {0} ", rdr["Location"]);
+                            Console.WriteLine($"CourseID: {rdr["CourseID"]} ");
+                            Console.WriteLine($"Location: {rdr["Location"]} ");
                         }
                     }
                 }
@@ -174,8 +166,7 @@ namespace Microsoft.Samples.Entity
                         while (rdr.Read())
                         {
                             // Display CustomerID
-                            Console.WriteLine("Contact ID: {0}",
-                                rdr["ContactID"]);
+                            Console.WriteLine($"Contact ID: {rdr["ContactID"]}");
                             // Display Address information.
                             DbDataRecord nestedRecord =
                                 rdr["EmailPhoneComplexProperty"] as DbDataRecord;
@@ -217,7 +208,7 @@ namespace Microsoft.Samples.Entity
                         // Read the results returned by the stored procedure.
                         while (rdr.Read())
                         {
-                            Console.WriteLine("ID: {0} Grade: {1}", rdr["StudentID"], rdr["Grade"]);
+                            Console.WriteLine($"ID: {rdr["StudentID"]} Grade: {rdr["Grade"]}");
                         }
                     }
                 }
@@ -228,50 +219,7 @@ namespace Microsoft.Samples.Entity
 
         static public void BuildingConnectionStringWithEntityCommand()
         {
-            //<snippetBuildingConnectionStringWithEntityCommand>
-
-            // Specify the provider name, server and database.
-            string providerName = "System.Data.SqlClient";
-            string serverName = ".";
-            string databaseName = "AdventureWorks";
-
-            // Initialize the connection string builder for the
-            // underlying provider.
-            SqlConnectionStringBuilder sqlBuilder =
-                new SqlConnectionStringBuilder();
-
-            // Set the properties for the data source.
-            sqlBuilder.DataSource = serverName;
-            sqlBuilder.InitialCatalog = databaseName;
-            sqlBuilder.IntegratedSecurity = true;
-
-            // Build the SqlConnection connection string.
-            string providerString = sqlBuilder.ToString();
-
-            // Initialize the EntityConnectionStringBuilder.
-            EntityConnectionStringBuilder entityBuilder =
-                new EntityConnectionStringBuilder();
-
-            //Set the provider name.
-            entityBuilder.Provider = providerName;
-
-            // Set the provider-specific connection string.
-            entityBuilder.ProviderConnectionString = providerString;
-
-            // Set the Metadata location.
-            entityBuilder.Metadata = @"res://*/AdventureWorksModel.csdl|
-                                        res://*/AdventureWorksModel.ssdl|
-                                        res://*/AdventureWorksModel.msl";
-            Console.WriteLine(entityBuilder.ToString());
-
-            using (EntityConnection conn =
-                new EntityConnection(entityBuilder.ToString()))
-            {
-                conn.Open();
-                Console.WriteLine("Just testing the connection.");
-                conn.Close();
-            }
-            //</snippetBuildingConnectionStringWithEntityCommand>
+            throw new NotImplementedException();
         }
 
         static public void ParameterizedQueryWithEntityCommand()
@@ -375,15 +323,15 @@ namespace Microsoft.Samples.Entity
                         while (rdr.Read())
                         {
                             // the first column contains Contact ID.
-                            Console.WriteLine("Contact ID: {0}", rdr["ContactID"]);
+                            Console.WriteLine($"Contact ID: {rdr["ContactID"]}");
 
                             // The second column contains a collection of SalesOrderHeader
                             // items associated with the Contact.
                             DbDataReader nestedReader = rdr.GetDataReader(1);
                             while (nestedReader.Read())
                             {
-                                Console.WriteLine("   SalesOrderID: {0} ", nestedReader["SalesOrderID"]);
-                                Console.WriteLine("   OrderDate: {0} ", nestedReader["OrderDate"]);
+                                Console.WriteLine($"   SalesOrderID: {nestedReader["SalesOrderID"]} ");
+                                Console.WriteLine($"   OrderDate: {nestedReader["OrderDate"]} ");
                             }
                         }
                     }
@@ -408,8 +356,7 @@ namespace Microsoft.Samples.Entity
 
                 // Iterate through the collection of Contact items.
                 foreach (Contact result in query)
-                    Console.WriteLine("Contact First Name: {0}; Last Name: {1}",
-                            result.FirstName, result.LastName);
+                    Console.WriteLine($"Contact First Name: {result.FirstName}; Last Name: {result.LastName}");
             }
             //</snippetQueryEntityTypeCollection>
         }
@@ -435,8 +382,7 @@ namespace Microsoft.Samples.Entity
 
                 // Iterate through the collection of Contact items.
                 foreach (Contact result in contactQuery)
-                    Console.WriteLine("Last Name: {0}; First Name: {1}",
-                    result.LastName, result.FirstName);
+                    Console.WriteLine($"Last Name: {result.LastName}; First Name: {result.FirstName}");
             }
             //</snippetParameterizedQueryWithObjectQuery>
         }
@@ -456,7 +402,7 @@ namespace Microsoft.Samples.Entity
                 {
 
                     // Display contact's first name.
-                    Console.WriteLine("First Name {0}: ", rec[0]);
+                    Console.WriteLine($"First Name {rec[0]}: ");
                     List<SalesOrderHeader> list = rec[1] as List<SalesOrderHeader>;
                     // Display SalesOrderHeader information
                     // associated with the contact.
@@ -482,7 +428,7 @@ namespace Microsoft.Samples.Entity
                 foreach (DbDataRecord rec in
                     new ObjectQuery<DbDataRecord>(myQuery, context))
                 {
-                    Console.WriteLine("ID {0}; Name {1}", rec[0], rec[1]);
+                    Console.WriteLine($"ID {rec[0]}; Name {rec[1]}");
                 }
             }
             //</snippetReturnAnonymousTypeWithObjectQuery>
@@ -500,7 +446,7 @@ namespace Microsoft.Samples.Entity
                 ObjectQuery<Int32> productQuery =
                     new ObjectQuery<Int32>(queryString, context, MergeOption.NoTracking);
                 foreach (Int32 result in productQuery)
-                    Console.WriteLine("{0}", result);
+                    Console.WriteLine($"{result}");
             }
             //</snippetReturnPrimitiveTypeWithObjectQuery>
         }
@@ -520,14 +466,13 @@ namespace Microsoft.Samples.Entity
                 foreach (DbDataRecord rec in
                     new ObjectQuery<DbDataRecord>(esqlQuery, context))
                 {
-                    Console.WriteLine("Last names that start with the letter '{0}':",
-                                rec[0]);
+                    Console.WriteLine($"Last names that start with the letter '{rec[0]}':");
                     List<DbDataRecord> list = rec[1] as List<DbDataRecord>;
                     foreach (DbDataRecord nestedRec in list)
                     {
                         for (int i = 0; i < nestedRec.FieldCount; i++)
                         {
-                            Console.WriteLine("   {0} ", nestedRec[i]);
+                            Console.WriteLine($"   {nestedRec[i]} ");
                         }
                     }
                 }
@@ -549,8 +494,7 @@ namespace Microsoft.Samples.Entity
                 foreach (DbDataRecord rec in
                     new ObjectQuery<DbDataRecord>(esqlQuery, context))
                 {
-                    Console.WriteLine("ContactID = {0}  Average TotalDue = {1} ",
-                        rec[0], rec[1]);
+                    Console.WriteLine($"ContactID = {rec[0]}  Average TotalDue = {rec[1]} ");
                 }
             }
             //</snippetAggregateDataWithObjectQuery>
@@ -576,7 +520,7 @@ namespace Microsoft.Samples.Entity
                 foreach (DbDataRecord rec in
                     new ObjectQuery<DbDataRecord>(esqlQuery, context))
                 {
-                    Console.WriteLine("Name: {0}; ListPrice: {1}", rec[0], rec[1]);
+                    Console.WriteLine($"Name: {rec[0]}; ListPrice: {rec[1]}");
                 }
             }
             //</snippetOrderTwoUnionizedQueriesWithObjectQuery>
@@ -603,8 +547,7 @@ namespace Microsoft.Samples.Entity
 
                 // Iterate through the collection of Contact items.
                 foreach (Product result in productQuery)
-                    Console.WriteLine("ID: {0}; Name: {1}",
-                    result.ProductID, result.Name);
+                    Console.WriteLine($"ID: {result.ProductID}; Name: {result.Name}");
             }
             //</snippetESQLPagingWithObjectQuery>
         }

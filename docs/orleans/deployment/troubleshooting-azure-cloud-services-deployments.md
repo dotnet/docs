@@ -1,57 +1,53 @@
 ---
 title: Troubleshoot Azure Cloud Service deployments
-description: Learn how to troubleshoot an Orleans app with Azure Cloud Service deployment.
-ms.date: 03/09/2022
+description: Learn how to troubleshoot an Orleans app deployed to Azure Cloud Services.
+ms.date: 05/23/2025
+ms.topic: troubleshooting
+ms.custom: devops
 ---
 
 # Troubleshoot Azure Cloud Service deployments
 
-This page gives some general guidelines for troubleshooting any issues that occur while deploying to Azure Cloud Services.
-These are very common issues to watch out for. Be sure to check the logs for more information.
+This page provides general guidelines for troubleshooting issues occurring when deploying to Azure Cloud Services. These are common issues to watch out for. Check the logs for more detailed information.
 
 ## The `SiloUnavailableException`
 
-First, check to make sure that you are starting the silos before attempting to initialize the client. Sometimes the
-silos take a long time to start so it can be beneficial to try to initialize the client multiple times. If it still throws an
-exception, then there might be another issue with the silos.
+First, ensure silos start before attempting to initialize the client. Sometimes silos take a long time to start, so trying to initialize the client multiple times can be beneficial. If it still throws an exception, another issue might exist with the silos.
 
-Check the silo configuration and make sure that the silos are starting up properly.
+Check the silo configuration and ensure the silos start properly.
 
 ## Common connection string issues
 
-- Using the local connection string when deploying to Azure – the website will fail to connect.
-- Using different connection strings for the silos and the front end (web and worker roles) – the website will fail to
-initialize the client because it cannot connect to the silos.
+- **Using the local connection string when deploying to Azure**: The website fails to connect.
+- **Using different connection strings for silos and the front end (web and worker roles)**: The website fails to initialize the client because it cannot connect to the silos.
 
-The connection string configuration can be checked in the Azure Portal. The logs may not display properly if the connection
-strings are not set up correctly.
+Check the connection string configuration in the Azure Portal. Logs might not display properly if connection strings aren't set up correctly.
 
-## Modify the configuration files improperly
+## Improperly modified configuration files
 
-Make sure that the proper endpoints are configured in the _ServiceDefinition.csdef_ file or else the deployment will not work. It will give errors saying that it cannot get the endpoint information.
+Ensure proper endpoints are configured in the _ServiceDefinition.csdef_ file; otherwise, the deployment won't work. Errors stating that endpoint information cannot be obtained will occur.
 
 ## Missing logs
 
-Make sure that the connection strings are set up properly.
+Ensure the connection strings are set up properly.
 
-It is likely that the _Web.config_ file in the web role or the _app.config_ file in the worker role was modified improperly. Incorrect versions in these files can cause issues with the deployment. Be careful when dealing with updates.
+It's likely the _Web.config_ file in the web role or the _app.config_ file in the worker role was modified improperly. Incorrect versions in these files can cause deployment issues. Be careful when handling updates.
 
 ## Version issues
 
-Make sure that the same version of Orleans is used in every project in the solution. Not doing this can lead to the worker
-role recycling. Check the logs for more information. Visual Studio provides some silo startup error messages in the deployment history.
+Ensure the same version of Orleans is used in every project in the solution. Using different versions can lead to worker role recycling. Check the logs for more information. Visual Studio provides some silo startup error messages in the deployment history.
 
 ## Role keeps recycling
 
-- Check that all the appropriate Orleans assemblies are in the solution and have Copy Local set to True.
-- Check the logs to see if there is an unhandled exception while initializing.
-- Make sure that the connection strings are correct.
-- Check the Azure Cloud Services troubleshooting pages for more information.
+- Verify all appropriate Orleans assemblies are in the solution and have **Copy Local** set to **True**.
+- Check the logs for unhandled exceptions during initialization.
+- Ensure the connection strings are correct.
+- Refer to the Azure Cloud Services troubleshooting pages for more information.
 
 ## How to check logs
 
-- Use the Cloud Explorer in Visual Studio to navigate to the appropriate storage table or blob in the storage account. The WADLogsTable is a good starting point for looking at the logs.
-- You might only be logging errors. If you want informational logs as well, you will need to modify the configuration to set the logging severity level.
+- Use Cloud Explorer in Visual Studio to navigate to the appropriate storage table or blob in the storage account. The `WADLogsTable` is a good starting point for examining logs.
+- Only errors might be logged. If informational logs are also desired, modify the configuration to set the logging severity level.
 
 Programmatic configuration:
 
@@ -60,17 +56,17 @@ Programmatic configuration:
 
 Declarative configuration:
 
-- Add `<Tracing DefaultTraceLevel="Info" />` to the _OrleansConfiguration.xml_ and/or the _ClientConfiguration.xml_ files.
+- Add `<Tracing DefaultTraceLevel="Info" />` to the _OrleansConfiguration.xml_ and/or _ClientConfiguration.xml_ files.
 
-In the _diagnostics.wadcfgx_ file for the web and worker roles, make sure to set the `scheduledTransferLogLevelFilter` attribute in the `Logs` element to `Information`, as this is an additional layer of trace filtering that defines which traces are sent to the `WADLogsTable` in Azure Storage.
+In the _diagnostics.wadcfgx_ file for the web and worker roles, ensure the `scheduledTransferLogLevelFilter` attribute in the `Logs` element is set to `Information`. This setting acts as an additional layer of trace filtering defining which traces are sent to the `WADLogsTable` in Azure Storage.
 
-You can find more information about this in the configuration guide.
+Find more information about this in the configuration guide.
 
 ## Compatibility with ASP.NET
 
-The razor view engine included in ASP.NET uses the same code generation assemblies as Orleans (`Microsoft.CodeAnalysis` and `Microsoft.CodeAnalysis.CSharp`). This can present a version compatibility problem at runtime.
+The Razor view engine included in ASP.NET uses the same code generation assemblies as Orleans (`Microsoft.CodeAnalysis` and `Microsoft.CodeAnalysis.CSharp`). This can present a version compatibility problem at runtime.
 
-To resolve this, try upgrading `Microsoft.CodeDom.Providers.DotNetCompilerPlatform` (this is the NuGet package ASP.NET uses to include the above assemblies) to the latest version, and setting binding redirects like this:
+To resolve this, try upgrading `Microsoft.CodeDom.Providers.DotNetCompilerPlatform` (the NuGet package ASP.NET uses to include these assemblies) to the latest version and setting binding redirects like this:
 
 ```xml
 <dependentAssembly>

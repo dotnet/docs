@@ -60,9 +60,9 @@ This event contains a payload with one argument.
 
 * `typeName` (`string`): The assembly-qualified name (see <xref:System.Type.AssemblyQualifiedName?displayProperty=nameWithType>) of the type being deserialized.
 
-### \[Advanced\] Subscribing to a subset of notifications
+### \[Advanced\] Subscribe to a subset of notifications
 
-Listeners who wish to subscribe to only a subset of notifications can choose which keywords to enable.
+Listeners that want to subscribe to only a subset of notifications can choose which keywords to enable.
 
 * `Serialization` = `(EventKeywords)1`: Raises the `SerializationStart`, `SerializationEnd`, and `SerializingObject` events.
 * `Deserialization` = `(EventKeywords)2`: Raises the `DeserializationStart`, `DeserializationEnd`, and `DeserializingObject` events.
@@ -75,10 +75,10 @@ For more information, see <xref:System.Diagnostics.Tracing.EventKeywords?display
 
 The following code:
 
-* creates an `EventListener`-derived type that writes to `System.Console`,
-* subscribes that listener to `BinaryFormatter`-produced notifications,
-* serializes and deserializes a simple object graph using `BinaryFormatter`, and
-* analyzes the events that have been raised.
+* Creates an `EventListener`-derived type that writes to `System.Console`.
+* Subscribes that listener to `BinaryFormatter`-produced notifications.
+* Serializes and deserializes a simple object graph using `BinaryFormatter`.
+* Analyzes the events that have been raised.
 
 :::code language="csharp" source="snippets/binaryformatter-event-source/csharp/Program.cs":::
 

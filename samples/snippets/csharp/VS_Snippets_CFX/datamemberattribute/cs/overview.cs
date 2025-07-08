@@ -1,4 +1,4 @@
-﻿//<snippet0>
+//<snippet0>
 using System;
 using System.Collections;
 using System.IO;
@@ -70,9 +70,7 @@ public class Test
         }
         catch (Exception exc)
         {
-            Console.WriteLine(
-            "The serialization operation failed: {0} StackTrace: {1}",
-            exc.Message, exc.StackTrace);
+            Console.WriteLine($"The serialization operation failed: {exc.Message} StackTrace: {exc.StackTrace}");
         }
         finally
         {

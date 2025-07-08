@@ -15,7 +15,7 @@ This article explains which paths the runtime searches when loading native libra
 To facilitate simpler cross platform P/Invoke code, the runtime adds the canonical shared library extension (`.dll`, `.so` or `.dylib`) to native library names. On Unix-based platforms, the runtime will also try prepending `lib`. These library names variations are automatically searched when you use APIs that load native libraries, such as <xref:System.Runtime.InteropServices.DllImportAttribute>.
 
 > [!NOTE]
-> Absolute paths in library names (e.g., `/usr/lib/libc.so`) are treated as-is and no variations will be searched.
+> Absolute paths in library names (for example, `/usr/lib/libc.so`) are treated as-is and no variations will be searched.
 
 Consider the following example of using P/Invoke:
 

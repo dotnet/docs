@@ -15,7 +15,7 @@ Some [reference assembly](../../../../standard/assembly/reference-assemblies.md)
 
 In .NET 6, these mismatched parameter names were updated to be consistent across the reference and implementation assemblies.
 
-The following table shows the APIs and parameter names that changed.
+The following table shows the APIs and parameter names that changed. In addition, some parameter names on [`Stream`-derived types](parameters-renamed-on-stream-derived-types.md) were changed.
 
 | API | Old parameter name | New parameter name | Where changed |
 | - | - | - |

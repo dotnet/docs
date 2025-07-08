@@ -5,15 +5,15 @@ author: robvet
 ms.date: 04/06/2022
 ---
 
-# Relational vs. NoSQL data
+# SQL vs. NoSQL data
 
 [!INCLUDE [download-alert](includes/download-alert.md)]
 
-Relational and NoSQL are two types of database systems commonly implemented in cloud-native apps. They're built differently, store data differently, and accessed differently. In this section, we'll look at both. Later in this chapter, we'll look at an emerging database technology called *NewSQL*.
+Relational (SQL) and non-relational (NoSQL) are two types of database systems commonly implemented in cloud-native apps. They're built differently, store data differently, and accessed differently. In this section, we'll look at both. Later in this chapter, we'll look at an emerging database technology called *NewSQL*.
 
-*Relational databases* have been a prevalent technology for decades. They're mature, proven, and widely implemented. Competing database products, tooling, and expertise abound. Relational databases provide a store of related data tables. These tables have a fixed schema, use SQL (Structured Query Language) to manage data, and support ACID guarantees.
+*Relational databases* have been a prevalent technology for decades. They're mature, proven, and widely implemented. Competing database products, tooling, and expertise abound. Relational databases provide a store of related data tables. These tables have a fixed schema, use SQL (Structured Query Language) to manage data, and support ACID guarantees: atomicity, consistency, isolation and durability.
 
-*No-SQL databases* refer to high-performance, non-relational data stores. They excel in their ease-of-use, scalability, resilience, and availability characteristics. Instead of joining tables of normalized data, NoSQL stores unstructured or semi-structured data, often in key-value pairs or JSON documents. No-SQL databases typically don't provide ACID guarantees beyond the scope of a single database partition. High volume services that require sub second response time favor NoSQL datastores.
+*NoSQL databases* refer to high-performance, non-relational data stores. They excel in their ease-of-use, scalability, resilience, and availability characteristics. Instead of joining tables of normalized data, NoSQL stores unstructured or semi-structured data, often in key-value pairs or JSON documents. NoSQL databases typically don't provide ACID guarantees beyond the scope of a single database partition. High volume services that require sub second response time favor NoSQL datastores.
 
 The impact of [NoSQL](https://www.geeksforgeeks.org/introduction-to-nosql/) technologies for distributed cloud-native systems can't be overstated. The proliferation of new data technologies in this space has disrupted solutions that once exclusively relied on relational databases.
 
@@ -30,7 +30,7 @@ NoSQL databases include several different models for accessing and managing data
 | Wide-Column Store | Related data is stored as a set of nested-key/value pairs within a single column. |
 | Graph Store | Data is stored in a graph structure as node, edge, and data properties. |
 
-## The CAP theorem
+## CAP and PACELC theorems
 
 As a way to understand the differences between these types of databases, consider the CAP theorem, a set of principles applied to distributed systems that store state. Figure 5-10 shows the three properties of the CAP theorem.
 
@@ -40,13 +40,18 @@ As a way to understand the differences between these types of databases, conside
 
 The theorem states that distributed data systems will offer a trade-off between consistency, availability, and partition tolerance. And, that any database can only guarantee *two* of the three properties:
 
-- *Consistency.* Every node in the cluster responds with the most recent data, even if the system must block the request until all replicas update. If you query a "consistent system" for an item that is currently updating, you'll wait for that response until all replicas successfully update. However, you'll receive the most current data.
+- *Consistency.* Every node in the cluster responds with the most recent data, even if the system must block the request until all replicas update. If you query a "consistent system" for an item that is currently updating, you'll wait for that response until all replicas successfully update. However, you'll receive the most current data. It should be understood that the term "consistency" as it's used in the context of the CAP theorem has a technical meaning that is distinct from the way "consistency" is defined in the context of ACID guarantees.
 
-- *Availability.* Every node returns an immediate response, even if that response isn't the most recent data. If you query an "available system" for an item that is updating, you'll get the best possible answer the service can provide at that moment.
+- *Availability.* Every request received by a non-failing node in the system must result in a response. Put it simply, if you query an "available system" for an item that is updating, you'll get the best possible answer the service can provide at that moment. But note that "availability" as defined by CAP theorem is technically different from "high availability" as it's conventionally known for distributed systems.
 
 - *Partition Tolerance.* Guarantees the system continues to operate even if a replicated data node fails or loses connectivity with other replicated data nodes.
 
-CAP theorem explains the tradeoffs associated with managing consistency and availability during a network partition; however tradeoffs with respect to consistency and performance also exist with the absence of a network partition. CAP theorem is often further extended to [PACELC](http://www.cs.umd.edu/~abadi/papers/abadi-pacelc.pdf) to explain the tradeoffs more comprehensively.
+CAP theorem explains the tradeoffs associated with managing consistency and availability during a network partition; however tradeoffs with respect to consistency and performance also exist with the absence of a network partition.
+
+> [!NOTE]  
+> Even if you choose availability over consistency, in times of network partition, availability will suffer. CAP available system is more available to some of its clients but it's not necessarily "highly available" to all its clients.
+
+CAP theorem is often further extended to [PACELC](http://www.cs.umd.edu/~abadi/papers/abadi-pacelc.pdf) to explain the tradeoffs more comprehensively. The CAP theorem is particularly relevant in intermittently connected environments, such as those related to the Internet of Things (IoT), environmental monitoring, and mobile applications. In these contexts, devices may become partitioned due to challenging physical conditions, such as power outages or when entering confined spaces like elevators. For distributed systems, such as cloud applications, it is more appropriate to use the PACELC theorem, which is more comprehensive and considers trade-offs such as latency and consistency even in the absence of network partitions.
 
 Relational databases typically provide consistency and availability, but not partition tolerance. They're typically provisioned to a single server and scale vertically by adding more resources to the machine.
 
@@ -72,9 +77,9 @@ Based upon specific data requirements, a cloud-native-based microservice can imp
 
 |  Consider a NoSQL datastore when: | Consider a relational database when: |
 | :-------- | :-------- |
-| You have high volume workloads that require predictable latency at large scale (e.g. latency measured in milliseconds while performing millions of transactions per second) | Your workload volume generally fits within thousands of transactions per second |
+| You have high volume workloads that require predictable latency at large scale (for example, latency measured in milliseconds while performing millions of transactions per second) | Your workload volume generally fits within thousands of transactions per second |
 | Your data is dynamic and frequently changes | Your data is highly structured and requires referential integrity |
-| Relationships can be de-normalized data models | Relationships are expressed through table joins on normalized data models |  
+| Relationships can be de-normalized data models | Relationships are expressed through table joins on normalized data models |
 | Data retrieval is simple and expressed without table joins | You work with complex queries and reports|
 | Data is typically replicated across geographies and requires finer control over consistency, availability, and performance | Data is typically centralized, or can be replicated regions asynchronously |
 | Your application will be deployed to commodity hardware, such as with public clouds | Your application will be deployed to large, high-end hardware |
@@ -112,7 +117,7 @@ Development teams with expertise in Microsoft SQL Server should consider
 For use with a cloud-native microservice, Azure SQL Database is available with three deployment options:
 
 - A Single Database represents a fully managed SQL Database running on an [Azure SQL Database server](/azure/sql-database/sql-database-servers) in the Azure cloud. The database is considered [*contained*](/sql/relational-databases/databases/contained-databases) as it has no configuration dependencies on the underlying database server.
-  
+
 - A [Managed Instance](/azure/sql-database/sql-database-managed-instance) is a fully managed instance of the Microsoft SQL Server Database Engine that provides near-100% compatibility with an on-premises SQL Server. This option supports larger databases, up to 35 TB and is placed in an [Azure Virtual Network](/azure/virtual-network/virtual-networks-overview) for better isolation.
 
 - [Azure SQL Database serverless](/azure/sql-database/sql-database-serverless) is a compute tier for a single database that automatically scales based on workload demand. It bills only for the amount of compute used per second. The service is well suited for workloads with intermittent, unpredictable usage patterns, interspersed with periods of inactivity. The serverless compute tier also automatically pauses databases during inactive periods so that only storage charges are billed. It automatically resumes when activity returns.
@@ -192,8 +197,8 @@ When replatforming monolithic applications to a cloud-native architecture, devel
 | NoSQL API | API for NoSQL stores data in document format |
 | Mongo DB API | Supports Mongo DB APIs and JSON documents|
 | Gremlin API | Supports Gremlin API with graph-based nodes and edge data representations |
-| Cassandra API | Supports Casandra API for wide-column data representations |  
-| Table API  | Supports Azure Table Storage with premium enhancements |  
+| Cassandra API | Supports Casandra API for wide-column data representations |
+| Table API  | Supports Azure Table Storage with premium enhancements |
 | PostgreSQL API | Managed service for running PostgreSQL at any scale |
 
 Development teams can migrate existing Mongo, Gremlin, or Cassandra databases into Cosmos DB with minimal changes to data or code. For new apps, development teams can choose among open-source options or the built-in SQL API model.
@@ -231,8 +236,8 @@ Azure Cosmos DB offers five well-defined [consistency models](/azure/cosmos-db/c
 | Eventual | No ordering guarantee for reads. Replicas will eventually converge. |
 | Constant Prefix | Reads are still eventual, but data is returned in the ordering in which it is written. |
 | Session | Guarantees you can read any data written during the current session. It is the default consistency level. |
-| Bounded Staleness | Reads trail writes by interval that you specify. |  
-| Strong  | Reads are guaranteed to return most recent committed version of an item. A client never sees an uncommitted or partial read. |  
+| Bounded Staleness | Reads trail writes by interval that you specify. |
+| Strong  | Reads are guaranteed to return most recent committed version of an item. A client never sees an uncommitted or partial read. |
 
 In the article [Getting Behind the 9-Ball: Cosmos DB Consistency Levels Explained](https://blog.jeremylikness.com/blog/2018-03-23_getting-behind-the-9ball-cosmosdb-consistency-levels/), Microsoft Program Manager Jeremy Likness provides an excellent explanation of the five models.
 
@@ -288,7 +293,7 @@ One of the more time-consuming tasks is migrating data from one data platform to
 - Azure Database for MariaDB
 - Azure Database for PostgreSQL
 - Azure Cosmos DB
-  
+
 The service provides recommendations to guide you through the changes required to execute a migration, both small or large.
 
 >[!div class="step-by-step"]

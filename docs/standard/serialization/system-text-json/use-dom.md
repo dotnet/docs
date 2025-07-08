@@ -85,6 +85,18 @@ The following example illustrates the result of using methods that take a `JsonS
 
 If you need features of `JsonSerializerOptions` other than custom converters, use `JsonSerializer` with strongly typed targets (such as the `Person` class in this example) rather than `JsonNode`.
 
+### Manipulate property order
+
+<xref:System.Text.Json.Nodes.JsonObject> is one of the elements in the payload of a <xref:System.Text.Json.Nodes.JsonNode>, and it represents a mutable JSON object. Even though the type is modelled as an `IDictionary<string, JsonNode>`, where each entry is a property of the object, it encapsulate an implicit property order. However, APIs such as <xref:System.Text.Json.Nodes.JsonObject.Insert(System.Int32,System.String,System.Text.Json.Nodes.JsonNode)> and <xref:System.Text.Json.Nodes.JsonObject.RemoveAt(System.Int32)> effectively model the type as an ordered dictionary by letting you insert and remove items at a specific index. These APIs allow modifications to object instances that can directly influence property order.
+
+The following code shows an example of adding or moving a specific property to the start of the object.
+
+:::code language="csharp" source="snippets/use-dom-utf8jsonreader-utf8jsonwriter/csharp/JsonNodePropertyOrder.cs" id="1":::
+
+### Compare JsonNodes
+
+To compare two `JsonNode` objects for equality, including their descendant elements, use the <xref:System.Text.Json.Nodes.JsonNode.DeepEquals(System.Text.Json.Nodes.JsonNode,System.Text.Json.Nodes.JsonNode)?displayProperty=nameWithType> method.
+
 ## Use `JsonDocument`
 
 The following example shows how to use the <xref:System.Text.Json.JsonDocument> class for random access to data in a JSON string:
@@ -116,6 +128,12 @@ Searches on `JsonElement` require a sequential search of the properties and henc
 
 * Use the built-in enumerators (<xref:System.Text.Json.JsonElement.EnumerateArray%2A> and <xref:System.Text.Json.JsonElement.EnumerateObject%2A>) rather than doing your own indexing or loops.
 * Don't do a sequential search on the whole `JsonDocument` through every property by using `RootElement`. Instead, search on nested JSON objects based on the known structure of the JSON data. For example, the preceding code examples look for a `Grade` property in `Student` objects by looping through the `Student` objects and getting the value of `Grade` for each, rather than searching through all `JsonElement` objects looking for `Grade` properties. Doing the latter would result in unnecessary passes over the same data.
+
+### Compare JsonElements
+
+To compare two `JsonElement` objects for equality, including their descendant elements, use the <xref:System.Text.Json.JsonElement.DeepEquals(System.Text.Json.JsonElement,System.Text.Json.JsonElement)?displayProperty=nameWithType> method.
+
+:::code language="csharp" source="snippets/how-to/csharp/JsonDocumentDataAccess.cs" id="DeepEquals":::
 
 ### Use `JsonDocument` to write JSON
 

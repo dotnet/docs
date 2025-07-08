@@ -2,10 +2,9 @@
 title: "Configuring parameters and parameter data types"
 description: Command objects use parameters to pass values to SQL statements or stored procedures, providing type checking and validation in ADO.NET.
 ms.date: "03/30/2017"
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: 537d8a2c-d40b-4000-83eb-bc1fcc93f707
 ---
 # Configuring parameters and parameter data types
 
@@ -94,7 +93,7 @@ For more information, see [Generating Commands with CommandBuilders](generating-
 Stored procedures offer many advantages in data-driven applications. By using stored procedures, database operations can be encapsulated in a single command, optimized for best performance, and enhanced with additional security. Although a stored procedure can be called by passing the stored procedure name followed by parameter arguments as an SQL statement, by using the <xref:System.Data.Common.DbCommand.Parameters%2A> collection of the ADO.NET <xref:System.Data.Common.DbCommand> object enables you to more explicitly define stored procedure parameters, and to access output parameters and return values.
 
 > [!NOTE]
-> Parameterized statements are executed on the server by using `sp_executesql,` which allows for query plan reuse. Local cursors or variables in the `sp_executesql` batch are not visible to the batch that calls `sp_executesql`. Changes in database context last only to the end of the `sp_executesql` statement. For more information, see [sp_executesql (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-executesql-transact-sql).
+> Parameterized statements are executed on the server by using `sp_executesql`, which allows for query plan reuse. Local cursors or variables in the `sp_executesql` batch are not visible to the batch that calls `sp_executesql`. Changes in database context last only to the end of the `sp_executesql` statement. For more information, see [sp_executesql (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-executesql-transact-sql).
 
 When using parameters with a <xref:System.Data.SqlClient.SqlCommand> to execute a SQL Server stored procedure, the names of the parameters added to the <xref:System.Data.SqlClient.SqlCommand.Parameters%2A> collection must match the names of the parameter markers in the stored procedure. The .NET Framework Data Provider for SQL Server does not support the question mark (?) placeholder for passing parameters to an SQL statement or a stored procedure. It treats parameters in the stored procedure as named parameters and searches for matching parameter markers. For example, the `CustOrderHist` stored procedure is defined by using a parameter named `@CustomerID`. When your code executes the stored procedure, it must also use a parameter named `@CustomerID`.
 

@@ -30,7 +30,7 @@ Windows Communication Foundation (WCF) transports support two modes for transfer
 
  To enable asynchronous streaming, add the  <xref:System.ServiceModel.Description.DispatcherSynchronizationBehavior> endpoint behavior to the service host and set its <xref:System.ServiceModel.Description.DispatcherSynchronizationBehavior.AsynchronousSendEnabled%2A> property to `true`.  
   
- This version of WCF also adde the capability of true asynchronous streaming on the send side. This improves scalability of the service in scenarios where it is streaming messages to multiple clients some of which are slow in reading; possibly due to network congestion or are not reading at all. In these scenarios WCF no longer blocks individual threads on the service per client. This ensures that the service is able to process many more clients thereby improving the scalability of the service.  
+ This version of WCF also added the capability of true asynchronous streaming on the send side. This improves scalability of the service in scenarios where it is streaming messages to multiple clients some of which are slow in reading; possibly due to network congestion or are not reading at all. In these scenarios WCF no longer blocks individual threads on the service per client. This ensures that the service is able to process many more clients thereby improving the scalability of the service.  
   
 ## Restrictions on Streamed Transfers  
 

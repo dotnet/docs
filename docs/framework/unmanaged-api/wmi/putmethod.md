@@ -58,10 +58,10 @@ HRESULT PutMethod (
 
 The following values returned by this function are defined in the *WbemCli.h* header file, or you can define them as constants in your code:
 
-|Constant  |Value  |Description  |
-|---------|---------|---------|
+| Constant                   | Value      | Description                           |
+|----------------------------|------------|---------------------------------------|
 | `WBEM_E_INVALID_PARAMETER` | 0x80041008 | One or more parameters are not valid. |
-| `WBEM_E_INVALID_DUPLICATE_PARAMETER` | 0x80041043 | The `[in, out]` method parameter specified in both the *pInSignature* and *pOutSignature* objects have different qualifiers.
+| `WBEM_E_INVALID_DUPLICATE_PARAMETER` | 0x80041043 | The `[in, out]` method parameter specified in both the *pInSignature* and *pOutSignature* objects have different qualifiers. |
 | `WBEM_E_MISSING_PARAMETER_ID` | 0x80041036 | A method parameter is missing the specification of the **ID** qualifier. |
 | `WBEM_E_NONCONSECUTIVE_PARAMETER_IDS` | 0x80041038 | The ID series that is assigned to the method parameters is not consecutive or does not start at 0. |
 | `WBEM_E_PARAMETER_ID_ON_RETVAL` | 0x80041039 | The return value for a method has an **ID** qualifier. |

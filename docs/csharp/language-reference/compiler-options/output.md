@@ -1,6 +1,6 @@
 ---
 description: "C# Compiler Options that control compiler output. These options control the assembly generation from a compilation."
-title: "C# Compiler Options - Output options"
+title: "Compiler Options - Output options"
 ms.date: 03/12/2021
 f1_keywords: 
   - "cs.build.options"
@@ -22,6 +22,9 @@ The following options control compiler output generation.
 | **PlatformTarget** | `-platform:` | Specify the target platform CPU. |
 | **ProduceReferenceAssembly** | `-refout:` | Generate a reference assembly. |
 | **TargetType** | `-target:` | Specify the type of the output assembly. |
+
+> [!NOTE]
+> Refer to [Compiler options](index.md#how-to-set-options) for more information on configuring these options for your project.
 
 ## DocumentationFile
 

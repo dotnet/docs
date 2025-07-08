@@ -1,8 +1,8 @@
 ---
 title: Introduction to character encoding in .NET
 description: Learn about character encoding and decoding in .NET.
-ms.date: 08/11/2021
-ms.topic: conceptual
+ms.date: 10/22/2024
+ms.topic: concept-article
 no-loc: [Rune, char, string]
 dev_langs:
   - "csharp"
@@ -181,7 +181,10 @@ The following diagram illustrates the scalar value code points.
 
 ### The Rune type as a scalar value
 
-Beginning with .NET Core 3.0, the <xref:System.Text.Rune?displayProperty=fullName> type represents a Unicode scalar value. **`Rune` is not available in .NET Core 2.x or .NET Framework 4.x.**
+> [!IMPORTANT]
+> The `Rune` type isn't available in .NET Framework.
+
+In .NET, the <xref:System.Text.Rune?displayProperty=fullName> type represents a Unicode scalar value.
 
 The `Rune` constructors validate that the resulting instance is a valid Unicode scalar value, otherwise they throw an exception. The following example shows code that successfully instantiates `Rune` instances because the input represents valid scalar values:
 
@@ -264,8 +267,6 @@ In .NET APIs, a grapheme cluster is called a *text element*. The following metho
 :::code language="csharp" source="snippets/character-encoding-introduction/csharp/CountTextElements.cs" id="SnippetCountMethod":::
 
 :::code language="csharp" source="snippets/character-encoding-introduction/csharp/CountTextElements.cs" id="SnippetCallCountMethod":::
-
-If you run this code in .NET Framework or .NET Core 3.1 or earlier, the text element count for the emoji shows `4`. That is due to a bug in the `StringInfo` class that is fixed in .NET 5.
 
 ### Example: splitting string instances
 

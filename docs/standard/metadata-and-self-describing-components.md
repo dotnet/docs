@@ -20,7 +20,7 @@ ms.assetid: 3dd13c5d-a508-455b-8dce-0a852882a5a7
 
 In the past, a software component (.exe or .dll) that was written in one language could not easily use a software component that was written in another language. COM provided a step towards solving this problem. .NET makes component interoperation even easier by allowing compilers to emit additional declarative information into all modules and assemblies. This information, called metadata, helps components to interact seamlessly.
 
- Metadata is binary information describing your program that is stored either in a common language runtime portable executable (PE) file or in memory. When you compile your code into a PE file, metadata is inserted into one portion of the file, and your code is converted to Microsoft intermediate language (MSIL) and inserted into another portion of the file. Every type and member that is defined and referenced in a module or assembly is described within metadata. When code is executed, the runtime loads metadata into memory and references it to discover information about your code's classes, members, inheritance, and so on.
+ Metadata is binary information describing your program that is stored either in a common language runtime portable executable (PE) file or in memory. When you compile your code into a PE file, metadata is inserted into one portion of the file, and your code is converted to common intermediate language (CIL) and inserted into another portion of the file. Every type and member that is defined and referenced in a module or assembly is described within metadata. When code is executed, the runtime loads metadata into memory and references it to discover information about your code's classes, members, inheritance, and so on.
 
  Metadata describes every type and member defined in your code in a language-neutral manner. Metadata stores the following information:
 
@@ -62,7 +62,7 @@ Metadata is the key to a simpler programming model, and eliminates the need for 
 
 ## Metadata and the PE File Structure
 
-Metadata is stored in one section of a .NET portable executable (PE) file, while Microsoft intermediate language (MSIL) is stored in another section of the PE file. The metadata portion of the file contains a series of table and heap data structures. The MSIL portion contains MSIL and metadata tokens that reference the metadata portion of the PE file. You might encounter metadata tokens when you use tools such as the [MSIL Disassembler (Ildasm.exe)](../framework/tools/ildasm-exe-il-disassembler.md) to view your code's MSIL, for example.
+Metadata is stored in one section of a .NET portable executable (PE) file, while common intermediate language (CIL) is stored in another section of the PE file. The metadata portion of the file contains a series of table and heap data structures. The CIL portion contains CIL and metadata tokens that reference the metadata portion of the PE file. You might encounter metadata tokens when you use tools such as the [IL Disassembler (Ildasm.exe)](../framework/tools/ildasm-exe-il-disassembler.md) to view your code's CIL, for example.
 
 ### Metadata Tables and Heaps
 
@@ -72,9 +72,9 @@ Metadata also stores information in four heap structures: string, blob, user str
 
 ### Metadata Tokens
 
-Each row of each metadata table is uniquely identified in the MSIL portion of the PE file by a metadata token. Metadata tokens are conceptually similar to pointers, persisted in MSIL, that reference a particular metadata table.
+Each row of each metadata table is uniquely identified in the CIL portion of the PE file by a metadata token. Metadata tokens are conceptually similar to pointers, persisted in CIL, that reference a particular metadata table.
 
-A metadata token is a four-byte number. The top byte denotes the metadata table to which a particular token refers (method, type, and so on). The remaining three bytes specify the row in the metadata table that corresponds to the programming element being described. If you define a method in C# and compile it into a PE file, the following metadata token might exist in the MSIL portion of the PE file:
+A metadata token is a four-byte number. The top byte denotes the metadata table to which a particular token refers (method, type, and so on). The remaining three bytes specify the row in the metadata table that corresponds to the programming element being described. If you define a method in C# and compile it into a PE file, the following metadata token might exist in the CIL portion of the PE file:
 
 `0x06000004`
 
@@ -87,7 +87,7 @@ When a program is compiled for the common language runtime, it is converted to a
 |PE section|Contents of PE section|
 |----------------|----------------------------|
 |PE header|The index of the PE file's main sections and the address of the entry point.<br /><br /> The runtime uses this information to identify the file as a PE file and to determine where execution starts when loading the program into memory.|
-|MSIL instructions|The Microsoft intermediate language instructions (MSIL) that make up your code. Many MSIL instructions are accompanied by metadata tokens.|
+|CIL instructions|The Microsoft intermediate language instructions (CIL) that make up your code. Many CIL instructions are accompanied by metadata tokens.|
 |Metadata|Metadata tables and heaps. The runtime uses this section to record information about every type and member in your code. This section also includes custom attributes and security information.|
 
 ## Run-Time Use of Metadata
@@ -126,9 +126,9 @@ public class MyApp
 }
 ```
 
-When the code runs, the runtime loads the module into memory and consults the metadata for this class. Once loaded, the runtime performs extensive analysis of the method's Microsoft intermediate language (MSIL) stream to convert it to fast native machine instructions. The runtime uses a just-in-time (JIT) compiler to convert the MSIL instructions to native machine code one method at a time as needed.
+When the code runs, the runtime loads the module into memory and consults the metadata for this class. Once loaded, the runtime performs extensive analysis of the method's common intermediate language (CIL) stream to convert it to fast native machine instructions. The runtime uses a just-in-time (JIT) compiler to convert the CIL instructions to native machine code one method at a time as needed.
 
-The following example shows part of the MSIL produced from the previous code's `Main` function. You can view the MSIL and metadata from any .NET application using the [MSIL Disassembler (Ildasm.exe)](../framework/tools/ildasm-exe-il-disassembler.md).
+The following example shows part of the CIL produced from the previous code's `Main` function. You can view the CIL and metadata from any .NET application using the [IL Disassembler (Ildasm.exe)](../framework/tools/ildasm-exe-il-disassembler.md).
 
 ```console
 .entrypoint
@@ -147,7 +147,7 @@ IL_000c:  ldloc.1
 IL_000d:  call int32 ConsoleApplication.MyApp::Add(int32,int32) /* 06000003 */
 ```
 
-The JIT compiler reads the MSIL for the whole method, analyzes it thoroughly, and generates efficient native instructions for the method. At `IL_000d`, a metadata token for the `Add` method (`/*` `06000003 */`) is encountered and the runtime uses the token to consult the third row of the **MethodDef** table.
+The JIT compiler reads the CIL for the whole method, analyzes it thoroughly, and generates efficient native instructions for the method. At `IL_000d`, a metadata token for the `Add` method (`/*` `06000003 */`) is encountered and the runtime uses the token to consult the third row of the **MethodDef** table.
 
 The following table shows part of the **MethodDef** table referenced by the metadata token that describes the `Add` method. While other metadata tables exist in this assembly and have their own unique values, only this table is discussed.
 
@@ -157,14 +157,8 @@ The following table shows part of the **MethodDef** table referenced by the meta
 |2|0x00002058|IL<br /><br /> Managed|Public<br /><br /> Static<br /><br /> ReuseSlot|Main|String|
 |3|0x0000208c|IL<br /><br /> Managed|Public<br /><br /> Static<br /><br /> ReuseSlot|Add|int, int, int|
 
-Each column of the table contains important information about your code. The **RVA** column allows the runtime to calculate the starting memory address of the MSIL that defines this method. The **ImplFlags** and **Flags** columns contain bitmasks that describe the method (for example, whether the method is public or private). The **Name** column indexes the name of the method from the string heap. The **Signature** column indexes the definition of the method's signature in the blob heap.
+Each column of the table contains important information about your code. The **RVA** column allows the runtime to calculate the starting memory address of the CIL that defines this method. The **ImplFlags** and **Flags** columns contain bitmasks that describe the method (for example, whether the method is public or private). The **Name** column indexes the name of the method from the string heap. The **Signature** column indexes the definition of the method's signature in the blob heap.
 
-The runtime calculates the desired offset address from the **RVA** column in the third row and returns this address to the JIT compiler, which then proceeds to the new address. The JIT compiler continues to process MSIL at the new address until it encounters another metadata token and the process is repeated.
+The runtime calculates the desired offset address from the **RVA** column in the third row and returns this address to the JIT compiler, which then proceeds to the new address. The JIT compiler continues to process CIL at the new address until it encounters another metadata token and the process is repeated.
 
 Using metadata, the runtime has access to all the information it needs to load your code and process it into native machine instructions. In this manner, metadata enables self-describing files and, together with the common type system, cross-language inheritance.
-
-## Related Topics
-
-|Title|Description|
-|-----------|-----------------|
-|[Attributes](attributes/index.md)|Describes how to apply attributes, write custom attributes, and retrieve information that is stored in attributes.|

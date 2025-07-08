@@ -1,36 +1,36 @@
 ### YamlMime:Landing
 
-title: ML.NET Documentation
+title: ML.NET documentation
 summary: Learn how to use open-source ML.NET to build custom machine learning models and integrate them into apps. Tutorials, code examples, and more show you how.
 
 metadata:
-  title: ML.NET Documentation - Tutorials, API Reference
+  title: ML.NET documentation - Tutorials, API reference
   description: Learn how to use open-source ML.NET to build custom machine learning models and integrate them into apps. Tutorials, code examples, and more show you how.
-  ms.prod: dotnet-ml
+  ms.service: dotnet-ml
   ms.topic: landing-page
   ms.collection: collection
   author: natke
   ms.author: nakersha
-  ms.date: 10/30/2019
-
+  ms.date: 04/15/2024
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
 landingContent:
-
   # Basics
-  - title: ML.NET Basics
+  - title: ML.NET basics
     linkLists:
       - linkListType: overview
         links:
-          - text: What is ML.NET?
-            url: how-does-mldotnet-work.md
+          - text: Overview of ML.NET
+            url: overview.md
+          - text: What is the ML.NET API?
+            url: mldotnet-api.md
           - text: What is Model Builder?
             url: automate-training-with-model-builder.md
       - linkListType: video
         links:
           - text: Machine learning basics
-            url: /shows/MLNET/MLNET-Machine-Learning-Introduction-1-of-8         
+            url: /shows/MLNET/MLNET-Machine-Learning-Introduction-1-of-8
       - linkListType: concept
         links:
           - text: Machine learning tasks & algorithms
@@ -54,7 +54,7 @@ landingContent:
           - text: Install the CLI on macOS, Windows, or Linux (low-code)
             url: how-to-guides/install-ml-net-cli.md
 
- # Tutorials - scenarios
+  # Tutorials - scenarios
   - title: Tutorials
     linkLists:
       - linkListType: learn
@@ -64,51 +64,52 @@ landingContent:
       - linkListType: tutorial
         links:
           - text: Analyze website comment sentiment (Model Builder)
-            url: tutorials/sentiment-analysis-model-builder.md   
+            url: tutorials/sentiment-analysis-model-builder.md
           - text: Predict prices (Model Builder)
-            url: tutorials/predict-prices-with-model-builder.md     
+            url: tutorials/predict-prices-with-model-builder.md
           - text: Categorize health violations (Model Builder & SQL Server)
-            url: tutorials/health-violation-classification-model-builder.md                 
+            url: tutorials/health-violation-classification-model-builder.md
           - text: Categorize support issues (API)
             url: tutorials/github-issue-classification.md
           - text: Classify images with Image Classification API (API)
             url: tutorials/image-classification-api-transfer-learning.md
           - text: Use object detection to recognize traffic signs (Model Builder)
             url: tutorials/object-detection-model-builder.md
-          - text: Detect objects in images (API)  
+          - text: Detect objects in images (API)
             url: tutorials/object-detection-onnx.md
           - text: Detect anomalies in product sales (API)
             url: tutorials/sales-anomaly-detection.md
           - text: Forecast bike rental demand (API & SQL Server)
-            url: tutorials/time-series-demand-forecasting.md 
+            url: tutorials/time-series-demand-forecasting.md
           - text: Build a movie recommender (API)
-            url: tutorials/movie-recommendation.md  
-
+            url: tutorials/movie-recommendation.md
 
   # API Card
   - title: How-to guides
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Load data from various sources  
+          - text: Load data from various sources
             url: how-to-guides/load-data-ml-net.md
           - text: Prepare data for building a model
             url: how-to-guides/prepare-data-ml-net.md
           - text: Train & evaluate a model
-            url: how-to-guides/train-machine-learning-model-ml-net.md         
+            url: how-to-guides/train-machine-learning-model-ml-net.md
           - text: Make predictions with a trained model
             url: how-to-guides/machine-learning-model-predictions-ml-net.md
           - text: Save & load a trained model
-            url: how-to-guides/save-load-machine-learning-models-ml-net.md   
+            url: how-to-guides/save-load-machine-learning-models-ml-net.md
           - text: Retrain a model
-            url: how-to-guides/retrain-model-ml-net.md                 
+            url: how-to-guides/retrain-model-ml-net.md
 
   # API Card
-  - title: Reference 
-    linkLists:           
+  - title: Reference
+    linkLists:
       - linkListType: reference
         links:
-          - text: ML.NET API reference  
-            url: ../../api/index.md?view=ml-dotnet
+          - text: ML.NET API reference
+            url: ../../api/index.md?view=ml-dotnet&preserve-view=true
+          - text: ML.NET CLI reference
+            url: reference/ml-net-cli-reference.md
           - text: ML.NET samples
             url: https://github.com/dotnet/machinelearning-samples

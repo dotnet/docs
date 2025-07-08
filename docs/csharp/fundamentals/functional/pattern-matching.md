@@ -1,7 +1,7 @@
 ---
-title: Pattern matching overview - C# guide
-description: Learn about pattern matching expressions in C#
-ms.date: 06/02/2022
+title: Pattern matching overview
+description: "Learn about pattern matching expressions in C#"
+ms.date: 01/27/2025
 ---
 
 # Pattern matching overview
@@ -36,7 +36,7 @@ You can also test a variable to find a match on specific values. The following c
 
 :::code language="csharp" source="snippets/patterns/Simulation.cs" ID="PerformOperation":::
 
-The previous example demonstrates a method dispatch based on the value of an enumeration. The final `_` case is a [*discard pattern*](../../language-reference/operators/patterns.md#discard-pattern) that matches all values. It handles any error conditions where the value doesn't match one of the defined `enum` values. If you omit that switch arm, the compiler warns that you haven't handled all possible input values. At run time, the `switch` expression throws an exception if the object being examined doesn't match any of the switch arms. You could use numeric constants instead of a set of enum values. You can also use this similar technique for constant string values that represent the commands:
+The previous example demonstrates a method dispatch based on the value of an enumeration. The final `_` case is a [*discard pattern*](../../language-reference/operators/patterns.md#discard-pattern) that matches all values. It handles any error conditions where the value doesn't match one of the defined `enum` values. If you omit that switch arm, the compiler warns that your pattern expression doesn't handle all possible input values. At run time, the `switch` expression throws an exception if the object being examined doesn't match any of the switch arms. You could use numeric constants instead of a set of enum values. You can also use this similar technique for constant string values that represent the commands:
 
 :::code language="csharp" source="snippets/patterns/Simulation.cs" ID="PerformStringOperation":::
 
@@ -52,17 +52,17 @@ You can use [*relational patterns*](../../language-reference/operators/patterns.
 
 :::code language="csharp" source="snippets/patterns/Simulation.cs" ID="RelationalPattern":::
 
-The preceding code also demonstrates the conjunctive `and` [*logical pattern*](../../language-reference/operators/patterns.md#logical-patterns) to check that both relational patterns match. You can also use a disjunctive `or` pattern to check that either pattern matches. The two relational patterns are surrounded by parentheses, which you can use around any pattern for clarity. The final two switch arms handle the cases for the melting point and the boiling point. Without those two arms, the compiler warns you that your logic doesn't cover every possible input.
+The preceding code also demonstrates the conjunctive `and` [*logical pattern*](../../language-reference/operators/patterns.md#logical-patterns) to check that both relational patterns match. You can also use a disjunctive `or` pattern to check that either pattern matches. The two relational patterns are surrounded by parentheses, which you can use around any pattern for clarity. The two explicit switch arms (32°F and 212°F) handle the cases for the melting point and the boiling point. Without those two arms, the compiler warns you that your logic doesn't cover every possible input.
 
-The preceding code also demonstrates another important feature the compiler provides for pattern matching expressions: The compiler warns you if you don't handle every input value. The compiler also issues a warning if a switch arm is already handled by a previous switch arm. That gives you freedom to refactor and reorder switch expressions. Another way to write the same expression could be:
+The preceding code also demonstrates another important feature the compiler provides for pattern matching expressions: The compiler warns you if you don't handle every input value. The compiler also issues a warning if the pattern for a switch arm is covered by a previous pattern. That gives you freedom to refactor and reorder switch expressions. Another way to write the same expression could be:
 
 :::code language="csharp" source="snippets/patterns/Simulation.cs" ID="RelationalPattern2":::
 
-The key lesson in this, and any other refactoring or reordering, is that the compiler validates that you've covered all inputs.
+The key lesson in the preceding sample, and any other refactoring or reordering, is that the compiler validates that your code handles all possible inputs.
 
 ## Multiple inputs
 
-All the patterns you've seen so far have been checking one input. You can write patterns that examine multiple properties of an object. Consider the following `Order` record:
+All the patterns covered so far have been checking one input. You can write patterns that examine multiple properties of an object. Consider the following `Order` record:
 
 :::code language="csharp" source="snippets/patterns/OrderProcessor.cs" ID="OrderRecord":::
 
@@ -77,6 +77,14 @@ The first two arms examine two properties of the `Order`. The third examines onl
 :::code language="csharp" source="snippets/patterns/OrderProcessor.cs" ID="DeconstructPattern":::
 
 The preceding code demonstrates the [*positional pattern*](../../language-reference/operators/patterns.md#positional-pattern) where the properties are deconstructed for the expression.
+
+You can also match a property against `{ }`, which matches any non-null value. Consider the following declaration, which stores measurements with an optional annotation:
+
+:::code language="csharp" source="snippets/patterns/Program.cs" ID="Observation":::
+
+You can test if a given observation has a non-null annotation using the following pattern matching expression:
+
+:::code language="csharp" source="snippets/patterns/Program.cs" ID="NotNullPropertyPattern":::
 
 ## List patterns
 
@@ -97,7 +105,7 @@ Consider the following excerpt from a text file containing bank transactions:
 04-15-2020, FEE,                                       5.55
 ```
 
-It's a CSV format, but some of the rows have more columns than others. Even worse for processing, one column in the `WITHDRAWAL` type has user-generated text and can contain a comma in the text. A *list pattern* that includes the *discard* pattern, *constant* pattern and *var* pattern to capture the value processes data in this format:
+It's a CSV format, but some of the rows have more columns than others. Even worse for processing, one column in the `WITHDRAWAL` type contains user-generated text and can contain a comma in the text. A *list pattern* that includes the *discard* pattern, *constant* pattern, and *var* pattern to capture the value processes data in this format:
 
 :::code language="csharp" source="snippets/patterns/ListPattern.cs" id="ListPattern":::
 
@@ -110,6 +118,6 @@ This article provided a tour of the kinds of code you can write with pattern mat
 ## See also
 
 - [Use pattern matching to avoid 'is' check followed by a cast (style rules IDE0020 and IDE0038)](../../../fundamentals/code-analysis/style-rules/ide0020-ide0038.md)
-- [Exploration: Use pattern matching to build your class behavior for better code](../../whats-new/tutorials/patterns-objects.md)
+- [Exploration: Use pattern matching to build your class behavior for better code](../../tutorials/patterns-objects.md)
 - [Tutorial: Use pattern matching to build type-driven and data-driven algorithms](../tutorials/pattern-matching.md)
 - [Reference: Pattern matching](../../language-reference/operators/patterns.md)

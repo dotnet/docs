@@ -13,6 +13,8 @@ ms.assetid: 26ada5af-175c-4576-931a-9f07fa1723e9
 ---
 # bindingFailure MDA
 
+[!INCLUDE [net-framework-specific](../includes/net-framework-specific.md)]
+
 The `bindingFailure` managed debugging assistant (MDA) is activated when an assembly fails to load.
 
 ## Symptoms

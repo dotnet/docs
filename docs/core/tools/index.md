@@ -3,16 +3,52 @@ title: .NET CLI
 titleSuffix: ""
 description: An overview of the .NET CLI and its features.
 ms.topic: overview
-ms.date: 12/14/2022
-ms.custom: devdivchpfy22
+ms.date: 04/02/2025
 ---
+
 # .NET CLI overview
 
 **This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
 The .NET command-line interface (CLI) is a cross-platform toolchain for developing, building, running, and publishing .NET applications.
 
-The .NET CLI is included with the [.NET SDK](../sdk.md). For more information about how to install the .NET SDK, see [Install .NET Core](../install/windows.md).
+The .NET CLI is included with the [.NET SDK](../sdk.md). For more information about how to install the .NET SDK, see [Install .NET](../install/windows.md). After installing the SDK, you can run CLI commands by opening a terminal and entering the commands at the terminal prompt.
+
+## Command structure
+
+CLI command structure consists of [the driver ("dotnet")](#driver), [the command](#command), and possibly command [arguments](#arguments) and [options](#options). You see this pattern in most CLI operations, such as creating a new console app, and running it from the command line. The following commands show when the console app was run from a directory named *my_app*:
+
+```dotnetcli
+dotnet new console
+dotnet build --output ./build_output
+dotnet ./build_output/my_app.dll
+```
+
+### Driver
+
+The driver is named [dotnet](dotnet.md) and has two responsibilities, either running a [framework-dependent app](../deploying/index.md) or executing a command.
+
+To run a framework-dependent app, specify the path to the app's .dll file after the driver without specifying a command, for example, `dotnet /path/to/my_app.dll`. When executing the command from the folder where the app's DLL resides, just execute `dotnet my_app.dll`. For more information, see the [dotnet command](dotnet.md).
+
+When you supply a command to the driver, `dotnet.exe` starts the CLI command execution process. For example:
+
+```dotnetcli
+dotnet build
+```
+
+First, the driver determines the version of the SDK to use. If there's no [global.json](global-json.md) file, the latest version of the SDK available is used. After the SDK version is determined, it executes the command.
+
+### Command
+
+The command performs an action. For example, `dotnet build` builds code. `dotnet publish` publishes code. See the [CLI commands](#cli-commands) section for a list of commands.
+
+### Arguments
+
+The arguments you pass on the command line are the arguments to the command invoked or to options specified with the command. For example, when you execute `dotnet publish my_app.csproj`, the `my_app.csproj` argument indicates the project to publish and is passed to the `publish` command.
+
+### Options
+
+The options you pass on the command line are the options to the command invoked. For example, when you execute `dotnet publish --output /build_output`, the `--output` option and its value provided by the `/build_output` argument are passed to the `publish` command.
 
 ## CLI commands
 
@@ -38,12 +74,13 @@ The following commands are installed by default:
 
 ### Project modification commands
 
-- [`add package`](dotnet-add-package.md)
-- [`add reference`](dotnet-add-reference.md)
-- [`remove package`](dotnet-remove-package.md)
-- [`remove reference`](dotnet-remove-reference.md)
-- [`list package`](dotnet-list-package.md)
-- [`list reference`](dotnet-list-reference.md)
+- [`package add`](dotnet-package-add.md)
+- [`package list`](dotnet-package-list.md)
+- [`package remove`](dotnet-package-remove.md)
+- [`package search`](dotnet-package-search.md)
+- [`reference add`](dotnet-reference-add.md)
+- [`reference list`](dotnet-reference-list.md)
+- [`reference remove`](dotnet-reference-remove.md)
 
 ### NuGet commands
 
@@ -59,10 +96,13 @@ The following commands are installed by default:
 - [`nuget verify`](dotnet-nuget-verify.md) (Available since .NET 5 SDK)
 - [`nuget trust`](dotnet-nuget-trust.md) (Available since .NET 5 SDK)
 - [`nuget sign`](dotnet-nuget-sign.md) (Available since .NET 6 SDK)
+- [`package search`](dotnet-package-search.md) (Available since .NET 8.0.2xx SDK)
+- [`nuget why`](dotnet-nuget-why.md) (Available since .NET 8.0.4xx SDK)
 
 ### Workload management commands
 
 - [`workload`](dotnet-workload.md) (Available since .NET 7 SDK)
+- [`workload config`](dotnet-workload-config.md) (Available since .NET 8.0.400 SDK)
 - [`workload install`](dotnet-workload-install.md) (Available since .NET 6 SDK)
 - [`workload list`](dotnet-workload-list.md) (Available since .NET 6 SDK)
 - [`workload update`](dotnet-workload-update.md) (Available since .NET 6 SDK)
@@ -90,42 +130,6 @@ The following commands are installed by default:
 - [`tool search`](dotnet-tool-search.md)
 
 Tools are console applications that are installed from NuGet packages and are invoked from the command prompt. You can write tools yourself or install tools written by third parties. Tools are also known as global tools, tool-path tools, and local tools. For more information, see [.NET tools overview](global-tools.md).
-
-## Command structure
-
-CLI command structure consists of [the driver ("dotnet")](#driver), [the command](#command), and possibly command [arguments](#arguments) and [options](#options). You see this pattern in most CLI operations, such as creating a new console app, and running it from the command line. The following commands show when the console app was run from a directory named *my_app*:
-
-```dotnetcli
-dotnet new console
-dotnet build --output ./build_output
-dotnet ./build_output/my_app.dll
-```
-
-### Driver
-
-The driver is named [dotnet](dotnet.md) and has two responsibilities, either running a [framework-dependent app](../deploying/index.md) or executing a command.
-
-To run a framework-dependent app, specify the app after the driver, for example, `dotnet /path/to/my_app.dll`. When executing the command from the folder where the app's DLL resides, just execute `dotnet my_app.dll`. If you want to use a specific version of the .NET runtime, use the `--fx-version <VERSION>` option. For more information, see the [dotnet command](dotnet.md).
-
-When you supply a command to the driver, `dotnet.exe` starts the CLI command execution process. For example:
-
-```dotnetcli
-dotnet build
-```
-
-First, the driver determines the version of the SDK to use. If there's no [global.json](global-json.md) file, the latest version of the SDK available is used. Depending on what is latest on the machine, the SDK's version might be either a preview or stable version. After the SDK version is determined, it executes the command.
-
-### Command
-
-The command performs an action. For example, `dotnet build` builds code. `dotnet publish` publishes code. The commands are implemented as a console application using a `dotnet {command}` convention.
-
-### Arguments
-
-The arguments you pass on the command line are the arguments to the command invoked. For example, when you execute `dotnet publish my_app.csproj`, the `my_app.csproj` argument indicates the project to publish and is passed to the `publish` command.
-
-### Options
-
-The options you pass on the command line are the options to the command invoked. For example, when you execute `dotnet publish --output /build_output`, the `--output` option and its value are passed to the `publish` command.
 
 ## See also
 

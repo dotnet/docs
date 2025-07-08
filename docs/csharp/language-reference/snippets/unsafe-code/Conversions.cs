@@ -20,7 +20,7 @@ public class ClassConvert
                 p++;
             }
             System.Console.WriteLine();
-            System.Console.WriteLine("The value of the integer: {0}", number);
+            System.Console.WriteLine($"The value of the integer: {number}");
 
             /* Output:
                 The 4 bytes of the integer: 00 04 00 00

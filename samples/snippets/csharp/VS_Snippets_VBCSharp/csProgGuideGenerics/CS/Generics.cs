@@ -392,6 +392,16 @@ namespace CsCsrefProgrammingGenerics
             void DoWork<T, U>() { }
             //</Snippet28>
         }
+
+        class Test3
+        {
+            //<Snippet29>
+            T[] Swap<T>(T a, T b)
+            {
+                return [b, a];
+            }
+            //</Snippet29>
+        }
     }
 
     //---------------------------------------------------------------------------
@@ -402,7 +412,7 @@ namespace CsCsrefProgrammingGenerics
         {
             static void Main()
             {
-                int[] arr = { 0, 1, 2, 3, 4 };
+                int[] arr = [0, 1, 2, 3, 4];
                 List<int> list = new List<int>();
 
                 for (int x = 5; x < 10; x++)

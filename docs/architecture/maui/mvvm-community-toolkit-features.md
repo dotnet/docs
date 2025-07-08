@@ -3,7 +3,7 @@ title: MVVM Toolkit Features
 description: Helper components to simplify app development and maintenance
 author: michaelstonis
 no-loc: [MAUI]
-ms.date: 03/10/2023
+ms.date: 05/30/2024
 ---
 
 # MVVM Toolkit Features
@@ -115,7 +115,7 @@ For more detailed information on implementing commands, see the section [Impleme
 
 ## Source Generators
 
-Using the MVVM Toolkit components out-of-the-box allows you to greatly simplify our ViewModel. The MVVM Toolkit allows you to simplify common code use cases even further by using [Source Generators](../../csharp/roslyn-sdk/source-generators-overview.md). The MVVM Toolkit source generators look for specific attributes in our code and can generate wrappers for properties and commands.
+Using the MVVM Toolkit components out-of-the-box allows you to greatly simplify our ViewModel. The MVVM Toolkit allows you to simplify common code use cases even further by using [Source Generators](../../csharp/roslyn-sdk/index.md#source-generators). The MVVM Toolkit source generators look for specific attributes in our code and can generate wrappers for properties and commands.
 
 > [!IMPORTANT]
 > The MVVM Toolkit Source Generators generate code that is additive to our existing objects. Because of this, any object that is leveraging a source generator will need to be marked as `partial`.

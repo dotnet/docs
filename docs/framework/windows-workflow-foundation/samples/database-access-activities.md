@@ -1,14 +1,13 @@
 ---
-description: "Learn more about: Database Access Activities"
+description: "Learn more about database access activities, which allow you to access a database within a workflow to retrieve or modify information."
 title: "Database Access Activities"
 ms.date: "03/30/2017"
-ms.assetid: 174a381e-1343-46a8-a62c-7c2ae2c4f0b2
 ---
-# Database Access Activities
+# Database access activities
 
 Database access activities allow you to access a database within a workflow. These activities allow accessing databases to retrieve or modify information and use [ADO.NET](../../data/adonet/index.md) to access the database.
 
-## Database Activities
+## Database activities
 
 The following sections detail the list of activities included in the [DbActivities sample](https://github.com/dotnet/samples/tree/main/framework/windows-workflow-foundation/scenario/ActivityLibrary/DbActivities/CS).
 
@@ -19,6 +18,8 @@ Executes a SQL query that produces a modification in the database (insert, updat
 This class performs its work asynchronously (it derives from <xref:System.Activities.AsyncCodeActivity> and uses its asynchronous capabilities).
 
 The connection information can be configured by setting a provider invariant name (`ProviderName`) and the connection string (`ConnectionString`) or just using a connection string configuration name (`ConfigFileSectionName`) from the application configuration file.
+
+[!INCLUDE [managed-identities](../../../includes/managed-identities.md)]
 
 The query to be executed is configured in its `Sql` property and the parameters are passed through the `Parameters` collection.
 
@@ -58,15 +59,17 @@ Public class DbUpdate: AsyncCodeActivity
 }
 ```
 
-|Argument|Description|
-|-|-|
-|ProviderName|ADO.NET provider invariant name. If this argument is set, then the `ConnectionString` must also be set.|
-|ConnectionString|Connection string to connect to the database. If this argument is set, then `ProviderName` must also be set.|
-|ConfigName|Name of the configuration file section where the connection information is stored. When this argument is set `ProviderName` and `ConnectionString` are not required.|
-|CommandType|Type of the <xref:System.Data.Common.DbCommand> to be executed.|
-|Sql|The SQL command to be executed.|
-|Parameters|Collection of the parameters of the SQL query.|
-|AffectedRecords|Number of records affected by the last operation.|
+| Argument         | Description                                                                                                  |
+|------------------|--------------------------------------------------------------------------------------------------------------|
+| ProviderName     | ADO.NET provider invariant name. If this argument is set, then the `ConnectionString` must also be set.      |
+| ConnectionString | Connection string to connect to the database. If this argument is set, then `ProviderName` must also be set. |
+| ConfigName       | Name of the configuration file section where the connection information is stored. When this argument is set `ProviderName` and `ConnectionString` are not required. |
+| CommandType      | Type of the <xref:System.Data.Common.DbCommand> to be executed.                                              |
+| Sql              | The SQL command to be executed.                                                                              |
+| Parameters       | Collection of the parameters of the SQL query.                                                               |
+| AffectedRecords  | Number of records affected by the last operation.                                                            |
+
+[!INCLUDE [managed-identities](../../../includes/managed-identities.md)]
 
 ## DbQueryScalar
 
@@ -75,6 +78,8 @@ Executes a query that retrieves a single value from the database.
 This class performs its work asynchronously (it derives from <xref:System.Activities.AsyncCodeActivity%601> and uses its asynchronous capabilities).
 
 The connection information can be configured by setting a provider invariant name (`ProviderName`) and the connection string (`ConnectionString`) or just using a connection string configuration name (`ConfigFileSectionName`) from the application configuration file.
+
+[!INCLUDE [managed-identities](../../../includes/managed-identities.md)]
 
 The query to be executed is configured in its `Sql` property and the parameters are passed through the `Parameters` collection.
 
@@ -112,21 +117,25 @@ public class DbQueryScalar<TResult> : AsyncCodeActivity<TResult>
 }
 ```
 
-|Argument|Description|
-|-|-|
-|ProviderName|ADO.NET provider invariant name. If this argument is set, then the `ConnectionString` must also be set.|
-|ConnectionString|Connection string to connect to the database. If this argument is set, then `ProviderName` must also be set.|
-|ConfigName|Name of the configuration file section where the connection information is stored. When this argument is set `ProviderName` and `ConnectionString` are not required.|
-|CommandType|Type of the <xref:System.Data.Common.DbCommand> to be executed.|
-|Sql|The SQL command to be executed.|
-|Parameters|Collection of the parameters of the SQL query.|
-|Result|Scalar that is obtained after the query is executed. This argument is of type `TResult`.|
+| Argument         | Description                                                                                                  |
+|------------------|--------------------------------------------------------------------------------------------------------------|
+| ProviderName     | ADO.NET provider invariant name. If this argument is set, then the `ConnectionString` must also be set.      |
+| ConnectionString | Connection string to connect to the database. If this argument is set, then `ProviderName` must also be set. |
+| CommandType      | Type of the <xref:System.Data.Common.DbCommand> to be executed.                                              |
+| ConfigName       | Name of the configuration file section where the connection information is stored. When this argument is set `ProviderName` and `ConnectionString` are not required. |
+| Sql              | The SQL command to be executed.                                                                              |
+| Parameters       | Collection of the parameters of the SQL query.                                                               |
+| Result           | Scalar that is obtained after the query is executed. This argument is of type `TResult`.                     |
+
+[!INCLUDE [managed-identities](../../../includes/managed-identities.md)]
 
 ## DbQuery
 
 Executes a query that retrieves a list of objects. After the query is executed, a mapping function is executed (it can be <xref:System.Func%601><`DbDataReader`, `TResult`> or an <xref:System.Activities.ActivityFunc%601><`DbDataReader`, `TResult`>). This mapping function gets a record in a `DbDataReader` and maps it to the object to be returned.
 
 The connection information can be configured by setting a provider invariant name (`ProviderName`) and the connection string (`ConnectionString`) or just using a connection string configuration name (`ConfigFileSectionName`) from the application configuration file.
+
+[!INCLUDE [managed-identities](../../../includes/managed-identities.md)]
 
 The query to be executed is configured in its `Sql` property and the parameters are passed through the `Parameters` collection.
 
@@ -172,23 +181,27 @@ public class DbQuery<TResult> : AsyncCodeActivity<IList<TResult>> where TResult 
 }
 ```
 
-|Argument|Description|
-|-|-|
-|ProviderName|ADO.NET provider invariant name. If this argument is set, then the `ConnectionString` must also be set.|
-|ConnectionString|Connection string to connect to the database. If this argument is set, then `ProviderName` must also be set.|
-|ConfigName|Name of the configuration file section where the connection information is stored. When this argument is set `ProviderName` and `ConnectionString` are not required.|
-|CommandType|Type of the <xref:System.Data.Common.DbCommand> to be executed.|
-|Sql|The SQL command to be executed.|
-|Parameters|Collection of the parameters of the SQL query.|
-|Mapper|Mapping function (<xref:System.Func%601><`DbDataReader`, `TResult`>) that takes a record in the `DataReader` obtained as result of executing the query and returns an instance of an object of type `TResult` to be added to the `Result` collection.<br /><br /> In this case, mapping is done in a single pulse of execution, but it cannot be authored declaratively using the designer.|
-|MapperFunc|Mapping function (<xref:System.Activities.ActivityFunc%601><`DbDataReader`, `TResult`>) that takes a record in the `DataReader` obtained as result of executing the query and returns an instance of an object of type `TResult` to be added to the `Result` collection.<br /><br /> In this case, the mapping is done in multiple pulses of execution. This function can be serialized to XAML and authored declaratively (any existing activity can participate in the mapping).|
-|Result|List of objects obtained as result of executing the query and executing the mapping function for each record in the `DataReader`.|
+| Argument         | Description                                                                                                  |
+|------------------|--------------------------------------------------------------------------------------------------------------|
+| ProviderName     | ADO.NET provider invariant name. If this argument is set, then the `ConnectionString` must also be set.      |
+| ConnectionString | Connection string to connect to the database. If this argument is set, then `ProviderName` must also be set. |
+| CommandType      | Type of the <xref:System.Data.Common.DbCommand> to be executed.                                              |
+| ConfigName       | Name of the configuration file section where the connection information is stored. When this argument is set `ProviderName` and `ConnectionString` are not required. |
+| Sql              | The SQL command to be executed.                                                                              |
+| Parameters       | Collection of the parameters of the SQL query.                                                               |
+| Mapper           | Mapping function (<xref:System.Func%601><`DbDataReader`, `TResult`>) that takes a record in the `DataReader` obtained as result of executing the query and returns an instance of an object of type `TResult` to be added to the `Result` collection.<br /><br /> In this case, mapping is done in a single pulse of execution, but it cannot be authored declaratively using the designer. |
+| MapperFunc       | Mapping function (<xref:System.Activities.ActivityFunc%601><`DbDataReader`, `TResult`>) that takes a record in the `DataReader` obtained as result of executing the query and returns an instance of an object of type `TResult` to be added to the `Result` collection.<br /><br /> In this case, the mapping is done in multiple pulses of execution. This function can be serialized to XAML and authored declaratively (any existing activity can participate in the mapping). |
+| Result           | List of objects obtained as result of executing the query and executing the mapping function for each record in the `DataReader`. |
+
+[!INCLUDE [managed-identities](../../../includes/managed-identities.md)]
 
 ## DbQueryDataSet
 
 Executes a query that returns a <xref:System.Data.DataSet>. This class performs its work asynchronously. It derives from <xref:System.Activities.AsyncCodeActivity><`TResult`> and uses its asynchronous capabilities.
 
 The connection information can be configured by setting a provider invariant name (`ProviderName`) and the connection string (`ConnectionString`) or just using a connection string configuration name (`ConfigFileSectionName`) from the application configuration file.
+
+[!INCLUDE [managed-identities](../../../includes/managed-identities.md)]
 
 The query to be executed is configured in its `Sql` property and the parameters are passed through the `Parameters` collection.
 
@@ -226,17 +239,19 @@ public class DbQueryDataSet : AsyncCodeActivity<DataSet>
 }
 ```
 
-|Argument|Description|
-|-|-|
-|ProviderName|ADO.NET provider invariant name. If this argument is set, then the `ConnectionString` must also be set.|
-|ConnectionString|Connection string to connect to the database. If this argument is set, then `ProviderName` must also be set.|
-|ConfigName|Name of the configuration file section where the connection information is stored. When this argument is set `ProviderName` and `ConnectionString` are not required.|
-|CommandType|Type of the <xref:System.Data.Common.DbCommand> to be executed.|
-|Sql|The SQL command to be executed.|
-|Parameters|Collection of the parameters of the SQL query.|
-|Result|<xref:System.Data.DataSet> that is obtained after the query is executed.|
+| Argument         | Description                                                                                                  |
+|------------------|--------------------------------------------------------------------------------------------------------------|
+| ProviderName     | ADO.NET provider invariant name. If this argument is set, then the `ConnectionString` must also be set.      |
+| ConnectionString | Connection string to connect to the database. If this argument is set, then `ProviderName` must also be set. |
+| ConfigName       | Name of the configuration file section where the connection information is stored. When this argument is set `ProviderName` and `ConnectionString` are not required. |
+| CommandType      | Type of the <xref:System.Data.Common.DbCommand> to be executed.                                              |
+| Sql              | The SQL command to be executed.                                                                              |
+| Parameters       | Collection of the parameters of the SQL query.                                                               |
+| Result           | <xref:System.Data.DataSet> that is obtained after the query is executed.                                     |
 
-## Configuring Connection Information
+[!INCLUDE [managed-identities](../../../includes/managed-identities.md)]
+
+## Configure connection information
 
 All DbActivities share the same configuration parameters. They can be configured in two ways:
 
@@ -263,7 +278,7 @@ All DbActivities share the same configuration parameters. They can be configured
     </connectionStrings>
   ```
 
-- In the activity:
+  In the activity:
 
   ```csharp
   Activity dbSelectCount = new DbQueryScalar<int>()
@@ -273,7 +288,9 @@ All DbActivities share the same configuration parameters. They can be configured
   };
   ```
 
-## Running this sample
+[!INCLUDE [managed-identities](../../../includes/managed-identities.md)]
+
+## Run this sample
 
 ### Setup instructions
 
@@ -282,40 +299,30 @@ This sample uses a database. A set-up and load script (Setup.cmd) is provided wi
 The Setup.cmd script invokes the CreateDb.sql script file, which contains SQL commands that do the following:
 
 - Creates a database called DbActivitiesSample.
-
 - Creates the Roles table.
-
 - Creates Employees table.
-
 - Inserts three records into the Roles table.
-
 - Inserts twelve records into the Employees table.
 
-##### To run Setup.cmd
+#### To run Setup.cmd
 
 1. Open a command prompt.
-
 2. Go to the DbActivities sample folder.
+3. Type "setup.cmd" and press <kbd>Enter</kbd>.
 
-3. Type "setup.cmd" and press ENTER.
+   > [!NOTE]
+   > Setup.cmd attempts to install the sample in your local machine SqlExpress instance. If you want to install it in other SQL server instance, edit Setup.cmd with the new instance name.
 
-    > [!NOTE]
-    > Setup.cmd attempts to install the sample in your local machine SqlExpress instance. If you want to install it in other SQL server instance, edit Setup.cmd with the new instance name.
+#### To run the sample
 
-##### To uninstall the sample database
+1. Open the solution in Visual Studio.
+2. To compile the solution, press Ctrl+Shift+B.
+3. To run the sample without debugging, press Ctrl+F5.
 
-1. Run Cleanup.cmd from the sample folder in a command prompt.
-
-##### To run the sample
-
-1. Open the solution in Visual Studio
-
-2. To compile the solution, press CTRL+SHIFT+B.
-
-3. To run the sample without debugging, press CTRL+F5.
+To uninstall the sample database, run Cleanup.cmd from the sample folder in a command prompt.
 
 > [!IMPORTANT]
-> The samples may already be installed on your machine. Check for the following (default) directory before continuing.
+> The samples might already be installed on your machine. Check for the following (default) directory before continuing.
 >
 > `<InstallDrive>:\WF_WCF_Samples`
 >

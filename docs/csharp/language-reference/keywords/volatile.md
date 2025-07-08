@@ -1,6 +1,6 @@
 ---
 description: "volatile - C# Reference"
-title: "volatile - C# Reference"
+title: "volatile keyword"
 ms.date: 10/24/2018
 f1_keywords: 
   - "volatile_CSharpKeyword"
@@ -48,8 +48,6 @@ With the `volatile` modifier added to the declaration of `_shouldStop` in place,
 ## See also
 
 - [C# language specification: volatile keyword](~/_csharpstandard/standard/classes.md#1554-volatile-fields)
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
 - [Modifiers](index.md)
 - [lock statement](../statements/lock.md)

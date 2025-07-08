@@ -43,17 +43,17 @@ System.Console.WriteLine(info)
   
 - For building new types at run time. Use classes in <xref:System.Reflection.Emit>.  
   
-- For performing late binding, accessing methods on types created at run time. See the topic [Dynamically Loading and Using Types](../../../framework/reflection-and-codedom/dynamically-loading-and-using-types.md).  
+- For performing late binding, accessing methods on types created at run time. See the topic [Dynamically Loading and Using Types](../../../fundamentals/reflection/dynamically-loading-and-using-types.md).  
   
 ## Related Sections  
 
  For more information:  
   
-- [Reflection](../../../framework/reflection-and-codedom/reflection.md)  
+- [Reflection](../../../fundamentals/reflection/reflection.md)  
   
-- [Viewing Type Information](../../../framework/reflection-and-codedom/viewing-type-information.md)  
+- [Viewing Type Information](../../../fundamentals/reflection/viewing-type-information.md)  
   
-- [Reflection and Generic Types](../../../framework/reflection-and-codedom/reflection-and-generic-types.md)  
+- [Reflection and Generic Types](../../../fundamentals/reflection/reflection-and-generic-types.md)  
   
 - <xref:System.Reflection.Emit>  
   

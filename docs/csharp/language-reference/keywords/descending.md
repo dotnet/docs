@@ -1,6 +1,6 @@
 ---
 description: "descending contextual keyword - C# Reference"
-title: "descending contextual keyword - C# Reference"
+title: "descending contextual keyword"
 ms.date: 07/20/2015
 f1_keywords: 
   - "descending"
@@ -21,6 +21,5 @@ The following example shows the use of `descending` in an [orderby clause](./ord
 
 ## See also
 
-- [C# Reference](../index.md)
 - [LINQ in C#](../../linq/index.md)
 - [ascending](./ascending.md)

@@ -1,15 +1,15 @@
 ---
-title: "Implicitly typed local variables - C# Programming Guide"
+title: "Implicitly typed local variables"
 description: The var keyword in C# instructs the compiler to infer the type of the variable from the expression on the right side of the initialization statement.
 ms.date: 07/20/2015
-helpviewer_keywords: 
+helpviewer_keywords:
   - "implicitly-typed local variables [C#]"
   - "var [C#]"
 ms.assetid: b9218fb2-ef5d-4814-8a8e-2bc29b0bbc9b
 ---
 # Implicitly typed local variables (C# Programming Guide)
 
-Local variables can be declared without giving an explicit type. The `var` keyword instructs the compiler to infer the type of the variable from the expression on the right side of the initialization statement. The inferred type may be a built-in type, an anonymous type, a user-defined type, or a type defined in the .NET class library. For more information about how to initialize arrays with `var`, see [Implicitly Typed Arrays](../arrays/implicitly-typed-arrays.md).
+Local variables can be declared without giving an explicit type. The `var` keyword instructs the compiler to infer the type of the variable from the expression on the right side of the initialization statement. The inferred type may be a built-in type, an anonymous type, a user-defined type, or a type defined in the .NET class library. For more information about how to initialize arrays with `var`, see [Implicitly Typed Arrays](../../language-reference/builtin-types/arrays.md#implicitly-typed-arrays).
 
 The following examples show various ways in which local variables can be declared with `var`:
 
@@ -87,8 +87,8 @@ The use of `var` helps simplify your code, but its use should be restricted to c
 
 ## See also
 
-- [C# Reference](../../language-reference/index.md)
-- [Implicitly Typed Arrays](../arrays/implicitly-typed-arrays.md)
+- [C# Reference](../../language-reference/index.yml)
+- [Implicitly Typed Arrays](../../language-reference/builtin-types/arrays.md#implicitly-typed-arrays)
 - [How to use implicitly typed local variables and arrays in a query expression](how-to-use-implicitly-typed-local-variables-and-arrays-in-a-query-expression.md)
 - [Anonymous Types](../../fundamentals/types/anonymous-types.md)
 - [Object and Collection Initializers](object-and-collection-initializers.md)
@@ -96,4 +96,4 @@ The use of `var` helps simplify your code, but its use should be restricted to c
 - [LINQ in C#](../../linq/index.md)
 - [LINQ (Language-Integrated Query)](../../linq/index.md)
 - [Iteration statements](../../language-reference/statements/iteration-statements.md)
-- [using statement](../../language-reference/statements/using.md)
+- [`using` statement](../../language-reference/statements/using.md)

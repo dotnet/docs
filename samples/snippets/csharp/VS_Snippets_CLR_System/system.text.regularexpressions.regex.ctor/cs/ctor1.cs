@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.ComponentModel;
 using System.Diagnostics;
@@ -23,7 +23,7 @@ public class Example
 
         foreach (var inputValue in inputs)
         {
-            Console.WriteLine("Processing {0}", inputValue);
+            Console.WriteLine($"Processing {inputValue}");
             bool timedOut = false;
             do
             {
@@ -56,14 +56,12 @@ public class Example
                     TimeSpan timeout = e.MatchTimeout.Add(TimeSpan.FromSeconds(1));
                     if (timeout.TotalSeconds > MaxTimeoutInSeconds)
                     {
-                        Console.WriteLine("Maximum timeout interval of {0} seconds exceeded.",
-                                          MaxTimeoutInSeconds);
+                        Console.WriteLine($"Maximum timeout interval of {MaxTimeoutInSeconds} seconds exceeded.");
                         timedOut = false;
                     }
                     else
                     {
-                        Console.WriteLine("Changing the timeout interval to {0}",
-                                          timeout);
+                        Console.WriteLine($"Changing the timeout interval to {timeout}");
                         rgx = new Regex(pattern, RegexOptions.IgnoreCase, timeout);
                         timedOut = true;
                     }

@@ -2,45 +2,45 @@
 description: "Learn more about: ICorDebugValue2 Interface"
 title: "ICorDebugValue2 Interface"
 ms.date: "03/30/2017"
-api_name: 
+api_name:
   - "ICorDebugValue2"
-api_location: 
+api_location:
   - "mscordbi.dll"
-api_type: 
+api_type:
   - "COM"
-f1_keywords: 
+f1_keywords:
   - "ICorDebugValue2"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "ICorDebugValue2 interface [.NET Framework debugging]"
 ms.assetid: 3ff2ad2a-da5a-461b-8627-1a8eba49df9c
-topic_type: 
+topic_type:
   - "apiref"
 ---
 # ICorDebugValue2 Interface
 
-Extends the "ICorDebugValue" interface to provide support for "ICorDebugType" objects.  
-  
-## Methods  
-  
-|Method|Description|  
-|------------|-----------------|  
-|[GetExactType Method](icordebugvalue2-getexacttype-method.md)|Gets an interface pointer to an `ICorDebugType` object that represents the <xref:System.Type> of this value.|  
-  
-## Remarks  
-  
-> [!NOTE]
-> This interface does not support being called remotely, either cross-machine or cross-process.  
-  
-## Requirements  
+Extends the "ICorDebugValue" interface to provide support for "ICorDebugType" objects.
 
- **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
-  
- **Header:** CorDebug.idl, CorDebug.h  
-  
- **Library:** CorGuids.lib  
-  
- **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
-  
+## Methods
+
+|Method|Description|
+|------------|-----------------|
+|[GetExactType Method](icordebugvalue2-getexacttype-method.md)|Gets an interface pointer to an `ICorDebugType` object that represents the <xref:System.Type> of this value.|
+
+## Remarks
+
+> [!NOTE]
+> This interface does not support being called remotely, either cross-machine or cross-process.
+
+## Requirements
+
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).
+
+ **Header:** CorDebug.idl, CorDebug.h
+
+ **Library:** CorGuids.lib
+
+ **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]
+
 ## See also
 
 - [Debugging Interfaces](debugging-interfaces.md)

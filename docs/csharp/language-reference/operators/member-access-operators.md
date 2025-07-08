@@ -1,7 +1,7 @@
 ---
 title: "Member access and null-conditional operators and expressions:"
 description: "C# operators that you use to access type members or null-conditionally access type members. These operators include the dot operator - `.`, indexers - `[`, `]`, `^` and `..`, and invocation - `(`, `)`."
-ms.date: 11/28/2022
+ms.date: 05/29/2025
 author: pkulikov
 f1_keywords:
   - "._CSharpKeyword"
@@ -35,7 +35,7 @@ helpviewer_keywords:
 ---
 # Member access operators and expressions - the dot, indexer, and invocation operators.
 
-You use several operators and expressions to access a type member. These operators include member access (`.`), array element or indexer access (`[]`), index-from-end (`^`), range (`..`), null-conditional operators (`?.` and `?[]`), and method invocation (`()`). These include the *null-conditional* member access (`?.`), and indexer access (`?[]`) operators.
+You use several operators and expressions to access a type member. Member access operators include member access (`.`), array element, or indexer access (`[]`), index-from-end (`^`), range (`..`), null-conditional operators (`?.` and `?[]`), and method invocation (`()`). These operators include the *null-conditional* member access (`?.`), and indexer access (`?[]`) operators.
 
 - [`.` (member access)](#member-access-expression-): to access a member of a namespace or a type
 - [`[]` (array element or indexer access)](#indexer-operator-): to access an array element or a type indexer
@@ -58,7 +58,7 @@ You use the `.` token to access a member of a namespace or a type, as the follow
 
   Use a [`using` directive](../keywords/using-directive.md) to make the use of qualified names optional.
 
-- Use `.` to access [type members](../../fundamentals/object-oriented/index.md#members), static and non-static, as the following code shows:
+- Use `.` to access [type members](../../fundamentals/object-oriented/index.md#members), static and nonstatic, as the following code shows:
 
  :::code language="csharp" source="snippets/shared/MemberAccessOperators.cs" id="TypeMemberAccess" interactive="try-dotnet-method":::
 
@@ -66,7 +66,7 @@ You can also use `.` to access an [extension method](../../programming-guide/cla
 
 ## Indexer operator []
 
-Square brackets, `[]`, are typically used for array, indexer, or pointer element access.
+Square brackets, `[]`, are typically used for array, indexer, or pointer element access. Beginning with C# 12, `[]` encloses a [collection expression](./collection-expressions.md).
 
 ### Array access
 
@@ -78,7 +78,7 @@ If an array index is outside the bounds of the corresponding dimension of an arr
 
 As the preceding example shows, you also use square brackets when you declare an array type or instantiate an array instance.
 
-For more information about arrays, see [Arrays](../../programming-guide/arrays/index.md).
+For more information about arrays, see [Arrays](../builtin-types/arrays.md).
 
 ### Indexer access
 
@@ -92,7 +92,7 @@ For more information about indexers, see [Indexers](../../programming-guide/inde
 
 ### Other usages of []
 
-For information about pointer element access, see the [Pointer element access operator []](pointer-related-operators.md#pointer-element-access-operator-) section of the [Pointer related operators](pointer-related-operators.md) article.
+For information about pointer element access, see the [Pointer element access operator []](pointer-related-operators.md#pointer-element-access-operator-) section of the [Pointer related operators](pointer-related-operators.md) article. For information about collection expressions, see the [collection expressions](./collection-expressions.md) article.
 
 You also use square brackets to specify [attributes](/dotnet/csharp/advanced-topics/reflection-and-attributes):
 
@@ -101,9 +101,16 @@ You also use square brackets to specify [attributes](/dotnet/csharp/advanced-top
 void TraceMethod() {}
 ```
 
+Additionally, square brackets can be used to designate [list patterns](../../fundamentals/functional/pattern-matching.md) for use in pattern matching or testing.
+
+```csharp
+arr is ([1, 2, ..])
+//Specifies that an array starts with (1, 2)
+```
+
 ## Null-conditional operators `?.` and `?[]`
 
-A null-conditional operator applies a [member access](#member-access-expression-) (`?.`) or [element access](#indexer-operator-) (`?[]`) operation to its operand only if that operand evaluates to non-null; otherwise, it returns `null`. That is:
+A null-conditional operator applies a [member access](#member-access-expression-) (`?.`) or [element access](#indexer-operator-) (`?[]`) operation to its operand only if that operand evaluates to non-null; otherwise, it returns `null`. In other words:
 
 - If `a` evaluates to `null`, the result of `a?.x` or `a?[x]` is `null`.
 - If `a` evaluates to non-null, the result of `a?.x` or `a?[x]` is the same as the result of `a.x` or `a[x]`, respectively.
@@ -131,7 +138,7 @@ The following examples demonstrate the usage of the `?.` and `?[]` operators:
 :::code language="csharp" source="snippets/shared/MemberAccessOperators.cs" id="SnippetNullConditional" interactive="try-dotnet-method":::
 :::code language="csharp" source="snippets/shared/MemberAccessOperators2.cs" interactive="try-dotnet":::
 
-The first of the preceding two examples also uses the [null-coalescing operator `??`](null-coalescing-operator.md) to specify an alternative expression to evaluate in case the result of a null-conditional operation is `null`.
+The first preceding example also uses the [null-coalescing operator `??`](null-coalescing-operator.md) to specify an alternative expression to evaluate in case the result of a null-conditional operation is `null`.
 
 If `a.x` or `a[x]` is of a non-nullable value type `T`, `a?.x` or `a?[x]` is of the corresponding [nullable value type](../builtin-types/nullable-value-types.md) `T?`. If you need an expression of type `T`, apply the null-coalescing operator `??` to a null-conditional expression, as the following example shows:
 
@@ -140,9 +147,23 @@ If `a.x` or `a[x]` is of a non-nullable value type `T`, `a?.x` or `a?[x]` is of 
 In the preceding example, if you don't use the `??` operator, `numbers?.Length < 2` evaluates to `false` when `numbers` is `null`.
 
 > [!NOTE]
-> The `?.` operator evaluates its left-hand operand no more than once, guaranteeing that it cannot be changed to `null` after being verified as non-null.
+> The `?.` operator evaluates its left-hand operand no more than once, guaranteeing that it can't be changed to `null` after being verified as non-null.
 
-The null-conditional member access operator `?.` is also known as the Elvis operator.
+Beginning in C# 14, assignment is permissible with a null conditional access expression (`?.` and `?[]`) on reference types. For example, see the following method:
+
+:::code language="csharp" source="snippets/shared/NullCoalescingOperator.cs" id="NullForgivingAssignment":::
+
+The preceding example shows assignment to a property and an indexed element on a reference type that might be null. An important behavior for this assignment is that the expression on the right-hand side of the `=` is evaluated only when the left-hand side is known to be non-null. For example, in the following code, the function `GenerateNextIndex` is called only when the `values` array isn't null. If the `values` array is null, `GenerateNextIndex` isn't called:
+
+:::code language="csharp" source="snippets/shared/NullCoalescingOperator.cs" id="NullForgivingAssignment":::
+
+In other words, the preceding code is equivalent to the following code using an `if` statement for the null check:
+
+:::code language="csharp" source="snippets/shared/NullCoalescingOperator.cs" id="EquivalentIfStatement":::
+
+In addition to assignment, any form of [compound assignment](./assignment-operator.md#compound-assignment), such as `+=` or `-=`, are allowed. However, increment (`++`) and decrement (`--`) aren't allowed.
+
+This enhancement doesn't classify a null conditional expression as a variable. It can't be `ref` assigned, nor can it be assigned to a `ref` variable or passed to a method as a `ref` or `out` argument.
 
 ### Thread-safe delegate invocation
 
@@ -168,7 +189,7 @@ The preceding example is a thread-safe way to ensure that only a non-null `handl
 
 Use parentheses, `()`, to call a [method](../../programming-guide/classes-and-structs/methods.md) or invoke a [delegate](../../programming-guide/delegates/index.md).
 
-The following example demonstrates how to call a method, with or without arguments, and invoke a delegate:
+The following code demonstrates how to call a method, with or without arguments, and invoke a delegate:
 
 :::code language="csharp" source="snippets/shared/MemberAccessOperators.cs" id="Invocation" interactive="try-dotnet-method":::
 
@@ -182,6 +203,11 @@ You also use parentheses to adjust the order in which to evaluate operations in 
 
 ## Index from end operator ^
 
+Index and range operators can be used with a type that is *countable*. A *countable* type is a type that has an `int` property named either `Count` or `Length` with an accessible `get` accessor. [Collection expressions](./collection-expressions.md) also rely on *countable* types.
+
+> [!NOTE]
+> Single dimensional arrays are *countable*. Multi-dimensional arrays aren't. The `^` and `..` (range) operators can't be used in multi-dimensional arrays.
+
 The `^` operator indicates the element position from the end of a sequence. For a sequence of length `length`, `^n` points to the element with offset `length - n` from the start of a sequence. For example, `^1` points to the last element of a sequence and `^length` points to the first element of a sequence.
 
 :::code language="csharp" source="snippets/shared/MemberAccessOperators.cs" id="IndexFromEnd":::
@@ -190,9 +216,11 @@ As the preceding example shows, expression `^e` is of the <xref:System.Index?dis
 
 You can also use the `^` operator with the [range operator](#range-operator-) to create a range of indices. For more information, see [Indices and ranges](../../tutorials/ranges-indexes.md).
 
+Beginning with C# 13, the Index from the end operator can be used in an object initializer.
+
 ## Range operator `..`
 
-The `..` operator specifies the start and end of a range of indices as its operands. The left-hand operand is an *inclusive* start of a range. The right-hand operand is an *exclusive* end of a range. Either of operands can be an index from the start or from the end of a sequence, as the following example shows:
+The `..` operator specifies the start and end of a range of indices as its operands. The left-hand operand is an *inclusive* start of a range. The right-hand operand is an *exclusive* end of a range. Either of the operands can be an index from the start or from the end of a sequence, as the following example shows:
 
 :::code language="csharp" source="snippets/shared/MemberAccessOperators.cs" id="Ranges":::
 
@@ -228,6 +256,8 @@ The following example demonstrates the effect of using all the ranges presented 
 
 For more information, see [Indices and ranges](../../tutorials/ranges-indexes.md).
 
+The `..` token is also used for the [spread element](./collection-expressions.md#spread-element) in a collection expression.
+
 ## Operator overloadability
 
 The `.`, `()`, `^`, and `..` operators can't be overloaded. The `[]` operator is also considered a non-overloadable operator. Use [indexers](../../programming-guide/indexers/index.md) to support indexing with user-defined types.
@@ -237,9 +267,9 @@ The `.`, `()`, `^`, and `..` operators can't be overloaded. The `[]` operator is
 For more information, see the following sections of the [C# language specification](~/_csharpstandard/standard/README.md):
 
 - [Member access](~/_csharpstandard/standard/expressions.md#1287-member-access)
-- [Element access](~/_csharpstandard/standard/expressions.md#12811-element-access)
+- [Element access](~/_csharpstandard/standard/expressions.md#12812-element-access)
 - [Null-conditional member access](~/_csharpstandard/standard/expressions.md#1288-null-conditional-member-access)
-- [Invocation expressions](~/_csharpstandard/standard/expressions.md#1289-invocation-expressions)
+- [Invocation expressions](~/_csharpstandard/standard/expressions.md#12810-invocation-expressions)
 
 For more information about indices and ranges, see the [feature proposal note](~/_csharplang/proposals/csharp-8.0/ranges.md).
 
@@ -248,7 +278,6 @@ For more information about indices and ranges, see the [feature proposal note](~
 - [Use index operator (style rule IDE0056)](../../../fundamentals/code-analysis/style-rules/ide0056.md)
 - [Use range operator (style rule IDE0057)](../../../fundamentals/code-analysis/style-rules/ide0057.md)
 - [Use conditional delegate call (style rule IDE1005)](../../../fundamentals/code-analysis/style-rules/ide1005.md)
-- [C# reference](../index.md)
 - [C# operators and expressions](index.md)
 - [?? (null-coalescing operator)](null-coalescing-operator.md)
 - [:: operator](namespace-alias-qualifier.md)

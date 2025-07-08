@@ -2,10 +2,10 @@
 description: "Learn more about: How to: Resolve ambiguous times"
 title: "How to: Resolve ambiguous times"
 ms.date: "04/10/2017"
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "time zones [.NET], ambiguous time"
   - "ambiguous time [.NET]"
 ms.topic: how-to
@@ -32,7 +32,7 @@ This topic shows how to resolve an ambiguous time by assuming that it represents
 
 The following example illustrates how to convert an ambiguous time to UTC by assuming that it represents the local time zone's standard time.
 
-[!code-csharp[System.TimeZone2.Concepts#10](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.TimeZone2.Concepts/CS/TimeZone2Concepts.cs#10)]
+[!code-csharp[System.TimeZone2.Concepts#10](./snippets/timezone-concepts/TimeZone2Concepts.cs#10)]
 [!code-vb[System.TimeZone2.Concepts#10](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.TimeZone2.Concepts/VB/TimeZone2Concepts.vb#10)]
 
 The example consists of a method named `ResolveAmbiguousTime` that determines whether the <xref:System.DateTime> value passed to it is ambiguous. If the value is ambiguous, the method returns a <xref:System.DateTime> value that represents the corresponding UTC time. The method handles this conversion by subtracting the value of the local time zone's <xref:System.TimeZoneInfo.BaseUtcOffset%2A> property from the local time.
@@ -40,12 +40,6 @@ The example consists of a method named `ResolveAmbiguousTime` that determines wh
 Ordinarily, an ambiguous time is handled by calling the <xref:System.TimeZoneInfo.GetAmbiguousTimeOffsets%2A> method to retrieve an array of <xref:System.TimeSpan> objects that contain the ambiguous time's possible UTC offsets. However, this example makes the arbitrary assumption that an ambiguous time should always be mapped to the time zone's standard time. The <xref:System.TimeZoneInfo.BaseUtcOffset%2A> property returns the offset between UTC and a time zone's standard time.
 
 In this example, all references to the local time zone are made through the <xref:System.TimeZoneInfo.Local%2A?displayProperty=nameWithType> property; the local time zone is never assigned to an object variable. This is a recommended practice because a call to the <xref:System.TimeZoneInfo.ClearCachedData%2A?displayProperty=nameWithType> method invalidates any objects that the local time zone is assigned to.
-
-## Compiling the code
-
-This example requires:
-
-- That the <xref:System> namespace be imported with the `using` statement (required in C# code).
 
 ## See also
 

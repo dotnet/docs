@@ -2,6 +2,8 @@
 title: SYSLIB0006 warning
 description: Learn about the obsoletions that generate compile-time warning SYSLIB0006.
 ms.date: 10/20/2020
+f1_keywords:
+  - syslib0006
 ---
 # SYSLIB0006: Thread.Abort is not supported
 

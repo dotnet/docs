@@ -1,8 +1,8 @@
 ---
 title: Key Azure Services for .NET developers
 description: Azure has over 100 services, but this article focuses on the ~8 or so services used by .NET developers most frequently
-ms.date: 03/23/2023
-ms.topic: conceptual
+ms.date: 08/15/2024
+ms.topic: concept-article
 ms.custom: devx-track-dotnet, engagement-fy23
 ---
 
@@ -12,6 +12,7 @@ While Azure contains over 100 services, the following Azure services are the ser
 
 | Icon | Service | Description |
 |:----:|:--------|:------------|
+| ![Azure AI Services Icon](./media/cognitive-services.svg) | **Azure AI Services**   | Azure AI Services are a collection of cloud-based services that allow you to add AI based capabilities to your application.  Examples include Azure OpenAI, Azure Vision, Azure Speech, Azure Language, and Azure Translator. |
 | ![App Service Icon](./media/app-services.svg) | **Azure App Service** | Azure App Service is a fully managed platform for hosting web applications and APIs in Azure.  It features automatic load balancing and auto-scaling in a highly available environment.  You pay only for the compute resources you use and free tiers are available. |
 | ![Container Apps Icon](./media/container-apps.svg) | **Azure Container Apps** | Azure Container Apps are fully managed environments that enable you to run microservices and containerized applications on a serverless platform. Applications built on Container Apps provide scalability, resiliency, and other advantages of complex container orchestrators while leaving behind many of the complexities.  |
 | ![Azure Functions Icon](./media/azure-functions.svg) | **Azure Functions** | Azure Functions is a serverless compute service that lets you write small, discrete segments of code that can be executed in a scalable and cost-effective manner, all without managing any servers or runtimes.  Functions can be invoked by a variety of different events and easily integrate with other Azure services through the use of input and output bindings.        |
@@ -20,10 +21,9 @@ While Azure contains over 100 services, the following Azure services are the ser
 | ![Azure Storage Blobs Icon](./media/storage-blobs.svg) | **Azure Blob Storage**   | Azure Blob Storage allows your applications to store and retrieve files in the cloud.  Azure Storage is highly scalable to store massive amounts of data and data is stored redundantly to ensure high availability. |
 | ![Azure Service Bus Icon](./media/service-bus.svg) | **Azure Service Bus**   | Azure Service Bus is a fully managed enterprise message broker supporting both point to point and publish-subscribe integrations.  It is ideal for building decoupled applications, queue based load leveling, or facilitating communication between microservices.   |
 | ![Azure Key Vault Icon](./media/azure-key-vault.svg) | **Azure Key Vault**   | Every application has application secrets like connection strings and API keys it must store.  Azure Key Vault helps you store and access those secrets securely, in an encrypted vault with restricted access to make sure your secrets and your application are not compromised.   |
-| ![Cognitive Services Icon](./media/cognitive-services.svg) | **Cognitive Services**   | Azure Cognitive Services are a collection of cloud-based services that allow you to add AI based capabilities to your application.  Examples include computer vision, speech recognition, language understanding, and anomaly detection. |
 
-For the full list of Azure products and services, visit the [Azure documentation home page](/azure/?product=all)
+For the full list of Azure products and services, visit the [Azure documentation home page](/azure/?product=all).
 
-### Next steps
+## Next steps
 
-Start configuring your Azure development environment by [Creating an Azure Account](create-azure-account.md)
+Start configuring your Azure development environment by [Creating an Azure Account](create-azure-account.md).

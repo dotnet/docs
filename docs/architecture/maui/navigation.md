@@ -3,7 +3,7 @@ title: Navigation
 description: Managing Navigation in a .NET MAUI Application
 author: michaelstonis
 no-loc: [MAUI]
-ms.date: 07/01/2022
+ms.date: 05/30/2024
 ---
 
 # Navigation
@@ -30,7 +30,7 @@ Navigation logic can reside in a view's code-behind or a data-bound view-model. 
 
 A navigation service is typically invoked from view-models, in order to promote testability. However, navigating to views from view-models would require the view-models to reference views, and particularly views that the active view-model isn't associated with, which is not recommended. Therefore, the `MauiNavigationService` presented here specifies the view-model type as the target to navigate to.
 
-The eShopOnContainers multi-platform app uses the `MauiNavigationService` class to provide view-model-first navigation. This class implements the `INavigationService` interface, which is shown in the following code example:
+The eShop multi-platform app uses the `MauiNavigationService` class to provide view-model-first navigation. This class implements the `INavigationService` interface, which is shown in the following code example:
 
 ```csharp
 public interface INavigationService
@@ -52,14 +52,14 @@ This interface specifies that an implementing class must provide the following m
 | `PopAsync` | Removes the current page from the navigation stack. |
 
 > [!NOTE]
-> An `INavigationService` interface would usually also specify a `GoBackAsync` method, which is used to programmatically return to the previous page in the navigation stack. However, this method is missing from the eShopOnContainers multi-platform app because it's not required.
+> An `INavigationService` interface would usually also specify a `GoBackAsync` method, which is used to programmatically return to the previous page in the navigation stack. However, this method is missing from the eShop multi-platform app because it's not required.
 
 ## Creating the MauiNavigationService instance
 
 The `MauiNavigationService` class, which implements the `INavigationService` interface, is registered as a singleton with the dependency injection container in the `MauiProgram.CreateMauiApp()` method, as demonstrated in the following code example:
 
 ```csharp
-mauiAppBuilder.Services.AddSingleton<INavigationService, MauiNavigationService>();;
+mauiAppBuilder.Services.AddSingleton<INavigationService, MauiNavigationService>();
 ```
 
 The `INavigationService` interface can then be resolved by adding it to the constructor of our views and view-models, as demonstrated in the following code example:
@@ -74,7 +74,7 @@ The `ViewModelBase` class stores the `MauiNavigationService` instance in a `Navi
 
 ## Handling navigation requests
 
-.NET MAUI provides multiple ways to navigate within an application. The traditional way to navigate is with the `NavigationPage` class, which implements a hierarchical navigation experience in which the user can navigate through pages, forward and backward, as desired. The eShopOnContainers app uses the `Shell` component as the root container for the application and as a navigation host. For more information about Shell navigation, see [Shell Navigation](/dotnet/maui/fundamentals/shell/navigation) on the Microsoft Developer Center.
+.NET MAUI provides multiple ways to navigate within an application. The traditional way to navigate is with the `NavigationPage` class, which implements a hierarchical navigation experience in which the user can navigate through pages, forward and backward, as desired. The eShop app uses the `Shell` component as the root container for the application and as a navigation host. For more information about Shell navigation, see [Shell Navigation](/dotnet/maui/fundamentals/shell/navigation) on the Microsoft Developer Center.
 
 Navigation is performed inside view-model classes by invoking one of the `NavigateToAsync` methods, specifying the route path for the page being navigated to, as demonstrated in the following code example:
 
@@ -97,7 +97,7 @@ public Task NavigateToAsync(string route, IDictionary<string, object> routeParam
 The .NET MAUI `Shell` control is already familiar with route-based navigation, so the `NavigateToAsync` method works to mask this functionality. The `NavigateToAsync` method allows navigation data to be specified as an argument that's passed to the view-model being navigated to, where it's typically used to perform initialization. For more information, see [Passing parameters during navigation](#passing-parameters-during-navigation).
 
 > [!IMPORTANT]
-> There are multiple ways to perform navigation in .NET MAUI. The `MauiNavigationService` is specifically build to work with `Shell`. If you are using a `NavigationPage` or `TabbedPAge` or a different navigation mechanism, this routing service would have to be updated to work using those components.
+> There are multiple ways to perform navigation in .NET MAUI. The `MauiNavigationService` is specifically build to work with `Shell`. If you are using a `NavigationPage` or `TabbedPage` or a different navigation mechanism, this routing service would have to be updated to work using those components.
 
 In order to register routes for the `MauiNavigationService` we need to supply route information from XAML or in the code-behind. The following example shows registration of routes via XAML.
 
@@ -106,8 +106,8 @@ In order to register routes for the `MauiNavigationService` we need to supply ro
 <Shell
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:views="clr-namespace:eShopOnContainers.Views"
-    x:Class="eShopOnContainers.AppShell">
+    xmlns:views="clr-namespace:eShop.Views"
+    x:Class="eShop.AppShell">
 
     <!-- Omitted for brevity -->
 

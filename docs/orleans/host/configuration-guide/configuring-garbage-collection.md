@@ -1,16 +1,17 @@
 ---
 title: Configure .NET garbage collection
 description: Learn how to configure .NET garbage collection in .NET Orleans.
-ms.date: 03/16/2022
+ms.date: 05/23/2025
+ms.topic: how-to
 ---
 
 # Configure .NET garbage collection
 
-For good performance, it is important to configure .NET garbage collection for the silo process the correct way. The best combination of settings based on the team's findings is to set `gcServer=true` and `gcConcurrent=true`. You can configure these values in the C# project (_.csproj_), or an _app.config_. For more information, see [Flavors of garbage collection](../../../core/runtime-config/garbage-collector.md#flavors-of-garbage-collection).
+For good performance, it's important to configure .NET garbage collection correctly for the silo process. Based on the team's findings, the best combination of settings is `gcServer=true` and `gcConcurrent=true`. You can configure these values in your C# project (_.csproj_) or an _app.config_ file. For more information, see [Flavors of garbage collection](../../../core/runtime-config/garbage-collector.md#flavors-of-garbage-collection).
 
 ## .NET Core and .NET 5+
 
-This method is not supported with SDK style projects compiling against the full .NET Framework
+This method isn't supported for SDK-style projects compiling against the full .NET Framework.
 
 ```xml
 <PropertyGroup>
@@ -21,7 +22,7 @@ This method is not supported with SDK style projects compiling against the full 
 
 ## .NET Framework
 
-SDK style projects compiling against the full .NET Framework should still use this configuration style, consider an example _app.config_ XML file:
+SDK-style projects compiling against the full .NET Framework should still use this configuration style. Consider an example _app.config_ XML file:
 
 ``` xml
 <configuration>
@@ -32,7 +33,7 @@ SDK style projects compiling against the full .NET Framework should still use th
 </configuration>
 ```
 
-However, this is not as easy to do if a silo runs as part of an Azure Worker Role, which by default is configured to use workstation GC. There's a relevant blog post that discusses how to set the same configuration for an Azure Worker Role, see [Server garbage collection mode in Azure](/archive/blogs/cclayton/server-garbage-collection-mode-in-microsoft-azure).
+However, this isn't as easy if a silo runs as part of an Azure Worker Role, which defaults to using workstation GC. A relevant blog post discusses how to set the same configuration for an Azure Worker Role; see [Server garbage collection mode in Azure](/archive/blogs/cclayton/server-garbage-collection-mode-in-microsoft-azure).
 
 > [!IMPORTANT]
-> Server garbage collection is available only on multiprocessor computers. Therefore, even if you configure the garbage collection either via application _.csproj_ file or via the scripts on the referred blog post, if the silo is running on a (virtual) machine with a single-core, you will not get the benefits of `gcServer=true`. For more information, see [GCSettings.IsServerGC remarks](/dotnet/api/system.runtime.gcsettings.isservergc#remarks).
+> Server garbage collection is available only on multiprocessor computers. Therefore, even if you configure garbage collection via the application _.csproj_ file or the scripts in the referred blog post, you won't get the benefits of `gcServer=true` if the silo runs on a (virtual) machine with a single core. For more information, see [GCSettings.IsServerGC remarks](/dotnet/api/system.runtime.gcsettings.isservergc#remarks).

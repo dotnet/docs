@@ -1,5 +1,5 @@
 ---
-title: "Expression-bodied members - C# Programming Guide"
+title: "Expression-bodied members"
 description: Learn about expression-bodied members. See code examples that use expression body definition for properties, constructors, finalizers, and more.
 ms.date: 02/06/2019
 helpviewer_keywords:
@@ -29,9 +29,9 @@ Expression body definitions can be used with the following type members:
 
 An expression-bodied method consists of a single expression that returns a value whose type matches the method's return type, or, for methods that return `void`, that performs some operation. For example, types that override the <xref:System.Object.ToString%2A> method typically include a single expression that returns the string representation of the current object.
 
-The following example defines a `Person` class that overrides the <xref:System.Object.ToString%2A> method with an expression body definition. It also defines a `DisplayName` method that displays a name to the console. The `return` keyword is not used in the `ToString` expression body definition.
+The following example defines a `Person` class that overrides the <xref:System.Object.ToString%2A> method with an expression body definition. It also defines a `DisplayName` method that displays a name to the console. Additionally, it includes several methods that take parameters, demonstrating how expression-bodied members work with method parameters. The `return` keyword is not used in any of the expression body definitions.
 
-[!code-csharp[expression-bodied-methods](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/expr-bodied-methods.cs)]
+[!code-csharp[expression-bodied-methods](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/ExpressionBodiedMembers/expr-bodied-methods.cs)]
 
 For more information, see [Methods (C# Programming Guide)](../classes-and-structs/methods.md).
 
@@ -45,7 +45,7 @@ PropertyType PropertyName => expression;
 
 The following example defines a `Location` class whose read-only `Name` property is implemented as an expression body definition that returns the value of the private `locationName` field:
 
-[!code-csharp[expression-bodied-read-only-property](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/expr-bodied-readonly.cs#1)]
+[!code-csharp[expression-bodied-read-only-property](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/ExpressionBodiedMembers/expr-bodied-readonly.cs#1)]
 
 For more information about properties, see [Properties (C# Programming Guide)](../classes-and-structs/properties.md).
 
@@ -53,17 +53,25 @@ For more information about properties, see [Properties (C# Programming Guide)](.
 
 You can use expression body definitions to implement property `get` and `set` accessors. The following example demonstrates how to do that:
 
-[!code-csharp[expression-bodied-property-get-set](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/expr-bodied-ctor.cs#1)]
+[!code-csharp[expression-bodied-property-get-set](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/ExpressionBodiedMembers/expr-bodied-ctor.cs#1)]
 
 For more information about properties, see [Properties (C# Programming Guide)](../classes-and-structs/properties.md).
+
+## Events
+
+Similarly, event `add` and `remove` accessors can be expression-bodied:
+
+[!code-csharp[expression-bodied-event-add-remove](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/ExpressionBodiedMembers/expr-bodied-event.cs#1)]
+
+For more information about events, see [Events (C# Programming Guide)](../events/index.md).
 
 ## Constructors
 
 An expression body definition for a constructor typically consists of a single assignment expression or a method call that handles the constructor's arguments or initializes instance state.
 
-The following example defines a `Location` class whose constructor has a single string parameter named *name*. The expression body definition assigns the argument to the `Name` property.
+The following example defines a `Location` class whose constructor has a single string parameter named *name*. The expression body definition assigns the argument to the `Name` property. The example also shows a `Point` class with constructors that take multiple parameters, demonstrating how expression-bodied constructors work with different parameter combinations.
 
-[!code-csharp[expression-bodied-constructor](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/expr-bodied-ctor.cs#1)]
+[!code-csharp[expression-bodied-constructor](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/ExpressionBodiedMembers/expr-bodied-ctor.cs#1)]
 
 For more information, see [Constructors (C# Programming Guide)](../classes-and-structs/constructors.md).
 
@@ -83,7 +91,7 @@ Like with properties, indexer `get` and `set` accessors consist of expression bo
 
 The following example defines a class named `Sports` that includes an internal <xref:System.String> array that contains the names of some sports. Both the indexer `get` and `set` accessors are implemented as expression body definitions.
 
-[!code-csharp[expression-bodied-indexer](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/expr-bodied-indexers.cs#1)]
+[!code-csharp[expression-bodied-indexer](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/ExpressionBodiedMembers/expr-bodied-indexers.cs#1)]
 
 For more information, see [Indexers (C# Programming Guide)](../indexers/index.md).
 

@@ -45,7 +45,7 @@ In general, you shouldn't uninstall versions of .NET Framework that are installe
 
 - If an app that you use depends on a specific version of .NET Framework, that app may break if that version is removed.
 
-- Some versions of .NET Framework are in-place updates to earlier versions. For example, .NET Framework 3.5 is an in-place update to version 2.0, and .NET Framework 4.8 is an in-place update to versions 4 through 4.7.2. For more information, see [.NET Framework Versions and Dependencies](../migration-guide/versions-and-dependencies.md).
+- Some versions of .NET Framework are in-place updates to earlier versions. For example, .NET Framework 3.5 is an in-place update to version 2.0, and .NET Framework 4.8 is an in-place update to versions 4 through 4.7.2. For more information, see [.NET Framework Versions and Dependencies](../install/versions-and-dependencies.md).
 
 On Windows versions before Windows 8, if you do choose to remove .NET Framework, always use **Programs and Features** from Control Panel to uninstall it. Never remove a version of .NET Framework manually. On Windows 8 and above, .NET Framework is an operating system component and cannot be independently uninstalled.
 
@@ -57,7 +57,7 @@ If you're a developer, choose any programming language that supports .NET Framew
 
 To develop .NET Framework apps or components, do the following:
 
-1. If it's not preinstalled on your operating system, install the version of .NET Framework that your app will target. The current versions are .NET Framework 4.8 and .NET Framework 4.8.1. .NET Framework 4.8.1 is [available for download](../install/guide-for-developers.md) on the latest versions of Windows and Windows Server. .NET Framework 4.8 is preinstalled on Windows 10 May 2019 Update, Windows 10 November 2019 Update, Windows 10 May 2020 Update, and Windows 10 October 2020 Update, and it's available for download on earlier versions of the Windows operating system. For .NET Framework system requirements, see [System Requirements](system-requirements.md). For information on installing other versions of .NET Framework, see [Installation Guide](../install/guide-for-developers.md). Additional .NET Framework packages are released out of band, which means that they're released on a rolling basis outside of any regular or scheduled release cycle. For information about these packages, see [.NET Framework and Out-of-Band Releases](the-net-framework-and-out-of-band-releases.md).
+1. If it's not preinstalled on your operating system, install the version of .NET Framework that your app will target. The current versions are .NET Framework 4.8 and .NET Framework 4.8.1. .NET Framework 4.8.1 is [available for download](../install/guide-for-developers.md) on the latest versions of Windows and Windows Server. .NET Framework 4.8 is preinstalled on Windows 10 May 2019 Update, Windows 10 November 2019 Update, Windows 10 May 2020 Update, and Windows 10 October 2020 Update, and it's available for download on earlier versions of the Windows operating system. For .NET Framework system requirements, see [System Requirements](system-requirements.md). For information on installing other versions of .NET Framework, see [Installation Guide](../install/guide-for-developers.md). Additional .NET Framework packages are released out of band, which means that they're released on a rolling basis outside of any regular or scheduled release cycle. For information about these packages, see [.NET Framework and Out-of-Band Releases](out-of-band-releases.md).
 
 2. Select the language or languages supported by the .NET Framework version that you intend to use to develop your apps. A number of languages are available, including [Visual Basic](../../visual-basic/index.yml), [C#](../../csharp/index.yml), [F#](../../fsharp/index.yml), and [C++/CLI](/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp) from Microsoft. (A programming language that allows you to develop apps for .NET Framework adheres to the [Common Language Infrastructure (CLI) specification](https://visualstudio.microsoft.com/license-terms/ecma-c-common-language-infrastructure-standards/).)
 
@@ -67,14 +67,14 @@ For more information on developing apps that target .NET Framework, see the [Dev
 
 ## Related articles
 
-| Title | Description |
-| ----- |------------ |
-| [Overview](overview.md) | Provides detailed information for developers who build apps that target .NET Framework. |
-| [Installation guide](../install/index.md) | Provides information about installing .NET Framework. |
-| [.NET Framework and Out-of-Band Releases](the-net-framework-and-out-of-band-releases.md) | Describes the .NET Framework out-of-band releases and how to use them in your app. |
+| Title                                     | Description                                                                             |
+|-------------------------------------------|-----------------------------------------------------------------------------------------|
+| [Overview](overview.md)                   | Provides detailed information for developers who build apps that target .NET Framework. |
+| [Installation guide](../install/index.md) | Provides information about installing .NET Framework.                                   |
+| [.NET Framework and Out-of-Band Releases](out-of-band-releases.md) | Describes the .NET Framework out-of-band releases and how to use them in your app. |
 | [System Requirements](system-requirements.md) | Lists the hardware and software requirements for running .NET Framework. |
 | [.NET Core documentation](../../core/introduction.md) | Provides the conceptual and API reference documentation for .NET Core. |
-| [.NET Standard](../../standard/net-standard.md) | Discusses .NET Standard, a versioned specification that individual .NET implementations support to guarantee that a consistent set of APIs is available on multiple platforms.
+| [.NET Standard](../../standard/net-standard.md) | Discusses .NET Standard, a versioned specification that individual .NET implementations support to guarantee that a consistent set of APIs is available on multiple platforms. |
 
 ## See also
 

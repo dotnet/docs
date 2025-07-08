@@ -30,7 +30,7 @@ Assemblies have the following properties:
 
 - Assemblies are only loaded into memory if they're required. If they aren't used, they aren't loaded. Therefore, assemblies can be an efficient way to manage resources in larger projects.
 
-- You can programmatically obtain information about an assembly by using reflection. For more information, see [Reflection (C#)](/dotnet/csharp/advanced-topics/reflection-and-attributes/) or [Reflection (Visual Basic)](../../visual-basic/programming-guide/concepts/reflection.md).
+- You can programmatically obtain information about an assembly by using reflection. For more information, see [Reflection (C#)](../../csharp/advanced-topics/reflection-and-attributes/index.md) or [Reflection (Visual Basic)](../../visual-basic/programming-guide/concepts/reflection.md).
 
 - You can load an assembly just to inspect it by using the <xref:System.Reflection.MetadataLoadContext> class on .NET and .NET Framework. <xref:System.Reflection.MetadataLoadContext> replaces the <xref:System.Reflection.Assembly.ReflectionOnlyLoad%2A?displayProperty=nameWithType> methods.
 
@@ -46,7 +46,7 @@ An assembly defines the following information:
 
 - The **type boundary**. Every type's identity includes the name of the assembly in which it resides. A type called `MyType` that's loaded in the scope of one assembly isn't the same as a type called `MyType` that's loaded in the scope of another assembly.
 
-- The **reference-scope boundary**: The [assembly manifest](#assembly-manifest) has metadata that's used for resolving types and satisfying resource requests. The manifest specifies the types and resources to expose outside the assembly and enumerates other assemblies on which it depends. Microsoft intermediate language (MSIL) code in a portable executable (PE) file won't be executed unless it has an associated [assembly manifest](#assembly-manifest).
+- The **reference-scope boundary**: The [assembly manifest](#assembly-manifest) has metadata that's used for resolving types and satisfying resource requests. The manifest specifies the types and resources to expose outside the assembly and enumerates other assemblies on which it depends. Common intermediate language (CIL) code in a portable executable (PE) file won't be executed unless it has an associated [assembly manifest](#assembly-manifest).
 
 - The **version boundary**. The assembly is the smallest versionable unit in the common language runtime. All types and resources in the same assembly are versioned as a unit. The [assembly manifest](#assembly-manifest) describes the version dependencies you specify for any dependent assemblies. For more information about versioning, see [Assembly versioning](versioning.md).
 
@@ -101,7 +101,7 @@ In C#, you can use two versions of the same assembly in a single application. Fo
 |[Assembly versioning](versioning.md)|Overview of the .NET Framework versioning policy.|
 |[Assembly placement](../../framework/app-domains/assembly-placement.md)|Where to locate assemblies.|
 |[Assemblies and side-by-side execution](side-by-side-execution.md)|Use multiple versions of the runtime or an assembly simultaneously.|
-|[Emit dynamic methods and assemblies](../../framework/reflection-and-codedom/emitting-dynamic-methods-and-assemblies.md)|How to create dynamic assemblies.|
+|[Emit dynamic methods and assemblies](../../fundamentals/reflection/emitting-dynamic-methods-and-assemblies.md)|How to create dynamic assemblies.|
 |[How the runtime locates assemblies](../../framework/deployment/how-the-runtime-locates-assemblies.md)|How the .NET Framework resolves assembly references at run time.|
 
 ## Reference

@@ -47,3 +47,23 @@ class MainClass
 }
 // Output: My Point: x=2, y=3
 //</snippet15>
+
+// <SnippetDerivedInterfaces>
+public interface I1
+{
+    void M1();
+}
+
+public interface I2 : I1
+{
+    void M2();
+}
+
+public class C : I2
+{
+    // implements I1.M1
+    public void M1() { }
+    // implements I2.M2
+    public void M2() { }
+}
+// </SnippetDerivedInterfaces>

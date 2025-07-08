@@ -29,7 +29,7 @@ class Program
             "https://learn.microsoft.com/system-center",
             "https://learn.microsoft.com/visualstudio",
             "https://learn.microsoft.com/windows",
-            "https://learn.microsoft.com/xamarin"
+            "https://learn.microsoft.com/maui"
     };
 
     static async Task Main()
@@ -59,7 +59,7 @@ class Program
                 await sumPageSizesTask;
                 Console.WriteLine("Download task completed before cancel request was processed.");
             }
-            catch (TaskCanceledException)
+            catch (OperationCanceledException)
             {
                 Console.WriteLine("Download task has been cancelled.");
             }

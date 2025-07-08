@@ -1,8 +1,7 @@
-﻿Imports System.Diagnostics
-Imports System.IO
+﻿Imports System.IO
 Imports System.Reflection
 
-Public Module Example
+Public Module Example2
 
     Public Sub Main(args() As String)
         Console.WriteLine($"Current directory is '{Environment.CurrentDirectory}'")

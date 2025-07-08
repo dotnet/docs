@@ -37,7 +37,7 @@ Adds a filter to a listener in the `Listeners` collection for a trace.
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|`type`|Required attribute.<br /><br /> Specifies the type of the filter, which should inherit from the <xref:System.Diagnostics.TraceFilter> class. You can use the namespace-qualified name of the type, which corresponds to the type's <xref:System.Type.FullName%2A> property, or you can use the fully qualified type name including the assembly information, which corresponds to the <xref:System.Type.AssemblyQualifiedName%2A> property. For information about fully qualified type names, see [Specifying Fully Qualified Type Names](../../../reflection-and-codedom/specifying-fully-qualified-type-names.md).|  
+|`type`|Required attribute.<br /><br /> Specifies the type of the filter, which should inherit from the <xref:System.Diagnostics.TraceFilter> class. You can use the namespace-qualified name of the type, which corresponds to the type's <xref:System.Type.FullName%2A> property, or you can use the fully qualified type name including the assembly information, which corresponds to the <xref:System.Type.AssemblyQualifiedName%2A> property. For information about fully qualified type names, see [Specifying Fully Qualified Type Names](../../../../fundamentals/reflection/specifying-fully-qualified-type-names.md).|  
 |`initializeData`|Optional attribute.<br /><br /> The string passed to the constructor for the specified filter class.|  
   
 ### Child Elements  

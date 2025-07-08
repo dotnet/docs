@@ -8,63 +8,48 @@ metadata:
   title: .NET application architecture documentation
   description: Learn recommended practices for architecting, building, and migrating .NET apps.
   ms.topic: hub-page
-  ms.date: 01/06/2023
-  ms.product: dotnet
+  ms.date: 12/14/2023
+  ms.service: dotnet
   ms.collection: collection
+
+# highlightedContent section (optional)
+# Maximum of 8 items
+highlightedContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+  items:
+    - title: ".NET Microservices: Architecture for containerized .NET apps"
+      itemType: architecture
+      url: microservices/index.md
+    - title: Blazor for ASP.NET Web Forms developers
+      itemType: architecture
+      url: blazor-for-web-forms-developers/index.md
+    - title: Architecting cloud-native .NET apps for Azure
+      itemType: architecture
+      url: cloud-native/index.md
+    - title: Architect modern web apps with ASP.NET Core and Azure
+      itemType: architecture
+      url: modern-web-apps-azure/index.md
+    - title: Enterprise Application Patterns Using .NET MAUI
+      itemType: architecture
+      url: maui/index.md
 
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
-    - title: Develop ASP.NET Core apps
-      links:
-          - text: Architect modern web apps with ASP.NET Core and Azure
-            itemType: architecture
-            url: modern-web-apps-azure/index.md
-          - text: Blazor for ASP.NET Web Forms developers
-            itemType: architecture
-            url: blazor-for-web-forms-developers/index.md
-          - text: ASP.NET Core gRPC for WCF developers
-            itemType: architecture
-            url: grpc-for-wcf-developers/index.md
-          - text: Porting existing ASP.NET apps to .NET 6
-            itemType: architecture
-            url: porting-existing-aspnet-apps/index.md
-
     - title: Migrate .NET apps to Azure
       links:
-          - text: Modernize existing .NET apps with Azure cloud and Windows containers
-            itemType: architecture
-            url: modernize-with-azure-containers/index.md
           - text: Migrate your .NET app to Azure
             itemType: get-started
             url: https://dotnet.microsoft.com/apps/cloud/migrate-to-azure
 
     - title: Develop mobile and desktop apps
       links:
-          - text: Modernizing desktop apps on Windows with .NET 6
-            itemType: architecture
-            url: modernize-desktop/index.md
-          - text: Enterprise Application Patterns Using .NET MAUI
-            itemType: architecture
-            url: maui/index.md
           - text: Build mobile and desktop apps with .NET MAUI
             itemType: learn
             url: /training/paths/build-apps-with-dotnet-maui
 
     - title: Develop cloud-native .NET apps for Azure
       links:
-          - text: Architecting cloud-native .NET apps for Azure
-            itemType: architecture
-            url: cloud-native/index.md
-          - text: "Serverless apps: Architecture, patterns, and Azure implementation"
-            itemType: architecture
-            url: serverless/index.md
-          - text: ".NET Microservices: Architecture for containerized .NET applications"
-            itemType: architecture
-            url: microservices/index.md
-          - text: Dapr for .NET Developers
-            itemType: architecture
-            url: dapr-for-net-developers/index.md
           - text: Hello World Microservice tutorial
             itemType: learn
             url: https://dotnet.microsoft.com/learn/aspnet/microservice-tutorial/intro
@@ -77,15 +62,6 @@ conceptualContent:
           - text: Implement resiliency in a cloud-native ASP.NET Core microservice
             itemType: learn
             url: /training/modules/microservices-resiliency-aspnet-core
-
-    - title: Learn about DevOps for .NET
-      links:
-          - text: Containerized Docker application lifecycle with Microsoft platform and tools
-            itemType: architecture
-            url: containerized-lifecycle/index.md
-          - text: DevOps for ASP.NET Core Developers
-            itemType: architecture
-            url: devops-for-aspnet-developers/index.md
 
     - title: Design guidelines
       links:

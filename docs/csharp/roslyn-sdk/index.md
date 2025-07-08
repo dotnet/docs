@@ -1,10 +1,9 @@
 ---
 title: The .NET Compiler Platform SDK (Roslyn APIs)
 description: Learn to use the .NET Compiler Platform SDK (also called the Roslyn APIs) to understand .NET code, spot errors, and fix those errors.
-ms.date: 10/10/2017
+ms.date: 10/25/2024
 ms.custom: mvc
 ---
-
 # The .NET Compiler Platform SDK
 
 Compilers build a detailed model of application code as they validate the
@@ -118,6 +117,14 @@ by developers using Visual Studio. Newcomers to the language and the platform
 learn accepted practices quickly and become productive earlier in their .NET
 journey. As these become more widely used, the community adopts these
 practices.
+
+## Source generators
+
+Source generators aim to enable *compile time metaprogramming*, that is, code that can be created
+at compile time and added to the compilation. Source generators are able to read the contents of
+the compilation before running, as well as access any *additional files*. This ability enables them to
+introspect both user C# code and generator-specific files. You can learn how to build incremental
+source generators using the [source generator cookbook](https://github.com/dotnet/roslyn/blob/main/docs/features/incremental-generators.cookbook.md).
 
 ## Next steps
 

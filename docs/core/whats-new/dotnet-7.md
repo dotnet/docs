@@ -2,7 +2,7 @@
 title: What's new in .NET 7
 description: Learn about the new features introduced in .NET 7.
 ms.date: 11/08/2022
-ms.topic: overview
+ms.topic: whats-new
 ms.author: gewarren
 author: gewarren
 ---
@@ -12,8 +12,6 @@ author: gewarren
 
 This article lists the new features of .NET 7 and provides links to more detailed information on each.
 
-To find all the .NET articles that have been updated for .NET 7, see [.NET docs: What's new for the .NET 7 release](../../whats-new/dotnet-7-docs.md).
-
 ## Performance
 
 Performance is a key focus of .NET 7, and all of its features are designed with performance in mind. In addition, .NET 7 includes the following enhancements aimed purely at performance:
@@ -21,7 +19,7 @@ Performance is a key focus of .NET 7, and all of its features are designed with 
 - On-stack replacement (OSR) is a complement to tiered compilation. It allows the runtime to change the code executed by a currently running method in the middle of its execution (that is, while it's "on stack"). Long-running methods can switch to more optimized versions mid-execution.
 - Profile-guided optimization (PGO) now works with OSR and is easier to enable (by adding `<TieredPGO>true</TieredPGO>` to your project file). PGO can also instrument and optimize additional things, such as delegates.
 - Improved code generation for Arm64.
-- [Native AOT](../deploying/native-aot/index.md) produces a standalone executable in the target platform's file format with no external dependencies. It's entirely native, with no [IL or JIT](../introduction.md#compilation), and provides fast startup time and a small, self-contained deployment. In .NET 7, Native AOT focuses on console apps and requires apps to be trimmed.
+- [Native AOT](../deploying/native-aot/index.md) produces a standalone executable in the target platform's file format with no external dependencies. It's entirely native, with no IL or JIT, and provides fast startup time and a small, self-contained deployment. In .NET 7, Native AOT focuses on console apps and requires apps to be trimmed.
 - Performance improvements to the Mono runtime, which powers Blazor WebAssembly, Android, and iOS apps.
 
 For a detailed look at many of the performance-focused features that make .NET 7 so fast, see the [Performance improvements in .NET 7](https://devblogs.microsoft.com/dotnet/performance_improvements_in_net_7/) blog post.
@@ -111,7 +109,7 @@ For more information, see the [.NET 7 Preview 6](https://devblogs.microsoft.com/
 
 ### Publish to a container
 
-Containers are one of the easiest ways to distribute and run a wide variety of applications and services in the cloud. Container images are now a supported output type of the .NET SDK, and you can create containerized versions of your applications using [`dotnet publish`](../tools/dotnet-publish.md). For more information about the feature, see [Announcing built-in container support for the .NET SDK](https://devblogs.microsoft.com/dotnet/announcing-builtin-container-support-for-the-dotnet-sdk/). For a tutorial, see [Containerize a .NET app with dotnet publish](../docker/publish-as-container.md).
+Containers are one of the easiest ways to distribute and run a wide variety of applications and services in the cloud. Container images are now a supported output type of the .NET SDK, and you can create containerized versions of your applications using [`dotnet publish`](../tools/dotnet-publish.md). For more information about the feature, see [Announcing built-in container support for the .NET SDK](https://devblogs.microsoft.com/dotnet/announcing-builtin-container-support-for-the-dotnet-sdk/). For a tutorial, see [Containerize a .NET app with dotnet publish](../containers/sdk-publish.md).
 
 ### Central package management
 

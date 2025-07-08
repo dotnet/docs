@@ -2,6 +2,8 @@
 title: SYSLIB0015 warning
 description: Learn about the obsoletion of DisablePrivateReflectionAttribute that generates compile-time warning SYSLIB0015.
 ms.date: 04/24/2021
+f1_keywords:
+  - syslib0015
 ---
 # SYSLIB0015: DisablePrivateReflectionAttribute is obsolete
 

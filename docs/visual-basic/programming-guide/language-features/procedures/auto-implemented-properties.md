@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Auto-Implemented Properties (Visual Basic)"
-title: "Auto-Implemented Properties"
+description: "Learn more about: Automatically implemented properties (Visual Basic)"
+title: "Automatically implemented properties"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.AutoProperty"
@@ -10,19 +10,19 @@ helpviewer_keywords:
   - "auto-implemented properties [Visual Basic]"
 ms.assetid: 5c669f0b-cf95-4b4e-ae84-9cc55212ca87
 ---
-# Auto-Implemented Properties (Visual Basic)
+# Automatically implemented properties (Visual Basic)
 
-*Auto-implemented properties* enable you to quickly specify a property of a class without having to write code to `Get` and `Set` the property. When you write code for an auto-implemented property, the Visual Basic compiler automatically creates a private field to store the property variable in addition to creating the associated `Get` and `Set` procedures.  
+*Automatically implemented properties* enable you to quickly specify a property of a class without having to write code to `Get` and `Set` the property. When you write code for an automatically implemented property, the Visual Basic compiler automatically creates a private field to store the property variable in addition to creating the associated `Get` and `Set` procedures.  
   
- With auto-implemented properties, a property, including a default value, can be declared in a single line. The following example shows three property declarations.  
+ With automatically implemented properties, a property, including a default value, can be declared in a single line. The following example shows three property declarations.  
   
  [!code-vb[VbVbalrAutoImplementedProperties#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/vbvbalrautoimplementedproperties/vb/module1.vb#1)]  
   
- An auto-implemented property is equivalent to a property for which the property value is stored in a private field. The following code example shows an auto-implemented property.  
+ An automatically implemented property is equivalent to a property for which the property value is stored in a private field. The following code example shows an automatically implemented property.  
   
  [!code-vb[VbVbalrAutoImplementedProperties#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/vbvbalrautoimplementedproperties/vb/module1.vb#5)]  
   
- The following code example shows the equivalent code for the previous auto-implemented property example.  
+ The following code example shows the equivalent code for the previous automatically implemented property example.  
   
  [!code-vb[VbVbalrAutoImplementedProperties#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/vbvbalrautoimplementedproperties/vb/module1.vb#2)]  
   
@@ -44,7 +44,7 @@ End Class
   
 ## Backing Field  
 
- When you declare an auto-implemented property, Visual Basic automatically creates a hidden private field called the *backing field* to contain the property value. The backing field name is the auto-implemented property name preceded by an underscore (_). For example, if you declare an auto-implemented property named `ID`, the backing field is named `_ID`. If you include a member of your class that is also named `_ID`, you produce a naming conflict and Visual Basic reports a compiler error.  
+ When you declare an automatically implemented property, Visual Basic automatically creates a hidden private field called the *backing field* to contain the property value. The backing field name is the automatically implemented property name preceded by an underscore (_). For example, if you declare an automatically implemented property named `ID`, the backing field is named `_ID`. If you include a member of your class that is also named `_ID`, you produce a naming conflict and Visual Basic reports a compiler error.  
   
  The backing field also has the following characteristics:  
   
@@ -56,23 +56,23 @@ End Class
   
 - The backing field can be accessed from code within the class and from debugging tools such as the Watch window. However, the backing field does not show in an IntelliSense word completion list.  
   
-## Initializing an Auto-Implemented Property  
+## Initializing an automatically implemented property  
 
- Any expression that can be used to initialize a field is valid for initializing an auto-implemented property. When you initialize an auto-implemented property, the expression is evaluated and passed to the `Set` procedure for the property. The following code examples show some auto-implemented properties that include initial values.  
+ Any expression that can be used to initialize a field is valid for initializing an automatically implemented property. When you initialize an automatically implemented property, the expression is evaluated and passed to the `Set` procedure for the property. The following code examples show some automatically implemented properties that include initial values.  
   
  [!code-vb[VbVbalrAutoImplementedProperties#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/vbvbalrautoimplementedproperties/vb/module1.vb#3)]  
   
- You cannot initialize an auto-implemented property that is a member of an `Interface`, or one that is marked `MustOverride`.  
+ You cannot initialize an automatically implemented property that is a member of an `Interface`, or one that is marked `MustOverride`.  
   
- When you declare an auto-implemented property as a member of a `Structure`, you can only initialize the auto-implemented property if it is marked as `Shared`.  
+ When you declare an automatically implemented property as a member of a `Structure`, you can only initialize the automatically implemented property if it is marked as `Shared`.  
   
- When you declare an auto-implemented property as an array, you cannot specify explicit array bounds. However, you can supply a value by using an array initializer, as shown in the following examples.  
+ When you declare an automatically implemented property as an array, you cannot specify explicit array bounds. However, you can supply a value by using an array initializer, as shown in the following examples.  
   
  [!code-vb[VbVbalrAutoImplementedProperties#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/vbvbalrautoimplementedproperties/vb/module1.vb#4)]  
   
 ## Property Definitions That Require Standard Syntax  
 
- Auto-implemented properties are convenient and support many programming scenarios. However, there are situations in which you cannot use an auto-implemented property and must instead use standard, or *expanded*, property syntax.  
+ Automatically implemented properties are convenient and support many programming scenarios. However, there are situations in which you cannot use an automatically implemented property and must instead use standard, or *expanded*, property syntax.  
   
  You have to use expanded property-definition syntax if you want to do any one of the following:  
   
@@ -88,9 +88,9 @@ End Class
   
 - Provide XML comments for the backing field.  
   
-## Expanding an Auto-Implemented Property  
+## Expanding an automatically implemented property  
 
- If you have to convert an auto-implemented property to an expanded property that contains a `Get` or `Set` procedure, the Visual Basic Code Editor can automatically generate the `Get` and `Set` procedures and `End Property` statement for the property. The code is generated if you put the cursor on a blank line following the `Property` statement, type a `G` (for `Get`) or an `S` (for `Set`) and press ENTER. The Visual Basic Code Editor automatically generates the `Get` or `Set` procedure for read-only and write-only properties when you press ENTER at the end of a `Property` statement.  
+ If you have to convert an automatically implemented property to an expanded property that contains a `Get` or `Set` procedure, the Visual Basic Code Editor can automatically generate the `Get` and `Set` procedures and `End Property` statement for the property. The code is generated if you put the cursor on a blank line following the `Property` statement, type a `G` (for `Get`) or an `S` (for `Set`) and press ENTER. The Visual Basic Code Editor automatically generates the `Get` or `Set` procedure for read-only and write-only properties when you press ENTER at the end of a `Property` statement.  
   
 ## See also
 

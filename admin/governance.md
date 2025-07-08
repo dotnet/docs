@@ -52,7 +52,7 @@ You can see the full details on configured GitHub actions in our [README.MD](htt
 
 ## :ledger: Labels for reporting
 
-- `*/tech`, `*/prod`: These labels provide 1st and 2nd level organization to our content.
+- `*/subsvc`, `*/svc`: These labels provide 1st and 2nd level organization to our content.
 - `doc-*`, `product-*`: These provide classifications for what kind of issue is it.
 - `okr-*`: These map to our internal OKR system.
 
@@ -61,4 +61,4 @@ You can see the full details on configured GitHub actions in our [README.MD](htt
 We're assigning values to the following additional properties using the new GitHub project system.
 
 - *Size*: The relative size of work required.
-- *Priority*: The relative priority of this issue. This should map to the `Pri?` labels.
+- *Priority*: The relative priority of this issue.

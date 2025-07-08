@@ -27,10 +27,10 @@ Mage [commands] [commandOptions]
 
 The following table shows the commands supported by *Mage.exe*. For more information about the options supported by these commands, see [New and Update command options](#new-and-update-command-options) and [Sign command options](#sign-command-options).
 
-|Command|Description|
-|-------------|-----------------|
+| Command | Description |
+|---------|-------------|
 |**-cc, ClearApplicationCache**|Clears the downloaded application cache of all online-only applications.|
-|**-n, -New** *fileType [newOptions]*|Creates a new file of the given type. Valid types are:<br /><br /> -   `Deployment`: Creates a new deployment manifest.<br />-   `Application`: Creates a new application manifest.<br /><br /> If you do not specify any additional parameters with this command, it will create a file of the appropriate type, with appropriate default tags and attribute values.<br /><br /> Use the **-ToFile** option (see in the following table) to specify the file name and path of the new file.<br /><br /> Use the **-FromDirectory** option (see in the following table) to create an application manifest with all of the assemblies for an application added to the \<dependency> section of the manifest.|
+|**-n, -New** *fileType [newOptions]*|Creates a new file of the given type. Valid types are:<br /><br /> - `Deployment`: Creates a new deployment manifest.<br />- `Application`: Creates a new application manifest.<br /><br /> If you do not specify any additional parameters with this command, it will create a file of the appropriate type, with appropriate default tags and attribute values.<br /><br /> Use the **-ToFile** option (see in the following table) to specify the file name and path of the new file.<br /><br /> Use the **-FromDirectory** option (see in the following table) to create an application manifest with all of the assemblies for an application added to the \<dependency> section of the manifest.|
 |**-u, -Update** *[filePath] [updateOptions]*|Makes one or more changes to a manifest file. You do not have to specify the type of file that you are editing. Mage.exe will examine the file by using a set of heuristics and determine whether it is a deployment manifest or an application manifest.<br /><br /> If you have already signed a file with a certificate, **-Update** will remove the key signature block. This is because the key signature contains a hash of the file, and modifying the file renders the hash invalid.<br /><br /> Use the **-ToFile** option (see in the following table) to specify a new file name and path instead of overwriting the existing file.|
 |**-s, -Sign** `[signOptions]`|Uses a key pair or X509 certificate to sign a file. Signatures are inserted as XML elements inside of the files.<br /><br /> You must be connected to the Internet when signing a manifest that specifies a **-TimestampUri** value.|
 |**-ver, -Verify** *[manifest-filename]*|Verifies that the manifest is signed correctly. Cannot be combined with other commands. <br/><br/>**Available in .NET Framework 4.7 and later versions.**|
@@ -42,7 +42,7 @@ The following table shows the options supported by the `-New` and `-Update` comm
 
 |Options|Default Value|Applies To|Description|
 |-------------|-------------------|----------------|-----------------|
-|**-a, -Algorithm**|sha1RSA|Application manifests.<br /><br /> Deployment manifests.|Specifies the algorithm to generate dependency digests with. Value must be "sha256RSA" or "sha1RSA.<br /><br /> Use with the "-Update" option. This option is ignored when using the "-Sign" option|
+|**-a, -Algorithm**|sha1RSA|Application manifests.<br /><br /> Deployment manifests.|Specifies the algorithm to generate dependency digests with. Value must be "sha256RSA" or "sha1RSA".<br /><br /> Use with the "-Update" option.|
 |**-appc, -AppCodeBase** `manifestReference`||Deployment manifests.|Inserts a URL or file path reference to the application manifest file. This value must be the full path to the application manifest.|
 |**-appm, -AppManifest** `manifestPath`||Deployment manifests.|Inserts a reference to a deployment's application manifest into its deployment manifest.<br /><br /> The file indicated by `manifestPath` must exist, or *Mage.exe* will issue an error. If the file referenced by `manifestPath` is not an application manifest, *Mage.exe* will issue an error.|
 |**-cf, -CertFile** `filePath`||All file types.|Specifies the location of an X509 digital certificate for signing a manifest or license file. This option can be used in conjunction with the **-Password** option if the certificate requires a password for Personal Information Exchange (PFX) files. Starting with .NET Framework 4.7, if the file does not contain a private key, a combination of the **-CryptoProvider** and **-KeyContainer** options is required.<br/><br/>Starting with .NET Framework 4.6.2, *Mage.exe* signs manifests with CNG as well as CAPI certificates.|
@@ -71,13 +71,15 @@ The following table shows the options supported by the `-New` and `-Update` comm
 
 The following table shows the options supported by the `-Sign` command, which apply to all types of files.
 
-|Options|Description|
-|-------------|-----------------|
+| Options | Description |
+|---------|-------------|
+|**-a, -Algorithm**|Specifies the algorithm to generate dependency digests with. The value must be "sha256RSA".|
 |**-cf, -CertFile** `filePath`|Specifies The location of a digital certificate for signing a manifest. This option can be used in conjunction with the **-Password** option if the certificate requires a password for Personal Information Exchange (PFX) files. Starting with .NET Framework 4.7, if the file does not contain a private key, a combination of the **-CryptoProvider** and **-KeyContainer** options is required.<br/><br/>Starting with .NET Framework 4.6.2, *Mage.exe* signs manifests with CNG as well as CAPI certificates.|
 |**-ch, -CertHash** `hashSignature`|The hash of a digital certificate stored in the personal certificate store of the client computer. This corresponds to the Thumbprint property of a digital certificate viewed in the Windows Certificates Console.<br /><br /> `hashSignature` can be either uppercase or lowercase, and can be supplied either as a single string or with each octet of the Thumbprint separated by spaces and the entire Thumbprint enclosed in quotation marks.|
-**-csp, -CryptoProvider** `provider-name`|Specifies the name of a cryptographic service provider (CSP) that contains the private key container. This option requires the **-KeyContainer** option.<br/><br/>This option is available starting with .NET Framework 4.7.|
+|**-csp, -CryptoProvider** `provider-name`|Specifies the name of a cryptographic service provider (CSP) that contains the private key container. This option requires the **-KeyContainer** option.<br/><br/>This option is available starting with .NET Framework 4.7.|
 |**-kc, -KeyContainer** `name`|Specifies the key container that contains the name of the private key. This option requires the **CryptoProvider** option.<br/><br/>This option is available starting with .NET Framework 4.7.|
 |**-pwd, -Password** `passwd`|The password that is used for signing a manifest with a digital certificate. Must be used in conjunction with the **-CertFile** option.|
+|**-ti, -TimestampUri** `uri`|The URL of a digital timestamping service. Timestamping the manifests prevents you from having to re-sign the manifests if your digital certificate expires before you deploy the next version of your application.|
 |**-t, -ToFile** `filePath`|Specifies the output path of the file that has been created or modified.|
 
 ## Remarks

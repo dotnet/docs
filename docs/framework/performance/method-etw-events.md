@@ -5,7 +5,6 @@ ms.date: "03/30/2017"
 helpviewer_keywords:
   - "ETW, method events (CLR)"
   - "method events [.NET Framework]"
-ms.topic: reference
 ---
 
 # Method ETW Events
@@ -92,8 +91,8 @@ The following table shows the event information:
 |-----------|--------------|-----------------|
 |`MethodLoadVerbose_V1`|143|Raised when a method is JIT-loaded or an NGEN image is loaded. Dynamic and generic methods always use this version for method loads. JIT helpers always use this version.|
 |`MethodUnLoadVerbose_V1`|144|Raised when a dynamic method is destroyed, a module is unloaded, or an application domain is destroyed. Dynamic methods always use this version for method unloads.|
-|`MethodDCStartVerbose_V1`|141|Enumerates methods during a start rundown.|
-|`MethodDCEndVerbose_V1`|142|Enumerates methods during an end rundown.|
+|`MethodDCStartVerbose_V1`|143|Enumerates methods during a start rundown.|
+|`MethodDCEndVerbose_V1`|144|Enumerates methods during an end rundown.|
 
 The following table shows the event data:
 
@@ -134,7 +133,7 @@ The following table shows the event data:
 |MethodID|win:UInt64|Unique identifier of the method.|
 |ModuleID|win:UInt64|Identifier of the module to which this method belongs.|
 |MethodToken|win:UInt32|0 for dynamic methods and JIT helpers.|
-|MethodILSize|win:UInt32|The size of the Microsoft intermediate language (MSIL) for the method that is being JIT-compiled.|
+|MethodILSize|win:UInt32|The size of the common intermediate language (CIL) for the method that is being JIT-compiled.|
 |MethodNameSpace|win:UnicodeString|Full class name associated with the method.|
 |MethodName|win:UnicodeString|Name of the method.|
 |MethodSignature|win:UnicodeString|Signature of the method (comma-separated list of type names).|

@@ -2,7 +2,7 @@
 title: Candidate apps for cloud native
 description: Learn which types of applications benefit from a cloud-native approach
 author: robvet
-ms.date: 04/06/2022
+ms.date: 12/14/2023
 ---
 
 # Candidate apps for cloud native
@@ -19,7 +19,7 @@ What type of application might be a candidate for cloud native?
 
 - An application that requires a high release velocity - with high confidence
 
-- A system with where individual features must release *without* a full redeployment of the entire system
+- A system where individual features must release *without* a full redeployment of the entire system
 
 - An application developed by teams with expertise in different technology stacks
 
@@ -37,7 +37,7 @@ The free Microsoft e-book [Modernize existing .NET applications with Azure cloud
 
 **Figure 1-10**. Strategies for migrating legacy workloads
 
-Monolithic apps that are non-critical might benefit from a quick **lift-and-shift** ([Cloud Infrastructure-Ready](../modernize-with-azure-containers/lift-and-shift-existing-apps-azure-iaas.md)) migration. Here, the on-premises workload is rehosted to a cloud-based VM, without changes. This approach uses the [IaaS (Infrastructure as a Service) model](https://azure.microsoft.com/overview/what-is-iaas/). Azure includes several tools such as [Azure Migrate](https://azure.microsoft.com/services/azure-migrate/), [Azure Site Recovery](https://azure.microsoft.com/services/site-recovery/), and [Azure Database Migration Service](https://azure.microsoft.com/campaigns/database-migration/) to help streamline the move. While this strategy can yield some cost savings, such applications typically weren't designed to unlock and leverage the benefits of cloud computing.
+Monolithic apps that are non-critical might benefit from a quick **lift-and-shift** migration. Here, the on-premises workload is rehosted to a cloud-based VM, without changes. This approach uses the [IaaS (Infrastructure as a Service) model](https://azure.microsoft.com/overview/what-is-iaas/). Azure includes several tools such as [Azure Migrate](https://azure.microsoft.com/services/azure-migrate/), [Azure Site Recovery](https://azure.microsoft.com/services/site-recovery/), and [Azure Database Migration Service](https://azure.microsoft.com/campaigns/database-migration/) to help streamline the move. While this strategy can yield some cost savings, such applications typically weren't designed to unlock and leverage the benefits of cloud computing.
 
 Legacy apps that are critical to the business often benefit from an enhanced **Cloud Optimized** migration. This approach includes deployment optimizations that enable key cloud services - without changing the core architecture of the application. For example, you might [containerize](/virtualization/windowscontainers/about/) the application and deploy it to a container orchestrator, like [Azure Kubernetes Services](https://azure.microsoft.com/services/kubernetes-service/), discussed later in this book. Once in the cloud, the application can consume cloud backing services such as databases, message queues, monitoring, and distributed caching.
 
@@ -80,8 +80,6 @@ With the introduction behind, we now dive into a much more detailed look at clou
 - [Cloud Native Patterns by Cornelia Davis](https://www.manning.com/books/cloud-native-patterns)
 
 - [Cloud native applications: Ship faster, reduce risk, and grow your business](https://tanzu.vmware.com/cloud-native)
-
-- [Dapr for .NET Developers](../dapr-for-net-developers/index.md)
 
 - [Dapr documents](https://dapr.io/)
 

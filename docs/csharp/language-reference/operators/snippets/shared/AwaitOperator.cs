@@ -1,8 +1,4 @@
-﻿using System;
-using System.Net.Http;
-using System.Threading.Tasks;
-
-public class AwaitOperator
+﻿public class AwaitOperator
 {
     public static async Task Main()
     {

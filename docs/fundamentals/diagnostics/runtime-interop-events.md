@@ -2,7 +2,6 @@
 title: "Interop runtime events"
 description: See .NET runtime events that collect diagnostic information specific to interop.
 ms.date: "11/13/2020"
-ms.topic: reference
 helpviewer_keywords:
   - "Interop events (CoreCLR)"
   - "ETW, EventPipe, LTTng interop events (CoreCLR)"
@@ -10,14 +9,14 @@ helpviewer_keywords:
 
 # .NET runtime interop events
 
-These runtime events capture information about Common Intermediate Language (CIL) stub generation. For more information about how to use these events for diagnostic purposes, see [logging and tracing .NET applications](../../core/diagnostics/logging-tracing.md)
+These runtime events capture information about Common Intermediate Language (CIL) stub generation. For more information about how to use these events for diagnostic purposes, see [logging and tracing .NET applications](../../core/diagnostics/logging-tracing.md).
 
 ## ILStubGenerated event
 
 |Keyword for raising the event|Level|
 |-----------------------------------|-----------|
 |`InteropKeyword` (0x2000)|Informational(4)|
-  
+
 |Event|Event ID|Raised when|
 |-----------|--------------|-----------------|
 |`ILStubGenerated`|88|An IL Stub is generated.|

@@ -15,6 +15,8 @@ ms.assetid: acdcc588-b458-436d-876c-726de68244c1
 ---
 # How to: Remove an Assembly from the Global Assembly Cache
 
+[!INCLUDE [net-framework-specific](../includes/net-framework-specific.md)]
+
 There are two ways to remove an assembly from the global assembly cache (GAC):
 
 - By using the [Global Assembly Cache tool (Gacutil.exe)](../tools/gacutil-exe-gac-tool.md). You can use this option to uninstall assemblies that you've placed in the GAC during development and testing.

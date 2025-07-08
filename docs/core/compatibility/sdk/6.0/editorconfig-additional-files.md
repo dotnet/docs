@@ -26,7 +26,7 @@ Starting with the .NET 6 SDK, you'll get the following error at compile time if 
 
 ## Change category
 
-This change may affect [source compatibility](../../categories.md#source-compatibility).
+This change might affect [source compatibility](../../categories.md#source-compatibility).
 
 ## Reason for change
 

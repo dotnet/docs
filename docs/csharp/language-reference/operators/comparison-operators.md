@@ -1,6 +1,6 @@
 ---
 title: "Comparison operators - order items using the greater than and less than operators"
-description: "C# comparison operators check the order of values. The operators `>`, `<`, `>=`, `<=` compare the order of values. They determine if a value or greater than or less than another value."
+description: "C# comparison operators check the order of values. The operators `>`, `<`, `>=`, `<=` compare the order of values. They determine if a value is greater than or less than another value."
 ms.date: 11/29/2022
 author: pkulikov
 f1_keywords: 
@@ -69,7 +69,6 @@ For more information, see the [Relational and type-testing operators](~/_csharps
 
 ## See also
 
-- [C# reference](../index.md)
 - [C# operators and expressions](index.md)
 - <xref:System.IComparable%601?displayProperty=nameWithType>
 - [Equality operators](equality-operators.md)

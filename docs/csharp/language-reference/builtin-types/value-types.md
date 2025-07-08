@@ -1,6 +1,6 @@
 ---
 description: Value types vs reference types, kinds of value types, and the built-in value types in C#
-title: "Value types - C# reference"
+title: "Value types"
 ms.date: 01/22/2020
 f1_keywords: 
   - "cs.valuetypes"
@@ -47,9 +47,12 @@ C# provides the following built-in value types, also known as *simple types*:
 
 All simple types are structure types and differ from other structure types in that they permit certain additional operations:
 
-- You can use literals to provide a value of a simple type. For example, `'A'` is a literal of the type `char` and `2001` is a literal of the type `int`.
+- You can use literals to provide a value of a simple type.
+<br/>For example, `'A'` is a literal of the type `char`, `2001` is a literal of the type `int` and `12.34m` is a literal of the type `decimal`.
 
-- You can declare constants of the simple types with the [const](../keywords/const.md) keyword. It's not possible to have constants of other structure types.
+- You can declare constants of the simple types with the [const](../keywords/const.md) keyword.
+<br/>For example, you can define `const decimal = 12.34m`.
+<br/>It's not possible to have constants of other structure types.
 
 - Constant expressions, whose operands are all constants of the simple types, are evaluated at compile time.
 
@@ -65,6 +68,5 @@ For more information, see the following sections of the [C# language specificati
 
 ## See also
 
-- [C# reference](../index.md)
 - <xref:System.ValueType?displayProperty=nameWithType>
 - [Reference types](../keywords/reference-types.md)

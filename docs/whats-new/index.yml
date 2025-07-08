@@ -1,40 +1,52 @@
 ### YamlMime:Landing
 
-title: .NET documentation - what's new?
-summary: Welcome to what's new in .NET docs. Use this page to quickly find the latest changes.
+title: .NET - what's new?
+summary: Welcome to what's new in .NET and .NET docs. Use this page to navigate to different articles that cover new features for a variety of areas.
 metadata:
-  title: .NET documentation what's new?
-  description: Learn about new and updated content in .NET docs.
-  ms.date: 08/01/2023
+  title: .NET what's new?
+  description: Learn about new .NET features and new and updated content in .NET docs.
+  ms.date: 07/01/2025
   ms.topic: landing-page
 landingContent:
-- title: .NET release updates
+- title: .NET 10 release updates
   linkLists:
   - linkListType: whats-new
     links:
-    - text: .NET 7 updates
-      url: dotnet-7-docs.md
-- title: Latest documentation updates
+    - text: .NET 10
+      url: ../core/whats-new/dotnet-10/overview.md
+    - text: ASP.NET Core 10.0
+      url: /aspnet/core/release-notes/aspnetcore-10.0
+    - text: .NET MAUI 10
+      url: /dotnet/maui/whats-new/dotnet-10
+    - text: EF Core 10
+      url: /ef/core/what-is-new/ef-core-10.0/whatsnew
+    - text: Windows Forms 10
+      url: /dotnet/desktop/winforms/whats-new/net100
+- title: .NET 9 release updates
   linkLists:
   - linkListType: whats-new
     links:
-    - text: July 2023
-      url: dotnet-docs-mod1.md
-    - text: June 2023
-      url: dotnet-docs-mod0.md
-    - text: May 2023
-      url: dotnet-docs-mod2.md
-- title: Find language updates
+    - text: .NET 9
+      url: ../core/whats-new/dotnet-9/overview.md
+    - text: ASP.NET Core 9.0
+      url: /aspnet/core/release-notes/aspnetcore-9.0
+    - text: .NET MAUI 9
+      url: /dotnet/maui/whats-new/dotnet-9
+    - text: EF Core 9
+      url: /ef/core/what-is-new/ef-core-9.0/whatsnew
+    - text: Documentation updates
+      url: dotnet-9-release.md
+- title: Language updates
   linkLists:
   - linkListType: whats-new
     links:
-    - text: What's new in C# 11
-      url: ../csharp/whats-new/csharp-11.md
-    - text: What's new in F# 6
-      url: ../fsharp/whats-new/fsharp-6.md
+    - text: What's new in C# 13
+      url: ../csharp/whats-new/csharp-13.md
+    - text: What's new in F# 9
+      url: ../fsharp/whats-new/fsharp-9.md
     - text: What's new for Visual Basic
       url: ../visual-basic/whats-new/index.md
-- title: Get involved - contribute
+- title: Contribute to docs
   linkLists:
   - linkListType: overview
     links:
@@ -70,23 +82,15 @@ landingContent:
     links:
     - text: Community
       url: https://dotnet.microsoft.com/platform/community
-- title: Related what's new pages
+- title: Release notes
   linkLists:
   - linkListType: whats-new
     links:
-    - text: ASP.NET Core docs updates
-      url: /aspnet/core/whats-new/
-    - text: Xamarin docs updates
-      url: /xamarin/whats-new/
-    - text: .NET release notes
+    - text: .NET
       url: https://github.com/dotnet/core/blob/main/release-notes/README.md
-    - text: ASP.NET Core release notes
-      url: /aspnet/core/release-notes/aspnetcore-3.1
-    - text: C# compiler (Roslyn) release notes
-      url: https://github.com/dotnet/roslyn/tree/main/docs/ide
-    - text: Visual Studio release notes
-      url: /visualstudio/releases/2019/release-notes
-    - text: Visual Studio for Mac release notes
-      url: /visualstudio/releasenotes/vs2019-mac-relnotes
-    - text: Visual Studio Code release notes
+    - text: ASP.NET Core 9.0
+      url: /aspnet/core/release-notes/aspnetcore-9.0
+    - text: Visual Studio 2022
+      url: /visualstudio/releases/2022/release-notes
+    - text: Visual Studio Code
       url: https://code.visualstudio.com/updates

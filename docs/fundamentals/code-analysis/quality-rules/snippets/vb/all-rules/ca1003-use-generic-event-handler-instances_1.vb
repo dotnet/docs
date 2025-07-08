@@ -42,7 +42,7 @@ Namespace ca1003
 
     Class Test
 
-        Shared Sub Main()
+        Shared Sub Main1003()
 
             Dim eventRaiser As New ClassThatRaisesEvent()
             Dim eventHandler As New ClassThatHandlesEvent(eventRaiser)

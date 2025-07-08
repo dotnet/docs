@@ -2,6 +2,7 @@
 title: Troubleshoot app launch failures
 description: Learn about common reasons for app launch failures and possible solutions.
 ms.topic: troubleshooting
+ms.custom: linux-related-content
 ms.date: 03/29/2023
 zone_pivot_groups: operating-systems-set-one
 ---
@@ -136,18 +137,22 @@ Alternately, you can download a runtime from the [.NET downloads](https://dotnet
 The following table shows the frameworks that each runtime contains.
 
 ::: zone pivot="os-windows"
+
 | Runtime download     | Included frameworks                                    |
 | -------------------- | ------------------------------------------------------ |
 | ASP.NET Core Runtime | Microsoft.NETCore.App<br/>Microsoft.AspNetCore.App     |
 | .NET Desktop Runtime | Microsoft.NETCore.App<br/>Microsoft.WindowsDesktop.App |
 | .NET Runtime         | Microsoft.NETCore.App                                  |
+
 ::: zone-end
 
 ::: zone pivot="os-linux,os-macos"
+
 | Runtime download     | Included frameworks                                |
 | -------------------- | -------------------------------------------------- |
 | ASP.NET Core Runtime | Microsoft.NETCore.App<br/>Microsoft.AspNetCore.App |
 | .NET Runtime         | Microsoft.NETCore.App                              |
+
 ::: zone-end
 
 Select a runtime download that contains the missing framework, and then install it.
@@ -202,7 +207,7 @@ If you encounter an error stating that running scripts is disabled, you may need
 Set-ExecutionPolicy Bypass -Scope Process
 ```
 
-For more information on installation using the script, see [Install with PowerShell automation](../install/windows.md#install-with-powershell-automation).
+For more information on installation using the script, see [Install with PowerShell automation](../install/windows.md#install-with-powershell).
 ::: zone-end
 
 ::: zone pivot="os-linux"
@@ -232,7 +237,7 @@ For example, the error message in the previous section would correspond to:
 ./dotnet-install.sh --architecture x64 --install-dir /usr/local/share/dotnet/ --runtime dotnet --version 5.0.15
 ```
 
-For more information on installation using the script, see [Install with bash automation](../install/macos.md#install-with-bash-automation).
+For more information on installation using the script, see [Install .NET with a script](../install/macos.md#install-net-with-a-script).
 ::: zone-end
 
 ### Download binaries
@@ -240,15 +245,15 @@ For more information on installation using the script, see [Install with bash au
 You can download a binary archive of .NET from the [download page](https://dotnet.microsoft.com/download/dotnet). From the **Binaries** column of the runtime download, download the binary release matching the required architecture. Extract the downloaded archive to the ".NET location" specified in the error message.
 
 ::: zone pivot="os-windows"
-For more details on manual installation, see [Install .NET on Windows](../install/windows.md#install-with-powershell-automation)
+For more information about manual installation, see [Install .NET on Windows](../install/windows.md#install-with-powershell)
 ::: zone-end
 
 ::: zone pivot="os-linux"
-For more details on manual installation, see [Install .NET on Linux](../install/linux.md#manual-installation)
+For more information about manual installation, see [Install .NET on Linux](../install/linux.md#manual-installation)
 ::: zone-end
 
 ::: zone pivot="os-macos"
-For more details on manual installation, see [Install .NET on macOS](../install/macos.md#download-and-manually-install)
+For more information about manual installation, see [Install .NET on macOS](../install/macos.md#install-net-manually)
 ::: zone-end
 
 ### Configure roll-forward behavior

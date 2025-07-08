@@ -20,6 +20,8 @@ items:
     items:
       - name: Develop grains
         href: grains/index.md
+      - name: Grain references
+        href: grains/grain-references.md
       - name: Grain identity
         href: grains/grain-identity.md
       - name: Grain placement
@@ -30,6 +32,8 @@ items:
         href: grains/timers-and-reminders.md
       - name: Observers
         href: grains/observers.md
+      - name: Cancellation
+        href: grains/cancellation-tokens.md
       - name: Request scheduling
         href: grains/request-scheduling.md
       - name: Request context
@@ -40,6 +44,8 @@ items:
         items:
           - name: Grain persistence
             href: grains/grain-persistence/index.md
+          - name: Azure Cosmos DB
+            href: grains/grain-persistence/azure-cosmos-db.md
           - name: Relational storage (ADO.NET)
             href: grains/grain-persistence/relational-storage.md
           - name: Azure storage
@@ -74,8 +80,6 @@ items:
             href: grains/grainservices.md
           - name: Stateless worker grains
             href: grains/stateless-worker-grains.md
-          - name: Cancellation tokens
-            href: grains/cancellation-tokens.md
           - name: Transactions
             href: grains/transactions.md
           - name: One-way requests
@@ -134,8 +138,8 @@ items:
             href: host/configuration-guide/typical-configurations.md
           - name: Options classes
             href: host/configuration-guide/list-of-options-classes.md
-          - name: Activation garbage collection
-            href: host/configuration-guide/activation-garbage-collection.md
+          - name: Activation collection
+            href: host/configuration-guide/activation-collection.md
           - name: Configure .NET garbage collection
             href: host/configuration-guide/configuring-garbage-collection.md
           - name: Configure ADO.NET providers
@@ -160,7 +164,7 @@ items:
         items:
           - name: Overview
             href: host/monitoring/index.md
-            displayName: zipkin,jaeger,open telemetry,opentelemetry,meter,counter,activity source,observability,monitoring,logging,metrics,telemetry,distributed tracing
+            displayName: zipkin,jaeger,OpenTelemetry,opentelemetry,meter,counter,activity source,observability,monitoring,logging,metrics,telemetry,distributed tracing
           - name: Silo error code monitoring
             href: host/monitoring/silo-error-code-monitoring.md
           - name: Client error code monitoring
@@ -210,13 +214,15 @@ items:
       - name: Adventure game
         href: tutorials-and-samples/adventure.md
       - name: Unit testing
-        href: tutorials-and-samples/testing.md
+        href: implementation/testing.md
       - name: Custom grain storage
         href: tutorials-and-samples/custom-grain-storage.md
   - name: Implementation details
     items:
       - name: Overview
         href: implementation/index.md
+      - name: Grain directory
+        href: implementation/grain-directory.md
       - name: Orleans lifecycle
         href: implementation/orleans-lifecycle.md
       - name: Messaging delivery guarantees

@@ -1,8 +1,7 @@
 ---
 title: Configuration files for code analysis rules
-description: Learn about different configuration files to configure code analysis rules.
+description: Learn about different configuration files, including editorconfig and global config files, to configure code analysis rules.
 ms.date: 07/07/2021
-ms.topic: conceptual
 no-loc: ["EditorConfig"]
 ---
 # Configuration files for code analysis rules
@@ -13,7 +12,7 @@ Code analysis rules have various [configuration options](configuration-options.m
 - [Global AnalyzerConfig](#global-analyzerconfig) file: Project-level configuration options. Useful when some project files reside outside the project folder.
 
 > [!TIP]
-> You can also set code analysis configuration properties in your project file. These properties configure code analysis at the bulk level, from completely turning it on or off down to  category-level configuration. For more information, see [EnableNETAnalyzers](../../core/project-sdk/msbuild-props.md#enablenetanalyzers), [AnalysisLevel](../../core/project-sdk/msbuild-props.md#analysislevel), [AnalysisLevel\<Category>](../../core/project-sdk/msbuild-props.md#analysislevelcategory), and [AnalysisMode](../../core/project-sdk/msbuild-props.md#analysismode).
+> You can also set code analysis configuration properties in your project file. These properties configure code analysis at the bulk level, from completely turning code analysis on or off down to category-level rule configuration. For more information, see [EnableNETAnalyzers](../../core/project-sdk/msbuild-props.md#enablenetanalyzers), [AnalysisLevel](../../core/project-sdk/msbuild-props.md#analysislevel), [AnalysisLevel\<Category>](../../core/project-sdk/msbuild-props.md#analysislevelcategory), and [AnalysisMode](../../core/project-sdk/msbuild-props.md#analysismode).
 
 ## EditorConfig
 
@@ -29,7 +28,7 @@ In the above example, `[*.cs]` is an editorconfig section header to select all C
 You can apply EditorConfig file conventions to a folder, a project, or an entire repo by placing the file in the corresponding directory. These options are applied when executing the analysis at build time and while you edit code in Visual Studio.
 
 > [!NOTE]
-> EditorConfig options apply only to *source* files in a project or directory. Files that are included in a project as [AdditionalFiles](/visualstudio/ide/build-actions#build-action-values) are not considered *source* files, and EditorConfig options aren't applied to these files. To apply a rule option to non-source files, specify the option in a [global configuration file](#global-analyzerconfig).
+> EditorConfig options apply only to *source* files in a project or directory. Files that are included in a project as [AdditionalFiles](/visualstudio/ide/build-actions#build-action-values) aren't considered *source* files, and EditorConfig options aren't applied to these files. To apply a rule option to non-source files, specify the option in a [global configuration file](#global-analyzerconfig).
 
 If you have an existing *.editorconfig* file for editor settings such as indent size or whether to trim trailing whitespace, you can place your code analysis configuration options in the same file.
 
@@ -67,9 +66,9 @@ dotnet_diagnostic.CA1000.severity = warning
 
 ## Global AnalyzerConfig
 
-Starting with the .NET 5 SDK (which is supported in Visual Studio 2019 and later), you can also configure analyzer options with global _AnalyzerConfig_ files. These files are used to provide **options that apply to all the source files in a project**, regardless of their file names or file paths.
+You can also configure analyzer options with global _AnalyzerConfig_ files. These files are used to provide **options that apply to all the source files in a project**, regardless of their file names or file paths.
 
-Unlike [EditorConfig](#editorconfig) files, global configuration files can't be used to configure editor style settings for IDEs, such as indent size or whether to trim trailing whitespace. Instead, they are designed purely for specifying project-level analyzer configuration options.
+Unlike [EditorConfig](#editorconfig) files, global configuration files can't be used to configure editor style settings for IDEs, such as indent size or whether to trim trailing whitespace. Instead, they're designed purely for specifying project-level analyzer configuration options.
 
 ### Format
 
@@ -82,7 +81,7 @@ is_global = true
 
 ### Naming
 
-Unlike EditorConfig files, which must be named `.editorconfig`, global config files do not need to have a specific name or extension. However, if you name these files as `.globalconfig`, then they are implicitly applied to all the C# and Visual Basic projects within the current folder, including subfolders. Otherwise, you must explicitly add the `GlobalAnalyzerConfigFiles` item to your MSBuild project file:
+Unlike EditorConfig files, which must be named `.editorconfig`, global config files don't need to have a specific name or extension. However, if you name these files as `.globalconfig`, then they're implicitly applied to all the C# and Visual Basic projects within the current folder, including subfolders. Otherwise, you must explicitly add the `GlobalAnalyzerConfigFiles` item to your MSBuild project file:
 
 ```xml
 <ItemGroup>
@@ -97,7 +96,37 @@ Consider the following naming recommendations:
 - MSBuild tooling-generated global config files should be named *<%Target_Name%>_Generated.globalconfig* or similar.
 
 > [!NOTE]
-> The top-level entry `is_global = true` is not required when the file is named `.globalconfig`, but it is recommended for clarity.
+> The top-level entry `is_global = true` is not required when the file is named `.globalconfig`, but it's recommended for clarity.
+
+### Conditional inclusion
+
+You can use a global configuration file to disable or enable certain code analysis rules in different environments. For example, you might want to disable some code analysis rules for unit test projects. To do that, you could set the severity for the applicable rules to `none` in the configuration file, for example:
+
+```ini
+# CA1861: Prefer 'static readonly' fields over constant array arguments
+dotnet_diagnostic.CA1861.severity = none
+```
+
+You can then customize your build to only include the configuration file in test projects based on conditions specific to your build. For example:
+
+```xml
+<ItemGroup Condition="'$(IsShipping)' == 'false'">
+  <!-- Include CodeAnalysis.test.globalconfig to override (relax) some rules from the primary configuration. -->
+  <GlobalAnalyzerConfigFiles Include="$(MSBuildThisFileDirectory)CodeAnalysis.test.globalconfig" />
+</ItemGroup>
+```
+
+### Distribution in NuGet packages
+
+Global AnalyzerConfig files can be distributed with NuGet packages. To do so, add a [*.props* file](/nuget/concepts/msbuild-props-and-targets) to the NuGet package. In the *.props* file, add a `GlobalAnalyzerConfigFiles` item under the `Project` node:
+
+```xml
+<Project>
+  <ItemGroup>
+    <GlobalAnalyzerConfigFiles Include="Relative/Path/to/PackageName.globalconfig" />
+  </ItemGroup>
+</Project>
+```
 
 ### Example
 

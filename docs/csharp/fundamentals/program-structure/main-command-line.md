@@ -1,7 +1,7 @@
 ---
 title: "Main() and command-line arguments"
 description: Learn about Main() and command-line arguments. The 'Main' method is the entry point of an executable program.
-ms.date: 05/14/2021
+ms.date: 06/23/2025
 f1_keywords:
   - "main_CSharpKeyword"
   - "Main"
@@ -14,72 +14,77 @@ helpviewer_keywords:
 ---
 # Main() and command-line arguments
 
-The `Main` method is the entry point of a C# application. (Libraries and services do not require a `Main` method as an entry point.) When the application is started, the `Main` method is the first method that is invoked.
+The `Main` method is the entry point of a C# application. When the application is started, the `Main` method is the first method that is invoked.
 
-There can only be one entry point in a C# program. If you have more than one class that has a `Main` method, you must compile your program with the **StartupObject** compiler option to specify which `Main` method to use as the entry point. For more information, see [**StartupObject** (C# Compiler Options)](../../language-reference/compiler-options/advanced.md#mainentrypoint-or-startupobject).
+There can only be one entry point in a C# program. If you have more than one class that has a `Main` method, you must compile your program with the **StartupObject** compiler option to specify which `Main` method to use as the entry point. For more information, see [**StartupObject** (C# Compiler Options)](../../language-reference/compiler-options/advanced.md#mainentrypoint-or-startupobject). The following example displays the number of command line arguments as its first action:
 
 :::code language="csharp" source="snippets/main-command-line/TestClass.cs":::
 
-Starting in C# 9, you can omit the `Main` method, and write C# statements as if they were in the `Main` method, as in the following example:
+You can also use top-level statements in one file as the entry point for your application. Just as the `Main` method, top-level statements can also [return values](#main-return-values) and access [command-line arguments](#command-line-arguments). For more information, see [Top-level statements](top-level-statements.md). The following example uses a `foreach` loop to display the command-line arguments using the `args` variable, and at the end of the program returns a success code (`0`):
 
 :::code language="csharp" source="snippets/top-level-statements-1/Program.cs":::
 
-For information about how to write application code with an implicit entry point method, see [Top-level statements](top-level-statements.md).
+Beginning with C# 14, programs can be [*file based programs*](./index.md#building-and-running-c-programs), where a single file contains the program. You run *file based programs* with the command `dotnet run <file.cs>`, or using the `#!/usr/local/share/dotnet/dotnet run` directive as the first line (unix shells only).
 
 ## Overview
 
-- The `Main` method is the entry point of an executable program; it is where the program control starts and ends.
-- `Main` is declared inside a class or struct. `Main` must be [`static`](../../language-reference/keywords/static.md) and it need not be [`public`](../../language-reference/keywords/public.md). (In the earlier example, it receives the default access of [`private`](../../language-reference/keywords/private.md).) The enclosing class or struct is not required to be static.
+- The `Main` method is the entry point of an executable program; it's where the program control starts and ends.
+- `Main` must be declared inside a class or struct. The enclosing `class` can be `static`.
+- `Main` must be [`static`](../../language-reference/keywords/static.md).
+- `Main` can have any [access modifier](../../programming-guide/classes-and-structs/access-modifiers.md) (except `file`).
 - `Main` can either have a `void`, `int`, `Task`, or `Task<int>` return type.
-- If and only if `Main` returns a `Task` or `Task<int>`, the declaration of `Main` may include the [`async`](../../language-reference/keywords/async.md) modifier. This specifically excludes an `async void Main` method.
-- The `Main` method can be declared with or without a `string[]` parameter that contains command-line arguments. When using Visual Studio to create Windows applications, you can add the parameter manually or else use the <xref:System.Environment.GetCommandLineArgs> method to obtain the command-line arguments. Parameters are read as zero-indexed command-line arguments. Unlike C and C++, the name of the program is not treated as the first command-line argument in the `args` array, but it is the first element of the <xref:System.Environment.GetCommandLineArgs> method.
+- If and only if `Main` returns a `Task` or `Task<int>`, the declaration of `Main` can include the [`async`](../../language-reference/keywords/async.md) modifier. This rule specifically excludes an `async void Main` method.
+- The `Main` method can be declared with or without a `string[]` parameter that contains command-line arguments. When using Visual Studio to create Windows applications, you can add the parameter manually or else use the <xref:System.Environment.GetCommandLineArgs> method to obtain the command-line arguments. Parameters are read as zero-indexed command-line arguments. Unlike C and C++, the name of the program isn't treated as the first command-line argument in the `args` array, but it's the first element of the <xref:System.Environment.GetCommandLineArgs> method.
 
-The following list shows valid `Main` signatures:
+The following list shows the most common `Main` declarations:
 
 ```csharp
-public static void Main() { }
-public static int Main() { }
-public static void Main(string[] args) { }
-public static int Main(string[] args) { }
-public static async Task Main() { }
-public static async Task<int> Main() { }
-public static async Task Main(string[] args) { }
-public static async Task<int> Main(string[] args) { }
+static void Main() { }
+static int Main() { }
+static void Main(string[] args) { }
+static int Main(string[] args) { }
+static async Task Main() { }
+static async Task<int> Main() { }
+static async Task Main(string[] args) { }
+static async Task<int> Main(string[] args) { }
 ```
 
-The preceding examples all use the `public` accessor modifier. That's typical, but not required.
+The preceding examples don't specify an access modifier, so they're implicitly `private` by default. It's possible to specify any explicit access modifier.
 
-The addition of `async` and `Task`, `Task<int>` return types simplifies program code when console applications need to start and `await` asynchronous operations in `Main`.
+> [!TIP]
+> The addition of `async` and `Task`, `Task<int>` return types simplifies program code when console applications need to start and `await` asynchronous operations in `Main`.
 
 ## Main() return values
 
 You can return an `int` from the `Main` method by defining the method in one of the following ways:
 
-| `Main` method code             | `Main` signature                             |
-|--------------------------------|----------------------------------------------|
-| No use of `args` or `await`    | `static int Main()`                          |
-| Uses `args`, no use of `await` | `static int Main(string[] args)`             |
-| No use of `args`, uses `await` | `static async Task<int> Main()`              |
-| Uses `args` and `await`        | `static async Task<int> Main(string[] args)` |
+| `Main` declaration                           | `Main` method code          |
+|----------------------------------------------|-----------------------------|
+| `static int Main()`                          | No use of `args` or `await` |
+| `static int Main(string[] args)`             | Uses `args` but not `await` |
+| `static async Task<int> Main()`              | Uses `await` but not `args` |
+| `static async Task<int> Main(string[] args)` | Uses `args` and `await`     |
 
-If the return value from `Main` is not used, returning `void` or `Task` allows for slightly simpler code.
+If the return value from `Main` isn't used, returning `void` or `Task` allows for slightly simpler code.
 
-| `Main` method code             | `Main` signature                        |
-|--------------------------------|-----------------------------------------|
-| No use of `args` or `await`    | `static void Main()`                    |
-| Uses `args`, no use of `await` | `static void Main(string[] args)`       |
-| No use of `args`, uses `await` | `static async Task Main()`              |
-| Uses `args` and `await`        | `static async Task Main(string[] args)` |
+| `Main` declaration                      | `Main` method code          |
+|-----------------------------------------|-----------------------------|
+| `static void Main()`                    | No use of `args` or `await` |
+| `static void Main(string[] args)`       | Uses `args` but not `await` |
+| `static async Task Main()`              | Uses `await` but not `args` |
+| `static async Task Main(string[] args)` | Uses `args` and `await`     |
 
 However, returning `int` or `Task<int>` enables the program to communicate status information to other programs or scripts that invoke the executable file.
 
 The following example shows how the exit code for the process can be accessed.
 
-This example uses [.NET Core](../../../core/introduction.md) command-line tools. If you are unfamiliar with .NET Core command-line tools, you can learn about them in this [get-started article](../../../core/tutorials/with-visual-studio-code.md).
+This example uses [.NET Core](../../../core/introduction.md) command-line tools. If you're unfamiliar with .NET Core command-line tools, you can learn about them in this [get-started article](../../../core/tutorials/with-visual-studio-code.md).
 
 Create a new application by running `dotnet new console`. Modify the `Main` method in *Program.cs* as follows:
 
 :::code language="csharp" source="snippets/main-command-line/MainReturnValTest.cs":::
+
+Remember to save this program as *MainReturnValTest.cs*.
 
 When a program is executed in Windows, any value returned from the `Main` function is stored in an environment variable. This environment variable can be retrieved using `ERRORLEVEL` from a batch file, or `$LastExitCode` from PowerShell.
 
@@ -87,7 +92,7 @@ You can build the application using the [dotnet CLI](../../../core/tools/dotnet.
 
 Next, create a PowerShell script to run the application and display the result. Paste the following code into a text file and save it as `test.ps1` in the folder that contains the project. Run the PowerShell script by typing `test.ps1` at the PowerShell prompt.
 
-Because the code returns zero, the batch file will report success. However, if you change MainReturnValTest.cs to return a non-zero value and then recompile the program, subsequent execution of the PowerShell script will report failure.
+Because the code returns zero, the batch file reports success. However, if you change MainReturnValTest.cs to return a non-zero value and then recompile the program, subsequent execution of the PowerShell script reports failure.
 
 ```powershell
 dotnet run
@@ -107,24 +112,11 @@ Return value = 0
 
 ### Async Main return values
 
-When you declare an `async` return value for `Main`, the compiler generates the boilerplate code for calling asynchronous methods in `Main`.  If you don't specify the `async` keyword, you need to write that code yourself, as shown in the following example. The code in the example ensures that your program runs until the asynchronous operation is completed:
-
-```csharp
-public static void Main()
-{
-    AsyncConsoleWork().GetAwaiter().GetResult();
-}
-
-private static async Task<int> AsyncConsoleWork()
-{
-    // Main body here
-    return 0;
-}
-```
-
-This boilerplate code can be replaced by:
+When you declare an `async` return value for `Main`, the compiler generates the boilerplate code for calling asynchronous methods in `Main`:
 
 :::code language="csharp" source="snippets/main-arguments/Program.cs" id="AsyncMain":::
+
+In both examples main body of the program is within the body of `AsyncConsoleWork()` method.
 
 An advantage of declaring `Main` as `async` is that the compiler always generates the correct code.
 
@@ -142,24 +134,24 @@ When the application entry point returns a `Task` or `Task<int>`, the compiler g
 
 You can send arguments to the `Main` method by defining the method in one of the following ways:
 
-| `Main` method code                 | `Main` signature                             |
-|------------------------------------|----------------------------------------------|
-| No return value, no use of `await` | `static void Main(string[] args)`            |
-| Return value, no use of `await`    | `static int Main(string[] args)`             |
-| No return value, uses `await`      | `static async Task Main(string[] args)`      |
-| Return value, uses `await`         | `static async Task<int> Main(string[] args)` |
+| `Main` declaration                           | `Main` method code                      |
+|----------------------------------------------|-----------------------------------------|
+| `static void Main(string[] args)`            | No return value or `await`              |
+| `static int Main(string[] args)`             | Returns a value but doesn't use `await` |
+| `static async Task Main(string[] args)`      | Uses `await` but doesn't return a value |
+| `static async Task<int> Main(string[] args)` | Return a value and uses `await`         |
 
-If the arguments are not used, you can omit `args` from the method signature for slightly simpler code:
+If the arguments aren't used, you can omit `args` from the method declaration for slightly simpler code:
 
-| `Main` method code                 | `Main` signature                |
-|------------------------------------|---------------------------------|
-| No return value, no use of `await` | `static void Main()`            |
-| Return value, no use of `await`    | `static int Main()`             |
-| No return value, uses `await`      | `static async Task Main()`      |
-| Return value, uses `await`         | `static async Task<int> Main()` |
+| `Main` declaration              | `Main` method code                      |
+|---------------------------------|-----------------------------------------|
+| `static void Main()`            | No return value or `await`              |
+| `static int Main()`             | Returns a value but doesn't use `await` |
+| `static async Task Main()`      | Uses `await` but doesn't return a value |
+| `static async Task<int> Main()` | Returns a value and uses `await`        |
 
 > [!NOTE]
-> You can also use <xref:System.Environment.CommandLine%2A?displayProperty=nameWithType> or <xref:System.Environment.GetCommandLineArgs%2A?displayProperty=nameWithType> to access the command-line arguments from any point in a console or Windows Forms application. To enable command-line arguments in the `Main` method signature in a Windows Forms application, you must manually modify the signature of `Main`. The code generated by the Windows Forms designer creates `Main` without an input parameter.
+> You can also use <xref:System.Environment.CommandLine%2A?displayProperty=nameWithType> or <xref:System.Environment.GetCommandLineArgs%2A?displayProperty=nameWithType> to access the command-line arguments from any point in a console or Windows Forms application. To enable command-line arguments in the `Main` method declaration in a Windows Forms application, you must manually modify the declaration of `Main`. The code generated by the Windows Forms designer creates `Main` without an input parameter.
 
 The parameter of the `Main` method is a <xref:System.String> array that represents the command-line arguments. Usually you determine whether arguments exist by testing the `Length` property, for example:
 
@@ -174,7 +166,7 @@ You can also convert the string arguments to numeric types by using the <xref:Sy
 long num = Int64.Parse(args[0]);
 ```
 
-It is also possible to use the C# type `long`, which aliases `Int64`:
+It's also possible to use the C# type `long`, which aliases `Int64`:
 
 ```csharp
 long num = long.Parse(args[0]);
@@ -188,6 +180,9 @@ long num = Convert.ToInt64(s);
 
 For more information, see <xref:System.Int64.Parse%2A> and <xref:System.Convert>.
 
+> [!TIP]
+> Parsing command-line arguments can be complex. Consider using the [System.CommandLine](../../../standard/commandline/index.md) library (currently in beta) to simplify the process.
+
 The following example shows how to use command-line arguments in a console application. The application takes one argument at run time, converts the argument to an integer, and calculates the factorial of the number. If no arguments are supplied, the application issues a message that explains the correct usage of the program.
 
 To compile and run the application from a command prompt, follow these steps:
@@ -196,19 +191,23 @@ To compile and run the application from a command prompt, follow these steps:
 
     :::code language="csharp" source="./snippets/main-command-line/Factorial.cs":::
 
+    At the beginning of the `Main` method the program tests if input arguments weren't supplied comparing length of `args` argument to `0` and displays the help if no arguments are found.<br/>
+    If arguments are provided (`args.Length` is greater than 0), the program tries to convert the input arguments to numbers. This example throws an exception if the argument isn't a number.<br/>
+    After factorial is calculated (stored in `result` variable of type `long`), the verbose result is printed depending on the `result` variable.
+
 2. From the **Start** screen or **Start** menu, open a Visual Studio **Developer Command Prompt** window, and then navigate to the folder that contains the file that you created.
 
-3. Enter the following command to compile the application.
+3. To compile the application, enter the following command:
   
      `dotnet build`  
   
-     If your application has no compilation errors, an executable file that's named *Factorial.exe* is created.
+     If your application has no compilation errors, a binary file named *Factorial.dll* is created.
   
 4. Enter the following command to calculate the factorial of 3:
   
      `dotnet run -- 3`  
   
-5. The command produces this output: `The factorial of 3 is 6.`
+5. If 3 is entered on command line as the program's argument, the output reads: `The factorial of 3 is 6.`
 
 > [!NOTE]
 > When running an application in Visual Studio, you can specify command-line arguments in the [Debug Page, Project Designer](/visualstudio/ide/reference/debug-page-project-designer).

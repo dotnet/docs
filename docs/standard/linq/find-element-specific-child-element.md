@@ -91,5 +91,5 @@ This example produces the following output:
 
 - <xref:System.Xml.Linq.XElement.Attribute%2A>
 - <xref:System.Xml.Linq.XContainer.Elements%2A>
-- [Standard Query Operators Overview](../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)
-- [Projection Operations](../../csharp/programming-guide/concepts/linq/projection-operations.md)
+- [Standard Query Operators Overview](../../csharp/linq/standard-query-operators/index.md)
+- [Projection Operations](../../csharp/linq/standard-query-operators/projection-operations.md)

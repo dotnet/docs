@@ -1,8 +1,8 @@
 ---
-title: "Finalizers - C# Programming Guide"
+title: "Finalizers"
 description: Finalizers in C# perform any necessary final clean-up when a class instance is being collected by the garbage collector.
 ms.date: 08/20/2021
-helpviewer_keywords: 
+helpviewer_keywords:
   - "~ [C#], in finalizers"
   - "C# language, finalizers"
   - "finalizers [C#]"
@@ -11,7 +11,7 @@ helpviewer_keywords:
 
 Finalizers (historically referred to as **destructors**) are used to perform any necessary final clean-up when a class instance is being collected by the garbage collector. In most cases, you can avoid writing a finalizer by using the  <xref:System.Runtime.InteropServices.SafeHandle?displayProperty=fullName> or derived classes to wrap any unmanaged handle.
 
-## Remarks  
+## Remarks
 
 - Finalizers cannot be defined in structs. They are only used with classes.
 - A class can only have one finalizer.
@@ -52,7 +52,7 @@ The programmer has no control over when the finalizer is called; the garbage col
 
 > [!NOTE]
 > Whether or not finalizers are run as part of application termination is specific to each [implementation of .NET](../../../standard/glossary.md#implementation-of-net). When an application terminates, .NET Framework makes every reasonable effort to call finalizers for objects that haven't yet been garbage collected, unless such cleanup has been suppressed (by a call to the library method `GC.SuppressFinalize`, for example). .NET 5 (including .NET Core) and later versions don't call finalizers as part of application termination. For more information, see GitHub issue [dotnet/csharpstandard #291](https://github.com/dotnet/csharpstandard/issues/291).
-  
+
  If you need to perform cleanup reliably when an application exits, register a handler for the <xref:System.AppDomain.ProcessExit?displayProperty=fullName> event. That handler would ensure <xref:System.IDisposable.Dispose?displayProperty=nameWithType> (or, <xref:System.IAsyncDisposable.DisposeAsync?displayProperty=nameWithType>) has been called for all objects that require cleanup before application exit. Because you can't call *Finalize* directly, and you can't guarantee the garbage collector calls all finalizers before exit, you must use `Dispose` or `DisposeAsync` to ensure resources are freed.
 
 ## Using finalizers to release resources
@@ -63,12 +63,12 @@ In general, C# does not require as much memory management on the part of the dev
 
 If your application is using an expensive external resource, we also recommend that you provide a way to explicitly release the resource before the garbage collector frees the object. To release the resource, implement a `Dispose` method from the <xref:System.IDisposable> interface that performs the necessary cleanup for the object. This can considerably improve the performance of the application. Even with this explicit control over resources, the finalizer becomes a safeguard to clean up resources if the call to the `Dispose` method fails.
 
-For more information about cleaning up resources, see the following articles:  
+For more information about cleaning up resources, see the following articles:
 
 - [Cleaning Up Unmanaged Resources](../../../standard/garbage-collection/unmanaged.md)
 - [Implementing a Dispose Method](../../../standard/garbage-collection/implementing-dispose.md)
 - [Implementing a DisposeAsync Method](../../../standard/garbage-collection/implementing-disposeasync.md)
-- [using statement](../../language-reference/statements/using.md)
+- [`using` statement](../../language-reference/statements/using.md)
 
 ## Example
 
@@ -78,14 +78,13 @@ The following example creates three classes that make a chain of inheritance. Th
 * .NET 5 (including .NET Core) or a later version: There's no output, because this implementation of .NET doesn't call finalizers when the application terminates.
 
 :::code language="csharp" source="snippets/finalizers/Program.cs" ID="Snippet1":::
-  
-## C# language specification  
+
+## C# language specification
 
 For more information, see the [Finalizers](~/_csharpstandard/standard/classes.md#1513-finalizers) section of the [C# Language Specification](~/_csharpstandard/standard/README.md).
-  
+
 ## See also
 
 - <xref:System.IDisposable>
-- [C# Programming Guide](../index.md)
 - [Constructors](./constructors.md)
 - [Garbage Collection](../../../standard/garbage-collection/index.md)

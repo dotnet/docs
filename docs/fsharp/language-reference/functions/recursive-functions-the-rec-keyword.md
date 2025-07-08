@@ -78,6 +78,19 @@ The reason why this is tail-recursive is because the recursive call does not nee
 
 It's common to write F# code that recursively processes something with an inner and outer function, as the previous example shows. The inner function uses tail recursion, while the outer function has a better interface for callers.
 
+Starting with F# 8.0, you can use the `TailCall` attribute to explicitly state your intention of defining a tail-recursive function to the compiler. The compiler will then warn you if your function makes non-tail recursive calls. You can use the attribute on methods and module-level functions.  
+For example, using it on the first `fib` definition:
+
+```fsharp
+[<TailCall>]
+let rec fib n =
+    match n with
+    | 0 | 1 -> n
+    | n -> fib (n-1) + fib (n-2)
+```
+
+would trigger compiler warnings about the two non-tail recursive calls.
+
 ## Mutually Recursive Functions
 
 Sometimes functions are *mutually recursive*, meaning that calls form a circle, where one function calls another which in turn calls the first, with any number of calls in between. You must define such functions together in one `let` binding, using the `and` keyword to link them together.

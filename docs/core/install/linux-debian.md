@@ -1,9 +1,10 @@
 ---
 title: Install .NET on Debian
-description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Debian.
+description: Learn about which versions of .NET SDK and .NET Runtime are supported, and how to install .NET on Debian.
 author: adegeo
 ms.author: adegeo
-ms.date: 08/09/2023
+ms.date: 11/01/2024
+ms.custom: linux-related-content
 ---
 
 # Install the .NET SDK or the .NET Runtime on Debian
@@ -18,11 +19,9 @@ This article describes how to install .NET on Debian. When a Debian version fall
 
 The following table is a list of currently supported .NET releases and the versions of Debian they're supported on. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of [Debian reaches end-of-life](https://wiki.debian.org/DebianReleases).
 
-| Debian  | .NET      |
-|---------|-----------|
-| 12      | 7, 6      |
-| 11      | 7, 6      |
-| 10      | 7, 6      |
+| Debian | .NET    |
+|--------|---------|
+| 12     | 9, 8    |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
@@ -44,35 +43,15 @@ sudo dpkg -i packages-microsoft-prod.deb
 rm packages-microsoft-prod.deb
 ```
 
-[!INCLUDE [linux-apt-install-70](includes/linux-install-70-apt.md)]
+# [.NET 9](#tab/dotnet9)
 
-## Debian 11
+[!INCLUDE [linux-apt-install-90](includes/linux-install-90-apt.md)]
 
-[!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
+# [.NET 8](#tab/dotnet8)
 
-```bash
-wget https://packages.microsoft.com/config/debian/11/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
-sudo dpkg -i packages-microsoft-prod.deb
-rm packages-microsoft-prod.deb
-```
+[!INCLUDE [linux-apt-install-80](includes/linux-install-80-apt.md)]
 
-[!INCLUDE [linux-apt-install-70](includes/linux-install-70-apt.md)]
-
-## Debian 10
-
-[!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
-
-```bash
-wget https://packages.microsoft.com/config/debian/10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
-sudo dpkg -i packages-microsoft-prod.deb
-rm packages-microsoft-prod.deb
-```
-
-[!INCLUDE [linux-apt-install-70](includes/linux-install-70-apt.md)]
-
-## How to install other versions
-
-[!INCLUDE [package-manager-switcher](./includes/package-manager-heading-hack-pkgname.md)]
+---
 
 ## Use APT to update .NET
 
@@ -95,19 +74,15 @@ This section provides information on common errors you may get while using APT t
 
 ### Unable to locate \\ Some packages could not be installed
 
-[!INCLUDE [package-manager-failed-to-find-deb](includes/package-manager-failed-to-find-deb.md)]
+[!INCLUDE [package-manager-failed-to-find-deb-intro](includes/package-manager-failed-to-find-deb-intro.md)]
 
-```bash
-sudo apt-get install -y gpg
-wget -O - https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor -o microsoft.asc.gpg
-sudo mv microsoft.asc.gpg /etc/apt/trusted.gpg.d/
-wget https://packages.microsoft.com/config/debian/{os-version}/prod.list
-sudo mv prod.list /etc/apt/sources.list.d/microsoft-prod.list
-sudo chown root:root /etc/apt/trusted.gpg.d/microsoft.asc.gpg
-sudo chown root:root /etc/apt/sources.list.d/microsoft-prod.list
-sudo apt-get update && \
-  sudo apt-get install -y {dotnet-package}
-```
+If you're using Debian 12 or later, try the following commands:
+
+[!INCLUDE [package-manager-failed-to-find-deb-new](includes/package-manager-failed-to-find-deb-new.md)]
+
+If you're using a Debian version prior to 12, try the following commands:
+
+[!INCLUDE [package-manager-failed-to-find-deb-classic](includes/package-manager-failed-to-find-deb-classic.md)]
 
 ### Failed to fetch
 
@@ -117,15 +92,37 @@ sudo apt-get update && \
 
 When you install with a package manager, these libraries are installed for you. But, if you manually install .NET or you publish a self-contained app, you'll need to make sure these libraries are installed:
 
+### 12.x
+
 - libc6
 - libgcc-s1
 - libgssapi-krb5-2
-- libicu63 (for 10.x)
-- libicu67 (for 11.x)
-- libicu72 (for 12.x)
+- libicu72
+- libssl3
+- libstdc++6
+- zlib1g
+
+### 11.x
+
+- libc6
+- libgcc-s1
+- libgssapi-krb5-2
+- libicu67
 - libssl1.1
 - libstdc++6
 - zlib1g
+
+### 10.x
+
+- libc6
+- libgcc1
+- libgssapi-krb5-2
+- libicu63
+- libssl1.1
+- libstdc++6
+- zlib1g
+
+### Other notes
 
 Dependencies can be installed with the `apt install` command. The following snippet demonstrates installing the `libc6` library:
 
@@ -133,11 +130,8 @@ Dependencies can be installed with the `apt install` command. The following snip
 sudo apt install libc6
 ```
 
-[!INCLUDE [linux-libgdiplus-general](includes/linux-libgdiplus-general.md)]
-
-You can install a recent version of *libgdiplus* by [adding the Mono repository to your system](https://www.mono-project.com/download/stable/#download-lin-debian).
-
 ## Next steps
 
+- [.NET CLI overview](../tools/index.md)
 - [How to enable TAB completion for the .NET CLI](../tools/enable-tab-autocomplete.md)
 - [Tutorial: Create a console application with .NET SDK using Visual Studio Code](../tutorials/with-visual-studio-code.md)

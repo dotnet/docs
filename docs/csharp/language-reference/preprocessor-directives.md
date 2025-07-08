@@ -1,8 +1,8 @@
 ---
 description: "Learn the different C# preprocessor directives that control conditional compilation, warnings, nullable analysis, and more"
-title: "C# preprocessor directives"
-ms.date: 01/30/2023
-f1_keywords: 
+title: "Preprocessor directives"
+ms.date: 06/19/2025
+f1_keywords:
   - "cs.preprocessor"
   - "#nullable"
   - "#if"
@@ -20,7 +20,11 @@ f1_keywords:
   - "#pragma warning"
   - "#pragma checksum"
   - "defaultline_CSharpKeyword"
-helpviewer_keywords: 
+  - "#!"
+  - "#:sdk"
+  - "#:property"
+  - "#:package"
+helpviewer_keywords:
   - "preprocessor directives [C#]"
   - "keywords [C#], preprocessor directives"
   - "#nullable directive [C#]"
@@ -43,23 +47,80 @@ helpviewer_keywords:
 
 Although the compiler doesn't have a separate preprocessor, the directives described in this section are processed as if there were one. You use them to help in conditional compilation. Unlike C and C++ directives, you can't use these directives to create macros. A preprocessor directive must be the only instruction on a line.
 
+## File based programs
+
+*File based programs* are programs that are compiled and run using `dotnet run Program.cs` (or any `*.cs` file). The C# compiler ignores these preprocessor directives, but the build system parses them to produce the output. These directives generate warnings when encountered in a project-based compilation.
+
+The C# compiler ignores any preprocessor directive that starts with `#:` or `#!`.
+
+The `#!` preprocessor directive enables unix shells to directly execute a C# file using `dotnet run`. For example:
+
+```csharp
+#!/usr/local/share/dotnet/dotnet run
+Console.WriteLine("Hello");
+```
+
+The preceding code snippet informs a Unix shell to execute the file using `/usr/local/share/dotnet/dotnet run`. (Your installation directory for the `dotnet` CLI can be different on different Unix or macOS distributions). The `#!` line must be the first line in the file, and the following tokens are the program to run. You need to enable the *execute* (`x`) permission on the C# file for that feature.
+
+The `#:` directives that are used in file based programs include:
+
+- `#:sdk`:
+
+  The first instance specifies the value for the `<Project Sdk="value" />` node. Subsequent instances specify the `<Sdk Name="value" Version="version" />` node. The version can be omitted. For example:
+
+  ```csharp
+  #:sdk Microsoft.NET.Sdk.Web
+  ```
+
+- `#:property`:
+
+  Instances of `#:property` are translated into property elements in a `<PropertyGroup>`. A token of the form `Name=value` must follow the `property` token. The following example directives are valid `property` tokens:
+
+  ```csharp
+  #:property TargetFramework=net11.0
+  #:property LangVersion=preview
+  ```
+
+  The preceding two properties are translated into:
+
+  ```xml
+  <TargetFramework>net11.0</TargetFramework>
+  <LangVersion>preview</LangVersion>
+  ```
+
+- `#:package`:
+
+  Instances of `#:package` are translated into `PackageReference` elements to include NuGet packages with the specified version to your file. For example:
+
+  ```csharp
+  #:package System.CommandLine@2.0.0-*
+  ```
+
+  The preceding preprocessor token is translated into:
+
+  ```xml
+  <PackageReference Include="System.CommandLine" Version="2.0.0-*">
+  ```
+  
+Tools can add new tokens following the `#:` convention.
+
 ## Nullable context
 
-The `#nullable` preprocessor directive sets the *nullable annotation context* and *nullable warning context*. This directive controls whether nullable annotations have effect, and whether nullability warnings are given. Each context is either *disabled* or *enabled*.
+The `#nullable` preprocessor directive sets the *annotations* and *warning* flags in the  *nullable context*. This directive controls whether nullable annotations have effect, and whether nullability warnings are given. Each flag is either *disabled* or *enabled*.
 
-Both contexts can be specified at the project level (outside of C# source code). The `#nullable` directive controls the annotation and warning contexts and takes precedence over the project-level settings. A directive sets the context(s) it controls until another directive overrides it, or until the end of the source file.
+Both contexts can be specified at the project level (outside of C# source code) adding the [`Nullable`](./compiler-options/language.md#nullable) element to the `PropertyGroup` element. The `#nullable` directive controls the annotation and warning flags and takes precedence over the project-level settings. A directive sets the flag it controls until another directive overrides it, or until the end of the source file.
 
 The effect of the directives is as follows:
 
-- `#nullable disable`: Sets the nullable annotation and warning contexts to *disabled*.
-- `#nullable enable`: Sets the nullable annotation and warning contexts to *enabled*.
-- `#nullable restore`: Restores the nullable annotation and warning contexts to project settings.
-- `#nullable disable annotations`: Sets the nullable annotation context to *disabled*.
-- `#nullable enable annotations`: Sets the nullable annotation context to *enabled*.
-- `#nullable restore annotations`: Restores the nullable annotation context to project settings.
-- `#nullable disable warnings`: Sets the nullable warning context to *disabled*.
-- `#nullable enable warnings`: Sets the nullable warning context to *enabled*.
-- `#nullable restore warnings`: Restores the nullable warning context to project settings.
+- `#nullable disable`: Sets the nullable context *disabled*.
+- `#nullable enable`: Sets the nullable context *enabled*.
+- `#nullable restore`: Restores the nullable context to project settings.
+- `#nullable disable annotations`: Sets the annotations flag in the nullable context to *disabled*.
+- `#nullable enable annotations`: Sets the annotations flag in the nullable context to *enabled*.
+- `#nullable restore annotations`: Restores the annotations flag in the nullable context to project settings.
+- `#nullable disable warnings`: Sets the warning flag in the nullable context to *disabled*.
+- `#nullable enable warnings`: Sets the warning flag in the nullable context to *enabled*.
+- `#nullable restore warnings`: Restores the warning flag  in the nullable context to project settings.
 
 ## Conditional compilation
 
@@ -70,7 +131,16 @@ You use four preprocessor directives to control conditional compilation:
 - `#else`: Closes the preceding conditional compilation and opens a new conditional compilation if the previous specified symbol isn't defined.
 - `#endif`: Closes the preceding conditional compilation.
 
-The C# compiler compiles the code between the `#if` directive and  `#endif` directive only if the specified symbol is defined, or not defined when the `!` not operator is used. Unlike C and C++, a numeric value to a symbol can't be assigned. The `#if` statement in C# is Boolean and only tests whether the symbol has been defined or not. For example, the following code is compiled when `DEBUG` is defined:
+The build system is also aware of predefined preprocessor symbols representing different [target frameworks](../../standard/frameworks.md) in SDK-style projects. They're useful when creating applications that can target more than one .NET version.
+
+[!INCLUDE [Preprocessor symbols](~/includes/preprocessor-symbols.md)]
+
+> [!NOTE]
+> For traditional, non-SDK-style projects, you have to manually configure the conditional compilation symbols for the different target frameworks in Visual Studio via the project's properties pages.
+
+Other predefined symbols include the `DEBUG` and `TRACE` constants. You can override the values set for the project using `#define`. The DEBUG symbol, for example, is automatically set depending on your build configuration properties ("Debug" or "Release" mode).
+
+The C# compiler compiles the code between the `#if` directive and  `#endif` directive only if the specified symbol is defined, or not defined when the `!` not operator is used. Unlike C and C++, a numeric value to a symbol can't be assigned. The `#if` statement in C# is Boolean and only tests whether the symbol is defined or not. For example, the following code is compiled when `DEBUG` is defined:
 
 ```csharp
 #if DEBUG
@@ -86,13 +156,21 @@ The following code is compiled when `MYTEST` is **not** defined:
 #endif
 ```
 
-You can use the operators [`==` (equality)](operators/equality-operators.md#equality-operator-) and [`!=` (inequality)](operators/equality-operators.md#inequality-operator-) to test for the [`bool`](builtin-types/bool.md) values `true` or `false`. `true` means the symbol is defined. The statement `#if DEBUG` has the same meaning as `#if (DEBUG == true)`. You can use the [`&&` (and)](operators/boolean-logical-operators.md#conditional-logical-and-operator-), [`||` (or)](operators/boolean-logical-operators.md#conditional-logical-or-operator-), and [`!` (not)](operators/boolean-logical-operators.md#logical-negation-operator-) operators to evaluate whether multiple symbols have been defined. You can also group symbols and operators with parentheses.
+You can use the operators [`==` (equality)](operators/equality-operators.md#equality-operator-) and [`!=` (inequality)](operators/equality-operators.md#inequality-operator-) to test for the [`bool`](builtin-types/bool.md) values `true` or `false`. `true` means the symbol is defined. The statement `#if DEBUG` has the same meaning as `#if (DEBUG == true)`. You can use the [`&&` (and)](operators/boolean-logical-operators.md#conditional-logical-and-operator-), [`||` (or)](operators/boolean-logical-operators.md#conditional-logical-or-operator-), and [`!` (not)](operators/boolean-logical-operators.md#logical-negation-operator-) operators to evaluate whether multiple symbols are defined. You can also group symbols and operators with parentheses.
+
+The following example shows a complex directive that allows your code to take advantage of newer .NET features while remaining backward compatible. For example, imagine that you're using a NuGet package in your code, but the package only supports .NET 6 and up, as well as .NET Standard 2.0 and up:
+
+```csharp
+#if (NET6_0_OR_GREATER || NETSTANDARD2_0_OR_GREATER)
+    Console.WriteLine("Using .NET 6+ or .NET Standard 2+ code.");
+#else
+    Console.WriteLine("Using older code that doesn't support the above .NET versions.");
+#endif
+```
 
 `#if`, along with the `#else`, `#elif`, `#endif`, `#define`, and `#undef` directives, lets you include or exclude code based on the existence of one or more symbols. Conditional compilation can be useful when compiling code for a debug build or when compiling for a specific configuration.
 
-A conditional directive beginning with an `#if` directive must explicitly be terminated with an `#endif` directive. `#define` lets you define a symbol. By using the symbol as the expression passed to the `#if` directive, the expression evaluates to `true`. You can also define a symbol with the [**DefineConstants**](compiler-options/language.md#defineconstants) compiler option. You can undefine a symbol with `#undef`. The scope of a symbol created with `#define` is the file in which it was defined. A symbol that you define with **DefineConstants** or with `#define` doesn't conflict with a variable of the same name. That is, a variable name shouldn't be passed to a preprocessor directive, and a symbol can only be evaluated by a preprocessor directive.
-
-`#elif` lets you create a compound conditional directive. The `#elif` expression will be evaluated if neither the preceding `#if` nor any preceding, optional, `#elif` directive expressions evaluate to `true`. If an `#elif` expression evaluates to `true`, the compiler evaluates all the code between the `#elif` and the next conditional directive. For example:
+`#elif` lets you create a compound conditional directive. The `#elif` expression is evaluated if neither the preceding `#if` nor any preceding, optional, `#elif` directive expressions evaluate to `true`. If an `#elif` expression evaluates to `true`, the compiler evaluates all the code between the `#elif` and the next conditional directive. For example:
 
 ```csharp
 #define VC7
@@ -108,15 +186,6 @@ A conditional directive beginning with an `#if` directive must explicitly be ter
 
 `#endif` specifies the end of a conditional directive, which began with the `#if` directive.
 
-The build system is also aware of predefined preprocessor symbols representing different [target frameworks](../../standard/frameworks.md) in SDK-style projects. They're useful when creating applications that can target more than one .NET version.
-
-[!INCLUDE [Preprocessor symbols](~/includes/preprocessor-symbols.md)]
-
-> [!NOTE]
-> For traditional, non-SDK-style projects, you have to manually configure the conditional compilation symbols for the different target frameworks in Visual Studio via the project's properties pages.
-
-Other predefined symbols include the `DEBUG` and `TRACE` constants. You can override the values set for the project using `#define`. The DEBUG symbol, for example, is automatically set depending on your build configuration properties ("Debug" or "Release" mode).
-
 The following example shows you how to define a `MYTEST` symbol on a file and then test the values of the `MYTEST` and `DEBUG` symbols. The output of this example depends on whether you built the project on **Debug** or **Release** configuration mode.
 
 ```csharp
@@ -131,7 +200,7 @@ public class MyClass
 #elif (!DEBUG && MYTEST)
         Console.WriteLine("MYTEST is defined");
 #elif (DEBUG && MYTEST)
-        Console.WriteLine("DEBUG and MYTEST are defined");  
+        Console.WriteLine("DEBUG and MYTEST are defined");
 #else
         Console.WriteLine("DEBUG and MYTEST are not defined");
 #endif
@@ -163,7 +232,7 @@ You use the following two preprocessor directives to define or undefine symbols 
 - `#define`: Define a symbol.
 - `#undef`: Undefine a symbol.
 
-You use `#define` to define a symbol. When you use the symbol as the expression that's passed to the `#if` directive, the expression will evaluate to `true`, as the following example shows:
+You use `#define` to define a symbol. When you use the symbol as the expression passed to the `#if` directive, the expression evaluates to `true`, as the following example shows:
 
  ```csharp
  #define VERBOSE
@@ -171,11 +240,10 @@ You use `#define` to define a symbol. When you use the symbol as the expression 
 #if VERBOSE
     Console.WriteLine("Verbose output version");
 #endif
-
  ```
 
 > [!NOTE]
-> The `#define` directive cannot be used to declare constant values as is typically done in C and C++. Constants in C# are best defined as static members of a class or struct. If you have several such constants, consider creating a separate "Constants" class to hold them.
+> In C#, primitive constants should be defined using the [`const`](keywords/const.md) keyword. A `const` declaration creates a `static` member that can't be modified at runtime. The `#define` directive can't be used to declare constant values as is typically done in C and C++. If you have several such constants, consider creating a separate "Constants" class to hold them.
 
 Symbols can be used to specify conditions for compilation. You can test for the symbol with either `#if` or `#elif`. You can also use the <xref:System.Diagnostics.ConditionalAttribute> to perform conditional compilation. You can define a symbol, but you can't assign a value to a symbol. The `#define` directive must appear in the file before you use any instructions that aren't also preprocessor directives. You can also define a symbol with the [**DefineConstants**](compiler-options/language.md#defineconstants) compiler option. You can undefine a symbol with `#undef`.
 
@@ -226,7 +294,7 @@ You instruct the compiler to generate user-defined compiler errors and warnings,
 
 `#line` lets you modify the compiler's line numbering and (optionally) the file name output for errors and warnings.
 
-The following example shows how to report two warnings associated with line numbers. The `#line 200` directive forces the next line's number to be 200 (although the default is #6), and until the next `#line` directive, the filename will be reported as "Special". The `#line default` directive returns the line numbering to its default numbering, which counts the lines that were renumbered by the previous directive.
+The following example shows how to report two warnings associated with line numbers. The `#line 200` directive forces the next line's number to be 200 (although the default is #6), and until the next `#line` directive, the filename will be reported as "Special." The `#line default` directive returns the line numbering to its default numbering, which counts the lines renumbered by the previous directive.
 
 ```csharp
 class MainClass
@@ -259,13 +327,13 @@ MainClass.cs(13,16): warning CS0168: The variable 'd' is declared but never used
 
 The `#line` directive might be used in an automated, intermediate step in the build process. For example, if lines were removed from the original source code file, but you still wanted the compiler to generate output based on the original line numbering in the file, you could remove lines and then simulate the original line numbering with `#line`.
 
-The `#line hidden` directive hides the successive lines from the debugger, such that when the developer steps through the code, any lines between a `#line hidden` and the next `#line` directive (assuming that it isn't another `#line hidden` directive) will be stepped over. This option can also be used to allow ASP.NET to differentiate between user-defined and machine-generated code. Although ASP.NET is the primary consumer of this feature, it's likely that more source generators will make use of it.
+The `#line hidden` directive hides the successive lines from the debugger, such that when the developer steps through the code, any lines between a `#line hidden` and the next `#line` directive (assuming that it isn't another `#line hidden` directive) will be stepped over. This option can also be used to allow ASP.NET to differentiate between user-defined and machine-generated code. Although ASP.NET is the primary consumer of this feature, it's likely that more source generators make use of it.
 
-A `#line hidden` directive doesn't affect file names or line numbers in error reporting. That is, if the compiler finds an error in a hidden block, the compiler will report the current file name and line number of the error.
+A `#line hidden` directive doesn't affect file names or line numbers in error reporting. That is, if the compiler finds an error in a hidden block, the compiler reports the current file name and line number of the error.
 
-The `#line filename` directive specifies the file name you want to appear in the compiler output. By default, the actual name of the source code file is used. The file name must be in double quotation marks ("") and must be preceded by a line number.
+The `#line filename` directive specifies the file name you want to appear in the compiler output. By default, the actual name of the source code file is used. The file name must be in double quotation marks ("") and must follow a line number.
 
-Beginning with C# 10, you can use a new form of the `#line` directive:
+You can use a new form of the `#line` directive:
 
 ```csharp
 #line (1, 1) - (5, 60) 10 "partial-class.cs"
@@ -274,9 +342,9 @@ Beginning with C# 10, you can use a new form of the `#line` directive:
 
 The components of this form are:
 
-- `(1, 1)`:  The start line and column for the first character on the line that follows the directive. In this example, the next line would be reported as line 1, column 1.
+- `(1, 1)`:  The start line and column for the first character on the line following the directive. In this example, the next line would be reported as line 1, column 1.
 - `(5, 60)`: The end line and column for the marked region.
-- `10`: The column offset for the `#line` directive to take effect. In this example, the 10th column would be reported as column one. That's where the declaration `int b = 0;` begins. This field is optional. If omitted, the directive takes effect on the first column.
+- `10`: The column offset for the `#line` directive to take effect. In this example, the 10th column would be reported as column one. The declaration `int b = 0;` begins at that column. This field is optional. If omitted, the directive takes effect on the first column.
 - `"partial-class.cs"`: The name of the output file.
 
 The preceding example would generate the following warning:
@@ -287,18 +355,18 @@ partial-class.cs(1,5,1,6): warning CS0219: The variable 'b' is assigned but its 
 
 After remapping, the variable, `b`, is on the first line, at character six, of the file `partial-class.cs`.
 
-Domain-specific languages (DSLs) typically use this format to provide a better mapping from the source file to the generated C# output. The most common use of this extended `#line` directive is to re-map warnings or errors that appear in a generated file to the original source.  For example, consider this razor page:
+Domain-specific languages (DSLs) typically use this format to provide a better mapping from the source file to the generated C# output. The most common use of this extended `#line` directive is to remap warnings or errors that appear in a generated file to the original source. For example, consider this razor page:
 
 ```razor
 @page "/"
 Time: @DateTime.NowAndThen
 ```
 
-The property `DateTime.Now` was typed incorrectly as `DateTime.NowAndThen`.  The generated C# for this razor snippet looks like the following, in `page.g.cs`:
+The property `DateTime.Now` was typed incorrectly as `DateTime.NowAndThen`. The generated C# for this razor snippet looks like the following, in `page.g.cs`:
 
 ```csharp
   _builder.Add("Time: ");
-#line (2, 6) (2, 27) 15 "page.razor"
+#line (2, 6) - (2, 27) 15 "page.razor"
   _builder.Add(DateTime.NowAndThen);
 ```
 
@@ -308,14 +376,14 @@ The compiler output for the preceding snippet is:
 page.razor(2, 2, 2, 27)error CS0117: 'DateTime' does not contain a definition for 'NowAndThen'
 ```
 
-Line 2, column 6 in `page.razor` is where the text `@DateTime.NowAndThen` begins. That's noted by `(2, 6)` in the directive. That span of `@DateTime.NowAndThen` ends at line 2, column 27. That's noted by the `(2, 27)` in the directive. The text for `DateTime.NowAndThen` begins in column 15 of `page.g.cs`. That's noted by the `15` in the directive. Putting all the arguments together, and the compiler reports the error in its location in `page.razor`. The developer can navigate directly to the error in their source code, not the generated source.
+Line 2, column 6 in `page.razor` is where the text `@DateTime.NowAndThen` begins, noted by `(2, 6)` in the directive. That span of `@DateTime.NowAndThen` ends at line 2, column 27, noted by the `(2, 27)` in the directive. The text for `DateTime.NowAndThen` begins in column 15 of `page.g.cs`, noted by the `15` in the directive. The compiler reports the error in its location in `page.razor`. The developer can navigate directly to the error in their source code, not the generated source.
 
 To see more examples of this format, see the [feature specification](~/_csharplang/proposals/csharp-10.0/enhanced-line-directives.md#examples) in the section on examples.
 
 ## Pragmas
 
-`#pragma` gives the compiler special instructions for the compilation of the file in which it appears. The instructions must be supported by the compiler. In other words, you can't use `#pragma` to create custom preprocessing instructions.
-  
+`#pragma` gives the compiler special instructions for the compilation of the file in which it appears. The compiler must support the pragmas you use. In other words, you can't use `#pragma` to create custom preprocessing instructions.
+
 - [`#pragma warning`](#pragma-warning): Enable or disable warnings.
 - [`#pragma checksum`](#pragma-checksum): Generate a checksum.
 
@@ -327,14 +395,14 @@ Where `pragma-name` is the name of a recognized pragma and `pragma-arguments` is
 
 ### #pragma warning
 
-`#pragma warning` can enable or disable certain warnings.
+`#pragma warning` can enable or disable certain warnings. The `#pragma warning disable format` and `#pragma warning enable format` control how Visual Studio formats code blocks.
 
 ```csharp
 #pragma warning disable warning-list
 #pragma warning restore warning-list
 ```
 
-Where `warning-list` is a comma-separated list of warning numbers. The "CS" prefix is optional. When no warning numbers are specified, `disable` disables all warnings and `restore` enables all warnings.
+Where `warning-list` is a comma-separated list of warning numbers, such as `414, CS3021`. The "CS" prefix is optional. When no warning numbers are specified, `disable` disables all warnings and `restore` enables all warnings.
 
 > [!NOTE]
 > To find warning numbers in Visual Studio, build your project and then look for the warning numbers in the **Output** window.
@@ -364,6 +432,15 @@ public class D
     }
 }
 ```
+
+Another form of the `warning` pragma disables or restores Visual Studio formatting commands in blocks of code:
+
+```csharp
+#pragma warning disable format
+#pragma warning restore format
+```
+
+Visual Studio format commands don't modify text in blocks of code where `disable format` is in effect. Format commands, such as <kbd>Ctrl+K</kbd>, <kbd>Ctrl+D</kbd>, don't modify those regions of code. This pragma gives you fine control over the visual presentation of your code.
 
 ### #pragma checksum
 

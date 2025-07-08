@@ -1,6 +1,9 @@
 ﻿using attributes;
 using AttributeExamples;
 
+
+OverloadExample.OrpaExample();
+
 TraceExample.Main();
 ObsoleteProgram.Main();
 ModuleInitializerExampleMain.Main();

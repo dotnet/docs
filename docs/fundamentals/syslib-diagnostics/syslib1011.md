@@ -2,6 +2,8 @@
 title: SYSLIB1011 error
 description: Learn about the diagnostic that generates compile-time error SYSLIB1011.
 ms.date: 05/07/2021
+f1_keywords:
+  - syslib1011
 ---
 
 # SYSLIB1011: Logging methods cannot be generic

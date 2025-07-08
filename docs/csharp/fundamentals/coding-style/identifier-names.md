@@ -1,7 +1,7 @@
 ---
-title: "C# identifier names - rules and conventions"
+title: "Identifier names - rules and conventions"
 description: "Learn the rules for valid identifier names in the C# programming language. In addition, learn the common naming conventions used by the .NET runtime team and the .NET docs team."
-ms.date: 07/27/2023
+ms.date: 11/27/2023
 ---
 # C# identifier naming rules and conventions
 
@@ -9,49 +9,53 @@ An **identifier** is the name you assign to a type (class, interface, struct, de
 
 ## Naming rules
 
-Valid identifiers must follow these rules:
+Valid identifiers must follow these rules. The C# compiler produces an error for any identifier that doesn't follow these rules:
 
 - Identifiers must start with a letter or underscore (`_`).
-- Identifiers may contain Unicode letter characters, decimal digit characters, Unicode connecting characters, Unicode combining characters, or Unicode formatting characters. For more information on Unicode categories, see the [Unicode Category Database](https://www.unicode.org/reports/tr44/).
+- Identifiers can contain Unicode letter characters, decimal digit characters, Unicode connecting characters, Unicode combining characters, or Unicode formatting characters. For more information on Unicode categories, see the [Unicode Category Database](https://www.unicode.org/reports/tr44/).
 
 You can declare identifiers that match C# keywords by using the `@` prefix on the identifier. The `@` isn't part of the identifier name. For example, `@if` declares an identifier named `if`. These [verbatim identifiers](../../language-reference/tokens/verbatim.md) are primarily for interoperability with identifiers declared in other languages.
 
 For a complete definition of valid identifiers, see the [Identifiers article in the C# Language Specification](~/_csharpstandard/standard/lexical-structure.md#643-identifiers).
 
+> [!IMPORTANT]
+> [The C# language specification](~/_csharpstandard/standard/lexical-structure.md#643-identifiers) only allows letter (Lu, Ll, Lt, Lm, or Nl), digit (Nd), connecting (Pc), combining (Mn or Mc), and formatting (Cf) categories. Anything outside that is automatically replaced using `_`. This might impact certain Unicode characters.
+
 ## Naming conventions
 
-In addition to the rules, there are many identifier [naming conventions](../../../standard/design-guidelines/naming-guidelines.md) used throughout the .NET APIs. By convention, C# programs use `PascalCase` for type names, namespaces, and all public members. In addition, the `dotnet/docs` team uses the following conventions, adopted from the [.NET Runtime team coding style](https://github.com/dotnet/runtime/blob/main/docs/coding-guidelines/coding-style.md):
+In addition to the rules, conventions for identifier names are used throughout the .NET APIs. These conventions provide consistency for names, but the compiler doesn't enforce them. You're free to use different conventions in your projects.
+
+By convention, C# programs use `PascalCase` for type names, namespaces, and all public members. In addition, the `dotnet/docs` team uses the following conventions, adopted from the [.NET Runtime team's coding style](https://github.com/dotnet/runtime/blob/main/docs/coding-guidelines/coding-style.md):
 
 - Interface names start with a capital `I`.
 - Attribute types end with the word `Attribute`.
 - Enum types use a singular noun for nonflags, and a plural noun for flags.
 - Identifiers shouldn't contain two consecutive underscore (`_`) characters. Those names are reserved for compiler-generated identifiers.
 - Use meaningful and descriptive names for variables, methods, and classes.
-- Avoid using single-letter names, except for simple loop counters. See exceptions for syntax examples noted in the following section.
 - Prefer clarity over brevity.
 - Use PascalCase for class names and method names.
 - Use camelCase for method arguments, local variables, and private fields.
 - Use PascalCase for constant names, both fields and local constants.
 - Private instance fields start with an underscore (`_`).
-- Static fields start with `s_`. Note that this isn't the default Visual Studio behavior, nor part of the [Framework design guidelines](../../../standard/design-guidelines/names-of-type-members.md#names-of-fields), but is configurable in editorconfig.
+- Static fields start with `s_`. This convention isn't the default Visual Studio behavior, nor part of the [Framework design guidelines](../../../standard/design-guidelines/names-of-type-members.md#names-of-fields), but is [configurable in editorconfig](../../../fundamentals/code-analysis/style-rules/naming-rules.md).
 - Avoid using abbreviations or acronyms in names, except for widely known and accepted abbreviations.
 - Use meaningful and descriptive namespaces that follow the reverse domain name notation.
 - Choose assembly names that represent the primary purpose of the assembly.
+- Avoid using single-letter names, except for simple loop counters. Also, syntax examples that describe the syntax of C# constructs often use the following single-letter names that match the convention used in the [C# language specification](~/_csharpstandard/standard/readme.md). Syntax examples are an exception to the rule.
 
-The examples that describe the syntax of C# constructs often use single letter names that match the convention used in the [C# language specification](~/_csharpstandard/standard/readme.md):
+  - Use `S` for structs, `C` for classes.
+  - Use `M` for methods.
+  - Use `v` for variables, `p` for parameters.
+  - Use `r` for `ref` parameters.
 
-- Use `S` for structs, `C` for classes.
-- Use `M` for methods.
-- Use `v` for variables, `p` for parameters.
-- Use `r` for `ref` parameters.
+> [!TIP]
+> You can enforce naming conventions that concern capitalization, prefixes, suffixes, and word separators by using [code-style naming rules](../../../fundamentals/code-analysis/style-rules/naming-rules.md).
 
-The preceding single-letter names are allowed only in the language reference section.
-
-In the following examples, guidance pertaining to elements marked `public` is applicable when working with `protected` and `protected internal` elements, all of which are intended to be visible to external callers.
+In the following examples, guidance pertaining to elements marked `public` is also applicable when working with `protected` and `protected internal` elements, all of which are intended to be visible to external callers.
 
 ### Pascal case
 
-Use pascal casing ("PascalCasing") when naming a `class`, `Interface`, `struct`, or `delegate` type.
+Use pascal casing ("PascalCasing") when naming a `class`, `interface`, `struct`, or `delegate` type.
 
 ```csharp
 public class DataService
@@ -119,7 +123,7 @@ public record PhysicalAddress(
     string ZipCode);
 ```
 
-For more information on positional records, see [Positional syntax for property definition](../../language-reference/builtin-types/record.md#positional-syntax-for-property-definition).
+For more information on positional records, see [Positional syntax for property definition](../../language-reference/builtin-types/record.md#positional-syntax-for-property-and-field-definition).
 
 ### Camel case
 
@@ -155,13 +159,13 @@ public T SomeMethod<T>(int someNumber, bool isValid)
 }
 ```
 
-For more information on C# naming conventions, see [C# Coding Style](https://github.com/dotnet/runtime/blob/main/docs/coding-guidelines/coding-style.md).
+For more information on C# naming conventions, see the [.NET Runtime team's coding style](https://github.com/dotnet/runtime/blob/main/docs/coding-guidelines/coding-style.md).
 
 ### Type parameter naming guidelines
 
-The following guidelines apply to type parameters on generic type parameters. These are the placeholders for arguments in a generic type or a generic method. You can read more about [generic type parameters](../../programming-guide/generics/generic-type-parameters.md) in the C# programming guide.
+The following guidelines apply to type parameters on generic type parameters. Type parameters are the placeholders for arguments in a generic type or a generic method. You can read more about [generic type parameters](../../programming-guide/generics/generic-type-parameters.md) in the C# programming guide.
 
-- **Do** name generic type parameters with descriptive names, unless a single letter name is completely self explanatory and a descriptive name would not add value.
+- **Do** name generic type parameters with descriptive names, unless a single letter name is completely self explanatory and a descriptive name wouldn't add value.
 
    :::code language="./snippets/coding-conventions" source="./snippets/coding-conventions/Program.cs" id="TypeParametersOne":::
 
@@ -173,7 +177,7 @@ The following guidelines apply to type parameters on generic type parameters. Th
 
    :::code language="./snippets/coding-conventions" source="./snippets/coding-conventions/Program.cs" id="TypeParametersThree":::
 
-- **Consider** indicating constraints placed on a type parameter in the name of parameter. For example, a parameter constrained to `ISession` may be called `TSession`.
+- **Consider** indicating constraints placed on a type parameter in the name of parameter. For example, a parameter constrained to `ISession` might be called `TSession`.
 
 The code analysis rule [CA1715](/visualstudio/code-quality/ca1715) can be used to ensure that type parameters are named appropriately.
 

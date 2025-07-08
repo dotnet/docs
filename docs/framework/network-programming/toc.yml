@@ -1,3 +1,4 @@
+items:
 - name: Network programming in .NET Framework
   items:
   - name: Configuring Internet Applications
@@ -48,6 +49,10 @@
       href: how-to-upload-files-with-ftp.md
     - name: List Directory Contents with FTP
       href: how-to-list-directory-contents-with-ftp.md
+    - name: Supplemental API remarks
+      items:
+      - name: FtpWebRequest.Proxy property
+        href: ../../fundamentals/runtime-libraries/system-net-ftpwebrequest-proxy.md
   - name: UDP
     href: using-udp-services.md
   - name: Security in Network Programming

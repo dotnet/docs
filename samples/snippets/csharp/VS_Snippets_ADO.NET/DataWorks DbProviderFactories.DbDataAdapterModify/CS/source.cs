@@ -1,20 +1,9 @@
-﻿using System;
+using System;
 using System.Data;
-using System.Data.SqlClient;
-using System.Data.OleDb;
-using System.Configuration;
 using System.Data.Common;
 
-class Program
+static class Program
 {
-    static void Main()
-    {
-        //CreateDataAdapter("System.Data.OleDb", "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=c:\\Data\\Northwind.mdb;");
-        CreateDataAdapter("System.Data.SqlClient", "Data Source=(local);Initial Catalog=Northwind;Integrated Security=true;");
-
-        Console.ReadLine();
-    }
-
     // <Snippet1>
     static void CreateDataAdapter(string providerName, string connectionString)
     {
@@ -30,7 +19,7 @@ class Program
             using (connection)
             {
                 // Define the query.
-                string queryString =
+                const string queryString =
                     "SELECT CustomerID, CompanyName FROM Customers";
 
                 // Create the select command.
@@ -52,15 +41,12 @@ class Program
                 adapter.DeleteCommand = builder.GetDeleteCommand();
 
                 // Display the CommandText for each command.
-                Console.WriteLine("InsertCommand: {0}",
-                    adapter.InsertCommand.CommandText);
-                Console.WriteLine("UpdateCommand: {0}",
-                    adapter.UpdateCommand.CommandText);
-                Console.WriteLine("DeleteCommand: {0}",
-                    adapter.DeleteCommand.CommandText);
+                Console.WriteLine($"InsertCommand: {adapter.InsertCommand.CommandText}");
+                Console.WriteLine($"UpdateCommand: {adapter.UpdateCommand.CommandText}");
+                Console.WriteLine($"DeleteCommand: {adapter.DeleteCommand.CommandText}");
 
                 // Fill the DataTable.
-                DataTable table = new DataTable();
+                DataTable table = new();
                 adapter.Fill(table);
 
                 // Insert a new row.
@@ -76,7 +62,7 @@ class Program
                 Console.WriteLine("----List All Rows-----");
                 foreach (DataRow row in table.Rows)
                 {
-                    Console.WriteLine("{0} {1}", row[0], row[1]);
+                    Console.WriteLine($"{row[0]} {row[1]}");
                 }
                 Console.WriteLine("----After Insert-----");
 
@@ -90,7 +76,7 @@ class Program
                 Console.WriteLine();
                 foreach (DataRow row in table.Rows)
                 {
-                    Console.WriteLine("{0} {1}", row[0], row[1]);
+                    Console.WriteLine($"{row[0]} {row[1]}");
                 }
                 Console.WriteLine("----After Update-----");
 
@@ -107,7 +93,7 @@ class Program
                 Console.WriteLine();
                 foreach (DataRow row in table.Rows)
                 {
-                    Console.WriteLine("{0} {1}", row[0], row[1]);
+                    Console.WriteLine($"{row[0]} {row[1]}");
                 }
                 Console.WriteLine("----After Delete-----");
                 Console.WriteLine("Customer XYZZZ was deleted.");

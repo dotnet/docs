@@ -21,7 +21,7 @@ This example shows how to find all `PurchaseOrder` elements that have:
 
 It uses a nested query in the `Where` clause, and the `Any` operator returns `true` if the collection has any elements in it. The example uses XML document [Sample XML file: Multiple purchase orders](sample-xml-file-multiple-purchase-orders.md).
 
-For more information about the `Any` operator, see [Quantifier Operations (C#)](../../../docs/csharp/programming-guide/concepts/linq/quantifier-operations.md) and [Quantifier Operations (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/quantifier-operations.md).
+For more information about the `Any` operator, see [Quantifier Operations (C#)](../../csharp/linq/standard-query-operators/quantifier-operations.md) and [Quantifier Operations (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/quantifier-operations.md).
 
 ```csharp
 XElement root = XElement.Load("PurchaseOrders.xml");
@@ -118,8 +118,8 @@ This example produces the following output:
 
 - <xref:System.Xml.Linq.XElement.Attribute%2A>
 - <xref:System.Xml.Linq.XContainer.Elements%2A>
-- [Projection Operations (C#)](../../csharp/programming-guide/concepts/linq/projection-operations.md)
-- [Quantifier Operations (C#)](../../csharp/programming-guide/concepts/linq/quantifier-operations.md)
+- [Projection Operations (C#)](../../csharp/linq/standard-query-operators/projection-operations.md)
+- [Quantifier Operations (C#)](../../csharp/linq/standard-query-operators/quantifier-operations.md)
 - [XML Child Axis Property (Visual Basic)](../../visual-basic/language-reference/xml-axis/xml-child-axis-property.md)
 - [XML Attribute Axis Property (Visual Basic)](../../visual-basic/language-reference/xml-axis/xml-attribute-axis-property.md)
 - [XML Value Property (Visual Basic)](../../visual-basic/language-reference/xml-axis/xml-value-property.md)

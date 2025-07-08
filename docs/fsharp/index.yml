@@ -8,7 +8,6 @@ metadata:
   description: "Learn F# programming - for developers new to F#, and experienced F# / .NET developers"
   ms.topic: landing-page # Required
   author: KathleenDollard
-  ms.author: kdollard
   ms.date: 11/03/2021
 
 landingContent:
@@ -54,7 +53,7 @@ landingContent:
           - text: "F# library reference"
             url: https://fsharp.github.io/fsharp-core-docs
           - text: ".NET library reference"
-            url: ../../api/index.md?view=net-7.0
+            url: ../../api/index.md?view=net-9.0
 
   - title: "F# fundamentals"
     linkLists:
@@ -121,6 +120,12 @@ landingContent:
     linkLists:
       - linkListType: whats-new
         links:
+          - text: "What's new in F# 9"
+            url: whats-new/fsharp-9.md
+          - text: "What's new in F# 8"
+            url: whats-new/fsharp-8.md
+          - text: "What's new in F# 7"
+            url: whats-new/fsharp-7.md
           - text: "What's new in F# 6"
             url: whats-new/fsharp-6.md
           - text: "What's new in F# 5"

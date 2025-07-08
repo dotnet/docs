@@ -2,10 +2,8 @@
 title: Develop apps for IoT devices with the .NET IoT Libraries
 description: Learn how .NET can be used to build applications for IoT devices and scenarios.
 author: camsoper
-ms.author: casoper
-ms.date: 10/14/2022
+ms.date: 07/31/2024
 ms.topic: overview
-ms.prod: dotnet
 ---
 
 # Develop apps for IoT devices with the .NET IoT Libraries
@@ -61,7 +59,7 @@ Some commonly used device bindings include:
 
 `System.Device.Gpio` is compatible with most single-board platforms. Recommended platforms are Raspberry Pi (2 and greater) and Hummingboard. Other platforms known to be compatible are BeagleBoard and ODROID.
 
-PC platforms are supported via the use of a USB to SPI/I<sup>2</sup>C bridge.
+Windows, macOS, and Linux computers and PCs are supported via [the use of a USB to SPI/I<sup>2</sup>C bridge](usb.md).
 
 > [!IMPORTANT]
 > .NET is not supported on devices prior to ARMv7, including Raspberry Pi Zero and Raspberry Pi devices prior to Raspberry Pi 2.

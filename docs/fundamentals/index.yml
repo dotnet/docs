@@ -7,7 +7,7 @@ metadata:
   title: .NET documentation
   description: Learn about .NET, an open-source developer platform for building many different types of applications.
   ms.topic: landing-page
-  ms.date: 02/02/2023
+  ms.date: 11/14/2023
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
 
@@ -37,18 +37,16 @@ landingContent:
             url: https://dotnet.microsoft.com/platform/support/policy/dotnet-core
       - linkListType: whats-new
         links:
+          - text: What's new in .NET 10
+            url: ../core/whats-new/dotnet-10/overview.md
+          - text: What's new in .NET 9
+            url: ../core/whats-new/dotnet-9/overview.md
           - text: What's new in .NET 8
-            url: ../core/whats-new/dotnet-8.md
+            url: ../core/whats-new/dotnet-8/overview.md
           - text: What's new in .NET 7
             url: ../core/whats-new/dotnet-7.md
           - text: What's new in .NET 6
             url: ../core/whats-new/dotnet-6.md
-          - text: What's new in .NET 5
-            url: ../core/whats-new/dotnet-5.md
-          - text: What's new in .NET Core 3.1
-            url: ../core/whats-new/dotnet-core-3-1.md
-          - text: What's new in .NET Core 3.0
-            url: ../core/whats-new/dotnet-core-3-0.md
 
   # Card
   - title: Install .NET

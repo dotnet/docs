@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 abstract class Motorcycle
 {
     // Anyone can call this.
@@ -18,7 +18,6 @@ abstract class Motorcycle
 //<Snippet2>
 class TestMotorcycle : Motorcycle
 {
-
     public override double GetTopSpeed()
     {
         return 108.4;
@@ -26,14 +25,13 @@ class TestMotorcycle : Motorcycle
 
     static void Main()
     {
-
         TestMotorcycle moto = new TestMotorcycle();
 
         moto.StartEngine();
         moto.AddGas(15);
         moto.Drive(5, 20);
         double speed = moto.GetTopSpeed();
-        Console.WriteLine("My top speed is {0}", speed);
+        Console.WriteLine($"My top speed is {speed}");
     }
 }
 //</Snippet2>
@@ -110,7 +108,7 @@ class SimpleMath
 
 class TestSimpleMath
 {
-    static void test()
+    static void Test()
     {
         SimpleMath obj = new SimpleMath();
 

@@ -2,7 +2,7 @@
 title: PrepareHeaderDrag method (System.Windows.Controls.GridViewHeaderRowPresenter)
 description: Learn about the private WPF method called PrepareHeaderDrag.
 ms.date: 09/25/2020
-ms.technology: dotnet-wpf
+ms.subservice: wpf
 topic_type:
   - apiref
 api_name:

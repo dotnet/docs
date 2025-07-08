@@ -3,7 +3,7 @@ title: Use dependency injection
 description: Learn how to use dependency injection in your .NET apps with this comprehensive tutorial. Follow along with this pragmatic guide to understand DI in C#.
 author: IEvangelist
 ms.author: dapine
-ms.date: 03/13/2023
+ms.date: 07/18/2024
 ms.topic: tutorial
 no-loc: [Transient, Scoped, Singleton, Example]
 ---
@@ -80,7 +80,7 @@ The example implementations all initialize their `Id` property with the result o
 
 :::code source="snippets/configuration/console-di/ExampleSingletonService.cs":::
 
-Each implementation is defined as `internal sealed` and implements its corresponding interface. For example, `ExampleSingletonService` implements `IExampleSingletonService`.
+Each implementation is defined as `internal sealed` and implements its corresponding interface. They're not required to be `internal` or `sealed`, however, it's common to treat implementations as `internal` to avoid leaking implementation types to external consumers. Furthermore, since each type will not be extended, it's marked as `sealed`.  For example, `ExampleSingletonService` implements `IExampleSingletonService`.
 
 ## Add a service that requires DI
 
@@ -98,14 +98,14 @@ Update *Program.cs* with the following code:
 
 :::code source="snippets/configuration/console-di/Program.cs" id="Program" highlight="8-11":::
 
-Each `services.Add{LIFETIME}<{SERVICE}>` extension method adds (and potentially configures) services. We recommend that apps follow this convention. Place extension methods in the <xref:Microsoft.Extensions.DependencyInjection?displayProperty=fullName> namespace to encapsulate groups of service registrations. Including the namespace portion `Microsoft.Extensions.DependencyInjection` for DI extension methods also:
+Each `services.Add{LIFETIME}<{SERVICE}>` extension method adds (and potentially configures) services. We recommend that apps follow this convention. Don't place extension methods in the <xref:Microsoft.Extensions.DependencyInjection?displayProperty=fullName> namespace unless you're authoring an official Microsoft package. Extension methods that are defined within the `Microsoft.Extensions.DependencyInjection` namespace:
 
-- Allows them to be displayed in [IntelliSense](/visualstudio/ide/using-intellisense) without adding additional `using` blocks.
-- Prevents excessive `using` statements in the `Program` or `Startup` classes where these extension methods are typically called.
+- Are displayed in [IntelliSense](/visualstudio/ide/using-intellisense) without requiring additional `using` directives.
+- Reduce the number of required `using` directives in the `Program` or `Startup` classes where these extension methods are typically called.
 
 The app:
 
-- Creates an <xref:Microsoft.Extensions.Hosting.IHostBuilder> instance with the [default binder settings](generic-host.md#default-builder-settings).
+- Creates an <xref:Microsoft.Extensions.Hosting.IHostBuilder> instance with [host builder settings](generic-host.md#host-builder-settings).
 - Configures services and adds them with their corresponding service lifetime.
 - Calls <xref:Microsoft.Extensions.Hosting.IHostBuilder.Build> and assigns an instance of <xref:Microsoft.Extensions.Hosting.IHost>.
 - Calls `ExemplifyScoping`, passing in the <xref:Microsoft.Extensions.Hosting.IHost.Services?displayProperty=nameWithType>.
@@ -126,5 +126,6 @@ From the app output, you can see that:
 
 ## See also
 
-* [Dependency injection guidelines](dependency-injection-guidelines.md)
-* [Dependency injection in ASP.NET Core](/aspnet/core/fundamentals/dependency-injection)
+- [Dependency injection guidelines](dependency-injection-guidelines.md)
+- [Understand dependency injection basics in .NET](dependency-injection-basics.md)
+- [Dependency injection in ASP.NET Core](/aspnet/core/fundamentals/dependency-injection)

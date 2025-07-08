@@ -1,13 +1,13 @@
 ---
 title: Create mixin types using default interface methods
 description: Using default interface members you can extend interfaces with optional default implementations for implementors.
-ms.date: 03/17/2023
+ms.date: 07/31/2024
 ---
 # Tutorial: Mix functionality in when creating classes using interfaces with default interface methods
 
 You can define an implementation when you declare a member of an interface. This feature provides new capabilities where you can define default implementations for features declared in interfaces. Classes can pick when to override functionality, when to use the default functionality, and when not to declare support for discrete features.
 
-In this tutorial, you'll learn how to:
+In this tutorial, you learn how to:
 
 > [!div class="checklist"]
 >
@@ -27,11 +27,11 @@ Extension methods are resolved at compile time, using the declared type of the v
 
 You can declare the default implementations as interface methods. Then, every class automatically uses the default implementation. Any class that can provide a better implementation can override the interface method definition with a better algorithm. In one sense, this technique sounds similar to how you could use [extension methods](../../programming-guide/classes-and-structs/extension-methods.md).
 
-In this article, you'll learn how default interface implementations enable new scenarios.
+In this article, you learn how default interface implementations enable new scenarios.
 
 ## Design the application
 
-Consider a home automation application. You probably have many different types of lights and indicators that could be used throughout the house. Every light must support APIs to turn them on and off, and to report the current state. Some lights and indicators may support other features, such as:
+Consider a home automation application. You probably have many different types of lights and indicators that could be used throughout the house. Every light must support APIs to turn them on and off, and to report the current state. Some lights and indicators might support other features, such as:
 
 - Turn light on, then turn it off after a timer.
 - Blink the light for a period of time.
@@ -68,7 +68,7 @@ The `OverheadLight` class can implement the timer function by declaring support 
 public class OverheadLight : ITimerLight { }
 ```
 
-A different light type may support a more sophisticated protocol. It can provide its own implementation for `TurnOnFor`, as shown in the following code:
+A different light type might support a more sophisticated protocol. It can provide its own implementation for `TurnOnFor`, as shown in the following code:
 
 :::code language="csharp" source="./snippets/mixins-with-default-interface-methods/HalogenLight.cs" id="SnippetHalogenLight":::
 
@@ -96,7 +96,7 @@ The `HalogenLight` you created earlier doesn't support blinking. So, don't add t
 
 ## Detect the light types using pattern matching
 
-Next, let's write some test code. You can make use of C#'s [pattern matching](../../fundamentals/functional/pattern-matching.md) feature to determine a light's capabilities by examining which interfaces it supports.  The following method exercises the supported capabilities of each light:
+Next, let's write some test code. You can make use of C#'s [pattern matching](../../fundamentals/functional/pattern-matching.md) feature to determine a light's capabilities by examining which interfaces it supports. The following method exercises the supported capabilities of each light:
 
 :::code language="csharp" source="./snippets/mixins-with-default-interface-methods/Program.cs" id="SnippetTestLightFunctions":::
 
@@ -116,6 +116,12 @@ The default implementation assumes no power:
 
 These changes compile cleanly, even though the `ExtraFancyLight` declares support for the `ILight` interface and both derived interfaces, `ITimerLight` and `IBlinkingLight`. There's only one "closest" implementation declared in the `ILight` interface. Any class that declared an override would become the one "closest" implementation. You saw examples in the preceding classes that overrode the members of other derived interfaces.
 
-Avoid overriding the same method in multiple derived interfaces. Doing so creates an ambiguous method call whenever a class implements both derived interfaces. The compiler can't pick a single better method so it issues an error. For example, if both the `IBlinkingLight` and `ITimerLight` implemented an override of `PowerStatus`, the `OverheadLight` would need to provide a more specific override. Otherwise, the compiler can't pick between the implementations in the two derived interfaces. You can usually avoid this situation by keeping interface definitions small and focused on one feature. In this scenario, each capability of a light is its own interface; only classes inherit multiple interfaces.
+Avoid overriding the same method in multiple derived interfaces. Doing so creates an ambiguous method call whenever a class implements both derived interfaces. The compiler can't pick a single better method so it issues an error. For example, if both the `IBlinkingLight` and `ITimerLight` implemented an override of `Power()`, the `OverheadLight` would need to provide a more specific override. Otherwise, the compiler can't pick between the implementations in the two derived interfaces. This situation is shown in the following diagram:
 
-This sample shows one scenario where you can define discrete features that can be mixed into classes. You declare any set of supported functionality by declaring which interfaces a class supports. The use of virtual default interface methods enables classes to use or define a different implementation for any or all the interface methods. This language capability provides new ways to model the real-world systems you're building. Default interface methods provide a clearer way to express related classes that may mix and match different features using virtual implementations of those capabilities.
+:::image type="content" source="./media/mixins-with-default-interface-methods/diamond-problem.png" alt-text="illustration of the diamond problem with default interface methods":::
+
+The preceding diagram illustrates the ambiguity. `OverheadLight` doesn't provide an implementation of `ILight.Power()`. Both `IBlinkingLight` and `ITimerLight` provide overrides that are more specific. A call to `ILight.Power()` on an instance of `OverheadLight` is ambiguous. You must add a new override in `OverheadLight` to resolve the ambiguity.
+
+You can usually avoid this situation by keeping interface definitions small and focused on one feature. In this scenario, each capability of a light is its own interface; only classes inherit multiple interfaces.
+
+This sample shows one scenario where you can define discrete features that can be mixed into classes. You declare any set of supported functionality by declaring which interfaces a class supports. The use of virtual default interface methods enables classes to use or define a different implementation for any or all the interface methods. This language capability provides new ways to model the real-world systems you're building. Default interface methods provide a clearer way to express related classes that might mix and match different features using virtual implementations of those capabilities.

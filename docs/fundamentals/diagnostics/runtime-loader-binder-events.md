@@ -1,8 +1,7 @@
 ---
 title: "Loader and binder runtime events"
-description: See .NET runtime events that collect diagnostic information specific to loader and binder ETW events, which collect information about the assembly loader and binder.
+description: Learn about the .NET runtime events that collect diagnostic information specific to loader and binder ETW events, which collect information about the assembly loader and binder.
 ms.date: "11/13/2020"
-ms.topic: reference
 helpviewer_keywords:
   - "Assembly Loader events (CoreCLR)"
   - "Assembly Binder events (CoreCLR)"
@@ -11,7 +10,7 @@ helpviewer_keywords:
 
 # .NET runtime loader and binder events
 
-These events collect information relating to loading and unloading assemblies and modules. For more information about how to use these events for diagnostic purposes, see [logging and tracing .NET applications](../../core/diagnostics/logging-tracing.md)
+The events described in this article collect information relating to loading and unloading assemblies and modules. For more information about how to use these events for diagnostic purposes, see [logging and tracing .NET applications](../../core/diagnostics/logging-tracing.md).
 
 |Keyword for raising the event|Event|Level|
 |-----------------------------------|-----------|-----------|
@@ -75,13 +74,13 @@ These events collect information relating to loading and unloading assemblies an
 
 ## ModuleDCStart_V2 event
 
-|Keyword for raising the event|Event|Level|
-|-----------------------------------|-----------|-----------|
-|`LoaderKeyword` (0x8)|`DomainModuleLoad_V1`|Informational (4)
+| Keyword for raising the event | Event                 | Level             |
+|-------------------------------|-----------------------|-------------------|
+| `LoaderKeyword` (0x8)         | `DomainModuleLoad_V1` | Informational (4) |
 
-|Event|Event ID|Description
-|-----------|--------------|-----------------|
-|`ModuleDCStart_V2`|153|Enumerates modules during a start rundown.|
+| Event              | Event ID | Description                                |
+|--------------------|----------|--------------------------------------------|
+| `ModuleDCStart_V2` | 153      | Enumerates modules during a start rundown. |
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
@@ -135,14 +134,14 @@ These events collect information relating to loading and unloading assemblies an
 |-----------|--------------|-----------------|
 |`AssemblyLoad_V1`|154|Raised when an assembly is loaded.|
 
-|Field name|Data type|Description|
-|----------------|---------------|-----------------|
-|`AssemblyID`|`win:UInt64`|Unique ID for the assembly.|
-|`AppDomainID`|`win:UInt64`|ID of the domain of this assembly.|
-|`BindingID`|`win:UInt64`|ID that uniquely identifies the assembly binding.|
+| Field name    | Data type    | Description                                       |
+|---------------|--------------|---------------------------------------------------|
+| `AssemblyID`  | `win:UInt64` | Unique ID for the assembly.                       |
+| `AppDomainID` | `win:UInt64` | ID of the domain of this assembly.                |
+| `BindingID`   | `win:UInt64` | ID that uniquely identifies the assembly binding. |
 |`AssemblyFlags`|`win:UInt32`|0x1: Domain neutral assembly.<br /><br /> 0x2: Dynamic assembly.<br /><br /> 0x4: Assembly has a native image.<br /><br /> 0x8: Collectible assembly.|
 |`AssemblyName`|`win:UnicodeString`|Fully qualified assembly name.|
-|`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CoreCLR.
+|`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CoreCLR.|
 
 ## AssemblyUnload_V1 event
 
@@ -184,13 +183,13 @@ These events collect information relating to loading and unloading assemblies an
 
 ## AssemblyLoadStart event
 
-|Keyword for raising the event|Event|Level|
-|-----------------------------------|-----------|-----------|
-|`Binder` (0x4)|`AssemblyLoadStart`|Informational (4)|
+| Keyword for raising the event | Event               | Level             |
+|-------------------------------|---------------------|-------------------|
+| `Binder` (0x4)                | `AssemblyLoadStart` | Informational (4) |
 
-|Event|Event ID|Description|
-|-----------|--------------|-----------------|
-|`AssemblyLoadStart`|290|An assembly load has been requested.
+| Event               | Event ID | Description                          |
+|---------------------|----------|--------------------------------------|
+| `AssemblyLoadStart` | 290      | An assembly load has been requested. |
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
@@ -203,13 +202,13 @@ These events collect information relating to loading and unloading assemblies an
 
 ## AssemblyLoadStop event
 
-|Keyword for raising the event|Event|Level|
-|-----------------------------------|-----------|-----------|
-|`Binder` (0x4)|`AssemblyLoadStart`|Informational (4)|
+| Keyword for raising the event | Event               | Level             |
+|-------------------------------|---------------------|-------------------|
+| `Binder` (0x4)                | `AssemblyLoadStart` | Informational (4) |
 
-|Event|Event ID|Description|
-|-----------|--------------|-----------------|
-|`AssemblyLoadStart`|291|An assembly load has been requested.
+| Event               | Event ID | Description                          |
+|---------------------|----------|--------------------------------------|
+| `AssemblyLoadStart` | 291      | An assembly load has been requested. |
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
@@ -226,18 +225,18 @@ These events collect information relating to loading and unloading assemblies an
 
 ## ResolutionAttempted event
 
-|Keyword for raising the event|Level|
-|-----------------------------------|-----------|-----------|
-|`Binder` (0x4)|Informational (4)|
+| Keyword for raising the event | Level             |
+|-------------------------------|-------------------|
+| `Binder` (0x4)                | Informational (4) |
 
-|Event|Event ID|Description|
-|-----------|--------------|-----------------|
-|`ResolutionAttempted`|292|An assembly load has been requested.
+| Event                 | Event ID | Description                          |
+|-----------------------|----------|--------------------------------------|
+| `ResolutionAttempted` | 292      | An assembly load has been requested. |
 
-|Field name|Data type|Description|
-|----------------|---------------|-----------------|
-|`AssemblyName`|`win:UnicodeString`|Name of assembly name.|
-|`Stage`|`win:UInt16`|The resolution stage.<br/><br/>0: Find in load.<br/><br/>1: Assembly Load Context</br><br/>2: Application assemblies.<br/><br/>3: Default assembly load context fallback. <br/><br/>4: Resolve satellite assembly. <br/><br/>5: Assembly load context resolving.<br/><br/>6: AppDomain assembly resolving.
+| Field name     | Data type           | Description            |
+|----------------|---------------------|------------------------|
+| `AssemblyName` | `win:UnicodeString` | Name of assembly name. |
+|`Stage`|`win:UInt16`|The resolution stage.<br/><br/>0: Find in load.<br/><br/>1: Assembly Load Context</br><br/>2: Application assemblies.<br/><br/>3: Default assembly load context fallback. <br/><br/>4: Resolve satellite assembly. <br/><br/>5: Assembly load context resolving.<br/><br/>6: AppDomain assembly resolving.|
 |`AssemblyLoadContext`|`win:UnicodeString`|Load context of the assembly.|
 |`Result`|`win:UInt16`|The result of resolution attempt.<br/><br/>0: Success<br/><br/>1: Assembly NotFound<br/><br/>2: Incompatible Version<br/><br/>3: Mismatched Assembly Name<br/><br/>4: Failure<br/><br/>5: Exception|
 |`ResultAssemblyName`|`win:UnicodeString`|The name of assembly that was resolved.|

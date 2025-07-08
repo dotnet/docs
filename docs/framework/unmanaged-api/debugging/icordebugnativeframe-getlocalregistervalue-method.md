@@ -2,62 +2,62 @@
 description: "Learn more about: ICorDebugNativeFrame::GetLocalRegisterValue Method"
 title: "ICorDebugNativeFrame::GetLocalRegisterValue Method"
 ms.date: "03/30/2017"
-api_name: 
+api_name:
   - "ICorDebugNativeFrame.GetLocalRegisterValue"
-api_location: 
+api_location:
   - "mscordbi.dll"
-api_type: 
+api_type:
   - "COM"
-f1_keywords: 
+f1_keywords:
   - "ICorDebugNativeFrame::GetLocalRegisterValue"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "GetLocalRegisterValue method [.NET Framework debugging]"
   - "ICorDebugNativeFrame::GetLocalRegisterValue method [.NET Framework debugging]"
 ms.assetid: 5ccb74f3-f891-430c-b70a-e370624edde2
-topic_type: 
+topic_type:
   - "apiref"
 ---
 # ICorDebugNativeFrame::GetLocalRegisterValue Method
 
-Gets the value of an argument or local variable that is stored in the specified register for this native frame.  
-  
-## Syntax  
-  
-```cpp  
-HRESULT GetLocalRegisterValue (  
-    [in]  CorDebugRegister   reg,  
-    [in]  ULONG              cbSigBlob,  
-    [in]  PCCOR_SIGNATURE    pvSigBlob,  
-    [out] ICorDebugValue     **ppValue  
-);  
-```  
-  
-## Parameters  
+Gets the value of an argument or local variable that is stored in the specified register for this native frame.
 
- `reg`  
- [in] A value of the "CorDebugRegister" enumeration that specifies the register containing the value.  
-  
- `cbSigBlob`  
- [in] An integer that specifies the size of the binary metadata signature which is referenced by the `pvSigBlob` parameter.  
-  
- `pvSigBlob`  
- [in] A `PCCOR_SIGNATURE` value that points to the binary metadata signature of the value's type.  
-  
- `ppValue`  
- [out] A pointer to the address of an "ICorDebugValue" object representing the retrieved value that is stored in the specified register.  
-  
-## Remarks  
+## Syntax
 
- The `GetLocalRegisterValue` method can be used either in a native frame or a just-in-time (JIT)-compiled frame.  
-  
-## Requirements  
+```cpp
+HRESULT GetLocalRegisterValue (
+    [in]  CorDebugRegister   reg,
+    [in]  ULONG              cbSigBlob,
+    [in]  PCCOR_SIGNATURE    pvSigBlob,
+    [out] ICorDebugValue     **ppValue
+);
+```
 
- **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
-  
- **Header:** CorDebug.idl, CorDebug.h  
-  
- **Library:** CorGuids.lib  
-  
- **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
-  
+## Parameters
+
+ `reg`
+ [in] A value of the "CorDebugRegister" enumeration that specifies the register containing the value.
+
+ `cbSigBlob`
+ [in] An integer that specifies the size of the binary metadata signature which is referenced by the `pvSigBlob` parameter.
+
+ `pvSigBlob`
+ [in] A `PCCOR_SIGNATURE` value that points to the binary metadata signature of the value's type.
+
+ `ppValue`
+ [out] A pointer to the address of an "ICorDebugValue" object representing the retrieved value that is stored in the specified register.
+
+## Remarks
+
+ The `GetLocalRegisterValue` method can be used either in a native frame or a just-in-time (JIT)-compiled frame.
+
+## Requirements
+
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).
+
+ **Header:** CorDebug.idl, CorDebug.h
+
+ **Library:** CorGuids.lib
+
+ **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+
 ## See also

@@ -1,7 +1,7 @@
 ---
 title: Big and small thinking
 description: Learn how Orleans applies to both big and small distributed applications.
-ms.date: 03/21/2022
+ms.date: 07/03/2024
 ---
 
 # Big and small thinking
@@ -18,7 +18,7 @@ At the other end of the spectrum, we find massive deployments that span thousand
 
 ## Distributed systems have the same problems regardless of size
 
-The moment a system moves from a single server to multiple servers, developers face very much the same set of challenges, regardless of its size &mdash; whether it's a 3-5, 30-50, or 300-500 server system. They now have to deal with the distribution of their computations, coordination between them, scalability, fault tolerance and reconfigurations, diagnostics, etc. They are building a distributed system now, which is never easy. And building a stateful distributed system is even harder.
+The moment a system moves from a single server to multiple servers, developers face very much the same set of challenges, regardless of its size&mdash;whether it's a 3-5, 30-50, or 300-500 server system. They now have to deal with the distribution of their computations, coordination between them, scalability, fault tolerance and reconfigurations, diagnostics, etc. They are building a distributed system now, which is never easy. And building a stateful distributed system is even harder.
 
 Orleans was designed to help with building such systems by providing an easy-to-use set of abstractions that greatly simplifies developers' lives and help them avoid common distributed systems pitfalls. The distributed runtime was built to perform most of the heavy lifting. Developers can equally benefit from these features of Orleans when building services of different sizes because the problems Orleans solves for them are the same. The abstraction of grains simplifies reasoning about your system while encouraging fine-grain partitioning of state for scalability. The virtual actor feature helps with resource management and fault tolerance. Automatic propagation of exceptions minimizes error handling code without losing failures. The distributed runtime takes care of server failures, messaging, routing, single-threaded execution, and other system-level guarantees. You don't need hundreds of servers to start reaping the developer productivity gains.
 

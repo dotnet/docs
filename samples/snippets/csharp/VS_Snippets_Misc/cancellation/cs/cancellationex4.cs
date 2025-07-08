@@ -1,6 +1,6 @@
 ﻿//<snippet4>
 using System;
-using System.Net;
+using System.Net.Http;
 using System.Threading;
 
 class Example4
@@ -11,26 +11,23 @@ class Example4
 
         StartWebRequest(cts.Token);
 
-        // cancellation will cause the web
-        // request to be cancelled
+        // Cancellation will cause the web
+        // request to be cancelled.
         cts.Cancel();
     }
 
     static void StartWebRequest(CancellationToken token)
     {
-        WebClient wc = new WebClient();
-        wc.DownloadStringCompleted += (s, e) => Console.WriteLine("Request completed.");
+        var client = new HttpClient();
 
-        // Cancellation on the token will
-        // call CancelAsync on the WebClient.
         token.Register(() =>
         {
-            wc.CancelAsync();
+            client.CancelPendingRequests();
             Console.WriteLine("Request cancelled!");
         });
 
         Console.WriteLine("Starting request.");
-        wc.DownloadStringAsync(new Uri("http://www.contoso.com"));
+        client.GetStringAsync(new Uri("http://www.contoso.com"));
     }
 }
 //</snippet4>

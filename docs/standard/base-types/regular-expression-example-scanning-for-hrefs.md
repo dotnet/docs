@@ -42,7 +42,7 @@ The regular expression pattern `href\s*=\s*(?:["'](?<1>[^"']*)["']|(?<1>[^>\s]+)
 | `\s*`                  | Match zero or more white-space characters.                      |
 | `(?:`                  | Start a non-capturing group.                                    |
 | `["'](?<1>[^"']*)["']` | Match a quotation mark or apostrophe, followed by a capturing group that matches any character other than a quotation mark or apostrophe, followed by a quotation mark or apostrophe. The group named `1` is included in this pattern. |
-| `|`                    | Boolean OR that matches either the previous expression or the next expression. |
+| &#124;                 | Boolean OR that matches either the previous expression or the next expression. |
 | `(?<1>[^>\s]+)`        | A capturing group that uses a negated set to match any character other than a greater-than sign or a whitespace character. The group named `1` is included in this pattern.|
 | `)`                    | End the non-capturing group.                                    |
 

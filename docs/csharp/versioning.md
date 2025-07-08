@@ -1,14 +1,21 @@
 ---
-title: C# Versioning - C# Guide
+title: Versioning
 description: Understand how versioning works in C# and .NET
-ms.date: 01/08/2017
-ms.technology: csharp-advanced-concepts
-ms.assetid: aa8732d7-5cd0-46e1-994a-78017f20d861
+ms.date: 09/17/2024
+ms.subservice: advanced-concepts
 ---
 
 # Versioning in C\#
 
 In this tutorial you'll learn what versioning means in .NET. You'll also learn the factors to consider when versioning your library as well as upgrading to a new version of a library.
+
+## Language version
+
+The C# compiler is part of the .NET SDK. By default, the compiler chooses the C# language version that matches the chosen [TFM](../standard/frameworks.md) for your project. If the SDK version is greater than your chosen framework, the compiler could use a greater language version. You can change the default by setting the `LangVersion` element in your project. You can learn how in our article on [compiler options](language-reference/compiler-options/language.md#langversion).
+
+> [!WARNING]
+>
+> Setting the `LangVersion` element to `latest` is discouraged. The `latest` setting means the installed compiler uses its latest version. That can change from machine to machine, making builds unreliable. In addition, it enables language features that may require runtime or library features not included in the current SDK.
 
 ## Authoring Libraries
 
@@ -39,7 +46,7 @@ Here are some things to consider when trying to maintain backwards compatibility
 will have to be updated. This is a huge breaking change and is strongly discouraged.
 - Method signatures: When updating a method behavior requires you to change its signature as well, you should instead create an overload so that code calling into that method will still work.
 You can always manipulate the old method signature to call into the new method signature so that implementation remains consistent.
-- [Obsolete attribute](language-reference/attributes/general.md#obsolete-attribute): You can use this attribute in your code to specify classes or class members that are deprecated and likely to be removed in future versions. This ensures developers utilizing your library are better prepared for breaking changes.
+- [Obsolete attribute](language-reference/attributes/general.md#obsolete-and-deprecated-attribute): You can use this attribute in your code to specify classes or class members that are deprecated and likely to be removed in future versions. This ensures developers utilizing your library are better prepared for breaking changes.
 - Optional Method Arguments: When you make previously optional method arguments compulsory or change their default value then all code that does not supply those arguments will need to be updated.
 
 > [!NOTE]

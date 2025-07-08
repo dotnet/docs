@@ -1,5 +1,5 @@
 ---
-title: "Enumeration types - C# reference"
+title: "Enumeration types"
 description: "Learn about C# enumeration types that represent a choice or a combination of choices"
 ms.date: 12/13/2019
 f1_keywords:
@@ -50,7 +50,7 @@ If you want an enumeration type to represent a combination of choices, define en
 
 [!code-csharp[enum flags](snippets/shared/EnumType.cs#Flags)]
 
-For more information and examples, see the <xref:System.FlagsAttribute?displayProperty=nameWithType> API reference page and the [Non-exclusive members and the Flags attribute](/dotnet/api/system.enum#non-exclusive-members-and-the-flags-attribute) section of the <xref:System.Enum?displayProperty=nameWithType> API reference page.
+For more information and examples, see the <xref:System.FlagsAttribute?displayProperty=nameWithType> API reference page and the [Non-exclusive members and the Flags attribute](../../../fundamentals/runtime-libraries/system-enum.md#non-exclusive-members-and-the-flags-attribute) section of the <xref:System.Enum?displayProperty=nameWithType> API reference page.
 
 ## The System.Enum type and enum constraint
 
@@ -81,7 +81,6 @@ For more information, see the following sections of the [C# language specificati
 
 ## See also
 
-- [C# reference](../index.md)
 - [Enumeration format strings](../../../standard/base-types/enumeration-format-strings.md)
 - [Design guidelines - Enum design](../../../standard/design-guidelines/enum.md)
 - [Design guidelines - Enum naming conventions](../../../standard/design-guidelines/names-of-classes-structs-and-interfaces.md#naming-enumerations)

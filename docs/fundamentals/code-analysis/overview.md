@@ -2,7 +2,7 @@
 title: Code analysis in .NET
 titleSuffix: ""
 description: Learn about source code analysis in the .NET SDK.
-ms.date: 12/07/2022
+ms.date: 11/10/2024
 ms.topic: overview
 ms.custom: updateeachrelease
 helpviewer_keywords:
@@ -25,13 +25,78 @@ If rule violations are found by an analyzer, they're reported as a suggestion, w
 *Code quality analysis* ("CAxxxx") rules inspect your C# or Visual Basic code for security, performance, design and other issues. Analysis is enabled, by default, for projects that target .NET 5 or later. You can enable code analysis on projects that target earlier .NET versions by setting the [EnableNETAnalyzers](../../core/project-sdk/msbuild-props.md#enablenetanalyzers) property to `true`. You can also disable code analysis for your project by setting `EnableNETAnalyzers` to `false`.
 
 > [!TIP]
-> If you're using Visual Studio, many analyzer rules have associated *code fixes* that you can apply to correct the problem. Code fixes are shown in the light bulb icon menu.
+> If you're using Visual Studio, many analyzer rules have associated *code fixes* that you can apply to automatically correct the problem. Code fixes are shown in the light bulb icon menu.
 
 ### Enabled rules
 
+# [.NET 9](#tab/net-9)
+
+The following rules are enabled, by default, as errors or warnings in .NET 9. Additional rules are enabled as suggestions.
+
+| Diagnostic ID | Category | Severity | Version added | Description |
+| - | - | - | - | - |
+| [CA1416](quality-rules/ca1416.md) | Interoperability | Warning | .NET 5 | Validate platform compatibility |
+| [CA1417](quality-rules/ca1417.md) | Interoperability | Warning | .NET 5 | Do not use `OutAttribute` on string parameters for P/Invokes |
+| [CA1418](quality-rules/ca1418.md) | Interoperability | Warning | .NET 6 | Use valid platform string |
+| [CA1420](quality-rules/ca1420.md) | Interoperability | Warning | .NET 7 | Using features that require runtime marshalling when it's disabled will result in run-time exceptions |
+| [CA1422](quality-rules/ca1422.md) | Interoperability | Warning | .NET 7 | Validate platform compatibility |
+| [CA1831](quality-rules/ca1831.md) | Performance | Warning | .NET 5 | Use `AsSpan` instead of range-based indexers for string when appropriate |
+| [CA1856](quality-rules/ca1856.md) | Performance | Error | .NET 8 | Incorrect usage of `ConstantExpected` attribute |
+| [CA1857](quality-rules/ca1857.md) | Performance | Warning | .NET 8 | A constant is expected for the parameter |
+| [CA2013](quality-rules/ca2013.md) | Reliability | Warning | .NET 5 | Do not use `ReferenceEquals` with value types |
+| [CA2014](quality-rules/ca2014.md) | Reliability | Warning | .NET 5 | Do not use `stackalloc` in loops |
+| [CA2015](quality-rules/ca2015.md) | Reliability | Warning | .NET 5 | Do not define finalizers for types derived from <xref:System.Buffers.MemoryManager%601> |
+| [CA2017](quality-rules/ca2017.md) | Reliability | Warning | .NET 6 | Parameter count mismatch |
+| [CA2018](quality-rules/ca2018.md) | Reliability | Warning | .NET 6 | The `count` argument to `Buffer.BlockCopy` should specify the number of bytes to copy |
+| [CA2021](quality-rules/ca2021.md) | Reliability | Warning | .NET 8 | Do not call `Enumerable.Cast<T>` or `Enumerable.OfType<T>` with incompatible types |
+| [CA2022](quality-rules/ca2022.md) | Reliability | Warning | .NET 9 | Avoid inexact read with `Stream.Read` |
+| [CA2200](quality-rules/ca2200.md) | Usage | Warning | .NET 5 | Rethrow to preserve stack details |
+| [CA2247](quality-rules/ca2247.md) | Usage | Warning | .NET 5 | Argument passed to `TaskCompletionSource` constructor should be <xref:System.Threading.Tasks.TaskCreationOptions> enum instead of <xref:System.Threading.Tasks.TaskContinuationOptions> |
+| [CA2252](quality-rules/ca2252.md) | Usage | Error | .NET 6 | Opt in to preview features |
+| [CA2255](quality-rules/ca2255.md) | Usage | Warning | .NET 6 | The `ModuleInitializer` attribute should not be used in libraries |
+| [CA2256](quality-rules/ca2256.md) | Usage | Warning | .NET 6 | All members declared in parent interfaces must have an implementation in a `DynamicInterfaceCastableImplementation`-attributed interface |
+| [CA2257](quality-rules/ca2257.md) | Usage | Warning | .NET 6 | Members defined on an interface with the `DynamicInterfaceCastableImplementationAttribute` should be `static` |
+| [CA2258](quality-rules/ca2258.md) | Usage | Warning | .NET 6 | Providing a `DynamicInterfaceCastableImplementation` interface in Visual Basic is unsupported |
+| [CA2259](quality-rules/ca2259.md) | Usage | Warning | .NET 7 | `ThreadStatic` only affects static fields |
+| [CA2260](quality-rules/ca2260.md) | Usage | Warning | .NET 7 | Use correct type parameter |
+| [CA2261](quality-rules/ca2261.md) | Usage | Warning | .NET 8 | Do not use `ConfigureAwaitOptions.SuppressThrowing` with `Task<TResult>` |
+| [CA2264](quality-rules/ca2264.md) | Usage | Warning | .NET 9 | Do not pass a non-nullable value to `ArgumentNullException.ThrowIfNull` |
+| [CA2265](quality-rules/ca2265.md) | Usage | Warning | .NET 9 | Do not compare `Span<T>` to `null` or `default` |
+
+# [.NET 8](#tab/net-8)
+
+The following rules are enabled, by default, as errors or warnings in .NET 8. Additional rules are enabled as suggestions.
+
+| Diagnostic ID | Category | Severity | Version added | Description |
+| - | - | - | - | - |
+| [CA1416](quality-rules/ca1416.md) | Interoperability | Warning | .NET 5 | Validate platform compatibility |
+| [CA1417](quality-rules/ca1417.md) | Interoperability | Warning | .NET 5 | Do not use `OutAttribute` on string parameters for P/Invokes |
+| [CA1418](quality-rules/ca1418.md) | Interoperability | Warning | .NET 6 | Use valid platform string |
+| [CA1420](quality-rules/ca1420.md) | Interoperability | Warning | .NET 7 | Using features that require runtime marshalling when it's disabled will result in run-time exceptions |
+| [CA1422](quality-rules/ca1422.md) | Interoperability | Warning | .NET 7 | Validate platform compatibility |
+| [CA1831](quality-rules/ca1831.md) | Performance | Warning | .NET 5 | Use `AsSpan` instead of range-based indexers for string when appropriate |
+| [CA1856](quality-rules/ca1856.md) | Performance | Error | .NET 8 | Incorrect usage of `ConstantExpected` attribute |
+| [CA1857](quality-rules/ca1857.md) | Performance | Warning | .NET 8 | A constant is expected for the parameter |
+| [CA2013](quality-rules/ca2013.md) | Reliability | Warning | .NET 5 | Do not use `ReferenceEquals` with value types |
+| [CA2014](quality-rules/ca2014.md) | Reliability | Warning | .NET 5 | Do not use `stackalloc` in loops |
+| [CA2015](quality-rules/ca2015.md) | Reliability | Warning | .NET 5 | Do not define finalizers for types derived from <xref:System.Buffers.MemoryManager%601> |
+| [CA2017](quality-rules/ca2017.md) | Reliability | Warning | .NET 6 | Parameter count mismatch |
+| [CA2018](quality-rules/ca2018.md) | Reliability | Warning | .NET 6 | The `count` argument to `Buffer.BlockCopy` should specify the number of bytes to copy |
+| [CA2021](quality-rules/ca2021.md) | Reliability | Warning | .NET 8 | Do not call `Enumerable.Cast<T>` or `Enumerable.OfType<T>` with incompatible types |
+| [CA2200](quality-rules/ca2200.md) | Usage | Warning | .NET 5 | Rethrow to preserve stack details |
+| [CA2247](quality-rules/ca2247.md) | Usage | Warning | .NET 5 | Argument passed to `TaskCompletionSource` constructor should be <xref:System.Threading.Tasks.TaskCreationOptions> enum instead of <xref:System.Threading.Tasks.TaskContinuationOptions> |
+| [CA2252](quality-rules/ca2252.md) | Usage | Error | .NET 6 | Opt in to preview features |
+| [CA2255](quality-rules/ca2255.md) | Usage | Warning | .NET 6 | The `ModuleInitializer` attribute should not be used in libraries |
+| [CA2256](quality-rules/ca2256.md) | Usage | Warning | .NET 6 | All members declared in parent interfaces must have an implementation in a `DynamicInterfaceCastableImplementation`-attributed interface |
+| [CA2257](quality-rules/ca2257.md) | Usage | Warning | .NET 6 | Members defined on an interface with the `DynamicInterfaceCastableImplementationAttribute` should be `static` |
+| [CA2258](quality-rules/ca2258.md) | Usage | Warning | .NET 6 | Providing a `DynamicInterfaceCastableImplementation` interface in Visual Basic is unsupported |
+| [CA2259](quality-rules/ca2259.md) | Usage | Warning | .NET 7 | `ThreadStatic` only affects static fields |
+| [CA2260](quality-rules/ca2260.md) | Usage | Warning | .NET 7 | Use correct type parameter |
+| [CA2261](quality-rules/ca2261.md) | Usage | Warning | .NET 8 | Do not use `ConfigureAwaitOptions.SuppressThrowing` with `Task<TResult>` |
+
 # [.NET 7](#tab/net-7)
 
-The following rules are enabled, by default, in .NET 7.
+The following rules are enabled, by default, as errors or warnings in .NET 7. Additional rules are enabled as suggestions.
 
 | Diagnostic ID | Category | Severity | Description |
 | - | - | - | - |
@@ -56,29 +121,6 @@ The following rules are enabled, by default, in .NET 7.
 | [CA2259](quality-rules/ca2259.md) | Usage | Warning | `ThreadStatic` only affects static fields |
 | [CA2260](quality-rules/ca2260.md) | Usage | Warning | Use correct type parameter |
 
-# [.NET 6](#tab/net-6)
-
-The following rules are enabled, by default, in .NET 6.
-
-| Diagnostic ID | Category | Severity | Description |
-| - | - | - | - |
-| [CA1416](quality-rules/ca1416.md) | Interoperability | Warning | Platform compatibility analyzer |
-| [CA1417](quality-rules/ca1417.md) | Interoperability | Warning | Do not use `OutAttribute` on string parameters for P/Invokes |
-| [CA1418](quality-rules/ca1418.md) | Interoperability | Warning | Use valid platform string |
-| [CA1831](quality-rules/ca1831.md) | Performance | Warning | Use `AsSpan` instead of range-based indexers for string when appropriate |
-| [CA2013](quality-rules/ca2013.md) | Reliability | Warning | Do not use `ReferenceEquals` with value types |
-| [CA2014](quality-rules/ca2014.md) | Reliability | Warning | Do not use `stackalloc` in loops |
-| [CA2015](quality-rules/ca2015.md) | Reliability | Warning | Do not define finalizers for types derived from <xref:System.Buffers.MemoryManager%601> |
-| [CA2017](quality-rules/ca2017.md) | Reliability | Warning | Parameter count mismatch |
-| [CA2018](quality-rules/ca2018.md) | Reliability | Warning | The `count` argument to `Buffer.BlockCopy` should specify the number of bytes to copy |
-| [CA2200](quality-rules/ca2200.md) | Usage | Warning | Rethrow to preserve stack details |
-| [CA2252](quality-rules/ca2252.md) | Usage | Error | Opt in to preview features |
-| [CA2247](quality-rules/ca2247.md) | Usage | Warning | Argument passed to `TaskCompletionSource` constructor should be <xref:System.Threading.Tasks.TaskCreationOptions> enum instead of <xref:System.Threading.Tasks.TaskContinuationOptions> |
-| [CA2255](quality-rules/ca2255.md) | Usage | Warning | The `ModuleInitializer` attribute should not be used in libraries |
-| [CA2256](quality-rules/ca2256.md) | Usage | Warning | All members declared in parent interfaces must have an implementation in a `DynamicInterfaceCastableImplementation`-attributed interface |
-| [CA2257](quality-rules/ca2257.md) | Usage | Warning | Members defined on an interface with the `DynamicInterfaceCastableImplementationAttribute` should be `static` |
-| [CA2258](quality-rules/ca2258.md) | Usage | Warning | Providing a `DynamicInterfaceCastableImplementation` interface in Visual Basic is unsupported |
-
 ---
 
 You can change the severity of these rules to disable them or elevate them to errors. You can also [enable more rules](#enable-additional-rules).
@@ -90,15 +132,9 @@ You can change the severity of these rules to disable them or elevate them to er
 
 *Analysis mode* refers to a predefined code analysis configuration where none, some, or all rules are enabled. In the default analysis mode (`Default`), only a small number of rules are [enabled as build warnings](#enabled-rules). You can change the analysis mode for your project by setting the [`<AnalysisMode>`](../../core/project-sdk/msbuild-props.md#analysismode) property in the project file. The allowable values are:
 
-| Value | Description |
-| - | - |
-| `None` | No rules are enabled. |
-| `Default` | The default set of rules are enabled. These rules are listed at [Enabled rules](#enabled-rules). |
-| `Minimum` | More aggressive mode than `Default` mode. Certain suggestions that are highly recommended for build enforcement are enabled as build warnings. To see which rules this includes, inspect the *analysislevel_\[level]_minimum.editorconfig* file in the *%ProgramFiles%/dotnet/sdk/\[version]/Sdks/Microsoft.NET.Sdk/analyzers/build/config* directory. |
-| `Recommended` | More aggressive mode than the `Minimum` mode, where more rules are enabled as build warnings. To see which rules this includes, inspect the *analysislevel_\[level]_recommended.editorconfig* file in the *%ProgramFiles%/dotnet/sdk/\[version]/Sdks/Microsoft.NET.Sdk/analyzers/build/config* directory. |
-| `All` | All rules are enabled. |
+[!INCLUDE [analysis-model-levels](includes/analysis-model-levels.md)]
 
-Starting in .NET 6, you can omit [`<AnalysisMode>`](../../core/project-sdk/msbuild-props.md#analysismode) in favor of a compound value for the `<AnalysisLevel>` property. For example, the following value enables the recommended set of rules for the latest release: `<AnalysisLevel>latest-Recommended</AnalysisLevel>`. For more information, see [`AnalysisLevel`](../../core/project-sdk/msbuild-props.md#analysislevel).
+You can also omit [`<AnalysisMode>`](../../core/project-sdk/msbuild-props.md#analysismode) in favor of a compound value for the `<AnalysisLevel>` property. For example, the following value enables the recommended set of rules for the latest release: `<AnalysisLevel>latest-Recommended</AnalysisLevel>`. For more information, see [`AnalysisLevel`](../../core/project-sdk/msbuild-props.md#analysislevel).
 
 To find the default severity for each available rule and whether or not the rule is enabled in `Default` analysis mode, see the [full list of rules](https://github.com/dotnet/roslyn-analyzers/blob/main/src/NetAnalyzers/Core/AnalyzerReleases.Shipped.md).
 
@@ -118,11 +154,11 @@ You'll still see any code analysis warnings, but they won't break your build.
 
 By default, you'll get the latest code analysis rules and default rule severities as you upgrade to newer versions of the .NET SDK. If you don't want this behavior, for example, if you want to ensure that no new rules are enabled or disabled, you can override it in one of the following ways:
 
-- Set the `AnalysisLevel` MSBuild property to a specific value to lock the warnings to that set. When you upgrade to a newer SDK, you'll still get bug fixes for those warnings, but no new warnings will be enabled and no existing warnings will be disabled. For example, to lock the set of rules to those that ship with version 5.0 of the .NET SDK, add the following entry to your project file.
+- Set the `AnalysisLevel` MSBuild property to a specific value to lock the warnings to that set. When you upgrade to a newer SDK, you'll still get bug fixes for those warnings, but no new warnings will be enabled and no existing warnings will be disabled. For example, to lock the set of rules to those that ship with version 8.0 of the .NET SDK, add the following entry to your project file.
 
   ```xml
   <PropertyGroup>
-    <AnalysisLevel>5.0</AnalysisLevel>
+    <AnalysisLevel>8.0</AnalysisLevel>
   </PropertyGroup>
   ```
 
@@ -140,17 +176,17 @@ By default, you'll get the latest code analysis rules and default rule severitie
 
 *Code-style analysis* ("IDExxxx") rules enable you to define and maintain consistent code style in your codebase. The default enablement settings are:
 
-- Command-line build: Code-style analysis is disabled, by default, for all .NET projects on command-line builds.
+- Command-line build: Code-style analysis is *disabled*, by default, for all .NET projects on command-line builds.
 
-  Starting in .NET 5, you can [enable code-style analysis on build](#enable-on-build), both at the command line and inside Visual Studio. Code style violations appear as warnings or errors with an "IDE" prefix. This enables you to enforce consistent code styles at build time.
+  You can [enable code-style analysis on build](#enable-on-build), both at the command line and inside Visual Studio. Code style violations appear as warnings or errors with an "IDE" prefix. This enables you to enforce consistent code styles at build time.
 
-- Visual Studio: Code-style analysis is enabled, by default, for all .NET projects inside Visual Studio as [code refactoring quick actions](/visualstudio/ide/code-generation-in-visual-studio).
+- Visual Studio: Code-style analysis is *enabled*, by default, for all .NET projects inside Visual Studio as [code refactoring quick actions](/visualstudio/ide/code-generation-in-visual-studio).
 
 For a full list of code-style analysis rules, see [Code style rules](style-rules/index.md).
 
 ### Enable on build
 
-With the .NET 5 SDK and later versions, you can enable code-style analysis when building from the command-line and in Visual Studio. (However, for performance reasons, [a handful of code-style rules](https://github.com/dotnet/roslyn/blob/9f87b444da9c48a4d492b19f8337339056bf2b95/src/Analyzers/Core/Analyzers/EnforceOnBuildValues.cs#L95) will still apply only in the Visual Studio IDE.)
+You can enable code-style analysis when building from the command-line and in Visual Studio. (However, for performance reasons, [a handful of code-style rules](https://github.com/dotnet/roslyn/blob/9f87b444da9c48a4d492b19f8337339056bf2b95/src/Analyzers/Core/Analyzers/EnforceOnBuildValues.cs#L95) will still apply only in the Visual Studio IDE.)
 
 Follow these steps to enable code-style analysis on build:
 
@@ -163,6 +199,15 @@ Follow these steps to enable code-style analysis on build:
    # IDE0040: Accessibility modifiers required (escalated to a build warning)
    dotnet_diagnostic.IDE0040.severity = warning
    ```
+
+   > [!TIP]
+   > Starting in .NET 9, you can also use the [option format](style-rules/language-rules.md#option-format) to specify a severity and have it be respected at build time. For example:
+   >
+   > ```ini
+   > [*.{cs,vb}]
+   > # IDE0040: Accessibility modifiers required (escalated to a build warning)
+   > dotnet_style_require_accessibility_modifiers = always:warning
+   > ```
 
    Alternatively, you can configure an entire category to be a warning or error, by default, and then selectively turn off rules in that category that you don't want to run on build. For example:
 
@@ -185,10 +230,6 @@ dotnet_diagnostic.CA1822.severity = none
 ```
 
 For more information and other ways to suppress warnings, see [How to suppress code analysis warnings](suppress-warnings.md).
-
-## Run code analysis as a GitHub Action
-
-The [dotnet/code-analysis](https://github.com/dotnet/code-analysis) GitHub Action lets you run .NET code analyzers as part of continuous integration (CI) in an offline mode. For more information, see [.NET code analysis GitHub Action](../../devops/dotnet-github-action-reference.md#net-code-analysis).
 
 ## Third-party analyzers
 

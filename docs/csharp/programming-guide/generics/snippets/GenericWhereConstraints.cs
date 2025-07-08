@@ -133,9 +133,14 @@ namespace Generics
     }
 
     // <Snippet10>
-    class EmployeeList<T> where T : Employee, IEmployee, System.IComparable<T>, new()
+    class EmployeeList<T> where T : notnull, Employee, IComparable<T>, new()
     {
         // ...
+        public void AddDefault()
+        {
+            T t = new T();
+            // ...
+        }
     }
     // </Snippet10>
 
@@ -279,8 +284,8 @@ namespace Generics
     // <SelfConstraint>
     public interface IAdditionSubtraction<T> where T : IAdditionSubtraction<T>
     {
-        public abstract static T operator +(T left, T right);
-        public abstract static T operator -(T left, T right);
+        static abstract T operator +(T left, T right);
+        static abstract T operator -(T left, T right);
     }
     // </SelfConstraint>
 }

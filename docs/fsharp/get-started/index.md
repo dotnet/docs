@@ -11,11 +11,11 @@ You can get started with F# on your machine or online.
 
 There are multiple guides on how to install and use F# for the first time on your machine.  You can use the following table to help in making a decision:
 
-| OS | Prefer Visual Studio | Prefer Visual Studio Code | Prefer command line |
-| -- |------------------------|--------------------------|-----------------------------|-------------------------|
+| OS      | Prefer Visual Studio                                           | Prefer Visual Studio Code                                    | Prefer command line                                         |
+| ------- |----------------------------------------------------------------|--------------------------------------------------------------|--------------------------------------------------------------|
 | Windows | [Get started with Visual Studio](get-started-visual-studio.md) | [Get started with Visual Studio Code](get-started-vscode.md) | [Get started with the .NET CLI](get-started-command-line.md) |
-| macOS | [Get started with VS for Mac](get-started-with-visual-studio-for-mac.md) | [Get started with Visual Studio Code](get-started-vscode.md) | [Get started with the .NET CLI](get-started-command-line.md) |
-| Linux | N/A | [Get started with Visual Studio Code](get-started-vscode.md) | [Get started with the .NET CLI](get-started-command-line.md) |
+| macOS   | N/A                                                            | [Get started with Visual Studio Code](get-started-vscode.md) | [Get started with the .NET CLI](get-started-command-line.md) |
+| Linux   | N/A                                                            | [Get started with Visual Studio Code](get-started-vscode.md) | [Get started with the .NET CLI](get-started-command-line.md) |
 
 In general, there is no specific way that is better than the rest. We recommend trying all ways to use F# on your machine to see what you like the best!
 

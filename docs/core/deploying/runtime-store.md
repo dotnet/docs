@@ -63,7 +63,7 @@ dotnet store --manifest <PATH_TO_MANIFEST_FILE> --runtime <RUNTIME_IDENTIFIER> -
 **Example**
 
 ```dotnetcli
-dotnet store --manifest packages.csproj --runtime win10-x64 --framework netcoreapp2.0 --framework-version 2.0.0
+dotnet store --manifest packages.csproj --runtime win-x64 --framework netcoreapp2.0 --framework-version 2.0.0
 ```
 
 You can pass multiple target package store manifest paths to a single [`dotnet store`](../tools/dotnet-store.md) command by repeating the option and path in the command.

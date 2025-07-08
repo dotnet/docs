@@ -1,18 +1,17 @@
 ---
-description: "Learn more about: FILESTREAM Data"
+description: "Learn more about FILESTREAM data. The FILESTREAM storage attribute is for binary (BLOB) data stored in a `varbinary(max)` column."
 title: "FILESTREAM Data"
 ms.date: "03/30/2017"
-ms.assetid: bd8b845c-0f09-4295-b466-97ef106eefa8
 ---
 
-# FILESTREAM Data
+# FILESTREAM data
 
-The FILESTREAM storage attribute is for binary (BLOB) data stored in a varbinary(max) column. Before FILESTREAM, storing binary data required special handling. Unstructured data, such as text documents, images and video, is often stored outside of the database, making it difficult to manage.
+The FILESTREAM storage attribute is for binary (BLOB) data stored in a `varbinary(max)` column. Before FILESTREAM, storing binary data required special handling. Unstructured data, such as text documents, images, and video, is often stored outside of the database, making it difficult to manage.
 
 > [!NOTE]
-> You must install the .NET Framework 3.5 SP1 (or later) to work with FILESTREAM data using SqlClient.
+> You must install .NET Framework 3.5 SP1 (or later) to work with FILESTREAM data using SqlClient.
 
-Specifying the FILESTREAM attribute on a varbinary(max) column causes SQL Server to store the data on the local NTFS file system instead of in the database file. Although it is stored separately, you can use the same Transact-SQL statements that are supported for working with varbinary(max) data that is stored in the database.
+Specifying the FILESTREAM attribute on a `varbinary(max)` column causes SQL Server to store the data on the local NTFS file system instead of in the database file. Although it is stored separately, you can use the same Transact-SQL statements that are supported for working with `varbinary(max)` data that is stored in the database.
 
 ## SqlClient Support for FILESTREAM
 
@@ -57,7 +56,7 @@ namespace FileStreamTest
     {
         static void Main(string[] args)
         {
-            SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder("server=(local);integrated security=true;database=myDB");
+            SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder("...");
             ReadFileStream(builder);
             OverwriteFileStream(builder);
             InsertFileStream(builder);

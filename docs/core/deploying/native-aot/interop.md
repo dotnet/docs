@@ -1,15 +1,15 @@
 ---
-title: Native code interop with native AOT
-description: Learn about native code interop with native AOT.
+title: Native code interop with Native AOT
+description: Learn about native code interop with Native AOT.
 author: MichalStrehovsky
 ms.author: michals
 ms.date: 05/17/2023
 ---
-# Native code interop with native AOT
+# Native code interop with Native AOT
 
 Native code interop is a technology that allows you to access unmanaged libraries from managed code, or expose managed libraries to unmanaged code (the opposite direction).
 
-While native code interop works similarly in native AOT and non-AOT deployments, there are some specifics that differ when publishing as native AOT.
+While native code interop works similarly in Native AOT and non-AOT deployments, there are some specifics that differ when publishing as Native AOT.
 
 ## Direct P/Invoke calls
 
@@ -40,10 +40,10 @@ Examples:
 </ItemGroup>
 ```
 
-On Windows, native AOT uses a prepopulated list of direct P/Invoke methods that are available on all supported versions of Windows.
+On Windows, Native AOT uses a prepopulated list of direct P/Invoke methods that are available on all supported versions of Windows.
 
 > [!WARNING]
-> Because direct P/Invoke methods are resolved by the operating system dynamic loader and not by the native AOT runtime library, direct P/Invoke methods will not respect the <xref:System.Runtime.InteropServices.DefaultDllImportSearchPathsAttribute>. The library search order will follow the dynamic loader rules as defined by the operating system. Some operating systems and loaders offer ways to control dynamic loading through linker flags (such as `/DEPENDENTLOADFLAG` on Windows or `-rpath` on Linux). For more information on how to specify linker flags, see the [Linking](#linking) section.
+> Because direct P/Invoke methods are resolved by the operating system dynamic loader and not by the Native AOT runtime library, direct P/Invoke methods will not respect the <xref:System.Runtime.InteropServices.DefaultDllImportSearchPathsAttribute>. The library search order will follow the dynamic loader rules as defined by the operating system. Some operating systems and loaders offer ways to control dynamic loading through linker flags (such as `/DEPENDENTLOADFLAG` on Windows or `-rpath` on Linux). For more information on how to specify linker flags, see the [Linking](#linking) section.
 
 ### Linking
 
@@ -77,6 +77,7 @@ Examples:
 
 ## Native exports
 
-The native AOT compiler exports methods annotated with <xref:System.Runtime.InteropServices.UnmanagedCallersOnlyAttribute> with a nonempty `EntryPoint` property as
+The Native AOT compiler exports methods annotated with <xref:System.Runtime.InteropServices.UnmanagedCallersOnlyAttribute> with a nonempty `EntryPoint` property as
 public C entry points. This makes it possible to either dynamically or statically link the AOT compiled modules into external
-programs. For more information, see [NativeLibrary sample](https://github.com/dotnet/samples/tree/main/core/nativeaot/NativeLibrary/README.md).
+programs. Only methods marked `UnmanagedCallersOnly` in the published assembly are considered. Methods in project references or NuGet packages won't be exported.
+For more information, see [NativeLibrary sample](https://github.com/dotnet/samples/tree/main/core/nativeaot/NativeLibrary/README.md).

@@ -83,7 +83,7 @@ namespace builtin_types
         // <MixedSyntax>
         public record Person(string FirstName, string LastName)
         {
-            public string[] PhoneNumbers { get; init; } = Array.Empty<string>();
+            public string[] PhoneNumbers { get; init; } = [];
         };
         // </MixedSyntax>
     }
@@ -142,6 +142,26 @@ namespace builtin_types
 
             }
             // </PositionalWithManualProperty>
+        }
+    }
+
+    namespace positionalwithmanualfield
+    {
+        public static class Example
+        {
+            // <PositionalWithManualField>
+            public record Person(string FirstName, string LastName, string Id)
+            {
+                internal readonly string Id = Id; // this.Id set to parameter Id
+            }
+
+            public static void Main()
+            {
+                Person person = new("Nancy", "Davolio", "12345");
+                Console.WriteLine(person.FirstName); //output: Nancy
+
+            }
+            // </PositionalWithManualField>
         }
     }
 

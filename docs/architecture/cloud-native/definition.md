@@ -2,7 +2,7 @@
 title: What is Cloud Native?
 description: Learn about the foundational pillars that provide the bedrock for cloud-native systems
 author: robvet
-ms.date: 04/06/2022
+ms.date: 12/14/2023
 ---
 
 # What is Cloud Native?
@@ -23,7 +23,7 @@ The [Cloud Native Computing Foundation](https://www.cncf.io/) provides the [offi
 
 Cloud native is about *speed* and *agility*. Business systems are evolving from enabling business capabilities to weapons of strategic transformation that accelerate business velocity and growth. It's imperative to get new ideas to market immediately.
 
-At the same time, business systems have also become increasingly complex with users demanding more. They expect rapid responsiveness, innovative features, and zero downtime. Performance problems, recurring errors, and the inability to move fast are no longer acceptable. Your users will visit your competitor. Cloud-native systems are designed to embrace rapid change, large scale, and resilience
+At the same time, business systems have also become increasingly complex with users demanding more. They expect rapid responsiveness, innovative features, and zero downtime. Performance problems, recurring errors, and the inability to move fast are no longer acceptable. Your users will visit your competitor. Cloud-native systems are designed to embrace rapid change, large scale, and resilience.
 
 Here are some companies who have implemented cloud-native techniques. Think about the speed, agility, and scalability they've achieved.
 
@@ -51,13 +51,13 @@ Cloud-native systems take full advantage of the cloud service model.
 
 Designed to thrive in a dynamic, virtualized cloud environment, these systems make extensive use of [Platform as a Service (PaaS)](https://azure.microsoft.com/overview/what-is-paas/) compute infrastructure and managed services. They treat the underlying infrastructure as *disposable* - provisioned in minutes and resized, scaled, or destroyed on demand – via automation.
 
-Consider the widely accepted DevOps concept of [Pets vs. Cattle](https://medium.com/@Joachim8675309/devops-concepts-pets-vs-cattle-2380b5aab313). In a traditional data center, servers are treated as *Pets*: a physical machine, given a meaningful name, and *cared* for. You scale by adding more resources to the same machine (scaling up). If the server becomes sick, you nurse it back to health. Should the server become unavailable, everyone notices.
+Consider the difference between how we treat pets and commodities. In a traditional data center, servers are treated as pets: a physical machine, given a meaningful name, and cared for. You scale by adding more resources to the same machine (scaling up). If the server becomes sick, you nurse it back to health. Should the server become unavailable, everyone notices.
 
-The *Cattle* service model is different. You provision each instance as a virtual machine or container. They're identical and assigned a system identifier such as Service-01, Service-02, and so on. You scale by creating more of them (scaling out). When one becomes unavailable, nobody notices.
+The commodities service model is different. You provision each instance as a virtual machine or container. They're identical and assigned a system identifier such as Service-01, Service-02, and so on. You scale by creating more instances (scaling out). Nobody notices when an instance becomes unavailable.
 
-The cattle model embraces *immutable infrastructure*. Servers aren't repaired or modified. If one fails or requires updating, it's destroyed and a new one is provisioned – all done via automation.
+The commodities model embraces immutable infrastructure. Servers aren't repaired or modified. If one fails or requires updating, it's destroyed and a new one is provisioned – all done via automation.
 
-Cloud-native systems embrace the Cattle service model. They continue to run as the infrastructure scales in or out with no regard to the machines upon which they're running.
+Cloud-native systems embrace the commodities service model. They continue to run as the infrastructure scales in or out with no regard to the machines upon which they're running.
 
 The Azure cloud platform supports this type of highly elastic infrastructure with automatic scaling, self-healing, and monitoring capabilities.
 
@@ -146,7 +146,7 @@ Microservices provide agility.
 
 Earlier in the chapter, we compared an eCommerce application built as a monolith to that with microservices. In the example, we saw some clear benefits:
 
-- Each microservice has an autonomous lifecycle and can evolve independently and deploy frequently. You don't have to wait for a quarterly release to deploy a new features or update. You can update a small area of a live application with less risk of disrupting the entire system. The update can be made without a full redeployment of the application.
+- Each microservice has an autonomous lifecycle and can evolve independently and deploy frequently. You don't have to wait for a quarterly release to deploy a new feature or update. You can update a small area of a live application with less risk of disrupting the entire system. The update can be made without a full redeployment of the application.
 
 - Each microservice can scale independently. Instead of scaling the entire application as a single unit, you scale out only those services that require more processing power to meet desired performance levels and service-level agreements. Fine-grained scaling provides for greater control of your system and helps reduce overall costs as you scale portions of your system, not everything.
 
@@ -208,8 +208,6 @@ The blue boxes across the center of the figure represent the Dapr building block
 The components row represents a large set of pre-defined infrastructure components that your application can consume. Think of components as infrastructure code you don't have to write.
 
 The bottom row highlights the portability of Dapr and the diverse environments across which it can run.
-
-Microsoft features a free ebook [Dapr for .NET Developers](../dapr-for-net-developers/index.md) for learning Dapr.
 
 Looking ahead, Dapr has the potential to have a profound impact on cloud-native application development.
 
@@ -352,7 +350,7 @@ In the previous figure, pay special attention to separation of tasks:
 
 Applying these practices, organizations have radically evolved how they ship software. Many have moved from quarterly releases to on-demand updates. The goal is to catch problems early in the development cycle when they're less expensive to fix. The longer the duration between integrations, the more expensive problems become to resolve.  With consistency in the integration process, teams can commit code changes more frequently, leading to better collaboration and software quality.
 
-Infrastructure as code and deployment automation, along with GitHub and Azure DevOps are discussed in detail in [DevOps](./devops.md)
+Infrastructure as code and deployment automation, along with GitHub and Azure DevOps are discussed in detail in [DevOps](./devops.md).
 
 >[!div class="step-by-step"]
 >[Previous](introduction.md)

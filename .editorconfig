@@ -22,6 +22,8 @@ charset = utf-8-bom
 # Analyzers
 dotnet_analyzer_diagnostic.category-Security.severity = error
 dotnet_code_quality.ca1802.api_surface = private, internal
+# SYSLIB5001: Type is for evaluation purposes only and is subject to change or removal in future updates. Suppress this diagnostic to proceed.
+dotnet_diagnostic.SYSLIB5001.severity = suggestion
 
 # Miscellaneous style rules
 dotnet_sort_system_directives_first = true

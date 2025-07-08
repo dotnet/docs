@@ -77,9 +77,9 @@ End Class
 
 Properties have get and set procedures, which provide more control on how values are set or returned.
 
-Visual Basic allows you either to create a private field for storing the property value or use so-called auto-implemented properties that create this field automatically behind the scenes and provide the basic logic for the property procedures.
+Visual Basic allows you either to create a private field for storing the property value or use so-called automatically implemented properties that create this field automatically behind the scenes and provide the basic logic for the property procedures.
 
-To define an auto-implemented property:
+To define an automatically implemented property:
 
 ```vb
 Class SampleClass
@@ -105,7 +105,7 @@ Class SampleClass
 End Class
 ```
 
-Most properties have methods or procedures to both set and get the property value. However, you can create read-only or write-only properties to restrict them from being modified or read. In Visual Basic you can use `ReadOnly` and `WriteOnly` keywords. However, auto-implemented properties cannot be read-only or write-only.
+Most properties have methods or procedures to both set and get the property value. However, you can create read-only or write-only properties to restrict them from being modified or read. In Visual Basic you can use `ReadOnly` and `WriteOnly` keywords. However, automatically implemented properties cannot be read-only or write-only.
 
 For more information, see:
 

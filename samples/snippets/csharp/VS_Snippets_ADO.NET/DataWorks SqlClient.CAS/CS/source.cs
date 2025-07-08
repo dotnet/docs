@@ -1,26 +1,33 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Data;
 using System.Data.SqlClient;
 using System.Security;
 using System.Security.Permissions;
 
-namespace PartialTrustTopic {
-   public class PartialTrustHelper : MarshalByRefObject {
-      public void TestConnectionOpen(string connectionString) {
+namespace PartialTrustTopic
+{
+   public class PartialTrustHelper : MarshalByRefObject
+   {
+      public void TestConnectionOpen(string connectionString)
+      {
          // Try to open a connection.
-         using (SqlConnection connection = new SqlConnection(connectionString)) {
+         using (SqlConnection connection = new SqlConnection(connectionString))
+         {
             connection.Open();
          }
       }
    }
 
-   class Program {
-      static void Main(string[] args) {
-         TestCAS("Data Source=(local);Integrated Security=true", "Data Source=(local);Integrated Security=true;Initial Catalog=Test");
+   class Program
+   {
+      static void Main(string[] args)
+      {
+         TestCAS("secure-connnection-string1", "secure-connnection-string2");
       }
 
-      static void TestCAS(string connectString1, string connectString2) {
+      static void TestCAS(string connectString1, string connectString2)
+      {
          // Create permission set for sandbox AppDomain.
          // This example only allows execution.
          PermissionSet permissions = new PermissionSet(PermissionState.None);
@@ -36,13 +43,15 @@ namespace PartialTrustTopic {
          Type helperType = typeof(PartialTrustHelper);
          PartialTrustHelper firstHelper = (PartialTrustHelper)firstDomain.CreateInstanceAndUnwrap(helperType.Assembly.FullName, helperType.FullName);
 
-         try {
+         try
+         {
             // Attempt to open a connection in the sandbox AppDomain.
             // This is expected to fail.
             firstHelper.TestConnectionOpen(connectString1);
             Console.WriteLine("Connection opened, unexpected.");
          }
-         catch (System.Security.SecurityException ex) {
+         catch (System.Security.SecurityException ex)
+         {
             Console.WriteLine("Failed, as expected: {0}",
                 ex.FirstPermissionThatFailed);
 
@@ -60,20 +69,24 @@ namespace PartialTrustTopic {
          PartialTrustHelper secondHelper = (PartialTrustHelper)secondDomain.CreateInstanceAndUnwrap(helperType.Assembly.FullName, helperType.FullName);
 
          // Try connection open again, it should succeed now.
-         try {
+         try
+         {
             secondHelper.TestConnectionOpen(connectString1);
             Console.WriteLine("Connection opened, as expected.");
          }
-         catch (System.Security.SecurityException ex) {
-            Console.WriteLine("Unexpected failure: {0}", ex.Message);
+         catch (System.Security.SecurityException ex)
+         {
+            Console.WriteLine($"Unexpected failure: {ex.Message}");
          }
 
          // Try a different connection string. This should fail.
-         try {
+         try
+         {
             secondHelper.TestConnectionOpen(connectString2);
             Console.WriteLine("Connection opened, unexpected.");
          }
-         catch (System.Security.SecurityException ex) {
+         catch (System.Security.SecurityException ex)
+         {
             Console.WriteLine("Failed, as expected: {0}", ex.Message);
          }
       }

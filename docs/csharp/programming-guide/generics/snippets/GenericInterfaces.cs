@@ -1,4 +1,4 @@
-namespace Generics.Interfaces;
+﻿namespace Generics.Interfaces;
 
 
 //<GenericLists>
@@ -157,8 +157,8 @@ public class Program
         SortedList<Person> list = new SortedList<Person>();
 
         //Create name and age values to initialize Person objects.
-        string[] names = new string[]
-        {
+        string[] names =
+        [
             "Franscoise",
             "Bill",
             "Li",
@@ -169,9 +169,9 @@ public class Program
             "Maria",
             "Alessandro",
             "Raul"
-        };
+        ];
 
-        int[] ages = new int[] { 45, 19, 28, 23, 18, 9, 108, 72, 30, 35 };
+        int[] ages = [45, 19, 28, 23, 18, 9, 108, 72, 30, 35];
 
         //Populate the list.
         for (int x = 0; x < 10; x++)

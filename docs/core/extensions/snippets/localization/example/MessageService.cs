@@ -3,17 +3,13 @@ using Microsoft.Extensions.Localization;
 
 namespace Localization.Example;
 
-public sealed class MessageService
+public sealed class MessageService(IStringLocalizer<MessageService> localizer)
 {
-    private readonly IStringLocalizer<MessageService> _localizer = null!;
-
-    public MessageService(IStringLocalizer<MessageService> localizer) =>
-        _localizer = localizer;
-
-    [return: NotNullIfNotNull(nameof(_localizer))]
+    [return: NotNullIfNotNull(nameof(localizer))]
     public string? GetGreetingMessage()
     {
-        LocalizedString localizedString = _localizer["GreetingMessage"];
+        LocalizedString localizedString = localizer["GreetingMessage"];
+
         return localizedString;
     }
 }

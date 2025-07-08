@@ -40,3 +40,7 @@ If you need to test types in <xref:System.Reflection.MetadataLoadContext> for eq
 ## Example
 
 For a complete code example, see the [Inspect assembly contents using MetadataLoadContext sample](/samples/dotnet/samples/inspect-assembly-contents-using-metadataloadcontext/).
+
+## See also
+
+- [Reflection in .NET](../../fundamentals/reflection/reflection.md)

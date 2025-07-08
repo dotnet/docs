@@ -2,6 +2,8 @@
 title: SYSLIB0012 warning
 description: Learn about the obsoletions that generate compile-time warning SYSLIB0012.
 ms.date: 10/20/2020
+f1_keywords:
+  - syslib0012
 ---
 # SYSLIB0012: Assembly.CodeBase and Assembly.EscapedCodeBase are obsolete
 

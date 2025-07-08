@@ -1,11 +1,11 @@
 ---
-title: Async Expressions
+title: Async expressions
 description: Learn about support in the F# programming language for writing async expressions, which execute without blocking execution of other work.
-ms.date: 10/29/2021
+ms.date: 10/31/2023
 ---
 # Async expressions
 
-This article describes support in F# for async expressions. Async expressions provide one way of performing computations asynchronously, that is, without blocking execution of other work. For example, asynchronous computations can be used to write apps that have UIs that remain responsive to users as the application performs other work.
+This article describes support in F# for async expressions. Async expressions provide one way of performing computations asynchronously, that is, without blocking execution of other work. For example, asynchronous computations can be used to write apps that have UIs that remain responsive to users as the application performs other work. The [F# Asynchronous Workflows programming model](https://www.microsoft.com/research/publication/the-f-asynchronous-programming-model) allows you to write functional programs while hiding the details of thread transition within a library.
 
 Asynchronous code can also be authored using [task expressions](task-expressions.md), which create .NET tasks directly. Using task expressions is preferred when interoperating extensively with .NET libraries that create or consume .NET tasks. When writing most asynchronous code in F#, F# async expressions are preferred because they are more succinct, more compositional, and avoid certain caveats associated with .NET tasks.
 
@@ -54,7 +54,7 @@ In addition to `let!`, you can use `use!` to perform asynchronous bindings. The 
 
 ## Asynchronous Primitives
 
-A method that performs a single asynchronous task and returns the result is called an *asynchronous primitive*, and these are designed specifically for use with `let!`. Several asynchronous primitives are defined in the F# core library. Two such methods for Web applications are defined in the module [`FSharp.Control.WebExtensions`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-webextensions.html): [`WebRequest.AsyncGetResponse`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-webextensions.html#AsyncGetResponse) and [`WebClient.AsyncDownloadString`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-webextensions.html#AsyncDownloadString). Both primitives download data from a Web page, given a URL. `AsyncGetResponse` produces a `System.Net.WebResponse` object, and `AsyncDownloadString` produces a string that represents the HTML for a Web page.
+A method that performs a single asynchronous task and returns the result is called an *asynchronous primitive*, and these are designed specifically for use with `let!`. Several asynchronous primitives are defined in the F# core library. Two such methods for Web applications are defined in the module [`FSharp.Control.WebExtensions`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-webextensions.html): [`WebRequest.AsyncGetResponse`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-webextensions.html#AsyncGetResponse) and <xref:System.Net.Http.HttpClient.GetStringAsync*?displayProperty=nameWithType> (wrapped with `Async.AwaitTask` for compatibility with F#'s asynchronous model). Both primitives download data from a Web page, given a URL. `AsyncGetResponse` produces a `System.Net.WebResponse` object, and `GetStringAsync` produces a string that represents the HTML for a Web page.
 
 Several primitives for asynchronous I/O operations are included in the [`FSharp.Control.CommonExtensions`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-commonextensions.html) module. These extension methods of the `System.IO.Stream` class are [`Stream.AsyncRead`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-commonextensions.html#AsyncRead) and [`Stream.AsyncWrite`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-commonextensions.html#AsyncWrite).
 
@@ -76,7 +76,8 @@ The `runAll` function launches three async expressions in parallel and waits unt
 
 ## See also
 
+- [Async programming in F#](../tutorials/async.md)
 - [F# Language Reference](index.md)
 - [Computation Expressions](computation-expressions.md)
-- [Task Expressions](task-expressions.md)
+- [Task expressions](task-expressions.md)
 - [Control.Async Class](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-fsharpasync.html)

@@ -1,7 +1,7 @@
 ---
 title: dotnet tool update command
 description: The dotnet tool update command updates the specified .NET tool on your machine.
-ms.date: 07/08/2020
+ms.date: 03/15/2024
 ---
 # dotnet tool update
 
@@ -15,21 +15,24 @@ ms.date: 07/08/2020
 
 ```dotnetcli
 dotnet tool update <PACKAGE_ID> -g|--global
-    [--add-source <SOURCE>] [--configfile <FILE>]
+    [--add-source <SOURCE>] [--all] [--allow-downgrade]
+    [--configfile <FILE>]
     [--disable-parallel] [--framework <FRAMEWORK>]
     [--ignore-failed-sources] [--interactive]
     [--no-cache] [--prerelease]
     [-v|--verbosity <LEVEL>] [--version <VERSION>]
 
 dotnet tool update <PACKAGE_ID> --tool-path <PATH>
-    [--add-source <SOURCE>] [--configfile <FILE>]
+    [--add-source <SOURCE>] [--all] [--allow-downgrade]
+    [--configfile <FILE>]
     [--disable-parallel] [--framework <FRAMEWORK>]
     [--ignore-failed-sources] [--interactive] 
     [--no-cache] [--prerelease]
     [-v|--verbosity <LEVEL>] [--version <VERSION>]
 
 dotnet tool update <PACKAGE_ID> --local
-    [--add-source <SOURCE>] [--configfile <FILE>]
+    [--add-source <SOURCE>] [--all] [--allow-downgrade]
+    [--configfile <FILE>]
     [--disable-parallel] [--framework <FRAMEWORK>]
     [--ignore-failed-sources] [--interactive]
     [--no-cache] [--prerelease]
@@ -56,6 +59,12 @@ The `dotnet tool update` command provides a way for you to update .NET tools on 
 ## Options
 
 [!INCLUDE [add-source](../../../includes/cli-add-source.md)]
+
+- **`--all`**
+
+  Update all tools.
+
+[!INCLUDE [allow-downgrade](../../../includes/cli-allow-downgrade.md)]
 
 [!INCLUDE [configfile](../../../includes/cli-configfile.md)]
 
@@ -104,6 +113,8 @@ The `dotnet tool update` command provides a way for you to update .NET tools on 
 - **`--version <VERSION>`**
 
   The version range of the tool package to update to. This cannot be used to downgrade versions, you must `uninstall` newer versions first.
+
+  Starting in .NET 8.0, `--version Major.Minor.Patch` refers to a specific major.minor.patch version, including unlisted versions. To get the latest version of a certain major.minor version instead, use `--version Major.Minor.*`.
 
 ## Examples
 

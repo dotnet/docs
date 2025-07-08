@@ -1,7 +1,7 @@
 ---
 title: dotnet publish command
 description: The dotnet publish command publishes a .NET project or solution to a directory.
-ms.date: 07/19/2023
+ms.date: 01/07/2025
 ---
 # dotnet publish
 
@@ -15,13 +15,15 @@ ms.date: 07/19/2023
 
 ```dotnetcli
 dotnet publish [<PROJECT>|<SOLUTION>] [-a|--arch <ARCHITECTURE>]
+    [--artifacts-path <ARTIFACTS_DIR>]
     [-c|--configuration <CONFIGURATION>] [--disable-build-servers]
     [-f|--framework <FRAMEWORK>] [--force] [--interactive]
     [--manifest <PATH_TO_MANIFEST_FILE>] [--no-build] [--no-dependencies]
     [--no-restore] [--nologo] [-o|--output <OUTPUT_DIRECTORY>]
     [--os <OS>] [-r|--runtime <RUNTIME_IDENTIFIER>]
     [--sc|--self-contained [true|false]] [--no-self-contained]
-    [-s|--source <SOURCE>] [--use-current-runtime, --ucr [true|false]]
+    [-s|--source <SOURCE>] [--tl:[auto|on|off]]
+    [--use-current-runtime, --ucr [true|false]]
     [-v|--verbosity <LEVEL>] [--version-suffix <VERSION_SUFFIX>]
 
 dotnet publish -h|--help
@@ -92,7 +94,7 @@ The following MSBuild properties change the output of `dotnet publish`.
 
 - `PublishSingleFile`
 
-  Packages the app into a platform-specific single-file executable. For more information about single-file publishing, see the [single-file bundler design document](https://github.com/dotnet/designs/blob/main/accepted/2020/single-file/design.md).
+  Packages the app into a platform-specific single-file executable. For more information about single-file publishing, see the [single-file bundler design document](https://github.com/dotnet/designs/blob/main/accepted/2020/single-file/design.md). When this property is set to `true`, the `PublishSelfContained` property is implicitly set to `true`.
 
   We recommend that you specify this option in the project file rather than on the command line.
 
@@ -118,13 +120,15 @@ For more information, see the following resources:
 
   * `PROJECT` is the path and filename of a C#, F#, or Visual Basic project file, or the path to a directory that contains a C#, F#, or Visual Basic project file. If the directory is not specified, it defaults to the current directory.
 
-  * `SOLUTION` is the path and filename of a solution file (*.sln* extension), or the path to a directory that contains a solution file. If the directory is not specified, it defaults to the current directory.
+  * `SOLUTION` is the path and filename of a solution file (*.sln* or *.slnx* extension), or the path to a directory that contains a solution file. If the directory is not specified, it defaults to the current directory.
 
 ## Options
 
 [!INCLUDE [arch](../../../includes/cli-arch.md)]
 
-[!INCLUDE [configuration](../../../includes/cli-configuration.md)]
+[!INCLUDE [artifacts-path](../../../includes/cli-artifacts-path.md)]
+
+[!INCLUDE [configuration](../../../includes/cli-configuration-publish-pack.md)]
 
 [!INCLUDE [disable-build-servers](../../../includes/cli-disable-build-servers.md)]
 
@@ -208,11 +212,13 @@ For more information, see the following resources:
 
   Publishes the application for a given runtime. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md). For more information, see [.NET application publishing](../deploying/index.md) and [Publish .NET apps with the .NET CLI](../deploying/deploy-with-cli.md). If you use this option, use `--self-contained` or `--no-self-contained` also.
 
-[!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
+[!INCLUDE [tl](../../../includes/cli-tl.md)]
 
 - **`--use-current-runtime, --ucr [true|false]`**
 
   Sets the `RuntimeIdentifier` to a platform portable `RuntimeIdentifier` based on the one of your machine. This happens implicitly with properties that require a `RuntimeIdentifier`, such as `SelfContained`, `PublishAot`, `PublishSelfContained`, `PublishSingleFile`, and `PublishReadyToRun`. If the property is set to false, that implicit resolution will no longer occur.
+
+[!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
 
 - **`--version-suffix <VERSION_SUFFIX>`**
 
@@ -231,7 +237,7 @@ For more information, see the following resources:
 - Create a [self-contained executable](../deploying/index.md#publish-self-contained) for the project in the current directory, for a specific runtime:
 
   ```dotnetcli
-  dotnet publish --runtime osx.10.11-x64
+  dotnet publish --runtime osx-x64
   ```
 
   The RID must be in the project file.
@@ -239,7 +245,7 @@ For more information, see the following resources:
 - Create a [framework-dependent executable](../deploying/index.md#publish-framework-dependent) for the project in the current directory, for a specific platform:
 
   ```dotnetcli
-  dotnet publish --runtime osx.10.11-x64 --self-contained false
+  dotnet publish --runtime osx-x64 --self-contained false
   ```
 
   The RID must be in the project file. This example applies to .NET Core 3.0 SDK and later versions.
@@ -247,7 +253,7 @@ For more information, see the following resources:
 - Publish the project in the current directory, for a specific runtime and target framework:
 
   ```dotnetcli
-  dotnet publish --framework netcoreapp3.1 --runtime osx.10.11-x64
+  dotnet publish --framework net8.0 --runtime osx-x64
   ```
 
 - Publish the specified project file:
@@ -268,7 +274,7 @@ For more information, see the following resources:
 - [Publish .NET apps with the .NET CLI](../deploying/deploy-with-cli.md)
 - [Target frameworks](../../standard/frameworks.md)
 - [Runtime Identifier (RID) catalog](../rid-catalog.md)
-- [Containerize a .NET app with dotnet publish](../docker/publish-as-container.md)
+- [Containerize a .NET app with dotnet publish](../containers/sdk-publish.md)
 - [Working with macOS Catalina Notarization](../install/macos-notarization-issues.md)
 - [Directory structure of a published application](/aspnet/core/hosting/directory-structure)
 - [MSBuild command-line reference](/visualstudio/msbuild/msbuild-command-line-reference)

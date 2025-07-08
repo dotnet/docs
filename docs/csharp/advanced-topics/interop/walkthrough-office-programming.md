@@ -1,6 +1,6 @@
 ---
-title: "Walkthrough: Office Programming - C#"
-description: Learn about the features Visual Studio offers that improve Microsoft Office programming. 
+title: "Walkthrough: Office Programming"
+description: Learn about the features Visual Studio offers that improve Microsoft Office programming.
 ms.date: 02/15/2023
 ms.topic: tutorial
 dev_langs:
@@ -49,7 +49,7 @@ In **Solution Explorer**, right-click the **ThisAddIn.cs** file and then select 
 
 ## Create a list of bank accounts
 
-In **Solution Explorer**, right-click your project's name, select **Add**, and then select **Class**. Name the class Account.cs. Select **Add**. Replace the definition of the `Account` class with the following code. The class definitions use *auto-implemented properties*.
+In **Solution Explorer**, right-click your project's name, select **Add**, and then select **Class**. Name the class Account.cs. Select **Add**. Replace the definition of the `Account` class with the following code. The class definitions use *automatically implemented properties*.
 
 :::code language="csharp" source="./snippets/OfficeWalkthrough/account.cs" id="AccountClass":::
 
@@ -104,7 +104,7 @@ In Visual Studio, select **Clean Solution** on the **Build** menu. Otherwise, th
 
 1. Run the application again, but don't select **Clean Solution**.
 1. Select the **Start**. Locate **Microsoft Visual Studio \<version>** and open a developer command prompt.
-1. Type `ildasm` in the Developer Command Prompt for Visual Studio window, and then press ENTER. The IL DASM window appears.
+1. Type `ildasm` in the Developer Command Prompt for Visual Studio window, and then press <kbd>Enter</kbd>. The IL DASM window appears.
 1. On the **File** menu in the IL DASM window, select **File** > **Open**. Double-click **Visual Studio \<version>**, and then double-click **Projects**. Open the folder for your project, and look in the bin/Debug folder for *your project name*.dll. Double-click *your project name*.dll. A new window displays your project's attributes, in addition to references to other modules and assemblies. The assembly includes the namespaces `Microsoft.Office.Interop.Excel` and `Microsoft.Office.Interop.Word`. By default in Visual Studio, the compiler imports the types you need from a referenced PIA into your assembly. For more information, see [How to: View Assembly Contents](../../../standard/assembly/view-contents.md).
 1. Double-click the **MANIFEST** icon. A window appears that contains a list of assemblies that contain items referenced by the project. `Microsoft.Office.Interop.Excel` and `Microsoft.Office.Interop.Word` aren't in the list. Because you imported the types your project needs into your assembly, you aren't required to install references to a PIA. Importing the types into your assembly makes deployment easier. The PIAs don't have to be present on the user's computer. An application doesn't require deployment of a specific version of a PIA. Applications can work with multiple versions of Office, provided that the necessary APIs exist in all versions. Because deployment of PIAs is no longer necessary, you can create an application in advanced scenarios that works with multiple versions of Office, including earlier versions. Your code can't use any APIs that aren't available in the version of Office you're working with. It isn't always clear whether a particular API was available in an earlier version. Working with earlier versions of Office isn't recommended.
 1. Close the manifest window and the assembly window.
@@ -122,12 +122,13 @@ In Visual Studio, select **Clean Solution** on the **Build** menu. Otherwise, th
 
 ## See also
 
-- [Auto-Implemented Properties (C#)](../../programming-guide/classes-and-structs/auto-implemented-properties.md)
-- [Object and Collection Initializers](../../programming-guide/classes-and-structs/object-and-collection-initializers.md)
-- [Named and Optional Arguments](../../programming-guide/classes-and-structs/named-and-optional-arguments.md)
+- [Automatically implemented properties (C#)](../../programming-guide/classes-and-structs/auto-implemented-properties.md)
+- [Object and collection initializers](../../programming-guide/classes-and-structs/object-and-collection-initializers.md)
+- [Visual Studio Tools for Office (VSTO)](/visualstudio/vsto/visual-studio-tools-for-office-runtime-overview)
+- [Named and optional arguments](../../programming-guide/classes-and-structs/named-and-optional-arguments.md)
 - [dynamic](../../language-reference/builtin-types/reference-types.md)
-- [Using Type dynamic](using-type-dynamic.md)
-- [Lambda Expressions (C#)](../../language-reference/operators/lambda-expressions.md)
-- [Walkthrough: Embedding Type Information from Microsoft Office Assemblies in Visual Studio](/previous-versions/visualstudio/visual-studio-2013/ee317478(v=vs.120))
-- [Walkthrough: Embedding Types from Managed Assemblies](../../../standard/assembly/embed-types-visual-studio.md)
-- [Walkthrough: Creating Your First VSTO Add-in for Excel](/visualstudio/vsto/walkthrough-creating-your-first-vsto-add-in-for-excel)
+- [Using type dynamic](using-type-dynamic.md)
+- [Lambda expressions (C#)](../../language-reference/operators/lambda-expressions.md)
+- [Walkthrough: Embedding type information from Microsoft Office assemblies in Visual Studio](/previous-versions/visualstudio/visual-studio-2013/ee317478(v=vs.120))
+- [Walkthrough: Embedding types from managed assemblies](../../../standard/assembly/embed-types-visual-studio.md)
+- [Walkthrough: Creating your first VSTO add-in for Excel](/visualstudio/vsto/walkthrough-creating-your-first-vsto-add-in-for-excel)

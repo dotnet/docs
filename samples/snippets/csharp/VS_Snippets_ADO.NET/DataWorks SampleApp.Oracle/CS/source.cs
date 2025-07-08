@@ -1,18 +1,17 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
-using System.Data;
 using System.Data.OracleClient;
 
-class Program
+static class Program
 {
     static void Main()
     {
-        string connectionString =
+        const string connectionString =
             "Data Source=ThisOracleServer;Integrated Security=yes;";
-        string queryString =
+        const string queryString =
             "SELECT CUSTOMER_ID, NAME FROM DEMO.CUSTOMER";
         using (OracleConnection connection =
-                   new OracleConnection(connectionString))
+                   new(connectionString))
         {
             OracleCommand command = connection.CreateCommand();
             command.CommandText = queryString;
@@ -25,8 +24,7 @@ class Program
 
                 while (reader.Read())
                 {
-                    Console.WriteLine("\t{0}\t{1}",
-                        reader[0], reader[1]);
+                    Console.WriteLine($"\t{reader[0]}\t{reader[1]}");
                 }
                 reader.Close();
             }

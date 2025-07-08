@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
+using MethodParameters;
 
 namespace Keywords
 {
@@ -12,12 +13,15 @@ namespace Keywords
             Console.WriteLine("=================    readonly Keyword Examples ======================");
             ReadonlyKeywordExamples.Examples();
             Console.WriteLine("=================    pass by value / reference Keyword Examples ======================");
-            TestClassAndStruct.Main();
-            ParameterModifiers.PassValueByValue();
-            ParameterModifiers.PassingValueByReference();
-            ParameterModifiers.PassingReferenceByValue();
-            ParameterModifiers.PassingReferenceByReference();
-
+            PassTypesByValue.TestPassTypesByValue();
+            Console.WriteLine("====");
+            PassTypesByReference.TestPassTypesByReference();
+            Console.WriteLine("====");
+            PassByValueReassignment.TestPassByValueReassignment();
+            Console.WriteLine("====");
+            PassByReferenceReassignment.TestPassByReferenceReassignment();
+            Console.WriteLine("====");
+            ParameterModifiers.ParamPassingExamples();
         }
     }
 

@@ -14,11 +14,11 @@ To use the ML.NET API by itself, (without the ML.NET AutoML CLI) you need to cho
 The ML.NET CLI simplifies this process using automated machine learning (AutoML).
 
 > [!NOTE]
-> This topic refers to ML.NET **CLI** and ML.NET **AutoML**, which are currently in Preview, and material may be subject to change.
+> This article refers to ML.NET **CLI** and ML.NET **AutoML**, which are currently in preview, and material is subject to change.
 
 ## What is the ML.NET command-line interface (CLI)?
 
-The ML.NET CLI is a [.NET Core tool](../core/tools/global-tools.md). Once installed, you give it a machine learning task and a training dataset, and it generates an ML.NET model, as well as the C# code to run to use the model in your application.
+The ML.NET CLI is a [.NET tool](../core/tools/global-tools.md). Once installed, you give it a machine learning task and a training dataset, and it generates an ML.NET model, as well as the C# code to run to use the model in your application.
 
 As shown in the following figure, it is simple to generate a high quality ML.NET model (serialized model .zip file) plus the sample C# code to run/score that model. In addition, the C# code to create/train that model is also generated, so that you can research and iterate on the algorithm and settings used for that generated "best model".
 
@@ -55,6 +55,8 @@ An example of usage (classification scenario):
 mlnet classification --dataset "yelp_labelled.txt" --label-col 1 --has-header false --train-time 10
 ```
 
+There is also a command where you can train using an *mbconfig* file. The *mbconfig* file is created when you start a Model Builder session.
+
 ![ML.NET classification from the command line](media/automate-training-with-cli/mlnet-classification-powershell.gif)
 
 You can run it the same way on *Windows PowerShell*, *macOS/Linux bash*, or *Windows CMD*. However, tabular auto-completion (parameter suggestions) won't work on *Windows CMD*.
@@ -63,13 +65,14 @@ You can run it the same way on *Windows PowerShell*, *macOS/Linux bash*, or *Win
 
 The ML task commands in the CLI generate the following assets in the output folder:
 
-- A serialized model .zip ("best model") ready to use for running predictions.
 - C# solution with:
-  - C# code to run/score that generated model (to make predictions in your end-user apps with that model).
-  - C# code with the training code used to generate that model (for learning purposes or model retraining).
+  - A console app to run/score the generated model (to make predictions in your end-user apps with that model).
+  - A console app with the training code used to generate that model (for learning purposes or model retraining).
+    - This serialized model ("best model") is also provided as a compressed *.zip* file that's ready to use for running predictions.
+    - An *mbconfig* file, which contains configuration data that lets you open the model in Model Builder.
 - Log file with information of all iterations/sweeps across the multiple algorithms evaluated, including their detailed configuration/pipeline.
 
-The first two assets can directly be used in your end-user apps (ASP.NET Core web app, services, desktop app, etc.) to make predictions with that generated ML model.
+The first two assets can directly be used in your end-user apps (for example, ASP.NET Core web apps, services, and desktop apps) to make predictions with that generated ML model.
 
 The third asset, the training code, shows you what ML.NET API code was used by the CLI to train the generated model, so you can retrain your model and investigate and iterate on which specific trainer/algorithm and hyperparameters were selected by the CLI and AutoML under the covers.
 

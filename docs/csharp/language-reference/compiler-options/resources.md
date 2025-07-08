@@ -1,6 +1,6 @@
 ---
 description: "C# Compiler Options to control Windows resources embedded in a dotnet application."
-title: "C# Compiler Options - resource options"
+title: "Compiler Options - resource options"
 ms.date: 03/12/2021
 f1_keywords: 
   - "cs.build.options"
@@ -22,6 +22,9 @@ The following options control how the C# compiler creates or imports Win32 resou
 - **NoWin32Manifest** / `-nowin32manifest`: Don't include the default Win32 manifest.
 - **Resources** / `-resource`: Embed the specified resource (Short form: /res).
 - **LinkResources** / `-linkresources`: Link the specified resource to this assembly.
+
+> [!NOTE]
+> Refer to [Compiler options](index.md#how-to-set-options) for more information on configuring these options for your project.
 
 ## Win32Resource
 

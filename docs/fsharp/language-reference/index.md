@@ -87,7 +87,7 @@ The following table shows reference articles that describe how types and type in
 |[Casting and Conversions](casting-and-conversions.md)|Learn about support for type conversions in F#.|
 |[Generics](./generics/index.md)|Learn about generic constructs in F#.|
 |[Automatic Generalization](./generics/automatic-generalization.md)|Learn about how F# automatically generalizes the arguments and types of functions so that they work with multiple types when possible.|
-|[Constraints](casting-and-conversions.md)|Learn about constraints that apply to generic type parameters to specify the requirements for a type argument in a generic type or function.|
+|[Constraints](./generics/constraints.md)|Learn about constraints that apply to generic type parameters to specify the requirements for a type argument in a generic type or function.|
 |[Flexible Types](flexible-types.md)|Learn about flexible types. A flexible type annotation is an indication that a parameter, variable, or value has a type that is compatible with type specified, where compatibility is determined by position in an object-oriented hierarchy of classes or interfaces.|
 |[Units of Measure](units-of-measure.md)|Learn about units of measure. Floating point values in F# can have associated units of measure, which are typically used to indicate length, volume, mass, and so on.|
 |[Byrefs](byrefs.md)|Learn about byref and byref-like types in F#, which are used for low-level programming.|

@@ -1,5 +1,5 @@
 ---
-title: "Nested Types - C# Programming Guide"
+title: "Nested Types"
 description: A type defined within a class, struct, or interface is called a nested type in C#. 
 ms.date: 02/08/2020
 helpviewer_keywords: 
@@ -40,7 +40,6 @@ In the previous declaration, the full name of class `Nested` is `Container.Neste
 
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [The C# type system](../../fundamentals/types/index.md)
 - [Access Modifiers](./access-modifiers.md)
 - [Constructors](./constructors.md)

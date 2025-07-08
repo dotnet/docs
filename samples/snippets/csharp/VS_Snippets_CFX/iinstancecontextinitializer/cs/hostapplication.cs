@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Configuration;
-using System.Collections.Generic;
 using System.ServiceModel;
-using System.Text;
 
 namespace Microsoft.WCF.Documentation
 {

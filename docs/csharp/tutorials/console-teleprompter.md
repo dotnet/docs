@@ -2,7 +2,7 @@
 title: Console Application
 description: This tutorial teaches you a number of features in .NET Core and the C# language.
 ms.date: 10/27/2021
-ms.technology: csharp-fundamentals
+ms.subservice: fundamentals
 ms.assetid: 883cd93d-50ce-4144-b7c9-2df28d9c11a0
 ---
 # Console app
@@ -21,8 +21,7 @@ There are a lot of features in this tutorial. Let's build them one by one.
 
 ## Prerequisites
 
-- [.NET 6 SDK](https://dotnet.microsoft.com/download/dotnet/6.0).
-- A code editor.
+[!INCLUDE [Prerequisites](../../../includes/prerequisites-basic.md)]
 
 ## Create the app
 

@@ -9,8 +9,7 @@ ms.date: 03/14/2021
 Distributed tracing is a diagnostic technique that helps engineers localize failures and
 performance issues within applications, especially those that may be distributed across
 multiple machines or processes. See the [Distributed Tracing Overview](distributed-tracing.md)
-for general information about where distributed tracing is useful and example code to get
-started.
+for general information about where distributed tracing is useful.
 
 ## Traces and Activities
 
@@ -21,7 +20,7 @@ a tree of these Activities, potentially spanning across many distinct processes.
 Activity created for a new request forms the root of the trace tree and it tracks the overall
 duration and success/failure handling the request. Child activities can be optionally created
 to subdivide the work into different steps that can be tracked individually.
-For example given an Activity that tracked a specific inbound HTTP request in a web server,
+For example, given an Activity that tracked a specific inbound HTTP request in a web server,
 child activities could be created to track each of the database queries that were necessary to
 complete the request. This allows the duration and success for each query to be recorded independently.
 Activities can record other information for each unit of work such as
@@ -60,10 +59,10 @@ when the parent uses a different ID format.
 
 ## Start and stop Activities
 
-Each thread in a process may have a corresponding Activity object that is tracking the work
+Each thread in a process may have a corresponding Activity object that tracks the work
 occurring on that thread, accessible via
 <xref:System.Diagnostics.Activity.Current?displayProperty=nameWithType>. The current activity
-automatically flows along all synchronous calls on a thread as well as following async calls
+automatically flows along all synchronous calls on a thread and follows async calls
 that are processed on different threads. If Activity A is the current activity on a thread and
 code starts a new Activity B, then B becomes the new current activity on that thread. By default,
 activity B will also treat Activity A as its parent. When Activity B is later stopped, activity
@@ -77,7 +76,7 @@ as the difference between the current time and the start time.
 
 To track work across process boundaries, Activity parent IDs need to be transmitted across
 the network so that the receiving process can create Activities that refer to them. When using
-W3C TraceContext ID format, .NET also uses the HTTP headers recommended by
+the W3C TraceContext ID format, .NET also uses the HTTP headers recommended by
 [the standard](https://www.w3.org/TR/trace-context/) to transmit this information. When using the
 <xref:System.Diagnostics.ActivityIdFormat.Hierarchical> ID format,
 .NET uses a custom request-id HTTP header to transmit the ID. Unlike many other language runtimes,
@@ -97,12 +96,12 @@ and serialized in a centralized persistent store so that the entire trace can be
 later. There are several telemetry collection libraries that can do this task such as
 [Application Insights](/azure/azure-monitor/app/distributed-tracing),
 [OpenTelemetry](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/docs/trace/getting-started-console/README.md),
-or a library provided by a third-party telemetry or APM vendor. Alternately developers can author
+or a library provided by a third-party telemetry or APM vendor. Alternately, developers can author
 their own custom Activity telemetry collection by using
 <xref:System.Diagnostics.ActivityListener?displayProperty=nameWithType> or
 <xref:System.Diagnostics.DiagnosticListener?displayProperty=nameWithType>. ActivityListener
 supports observing any Activity regardless of whether the developer has any prior knowledge about it.
-This makes ActivityListener a simple and flexible general purpose solution. By contrast using
+This makes ActivityListener a simple and flexible general purpose solution. By contrast, using
 DiagnosticListener is a more complex scenario that requires the instrumented code to opt in by
 invoking <xref:System.Diagnostics.DiagnosticSource.StartActivity%2A?displayProperty=nameWithType> and
 the collection library needs to know the exact naming information that the instrumented code
@@ -125,8 +124,8 @@ increasing diagnostic utility. Activities that are started using the older patte
 <xref:System.Diagnostics.DiagnosticSource.StartActivity%2A?displayProperty=nameWithType> may
 also support DiagnosticListener sampling by first calling
 <xref:System.Diagnostics.DiagnosticSource.IsEnabled%2A?displayProperty=nameWithType>.
-Even when capturing full diagnostic information the .NET
-implementation is designed to be fast - coupled with an efficient collector an Activity can be
+Even when capturing full diagnostic information, the .NET
+implementation is designed to be fast - coupled with an efficient collector, an Activity can be
 created, populated, and transmitted in about a microsecond on modern hardware. Sampling
 can reduce the instrumentation cost to less than 100 nanoseconds for each Activity that isn't
 recorded.
@@ -135,3 +134,5 @@ recorded.
 
 For example code to get started
 using distributed tracing in .NET applications, see the [Distributed Tracing Instrumentation](distributed-tracing-instrumentation-walkthroughs.md).
+
+For a list of activities emitted natively by .NET, see [Built-in activities in .NET](distributed-tracing-builtin-activities.md).

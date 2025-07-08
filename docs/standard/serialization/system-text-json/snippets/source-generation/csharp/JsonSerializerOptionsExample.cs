@@ -22,21 +22,21 @@ namespace JsonSerializerOptionsExample
     {
         public static void Main()
         {
-            string jsonString =
- @"{
-  ""date"": ""2019-08-01T00:00:00"",
-  ""temperatureCelsius"": 25,
-  ""summary"": ""Hot""
-}
-";
+            string jsonString = """
+                {
+                  "date": "2019-08-01T00:00:00",
+                  "temperatureCelsius": 25,
+                  "summary": "Hot"
+                }
+                """;
             WeatherForecast? weatherForecast;
 
             // <Deserialize>
             weatherForecast = JsonSerializer.Deserialize(
-                jsonString, 
-                typeof(WeatherForecast), 
+                jsonString,
+                typeof(WeatherForecast),
                 new OptionsExampleContext(
-                    new JsonSerializerOptions(JsonSerializerDefaults.Web)))
+                    JsonSerializerOptions.Web))
                     as WeatherForecast;
             // </Deserialize>
             Console.WriteLine($"Date={weatherForecast?.Date}");
@@ -48,7 +48,7 @@ namespace JsonSerializerOptionsExample
                 weatherForecast,
                 typeof(WeatherForecast),
                 new OptionsExampleContext(
-                    new JsonSerializerOptions(JsonSerializerDefaults.Web)));
+                    JsonSerializerOptions.Web));
             // </Serialize>
             Console.WriteLine(jsonString);
             // output:

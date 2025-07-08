@@ -17,7 +17,6 @@ HTTP/3 and QUIC both have several benefits compared to HTTP/1.1 and HTTP/2:
 - Supports transitioning between networks. This feature is useful for mobile devices where it's common to switch between WIFI and cellular networks as a mobile device changes location. Currently, HTTP/1.1 and HTTP/2 connections fail with an error when switching networks. An app or web browser must retry any failed HTTP requests. HTTP/3 allows the app or web browser to seamlessly continue when a network changes. <xref:System.Net.Http.HttpClient> and Kestrel don't support network transitions in .NET 7. It may be available in a future release.
 
 > [!IMPORTANT]
->
 > Apps configured to take advantage of HTTP/3 should be designed to also support HTTP/1.1 and HTTP/2. If issues are identified in HTTP/3, it's recommend disabling HTTP/3 until the issues are resolved in a future release of .NET.
 
 ## HttpClient settings
@@ -29,30 +28,7 @@ The HTTP version can be configured by setting `HttpRequestMessage.Version` to 3.
 
 ## Platform dependencies
 
-HTTP/3 uses QUIC as its transport protocol. The .NET implementation of HTTP/3 uses [MsQuic](https://github.com/microsoft/msquic) to provide QUIC functionality. If the platform that HttpClient is running on doesn't have all the requirements for HTTP/3, then it's disabled.
-
-### Windows
-
-- Windows 11, Windows Server 2022, or later. (Earlier Windows versions are missing the cryptographic APIs required to support QUIC.)
-
-On Windows, msquic.dll is distributed as part of the .NET runtime, and no other steps are required to install it.
-
-### Linux
-
-- OpenSSL 1.1
-
-On Linux, libmsquic is published via Microsoft's official Linux package repository packages.microsoft.com. To consume it, it must be added manually. For more information, see [Linux Software Repository for Microsoft Products](/windows-server/administration/linux-package-repository-for-microsoft-software). After configuring the package feed, it's installed via the package manager of your distro, for example, for Ubuntu:
-
-```bash
-sudo apt install libmsquic
-```
-
-> [!NOTE]
-> .NET 7 is only compatible with 2.1+ versions of libmsquic.
-
-### macOS
-
-HTTP/3 isn't currently supported on macOS but may be available in a future release.
+HTTP/3 uses QUIC as its transport protocol. The .NET implementation of HTTP/3 uses [MsQuic](https://github.com/microsoft/msquic) to provide QUIC functionality. As a result, .NET support of HTTP/3 depends on MsQuic platform requirements. For more information on how to install **MsQuic**, see [QUIC Platform dependencies](../../fundamentals/networking/quic/quic-overview.md#platform-dependencies). If the platform that HttpClient is running on doesn't have all the requirements for HTTP/3, then it's disabled.
 
 ## Using HttpClient
 
@@ -77,11 +53,11 @@ Alternatively, you can call <xref:System.AppContext.SetSwitch%2A?displayProperty
 
 The reason for requiring a configuration flag for HTTP/3 is to protect apps from future breakage when using version policy `RequestVersionOrHigher`. When calling a server that currently uses HTTP/1.1 and HTTP/2, if the server later upgrades to HTTP/3, the client would try to use HTTP/3 and potentially be incompatible as the standard isn't final and therefore may change after .NET 6 is released.
 
- .NET 6 is only compatible with the 1.9.x versions of libmsquic. Libmsquic 2.x isn't compatible with .NET 6 due to breaking changes in the library. Libmsquic receives updates to 1.9.x when needed to incorporate security fixes.
+.NET 6 is only compatible with the 1.9.x versions of libmsquic. Libmsquic 2.x isn't compatible with .NET 6 due to breaking changes in the library. Libmsquic receives updates to 1.9.x when needed to incorporate security fixes.
 
 ## HTTP/3 Server
 
-HTTP/3 is supported by ASP.NET with the Kestrel server in .NET 6 (preview) and .NET 7 (fully supported). For more information, see [use HTTP/3 with the ASP.NET Core Kestrel web server][http3Kestrel].
+HTTP/3 is supported by ASP.NET with the Kestrel server in .NET 6 (as a preview) and .NET 7 (is fully supported). For more information, see [use HTTP/3 with the ASP.NET Core Kestrel web server][http3Kestrel].
 
 ## Public test servers
 

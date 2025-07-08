@@ -1,3 +1,4 @@
+items:
 - name: SQL Server and ADO.NET
   href: index.md
 - name: SQL Server Security
@@ -98,8 +99,6 @@
     items:
     - name: Enabling Query Notifications
       href: enabling-query-notifications.md
-    - name: SqlDependency in an ASP.NET Application
-      href: sqldependency-in-an-aspnet-app.md
     - name: Detecting Changes with SqlDependency
       href: detecting-changes-with-sqldependency.md
     - name: SqlCommand Execution with a SqlNotificationRequest

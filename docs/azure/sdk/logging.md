@@ -1,7 +1,7 @@
 ---
 title: Logging with the Azure SDK for .NET
 description: Learn how to enable logging with the Azure SDK for .NET client libraries
-ms.date: 2/28/2023
+ms.date: 04/05/2025
 ms.custom: devx-track-dotnet, engagement-fy23
 ms.topic: how-to
 ---
@@ -15,7 +15,7 @@ The Azure SDK for .NET's client libraries include the ability to log client libr
 - [Map to ASP.NET Core logging](#map-to-aspnet-core-logging)
 
 > [!IMPORTANT]
-> This article applies to client libraries that use the most recent versions of the Azure SDK for .NET. To see if a library is supported, refer to the list of [Azure SDK latest releases](https://azure.github.io/azure-sdk/releases/latest/index.html#net). If your app is using an older version of the Azure SDK client libraries, refer to specific instructions in the applicable service documentation.
+> This article applies to client libraries that use the most recent versions of the Azure SDK for .NET. To see if a library is supported, see the list of [Azure SDK latest releases](https://azure.github.io/azure-sdk/releases/latest/index.html#net). If your app is using an older version of an Azure SDK client library, refer to specific instructions in the applicable service documentation.
 
 ## Log information
 
@@ -37,12 +37,12 @@ HTTP response log entry:
 - Response headers
 - Error information, when applicable
 
-For HTTP request and response content:
+HTTP request and response content:
 
 - Content stream as text or bytes depending on the `Content-Type` header.
 
   > [!NOTE]
-  > Content logging is disabled by default. To enable it, see [Log HTTP request and response bodies](#log-http-request-and-response-bodies).
+  > Content logging is disabled by default. To enable it, see [Log HTTP request and response bodies](#log-http-request-and-response-bodies). This capability applies only to libraries using HTTP to communicate with an Azure service. Libraries based on alternative protocols, such as AMQP, don't support content logging. Unsupported examples include libraries for Azure services such as Event Hubs, Service Bus, and Web PubSub.
 
 Event logs are output usually at one of these three levels:
 
@@ -84,13 +84,14 @@ The following example creates an event listener that logs to the console with a 
 
 ```csharp
 using Azure.Core.Diagnostics;
+using System.Diagnostics.Tracing;
 
 // code omitted for brevity
 
 using var listener = new AzureEventSourceListener((e, message) =>
     {
         // Only log messages from "Azure-Core" event source
-        if (e.EventSource.Name == "Azure-Core")
+        if (string.Equals(e.EventSource.Name, "Azure-Core", StringComparison.Ordinal))
         {
             Console.WriteLine($"{DateTime.Now} {message}");
         }
@@ -186,7 +187,34 @@ In these scenarios, complete the following steps:
 
 For more information, see [Logging in .NET Core and ASP.NET Core](/aspnet/core/fundamentals/logging/).
 
+## Logging using Azure.Monitor.OpenTelemetry.AspNetCore
+
+The [Azure Monitor OpenTelemetry distro](https://www.nuget.org/packages/Azure.Monitor.OpenTelemetry.AspNetCore), starting with version `1.2.0`, supports capturing logs coming from Azure client libraries. You can control logging using any of the configuration options discussed in [Logging in .NET Core and ASP.NET Core](/aspnet/core/fundamentals/logging/).
+
+Using the Azure Service Bus library as an example, complete the following steps:
+
+1. Install the [Azure.Monitor.OpenTelemetry.AspNetCore](https://www.nuget.org/packages/Azure.Monitor.OpenTelemetry.AspNetCore) NuGet package:
+
+    ```dotnetcli
+    dotnet add package Azure.Monitor.OpenTelemetry.AspNetCore
+    ```
+
+1. Create or register the library's client. The distro supports both cases.
+
+   ```csharp
+   await using var client = new ServiceBusClient("<connection_string>");
+   ```
+
+1. In *appsettings.json*, change the Service Bus library's default log level. For example, toggle it to `Debug` by setting the `Logging:LogLevel:Azure.Messaging.ServiceBus` key as follows:
+
+    :::code language="json" source="snippets/logging/appsettings.Development.json" highlight="9":::
+
+    Since the `Logging:LogLevel:Azure.Messaging.ServiceBus` key is set to `Debug`, Service Bus client events up to `EventLevel.Verbose` will be logged.
+
 ## Log HTTP request and response bodies
+
+> [!NOTE]
+> This capability applies only to libraries using HTTP to communicate with an Azure service. Libraries based on alternative protocols, such as AMQP, don't support content logging. Unsupported examples include libraries for Azure services such as Event Hubs, Service Bus, and Web PubSub.
 
 When troubleshooting unexpected behavior with a client library, it's helpful to inspect the following items:
 
@@ -195,16 +223,20 @@ When troubleshooting unexpected behavior with a client library, it's helpful to 
 
 By default, logging of the aforementioned content is disabled. To enable logging of the HTTP request and response bodies, complete the following steps:
 
-1. Set the client options object's <xref:Azure.Core.DiagnosticsOptions.IsLoggingContentEnabled%2A> property to `true`. For example:
+1. Set the client options object's <xref:Azure.Core.DiagnosticsOptions.IsLoggingContentEnabled%2A> property to `true`, and pass the options object to the client's constructor. For example, to log HTTP requests and responses for the Azure Key Vault Secrets library:
 
     ```csharp
-    var options = new SecretClientOptions
+    var clientOptions = new SecretClientOptions
     {
         Diagnostics = 
         {
-            IsLoggingContentEnabled = true,
+            IsLoggingContentEnabled = true
         }
     };
+    var client = new SecretClient(
+        new Uri("https://<keyvaultname>.vault.azure.net/"),
+        new DefaultAzureCredential(),
+        clientOptions);
     ```
 
 1. Use your preferred logging approach with an event/log level of verbose/debug or higher. Find your approach in the following table for specific instructions.

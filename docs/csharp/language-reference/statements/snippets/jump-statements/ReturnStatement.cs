@@ -52,7 +52,7 @@ public static class ReturnStatement
     private static void RefReturn()
     {
         // <RefReturn>
-        var xs = new int[] { 10, 20, 30, 40 };
+        int[] xs = new int [] {10, 20, 30, 40 };
         ref int found = ref FindFirst(xs, s => s == 30);
         found = 0;
         Console.WriteLine(string.Join(" ", xs));  // output: 10 20 0 40

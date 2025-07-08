@@ -1,37 +1,43 @@
 ---
-description: "get - C# Reference"
-title: "get - C# Reference"
-ms.date: 03/10/2017
+description: "The C# get keyword declares a get accessor in a property or indexer. It defines the code to retrieve the value of the property or indexed property."
+title: "The get keyword: property accessor"
+ms.date: 10/30/2024
 f1_keywords: 
   - "get_CSharpKeyword"
   - "get"
 helpviewer_keywords: 
   - "get keyword [C#]"
-ms.assetid: a52de048-fbe0-41b0-82ec-8e4ac04d3a71
 ---
-# get (C# Reference)
+# The `get` keyword
 
-The `get` keyword defines an *accessor* method in a property or indexer that returns the property value or the indexer element. For more information, see [Properties](../../programming-guide/classes-and-structs/properties.md), [Auto-Implemented Properties](../../programming-guide/classes-and-structs/auto-implemented-properties.md) and [Indexers](../../programming-guide/indexers/index.md).  
-  
-The following example defines both a `get` and a `set` accessor for a property named `Seconds`. It uses a private field named `_seconds` to back the property value.  
+The `get` keyword defines an *accessor* method in a property or indexer that returns the property value or the indexer element. For more information, see [Properties](../../programming-guide/classes-and-structs/properties.md), [Automatically implemented Properties](../../programming-guide/classes-and-structs/auto-implemented-properties.md), and [Indexers](../../programming-guide/indexers/index.md).
 
- [!code-csharp[get#1](../../../../samples/snippets/csharp/language-reference/keywords/get/get-1.cs)]  
-  
+For simple cases in which a property's `get` and `set` accessors perform no other operation than setting or retrieving a value in a private backing field, you can take advantage of the C# compiler's support for automatically implemented properties. The following example implements `Hours` as an automatically implemented property.
+
+:::code language="csharp" source="./snippets/PropertyAccessors.cs" id="AutoImplementedProperties":::
+
+> [!IMPORTANT]
+> Automatically implemented properties aren't allowed for [interface property declarations](../../programming-guide/classes-and-structs/interface-properties.md) or the implementing declaration for a [partial property](./partial-member.md). The compiler interprets syntax matching an automatically implemented property as the declaring declaration, not an implementing declaration.
+
 Often, the `get` accessor consists of a single statement that returns a value, as it did in the previous example. You can implement the `get` accessor as an expression-bodied member. The following example implements both the `get` and the `set` accessor as expression-bodied members.
 
- [!code-csharp[get#3](../../../../samples/snippets/csharp/language-reference/keywords/get/get-3.cs)]
+:::code language="csharp" source="./snippets/PropertyAccessors.cs" id="GetSetExpressions":::
 
-For simple cases in which a property's `get` and `set` accessors perform no other operation than setting or retrieving a value in a private backing field, you can take advantage of the C# compiler's support for auto-implemented properties. The following example implements `Hours` as an auto-implemented property.
-  
- [!code-csharp[get#2](../../../../samples/snippets/csharp/language-reference/keywords/get/get-2.cs)]  
-  
+You might find that you need to implement one of the accessor bodies. You can use a field backed property to let the compiler generate one accessor while you write the other by hand. You use the `field` keyword, added as a preview feature in C# 13, to access the compiler synthesized backing field:
+
+:::code language="csharp" source="./snippets/PropertyAccessors.cs" id="FieldBackedProperty":::
+
+[!INCLUDE[field-preview](../../includes/field-preview.md)]
+
+The following example defines both a `get` and a `set` accessor for a property named `Seconds`. It uses a private field named `_seconds` to back the property value.
+
+:::code language="csharp" source="./snippets/PropertyAccessors.cs" id="GetSetAccessors":::
+
 ## C# Language Specification
 
- [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
-  
+[!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
+
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](./index.md)
 - [Properties](../../programming-guide/classes-and-structs/properties.md)

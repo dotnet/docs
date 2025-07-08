@@ -1,7 +1,7 @@
 ---
 title: Diagnostics tools overview - .NET Core
 description: An overview of the tools and techniques available to diagnose .NET Core applications.
-ms.date: 07/16/2020
+ms.date: 10/20/2023
 ms.topic: overview
 #Customer intent: As a .NET Core developer I want to find the best tools to help me diagnose problems so that I can be productive.
 ---
@@ -9,7 +9,7 @@ ms.topic: overview
 
 Software doesn't always behave as you would expect, but .NET Core has tools and APIs that will help you diagnose these issues quickly and effectively.
 
-[Native AOT deployment](../../core/deploying/native-aot/index.md) is an application model that's been available since .NET 7. For information about .NET 8 diagnostic support for native AOT apps, see [Native AOT diagnostics](../../core/deploying/native-aot/diagnostics.md).
+[Native AOT deployment](../../core/deploying/native-aot/index.md) is an application model that's been available since .NET 7. For information about .NET 8 diagnostic support for Native AOT apps, see [Native AOT diagnostics](../../core/deploying/native-aot/diagnostics.md).
 
 This article helps you find the various tools you need.
 
@@ -35,7 +35,7 @@ For most cases, whether adding logging to an existing project or creating a new 
 
 ### Metrics
 
-[Metrics](metrics.md) are numerical measurements recorded over time to monitor application performance and health. Metrics are often used to generate alerts when potential problems are detected. Metrics have very low performance overhead and many services configure them as always-on telemetry.
+[Metrics](metrics.md) are numerical measurements recorded over time to monitor application performance and health. Metrics are often used to generate alerts when potential problems are detected. Metrics have very low performance overhead and many services configure them as always-on telemetry. Exceptions are often recorded as metrics, and can be summarized to reduce the cardinality of the data. For more information, see [Exception summarization](diagnostic-exception-summary.md).
 
 ### Distributed traces
 
@@ -45,10 +45,14 @@ For most cases, whether adding logging to an existing project or creating a new 
 
 There are multiple ways that the instrumentation data can be egressed from the application, including:
 
-- [Open Telemetry](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/docs/trace/getting-started-console/README.md) - a cross-platform, vendor-neutral standard for collecting and exporting telemetry
+- [OpenTelemetry](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/docs/trace/getting-started-console/README.md) - a cross-platform, vendor-neutral standard for collecting and exporting telemetry
 - [.NET CLI tools](./tools-overview.md) such as [dotnet-counters](./dotnet-counters.md)
 - [dotnet-monitor](./dotnet-monitor.md) - an agent for collecting traces and telemetry
 - Third-party libraries or app code can read the information from the <xref:System.Diagnostics.Metrics?displayProperty=nameWithType>, <xref:Microsoft.Extensions.Logging.ILogger%601>, and <xref:System.Diagnostics.Activity?displayProperty=nameWithType> APIs.
+
+## Resource monitoring
+
+[Resource monitoring](diagnostic-resource-monitoring.md) is the process of continuously observing and tracking the utilization, performance, and availability of various computing resources within a system. These resources can include hardware components (such as CPUs, memory, disk storage, and network interfaces) as well as software components (like applications and services). Resource monitoring is often used to detect and diagnose performance issues, and to ensure that the system is operating within expected parameters.
 
 ## Specialized diagnostics
 

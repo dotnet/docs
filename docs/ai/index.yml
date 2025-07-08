@@ -1,0 +1,111 @@
+### YamlMime:Landing
+
+title: AI apps for .NET developers
+summary: Learn to build AI apps with .NET. Browse sample code, tutorials, quickstarts, conceptual articles, and more.
+
+metadata:
+  title: AI apps for .NET developers
+  description: Samples, tutorials, and education for building AI apps with .NET
+  ms.topic: hub-page
+  ms.service: dotnet
+  ms.date: 12/19/2024
+  author: alexwolfmsft
+  ms.author: alexwolf
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | tutorial | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+
+  # Card
+  - title: Get started
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Develop .NET apps with AI features
+            url: overview.md
+          - text: Microsoft.Extensions.AI libraries
+            url: microsoft-extensions-ai.md
+      - linkListType: get-started
+        links:
+          - text: Connect to and prompt an AI model
+            url: quickstarts/prompt-model.md
+          - text: Build an Azure AI chat app
+            url: quickstarts/build-chat-app.md
+          - text: Generate images using Azure AI
+            url: quickstarts/generate-images.md
+
+  # Card
+  - title: Essential concepts
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: How generative AI and LLMs work
+            url: conceptual/how-genai-and-llms-work.md
+          - text: Understand tokens
+            url: conceptual/understanding-tokens.md
+          - text: Preserve semantic meaning with embeddings
+            url: conceptual/embeddings.md
+          - text: Semantic search with vector databases
+            url: conceptual/vector-databases.md
+          - text: Prompt engineering
+            url: conceptual/prompt-engineering-dotnet.md
+          - text: Evaluation libraries
+            url: conceptual/evaluation-libraries.md
+
+  # Card
+  - title: Common tasks
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Authenticate App Service to Azure OpenAI
+            url: how-to/app-service-aoai-auth.md
+          - text: Authenticate App Service to a vector database
+            url: how-to/app-service-db-auth.md
+          - text: Use Redis with the Semantic Kernel SDK
+            url: how-to/use-redis-for-memory.md
+          - text: Use custom and local AI models with the Semantic Kernel SDK
+            url: how-to/work-with-local-models.md
+          - text: Work with content filtering
+            url: how-to/work-with-local-models.md
+
+  # Card
+  - title: Tutorials
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: Scale Azure OpenAI with Azure Container Apps
+            url: get-started-app-chat-scaling-with-azure-container-apps.md
+          - text: .NET enterprise chat sample using RAG
+            url: get-started-app-chat-template.md
+          - text: Implement RAG using vector search
+            url: tutorials/tutorial-ai-vector-search.md
+          - text: Evaluate a model's response
+            url: tutorials/evaluate-with-reporting.md
+
+  # Card
+  - title: Training
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: Fundamentals of Azure OpenAI Service
+            url: /training/modules/explore-azure-openai
+          - text: Generate conversations Azure OpenAI completions
+            url: /training/modules/open-ai-dotnet-text-completions
+          - text: .NET enterprise chat sample using RAG
+            url: get-started-app-chat-template.md
+          - text: Develop AI agents using Azure OpenAI
+            url: /training/paths/develop-ai-agents-azure-open-ai-semantic-kernel-sdk
+
+  # Card
+  - title: API reference
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: ChatClientBuilder
+            url: /dotnet/api/microsoft.extensions.ai.chatclientbuilder
+          - text: IChatClient
+            url: /dotnet/api/microsoft.extensions.ai.ichatclient
+          - text: IEmbeddingGenerator
+            url: /dotnet/api/microsoft.extensions.ai.iembeddinggenerator

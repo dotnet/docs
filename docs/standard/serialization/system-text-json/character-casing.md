@@ -16,7 +16,7 @@ ms.topic: how-to
 
 # How to enable case-insensitive property name matching with System.Text.Json
 
-In this article, you will learn how to enable case-insensitive property name matching with the `System.Text.Json` namespace.
+In this article, you learn how to enable case-insensitive property name matching with the `System.Text.Json` namespace.
 
 ## Case-insensitive property matching
 
@@ -34,7 +34,7 @@ Here's example JSON with camel case property names. It can be deserialized into 
 {
   "date": "2019-08-01T00:00:00-07:00",
   "temperatureCelsius": 25,
-  "summary": "Hot",
+  "summary": "Hot"
 }
 ```
 

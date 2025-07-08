@@ -1,7 +1,7 @@
 ---
 title: Arithmetic Operators
 description: Learn about the arithmetic operators that are available in the F# programming language.
-ms.date: 04/04/2018
+ms.date: 05/28/2024
 ---
 # Arithmetic Operators
 
@@ -9,16 +9,44 @@ This topic describes arithmetic operators that are available in F#.
 
 ## Summary of Binary Arithmetic Operators
 
-The following table summarizes the binary arithmetic operators that are available for unboxed integral and floating-point types.
+Arithmetic operations in F# can be performed in two modes: **Unchecked** and **Checked**. By default, arithmetic operations use unchecked behavior, which prioritizes performance but allows overflow/underflow. Checked operators prioritize safety by throwing exceptions in such cases.
+
+### Unchecked Arithmetic Operators
+
+The following table summarizes the binary arithmetic operators that are available for **Unchecked Arithmetic** with unboxed integral and floating-point types.
 
 |Binary operator|Notes|
 |---------------|-----|
 |`+` (addition, plus)|Unchecked. Possible overflow condition when numbers are added together and the sum exceeds the maximum absolute value supported by the type.|
 |`-` (subtraction, minus)|Unchecked. Possible underflow condition when unsigned types are subtracted, or when floating-point values are too small to be represented by the type.|
 |`*` (multiplication, times)|Unchecked. Possible overflow condition when numbers are multiplied and the product exceeds the maximum absolute value supported by the type.|
-|`/` (division, divided by)|Division by zero causes a <xref:System.DivideByZeroException> for integral types. For floating-point types, division by zero gives you the special floating-point values `+Infinity` or `-Infinity`. There is also a possible underflow condition when a floating-point number is too small to be represented by the type.|
+|`/` (division, divided by)|Division by zero causes a <xref:System.DivideByZeroException> for integral types. For floating-point types, division by zero gives you the special floating-point values `infinity` or `-infinity`. There is also a possible underflow condition when a floating-point number is too small to be represented by the type.|
 |`%` (remainder, rem)|Returns the remainder of a division operation. The sign of the result is the same as the sign of the first operand.|
 |`**` (exponentiation, to the power of)|Possible overflow condition when the result exceeds the maximum absolute value for the type.<br /><br />The exponentiation operator works only with floating-point types.|
+
+The unchecked behavior does not throw exceptions when overflow or underflow occurs, making it less safe for arithmetic on large or edge-case values.
+
+### Checked Arithmetic Operators
+
+The following table summarizes the binary arithmetic operators that are available for **Checked Arithmetic** with unboxed integral types. Checked operators ensure that calculations are verified for overflow or underflow, providing safer arithmetic for critical applications.
+
+| Binary Operator | Notes                                                                                  |  
+|------------------|----------------------------------------------------------------------------------------|  
+| `+` (addition, plus) | Throws an <xref:System.OverflowException> if the result exceeds the maximum value or goes below the minimum value supported by the type. Both **Overflow** and **Underflow** are possible. |  
+| `-` (subtraction, minus) | Throws an <xref:System.OverflowException> if the result exceeds the maximum value or goes below the minimum value supported by the type. Both **Overflow** and **Underflow** are possible. |  
+| `*` (multiplication, times) | Throws an <xref:System.OverflowException> if the product exceeds the maximum value or goes below the minimum value supported by the type. Both **Overflow** and **Underflow** are possible. |  
+
+The checked operators are useful for ensuring that arithmetic overflows are caught and handled explicitly.
+
+Here’s an example:
+
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet3502.fs)]
+
+### Choosing Between Checked and Unchecked Operators
+
+**Checked Operators:** Ideal for scenarios where overflow errors must be detected and handled explicitly.
+
+**Unchecked Operators:** By default, F# uses unchecked arithmetic for performance reasons. These operations may silently produce incorrect results when overflow or underflow occurs. Use with caution.
 
 ## Summary of Unary Arithmetic Operators
 

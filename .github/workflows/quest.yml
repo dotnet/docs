@@ -10,6 +10,9 @@ on:
         description: "The issue number to manually test"
         required: true
 
+permissions:
+  contents: read
+
 jobs:
   import:
     if: |
@@ -21,13 +24,28 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       issues: write
+      pull-requests: write
+      id-token: write
 
     steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@6c439dc8bdf85cadbbce9ed30d1c7b959517bc49 # v2.12.2
+        with:
+          egress-policy: audit
+
       - name: "Print manual run reason"
         if: ${{ github.event_name == 'workflow_dispatch' }}
         run: |
           echo "Reason: ${{ github.event.inputs.reason }}"
           echo "Issue number: ${{ github.event.inputs.issue }}"
+
+      - name: Azure OpenID Connect
+        id: azure-oidc-auth
+        uses: dotnet/docs-tools/.github/actions/oidc-auth-flow@main
+        with:
+          client-id: ${{ secrets.CLIENT_ID }}
+          tenant-id: ${{ secrets.TENANT_ID }}
+          audience: ${{ secrets.OSMP_API_AUDIENCE }}
 
       # This step occurs when ran manually, passing the manual issue number input
       - name: manual-sequester
@@ -36,8 +54,10 @@ jobs:
         uses: dotnet/docs-tools/actions/sequester@main
         env:
           ImportOptions__ApiKeys__GitHubToken: ${{ secrets.GITHUB_TOKEN }}
-          ImportOptions__ApiKeys__OSPOKey: ${{ secrets.OSPO_KEY }}
+          ImportOptions__ApiKeys__AzureAccessToken: ${{ steps.azure-oidc-auth.outputs.access-token }}
           ImportOptions__ApiKeys__QuestKey: ${{ secrets.QUEST_KEY }}
+          ImportOptions__ApiKeys__SequesterPrivateKey: ${{ secrets.SEQUESTER_PRIVATEKEY }}
+          ImportOptions__ApiKeys__SequesterAppID: ${{ secrets.SEQUESTER_APPID }}
         with:
           org: ${{ github.repository_owner }}
           repo: ${{ github.repository }}
@@ -50,10 +70,11 @@ jobs:
         uses: dotnet/docs-tools/actions/sequester@main
         env:
           ImportOptions__ApiKeys__GitHubToken: ${{ secrets.GITHUB_TOKEN }}
-          ImportOptions__ApiKeys__OSPOKey: ${{ secrets.OSPO_KEY }}
+          ImportOptions__ApiKeys__AzureAccessToken: ${{ steps.azure-oidc-auth.outputs.access-token }}
           ImportOptions__ApiKeys__QuestKey: ${{ secrets.QUEST_KEY }}
+          ImportOptions__ApiKeys__SequesterPrivateKey: ${{ secrets.SEQUESTER_PRIVATEKEY }}
+          ImportOptions__ApiKeys__SequesterAppID: ${{ secrets.SEQUESTER_APPID }}
         with:
           org: ${{ github.repository_owner }}
           repo: ${{ github.repository }}
           issue: ${{ github.event.issue.number }}
-          

@@ -26,12 +26,10 @@ The service code includes a service implementation of the service contract, a Wi
 4. Add references to the following assemblies:
 
     - System.ServiceModel.dll
-
     - System.ServiceProcess.dll
-
     - System.Configuration.Install.dll
 
-5. Add the following using statements to Service.cs.
+5. Add the following `using` directives to Service.cs.
 
      [!code-csharp[c_HowTo_HostInNTService#0](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_hostinntservice/cs/service.cs#0)]
      [!code-vb[c_HowTo_HostInNTService#0](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_howto_hostinntservice/vb/service.vb#0)]

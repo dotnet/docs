@@ -6,19 +6,15 @@ internal sealed class LoggingStopwatch
         [CallerMemberName] string? operation = null) =>
         new StopwatchDisposable(operation);
 
-    private sealed class StopwatchDisposable : IDisposable
+    private sealed class StopwatchDisposable(string? operation) : IDisposable
     {
-        private readonly string? _operation;
-        private readonly Stopwatch _stopwatch;
-
-        internal StopwatchDisposable(string? operation) =>
-            (_operation, _stopwatch) = (operation, Stopwatch.StartNew());
+        private readonly Stopwatch _stopwatch = Stopwatch.StartNew();
 
         void IDisposable.Dispose()
         {
             _stopwatch.Stop();
 
-            Console.WriteLine($"Finished {_operation} in: {_stopwatch.Elapsed}");
+            Console.WriteLine($"Finished {operation} in: {_stopwatch.Elapsed}");
         }
     }
 }

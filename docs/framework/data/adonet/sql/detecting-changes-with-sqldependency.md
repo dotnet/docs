@@ -5,10 +5,9 @@ ms.date: "03/30/2017"
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: e6a58316-f005-4477-92e1-45cc2eb8c5b4
 ---
 
-# Detecting Changes with SqlDependency
+# Detect changes with SqlDependency
 
 A <xref:System.Data.SqlClient.SqlDependency> object can be associated with a <xref:System.Data.SqlClient.SqlCommand> in order to detect when query results differ from those originally retrieved. You can also assign a delegate to the `OnChange` event, which will fire when the results change for an associated command. You must associate the <xref:System.Data.SqlClient.SqlDependency> with the command before you execute the command. The `HasChanges` property of the <xref:System.Data.SqlClient.SqlDependency> can also be used to determine if the query results have changed since the data was first retrieved.
 

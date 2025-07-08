@@ -1,13 +1,12 @@
 ---
 title: "Service Identity and Authentication"
-description: Learn about the endpoint identity of a service, a value generated from the service WSDL, which WCF uses to authenticate the service. 
+description: Learn about the endpoint identity of a service, a value generated from the service WSDL, which WCF uses to authenticate the service.
 ms.date: "03/30/2017"
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "authentication [WCF], specifying the identity of a service"
-ms.assetid: a4c8f52c-5b30-45c4-a545-63244aba82be
 ---
 # Service Identity and Authentication
 
@@ -52,7 +51,7 @@ A service's *endpoint identity* is a value generated from the service Web Servic
   
 ## Using the \<identity> Element in Configuration  
 
- If you change the client credential type in the binding previously shown to `Certificate,` then the generated WSDL contains a Base64 serialized X.509 certificate for the identity value as shown in the following code. This is the default for all client credential types other than Windows.  
+ If you change the client credential type in the binding previously shown to `Certificate`, then the generated WSDL contains a Base64 serialized X.509 certificate for the identity value as shown in the following code. This is the default for all client credential types other than Windows.  
 
  You can change the value of the default service identity or change the type of the identity by using the `<identity>` element in configuration or by setting the identity in code. The following configuration code sets a domain name system (DNS) identity with the value `contoso.com`.  
 

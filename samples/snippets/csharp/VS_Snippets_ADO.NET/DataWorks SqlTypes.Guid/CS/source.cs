@@ -1,9 +1,8 @@
-﻿using System;
-using System.Data;
+using System;
 using System.Collections;
 using System.Data.SqlTypes;
 
-class Program
+static class Program
 {
     static void Main()
     {
@@ -11,19 +10,21 @@ class Program
         Console.ReadLine();
     }
     // <Snippet1>
-    private static void WorkWithGuids()
+    static void WorkWithGuids()
     {
         // Create an ArrayList and fill it with Guid values.
-        ArrayList guidList = new ArrayList();
-        guidList.Add(new Guid("3AAAAAAA-BBBB-CCCC-DDDD-2EEEEEEEEEEE"));
-        guidList.Add(new Guid("2AAAAAAA-BBBB-CCCC-DDDD-1EEEEEEEEEEE"));
-        guidList.Add(new Guid("1AAAAAAA-BBBB-CCCC-DDDD-3EEEEEEEEEEE"));
+        ArrayList guidList = new()
+        {
+            new Guid("3AAAAAAA-BBBB-CCCC-DDDD-2EEEEEEEEEEE"),
+            new Guid("2AAAAAAA-BBBB-CCCC-DDDD-1EEEEEEEEEEE"),
+            new Guid("1AAAAAAA-BBBB-CCCC-DDDD-3EEEEEEEEEEE")
+        };
 
         // Display the unsorted Guid values.
         Console.WriteLine("Unsorted Guids:");
         foreach (Guid guidValue in guidList)
         {
-            Console.WriteLine(" {0}", guidValue);
+            Console.WriteLine($" {guidValue}");
         }
         Console.WriteLine("");
 
@@ -34,15 +35,17 @@ class Program
         Console.WriteLine("Sorted Guids:");
         foreach (Guid guidSorted in guidList)
         {
-            Console.WriteLine(" {0}", guidSorted);
+            Console.WriteLine($" {guidSorted}");
         }
         Console.WriteLine("");
 
         // Create an ArrayList of SqlGuids.
-        ArrayList sqlGuidList = new ArrayList();
-        sqlGuidList.Add(new SqlGuid("3AAAAAAA-BBBB-CCCC-DDDD-2EEEEEEEEEEE"));
-        sqlGuidList.Add(new SqlGuid("2AAAAAAA-BBBB-CCCC-DDDD-1EEEEEEEEEEE"));
-        sqlGuidList.Add(new SqlGuid("1AAAAAAA-BBBB-CCCC-DDDD-3EEEEEEEEEEE"));
+        ArrayList sqlGuidList = new()
+        {
+            new SqlGuid("3AAAAAAA-BBBB-CCCC-DDDD-2EEEEEEEEEEE"),
+            new SqlGuid("2AAAAAAA-BBBB-CCCC-DDDD-1EEEEEEEEEEE"),
+            new SqlGuid("1AAAAAAA-BBBB-CCCC-DDDD-3EEEEEEEEEEE")
+        };
 
         // Sort the SqlGuids. The unsorted SqlGuids are in the same order
         // as the unsorted Guid values.
@@ -53,7 +56,7 @@ class Program
         Console.WriteLine("Sorted SqlGuids:");
         foreach (SqlGuid sqlGuidValue in sqlGuidList)
         {
-            Console.WriteLine(" {0}", sqlGuidValue);
+            Console.WriteLine($" {sqlGuidValue}");
         }
     }
     // </Snippet1>

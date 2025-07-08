@@ -2,50 +2,50 @@
 description: "Learn more about: ICorDebugChain::GetCaller Method"
 title: "ICorDebugChain::GetCaller Method"
 ms.date: "03/30/2017"
-api_name: 
+api_name:
   - "ICorDebugChain.GetCaller"
-api_location: 
+api_location:
   - "mscordbi.dll"
-api_type: 
+api_type:
   - "COM"
-f1_keywords: 
+f1_keywords:
   - "ICorDebugChain::GetCaller"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "ICorDebugChain::GetCaller method [.NET Framework debugging]"
   - "GetCaller method, ICorDebugChain interface [.NET Framework debugging]"
 ms.assetid: d0b8ab4b-d7d2-4fa0-945f-3d2b87e7e991
-topic_type: 
+topic_type:
   - "apiref"
 ---
 # ICorDebugChain::GetCaller Method
 
-Gets the chain that called this chain.  
-  
-## Syntax  
-  
-```cpp  
-HRESULT GetCaller (  
-    [out] ICorDebugChain      **ppChain  
-);  
-```  
-  
-## Parameters  
+Gets the chain that called this chain.
 
- `ppChain`  
- [out] A pointer to the address of an ICorDebugChain object that represents the calling chain.  
-  
- If this chain was spontaneously called (as would be the case if this chain or the debugger initialized the call stack), `ppChain` will be null.  
-  
-## Remarks  
+## Syntax
 
- The calling chain may be on a different thread, if the call was marshalled across threads.  
-  
-## Requirements  
+```cpp
+HRESULT GetCaller (
+    [out] ICorDebugChain      **ppChain
+);
+```
 
- **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
-  
- **Header:** CorDebug.idl, CorDebug.h  
-  
- **Library:** CorGuids.lib  
-  
+## Parameters
+
+ `ppChain`
+ [out] A pointer to the address of an ICorDebugChain object that represents the calling chain.
+
+ If this chain was spontaneously called (as would be the case if this chain or the debugger initialized the call stack), `ppChain` will be null.
+
+## Remarks
+
+ The calling chain may be on a different thread, if the call was marshalled across threads.
+
+## Requirements
+
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).
+
+ **Header:** CorDebug.idl, CorDebug.h
+
+ **Library:** CorGuids.lib
+
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

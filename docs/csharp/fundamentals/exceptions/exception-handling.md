@@ -1,5 +1,5 @@
 ---
-title: "Exception Handling - C# Programming Guide"
+title: "Exception Handling"
 description: Learn about exception handling. See examples of try-catch, try-finally, and try-catch-finally statements.
 ms.date: 05/14/2021
 helpviewer_keywords: 
@@ -61,6 +61,6 @@ For more information, see [Exceptions](~/_csharpstandard/standard/exceptions.md)
   
 ## See also
 
-- [C# reference](../../language-reference/index.md)
+- [C# reference](../../language-reference/index.yml)
 - [Exception-handling statements](../../language-reference/statements/exception-handling-statements.md)
 - [using statement](../../language-reference/statements/using.md)

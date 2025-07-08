@@ -2,6 +2,8 @@
 title: SYSLIB0034 warning - CmsSigner(CspParameters) constructor is obsolete
 description: Learn about the obsoletion of the CmsSigner(CspParameters) constructor that generates compile-time warning SYSLIB0034.
 ms.date: 09/07/2021
+f1_keywords:
+  - syslib0034
 ---
 # SYSLIB0034: CmsSigner(CspParameters) constructor is obsolete
 

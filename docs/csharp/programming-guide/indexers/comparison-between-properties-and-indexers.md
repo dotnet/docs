@@ -1,5 +1,5 @@
 ---
-title: "Comparison Between Properties and Indexers - C# Programming Guide"
+title: "Comparison Between Properties and Indexers"
 description: Compare how indexers in C# are like properties. Except for some differences, the rules that are defined for property accessors apply to indexer accessors.
 ms.date: 07/20/2015
 helpviewer_keywords: 
@@ -18,10 +18,9 @@ Indexers are like properties. Except for the differences shown in the following 
 |Can be a static or an instance member.|Must be an instance member.|  
 |A [get](../../language-reference/keywords/get.md) accessor of a property has no parameters.|A `get` accessor of an indexer has the same formal parameter list as the indexer.|  
 |A [set](../../language-reference/keywords/set.md) accessor of a property contains the implicit `value` parameter.|A `set` accessor of an indexer has the same formal parameter list as the indexer, and also to the [value](../../language-reference/keywords/value.md) parameter.|  
-|Supports shortened syntax with [Auto-Implemented Properties](../classes-and-structs/auto-implemented-properties.md).|Supports expression bodied members for get only indexers.|  
+|Supports shortened syntax with [Automatically implemented properties](../classes-and-structs/auto-implemented-properties.md).|Supports expression bodied members for get only indexers.|  
   
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Indexers](./index.md)
 - [Properties](../classes-and-structs/properties.md)

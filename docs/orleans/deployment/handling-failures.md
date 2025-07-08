@@ -1,80 +1,70 @@
 ---
 title: Failure handling
 description: Learn how to handle failures in Orleans apps.
-ms.date: 03/09/2022
+ms.date: 05/23/2025
+ms.topic: conceptual
 ---
 
 # Failure handling
 
 > [!TIP]
-> All of the following guidance in this document is provided to serve as examples and food for thought. You should not think of them as prescriptive solutions to your problems because failure handling is a rather application-specific subject. These patterns and others are only useful if applied with a good knowledge of the concrete case being worked on.
+> All guidance in this document serves as examples and food for thought. Don't consider them prescriptive solutions, because failure handling is highly application-specific. These patterns and others are useful only if applied with a good understanding of the specific case.
 
-The hardest thing in programming a distributed system is handling failures. The actor model and the way it works make it much easier to deal with different kinds of failures, but as a developer, you are responsible for dealing with the failure possibilities and appropriately handling them.
+Handling failures is often the hardest part of programming a distributed system. The actor model makes dealing with different kinds of failures much easier, but developers are responsible for considering failure possibilities and handling them appropriately.
 
 ## Types of failures
 
-When you are coding your grains, all calls are asynchronous and have the potential to go over the network.
-Each grain call can fail due to one of the following reasons.
+When coding grains, all calls are asynchronous and potentially go over the network. Each grain call can fail for one of the following reasons:
 
-- The grain was activated on a silo that is unavailable at the moment due to a network partition crash or some other reason. If the silo has not been declared dead yet, your request might time out.
-- The grain method call can throw an exception signaling that it failed and can not continue its job.
-- An activation of the grain doesn't exist and cannot be created because the `OnActivateAsync` method throws an exception or is dead-locked.
-- Network failures don't let you communicate with the grain before timeout.
-- Other potential reasons
+- The grain was activated on a silo currently unavailable due to a network partition, crash, or other reason. If the silo hasn't been declared dead yet, the request might time out.
+- The grain method call can throw an exception, signaling failure and inability to continue its job.
+- An activation of the grain doesn't exist and cannot be created because the `OnActivateAsync` method throws an exception or deadlocks.
+- Network failures prevent communication with the grain before the timeout occurs.
+- Other potential reasons.
 
 ## Detection of failures
 
-Getting a reference to a grain always succeeds and is a local operation.
-However, method calls can fail, and when they do, you get an exception.
-You can catch the exception at any level you need and they are propagated even across silos.
+Getting a reference to a grain always succeeds and is a local operation. However, method calls can fail. When they do, an exception is received. Catch the exception at any necessary level; Orleans propagates them even across silos.
 
 ## Recover from failures
 
-Part of the recovery job is automatic in Orleans and if a grain is not accessible anymore, Orleans will reactivate it in the next method call.
-The thing you need to handle and make sure is correct in the context of your application is the state.
-A grain's state can be partially updated or the operation might be something that should be done across multiple grains and is carried on partially.
+Part of the recovery job is automatic in Orleans. If a grain is no longer accessible, Orleans reactivates it on the next method call. The part needing handling and ensuring correctness within the application's context is the state. A grain's state might be partially updated, or an operation might involve multiple grains and only complete partially.
 
-After you see a grain operation fail you can do one or more of the following.
+After observing a grain operation failure, take one or more of the following actions:
 
-- Simply retry your action, especially if it doesn't involve any state changes which might be half done.
-This is by far the most typical case.
-- Try to fix/reset the partially changed state by calling a method that resets the state to the last known correct state or just reads it from storage by calling `ReadStateAsync`.
-- Reset the state of all related activations as well to ensure a clean state for all of them.
-- Perform multi-grain state manipulations using a Process Manager or database transaction to make sure it's either done completely or nothing is changed to avoid the state being partially updated.
+- **Retry the action**: Often suitable, especially if the action doesn't involve state changes that might be left half-done. This is the most common approach.
+- **Fix/reset state**: Try to correct the partially changed state. Do this by calling a method that resets the state to the last known correct state or by simply reading the correct state from storage using `ReadStateAsync`.
+- **Reset related states**: Reset the state of all related activations as well to ensure a consistent state across all involved grains.
+- **Use transactions or process managers**: Perform multi-grain state manipulations using a Process Manager pattern or database transactions. This ensures the operation either completes entirely or leaves the state unchanged, avoiding partial updates.
 
-Depending on your application, the retry logic might follow a simple or complex pattern, and you might have to do other stuff like notifying external systems and other things, but generally, you either have to retry your action, restart the grain/grains involved, or stop responding until something which is not available becomes available.
+Depending on the application, the retry logic might follow a simple or complex pattern. Other actions might also be needed, like notifying external systems. Generally, the options are to retry the action, restart the involved grain(s), or stop responding until a required resource becomes available again.
 
-If you have a grain responsible for database saves and the database is not available, you simply have to fail any request until the database comes back online. If your operation can be retried at the user's will, like a failure of saving a comment in a comment grain, you can retry when the user presses the retry button (until a certain number of times to not saturate the network). Specific details of how to do it are application-specific, but the possible strategies are the same.
+For example, if a grain is responsible for database saves and the database is unavailable, simply fail incoming requests until the database is back online. If an operation can be retried at the user's discretion (like failing to save a comment), allow the user to retry via a button press (perhaps limiting retries to avoid network saturation). Specific implementation details depend on the application, but the underlying strategies remain the same.
 
 ## Strategy parameters
 
-As described in the section above, the strategy you choose depends on the application and context.
-Strategies usually have parameters that have to be decided at the application level.
-For example, if no other processes depend on an action, then you might decide to retry that action a maximum of 5 times per minute until it eventually completes. But you would have to process a user's Login grain request before processing any other requests from that user.
-If the login action is not working, then you cannot continue.
+As described above, the chosen strategy depends on the application and specific context. Strategies usually involve parameters decided at the application level. For example, if no other processes depend on an action, decide to retry that action a maximum of 5 times per minute until completion. However, successfully processing a user's Login grain request might be necessary before processing other requests from that user. If the login action fails, proceeding with other actions for that user isn't possible.
 
-There is a guide [in the Azure documentation](/azure/architecture/patterns) about good patterns and practices for the cloud which applies to Orleans as well, in most cases.
+The Azure Architecture Center provides a guide on [Cloud Design Patterns](/azure/architecture/patterns), which often apply to Orleans applications as well.
 
-## A fairly complex example
+## A complex example
 
-Because in Orleans grains are activated and deactivated automatically and you don't handle their life-cycle, you usually only deal with making sure that grain state is correct and actions are being started and finished correctly with each other. Knowing the dependencies between grains and actions they perform is a big step toward understanding how to handle failure in any complex system.
-If you need to store relations among grains, you can simply do it and it is a widely followed practice, too.
+Because Orleans activates and deactivates grains automatically, their lifecycle isn't handled directly. Instead, focus typically lies on ensuring grain state correctness and that actions involving multiple grains start and finish correctly relative to each other. Understanding dependencies between grains and their actions is crucial for handling failures in any complex system. Storing relationships between grains is certainly possible and a common practice.
 
-As an example, let's say we have a `GameManager` grain that starts and stops `Game` grains and adds `Player` grains to the games. If my `GameManager`grain fails to do its action regarding starting a game, the related game belonging to it should fail to do its `Start()` as well and the manager can do this for the game by doing orchestration. Managing memory in Orleans is automatic and the system deals with it, you only need to make sure that the game starts and only if the manager can do its `Start()` as well. You can achieve this by either calling the related methods in a sequential manner or by doing them in parallel and resetting the state of all involved grains if any of them fail.
+As an example, consider a `GameManager` grain starting and stopping `Game` grains and adding `Player` grains to games. If the `GameManager` fails while starting a game, the corresponding `Game` grain should also fail its `Start()` operation. The manager can orchestrate this. Memory management in Orleans is automatic; just ensure the game starts successfully if, and only if, the manager also successfully completes its `Start()` related actions. Achieve this coordination by calling related methods sequentially or executing them in parallel and resetting the state of all involved grains if any step fails.
 
-If one of the games receives a call, it will be reactivated automatically, so if you need the manager to manage the game grains, then all calls to the game which are related to management should go through the `GameManager`. If you need orchestration among grains, Orleans doesn't solve it "automagically" for you and you need to do your orchestration. But the fact that you are not dealing with creating/destroying grains means you don't need to worry about resource management.
-You don't need to answer any of these questions:
+If a game grain receives a call later, Orleans reactivates it automatically. Therefore, if the manager needs to oversee game grains, all management-related calls to the game should go through the `GameManager`. If orchestration among grains is needed, Orleans doesn't solve it "automagically"; the orchestration logic must be implemented. However, because creating or destroying grains isn't handled directly, resource management isn't a concern. Questions like these don't need answering:
 
-- Where should I create my supervision tree?
-- which grains should I register to be addressable by name?
-- Is grain X alive so I can send it a message?
+- Where should the supervision tree be created?
+- Which grains should be registered to be addressable by name?
+- Is grain X alive so a message can be sent to it?
 
-So, the game start example can be summarized like this:
+So, the game start example can be summarized as follows:
 
-- `GameManager` asks the `Game` grain to start
-- `Game` grain adds the `Player` grains to itself
-- `Game` asks `Player` grains to add the game to themselves
-- `Game` sets its state to be started.
+- `GameManager` asks the `Game` grain to start.
+- `Game` grain adds the `Player` grains to itself.
+- `Game` asks `Player` grains to add the game to themselves.
+- `Game` sets its state to started.
 - `GameManager` adds the game to its list of games.
 
-Now, if a player fails to add the game to itself, you don't need to kill all players and the game and start over. You simply reset the state of the other players who added the game to themselves, reset the state of the `Game` and `GameManager` (if required), and redo your work or declare a failure. If you can deal with adding the game to the player, later on, you can continue and retry doing that again in a reminder or at some other game call like the `Finish()` method of the game.
+Now, if a player grain fails to add the game to itself, killing all players and the game and starting over isn't necessarily required. Simply reset the state of the other players who successfully added the game, reset the state of the `Game` and `GameManager` (if required), and either retry the operation or declare a failure. If adding the game to the player later is acceptable, continue the process and retry adding the game to that specific player using a reminder or during another game call, like the game's `Finish()` method.

@@ -10,7 +10,7 @@ ms.custom: mlnet-tooling
 The `classification`, `regression`, and `recommendation` commands are the main commands provided by the ML.NET CLI tool. These commands allow you to generate good quality ML.NET models for classification, regression, and recommendation models using automated machine learning (AutoML) as well as the example C# code to run/score that model. In addition, the C# code to train the model is generated for you to research the algorithm and settings of the model.
 
 > [!NOTE]
-> This topic refers to ML.NET CLI and ML.NET AutoML, which are currently in Preview, and material may be subject to change.
+> This article refers to ML.NET CLI and ML.NET AutoML, which are currently in preview, and material is subject to change.
 
 ## Overview
 
@@ -56,7 +56,7 @@ The `mlnet` ML task commands (`classification`, `regression`, `recommendation`, 
 
 ### Classification options
 
-Running `mlnet classification` will train a classification model. Choose this command if you want an ML Model to categorize data into 2 or more classes (e.g. sentiment analysis).
+Running `mlnet classification` will train a classification model. Choose this command if you want an ML Model to categorize data into 2 or more classes (for example, sentiment analysis).
 
 ```console
 mlnet classification
@@ -86,12 +86,11 @@ mlnet classification
 -v, --verbosity <v>
 
 -?, -h, --help
-
 ```
 
 ### Regression options
 
-Running `mlnet regression` will train a regression model. Choose this command if you want an ML Model to predict a numeric value (e.g. price prediction).
+Running `mlnet regression` will train a regression model. Choose this command if you want an ML Model to predict a numeric value (for example, price prediction).
 
 ```console
 mlnet regression
@@ -126,7 +125,7 @@ mlnet regression
 
 ### Recommendation options
 
-Running `mlnet recommendation` will train a recommendation model.  Choose this command if you want an ML Model to recommend items to users based on ratings (e.g. product recommendation).
+Running `mlnet recommendation` will train a recommendation model. Choose this command if you want an ML Model to recommend items to users based on ratings (for example, product recommendation).
 
 ```console
 mlnet recommendation
@@ -158,7 +157,6 @@ mlnet recommendation
 -v, --verbosity <v>
 
 -?, -h, --help
-
 ```
 
 Invalid input options cause the CLI tool to emit a list of valid inputs and an error message.
@@ -293,7 +291,7 @@ This argument is used only for the *recommendation* task.
 
 With this argument, you can ignore existing columns in the dataset file so they are not loaded and used by the training processes.
 
-Specify the columns names that you want to ignore. Use ', ' (comma with space) or ' ' (space) to separate multiple column names. You can use quotes for column names containing whitespace (e.g. "logged in").
+Specify the columns names that you want to ignore. Use ', ' (comma with space) or ' ' (space) to separate multiple column names. You can use quotes for column names containing whitespace (for example, "logged in").
 
 Example:
 
@@ -315,11 +313,11 @@ The ML.NET CLI will try to detect this property if this argument is not specifie
 
 `--train-time` (string)
 
-By default, the maximum exploration / train time is 30 minutes.
+By default, the maximum exploration or train time is 30 minutes.
 
-This argument sets the maximum time (in seconds) for the process to explore multiple trainers and configurations. The configured time may be exceeded if the provided time is too short (say 2 seconds) for a single iteration. In this case, the actual time is the required time to produce one model configuration in a single iteration.
+This argument sets the maximum time (in seconds) for the process to explore multiple trainers and configurations. The configured time limit might be exceeded if it's too short (say 2 seconds) for a single iteration. In this case, the actual time is the required time to produce one model configuration in a single iteration.
 
-The needed time for iterations can vary depending on the size of the dataset.
+The time needed for iterations can vary depending on the size of the dataset.
 
 ## Cache
 

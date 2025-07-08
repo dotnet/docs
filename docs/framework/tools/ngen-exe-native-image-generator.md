@@ -18,7 +18,6 @@ helpviewer_keywords:
   - "invalid images"
   - "BypassNGenAttribute"
   - "System.Runtime.BypassNGenAttribute"
-ms.assetid: 44bf97aa-a9a4-4eba-9a0d-cfaa6fc53a66
 ---
 # Ngen.exe (Native Image Generator)
 
@@ -237,13 +236,13 @@ Hard binding can affect startup time, because all images that are hard bound to 
 
 The following general considerations and application considerations may assist you in deciding whether to undertake the effort of evaluating native images for your application:
 
-- Native images load faster than MSIL because they eliminate the need for many startup activities, such as JIT compilation and type-safety verification.
+- Native images load faster than CIL because they eliminate the need for many startup activities, such as JIT compilation and type-safety verification.
 
 - Native images require a smaller initial working set because there is no need for the JIT compiler.
 
 - Native images enable code sharing between processes.
 
-- Native images require more hard disk space than MSIL assemblies and may require considerable time to generate.
+- Native images require more hard disk space than CIL assemblies and may require considerable time to generate.
 
 - Native images must be maintained.
 
@@ -403,7 +402,7 @@ You can use the [jitCompilationStart](../debug-trace-profile/jitcompilationstart
 
 ### Opting out of native image generation
 
-In some cases, NGen.exe may have difficulty generating a native image for a specific method, or you may prefer that the method be JIT compiled rather then compiled to a native image. In this case, you can use the `System.Runtime.BypassNGenAttribute` attribute to prevent NGen.exe from generating a native image for a particular method. The attribute must be applied individually to each method whose code you do not want to include in the native image. NGen.exe recognizes the attribute and does not generate code in the native image for the corresponding method.
+In some cases, NGen.exe may have difficulty generating a native image for a specific method, or you may prefer that the method be JIT compiled rather than compiled to a native image. In this case, you can use the `System.Runtime.BypassNGenAttribute` attribute to prevent NGen.exe from generating a native image for a particular method. The attribute must be applied individually to each method whose code you do not want to include in the native image. NGen.exe recognizes the attribute and does not generate code in the native image for the corresponding method.
 
 Note, however, that `BypassNGenAttribute` is not defined as a type in the .NET Framework Class Library. In order to consume the attribute in your code, you must first define it as follows:
 
@@ -436,7 +435,7 @@ When locating assemblies and their dependencies, Ngen.exe uses the same probing 
 > [!NOTE]
 > This is a change from Ngen.exe behavior in the .NET Framework versions 1.0 and 1.1, where the application base is set to the current directory.
 
-An assembly can have a dependency without a reference, for example if it loads a .dll file by using the <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType> method. You can create a native image for such a .dll file by using configuration information for the application assembly, with the `/ExeConfig` option. The following command generates a native image for `MyLib.dll,` using the configuration information from `MyApp.exe`.
+An assembly can have a dependency without a reference, for example if it loads a .dll file by using the <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType> method. You can create a native image for such a .dll file by using configuration information for the application assembly, with the `/ExeConfig` option. The following command generates a native image for `MyLib.dll` using the configuration information from `MyApp.exe`.
 
 ```console
 ngen install c:\myfiles\MyLib.dll /ExeConfig:c:\myapps\MyApp.exe
@@ -534,7 +533,7 @@ The following command uninstalls all scenarios for a specific version of `Client
 ngen uninstall "ClientApp, Version=1.0.0.0"
 ```
 
-The following commands uninstall all scenarios for `"ClientApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3c7ba247adcd2081, processorArchitecture=MSIL",` or just the debug scenario for that assembly:
+The following commands uninstall all scenarios for `"ClientApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3c7ba247adcd2081, processorArchitecture=MSIL"`, or just the debug scenario for that assembly:
 
 ```console
 ngen uninstall "ClientApp, Version=1.0.0.0, Culture=neutral,

@@ -10,6 +10,9 @@ ms.assetid: d712a566-f435-44c0-b8c0-49298e84b114
 
 Windows Workflow Foundation (WF) is integrated with several different technologies, such as Microsoft SQL Server and Windows Communication Foundation (WCF). Interacting with these technologies may introduce security issues into your workflow if done improperly.
 
+> [!NOTE]
+> Workflows describe the order of execution and dependencies between short- or long-running tasks. As a code execution mechanism, only trusted code should be loaded and executed. Developers must ensure that only trusted workflows are used with applications using WF.
+
 ## Persistence Security Concerns
 
 1. Workflows that use a <xref:System.Activities.Statements.Delay> activity and persistence need to be reactivated by a service. Windows AppFabric uses the Workflow Management Service (WMS) to reactivate workflows with expired timers. WMS creates a <xref:System.ServiceModel.WorkflowServiceHost> to host the reactivated workflow. If the WMS service is stopped, persisted workflows will not be reactivated when their timers expire.

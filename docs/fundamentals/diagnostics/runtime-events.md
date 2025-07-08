@@ -2,8 +2,7 @@
 title: "Runtime events"
 description: Review diagnostic events emitted by .NET runtime (CoreCLR) that can be used with ETW, LTTng, or EventPipe.
 ms.date: "11/13/2020"
-ms.topic: reference
-helpviewer_keywords: 
+helpviewer_keywords:
   - "runtime events (CoreCLR)"
   - "ETW, EventPipe runtime events (CoreCLR)"
 ---
@@ -41,3 +40,9 @@ These events collect information about worker and I/O threads.
 
 [Type Events](runtime-type-events.md)\
 These events collect information about the type system.
+
+[Tiered compilation events](runtime-tiered-compilation-events.md)\
+These events collect information about tiered compilation.
+
+[Wait handle events](runtime-wait-handle-events.md)\
+These events collect information about wait handles. They help to diagnostic thread pool starvations.

@@ -55,6 +55,21 @@ public static class LogicalPatterns
         // </OrPattern>
     }
 
+    // <NegationWithoutParens>
+    // Incorrect pattern. `not` binds before `and`
+    static bool IsNotLowerCaseLetter(char c) => c is not >= 'a' and <= 'z';
+    // </NegationWithoutParens>
+
+    // <DefaultBinding>
+    // The default binding without parentheses is shows in this method. `not` binds before `and`
+    static bool IsNotLowerCaseLetterDefaultBinding(char c) => c is ((not >= 'a') and <= 'z');
+    // </DefaultBinding>
+
+    // <SpecifyBindingOrder>
+    // Correct pattern. Force `and` before `not`
+    static bool IsNotLowerCaseLetterParentheses(char c) => c is not (>= 'a' and <= 'z');
+    // </SpecifyBindingOrder>
+
     // <WithParentheses>
     static bool IsLetter(char c) => c is (>= 'a' and <= 'z') or (>= 'A' and <= 'Z');
     // </WithParentheses>

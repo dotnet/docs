@@ -2,6 +2,8 @@
 title: SYSLIB0045 warning - obsolete cryptographic factory methods
 description: Learn about the obsoletion of some cryptographic factory methods that generates compile-time warning SYSLIB0045.
 ms.date: 09/22/2022
+f1_keywords:
+  - syslib0045
 ---
 # SYSLIB0045: Some cryptographic factory methods are obsolete
 

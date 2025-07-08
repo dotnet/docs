@@ -13,6 +13,8 @@ ms.assetid: 772ac6f4-64d2-4cfb-92fd-58096dcd6c34
 ---
 # How the Runtime Locates Assemblies
 
+[!INCLUDE [net-framework-specific](../includes/net-framework-specific.md)]
+
 To successfully deploy your .NET Framework application, you must understand how the common language runtime locates and binds to the assemblies that make up your application. By default, the runtime attempts to bind with the exact version of an assembly that the application was built with. This default behavior can be overridden by configuration file settings.
 
 The common language runtime performs a number of steps when attempting to locate an assembly and resolve an assembly reference. Each step is explained in the following sections. The term probing is often used when describing how the runtime locates assemblies; it refers to the set of heuristics used to locate the assembly based on its name and culture.

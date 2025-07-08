@@ -5,7 +5,7 @@ using System.Drawing;
 using System;
 using System.Text.RegularExpressions;
 
-public class RegexLib
+public class RegexLib2
 {
    public static bool IsValidCurrency(string currencyValue)
    {
@@ -15,13 +15,13 @@ public class RegexLib
 }
 // </Snippet4>
 
-public class CurrencyForm : Form
+public class CurrencyForm2 : Form
 {
    Button OKButton;
    TextBox sourceCurrency;
    Label status;
 
-   public CurrencyForm()
+   public CurrencyForm2()
    {
       sourceCurrency = new TextBox();
       sourceCurrency.Location = new Point(25, 50);
@@ -48,7 +48,7 @@ public class CurrencyForm : Form
 
    public static void Main()
    {
-      Form frm = new CurrencyForm();
+      Form frm = new CurrencyForm2();
       Application.Run(frm);
    }
 
@@ -62,7 +62,7 @@ public class CurrencyForm : Form
    public void OKButton_Click(object sender, EventArgs e)
    {
       if (! String.IsNullOrEmpty(sourceCurrency.Text))
-         if (RegexLib.IsValidCurrency(sourceCurrency.Text))
+         if (RegexLib2.IsValidCurrency(sourceCurrency.Text))
             PerformConversion();
          else
             status.Text = "The source currency value is invalid.";

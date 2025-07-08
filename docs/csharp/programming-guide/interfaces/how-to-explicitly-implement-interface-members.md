@@ -1,5 +1,5 @@
 ---
-title: "How to explicitly implement interface members - C# Programming Guide"
+title: "How to explicitly implement interface members"
 description: Learn how to explicitly implement interface members in this C# example. The members are accessed through the interface instance.
 ms.date: 07/20/2015
 ms.topic: how-to
@@ -27,7 +27,6 @@ This example declares an [interface](../../language-reference/keywords/interface
   
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Object oriented programming](../../fundamentals/object-oriented/index.md)
 - [Interfaces](../../fundamentals/types/interfaces.md)
 - [How to explicitly implement members of two interfaces](./how-to-explicitly-implement-members-of-two-interfaces.md)

@@ -1,4 +1,5 @@
-﻿using System.Text.Json;
+﻿using System;
+using System.Text.Json;
 using System.Text.Json.Serialization;
 
 namespace SystemTextJsonSamples
@@ -110,7 +111,7 @@ namespace SystemTextJsonSamples
     // </WFWithConverterAttribute>
 
     // <WFWithPropertyNameAttribute>
-    public class WeatherForecastWithPropertyNameAttribute
+    public class WeatherForecastWithPropertyName
     {
         public DateTimeOffset Date { get; set; }
         public int TemperatureCelsius { get; set; }
@@ -223,6 +224,53 @@ namespace SystemTextJsonSamples
     }
     // </WFWithEnum>
 
+    // <WFWithEnumCustomName>
+    public class WeatherForecastWithEnumCustomName
+    {
+        public DateTimeOffset Date { get; set; }
+        public int TemperatureCelsius { get; set; }
+        public CloudCover? Sky { get; set; }
+    }
+
+    [JsonConverter(typeof(JsonStringEnumConverter))]
+    public enum CloudCover
+    {
+        Clear,
+        [JsonStringEnumMemberName("Partly cloudy")]
+        Partial,
+        Overcast
+    }
+    // </WFWithEnumCustomName>
+
+    // <WFWithConverterEnum>
+    public class WeatherForecastWithPrecipEnum
+    {
+        public DateTimeOffset Date { get; set; }
+        public int TemperatureCelsius { get; set; }
+        public Precipitation? Precipitation { get; set; }
+    }
+
+    [JsonConverter(typeof(JsonStringEnumConverter<Precipitation>))]
+    public enum Precipitation
+    {
+        Drizzle, Rain, Sleet, Hail, Snow
+    }
+    // </WFWithConverterEnum>
+
+    // <WFWithPrecipEnumNoConverter>
+    public class WeatherForecast2WithPrecipEnum
+    {
+        public DateTimeOffset Date { get; set; }
+        public int TemperatureCelsius { get; set; }
+        public Precipitation2? Precipitation { get; set; }
+    }
+
+    public enum Precipitation2
+    {
+        Drizzle, Rain, Sleet, Hail, Snow
+    }
+    // </WFWithPrecipEnumNoConverter>
+
     public static class WeatherForecastExtensions
     {
         public static void DisplayPropertyValues(this object obj)
@@ -319,9 +367,31 @@ namespace SystemTextJsonSamples
             return weatherForecast;
         }
 
-        public static WeatherForecastWithPropertyNameAttribute CreateWeatherForecastWithPropertyNameAttribute()
+        public static WeatherForecastWithEnumCustomName CreateWeatherForecastWithEnumCustomName()
         {
-            var weatherForecast = new WeatherForecastWithPropertyNameAttribute
+            var weatherForecast = new WeatherForecastWithEnumCustomName
+            {
+                Date = DateTime.Parse("2019-08-01"),
+                TemperatureCelsius = 25,
+                Sky = CloudCover.Partial
+            };
+            return weatherForecast;
+        }
+
+        public static WeatherForecastWithPrecipEnum CreateWeatherForecastWithPrecipEnum()
+        {
+            var weatherForecast = new WeatherForecastWithPrecipEnum
+            {
+                Date = DateTime.Parse("2019-08-01"),
+                TemperatureCelsius = 25,
+                Precipitation = Precipitation.Sleet
+            };
+            return weatherForecast;
+        }
+
+        public static WeatherForecastWithPropertyName CreateWeatherForecastWithPropertyName()
+        {
+            var weatherForecast = new WeatherForecastWithPropertyName
             {
                 Date = DateTime.Parse("2019-08-01"),
                 TemperatureCelsius = 25,

@@ -85,7 +85,7 @@ The HTTP request will end up running that kind of C# code accessing the microser
 Regarding the microservice URL, when the containers are deployed in your local development PC (local Docker host), each microservice's container always has an internal port (usually port 80) specified in its dockerfile, as in the following dockerfile:
 
 ```dockerfile
-FROM mcr.microsoft.com/dotnet/aspnet:7.0 AS base
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
 WORKDIR /app
 EXPOSE 80
 ```
@@ -374,9 +374,9 @@ But the application is configured so it accesses all the microservices through t
 
 ### The Gateway aggregation pattern in eShopOnContainers
 
-As introduced previously, a flexible way to implement requests aggregation is with custom services, by code. You could also implement request aggregation with the [Request Aggregation feature in Ocelot](https://ocelot.readthedocs.io/en/latest/features/requestaggregation.html#request-aggregation), but it might not be as flexible as you need. Therefore, the selected way to implement aggregation in eShopOnContainers is with an explicit ASP.NET Core Web API service for each aggregator.
+As introduced previously, a flexible way to implement requests aggregation is with custom services, by code. The selected way to implement aggregation in eShopOnContainers is with an explicit ASP.NET Core Web API service for each aggregator.
 
-According to that approach, the API Gateway composition diagram is in reality a bit more extended when considering the aggregator services that are not shown in the simplified global architecture diagram shown previously.
+According to that approach, the API Gateway composition diagram is in reality a bit more extended when considering the aggregator services that aren't shown in the simplified global architecture diagram shown previously.
 
 In the following diagram, you can also see how the aggregator services work with their related API Gateways.
 
@@ -572,7 +572,7 @@ There are other important features to research and use, when using an Ocelot API
 
 - **Rate limiting** \
   [https://ocelot.readthedocs.io/en/latest/features/ratelimiting.html](https://ocelot.readthedocs.io/en/latest/features/ratelimiting.html )
-  
+
 - **Swagger for Ocelot** \
   [https://github.com/Burgyn/MMLib.SwaggerForOcelot](https://github.com/Burgyn/MMLib.SwaggerForOcelot)
 

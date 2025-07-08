@@ -2,7 +2,6 @@
 title: "Tutorial: Build algorithms with pattern matching"
 description: This advanced tutorial demonstrates how to use pattern matching techniques to create functionality using data and algorithms that are created separately.
 ms.date: 02/25/2022
-ms.custom: contperf-fy21q1
 ---
 # Tutorial: Use pattern matching to build type-driven and data-driven algorithms
 
@@ -18,7 +17,7 @@ In this tutorial, you'll learn how to:
 
 ## Prerequisites
 
-[!INCLUDE [Prerequisites](../../includes/prerequisites.md)]
+[!INCLUDE [Prerequisites](../../../../includes/prerequisites-basic-winget.md)]
 
 This tutorial assumes you're familiar with C# and .NET, including either Visual Studio or the .NET CLI.
 
@@ -328,7 +327,7 @@ Next, add a similar function to categorize the time into the blocks:
 
 :::code language="csharp" source="./snippets/patterns/finished/toll-calculator/TollCalculator.cs" ID="GetTimeBand":::
 
-You add a private `enum` to convert each range of time to a discrete value. Then, the `GetTimeBand` method uses [relational patterns](../../language-reference/operators/patterns.md#relational-patterns), and [conjunctive `or` patterns](../../language-reference/operators/patterns.md#logical-patterns), both added in C# 9.0. A relational pattern lets you test a numeric value using `<`, `>`, `<=`, or `>=`. The `or` pattern tests if an expression matches one or more patterns. You can also use an `and` pattern to ensure that an expression matches two distinct patterns, and a `not` pattern to test that an expression doesn't match a pattern.
+You add a private `enum` to convert each range of time to a discrete value. Then, the `GetTimeBand` method uses [relational patterns](../../language-reference/operators/patterns.md#relational-patterns), and [conjunctive `or` patterns](../../language-reference/operators/patterns.md#logical-patterns). A relational pattern lets you test a numeric value using `<`, `>`, `<=`, or `>=`. The `or` pattern tests if an expression matches one or more patterns. You can also use an `and` pattern to ensure that an expression matches two distinct patterns, and a `not` pattern to test that an expression doesn't match a pattern.
 
 After you create those methods, you can use another `switch` expression with the **tuple pattern** to calculate the pricing premium. You could build a `switch` expression with all 16 arms:
 

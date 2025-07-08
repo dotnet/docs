@@ -37,7 +37,7 @@ Adds a filter to a listener in the `sharedListeners` collection.
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|**type**|Required attribute.<br /><br /> Specifies the type of the filter. You can use only the full name of the type (in the format of the <xref:System.Type.FullName%2A?displayProperty=nameWithType> property), or you can use the fully qualified type name including the assembly information (in the format of the <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=nameWithType> property). For information on creating a fully qualified type name, see [Specifying Fully Qualified Type Names](../../../reflection-and-codedom/specifying-fully-qualified-type-names.md).|  
+|**type**|Required attribute.<br /><br /> Specifies the type of the filter. You can use only the full name of the type (in the format of the <xref:System.Type.FullName%2A?displayProperty=nameWithType> property), or you can use the fully qualified type name including the assembly information (in the format of the <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=nameWithType> property). For information on creating a fully qualified type name, see [Specifying Fully Qualified Type Names](../../../../fundamentals/reflection/specifying-fully-qualified-type-names.md).|  
 |**initializeData**|Optional attribute.<br /><br /> The string passed to the constructor for the specified class.|  
   
 ### Child Elements  

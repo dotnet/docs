@@ -6,45 +6,41 @@ public class Program
 {
     public static void Main()
     {
-        string jsonString =
-@"{
-  ""Class Name"": ""Science"",
-  ""Teacher\u0027s Name"": ""Jane"",
-  ""Semester"": ""2019-01-01"",
-  ""Students"": [
-    {
-      ""Name"": ""John"",
-      ""Grade"": 94.3
-    },
-    {
-      ""Name"": ""James"",
-      ""Grade"": 81.0
-    },
-    {
-      ""Name"": ""Julia"",
-      ""Grade"": 91.9
-    },
-    {
-      ""Name"": ""Jessica"",
-      ""Grade"": 72.4
-    },
-    {
-      ""Name"": ""Johnathan""
-    }
-  ],
-  ""Final"": true
-}
-";
+        string jsonString = """
+            {
+              "Class Name": "Science",
+              "Teacher\u0027s Name": "Jane",
+              "Semester": "2019-01-01",
+              "Students": [
+                {
+                  "Name": "John",
+                  "Grade": 94.3
+                },
+                {
+                  "Name": "James",
+                  "Grade": 81.0
+                },
+                {
+                  "Name": "Julia",
+                  "Grade": 91.9
+                },
+                {
+                  "Name": "Jessica",
+                  "Grade": 72.4
+                },
+                {
+                  "Name": "Johnathan"
+                }
+              ],
+              "Final": true
+            }
+            """;
         double sum = 0;
-        int count = 0;
-
         JsonNode document = JsonNode.Parse(jsonString)!;
 
-        JsonNode root = document.Root;
-        JsonArray studentsArray = root["Students"]!.AsArray();
+        JsonArray studentsArray = document["Students"]!.AsArray();
 
-        count = studentsArray.Count;
-
+        int count = studentsArray.Count;
         foreach (JsonNode? student in studentsArray)
         {
             if (student?["Grade"] is JsonNode gradeNode)

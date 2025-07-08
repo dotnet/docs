@@ -2,7 +2,6 @@
 title: DateTime and DateTimeOffset support in System.Text.Json
 description: An overview of how DateTime and DateTimeOffset types are supported in the System.Text.Json library.
 author: layomia
-ms.author: laakinri
 ms.date: 01/11/2023
 ms.custom: devdivchpfy22
 helpviewer_keywords:
@@ -23,7 +22,7 @@ The `System.Text.Json` library parses and writes <xref:System.DateTime> and <xre
 
 The <xref:System.Text.Json.JsonSerializer>, <xref:System.Text.Json.Utf8JsonReader>, <xref:System.Text.Json.Utf8JsonWriter>,
 and <xref:System.Text.Json.JsonElement> types parse and write <xref:System.DateTime> and <xref:System.DateTimeOffset>
-text representations according to the extended profile of the ISO 8601-1:2019 format. For example, `2019-07-26T16:59:57-05:00`.
+text representations according to the extended profile of the ISO 8601-1:2019 format, for example, `2019-07-26T16:59:57-05:00`.
 
 <xref:System.DateTime> and <xref:System.DateTimeOffset> data can be serialized with <xref:System.Text.Json.JsonSerializer>:
 
@@ -33,18 +32,16 @@ text representations according to the extended profile of the ISO 8601-1:2019 fo
 
 :::code language="csharp" source="snippets/system-text-json-support/csharp/deserializing-with-jsonserializer-valid/Program.cs":::
 
-With default options, input <xref:System.DateTime> and <xref:System.DateTimeOffset> text representations must conform to the extended ISO 8601-1:2019 profile.
-Attempting to deserialize representations that don't conform to the profile will cause <xref:System.Text.Json.JsonSerializer> to throw a <xref:System.Text.Json.JsonException>:
+With default options, input <xref:System.DateTime> and <xref:System.DateTimeOffset> text representations must conform to the extended ISO 8601-1:2019 profile. If you attempt to deserialize representations that don't conform to the profile, <xref:System.Text.Json.JsonSerializer> throws a <xref:System.Text.Json.JsonException>:
 
 :::code language="csharp" source="snippets/system-text-json-support/csharp/deserializing-with-jsonserializer-error/Program.cs":::
 
-The <xref:System.Text.Json.JsonDocument> provides structured access to the contents of a JSON payload, including <xref:System.DateTime>
-and <xref:System.DateTimeOffset> representations. The following example shows how to calculate the average
+<xref:System.Text.Json.JsonDocument> provides structured access to the contents of a JSON payload, including <xref:System.DateTime> and <xref:System.DateTimeOffset> representations. The following example shows how to calculate the average
 temperature on Mondays from a collection of temperatures:
 
 :::code language="csharp" source="snippets/system-text-json-support/csharp/computing-with-jsondocument-valid/Program.cs":::
 
-Attempting to compute the average temperature given a payload with non-compliant <xref:System.DateTime> representations will cause <xref:System.Text.Json.JsonDocument> to throw a <xref:System.FormatException>:
+If you attempt to compute the average temperature given a payload with non-compliant <xref:System.DateTime> representations, <xref:System.Text.Json.JsonDocument> throws a <xref:System.FormatException>:
 
 :::code language="csharp" source="snippets/system-text-json-support/csharp/computing-with-jsondocument-error/Program.cs":::
 
@@ -56,7 +53,7 @@ The lower level <xref:System.Text.Json.Utf8JsonWriter> writes <xref:System.DateT
 
 :::code language="csharp" source="snippets/system-text-json-support/csharp/reading-with-utf8jsonreader-valid/Program.cs":::
 
-Attempting to read non-compliant formats with <xref:System.Text.Json.Utf8JsonReader> will cause it to throw a <xref:System.FormatException>:
+If you attempt to read non-compliant formats with <xref:System.Text.Json.Utf8JsonReader>, it throws a <xref:System.FormatException>:
 
 :::code language="csharp" source="snippets/system-text-json-support/csharp/reading-with-utf8jsonreader-error/Program.cs":::
 
@@ -68,10 +65,14 @@ Attempting to read non-compliant formats with <xref:System.Text.Json.Utf8JsonRea
 
 ### When using <xref:System.Text.Json.JsonSerializer>
 
-If you want the serializer to perform custom parsing or formatting, you can implement [custom converters](xref:System.Text.Json.Serialization.JsonConverter%601).
-Here are a few examples:
+If you want the serializer to perform custom parsing or formatting, you can implement [custom converters](xref:System.Text.Json.Serialization.JsonConverter%601). The following sections show a few examples:
 
-#### Using DateTime(Offset).Parse and DateTime(Offset).ToString
+- [DateTime(Offset).Parse and DateTime(Offset).ToString](#datetimeoffsetparse-and-datetimeoffsettostring)
+- [Utf8Parser and Utf8Formatter](#-and-)
+- [Use DateTime(Offset).Parse as a fallback](#use-datetimeoffsetparse-as-a-fallback)
+- [Use Unix epoch date format](#use-unix-epoch-date-format)
+
+#### DateTime(Offset).Parse and DateTime(Offset).ToString
 
 If you can't determine the formats of your input <xref:System.DateTime> or <xref:System.DateTimeOffset> text representations, you can use the `DateTime(Offset).Parse` method in your converter read logic.
 This method allows you to use .NET's extensive support for parsing various <xref:System.DateTime> and <xref:System.DateTimeOffset> text formats, including non-ISO 8601 strings and ISO 8601 formats that don't conform to the extended ISO 8601-1:2019 profile.
@@ -87,12 +88,12 @@ This approach is also less performant than using the serializer's native impleme
 > When implementing <xref:System.Text.Json.Serialization.JsonConverter%601>, and `T` is <xref:System.DateTime>, the `typeToConvert` parameter will always be `typeof(DateTime)`.
 The parameter is useful for handling polymorphic cases and when using generics to get `typeof(T)` in a performant way.
 
-#### Using <xref:System.Buffers.Text.Utf8Parser> and <xref:System.Buffers.Text.Utf8Formatter>
+#### <xref:System.Buffers.Text.Utf8Parser> and <xref:System.Buffers.Text.Utf8Formatter>
 
 You can use fast UTF-8-based parsing and formatting methods in your converter logic if your input <xref:System.DateTime> or <xref:System.DateTimeOffset>
 text representations are compliant with one of the "R", "l", "O", or "G"
  [standard date and time format strings](../base-types/standard-date-and-time-format-strings.md),
-or you want to write according to one of these formats. This approach is much faster than using s`DateTime(Offset).Parse` and `DateTime(Offset).ToString`.
+or you want to write according to one of these formats. This approach is much faster than using `DateTime(Offset).Parse` and `DateTime(Offset).ToString`.
 
 The following example shows a custom converter that serializes and deserializes <xref:System.DateTime> values according to
  [the "R" standard format](../base-types/standard-date-and-time-format-strings.md#the-rfc1123-r-r-format-specifier):
@@ -104,7 +105,7 @@ The following example shows a custom converter that serializes and deserializes 
 >
 > The "l" (lowercase "L") format isn't documented with the other [standard date and time format strings](../base-types/standard-date-and-time-format-strings.md) because it's supported only by the `Utf8Parser` and `Utf8Formatter` types. The format is lowercase RFC 1123 (a lowercase version of the "R" format). For example, "thu, 25 jul 2019 06:36:07 gmt".
 
-#### Using DateTime(Offset).Parse as a fallback to the serializer's native parsing
+#### Use DateTime(Offset).Parse as a fallback
 
 If you generally expect your input <xref:System.DateTime> or <xref:System.DateTimeOffset> data to conform to the extended ISO 8601-1:2019 profile,
 you can use the serializer's native parsing logic. You can also implement a fallback mechanism.
@@ -113,15 +114,15 @@ the converter successfully parses the data using <xref:System.DateTime.Parse(Sys
 
 :::code language="csharp" source="snippets/system-text-json-support/csharp/datetime-converter-examples/example3/Program.cs":::
 
-#### Using Unix epoch date format
+#### Use Unix epoch date format
 
 The following converters handle Unix epoch format with or without a time zone offset (values such as `/Date(1590863400000-0700)/` or `/Date(1590863400000)/`):
 
-:::code language="csharp" source="../serialization/system-text-json/snippets/how-to-5-0/csharp/CustomConverterUnixEpochDate.cs" id="ConverterOnly":::
+:::code language="csharp" source="../serialization/system-text-json/snippets/how-to-contd/csharp/CustomConverterUnixEpochDate.cs" id="ConverterOnly":::
 
-:::code language="csharp" source="../serialization/system-text-json/snippets/how-to-5-0/csharp/CustomConverterUnixEpochDateNoZone.cs" id="ConverterOnly":::
+:::code language="csharp" source="../serialization/system-text-json/snippets/how-to-contd/csharp/CustomConverterUnixEpochDateNoZone.cs" id="ConverterOnly":::
 
-### When writing with <xref:System.Text.Json.Utf8JsonWriter>
+### When using <xref:System.Text.Json.Utf8JsonWriter>
 
 If you want to write a custom <xref:System.DateTime> or <xref:System.DateTimeOffset> text representation with <xref:System.Text.Json.Utf8JsonWriter>,
 you can format your custom representation to a <xref:System.String>, `ReadOnlySpan<Byte>`, `ReadOnlySpan<Char>`, or <xref:System.Text.Json.JsonEncodedText>,
@@ -133,10 +134,10 @@ and then written with the <xref:System.Text.Json.Utf8JsonWriter.WriteStringValue
 
 :::code language="csharp" source="snippets/system-text-json-support/csharp/custom-writing-with-utf8jsonwriter/Program.cs":::
 
-### When reading with <xref:System.Text.Json.Utf8JsonReader>
+### When using <xref:System.Text.Json.Utf8JsonReader>
 
 If you want to read a custom <xref:System.DateTime> or <xref:System.DateTimeOffset> text representation with <xref:System.Text.Json.Utf8JsonReader>,
-you can get the value of the current JSON token as a <xref:System.String> using <xref:System.Text.Json.Utf8JsonReader.GetString> method, then parse the value using custom logic.
+you can get the value of the current JSON token as a <xref:System.String> using the <xref:System.Text.Json.Utf8JsonReader.GetString> method, then parse the value using custom logic.
 
 The following example shows how a custom <xref:System.DateTimeOffset> text representation can be retrieved using the <xref:System.Text.Json.Utf8JsonReader.GetString> method,
 then parsed using <xref:System.DateTimeOffset.ParseExact(System.String,System.String,System.IFormatProvider)>:
@@ -147,24 +148,23 @@ then parsed using <xref:System.DateTimeOffset.ParseExact(System.String,System.St
 
 ### Date and time components
 
-The extended ISO 8601-1:2019 profile implemented in <xref:System.Text.Json?displayProperty=fullName> defines the following components for
-date and time representations. These components are used to define various supported levels of granularity
+The extended ISO 8601-1:2019 profile implemented in <xref:System.Text.Json?displayProperty=fullName> defines the following components for date and time representations. These components are used to define various supported levels of granularity
 when parsing and formatting <xref:System.DateTime> and <xref:System.DateTimeOffset> representations.
 
-| Component       | Format                      | Description                                                                     |
-|-----------------|-----------------------------|---------------------------------------------------------------------------------|
-| Year            | "yyyy"                      | 0001-9999                                                                       |
-| Month           | "MM"                        | 01-12                                                                           |
-| Day             | "dd"                        | 01-28, 01-29, 01-30, 01-31 based on month/year.                                 |
-| Hour            | "HH"                        | 00-23                                                                           |
-| Minute          | "mm"                        | 00-59                                                                           |
-| Second          | "ss"                        | 00-59                                                                           |
-| Second fraction | "FFFFFFF"                   | Minimum of one digit, maximum of 16 digits.                                     |
-| Time offset     | "K"                         | Either "Z" or "('+'/'-')HH':'mm".                                               |
-| Partial time    | "HH':'mm':'ss[FFFFFFF]"     | Time without UTC offset information.                                            |
-| Full date       | "yyyy'-'MM'-'dd"            | Calendar date.                                                                  |
-| Full time       | "'Partial time'K"           | UTC of day or Local time of day with the time offset between local time and UTC.|
-| Date time       | "'Full date''T''Full time'" | Calendar date and time of day, for example, 2019-07-26T16:59:57-05:00.                  |
+| Component       | Format                  | Description                                     |
+|-----------------|-------------------------|-------------------------------------------------|
+| Year            | "yyyy"                  | 0001-9999                                       |
+| Month           | "MM"                    | 01-12                                           |
+| Day             | "dd"                    | 01-28, 01-29, 01-30, 01-31 based on month/year. |
+| Hour            | "HH"                    | 00-23                                           |
+| Minute          | "mm"                    | 00-59                                           |
+| Second          | "ss"                    | 00-59                                           |
+| Second fraction | "FFFFFFF"               | Minimum of one digit, maximum of 16 digits.     |
+| Time offset     | "K"                     | Either "Z" or "('+'/'-')HH':'mm".               |
+| Partial time    | "HH':'mm':'ss[FFFFFFF]" | Time without UTC offset information.            |
+| Full date       | "yyyy'-'MM'-'dd"        | Calendar date.                                  |
+| Full time       | "'Partial time'K"       | UTC of day or Local time of day with the time offset between local time and UTC.|
+| Date time       | "'Full date''T''Full time'" | Calendar date and time of day, for example, 2019-07-26T16:59:57-05:00. |
 
 ### Support for parsing
 

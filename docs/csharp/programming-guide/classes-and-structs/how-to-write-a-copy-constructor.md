@@ -1,12 +1,11 @@
 ---
-title: "How to write a copy constructor - C# Programming Guide"
+title: "How to write a copy constructor"
 description: Learn how to write a copy constructor in C# that takes an instance of class and returns a new instance with the values of the input.
 ms.date: 05/24/2023
 helpviewer_keywords: 
   - "C# Language, copy constructor"
   - "copy constructor [C#]"
 ms.topic: how-to
-ms.custom: contperf-fy21q2
 ms.assetid: fba899b5-fc41-428e-a745-3ebdbf37990a
 ---
 # How to write a copy constructor (C# Programming Guide)
@@ -26,7 +25,6 @@ In the following example, the `Person` [class](../../language-reference/keywords
 
 - <xref:System.ICloneable>
 - [Records](../../fundamentals/types/records.md)
-- [C# Programming Guide](../index.md)
 - [The C# type system](../../fundamentals/types/index.md)
 - [Constructors](./constructors.md)
 - [Finalizers](./finalizers.md)

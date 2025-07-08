@@ -1,3 +1,4 @@
+items:
 - name: ADO.NET Entity Framework
   href: index.md
 - name: Entity Framework Overview
@@ -14,8 +15,6 @@
       href: how-to-use-edmgen-exe-to-generate-object-layer-code.md
     - name: "How to: Use EdmGen.exe to Validate Model and Mapping Files"
       href: how-to-use-edmgen-exe-to-validate-model-and-mapping-files.md
-  - name: "How to: Define the Connection String"
-    href: how-to-define-the-connection-string.md
   - name: "How to: Make Model and Mapping Files Embedded Resources"
     href: how-to-make-model-and-mapping-files-embedded-resources.md
   - name: Working with Data Definition Language
@@ -35,8 +34,6 @@
     - name: EntityClient Provider for the Entity Framework
       href: entityclient-provider-for-the-entity-framework.md
       items:
-      - name: "How to: Build an EntityConnection Connection String"
-        href: how-to-build-an-entityconnection-connection-string.md
       - name: "How to: Execute a Query that Returns PrimitiveType Results"
         href: how-to-execute-a-query-that-returns-primitivetype-results.md
       - name: "How to: Execute a Query that Returns StructuralType Results"
@@ -96,4 +93,4 @@
   href: getting-started.md
 - name: Language Reference
   href: language-reference/index.md
-  
+

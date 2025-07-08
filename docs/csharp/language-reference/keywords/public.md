@@ -1,6 +1,6 @@
 ---
 description: "public keyword - C# Reference"
-title: "public keyword - C# Reference"
+title: "public keyword"
 ms.date: 07/20/2015
 f1_keywords:
   - "public"
@@ -38,8 +38,6 @@ For more information, see [Declared accessibility](~/_csharpstandard/standard/ba
 
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
 - [Access Modifiers](../../programming-guide/classes-and-structs/access-modifiers.md)
 - [C# Keywords](index.md)
 - [Access Modifiers](access-modifiers.md)

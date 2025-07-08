@@ -314,6 +314,6 @@ Go to the build output folder location and run *TypeEquivalenceClient.exe*. Note
 
 - [**EmbedInteropTypes** (C# Compiler Options)](../../csharp/language-reference/compiler-options/inputs.md#embedinteroptypes)
 - [-link (Visual Basic)](../../visual-basic/reference/command-line-compiler/link.md)
-- [C# programming guide](../../csharp/programming-guide/index.md)
+- [C# programming guide](../../csharp/programming-guide/concepts/index.md)
 - [Programming concepts (Visual Basic)](../../visual-basic/programming-guide/concepts/index.md)
 - [Assemblies in .NET](index.md)

@@ -10,6 +10,8 @@ public static class Overview
         Query();
     }
 
+    private static readonly int[] collection = [1, 2, 3];
+
     private static void GeneralExamples()
     {
         // <SnippetExpressions>
@@ -23,8 +25,8 @@ public static class Overview
         
         string s = "String literal";
         char l = s[s.Length - 1];
-        
-        var numbers = new List<int>(new[] { 1, 2, 3 });
+
+        List<int> numbers = [..collection];
         b = numbers.FindLast(n => n > 1);
         // </SnippetExpressions>
     }
@@ -54,7 +56,7 @@ public static class Overview
     private static void Query()
     {
         // <SnippetQuery>
-        var scores = new[] { 90, 97, 78, 68, 85 };
+        int[] scores = { 90, 97, 78, 68, 85 };
         IEnumerable<int> highScoresQuery =
             from score in scores
             where score > 80

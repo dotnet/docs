@@ -8,11 +8,11 @@ metadata:
   title: Azure for .NET developers
   description: Samples, tutorials, and education for .NET on Azure
   ms.topic: hub-page
-  ms.prod: azure-dotnet
-  ms.date: 05/13/2021
+  ms.service: dotnet-azure
+  ms.date: 08/15/2024
 
 highlightedContent:
-# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | whats-new
+  # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | whats-new
   items:
     - itemType: overview
       title: Introduction to Azure and .NET
@@ -25,7 +25,7 @@ highlightedContent:
       url: /azure/azure-functions/functions-create-your-first-function-visual-studio
     - itemType: tutorial
       title: ASP.NET Core and Docker
-      url: /visualstudio/containers/container-tools?view=vs-2019
+      url: /visualstudio/containers/container-tools
     - itemType: deploy
       title: Deploy a .NET app with Azure DevOps
       url: /azure/devops/pipelines/ecosystems/dotnet-core?view=azure-devops
@@ -42,7 +42,7 @@ highlightedContent:
 conceptualContent:
   title: Featured content
   summary: Learn to develop .NET apps leveraging a variety of Azure services.
-# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+  # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
     - title: Create web apps
       links:
@@ -72,6 +72,12 @@ conceptualContent:
           url: /azure/app-service/app-service-web-tutorial-rest-api
     - title: Create cloud native apps
       links:
+        - itemType: overview
+          url: /dotnet/aspire/get-started/aspire-overview
+          text: Build cloud native apps using .NET Aspire
+        - itemType: quickstart
+          url: /dotnet/aspire/get-started/build-your-first-aspire-app?tabs=visual-studio
+          text: Build your first .NET Aspire app
         - itemType: quickstart
           text: Run and debug a microservice in Kubernetes
           url: /azure/dev-spaces/quickstart-netcore-visualstudio
@@ -86,24 +92,41 @@ conceptualContent:
           url: /azure/azure-app-configuration/use-feature-flags-dotnet-core
         - itemType: how-to-guide
           text: Deploy a .NET Core app to Azure Container Registry
-          url: /visualstudio/containers/hosting-web-apps-in-docker?view=vs-2019
+          url: /visualstudio/containers/hosting-web-apps-in-docker
+    - title: Create intelligent apps with AI
+      links:
+        - itemType: overview
+          url: ../ai/overview.md
+          text: AI for .NET overview
+        - itemType: quickstart
+          url: ../ai/quickstarts/build-chat-app.md
+          text: Build a chat app
+        - itemType: quickstart
+          text: Generate images
+          url: ../ai/quickstarts/generate-images.md
+        - itemType: concept
+          text: Understand prompt engineering
+          url: ../ai/conceptual/prompt-engineering-dotnet.md
+        - itemType: concept
+          text: Understand generative AI and LLMs
+          url: ../ai/conceptual/how-genai-and-llms-work.md
+        - itemType: tutorial
+          text: Implement RAG using vector search
+          url: ../ai/tutorials/tutorial-ai-vector-search.md
+        - itemType: tutorial
+          text: Get started with the .NET enterprise chat sample
+          url: ../ai/get-started-app-chat-template.md
+        - itemType: overview
+          text: Learning resources and samples
+          url: ../ai/azure-ai-for-dotnet-developers.md
     - title: Create mobile apps
       links:
         - itemType: learn
-          text: Consume REST services from Azure in Xamarin apps
-          url: /training/modules/consume-rest-services/
-        - itemType: quickstart
-          text: Create a Xamarin.Forms app with .NET SDK and Azure Cosmos DB's API for MongoDB
-          url: /azure/cosmos-db/create-mongodb-xamarin
-        - itemType: quickstart
-          text: Azure Blob storage client library with Xamarin.Forms
-          url: /azure/storage/blobs/storage-quickstart-blobs-xamarin
-        - itemType: tutorial
-          text: Send push notifications to Xamarin.Forms apps using ASP.NET Core and Azure Notification Hubs
-          url: /azure/notification-hubs/notification-hubs-backend-service-xamarin-forms
-        - itemType: concept
-          text: Add authentication and manage user identities in your mobile apps
-          url: /azure/developer/mobile-apps/authentication
+          text: Consume REST web services in .NET MAUI apps
+          url: /training/modules/consume-rest-services-maui/
+        - itemType: overview
+          text: Mobile architecture design
+          url: /azure/architecture/guide/mobile/mobile-start-here
     - title: Work with storage & data
       links:
         - itemType: concept
@@ -205,20 +228,6 @@ conceptualContent:
         - itemType: how-to-guide
           text: Troubleshoot an app in Azure App Service using Visual Studio
           url: /azure/app-service/troubleshoot-dotnet-visual-studio
-    - title: Migration
-      links:
-        - itemType: concept
-          text: Choose an Azure hosting option
-          url: ./migration/choose.md
-        - itemType: how-to-guide
-          text: Migrate a .NET web app or service to Azure App Service
-          url: ./migration/app-service.md
-        - itemType: how-to-guide
-          text: Migrate an ASP.NET app to an Azure VM
-          url: ./migration/vm.md
-        - itemType: how-to-guide
-          text: Migrate a SQL Server database to Azure
-          url: ./migration/sql.md
     - title: Azure SDK for .NET
       links:
         - itemType: download
@@ -253,11 +262,11 @@ additionalContent:
         - title: Webcasts and shows
           links:
             - text: Azure Friday
-              url: https://azure.microsoft.com/resources/videos/azure-friday/
+              url: /shows/azure-friday/
             - text: The Cloud Native Show
-              url: /Shows/The-Cloud-Native-Show
+              url: /shows/The-Cloud-Native-Show
             - text: On .NET
-              url: /Shows/On-NET
+              url: /shows/On-NET
             - text: .NET Community Standup
               url: https://dotnet.microsoft.com/platform/community/standup
             - text: On .NET Live

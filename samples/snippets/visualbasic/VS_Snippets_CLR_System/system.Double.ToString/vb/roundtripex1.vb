@@ -28,7 +28,10 @@ End Module
 ' If compiled to an application that targets anycpu or x64 and run on an x64 system,
 ' the example displays the following output:
 '       Attempting to round-trip a Double with 'R':
+'       .NET Framework:
 '       0.6822871999174 = 0.68228719991740006: False
+'       .NET:
+'       0.6822871999174 = 0.6822871999174: True
 '
 '       Attempting to round-trip a Double with 'G17':
 '       0.6822871999174 = 0.6822871999174: True

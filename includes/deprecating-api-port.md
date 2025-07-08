@@ -1,2 +1,2 @@
-> [!NOTE]
-> We're in the process of deprecating API Port in favor of integrating binary analysis directly into [.NET Upgrade Assistant](https://github.com/dotnet/upgrade-assistant). In the upcoming months, we're going to shut down the backend service of API Port, which will require using the tool offline. For more information, see [GitHub: .NET API Port repository](https://github.com/microsoft/dotnet-apiport/blob/dev/docs/Console/README.md#run-the-tool-in-an-offline-mode).*
+> [!IMPORTANT]
+> API Port has been deprecated in favor of binary analysis with the [.NET Upgrade Assistant](../docs/core/porting/upgrade-assistant-overview.md) tool. The backend service of API Port has been shut down, so to use the tool, you must use it offline. For more information, see [.NET API Port README](https://github.com/microsoft/dotnet-apiport/blob/dev/docs/Console/README.md#run-the-tool-in-an-offline-mode).

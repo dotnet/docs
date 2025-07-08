@@ -2,6 +2,8 @@
 title: SYSLIB0033 warning - Rfc2898DeriveBytes.CryptDeriveKey is obsolete
 description: Learn about the obsoletion of Rfc2898DeriveBytes.CryptDeriveKey that generates compile-time warning SYSLIB0033.
 ms.date: 09/07/2021
+f1_keywords:
+  - syslib0033
 ---
 # SYSLIB0033: Rfc2898DeriveBytes.CryptDeriveKey is obsolete
 

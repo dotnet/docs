@@ -2,13 +2,15 @@
 title: ".NET Framework initialization errors: Managing the user experience"
 description: Control the user experience when a .NET initialization error occurs, such as when the activation system can't find the right CLR version to load.
 ms.date: "03/30/2017"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "no framework found experience"
   - "initialization errors [.NET Framework]"
   - ".NET Framework, initialization errors"
 ms.assetid: 680a7382-957f-4f6e-b178-4e866004a07e
 ---
 # .NET Framework initialization errors: Managing the user experience
+
+[!INCLUDE [net-framework-specific](../includes/net-framework-specific.md)]
 
 The common language runtime (CLR) activation system determines the version of the CLR that will be used to run managed application code. In some cases, the activation system might not be able to find a version of the CLR to load. This situation typically occurs when an application requires a CLR version that is invalid or not installed on a given computer. If the requested version is not found, the CLR activation system returns an HRESULT error code from the function or interface that was called, and may display an error message to the user who is running the application. This article provides a list of HRESULT codes and explains how you can prevent the error message from being displayed.
 

@@ -1,7 +1,7 @@
 ---
-title: "Local functions - C# Programming Guide"
+title: "Local functions"
 description: Local functions in C# are private methods that are nested in another member and can be called from their containing member.
-ms.date: 10/16/2020
+ms.date: 11/22/2024
 helpviewer_keywords:
   - "local functions [C#]"
 ---
@@ -23,7 +23,7 @@ However, local functions can't be declared inside an expression-bodied member.
 > [!NOTE]
 > In some cases, you can use a lambda expression to implement functionality also supported by a local function. For a comparison, see [Local functions vs. lambda expressions](#local-functions-vs-lambda-expressions).
 
-Local functions make the intent of your code clear. Anyone reading your code can see that the method is not callable except by the containing method. For team projects, they also make it impossible for another developer to mistakenly call the method directly from elsewhere in the class or struct.
+Local functions make the intent of your code clear. Anyone reading your code can see that the method isn't callable except by the containing method. For team projects, they also make it impossible for another developer to mistakenly call the method directly from elsewhere in the class or struct.
 
 ## Local function syntax
 
@@ -35,7 +35,7 @@ A local function is defined as a nested method inside a containing member. Its d
 
 > [!NOTE]
 > The `<parameter-list>` shouldn't contain the parameters named with [contextual keyword](../../language-reference/keywords/index.md#contextual-keywords) `value`.
-> The compiler creates the temporary variable "value", which contains the referenced outter variables, which later causes ambiguity and may also cause an unexpected behaviour.
+> The compiler creates the temporary variable "value", which contains the referenced outer variables, which later causes ambiguity and may also cause an unexpected behaviour.
 
 You can use the following modifiers with a local function:
 
@@ -46,13 +46,13 @@ You can use the following modifiers with a local function:
 
 All local variables that are defined in the containing member, including its method parameters, are accessible in a non-static local function.
 
-Unlike a method definition, a local function definition cannot include the member access modifier. Because all local functions are private, including an access modifier, such as the `private` keyword, generates compiler error CS0106, "The modifier 'private' is not valid for this item."
+Unlike a method definition, a local function definition can't include the member access modifier. Because all local functions are private, including an access modifier, such as the `private` keyword, generates compiler error CS0106, "The modifier 'private' isn't valid for this item."
 
 The following example defines a local function named `AppendPathSeparator` that is private to a method named `GetText`:
 
 :::code language="csharp" source="snippets/local-functions/Program.cs" id="Basic" :::
 
-Beginning with C# 9.0, you can apply attributes to a local function, its parameters and type parameters, as the following example shows:
+You can apply attributes to a local function, its parameters, and type parameters, as the following example shows:
 
 :::code language="csharp" source="snippets/local-functions/Program.cs" id="WithAttributes" :::
 
@@ -72,7 +72,7 @@ If you put iterator logic into a local function, argument validation exceptions 
 
 ## Local functions vs. lambda expressions
 
-At first glance, local functions and [lambda expressions](../../language-reference/operators/lambda-expressions.md) are very similar. In many cases, the choice between using lambda expressions and local functions is a [matter of style and personal preference](../../../fundamentals/code-analysis/style-rules/ide0039.md). However, there are real differences in where you can use one or the other that you should be aware of.
+At first glance, local functions and [lambda expressions](../../language-reference/operators/lambda-expressions.md) are similar. In many cases, the choice between using lambda expressions and local functions is a [matter of style and personal preference](../../../fundamentals/code-analysis/style-rules/ide0039.md). However, there are real differences in where you can use one or the other that you should be aware of.
 
 Let's examine the differences between the local function and lambda expression implementations of the factorial algorithm. Here's the version using a local function:
 
@@ -90,25 +90,25 @@ Local functions are explicitly named like methods. Lambda expressions are anonym
 
 Lambda expressions rely on the type of the `Action`/`Func` variable that they're assigned to determine the argument and return types. In local functions, since the syntax is much like writing a normal method, argument types and return type are already part of the function declaration.
 
-Beginning with C# 10, some lambda expressions have a *natural type*, which enables the compiler to infer the return type and parameter types of the lambda expression.
+Some lambda expressions have a *natural type*, which enables the compiler to infer the return type and parameter types of the lambda expression.
 
 ### Definite assignment
 
-Lambda expressions are objects that are declared and assigned at run time. In order for a lambda expression to be used, it needs to be definitely assigned: the `Action`/`Func` variable that it will be assigned to must be declared and the lambda expression assigned to it. Notice that `LambdaFactorial` must declare and initialize the lambda expression `nthFactorial` before defining it. Not doing so results in a compile time error for referencing `nthFactorial` before assigning it.
+Lambda expressions are objects that are declared and assigned at run time. In order for a lambda expression to be used, it needs to be definitely assigned: the `Action`/`Func` variable that it's assigned to must be declared and the lambda expression assigned to it. Notice that `LambdaFactorial` must declare and initialize the lambda expression `nthFactorial` before defining it. Not doing so results in a compile time error for referencing `nthFactorial` before assigning it.
 
-Local functions are defined at compile time. As they're not assigned to variables, they can be referenced from any code location **where it is in scope**; in our first example `LocalFunctionFactorial`, we could declare our local function either above or below the `return` statement and not trigger any compiler errors.
+Local functions are defined at compile time. As they're not assigned to variables, they can be referenced from any code location **where it is in scope**; in the first example `LocalFunctionFactorial`, you could declare the local function either before or after the `return` statement and not trigger any compiler errors.
 
-These differences mean that recursive algorithms are easier to create using local functions. You can declare and define a local function that calls itself. Lambda expressions must be declared, and assigned a default value before they can be re-assigned to a body that references the same lambda expression.
+These differences mean that recursive algorithms are easier to create using local functions. You can declare and define a local function that calls itself. Lambda expressions must be declared and assigned a default value before they can be reassigned to a body that references the same lambda expression.
 
 ### Implementation as a delegate
 
 Lambda expressions are converted to delegates when they're declared. Local functions are more flexible in that they can be written like a traditional method *or* as a delegate. Local functions are only converted to delegates when ***used*** as a delegate.
 
-If you declare a local function and only reference it by calling it like a method, it will not be converted to a delegate.
+If you declare a local function and only reference it by calling it like a method, it won't be converted to a delegate.
 
 ### Variable capture
 
-The rules of [definite assignment](~/_csharpstandard/standard/variables.md#94-definite-assignment) also affect any variables that are captured by the local function or lambda expression. The compiler can perform static analysis that enables local functions to definitely assign captured variables in the enclosing scope. Consider this example:
+The rules of [definite assignment](~/_csharpstandard/standard/variables.md#94-definite-assignment) also affect any variables captured by the local function or lambda expression. The compiler can perform static analysis that enables local functions to definitely assign captured variables in the enclosing scope. Consider this example:
 
 ```csharp
 int M()
@@ -123,7 +123,7 @@ int M()
 
 The compiler can determine that `LocalFunction` definitely assigns `y` when called. Because `LocalFunction` is called before the `return` statement, `y` is definitely assigned at the `return` statement.
 
-Note that when a local function captures variables in the enclosing scope, the local function is implemented as a delegate type.
+When a local function captures variables in the enclosing scope, the local function is implemented using a closure, like delegate types are.
 
 ### Heap allocations
 
@@ -133,9 +133,9 @@ Consider this async example:
 
 :::code language="csharp" source="snippets/local-functions/Program.cs" id="AsyncWithLambda" :::
 
-The closure for this lambda expression contains the `address`, `index` and `name` variables. In the case of local functions, the object that implements the closure may be a `struct` type. That struct type would be passed by reference to the local function. This difference in implementation would save on an allocation.
+The closure for this lambda expression contains the `address`, `index`, and `name` variables. For local functions, the object that implements the closure can be a `struct` type. That struct type would be passed by reference to the local function. This difference in implementation would save on an allocation.
 
-The instantiation necessary for lambda expressions means extra memory allocations, which may be a performance factor in time-critical code paths. Local functions do not incur this overhead. In the example above, the local functions version has two fewer allocations than the lambda expression version.
+The instantiation necessary for lambda expressions means extra memory allocations, which might be a performance factor in time-critical code paths. Local functions don't incur this overhead.
 
 If you know that your local function won't be converted to a delegate and none of the variables captured by it are captured by other lambdas or local functions that are converted to delegates, you can guarantee that your local function avoids being allocated on the heap by declaring it as a `static` local function.
 
@@ -153,9 +153,9 @@ One final advantage not demonstrated in this sample is that local functions can 
 
 :::code language="csharp" source="snippets/local-functions/Program.cs" id="YieldReturn" :::
 
-The `yield return` statement is not allowed in lambda expressions. For more information, see [compiler error CS1621](../../language-reference/compiler-messages/lambda-expression-errors.md#syntax-limitations-in-lambda-expressions).
+The `yield return` statement isn't allowed in lambda expressions. For more information, see [compiler error CS1621](../../language-reference/compiler-messages/lambda-expression-errors.md#syntax-limitations-in-lambda-expressions).
 
-While local functions may seem redundant to lambda expressions, they actually serve different purposes and have different uses. Local functions are more efficient for the case when you want to write a function that is called only from the context of another method.
+While local functions can seem redundant to lambda expressions, they actually serve different purposes and have different uses. Local functions are more efficient for the case when you want to write a function that is called only from the context of another method.
 
 ## C# language specification
 

@@ -2,11 +2,8 @@
 title: Use GPIO for binary input
 description: Learn how to use GPIO for binary input with the .NET IoT Libraries.
 author: camsoper
-ms.author: casoper
-ms.date: 12/05/2022
+ms.date: 07/31/2024
 ms.topic: tutorial
-ms.prod: dotnet
-recommendations: false
 ---
 
 # Use GPIO for binary input
@@ -105,9 +102,9 @@ Congratulations! You've used GPIO to detect input using the `System.Device.Gpio`
 
 Extending the previous example concept a bit further, let's take a look at how this could be applied to creating a laser tripwire. Building a laser tripwire requires the following additional components:
 
-* KY-008 laser transmitter module
-* Laser receiver sensor module *(see note below)*
-* 2 10K Ω resistors
+- KY-008 laser transmitter module
+- Laser receiver sensor module *(see note below)*
+- 2 10K Ω resistors
 
 > [!NOTE]
 > *Laser receiver sensor module* is the generic name applied to a common module found at many internet retailers. The device may vary in name or manufacturer, but should resemble this image.

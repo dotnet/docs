@@ -27,7 +27,7 @@ If a project targeted .NET 5 or higher, `OutputType` was set to `Exe`, and `UseW
 
 ## Change category
 
-This change may affect [*source compatibility*](../../categories.md#source-compatibility).
+This change might affect [*source compatibility*](../../categories.md#source-compatibility).
 
 ## Reason for change
 

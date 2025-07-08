@@ -4,11 +4,6 @@
   href: intro.md
 - name: Quickstart (Sense HAT)
   href: quickstarts/sensehat.md
-- name: Training
-  expanded: true
-  items:
-  - name: Construct Internet of Things devices using the .NET IoT Libraries
-    href: /training/modules/create-iot-device-dotnet/
 - name: Tutorials
   expanded: true
   items:
@@ -29,5 +24,7 @@
     href: deployment.md
   - name: Debugging
     href: debugging.md
+  - name: Use the IoT libraries on Windows, Linux, and macOS computers
+    href: usb.md
 - name: API Reference
   href: ../../api/index.md?view=iot-dotnet-latest&preserve-view=true

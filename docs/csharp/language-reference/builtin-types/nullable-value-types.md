@@ -1,5 +1,5 @@
 ---
-title: "Nullable value types - C# reference"
+title: "Nullable value types"
 description: Learn about C# nullable value types and how to use them
 ms.date: 11/04/2019
 helpviewer_keywords: 
@@ -96,17 +96,17 @@ The following example shows how to determine whether a <xref:System.Type?display
 
 [!code-csharp-interactive[whether Type is nullable](snippets/shared/NullableValueTypes.cs#IsTypeNullable)]
 
-As the example shows, you use the [typeof](../operators/type-testing-and-cast.md#typeof-operator) operator to create a <xref:System.Type?displayProperty=nameWithType> instance.
+As the example shows, you use the [typeof](../operators/type-testing-and-cast.md#the-typeof-operator) operator to create a <xref:System.Type?displayProperty=nameWithType> instance.
 
 If you want to determine whether an instance is of a nullable value type, don't use the <xref:System.Object.GetType%2A?displayProperty=nameWithType> method to get a <xref:System.Type> instance to be tested with the preceding code. When you call the <xref:System.Object.GetType%2A?displayProperty=nameWithType> method on an instance of a nullable value type, the instance is [boxed](#boxing-and-unboxing) to <xref:System.Object>. As boxing of a non-null instance of a nullable value type is equivalent to boxing of a value of the underlying type, <xref:System.Object.GetType%2A> returns a <xref:System.Type> instance that represents the underlying type of a nullable value type:
 
 [!code-csharp-interactive[GetType example](snippets/shared/NullableValueTypes.cs#GetType)]
 
-Also, don't use the [is](../operators/type-testing-and-cast.md#is-operator) operator to determine whether an instance is of a nullable value type. As the following example shows, you cannot distinguish types of a nullable value type instance and its underlying type instance with the `is` operator:
+Also, don't use the [is](../operators/type-testing-and-cast.md#the-is-operator) operator to determine whether an instance is of a nullable value type. As the following example shows, you cannot distinguish types of a nullable value type instance and its underlying type instance with the `is` operator:
 
 [!code-csharp-interactive[is operator example](snippets/shared/NullableValueTypes.cs#IsOperator)]
 
-Instead use the <xref:System.Nullable.GetUnderlyingType%2A?displayProperty=nameWithType> from the first example and [typeof](../operators/type-testing-and-cast.md#typeof-operator) operator to check if an instance is of a nullable value type.
+Instead use the <xref:System.Nullable.GetUnderlyingType%2A?displayProperty=nameWithType> from the first example and [typeof](../operators/type-testing-and-cast.md#the-typeof-operator) operator to check if an instance is of a nullable value type.
 
 > [!NOTE]
 > The methods described in this section are not applicable in the case of [nullable reference types](nullable-reference-types.md).
@@ -123,7 +123,6 @@ For more information, see the following sections of the [C# language specificati
 
 ## See also
 
-- [C# reference](../index.md)
 - [What exactly does 'lifted' mean?](/archive/blogs/ericlippert/what-exactly-does-lifted-mean)
 - <xref:System.Nullable%601?displayProperty=nameWithType>
 - <xref:System.Nullable?displayProperty=nameWithType>

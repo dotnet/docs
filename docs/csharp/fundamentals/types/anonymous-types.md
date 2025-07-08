@@ -24,20 +24,24 @@ var v = new { Amount = 108, Message = "Hello" };
 Console.WriteLine(v.Amount + v.Message);
 ```
 
-Anonymous types typically are used in the [`select`](../../language-reference/keywords/select-clause.md) clause of a query expression to return a subset of the properties from each object in the source sequence. For more information about queries, see [LINQ in C#](../../linq/index.md).
+Anonymous types are typically used in the [`select`](../../language-reference/keywords/select-clause.md) clause of a query expression to return a subset of the properties from each object in the source sequence. For more information about queries, see [LINQ in C#](../../linq/index.md).
 
 Anonymous types contain one or more public read-only properties. No other kinds of class members, such as methods or events, are valid. The expression that is used to initialize a property cannot be `null`, an anonymous function, or a pointer type.
 
-The most common scenario is to initialize an anonymous type with properties from another type. In the following example, assume that a class exists that is named `Product`. Class `Product` includes `Color` and `Price` properties, together with other properties that you are not interested in. Variable `products` is a collection of `Product` objects. The anonymous type declaration starts with the `new` keyword. The declaration initializes a new type that uses only two properties from `Product`. Using anonymous types causes a smaller amount of data to be returned in the query.
+The most common scenario is to initialize an anonymous type with properties from another type. In the following example, assume that a class exists that is named `Product`. Class `Product` includes `Color` and `Price` properties, together with other properties that you are not interested in:
 
-If you don't specify member names in the anonymous type, the compiler gives the anonymous type members the same name as the property being used to initialize them. You provide a name for a property that's being initialized with an expression, as shown in the previous example. In the following example, the names of the properties of the anonymous type are `Color` and `Price`.
+:::code language="csharp" source="snippets/anonymous-types/Program.cs" ID="ProductDefinition":::
+
+The anonymous type declaration starts with the `new` keyword. The declaration initializes a new type that uses only two properties from `Product`. Using anonymous types causes a smaller amount of data to be returned in the query.
+
+If you don't specify member names in the anonymous type, the compiler gives the anonymous type members the same name as the property being used to initialize them. You provide a name for a property that's being initialized with an expression, as shown in the previous example. In the following example, the names of the properties of the anonymous type are `Color` and `Price`. The instances are item from the `products` collection of `Product` types:
 
 :::code language="csharp" source="snippets/anonymous-types/Program.cs" ID="snippet81":::
 
 > [!TIP]
 > You can use .NET style rule [IDE0037](../../../fundamentals/code-analysis/style-rules/ide0037.md) to enforce whether inferred or explicit member names are preferred.
 
-It is also possible to define a field by object of another type: class, struct or even another anonymous type. It is done by using the variable holding this object just like in the following example, where two anonymous types are created using already instantiated user-defined types. In both cases the `product` field in the anonymous type `shipment` and `shipmentWithBonus` will be of type `Product` containing it's default values of each field. And the `bonus` field will be of anonymous type created by the compiler.
+It is also possible to define a field by object of another type: class, struct or even another anonymous type. It is done by using the variable holding this object just like in the following example, where two anonymous types are created using already instantiated user-defined types. In both cases the `product` field in the anonymous type `shipment` and `shipmentWithBonus` will be of type `Product` containing its default values of each field. And the `bonus` field will be of anonymous type created by the compiler.
 
 :::code language="csharp" source="snippets/anonymous-types/Program.cs" ID="snippet03":::
 
@@ -60,6 +64,10 @@ Anonymous types support non-destructive mutation in the form of [with expression
 You cannot declare a field, a property, an event, or the return type of a method as having an anonymous type. Similarly, you cannot declare a formal parameter of a method, property, constructor, or indexer as having an anonymous type. To pass an anonymous type, or a collection that contains anonymous types, as an argument to a method, you can declare the parameter as type `object`. However, using `object` for anonymous types defeats the purpose of strong typing. If you must store query results or pass them outside the method boundary, consider using an ordinary named struct or class instead of an anonymous type.
 
 Because the <xref:System.Object.Equals%2A> and <xref:System.Object.GetHashCode%2A> methods on anonymous types are defined in terms of the `Equals` and `GetHashCode` methods of the properties, two instances of the same anonymous type are equal only if all their properties are equal.
+
+> [!NOTE]
+> The [accessibility level](../../programming-guide/classes-and-structs/access-modifiers.md) of an anonymous type is `internal`, hence two anonymous types defined in different assemblies are not of the same type.
+> Therefore instances of anonymous types can't be equal to each other when defined in different assemblies, even when having all their properties equal.
 
 Anonymous types do override the <xref:System.Object.ToString%2A> method, concatenating the name and `ToString` output of every property surrounded by curly braces.
 

@@ -1,12 +1,13 @@
 ---
 title: How the .NET Runtime and SDK are versioned
 description: This article explains how the .NET SDK and Runtime are versioned (similar to semantic versioning).
+ms.custom: updateeachrelease
 ms.date: 04/26/2023
 ---
 
 # How .NET is versioned
 
-The [.NET Runtime and the .NET SDK](../introduction.md) add new features at different frequencies. In general, the SDK is updated more frequently than the Runtime. This article explains the runtime and the SDK version numbers.
+The [.NET Runtime and the .NET SDK](../introduction.md) add new features at different frequencies. In general, the SDK is updated more frequently than the runtime. This article explains the runtime and the SDK version numbers.
 
 .NET releases a new major version every November. Even-numbered releases, such as .NET 6 or .NET 8, are long-term supported (LTS). LTS releases get free support and patches for three years. Odd-numbered releases are standard-term support. Standard-term support releases get free support and patches for 18 months.
 
@@ -51,16 +52,16 @@ MAJOR.MINOR.PATCH[-PRERELEASE-BUILDNUMBER]
 
 The optional `PRERELEASE` and `BUILDNUMBER` parts are never part of supported releases and only exist on nightly builds, local builds from source targets, and unsupported preview releases.
 
-### Understand runtime version number changes
+### Runtime version number changes
 
 - `MAJOR` is incremented once a year and may contain:
 
   - Significant changes in the product, or a new product direction.
   - API introduced breaking changes. There's a high bar to accepting breaking changes.
   - A newer `MAJOR` version of an existing dependency is adopted.
-  
-  Major releases happen once a year, even-numbered versions are long-term supported (LTS) releases. The first LTS release using this versioning scheme is .NET 6. The latest non-LTS version is .NET 5.
-  
+
+  Major releases happen once a year, even-numbered versions are long-term supported (LTS) releases. The first LTS release using this versioning scheme is .NET 6. The latest non-LTS version is .NET 9.
+
 - `MINOR` is incremented when:
 
   - Public API surface area is added.
@@ -79,7 +80,7 @@ When there are multiple changes, the highest element affected by individual chan
 
 ## Version numbers in file names
 
-The files downloaded for .NET carry the version, for example, `dotnet-sdk-5.0.301-win10-x64.exe`.
+The files downloaded for .NET carry the version, for example, `dotnet-sdk-5.0.301-win-x64.exe`.
 
 ### Preview versions
 
@@ -89,17 +90,17 @@ Preview versions have a `-preview.[number].[build]` appended to the version numb
 
 After a release goes out, the release branches generally stop producing daily builds and instead start producing servicing builds. Servicing versions have a `-servicing-[number]` appended to the version. For example, `5.0.1-servicing-006924`.
 
-## .NET runtime compatibility
+## .NET Runtime compatibility
 
-The .NET runtime maintains a high level of compatibility between versions. .NET apps should, by and large, continue to work after upgrading to a new major .NET runtime version.
+The .NET Runtime maintains a high level of compatibility between versions. .NET apps should, by and large, continue to work after upgrading to a new major .NET Runtime version.
 
-Each major .NET runtime version contains intentional, carefully vetted, and documented [breaking changes](../compatibility/breaking-changes.md). The documented breaking changes aren't the only source of issues that can affect an app after upgrade. For example, a performance improvement in the .NET runtime (that's not considered a breaking change) can expose latent app threading bugs that cause the app to not work on that version. It's expected for large apps to require a few fixes after upgrading to a new .NET runtime major version.
+Each major .NET Runtime version contains intentional, carefully vetted, and documented [breaking changes](../compatibility/breaking-changes.md). The documented breaking changes aren't the only source of issues that can affect an app after upgrade. For example, a performance improvement in the .NET Runtime (that's not considered a breaking change) can expose latent app threading bugs that cause the app to not work on that version. It's expected for large apps to require a few fixes after upgrading to a new .NET Runtime major version.
 
-By default, .NET apps are configured to run on a given .NET runtime major version, so recompilation is highly recommended to upgrade the app to run on a new .NET runtime major version. Then retest the app after upgrading to identify any issues.
+By default, .NET apps are configured to run on a given .NET Runtime major version, so recompilation is highly recommended to upgrade the app to run on a new .NET Runtime major version. Then retest the app after upgrading to identify any issues.
 
-Suppose upgrading via app recompilation isn't feasible. In that case, the .NET runtime provides [additional settings](selection.md#control-roll-forward-behavior) to enable an app to run on a higher major .NET runtime version than the version it was compiled for. These settings don't change the risks involved in upgrading the app to a higher major .NET runtime version, and it's still required to retest the app post upgrade.
+Suppose upgrading via app recompilation isn't feasible. In that case, the .NET Runtime provides [additional settings](selection.md#control-roll-forward-behavior) to enable an app to run on a higher major .NET Runtime version than the version it was compiled for. These settings don't change the risks involved in upgrading the app to a higher major .NET Runtime version, and it's still required to retest the app post upgrade.
 
-The .NET runtime supports loading libraries that target older .NET runtime versions. An app that's upgraded to a newer major .NET runtime version can reference libraries and NuGet packages that target older .NET runtime versions. It's unnecessary to simultaneously upgrade the target runtime version of all libraries and NuGet packages referenced by the app.
+The .NET Runtime supports loading libraries that target older .NET Runtime versions. An app that's upgraded to a newer major .NET Runtime version can reference libraries and NuGet packages that target older .NET Runtime versions. It's unnecessary to simultaneously upgrade the target runtime version of all libraries and NuGet packages referenced by the app.
 
 ## See also
 

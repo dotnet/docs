@@ -5,9 +5,8 @@ ms.date: "03/30/2017"
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: 0b121b71-78f8-4ae2-9aa1-0b2e15778e57
 ---
-# Performance Counters in ADO.NET
+# Performance counters in ADO.NET
 
 ADO.NET 2.0 introduced expanded support for performance counters that includes support for both <xref:System.Data.SqlClient> and <xref:System.Data.OracleClient>. The <xref:System.Data.SqlClient> performance counters available in previous versions of ADO.NET have been deprecated and replaced with the new performance counters discussed in this topic. You can use ADO.NET performance counters to monitor the status of your application and the connection resources that it uses. Performance counters can be monitored by using Windows Performance Monitor or can be accessed programmatically using the <xref:System.Diagnostics.PerformanceCounter> class in the <xref:System.Diagnostics> namespace.
 
@@ -15,28 +14,28 @@ ADO.NET 2.0 introduced expanded support for performance counters that includes s
 
  Currently there are 14 different performance counters available for <xref:System.Data.SqlClient> and <xref:System.Data.OracleClient> as described in the following table. Note that the names for the individual counters are not localized across regional versions of the Microsoft .NET Framework.
 
-|Performance counter|Description|
-|-------------------------|-----------------|
-|`HardConnectsPerSecond`|The number of connections per second that are being made to a database server.|
-|`HardDisconnectsPerSecond`|The number of disconnects per second that are being made to a database server.|
+| Performance counter        | Description                                                                    |
+|----------------------------|--------------------------------------------------------------------------------|
+| `HardConnectsPerSecond`    | The number of connections per second that are being made to a database server. |
+| `HardDisconnectsPerSecond` | The number of disconnects per second that are being made to a database server. |
 |`NumberOfActiveConnectionPoolGroups`|The number of unique connection pool groups that are active. This counter is controlled by the number of unique connection strings that are found in the AppDomain.|
 |`NumberOfActiveConnectionPools`|The total number of connection pools.|
-|`NumberOfActiveConnections`|The number of active connections that are currently in use. **Note:**  This performance counter is not enabled by default. To enable this performance counter, see [Activating Off-By-Default Counters](#ActivatingOffByDefault).|
-|`NumberOfFreeConnections`|The number of connections available for use in the connection pools. **Note:**  This performance counter is not enabled by default. To enable this performance counter, see [Activating Off-By-Default Counters](#ActivatingOffByDefault).|
+|`NumberOfActiveConnections`|The number of active connections that are currently in use. **Note:**  This performance counter is not enabled by default. To enable this performance counter, see [Activating Off-By-Default Counters](#activating-off-by-default-counters).|
+|`NumberOfFreeConnections`|The number of connections available for use in the connection pools. **Note:**  This performance counter is not enabled by default. To enable this performance counter, see [Activating Off-By-Default Counters](#activating-off-by-default-counters).|
 |`NumberOfInactiveConnectionPoolGroups`|The number of unique connection pool groups that are marked for pruning. This counter is controlled by the number of unique connection strings that are found in the AppDomain.|
 |`NumberOfInactiveConnectionPools`|The number of inactive connection pools that have not had any recent activity and are waiting to be disposed.|
 |`NumberOfNonPooledConnections`|The number of active connections that are not pooled.|
 |`NumberOfPooledConnections`|The number of active connections that are being managed by the connection pooling infrastructure.|
 |`NumberOfReclaimedConnections`|The number of connections that have been reclaimed through garbage collection where `Close` or `Dispose` was not called by the application. Not explicitly closing or disposing connections hurts performance.|
 |`NumberOfStasisConnections`|The number of connections currently awaiting completion of an action and which are therefore unavailable for use by your application.|
-|`SoftConnectsPerSecond`|The number of active connections being pulled from the connection pool. **Note:**  This performance counter is not enabled by default. To enable this performance counter, see [Activating Off-By-Default Counters](#ActivatingOffByDefault).|
-|`SoftDisconnectsPerSecond`|The number of active connections that are being returned to the connection pool. **Note:**  This performance counter is not enabled by default. To enable this performance counter, see [Activating Off-By-Default Counters](#ActivatingOffByDefault).|
+|`SoftConnectsPerSecond`|The number of active connections being pulled from the connection pool. **Note:**  This performance counter is not enabled by default. To enable this performance counter, see [Activating Off-By-Default Counters](#activating-off-by-default-counters).|
+|`SoftDisconnectsPerSecond`|The number of active connections that are being returned to the connection pool. **Note:**  This performance counter is not enabled by default. To enable this performance counter, see [Activating Off-By-Default Counters](#activating-off-by-default-counters).|
 
 ### Connection Pool Groups and Connection Pools
 
- When using Windows Authentication (integrated security), you must monitor both the `NumberOfActiveConnectionPoolGroups` and `NumberOfActiveConnectionPools` performance counters. The reason is that connection pool groups map to unique connection strings. When integrated security is used, connection pools map to connection strings and additionally create separate pools for individual Windows identities. For example, if Fred and Julie, each within the same AppDomain, both use the connection string `"Data Source=MySqlServer;Integrated Security=true"`, a connection pool group is created for the connection string, and two additional pools are created, one for Fred and one for Julie. If John and Martha use a connection string with an identical SQL Server login, `"Data Source=MySqlServer;User Id=lowPrivUser;Password=[PLACEHOLDER]"`, then only a single pool is created for the **lowPrivUser** identity.
+When using Windows Authentication (integrated security), you must monitor both the `NumberOfActiveConnectionPoolGroups` and `NumberOfActiveConnectionPools` performance counters. The reason is that connection pool groups map to unique connection strings. When integrated security is used, connection pools map to connection strings and additionally create separate pools for individual Windows identities. For example, if Fred and Julie, each within the same AppDomain, both use the connection string `"Data Source=MySqlServer;Integrated Security=true"`, a connection pool group is created for the connection string, and two additional pools are created, one for Fred and one for Julie. If John and Martha use a connection string with an identical SQL Server login, `"Data Source=MySqlServer;User Id=lowPrivUser;Password=[PLACEHOLDER]"`, then only a single pool is created for the **lowPrivUser** identity.
 
-<a name="ActivatingOffByDefault"></a>
+[!INCLUDE [managed-identities](../../../includes/managed-identities.md)]
 
 ### Activating Off-By-Default Counters
 
@@ -200,27 +199,6 @@ Class Program
         Next
         Console.WriteLine("---------------------------")
     End Sub
-
-    Private Shared Function GetIntegratedSecurityConnectionString() As String
-        ' To avoid storing the connection string in your code,
-        ' you can retrieve it from a configuration file.
-        Return ("Data Source=.\SqlExpress;Integrated Security=True;" &
-          "Initial Catalog=AdventureWorks")
-    End Function
-
-    Private Shared Function GetSqlConnectionString() As String
-        ' To avoid storing the connection string in your code,
-        ' you can retrieve it from a configuration file.
-        Return ("Data Source=.\SqlExpress;User Id=LowPriv;Password=[PLACEHOLDER];" &
-          "Initial Catalog=AdventureWorks")
-    End Function
-
-    Private Shared Function GetSqlConnectionStringDifferent() As String
-        ' To avoid storing the connection string in your code,
-        ' you can retrieve it from a configuration file.
-        Return ("Initial Catalog=AdventureWorks;Data Source=.\SqlExpress;" & _
-          "User Id=LowPriv;Password=[PLACEHOLDER];")
-    End Function
 End Class
 ```
 
@@ -368,29 +346,6 @@ class Program
             Console.WriteLine("{0} = {1}", p.CounterName, p.NextValue());
         }
         Console.WriteLine("---------------------------");
-    }
-
-    private static string GetIntegratedSecurityConnectionString()
-    {
-        // To avoid storing the connection string in your code,
-        // you can retrieve it from a configuration file.
-        return @"Data Source=.\SqlExpress;Integrated Security=True;" +
-          "Initial Catalog=AdventureWorks";
-    }
-    private static string GetSqlConnectionString()
-    {
-        // To avoid storing the connection string in your code,
-        // you can retrieve it from a configuration file.
-        return @"Data Source=.\SqlExpress;User Id=LowPriv;Password=[PLACEHOLDER];" +
-          "Initial Catalog=AdventureWorks";
-    }
-
-    private static string GetSqlConnectionStringDifferent()
-    {
-        // To avoid storing the connection string in your code,
-        // you can retrieve it from a configuration file.
-        return @"Initial Catalog=AdventureWorks;Data Source=.\SqlExpress;" +
-          "User Id=LowPriv;Password=[PLACEHOLDER];";
     }
 }
 ```

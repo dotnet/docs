@@ -6,7 +6,6 @@ helpviewer_keywords:
   - "buffers [.NET]"
   - "I/O [.NET], buffers"
 author: rick-anderson
-ms.author: riande
 ---
 # Work with Buffers in .NET
 
@@ -51,16 +50,16 @@ This method of writing uses the `Memory<T>`/`Span<T>` buffer provided by the `IB
 
 The third representation is the most interesting one as it has performance implications on various operations on the `ReadOnlySequence<T>`:
 
-|Representation|Operation|Complexity|
----|---|---|
-|`T[]`/`ReadOnlyMemory<T>`|`Length`|`O(1)`|
-|`T[]`/`ReadOnlyMemory<T>`|`GetPosition(long)`|`O(1)`|
-|`T[]`/`ReadOnlyMemory<T>`|`Slice(int, int)`|`O(1)`|
-|`T[]`/`ReadOnlyMemory<T>`|`Slice(SequencePosition,  SequencePosition)`|`O(1)`|
-|`ReadOnlySequenceSegment<T>`|`Length`|`O(1)`|
-|`ReadOnlySequenceSegment<T>`|`GetPosition(long)`|`O(number of segments)`|
-|`ReadOnlySequenceSegment<T>`|`Slice(int, int)`|`O(number of segments)`|
-|`ReadOnlySequenceSegment<T>`|`Slice(SequencePosition, SequencePosition)`|`O(1)`|
+| Representation               | Operation                                    | Complexity              |
+|------------------------------|----------------------------------------------|-------------------------|
+| `T[]`/`ReadOnlyMemory<T>`    | `Length`                                     | `O(1)`                  |
+| `T[]`/`ReadOnlyMemory<T>`    | `GetPosition(long)`                          | `O(1)`                  |
+| `T[]`/`ReadOnlyMemory<T>`    | `Slice(int, int)`                            | `O(1)`                  |
+| `T[]`/`ReadOnlyMemory<T>`    | `Slice(SequencePosition,  SequencePosition)` | `O(1)`                  |
+| `ReadOnlySequenceSegment<T>` | `Length`                                     | `O(1)`                  |
+| `ReadOnlySequenceSegment<T>` | `GetPosition(long)`                          | `O(number of segments)` |
+| `ReadOnlySequenceSegment<T>` | `Slice(int, int)`                            | `O(number of segments)` |
+| `ReadOnlySequenceSegment<T>` | `Slice(SequencePosition, SequencePosition)`  | `O(1)`                  |
 
 Because of this mixed representation, the `ReadOnlySequence<T>` exposes indexes as `SequencePosition` instead of an integer. A `SequencePosition`:
 
@@ -141,7 +140,7 @@ There are several unusual outcomes when dealing with a `ReadOnlySequence<T>`/`Se
 - Two `SequencePosition` can't be compared, making it difficult to:
   - Know if one position is greater than or less than another position.
   - Write some parsing algorithms.
-- `ReadOnlySequence<T>` is bigger than an object reference and should be passed by [in](../../csharp/language-reference/keywords/in-parameter-modifier.md) or [ref](../../csharp/language-reference/keywords/ref.md) where possible. Passing `ReadOnlySequence<T>` by `in` or `ref` reduces copies of the [struct](../../csharp/language-reference/builtin-types/struct.md).
+- `ReadOnlySequence<T>` is bigger than an object reference and should be passed by [in](../../csharp/language-reference/keywords/method-parameters.md#in-parameter-modifier) or [ref](../../csharp/language-reference/keywords/ref.md) where possible. Passing `ReadOnlySequence<T>` by `in` or `ref` reduces copies of the [struct](../../csharp/language-reference/builtin-types/struct.md).
 - Empty segments:
   - Are valid within a `ReadOnlySequence<T>`.
   - Can appear when iterating using the `ReadOnlySequence<T>.TryGet` method.

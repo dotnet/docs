@@ -3,7 +3,7 @@ title: Dependency injection
 description: Learn how to use dependency injection within your .NET apps. Discover how to registration services, define service lifetimes, and express dependencies in C#.
 author: IEvangelist
 ms.author: dapine
-ms.date: 07/19/2023
+ms.date: 07/18/2024
 ms.topic: overview
 ---
 
@@ -28,14 +28,14 @@ A class can create an instance of the `MessageWriter` class to make use of its `
 ```csharp
 public class Worker : BackgroundService
 {
-    private readonly MessageWriter _messageWriter = new MessageWriter();
+    private readonly MessageWriter _messageWriter = new();
 
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
         while (!stoppingToken.IsCancellationRequested)
         {
             _messageWriter.Write($"Worker running at: {DateTimeOffset.Now}");
-            await Task.Delay(1000, stoppingToken);
+            await Task.Delay(1_000, stoppingToken);
         }
     }
 }
@@ -61,7 +61,7 @@ This interface is implemented by a concrete type, `MessageWriter`:
 
 :::code language="csharp" source="snippets/configuration/dependency-injection/MessageWriter.cs":::
 
-The sample code registers the `IMessageWriter` service with the concrete type `MessageWriter`. The <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton%2A> method registers the service with a singleton lifetime, the lifetime of a single request. [Service lifetimes](#service-lifetimes) are described later in this article.
+The sample code registers the `IMessageWriter` service with the concrete type `MessageWriter`. The <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton%2A> method registers the service with a singleton lifetime, the lifetime of the app. [Service lifetimes](#service-lifetimes) are described later in this article.
 
 :::code language="csharp" source="snippets/configuration/dependency-injection/Program.cs" highlight="5-8":::
 
@@ -91,7 +91,7 @@ The implementation of the `IMessageWriter` interface can be improved by using th
 The updated `AddSingleton` method registers the new `IMessageWriter` implementation:
 
 ```csharp
-builder.Services.AddSingleton<IMessageWriter, LoggingMessageWriter>());
+builder.Services.AddSingleton<IMessageWriter, LoggingMessageWriter>();
 ```
 
 The <xref:Microsoft.Extensions.Hosting.HostApplicationBuilder> (`builder`) type is part of the `Microsoft.Extensions.Hosting` NuGet package.
@@ -110,25 +110,21 @@ With dependency injection terminology, a service:
 The framework provides a robust logging system. The `IMessageWriter` implementations shown in the preceding examples were written to demonstrate basic DI, not to implement logging. Most apps shouldn't need to write loggers. The following code demonstrates using the default logging, which only requires the `Worker` to be registered as a hosted service <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionHostedServiceExtensions.AddHostedService%2A>:
 
 ```csharp
-public class Worker : BackgroundService
+public sealed class Worker(ILogger<Worker> logger) : BackgroundService
 {
-    private readonly ILogger<Worker> _logger;
-
-    public Worker(ILogger<Worker> logger) =>
-        _logger = logger;
-
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
         while (!stoppingToken.IsCancellationRequested)
         {
-            _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
+            logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
+
             await Task.Delay(1_000, stoppingToken);
         }
     }
 }
 ```
 
-Using the preceding code, there is no need to update `Program.cs`, because logging is provided by the framework.
+Using the preceding code, there is no need to update _Program.cs_, because logging is provided by the framework.
 
 ## Multiple constructor discovery rules
 
@@ -234,17 +230,17 @@ The following table lists a small sample of these framework-registered services:
 
 Services can be registered with one of the following lifetimes:
 
-- Transient
-- Scoped
-- Singleton
+- [Transient](#transient)
+- [Scoped](#scoped)
+- [Singleton](#singleton)
 
 The following sections describe each of the preceding lifetimes. Choose an appropriate lifetime for each registered service.
 
 ### Transient
 
-Transient lifetime services are created each time they're requested from the service container. This lifetime works best for lightweight, stateless services. Register transient services with <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddTransient%2A>.
+Transient lifetime services are created each time they're requested from the service container. To register a service as _transient_, call <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddTransient%2A>.
 
-In apps that process requests, transient services are disposed at the end of the request.
+In apps that process requests, transient services are disposed at the end of the request. This lifetime incurs per/request allocations, as services are resolved and constructed every time. For more information, see [Dependency Injection Guidelines: IDisposable guidance for transient and shared instances](dependency-injection-guidelines.md#idisposable-guidance-for-transient-and-shared-instances).
 
 ### Scoped
 
@@ -252,13 +248,19 @@ For web applications, a scoped lifetime indicates that services are created once
 
 In apps that process requests, scoped services are disposed at the end of the request.
 
-When using Entity Framework Core, the <xref:Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions.AddDbContext%2A> extension method registers `DbContext` types with a scoped lifetime by default.
-
 > [!NOTE]
-> Do ***not*** resolve a scoped service from a singleton and be careful not to do so indirectly, for example, through a transient service. It may cause the service to have incorrect state when processing subsequent requests. It's fine to:
->
-> - Resolve a singleton service from a scoped or transient service.
-> - Resolve a scoped service from another scoped or transient service.
+> When using Entity Framework Core, the <xref:Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions.AddDbContext%2A> extension method registers `DbContext` types with a scoped lifetime by default.
+
+A scoped service should always be used from within a scope—either an implicit scope (such as ASP.NET Core's per-request scope) or an explicit scope created with <xref:Microsoft.Extensions.DependencyInjection.IServiceScopeFactory.CreateScope?displayProperty=nameWithType>.
+
+Do ***not*** resolve a scoped service directly from a singleton using constructor injection or by requesting it from <xref:System.IServiceProvider> in the singleton. Doing so causes the scoped service to behave like a singleton, which can lead to incorrect state when processing subsequent requests.
+
+It's acceptable to resolve a scoped service within a singleton if you create and use an explicit scope with <xref:Microsoft.Extensions.DependencyInjection.IServiceScopeFactory>.
+
+It's also fine to:
+
+- Resolve a singleton service from a scoped or transient service.
+- Resolve a scoped service from another scoped or transient service.
 
 By default, in the development environment, resolving a service from another service with a longer lifetime throws an exception. For more information, see [Scope validation](#scope-validation).
 
@@ -289,7 +291,19 @@ The framework provides service registration extension methods that are useful in
 
 For more information on type disposal, see the [Disposal of services](dependency-injection-guidelines.md#disposal-of-services) section.
 
-Registering a service with only an implementation type is equivalent to registering that service with the same implementation and service type. This is why multiple implementations of a service cannot be registered using the methods that don't take an explicit service type. These methods can register multiple *instances* of a service, but they will all have the same *implementation* type.
+Registering a service with only an implementation type is equivalent to registering that service with the same implementation and service type. For example, consider the following code:
+
+```csharp
+services.AddSingleton<ExampleService>();
+```
+
+This is equivalent to registering the service with both the service and implementation of the same types:
+
+```csharp
+services.AddSingleton<ExampleService, ExampleService>();
+```
+
+This equivalency is why multiple implementations of a service can't be registered using the methods that don't take an explicit service type. These methods can register multiple *instances* of a service, but they will all have the same *implementation* type.
 
 Any of the above service registration methods can be used to register multiple service instances of the same service type. In the following example, `AddSingleton` is called twice with `IMessageWriter` as the service type. The second call to `AddSingleton` overrides the previous one when resolved as `IMessageWriter` and adds to the previous one when multiple services are resolved via `IEnumerable<IMessageWriter>`. Services appear in the order they were registered when resolved via `IEnumerable<{SERVICE}>`.
 
@@ -382,7 +396,7 @@ When services are resolved by `ActivatorUtilities`, constructor injection requir
 
 ## Scope validation
 
-When the app runs in the `Development` environment and calls [CreateApplicationBuilder](generic-host.md#default-builder-settings) to build the host, the default service provider performs checks to verify that:
+When the app runs in the `Development` environment and calls [CreateApplicationBuilder](generic-host.md#host-builder-settings) to build the host, the default service provider performs checks to verify that:
 
 - Scoped services aren't resolved from the root service provider.
 - Scoped services aren't injected into singletons.
@@ -397,7 +411,7 @@ The <xref:Microsoft.Extensions.DependencyInjection.IServiceScopeFactory> is alwa
 
 To achieve scoping services within implementations of <xref:Microsoft.Extensions.Hosting.IHostedService>, such as the <xref:Microsoft.Extensions.Hosting.BackgroundService>, do *not* inject the service dependencies via constructor injection. Instead, inject <xref:Microsoft.Extensions.DependencyInjection.IServiceScopeFactory>, create a scope, then resolve dependencies from the scope to use the appropriate service lifetime.
 
-:::code language="csharp" source="snippets/configuration/worker-scope/Worker.cs" highlight="6,8-9,15":::
+:::code language="csharp" source="snippets/configuration/worker-scope/Worker.cs":::
 
 In the preceding code, while the app is running, the background service:
 
@@ -408,8 +422,37 @@ In the preceding code, while the app is running, the background service:
 
 From the sample source code, you can see how implementations of <xref:Microsoft.Extensions.Hosting.IHostedService> can benefit from scoped service lifetimes.
 
+## Keyed services
+
+Starting with .NET 8, there is support for service registrations and lookups based on a key, meaning it's possible to register multiple services with a different key, and use this key for the lookup.
+
+For example, consider the case where you have different implementations of the interface `IMessageWriter`: `MemoryMessageWriter` and `QueueMessageWriter`.
+
+You can register these services using the overload of the service registration methods (seen earlier) that supports a key as a parameter:
+
+```csharp
+services.AddKeyedSingleton<IMessageWriter, MemoryMessageWriter>("memory");
+services.AddKeyedSingleton<IMessageWriter, QueueMessageWriter>("queue");
+```
+
+The `key` isn't limited to `string`, it can be any `object` you want, as long as the type correctly implements `Equals`.
+
+In the constructor of the class that uses `IMessageWriter`, you add the <xref:Microsoft.Extensions.DependencyInjection.FromKeyedServicesAttribute> to specify the key of the service to resolve:
+
+```csharp
+public class ExampleService
+{
+    public ExampleService(
+        [FromKeyedServices("queue")] IMessageWriter writer)
+    {
+        // Omitted for brevity...
+    }
+}
+```
+
 ## See also
 
+- [Understand dependency injection basics in .NET](dependency-injection-basics.md)
 - [Use dependency injection in .NET](dependency-injection-usage.md)
 - [Dependency injection guidelines](dependency-injection-guidelines.md)
 - [Dependency injection in ASP.NET Core](/aspnet/core/fundamentals/dependency-injection)

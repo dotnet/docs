@@ -1,20 +1,19 @@
 ---
-title: "Indexers in Interfaces - C# Programming Guide"
+title: "Indexers in Interfaces"
 description: Indexers can be declared on an interface in C#. Learn how accessors of interface indexers differ from the accessors of class indexers.
-ms.date: 02/08/2020
+ms.date: 08/20/2024
 helpviewer_keywords: 
   - "indexers [C#], in interfaces"
   - "accessors [C#], indexers"
-ms.assetid: e16b54bd-4a83-4f52-bd75-65819fca79e8
 ---
 # Indexers in Interfaces (C# Programming Guide)
 
 Indexers can be declared on an [interface](../../language-reference/keywords/interface.md). Accessors of interface indexers differ from the accessors of [class](../../language-reference/keywords/class.md) indexers in the following ways:
 
-- Interface accessors do not use modifiers.
-- An interface accessor typically does not have a body.
+- Interface accessors don't use modifiers.
+- An interface accessor typically doesn't have a body.
 
-The purpose of the accessor is to indicate whether the indexer is read-write, read-only, or write-only. You may provide an implementation for an indexer defined in an interface, but this is rare. Indexers typically define an API to access data fields, and data fields cannot be defined in an interface.
+The purpose of the accessor is to indicate whether the indexer is read-write, read-only, or write-only. You can provide an implementation for an indexer defined in an interface, but this is rare. Indexers typically define an API to access data fields, and data fields can't be defined in an interface.
 
 The following is an example of an interface indexer accessor:
 
@@ -46,7 +45,7 @@ string IEmployee.this[int index]
 }
 ```
 
-implements the indexer on the `IEmployee` interface, while the following declaration:
+Implements the indexer on the `IEmployee` interface, while the following declaration:
 
 ```csharp
 string ICitizen.this[int index]
@@ -54,11 +53,10 @@ string ICitizen.this[int index]
 }
 ```
 
-implements the indexer on the `ICitizen` interface.
+Implements the indexer on the `ICitizen` interface.
 
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Indexers](./index.md)
 - [Properties](../classes-and-structs/properties.md)
 - [Interfaces](../../fundamentals/types/interfaces.md)

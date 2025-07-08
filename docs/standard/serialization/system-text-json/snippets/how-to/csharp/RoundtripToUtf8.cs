@@ -22,7 +22,7 @@ namespace RoundtripToUtf8Bytes1
             };
 
             // <Serialize>
-            byte[] jsonUtf8Bytes =JsonSerializer.SerializeToUtf8Bytes(weatherForecast);
+            byte[] jsonUtf8Bytes = JsonSerializer.SerializeToUtf8Bytes(weatherForecast);
             // </Serialize>
 
             Console.WriteLine(Encoding.UTF8.GetString(jsonUtf8Bytes));

@@ -76,7 +76,7 @@ The `Console` provider logs output to the console.
 
 ### Debug
 
-The `Debug` provider writes log output by using the <xref:System.Diagnostics.Debug?displayProperty=fullName> class, specifically through the <xref:System.Diagnostics.Debug.WriteLine%2A?displayProperty=nameWithType> method and only when the debugger is attached. The <xref:Microsoft.Extensions.Logging.Debug.DebugLoggerProvider> creates <xref:Microsoft.Extensions.Logging.Debug.DebugLogger> instances, which are implementations of the `ILogger` interface.
+The `Debug` provider writes log output by using the <xref:System.Diagnostics.Debug?displayProperty=fullName> class, specifically through the <xref:System.Diagnostics.Debug.WriteLine%2A?displayProperty=nameWithType> method and only when the debugger is attached. The <xref:Microsoft.Extensions.Logging.Debug.DebugLoggerProvider> creates instances of a logger class that implements the `ILogger` interface.
 
 ### Event Source
 
@@ -143,7 +143,7 @@ builder.Services.Configure<AzureFileLoggerOptions>(options =>
     options.FileSizeLimit = 50 * 1024;
     options.RetainedFileCountLimit = 5;
 });
-builder.ServicesConfigure<AzureBlobLoggerOptions>(options =>
+builder.Services.Configure<AzureBlobLoggerOptions>(options =>
 {
     options.BlobName = "log.txt";
 });
@@ -207,6 +207,7 @@ For more information, see [Implement a custom logging provider in .NET](custom-l
 Here are some third-party logging frameworks that work with various .NET workloads:
 
 - [elmah.io](https://elmah.io) ([GitHub repo](https://github.com/elmahio/Elmah.Io.Extensions.Logging))
+- [EFLogger](https://github.com/msmolka/ZNetCS.AspNetCore.Logging.EntityFrameworkCore/blob/master/README.md) ([GitHub repo](https://github.com/msmolka/ZNetCS.AspNetCore.Logging.EntityFrameworkCore))
 - [Gelf](https://go2docs.graylog.org/5-0/getting_in_log_data/ingest_gelf.html) ([GitHub repo](https://github.com/mattwcole/gelf-extensions-logging))
 - [JSNLog](http://jsnlog.com) ([GitHub repo](https://github.com/mperdeck/jsnlog))
 - [KissLog.net](https://kisslog.net) ([GitHub repo](https://github.com/catalingavan/KissLog-net))

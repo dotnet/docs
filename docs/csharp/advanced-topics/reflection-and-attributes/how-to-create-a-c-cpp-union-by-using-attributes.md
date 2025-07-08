@@ -1,5 +1,5 @@
 ---
-title: "How to create a C/C++ union by using attributes (C#)"
+title: "How to create a C/C++ union by using attributes"
 description: Learn how to use attributes to customize how structs are laid out in memory in C#. This example implements the equivalent of a union from C/C++.
 ms.date: 03/15/2023
 ms.topic: how-to

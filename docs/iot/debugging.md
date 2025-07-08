@@ -2,10 +2,8 @@
 title: Debug .NET apps on ARM single-board computers
 description: Learn how to debug .NET apps on ARM single-board computers (SBCs) such as Raspberry Pi.
 author: camsoper
-ms.author: casoper
-ms.date: 10/07/2022
+ms.date: 07/31/2024
 ms.topic: how-to
-ms.prod: dotnet
 zone_pivot_groups: ide-set-one
 ---
 
@@ -39,7 +37,7 @@ Debugging .NET on single-board computers from Visual Studio Code requires config
 SSH is required for remote debugging. To enable SSH on Raspberry Pi, [refer to *Enable SSH* in the Raspberry Pi documentation](https://www.raspberrypi.com/documentation/computers/remote-access.html#setting-up-an-ssh-server). Ensure that you have configured [passwordless SSH](https://www.raspberrypi.com/documentation/computers/remote-access.html#passwordless-ssh-access).
 
 > [!IMPORTANT]
-> This example requires you to configure [passwordless SSH](https://www.raspberrypi.com/documentation/computers/remote-access.html#passwordless-ssh-access) on your device, as OpenSSH doesn't support passing passwords on the command line. If you need to use a password, consider substituting the *plink* tool included with [PuTTY](https://www.putty.org/) for *ssh*.
+> This example requires you to configure [passwordless SSH](https://www.raspberrypi.com/documentation/computers/remote-access.html#passwordless-ssh-access) on your device, as OpenSSH doesn't support passing passwords on the command line. If you need to use a password, consider substituting the [Plink tool](https://the.earth.li/~sgtatham/putty/0.80/htmldoc/Chapter7.html) for *ssh*.
 
 ### Install the Visual Studio Remote Debugger on the SBC
 
@@ -97,6 +95,7 @@ Notice the following:
         "program": "~/dotnet/dotnet",
         "args": ["~/sample/sample.dll"],
         "cwd": "~/sample",
+        "justMyCode": false,
         "stopAtEntry": false,
         "console": "internalConsole",
         "pipeTransport": {
@@ -115,6 +114,7 @@ Notice the following:
 - `program` is the path to the .NET runtime on the device.
 - `args` is the path to the assembly to debug on the device.
 - `cwd` is the working directory to use when launching the app on the device.
+- `justMyCode` is set to `false` to ensure that the debugger breaks on breakpoints in the app's code.
 - `pipeProgram` is the path to an SSH client on the local machine.
 - `pipeArgs` are the parameters to be passed to the SSH client. Be sure to specify the password parameter, as well as the `pi` user in the format `<user>@<hostname>`.
 

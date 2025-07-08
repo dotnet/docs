@@ -21,7 +21,7 @@ This topic is the second of four topics that discusses how to implement a discov
 
 3. Add a new class to the project called `CalculatorService`.
 
-4. Add the following using statements.
+4. Add the following `using` directives.
 
     ```csharp
     using System;
@@ -90,7 +90,7 @@ This topic is the second of four topics that discusses how to implement a discov
 
 1. Open the Program.cs file that was generated when you created the project.
 
-2. Add the following using statements.
+2. Add the following `using` directives.
 
     ```csharp
     using System;
@@ -194,7 +194,7 @@ namespace Microsoft.Samples.Discovery
             Console.WriteLine("Return: {0}", result);
             return result;
         }
-  
+
         public double Subtract(double n1, double n2)
         {
             double result = n1 - n2;

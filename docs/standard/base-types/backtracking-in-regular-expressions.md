@@ -18,7 +18,7 @@ helpviewer_keywords:
 ---
 # Backtracking in regular expressions
 
-Backtracking occurs when a regular expression pattern contains optional [quantifiers](quantifiers-in-regular-expressions.md) or [alternation constructs](alternation-constructs-in-regular-expressions.md), and the regular expression engine returns to a previous saved state to continue its search for a match. Backtracking is central to the power of regular expressions; it makes it possible for expressions to be powerful and flexible, and to match very complex patterns. At the same time, this power comes at a cost. Backtracking is often the single most important factor that affects the performance of the regular expression engine. Fortunately, the developer has control over the behavior of the regular expression engine and how it uses backtracking. This topic explains how backtracking works and how it can be controlled.
+Backtracking occurs when a regular expression pattern contains optional [quantifiers](quantifiers-in-regular-expressions.md) or [alternation constructs](alternation-constructs-in-regular-expressions.md), and the regular expression engine returns to a previous saved state to continue its search for a match. Backtracking is central to the power of regular expressions; it makes it possible for expressions to be powerful and flexible, and to match very complex patterns. At the same time, this power comes at a cost. Backtracking is often the single most important factor that affects the performance of the regular expression engine. Fortunately, the developer has control over the behavior of the regular expression engine and how it uses backtracking. This article explains how backtracking works and how you can control it.
 
 [!INCLUDE [regex](../../../includes/regex.md)]
 
@@ -33,27 +33,27 @@ Backtracking occurs when a regular expression pattern contains optional [quantif
 
  Although this regular expression includes the quantifier `{2}`, it is evaluated in a linear manner. The regular expression engine does not backtrack because `{2}` is not an optional quantifier; it specifies an exact number and not a variable number of times that the previous subexpression must match. As a result, the regular expression engine tries to match the regular expression pattern with the input string as shown in the following table.
 
-|Operation|Position in pattern|Position in string|Result|
-|---------------|-------------------------|------------------------|------------|
-|1|e|"needing a reed" (index 0)|No match.|
-|2|e|"eeding a reed" (index 1)|Possible match.|
-|3|e{2}|"eding a reed" (index 2)|Possible match.|
-|4|\w|"ding a reed" (index 3)|Possible match.|
-|5|\b|"ing a reed" (index 4)|Possible match fails.|
-|6|e|"eding a reed" (index 2)|Possible match.|
-|7|e{2}|"ding a reed" (index 3)|Possible match fails.|
-|8|e|"ding a reed" (index 3)|Match fails.|
-|9|e|"ing a reed" (index 4)|No match.|
-|10|e|"ng a reed" (index 5)|No match.|
-|11|e|"g a reed" (index 6)|No match.|
-|12|e|" a reed" (index 7)|No match.|
-|13|e|"a reed" (index 8)|No match.|
-|14|e|" reed" (index 9)|No match.|
-|15|e|"reed" (index 10)|No match|
-|16|e|"eed" (index 11)|Possible match.|
-|17|e{2}|"ed" (index 12)|Possible match.|
-|18|\w|"d" (index 13)|Possible match.|
-|19|\b|"" (index 14)|Match.|
+| Operation | Position in pattern | Position in string         | Result                |
+|-----------|---------------------|----------------------------|-----------------------|
+| 1         | e                   | "needing a reed" (index 0) | No match.             |
+| 2         | e                   | "eeding a reed" (index 1)  | Possible match.       |
+| 3         | e{2}                | "eding a reed" (index 2)   | Possible match.       |
+| 4         | \w                  | "ding a reed" (index 3)    | Possible match.       |
+| 5         | \b                  | "ing a reed" (index 4)     | Possible match fails. |
+| 6         | e                   | "eding a reed" (index 2)   | Possible match.       |
+| 7         | e{2}                | "ding a reed" (index 3)    | Possible match fails. |
+| 8         | e                   | "ding a reed" (index 3)    | Match fails.          |
+| 9         | e                   | "ing a reed" (index 4)     | No match.             |
+| 10        | e                   | "ng a reed" (index 5)      | No match.             |
+| 11        | e                   | "g a reed" (index 6)       | No match.             |
+| 12        | e                   | " a reed" (index 7)        | No match.             |
+| 13        | e                   | "a reed" (index 8)         | No match.             |
+| 14        | e                   | " reed" (index 9)          | No match.             |
+| 15        | e                   | "reed" (index 10)          | No match              |
+| 16        | e                   | "eed" (index 11)           | Possible match.       |
+| 17        | e{2}                | "ed" (index 12)            | Possible match.       |
+| 18        | \w                  | "d" (index 13)             | Possible match.       |
+| 19        | \b                  | "" (index 14)              | Match.                |
 
  If a regular expression pattern includes no optional quantifiers or alternation constructs, the maximum number of comparisons required to match the regular expression pattern with the input string is roughly equivalent to the number of characters in the input string. In this case, the regular expression engine uses 19 comparisons to identify possible matches in this 13-character string.  In other words, the regular expression engine runs in near-linear time if it contains no optional quantifiers or alternation constructs.
 
@@ -115,10 +115,10 @@ If you don't need to use any constructs that require backtracking (for example, 
 
 If you don't set a time-out value explicitly, the default time-out value is determined as follows:
 
-- By using the application-wide time-out value, if one exists. This can be any time-out value that applies to the application domain in which the <xref:System.Text.RegularExpressions.Regex> object is instantiated or the static method call is made. You can set the application-wide time-out value by calling the <xref:System.AppDomain.SetData%2A?displayProperty=nameWithType> method to assign the string representation of a <xref:System.TimeSpan> value to the "REGEX_DEFAULT_MATCH_TIMEOUT" property.
+- By using the application-wide time-out value, if one exists. This can be any time-out value that applies to the application domain in which the <xref:System.Text.RegularExpressions.Regex> object is instantiated or the static method call is made. You can set the application-wide time-out value by calling the <xref:System.AppDomain.SetData%2A?displayProperty=nameWithType> method to assign the string representation of a <xref:System.TimeSpan> value to the `REGEX_DEFAULT_MATCH_TIMEOUT` property.
 - By using the value <xref:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout>, if no application-wide time-out value has been set.
 
- By default, the time-out interval is set to <xref:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout?displayProperty=nameWithType> and the regular expression engine does not time out.
+By default, the time-out interval is set to <xref:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout?displayProperty=nameWithType> and the regular expression engine does not time out.
 
 > [!IMPORTANT]
 > When not using <xref:System.Text.RegularExpressions.RegexOptions.NonBacktracking?displayProperty=nameWithType>, we recommend that you always set a time-out interval if your regular expression relies on backtracking or operates on untrusted inputs.
@@ -152,9 +152,9 @@ If you don't set a time-out value explicitly, the default time-out value is dete
 
  The first regular expression pattern, `^[0-9A-Z]([-.\w]*[0-9A-Z])*@`, is defined as shown in the following table.
 
-|Pattern|Description|
-|-------------|-----------------|
-|`^`|Start the match at the beginning of the string.|
+| Pattern | Description                                     |
+|---------|-------------------------------------------------|
+| `^`     | Start the match at the beginning of the string. |
 |`[0-9A-Z]`|Match an alphanumeric character. This comparison is case-insensitive, because the <xref:System.Text.RegularExpressions.Regex.IsMatch%2A?displayProperty=nameWithType> method is called with the <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=nameWithType> option.|
 |`[-.\w]*`|Match zero, one, or more occurrences of a hyphen, period, or word character.|
 |`[0-9A-Z]`|Match an alphanumeric character.|
@@ -163,9 +163,9 @@ If you don't set a time-out value explicitly, the default time-out value is dete
 
  The second regular expression pattern, `^[0-9A-Z][-.\w]*(?<=[0-9A-Z])@`, uses a positive lookbehind assertion. It is defined as shown in the following table.
 
-|Pattern|Description|
-|-------------|-----------------|
-|`^`|Start the match at the beginning of the string.|
+| Pattern | Description                                     |
+|---------|-------------------------------------------------|
+| `^`     | Start the match at the beginning of the string. |
 |`[0-9A-Z]`|Match an alphanumeric character. This comparison is case-insensitive, because the <xref:System.Text.RegularExpressions.Regex.IsMatch%2A?displayProperty=nameWithType> method is called with the <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=nameWithType> option.|
 |`[-.\w]*`|Match zero or more occurrences of a hyphen, period, or word character.|
 |`(?<=[0-9A-Z])`|Look back at the last matched character and continue the match if it is alphanumeric. Note that alphanumeric characters are a subset of the set that consists of periods, hyphens, and all word characters.|

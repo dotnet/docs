@@ -1,5 +1,5 @@
 ---
-title: "Generics and Arrays - C# Programming Guide"
+title: "Generics and Arrays"
 description: Learn about generics and arrays in C# programming. See code examples and view additional available resources.
 ms.date: 07/20/2015
 helpviewer_keywords: 
@@ -18,7 +18,6 @@ Single-dimensional arrays that have a lower bound of zero automatically implemen
 ## See also
 
 - <xref:System.Collections.Generic>
-- [C# Programming Guide](../index.md)
 - [Generics](../../fundamentals/types/generics.md)
-- [Arrays](../arrays/index.md)
+- [Arrays](../../language-reference/builtin-types/arrays.md)
 - [Generics](../../../standard/generics/index.md)

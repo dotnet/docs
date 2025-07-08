@@ -1,17 +1,37 @@
 ﻿//<Snippet1>
+// This is in Employee_Part1.cs
 public partial class Employee
 {
     public void DoWork()
     {
+        Console.WriteLine("Employee is working.");
     }
 }
 
+// This is in Employee_Part2.cs
 public partial class Employee
 {
     public void GoToLunch()
     {
+        Console.WriteLine("Employee is at lunch.");
     }
 }
+
+//Main program demonstrating the Employee class usage
+public class Program
+{
+    public static void Main()
+    {
+        Employee emp = new Employee();
+        emp.DoWork();
+        emp.GoToLunch();
+    }
+}
+
+// Expected Output:
+// Employee is working.
+// Employee is at lunch.
+
 //</Snippet1>
 
 //<Snippet2>
@@ -87,6 +107,7 @@ partial class ClassWithNestedClass
 namespace WrapCoords2
 {
     //<Snippet9>
+    // This is in Coords_Part1.cs
     public partial class Coords
     {
         private int x;
@@ -99,6 +120,7 @@ namespace WrapCoords2
         }
     }
 
+    // This is in Coords_Part2.cs
     public partial class Coords
     {
         public void PrintCoords()
@@ -107,6 +129,7 @@ namespace WrapCoords2
         }
     }
 
+   // Main program demonstrating the Coords class usage
     class TestCoords
     {
         static void Main()
@@ -144,3 +167,20 @@ partial struct S1
     void Struct_Test2() { }
 }
 //</Snippet10>
+
+// <FieldProperty>
+// in file1.cs
+public partial class PropertyBag
+{
+    // Defining declaration
+    public partial int MyProperty { get; set; }
+}
+
+// In file2.cs
+public partial class PropertyBag
+{
+    // Defining declaration
+    public partial int MyProperty { get => field; set; }
+}
+
+// </FieldProperty>

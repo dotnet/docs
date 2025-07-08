@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk.Worker">
 
   <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>dotnet-HostBuilder-3f144e50-3cf7-463d-b3e7-33f5e9a62474</UserSecretsId>
@@ -14,5 +14,6 @@
     <PackageReference Include="Azure.Storage.Blobs" />
     <PackageReference Include="Microsoft.Extensions.Azure" />
     <PackageReference Include="Microsoft.Extensions.Hosting" />
+    <PackageReference Include="Azure.AI.OpenAI" />
   </ItemGroup>
 </Project>

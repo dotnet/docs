@@ -1,12 +1,11 @@
 ---
-title: "How to override the ToString method - C# Programming Guide"
+title: "How to override the ToString method"
 description: Learn how to override the ToString method in C#. Every class or struct inherits Object and gets ToString, which returns a string representation of that object.
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "ToString method, overriding in C#"
   - "inheritance [C#], overriding OnPaint and ToString"
 ms.topic: how-to
-ms.custom: contperf-fy21q2
 ms.assetid: 8016db69-1f19-420c-8e17-98e8bebb7749
 ---
 # How to override the ToString method (C# Programming Guide)
@@ -43,7 +42,6 @@ To override the `ToString` method in your class or struct:
 ## See also
 
 - <xref:System.IFormattable>
-- [C# Programming Guide](../index.md)
 - [The C# type system](../../fundamentals/types/index.md)
 - [Strings](../strings/index.md)
 - [string](../../language-reference/builtin-types/reference-types.md)

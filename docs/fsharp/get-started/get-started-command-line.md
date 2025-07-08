@@ -2,6 +2,7 @@
 title: Get started with F# with command-line tools
 description: Learn how to build a simple multi-project solution on F# using the .NET CLI on any operating system (Windows, macOS, or Linux).
 ms.date: 10/29/2021
+ms.custom: linux-related-content
 ---
 # Get started with F# with the .NET CLI
 
@@ -108,7 +109,7 @@ let main args =
     0 // return an integer exit code
 ```
 
-Add a reference to the `Library` project using [dotnet add reference](../../core/tools/dotnet-add-reference.md).
+Add a reference to the `Library` project using [dotnet reference add](../../core/tools/dotnet-reference-add.md).
 
 ```dotnetcli
 dotnet add src/App/App.fsproj reference src/Library/Library.fsproj

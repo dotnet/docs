@@ -1,8 +1,7 @@
 ---
-description: "Learn more about: EDM Generator (EdmGen.exe)"
 title: "EDM Generator (EdmGen.exe)"
+description: "Learn more about the EDM Generator tool (EdmGen.exe), which is a command-line tool used for working with Entity Framework model and mapping files."
 ms.date: "03/30/2017"
-ms.assetid: fe8297a1-1fc3-48ce-8eeb-f70f63f857aa
 ---
 
 # EDM Generator (EdmGen.exe)
@@ -33,9 +32,9 @@ When using the EdmGen.exe tool, you must specify one of the following modes.
 |----------|-----------------|
 |`/mode:ValidateArtifacts`|Validates the .csdl, .ssdl, and .msl files and displays any errors or warnings.<br /><br /> This option requires at least one of the `/inssdl` or `/incsdl` arguments. If `/inmsl` is specified, the `/inssdl` and `/incsdl` arguments are also required.|
 |`/mode:FullGeneration`|Uses the database connection information specified in the `/connectionstring` option and generates .csdl, .ssdl, .msl, object layer, and view files.<br /><br /> This option requires a `/connectionstring` argument and either a `/project` argument or `/outssdl`, `/outcsdl`, `/outmsdl`, `/outobjectlayer`, `/outviews`, `/namespace`, and `/entitycontainer` arguments.|
-|`/mode:FromSSDLGeneration`|Generates .csdl and .msl files, source code, and views from the specified .ssdl file.<br /><br /> This option requires the `/inssdl` argument and either a `/project` argument or the `/outcsdl`, `/outmsl`, `/outobjectlayer`, `/outviews`, `/namespace,` and `/entitycontainer` arguments.|
+|`/mode:FromSSDLGeneration`|Generates .csdl and .msl files, source code, and views from the specified .ssdl file.<br /><br /> This option requires the `/inssdl` argument and either a `/project` argument or the `/outcsdl`, `/outmsl`, `/outobjectlayer`, `/outviews`, `/namespace`, and `/entitycontainer` arguments.|
 |`/mode:EntityClassGeneration`|Creates a source code file that contains the classes generated from the .csdl file.<br /><br /> This option requires the `/incsdl` argument and either the `/project` argument or the `/outobjectlayer` argument. The `/language` argument is optional.|
-|`/mode:ViewGeneration`|Creates a source code file that contains the views generated from the .csdl, .ssdl, and .msl files.<br /><br /> This option requires the `/inssdl`, `/incsdl`, `/inmsl,` and either the `/project` or `/outviews` arguments. The `/language` argument is optional.|
+|`/mode:ViewGeneration`|Creates a source code file that contains the views generated from the .csdl, .ssdl, and .msl files.<br /><br /> This option requires the `/inssdl`, `/incsdl`, `/inmsl`, and either the `/project` or `/outviews` arguments. The `/language` argument is optional.|
 
 ## Options
 

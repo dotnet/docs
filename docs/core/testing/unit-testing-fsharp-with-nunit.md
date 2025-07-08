@@ -3,21 +3,21 @@ title: Unit testing F# in .NET Core with dotnet test and NUnit
 description: Learn unit test concepts for F# in .NET Core through an interactive experience building a sample solution step-by-step using dotnet test and NUnit.
 author: rprouse
 ms.date: 10/04/2018
-dev_langs: 
+dev_langs:
   - "fsharp"
 ---
-# Unit testing F# libraries in .NET Core using dotnet test and NUnit
+# Unit testing F# libraries using dotnet test and NUnit
 
-This tutorial takes you through an interactive experience building a sample solution step-by-step to learn unit testing concepts. If you prefer to follow the tutorial using a pre-built solution, [view or download the sample code](https://github.com/dotnet/samples/tree/main/core/getting-started/unit-testing-with-fsharp-nunit/) before you begin. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#view-and-download-samples).
+This tutorial takes you through an interactive experience building a sample solution step-by-step to learn unit testing concepts. If you prefer to follow the tutorial using a prebuilt solution, [view or download the sample code](https://github.com/dotnet/samples/tree/main/core/getting-started/unit-testing-with-fsharp-nunit/) before you begin. For download instructions, see [Samples and tutorials](../../samples-and-tutorials/index.md#view-and-download-samples).
 
 [!INCLUDE [testing an ASP.NET Core project from .NET Core](../../../includes/core-testing-note-aspnet.md)]
 
 ## Prerequisites
 
-- [.NET Core 2.1 SDK](https://dotnet.microsoft.com/download) or later versions.
+- [.NET 8 SDK](https://dotnet.microsoft.com/download) or later versions.
 - A text editor or code editor of your choice.
 
-## Creating the source project
+## Create the source project
 
 Open a shell window. Create a directory called *unit-testing-with-fsharp* to hold the solution.
 Inside this new directory, run the following command to create a new solution file for the class library and the test project:
@@ -53,11 +53,11 @@ Change the directory back to the *unit-testing-with-fsharp* directory. Run the f
 dotnet sln add .\MathService\MathService.fsproj
 ```
 
-## Creating the test project
+## Create the test project
 
 Next, create the *MathService.Tests* directory. The following outline shows the directory structure:
 
-```
+```txt
 /unit-testing-with-fsharp
     unit-testing-with-fsharp.sln
     /MathService
@@ -72,27 +72,27 @@ Make the *MathService.Tests* directory the current directory and create a new pr
 dotnet new nunit -lang "F#"
 ```
 
-This creates a test project that uses NUnit as the test framework. The generated template configures the test runner in the *MathServiceTests.fsproj*:
+This command creates a test project that uses NUnit as the test framework. The generated template configures the test runner in the *MathServiceTests.fsproj*:
 
 ```xml
 <ItemGroup>
-  <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.5.0" />
-  <PackageReference Include="NUnit" Version="3.9.0" />
-  <PackageReference Include="NUnit3TestAdapter" Version="3.9.0" />
+  <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.9.0" />
+  <PackageReference Include="NUnit" Version="4.1.0" />
+  <PackageReference Include="NUnit3TestAdapter" Version="4.5.0" />
 </ItemGroup>
 ```
 
-The test project requires other packages to create and run unit tests. `dotnet new` in the previous step added NUnit and the NUnit test adapter. Now, add the `MathService` class library as another dependency to the project. Use the `dotnet add reference` command:
+The test project requires other packages to create and run unit tests. `dotnet new` in the previous step added NUnit and the NUnit test adapter. Now, add the `MathService` class library as another dependency to the project. Use the `dotnet reference add` command:
 
 ```dotnetcli
-dotnet add reference ../MathService/MathService.fsproj
+dotnet reference add ../MathService/MathService.fsproj
 ```
 
 You can see the entire file in the [samples repository](https://github.com/dotnet/samples/blob/main/core/getting-started/unit-testing-with-fsharp/MathService.Tests/MathService.Tests.fsproj) on GitHub.
 
 You have the following final solution layout:
 
-```
+```txt
 /unit-testing-with-fsharp
     unit-testing-with-fsharp.sln
     /MathService
@@ -109,7 +109,7 @@ Execute the following command in the *unit-testing-with-fsharp* directory:
 dotnet sln add .\MathService.Tests\MathService.Tests.fsproj
 ```
 
-## Creating the first test
+## Create the first test
 
 You write one failing test, make it pass, then repeat the process. Open *UnitTest1.fs* and add the following code:
 
@@ -125,17 +125,17 @@ type TestClass () =
 
     [<Test>]
     member this.TestMethodPassing() =
-        Assert.True(true)
+        Assert.That(true, Is.True)
 
     [<Test>]
-     member this.FailEveryTime() = Assert.True(false)
+     member this.FailEveryTime() = Assert.That(false, Is.True)
 ```
 
 The `[<TestFixture>]` attribute denotes a class that contains tests. The `[<Test>]` attribute denotes a test method that is run by the test runner. From the *unit-testing-with-fsharp* directory, execute `dotnet test` to build the tests and the class library and then run the tests. The NUnit test runner contains the program entry point to run your tests. `dotnet test` starts the test runner using the unit test project you've created.
 
-These two tests show the most basic passing and failing tests. `My test` passes, and `Fail every time` fails. Now, create a test for the `squaresOfOdds` method. The `squaresOfOdds` method returns a sequence of the squares of all odd integer values that are part of the input sequence. Rather than trying to write all of those functions at once, you can iteratively create tests that validate the functionality. Making each test pass means creating the necessary functionality for the method.
+These two tests show the most basic passing and failing tests. `My test` passes, and `Fail every time` fails. Now, create a test for the `squaresOfOdds` method. The `squaresOfOdds` method returns a sequence of the squares of all odd integer values that are part of the input sequence. Rather than trying to write all of those functions at once, you can iteratively create tests that validate the functionality. To make each test pass means, you create the necessary functionality for the method.
 
-The simplest test we can write is to call `squaresOfOdds` with all even numbers, where the result should be an empty sequence of integers.  Here's that test:
+The simplest test you can write is to call `squaresOfOdds` with all even numbers, where the result should be an empty sequence of integers. Here's that test:
 
 ```fsharp
 [<Test>]
@@ -145,9 +145,9 @@ member this.TestEvenSequence() =
     Assert.That(actual, Is.EqualTo(expected))
 ```
 
-Notice that the `expected` sequence has been converted to a list. The NUnit framework relies on many standard .NET types. That dependency means that your public interface and expected results support <xref:System.Collections.ICollection> rather than <xref:System.Collections.IEnumerable>.
+Notice that the `expected` sequence is converted to a list. The NUnit framework relies on many standard .NET types. That dependency means that your public interface and expected results support <xref:System.Collections.ICollection> rather than <xref:System.Collections.IEnumerable>.
 
-When you run the test, you see that your test fails. You haven't created the implementation yet. Make this test pass by writing the simplest code in the *Library.fs* class in your MathService project that works:
+When you run the test, you see that your test fails. That's because you haven't created the implementation yet. Make this test pass by writing the simplest code in the *Library.fs* class in your MathService project that works:
 
 ```fsharp
 let squaresOfOdds xs =
@@ -156,7 +156,7 @@ let squaresOfOdds xs =
 
 In the *unit-testing-with-fsharp* directory, run `dotnet test` again. The `dotnet test` command runs a build for the `MathService` project and then for the `MathService.Tests` project. After building both projects, it runs your tests. Two tests pass now.
 
-## Completing the requirements
+## Complete the requirements
 
 Now that you've made one test pass, it's time to write more. The next simple case works with a sequence whose only odd number is `1`. The number 1 is easier because the square of 1 is 1. Here's that next test:
 
@@ -200,9 +200,9 @@ let squaresOfOdds xs =
     |> Seq.map square
 ```
 
-You've built a small library and a set of unit tests for that library. You've structured the solution so that adding new packages and tests is part of the normal workflow. You've concentrated most of your time and effort on solving the goals of the application.
+You've built a small library and a set of unit tests for that library. You structured the solution so that adding new packages and tests is part of the normal workflow. You concentrated most of your time and effort on solving the goals of the application.
 
 ## See also
 
-- [dotnet add reference](../tools/dotnet-add-reference.md)
+- [dotnet reference add](../tools/dotnet-reference-add.md)
 - [dotnet test](../tools/dotnet-test.md)

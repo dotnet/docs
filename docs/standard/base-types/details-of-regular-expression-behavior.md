@@ -2,7 +2,7 @@
 description: "Learn more about: Details of regular expression behavior"
 title: Regular Expression behavior
 ms.date: "03/30/2017"
-ms.topic: conceptual
+ms.topic: article
 dev_langs:
   - "csharp"
   - "vb"
@@ -143,7 +143,6 @@ The .NET regular expression engine is a backtracking regular expression matcher 
 |-----------|-----------------|
 |[Backtracking](backtracking-in-regular-expressions.md)|Provides information about how regular expression backtracking branches to find alternative matches.|
 |[Compilation and Reuse](compilation-and-reuse-in-regular-expressions.md)|Provides information about compiling and reusing regular expressions to increase performance.|
-|[Thread Safety](thread-safety-in-regular-expressions.md)|Provides information about regular expression thread safety and explains when you should synchronize access to regular expression objects.|
 |[.NET Regular Expressions](regular-expressions.md)|Provides an overview of the programming language aspect of regular expressions.|
 |[The Regular Expression Object Model](the-regular-expression-object-model.md)|Provides information and code examples illustrating how to use the regular expression classes.|
 |[Regular Expression Language - Quick Reference](regular-expression-language-quick-reference.md)|Provides information about the set of characters, operators, and constructs that you can use to define regular expressions.|

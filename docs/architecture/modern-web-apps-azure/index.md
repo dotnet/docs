@@ -8,9 +8,15 @@ ms.date: 01/10/2022
 
 # Architect Modern Web Applications with ASP.NET Core and Azure
 
+Before reading this article, we recommend you first read [Modern Web App pattern for .NET](/azure/architecture/web-apps/guides/enterprise-app-patterns/modern-web-app/dotnet/guidance). The [Modern Web App pattern for .NET](/azure/architecture/web-apps/guides/enterprise-app-patterns/modern-web-app/dotnet/guidance) article:
+
+* Is Microsoft's recommended guide to modern web app patterns. It provides a prescriptive architecture, code, and configuration guidance on how to modernize web apps in the cloud.
+* Provides a [GitHub reference implementation](https://github.com/Azure/modern-web-app-pattern-dotnet): A production-grade web app that uses best practices. Contains concrete examples to build Modern Web Apps in Azure.
+* Is more up to date than this article and is actively updated.
+
 ![Book cover image of the Architect Modern Web Applications guide.](./media/index/web-application-guide-cover-image.png)
 
-**EDITION v7.0** - Updated to ASP.NET Core 7.0
+**EDITION v8.0** - Updated to ASP.NET Core 8.0
 
 Refer [changelog](https://aka.ms/aspnet-ebook-changelog) for the book updates and community contributions.
 
@@ -56,7 +62,7 @@ Editors:
 
 ## Introduction
 
-.NET 7 and ASP.NET Core offer several advantages over traditional .NET development. You should use .NET 7 for your server applications if some or all of the following are important to your application's success:
+.NET 8 and ASP.NET Core offer several advantages over traditional .NET development. You should use .NET 8 for your server applications if some or all of the following are important to your application's success:
 
 - Cross-platform support.
 
@@ -68,7 +74,7 @@ Editors:
 
 - Side-by-side versioning of .NET versions by application on the same server.
 
-Traditional .NET 4.x apps can and do support many of these requirements, but ASP.NET Core and .NET 7 have been optimized to offer improved support for the above scenarios.
+Traditional .NET 4.x apps can and do support many of these requirements, but ASP.NET Core and .NET 8 have been optimized to offer improved support for the above scenarios.
 
 More and more organizations are choosing to host their web applications in the cloud using services like Microsoft Azure. You should consider hosting your application in the cloud if the following are important to your application or organization:
 
@@ -86,7 +92,7 @@ Building web applications with ASP.NET Core, hosted in Azure, offers many compet
 
 ## Version
 
-This guide has been revised to cover **.NET 7.0** version along with many additional updates related to the same "wave" of technologies (that is, Azure and additional third-party technologies) coinciding in time with the .NET 7.0 release. That's why the book version has also been updated to version **7.0**.
+This guide has been revised to cover **.NET 8.0** version along with many additional updates related to the same "wave" of technologies (that is, Azure and additional third-party technologies) coinciding in time with the .NET 8.0 release. That's why the book version has also been updated to version **8.0**.
 
 ## Purpose
 

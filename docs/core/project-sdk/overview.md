@@ -2,32 +2,35 @@
 title: .NET project SDK overview
 titleSuffix: ""
 description: Learn about the .NET project SDKs.
-ms.date: 06/30/2022
-ms.topic: conceptual
+ms.date: 10/15/2024
+ms.topic: concept-article
 no-loc: ["EmbeddedResource", "Compile", "None", "Blazor"]
 ---
 # .NET project SDKs
 
-.NET Core and .NET 5 and later projects are associated with a software development kit (SDK). Each *project SDK* is a set of MSBuild [targets](/visualstudio/msbuild/msbuild-targets) and associated [tasks](/visualstudio/msbuild/msbuild-tasks) that are responsible for compiling, packing, and publishing code. A project that references a project SDK is sometimes referred to as an *SDK-style project*.
+Modern .NET projects are associated with a project software development kit (SDK). Each *project SDK* is a set of MSBuild [targets](/visualstudio/msbuild/msbuild-targets) and associated [tasks](/visualstudio/msbuild/msbuild-tasks) that are responsible for compiling, packing, and publishing code. A project that references a project SDK is sometimes referred to as an *SDK-style project*.
 
 ## Available SDKs
 
-The following SDKs are available:
+The available SDKs include:
 
-| ID | Description | Repo|
-| - | - | - |
-| `Microsoft.NET.Sdk` | The .NET SDK | <https://github.com/dotnet/sdk> |
-| `Microsoft.NET.Sdk.Web` | The .NET [Web SDK](/aspnet/core/razor-pages/web-sdk) | <https://github.com/dotnet/sdk> |
-| `Microsoft.NET.Sdk.BlazorWebAssembly` | The .NET [Blazor WebAssembly](/aspnet/core/blazor#blazor-webassembly) SDK |
-| `Microsoft.NET.Sdk.Razor` | The .NET [Razor SDK](/aspnet/core/razor-pages/sdk) |
-| `Microsoft.NET.Sdk.Worker` | The .NET [Worker Service](../extensions/workers.md) SDK |
-| `Microsoft.NET.Sdk.WindowsDesktop` | The .NET [Desktop SDK](msbuild-props-desktop.md), which includes Windows Forms (WinForms) and Windows Presentation Foundation (WPF).\* | <https://github.com/dotnet/winforms> and <https://github.com/dotnet/wpf> |
+| ID                         | Description                                                                          | Repo                                   |
+|----------------------------|--------------------------------------------------------------------------------------|----------------------------------------|
+| `Microsoft.NET.Sdk`        | The .NET SDK                                                                         | <https://github.com/dotnet/sdk>        |
+| `Microsoft.NET.Sdk.Web`    | The .NET [Web SDK](/aspnet/core/razor-pages/web-sdk)                                 | <https://github.com/dotnet/sdk>        |
+| `Microsoft.NET.Sdk.Razor`  | The .NET [Razor SDK](/aspnet/core/razor-pages/sdk)                                   | <https://github.com/dotnet/aspnetcore> |
+| `Microsoft.NET.Sdk.BlazorWebAssembly` | The .NET [Blazor WebAssembly SDK](/aspnet/core/blazor#blazor-webassembly) | <https://github.com/dotnet/aspnetcore> |
+| `Microsoft.NET.Sdk.Worker` | The .NET [Worker Service SDK](../extensions/workers.md)                              | <https://github.com/dotnet/aspnetcore> |
+| `Aspire.AppHost.Sdk`       | The .NET [Aspire SDK](/dotnet/aspire/fundamentals/dotnet-aspire-sdk)                 | <https://github.com/dotnet/aspire>     |
+| `MSTest.Sdk`               | The [MSTest SDK](../testing/unit-testing-mstest-sdk.md)                              | <https://github.com/microsoft/testfx>  |
 
 The .NET SDK is the base SDK for .NET. The other SDKs reference the .NET SDK, and projects that are associated with the other SDKs have all the .NET SDK properties available to them. The Web SDK, for example, depends on both the .NET SDK and the Razor SDK.
 
-You can also author your own SDK that can be distributed via NuGet.
+For Windows Forms and Windows Presentation Foundation (WPF) projects, you specify the .NET SDK (`Microsoft.NET.Sdk`) and set some additional properties in the project file. For more information, see [Enable .NET Desktop SDK](msbuild-props-desktop.md#enable-net-desktop-sdk).
 
-\* Starting in .NET 5, Windows Forms and Windows Presentation Foundation (WPF) projects should specify the .NET SDK (`Microsoft.NET.Sdk`) instead of `Microsoft.NET.Sdk.WindowsDesktop`. For these projects, setting `TargetFramework` to `net5.0-windows` and `UseWPF` or `UseWindowsForms` to `true` will automatically import the Windows desktop SDK. If your project targets .NET 5 or later and specifies the `Microsoft.NET.Sdk.WindowsDesktop` SDK, you'll get build warning NETSDK1137.
+MSBuild SDKs, which you can use to configure and extend your build, are listed at [MSBuild SDKs](https://github.com/microsoft/MSBuildSdks/blob/main/README.md).
+
+You can also author your own SDK that can be distributed via NuGet.
 
 ## Project files
 
@@ -35,9 +38,22 @@ You can also author your own SDK that can be distributed via NuGet.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
-  ...
+    <!-- Omitted for brevity... -->
 </Project>
 ```
+
+The `Project/Sdk` attribute and `Sdk` element enable additive SDKs. Consider the following example, where the .NET Aspire SDK (`Aspire.AppHost.Sdk`) is added to the project atop the `Microsoft.NET.Sdk`:
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <Sdk Name="Aspire.AppHost.Sdk" Version="9.0.0" />
+    <!-- Omitted for brevity... -->
+
+</Project>
+```
+
+In the preceding project file, both SDKs are used to resolve dependencies in an additive nature. For more information, see [.NET Aspire SDK](/dotnet/aspire/fundamentals/dotnet-aspire-sdk).
 
 To specify an SDK that comes from NuGet, include the version at the end of the name, or specify the name and version in the *global.json* file.
 
@@ -47,7 +63,7 @@ To specify an SDK that comes from NuGet, include the version at the end of the n
 </Project>
 ```
 
-Another way to specify the SDK is with the top-level [Sdk](/visualstudio/msbuild/sdk-element-msbuild) element:
+Another way to specify the SDK is with the top-level [`Sdk`](/visualstudio/msbuild/sdk-element-msbuild) element:
 
 ```xml
 <Project>
@@ -77,7 +93,7 @@ You can see the fully expanded project as MSBuild sees it after the SDK and its 
 
 If the project has multiple target frameworks, focus the results of the command on only one framework by specifying it as an MSBuild property. For example:
 
-`dotnet msbuild -property:TargetFramework=netcoreapp2.0 -preprocess:output.xml`
+`dotnet msbuild -property:TargetFramework=net8.0 -preprocess:output.xml`
 
 ## Default includes and excludes
 
@@ -85,54 +101,22 @@ The default includes and excludes for [`Compile` items](/visualstudio/msbuild/co
 
 The following table shows which elements and which [globs](https://en.wikipedia.org/wiki/Glob_(programming)) are included and excluded in the .NET SDK:
 
-| Element           | Include glob                              | Exclude glob                                                  | Remove glob              |
-|-------------------|-------------------------------------------|---------------------------------------------------------------|--------------------------|
-| Compile           | \*\*/\*.cs (or other language extensions) | \*\*/\*.user;  \*\*/\*.\*proj;  \*\*/\*.sln;  \*\*/\*.vssscc  | N/A                      |
-| EmbeddedResource  | \*\*/\*.resx                              | \*\*/\*.user; \*\*/\*.\*proj; \*\*/\*.sln; \*\*/\*.vssscc     | N/A                      |
-| None              | \*\*/\*                                   | \*\*/\*.user; \*\*/\*.\*proj; \*\*/\*.sln; \*\*/\*.vssscc     | \*\*/\*.cs; \*\*/\*.resx |
+| Element | Include glob | Exclude glob | Remove glob |
+|---------|--------------|--------------|-------------|
+| Compile | \*\*/\*.cs (or other language extensions) | \*\*/\*.user;  \*\*/\*.\*proj;  \*\*/\*.sln(x);  \*\*/\*.vssscc  | N/A |
+| EmbeddedResource  | \*\*/\*.resx | \*\*/\*.user; \*\*/\*.\*proj; \*\*/\*.sln(x); \*\*/\*.vssscc | N/A |
+| None | \*\*/\* | \*\*/\*.user; \*\*/\*.\*proj; \*\*/\*.sln(x); \*\*/\*.vssscc     | \*\*/\*.cs; \*\*/\*.resx |
 
 > [!NOTE]
 > The `./bin` and `./obj` folders, which are represented by the `$(BaseOutputPath)` and `$(BaseIntermediateOutputPath)` MSBuild properties, are excluded from the globs by default. Excludes are represented by the [DefaultItemExcludes property](msbuild-props.md#defaultitemexcludes).
 
-The .NET Desktop SDK has more includes and excludes for WPF. For more information, see [WPF default includes and excludes](msbuild-props-desktop.md#wpf-default-includes-and-excludes).
+The .NET Desktop SDK has additional includes and excludes for WPF. For more information, see [WPF default includes and excludes](msbuild-props-desktop.md#wpf-default-includes-and-excludes).
 
-### Build errors
-
-If you explicitly define any of these items in your project file, you're likely to get a "NETSDK1022" build error similar to the following:
-
-> Duplicate 'Compile' items were included. The .NET SDK includes 'Compile' items from your project directory by default. You can either remove these items from your project file, or set the 'EnableDefaultCompileItems' property to 'false' if you want to explicitly include them in your project file.
-
-> Duplicate 'EmbeddedResource' items were included. The .NET SDK includes 'EmbeddedResource' items from your project directory by default. You can either remove these items from your project file, or set the 'EnableDefaultEmbeddedResourceItems' property to 'false' if you want to explicitly include them in your project file.
-
-To resolve the errors, do one of the following:
-
-- Remove the explicit `Compile`, `EmbeddedResource`, or `None` items that match the implicit ones listed on the previous table.
-
-- Set the [EnableDefaultItems property](msbuild-props.md#enabledefaultitems) to `false` to disable all implicit file inclusion:
-
-  ```xml
-  <PropertyGroup>
-    <EnableDefaultItems>false</EnableDefaultItems>
-  </PropertyGroup>
-  ```
-
-  If you want to specify files to be published with your app, you can still use the known MSBuild mechanisms for that, for example, the `Content` element.
-
-- Selectively disable only `Compile`, `EmbeddedResource`, or `None` globs by setting the [EnableDefaultCompileItems](msbuild-props.md#enabledefaultcompileitems), [EnableDefaultEmbeddedResourceItems](msbuild-props.md#enabledefaultembeddedresourceitems), or [EnableDefaultNoneItems](msbuild-props.md#enabledefaultnoneitems) property to `false`:
-
-  ```xml
-  <PropertyGroup>
-    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
-    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
-    <EnableDefaultNoneItems>false</EnableDefaultNoneItems>
-  </PropertyGroup>
-  ```
-
-  If you only disable `Compile` globs, Solution Explorer in Visual Studio still shows \*.cs items as part of the project, included as `None` items. To disable the implicit `None` glob, set `EnableDefaultNoneItems` to `false` too.
+If you explicitly define any of these items in your project file, you're likely to get a [NETSDK1022](../tools/sdk-errors/netsdk1022.md) build error. For information about how to resolve the error, see [NETSDK1022: Duplicate items were included](../tools/sdk-errors/netsdk1022.md).
 
 ## Implicit using directives
 
-Starting in .NET 6, implicit [`global using` directives](../../csharp/language-reference/keywords/using-directive.md#global-modifier) are added to new C# projects. This means that you can use types defined in these namespaces without having to specify their fully qualified name or manually add a `using` directive. The *implicit* aspect refers to the fact that the `global using` directives are added to a generated file in the project's *obj* directory.
+Starting in .NET 6, implicit [`global using` directives](../../csharp/language-reference/keywords/using-directive.md#the-global-modifier) are added to new C# projects. This means that you can use types defined in these namespaces without having to specify their fully qualified name or manually add a `using` directive. The *implicit* aspect refers to the fact that the `global using` directives are added to a generated file in the project's *obj* directory.
 
 Implicit `global using` directives are added for projects that use one of the following SDKs:
 
@@ -144,10 +128,10 @@ Implicit `global using` directives are added for projects that use one of the fo
 A `global using` directive is added for each namespace in a set of default namespaces that are based on the project's SDK. These default namespaces are shown in the following table.
 
 | SDK | Default namespaces |
-| - | - |
+|-----|--------------------|
 | Microsoft.NET.Sdk | <xref:System><br/><xref:System.Collections.Generic?displayProperty=fullName><br/><xref:System.IO?displayProperty=fullName><br/><xref:System.Linq?displayProperty=fullName><br/><xref:System.Net.Http?displayProperty=fullName><br/><xref:System.Threading?displayProperty=fullName><br/><xref:System.Threading.Tasks?displayProperty=fullName> |
-| Microsoft.NET.Sdk.Web | <xref:System.Net.Http.Json?displayProperty=fullName><br/><xref:Microsoft.AspNetCore.Builder?displayProperty=fullName><br/><xref:Microsoft.AspNetCore.Hosting?displayProperty=fullName><br/><xref:Microsoft.AspNetCore.Http?displayProperty=fullName><br/><xref:Microsoft.AspNetCore.Routing?displayProperty=fullName><br/><xref:Microsoft.Extensions.Configuration?displayProperty=fullName><br/><xref:Microsoft.Extensions.DependencyInjection?displayProperty=fullName><br/><xref:Microsoft.Extensions.Hosting?displayProperty=fullName><br/><xref:Microsoft.Extensions.Logging?displayProperty=fullName> |
-| Microsoft.NET.Sdk.Worker | <xref:Microsoft.Extensions.Configuration?displayProperty=fullName><br/><xref:Microsoft.Extensions.DependencyInjection?displayProperty=fullName><br/><xref:Microsoft.Extensions.Hosting?displayProperty=fullName><br/><xref:Microsoft.Extensions.Logging?displayProperty=fullName> |
+| Microsoft.NET.Sdk.Web | Microsoft.NET.Sdk namespaces<br/><xref:System.Net.Http.Json?displayProperty=fullName><br/><xref:Microsoft.AspNetCore.Builder?displayProperty=fullName><br/><xref:Microsoft.AspNetCore.Hosting?displayProperty=fullName><br/><xref:Microsoft.AspNetCore.Http?displayProperty=fullName><br/><xref:Microsoft.AspNetCore.Routing?displayProperty=fullName><br/><xref:Microsoft.Extensions.Configuration?displayProperty=fullName><br/><xref:Microsoft.Extensions.DependencyInjection?displayProperty=fullName><br/><xref:Microsoft.Extensions.Hosting?displayProperty=fullName><br/><xref:Microsoft.Extensions.Logging?displayProperty=fullName> |
+| Microsoft.NET.Sdk.Worker | Microsoft.NET.Sdk namespaces<br/><xref:Microsoft.Extensions.Configuration?displayProperty=fullName><br/><xref:Microsoft.Extensions.DependencyInjection?displayProperty=fullName><br/><xref:Microsoft.Extensions.Hosting?displayProperty=fullName><br/><xref:Microsoft.Extensions.Logging?displayProperty=fullName> |
 | Microsoft.NET.Sdk.WindowsDesktop (Windows Forms) | Microsoft.NET.Sdk namespaces<br/><xref:System.Drawing?displayProperty=fullName><br/><xref:System.Windows.Forms?displayProperty=fullName> |
 | Microsoft.NET.Sdk.WindowsDesktop (WPF) | Microsoft.NET.Sdk namespaces<br/>Removed <xref:System.IO?displayProperty=fullName><br/>Removed <xref:System.Net.Http?displayProperty=fullName> |
 
@@ -161,19 +145,22 @@ You can specify additional implicit `global using` directives by adding `Using` 
   </ItemGroup>
   ```
 
+> [!NOTE]
+> Starting with the .NET 8 SDK, <xref:System.Net.Http> is [no longer included](../compatibility/sdk/8.0/implicit-global-using-netfx.md) in `Microsoft.NET.Sdk` when targeting .NET Framework.
+
 ## Implicit package references
 
-When targeting .NET Core 1.0 - 2.2 or .NET Standard 1.0 - 2.0, the .NET SDK adds implicit references to certain *metapackages*. A metapackage is a framework-based package that consists only of dependencies on other packages. Metapackages are implicitly referenced based on the target framework(s) specified in the [TargetFramework](msbuild-props.md#targetframework) or [TargetFrameworks](msbuild-props.md#targetframeworks) property of your project file.
+When your project targets .NET Standard 1.0-2.0, the .NET SDK adds implicit references to certain *metapackages*. A metapackage is a framework-based package that consists only of dependencies on other packages. Metapackages are implicitly referenced based on the target frameworks specified in the [TargetFramework](msbuild-props.md#targetframework) or [TargetFrameworks (plural)](msbuild-props.md#targetframeworks) property of your project file.
 
 ```xml
 <PropertyGroup>
-  <TargetFramework>netcoreapp2.1</TargetFramework>
+  <TargetFramework>netstandard2.0</TargetFramework>
 </PropertyGroup>
 ```
 
 ```xml
 <PropertyGroup>
-  <TargetFrameworks>netcoreapp2.1;net462</TargetFrameworks>
+  <TargetFrameworks>netstandard2.0;net462</TargetFrameworks>
 </PropertyGroup>
 ```
 
@@ -181,9 +168,8 @@ If needed, you can disable implicit package references using the [DisableImplici
 
 Recommendations:
 
-- When targeting .NET Framework, .NET Core 1.0 - 2.2, or .NET Standard 1.0 - 2.0, don't add an explicit reference to the `Microsoft.NETCore.App` or `NETStandard.Library` metapackages via a `<PackageReference>` item in your project file. For .NET Core 1.0 - 2.2 and .NET Standard 1.0 - 2.0 projects, these metapackages are implicitly referenced. For .NET Framework projects, if any version of `NETStandard.Library` is needed when using a .NET Standard-based NuGet package, NuGet automatically installs that version.
-- If you need a specific version of the runtime when targeting .NET Core 1.0 - 2.2, use the `<RuntimeFrameworkVersion>` property in your project (for example, `1.0.4`) instead of referencing the metapackage. For example, you might need a specific patch version of 1.0.0 LTS runtime if you're using [self-contained deployments](../deploying/index.md#publish-self-contained).
-- If you need a specific version of the `NETStandard.Library` metapackage when targeting .NET Standard 1.0 - 2.0, you can use the `<NetStandardImplicitPackageVersion>` property and set the version you need.
+- When targeting .NET Framework or .NET Standard 1.0-2.0, don't add an explicit reference to the `NETStandard.Library` metapackages via a `<PackageReference>` item in your project file. For .NET Standard 1.0-2.0 projects, these metapackages are implicitly referenced. For .NET Framework projects, if any version of `NETStandard.Library` is needed when using a .NET Standard-based NuGet package, NuGet automatically installs that version.
+- If you need a specific version of the `NETStandard.Library` metapackage when targeting .NET Standard 1.0-2.0, you can use the `<NetStandardImplicitPackageVersion>` property and set the version you need.
 
 ## Build events
 
@@ -212,7 +198,7 @@ In SDK-style projects, use an MSBuild target named `PreBuild` or `PostBuild` and
 
 ## Customize the build
 
-There are various ways to [customize a build](/visualstudio/msbuild/customize-your-build). You may want to override a property by passing it as an argument to an [msbuild](/visualstudio/msbuild/msbuild-command-line-reference) or [dotnet](../tools/index.md) command. You can also add the property to the project file or to a [*Directory.Build.props* file](/visualstudio/msbuild/customize-by-directory#directorybuildprops-and-directorybuildtargets). For a list of useful properties for .NET projects, see [MSBuild reference for .NET SDK projects](msbuild-props.md).
+There are various ways to [customize a build](/visualstudio/msbuild/customize-your-build). You might want to override a property by passing it as an argument to the [msbuild](/visualstudio/msbuild/msbuild-command-line-reference) or [dotnet](../tools/index.md) command. You can also add the property to the project file or to a [*Directory.Build.props* file](/visualstudio/msbuild/customize-by-directory#directorybuildprops-and-directorybuildtargets). For a list of useful properties for .NET projects, see [MSBuild reference for .NET SDK projects](msbuild-props.md).
 
 > [!TIP]
 > An easy way to create a new *Directory.Build.props* file from the command line is by using the command `dotnet new buildprops` at the root of your repository.

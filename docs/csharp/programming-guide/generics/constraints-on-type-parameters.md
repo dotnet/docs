@@ -1,7 +1,7 @@
 ---
-title: "Constraints on type parameters - C# Programming Guide"
+title: "Constraints on type parameters"
 description: Learn about constraints on type parameters. Constraints tell the compiler what capabilities a type argument must have.
-ms.date: 07/08/2022
+ms.date: 07/26/2024
 f1_keywords:
   - "defaultconstraint_CSharpKeyword"
   - "notnull_CSharpKeyword"
@@ -18,22 +18,34 @@ Constraints inform the compiler about the capabilities a type argument must have
 
 |Constraint|Description|
 |----------------|-----------------|
-|`where T : struct`|The type argument must be a non-nullable [value type](../../language-reference/builtin-types/value-types.md). For information about nullable value types, see [Nullable value types](../../language-reference/builtin-types/nullable-value-types.md). Because all value types have an accessible parameterless constructor, the `struct` constraint implies the `new()` constraint and can't be combined with the `new()` constraint. You can't combine the `struct` constraint with the `unmanaged` constraint.|
+|`where T : struct`|The type argument must be a non-nullable [value type](../../language-reference/builtin-types/value-types.md), which includes `record struct` types. For information about nullable value types, see [Nullable value types](../../language-reference/builtin-types/nullable-value-types.md). Because all value types have an accessible parameterless constructor, either declared or implicit, the `struct` constraint implies the `new()` constraint and can't be combined with the `new()` constraint. You can't combine the `struct` constraint with the `unmanaged` constraint.|
 |`where T : class`|The type argument must be a reference type. This constraint applies also to any class, interface, delegate, or array type. In a nullable context, `T` must be a non-nullable reference type. |
-|`where T : class?`|The type argument must be a reference type, either nullable or non-nullable. This constraint applies also to any class, interface, delegate, or array type.|
+|`where T : class?`|The type argument must be a reference type, either nullable or non-nullable. This constraint applies also to any class, interface, delegate, or array type, including records.|
 |`where T : notnull`|The type argument must be a non-nullable type. The argument can be a non-nullable reference type or a non-nullable value type. |
-|`where T : default`|This constraint resolves the ambiguity when you need to specify an unconstrained type parameter when you override a method or provide an explicit interface implementation. The `default` constraint implies the base method without either the `class` or `struct` constraint. For more information, see the [`default` constraint](~/_csharplang/proposals/csharp-9.0/unconstrained-type-parameter-annotations.md#default-constraint) spec proposal.|
 |`where T : unmanaged`|The type argument must be a non-nullable [unmanaged type](../../language-reference/builtin-types/unmanaged-types.md). The `unmanaged` constraint implies the `struct` constraint and can't be combined with either the `struct` or `new()` constraints.|
 |`where T : new()`|The type argument must have a public parameterless constructor. When used together with other constraints, the `new()` constraint must be specified last. The `new()` constraint can't be combined with the `struct` and `unmanaged` constraints.|
 |`where T :` *\<base class name>*|The type argument must be or derive from the specified base class. In a nullable context, `T` must be a non-nullable reference type derived from the specified base class. |
-|`where T :` *\<base class name>?*|The type argument must be or derive from the specified base class. In a nullable context, `T` may be either a nullable or non-nullable type derived from the specified base class. |
+|`where T :` *\<base class name>?*|The type argument must be or derive from the specified base class. In a nullable context, `T` can be either a nullable or non-nullable type derived from the specified base class. |
 |`where T :` *\<interface name>*|The type argument must be or implement the specified interface. Multiple interface constraints can be specified. The constraining interface can also be generic. In a nullable context, `T` must be a non-nullable type that implements the specified interface.|
-|`where T :` *\<interface name>?*|The type argument must be or implement the specified interface. Multiple interface constraints can be specified. The constraining interface can also be generic. In a nullable context, `T` may be a nullable reference type, a non-nullable reference type, or a value type. `T` may not be a nullable value type.|
-|`where T : U`|The type argument supplied for `T` must be or derive from the argument supplied for `U`. In a nullable context, if `U` is a non-nullable reference type, `T` must be non-nullable reference type. If `U` is a nullable reference type, `T` may be either nullable or non-nullable. |
+|`where T :` *\<interface name>?*|The type argument must be or implement the specified interface. Multiple interface constraints can be specified. The constraining interface can also be generic. In a nullable context, `T` can be a nullable reference type, a non-nullable reference type, or a value type. `T` can't be a nullable value type.|
+|`where T : U`|The type argument supplied for `T` must be or derive from the argument supplied for `U`. In a nullable context, if `U` is a non-nullable reference type, `T` must be a non-nullable reference type. If `U` is a nullable reference type, `T` can be either nullable or non-nullable. |
+|`where T : default`|This constraint resolves the ambiguity when you need to specify an unconstrained type parameter when you override a method or provide an explicit interface implementation. The `default` constraint implies the base method without either the `class` or `struct` constraint. For more information, see the [`default` constraint](~/_csharplang/proposals/csharp-9.0/unconstrained-type-parameter-annotations.md#default-constraint) spec proposal.|
+|`where T : allows ref struct`|This anti-constraint declares that the type argument for `T` can be a `ref struct` type. The generic type or method must obey ref safety rules for any instance of `T` because it might be a `ref struct`.|
+
+Some constraints are mutually exclusive, and some constraints must be in a specified order:
+
+- You can apply at most one of the `struct`, `class`, `class?`, `notnull`, and `unmanaged` constraints. If you supply any of these constraints, it must be the first constraint specified for that type parameter.
+- The base class constraint (`where T : Base` or `where T : Base?`) can't be combined with any of the constraints `struct`, `class`, `class?`, `notnull`, or `unmanaged`.
+- You can apply at most one base class constraint, in either form. If you want to support the nullable base type, use `Base?`.
+- You can't name both the non-nullable and nullable form of an interface as a constraint.
+- The `new()` constraint can't be combined with the `struct` or `unmanaged` constraint. If you specify the `new()` constraint, it must be the last constraint for that type parameter. Anti-constraints, if applicable, can follow the `new()` constraint.
+- The `default` constraint can be applied only on override or explicit interface implementations. It can't be combined with either the `struct` or `class` constraints.
+- The `allows ref struct` anti-constraint can't be combined with the `class` or `class?` constraint.
+- The `allows ref struct` anti-constraint must follow all constraints for that type parameter.
 
 ## Why use constraints
 
-Constraints specify the capabilities and expectations of a type parameter. Declaring those constraints means you can use the operations and method calls of the constraining type. If your generic class or method uses any operation on the generic members beyond simple assignment or calling any methods not supported by <xref:System.Object?displayProperty=nameWithType>, you'll apply constraints to the type parameter. For example, the base class constraint tells the compiler that only objects of this type or derived from this type will be used as type arguments. Once the compiler has this guarantee, it can allow methods of that type to be called in the generic class. The following code example demonstrates the functionality you can add to the `GenericList<T>` class (in [Introduction to Generics](../../../standard/generics/index.md)) by applying a base class constraint.
+Constraints specify the capabilities and expectations of a type parameter. Declaring those constraints means you can use the operations and method calls of the constraining type. You apply constraints to the type parameter when your generic class or method uses any operation on the generic members beyond simple assignment, which includes calling any methods not supported by <xref:System.Object?displayProperty=nameWithType>. For example, the base class constraint tells the compiler that only objects of this type or derived from this type can replace that type argument. Once the compiler has this guarantee, it can allow methods of that type to be called in the generic class. The following code example demonstrates the functionality you can add to the `GenericList<T>` class (in [Introduction to Generics](../../../standard/generics/index.md)) by applying a base class constraint.
 
 :::code language="csharp" source="./snippets/GenericWhereConstraints.cs" id="Snippet9":::
 
@@ -43,11 +55,11 @@ Multiple constraints can be applied to the same type parameter, and the constrai
 
 :::code language="csharp" source="./snippets/GenericWhereConstraints.cs" id="Snippet10":::
 
-When applying the `where T : class` constraint, avoid the `==` and `!=` operators on the type parameter because these operators will test for reference identity only, not for value equality. This behavior occurs even if these operators are overloaded in a type that is used as an argument. The following code illustrates this point; the output is false even though the <xref:System.String> class overloads the `==` operator.
+When applying the `where T : class` constraint, avoid the `==` and `!=` operators on the type parameter because these operators test for reference identity only, not for value equality. This behavior occurs even if these operators are overloaded in a type that is used as an argument. The following code illustrates this point; the output is false even though the <xref:System.String> class overloads the `==` operator.
 
 :::code language="csharp" source="./snippets/GenericWhereConstraints.cs" id="Snippet11":::
 
-The compiler only knows that `T` is a reference type at compile time and must use the default operators that are valid for all reference types. If you must test for value equality, the recommended way is to also apply the `where T : IEquatable<T>` or `where T : IComparable<T>` constraint and implement the interface in any class that will be used to construct the generic class.
+The compiler only knows that `T` is a reference type at compile time and must use the default operators that are valid for all reference types. If you must test for value equality, apply the `where T : IEquatable<T>` or `where T : IComparable<T>` constraint and implement the interface in any class used to construct the generic class.
 
 ## Constraining multiple parameters
 
@@ -59,9 +71,9 @@ You can apply constraints to multiple parameters, and multiple constraints to a 
 
  Type parameters that have no constraints, such as T in public class `SampleClass<T>{}`, are called unbounded type parameters. Unbounded type parameters have the following rules:
 
-- The `!=` and `==` operators can't be used because there's no guarantee that the concrete type argument will support these operators.
+- The `!=` and `==` operators can't be used because there's no guarantee that the concrete type argument supports these operators.
 - They can be converted to and from `System.Object` or explicitly converted to any interface type.
-- You can compare them to [null](../../language-reference/keywords/null.md). If an unbounded parameter is compared to `null`, the comparison will always return false if the type argument is a value type.
+- You can compare them to [null](../../language-reference/keywords/null.md). If an unbounded parameter is compared to `null`, the comparison always returns false if the type argument is a value type.
 
 ## Type parameters as constraints
 
@@ -89,9 +101,9 @@ The `class` constraint in a nullable context specifies that the type argument mu
 
 ## `default` constraint
 
-The addition of nullable reference types complicates the use of `T?` in a generic type or method. `T?` can be used with either the `struct` or `class` constraint, but one of them must be present. When the `class` constraint was used, `T?` referred to the nullable reference type for `T`. Beginning with C# 9, `T?` can be used when neither constraint is applied. In that case, `T?` is interpreted as `T?` for value types and reference types. However, if `T` is an instance of <xref:System.Nullable%601>, `T?` is the same as `T`. In other words, it doesn't become `T??`.
+The addition of nullable reference types complicates the use of `T?` in a generic type or method. `T?` can be used with either the `struct` or `class` constraint, but one of them must be present. When the `class` constraint was used, `T?` referred to the nullable reference type for `T`. `T?` can be used when neither constraint is applied. In that case, `T?` is interpreted as `T?` for value types and reference types. However, if `T` is an instance of <xref:System.Nullable%601>, `T?` is the same as `T`. In other words, it doesn't become `T??`.
 
-Because `T?` can now be used without either the `class` or `struct` constraint, ambiguities can arise in overrides or explicit interface implementations. In both those cases, the override doesn't include the constraints, but inherits them from the base class. When the base class doesn't apply either the `class` or `struct` constraint, derived classes need to somehow specify an override applies to the base method without either constraint. That's when the derived method applies the `default` constraint. The `default` constraint clarifies *neither* the `class` nor `struct` constraint.
+Because `T?` can now be used without either the `class` or `struct` constraint, ambiguities can arise in overrides or explicit interface implementations. In both those cases, the override doesn't include the constraints, but inherits them from the base class. When the base class doesn't apply either the `class` or `struct` constraint, derived classes need to somehow specify an override applies to the base method without either constraint. The derived method applies the `default` constraint. The `default` constraint clarifies *neither* the `class` nor `struct` constraint.
 
 ## Unmanaged constraint
 
@@ -109,11 +121,11 @@ You can use <xref:System.Delegate?displayProperty=nameWithType> or <xref:System.
 
 :::code language="csharp" source="./snippets/GenericWhereConstraints.cs" id="Snippet16":::
 
-You can use the above method to combine delegates that are the same type:
+You can use the preceding method to combine delegates that are the same type:
 
 :::code language="csharp" source="./snippets/GenericWhereConstraints.cs" id="Snippet17":::
 
-If you uncomment the last line, it won't compile. Both `first` and `test` are delegate types, but they're different delegate types.
+If you uncomment the last line, it doesn't compile. Both `first` and `test` are delegate types, but they're different delegate types.
 
 ## Enum constraints
 
@@ -140,11 +152,11 @@ This pattern enables the C# compiler to determine the containing type for the ov
 ```csharp
 public interface IAdditionSubtraction<T> where T : IAdditionSubtraction<T>
 {
-    public abstract static IAdditionSubtraction<T> operator +(
+    static abstract IAdditionSubtraction<T> operator +(
         IAdditionSubtraction<T> left,
         IAdditionSubtraction<T> right);
 
-    public abstract static IAdditionSubtraction<T> operator -(
+    static abstract IAdditionSubtraction<T> operator -(
         IAdditionSubtraction<T> left,
         IAdditionSubtraction<T> right);
 }
@@ -152,10 +164,53 @@ public interface IAdditionSubtraction<T> where T : IAdditionSubtraction<T>
 
 The preceding syntax would require implementers to use [explicit interface implementation](../interfaces/explicit-interface-implementation.md) for those methods. Providing the extra constraint enables the interface to define the operators in terms of the type parameters. Types that implement the interface can implicitly implement the interface methods.
 
+## Allows ref struct
+
+The `allows ref struct` anti-constraint declares that the corresponding type argument can be a [`ref struct`](../../language-reference/builtin-types/ref-struct.md) type. Instances of that type parameter must obey the following rules:
+
+- It can't be boxed.
+- It participates in [ref safety rules](~/_csharpstandard/standard/structs.md#16415-safe-context-constraint).
+- Instances can't be used where a `ref struct` type isn't allowed, such as `static` fields.
+- Instances can be marked with the `scoped` modifier.
+
+The `allows ref struct` clause isn't inherited. In the following code:
+
+```csharp
+class SomeClass<T, S>
+    where T : allows ref struct
+    where S : T
+{
+    // etc
+}
+```
+
+The argument for `S` can't be a `ref struct` because `S` doesn't have the `allows ref struct` clause.
+
+A type parameter that has the `allows ref struct` clause can't be used as a type argument unless the corresponding type parameter also has the `allows ref struct` clause. This rule is demonstrated in the following example:
+
+```csharp
+public class Allow<T> where T : allows ref struct
+{
+
+}
+
+public class Disallow<T>
+{
+}
+
+public class Example<T> where T : allows ref struct
+{
+    private Allow<T> fieldOne; // Allowed. T is allowed to be a ref struct
+
+    private Disallow<T> fieldTwo; // Error. T is not allowed to be a ref struct
+}
+```
+
+The preceding sample shows that a type argument that might be a `ref struct` type can't be substituted for a type parameter that can't be a `ref struct` type.
+
 ## See also
 
 - <xref:System.Collections.Generic>
-- [C# Programming Guide](../index.md)
 - [Introduction to Generics](../../fundamentals/types/generics.md)
 - [Generic Classes](./generic-classes.md)
 - [new Constraint](../../language-reference/keywords/new-constraint.md)

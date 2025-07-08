@@ -1,20 +1,28 @@
 {
     "redirections": [
         {
+            "source_path_from_root": "/docs/fundamentals/apicompat/package-validation/diagnostic-ids.md",
+            "redirect_url": "/dotnet/fundamentals/apicompat/diagnostic-ids"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/apicompat/preview-apis.md",
+            "redirect_url": "/dotnet/fundamentals/runtime-libraries/preview-apis"
+        },
+        {
             "source_path_from_root": "/docs/fundamentals/code-analysis/quality-rules/ca1071.md",
             "redirect_url": "/dotnet/fundamentals/code-analysis/quality-rules/index"
         },
         {
             "source_path_from_root": "/docs/fundamentals/code-analysis/quality-rules/ca1865.md",
-            "redirect_url": "/docs/fundamentals/code-analysis/quality-rules/ca1865-ca1867"
+            "redirect_url": "/dotnet/fundamentals/code-analysis/quality-rules/ca1865-ca1867"
         },
         {
             "source_path_from_root": "/docs/fundamentals/code-analysis/quality-rules/ca1866.md",
-            "redirect_url": "/docs/fundamentals/code-analysis/quality-rules/ca1865-ca1867"
+            "redirect_url": "/dotnet/fundamentals/code-analysis/quality-rules/ca1865-ca1867"
         },
         {
             "source_path_from_root": "/docs/fundamentals/code-analysis/quality-rules/ca1867.md",
-            "redirect_url": "/docs/fundamentals/code-analysis/quality-rules/ca1865-ca1867"
+            "redirect_url": "/dotnet/fundamentals/code-analysis/quality-rules/ca1865-ca1867"
         },
         {
             "source_path_from_root": "/docs/fundamentals/code-analysis/quality-rules/singlefile-warnings.md",
@@ -161,8 +169,65 @@
             "redirect_url": "/dotnet/fundamentals/networking/http/httpclient"
         },
         {
+            "source_path_from_root": "/docs/standard/commandline/customize-help.md",
+            "redirect_url": "/dotnet/standard/commandline/how-to-customize-help"
+        },
+        {
+            "source_path_from_root": "/docs/standard/commandline/define-commands.md",
+            "redirect_url": "/dotnet/standard/commandline/syntax#commands"
+        },
+        {
+            "source_path_from_root": "/docs/standard/commandline/dependency-injection.md",
+            "redirect_url": "/dotnet/standard/commandline/migration-guide-2.0.0-beta5#invocation"
+        },
+        {
+            "source_path_from_root": "/docs/standard/commandline/handle-termination.md",
+            "redirect_url": "/dotnet/standard/commandline/how-to-parse-and-invoke#process-termination-timeout"
+        },
+        {
+            "source_path_from_root": "/docs/standard/commandline/model-binding.md",
+            "redirect_url": "/dotnet/standard/commandline/how-to-parse-and-invoke"
+        },
+        {
+            "source_path_from_root": "/docs/standard/commandline/use-middleware.md",
+            "redirect_url": "/dotnet/standard/commandline/migration-guide-2.0.0-beta5#configuration"
+        },
+        {
+            "source_path_from_root": "/docs/standard/commandline/tab-completion.md",
+            "redirect_url": "/dotnet/standard/commandline/how-to-enable-tab-completion"
+        },
+        {
             "source_path_from_root": "/docs/fundamentals/networking/httpclient-guidelines.md",
             "redirect_url": "/dotnet/fundamentals/networking/http/httpclient-guidelines"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/package-validation/baseline-version-validator.md",
+            "redirect_url": "/dotnet/fundamentals/apicompat/package-validation/baseline-version-validator",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/package-validation/compatible-framework-in-package-validator.md",
+            "redirect_url": "/dotnet/fundamentals/apicompat/package-validation/compatible-framework-in-package-validator",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/package-validation/compatible-framework-validator.md",
+            "redirect_url": "/dotnet/fundamentals/apicompat/package-validation/compatible-framework-validator",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/package-validation/diagnostic-ids.md",
+            "redirect_url": "/dotnet/fundamentals/apicompat/diagnostic-ids",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/package-validation/overview.md",
+            "redirect_url": "/dotnet/fundamentals/apicompat/package-validation/overview",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/networking/networking-telemetry.md",
+            "redirect_url": "/dotnet/fundamentals/networking/telemetry/overview"
         },
         {
             "source_path_from_root": "/docs/fundamentals/productivity/code-analysis.md",
@@ -171,6 +236,14 @@
         {
             "source_path_from_root": "/docs/fundamentals/productivity/configure-code-analysis-rules.md",
             "redirect_url": "/dotnet/fundamentals/code-analysis/configuration-options"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-data-linq-dataloadoptions.md",
+            "redirect_url": "/dotnet/framework/data/adonet/sql/linq/"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/runtime-libraries/system-data-linq-mapping-tableattribute.md",
+            "redirect_url": "/dotnet/framework/data/adonet/sql/linq/"
         },
         {
             "source_path_from_root": "/docs/fundamentals/syslib-diagnostics/syslib1004.md",
@@ -198,10 +271,6 @@
         },
         {
             "source_path_from_root": "/docs/fundamentals/syslib-diagnostics/syslib1029.md",
-            "redirect_url": "/dotnet/fundamentals/syslib-diagnostics/source-generator-overview"
-        },
-        {
-            "source_path_from_root": "/docs/fundamentals/syslib-diagnostics/syslib1039.md",
             "redirect_url": "/dotnet/fundamentals/syslib-diagnostics/source-generator-overview"
         },
         {
@@ -405,44 +474,48 @@
             "redirect_url": "/dotnet/fundamentals/syslib-diagnostics/syslib1070-1089"
         },
         {
+            "source_path_from_root": "/docs/fundamentals/syslib-diagnostics/syslib1090-1099.md",
+            "redirect_url": "/dotnet/fundamentals/syslib-diagnostics/syslib-cominterfacegenerator"
+        },
+        {
             "source_path_from_root": "/docs/fundamentals/syslib-diagnostics/syslib1090.md",
-            "redirect_url": "/dotnet/fundamentals/syslib-diagnostics/syslib1090-1099"
+            "redirect_url": "/dotnet/fundamentals/syslib-diagnostics/syslib-cominterfacegenerator"
         },
         {
             "source_path_from_root": "/docs/fundamentals/syslib-diagnostics/syslib1091.md",
-            "redirect_url": "/dotnet/fundamentals/syslib-diagnostics/syslib1090-1099"
+            "redirect_url": "/dotnet/fundamentals/syslib-diagnostics/syslib-cominterfacegenerator"
         },
         {
             "source_path_from_root": "/docs/fundamentals/syslib-diagnostics/syslib1092.md",
-            "redirect_url": "/dotnet/fundamentals/syslib-diagnostics/syslib1090-1099"
+            "redirect_url": "/dotnet/fundamentals/syslib-diagnostics/syslib-cominterfacegenerator"
         },
         {
             "source_path_from_root": "/docs/fundamentals/syslib-diagnostics/syslib1093.md",
-            "redirect_url": "/dotnet/fundamentals/syslib-diagnostics/syslib1090-1099"
+            "redirect_url": "/dotnet/fundamentals/syslib-diagnostics/syslib-cominterfacegenerator"
         },
         {
             "source_path_from_root": "/docs/fundamentals/syslib-diagnostics/syslib1094.md",
-            "redirect_url": "/dotnet/fundamentals/syslib-diagnostics/syslib1090-1099"
+            "redirect_url": "/dotnet/fundamentals/syslib-diagnostics/syslib-cominterfacegenerator"
         },
         {
             "source_path_from_root": "/docs/fundamentals/syslib-diagnostics/syslib1095.md",
-            "redirect_url": "/dotnet/fundamentals/syslib-diagnostics/syslib1090-1099"
+            "redirect_url": "/dotnet/fundamentals/syslib-diagnostics/syslib-cominterfacegenerator"
         },
         {
             "source_path_from_root": "/docs/fundamentals/syslib-diagnostics/syslib1096.md",
-            "redirect_url": "/dotnet/fundamentals/syslib-diagnostics/syslib1090-1099"
+            "redirect_url": "/dotnet/fundamentals/syslib-diagnostics/syslib-cominterfacegenerator"
         },
         {
             "source_path_from_root": "/docs/fundamentals/syslib-diagnostics/syslib1097.md",
-            "redirect_url": "/dotnet/fundamentals/syslib-diagnostics/syslib1090-1099"
+            "redirect_url": "/dotnet/fundamentals/syslib-diagnostics/syslib-cominterfacegenerator"
         },
         {
             "source_path_from_root": "/docs/fundamentals/syslib-diagnostics/syslib1098.md",
-            "redirect_url": "/dotnet/fundamentals/syslib-diagnostics/syslib1090-1099"
+            "redirect_url": "/dotnet/fundamentals/syslib-diagnostics/syslib-cominterfacegenerator"
         },
         {
             "source_path_from_root": "/docs/fundamentals/syslib-diagnostics/syslib1099.md",
-            "redirect_url": "/dotnet/fundamentals/syslib-diagnostics/syslib1090-1099"
+            "redirect_url": "/dotnet/fundamentals/syslib-diagnostics/syslib-cominterfacegenerator"
         },
         {
             "source_path_from_root": "/docs/fundamentals/syslib-diagnostics/syslib1100.md",
@@ -521,8 +594,28 @@
             "redirect_url": "/dotnet/fundamentals/syslib-diagnostics/syslib1100-1118"
         },
         {
+            "source_path_from_root": "/docs/fundamentals/syslib-diagnostics/syslib5001.md",
+            "redirect_url": "/dotnet/fundamentals/syslib-diagnostics/experimental-overview"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/syslib-diagnostics/syslib5002.md",
+            "redirect_url": "/dotnet/fundamentals/syslib-diagnostics/experimental-overview"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/syslib-diagnostics/syslib5004.md",
+            "redirect_url": "/dotnet/fundamentals/syslib-diagnostics/experimental-overview"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/syslib-diagnostics/syslib5005.md",
+            "redirect_url": "/dotnet/fundamentals/syslib-diagnostics/experimental-overview"
+        },
+        {
             "source_path_from_root": "/docs/fundamentals/tools-and-productivity.md",
             "redirect_url": "/dotnet/toc/tools-diagnostics/index"
+        },
+        {
+            "source_path_from_root": "/docs/fundamentals/networking/http/http-autoclient.md",
+            "redirect_url": "/dotnet/fundamentals/networking/http/http-overview"
         }
     ]
 }

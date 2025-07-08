@@ -39,7 +39,9 @@ This change can affect [source compatibility](../../categories.md#source-compati
 
 ## Recommended action
 
-To continue using C++/CLI with .NET 7, upgrade to Visual Studio 2022 version 17.2 or a later version.
+To continue using C++/CLI with .NET 7, upgrade to Visual Studio 2022 version 17.2 or a later version. You might also need to set the [platform toolset](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset#platform-toolset) to v143.
+
+If you skipped .NET 7 when you upgraded to .NET 8, upgrade to Visual Studio 2022 version 17.8 or later and [platform toolset](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset#platform-toolset) v143 or later.
 
 ## Affected APIs
 

@@ -5,7 +5,6 @@ ms.date: "03/30/2017"
 helpviewer_keywords:
   - "UI Automation, events for clients"
   - "events, UI Automation clients"
-ms.assetid: b909e388-3f24-4997-b6d4-bd9c35c2dc27
 ---
 # UI Automation Events for Clients
 
@@ -60,4 +59,4 @@ ms.assetid: b909e388-3f24-4997-b6d4-bd9c35c2dc27
 - [Subscribe to UI Automation Events](subscribe-to-ui-automation-events.md)
 - [UI Automation Events Overview](ui-automation-events-overview.md)
 - [UI Automation Properties Overview](ui-automation-properties-overview.md)
-- [TrackFocus Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Accessibility/FocusTracker)
+- [TrackFocus Sample](https://github.com/Microsoft/WPF-Samples/tree/main/Accessibility/FocusTracker)

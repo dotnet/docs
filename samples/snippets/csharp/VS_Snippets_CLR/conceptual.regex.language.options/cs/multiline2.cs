@@ -1,4 +1,4 @@
-﻿// <Snippet4>
+// <Snippet4>
 using System;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
@@ -20,7 +20,7 @@ public class Multiline2Example
 
         // List scores in descending order.
         foreach (KeyValuePair<int, string> score in scores)
-            Console.WriteLine("{0}: {1}", score.Value, score.Key);
+            Console.WriteLine($"{score.Value}: {score.Key}");
     }
 }
 

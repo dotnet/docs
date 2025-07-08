@@ -187,7 +187,7 @@ An async method can also have a `void` return type. This return type is used pri
 
 An async method that has a `void` return type can't be awaited, and the caller of a void-returning method can't catch any exceptions that the method throws.
 
-An async method can't declare [in](../language-reference/keywords/in-parameter-modifier.md), [ref](../language-reference/keywords/ref.md) or [out](../language-reference/keywords/out-parameter-modifier.md) parameters, but the method can call methods that have such parameters. Similarly, an async method can't return a value by reference, although it can call methods with ref return values.
+An async method can't declare [in](../language-reference/keywords/method-parameters.md#in-parameter-modifier), [ref](../language-reference/keywords/ref.md) or [out](../language-reference/keywords/method-parameters.md#out-parameter-modifier) parameters, but the method can call methods that have such parameters. Similarly, an async method can't return a value by reference, although it can call methods with ref return values.
 
 For more information and examples, see [Async return types (C#)](async-return-types.md).
 
@@ -208,7 +208,7 @@ You can ignore the convention where an event, base class, or interface contract 
 
 | Title | Description |
 |--|--|
-| [How to make multiple web requests in parallel by using async and await (C#)](./index.md) | Demonstrates how to start several tasks at the same time. |
+| [How to make multiple web requests in parallel by using async and await (C#)](start-multiple-async-tasks-and-process-them-as-they-complete.md) | Demonstrates how to start several tasks at the same time. |
 | [Async return types (C#)](async-return-types.md) | Illustrates the types that async methods can return, and explains when each type is appropriate. |
 | Cancel tasks with a cancellation token as a signaling mechanism. | Shows how to add the following functionality to your async solution:<br><br> - [Cancel a list of tasks (C#)](cancel-an-async-task-or-a-list-of-tasks.md)<br>- [Cancel tasks after a period of time (C#)](cancel-async-tasks-after-a-period-of-time.md)<br>- [Process asynchronous task as they complete (C#)](start-multiple-async-tasks-and-process-them-as-they-complete.md) |
 | [Using async for file access (C#)](using-async-for-file-access.md) | Lists and demonstrates the benefits of using async and await to access files. |

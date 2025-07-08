@@ -28,16 +28,16 @@ Module Module1
                "FROM Production.Product;", sourceConnection)
             Dim reader As SqlDataReader = commandSourceData.ExecuteReader
 
-            ' Open the destination connection. In the real world you would 
-            ' not use SqlBulkCopy to move data from one table to the other   
+            ' Open the destination connection. In the real world you would
+            ' not use SqlBulkCopy to move data from one table to the other
             ' in the same database. This is for demonstration purposes only.
             Using destinationConnection As SqlConnection = _
                 New SqlConnection(connectionString)
                 destinationConnection.Open()
 
-                ' Set up the bulk copy object. 
-                ' The column positions in the source data reader 
-                ' match the column positions in the destination table, 
+                ' Set up the bulk copy object.
+                ' The column positions in the source data reader
+                ' match the column positions in the destination table,
                 ' so there is no need to map columns.
                 Using bulkCopy As SqlBulkCopy = _
                   New SqlBulkCopy(destinationConnection)
@@ -73,11 +73,7 @@ Module Module1
     End Sub
 
     Private Function GetConnectionString() As String
-        ' To avoid storing the sourceConnection string in your code, 
-        ' you can retrieve it from a configuration file. 
-        Return "Data Source=(local);" & _
-            "Integrated Security=true;" & _
-            "Initial Catalog=AdventureWorks;"
+        Throw New NotImplementedException()
     End Function
 End Module
 ' </Snippet1>

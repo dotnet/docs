@@ -20,7 +20,7 @@ For discussion, see issue [dotnet/aspnetcore#22807](https://github.com/dotnet/as
 
 Before ASP.NET Core 5.0 Preview 6, Kestrel didn't support changing configuration at run time.
 
-In ASP.NET Core 5.0 Preview 6, you could opt into the now-default behavior of reacting to configuration changes at run time. Opting in required binding Kestrel's configuration manually:
+In ASP.NET Core 5.0 Preview 6, you could opt in to the now-default behavior of reacting to configuration changes at run time. Opting in required binding Kestrel's configuration manually:
 
 ```csharp
 using Microsoft.AspNetCore.Hosting;

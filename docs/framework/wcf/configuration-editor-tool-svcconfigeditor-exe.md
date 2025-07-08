@@ -69,7 +69,7 @@ The viewer automatically follows the configuration merge path and creates a view
 
 ### Services
 
-The **Services** node displays all of the services currently assigned in the configuration file. Each sub-node in the tree corresponds to a sub-element of the <`services`> element in the configuration file.
+The **Services** node displays all of the services currently assigned in the configuration file. Each sub-node in the tree corresponds to a sub-element of the `<services>` element in the configuration file.
 
 When you click the **Services** node, you can view or perform tasks on the service Summary Page in the **Detail** Pane.
 
@@ -116,7 +116,7 @@ You can create a new service endpoint configuration in the following ways:
 
 ### Client
 
-The **Client** node displays all of the client endpoints in the configuration file. Every sub-node in the tree corresponds to a sub-element of the <`client`> element in the configuration file.
+The **Client** node displays all of the client endpoints in the configuration file. Every sub-node in the tree corresponds to a sub-element of the `<client>` element in the configuration file.
 
 When you click the **Client** node, you can view or perform tasks on the client **Summary Page** in the **Detail Pane**.
 
@@ -176,7 +176,7 @@ If the standard endpoint is in used, a warning message is displayed when you att
 
 Binding configurations are used to configure bindings on endpoints. Such configuration settings are stored in the **Binding** node. Endpoints reference binding configurations by name and multiple endpoints can reference a single binding configuration.
 
-The **Bindings** node displays all of the binding settings in the configuration file. Every sub-node in the tree corresponds to a sub-element in the <`bindings`> element in the configuration file.
+The **Bindings** node displays all of the binding settings in the configuration file. Every sub-node in the tree corresponds to a sub-element in the `<bindings>` element in the configuration file.
 
 When you click the **Bindings** node, you can view or perform tasks on the binding **Summary Page** in the **Detail Pane**.
 
@@ -220,7 +220,7 @@ A custom binding is a collection of binding elements that form a stack. Each bin
 
 ### Diagnostics
 
-The **Diagnostics** node displays all of the diagnostic settings in the configuration file. It enables you to turn performance counters on or off, enable or disable Windows Management Instrumentation (WMI), configure WCF tracing, and configure WCF message logging. The settings in the **Diagnostics** node correspond to the <`system.diagnostics`> section, and `<diagnostics>` section in `<system.serviceModel>` in the configuration file.
+The **Diagnostics** node displays all of the diagnostic settings in the configuration file. It enables you to turn performance counters on or off, enable or disable Windows Management Instrumentation (WMI), configure WCF tracing, and configure WCF message logging. The settings in the **Diagnostics** node correspond to the `<system.diagnostics>` section, and `<diagnostics>` section in `<system.serviceModel>` in the configuration file.
 
 When you click the **Diagnostics** node, you can view or perform tasks on the diagnostics **Summary Page** in the **Detail Pane**.
 
@@ -384,7 +384,7 @@ One way to create a new configuration file is to use the New Service Element Wiz
 
 ## Configuring COM+
 
-The Service Configuration Editor enables you to create a new configuration file for an existing COM+ application, or edit an existing COM+ configuration. The **COM Contract** node is only visible when the <`comContract`> section exists in the configuration file.
+The Service Configuration Editor enables you to create a new configuration file for an existing COM+ application, or edit an existing COM+ configuration. The **COM Contract** node is only visible when the `<comContract>` section exists in the configuration file.
 
 ### Creating a New COM+ Configuration
 

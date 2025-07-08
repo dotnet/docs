@@ -1,7 +1,7 @@
 ---
 title: "How to: Write text to a file"
 description: Learn ways to write or append text to a file for a .NET app. Use methods from the StreamWriter or File classes to write text synchronously or asynchronously.
-ms.date: "07/18/2022"
+ms.date: "03/15/2024"
 ms.custom: devdivchpfy22
 dev_langs: 
   - "csharp"

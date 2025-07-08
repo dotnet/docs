@@ -260,7 +260,7 @@ void Time_TimeSpan()
 void Time_DateTime()
 {
     //<time_datetime>
-    var theTime = new TimeOnly(11, 25, 46);   // 11:25 PM and 46 seconds
+    var theTime = new TimeOnly(11, 25, 46);   // 11:25 AM and 46 seconds
     var theDate = new DateOnly(2015, 10, 21); // October 21, 2015
     var theDateTime = theDate.ToDateTime(theTime);
     var reverseTime = TimeOnly.FromDateTime(theDateTime);

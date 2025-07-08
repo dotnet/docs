@@ -1,13 +1,13 @@
 ---
-title: String interpolation in C#
+title: String interpolation
 description: Learn how to include formatted expression results in a result string in C# with string interpolation.
 author: pkulikov
-ms.technology: csharp-fundamentals
-ms.date: 08/28/2023
+ms.subservice: fundamentals
+ms.date: 05/05/2025
 ---
 # String interpolation in C\#
 
-This tutorial shows you how to use [string interpolation](../language-reference/tokens/interpolated.md) to format and include expression results in a result string. The examples assume that you are familiar with basic C# concepts and .NET type formatting. If you are new to string interpolation or .NET type formatting, check out the [interactive string interpolation tutorial](exploration/interpolated-strings.yml) first. For more information about formatting types in .NET, see [Formatting types in .NET](../../standard/base-types/formatting-types.md).
+This tutorial shows you how to use [string interpolation](../language-reference/tokens/interpolated.md) to format and include expression results in a result string. The examples assume that you're familiar with basic C# concepts and .NET type formatting. For more information about formatting types in .NET, see [Formatting types in .NET](../../standard/base-types/formatting-types.md).
 
 ## Introduction
 
@@ -21,11 +21,19 @@ As the example shows, you include an expression in an interpolated string by enc
 {<interpolationExpression>}
 ```
 
-Interpolated strings support all the capabilities of the [string composite formatting](../../standard/base-types/composite-formatting.md) feature. That makes them a more readable alternative to the use of the <xref:System.String.Format%2A?displayProperty=nameWithType> method.
+Interpolated strings support all the capabilities of the [string composite formatting](../../standard/base-types/composite-formatting.md) feature. That makes them a more readable alternative to the use of the <xref:System.String.Format%2A?displayProperty=nameWithType> method. Every interpolated string must have:
+
+- A string literal that begins with the `$` character before its opening quotation mark character. There can't be any spaces between the `$` symbol and the quotation mark character.
+- One or more *interpolation expressions*. You indicate an interpolation expression with an opening and closing brace (`{` and `}`). You can put any C# expression that returns a value (including `null`) inside the braces.
+
+C# evaluates the expression between the `{` and `}` characters with the following rules:
+
+- If the interpolation expression evaluates to `null`, an empty string ("", or <xref:System.String.Empty?displayProperty=nameWithType>) is used.
+- If the interpolation expression doesn't evaluate to `null`, typically the `ToString` method of the result type is called.
 
 ## How to specify a format string for an interpolation expression
 
-To specify a format string that is supported by the type of the expression result, follow the interpolation expression with a colon (":") and the format string:
+To specify a format string supported by the type of the expression result, follow the interpolation expression with a colon (":") and the format string:
 
 ```csharp
 {<interpolationExpression>:<formatString>}
@@ -42,30 +50,34 @@ For more information, see the [Format string component](../../standard/base-type
 To specify the minimum field width and the alignment of the formatted expression result, follow the interpolation expression with a comma (",") and the constant expression:
 
 ```csharp
-{<interpolationExpression>,<alignment>}
+{<interpolationExpression>,<width>}
 ```
 
-If the *alignment* value is positive, the formatted expression result is right-aligned; if negative, it's left-aligned.
+The following code sample uses the minimum field width to create a tabular output:
 
-If you need to specify both alignment and a format string, start with the alignment component:
+:::code language="csharp" interactive="try-dotnet-method" source="./snippets/StringInterpolation/Program.cs" id="AlignmentString":::
+
+If the *width* value is positive, the formatted expression result is right-aligned; if negative, it's left-aligned. Remove the `-` signs before the width specifier and run the sample again to see the results.
+
+If you need to specify both width and a format string, start with the width component:
 
 ```csharp
-{<interpolationExpression>,<alignment>:<formatString>}
+{<interpolationExpression>,<width>:<formatString>}
 ```
 
-The following example shows how to specify alignment and uses pipe characters ("|") to delimit text fields:
+The following example shows how to specify width and alignment, and uses pipe characters ("|") to delimit text fields:
 
 :::code language="csharp" interactive="try-dotnet-method" source="./snippets/StringInterpolation/Program.cs" id="AlignmentAndFormatString":::
 
-As the example output shows, if the length of the formatted expression result exceeds specified field width, the *alignment* value is ignored.
+As the example output shows, if the length of the formatted expression result exceeds specified field width, the *width* value is ignored.
 
-For more information, see the [Alignment component](../../standard/base-types/composite-formatting.md#alignment-component) section of the [Composite formatting](../../standard/base-types/composite-formatting.md) article.
+For more information, see the [Width component](../../standard/base-types/composite-formatting.md#width-component) section of the [Composite formatting](../../standard/base-types/composite-formatting.md) article.
 
 ## How to use escape sequences in an interpolated string
 
 Interpolated strings support all escape sequences that can be used in ordinary string literals. For more information, see [String escape sequences](../programming-guide/strings/index.md#string-escape-sequences).
 
-To interpret escape sequences literally, use a [verbatim](../language-reference/tokens/verbatim.md) string literal. An interpolated verbatim string starts with the both `$` and `@` characters. You can use `$` and `@` in any order: both `$@"..."` and `@$"..."` are valid interpolated verbatim strings.
+To interpret escape sequences literally, use a [verbatim](../language-reference/tokens/verbatim.md) string literal. An interpolated verbatim string starts with both the `$` and `@` characters. You can use `$` and `@` in any order: both `$@"..."` and `@$"..."` are valid interpolated verbatim strings.
 
 To include a brace, "{" or "}", in a result string, use two braces, "{{" or "}}". For more information, see the [Escaping braces](../../standard/base-types/composite-formatting.md#escaping-braces) section of the [Composite formatting](../../standard/base-types/composite-formatting.md) article.
 

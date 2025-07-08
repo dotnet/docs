@@ -139,7 +139,7 @@ The operator interfaces correspond to the various operators available to the C# 
 | Interface name                                     | Defined operators                        |
 |----------------------------------------------------|------------------------------------------|
 | <xref:System.Numerics.IAdditionOperators%603>      | `x + y`                                  |
-| <xref:System.Numerics.IBitwiseOperators%603>       | `x & y`, `x | y`, `x ^ y`, and `~x`      |
+| <xref:System.Numerics.IBitwiseOperators%603>       | `x & y`, 'x &#124; y', `x ^ y`, and `~x` |
 | <xref:System.Numerics.IComparisonOperators%603>    | `x < y`, `x > y`, `x <= y`, and `x >= y` |
 | <xref:System.Numerics.IDecrementOperators%601>     | `--x` and `x--`                          |
 | <xref:System.Numerics.IDivisionOperators%603>      | `x / y`                                  |

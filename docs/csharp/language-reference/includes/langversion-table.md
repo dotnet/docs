@@ -7,6 +7,9 @@ ms.custom: "updateeachrelease"
 | `preview`                     | The compiler accepts all valid language syntax from the latest preview version.                         |
 | `latest`                      | The compiler accepts syntax from the latest released version of the compiler (including minor version). |
 | `latestMajor`<br>or `default` | The compiler accepts syntax from the latest released major version of the compiler.                     |
+| `14.0`                        | The compiler accepts only syntax that is included in C# 14 or lower.                                    |
+| `13.0`                        | The compiler accepts only syntax that is included in C# 13 or lower.                                    |
+| `12.0`                        | The compiler accepts only syntax that is included in C# 12 or lower.                                    |
 | `11.0`                        | The compiler accepts only syntax that is included in C# 11 or lower.                                    |
 | `10.0`                        | The compiler accepts only syntax that is included in C# 10 or lower.                                    |
 | `9.0`                         | The compiler accepts only syntax that is included in C# 9 or lower.                                     |

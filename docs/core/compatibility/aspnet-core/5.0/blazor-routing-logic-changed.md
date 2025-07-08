@@ -26,7 +26,7 @@ The original behavior is considered a bug in the implementation. As a goal, the 
 
 ## Recommended action
 
-If upgrading from previous versions of Blazor to 5.x, use the `PreferExactMatches` attribute on the `Router` component. This attribute can be used to opt into the correct behavior. For example:
+If upgrading from previous versions of Blazor to 5.x, use the `PreferExactMatches` attribute on the `Router` component. This attribute can be used to opt in to the correct behavior. For example:
 
 ```razor
 <Router AppAssembly="@typeof(Program).Assembly" PreferExactMatches="true">

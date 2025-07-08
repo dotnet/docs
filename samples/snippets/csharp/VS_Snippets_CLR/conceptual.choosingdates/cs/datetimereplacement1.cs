@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 
 public struct StoreInfo
@@ -34,7 +34,7 @@ public struct StoreInfo
             storeDelta = tz.GetAdjustmentRules()[tz.GetAdjustmentRules().Length - 1].DaylightDelta;
 
          TimeSpan comparisonTime = time + (offset - tz.BaseUtcOffset).Negate() + (delta - storeDelta).Negate();
-         return comparisonTime >= open & comparisonTime <= close;
+         return comparisonTime >= open && comparisonTime <= close;
       }
    }
 }
@@ -54,19 +54,17 @@ public class Example
       // Store closes at 9:30.
       store103.close = new TimeSpan(21, 30, 0);
 
-      Console.WriteLine("Store is open now at {0}: {1}",
-                        DateTime.Now.TimeOfDay, store103.IsOpenNow());
+      Console.WriteLine($"Store is open now at {DateTime.Now.TimeOfDay}: {store103.IsOpenNow()}");
       TimeSpan[] times = { new TimeSpan(8, 0, 0), new TimeSpan(21, 0, 0),
                            new TimeSpan(4, 59, 0), new TimeSpan(18, 31, 0) };
       foreach (var time in times)
-         Console.WriteLine("Store is open at {0}: {1}",
-                           time, store103.IsOpenAt(time));
+         Console.WriteLine($"Store is open at {time}: {store103.IsOpenAt(time)}");
    }
 }
 // The example displays the following output:
 //       Store is open now at 15:29:01.6129911: True
 //       Store is open at 08:00:00: True
-//       Store is open at 21:00:00: False
+//       Store is open at 21:00:00: True
 //       Store is open at 04:59:00: False
-//       Store is open at 18:31:00: False
+//       Store is open at 18:31:00: True
 // </Snippet2>

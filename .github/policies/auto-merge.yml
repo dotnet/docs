@@ -1,0 +1,48 @@
+id:
+name: GitOps.PullRequestIssueManagement
+description: GitOps.PullRequestIssueManagement primitive
+owner:
+resource: repository
+disabled: false
+where:
+configuration:
+  resourceManagementConfiguration:
+    eventResponderTasks:
+    - description: Approve and auto-squash-merge bot PRs to main labeled 'auto-merge'
+      triggerOnOwnActions: true
+      if:
+        - payloadType: Pull_Request
+        - labelAdded:
+            label: ':octocat: auto-merge'
+        - targetsBranch:
+            branch: main
+        - isActivitySender:
+            user: dotnet-policy-service[bot]
+      then:
+        - enableAutoMerge:
+            mergeMethod: Squash
+        - approvePullRequest:
+            comment: "Approved; this PR will merge when all status checks pass."
+
+    - description: Auto-merge policy service bot PRs to live labeled 'auto-merge'
+      triggerOnOwnActions: true
+      if:
+        - payloadType: Pull_Request
+        - labelAdded:
+            label: ':octocat: auto-merge'
+        - targetsBranch:
+            branch: live
+        - isActivitySender:
+            user: dotnet-policy-service[bot]
+      then:
+        - enableAutoMerge:
+            mergeMethod: Merge
+
+    - description: Don't auto-merge PRs with 'auto-merge' label removed
+      if:
+        - payloadType: Pull_Request
+        - labelRemoved:
+            label: ':octocat: auto-merge'
+      then:
+        - disableAutoMerge
+

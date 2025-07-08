@@ -7,6 +7,8 @@
 
 *    @dotnet/docs
 
+.github/ @dotnet/docs
+
 # Order is important. The last matching pattern has the most precedence.
 # The folders are ordered as follows:
 # . Guides
@@ -19,219 +21,227 @@
 # This should make it easy to add new rules without breaking existing ones.
 
 ######## API landing page ###########
-/api/ @dotnet/docs
+/api/ @gewarren @dotnet/docs
+
+######## Includes files ###########
+/includes/ @dotnet/docs
 
 ############ What's new ###############
-/docs/whats-new/ @billwagner
+/docs/whats-new/ @billwagner @dotnet/docs
 
 ############ Guides ################
 # .NET Core
 /docs/core/ @dotnet/docs
 
+# .NET fundamentals
+/docs/fundamentals/ @dotnet/docs
+
 # .NET Framework
 /docs/framework/ @dotnet/docs
 
 # .NET Standard
-/docs/standard/ @gewarren
+/docs/standard/ @gewarren @dotnet/docs
 
 # The C# Guide:
-/docs/csharp/ @BillWagner
+/docs/csharp/ @BillWagner @dotnet/docs
 
 # The F# Guide:
-/docs/fsharp/ @dotnet/docs @kathleendollard
+/docs/fsharp/ @BillWagner @dotnet/fsharp-team-msft @dotnet/docs
 
 # The Visual Basic Guide:
-/docs/visual-basic/ @KathleenDollard @BillWagner
+/docs/visual-basic/ @BillWagner @dotnet/docs
 
 # The ML.NET Guide:
-/docs/machine-learning/ @luisquintanilla
-
-# The .NET for Apache Spark Guide:
-/docs/spark/ @luisquintanilla
+/docs/machine-learning/ @gewarren @luisquintanilla @JakeRadMSFT @dotnet/docs
 
 # The .NET Architecture Guide:
-/docs/architecture/ @nishanil @IEvangelist
+/docs/architecture/ @nishanil @IEvangelist @dotnet/docs
 
 # .NET Orleans
-/docs/orleans/ @IEvangelist
+/docs/orleans/ @IEvangelist @dotnet/docs
+
+# IoT Guide
+/docs/iot/ @dotnet/docs
+
+############### AI ################
+
+/docs/ai/ @gewarren @alexwolfmsft @dotnet/docs
 
 ############### Azure ################
 
 # Azure Guide
-/docs/azure/ @alexwolfmsft @CamSoper
+/docs/azure/ @alexwolfmsft @dotnet/docs
 
 # Azure SDK package list
 /docs/azure/includes/ @dotnet/docs
 
 # Azure SDK catch-all entry
-/docs/azure/sdk/ @jsquire @pallavit
+/docs/azure/sdk/ @jsquire @alexwolfmsft @scottaddie @dotnet/docs
 
 # Azure SDK authentication topics
-/docs/azure/sdk/authentication/ @christothes @schaabs
+/docs/azure/sdk/authentication/ @JonathanCrd @christothes @dotnet/docs @alexwolfmsft @scottaddie
 
 # Azure SDK miscellaneous topics
-/docs/azure/sdk/azure-sdk-configure-proxy.md @annelo-msft @christothes @JoshLove-msft @KrzysztofCwalina @jsquire
-/docs/azure/sdk/azure-sdk-for-net.md @jsquire @pallavit
-/docs/azure/sdk/dependency-injection.md @JoshLove-msft @jsquire
-/docs/azure/sdk/logging.md @annelo-msft @christothes @JoshLove-msft @KrzysztofCwalina @jsquire
-/docs/azure/sdk/packages.md @jsquire @pallavit
-/docs/azure/sdk/pagination.md @annelo-msft @christothes @JoshLove-msft @KrzysztofCwalina @jsquire
-/docs/azure/sdk/resource-management.md @ArthurMa1978 @m-nash
-/docs/azure/sdk/thread-safety.md @annelo-msft @christothes @JoshLove-msft @KrzysztofCwalina @jsquire
-/docs/azure/sdk/unit-testing-mocking.md @annelo-msft @christothes @JoshLove-msft @KrzysztofCwalina @jsquire
+/docs/azure/sdk/azure-sdk-configure-proxy.md @annelo-msft @christothes @JoshLove-msft @KrzysztofCwalina @jsquire @alexwolfmsft @scottaddie @dotnet/docs
+/docs/azure/sdk/azure-sdk-for-net.md @jsquire @alexwolfmsft @scottaddie @dotnet/docs
+/docs/azure/sdk/dependency-injection.md @JoshLove-msft @jsquire @alexwolfmsft @scottaddie @dotnet/docs
+/docs/azure/sdk/logging.md @annelo-msft @christothes @JoshLove-msft @KrzysztofCwalina @jsquire @alexwolfmsft
+/docs/azure/sdk/packages.md @jsquire @alexwolfmsft @scottaddie @dotnet/docs
+/docs/azure/sdk/pagination.md @annelo-msft @christothes @JoshLove-msft @KrzysztofCwalina @jsquire @alexwolfmsft @scottaddie @dotnet/docs
+/docs/azure/sdk/protocol-convenience-methods.md @annelo-msft @jsquire @alexwolfmsft @scottaddie @dotnet/docs
+/docs/azure/sdk/resource-management.md @ArthurMa1978 @m-nash @alexwolfmsft @scottaddie @dotnet/docs
+/docs/azure/sdk/thread-safety.md @annelo-msft @christothes @JoshLove-msft @KrzysztofCwalina @jsquire @alexwolfmsft @scottaddie @dotnet/docs
+/docs/azure/sdk/unit-testing-mocking.md @annelo-msft @christothes @JoshLove-msft @KrzysztofCwalina @jsquire @alexwolfmsft @scottaddie @dotnet/docs
 
-# IoT Guide
-/docs/iot/ @CamSoper
-
-# Includes files
-/includes/ @dotnet/docs
-
-############### .NET 5 ################
+############### Fundamentals ################
 
 # Code analysis
-/docs/fundamentals/code-analysis/ @gewarren
+/docs/fundamentals/code-analysis/ @gewarren @dotnet/docs
 
 ############### .NET Core ########################
-# What's New
-/docs/core/whats-new/ @adegeo
+# Breaking changes
+/docs/core/compatibility/ @dotnet/docs
+# Containers
+/docs/core/containers/ @dotnet/docs
 # Deployment
-/docs/core/deploying/ @adegeo
+/docs/core/deploying/ @adegeo @dotnet/docs
 # Diagnostics
 /docs/core/diagnostics/ @tommcdon @dotnet/docs
-# Extensions
-/docs/core/extensions/ @IEvangelist
 # Docker
-/docs/core/docker/ @IEvangelist
+/docs/core/docker/ @IEvangelist @dotnet/docs
+# Extensions
+/docs/core/extensions/ @IEvangelist @dotnet/docs
 # Install
-/docs/core/install/ @adegeo
-# Breaking changes
-/docs/core/compatibility/ @gewarren
+/docs/core/install/ @adegeo @dotnet/docs
 # Project SDKs
-/docs/core/project-sdk/ @gewarren
+/docs/core/project-sdk/ @gewarren @dotnet/docs
 # Config settings
-/docs/core/runtime-config/ @gewarren
+/docs/core/runtime-config/ @gewarren @dotnet/docs
 # Testing
-/docs/core/testing/ @IEvangelist
+/docs/core/testing/ @IEvangelist @dotnet/docs
 # Tools
-/docs/core/tools/ @tdykstra
+/docs/core/tools/ @tdykstra @dotnet/docs
 # Tutorials
-/docs/core/tutorials/ @tdykstra
+/docs/core/tutorials/ @tdykstra @dotnet/docs
+# What's new
+/docs/core/whats-new/ @dotnet/docs
 
 ################### .NET Framework ##################
 # App domains
-/docs/framework/app-domains/ @gewarren
+/docs/framework/app-domains/ @gewarren @dotnet/docs
 # Config - WinForms
-/docs/framework/configure-apps/file-schema/winforms/ @adegeo
+/docs/framework/configure-apps/file-schema/winforms/ @adegeo @dotnet/docs
 # Deployment
-/docs/framework/deployment/ @adegeo
+/docs/framework/deployment/ @adegeo @dotnet/docs
 # Installation
-/docs/framework/install/ @adegeo
+/docs/framework/install/ @adegeo @dotnet/docs
 # Migration guide
-/docs/framework/migration-guide/ @gewarren
+/docs/framework/migration-guide/ @gewarren @dotnet/docs
 # Reflection
-/docs/framework/reflection-and-codedom/ @adegeo
+/docs/framework/reflection-and-codedom/ @adegeo @dotnet/docs
 # Resources
-/docs/framework/resources/ @adegeo
+/docs/framework/resources/ @adegeo @dotnet/docs
 # Tools
-/docs/framework/tools/ @gewarren
+/docs/framework/tools/ @gewarren @dotnet/docs
 # UI Automation
-/docs/framework/ui-automation/ @adegeo
+/docs/framework/ui-automation/ @adegeo @dotnet/docs
 # What's New
-/docs/framework/whats-new/ @gewarren
+/docs/framework/whats-new/ @gewarren @dotnet/docs
 # Winforms
-/docs/framework/winforms/ @adegeo
+/docs/framework/winforms/ @adegeo @dotnet/docs
 # WPF
-/docs/framework/wpf/ @adegeo
+/docs/framework/wpf/ @adegeo @dotnet/docs
 # XAML Services
-/docs/framework/xaml-services/ @adegeo
+/docs/framework/xaml-services/ @adegeo @dotnet/docs
 # ADO.NET
-/docs/framework/data/ @mcleblanc
+/docs/framework/data/ @dotnet/docs
 # NCL
-/docs/framework/configure-apps/file-schema/network/ @karelz
-/docs/framework/network-programming/ @karelz
+/docs/framework/configure-apps/file-schema/network/ @karelz @dotnet/docs
+/docs/framework/network-programming/ @karelz @dotnet/docs
 # WCF
-/docs/framework/configure-apps/file-schema/wcf/ @HongGit
-/docs/framework/wcf/ @HongGit
+/docs/framework/configure-apps/file-schema/wcf/ @dotnet/docs
+/docs/framework/wcf/ @dotnet/docs
 
 ################## .NET Standard ##################
 # Analyzers
-/docs/standard/analyzers/ @IEvangelist
+/docs/standard/analyzers/ @IEvangelist @dotnet/docs
 # Assembly
-/docs/standard/assembly/ @IEvangelist
+/docs/standard/assembly/ @IEvangelist @dotnet/docs
 # Asynchronous Programming Patterns
-/docs/standard/asynchronous-programming-patterns/ @BillWagner
+/docs/standard/asynchronous-programming-patterns/ @BillWagner @dotnet/docs
 # Attributes
-/docs/standard/attributes/ @gewarren
+/docs/standard/attributes/ @gewarren @dotnet/docs
 # Character encoding
-/docs/standard/base-types/character-encoding/ @gewarren
-/docs/standard/base-types/character-encoding-introduction/ @gewarren
+/docs/standard/base-types/character-encoding/ @gewarren @dotnet/docs
+/docs/standard/base-types/character-encoding-introduction/ @gewarren @dotnet/docs
 # Base types
-/docs/standard/base-types/ @adegeo
+/docs/standard/base-types/ @adegeo @dotnet/docs
 # Collections
-/docs/standard/collections/ @IEvangelist
+/docs/standard/collections/ @IEvangelist @dotnet/docs
 # System.CommandLine
-/docs/standard/commandline/ @tdykstra
+/docs/standard/commandline/ @tdykstra @dotnet/docs
 # Data
-/docs/standard/data/ @gewarren
+/docs/standard/data/ @gewarren @dotnet/docs
 # Data - SQLite
-/docs/standard/data/sqlite/ @bricelam
+/docs/standard/data/sqlite/ @dotnet/docs
 # Datetime
-/docs/standard/datetime/ @adegeo
+/docs/standard/datetime/ @adegeo @dotnet/docs
 # Design guidelines
-/docs/standard/design-guidelines/ @BillWagner
+/docs/standard/design-guidelines/ @BillWagner @dotnet/docs
 # Events
-/docs/standard/events/ @IEvangelist
+/docs/standard/events/ @IEvangelist @dotnet/docs
 # Exceptions
-/docs/standard/exceptions/ @gewarren
+/docs/standard/exceptions/ @gewarren @dotnet/docs
 # GC
-/docs/standard/garbage-collection/ @gewarren
+/docs/standard/garbage-collection/ @gewarren @dotnet/docs
 # Generics
-/docs/standard/generics/ @adegeo
+/docs/standard/generics/ @adegeo @dotnet/docs
 # Globalization
-/docs/standard/globalization-localization/ @dotnet/docs
+/docs/standard/globalization-localization/ @dotnet/docs @dotnet/docs
 # I/O
-/docs/standard/io/ @adegeo
+/docs/standard/io/ @adegeo @dotnet/docs
 # Library guidance
-/docs/standard/library-guidance/ @jamesnk @IEvangelist
+/docs/standard/library-guidance/ @jamesnk @IEvangelist @dotnet/docs
 # LINQ
 /docs/standard/linq/ @dotnet/docs
 # Memory and spans
-/docs/standard/memory-and-spans/ @gewarren
+/docs/standard/memory-and-spans/ @gewarren @dotnet/docs
 # Native Interop
-/docs/standard/native-interop/ @jkoritzinsky
+/docs/standard/native-interop/ @jkoritzinsky @dotnet/docs
 # Parallel programming
-/docs/standard/parallel-programming/ @IEvangelist
+/docs/standard/parallel-programming/ @IEvangelist @dotnet/docs
 # Security
-/docs/standard/security/ @IEvangelist
+/docs/standard/security/ @IEvangelist @dotnet/docs
 # Serialization
-/docs/standard/serialization/ @gewarren
+/docs/standard/serialization/ @gewarren @dotnet/docs
 # Threading
-/docs/standard/threading/ @BillWagner
+/docs/standard/threading/ @BillWagner @dotnet/docs
 # What's New
 /docs/standard/whats-new/ @dotnet/docs
 
 ################## E-books ##################
 # Blazor:
-/docs/architecture/blazor-for-web-forms-developers/ @danroth27 @IEvangelist
+/docs/architecture/blazor-for-web-forms-developers/ @danroth27 @IEvangelist @dotnet/docs
 # gRPC:
-/docs/architecture/grpc-for-wcf-developers/ @IEvangelist
+/docs/architecture/grpc-for-wcf-developers/ @IEvangelist @dotnet/docs
 # Desktop:
-/docs/architecture/modernize-desktop/ @OliaG @IEvangelist
+/docs/architecture/modernize-desktop/ @IEvangelist @dotnet/docs
 
 ################# Samples folder ##############
 
 ## These have been pulled directly from the samples repo:
 
-/samples/snippets/csharp/ @BillWagner @IEvangelist
+# C# snippets:
+/samples/snippets/csharp/ @BillWagner @IEvangelist @dotnet/docs
 # Visual Basic snippets:
-/samples/snippets/visualbasic/ @BillWagner
+/samples/snippets/visualbasic/ @BillWagner @dotnet/docs
 # F# Snippets:
 /samples/snippets/fsharp/ @dotnet/docs
 
 # WPF folders:
-/samples/snippets/xaml/wpf/   @adegeo
-/samples/snippets/csharp/wpf/   @adegeo
-/samples/snippets/visualbasic/wpf/   @adegeo
-/samples/snippets/desktop-guide/wpf/   @adegeo
+/samples/snippets/xaml/wpf/   @adegeo @dotnet/docs
+/samples/snippets/csharp/wpf/   @adegeo @dotnet/docs
+/samples/snippets/visualbasic/wpf/   @adegeo @dotnet/docs
+/samples/snippets/desktop-guide/wpf/   @adegeo @dotnet/docs
 
-/samples/snippets/winforms/  @adegeo
+/samples/snippets/winforms/  @adegeo @dotnet/docs

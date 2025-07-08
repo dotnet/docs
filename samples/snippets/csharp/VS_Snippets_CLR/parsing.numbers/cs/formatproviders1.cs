@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Globalization;
 
@@ -15,19 +15,17 @@ public class Example
          try {
             culture = CultureInfo.CreateSpecificCulture("en-US");
             number = Double.Parse(value, culture);
-            Console.WriteLine("{0}: {1} --> {2}", culture.Name, value, number);
+            Console.WriteLine($"{culture.Name}: {value} --> {number}");
          }
          catch (FormatException) {
-            Console.WriteLine("{0}: Unable to parse '{1}'.",
-                              culture.Name, value);
+            Console.WriteLine($"{culture.Name}: Unable to parse '{value}'.");
             culture = CultureInfo.CreateSpecificCulture("fr-FR");
             try {
                number = Double.Parse(value, culture);
-               Console.WriteLine("{0}: {1} --> {2}", culture.Name, value, number);
+               Console.WriteLine($"{culture.Name}: {value} --> {number}");
             }
             catch (FormatException) {
-               Console.WriteLine("{0}: Unable to parse '{1}'.",
-                                 culture.Name, value);
+               Console.WriteLine($"{culture.Name}: Unable to parse '{value}'.");
             }
          }
          Console.WriteLine();

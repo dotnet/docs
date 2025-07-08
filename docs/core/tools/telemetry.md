@@ -76,7 +76,7 @@ The telemetry feature collects the following data:
 | >=5.0.100     | Hashed RuntimeIdentifier used for build (MSBuild property) |
 | >=5.0.100     | Hashed SelfContained used for build (MSBuild property) |
 | >=5.0.100     | Hashed UseApphost used for build (MSBuild property) |
-| >=5.0.100     | Hashed OutputType used for build (MSBuild property  |
+| >=5.0.100     | Hashed OutputType used for build (MSBuild property) |
 | >=5.0.201     | Hashed PublishReadyToRun used for build (MSBuild property) |
 | >=5.0.201     | Hashed PublishTrimmed used for build (MSBuild property) |
 | >=5.0.201     | Hashed PublishSingleFile used for build (MSBuild property) |
@@ -93,6 +93,19 @@ The telemetry feature collects the following data:
 | >=6.0.300     | If the CLI was invoked from a Continuous Integration environment. For more information, see [Continuous Integration Detection](#continuous-integration-detection).|
 | >=7.0.100     | Hashed PublishAot used for build (MSBuild property) |
 | >=7.0.100     | Hashed PublishProtocol used for build (MSBuild property) |
+| >=8.0.100     | Hashed TargetPlatformIdentifier used for build (MSBuild property) |
+| >=8.0.100     | Hashed HybridGlobalization used for build (MSBuild property) |
+| >=8.0.100     | Whether .NET Blazor WebAssembly SDK is used. |
+| >=8.0.100     | Whether .NET WebAssembly SDK is used. |
+| >=8.0.100     | Whether .NET MAUI is used. |
+| >=8.0.100     | Whether .NET mobile SDK is used. |
+| >=8.0.100     | Whether other mobile SDKs are used (like: Avalonia, Uno). |
+| >=8.0.100     | Whether Mono AOT is used. |
+| >=8.0.100     | Whether Mono AOT strip IL feature is used. |
+| >=8.0.100     | Whether Mono interpreter is used. |
+| >=8.0.100     | Whether library mode for mobile is used.  |
+| >=8.0.100     | Whether NativeAOT is used. |
+| >=8.0.100     | Used Mono runtime pack version. |
 
 ### Collected options
 
@@ -122,6 +135,8 @@ A subset of commands sends selected options if they're used, along with their va
 | `--platform`            | `dotnet vstest`                                                                                |
 | `--logger`              | `dotnet vstest`                                                                                |
 | `--sdk-package-version` | `dotnet migrate`                                                                               |
+
+When the SDK fails to resolve a built-in command, any command resolver that successfully resolves the command sends a hash of the command name along with the name of the command resolver type.
 
 Except for `--verbosity` and `--sdk-package-version`, all the other values are hashed starting with .NET Core 2.1.100 SDK.
 

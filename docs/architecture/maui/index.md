@@ -3,7 +3,7 @@ title: Enterprise Application Patterns Using .NET MAUI
 description: Learn how to design adaptable, maintainable, and testable MAUI applications.
 author: michaelstonis
 no-loc: [MAUI]
-ms.date: 07/12/2022
+ms.date: 05/30/2024
 ---
 
 # Enterprise Application Patterns Using .NET MAUI
@@ -12,7 +12,7 @@ ms.date: 07/12/2022
 
 DOWNLOAD available at: <https://aka.ms/maui-ebook>
 
-**EDITION v1.0**
+**EDITION v2.0**
 
 PUBLISHED BY
 
@@ -64,11 +64,11 @@ This book is for .NET MAUI developers that are already familiar with the framewo
 
 ## How to use the book
 
-This book focuses on building cross-platform enterprise apps using .NET MAUI. As such, it should be read in its entirety to provide a foundation of understanding such apps and their technical considerations. The book, along with its sample app, can also serve as a starting point or reference for creating a new enterprise app. Use the associated sample app as a template for the new app, or to see how to organize an app's component parts. Then, refer back to this guide for architectural guidance. You can find the sample app on [GitHub](https://github.com/dotnet-architecture/eshop-mobile-client).
+This book focuses on building cross-platform enterprise apps using .NET MAUI. As such, it should be read in its entirety to provide a foundation of understanding such apps and their technical considerations. The book, along with its sample app, can also serve as a starting point or reference for creating a new enterprise app. Use the associated sample app as a template for the new app, or to see how to organize an app's component parts. Then, refer back to this guide for architectural guidance. You can find the sample app on [GitHub](https://github.com/dotnet/eshop).
 
 ## What this book doesn't cover
 
-This book is aimed at readers who are already familiar with .NET MAUI. It does cover some concepts of .NET MAUI to help better illustrate the topic, but it does not cover most controls and concepts in any detail. For general guidance on building a new .NET MAUI app, please refer to the [Building your first app](/dotnet/maui/get-started/first-app) guide in the .NET MAUI Documentation
+This book is aimed at readers who are already familiar with .NET MAUI. It does cover some concepts of .NET MAUI to help better illustrate the topic, but it does not cover most controls and concepts in any detail. For general guidance on building a new .NET MAUI app, please refer to the [Building your first app](/dotnet/maui/get-started/first-app) guide in the .NET MAUI documentation.
 
 ### Additional resources
 

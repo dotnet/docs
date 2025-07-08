@@ -16,7 +16,7 @@ helpviewer_keywords:
 ms.assetid: 3f9d0533-f895-4897-b4ea-528284e0241d
 ---
 
-# Installutil.exe (Installer Tool)
+# Installutil.exe (Installer tool)
 
 The Installer tool is a command-line utility that allows you to install and uninstall server resources by executing the installer components in specified assemblies. This tool works in conjunction with classes in the <xref:System.Configuration.Install> namespace.
 
@@ -36,13 +36,11 @@ installutil [/u[ninstall]] [options] assembly [[options] assembly] ...
 |--------------|-----------------|
 |`assembly`|The file name of the assembly in which to execute the installer components. Omit this parameter if you want to specify the assembly's strong name by using the `/AssemblyName` option.|
 
-<a name="options"></a>
-
 ## Options
 
-|Option|Description|
-|------------|-----------------|
-|`/h[elp]`<br /><br /> -or-<br /><br /> `/?`|Displays command syntax and options for the tool.|
+| Option                                      | Description                                       |
+|---------------------------------------------|---------------------------------------------------|
+| `/h[elp]`<br /><br /> -or-<br /><br /> `/?` | Displays command syntax and options for the tool. |
 |`/help` *assembly*<br /><br /> -or-<br /><br /> `/?` *assembly*|Displays additional options recognized by individual installers within the specified assembly, along with command syntax and options for InstallUtil.exe. This option adds the text returned by each installer component's <xref:System.Configuration.Install.Installer.HelpText%2A?displayProperty=nameWithType> property to the help text of InstallUtil.exe. For example, if <xref:System.ServiceProcess.ServiceProcessInstaller.Account?displayProperty=nameWithType> is `User`, the `/username` and `/password` options are available.|
 |`/AssemblyName` "*assemblyName*<br /><br /> ,Version=*major.minor.build.revision*<br /><br /> ,Culture=*locale*<br /><br /> ,PublicKeyToken=*publicKeyToken*"|Specifies the strong name of an assembly, which must be registered in the global assembly cache. The assembly name must be fully qualified with the version, culture, and public key token of the assembly. The fully qualified name must be surrounded by quotes.<br /><br /> For example, "myAssembly, Culture=neutral, PublicKeyToken=0038abc9deabfle5, Version=4.0.0.0" is a fully qualified assembly name.|
 |`/InstallStateDir=[` *directoryName* `]`|Specifies the directory of the .InstallState file that contains the data used to uninstall the assembly. The default is the directory that contains the assembly.|
@@ -51,41 +49,37 @@ installutil [/u[ninstall]] [options] assembly [[options] assembly] ...
 |`/ShowCallStack`|Outputs the call stack to the log file if an exception occurs at any point during installation.|
 |`/u`[`ninstall`]|Uninstalls the specified assemblies. Unlike the other options, `/u` applies to all assemblies regardless of where the option appears on the command line.|
 
-<a name="cmdline"></a>
-
-## Additional Installer Options
+## Additional installer options
 
 Individual installers used within an assembly may recognize options in addition to those listed in the [Options](#options) section. To learn about these options, run InstallUtil.exe with the paths of the assemblies on the command line along with the `/?` or `/help` option. To specify these options, you include them on the command line along with the options recognized by InstallUtil.exe.
 
 > [!NOTE]
 > Help text on the options supported by individual installer components is returned by the <xref:System.Configuration.Install.Installer.HelpText%2A?displayProperty=nameWithType> property. The individual options that have been entered on the command line are accessible programmatically from the <xref:System.Configuration.Install.Installer.Context%2A?displayProperty=nameWithType> property.
 
-All options and command-line parameters are written to the installation log file. However, if you use the `/Password` parameter, which is recognized by some installer components, the password information will be replaced by eight asterisks (*) and will not appear in the log file.
+All options and command-line parameters are written to the installation log file. However, if you use the `/Password` parameter, which is recognized by some installer components, the password information is replaced by eight asterisks (*) and won't appear in the log file.
 
 > [!IMPORTANT]
-> In some cases, parameters passed to the installer may include sensitive or personally identifiable information, which, by default, is written to a plain text log file. To prevent this behavior, you can suppress the log file by specifying `/LogFile=` (with no *filename* argument) after Installutil.exe on the command line.
+> In some cases, parameters passed to the installer may include sensitive or personally identifiable information, which, by default, is written to a plain text log file. To prevent this behavior, you can suppress the log file by specifying `/LogFile=` (with no *filename* argument) on the command line.
 
 ## Remarks
 
-.NET Framework applications consist of traditional program files and associated resources, such as message queues, event logs, and performance counters that must be created when the application is deployed. You can use an assembly's installer components to create these resources when your application is installed and to remove them when your application is uninstalled. Installutil.exe detects and executes these installer components.
+.NET Framework applications consist of traditional program files and associated resources, such as message queues, event logs, and performance counters, that must be created when the application is deployed. You can use an assembly's installer components to create these resources when your application is installed and to remove them when your application is uninstalled. Installutil.exe detects and executes these installer components.
 
 You can specify multiple assemblies on the same command line. Any option that occurs before an assembly name applies to that assembly's installation. Except for `/u` and `/AssemblyName`, options are cumulative but overridable. That is, options specified for one assembly apply to all subsequent assemblies unless the option is specified with a new value.
 
 If you run Installutil.exe against an assembly without specifying any options, it places the following three files into the assembly's directory:
 
 - InstallUtil.InstallLog - Contains a general description of the installation progress.
-
 - *assemblyname*.InstallLog - Contains information specific to the commit phase of the installation process. For more information about the commit phase, see the <xref:System.Configuration.Install.Installer.Commit%2A> method.
-
 - *assemblyname*.InstallState - Contains data used to uninstall the assembly.
 
 Installutil.exe uses reflection to inspect the specified assemblies and to find all <xref:System.Configuration.Install.Installer> types that have the <xref:System.ComponentModel.RunInstallerAttribute?displayProperty=nameWithType> attribute set to `true`. The tool then executes either the <xref:System.Configuration.Install.Installer.Install%2A?displayProperty=nameWithType> or the <xref:System.Configuration.Install.Installer.Uninstall%2A?displayProperty=nameWithType> method on each instance of the <xref:System.Configuration.Install.Installer> type. Installutil.exe performs installation in a transactional manner; that is, if one of the assemblies fails to install, it rolls back the installations of all other assemblies. Uninstall is not transactional.
 
 Installutil.exe cannot install or uninstall delay-signed assemblies, but it can install or uninstall strong-named assemblies.
 
-Starting with .NET Framework version 2.0, the 32-bit version of the common language runtime (CLR) ships with only the 32-bit version of the Installer tool, but the 64-bit version of the CLR ships with both 32-bit and 64-bit versions of the Installer tool. When using the 64-bit CLR, use the 32-bit Installer tool to install 32-bit assemblies, and the 64-bit Installer tool to install 64-bit and Microsoft intermediate language (MSIL) assemblies. Both versions of the Installer tool behave the same.
+The 32-bit version of the common language runtime (CLR) ships with only the 32-bit version of the Installer tool, but the 64-bit version of the CLR ships with both 32-bit and 64-bit versions of the Installer tool. When using the 64-bit CLR, use the 32-bit Installer tool to install 32-bit assemblies, and the 64-bit Installer tool to install 64-bit and common intermediate language (CIL) assemblies. Both versions of the Installer tool behave the same.
 
-You cannot use Installutil.exe to deploy a Windows service that was created by using C++, because Installutil.exe cannot recognize the embedded native code that is produced by the C++ compiler. If you try to deploy a C++ Windows service with Installutil.exe, an exception such as <xref:System.BadImageFormatException> will be thrown. To work with this scenario, move the service code to a C++ module, and then write the installer object in C# or Visual Basic.
+You can't use Installutil.exe to deploy a Windows service that was created by using C++, because Installutil.exe doesn't recognize the embedded native code that's produced by the C++ compiler. If you try to deploy a C++ Windows service with Installutil.exe, an exception such as <xref:System.BadImageFormatException> will be thrown. To work with this scenario, move the service code to a C++ module, and then write the installer object in C# or Visual Basic.
 
 ## Examples
 

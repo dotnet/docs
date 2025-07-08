@@ -2,6 +2,8 @@
 title: SYSLIB1032 error
 description: Learn about the diagnostic that generates compile-time warning SYSLIB1032.
 ms.date: 05/07/2021
+f1_keywords:
+  - syslib1032
 ---
 
 # SYSLIB1032: Context classes to be augmented by the `System.Text.Json` source generator must be declared as partial

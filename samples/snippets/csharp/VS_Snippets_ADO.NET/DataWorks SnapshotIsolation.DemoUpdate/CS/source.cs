@@ -1,17 +1,16 @@
-﻿using System;
+using System;
 using System.Data;
-using System.Data.Common;
 using System.Data.SqlClient;
 
-class Program
+static class Program
 {
     static void Main()
     {
         // <Snippet1>
         // Assumes GetConnectionString returns a valid connection string
         // where pooling is turned off by setting Pooling=False;.
-        string connectionString = GetConnectionString();
-        using (SqlConnection connection1 = new SqlConnection(connectionString))
+        var connectionString = GetConnectionString();
+        using (SqlConnection connection1 = new(connectionString))
         {
             connection1.Open();
             SqlCommand command1 = connection1.CreateCommand();
@@ -27,7 +26,7 @@ class Program
             }
             catch (Exception ex)
             {
-                Console.WriteLine("ALLOW_SNAPSHOT_ISOLATION ON failed: {0}", ex.Message);
+                Console.WriteLine($"ALLOW_SNAPSHOT_ISOLATION ON failed: {ex.Message}");
             }
             // Create a table
             command1.CommandText =
@@ -46,7 +45,7 @@ class Program
             }
             catch (Exception ex)
             {
-                Console.WriteLine("CREATE TABLE failed: {0}", ex.Message);
+                Console.WriteLine($"CREATE TABLE failed: {ex.Message}");
             }
             // Insert some data
             command1.CommandText =
@@ -65,7 +64,7 @@ class Program
 
             // Begin, but do not complete, a transaction
             // using the Snapshot isolation level.
-            SqlTransaction transaction1 = null;
+            SqlTransaction transaction1 = default!;
             try
             {
                 transaction1 = connection1.BeginTransaction(IsolationLevel.Snapshot);
@@ -77,7 +76,7 @@ class Program
 
                 // Open a second Connection/Transaction to update data
                 // using ReadCommitted. This transaction should succeed.
-                using (SqlConnection connection2 = new SqlConnection(connectionString))
+                using (SqlConnection connection2 = new(connectionString))
                 {
                     connection2.Open();
                     SqlCommand command2 = connection2.CreateCommand();
@@ -118,7 +117,7 @@ class Program
             catch (SqlException ex)
             {
                 Console.WriteLine("Expected failure for transaction1:");
-                Console.WriteLine("  {0}: {1}", ex.Number, ex.Message);
+                Console.WriteLine($"  {ex.Number}: {ex.Message}");
             }
             finally
             {
@@ -128,7 +127,7 @@ class Program
 
         // CLEANUP:
         // Turn off Snapshot isolation and delete the table
-        using (SqlConnection connection3 = new SqlConnection(connectionString))
+        using (SqlConnection connection3 = new(connectionString))
         {
             connection3.Open();
             SqlCommand command3 = connection3.CreateCommand();
@@ -142,7 +141,7 @@ class Program
             }
             catch (Exception ex)
             {
-                Console.WriteLine("CLEANUP FAILED: {0}", ex.Message);
+                Console.WriteLine($"CLEANUP FAILED: {ex.Message}");
             }
             command3.CommandText = "DROP TABLE TestSnapshotUpdate";
             try
@@ -152,7 +151,7 @@ class Program
             }
             catch (Exception ex)
             {
-                Console.WriteLine("CLEANUP FAILED: {0}", ex.Message);
+                Console.WriteLine($"CLEANUP FAILED: {ex.Message}");
             }
         }
         // </Snippet1>
@@ -160,12 +159,6 @@ class Program
         Console.ReadLine();
     }
 
-    static private string GetConnectionString()
-    {
-        // To avoid storing the connection string in your code,
-        // you can retrieve it from a configuration file, using the
-        // System.Configuration.ConfigurationSettings.AppSettings property
-        return "Data Source=(local);Initial Catalog=AdventureWorks;"
-            + "Integrated Security=SSPI;Pooling=false";
-    }
+    static string GetConnectionString() =>
+        throw new NotImplementedException();
 }

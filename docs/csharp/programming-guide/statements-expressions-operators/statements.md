@@ -1,5 +1,5 @@
 ---
-title: "Statements - C# Programming Guide"
+title: "Statements"
 description: Learn about statements in C# programming. See a list of statement types, and view code examples and additional resources.
 ms.date: 07/20/2015
 helpviewer_keywords: 
@@ -85,6 +85,5 @@ For more information, see the [Statements](~/_csharpstandard/standard/statements
 
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Statement keywords](../../language-reference/keywords/statement-keywords.md)
 - [C# operators and expressions](../../language-reference/operators/index.md)

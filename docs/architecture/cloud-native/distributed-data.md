@@ -21,7 +21,7 @@ Experienced developers will easily recognize the architecture on the left-side o
 
 In many ways, a single database keeps data management simple. Querying data across multiple tables is straightforward. Changes to data update together or they all rollback. [ACID transactions](/windows/desktop/cossdk/acid-properties) guarantee strong and immediate consistency.
 
-Designing for cloud-native, we take a different approach. On the right-side of Figure 5-1, note how business functionality segregates into small, independent microservices. Each microservice encapsulates a specific business capability and its own data. The monolithic database decomposes into a distributed data model with many smaller databases, each aligning with a microservice. When the smoke clears, we emerge with a design that exposes a *database per microservice*.
+Designing for cloud-native, we take a different approach. On the right-side of Figure 5-1, note how business functionality segregates into small, independent [microservices](/azure/architecture/guide/architecture-styles/microservices). Each microservice encapsulates a specific business capability and its own data. The monolithic database decomposes into a distributed data model with many smaller databases, each aligning with a microservice. When the smoke clears, we emerge with a design that exposes a *database per microservice*.
 
 ## Database-per-microservice, why?
 
@@ -62,7 +62,7 @@ In the preceding figure, we see a shopping basket microservice that adds an item
 
 One option discussed in Chapter 4 is a [direct HTTP call](service-to-service-communication.md#queries) from the shopping basket to the catalog and pricing microservices. However, in chapter 4, we said synchronous HTTP calls *couple* microservices together, reducing their autonomy and diminishing their architectural benefits.
 
-We could also implement a request-reply pattern with separate inbound and outbound queues for each service. However, this pattern is complicated and requires plumbing to correlate request and response messages.
+We could also implement a [request-reply pattern](/azure/architecture/patterns/async-request-reply) with separate inbound and outbound queues for each service. However, this pattern is complicated and requires plumbing to correlate request and response messages.
 While it does decouple the backend microservice calls, the calling service must still synchronously wait for the call to complete. Network congestion, transient faults, or an overloaded microservice and can result in long-running and even failed operations.
 
 Instead, a widely accepted pattern for removing cross-service dependencies is the [Materialized View Pattern](/azure/architecture/patterns/materialized-view), shown in Figure 5-4.
@@ -89,7 +89,7 @@ In the preceding figure, five independent microservices participate in a distrib
 
 Instead, you must construct this distributed transaction *programmatically*.
 
-A popular pattern for adding distributed transactional support is the Saga pattern. It's implemented by grouping local transactions together programmatically and sequentially invoking each one. If any of the local transactions fail, the Saga aborts the operation and invokes a set of [compensating transactions](/azure/architecture/patterns/compensating-transaction). The compensating transactions undo the changes made by the preceding local transactions and restore data consistency. Figure 5-6 shows a failed transaction with the Saga pattern.
+A popular pattern for adding distributed transactional support is the [Saga pattern](/azure/architecture/reference-architectures/saga/saga). It's implemented by grouping local transactions together programmatically and sequentially invoking each one. If any of the local transactions fail, the Saga aborts the operation and invokes a set of [compensating transactions](/azure/architecture/patterns/compensating-transaction). The compensating transactions undo the changes made by the preceding local transactions and restore data consistency. Figure 5-6 shows a failed transaction with the Saga pattern.
 
 ![Roll back in saga pattern](./media/saga-rollback-operation.png)
 
@@ -97,7 +97,7 @@ A popular pattern for adding distributed transactional support is the Saga patte
 
 In the previous figure, the *Update Inventory* operation has failed in the Inventory microservice. The Saga invokes a set of compensating transactions (in red) to adjust the inventory counts, cancel the payment and the order, and return the data for each microservice back to a consistent state.
 
-Saga patterns are typically choreographed as a series of related events, or orchestrated as a set of related commands. In Chapter 4, we discussed the service aggregator pattern that would be the foundation for an orchestrated saga implementation. We also discussed eventing along with Azure Service Bus and Azure Event Grid topics that would be a foundation for a choreographed saga implementation.
+Saga patterns are typically choreographed as a series of related events, or orchestrated as a set of related commands. In Chapter 4, we discussed the service aggregator pattern that would be the foundation for an orchestrated saga implementation. We also discussed eventing along with [Azure Service Bus](/azure/service-bus-messaging/service-bus-messaging-overview) and [Azure Event Grid](/azure/event-grid/overview) topics that would be a foundation for a choreographed saga implementation.
 
 ## High volume data
 
@@ -109,7 +109,7 @@ Large cloud-native applications often support high-volume data requirements. In 
 
 For normal scenarios, the same entity model and data repository object are used for *both* read and write operations.
 
-However, a high volume data scenario can benefit from separate models and data tables for reads and writes. To improve performance, the read operation could query against a highly denormalized representation of the data to avoid expensive repetitive table joins and table locks. The *write* operation, known as a *command*, would update against a fully normalized representation of the data that would guarantee consistency. You then need to implement a mechanism to keep both representations in sync. Typically, whenever the write table is modified, it publishes an event that replicates the modification to the read table.
+However, a high volume data scenario can benefit from separate models and data tables for reads and writes. To improve performance, the read operation could query against a highly denormalized representation of the data to avoid expensive repetitive table joins and table locks. The *write* operation, known as a [command](/azure/architecture/guide/technology-choices/messaging#commands), would update against a fully normalized representation of the data that would guarantee consistency. You then need to implement a mechanism to keep both representations in sync. Typically, whenever the write table is modified, it publishes an [event](/azure/architecture/guide/technology-choices/messaging#events) that replicates the modification to the read table.
 
 Figure 5-7 shows an implementation of the CQRS pattern.
 

@@ -19,7 +19,7 @@ topic_type:
 ---
 # ICorDebugCode::IsIL Method
 
-Gets a value that indicates whether this "ICorDebugCode" represents code that was compiled in Microsoft intermediate language (MSIL).
+Gets a value that indicates whether this "ICorDebugCode" represents code that was compiled in common intermediate language (CIL).
 
 ## Syntax
 
@@ -31,8 +31,8 @@ HRESULT IsIL (
 
 ## Parameters
 
-`pbIL`  
-[out] `true` if this `ICorDebugCode` represents code that was compiled in MSIL; otherwise, `false`.
+`pbIL`
+[out] `true` if this `ICorDebugCode` represents code that was compiled in CIL; otherwise, `false`.
 
 ## Requirements
 

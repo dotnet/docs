@@ -3,12 +3,12 @@ using System.Runtime.InteropServices;
 
 namespace PInvokeSamples
 {
-    public static class Program
+    public static partial class Program
     {
         // Import the libc shared library and define the method
         // corresponding to the native function.
-        [DllImport("libc.so.6")]
-        private static extern int getpid();
+        [LibraryImport("libc.so.6")]
+        private static partial int getpid();
 
         public static void Main(string[] args)
         {

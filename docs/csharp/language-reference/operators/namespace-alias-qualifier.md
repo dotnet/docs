@@ -59,5 +59,4 @@ For more information, see the [Namespace alias qualifiers](~/_csharpstandard/sta
 
 ## See also
 
-- [C# reference](../index.md)
 - [C# operators and expressions](index.md)

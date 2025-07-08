@@ -3,7 +3,7 @@ title: Analyze dependencies to port code
 description: Learn how to analyze external dependencies to port your project from .NET Framework to .NET.
 author: StephenBonikowsky
 ms.author: stebon
-ms.date: 06/14/2021
+ms.date: 12/12/2023
 ---
 # Analyze your dependencies to port code from .NET Framework to .NET
 
@@ -25,15 +25,18 @@ First, upgrade your packages to the latest version that you can. This can be don
 
 ## Analyze your package dependencies
 
-If you haven't already verified that your converted and upgraded package dependencies work on .NET Core, there are a few ways that you can achieve that:
+If you haven't already verified that your converted and upgraded package dependencies work on .NET Core, there are two ways that you can achieve that:
 
-### Analyze NuGet packages using nuget.org
+- [Using nuget.org](#use-nugetorg)
+- [Using NuGet Package Explorer](#use-nuget-package-explorer)
+
+### Use nuget.org
 
 You can see the Target Framework Monikers (TFMs) that each package supports on [nuget.org](https://www.nuget.org/) under the **Dependencies** section of the package page.
 
 Although using the site is an easier method to verify the compatibility, **Dependencies** information isn't available on the site for all packages.
 
-### Analyze NuGet packages using NuGet Package Explorer
+### Use NuGet Package Explorer
 
 A NuGet package is itself a set of folders that contain platform-specific assemblies. Check if there's a folder that contains a compatible assembly inside the package.
 
@@ -54,7 +57,7 @@ These values are the [Target Framework Monikers (TFMs)](../../standard/framework
 
 ## .NET Framework compatibility mode
 
-After analyzing the NuGet packages, you might find that they only target the .NET Framework.
+After analyzing the NuGet packages, you might find that they only target .NET Framework.
 
 Starting with .NET Standard 2.0, the .NET Framework compatibility mode was introduced. This compatibility mode allows .NET Standard and .NET Core projects to reference .NET Framework libraries. Referencing .NET Framework libraries doesn't work for all projects, such as if the library uses Windows Presentation Foundation (WPF) APIs, but it does unblock many porting scenarios.
 
@@ -92,7 +95,7 @@ The .NET Team would like to know which libraries are the most important to suppo
 
 ## Analyze non-NuGet dependencies
 
-You may have a dependency that isn't a NuGet package, such as a DLL in the file system. The only way to determine the portability of that dependency is to run the [.NET Portability Analyzer](https://github.com/Microsoft/dotnet-apiport) tool. The tool analyzes assemblies that target the .NET Framework and identifies APIs that aren't portable to other .NET platforms such as .NET Core. You can run the tool as a console application or as a [Visual Studio extension](../../standard/analyzers/portability-analyzer.md).
+You might have a dependency that isn't a NuGet package, such as a DLL in the file system. You can determine the portability of that dependency with the [.NET Upgrade Assistant](upgrade-assistant-overview.md) tool.
 
 ## Next steps
 

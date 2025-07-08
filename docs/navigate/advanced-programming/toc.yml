@@ -309,6 +309,23 @@ items:
           href: ../../standard/collections/thread-safe/how-to-use-arrays-of-blockingcollections.md
         - name: Create an object pool using a ConcurrentBag
           href: ../../standard/collections/thread-safe/how-to-create-an-object-pool.md
+  - name: Supplemental API remarks
+    items:
+    - name: The Thread class
+      href: ../../fundamentals/runtime-libraries/system-threading-thread.md
+    - name: The Task class
+      href: ../../fundamentals/runtime-libraries/system-threading-tasks-task.md
+    - name: The Monitor class
+      items:
+      - name: Type remarks
+        href: ../../fundamentals/runtime-libraries/system-threading-monitor.md
+        displayName: monitor
+      - name: Wait method
+        href: ../../fundamentals/runtime-libraries/system-threading-monitor-wait.md
+    - name: The ReaderWriterLockSlim class
+      href: ../../fundamentals/runtime-libraries/system-threading-readerwriterlockslim.md
+    - name: The TaskScheduler class
+      href: ../../fundamentals/runtime-libraries/system-threading-tasks-taskscheduler.md
 - name: Native interoperability
   items:
   - name: Overview
@@ -342,7 +359,7 @@ items:
       href: ../../standard/native-interop/custom-marshalling-source-generation.md
     - name: "Tutorial: Use custom marshallers in source generation"
       href: ../../standard/native-interop/tutorial-custom-marshaller.md
-  - name: Interop guidance
+  - name: Interop best practices
     href: ../../standard/native-interop/best-practices.md
   - name: Expose .NET components to COM
     href: ../../core/native-interop/expose-components-to-com.md
@@ -364,12 +381,35 @@ items:
         href: ../../standard/native-interop/com-callable-wrapper.md
       - name: "Tutorial: Use the ComWrappers API"
         href: ../../standard/native-interop/tutorial-comwrappers.md
+      - name: Source generation
+        href: ../../standard/native-interop/comwrappers-source-generation.md
     - name: Qualify .NET types for COM interop
       href: ../../standard/native-interop/qualify-net-types-for-interoperation.md
   - name: Apply interop attributes
     href: ../../standard/native-interop/apply-interop-attributes.md
+  - name: HRESULT and PreserveSig
+    href: ../../standard/native-interop/preserve-sig.md
   - name: Exceptions
     href: ../../standard/native-interop/exceptions-interoperability.md
+  - name: ABI support
+    href: ../../standard/native-interop/abi-support.md
+  - name: Supplemental API remarks
+    items:
+    - name: The ComException class
+      href: ../../fundamentals/runtime-libraries/system-runtime-interopservices-comexception.md
+    - name: The ComWrappers class
+      href: ../../fundamentals/runtime-libraries/system-runtime-interopservices-comwrappers.md
+    - name: The ICustomMarshaler interface
+      href: ../../fundamentals/runtime-libraries/system-runtime-interopservices-icustommarshaler.md
+    - name: The Marshal class
+      items:
+      - name: GetActiveObject method
+        href: ../../fundamentals/runtime-libraries/system-runtime-interopservices-marshal-getactiveobject.md
+        displayName: marshal
+    - name: The SafeHandle class
+      href: ../../fundamentals/runtime-libraries/system-runtime-interopservices-safehandle.md
+    - name: The System.Dynamic.ExpandoObject class
+      href: ../../fundamentals/runtime-libraries/system-dynamic-expandoobject.md
 - name: Memory management
   items:
   - name: What is "managed code"?
@@ -389,6 +429,12 @@ items:
       displayName: "await using, DisposeAsync, async dispose pattern, IAsyncDisposable"
     - name: Use objects that implement IDisposable
       href: ../../standard/garbage-collection/using-objects.md
+    - name: Supplemental API remarks
+      items:
+      - name: The IAsyncDisposable interface
+        href: ../../fundamentals/runtime-libraries/system-iasyncdisposable.md
+      - name: The IDisposable interface
+        href: ../../fundamentals/runtime-libraries/system-idisposable.md
   - name: Garbage collection
     items:
     - name: Overview
@@ -404,6 +450,8 @@ items:
       href: ../../standard/garbage-collection/large-object-heap.md
     - name: Garbage collection and performance
       href: ../../standard/garbage-collection/performance.md
+    - name: Dynamic adaptation to app size (DATAS)
+      href: ../../standard/garbage-collection/datas.md
     - name: Induced collections
       href: ../../standard/garbage-collection/induced.md
     - name: Latency modes
@@ -416,4 +464,5 @@ items:
       href: ../../standard/garbage-collection/app-domain-resource-monitoring.md
     - name: Weak references
       href: ../../standard/garbage-collection/weak-references.md
-
+    - name: The System.GC class
+      href: ../../fundamentals/runtime-libraries/system-gc.md

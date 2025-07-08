@@ -1,6 +1,6 @@
 ---
 description: "by contextual keyword - C# Reference"
-title: "by contextual keyword - C# Reference"
+title: "by contextual keyword"
 ms.date: 07/20/2015
 f1_keywords: 
   - "by"

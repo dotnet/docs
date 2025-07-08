@@ -1,7 +1,7 @@
 ---
-title: "Restricting Accessor Accessibility - C# Programming Guide"
+title: "Restricting Accessor Accessibility"
 description: The get and set accessors of a property in C# have the same visibility or access level by default as property to which they belong. You can restrict access.
-ms.date: 07/29/2022
+ms.date: 10/30/2024
 helpviewer_keywords: 
   - "read-only properties [C#]"
   - "read-only indexers [C#]"
@@ -9,7 +9,6 @@ helpviewer_keywords:
   - "properties [C#], read-only"
   - "asymmetric accessor accessibility [C#]"
   - "indexers [C#], read-only"
-ms.assetid: 6e655798-e112-4301-a680-6310a6e012e1
 ---
 # Restricting Accessor Accessibility (C# Programming Guide)
 
@@ -20,7 +19,7 @@ The [get](../../language-reference/keywords/get.md) and [set](../../language-ref
 In this example, a property called `Name` defines a `get` and `set` accessor. The `get` accessor receives the accessibility level of the property itself, `public` in this case, while the `set` accessor is explicitly restricted by applying the [protected](../../language-reference/keywords/protected.md) access modifier to the accessor itself.
 
 > [!NOTE]
-> The examples in this article don't use [auto-implemented properties](./properties.md#auto-implemented-properties). *Auto-implemented properties* provide a concise syntax for declaring properties when a custom backing field isn't required.
+> The examples in this article don't use [automatically implemented properties](./properties.md#automatically-implemented-properties). *Automatically implemented properties* provide a concise syntax for declaring properties when a custom backing field isn't required.
 
 ## Restrictions on Access Modifiers on Accessors
 

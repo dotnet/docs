@@ -1,4 +1,4 @@
-﻿namespace ValueEqualityClass;
+namespace ValueEqualityClass;
 
 class TwoDPoint : IEquatable<TwoDPoint>
 {
@@ -137,24 +137,24 @@ class Program
         ThreeDPoint pointC = null;
         int i = 5;
 
-        Console.WriteLine("pointA.Equals(pointB) = {0}", pointA.Equals(pointB));
-        Console.WriteLine("pointA == pointB = {0}", pointA == pointB);
-        Console.WriteLine("null comparison = {0}", pointA.Equals(pointC));
-        Console.WriteLine("Compare to some other type = {0}", pointA.Equals(i));
+        Console.WriteLine($"pointA.Equals(pointB) = {pointA.Equals(pointB)}");
+        Console.WriteLine($"pointA == pointB = {pointA == pointB}");
+        Console.WriteLine($"null comparison = {pointA.Equals(pointC)}");
+        Console.WriteLine($"Compare to some other type = {pointA.Equals(i)}");
 
         TwoDPoint pointD = null;
         TwoDPoint pointE = null;
 
-        Console.WriteLine("Two null TwoDPoints are equal: {0}", pointD == pointE);
+        Console.WriteLine($"Two null TwoDPoints are equal: {pointD == pointE}");
 
         pointE = new TwoDPoint(3, 4);
-        Console.WriteLine("(pointE == pointA) = {0}", pointE == pointA);
-        Console.WriteLine("(pointA == pointE) = {0}", pointA == pointE);
-        Console.WriteLine("(pointA != pointE) = {0}", pointA != pointE);
+        Console.WriteLine($"(pointE == pointA) = {pointE == pointA}");
+        Console.WriteLine($"(pointA == pointE) = {pointA == pointE}");
+        Console.WriteLine($"(pointA != pointE) = {pointA != pointE}");
 
         System.Collections.ArrayList list = new System.Collections.ArrayList();
         list.Add(new ThreeDPoint(3, 4, 5));
-        Console.WriteLine("pointE.Equals(list[0]): {0}", pointE.Equals(list[0]));
+        Console.WriteLine($"pointE.Equals(list[0]): {pointE.Equals(list[0])}");
 
         // Keep the console window open in debug mode.
         Console.WriteLine("Press any key to exit.");

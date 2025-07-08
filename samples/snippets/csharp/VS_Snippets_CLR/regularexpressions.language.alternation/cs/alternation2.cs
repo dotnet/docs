@@ -1,4 +1,4 @@
-﻿// <Snippet2>
+// <Snippet2>
 using System;
 using System.Text.RegularExpressions;
 
@@ -8,9 +8,9 @@ public class Example
    {
       string pattern = @"\b(\d{2}-\d{7}|\d{3}-\d{2}-\d{4})\b";
       string input = "01-9999999 020-333333 777-88-9999";
-      Console.WriteLine("Matches for {0}:", pattern);
+      Console.WriteLine($"Matches for {pattern}:");
       foreach (Match match in Regex.Matches(input, pattern))
-         Console.WriteLine("   {0} at position {1}", match.Value, match.Index);
+         Console.WriteLine($"   {match.Value} at position {match.Index}");
    }
 }
 // The example displays the following output:

@@ -1,5 +1,5 @@
 ---
-title: "Generic Interfaces - C# Programming Guide"
+title: "Generic Interfaces"
 description: Learn about using generic interfaces in C#. See code examples and view other available resources.
 ms.date: 07/08/2022
 helpviewer_keywords: 
@@ -42,7 +42,6 @@ Beginning with C# 11, interfaces may declare `static abstract` or `static virtua
 
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Introduction to Generics](../../fundamentals/types/generics.md)
 - [interface](../../language-reference/keywords/interface.md)
 - [Generics](../../../standard/generics/index.md)

@@ -37,7 +37,7 @@ Module Class1
                "CompanyName"))
             adapter.InsertCommand.UpdatedRowSource = UpdateRowSource.Both
 
-            ' MissingSchemaAction adds any missing schema to 
+            ' MissingSchemaAction adds any missing schema to
             ' the DataTable, including identity columns
             adapter.MissingSchemaAction = MissingSchemaAction.AddWithKey
 
@@ -45,7 +45,7 @@ Module Class1
             Dim shipper As New DataTable
             adapter.Fill(shipper)
 
-            ' Add a new shipper. 
+            ' Add a new shipper.
             Dim newRow As DataRow = shipper.NewRow()
             newRow("CompanyName") = "New Shipper"
             shipper.Rows.Add(newRow)
@@ -54,7 +54,7 @@ Module Class1
             ' DataTable will be used by the DataAdapter.
             Dim dataChanges As DataTable = shipper.GetChanges()
 
-            ' Add the event handler. 
+            ' Add the event handler.
             AddHandler adapter.RowUpdated, New _
                SqlRowUpdatedEventHandler(AddressOf OnRowUpdated)
 
@@ -87,10 +87,7 @@ Module Class1
     ' </Snippet2>
 
     Private Function GetConnectionString() As String
-        ' To avoid storing the connection string in your code,  
-        ' you can retrieve it from a configuration file.
-        Return "Data Source=(local);Initial Catalog=Northwind;" _
-           & "Integrated Security=true;"
+        Throw New NotImplementedException()
     End Function
 
 End Module

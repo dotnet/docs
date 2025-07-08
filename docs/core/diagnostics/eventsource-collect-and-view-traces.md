@@ -272,3 +272,34 @@ this isn't required. Following is an example `EventListener` implementation that
    3/24/2022 9:23:35 AM RequestStart
    3/24/2022 9:23:35 AM RequestStop
    ```
+
+> [!WARNING]
+> Potential Pitfalls when implementing EventSource Callbacks via EventListener include deadlocks, infinite recursions, and uninitialized types.
+>
+> EventSource instances are initialized early in the runtime, before some core features are fully initialized. As a result, acquiring locks inside an EventSource callback like <xref:System.Diagnostics.Tracing.EventListener.OnEventWritten%2A> when the thread normally would not have done so may cause deadlocks.
+>
+> To mitigate this risk, consider the following precautions:
+>
+> - **Use Queues to Defer Work**: There are a variety of APIs you might want to call in OnEventWritten() that do non-trivial work, for example File IO, Console, or Http. For most events, these APIs work fine, but if you tried to call Console.WriteLine() in an event handler during the initialization of the Console class then it would probably fail. If you don't know whether a given event handler occurs at a time when APIs are safe to call, consider adding some information about the event to an in-memory queue instead. Then, on a separate thread, process items in the queue.
+> - **Minimize Lock Duration**: Ensure that any locks acquired within the callback are not held for extended periods.
+> - **Use Non-blocking APIs**: Prefer using non-blocking APIs within the callback to avoid potential deadlocks.
+> - **Implement a Re-entrancy Guard**: Use a re-entrancy guard to prevent infinite recursion. For example:
+>
+>   ```csharp
+>   [ThreadStatic] private static bool t_insideCallback;
+>
+>   public void OnEventWritten(...)
+>   {
+>       if (t_insideCallback) return; // if our callback triggered the event to occur recursively
+>                                     // exit now to avoid infinite recursion
+>       try
+>       {
+>           t_insideCallback = true;
+>           // do callback work
+>       }
+>       finally
+>       {
+>           t_insideCallback = false;
+>       }
+>   }
+>   ```

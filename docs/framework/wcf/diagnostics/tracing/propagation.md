@@ -49,7 +49,7 @@ This topic describes activity propagation in the Windows Communication Foundatio
       </a:Action>  
       <a:MessageID>urn:uuid:f0091eae-d339-4c7e-9408-ece34602f1ce  
       </a:MessageID>  
-      <ActivityId CorrelationId="f94c6af1-7d5d-4295-b693-4670a8a0ce34"
+      <ActivityId CorrelationId="aaaa0000-bb11-2222-33cc-444444dddddd"
                xmlns="http://schemas.microsoft.com/2004/09/ServiceModel/Diagnostics">  
         17f59a29-b435-4a15-bf7b-642ffc40eac8  
       </ActivityId>  

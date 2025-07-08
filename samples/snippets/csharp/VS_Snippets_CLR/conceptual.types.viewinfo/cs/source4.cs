@@ -1,4 +1,4 @@
-﻿// <snippet4>
+// <snippet4>
 // This program lists all the members of the
 // System.IO.BufferedStream class.
 using System;
@@ -11,7 +11,7 @@ class ListMembers
     {
         // Specifies the class.
         Type t = typeof(System.IO.BufferedStream);
-        Console.WriteLine("Listing all the members (public and non public) of the {0} type", t);
+        Console.WriteLine($"Listing all the members (public and non public) of the {t} type");
 
         // Lists static fields first.
         FieldInfo[] fi = t.GetFields(BindingFlags.Static |

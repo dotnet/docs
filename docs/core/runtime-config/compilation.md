@@ -1,8 +1,7 @@
 ---
 title: Compilation config settings
-description: Learn about run-time settings that configure how the JIT compiler works for .NET Core apps.
+description: Learn about run-time settings that configure how the JIT compiler works for .NET apps.
 ms.date: 10/29/2021
-ms.topic: reference
 ---
 # Runtime configuration options for compilation
 
@@ -35,6 +34,16 @@ This article details the settings you can use to configure .NET compilation.
       "configProperties": {
          "System.Runtime.TieredCompilation": false
       }
+   }
+}
+```
+
+*runtimeconfig.template.json* file:
+
+```json
+{
+   "configProperties": {
+      "System.Runtime.TieredCompilation": false
    }
 }
 ```
@@ -79,6 +88,16 @@ Project file:
 }
 ```
 
+*runtimeconfig.template.json* file:
+
+```json
+{
+   "configProperties": {
+      "System.Runtime.TieredCompilation.QuickJit": false
+   }
+}
+```
+
 Project file:
 
 ```xml
@@ -118,6 +137,16 @@ Project file:
 }
 ```
 
+*runtimeconfig.template.json* file:
+
+```json
+{
+   "configProperties": {
+      "System.Runtime.TieredCompilation.QuickJitForLoops": false
+   }
+}
+```
+
 Project file:
 
 ```xml
@@ -142,12 +171,14 @@ Project file:
 
 ## Profile-guided optimization
 
-This setting enables dynamic or tiered profile-guided optimization (PGO) in .NET 6 and later versions.
+This setting enables dynamic (tiered) profile-guided optimization (PGO) in .NET 6 and later versions.
 
 | | Setting name | Values |
 | - | - | - |
 | **Environment variable** | `DOTNET_TieredPGO` | `1` - enabled<br/>`0` - disabled |
 | **MSBuild property** | `TieredPGO` | `true` - enabled<br/>`false` - disabled |
+
+Profile-guided optimization (PGO) is where the JIT compiler generates optimized code in terms of the types and code paths that are most frequently used. *Dynamic* PGO works hand-in-hand with tiered compilation to further optimize code based on additional instrumentation that's put in place during tier 0.
 
 ### Examples
 

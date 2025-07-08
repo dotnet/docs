@@ -2,7 +2,7 @@
 title: "What's New in Windows Workflow Foundation in .NET Framework 4.5"
 description: Windows Workflow Foundation in .NET Framework 4.5 introduces many new features, such as new activities, designer capabilities, and workflow development models.
 ms.date: "03/30/2017"
-ms.topic: "reference"
+ms.topic: whats-new
 ---
 
 # What's New in Windows Workflow Foundation in .NET Framework 4.5
@@ -76,7 +76,7 @@ Workflows in .NET Framework 4 required a fully trusted application domain. In .N
 
 7. Expressions cannot be compiled using <xref:System.Activities.XamlIntegration.TextExpressionCompiler> or the Visual Basic hosted compiler in partial trust, but previously compiled expressions can be run.
 
-8. A single assembly that uses [Level 2 Transparency](/previous-versions/dotnet/framework/code-access-security/security-transparent-code-level-2) cannot be used in .NET Framework 4, [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] in full trust, and [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] in partial trust.
+8. A single assembly that uses [Level 2 Transparency](/previous-versions/dotnet/framework/code-access-security/security-transparent-code-level-2) cannot be used in .NET Framework 4, .NET Framework 4.6.1 in full trust, and .NET Framework 4.6.1 in partial trust.
 
 ## <a name="BKMK_NewDesignerCapabilites"></a> New Designer Capabilities
 

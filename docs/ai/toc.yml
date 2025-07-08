@@ -1,0 +1,111 @@
+items:
+- name: AI for .NET developers
+  href: index.yml
+- name: Overview
+  href: overview.md
+- name: "Quickstart: Connect to and prompt an AI model"
+  href: quickstarts/prompt-model.md
+- name: AI tools and SDKs
+  items:
+  - name: Overview
+    href: dotnet-ai-ecosystem.md
+  - name: Microsoft.Extensions.AI
+    href: microsoft-extensions-ai.md
+  - name: Semantic Kernel
+    href: semantic-kernel-dotnet-overview.md
+  - name: C# SDK for MCP
+    href: get-started-mcp.md
+- name: Quickstarts
+  items:
+  - name: Build a chat app
+    href: quickstarts/build-chat-app.md
+  - name: Request structured output
+    href: quickstarts/structured-output.md
+  - name: Build a .NET AI vector search app
+    href: quickstarts/build-vector-search-app.md
+  - name: Execute a local .NET function
+    href: quickstarts/use-function-calling.md
+  - name: Generate images
+    href: quickstarts/generate-images.md
+  - name: Chat with a local AI model
+    href: quickstarts/chat-local-model.md
+  - name: Build a minimal AI assistant
+    href: quickstarts/create-assistant.md
+  - name: Get started using the AI app templates
+    href: quickstarts/ai-templates.md
+  - name: Build a minimal MCP server
+    href: quickstarts/build-mcp-server.md
+  - name: Build a minimal MCP client
+    href: quickstarts/build-mcp-client.md
+- name: Concepts
+  items:
+  - name: How generative AI and LLMs work
+    href: conceptual/how-genai-and-llms-work.md
+  - name: Tokens
+    href: conceptual/understanding-tokens.md
+  - name: Embeddings
+    href: conceptual/embeddings.md
+  - name: Vector databases
+    href: conceptual/vector-databases.md
+  - name: Prompt engineering
+    href: conceptual/prompt-engineering-dotnet.md
+  - name: Chain-of-thought prompting
+    href: conceptual/chain-of-thought-prompting.md
+  - name: Zero-shot and few-shot learning
+    href: conceptual/zero-shot-learning.md
+  - name: Retrieval-augmented generation
+    href: conceptual/rag.md
+  - name: OpenAI function calling
+    href: conceptual/understanding-openai-functions.md
+- name: Chat with your data (RAG)
+  items:
+    - name: Get started with the RAG sample
+      href: get-started-app-chat-template.md
+    - name: Implement RAG using vector search
+      href: tutorials/tutorial-ai-vector-search.md
+    - name: Scale Azure OpenAI with Azure Container Apps
+      href: get-started-app-chat-scaling-with-azure-container-apps.md
+- name: Security and content safety
+  items:
+  - name: Authentication for Azure-hosted apps and services
+    items:
+    - name: Overview
+      href: azure-ai-services-authentication.md
+    - name: Auth to Azure OpenAI from an Azure-hosted app
+      href: how-to/app-service-aoai-auth.md
+    - name: Auth to Azure services locally
+      href: /dotnet/azure/sdk/authentication/local-development-dev-accounts?toc=/dotnet/ai/toc.json&bc=/dotnet/ai/toc.json
+  - name: Work with content filtering
+    href: how-to/content-filtering.md
+  - name: Use a blocklist with Azure OpenAI
+    href: /azure/ai-services/openai/how-to/use-blocklists?toc=/dotnet/ai/toc.json&bc=/dotnet/ai/toc.json
+  - name: Use Risks & Safety monitoring
+    href: /azure/ai-services/openai/how-to/risks-safety-monitor?toc=/dotnet/ai/toc.json&bc=/dotnet/ai/toc.json
+- name: Evaluation
+  items:
+  - name: The Microsoft.Extensions.AI.Evaluation libraries
+    href: conceptual/evaluation-libraries.md
+  - name: Tutorials
+    items:
+    - name: "Quickstart: Evaluate the quality of a response"
+      href: quickstarts/evaluate-ai-response.md
+    - name: "Evaluate response quality with caching and reporting"
+      href: tutorials/evaluate-with-reporting.md
+    - name: "Evaluate response safety with caching and reporting"
+      href: tutorials/evaluate-safety.md
+- name: Advanced
+  items:
+  - name: Sample interface implementations
+    href: advanced/sample-implementations.md
+- name: Resources
+  items:
+  - name: API reference
+    items:
+    - name: ChatClientBuilder
+      href: /dotnet/api/microsoft.extensions.ai.chatclientbuilder
+    - name: IChatClient
+      href: /dotnet/api/microsoft.extensions.ai.ichatclient
+    - name: IEmbeddingGenerator
+      href: /dotnet/api/microsoft.extensions.ai.iembeddinggenerator
+  - name: Azure AI samples and docs
+    href: azure-ai-for-dotnet-developers.md

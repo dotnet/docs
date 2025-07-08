@@ -3,7 +3,7 @@ title: Caching in .NET
 description: Discover effective ways to implement in-memory and distributed caching in .NET. Boost app performance and scalability with .NET caching.
 author: IEvangelist
 ms.author: dapine
-ms.date: 06/23/2023
+ms.date: 04/11/2024
 ---
 
 # Caching in .NET
@@ -51,13 +51,16 @@ To use the default <xref:Microsoft.Extensions.Caching.Memory.IMemoryCache> imple
 
 :::code source="snippets/caching/memory-apis/Program.cs" range="1-7" highlight="6":::
 
-Depending on your .NET workload, you may access the `IMemoryCache` differently; such as constructor injection. In this sample, you use the `IServiceProvider` instance on the `host` and call generic <xref:Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService%60%601(System.IServiceProvider)> extension method:
+Depending on your .NET workload, you might access the `IMemoryCache` differently, such as constructor injection. In this sample, you use the `IServiceProvider` instance on the `host` and call generic <xref:Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService%60%601(System.IServiceProvider)> extension method:
 
 :::code source="snippets/caching/memory-apis/Program.cs" range="9-10":::
 
-With in-memory caching services registered, and resolved through DI &mdash; you're ready to start caching. This sample iterates through the letters in the English alphabet 'A' through 'Z'. The `record AlphabetLetter` type holds the reference to the letter, and generates a message.
+With in-memory caching services registered, and resolved through DI, you're ready to start caching. This sample iterates through the letters in the English alphabet 'A' through 'Z'. The `record AlphabetLetter` type holds the reference to the letter, and generates a message.
 
 :::code source="snippets/caching/memory-apis/Program.cs" range="70-74":::
+
+> [!TIP]
+> The `file` access modifier is used on the `AlphabetLetter` type, as it's defined within and only accessed from the _Program.cs_ file. For more information, see [file (C# Reference)](../../csharp/language-reference/keywords/file.md). To see the full source code, see the [Program.cs](#put-it-all-together) section.
 
 The sample includes a helper function that iterates through the alphabet letters:
 
@@ -113,7 +116,7 @@ The entire sample app source code is a top-level program and requires two NuGet 
 
 :::code source="snippets/caching/memory-apis/Program.cs":::
 
-Feel free to adjust the `MillisecondsDelayAfterAdd` and `MillisecondsAbsoluteExpiration` values to observe the changes in behavior to the expiration and eviction of cached entries. The following is sample output from running this code, due to the non-deterministic nature of .NET events &mdash; there is no guarantee that your output will be identical.
+Feel free to adjust the `MillisecondsDelayAfterAdd` and `MillisecondsAbsoluteExpiration` values to observe the changes in behavior to the expiration and eviction of cached entries. The following is sample output from running this code. Due to the non-deterministic nature of .NET events, your output might be different.
 
 ```console
 A was cached.
@@ -192,7 +195,7 @@ In the following example, you'll see several services being registered with DI. 
 
 In the preceding C# code:
 
-- The generic host is created with [defaults](generic-host.md#default-builder-settings).
+- The generic host is created with [defaults](generic-host.md#host-builder-settings).
 - In-memory caching services are registered with <xref:Microsoft.Extensions.DependencyInjection.MemoryCacheServiceCollectionExtensions.AddMemoryCache%2A>.
 - An `HttpClient` instance is registered for the `CacheWorker` class with <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient%60%601(Microsoft.Extensions.DependencyInjection.IServiceCollection)>.
 - The `CacheWorker` class is registered with <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionHostedServiceExtensions.AddHostedService%60%601(Microsoft.Extensions.DependencyInjection.IServiceCollection)>.
@@ -221,7 +224,7 @@ The asynchronous signal is based on an encapsulated <xref:System.Threading.Semap
 
 :::code source="snippets/caching/memory-worker/CacheSignal.cs":::
 
-In the preceding C# code, the decorator pattern is used to wrap an instance of the `SemaphoreSlim`. Since the `CacheSignal<T>` is registered as a singleton, it can be used across all service lifetimes with any generic type &mdash; in this case, the `Photo`. It is responsible for signaling the seeding of the cache.
+In the preceding C# code, the decorator pattern is used to wrap an instance of the `SemaphoreSlim`. Since the `CacheSignal<T>` is registered as a singleton, it can be used across all service lifetimes with any generic type&mdash;in this case, the `Photo`. It is responsible for signaling the seeding of the cache.
 
 The `CacheWorker` is a subclass of <xref:Microsoft.Extensions.Hosting.BackgroundService>:
 
@@ -243,7 +246,7 @@ Consumers in the same process could ask the `IMemoryCache` for the photos, but t
 
 ## Distributed caching
 
-In some scenarios, a distributed cache is required &mdash; such is the case with multiple app servers. A distributed cache supports higher scale-out than the in-memory caching approach. Using a distributed cache offloads the cache memory to an external process, but does require extra network I/O and introduces a bit more latency (even if nominal).
+In some scenarios, a distributed cache is required&mdash;such is the case with multiple app servers. A distributed cache supports higher scale-out than the in-memory caching approach. Using a distributed cache offloads the cache memory to an external process, but does require extra network I/O and introduces a bit more latency (even if nominal).
 
 The distributed caching abstractions are part of the [`Microsoft.Extensions.Caching.Memory`](/dotnet/api/microsoft.extensions.caching.memory) NuGet package, and there is even an `AddDistributedMemoryCache` extension method.
 
@@ -271,7 +274,7 @@ Using the `AlphabetLetter` record from the in-memory cache example, you could se
 
 :::code source="snippets/caching/distributed/Program.cs" id="Create" highlight="7-9":::
 
-Much like in-memory caching, cache entries can have options to help fine-tune their existence in the cache &mdash; in this case, the <xref:Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions>.
+Much like in-memory caching, cache entries can have options to help fine-tune their existence in the cache&mdash;in this case, the <xref:Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions>.
 
 ##### Create extension methods
 

@@ -1,6 +1,6 @@
 ---
 description: "where clause - C# Reference"
-title: "where clause - C# Reference"
+title: "where clause"
 ms.date: 07/20/2015
 f1_keywords: 
   - "whereclause_CSharpKeyword"
@@ -44,5 +44,5 @@ At compile time the `where` keyword is converted into a call to the <xref:System
 - [Query Keywords (LINQ)](query-keywords.md)
 - [from clause](from-clause.md)
 - [select clause](select-clause.md)
-- [Filtering Data](../../programming-guide/concepts/linq/filtering-data.md)
+- [Filtering Data](../../linq/standard-query-operators/filtering-data.md)
 - [LINQ in C#](../../linq/index.md)

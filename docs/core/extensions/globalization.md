@@ -97,15 +97,15 @@ Culture-sensitive string comparison is defined by the <xref:System.Globalization
 
 .NET uses tables to perform culture-sensitive sorts on string data. The content of these tables, which contain data on sort weights and string normalization, is determined by the version of the Unicode standard implemented by a particular version of .NET. The following table lists the versions of Unicode implemented by the specified versions of .NET. This list of supported Unicode versions applies to character comparison and sorting only; it does not apply to classification of Unicode characters by category. For more information, see the "Strings and The Unicode Standard" section in the <xref:System.String> article.
 
-| .NET Framework version | Operating system | Unicode version |
-|--|--|--|
-| .NET Framework 2.0 | All operating systems | Unicode 4.1 |
-| .NET Framework 3.0 | All operating systems | Unicode 4.1 |
-| .NET Framework 3.5 | All operating systems | Unicode 4.1 |
-| .NET Framework 4 | All operating systems | Unicode 5.0 |
-| .NET Framework 4.5 and later on Windows 7 | Unicode 5.0 |
-| .NET Framework 4.5 and later on Windows 8 and later operating systems | | Unicode 6.3.0 |
-| .NET Core and .NET 5+ | | Depends on the version of the Unicode Standard supported by the underlying operating system. |
+| .NET Framework version       | Operating system                      | Unicode version |
+|------------------------------|---------------------------------------|-----------------|
+| .NET Framework 2.0           | All operating systems                 | Unicode 4.1     |
+| .NET Framework 3.0           | All operating systems                 | Unicode 4.1     |
+| .NET Framework 3.5           | All operating systems                 | Unicode 4.1     |
+| .NET Framework 4             | All operating systems                 | Unicode 5.0     |
+| .NET Framework 4.5 and later | Windows 7                             | Unicode 5.0     |
+| .NET Framework 4.5 and later | Windows 8 and later operating systems | Unicode 6.3.0   |
+| .NET Core and .NET 5+        | | Depends on the version of the Unicode Standard supported by the underlying OS. |
 
 Starting with .NET Framework 4.5 and in all versions of .NET Core and .NET 5+, string comparison and sorting depends on the operating system. .NET Framework 4.5 and later running on Windows 7 retrieves data from its own tables that implement Unicode 5.0. .NET Framework 4.5 and later running on Windows 8 and later retrieves data from operating system tables that implement Unicode 6.3. On .NET Core and .NET 5+, the supported version of Unicode depends on the underlying operating system. If you serialize culture-sensitive sorted data, you can use the <xref:System.Globalization.SortVersion> class to determine when your serialized data needs to be sorted so that it is consistent with .NET and the operating system's sort order. For an example, see the <xref:System.Globalization.SortVersion> class topic.
 
@@ -128,15 +128,11 @@ How you handle date and time values depends on whether they are displayed in the
 
 Typically, when dates and times are displayed in the user interface, you should use the formatting conventions of the user's culture, which is defined by the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> property and by the <xref:System.Globalization.DateTimeFormatInfo> object returned by the `CultureInfo.CurrentCulture.DateTimeFormat` property. The formatting conventions of the current culture are automatically used when you format a date by using any of these methods:
 
-- The parameterless <xref:System.DateTime.ToString?displayProperty=nameWithType> method
-
-- The <xref:System.DateTime.ToString%28System.String%29?displayProperty=nameWithType> method, which includes a format string
-
-- The parameterless <xref:System.DateTimeOffset.ToString?displayProperty=nameWithType> method
-
-- The <xref:System.DateTimeOffset.ToString%28System.String%29?displayProperty=nameWithType>, which includes a format string
-
-- The [composite formatting](../../standard/base-types/composite-formatting.md) feature, when it is used with dates
+- The parameterless <xref:System.DateTime.ToString?displayProperty=nameWithType> method.
+- The <xref:System.DateTime.ToString%28System.String%29?displayProperty=nameWithType> method, which includes a format string.
+- The parameterless <xref:System.DateTimeOffset.ToString?displayProperty=nameWithType> method.
+- The <xref:System.DateTimeOffset.ToString%28System.String%29?displayProperty=nameWithType>, which includes a format string.
+- The [composite formatting](../../standard/base-types/composite-formatting.md) feature, when it is used with dates.
 
 The following example displays sunrise and sunset data twice for October 11, 2012. It first sets the current culture to Croatian (Croatia), and then to English (United Kingdom). In each case, the dates and times are displayed in the format that is appropriate for that culture.
 

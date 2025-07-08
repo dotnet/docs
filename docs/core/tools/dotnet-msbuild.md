@@ -41,10 +41,10 @@ The [dotnet build](dotnet-build.md) command is equivalent to `dotnet msbuild -re
   dotnet msbuild -property:Configuration=Release
   ```
 
-- Run the publish target and publish for the `osx.10.11-x64` RID:
+- Run the publish target and publish for the `osx-x64` RID:
 
   ```dotnetcli
-  dotnet msbuild -target:Publish -property:RuntimeIdentifiers=osx.10.11-x64
+  dotnet msbuild -target:Publish -property:RuntimeIdentifiers=osx-x64
   ```
 
 - See the whole project with all targets included by the SDK:

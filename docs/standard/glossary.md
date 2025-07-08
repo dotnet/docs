@@ -1,7 +1,7 @@
 ---
 title: .NET glossary
 description: Find out the meaning of selected terms used in the .NET documentation.
-ms.date: 05/02/2023
+ms.date: 09/25/2024
 author: tdykstra
 ms.author: tdykstra
 ms.topic: reference
@@ -22,6 +22,7 @@ See [CoreRT](#corert) and [.NET Native](#net-native).
 
 A [workload](#workload)-specific API. Here are some examples:
 
+- .NET Aspire
 - ASP.NET
 - ASP.NET Web API
 - Entity Framework (EF)
@@ -32,9 +33,9 @@ A [workload](#workload)-specific API. Here are some examples:
 
 ## ASP.NET
 
-The original ASP.NET implementation that ships with the .NET Framework, also known as ASP.NET 4.x.
+The original ASP.NET implementation that ships with the .NET Framework, also known as ASP.NET 4.x and ASP.NET Framework.
 
-Sometimes ASP.NET is an umbrella term that refers to both the original ASP.NET and ASP.NET Core. The meaning that the term carries in any given instance is determined by context. Refer to ASP.NET 4.x when you want to make it clear that you're not using ASP.NET to mean both implementations.
+Sometimes ASP.NET is an umbrella term that refers to both the original ASP.NET and ASP.NET Core. The meaning that the term carries in any given instance is determined by the context. Refer to ASP.NET 4.x when you want to make it clear that you're not using ASP.NET to mean both implementations.
 
 See [ASP.NET documentation](/aspnet/overview).
 
@@ -48,7 +49,7 @@ See [ASP.NET Core documentation](/aspnet/core).
 
 A *.dll* or *.exe* file that can contain a collection of APIs that can be called by applications or other assemblies.
 
-An assembly may include types such as interfaces, classes, structures, enumerations, and delegates. Assemblies in a project's *bin* folder are sometimes referred to as *binaries*. See also [library](#library).
+An assembly contains types such as interfaces, classes, structures, enumerations, and delegates. Assemblies in a project's *bin* folder are sometimes referred to as *binaries*. See also [library](#library).
 
 ## BCL
 
@@ -56,11 +57,11 @@ Base Class Library.
 
 A set of libraries that comprise the System.\* (and to a limited extent Microsoft.\*) namespaces. The BCL is a general purpose, lower-level framework that higher-level application frameworks, such as ASP.NET Core, build on.
 
-The source code of the BCL for [.NET 5 (and .NET Core) and later versions](#net-5-and-later-versions) is contained in the [.NET runtime repository](https://github.com/dotnet/runtime). Most of these BCL APIs are also available in .NET Framework, so you can think of this source code as a fork of the .NET Framework BCL source code.
+The source code of the BCL for [.NET](#net) is contained in the [.NET runtime repository](https://github.com/dotnet/runtime). Most of these BCL APIs are also available in .NET Framework, so you can think of this source code as a fork of the .NET Framework BCL source code.
 
 The following terms often refer to the same collection of APIs that BCL refers to:
 
-- [core .NET libraries](../core/compatibility/corefx.md)
+- core .NET libraries
 - [framework libraries](#framework-libraries)
 - [runtime libraries](#runtime)
 - [shared framework](#shared-framework)
@@ -69,19 +70,19 @@ The following terms often refer to the same collection of APIs that BCL refers t
 
 Common Language Runtime.
 
-The exact meaning depends on the context. Common Language Runtime usually refers to the runtime of [.NET Framework](#net-framework) or the runtime of [.NET 5 (and .NET Core) and later versions](#net-5-and-later-versions).
+The exact meaning depends on the context. Common Language Runtime usually refers to the runtime of [.NET Framework](#net-framework) or the runtime of [.NET](#net).
 
 A CLR handles memory allocation and management. A CLR is also a virtual machine that not only executes apps but also generates and compiles code on-the-fly using a [JIT](#jit) compiler.
 
 The CLR implementation for .NET Framework is Windows only.
 
-The CLR implementation for .NET 5 and later versions (also known as the Core CLR) is built from the same code base as the .NET Framework CLR. Originally, the Core CLR was the runtime of Silverlight and was designed to run on multiple platforms, specifically Windows and OS X. It's still a [cross-platform](#cross-platform) runtime, now including support for many Linux distributions.
+The CLR implementation for .NET (also known as the Core CLR) is built from the same code base as the .NET Framework CLR. Originally, the Core CLR was the runtime of Silverlight and was designed to run on multiple platforms, specifically Windows and OS X. It's still a [cross-platform](#cross-platform) runtime, now including support for many Linux distributions.
 
 See also [runtime](#runtime).
 
 ## Core CLR
 
-The Common Language Runtime for [.NET 5 (and .NET Core) and later versions](#net-5-and-later-versions).
+The Common Language Runtime for [.NET](#net).
 
 See [CLR](#clr).
 
@@ -118,17 +119,17 @@ The word "framework" has a different meaning in the following terms:
 - [TFM (target framework moniker)](#tfm)
 - [framework-dependent app](../core/deploying/index.md#publish-framework-dependent)
 
-Sometimes "framework" refers to an [implementation of .NET](#implementation-of-net). For example, an article may call .NET 5+ a framework.
+Sometimes "framework" refers to an [implementation of .NET](#implementation-of-net).
 
 ## framework libraries
 
-Meaning depends on context. May refer to the framework libraries for [.NET 5 (and .NET Core) and later versions](#net-5-and-later-versions), in which case it refers to the same libraries that [BCL](#bcl) refers to. It may also refer to the [ASP.NET Core](#aspnet-core) framework libraries, which build on the BCL and provide additional APIs for web apps.
+Meaning depends on context. Might refer to the framework libraries for [.NET](#net), in which case it refers to the same libraries that [BCL](#bcl) refers to. It might also refer to the [ASP.NET Core](#aspnet-core) framework libraries, which build on the BCL and provide additional APIs for web apps.
 
 ## GC
 
 Garbage collector.
 
-The garbage collector is an implementation of automatic memory management.  The GC frees memory occupied by objects that are no longer in use.
+The garbage collector is an implementation of automatic memory management. The GC frees memory occupied by objects that are no longer in use.
 
 See [Garbage Collection](garbage-collection/index.md).
 
@@ -149,14 +150,14 @@ Similar to [AOT](#aot), this compiler translates [IL](#il) to machine code that 
 An implementation of .NET includes:
 
 - One or more runtimes. Examples: [CLR](#clr), [CoreRT](#corert).
-- A class library that implements a version of .NET Standard and may include additional APIs. Examples: the [BCLs](#bcl) for [.NET Framework](#net-framework) and [.NET 5 (and .NET Core) and later versions](#net-5-and-later-versions).
-- Optionally, one or more application frameworks. Examples: [ASP.NET](#aspnet), Windows Forms, and WPF are included in .NET Framework and .NET 5+.
+- A class library that implements a version of .NET Standard and can include additional APIs. Examples: the [BCLs](#bcl) for [.NET Framework](#net-framework) and [.NET](#net).
+- Optionally, one or more application frameworks. Examples: [ASP.NET](#aspnet), Windows Forms, and WPF are included in [.NET Framework](#net-framework) and [.NET](#net).
 - Optionally, development tools. Some development tools are shared among multiple implementations.
 
 Examples of .NET implementations:
 
 - [.NET Framework](#net-framework)
-- [.NET 5 (and .NET Core) and later versions](#net-5-and-later-versions)
+- [.NET](#net)
 - [Universal Windows Platform (UWP)](#uwp)
 - [Mono](#mono)
 
@@ -170,54 +171,46 @@ The words library and [framework](#framework) are often used synonymously.
 
 ## Mono
 
-An open source, [cross-platform](#cross-platform) [.NET implementation](#implementation-of-net) that's mainly used when a small runtime is required. It is the runtime that powers Xamarin applications on Android, Mac, iOS, tvOS, and watchOS and is focused primarily on apps that require a small footprint.
+An open source, [cross-platform](#cross-platform) [.NET implementation](#implementation-of-net) that's used when a small runtime is required. It's the runtime that powered Xamarin applications (unsupported as of May 2024) on Android, Mac, iOS, tvOS, and watchOS. Mono focuses primarily on apps that require a small footprint.
 
 It supports all of the currently published .NET Standard versions.
 
-Historically, Mono implemented the larger API of the .NET Framework and emulated some of the most popular capabilities on Unix. It is sometimes used to run .NET applications that rely on those capabilities on Unix.
+Historically, Mono implemented the larger API of the .NET Framework and emulated some of the most popular capabilities on Unix. It's sometimes used to run .NET applications that rely on those capabilities on Unix.
 
 Mono is typically used with a [just-in-time compiler](#jit), but it also features a full [static compiler (ahead-of-time compilation)](#aot) that is used on platforms like iOS.
 
 For more information, see the [Mono documentation](https://www.mono-project.com/docs/).
 
-## native AOT
+## Native AOT
 
-A deployment mode where the app is self-contained and has been [ahead-of-time](#aot) compiled to native code at the time of publish. Native AOT apps don't use a [JIT](#jit) compiler at run time. They can run on machines that don't have the .NET runtime installed.
+A deployment mode where the app is self-contained and is [ahead-of-time](#aot) compiled to native code at the time of publish. Native AOT apps don't use a [JIT](#jit) compiler at run time. They can run on machines that don't have the .NET runtime installed.
 
 For more information, see [Native AOT deployment](../core/deploying/native-aot/index.md).
 
 ## .NET
 
-- In general, *.NET* is the umbrella term for [.NET Standard](#net-standard) and all [.NET implementations](#implementation-of-net) and workloads.
-- More specifically, .NET refers to the implementation of .NET that is recommended for all new development: [.NET 5 (and .NET Core) and later versions](#net-5-and-later-versions).
+*.NET* has two meanings, and the one that is intended depends on the context:
 
-For example, the first meaning is intended in phrases such as "implementations of .NET" or "the .NET development platform." The second meaning is intended in names such as [.NET SDK](#net-sdk) and [.NET CLI](#net-cli).
+* *.NET* can be used as the umbrella term for [.NET Standard](#net-standard) and all [.NET implementations](#implementation-of-net) and workloads.
+* *.NET* more frequently refers to the cross-platform, high-performance, open-source implementation of .NET that used to be called .NET Core. It can also be referred to as *.NET 5 (and .NET Core) and later versions* or just *.NET 5+*.
+
+For example, the first meaning is intended in phrases such as "implementations of .NET." The second meaning is intended in names such as [.NET SDK](#net-sdk) and [.NET CLI](#net-cli). In the absence of context that indicates the first meaning is intended, assume that the second meaning is intended.
+
+Earlier versions of .NET are known as .NET Core 1 through 3.1. The version numbers skip 4, and the version that followed 3.1 is known as .NET 5, dropping "Core" from the name. Dropping "Core" was done to emphasize that this implementation of .NET is the one that is recommended for all new development. Skipping version 4 was done to help avoid confusing this newer implementation of .NET with the older implementation that is known as [.NET Framework](#net-framework). The current version of .NET Framework is 4.8.1.
 
 .NET is always fully capitalized, never ".Net".
-
-See [.NET documentation](../fundamentals/index.yml)
-
-## .NET 5+
-
-The plus sign after a version number means "and later versions." See [.NET 5 and later versions](#net-5-and-later-versions).
-
-## .NET 5 and later versions
-
-A cross-platform, high-performance, open-source implementation of .NET. Also referred to as .NET 5+. Includes a Common Language Runtime ([CLR](#clr)), an [AOT](#aot) runtime ([CoreRT](#corert), in development), a Base Class Library ([BCL](#bcl)), and the [.NET SDK](#net-sdk).
-
-Earlier versions of this .NET implementation are known as [.NET Core](#net-core). .NET 5 is the next version following .NET Core 3.1. Version 4 was skipped to avoid confusing this newer implementation of .NET with the older implementation that is known as [.NET Framework](#net-framework). The current version of .NET Framework is 4.8.
 
 See [.NET documentation](../fundamentals/index.yml).
 
 ## .NET CLI
 
-A cross-platform toolchain for developing applications and libraries for [.NET 5 (and .NET Core) and later versions](#net-5-and-later-versions). Also known as the .NET Core CLI.
+A cross-platform toolchain for developing applications and libraries for [.NET](#net). Also known as the *.NET Core CLI*.
 
 See [.NET CLI](../core/tools/index.md).
 
 ## .NET Core
 
-See [.NET 5 and later versions](#net-5-and-later-versions).
+See [.NET](#net).
 
 ## .NET Framework
 
@@ -237,7 +230,7 @@ See [.NET Native documentation](/windows/uwp/dotnet-native/).
 
 ## .NET SDK
 
-A set of libraries and tools that allow developers to create .NET applications and libraries for [.NET 5 (and .NET Core) and later versions](#net-5-and-later-versions). Also known as the .NET Core SDK.
+A set of libraries and tools that enable developers to create applications and libraries for [.NET](#net). Also known as the *.NET Core SDK*.
 
 Includes the [.NET CLI](#net-cli) for building apps, .NET libraries and runtime for building and running apps, and the dotnet executable (*dotnet.exe*) that runs CLI commands and runs applications.
 
@@ -261,7 +254,7 @@ You can think of this technology as a persistent [JIT](#jit) compiler. It usuall
 
 A NuGet package&mdash;or just a package&mdash;is a *.zip* file with one or more assemblies of the same name along with additional metadata such as the author name.
 
-The *.zip* file has a *.nupkg* extension and may contain assets, such as *.dll* files and *.xml* files, for use with multiple [target frameworks](#target-framework) and versions. When installed in an app or library, the appropriate assets are selected based on the target framework specified by the app or library. The assets that define the interface are in the *ref* folder, and the assets that define the implementation are in the *lib* folder.
+The *.zip* file has a *.nupkg* extension and can contain assets, such as *.dll* files and *.xml* files, for use with multiple [target frameworks](#target-framework) and versions. When installed in an app or library, the appropriate assets are selected based on the target framework specified by the app or library. The assets that define the interface are in the *ref* folder, and the assets that define the implementation are in the *lib* folder.
 
 ## platform
 
@@ -284,7 +277,7 @@ A POCO&mdash;or a plain old class/[CLR](#clr) object&mdash;is a .NET data struct
 - events
 - delegates
 
-These objects are used primarily as data transfer objects (DTOs). A pure *POCO* will not inherit another object, or implement an interface. It's common for POCOs to be used with serialization.
+These objects are used primarily as data transfer objects (DTOs). A pure *POCO* won't inherit another object, or implement an interface. It's common for POCOs to be used with serialization.
 
 ## runtime
 
@@ -315,7 +308,7 @@ The word "runtime" has a different meaning in some contexts:
 
 ## shared framework
 
-Meaning depends on context. The *.NET shared framework* refers to the libraries included in the [.NET runtime](#runtime). In this case, the *shared framework* for [.NET 5 (and .NET Core) and later versions](#net-5-and-later-versions) refers to the same libraries that [BCL](#bcl) refers to.
+Meaning depends on context. The *.NET shared framework* refers to the libraries included in the [.NET runtime](#runtime). In this case, the *shared framework* for [.NET](#net) refers to the same libraries that [BCL](#bcl) refers to.
 
 There are other shared frameworks. The *ASP.NET Core shared framework* refers to the libraries included in the [ASP.NET Core runtime](#runtime), which includes the BCL plus additional APIs for use by web apps.
 
@@ -327,15 +320,15 @@ For more information, see [Deep-dive into .NET Core primitives, part 2: the shar
 
 A set of programming technologies that are used together to build and run applications.
 
-"The .NET stack" refers to .NET Standard and all .NET implementations. The phrase "a .NET stack" may refer to one implementation of .NET.
+"The .NET stack" refers to .NET Standard and all .NET implementations. The phrase "a .NET stack" can refer to one implementation of .NET.
 
 ## target framework
 
 The collection of APIs that a .NET app or library relies on.
 
-An app or library can target a version of [.NET Standard](#net-standard) (for example, .NET Standard 2.0), which is a specification for a standardized set of APIs across all [.NET implementations](#implementation-of-net). An app or library can also target a version of a specific .NET implementation, in which case it gets access to implementation-specific APIs. For example, an app that targets Xamarin.iOS gets access to Xamarin-provided iOS API wrappers.
+An app or library can target a version of [.NET Standard](#net-standard) (for example, .NET Standard 2.0), which is a specification for a standardized set of APIs across all [.NET implementations](#implementation-of-net). An app or library can also target a version of a specific .NET implementation, in which case it gets access to implementation-specific APIs.
 
-For some target frameworks (for example, [.NET Framework](#net-framework)) the available APIs are defined by the assemblies that a .NET implementation installs on a system, which may include application framework APIs (for example, ASP.NET, WinForms). For package-based target frameworks, the framework APIs are defined by the packages installed in the app or library.
+For some target frameworks (for example, [.NET Framework](#net-framework)) the available APIs are defined by the assemblies that a .NET implementation installs on a system, which can include application framework APIs (for example, ASP.NET, WinForms). For package-based target frameworks, the framework APIs are defined by the packages installed in the app or library.
 
 See [Target Frameworks](frameworks.md).
 
@@ -343,7 +336,7 @@ See [Target Frameworks](frameworks.md).
 
 Target framework moniker.
 
-A standardized token format for specifying the [target framework](#target-framework) of a .NET app or library. Target frameworks are typically referenced by a short name, such as `net462`. Long-form TFMs (such as .NETFramework,Version=4.6.2) exist but are not generally used to specify a target framework.
+A standardized token format for specifying the [target framework](#target-framework) of a .NET app or library. Target frameworks are typically referenced by a short name, such as `net462`. Long-form TFMs (such as `.NETFramework,Version=4.6.2`) exist but aren't generally used to specify a target framework.
 
 See [Target Frameworks](frameworks.md).
 
@@ -351,13 +344,13 @@ See [Target Frameworks](frameworks.md).
 
 Universal Windows Platform.
 
-An [implementation of .NET](#implementation-of-net) that is used for building touch-enabled Windows applications and software for the Internet of Things (IoT). It's designed to unify the different types of devices that you may want to target, including PCs, tablets, phones, and even the Xbox. UWP provides many services, such as a centralized app store, an execution environment (AppContainer), and a set of Windows APIs to use instead of Win32 (WinRT). Apps can be written in C++, C#, Visual Basic, and JavaScript. When using C# and Visual Basic, the .NET APIs are provided by [.NET 5 (and .NET Core) and later versions](#net-5-and-later-versions).
+An [implementation of .NET](#implementation-of-net) that is used for building touch-enabled Windows applications and software for the Internet of Things (IoT). It's designed to unify the different types of devices that you might want to target, including PCs, tablets, phones, and even the Xbox. UWP provides many services, such as a centralized app store, an execution environment (AppContainer), and a set of Windows APIs to use instead of Win32 (WinRT). Apps can be written in C++, C#, Visual Basic, and JavaScript. When using C# and Visual Basic, the .NET APIs are provided by [.NET](#net).
 
 ## workload
 
-A type of app someone is building. More generic than [app model](#app-model). For example, at the top of every .NET documentation page, including this one, is a drop-down list for **Workloads**, which lets you switch to documentation for **Web**, **Mobile**, **Cloud**, **Desktop**, and **Machine Learning \& Data**.
+A type of app someone is building. More generic than [app model](#app-model). For example, at the top of every .NET documentation page, including this one, is a drop-down list for **Workloads**, which lets you switch to documentation for **Web**, **Mobile**, **Cloud**, **Cloud-native**, and **Desktop**.
 
-In some contexts, *workload* refers to a collection of Visual Studio features that you can choose to install to support a particular type of app. For an example, see [Select a workload](../core/install/windows.md#select-a-workload).
+In some contexts, *workload* refers to a collection of Visual Studio features that you can choose to install to support a particular type of app. For an example, see [Configure Visual Studio workloads](/visualstudio/install/modify-visual-studio).
 
 ## See also
 

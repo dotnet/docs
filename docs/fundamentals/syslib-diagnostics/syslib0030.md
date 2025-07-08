@@ -2,6 +2,8 @@
 title: SYSLIB0030 warning
 description: Learn about the obsoletion of one of the HMACSHA1 constructors that generates compile-time warning SYSLIB0030.
 ms.date: 07/16/2021
+f1_keywords:
+  - syslib0030
 ---
 # SYSLIB0030: HMACSHA1 always uses the algorithm implementation provided by the platform
 

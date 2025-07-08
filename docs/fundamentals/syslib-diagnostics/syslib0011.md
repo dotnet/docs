@@ -1,7 +1,9 @@
 ---
 title: SYSLIB0011 warning
 description: Learn about the obsoletions that generate compile-time warning SYSLIB0011.
-ms.date: 05/08/2023
+ms.date: 09/08/2023
+f1_keywords:
+  - syslib0011
 ---
 # SYSLIB0011: BinaryFormatter serialization is obsolete
 
@@ -15,7 +17,7 @@ Due to [security vulnerabilities](../../standard/serialization/binaryformatter-s
 - <xref:System.Runtime.Serialization.IFormatter.Serialize(System.IO.Stream,System.Object)?displayProperty=nameWithType>
 - <xref:System.Runtime.Serialization.IFormatter.Deserialize(System.IO.Stream)?displayProperty=nameWithType>
 
-Starting in .NET 8, <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Serialize%2A?displayProperty=nameWithType> and <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize%2A?displayProperty=nameWithType> throw a <xref:System.NotSupportedException> at run time on most project types. In addition, the following APIs are marked obsolete *as error*:
+Starting in .NET 8, <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Serialize%2A?displayProperty=nameWithType> and <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize%2A?displayProperty=nameWithType> throw a <xref:System.NotSupportedException> at run time on most project types. In addition, <xref:System.Resources.Extensions.PreserializedResourceWriter.AddBinaryFormattedResource(System.String,System.Byte[],System.String)?displayProperty=nameWithType> is obsolete *as warning*, and the following APIs are obsolete *as error*:
 
 - <xref:System.Runtime.Serialization.Formatter?displayProperty=fullName>
 - <xref:System.Runtime.Serialization.IFormatter?displayProperty=fullName>

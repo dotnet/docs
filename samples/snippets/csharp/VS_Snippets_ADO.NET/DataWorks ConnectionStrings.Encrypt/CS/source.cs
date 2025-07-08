@@ -1,8 +1,8 @@
-﻿
+
 using System;
 using System.Configuration;
 
-class Program
+static class Program
 {
     static void Main()
     {
@@ -10,35 +10,42 @@ class Program
     // <Snippet1>
     static void ToggleConfigEncryption(string exeFile)
     {
+        // Get the application path needed to obtain
+        // the application configuration file.
+
         // Takes the executable file name without the
         // .config extension.
+        var exePath = exeFile.Replace(".config", "");
+
         try
         {
             // Open the configuration file and retrieve
             // the connectionStrings section.
             Configuration config = ConfigurationManager.
-                OpenExeConfiguration(exeConfigName);
+                OpenExeConfiguration(exePath);
 
-            ConnectionStringsSection section =
+            var section =
                 config.GetSection("connectionStrings")
                 as ConnectionStringsSection;
 
-            if (section.SectionInformation.IsProtected)
+            if (section != null)
             {
-                // Remove encryption.
-                section.SectionInformation.UnprotectSection();
-            }
-            else
-            {
-                // Encrypt the section.
-                section.SectionInformation.ProtectSection(
-                    "DataProtectionConfigurationProvider");
+                if (section.SectionInformation.IsProtected)
+                {
+                    // Remove encryption.
+                    section.SectionInformation.UnprotectSection();
+                }
+                else
+                {
+                    // Encrypt the section.
+                    section.SectionInformation.ProtectSection(
+                        "DataProtectionConfigurationProvider");
+                }
             }
             // Save the current configuration.
             config.Save();
 
-            Console.WriteLine("Protected={0}",
-                section.SectionInformation.IsProtected);
+            Console.WriteLine($"Protected={section?.SectionInformation.IsProtected}");
         }
         catch (Exception ex)
         {

@@ -1,7 +1,7 @@
 ---
 title: dotnet build command
 description: The dotnet build command builds a project and all of its dependencies.
-ms.date: 07/19/2023
+ms.date: 11/27/2023
 ---
 # dotnet build
 
@@ -15,6 +15,7 @@ ms.date: 07/19/2023
 
 ```dotnetcli
 dotnet build [<PROJECT>|<SOLUTION>] [-a|--arch <ARCHITECTURE>]
+    [--artifacts-path <ARTIFACTS_DIR>]
     [-c|--configuration <CONFIGURATION>] [-f|--framework <FRAMEWORK>]
     [--disable-build-servers]
     [--force] [--interactive] [--no-dependencies] [--no-incremental]
@@ -23,7 +24,7 @@ dotnet build [<PROJECT>|<SOLUTION>] [-a|--arch <ARCHITECTURE>]
     [-p|--property:<PROPERTYNAME>=<VALUE>]
     [-r|--runtime <RUNTIME_IDENTIFIER>]
     [--self-contained [true|false]] [--source <SOURCE>]
-    [--tl [auto|on|off]] [--use-current-runtime, --ucr [true|false]]
+    [--tl:[auto|on|off]] [--use-current-runtime, --ucr [true|false]]
     [-v|--verbosity <LEVEL>] [--version-suffix <VERSION_SUFFIX>]
 
 dotnet build -h|--help
@@ -83,6 +84,8 @@ The project or solution file to build. If a project or solution file isn't speci
 ## Options
 
 [!INCLUDE [arch](../../../includes/cli-arch.md)]
+
+[!INCLUDE [artifacts-path](../../../includes/cli-artifacts-path.md)]
 
 [!INCLUDE [configuration](../../../includes/cli-configuration.md)]
 
@@ -151,19 +154,7 @@ The project or solution file to build. If a project or solution file isn't speci
 
   The URI of the NuGet package source to use during the restore operation.
 
-- **`--tl [auto|on|off]`**
-
-  Specifies whether the *terminal logger* should be used for the build output. The default is `auto`, which first verifies the environment before enabling terminal logging. The environment check verifies that the terminal is capable of using modern output features and isn't using a redirected standard output before enabling the new logger. `on` skips the environment check and enables terminal logging. `off` skips the environment check and uses the default console logger.
-
-  The terminal logger shows you the restore phase followed by the build phase. During each phase, the currently building projects appear at the bottom of the terminal. Each project that's building outputs both the MSBuild target currently being built and the amount of time spent on that target. You can search this information to learn more about the build. When a project is finished building, a single "build completed" section is written for that captures:
-
-  - The name of the built project
-  - The target framework (if multi-targeted)
-  - The status of that build
-  - The primary output of that build (which is hyperlinked)
-  - Any diagnostics generated for that project
-
-  This option is available starting in .NET 8.
+[!INCLUDE [tl](../../../includes/cli-tl.md)]
 
 - **`-v|--verbosity <LEVEL>`**
 
@@ -191,10 +182,10 @@ The project or solution file to build. If a project or solution file isn't speci
   dotnet build --configuration Release
   ```
 
-- Build a project and its dependencies for a specific runtime (in this example, Ubuntu 18.04):
+- Build a project and its dependencies for a specific runtime (in this example, Linux):
 
   ```dotnetcli
-  dotnet build --runtime ubuntu.18.04-x64
+  dotnet build --runtime linux-x64
   ```
 
 - Build the project and use the specified NuGet package source during the restore operation:

@@ -8,7 +8,7 @@ static void PinnedArray()
     // <PinnedArray>
     unsafe
     {
-        byte[] bytes = { 1, 2, 3 };
+        byte[] bytes = [1, 2, 3];
         fixed (byte* pointerToFirst = bytes)
         {
             Console.WriteLine($"The address of the first array element: {(long)pointerToFirst:X}.");
@@ -26,7 +26,7 @@ static void PinnedVariable()
     // <PinnedVariable>
     unsafe
     {
-        int[] numbers = { 10, 20, 30 };
+        int[] numbers = [10, 20, 30];
         fixed (int* toFirst = &numbers[0], toLast = &numbers[^1])
         {
             Console.WriteLine(toLast - toFirst);  // output: 2
@@ -40,7 +40,7 @@ static void PinnedSpan()
     // <PinnedSpan>
     unsafe
     {
-        int[] numbers = { 10, 20, 30, 40, 50 };
+        int[] numbers = [10, 20, 30, 40, 50];
         Span<int> interior = numbers.AsSpan()[1..^1];
         fixed (int* p = interior)
         {

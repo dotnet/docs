@@ -2,19 +2,14 @@
 
 namespace Logging.LibraryAuthors;
 
-public class DiExampleService
+public class DiExampleService(ILogger<DiExampleService> logger)
 {
-    private readonly ILogger<DiExampleService> _logger;
-
-    public DiExampleService(ILogger<DiExampleService> logger) =>
-        _logger = logger;
-
     public void ProcessProductSale(Product product, int sold)
     {
         // Product sale processing logic.
         // Log results...
 
-        _logger.LogProductSaleDetails(
+        logger.LogProductSaleDetails(
             quantity: sold,
             description: product.GetFriendlyProductDescription());
     }

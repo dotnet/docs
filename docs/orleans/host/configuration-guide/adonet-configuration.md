@@ -1,12 +1,13 @@
 ---
 title: ADO.NET database configuration
 description: Learn about ADO.NET database configurations in .NET Orleans.
-ms.date: 03/16/2022
+ms.date: 05/23/2025
+ms.topic: how-to
 ---
 
 # ADO.NET database configuration
 
-The following sections contain links to SQL scripts to configure your database as well as the corresponding ADO.NET invariant used to configure ADO.NET providers in Orleans. These scripts are intended to be customized if needed for your deployment. Before executing scripts for Clustering, Persistence, or Reminders, one needs to create main tables with the Main scripts.
+The following sections contain links to SQL scripts for configuring your database and the corresponding ADO.NET invariant used to configure ADO.NET providers in Orleans. Customize these scripts as needed for your deployment. Before executing scripts for Clustering, Persistence, or Reminders, you need to create the main tables using the Main scripts.
 
 ## Main scripts
 
@@ -30,10 +31,12 @@ The following sections contain links to SQL scripts to configure your database a
 
 | Database | Script | NuGet package| ADO.NET invariant |
 |--|--|--|--|
-| SQL Server | [SQLServer-Persistence.sql](https://github.com/dotnet/orleans/blob/main/src/AdoNet/Orleans.Persistence.AdoNet/SQLServer-Persistence.sql) | [System.Data.SqlClient](https://www.nuget.org/packages/System.Data.SqlClient/) | `System.Data.SqlClient` |
+| SQL Server* | [SQLServer-Persistence.sql](https://github.com/dotnet/orleans/blob/main/src/AdoNet/Orleans.Persistence.AdoNet/SQLServer-Persistence.sql) | [System.Data.SqlClient](https://www.nuget.org/packages/System.Data.SqlClient/) | `System.Data.SqlClient` |
 | MySQL / MariaDB | [MySQL-Persistence.sql](https://github.com/dotnet/orleans/blob/main/src/AdoNet/Orleans.Persistence.AdoNet/MySQL-Persistence.sql) | [MySql.Data](https://www.nuget.org/packages/MySql.Data/) | `MySql.Data.MySqlClient` |
 | PostgreSQL | [PostgreSQL-Persistence.sql](https://github.com/dotnet/orleans/blob/main/src/AdoNet/Orleans.Persistence.AdoNet/PostgreSQL-Persistence.sql) | [Npgsql](https://www.nuget.org/packages/Npgsql/) | `Npgsql` |
 | Oracle | [Oracle-Persistence.sql](https://github.com/dotnet/orleans/blob/main/src/AdoNet/Orleans.Persistence.AdoNet/Oracle-Persistence.sql) | [ODP.net](https://www.nuget.org/packages/Oracle.ManagedDataAccess/) | `Oracle.DataAccess.Client` |
+
+\* If you're using Orleans v3.x use this script template: <https://github.com/dotnet/orleans/blob/3.x/src/AdoNet/Orleans.Persistence.AdoNet/SQLServer-Persistence.sql>
 
 ## Reminders
 

@@ -1,7 +1,7 @@
 ---
 title: Using NoSQL databases as a persistence infrastructure
 description: Understand the use of NoSql databases in general, and Azure Cosmos DB in particular, as an option to implement persistence.
-ms.date: 06/23/2021
+ms.date: 09/10/2024
 ---
 # Use NoSQL databases as a persistence infrastructure
 
@@ -150,13 +150,14 @@ For further comparison between simply using MongoDB versus Cosmos DB in the clou
 
 ### Analyze your approach for production applications: MongoDB API vs. Cosmos DB API
 
-In eShopOnContainers, we're using MongoDB API because our priority was fundamentally to have a consistent dev/test environment using a NoSQL database that could also work with Azure Cosmos DB.
+eShopOnContainers uses MongoDB API because the priority was fundamentally to have a consistent dev/test environment using a NoSQL database that could also work with Azure Cosmos DB.
 
-However, if you are planning to use MongoDB API to access Azure Cosmos DB in Azure for production applications, you should analyze the differences in capabilities and performance when using MongoDB API to access Azure Cosmos DB databases compared to using the native Azure Cosmos DB API. If it is similar you can use MongoDB API and you get the benefit of supporting two NoSQL database engines at the same time.
+However, if you're planning to use MongoDB API to access Azure Cosmos DB in Azure for production applications, you should analyze the differences in capabilities and performance when using MongoDB API to access Azure Cosmos DB databases compared to using the native Azure Cosmos DB API. If it's similar, you can use MongoDB API and get the benefit of supporting two NoSQL database engines at the same time.
 
-You could also use MongoDB clusters as the production database in Azure's cloud, too, with [MongoDB Azure Service](https://www.mongodb.com/scale/mongodb-azure-service). But that is not a PaaS service provided by Microsoft. In this case, Azure is just hosting that solution coming from MongoDB.
+You could also use MongoDB clusters as the production database in Azure's cloud, too, with [MongoDB Atlas on
+Microsoft Azure](https://www.mongodb.com/products/platform/atlas-cloud-providers/azure). But that is not a PaaS service provided by Microsoft. In this case, Azure is just hosting that solution coming from MongoDB.
 
-Basically, this is just a disclaimer stating that you shouldn't always use MongoDB API against Azure Cosmos DB, as we did in eShopOnContainers because it was a convenient choice for Linux containers. The decision should be based on the specific needs and tests you need to do for your production application.
+Basically, this is just a disclaimer to say that you shouldn't always use MongoDB API against Azure Cosmos DB. eShopOnContainers uses it because it was a convenient choice for Linux containers. The decision should be based on the specific needs and tests you need to do for your production application.
 
 ### The code: Use MongoDB API in .NET applications
 
@@ -273,8 +274,9 @@ services:
     environment:
       # Other settings
       - ConnectionString=${ESHOP_AZURE_COSMOSDB:-mongodb://nosqldata}
-
 ```
+
+[!INCLUDE [managed-identities](../../../includes/managed-identities.md)]
 
 The `ConnectionString` environment variable is resolved this way: If the `ESHOP_AZURE_COSMOSDB` global variable is defined in the `.env` file with the Azure Cosmos DB connection string, it will use it to access the Azure Cosmos DB database in the cloud. If it’s not defined, it will take the `mongodb://nosqldata` value and use the development MongoDB container.
 
@@ -327,9 +329,6 @@ services:
 
 - **Connect a MongoDB application to Azure Cosmos DB**  \
   [https://learn.microsoft.com/azure/cosmos-db/connect-mongodb-account](/azure/cosmos-db/connect-mongodb-account)
-
-- **The Cosmos DB Emulator Docker image (Windows Container)**  \
-  <https://hub.docker.com/r/microsoft/azure-cosmosdb-emulator/>
 
 - **The MongoDB Docker image (Linux and Windows Container)**  \
   <https://hub.docker.com/_/mongo/>

@@ -1,12 +1,13 @@
 ---
 title: Silo configuration
-description: Learn about silo configuration in .NET Orleans.
-ms.date: 03/09/2022
+description: Learn about silo configuration for multi-cluster support in .NET Orleans.
+ms.date: 05/23/2025
+ms.topic: conceptual
 ---
 
 # Orleans silo configuration
 
-To get a quick overview, we show all relevant configuration parameters (including optional ones) in XML syntax below:
+For a quick overview, we show all relevant configuration parameters (including optional ones) in XML syntax below:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -56,20 +57,20 @@ var silo = new HostBuilder()
     });
 ```
 
-As usual, all configuration settings can also be read and written programmatically, via the respective members of the <xref:Orleans.Runtime.Configuration.GlobalConfiguration> class.
+As usual, you can also read and write all configuration settings programmatically via the respective members of the <xref:Orleans.Runtime.Configuration.GlobalConfiguration> class.
 
 The <xref:Orleans.Runtime.Configuration.GlobalConfiguration.ServiceId?displayProperty=nameWithType> is an arbitrary ID for identifying this service. It must be the same for all clusters and all silos.
 
-The <xref:Orleans.Runtime.MultiClusterNetwork> section is optional &mdash; if not present, all multi-cluster support is disabled for this silo.
+The `MultiClusterNetwork` section is optional. If it's not present, all multi-cluster support is disabled for this silo.
 
-The **required parameters** <xref:Orleans.MultiCluster.IMultiClusterGatewayInfo.ClusterId> and <xref:Orleans.Configuration.MultiClusterOptions.GossipChannels> are explained in the section on [Multi-Cluster Communication](gossip-channels.md).
+The **required parameters** <xref:Orleans.MultiCluster.IMultiClusterGatewayInfo.ClusterId> and <xref:Orleans.Configuration.MultiClusterOptions.GossipChannels> are explained in [Multi-cluster communication](gossip-channels.md).
 
-The  optional parameters <xref:Orleans.Configuration.MultiClusterOptions.MaxMultiClusterGateways> and <xref:Orleans.Configuration.MultiClusterOptions.BackgroundGossipInterval> are explained in the section on [Multi-Cluster Communication](gossip-channels.md).
+The optional parameters <xref:Orleans.Configuration.MultiClusterOptions.MaxMultiClusterGateways> and <xref:Orleans.Configuration.MultiClusterOptions.BackgroundGossipInterval> are explained in [Multi-cluster communication](gossip-channels.md).
 
-The optional parameter <xref:Orleans.Configuration.MultiClusterOptions.DefaultMultiCluster> is explained in the section on [Multi-Cluster Configuration](multi-cluster-configuration.md).
+The optional parameter <xref:Orleans.Configuration.MultiClusterOptions.DefaultMultiCluster> is explained in [Multi-cluster configuration](multi-cluster-configuration.md).
 
-The optional parameters <xref:Orleans.Configuration.MultiClusterOptions.UseGlobalSingleInstanceByDefault>, <xref:Orleans.Configuration.MultiClusterOptions.GlobalSingleInstanceRetryInterval>, and <xref:Orleans.Configuration.MultiClusterOptions.GlobalSingleInstanceNumberRetries> are explained in the section on [Global-Single-Instance Grains](global-single-instance.md).
+The optional parameters <xref:Orleans.Configuration.MultiClusterOptions.UseGlobalSingleInstanceByDefault>, <xref:Orleans.Configuration.MultiClusterOptions.GlobalSingleInstanceRetryInterval>, and <xref:Orleans.Configuration.MultiClusterOptions.GlobalSingleInstanceNumberRetries> are explained in [Global single-instance grains](global-single-instance.md).
 
 ## Orleans client configuration
 
-No extra configuration is required for Orleans client. The same client may not connect to silos in different clusters (the silo refuses the connection in that situation).
+No extra configuration is required for the Orleans client. The same client cannot connect to silos in different clusters (the silo refuses the connection in that situation).

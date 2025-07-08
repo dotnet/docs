@@ -1,28 +1,28 @@
 ---
-title: "What's New"
+title: "What's new in ADO.NET"
 description: Learn about the new features in ADO.NET in .NET Framework 4.5, including new features for SqlClient data provider and ADO.NET Entity Framework.
 ms.date: "03/30/2017"
-ms.assetid: 3bb65d38-cce2-46f5-b979-e5c505e95e10
+ms.topic: whats-new
 ---
-# What's New in ADO.NET
+# What's new in ADO.NET
 
-The following features are new in ADO.NET in the .NET Framework 4.5.
+The following features are new in ADO.NET in .NET Framework 4.5.
 
 ## SqlClient Data Provider
 
 The following features are new in the .NET Framework Data Provider for SQL Server in .NET Framework 4.5:
 
-- The ConnectRetryCount and ConnectRetryInterval connection string keywords (<xref:System.Data.SqlClient.SqlConnection.ConnectionString%2A>) let you control the idle connection resiliency feature.
+- The `ConnectRetryCount` and `ConnectRetryInterval` connection string keywords (<xref:System.Data.SqlClient.SqlConnection.ConnectionString%2A>) let you control the idle connection resiliency feature.
 
-- Streaming support from SQL Server to an application supports scenarios where data on the server is unstructured.  See [SqlClient Streaming Support](sqlclient-streaming-support.md) for more information.
+- Streaming support from SQL Server to an application supports scenarios where data on the server is unstructured. For more information, see [SqlClient Streaming Support](sqlclient-streaming-support.md).
 
-- Support has been added for asynchronous programming.  See [Asynchronous Programming](asynchronous-programming.md) for more information.
+- Support has been added for asynchronous programming. For more information, see [Asynchronous Programming](asynchronous-programming.md).
 
 - Connection failures will now be logged in the extended events log. For more information, see [Data Tracing in ADO.NET](data-tracing.md).
 
 - SqlClient now has support for SQL Server's high availability, disaster recovery feature, AlwaysOn. For more information, see [SqlClient Support for High Availability, Disaster Recovery](./sql/sqlclient-support-for-high-availability-disaster-recovery.md).
 
-- A password can be passed as a <xref:System.Security.SecureString> when using SQL Server Authentication. See <xref:System.Data.SqlClient.SqlCredential> for more information.
+- A password can be passed as a <xref:System.Security.SecureString> when using SQL Server Authentication. For more information, see <xref:System.Data.SqlClient.SqlCredential>.
 
 - When `TrustServerCertificate` is false and `Encrypt` is true, the server name (or IP address) in a SQL Server SSL certificate must exactly match the server name (or IP address) specified in the connection string. Otherwise, the connection attempt will fail. For more information, see the description of the `Encrypt` connection option in <xref:System.Data.SqlClient.SqlConnection.ConnectionString%2A>.
 
@@ -46,7 +46,7 @@ The following features are new in the .NET Framework Data Provider for SQL Serve
 
 ## ADO.NET Entity Framework
 
-.NET Framework 4.5 adds APIs that enable new scenarios when working with Entity Framework 5.0. For more information about improvements and features that were added to Entity Framework 5.0, see the following articles: [What’s New](/previous-versions/gg696190(v=vs.103)) and [Entity Framework Releases and Versioning](/ef/ef6/what-is-new/past-releases).
+.NET Framework 4.5 added APIs that enabled new scenarios when working with Entity Framework 5.0. For more information about improvements and features that were added to Entity Framework 5.0, see [Entity Framework Releases and Versioning](/ef/ef6/what-is-new/past-releases).
 
 ## See also
 

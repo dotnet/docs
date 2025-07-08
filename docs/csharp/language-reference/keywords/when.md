@@ -1,6 +1,6 @@
 ---
 description: "when contextual keyword - C# reference"
-title: "when contextual keyword - C# reference"
+title: "when contextual keyword"
 ms.date: 03/07/2017
 f1_keywords: 
   - "when_CSharpKeyword"
@@ -33,5 +33,4 @@ The following example uses the `when` keyword to conditionally execute handlers 
 
 ## See also
 
-- [C# reference](../index.md)
 - [C# keywords](index.md)

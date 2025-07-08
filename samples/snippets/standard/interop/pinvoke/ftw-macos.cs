@@ -3,14 +3,14 @@ using System.Runtime.InteropServices;
 
 namespace PInvokeSamples
 {
-    public static class Program
+    public static partial class Program
     {
         // Define a delegate that has the same signature as the native function.
         private delegate int DirClbk(string fName, ref Stat stat, int typeFlag);
 
         // Import the libc and define the method to represent the native function.
-        [DllImport("libSystem.dylib")]
-        private static extern int ftw(string dirpath, DirClbk cl, int descriptors);
+        [LibraryImport("libSystem.dylib", StringMarshalling = StringMarshalling.Utf16)]
+        private static partial int ftw(string dirpath, DirClbk cl, int descriptors);
 
         // Implement the above DirClbk delegate;
         // this one just prints out the filename that is passed to it.

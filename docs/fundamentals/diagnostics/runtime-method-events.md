@@ -1,6 +1,6 @@
 ---
 title: "Method runtime events"
-description: See .NET runtime events that collect diagnostic information specific to methods, like CLR method events, CLR method marker or CLR method verbose events, and MethodJittingStarted.
+description: Learn about the .NET runtime events that collect diagnostic information specific to methods, like CLR method events, CLR method marker or CLR method verbose events, and MethodJittingStarted.
 ms.date: "11/13/2020"
 helpviewer_keywords:
   - "Method events (CoreCLR)"
@@ -9,7 +9,7 @@ helpviewer_keywords:
 
 # .NET runtime method events
 
-These events collect information that is specific to methods. The payload of these events is required for symbol resolution. In addition, these events provide helpful information such as methods that are loaded and unloaded. For more information about how to use these events for diagnostic purposes, see [logging and tracing .NET applications](../../core/diagnostics/logging-tracing.md)
+The events described in this article collect information that is specific to methods. The payload of these events is required for symbol resolution. In addition, these events provide helpful information such as methods that are loaded and unloaded. For more information about how to use these events for diagnostic purposes, see [logging and tracing .NET applications](../../core/diagnostics/logging-tracing.md).
 
 All method events have a level of "Informational (4)". All method verbose events have a level of "Verbose (5)".
 
@@ -234,8 +234,8 @@ The following table shows the event information:
 |`MethodNameSpace`|`win:UnicodeString`|Full namespace name associated with the method.|
 |`MethodName`|`win:UnicodeString`|Full class name associated with the method.|
 |`MethodSignature`|`win:UnicodeString`|Signature of the method (comma-separated list of type names).|
-|`ReJITID`|`win:UInt64`|ReJIT ID of the method.|
 |`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CoreCLR.|
+|`ReJITID`|`win:UInt64`|ReJIT ID of the method.|
 
 ## MethodJittingStarted_V1 event
 
@@ -374,7 +374,7 @@ The following table shows the keyword and level:
 |`MethodID`|`win:UInt64`|Unique identifier of a method.|
 |`ReJITID`|`win:UInt64`|The ReJIT ID of the method.|
 |`MethodExtent`|`win:UInt8`|The extent for the jitted method.|
-|`CountOfMapEntries`|`win:UInt8`|Number of map entries|
+|`CountOfMapEntries`|`win:UInt16`|Number of map entries|
 |`ILOffsets`|`win:UInt32`|The IL offset.|
 |`NativeOffsets`|`win:UInt32`|The native code offset.|
 |`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CoreCLR.|

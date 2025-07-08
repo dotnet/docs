@@ -3,7 +3,7 @@ title: HttpClient guidelines for .NET
 description: Learn about using HttpClient instances to send HTTP requests and how you can manage clients using IHttpClientFactory in your .NET apps.
 author: gewarren
 ms.author: gewarren
-ms.date: 08/14/2023
+ms.date: 03/08/2024
 ---
 
 # Guidelines for using HttpClient
@@ -22,7 +22,9 @@ var handler = new SocketsHttpHandler
 var sharedClient = new HttpClient(handler);
 ```
 
-The preceding `HttpClient` is configured to reuse connections for 15 minutes. After the timespan specified by <xref:System.Net.Http.SocketsHttpHandler.PooledConnectionLifetime> has elapsed, the connection is closed and a new one is created.
+The preceding `HttpClient` is configured to reuse connections for 15 minutes. After the timespan specified by <xref:System.Net.Http.SocketsHttpHandler.PooledConnectionLifetime> has elapsed and the connection has completed its last associated request (if any), this connection is closed. If there are any requests waiting in the queue, a new connection is created as needed.
+
+The 15-minute interval was chosen arbitrarily for illustration purposes. You should choose the value based on the expected frequency of DNS or other network changes.
 
 ## Pooled connections
 
@@ -47,14 +49,28 @@ To summarize recommended `HttpClient` use in terms of lifetime management, you s
 
 - In .NET Framework, use <xref:System.Net.Http.IHttpClientFactory> to manage your `HttpClient` instances. If you don't use the factory and instead create a new client instance for each request yourself, you can exhaust available ports.
 
-    > [!TIP]
-    > If your app requires cookies, consider disabling automatic cookie handling or avoiding <xref:System.Net.Http.IHttpClientFactory>. Pooling the <xref:System.Net.Http.HttpMessageHandler> instances results in sharing of <xref:System.Net.CookieContainer> objects. Unanticipated <xref:System.Net.CookieContainer> object sharing often results in incorrect code.
+    > [!WARNING]
+    > If your app requires cookies, it's recommended to avoid using <xref:System.Net.Http.IHttpClientFactory>. Pooling the <xref:System.Net.Http.HttpMessageHandler> instances results in sharing of <xref:System.Net.CookieContainer> objects. Unanticipated <xref:System.Net.CookieContainer> sharing might leak cookies between unrelated parts of the application. Moreover, when <xref:Microsoft.Extensions.Http.HttpClientFactoryOptions.HandlerLifetime> expires, the handler is recycled, meaning that all cookies stored in its <xref:System.Net.CookieContainer> are lost.
 
 For more information about managing `HttpClient` lifetime with `IHttpClientFactory`, see [`IHttpClientFactory` guidelines](../../../core/extensions/httpclient-factory.md#httpclient-lifetime-management).
+
+## Resilience with static clients
+
+It's possible to configure a `static` or *singleton* client to use any number of resilience pipelines using the following pattern:
+
+:::code language="csharp" source="snippets/httpclient-guidelines/MyClass.cs":::
+
+The preceding code:
+
+- Relies on [Microsoft.Extensions.Http.Resilience](https://www.nuget.org/packages/Microsoft.Extensions.Http.Resilience) NuGet package.
+- Specifies a transient HTTP error handler, configured with retry pipeline that with each attempt will exponentially backoff delay intervals.
+- Defines a pooled connection lifetime of fifteen minutes for the `socketHandler`.
+- Passes the `socketHandler` to the `resilienceHandler` with the retry logic.
+- Instantiates a shared `HttpClient` given the `resilienceHandler`.
 
 ## See also
 
 - [HTTP support in .NET](http-overview.md)
-- [Create HttpClient instances using IHttpClientFactory](../../../core/extensions/httpclient-factory.md)
+- [HTTP client factory with .NET](../../../core/extensions/httpclient-factory.md)
 - [Make HTTP requests with the HttpClient](httpclient.md)
 - [Use IHttpClientFactory to implement resilient HTTP requests](../../../architecture/microservices/implement-resilient-applications/use-httpclientfactory-to-implement-resilient-http-requests.md)

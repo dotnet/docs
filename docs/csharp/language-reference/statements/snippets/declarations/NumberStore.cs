@@ -5,7 +5,7 @@
 
     public class NumberStore
     {
-        private readonly int[] numbers = { 1, 30, 7, 1557, 381, 63, 1027, 2550, 511, 1023 };
+        private readonly int[] numbers = [1, 30, 7, 1557, 381, 63, 1027, 2550, 511, 1023];
 
         public ref int GetReferenceToMax()
         {

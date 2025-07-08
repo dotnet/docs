@@ -1,7 +1,7 @@
 ---
 title: ".NET Regular Expressions"
 description: Use regular expressions to find specific character patterns, validate text, work with text substrings, & add extracted strings to a collection in .NET.
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: "07/26/2022"
 ms.custom: devdivchpfy22
 dev_langs: 
@@ -88,6 +88,7 @@ The <xref:System.String> class includes string search and replacement methods th
  The regular expression pattern `\b(\w+?)\s\1\b` can be interpreted as follows:  
   
 > [!div class="mx-tdCol2BreakAll"]
+>
 > |Pattern|Interpretation|  
 > |-|-|
 > |`\b`|Start at a word boundary.|  
@@ -110,6 +111,7 @@ The <xref:System.String> class includes string search and replacement methods th
  On a computer whose current culture is English - United States (en-US), the example dynamically builds the regular expression `\$\s*[-+]?([0-9]{0,3}(,[0-9]{3})*(\.[0-9]+)?)`. This regular expression pattern can be interpreted as follows:  
 
 > [!div class="mx-tdCol2BreakAll"]
+>
 > |Pattern|Interpretation|  
 > |-|-|  
 > |`\$`|Look for a single occurrence of the dollar symbol (`$`) in the input string. The regular expression pattern string includes a backslash to indicate that the dollar symbol is to be interpreted literally rather than as a regular expression anchor. The `$` symbol alone would indicate that the regular expression engine should try to begin its match at the end of a string. To ensure that the current culture's currency symbol isn't misinterpreted as a regular expression symbol, the example calls the <xref:System.Text.RegularExpressions.Regex.Escape%2A?displayProperty=nameWithType> method to escape the character.|  

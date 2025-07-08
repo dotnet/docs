@@ -1,10 +1,10 @@
 ---
 description: "C# Compiler Options for language feature rules. These options control how the compiler interprets certain language constructs."
-title: "C# Compiler Options - language feature rules"
-ms.date: 07/06/2021
-f1_keywords: 
+title: "Compiler Options - language feature rules"
+ms.date: 09/17/2024
+f1_keywords:
   - "cs.build.options"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "CheckForOverflowUnderflow compiler option [C#]"
   - "AllowUnsafeBlocks compiler option [C#]"
   - "DefineConstants compiler option [C#]"
@@ -20,6 +20,9 @@ The following options control how the compiler interprets language features. The
 - **DefineConstants** / `-define`: Define conditional compilation symbol(s).
 - **LangVersion** / `-langversion`: Specify language version such as `default` (latest major version), or `latest` (latest version, including minor versions).
 - **Nullable** / `-nullable`: Enable nullable context, or nullable warnings.
+
+> [!NOTE]
+> Refer to [Compiler options](index.md#how-to-set-options) for more information on configuring these options for your project.
 
 ## CheckForOverflowUnderflow
 
@@ -60,7 +63,13 @@ This option specifies the names of one or more symbols that you want to define. 
 
 ## LangVersion
 
-Causes the compiler to accept only syntax that is included in the chosen C# language specification.
+The default language version for the C# compiler depends on the target framework for your application and the version of the SDK or Visual Studio installed. Those rules are defined in [C# language versioning](../language-versioning.md#defaults).
+
+> [!WARNING]
+>
+> Setting the `LangVersion` element to `latest` is discouraged. The `latest` setting means the installed compiler uses its latest version. That can change from machine to machine, making builds unreliable. In addition, it enables language features that may require runtime or library features not included in the current SDK.
+
+The **LangVersion** option causes the compiler to accept only syntax that is included in the specified C# language specification, for example:
 
 ```xml
 <LangVersion>9.0</LangVersion>
@@ -70,18 +79,19 @@ The following values are valid:
 
 [!INCLUDE [lang-versions-table](../includes/langversion-table.md)]
 
-The default language version depends on the target framework for your application and the version of the SDK or Visual Studio installed. Those rules are defined in [C# language versioning](../configure-language-version.md#defaults).
+### Considerations
 
-> [!IMPORTANT]
-> The `latest` value is generally not recommended. With it, the compiler enables the latest features, even if those features depend on updates not included in the configured target framework. Without this setting, your project uses the compiler version recommended for your target framework. You can update the target framework to access newer language features.
+- To ensure that your project uses the default compiler version recommended for your target framework, don't use the **LangVersion** option. You can update the target framework to access newer language features.
 
-Metadata referenced by your C# application isn't subject to the **LangVersion** compiler option.
+- Specifying **LangVersion** with the `default` value is different from omitting the **LangVersion** option. Specifying `default` uses the latest version of the language that the compiler supports, without taking into account the target framework. For example, building a project that targets .NET 6 from Visual Studio version 17.6 uses C# 10 if **LangVersion** isn't specified, but uses C# 11 if **LangVersion** is set to `default`.
 
-Because each version of the C# compiler contains extensions to the language specification, **LangVersion** doesn't give you the equivalent functionality of an earlier version of the compiler.
+- Metadata referenced by your C# application isn't subject to the **LangVersion** compiler option.
 
-Additionally, while C# version updates generally coincide with major .NET releases, the new syntax and features aren't necessarily tied to that specific framework version. Each specific feature has its own minimum .NET API or common language runtime requirements that may allow it to run on downlevel frameworks by including NuGet packages or other libraries.
+- Because each version of the C# compiler contains extensions to the language specification, **LangVersion** doesn't give you the equivalent functionality of an earlier version of the compiler.
 
-Regardless of which **LangVersion** setting you use, use the current version of the common language runtime to create your .exe or .dll. One exception is friend assemblies and [**ModuleAssemblyName**](advanced.md#moduleassemblyname), which work under **-langversion:ISO-1**.
+- While C# version updates generally coincide with major .NET releases, the new syntax and features aren't necessarily tied to that specific framework version. Each specific feature has its own minimum .NET API or common language runtime requirements that may allow it to run on downlevel frameworks by including NuGet packages or other libraries.
+
+- Regardless of which **LangVersion** setting you use, use the current version of the common language runtime to create your *.exe* or *.dll*. One exception is friend assemblies and [ModuleAssemblyName](advanced.md#moduleassemblyname), which work under **-langversion:ISO-1**.
 
 For other ways to specify the C# language version, see [C# language versioning](../configure-language-version.md).
 
@@ -89,23 +99,25 @@ For information about how to set this compiler option programmatically, see <xre
 
 ### C# language specification
 
-| Version          | Link                       | Description                                                             |
-|------------------|----------------------------|-------------------------------------------------------------------------|
-| C# 7.0 and later | [link][csharp-7]           | C# Language Specification Version 7 - Unofficial Draft: .NET Foundation |
-| C# 6.0           | [download PDF][csharp-6]   | Standard ECMA-334 6th Edition                                           |
-| C# 5.0           | [Download PDF][csharp-5]   | Standard ECMA-334 5th Edition                                           |
-| C# 3.0           | [Download DOC][csharp-3]   | C# Language Specification Version 3.0: Microsoft Corporation            |
-| C# 2.0           | [Download PDF][csharp-2]   | Standard ECMA-334 4th Edition                                           |
-| C# 1.2           | [Download DOC][csharp-1.2] | C# Language Specification Version 1.2: Microsoft Corporation            |
-| C# 1.0           | [Download DOC][csharp-1]   | C# Language Specification Version 1.0: Microsoft Corporation            |
+| Version          | Link                       | Description                                                  |
+|------------------|----------------------------|--------------------------------------------------------------|
+| C# 8.0 and later | [download PDF][csharp-8]   | C# Language Specification Version 7: .NET Foundation         |
+| C# 7.3           | [download PDF][csharp-7]   | Standard ECMA-334 7th Edition                                |
+| C# 6.0           | [download PDF][csharp-6]   | Standard ECMA-334 6th Edition                                |
+| C# 5.0           | [Download PDF][csharp-5]   | Standard ECMA-334 5th Edition                                |
+| C# 3.0           | [Download DOC][csharp-3]   | C# Language Specification Version 3.0: Microsoft Corporation |
+| C# 2.0           | [Download PDF][csharp-2]   | Standard ECMA-334 4th Edition                                |
+| C# 1.2           | [Download DOC][csharp-1.2] | Standard ECMA-334 2nd Edition                                |
+| C# 1.0           | [Download DOC][csharp-1]   | Standard ECMA-334 1st Edition                                |
 
-[csharp-7]: /dotnet/csharp/language-reference/language-specification/introduction
+[csharp-8]: /dotnet/csharp/language-reference/language-specification/introduction
+[csharp-7]: https://ecma-international.org/wp-content/uploads/ECMA-334_7th_edition_december_2023.pdf
 [csharp-6]: https://www.ecma-international.org/wp-content/uploads/ECMA-334_6th_edition_june_2022.pdf
-[csharp-5]: https://www.ecma-international.org/publications/files/ECMA-ST/ECMA-334.pdf
+[csharp-5]: https://www.ecma-international.org/wp-content/uploads/ECMA-334_5th_edition_december_2017.pdf
 [csharp-3]: https://download.microsoft.com/download/3/8/8/388e7205-bc10-4226-b2a8-75351c669b09/CSharp%20Language%20Specification.doc
-[csharp-2]: https://www.ecma-international.org/publications/files/ECMA-ST-ARCH/ECMA-334%204th%20edition%20June%202006.pdf
-[csharp-1.2]: https://www.ecma-international.org/publications/files/ECMA-ST-ARCH/ECMA-334%202nd%20edition%20December%202002.pdf
-[csharp-1]: https://www.ecma-international.org/publications/files/ECMA-ST-ARCH/ECMA-334%201st%20edition%20December%202001.pdf
+[csharp-2]: https://www.ecma-international.org/wp-content/uploads/ECMA-334_4th_edition_june_2006.pdf
+[csharp-1.2]: https://www.ecma-international.org/wp-content/uploads/ECMA-334_2nd_edition_december_2002.pdf
+[csharp-1]: https://www.ecma-international.org/wp-content/uploads/ECMA-334_1st_edition_december_2001.pdf
 
 ### Minimum SDK version needed to support all language features
 
@@ -113,6 +125,7 @@ The following table lists the minimum versions of the SDK with the C# compiler t
 
 | C# version | Minimum SDK version                                                                  |
 |------------|--------------------------------------------------------------------------------------|
+| C# 12      | Microsoft Visual Studio/Build Tools 2022 version 17.8, or .NET 8 SDK                 |
 | C# 11      | Microsoft Visual Studio/Build Tools 2022 version 17.4, or .NET 7 SDK                 |
 | C# 10      | Microsoft Visual Studio/Build Tools 2022, or .NET 6 SDK                              |
 | C# 9.0     | Microsoft Visual Studio/Build Tools 2019 version 16.8, or .NET 5 SDK                 |
@@ -136,7 +149,7 @@ The **Nullable** option lets you specify the nullable context. It can be set in 
 <Nullable>enable</Nullable>
 ```
 
-The argument must be one of `enable`, `disable`, `warnings`, or `annotations`. The `enable` argument enables the nullable context. Specifying `disable` will disable the nullable context. When you specify the `warnings` argument, the nullable warning context is enabled. When you specify the `annotations` argument, the nullable annotation context is enabled. The values are described and explained in the article on [Nullable contexts](../../nullable-references.md#nullable-contexts). You can learn more about the tasks involved in enabling nullable reference types in an existing codebase in our article on [nullable migration strategies](../../nullable-migration-strategies.md).
+The argument must be one of `enable`, `disable`, `warnings`, or `annotations`. The `enable` argument enables the nullable context. Specifying `disable` will disable the nullable context. When you specify the `warnings` argument, the nullable warning context is enabled. When you specify the `annotations` argument, the nullable annotation context is enabled. The values are described and explained in the article on [Nullable contexts](../../nullable-references.md#nullable-context). You can learn more about the tasks involved in enabling nullable reference types in an existing codebase in our article on [nullable migration strategies](../../nullable-migration-strategies.md).
 
 > [!NOTE]
 > When there's no value set, the default value `disable` is applied, however the .NET 6 templates are by default provided with the **Nullable** value set to `enable`.

@@ -42,7 +42,7 @@ See the [ASP.NET Core tutorials](/aspnet/core/tutorials/). Many articles in the 
 
 This sample demonstrates the syntax and features for creating and consuming C# iterators. The [completed sample](https://github.com/dotnet/samples/tree/main/csharp/iterators) is available in the dotnet/samples repository on GitHub.
 
-**[Indexers](../csharp/indexers.md)**
+**[Indexers](/dotnet/csharp/programming-guide/indexers)**
 
 This sample demonstrates the syntax and features for C# indexers. The [completed sample](https://github.com/dotnet/samples/tree/main/csharp/indexers) is available in the dotnet/samples repository on GitHub.
 
@@ -80,14 +80,6 @@ This tutorial demonstrates web communications, JSON serialization, and object-or
 
 This tutorial demonstrates many of the features of LINQ and the language elements that support it. The [completed sample](https://github.com/dotnet/samples/tree/main/csharp/getting-started/console-linq) is available in the dotnet/samples repository on GitHub.
 
-**[Tutorial: Create a .NET console application using Visual Studio for Mac](../core/tutorials/with-visual-studio-mac.md)**
-
-This tutorial shows you how to build a simple .NET console app using Visual Studio for Mac.
-
-**[Create a .NET class library on macOS using Visual Studio for Mac](../core/tutorials/library-with-visual-studio-mac.md)**
-
-This tutorial shows you how to build a .NET class library using Visual Studio for Mac.
-
 **[Creating a .NET Core application that supports plugins](../core/tutorials/creating-app-with-plugin-support.md)**
 
 This tutorial shows you how to build a simple application on .NET Core that supports a plugin architecture. The [completed sample](https://github.com/dotnet/samples/tree/main/core/extensions/AppWithPlugin) is available in the dotnet/samples repository on GitHub.
@@ -109,6 +101,6 @@ Many topics show source code and samples that are available for viewing or downl
 1. Navigate within the repository's folders to the sample's location. The relative path to the sample's location appears in your browser's address bar when you follow the link to the sample.
 1. To run a sample, you have several options:
    * Use the [.NET CLI](../core/tools/index.md): In a console window, navigate to the sample's folder and use dotnet CLI commands.
-   * Use [Visual Studio](https://visualstudio.microsoft.com/vs/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link) or [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link): Open the sample by selecting **File > Open > Project/Solution** from the menu bar, navigate to the sample project folder, and select the project file (*.csproj* or *.fsproj*).
+   * Use [Visual Studio](https://visualstudio.microsoft.com/vs/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link): Open the sample by selecting **File > Open > Project/Solution** from the menu bar, navigate to the sample project folder, and select the project file (*.csproj* or *.fsproj*).
    * Use [Visual Studio Code](https://code.visualstudio.com/): Open the sample by selecting **File > Open Folder** from the menu bar and selecting the sample's project folder.
    * Use a different IDE that supports .NET projects.

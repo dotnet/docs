@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.IO;
 using System.Threading;
@@ -25,7 +25,7 @@ public class Example
                               long size = fi.Length;
                               Interlocked.Add(ref totalSize, size);
                    } );
-      Console.WriteLine("Directory '{0}':", args[0]);
+      Console.WriteLine($"Directory '{args[0]}':");
       Console.WriteLine("{0:N0} files, {1:N0} bytes", files.Length, totalSize);
    }
 }

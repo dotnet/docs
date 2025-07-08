@@ -15,6 +15,8 @@ ms.assetid: c5f786a0-969b-4f14-9f02-e77c3384d9af
 ---
 # How to: View the contents of the global assembly cache
 
+[!INCLUDE [net-framework-specific](../includes/net-framework-specific.md)]
+
 Use the [global assembly cache tool (gacutil.exe)](../tools/gacutil-exe-gac-tool.md) to view the contents of the global assembly cache (GAC).
 
 ## View the assemblies in the GAC

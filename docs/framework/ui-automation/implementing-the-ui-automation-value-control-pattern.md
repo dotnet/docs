@@ -6,7 +6,6 @@ helpviewer_keywords:
   - "control patterns, Value"
   - "UI Automation, Value control pattern"
   - "Value control pattern"
-ms.assetid: b0fcdd87-3add-4345-bca9-e891205e02ba
 ---
 # Implementing the UI Automation Value Control Pattern
 
@@ -70,6 +69,6 @@ Example of Color Swatch String Mapping
 - [UI Automation Control Patterns Overview](ui-automation-control-patterns-overview.md)
 - [Support Control Patterns in a UI Automation Provider](support-control-patterns-in-a-ui-automation-provider.md)
 - [UI Automation Control Patterns for Clients](ui-automation-control-patterns-for-clients.md)
-- [ValuePattern Insert Text Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Accessibility/InsertText)
+- [ValuePattern Insert Text Sample](https://github.com/Microsoft/WPF-Samples/tree/main/Accessibility/InsertText)
 - [UI Automation Tree Overview](ui-automation-tree-overview.md)
 - [Use Caching in UI Automation](use-caching-in-ui-automation.md)

@@ -1,9 +1,10 @@
 ---
 title: Install and manage SDK templates
-description: Learn how to install .NET templates on Windows, Linux, and macOS.
+description: Learn how to install .NET templates on Windows, Linux, and macOS. Templates are installed from NuGet, a NuGet package file, or a file system directory.
 author: adegeo
 ms.author: adegeo
-ms.date: 04/24/2020
+ms.date: 05/14/2024
+ms.custom: linux-related-content
 zone_pivot_groups: operating-systems-set-one
 no-loc: ['dotnet new', 'dotnet nuget add source']
 ---
@@ -183,6 +184,8 @@ The .NET templates are available on NuGet, and you can install them like any oth
 | .NET 5.0         | [`Microsoft.DotNet.Common.ProjectTemplates.5.0`](https://www.nuget.org/packages/Microsoft.DotNet.Common.ProjectTemplates.5.0) |
 | .NET 6.0         | [`Microsoft.DotNet.Common.ProjectTemplates.6.0`](https://www.nuget.org/packages/Microsoft.DotNet.Common.ProjectTemplates.6.0) |
 | .NET 7.0         | [`Microsoft.DotNet.Common.ProjectTemplates.7.0`](https://www.nuget.org/packages/Microsoft.DotNet.Common.ProjectTemplates.7.0) |
+| .NET 8.0         | [`Microsoft.DotNet.Common.ProjectTemplates.8.0`](https://www.nuget.org/packages/Microsoft.DotNet.Common.ProjectTemplates.8.0) |
+| .NET 9.0         | [`Microsoft.DotNet.Common.ProjectTemplates.9.0`](https://www.nuget.org/packages/Microsoft.DotNet.Common.ProjectTemplates.9.0) |
 | ASP.NET Core 2.1 | [`Microsoft.DotNet.Web.ProjectTemplates.2.1`](https://www.nuget.org/packages/Microsoft.DotNet.Web.ProjectTemplates.2.1)       |
 | ASP.NET Core 2.2 | [`Microsoft.DotNet.Web.ProjectTemplates.2.2`](https://www.nuget.org/packages/Microsoft.DotNet.Web.ProjectTemplates.2.2)       |
 | ASP.NET Core 3.0 | [`Microsoft.DotNet.Web.ProjectTemplates.3.0`](https://www.nuget.org/packages/Microsoft.DotNet.Web.ProjectTemplates.3.0)       |
@@ -190,8 +193,10 @@ The .NET templates are available on NuGet, and you can install them like any oth
 | ASP.NET Core 5.0 | [`Microsoft.DotNet.Web.ProjectTemplates.5.0`](https://www.nuget.org/packages/Microsoft.DotNet.Web.ProjectTemplates.5.0)       |
 | ASP.NET Core 6.0 | [`Microsoft.DotNet.Web.ProjectTemplates.6.0`](https://www.nuget.org/packages/Microsoft.DotNet.Web.ProjectTemplates.6.0)       |
 | ASP.NET Core 7.0 | [`Microsoft.DotNet.Web.ProjectTemplates.7.0`](https://www.nuget.org/packages/Microsoft.DotNet.Web.ProjectTemplates.7.0)       |
+| ASP.NET Core 8.0 | [`Microsoft.DotNet.Web.ProjectTemplates.8.0`](https://www.nuget.org/packages/Microsoft.DotNet.Web.ProjectTemplates.8.0)       |
+| ASP.NET Core 9.0 | [`Microsoft.DotNet.Web.ProjectTemplates.8.0`](https://www.nuget.org/packages/Microsoft.DotNet.Web.ProjectTemplates.9.0)       |
 
-For example, the .NET 7 SDK includes templates for a console app targeting .NET 7. If you wanted to target .NET Core 3.1, you would need to install the 3.1 template package.
+For example, the .NET 9 SDK includes templates for a console app targeting .NET 9. If you wanted to target .NET Core 3.1, you would need to install the 3.1 template package.
 
 01. Try creating an app that targets .NET Core 3.1.
 
@@ -215,14 +220,16 @@ For example, the .NET 7 SDK includes templates for a console app targeting .NET 
 
     And you should see a message indicating the project was created.
 
-    > The template "Console Application" was created successfully.
-    >
-    > Processing post-creation actions...
-    > Running 'dotnet restore' on path-to-project-file.csproj...
-    >   Determining projects to restore...
-    >   Restore completed in 1.05 sec for path-to-project-file.csproj.
-    >
-    > Restore succeeded.
+    ```output
+    The template "Console Application" was created successfully.
+    
+    Processing post-creation actions...
+    Running 'dotnet restore' on path-to-project-file.csproj...
+      Determining projects to restore...
+      Restore completed in 1.05 sec for path-to-project-file.csproj.
+    
+    Restore succeeded.
+    ```
 
 ## See also
 

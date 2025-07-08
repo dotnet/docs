@@ -6,12 +6,17 @@ public static class AssignmentOperator
     {
         Simple();
         RefAssignment();
+        // <Usage>
+        string msg = "Hi";
+        RefReassignAndModify(ref msg);
+        Console.WriteLine(msg); // Output: Hi!
+        // </Usage>
     }
 
     private static void Simple()
     {
         // <SnippetSimple>
-        var numbers = new List<double>() { 1.0, 2.0, 3.0 };
+        List<double> numbers = [1.0, 2.0, 3.0];
 
         Console.WriteLine(numbers.Capacity);
         numbers.Capacity = 100;
@@ -52,5 +57,17 @@ public static class AssignmentOperator
         // 3 0 0
         // 3 0 5
         // </SnippetRefAssignment>
+    }
+
+    // <SnippetRefReassignAndModify>
+    private static void RefReassignAndModify(scoped ref string s)
+    {
+        string sLocal = "Hello";
+        Console.WriteLine(sLocal);  // Output: Hello
+
+        s = ref sLocal;
+        s = "World";
+        Console.WriteLine(s);  // Output: World
+        // </SnippetRefReassignAndModify>
     }
 }

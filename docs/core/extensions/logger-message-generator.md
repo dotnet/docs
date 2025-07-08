@@ -1,9 +1,7 @@
 ---
 title: Compile-time logging source generation
 description: Learn how to use the LoggerMessageAttribute and compile-time source generation for logging in .NET.
-author: maryamariyan
-ms.author: maariyan
-ms.date: 03/13/2023
+ms.date: 06/21/2024
 ---
 
 # Compile-time logging source generation
@@ -22,7 +20,7 @@ public static partial class Log
     [LoggerMessage(
         EventId = 0,
         Level = LogLevel.Critical,
-        Message = "Could not open socket to `{hostName}`")]
+        Message = "Could not open socket to `{HostName}`")]
     public static partial void CouldNotOpenSocket(
         ILogger logger, string hostName);
 }
@@ -36,7 +34,7 @@ public static partial class Log
     [LoggerMessage(
         EventId = 0,
         Level = LogLevel.Critical,
-        Message = "Could not open socket to `{hostName}`")]
+        Message = "Could not open socket to `{HostName}`")]
     public static partial void CouldNotOpenSocket(
         this ILogger logger, string hostName);
 }
@@ -57,10 +55,25 @@ public partial class InstanceLoggingExample
     [LoggerMessage(
         EventId = 0,
         Level = LogLevel.Critical,
-        Message = "Could not open socket to `{hostName}`")]
+        Message = "Could not open socket to `{HostName}`")]
     public partial void CouldNotOpenSocket(string hostName);
 }
 ```
+
+Starting with .NET 9, the logging method can additionally get the logger from an `ILogger` primary constructor parameter in the containing class.
+
+```csharp
+public partial class InstanceLoggingExample(ILogger logger)
+{
+    [LoggerMessage(
+        EventId = 0,
+        Level = LogLevel.Critical,
+        Message = "Could not open socket to `{HostName}`")]
+    public partial void CouldNotOpenSocket(string hostName);
+}
+```
+
+If there is both an `ILogger` field and a primary constructor parameter, the logging method will get the logger from the field.
 
 Sometimes, the log level needs to be dynamic rather than statically built into the code. You can do this by omitting the log level from the attribute and instead requiring it as a parameter to the logging method.
 
@@ -69,7 +82,7 @@ public static partial class Log
 {
     [LoggerMessage(
         EventId = 0,
-        Message = "Could not open socket to `{hostName}`")]
+        Message = "Could not open socket to `{HostName}`")]
     public static partial void CouldNotOpenSocket(
         ILogger logger,
         LogLevel level, /* Dynamic log level as parameter, rather than defined in attribute. */
@@ -93,7 +106,7 @@ Consider the example logging output when using the `JsonConsole` formatter.
     "Message": "Liana lives in Seattle.",
     "name": "Liana",
     "city": "Seattle",
-    "{OriginalFormat}": "{name} lives in {city}."
+    "{OriginalFormat}": "{Name} lives in {City}."
   }
 }
 ```
@@ -105,7 +118,6 @@ When using the `LoggerMessageAttribute` on logging methods, some constraints mus
 - Logging methods must be `partial` and return `void`.
 - Logging method names must *not* start with an underscore.
 - Parameter names of logging methods must *not* start with an underscore.
-- Logging methods may *not* be defined in a nested type.
 - Logging methods *cannot* be generic.
 - If a logging method is `static`, the `ILogger` instance is required as a parameter.
 
@@ -140,7 +152,7 @@ As a general rule, the first instance of `ILogger`, `LogLevel`, and `Exception` 
 ```csharp
 // This is a valid attribute usage
 [LoggerMessage(
-    EventId = 110, Level = LogLevel.Debug, Message = "M1 {ex3} {ex2}")]
+    EventId = 110, Level = LogLevel.Debug, Message = "M1 {Ex3} {Ex2}")]
 public static partial void ValidLogMethod(
     ILogger logger,
     Exception ex,
@@ -149,7 +161,7 @@ public static partial void ValidLogMethod(
 
 // This causes a warning
 [LoggerMessage(
-    EventId = 0, Level = LogLevel.Debug, Message = "M1 {ex} {ex2}")]
+    EventId = 0, Level = LogLevel.Debug, Message = "M1 {Ex} {Ex2}")]
 public static partial void WarningLogMethod(
     ILogger logger,
     Exception ex,
@@ -216,7 +228,7 @@ There are no constraints on the ordering of log method parameters. A developer c
 [LoggerMessage(
     EventId = 110,
     Level = LogLevel.Debug,
-    Message = "M1 {ex3} {ex2}")]
+    Message = "M1 {Ex3} {Ex2}")]
 static partial void LogMethod(
     Exception ex,
     Exception ex2,
@@ -237,7 +249,7 @@ static partial void LogMethod(
 >     "Message": "M1 System.Exception: Third time's the charm. System.Exception: This is the second error.",
 >     "ex2": "System.Exception: This is the second error.",
 >     "ex3": "System.Exception: Third time's the charm.",
->     "{OriginalFormat}": "M1 {ex3} {ex2}"
+>     "{OriginalFormat}": "M1 {Ex3} {Ex2}"
 >   }
 > }
 > ```
@@ -263,7 +275,7 @@ public partial class LoggingSample
     [LoggerMessage(
         EventId = 20,
         Level = LogLevel.Critical,
-        Message = "Value is {value:E}")]
+        Message = "Value is {Value:E}")]
     public static partial void UsingFormatSpecifier(
         ILogger logger, double value);
 
@@ -276,7 +288,7 @@ public partial class LoggingSample
 
     [LoggerMessage(
         EventId = 10,
-        Message = "Welcome to {city} {province}!")]
+        Message = "Welcome to {City} {Province}!")]
     public partial void LogWithDynamicLogLevel(
         string city, LogLevel level, string province);
 
@@ -327,7 +339,7 @@ Consider the example logging output when using the `JsonConsole` formatter:
     "Message": "Welcome to Vancouver BC!",
     "city": "Vancouver",
     "province": "BC",
-    "{OriginalFormat}": "Welcome to {city} {province}!"
+    "{OriginalFormat}": "Welcome to {City} {Province}!"
   }
 }
 {
@@ -339,7 +351,7 @@ Consider the example logging output when using the `JsonConsole` formatter:
     "Message": "Welcome to Vancouver BC!",
     "city": "Vancouver",
     "province": "BC",
-    "{OriginalFormat}": "Welcome to {city} {province}!"
+    "{OriginalFormat}": "Welcome to {City} {Province}!"
   }
 }
 {
@@ -350,10 +362,68 @@ Consider the example logging output when using the `JsonConsole` formatter:
   "State": {
     "Message": "Value is 1.234568E+004",
     "value": 12345.6789,
-    "{OriginalFormat}": "Value is {value:E}"
+    "{OriginalFormat}": "Value is {Value:E}"
   }
 }
 ```
+
+## Redacting sensitive information in logs
+
+When logging sensitive data, it's important to prevent accidental exposure. Even with compile-time generated logging methods, logging raw sensitive values can lead to data leaks and compliance issues.
+
+The [Microsoft.Extensions.Telemetry](https://www.nuget.org/packages/Microsoft.Extensions.Telemetry) library provides advanced logging and telemetry enrichment capabilities for .NET applications. It extends the logging pipeline to automatically apply redaction to classified data when writing logs. It enables you to enforce data protection policies throughout your application by integrating redaction into your logging workflow. It is built for applications needing sophisticated telemetry and logging insights.
+
+To enable redaction, use the [Microsoft.Extensions.Compliance.Redaction](https://www.nuget.org/packages/Microsoft.Extensions.Compliance.Redaction) library. This library provides **redactors**—components that transform sensitive data (for example, by erasing, masking, or hashing it) so that it is safe to output. Redactors are selected based on **data classification**, which lets you label data according to its sensitivity (such as personal, private, or public).
+
+To use redaction with source-generated logging methods, you should:
+
+1. Classify your sensitive data using a data classification system.
+2. Register and configure redactors for each classification in your DI container.
+3. Enable redaction in the logging pipeline.
+4. Check your logs to ensure no sensitive data is exposed.
+
+For example, if you have a log message that has a parameter that is considered private:
+
+```csharp
+[LoggerMessage(0, LogLevel.Information, "User SSN: {SSN}")]
+public static partial void LogPrivateInformation(
+    this ILogger logger,
+    [MyTaxonomyClassifications.Private] string SSN);
+```
+
+You will need to have a setting similar to this:
+
+```csharp
+using Microsoft.Extensions.Telemetry;
+using Microsoft.Extensions.Compliance.Redaction;
+
+var services = new ServiceCollection();
+services.AddLogging(builder =>
+{
+    // Enable redaction.
+    builder.EnableRedaction();
+});
+
+services.AddRedaction(builder =>
+{
+    // configure redactors for your data classifications
+    builder.SetRedactor<StarRedactor>(MyTaxonomyClassifications.Private);
+});
+
+public void TestLogging()
+{
+    LogPrivateInformation("MySSN");
+}
+```
+
+The output should be like this:
+
+`User SSN: *****`
+
+This approach ensures that only redacted data is logged, even when using compile-time generated logging APIs. You can use different redactors for different data types or classifications, and update your redaction logic centrally.
+
+For more details about how to classify your data, see [Data classification in .NET](data-classification.md).
+For more details about redaction and redactors, see [Data redaction in .NET](data-redaction.md).
 
 ## Summary
 
@@ -376,4 +446,6 @@ Additionally, there are benefits over manually using <xref:Microsoft.Extensions.
 - [Logging in .NET](logging.md)
 - [High-performance logging in .NET](high-performance-logging.md)
 - [Console log formatting](console-log-formatter.md)
+- [Data redaction in .NET](data-redaction.md)
+- [Data classification in .NET](data-classification.md)
 - [NuGet: Microsoft.Extensions.Logging.Abstractions](https://www.nuget.org/packages/microsoft.extensions.logging.abstractions)

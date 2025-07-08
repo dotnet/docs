@@ -66,7 +66,7 @@ If you examine the "Sent a message over a channel" trace, you may see the follow
       <Level>8</Level>
       <TimeCreated SystemTime="2006-08-04T18:45:30.8491051Z" />
       <Source Name="System.ServiceModel" />
-       <Correlation ActivityID="{27c6331d-8998-43aa-a382-03239013a6bd}"/>
+       <Correlation ActivityID="{bbbb1111-cc22-3333-44dd-555555eeeeee}"/>
        <Execution ProcessName="client" ProcessID="1808" ThreadID="1" />
        <Channel />
        <Computer>TEST1</Computer>
@@ -87,7 +87,7 @@ If you examine the "Sent a message over a channel" trace, you may see the follow
                   <MessageHeaders>
                      <Action d4p1:mustUnderstand="1" xmlns:d4p1="http://www.w3.org/2003/05/soap-envelope" xmlns="http://www.w3.org/2005/08/addressing">http://Microsoft.ServiceModel.Samples/ICalculator/Multiply</Action>
                      <MessageID xmlns="http://www.w3.org/2005/08/addressing">urn:uuid:7c6670d8-4c9c-496e-b6a0-2ceb6db35338</MessageID>
-                     <ActivityId CorrelationId="b02e2189-0816-4387-980c-dd8e306440f5" xmlns="http://schemas.microsoft.com/2004/09/ServiceModel/Diagnostics">27c6331d-8998-43aa-a382-03239013a6bd</ActivityId>
+                     <ActivityId CorrelationId="aaaa0000-bb11-2222-33cc-444444dddddd" xmlns="http://schemas.microsoft.com/2004/09/ServiceModel/Diagnostics">bbbb1111-cc22-3333-44dd-555555eeeeee</ActivityId>
                      <ReplyTo xmlns="http://www.w3.org/2005/08/addressing">
                         <Address>http://www.w3.org/2005/08/addressing/anonymous</Address>
                     </ReplyTo>

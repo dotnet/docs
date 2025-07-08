@@ -1,71 +1,76 @@
 ---
-title: Declare and use primary constructors in classes and structs
-description: "Learn how and when to declare primary constructors in your class and struct types. Primary constructors provide concise syntax to declare constructor parameters available anywhere in your type."
-ms.date: 05/26/2023
+title: Declare C# primary constructors – classes, structs
+description: Learn how and when to declare primary constructors in your class and struct types. Primary constructors provide concise syntax to declare constructor parameters available anywhere in the body of your type.
+ms.date: 03/18/2025
+ms.topic: how-to
+#customer intent: As a .NET developer, I want to declare and use C# primary constructors in classes and structs, so I can provide syntax to declare constructor parameters available anywhere in the type body.
 ---
-# Tutorial: Explore primary constructors
+# Declare primary constructors for classes and structs
 
-C# 12 introduces [*primary constructors*](../../programming-guide/classes-and-structs/instance-constructors.md#primary-constructors), a concise syntax to declare constructors whose parameters are available anywhere in the body of the type.
+C# 12 introduces [primary constructors](../../programming-guide/classes-and-structs/instance-constructors.md#primary-constructors), which provide a concise syntax to declare constructors whose parameters are available anywhere in the body of the type.
 
-In this tutorial, you learn how to:
-
-> [!div class="checklist"]
->
-> - When to declare a primary constructor on your type
-> - How to call call primary constructors from other constructors
-> - How to use primary constructor parameters in members of the type
-> - Where primary constructor parameters are stored
+This article describes how to declare a primary constructor on your type and recognize where to store primary constructor parameters. You can call primary constructors from other constructors and use primary constructor parameters in members of the type.
 
 ## Prerequisites
 
-You need to set up your machine to run .NET 8 or later, including the C# 12 or later compiler. The C# 12 compiler is available starting with [Visual Studio 2022 version 17.7](https://visualstudio.microsoft.com/vs) or the [.NET 8 SDK](https://dotnet.microsoft.com/download).
+[!INCLUDE [Prerequisites](../../../../includes/prerequisites-basic.md)]
 
-## Primary constructors
+## Understand rules for primary constructors
 
-You can add parameters to a `struct` or `class` declaration to create a *primary constructor*. Primary constructor parameters are in scope throughout the class definition. It's important to view primary constructor parameters as *parameters* even though they are in scope throughout the class definition. Several rules clarify that they're parameters:
+You can add parameters to a `struct` or `class` declaration to create a *primary constructor*. Primary constructor parameters are in scope throughout the class definition. It's important to view primary constructor parameters as *parameters* even though they are in scope throughout the class definition.
 
-1. Primary constructor parameters may not be stored if they aren't needed.
-1. Primary constructor parameters aren't members of the class. For example, a primary constructor parameter named `param` can't be accessed as `this.param`.
-1. Primary constructor parameters can be assigned to.
-1. Primary constructor parameters don't become properties, except in [`record`](../../language-reference/builtin-types/record.md) types.
+Several rules clarify that these constructors are parameters:
 
-These rules are the same as parameters to any method, including other constructor declarations.
+- Primary constructor parameters might not be stored if they aren't needed.
+- Primary constructor parameters aren't members of the class. For example, a primary constructor parameter named `param` can't be accessed as `this.param`.
+- Primary constructor parameters can be assigned to.
+- Primary constructor parameters don't become properties, except in [record](../../language-reference/builtin-types/record.md) types.
 
-The most common uses for a primary constructor parameter are:
+These rules are the same rules already defined for parameters to any method, including other constructor declarations.
 
-1. As an argument to a `base()` constructor invocation.
-1. To initialize a member field or property.
-1. Referencing the constructor parameter in an instance member.
+Here are the most common uses for a primary constructor parameter:
 
-Every other constructor for a class **must** call the primary constructor, directly or indirectly, through a `this()` constructor invocation. That rule ensures that primary constructor parameters are assigned anywhere in the body of the type.
+- Pass as an argument to a `base()` constructor invocation
+- Initialize a member field or property
+- Reference the constructor parameter in an instance member
 
-## Initialize property
+Every other constructor for a class **must** call the primary constructor, directly or indirectly, through a `this()` constructor invocation. This rule ensures that primary constructor parameters are assigned everywhere in the body of the type.
 
-The following code initializes two readonly properties that are computed from primary constructor parameters:
+## Initialize immutable properties or fields
+
+The following code initializes two readonly (immutable) properties that are computed from primary constructor parameters:
 
 :::code source="./snippets/primary-constructors/Distance.cs" id="ReadonlyStruct":::
 
-The preceding code demonstrates a primary constructor used to initialize calculated readonly properties. The field initializers for `Magnitude` and `Direction` use the primary constructor parameters. The primary constructor parameters aren't used anywhere else in the struct. The preceding struct is as though you'd written the following code:
+This example uses a primary constructor to initialize calculated readonly properties. The field initializers for the `Magnitude` and `Direction` properties use the primary constructor parameters. The primary constructor parameters aren't used anywhere else in the struct. The code creates a struct as if it were written in the following manner:
 
 :::code source="./snippets/primary-constructors/Distance.cs" id="StructOneLowered":::
 
-The new feature makes it easier to use field initializers when you need arguments to initialize a field or property.
+This feature makes it easier to use field initializers when you need arguments to initialize a field or property.
 
 ## Create mutable state
 
-The preceding examples use primary constructor parameters to initialize readonly properties. You can also use primary constructors when the properties aren't readonly. Consider the following code:
+The previous examples use primary constructor parameters to initialize readonly properties. You can also use primary constructors for properties that aren't readonly.
+
+Consider the following code:
 
 :::code source="./snippets/primary-constructors/Distance.cs" id="MutableStruct":::
 
-In the preceding example, the `Translate` method changes the `dx` and `dy` components. That requires the `Magnitude` and `Direction` properties be computed when accessed. The `=>` operator designates an expression-bodied `get` accessor, whereas the `=` operator designates an initializer. This version adds a parameterless constructor to the struct. The parameterless constructor must invoke the primary constructor, so that all the primary constructor parameters are initialized.
+In this example, the `Translate` method changes the `dx` and `dy` components, which requires the `Magnitude` and `Direction` properties be computed when accessed. The greater than or equal to (`=>`) operator designates an expression-bodied `get` accessor, whereas the equal to (`=`) operator designates an initializer.
 
-In the previous example, the primary constructor properties are accessed in a method. Therefore the compiler creates hidden fields to represent each parameter. The following code shows approximately what the compiler generates. The actual field names are valid MSIL identifiers, but not valid C# identifiers.
+This version of the code adds a parameterless constructor to the struct. The parameterless constructor must invoke the primary constructor, which ensures all primary constructor parameters are initialized. The primary constructor properties are accessed in a method, and the compiler creates hidden fields to represent each parameter.
+
+The following code demonstrates an approximation of what the compiler generates. The actual field names are valid Common Intermediate Language (CIL) identifiers, but not valid C# identifiers.
 
 :::code source="./snippets/primary-constructors/Distance.cs" id="StructTwoLowered":::
 
-It's important to understand that the first example didn't require the compiler to create a field to store the value of the primary constructor parameters. The second example used the primary constructor parameter inside a method, and therefore required the compiler create storage for them. The compiler creates storage for any primary constructors only when that parameter is accessed in the body of a member of your type. Otherwise, the primary constructor parameters aren't stored in the object.
+### Compiler-created storage
 
-## Dependency injection
+For the first example in this section, the compiler didn't need to create a field to store the value of the primary constructor parameters. However, in  the second example, the primary constructor parameter is used inside a method, so the compiler must create storage for the parameters.
+
+The compiler creates storage for any primary constructors only when the parameter is accessed in the body of a member of your type. Otherwise, the primary constructor parameters aren't stored in the object.
+
+## Use dependency injection
 
 Another common use for primary constructors is to specify parameters for dependency injection. The following code creates a simple controller that requires a service interface for its use:
 
@@ -75,34 +80,35 @@ The primary constructor clearly indicates the parameters needed in the class. Yo
 
 ## Initialize base class
 
-You can invoke a base class' primary constructor from the derived class' primary constructor. It's the easiest way for you to write a derived class that must invoke a primary constructor in the base class.  For example, consider a hierarchy of classes that represent different account types as a bank. The base class would look something like the following code:
+You can invoke the primary constructor for a base class from the primary constructor of derived class. This approach is the easiest way to write a derived class that must invoke a primary constructor in the base class. Consider a hierarchy of classes that represent different account types as a bank. The following code shows what the base class might look like:
 
 :::code source="./snippets/primary-constructors/BankAccount.cs" id="BaseClass":::
 
-All bank accounts, regardless of the type, have properties for the account number and an owner. In the completed application, other common functionality would be added to the base class.
+All bank accounts, regardless of the type, have properties for the account number and owner. In the completed application, you can add other common functionality to the base class.
 
-Many types require more specific validation on constructor parameters. For example, the `BankAccount` has specific requirements for the `owner` and `accountID` parameters: The `owner` must not be `null` or whitespace, and the `accountID` must be a string containing 10 digits. You can add this validation when you assign the corresponding properties:
+Many types require more specific validation on constructor parameters. For example, the `BankAccount` class has specific requirements for the `owner` and `accountID` parameters. The `owner` parameter must not be `null` or whitespace, and the `accountID` parameter must be a string containing 10 digits. You can add this validation when you assign the corresponding properties:
 
 :::code source="./snippets/primary-constructors/BankAccountValidation.cs" id="BaseClassValidation":::
 
-The previous example shows how you can validate the constructor parameters before assigning them to the properties. You can use builtin methods, like <xref:System.String.IsNullOrWhiteSpace(System.String)?displayProperty=nameWithType>, or your own validation method, like `ValidAccountNumber`. In the previous example, any exceptions are thrown from the constructor, when it invokes the initializers. If a constructor parameter isn't used to assign a field, any exceptions are thrown when the constructor parameter is first accessed.
+This example shows how to validate the constructor parameters before you assign them to the properties. You can use built-in methods like <xref:System.String.IsNullOrWhiteSpace(System.String)?displayProperty=nameWithType> or your own validation method, such as `ValidAccountNumber`. In the example, any exceptions are thrown from the constructor, when it invokes the initializers. If a constructor parameter isn't used to assign a field, any exceptions are thrown when the constructor parameter is first accessed.
 
-One derived class would present a checking account:
+One derived class might represent a checking account:
 
 :::code source="./snippets/primary-constructors/BankAccount.cs" id="DerivedClass":::
 
-The derived `CheckingAccount` class has a primary constructor that takes all the parameters needed in the base class, and another parameter with a default value. The primary constructor calls the base constructor using the `: BankAccount(accountID, owner)` syntax. This expression specifies both the type for the base class, and the arguments for the primary constructor.
+The derived `CheckingAccount` class has a primary constructor that takes all the parameters needed in the base class, and another parameter with a default value. The primary constructor calls the base constructor with the `: BankAccount(accountID, owner)` syntax. This expression specifies both the type for the base class and the arguments for the primary constructor.
 
-Your derived class isn't required to use a primary constructor. You can create a constructor in the derived class that invokes the base class' primary constructor, as shown in the following example:
+Your derived class isn't required to use a primary constructor. You can create a constructor in the derived class that invokes the primary constructor for the base class, as shown in the following example:
 
 :::code source="./snippets/primary-constructors/BankAccount.cs" id="NoPrimaryConstructor":::
 
-There's one potential concern with class hierarchies and primary constructors: it's possible to create multiple copies of a primary constructor parameter as it's used in both derived and base classes. The following code example creates two copies each of the `owner` and `accountID` field:
+There's one potential concern with class hierarchies and primary constructors. It's possible to create multiple copies of a primary constructor parameter because the parameter is used in both derived and base classes. The following code creates two copies each of the `owner` and `accountID` parameters:
 
 :::code source="./snippets/primary-constructors/BankAccount.cs" id="DuplicatedPrimaryConstructorStorage" highlight="33":::
 
-The highlighted line shows that the `ToString` method uses the *primary constructor parameters* (`owner` and `accountID`) rather than the *base class properties* (`Owner` and `AccountID`). The result is that the derived class, `SavingsAccount` creates storage for those copies. The copy in the derived class is different than the property in the base class. If the base class property could be modified, the instance of the derived class won't see that modification. The compiler issues a warning for primary constructor parameters that are used in a derived class and passed to a base class constructor. In this instance, the fix is to use the properties in the base class interface.
+The highlighted line in this example shows that the `ToString` method uses the *primary constructor parameters* (`owner` and `accountID`) rather than the *base class properties* (`Owner` and `AccountID`). The result is that the derived class, `SavingsAccount`, creates storage for the parameter copies. The copy in the derived class is different than the property in the base class. If the base class property can be modified, the instance of the derived class doesn't see the modification. The compiler issues a warning for primary constructor parameters that are used in a derived class and passed to a base class constructor. In this instance, the fix is to use the properties of the base class.
 
-## Summary
+## Related content
 
-You can use the primary constructors as best suits your design. For classes and structs, primary constructor parameters are parameters to a constructor that must be invoked. You can use them to initialize properties. You can initialize fields. Those properties or fields can be immutable, or mutable. You can use them in methods. They're parameters, and you use them in what manner suits your design best. You can learn more about primary constructors in the [C# programming guide article on instance constructors](../../programming-guide/classes-and-structs/instance-constructors.md#parameterless-constructors) and the [proposed primary constructor specification](~/_csharplang/proposals/csharp-12.0/primary-constructors.md).
+- [Parameterless constructors (C# programming guide)](../../programming-guide/classes-and-structs/instance-constructors.md#parameterless-constructors)
+- [Primary constructors (Feature specification proposal)](~/_csharplang/proposals/csharp-12.0/primary-constructors.md)

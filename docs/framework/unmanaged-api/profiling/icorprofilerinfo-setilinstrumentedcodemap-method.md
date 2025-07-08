@@ -19,7 +19,7 @@ topic_type:
 ---
 # ICorProfilerInfo::SetILInstrumentedCodeMap Method
 
-Sets a code map for the specified function using the specified Microsoft intermediate language (MSIL) map entries.
+Sets a code map for the specified function using the specified common intermediate language (CIL) map entries.
 
 > [!NOTE]
 > In .NET Framework version 2.0, calling `SetILInstrumentedCodeMap` on a `FunctionID` that represents a generic function in a particular application domain will affect all instances of that function in the application domain.
@@ -46,17 +46,17 @@ HRESULT SetILInstrumentedCodeMap(
 [in] The number of elements in the `cILMapEntries` array.
 
 `rgILMapEntries`\
-[in] An array of COR_IL_MAP structures, each of which specifies an MSIL offset.
+[in] An array of COR_IL_MAP structures, each of which specifies a CIL offset.
 
 ## Remarks
 
-A profiler often inserts statements within the source code of a method in order to instrument that method (for example, to notify when a given source line is reached). `SetILInstrumentedCodeMap` enables a profiler to map the original MSIL instructions to their new locations. A profiler can use the [ICorProfilerInfo::GetILToNativeMapping](icorprofilerinfo-getiltonativemapping-method.md) method to get the original MSIL offset for a given native offset.
+A profiler often inserts statements within the source code of a method in order to instrument that method (for example, to notify when a given source line is reached). `SetILInstrumentedCodeMap` enables a profiler to map the original CIL instructions to their new locations. A profiler can use the [ICorProfilerInfo::GetILToNativeMapping](icorprofilerinfo-getiltonativemapping-method.md) method to get the original CIL offset for a given native offset.
 
-The debugger will assume that each old offset refers to an MSIL offset within the original, unmodified MSIL code, and that each new offset refers to the MSIL offset within the new, instrumented code. The map should be sorted in increasing order. For stepping to work properly, follow these guidelines:
+The debugger will assume that each old offset refers to a CIL offset within the original, unmodified CIL code, and that each new offset refers to the CIL offset within the new, instrumented code. The map should be sorted in increasing order. For stepping to work properly, follow these guidelines:
 
-- Do not reorder instrumented MSIL code.
+- Do not reorder instrumented CIL code.
 
-- Do not remove the original MSIL code.
+- Do not remove the original CIL code.
 
 - Include entries for all the sequence points from the program database (PDB) file in the map. The map does not interpolate missing entries. So, given the following map:
 

@@ -1,4 +1,4 @@
-﻿// <Snippet5>
+// <Snippet5>
 using System;
 using System.Text.RegularExpressions;
 
@@ -12,9 +12,9 @@ public class Example
         foreach (string input in inputs)
         {
             if (Regex.IsMatch(input, pattern, RegexOptions.IgnoreCase))
-                Console.WriteLine("{0}: Valid", input);
+                Console.WriteLine($"{input}: Valid");
             else
-                Console.WriteLine("{0}: Invalid", input);
+                Console.WriteLine($"{input}: Invalid");
         }
     }
 }

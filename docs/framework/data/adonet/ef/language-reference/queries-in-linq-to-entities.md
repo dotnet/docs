@@ -16,7 +16,7 @@ A query is an expression that retrieves data from a data source. Queries are usu
   
 ## Query Syntax  
 
- LINQ to Entities queries can be composed in two different syntaxes: query expression syntax and method-based query syntax. Query expression syntax is new in C# 3.0 and Visual Basic 9.0, and it consists of a set of clauses written in a declarative syntax similar to Transact-SQL or XQuery. However, the .NET Framework common language runtime (CLR) cannot read the query expression syntax itself. Therefore, at compile time, query expressions are translated to something that the CLR does understand: method calls. These methods are known as the *standard query operators*. As a developer, you have the option of calling them directly by using method syntax, instead of using query syntax. For more information, see [Query Syntax and Method Syntax in LINQ](../../../../../csharp/linq/write-linq-queries.md).  
+ LINQ to Entities queries can be composed in two different syntaxes: query expression syntax and method-based query syntax. Query expression syntax is new in C# 3.0 and Visual Basic 9.0, and it consists of a set of clauses written in a declarative syntax similar to Transact-SQL or XQuery. However, the .NET Framework common language runtime (CLR) cannot read the query expression syntax itself. Therefore, at compile time, query expressions are translated to something that the CLR does understand: method calls. These methods are known as the *standard query operators*. As a developer, you have the option of calling them directly by using method syntax, instead of using query syntax. For more information, see [Query Syntax and Method Syntax in LINQ](../../../../../csharp/linq/get-started/write-linq-queries.md).  
   
 ### Query Expression Syntax  
 
@@ -67,6 +67,6 @@ A query is an expression that retrieves data from a data source. Queries are usu
 ## See also
 
 - [LINQ to Entities](linq-to-entities.md)
-- [Getting Started with LINQ in C#](/dotnet/csharp/linq/)
+- [Getting Started with LINQ in C#](../../../../../csharp/linq/index.md)
 - [Getting Started with LINQ in Visual Basic](../../../../../visual-basic/programming-guide/concepts/linq/getting-started-with-linq.md)
 - [EF Merge Options and Compiled Queries](/archive/blogs/dsimmons/ef-merge-options-and-compiled-queries)

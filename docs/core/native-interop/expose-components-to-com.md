@@ -73,6 +73,8 @@ The resulting output will have a `ProjectName.dll`, `ProjectName.deps.json`, `Pr
 
 Open an elevated command prompt and run `regsvr32 ProjectName.comhost.dll`. That will register all of your exposed .NET objects with COM.
 
+If you intend to [embed a type library (TLB)](#embed_tlb), it's recommended to also define functions using [`ComRegisterFunctionAttribute`](/dotnet/api/system.runtime.interopservices.comregisterfunctionattribute) and [`ComUnregisterFunctionAttribute`](/dotnet/api/system.runtime.interopservices.comunregisterfunctionattribute). These functions can be used to register and unregister the TLB for the COM server. For a complete example, see the [`OutOfProcCOM`](https://github.com/dotnet/samples/tree/main/core/extensions/OutOfProcCOM) sample.
+
 ## Enabling RegFree COM
 
 1. Open the `.csproj` project file and add `<EnableRegFreeCom>true</EnableRegFreeCom>` inside a `<PropertyGroup></PropertyGroup>` tag.
@@ -80,7 +82,7 @@ Open an elevated command prompt and run `regsvr32 ProjectName.comhost.dll`. That
 
 The resulting output will now also have a `ProjectName.X.manifest` file. This file is the side-by-side manifest for use with Registry-Free COM.
 
-## Embedding type libraries in the COM host
+## <a name="embed_tlb"></a> Embedding type libraries in the COM host
 
 Unlike in .NET Framework, there is no support in .NET Core or .NET 5+ for generating a [COM Type Library (TLB)](/windows/win32/midl/com-dcom-and-type-libraries#type-library) from a .NET assembly. The guidance is to either manually write an IDL file or a C/C++ header for the native declarations of the COM interfaces. If you decide to write an IDL file, you can compile it with the Visual C++ SDK's MIDL compiler to produce a TLB.
 
@@ -122,5 +124,7 @@ There is a fully functional [COM server sample](https://github.com/dotnet/sample
 > In .NET Framework, an "Any CPU" assembly can be consumed by both 32-bit and 64-bit clients. By default, in .NET Core, .NET 5, and later versions, "Any CPU" assemblies are accompanied by a 64-bit *\*.comhost.dll*. Because of this, they can only be consumed by 64-bit clients. That is the default because that is what the SDK represents. This behavior is identical to how the "self-contained" feature is published: by default it uses what the SDK provides. The `NETCoreSdkRuntimeIdentifier` MSBuild property determines the bitness of *\*.comhost.dll*. The managed part is actually bitness agnostic as expected, but the accompanying native asset defaults to the targeted SDK.
 
 [Self-contained deployments](../deploying/index.md#publish-self-contained) of COM components are not supported. Only [framework-dependent deployments](../deploying/index.md#publish-framework-dependent) of COM components are supported.
+
+Exposing COM components from [C++/CLI projects](/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp) via the [EnableComHosting property](../project-sdk/msbuild-props.md#enablecomhosting) is not supported.
 
 Additionally, loading both .NET Framework and .NET Core into the same process does have diagnostic limitations. The primary limitation is the debugging of managed components as it is not possible to debug both .NET Framework and .NET Core at the same time. In addition, the two runtime instances don't share managed assemblies. This means that it isn't possible to share actual .NET types across the two runtimes and instead all interactions must be restricted to the exposed COM interface contracts.

@@ -1,0 +1,38 @@
+# This GitHub Action workflow is triggered on label changes for pull requests.
+# When a pull request is labeled with "DO NOT MERGE", the workflow fails, thus
+# preventing the pull request from being merged. Otherwise, the workflow will
+# succeed, allowing the pull request to be merged.
+
+name: "Check labels that prevent merge"
+on:
+  pull_request:
+    branches: [main]
+    types: [labeled, unlabeled]
+
+permissions:
+  contents: read
+
+jobs:
+  labels-preventing-merge-check:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        label:
+        # Labels that prevent merging
+        - 'DO NOT MERGE'
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@6c439dc8bdf85cadbbce9ed30d1c7b959517bc49 # v2.12.2
+        with:
+          egress-policy: audit
+
+      - name: 'Check "${{ matrix.label }}" label'
+        run: |
+          echo "::notice::Merging permission is diabled for PRs when the '${{ matrix.label }}' label is applied."
+
+          if [ "${{ contains(github.event.pull_request.labels.*.name, matrix.label) }}" = "true" ]; then
+            echo "::error::Pull request is labeled as '${{ matrix.label }}'. Please remove the label before merging."
+            exit 1
+          else
+            exit 0
+          fi

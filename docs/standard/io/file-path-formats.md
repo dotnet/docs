@@ -9,7 +9,6 @@ helpviewer_keywords:
   - "I/O, long paths"
   - "long paths"
   - "path formats, Windows"
-ms.topic: reference
 ---
 # File path formats on Windows systems
 
@@ -93,7 +92,7 @@ The DOS device path consists of the following components:
   `\\.\UNC\Server\Share\Test\Foo.txt`
   `\\?\UNC\Server\Share\Test\Foo.txt`
 
-    For device UNCs, the server/share portion forms the volume. For example, in `\\?\server1\e:\utilities\\filecomparer\`, the server/share portion is `server1\utilities`. This is significant when calling a method such as <xref:System.IO.Path.GetFullPath(System.String,System.String)?displayProperty=nameWithType> with relative directory segments; it is never possible to navigate past the volume.
+    For device UNCs, the server/share portion forms the volume. For example, in `\\?\server1\utilities\\filecomparer\`, the server/share portion is `server1\utilities`. This is significant when calling a method such as <xref:System.IO.Path.GetFullPath(System.String,System.String)?displayProperty=nameWithType> with relative directory segments; it is never possible to navigate past the volume.
 
 DOS device paths are fully qualified by definition and cannot begin with a relative directory segment (`.` or `..`). Current directories never enter into their usage.
 
@@ -134,7 +133,7 @@ The type of the path determines whether or not a current directory is applied in
 
 If the path is a legacy DOS device such as `CON`, `COM1`, or `LPT1`, it is converted into a device path by prepending `\\.\` and returned.
 
-A path that begins with a legacy device name is always interpreted as a legacy device by the <xref:System.IO.Path.GetFullPath(System.String)?displayProperty=nameWithType> method. For example, the DOS device path for `CON.TXT` is `\\.\CON`, and the DOS device path for `COM1.TXT\file1.txt` is `\\.\COM1`.
+Prior to Windows 11, a path that begins with a legacy device name is always interpreted as a legacy device by the <xref:System.IO.Path.GetFullPath(System.String)?displayProperty=nameWithType> method. For example, the DOS device path for `CON.TXT` is `\\.\CON`, and the DOS device path for `COM1.TXT\file1.txt` is `\\.\COM1`. Because this no longer applies with Windows 11, specify the full path to the legacy DOS device, such as `\\.\CON`.
 
 ### Apply the current directory
 
@@ -152,6 +151,9 @@ If the path starts with something other than a separator, the current drive and 
 ### Canonicalize separators
 
 All forward slashes (`/`) are converted into the standard Windows separator, the back slash (`\`). If they are present, a series of slashes that follow the first two slashes are collapsed into a single slash.
+
+> [!NOTE]
+> Starting with .NET 8 on Unix-based operating systems, the runtime no longer converts back slash (`\`) characters to directory separators (forward slashes `/`). For more information, see [Backslash mapping in Unix file paths](../../core/compatibility/core-libraries/8.0/file-path-backslash.md).
 
 ### Evaluate relative components
 

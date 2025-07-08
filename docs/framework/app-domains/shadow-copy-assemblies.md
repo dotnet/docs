@@ -10,6 +10,8 @@ ms.assetid: de8b8759-fca7-4260-896b-5a4973157672
 ---
 # Shadow Copying Assemblies
 
+[!INCLUDE [net-framework-specific](../includes/net-framework-specific.md)]
+
 Shadow copying enables assemblies that are used in an application domain to be updated without unloading the application domain. This is particularly useful for applications that must be available continuously, such as ASP.NET sites.
 
 > [!IMPORTANT]

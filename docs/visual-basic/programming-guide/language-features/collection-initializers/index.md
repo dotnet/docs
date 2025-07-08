@@ -82,7 +82,7 @@ Only nested value lists from the first level of nesting are sent to the `Add` me
 - [Arrays](../arrays/index.md)
 - [Object Initializers: Named and Anonymous Types](../objects-and-classes/object-initializers-named-and-anonymous-types.md)
 - [New Operator](../../../language-reference/operators/new-operator.md)
-- [Auto-Implemented Properties](../procedures/auto-implemented-properties.md)
+- [Automatically implemented properties](../procedures/auto-implemented-properties.md)
 - [How to: Initialize an Array Variable in Visual Basic](../arrays/how-to-initialize-an-array-variable.md)
 - [Local Type Inference](../variables/local-type-inference.md)
 - [Anonymous Types](../objects-and-classes/anonymous-types.md)

@@ -1,4 +1,4 @@
-﻿//<snippet02>
+//<snippet02>
 using System;
 using System.Collections.Concurrent;
 using System.Runtime.InteropServices;
@@ -61,7 +61,7 @@ class ProgramWithCancellation
                 }
                 else
                 {
-                    Console.WriteLine(" Take:{0}", nextItem);
+                    Console.WriteLine($" Take:{nextItem}");
                 }
             }
 
@@ -103,7 +103,7 @@ class ProgramWithCancellation
 
             if (success)
             {
-                Console.WriteLine(" Add:{0}", itemToAdd);
+                Console.WriteLine($" Add:{itemToAdd}");
                 itemToAdd++;
             }
             else
@@ -123,7 +123,7 @@ class ProgramWithCancellation
     static void UpdateProgress(int i)
     {
         double percent = ((double)i / inputs) * 100;
-        Console.WriteLine("Percent complete: {0}", percent);
+        Console.WriteLine($"Percent complete: {percent}");
     }
 }
 //</snippet02>

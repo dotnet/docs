@@ -27,7 +27,17 @@ Provides methods for querying information about a loaded module.
 
 | Method                                                                                                                                | Description                                                         |
 | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| [StartEnumTypeDefinitions](ixclrdatamodule-startenumtypedefinitions-method.md)     | Provides a handle to enumerate the type definitions associated with the module. |
+| [EnumTypeDefinition](ixclrdatamodule-enumtypedefinition-method.md)                 | Enumerates the type definitions associated with the module. |
+| [EndEnumTypeDefinitions](ixclrdatamodule-endenumtypedefinitions-method.md)         | Releases the resources used by internal iterators used during type definition enumeration. |
+| [StartEnumMethodInstancesByName](ixclrdatamodule-startenummethodinstancesbyname-method.md) | Provides a handle to enumerate method instances of a given name and AppDomain associated with the module. |
+| [EnumMethodInstanceByName](ixclrdatamodule-enummethodinstancebyname-method.md)     | Enumerates method instances of a given name and AppDomain associated with the module. |
+| [EndEnumMethodInstancesByName](ixclrdatamodule-endenummethodinstancesbyname-method.md)     | Releases the resources used by internal iterators used during method instance enumeration. |
 | [GetMethodDefinitionByToken](ixclrdatamodule-getmethoddefinitionbytoken-method.md) | Gets the method definition corresponding to a given metadata token. |
+| [GetFileName](ixclrdatamodule-getfilename-method.md)                               | Gets the full path and filename for the module, if there is one. |
+| [StartEnumExtents](ixclrdatamodule-startenumextents-method.md)                     | Provides a handle to enumerate memory regions associated with the module. |
+| [EnumExtent](ixclrdatamodule-enumextent-method.md)                                 | Enumerates memory regions associated with the module. |
+| [EndEnumExtents](ixclrdatamodule-endenumextents-method.md)                         | Releases the resources used by internal iterators used during memory range enumeration. |
 | [Request](ixclrdatamodule-request-method.md)                                       | Requests to populate the buffer given with the module's data.       |
 | [GetVersionId](ixclrdatamodule-getversionid-method.md)                             | Gets the module's version ID.                                       |
 

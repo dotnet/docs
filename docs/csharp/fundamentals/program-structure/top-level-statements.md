@@ -1,16 +1,20 @@
 ---
 title: "Top-level statements - programs without Main methods"
-description: Learn about top-level statements in C# 9 and later. You can create programs without the ceremony of a Program class and a Main method.
-ms.date: 08/19/2021
+description: Learn about top-level statements. You can create programs without the ceremony of a Program class and a Main method.
+ms.date: 06/23/2025
 helpviewer_keywords:
   - "C# language, top-level statements"
   - "C# language, Main method"
 ---
 # Top-level statements - programs without `Main` methods
 
-Starting in C# 9, you don't have to explicitly include a `Main` method in a console application project. Instead, you can use the *top-level statements* feature to minimize the code you have to write. In this case, the compiler generates a class and `Main` method entry point for the application.
+You don't have to explicitly include a `Main` method in a console application project. Instead, you can use the *top-level statements* feature to minimize the code you have to write.
 
-Here's a *Program.cs* file that is a complete C# program in C# 10:
+Top-level statements allow you to write executable code directly at the root of a file, eliminating the need for wrapping your code in a class or method.
+This means you can create programs without the ceremony of a `Program` class and a `Main` method.
+In this case, the compiler generates a `Program` class with an entry point method for the application. The name of the generated method isn't `Main`, it's an implementation detail that your code can't reference directly.
+
+Here's a *Program.cs* file that is a complete C# program:
 
 ```csharp
 Console.WriteLine("Hello World!");
@@ -26,7 +30,7 @@ An application must have only one entry point. A project can have only one file 
 
 > CS8802 Only one compilation unit can have top-level statements.
 
-A project can have any number of additional source code files that don't have top-level statements.
+A project can have any number of source code files that don't have top-level statements.
 
 ## No other entry points
 
@@ -38,7 +42,7 @@ In a project with top-level statements, you can't use the [-main](../../language
 
 ## `using` directives
 
-If you include using directives, they must come first in the file, as in this example:
+For the single file containing top-level statements `using` directives must come first in that file, as in this example:
 
 :::code language="csharp" source="snippets/top-level-statements-1/Program.cs":::
 
@@ -72,7 +76,7 @@ To return an `int` value when the application ends, use the `return` statement a
 
 ## Implicit entry point method
 
-The compiler generates a method to serve as the program entry point for a project with top-level statements. The name of this method isn't actually `Main`, it's an implementation detail that your code can't reference directly. The signature of the method depends on whether the top-level statements contain the `await` keyword or the `return` statement. The following table shows what the method signature would look like, using the method name `Main` in the table for convenience.
+The compiler generates a method to serve as the program entry point for a project with top-level statements. The signature of the method depends on whether the top-level statements contain the `await` keyword or the `return` statement. The following table shows what the method signature would look like, using the method name `Main` in the table for convenience.
 
 | Top-level code contains | Implicit `Main` signature                    |
 |-------------------------|----------------------------------------------|
@@ -80,6 +84,8 @@ The compiler generates a method to serve as the program entry point for a projec
 | `await`                 | `static async Task Main(string[] args)`      |
 | `return`                | `static int Main(string[] args)`             |
 | No `await` or `return`  | `static void Main(string[] args)`            |
+
+Beginning with C# 14, programs can be [*file based programs*](./index.md#building-and-running-c-programs), where a single file contains the program. You run *file based programs* with the command `dotnet run <file.cs>`, or using the `#!/usr/local/share/dotnet/dotnet run` directive as the first line (unix shells only).
 
 ## C# language specification
 

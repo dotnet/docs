@@ -25,10 +25,7 @@ public class Adult : Person
    public Adult(string lastName, string firstName) : base(lastName, firstName)
    { }
 
-   static Adult()
-   {
-      minimumAge = 18;
-   }
+   static Adult() => minimumAge = 18;
 
    // Remaining implementation of Adult class.
 }
@@ -62,3 +59,16 @@ public class Location
    }
 }
 // </ExpressionBodiedCtor>
+
+// <PrimaryCtor>
+public class LabelledContainer<T>(string label)
+{
+   public string Label { get; } = label;
+   public required T Contents 
+   { 
+      get;
+      init;
+   }
+}
+// </PrimaryCtor>
+

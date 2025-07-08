@@ -1,0 +1,178 @@
+### YamlMime:Landing
+
+title: "C# documentation"
+summary: "Learn how to write any application using the C# programming language on the .NET platform."
+
+metadata:
+  title: "C# docs - get started, tutorials, reference."
+  description: "Learn C# programming - for beginning developers, developers new to C#, and experienced C# / .NET developers"
+  ms.topic: landing-page # Required
+  ms.date: 05/29/2025
+
+
+landingContent:
+  - title: "Learn to program"
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: Learn C# | Tutorials, courses, videos, and more 
+            url: https://dotnet.microsoft.com/learn/csharp
+          - text: Beginner C# tutorials in your browser
+            url: ./tutorials/index.md
+      - linkListType: video
+        links:
+          - text: "C# beginner video series"
+            url: https://aka.ms/dotnet/beginnervideos/youtube/csharp
+      - linkListType: tutorial
+        links:
+          - text: "Self-guided tutorials"
+            url: https://learn.microsoft.com/users/dotnet/collections/yz26f8y64n7k07?WT.mc_id=dotnet-35129-website 
+          - text: "In-browser tutorial"
+            url: ./tutorials/hello-world.md
+      - linkListType: reference
+        links:
+          - text: "C# on Q&A"
+            url: /answers/topics/dotnet-csharp.html
+          - text: "Languages on .NET tech community forums"
+            url: https://techcommunity.microsoft.com/t5/languages/bd-p/languages
+          - text: "C# on Stack Overflow"
+            url: https://stackoverflow.com/questions/tagged/c%23
+          - text: "C# on Discord"
+            url: https://aka.ms/csharp-discord
+
+  - title: "Fundamentals"
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: "A tour of C#"
+            url: ./overview.md
+          - text: "Inside a C# program"
+            url: ../fundamentals/program-structure/index.md
+          - text: "C# highlights video series"
+            url: https://youtube.com/playlist?list=PLdo4fOcmZ0oU3ZLx6Ul1_HPrr6lFPIn9O
+          - text: C# Language development strategy
+            url: ./strategy.md
+      - linkListType: concept
+        links:
+          - text: "Type system"
+            url: ../fundamentals/types/index.md
+          - text: "Object oriented programming"
+            url: ../fundamentals/object-oriented/index.md
+          - text: "Functional techniques"
+            url: ../fundamentals/functional/pattern-matching.md
+          - text: "Exceptions"
+            url: ../fundamentals/exceptions/index.md
+          - text: "Coding style"
+            url: ../fundamentals/coding-style/identifier-names.md
+      - linkListType: tutorial
+        links:
+          - text: Display command-line
+            url: ../fundamentals/tutorials/how-to-display-command-line-arguments.md
+          - text: Intro to classes
+            url: ../fundamentals/tutorials/classes.md
+          - text: Object oriented C#
+            url: ../fundamentals/tutorials/oop.md
+          - text: Converting types
+            url: ../fundamentals/tutorials/safely-cast-using-pattern-matching-is-and-as-operators.md
+          - text: Pattern matching
+            url: ../fundamentals/tutorials/pattern-matching.md
+          - text: Use LINQ to query data
+            url: ../tutorials/working-with-linq.md
+
+  - title: "What's new"
+    linkLists:
+      - linkListType: whats-new
+        links:
+          - text: "What's new in C# 14"
+            url: ../whats-new/csharp-14.md        
+          - text: "What's new in C# 13"
+            url: ../whats-new/csharp-13.md
+          - text: "What's new in C# 12"
+            url: ../whats-new/csharp-12.md
+          - text: "What's new in C# 11"
+            url: ../whats-new/csharp-11.md
+      - linkListType: tutorial
+        links:
+          - text: Explore record types
+            url: ../whats-new/tutorials/records.md
+          - text: Explore top level statements
+            url: ../whats-new/tutorials/top-level-statements.md
+      - linkListType: reference
+        links:
+          - text: Breaking changes in the C# compiler
+            url: ../whats-new/breaking-changes.md
+          - text: Version compatibility
+            url: ../whats-new/version-update-considerations.md
+            
+  - title: "Key concepts"
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: C# language strategy
+            url: ./strategy.md
+          - text: "Programming concepts"
+            url: ../programming-guide/concepts/index.md
+      - linkListType: concept
+        links:
+          - text: "Language Integrated Query (LINQ)"
+            url: ../linq/index.md
+          - text: "Asynchronous programming"
+            url: ../programming-guide/concepts/async/index.md
+      - linkListType: learn
+        links:
+          - text: Learn C# for Java developers
+            url: ./tips-for-java-developers.md
+          - text: Learn C# for JavaScript developers
+            url: ./tips-for-javascript-developers.md
+          - text: Learn C# for Python developers
+            url: ./tips-for-python-developers.md
+
+  - title: "Advanced concepts"
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: "Reflection and attributes"
+            url: ../advanced-topics/reflection-and-attributes/index.md
+          - text: "Expression trees"
+            url: ../advanced-topics/expression-trees/index.md
+          - text: "Native interoperability"
+            url: ../advanced-topics/interop/index.md
+          - text: "Performance engineering"
+            url: ../advanced-topics/performance/index.md
+          - text: ".NET Compiler Platform SDK"
+            url: ../roslyn-sdk/index.md
+
+  - title: "C# language reference"
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: "Language reference"
+            url: ../language-reference/index.yml
+          - text: "Keywords"
+            url: ../language-reference/keywords/index.md
+          - text: "Operators and expressions"
+            url: ../language-reference/operators/index.md
+          - text: "Tokens"
+            url: ../language-reference/tokens/index.md
+  
+  - title: "C# language standard"
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: "Overview"
+            url: ../specification/overview.md
+          - text: "C# language specification"
+            url: ../../../_csharpstandard/standard/README.md
+          - text: "Feature specifications"
+            url: ../specification/feature-spec-overview.md
+
+  - title: "Stay in touch"
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: ".NET developer community"
+            url: https://dotnet.microsoft.com/platform/community
+          - text: "YouTube"
+            url: https://www.youtube.com/dotnet
+          - text: "Twitter"
+            url: https://twitter.com/DotNet

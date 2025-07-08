@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 using System.Activities;
 using System.Activities.Statements;
@@ -176,7 +176,7 @@ namespace WCFDataServicesActivityExample
             string uri = "http://services.odata.org/Northwind/Northwind.svc/Customers('ALFKI')/ContactName";
             WebClient client = new WebClient();
             string data = client.DownloadString(uri);
-            Console.WriteLine("Raw data returned:\n{0}", data);
+            Console.WriteLine($"Raw data returned:\n{data}");
             //</snippet2>
         }
     }

@@ -4,6 +4,9 @@ on:
   schedule: # Run 5 minutes after midnight daily.
   - cron: '5 0 * * *'
 
+permissions:
+  contents: read
+
 jobs:
   stale:
 
@@ -12,7 +15,12 @@ jobs:
       issues: write
 
     steps:
-    - uses: actions/stale@1160a2240286f5da8ec72b1c0816ce2481aabf84
+    - name: Harden Runner
+      uses: step-security/harden-runner@6c439dc8bdf85cadbbce9ed30d1c7b959517bc49 # v2.12.2
+      with:
+        egress-policy: audit
+
+    - uses: actions/stale@5bef64f19d7facfb25b37b414482c7164d639639
       with:
         start-date: '2022-03-01T00:00:00Z' # ISO 8601 or RFC 2822
         repo-token: ${{ secrets.GITHUB_TOKEN }}

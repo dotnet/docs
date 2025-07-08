@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -214,31 +214,6 @@ namespace csrefKeywordsModifiers
     // Output: My local constant = 707
     //</snippet6>
 
-    //<snippet7>
-    public class SampleEventArgs
-    {
-        public SampleEventArgs(string text) { Text = text; }
-        public string Text { get; } // readonly
-    }
-
-    public class Publisher
-    {
-        // Declare the delegate (if using non-generic pattern).
-        public delegate void SampleEventHandler(object sender, SampleEventArgs e);
-
-        // Declare the event.
-        public event SampleEventHandler SampleEvent;
-
-        // Wrap the event in a protected virtual method
-        // to enable derived classes to raise the event.
-        protected virtual void RaiseSampleEvent()
-        {
-            // Raise the event in a thread-safe manner using the ?. operator.
-            SampleEvent?.Invoke(this, new SampleEventArgs("Hello"));
-        }
-    }
-    //</snippet7>
-
     //<snippet8>
     //using System.Runtime.InteropServices;
     class ExternTest
@@ -370,8 +345,8 @@ namespace csrefKeywordsModifiers
             var a = new A();
             var b = new B();
 
-            // Error CS1540, because x can only be accessed by
-            // classes derived from A.
+            // Error CS1540, because x can only be accessed through
+            // the derived class type, not through the base class type.
             // a.x = 10;
 
             // OK, because this class derives from A.
@@ -712,9 +687,9 @@ namespace csrefKeywordsModifiers
             Shape s = new Sphere(r);
             Shape l = new Cylinder(r, h);
             // Display results.
-            Console.WriteLine("Area of Circle   = {0:F2}", c.Area());
-            Console.WriteLine("Area of Sphere   = {0:F2}", s.Area());
-            Console.WriteLine("Area of Cylinder = {0:F2}", l.Area());
+            Console.WriteLine($"Area of Circle   = {c.Area():F2}");
+            Console.WriteLine($"Area of Sphere   = {s.Area():F2}");
+            Console.WriteLine($"Area of Cylinder = {l.Area():F2}");
         }
     }
     /*
@@ -759,7 +734,7 @@ namespace csrefKeywordsModifiers
     //<snippet26>
     class MyBaseClass
     {
-        // virtual auto-implemented property. Overrides can only
+        // virtual automatically implemented property. Overrides can only
         // provide specialized behavior if they implement get and set accessors.
         public virtual string Name { get; set; }
 
@@ -776,7 +751,7 @@ namespace csrefKeywordsModifiers
     {
         private string _name;
 
-        // Override auto-implemented property with ordinary property
+        // Override automatically implemented property with ordinary property
         // to provide specialized accessor behavior.
         public override string Name
         {
@@ -798,4 +773,91 @@ namespace csrefKeywordsModifiers
         }
     }
     //</snippet26>
+
+    public class AbstractExercise3
+    {
+        //<snippet27>
+        public abstract class Shape
+        {
+            public string Color { get; set; }
+
+            // Constructor of the abstract class
+            protected Shape(string color)
+            {
+                Color = color;
+                Console.WriteLine($"Created a shape with color {color}.");
+            }
+
+            // Abstract method that must be implemented by derived classes
+            public abstract double CalculateArea();
+        }
+
+        public class Square : Shape
+        {
+            public double Side { get; set; }
+
+            // Constructor of the derived class calling the base class constructor
+            public Square(string color, double side) : base(color)
+            {
+                Side = side;
+            }
+
+            public override double CalculateArea()
+            {
+                return Side * Side;
+            }
+        }
+
+        public class Program
+        {
+            public static void Main(string[] args)
+             {
+                    Square square = new Square("red", 5);
+                    Console.WriteLine($"Area of the square: {square.CalculateArea()}");            
+             }
+        }
+        //</snippet27>
+    } 
+
+      //<snippet28>
+  class Calc1
+  {
+      public void CalculateSum()
+      {
+          int a = 3;
+          int b = 7;
+
+          // Static local function - cannot access 'a' or 'b' directly
+          static int Add(int x, int y)
+          {
+              return x + y;
+          }
+
+          int result = Add(a, b); 
+          Console.WriteLine($"Sum: {result}");
+      }
+  }
+    /*
+   Output:
+   Sum: 10
+   */
+  //</snippet28>
+
+
+  //<snippet29>
+  class Calc2
+  {
+      static void Main()
+      {
+          Func<int, int, int> add = static (a, b) => a + b;
+
+          int result = add(5, 10);
+          Console.WriteLine($"Sum: {result}");
+      }
+  }
+  /*
+  Output:
+  Sum: 15
+  */
+  //</snippet29>
 }

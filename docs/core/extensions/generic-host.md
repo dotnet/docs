@@ -3,12 +3,12 @@ title: .NET Generic Host
 author: IEvangelist
 description: Learn about the .NET Generic Host, which is responsible for app startup and lifetime management.
 ms.author: dapine
-ms.date: 06/23/2023
+ms.date: 09/11/2024
 ---
 
 # .NET Generic Host
 
-The Worker Service templates create a .NET Generic Host, <xref:Microsoft.Extensions.Hosting.HostBuilder>. The Generic Host can be used with other types of .NET applications, such as Console apps.
+In this article, you learn about the various patterns for configuring and building a .NET Generic Host available in the [Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting) NuGet package. The .NET Generic Host is responsible for app startup and lifetime management. The Worker Service templates create a .NET Generic Host, <xref:Microsoft.Extensions.Hosting.HostApplicationBuilder>. The Generic Host can be used with other types of .NET applications, such as Console apps.
 
 A *host* is an object that encapsulates an app's resources and lifetime functionality, such as:
 
@@ -20,14 +20,16 @@ A *host* is an object that encapsulates an app's resources and lifetime function
 
 When a host starts, it calls <xref:Microsoft.Extensions.Hosting.IHostedService.StartAsync%2A?displayProperty=nameWithType> on each implementation of <xref:Microsoft.Extensions.Hosting.IHostedService> registered in the service container's collection of hosted services. In a worker service app, all `IHostedService` implementations that contain <xref:Microsoft.Extensions.Hosting.BackgroundService> instances have their <xref:Microsoft.Extensions.Hosting.BackgroundService.ExecuteAsync%2A?displayProperty=nameWithType> methods called.
 
-The main reason for including all of the app's interdependent resources in one object is lifetime management: control over app startup and graceful shutdown. Reference the [Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting) NuGet package to achieve lifetime management.
+The main reason for including all of the app's interdependent resources in one object is lifetime management: control over app startup and graceful shutdown.
 
 ## Set up a host
 
 The host is typically configured, built, and run by code in the `Program` class. The `Main` method:
 
+# [IHostApplicationBuilder](#tab/appbuilder)
+
 - Calls a <xref:Microsoft.Extensions.Hosting.Host.CreateApplicationBuilder%2A> method to create and configure a builder object.
-- Calls <xref:Microsoft.Extensions.Hosting.IHostBuilder.Build> to create an <xref:Microsoft.Extensions.Hosting.IHost> instance.
+- Calls <xref:Microsoft.Extensions.Hosting.HostApplicationBuilder.Build> to create an <xref:Microsoft.Extensions.Hosting.IHost> instance.
 - Calls <xref:Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run%2A> or <xref:Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync%2A> method on the host object.
 
 The .NET Worker Service templates generate the following code to create a Generic Host:
@@ -42,7 +44,34 @@ IHost host = builder.Build();
 host.Run();
 ```
 
-## Default builder settings
+# [IHostBuilder](#tab/hostbuilder)
+
+- Calls a <xref:Microsoft.Extensions.Hosting.Host.CreateDefaultBuilder> method to create and configure a builder object.
+- Calls <xref:Microsoft.Extensions.Hosting.HostApplicationBuilder.Build> to create an <xref:Microsoft.Extensions.Hosting.IHost> instance.
+- Calls <xref:Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run%2A> or <xref:Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync%2A> method on the host object.
+
+The .NET Worker Service templates generate the following code to create a Generic Host:
+
+```csharp
+using Example.WorkerService;
+
+IHostBuilder builder = Host.CreateDefaultBuilder(args);
+builder.ConfigureServices(services =>
+{
+    services.AddHostedService<Worker>();
+});
+
+IHost host = builder.Build();
+host.Run();
+```
+
+---
+
+For more information on Worker Services, see [Worker Services in .NET](workers.md).
+
+## Host builder settings
+
+# [IHostApplicationBuilder](#tab/appbuilder)
 
 The <xref:Microsoft.Extensions.Hosting.Host.CreateApplicationBuilder%2A> method:
 
@@ -65,19 +94,52 @@ The <xref:Microsoft.Extensions.Hosting.Host.CreateApplicationBuilder%2A> method:
 
 The <xref:Microsoft.Extensions.Hosting.HostApplicationBuilder.Services?displayProperty=nameWithType> is an <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection?displayProperty=nameWithType> instance. These services are used to build an <xref:System.IServiceProvider> that's used with dependency injection to resolve the registered services.
 
+# [IHostBuilder](#tab/hostbuilder)
+
+The <xref:Microsoft.Extensions.Hosting.Host.CreateDefaultBuilder%2A> method:
+
+- Sets the content root to the path returned by <xref:System.IO.Directory.GetCurrentDirectory>.
+- Loads [host configuration](#host-configuration) from:
+  - Environment variables prefixed with `DOTNET_`.
+  - Command-line arguments.
+- Loads app configuration from:
+  - *appsettings.json*.
+  - *appsettings.{Environment}.json*.
+  - Secret Manager when the app runs in the `Development` environment.
+  - Environment variables.
+  - Command-line arguments.
+- Adds the following logging providers:
+  - Console
+  - Debug
+  - EventSource
+  - EventLog (only when running on Windows)
+- Enables scope validation and [dependency validation](xref:Microsoft.Extensions.DependencyInjection.ServiceProviderOptions.ValidateOnBuild) when the environment is `Development`.
+
+Use the <xref:Microsoft.Extensions.Hosting.IHostBuilder.ConfigureServices%2A> method to add services to the <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection?displayProperty=nameWithType> instance. These services are used to build an <xref:System.IServiceProvider> that's used with dependency injection to resolve the registered services.
+
+---
+
 ## Framework-provided services
 
-The following services are registered automatically:
+When you call either <xref:Microsoft.Extensions.Hosting.IHostBuilder.Build?displayProperty=nameWithType> or <xref:Microsoft.Extensions.Hosting.HostApplicationBuilder.Build?displayProperty=nameWithType>, the following services are registered automatically:
 
 - [IHostApplicationLifetime](#ihostapplicationlifetime)
 - [IHostLifetime](#ihostlifetime)
 - [IHostEnvironment](#ihostenvironment)
 
-## IHostApplicationLifetime
+## Additional scenario-based host builders
+
+If you're building for the web or writing a distributed application, you might need to use a different host builder. Consider the following list of additional host builders:
+
+- <xref:Aspire.Hosting.DistributedApplicationBuilder>: A builder for creating distributed apps. For more information, see [.NET Aspire](/dotnet/aspire).
+- <xref:Microsoft.AspNetCore.Builder.WebApplicationBuilder>: A builder for web applications and services. For more information, see [ASP.NET Core](/aspnet/core).
+- <xref:Microsoft.AspNetCore.Hosting.WebHostBuilder>: A builder for `IWebHost`. For more information, see [ASP.NET Core web host](/aspnet/core/fundamentals/host/web-host).
+
+## `IHostApplicationLifetime`
 
 Inject the <xref:Microsoft.Extensions.Hosting.IHostApplicationLifetime> service into any class to handle post-startup and graceful shutdown tasks. Three properties on the interface are cancellation tokens used to register app start and app stop event handler methods. The interface also includes a <xref:Microsoft.Extensions.Hosting.IHostApplicationLifetime.StopApplication> method.
 
-The following example is an `IHostedService` implementation that registers `IHostApplicationLifetime` events:
+The following example is an <xref:Microsoft.Extensions.Hosting.IHostedService> and <xref:Microsoft.Extensions.Hosting.IHostedLifecycleService> implementation that registers `IHostApplicationLifetime` events:
 
 :::code language="csharp" source="snippets/configuration/app-lifetime/ExampleHostedService.cs" highlight="16-18":::
 
@@ -89,11 +151,30 @@ The application would write the following sample output:
 
 :::code language="csharp" source="snippets/configuration/app-lifetime/Program.cs" id="Output":::
 
-## IHostLifetime
+The output shows the order of all of the various lifecycle events:
+
+1. `IHostedLifecycleService.StartingAsync`
+1. `IHostedService.StartAsync`
+1. `IHostedLifecycleService.StartedAsync`
+1. `IHostApplicationLifetime.ApplicationStarted`
+
+When the application is stopped, for example with <kbd>Ctrl</kbd>+<kbd>C</kbd>, the following events are raised:
+
+1. `IHostApplicationLifetime.ApplicationStopping`
+1. `IHostedLifecycleService.StoppingAsync`
+1. `IHostedService.StopAsync`
+1. `IHostedLifecycleService.StoppedAsync`
+1. `IHostApplicationLifetime.ApplicationStopped`
+
+## `IHostLifetime`
 
 The <xref:Microsoft.Extensions.Hosting.IHostLifetime> implementation controls when the host starts and when it stops. The last implementation registered is used. `Microsoft.Extensions.Hosting.Internal.ConsoleLifetime` is the default `IHostLifetime` implementation. For more information on the lifetime mechanics of shutdown, see [Host shutdown](#host-shutdown).
 
-## IHostEnvironment
+The `IHostLifetime` interface exposes a <xref:Microsoft.Extensions.Hosting.IHostLifetime.WaitForStartAsync%2A?displayProperty=nameWithType> method, which is called at the start of `IHost.StartAsync` which will wait until it's complete before continuing. This can be used to delay startup until signaled by an external event.
+
+Additionally, the `IHostLifetime` interface exposes a <xref:Microsoft.Extensions.Hosting.IHostLifetime.StopAsync%2A?displayProperty=nameWithType> method, which is called from `IHost.StopAsync` to indicate that the host is stopping and it's time to shut down.
+
+## `IHostEnvironment`
 
 Inject the <xref:Microsoft.Extensions.Hosting.IHostEnvironment> service into a class to get information about the following settings:
 
@@ -102,9 +183,34 @@ Inject the <xref:Microsoft.Extensions.Hosting.IHostEnvironment> service into a c
 - <xref:Microsoft.Extensions.Hosting.IHostEnvironment.ContentRootPath?displayProperty=nameWithType>
 - <xref:Microsoft.Extensions.Hosting.IHostEnvironment.EnvironmentName?displayProperty=nameWithType>
 
+Additionally, the `IHostEnvironment` service exposes the ability to evaluate the environment with the help of these extension methods:
+
+- <xref:Microsoft.Extensions.Hosting.HostingEnvironmentExtensions.IsDevelopment%2A?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Hosting.HostingEnvironmentExtensions.IsEnvironment%2A?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Hosting.HostingEnvironmentExtensions.IsProduction%2A?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Hosting.HostingEnvironmentExtensions.IsStaging%2A?displayProperty=nameWithType>
+
 ## Host configuration
 
 Host configuration is used to configure properties of the [IHostEnvironment](#ihostenvironment) implementation.
+
+# [IHostApplicationBuilder](#tab/appbuilder)
+
+The host configuration is available in <xref:Microsoft.Extensions.Hosting.HostApplicationBuilderSettings.Configuration?displayProperty=nameWithType> property and the environment implementation is available in <xref:Microsoft.Extensions.Hosting.IHostApplicationBuilder.Environment?displayProperty=nameWithType> property. To configure the host, access the `Configuration` property and call any of the available extension methods.
+
+To add host configuration, consider the following example:
+
+:::code language="csharp" source="snippets/configuration/console-host/Program.cs" highlight="6-8":::
+
+The preceding code:
+
+- Sets the content root to the path returned by <xref:System.IO.Directory.GetCurrentDirectory>.
+- Loads host configuration from:
+  - *hostsettings.json*.
+  - Environment variables prefixed with `PREFIX_`.
+  - Command-line arguments.
+
+# [IHostBuilder](#tab/hostbuilder)
 
 The host configuration is available in [HostBuilderContext.Configuration](xref:Microsoft.Extensions.Hosting.HostBuilderContext.Configuration) within the <xref:Microsoft.Extensions.Hosting.HostBuilder.ConfigureAppConfiguration%2A> method. When you call the `ConfigureAppConfiguration` method, the `HostBuilderContext` and `IConfigurationBuilder` are passed into the `configureDelegate`. The `configureDelegate` is defined as an `Action<HostBuilderContext, IConfigurationBuilder>`. The host builder context exposes the `Configuration` property, which is an instance of `IConfiguration`. It represents the configuration built from the host, whereas the `IConfigurationBuilder` is the builder object used to configure the app.
 
@@ -113,15 +219,21 @@ The host configuration is available in [HostBuilderContext.Configuration](xref:M
 
 To add host configuration, call <xref:Microsoft.Extensions.Hosting.HostBuilder.ConfigureHostConfiguration%2A> on `IHostBuilder`. `ConfigureHostConfiguration` can be called multiple times with additive results. The host uses whichever option sets a value last on a given key.
 
-The following example creates host configuration:
-
-:::code language="csharp" source="snippets/configuration/console-host/Program.cs" highlight="6-9":::
+---
 
 ## App configuration
 
-App configuration is created by calling <xref:Microsoft.Extensions.Hosting.HostBuilder.ConfigureAppConfiguration%2A> on `IHostBuilder`. `ConfigureAppConfiguration` can be called multiple times with additive results. The app uses whichever option sets a value last on a given key.
+# [IHostApplicationBuilder](#tab/appbuilder)
+
+App configuration is created by calling <xref:Microsoft.Extensions.Hosting.HostBuilder.ConfigureAppConfiguration%2A> on an <xref:Microsoft.Extensions.Hosting.IHostApplicationBuilder>. The public <xref:Microsoft.Extensions.Hosting.IHostApplicationBuilder.Configuration?displayProperty=nameWithType> property allows consumers to read from or make changes to the existing configuration using available extension methods.
+
+# [IHostBuilder](#tab/hostbuilder)
+
+App configuration is created by calling <xref:Microsoft.Extensions.Hosting.HostBuilder.ConfigureAppConfiguration%2A> on an <xref:Microsoft.Extensions.Hosting.IHostBuilder>. The `ConfigureAppConfiguration` method can be called multiple times with additive results. The app uses whichever option sets a value last on a given key.
 
 The configuration created by `ConfigureAppConfiguration` is available in [HostBuilderContext.Configuration](xref:Microsoft.Extensions.Hosting.HostBuilderContext.Configuration%2A) for subsequent operations and as a service from DI. The host configuration is also added to the app configuration.
+
+---
 
 For more information, see [Configuration in .NET](configuration.md).
 
@@ -131,13 +243,13 @@ There are several ways in which a hosted process is stopped. Most commonly, a ho
 
 - If someone doesn't call <xref:Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run%2A> or <xref:Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.WaitForShutdown%2A?displayProperty=nameWithType> and the app exits normally with `Main` completing.
 - If the app crashes.
-- If the app is forcefully shut down using [SIGKILL][sigkill] (or <kbd>CTRL</kbd>+<kbd>Z</kbd>).
+- If the app is forcefully shut down using [SIGKILL][sigkill] (or <kbd>Ctrl</kbd>+<kbd>Z</kbd>).
 
 The hosting code isn't responsible for handling these scenarios. The owner of the process needs to deal with them the same as any other app. There are several other ways in which a hosted service process can be stopped:
 
 - If `ConsoleLifetime` is used (<xref:Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.UseConsoleLifetime%2A>), it listens for the following signals and attempts to stop the host gracefully.
-  - [SIGINT][sigint] (or <kbd>CTRL</kbd>+<kbd>C</kbd>).
-  - [SIGQUIT][sigquit] (or <kbd>CTRL</kbd>+<kbd>BREAK</kbd> on Windows, <kbd>CTRL</kbd>+<kbd>\\</kbd> on Unix).
+  - [SIGINT][sigint] (or <kbd>Ctrl</kbd>+<kbd>C</kbd>).
+  - [SIGQUIT][sigquit] (or <kbd>Ctrl</kbd>+<kbd>BREAK</kbd> on Windows, <kbd>Ctrl</kbd>+<kbd>\\</kbd> on Unix).
   - [SIGTERM][sigterm] (sent by other apps, such as `docker stop`).
 - If the app calls <xref:System.Environment.Exit%2A?displayProperty=nameWithType>.
 
@@ -193,7 +305,7 @@ to exit gracefully.
 
 There are various other common scenarios in which graceful shutdown works in Kestrel for both HTTP/1.1 and HTTP/2 protocols, and how you can configure it in different environments with a load balancer to drain traffic smoothly. While web server configuration is beyond the scope of this article, you can find more information on [Configure options for the ASP.NET Core Kestrel web server](/aspnet/core/fundamentals/servers/kestrel/options) documentation.
 
-When the Host receives a shutdown signal (for example, <kbd>CTL</kbd>+<kbd>C</kbd> or `StopAsync`), it notifies the application by signaling <xref:Microsoft.Extensions.Hosting.IHostApplicationLifetime.ApplicationStopping>. You should subscribe to this event if you have any long-running operations that need to finish gracefully.
+When the Host receives a shutdown signal (for example, <kbd>Ctrl</kbd>+<kbd>C</kbd> or `StopAsync`), it notifies the application by signaling <xref:Microsoft.Extensions.Hosting.IHostApplicationLifetime.ApplicationStopping>. You should subscribe to this event if you have any long-running operations that need to finish gracefully.
 
 Next, the Host calls <xref:Microsoft.AspNetCore.Hosting.Server.IServer.StopAsync%2A?displayProperty=nameWithType> with a shutdown timeout that you can configure (default 30s). Kestrel (and Http.Sys) close their port bindings and stop accepting new connections. They also tell the current connections to stop processing new requests. For HTTP/2 and HTTP/3, a preliminary `GOAWAY` message is sent to the client. For HTTP/1.1, they stop the connection loop because requests are processed in order. IIS behaves differently, by rejecting new requests with a 503 status code.
 

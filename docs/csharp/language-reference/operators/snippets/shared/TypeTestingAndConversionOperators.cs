@@ -21,7 +21,8 @@ public static class TypeTestingAndConversionOperators
         int a = (int)x;
         Console.WriteLine(a);   // output: 1234
 
-        IEnumerable<int> numbers = new int[] { 10, 20, 30 };
+        int[] ints = [10, 20, 30];
+        IEnumerable<int> numbers = ints;
         IList<int> list = (IList<int>)numbers;
         Console.WriteLine(list.Count);  // output: 3
         Console.WriteLine(list[1]);  // output: 20
@@ -76,7 +77,7 @@ public static class TypeTestingAndConversionOperators
     private static void AsOperator()
     {
         // <SnippetAsOperator>
-        IEnumerable<int> numbers = new[] { 10, 20, 30 };
+        IEnumerable<int> numbers = new List<int>(){10, 20, 30};
         IList<int> indexable = numbers as IList<int>;
         if (indexable != null)
         {

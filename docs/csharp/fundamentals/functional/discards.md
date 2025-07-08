@@ -1,7 +1,7 @@
 ---
 title: Discards - unassigned discardable variables
 description: Describes C#'s support for discards, which are unassigned, discardable variables, and the ways in which discards can be used.
-ms.date: 05/14/2021
+ms.date: 02/19/2025
 f1_keywords:
   - "discard_CSharpKeyword"
 ---
@@ -17,7 +17,7 @@ You indicate that a variable is a discard by assigning it the underscore (`_`) a
 (_, _, area) = city.GetCityInformation(cityName);
 ```
 
-Beginning with C# 9.0, you can use discards to specify unused input parameters of a lambda expression. For more information, see the [Input parameters of a lambda expression](../../language-reference/operators/lambda-expressions.md#input-parameters-of-a-lambda-expression) section of the [Lambda expressions](../../language-reference/operators/lambda-expressions.md) article.
+You can use discards to specify unused input parameters of a lambda expression. For more information, see the [Input parameters of a lambda expression](../../language-reference/operators/lambda-expressions.md#input-parameters-of-a-lambda-expression) section of the [Lambda expressions](../../language-reference/operators/lambda-expressions.md) article.
 
 When `_` is a valid discard, attempting to retrieve its value or use it in an assignment operation generates compiler error CS0103, "The name '\_' doesn't exist in the current context". This error is because `_` isn't assigned a value, and may not even be assigned a storage location. If it were an actual variable, you couldn't discard more than one value, as the previous example did.
 
@@ -74,8 +74,6 @@ Without assigning the task to a discard, the following code generates a compiler
    :::code language="csharp" source="snippets/discards/standalone-discard2.cs" ID="VariableIdentifier" :::
 - A compiler error for violating type safety. For example:
    :::code language="csharp" source="snippets/discards/standalone-discard2.cs" ID="VariableTypeInference" :::
-- Compiler error CS0136, "A local or parameter named '\_' cannot be declared in this scope because that name is used in an enclosing local scope to define a local or parameter." For example:
-   :::code language="csharp" source="snippets/discards/standalone-discard2.cs" ID="CannotRedeclare" :::
 
 ## See also
 

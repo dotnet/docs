@@ -146,9 +146,9 @@ Due to CAS's deprecation, the [supporting infrastructure was not brought forward
   ```xml
   <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-     <TargetFramework>net5.0</TargetFramework>
-     <!-- NoWarn below suppresses SYSLIB0003 project-wide -->
-     <NoWarn>$(NoWarn);SYSLIB0003</NoWarn>
+      <TargetFramework>net5.0</TargetFramework>
+      <!-- NoWarn below suppresses SYSLIB0003 project-wide -->
+      <NoWarn>$(NoWarn);SYSLIB0003</NoWarn>
     </PropertyGroup>
   </Project>
   ```

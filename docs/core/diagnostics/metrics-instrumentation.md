@@ -2,10 +2,10 @@
 title: Creating Metrics
 description: How to add new metrics to a .NET library or application
 ms.topic: tutorial
-ms.date: 11/04/2021
+ms.date: 11/19/2024
 ---
 
-# Creating Metrics
+# Creating metrics
 
 **This article applies to: ✔️** .NET Core 6 and later versions **✔️** .NET Framework 4.6.1 and later versions
 
@@ -26,8 +26,10 @@ version 8 or greater. Applications that target .NET 8+ include this reference by
 
 ```dotnetcli
 > dotnet new console
-> dotnet add package System.Diagnostics.DiagnosticSource
+> dotnet package add System.Diagnostics.DiagnosticSource
 ```
+
+(If you're using an SDK version of .NET 9 or earlier, use the `dotnet add package` form instead.)
 
 ```csharp
 using System;
@@ -83,9 +85,15 @@ which use dotted hierarchical names. Assembly names or namespace names for code 
 for code in a second, independent assembly, the name should be based on the assembly that defines the Meter, not the assembly whose code is being instrumented.
 
 - .NET doesn't enforce any naming scheme for Instruments, but we recommend following
-[OpenTelemetry naming guidelines](https://github.com/open-telemetry/semantic-conventions/blob/main/docs/general/metrics.md#general-guidelines), which use dotted hierarchical names
+[OpenTelemetry naming guidelines](https://github.com/open-telemetry/semantic-conventions/blob/main/docs/general/metrics.md#general-guidelines), which use lowercase dotted hierarchical names
 and an underscore ('_') as the separator between multiple words in the same element. Not all metric tools preserve the Meter name as part of the final metric name, so it's beneficial
 to make the instrument name globally unique on its own.
+
+  Example instrument names:
+
+  - `contoso.ticket_queue.duration`
+  - `contoso.reserved_tickets`
+  - `contoso.purchased_tickets`
 
 - The APIs to create instruments and record measurements are thread-safe. In .NET libraries, most instance methods require synchronization when
 invoked on the same object from multiple threads, but that's not needed in this case.
@@ -169,6 +177,11 @@ app.MapPost("/complete-sale", ([FromBody] SaleModel model, HatCoMetrics metrics)
 });
 ```
 
+### Best practices
+
+- <xref:System.Diagnostics.Metrics.Meter?displayProperty=nameWithType> implements IDisposable, but IMeterFactory automatically manages the lifetime of any `Meter` objects it
+  creates, disposing them when the DI container is disposed. It's unnecessary to add extra code to invoke `Dispose()` on the `Meter`, and it won't have any effect.
+
 ## Types of instruments
 
 So far we've only demonstrated a <xref:System.Diagnostics.Metrics.Counter`1> instrument, but there are more instrument types available. Instruments differ
@@ -202,6 +215,8 @@ Types of instruments currently available:
   the current total. For example, if a collection tool updates every three seconds, then the callback function will also be invoked every three seconds. Whatever value is returned by
   the callback will be shown in the collection tool unchanged as the total.
 
+- **Gauge** (<xref:System.Diagnostics.Metrics.Meter.CreateGauge%2A>) - This instrument allows the caller to set the current value of the metric using the <xref:System.Diagnostics.Metrics.Gauge%601.Record%2A> method. The value can be updated at any time by invoking the method again and a metric collection tool will display whatever value was most recently set.
+
 - **ObservableGauge** (<xref:System.Diagnostics.Metrics.Meter.CreateObservableGauge%2A>) - This instrument allows the caller to provide a callback where the measured value
   is passed through directly as the metric. Each time the collection tool updates, the callback is invoked, and whatever value is returned by the callback is displayed in
   the tool.
@@ -210,6 +225,11 @@ Types of instruments currently available:
   describe a set of measurements, but tools are recommended to use histograms or computed percentiles. For example, assume the caller invoked
   <xref:System.Diagnostics.Metrics.Histogram%601.Record%2A> to record these measurements during the collection tool's update interval: 1,5,2,3,10,9,7,4,6,8. A collection tool
   might report that the 50th, 90th, and 95th percentiles of these measurements are 5, 9, and 9 respectively.
+
+  > [!NOTE]
+  > For details about how to set the recommended bucket boundaries when creating
+  > a Histogram instrument see: [Using Advice to customize Histogram
+  > instruments](#using-advice-to-customize-histogram-instruments).
 
 ### Best practices when selecting an instrument type
 
@@ -269,7 +289,7 @@ class Program
             s_ordersPending = s_rand.Next(0, 20);
 
             // Last we pretend that we measured how long it took to do the transaction (for example we could time it with Stopwatch)
-            s_orderProcessingTime.Record(s_rand.Next(0.005, 0.015));
+            s_orderProcessingTime.Record(s_rand.Next(5, 15)/1000.0);
         }
     }
 }
@@ -282,54 +302,55 @@ Run the new process and use dotnet-counters as before in a second shell to view 
 Press p to pause, r to resume, q to quit.
     Status: Running
 
+Name                                                  Current Value
 [HatCo.Store]
-    hatco.store.coats_sold (Count / 1 sec)                                27
-    hatco.store.hats_sold (Count / 1 sec)                                 36
+    hatco.store.coats_sold (Count)                        8,181
+    hatco.store.hats_sold (Count)                           548
     hatco.store.order_processing_time
-        Percentile=50                                                      0.012
-        Percentile=95                                                      0.014
-        Percentile=99                                                      0.014
-    hatco.store.orders_pending                                             5
+        Percentile
+        50                                                    0.012
+        95                                                    0.013
+        99                                                    0.013
+    hatco.store.orders_pending                                9
 ```
 
-This example uses some randomly generated numbers so your values will vary a bit. You can see that `hatco.store.hats_sold` (the Counter) and
-`hatco.store.coats_sold` (the ObservableCounter) both show up as a rate. The ObservableGauge, `hatco.store.orders_pending`, appears
-as an absolute value. Dotnet-counters renders Histogram instruments as three percentile statistics (50th, 95th, and 99th) but other tools may
-summarize the distribution differently or offer more configuration options.
+This example uses some randomly generated numbers so your values will vary a bit. Dotnet-counters renders Histogram instruments as three percentile statistics (50th, 95th, and 99th) but other tools might summarize the distribution differently or offer more configuration options.
 
 ### Best practices
 
-- Histograms tend to store a lot more data in memory than other metric types, however, the exact memory usage is determined by the collection tool being used.
+- Histograms tend to store a lot more data in memory than other metric types. However, the exact memory usage is determined by the collection tool being used.
   If you're defining a large number (>100) of Histogram metrics, you may need to give users guidance not to enable them all at the same time, or to configure their tools to save
   memory by reducing precision. Some collection tools may have hard limits on the number of concurrent Histograms they will monitor to prevent excessive memory use.
 
 - Callbacks for all observable instruments are invoked in sequence, so any callback that takes a long time can delay or prevent all metrics from being collected. Favor
   quickly reading a cached value, returning no measurements, or throwing an exception over performing any potentially long-running or blocking operation.
 
+- The ObservableCounter, ObservableUpDownCounter, and ObservableGauge callbacks occur on a thread that's not usually synchronized with the code that updates the values. It's your responsibility to either synchronize memory access or accept the inconsistent values that can result from using unsynchronized access. Common approaches to synchronize access are to use a lock or call <xref:System.Threading.Volatile.Read%2A?displayProperty=nameWithType> and <xref:System.Threading.Volatile.Write%2A?displayProperty=nameWithType>.
+
 - The <xref:System.Diagnostics.Metrics.Meter.CreateObservableGauge%2A> and <xref:System.Diagnostics.Metrics.Meter.CreateObservableCounter%2A> functions do return an
   instrument object, but in most cases you don't need to save it in a variable because no further interaction with the object is needed. Assigning it to a static variable
-  as we did for the other instruments is legal but error prone, because C# static initialization is lazy and the variable is usually never referenced. Here is an example
+  as we did for the other instruments is legal but error prone, because C# static initialization is lazy and the variable is usually never referenced. Here's an example
   of the problem:
 
-```csharp
-using System;
-using System.Diagnostics.Metrics;
+  ```csharp
+  using System;
+  using System.Diagnostics.Metrics;
 
-class Program
-{
-    // BEWARE! Static initializers only run when code in a running method refers to a static variable.
-    // These statics will never be initialized because none of them were referenced in Main().
-    //
-    static Meter s_meter = new Meter("HatCo.Store");
-    static ObservableCounter<int> s_coatsSold = s_meter.CreateObservableCounter<int>("hatco.store.coats_sold", () => s_rand.Next(1,10));
-    static Random s_rand = new Random();
+  class Program
+  {
+      // BEWARE! Static initializers only run when code in a running method refers to a static variable.
+      // These statics will never be initialized because none of them were referenced in Main().
+      //
+      static Meter s_meter = new Meter("HatCo.Store");
+      static ObservableCounter<int> s_coatsSold = s_meter.CreateObservableCounter<int>("hatco.store.coats_sold", () => s_rand.Next(1,10));
+      static Random s_rand = new Random();
 
-    static void Main(string[] args)
-    {
-        Console.ReadLine();
-    }
-}
-```
+      static void Main(string[] args)
+      {
+          Console.ReadLine();
+      }
+  }
+  ```
 
 ## Descriptions and units
 
@@ -367,8 +388,9 @@ Run the new process and use dotnet-counters as before in a second shell to view 
 Press p to pause, r to resume, q to quit.
     Status: Running
 
+Name                                                       Current Value
 [HatCo.Store]
-    hatco.store.hats_sold ({hats} / 1 sec)                                40
+    hatco.store.hats_sold ({hats})                                40
 ```
 
 dotnet-counters doesn't currently use the description text in the UI, but it does show the unit when it is provided. In this case, you see "{hats}"
@@ -379,7 +401,7 @@ has replaced the generic term "Count" that is visible in previous descriptions.
 - .NET APIs allow any string to be used as the unit, but we recommend using [UCUM](https://ucum.org/), an international standard for unit names. The curly
 braces around "{hats}" is part of the UCUM standard, indicating that it is a descriptive annotation rather than a unit name with a standardized meaning like seconds or bytes.
 
-- The unit specified in the constructor should describe the units appropriate for an individual measurement. This will sometimes differ from the units on the final metric. In this example, each measurement is a number of hats, so "{hats}" is the appropriate unit to pass in the constructor. The collection tool calculated a rate and derived on its own that the appropriate unit for the calculated metric is {hats}/sec.
+- The unit specified in the constructor should describe the units appropriate for an individual measurement. This will sometimes differ from the units on the final reported metric. In this example, each measurement is a number of hats, so "{hats}" is the appropriate unit to pass in the constructor. The collection tool could have calculated the rate of change and derived on its own that the appropriate unit for the calculated rate metric is {hats}/sec.
 
 - When recording measurements of time, prefer units of seconds recorded as a floating point or double value.
 
@@ -394,9 +416,8 @@ Counter and Histogram tags can be specified in overloads of the <xref:System.Dia
 
 ```csharp
 s_hatsSold.Add(2,
-               new KeyValuePair<string, object>("product.color", "red"),
-               new KeyValuePair<string, object>("product.size", 12));
-
+               new KeyValuePair<string, object?>("product.color", "red"),
+               new KeyValuePair<string, object?>("product.size", 12));
 ```
 
 Replace the code of `Program.cs` and rerun the app and dotnet-counters as before:
@@ -420,11 +441,11 @@ class Program
             // Pretend our store has a transaction, every 100ms, that sells two size 12 red hats, and one size 19 blue hat.
             Thread.Sleep(100);
             s_hatsSold.Add(2,
-                           new KeyValuePair<string,object>("product.color", "red"),
-                           new KeyValuePair<string,object>("product.size", 12));
+                           new KeyValuePair<string,object?>("product.color", "red"),
+                           new KeyValuePair<string,object?>("product.size", 12));
             s_hatsSold.Add(1,
-                           new KeyValuePair<string,object>("product.color", "blue"),
-                           new KeyValuePair<string,object>("product.size", 19));
+                           new KeyValuePair<string,object?>("product.color", "blue"),
+                           new KeyValuePair<string,object?>("product.size", 19));
         }
     }
 }
@@ -436,11 +457,12 @@ Dotnet-counters now shows a basic categorization:
 Press p to pause, r to resume, q to quit.
     Status: Running
 
+Name                                                  Current Value
 [HatCo.Store]
-    hatco.store.hats_sold (Count / 1 sec)
-        product.color=blue,product.size=19                                 9
-        product.color=red,product.size=12                                 18
-
+    hatco.store.hats_sold (Count)
+        product.color product.size
+        blue          19                                     73
+        red           12                                    146
 ```
 
 For ObservableCounter and ObservableGauge, tagged measurements can be provided in the callback passed to the constructor:
@@ -467,9 +489,9 @@ class Program
         return new Measurement<int>[]
         {
             // pretend these measurements were read from a real queue somewhere
-            new Measurement<int>(6, new KeyValuePair<string,object>("customer.country", "Italy")),
-            new Measurement<int>(3, new KeyValuePair<string,object>("customer.country", "Spain")),
-            new Measurement<int>(1, new KeyValuePair<string,object>("customer.country", "Mexico")),
+            new Measurement<int>(6, new KeyValuePair<string,object?>("customer.country", "Italy")),
+            new Measurement<int>(3, new KeyValuePair<string,object?>("customer.country", "Spain")),
+            new Measurement<int>(1, new KeyValuePair<string,object?>("customer.country", "Mexico")),
         };
     }
 }
@@ -481,28 +503,36 @@ When run with dotnet-counters as before, the result is:
 Press p to pause, r to resume, q to quit.
     Status: Running
 
+Name                                                  Current Value
 [HatCo.Store]
     hatco.store.orders_pending
-        customer.country=Italy                                             6
-        customer.country=Mexico                                            1
-        customer.country=Spain                                             3
+        customer.country
+        Italy                                                 6
+        Mexico                                                1
+        Spain                                                 3
 ```
 
 ### Best practices
 
-- Although the API allows any object to be used as the tag value, numeric types and strings are anticipated by collection tools. Other types may or may not be
-  supported by a given collection tool.
+- Although the API allows any object to be used as the tag value, numeric types and strings are anticipated by collection tools. Other types may or may not be supported by a given collection tool.
 
-- We recommend tag names use lowercase dotted hierarichal names with '_' characters to separate multiple words in the same element. If tag names are
-  reused in different metrics or other telemetry records then they should have the same meaning and set of legal values everywhere they are used.
+- We recommend tag names follow the [OpenTelemetry naming guidelines](https://github.com/open-telemetry/semantic-conventions/blob/main/docs/general/metrics.md#general-guidelines),
+  which use lowercase dotted hierarchal names with '_' characters to separate multiple words in the same element. If tag names are reused in different metrics or other telemetry
+  records, then they should have the same meaning and set of legal values everywhere they are used.
+
+  Example tag names:
+
+  - `customer.country`
+  - `store.payment_method`
+  - `store.purchase_result`
 
 - Beware of having very large or unbounded combinations of tag values being recorded in practice. Although the .NET API implementation can handle it, collection tools will
   likely allocate storage for metric data associated with each tag combination and this could become very large. For example, it's fine if HatCo has 10 different
   hat colors and 25 hat sizes for up to 10*25=250 sales totals to track. However, if HatCo added a third tag that's a CustomerID for the sale and they sell to 100
   million customers worldwide, now there are now likely to be billions of different tag combinations being recorded. Most metric collection tools will either drop data
   to stay within technical limits or there can be large monetary costs to cover the data storage and processing. The implementation of each collection tool will determine
-  its limits, but likely less than 1000 combinations for one instrument is safe. Anything above 1000 combinations will require the collection tool to apply filtering or be engineered to operate at high scale.
-  Histogram implementations tend to use far more memory than other metrics, so safe limits could be 10-100 times lower. If you anticipate large number of unique tag combinations,
+  its limits, but likely less than 1000 combinations for one instrument is safe. Anything above 1000 combinations will require the collection tool to apply filtering or be engineered to operate at a high scale.
+  Histogram implementations tend to use far more memory than other metrics, so safe limits could be 10-100 times lower. If you anticipate a large number of unique tag combinations,
   then logs, transactional databases, or big data processing systems may be more appropriate solutions to operate at the needed scale.
 
 - For instruments that will have very large numbers of tag combinations, prefer using a smaller storage type to help reduce memory overhead. For example, storing the `short` for
@@ -519,10 +549,98 @@ Press p to pause, r to resume, q to quit.
 > [!NOTE]
 > OpenTelemetry refers to tags as 'attributes'. These are two different names for the same functionality.
 
+## Using Advice to customize Histogram instruments
+
+When using Histograms, it is the responsibility of the tool or library
+collecting the data to decide how best to represent the distribution of values
+that were recorded. A common strategy (and the [default mode when using
+OpenTelemetry](https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/metrics/sdk.md#explicit-bucket-histogram-aggregation))
+is to divide up the range of possible values into sub-ranges called buckets and
+report how many recorded values were in each bucket. For example a tool might
+divide numbers into three buckets, those less than 1, those between 1-10, and
+those greater than 10. If your app recorded the values 0.5, 6, 0.1, 12 then
+there would be two data points the first bucket, one in the second, and one in
+the 3rd.
+
+The tool or library collecting the Histogram data is responsible for defining
+the buckets it will use. The default bucket configuration when using
+OpenTelemetry is: `[ 0, 5, 10, 25, 50, 75, 100, 250, 500, 750, 1000, 2500, 5000,
+7500, 10000 ]`.
+
+The default values may not lead to the best granularity for every Histogram. For
+example, sub-second request durations would all fall into the `0` bucket.
+
+The tool or library collecting the Histogram data may offer mechanism(s) to
+allow users to customize the bucket configuration. For example, OpenTelemetry
+defines a [View
+API](https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/metrics/sdk.md#view).
+This however requires end user action and makes it the user's responsibility to
+understand the data distribution well enough to choose correct buckets.
+
+To improve the experience the `9.0.0` version of the
+`System.Diagnostics.DiagnosticSource` package introduced the
+(<xref:System.Diagnostics.Metrics.InstrumentAdvice`1>) API.
+
+The `InstrumentAdvice` API may be used by instrumentation authors to specify the
+set of recommended default bucket boundaries for a given Histogram. The tool or
+library collecting the Histogram data can then choose to use those values when
+configuring aggregation leading to a more seamless onboarding experience for
+users. This is supported in the [OpenTelemetry .NET SDK as of version
+1.10.0](https://github.com/open-telemetry/opentelemetry-dotnet/tree/main/docs/metrics/customizing-the-sdk#configuring-the-aggregation-of-a-histogram).
+
+> [!IMPORTANT]
+> In general more buckets will lead to more precise data for a given Histogram
+> but each bucket requires memory to store the aggregated details and there is
+> CPU cost to find the correct bucket when processing a measurement. It is
+> important to understand the tradeoffs between precision and CPU/memory
+> consumption when choosing the number of buckets to recommend via the
+> `InstrumentAdvice` API.
+
+The following code shows an example using the `InstrumentAdvice` API to set
+recommended default buckets.
+
+```csharp
+using System;
+using System.Diagnostics.Metrics;
+using System.Threading;
+
+class Program
+{
+    static Meter s_meter = new Meter("HatCo.Store");
+    static Histogram<double> s_orderProcessingTime = s_meter.CreateHistogram<double>(
+        name: "hatco.store.order_processing_time",
+        unit: "s",
+        description: "Order processing duration",
+        advice: new InstrumentAdvice<double> { HistogramBucketBoundaries = [0.01, 0.05, 0.1, 0.5, 1, 5] });
+
+    static Random s_rand = new Random();
+
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Press any key to exit");
+        while (!Console.KeyAvailable)
+        {
+            // Pretend our store has one transaction each 100ms
+            Thread.Sleep(100);
+
+            // Pretend that we measured how long it took to do the transaction (for example we could time it with Stopwatch)
+            s_orderProcessingTime.Record(s_rand.Next(5, 15) / 1000.0);
+        }
+    }
+}
+```
+
+### Additional information
+
+For more details about explicit bucket Histograms in OpenTelemetry see:
+
+* [Why Histograms?](https://opentelemetry.io/blog/2023/why-histograms/)
+
+* [Histograms vs Summaries](https://opentelemetry.io/blog/2023/histograms-vs-summaries/)
+
 ## Test custom metrics
 
-Its possible to test any custom metrics you add using <xref:Microsoft.Extensions.Telemetry.Testing.Metering.MetricCollector%601>. This type makes it easy to record the measurements
-from specific instruments and assert the values were correct.
+Its possible to test any custom metrics you add using <xref:Microsoft.Extensions.Diagnostics.Metrics.Testing.MetricCollector%601>. This type makes it easy to record the measurements from specific instruments and assert the values were correct.
 
 ### Test with dependency injection
 

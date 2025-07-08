@@ -30,42 +30,42 @@ The following table lists the UnifiedPOS devices with their equivalent POS for .
 
 | UnifiedPOS Device                         | Interface Class    | Basic Class             | Base Class       |
 |-------------------------------------------|--------------------|-------------------------|------------------|
-| Belt                                      | Belt               | BeltBasic               |
-| Biometrics                                | Biometrics         | BiometricsBasic         |
-| Bill Acceptor                             | BillAcceptor       | BillAcceptorBasic       |
-| Bill Dispenser                            | BillDispenser      | BillDispenserBasic      |
-| Bump Bar                                  | BumpBar            | BumpBarBasic            |
-| Cash Changer                              | CashChanger        | CashChangerBasic        |
+| Belt                                      | Belt               | BeltBasic               |                  |
+| Biometrics                                | Biometrics         | BiometricsBasic         |                  |
+| Bill Acceptor                             | BillAcceptor       | BillAcceptorBasic       |                  |
+| Bill Dispenser                            | BillDispenser      | BillDispenserBasic      |                  |
+| Bump Bar                                  | BumpBar            | BumpBarBasic            |                  |
+| Cash Changer                              | CashChanger        | CashChangerBasic        |                  |
 | Cash Drawer                               | CashDrawer         | CashDrawerBasic         | CashDrawerBase   |
-| CAT - Credit Authorization Terminal       | Cat                | CatBasic                |
+| CAT - Credit Authorization Terminal       | Cat                | CatBasic                |                  |
 | Check Scanner                             | CheckScanner       | CheckScannerBasic       | CheckScannerBase |
-| Coin Acceptor                             | CoinAcceptor       | CoinAcceptorBasic       |
-| Coin Dispenser                            | CoinDispenser      | CoinDispenserBasic      |
-| Electronic Journal                        | ElectronicJournal  | ElectronicJournalBasic  |
-| Electronic Value Reader / Writer          | ElectronicValueRW  | ElectronicValueRWBasic  |
-| Fiscal Printer                            | FiscalPrinter      | FiscalPrinterBasic      |
-| Gate                                      | Gate               | GateBasic               |
-| Hard Totals                               | HardTotals         | HardTotalsBasic         |
-| Image Scanner                             | ImageScanner       | ImageScannerBasic       |
-| Item Dispenser                            | ItemDispenser      | ItemDispenserBasic      |
-| Keylock                                   | Keylock            | KeylockBasic            |
-| Lights                                    | Lights             | LightsBasic             |
+| Coin Acceptor                             | CoinAcceptor       | CoinAcceptorBasic       |                  |
+| Coin Dispenser                            | CoinDispenser      | CoinDispenserBasic      |                  |
+| Electronic Journal                        | ElectronicJournal  | ElectronicJournalBasic  |                  |
+| Electronic Value Reader / Writer          | ElectronicValueRW  | ElectronicValueRWBasic  |                  |
+| Fiscal Printer                            | FiscalPrinter      | FiscalPrinterBasic      |                  |
+| Gate                                      | Gate               | GateBasic               |                  |
+| Hard Totals                               | HardTotals         | HardTotalsBasic         |                  |
+| Image Scanner                             | ImageScanner       | ImageScannerBasic       |                  |
+| Item Dispenser                            | ItemDispenser      | ItemDispenserBasic      |                  |
+| Keylock                                   | Keylock            | KeylockBasic            |                  |
+| Lights                                    | Lights             | LightsBasic             |                  |
 | Line Display                              | LineDisplay        | LineDisplayBasic        | LineDisplayBase  |
-| MICR - Magnetic Ink Character Recognition | Micr               | MicrBasic               |
-| Motion Sensor                             | MotionSensor       | MotionSensorBasic       |
+| MICR - Magnetic Ink Character Recognition | Micr               | MicrBasic               |                  |
+| Motion Sensor                             | MotionSensor       | MotionSensorBasic       |                  |
 | MSR - Magnetic Stripe Reader              | Msr                | MsrBasic                | MsrBase          |
 | PIN Pad                                   | PinPad             | PinPadBasic             | PinPadBase       |
-| Point Card Reader / Writer                | PointCardRW        | PointCardRWBasic        |
+| Point Card Reader / Writer                | PointCardRW        | PointCardRWBasic        |                  |
 | POS Keyboard                              | PosKeyboard        | PosKeyboardBasic        | PosKeyboardBase  |
-| POS Power                                 | PosPower           | PosPowerBasic           |
+| POS Power                                 | PosPower           | PosPowerBasic           |                  |
 | POS Printer                               | PosPrinter         | PosPrinterBasic         | PosPrinterBase   |
-| Remote Order Display                      | RemoteOrderDisplay | RemoteOrderDisplayBasic |
+| Remote Order Display                      | RemoteOrderDisplay | RemoteOrderDisplayBasic |                  |
 | RFID Scanner                              | RFIDScanner        | RFIDScannerBasic        | RFIDScannerBase  |
-| Scale                                     | Scale              | ScaleBasic              |
+| Scale                                     | Scale              | ScaleBasic              |                  |
 | Scanner (Bar Code Reader)                 | Scanner            | ScannerBasic            | ScannerBase      |
-| Signature Capture                         | SignatureCapture   | SignatureCaptureBasic   |
-| Smart Card Reader / Writer                | SmartCardRW        | SmartCardRWBasic        |
-| Tone Indicator                            | ToneIndicator      | ToneIndicatorBasic      |
+| Signature Capture                         | SignatureCapture   | SignatureCaptureBasic   |                  |
+| Smart Card Reader / Writer                | SmartCardRW        | SmartCardRWBasic        |                  |
+| Tone Indicator                            | ToneIndicator      | ToneIndicatorBasic      |                  |
 
 ## See Also
 

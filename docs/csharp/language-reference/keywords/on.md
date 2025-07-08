@@ -1,6 +1,6 @@
 ---
 description: "on keyword - C# Reference"
-title: "on keyword - C# Reference"
+title: "on keyword"
 ms.date: 07/20/2015
 f1_keywords: 
   - "on_CSharpKeyword"
@@ -21,5 +21,4 @@ The following example shows the use of `on` in a `join` clause.
 
 ## See also
 
-- [C# Reference](../index.md)
 - [Language Integrated Query (LINQ)](../../linq/index.md)

@@ -13,7 +13,7 @@ Specifies whether the runtime automatically fixes incorrect platform invoke decl
 
 [**\<configuration>**](../configuration-element.md)\
 &nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;**\<NetFx40_PInvokeStackResilience>**  
+&nbsp;&nbsp;&nbsp;&nbsp;**\<NetFx40_PInvokeStackResilience>**
 
 ## Syntax
 
@@ -65,7 +65,7 @@ This element can be used only in the application configuration file.
 
 ## Example
 
-The following example shows how to opt into increased resilience against incorrect platform invoke declarations for an application, at the cost of slower transitions between managed and unmanaged code.
+The following example shows how to opt in to increased resilience against incorrect platform invoke declarations for an application, at the cost of slower transitions between managed and unmanaged code.
 
 ```xml
 <configuration>

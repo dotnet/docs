@@ -15,20 +15,16 @@ ms.assetid: 0f8bf8fa-b993-478f-87ab-1a1a7976d298
 ---
 # Security Issues in Reflection Emit
 
-.NET Framework provides three ways to emit Microsoft intermediate language (MSIL), each with its own security issues:
+.NET Framework provides three ways to emit common intermediate language (CIL), each with its own security issues:
 
-- [Dynamic assemblies](#Dynamic_Assemblies)
-
-- [Anonymously hosted dynamic methods](#Anonymously_Hosted_Dynamic_Methods)
-
-- [Dynamic methods associated with existing assemblies](#Dynamic_Methods_Associated_with_Existing_Assemblies)
+- [Dynamic Assemblies](#dynamic-assemblies)
+- [Anonymously Hosted Dynamic Methods](#anonymously-hosted-dynamic-methods)
+- [Dynamic Methods Associated with Existing Assemblies](#dynamic-methods-associated-with-existing-assemblies)
 
  Regardless of the way you generate dynamic code, executing the generated code requires all the permissions that are required by the types and methods the generated code uses.
 
 > [!NOTE]
-> The permissions that are required for reflecting on code and emitting code have changed with succeeding releases of .NET Framework. See [Version Information](#Version_Information), later in this article.
-
-<a name="Dynamic_Assemblies"></a>
+> The permissions that are required for reflecting on code and emitting code have changed with succeeding releases of .NET Framework. See [Version Information](#version-information), later in this article.
 
 ## Dynamic Assemblies
 
@@ -56,8 +52,6 @@ ms.assetid: 0f8bf8fa-b993-478f-87ab-1a1a7976d298
 
 - Debug symbols are not generated. (`Internet` and `LocalIntranet` permission sets do not include the necessary permissions.)
 
-<a name="Anonymously_Hosted_Dynamic_Methods"></a>
-
 ## Anonymously Hosted Dynamic Methods
 
  Anonymously hosted dynamic methods are created by using the two <xref:System.Reflection.Emit.DynamicMethod> constructors that do not specify an associated type or module, <xref:System.Reflection.Emit.DynamicMethod.%23ctor%28System.String%2CSystem.Type%2CSystem.Type%5B%5D%29> and <xref:System.Reflection.Emit.DynamicMethod.%23ctor%28System.String%2CSystem.Type%2CSystem.Type%5B%5D%2CSystem.Boolean%29>. These constructors place the dynamic methods in a system-provided, fully trusted, security-transparent assembly. No permissions are required to use these constructors or to emit code for the dynamic methods.
@@ -65,7 +59,7 @@ ms.assetid: 0f8bf8fa-b993-478f-87ab-1a1a7976d298
  Instead, when an anonymously hosted dynamic method is created, the call stack is captured. When the method is constructed, security demands are made against the captured call stack.
 
 > [!NOTE]
-> Conceptually, demands are made during the construction of the method. That is, demands could be made as each MSIL instruction is emitted. In the current implementation, all demands are made when the <xref:System.Reflection.Emit.DynamicMethod.CreateDelegate%2A?displayProperty=nameWithType> method is called or when the just-in-time (JIT) compiler is invoked, if the method is invoked without calling <xref:System.Reflection.Emit.DynamicMethod.CreateDelegate%2A>.
+> Conceptually, demands are made during the construction of the method. That is, demands could be made as each CIL instruction is emitted. In the current implementation, all demands are made when the <xref:System.Reflection.Emit.DynamicMethod.CreateDelegate%2A?displayProperty=nameWithType> method is called or when the just-in-time (JIT) compiler is invoked, if the method is invoked without calling <xref:System.Reflection.Emit.DynamicMethod.CreateDelegate%2A>.
 
  If the application domain permits it, anonymously hosted dynamic methods can skip JIT visibility checks, subject to the following restriction: The nonpublic types and members accessed by an anonymously hosted dynamic method must be in assemblies whose grant sets are equal to, or subsets of, the grant set of the emitting call stack. This restricted ability to skip JIT visibility checks is enabled if the application domain grants <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=nameWithType> flag.
 
@@ -91,8 +85,6 @@ ms.assetid: 0f8bf8fa-b993-478f-87ab-1a1a7976d298
 
 > [!NOTE]
 > Dynamic methods do not support debug symbols.
-
-<a name="Dynamic_Methods_Associated_with_Existing_Assemblies"></a>
 
 ## Dynamic Methods Associated with Existing Assemblies
 
@@ -124,7 +116,7 @@ ms.assetid: 0f8bf8fa-b993-478f-87ab-1a1a7976d298
 ### Generating Dynamic Methods from Partially Trusted Code
 
 > [!NOTE]
-> The recommended way to generate dynamic methods from partially trusted code is to use [anonymously hosted dynamic methods](#Anonymously_Hosted_Dynamic_Methods).
+> The recommended way to generate dynamic methods from partially trusted code is to use [Anonymously Hosted Dynamic Methods](#anonymously-hosted-dynamic-methods).
 
  Consider the conditions in which an assembly with Internet permissions can generate a dynamic method and execute it:
 
@@ -138,8 +130,6 @@ ms.assetid: 0f8bf8fa-b993-478f-87ab-1a1a7976d298
 
 > [!NOTE]
 > Dynamic methods do not support debug symbols.
-
-<a name="Version_Information"></a>
 
 ## Version Information
 
@@ -161,4 +151,4 @@ ms.assetid: 0f8bf8fa-b993-478f-87ab-1a1a7976d298
 ## See also
 
 - [Security Considerations for Reflection](security-considerations-for-reflection.md)
-- [Emitting Dynamic Methods and Assemblies](emitting-dynamic-methods-and-assemblies.md)
+- [Emitting Dynamic Methods and Assemblies](../../fundamentals/reflection/emitting-dynamic-methods-and-assemblies.md)

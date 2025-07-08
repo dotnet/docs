@@ -88,7 +88,7 @@ Sequence w = new Sequence
 
 ## Extending Available Expressions with Custom Expression Activities
 
- Expressions in [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] are extensible allowing for additional expression activities to be created. The following example shows an activity that returns a sum of three integer values.
+ Expressions in .NET Framework 4.6.1 are extensible allowing for additional expression activities to be created. The following example shows an activity that returns a sum of three integer values.
 
 ```csharp
 using System;

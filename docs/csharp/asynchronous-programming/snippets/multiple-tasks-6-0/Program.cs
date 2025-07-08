@@ -25,7 +25,7 @@ IEnumerable<string> s_urlList = new string[]
     "https://learn.microsoft.com/system-center",
     "https://learn.microsoft.com/visualstudio",
     "https://learn.microsoft.com/windows",
-    "https://learn.microsoft.com/xamarin"
+    "https://learn.microsoft.com/maui"
 };
 
 await SumPageSizesAsync();
@@ -71,7 +71,7 @@ static async Task<int> ProcessUrlAsync(string url, HttpClient client)
 // https://learn.microsoft.com/enterprise-mobility-security          30,903
 // https://learn.microsoft.com/microsoft-365                         67,867
 // https://learn.microsoft.com/windows                               26,816
-// https://learn.microsoft.com/xamarin                               57,958
+// https://learn.microsoft.com/maui                               57,958
 // https://learn.microsoft.com/dotnet                                78,706
 // https://learn.microsoft.com/graph                                 48,277
 // https://learn.microsoft.com/dynamics365                           49,042

@@ -22,30 +22,34 @@ The downside to strong naming is that .NET Framework on Windows enables strict l
 </configuration>
 ```
 
-When .NET developers complain about strong naming, what they're usually complaining about is strict assembly loading. Fortunately, this issue is isolated to .NET Framework. .NET 5+, .NET Core, Xamarin, UWP, and most other .NET implementations don't have strict assembly loading, which is the main downside of strong naming.
+When .NET developers complain about strong naming, what they're usually complaining about is strict assembly loading. Fortunately, this issue is isolated to .NET Framework. .NET 5+, .NET Core, UWP, and most other .NET implementations don't have strict assembly loading, which is the main downside of strong naming.
 
-One important aspect of strong naming is that it's viral: a strong named assembly can only reference other strong named assemblies. If your library isn't strong named, then you have excluded developers who are building an application or library that needs strong naming from using it.
+One important aspect of strong naming on .NET Framework is that it's viral: a strong-named assembly can only reference other strong-named assemblies. If your library isn't strong named, then .NET Framework apps and libraries that need strong naming can't use it.
 
-The benefits of strong naming are:
+The benefits of strong naming on .NET Framework are:
 
 1. The assembly can be referenced and used by other strong-named assemblies.
 2. The assembly can be stored in the Global Assembly Cache (GAC).
 3. The assembly can be loaded side by side with other versions of the assembly. Side-by-side assembly loading is commonly required by applications with plug-in architectures.
 
+Strong naming has no benefits on .NET Core/5+. C# compiler produces CS8002 warning for strong-named assemblies referencing non-strong named assemblies. It is fine to suppress this warning for libraries that target .NET Core/5+ only.
+
 ## Create strong named .NET libraries
 
-You should strong name your open-source .NET libraries. Strong naming an assembly ensures the most people can use it, and strict assembly loading only affects .NET Framework.
+You should strong name your open-source .NET libraries if their targets include .NET Framework or .NET Standard. Strong naming is not required for libraries that target .NET Core/5+ only.
 
 > [!NOTE]
 > This guidance is specific to publicly distributed .NET libraries, such as .NET libraries published on NuGet.org. Strong naming is not required by most .NET applications and should not be done by default.
 
 ✔️ CONSIDER strong naming your library's assemblies.
 
-✔️ CONSIDER adding the strong naming key to your source control system.
+✔️ CONSIDER adding the strong naming key pair (public + private) to your source control system.
 
-> A publicly available key lets developers modify and recompile your library source code with the same key.
+> A publicly available key pair lets developers modify and recompile your library source code with the same key.
 >
-> You shouldn't make the strong naming key public if it has been used in the past to give special permissions in [partial-trust scenarios](/previous-versions/dotnet/framework/code-access-security/using-libraries-from-partially-trusted-code). Otherwise, you might compromise existing environments.
+> You shouldn't make the strong naming key pair public if it has been used in the past to give special permissions in [partial-trust scenarios](/previous-versions/dotnet/framework/code-access-security/using-libraries-from-partially-trusted-code). Otherwise, you might compromise existing environments.
+>
+> If you can't check in the public + private key pair, then check in the public key and use [public signing](../../csharp/language-reference/compiler-options/security.md#publicsign) for regular builds. Public signing still allows developers to recompile and use your library in most scenarios.
 
 > [!IMPORTANT]
 > When the identity of the publisher of the code is desired, [Authenticode](/windows-hardware/drivers/install/authenticode) and [NuGet Package Signing](/nuget/create-packages/sign-a-package) are recommended. Code Access Security (CAS) should not be used as a security mitigation.

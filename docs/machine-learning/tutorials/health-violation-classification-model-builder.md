@@ -31,11 +31,11 @@ For a list of prerequisites and installation instructions, visit the [Model Buil
 
 ## Model Builder multiclass classification overview
 
-This sample creates a C# .NET Core console application that categorizes the risk of health violations using a machine learning model built with Model Builder. You can find the source code for this tutorial at the [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples/tree/main/samples/modelbuilder/MulticlassClassification_RestaurantViolations) GitHub repository.
+This sample creates a C# console application that categorizes the risk of health violations using a machine learning model built with Model Builder. You can find the source code for this tutorial at the [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples/tree/main/samples/modelbuilder/MulticlassClassification_RestaurantViolations) GitHub repository.
 
 ## Create a console application
 
-1. Create a **C# .NET Core console application** called "RestaurantViolations".
+Create a **C# console application** called "RestaurantViolations".
 
 ## Prepare and understand the data
 
@@ -57,11 +57,11 @@ Each row in the dataset contains information regarding violations observed durin
 
 The `label` is the column you want to predict. When performing a classification task, the goal is to assign a category (text or numerical). In this classification scenario, the severity of the violation is assigned the value of low, moderate, or high risk. Therefore, the **RiskCategory** is the label. The `features` are the inputs you give the model to predict the `label`. In this case, the **InspectionType** and **ViolationDescription** are used as features or inputs to predict the **RiskCategory**.
 
-## Create Model Builder Config File
+## Create Model Builder config file
 
 When first adding Model Builder to the solution it will prompt you to create an `mbconfig` file. The `mbconfig` file keeps track of everything you do in Model Builder to allow you to reopen the session.
 
-1. In **Solution Explorer**, right-click the *RestaurantViolations* project, and select **Add** > **Machine Learning Model...**.
+1. In **Solution Explorer**, right-click the *RestaurantViolations* project, and select **Add** > **Machine Learning Model**.
 1. Name the `mbconfig` project **RestaurantViolationsPrediction**, and click the **Add** button.
 
 ## Choose a scenario

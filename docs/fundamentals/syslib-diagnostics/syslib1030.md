@@ -2,6 +2,8 @@
 title: SYSLIB1030 warning
 description: Learn about the diagnostic that generates compile-time warning SYSLIB1030.
 ms.date: 05/07/2021
+f1_keywords:
+  - syslib1030
 ---
 
 # SYSLIB1030: `System.Text.Json` source generator did not generate output for type

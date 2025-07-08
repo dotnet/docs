@@ -2,14 +2,14 @@
 description: "Learn more about: RtcState Class"
 title: "RtcState Class (System.Net)"
 ms.date: "11/01/2019"
-ms.technology: "dotnet-networking"
-topic_type: 
+ms.subservice: "networking"
+topic_type:
   - "apiref"
-api_name: 
+api_name:
   - "System.Net.RtcState"
-api_location: 
+api_location:
   - "System.dll"
-api_type: 
+api_type:
   - "Assembly"
 ms.assetid: 6f0b8902-f31c-4ab9-a8c9-de43228995ec
 ---
@@ -18,8 +18,8 @@ ms.assetid: 6f0b8902-f31c-4ab9-a8c9-de43228995ec
 The `RtcState` class represents state data for a real-time communication (RTC) request.
 
 ## Syntax
-  
-```csharp  
+
+```csharp
 internal class RtcState
 ```
 

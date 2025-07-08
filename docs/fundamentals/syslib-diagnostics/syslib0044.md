@@ -2,6 +2,8 @@
 title: SYSLIB0044 warning - AssemblyName.CodeBase and AssemblyName.EscapedCodeBase are obsolete
 description: Learn about the obsoletion of AssemblyName.CodeBase and AssemblyName.EscapedCodeBase that generates compile-time warning SYSLIB0044.
 ms.date: 11/07/2022
+f1_keywords:
+  - syslib0044
 ---
 # SYSLIB0044: AssemblyName.CodeBase and AssemblyName.EscapedCodeBase are obsolete
 

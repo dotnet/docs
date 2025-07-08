@@ -1,9 +1,9 @@
 ---
 title: Task expressions
 description: Learn about support in the F# programming language for writing task expressions, which author .NET tasks directly.
-ms.date: 10/29/2021
+ms.date: 05/25/2025
 ---
-# Tasks expressions
+# Task expressions
 
 This article describes support in F# for task expressions, which are similar to [async expressions](async-expressions.md) but allow you to author .NET tasks directly. Like async expressions, task expressions execute code asynchronously, that is, without blocking execution of other work.
 
@@ -55,6 +55,35 @@ Within task expressions, `use` bindings can bind to values of type <xref:System.
 
 In addition to `let!`, you can use `use!` to perform asynchronous bindings. The difference between `let!` and `use!` is the same as the difference between `let` and `use`. For `use!`, the object is disposed of at the close of the current scope. Note that in F# 6, `use!` does not allow a value to be initialized to null, even though `use` does.
 
+```fsharp
+open System
+open System.IO
+open System.Security.Cryptography
+task {
+    // use IDisposable
+    use httpClient = new Net.Http.HttpClient()
+    // use! Task<IDisposable>
+    use! exampleDomain = httpClient.GetAsync "https://example.com/data.enc"
+   
+    // use IDisposable
+    use aes = Aes.Create()
+    aes.KeySize <- 256
+    aes.GenerateIV()
+    aes.GenerateKey()
+    // do! Task
+    do! File.WriteAllTextAsync("key.iv.txt", $"Key: {Convert.ToBase64String aes.Key}\nIV: {Convert.ToBase64String aes.IV}")
+
+    // use IAsyncDisposable
+    use outputStream = File.Create "secret.enc"
+    // use IDisposable
+    use encryptor = aes.CreateEncryptor()
+    // use IAsyncDisposable
+    use cryptoStream = new CryptoStream(outputStream, encryptor, CryptoStreamMode.Write)
+    // do! Task
+    do! exampleDomain.Content.CopyToAsync cryptoStream
+}
+```
+
 ## Value Tasks
 
 Value tasks are structs used to avoid allocations in task-based programming. A value task is an ephemeral value that's turned into a real task by using `.AsTask()`.
@@ -66,6 +95,28 @@ let makeTask() =
     task { return 1 }
 
 makeTask() |> ValueTask<int>
+```
+
+## `and!` bindings (starting from F# 10)
+
+Within task expressions, it is possible to concurrently await for multiple asynchronous operations (`Task<'T>`, `ValueTask<'T>`, `Async<'T>` etc). Compare:
+
+```fsharp
+// We'll wait for x to resolve and then for y to resolve. Overall execution time is sum of two execution times.
+let getResultsSequentially() =
+    task {
+        let! x = getX()
+        let! y = getY()
+        return x, y
+    }
+
+// x and y will be awaited concurrently. Overall execution time is the time of the slowest operation.
+let getResultsConcurrently() =
+    task {
+        let! x = getX()
+        and! y = getY()
+        return x, y
+    }
 ```
 
 ## Adding cancellation tokens and cancellation checks

@@ -93,15 +93,21 @@ module rec RecursiveModule =
     exception DontSqueezeTheBananaException of Banana
 
     type Banana(orientation : Orientation) =
-        member val IsPeeled = false with get, set
         member val Orientation = orientation with get, set
-        member val Sides: PeelState list = [ Unpeeled; Unpeeled; Unpeeled; Unpeeled] with get, set
+        member val Sides: PeelState list = [ Unpeeled; Unpeeled; Unpeeled; Unpeeled ] with get, set
 
-        member self.Peel() = BananaHelpers.peel self // Note the dependency on the BananaHelpers module.
-        member self.SqueezeJuiceOut() = raise (DontSqueezeTheBananaException self) // This member depends on the exception above.
+        member self.IsPeeled =
+            self.Sides |> List.forall ((=) Peeled)
+
+        member self.Peel() =
+            BananaHelpers.peel self
+            |> fun peeledSides -> self.Sides <- peeledSides
+
+        member self.SqueezeJuiceOut() =
+            raise (DontSqueezeTheBananaException self)
 
     module BananaHelpers =
-        let peel (b: Banana) =
+        let peel (banana: Banana) =
             let flip (banana: Banana) =
                 match banana.Orientation with
                 | Up ->
@@ -115,9 +121,7 @@ module rec RecursiveModule =
                              | Unpeeled -> Peeled
                              | Peeled -> Peeled)
 
-            match b.Orientation with
-            | Up ->   b |> flip |> peelSides
-            | Down -> b |> peelSides
+            banana |> flip |> peelSides
 ```
 
 Note that the exception `DontSqueezeTheBananaException` and the class `Banana` both refer to each other.  Additionally, the module `BananaHelpers` and the class `Banana` also refer to each other.  This would not be possible to express in F# if you removed the `rec` keyword from the `RecursiveModule` module.

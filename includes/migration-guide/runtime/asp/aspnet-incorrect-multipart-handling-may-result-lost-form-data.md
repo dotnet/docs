@@ -10,7 +10,15 @@ Starting with applications running on .NET Framework 4.8, when targeting .NET Fr
 
 This behavior can also be explicitly controlled with an `appSetting`:
 
-<pre><code class="lang-xml">&lt;configuration&gt;&#13;&#10;&lt;appSettings&gt;&#13;&#10;...&#13;&#10;&lt;add key=&quot;aspnet:UseLegacyMultiValueHeaderHandling&quot;  value=&quot;true&quot;/&gt;&#13;&#10;...&#13;&#10;&lt;/appSettings&gt;&#13;&#10;&lt;/configuration&gt;&#13;&#10;</code></pre>
+```xml
+<configuration>
+<appSettings>
+...
+<add key="aspnet:UseLegacyMultiValueHeaderHandling"  value="true"/>
+...
+</appSettings>
+</configuration>
+```
 
 | Name    | Value       |
 |:--------|:------------|

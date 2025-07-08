@@ -1,31 +1,66 @@
-- name: Unmanaged API Reference
+items:
+- name: Unmanaged API reference
   href: index.md
+- name: Common data types
+  href: common-data-types-unmanaged-api-reference.md
+- name: ALink API
+  href: alink/
+- name: Authenticode
   items:
-  - name: Common Data Types
-    href: common-data-types-unmanaged-api-reference.md
-  - name: ALink API
-    href: alink/
-  - name: Authenticode
-    href: authenticode/
-  - name: Constants
-    href: constants-unmanaged-api-reference.md
-  - name: Debugging
-    href: debugging/
-  - name: Diagnostics Symbol Store
-    href: diagnostics/
-  - name: Fusion
-    href: fusion/
-  - name: Hosting
-    href: hosting/
-  - name: Metadata
-    href: metadata/
-  - name: Profiling
-    href: profiling/
-  - name: Strong Naming
-    href: strong-naming/
-  - name: WMI and Performance Counters
-    href: wmi/
-  - name: Tlbexp Helper Functions
-    href: tlbexp/
-  - name: GUID_ManagedName Attribute
-    href: guid-managedname-attribute.md
+  - name: Overview
+    href: index.md
+    displayName: authenticode
+  - name: _AxlGetIssuerPublicKeyHash function
+    href: authenticode/axlgetissuerpublickeyhash-function.md
+  - name: _AxlPublicKeyBlobToPublicKeyToken function
+    href: authenticode/axlpublickeyblobtopublickeytoken-function.md
+  - name: _AxlRSAKeyValueToPublicKeyToken function
+    href: authenticode/axlrsakeyvaluetopublickeytoken-function.md
+  - name: CertFreeAuthenticodeSignerInfo function
+    href: authenticode/certfreeauthenticodesignerinfo-function.md
+  - name: CertFreeAuthenticodeTimestamperInfo function
+    href: authenticode/certfreeauthenticodetimestamperinfo-function.md
+  - name: CertTimestampAuthenticodeLicense function
+    href: authenticode/certtimestampauthenticodelicense-function.md
+  - name: CertVerifyAuthenticodeLicense function
+    href: authenticode/certverifyauthenticodelicense-function.md
+  - name: AXL_AUTHENTICODE_SIGNER_INFO structure
+    href: authenticode/axl-authenticode-signer-info-structure.md
+  - name: AXL_AUTHENTICODE_TIMESTAMPER_INFO structure
+    href: authenticode/axl-authenticode-timestamper-info-structure.md
+- name: Constants
+  href: constants-unmanaged-api-reference.md
+- name: Debugging
+  href: debugging/
+- name: Diagnostics symbol store
+  href: diagnostics/
+- name: Fusion
+  href: fusion/
+- name: Hosting
+  href: hosting/
+- name: Metadata
+  href: metadata/
+- name: Profiling
+  href: profiling/
+- name: Strong naming
+  href: strong-naming/
+- name: WMI and performance counters
+  href: wmi/
+- name: Tlbexp helper functions
+  items:
+  - name: Overview
+    href: tlbexp/index.md
+    displayName: tlbexp
+  - name: GetTypeLibInfo function
+    href: tlbexp/gettypelibinfo-function.md
+  - name: LoadTypeLibWithResolver function
+    href: tlbexp/loadtypelibwithresolver-function.md
+  - name: ITypeLibResolver interface
+    items:
+    - name: Overview
+      href: tlbexp/itypelibresolver-interface.md
+      displayName: itypelibresolver
+    - name: ResolveTypeLib method
+      href: tlbexp/resolvetypelib-method.md
+- name: GUID_ManagedName attribute
+  href: guid-managedname-attribute.md

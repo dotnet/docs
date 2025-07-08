@@ -3,20 +3,19 @@ title: Use scoped services within a BackgroundService
 description: Learn how to use scoped services within a BackgroundService in .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 03/13/2023
+ms.date: 05/27/2025
 ms.topic: tutorial
-zone_pivot_groups: dotnet-version
 ---
 
 # Use scoped services within a `BackgroundService`
 
-When you register implementations of <xref:Microsoft.Extensions.Hosting.IHostedService> using any of the <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionHostedServiceExtensions.AddHostedService%2A> extension methods - the service is registered as a singleton. There may be scenarios where you'd like to rely on a scoped service. For more information, see [Dependency injection in .NET: Service lifetimes](dependency-injection.md#service-lifetimes).
+When you register implementations of <xref:Microsoft.Extensions.Hosting.IHostedService> using any of the <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionHostedServiceExtensions.AddHostedService%2A> extension methods—the service is registered as a singleton. There might be scenarios where you'd like to rely on a scoped service. For more information, see [Dependency injection in .NET: Service lifetimes](dependency-injection.md#service-lifetimes).
 
 In this tutorial, you learn how to:
 
 > [!div class="checklist"]
 >
-> - Resolve scoped dependencies in a singleton <xref:Microsoft.Extensions.Hosting.BackgroundService>.
+> - Correctly resolve scoped dependencies in a singleton <xref:Microsoft.Extensions.Hosting.BackgroundService>.
 > - Delegate work to a scoped service.
 > - Implement an `override` of <xref:Microsoft.Extensions.Hosting.BackgroundService.StopAsync(System.Threading.CancellationToken)?displayProperty=nameWithType>.
 
@@ -24,88 +23,40 @@ In this tutorial, you learn how to:
 
 ## Prerequisites
 
-:::zone target="docs" pivot="dotnet-7-0"
-
-- The [.NET 7.0 SDK or later](https://dotnet.microsoft.com/download/dotnet/7.0)
+- The [.NET 8.0 SDK or later](https://dotnet.microsoft.com/download/dotnet/8.0)
 - A .NET integrated development environment (IDE)
   - Feel free to use [Visual Studio](https://visualstudio.microsoft.com)
-
-:::zone-end
-:::zone target="docs" pivot="dotnet-6-0"
-
-- The [.NET 6.0 SDK or later](https://dotnet.microsoft.com/download/dotnet/6.0)
-- A .NET integrated development environment (IDE)
-  - Feel free to use [Visual Studio](https://visualstudio.microsoft.com)
-
-:::zone-end
 
 <!-- ## Create a new project -->
 [!INCLUDE [file-new-worker](includes/file-new-worker.md)]
 
 ## Create scoped services
 
-To use [scoped services](dependency-injection.md#scoped) within a `BackgroundService`, create a scope. No scope is created for a hosted service by default. The scoped background service contains the background task's logic.
+To use [scoped services](dependency-injection.md#scoped) within a `BackgroundService`, create a scope with the <xref:Microsoft.Extensions.DependencyInjection.IServiceScopeFactory.CreateScope?displayProperty=nameWithType> API. No scope is created for a hosted service by default. The scoped background service contains the background task's logic.
 
-:::zone target="docs" pivot="dotnet-7-0"
+:::code source="snippets/workers/scoped-service/IScopedProcessingService.cs":::
 
-:::code source="snippets/workers/7.0/scoped-service/IScopedProcessingService.cs":::
+The preceding interface defines a single `DoWorkAsync` method. Create an implementation in a new class named *DefaultScopedProcessingService.cs*:
 
-:::zone-end
-:::zone target="docs" pivot="dotnet-6-0"
+:::code source="snippets/workers/scoped-service/DefaultScopedProcessingService.cs":::
 
-:::code source="snippets/workers/6.0/scoped-service/IScopedProcessingService.cs":::
-
-:::zone-end
-
-The preceding interface defines a single `DoWorkAsync` method. To define the default implementation:
-
-- The service is asynchronous. The `DoWorkAsync` method returns a `Task`. For demonstration purposes, a delay of ten seconds is awaited in the `DoWorkAsync` method.
-- An <xref:Microsoft.Extensions.Logging.ILogger> is injected into the service.:
-
-:::zone target="docs" pivot="dotnet-7-0"
-
-:::code source="snippets/workers/7.0/scoped-service/DefaultScopedProcessingService.cs":::
-
-:::zone-end
-:::zone target="docs" pivot="dotnet-6-0"
-
-:::code source="snippets/workers/6.0/scoped-service/DefaultScopedProcessingService.cs":::
-
-:::zone-end
-
-The hosted service creates a scope to resolve the scoped background service to call its `DoWorkAsync` method. `DoWorkAsync` returns a `Task`, which is awaited in `ExecuteAsync`:
+- An <xref:Microsoft.Extensions.Logging.ILogger> is injected into the service using a primary constructor.
+- The `DoWorkAsync` method returns a `Task` and accepts the <xref:System.Threading.CancellationToken>.
+  - The method logs the instance identifier—the `_instanceId` is assigned whenever the class is instantiated.
 
 ## Rewrite the Worker class
 
 Replace the existing `Worker` class with the following C# code, and rename the file to *ScopedBackgroundService.cs*:
 
-:::zone target="docs" pivot="dotnet-7-0"
+:::code source="snippets/workers/scoped-service/ScopedBackgroundService.cs" highlight="14-24":::
 
-:::code source="snippets/workers/7.0/scoped-service/ScopedBackgroundService.cs" highlight="26-32":::
-
-:::zone-end
-:::zone target="docs" pivot="dotnet-6-0"
-
-:::code source="snippets/workers/6.0/scoped-service/ScopedBackgroundService.cs" highlight="26-32":::
-
-:::zone-end
-
-In the preceding code, an explicit scope is created and the `IScopedProcessingService` implementation is resolved from the dependency injection service provider. The resolved service instance is scoped, and its `DoWorkAsync` method is awaited.
+In the preceding code, while the `stoppingToken` isn't canceled, the `IServiceScopeFactory` is used to create a scope. From the `IServiceScope`, the `IScopedProcessingService` is resolved. The `DoWorkAsync` method is awaited, and the `stoppingToken` is passed to the method. Finally, the execution is delayed for 10 seconds and the loop continues. Each time the `DoWorkAsync` method is called, a new instance of the `DefaultScopedProcessingService` is created and the instance identifier is logged.
 
 Replace the template *Program.cs* file contents with the following C# code:
 
-:::zone target="docs" pivot="dotnet-7-0"
+:::code source="snippets/workers/scoped-service/Program.cs" highlight="4-5":::
 
-:::code source="snippets/workers/7.0/scoped-service/Program.cs" highlight="4-5":::
-
-:::zone-end
-:::zone target="docs" pivot="dotnet-6-0"
-
-:::code source="snippets/workers/6.0/scoped-service/Program.cs" highlight="4-8":::
-
-:::zone-end
-
-The services are registered in (*Program.cs*). The hosted service is registered with the `AddHostedService` extension method.
+The services are registered in (*Program.cs*). The hosted service is registered with the <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionHostedServiceExtensions.AddHostedService*> extension method.
 
 For more information on registering services, see [Dependency injection in .NET](dependency-injection.md).
 
@@ -113,15 +64,13 @@ For more information on registering services, see [Dependency injection in .NET]
 
 [!INCLUDE [run-app](includes/run-app.md)]
 
-Let the application run for a bit to generate several execution count increments. You will see output similar to the following:
+Let the application run for a bit to generate several calls to `DoWorkAsync`, thus logging new instance identifiers. You see output similar to the following logs:
 
 ```Output
 info: App.ScopedService.ScopedBackgroundService[0]
       ScopedBackgroundService is running.
-info: App.ScopedService.ScopedBackgroundService[0]
-      ScopedBackgroundService is working.
 info: App.ScopedService.DefaultScopedProcessingService[0]
-      DefaultScopedProcessingService working, execution count: 1
+      DefaultScopedProcessingService doing work, instance ID: 8986a86f-b444-4139-b9ea-587daae4a6dd
 info: Microsoft.Hosting.Lifetime[0]
       Application started. Press Ctrl+C to shut down.
 info: Microsoft.Hosting.Lifetime[0]
@@ -129,11 +78,9 @@ info: Microsoft.Hosting.Lifetime[0]
 info: Microsoft.Hosting.Lifetime[0]
       Content root path: .\scoped-service
 info: App.ScopedService.DefaultScopedProcessingService[0]
-      DefaultScopedProcessingService working, execution count: 2
+      DefaultScopedProcessingService doing work, instance ID: 07a4a760-8e5a-4c0a-9e73-fcb2f93157d3
 info: App.ScopedService.DefaultScopedProcessingService[0]
-      DefaultScopedProcessingService working, execution count: 3
-info: App.ScopedService.DefaultScopedProcessingService[0]
-      DefaultScopedProcessingService working, execution count: 4
+      DefaultScopedProcessingService doing work, instance ID: c847f432-acca-47ee-8720-1030859ce354
 info: Microsoft.Hosting.Lifetime[0]
       Application is shutting down...
 info: App.ScopedService.ScopedBackgroundService[0]

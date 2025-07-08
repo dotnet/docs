@@ -1,5 +1,5 @@
 ---
-title: "How to use C# named and optional arguments in Office programming"
+title: "How to use named and optional arguments in Office programming"
 description: Learn how to use named arguments and optional arguments to facilitate access to COM interfaces such as the Microsoft Office automation APIs.
 ms.date: 02/16/2023
 helpviewer_keywords: 
@@ -38,6 +38,9 @@ In **Solution Explorer**, right-click the *Program.cs* file and then select **Vi
 
 In the `Program` class in *Program.cs*, add the following method to create a Word application and a Word document. The [Add](<xref:Microsoft.Office.Interop.Word.Documents.Add%2A>) method has four optional parameters. This example uses their default values. Therefore, no arguments are necessary in the calling statement.
 
+> [!NOTE]
+> To avoid COM threading and timing issues that can cause exceptions like "The message filter indicated that the application is busy" (HRESULT 0x8001010A), the Word application is kept invisible during operations and only made visible after all operations are complete.
+
 :::code language="csharp" source="./snippets/NamedAndOptional/wordprogram.cs" id="Snippet6":::
 
 Add the following code at the end of the method to define where to display text in the document, and what text to display:
@@ -54,7 +57,7 @@ Press <kbd>CTRL</kbd>+<kbd>F5</kbd> to run the project. A Word document appears 
 
 ## Change the text to a table
   
-Use the `ConvertToTable` method to enclose the text in a table. The method has 16 optional parameters. IntelliSense encloses optional parameters in brackets, as shown in the following illustration.
+Use the `ConvertToTable` method to enclose the text in a table. The method has 16 optional parameters. IntelliSense encloses optional parameters in brackets, as shown in the following illustration. The default values of `Type.Missing` are the simple name for `System.Type.Missing`.
 
 ![List of parameters for ConvertToTable method](./media/how-to-use-named-and-optional-arguments-in-office-programming/convert-table-parameters.png)
 

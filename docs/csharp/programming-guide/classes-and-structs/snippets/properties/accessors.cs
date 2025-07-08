@@ -1,3 +1,6 @@
+﻿using System.Security.Cryptography;
+using System.Xml.Linq;
+
 namespace Accessors;
 
 class Test
@@ -69,7 +72,6 @@ public class TestClass : ISomeInterface
     }
 }
 //</InterfaceAccessor>
-
 //<Example>
 public class BaseClass
 {

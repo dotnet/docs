@@ -1,7 +1,7 @@
 ---
 title: .NET environment variables
 description: Learn about the environment variables that you can use to configure the .NET SDK, .NET CLI, and .NET runtime.
-ms.date: 04/04/2023
+ms.date: 11/08/2023
 ---
 
 # .NET environment variables
@@ -167,7 +167,19 @@ Configures the runtime to pause during startup and wait for the _Diagnostics IPC
 
 ### `DOTNET_EnableDiagnostics`
 
-When set to `1`, enables debugging, profiling, and other diagnostics via the [Diagnostic Port](../diagnostics/diagnostic-port.md). Defaults to 1.
+When set to `0`, disables debugging, profiling, and other diagnostics via the [Diagnostic Port](../diagnostics/diagnostic-port.md) and can't be overridden by other diagnostics settings. Defaults to `1`.
+
+### `DOTNET_EnableDiagnostics_IPC`
+
+Starting with .NET 8, when set to `0`, disables the [Diagnostic Port](../diagnostics/diagnostic-port.md) and can't be overridden by other diagnostics settings. Defaults to `1`.
+
+### `DOTNET_EnableDiagnostics_Debugger`
+
+Starting with .NET 8, when set to `0`, disables debugging and can't be overridden by other diagnostics settings. Defaults to `1`.
+
+### `DOTNET_EnableDiagnostics_Profiler`
+
+Starting with .NET 8, when set to `0`, disables profiling and can't be overridden by other diagnostics settings. Defaults to `1`.
 
 ### EventPipe variables
 
@@ -179,15 +191,15 @@ See [EventPipe environment variables](../diagnostics/eventpipe.md#trace-using-en
 
 ## .NET SDK and CLI environment variables
 
-### `DOTNET_ROOT`, `DOTNET_ROOT(x86)`
+### `DOTNET_ROOT`, `DOTNET_ROOT(x86)`, `DOTNET_ROOT_X86`, `DOTNET_ROOT_X64`
 
-Specifies the location of the .NET runtimes, if they are not installed in the default location. The default location on Windows is `C:\Program Files\dotnet`. The default location on macOS is `/usr/local/share/dotnet`. The default location on Linux varies depending on distro and installment method. The default location on Ubuntu 22.04 is `/usr/share/dotnet` (when installed from `packages.microsoft.com`) or `/usr/lib/dotnet` (when installed from Jammy feed). For more information, see the following resources:
+Specifies the location of the .NET runtimes, if they are not installed in the default location. The default location on Windows is `C:\Program Files\dotnet`. The default location on macOS is `/usr/local/share/dotnet`. The default location for the x64 runtimes on an arm64 OS is under an x64 subfolder (so `C:\Program Files\dotnet\x64` on windows and `/usr/local/share/dotnet/x64` on macOS. The default location on Linux varies depending on distro and installment method. The default location on Ubuntu 22.04 is `/usr/share/dotnet` (when installed from `packages.microsoft.com`) or `/usr/lib/dotnet` (when installed from Jammy feed). For more information, see the following resources:
 
 - [Troubleshoot app launch failures](../runtime-discovery/troubleshoot-app-launch.md?pivots=os-linux)
 - GitHub issue [dotnet/core#7699](https://github.com/dotnet/core/issues/7699)
 - GitHub issue [dotnet/runtime#79237](https://github.com/dotnet/runtime/issues/79237)
 
-This environment variable is used only when running apps via generated executables (apphosts). `DOTNET_ROOT(x86)` is used instead when running a 32-bit executable on a 64-bit OS.
+This environment variable is used only when running apps via generated executables (apphosts). `DOTNET_ROOT(x86)` is used instead when running a 32-bit executable on a 64-bit OS. `DOTNET_ROOT_X64` is used instead when running a 64-bit executable on an ARM64 OS.
 
 ### `DOTNET_HOST_PATH`
 
@@ -195,11 +207,69 @@ Specifies the absolute path to a `dotnet` host (`dotnet.exe` on Windows, `dotnet
 
 Tools that invoke `dotnet` during an SDK command should use the following algorithm to locate it:
 
-* if `DOTNET_HOST_PATH` is set, use that value directly
-* otherwise, rely on `dotnet` via the system's `PATH`
+- if `DOTNET_HOST_PATH` is set, use that value directly
+- otherwise, rely on `dotnet` via the system's `PATH`
 
 > [!NOTE]
 > `DOTNET_HOST_PATH` is not a general solution for locating the `dotnet` host. It is only intended to be used by tools that are invoked by the .NET SDK.
+
+### `DOTNET_LAUNCH_PROFILE`
+
+The [dotnet run](dotnet-run.md) command sets this variable to the selected launch profile.
+
+Given the following _launchSettings.json_ file:
+
+```json
+{
+  "profiles": {
+    "First": {
+      "commandName": "Project",
+    },
+    "Second": {
+      "commandName": "Project",
+    }
+  }
+}
+```
+
+And the following _Program.cs_ file:
+
+```csharp
+var value = Environment.GetEnvironmentVariable("DOTNET_LAUNCH_PROFILE");
+Console.WriteLine($"DOTNET_LAUNCH_PROFILE={value}");
+```
+
+The following scenarios produce the output shown:
+
+- Launch profile specified and exists
+
+  ```dotnetcli
+  $ dotnet run --launch-profile First
+  DOTNET_LAUNCH_PROFILE=First
+  ```
+
+- Launch profile not specified, first one selected
+
+  ```dotnetcli
+  $ dotnet run
+  DOTNET_LAUNCH_PROFILE=First
+  ```
+
+- Launch profile specified but does not exist
+
+  ```dotnetcli
+  $ dotnet run --launch-profile Third
+  The launch profile "Third" could not be applied.
+  A launch profile with the name 'Third' doesn't exist.
+  DOTNET_LAUNCH_PROFILE=
+  ```
+
+- Launch with no profile
+
+  ```dotnetcli
+  $ dotnet run --no-launch-profile
+  DOTNET_LAUNCH_PROFILE=
+  ```
 
 ### `NUGET_PACKAGES`
 
@@ -227,11 +297,15 @@ Specifies whether to add global tools to the `PATH` environment variable. The de
 
 ### `DOTNET_CLI_TELEMETRY_OPTOUT`
 
-Specifies whether data about the .NET tools usage is collected and sent to Microsoft. Set to `true` to opt-out of the telemetry feature (values `true`, `1`, or `yes` accepted). Otherwise, set to `false` to opt into the telemetry features (values `false`, `0`, or `no` accepted). If not set, the default is `false` and the telemetry feature is active.
+Specifies whether data about the .NET tools usage is collected and sent to Microsoft. Set to `true` to opt-out of the telemetry feature (values `true`, `1`, or `yes` accepted). Otherwise, set to `false` to opt in to the telemetry features (values `false`, `0`, or `no` accepted). If not set, the default is `false` and the telemetry feature is active.
 
 ### `DOTNET_SKIP_FIRST_TIME_EXPERIENCE`
 
 If `DOTNET_SKIP_FIRST_TIME_EXPERIENCE` is set to `true`, the `NuGetFallbackFolder` won't be expanded to disk and a shorter welcome message and telemetry notice will be shown.
+
+> [!NOTE]
+> This environment variable is no longer supported in .NET Core 3.0 and later.
+> Use [`DOTNET_NOLOGO`](#dotnet_nologo) as a replacement.
 
 ### `DOTNET_MULTILEVEL_LOOKUP`
 
@@ -248,7 +322,7 @@ Determines roll forward behavior. For more information, see [the `--roll-forward
 
 If set to `1` (enabled), enables rolling forward to a pre-release version from a release version. By default (`0` - disabled), when a release version of .NET runtime is requested, roll-forward will only consider installed release versions.
 
-For more information, see [the `--roll-forward` option for the `dotnet` command](dotnet.md#rollforward)
+For more information, see [the `--roll-forward` option for the `dotnet` command](dotnet.md#rollforward).
 
 ### `DOTNET_ROLL_FORWARD_ON_NO_CANDIDATE_FX`
 
@@ -287,6 +361,14 @@ List of assemblies to load and execute startup hooks from.
 Specifies a directory to which a single-file application is extracted before it is executed.
 
 For more information, see [Single-file executables](../whats-new/dotnet-core-3-0.md#single-file-executables).
+
+### `DOTNET_CLI_HOME`
+
+Specifies the location that supporting files for .NET CLI commands should be written to. For example:
+
+- User-writable paths for workload packs, manifests, and other supporting data.
+- First-run sentinel/lock files for aspects of the .NET CLI's first-run migrations and notification experiences.
+- The default .NET local tool installation location.
 
 ### `DOTNET_CLI_CONTEXT_*`
 

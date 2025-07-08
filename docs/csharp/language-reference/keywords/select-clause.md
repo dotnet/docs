@@ -1,6 +1,6 @@
 ---
 description: "select clause - C# Reference"
-title: "select clause - C# Reference"
+title: "select clause"
 ms.date: 07/20/2015
 f1_keywords: 
   - "select_CSharpKeyword"
@@ -18,7 +18,7 @@ The following example shows a simple `select` clause in a query expression.
 
 [!code-csharp[cscsrefQueryKeywords#8](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsCsrefQueryKeywords/CS/Select.cs#8)]  
 
-The type of the sequence produced by the `select` clause determines the type of the query variable `queryHighScores`. In the simplest case, the `select` clause just specifies the range variable. This causes the returned sequence to contain elements of the same type as the data source. For more information, see [Type Relationships in LINQ Query Operations](../../programming-guide/concepts/linq/type-relationships-in-linq-query-operations.md). However, the `select` clause also provides a powerful mechanism for transforming (or *projecting*) source data into new types. For more information, see [Data Transformations with LINQ (C#)](../../programming-guide/concepts/linq/data-transformations-with-linq.md).
+The type of the sequence produced by the `select` clause determines the type of the query variable `queryHighScores`. In the simplest case, the `select` clause just specifies the range variable. This causes the returned sequence to contain elements of the same type as the data source. For more information, see [Type Relationships in LINQ Query Operations](../../linq/get-started/type-relationships-in-linq-query-operations.md). However, the `select` clause also provides a powerful mechanism for transforming (or *projecting*) source data into new types. For more information, see [Data Transformations with LINQ (C#)](../../linq/standard-query-operators/index.md).
 
 ## Example
 
@@ -34,9 +34,8 @@ At compile time, the `select` clause is translated to a method call to the <xref
 
 ## See also
 
-- [C# Reference](../index.md)
 - [Query Keywords (LINQ)](query-keywords.md)
 - [from clause](from-clause.md)
-- [partial (Method) (C# Reference)](partial-method.md)
+- [partial (Method) (C# Reference)](partial-member.md)
 - [Anonymous Types](../../fundamentals/types/anonymous-types.md)
 - [LINQ in C#](../../linq/index.md)

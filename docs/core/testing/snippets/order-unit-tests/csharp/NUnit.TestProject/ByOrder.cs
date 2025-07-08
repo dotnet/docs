@@ -14,9 +14,9 @@ public class ByOrder
     {
         Test1Called = true;
 
-        Assert.IsFalse(Test2ACalled);
-        Assert.IsTrue(Test2BCalled);
-        Assert.IsTrue(Test3Called);
+        Assert.That(Test2ACalled, Is.False);
+        Assert.That(Test2BCalled, Is.True);
+        Assert.That(Test3Called, Is.True);
     }
 
     [Test, Order(0)]
@@ -24,9 +24,9 @@ public class ByOrder
     {
         Test2BCalled = true;
 
-        Assert.IsFalse(Test1Called);
-        Assert.IsFalse(Test2ACalled);
-        Assert.IsTrue(Test3Called);
+        Assert.That(Test1Called, Is.False);
+        Assert.That(Test2ACalled, Is.False);
+        Assert.That(Test3Called, Is.True);
     }
 
     [Test]
@@ -34,9 +34,9 @@ public class ByOrder
     {
         Test2ACalled = true;
 
-        Assert.IsTrue(Test1Called);
-        Assert.IsTrue(Test2BCalled);
-        Assert.IsTrue(Test3Called);
+        Assert.That(Test1Called, Is.True);
+        Assert.That(Test2BCalled, Is.True);
+        Assert.That(Test3Called, Is.True);
     }
 
     [Test, Order(-5)]
@@ -44,8 +44,8 @@ public class ByOrder
     {
         Test3Called = true;
 
-        Assert.IsFalse(Test1Called);
-        Assert.IsFalse(Test2ACalled);
-        Assert.IsFalse(Test2BCalled);
+        Assert.That(Test1Called, Is.False);
+        Assert.That(Test2ACalled, Is.False);
+        Assert.That(Test2BCalled, Is.False);
     }
 }

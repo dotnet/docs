@@ -2,10 +2,10 @@
 description: "Learn more about: How to: Use time zones in date and time arithmetic"
 title: "How to: Use time zones in date and time arithmetic"
 ms.date: "04/10/2017"
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "time zones [.NET], arithmetic operations"
   - "arithmetic operations [.NET], dates and times"
   - "dates [.NET], adding and subtracting"
@@ -47,12 +47,6 @@ The example illustrates how to perform arithmetic operations on <xref:System.Dat
 [!code-vb[System.DateTimeOffset.Conceptual#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTimeOffset.Conceptual/vb/Conceptual6.vb#7)]
 
 Note that if this addition is simply performed on the <xref:System.DateTimeOffset> value without first converting it to UTC, the result reflects the correct point in time but its offset does not reflect that of the designated time zone for that time.
-
-## Compiling the code
-
-This example requires:
-
-- That the <xref:System> namespace be imported with the `using` statement (required in C# code).
 
 ## See also
 

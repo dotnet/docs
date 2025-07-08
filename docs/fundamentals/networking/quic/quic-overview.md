@@ -25,12 +25,131 @@ On the other hand, there are potential disadvantages to consider when using QUIC
 
 ## QUIC in .NET
 
-The QUIC implementation was introduced in .NET 5 as the `System.Net.Quic` library. However, up until .NET 7.0 the library was strictly internal and served only as an implementation of HTTP/3. With .NET 7, the library was made public thus exposing its APIs.
+The QUIC implementation was introduced in .NET 5 as the `System.Net.Quic` library. However, up until .NET 7 the library was strictly internal and served only as an implementation of HTTP/3. With .NET 7, the library was made public thus exposing its APIs.
 
 > [!NOTE]
-> In .NET 7.0, the APIs are published as [preview features](https://github.com/dotnet/designs/blob/main/accepted/2021/preview-features/preview-features.md).
+> In .NET 7.0 and 8.0, the APIs were published as [preview features](https://github.com/dotnet/designs/blob/main/accepted/2021/preview-features/preview-features.md). Starting with .NET 9, these APIs are no longer considered preview features and are now deemed stable.
 
-From the implementation perspective, `System.Net.Quic` depends on [MsQuic](https://github.com/microsoft/msquic), the native implementation of QUIC protocol. As a result, `System.Net.Quic` platform support and dependencies are inherited from `MsQuic` and documented in [HTTP/3 Platform dependencies](../../../core/extensions/httpclient-http3.md#platform-dependencies). In short, the `MsQuic` library is shipped as part of .NET for Windows. But for Linux, `libmsquic` must be manually installed via an appropriate package manager. For the other platforms, it's still possible to build `MsQuic` manually, whether against SChannel or OpenSSL, and use it with `System.Net.Quic`. However, these scenarios are not part of our testing matrix and unforeseen problems might occur.
+From the implementation perspective, `System.Net.Quic` depends on [MsQuic](https://github.com/microsoft/msquic), the native implementation of QUIC protocol. As a result, `System.Net.Quic` platform support and dependencies are inherited from MsQuic and documented in the [Platform dependencies](#platform-dependencies) section. In short, the MsQuic library is shipped as part of .NET for Windows. But for Linux, you must manually install `libmsquic` via an appropriate package manager. For the other platforms, it's still possible to build MsQuic manually, whether against SChannel or OpenSSL, and use it with `System.Net.Quic`. However, these scenarios are not part of our testing matrix and unforeseen problems might occur.
+
+## Platform dependencies
+
+The following sections describe the platform dependencies for QUIC in .NET.
+
+### Windows
+
+- Windows 11, Windows Server 2022, or later. (Earlier Windows versions are missing the cryptographic APIs required to support QUIC.)
+
+On Windows, msquic.dll is distributed as part of the .NET runtime, and no other steps are required to install it.
+
+### Linux
+
+> [!NOTE]
+> .NET 7+ is only compatible with 2.2+ versions of libmsquic.
+
+The `libmsquic` package is required on Linux. This package is published in Microsoft's official Linux package repository, <https://packages.microsoft.com> and is also available in some official repositories, such as the [Alpine Packages - libmsquic](https://pkgs.alpinelinux.org/packages?name=libmsquic&branch=edge&repo=&arch=&origin=yes&flagged=&maintainer=).
+
+#### Installing `libmsquic` from Microsoft's official Linux package repository
+
+You must add this repository to your package manager before installing the package. For more information, see [Linux Software Repository for Microsoft Products](/linux/packages).
+
+> [!CAUTION]
+> Adding the Microsoft package repository may conflict with your distribution's repository when your distribution's repository provides .NET and other Microsoft packages. To avoid or troubleshoot package mixups, review [Troubleshoot .NET errors related to missing files on Linux](../../../core/install/linux-package-mixup.md#whats-going-on).
+
+##### Examples
+
+Here are some examples of using a package manager to install `libmsquic`:
+
+- **APT**
+
+  ```bash
+  sudo apt-get install libmsquic 
+  ```
+
+- **APK**
+
+  ```bash
+  sudo apk add libmsquic
+  ```
+
+- **DNF**
+
+  ```bash
+  sudo dnf install libmsquic
+  ```
+
+- **zypper**
+
+  ```bash
+  sudo zypper install libmsquic
+  ```
+
+- **YUM**
+
+  ```bash
+  sudo yum install libmsquic
+  ```
+
+#### Installing `libmsquic` from the Distribution Package Repository
+
+Installing `libmsquic` from distribution package repository is also possible, but currently this is only available for `Alpine`.
+
+##### Examples
+
+Here are some examples of using a package manager to install `libmsquic`:
+
+- **Alpine 3.21 and later**
+
+```bash
+apk add libmsquic
+```
+
+- **Alpine 3.20 and older**
+  
+```bash
+# Get libmsquic from community repository edge branch.
+apk add --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community/ libmsquic
+```
+
+##### Dependencies of libmsquic
+
+All the following dependencies are stated in the `libmsquic` package manifest and are automatically installed by the package manager:
+
+- OpenSSL 3+ or 1.1 - depends on the default OpenSSL version for the distribution version, for example, OpenSSL 3 for [Ubuntu 22](https://packages.ubuntu.com/jammy/openssl) and OpenSSL 1.1 for [Ubuntu 20](https://packages.ubuntu.com/focal/utils/openssl).
+
+- libnuma1
+
+### macOS
+
+QUIC is now partially supported on macOS through a non-standard Homebrew package manager with some limitations. You can install `libmsquic` on macOS using Homebrew with the following command:
+
+```bash
+brew install libmsquic
+```
+
+To run a .NET application that uses `libmsquic`, you need to set the environment variable before running it. This ensures the application can find the `libmsquic` library during runtime dynamic loading. You can do this by adding the following command before your main command:
+
+```bash
+DYLD_FALLBACK_LIBRARY_PATH=$DYLD_FALLBACK_LIBRARY_PATH:$(brew --prefix)/lib dotnet run
+```
+
+or
+
+```bash
+DYLD_FALLBACK_LIBRARY_PATH=$DYLD_FALLBACK_LIBRARY_PATH:$(brew --prefix)/lib ./binaryname
+```
+
+Alternatively, you can set the environment variable with:
+
+```bash
+export DYLD_FALLBACK_LIBRARY_PATH=$DYLD_FALLBACK_LIBRARY_PATH:$(brew --prefix)/lib
+```
+
+and then run your main command:
+
+```bash
+./binaryname
+```
 
 ## API overview
 
@@ -95,8 +214,8 @@ var serverConnectionOptions = new QuicServerConnectionOptions
     // Same options as for server side SslStream.
     ServerAuthenticationOptions = new SslServerAuthenticationOptions
     {
-        // List of supported application protocols, must be the same or subset of QuicListenerOptions.ApplicationProtocols.
-        ApplicationProtocols = new List<SslApplicationProtocol>() { "protocol-name" },
+        // Specify the application protocols that the server supports. This list must be a subset of the protocols specified in QuicListenerOptions.ApplicationProtocols.
+        ApplicationProtocols = [new SslApplicationProtocol("protocol-name")],
         // Server certificate, it can also be provided via ServerCertificateContext or ServerCertificateSelectionCallback.
         ServerCertificate = serverCertificate
     }
@@ -105,10 +224,10 @@ var serverConnectionOptions = new QuicServerConnectionOptions
 // Initialize, configure the listener and start listening.
 var listener = await QuicListener.ListenAsync(new QuicListenerOptions
 {
-    // Listening endpoint, port 0 means any port.
+    // Define the endpoint on which the server will listen for incoming connections. The port number 0 can be replaced with any valid port number as needed.
     ListenEndPoint = new IPEndPoint(IPAddress.Loopback, 0),
     // List of all supported application protocols by this listener.
-    ApplicationProtocols = new List<SslApplicationProtocol>() { "protocol-name" },
+    ApplicationProtocols = [new SslApplicationProtocol("protocol-name")],
     // Callback to provide options for the incoming connections, it gets called once per each connection.
     ConnectionOptionsCallback = (_, _, _) => ValueTask.FromResult(serverConnectionOptions)
 });
@@ -169,7 +288,9 @@ var clientConnectionOptions = new QuicClientConnectionOptions
     ClientAuthenticationOptions = new SslClientAuthenticationOptions
     {
         // List of supported application protocols.
-        ApplicationProtocols = new List<SslApplicationProtocol>() { "protocol-name" }
+        ApplicationProtocols = [new SslApplicationProtocol("protocol-name")],
+        // The name of the server the client is trying to connect to. Used for server certificate validation.
+        TargetHost = ""
     }
 };
 
@@ -179,6 +300,9 @@ var connection = await QuicConnection.ConnectAsync(clientConnectionOptions);
 Console.WriteLine($"Connected {connection.LocalEndPoint} --> {connection.RemoteEndPoint}");
 
 // Open a bidirectional (can both read and write) outbound stream.
+// Opening a stream reserves it but does not notify the peer or send any data. If you don't send data, the peer
+// won't be informed about the stream, which can cause AcceptInboundStreamAsync() to hang. To avoid this, ensure
+// you send data on the stream to properly initiate communication.
 var outgoingStream = await connection.OpenOutboundStreamAsync(QuicStreamType.Bidirectional);
 
 // Work with the outgoing stream ...
@@ -199,13 +323,18 @@ await connection.CloseAsync(0x0C);
 await connection.DisposeAsync();
 ```
 
-or more information about how the `QuicConnection` was designed, see the [API proposal](https://github.com/dotnet/runtime/issues/68902).
+for more information about how the `QuicConnection` was designed, see the [API proposal](https://github.com/dotnet/runtime/issues/68902).
 
 ### `QuicStream`
 
 <xref:System.Net.Quic.QuicStream> is the actual type that is used to send and receive data in QUIC protocol. It derives from ordinary <xref:System.IO.Stream> and can be used as such, but it also offers several features that are specific to QUIC protocol. Firstly, a QUIC stream can either be unidirectional or bidirectional, see [RFC 9000 Section 2.1](https://www.rfc-editor.org/rfc/rfc9000#section-2.1). A bidirectional stream is able to send and receive data on both sides, whereas unidirectional stream can only write from the initiating side and read on the accepting one. Each peer can limit how many concurrent stream of each type is willing to accept, see <xref:System.Net.Quic.QuicConnectionOptions.MaxInboundBidirectionalStreams> and <xref:System.Net.Quic.QuicConnectionOptions.MaxInboundUnidirectionalStreams>.
 
-Another particularity of QUIC stream is ability to explicitly close the writing side in the middle of work with the stream, see <xref:System.Net.Quic.QuicStream.CompleteWrites> or <xref:System.Net.Quic.QuicStream.WriteAsync(System.ReadOnlyMemory{System.Byte},System.Boolean,System.Threading.CancellationToken)> overload with `completeWrites` argument. Closing of the writing side lets the peer know that no more data will arrive, yet the peer still can continue sending (in case of a bidirectional stream). This is useful in scenarios like HTTP request/response exchange when the client sends the request and closes the writing side to let the server know that this is the end of the request content. Server is still able to send the response after that, but knows that no more data will arrive from the client. And for erroneous cases, either writing or reading side of the stream can be aborted, see <xref:System.Net.Quic.QuicStream.Abort(System.Net.Quic.QuicAbortDirection,System.Int64)>. The behavior of the individual methods for each stream type is summarized in the following table (note that both client and server can open and accept streams):
+Another particularity of QUIC stream is ability to explicitly close the writing side in the middle of work with the stream, see <xref:System.Net.Quic.QuicStream.CompleteWrites> or <xref:System.Net.Quic.QuicStream.WriteAsync(System.ReadOnlyMemory{System.Byte},System.Boolean,System.Threading.CancellationToken)> overload with `completeWrites` argument. Closing of the writing side lets the peer know that no more data will arrive, yet the peer still can continue sending (in case of a bidirectional stream). This is useful in scenarios like HTTP request/response exchange when the client sends the request and closes the writing side to let the server know that this is the end of the request content. Server is still able to send the response after that, but knows that no more data will arrive from the client. And for erroneous cases, either writing or reading side of the stream can be aborted, see <xref:System.Net.Quic.QuicStream.Abort(System.Net.Quic.QuicAbortDirection,System.Int64)>.
+
+> [!NOTE]
+> Opening a stream only reserves it without sending any data. This approach is designed to optimize network usage by avoiding the transmission of nearly empty frames. Since the peer is not notified until actual data is sent, the stream remains inactive from the peer's perspective. If you don't send data, the peer won't recognize the stream, which can cause `AcceptInboundStreamAsync()` to hang as it waits for a meaningful stream. To ensure proper communication, you need to send data after opening the stream.
+
+The behavior of the individual methods for each stream type is summarized in the following table (note that both client and server can open and accept streams):
 
 | Method | Peer opening stream | Peer accepting stream |
 | --- | --- | --- |
@@ -248,14 +377,14 @@ The sample usage of `QuicStream` in client scenario:
 
 ```csharp
 // Consider connection from the connection example, open a bidirectional stream.
-await using var stream = await connection.OpenStreamAsync(QuicStreamType.Bidirectional, cancellationToken);
+await using var stream = await connection.OpenOutboundStreamAsync(QuicStreamType.Bidirectional, cancellationToken);
 
 // Send some data.
 await stream.WriteAsync(data, cancellationToken);
 await stream.WriteAsync(data, cancellationToken);
 
 // End the writing-side together with the last data.
-await stream.WriteAsync(data, endStream: true, cancellationToken);
+await stream.WriteAsync(data, completeWrites: true, cancellationToken);
 // Or separately.
 stream.CompleteWrites();
 
@@ -272,7 +401,7 @@ And the sample usage of `QuicStream` in server scenario:
 
 ```csharp
 // Consider connection from the connection example, accept a stream.
-await using var stream = await connection.AcceptStreamAsync(cancellationToken);
+await using var stream = await connection.AcceptInboundStreamAsync(cancellationToken);
 
 if (stream.Type != QuicStreamType.Bidirectional)
 {

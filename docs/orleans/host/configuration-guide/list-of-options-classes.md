@@ -1,12 +1,13 @@
 ---
 title: List of options classes
 description: Explore a listing of options classes in .NET Orleans.
-ms.date: 03/16/2022
+ms.date: 05/23/2025
+ms.topic: reference
 ---
 
 # List of options classes
 
-All options classes used to configure Orleans are found in the `Orleans.Configuration` namespace. Many of them have helper methods in the `Orleans.Hosting` namespace.
+All options classes used to configure Orleans are found in the `Orleans.Configuration` namespace. Many also have helper methods in the `Orleans.Hosting` namespace.
 
 ## Common core options for `IClientBuilder` and `ISiloHostBuilder`
 
@@ -14,22 +15,22 @@ All options classes used to configure Orleans are found in the `Orleans.Configur
 |--|--|
 | <xref:Orleans.Configuration.ClusterOptions> | Setting the `ClusterId` and the `ServiceId` |
 | <xref:Orleans.Configuration.NetworkingOptions> | Setting timeout values for sockets and opened connections |
-| <xref:Orleans.Configuration.SerializationProviderOptions>` | Setting the serialization providers |
+| <xref:Orleans.Configuration.SerializationProviderOptions> | Setting the serialization providers |
 | <xref:Orleans.Configuration.TypeManagementOptions> | Setting the refresh period of the Type Map (see Heterogeneous silos and Versioning) |
 
-## `IClientBuilder` specific options
+## `IClientBuilder`-specific options
 
-| Option type | Used for |
-|--|--|
+| Option type                                    | Used for                              |
+|------------------------------------------------|---------------------------------------|
 | <xref:Orleans.Configuration.ClientMessagingOptions> | Setting the number of connections to keep open, and specify what network interface to use |
 | <xref:Orleans.Configuration.StatisticsOptions> | Settings related to statistics output |
 | <xref:Orleans.Configuration.GatewayOptions> | Setting the refresh period of the list of available gateways |
 | <xref:Orleans.Configuration.StaticGatewayListProviderOptions> | Setting URIs a client will use to connect to cluster |
 
-## `ISiloHostBuilder` specific options
+## `ISiloHostBuilder`-specific options
 
-| Option type | Used for |
-|--|--|
+| Option type                                           | Used for                        |
+|-------------------------------------------------------|---------------------------------|
 | <xref:Orleans.Configuration.ClusterMembershipOptions> | Settings for cluster membership |
 | <xref:Orleans.Configuration.ConsistentRingOptions> | Configuration options for consistent hashing algorithm, used to balance resource allocations across the cluster. |
 | <xref:Orleans.Configuration.EndpointOptions> | Setting the Silo endpoint options |

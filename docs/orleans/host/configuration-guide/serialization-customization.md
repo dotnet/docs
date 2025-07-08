@@ -1,7 +1,7 @@
 ---
 title: Serialization customization in Orleans
 description: Learn how to customize serialization in .NET Orleans.
-ms.date: 12/15/2022
+ms.date: 07/03/2024
 uid: orleans-serialization-customization
 zone_pivot_groups: orleans-version
 ---
@@ -101,9 +101,9 @@ Additional considerations would be to expose an overload that accepts custom ser
 
 Orleans supports integration with third-party serializers using a provider model. This requires an implementation of the <xref:Orleans.Serialization.IExternalSerializer> type described in the custom serialization section of this article. Integrations for some common serializers are maintained alongside Orleans, for example:
 
-* [Protocol Buffers](https://developers.google.com/protocol-buffers/): <xref:Orleans.Serialization.ProtobufSerializer?displayProperty=fullName> from the [Microsoft.Orleans.OrleansGoogleUtils](https://www.nuget.org/packages/Microsoft.Orleans.OrleansGoogleUtils/) NuGet package.
-* [Bond](https://github.com/microsoft/bond/): <xref:Orleans.Serialization.BondSerializer?displayProperty=fullName> from the [Microsoft.Orleans.Serialization.Bond](https://www.nuget.org/packages/Microsoft.Orleans.Serialization.Bond/) NuGet package.
-* [Newtonsoft.Json](https://www.newtonsoft.com/json): <xref:Orleans.Serialization.OrleansJsonSerializer?displayProperty=fullName> from the core Orleans library.
+- [Protocol Buffers](https://developers.google.com/protocol-buffers/): <xref:Orleans.Serialization.ProtobufSerializer?displayProperty=fullName> from the [Microsoft.Orleans.OrleansGoogleUtils](https://www.nuget.org/packages/Microsoft.Orleans.OrleansGoogleUtils/) NuGet package.
+- [Bond](https://github.com/microsoft/bond/): <xref:Orleans.Serialization.BondSerializer?displayProperty=fullName> from the [Microsoft.Orleans.Serialization.Bond](https://www.nuget.org/packages/Microsoft.Orleans.Serialization.Bond/) NuGet package.
+- [Newtonsoft.Json](https://www.newtonsoft.com/json): <xref:Orleans.Serialization.OrleansJsonSerializer?displayProperty=fullName> from the core Orleans library.
 
 Custom implementation of `IExternalSerializer` is described in the following section.
 
@@ -123,9 +123,9 @@ Each of these serialization methods is detailed in the following sections.
 
 Orleans serialization happens in three stages:
 
-* Objects are immediately deep copied to ensure isolation.
-* Before being put on the wire, objects are serialized to a message byte stream.
-* When delivered to the target activation, objects are recreated (deserialized) from the received byte stream.
+- Objects are immediately deep copied to ensure isolation.
+- Before being put on the wire, objects are serialized to a message byte stream.
+- When delivered to the target activation, objects are recreated (deserialized) from the received byte stream.
 
 Data types that may be sent in messages&mdash;that is, types that may be passed as method arguments or return values&mdash;must have associated routines that perform these three steps. We refer to these routines collectively as the serializers for a data type.
 

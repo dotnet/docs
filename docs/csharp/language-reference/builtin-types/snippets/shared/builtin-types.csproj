@@ -2,8 +2,7 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net8</TargetFramework>
-    <LangVersion>preview</LangVersion>
+    <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <StartupObject>builtin_types.Program</StartupObject>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>

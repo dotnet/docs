@@ -101,9 +101,30 @@ In a call to a class constructor, you can set the values of properties of the cl
 
 For more information, see [Constructors (F#)](members/constructors.md).
 
+The same technique, meant to call property setters, also applies to any object-returning method (such as factory methods):
+
+```fsharp
+type Widget() =
+    member val Width = 1 with get,set
+    member val Height = 1 with get,set
+
+type WidgetFactory =
+    static member MakeNewWidget() =
+         new Widget()
+    static member AdjustWidget(w: Widget) =
+         w
+let w = WidgetFactory.MakeNewWidget(Width=10)
+w.Width // = 10
+w.Height // = 1
+WidgetFactory.AdjustWidget(w, Height=10)
+w.Height // = 10
+```
+
+Note that those members could perform any arbitrary work, the syntax is effectively a short hand to call property setters before returning the final value.
+
 ## Optional Parameters
 
-You can specify an optional parameter for a method by using a question mark in front of the parameter name. Optional parameters are interpreted as the F# option type, so you can query them in the regular way that option types are queried, by using a `match` expression with `Some` and `None`. Optional parameters are permitted only on members, not on functions created by using `let` bindings.
+You can specify an optional parameter for a method by using a question mark in front of the parameter name. From the callee's perspective, optional parameters are interpreted as the F# option type, so you can query them in the regular way that option types are queried, by using a `match` expression with `Some` and `None`. Optional parameters are permitted only on members, not on functions created by using `let` bindings.
 
 You can pass existing optional values to method by parameter name, such as `?arg=None` or `?arg=Some(3)` or `?arg=arg`. This can be useful when building a method that passes optional arguments to another method.
 
@@ -192,6 +213,8 @@ You can use a tuple as a return value to store any `out` parameters in .NET libr
 Occasionally it is necessary to define a function that takes an arbitrary number of parameters of heterogeneous type. It would not be practical to create all the possible overloaded methods to account for all the types that could be used. The .NET implementations provide support for such methods through the parameter array feature. A method that takes a parameter array in its signature can be provided with an arbitrary number of parameters. The parameters are put into an array. The type of the array elements determines the parameter types that can be passed to the function. If you define the parameter array with `System.Object` as the element type, then client code can pass values of any type.
 
 In F#, parameter arrays can only be defined in methods. They cannot be used in standalone functions or functions that are defined in modules.
+
+However, functions like `printfn` achieve similar behavior by using format specifiers and type inference to handle multiple arguments dynamically. The `printfn` function does not rely on parameter arrays; instead, it uses F#'s type-safe formatting mechanism to process varying numbers of arguments while ensuring compile-time type checking.
 
 You define a parameter array by using the `ParamArray` attribute. The `ParamArray` attribute can only be applied to the last parameter.
 

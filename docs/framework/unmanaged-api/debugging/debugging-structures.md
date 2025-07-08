@@ -20,6 +20,10 @@ This section describes the unmanaged structures that the debugging API uses.
  [CLRDATA_IL_ADDRESS_MAP Structure](clrdata-il-address-map-structure.md)
  Defines an IL to address mapping
 
+ [CLRDATA_METHDEF_EXTENT Structure](clrdata-methdef-extent-structure.md) Describes an IL code region associated with a method.
+
+ [CLRDATA_MODULE_EXTENT Structure](clrdata-module-extent-structure.md) Describes a memory region associated with a module.
+
  [CLR_DEBUGGING_VERSION Structure](clr-debugging-version-structure.md)
  Defines the product version of the common language runtime (CLR) for debugging purposes.
 
@@ -33,7 +37,7 @@ This section describes the unmanaged structures that the debugging API uses.
  Provides information about the layout of an array object in memory.
 
  [COR_DEBUG_IL_TO_NATIVE_MAP](cor-debug-il-to-native-map-structure.md)
- Contains the offsets that are used to map Microsoft intermediate language (MSIL) code to native code.
+ Contains the offsets that are used to map common intermediate language (CIL) code to native code.
 
  [COR_DEBUG_STEP_RANGE](cor-debug-step-range-structure.md)
  Contains the offset information for a range of code.
@@ -88,6 +92,8 @@ This section describes the unmanaged structures that the debugging API uses.
 
  [DacpReJitData Structure](dacprejitdata-structure.md)
  Defines the basic information about a given profiler-instrumented method.
+
+ [GcEvtArgs Structure](gcevtargs-structure.md) Describes a particular GC event which occurred.
 
  [StackTrace_SimpleContext Structure](stacktrace-simplecontext-structure.md)
  Provides a simple context that can be used in place of a full `CONTEXT` structure.

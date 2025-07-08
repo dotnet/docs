@@ -2,6 +2,8 @@
 title: SYSLIB0023 warning
 description: Learn about the RNGCryptoServiceProvider obsoletion that generates compile-time warning SYSLIB0023.
 ms.date: 05/18/2021
+f1_keywords:
+  - syslib0023
 ---
 # SYSLIB0023: RNGCryptoServiceProvider is obsolete
 

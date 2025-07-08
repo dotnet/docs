@@ -2,6 +2,8 @@
 title: SYSLIB0050 warning - Formatter-based serialization is obsolete
 description: Learn about the obsoletion of formatter-based serialization APIs that generates compile-time warning SYSLIB0050.
 ms.date: 05/11/2023
+f1_keywords:
+  - syslib0050
 ---
 # SYSLIB0050: Formatter-based serialization is obsolete
 

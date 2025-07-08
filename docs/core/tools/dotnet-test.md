@@ -1,22 +1,49 @@
 ---
 title: dotnet test command
 description: The dotnet test command is used to execute unit tests in a given project.
-ms.date: 03/17/2022
+ms.date: 03/27/2024
 ---
 # dotnet test
-
-**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
 ## Name
 
 `dotnet test` - .NET test driver used to execute unit tests.
 
-## Synopsis
+## Description
+
+The `dotnet test` command builds the solution and runs the tests with either VSTest or Microsoft Testing Platform (MTP). To enable MTP, you need to add a config file named `dotnet.config` with an INI-like format located at the root of the solution or repository.
+
+Some examples of the `dotnet.config` file:
+
+  ```ini
+  [dotnet.test.runner]
+  name = "Microsoft.Testing.Platform"
+  ```
+
+  ```ini
+  [dotnet.test.runner]
+  name = "VSTest"
+  ```
+
+> [!IMPORTANT]
+> The `dotnet test` experience for MTP is only supported in `Microsoft.Testing.Platform` version 1.7 and later.
+
+> [!TIP]
+> For conceptual documentation about `dotnet test`, see [Testing with dotnet test](../testing/unit-testing-with-dotnet-test.md).
+
+## VSTest and Microsoft.Testing.Platform (MTP)
+
+### [dotnet test with VSTest](#tab/dotnet-test-with-vstest)
+
+**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
+
+#### Synopsis
 
 ```dotnetcli
 dotnet test [<PROJECT> | <SOLUTION> | <DIRECTORY> | <DLL> | <EXE>]
-    [--test-adapter-path <ADAPTER_PATH>] 
+    [--test-adapter-path <ADAPTER_PATH>]
     [-a|--arch <ARCHITECTURE>]
+    [--artifacts-path <ARTIFACTS_DIR>]
     [--blame]
     [--blame-crash]
     [--blame-crash-dump-type <DUMP_TYPE>]
@@ -48,11 +75,14 @@ dotnet test [<PROJECT> | <SOLUTION> | <DIRECTORY> | <DLL> | <EXE>]
 dotnet test -h|--help
 ```
 
-## Description
+#### Description
 
-The `dotnet test` command is used to execute unit tests in a given solution. The `dotnet test` command builds the solution and runs a test host application for each test project in the solution. The test host executes tests in the given project using a test framework, for example: MSTest, NUnit, or xUnit, and reports the success or failure of each test. If all tests are successful, the test runner returns 0 as an exit code; otherwise if any test fails, it returns 1.
+The `dotnet test` command is used to execute unit tests in a given solution. The `dotnet test` command builds the solution and runs a test host application for each test project in the solution using `VSTest`. The test host executes tests in the given project using a test framework, for example: MSTest, NUnit, or xUnit, and reports the success or failure of each test. If all tests are successful, the test runner returns 0 as an exit code; otherwise if any test fails, it returns 1.
 
-For multi-targeted projects, tests are run for each targeted framework. The test host and the unit test framework are packaged as NuGet packages and are restored as ordinary dependencies for the project.
+> [!NOTE]
+> `dotnet test` was originally designed to support only `VSTest`-based test projects. Recent versions of the test frameworks are adding support for [Microsoft.Testing.Platform](../testing/microsoft-testing-platform-intro.md). This alternative test platform is more lightweight and faster than `VSTest` and supports `dotnet test` with different command line options. For more information, see [Microsoft.Testing.Platform](../testing/microsoft-testing-platform-intro.md).
+
+For multi-targeted projects, tests are run for each targeted framework. The test host and the unit test framework are packaged as NuGet packages and are restored as ordinary dependencies for the project. Starting with the .NET 9 SDK, these tests are run in parallel by default. To disable parallel execution, set the `TestTfmsInParallel` MSBuild property to `false`. For more information, see [Run tests in parallel](../whats-new/dotnet-9/sdk.md#run-tests-in-parallel) and the [example command line later in this article](#testtfmsinparallel).
 
 Test projects specify the test runner using an ordinary `<PackageReference>` element, as seen in the following sample project file:
 
@@ -60,13 +90,13 @@ Test projects specify the test runner using an ordinary `<PackageReference>` ele
 
 Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. And `xunit.runner.visualstudio` is a test adapter, which allows the xUnit framework to work with the test host.
 
-### Implicit restore
+#### Implicit restore
 
 [!INCLUDE[dotnet restore note](~/includes/dotnet-restore-note.md)]
 
 [!INCLUDE [cli-advertising-manifests](../../../includes/cli-advertising-manifests.md)]
 
-## Arguments
+#### Arguments
 
 - **`PROJECT | SOLUTION | DIRECTORY | DLL | EXE`**
 
@@ -78,13 +108,16 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
   If not specified, the effect is the same as using the `DIRECTORY` argument to specify the current directory.
 
-## Options
+#### Options
 
 > [!WARNING]
 > Breaking changes in options:
 >
 > - Starting in .NET 7: switch `-a` to alias `--arch` instead of `--test-adapter-path`
 > - Starting in .NET 7: switch `-r` to alias `--runtime` instead of `--results-directory`
+
+> [!WARNING]
+> When using `Microsoft.Testing.Platform`, please refer to [dotnet test integration](../testing/microsoft-testing-platform-integration-dotnet-test.md) for the supported options. As a rule of thumbs, every option non-related to testing is supported while every testing-related option is not supported as-is.
 
 - **`--test-adapter-path <ADAPTER_PATH>`**
 
@@ -94,20 +127,22 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
 [!INCLUDE [arch-no-a](../../../includes/cli-arch-no-a.md)]
 
+[!INCLUDE [artifacts-path](../../../includes/cli-artifacts-path.md)]
+
 - **`--blame`**
 
   Runs the tests in blame mode. This option is helpful in isolating problematic tests that cause the test host to crash. When a crash is detected, it creates a sequence file in `TestResults/<Guid>/<Guid>_Sequence.xml` that captures the order of tests that were run before the crash.
-  
+
   This option does not create a memory dump and is not helpful when the test is hanging.
 
 - **`--blame-crash`** (Available since .NET 5.0 SDK)
 
   Runs the tests in blame mode and collects a crash dump when the test host exits unexpectedly. This option depends on the version of .NET used, the type of error, and the operating system.
-  
+
   For exceptions in managed code, a dump will be automatically collected on .NET 5.0 and later versions. It will generate a dump for testhost or any child process that also ran on .NET 5.0 and crashed. Crashes in native code will not generate a dump. This option works on Windows, macOS, and Linux.
-  
+
   Crash dumps in native code, or when using .NET Core 3.1 or earlier versions, can only be collected on Windows, by using Procdump. A directory that contains *procdump.exe* and *procdump64.exe* must be in the PATH or PROCDUMP_PATH environment variable. [Download the tools](/sysinternals/downloads/procdump). Implies `--blame`.
-  
+
   To collect a crash dump from a native application running on .NET 5.0 or later, the usage of Procdump can be forced by setting the `VSTEST_DUMP_FORCEPROCDUMP` environment variable to `1`.
 
 - **`--blame-crash-dump-type <DUMP_TYPE>`** (Available since .NET 5.0 SDK)
@@ -129,7 +164,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 - **`--blame-hang-timeout <TIMESPAN>`** (Available since .NET 5.0 SDK)
 
   Per-test timeout, after which a hang dump is triggered and the test host process and all of its child processes are dumped and terminated. The timeout value is specified in one of the following formats:
-  
+
   - 1.5h, 1.5hour, 1.5hours
   - 90m, 90min, 90minute, 90minutes
   - 5400s, 5400sec, 5400second, 5400seconds
@@ -142,7 +177,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 - **`--collect <DATA_COLLECTOR_NAME>`**
 
   Enables data collector for the test run. For more information, see [Monitor and analyze test run](https://aka.ms/vstest-collect).
-  
+
   For example you can collect code coverage by using the `--collect "Code Coverage"` option. For more information, see [Use code coverage](/visualstudio/test/using-code-coverage-to-determine-how-much-code-is-being-tested), [Customize code coverage analysis](/visualstudio/test/customizing-code-coverage-analysis), and [GitHub issue dotnet/docs#34479](https://github.com/dotnet/docs/issues/34479).
 
   To collect code coverage you can also use [Coverlet](https://github.com/coverlet-coverage/coverlet/blob/master/README.md) by using the `--collect "XPlat Code Coverage"` option.
@@ -154,7 +189,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 - **`-e|--environment <NAME="VALUE">`**
 
   Sets the value of an environment variable. Creates the variable if it does not exist, overrides if it does exist. Use of this option will force the tests to be run in an isolated process. The option can be specified multiple times to provide multiple variables.
-  
+
 - **`-f|--framework <FRAMEWORK>`**
 
   The [target framework moniker (TFM)](../../standard/frameworks.md) of the target framework to run tests for. The target framework must also be specified in the project file.
@@ -169,15 +204,15 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
 - **`-l|--logger <LOGGER>`**
 
-  Specifies a logger for test results and optionally switches for the logger. Specify this parameter multiple times to enable multiple loggers. For more information, see [Reporting test results](https://github.com/Microsoft/vstest-docs/blob/main/docs/report.md), [Switches for loggers](/visualstudio/msbuild/msbuild-command-line-reference#switches-for-loggers), and the [examples](#examples) later in this article.
-  
+  Specifies a logger for test results and optionally switches for the logger. Specify this parameter multiple times to enable multiple loggers. For more information, see [Reporting test results](https://github.com/microsoft/vstest/blob/main/docs/report.md#available-test-loggers), [Switches for loggers](/visualstudio/msbuild/msbuild-command-line-reference#switches-for-loggers), and the [examples](#examples) later in this article.
+
   In order to pass command-line switches to the logger:
-  
+
   * Use the full name of the switch, not the abbreviated form (for example, `verbosity` instead of `v`).
   * Omit any leading dashes.
   * Replace the space separating each switch with a semicolon `;`.
   * If the switch has a value, replace the colon separator between that switch and its value with the equals sign `=`.
-  
+
   For example, `-v:detailed --consoleLoggerParameters:ErrorsOnly` would become `verbosity=detailed;consoleLoggerParameters=ErrorsOnly`.
 
 - **`--no-build`**
@@ -211,7 +246,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 - **`-r|--runtime <RUNTIME_IDENTIFIER>`**
 
   The target runtime to test for.
-  
+
   Short form `-r` available starting in .NET SDK 7.
 
 - **`-s|--settings <SETTINGS_FILE>`**
@@ -219,7 +254,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
   The `.runsettings` file to use for running the tests. The `TargetPlatform` element (x86|x64) has no effect for `dotnet test`. To run tests that target x86, install the x86 version of .NET Core. The bitness of the *dotnet.exe* that is on the path is what will be used for running tests. For more information, see the following resources:
 
   - [Configure unit tests by using a `.runsettings` file.](/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file)
-  - [Configure a test run](https://github.com/Microsoft/vstest-docs/blob/main/docs/configure.md)
+  - [Configure a test run](https://github.com/microsoft/vstest/blob/main/docs/configure.md)
 
 - **`-t|--list-tests`**
 
@@ -243,7 +278,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
   For more information, see [Passing RunSettings arguments through command line](https://github.com/Microsoft/vstest-docs/blob/main/docs/RunSettingsArguments.md).
 
-## Examples
+#### Examples
 
 - Run the tests in the project in the current directory:
 
@@ -269,16 +304,16 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
   dotnet test --logger trx
   ```
 
-- Run the tests in the project in the current directory, and generate a code coverage file (after installing [Coverlet](https://github.com/coverlet-coverage/coverlet/blob/master/Documentation/VSTestIntegration.md) collectors integration):
-
-  ```dotnetcli
-  dotnet test --collect:"XPlat Code Coverage"
-  ```
-
-- Run the tests in the project in the current directory, and generate a code coverage file (Windows only):
+- Run the tests in the project in the current directory, and generate a code coverage file using [Microsoft Code Coverage](https://github.com/microsoft/codecoverage/blob/main/README.md):
 
   ```dotnetcli
   dotnet test --collect "Code Coverage"
+  ```
+
+- Run the tests in the project in the current directory, and generate a code coverage file using [Coverlet](https://github.com/coverlet-coverage/coverlet/blob/master/README.md) (after installing [Coverlet](https://github.com/coverlet-coverage/coverlet/blob/master/Documentation/VSTestIntegration.md) collectors integration):
+
+  ```dotnetcli
+  dotnet test --collect:"XPlat Code Coverage"
   ```
 
 - Run the tests in the project in the current directory, and log with detailed verbosity to the console:
@@ -316,7 +351,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 - Run the tests in the `test1` project, providing the `-bl` (binary log) argument to `msbuild`:
 
   ```dotnetcli
-  dotnet test ~/projects/test1/test1.csproj -bl  
+  dotnet test ~/projects/test1/test1.csproj -bl
   ```
 
 - Run the tests in the `test1` project, setting the MSBuild `DefineConstants` property to `DEV`:
@@ -325,7 +360,15 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
   dotnet test ~/projects/test1/test1.csproj -p:DefineConstants="DEV"
   ```
 
-## Filter option details
+  <a id="testtfmsinparallel"></a>
+
+- Run the tests in the `test1` project, setting the MSBuild `TestTfmsInParallel` property to `false`:
+
+  ```dotnetcli
+  dotnet test ~/projects/test1/test1.csproj -p:TestTfmsInParallel=false
+  ```
+
+#### Filter option details
 
 `--filter <EXPRESSION>`
 
@@ -337,7 +380,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 | -------------- | --------------------------------------------------------------------------------------------------------- |
 | MSTest         | <ul><li>FullyQualifiedName</li><li>Name</li><li>ClassName</li><li>Priority</li><li>TestCategory</li></ul> |
 | xUnit          | <ul><li>FullyQualifiedName</li><li>DisplayName</li><li>Category</li></ul>                                 |
-| NUnit          | <ul><li>FullyQualifiedName</li><li>Name</li><li>TestCategory</li><li>Priority</li></ul>                                   |
+| NUnit          | <ul><li>FullyQualifiedName</li><li>Name</li><li>Category</li><li>Priority</li></ul>                                   |
 
 The `<operator>` describes the relationship between the property and the value:
 
@@ -363,8 +406,217 @@ You can enclose expressions in parenthesis when using conditional operators (for
 
 For more information and examples on how to use selective unit test filtering, see [Running selective unit tests](../testing/selective-unit-tests.md).
 
-## See also
+#### See also
 
 - [Frameworks and Targets](../../standard/frameworks.md)
 - [.NET Runtime Identifier (RID) catalog](../rid-catalog.md)
-- [Passing runsettings arguments through commandline](https://github.com/Microsoft/vstest-docs/blob/main/docs/RunSettingsArguments.md)
+- [Passing runsettings arguments through commandline](https://github.com/microsoft/vstest/blob/main/docs/RunSettingsArguments.md)
+
+### [dotnet test with MTP](#tab/dotnet-test-with-mtp)
+
+**This article applies to:** ✔️ .NET 10 SDK and later versions
+
+#### Synopsis
+
+```dotnetcli
+dotnet test
+    [--project <PROJECT_PATH>]
+    [--solution <SOLUTION_PATH>]
+    [--directory <DIRECTORY_PATH>]
+    [--test-modules <EXPRESSION>] 
+    [--root-directory <ROOT_PATH>]
+    [--max-parallel-test-modules <NUMBER>]
+    [-a|--arch <ARCHITECTURE>]
+    [-c|--configuration <CONFIGURATION>]
+    [-f|--framework <FRAMEWORK>]
+    [--os <OS>]
+    [-r|--runtime <RUNTIME_IDENTIFIER>]
+    [-v|--verbosity <LEVEL>]
+    [--no-build]
+    [--no-restore]
+    [--no-ansi]
+    [--no-progress]
+    [--output <VERBOSITY_LEVEL>]
+    [--no-launch-profile]
+    [--no-launch-profile-arguments]
+    [<args>...]
+
+dotnet test -h|--help
+```
+
+#### Description
+
+With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest. The test-related arguments are no longer fixed, as they are tied to the registered extensions in the test project(s). Moreover, MTP supports a globbing filter when running tests. For more information, see [Microsoft.Testing.Platform](../testing/microsoft-testing-platform-intro.md).
+
+> [!WARNING]
+> When Microsoft.Testing.Platform is opted in via `dotnet.config`, `dotnet test` expects all test projects to use Microsoft.Testing.Platform. It is an error if any of the test projects use VSTest.
+
+#### Implicit restore
+
+[!INCLUDE[dotnet restore note](~/includes/dotnet-restore-note.md)]
+
+#### Options
+
+> [!NOTE]
+> You can use only one of the following options at a time: `--project`, `--solution`, `--directory`, or `--test-modules`. These options can't be combined.
+> In addition, when using `--test-modules`, you can't specify `--arch`, `--configuration`, `--framework`, `--os`, or `--runtime`. These options are not relevant for an already-built module.
+
+- **`--project <PROJECT_PATH>`**
+
+  Specifies the path to the test project.
+
+- **`--solution <SOLUTION_PATH>`**
+
+  Specifies the path to the solution.
+
+- **`--directory <DIRECTORY_PATH>`**
+
+  Specifies the path to a directory that contains a project or a solution.
+
+- **`--test-modules <EXPRESSION>`**
+
+  Filters test modules using file globbing in .NET. Only tests belonging to those test modules will run. For more information and examples on how to use file globbing in .NET, see [File globbing](../../../docs/core/extensions/file-globbing.md).
+
+- **`--root-directory <ROOT_PATH>`**
+
+  Specifies the root directory of the `--test-modules` option. It can only be used with the `--test-modules` option.
+
+- **`--max-parallel-test-modules <NUMBER>`**
+
+  Specifies the maximum number of test modules that can run in parallel.
+
+[!INCLUDE [arch-no-a](../../../includes/cli-arch-no-a.md)]
+
+[!INCLUDE [configuration](../../../includes/cli-configuration.md)]
+
+- **`-f|--framework <FRAMEWORK>`**
+
+  The [target framework moniker (TFM)](../../standard/frameworks.md) of the target framework to run tests for. The target framework must also be specified in the project file.
+
+[!INCLUDE [os](../../../includes/cli-os.md)]
+
+- **`-r|--runtime <RUNTIME_IDENTIFIER>`**
+
+  The target runtime to test for.
+
+  Short form `-r` available starting in .NET SDK 7.
+
+- **`-v|--verbosity <LEVEL>`**
+  
+  Sets the MSBuild verbosity level. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. For more information, see <xref:Microsoft.Build.Framework.LoggerVerbosity>.
+
+- **`--no-build`**
+
+  Specifies that the test project isn't built before being run. It also implicitly sets the `--no-restore` flag.
+
+- **`--no-restore`**
+
+  Specifies that an implicit restore isn't executed when running the command.
+
+- **`--no-ansi`**
+
+  Disables outputting ANSI escape characters to screen.
+
+- **`--no-progress`**
+
+  Disables reporting progress to screen.
+
+- **`--output <VERBOSITY_LEVEL>`**
+
+  Specifies the output verbosity when reporting tests. Valid values are `Normal` and `Detailed`. The default is `Normal`.
+
+- **`--no-launch-profile`**
+
+  Do not attempt to use launchSettings.json to configure the application. By default, `launchSettings.json` is used, which can apply environment variables and command-line arguments to the test executable.
+
+- **`--no-launch-profile-arguments`**
+
+  Do not use arguments specified by `commandLineArgs` in launch profile to run the application.
+
+- **`--property:<NAME>=<VALUE>`**
+
+  Sets one or more MSBuild properties. Specify multiple properties by repeating the option:
+
+  ```dotnetcli
+  --property:<NAME1>=<VALUE1> --property:<NAME2>=<VALUE2>
+  ```
+
+  The short form `-p` can be used for `--property`. The same applies for `/property:property=value` and its short form is `/p`.
+  More informatiom about the available arguments can be found in [the dotnet msbuild documentation](dotnet-msbuild.md).
+
+- **`-?|-h|--help`**
+
+  Prints out a description of how to use the command. Some options are static while others, namely platform and extension options, are dynamic. These dynamic options might differ from one test application to another, as they are based on the registered extensions in the test project.
+
+- **`args`**
+
+  Specifies extra arguments to pass to the test application(s). Use a space to separate multiple arguments. For more information and examples on what to pass, see [Microsoft.Testing.Platform overview](../../../docs/core/testing/microsoft-testing-platform-intro.md) and [Microsoft.Testing.Platform extensions](../../../docs/core/testing/microsoft-testing-platform-extensions.md).
+
+  > [!TIP]
+  > To specify extra arguments for specific projects, use the `TestingPlatformCommandLineArguments` MSBuild property.
+
+> [!NOTE]
+> To enable trace logging to a file, use the environment variable `DOTNET_CLI_TEST_TRACEFILE` to provide the path to the trace file.
+
+#### Examples
+
+- Run the tests in the project or solution in the current directory:
+
+  ```dotnetcli
+  dotnet test
+  ```
+
+- Run the tests in the `TestProject` project:
+
+  ```dotnetcli
+  dotnet test --project ./TestProject/TestProject.csproj
+  ```
+
+- Run the tests in the `TestProjects` solution:
+
+  ```dotnetcli
+  dotnet test --solution ./TestProjects/TestProjects.sln
+  ```
+
+- Run the tests in a solution or project that can be found in the `TestProjects` directory:
+
+  ```dotnetcli
+  dotnet test --directory ./TestProjects
+  ```
+
+- Run the tests using `TestProject.dll` assembly:
+
+  ```dotnetcli
+  dotnet test --test-modules "**/bin/**/Debug/net10.0/TestProject.dll"
+  ```
+
+- Run the tests using `TestProject.dll` assembly with the root directory:
+
+  ```dotnetcli
+  dotnet test --test-modules "**/bin/**/Debug/net10.0/TestProject.dll" --root-directory "c:\code"
+  ```
+
+- Run the tests in the current directory with code coverage:
+
+  ```dotnetcli
+  dotnet test --coverage
+  ```
+
+- Run the tests in the `TestProject` project, providing the `-bl` (binary log) argument to `msbuild`:
+
+  ```dotnetcli
+  dotnet test --project ./TestProject/TestProject.csproj -bl
+  ```
+
+- Run the tests in the `TestProject` project, setting the MSBuild `DefineConstants` property to `DEV`:
+
+  ```dotnetcli
+  dotnet test --project ./TestProject/TestProject.csproj -p:DefineConstants="DEV"
+  ```
+
+#### See also
+
+- [Frameworks and Targets](../../standard/frameworks.md)
+- [.NET Runtime Identifier (RID) catalog](../rid-catalog.md)
+- [Microsoft.Testing.Platform](../../../docs/core/testing/microsoft-testing-platform-intro.md)
+- [Microsoft.Testing.Platform extensions](../../../docs/core/testing/microsoft-testing-platform-extensions.md)

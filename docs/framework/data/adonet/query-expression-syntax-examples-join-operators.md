@@ -9,7 +9,7 @@ ms.assetid: f4d86667-3392-470d-a076-5ca6cbb660f6
 ---
 # Query Expression Syntax Examples: Join Operators (LINQ to DataSet)
 
-Joining is an important operation in queries that target data sources that have no navigable relationships to each other, such as relational database tables. A join of two data sources is the association of objects in one data source with objects that share a common attribute in the other data source. For more information, see [Standard Query Operators Overview (C#)](../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md) or [Standard Query Operators Overview (Visual Basic)](../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md).  
+Joining is an important operation in queries that target data sources that have no navigable relationships to each other, such as relational database tables. A join of two data sources is the association of objects in one data source with objects that share a common attribute in the other data source. For more information, see [Standard Query Operators Overview (C#)](../../../csharp/linq/standard-query-operators/index.md) or [Standard Query Operators Overview (Visual Basic)](../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md).  
   
  The examples in this topic demonstrate how to use the <xref:System.Linq.Enumerable.GroupJoin%2A> and <xref:System.Linq.Enumerable.Join%2A> methods to query a <xref:System.Data.DataSet> using the query expression syntax.  
   
@@ -53,5 +53,5 @@ Joining is an important operation in queries that target data sources that have 
 
 - [Loading Data Into a DataSet](loading-data-into-a-dataset.md)
 - [LINQ to DataSet Examples](linq-to-dataset-examples.md)
-- [Standard Query Operators Overview (C#)](../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)
+- [Standard Query Operators Overview (C#)](../../../csharp/linq/standard-query-operators/index.md)
 - [Standard Query Operators Overview (Visual Basic)](../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)

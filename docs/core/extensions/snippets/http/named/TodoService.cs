@@ -23,7 +23,7 @@ public sealed class TodoService
     {
         // Create the client
         string? httpClientName = _configuration["TodoHttpClientName"];
-        using HttpClient client = _httpClientFactory.CreateClient(httpClientName ?? "");
+        HttpClient client = _httpClientFactory.CreateClient(httpClientName ?? "");
 
         try
         {
@@ -33,13 +33,13 @@ public sealed class TodoService
                 $"todos?userId={userId}",
                 new JsonSerializerOptions(JsonSerializerDefaults.Web));
 
-            return todos ?? Array.Empty<Todo>();
+            return todos ?? [];
         }
         catch (Exception ex)
         {
             _logger.LogError("Error getting something fun to say: {Error}", ex);
         }
 
-        return Array.Empty<Todo>();
+        return [];
     }
 }

@@ -5,7 +5,6 @@ author: IEvangelist
 ms.author: dapine
 ms.date: 02/16/2022
 ms.topic: quickstart
-recommendations: false
 ---
 
 # Quickstart: Create a test validation GitHub workflow
@@ -61,7 +60,7 @@ In the preceding workflow composition:
 - [dotnet restore](../core/tools/dotnet-restore.md)
 - [dotnet build](../core/tools/dotnet-build.md)
 - [dotnet test](../core/tools/dotnet-test.md)
-- [Unit testing .NET apps](../core/testing/unit-testing-with-dotnet-test.md)
+- [Unit testing .NET apps](../core/testing/index.md)
 - [actions/checkout](https://github.com/actions/checkout)
 - [actions/setup-dotnet](https://github.com/actions/setup-dotnet)
 

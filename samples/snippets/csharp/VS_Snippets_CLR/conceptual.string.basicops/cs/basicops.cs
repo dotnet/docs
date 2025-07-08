@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 
 class MainClass
@@ -16,11 +16,11 @@ class MainClass
       Console.WriteLine();
 
       if (MyData.Validated) {
-         Console.WriteLine("Name: {0}", MyData.Name);
-         Console.WriteLine("Address: {0}", MyData.Address);
-         Console.WriteLine("City: {0}", MyData.City);
-         Console.WriteLine("State: {0}", MyData.State);
-         Console.WriteLine("Zip: {0}", MyData.Zip);
+         Console.WriteLine($"Name: {MyData.Name}");
+         Console.WriteLine($"Address: {MyData.Address}");
+         Console.WriteLine($"City: {MyData.City}");
+         Console.WriteLine($"State: {MyData.State}");
+         Console.WriteLine($"Zip: {MyData.Zip}");
 
          Console.WriteLine("\nThe following address will be used:");
          Console.WriteLine(MyData.Address);

@@ -9,7 +9,16 @@ namespace InRefOutModifier
         public static void Examples()
         {
             FirstRefExample();
-            ModifyProductsByReference();
+            // call By Ref examples:
+
+            var options = new OptionStruct();
+
+            // <ByReadonlyRefExampleCall>
+            ForceByRef(in options);
+            ForceByRef(ref options);
+            ForceByRef(options); // Warning! variable should be passed with `ref` or `in`
+            ForceByRef(new OptionStruct()); // Warning, but an expression, so no variable to reference
+            // </ByReadonlyRefExampleCall>
         }
 
         private static void FirstRefExample()
@@ -26,60 +35,6 @@ namespace InRefOutModifier
             // Output: 45
             // </Snippet1>
         }
-
-        // <SnippetFindReturningRef>
-        public static ref int Find(int[,] matrix, Func<int, bool> predicate)
-        {
-            for (int i = 0; i < matrix.GetLength(0); i++)
-                for (int j = 0; j < matrix.GetLength(1); j++)
-                    if (predicate(matrix[i, j]))
-                        return ref matrix[i, j];
-            throw new InvalidOperationException("Not found");
-        }
-        // </SnippetFindReturningRef>
-
-
-        //<Snippet3>
-        class Product
-        {
-            public Product(string name, int newID)
-            {
-                ItemName = name;
-                ItemID = newID;
-            }
-
-            public string ItemName { get; set; }
-            public int ItemID { get; set; }
-        }
-
-        private static void ChangeByReference(ref Product itemRef)
-        {
-            // Change the address that is stored in the itemRef parameter.
-            itemRef = new Product("Stapler", 99999);
-
-            // You can change the value of one of the properties of
-            // itemRef. The change happens to item in Main as well.
-            itemRef.ItemID = 12345;
-        }
-
-        private static void ModifyProductsByReference()
-        {
-            // Declare an instance of Product and display its initial values.
-            Product item = new Product("Fasteners", 54321);
-            System.Console.WriteLine("Original values in Main.  Name: {0}, ID: {1}\n",
-                item.ItemName, item.ItemID);
-
-            // Pass the product instance to ChangeByReference.
-            ChangeByReference(ref item);
-            System.Console.WriteLine("Back in Main.  Name: {0}, ID: {1}\n",
-                item.ItemName, item.ItemID);
-        }
-
-        // This method displays the following output:
-        // Original values in Main.  Name: Fasteners, ID: 54321
-        // Back in Main.  Name: Stapler, ID: 12345
-
-        // </Snippet3>
 
         private static void BookCollectionExample()
         {
@@ -99,15 +54,63 @@ namespace InRefOutModifier
             //       Tale of Two Cities, A, by Charles Dickens
             // </Snippet5>
         }
-    }
-    //<Snippet2>
-    class RefOverloadExample
-    {
-        public void SampleMethod(int i) { }
-        public void SampleMethod(ref int i) { }
-    }
-    // </Snippet2>
 
+        private static void FirstOutExample()
+        {
+            // <OutVariableExample>
+            int initializeInMethod;
+            OutArgExample(out initializeInMethod);
+            Console.WriteLine(initializeInMethod);     // value is now 44
+
+            void OutArgExample(out int number)
+            {
+                number = 44;
+            }
+            // </OutVariableExample>
+        }
+
+        private static void OutVariableDeclaration()
+        {
+            // <OutVarDeclaration>
+            string numberAsString = "1640";
+
+            if (Int32.TryParse(numberAsString, out int number))
+                Console.WriteLine($"Converted '{numberAsString}' to {number}");
+            else
+                Console.WriteLine($"Unable to convert '{numberAsString}'");
+            // The example displays the following output:
+            //       Converted '1640' to 1640
+            // </OutVarDeclaration>
+        }
+
+        private static void FirstInExample()
+        {
+            // <InParameterModifier>
+            int readonlyArgument = 44;
+            InArgExample(readonlyArgument);
+            Console.WriteLine(readonlyArgument);     // value is still 44
+
+            void InArgExample(in int number)
+            {
+                // Uncomment the following line to see error CS8331
+                //number = 19;
+            }
+            // </InParameterModifier>
+        }
+
+        // <ByReadonlyRefExample>
+        public static void ForceByRef(ref readonly OptionStruct thing)
+        {
+            // elided
+        }
+        // </ByReadonlyRefExample>
+
+    }
+
+    public struct OptionStruct
+    {
+        // taking the place of lots of fields
+    }
     // <Snippet4>
 
     public class Book

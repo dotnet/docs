@@ -2,6 +2,8 @@
 title: SYSLIB0013 warning
 description: Learn about the EscapeUriString obsoletion that generates compile-time warning SYSLIB0013.
 ms.date: 04/24/2021
+f1_keywords:
+  - syslib0013
 ---
 # SYSLIB0013: EscapeUriString is obsolete
 

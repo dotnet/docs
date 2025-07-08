@@ -2,6 +2,8 @@
 title: SYSLIB0021 warning
 description: Learn about the obsoletion of derived cryptographic types that generates compile-time warning SYSLIB0021.
 ms.date: 05/18/2021
+f1_keywords:
+  - syslib0021
 ---
 # SYSLIB0021: Derived cryptographic types are obsolete
 

@@ -1,8 +1,8 @@
 ---
 title: Obsolete features in .NET 5+
-titleSuffix: ""
 description: Learn about APIs that are marked as obsolete in .NET 5 and later versions that produce SYSLIB compiler warnings.
-ms.date: 06/08/2023
+ms.date: 01/14/2025
+ai-usage: ai-assisted
 ---
 
 # Obsolete features in .NET 5+
@@ -20,7 +20,7 @@ If you encounter build warnings or errors due to usage of an obsolete API, follo
 The following table provides an index to the `SYSLIB0XXX` obsoletions in .NET 5+.
 
 | Diagnostic ID | Warning or error | Description |
-| - | - |
+|---------------|------------------|-------------|
 | [SYSLIB0001](syslib0001.md) | Warning | The UTF-7 encoding is insecure and should not be used. Consider using UTF-8 instead. |
 | [SYSLIB0002](syslib0002.md) | Error | <xref:System.Security.Permissions.PrincipalPermissionAttribute> is not honored by the runtime and must not be used. |
 | [SYSLIB0003](syslib0003.md) | Warning | Code access security (CAS) is not supported or honored by the runtime. |
@@ -29,7 +29,7 @@ The following table provides an index to the `SYSLIB0XXX` obsoletions in .NET 5+
 | [SYSLIB0006](syslib0006.md) | Warning | <xref:System.Threading.Thread.Abort?displayProperty=nameWithType> is not supported and throws <xref:System.PlatformNotSupportedException>. |
 | [SYSLIB0007](syslib0007.md) | Warning | The default implementation of this cryptography algorithm is not supported. |
 | [SYSLIB0008](syslib0008.md) | Warning | The <xref:System.Runtime.CompilerServices.DebugInfoGenerator.CreatePdbGenerator> API is not supported and throws <xref:System.PlatformNotSupportedException>. |
-| [SYSLIB0009](syslib0009.md) | Warning | The <xref:System.Net.AuthenticationManager.Authenticate%2A?displayProperty=nameWithType> and <xref:System.Net.AuthenticationManager.PreAuthenticate%2A?displayProperty=nameWithType> methods are not supported and throw <xref:System.PlatformNotSupportedException>. |
+| [SYSLIB0009](syslib0009.md) | Warning | <xref:System.Net.AuthenticationManager> is not supported. Methods will no-op or throw <xref:System.PlatformNotSupportedException>. |
 | [SYSLIB0010](syslib0010.md) | Warning | Some remoting APIs are not supported and throw <xref:System.PlatformNotSupportedException>. |
 | [SYSLIB0011](syslib0011.md) | Warning | <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> serialization is obsolete and should not be used. |
 | [SYSLIB0012](syslib0012.md) | Warning | <xref:System.Reflection.Assembly.CodeBase?displayProperty=nameWithType> and <xref:System.Reflection.Assembly.EscapedCodeBase?displayProperty=nameWithType> are only included for .NET Framework compatibility. Use <xref:System.Reflection.Assembly.Location?displayProperty=nameWithType> instead. |
@@ -69,9 +69,19 @@ The following table provides an index to the `SYSLIB0XXX` obsoletions in .NET 5+
 | [SYSLIB0046](syslib0046.md) | Warning | The <xref:System.Runtime.ControlledExecution.Run(System.Action,System.Threading.CancellationToken)?displayProperty=nameWithType> method might corrupt the process and should not be used in production code. |
 | [SYSLIB0047](syslib0047.md) | Warning | <xref:System.Xml.XmlSecureResolver> is obsolete. Use `XmlResolver.ThrowingResolver` instead when attempting to forbid XML external entity resolution. |
 | [SYSLIB0048](syslib0048.md) | Warning | <xref:System.Security.Cryptography.RSA.EncryptValue(System.Byte[])?displayProperty=nameWithType> and <xref:System.Security.Cryptography.RSA.DecryptValue(System.Byte[])?displayProperty=nameWithType> are obsolete. Use <xref:System.Security.Cryptography.RSA.Encrypt%2A?displayProperty=nameWithType> and <xref:System.Security.Cryptography.RSA.Decrypt%2A?displayProperty=nameWithType> instead. |
+| [SYSLIB0049](syslib0049.md) | Warning | JsonSerializerOptions.AddContext is obsolete. To register a JsonSerializerContext, use either the TypeInfoResolver or TypeInfoResolverChain property. |
 | [SYSLIB0050](syslib0050.md) | Warning | Formatter-based serialization is obsolete and should not be used. |
 | [SYSLIB0051](syslib0051.md) | Warning | APIs that support obsolete formatter-based serialization are obsolete. They should not be called or extended by application code. |
+| [SYSLIB0052](syslib0052.md) | Warning | APIs that support obsolete mechanisms for Regex extensibility are obsolete. |
 | [SYSLIB0053](syslib0053.md) | Warning | <xref:System.Security.Cryptography.AesGcm> should indicate the required tag size for encryption and decryption. Use a constructor that accepts the tag size. |
+| [SYSLIB0054](syslib0054.md) | Warning | <xref:System.Threading.Thread.VolatileRead%2A?displayProperty=nameWithType> and <xref:System.Threading.Thread.VolatileWrite%2A?displayProperty=nameWithType> are obsolete. Use <xref:System.Threading.Volatile.Read%2A?displayProperty=nameWithType> or <xref:System.Threading.Volatile.Write%2A?displayProperty=nameWithType> instead. |
+| [SYSLIB0055](syslib0055.md) | Warning | `AdvSimd.ShiftRightLogicalRoundedNarrowingSaturate*` methods with signed parameters are obsolete. Use the unsigned overloads instead. |
+| [SYSLIB0056](syslib0056.md) | Warning | `Assembly.LoadFrom` with a custom `AssemblyHashAlgorithm` is obsolete. Use overloads without an `AssemblyHashAlgorithm`. |
+| [SYSLIB0057](syslib0057.md) | Warning | `X509Certificate2` and `X509Certificate` constructors for binary and file content are obsolete. |
+| [SYSLIB0058](syslib0058.md) | Warning | The `KeyExchangeAlgorithm`, `KeyExchangeStrength`, `CipherAlgorithm`, `CipherAlgorithmStrength`, `HashAlgorithm`, and `HashStrength` properties of <xref:System.Net.Security.SslStream> are obsolete. Use <xref:System.Net.Security.SslStream.NegotiatedCipherSuite> instead. |
+| [SYSLIB0059](syslib0059.md) | Warning | <xref:Microsoft.Win32.SystemEvents.EventsThreadShutdown?displayProperty=nameWithType> callbacks aren't run before the process exits. Use <xref:System.AppDomain.ProcessExit?displayProperty=nameWithType> instead. |
+| [SYSLIB0060](syslib0060.md) | Warning | Constructors on <xref:System.Security.Cryptography.Rfc2898DeriveBytes?displayProperty=nameWithType> are obsolete. Use <xref:System.Security.Cryptography.Rfc2898DeriveBytes.Pbkdf2%2A?displayProperty=nameWithType> instead. |
+| [SYSLIB0061](syslib0061.md) | Warning | The `Queryable` <xref:System.Linq.Queryable.MaxBy``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Collections.Generic.IComparer{``0})?displayProperty=nameWithType> and <xref:System.Linq.Queryable.MinBy``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Collections.Generic.IComparer{``0})?displayProperty=nameWithType> taking an `IComparer<TSource>` are obsolete. Use the new ones that take an `IComparer<TKey>`. |
 
 ## Suppress warnings
 

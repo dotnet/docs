@@ -1,8 +1,8 @@
 ---
 title: Explore ranges of data using indices and ranges
 description: This advanced tutorial teaches you to explore data using indices and ranges to examine a continuous range of a sequential data set.
-ms.date: 11/01/2022
-ms.technology: csharp-fundamentals
+ms.date: 11/14/2023
+ms.subservice: fundamentals
 ms.custom: mvc
 ---
 # Indices and ranges
@@ -25,27 +25,13 @@ Indices and ranges provide a succinct syntax for accessing single elements or ra
 This language support relies on two new types and two new operators:
 
 - <xref:System.Index?displayProperty=nameWithType> represents an index into a sequence.
-- The index from end operator `^`, which specifies that an index is relative to the end of a sequence.
+- The [index from end operator `^`](../language-reference/operators/member-access-operators.md#index-from-end-operator-), which specifies that an index is relative to the end of a sequence.
 - <xref:System.Range?displayProperty=nameWithType> represents a sub range of a sequence.
-- The range operator `..`, which specifies the start and end of a range as its operands.
+- The [range operator `..`](../language-reference/operators/member-access-operators.md#range-operator-), which specifies the start and end of a range as its operands.
 
-Let's start with the rules for indices. Consider an array `sequence`. The `0` index is the same as `sequence[0]`. The `^0` index is the same as `sequence[sequence.Length]`. The expression `sequence[^0]` does throw an exception, just as `sequence[sequence.Length]` does. For any number `n`, the index `^n` is the same as `sequence.Length - n`.
+Let's start with the rules for indices. Consider an array `sequence`. The `0` index is the same as `sequence[0]`. The `^0` index is the same as `sequence[sequence.Length]`. The expression `sequence[^0]` throws an exception, just as `sequence[sequence.Length]` does. For any number `n`, the index `^n` is the same as `sequence.Length - n`.
 
-```csharp
-string[] words = new string[]
-{
-                // index from start    index from end
-    "The",      // 0                   ^9
-    "quick",    // 1                   ^8
-    "brown",    // 2                   ^7
-    "fox",      // 3                   ^6
-    "jumps",    // 4                   ^5
-    "over",     // 5                   ^4
-    "the",      // 6                   ^3
-    "lazy",     // 7                   ^2
-    "dog"       // 8                   ^1
-};              // 9 (or words.Length) ^0
-```
+:::code language="csharp" source="snippets/RangesIndexes/IndicesAndRanges.cs" id="SnippetIndicesAndRanges_Initialization":::
 
 You can retrieve the last word with the `^1` index. Add the following code below the initialization:
 
@@ -53,11 +39,11 @@ You can retrieve the last word with the `^1` index. Add the following code below
 
 A range specifies the *start* and *end* of a range. The start of the range is inclusive, but the end of the range is exclusive, meaning the *start* is included in the range but the *end* isn't included in the range. The range `[0..^0]` represents the entire range, just as `[0..sequence.Length]` represents the entire range.
 
-The following code creates a subrange with the words "quick", "brown", and "fox". It includes `words[1]` through `words[3]`. The element `words[4]` isn't in the range.
+The following code creates a subrange with the words "second", "third", and "fourth". It includes `words[1]` through `words[3]`. The element `words[4]` isn't in the range.
 
 :::code language="csharp" source="snippets/RangesIndexes/IndicesAndRanges.cs" id="SnippetIndicesAndRanges_Range":::
 
-The following code returns the range with "lazy" and "dog". It includes `words[^2]` and `words[^1]`. The end index `words[^0]` isn't included. Add the following code as well:
+The following code returns the range with "ninth" and "tenth". It includes `words[^2]` and `words[^1]`. The end index `words[^0]` isn't included.
 
 :::code language="csharp" source="snippets/RangesIndexes/IndicesAndRanges.cs" id="SnippetIndicesAndRanges_LastRange":::
 
@@ -132,3 +118,7 @@ Console.WriteLine(string.Join(",", arrayOfFiveItems));
 // 11,2,3
 // 1,2,3,4,5
 ```
+
+## See also
+
+* [Member access operators and expressions](../language-reference/operators/member-access-operators.md)

@@ -1,16 +1,13 @@
 ---
 title: Usage rules (code analysis)
 description: "Learn about code analysis usage rules."
-ms.date: 11/04/2016
-ms.topic: reference
+ms.date: 01/31/2024
 f1_keywords:
 - vs.codeanalysis.usagerules
 helpviewer_keywords:
 - rules, usage
 - managed code analysis rules, usage rules
 - usage rules
-author: gewarren
-ms.author: gewarren
 ---
 # Usage rules
 
@@ -63,3 +60,8 @@ Usage rules support proper usage of .NET.
 |[CA2258: Providing a 'DynamicInterfaceCastableImplementation' interface in Visual Basic is unsupported](ca2258.md) | Providing a functional `DynamicInterfaceCastableImplementationAttribute`-attributed interface requires the Default Interface Members feature, which is unsupported in Visual Basic. |
 | [CA2259: Ensure `ThreadStatic` is only used with static fields](ca2259.md) | <xref:System.ThreadStaticAttribute> only affects `static` (`Shared` in Visual Basic) fields. When applied to instance fields, the attribute has no impact on behavior. |
 | [CA2260: Implement generic math interfaces correctly](ca2260.md) | Generic math interfaces require the derived type itself to be used for the self-recurring type parameter. |
+| [CA2261: Do not use `ConfigureAwaitOptions.SuppressThrowing` with `Task<TResult>`](ca2261.md) | The `ConfigureAwaitOptions.SuppressThrowing` option isn't supported by the generic `Task<TResult>`, since that might lead to returning an invalid `TResult`. |
+| [CA2262: Set `MaxResponseHeadersLength` properly](ca2262.md) | Make sure the `MaxResponseHeadersLength` value is provided correctly. This value is measured in kilobytes. |
+| [CA2264: Do not pass a non-nullable value to 'ArgumentNullException.ThrowIfNull'](ca2264.md) | 'ArgumentNullException.ThrowIfNull' throws when the passed argument is 'null'. Certain constructs like non-nullable structs, and 'nameof()' and 'new' expressions are known to never be null, so 'ArgumentNullException.ThrowIfNull' will never throw. |
+| [CA2265: Do not compare `Span<T>` to `null` or `default`](ca2265.md) | Comparing a span to `null` or `default` might not do what you intended. `default` and the `null` literal are implicitly converted to `Span<T>.Empty`. |
+| [CA2263: Prefer generic overload when type is known](ca2263.md) | Using a generic overload is preferable to passing a <xref:System.Type?displayProperty=fullName> argument when the type is known, because they promote cleaner and more type-safe code with improved compile-time checks. |

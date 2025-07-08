@@ -1,7 +1,7 @@
 ---
 title: Update your codebase to use nullable reference types
 description: Learn nullable contexts, how to enable or disable warnings and annotations, and how to diagnose and fix possible null dereferencing issues.
-ms.technology: csharp-null-safety
+ms.subservice: null-safety
 ms.date: 09/15/2021
 ---
 # Update a codebase with nullable reference types to improve null diagnostic warnings
@@ -13,6 +13,9 @@ If your codebase is relatively small, you can turn on the [feature in your proje
 ## Plan your migration
 
 Regardless of how you update your codebase, the goal is that nullable warnings and nullable annotations are enabled in your project. Once you reach that goal, you'll have the `<nullable>Enable</nullable>` setting in your project. You won't need any of the preprocessor directives to adjust settings elsewhere.
+
+> [!NOTE]
+> You can designate a `Nullable` setting for your project using a `<Nullable>` tag. Refer to [Compiler options](language-reference/compiler-options/language.md#nullable) for more information.
 
 The first choice is setting the default for the project. Your choices are:
 

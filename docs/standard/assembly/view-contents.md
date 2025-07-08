@@ -14,11 +14,10 @@ ms.topic: how-to
 dev_langs:
   - "csharp"
   - "vb"
-  - "cpp"
 ---
 # How to: View assembly contents
 
-You can use the [Ildasm.exe (IL Disassembler)](../../framework/tools/ildasm-exe-il-disassembler.md) to view Microsoft intermediate language (MSIL) information in a file. If the file being examined is an assembly, this information can include the assembly's attributes and references to other modules and assemblies. This information can be helpful in determining whether a file is an assembly or part of an assembly and whether the file has references to other modules or assemblies.
+You can use the [Ildasm.exe (IL Disassembler)](../../framework/tools/ildasm-exe-il-disassembler.md) to view common intermediate language (CIL) information in a file. If the file being examined is an assembly, this information can include the assembly's attributes and references to other modules and assemblies. This information can be helpful in determining whether a file is an assembly or part of an assembly and whether the file has references to other modules or assemblies.
 
 To display the contents of an assembly using *Ildasm.exe*, enter **ildasm \<assembly name>** at a command prompt. For example, the following command disassembles the *Hello.exe* assembly.
 
@@ -26,29 +25,11 @@ To display the contents of an assembly using *Ildasm.exe*, enter **ildasm \<asse
 ildasm Hello.exe
 ```
 
-To view assembly manifest information, double-click the **Manifest** icon in the MSIL Disassembler window.
+To view assembly manifest information, double-click the **Manifest** icon in the IL Disassembler window.
 
 ## Example
 
 The following example starts with a basic "Hello World" program. After compiling the program, use *Ildasm.exe* to disassemble the *Hello.exe* assembly and view the assembly manifest.
-
-```cpp
-using namespace System;
-
-class MainApp
-{
-public:
-    static void Main()
-    {
-        Console::WriteLine("Hello World using C++/CLI!");
-    }
-};
-
-int main()
-{
-    MainApp::Main();
-}
-```
 
 ```csharp
 using System;
@@ -70,7 +51,7 @@ Class MainApp
 End Class
 ```
 
-Running the command *ildasm.exe* on the *Hello.exe* assembly and double-clicking the **Manifest** icon in the MSIL Disassembler window produces the following output:
+Running the command *ildasm.exe* on the *Hello.exe* assembly and double-clicking the **Manifest** icon in the IL Disassembler window produces the following output:
 
 ```output
 // Metadata version: v4.0.30319
@@ -119,5 +100,4 @@ An assembly manifest can contain a number of different directives, depending on 
 ## See also
 
 - [Application domains and assemblies](../../framework/app-domains/application-domains.md#application-domains-and-assemblies)
-- [Application domains and assemblies how-to topics](../../framework/app-domains/application-domains-and-assemblies-how-to-topics.md)
 - [Ildasm.exe (IL Disassembler)](../../framework/tools/ildasm-exe-il-disassembler.md)

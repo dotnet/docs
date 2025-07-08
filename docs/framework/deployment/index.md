@@ -11,9 +11,11 @@ helpviewer_keywords:
   - ".NET Framework application deployment"
 ms.assetid: 238d8284-6042-4a38-a7f6-1ee8efd719da
 ---
-# Deploying the .NET Framework and Applications
+# Deploy .NET Framework and applications
 
-This article helps you get started deploying the .NET Framework with your application. Most of the information is intended for developers, OEMs, and enterprise administrators. Users who want to install the .NET Framework on their computers should read [Installing the .NET Framework](../install/index.md).
+[!INCLUDE [net-framework-specific](../includes/net-framework-specific.md)]
+
+This article helps you get started deploying .NET Framework with your application. Most of the information is intended for developers, OEMs, and enterprise administrators. Users who want to install .NET Framework on their computers should read [Install .NET Framework](../install/index.md).
 
 ## Key Deployment Resources
 
@@ -61,9 +63,9 @@ Use the following links to other MSDN topics for specific information about depl
 
 - For general information, see the [.NET Framework blog](https://devblogs.microsoft.com/dotnet/).
 
-- [Detecting versions](../migration-guide/how-to-determine-which-versions-are-installed.md)
+- [Detecting versions](../install/how-to-determine-which-versions-are-installed.md)
 
-- [Detecting service packs and updates](../migration-guide/how-to-determine-which-net-framework-updates-are-installed.md)
+- [Detecting service packs and updates](../install/how-to-determine-which-net-framework-updates-are-installed.md)
 
 ## Features That Simplify Deployment
 

@@ -3,7 +3,6 @@ title: Debugging deadlock - .NET Core
 description: A tutorial that walks you through debugging a locking issue in .NET Core.
 ms.topic: tutorial
 ms.date: 07/20/2020
-recommendations: false
 ---
 
 # Debug a deadlock in .NET Core
@@ -19,7 +18,7 @@ In this tutorial, you will:
 > - Investigate an app that has stopped responding
 > - Generate a core dump file
 > - Analyze process threads in the dump file
-> - Analyze callstacks and sync blocks
+> - Analyze call stacks and sync blocks
 > - Diagnose and solve a deadlock
 
 ## Prerequisites

@@ -183,7 +183,6 @@ For more information, see the following sections of the [C# language specificati
 
 ## See also
 
-- [C# reference](../index.md)
 - [C# operators and expressions](index.md)
 - [Unsafe code, pointer types, and function pointers](../unsafe-code.md)
 - [unsafe keyword](../keywords/unsafe.md)

@@ -1,11 +1,10 @@
 ---
-title: "Generic Classes - C# Programming Guide"
+title: "Generic Classes"
 description: Learn about generic classes used in collections like linked lists, hash tables, stacks, queues, and trees.
 ms.date: 07/20/2015
-helpviewer_keywords: 
+helpviewer_keywords:
   - "C# language, generic classes"
   - "generics [C#], classes"
-ms.assetid: 27d6f256-cd61-41e3-bc6e-b990a53b0224
 ---
 # Generic Classes (C# Programming Guide)
 
@@ -33,7 +32,7 @@ Generic classes encapsulate operations that are not specific to a particular dat
   
  For an example of a simple generic class, see [Introduction to Generics](../../fundamentals/types/generics.md).  
   
- The rules for type parameters and constraints have several implications for generic class behavior, especially regarding inheritance and member accessibility. Before proceeding, you should understand some terms. For a generic class `Node<T>,` client code can reference the class either by specifying a type argument - to create a closed constructed type (`Node<int>`); or by leaving the type parameter unspecified - for example when you specify a generic base class, to create an open constructed type (`Node<T>`). Generic classes can inherit from concrete, closed constructed, or open constructed base classes:  
+ The rules for type parameters and constraints have several implications for generic class behavior, especially regarding inheritance and member accessibility. Before proceeding, you should understand some terms. For a generic class `Node<T>`, client code can reference the class either by specifying a type argument - to create a closed constructed type (`Node<int>`); or by leaving the type parameter unspecified - for example when you specify a generic base class, to create an open constructed type (`Node<T>`). Generic classes can inherit from concrete, closed constructed, or open constructed base classes:  
   
  [!code-csharp[csProgGuideGenerics#16](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideGenerics/CS/Generics.cs#16)]  
   
@@ -64,7 +63,6 @@ Generic classes encapsulate operations that are not specific to a particular dat
 ## See also
 
 - <xref:System.Collections.Generic>
-- [C# Programming Guide](../index.md)
 - [Generics](../../fundamentals/types/generics.md)
 - [Saving the State of Enumerators](/archive/blogs/wesdyer/saving-the-state-of-enumerators)
 - [An Inheritance Puzzle, Part One](/archive/blogs/ericlippert/an-inheritance-puzzle-part-one)

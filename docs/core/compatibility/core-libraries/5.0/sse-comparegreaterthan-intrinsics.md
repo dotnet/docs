@@ -22,7 +22,7 @@ Previously, `NaN` inputs to the listed <xref:System.Runtime.Intrinsics.X86.Sse> 
 
 Starting in .NET 5, these methods correctly handle `NaN` inputs and return the same results as the corresponding methods in the <xref:System.Runtime.Intrinsics.X86.Avx> class.
 
-The Streaming SIMD Extensions (SSE) and Streaming SIMD Extensions 2 (SSE2) industry standard architectures (ISAs) don't provide direct hardware support for these comparison methods, so they're implemented in software. Previously, the methods were improperly implemented, and they incorrectly handled `NaN` inputs. For code ported from native, the incorrect behavior may introduce bugs. For a 256-bit code path, the methods can also produce different results to the equivalent methods in the <xref:System.Runtime.Intrinsics.X86.Avx> class.
+The Streaming SIMD Extensions (SSE) and Streaming SIMD Extensions 2 (SSE2) Instruction Set Architectures (ISAs) don't provide direct hardware support for these comparison methods, so they're implemented in software. Previously, the methods were improperly implemented, and they incorrectly handled `NaN` inputs. For code ported from native, the incorrect behavior may introduce bugs. For a 256-bit code path, the methods can also produce different results to the equivalent methods in the <xref:System.Runtime.Intrinsics.X86.Avx> class.
 
 As an example of how the methods were previously incorrect, you can implement `CompareNotGreaterThan(x,y)` as `CompareLessThanOrEqual(x,y)` for regular integers. However, for `NaN` inputs, that logic computes the wrong result. Instead, using `CompareNotLessThan(y,x)` compares the numbers correctly *and* takes `NaN` inputs into consideration.
 

@@ -2,14 +2,14 @@
 title: Get started with Azure Files using F#
 description: Store file data in the cloud with Azure Files and mount your cloud file share from an Azure virtual machine (VM) or from an on-premises application running Windows.
 author: sylvanc
-ms.date: 08/26/2021
+ms.date: 09/17/2024
 ms.custom: "devx-track-fsharp"
 ---
 # Get started with Azure Files using F\#
 
 Azure Files is a service that offers file shares in the cloud using the standard [Server Message Block (SMB) protocol](/windows/win32/fileio/microsoft-smb-protocol-and-cifs-protocol-overview). Both SMB 2.1 and SMB 3.0 are supported. With Azure Files, you can migrate legacy applications that rely on file shares to Azure quickly and without costly rewrites. Applications running in Azure virtual machines or cloud services or from on-premises clients can mount a file share in the cloud, just as a desktop application mounts a typical SMB share. Any number of application components can then mount and access the file storage share simultaneously.
 
-For a conceptual overview of file storage, see [the .NET guide for file storage](/azure/storage/storage-dotnet-how-to-use-files).
+For a conceptual overview of file storage, see [the .NET guide for file storage](/azure/storage/storage-dotnet-how-to-use-files). For ease, these tutorials use [connection strings](/azure/storage/storage-configure-connection-string) to authenticate with Azure. For optimal security, you should use Microsoft Entra ID with [managed identities](/entra/identity/managed-identities-azure-resources/).
 
 ## Prerequisites
 
@@ -123,7 +123,7 @@ Here, you create a file and copy it to a blob within the same storage account. Y
 
 You can copy a blob to a file in the same way. If the source object is a blob, then create a SAS to authenticate access to that blob during the copy operation.
 
-## Troubleshooting File storage using metrics
+## Troubleshoot File storage using metrics
 
 Azure Storage Analytics supports metrics for File storage. With metrics data, you can trace requests and diagnose issues.
 
@@ -137,7 +137,6 @@ For more information about Azure Files, see these links.
 
 ### Conceptual articles and videos
 
-- [Azure Files Storage: a frictionless cloud SMB file system for Windows and Linux](https://azure.microsoft.com/resources/videos/azurecon-2015-azure-files-storage-a-frictionless-cloud-smb-file-system-for-windows-and-linux/)
 - [How to use Azure Files with Linux](/azure/storage/storage-how-to-use-files-linux)
 
 ### Tooling support for File storage

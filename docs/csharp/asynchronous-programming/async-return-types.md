@@ -1,7 +1,7 @@
 ---
 title: Async return types
 description: Learn about the return types that async methods can have in C# with code examples for each type.
-ms.date: 02/08/2023
+ms.date: 11/22/2024
 ---
 
 # Async return types (C#)
@@ -19,14 +19,14 @@ For more information about async methods, see [Asynchronous programming with asy
 Several other types also exist that are specific to Windows workloads:
 
 - <xref:System.Windows.Threading.DispatcherOperation>, for async operations limited to Windows.
-- <xref:Windows.Foundation.IAsyncAction>, for async actions in UWP that don't return a value.
-- <xref:Windows.Foundation.IAsyncActionWithProgress%601>, for async actions in UWP that report progress but don't return a value.
-- <xref:Windows.Foundation.IAsyncOperation%601>, for async operations in UWP that return a value.
-- <xref:Windows.Foundation.IAsyncOperationWithProgress%602>, for async operations in UWP that report progress and return a value.
+- <xref:Windows.Foundation.IAsyncAction>, for async actions in Universal Windows Platform (UWP) apps that don't return a value.
+- <xref:Windows.Foundation.IAsyncActionWithProgress%601>, for async actions in UWP apps that report progress but don't return a value.
+- <xref:Windows.Foundation.IAsyncOperation%601>, for async operations in UWP apps that return a value.
+- <xref:Windows.Foundation.IAsyncOperationWithProgress%602>, for async operations in UWP apps that report progress and return a value.
 
 ## Task return type
 
-Async methods that don't contain a `return` statement or that contain a `return` statement that doesn't return an operand usually have a return type of <xref:System.Threading.Tasks.Task>. Such methods return `void` if they run synchronously. If you use a <xref:System.Threading.Tasks.Task> return type for an async method, a calling method can use an `await` operator to suspend the caller's completion until the called async method has finished.
+Async methods that don't contain a `return` statement or that contain a `return` statement that doesn't return an operand usually have a return type of <xref:System.Threading.Tasks.Task>. Such methods return `void` if they run synchronously. If you use a <xref:System.Threading.Tasks.Task> return type for an async method, a calling method can use an `await` operator to suspend the caller's completion until the called async method finishes.
 
 In the following example, the `WaitAndApologizeAsync` method doesn't contain a `return` statement, so the method returns a <xref:System.Threading.Tasks.Task> object. Returning a `Task` enables `WaitAndApologizeAsync` to be awaited. The <xref:System.Threading.Tasks.Task> type doesn't include a `Result` property because it has no return value.
 
@@ -48,7 +48,7 @@ In the following example, the `GetLeisureHoursAsync` method contains a `return` 
 
 :::code language="csharp" source="snippets/async-return-types/async-returns1.cs" ID="LeisureHours":::
 
-When `GetLeisureHoursAsync` is called from within an await expression in the `ShowTodaysInfo` method, the await expression retrieves the integer value (the value of `leisureHours`) that's stored in the task returned by the `GetLeisureHours` method. For more information about await expressions, see [await](../language-reference/operators/await.md).
+When `GetLeisureHoursAsync` is called from within an await expression in the `ShowTodaysInfo` method, the await expression retrieves the integer value (the value of `leisureHours`) stored in the task returned by the `GetLeisureHours` method. For more information about await expressions, see [await](../language-reference/operators/await.md).
 
 You can better understand how `await` retrieves the result from a `Task<T>` by separating the call to `GetLeisureHoursAsync` from the application of `await`, as the following code shows. A call to method `GetLeisureHoursAsync` that isn't immediately awaited returns a `Task<int>`, as you would expect from the declaration of the method. The task is assigned to the `getLeisureHoursTask` variable in the example. Because `getLeisureHoursTask` is a <xref:System.Threading.Tasks.Task%601>, it contains a <xref:System.Threading.Tasks.Task%601.Result> property of type `TResult`. In this case, `TResult` represents an integer type. When `await` is applied to `getLeisureHoursTask`, the await expression evaluates to the contents of the <xref:System.Threading.Tasks.Task%601.Result%2A> property of `getLeisureHoursTask`. The value is assigned to the `ret` variable.
 
@@ -71,9 +71,9 @@ The following example shows the behavior of an async event handler. In the examp
 
 ## Generalized async return types and ValueTask\<TResult\>
 
-An async method can return any type that has an accessible `GetAwaiter` method that returns an instance of an *awaiter type*. In addition, the type returned from the `GetAwaiter` method must have the <xref:System.Runtime.CompilerServices.AsyncMethodBuilderAttribute?displayProperty=nameWithType> attribute. You can learn more in the article on [Attributes read by the compiler](../language-reference/attributes/general.md#asyncmethodbuilder-attribute) or the C# spec for the [Task type builder pattern](~/_csharpstandard/standard/classes.md#15152-task-type-builder-pattern).
+An async method can return any type that has an accessible `GetAwaiter` method that returns an instance of an *awaiter type*. In addition, the type returned from the `GetAwaiter` method must have the <xref:System.Runtime.CompilerServices.AsyncMethodBuilderAttribute?displayProperty=nameWithType> attribute. You can learn more in the article on [Attributes read by the compiler](../language-reference/attributes/general.md#asyncmethodbuilder-attribute) or the C# spec for the [Task type builder pattern](~/_csharpstandard/standard/classes.md#15142-task-type-builder-pattern).
 
-This feature is the complement to [awaitable expressions](~/_csharpstandard/standard/expressions.md#12982-awaitable-expressions), which describes the requirements for the operand of `await`. Generalized async return types enable the compiler to generate `async` methods that return different types. Generalized async return types enabled performance improvements in the .NET libraries. Because <xref:System.Threading.Tasks.Task> and <xref:System.Threading.Tasks.Task%601> are reference types, memory allocation in performance-critical paths, particularly when allocations occur in tight loops, can adversely affect performance. Support for generalized return types means that you can return a lightweight value type instead of a reference type to avoid additional memory allocations.
+This feature is the complement to [awaitable expressions](~/_csharpstandard/standard/expressions.md#12982-awaitable-expressions), which describes the requirements for the operand of `await`. Generalized async return types enable the compiler to generate `async` methods that return different types. Generalized async return types enabled performance improvements in the .NET libraries. Because <xref:System.Threading.Tasks.Task> and <xref:System.Threading.Tasks.Task%601> are reference types, memory allocation in performance-critical paths, particularly when allocations occur in tight loops, can adversely affect performance. Support for generalized return types means that you can return a lightweight value type instead of a reference type to avoid more memory allocations.
 
 .NET provides the <xref:System.Threading.Tasks.ValueTask%601?displayProperty=nameWithType> structure as a lightweight implementation of a generalized task-returning value. The following example uses the <xref:System.Threading.Tasks.ValueTask%601> structure to retrieve the value of two dice rolls.
 
@@ -81,11 +81,11 @@ This feature is the complement to [awaitable expressions](~/_csharpstandard/stan
 
 Writing a generalized async return type is an advanced scenario, and is targeted for use in specialized environments. Consider using the `Task`, `Task<T>`, and `ValueTask<T>` types instead, which cover most scenarios for asynchronous code.
 
-In C# 10 and later, you can apply the `AsyncMethodBuilder` attribute to an async method (instead of the async return type declaration) to override the builder for that type. Typically you'd apply this attribute to use a different builder provided in the .NET runtime.
+You can apply the `AsyncMethodBuilder` attribute to an async method (instead of the async return type declaration) to override the builder for that type. Typically you'd apply this attribute to use a different builder provided in the .NET runtime.
 
 ## Async streams with IAsyncEnumerable\<T\>
 
-An async method may return an *async stream*, represented by <xref:System.Collections.Generic.IAsyncEnumerable%601>. An async stream provides a way to enumerate items read from a stream when elements are generated in chunks with repeated asynchronous calls. The following example shows an async method that generates an async stream:
+An async method might return an *async stream*, represented by <xref:System.Collections.Generic.IAsyncEnumerable%601>. An async stream provides a way to enumerate items read from a stream when elements are generated in chunks with repeated asynchronous calls. The following example shows an async method that generates an async stream:
 
 :::code language="csharp" source="snippets/async-return-types/AsyncStreams.cs" ID="GenerateAsyncStream":::
 

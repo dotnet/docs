@@ -1,4 +1,4 @@
-﻿//<snippetUsingSerialization>
+//<snippetUsingSerialization>
 //<snippetUsing>
 using System;
 using System.Collections.Generic;
@@ -74,7 +74,7 @@ namespace ObjectServicesConceptsCS
                 // Insert the row in the Department table. Use the parameter substitution pattern.
                 int rowsAffected = context.ExecuteStoreCommand("insert Department values ({0}, {1}, {2}, {3}, {4})",
                                 DepartmentID, "Engineering", 350000.00, "2009-09-01", 2);
-                Console.WriteLine("Number of affected rows: {0}", rowsAffected);
+                Console.WriteLine($"Number of affected rows: {rowsAffected}");
 
                 // Get the DepartmentTest object.
                 DepartmentInfo department = context.ExecuteStoreQuery<DepartmentInfo>
@@ -83,7 +83,7 @@ namespace ObjectServicesConceptsCS
                 Console.WriteLine("ID: {0}, Name: {1} ", department.DepartmentID, department.Name);
 
                 rowsAffected = context.ExecuteStoreCommand("delete from Department where DepartmentID = {0}", DepartmentID);
-                Console.WriteLine("Number of affected rows: {0}", rowsAffected);
+                Console.WriteLine($"Number of affected rows: {rowsAffected}");
             }
         }
         //</snippetExecuteStoreCommandAndQueryForNewEntity>
@@ -202,7 +202,7 @@ namespace ObjectServicesConceptsCS
 
             // Iterate through the collection of Products.
             foreach (Product result in query)
-                Console.WriteLine("Product Name: {0}", result.Name);
+                Console.WriteLine($"Product Name: {result.Name}");
             //</snippetObjectContext>
         }
 
@@ -218,7 +218,7 @@ namespace ObjectServicesConceptsCS
 
             // Iterate through the collection of Products.
             foreach (Product result in query)
-                Console.WriteLine("Product Name: {0}", result.Name);
+                Console.WriteLine($"Product Name: {result.Name}");
             //</snippetObjectContext2>
         }
 
@@ -244,7 +244,7 @@ namespace ObjectServicesConceptsCS
                     while (enumerator.MoveNext())
                     {
                         Product product = (Product)enumerator.Current;
-                        Console.WriteLine("{0}", product.Name);
+                        Console.WriteLine($"{product.Name}");
                     }
                     // Dispose the enumerator
                     ((IDisposable)enumerator).Dispose();
@@ -295,12 +295,11 @@ namespace ObjectServicesConceptsCS
                 // Get the modified properties.
                 IEnumerable<string> modifiedFields = stateEntry.GetModifiedProperties();
                 foreach (string s in modifiedFields)
-                    Console.WriteLine("Modified field name: {0}\n Old Value: {1}\n New Value: {2}",
-                        s, oldPurchaseOrderNumber, newPurchaseOrderNumber);
+                    Console.WriteLine($"Modified field name: {s}\n Old Value: {oldPurchaseOrderNumber}\n New Value: {newPurchaseOrderNumber}");
 
                 // Get the Entity that is associated with this ObjectStateEntry.
                 SalesOrderHeader associatedEntity = (SalesOrderHeader)stateEntry.Entity;
-                Console.WriteLine("Associated Entity's ID: {0}", associatedEntity.SalesOrderID);
+                Console.WriteLine($"Associated Entity's ID: {associatedEntity.SalesOrderID}");
             }
             //</snippetObjectStateEntry_GetModifiedProperties>
         }
@@ -347,7 +346,7 @@ namespace ObjectServicesConceptsCS
                 {
                     RowType row = type.EdmType as RowType;
                     foreach (EdmProperty column in row.Properties)
-                        Console.WriteLine("{0}", column.Name);
+                        Console.WriteLine($"{column.Name}");
                 }
             }
             //</snippetGetResultType>
@@ -365,7 +364,7 @@ namespace ObjectServicesConceptsCS
                 ObjectResult<Product> queryResult = query.Execute(MergeOption.AppendOnly);
                 // Iterate through the collection of Product items.
                 foreach (Product result in queryResult)
-                    Console.WriteLine("{0}", result.Name);
+                    Console.WriteLine($"{result.Name}");
             }
             //</snippetObjectQuery_Execute>
         }
@@ -450,7 +449,7 @@ namespace ObjectServicesConceptsCS
                 // Get the first Product.
                 Product productQuery2 = productQuery1.First();
 
-                Console.WriteLine("Product Name: {0}", productQuery2.Name);
+                Console.WriteLine($"Product Name: {productQuery2.Name}");
             }
             //</snippetObjectQuery_First>
         }
@@ -478,8 +477,7 @@ namespace ObjectServicesConceptsCS
                 // Iterate through the collection of Product items.
                 foreach (Product result in productQuery2)
                 {
-                    Console.WriteLine("Product Name: {0}; Product ID: {1}",
-                        result.Name, result.ProductID);
+                    Console.WriteLine($"Product Name: {result.Name}; Product ID: {result.ProductID}");
                 }
             }
             //</snippetObjectQuery_Where>
@@ -501,7 +499,7 @@ namespace ObjectServicesConceptsCS
 
                 // Iterate through the collection of Product items.
                 foreach (Product result in productQuery2)
-                    Console.WriteLine("{0}", result.Name);
+                    Console.WriteLine($"{result.Name}");
             }
             //</snippetObjectQuery_Top>
         }
@@ -525,7 +523,7 @@ namespace ObjectServicesConceptsCS
 
                 foreach (Int32 result in productQuery2)
                 {
-                    Console.WriteLine("{0}", result);
+                    Console.WriteLine($"{result}");
                 }
             }
             //</snippetObjectQuery_SelectValue>
@@ -554,7 +552,7 @@ namespace ObjectServicesConceptsCS
 
                 foreach (DbDataRecord result in productQuery2)
                 {
-                    Console.WriteLine("{0}", result["ProductID"]);
+                    Console.WriteLine($"{result["ProductID"]}");
                 }
             }
             //</snippetObjectQuery_Select>
@@ -579,7 +577,7 @@ namespace ObjectServicesConceptsCS
                 // Iterate through the collection of Product items.
                 foreach (Product result in productQuery2)
                 {
-                    Console.WriteLine("{0}", result.ProductID);
+                    Console.WriteLine($"{result.ProductID}");
                 }
             }
             //</snippetObjectQuery_OrderBy>
@@ -622,7 +620,7 @@ namespace ObjectServicesConceptsCS
                 // after the Intersect method was called.
                 foreach (Product result in productQuery3)
                 {
-                    Console.WriteLine("Product Name: {0}", result.ProductID);
+                    Console.WriteLine($"Product Name: {result.ProductID}");
                 }
             }
             //</snippetObjectQuery_Intersect>
@@ -648,8 +646,7 @@ namespace ObjectServicesConceptsCS
 
                 // Iterate through the page of Product items.
                 foreach (Product result in query)
-                    Console.WriteLine("ID: {0}; Name: {1}",
-                    result.ProductID, result.Name);
+                    Console.WriteLine($"ID: {result.ProductID}; Name: {result.Name}");
             }
             //</snippetProjection_SkipLimit>
         }
@@ -676,14 +673,13 @@ namespace ObjectServicesConceptsCS
                 foreach (DbDataRecord rec in
                     query.Execute(MergeOption.AppendOnly))
                 {
-                    Console.WriteLine("Last names that start with the letter '{0}':",
-                                rec[0]);
+                    Console.WriteLine($"Last names that start with the letter '{rec[0]}':");
                     List<DbDataRecord> list = rec[1] as List<DbDataRecord>;
                     foreach (DbDataRecord r in list)
                     {
                         for (int i = 0; i < r.FieldCount; i++)
                         {
-                            Console.WriteLine("   {0} ", r[i]);
+                            Console.WriteLine($"   {r[i]} ");
                         }
                     }
                 }
@@ -705,7 +701,7 @@ namespace ObjectServicesConceptsCS
 
                 foreach (DbDataRecord rec in query)
                 {
-                    Console.WriteLine("Name: {0}; ListPrice: {1}", rec[0], rec[1]);
+                    Console.WriteLine($"Name: {rec[0]}; ListPrice: {rec[1]}");
                 }
             }
             //</snippetProjection_Union>
@@ -752,8 +748,7 @@ namespace ObjectServicesConceptsCS
                 // Iterate through the collection of Product items.
                 foreach (Product result in query)
                 {
-                    Console.WriteLine("Product Name: {0}; Product ID: {1}",
-                        result.Name, result.ProductID);
+                    Console.WriteLine($"Product Name: {result.Name}; Product ID: {result.ProductID}");
                 }
             }
             //</snippetObjectQuery_Where2>
@@ -780,8 +775,7 @@ namespace ObjectServicesConceptsCS
                 // after the GroupBy method was called.
                 foreach (DbDataRecord result in productQuery2)
                 {
-                    Console.WriteLine("Name: {0}; Count: {1}",
-                        result["pn"], result["count"]);
+                    Console.WriteLine($"Name: {result["pn"]}; Count: {result["count"]}");
                 }
             }
         }
@@ -820,8 +814,7 @@ namespace ObjectServicesConceptsCS
                 // Iterate through the collection of Product items
                 // after the Except method was called.
                 foreach (Product result in productQuery3)
-                    Console.WriteLine("Product Name: {0}",
-                        result.ProductID);
+                    Console.WriteLine($"Product Name: {result.ProductID}");
             }
             //</snippetObjectQuery_Except>
         }
@@ -857,7 +850,7 @@ namespace ObjectServicesConceptsCS
                 // after the UnionAll method was called on two queries.
                 foreach (Product result in productQuery3)
                 {
-                    Console.WriteLine("Product Name: {0}", result.ProductID);
+                    Console.WriteLine($"Product Name: {result.ProductID}");
                 }
                 ObjectQuery<Product> productQuery4 = productQuery3.Distinct();
 
@@ -867,7 +860,7 @@ namespace ObjectServicesConceptsCS
                 // Iterate through the collection of Product items.
                 // after the Distinct method was called on a query.
                 foreach (Product result in productQuery4)
-                    Console.WriteLine("Product Name: {0}", result.ProductID);
+                    Console.WriteLine($"Product Name: {result.ProductID}");
             }
             //</snippetObjectQuery_Distinct_UnionAll>
         }
@@ -903,7 +896,7 @@ namespace ObjectServicesConceptsCS
                 // after the Union method was called on two queries.
                 foreach (Product result in productQuery3)
                 {
-                    Console.WriteLine("Product Name: {0}", result.ProductID);
+                    Console.WriteLine($"Product Name: {result.ProductID}");
                 }
             }
             //</snippetObjectQuery_Distinct_Union>
@@ -926,7 +919,7 @@ namespace ObjectServicesConceptsCS
                 // Iterate through the results of the parameterized query.
                 foreach (var result in contactQuery)
                 {
-                    Console.WriteLine("{0} {1} ", result.FirstName, result.LastName);
+                    Console.WriteLine($"{result.FirstName} {result.LastName} ");
                 }
             }
             //</snippetLINQQuery_Parameters>
@@ -956,9 +949,7 @@ namespace ObjectServicesConceptsCS
                 // Iterate through the ObjectParameterCollection.
                 foreach (ObjectParameter result in objectParameterCollection)
                 {
-                    Console.WriteLine("{0} {1} {2}", result.Name,
-                        result.Value,
-                        result.ParameterType);
+                    Console.WriteLine($"{result.Name} {result.Value} {result.ParameterType}");
                 }
             }
             //</snippetObjectQuery_Parameters>
@@ -979,8 +970,7 @@ namespace ObjectServicesConceptsCS
                         context, MergeOption.NoTracking);
 
                 // Write ObjectQuery's name.
-                Console.WriteLine("The ObjectQuery's name is: {0}",
-                    contactQuery.Name);
+                Console.WriteLine($"The ObjectQuery's name is: {contactQuery.Name}");
             }
             //</snippetObjectQuery_Name>
         }
@@ -1030,8 +1020,7 @@ namespace ObjectServicesConceptsCS
 
                 // Get ObjectContext from ObjectQuery.
                 ObjectContext objectContext = contactQuery.Context;
-                Console.WriteLine("Connection string {0}",
-                    objectContext.Connection.ConnectionString);
+                Console.WriteLine($"Connection string {objectContext.Connection.ConnectionString}");
             }
             //</snippetObjectQuery_Context>
         }
@@ -1047,7 +1036,7 @@ namespace ObjectServicesConceptsCS
                     new ObjectQuery<Product>("Products", context);
 
                 foreach (Product result in productQuery1)
-                    Console.WriteLine("Product Name: {0}", result.Name);
+                    Console.WriteLine($"Product Name: {result.Name}");
 
                 string queryString =
                     @"SELECT VALUE product FROM AdventureWorksEntities.Products AS product";
@@ -1057,7 +1046,7 @@ namespace ObjectServicesConceptsCS
                     new ObjectQuery<Product>(queryString, context);
 
                 foreach (Product result in productQuery2)
-                    Console.WriteLine("Product Name: {0}", result.Name);
+                    Console.WriteLine($"Product Name: {result.Name}");
 
                 // Call the constructor with the specified query, the ObjectContext,
                 // and the NoTracking merge option.
@@ -1066,7 +1055,7 @@ namespace ObjectServicesConceptsCS
                         context, MergeOption.NoTracking);
 
                 foreach (Product result in productQuery3)
-                    Console.WriteLine("Product Name: {0}", result.Name);
+                    Console.WriteLine($"Product Name: {result.Name}");
             }
             //</snippetObjectQuery>
         }
@@ -1090,15 +1079,13 @@ namespace ObjectServicesConceptsCS
 
                 ObjectParameterCollection objectParameterCollection =
                     contactQuery.Parameters;
-                Console.WriteLine("Count before Remove is called: {0}",
-                    objectParameterCollection.Count);
+                Console.WriteLine($"Count before Remove is called: {objectParameterCollection.Count}");
 
                 ObjectParameter objectParameter = objectParameterCollection["ln"];
 
                 // Remove the specified parameter from the collection.
                 objectParameterCollection.Remove(objectParameter);
-                Console.WriteLine("Count after Remove is called: {0}",
-                    objectParameterCollection.Count);
+                Console.WriteLine($"Count after Remove is called: {objectParameterCollection.Count}");
             }
             //</snippetObjectParameterCollection_Remove>
         }
@@ -1131,10 +1118,7 @@ namespace ObjectServicesConceptsCS
                 // Iterate through the ObjectParameter array.
                 for (int i = 0; i < objectParameterArray.Length; i++)
                 {
-                    Console.WriteLine("Name: {0} Type: {1} Value: {2}",
-                        objectParameterArray[i].Name,
-                        objectParameterArray[i].ParameterType,
-                        objectParameterArray[i].Value);
+                    Console.WriteLine($"Name: {objectParameterArray[i].Name} Type: {objectParameterArray[i].ParameterType} Value: {objectParameterArray[i].Value}");
                 }
             }
             //</snippetObjectParameterCollection_CopyTo>
@@ -1160,14 +1144,12 @@ namespace ObjectServicesConceptsCS
                 ObjectParameterCollection objectParameterCollection =
                     contactQuery.Parameters;
 
-                Console.WriteLine("Count is {0}.", objectParameterCollection.Count);
+                Console.WriteLine($"Count is {objectParameterCollection.Count}.");
 
                 // Iterate through the ObjectParameterCollection collection.
                 foreach (ObjectParameter result in objectParameterCollection)
                 {
-                    Console.WriteLine("{0} {1} {2}", result.Name,
-                        result.Value,
-                        result.ParameterType);
+                    Console.WriteLine($"{result.Name} {result.Value} {result.ParameterType}");
                 }
             }
             //</snippetObjectParameterCollection_Count_Add_Indexer>
@@ -1318,8 +1300,7 @@ namespace ObjectServicesConceptsCS
                     SalesOrderHeader order =
                         (SalesOrderHeader)context.GetObjectByKey(key);
 
-                    Console.WriteLine("SalesOrderID: {0} Order Number: {1}",
-                        order.SalesOrderID, order.SalesOrderNumber);
+                    Console.WriteLine($"SalesOrderID: {order.SalesOrderID} Order Number: {order.SalesOrderNumber}");
                 }
                 catch (ObjectNotFoundException ex)
                 {
@@ -1396,14 +1377,12 @@ namespace ObjectServicesConceptsCS
                     ObjectStateEntry stateEntry =
                         context.ObjectStateManager
                         .GetObjectStateEntry(order);
-                    Console.WriteLine("State before SaveChanges() is called: {0}",
-                        stateEntry.State.ToString());
+                    Console.WriteLine($"State before SaveChanges() is called: {stateEntry.State.ToString()}");
 
                     // Save changes in the object context to the database.
                     int changes = context.SaveChanges();
 
-                    Console.WriteLine("State after SaveChanges() is called: {0}",
-                        stateEntry.State.ToString());
+                    Console.WriteLine($"State after SaveChanges() is called: {stateEntry.State.ToString()}");
 
                     Console.WriteLine(changes.ToString() + " changes saved!");
                     Console.WriteLine("Updated item for order ID: "
@@ -1451,9 +1430,9 @@ namespace ObjectServicesConceptsCS
 
                 foreach (IRelatedEnd relEnd in relEnds)
                 {
-                    Console.WriteLine("Relationship Name: {0}", relEnd.RelationshipName);
-                    Console.WriteLine("Source Role Name: {0}", relEnd.SourceRoleName);
-                    Console.WriteLine("Target Role Name: {0}", relEnd.TargetRoleName);
+                    Console.WriteLine($"Relationship Name: {relEnd.RelationshipName}");
+                    Console.WriteLine($"Source Role Name: {relEnd.SourceRoleName}");
+                    Console.WriteLine($"Target Role Name: {relEnd.TargetRoleName}");
                 }
             }
             //</snippetIRelatedEnd>
@@ -1488,24 +1467,21 @@ namespace ObjectServicesConceptsCS
                     EntityCollection<SalesOrderHeader> entityCollection =
                         (EntityCollection<SalesOrderHeader>)relEnd;
 
-                    Console.WriteLine("EntityCollection count: {0}",
-                        entityCollection.Count);
+                    Console.WriteLine($"EntityCollection count: {entityCollection.Count}");
                     // Remove the first entity object.
                     entityCollection.Remove(newSalesOrder1);
 
                     bool contains = entityCollection.Contains(newSalesOrder1);
 
                     // Write the number of items after one entity has been removed
-                    Console.WriteLine("EntityCollection count after one entity has been removed: {0}",
-                        entityCollection.Count);
+                    Console.WriteLine($"EntityCollection count after one entity has been removed: {entityCollection.Count}");
 
                     if (contains == false)
                         Console.WriteLine("The removed entity is not in the collection any more.");
 
                     //Use IRelatedEnd to add the entity back.
                     relEnd.Add(newSalesOrder1);
-                    Console.WriteLine("EntityCollection count after an entity has been added again: {0}",
-                        entityCollection.Count);
+                    Console.WriteLine($"EntityCollection count after an entity has been added again: {entityCollection.Count}");
                 }
             }
             //</snippetIRelatedEnd_Add>
@@ -1532,7 +1508,7 @@ namespace ObjectServicesConceptsCS
                 {
 
                     // Display contact's first name.
-                    Console.WriteLine("First Name {0}: ", rec[0]);
+                    Console.WriteLine($"First Name {rec[0]}: ");
                     List<SalesOrderHeader> list = rec[2]
                         as List<SalesOrderHeader>;
                     // Display SalesOrderHeader information
@@ -1675,11 +1651,8 @@ namespace ObjectServicesConceptsCS
                 // Print order information.
                 foreach (var onlineOrder in onlineOrders)
                 {
-                    Console.WriteLine("Order ID: {0} Order date: "
-                        + "{1:d} Order number: {2}",
-                        onlineOrder.SalesOrderID,
-                        onlineOrder.OrderDate,
-                        onlineOrder.SalesOrderNumber);
+                    Console.WriteLine($"Order ID: {onlineOrder.SalesOrderID} Order date: "
+                        + "{onlineOrder.OrderDate:d} Order number: {onlineOrder.SalesOrderNumber}");
                 }
             }
             //</snippetFilterQueryLinq>
@@ -1707,11 +1680,8 @@ namespace ObjectServicesConceptsCS
                 // Print order information.
                 foreach (var onlineOrder in onlineOrders)
                 {
-                    Console.WriteLine("Order ID: {0} Order date: "
-                        + "{1:d} Order number: {2}",
-                        onlineOrder.SalesOrderID,
-                        onlineOrder.OrderDate,
-                        onlineOrder.SalesOrderNumber);
+                    Console.WriteLine($"Order ID: {onlineOrder.SalesOrderID} Order date: "
+                        + "{onlineOrder.OrderDate:d} Order number: {onlineOrder.SalesOrderNumber}");
                 }
             }
             //</snippetFilterQueryEsql>
@@ -1735,11 +1705,8 @@ namespace ObjectServicesConceptsCS
                 // Print order information.
                 foreach (var onlineOrder in onlineOrders)
                 {
-                    Console.WriteLine("Order ID: {0} Order date: "
-                       + "{1:d} Order number: {2}",
-                       onlineOrder.SalesOrderID,
-                       onlineOrder.OrderDate,
-                       onlineOrder.SalesOrderNumber);
+                    Console.WriteLine($"Order ID: {onlineOrder.SalesOrderID} Order date: "
+                       + "{onlineOrder.OrderDate:d} Order number: {onlineOrder.SalesOrderNumber}");
                 }
             }
             //</snippetFilterQuery>
@@ -1834,8 +1801,7 @@ namespace ObjectServicesConceptsCS
                 // you access the navigation property. In this case SalesOrderHeaders.
 
                 // Write the number of orders for the customer.
-                Console.WriteLine("Customer '{0}' has placed {1} total orders.",
-                    customer.LastName, customer.SalesOrderHeaders.Count);
+                Console.WriteLine($"Customer '{customer.LastName}' has placed {customer.SalesOrderHeaders.Count} total orders.");
 
                 // Get the online orders that have shipped.
                 var shippedOrders =
@@ -1845,8 +1811,7 @@ namespace ObjectServicesConceptsCS
                     select order;
 
                 // Write the number of orders placed online.
-                Console.WriteLine("{0} orders placed online have been shipped.",
-                    shippedOrders.Count());
+                Console.WriteLine($"{shippedOrders.Count()} orders placed online have been shipped.");
             }
             //</snippetQueryEntityCollection>
         }
@@ -1875,8 +1840,7 @@ namespace ObjectServicesConceptsCS
                     select orders;
 
                 // Write the number of orders placed online.
-                Console.WriteLine("{0} orders placed online have been shipped.",
-                    shippedOrders.Count());
+                Console.WriteLine($"{shippedOrders.Count()} orders placed online have been shipped.");
 
                 // You do not have to call the Load method to load the orders for the customer,
                 // because  lazy loading is set to true
@@ -1885,8 +1849,7 @@ namespace ObjectServicesConceptsCS
                 // you access the navigation property. In this case SalesOrderHeaders.
 
                 // Write the number of total orders for the customer.
-                Console.WriteLine("Customer '{0}' has placed {1} total orders.",
-                    customer.LastName, customer.SalesOrderHeaders.Count);
+                Console.WriteLine($"Customer '{customer.LastName}' has placed {customer.SalesOrderHeaders.Count} total orders.");
             }
             //</snippetQueryCreateSourceQuery>
         }
@@ -2568,8 +2531,7 @@ namespace ObjectServicesConceptsCS
                 }
                 catch (UpdateException)
                 {
-                    Console.WriteLine("An error has occurred. Ensure that an object with the '{0}' key value exists.",
-                    orderId);
+                    Console.WriteLine($"An error has occurred. Ensure that an object with the '{orderId}' key value exists.");
                 }
             }
             //</snippetAddObjectUsingKey>
@@ -2601,8 +2563,7 @@ namespace ObjectServicesConceptsCS
                 // Iterate through the collection of Product items.
                 foreach (Product result in filteredProduct)
                 {
-                    Console.WriteLine("Product Name: {0}; Product ID: {1}",
-                        result.Name, result.ProductID);
+                    Console.WriteLine($"Product Name: {result.Name}; Product ID: {result.ProductID}");
                 }
             }
         }
@@ -2626,8 +2587,7 @@ namespace ObjectServicesConceptsCS
 
                 // Iterate through the collection of Contact items.
                 foreach (Contact result in contactQuery)
-                    Console.WriteLine("Last Name: {0}; First Name: {1}",
-                    result.LastName, result.FirstName);
+                    Console.WriteLine($"Last Name: {result.LastName}; First Name: {result.FirstName}");
             }
             //</snippetQueryWithParams>
         }
@@ -2755,8 +2715,7 @@ namespace ObjectServicesConceptsCS
 
                 // Iterate through the collection of Product items.
                 foreach (Product result in productQuery)
-                    Console.WriteLine("Product Name: {0}; Product ID: {1}",
-                        result.Name, result.ProductID);
+                    Console.WriteLine($"Product Name: {result.Name}; Product ID: {result.ProductID}");
             }
             //</snippetQueryEntityType>
         }
@@ -2772,8 +2731,7 @@ namespace ObjectServicesConceptsCS
 
                 // Iterate through the collection of Contact items.
                 foreach (Contact result in query)
-                    Console.WriteLine("Contact First Name: {0}; Last Name: {1}",
-                            result.FirstName, result.LastName);
+                    Console.WriteLine($"Contact First Name: {result.FirstName}; Last Name: {result.LastName}");
             }
             //</snippetQueryEntityTypeCollection>
         }
@@ -2791,7 +2749,7 @@ namespace ObjectServicesConceptsCS
                 // Iterate through the collection of data rows.
                 foreach (DbDataRecord rec in query)
                 {
-                    Console.WriteLine("ID {0}; Name {1}", rec[0], rec[1]);
+                    Console.WriteLine($"ID {rec[0]}; Name {rec[1]}");
                 }
             }
             //</snippetQueryAnonymousType>
@@ -2817,7 +2775,7 @@ namespace ObjectServicesConceptsCS
                 // Iterate through the collection of values.
                 foreach (Int32 result in orderQuery)
                 {
-                    Console.WriteLine("{0}", result);
+                    Console.WriteLine($"{result}");
                 }
 
                 // Use a nullable DateTime value because ShipDate can be null.
@@ -2837,7 +2795,7 @@ namespace ObjectServicesConceptsCS
                     {
                         shipDateMessage = shipDate.ToString();
                     }
-                    Console.WriteLine("Ship Date: {0}.", shipDateMessage);
+                    Console.WriteLine($"Ship Date: {shipDateMessage}.");
                 }
             }
             //</snippetQueryPrimitiveTypeLinq>
@@ -2868,7 +2826,7 @@ namespace ObjectServicesConceptsCS
                 // Iterate through the collection of values.
                 foreach (Int32 result in orderQuery)
                 {
-                    Console.WriteLine("{0}", result);
+                    Console.WriteLine($"{result}");
                 }
 
                 // Use a nullable DateTime value because ShipDate can be null.
@@ -2887,7 +2845,7 @@ namespace ObjectServicesConceptsCS
                     {
                         shipDateMessage = shipDate.ToString();
                     }
-                    Console.WriteLine("Ship Date: {0}.", shipDateMessage);
+                    Console.WriteLine($"Ship Date: {shipDateMessage}.");
                 }
             }
             //</snippetQueryPrimitiveTypeEsql>
@@ -2911,7 +2869,7 @@ namespace ObjectServicesConceptsCS
                 // Iterate through the collection of values.
                 foreach (Int32 result in orderQuery)
                 {
-                    Console.WriteLine("{0}", result);
+                    Console.WriteLine($"{result}");
                 }
 
                 // Use a nullable DateTime value because ShipDate can be null.
@@ -2932,7 +2890,7 @@ namespace ObjectServicesConceptsCS
                     {
                         shipDateMessage = shipDate.ToString();
                     }
-                    Console.WriteLine("Ship Date: {0}.", shipDateMessage);
+                    Console.WriteLine($"Ship Date: {shipDateMessage}.");
                 }
             }
             //</snippetQueryPrimitiveType>
@@ -3256,39 +3214,9 @@ namespace ObjectServicesConceptsCS
 
         public static void TranslateReader()
         {
-            //<snippetTranslate>
-            // Initialize the connection string builder for the
-            // underlying provider.
-            SqlConnectionStringBuilder sqlBuilder =
-                new SqlConnectionStringBuilder();
-
-            sqlBuilder.DataSource = ".";
-            sqlBuilder.InitialCatalog = "School";
-            sqlBuilder.IntegratedSecurity = true;
-
-            SqlConnection con = new SqlConnection(sqlBuilder.ToString());
-            {
-                con.Open();
-                DbCommand cmd = con.CreateCommand();
-                cmd.CommandText = @"SELECT * FROM Department";
-
-                // Create a reader that contains rows of entity data.
-                using (DbDataReader rdr = cmd.ExecuteReader(CommandBehavior.SequentialAccess))
-                {
-                    using (SchoolEntities context =
-                        new SchoolEntities())
-                    {
-                        // Translate the reader to the objects of the Department type.
-                        foreach (Department d in context.Translate<Department>(rdr))
-                        {
-                            Console.WriteLine("DepartmentID: {0} ", d.DepartmentID);
-                        }
-                    }
-                }
-                con.Close();
-            }
-            //</snippetTranslate>
+            throw new NotImplementedException();
         }
+        
         public static void ExecuteStoredProc()
         {
             Console.WriteLine("Starting method 'ExecuteStoredProc'");
@@ -3425,9 +3353,8 @@ namespace ObjectServicesConceptsCS
                 // from Detached to Added.
                 newStudent.StudentGrades.Add(newStudentGrade);
                 // Navigation properties in both directions will work immediately.
-                Console.WriteLine("Access StudentGrades navigation property to get the count: ",
-                    newStudent.StudentGrades.Count);
-                Console.WriteLine("Access Person navigation property: {0} ", newStudentGrade.Person.FirstName);
+                Console.WriteLine($"Access StudentGrades navigation property to get the count: ");
+                Console.WriteLine($"Access Person navigation property: {newStudentGrade.Person.FirstName} ");
 
                 context.SaveChanges();
             }
@@ -3463,8 +3390,8 @@ namespace ObjectServicesConceptsCS
                 // You can access Course and Student objects on the newStudentGrade object
                 // without loading the references explicitly because
                 // the lazy loading option is set to true in the constructor of SchoolEntities.
-                Console.WriteLine("Student ID {0}:", newStudentGrade.Person.PersonID);
-                Console.WriteLine("Course ID {0}:", newStudentGrade.Course.CourseID);
+                Console.WriteLine($"Student ID {newStudentGrade.Person.PersonID}:");
+                Console.WriteLine($"Course ID {newStudentGrade.Course.CourseID}:");
 
                 context.SaveChanges();
             }
@@ -3525,19 +3452,19 @@ namespace ObjectServicesConceptsCS
                     Console.WriteLine("All the courses for the selected department.");
                     foreach (Course course in courses)
                     {
-                        Console.WriteLine("CourseID: {0} ", course.CourseID);
+                        Console.WriteLine($"CourseID: {course.CourseID} ");
                     }
                     var onlineCourses = courses.OfType<OnlineCourse>();
                     Console.WriteLine("Online courses only for the selected department.");
                     foreach (OnlineCourse onlineCourse in onlineCourses)
                     {
-                        Console.WriteLine("CourseID: {0} ", onlineCourse.CourseID);
+                        Console.WriteLine($"CourseID: {onlineCourse.CourseID} ");
                     }
                     var onsiteCourses = courses.OfType<OnsiteCourse>();
                     Console.WriteLine("Onsite courses only for the selected department.");
                     foreach (OnsiteCourse onsite in onsiteCourses)
                     {
-                        Console.WriteLine("CourseID: {0} ", onsite.CourseID);
+                        Console.WriteLine($"CourseID: {onsite.CourseID} ");
                     }
                 }
             }
@@ -3557,8 +3484,7 @@ namespace ObjectServicesConceptsCS
         {
             //<snippetDDL>
 			// Initialize the connection string.
-			String connectionString = "metadata=res://*/School.csdl|res://*/School.ssdl|res://*/School.msl;provider=System.Data.SqlClient;" +
-			"provider connection string=\"Data Source=.;Initial Catalog=School;Integrated Security=True;MultipleActiveResultSets=True\"";
+			String connectionString = "...";
 
 			using (SchoolEntities context = new SchoolEntities(connectionString))
 			{
@@ -3981,8 +3907,7 @@ namespace ObjectServicesConceptsCS
                 // If lazy loading was not enabled no SalesOrderHeaders would be loaded for the contact.
                 foreach (SalesOrderHeader order in contact.SalesOrderHeaders)
                 {
-                    Console.WriteLine("SalesOrderID: {0} Order Date: {1} ",
-                        order.SalesOrderID, order.OrderDate);
+                    Console.WriteLine($"SalesOrderID: {order.SalesOrderID} Order Date: {order.OrderDate} ");
                 }
             }
         }

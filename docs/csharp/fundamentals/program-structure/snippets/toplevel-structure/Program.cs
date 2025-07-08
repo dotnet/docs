@@ -1,7 +1,5 @@
-﻿// A skeleton of a C# program
-using System;
+﻿using System;
 
-// Your program starts here:
 Console.WriteLine("Hello world!");
 
 namespace YourNamespace

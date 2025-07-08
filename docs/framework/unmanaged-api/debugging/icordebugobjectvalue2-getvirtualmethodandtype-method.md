@@ -2,37 +2,37 @@
 description: "Learn more about: ICorDebugObjectValue2::GetVirtualMethodAndType Method"
 title: "ICorDebugObjectValue2::GetVirtualMethodAndType Method"
 ms.date: "03/30/2017"
-api_name: 
+api_name:
   - "ICorDebugObjectValue2.GetVirtualMethodAndType"
-api_location: 
+api_location:
   - "mscordbi.dll"
-api_type: 
+api_type:
   - "COM"
-f1_keywords: 
+f1_keywords:
   - "ICorDebugObjectValue2::GetVirtualMethodAndType"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "GetVirtualMethodAndType method [.NET Framework debugging]"
   - "ICorDebugObjectValue2::GetVirtualMethodAndType method"
 ms.assetid: 621b4543-a8f7-4117-98e4-930992cd688a
-topic_type: 
+topic_type:
   - "apiref"
 ---
 # ICorDebugObjectValue2::GetVirtualMethodAndType Method
 
-This method is not yet implemented.  
-  
-## Syntax  
-  
-```cpp  
-HRESULT GetVirtualMethodAndType (  
-    [in] mdMemberRef          memberRef,  
-    [out] ICorDebugFunction   **ppFunction,  
-    [out] ICorDebugType       **ppType  
-);  
-```  
-  
-## Remarks  
+This method is not yet implemented.
 
- Gets interface pointers to the "ICorDebugFunction" and "ICorDebugType" instances that represent the most derived method and type for the specified member reference.  
-  
+## Syntax
+
+```cpp
+HRESULT GetVirtualMethodAndType (
+    [in] mdMemberRef          memberRef,
+    [out] ICorDebugFunction   **ppFunction,
+    [out] ICorDebugType       **ppType
+);
+```
+
+## Remarks
+
+ Gets interface pointers to the "ICorDebugFunction" and "ICorDebugType" instances that represent the most derived method and type for the specified member reference.
+
 ## See also

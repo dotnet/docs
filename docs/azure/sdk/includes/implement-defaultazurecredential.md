@@ -1,58 +1,43 @@
-`DefaultAzureCredential` supports multiple authentication methods and determines the authentication method being used at runtime.  In this way, your app can use different authentication methods in different environments without implementing environment specific code.
+---
+ms.topic: include
+ms.date: 04/25/2025
+---
 
-The order and locations in which `DefaultAzureCredential` looks for credentials is found at [DefaultAzureCredential](/dotnet/api/overview/azure/identity-readme?view=azure-dotnet&preserve-view=true#defaultazurecredential).
+## Authenticate to Azure services from your app
 
-To implement `DefaultAzureCredential`, first add the [`Azure.Identity`](/dotnet/api/azure.identity) and optionally the [`Microsoft.Extensions.Azure`](/dotnet/api/microsoft.extensions.azure) packages to your application. You can do this using either the command line or the NuGet Package Manager.
+The [Azure Identity library](/dotnet/api/azure.identity?view=azure-dotnet&preserve-view=true) provides various *credentials*&mdash;implementations of `TokenCredential` adapted to supporting different scenarios and Microsoft Entra authentication flows. The steps ahead demonstrate how to use <xref:Azure.Identity.DefaultAzureCredential> when working with user accounts locally.
+
+### Implement the code
+
+[DefaultAzureCredential](../authentication/credential-chains.md#defaultazurecredential-overview) is an opinionated, ordered sequence of mechanisms for authenticating to Microsoft Entra ID. Each authentication mechanism is a class derived from the [TokenCredential](/dotnet/api/azure.core.tokencredential?view=azure-dotnet&preserve-view=true) class and is known as a *credential*. At runtime, `DefaultAzureCredential` attempts to authenticate using the first credential. If that credential fails to acquire an access token, the next credential in the sequence is attempted, and so on, until an access token is successfully obtained. In this way, your app can use different credentials in different environments without writing environment-specific code.
+
+To use `DefaultAzureCredential`, add the [Azure.Identity](/dotnet/api/azure.identity) and optionally the [Microsoft.Extensions.Azure](/dotnet/api/microsoft.extensions.azure) packages to your application:
 
 ### [Command Line](#tab/command-line)
 
-Open a terminal environment of your choice in the application project directory and enter the command below.
+In a terminal of your choice, navigate to the application project directory and run the following commands:
 
-```terminal
+```dotnetcli
 dotnet add package Azure.Identity
 dotnet add package Microsoft.Extensions.Azure
 ```
 
 ### [NuGet Package Manager](#tab/nuget-package)
 
-Right click on your project node in Visual Studio and select **Manage NuGet Packages**. Search for **Azure.Identity** in the search field, and install the matching package.  Repeat this process for the **Microsoft.Extensions.Azure** package as well.
+Right-click your project in Visual Studio's **Solution Explorer** window and select **Manage NuGet Packages**. Search for **Azure.Identity**, and install the matching package. Repeat this process for the **Microsoft.Extensions.Azure** package.
 
 :::image type="content" source="../media/nuget-azure-identity.png" alt-text="Install a package using the package manager.":::
 
 ---
 
-Azure services are generally accessed using corresponding client classes from the SDK. These classes and your own custom services should be registered in the `Program.cs` file so they can be accessed via dependency injection throughout your app. Inside of `Program.cs`, follow the steps below to correctly setup your service and `DefaultAzureCredential`.
+Azure services are accessed using specialized client classes from the various Azure SDK client libraries. These classes and your own custom services should be registered so they can be accessed via dependency injection throughout your app. In `Program.cs`, complete the following steps to register a client class and `DefaultAzureCredential`:
 
-1. Include the `Azure.Identity` and `Microsoft.Extensions.Azure` namespaces with a using statement.
-1. Register the Azure service using relevant helper methods.
-1. Pass an instance of the `DefaultAzureCredential` object to the `UseCredential` method.
+1. Include the `Azure.Identity` and `Microsoft.Extensions.Azure` namespaces via `using` directives.
+1. Register the Azure service client using the corresponding `Add`-prefixed extension method.
+1. Pass an instance of `DefaultAzureCredential` to the `UseCredential` method.
 
-An example of this is shown in the following code segment.
+:::code language="csharp" source="../snippets/authentication/local-dev-account/Program.cs" id="snippet_DefaultAzureCredential_UseCredential":::
 
-```c#
-using Microsoft.Extensions.Azure;
-using Azure.Identity;
+An alternative to the `UseCredential` method is to provide the credential to the service client directly:
 
-// Inside of Program.cs
-builder.Services.AddAzureClients(x =>
-{
-    x.AddBlobServiceClient(new Uri("https://<account-name>.blob.core.windows.net"));
-    x.UseCredential(new DefaultAzureCredential());
-});
-```
-
-Alternatively, you can also utilize `DefaultAzureCredential` in your services more directly without the help of additional Azure registration methods, as seen below.
-
-```c#
-using Azure.Identity;
-
-// Inside of Program.cs
-builder.Services.AddSingleton<BlobServiceClient>(x => 
-    new BlobServiceClient(
-        new Uri("https://<account-name>.blob.core.windows.net"),
-        new DefaultAzureCredential()));
-```
-
-When the above code is run on your local workstation during local development, it will look in the environment variables for an application service principal or at Visual Studio, VS Code, the Azure CLI, or Azure PowerShell for a set of developer credentials, either of which can be used to authenticate the app to Azure resources during local development.  
-
-When deployed to Azure this same code can also authenticate your app to other Azure resources. `DefaultAzureCredential` can  retrieve environment settings and managed identity configurations to authenticate to other services automatically.
+:::code language="csharp" source="../snippets/authentication/local-dev-account/Program.cs" id="snippet_DefaultAzureCredential":::

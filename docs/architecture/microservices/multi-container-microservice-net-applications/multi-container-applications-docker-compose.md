@@ -158,11 +158,11 @@ docker-compose -f docker-compose.yml -f docker-compose-test.override.yml down
 
 #### Production deployments
 
-You can also use Compose to deploy to a remote Docker Engine. A typical case is to deploy to a single Docker host instance (like a production VM or server provisioned with [Docker Machine](https://docs.docker.com/machine/overview/)).
+You can also use Compose to deploy to a remote Docker Engine. A typical case is to deploy to a single Docker host instance.
 
-If you are using any other orchestrator (Azure Service Fabric, Kubernetes, etc.), you might need to add setup and metadata configuration settings like those in docker-compose.yml, but in the format required by the other orchestrator.
+If you're using any other orchestrator (for example, Azure Service Fabric or Kubernetes), you might need to add setup and metadata configuration settings like those in docker-compose.yml, but in the format required by the other orchestrator.
 
-In any case, docker-compose is a convenient tool and metadata format for development, testing and production workflows, although the production workflow might vary on the orchestrator you are using.
+In any case, docker-compose is a convenient tool and metadata format for development, testing, and production workflows, although the production workflow might vary on the orchestrator you are using.
 
 ### Using multiple docker-compose files to handle several environments
 
@@ -257,7 +257,6 @@ services:
 
   rabbitmq:
     image: rabbitmq:3-management
-
 ```
 
 The values in the base docker-compose.yml file should not change because of different target deployment environments.
@@ -380,7 +379,6 @@ services:
     ports:
       - "15672:15672"
       - "5672:5672"
-
 ```
 
 In this example, the development override configuration exposes some ports to the host, defines environment variables with redirect URLs, and specifies connection strings for the development environment. These settings are all just for the development environment.
@@ -434,7 +432,7 @@ The values set in the run-time environment always override the values defined in
 If you are exploring Docker and .NET on sources on the Internet, you will find Dockerfiles that demonstrate the simplicity of building a Docker image by copying your source into a container. These examples suggest that by using a simple configuration, you can have a Docker image with the environment packaged with your application. The following example shows a simple Dockerfile in this vein.
 
 ```dockerfile
-FROM mcr.microsoft.com/dotnet/sdk:7.0
+FROM mcr.microsoft.com/dotnet/sdk:8.0
 WORKDIR /app
 ENV ASPNETCORE_URLS http://+:80
 EXPOSE 80
@@ -449,18 +447,16 @@ In the container and microservices model, you are constantly starting containers
 
 The .NET team has been doing important work to make .NET and ASP.NET Core a container-optimized framework. Not only is .NET a lightweight framework with a small memory footprint; the team has focused on optimized Docker images for three main scenarios and published them in the Docker Hub registry at *dotnet/*, beginning with version 2.1:
 
-1. **Development**: The priority is the ability to quickly iterate and debug changes, and where size is secondary.
+- **Development**: The priority is the ability to quickly iterate and debug changes, and where size is secondary.
+- **Build**: The priority is compiling the application, and the image includes binaries and other dependencies to optimize binaries.
+- **Production**: The focus is fast deploying and starting of containers, so these images are limited to the binaries and content needed to run the application.
 
-2. **Build**: The priority is compiling the application, and the image includes binaries and other dependencies to optimize binaries.
+The .NET team provides some basic variants in [dotnet/](https://hub.docker.com/r/microsoft/dotnet), for example:
 
-3. **Production**: The focus is fast deploying and starting of containers, so these images are limited to the binaries and content needed to run the application.
-
-The .NET team provides four basic variants in [dotnet/](https://hub.docker.com/_/microsoft-dotnet/) (at Docker Hub):
-
-1. **sdk**: for development and build scenarios
-1. **aspnet**: for ASP.NET production scenarios
-1. **runtime**: for .NET production scenarios
-1. **runtime-deps**: for production scenarios of [self-contained applications](../../../core/deploying/index.md#publish-self-contained)
+- **sdk**: for development and build scenarios
+- **aspnet**: for ASP.NET production scenarios
+- **runtime**: for .NET production scenarios
+- **runtime-deps**: for production scenarios of [self-contained applications](../../../core/deploying/index.md#publish-self-contained)
 
 For faster startup, runtime images also automatically set aspnetcore\_urls to port 80 and use Ngen to create a native image cache of assemblies.
 

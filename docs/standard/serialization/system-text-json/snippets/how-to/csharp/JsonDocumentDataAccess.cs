@@ -11,7 +11,10 @@ namespace SystemTextJsonSamples
 
             AverageGrades(jsonString);
             AverageGrades_Alternative(jsonString);
+
+            Compare();
         }
+
         private static void AverageGrades(string jsonString)
         {
             // <AverageGrades1>
@@ -40,6 +43,7 @@ namespace SystemTextJsonSamples
             Console.WriteLine($"Average grade : {average}");
             // </AverageGrades1>
         }
+
         private static void AverageGrades_Alternative(string jsonString)
         {
             // <AverageGrades2>
@@ -69,6 +73,16 @@ namespace SystemTextJsonSamples
             double average = sum / count;
             Console.WriteLine($"Average grade : {average}");
             // </AverageGrades2>
+        }
+
+        private static void Compare()
+        {
+            // <DeepEquals>
+            JsonElement left = JsonDocument.Parse("10e-3").RootElement;
+            JsonElement right = JsonDocument.Parse("0.01").RootElement;
+            bool equal = JsonElement.DeepEquals(left, right);
+            Console.WriteLine(equal); // True.
+            // </DeepEquals>
         }
     }
 }

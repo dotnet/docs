@@ -3,7 +3,7 @@ title: Introduction to .NET MAUI
 description: Introduction to enterprise architecture for .NET MAUI
 author: michaelstonis
 no-loc: [MAUI]
-ms.date: 06/18/2022
+ms.date: 05/30/2024
 ---
 
 # Introduction to .NET MAUI
@@ -43,10 +43,10 @@ This guide provides guidance on these issues, and focuses on the core patterns a
 
 ## Sample application
 
-This guide includes a sample application, eShopOnContainers, that's an online store that includes the following functionality:
+This guide includes a sample application, eShop, that's an online store that includes the following functionality:
 
 - Authenticating and authorizing against a backend service.
-- Browsing a catalog of shirts, coffee mugs, and other marketing items.
+- Browsing a catalog of items.
 - Filtering the catalog.
 - Ordering items from the catalog.
 - Viewing the user's order history.
@@ -56,15 +56,13 @@ This guide includes a sample application, eShopOnContainers, that's an online st
 
 Below is a high-level overview of the architecture of the sample application.
 
-![eShopOnContainers high-level architecture](./media/high-level-architecture-diagram.png)
+![eShop high-level architecture](./media/high-level-architecture-diagram.png)
 
-The sample application ships with three client apps:
+The sample application ships with:
 
-- An MVC application developed with ASP.NET Core.
-- A Single Page Application (SPA) developed with Angular 2 and Typescript. This approach for web applications avoids performing a round-trip to the server with each operation.
-- A multi-platform app developed with .NET MAUI, which supports iOS, Android, macOS via Mac Catalyst, and Windows 10/11.
-
-For information about the web applications, see [Architecting and Developing Modern Web Applications with ASP.NET Core and Microsoft Azure](https://aka.ms/WebAppEbook).
+- .NET Aspire App Hosting & Orchestration
+- An Blazor web application developed with ASP.NET Core.
+- A multi-platform app developed with .NET MAUI, which supports iOS, Android, macOS via Mac Catalyst, and Windows.
 
 The sample application includes the following backend services:
 
@@ -73,19 +71,17 @@ The sample application includes the following backend services:
 - An ordering microservice, which is a domain-driven service that uses domain-driven design patterns.
 - A basket microservice, which is a data-driven CRUD service that uses Redis Cache.
 
-These backend services are implemented as microservices using ASP.NET Core MVC, and are deployed as unique containers within a single Docker host. Collectively, these backend services are referred to as the eShopOnContainers reference application. Client apps communicate with the backend services through a Representational State Transfer (REST) web interface. For more information about microservices and Docker, see [Containerized microservices](micro-services.md).
-
-For information about the implementation of the backend services, see [.NET Microservices: Architecture for Containerized .NET Applications](https://aka.ms/microservicesebook).
+These backend services are implemented as microservices using ASP.NET Core, and are deployed as unique containers with .NET Aspire. Collectively, these backend services are referred to as the eShop reference application. Client apps communicate with the backend services through a Representational State Transfer (REST) web interface. For more information about microservices and containers, see [Containerized microservices](micro-services.md).
 
 ## Multi-Platform app
 
-This guide focuses on building cross-platform enterprise apps using .NET MAUI, and uses the eShopOnContainers multi-platform app as an example. The image below shows the pages from the eShopOnContainers multi-platform app that provide the functionality outlined earlier.
+This guide focuses on building cross-platform enterprise apps using .NET MAUI, and uses the eShop multi-platform app as an example. The image below shows the pages from the eShop multi-platform app that provide the functionality outlined earlier.
 
-![The eShopOnContainers MAUI app](./media/mobile-app-screens.jpg)
+![The eShop MAUI app](./media/mobile-app-screens.jpg)
 
-The multi-platform app consumes the backend services provided by the eShopOnContainers reference application. However, it can be configured to consume data from mock services for those who wish to avoid deploying the backend services.
+The multi-platform app consumes the backend services provided by the eShop reference application. However, it can be configured to consume data from mock services for those who wish to avoid deploying the backend services.
 
-The eShopOnContainers multi-platform app exercises the following .NET MAUI functionality:
+The eShop multi-platform app exercises the following .NET MAUI functionality:
 
 - XAML
 - Controls
@@ -99,21 +95,21 @@ The eShopOnContainers multi-platform app exercises the following .NET MAUI funct
 - Effects
 - Custom Controls
 
-For more information about this functionality, see the [.NET MAUI documentation](/dotnet/maui) on the Microsoft Developer Center, and [Creating multi-platform apps with .NET MAUI](https://aka.ms/mauiebook).
+For more information about this functionality, see the [.NET MAUI documentation](/dotnet/maui).
 
-In addition, unit tests are provided for some of the classes in the eShopOnContainers multi-platform app.
+In addition, unit tests are provided for some of the classes in the eShop multi-platform app.
 
 ## Multi-Platform app solution
 
-The eShopOnContainers multi-platform app solution organizes the source code and other resources into a multiple projects. All of the core mobile components are contained in a singular project named eShopContainers. This is a feature introduced with .NET 6 that allows a project to target multiple outputs which helps eliminate the need for multiple platform projects that we would have used in Xamarin.Forms and earlier .NET versions. An additional project is included for unit testing.
+The eShop multi-platform app solution organizes the source code and other resources into a multiple projects. All of the core mobile components are contained in a singular project named eShopContainers. This is a feature introduced with .NET 6 that allows a project to target multiple outputs which helps eliminate the need for multiple platform projects that we would have used in earlier .NET versions. An additional project is included for unit testing.
 
 While this project has all of its components stored in a singular project, it is worth considering separating it into multiple projects based on your needs. For example, if you have multiple implementations of service providers based off of a service with their own dependencies, it may make sense to break those service provider implementations out into their own separate project. Good candidates for project separation include shared models, service implementations, api client components, database or caching layers. Any place where you feel that the business could re-use a component in another project is a potential candidate for separation. These projects can then be packaged via [NuGet](/nuget/) for easy distribution and versioning.
 
-All of the projects use folders to organize the source code and other resources into categories. The classes from the eShopOnContainers multi-platform app can be re-used in any .NET MAUI app with little or no modification.
+All of the projects use folders to organize the source code and other resources into categories. The classes from the eShop multi-platform app can be re-used in any .NET MAUI app with little or no modification.
 
-## eShopOnContainers project
+## eShop project
 
-The eShopOnContainers project contains the following folders:
+The eShop project contains the following folders:
 
 | Folder        | Description                                                                           |
 |---------------|---------------------------------------------------------------------------------------|

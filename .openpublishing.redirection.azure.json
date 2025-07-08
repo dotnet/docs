@@ -18,7 +18,7 @@
         },
         {
             "source_path_from_root": "/docs/azure/dotnet-quickstart-vs.md",
-            "redirect_url": "/visualstudio/deployment/quickstart-deploy-to-azure?view=vs-2019"
+            "redirect_url": "/visualstudio/deployment/quickstart-deploy-aspnet-web-app"
         },
         {
             "source_path_from_root": "/docs/azure/dotnet-quickstart-xplat.md",
@@ -30,7 +30,7 @@
         },
         {
             "source_path_from_root": "/docs/azure/dotnet-sdk-azure-authenticate.md",
-            "redirect_url": "/dotnet/azure/sdk/authentication"
+            "redirect_url": "/dotnet/azure/sdk/authentication/index"
         },
         {
             "source_path_from_root": "/docs/azure/dotnet-sdk-azure-concepts.md",
@@ -55,6 +55,10 @@
         {
             "source_path_from_root": "/docs/azure/dotnet-tutorials.md",
             "redirect_url": "/dotnet/azure/"
+        },
+        {
+            "source_path_from_root": "/docs/azure/landing-page.yml",
+            "redirect_url": "/dotnet/azure/index"
         },
         {
             "source_path_from_root": "/docs/azure/logging.md",
@@ -102,11 +106,35 @@
         },
         {
             "source_path_from_root": "/docs/azure/sdk/authentication-azure-hosted-apps.md",
-            "redirect_url": "/dotnet/azure/sdk/authentication/azure-hosted-apps"
+            "redirect_url": "/dotnet/azure/sdk/authentication/system-assigned-managed-identity"
         },
         {
             "source_path_from_root": "/docs/azure/sdk/authentication-additional-methods.md",
             "redirect_url": "/dotnet/azure/sdk/authentication/additional-methods"
+        },
+        {
+            "source_path_from_root": "/docs/azure/ai/azure-ai-for-dotnet-developers.md",
+            "redirect_url": "/dotnet/ai/azure-ai-for-dotnet-developers"
+        },
+        {
+            "source_path_from_root": "/docs/azure/ai/get-started-app-chat-template.md",
+            "redirect_url": "/dotnet/ai/get-started-app-chat-template"
+        },
+        {
+            "source_path_from_root": "/docs/azure/ai/get-started-app-chat-scaling-with-azure-container-apps.md",
+            "redirect_url": "/dotnet/ai/get-started-app-chat-scaling-with-azure-container-apps"
+        },
+        {
+            "source_path_from_root": "/docs/azure/sdk/azure-sdk-configure-proxy.md",
+            "redirect_url": "/dotnet/azure/sdk/configure-proxy"
+        },
+        {
+            "source_path_from_root": "/docs/azure/sdk/authentication/authentication-best-practices.md",
+            "redirect_url": "/dotnet/azure/sdk/authentication/best-practices"
+        },
+        {
+            "source_path_from_root": "/docs/azure/sdk/authentication/azure-hosted-apps.md",
+            "redirect_url": "/dotnet/azure/sdk/authentication/system-assigned-managed-identity"
         }
     ]
 }

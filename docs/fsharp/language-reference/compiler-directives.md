@@ -23,7 +23,7 @@ The following table lists the preprocessor directives that are available in F#.
 |`#else`|Supports conditional compilation. Marks a section of code to include if the symbol used with the previous `#if` is not defined.|
 |`#endif`|Supports conditional compilation. Marks the end of a conditional section of code.|
 |`#`[line] *int*,<br/>`#`[line] *int* *string*,<br/>`#`[line] *int* *verbatim-string*|Indicates the original source code line and file name, for debugging. This feature is provided for tools that generate F# source code.|
-|`#nowarn` *warningcode*|Disables a compiler warning or warnings. To disable a warning, find its number from the compiler output and include it in quotation marks. Omit the "FS" prefix. To disable multiple warning numbers on the same line, include each number in quotation marks, and separate each string by a space. <br/> For example: `#nowarn "9" "40"`|
+|`#nowarn` *warningcode*|Disables a compiler warning or warnings. To disable multiple warning numbers on the same line, separate each string by a space. <br/> For example: `#nowarn 9 42`|
 
 The effect of disabling a warning applies to the entire file, including portions of the file that precede the directive.|
 
@@ -49,6 +49,28 @@ You can also negate a symbol with `!`. In this example, a string's value is some
 let str = "Not debugging!"
 #else
 let str = "Debugging!"
+#endif
+```
+
+## NULLABLE directive
+
+Starting with F# 9, you can enable nullable reference types in the project:
+
+```xml
+<Nullable>enable</Nullable>
+```
+
+This automatically sets `NULLABLE` directive to the build. It's useful while initially rolling out the feature, to conditionally change conflicting code by `#if NULLABLE` hash directives:
+
+```fsharp
+#if NULLABLE 
+let length (arg: 'T when 'T: not null) =
+    Seq.length arg
+#else
+let length arg =
+    match arg with
+    | null -> -1
+    | s -> Seq.length s
 #endif
 ```
 

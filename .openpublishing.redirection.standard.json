@@ -59,6 +59,10 @@
             "redirect_url": "/dotnet/standard/base-types/backtracking-in-regular-expressions"
         },
         {
+            "source_path_from_root": "/docs/standard/base-types/best-practices.md",
+            "redirect_url": "/dotnet/standard/base-types/best-practices-regex"
+        },
+        {
             "source_path_from_root": "/docs/standard/base-types/changing-formats.md",
             "redirect_url": "/dotnet/standard/base-types/regular-expression-example-changing-date-formats"
         },
@@ -209,7 +213,11 @@
         },
         {
             "source_path_from_root": "/docs/standard/base-types/thread-safety.md",
-            "redirect_url": "/dotnet/standard/base-types/thread-safety-in-regular-expressions"
+            "redirect_url": "/dotnet/standard/base-types/best-practices-regex"
+        },
+        {
+            "source_path_from_root": "/docs/standard/base-types/thread-safety-in-regular-expressions.md",
+            "redirect_url": "/dotnet/standard/base-types/best-practices-regex"
         },
         {
             "source_path_from_root": "/docs/standard/base-types/verify-format.md",
@@ -250,6 +258,10 @@
         {
             "source_path_from_root": "/docs/standard/collections/threadsafe/when-to-use-a-thread-safe-collection.md",
             "redirect_url": "/dotnet/standard/collections/thread-safe/when-to-use-a-thread-safe-collection"
+        },
+        {
+            "source_path_from_root": "/docs/standard/common-type-system.md",
+            "redirect_url": "/dotnet/standard/base-types/common-type-system"
         },
         {
             "source_path_from_root": "/docs/standard/components.md",
@@ -304,6 +316,11 @@
         {
             "source_path_from_root": "/docs/standard/data/xml/outputs-from-an-xsltransform.md",
             "redirect_url": "/previous-versions/dotnet/framework/data/xml/xslt/outputs-from-an-xsltransform",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/docs/standard/data/sqlite/xamarin.md",
+            "redirect_url": "/dotnet/standard/data/sqlite/",
             "redirect_document_id": false
         },
         {
@@ -513,6 +530,10 @@
             "redirect_url": "/dotnet/standard/serialization/binaryformatter-security-guide"
         },
         {
+            "source_path_from_root": "/docs/standard/serialization/system-text-json/supported-collection-types.md",
+            "redirect_url": "/dotnet/standard/serialization/system-text-json/supported-types"
+        },
+        {
             "source_path_from_root": "/docs/standard/index.yml",
             "redirect_url": "/dotnet/fundamentals/"
         },
@@ -525,6 +546,10 @@
             "source_path_from_root": "/docs/standard/library.md",
             "redirect_url": "/dotnet/standard/net-standard",
             "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/standard/linq/build-linq-xml-examples.md",
+            "redirect_url": "/dotnet/standard/linq/functional-construction"
         },
         {
             "source_path_from_root": "/docs/standard/native-interop.md",
@@ -716,12 +741,17 @@
         },
         {
             "source_path_from_root": "/docs/standard/serialization/system-text-json-supported-collection-types.md",
-            "redirect_url": "/dotnet/standard/serialization/system-text-json/supported-collection-types",
+            "redirect_url": "/dotnet/standard/serialization/system-text-json/supported-types",
             "redirect_document_id": true
         },
         {
             "source_path_from_root": "/docs/standard/serialization/system-text-json-use-dom-utf8jsonreader-utf8jsonwriter.md",
             "redirect_url": "/dotnet/standard/serialization/system-text-json/use-dom"
+        },
+        {
+            "source_path_from_root": "/docs/standard/serialization/system-text-json/json-schema-exporter.md",
+            "redirect_url": "/dotnet/standard/serialization/system-text-json/extract-schema",
+            "redirect_document_id": true
         },
         {
             "source_path_from_root": "/docs/standard/serialization/system-text-json/use-dom-utf8jsonreader-utf8jsonwriter.md",

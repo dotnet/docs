@@ -23,16 +23,18 @@ public static class MemberAccessOperators
     private static void QualifiedName()
     {
         // <SnippetQualifiedName>
-        System.Collections.Generic.IEnumerable<int> numbers = new int[] { 1, 2, 3 };
+        System.Collections.Generic.IEnumerable<int> numbers = [1, 2, 3];
         // </SnippetQualifiedName>
     }
 
     private static void TypeMemberAccess()
     {
         // <SnippetTypeMemberAccess>
-        var constants = new List<double>();
-        constants.Add(Math.PI);
-        constants.Add(Math.E);
+        List<double> constants =
+        [
+            Math.PI,
+            Math.E
+        ];
         Console.WriteLine($"{constants.Count} values to show:");
         Console.WriteLine(string.Join(", ", constants));
         // Output:
@@ -82,11 +84,11 @@ public static class MemberAccessOperators
         var sum1 = SumNumbers(null, 0);
         Console.WriteLine(sum1);  // output: NaN
 
-        var numberSets = new List<double[]>
-        {
-            new[] { 1.0, 2.0, 3.0 },
+        List<double[]?> numberSets =
+        [
+            [1.0, 2.0, 3.0],
             null
-        };
+        ];
 
         var sum2 = SumNumbers(numberSets, 0);
         Console.WriteLine(sum2);  // output: 6
@@ -99,7 +101,7 @@ public static class MemberAccessOperators
     private static void NullConditionalWithNullCoalescing()
     {
         // <SnippetNullConditionalWithNullCoalescing>
-        int GetSumOfFirstTwoOrDefault(int[] numbers)
+        int GetSumOfFirstTwoOrDefault(int[]? numbers)
         {
             if ((numbers?.Length ?? 0) < 2)
             {
@@ -109,8 +111,8 @@ public static class MemberAccessOperators
         }
 
         Console.WriteLine(GetSumOfFirstTwoOrDefault(null));  // output: 0
-        Console.WriteLine(GetSumOfFirstTwoOrDefault(new int[0]));  // output: 0
-        Console.WriteLine(GetSumOfFirstTwoOrDefault(new[] { 3, 4, 5 }));  // output: 7
+        Console.WriteLine(GetSumOfFirstTwoOrDefault([]));  // output: 0
+        Console.WriteLine(GetSumOfFirstTwoOrDefault([3, 4, 5]));  // output: 7
         // </SnippetNullConditionalWithNullCoalescing>
     }
 
@@ -119,9 +121,11 @@ public static class MemberAccessOperators
         // <SnippetInvocation>
         Action<int> display = s => Console.WriteLine(s);
 
-        var numbers = new List<int>();
-        numbers.Add(10);
-        numbers.Add(17);
+        List<int> numbers =
+        [
+            10,
+            17
+        ];
         display(numbers.Count);   // output: 2
 
         numbers.Clear();
@@ -132,11 +136,11 @@ public static class MemberAccessOperators
     private static void IndexFromEnd()
     {
         // <SnippetIndexFromEnd>
-        int[] xs = new[] { 0, 10, 20, 30, 40 };
+        int[] xs = [0, 10, 20, 30, 40];
         int last = xs[^1];
         Console.WriteLine(last);  // output: 40
 
-        var lines = new List<string> { "one", "two", "three", "four" };
+        List<string> lines = ["one", "two", "three", "four"];
         string prelast = lines[^2];
         Console.WriteLine(prelast);  // output: three
 
@@ -150,7 +154,7 @@ public static class MemberAccessOperators
     private static void Ranges()
     {
         // <SnippetRanges>
-        int[] numbers = new[] { 0, 10, 20, 30, 40, 50 };
+        int[] numbers = [0, 10, 20, 30, 40, 50];
         int start = 1;
         int amountToTake = 3;
         int[] subset = numbers[start..(start + amountToTake)];
@@ -173,7 +177,7 @@ public static class MemberAccessOperators
     private static void RangesOptional()
     {
         // <SnippetRangesOptional>
-        int[] numbers = new[] { 0, 10, 20, 30, 40, 50 };
+        int[] numbers = [0, 10, 20, 30, 40, 50];
         int amountToDrop = numbers.Length / 2;
 
         int[] rightHalf = numbers[amountToDrop..];
@@ -193,9 +197,9 @@ public static class MemberAccessOperators
     {
         // <RangesAllPossible>
         int[] oneThroughTen =
-        {
+        [
             1, 2, 3, 4, 5, 6, 7, 8, 9, 10
-        };
+        ];
 
         Write(oneThroughTen, ..);
         Write(oneThroughTen, ..3);

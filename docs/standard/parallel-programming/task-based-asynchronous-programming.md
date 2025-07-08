@@ -1,12 +1,12 @@
 ---
 title: "Task-based asynchronous programming - .NET"
 description: In this article, learn about task-based asynchronous programming through the Task Parallel Library (TPL) in .NET.
-ms.date: 01/11/2023
+ms.date: 06/03/2024
 ms.custom: devdivchpfy22
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "parallelism, task"
 ms.assetid: 458b5e69-5210-45e5-bc44-3888f86abd6f
 ---
@@ -94,14 +94,14 @@ Every task receives an integer ID that uniquely identifies it in an application 
 
 Most APIs that create tasks provide overloads that accept a <xref:System.Threading.Tasks.TaskCreationOptions> parameter. By specifying one or more of these options, you tell the task scheduler how to schedule the task on the thread pool. Options might be combined by using a bitwise **OR** operation.
 
-The following example shows a task that has the <xref:System.Threading.Tasks.TaskCreationOptions.LongRunning> and <xref:System.Threading.Tasks.TaskContinuationOptions.PreferFairness> options:
+The following example shows a task that has the <xref:System.Threading.Tasks.TaskCreationOptions.LongRunning> and <xref:System.Threading.Tasks.TaskCreationOptions.PreferFairness> options:
 
 [!code-csharp[TPL_TaskIntro#03](../../../samples/snippets/csharp/VS_Snippets_Misc/tpl_taskintro/cs/taskintro.cs#03)]
 [!code-vb[TPL_TaskIntro#03](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpl_taskintro/vb/tpl_intro.vb#03)]
 
 ## Tasks, threads, and culture
 
-Each thread has an associated culture and UI culture, which are defined by the <xref:System.Threading.Thread.CurrentCulture%2A?displayProperty=nameWithType> and <xref:System.Threading.Thread.CurrentUICulture%2A?displayProperty=nameWithType> properties, respectively. A thread's culture is used in operations such as, formatting, parsing, sorting, and string comparison operations. A thread's UI culture is used in resource lookup.
+Each thread has an associated culture and UI culture, which are defined by the <xref:System.Threading.Thread.CurrentCulture%2A?displayProperty=nameWithType> and <xref:System.Threading.Thread.CurrentUICulture%2A?displayProperty=nameWithType> properties, respectively. A thread's culture is used in operations such as formatting, parsing, sorting, and string comparison operations. A thread's UI culture is used in resource lookup.
 
 The system culture defines the default culture and UI culture of a thread. However, you can specify a default culture for all the threads in an application domain by using the <xref:System.Globalization.CultureInfo.DefaultThreadCurrentCulture%2A?displayProperty=nameWithType> and <xref:System.Globalization.CultureInfo.DefaultThreadCurrentUICulture%2A?displayProperty=nameWithType> properties. If you explicitly set a thread's culture and launch a new thread, the new thread doesn't inherit the culture of the calling thread; instead, its culture is the default system culture. However, in task-based programming, tasks use the calling thread's culture, even if the task runs asynchronously on a different thread.
 

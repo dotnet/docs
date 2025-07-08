@@ -1,1072 +1,1600 @@
 items:
-- name: .NET fundamentals documentation
-  href: index.yml
-- name: Get started
-  items:
-  - name: Hello World
-    href: ../core/get-started.md
-  - name: Get started tutorials
-    href: ../standard/get-started.md
-  - name: .NET Live TV
-    href: https://dotnet.microsoft.com/live
-  - name: How to install
+  - name: .NET fundamentals documentation
+    href: index.yml
+  - name: Get started
     items:
-    - name: Overview
-      href: ../core/install/index.yml
-    - name: Install on Windows
-      href: ../core/install/windows.md
-    - name: Install on macOS
-      href: ../core/install/macos.md
-    - name: Install on Linux
-      items:
-      - name: Overview
-        href: ../core/install/linux.md
-      - name: Ubuntu
+      - name: Hello World
+        href: ../core/get-started.md
+      - name: Get started tutorials
+        href: ../standard/get-started.md
+      - name: .NET Live TV
+        href: https://dotnet.microsoft.com/live
+      - name: How to install
         items:
-        - name: Overview
-          href: ../core/install/linux-ubuntu.md
-        - name: "23.04"
-          href: ../core/install/linux-ubuntu-2304.md
-        - name: "22.10"
-          href: ../core/install/linux-ubuntu-2210.md
-        - name: "22.04"
-          href: ../core/install/linux-ubuntu-2204.md
-        - name: "20.04"
-          href: ../core/install/linux-ubuntu-2004.md
-        - name: "18.04"
-          href: ../core/install/linux-ubuntu-1804.md
-        - name: "16.04"
-          href: ../core/install/linux-ubuntu-1604.md
-      - name: Alpine
-        href: ../core/install/linux-alpine.md
-      - name: CentOS
-        href: ../core/install/linux-centos.md
-      - name: CentOS Stream
-        href: ../core/install/linux-rhel.md#supported-distributions
-      - name: Debian
-        href: ../core/install/linux-debian.md
-      - name: Fedora
-        href: ../core/install/linux-fedora.md
-      - name: OpenSUSE
-        href: ../core/install/linux-opensuse.md
-      - name: Red Hat Enterprise Linux
-        href: ../core/install/linux-rhel.md
-      - name: SLES
-        href: ../core/install/linux-sles.md
-      - name: Installation script & binaries
-        href: ../core/install/linux-scripted-manual.md
-    - name: Remove outdated runtimes and SDKs
-      href: ../core/install/remove-runtime-sdk-versions.md
-    - name: Manage .NET templates
-      href: ../core/install/templates.md
-    - name: macOS Notarization issues
-      href: ../core/install/macos-notarization-issues.md
-    - name: Troubleshoot .NET Package mix ups on Linux
-      href: ../core/install/linux-package-mixup.md
-    - name: How to check .NET versions
-      href: ../core/install/how-to-detect-installed-versions.md
-    - name: Install localized IntelliSense
-      href: ../core/install/localized-intellisense.md
-- name: Overview
-  items:
-  - name: Introduction to .NET
-    href: ../core/introduction.md
-  - name: .NET languages
-    href: ../fundamentals/languages.md
-  - name: .NET implementations
-    href: ../fundamentals/implementations.md
-  - name: .NET class libraries
-    href: ../standard/class-libraries.md
-  - name: .NET Standard overview
-    href: ../standard/net-standard.md
-  - name: Releases, patches, and support
-    href: ../core/releases-and-support.md
-  - name: Ecma standards
-    href: ../fundamentals/standards.md
-  - name: .NET glossary
-    href: ../standard/glossary.md
-  - name: Tutorials
-    items:
-    - name: .NET 6 template changes
-      href: ../core/tutorials/top-level-templates.md
-    - name: Use Visual Studio
-      items:
-      - name: Create a console app
-        href: ../core/tutorials/with-visual-studio.md
-        displayName: tutorials, visual studio, vs
-      - name: Debug an app
-        href: ../core/tutorials/debugging-with-visual-studio.md
-        displayName: tutorials, visual studio, vs
-      - name: Publish an app
-        href: ../core/tutorials/publishing-with-visual-studio.md
-        displayName: tutorials, visual studio, vs
-      - name: Create a library
-        href: ../core/tutorials/library-with-visual-studio.md
-        displayName: tutorials, visual studio, vs
-      - name: Unit test a library
-        href: ../core/tutorials/testing-library-with-visual-studio.md
-        displayName: tutorials, visual studio, vs
-      - name: Install and use a package
-        href: /nuget/quickstart/install-and-use-a-package-in-visual-studio?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
-        displayName: tutorials, visual studio, vs
-      - name: Create and publish a package
-        href: /nuget/quickstart/create-and-publish-a-package-using-visual-studio?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
-        displayName: tutorials, visual studio, vs
-    - name: Use Visual Studio Code
-      items:
-      - name: Create a console app
-        href: ../core/tutorials/with-visual-studio-code.md
-        displayName: tutorials, visual studio code, vs code, cli
-      - name: Debug an app
-        href: ../core/tutorials/debugging-with-visual-studio-code.md
-        displayName: tutorials, visual studio code, vs code
-      - name: Publish an app
-        href: ../core/tutorials/publishing-with-visual-studio-code.md
-        displayName: tutorials, visual studio code, vs code
-      - name: Create a library
-        href: ../core/tutorials/library-with-visual-studio-code.md
-        displayName: tutorials, visual studio code, vs code
-      - name: Unit test a library
-        href: ../core/tutorials/testing-library-with-visual-studio-code.md
-        displayName: tutorials, visual studio code, vs code
-      - name: Install and use a package
-        href: /nuget/quickstart/install-and-use-a-package-using-the-dotnet-cli?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
-        displayName: tutorials, cli
-      - name: Create and publish a package
-        href: /nuget/quickstart/create-and-publish-a-package-using-the-dotnet-cli?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
-        displayName: tutorials
-    - name: Use Visual Studio for Mac
-      items:
-      - name: Create a console app
-        href: ../core/tutorials/with-visual-studio-mac.md
-        displayName: tutorials, visual studio for mac, vs for mac, cli
-      - name: Debug an app
-        href: ../core/tutorials/debugging-with-visual-studio-mac.md
-        displayName: tutorials, visual studio for mac, vs for mac
-      - name: Publish an app
-        href: ../core/tutorials/publishing-with-visual-studio-mac.md
-        displayName: tutorials, visual studio for mac, vs for mac
-      - name: Create a library
-        href: ../core/tutorials/library-with-visual-studio-mac.md
-        displayName: tutorials, visual studio for mac, vs for mac
-      - name: Unit test a library
-        href: ../core/tutorials/testing-library-with-visual-studio-mac.md
-        displayName: tutorials, visual studio for mac, vs for mac
-      - name: Install and use a package
-        href: /nuget/quickstart/install-and-use-a-package-in-visual-studio-mac?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
-        displayName: tutorials, visual studio for mac, vs for mac
-    - name: More tutorials
-      href: ../core/tutorials/index.md
-- name: What's new in .NET
-  items:
-  - name: .NET 8
-    items:
-    - name: What's new
-      href: ../core/whats-new/dotnet-8.md
-    - name: Breaking changes
-      href: ../core/compatibility/8.0.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
-  - name: .NET 7
-    items:
-    - name: What's new
-      href: ../core/whats-new/dotnet-7.md
-    - name: Breaking changes
-      href: ../core/compatibility/7.0.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
-  - name: .NET 6
-    items:
-    - name: What's new
-      href: ../core/whats-new/dotnet-6.md
-    - name: Breaking changes
-      href: ../core/compatibility/6.0.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
-  - name: .NET 5
-    items:
-    - name: What's new
-      href: ../core/whats-new/dotnet-5.md
-    - name: Breaking changes
-      href: ../core/compatibility/5.0.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
-  - name: .NET Core 3.1
-    items:
-    - name: What's new
-      href: ../core/whats-new/dotnet-core-3-1.md
-    - name: Breaking changes
-      href: ../core/compatibility/3.1.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
-  - name: .NET Core 3.0
-    items:
-    - name: What's new
-      href: ../core/whats-new/dotnet-core-3-0.md
-    - name: Breaking changes
-      href: ../core/compatibility/3.0.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
-  - name: .NET Core 2.2
-    href: ../core/whats-new/dotnet-core-2-2.md
-  - name: .NET Core 2.1
-    items:
-    - name: What's new
-      href: ../core/whats-new/dotnet-core-2-1.md
-    - name: Breaking changes
-      href: ../core/compatibility/2.1.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
-  - name: .NET Core 2.0
-    href: ../core/whats-new/dotnet-core-2-0.md
-  - name: .NET Standard
-    href: ../standard/whats-new/whats-new-in-dotnet-standard.md
-- name: Fundamental coding components
-  items:
-  - name: Base types overview
-    items:
-    - name: Common type system & common language specification
-      href: ../standard/common-type-system.md
-    - name: Common type system
-      href: ../standard/base-types/common-type-system.md
-    - name: Language independence
-      href: ../standard/language-independence.md
-    - name: Type conversion
-      href: ../standard/base-types/type-conversion.md
-    - name: Type conversion tables
-      href: ../standard/base-types/conversion-tables.md
-    - name: Choose between anonymous and tuple types
-      href: ../standard/base-types/choosing-between-anonymous-and-tuple.md
-    - name: Class library overview
-      href: ../standard/class-library-overview.md
-  - name: Generic types
-    items:
-    - name: Overview
-      href: ../standard/generics/index.md
-    - name: Intro to generic types
-      href: ../standard/generics.md
-    - name: Generic collections
-      href: ../standard/generics/collections.md
-    - name: Generic delegates for manipulating arrays and lists
-      href: ../standard/generics/delegates-for-manipulating-arrays-and-lists.md
-    - name: Generic math
-      href: ../standard/generics/math.md
-    - name: Generic interfaces
-      href: ../standard/generics/interfaces.md
-    - name: Covariance and contravariance
-      href: ../standard/generics/covariance-and-contravariance.md
-  - name: Collections and data structures
-    items:
-    - name: Overview
-      href: ../standard/collections/index.md
-      displayName: collections, data structures
-    - name: Select a collection class
-      href: ../standard/collections/selecting-a-collection-class.md
-    - name: Commonly used collection types
-      href: ../standard/collections/commonly-used-collection-types.md
-    - name: When to use generic collections
-      href: ../standard/collections/when-to-use-generic-collections.md
-    - name: Comparisons and sorts within collections
-      href: ../standard/collections/comparisons-and-sorts-within-collections.md
-    - name: Sorted collection types
-      href: ../standard/collections/sorted-collection-types.md
-    - name: Hashtable and Dictionary types
-      href: ../standard/collections/hashtable-and-dictionary-collection-types.md
-    - name: Thread-safe collections
-      href: ../standard/collections/thread-safe/index.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
-  - name: Delegates and lambdas
-    href: ../standard/delegates-lambdas.md
-  - name: Events
-    items:
-    - name: Overview
-      href: ../standard/events/index.md
-      displayName: events
-    - name: Raise and consume events
-      href: ../standard/events/how-to-raise-and-consume-events.md
-    - name: Handle multiple events using event properties
-      href: ../standard/events/how-to-handle-multiple-events-using-event-properties.md
-    - name: Observer design pattern
-      items:
-      - name: Overview
-        href: ../standard/events/observer-design-pattern.md
-        displayName: Observer design pattern
-      - name: Best practices
-        href: ../standard/events/observer-design-pattern-best-practices.md
-      - name: "How to: Implement a provider"
-        href: ../standard/events/how-to-implement-a-provider.md
-      - name: "How to: Implement an observer"
-        href: ../standard/events/how-to-implement-an-observer.md
-  - name: Exceptions
-    items:
-    - name: Overview
-      href: ../standard/exceptions/index.md
-      displayName: exceptions
-    - name: Exception class and properties
-      href: ../standard/exceptions/exception-class-and-properties.md
-    - name: How-tos
-      items:
-      - name: Use the try-catch block to catch exceptions
-        href: ../standard/exceptions/how-to-use-the-try-catch-block-to-catch-exceptions.md
-      - name: Use specific exceptions in a catch block
-        href: ../standard/exceptions/how-to-use-specific-exceptions-in-a-catch-block.md
-      - name: Explicitly throw exceptions
-        href: ../standard/exceptions/how-to-explicitly-throw-exceptions.md
-      - name: Create user-defined exceptions
-        href: ../standard/exceptions/how-to-create-user-defined-exceptions.md
-      - name: Create user-defined exceptions with localized exception messages
-        href: ../standard/exceptions/how-to-create-localized-exception-messages.md
-      - name: Use finally blocks
-        href: ../standard/exceptions/how-to-use-finally-blocks.md
-    - name: Use user-filtered exception handlers
-      href: ../standard/exceptions/using-user-filtered-exception-handlers.md
-    - name: Handle COM interop exceptions
-      href: ../standard/exceptions/handling-com-interop-exceptions.md
-    - name: Best practices
-      href: ../standard/exceptions/best-practices-for-exceptions.md
-  - name: Numeric types
-    href: ../standard/numerics.md
-  - name: Dates, times, and time zones
-    items:
-    - name: Overview
-      displayName:  dates,times,time zones
-      href: ../standard/datetime/index.md
-    - name: Choose which date and time type to use
-      href: ../standard/datetime/choosing-between-datetime.md
-    - name: Work with calendars
-      href: ../standard/datetime/working-with-calendars.md
-    - name: Use the DateOnly and TimeOnly types
-      href: ../standard/datetime/how-to-use-dateonly-timeonly.md
-    - name: Perform arithmetic operations
-      href: ../standard/datetime/performing-arithmetic-operations.md
-    - name: "DateTime and DateTimeOffset support in System.Text.Json"
-      href: ../standard/datetime/system-text-json-support.md
-    - name: Time zones
-      items:
-      - name: Overview
-        href: ../standard/datetime/time-zone-overview.md
-      - name: Use time zones in date and time arithmetic
-        href: ../standard/datetime/use-time-zones-in-arithmetic.md
-      - name: Convert between DateTime and DateTimeOffset
-        href: ../standard/datetime/converting-between-datetime-and-offset.md
-      - name: Convert times between time zones
-        href: ../standard/datetime/converting-between-time-zones.md
-      - name: "How to: Resolve ambiguous times"
-        href: ../standard/datetime/resolve-ambiguous-times.md
-      - name: "How to: Let users resolve ambiguous times"
-        href: ../standard/datetime/let-users-resolve-ambiguous-times.md
-      - name: Instantiate a DateTimeOffset object
-        items:
-        - name: Overview
-          href: ../standard/datetime/instantiating-a-datetimeoffset-object.md
-        - name: Create time zones without adjustment rules
-          href: ../standard/datetime/create-time-zones-without-adjustment-rules.md
-        - name: Create time zones with adjustment rules
-          href: ../standard/datetime/create-time-zones-with-adjustment-rules.md
-      - name: Time zones defined by the OS
-        items:
-        - name: Overview
-          href: ../standard/datetime/finding-the-time-zones-on-local-system.md
-        - name: Enumerate time zones present on a computer
-          href: ../standard/datetime/enumerate-time-zones.md
-        - name: Access predefined UTC and local time zone objects
-          href: ../standard/datetime/access-utc-and-local.md
-        - name: Instantiate a TimeZoneInfo object
-          href: ../standard/datetime/instantiate-time-zone-info.md
-      - name: Save and restore time zones
-        items:
-        - name: Overview
-          href: ../standard/datetime/saving-and-restoring-time-zones.md
-        - name: Save time zones to an embedded resource
-          href: ../standard/datetime/save-time-zones-to-an-embedded-resource.md
-        - name: Restore time zones from an embedded resource
-          href: ../standard/datetime/restore-time-zones-from-an-embedded-resource.md
-  - name: Attributes
-    items:
-    - name: Overview
-      href: ../standard/attributes/index.md
-      displayName: attributes
-    - name: Apply attributes
-      href: ../standard/attributes/applying-attributes.md
-    - name: Write custom attributes
-      href: ../standard/attributes/writing-custom-attributes.md
-    - name: Retrieve information stored in attributes
-      href: ../standard/attributes/retrieving-information-stored-in-attributes.md
-  - name: Performance-related types
-    items:
-    - name: Memory and span-related types
-      items:
-      - name: Overview
-        href: ../standard/memory-and-spans/index.md
-      - name: Memory<T> and Span<T> usage guidelines
-        href: ../standard/memory-and-spans/memory-t-usage-guidelines.md
-    - name: SIMD-enabled types
-      href: ../standard/simd.md
-- name: Runtime libraries
-  items:
+          - name: Overview
+            href: ../core/install/index.yml
+            displayName: install
+          - name: Install on Windows
+            href: ../core/install/windows.md
+          - name: Install on macOS
+            href: ../core/install/macos.md
+          - name: Install on Linux
+            items:
+              - name: Overview
+                href: ../core/install/linux.md
+                displayName: linux
+              - name: Ubuntu
+                expanded: true
+                items:
+                  - name: Install
+                    href: ../core/install/linux-ubuntu-install.md
+                    displayName: ubuntu
+                  - name: Decision guide
+                    href: ../core/install/linux-ubuntu-decision.md
+                    displayName: ubuntu
+              - name: Alpine
+                href: ../core/install/linux-alpine.md
+                displayName: linux
+              - name: CentOS Stream
+                href: ../core/install/linux-rhel.md#supported-distributions
+                displayName: linux
+              - name: Debian
+                href: ../core/install/linux-debian.md
+                displayName: linux
+              - name: Fedora
+                href: ../core/install/linux-fedora.md
+                displayName: linux
+              - name: OpenSUSE
+                href: ../core/install/linux-opensuse.md
+                displayName: linux
+              - name: Red Hat Enterprise Linux
+                href: ../core/install/linux-rhel.md
+              - name: SLES
+                href: ../core/install/linux-sles.md
+                displayName: linux
+              - name: Installation script & binaries
+                href: ../core/install/linux-scripted-manual.md
+              - name: Install with Snap
+                expanded: true
+                items:
+                  - name: Runtime
+                    href: ../core/install/linux-snap-runtime.md
+                  - name: SDK
+                    href: ../core/install/linux-snap-sdk.md
+          - name: Upgrade to a new .NET version
+            href: ../core/install/upgrade.md
+          - name: Remove outdated runtimes and SDKs
+            href: ../core/install/remove-runtime-sdk-versions.md
+          - name: Manage .NET templates
+            href: ../core/install/templates.md
+          - name: macOS Notarization issues
+            href: ../core/install/macos-notarization-issues.md
+          - name: Troubleshoot .NET Package mix ups on Linux
+            href: ../core/install/linux-package-mixup.md
+          - name: How to check .NET versions
+            href: ../core/install/how-to-detect-installed-versions.md
+          - name: Install localized IntelliSense
+            href: ../core/install/localized-intellisense.md
   - name: Overview
-    href: ../standard/runtime-libraries-overview.md
-  - name: Format numbers, dates, other types
     items:
-    - name: Overview
-      href: ../standard/base-types/formatting-types.md
-    - name: Standard numeric format strings
-      href: ../standard/base-types/standard-numeric-format-strings.md
-    - name: Custom numeric format strings
-      href: ../standard/base-types/custom-numeric-format-strings.md
-    - name: Standard date and time format strings
-      href: ../standard/base-types/standard-date-and-time-format-strings.md
-    - name: Custom date and time format strings
-      href: ../standard/base-types/custom-date-and-time-format-strings.md
-    - name: Standard TimeSpan format strings
-      href: ../standard/base-types/standard-timespan-format-strings.md
-    - name: Custom TimeSpan format strings
-      href: ../standard/base-types/custom-timespan-format-strings.md
-    - name: Enumeration format strings
-      href: ../standard/base-types/enumeration-format-strings.md
-    - name: Composite formatting
-      href: ../standard/base-types/composite-formatting.md
-    - name: How-tos
-      items:
-      - name: Pad a number with leading zeros
-        href: ../standard/base-types/how-to-pad-a-number-with-leading-zeros.md
-      - name: Extract the day of the week from a date
-        href: ../standard/base-types/how-to-extract-the-day-of-the-week-from-a-specific-date.md
-      - name: Use custom numeric format providers
-        href: ../standard/base-types/how-to-define-and-use-custom-numeric-format-providers.md
-      - name: Round-trip date and time values
-        href: ../standard/base-types/how-to-round-trip-date-and-time-values.md
-      - name: Display milliseconds in date and time values
-        href: ../standard/base-types/how-to-display-milliseconds-in-date-and-time-values.md
-      - name: Display dates in non-Gregorian calendars
-        href: ../standard/base-types/how-to-display-dates-in-non-gregorian-calendars.md
-  - name: Work with strings
-    items:
-    - name: Character encoding
-      href: ../standard/base-types/character-encoding-introduction.md
-    - name: How to use character encoding classes
-      href: ../standard/base-types/character-encoding.md
-    - name: Best practices
-      items:
-      - name: Comparing strings
-        href: ../standard/base-types/best-practices-strings.md
-      - name: Displaying and persisting formatted data
-        href: ../standard/base-types/best-practices-display-data.md
-    - name: Behavior changes in .NET 5+ (Windows)
-      href: ../standard/base-types/string-comparison-net-5-plus.md
-    - name: Basic string operations
-      items:
-      - name: Overview
-        href: ../standard/base-types/basic-string-operations.md
-        displayName: string operations
-      - name: Create new strings
-        href: ../standard/base-types/creating-new.md
-      - name: Trim and remove characters
-        href: ../standard/base-types/trimming.md
-      - name: Pad strings
-        href: ../standard/base-types/padding.md
-      - name: Comparison methods
-        href: ../standard/base-types/comparing.md
-      - name: Change case
-        href: ../standard/base-types/changing-case.md
-      - name: Separate parts of a string
-        href: ../standard/base-types/divide-up-strings.md
-      - name: Use the StringBuilder class
-        href: ../standard/base-types/stringbuilder.md
-      - name: "How to: Perform basic string manipulations"
-        href: ../standard/base-types/basic-manipulations.md
-    - name: Parse (convert) strings
-      items:
-      - name: Overview
-        href: ../standard/base-types/parsing-strings.md
-      - name: Parse numeric strings
-        href: ../standard/base-types/parsing-numeric.md
-      - name: Parse date and time strings
-        href: ../standard/base-types/parsing-datetime.md
-      - name: Parse other strings
-        href: ../standard/base-types/parsing-other.md
-  - name: Regular expressions
-    items:
-    - name: Overview
-      href: ../standard/base-types/regular-expressions.md
-      displayName: regular expressions
-    - name: Source generation
-      href: ../standard/base-types/regular-expression-source-generators.md
-      displayName: regular expressions,advanced,design concepts,source generators,algorithmic reduction,regex
-    - name: Language reference
-      items:
-      - name: Overview
-        href: ../standard/base-types/regular-expression-language-quick-reference.md
-      - name: Character escapes
-        href: ../standard/base-types/character-escapes-in-regular-expressions.md
-      - name: Character classes
-        href: ../standard/base-types/character-classes-in-regular-expressions.md
-      - name: Anchors
-        href: ../standard/base-types/anchors-in-regular-expressions.md
-      - name: Grouping constructs
-        href: ../standard/base-types/grouping-constructs-in-regular-expressions.md
-      - name: Quantifiers
-        href: ../standard/base-types/quantifiers-in-regular-expressions.md
-      - name: Backreference constructs
-        href: ../standard/base-types/backreference-constructs-in-regular-expressions.md
-      - name: Alternation constructs
-        href: ../standard/base-types/alternation-constructs-in-regular-expressions.md
-      - name: Substitutions
-        href: ../standard/base-types/substitutions-in-regular-expressions.md
-      - name: Regular expression options
-        href: ../standard/base-types/regular-expression-options.md
-      - name: Miscellaneous constructs
-        href: ../standard/base-types/miscellaneous-constructs-in-regular-expressions.md
-    - name: Best practices for regular expressions
-      href: ../standard/base-types/best-practices.md
-    - name: Regular expression object model
-      href: ../standard/base-types/the-regular-expression-object-model.md
-    - name: Regular expression behavior
-      items:
-      - name: Overview
-        href: ../standard/base-types/details-of-regular-expression-behavior.md
-      - name: Backtracking
-        href: ../standard/base-types/backtracking-in-regular-expressions.md
-      - name: Compilation and reuse
-        href: ../standard/base-types/compilation-and-reuse-in-regular-expressions.md
-      - name: Thread safety
-        href: ../standard/base-types/thread-safety-in-regular-expressions.md
-    - name: Examples
-      items:
-      - name: Scan for HREFs
-        href: ../standard/base-types/regular-expression-example-scanning-for-hrefs.md
-      - name: Change date formats
-        href: ../standard/base-types/regular-expression-example-changing-date-formats.md
-      - name: Extract a protocol and port number from a URL
-        href: ../standard/base-types/how-to-extract-a-protocol-and-port-number-from-a-url.md
-      - name: Strip invalid characters from a string
-        href: ../standard/base-types/how-to-strip-invalid-characters-from-a-string.md
-      - name: Verify that strings are in valid email format
-        href: ../standard/base-types/how-to-verify-that-strings-are-in-valid-email-format.md
-  - name: Serialization
-    items:
-    - name: Overview
-      href: ../standard/serialization/index.md
-    - name: JSON serialization
-      items:
-      - name: Overview
-        href: ../standard/serialization/system-text-json/overview.md
-        displayName: json serialization
-      - name: Reflection vs. source generation
-        href: ../standard/serialization/system-text-json/source-generation-modes.md
-      - name: How to serialize and deserialize JSON
-        href: ../standard/serialization/system-text-json/how-to.md
-      - name: Control serialization behavior
+      - name: Introduction to .NET
+        href: ../core/introduction.md
+      - name: Build apps with .NET
+        href: ../core/apps.md
+      - name: .NET languages
+        href: ../fundamentals/languages.md
+      - name: .NET implementations
+        href: ../fundamentals/implementations.md
+      - name: .NET class libraries
+        href: ../standard/class-libraries.md
+      - name: .NET Standard overview
+        href: ../standard/net-standard.md
+      - name: Releases, patches, and support
+        href: ../core/releases-and-support.md
+      - name: Ecma standards
+        href: ../fundamentals/standards.md
+      - name: .NET glossary
+        href: ../standard/glossary.md
+      - name: Tutorials
         items:
-        - name: Instantiate JsonSerializerOptions
-          href: ../standard/serialization/system-text-json/configure-options.md
-        - name: Enable case-insensitive matching
-          href: ../standard/serialization/system-text-json/character-casing.md
-        - name: Customize property names and values
-          href: ../standard/serialization/system-text-json/customize-properties.md
-        - name: Ignore properties
-          href: ../standard/serialization/system-text-json/ignore-properties.md
-        - name: Require properties
-          href: ../standard/serialization/system-text-json/required-properties.md
-        - name: Allow invalid JSON
-          href: ../standard/serialization/system-text-json/invalid-json.md
-        - name: Handle missing members
-          href: ../standard/serialization/system-text-json/missing-members.md
-        - name: Handle overflow JSON, use JsonElement or JsonNode
-          href: ../standard/serialization/system-text-json/handle-overflow.md
-        - name: Preserve references, handle circular references
-          href: ../standard/serialization/system-text-json/preserve-references.md
-        - name: Deserialize to immutable types, non-public accessors
-          href: ../standard/serialization/system-text-json/immutability.md
-        - name: Polymorphic serialization
-          href: ../standard/serialization/system-text-json/polymorphism.md
-      - name: Read/write JSON without using JsonSerializer
+          - name: .NET 6 template changes
+            href: ../core/tutorials/top-level-templates.md
+          - name: Use Visual Studio
+            items:
+              - name: Create a console app
+                href: ../core/tutorials/with-visual-studio.md
+                displayName: tutorials, visual studio, vs
+              - name: Debug an app
+                href: ../core/tutorials/debugging-with-visual-studio.md
+                displayName: tutorials, visual studio, vs
+              - name: Publish an app
+                href: ../core/tutorials/publishing-with-visual-studio.md
+                displayName: tutorials, visual studio, vs
+              - name: Create a library
+                href: ../core/tutorials/library-with-visual-studio.md
+                displayName: tutorials, visual studio, vs
+              - name: Unit test a library
+                href: ../core/tutorials/testing-library-with-visual-studio.md
+                displayName: tutorials, visual studio, vs
+              - name: Install and use a package
+                href: /nuget/quickstart/install-and-use-a-package-in-visual-studio?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
+                displayName: tutorials, visual studio, vs
+              - name: Create and publish a package
+                href: /nuget/quickstart/create-and-publish-a-package-using-visual-studio?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
+                displayName: tutorials, visual studio, vs
+          - name: Use Visual Studio Code
+            items:
+              - name: Create a console app
+                href: ../core/tutorials/with-visual-studio-code.md
+                displayName: tutorials, visual studio code, vs code, cli
+              - name: Debug an app
+                href: ../core/tutorials/debugging-with-visual-studio-code.md
+                displayName: tutorials, visual studio code, vs code
+              - name: Publish an app
+                href: ../core/tutorials/publishing-with-visual-studio-code.md
+                displayName: tutorials, visual studio code, vs code
+              - name: Create a library
+                href: ../core/tutorials/library-with-visual-studio-code.md
+                displayName: tutorials, visual studio code, vs code
+              - name: Unit test a library
+                href: ../core/tutorials/testing-library-with-visual-studio-code.md
+                displayName: tutorials, visual studio code, vs code
+              - name: Install and use a package
+                href: /nuget/quickstart/install-and-use-a-package-using-the-dotnet-cli?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
+                displayName: tutorials, cli
+              - name: Create and publish a package
+                href: /nuget/quickstart/create-and-publish-a-package-using-the-dotnet-cli?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
+                displayName: tutorials
+          - name: More tutorials
+            href: ../core/tutorials/index.md
+  - name: What's new in .NET
+    items:
+      - name: .NET 10
         items:
-        - name: Use DOM
-          href: ../standard/serialization/system-text-json/use-dom.md
-        - name: Use Utf8JsonWriter
-          href: ../standard/serialization/system-text-json/use-utf8jsonwriter.md
-        - name: Use Utf8JsonReader
-          href: ../standard/serialization/system-text-json/use-utf8jsonreader.md
-      - name: Migrate from Newtonsoft.Json
-        href: ../standard/serialization/system-text-json/migrate-from-newtonsoft.md
-      - name: Visual Basic support
-        href: ../standard/serialization/system-text-json/visual-basic-support.md
-      - name: Supported collection types
-        href: ../standard/serialization/system-text-json/supported-collection-types.md
-      - name: Advanced
+          - name: What's new
+            items:
+              - name: Overview
+                href: ../core/whats-new/dotnet-10/overview.md
+                displayName: whats new, what's new
+              - name: Runtime
+                href: ../core/whats-new/dotnet-10/runtime.md
+              - name: Libraries
+                href: ../core/whats-new/dotnet-10/libraries.md
+              - name: SDK
+                href: ../core/whats-new/dotnet-10/sdk.md
+          - name: Breaking changes
+            href: ../core/compatibility/10.0.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
+      - name: .NET 9
         items:
-        - name: Customize character encoding
-          href: ../standard/serialization/system-text-json/character-encoding.md
-        - name: Use source generation
-          href: ../standard/serialization/system-text-json/source-generation.md
-        - name: Write custom converters
-          href: ../standard/serialization/system-text-json/converters-how-to.md
-        - name: Customize contracts
-          href: ../standard/serialization/system-text-json/custom-contracts.md
-    - name: XML and SOAP serialization
-      items:
+          - name: What's new
+            items:
+              - name: Overview
+                href: ../core/whats-new/dotnet-9/overview.md
+                displayName: whats new, what's new
+              - name: Runtime
+                href: ../core/whats-new/dotnet-9/runtime.md
+              - name: Libraries
+                href: ../core/whats-new/dotnet-9/libraries.md
+              - name: SDK
+                href: ../core/whats-new/dotnet-9/sdk.md
+          - name: Breaking changes
+            href: ../core/compatibility/9.0.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
+      - name: .NET 8
+        items:
+          - name: What's new
+            items:
+              - name: Overview
+                href: ../core/whats-new/dotnet-8/overview.md
+                displayName: whats new, what's new
+              - name: Runtime
+                href: ../core/whats-new/dotnet-8/runtime.md
+              - name: SDK and tooling
+                href: ../core/whats-new/dotnet-8/sdk.md
+              - name: Containers
+                href: ../core/whats-new/dotnet-8/containers.md
+          - name: Breaking changes
+            href: ../core/compatibility/8.0.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
+      - name: .NET 7
+        items:
+          - name: What's new
+            href: ../core/whats-new/dotnet-7.md
+          - name: Breaking changes
+            href: ../core/compatibility/7.0.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
+      - name: .NET 6
+        items:
+          - name: What's new
+            href: ../core/whats-new/dotnet-6.md
+          - name: Breaking changes
+            href: ../core/compatibility/6.0.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
+      - name: .NET 5
+        items:
+          - name: What's new
+            href: ../core/whats-new/dotnet-5.md
+          - name: Breaking changes
+            href: ../core/compatibility/5.0.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
+      - name: .NET Core 3.1
+        items:
+          - name: What's new
+            href: ../core/whats-new/dotnet-core-3-1.md
+          - name: Breaking changes
+            href: ../core/compatibility/3.1.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
+      - name: .NET Core 3.0
+        items:
+          - name: What's new
+            href: ../core/whats-new/dotnet-core-3-0.md
+          - name: Breaking changes
+            href: ../core/compatibility/3.0.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
+      - name: .NET Core 2.2
+        href: ../core/whats-new/dotnet-core-2-2.md
+      - name: .NET Core 2.1
+        items:
+          - name: What's new
+            href: ../core/whats-new/dotnet-core-2-1.md
+          - name: Breaking changes
+            href: ../core/compatibility/2.1.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
+      - name: .NET Core 2.0
+        href: ../core/whats-new/dotnet-core-2-0.md
+      - name: .NET Standard
+        href: ../standard/whats-new/whats-new-in-dotnet-standard.md
+  - name: Fundamental coding components
+    items:
+      - name: Base types overview
+        items:
+          - name: Common type system
+            href: ../standard/base-types/common-type-system.md
+          - name: Language independence
+            href: ../standard/language-independence.md
+          - name: Type conversion
+            items:
+              - name: Overview
+                displayName: type conversion
+                href: ../standard/base-types/type-conversion.md
+              - name: Type conversion tables
+                href: ../standard/base-types/conversion-tables.md
+              - name: Supplemental API remarks
+                items:
+                  - name: Convert class
+                    href: runtime-libraries/system-convert.md
+          - name: Choose between anonymous and tuple types
+            href: ../standard/base-types/choosing-between-anonymous-and-tuple.md
+          - name: Class library overview
+            href: ../standard/class-library-overview.md
+          - name: Supplemental API remarks
+            items:
+              - name: System.Object class
+                items:
+                  - name: Type remarks
+                    href: runtime-libraries/system-object.md
+                    displayName: object
+                  - name: Equals method
+                    href: runtime-libraries/system-object-equals.md
+                  - name: Finalize method
+                    href: runtime-libraries/system-object-finalize.md
+                  - name: GetHashCode method
+                    href: runtime-libraries/system-object-gethashcode.md
+                  - name: ToString method
+                    href: runtime-libraries/system-object-tostring.md
+          - name: Nullability
+            items:
+              - name: Supplemental API remarks
+                items:
+                  - name: Nullable class
+                    href: runtime-libraries/system-nullable.md
+                  - name: Nullable<T> class
+                    href: runtime-libraries/system-nullable{t}.md
+      - name: Generic types
+        items:
+          - name: Overview
+            href: ../standard/generics/index.md
+          - name: Intro to generic types
+            href: ../standard/generics.md
+          - name: Generic collections
+            href: ../standard/generics/collections.md
+          - name: Generic delegates for manipulating arrays and lists
+            href: ../standard/generics/delegates-for-manipulating-arrays-and-lists.md
+          - name: Generic math
+            href: ../standard/generics/math.md
+          - name: Generic interfaces
+            href: ../standard/generics/interfaces.md
+          - name: Covariance and contravariance
+            href: ../standard/generics/covariance-and-contravariance.md
+      - name: Collections and data structures
+        items:
+          - name: Overview
+            href: ../standard/collections/index.md
+            displayName: collections, data structures
+          - name: Select a collection class
+            href: ../standard/collections/selecting-a-collection-class.md
+          - name: Commonly used collection types
+            href: ../standard/collections/commonly-used-collection-types.md
+          - name: When to use generic collections
+            href: ../standard/collections/when-to-use-generic-collections.md
+          - name: Comparisons and sorts within collections
+            href: ../standard/collections/comparisons-and-sorts-within-collections.md
+          - name: Sorted collection types
+            href: ../standard/collections/sorted-collection-types.md
+          - name: Hashtable and Dictionary types
+            href: ../standard/collections/hashtable-and-dictionary-collection-types.md
+          - name: Thread-safe collections
+            href: ../standard/collections/thread-safe/index.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
+          - name: Supplemental API remarks
+            items:
+              - name: HashSet<T> class
+                href: runtime-libraries/system-collections-generic-hashset{t}.md
+              - name: KeyedCollection<TKey,TItem> class
+                items:
+                  - name: ChangeItemKey method
+                    href: runtime-libraries/system-collections-objectmodel-keyedcollection{tkey,titem}-changeitemkey.md
+              - name: List<T> class
+                href: runtime-libraries/system-collections-generic-list{t}.md
+              - name: ObservableCollection<T> class
+                href: runtime-libraries/system-collections-objectmodel-observablecollection{t}.md
+      - name: Delegates and lambdas
+        items:
+          - name: Overview
+            href: ../standard/delegates-lambdas.md
+            displayName: delegates,lambdas
+          - name: Supplemental API remarks
+            items:
+              - name: Delegate.CreateDelegate method
+                href: runtime-libraries/system-delegate-createdelegate.md
+      - name: Enumerations
+        items:
+          - name: Supplemental API remarks
+            items:
+              - name: Enum class
+                href: runtime-libraries/system-enum.md
+              - name: FlagsAttribute class
+                href: runtime-libraries/system-flagsattribute.md
+      - name: Events
+        items:
+          - name: Overview
+            href: ../standard/events/index.md
+            displayName: events
+          - name: Raise and consume events
+            href: ../standard/events/how-to-raise-and-consume-events.md
+          - name: Handle multiple events using event properties
+            href: ../standard/events/how-to-handle-multiple-events-using-event-properties.md
+          - name: Observer design pattern
+            items:
+              - name: Overview
+                href: ../standard/events/observer-design-pattern.md
+                displayName: Observer design pattern
+              - name: Best practices
+                href: ../standard/events/observer-design-pattern-best-practices.md
+              - name: "How to: Implement a provider"
+                href: ../standard/events/how-to-implement-a-provider.md
+              - name: "How to: Implement an observer"
+                href: ../standard/events/how-to-implement-an-observer.md
+      - name: Exceptions
+        items:
+          - name: Overview
+            href: ../standard/exceptions/index.md
+            displayName: exceptions
+          - name: Exception class
+            href: ../standard/exceptions/exception-class-and-properties.md
+          - name: How-tos
+            items:
+              - name: Use the try-catch block to catch exceptions
+                href: ../standard/exceptions/how-to-use-the-try-catch-block-to-catch-exceptions.md
+              - name: Use specific exceptions in a catch block
+                href: ../standard/exceptions/how-to-use-specific-exceptions-in-a-catch-block.md
+              - name: Explicitly throw exceptions
+                href: ../standard/exceptions/how-to-explicitly-throw-exceptions.md
+              - name: Create user-defined exceptions
+                href: ../standard/exceptions/how-to-create-user-defined-exceptions.md
+              - name: Create user-defined exceptions with localized exception messages
+                href: ../standard/exceptions/how-to-create-localized-exception-messages.md
+              - name: Use finally blocks
+                href: ../standard/exceptions/how-to-use-finally-blocks.md
+          - name: Use user-filtered exception handlers
+            href: ../standard/exceptions/using-user-filtered-exception-handlers.md
+          - name: Handle COM interop exceptions
+            href: ../standard/exceptions/handling-com-interop-exceptions.md
+          - name: Best practices
+            href: ../standard/exceptions/best-practices-for-exceptions.md
+          - name: Supplemental API remarks
+            items:
+              - name: AccessViolationException class
+                href: runtime-libraries/system-accessviolationexception.md
+              - name: Exception class
+                items:
+                  - name: Type remarks
+                    href: runtime-libraries/system-exception.md
+                    displayName: exception
+                  - name: Data property
+                    href: runtime-libraries/system-exception-data.md
+                  - name: Message property
+                    href: runtime-libraries/system-exception-message.md
+              - name: InvalidCastException class
+                href: runtime-libraries/system-invalidcastexception.md
+              - name: InvalidOperationException class
+                href: runtime-libraries/system-invalidoperationexception.md
+              - name: NotImplementedException class
+                href: runtime-libraries/system-notimplementedexception.md
+              - name: NotSupportedException class
+                href: runtime-libraries/system-notsupportedexception.md
+              - name: TypeInitializationException class
+                href: runtime-libraries/system-typeinitializationexception.md
+      - name: Numeric types
+        items:
+          - name: Overview
+            displayName: numeric types
+            href: ../standard/numerics.md
+          - name: Supplemental API remarks
+            items:
+              - name: Boolean struct
+                href: runtime-libraries/system-boolean.md
+              - name: Byte struct
+                href: runtime-libraries/system-byte.md
+              - name: Decimal struct
+                href: runtime-libraries/system-decimal.md
+              - name: Double struct
+                items:
+                  - name: Type remarks
+                    href: runtime-libraries/system-double.md
+                    displayName: system.double,double
+                  - name: CompareTo method
+                    href: runtime-libraries/system-double-compareto.md
+                  - name: Equals method
+                    href: runtime-libraries/system-double-equals.md
+                  - name: Epsilon property
+                    href: runtime-libraries/system-double-epsilon.md
+              - name: Int32 struct
+                href: runtime-libraries/system-int32.md
+              - name: Int64 struct
+                href: runtime-libraries/system-int64.md
+              - name: BigInteger struct
+                href: runtime-libraries/system-numerics-biginteger.md
+              - name: Complex struct
+                href: runtime-libraries/system-numerics-complex.md
+              - name: Single struct
+                items:
+                  - name: Type remarks
+                    href: runtime-libraries/system-single.md
+                    displayName: single
+                  - name: CompareTo method
+                    href: runtime-libraries/system-single-compareto.md
+                  - name: Epsilon property
+                    href: runtime-libraries/system-single-epsilon.md
+                  - name: Equals method
+                    href: runtime-libraries/system-single-equals.md
+      - name: Dates, times, and time zones
+        items:
+          - name: Overview
+            displayName: dates,times,time zones
+            href: ../standard/datetime/index.md
+          - name: Choose which date and time type to use
+            href: ../standard/datetime/choosing-between-datetime.md
+          - name: Work with calendars
+            href: ../standard/datetime/working-with-calendars.md
+          - name: Use the DateOnly and TimeOnly types
+            href: ../standard/datetime/how-to-use-dateonly-timeonly.md
+          - name: Perform arithmetic operations
+            href: ../standard/datetime/performing-arithmetic-operations.md
+          - name: Use TimeProvider to write predictable code
+            href: ../standard/datetime/timeprovider-overview.md
+          - name: "DateTime and DateTimeOffset support in System.Text.Json"
+            href: ../standard/datetime/system-text-json-support.md
+          - name: Time zones
+            items:
+              - name: Overview
+                href: ../standard/datetime/time-zone-overview.md
+              - name: Use time zones in date and time arithmetic
+                href: ../standard/datetime/use-time-zones-in-arithmetic.md
+              - name: Convert between DateTime and DateTimeOffset
+                href: ../standard/datetime/converting-between-datetime-and-offset.md
+              - name: Convert times between time zones
+                href: ../standard/datetime/converting-between-time-zones.md
+              - name: "How to: Resolve ambiguous times"
+                href: ../standard/datetime/resolve-ambiguous-times.md
+              - name: "How to: Let users resolve ambiguous times"
+                href: ../standard/datetime/let-users-resolve-ambiguous-times.md
+              - name: Instantiate a DateTimeOffset object
+                items:
+                  - name: Overview
+                    href: ../standard/datetime/instantiating-a-datetimeoffset-object.md
+                  - name: Create time zones without adjustment rules
+                    href: ../standard/datetime/create-time-zones-without-adjustment-rules.md
+                  - name: Create time zones with adjustment rules
+                    href: ../standard/datetime/create-time-zones-with-adjustment-rules.md
+              - name: Time zones defined by the OS
+                items:
+                  - name: Overview
+                    href: ../standard/datetime/finding-the-time-zones-on-local-system.md
+                  - name: Enumerate time zones present on a computer
+                    href: ../standard/datetime/enumerate-time-zones.md
+                  - name: Access predefined UTC and local time zone objects
+                    href: ../standard/datetime/access-utc-and-local.md
+                  - name: Instantiate a TimeZoneInfo object
+                    href: ../standard/datetime/instantiate-time-zone-info.md
+              - name: Save and restore time zones
+                items:
+                  - name: Overview
+                    href: ../standard/datetime/saving-and-restoring-time-zones.md
+                  - name: Save time zones to an embedded resource
+                    href: ../standard/datetime/save-time-zones-to-an-embedded-resource.md
+                  - name: Restore time zones from an embedded resource
+                    href: ../standard/datetime/restore-time-zones-from-an-embedded-resource.md
+          - name: Supplemental API remarks
+            items:
+              - name: DateTime struct
+                items:
+                  - name: Type remarks
+                    href: runtime-libraries/system-datetime.md
+                    displayName: datetime
+                  - name: ToBinary method
+                    href: runtime-libraries/system-datetime-tobinary.md
+                  - name: TryParse method
+                    href: runtime-libraries/system-datetime-tryparse.md
+              - name: TimeSpan struct
+                items:
+                  - name: Type remarks
+                    href: runtime-libraries/system-timespan.md
+                    displayName: timespan
+                  - name: Parse method
+                    href: runtime-libraries/system-timespan-parse.md
+                  - name: TryParse method
+                    href: runtime-libraries/system-timespan-tryparse.md
+      - name: Attributes
+        items:
+          - name: Overview
+            href: ../standard/attributes/index.md
+            displayName: attributes
+          - name: Apply attributes
+            href: ../standard/attributes/applying-attributes.md
+          - name: Write custom attributes
+            href: ../standard/attributes/writing-custom-attributes.md
+          - name: Retrieve information stored in attributes
+            href: ../standard/attributes/retrieving-information-stored-in-attributes.md
+      - name: Performance-related types
+        items:
+          - name: Memory and span-related types
+            items:
+              - name: Overview
+                href: ../standard/memory-and-spans/index.md
+              - name: Memory<T> and Span<T> usage guidelines
+                href: ../standard/memory-and-spans/memory-t-usage-guidelines.md
+              - name: Supplemental API remarks
+                items:
+                  - name: Span<T> struct
+                    href: runtime-libraries/system-span{t}.md
+          - name: SIMD-enabled types
+            href: ../standard/simd.md
+      - name: Value tuples
+        href: ../standard/value-tuples.md
+  - name: Runtime libraries
+    items:
       - name: Overview
-        href: ../standard/serialization/xml-and-soap-serialization.md
-      - name: XML serialization in depth
-        href: ../standard/serialization/introducing-xml-serialization.md
-      - name: Examples
-        href: ../standard/serialization/examples-of-xml-serialization.md
-      - name: The XML Schema Definition tool
-        href: ../standard/serialization/the-xml-schema-definition-tool-and-xml-serialization.md
-      - name: Control XML serialization using attributes
-        href: ../standard/serialization/controlling-xml-serialization-using-attributes.md
-      - name: Attributes that control XML serialization
-        href: ../standard/serialization/attributes-that-control-xml-serialization.md
-      - name: XML serialization with XML Web Services
-        href: ../standard/serialization/xml-serialization-with-xml-web-services.md
-      - name: Attributes that control encoded SOAP serialization
-        href: ../standard/serialization/attributes-that-control-encoded-soap-serialization.md
-      - name: How-tos
+        href: ../standard/runtime-libraries-overview.md
+      - name: Preview APIs
+        href: runtime-libraries/preview-apis.md
+      - name: Format numbers, dates, other types
         items:
-        - name: Serialize an object
-          href: ../standard/serialization/how-to-serialize-an-object.md
-        - name: Deserialize an object
-          href: ../standard/serialization/how-to-deserialize-an-object.md
-        - name: Use the XML Schema Definition tool to generate classes and XML schema documents
-          href: ../standard/serialization/xml-schema-def-tool-gen.md
-        - name: Control serialization of derived classes
-          href: ../standard/serialization/how-to-control-serialization-of-derived-classes.md
-        - name: Specify an alternate element name for an XML stream
-          href: ../standard/serialization/how-to-specify-an-alternate-element-name-for-an-xml-stream.md
-        - name: Qualify XML element and XML attribute names
-          href: ../standard/serialization/how-to-qualify-xml-element-and-xml-attribute-names.md
-        - name: Serialize an object as a SOAP-encoded XML stream
-          href: ../standard/serialization/how-to-serialize-an-object-as-a-soap-encoded-xml-stream.md
-        - name: Override encoded SOAP XML serialization
-          href: ../standard/serialization/how-to-override-encoded-soap-xml-serialization.md
-        - name: Chunk serialized data
-          href: ../standard/serialization/how-to-chunk-serialized-data.md
-      - name: XML serialization elements
+          - name: Overview
+            href: ../standard/base-types/formatting-types.md
+          - name: Standard numeric format strings
+            href: ../standard/base-types/standard-numeric-format-strings.md
+          - name: Custom numeric format strings
+            href: ../standard/base-types/custom-numeric-format-strings.md
+          - name: Standard date and time format strings
+            href: ../standard/base-types/standard-date-and-time-format-strings.md
+          - name: Custom date and time format strings
+            href: ../standard/base-types/custom-date-and-time-format-strings.md
+          - name: Standard TimeSpan format strings
+            href: ../standard/base-types/standard-timespan-format-strings.md
+          - name: Custom TimeSpan format strings
+            href: ../standard/base-types/custom-timespan-format-strings.md
+          - name: Enumeration format strings
+            href: ../standard/base-types/enumeration-format-strings.md
+          - name: Composite formatting
+            href: ../standard/base-types/composite-formatting.md
+          - name: How-tos
+            items:
+              - name: Pad a number with leading zeros
+                href: ../standard/base-types/how-to-pad-a-number-with-leading-zeros.md
+              - name: Extract the day of the week from a date
+                href: ../standard/base-types/how-to-extract-the-day-of-the-week-from-a-specific-date.md
+              - name: Use custom numeric format providers
+                href: ../standard/base-types/how-to-define-and-use-custom-numeric-format-providers.md
+              - name: Round-trip date and time values
+                href: ../standard/base-types/how-to-round-trip-date-and-time-values.md
+              - name: Display milliseconds in date and time values
+                href: ../standard/base-types/how-to-display-milliseconds-in-date-and-time-values.md
+              - name: Display dates in non-Gregorian calendars
+                href: ../standard/base-types/how-to-display-dates-in-non-gregorian-calendars.md
+      - name: Work with strings
         items:
-        - name: system.xml.serialization
-          href: ../standard/serialization/system-xml-serialization-element.md
-        - name: dateTimeSerialization
-          href: ../standard/serialization/datetimeserialization-element.md
-        - name: schemaImporterExtensions
-          href: ../standard/serialization/schemaimporterextensions-element.md
-        - name: add element for schemaImporterExtensions
-          href: ../standard/serialization/add-element-for-schemaimporterextensions.md
-        - name: xmlSerializer
-          href: ../standard/serialization/xmlserializer-element.md
-      - name: Tools
+          - name: Character encoding
+            href: ../standard/base-types/character-encoding-introduction.md
+          - name: How to use character encoding classes
+            href: ../standard/base-types/character-encoding.md
+          - name: Best practices
+            items:
+              - name: Comparing strings
+                href: ../standard/base-types/best-practices-strings.md
+              - name: Displaying and persisting formatted data
+                href: ../standard/base-types/best-practices-display-data.md
+          - name: Behavior changes in .NET 5+ (Windows)
+            href: ../standard/base-types/string-comparison-net-5-plus.md
+          - name: Basic string operations
+            items:
+              - name: Overview
+                href: ../standard/base-types/basic-string-operations.md
+                displayName: string operations
+              - name: Create new strings
+                href: ../standard/base-types/creating-new.md
+              - name: Trim and remove characters
+                href: ../standard/base-types/trimming.md
+              - name: Pad strings
+                href: ../standard/base-types/padding.md
+              - name: Comparison methods
+                href: ../standard/base-types/comparing.md
+              - name: Change case
+                href: ../standard/base-types/changing-case.md
+              - name: Separate parts of a string
+                href: ../standard/base-types/divide-up-strings.md
+              - name: Use the StringBuilder class
+                href: ../standard/base-types/stringbuilder.md
+              - name: "How to: Perform basic string manipulations"
+                href: ../standard/base-types/basic-manipulations.md
+          - name: Parse (convert) strings
+            items:
+              - name: Overview
+                href: ../standard/base-types/parsing-strings.md
+              - name: Parse numeric strings
+                href: ../standard/base-types/parsing-numeric.md
+              - name: Parse date and time strings
+                href: ../standard/base-types/parsing-datetime.md
+              - name: Parse other strings
+                href: ../standard/base-types/parsing-other.md
+          - name: Supplemental API remarks
+            items:
+              - name: String class
+                items:
+                  - name: Type remarks
+                    href: runtime-libraries/system-string.md
+                    displayName: string
+                  - name: Constructor
+                    href: runtime-libraries/system-string-ctor.md
+                  - name: Format method
+                    href: runtime-libraries/system-string-format.md
+                  - name: Intern method
+                    href: runtime-libraries/system-string-intern.md
+                  - name: IsNullOrEmpty method
+                    href: runtime-libraries/system-string-isnullorempty.md
+              - name: Char struct
+                href: runtime-libraries/system-char.md
+              - name: StringComparer class
+                href: runtime-libraries/system-stringcomparer.md
+              - name: Encoding class
+                items:
+                  - name: Type remarks
+                    href: runtime-libraries/system-text-encoding.md
+                    displayName: encoding
+                  - name: Default property
+                    href: runtime-libraries/system-text-encoding-default.md
+              - name: Regex class
+                items:
+                  - name: Type remarks
+                    href: runtime-libraries/system-text-regularexpressions-regex.md
+                    displayName: regex
+                  - name: Match method
+                    href: runtime-libraries/system-text-regularexpressions-regex-match.md
+              - name: Rune struct
+                href: runtime-libraries/system-text-rune.md
+              - name: StringBuilder class
+                href: runtime-libraries/system-text-stringbuilder.md
+      - name: Compliance
         items:
-        - name: XML Serializer Generator tool (Sgen.exe)
-          href: ../standard/serialization/xml-serializer-generator-tool-sgen-exe.md
-        - name: XML Schema Definition tool (Xsd.exe)
-          href: ../standard/serialization/xml-schema-definition-tool-xsd-exe.md
-    - name: Binary serialization
-      items:
-      - name: BinaryFormatter security guide
-        href: ../standard/serialization/binaryformatter-security-guide.md
-      - name: BinaryFormatter event source
-        href: ../standard/serialization/binaryformatter-event-source.md
-  - name: System.CommandLine
+          - name: Overview
+            href: ../core/extensions/compliance.md
+          - name: Data classification
+            href: ../core/extensions/data-classification.md
+          - name: Data redaction
+            href: ../core/extensions/data-redaction.md
+      - name: Regular expressions
+        items:
+          - name: Overview
+            href: ../standard/base-types/regular-expressions.md
+            displayName: regular expressions
+          - name: Language reference
+            items:
+              - name: Overview
+                href: ../standard/base-types/regular-expression-language-quick-reference.md
+              - name: Character escapes
+                href: ../standard/base-types/character-escapes-in-regular-expressions.md
+              - name: Character classes
+                href: ../standard/base-types/character-classes-in-regular-expressions.md
+              - name: Anchors
+                href: ../standard/base-types/anchors-in-regular-expressions.md
+              - name: Grouping constructs
+                href: ../standard/base-types/grouping-constructs-in-regular-expressions.md
+              - name: Quantifiers
+                href: ../standard/base-types/quantifiers-in-regular-expressions.md
+              - name: Backreference constructs
+                href: ../standard/base-types/backreference-constructs-in-regular-expressions.md
+              - name: Alternation constructs
+                href: ../standard/base-types/alternation-constructs-in-regular-expressions.md
+              - name: Substitutions
+                href: ../standard/base-types/substitutions-in-regular-expressions.md
+              - name: Regular expression options
+                href: ../standard/base-types/regular-expression-options.md
+              - name: Miscellaneous constructs
+                href: ../standard/base-types/miscellaneous-constructs-in-regular-expressions.md
+          - name: Regular expression object model
+            href: ../standard/base-types/the-regular-expression-object-model.md
+          - name: Behavior and performance
+            items:
+              - name: Overview
+                href: ../standard/base-types/details-of-regular-expression-behavior.md
+              - name: Backtracking
+                href: ../standard/base-types/backtracking-in-regular-expressions.md
+              - name: Compilation and reuse
+                href: ../standard/base-types/compilation-and-reuse-in-regular-expressions.md
+              - name: Source generation
+                href: ../standard/base-types/regular-expression-source-generators.md
+                displayName: source generation,algorithmic reduction
+              - name: Best practices
+                href: ../standard/base-types/best-practices-regex.md
+          - name: Examples
+            items:
+              - name: Scan for HREFs
+                href: ../standard/base-types/regular-expression-example-scanning-for-hrefs.md
+              - name: Change date formats
+                href: ../standard/base-types/regular-expression-example-changing-date-formats.md
+              - name: Extract a protocol and port number from a URL
+                href: ../standard/base-types/how-to-extract-a-protocol-and-port-number-from-a-url.md
+              - name: Strip invalid characters from a string
+                href: ../standard/base-types/how-to-strip-invalid-characters-from-a-string.md
+              - name: Verify that strings are in valid email format
+                href: ../standard/base-types/how-to-verify-that-strings-are-in-valid-email-format.md
+      - name: Serialization
+        items:
+          - name: Overview
+            href: ../standard/serialization/index.md
+          - name: JSON serialization
+            items:
+              - name: Overview
+                href: ../standard/serialization/system-text-json/overview.md
+                displayName: json serialization
+              - name: How to
+                items:
+                  - name: Serialize
+                    items:
+                      - name: How to serialize
+                        href: ../standard/serialization/system-text-json/how-to.md
+                      - name: Customize property names and values
+                        href: ../standard/serialization/system-text-json/customize-properties.md
+                      - name: Ignore properties
+                        href: ../standard/serialization/system-text-json/ignore-properties.md
+                      - name: Include fields
+                        href: ../standard/serialization/system-text-json/fields.md
+                  - name: Deserialize
+                    items:
+                      - name: How to deserialize
+                        href: ../standard/serialization/system-text-json/deserialization.md
+                      - name: Require JSON properties
+                        href: ../standard/serialization/system-text-json/required-properties.md
+                      - name: Respect nullable annotations
+                        href: ../standard/serialization/system-text-json/nullable-annotations.md
+                      - name: Allow invalid JSON
+                        href: ../standard/serialization/system-text-json/invalid-json.md
+                      - name: Handle unmapped members
+                        href: ../standard/serialization/system-text-json/missing-members.md
+                      - name: Handle overflow JSON, use JsonElement or JsonNode
+                        href: ../standard/serialization/system-text-json/handle-overflow.md
+                      - name: Deserialize to immutable types
+                        href: ../standard/serialization/system-text-json/immutability.md
+                      - name: Populate initialized properties
+                        href: ../standard/serialization/system-text-json/populate-properties.md
+                  - name: Migrate from Newtonsoft.Json
+                    href: ../standard/serialization/system-text-json/migrate-from-newtonsoft.md
+                  - name: Instantiate JsonSerializerOptions
+                    href: ../standard/serialization/system-text-json/configure-options.md
+                  - name: Enable case-insensitive matching
+                    href: ../standard/serialization/system-text-json/character-casing.md
+                  - name: Handle references
+                    href: ../standard/serialization/system-text-json/preserve-references.md
+                  - name: Serialize polymorphic types
+                    href: ../standard/serialization/system-text-json/polymorphism.md
+                  - name: Use extension methods on HttpClient
+                    href: ../standard/serialization/system-text-json/httpclient-extensions.md
+                  - name: Read/write JSON without using JsonSerializer
+                    items:
+                      - name: Use DOM
+                        href: ../standard/serialization/system-text-json/use-dom.md
+                      - name: Use Utf8JsonWriter
+                        href: ../standard/serialization/system-text-json/use-utf8jsonwriter.md
+                      - name: Use Utf8JsonReader
+                        href: ../standard/serialization/system-text-json/use-utf8jsonreader.md
+              - name: Visual Basic support
+                href: ../standard/serialization/system-text-json/visual-basic-support.md
+              - name: Supported types
+                href: ../standard/serialization/system-text-json/supported-types.md
+              - name: Advanced
+                items:
+                  - name: Source generation
+                    items:
+                      - name: Reflection vs. source generation
+                        href: ../standard/serialization/system-text-json/reflection-vs-source-generation.md
+                      - name: Source-generation modes
+                        href: ../standard/serialization/system-text-json/source-generation-modes.md
+                      - name: Use source generation
+                        href: ../standard/serialization/system-text-json/source-generation.md
+                  - name: Customize character encoding
+                    href: ../standard/serialization/system-text-json/character-encoding.md
+                  - name: Write custom converters
+                    href: ../standard/serialization/system-text-json/converters-how-to.md
+                  - name: Customize contracts
+                    href: ../standard/serialization/system-text-json/custom-contracts.md
+                  - name: Extract JSON schema
+                    href: ../standard/serialization/system-text-json/extract-schema.md
+          - name: XML and SOAP serialization
+            items:
+              - name: Overview
+                href: ../standard/serialization/xml-and-soap-serialization.md
+              - name: XML serialization in depth
+                href: ../standard/serialization/introducing-xml-serialization.md
+              - name: Examples
+                href: ../standard/serialization/examples-of-xml-serialization.md
+              - name: The XML Schema Definition tool
+                href: ../standard/serialization/the-xml-schema-definition-tool-and-xml-serialization.md
+              - name: Control XML serialization using attributes
+                href: ../standard/serialization/controlling-xml-serialization-using-attributes.md
+              - name: Attributes that control XML serialization
+                href: ../standard/serialization/attributes-that-control-xml-serialization.md
+              - name: XML serialization with XML Web Services
+                href: ../standard/serialization/xml-serialization-with-xml-web-services.md
+              - name: Attributes that control encoded SOAP serialization
+                href: ../standard/serialization/attributes-that-control-encoded-soap-serialization.md
+              - name: How-tos
+                items:
+                  - name: Serialize an object
+                    href: ../standard/serialization/how-to-serialize-an-object.md
+                  - name: Deserialize an object
+                    href: ../standard/serialization/how-to-deserialize-an-object.md
+                  - name: Use the XML Schema Definition tool to generate classes and XML schema documents
+                    href: ../standard/serialization/xml-schema-def-tool-gen.md
+                  - name: Control serialization of derived classes
+                    href: ../standard/serialization/how-to-control-serialization-of-derived-classes.md
+                  - name: Specify an alternate element name for an XML stream
+                    href: ../standard/serialization/how-to-specify-an-alternate-element-name-for-an-xml-stream.md
+                  - name: Qualify XML element and XML attribute names
+                    href: ../standard/serialization/how-to-qualify-xml-element-and-xml-attribute-names.md
+                  - name: Serialize an object as a SOAP-encoded XML stream
+                    href: ../standard/serialization/how-to-serialize-an-object-as-a-soap-encoded-xml-stream.md
+                  - name: Override encoded SOAP XML serialization
+                    href: ../standard/serialization/how-to-override-encoded-soap-xml-serialization.md
+                  - name: Chunk serialized data
+                    href: ../standard/serialization/how-to-chunk-serialized-data.md
+              - name: XML serialization elements
+                items:
+                  - name: system.xml.serialization
+                    href: ../standard/serialization/system-xml-serialization-element.md
+                  - name: dateTimeSerialization
+                    href: ../standard/serialization/datetimeserialization-element.md
+                  - name: schemaImporterExtensions
+                    href: ../standard/serialization/schemaimporterextensions-element.md
+                  - name: add element for schemaImporterExtensions
+                    href: ../standard/serialization/add-element-for-schemaimporterextensions.md
+                  - name: xmlSerializer
+                    href: ../standard/serialization/xmlserializer-element.md
+              - name: Tools
+                items:
+                  - name: XML Serializer Generator tool (Sgen.exe)
+                    href: ../standard/serialization/xml-serializer-generator-tool-sgen-exe.md
+                  - name: XML Schema Definition tool (Xsd.exe)
+                    href: ../standard/serialization/xml-schema-definition-tool-xsd-exe.md
+          - name: Binary serialization
+            items:
+              - name: BinaryFormatter migration guide
+                items:
+                  - name: Overview
+                    href: ../standard/serialization/binaryformatter-migration-guide/index.md
+                  - name: Choose a serializer
+                    href: ../standard/serialization/binaryformatter-migration-guide/choose-a-serializer.md
+                  - name: Migrate to System.Text.Json (JSON)
+                    href: ../standard/serialization/binaryformatter-migration-guide/migrate-to-system-text-json.md
+                  - name: Migrate to DataContractSerializer (XML)
+                    href: ../standard/serialization/binaryformatter-migration-guide/migrate-to-datacontractserializer.md
+                  - name: Migrate to MessagePack (binary)
+                    href: ../standard/serialization/binaryformatter-migration-guide/migrate-to-messagepack.md
+                  - name: Migrate to protobuf-net (binary)
+                    href: ../standard/serialization/binaryformatter-migration-guide/migrate-to-protobuf-net.md
+                  - name: Read BinaryFormatter (NRBF) payloads
+                    href: ../standard/serialization/binaryformatter-migration-guide/read-nrbf-payloads.md
+                  - name: Compatibility package
+                    href: ../standard/serialization/binaryformatter-migration-guide/compatibility-package.md
+                  - name: BinaryFormatter functionality reference
+                    href: ../standard/serialization/binaryformatter-migration-guide/functionality-reference.md
+                  - name: Windows Forms apps
+                    href: ../standard/serialization/binaryformatter-migration-guide/winforms-applications.md
+                  - name: WPF apps
+                    href: ../standard/serialization/binaryformatter-migration-guide/wpf-applications.md
+                  - name: Clipboard and drag-and-drop guidance
+                    href: ../standard/serialization/binaryformatter-migration-guide/winforms-wpf-ole-guidance.md
+              - name: BinaryFormatter security guide
+                href: ../standard/serialization/binaryformatter-security-guide.md
+              - name: BinaryFormatter event source
+                href: ../standard/serialization/binaryformatter-event-source.md
+          - name: Supplemental API remarks
+            items:
+              - name: DataContractAttribute class
+                href: runtime-libraries/system-runtime-serialization-datacontractattribute.md
+              - name: DataContractSerializer class
+                href: runtime-libraries/system-runtime-serialization-datacontractserializer.md
+              - name: IExtensibleDataObject class
+                href: runtime-libraries/system-runtime-serialization-iextensibledataobject.md
+              - name: XsdDataContractExporter class
+                href: runtime-libraries/system-runtime-serialization-xsddatacontractexporter.md
+      - name: System.CommandLine
+        items:
+          - name: Overview
+            href: ../standard/commandline/index.md
+          - name: Get started tutorial
+            href: ../standard/commandline/get-started-tutorial.md
+          - name: Command-line syntax overview
+            href: ../standard/commandline/syntax.md
+          - name: How to
+            expanded: true
+            items:
+            - name: Parse and invoke the result
+              href: ../standard/commandline/how-to-parse-and-invoke.md
+            - name: Customize parsing and validation
+              href: ../standard/commandline/how-to-customize-parsing-and-validation.md
+            - name: Configure the parser
+              href: ../standard/commandline/how-to-configure-the-parser.md
+            - name: Enable and customize tab completion
+              href: ../standard/commandline/how-to-enable-tab-completion.md
+            - name: Customize help
+              href: ../standard/commandline/how-to-customize-help.md
+          - name: Design guidance
+            href: ../standard/commandline/design-guidance.md
+          - name: Migration guide to 2.0.0-beta5
+            href: ../standard/commandline/migration-guide-2.0.0-beta5.md
+      - name: File and stream I/O
+        items:
+          - name: Overview
+            href: ../standard/io/index.md
+          - name: File path formats on Windows systems
+            href: ../standard/io/file-path-formats.md
+          - name: Common I/O tasks
+            href: ../standard/io/common-i-o-tasks.md
+            items:
+              - name: "How to: Copy Directories"
+                href: ../standard/io/how-to-copy-directories.md
+              - name: "How to: Enumerate Directories and Files"
+                href: ../standard/io/how-to-enumerate-directories-and-files.md
+              - name: "How to: Read and Write to a Newly Created Data File"
+                href: ../standard/io/how-to-read-and-write-to-a-newly-created-data-file.md
+              - name: "How to: Open and Append to a Log File"
+                href: ../standard/io/how-to-open-and-append-to-a-log-file.md
+              - name: "How to: Write Text to a File"
+                href: ../standard/io/how-to-write-text-to-a-file.md
+              - name: "How to: Read Text from a File"
+                href: ../standard/io/how-to-read-text-from-a-file.md
+              - name: "How to: Read Characters from a String"
+                href: ../standard/io/how-to-read-characters-from-a-string.md
+              - name: "How to: Write Characters to a String"
+                href: ../standard/io/how-to-write-characters-to-a-string.md
+              - name: "How to: Add or Remove Access Control List Entries"
+                href: ../standard/io/how-to-add-or-remove-access-control-list-entries.md
+              - name: "How to: Compress and Extract Files"
+                href: ../standard/io/how-to-compress-and-extract-files.md
+              - name: Composing Streams
+                href: ../standard/io/composing-streams.md
+              - name: "How to: Convert Between .NET Framework Streams and Windows Runtime Streams"
+                href: ../standard/io/how-to-convert-between-dotnet-streams-and-winrt-streams.md
+          - name: Asynchronous file I/O
+            href: ../standard/io/asynchronous-file-i-o.md
+          - name: Handle I/O errors
+            href: ../standard/io/handling-io-errors.md
+          - name: Isolated storage
+            href: ../standard/io/isolated-storage.md
+            items:
+              - name: Types of Isolation
+                href: ../standard/io/types-of-isolation.md
+              - name: "How to: Obtain Stores for Isolated Storage"
+                href: ../standard/io/how-to-obtain-stores-for-isolated-storage.md
+              - name: "How to: Enumerate Stores for Isolated Storage"
+                href: ../standard/io/how-to-enumerate-stores-for-isolated-storage.md
+              - name: "How to: Delete Stores in Isolated Storage"
+                href: ../standard/io/how-to-delete-stores-in-isolated-storage.md
+              - name: "How to: Anticipate Out-of-Space Conditions with Isolated Storage"
+                href: ../standard/io/how-to-anticipate-out-of-space-conditions-with-isolated-storage.md
+              - name: "How to: Create Files and Directories in Isolated Storage"
+                href: ../standard/io/how-to-create-files-and-directories-in-isolated-storage.md
+              - name: "How to: Find Existing Files and Directories in Isolated Storage"
+                href: ../standard/io/how-to-find-existing-files-and-directories-in-isolated-storage.md
+              - name: "How to: Read and Write to Files in Isolated Storage"
+                href: ../standard/io/how-to-read-and-write-to-files-in-isolated-storage.md
+              - name: "How to: Delete Files and Directories in Isolated Storage"
+                href: ../standard/io/how-to-delete-files-and-directories-in-isolated-storage.md
+          - name: Pipes
+            href: ../standard/io/pipe-operations.md
+            items:
+              - name: "How to: Use Anonymous Pipes for Local Interprocess Communication"
+                href: ../standard/io/how-to-use-anonymous-pipes-for-local-interprocess-communication.md
+              - name: "How to: Use Named Pipes for Network Interprocess Communication"
+                href: ../standard/io/how-to-use-named-pipes-for-network-interprocess-communication.md
+          - name: Pipelines
+            href: ../standard/io/pipelines.md
+          - name: Work with buffers
+            href: ../standard/io/buffers.md
+          - name: Memory-mapped files
+            href: ../standard/io/memory-mapped-files.md
+          - name: Supplemental API remarks
+            items:
+              - name: FileStream class
+                href: runtime-libraries/system-io-filestream.md
+              - name: FileSystemWatcher class
+                href: runtime-libraries/system-io-filesystemwatcher.md
+      - name: The System.AppContext class
+        href: runtime-libraries/system-appcontext.md
+      - name: The System.Console class
+        items:
+          - name: Console apps
+            href: ../standard/building-console-apps.md
+          - name: Supplemental API remarks
+            href: runtime-libraries/system-console.md
+      - name: The System.Random class
+        href: runtime-libraries/system-random.md
+      - name: Artificial intelligence (AI)
+        displayName: microsoft.extensions.ai,ollama,ai,openai,azure inference,ichatclient
+        href: ../ai/microsoft-extensions-ai.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
+      - name: Dependency injection
+        items:
+          - name: Overview
+            href: ../core/extensions/dependency-injection.md
+            displayName: dependency injection,di,ioc,ioc container,dependency container,inversion of control
+          - name: Dependency injection basics
+            href: ../core/extensions/dependency-injection-basics.md
+            displayName: dependency injection basics,di basics,ioc basics,ioc container basics,dependency container basics,inversion of control basics
+          - name: Use dependency injection
+            href: ../core/extensions/dependency-injection-usage.md
+            displayName: use dependency injection,di,di examples,ioc,ioc container,dependency container,inversion of control
+          - name: Dependency injection guidelines
+            href: ../core/extensions/dependency-injection-guidelines.md
+            displayName: dependency injection best practices,guidelines,di,ioc,ioc container,dependency container,inversion of control
+      - name: Configuration
+        items:
+          - name: Overview
+            href: ../core/extensions/configuration.md
+            displayName: configuration,config,configuration sources,config sources
+          - name: Configuration providers
+            href: ../core/extensions/configuration-providers.md
+            displayName: configuration providers,config providers
+          - name: Configuration source generation
+            href: ../core/extensions/configuration-generator.md
+          - name: Implement a custom configuration provider
+            href: ../core/extensions/custom-configuration-provider.md
+            displayName: custom configuration,custom config,custom configuration provider,custom config provider
+          - name: Options pattern
+            href: ../core/extensions/options.md
+            displayName: options pattern,options,configuration options,config options
+          - name: Options validation source generation
+            href: ../core/extensions/options-validation-generator.md
+            displayName: options source generation, OptionsValidator, OptionsValidatorAttribute
+          - name: Options pattern guidance for library authors
+            href: ../core/extensions/options-library-authors.md
+            displayName: options pattern guidance,options guidance,configuration options guidance,config options guidance
+      - name: Logging
+        items:
+          - name: Overview
+            href: ../core/extensions/logging.md
+            displayName: logging,logger,log,loggers
+          - name: Logging providers
+            href: ../core/extensions/logging-providers.md
+            displayName: logging providers,log providers
+          - name: Compile-time logging source generation
+            href: ../core/extensions/logger-message-generator.md
+            displayName: LoggerMessage,LoggerMessageAttribute,source generator,compile-time generation
+          - name: Logging guidance for library authors
+            href: ../core/extensions/logging-library-authors.md
+            displayName: logging guidance,logger guidance,log guidance
+          - name: Implement a custom logging provider
+            href: ../core/extensions/custom-logging-provider.md
+            displayName: custom logging,custom log,custom logging provider,custom log provider
+          - name: High-performance logging
+            href: ../core/extensions/high-performance-logging.md
+            displayName: high-performance logging,high-performance log,high-performance logging provider,high-performance log provider
+          - name: Log Sampling
+            href: ../core/extensions/log-sampling.md
+          - name: Log Buffering
+            href: ../core/extensions/log-buffering.md
+          - name: Console log formatting
+            href: ../core/extensions/console-log-formatter.md
+            displayName: console log formatting,console log formatter,console log formatting provider,console log formatter provider
+      - name: HostBuilder (generic host)
+        href: ../core/extensions/generic-host.md
+      - name: Resilience
+        href: ../core/resilience/index.md
+        displayName: resilience,transient fault handling,recovery,polly
+      - name: Networking
+        items:
+          - name: Network programming
+            href: networking/overview.md
+            displayName: networking,sockets,socket,socket programming,socket client,socket server,socket client server,socket client-server,socket client-server,socket client/server,socket client/server,socket client-serve
+          - name: Network availability
+            href: networking/network-info.md
+            displayName: network availability,network info,network information,network availability info,network availability information,network info availability,network information availability,network availability info
+          - name: IPv6 overview
+            href: networking/ipv6-overview.md
+            displayName: ipv6,ipv
+          - name: Service discovery in .NET
+            href: ../core/extensions/service-discovery.md
+          - name: HTTP
+            items:
+              - name: HTTP support
+                href: networking/http/http-overview.md
+                displayName: networking,http,web services,httpclient
+              - name: HTTP client guidelines
+                href: networking/http/httpclient-guidelines.md
+                displayName: networking, httpclient
+              - name: Migration from HttpWebRequest to HttpClient
+                href: networking/http/httpclient-migrate-from-httpwebrequest.md
+                displayName: networking,http,httpclient,migrate,httpwebrequest
+              - name: Make HTTP requests
+                href: networking/http/httpclient.md
+                displayName: networking,http,web services,client
+              - name: HTTP client factory
+                href: ../core/extensions/httpclient-factory.md
+                displayName: networking,httpclient,http,dependency injection,client,factory,named client,named httpclient,typed client,typed httpclient
+              - name: HTTP client factory troubleshooting
+                href: ../core/extensions/httpclient-factory-troubleshooting.md
+                displayName: httpclient,http,client,factory,named client,named httpclient,typed client,typed httpclient
+              - name: Keyed DI support in HTTP client factory
+                href: ../core/extensions/httpclient-factory-keyed-di.md
+                displayName: httpclient,http,client,factory,dependency injection,keyed,keyed di,keyed services
+              - name: Build resilient HTTP apps
+                href: ../core/resilience/http-resilience.md
+                displayName: resilience,transient fault handling,http,httpclient,recovery,polly
+              - name: HTTP/3 with .NET
+                href: ../core/extensions/httpclient-http3.md
+                displayName: networking,http,http3,http/3,http3 with .net,http/3 with .net
+              - name: Rate limit an HTTP handler
+                href: ../core/extensions/http-ratelimiter.md
+                displayName: networking,http,rate limit,rate limiting,rate limit http,rate limiting http,rate limit http handler,rate limiting http handler
+              - name: Customize SNI in HTTP requests
+                href: ../core/extensions/httpclient-sni.md
+                displayName: networking,http,httpclient,sni,server name indication,server name indication http,server name indication httpclient,server name indication http client
+              - name: Supplemental API remarks
+                items:
+                  - name: HttpClient class
+                    href: runtime-libraries/system-net-http-httpclient.md
+                  - name: HttpClientHandler class
+                    href: runtime-libraries/system-net-http-httpclienthandler.md
+                  - name: HttpListener class
+                    href: runtime-libraries/system-net-httplistener.md
+          - name: Sockets
+            items:
+              - name: Sockets support
+                href: networking/sockets/sockets-overview.md
+                displayName: networking,sockets,socket,socket programming,socket client,socket server
+              - name: Use Sockets to send and receive data over TCP
+                href: networking/sockets/socket-services.md
+                displayName: networking,sockets,socket,socket programming,socket client,socket server
+              - name: Use TcpClient and TcpListener
+                href: networking/sockets/tcp-classes.md
+                displayName: networking,tcp,tcp listener,tcp client
+              - name: Supplemental API remarks
+                items:
+                  - name: Socket class
+                    href: runtime-libraries/system-net-sockets-socket.md
+          - name: WebSockets
+            items:
+              - name: WebSockets support
+                href: networking/websockets.md
+                displayName: websockets,websocket,websocket programming,websocket client,websocket server
+          - name: Security
+            items:
+              - name: TLS/SSL best practices
+                href: ../core/extensions/sslstream-best-practices.md
+                displayName: tls,ssl,sslstream,sslstream best practices,tls best practices,ssl best practices
+              - name: Troubleshoot SslStream authentication issues
+                href: ../core/extensions/sslstream-troubleshooting.md
+                displayName: tls,ssl,sslstream,sslstream troubleshooting,tls troubleshooting,ssl troubleshooting
+              - name: Migrate from .NET Framework to .NET
+                href: ../core/extensions/sslstream-migration-from-framework.md
+          - name: QUIC
+            items:
+              - name: QUIC support
+                href: networking/quic/quic-overview.md
+              - name: QUIC configuration options
+                href: networking/quic/quic-options.md
+              - name: QUIC troubleshooting
+                href: networking/quic/quic-troubleshooting.md
+          - name: Telemetry
+            items:
+              - name: Networking telemetry
+                href: networking/telemetry/overview.md
+                displayName: networking telemetry
+              - name: Metrics
+                href: networking/telemetry/metrics.md
+                displayName: networking metrics
+              - name: Distributed tracing
+                href: networking/telemetry/tracing.md
+                displayName: networking distributed tracing
+              - name: Events
+                href: networking/telemetry/events.md
+                displayName: networking events
+              - name: Event counters
+                href: networking/telemetry/event-counters.md
+                displayName: networking event counters
+      - name: File globbing
+        href: ../core/extensions/file-globbing.md
+        displayName: file globbing,globbing,globbing patterns,globbing pattern,globbing
+      - name: Primitives library
+        href: ../core/extensions/primitives.md
+        displayName: primitives,primitive types,ichangetoken,change notifications,string tokenizers,StringSegment,StringTokenizer,StringValues
+      - name: Globalization and localization
+        items:
+          - name: Overview
+            href: ../core/extensions/globalization-and-localization.md
+            displayName: globalization,localization,culture,localization and globalization
+          - name: Globalization
+            href: ../core/extensions/globalization.md
+            displayName: globalization,culture
+          - name: Globalization and ICU
+            href: ../core/extensions/globalization-icu.md
+            displayName: globalization,icu,culture
+          - name: Culture-insensitive string operations
+            items:
+              - name: Overview
+                href: ../core/extensions/performing-culture-insensitive-string-operations.md
+              - name: String comparisons
+                href: ../core/extensions/performing-culture-insensitive-string-comparisons.md
+              - name: Case changes
+                href: ../core/extensions/performing-culture-insensitive-case-changes.md
+              - name: String operations in collections
+                href: ../core/extensions/performing-culture-insensitive-string-operations-in-collections.md
+              - name: String operations in arrays
+                href: ../core/extensions/performing-culture-insensitive-string-operations-in-arrays.md
+          - name: Best practices for developing world-ready apps
+            href: ../core/extensions/best-practices-for-developing-world-ready-apps.md
+          - name: Localizability review
+            href: ../core/extensions/localizability-review.md
+            displayName: localizability,localization,localization review,localizability review
+          - name: Localization
+            href: ../core/extensions/localization.md
+            displayName: localization,localization review,localizability review
+          - name: Supplemental API remarks
+            items:
+              - name: CompareInfo
+                href: runtime-libraries/system-globalization-compareinfo.md
+              - name: CompareOptions
+                href: runtime-libraries/system-globalization-compareoptions.md
+              - name: CultureAndRegionInfoBuilder
+                items:
+                  - name: Type remarks
+                    href: runtime-libraries/system-globalization-cultureandregioninfobuilder.md
+                    displayName: cultureandregioninfobuilder
+                  - name: Constructor
+                    href: runtime-libraries/system-globalization-cultureandregioninfobuilder-ctor.md
+              - name: CultureInfo
+                items:
+                  - name: Type remarks
+                    href: runtime-libraries/system-globalization-cultureinfo.md
+                    displayName: cultureinfo
+                  - name: CurrentCulture property
+                    href: runtime-libraries/system-globalization-cultureinfo-currentculture.md
+                  - name: CurrentUICulture property
+                    href: runtime-libraries/system-globalization-cultureinfo-currentuiculture.md
+                  - name: InvariantCulture property
+                    href: runtime-libraries/system-globalization-cultureinfo-invariantculture.md
+              - name: DateTimeFormatInfo
+                href: runtime-libraries/system-globalization-datetimeformatinfo.md
+              - name: NumberFormatInfo
+                href: runtime-libraries/system-globalization-numberformatinfo.md
+              - name: PersianCalendar
+                href: runtime-libraries/system-globalization-persiancalendar.md
+              - name: RegionInfo
+                href: runtime-libraries/system-globalization-regioninfo.md
+              - name: SortKey
+                href: runtime-libraries/system-globalization-sortkey.md
+              - name: SortVersion
+                href: runtime-libraries/system-globalization-sortversion.md
+      - name: Resources in .NET apps
+        items:
+          - name: Overview
+            href: ../core/extensions/resources.md
+          - name: Create resource files
+            items:
+              - name: Overview
+                href: ../core/extensions/create-resource-files.md
+              - name: Work with .resx files programmatically
+                href: ../core/extensions/work-with-resx-files-programmatically.md
+          - name: Create satellite assemblies
+            href: ../core/extensions/create-satellite-assemblies.md
+          - name: Package and deploy resources
+            href: ../core/extensions/package-and-deploy-resources.md
+          - name: Retrieve resources
+            href: ../core/extensions/retrieve-resources.md
+          - name: Supplemental API remarks
+            items:
+              - name: MissingManifestResourceException class
+                href: runtime-libraries/system-resources-missingmanifestresourceexception.md
+              - name: NeutralResourcesLanguageAttribute class
+                href: runtime-libraries/system-resources-neutralresourceslanguageattribute.md
+              - name: ResourceManager class
+                items:
+                  - name: Type remarks
+                    href: runtime-libraries/system-resources-resourcemanager.md
+                    displayName: resourcemanager
+                  - name: Constructor
+                    href: runtime-libraries/system-resources-resourcemanager-ctor.md
+                  - name: GetObject method
+                    href: runtime-libraries/system-resources-resourcemanager-getobject.md
+                  - name: GetString method
+                    href: runtime-libraries/system-resources-resourcemanager-getstring.md
+              - name: ResourceReader class
+                href: runtime-libraries/system-resources-resourcereader.md
+              - name: SatelliteContractVersionAttribute class
+                href: runtime-libraries/system-resources-satellitecontractversionattribute.md
+      - name: Worker Services
+        items:
+          - name: Overview
+            displayName: workers,worker service,BackgroundService,IHostedService,queue service,timer service
+            href: ../core/extensions/workers.md
+          - name: Create a Queue Service
+            href: ../core/extensions/queue-service.md
+          - name: Use scoped services with a BackgroundService
+            href: ../core/extensions/scoped-service.md
+          - name: Create a Windows Service using BackgroundService
+            href: ../core/extensions/windows-service.md
+          - name: Create a Windows Service installer
+            href: ../core/extensions/windows-service-with-installer.md
+            displayName: msi,windows service installer,setup.exe
+          - name: Implement the IHostedService interface
+            href: ../core/extensions/timer-service.md
+          - name: Deploy a Worker Service to Azure
+            href: ../core/extensions/cloud-service.md
+      - name: Caching
+        href: ../core/extensions/caching.md
+      - name: Channels
+        href: ../core/extensions/channels.md
+      - name: Math operations
+        items:
+          - name: Supplemental API remarks
+            items:
+              - name: MidpointRounding enum
+                href: runtime-libraries/system-midpointrounding.md
+      - name: The Win32.Registry class
+        href: runtime-libraries/microsoft-win32-registry.md
+      - name: The Uri class
+        href: runtime-libraries/system-uri.md
+      - name: Reflection
+        items:
+          - name: Supplemental API remarks
+            items:
+              - name: Type class
+                items:
+                  - name: Type remarks
+                    href: runtime-libraries/system-type.md
+                    displayName: type
+                  - name: GetProperty method
+                    href: runtime-libraries/system-type-getproperty.md
+                  - name: GetType method
+                    href: runtime-libraries/system-type-gettype.md
+                  - name: MakeGenericType method
+                    href: runtime-libraries/system-type-makegenerictype.md
+      - name: Graphics
+        items:
+          - name: Supplemental API remarks
+            items:
+              - name: Matrix class
+                href: runtime-libraries/system-drawing-drawing2d-matrix.md
+      - name: The InternalsVisibleToAttribute class
+        href: runtime-libraries/system-runtime-compilerservices-internalsvisibletoattribute.md
+      - name: The RuntimeHelpers class
+        items:
+          - name: GetHashCode method
+            href: runtime-libraries/system-runtime-compilerservices-runtimehelpers-gethashcode.md
+            displayName: runtimehelpers
+      - name: The ComponentGuaranteesAttribute class
+        href: runtime-libraries/system-runtime-versioning-componentguaranteesattribute.md
+      - name: The AssemblyLoadContext class
+        href: runtime-libraries/system-runtime-loader-assemblyloadcontext.md
+      - name: The ProcessStartInfo class
+        items:
+          - name: UseShellExecute property
+            href: runtime-libraries/system-diagnostics-processstartinfo-useshellexecute.md
+      - name: The Environment class
+        items:
+          - name: GetEnvironmentVariable method
+            href: runtime-libraries/system-environment-getenvironmentvariable.md
+  - name: Execution model
     items:
-    - name: Overview
-      href: ../standard/commandline/index.md
-    - name: Get started tutorial
-      href: ../standard/commandline/get-started-tutorial.md
-    - name: Command-line syntax
-      href: ../standard/commandline/syntax.md
-    - name: Define commands
-      href: ../standard/commandline/define-commands.md
-    - name: Model binding
-      href: ../standard/commandline/model-binding.md
-    - name: Tab completion
-      href: ../standard/commandline/tab-completion.md
-    - name: Dependency injection
-      href: ../standard/commandline/dependency-injection.md
-    - name: Customize help
-      href: ../standard/commandline/customize-help.md
-    - name: Handle termination
-      href: ../standard/commandline/handle-termination.md
-    - name: Use middleware
-      href: ../standard/commandline/use-middleware.md
-  - name: File and stream I/O
-    items:
-    - name: Overview
-      href: ../standard/io/index.md
-    - name: File path formats on Windows systems
-      href: ../standard/io/file-path-formats.md
-    - name: Common I/O tasks
-      href: ../standard/io/common-i-o-tasks.md
-      items:
-      - name: "How to: Copy Directories"
-        href: ../standard/io/how-to-copy-directories.md
-      - name: "How to: Enumerate Directories and Files"
-        href: ../standard/io/how-to-enumerate-directories-and-files.md
-      - name: "How to: Read and Write to a Newly Created Data File"
-        href: ../standard/io/how-to-read-and-write-to-a-newly-created-data-file.md
-      - name: "How to: Open and Append to a Log File"
-        href: ../standard/io/how-to-open-and-append-to-a-log-file.md
-      - name: "How to: Write Text to a File"
-        href: ../standard/io/how-to-write-text-to-a-file.md
-      - name: "How to: Read Text from a File"
-        href: ../standard/io/how-to-read-text-from-a-file.md
-      - name: "How to: Read Characters from a String"
-        href: ../standard/io/how-to-read-characters-from-a-string.md
-      - name: "How to: Write Characters to a String"
-        href: ../standard/io/how-to-write-characters-to-a-string.md
-      - name: "How to: Add or Remove Access Control List Entries"
-        href: ../standard/io/how-to-add-or-remove-access-control-list-entries.md
-      - name: "How to: Compress and Extract Files"
-        href: ../standard/io/how-to-compress-and-extract-files.md
-      - name: Composing Streams
-        href: ../standard/io/composing-streams.md
-      - name: "How to: Convert Between .NET Framework Streams and Windows Runtime Streams"
-        href: ../standard/io/how-to-convert-between-dotnet-streams-and-winrt-streams.md
-    - name: Asynchronous file I/O
-      href: ../standard/io/asynchronous-file-i-o.md
-    - name: Handle I/O errors
-      href: ../standard/io/handling-io-errors.md
-    - name: Isolated storage
-      href: ../standard/io/isolated-storage.md
-      items:
-      - name: Types of Isolation
-        href: ../standard/io/types-of-isolation.md
-      - name: "How to: Obtain Stores for Isolated Storage"
-        href: ../standard/io/how-to-obtain-stores-for-isolated-storage.md
-      - name: "How to: Enumerate Stores for Isolated Storage"
-        href: ../standard/io/how-to-enumerate-stores-for-isolated-storage.md
-      - name: "How to: Delete Stores in Isolated Storage"
-        href: ../standard/io/how-to-delete-stores-in-isolated-storage.md
-      - name: "How to: Anticipate Out-of-Space Conditions with Isolated Storage"
-        href: ../standard/io/how-to-anticipate-out-of-space-conditions-with-isolated-storage.md
-      - name: "How to: Create Files and Directories in Isolated Storage"
-        href: ../standard/io/how-to-create-files-and-directories-in-isolated-storage.md
-      - name: "How to: Find Existing Files and Directories in Isolated Storage"
-        href: ../standard/io/how-to-find-existing-files-and-directories-in-isolated-storage.md
-      - name: "How to: Read and Write to Files in Isolated Storage"
-        href: ../standard/io/how-to-read-and-write-to-files-in-isolated-storage.md
-      - name: "How to: Delete Files and Directories in Isolated Storage"
-        href: ../standard/io/how-to-delete-files-and-directories-in-isolated-storage.md
-    - name: Pipes
-      href: ../standard/io/pipe-operations.md
-      items:
-      - name: "How to: Use Anonymous Pipes for Local Interprocess Communication"
-        href: ../standard/io/how-to-use-anonymous-pipes-for-local-interprocess-communication.md
-      - name: "How to: Use Named Pipes for Network Interprocess Communication"
-        href: ../standard/io/how-to-use-named-pipes-for-network-interprocess-communication.md
-    - name: Pipelines
-      href: ../standard/io/pipelines.md
-    - name: Work with buffers
-      href: ../standard/io/buffers.md
-    - name: Memory-mapped files
-      href: ../standard/io/memory-mapped-files.md
-  - name: The System.Console class
-    href: ../standard/building-console-apps.md
-  - name: Dependency injection
-    items:
-    - name: Overview
-      href: ../core/extensions/dependency-injection.md
-      displayName: dependency injection,di,ioc,ioc container,dependency container,inversion of control
-    - name: Use dependency injection
-      href: ../core/extensions/dependency-injection-usage.md
-      displayName: use dependency injection,di,di examples,ioc,ioc container,dependency container,inversion of control
-    - name: Dependency injection guidelines
-      href: ../core/extensions/dependency-injection-guidelines.md
-      displayName: dependency injection best practices,guidelines,di,ioc,ioc container,dependency container,inversion of control
-  - name: Configuration
-    items:
-    - name: Overview
-      href: ../core/extensions/configuration.md
-      displayName: configuration,config,configuration sources,config sources
-    - name: Configuration providers
-      href: ../core/extensions/configuration-providers.md
-      displayName: configuration providers,config providers
-    - name: Implement a custom configuration provider
-      href: ../core/extensions/custom-configuration-provider.md
-      displayName: custom configuration,custom config,custom configuration provider,custom config provider
-    - name: Options pattern
-      href: ../core/extensions/options.md
-      displayName: options pattern,options,configuration options,config options
-    - name: Options pattern guidance for library authors
-      href: ../core/extensions/options-library-authors.md
-      displayName: options pattern guidance,options guidance,configuration options guidance,config options guidance
-  - name: Logging
-    items:
-    - name: Overview
-      href: ../core/extensions/logging.md
-      displayName: logging,logger,log,loggers
-    - name: Logging providers
-      href: ../core/extensions/logging-providers.md
-      displayName: logging providers,log providers
-    - name: Compile-time logging source generation
-      href: ../core/extensions/logger-message-generator.md
-      displayName: LoggerMessage,LoggerMessageAttribute,source generator,compile-time generation
-    - name: Logging guidance for library authors
-      href: ../core/extensions/logging-library-authors.md
-      displayName: logging guidance,logger guidance,log guidance
-    - name: Implement a custom logging provider
-      href: ../core/extensions/custom-logging-provider.md
-      displayName: custom logging,custom log,custom logging provider,custom log provider
-    - name: High-performance logging
-      href: ../core/extensions/high-performance-logging.md
-      displayName: high-performance logging,high-performance log,high-performance logging provider,high-performance log provider
-    - name: Console log formatting
-      href: ../core/extensions/console-log-formatter.md
-      displayName: console log formatting,console log formatter,console log formatting provider,console log formatter provider
-  - name: HostBuilder (generic host)
-    href: ../core/extensions/generic-host.md
-  - name: Networking
-    items:
-    - name: Network programming
-      href: networking/overview.md
-      displayName: networking,sockets,socket,socket programming,socket client,socket server,socket client server,socket client-server,socket client-server,socket client/server,socket client/server,socket client-serve
-    - name: Network availability
-      href: networking/network-info.md
-      displayName: network availability,network info,network information,network availability info,network availability information,network info availability,network information availability,network availability info
-    - name: IPv6 overview
-      href: networking/ipv6-overview.md
-      displayName: ipv6,ipv
-    - name: Telemetry
-      href: networking/networking-telemetry.md
-      displayName: networking telemetry
-    - name: HTTP
-      items:
-      - name: HTTP support
-        href: networking/http/http-overview.md
-        displayName: networking,http,web services,httpclient
-      - name: HTTP client guidelines
-        href: networking/http/httpclient-guidelines.md
-        displayName: networking, httpclient
-      - name: Make HTTP requests
-        href: networking/http/httpclient.md
-        displayName: networking,http,web services,client
-      - name: IHttpClientFactory
-        href: ../core/extensions/httpclient-factory.md
-        displayName: networking,httpclient,http,dependency injection,client,factory,named client,named httpclient,typed client,typed httpclient
-      - name: HTTP/3 with .NET
-        href: ../core/extensions/httpclient-http3.md
-        displayName: networking,http,http3,http/3,http3 with .net,http/3 with .net
-      - name: Rate limit an HTTP handler
-        href: ../core/extensions/http-ratelimiter.md
-        displayName: networking,http,rate limit,rate limiting,rate limit http,rate limiting http,rate limit http handler,rate limiting http handler
-    - name: Sockets
-      items:
-      - name: Sockets support
-        href: networking/sockets/sockets-overview.md
-        displayName: networking,sockets,socket,socket programming,socket client,socket server
-      - name: Use Sockets to send and receive data over TCP
-        href: networking/sockets/socket-services.md
-        displayName: networking,sockets,socket,socket programming,socket client,socket server
-      - name: Use TcpClient and TcpListener
-        href: networking/sockets/tcp-classes.md
-        displayName: networking,tcp,tcp listener,tcp client
-    - name: WebSockets
-      items:
-      - name: WebSockets support
-        href: networking/websockets.md
-        displayName: websockets,websocket,websocket programming,websocket client,websocket server
-    - name: Security
-      items:
-        - name: TLS/SSL best practices
-          href: ../core/extensions/sslstream-best-practices.md
-          displayName: tls,ssl,sslstream,sslstream best practices,tls best practices,ssl best practices
-        - name: Troubleshoot SslStream authentication issues
-          href: ../core/extensions/sslstream-troubleshooting.md
-          displayName: tls,ssl,sslstream,sslstream troubleshooting,tls troubleshooting,ssl troubleshooting
-        - name: Migrate from .NET Framework to .NET
-          href: ../core/extensions/sslstream-migration-from-framework.md
-    - name: QUIC
-      items:
-      - name: QUIC support
-        href: networking/quic/quic-overview.md
-      - name: QUIC troubleshooting
-        href: networking/quic/quic-troubleshooting.md
-  - name: File globbing
-    href: ../core/extensions/file-globbing.md
-    displayName: file globbing,globbing,globbing patterns,globbing pattern,globbing
-  - name: Primitives library
-    href: ../core/extensions/primitives.md
-    displayName: primitives,primitive types,ichangetoken,change notifications,string tokenizers,StringSegment,StringTokenizer,StringValues
-  - name: Globalization and localization
-    items:
-    - name: Overview
-      href: ../core/extensions/globalization-and-localization.md
-      displayName: globalization,localization,culture,localization and globalization
-    - name: Globalization
-      href: ../core/extensions/globalization.md
-      displayName: globalization,culture
-    - name: Globalization and ICU
-      href: ../core/extensions/globalization-icu.md
-      displayName: globalization,icu,culture
-    - name: Localizability review
-      href: ../core/extensions/localizability-review.md
-      displayName: localizability,localization,localization review,localizability review
-    - name: Localization
-      href: ../core/extensions/localization.md
-      displayName: localization,localization review,localizability review
-    - name: Culture-insensitive string operations
-      items:
-      - name: Overview
-        href: ../core/extensions/performing-culture-insensitive-string-operations.md
-      - name: String comparisons
-        href: ../core/extensions/performing-culture-insensitive-string-comparisons.md
-      - name: Case changes
-        href: ../core/extensions/performing-culture-insensitive-case-changes.md
-      - name: String operations in collections
-        href: ../core/extensions/performing-culture-insensitive-string-operations-in-collections.md
-      - name: String operations in arrays
-        href: ../core/extensions/performing-culture-insensitive-string-operations-in-arrays.md
-    - name: Best practices for developing world-ready apps
-      href: ../core/extensions/best-practices-for-developing-world-ready-apps.md
-  - name: Resources in .NET apps
-    items:
-    - name: Overview
-      href: ../core/extensions/resources.md
-    - name: Create resource files
-      items:
-      - name: Overview
-        href: ../core/extensions/create-resource-files.md
-      - name: Work with .resx files programmatically
-        href: ../core/extensions/work-with-resx-files-programmatically.md
-    - name: Create satellite assemblies
-      href: ../core/extensions/create-satellite-assemblies.md
-    - name: Package and deploy resources
-      href: ../core/extensions/package-and-deploy-resources.md
-    - name: Retrieve resources
-      href: ../core/extensions/retrieve-resources.md
-  - name: Worker Services
-    items:
-    - name: Overview
-      displayName: workers,worker service,BackgroundService,IHostedService,queue service,timer service
-      href: ../core/extensions/workers.md
-    - name: Create a Queue Service
-      href: ../core/extensions/queue-service.md
-    - name: Use scoped services with a BackgroundService
-      href: ../core/extensions/scoped-service.md
-    - name: Create a Windows Service using BackgroundService
-      href: ../core/extensions/windows-service.md
-    - name: Create a Windows Service installer
-      href: ../core/extensions/windows-service-with-installer.md
-      displayName: msi,windows service installer,setup.exe
-    - name: Implement the IHostedService interface
-      href: ../core/extensions/timer-service.md
-    - name: Deploy a Worker Service to Azure
-      href: ../core/extensions/cloud-service.md
-  - name: Caching
-    href: ../core/extensions/caching.md
-  - name: Channels
-    href: ../core/extensions/channels.md
-- name: Execution model
-  items:
-  - name: Common Language Runtime (CLR)
-    href: ../standard/clr.md
-  - name: Managed execution process
-    href: ../standard/managed-execution-process.md
-  - name: Assemblies
-    items:
-      - name: Overview
-        displayName: assembly,assemblies
-        href: ../standard/assembly/index.md
-      - name: Assembly contents
-        href: ../standard/assembly/contents.md
-      - name: Manifest
-        href: ../standard/assembly/manifest.md
-      - name: Security considerations
-        href: ../standard/assembly/security-considerations.md
+      - name: Common Language Runtime (CLR)
+        href: ../standard/clr.md
+      - name: Managed execution process
+        href: ../standard/managed-execution-process.md
+      - name: Assemblies
+        items:
+          - name: Overview
+            displayName: assembly,assemblies
+            href: ../standard/assembly/index.md
+          - name: Assembly contents
+            href: ../standard/assembly/contents.md
+          - name: Manifest
+            href: ../standard/assembly/manifest.md
+          - name: Security considerations
+            href: ../standard/assembly/security-considerations.md
+          - name: Versioning
+            items:
+              - name: Overview
+                displayName: versioning
+                href: ../standard/assembly/versioning.md
+              - name: The System.Version class
+                href: runtime-libraries/system-version.md
+          - name: Side-by-side execution
+            href: ../standard/assembly/side-by-side-execution.md
+          - name: Assembly file format
+            href: ../standard/assembly/file-format.md
+          - name: Unloadability in .NET Core
+            href: ../standard/assembly/unloadability.md
+          - name: Learn about reference assemblies
+            href: ../standard/assembly/reference-assemblies.md
+          - name: Resolve assembly loads
+            href: ../standard/assembly/resolve-loads.md
+          - name: Create assemblies
+            href: ../standard/assembly/create.md
+          - name: Assembly names
+            href: ../standard/assembly/names.md
+          - name: Find an assembly's fully qualified name
+            href: ../standard/assembly/find-fully-qualified-name.md
+          - name: Assembly location
+            href: ../standard/assembly/location.md
+          - name: Set assembly attributes
+            items:
+              - name: In code
+                href: ../standard/assembly/set-attributes.md
+              - name: In a project file
+                href: ../standard/assembly/set-attributes-project-file.md
+          - name: Strong-named assemblies
+            items:
+              - name: Overview
+                href: ../standard/assembly/strong-named.md
+              - name: Create and use strong-named assemblies
+                href: ../standard/assembly/create-use-strong-named.md
+              - name: Create a public-private key pair
+                href: ../standard/assembly/create-public-private-key-pair.md
+              - name: Sign an assembly with a strong name
+                href: ../standard/assembly/sign-strong-name.md
+              - name: Enhanced strong naming
+                href: ../standard/assembly/enhanced-strong-naming.md
+              - name: Reference a strong-named assembly
+                href: ../standard/assembly/reference-strong-named.md
+              - name: Disable strong-name bypass
+                href: ../standard/assembly/disable-strong-name-bypass-feature.md
+          - name: Delay-sign an assembly
+            href: ../standard/assembly/delay-sign.md
+          - name: View assembly contents
+            href: ../standard/assembly/view-contents.md
+          - name: Type forwarding in the CLR
+            href: ../standard/assembly/type-forwarding.md
+          - name: Friend assemblies
+            items:
+              - name: Overview
+                displayName: friend assembly,friend assemblies
+                href: ../standard/assembly/friend.md
+              - name: Create unsigned friend assemblies
+                href: ../standard/assembly/create-unsigned-friend.md
+              - name: Create signed friend assemblies
+                href: ../standard/assembly/create-signed-friend.md
+          - name: Determine if a file is an assembly
+            href: ../standard/assembly/identify.md
+          - name: Load and unload assemblies
+            href: ../standard/assembly/load-unload.md
+          - name: Embed types from managed assemblies in Visual Studio
+            href: ../standard/assembly/embed-types-visual-studio.md
+          - name: Inspect assembly contents using MetadataLoadContext
+            href: ../standard/assembly/inspect-contents-using-metadataloadcontext.md
+      - name: Reflection
+        items:
+          - name: Overview
+            href: reflection/reflection.md
+          - name: View type information
+            href: reflection/viewing-type-information.md
+          - name: Reflection and generic types
+            href: reflection/reflection-and-generic-types.md
+          - name: Dynamically load and use types
+            href: reflection/dynamically-loading-and-using-types.md
+          - name: Access custom attributes
+            href: reflection/accessing-custom-attributes.md
+          - name: Specify fully qualified type names
+            href: reflection/specifying-fully-qualified-type-names.md
+          - name: How-tos
+            items:
+              - name: Examine and instantiate generic types with reflection
+                href: reflection/how-to-examine-and-instantiate-generic-types-with-reflection.md
+              - name: Get type and member information by using reflection
+                href: reflection/get-type-member-information.md
+              - name: Hook up a delegate using reflection
+                href: reflection/how-to-hook-up-a-delegate-using-reflection.md
+          - name: Emit dynamic methods and assemblies
+            items:
+              - name: Overview
+                href: reflection/emitting-dynamic-methods-and-assemblies.md
+                displayName: reflection emit
+              - name: How-tos
+                items:
+                  - name: Define and execute dynamic methods
+                    href: reflection/how-to-define-and-execute-dynamic-methods.md
+                  - name: Define a generic type with reflection emit
+                    href: reflection/how-to-define-a-generic-type-with-reflection-emit.md
+                  - name: Define a generic method with reflection emit
+                    href: reflection/how-to-define-a-generic-method-with-reflection-emit.md
+              - name: Collectible assemblies for dynamic type generation
+                href: reflection/collectible-assemblies.md
+              - name: Supplemental API remarks
+                items:
+                  - name: The AssemblyBuilder class
+                    href: runtime-libraries/system-reflection-emit-assemblybuilder.md
+                  - name: The DynamicMethod class
+                    href: runtime-libraries/system-reflection-emit-dynamicmethod.md
+                  - name: The MethodBuilder class
+                    href: runtime-libraries/system-reflection-emit-methodbuilder.md
+                  - name: The PersistedAssemblyBuilder class
+                    href: runtime-libraries/system-reflection-emit-persistedassemblybuilder.md
+                  - name: The TypeBuilder class
+                    href: runtime-libraries/system-reflection-emit-typebuilder.md
+          - name: Metadata and self-describing components
+            items:
+              - name: Overview
+                href: ../standard/metadata-and-self-describing-components.md
+              - name: The DebugDirectoryEntryType enum
+                href: runtime-libraries/system-reflection-portableexecutable-debugdirectoryentrytype.md
+      - name: Dependency loading
+        items:
+          - name: Overview
+            displayName: dependency loading
+            href: ../core/dependency-loading/overview.md
+          - name: Understand AssemblyLoadContext
+            href: ../core/dependency-loading/understanding-assemblyloadcontext.md
+          - name: Dependency loading details
+            items:
+              - name: Default dependency probing
+                href: ../core/dependency-loading/default-probing.md
+              - name: Load managed assemblies
+                href: ../core/dependency-loading/loading-managed.md
+              - name: Load satellite assemblies
+                href: ../core/dependency-loading/loading-resources.md
+              - name: Load unmanaged libraries
+                href: ../core/dependency-loading/loading-unmanaged.md
+              - name: Collect detailed assembly loading information
+                href: ../core/dependency-loading/collect-details.md
+          - name: Tutorials
+            items:
+              - name: Create a .NET application with plugins
+                href: ../core/tutorials/creating-app-with-plugin-support.md
+              - name: How to use and debug assembly unloadability
+                href: ../standard/assembly/unloadability.md
       - name: Versioning
-        href: ../standard/assembly/versioning.md
-      - name: Side-by-side execution
-        href: ../standard/assembly/side-by-side-execution.md
-      - name: Assembly file format
-        href: ../standard/assembly/file-format.md
-      - name: Unloadability in .NET Core
-        href: ../standard/assembly/unloadability.md
-      - name: Learn about reference assemblies
-        href: ../standard/assembly/reference-assemblies.md
-      - name: Resolve assembly loads
-        href: ../standard/assembly/resolve-loads.md
-      - name: Create assemblies
-        href: ../standard/assembly/create.md
-      - name: Assembly names
-        href: ../standard/assembly/names.md
-      - name: Find an assembly's fully qualified name
-        href: ../standard/assembly/find-fully-qualified-name.md
-      - name: Assembly location
-        href: ../standard/assembly/location.md
-      - name: Set assembly attributes
-        href: ../standard/assembly/set-attributes.md
-      - name: Strong-named assemblies
         items:
-        - name: Overview
-          href: ../standard/assembly/strong-named.md
-        - name: Create and use strong-named assemblies
-          href: ../standard/assembly/create-use-strong-named.md
-        - name: Create a public-private key pair
-          href: ../standard/assembly/create-public-private-key-pair.md
-        - name: Sign an assembly with a strong name
-          href: ../standard/assembly/sign-strong-name.md
-        - name: Enhanced strong naming
-          href: ../standard/assembly/enhanced-strong-naming.md
-        - name: Reference a strong-named assembly
-          href: ../standard/assembly/reference-strong-named.md
-        - name: Disable strong-name bypass
-          href: ../standard/assembly/disable-strong-name-bypass-feature.md
-      - name: Delay-sign an assembly
-        href: ../standard/assembly/delay-sign.md
-      - name: View assembly contents
-        href: ../standard/assembly/view-contents.md
-      - name: Type forwarding in the CLR
-        href: ../standard/assembly/type-forwarding.md
-      - name: Friend assemblies
+          - name: Overview
+            href: ../core/versions/index.md
+          - name: .NET version selection
+            href: ../core/versions/selection.md
+      - name: Configure .NET Runtime
         items:
-        - name: Overview
-          displayName: friend assembly,friend assemblies
-          href: ../standard/assembly/friend.md
-        - name: Create unsigned friend assemblies
-          href: ../standard/assembly/create-unsigned-friend.md
-        - name: Create signed friend assemblies
-          href: ../standard/assembly/create-signed-friend.md
-      - name: Determine if a file is an assembly
-        href: ../standard/assembly/identify.md
-      - name: Load and unload assemblies
-        href: ../standard/assembly/load-unload.md
-      - name: Embed types from managed assemblies in Visual Studio
-        href: ../standard/assembly/embed-types-visual-studio.md
-      - name: Inspect assembly contents using MetadataLoadContext
-        href: ../standard/assembly/inspect-contents-using-metadataloadcontext.md
-  - name: Metadata and self-describing components
-    href: ../standard/metadata-and-self-describing-components.md
-  - name: Dependency loading
-    items:
-    - name: Overview
-      displayName: dependency loading
-      href: ../core/dependency-loading/overview.md
-    - name: Understand AssemblyLoadContext
-      href: ../core/dependency-loading/understanding-assemblyloadcontext.md
-    - name: Dependency loading details
-      items:
-      - name: Default dependency probing
-        href: ../core/dependency-loading/default-probing.md
-      - name: Load managed assemblies
-        href: ../core/dependency-loading/loading-managed.md
-      - name: Load satellite assemblies
-        href: ../core/dependency-loading/loading-resources.md
-      - name: Load unmanaged libraries
-        href: ../core/dependency-loading/loading-unmanaged.md
-      - name: Collect detailed assembly loading information
-        href: ../core/dependency-loading/collect-details.md
-    - name: Tutorials
-      items:
-      - name: Create a .NET application with plugins
-        href: ../core/tutorials/creating-app-with-plugin-support.md
-      - name: How to use and debug assembly unloadability
-        href: ../standard/assembly/unloadability.md
-  - name: Versioning
-    items:
-    - name: Overview
-      href: ../core/versions/index.md
-    - name: .NET version selection
-      href: ../core/versions/selection.md
-  - name: Configure .NET Runtime
-    items:
-    - name: Settings
-      displayName: runtime configuration, configure runtime, configuration settings
-      href: ../core/runtime-config/index.md
-    - name: Compilation settings
-      href: ../core/runtime-config/compilation.md
-    - name: Debugging and profiling settings
-      href: ../core/runtime-config/debugging-profiling.md
-    - name: Garbage collector settings
-      href: ../core/runtime-config/garbage-collector.md
-    - name: Globalization settings
-      href: ../core/runtime-config/globalization.md
-    - name: Networking settings
-      href: ../core/runtime-config/networking.md
-    - name: Threading settings
-      href: ../core/runtime-config/threading.md
-  - name: Troubleshoot app launch failures
-    href: ../core/runtime-discovery/troubleshoot-app-launch.md
+          - name: Settings
+            displayName: runtime configuration, configure runtime, configuration settings
+            href: ../core/runtime-config/index.md
+          - name: Compilation settings
+            href: ../core/runtime-config/compilation.md
+          - name: Debugging and profiling settings
+            href: ../core/runtime-config/debugging-profiling.md
+          - name: Garbage collector settings
+            href: ../core/runtime-config/garbage-collector.md
+          - name: Globalization settings
+            href: ../core/runtime-config/globalization.md
+          - name: Networking settings
+            href: ../core/runtime-config/networking.md
+          - name: Threading settings
+            href: ../core/runtime-config/threading.md
+          - name: WPF settings
+            href: ../core/runtime-config/wpf.md
+      - name: Troubleshoot app launch failures
+        href: ../core/runtime-discovery/troubleshoot-app-launch.md

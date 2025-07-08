@@ -1,7 +1,7 @@
 ---
 title: dotnet run command
 description: The dotnet run command provides a convenient option to run your application from the source code.
-ms.date: 08/18/2021
+ms.date: 03/26/2025
 ---
 # dotnet run
 
@@ -15,18 +15,20 @@ ms.date: 08/18/2021
 
 ```dotnetcli
 dotnet run [-a|--arch <ARCHITECTURE>] [-c|--configuration <CONFIGURATION>]
+    [-e|--environment <KEY=VALUE>]
     [-f|--framework <FRAMEWORK>] [--force] [--interactive]
     [--launch-profile <NAME>] [--no-build]
     [--no-dependencies] [--no-launch-profile] [--no-restore]
     [--os <OS>] [--project <PATH>] [-r|--runtime <RUNTIME_IDENTIFIER>]
-    [-v|--verbosity <LEVEL>] [[--] [application arguments]]
+    [--tl:[auto|on|off]] [-v|--verbosity <LEVEL>]
+    [[--] [application arguments]]
 
 dotnet run -h|--help
 ```
 
 ## Description
 
-The `dotnet run` command provides a convenient option to run your application from the source code with one command. It's useful for fast iterative development from the command line. The command depends on the [`dotnet build`](dotnet-build.md) command to build the code. Any requirements for the build, such as that the project must be restored first, apply to `dotnet run` as well.
+The `dotnet run` command provides a convenient option to run your application from the source code with one command. It's useful for fast iterative development from the command line. The command depends on the [`dotnet build`](dotnet-build.md) command to build the code. Any requirements for the build apply to `dotnet run` as well.
 
 > [!NOTE]
 > `dotnet run` doesn't respect arguments like `/property:property=value`, which are respected by `dotnet build`.
@@ -41,7 +43,7 @@ The `dotnet run` command is used in the context of projects, not built assemblie
 dotnet myapp.dll
 ```
 
-For more information on the `dotnet` driver, see the [.NET Command Line Tools (CLI)](index.md) topic.
+For more information on the `dotnet` driver, see [.NET CLI overview](index.md).
 
 To run the application, the `dotnet run` command resolves the dependencies of the application that are outside of the shared runtime from the NuGet cache. Because it uses cached dependencies, it's not recommended to use `dotnet run` to run applications in production. Instead, [create a deployment](../deploying/index.md) using the [`dotnet publish`](dotnet-publish.md) command and deploy the published output.
 
@@ -60,6 +62,14 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 [!INCLUDE [arch](../../../includes/cli-arch.md)]
 
 [!INCLUDE [configuration](../../../includes/cli-configuration.md)]
+
+- **`-e|--environment <KEY=VALUE>`**
+
+  Sets the specified environment variable in the process that will be run by the command. The specified environment variable is *not* applied to the `dotnet run` process.
+
+  Environment variables passed through this option take precedence over ambient environment variables, System.CommandLine `env` directives, and `environmentVariables` from the chosen launch profile. For more information, see [Environment variables](#environment-variables).
+
+  (This option was added in .NET SDK 9.0.200.)
 
 - **`-f|--framework <FRAMEWORK>`**
 
@@ -122,7 +132,20 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 
   Specifies the target runtime to restore packages for. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md).
 
+[!INCLUDE [tl](../../../includes/cli-tl.md)]
+
 [!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
+
+## Environment variables
+
+There are four mechanisms by which environment variables can be applied to the launched application:
+
+1. Ambient environment variables from the operating system when the command is run.
+1. System.CommandLine `env` directives, like `[env:key=value]`. These apply to the entire `dotnet run` process, not just the project being run by `dotnet run`.
+1. `environmentVariables` from the chosen launch profile (`-lp`) in the project's [launchSettings.json file](/aspnet/core/fundamentals/environments#lsj), if any. These apply to the project being run by `dotnet run`.
+1. `-e|--environment` CLI option values (added in .NET SDK version 9.0.200). These apply to the project being run by `dotnet run`.
+
+The environment is constructed in the same order as this list, so the `-e|--environment` option has the highest precedence.
 
 ## Examples
 

@@ -1,4 +1,4 @@
-﻿// <Snippet10>
+// <Snippet10>
 // Service.cs
 using System;
 using System.Collections.Generic;
@@ -64,7 +64,7 @@ namespace Microsoft.ServiceModel.Samples.BasicWebProgramming
 
                     Console.WriteLine("Calling EchoWithGet via HTTP GET: ");
                     s = channel.EchoWithGet("Hello, world");
-                    Console.WriteLine("   Output: {0}", s);
+                    Console.WriteLine($"   Output: {s}");
 
                     Console.WriteLine("");
                     Console.WriteLine("This can also be accomplished by navigating to");
@@ -75,7 +75,7 @@ namespace Microsoft.ServiceModel.Samples.BasicWebProgramming
 
                     Console.WriteLine("Calling EchoWithPost via HTTP POST: ");
                     s = channel.EchoWithPost("Hello, world");
-                    Console.WriteLine("   Output: {0}", s);
+                    Console.WriteLine($"   Output: {s}");
                     // </Snippet8>
                     Console.WriteLine("");
                 }
@@ -89,7 +89,7 @@ namespace Microsoft.ServiceModel.Samples.BasicWebProgramming
             }
             catch (CommunicationException cex)
             {
-                Console.WriteLine("An exception occurred: {0}", cex.Message);
+                Console.WriteLine($"An exception occurred: {cex.Message}");
                 host.Abort();
             }
         }

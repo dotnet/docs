@@ -45,4 +45,4 @@ The term *performance* generally refers to the execution speed of a program. You
 
 - [Performance](index.md)
 - [Visual Basic Programming Guide](../../visual-basic/programming-guide/index.md)
-- [C# Programming Guide](../../csharp/programming-guide/index.md)
+- [C# Programming Guide](../../csharp/programming-guide/concepts/index.md)

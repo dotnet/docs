@@ -1,6 +1,6 @@
 ---
 description: "extern modifier - C# Reference"
-title: "extern modifier - C# Reference"
+title: "extern modifier"
 ms.date: 07/20/2015
 f1_keywords:
   - "extern_CSharpKeyword"
@@ -23,7 +23,7 @@ The `extern` keyword can also define an external assembly alias, which makes it 
 
 It is an error to use the [abstract](abstract.md) and `extern` modifiers together to modify the same member. Using the `extern` modifier means that the method is implemented outside the C# code, whereas using the `abstract` modifier means that the method implementation is not provided in the class.
 
-The extern keyword has more limited uses in C# than in C++. To compare the C# keyword with the C++ keyword, see Using extern to Specify Linkage in the C++ Language Reference.
+The extern keyword has more limited uses in C# than in C++. To compare the C# keyword with the C++ keyword, see [Using extern to Specify Linkage](/cpp/cpp/extern-cpp#extern-c-and-extern-c-function-declarations) in the C++ Language Reference.
 
 ## Example 1
 
@@ -87,7 +87,5 @@ This example illustrates a C# program that calls into a C library (a native DLL)
 ## See also
 
 - <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=nameWithType>
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
 - [Modifiers](index.md)

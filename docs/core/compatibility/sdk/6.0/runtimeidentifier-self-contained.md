@@ -29,7 +29,7 @@ dotnet publish -r win-x86
 
 ## Change category
 
-This change may affect [*source compatibility*](../../categories.md#source-compatibility).
+This change might affect [*source compatibility*](../../categories.md#source-compatibility).
 
 ## Reason for change
 

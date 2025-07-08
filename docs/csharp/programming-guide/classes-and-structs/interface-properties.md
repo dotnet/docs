@@ -1,11 +1,10 @@
 ---
-title: "Interface Properties - C# Programming Guide"
+title: "Interface Properties"
 description: Properties can be declared on an interface in C#. This example declares an interface property accessor.
-ms.date: 07/29/2022
+ms.date: 08/20/2024
 helpviewer_keywords: 
   - "properties [C#], on interfaces"
   - "interfaces [C#], properties"
-ms.assetid: 6503e9ed-33d7-44ec-b4c1-cc16c084b795
 ---
 # Interface Properties (C# Programming Guide)
 
@@ -13,7 +12,7 @@ Properties can be declared on an [interface](../../language-reference/keywords/i
 
 :::code language="csharp" source="./snippets/properties/interfaces.cs" id="SnippetDeclareInterfaceProperties":::
 
-Interface properties typically don't have a body. The accessors indicate whether the property is read-write, read-only, or write-only. Unlike in classes and structs, declaring the accessors without a body doesn't declare an [auto-implemented property](auto-implemented-properties.md). An interface may define a default implementation for members, including properties. Defining a default implementation for a property in an interface is rare because interfaces may not define instance data fields.
+Interface properties typically don't have a body. The accessors indicate whether the property is read-write, read-only, or write-only. Unlike in classes and structs, declaring the accessors without a body doesn't declare an [automatically implemented property](auto-implemented-properties.md). An interface can define a default implementation for members, including properties. Defining a default implementation for a property in an interface is rare because interfaces can't define instance data fields.
 
 ## Example
 
@@ -23,15 +22,15 @@ You could use the fully qualified name of the property, which references the int
 
 :::code language="csharp" source="./snippets/properties/interfaces.cs" id="SnippetExplicitImplementation":::
 
-The preceding example demonstrates [Explicit Interface Implementation](../interfaces/explicit-interface-implementation.md). For example, if the class `Employee` is implementing two interfaces `ICitizen` and `IEmployee` and both interfaces have the `Name` property, the explicit interface member implementation will be necessary. That is, the following property declaration:
+The preceding example demonstrates [Explicit Interface Implementation](../interfaces/explicit-interface-implementation.md). For example, if the class `Employee` is implementing two interfaces `ICitizen` and `IEmployee` and both interfaces have the `Name` property, the explicit interface member implementation is necessary. That is, the following property declaration:
 
 :::code language="csharp" source="./snippets/properties/interfaces.cs" id="SnippetExplicitImplementation":::
 
-implements the `Name` property on the `IEmployee` interface, while the following declaration:
+Implements the `Name` property on the `IEmployee` interface, while the following declaration:
 
 :::code language="csharp" source="./snippets/properties/interfaces.cs" id="SnippetCitizenImplementation":::
 
-implements the `Name` property on the `ICitizen` interface.
+Implements the `Name` property on the `ICitizen` interface.
 
 :::code language="csharp" source="./snippets/properties/interfaces.cs" id="SnippetPropertyExample":::
 :::code language="csharp" source="./snippets/properties/interfaces.cs" id="SnippetUseProperty":::
@@ -48,7 +47,6 @@ Employee name: Hazem Abolrous
 
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [Properties](./properties.md)
 - [Using Properties](./using-properties.md)
 - [Comparison Between Properties and Indexers](../indexers/comparison-between-properties-and-indexers.md)

@@ -46,7 +46,7 @@ We also assume the following about the development process for the application:
 
 ## Choosing an architecture
 
-What should the application deployment architecture be? The specifications for the application, along with the development context, strongly suggest that you should architect the application by decomposing it into autonomous subsystems in the form of collaborating microservices and containers, where a microservice is a container.
+What should the application deployment architecture be? The specifications for the application, along with the development context, strongly suggest that you should architect the application by decomposing it into autonomous subsystems in the form of collaborating [microservices](/azure/architecture/guide/architecture-styles/microservices) and containers, where a microservice is a container.
 
 In this approach, each service (container) implements a set of cohesive and narrowly related functions. For example, an application might consist of services such as the catalog service, ordering service, basket service, user profile service, etc.
 
@@ -54,7 +54,7 @@ Microservices communicate using protocols such as HTTP (REST), but also asynchro
 
 Microservices are developed and deployed as containers independently of one another. This approach means that a development team can be developing and deploying a certain microservice without impacting other subsystems.
 
-Each microservice has its own database, allowing it to be fully decoupled from other microservices. When necessary, consistency between databases from different microservices is achieved using application-level integration events (through a logical event bus), as handled in Command and Query Responsibility Segregation (CQRS). Because of that, the business constraints must embrace eventual consistency between the multiple microservices and related databases.
+Each microservice has its own database, allowing it to be fully decoupled from other microservices. When necessary, consistency between databases from different microservices is achieved using application-level integration events (through a logical event bus), as handled in [Command and Query Responsibility Segregation (CQRS)](/azure/architecture/patterns/cqrs). Because of that, the business constraints must embrace eventual consistency between the multiple microservices and related databases.
 
 ### eShopOnContainers: A reference application for .NET and microservices deployed using containers
 
@@ -74,7 +74,7 @@ The above diagram shows that Mobile and SPA clients communicate to single API ga
 
 - Http client-to-microservice communication through API Gateways. This approach is used for queries and when accepting update or transactional commands from the client apps. The approach using API Gateways is explained in detail in later sections.
 
-- Asynchronous event-based communication. This communication occurs through an event bus to propagate updates across microservices or to integrate with external applications. The event bus can be implemented with any messaging-broker infrastructure technology like RabbitMQ, or using higher-level (abstraction-level) service buses like Azure Service Bus, NServiceBus, MassTransit, or Brighter.
+- Asynchronous event-based communication. This communication occurs through an event bus to propagate updates across microservices or to integrate with external applications. The event bus can be implemented with any messaging-broker infrastructure technology like [RabbitMQ](https://www.rabbitmq.com/), or using higher-level (abstraction-level) service buses like [Azure Service Bus](/azure/service-bus-messaging/), [NServiceBus](/azure/service-bus-messaging/build-message-driven-apps-nservicebus), [MassTransit](https://masstransit.io/), or [Brighter](https://github.com/BrighterCommand/Brighter).
 
 The application is deployed as a set of microservices in the form of containers. Client apps can communicate with those microservices running as containers through the public URLs published by the API Gateways.
 
@@ -117,11 +117,11 @@ A microservice-based solution like this has many benefits:
 
 A microservice-based solution like this also has some drawbacks:
 
-**Distributed application**. Distributing the application adds complexity for developers when they are designing and building the services. For example, developers must implement inter-service communication using protocols like HTTP or AMPQ, which adds complexity for testing and exception handling. It also adds latency to the system.
+**Distributed application**. Distributing the application adds complexity for developers when they are designing and building the services. For example, developers must implement inter-service communication using protocols like HTTP or AMQP, which adds complexity for testing and exception handling. It also adds latency to the system.
 
 **Deployment complexity**. An application that has dozens of microservices types and needs high scalability (it needs to be able to create many instances per service and balance those services across many hosts) means a high degree of deployment complexity for IT operations and management. If you are not using a microservice-oriented infrastructure (like an orchestrator and scheduler), that additional complexity can require far more development efforts than the business application itself.
 
-**Atomic transactions**. Atomic transactions between multiple microservices usually are not possible. The business requirements have to embrace eventual consistency between multiple microservices.
+**Atomic transactions**. Atomic transactions between multiple microservices usually are not possible. The business requirements have to embrace eventual consistency between multiple microservices. For more information, see the [challenges of idempotent message processing](/azure/architecture/reference-architectures/containers/aks-mission-critical/mission-critical-data-platform#idempotent-message-processing).
 
 **Increased global resource needs** (total memory, drives, and network resources for all the servers or hosts). In many cases, when you replace a monolithic application with a microservices approach, the amount of initial global resources needed by the new microservice-based application will be larger than the infrastructure needs of the original monolithic application. This approach is because the higher degree of granularity and distributed services requires more global resources. However, given the low cost of resources in general and the benefit of being able to scale out certain areas of the application compared to long-term costs when evolving monolithic applications, the increased use of resources is usually a good tradeoff for large, long-term applications.
 

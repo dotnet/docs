@@ -68,7 +68,7 @@ Every type that is derived from <xref:System.Object?displayProperty=nameWithType
 [!code-vb[Conceptual.Formatting.Overview#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.formatting.overview/vb/default1.vb#1)]
 
 > [!WARNING]
-> Starting with Windows 8.1, the Windows Runtime includes an <xref:Windows.Foundation.IStringable> interface with a single method, [IStringable.ToString](xref:Windows.Foundation.IStringable.ToString%2A), which provides default formatting support. However, we recommend that managed types do not implement the `IStringable` interface. For more information, see "The Windows Runtime and the `IStringable` Interface" section on the <xref:System.Object.ToString%2A?displayProperty=nameWithType> reference page.
+> Starting with Windows 8.1, the Windows Runtime includes an <xref:Windows.Foundation.IStringable> interface with a single method, [IStringable.ToString](xref:Windows.Foundation.IStringable.ToString%2A), which provides default formatting support. However, we recommend that managed types do not implement the `IStringable` interface. For more information, see [The Windows Runtime and the IStringable Interface](../../fundamentals/runtime-libraries/system-object-tostring.md#the-windows-runtime-and-the-istringable-interface).
 
 Because all types other than interfaces are derived from <xref:System.Object>, this functionality is automatically provided to your custom classes or structures. However, the functionality offered by the default `ToString` method, is limited: Although it identifies the type, it fails to provide any information about an instance of the type. To provide a string representation of an object that provides information about that object, you must override the `ToString` method.
 
@@ -296,21 +296,21 @@ The following example instantiates a `Temperature` object. It then calls the <xr
 
 ## Composite formatting
 
-Some methods, such as <xref:System.String.Format%2A?displayProperty=nameWithType> and <xref:System.Text.StringBuilder.AppendFormat%2A?displayProperty=nameWithType>, support composite formatting. A composite format string is a kind of template that returns a single string that incorporates the string representation of zero, one, or more objects. Each object is represented in the composite format string by an indexed format item. The index of the format item corresponds to the position of the object that it represents in the method's parameter list. Indexes are zero-based. For example, in the following call to the <xref:System.String.Format%2A?displayProperty=nameWithType> method, the first format item, `{0:D}`, is replaced by the string representation of `thatDate`; the second format item, `{1}`, is replaced by the string representation of `item1`; and the third format item, `{2:C2}`, is replaced by the string representation of `item1.Value`.
+Some methods, such as <xref:System.String.Format%2A?displayProperty=nameWithType> and <xref:System.Text.StringBuilder.AppendFormat%2A?displayProperty=nameWithType>, support *composite formatting*. A composite format string is a kind of template that returns a single string that incorporates the string representation of zero, one, or more objects. Each object is represented in the composite format string by an indexed format item. The index of the format item corresponds to the position of the object that it represents in the method's parameter list. Indexes are zero-based. For example, in the following call to the <xref:System.String.Format%2A?displayProperty=nameWithType> method, the first format item, `{0:D}`, is replaced by the string representation of `thatDate`; the second format item, `{1}`, is replaced by the string representation of `item1`; and the third format item, `{2:C2}`, is replaced by the string representation of `item1.Value`.
 
 [!code-csharp[Conceptual.Formatting.Overview#14](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.formatting.overview/cs/composite1.cs#14)]
 [!code-vb[Conceptual.Formatting.Overview#14](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.formatting.overview/vb/composite1.vb#14)]
 
 In addition to replacing a format item with the string representation of its corresponding object, format items also let you control the following:
 
-- The specific way in which an object is represented as a string, if the object implements the <xref:System.IFormattable> interface and supports format strings. You do this by following the format item's index with a `:` (colon) followed by a valid format string. The previous example did this by formatting a date value with the "d" (short date pattern) format string (e.g., `{0:d}`) and   by formatting a numeric value with the "C2" format string (e.g., `{2:C2}` to represent the number as a currency value with two fractional decimal digits.
+- The specific way in which an object is represented as a string, if the object implements the <xref:System.IFormattable> interface and supports format strings. You do this by following the format item's index with a `:` (colon) followed by a valid format string. The previous example did this by formatting a date value with the "d" (short date pattern) format string (for example, `{0:d}`) and by formatting a numeric value with the "C2" format string (for example, `{2:C2}`) to represent the number as a currency value with two fractional decimal digits.
 
 - The width of the field that contains the object's string representation, and the alignment of the string representation in that field. You do this by following the format item's index with a `,` (comma) followed the field width. The string is right-aligned in the field if the field width is a positive value, and it is left-aligned if the field width is a negative value. The following example left-aligns date values in a 20-character field, and it right-aligns decimal values with one fractional digit in an 11-character field.
 
-     [!code-csharp[Conceptual.Formatting.Overview#22](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.formatting.overview/cs/composite2.cs#22)]
-     [!code-vb[Conceptual.Formatting.Overview#22](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.formatting.overview/vb/composite2.vb#22)]
+  [!code-csharp[Conceptual.Formatting.Overview#22](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.formatting.overview/cs/composite2.cs#22)]
+  [!code-vb[Conceptual.Formatting.Overview#22](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.formatting.overview/vb/composite2.vb#22)]
 
-     Note that, if both the alignment string component and the format string component are present, the former precedes the latter (for example, `{0,-20:g}`.
+  If both the alignment string component and the format string component are present, the former precedes the latter (for example, `{0,-20:g}`).
 
 For more information about composite formatting, see [Composite Formatting](composite-formatting.md).
 
@@ -332,8 +332,8 @@ The following example uses the `ByteByByteFormatter` class to format integer val
 
 ## See also
 
-|Title|Definition|
-|-----------|----------------|
+| Title | Definition |
+|-------|------------|
 |[Standard Numeric Format Strings](standard-numeric-format-strings.md)|Describes standard format strings that create commonly used string representations of numeric values.|
 |[Custom Numeric Format Strings](custom-numeric-format-strings.md)|Describes custom format strings that create application-specific formats for numeric values.|
 |[Standard Date and Time Format Strings](standard-date-and-time-format-strings.md)|Describes standard format strings that create commonly used string representations of <xref:System.DateTime> values.|

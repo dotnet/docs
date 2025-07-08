@@ -5,28 +5,26 @@ author: Youssef1313
 dev_langs:
   - csharp
   - vb
-ms.date: 09/13/2019
+ms.date: 07/31/2024
 ---
 # How to create user-defined exceptions with localized exception messages
 
-In this article, you will learn how to create user-defined exceptions that are inherited from the base <xref:System.Exception> class with localized exception messages using satellite assemblies.
+In this article, you learn how to create user-defined exceptions that are inherited from the base <xref:System.Exception> class with localized exception messages using satellite assemblies.
 
 ## Create custom exceptions
 
-.NET contains many different exceptions that you can use. However, in some cases when none of them meets your needs, you can create your own custom exceptions.
+.NET contains many different exceptions that you can use. However, in cases when none of them meets your needs, you can create your own custom exception.
 
 Let's assume you want to create a `StudentNotFoundException` that contains a `StudentName` property.
 To create a custom exception, follow these steps:
 
-1. Create a serializable class that inherits from <xref:System.Exception>. The class name should end in "Exception":
+1. Create a class that inherits from <xref:System.Exception>. The class name should end in "Exception":
 
     ```csharp
-    [Serializable]
     public class StudentNotFoundException : Exception { }
     ```
 
     ```vb
-    <Serializable>
     Public Class StudentNotFoundException
         Inherits Exception
     End Class
@@ -35,7 +33,6 @@ To create a custom exception, follow these steps:
 1. Add the default constructors:
 
     ```csharp
-    [Serializable]
     public class StudentNotFoundException : Exception
     {
         public StudentNotFoundException() { }
@@ -49,7 +46,6 @@ To create a custom exception, follow these steps:
     ```
 
     ```vb
-    <Serializable>
     Public Class StudentNotFoundException
         Inherits Exception
 
@@ -69,7 +65,6 @@ To create a custom exception, follow these steps:
 1. Define any additional properties and constructors:
 
     ```csharp
-    [Serializable]
     public class StudentNotFoundException : Exception
     {
         public string StudentName { get; }
@@ -91,7 +86,6 @@ To create a custom exception, follow these steps:
     ```
 
     ```vb
-    <Serializable>
     Public Class StudentNotFoundException
         Inherits Exception
 
@@ -128,7 +122,7 @@ Throw New StudentNotFoundException("The student cannot be found.", "John")
 ```
 
 The problem with the previous line is that `"The student cannot be found."` is just a constant string. In a localized application, you want to have different messages depending on user culture.
-[Satellite assemblies](../../core/extensions/create-satellite-assemblies.md) are a good way to do that. A satellite assembly is a .dll that contains resources for a specific language. When you ask for a specific resources at run time, the CLR finds that resource depending on user culture. If no satellite assembly is found for that culture, the resources of the default culture are used.
+[Satellite assemblies](../../core/extensions/create-satellite-assemblies.md) are a good way to do that. A satellite assembly is a DLL that contains resources for a specific language. When you ask for a specific resources at run time, the CLR finds that resource depending on user culture. If no satellite assembly is found for that culture, the resources of the default culture are used.
 
 To create the localized exception messages:
 

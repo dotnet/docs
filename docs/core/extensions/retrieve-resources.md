@@ -51,7 +51,7 @@ The French (France) resource is in a file named Strings.fr-FR.txt:
 TimeHeader=L'heure actuelle est
 ```
 
-The Russian (Russia) resource is in a file named Strings.ru-RU-txt:
+The Russian (Russia) resource is in a file named Strings.ru-RU.txt:
 
 ```text
 TimeHeader=Текущее время —

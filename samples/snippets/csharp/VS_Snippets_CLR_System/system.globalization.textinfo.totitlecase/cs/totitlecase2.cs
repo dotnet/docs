@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Globalization;
 
@@ -12,7 +12,7 @@ public class Example
 
       TextInfo ti = CultureInfo.CurrentCulture.TextInfo;
       foreach (var value in values)
-         Console.WriteLine("{0} --> {1}", value, ti.ToTitleCase(value));
+         Console.WriteLine($"{value} --> {ti.ToTitleCase(value)}");
    }
 }
 // The example displays the following output:

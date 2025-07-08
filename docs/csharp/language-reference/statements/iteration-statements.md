@@ -83,14 +83,14 @@ The `foreach` statement executes a statement or a block of statements for each e
 
 The `foreach` statement isn't limited to those types. You can use it with an instance of any type that satisfies the following conditions:
 
-- A type has the public parameterless `GetEnumerator` method. Beginning with C# 9.0, the `GetEnumerator` method can be a type's [extension method](../../programming-guide/classes-and-structs/extension-methods.md).
+- A type has the public parameterless `GetEnumerator` method. The `GetEnumerator` method can be a type's [extension method](../../programming-guide/classes-and-structs/extension-methods.md).
 - The return type of the `GetEnumerator` method has the public `Current` property and the public parameterless `MoveNext` method whose return type is `bool`.
 
 The following example uses the `foreach` statement with an instance of the <xref:System.Span%601?displayProperty=nameWithType> type, which doesn't implement any interfaces:
 
 :::code language="csharp" source="snippets/iteration-statements/ForeachStatement.cs" id="WithSpan" :::
 
-If the enumerator's `Current` property returns a [reference return value](../keywords/ref.md#reference-return-values) (`ref T` where `T` is the type of a collection element), you can declare an iteration variable with the `ref` or `ref readonly` modifier, as the following example shows:
+If the enumerator's `Current` property returns a [reference return value](jump-statements.md#ref-returns) (`ref T` where `T` is the type of a collection element), you can declare an iteration variable with the `ref` or `ref readonly` modifier, as the following example shows:
 
 :::code language="csharp" source="snippets/iteration-statements/ForeachStatement.cs" id="RefIterationVariable" :::
 
@@ -116,6 +116,10 @@ You can use the [`var` keyword](declarations.md#implicitly-typed-local-variables
 ```csharp
 foreach (var item in collection) { }
 ```
+
+> [!NOTE]
+> Type of `var` can be inferred by the compiler as a nullable reference type, depending on whether the [nullable aware context](../../language-reference/builtin-types/nullable-reference-types.md) is enabled and whether the type of an initialization expression is a reference type.
+> For more information see [Implicitly-typed local variables](./declarations.md#implicitly-typed-local-variables).
 
 You can also explicitly specify the type of an iteration variable, as the following code shows:
 
@@ -151,13 +155,12 @@ For more information, see the following sections of the [C# language specificati
 - [The `do` statement](~/_csharpstandard/standard/statements.md#1393-the-do-statement)
 - [The `while` statement](~/_csharpstandard/standard/statements.md#1392-the-while-statement)
 
-For more information about features added in C# 8.0 and later, see the following feature proposal notes:
+For more information about these features, see the following feature proposal notes:
 
-- [Async streams (C# 8.0)](~/_csharplang/proposals/csharp-8.0/async-streams.md)
-- [Extension `GetEnumerator` support for `foreach` loops (C# 9.0)](~/_csharplang/proposals/csharp-9.0/extension-getenumerator.md)
+- [Async streams](~/_csharplang/proposals/csharp-8.0/async-streams.md)
+- [Extension `GetEnumerator` support for `foreach` loops](~/_csharplang/proposals/csharp-9.0/extension-getenumerator.md)
 
 ## See also
 
-- [C# reference](../index.md)
-- [Using foreach with arrays](../../programming-guide/arrays/using-foreach-with-arrays.md)
+- [Declarations](./declarations.md)
 - [Iterators](../../iterators.md)

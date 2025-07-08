@@ -98,13 +98,13 @@ public static class ValueTuples
     private static void MultipleReturns()
     {
         // <SnippetMultipleReturns>
-        var xs = new[] { 4, 7, 9 };
+        int[] xs = new int[] { 4, 7, 9 };
         var limits = FindMinMax(xs);
         Console.WriteLine($"Limits of [{string.Join(" ", xs)}] are {limits.min} and {limits.max}");
         // Output:
         // Limits of [4 7 9] are 4 and 9
 
-        var ys = new[] { -9, 0, 67, 100 };
+        int[] ys = new int[] { -9, 0, 67, 100 };
         var (minimum, maximum) = FindMinMax(ys);
         Console.WriteLine($"Limits of [{string.Join(" ", ys)}] are {minimum} and {maximum}");
         // Output:

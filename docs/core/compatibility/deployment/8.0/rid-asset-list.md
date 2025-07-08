@@ -5,7 +5,7 @@ ms.date: 06/07/2023
 ---
 # Host determines RID-specific assets
 
-When running an application with [RID](../../../rid-catalog.md)-specific assets, the host determines which assets are relevant for the platform on which it's running. This applies to both the application itself and the resolution logic used by <xref:System.Runtime.Loader.AssemblyDependencyResolver>.
+When running an application with [runtime identifier (RID)](../../../rid-catalog.md) specific assets, the host determines what assets are relevant for the platform on which it's running. This applies to both the application itself and the resolution logic used by <xref:System.Runtime.Loader.AssemblyDependencyResolver>.
 
 Previously, the host tried to compute the RID at run time and then read the RID graph to determine which RID-specific assets matched or were compatible with the computed RID. Now, the default behavior doesn't compute the RID or use the RID graph. Instead, the host relies on a known list of RIDs based on how the runtime itself was built.
 
@@ -63,14 +63,18 @@ The RID graph was costly to maintain and understand, requiring .NET itself to be
 
 Use portable RIDs, for example, `linux`, `linux-musl`, `osx`, and `win`. For specialized use cases, you can use APIs like <xref:System.Runtime.InteropServices.NativeLibrary.SetDllImportResolver(System.Reflection.Assembly,System.Runtime.InteropServices.DllImportResolver)?displayProperty=nameWithType> or <xref:System.Runtime.Loader.AssemblyLoadContext.ResolvingUnmanagedDll?displayProperty=nameWithType> for custom loading logic.
 
-If you need to revert to the previous behavior, set the backwards compatibility switch `System.Runtime.Loader.UseRidGraph` to `true` in your *runtimeconfig.json* file. Setting the switch to `true` instructs the host to use the previous behavior of reading the RID graph. Alternatively, you can add a `RuntimeHostConfigurationOption` MSBuild item in your project file. For example:
+If you need to revert to the previous behavior, set the backwards compatibility switch `System.Runtime.Loader.UseRidGraph` to `true` in your *runtimeconfig.json* file. Setting the switch to `true` instructs the host to use the previous behavior of reading the RID graph. Alternatively, you can set the `UseRidGraph` MSBuild property to `true` in your project file. For example
 
 ```xml
-<ItemGroup>
-  <RuntimeHostConfigurationOption Include="System.Runtime.Loader.UseRidGraph" Value="true" />
-</ItemGroup>
+<PropertyGroup>
+  <UseRidGraph>true</UseRidGraph>
+</PropertyGroup>
 ```
 
 ## Affected APIs
 
 - <xref:System.Runtime.Loader.AssemblyDependencyResolver?displayProperty=fullName>
+
+## See also
+
+- [.NET SDK uses a smaller RID graph](../../sdk/8.0/rid-graph.md)

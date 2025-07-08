@@ -7,7 +7,7 @@ ms.date: 10/27/2021
 
 # Collect metrics
 
-**This article applies to: ✔️** .NET Core 3.1 and later **✔️** .NET Framework 4.6.1 and later
+**This article applies to: ✔️** .NET 6.0 and later **✔️** .NET Framework 4.6.1 and later
 
 Instrumented code can record numeric measurements, but the measurements usually need to be aggregated, transmitted, and stored to create useful metrics for monitoring. The process of aggregating, transmitting, and storing data is called collection. This tutorial shows several examples of collecting metrics:
 
@@ -19,11 +19,11 @@ For more information on custom metric instrumentation and options, see [Compare 
 
 ## Prerequisites
 
-- [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet) or a later
+- [.NET 6.0 SDK](https://dotnet.microsoft.com/download/dotnet) or a later
 
 ## Create an example app
 
-Before metrics can be collected, measurements must be produced. This tutorial creates an app that has basic metric instrumentation. The .NET runtime also has [various metrics built-in](available-counters.md). For more information about creating new metrics using the <xref:System.Diagnostics.Metrics.Meter?displayProperty=nameWithType> API, see [the instrumentation tutorial](metrics-instrumentation.md).
+Before metrics can be collected, measurements must be produced. This tutorial creates an app that has basic metric instrumentation. The .NET runtime also has [various metrics built-in](built-in-metrics.md). For more information about creating new metrics using the <xref:System.Diagnostics.Metrics.Meter?displayProperty=nameWithType> API, see [the instrumentation tutorial](metrics-instrumentation.md).
 
 ```dotnetcli
 dotnet new console -o metric-instr
@@ -97,7 +97,7 @@ Press p to pause, r to resume, q to quit.
     Working Set (MB)                                              30
 ```
 
-For more information, see [dotnet-counters](dotnet-counters.md). To learn more about metrics in .NET, see [built-in metrics](available-counters.md).
+For more information, see [dotnet-counters](dotnet-counters.md). To learn more about metrics in .NET, see [built-in metrics](built-in-metrics.md).
 
 ## View metrics in Grafana with OpenTelemetry and Prometheus
 
@@ -132,7 +132,7 @@ This tutorial shows one of the integrations available for OpenTelemetry metrics 
 Add a reference to the OpenTelemetry Prometheus exporter to the example app:
 
 ```dotnetcli
-dotnet add package OpenTelemetry.Exporter.Prometheus.AspNetCore --prerelease
+dotnet add package OpenTelemetry.Exporter.Prometheus.HttpListener --prerelease
 ```
 
 > [!NOTE]
@@ -145,7 +145,7 @@ Update `Program.cs` with OpenTelemetry configuration:
 In the preceding code:
 
 - `AddMeter("HatCo.HatStore")` configures OpenTelemetry to transmit all the metrics collected by the Meter defined in the app.
-- `AddPrometheusExporter` configures OpenTelemetry to:
+- `AddPrometheusHttpListener` configures OpenTelemetry to:
   - Expose Prometheus' metrics endpoint on port `9184`
   - Use the HttpListener.
 
@@ -192,9 +192,9 @@ If the Prometheus server hasn't been scraping the example app for long, you may 
 
    ![Hats sold Grafana dashboard](~/docs/core/diagnostics/media/grafana-hats-sold-dashboard.png)]
 
-## Create a custom collection tool using the .NET <xref:System.Diagnostics.Metrics.MeterListener> API
+## Create a custom collection tool using the .NET MeterListener API
 
-The .NET <xref:System.Diagnostics.Metrics.MeterListener> API allows creating custom in-process logic to observe the measurements being recorded by <xref:System.Diagnostics.Metrics.Meter?displayProperty=nameWithType>. For guidance creating custom logic compatible with the older EventCounters instrumentation, see [EventCounters](event-counters.md).
+The .NET <xref:System.Diagnostics.Metrics.MeterListener> API allows you to create custom in-process logic to observe the measurements being recorded by <xref:System.Diagnostics.Metrics.Meter?displayProperty=nameWithType>. For guidance on creating custom logic compatible with the older EventCounters instrumentation, see [EventCounters](event-counters.md).
 
 Modify the code of `Program.cs` to use <xref:System.Diagnostics.Metrics.MeterListener>:
 

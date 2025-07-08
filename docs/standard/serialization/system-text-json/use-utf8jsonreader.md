@@ -13,16 +13,15 @@ ms.topic: how-to
 
 This article shows how you can use the <xref:System.Text.Json.Utf8JsonReader> type for building custom parsers and deserializers.
 
-<xref:System.Text.Json.Utf8JsonReader> is a high-performance, low allocation, forward-only reader for UTF-8 encoded JSON text, read from a `ReadOnlySpan<byte>` or `ReadOnlySequence<byte>`. The `Utf8JsonReader` is a low-level type that can be used to build custom parsers and deserializers. The <xref:System.Text.Json.JsonSerializer.Deserialize%2A?displayProperty=nameWithType> methods use `Utf8JsonReader` under the covers.
+<xref:System.Text.Json.Utf8JsonReader> is a high-performance, low allocation, forward-only reader for UTF-8 encoded JSON text. The text is read from a `ReadOnlySpan<byte>` or `ReadOnlySequence<byte>`. `Utf8JsonReader` is a low-level type that can be used to build custom parsers and deserializers. (The <xref:System.Text.Json.JsonSerializer.Deserialize%2A?displayProperty=nameWithType> methods use `Utf8JsonReader` under the covers.)
 
-> `Utf8JsonReader` can't be used directly from Visual Basic code. For more information, see [Visual Basic support](visual-basic-support.md).
-
-The following example shows how to use the <xref:System.Text.Json.Utf8JsonReader> class:
+The following example shows how to use the <xref:System.Text.Json.Utf8JsonReader> class. This code assumes that the `jsonUtf8Bytes` variable is a byte array that contains valid JSON, encoded as UTF-8.
 
 :::code language="csharp" source="snippets/how-to/csharp/Utf8ReaderFromBytes.cs" id="Deserialize":::
 :::code language="vb" source="snippets/how-to/vb/Utf8ReaderFromBytes.vb" id="Deserialize":::
 
-The preceding code assumes that the `jsonUtf8` variable is a byte array that contains valid JSON, encoded as UTF-8.
+> [!NOTE]
+> `Utf8JsonReader` can't be used directly from Visual Basic code. For more information, see [Visual Basic support](visual-basic-support.md).
 
 ## Filter data using `Utf8JsonReader`
 
@@ -31,13 +30,13 @@ The following example shows how to synchronously read a file and search for a va
 :::code language="csharp" source="snippets/how-to/csharp/Utf8ReaderFromFile.cs":::
 :::code language="vb" source="snippets/how-to/vb/Utf8ReaderFromFile.vb":::
 
-For an asynchronous version of this example, see [.NET samples JSON project](https://github.com/dotnet/samples/blob/18e31a5f1abd4f347bf96bfdc3e40e2cfb36e319/core/json/Program.cs).
-
 The preceding code:
 
-* Assumes the JSON contains an array of objects and each object might contain a "name" property of type string.
+* Assumes the JSON contains an array of objects, and each object might contain a "name" property of type string.
 * Counts objects and "name" property values that end with "University".
-* Assumes the file is encoded as UTF-16 and transcodes it into UTF-8. A file encoded as UTF-8 can be read directly into a `ReadOnlySpan<byte>` by using the following code:
+* Assumes the file is encoded as UTF-16 and transcodes it into UTF-8.
+
+  A file encoded as UTF-8 can be read directly into a `ReadOnlySpan<byte>` by using the following code:
 
   ```csharp
   ReadOnlySpan<byte> jsonReadOnlySpan = File.ReadAllBytes(fileName);
@@ -49,9 +48,12 @@ Here's a JSON sample that the preceding code can read. The resulting summary mes
 
 :::code language="json" source="snippets/how-to/csharp/Universities.json":::
 
+> [!TIP]
+> For an asynchronous version of this example, see [.NET samples JSON project](https://github.com/dotnet/samples/blob/18e31a5f1abd4f347bf96bfdc3e40e2cfb36e319/core/json/Program.cs).
+
 ## Read from a stream using `Utf8JsonReader`
 
-When reading a large file (a gigabyte or more in size, for example), you might want to avoid having to load the entire file into memory at once. For this scenario, you can use a <xref:System.IO.FileStream>.
+When reading a large file (a gigabyte or more in size, for example), you might want to avoid loading the entire file into memory at once. For this scenario, you can use a <xref:System.IO.FileStream>.
 
 When using the `Utf8JsonReader` to read from a stream, the following rules apply:
 
@@ -61,7 +63,7 @@ When using the `Utf8JsonReader` to read from a stream, the following rules apply
 
 The following code illustrates how to read from a stream. The example shows a <xref:System.IO.MemoryStream>. Similar code will work with a <xref:System.IO.FileStream>, except when the `FileStream` contains a UTF-8 BOM at the start. In that case, you need to strip those three bytes from the buffer before passing the remaining bytes to the `Utf8JsonReader`. Otherwise the reader would throw an exception, since the BOM is not considered a valid part of the JSON.
 
-The sample code starts with a 4 KB buffer and doubles the buffer size each time it finds that the size is not large enough to fit a complete JSON token, which is required for the reader to make forward progress on the JSON payload. The JSON sample provided in the snippet triggers a buffer size increase only if you set a very small initial buffer size, for example, 10 bytes. If you set the initial buffer size to 10, the `Console.WriteLine` statements illustrate the cause and effect of buffer size increases. At the 4 KB initial buffer size, the entire sample JSON is shown by each `Console.WriteLine`, and the buffer size never has to be increased.
+The sample code starts with a 4 KB buffer and doubles the buffer size each time it finds that the size is not large enough to fit a complete JSON token, which is required for the reader to make forward progress on the JSON payload. The JSON sample provided in the snippet triggers a buffer size increase only if you set a very small initial buffer size, for example, 10 bytes. If you set the initial buffer size to 10, the `Console.WriteLine` statements illustrate the cause and effect of buffer size increases. At the 4 KB initial buffer size, the entire sample JSON is shown by each call to `Console.WriteLine`, and the buffer size never has to be increased.
 
 :::code language="csharp" source="snippets/how-to/csharp/Utf8ReaderPartialRead.cs":::
 :::code language="vb" source="snippets/how-to/vb/Utf8ReaderPartialRead.vb":::
@@ -70,9 +72,9 @@ The preceding example sets no limit to how large the buffer can grow. If the tok
 
 ## ref struct limitations
 
-Because the `Utf8JsonReader` type is a *ref struct*, it has [certain limitations](../../../csharp/language-reference/builtin-types/ref-struct.md). For example, it can't be stored as a field on a class or struct other than a ref struct.
+Because the `Utf8JsonReader` type is a `ref struct`, it has [certain limitations](../../../csharp/language-reference/builtin-types/ref-struct.md). For example, it can't be stored as a field on a class or struct other than a `ref struct`.
 
-To achieve high performance, this type must be a `ref struct` since it needs to cache the input [ReadOnlySpan\<byte>](xref:System.ReadOnlySpan%601), which itself is a ref struct. In addition, the `Utf8JsonReader` type is mutable since it holds state. Therefore, **pass it by reference** rather than by value. Passing it by value would result in a struct copy and the state changes would not be visible to the caller.
+To achieve high performance, `Utf8JsonReader` must be a `ref struct`, because it needs to cache the input [ReadOnlySpan\<byte>](xref:System.ReadOnlySpan%601) (which itself is a `ref struct`). In addition, the `Utf8JsonReader` type is mutable since it holds state. Therefore, **pass it by reference** rather than by value. Passing the `Utf8JsonReader` by value would result in a struct copy, and the state changes wouldn't be visible to the caller.
 
 For more information about how to use ref structs, see [Avoid allocations](../../../csharp/advanced-topics/performance/index.md).
 
@@ -98,9 +100,23 @@ while (reader.Read())
 }
 ```
 
-## Use ValueTextEquals for property name lookups
+## Read multiple JSON documents
 
-Don't use <xref:System.Text.Json.Utf8JsonReader.ValueSpan%2A> to do byte-by-byte comparisons by calling <xref:System.MemoryExtensions.SequenceEqual%2A> for property name lookups. Call <xref:System.Text.Json.Utf8JsonReader.ValueTextEquals%2A> instead, because that method unescapes any characters that are escaped in the JSON. Here's an example that shows how to search for a property that's named "name":
+In .NET 9 and later versions, you can read multiple, white space&ndash;separated JSON documents from a single buffer or stream. By default, `Utf8JsonReader` throws an exception if it detects any non-white-space characters that trail the first top-level document. However, you can configure that behavior using the <xref:System.Text.Json.JsonReaderOptions.AllowMultipleValues?displayProperty=nameWithType> flag.
+
+:::code language="csharp" source="snippets/use-dom-utf8jsonreader-utf8jsonwriter/csharp/ReadMultipleDocs.cs" id="Snippet1":::
+
+When <xref:System.Text.Json.JsonReaderOptions.AllowMultipleValues> is set to `true`, you can also read JSON from payloads that contain trailing data that's invalid JSON.
+
+:::code language="csharp" source="snippets/use-dom-utf8jsonreader-utf8jsonwriter/csharp/ReadMultipleDocs.cs" id="Snippet2":::
+
+To stream multiple top-level values, use the <xref:System.Text.Json.JsonSerializer.DeserializeAsyncEnumerable``1(System.IO.Stream,System.Boolean,System.Text.Json.JsonSerializerOptions,System.Threading.CancellationToken)> or <xref:System.Text.Json.JsonSerializer.DeserializeAsyncEnumerable``1(System.IO.Stream,System.Text.Json.Serialization.Metadata.JsonTypeInfo{``0},System.Boolean,System.Threading.CancellationToken)> overload. By default, `DeserializeAsyncEnumerable` attempts to stream elements that are contained in a single, top-level JSON array. Pass `true` for the `topLevelValues` parameter to stream multiple top-level values.
+
+:::code language="csharp" source="snippets/use-dom-utf8jsonreader-utf8jsonwriter/csharp/ReadMultipleDocs.cs" id="Snippet3":::
+
+## Property name lookups
+
+To look up property names, don't use <xref:System.Text.Json.Utf8JsonReader.ValueSpan%2A> to do byte-by-byte comparisons by calling <xref:System.MemoryExtensions.SequenceEqual%2A>. Instead, call <xref:System.Text.Json.Utf8JsonReader.ValueTextEquals%2A>, because this method unescapes any characters that are escaped in the JSON. Here's an example that shows how to search for a property that's named "name":
 
 :::code language="csharp" source="snippets/how-to/csharp/ValueTextEqualsExample.cs" id="DefineUtf8Var":::
 
@@ -156,11 +172,11 @@ Starting in .NET 7, you can use the <xref:System.Text.Json.Utf8JsonReader.CopySt
 
 ## Related APIs
 
-* To deserialize a custom type from a `Utf8JsonReader` instance, call <xref:System.Text.Json.JsonSerializer.Deserialize%60%601(System.Text.Json.Utf8JsonReader@,System.Text.Json.JsonSerializerOptions)?displayProperty=nameWithType> or <xref:System.Text.Json.JsonSerializer.Deserialize%60%601(System.Text.Json.Utf8JsonReader@,System.Text.Json.Serialization.Metadata.JsonTypeInfo{%60%600})?displayProperty=nameWithType>. For an example, see [Deserialize from UTF-8](how-to.md#deserialize-from-utf-8).
+* To deserialize a custom type from a `Utf8JsonReader` instance, call <xref:System.Text.Json.JsonSerializer.Deserialize%60%601(System.Text.Json.Utf8JsonReader@,System.Text.Json.JsonSerializerOptions)?displayProperty=nameWithType> or <xref:System.Text.Json.JsonSerializer.Deserialize%60%601(System.Text.Json.Utf8JsonReader@,System.Text.Json.Serialization.Metadata.JsonTypeInfo{%60%600})?displayProperty=nameWithType>. For an example, see [Deserialize from UTF-8](deserialization.md#deserialize-from-utf-8).
 
 * <xref:System.Text.Json.Nodes.JsonNode> and the classes that derive from it provide the ability to create a mutable DOM. You can convert a `Utf8JsonReader` instance to a `JsonNode` by calling <xref:System.Text.Json.Nodes.JsonNode.Parse(System.Text.Json.Utf8JsonReader@,System.Nullable{System.Text.Json.Nodes.JsonNodeOptions})?displayProperty=nameWithType>. The following code snippet shows an example.
 
-   :::code language="csharp" source="snippets/how-to/csharp/Utf8ReaderToJsonNode.cs":::
+  :::code language="csharp" source="snippets/how-to/csharp/Utf8ReaderToJsonNode.cs":::
 
 * <xref:System.Text.Json.JsonDocument> provides the ability to build a read-only DOM by using `Utf8JsonReader`. Call the <xref:System.Text.Json.JsonDocument.ParseValue(System.Text.Json.Utf8JsonReader@)?displayProperty=nameWithType> method to parse a `JsonDocument` from a `Utf8JsonReader` instance. You can access the JSON elements that compose the payload via the <xref:System.Text.Json.JsonElement> type. For example code that uses <xref:System.Text.Json.JsonDocument.ParseValue(System.Text.Json.Utf8JsonReader@)?displayProperty=nameWithType>, see [RoundtripDataTable.cs](https://github.com/dotnet/docs/blob/main/docs/standard/serialization/system-text-json/snippets/how-to/csharp/RoundtripDataTable.cs) and the code snippet in [Deserialize inferred types to object properties](converters-how-to.md#deserialize-inferred-types-to-object-properties).
 

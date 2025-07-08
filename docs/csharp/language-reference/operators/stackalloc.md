@@ -2,14 +2,14 @@
 title: "stackalloc expression - Allocate variable storage on the stack instead of the heap"
 description: "The C# stackalloc expression allocates a block of memory on the stack. Stackalloc memory is automatically discarded when that method returns."
 ms.date: 11/28/2022
-f1_keywords: 
+f1_keywords:
   - "stackalloc_CSharpKeyword"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "stackalloc expression [C#]"
 ---
 # stackalloc expression (C# reference)
 
-A `stackalloc` expression allocates a block of memory on the stack. A stack allocated memory block created during the method execution is automatically discarded when that method returns. You can't explicitly free the memory allocated with `stackalloc`. A stack allocated memory block isn't subject to [garbage collection](../../../standard/garbage-collection/index.md) and doesn't have to be pinned with a [`fixed` statement](../statements/fixed.md).
+A `stackalloc` expression allocates a block of memory on the stack. A stack-allocated memory block created during the method execution is automatically discarded when that method returns. You can't explicitly free the memory allocated with `stackalloc`. A stack allocated memory block isn't subject to [garbage collection](../../../standard/garbage-collection/index.md) and doesn't have to be pinned with a [`fixed` statement](../statements/fixed.md).
 
 You can assign the result of a `stackalloc` expression to a variable of one of the following types:
 
@@ -23,7 +23,7 @@ You can assign the result of a `stackalloc` expression to a variable of one of t
 
   [!code-csharp[stackalloc expression](snippets/shared/StackallocOperator.cs#AsExpression)]
 
-  You can use a `stackalloc` expression inside other expressions whenever a <xref:System.Span%601> or <xref:System.ReadOnlySpan%601> variable is allowed, as the following example shows:
+  You can use a `stackalloc` expression or a collection expression inside other expressions whenever a <xref:System.Span%601> or <xref:System.ReadOnlySpan%601> variable is allowed, as the following example shows:
 
   [!code-csharp[stackalloc in nested expressions](snippets/shared/StackallocOperator.cs#Nested)]
 
@@ -49,13 +49,16 @@ The amount of memory available on the stack is limited. If you allocate too much
 
 - Avoid using `stackalloc` inside loops. Allocate the memory block outside a loop and reuse it inside the loop.
 
-The content of the newly allocated memory is undefined. You should initialize it before the use. For example, you can use the <xref:System.Span%601.Clear%2A?displayProperty=nameWithType> method that sets all the items to the default value of type `T`.
+The content of the newly allocated memory is undefined. You should initialize it, either with a `stackalloc` initializer, or a method like <xref:System.Span%601.Clear%2A?displayProperty=nameWithType> before it's used.
+
+> [!IMPORTANT]
+> Not initializing memory allocated by `stackalloc` is an important difference from the `new` operator. Memory allocated using the `new` operator is initialized to the 0 bit pattern.
 
 You can use array initializer syntax to define the content of the newly allocated memory. The following example demonstrates various ways to do that:
 
 [!code-csharp[stackalloc initialization](snippets/shared/StackallocOperator.cs#StackallocInit)]
 
-In expression `stackalloc T[E]`, `T` must be an [unmanaged type](../builtin-types/unmanaged-types.md) and `E` must evaluate to a non-negative [int](../builtin-types/integral-numeric-types.md) value.
+In expression `stackalloc T[E]`, `T` must be an [unmanaged type](../builtin-types/unmanaged-types.md) and `E` must evaluate to a non-negative [int](../builtin-types/integral-numeric-types.md) value. When you use the [collection expression](./collection-expressions.md) syntax to initialize the span, the compiler may use stack allocated storage for a span if it won't violate ref safety.
 
 ## Security
 
@@ -63,11 +66,10 @@ The use of `stackalloc` automatically enables buffer overrun detection features 
 
 ## C# language specification
 
-For more information, see the [Stack allocation](~/_csharpstandard/standard/unsafe-code.md#239-stack-allocation) section of the [C# language specification](~/_csharpstandard/standard/README.md) and the [Permit `stackalloc` in nested contexts](~/_csharplang/proposals/csharp-8.0/nested-stackalloc.md) feature proposal note.
+For more information, see the [Stack allocation](~/_csharpstandard/standard/unsafe-code.md#239-stack-allocation) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 ## See also
 
-- [C# reference](../index.md)
 - [C# operators and expressions](index.md)
 - [Pointer related operators](pointer-related-operators.md)
 - [Pointer types](../unsafe-code.md#pointer-types)

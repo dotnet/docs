@@ -29,4 +29,4 @@ ms.topic: how-to
 
 ## See also
 
-- [WindowPattern Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Accessibility/WindowMove)
+- [WindowPattern Sample](https://github.com/Microsoft/WPF-Samples/tree/main/Accessibility/WindowMove)

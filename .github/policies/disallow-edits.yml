@@ -1,0 +1,62 @@
+id:
+name: GitOps.PullRequestIssueManagement
+description: GitOps.PullRequestIssueManagement primitive
+owner:
+resource: repository
+disabled: false
+where:
+configuration:
+  resourceManagementConfiguration:
+    eventResponderTasks:
+      - description: Close PRs that change .github folder files.
+        triggerOnOwnActions: true
+        if:
+          - payloadType: Pull_Request
+          - isAction:
+              action: Opened
+          - filesMatchPattern:
+              pattern: \.github/*
+              matchAny: true
+              excludedFiles:
+                - .github/CODEOWNERS
+          - not:
+              or:
+                - activitySenderHasPermission:
+                    permission: admin
+                - activitySenderHasPermission:
+                    permission: write
+                - isActivitySender:
+                    user: dependabot
+                - isActivitySender:
+                    user: dependabot[bot]
+                - isActivitySender:
+                    user: dotnet-policy-service[bot]
+                - isActivitySender:
+                    user: github-actions[bot]
+        then:
+          - addReply:
+              reply: >-
+                  @${issueAuthor} - This PR edits a file in the .github folder, which is not allowed. CC @dotnet/docs.
+          - closePullRequest
+
+      - description: Close PRs that change Framework Design Guidelines.
+        triggerOnOwnActions: true
+        if:
+          - payloadType: Pull_Request
+          - isAction:
+              action: Opened
+          - filesMatchPattern:
+              pattern: docs/standard/design-guidelines/*
+              matchAny: true
+        then:
+          - addReply:
+              reply: >-
+                  @${issueAuthor} - This PR edits a file in the design-guidelines folder, which is disallowed. This content is reprinted by permission of Pearson Education, Inc. from Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition, and cannot be edited. CC @dotnet/docs.
+          - if:
+              - or:
+                  - activitySenderHasPermission:
+                      permission: None
+                  - activitySenderHasPermission:
+                      permission: Read
+            then:
+              - closePullRequest

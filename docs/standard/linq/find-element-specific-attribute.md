@@ -84,7 +84,7 @@ Module Module1
 End Module
 ```
 
-This example produces the following output::
+This example produces the following output:
 
 ```xml
 <aw:Address aw:Type="Billing" xmlns:aw="http://www.adventure-works.com">
@@ -101,8 +101,8 @@ This example produces the following output::
 
 - <xref:System.Xml.Linq.XElement.Attribute%2A>
 - <xref:System.Xml.Linq.XContainer.Elements%2A>
-- [Standard Query Operators Overview (C#)](../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)
-- [Projection Operations (C#)](../../csharp/programming-guide/concepts/linq/projection-operations.md)
+- [Standard Query Operators Overview (C#)](../../csharp/linq/standard-query-operators/index.md)
+- [Projection Operations (C#)](../../csharp/linq/standard-query-operators/projection-operations.md)
 - [Basic Queries (LINQ to XML) (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/basic-query-operations.md)
 - [Standard Query Operators Overview (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)
 - [Projection Operations (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/projection-operations.md)

@@ -3,17 +3,17 @@ title: What's new in .NET 5
 description: Learn about .NET 5, a cross-platform and open-source development platform that is the next evolution of .NET Core.
 ms.date: 07/26/2022
 ms.custom: devdivchpfy22
-ms.topic: overview
+ms.topic: whats-new
 ms.author: dapine
 author: IEvangelist
 ---
 
 # What's new in .NET 5
 
-.NET 5 is the next major release of .NET Core following 3.1. We named this new release .NET 5 instead of .NET Core 4 for two reasons:
+.NET 5 is the next major release of .NET Core following 3.1. This release was named .NET 5 instead of .NET Core 4 for two reasons:
 
-- We skipped version numbers 4.x to avoid confusion with .NET Framework 4.x.
-- We dropped "Core" from the name to emphasize that this is the main implementation of .NET going forward. .NET 5 supports more types of apps and more platforms than .NET Core or .NET Framework.
+- Version numbers 4.x were skipped to avoid confusion with .NET Framework 4.x.
+- "Core" was dropped from the name to emphasize that this is the main implementation of .NET going forward. .NET 5 supports more types of apps and more platforms than .NET Core or .NET Framework.
 
 ASP.NET Core 5.0 is based on .NET 5 but retains the name "Core" to avoid confusing it with ASP.NET MVC 5. Likewise, Entity Framework Core 5.0 retains the name "Core" to avoid confusing it with Entity Framework 5 and 6.
 
@@ -78,7 +78,7 @@ Developers writing .NET 5 apps will have access to the latest C# version and fea
 
 - **Function pointers**: Language constructs that expose the following intermediate language (IL) opcodes: `ldftn` and `calli`.
 
-For more information on the available C# 9 features, see [What's new in C# 9](../../csharp/whats-new/csharp-9.md).
+For more information on the available C# 9 features, see [What's new in C# 9](../../csharp/whats-new/csharp-version-history.md#c-version-9).
 
 ### Source generators
 
@@ -134,11 +134,11 @@ For more information on project templates from the .NET CLI, see [`dotnet new`](
 There are new features in and for [System.Text.Json](../../standard/serialization/system-text-json/overview.md):
 
 - [Preserve references and handle circular references](../../standard/serialization/system-text-json/preserve-references.md)
-- [HttpClient and HttpContent extension methods](../../standard/serialization/system-text-json/how-to.md#httpclient-and-httpcontent-extension-methods)
+- [Serialization extension methods on HttpClient](../../standard/serialization/system-text-json/httpclient-extensions.md)
 - [Allow or write numbers in quotes](../../standard/serialization/system-text-json/invalid-json.md#allow-or-write-numbers-in-quotes)
 - [Support immutable types and C# 9 Records](../../standard/serialization/system-text-json/immutability.md)
 - [Support non-public property accessors](../../standard/serialization/system-text-json/immutability.md)
-- [Support fields](../../standard/serialization/system-text-json/how-to.md#include-fields)
+- [Support fields](../../standard/serialization/system-text-json/fields.md)
 - [Conditionally ignore properties](../../standard/serialization/system-text-json/ignore-properties.md)
 - [Support non-string-key dictionaries](../../standard/serialization/system-text-json/migrate-from-newtonsoft.md#dictionary-with-non-string-key)
 - [Allow custom converters to handle null](../../standard/serialization/system-text-json/converters-how-to.md#handle-null-values)

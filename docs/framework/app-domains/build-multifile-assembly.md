@@ -22,6 +22,8 @@ ms.assetid: 261c5583-8a76-412d-bda7-9b8ee3b131e5
 ---
 # How to: Build a multifile assembly
 
+[!INCLUDE [net-framework-specific](../includes/net-framework-specific.md)]
+
 This article explains how to create a multifile assembly and provides code that illustrates each step in the procedure.
 
 > [!NOTE]
@@ -95,7 +97,7 @@ This article explains how to create a multifile assembly and provides code that 
 
 3. Compile all other modules, using the necessary compiler options to indicate the other modules that are referenced in the code. This step uses the **/addmodule** compiler option.
 
-   In the following example, a code module called *Client* has an entry point `Main` method that references a method in the *Stringer.dll* module created in step 1.
+   In the following example, a code module called *Client* has an entry point `Main` method that references a method in the *Stringer.netmodule* module created in step 1.
 
    ```cpp
    #using "Stringer.netmodule"
@@ -171,51 +173,51 @@ This article explains how to create a multifile assembly and provides code that 
    >
    > Two compilations create a two-file assembly:
    >
-   >   ```cpp
-   >   cl /clr:pure /LN Stringer.cpp
-   >   cl /clr:pure Client.cpp /link /ASSEMBLYMODULE:Stringer.netmodule
-   >   ```
+   > ```cpp
+   > cl /clr:pure /LN Stringer.cpp
+   > cl /clr:pure Client.cpp /link /ASSEMBLYMODULE:Stringer.netmodule
+   > ```
    >
-   >   ```csharp
-   >   csc /t:module Stringer.cs
-   >   csc Client.cs /addmodule:Stringer.netmodule
-   >   ```
+   > ```csharp
+   > csc /t:module Stringer.cs
+   > csc Client.cs /addmodule:Stringer.netmodule
+   > ```
    >
-   >   ```vb
-   >   vbc /t:module Stringer.vb
-   >   vbc Client.vb /addmodule:Stringer.netmodule
-   >   ```
+   > ```vb
+   > vbc /t:module Stringer.vb
+   > vbc Client.vb /addmodule:Stringer.netmodule
+   > ```
    >
    > One compilation creates a two-file assembly:
    >
-   >   ```cpp
-   >   cl /clr:pure /LN Stringer.cpp
-   >   cl /clr:pure Client.cpp /link /ASSEMBLYMODULE:Stringer.netmodule
-   >   ```
+   > ```cpp
+   > cl /clr:pure /LN Stringer.cpp
+   > cl /clr:pure Client.cpp /link /ASSEMBLYMODULE:Stringer.netmodule
+   > ```
    >
-   >   ```csharp
-   >   csc /out:Client.exe Client.cs /out:Stringer.netmodule Stringer.cs
-   >   ```
+   > ```csharp
+   > csc /out:Client.exe Client.cs /out:Stringer.netmodule Stringer.cs
+   > ```
    >
-   >   ```vb
-   >   vbc /out:Client.exe Client.vb /out:Stringer.netmodule Stringer.vb
-   >   ```
+   > ```vb
+   > vbc /out:Client.exe Client.vb /out:Stringer.netmodule Stringer.vb
+   > ```
 
 5. Use the [Assembly Linker (Al.exe)](../tools/al-exe-assembly-linker.md) to create the output file that contains the assembly manifest. This file contains reference information for all modules or resources that are part of the assembly.
 
-    At the command prompt, type the following command:
+   At the command prompt, type the following command:
 
-    **al** \<*module name*> \<*module name*> … **/main:**\<*method name*> **/out:**\<*file name*> **/target:**\<*assembly file type*>
+   **al** \<*module name*> \<*module name*> … **/main:**\<*method name*> **/out:**\<*file name*> **/target:**\<*assembly file type*>
 
-    In this command, the *module name* arguments specify the name of each module to include in the assembly. The **/main:** option specifies the method name that is the assembly's entry point. The **/out:** option specifies the name of the output file, which contains assembly metadata. The **/target:** option specifies that the assembly is a console application executable (*.exe*) file, a Windows executable (*.win*) file, or a library (*.lib*) file.
+   In this command, the *module name* arguments specify the name of each module to include in the assembly. The **/main:** option specifies the method name that is the assembly's entry point. The **/out:** option specifies the name of the output file, which contains assembly metadata. The **/target:** option specifies that the assembly is a console application executable (*.exe*) file, a Windows executable (*.win*) file, or a library (*.lib*) file.
 
-    In the following example, *Al.exe* creates an assembly that is a console application executable called *myAssembly.exe*. The application consists of two modules called *Client.netmodule* and *Stringer.netmodule*, and the executable file called *myAssembly.exe*, which contains only assembly metadata. The entry point of the assembly is the `Main` method in the class `MainClientApp`, which is located in *Client.dll*.
+   In the following example, *Al.exe* creates an assembly that is a console application executable called *myAssembly.exe*. The application consists of two modules called *Client.netmodule* and *Stringer.netmodule*, and the executable file called *myAssembly.exe*, which contains only assembly metadata. The entry point of the assembly is the `Main` method in the class `MainClientApp`, which is located in *Client.dll*.
 
-    ```cmd
-    al Client.netmodule Stringer.netmodule /main:MainClientApp.Main /out:myAssembly.exe /target:exe
-    ```
+   ```cmd
+   al Client.netmodule Stringer.netmodule /main:MainClientApp.Main /out:myAssembly.exe /target:exe
+   ```
 
-    You can use the [MSIL Disassembler (Ildasm.exe)](../tools/ildasm-exe-il-disassembler.md) to examine the contents of an assembly, or determine whether a file is an assembly or a module.
+   You can use [IL Disassembler (Ildasm.exe)](../tools/ildasm-exe-il-disassembler.md) to examine the contents of an assembly, or determine whether a file is an assembly or a module.
 
 ## See also
 

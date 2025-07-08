@@ -15,6 +15,8 @@ ms.assetid: 21726de1-61ee-4fdc-9dd0-3be49324d066
 ---
 # How to: Create and Initialize Trace Listeners
 
+[!INCLUDE [net-framework-specific](../includes/net-framework-specific.md)]
+
 The <xref:System.Diagnostics.Debug?displayProperty=nameWithType> and <xref:System.Diagnostics.Trace?displayProperty=nameWithType> classes send messages to objects called listeners that receive and process these messages. One such listener, the <xref:System.Diagnostics.DefaultTraceListener?displayProperty=nameWithType>, is automatically created and initialized when tracing or debugging is enabled. If you want <xref:System.Diagnostics.Trace> or <xref:System.Diagnostics.Debug> output to be directed to any additional sources, you must create and initialize additional trace listeners.
 
 The listeners you create should reflect your application's needs. For example, if you want a text record of all trace output, create a <xref:System.Diagnostics.TextWriterTraceListener> listener, which writes all output to a new text file when it is enabled. On the other hand, if you want to view output only during application execution, create a <xref:System.Diagnostics.ConsoleTraceListener> listener, which directs all output to a console window. The <xref:System.Diagnostics.EventLogTraceListener> can direct trace output to an event log. For more information, see [Trace Listeners](trace-listeners.md).

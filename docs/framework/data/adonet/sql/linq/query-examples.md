@@ -63,7 +63,7 @@ This section provides Visual Basic and C# examples of typical [!INCLUDE[vbtecdli
   
 ## Related Sections  
 
- [Standard Query Operators Overview (C#)](../../../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)  
+ [Standard Query Operators Overview (C#)](../../../../../csharp/linq/standard-query-operators/index.md)  
  Explains the concept of standard query operators using C#.  
   
  [Standard Query Operators Overview (Visual Basic)](../../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)  

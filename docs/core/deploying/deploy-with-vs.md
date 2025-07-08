@@ -114,11 +114,11 @@ To publish your app from Visual Studio, do the following:
 
    1. Create a `<RuntimeIdentifiers>` tag in the `<PropertyGroup>` section of your *csproj* file that defines the platforms your app targets, and specify the runtime identifier (RID) of each platform that you target. You also need to add a semicolon to separate the RIDs. See [Runtime identifier catalog](../rid-catalog.md) for a list of runtime identifiers.
 
-   For example, the following example indicates that the app runs on 64-bit Windows 10 operating systems and the 64-bit OS X Version 10.11 operating system.
+   For example, the following example indicates that the app runs on 64-bit Windows operating systems and the 64-bit OS X operating system.
 
    ```xml
    <PropertyGroup>
-      <RuntimeIdentifiers>win10-x64;osx.10.11-x64</RuntimeIdentifiers>
+      <RuntimeIdentifiers>win-x64;osx-x64</RuntimeIdentifiers>
    </PropertyGroup>
    ```
 
@@ -142,13 +142,13 @@ To publish your app from Visual Studio, do the following:
 
          1. Select **Create new profile** in the **Publish** dialog.
 
-         1. In the **Pick a publish target** dialog, change the **Choose a folder** location to *bin\Release\PublishOutput\win10-x64*. Select **OK**.
+         1. In the **Pick a publish target** dialog, change the **Choose a folder** location to *bin\Release\PublishOutput\win-x64*. Select **OK**.
 
-         1. Select the new profile (**FolderProfile1**) in the list of profiles, and make sure that the **Target Runtime** is `win10-x64`. If it isn't, select **Settings**. In the **Profile Settings** dialog, change the **Target Runtime** to `win10-x64` and select **Save**. Otherwise, select **Cancel**.
+         1. Select the new profile (**FolderProfile1**) in the list of profiles, and make sure that the **Target Runtime** is `win-x64`. If it isn't, select **Settings**. In the **Profile Settings** dialog, change the **Target Runtime** to `win-x64` and select **Save**. Otherwise, select **Cancel**.
 
          1. Select **Publish** to publish your app for 64-bit Windows 10 platforms.
 
-         1. Follow the previous steps again to create a profile for the `osx.10.11-x64` platform. The **Target Location** is *bin\Release\PublishOutput\osx.10.11-x64*, and the **Target Runtime** is `osx.10.11-x64`. The name that Visual Studio assigns to this profile is **FolderProfile2**.
+         1. Follow the previous steps again to create a profile for the `osx-x64` platform. The **Target Location** is *bin\Release\PublishOutput\osx-x64*, and the **Target Runtime** is `osx-x64`. The name that Visual Studio assigns to this profile is **FolderProfile2**.
 
       Each target location contains the complete set of files (both your app files and all .NET Core files) needed to launch your app.
 
@@ -163,7 +163,7 @@ The following is the complete *csproj* file for this project.
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.1</TargetFramework>
-    <RuntimeIdentifiers>win10-x64;osx.10.11-x64</RuntimeIdentifiers>
+    <RuntimeIdentifiers>win-x64;osx-x64</RuntimeIdentifiers>
   </PropertyGroup>
 </Project>
 ```
@@ -273,7 +273,7 @@ The following is the complete *csproj* file for this project:
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.1</TargetFramework>
-    <RuntimeIdentifiers>win10-x64;osx.10.11-x64</RuntimeIdentifiers>
+    <RuntimeIdentifiers>win-x64;osx-x64</RuntimeIdentifiers>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="10.0.2" />

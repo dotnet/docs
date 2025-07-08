@@ -3,10 +3,11 @@
   <PropertyGroup>
     <ImplicitUsings>enable</ImplicitUsings>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFramework>net9.0</TargetFramework>
     <Nullable>enable</Nullable>
-    <WarningLevel>7</WarningLevel>
+    <WarningLevel>9</WarningLevel>
     <AnalysisLevel>preview</AnalysisLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
 
   <ItemGroup>

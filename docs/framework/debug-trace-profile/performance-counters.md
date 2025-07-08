@@ -1,5 +1,5 @@
 ---
-title: "Performance Counters in the .NET Framework"
+title: "Performance Counters in .NET Framework"
 description: Read about performance counters in .NET. There are performance counters for exceptions, interop, JIT compilers, loading, memory, networking, security, and more.
 ms.date: "03/30/2017"
 ms.topic: reference
@@ -11,11 +11,13 @@ ms.assetid: 06a4ae8c-eeb2-4d5a-817e-b1b95c0653e1
 ---
 # Performance counters in .NET Framework
 
+[!INCLUDE [net-framework-specific](../includes/net-framework-specific.md)]
+
 This article provides a list of performance counters you can find in the [Windows Performance Monitor](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc749249(v=ws.11)).
 
 ## Exception performance counters
 
- The Performance console .NET CLR Exceptions category includes counters that provide information about the exceptions thrown by an application. The following table describes these performance counters.
+The  *.NET CLR Exceptions* category includes counters that provide information about the exceptions thrown by an application. The following table describes these performance counters.
 
 |Performance counter|Description|
 |-------------------------|-----------------|
@@ -27,7 +29,7 @@ This article provides a list of performance counters you can find in the [Window
 
 ## Interop performance counters
 
- The Performance console .NET CLR Interop category includes counters that provide information about an application's interaction with COM components, COM+ services, and external type libraries. The following table describes these performance counters.
+The *.NET CLR Interop* category includes counters that provide information about an application's interaction with COM components, COM+ services, and external type libraries. The following table describes these performance counters.
 
 |Performance counter|Description|
 |-------------------------|-----------------|
@@ -39,20 +41,20 @@ This article provides a list of performance counters you can find in the [Window
 
 ## JIT performance counters
 
- The Performance console .NET CLR JIT category includes counters that provide information about code that has been JIT-compiled. The following table describes these performance counters.
+The *.NET CLR JIT* category includes counters that provide information about code that has been JIT-compiled. The following table describes these performance counters.
 
 |Performance counter|Description|
 |-------------------------|-----------------|
-|**# of IL Bytes JITted**|Displays the total number of Microsoft intermediate language (MSIL) bytes compiled by the just-in-time (JIT) compiler since the application started. This counter is equivalent to the **Total # of IL Bytes Jitted** counter.|
+|**# of IL Bytes JITted**|Displays the total number of common intermediate language (CIL) bytes compiled by the just-in-time (JIT) compiler since the application started. This counter is equivalent to the **Total # of IL Bytes Jitted** counter.|
 |**# of Methods JITted**|Displays the total number of methods JIT-compiled since the application started. This counter does not include pre-JIT-compiled methods.|
 |**% Time in Jit**|Displays the percentage of elapsed time spent in JIT compilation since the last JIT compilation phase. This counter is updated at the end of every JIT compilation phase. A JIT compilation phase occurs when a method and its dependencies are compiled.|
-|**IL Bytes Jitted / sec**|Displays the number of MSIL bytes that are JIT-compiled per second. This counter is not an average over time; it displays the difference between the values observed in the last two samples divided by the duration of the sample interval.|
-|**Standard Jit Failures**|Displays the peak number of methods the JIT compiler has failed to compile since the application started. This failure can occur if the MSIL cannot be verified or if there is an internal error in the JIT compiler.|
-|**Total # of IL Bytes Jitted**|Displays the total MSIL bytes JIT-compiled since the application started. This counter is equivalent to the **# of IL Bytes Jitted** counter.|
+|**IL Bytes Jitted / sec**|Displays the number of CIL bytes that are JIT-compiled per second. This counter is not an average over time; it displays the difference between the values observed in the last two samples divided by the duration of the sample interval.|
+|**Standard Jit Failures**|Displays the peak number of methods the JIT compiler has failed to compile since the application started. This failure can occur if the CIL cannot be verified or if there is an internal error in the JIT compiler.|
+|**Total # of IL Bytes Jitted**|Displays the total CIL bytes JIT-compiled since the application started. This counter is equivalent to the **# of IL Bytes Jitted** counter.|
 
 ## Loading performance counters
 
- The Performance console .NET CLR Loading category includes counters that provide information about assemblies, classes, and application domains that are loaded. The following table describes these performance counters.
+The *.NET CLR Loading* category includes counters that provide information about assemblies, classes, and application domains that are loaded. The following table describes these performance counters.
 
 |Performance counter|Description|
 |-------------------------|-----------------|
@@ -75,7 +77,7 @@ This article provides a list of performance counters you can find in the [Window
 
 ## Lock and thread performance counters
 
- The Performance console .NET CLR LocksAndThreads category includes counters that provide information about managed locks and threads that an application uses. The following table describes these performance counters.
+The *.NET CLR LocksAndThreads* category includes counters that provide information about managed locks and threads that an application uses. The following table describes these performance counters.
 
 |Performance counter|Description|
 |-------------------------|-----------------|
@@ -92,7 +94,7 @@ This article provides a list of performance counters you can find in the [Window
 
 ## Memory performance counters
 
- The Performance console .NET CLR Memory category includes counters that provide information about the garbage collector. The following table describes these performance counters.
+The *.NET CLR Memory* category includes counters that provide information about the garbage collector. The following table describes these performance counters.
 
 |Performance counter|Description|
 |-------------------------|-----------------|
@@ -122,7 +124,7 @@ This article provides a list of performance counters you can find in the [Window
 
 ## Networking performance counters
 
-The Performance console .NET CLR Networking category includes counters that provide information about data that an application sends and receives over the network. The following table describes these performance counters.
+The *.NET CLR Networking* category includes counters that provide information about data that an application sends and receives over the network. The following table describes these performance counters.
 
 |Performance counter|Description|
 |-------------------------|-----------------|
@@ -141,19 +143,14 @@ The Performance console .NET CLR Networking category includes counters that prov
  There are several classes of networking performance counters supported:
 
 - Event counters that measure the number of times some event occurred.
-
 - Data counters that measure the quantity of data sent or received.
-
 - Duration counters that measure how long different processes take. The times are measured on the objects each interval (usually in seconds) after they come out of different states.
-
 - Per-Interval counters that measure the number of objects that are making a particular transition per interval (normally per second).
 
 The networking performance counters for events include the following:
 
 - **Connections Established**
-
 - **Datagrams Received**
-
 - **Datagrams Sent**
 
  These performance counters provide counts since the process started. The counts of <xref:System.Net.Sockets.Socket> connections established includes explicit <xref:System.Net.Sockets.Socket> method calls by an application for a stream socket connection that was established as well as internal calls made by other classes (<xref:System.Net.HttpWebRequest>, <xref:System.Net.FtpWebRequest>, <xref:System.Net.WebClient>, and <xref:System.Net.Sockets.TcpClient>, for example) to <xref:System.Net.Sockets.Socket> class
@@ -163,7 +160,6 @@ The networking performance counters for events include the following:
  The networking performance counters for data include the following:
 
 - **Bytes Received**
-
 - **Bytes Sent**
 
  The above counters provide counts of bytes since the process started.
@@ -171,7 +167,6 @@ The networking performance counters for events include the following:
  There are two duration counters that measure how long it took for <xref:System.Net.HttpWebRequest> objects to pass through either their entire life cycle or just part of it:
 
 - **HttpWebRequests Average Lifetime**
-
 - **HttpWebRequests Average Queue Time**
 
  For the **HttpWebRequests Average Lifetime** counter, the lifetime of most <xref:System.Net.HttpWebRequest> objects always starts with the time that the object is created up until the time that the response stream is closed by the application. There are two uncommon cases:
@@ -183,11 +178,8 @@ The networking performance counters for events include the following:
  There are four counters that track certain <xref:System.Net.HttpWebRequest> object issues per interval. These performance counters can help application developers, administrators, and support staff better understand what the <xref:System.Net.HttpWebRequest> objects are doing. The counters include the following:
 
 - **HttpWebRequests Created/sec**
-
 - **HttpWebRequests Queued/sec**
-
 - **HttpWebRequests Aborted/sec**
-
 - **HttpWebRequests Failed/sec**
 
  For the **HttpWebRequests Aborted/sec** counter, internal calls to <xref:System.Net.HttpWebRequest.Abort%2A> are also counted. These internal calls are usually caused by timeouts that an application may want to measure.
@@ -200,7 +192,7 @@ The networking performance counters for events include the following:
 
  If networking counters are enabled, this will create and update both per-AppDomain and global performance counters. If disabled, the application will not provide any networking performance counter data.
 
- Performance counters are grouped into Categories. An application can list all of the categories with the following example code:
+ Performance counters are grouped into categories. The following code lists all of the categories:
 
 ```csharp
 PerformanceCounterCategory[] Array = PerformanceCounterCategory.GetCategories();
@@ -220,7 +212,7 @@ for (int i = 0; i < Array.Length; i++)
 
 ## Security performance counters
 
- The Performance console .NET CLR Security category includes counters that provide information about the security checks that the common language runtime performs for an application. The following table describes these performance counters.
+The *.NET CLR Security* category includes counters that provide information about the security checks that the common language runtime performs for an application. The following table describes these performance counters.
 
 |Performance counter|Description|
 |-------------------------|-----------------|

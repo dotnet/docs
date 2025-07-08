@@ -1,1 +1,1 @@
-[.NET SDK](https://dotnet.microsoft.com/download) 7 or later
+[.NET SDK](https://dotnet.microsoft.com/download) 8 or later

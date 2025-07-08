@@ -21,7 +21,7 @@ Up to version 7.0 of F#, one had to use the following syntax
 
 ## Remarks
 
-In F#, there are two distinct kinds of type parameters. The first kind is the standard generic type parameter. They are equivalent to generic type parameters in other .Net languages. The other kind is statically resolved and can only be used in inlined functions.
+In F#, there are two distinct kinds of type parameters. The first kind is the standard generic type parameter. They are equivalent to generic type parameters in other .NET languages. The other kind is statically resolved and can only be used in inlined functions.
 
 Statically resolved type parameters are primarily useful in conjunction with member constraints, which are constraints that allow you to specify that a type argument must have a particular member or members in order to be used. There is no way to create this kind of constraint by using a regular generic type parameter.
 
@@ -33,7 +33,7 @@ The following table summarizes the similarities and differences between the two 
 |Member constraints|Cannot be used with member constraints.|Can be used with member constraints.|
 |Code generation|A type (or method) with standard generic type parameters results in the generation of a single generic type or method.|Multiple instantiations of types and methods are generated, one for each type that is needed.|
 |Use with types|Can be used on types.|Cannot be used on types.|
-|Use with inline functions|No. An inline function cannot be parameterized with a standard generic type parameter.|Yes. Statically resolved type parameters cannot be used on functions or methods that are not inline.|
+|Use with inline functions| An inline function cannot be parameterized with a standard generic type parameter. If the inputs aren't fully generic, the F# compiler specializes them or, if there are no options to specialize, gives an error.|Statically resolved type parameters cannot be used on functions or methods that are not inline.|
 
 Many F# core library functions, especially operators, have statically resolved type parameters. These functions and operators are inline, and result in efficient code generation for numeric computations.
 
@@ -73,7 +73,7 @@ let doubleR = double r
 
 Starting with F# 7.0, you can use `'a.Zero()` instead of having to repeat the constraint as in the example below.
 
-Starting with F# 4.1, you can also specify concrete type names in statically resolved type parameter signatures. In previous versions of the language, the type name was inferred by the compiler, but could not be specified in the signature. As of F# 4.1, you may also specify concrete type names in statically resolved type parameter signatures. Here's an example (please not that in this example, `^` must still be used because the simplification to use `'` is not supported):
+Starting with F# 4.1, you can also specify concrete type names in statically resolved type parameter signatures. In previous versions of the language, the type name was inferred by the compiler, but could not be specified in the signature. As of F# 4.1, you may also specify concrete type names in statically resolved type parameter signatures. Here's an example (please note that in this example, `^` must still be used because the simplification to use `'` is not supported):
 
 ```fsharp
 let inline konst x _ = x

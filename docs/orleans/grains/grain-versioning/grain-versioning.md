@@ -1,12 +1,13 @@
 ---
 title: Grain interface versioning
 description: Learn how to use grain interface versioning in .NET Orleans.
-ms.date: 03/16/2022
+ms.date: 05/23/2025
+ms.topic: conceptual
 ---
 
 # Grain interface versioning
 
-In this article, you'll learn how to use grain interface versioning. The versioning of Grain state is out of scope.
+In this article, you learn how to use grain interface versioning. The versioning of grain state is out of scope.
 
 ## Overview
 
@@ -18,12 +19,12 @@ In this example, the client and Silo{1,2,3} were compiled with grain interface `
 
 ## Limitations
 
-- No versioning on stateless worker
-- Streaming interfaces are not versioned
+- No versioning on stateless workers.
+- Streaming interfaces aren't versioned.
 
 ## Enable versioning
 
-If the version attribute is not explicitly added to the grain interface, then the grains have a default version of 0. You can version grain by using the VersionAttribute on the grain interface:
+If you don't explicitly add the version attribute to the grain interface, the grain has a default version of 0. You can version a grain by using the `VersionAttribute` on the grain interface:
 
 ```csharp
 [Version(X)]
@@ -38,17 +39,17 @@ Where `X` is the version number of the grain interface, which is typically monot
 
 When a call from a versioned grain arrives in a cluster:
 
-- If no activation exists, a compatible activation will be created
+- If no activation exists, Orleans creates a compatible activation.
 - If an activation exists:
-  - If the current one is not compatible, it will be deactivated and new compatible one will be created (see [version selector strategy](version-selector-strategy.md))
-  - If the current one is compatible (see [compatible grains](compatible-grains.md)), the call will be handled normally.
+  - If the current activation isn't compatible, Orleans deactivates it and creates a new compatible one (see [Version selector strategy](version-selector-strategy.md)).
+  - If the current activation is compatible (see [Compatible grains](compatible-grains.md)), Orleans handles the call normally.
 
 By default:
 
-- All versioned grains are supposed to be backward-compatible only (see [backward compatibility guidelines](backward-compatibility-guidelines.md) and [compatible grains](compatible-grains.md)). That means that a v1 grain can make calls to a v2 grain, but a v2 grain cannot call a v1.
-- When multiple versions exist in the cluster, the new activation will be randomly placed on a compatible silo.
+- All versioned grains are assumed to be backward-compatible only (see [Backward compatibility guidelines](backward-compatibility-guidelines.md) and [Compatible grains](compatible-grains.md)). This means a v1 grain can make calls to a v2 grain, but a v2 grain cannot call a v1 grain.
+- When multiple versions exist in the cluster, Orleans randomly places the new activation on a compatible silo.
 
-You can change this default behavior via the <xref:Orleans.Configuration.GrainVersioningOptions>:
+You can change this default behavior via <xref:Orleans.Configuration.GrainVersioningOptions>:
 
 ```csharp
 var silo = new HostBuilder()

@@ -1,8 +1,8 @@
 ---
-title: Explore static virtual members in interfaces
+title: Explore static virtual members in C# interfaces
 description: This advanced tutorial demonstrates scenarios for operators and other static members in interfaces.
 ms.date: 07/08/2022
-ms.technology: csharp-advanced-concepts
+ms.subservice: advanced-concepts
 ---
 # Tutorial: Explore C# 11 feature - static virtual members in interfaces
 
@@ -18,7 +18,7 @@ In this tutorial, you'll learn how to:
 
 ## Prerequisites
 
-You'll need to set up your machine to run .NET 7, which supports C# 11. The C# 11 compiler is available starting with [Visual Studio 2022, version 17.3](https://visualstudio.microsoft.com/downloads/) or the [.NET 7 SDK](https://dotnet.microsoft.com/download).
+[!INCLUDE [Prerequisites](../../../../includes/prerequisites-basic.md)]
 
 ## Static abstract interface methods
 
@@ -70,14 +70,7 @@ This small example demonstrates the motivation for this feature. You can use nat
 
 The motivating scenario for allowing static methods, including operators, in interfaces is to support [generic math](../../../standard/generics/math.md) algorithms. The .NET 7 base class library contains interface definitions for many arithmetic operators, and derived interfaces that combine many arithmetic operators in an `INumber<T>` interface. Let's apply those types to build a `Point<T>` record that can use any numeric type for `T`. The point can be moved by some `XOffset` and `YOffset` using the `+` operator.
 
-Start by creating a new Console application, either by using `dotnet new` or Visual Studio. Set the C# language version to "preview", which enables C# 11 preview features. Add the following element to your *csproj* file inside a `<PropertyGroup>` element:
-
-```xml
-<LangVersion>preview</LangVersion>
-```
-
-> [!NOTE]
-> This element cannot be set using the Visual Studio UI. You need to edit the project file directly.
+Start by creating a new Console application, either by using `dotnet new` or Visual Studio.
 
 The public interface for the `Translation<T>` and `Point<T>` should look like the following code:
 

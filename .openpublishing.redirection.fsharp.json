@@ -9,6 +9,10 @@
             "redirect_url": "/dotnet/fsharp/get-started/get-started-command-line"
         },
         {
+            "source_path_from_root": "/docs/fsharp/get-started/get-started-with-visual-studio-for-mac.md",
+            "redirect_url": "/dotnet/fsharp/get-started/get-started-vscode"
+        },
+        {
             "source_path_from_root": "/docs/fsharp/introduction-to-functional-programming/first-class-functions.md",
             "redirect_url": "/dotnet/fsharp/tutorials/using-functions"
         },
@@ -72,8 +76,7 @@
         },
         {
             "source_path_from_root": "/docs/fsharp/tutorials/getting-started/getting-started-visual-studio-for-mac.md",
-            "redirect_url": "/dotnet/fsharp/get-started/get-started-with-visual-studio-for-mac",
-            "redirect_document_id": true
+            "redirect_url": "/dotnet/fsharp/get-started/get-started-vscode"
         },
         {
             "source_path_from_root": "/docs/fsharp/tutorials/getting-started/getting-started-visual-studio.md",
@@ -148,7 +151,7 @@
         },
         {
             "source_path_from_root": "/docs/fsharp/whats-new/index.md",
-            "redirect_url": "/dotnet/fsharp/whats-new/fsharp-6",
+            "redirect_url": "/dotnet/fsharp/whats-new/fsharp-9",
             "ms.custom": "updateeachrelease"
         },
         {

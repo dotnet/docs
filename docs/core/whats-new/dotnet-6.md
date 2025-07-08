@@ -2,7 +2,7 @@
 title: What's new in .NET 6
 description: Learn about the new features introduced in .NET 6.
 ms.date: 11/08/2021
-ms.topic: overview
+ms.topic: whats-new
 ms.author: gewarren
 author: gewarren
 ---
@@ -10,7 +10,7 @@ author: gewarren
 
 .NET 6 delivers the final parts of the .NET unification plan that started with [.NET 5](dotnet-5.md). .NET 6 unifies the SDK, base libraries, and runtime across mobile, desktop, IoT, and cloud apps. In addition to this unification, the .NET 6 ecosystem offers:
 
-- **Simplified development**: Getting started is easy. New language features in [C# 10](../../csharp/whats-new/csharp-10.md) reduce the amount of code you need to write. And investments in the web stack and minimal APIs make it easy to quickly write smaller, faster microservices.
+- **Simplified development**: Getting started is easy. New language features in [C# 10](../../csharp/whats-new/csharp-version-history.md#c-version-10) reduce the amount of code you need to write. And investments in the web stack and minimal APIs make it easy to quickly write smaller, faster microservices.
 
 - **Better performance**: .NET 6 is the fastest full stack web framework, which lowers compute costs if you're running in the cloud.
 
@@ -20,7 +20,7 @@ author: gewarren
 
 *Preview* features are disabled by default. They are also not supported for use in production and may be removed in a future version. The new <xref:System.Runtime.Versioning.RequiresPreviewFeaturesAttribute> is used to annotate preview APIs, and a corresponding analyzer alerts you if you're using these preview APIs.
 
-.NET 6 is supported by Visual Studio 2022 and Visual Studio 2022 for Mac (and later versions).
+.NET 6 is supported by Visual Studio 2022 and later versions.
 
 This article does not cover all of the new features of .NET 6. To see all of the new features, and for further information about the features listed in this article, see the [Announcing .NET 6](https://devblogs.microsoft.com/dotnet/announcing-net-6) blog post.
 
@@ -54,7 +54,7 @@ The .NET 6 release includes support for macOS Arm64 (or "Apple Silicon") and Win
 
 ## C# 10 and templates
 
-C# 10 includes innovations such as `global using` directives, file-scoped namespace declarations, and record structs. For more information, see [What's new in C# 10](../../csharp/whats-new/csharp-10.md).
+C# 10 includes innovations such as `global using` directives, file-scoped namespace declarations, and record structs. For more information, see [C# Language version history](../../csharp/whats-new/csharp-version-history.md#c-version-10).
 
 In concert with that work, the .NET SDK project templates for C# have been modernized to use some of the new language features:
 
@@ -94,7 +94,7 @@ Many improvements have been made in <xref:System.Text.Json?displayProperty=fullN
 
 ### Source generator
 
-.NET 6 adds a new [source generator](../../csharp/roslyn-sdk/source-generators-overview.md) for <xref:System.Text.Json?displayProperty=fullName>. Source generation works with <xref:System.Text.Json.JsonSerializer> and can be configured in multiple ways. It can improve performance, reduce memory usage, and facilitate assembly trimming. For more information, see [How to choose reflection or source generation in System.Text.Json](../../standard/serialization/system-text-json/source-generation-modes.md) and [How to use source generation in System.Text.Json](../../standard/serialization/system-text-json/source-generation.md).
+.NET 6 adds a new [source generator](../../csharp/roslyn-sdk/index.md#source-generators) for <xref:System.Text.Json?displayProperty=fullName>. Source generation works with <xref:System.Text.Json.JsonSerializer> and can be configured in multiple ways. It can improve performance, reduce memory usage, and facilitate assembly trimming. For more information, see [How to choose reflection or source generation in System.Text.Json](../../standard/serialization/system-text-json/source-generation-modes.md) and [How to use source generation in System.Text.Json](../../standard/serialization/system-text-json/source-generation.md).
 
 ### Writeable DOM
 
@@ -215,7 +215,7 @@ In *preview* is the ability to use operators on generic types in .NET 6. .NET 6 
 
 ## NuGet package validation
 
-If you're a NuGet library developer, new [package-validation tooling](../../fundamentals/package-validation/overview.md) enables you to validate that your packages are consistent and well-formed. You can determine if:
+If you're a NuGet library developer, new [package-validation tooling](../../fundamentals/apicompat/package-validation/overview.md) enables you to validate that your packages are consistent and well-formed. You can determine if:
 
 - There are any breaking changes across package versions.
 - The package has the same set of public APIs for all runtime-specific implementations.
@@ -273,7 +273,6 @@ The new <xref:System.Collections.Generic.PriorityQueue%602> class represents a c
 
 ## See also
 
-- [What's new in C# 10](../../csharp/whats-new/csharp-10.md)
 - [What's new in F# 6](../../fsharp/whats-new/fsharp-6.md)
 - [What's new in EF Core 6](/ef/core/what-is-new/ef-core-6.0/whatsnew)
 - [What's new in ASP.NET Core 6](/aspnet/core/release-notes/aspnetcore-6.0)

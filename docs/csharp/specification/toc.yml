@@ -1,0 +1,255 @@
+items:
+- name: C# specifications
+  href: index.yml
+- name: C# 8 draft specification
+  items:
+  - name: Overview
+    href: overview.md
+    displayName: C# standard, C# specification
+  - name: Detailed table of contents
+    href: ../../../_csharpstandard/standard/README.md
+  - name: Foreword
+    href: ../../../_csharpstandard/standard/foreword.md
+  - name: Introduction
+    href: ../../../_csharpstandard/standard/introduction.md
+  - name: Scope
+    href: ../../../_csharpstandard/standard/scope.md
+  - name: Normative references
+    href: ../../../_csharpstandard/standard/normative-references.md
+  - name: Terms and definitions
+    href: ../../../_csharpstandard/standard/terms-and-definitions.md
+  - name: General description
+    href: ../../../_csharpstandard/standard/general-description.md
+  - name: Conformance
+    href: ../../../_csharpstandard/standard/conformance.md
+  - name: Lexical structure
+    href: ../../../_csharpstandard/standard/lexical-structure.md
+  - name: Basic concepts
+    href: ../../../_csharpstandard/standard/basic-concepts.md
+  - name: Types
+    href: ../../../_csharpstandard/standard/types.md
+  - name: Variables
+    href: ../../../_csharpstandard/standard/variables.md
+  - name: Conversions
+    href: ../../../_csharpstandard/standard/conversions.md
+  - name: Patterns
+    href: ../../../_csharpstandard/standard/patterns.md
+  - name: Expressions
+    href: ../../../_csharpstandard/standard/expressions.md
+  - name: Statements
+    href: ../../../_csharpstandard/standard/statements.md
+  - name: Namespaces
+    href: ../../../_csharpstandard/standard/namespaces.md
+  - name: Classes
+    href: ../../../_csharpstandard/standard/classes.md
+  - name: Structs
+    href: ../../../_csharpstandard/standard/structs.md
+  - name: Arrays
+    href: ../../../_csharpstandard/standard/arrays.md
+  - name: Interfaces
+    href: ../../../_csharpstandard/standard/interfaces.md
+  - name: Enums
+    href: ../../../_csharpstandard/standard/enums.md
+  - name: Delegates
+    href: ../../../_csharpstandard/standard/delegates.md
+  - name: Exceptions
+    href: ../../../_csharpstandard/standard/exceptions.md
+  - name: Attributes
+    href: ../../../_csharpstandard/standard/attributes.md
+  - name: Unsafe code
+    href: ../../../_csharpstandard/standard/unsafe-code.md
+  - name: Grammar
+    href: ../../../_csharpstandard/standard/grammar.md
+  - name: Portability issues
+    href: ../../../_csharpstandard/standard/portability-issues.md
+  - name: Standard library
+    href: ../../../_csharpstandard/standard/standard-library.md
+  - name: Documentation comments
+    href: ../../../_csharpstandard/standard/documentation-comments.md
+  - name: Bibliography
+    href: ../../../_csharpstandard/standard/bibliography.md
+- name: Feature specifications
+  items:
+  - name: Overview
+    href: feature-spec-overview.md
+    displayName: feature specifications
+  - name: Lexical structure
+    items:
+    - name: "Enhanced #line directives"
+      href: ../../../_csharplang/proposals/csharp-10.0/enhanced-line-directives.md
+    - name: "Escape sequence '\\e'"
+      href: ../../../_csharplang/proposals/csharp-13.0/esc-escape-sequence.md
+    - name: "Ignored directives"
+      href: ../../../_csharplang/proposals/ignored-directives.md
+  - name: Basic concepts
+    items:
+    - name: Top-level statements
+      href: ../../../_csharplang/proposals/csharp-9.0/top-level-statements.md
+    - name: Module initializers
+      href: ../../../_csharplang/proposals/csharp-9.0/module-initializers.md
+  - name: Types
+    items:
+    - name: Records
+      href: ../../../_csharplang/proposals/csharp-9.0/records.md
+    - name: Record structs
+      href: ../../../_csharplang/proposals/csharp-10.0/record-structs.md
+    - name: File local types
+      href: ../../../_csharplang/proposals/csharp-11.0/file-local-types.md
+    - name: Unconstrained type parameter annotations
+      href: ../../../_csharplang/proposals/csharp-9.0/unconstrained-type-parameter-annotations.md
+    - name: Improved interpolated strings
+      href: ../../../_csharplang/proposals/csharp-10.0/improved-interpolated-strings.md
+    - name: Constant interpolated strings
+      href: ../../../_csharplang/proposals/csharp-10.0/constant_interpolated_strings.md
+    - name: Raw string literals
+      href: ../../../_csharplang/proposals/csharp-11.0/raw-string-literal.md
+    - name: Interpolated string newline
+      href: ../../../_csharplang/proposals/csharp-11.0/new-line-in-interpolation.md
+    - name: UTF-8 string literals
+      href: ../../../_csharplang/proposals/csharp-11.0/utf8-string-literals.md
+    - name: Native sized integers
+      href: ../../../_csharplang/proposals/csharp-9.0/native-integers.md
+    - name: Numeric IntPtr
+      href: ../../../_csharplang/proposals/csharp-11.0/numeric-intptr.md
+  - name: Variables
+    items:
+    - name: Improved definite assignment analysis
+      href: ../../../_csharplang/proposals/csharp-10.0/improved-definite-assignment.md
+    - name: Ref readonly parameters
+      href: ../../../_csharplang/proposals/csharp-12.0/ref-readonly-parameters.md
+  - name: Conversions
+    items:
+    - name: First class span types
+      href: ../../../_csharplang/proposals/first-class-span-types.md
+  - name: Patterns
+    items:
+    - name: Recursive pattern matching
+      href: ../../../_csharplang/proposals/csharp-8.0/patterns.md
+    - name: Pattern matching enhancements
+      href: ../../../_csharplang/proposals/csharp-9.0/patterns3.md
+    - name: Extended property patterns
+      href: ../../../_csharplang/proposals/csharp-10.0/extended-property-patterns.md
+    - name: Pattern match span
+      href: ../../../_csharplang/proposals/csharp-11.0/pattern-match-span-of-char-on-string.md
+    - name: List patterns
+      href: ../../../_csharplang/proposals/csharp-11.0/list-patterns.md
+  - name: Expressions
+    items:
+    - name: Ranges
+      href: ../../../_csharplang/proposals/csharp-8.0/ranges.md
+    - name: Target-typed new expressions
+      href: ../../../_csharplang/proposals/csharp-9.0/target-typed-new.md
+    - name: Target-typed conditional expression
+      href: ../../../_csharplang/proposals/csharp-9.0/target-typed-conditional-expression.md
+    - name: Extension GetEnumerator in foreach loops
+      href: ../../../_csharplang/proposals/csharp-9.0/extension-getenumerator.md
+    - name: Collection expressions
+      href: ../../../_csharplang/proposals/csharp-12.0/collection-expressions.md
+    - name: Better conversion from collection expression
+      href: ../../../_csharplang/proposals/csharp-13.0/collection-expressions-better-conversion.md
+    - name: Lambda discard parameters
+      href: ../../../_csharplang/proposals/csharp-9.0/lambda-discard-parameters.md
+    - name: Static anonymous functions
+      href: ../../../_csharplang/proposals/csharp-9.0/static-anonymous-functions.md
+    - name: Function pointers
+      href: ../../../_csharplang/proposals/csharp-9.0/function-pointers.md
+    - name: Lambda improvements
+      href: ../../../_csharplang/proposals/csharp-10.0/lambda-improvements.md
+    - name: Method group natural type conversion
+      href: ../../../_csharplang/proposals/csharp-13.0/method-group-natural-type-improvements.md
+    - name: Optional Lambda expression parameters
+      href: ../../../_csharplang/proposals/csharp-12.0/lambda-method-group-defaults.md
+    - name: Simple lambda parameters with modifiers
+      href: ../../../_csharplang/proposals/simple-lambda-parameters-with-modifiers.md
+    - name: Checked user-defined operators
+      href: ../../../_csharplang/proposals/csharp-11.0/checked-user-defined-operators.md
+    - name: Unsigned right-shift operator
+      href: ../../../_csharplang/proposals/csharp-11.0/unsigned-right-shift-operator.md
+    - name: Relaxing shift operator
+      href: ../../../_csharplang/proposals/csharp-11.0/relaxing_shift_operator_requirements.md
+    - name: Caller argument expression
+      href: ../../../_csharplang/proposals/csharp-10.0/caller-argument-expression.md
+    - name: Extended nameof scope
+      href: ../../../_csharplang/proposals/csharp-11.0/extended-nameof-scope.md
+    - name: Unbound generic types in nameof
+      href: ../../../_csharplang/proposals/unbound-generic-types-in-nameof.md
+    - name: Overload resolution priority
+      href: ../../../_csharplang/proposals/csharp-13.0/overload-resolution-priority.md
+    - name: Null conditional assignment
+      href: ../../../_csharplang/proposals/null-conditional-assignment.md
+    - name: User defined compound assignment operators
+      href: ../../../_csharplang/proposals/user-defined-compound-assignment.md
+  - name: Statements
+    items:
+    - name: Global using directive
+      href: ../../../_csharplang/proposals/csharp-10.0/GlobalUsingDirective.md
+    - name: Alias any type
+      href: ../../../_csharplang/proposals/csharp-12.0/using-alias-types.md
+    - name: Attributes on local functions
+      href: ../../../_csharplang/proposals/csharp-9.0/local-function-attributes.md
+    - name: Pattern based using and using declarations
+      href: ../../../_csharplang/proposals/csharp-8.0/using.md
+    - name: Lock object semantics
+      href: ../../../_csharplang/proposals/csharp-13.0/lock-object.md
+    - name: Allow `ref` and `unsafe`
+      href: ../../../_csharplang/proposals/csharp-13.0/ref-unsafe-in-iterators-async.md 
+  - name: Namespaces
+    items:
+    - name: File scoped namespaces
+      href: ../../../_csharplang/proposals/csharp-10.0/file-scoped-namespaces.md
+  - name: Classes
+    items: 
+    - name: Extending partial methods
+      href: ../../../_csharplang/proposals/csharp-9.0/extending-partial-methods.md
+    - name: Partial properties
+      href: ../../../_csharplang/proposals/csharp-13.0/partial-properties.md
+    - name: Partial events and constructors
+      href: ../../../_csharplang/proposals/partial-events-and-constructors.md
+    - name: Field backed properties
+      href: ../../../_csharplang/proposals/field-keyword.md
+    - name: Covariant return types
+      href: ../../../_csharplang/proposals/csharp-9.0/covariant-returns.md
+    - name: Primary constructors
+      href: ../../../_csharplang/proposals/csharp-12.0/primary-constructors.md
+    - name: Init only setters
+      href: ../../../_csharplang/proposals/csharp-9.0/init.md
+    - name: Required members
+      href: ../../../_csharplang/proposals/csharp-11.0/required-members.md
+    - name: AsyncMethodBuilder override
+      href: ../../../_csharplang/proposals/csharp-10.0/async-method-builders.md
+    - name: Params collections
+      href: ../../../_csharplang/proposals/csharp-13.0/params-collections.md
+    - name: Extension members
+      href: ../../../_csharplang/proposals/extensions.md
+  - name: Structs
+    items:
+    - name: Parameterless struct constructors
+      href: ../../../_csharplang/proposals/csharp-10.0/parameterless-struct-constructors.md
+    - name: Auto-default struct
+      href: ../../../_csharplang/proposals/csharp-11.0/auto-default-structs.md
+    - name: Low-level struct improvements
+      href: ../../../_csharplang/proposals/csharp-11.0/low-level-struct-improvements.md
+    - name: Inline arrays
+      href: ../../../_csharplang/proposals/csharp-12.0/inline-arrays.md
+  - name: Interfaces
+    items:
+    - name: Default interface methods
+      href: ../../../_csharplang/proposals/csharp-8.0/default-interface-methods.md
+    - name: Variance safety for static interface members
+      href: ../../../_csharplang/proposals/csharp-9.0/variance-safety-for-static-interface-members.md
+    - name: Static abstracts in interfaces
+      href: ../../../_csharplang/proposals/csharp-11.0/static-abstracts-in-interfaces.md
+    - name: Allow ref struct interfaces
+      href: ../../../_csharplang/proposals/csharp-13.0/ref-struct-interfaces.md
+  - name: Attributes
+    items:
+    - name: Generic attributes
+      href: ../../../_csharplang/proposals/csharp-11.0/generic-attributes.md
+    - name: Experimental attribute
+      href: ../../../_csharplang/proposals/csharp-12.0/experimental-attribute.md
+- name: Other C# documentation
+  items:
+  - name: C# conceptual docs
+    href: ../tour-of-csharp/index.yml
+  - name: C# language reference
+    href: ../language-reference/index.yml

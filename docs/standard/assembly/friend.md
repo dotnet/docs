@@ -9,7 +9,7 @@ dev_langs:
 ---
 # Friend assemblies
 
-A *friend assembly* is an assembly that can access another assembly's [internal](../../csharp/language-reference/keywords/internal.md) (C#) or [Friend](../../visual-basic/language-reference/modifiers/friend.md) (Visual Basic) types and members. If you identify an assembly as a friend assembly, you no longer have to mark types and members as public in order for them to be accessed by other assemblies. This is especially convenient in the following scenarios:
+A *friend assembly* is an assembly that can access another assembly's [internal](../../csharp/language-reference/keywords/internal.md) (C#) or [Friend](../../visual-basic/language-reference/modifiers/friend.md) (Visual Basic) types and members. If you add an assembly attribute to *AssemblyA* to identify *AssemblyB* as a friend assembly, you no longer have to mark types and members in *AssemblyA* as public in order for them to be accessed by *AssemblyB*. This is especially convenient in the following scenarios:
 
 - During unit testing, when test code runs in a separate assembly but requires access to members in the assembly being tested that are marked as `internal` in C# or `Friend` in Visual Basic.
 
@@ -17,10 +17,10 @@ A *friend assembly* is an assembly that can access another assembly's [internal]
 
 ## Remarks
 
-You can use the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute to identify one or more friend assemblies for a given assembly. The following example uses the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute in *Assembly A* and specifies assembly *AssemblyB* as a friend assembly. This gives assembly *AssemblyB* access to all types and members in *Assembly A* that are marked as `internal` in C# or `Friend` in Visual Basic.
+You can use the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute to identify one or more friend assemblies for a given assembly. The following example uses the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute in *AssemblyA* and specifies assembly *AssemblyB* as a friend assembly. This gives assembly *AssemblyB* access to all types and members in *Assembly A* that are marked as `internal` in C# or `Friend` in Visual Basic.
 
 > [!NOTE]
-> When you compile an assembly like *AssemblyB* that will access internal types or internal members of another assembly like *Assembly A*, you must explicitly specify the name of the output file (*.exe* or *.dll*) by using the **-out** compiler option. This is required because the compiler has not yet generated the name for the assembly it is building at the time it is binding to external references. For more information, see [**OutputAssembly** (C#)](../../csharp/language-reference/compiler-options/output.md#outputassembly) or [-out (Visual Basic)](../../visual-basic/reference/command-line-compiler/out.md).
+> When you compile an assembly like *AssemblyB* that will access internal types or internal members of another assembly like *AssemblyA*, you must explicitly specify the name of the output file (*.exe* or *.dll*) by using the **-out** compiler option. This is required because the compiler has not yet generated the name for the assembly it is building at the time it is binding to external references. For more information, see [**OutputAssembly** (C#)](../../csharp/language-reference/compiler-options/output.md#outputassembly) or [-out (Visual Basic)](../../visual-basic/reference/command-line-compiler/out.md).
 
 ```csharp
 using System.Runtime.CompilerServices;
@@ -96,5 +96,5 @@ For information about how to access an assembly's `internal` (C#) or `Friend` (V
 - [How to: Create unsigned friend assemblies](create-unsigned-friend.md)
 - [How to: Create signed friend assemblies](create-signed-friend.md)
 - [Assemblies in .NET](index.md)
-- [C# programming guide](../../csharp/programming-guide/index.md)
+- [C# programming guide](../../csharp/programming-guide/concepts/index.md)
 - [Programming concepts (Visual Basic)](../../visual-basic/programming-guide/concepts/index.md)

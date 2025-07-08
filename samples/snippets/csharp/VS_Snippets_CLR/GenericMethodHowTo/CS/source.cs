@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 using System;
 using System.Collections.Generic;
 using System.Reflection;
@@ -51,7 +51,7 @@ class GenericMethodBuilder
         string[] arr = {"a", "b", "c", "d", "e"};
         List<string> list1 =
             GenericMethodBuilder.Factory<string, List <string>>(arr);
-        Console.WriteLine("The first element is: {0}", list1[0]);
+        Console.WriteLine($"The first element is: {list1[0]}");
         //</Snippet17>
 
         // Creating a dynamic assembly requires an AssemblyName
@@ -288,7 +288,7 @@ class GenericMethodBuilder
         object o = bound.Invoke(null, new object[]{arr});
         List<string> list2 = (List<string>) o;
 
-        Console.WriteLine("The first element is: {0}", list2[0]);
+        Console.WriteLine($"The first element is: {list2[0]}");
         //</Snippet22>
 
         // You can get better performance from multiple calls if
@@ -303,7 +303,7 @@ class GenericMethodBuilder
             Delegate.CreateDelegate(dType, bound);
 
         List<string> list3 = test(arr);
-        Console.WriteLine("The first element is: {0}", list3[0]);
+        Console.WriteLine($"The first element is: {list3[0]}");
         //</Snippet23>
     }
 }

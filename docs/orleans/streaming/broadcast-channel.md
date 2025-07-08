@@ -1,12 +1,18 @@
 ---
 title: Broadcast channels
 description: Learn how to work with Orleans broadcast channels.
-ms.date: 01/02/2023
+ms.date: 07/03/2024
 ---
 
 # Broadcast channels in Orleans
 
 Broadcast channels are a special type of broadcasting mechanism that can be used to send messages to all subscribers. Unlike [streaming providers](stream-providers.md), broadcast channels are not persistent and don't store messages, and they're not a replacement for persistent streams. With broadcast channels, grains are implicitly subscribed to the broadcast channel and receive broadcast messages from a producer. This decouples the sender and receiver of the message, which is useful for scenarios where the sender and receiver are not known in advance.
+
+To use broadcast channel you should configure Orleans Streams and then enable broadcast on your channel using the [`AddBroadcastChannel`](/dotnet/api/orleans.hosting.channelhostingextensions.addbroadcastchannel) during silo configuration.
+
+```csharp
+siloBuilder.AddBroadcastChannel(OrleansBroadcastChannelNames.ReadmodelChanges);
+```
 
 ## Example scenario
 

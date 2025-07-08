@@ -2,52 +2,52 @@
 description: "Learn more about: ICorDebugILFrame::GetLocalVariable Method"
 title: "ICorDebugILFrame::GetLocalVariable Method"
 ms.date: "03/30/2017"
-api_name: 
+api_name:
   - "ICorDebugILFrame.GetLocalVariable"
-api_location: 
+api_location:
   - "mscordbi.dll"
-api_type: 
+api_type:
   - "COM"
-f1_keywords: 
+f1_keywords:
   - "ICorDebugILFrame::GetLocalVariable"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "ICorDebugILFrame::GetLocalVariable method [.NET Framework debugging]"
   - "GetLocalVariable method [.NET Framework debugging]"
 ms.assetid: c8706356-d50b-4f87-a40c-39c3b7f4fd38
-topic_type: 
+topic_type:
   - "apiref"
 ---
 # ICorDebugILFrame::GetLocalVariable Method
 
-Gets the value of the specified local variable in this Microsoft intermediate language (MSIL) stack frame.  
-  
-## Syntax  
-  
-```cpp  
-HRESULT GetLocalVariable (  
-    [in] DWORD                  dwIndex,  
-    [out] ICorDebugValue        **ppValue  
-);  
-```  
-  
-## Parameters  
+Gets the value of the specified local variable in this common intermediate language (CIL) stack frame.
 
- `dwIndex`  
- [in] The index of the local variable in this MSIL stack frame.  
-  
- `ppValue`  
- [out] A pointer to the address of an ICorDebugValue object that represents the retrieved value.  
-  
-## Remarks  
+## Syntax
 
- The `GetLocalVariable` method can be used either in an MSIL stack frame or in a just-in-time (JIT) compiled frame.  
-  
-## Requirements  
+```cpp
+HRESULT GetLocalVariable (
+    [in] DWORD                  dwIndex,
+    [out] ICorDebugValue        **ppValue
+);
+```
 
- **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
-  
- **Header:** CorDebug.idl, CorDebug.h  
-  
- **Library:** CorGuids.lib  
-  
+## Parameters
+
+ `dwIndex`
+ [in] The index of the local variable in this CIL stack frame.
+
+ `ppValue`
+ [out] A pointer to the address of an ICorDebugValue object that represents the retrieved value.
+
+## Remarks
+
+ The `GetLocalVariable` method can be used either in an CIL stack frame or in a just-in-time (JIT) compiled frame.
+
+## Requirements
+
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).
+
+ **Header:** CorDebug.idl, CorDebug.h
+
+ **Library:** CorGuids.lib
+
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

@@ -91,7 +91,7 @@ The preceding C# code:
 - Calls `Execute` given the `DirectoryInfoWrapper` instance to yield a <xref:Microsoft.Extensions.FileSystemGlobbing.PatternMatchingResult> object.
 
 > [!NOTE]
-> The `DirectoryInfoWrapper` type is defined in the `Microsoft.Extensions.FileSystemGlobbing.Abstractions` namespace, and the `DirectoryInfo` type is defined in the `System.IO` namespace. To avoid unnecessary `using` statements, you can use the provided extension methods.
+> The `DirectoryInfoWrapper` type is defined in the `Microsoft.Extensions.FileSystemGlobbing.Abstractions` namespace, and the `DirectoryInfo` type is defined in the `System.IO` namespace. To avoid unnecessary `using` directives, you can use the provided extension methods.
 
 There is another extension method that yields an `IEnumerable<string>` representing the matching files:
 
@@ -141,12 +141,43 @@ The preceding C# code:
 
 The additional `Match` overloads work in similar ways.
 
+### Ordered evaluation of include/exclude
+
+By default, the matcher evaluates **all** include patterns first, then applies **all** exclude patterns, regardless of the order in which you added them. This means you can't re-include files that were previously excluded.
+
+Starting in version 10 of the [📦 Microsoft.Extensions.FileSystemGlobbing package](https://www.nuget.org/packages/Microsoft.Extensions.FileSystemGlobbing), you can opt into *ordered* evaluation, where includes and excludes are processed exactly in the sequence they were added:
+
+```csharp
+using Microsoft.Extensions.FileSystemGlobbing;
+
+// Preserve the order of patterns when matching.
+Matcher matcher = new(preserveFilterOrder: true);
+
+matcher.AddInclude("**/*");                // include everything
+matcher.AddExclude("logs/**/*");           // exclude logs
+matcher.AddInclude("logs/important/**/*"); // re-include important logs
+
+var result = matcher.Execute(new DirectoryInfoWrapper(new DirectoryInfo(root)));
+foreach (var file in result.Files)
+{
+    Console.WriteLine(file.Path);
+}
+```
+
+In this mode, patterns are applied one after another:  
+
+- `**/*` adds all files.
+- `logs/**/*` filters out anything in `logs/`.
+- `logs/important/**/*` adds back only files under `logs/important/`.
+
+Existing code that uses the default constructor will continue to run with the original "all includes, then all excludes" behavior.
+
 ## Pattern formats
 
 The patterns that are specified in the `AddExclude` and `AddInclude` methods can use the following formats to match multiple files or directories.
 
 - Exact directory or file name
-  
+
   - `some-file.txt`
   - `path/to/file.txt`
 

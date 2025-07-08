@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Runtime.Serialization;
-
+#pragma warning disable SYSLIB0051
 namespace ca1064
 {
     //<snippet1>
@@ -82,3 +82,4 @@ namespace ca1064
     }
     //</snippet1>
 }
+#pragma warning restore SYSLIB0051

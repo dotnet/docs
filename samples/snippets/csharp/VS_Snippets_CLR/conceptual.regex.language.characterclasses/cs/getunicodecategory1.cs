@@ -1,4 +1,4 @@
-﻿// <Snippet14>
+// <Snippet14>
 using System;
 using System.Text.RegularExpressions;
 
@@ -9,8 +9,7 @@ public class Example
       char[] chars = { 'a', 'X', '8', ',', ' ', '\u0009', '!' };
 
       foreach (char ch in chars)
-         Console.WriteLine("'{0}': {1}", Regex.Escape(ch.ToString()),
-                           Char.GetUnicodeCategory(ch));
+         Console.WriteLine($"'{Regex.Escape(ch.ToString())}': {Char.GetUnicodeCategory(ch)}");
    }
 }
 // The example displays the following output:

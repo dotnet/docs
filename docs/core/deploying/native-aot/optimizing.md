@@ -7,7 +7,7 @@ ms.date: 04/21/2023
 ---
 # Optimize AOT deployments
 
-The native AOT publishing process generates a self-contained executable with a subset of the runtime libraries that are tailored specifically for your app. The compilation generally relies on static analysis of the application to generate the best possible output. However, the term "best possible" can have many meanings. Sometimes, you can improve the output of the compilation by providing hints to the publish process.
+The Native AOT publishing process generates a self-contained executable with a subset of the runtime libraries that are tailored specifically for your app. The compilation generally relies on static analysis of the application to generate the best possible output. However, the term "best possible" can have many meanings. Sometimes, you can improve the output of the compilation by providing hints to the publish process.
 
 ## Optimize for size or speed
 
@@ -29,4 +29,4 @@ Setting `OptimizationPreference` to `Speed` instructs the publishing process to 
 
 ## Further size optimization options
 
-Since native AOT deployments imply the use of trimming, it's possible to further improve the size of the application by specifying more [trimming options](../trimming/trimming-options.md). For example, the [Trimming framework library features section](../trimming/trimming-options.md#trimming-framework-library-features) discusses how to disable library features such as globalization.
+Since Native AOT deployments imply the use of trimming, it's possible to further improve the size of the application by specifying more [trimming options](../trimming/trimming-options.md). For example, the [Trim framework library features section](../trimming/trimming-options.md#trim-framework-library-features) discusses how to disable library features such as globalization.

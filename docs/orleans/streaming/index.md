@@ -1,7 +1,7 @@
 ---
 title: Streaming with Orleans
 description: Learn how to work with streaming in .NET Orleans.
-ms.date: 05/04/2023
+ms.date: 07/03/2024
 zone_pivot_groups: orleans-version
 ---
 
@@ -75,9 +75,9 @@ Orleans provides several stream provider implementations:
 
 Orleans currently includes several provider implementations:
 
-* **Simple Message** (SMS), which uses direct grain calls and no backing storage system,
-* **Azure Queues**, which uses Azure Storage Queues to store messages, and
-* **Azure EventHubs**, which uses Azure EventHubs
+- **Simple Message** (SMS), which uses direct grain calls and no backing storage system,
+- **Azure Queues**, which uses Azure Storage Queues to store messages, and
+- **Azure EventHubs**, which uses Azure EventHubs
 
 <!-- markdownlint-enable MD044 -->
 :::zone-end
@@ -104,7 +104,7 @@ The [Orleans Streams Implementation](../implementation/streams-implementation/in
 
 ## Code samples
 
-More examples of how to use streaming APIs within a grain can be found [here](https://github.com/dotnet/orleans/blob/main/test/Grains/TestGrains/SampleStreamingGrain.cs). We plan to create more samples in the future.
+You can find more examples of how to use streaming APIs within a grain at [SampleStreamingGrain.cs](https://github.com/dotnet/orleans/blob/main/test/Grains/TestGrains/SampleStreamingGrain.cs).
 
 ## See also
 

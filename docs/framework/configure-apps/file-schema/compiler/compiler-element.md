@@ -44,7 +44,7 @@ The following sections describe attributes, child elements, and parent elements.
 |`compilerOptions`|Optional attribute.<br /><br /> Specifies additional compiler-specific arguments for compilation. The values for the `compilerOptions` attribute are typically listed in a compiler options topic for the compiler.|
 |`extension`|Required attribute.<br /><br /> Provides a semicolon-separated list of file name extensions used by source files for the language provider. For example, ".cs".|
 |`language`|Required attribute.<br /><br /> Provides a semicolon-separated list of language names supported by the language provider. For example, "c#;cs;csharp".|
-|`type`|Required attribute.<br /><br /> Specifies the type name of the language provider, including the name of the assembly containing the provider implementation. The type name must meet the requirements defined in [Specifying Fully Qualified Type Names](../../../reflection-and-codedom/specifying-fully-qualified-type-names.md).|
+|`type`|Required attribute.<br /><br /> Specifies the type name of the language provider, including the name of the assembly containing the provider implementation. The type name must meet the requirements defined in [Specifying Fully Qualified Type Names](../../../../fundamentals/reflection/specifying-fully-qualified-type-names.md).|
 |`warningLevel`|Optional attribute.<br /><br /> Specifies the default compiler warning level; determines the level at which the language provider treats compilation warnings as errors.|
 
 ### Child Elements
@@ -101,5 +101,5 @@ The following example illustrates a typical compiler configuration element:
 - <xref:System.CodeDom.Compiler.CodeDomProvider>
 - [Configuration File Schema](../index.md)
 - [\<compilers> Element](compilers-element.md)
-- [Specifying Fully Qualified Type Names](../../../reflection-and-codedom/specifying-fully-qualified-type-names.md)
+- [Specifying Fully Qualified Type Names](../../../../fundamentals/reflection/specifying-fully-qualified-type-names.md)
 - [compiler Element for compilers for compilation (ASP.NET Settings Schema)](/previous-versions/dotnet/netframework-4.0/a15ebt6c(v=vs.100))

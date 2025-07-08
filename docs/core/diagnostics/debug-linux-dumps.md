@@ -2,6 +2,7 @@
 title: Debug Linux dumps
 description: In this article, you'll learn how to collect and analyze dumps from Linux environments.
 ms.date: 01/11/2023
+ms.custom: linux-related-content
 ---
 
 # Debug Linux dumps
@@ -62,3 +63,4 @@ Dumps collected from a Linux machine can also be analyzed on a Windows machine u
 - [dotnet-symbol](dotnet-symbol.md) for more details on installing and using the symbol download tool.
 - [.NET Core diagnostics repo](https://github.com/dotnet/diagnostics/blob/main/documentation/) for more details on debugging, including a useful FAQ.
 - [Installing LLDB](https://github.com/dotnet/diagnostics/blob/main/documentation/sos.md#getting-lldb) for instructions on installing LLDB on Linux or Mac.
+- [Practice and troubleshoot on Linux](/troubleshoot/developer/webapps/aspnetcore/practice-troubleshoot-linux/introduction) for tutorial on debugging crash dumps on Linux

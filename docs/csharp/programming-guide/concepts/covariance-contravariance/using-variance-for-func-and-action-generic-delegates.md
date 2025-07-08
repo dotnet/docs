@@ -1,5 +1,5 @@
 ---
-title: "Using Variance for Func and Action Generic Delegates (C#)"
+title: "Using Variance for Func and Action Generic Delegates"
 description: Learn about using covariance and contravariance in the Func and Action generic delegates to give you more flexibility in your code.
 ms.date: 07/20/2015
 ms.assetid: 1826774f-2b7a-470f-b110-17cfdd6abdae

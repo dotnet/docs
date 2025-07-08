@@ -11,7 +11,7 @@ public class BankAccount(string accountID, string owner)
 // </BaseClass>
 
 // <DerivedClass>
-public class CheckAccount(string accountID, string owner, decimal overdraftLimit = 0) : BankAccount(accountID, owner)
+public class CheckingAccount(string accountID, string owner, decimal overdraftLimit = 0) : BankAccount(accountID, owner)
 {
     public decimal CurrentBalance { get; private set; } = 0;
 

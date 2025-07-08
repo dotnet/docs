@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 public class ConvertStringExample1
 {
@@ -19,7 +19,7 @@ public class ConvertStringExample1
                 numVal = Convert.ToInt32(input);
                 if (numVal < Int32.MaxValue)
                 {
-                    Console.WriteLine("The new value is {0}", ++numVal);
+                    Console.WriteLine($"The new value is {++numVal}");
                 }
                 else
                 {

@@ -2,6 +2,8 @@
 title: SYSLIB1031 warning
 description: Learn about the diagnostic that generates compile-time warning SYSLIB1031.
 ms.date: 05/07/2021
+f1_keywords:
+  - syslib1031
 ---
 
 # SYSLIB1031: `System.Text.Json` source generator encountered a duplicate type info property name

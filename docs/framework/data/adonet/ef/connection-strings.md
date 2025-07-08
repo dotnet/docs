@@ -2,16 +2,15 @@
 title: "Connection Strings in the ADO.NET Entity Framework"
 description: Learn about connection strings in the Entity Framework, which contain information to connect to the ADO.NET data provider and about model and mapping files.
 ms.date: "10/15/2018"
-ms.assetid: 78d516bc-c99f-4865-8ff1-d856bc1a01c0
 ---
 
 # Connection Strings in the ADO.NET Entity Framework
 
 A connection string contains initialization information that is passed as a parameter from a data provider to a data source. The syntax depends on the data provider, and the connection string is parsed during the attempt to open a connection. Connection strings used by the Entity Framework contain information used to connect to the underlying ADO.NET data provider that supports the Entity Framework. They also contain information about the required model and mapping files.
 
-The connection string is used by the EntityClient provider when accessing model and mapping metadata and connecting to the data source. The connection string can be accessed or set through the <xref:System.Data.EntityClient.EntityConnection.ConnectionString%2A> property of <xref:System.Data.EntityClient.EntityConnection>. The <xref:System.Data.EntityClient.EntityConnectionStringBuilder> class can be used to programmatically construct or access parameters in the connection string. For more information, see [How to: Build an EntityConnection Connection String](how-to-build-an-entityconnection-connection-string.md).
+The connection string is used by the EntityClient provider when accessing model and mapping metadata and connecting to the data source. The connection string can be accessed or set through the <xref:System.Data.EntityClient.EntityConnection.ConnectionString> property of <xref:System.Data.EntityClient.EntityConnection>. The <xref:System.Data.EntityClient.EntityConnectionStringBuilder> class can be used to programmatically construct or access parameters in the connection string.
 
-The [Entity Data Model tools](/previous-versions/dotnet/netframework-4.0/bb399249(v=vs.100)) generate a connection string that is stored in the application's configuration file. <xref:System.Data.Objects.ObjectContext> retrieves this connection information automatically when creating object queries. The <xref:System.Data.EntityClient.EntityConnection> used by an <xref:System.Data.Objects.ObjectContext> instance can be accessed from the <xref:System.Data.Objects.ObjectContext.Connection%2A> property. For more information, see [Managing Connections and Transactions](/previous-versions/dotnet/netframework-4.0/bb896325(v=vs.100)).
+The Entity Data Model tools generate a connection string that's stored in the application's configuration file. <xref:System.Data.Objects.ObjectContext> retrieves this connection information automatically when creating object queries. The <xref:System.Data.EntityClient.EntityConnection> used by an <xref:System.Data.Objects.ObjectContext> instance can be accessed from the <xref:System.Data.Objects.ObjectContext.Connection%2A> property.
 
 ## Connection String Syntax
 
@@ -27,8 +26,6 @@ The following table lists the valid names for keyword values in the <xref:System
 |`Provider Connection String`|Optional. Specifies the provider-specific connection string that is passed to the underlying data source. This connection string contains valid keyword/value pairs for the data provider. An invalid `Provider Connection String` will cause a run-time error when it is evaluated by the data source.<br /><br /> This keyword is mutually exclusive with the `Name` keyword.<br /><br /> Make sure to escape the value according to the general syntax of [ADO.NET connection strings](../connection-strings.md). Consider for example the following connection string: `Server=serverName; User ID = userID`. It must be escaped because it contains a semicolon. Since it does not contain double quotation marks, they may be used for escaping:<br /><br /> `Provider Connection String ="Server=serverName; User ID = userID";`|
 |`Metadata`|Required if the `Name` keyword is not specified. A pipe-delimited list of directories, files, and resource locations in which to look for metadata and mapping information. The following is an example:<br /><br /> `Metadata=`<br /><br /> `c:\model &#124; c:\model\sql\mapping.msl;`<br /><br /> Blank spaces on each side of the pipe separator are ignored.<br /><br /> This keyword is mutually exclusive with the `Name` keyword.|
 |`Name`|The application can optionally specify the connection name in an application configuration file that provides the required keyword/value connection string values. In this case, you cannot supply them directly in the connection string. The `Name` keyword is not allowed in a configuration file.<br /><br /> When the `Name` keyword is not included in the connection string, a non-empty values for Provider keyword is required.<br /><br /> This keyword is mutually exclusive with all the other connection string keywords.|
-
-The following is an example of a connection string for the [AdventureWorks Sales Model](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks) stored in the application configuration file:
 
 ## Model and Mapping File Locations
 
@@ -97,7 +94,7 @@ Metadata=.\
 
 `DataDirectory` and the ~ operator should be specified only at the beginning of a path, they are not resolved at any other position. The Entity Framework will try to resolve `~/data`, but it will treat `/data/~` as a physical path.
 
-A path that starts with the `DataDirectory` or the ~ operator cannot resolve to a physical path outside the branch of the `DataDirectory` and the ~ operator. For example, the following paths will resolve: `~` , `~/data` , `~/bin/Model/SqlServer`. The following paths will fail to resolve: `~/..`, `~/../other`.
+A path that starts with the `DataDirectory` or the ~ operator cannot resolve to a physical path outside the branch of the `DataDirectory` and the ~ operator. For example, the following paths will resolve: `~`, `~/data`, `~/bin/Model/SqlServer`. The following paths will fail to resolve: `~/..`, `~/../other`.
 
 `DataDirectory` and the ~ operator can be extended to include sub-directories, as follows: `|DataDirectory|\Model`, `~/bin/Model`
 
@@ -107,5 +104,4 @@ The resolution of the `DataDirectory` substitution string and the ~ operator is 
 
 - [Working with Data Providers](working-with-data-providers.md)
 - [Deployment Considerations](deployment-considerations.md)
-- [Managing Connections and Transactions](/previous-versions/dotnet/netframework-4.0/bb896325(v=vs.100))
 - [Connection Strings](../connection-strings.md)

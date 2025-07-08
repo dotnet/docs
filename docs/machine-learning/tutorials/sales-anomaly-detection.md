@@ -1,15 +1,14 @@
 ---
 title: 'Tutorial: Detect anomalies in product sales'
-description: Learn how to build an anomaly detection application for product sales data. This tutorial creates a .NET Core console application using C# in Visual Studio 2019.
+description: Learn how to build an anomaly detection application for product sales data. This tutorial creates a .NET console application using C# in Visual Studio 2019.
 ms.date: 11/11/2021
 ms.topic: tutorial
 ms.custom: mvc, title-hack-0612
-recommendations: false
 #Customer intent: As a developer, I want to use ML.NET in a product sales anomaly detection scenario so that I can analyze the data for anomaly spikes and change points to take the appropriate action.
 ---
 # Tutorial: Detect anomalies in product sales with ML.NET
 
-Learn how to build an anomaly detection application for product sales data. This tutorial creates a .NET Core console application using C# in Visual Studio.
+Learn how to build an anomaly detection application for product sales data. This tutorial creates a .NET console application using C# in Visual Studio.
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
@@ -36,7 +35,7 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 1. Create a C# **Console Application** called "ProductSalesAnomalyDetection". Click the **Next** button.
 
-2. Choose .NET 6 as the framework to use. Click the **Create** button.
+2. Choose .NET 8 as the framework to use. Click the **Create** button.
 
 3. Create a directory named *Data* in your project to save your data set files.
 
@@ -44,9 +43,9 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
     [!INCLUDE [mlnet-current-nuget-version](../../../includes/mlnet-current-nuget-version.md)]
 
-    In Solution Explorer, right-click on your project and select **Manage NuGet Packages**. Choose "nuget.org" as the Package source, select the Browse tab, search for **Microsoft.ML** and select the **Install** button. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed. Repeat these steps for **Microsoft.ML.TimeSeries**.
+    In Solution Explorer, right-click on your project and select **Manage NuGet Packages**. Choose "nuget.org" as the Package source, select the Browse tab, search for **Microsoft.ML** and select **Install**. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed. Repeat these steps for **Microsoft.ML.TimeSeries**.
 
-5. Add the following `using` statements at the top of your *Program.cs* file:
+5. Add the following `using` directives at the top of your *Program.cs* file:
 
     [!code-csharp[AddUsings](./snippets/sales-anomaly-detection/csharp/Program.cs#AddUsings "Add necessary usings")]
 
@@ -78,11 +77,11 @@ Add a new class to your project:
 
 1. In **Solution Explorer**, right-click the project, and then select **Add > New Item**.
 
-2. In the **Add New Item dialog box**, select **Class** and change the **Name** field to *ProductSalesData.cs*. Then, select the **Add** button.
+2. In the **Add New Item dialog box**, select **Class** and change the **Name** field to *ProductSalesData.cs*. Then, select **Add**.
 
    The *ProductSalesData.cs* file opens in the code editor.
 
-3. Add the following `using` statement to the top of *ProductSalesData.cs*:
+3. Add the following `using` directive to the top of *ProductSalesData.cs*:
 
    ```csharp
    using Microsoft.ML.Data;
@@ -101,7 +100,7 @@ Add a new class to your project:
     * `_dataPath` has the path to the dataset used to train the model.
     * `_docsize` has the number of records in dataset file. You'll use `_docSize` to calculate `pvalueHistoryLength`.
 
-6. Add the following code to the line right below the using statements to specify those paths:
+6. Add the following code to the line right below the `using` directives to specify those paths:
 
     [!code-csharp[Declare global variables](./snippets/sales-anomaly-detection/csharp/Program.cs#DeclareGlobalVariables "Declare global variables")]
 
@@ -267,7 +266,7 @@ Alert   Score   P-Value
 
 ## Change point detection
 
-`Change points` are persistent changes in a time series event stream distribution of values, like level changes and trends. These persistent changes last much longer than `spikes` and could indicate catastrophic event(s). `Change points` are not usually visible to the naked eye, but can be detected in your data using approaches such as in the following method.  The following image is an example of a change point detection:
+`Change points` are persistent changes in a time series event stream distribution of values, like level changes and trends. These persistent changes last much longer than `spikes` and could indicate catastrophic event(s). `Change points` are not usually visible to the naked eye, but can be detected in your data using approaches such as in the following method. The following image is an example of a change point detection:
 
 ![Screenshot that shows a change point detection.](./media/sales-anomaly-detection/change-point-detection.png)
 

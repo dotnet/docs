@@ -1,8 +1,7 @@
 ---
-description: "Learn more about: Walkthrough: Accessing the Web by Using Async and Await (Visual Basic)"
 title: "Walkthrough: Accessing the Web by Using Async and Await"
+description: "Learn more about: Walkthrough: Accessing the Web by Using Async and Await (Visual Basic)"
 ms.date: 07/20/2015
-ms.assetid: 84fd047f-fab8-4d89-8ced-104fb7310a91
 ---
 # Walkthrough: Accessing the Web by Using Async and Await (Visual Basic)
 
@@ -419,7 +418,7 @@ Visual Studio 2012 or later must be installed on your computer. For more informa
         New HttpClient() With {.MaxResponseContentBufferSize = 1000000}
     ```
 
-2. In `SumPageSizesAsync,` replace the call to your `GetURLContentsAsync` method with a call to the `HttpClient` method.
+2. In `SumPageSizesAsync`, replace the call to your `GetURLContentsAsync` method with a call to the `HttpClient` method.
 
     ```vb
     Dim urlContents As Byte() = Await client.GetByteArrayAsync(url)

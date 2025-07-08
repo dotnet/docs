@@ -2,7 +2,7 @@
 title: Add distributed tracing instrumentation - .NET
 description: A tutorial to instrument distributed traces in .NET applications
 ms.topic: tutorial
-ms.date: 03/14/2021
+ms.date: 06/05/2024
 ---
 
 # Adding distributed tracing instrumentation
@@ -29,7 +29,7 @@ dotnet new console
 
 Applications that target .NET 5 and later already have the necessary distributed tracing APIs included. For apps targeting older
 .NET versions, add the [System.Diagnostics.DiagnosticSource NuGet package](https://www.nuget.org/packages/System.Diagnostics.DiagnosticSource/)
-version 5 or greater.
+version 5 or greater. For libraries targeting netstandard, we recommend referencing the oldest version of the package which is still supported and contains the APIs your library needs.
 
 ```dotnetcli
 dotnet add package System.Diagnostics.DiagnosticSource
@@ -113,8 +113,8 @@ Applications and libraries add distributed tracing instrumentation using the
 ### ActivitySource
 
 First create an instance of ActivitySource. ActivitySource provides APIs to create and
-start Activity objects. Add the static ActivitySource variable above Main() and
-`using System.Diagnostics;` to the using statements.
+start Activity objects. Add the static ActivitySource variable above `Main()` and
+`using System.Diagnostics;` to the `using` directives.
 
 ```csharp
 using OpenTelemetry;
@@ -132,7 +132,7 @@ namespace Sample.DistributedTracing
 
         static async Task Main(string[] args)
         {
-            ...
+            // ...
 ```
 
 #### Best practices
@@ -163,14 +163,14 @@ Use the ActivitySource object to Start and Stop Activity objects around meaningf
 DoSomeWork() with the code shown here:
 
 ```csharp
-        static async Task DoSomeWork(string foo, int bar)
-        {
-            using (Activity activity = source.StartActivity("SomeWork"))
-            {
-                await StepOne();
-                await StepTwo();
-            }
-        }
+static async Task DoSomeWork(string foo, int bar)
+{
+    using (Activity activity = source.StartActivity("SomeWork"))
+    {
+        await StepOne();
+        await StepTwo();
+    }
+}
 ```
 
 Running the app now shows the new Activity being logged:
@@ -195,27 +195,23 @@ the created Activity object after executing the block. Disposing the Activity ob
 doesn't need to explicitly call <xref:System.Diagnostics.Activity.Stop?displayProperty=nameWithType>.
 That simplifies the coding pattern.
 
-- <xref:System.Diagnostics.ActivitySource.StartActivity%2A?displayProperty=nameWithType> internally determines if
-there are any listeners recording the Activity. If there are no registered listeners or there are listeners that
-are not interested, `StartActivity()` will return `null` and avoid creating the Activity object. This
-is a performance optimization so that the code pattern can still be used in functions that are called frequently.
+- <xref:System.Diagnostics.ActivitySource.StartActivity%2A?displayProperty=nameWithType> internally determines if there are any listeners recording the Activity. If there are no registered listeners or there are listeners that are not interested, `StartActivity()` will return `null` and avoid creating the Activity object. This is a performance optimization so that the code pattern can still be used in functions that are called frequently.
 
 ## Optional: Populate tags
 
-Activities support key-value data called Tags, commonly used to store any parameters of the work that
-may be useful for diagnostics. Update DoSomeWork() to include them:
+Activities support key-value data called Tags, commonly used to store any parameters of the work that may be useful for diagnostics. Update `DoSomeWork()` to include them:
 
 ```csharp
-        static async Task DoSomeWork(string foo, int bar)
-        {
-            using (Activity activity = source.StartActivity("SomeWork"))
-            {
-                activity?.SetTag("foo", foo);
-                activity?.SetTag("bar", bar);
-                await StepOne();
-                await StepTwo();
-            }
-        }
+static async Task DoSomeWork(string foo, int bar)
+{
+    using (Activity activity = source.StartActivity("SomeWork"))
+    {
+        activity?.SetTag("foo", foo);
+        activity?.SetTag("bar", bar);
+        await StepOne();
+        await StepTwo();
+    }
+}
 ```
 
 ```dotnetcli
@@ -250,10 +246,10 @@ if(activity != null)
 ```
 
 - OpenTelemetry provides a set of recommended
-[conventions](https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/trace/semantic_conventions/README.md)
+[conventions](https://github.com/open-telemetry/semantic-conventions/blob/main/docs/general/trace.md)
 for setting Tags on Activities that represent common types of application work.
 
-- If you are instrumenting functions with high-performance requirements,
+- If you're instrumenting functions with high-performance requirements,
 <xref:System.Diagnostics.Activity.IsAllDataRequested?displayProperty=nameWithType> is a hint that indicates whether any
 of the code listening to Activities intends to read auxiliary information such as Tags. If no listener will read it, then there
 is no need for the instrumented code to spend CPU cycles populating it. For simplicity, this sample doesn't apply that
@@ -265,18 +261,18 @@ Events are timestamped messages that can attach an arbitrary stream of additiona
 some events to the Activity:
 
 ```csharp
-        static async Task DoSomeWork(string foo, int bar)
-        {
-            using (Activity activity = source.StartActivity("SomeWork"))
-            {
-                activity?.SetTag("foo", foo);
-                activity?.SetTag("bar", bar);
-                await StepOne();
-                activity?.AddEvent(new ActivityEvent("Part way there"));
-                await StepTwo();
-                activity?.AddEvent(new ActivityEvent("Done now"));
-            }
-        }
+static async Task DoSomeWork(string foo, int bar)
+{
+    using (Activity activity = source.StartActivity("SomeWork"))
+    {
+        activity?.SetTag("foo", foo);
+        activity?.SetTag("bar", bar);
+        await StepOne();
+        activity?.AddEvent(new ActivityEvent("Part way there"));
+        await StepTwo();
+        activity?.AddEvent(new ActivityEvent("Done now"));
+    }
+}
 ```
 
 ```dotnetcli
@@ -312,32 +308,28 @@ with the distributed trace.
 
 OpenTelemetry allows each Activity to report a
 [Status](https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/trace/api.md#set-status)
-that represents the pass/fail result of the work. .NET does not currently have a strongly typed API for this purpose but
-there is an established convention using Tags:
+that represents the pass/fail result of the work. .NET has a strongly-typed API for this purpose:
 
-- `otel.status_code` is the Tag name used to store `StatusCode`. Values for the StatusCode tag must be one of the
-strings "UNSET", "OK", or "ERROR", which correspond respectively to the enums `Unset`, `Ok`, and `Error` from StatusCode.
-- `otel.status_description` is the Tag name used to store the optional `Description`
+The <xref:System.Diagnostics.ActivityStatusCode> values are represented as either, `Unset`, `Ok`, and `Error`.
 
 Update DoSomeWork() to set status:
 
 ```csharp
-        static async Task DoSomeWork(string foo, int bar)
-        {
-            using (Activity activity = source.StartActivity("SomeWork"))
-            {
-                activity?.SetTag("foo", foo);
-                activity?.SetTag("bar", bar);
-                await StepOne();
-                activity?.AddEvent(new ActivityEvent("Part way there"));
-                await StepTwo();
-                activity?.AddEvent(new ActivityEvent("Done now"));
+static async Task DoSomeWork(string foo, int bar)
+{
+    using (Activity activity = source.StartActivity("SomeWork"))
+    {
+        activity?.SetTag("foo", foo);
+        activity?.SetTag("bar", bar);
+        await StepOne();
+        activity?.AddEvent(new ActivityEvent("Part way there"));
+        await StepTwo();
+        activity?.AddEvent(new ActivityEvent("Done now"));
 
-                // Pretend something went wrong
-                activity?.SetTag("otel.status_code", "ERROR");
-                activity?.SetTag("otel.status_description", "Use this text give more information about the error");
-            }
-        }
+        // Pretend something went wrong
+        activity?.SetStatus(ActivityStatusCode.Error, "Use this text give more information about the error");
+    }
+}
 ```
 
 ## Optional: Add additional Activities
@@ -351,21 +343,21 @@ verbose traces, so it's not recommended.
 Update StepOne and StepTwo to add more tracing around these separate steps:
 
 ```csharp
-        static async Task StepOne()
-        {
-            using (Activity activity = source.StartActivity("StepOne"))
-            {
-                await Task.Delay(500);
-            }
-        }
+static async Task StepOne()
+{
+    using (Activity activity = source.StartActivity("StepOne"))
+    {
+        await Task.Delay(500);
+    }
+}
 
-        static async Task StepTwo()
-        {
-            using (Activity activity = source.StartActivity("StepTwo"))
-            {
-                await Task.Delay(1000);
-            }
-        }
+static async Task StepTwo()
+{
+    using (Activity activity = source.StartActivity("StepTwo"))
+    {
+        await Task.Delay(1000);
+    }
+}
 ```
 
 ```dotnetcli
@@ -453,5 +445,7 @@ void DoBatchWork(ActivityContext[] requestContexts)
 }
 ```
 
-Unlike events and Tags that can be added on-demand, links must be added during StartActivity() and
-are immutable afterwards.
+Unlike events and Tags that can be added on-demand, links must be added during `StartActivity()` and are immutable afterwards.
+
+> [!IMPORTANT]
+> As per the [OpenTelemetry specification](https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/trace/sdk.md#span-limits), the suggested limit for the number of links is 128. However, it's important to note that this limit is not enforced.

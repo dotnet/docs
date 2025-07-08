@@ -2,6 +2,8 @@
 title: SYSLIB0037 warning - AssemblyName members HashAlgorithm, ProcessorArchitecture, and VersionCompatibility are obsolete
 description: Learn about the obsoletion of some AssemblyName properties that generates compile-time warning SYSLIB0037.
 ms.date: 01/13/2022
+f1_keywords:
+  - syslib0037
 ---
 # SYSLIB0037: AssemblyName members HashAlgorithm, ProcessorArchitecture, and VersionCompatibility are obsolete
 

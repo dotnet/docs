@@ -12,6 +12,8 @@ ms.assetid: 66f002b8-a97d-4a6e-a503-2cec01689113
 ---
 # How to: Receive First-Chance Exception Notifications
 
+[!INCLUDE [net-framework-specific](../includes/net-framework-specific.md)]
+
 The <xref:System.AppDomain.FirstChanceException> event of the <xref:System.AppDomain> class lets you receive a notification that an exception has been thrown, before the common language runtime has begun searching for exception handlers.
 
  The event is raised at the application domain level. A thread of execution can pass through multiple application domains, so an exception that is unhandled in one application domain could be handled in another application domain. The notification occurs in each application domain that has added a handler for the event, until an application domain handles the exception.

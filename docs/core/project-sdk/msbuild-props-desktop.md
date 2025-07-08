@@ -1,7 +1,7 @@
 ---
 title: MSBuild properties for Microsoft.NET.Sdk.Desktop
 description: Reference for the MSBuild properties and items that are understood by the .NET Desktop SDK, which includes WPF and WinForms.
-ms.date: 02/04/2021
+ms.date: 08/13/2024
 ms.topic: reference
 author: adegeo
 ms.author: adegeo
@@ -17,51 +17,21 @@ This page is a reference for the MSBuild properties and items that you use to co
 
 ## Enable .NET Desktop SDK
 
-To use WinForms or WPF, configure your project file.
-
-### .NET 5 and later versions
-
-Specify the following settings in the project file of your WinForms or WPF project:
+To use WinForms or WPF, specify the following settings in the project file of your WinForms or WPF project:
 
 - Target the .NET SDK `Microsoft.NET.Sdk`. For more information, see [Project files](overview.md#project-files).
-- Set [`TargetFramework`](msbuild-props.md#targetframework) to a Windows-specific target framework moniker, such as `net6.0-windows`.
+- Set [`TargetFramework`](msbuild-props.md#targetframework) to a [Windows-specific target framework moniker](../../standard/frameworks.md#net-5-os-specific-tfms), such as `net8.0-windows`.
 - Add a UI framework property (or both, if necessary):
   - Set [`UseWPF`](#usewpf) to `true` to import and use WPF.
   - Set [`UseWindowsForms`](#usewindowsforms) to `true` to import and use WinForms.
-- (Optional) Set `OutputType` to `WinExe`. This produces an app as opposed to a library. To produce a library, omit this property.
+- (Optional) Set `OutputType` to `WinExe`. This setting produces an app as opposed to a library. To produce a library, omit this property.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net6.0-windows</TargetFramework>
-
-    <UseWPF>true</UseWPF>
-    <!-- and/or -->
-    <UseWindowsForms>true</UseWindowsForms>
-  </PropertyGroup>
-
-</Project>
-```
-
-### .NET Core 3.1
-
-Specify the following settings in the project file of your WinForms or WPF project:
-
-- Target the .NET SDK `Microsoft.NET.Sdk.WindowsDesktop`. For more information, see [Project files](overview.md#project-files).
-- Set [`TargetFramework`](msbuild-props.md#targetframework) to `netcoreapp3.1`.
-- Add a UI framework property (or both, if necessary):
-  - Set [`UseWPF`](#usewpf) to `true` to import and use WPF.
-  - Set [`UseWindowsForms`](#usewindowsforms) to `true` to import and use WinForms.
-- (Optional) Set `OutputType` to `WinExe`. This produces an app as opposed to a library. To produce a library, omit this property.
-
-```xml
-<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
-
-  <PropertyGroup>
-    <OutputType>WinExe</OutputType>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net8.0-windows</TargetFramework>
 
     <UseWPF>true</UseWPF>
     <!-- and/or -->
@@ -73,34 +43,34 @@ Specify the following settings in the project file of your WinForms or WPF proje
 
 ## WPF default includes and excludes
 
-SDK projects define a set of rules to implicitly include or exclude files from the project. These rules also automatically set the file's build action. This is unlike the older non-SDK .NET Framework projects, which have no default include or exclude rules. .NET Framework projects require you to explicitly declare which files to include in the project.
+SDK projects define a set of rules to implicitly include or exclude files from the project. These rules also automatically set the file's build action. This behavior is unlike the older non-SDK .NET Framework projects, which have no default include or exclude rules. .NET Framework projects require you to explicitly declare which files to include in the project.
 
 .NET project files include a [standard set of rules](overview.md#default-includes-and-excludes) for automatically processing files. WPF projects add additional rules.
 
 The following table shows which elements and [globs](https://en.wikipedia.org/wiki/Glob_(programming)) are included and excluded in the .NET Desktop SDK when the [`UseWPF`](#usewpf) project property is set to `true`:
 
-| Element               | Include glob                 | Exclude glob                                                                                           | Remove glob  |
-|-----------------------|------------------------------|--------------------------------------------------------------------|--------------|
-| ApplicationDefinition | App.xaml or Application.xaml | N/A                                                                | N/A          |
-| Page                  | \*\*/\*.xaml                 | \*\*/\*.user; \*\*/\*.\*proj; \*\*/\*.sln; \*\*/\*.vssscc<br>Any XAML defined by *ApplicationDefinition* | N/A          |
-| None                  | N/A                          | N/A                                                                | \*\*/\*.xaml |
+| Element               | Include glob                 | Exclude glob | Remove glob |
+|-----------------------|------------------------------|--------------|-------------|
+| ApplicationDefinition | App.xaml or Application.xaml | N/A          | N/A         |
+| Page                  | \*\*/\*.xaml                 | \*\*/\*.user; \*\*/\*.\*proj; \*\*/\*.sln(x); \*\*/\*.vssscc<br>Any XAML defined by *ApplicationDefinition* | N/A |
+| None                  | N/A                          | N/A          | \*\*/\*.xaml |
 
 Here are the default include and exclude settings for all project types. For more information, see [Default includes and excludes](overview.md#default-includes-and-excludes).
 
-| Element           | Include glob                              | Exclude glob                                                  | Remove glob              |
-|-------------------|-------------------------------------------|---------------------------------------------------------------|--------------------------|
-| Compile           | \*\*/\*.cs; \*\*/\*.vb (or other language extensions) | \*\*/\*.user;  \*\*/\*.\*proj;  \*\*/\*.sln;  \*\*/\*.vssscc  | N/A          |
-| EmbeddedResource  | \*\*/\*.resx                              | \*\*/\*.user; \*\*/\*.\*proj; \*\*/\*.sln; \*\*/\*.vssscc     | N/A                      |
-| None              | \*\*/\*                                   | \*\*/\*.user; \*\*/\*.\*proj; \*\*/\*.sln; \*\*/\*.vssscc     | \*\*/\*.cs; \*\*/\*.resx |
+| Element | Include glob | Exclude glob | Remove glob |
+|---------|--------------|--------------|-------------|
+| Compile           | \*\*/\*.cs; \*\*/\*.vb (or other language extensions) | \*\*/\*.user;  \*\*/\*.\*proj;  \*\*/\*.sln(x);  \*\*/\*.vssscc | N/A |
+| EmbeddedResource  | \*\*/\*.resx | \*\*/\*.user; \*\*/\*.\*proj; \*\*/\*.sln(x); \*\*/\*.vssscc | N/A |
+| None              | \*\*/\* | \*\*/\*.user; \*\*/\*.\*proj; \*\*/\*.sln(x); \*\*/\*.vssscc | \*\*/\*.cs; \*\*/\*.resx |
 
 ### Errors related to "duplicate" items
 
 If you explicitly added files to your project, or have XAML globs to automatically include files in your project, you might get one of the following errors:
 
-* Duplicate 'ApplicationDefinition' items were included.
-* Duplicate 'Page' items were included.
+- Duplicate 'ApplicationDefinition' items were included.
+- Duplicate 'Page' items were included.
 
-These errors are a result of the implicit *Include* globs conflicting with your settings. To work around this problem, set either [`EnableDefaultApplicationDefinition`](#enabledefaultapplicationdefinition) or [`EnableDefaultPageItems`](#enabledefaultpageitems) to `false`. Setting these values to `false` reverts to the behavior of previous SDKs where you had to explicitly define the default globs in your project, or explicitly define the files to include in the project.
+These errors are a result of the implicit *Include* globs conflicting with your settings. To work around this problem, set either [`EnableDefaultApplicationDefinition`](#enabledefaultapplicationdefinition) or [`EnableDefaultPageItems`](#enabledefaultpageitems) to `false`. Setting these values to `false` reverts to the behavior of previous SDKs where you had to explicitly define either the default globs or the files to include in your project.
 
 You can completely disable all implicit includes by setting the [`EnableDefaultItems` property](msbuild-props.md#enabledefaultitems) to `false`.
 
@@ -114,7 +84,7 @@ For information about non-WPF-specific project settings, see [MSBuild reference 
 
 ### UseWPF
 
-The `UseWPF` property controls whether or not to include references to WPF libraries. This also alters the MSBuild pipeline to correctly process a WPF project and related files. The default value is `false`. Set the `UseWPF` property to `true` to enable WPF support. You can only target the Windows platform when this property is enabled.
+The `UseWPF` property controls whether or not to include references to WPF libraries. This setting also alters the MSBuild pipeline to correctly process a WPF project and related files. The default value is `false`. Set the `UseWPF` property to `true` to enable WPF support. You can only target the Windows platform when this property is enabled.
 
 ```xml
 <PropertyGroup>
@@ -122,9 +92,7 @@ The `UseWPF` property controls whether or not to include references to WPF libra
 </PropertyGroup>
 ```
 
-When this property is set to `true`, .NET 5+ projects will automatically import the [.NET Desktop SDK](#enable-net-desktop-sdk).
-
-.NET Core 3.1 projects need to explicitly target the [.NET Desktop SDK](#enable-net-desktop-sdk) to use this property.
+When this property is set to `true`, .NET projects automatically import the [.NET Desktop SDK](#enable-net-desktop-sdk).
 
 ### EnableDefaultApplicationDefinition
 
@@ -140,7 +108,7 @@ This property requires that the [`EnableDefaultItems` property](msbuild-props.md
 
 ### EnableDefaultPageItems
 
-The `EnableDefaultPageItems` property controls whether `Page` items, which are _.xaml_ files, are implicitly included in the project. The default value is `true`. Set the `EnableDefaultPageItems` property to `false` to disable the implicit file inclusion.
+The `EnableDefaultPageItems` property controls whether `Page` items, which are *.xaml* files, are implicitly included in the project. The default value is `true`. Set the `EnableDefaultPageItems` property to `false` to disable the implicit file inclusion.
 
 ```xml
 <PropertyGroup>
@@ -188,13 +156,13 @@ The default value is `SystemAware`.
 
 The `ApplicationHighDpiMode` can be set to one of the <xref:System.Windows.Forms.HighDpiMode> enum values:
 
-| Value         | Description                                                                                                                                             |
-|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `DpiUnaware`          | The application window does not scale for DPI changes and always assumes a scale factor of 100%.                                                |
-| `DpiUnawareGdiScaled` | Similar to `DpiUnaware`, but improves the quality of GDI/GDI+ based content.                                                                      |
-| `PerMonitor`          | The window checks for DPI when it's created and adjusts scale factor when the DPI changes.                                                      |
-| `PerMonitorV2`        | Similar to `PerMonitor`, but enables child window DPI change notification, improved scaling of comctl32 controls, and dialog scaling.             |
-| `SystemAware`         | **Default** if not specified.<br>The window queries for the DPI of the primary monitor once and uses this for the application on all monitors.  |
+| Value                 | Description                                                                                      |
+|-----------------------|--------------------------------------------------------------------------------------------------|
+| `DpiUnaware`          | The application window doesn't scale for DPI changes and always assumes a scale factor of 100%. |
+| `DpiUnawareGdiScaled` | Similar to `DpiUnaware`, but improves the quality of GDI/GDI+ based content.                     |
+| `PerMonitor`          | The window checks for DPI when it's created and adjusts scale factor when the DPI changes.       |
+| `PerMonitorV2`        | Similar to `PerMonitor`, but enables child window DPI change notification, improved scaling of comctl32 controls, and dialog scaling. |
+| `SystemAware`         | **Default** if not specified.<br>The window queries for the DPI of the primary monitor once and uses this value for the application on all monitors. |
 
 This property is supported by .NET 6 and later versions.
 
@@ -234,27 +202,7 @@ The `UseWindowsForms` property controls whether or not your application is built
 </PropertyGroup>
 ```
 
-When this property is set to `true`, .NET 5+ projects will automatically import the [.NET Desktop SDK](#enable-net-desktop-sdk).
-
-.NET Core 3.1 projects need to explicitly target the [.NET Desktop SDK](#enable-net-desktop-sdk) to use this property.
-
-## Shared settings
-
-- [DisableWinExeOutputInference](#disablewinexeoutputinference)
-
-### DisableWinExeOutputInference
-
-Applies to .NET 5 SDK and later.
-
-When an app has the `Exe` value set for the `OutputType` property, a console window is created if the app isn't running from a console. This is generally not the desired behavior of a Windows Desktop app. With the `WinExe` value, a console window isn't created. Starting with the .NET 5 SDK, the `Exe` value is automatically transformed to `WinExe`.
-
-The `DisableWinExeOutputInference` property reverts the behavior of treating `Exe` as `WinExe`. Set this value to `true` to restore the behavior of the `OutputType` property value of `Exe`. The default value is `false`.
-
-```xml
-<PropertyGroup>
-  <DisableWinExeOutputInference>true</DisableWinExeOutputInference>
-</PropertyGroup>
-```
+When this property is set to `true`, .NET projects automatically import the [.NET Desktop SDK](#enable-net-desktop-sdk).
 
 ## See also
 

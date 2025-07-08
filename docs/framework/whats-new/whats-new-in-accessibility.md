@@ -8,6 +8,7 @@ dev_langs:
   - "vb"
 helpviewer_keywords:
   - "what's new [.NET Framework]"
+ms.topic: whats-new
 ---
 
 # What's new in accessibility in .NET Framework
@@ -16,7 +17,7 @@ helpviewer_keywords:
 
 ## Accessibility switches
 
-You can configure your app to opt into accessibility features if it targets .NET Framework 4.7 or an earlier version but is running on .NET Framework 4.7.1 or later. You can also configure your app to use legacy features (and not take advantage of accessibility features) if it targets .NET Framework 4.7.1 or later. Each .NET Framework version that includes accessibility features has a version-specific accessibility switch, which you add to the [`<AppContextSwitchOverrides>`](../configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) element in the [`<runtime>`](../configure-apps/file-schema/runtime/index.md) section of the application's configuration file. The following are the supported switches:
+You can configure your app to opt in to accessibility features if it targets .NET Framework 4.7 or an earlier version but is running on .NET Framework 4.7.1 or later. You can also configure your app to use legacy features (and not take advantage of accessibility features) if it targets .NET Framework 4.7.1 or later. Each .NET Framework version that includes accessibility features has a version-specific accessibility switch, which you add to the [`<AppContextSwitchOverrides>`](../configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) element in the [`<runtime>`](../configure-apps/file-schema/runtime/index.md) section of the application's configuration file. The following are the supported switches:
 
 |Version|Switch|
 |---|---|
@@ -380,7 +381,7 @@ The workflow designer includes the following changes in .NET Framework 4.8:
 
 - Users who choose High Contrast themes will see improvements in the visibility of the Workflow Designer and its controls, like better contrast ratios between elements and more noticeable selection boxes used for focus elements.
 
-If your application targets .NET Framework 4.7.2 or an earlier version, you can opt into these changes by setting the `Switch.UseLegacyAccessibilityFeatures.3` [AppContext switch](../configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) to `false` in your application configuration file. For more information, see the [Taking advantage of accessibility enhancements](#taking-advantage-of-accessibility-enhancements) section in this article.
+If your application targets .NET Framework 4.7.2 or an earlier version, you can opt in to these changes by setting the `Switch.UseLegacyAccessibilityFeatures.3` [AppContext switch](../configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) to `false` in your application configuration file. For more information, see the [Taking advantage of accessibility enhancements](#taking-advantage-of-accessibility-enhancements) section in this article.
 
 ## What's new in accessibility in .NET Framework 4.7.2
 
@@ -533,7 +534,6 @@ peer.RaiseAutomationEvent(AutomationEvents.LiveRegionChanged);
 ```vb
 Dim peer = FrameworkElementAutomationPeer.FromElement(myTextBlock)
 peer.RaiseAutomationEvent(AutomationEvents.LiveRegionChanged)
-
 ```
 
 **High contrast**

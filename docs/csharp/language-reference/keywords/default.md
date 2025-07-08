@@ -1,6 +1,6 @@
 ---
 description: "default - C# reference"
-title: "default - C# reference"
+title: "default keyword"
 ms.date: 04/28/2021
 f1_keywords: 
   - "default"
@@ -19,5 +19,4 @@ You can use the `default` keyword in the following contexts:
 
 ## See also
 
-- [C# reference](../index.md)
 - [C# keywords](index.md)

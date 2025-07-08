@@ -8,11 +8,11 @@ In some cases, the <xref:System.Windows.Controls.TextBox.Text> property reflects
 
 This should have no negative impact. However, you can restore the previous behavior by setting the <xref:System.Windows.FrameworkCompatibilityPreferences.KeepTextBoxDisplaySynchronizedWithTextProperty> property to `false`.
 
-| Name    | Value       |
-|:--------|:------------|
-| Scope   | Edge        |
-| Version | 4.5         |
-|Type|Retargeting
+|             | Value       |
+|:------------|:------------|
+| **Scope**   | Edge        |
+| **Version** | 4.5         |
+| **Type**    | Retargeting |
 
 #### Affected APIs
 

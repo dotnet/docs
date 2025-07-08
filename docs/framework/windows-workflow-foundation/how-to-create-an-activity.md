@@ -18,7 +18,7 @@ Activities are the core unit of behavior in WF. The execution logic of an activi
 2. In the **New Project** dialog, under the **Installed** category, select **Visual C#** > **Workflow** (or **Visual Basic** > **Workflow**).
 
     > [!NOTE]
-    > If you don't see the **Workflow** template category, you may need to install the **Windows Workflow Foundation** component of Visual Studio. Choose the **Open Visual Studio Installer** link on the left-hand side of the **New Project** dialog. In Visual Studio Installer, select the **Individual components** tab. Then, under the **Development activities** category, select the **Windows Workflow Foundation** component. Choose **Modify** to install the component.
+    > If you don't see the **Workflow** template category, you might need to install the **Windows Workflow Foundation** component of Visual Studio. Choose the **Open Visual Studio Installer** link on the left-hand side of the **New Project** dialog. In Visual Studio Installer, select the **Individual components** tab. Then, under the **Development activities** category, select the **Windows Workflow Foundation** component. Choose **Modify** to install the component.
 
 3. Select the **Activity Library** project template. Type `NumberGuessWorkflowActivities` in the **Name** box and then click **OK**.
 

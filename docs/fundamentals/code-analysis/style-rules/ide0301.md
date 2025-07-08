@@ -1,0 +1,99 @@
+---
+title: "IDE0301: Use collection expression for empty"
+description: "Learn about code analysis rule IDE0301: Use collection expression for empty"
+ms.date: 12/12/2023
+f1_keywords:
+- IDE0301
+helpviewer_keywords:
+- IDE0301
+dev_langs:
+- CSharp
+---
+# Use collection expression for empty (IDE0301)
+
+| Property                 | Value                                         |
+|--------------------------|-----------------------------------------------|
+| **Rule ID**              | IDE0301                                       |
+| **Title**                | Use collection expression for empty           |
+| **Category**             | Style                                         |
+| **Subcategory**          | Language rules (expression-level preferences) |
+| **Applicable languages** | C# 12+                                        |
+| **Options**              | `dotnet_style_prefer_collection_expression`   |
+
+## Overview
+
+This rule looks for code similar to `Array.Empty<T>()` (a method call that returns an empty collection) or `ImmutableArray<T>.Empty` (a property that returns an empty collection) and offers to replace it with a [collection expression](../../../csharp/language-reference/operators/collection-expressions.md) (`[]`).
+
+## Options
+
+Options specify the behavior that you want the rule to enforce. For information about configuring options, see [Option format](language-rules.md#option-format).
+
+[!INCLUDE [dotnet-style-prefer-collection-expression](includes/dotnet-style-prefer-collection-expression.md)]
+
+## Example
+
+```csharp
+// Code with violations.
+int[] i = Array.Empty<int>();
+IEnumerable<int> j = Array.Empty<int>();
+ReadOnlySpan<int> span = ReadOnlySpan<int>.Empty;
+
+// Fixed code.
+int[] i = [];
+IEnumerable<int> j = [];
+ReadOnlySpan<int> span = [];
+```
+
+The following code snippet shows an example with a custom type.
+
+```csharp
+public class Program
+{
+    public static void Main()
+    {
+        // IDE0301 violation.
+        MyList<int> x = MyList<int>.Empty;
+
+        // IDE0301 fixed code.
+        MyList<int> x = [];
+    }
+}
+
+class MyList<T> : IEnumerable<T>
+{
+    public static MyList<T> Empty { get; }
+
+    public IEnumerator<T> GetEnumerator() => default;
+    IEnumerator IEnumerable.GetEnumerator() => default;
+}
+```
+
+## Suppress a warning
+
+If you want to suppress only a single violation, add preprocessor directives to your source file to disable and then re-enable the rule.
+
+```csharp
+#pragma warning disable IDE0301
+// The code that's violating the rule is on this line.
+#pragma warning restore IDE0301
+```
+
+To disable the rule for a file, folder, or project, set its severity to `none` in the [configuration file](../configuration-files.md).
+
+```ini
+[*.{cs,vb}]
+dotnet_diagnostic.IDE0301.severity = none
+```
+
+To disable all of the code-style rules, set the severity for the category `Style` to `none` in the [configuration file](../configuration-files.md).
+
+```ini
+[*.{cs,vb}]
+dotnet_analyzer_diagnostic.category-Style.severity = none
+```
+
+For more information, see [How to suppress code analysis warnings](../suppress-warnings.md).
+
+## See also
+
+- [Use collection expression for array (IDE0300)](ide0300.md)

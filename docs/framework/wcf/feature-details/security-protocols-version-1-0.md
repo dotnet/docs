@@ -8,51 +8,49 @@ ms.assetid: ee3402d2-1076-410b-a3cb-fae0372bd7af
 
 The Web Services Security Protocols provide Web services security mechanisms that cover all existing enterprise messaging security requirements. This section describes the Windows Communication Foundation (WCF) version 1.0 details (implemented in the <xref:System.ServiceModel.Channels.SecurityBindingElement>) for the following Web services security protocols.
 
-|Specification/Document|Link|
-|-|-|
+| Specification/Document | Link |
+|------------------------|------|
 |WSS: SOAP Message Security 1.0|<https://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0.pdf>|
 |WSS: Username Token Profile 1.0|<https://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0.pdf>|
 |WSS: X509 Token Profile 1.0|<https://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0.pdf>|
 |WSS: SAML 1.1 Token Profile 1.0|<https://docs.oasis-open.org/wss/oasis-wss-saml-token-profile-1.0.pdf>|
-|WSS: SOAP Message Security 1.1|<https://www.oasis-open.org/committees/download.php/16790/wss-v1.1-spec-os-SOAPMessageSecurity.pdf>|
+|WSS: SOAP Message Security 1.1|<http://docs.oasis-open.org/wss/v1.1/wss-v1.1-spec-os-SOAPMessageSecurity.pdf>|
 |WSS Username Token Profile 1.1|<https://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0.pdf>|
-|WSS: X.509 Token Profile 1.1|<https://www.oasis-open.org/committees/download.php/16785/wss-v1.1-spec-os-x509TokenProfile.pdf>|
-|WSS: Kerberos Token Profile 1.1|<https://www.oasis-open.org/committees/download.php/16788/wss-v1.1-spec-os-KerberosTokenProfile.pdf>|
-|WSS: SAML 1.1 Token Profile 1.1|<https://www.oasis-open.org/committees/download.php/16768/wss-v1.1-spec-os-SAMLTokenProfile.pdf>|
+|WSS: X.509 Token Profile 1.1|<http://docs.oasis-open.org/wss/v1.1/wss-v1.1-spec-os-x509TokenProfile.pdf>|
+|WSS: Kerberos Token Profile 1.1|<http://docs.oasis-open.org/wss/v1.1/wss-v1.1-spec-os-KerberosTokenProfile.pdf>|
+|WSS: SAML 1.1 Token Profile 1.1|<http://docs.oasis-open.org/wss/v1.1/wss-v1.1-spec-os-SAMLTokenProfile.pdf>|
 |WS-Secure Conversation|<http://specs.xmlsoap.org/ws/2005/02/sc/WS-SecureConversation.pdf>|
 |WS-Trust|<http://specs.xmlsoap.org/ws/2005/02/trust/ws-trust.pdf>|
 |Application Note:<br /><br /> Using WS-Trust for TLS Handshake|To be published|
 |Application Note:<br /><br /> Using WS-Trust for SPNEGO|To be published|
 |Application Note:<br /><br /> Web Services Addressing Endpoint References And Identity|To be published|
-|WS-SecurityPolicy 1.1<br /><br /> (2005/07)|<http://specs.xmlsoap.org/ws/2005/07/securitypolicy/ws-securitypolicy.pdf><br /><br /> as amended by [errata](https://lists.oasis-open.org/archives/ws-sx/200512/msg00017.html) submitted to OASIS WS-SX Technical Committee |
+|WS-SecurityPolicy 1.1<br /><br /> (2005/07)|<http://specs.xmlsoap.org/ws/2005/07/securitypolicy/ws-securitypolicy.pdf><br /><br /> as amended by errata submitted to OASIS WS-SX Technical Committee |
 
  WCF, version 1, provides 17 authentication modes that can be used as the basis for Web services security configuration. Each mode is optimized for a common set of deployment requirements, such as:
 
 - Credentials used to authenticate client and service.
-
 - Message or transport security protection mechanisms.
-
 - Message exchange patterns.
 
-|Authentication Mode|Client Authentication|Server Authentication|Mode|
-|-------------------------|---------------------------|---------------------------|----------|
-|UserNameOverTransport|User name/password|X509|Transport|
-|CertificateOverTransport|X509|X509|Transport|
-|KerberosOverTransport|Windows|X509|Transport|
-|IssuedTokenOverTransport|Federated|X509|Transport|
-|SspiNegotiatedOverTransport|Windows Sspi Negotiated|Windows Sspi Negotiated|Transport|
-|AnonymousForCertificate|None|X509|Message|
-|UserNameForCertificate|User name/password|X509|Message|
-|MutualCertificate|X509|X509|Message|
-|MutualCertificateDuplex|X509|X509|Message|
-|IssuedTokenForCertificate|Federated|X509|Message|
-|Kerberos|Windows|Windows|Message|
-|IssuedToken|Federated|Federated|Message|
-|SspiNegotiated|Windows Sspi Negotiated|Windows Sspi Negotiated|Message|
-|AnonymousForSslNegotiated|None|X509, TLS-Nego|Message|
-|UserNameForSslNegotiated|User name/password|X509, TLS-Nego|Message|
-|MutualSslNegotiated|X509|X509, TLS-Nego|Message|
-|IssuedTokenForSslNegotiated|Federated|X509, TLS-Nego|Message|
+| Authentication Mode         | Client Authentication   | Server Authentication   | Mode      |
+|-----------------------------|-------------------------|-------------------------|-----------|
+| UserNameOverTransport       | User name/password      | X509                    | Transport |
+| CertificateOverTransport    | X509                    | X509                    | Transport |
+| KerberosOverTransport       | Windows                 | X509                    | Transport |
+| IssuedTokenOverTransport    | Federated               | X509                    | Transport |
+| SspiNegotiatedOverTransport | Windows Sspi Negotiated | Windows Sspi Negotiated | Transport |
+| AnonymousForCertificate     | None                    | X509                    | Message   |
+| UserNameForCertificate      | User name/password      | X509                    | Message   |
+| MutualCertificate           | X509                    | X509                    | Message   |
+| MutualCertificateDuplex     | X509                    | X509                    | Message   |
+| IssuedTokenForCertificate   | Federated               | X509                    | Message   |
+| Kerberos                    | Windows                 | Windows                 | Message   |
+| IssuedToken                 | Federated               | Federated               | Message   |
+| SspiNegotiated              | Windows Sspi Negotiated | Windows Sspi Negotiated | Message   |
+| AnonymousForSslNegotiated   | None                    | X509, TLS-Nego          | Message   |
+| UserNameForSslNegotiated    | User name/password      | X509, TLS-Nego          | Message   |
+| MutualSslNegotiated         | X509                    | X509, TLS-Nego          | Message   |
+| IssuedTokenForSslNegotiated | Federated               | X509, TLS-Nego          | Message   |
 
  Endpoints using such authentication modes can express their security requirements using WS-SecurityPolicy (WS-SP). This document describes the structure of security header and infrastructure messages for each authentication mode and provides examples of policies and messages.
 
@@ -62,20 +60,20 @@ The Web Services Security Protocols provide Web services security mechanisms tha
 
  The following prefixes and namespaces are used in this document.
 
-|Prefix|Namespace|
-|------------|---------------|
-|s|<https://www.w3.org/2003/05/soap-envelope/>|
-|sp|`https://schemas.xmlsoap.org/ws/2005/07/securitypolicy/`|
-|a|<https://www.w3.org/2005/08/addressing>|
-|wsse|TBD – OASIS WSS 1.0 URI|
-|wsse11|TBD – OASIS WSS 1.1 URI|
-|wsu|TBD – OASIS WSS 1.0 Utility URI|
-|ds|TBD – W3C XMLDSig URI|
-|wst|TBD – WS-Trust 2005/02 URI|
-|wssc|TBD – WS-SecureConversation 2005/02 URI|
-|wsaw|TBD - WS-Addressing policy namespace|
-|wsp|`https://schemas.xmlsoap.org/ws/2004/09/policy`|
-|mssp|`https://schemas.xmlsoap.org/ws/2005/07/securitypolicy`|
+| Prefix | Namespace                                                |
+|--------|----------------------------------------------------------|
+| s      | <https://www.w3.org/2003/05/soap-envelope/>              |
+| sp     | `https://schemas.xmlsoap.org/ws/2005/07/securitypolicy/` |
+| a      | <https://www.w3.org/2005/08/addressing>                  |
+| wsse   | TBD – OASIS WSS 1.0 URI                                  |
+| wsse11 | TBD – OASIS WSS 1.1 URI                                  |
+| wsu    | TBD – OASIS WSS 1.0 Utility URI                          |
+| ds     | TBD – W3C XMLDSig URI                                    |
+| wst    | TBD – WS-Trust 2005/02 URI                               |
+| wssc   | TBD – WS-SecureConversation 2005/02 URI                  |
+| wsaw   | TBD - WS-Addressing policy namespace                     |
+| wsp    | `https://schemas.xmlsoap.org/ws/2004/09/policy`          |
+| mssp   | `https://schemas.xmlsoap.org/ws/2005/07/securitypolicy`  |
 
 ## 1. Token Profiles
 

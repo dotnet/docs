@@ -1,25 +1,25 @@
 ---
-title: "Nullable reference types - C# reference"
+title: "Nullable reference types"
 description: Learn about C# nullable reference types and how to use them
-ms.date: 09/08/2021
+ms.date: 11/22/2024
 ---
 # Nullable reference types (C# reference)
 
 > [!NOTE]
 > This article covers nullable reference types. You can also declare [nullable value types](nullable-value-types.md).
 
-Nullable reference types are available in code that has opted in to a *nullable aware context*. Nullable reference types, the null static analysis warnings, and the [null-forgiving operator](../operators/null-forgiving.md) are optional language features. All are turned off by default. A *nullable context* is controlled at the project level using build settings, or in code using pragmas.
+Nullable reference types are available in code that's in a *nullable aware context*. Nullable reference types, the null static analysis warnings, and the [null-forgiving operator](../operators/null-forgiving.md) are optional language features. All are turned off by default. A *nullable context* is controlled at the project level using build settings, or in code using pragmas.
 
 > [!IMPORTANT]
-> All project templates starting with .NET 6 (C# 10) enable the *nullable context* for the project. Projects created with earlier templates don't include this element, and these features are off unless you enable them in the project file or use pragmas.
+> All project templates enable the *nullable context* for the project. Projects created with earlier templates don't include this element, and these features are off unless you enable them in the project file or use pragmas.
 
  In a nullable aware context:
 
-- A variable of a reference type `T` must be initialized with non-null, and may never be assigned a value that may be `null`.
-- A variable of a reference type `T?` may be initialized with `null` or assigned `null`, but is required to be checked against `null` before de-referencing.
+- A variable of a reference type `T` must be initialized with non-null, and can never be assigned a value that might be `null`.
+- A variable of a reference type `T?` can be initialized with `null` or assigned `null`, but is required to be checked against `null` before dereferencing.
 - A variable `m` of type `T?` is considered to be non-null when you apply the null-forgiving operator, as in `m!`.
 
-The distinctions between a non-nullable reference type `T` and a nullable reference type `T?` are enforced by the compiler's interpretation of the preceding rules. A variable of type `T` and a variable of type `T?` are represented by the same .NET type. The following example declares a non-nullable string and a nullable string, and then uses the null-forgiving operator to assign a value to a non-nullable string:
+The compiler enforces the distinctions between a non-nullable reference type `T` and a nullable reference type `T?` using the preceding rules. A variable of type `T` and a variable of type `T?` are the same .NET type. The following example declares a non-nullable string and a nullable string, and then uses the null-forgiving operator to assign a value to a non-nullable string:
 
 :::code language="csharp" source="snippets/shared/NullableReferenceTypes.cs" id="SnippetCoreSyntax":::
 
@@ -53,7 +53,7 @@ Non-nullable reference types should always be safe to dereference because their 
 > [!NOTE]
 > If you assign a *maybe-null* expression to a non-nullable reference type, the compiler generates a warning. The compiler then generates warnings for that variable until it's assigned to a *not-null* expression.
 
-Nullable reference types may be initialized or assigned to `null`. Therefore, static analysis must determine that a variable is *not-null* before it's dereferenced. If a nullable reference is determined to be *maybe-null*, assigning to a non-nullable reference variable generates a compiler warning. The following class shows examples of these warnings:
+Nullable reference types can be initialized or assigned to `null`. Therefore, static analysis must determine that a variable is *not-null* before it's dereferenced. If a nullable reference is determined to be *maybe-null*, assigning to a non-nullable reference variable generates a compiler warning. The following class shows examples of these warnings:
 
 :::code language="csharp" source="snippets/shared/NullableReferenceTypes.cs" id="SnippetClassWithNullable":::
 
@@ -61,11 +61,11 @@ The following snippet shows where the compiler emits warnings when using this cl
 
 :::code language="csharp" source="snippets/shared/NullableReferenceTypes.cs" id="SnippetLocalWarnings":::
 
-The preceding examples demonstrate how compiler's static analysis determines the *null-state* of reference variables. The compiler applies language rules for null checks and assignments to inform its analysis.  The compiler can't make assumptions about the semantics of methods or properties. If you call methods that perform null checks, the compiler can't know those methods affect a variable's *null-state*. There are attributes you can add to your APIs to inform the compiler about the semantics of arguments and return values. These attributes have been applied to many common APIs in the .NET Core libraries. For example, <xref:System.String.IsNullOrEmpty%2A> has been updated, and the compiler correctly interprets that method as a null check. For more information about the attributes that apply to *null-state* static analysis, see the article on [Nullable attributes](../attributes/nullable-analysis.md).
+The preceding examples demonstrate how compiler's static analysis determines the *null-state* of reference variables. The compiler applies language rules for null checks and assignments to inform its analysis. The compiler can't make assumptions about the semantics of methods or properties. If you call methods that perform null checks, the compiler can't know those methods affect a variable's *null-state*. There are attributes you can add to your APIs to inform the compiler about the semantics of arguments and return values. Many common APIs in the .NET libraries have these attributes. For example, the compiler correctly interprets <xref:System.String.IsNullOrEmpty%2A> as a null check. For more information about the attributes that apply to *null-state* static analysis, see the article on [Nullable attributes](../attributes/nullable-analysis.md).
 
 ## Setting the nullable context
 
-There are two ways to control the nullable context. At the project level, you can add the `<Nullable>enable</Nullable>` project setting. In a single C# source file, you can add the `#nullable enable` pragma to enable the nullable context. See the article on [setting a nullable strategy](../../nullable-migration-strategies.md). Prior to .NET 6, new projects use the default, `<Nullable>disable</Nullable>`. Beginning with .NET 6, new projects include the `<Nullable>enable</Nullable>` element in the project file.
+There are two ways to control the nullable context. At the project level, you can add the `<Nullable>enable</Nullable>` project setting. In a single C# source file, you can add the `#nullable enable` pragma to enable the nullable context. See the article on [setting a nullable strategy](../../nullable-migration-strategies.md). Before .NET 6, new projects use the default, `<Nullable>disable</Nullable>`. Beginning with .NET 6, new projects include the `<Nullable>enable</Nullable>` element in the project file.
 
 ## C# language specification
 
@@ -76,5 +76,4 @@ For more information, see the following proposals for the [C# language specifica
 
 ## See also
 
-- [C# reference](../index.md)
 - [Nullable value types](nullable-value-types.md)

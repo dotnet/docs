@@ -1,7 +1,7 @@
 ---
 title: "User-defined explicit and implicit conversion operators - provide conversions to different types"
 description: "Learn how to define custom implicit and explicit type conversions in C#. The operators provide the functionality for casting an object to a new type."
-ms.date: 11/28/2022
+ms.date: 02/19/2025
 f1_keywords:
   - "explicit_CSharpKeyword"
   - "implicit_CSharpKeyword"
@@ -15,15 +15,15 @@ helpviewer_keywords:
 ---
 # User-defined explicit and implicit conversion operators
 
-A user-defined type can define a custom implicit or explicit conversion from or to another type. Implicit conversions don't require special syntax to be invoked and can occur in various situations, for example, in assignments and methods invocations. Predefined C# implicit conversions always succeed and never throw an exception. User-defined implicit conversions should behave in that way as well. If a custom conversion can throw an exception or lose information, define it as an explicit conversion.
+A user-defined type can define a custom implicit or explicit conversion from or to another type, provided a standard conversion doesn't exist between the same two types. Implicit conversions don't require special syntax to be invoked and can occur in various situations, for example, in assignments and methods invocations. Predefined C# implicit conversions always succeed and never throw an exception. User-defined implicit conversions should behave in that way as well. If a custom conversion can throw an exception or lose information, define it as an explicit conversion.
 
-User-defined conversions aren't considered by the [is](type-testing-and-cast.md#is-operator) and [as](type-testing-and-cast.md#as-operator) operators. Use a [cast expression](type-testing-and-cast.md#cast-expression) to invoke a user-defined explicit conversion.
+The [is](type-testing-and-cast.md#the-is-operator) and [as](type-testing-and-cast.md#the-as-operator) operators don't consider user-defined conversions. Use a [cast expression](type-testing-and-cast.md#cast-expression) to invoke a user-defined explicit conversion.
 
 Use the `operator` and `implicit` or `explicit` keywords to define an implicit or explicit conversion, respectively. The type that defines a conversion must be either a source type or a target type of that conversion. A conversion between two user-defined types can be defined in either of the two types.
 
 The following example demonstrates how to define an implicit and explicit conversion:
 
-[!code-csharp[implicit an explicit conversions](snippets/shared/UserDefinedConversions.cs)]
+:::code language="csharp" source="snippets/shared/UserDefinedConversions.cs":::
 
 Beginning with C# 11, you can define *checked* explicit conversion operators. For more information, see the [User-defined checked operators](arithmetic-operators.md#user-defined-checked-operators) section of the [Arithmetic operators](arithmetic-operators.md) article.
 
@@ -40,7 +40,6 @@ For more information, see the following sections of the [C# language specificati
 
 ## See also
 
-- [C# reference](../index.md)
 - [C# operators and expressions](index.md)
 - [Operator overloading](operator-overloading.md)
 - [Type-testing and cast operators](type-testing-and-cast.md)

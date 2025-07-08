@@ -1,4 +1,4 @@
-﻿// <snippet4>
+// <snippet4>
 using System;
 using System.Collections.ObjectModel;
 using System.ServiceModel;
@@ -99,21 +99,21 @@ public class Client
         {
             foreach (OperationDescription od in ep.Contract.Operations)
             {
-                Console.WriteLine("OPERATION {0}", od.Name);
+                Console.WriteLine($"OPERATION {od.Name}");
                 Console.WriteLine("in params");
                 foreach (MessagePartDescription part in od.Messages[0].Body.Parts)
                 {
-                    Console.WriteLine("{0}:{1}:{2}", part.Index, part.Name, part.Type);
+                    Console.WriteLine($"{part.Index}:{part.Name}:{part.Type}");
                 }
                 // assume two-way op below
                 Console.WriteLine("out params");
                 foreach (MessagePartDescription part in od.Messages[1].Body.Parts)
                 {
-                    Console.WriteLine("{0}:{1}:{2}", part.Index, part.Name, part.Type);
+                    Console.WriteLine($"{part.Index}:{part.Name}:{part.Type}");
                 }
                 Console.WriteLine("return value");
                 MessagePartDescription rv = od.Messages[1].Body.ReturnValue;
-                Console.WriteLine("{0}:{1}:{2}", rv.Index, rv.Name, rv.Type);
+                Console.WriteLine($"{rv.Index}:{rv.Name}:{rv.Type}");
                 Console.WriteLine();
             }
         }

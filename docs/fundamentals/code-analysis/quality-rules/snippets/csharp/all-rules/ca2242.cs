@@ -7,7 +7,7 @@ namespace ca2242
     {
         static double zero = 0;
 
-        static void Main()
+        static void RunIt()
         {
             Console.WriteLine(0 / zero == double.NaN);
             Console.WriteLine(0 / zero != double.NaN);

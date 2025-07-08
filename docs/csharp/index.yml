@@ -1,166 +1,322 @@
-### YamlMime:Landing
+### YamlMime:Hub
 
-title: "C# documentation"
-summary: "Learn how to write any application using the C# programming language on the .NET platform."
+#root section (Required)
+title: C# language documentation
+summary: >
+  The C# guide contains articles, tutorials, and code samples to help you get started with C# and the .NET platform. Experienced developers can learn about new
+  features in the What's new section. Experienced developers can learn details of language behavior from the reference and language specifications.
+brand: dotnet
 
 metadata:
-  title: "C# docs - get started, tutorials, reference."
-  description: "Learn C# programming - for beginning developers, developers new to C#, and experienced C# / .NET developers"
-  ms.topic: landing-page # Required
-  ms.date: 04/05/2023
+  title: C# Guide - .NET managed language
+  description: The C# guide has everything you need to learn C# and get started writing .NET apps. Learn C# programming - for beginning developers, developers new to C#, and experienced C# / .NET developers.
+  ms.service: dotnet-csharp
+  ms.topic: hub-page
+  author: billwagner
+  ms.author: wiwagn
+  ms.date: 03/15/2024
 
-landingContent:
-  - title: "Learn to program in C#"
-    linkLists:
-      - linkListType: get-started
-        links:
-          - text: Learn C# | Tutorials, courses, videos, and more 
-            url: https://dotnet.microsoft.com/learn/csharp
-      - linkListType: video
-        links:
-          - text: "C# beginner video series"
-            url: https://aka.ms/dotnet3-csharp
-          - text: "C# beginner stream"
-            url: https://youtube.com/playlist?list=PLdo4fOcmZ0oXv32dOd36UydQYLejKR61R
-          - text: "C# intermediate video series"
-            url: /shows/C-Advanced
-      - linkListType: tutorial
-        links:
-          - text: "Self-guided tutorials"
-            url: https://learn.microsoft.com/users/dotnet/collections/yz26f8y64n7k07?WT.mc_id=dotnet-35129-website 
-          - text: "In-browser tutorial"
-            url: ./tour-of-csharp/tutorials/hello-world.yml
-      - linkListType: reference
-        links:
-          - text: "C# on Q&A"
-            url: /answers/topics/dotnet-csharp.html
-          - text: "Languages on .NET tech community forums"
-            url: https://techcommunity.microsoft.com/t5/languages/bd-p/languages
-          - text: "C# on Stack Overflow"
-            url: https://stackoverflow.com/questions/tagged/c%23
-          - text: "C# on Discord"
-            url: https://aka.ms/csharp-discord
+# highlightedContent section (Optional; Remove if not applicable.)
+# Maximum of 8 items
+highlightedContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | training | overview | quickstart | reference | sample | tutorial | video | whats-new
+  items:
+    # Card
+    - title: Tour of C#
+      itemType: get-started
+      url: ./tour-of-csharp/overview.md
+    # Card
+    - title: Fundamentals
+      itemType: concept
+      url: ./fundamentals/program-structure/index.md
+    # Card
+    - title: What's new
+      itemType: whats-new
+      url: ./whats-new/csharp-14.md
+    # Card
+    - title: Learn C# video series
+      itemType: video
+      url: https://aka.ms/dotnet/beginnervideos/learn/csharp
+    # Card
+    - title: C# learning paths
+      itemType: training
+      url: https://learn.microsoft.com/collections/yz26f8y64n7k07
+    # Card
+    - title: Foundational C# Certification - freeCodeCamp
+      itemType: training
+      url: https://www.freecodecamp.org/learn/foundational-c-sharp-with-microsoft/
 
-  - title: "C# fundamentals"
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: "A tour of C#"
-            url: tour-of-csharp/index.md
-          - text: "Inside a C# program"
-            url: ./fundamentals/program-structure/index.md
-          - text: "C# highlights video series"
-            url: https://youtube.com/playlist?list=PLdo4fOcmZ0oU3ZLx6Ul1_HPrr6lFPIn9O
-      - linkListType: concept
-        links:
-          - text: "Type system"
-            url: ./fundamentals/types/index.md
-          - text: "Object oriented programming"
-            url: ./fundamentals/object-oriented/index.md
-          - text: "Functional techniques"
-            url: ./fundamentals/functional/pattern-matching.md
-          - text: "Exceptions"
-            url: ./fundamentals/exceptions/index.md
-          - text: "Coding style"
-            url: ./fundamentals/coding-style/identifier-names.md
-      - linkListType: tutorial
-        links:
-          - text: Display command-line
-            url: ./fundamentals/tutorials/how-to-display-command-line-arguments.md
-          - text: Intro to classes
-            url: ./fundamentals/tutorials/classes.md
-          - text: Object oriented C#
-            url: ./fundamentals/tutorials/oop.md
-          - text: Converting types
-            url: ./fundamentals/tutorials/safely-cast-using-pattern-matching-is-and-as-operators.md
-          - text: Pattern matching
-            url: ./fundamentals/tutorials/pattern-matching.md
-          - text: Use LINQ to query data
-            url: tutorials/working-with-linq.md
-  - title: "Key concepts"
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: C# language strategy
-            url: ./tour-of-csharp/strategy.md
-          - text: "Programming concepts"
-            url: ./programming-guide/concepts/index.md
-      - linkListType: quickstart
-        links:
-          - text: "Methods"
-            url: ./methods.md
-          - text: "Properties"
-            url: ./properties.md
-          - text: "Indexers"
-            url: ./indexers.md
-          - text: "Iterators"
-            url: ./iterators.md
-          - text: "Delegates"
-            url: ./delegates-overview.md
-          - text: "Events"
-            url: ./events-overview.md
-      - linkListType: concept
-        links:
-          - text: "Nullable reference types"
-            url: ./nullable-references.md
-          - text: "Nullable reference migrations"
-            url: ./nullable-migration-strategies.md
-          - text: "Language Integrated Query (LINQ)"
-            url: linq/index.md
-          - text: "Versioning"
-            url: ./versioning.md
-            
-  - title: "What's new"
-    linkLists:
-      - linkListType: whats-new
-        links:
-          - text: "What's new in C# 12"
-            url: whats-new/csharp-12.md
-          - text: "What's new in C# 11"
-            url: whats-new/csharp-11.md
-          - text: "What's new in C# 10"
-            url: whats-new/csharp-10.md
-          - text: "What's new in C# 9.0"
-            url: whats-new/csharp-9.md
-      - linkListType: tutorial
-        links:
-          - text: Explore record types
-            url: whats-new/tutorials/records.md
-          - text: Explore top level statements
-            url: whats-new/tutorials/top-level-statements.md
-          - text: Explore new patterns
-            url: whats-new/tutorials/patterns-objects.md
-          - text: Write a custom string interpolation handler
-            url: whats-new/tutorials/interpolated-string-handler.md
-      - linkListType: reference
-        links:
-          - text: Breaking changes in the C# compiler
-            url: whats-new/breaking-changes.md
-          - text: Version compatibility
-            url: whats-new/version-update-considerations.md
-            
-  - title: "C# language reference"
-    linkLists:
-      - linkListType: reference
-        links:
-          - text: "Language reference"
-            url: language-reference/index.md
-          - text: "C# keywords"
-            url: language-reference/keywords/index.md
-          - text: "C# operators and expressions"
-            url: language-reference/operators/index.md
-          - text: Configure language version
-            url: language-reference/configure-language-version.md
-          - text: "C# language specification - C# 7 draft in progress"
-            url: ../../_csharpstandard/standard/README.md
 
-  - title: "Stay in touch"
-    linkLists:
-      - linkListType: reference
-        links:
-          - text: ".NET developer community"
-            url: https://dotnet.microsoft.com/platform/community
-          - text: "YouTube"
-            url: https://www.youtube.com/dotnet
-          - text: "Twitter"
-            url: https://twitter.com/DotNet
+# productDirectory section (Optional; Remove if not applicable.)
+productDirectory:
+  title: Learn to program
+  summary: Major concepts and features of the C# language
+  items:
+    # Card
+    - title: Get started
+      # imageSrc should be square in ratio with no white space
+      imageSrc: ../media/logo_csharp.png
+      links:
+        - url: ./tour-of-csharp/overview.md
+          text: A tour of C#
+        - url: ./tour-of-csharp/tutorials/index.md
+          text: Beginner C# tutorials
+        - url: ./tour-of-csharp/tutorials/hello-world.md
+          text: Try C# in your browser
+        - url: ./fundamentals/program-structure/index.md
+          text: "Inside a C# program"
+        - url: https://aka.ms/dotnet/beginnervideos/learn/csharp
+          text: "C# for beginners video series"
+        - url: https://aka.ms/csharp-certification
+          text: Foundational C# Certification
+
+    - title: Fundamentals
+      # imageSrc should be square in ratio with no white space
+      imageSrc: ../media/dotnet-bot.svg
+      links:
+        - url: ./fundamentals/types/index.md
+          text: Type system
+        - url: ./fundamentals/object-oriented/index.md
+          text: "Object oriented programming"
+        - url: ./fundamentals/functional/pattern-matching.md
+          text: "Functional techniques"
+        - url: ./fundamentals/exceptions/index.md
+          text: "Exceptions"
+        - url: ./fundamentals/coding-style/identifier-names.md
+          text: "Coding style"
+        - url: ./tour-of-csharp/strategy.md
+          text: C# language strategy
+
+    # Card
+    - title: Language concepts
+      # imageSrc should be square in ratio with no white space
+      imageSrc: ../media/dotnet-bot_presenting.svg
+      links:
+        - url: ./programming-guide/concepts/index.md
+          text: "Programming concepts"
+        - url: ./linq/index.md
+          text: LINQ
+        - url: ./asynchronous-programming/index.md
+          text: Asynchronous programming
+    - title: Advanced language concepts
+      # imageSrc should be square in ratio with no white space
+      imageSrc: ../media/dotnet-bot_jetpack-faceing-right.svg
+      links:
+        - url: ./advanced-topics/reflection-and-attributes/index.md
+          text: Reflection and attributes
+        - url: ./advanced-topics/interface-implementation/default-interface-methods-versions.md
+          text: Interface implementations
+        - url: ./advanced-topics/expression-trees/index.md
+          text: Expression trees
+        - url: ./advanced-topics/interop/index.md
+          text: Native interoperability
+        - url: ./advanced-topics/performance/index.md
+          text: Performance engineering
+        - url: ./roslyn-sdk/index.md
+          text: .NET compiler platform (roslyn) SDK
+
+conceptualContent:
+# itemType: reference
+  # Supports up to 3 subsections
+  sections:
+    - title: Reference
+      summary: >
+        Read C# language reference material, and the C# language specifications. The C# reference provides an informative reference for the C# language.
+        The C# language specification is the normative reference for the C# language. It's the official source for C# language syntax and semantics.
+        Feature specifications document features not yet incorporated in the standard.
+      items:
+        # Card
+        - title: Language reference
+          summary: The C# language reference provides an informative explanation of the C# language.
+          links:
+            - url: ./language-reference/index.yml
+              itemType: reference
+              text: C# language reference
+            - url: ./language-reference/builtin-types/value-types.md
+              itemType: reference
+              text: Built-in types
+            - url: ./language-reference/keywords/index.md
+              itemType: reference
+              text: Keywords
+            - url: ./language-reference/operators/index.md
+              itemType: reference
+              text: Operators
+            - url: ./language-reference/statements/declarations.md
+              itemType: reference
+              text: Statements
+            - url: ./language-reference/tokens/index.md
+              itemType: reference
+              text: Special characters
+            - url: ./language-reference/xmldoc/index.md
+              itemType: reference
+              text: Documentation comments
+        # Card
+        - title: Language reference
+          summary: Unsafe code and compiler options
+          links:
+            - url: ./language-reference/attributes/global.md
+              itemType: reference
+              text: Special attributes
+            - url: ./language-reference/unsafe-code.md
+              itemType: reference
+              text: Unsafe code
+            - url: ./language-reference/preprocessor-directives.md
+              itemType: reference
+              text: Preprocessor directives
+            - url: ./language-reference/compiler-options/index.md
+              itemType: reference
+              text: Compiler options
+
+        # Card
+        - title: Language specification
+          summary: The official specification for the C# language
+          links:
+            - url: ./specification/index.yml
+              itemType: reference
+              text: Standard and specifications
+            - url: ./specification/overview.md
+              itemType: reference
+              text: The specification process
+            - url: ../../_csharpstandard/standard/README.md
+              itemType: reference
+              text: C# draft standard
+            - url: ../../_csharplang/proposals/csharp-10.0/enhanced-line-directives.md
+              itemType: reference
+              text: Feature specifications
+
+# tools section (Optional; Remove if not applicable.)
+tools:
+  title: Build C# apps with the Visual Studio family
+  summary: Choose Visual Studio or Visual Studio Code to build your C# applications.
+  items:
+    # Card
+    - title: Visual Studio
+      # imageSrc should be square in ratio with no white space
+      imageSrc: /visualstudio/media/vs-ide-2022.svg
+      url: /visualstudio/windows
+    # Card
+    - title: Visual Studio Code
+      imageSrc: /visualstudio/media/vs-code-logo.svg
+      url: https://code.visualstudio.com/docs/csharp/get-started
+
+# additionalContent section (Optional; Remove if not applicable.)
+# Card with links style
+additionalContent:
+  # Supports up to 4 subsections
+  sections:
+    - title: Create your application # < 60 chars (optional)
+      summary: "You can choose web, mobile, desktop, gaming, IoT, and more." # < 160 chars (optional)
+      items:
+        # Card
+        - title: Machine learning and AI
+          links:
+            - url: ../machine-learning/index.yml
+              text: Build custom AI solutions with ML.NET
+            - url: /azure/cognitive-services/
+              text: Azure Cognitive Services
+            - url: /azure/machine-learning
+              text: Azure Machine Learning
+            - url: ../fsharp/scenarios/machine-learning.md
+              text: F# for machine learning
+        # Card
+        - title: Cloud
+          links:
+            - url: ../azure/index.yml
+              text: Azure for .NET developers
+            - url: /dotnet/aspire
+              text: .NET Aspire
+            - url: /dotnet/aspire/get-started/quickstart-build-your-first-aspire-app
+              text: Build cloud-native apps with .NET Aspire
+            - url: ../azure/migration/app-service.md?preserve-view=true&view=azure-dotnet
+              text: Migrate on-premises .NET web apps or services
+            - url: ../azure/key-azure-services.md
+              text: Azure services for .NET developers
+            - url: ../azure/sdk/azure-sdk-for-dotnet.md
+              text: Azure SDK for .NET
+            - url: ../fsharp/using-fsharp-on-azure/deploying-and-managing.md
+              text: Deploy Azure resources with F#
+        # Card
+        - title: Web
+          links:
+            - url: /aspnet/core/tutorials
+              text: ASP.NET Core tutorials
+            - url: /aspnet/core
+              text: What is ASP.NET Core?
+            - url: /aspnet/core/tutorials/first-mvc-app/start-mvc
+              text: ASP.NET Core in Visual Studio
+            - url: /aspnet/mvc/overview/deployment/docker-aspnetmvc
+              text: ASP.NET MVC apps in Windows containers
+            - url: /aspnet/core/blazor/
+              text: "Blazor: Interactive client-side web UI with .NET"
+            - url: ../fsharp/scenarios/web-development.md
+              text: F# for web development
+        # Card
+        - title: Microservices
+          links:
+            - url: ../architecture/dapr-for-net-developers/index.md
+              text: Dapr for .NET developers
+            - url: ../architecture/cloud-native/index.md
+              text: Cloud native .NET apps
+            - url: ../architecture/serverless/index.md
+              text: Serverless apps with Azure
+            - url: ../architecture/microservices/index.md
+              text: Architecture for containerized .NET apps
+            - url: ../core/extensions/cloud-service.md
+              text: Deploy a Worker Service to Azure
+        # Card
+        - title: Mobile, Desktop, and IoT
+          links:
+            - url: /dotnet/desktop/wpf/
+              text: Windows Presentation Foundation
+            - url: /dotnet/desktop/winforms/
+              text: Windows Forms
+            - url: /dotnet/maui
+              text: .NET Multi-platform App UI (.NET MAUI)
+            - url: /azure/developer/mobile-apps
+              text: Develop mobile apps with Azure
+            - url: ../iot/index.yml
+              text: .NET IoT libraries
+            - url: ../iot/quickstarts/sensehat.md
+              text: Get started with IOT in 5 minutes
+            - url: ../iot/tutorials/blink-led.md
+              text: Blink an LED
+            - url: https://aka.ms/dotnet/beginnervideos/youtube/iot
+              text: .NET IoT 101 video series
+        # Card
+        - title: Game development
+          links:
+            - url: https://visualstudio.microsoft.com/vs/features/game-development/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link
+              text: Game development with Visual Studio
+            - url: https://docs.cryengine.com/display/CEPROG/C%23+Programming
+              text: Learn how to use CRYENGINE to build games with C#
+            - url: https://docs.monogame.net/?page=main
+              text: Build games with C# using the MonoGame library
+            - url: https://docs.unity3d.com/Manual/index.html
+              text: Learn how to use Unity to build 2D and 3D games with C#
+
+    - title: API and language reference # < 60 chars (optional)
+      summary: Search the .NET API and language reference documentation. # < 160 chars (optional)
+      items:
+        # Card
+        - title: ".NET API reference"
+          summary: API reference documentation for .NET
+          url: ../../api/index.md
+        # Card
+        - title: "ASP.NET Core API reference"
+          summary: API reference documentation for ASP.NET Core
+          url: ../../api/index.md
+        # Card
+        - title: ".NET Aspire API reference"
+          summary: Reference documentation for .NET Aspire
+          url: ../../api/index.md?view=dotnet-aspire-9.0&preserve-view=true
+        # Card
+        - title: "ML.NET API reference"
+          summary: API reference documentation for ML.NET
+          url: ../../api/index.md
+        # Card
+        - title: ".NET Framework API reference"
+          summary: API reference documentation for .NET Framework
+          url: ../../api/index.md?view=netframework-4.8&preserve-view=true
+
+  # footer (Optional; Remove if not applicable.)
+  footer: "Are you interested in contributing to the .NET docs? For more information, see our [contributor guide](/contribute/dotnet/dotnet-contribute)."

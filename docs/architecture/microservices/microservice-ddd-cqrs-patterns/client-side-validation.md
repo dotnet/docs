@@ -17,21 +17,13 @@ Even when using client-side validation, you should always validate your commands
 
 Therefore, in client-side code you typically validate the ViewModels. You could also validate the client output DTOs or commands before you send them to the services.
 
-The implementation of client-side validation depends on what kind of client application you are building. It will be different if you are validating data in a web MVC web application with most of the code in .NET, a SPA web application with that validation being coded in JavaScript or TypeScript, or a mobile app coded with Xamarin and C#.
+The implementation of client-side validation depends on what kind of client application you are building. It will be different if you're validating data in an MVC web application with most of the code in .NET versus a SPA web application with the validation code in JavaScript or TypeScript.
 
 ## Additional resources
 
-### Validation in Xamarin mobile apps
-
-- **Validate Text Input and Show Errors** \
-  [https://developer.xamarin.com/recipes/ios/standard\_controls/text\_field/validate\_input/](https://developer.xamarin.com/recipes/ios/standard_controls/text_field/validate_input/)
-
-- **Validation Callback** \
-  <https://developer.xamarin.com/samples/xamarin-forms/XAML/ValidationCallback/>
-
 ### Validation in ASP.NET Core apps
 
-- **Rick Anderson. Adding validation** \
+- **Add validation** \
   [https://learn.microsoft.com/aspnet/core/tutorials/first-mvc-app/validation](/aspnet/core/tutorials/first-mvc-app/validation)
 
 ### Validation in SPA Web apps (Angular 2, TypeScript, JavaScript, Blazor WebAssembly)

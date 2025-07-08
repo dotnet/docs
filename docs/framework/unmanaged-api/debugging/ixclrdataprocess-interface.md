@@ -35,6 +35,23 @@ Provides methods for querying information about a process.
 | [StartEnumMethodInstancesByAddress](ixclrdataprocess-startenummethodinstancesbyaddress-method.md) | Provides a handle to enumerate the method instances of `AppDomain` starting at a given address. |
 | [EnumMethodInstanceByAddress](ixclrdataprocess-enummethodinstancebyaddress-method.md)             | Enumerates the method instances of this process starting at an address offset.                  |
 | [EndEnumMethodInstancesByAddress](ixclrdataprocess-endenummethodinstancesbyaddress-method.md)     | Releases the resources used by internal iterators used during instance enumeration.             |
+| [GetTaskByOSThreadID](ixclrdataprocess-gettaskbyosthreadid-method.md)                             | Gets a managed task by its OS thread ID. |
+| [GetTaskByUniqueID](ixclrdataprocess-gettaskbyuniqueid-method.md)                                 | Gets a managed task by its unique ID. |
+| [GetModuleByAddress](ixclrdataprocess-getmodulebyaddress-method.md)                               | Looks up a managed module by address. |
+| [StartEnumMethodDefinitionsByAddress](ixclrdataprocess-startenummethoddefinitionsbyaddress-method.md) | Provides a handle to enumerate method instances by IL code address. |
+| [EnumMethodDefinitionByAddress](ixclrdataprocess-enummethoddefinitionbyaddress-method.md)         | Enumerates method instances by IL code address. |
+| [EndEnumMethodDefinitionsByAddress](ixclrdataprocess-endenummethoddefinitionsbyaddress-method.md) | Releases the resources used by internal iterators used during instance enumeration. |
+| [FollowStub](ixclrdataprocess-followstub-method.md)                                               | Given an address which is a CLR stub (and potentially state from a previous follow) determine the next execution address at which to check whether the stub has been exited. |
+| [FollowStub2](ixclrdataprocess-followstub2-method.md)                                             | Given an address which is a CLR stub (and potentially state from a previous follow) determine the next execution address at which to check whether the stub has been exited. |
+| [TranslateExceptionRecordToNotification](ixclrdataprocess-translateexceptionrecordtonotification-method.md) | Translates a system exception record into a particular kind of notification if possible. |
+| [GetAddressType](ixclrdataprocess-getaddresstype-method.md)                                       | Returns an indication of the type of data referred to by the given address. |
+| [SetCodeNotifications](ixclrdataprocess-setcodenotifications-method.md)                           | Requests notifications when code is generated or discarded for a method. |
+| [SetAllCodeNotifications](ixclrdataprocess-setallcodenotifications-method.md)                     | Requests notifications when code is generated or discarded for any method instance in a given `IXCLRDataModule`. |
+| [Request](ixclrdataprocess-request-method.md)                                                     | Requests to populate the buffer given with the process's data. |
+| [SetOtherNotificationFlags](ixclrdataprocess-setothernotificationflags-method.md)                 | Requests notifications when specific events are raised by the CLR. |
+| [StartEnumAppDomains](ixclrdataprocess-startenumappdomains-method.md)                             | Provides a handle to enumerate AppDomains in the process. |
+| [EnumAppDomain](ixclrdataprocess-enumappdomain-method.md)                                         | Enumerates AppDomains in the process. |
+| [EndEnumAppDomains](ixclrdataprocess-endenumappdomains-method.md)                                 | Releases the resources used by internal iterators used during AppDomain enumeration. |
 
 ## Remarks
 

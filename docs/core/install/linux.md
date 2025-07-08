@@ -1,9 +1,10 @@
 ---
 title: Install .NET on Linux distributions
-description: Learn about how to install .NET on Linux. .NET is not only available at package.microsoft.com, but also the official package archives for various Linux distributions.
+description: Learn about how .NET is available on Linux. .NET can be installed through a package manager, a snap package, or manually.
 author: adegeo
 ms.author: adegeo
-ms.date: 05/04/2023
+ms.custom: updateeachrelease, linux-related-content
+ms.date: 11/04/2024
 ---
 
 # Install .NET on Linux
@@ -14,7 +15,33 @@ ms.date: 05/04/2023
 > - [Install on macOS](macos.md)
 > - [Install on Linux](linux.md)
 
-This article details how to install .NET on various Linux distributions either manually, via a package manager, or via a [container](../docker/introduction.md#net-images).
+This article describes how .NET is available on various Linux distributions. .NET can be installed by a package manager, snap, or manually. .NET is also available as a [container image](../docker/introduction.md#net-images).
+
+## Packages
+
+Packages are available for the following Linux distributions:
+
+- Azure Linux
+- [Debian](linux-debian.md)
+- [openSUSE Leap](linux-opensuse.md)
+- [SUSE Enterprise Linux](linux-sles.md)
+
+Packages are published in the Microsoft package repository at <https://packages.microsoft.com/>. Distributions are selected per the policy defined at [dotnet/core #9556](https://github.com/dotnet/core/discussions/9556).
+
+The following Linux distributions publish their own .NET packages:
+
+- [Alpine](linux-alpine.md)
+- [CentOS Stream](linux-rhel.md#centos-stream-9)
+- [Fedora](linux-fedora.md)
+- [Red Hat Enterprise Linux (RHEL)](linux-rhel.md)
+- [Ubuntu](linux-ubuntu-install.md)
+
+## Snap
+
+.NET SDK snap packages are provided by and maintained by Canonical. Snaps are a great alternative to the package manager built into your Linux distribution.
+
+- [Install .NET Runtime with Snap](linux-snap-runtime.md)
+- [Install .NET SDK with Snap](linux-snap-sdk.md)
 
 ## Manual installation
 
@@ -23,24 +50,27 @@ You can install .NET manually in the following ways:
 - [Manual install](linux-scripted-manual.md#manual-install)
 - [Scripted install](linux-scripted-manual.md#scripted-install)
 
-You may need to install [.NET dependencies](https://github.com/dotnet/core/blob/main/release-notes/7.0/linux-packages.md) if you install .NET manually.
+You might need to install [.NET dependencies](https://github.com/dotnet/core/blob/main/release-notes/8.0/linux-packages.md) if you install .NET manually.
 
-## Packages
+## Additional sources
 
-.NET is available in [official package archives](https://github.com/dotnet/core/blob/main/linux.md) for various Linux distributions and [packages.microsoft.com](https://packages.microsoft.com/).
+.NET is also available from other sources. The packages and containers use a name similar to one of the following names:
 
-- [Alpine](linux-alpine.md)
-- [CentOS](linux-centos.md)
-- [Debian](linux-debian.md)
-- [Fedora](linux-fedora.md)
-- [openSUSE](linux-opensuse.md)
-- [SLES](linux-sles.md)
-- [Ubuntu](linux-ubuntu.md)
+- aspnet-runtime
+- dotnet-runtime
+- dotnet-sdk
+- dotnet
 
-.NET is [supported by Microsoft](https://github.com/dotnet/core/blob/main/microsoft-support.md) when downloaded from a Microsoft source. Best effort support is offered from Microsoft when downloaded from elsewhere. You can open issues at [dotnet/core](https://github.com/dotnet/core) if you run into problems.
+### Package managers
 
-## Next steps
+- <https://formulae.brew.sh/cask/dotnet>
+- <https://formulae.brew.sh/cask/dotnet-sdk>
+- <https://ports.macports.org/port/dotnet-cli>
+- <https://search.nixos.org/packages?query=dotnet>
+- <https://archlinux.org>
+- <https://aur.archlinux.org>
 
-- [How to check if .NET is already installed](how-to-detect-installed-versions.md?pivots=os-linux).
-- [Tutorial: Create a new app with Visual Studio Code](../tutorials/with-visual-studio-code.md).
-- [Tutorial: Containerize a .NET app](../docker/build-container.md).
+### Containers
+
+- <https://containers.dev/features>
+- <https://images.chainguard.dev>

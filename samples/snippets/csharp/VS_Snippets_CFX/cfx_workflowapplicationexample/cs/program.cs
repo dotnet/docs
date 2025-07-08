@@ -1,22 +1,21 @@
-﻿using System;
-using System.Linq;
+using System;
 using System.Activities;
-using System.Activities.Statements;
-using System.Threading;
-using System.Collections.Generic;
-using System.Activities.Hosting;
 using System.Activities.DurableInstancing;
-using System.Collections;
-using System.ComponentModel;
-using System.Windows.Markup;
-using System.Collections.ObjectModel;
 using System.Activities.Expressions;
-using Microsoft.VisualBasic.Activities;
-using System.Text;
-using System.Activities.XamlIntegration;
-using System.Xaml;
-using System.IO;
+using System.Activities.Hosting;
+using System.Activities.Statements;
 using System.Activities.Validation;
+using System.Activities.XamlIntegration;
+using System.Collections;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.IO;
+using System.Text;
+using System.Threading;
+using System.Windows.Markup;
+using System.Xaml;
+using Microsoft.VisualBasic.Activities;
 
 // Snippets
 // 1 WorkflowApplicationUnhandledExceptionEventArgs
@@ -62,7 +61,6 @@ using System.Activities.Validation;
 
 namespace WorkflowApplicationExample
 {
-
     class Program
     {
         static void Main(string[] args)
@@ -103,56 +101,54 @@ namespace WorkflowApplicationExample
             WorkflowApplication wfApp = new WorkflowApplication(wf);
 
             // Handle the desired lifecycle events.
-            wfApp.Completed = delegate(WorkflowApplicationCompletedEventArgs e)
+            wfApp.Completed = delegate (WorkflowApplicationCompletedEventArgs e)
             {
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
-                    Console.WriteLine("Workflow {0} Terminated.", e.InstanceId);
-                    Console.WriteLine("Exception: {0}\n{1}",
-                        e.TerminationException.GetType().FullName,
-                        e.TerminationException.Message);
+                    Console.WriteLine($"Workflow {e.InstanceId} Terminated.");
+                    Console.WriteLine($"""
+                    Exception: {e.TerminationException.GetType().FullName}
+                    {e.TerminationException.Message}
+                    """);
                 }
                 else if (e.CompletionState == ActivityInstanceState.Canceled)
                 {
-                    Console.WriteLine("Workflow {0} Canceled.", e.InstanceId);
+                    Console.WriteLine($"Workflow {e.InstanceId} Canceled.");
                 }
                 else
                 {
-                    Console.WriteLine("Workflow {0} Completed.", e.InstanceId);
+                    Console.WriteLine($"Workflow {e.InstanceId} Completed.");
 
                     // Retrieve the outputs of the workflow.
                     foreach (var kvp in e.Outputs)
                     {
-                        Console.WriteLine("Name: {0} - Value {1}",
-                            kvp.Key, kvp.Value);
+                        Console.WriteLine($"Name: {kvp.Key} - Value {kvp.Value}");
                     }
 
                     // Outputs can be directly accessed by argument name.
-                    Console.WriteLine("The winner is {0}.", e.Outputs["Winner"]);
+                    Console.WriteLine($"The winner is {e.Outputs["Winner"]}.");
                 }
                 syncEvent.Set();
             };
 
-            wfApp.Unloaded = delegate(WorkflowApplicationEventArgs e)
+            wfApp.Unloaded = delegate (WorkflowApplicationEventArgs e)
             {
-                Console.WriteLine("Workflow {0} unloaded.", e.InstanceId);
+                Console.WriteLine($"Workflow {e.InstanceId} unloaded.");
             };
 
-            wfApp.Aborted = delegate(WorkflowApplicationAbortedEventArgs e)
+            wfApp.Aborted = delegate (WorkflowApplicationAbortedEventArgs e)
             {
                 // Display the exception that caused the workflow
                 // to abort.
-                Console.WriteLine("OnAborted: {0}", e.Reason.Message);
+                Console.WriteLine($"OnAborted: {e.Reason.Message}");
             };
 
-            wfApp.OnUnhandledException = delegate(WorkflowApplicationUnhandledExceptionEventArgs e)
+            wfApp.OnUnhandledException = delegate (WorkflowApplicationUnhandledExceptionEventArgs e)
             {
                 // Display the unhandled exception.
-                Console.WriteLine("OnUnhandledException in Workflow {0}: {1}",
-                    e.InstanceId, e.UnhandledException.Message);
+                Console.WriteLine($"OnUnhandledException in Workflow {e.InstanceId}: {e.UnhandledException.Message}");
 
-                Console.WriteLine("ExceptionSource: {0} - {1}",
-                    e.ExceptionSource, e.ExceptionSourceInstanceId);
+                Console.WriteLine($"ExceptionSource: {e.ExceptionSource} - {e.ExceptionSourceInstanceId}");
 
                 // Instruct the runtime to terminate the workflow.
                 return UnhandledExceptionAction.Terminate;
@@ -161,14 +157,14 @@ namespace WorkflowApplicationExample
                 // UnhandledExceptionAction.Cancel
             };
 
-            wfApp.Idle = delegate(WorkflowApplicationIdleEventArgs e)
+            wfApp.Idle = delegate (WorkflowApplicationIdleEventArgs e)
             {
                 // Perform any processing that should occur
                 // when a workflow goes idle. If the workflow can persist,
                 // both Idle and PersistableIdle are called.
             };
 
-            wfApp.PersistableIdle = delegate(WorkflowApplicationIdleEventArgs e)
+            wfApp.PersistableIdle = delegate (WorkflowApplicationIdleEventArgs e)
             {
                 // Instruct the runtime to persist and unload the workflow
                 return PersistableIdleAction.Unload;
@@ -210,14 +206,12 @@ namespace WorkflowApplicationExample
 
             WorkflowApplication wfApp = new WorkflowApplication(wf);
 
-            wfApp.OnUnhandledException = delegate(WorkflowApplicationUnhandledExceptionEventArgs e)
+            wfApp.OnUnhandledException = delegate (WorkflowApplicationUnhandledExceptionEventArgs e)
             {
                 // Display the unhandled exception.
-                Console.WriteLine("OnUnhandledException in Workflow {0}\n{1}",
-                    e.InstanceId, e.UnhandledException.Message);
+                Console.WriteLine($"OnUnhandledException in Workflow {e.InstanceId}\n{e.UnhandledException.Message}");
 
-                Console.WriteLine("ExceptionSource: {0} - {1}",
-                    e.ExceptionSource.DisplayName, e.ExceptionSourceInstanceId);
+                Console.WriteLine($"ExceptionSource: {e.ExceptionSource.DisplayName} - {e.ExceptionSourceInstanceId}");
 
                 // Instruct the runtime to terminate the workflow.
                 return UnhandledExceptionAction.Terminate;
@@ -242,12 +236,11 @@ namespace WorkflowApplicationExample
             // End setup
 
             //<snippet2>
-            wfApp.Idle = delegate(WorkflowApplicationIdleEventArgs e)
+            wfApp.Idle = delegate (WorkflowApplicationIdleEventArgs e)
             {
                 foreach (BookmarkInfo info in e.Bookmarks)
                 {
-                    Console.WriteLine("BookmarkName: {0} - OwnerDisplayName: {1}",
-                        info.BookmarkName, info.OwnerDisplayName);
+                    Console.WriteLine($"BookmarkName: {info.BookmarkName} - OwnerDisplayName: {info.OwnerDisplayName}");
                 }
 
                 idleEvent.Set();
@@ -261,47 +254,47 @@ namespace WorkflowApplicationExample
             // WorkflowApplicationEventArgs
             // WorkflowApplication.Unloaded
             //<snippet3>
-            wfApp.Unloaded = delegate(WorkflowApplicationEventArgs e)
+            wfApp.Unloaded = delegate (WorkflowApplicationEventArgs e)
             {
-                Console.WriteLine("Workflow {0} unloaded.", e.InstanceId);
+                Console.WriteLine($"Workflow {e.InstanceId} unloaded.");
             };
             //</snippet3>
 
             // WorkflowApplicationCompletedEventArgs
             // WorkflowApplication.Completed
             //<snippet4>
-            wfApp.Completed = delegate(WorkflowApplicationCompletedEventArgs e)
+            wfApp.Completed = delegate (WorkflowApplicationCompletedEventArgs e)
             {
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
-                    Console.WriteLine("Workflow {0} Terminated.", e.InstanceId);
-                    Console.WriteLine("Exception: {0}\n{1}",
-                        e.TerminationException.GetType().FullName,
-                        e.TerminationException.Message);
+                    Console.WriteLine($"Workflow {e.InstanceId} Terminated.");
+                    Console.WriteLine($"""
+                    Exception: {e.TerminationException.GetType().FullName}
+                    {e.TerminationException.Message}
+                    """);
                 }
                 else if (e.CompletionState == ActivityInstanceState.Canceled)
                 {
-                    Console.WriteLine("Workflow {0} Canceled.", e.InstanceId);
+                    Console.WriteLine($"Workflow {e.InstanceId} Canceled.");
                 }
                 else
                 {
-                    Console.WriteLine("Workflow {0} Completed.", e.InstanceId);
+                    Console.WriteLine($"Workflow {e.InstanceId} Completed.");
 
                     // Retrieve the outputs of the workflow.
                     foreach (var kvp in e.Outputs)
                     {
-                        Console.WriteLine("Name: {0} - Value {1}",
-                            kvp.Key, kvp.Value);
+                        Console.WriteLine($"Name: {kvp.Key} - Value {kvp.Value}");
                     }
 
                     // Outputs can be directly accessed by argument name.
-                    Console.WriteLine("The winner is {0}.", e.Outputs["Winner"]);
+                    Console.WriteLine($"The winner is {e.Outputs["Winner"]}.");
                 }
             };
             //</snippet4>
 
             //<snippet26>
-            wfApp.PersistableIdle = delegate(WorkflowApplicationIdleEventArgs e)
+            wfApp.PersistableIdle = delegate (WorkflowApplicationIdleEventArgs e)
             {
                 // Instruct the runtime to persist and unload the workflow
                 return PersistableIdleAction.Unload;
@@ -334,64 +327,63 @@ namespace WorkflowApplicationExample
 
             WorkflowApplication wfApp = new WorkflowApplication(wf);
 
-            wfApp.OnUnhandledException = delegate(WorkflowApplicationUnhandledExceptionEventArgs e)
+            wfApp.OnUnhandledException = delegate (WorkflowApplicationUnhandledExceptionEventArgs e)
             {
                 // Display the unhandled exception.
-                Console.WriteLine("OnUnhandledException in Workflow {0}\n{1}",
-                    e.InstanceId, e.UnhandledException.Message);
+                Console.WriteLine($"OnUnhandledException in Workflow {e.InstanceId}\n{e.UnhandledException.Message}");
 
-                Console.WriteLine("ExceptionSource: {0} - {1}",
-                    e.ExceptionSource.DisplayName, e.ExceptionSourceInstanceId);
+                Console.WriteLine($"ExceptionSource: {e.ExceptionSource.DisplayName} - {e.ExceptionSourceInstanceId}");
 
                 // Instruct the runtime to abort the workflow.
                 return UnhandledExceptionAction.Abort;
             };
 
-            wfApp.Completed = delegate(WorkflowApplicationCompletedEventArgs e)
+            wfApp.Completed = delegate (WorkflowApplicationCompletedEventArgs e)
             {
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
-                    Console.WriteLine("Workflow {0} Terminated.", e.InstanceId);
-                    Console.WriteLine("Exception: {0}\n{1}",
-                        e.TerminationException.GetType().FullName,
-                        e.TerminationException.Message);
+                    Console.WriteLine($"Workflow {e.InstanceId} Terminated.");
+                    Console.WriteLine($"""
+                    Exception: {e.TerminationException.GetType().FullName}
+                    {e.TerminationException.Message}
+                    """);
                 }
                 else if (e.CompletionState == ActivityInstanceState.Canceled)
                 {
-                    Console.WriteLine("Workflow {0} Canceled.", e.InstanceId);
+                    Console.WriteLine($"Workflow {e.InstanceId} Canceled.");
                 }
                 else
                 {
-                    Console.WriteLine("Workflow {0} Completed.", e.InstanceId);
+                    Console.WriteLine($"Workflow {e.InstanceId} Completed.");
 
                     // Retrieve the outputs of the workflow.
                     foreach (var kvp in e.Outputs)
                     {
-                        Console.WriteLine("Name: {0} - Value {1}",
-                            kvp.Key, kvp.Value);
+                        Console.WriteLine($"Name: {kvp.Key} - Value {kvp.Value}");
                     }
 
                     // Outputs can be directly accessed by argument name.
-                    Console.WriteLine("The winner is {0}.", e.Outputs["Winner"]);
+                    Console.WriteLine($"The winner is {e.Outputs["Winner"]}.");
                 }
             };
 
-            wfApp.Unloaded = delegate(WorkflowApplicationEventArgs e)
+            wfApp.Unloaded = delegate (WorkflowApplicationEventArgs e)
             {
-                Console.WriteLine("Workflow {0} unloaded.", e.InstanceId);
+                Console.WriteLine($"Workflow {e.InstanceId} unloaded.");
             };
 
             // WorkflowApplicationAbortedEventArgs
             // WorkflowApplication.Aborted
             //<snippet5>
-            wfApp.Aborted = delegate(WorkflowApplicationAbortedEventArgs e)
+            wfApp.Aborted = delegate (WorkflowApplicationAbortedEventArgs e)
             {
                 // Display the exception that caused the workflow
                 // to abort.
-                Console.WriteLine("Workflow {0} Aborted.", e.InstanceId);
-                Console.WriteLine("Exception: {0}\n{1}",
-                    e.Reason.GetType().FullName,
-                    e.Reason.Message);
+                Console.WriteLine($"Workflow {e.InstanceId} Aborted.");
+                Console.WriteLine($"""
+                Exception: {e.Reason.GetType().FullName}
+                {e.Reason.Message}
+                """);
             };
             //</snippet5>
 
@@ -423,55 +415,54 @@ namespace WorkflowApplicationExample
 
             WorkflowApplication wfApp = new WorkflowApplication(wf);
 
-            wfApp.OnUnhandledException = delegate(WorkflowApplicationUnhandledExceptionEventArgs e)
+            wfApp.OnUnhandledException = delegate (WorkflowApplicationUnhandledExceptionEventArgs e)
             {
                 // Display the unhandled exception.
-                Console.WriteLine("OnUnhandledException in Workflow {0}\n{1}",
-                    e.InstanceId, e.UnhandledException.Message);
+                Console.WriteLine($"OnUnhandledException in Workflow {e.InstanceId}\n{e.UnhandledException.Message}");
 
-                Console.WriteLine("ExceptionSource: {0} - {1}",
-                    e.ExceptionSource.DisplayName, e.ExceptionSourceInstanceId);
+                Console.WriteLine($"ExceptionSource: {e.ExceptionSource.DisplayName} - {e.ExceptionSourceInstanceId}");
 
                 // Instruct the runtime to terminate the workflow.
                 return UnhandledExceptionAction.Terminate;
             };
 
-            wfApp.Aborted = delegate(WorkflowApplicationAbortedEventArgs e)
+            wfApp.Aborted = delegate (WorkflowApplicationAbortedEventArgs e)
             {
                 // Display the exception that caused the workflow
                 // to abort.
-                Console.WriteLine("Workflow {0} Aborted.", e.InstanceId);
-                Console.WriteLine("Exception: {0}\n{1}",
-                    e.Reason.GetType().FullName,
-                    e.Reason.Message);
+                Console.WriteLine($"Workflow {e.InstanceId} Aborted.");
+                Console.WriteLine($"""
+                Exception: {e.Reason.GetType().FullName}
+                {e.Reason.Message}
+                """);
             };
 
-            wfApp.Completed = delegate(WorkflowApplicationCompletedEventArgs e)
+            wfApp.Completed = delegate (WorkflowApplicationCompletedEventArgs e)
             {
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
-                    Console.WriteLine("Workflow {0} Terminated.", e.InstanceId);
-                    Console.WriteLine("Exception: {0}\n{1}",
-                        e.TerminationException.GetType().FullName,
-                        e.TerminationException.Message);
+                    Console.WriteLine($"Workflow {e.InstanceId} Terminated.");
+                    Console.WriteLine($"""
+                    Exception: {e.TerminationException.GetType().FullName}
+                    {e.TerminationException.Message}
+                    """);
                 }
                 else if (e.CompletionState == ActivityInstanceState.Canceled)
                 {
-                    Console.WriteLine("Workflow {0} Canceled.", e.InstanceId);
+                    Console.WriteLine($"Workflow {e.InstanceId} Canceled.");
                 }
                 else
                 {
-                    Console.WriteLine("Workflow {0} Completed.", e.InstanceId);
+                    Console.WriteLine($"Workflow {e.InstanceId} Completed.");
 
                     // Retrieve the outputs of the workflow.
                     foreach (var kvp in e.Outputs)
                     {
-                        Console.WriteLine("Name: {0} - Value {1}",
-                            kvp.Key, kvp.Value);
+                        Console.WriteLine($"Name: {kvp.Key} - Value {kvp.Value}");
                     }
 
                     // Outputs can be directly accessed by argument name.
-                    // Console.WriteLine("The winner is {0}.", e.Outputs["Winner"]);
+                    // Console.WriteLine($"The winner is {e.Outputs["Winner"]}.");
                 }
             };
 
@@ -504,49 +495,43 @@ namespace WorkflowApplicationExample
 
             WorkflowApplication wfApp = new WorkflowApplication(wf);
 
-            wfApp.OnUnhandledException = delegate(WorkflowApplicationUnhandledExceptionEventArgs e)
+            wfApp.OnUnhandledException = delegate (WorkflowApplicationUnhandledExceptionEventArgs e)
             {
                 // Display the unhandled exception.
-                Console.WriteLine("OnUnhandledException in Workflow {0}\n{1}",
-                    e.InstanceId, e.UnhandledException.Message);
+                Console.WriteLine($"OnUnhandledException in Workflow {e.InstanceId}\n{e.UnhandledException.Message}");
 
-                Console.WriteLine("ExceptionSource: {0} - {1}",
-                    e.ExceptionSource.DisplayName, e.ExceptionSourceInstanceId);
+                Console.WriteLine($"ExceptionSource: {e.ExceptionSource.DisplayName} - {e.ExceptionSourceInstanceId}");
 
                 // Instruct the runtime to abort the workflow.
                 return UnhandledExceptionAction.Abort;
             };
 
-            wfApp.Aborted = delegate(WorkflowApplicationAbortedEventArgs e)
+            wfApp.Aborted = delegate (WorkflowApplicationAbortedEventArgs e)
             {
                 // Display the exception that caused the workflow
                 // to abort.
-                Console.WriteLine("Workflow {0} Aborted.", e.InstanceId);
-                Console.WriteLine("Exception: {0}\n{1}",
-                    e.Reason.GetType().FullName,
-                    e.Reason.Message);
+                Console.WriteLine($"Workflow {e.InstanceId} Aborted.");
+                Console.WriteLine($"Exception: {e.Reason.GetType().FullName}\n{e.Reason.Message}");
             };
 
-            wfApp.Completed = delegate(WorkflowApplicationCompletedEventArgs e)
+            wfApp.Completed = delegate (WorkflowApplicationCompletedEventArgs e)
             {
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
-                    Console.WriteLine("Workflow {0} Terminated.", e.InstanceId);
-                    Console.WriteLine("Exception: {0}\n{1}",
-                        e.TerminationException.GetType().FullName,
-                        e.TerminationException.Message);
+                    Console.WriteLine($"Workflow {e.InstanceId} Terminated.");
+                    Console.WriteLine($"Exception: {e.TerminationException.GetType().FullName}\n{e.TerminationException.Message}");
                 }
                 else if (e.CompletionState == ActivityInstanceState.Canceled)
                 {
-                    Console.WriteLine("Workflow {0} Canceled.", e.InstanceId);
+                    Console.WriteLine($"Workflow {e.InstanceId} Canceled.");
                 }
                 else
                 {
-                    Console.WriteLine("Workflow {0} Completed.", e.InstanceId);
+                    Console.WriteLine($"Workflow {e.InstanceId} Completed.");
 
                     // Outputs can be retrieved from the Outputs dictionary,
                     // keyed by argument name.
-                    // Console.WriteLine("The winner is {0}.", e.Outputs["Winner"]);
+                    // Console.WriteLine($"The winner is {e.Outputs["Winner"]}.");
                 }
             };
 
@@ -579,49 +564,43 @@ namespace WorkflowApplicationExample
 
             WorkflowApplication wfApp = new WorkflowApplication(wf);
 
-            wfApp.OnUnhandledException = delegate(WorkflowApplicationUnhandledExceptionEventArgs e)
+            wfApp.OnUnhandledException = delegate (WorkflowApplicationUnhandledExceptionEventArgs e)
             {
                 // Display the unhandled exception.
-                Console.WriteLine("OnUnhandledException in Workflow {0}\n{1}",
-                    e.InstanceId, e.UnhandledException.Message);
+                Console.WriteLine($"OnUnhandledException in Workflow {e.InstanceId}\n{e.UnhandledException.Message}");
 
-                Console.WriteLine("ExceptionSource: {0} - {1}",
-                    e.ExceptionSource.DisplayName, e.ExceptionSourceInstanceId);
+                Console.WriteLine($"ExceptionSource: {e.ExceptionSource.DisplayName} - {e.ExceptionSourceInstanceId}");
 
                 // Instruct the runtime to cancel the workflow.
                 return UnhandledExceptionAction.Cancel;
             };
 
-            wfApp.Aborted = delegate(WorkflowApplicationAbortedEventArgs e)
+            wfApp.Aborted = delegate (WorkflowApplicationAbortedEventArgs e)
             {
                 // Display the exception that caused the workflow
                 // to abort.
-                Console.WriteLine("Workflow {0} Aborted.", e.InstanceId);
-                Console.WriteLine("Exception: {0}\n{1}",
-                    e.Reason.GetType().FullName,
-                    e.Reason.Message);
+                Console.WriteLine($"Workflow {e.InstanceId} Aborted.");
+                Console.WriteLine($"Exception: {e.Reason.GetType().FullName}\n{e.Reason.Message}");
             };
 
-            wfApp.Completed = delegate(WorkflowApplicationCompletedEventArgs e)
+            wfApp.Completed = delegate (WorkflowApplicationCompletedEventArgs e)
             {
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
-                    Console.WriteLine("Workflow {0} Terminated.", e.InstanceId);
-                    Console.WriteLine("Exception: {0}\n{1}",
-                        e.TerminationException.GetType().FullName,
-                        e.TerminationException.Message);
+                    Console.WriteLine($"Workflow {e.InstanceId} Terminated.");
+                    Console.WriteLine($"Exception: {e.TerminationException.GetType().FullName}\n{e.TerminationException.Message}");
                 }
                 else if (e.CompletionState == ActivityInstanceState.Canceled)
                 {
-                    Console.WriteLine("Workflow {0} Canceled.", e.InstanceId);
+                    Console.WriteLine($"Workflow {e.InstanceId} Canceled.");
                 }
                 else
                 {
-                    Console.WriteLine("Workflow {0} Completed.", e.InstanceId);
+                    Console.WriteLine($"Workflow {e.InstanceId} Completed.");
 
                     // Outputs can be retrieved from the Outputs dictionary,
                     // keyed by argument name.
-                    // Console.WriteLine("The winner is {0}.", e.Outputs["Winner"]);
+                    // Console.WriteLine($"The winner is {e.Outputs["Winner"]}.");
                 }
             };
 
@@ -656,66 +635,60 @@ namespace WorkflowApplicationExample
             WorkflowApplication wfApp = new WorkflowApplication(wf);
 
             // Subscribe to any desired workflow lifecycle events.
-            wfApp.Completed = delegate(WorkflowApplicationCompletedEventArgs e)
+            wfApp.Completed = delegate (WorkflowApplicationCompletedEventArgs e)
             {
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
-                    Console.WriteLine("Workflow {0} Terminated.", e.InstanceId);
-                    Console.WriteLine("Exception: {0}\n{1}",
-                        e.TerminationException.GetType().FullName,
-                        e.TerminationException.Message);
+                    Console.WriteLine($"Workflow {e.InstanceId} Terminated.");
+                    Console.WriteLine($"Exception: {e.TerminationException.GetType().FullName}\n{e.TerminationException.Message}");
                 }
                 else if (e.CompletionState == ActivityInstanceState.Canceled)
                 {
-                    Console.WriteLine("Workflow {0} Canceled.", e.InstanceId);
+                    Console.WriteLine($"Workflow {e.InstanceId} Canceled.");
                 }
                 else
                 {
-                    Console.WriteLine("Workflow {0} Completed.", e.InstanceId);
+                    Console.WriteLine($"Workflow {e.InstanceId} Completed.");
 
                     // Outputs can be retrieved from the Outputs dictionary,
                     // keyed by argument name.
-                    // Console.WriteLine("The winner is {0}.", e.Outputs["Winner"]);
+                    // Console.WriteLine($"The winner is {e.Outputs["Winner"]}.");
                 }
             };
 
-            wfApp.Aborted = delegate(WorkflowApplicationAbortedEventArgs e)
+            wfApp.Aborted = delegate (WorkflowApplicationAbortedEventArgs e)
             {
                 // Display the exception that caused the workflow
                 // to abort.
-                Console.WriteLine("Workflow {0} Aborted.", e.InstanceId);
-                Console.WriteLine("Exception: {0}\n{1}",
-                    e.Reason.GetType().FullName,
-                    e.Reason.Message);
+                Console.WriteLine($"Workflow {e.InstanceId} Aborted.");
+                Console.WriteLine($"Exception: {e.Reason.GetType().FullName}\n{e.Reason.Message}");
             };
 
-            wfApp.Idle = delegate(WorkflowApplicationIdleEventArgs e)
+            wfApp.Idle = delegate (WorkflowApplicationIdleEventArgs e)
             {
                 // Perform any processing that should occur
                 // when a workflow goes idle. If the workflow can persist,
                 // both Idle and PersistableIdle are called in that order.
-                Console.WriteLine("Workflow {0} Idle.", e.InstanceId);
+                Console.WriteLine($"Workflow {e.InstanceId} Idle.");
             };
 
-            wfApp.PersistableIdle = delegate(WorkflowApplicationIdleEventArgs e)
+            wfApp.PersistableIdle = delegate (WorkflowApplicationIdleEventArgs e)
             {
                 // Instruct the runtime to persist and unload the workflow
                 return PersistableIdleAction.Unload;
             };
 
-            wfApp.Unloaded = delegate(WorkflowApplicationEventArgs e)
+            wfApp.Unloaded = delegate (WorkflowApplicationEventArgs e)
             {
-                Console.WriteLine("Workflow {0} Unloaded.", e.InstanceId);
+                Console.WriteLine($"Workflow {e.InstanceId} Unloaded.");
             };
 
-            wfApp.OnUnhandledException = delegate(WorkflowApplicationUnhandledExceptionEventArgs e)
+            wfApp.OnUnhandledException = delegate (WorkflowApplicationUnhandledExceptionEventArgs e)
             {
                 // Display the unhandled exception.
-                Console.WriteLine("OnUnhandledException in Workflow {0}\n{1}",
-                    e.InstanceId, e.UnhandledException.Message);
+                Console.WriteLine($"OnUnhandledException in Workflow {e.InstanceId}\n{e.UnhandledException.Message}");
 
-                Console.WriteLine("ExceptionSource: {0} - {1}",
-                    e.ExceptionSource.DisplayName, e.ExceptionSourceInstanceId);
+                Console.WriteLine($"ExceptionSource: {e.ExceptionSource.DisplayName} - {e.ExceptionSourceInstanceId}");
 
                 // Instruct the runtime to terminate the workflow.
                 // Other choices are Abort and Cancel
@@ -742,27 +715,24 @@ namespace WorkflowApplicationExample
             WorkflowApplication wfApp = new WorkflowApplication(new Divide(), inputs);
 
             // Subscribe to any desired workflow lifecycle events.
-            wfApp.Completed = delegate(WorkflowApplicationCompletedEventArgs e)
+            wfApp.Completed = delegate (WorkflowApplicationCompletedEventArgs e)
             {
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
-                    Console.WriteLine("Workflow {0} Terminated.", e.InstanceId);
-                    Console.WriteLine("Exception: {0}\n{1}",
-                        e.TerminationException.GetType().FullName,
-                        e.TerminationException.Message);
+                    Console.WriteLine($"Workflow {e.InstanceId} Terminated.");
+                    Console.WriteLine($"Exception: {e.TerminationException.GetType().FullName}\n{e.TerminationException.Message}");
                 }
                 else if (e.CompletionState == ActivityInstanceState.Canceled)
                 {
-                    Console.WriteLine("Workflow {0} Canceled.", e.InstanceId);
+                    Console.WriteLine($"Workflow {e.InstanceId} Canceled.");
                 }
                 else
                 {
-                    Console.WriteLine("Workflow {0} Completed.", e.InstanceId);
+                    Console.WriteLine($"Workflow {e.InstanceId} Completed.");
 
                     // Outputs can be retrieved from the Outputs dictionary,
                     // keyed by argument name.
-                    Console.WriteLine("{0} / {1} = {2} Remainder {3}",
-                        dividend, divisor, e.Outputs["Result"], e.Outputs["Remainder"]);
+                    Console.WriteLine($"{dividend} / {divisor} = {e.Outputs["Result"]} Remainder {e.Outputs["Remainder"]}");
                 }
             };
 
@@ -798,66 +768,60 @@ namespace WorkflowApplicationExample
             WorkflowApplication wfApp = new WorkflowApplication(wf);
 
             // Subscribe to any desired workflow lifecycle events.
-            wfApp.Completed = delegate(WorkflowApplicationCompletedEventArgs e)
+            wfApp.Completed = delegate (WorkflowApplicationCompletedEventArgs e)
             {
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
-                    Console.WriteLine("Workflow {0} Terminated.", e.InstanceId);
-                    Console.WriteLine("Exception: {0}\n{1}",
-                        e.TerminationException.GetType().FullName,
-                        e.TerminationException.Message);
+                    Console.WriteLine($"Workflow {e.InstanceId} Terminated.");
+                    Console.WriteLine($"Exception: {e.TerminationException.GetType().FullName}\n{e.TerminationException.Message}");
                 }
                 else if (e.CompletionState == ActivityInstanceState.Canceled)
                 {
-                    Console.WriteLine("Workflow {0} Canceled.", e.InstanceId);
+                    Console.WriteLine($"Workflow {e.InstanceId} Canceled.");
                 }
                 else
                 {
-                    Console.WriteLine("Workflow {0} Completed.", e.InstanceId);
+                    Console.WriteLine($"Workflow {e.InstanceId} Completed.");
 
                     // Outputs can be retrieved from the Outputs dictionary,
                     // keyed by argument name.
-                    // Console.WriteLine("The winner is {0}.", e.Outputs["Winner"]);
+                    // Console.WriteLine($"The winner is {e.Outputs["Winner"]}.");
                 }
             };
 
-            wfApp.Aborted = delegate(WorkflowApplicationAbortedEventArgs e)
+            wfApp.Aborted = delegate (WorkflowApplicationAbortedEventArgs e)
             {
                 // Display the exception that caused the workflow
                 // to abort.
-                Console.WriteLine("Workflow {0} Aborted.", e.InstanceId);
-                Console.WriteLine("Exception: {0}\n{1}",
-                    e.Reason.GetType().FullName,
-                    e.Reason.Message);
+                Console.WriteLine($"Workflow {e.InstanceId} Aborted.");
+                Console.WriteLine($"Exception: {e.Reason.GetType().FullName}\n{e.Reason.Message}");
             };
 
-            wfApp.Idle = delegate(WorkflowApplicationIdleEventArgs e)
+            wfApp.Idle = delegate (WorkflowApplicationIdleEventArgs e)
             {
                 // Perform any processing that should occur
                 // when a workflow goes idle. If the workflow can persist,
                 // both Idle and PersistableIdle are called in that order.
-                Console.WriteLine("Workflow {0} Idle.", e.InstanceId);
+                Console.WriteLine($"Workflow {e.InstanceId} Idle.");
             };
 
-            wfApp.PersistableIdle = delegate(WorkflowApplicationIdleEventArgs e)
+            wfApp.PersistableIdle = delegate (WorkflowApplicationIdleEventArgs e)
             {
                 // Instruct the runtime to persist and unload the workflow
                 return PersistableIdleAction.Unload;
             };
 
-            wfApp.Unloaded = delegate(WorkflowApplicationEventArgs e)
+            wfApp.Unloaded = delegate (WorkflowApplicationEventArgs e)
             {
-                Console.WriteLine("Workflow {0} Unloaded.", e.InstanceId);
+                Console.WriteLine($"Workflow {e.InstanceId} Unloaded.");
             };
 
-            wfApp.OnUnhandledException = delegate(WorkflowApplicationUnhandledExceptionEventArgs e)
+            wfApp.OnUnhandledException = delegate (WorkflowApplicationUnhandledExceptionEventArgs e)
             {
                 // Display the unhandled exception.
-                Console.WriteLine("OnUnhandledException in Workflow {0}\n{1}",
-                    e.InstanceId, e.UnhandledException.Message);
+                Console.WriteLine($"OnUnhandledException in Workflow {e.InstanceId}\n{e.UnhandledException.Message}");
 
-                Console.WriteLine("ExceptionSource: {0} - {1}",
-                    e.ExceptionSource.DisplayName, e.ExceptionSourceInstanceId);
+                Console.WriteLine($"ExceptionSource: {e.ExceptionSource.DisplayName} - {e.ExceptionSourceInstanceId}");
 
                 // Instruct the runtime to terminate the workflow.
                 // Other choices are Abort and Cancel
@@ -900,66 +864,60 @@ namespace WorkflowApplicationExample
             WorkflowApplication wfApp = new WorkflowApplication(wf);
 
             // Subscribe to any desired workflow lifecycle events.
-            wfApp.Completed = delegate(WorkflowApplicationCompletedEventArgs e)
+            wfApp.Completed = delegate (WorkflowApplicationCompletedEventArgs e)
             {
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
-                    Console.WriteLine("Workflow {0} Terminated.", e.InstanceId);
-                    Console.WriteLine("Exception: {0}\n{1}",
-                        e.TerminationException.GetType().FullName,
-                        e.TerminationException.Message);
+                    Console.WriteLine($"Workflow {e.InstanceId} Terminated.");
+                    Console.WriteLine($"Exception: {e.TerminationException.GetType().FullName}\n{e.TerminationException.Message}");
                 }
                 else if (e.CompletionState == ActivityInstanceState.Canceled)
                 {
-                    Console.WriteLine("Workflow {0} Canceled.", e.InstanceId);
+                    Console.WriteLine($"Workflow {e.InstanceId} Canceled.");
                 }
                 else
                 {
-                    Console.WriteLine("Workflow {0} Completed.", e.InstanceId);
+                    Console.WriteLine($"Workflow {e.InstanceId} Completed.");
 
                     // Outputs can be retrieved from the Outputs dictionary,
                     // keyed by argument name.
-                    // Console.WriteLine("The winner is {0}.", e.Outputs["Winner"]);
+                    // Console.WriteLine($"The winner is {e.Outputs["Winner"]}.");
                 }
             };
 
-            wfApp.Aborted = delegate(WorkflowApplicationAbortedEventArgs e)
+            wfApp.Aborted = delegate (WorkflowApplicationAbortedEventArgs e)
             {
                 // Display the exception that caused the workflow
                 // to abort.
-                Console.WriteLine("Workflow {0} Aborted.", e.InstanceId);
-                Console.WriteLine("Exception: {0}\n{1}",
-                    e.Reason.GetType().FullName,
-                    e.Reason.Message);
+                Console.WriteLine($"Workflow {e.InstanceId} Aborted.");
+                Console.WriteLine($"Exception: {e.Reason.GetType().FullName}\n{e.Reason.Message}");
             };
 
-            wfApp.Idle = delegate(WorkflowApplicationIdleEventArgs e)
+            wfApp.Idle = delegate (WorkflowApplicationIdleEventArgs e)
             {
                 // Perform any processing that should occur
                 // when a workflow goes idle. If the workflow can persist,
                 // both Idle and PersistableIdle are called in that order.
-                Console.WriteLine("Workflow {0} Idle.", e.InstanceId);
+                Console.WriteLine($"Workflow {e.InstanceId} Idle.");
             };
 
-            wfApp.PersistableIdle = delegate(WorkflowApplicationIdleEventArgs e)
+            wfApp.PersistableIdle = delegate (WorkflowApplicationIdleEventArgs e)
             {
                 // Instruct the runtime to persist and unload the workflow
                 return PersistableIdleAction.Unload;
             };
 
-            wfApp.Unloaded = delegate(WorkflowApplicationEventArgs e)
+            wfApp.Unloaded = delegate (WorkflowApplicationEventArgs e)
             {
-                Console.WriteLine("Workflow {0} Unloaded.", e.InstanceId);
+                Console.WriteLine($"Workflow {e.InstanceId} Unloaded.");
             };
 
-            wfApp.OnUnhandledException = delegate(WorkflowApplicationUnhandledExceptionEventArgs e)
+            wfApp.OnUnhandledException = delegate (WorkflowApplicationUnhandledExceptionEventArgs e)
             {
                 // Display the unhandled exception.
-                Console.WriteLine("OnUnhandledException in Workflow {0}\n{1}",
-                    e.InstanceId, e.UnhandledException.Message);
+                Console.WriteLine($"OnUnhandledException in Workflow {e.InstanceId}\n{e.UnhandledException.Message}");
 
-                Console.WriteLine("ExceptionSource: {0} - {1}",
-                    e.ExceptionSource.DisplayName, e.ExceptionSourceInstanceId);
+                Console.WriteLine($"ExceptionSource: {e.ExceptionSource.DisplayName} - {e.ExceptionSourceInstanceId}");
 
                 // Instruct the runtime to terminate the workflow.
                 // Other choices are Abort and Cancel
@@ -1002,22 +960,20 @@ namespace WorkflowApplicationExample
             WorkflowApplication wfApp = new WorkflowApplication(wf);
 
             // Subscribe to any desired workflow lifecycle events.
-            wfApp.Completed = delegate(WorkflowApplicationCompletedEventArgs e)
+            wfApp.Completed = delegate (WorkflowApplicationCompletedEventArgs e)
             {
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
-                    Console.WriteLine("Workflow {0} Terminated.", e.InstanceId);
-                    Console.WriteLine("Exception: {0}\n{1}",
-                        e.TerminationException.GetType().FullName,
-                        e.TerminationException.Message);
+                    Console.WriteLine($"Workflow {e.InstanceId} Terminated.");
+                    Console.WriteLine($"Exception: {e.TerminationException.GetType().FullName}\n{e.TerminationException.Message}");
                 }
                 else if (e.CompletionState == ActivityInstanceState.Canceled)
                 {
-                    Console.WriteLine("Workflow {0} Canceled.", e.InstanceId);
+                    Console.WriteLine($"Workflow {e.InstanceId} Canceled.");
                 }
                 else
                 {
-                    Console.WriteLine("Workflow {0} Completed.", e.InstanceId);
+                    Console.WriteLine($"Workflow {e.InstanceId} Completed.");
                 }
             };
 
@@ -1063,22 +1019,20 @@ namespace WorkflowApplicationExample
             WorkflowApplication wfApp = new WorkflowApplication(wf);
 
             // Subscribe to any desired workflow lifecycle events.
-            wfApp.Completed = delegate(WorkflowApplicationCompletedEventArgs e)
+            wfApp.Completed = delegate (WorkflowApplicationCompletedEventArgs e)
             {
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
-                    Console.WriteLine("Workflow {0} Terminated.", e.InstanceId);
-                    Console.WriteLine("Exception: {0}\n{1}",
-                        e.TerminationException.GetType().FullName,
-                        e.TerminationException.Message);
+                    Console.WriteLine($"Workflow {e.InstanceId} Terminated.");
+                    Console.WriteLine($"Exception: {e.TerminationException.GetType().FullName}\n{e.TerminationException.Message}");
                 }
                 else if (e.CompletionState == ActivityInstanceState.Canceled)
                 {
-                    Console.WriteLine("Workflow {0} Canceled.", e.InstanceId);
+                    Console.WriteLine($"Workflow {e.InstanceId} Canceled.");
                 }
                 else
                 {
-                    Console.WriteLine("Workflow {0} Completed.", e.InstanceId);
+                    Console.WriteLine($"Workflow {e.InstanceId} Completed.");
                 }
             };
 
@@ -1125,32 +1079,29 @@ namespace WorkflowApplicationExample
             WorkflowApplication wfApp = new WorkflowApplication(wf);
 
             // Subscribe to any desired workflow lifecycle events.
-            wfApp.OnUnhandledException = delegate(WorkflowApplicationUnhandledExceptionEventArgs e)
+            wfApp.OnUnhandledException = delegate (WorkflowApplicationUnhandledExceptionEventArgs e)
             {
                 // Display the unhandled exception.
-                Console.WriteLine("OnUnhandledException in Workflow {0}\n{1}",
-                    e.InstanceId, e.UnhandledException.Message);
+                Console.WriteLine($"OnUnhandledException in Workflow {e.InstanceId}\n{e.UnhandledException.Message}");
 
                 // Instruct the runtime to cancel the workflow.
                 return UnhandledExceptionAction.Cancel;
             };
 
-            wfApp.Completed = delegate(WorkflowApplicationCompletedEventArgs e)
+            wfApp.Completed = delegate (WorkflowApplicationCompletedEventArgs e)
             {
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
-                    Console.WriteLine("Workflow {0} Terminated.", e.InstanceId);
-                    Console.WriteLine("Exception: {0}\n{1}",
-                        e.TerminationException.GetType().FullName,
-                        e.TerminationException.Message);
+                    Console.WriteLine($"Workflow {e.InstanceId} Terminated.");
+                    Console.WriteLine($"Exception: {e.TerminationException.GetType().FullName}\n{e.TerminationException.Message}");
                 }
                 else if (e.CompletionState == ActivityInstanceState.Canceled)
                 {
-                    Console.WriteLine("Workflow {0} Canceled.", e.InstanceId);
+                    Console.WriteLine($"Workflow {e.InstanceId} Canceled.");
                 }
                 else
                 {
-                    Console.WriteLine("Workflow {0} Completed.", e.InstanceId);
+                    Console.WriteLine($"Workflow {e.InstanceId} Completed.");
                 }
             };
 
@@ -1203,22 +1154,20 @@ namespace WorkflowApplicationExample
             // Create a WorkflowApplication instance.
             WorkflowApplication wfApp = new WorkflowApplication(wf);
 
-            wfApp.Completed = delegate(WorkflowApplicationCompletedEventArgs e)
+            wfApp.Completed = delegate (WorkflowApplicationCompletedEventArgs e)
             {
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
-                    Console.WriteLine("Workflow {0} Terminated.", e.InstanceId);
-                    Console.WriteLine("Exception: {0}\n{1}",
-                        e.TerminationException.GetType().FullName,
-                        e.TerminationException.Message);
+                    Console.WriteLine($"Workflow {e.InstanceId} Terminated.");
+                    Console.WriteLine($"Exception: {e.TerminationException.GetType().FullName}\n{e.TerminationException.Message}");
                 }
                 else if (e.CompletionState == ActivityInstanceState.Canceled)
                 {
-                    Console.WriteLine("Workflow {0} Canceled.", e.InstanceId);
+                    Console.WriteLine($"Workflow {e.InstanceId} Canceled.");
                 }
                 else
                 {
-                    Console.WriteLine("Workflow {0} Completed.", e.InstanceId);
+                    Console.WriteLine($"Workflow {e.InstanceId} Completed.");
                 }
             };
 
@@ -1288,22 +1237,20 @@ namespace WorkflowApplicationExample
             // Create a WorkflowApplication instance.
             WorkflowApplication wfApp = new WorkflowApplication(wf);
 
-            wfApp.Completed = delegate(WorkflowApplicationCompletedEventArgs e)
+            wfApp.Completed = delegate (WorkflowApplicationCompletedEventArgs e)
             {
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
-                    Console.WriteLine("Workflow {0} Terminated.", e.InstanceId);
-                    Console.WriteLine("Exception: {0}\n{1}",
-                        e.TerminationException.GetType().FullName,
-                        e.TerminationException.Message);
+                    Console.WriteLine($"Workflow {e.InstanceId} Terminated.");
+                    Console.WriteLine($"Exception: {e.TerminationException.GetType().FullName}\n{e.TerminationException.Message}");
                 }
                 else if (e.CompletionState == ActivityInstanceState.Canceled)
                 {
-                    Console.WriteLine("Workflow {0} Canceled.", e.InstanceId);
+                    Console.WriteLine($"Workflow {e.InstanceId} Canceled.");
                 }
                 else
                 {
-                    Console.WriteLine("Workflow {0} Completed.", e.InstanceId);
+                    Console.WriteLine($"Workflow {e.InstanceId} Completed.");
                 }
             };
 
@@ -1362,22 +1309,20 @@ namespace WorkflowApplicationExample
             // Create a WorkflowApplication instance.
             WorkflowApplication wfApp = new WorkflowApplication(wf);
 
-            wfApp.Completed = delegate(WorkflowApplicationCompletedEventArgs e)
+            wfApp.Completed = delegate (WorkflowApplicationCompletedEventArgs e)
             {
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
-                    Console.WriteLine("Workflow {0} Terminated.", e.InstanceId);
-                    Console.WriteLine("Exception: {0}\n{1}",
-                        e.TerminationException.GetType().FullName,
-                        e.TerminationException.Message);
+                    Console.WriteLine($"Workflow {e.InstanceId} Terminated.");
+                    Console.WriteLine($"Exception: {e.TerminationException.GetType().FullName}\n{e.TerminationException.Message}");
                 }
                 else if (e.CompletionState == ActivityInstanceState.Canceled)
                 {
-                    Console.WriteLine("Workflow {0} Canceled.", e.InstanceId);
+                    Console.WriteLine($"Workflow {e.InstanceId} Canceled.");
                 }
                 else
                 {
-                    Console.WriteLine("Workflow {0} Completed.", e.InstanceId);
+                    Console.WriteLine($"Workflow {e.InstanceId} Completed.");
                 }
             };
 
@@ -1422,32 +1367,29 @@ namespace WorkflowApplicationExample
             WorkflowApplication wfApp = new WorkflowApplication(wf);
 
             // Subscribe to any desired workflow lifecycle events.
-            wfApp.OnUnhandledException = delegate(WorkflowApplicationUnhandledExceptionEventArgs e)
+            wfApp.OnUnhandledException = delegate (WorkflowApplicationUnhandledExceptionEventArgs e)
             {
                 // Display the unhandled exception.
-                Console.WriteLine("OnUnhandledException in Workflow {0}\n{1}",
-                    e.InstanceId, e.UnhandledException.Message);
+                Console.WriteLine($"OnUnhandledException in Workflow {e.InstanceId}\n{e.UnhandledException.Message}");
 
                 // Instruct the runtime to cancel the workflow.
                 return UnhandledExceptionAction.Cancel;
             };
 
-            wfApp.Completed = delegate(WorkflowApplicationCompletedEventArgs e)
+            wfApp.Completed = delegate (WorkflowApplicationCompletedEventArgs e)
             {
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
-                    Console.WriteLine("Workflow {0} Terminated.", e.InstanceId);
-                    Console.WriteLine("Exception: {0}\n{1}",
-                        e.TerminationException.GetType().FullName,
-                        e.TerminationException.Message);
+                    Console.WriteLine($"Workflow {e.InstanceId} Terminated.");
+                    Console.WriteLine($"Exception: {e.TerminationException.GetType().FullName}\n{e.TerminationException.Message}");
                 }
                 else if (e.CompletionState == ActivityInstanceState.Canceled)
                 {
-                    Console.WriteLine("Workflow {0} Canceled.", e.InstanceId);
+                    Console.WriteLine($"Workflow {e.InstanceId} Canceled.");
                 }
                 else
                 {
-                    Console.WriteLine("Workflow {0} Completed.", e.InstanceId);
+                    Console.WriteLine($"Workflow {e.InstanceId} Completed.");
                 }
             };
 
@@ -1486,7 +1428,7 @@ namespace WorkflowApplicationExample
             StringBuilder sb = new StringBuilder();
             StringWriter tw = new StringWriter(sb);
             XamlWriter xw = ActivityXamlServices.CreateBuilderWriter(new XamlXmlWriter(tw, new XamlSchemaContext()));
-            XamlServices.Save(xw , ab);
+            XamlServices.Save(xw, ab);
             string serializedAB = sb.ToString();
 
             // Display the XAML to the console.
@@ -1524,7 +1466,7 @@ namespace WorkflowApplicationExample
 
             // Now you can continue working with the ActivityBuilder, inspect
             // properties, etc...
-            Console.WriteLine("There are {0} arguments in the activity builder.", ab2.Properties.Count);
+            Console.WriteLine($"There are {ab2.Properties.Count} arguments in the activity builder.");
             foreach (var prop in ab2.Properties)
             {
                 Console.WriteLine("Name: {0}, Type: {1}", prop.Name, prop.Type);
@@ -1611,7 +1553,7 @@ namespace WorkflowApplicationExample
             IEnumerator<Activity> activities =
                 WorkflowInspectionServices.GetActivities(root).GetEnumerator();
 
-            Console.WriteLine("{0}{1}", new string(' ', indent), root.DisplayName);
+            Console.WriteLine($"{new string(' ', indent)}{root.DisplayName}");
 
             while (activities.MoveNext())
             {
@@ -1681,11 +1623,11 @@ namespace WorkflowApplicationExample
             {
                 foreach (ValidationError error in results.Errors)
                 {
-                    Console.WriteLine("Error: {0}", error.Message);
+                    Console.WriteLine($"Error: {error.Message}");
                 }
                 foreach (ValidationError warning in results.Warnings)
                 {
-                    Console.WriteLine("Warning: {0}", warning.Message);
+                    Console.WriteLine($"Warning: {warning.Message}");
                 }
             }
 
@@ -1770,9 +1712,9 @@ namespace WorkflowApplicationExample
         static void snippet63()
         {
             //<snippet63>
-            Dictionary<string, object> inputs = new Dictionary<string, object> {{ "Value", 5}};
+            Dictionary<string, object> inputs = new Dictionary<string, object> { { "Value", 5 } };
             int result = WorkflowInvoker.Invoke(new Square(), inputs);
-            Console.WriteLine("Result: {0}", result);
+            Console.WriteLine($"Result: {result}");
             //</snippet63>
         }
 
@@ -2010,7 +1952,7 @@ namespace WorkflowApplicationExample
             // Workflow lifecycle events omitted except idle.
             AutoResetEvent idleEvent = new AutoResetEvent(false);
 
-            wfApp.Idle = delegate(WorkflowApplicationIdleEventArgs e)
+            wfApp.Idle = delegate (WorkflowApplicationIdleEventArgs e)
             {
                 // You can also inspect the bookmarks from the Idle handler
                 // using e.Bookmarks
@@ -2028,8 +1970,7 @@ namespace WorkflowApplicationExample
             // Inspect the bookmarks
             foreach (BookmarkInfo info in wfApp.GetBookmarks())
             {
-                Console.WriteLine("BookmarkName: {0} - OwnerDisplayName: {1}",
-                    info.BookmarkName, info.OwnerDisplayName);
+                Console.WriteLine($"BookmarkName: {info.BookmarkName} - OwnerDisplayName: {info.OwnerDisplayName}");
             }
 
             // Gather the user's input and resume the bookmark.
@@ -2064,32 +2005,30 @@ namespace WorkflowApplicationExample
             WorkflowApplication wfApp = new WorkflowApplication(wf);
 
             // Subscribe to any desired workflow lifecycle events.
-            wfApp.Completed = delegate(WorkflowApplicationCompletedEventArgs e)
+            wfApp.Completed = delegate (WorkflowApplicationCompletedEventArgs e)
             {
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
-                    Console.WriteLine("Workflow {0} Terminated.", e.InstanceId);
-                    Console.WriteLine("Exception: {0}\n{1}",
-                        e.TerminationException.GetType().FullName,
-                        e.TerminationException.Message);
+                    Console.WriteLine($"Workflow {e.InstanceId} Terminated.");
+                    Console.WriteLine($"Exception: {e.TerminationException.GetType().FullName}\n{e.TerminationException.Message}");
                 }
                 else if (e.CompletionState == ActivityInstanceState.Canceled)
                 {
-                    Console.WriteLine("Workflow {0} Canceled.", e.InstanceId);
+                    Console.WriteLine($"Workflow {e.InstanceId} Canceled.");
                 }
                 else
                 {
-                    Console.WriteLine("Workflow {0} Completed.", e.InstanceId);
+                    Console.WriteLine($"Workflow {e.InstanceId} Completed.");
 
                     // Outputs can be retrieved from the Outputs dictionary,
                     // keyed by argument name.
-                    // Console.WriteLine("The winner is {0}.", e.Outputs["Winner"]);
+                    // Console.WriteLine($"The winner is {e.Outputs["Winner"]}.");
                 }
             };
 
-            wfApp.Unloaded = delegate(WorkflowApplicationEventArgs e)
+            wfApp.Unloaded = delegate (WorkflowApplicationEventArgs e)
             {
-                Console.WriteLine("Workflow {0} unloaded.", e.InstanceId);
+                Console.WriteLine($"Workflow {e.InstanceId} unloaded.");
             };
 
             // Run the workflow.
@@ -2128,32 +2067,30 @@ namespace WorkflowApplicationExample
             WorkflowApplication wfApp = new WorkflowApplication(wf);
 
             // Subscribe to any desired workflow lifecycle events.
-            wfApp.Completed = delegate(WorkflowApplicationCompletedEventArgs e)
+            wfApp.Completed = delegate (WorkflowApplicationCompletedEventArgs e)
             {
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
-                    Console.WriteLine("Workflow {0} Terminated.", e.InstanceId);
-                    Console.WriteLine("Exception: {0}\n{1}",
-                        e.TerminationException.GetType().FullName,
-                        e.TerminationException.Message);
+                    Console.WriteLine($"Workflow {e.InstanceId} Terminated.");
+                    Console.WriteLine($"Exception: {e.TerminationException.GetType().FullName}\n{e.TerminationException.Message}");
                 }
                 else if (e.CompletionState == ActivityInstanceState.Canceled)
                 {
-                    Console.WriteLine("Workflow {0} Canceled.", e.InstanceId);
+                    Console.WriteLine($"Workflow {e.InstanceId} Canceled.");
                 }
                 else
                 {
-                    Console.WriteLine("Workflow {0} Completed.", e.InstanceId);
+                    Console.WriteLine($"Workflow {e.InstanceId} Completed.");
 
                     // Outputs can be retrieved from the Outputs dictionary,
                     // keyed by argument name.
-                    // Console.WriteLine("The winner is {0}.", e.Outputs["Winner"]);
+                    // Console.WriteLine($"The winner is {e.Outputs["Winner"]}.");
                 }
             };
 
-            wfApp.Unloaded = delegate(WorkflowApplicationEventArgs e)
+            wfApp.Unloaded = delegate (WorkflowApplicationEventArgs e)
             {
-                Console.WriteLine("Workflow {0} unloaded.", e.InstanceId);
+                Console.WriteLine($"Workflow {e.InstanceId} unloaded.");
             };
 
             // Run the workflow.
@@ -2193,32 +2130,30 @@ namespace WorkflowApplicationExample
             WorkflowApplication wfApp = new WorkflowApplication(wf);
 
             // Subscribe to any desired workflow lifecycle events.
-            wfApp.Completed = delegate(WorkflowApplicationCompletedEventArgs e)
+            wfApp.Completed = delegate (WorkflowApplicationCompletedEventArgs e)
             {
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
-                    Console.WriteLine("Workflow {0} Terminated.", e.InstanceId);
-                    Console.WriteLine("Exception: {0}\n{1}",
-                        e.TerminationException.GetType().FullName,
-                        e.TerminationException.Message);
+                    Console.WriteLine($"Workflow {e.InstanceId} Terminated.");
+                    Console.WriteLine($"Exception: {e.TerminationException.GetType().FullName}\n{e.TerminationException.Message}");
                 }
                 else if (e.CompletionState == ActivityInstanceState.Canceled)
                 {
-                    Console.WriteLine("Workflow {0} Canceled.", e.InstanceId);
+                    Console.WriteLine($"Workflow {e.InstanceId} Canceled.");
                 }
                 else
                 {
-                    Console.WriteLine("Workflow {0} Completed.", e.InstanceId);
+                    Console.WriteLine($"Workflow {e.InstanceId} Completed.");
 
                     // Outputs can be retrieved from the Outputs dictionary,
                     // keyed by argument name.
-                    // Console.WriteLine("The winner is {0}.", e.Outputs["Winner"]);
+                    // Console.WriteLine($"The winner is {e.Outputs["Winner"]}.");
                 }
             };
 
-            wfApp.Unloaded = delegate(WorkflowApplicationEventArgs e)
+            wfApp.Unloaded = delegate (WorkflowApplicationEventArgs e)
             {
-                Console.WriteLine("Workflow {0} unloaded.", e.InstanceId);
+                Console.WriteLine($"Workflow {e.InstanceId} unloaded.");
             };
 
             // Run the workflow.
@@ -2257,32 +2192,30 @@ namespace WorkflowApplicationExample
             WorkflowApplication wfApp = new WorkflowApplication(wf);
 
             // Subscribe to any desired workflow lifecycle events.
-            wfApp.Completed = delegate(WorkflowApplicationCompletedEventArgs e)
+            wfApp.Completed = delegate (WorkflowApplicationCompletedEventArgs e)
             {
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
-                    Console.WriteLine("Workflow {0} Terminated.", e.InstanceId);
-                    Console.WriteLine("Exception: {0}\n{1}",
-                        e.TerminationException.GetType().FullName,
-                        e.TerminationException.Message);
+                    Console.WriteLine($"Workflow {e.InstanceId} Terminated.");
+                    Console.WriteLine($"Exception: {e.TerminationException.GetType().FullName}\n{e.TerminationException.Message}");
                 }
                 else if (e.CompletionState == ActivityInstanceState.Canceled)
                 {
-                    Console.WriteLine("Workflow {0} Canceled.", e.InstanceId);
+                    Console.WriteLine($"Workflow {e.InstanceId} Canceled.");
                 }
                 else
                 {
-                    Console.WriteLine("Workflow {0} Completed.", e.InstanceId);
+                    Console.WriteLine($"Workflow {e.InstanceId} Completed.");
 
                     // Outputs can be retrieved from the Outputs dictionary,
                     // keyed by argument name.
-                    // Console.WriteLine("The winner is {0}.", e.Outputs["Winner"]);
+                    // Console.WriteLine($"The winner is {e.Outputs["Winner"]}.");
                 }
             };
 
-            wfApp.Unloaded = delegate(WorkflowApplicationEventArgs e)
+            wfApp.Unloaded = delegate (WorkflowApplicationEventArgs e)
             {
-                Console.WriteLine("Workflow {0} unloaded.", e.InstanceId);
+                Console.WriteLine($"Workflow {e.InstanceId} unloaded.");
             };
 
             // Run the workflow.
@@ -2341,31 +2274,28 @@ namespace WorkflowApplicationExample
             WorkflowApplication wfApp = new WorkflowApplication(new DiceRoll());
 
             // Subscribe to any desired workflow lifecycle events.
-            wfApp.Completed = delegate(WorkflowApplicationCompletedEventArgs e)
+            wfApp.Completed = delegate (WorkflowApplicationCompletedEventArgs e)
             {
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
-                    Console.WriteLine("Workflow {0} Terminated.", e.InstanceId);
-                    Console.WriteLine("Exception: {0}\n{1}",
-                        e.TerminationException.GetType().FullName,
-                        e.TerminationException.Message);
+                    Console.WriteLine($"Workflow {e.InstanceId} Terminated.");
+                    Console.WriteLine($"Exception: {e.TerminationException.GetType().FullName}\n{e.TerminationException.Message}");
                 }
                 else if (e.CompletionState == ActivityInstanceState.Canceled)
                 {
-                    Console.WriteLine("Workflow {0} Canceled.", e.InstanceId);
+                    Console.WriteLine($"Workflow {e.InstanceId} Canceled.");
                 }
                 else
                 {
-                    Console.WriteLine("Workflow {0} Completed.", e.InstanceId);
+                    Console.WriteLine($"Workflow {e.InstanceId} Completed.");
 
                     // Outputs can be retrieved from the Outputs dictionary,
                     // keyed by argument name.
-                    Console.WriteLine("The two dice are {0} and {1}.",
-                        e.Outputs["D1"], e.Outputs["D2"]);
+                    Console.WriteLine($"The two dice are {e.Outputs["D1"]} and {e.Outputs["D2"]}.");
                 }
             };
 
-           // Run the workflow.
+            // Run the workflow.
             wfApp.Run();
             //</snippet21>
         }
@@ -2405,7 +2335,7 @@ namespace WorkflowApplicationExample
             // Workflow lifecycle events omitted except idle.
             AutoResetEvent idleEvent = new AutoResetEvent(false);
 
-            wfApp.Idle = delegate(WorkflowApplicationIdleEventArgs e)
+            wfApp.Idle = delegate (WorkflowApplicationIdleEventArgs e)
             {
                 idleEvent.Set();
             };
@@ -2427,7 +2357,7 @@ namespace WorkflowApplicationExample
 
             // Possible BookmarkResumptionResult values:
             // Success, NotFound, or NotReady
-            Console.WriteLine("BookmarkResumptionResult: {0}", result);
+            Console.WriteLine($"BookmarkResumptionResult: {result}");
             //</snippet22>
         }
 
@@ -2465,7 +2395,7 @@ namespace WorkflowApplicationExample
             // Workflow lifecycle events omitted except idle.
             AutoResetEvent idleEvent = new AutoResetEvent(false);
 
-            wfApp.Idle = delegate(WorkflowApplicationIdleEventArgs e)
+            wfApp.Idle = delegate (WorkflowApplicationIdleEventArgs e)
             {
                 idleEvent.Set();
             };
@@ -2478,12 +2408,12 @@ namespace WorkflowApplicationExample
             idleEvent.WaitOne();
 
             // Gather the user's input and resume the bookmark.
-            BookmarkResumptionResult result =  wfApp.ResumeBookmark("UserName",
+            BookmarkResumptionResult result = wfApp.ResumeBookmark("UserName",
                 Console.ReadLine(), TimeSpan.FromSeconds(15));
 
             // Possible BookmarkResumptionResult values:
             // Success, NotFound, or NotReady
-            Console.WriteLine("BookmarkResumptionResult: {0}", result);
+            Console.WriteLine($"BookmarkResumptionResult: {result}");
             //</snippet23>
         }
 
@@ -2520,7 +2450,7 @@ namespace WorkflowApplicationExample
             // Workflow lifecycle events omitted except idle.
             AutoResetEvent idleEvent = new AutoResetEvent(false);
 
-            wfApp.Idle = delegate(WorkflowApplicationIdleEventArgs e)
+            wfApp.Idle = delegate (WorkflowApplicationIdleEventArgs e)
             {
                 idleEvent.Set();
             };
@@ -2538,7 +2468,7 @@ namespace WorkflowApplicationExample
 
             // Possible BookmarkResumptionResult values:
             // Success, NotFound, or NotReady
-            Console.WriteLine("BookmarkResumptionResult: {0}", result);
+            Console.WriteLine($"BookmarkResumptionResult: {result}");
             //</snippet24>
         }
 
@@ -2576,7 +2506,7 @@ namespace WorkflowApplicationExample
             // Workflow lifecycle events omitted except idle.
             AutoResetEvent idleEvent = new AutoResetEvent(false);
 
-            wfApp.Idle = delegate(WorkflowApplicationIdleEventArgs e)
+            wfApp.Idle = delegate (WorkflowApplicationIdleEventArgs e)
             {
                 idleEvent.Set();
             };
@@ -2594,7 +2524,7 @@ namespace WorkflowApplicationExample
 
             // Possible BookmarkResumptionResult values:
             // Success, NotFound, or NotReady
-            Console.WriteLine("BookmarkResumptionResult: {0}", result);
+            Console.WriteLine($"BookmarkResumptionResult: {result}");
             //</snippet25>
         }
 
@@ -2618,7 +2548,7 @@ namespace WorkflowApplicationExample
 
             application.Completed = (workflowApplicationCompletedEventArgs) =>
             {
-                Console.WriteLine("\nWorkflowApplication has Completed in the {0} state.", workflowApplicationCompletedEventArgs.CompletionState);
+                Console.WriteLine($"\nWorkflowApplication has Completed in the {workflowApplicationCompletedEventArgs.CompletionState} state.");
             };
 
             application.Unloaded = (workflowApplicationEventArgs) =>
@@ -2681,15 +2611,14 @@ namespace WorkflowApplicationExample
 
             WorkflowApplication wfApp = new WorkflowApplication(wf);
 
-            Console.WriteLine("Id: {0}", wfApp.Id);
+            Console.WriteLine($"Id: {wfApp.Id}");
             //</snippet28>
         }
 
         // InstanceStore
         static void snippet29()
         {
-            // Support
-            string connectionString = "test";
+            string connectionString = "...";
 
             //<snippet29>
             var wfparams = new Dictionary<string, object>() { { "MaxNumber", 100 } };
@@ -2719,7 +2648,7 @@ namespace WorkflowApplicationExample
             WorkflowApplication wfApp = new WorkflowApplication(wf, inputs);
 
             // Handle the desired lifecycle events.
-            wfApp.Completed = delegate(WorkflowApplicationCompletedEventArgs e)
+            wfApp.Completed = delegate (WorkflowApplicationCompletedEventArgs e)
             {
                 syncEvent.Set();
             };
@@ -2749,7 +2678,7 @@ namespace WorkflowApplicationExample
             WorkflowApplication wfApp = new WorkflowApplication(wf);
 
             // Handle the desired lifecycle events.
-            wfApp.Completed = delegate(WorkflowApplicationCompletedEventArgs e)
+            wfApp.Completed = delegate (WorkflowApplicationCompletedEventArgs e)
             {
                 syncEvent.Set();
             };
@@ -2790,67 +2719,61 @@ namespace WorkflowApplicationExample
 
             // Subscribe to any desired workflow lifecycle events.
             //<snippet32>
-            wfApp.Completed = delegate(WorkflowApplicationCompletedEventArgs e)
+            wfApp.Completed = delegate (WorkflowApplicationCompletedEventArgs e)
             {
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
-                    Console.WriteLine("Workflow {0} Terminated.", e.InstanceId);
-                    Console.WriteLine("Exception: {0}\n{1}",
-                        e.TerminationException.GetType().FullName,
-                        e.TerminationException.Message);
+                    Console.WriteLine($"Workflow {e.InstanceId} Terminated.");
+                    Console.WriteLine($"Exception: {e.TerminationException.GetType().FullName}\n{e.TerminationException.Message}");
                 }
                 else if (e.CompletionState == ActivityInstanceState.Canceled)
                 {
-                    Console.WriteLine("Workflow {0} Canceled.", e.InstanceId);
+                    Console.WriteLine($"Workflow {e.InstanceId} Canceled.");
                 }
                 else
                 {
-                    Console.WriteLine("Workflow {0} Completed.", e.InstanceId);
+                    Console.WriteLine($"Workflow {e.InstanceId} Completed.");
 
                     // Outputs can be retrieved from the Outputs dictionary,
                     // keyed by argument name.
-                    // Console.WriteLine("The winner is {0}.", e.Outputs["Winner"]);
+                    // Console.WriteLine($"The winner is {e.Outputs["Winner"]}.");
                 }
             };
 
-            wfApp.Aborted = delegate(WorkflowApplicationAbortedEventArgs e)
+            wfApp.Aborted = delegate (WorkflowApplicationAbortedEventArgs e)
             {
                 // Display the exception that caused the workflow
                 // to abort.
-                Console.WriteLine("Workflow {0} Aborted.", e.InstanceId);
-                Console.WriteLine("Exception: {0}\n{1}",
-                    e.Reason.GetType().FullName,
-                    e.Reason.Message);
+                Console.WriteLine($"Workflow {e.InstanceId} Aborted.");
+                Console.WriteLine($"Exception: {e.Reason.GetType().FullName}\n{e.Reason.Message}");
             };
 
-            wfApp.Idle = delegate(WorkflowApplicationIdleEventArgs e)
+            wfApp.Idle = delegate (WorkflowApplicationIdleEventArgs e)
             {
                 // Perform any processing that should occur
                 // when a workflow goes idle. If the workflow can persist,
                 // both Idle and PersistableIdle are called in that order.
-                Console.WriteLine("Workflow {0} Idle.", e.InstanceId);
+                Console.WriteLine($"Workflow {e.InstanceId} Idle.");
             };
 
-            wfApp.PersistableIdle = delegate(WorkflowApplicationIdleEventArgs e)
+            wfApp.PersistableIdle = delegate (WorkflowApplicationIdleEventArgs e)
             {
                 // Instruct the runtime to persist and unload the workflow.
                 // Choices are None, Persist, and Unload.
                 return PersistableIdleAction.Unload;
             };
 
-            wfApp.Unloaded = delegate(WorkflowApplicationEventArgs e)
+            wfApp.Unloaded = delegate (WorkflowApplicationEventArgs e)
             {
-                Console.WriteLine("Workflow {0} Unloaded.", e.InstanceId);
+                Console.WriteLine($"Workflow {e.InstanceId} Unloaded.");
             };
 
-            wfApp.OnUnhandledException = delegate(WorkflowApplicationUnhandledExceptionEventArgs e)
+            wfApp.OnUnhandledException = delegate (WorkflowApplicationUnhandledExceptionEventArgs e)
             {
                 // Display the unhandled exception.
-                Console.WriteLine("OnUnhandledException in Workflow {0}\n{1}",
-                    e.InstanceId, e.UnhandledException.Message);
+                Console.WriteLine($"OnUnhandledException in Workflow {e.InstanceId}\n{e.UnhandledException.Message}");
 
-                Console.WriteLine("ExceptionSource: {0} - {1}",
-                    e.ExceptionSource.DisplayName, e.ExceptionSourceInstanceId);
+                Console.WriteLine($"ExceptionSource: {e.ExceptionSource.DisplayName} - {e.ExceptionSourceInstanceId}");
 
                 // Instruct the runtime to terminate the workflow.
                 // Other choices are Abort and Cancel. Terminate
@@ -2878,7 +2801,7 @@ namespace WorkflowApplicationExample
             {
                 Try = new Throw()
                 {
-                    Exception = new InArgument<Exception>((env) =>new ApplicationException("An ApplicationException was thrown."))
+                    Exception = new InArgument<Exception>((env) => new ApplicationException("An ApplicationException was thrown."))
                 },
                 Catches =
                 {
@@ -2992,8 +2915,8 @@ namespace WorkflowApplicationExample
 
             if (string.IsNullOrEmpty(name))
             {
-                throw new ArgumentException("BookmarkName cannot be an Empty string.",
-                    "BookmarkName");
+                Console.WriteLine("BookmarkName cannot be an Empty string.");
+                return;
             }
 
             context.CreateBookmark(name, new BookmarkCallback(OnReadComplete));

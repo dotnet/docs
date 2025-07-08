@@ -1,5 +1,5 @@
 ---
-title: Asynchronous file access (C#)
+title: Asynchronous file access 
 description: Learn how to use the async feature to access files in C#. You can call into asynchronous methods without using callbacks or splitting your code across methods.
 ms.date: 02/08/2023
 ms.topic: tutorial

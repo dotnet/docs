@@ -68,7 +68,7 @@ For example, to create a Visual Basic "Hello World" application, do the followin
 
    The command creates a project file with a `.vbproj` file extension, along with a Visual Basic source code file named *Program.vb*. This file contains the source code to write the string "Hello World!" to the console window.
 
-1. Enter the command `dotnet run`. The [.NET Core CLI](../tools/index.md) automatically compiles and executes the application, which displays the message "Hello World!" in the console window.
+1. Enter the command `dotnet run`. The [.NET CLI](../tools/index.md) automatically compiles and executes the application, which displays the message "Hello World!" in the console window.
 
 ### Support for C# 7.1
 
@@ -118,7 +118,7 @@ And with the [Windows Compatibility Pack](../porting/windows-compat-pack.md) por
 
 ## Visual Studio integration
 
-Visual Studio 2017 version 15.3 and in some cases Visual Studio for Mac offer a number of significant enhancements for .NET Core developers.
+Visual Studio 2017 version 15.3 offers a number of significant enhancements for .NET Core developers.
 
 ### Retargeting .NET Core apps and .NET Standard libraries
 
@@ -150,7 +150,6 @@ You can now install the .NET Core SDK independently of Visual Studio. This makes
 
 - [Microservices and Docker containers](../../architecture/microservices/index.md)
 - [Web applications with ASP.NET](../../architecture/modern-web-apps-azure/index.md)
-- [Mobile applications with Xamarin](/xamarin/xamarin-forms/enterprise-application-patterns/index)
 - [Applications that are deployed to the Cloud with Azure](/azure/architecture/reference-architectures/index)
 
 ## See also

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Securing Clients"
 title: "Securing Clients"
+description: "Learn more about: Securing Clients"
 ms.date: "03/30/2017"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "clients [WCF], security considerations"
-ms.assetid: 44c8578c-9a5b-4acd-8168-1c30a027c4c5
 ---
 # Securing Clients
 
@@ -134,7 +133,7 @@ In Windows Communication Foundation (WCF), the service dictates the security req
  For more information about setting the client credential, see [How to: Specify Client Credential Values](how-to-specify-client-credential-values.md).  
   
 > [!NOTE]
-> `ClientCredentialType` is ignored when `SecurityMode` is set to `"TransportWithMessageCredential",` as shown in the following sample configuration.  
+> `ClientCredentialType` is ignored when `SecurityMode` is set to `"TransportWithMessageCredential"`, as shown in the following sample configuration.  
   
 ```xml  
 <wsHttpBinding>  

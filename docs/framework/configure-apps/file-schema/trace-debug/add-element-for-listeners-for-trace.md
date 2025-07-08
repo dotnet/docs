@@ -36,7 +36,7 @@ Adds a listener to the **Listeners** collection.
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|**type**|Required attribute.<br /><br /> Specifies the type of the listener. You must use a string that meets the requirements specified in [Specifying Fully Qualified Type Names](../../../reflection-and-codedom/specifying-fully-qualified-type-names.md).|  
+|**type**|Required attribute.<br /><br /> Specifies the type of the listener. You must use a string that meets the requirements specified in [Specifying Fully Qualified Type Names](../../../../fundamentals/reflection/specifying-fully-qualified-type-names.md).|  
 |**initializeData**|Optional attribute.<br /><br /> The string passed to the constructor for the specified class.|  
 |**name**|Optional attribute.<br /><br /> Specifies the name of the listener.|  
   

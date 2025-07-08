@@ -1,17 +1,15 @@
 ﻿' <Snippet1>
 Option Explicit On
 Option Strict On
-
-Imports System.Data
-Imports System.Data.OracleClient
+Imports Oracle.ManagedDataAccess.Client
 
 Public Class Program
     Public Shared Sub Main()
 
-        Dim connectionString As String = _
-            "Data Source=ThisOracleServer;Integrated Security=yes;"
+        Dim connectionString As String =
+            "..."
 
-        Dim queryString As String = _
+        Dim queryString As String =
             "SELECT CUSTOMER_ID, NAME FROM DEMO.CUSTOMER"
 
         Using connection As New OracleConnection(connectionString)
@@ -19,10 +17,10 @@ Public Class Program
             command.CommandText = queryString
             Try
                 connection.Open()
-                Dim dataReader As OracleDataReader = _
+                Dim dataReader As OracleDataReader =
                  command.ExecuteReader()
                 Do While dataReader.Read()
-                    Console.WriteLine(vbTab & "{0}" & vbTab & "{1}", _
+                    Console.WriteLine(vbTab & "{0}" & vbTab & "{1}",
                      dataReader(0), dataReader(1))
                 Loop
                 dataReader.Close()

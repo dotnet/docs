@@ -1,10 +1,10 @@
 ---
 description: "C# Compiler Options for security. These options control signing assemblies or address space layout."
-title: "C# Compiler Options - security options"
+title: "Compiler Options - security options"
 ms.date: 03/12/2021
-f1_keywords: 
+f1_keywords:
   - "cs.build.options"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "PublicSign compiler option [C#]"
   - "DelaySign compiler option [C#]"
   - "KeyFile compiler option [C#]"
@@ -20,6 +20,9 @@ The following options control compiler security options. The new MSBuild syntax 
 - **KeyFile** / `-keyfile` : Specify a strong name key file.
 - **KeyContainer** / `-keycontainer`: Specify a strong name key container.
 - **HighEntropyVA** / `-highentropyva`: Enable high-entropy Address Space Layout Randomization (ASLR)
+
+> [!NOTE]
+> Refer to [Compiler options](index.md#how-to-set-options) for more information on configuring these options for your project.
 
 ## PublicSign
 
@@ -39,7 +42,7 @@ This option causes the compiler to reserve space in the output file so that a di
 <DelaySign>true</DelaySign>
 ```
 
-Use **DelaySign-** if you want a fully signed assembly. Use **DelaySign** if you only want to place the public key in the assembly. The **DelaySign** option has no effect unless used with [**KeyFile**](#keyfile) or [**KeyContainer**](#keycontainer). The [**KeyContainer**](#keycontainer) and [**PublicSign**](#publicsign) options are mutually exclusive. When you request a fully signed assembly, the compiler hashes the file that contains the manifest (assembly metadata) and signs that hash with the private key. That operation creates a digital signature that is stored in the file that contains the manifest. When an assembly is delay signed, the compiler doesn't compute and store the signature. Instead, the compiler but reserves space in the file so the signature can be added later.
+Use **DelaySign-** if you want a fully signed assembly. Use **DelaySign** if you only want to place the public key in the assembly. The **DelaySign** option has no effect unless used with [**KeyFile**](#keyfile) or [**KeyContainer**](#keycontainer). The **DelaySign** and [**PublicSign**](#publicsign) options are mutually exclusive. When you request a fully signed assembly, the compiler hashes the file that contains the manifest (assembly metadata) and signs that hash with the private key. That operation creates a digital signature that is stored in the file that contains the manifest. When an assembly is delay signed, the compiler doesn't compute and store the signature. Instead, the compiler but reserves space in the file so the signature can be added later.
 
 Using **DelaySign** allows a tester to put the assembly in the global cache. After testing, you can fully sign the assembly by placing the private key in the assembly using the [Assembly Linker](../../../framework/tools/al-exe-assembly-linker.md) utility. For more information, see [Creating and Using Strong-Named Assemblies](../../../standard/assembly/create-use-strong-named.md) and [Delay Signing an Assembly](../../../standard/assembly/delay-sign.md).
 
@@ -61,7 +64,7 @@ Specifies the name of the cryptographic key container.
 <KeyContainer>container</KeyContainer>
 ```
 
-`container` is the name of the strong name key container. When the **KeyContainer** option is used, the compiler creates a sharable component. The compiler inserts a public key from the specified container into the assembly manifest and signs the final assembly with the private key. To generate a key file, type `sn -k file` at the command line. `sn -i` installs the key pair into a container. This option isn't supported when the compiler runs on CoreCLR. To sign an assembly when building on CoreCLR, use the [**KeyFile**](#keyfile) option. If you compile with [**TargetType**](output.md#targettype), the name of the key file is held in the module and incorporated into the assembly when you compile this module into an assembly with [**AddModules**](inputs.md#addmodules). You can also specify this option as a custom attribute (<xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=nameWithType>) in the source code for any Microsoft intermediate language (MSIL) module. You can also pass your encryption information to the compiler with [**KeyFile**](#keyfile). Use [**DelaySign**](#delaysign) to add the public key  to the assembly manifest but signing the assembly until it has been tested. For more information, see [Creating and Using Strong-Named Assemblies](../../../standard/assembly/create-use-strong-named.md) and [Delay Signing an Assembly](../../../standard/assembly/delay-sign.md).
+`container` is the name of the strong name key container. When the **KeyContainer** option is used, the compiler creates a sharable component. The compiler inserts a public key from the specified container into the assembly manifest and signs the final assembly with the private key. To generate a key file, type `sn -k file` at the command line. `sn -i` installs the key pair into a container. This option isn't supported when the compiler runs on CoreCLR. To sign an assembly when building on CoreCLR, use the [**KeyFile**](#keyfile) option. If you compile with [**TargetType**](output.md#targettype), the name of the key file is held in the module and incorporated into the assembly when you compile this module into an assembly with [**AddModules**](inputs.md#addmodules). You can also specify this option as a custom attribute (<xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=nameWithType>) in the source code for any common intermediate language (CIL) module. You can also pass your encryption information to the compiler with [**KeyFile**](#keyfile). Use [**DelaySign**](#delaysign) to add the public key  to the assembly manifest but signing the assembly until it has been tested. For more information, see [Creating and Using Strong-Named Assemblies](../../../standard/assembly/create-use-strong-named.md) and [Delay Signing an Assembly](../../../standard/assembly/delay-sign.md).
 
 ## HighEntropyVA
 

@@ -1,22 +1,20 @@
 ---
-description: "Learn more about: Retrieving Data from Multiple REF CURSORs Using an OracleDataReader"
+description: "Learn more about retrieving data from multiple REF CURSORs using an OracleDataReader by studying an example that executes a PL/SQL stored procedure."
 title: "Retrieving Data from Multiple REF CURSORs Using an OracleDataReader"
 ms.date: "03/30/2017"
 dev_langs:
   - "vb"
-ms.assetid: 361e9bd4-447d-44b7-8629-3c11f1a7ffbb
 ---
 # Retrieving Data from Multiple REF CURSORs Using an OracleDataReader
 
-This Microsoft Visual Basic example executes a PL/SQL stored procedure that returns two REF CURSOR parameters, and reads the values using an <xref:System.Data.OracleClient.OracleDataReader>.
+This Visual Basic example executes a PL/SQL stored procedure that returns two REF CURSOR parameters, and reads the values using an <xref:System.Data.OracleClient.OracleDataReader>.
 
 ```vb
 Private Sub Button1_Click( _
   ByVal sender As Object, ByVal e As System.EventArgs)  _
   Handles Button1.Click
 
-  Dim connString As New String( _
-      "Data Source=Oracle9i;User ID=scott;Password=[PLACEHOLDER];")
+  Dim connString As New String("...")
   Using conn As New OracleConnection(connString)
     Dim cmd As New OracleCommand()
     Dim rdr As OracleDataReader

@@ -9,7 +9,7 @@ namespace DirtyReadSample
         static void Main()
         {
             // The connections must use a shared cache
-            const string connectionString = "Data Source=DirtyReadSample;Mode=Memory;Cache=Shared";
+            const string connectionString = "...";
 
             var firstConnection = new SqliteConnection(connectionString);
             firstConnection.Open();

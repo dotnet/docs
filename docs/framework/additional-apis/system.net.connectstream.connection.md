@@ -2,7 +2,7 @@
 description: "Learn more about: ConnectStream.Connection Property"
 title: ConnectStream.Connection Property (System.Net)
 ms.date: 10/21/2019
-ms.technology: "dotnet-networking"
+ms.subservice: "networking"
 topic_type:
   - "apiref"
 api_name:

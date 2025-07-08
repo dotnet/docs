@@ -25,7 +25,7 @@ ms.assetid: dfebc18e-acde-4510-9fa7-9a0f4aa3bd11
 
 ## Integer types
 
-.NET supports both signed and unsigned 8-bit, 16-bit, 32-bit, and 64-bit integer types, which are listed in the following tables.
+.NET supports both signed and unsigned 8-bit, 16-bit, 32-bit, 64-bit, and 128-bit integer types, which are listed in the following tables.
 
 **Signed integer types**
 
@@ -34,6 +34,7 @@ ms.assetid: dfebc18e-acde-4510-9fa7-9a0f4aa3bd11
 |<xref:System.Int16?displayProperty=nameWithType>|2|-32,768|32,767|
 |<xref:System.Int32?displayProperty=nameWithType>|4|-2,147,483,648|2,147,483,647|
 |<xref:System.Int64?displayProperty=nameWithType>|8|-9,223,372,036,854,775,808|9,223,372,036,854,775,807|
+|<xref:System.Int128?displayProperty=nameWithType>|16|−170,141,183,460,469,231,731,687,303,715,884,105,728|170,141,183,460,469,231,731,687,303,715,884,105,727|
 |<xref:System.SByte?displayProperty=nameWithType>|1|-128|127|
 |<xref:System.IntPtr?displayProperty=nameWithType> (in 32-bit process)|4|-2,147,483,648|2,147,483,647|
 |<xref:System.IntPtr?displayProperty=nameWithType> (in 64-bit process)|8|-9,223,372,036,854,775,808|9,223,372,036,854,775,807|
@@ -46,6 +47,7 @@ ms.assetid: dfebc18e-acde-4510-9fa7-9a0f4aa3bd11
 |<xref:System.UInt16?displayProperty=nameWithType>|2|0|65,535|
 |<xref:System.UInt32?displayProperty=nameWithType>|4|0|4,294,967,295|
 |<xref:System.UInt64?displayProperty=nameWithType>|8|0|18,446,744,073,709,551,615|
+|<xref:System.UInt128?displayProperty=nameWithType>|16|0|340,282,366,920,938,463,463,374,607,431,768,211,455|
 |<xref:System.UIntPtr?displayProperty=nameWithType> (in 32-bit process)|4|0|4,294,967,295|
 |<xref:System.UIntPtr?displayProperty=nameWithType> (in 64-bit process)|8|0|18,446,744,073,709,551,615|
 
@@ -67,9 +69,9 @@ The <xref:System.Numerics.BigInteger?displayProperty=nameWithType> structure is 
 | Type                                               | Size (in bytes) | Approximate range         | Primitive? | Notes                |
 |----------------------------------------------------|-----------------|---------------------------|------------|----------------------|
 | <xref:System.Half?displayProperty=nameWithType>    | 2               | ±65504                    | No         | Introduced in .NET 5 |
-| <xref:System.Single?displayProperty=nameWithType>  | 4               | ±3.4 x 10<sup>38</sup>    | Yes        |
-| <xref:System.Double?displayProperty=nameWithType>  | 8               | ±1.7 × 10<sup>308</sup>   | Yes        |
-| <xref:System.Decimal?displayProperty=nameWithType> | 16              | ±7.9228 x 10<sup>28</sup> | No         |
+| <xref:System.Single?displayProperty=nameWithType>  | 4               | ±3.4 x 10<sup>38</sup>    | Yes        |                      |
+| <xref:System.Double?displayProperty=nameWithType>  | 8               | ±1.7 × 10<sup>308</sup>   | Yes        |                      |
+| <xref:System.Decimal?displayProperty=nameWithType> | 16              | ±7.9228 x 10<sup>28</sup> | No         |                      |
 
 The <xref:System.Half>, <xref:System.Single>, and <xref:System.Double> types support special values that represent not-a-number and infinity. For example, the <xref:System.Double> type provides the following values: <xref:System.Double.NaN?displayProperty=nameWithType>, <xref:System.Double.NegativeInfinity?displayProperty=nameWithType>, and <xref:System.Double.PositiveInfinity?displayProperty=nameWithType>. You use the <xref:System.Double.IsNaN%2A?displayProperty=nameWithType>, <xref:System.Double.IsInfinity%2A?displayProperty=nameWithType>, <xref:System.Double.IsPositiveInfinity%2A?displayProperty=nameWithType>, and <xref:System.Double.IsNegativeInfinity%2A?displayProperty=nameWithType> methods to test for these special values.
 

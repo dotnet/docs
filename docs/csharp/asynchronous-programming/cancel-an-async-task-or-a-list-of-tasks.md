@@ -19,19 +19,15 @@ This tutorial covers:
 
 ## Prerequisites
 
-This tutorial requires the following:
-
-- [.NET 5 or later SDK](https://dotnet.microsoft.com/download/dotnet/5.0)
-- Integrated development environment (IDE)
-  - [We recommend Visual Studio, Visual Studio Code, or Visual Studio for Mac](https://visualstudio.microsoft.com)
+[!INCLUDE [Prerequisites](../../../includes/prerequisites-basic.md)]
 
 ### Create example application
 
 Create a new .NET Core console application. You can create one by using the [`dotnet new console`](../../core/tools/dotnet-new-sdk-templates.md#console) command or from [Visual Studio](/visualstudio/install/install-visual-studio). Open the *Program.cs* file in your favorite code editor.
 
-### Replace using statements
+### Replace using directives
 
-Replace the existing using statements with these declarations:
+Replace the existing `using` directives with these declarations:
 
 ```csharp
 using System;
@@ -74,7 +70,7 @@ static readonly IEnumerable<string> s_urlList = new string[]
     "https://learn.microsoft.com/system-center",
     "https://learn.microsoft.com/visualstudio",
     "https://learn.microsoft.com/windows",
-    "https://learn.microsoft.com/xamarin"
+    "https://learn.microsoft.com/maui"
 };
 ```
 
@@ -100,7 +96,7 @@ static async Task Main()
         Console.WriteLine("\nENTER key pressed: cancelling downloads.\n");
         s_cts.Cancel();
     });
-    
+
     Task sumPageSizesTask = SumPageSizesAsync();
 
     Task finishedTask = await Task.WhenAny(new[] { cancelTask, sumPageSizesTask });
@@ -117,7 +113,7 @@ static async Task Main()
             Console.WriteLine("Download task has been cancelled.");
         }
     }
-        
+
     Console.WriteLine("Application ending.");
 }
 ```

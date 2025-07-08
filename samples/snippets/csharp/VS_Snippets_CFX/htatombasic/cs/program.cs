@@ -1,4 +1,4 @@
-﻿// <Snippet12>
+// <Snippet12>
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -91,8 +91,8 @@ namespace Service
                 Console.WriteLine("Items:");
                 foreach (SyndicationItem item in feed.Items)
                 {
-                    Console.WriteLine("Title: {0}", item.Title.Text);
-                    Console.WriteLine("Content: {0}", ((TextSyndicationContent)item.Content).Text);
+                    Console.WriteLine($"Title: {item.Title.Text}");
+                    Console.WriteLine($"Content: {((TextSyndicationContent)item.Content).Text}");
                 }
                 Console.WriteLine("Press <ENTER> to quit...");
                 Console.ReadLine();
@@ -101,7 +101,7 @@ namespace Service
             }
             catch (CommunicationException ce)
             {
-                Console.WriteLine("An exception occurred: {0}", ce.Message);
+                Console.WriteLine($"An exception occurred: {ce.Message}");
                 svcHost.Abort();
             }
         }

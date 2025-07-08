@@ -47,6 +47,7 @@ This provider logs information from the ArrayPool. The following table shows the
 |`BufferReturned`|Verbose (5)|A buffer is returned to the pool.|
 |`BufferTrimmed`|Informational (4)|A buffer is attempted to be freed due to memory pressure or inactivity.|
 |`BufferTrimPoll`|Informational (4)|A check is being made to trim buffers.|
+|`BufferDropped`|Informational (4)|A buffer is dropped when returned to the pool.|
 
 ### "System.Net.Http" provider
 

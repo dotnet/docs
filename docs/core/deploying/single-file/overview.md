@@ -2,7 +2,6 @@
 title: Create a single file for application deployment
 description: Learn what single file application is and why you should consider using this application deployment model.
 author: lakshanf
-ms.author: lakshanf
 ms.date: 06/21/2022
 ms.custom: kr2b-contr-experiment
 ---
@@ -13,7 +12,7 @@ Bundling all application-dependent files into a single binary provides an applic
 
 The size of the single file in a self-contained application is large since it includes the runtime and the framework libraries. In .NET 6, you can [publish trimmed](../trimming/trim-self-contained.md) to reduce the total size of trim-compatible applications. The single file deployment option can be combined with [ReadyToRun](../ready-to-run.md) and [Trim](../trimming/trim-self-contained.md) publish options.
 
-> [IMPORTANT]
+> [!IMPORTANT]
 > To run a single file app on Windows 7, you must use .NET Runtime 6.0.3 or later.
 
 ## Sample project file
@@ -42,7 +41,7 @@ These properties have the following functions:
 
 Single file apps are always OS and architecture specific. You need to publish for each configuration, such as Linux x64, Linux Arm64, Windows x64, and so forth.
 
-Runtime configuration files, such as _\*.runtimeconfig.json_ and _\*.deps.json_, are included in the single file. If an extra configuration file is needed, you can place it beside the single file.
+Runtime configuration files, such as _\*.runtimeconfig.json_ and _\*.deps.json_, are included in the single file.
 
 ## Publish a single-file app
 
@@ -107,10 +106,6 @@ Visual Studio creates reusable publishing profiles that control how your applica
 1. Choose **Publish** to publish your app as a single file.
 
 For more information, see [Publish .NET Core apps with Visual Studio](../deploy-with-vs.md).
-
-# [Visual Studio for Mac](#tab/vsmac)
-
-Visual Studio for Mac doesn't provide options to publish your app as a single file. You'll need to publish manually by following the instructions from the CLI tab. For more information, see [Publish .NET apps with .NET CLI](../deploy-with-cli.md).
 
 ---
 

@@ -1,20 +1,19 @@
 ---
-description: "Learn more about: GetCORVersion Function"
 title: "GetCORVersion Function"
+description: "Learn more about: GetCORVersion Function"
 ms.date: "03/30/2017"
-api_name: 
+api_name:
   - "GetCORVersion"
-api_location: 
+api_location:
   - "mscoree.dll"
   - "mscoreei.dll"
-api_type: 
+api_type:
   - "DLLExport"
-f1_keywords: 
+f1_keywords:
   - "GetCORVersion"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "GetCORVersion function [.NET Framework hosting]"
-ms.assetid: 2f09cd37-bf3a-4cc5-87b0-adc42a7eed31
-topic_type: 
+topic_type:
   - "apiref"
 ---
 # GetCORVersion Function
@@ -42,7 +41,7 @@ HRESULT GetCORVersion (
  The number of characters (`WCHAR`s) that can be held in `pbuffer`.  
   
  `dwLength`  
- A pointer to the number of characters actually returned in `pbuffer`. If `pbuffer` is a null pointer, the runtime returns E_POINTER. If the number of characters is greater then the length of `pbuffer` , the runtime returns ERROR_INSUFFICIENT_BUFFER.  
+ A pointer to the number of characters actually returned in `pbuffer`. If `pbuffer` is a null pointer, the runtime returns E_POINTER. If the number of characters is greater then the length of `pbuffer`, the runtime returns ERROR_INSUFFICIENT_BUFFER.  
   
 ## Requirements  
 

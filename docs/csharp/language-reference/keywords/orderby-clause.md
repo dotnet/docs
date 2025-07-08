@@ -1,6 +1,6 @@
 ---
 description: "orderby clause - C# Reference"
-title: "orderby clause - C# Reference"
+title: "orderby clause"
 ms.date: 07/20/2015
 f1_keywords: 
   - "orderby"
@@ -12,7 +12,7 @@ ms.assetid: 21f87f48-d69d-4e95-9a52-6fec47b37e1f
 ---
 # orderby clause (C# Reference)
 
-In a query expression, the `orderby` clause causes the returned sequence or subsequence (group) to be sorted in either ascending or descending order. Multiple keys can be specified in order to perform one or more secondary sort operations. The sorting is performed by the default comparer for the type of the element. The default sort order is ascending. You can also specify a custom comparer. However, it is only available by using method-based syntax. For more information, see [Sorting Data](../../programming-guide/concepts/linq/sorting-data.md).
+In a query expression, the `orderby` clause causes the returned sequence or subsequence (group) to be sorted in either ascending or descending order. Multiple keys can be specified in order to perform one or more secondary sort operations. The sorting is performed by the default comparer for the type of the element. The default sort order is ascending. You can also specify a custom comparer. However, it is only available by using method-based syntax. For more information, see [Sorting Data](../../linq/standard-query-operators/sorting-data.md).
 
 ## Example 1
 
@@ -32,8 +32,7 @@ At compile time, the `orderby` clause is translated to a call to the <xref:Syste
 
 ## See also
 
-- [C# Reference](../index.md)
 - [Query Keywords (LINQ)](query-keywords.md)
 - [LINQ in C#](../../linq/index.md)
 - [group clause](group-clause.md)
-- [Language Integrated Query (LINQ)](/dotnet/csharp/linq/)
+- [Language Integrated Query (LINQ)](../../linq/index.md)

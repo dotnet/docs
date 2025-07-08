@@ -1,6 +1,6 @@
 ---
 description: "let clause - C# Reference"
-title: "let clause - C# Reference"
+title: "let clause"
 ms.date: 07/20/2015
 f1_keywords:
   - "let_CSharpKeyword"
@@ -26,8 +26,7 @@ In the following example `let` is used in two ways:
 
 ## See also
 
-- [C# Reference](../index.md)
 - [Query Keywords (LINQ)](query-keywords.md)
 - [LINQ in C#](../../linq/index.md)
-- [Language Integrated Query (LINQ)](/dotnet/csharp/linq/)
-- [Handle exceptions in query expressions](../../linq/handle-exceptions-in-query-expressions.md)
+- [Language Integrated Query (LINQ)](../../linq/index.md)
+- [Handle exceptions in query expressions](../../linq/get-started/write-linq-queries.md)

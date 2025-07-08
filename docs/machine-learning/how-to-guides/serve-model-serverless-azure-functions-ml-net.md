@@ -11,14 +11,14 @@ ms.topic: how-to
 
 # Deploy a model to Azure Functions
 
-Learn how to deploy a pre-trained ML.NET machine learning model for predictions over HTTP through an Azure Functions serverless environment.
+Learn how to deploy a pretrained ML.NET machine learning model for predictions over HTTP through an Azure Functions serverless environment.
 
 ## Prerequisites
 
-- [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) with the **.NET desktop development** and **Azure development** workloads installed. The .NET 6 SDK is automatically installed when you select this workload.
+- [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/) with the **.NET desktop development** and **Azure development** workloads installed. The .NET SDK is automatically installed when you select this workload.
 - [Azure Functions Tools](/azure/azure-functions/functions-develop-vs#check-your-tools-version)
 - PowerShell
-- Pre-trained model. Download this [pre-trained sentiment analysis machine learning model](https://github.com/dotnet/samples/blob/main/machine-learning/models/sentimentanalysis/sentiment_model.zip) or use the [ML.NET Sentiment Analysis tutorial](../tutorials/sentiment-analysis.md) to build your own model.
+- Pre-trained model. Download this [pretrained sentiment analysis machine learning model](https://github.com/dotnet/samples/blob/main/machine-learning/models/sentimentanalysis/sentiment_model.zip) or use the [ML.NET Sentiment Analysis tutorial](../tutorials/sentiment-analysis.md) to build your own model.
 
 ## Azure Functions sample overview
 
@@ -26,40 +26,40 @@ This sample is a **C# HTTP Trigger Azure Functions application** that uses a pre
 
 ## Create Azure Functions project
 
-1. In Visual Studio 2022 open the **Create a new project** dialog.  
+1. In Visual Studio 2022 open the **Create a new project** dialog.
 1. In the "Create a new project" dialog, select the **Azure Functions** project template.
-1. In the **Name** text box, type "SentimentAnalysisFunctionsApp" and select the **Next** button.
-1. In the "Additional information dialog", leave all the defaults as is and select the **Create** button.
+1. In the **Name** text box, type "SentimentAnalysisFunctionsApp" and select **Next**.
+1. In the "Additional information dialog", leave all the defaults as is and select **Create**.
 1. Install the **Microsoft.ML NuGet Package**
 
     1. In Solution Explorer, right-click on your project and select **Manage NuGet Packages**.
     1. Choose "nuget.org" as the Package source.
     1. Select the "Browse" tab.
     1. Search for **Microsoft.ML**.
-    1. Select that package in the list, and select the **Install** button.
+    1. Select that package in the list, and select **Install**.
     1. Select the **OK** button on the **Preview Changes** dialog
     1. Select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed.
 
     Follow the same steps to install the **Microsoft.Extensions.ML**, **Microsoft.Extensions.DependencyInjection**, and **Microsoft.Azure.Functions.Extensions** NuGet packages.
 
-## Add pre-trained model to project
+## Add pretrained model to project
 
-1. Create a directory named *MLModels* in your project to save your pre-build model:
-    In Solution Explorer, right-click on your project and select **Add > New Folder**. Type "MLModels" and hit Enter.
-1. Copy your pre-built model to the *MLModels* folder.
-1. In Solution Explorer, right-click your pre-built model file and select **Properties**. Under **Advanced**, change the value of **Copy to Output Directory** to **Copy if newer**.
+1. Create a directory named *MLModels* in your project to save your prebuild model:
+    In Solution Explorer, right-click on your project and select **Add > New Folder**. Type "MLModels" and select <kbd>Enter</kbd>.
+1. Copy your prebuilt model to the *MLModels* folder.
+1. In Solution Explorer, right-click your prebuilt model file and select **Properties**. Under **Advanced**, change the value of **Copy to Output Directory** to **Copy if newer**.
 
 ## Create Azure Function to analyze sentiment
 
 Create a class to predict sentiment. Add a new class to your project:
 
-1. In **Solution Explorer**, right-click the project, and then select **Add** > **New Azure Function...**.
+1. In **Solution Explorer**, right-click the project, and then select **Add** > **New Azure Function**.
 
-1. In the **Add New Item** dialog box, select **Azure Function** and change the **Name** field to *AnalyzeSentiment.cs*. Then, select the **Add** button.
+1. In the **Add New Item** dialog box, select **Azure Function** and change the **Name** field to *AnalyzeSentiment.cs*. Then, select **Add**.
 
-1. In the **New Azure Function** dialog box, select **Http Trigger** and choose **Anonymous** from the Authorization level dropdown. Then, select the **OK** button.
+1. In the **New Azure Function** dialog box, select **Http Trigger** and choose **Anonymous** from the Authorization level dropdown. Then, select **OK**.
 
-    The *AnalyzeSentiment.cs* file opens in the code editor. Add the following `using` statement to the top of *AnalyzeSentiment.cs*:
+    The *AnalyzeSentiment.cs* file opens in the code editor. Add the following `using` directive to the top of *AnalyzeSentiment.cs*:
 
     [!code-csharp [AnalyzeUsings](~/machinelearning-samples/samples/csharp/end-to-end-apps/ScalableMLModelOnAzureFunction/SentimentAnalysisFunctionsApp/AnalyzeSentiment.cs#L1-L11)]
 
@@ -77,11 +77,11 @@ Create a class to predict sentiment. Add a new class to your project:
 You need to create some classes for your input data and predictions. Add a new class to your project:
 
 1. Create a directory named *DataModels* in your project to save your data models:
-    In Solution Explorer, right-click on your project and select **Add > New Folder**. Type "DataModels" and hit Enter.
+    In Solution Explorer, right-click on your project and select **Add > New Folder**. Type "DataModels" and select <kbd>Enter</kbd>.
 2. In Solution Explorer, right-click the *DataModels* directory, and then select **Add > Class**.
-3. In the **Add New Item** dialog box, select **Class** and change the **Name** field to *SentimentData.cs*. Then, select the **Add** button.
+3. In the **Add New Item** dialog box, select **Class** and change the **Name** field to *SentimentData.cs*. Then, select **Add**.
 
-    The *SentimentData.cs* file opens in the code editor. Add the following using statement to the top of *SentimentData.cs*:
+    The *SentimentData.cs* file opens in the code editor. Add the following `using` directive to the top of *SentimentData.cs*:
 
     [!code-csharp [SentimentDataUsings](~/machinelearning-samples/samples/csharp/end-to-end-apps/ScalableMLModelOnAzureFunction/SentimentAnalysisFunctionsApp/DataModels/SentimentData.cs#L1)]
 
@@ -90,7 +90,7 @@ You need to create some classes for your input data and predictions. Add a new c
     [!code-csharp [SentimentData](~/machinelearning-samples/samples/csharp/end-to-end-apps/ScalableMLModelOnAzureFunction/SentimentAnalysisFunctionsApp/DataModels/SentimentData.cs#L5-L13)]
 
 4. In Solution Explorer, right-click the *DataModels* directory, and then select **Add > Class**.
-5. In the **Add New Item** dialog box, select **Class** and change the **Name** field to *SentimentPrediction.cs*. Then, select the **Add** button. The *SentimentPrediction.cs* file opens in the code editor. Add the following using statement to the top of *SentimentPrediction.cs*:
+5. In the **Add New Item** dialog box, select **Class** and change the **Name** field to *SentimentPrediction.cs*. Then, select **Add**. The *SentimentPrediction.cs* file opens in the code editor. Add the following `using` directive to the top of *SentimentPrediction.cs*:
 
     [!code-csharp [SentimentPredictionUsings](~/machinelearning-samples/samples/csharp/end-to-end-apps/ScalableMLModelOnAzureFunction/SentimentAnalysisFunctionsApp/DataModels/SentimentPrediction.cs#L1)]
 
@@ -107,12 +107,12 @@ To make a single prediction, you have to create a [`PredictionEngine`](xref:Micr
 The following link provides more information if you want to learn more about [dependency injection](https://en.wikipedia.org/wiki/Dependency_injection).
 
 1. In **Solution Explorer**, right-click the project, and then select **Add** > **Class**.
-1. In the **Add New Item** dialog box, select **Class** and change the **Name** field to *Startup.cs*. Then, select the **Add** button.
-1. Add the following using statements to the top of *Startup.cs*:
+1. In the **Add New Item** dialog box, select **Class** and change the **Name** field to *Startup.cs*. Then, select **Add**.
+1. Add the following `using` directives to the top of *Startup.cs*:
 
     [!code-csharp [StartupUsings](~/machinelearning-samples/samples/csharp/end-to-end-apps/ScalableMLModelOnAzureFunction/SentimentAnalysisFunctionsApp/Startup.cs#L1-L7)]
 
-1. Remove the existing code below the using statements and add the following code:
+1. Remove the existing code below the `using` directives and add the following code:
 
     ```csharp
     [assembly: FunctionsStartup(typeof(Startup))]

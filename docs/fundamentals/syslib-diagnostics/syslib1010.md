@@ -2,6 +2,8 @@
 title: SYSLIB1010 warning
 description: Learn about the diagnostic that generates compile-time warning SYSLIB1010.
 ms.date: 05/07/2021
+f1_keywords:
+  - syslib1010
 ---
 
 # SYSLIB1010: Logging methods must be partial

@@ -1,29 +1,28 @@
 items:
 - name: Configure apps
   href: index.md
+- name: Read application settings
+  href: read-app-settings.md
+- name: Locate assemblies by using DEVPATH
+  href: how-to-locate-assemblies-by-using-devpath.md
+- name: Redirect assembly versions
   items:
-  - name: Read application settings
-    href: read-app-settings.md
-  - name: Locate assemblies by using DEVPATH
-    href: how-to-locate-assemblies-by-using-devpath.md
-  - name: Redirect assembly versions
-    items:
-    - name: Overview
-      href: redirect-assembly-versions.md
-    - name: "How to: Enable and disable automatic binding redirection"
-      href: how-to-enable-and-disable-automatic-binding-redirection.md
-    - name: Assembly binding redirection security permission
-      href: assembly-binding-redirection-security-permission.md
-  - name: Specify an assembly's location
-    href: specify-assembly-location.md
-  - name: Configure cryptography classes
-    href: configure-cryptography-classes.md
-    items:
-    - name: Map algorithm names to cryptography classes
-      href: map-algorithm-names-to-cryptography-classes.md
-    - name: Map object identifiers to cryptography algorithms
-      href: map-object-identifiers-to-cryptography-algorithms.md
-  - name: Create a publisher policy
-    href: how-to-create-a-publisher-policy.md
-  - name: Configuration file schema
-    href: file-schema/index.md
+  - name: Overview
+    href: redirect-assembly-versions.md
+  - name: "How to: Enable and disable automatic binding redirection"
+    href: how-to-enable-and-disable-automatic-binding-redirection.md
+  - name: Assembly binding redirection security permission
+    href: assembly-binding-redirection-security-permission.md
+- name: Specify an assembly's location
+  href: specify-assembly-location.md
+- name: Configure cryptography classes
+  href: configure-cryptography-classes.md
+  items:
+  - name: Map algorithm names to cryptography classes
+    href: map-algorithm-names-to-cryptography-classes.md
+  - name: Map object identifiers to cryptography algorithms
+    href: map-object-identifiers-to-cryptography-algorithms.md
+- name: Create a publisher policy
+  href: how-to-create-a-publisher-policy.md
+- name: Configuration file schema
+  href: file-schema/index.md

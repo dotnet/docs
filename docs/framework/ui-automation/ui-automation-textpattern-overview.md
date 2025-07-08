@@ -6,7 +6,6 @@ helpviewer_keywords:
   - "UI Automation, TextPattern class"
   - "TextPattern class"
   - "classes, TextPattern"
-ms.assetid: 41787927-df1f-4f4a-aba3-641662854fc4
 ---
 
 # UI Automation TextPattern Overview
@@ -19,7 +18,7 @@ This overview describes how to use Microsoft UI Automation to expose the textual
 Exposing the textual content of a control is accomplished through the use of the <xref:System.Windows.Automation.TextPattern> control pattern, which represents the contents of a text container as a text stream. In turn, <xref:System.Windows.Automation.TextPattern> requires the support of the <xref:System.Windows.Automation.Text.TextPatternRange> class to expose format and style attributes. <xref:System.Windows.Automation.Text.TextPatternRange> supports <xref:System.Windows.Automation.TextPattern> by representing contiguous or multiple, disjoint text spans in a text container with a collection of <xref:System.Windows.Automation.Text.TextPatternRangeEndpoint.Start> and <xref:System.Windows.Automation.Text.TextPatternRangeEndpoint.End> endpoints. <xref:System.Windows.Automation.Text.TextPatternRange> supports functionality such as selection, comparison, retrieval and traversal.
 
 > [!NOTE]
-> The <xref:System.Windows.Automation.TextPattern> classes do not provide a means to insert or modify text. However, depending on the control, this may be accomplished by the UI Automation <xref:System.Windows.Automation.ValuePattern> or through direct keyboard input. See the [TextPattern Insert Text Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Accessibility/InsertText) for an example.
+> The <xref:System.Windows.Automation.TextPattern> classes do not provide a means to insert or modify text. However, depending on the control, this may be accomplished by the UI Automation <xref:System.Windows.Automation.ValuePattern> or through direct keyboard input. See the [TextPattern Insert Text Sample](https://github.com/Microsoft/WPF-Samples/tree/main/Accessibility/InsertText) for an example.
 
 The functionality described in this overview is vital to assistive technology vendors and their end users. Assistive technologies can use UI Automation to gather complete text formatting information for the user and provide programmatic navigation and selection of text by <xref:System.Windows.Automation.Text.TextUnit> (character, word, line, or paragraph).
 

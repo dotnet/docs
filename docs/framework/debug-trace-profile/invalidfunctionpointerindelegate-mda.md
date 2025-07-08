@@ -2,7 +2,7 @@
 title: "invalidFunctionPointerInDelegate MDA"
 description: Review the invalidFunctionPointerInDelegate managed debugging assistant (MDA), which is invoked if an invalid function pointer is passed in to make a delegate.
 ms.date: "03/30/2017"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "invalidFunctionPointerInDelegate MDA"
   - "managed debugging assistants (MDAs), invalid function pointer to delegates"
   - "MDAs (managed debugging assistants), invalid function pointer to delegates"
@@ -15,38 +15,40 @@ ms.assetid: 99ae44f1-783e-49a9-9009-24f54bbd0f09
 ---
 # invalidFunctionPointerInDelegate MDA
 
-The `invalidFunctionPointerInDelegate` managed debugging assistant (MDA) is activated when an invalid function pointer is passed in to construct a delegate over a native function pointer.  
-  
-## Symptoms  
+[!INCLUDE [net-framework-specific](../includes/net-framework-specific.md)]
 
- Access violations or unexpected memory corruption when using a delegate over a function pointer.  
-  
-## Cause  
+The `invalidFunctionPointerInDelegate` managed debugging assistant (MDA) is activated when an invalid function pointer is passed in to construct a delegate over a native function pointer.
 
- An invalid function pointer was specified.  
-  
-## Resolution  
+## Symptoms
 
- Specify a valid function pointer  
-  
-## Effect on the Runtime  
+ Access violations or unexpected memory corruption when using a delegate over a function pointer.
 
- This MDA has no effect on the CLR.  
-  
-## Output  
+## Cause
 
- The invalid function pointer.  
-  
-## Configuration  
-  
-```xml  
-<mdaConfig>  
-  <assistants>  
-    <invalidFunctionPointerInDelegate />  
-  </assistants>  
-</mdaConfig>  
-```  
-  
+ An invalid function pointer was specified.
+
+## Resolution
+
+ Specify a valid function pointer
+
+## Effect on the Runtime
+
+ This MDA has no effect on the CLR.
+
+## Output
+
+ The invalid function pointer.
+
+## Configuration
+
+```xml
+<mdaConfig>
+  <assistants>
+    <invalidFunctionPointerInDelegate />
+  </assistants>
+</mdaConfig>
+```
+
 ## See also
 
 - <xref:System.Runtime.InteropServices.MarshalAsAttribute>

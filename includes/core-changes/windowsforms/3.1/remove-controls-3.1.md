@@ -11,9 +11,12 @@ The following types are no longer available:
 - <xref:System.Windows.Forms.ContextMenu>
 - <xref:System.Windows.Forms.DataGrid>
 - <xref:System.Windows.Forms.DataGrid.HitTestType>
+- <xref:System.Windows.Forms.DataGrid.HitTestInfo>
 - <xref:System.Windows.Forms.DataGridBoolColumn>
 - <xref:System.Windows.Forms.DataGridCell>
 - <xref:System.Windows.Forms.DataGridColumnStyle>
+- <xref:System.Windows.Forms.DataGridColumnStyle.DataGridColumnHeaderAccessibleObject>
+- <xref:System.Windows.Forms.DataGridColumnStyle.CompModSwitches>
 - <xref:System.Windows.Forms.DataGridLineStyle>
 - <xref:System.Windows.Forms.DataGridParentRowsLabelStyle>
 - <xref:System.Windows.Forms.DataGridPreferredColumnWidthTypeConverter>

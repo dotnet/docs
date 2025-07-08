@@ -22,7 +22,7 @@ The <xref:System.IDisposable?displayProperty=nameWithType> interface is not cove
 [Collections](guidelines-for-collections.md)\
 [Serialization](serialization.md)\
 [System.Xml Usage](system-xml-usage.md)\
-[Equality Operators](equality-operators.md)\
+[Equality Operators](equality-operators.md)
 
 *Portions © 2005, 2009 Microsoft Corporation. All rights reserved.*
 

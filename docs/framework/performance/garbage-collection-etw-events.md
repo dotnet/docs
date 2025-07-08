@@ -6,7 +6,6 @@ helpviewer_keywords:
   - "GC events"
   - "garbage collection events [.NET Framework]"
   - "ETW, garbage collection events (CLR)"
-ms.topic: reference
 ---
 # Garbage Collection ETW Events
 
@@ -31,7 +30,7 @@ This category consists of the following events:
 - [GCCreateConcurrentThread_V1 Event](#gccreateconcurrentthread_v1-event)
 - [GCTerminateConcurrentThread_V1 Event](#gcterminateconcurrentthread_v1-event)
 
-## GCStart_V1 Event  
+## GCStart_V1 Event
 
 The following table shows the keyword and level. For more information, see [CLR ETW Keywords and Levels](clr-etw-keywords-and-levels.md).
 
@@ -109,7 +108,7 @@ The following table shows the event data:
 |SinkBlockCount|win:UInt32|The number of synchronization blocks in use.|
 |GCHandleCount|win:UInt32|The number of garbage collection handles in use.|
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|
-  
+
 ## GCHeapStats_V2 Event
 
 The following table shows the keyword and level:
@@ -144,7 +143,7 @@ The following table shows the event data:
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|
 |GenerationSize4|win:UInt64|The size, in bytes, of the pinned object heap.|
 |TotalPromotedSize4|win:UInt64|The number of bytes that survived in the pinned object heap after the last collection.|
-  
+
 ## GCCreateSegment_V1 Event
 
 The following table shows the keyword and level:
@@ -267,20 +266,20 @@ The following table shows the keyword and level:
 
 |Keyword for raising the event|Level|
 |-----------------------------------|-----------|
-|`GCKeyword` (0x1)|Informational (4)|
+|`GCKeyword` (0x1)|Verbose (5)|
 
 The following table shows the event information:
 
 |Event|Event ID|Raised when|
 |-----------|--------------|-----------------|
-|`GCAllocationTick_V2`|10|Each time approximately 100 KB is allocated.|
+|`GCAllocationTick_V2`|10|Each time approximately 100 KB is allocated per object heap. That is, SOH, LOH, and POH accumulate their allocated bytes separately. In Server GC, this is done per heap.|
 
 The following table shows the event data:
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
 |AllocationAmount|win:UInt32|The allocation size, in bytes. This value is accurate for allocations that are less than the length of a ULONG (4,294,967,295 bytes). If the allocation is greater, this field contains a truncated value. Use `AllocationAmount64` for very large allocations.|
-|AllocationKind|win:UInt32|0x0 - Small object allocation (allocation is in small object heap).<br /><br /> 0x1 - Large object allocation (allocation is in large object heap).|
+|AllocationKind|win:UInt32|0x0 - Small object allocation (allocation is in small object heap).<br /> 0x1 - Large object allocation (allocation is in large object heap).<br /> 0x2 - Pinned object allocation (allocation is in pinned object heap).|
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|
 |AllocationAmount64|win:UInt64|The allocation size, in bytes. This value is accurate for very large allocations.|
 |TypeId|win:Pointer|The address of the MethodTable. When there are several types of objects that were allocated during this event, this is the address of the MethodTable that corresponds to the last object allocated (the object that caused the 100 KB threshold to be exceeded).|
@@ -293,20 +292,20 @@ The following table shows the keyword and level:
 
 |Keyword for raising the event|Level|
 |-----------------------------------|-----------|
-|`GCKeyword` (0x1)|Informational (4)|
+|`GCKeyword` (0x1)|Verbose (5)|
 
 The following table shows the event information:
 
 |Event|Event ID|Raised when|
 |-----------|--------------|-----------------|
-|`GCAllocationTick_V3`|10|Each time approximately 100 KB is allocated.|
+|`GCAllocationTick_V2`|10|Each time approximately 100 KB is allocated per object heap. That is, SOH, LOH, and POH accumulate their allocated bytes separately. In Server GC, this is done per heap.|
 
 The following table shows the event data:
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
 |AllocationAmount|win:UInt32|The allocation size, in bytes. This value is accurate for allocations that are less than the length of a ULONG (4,294,967,295 bytes). If the allocation is greater, this field contains a truncated value. Use `AllocationAmount64` for very large allocations.|
-|AllocationKind|win:UInt32|0x0 - Small object allocation (allocation is in small object heap).<br /><br /> 0x1 - Large object allocation (allocation is in large object heap).|
+|AllocationKind|win:UInt32|0x0 - Small object allocation (allocation is in small object heap).<br /> 0x1 - Large object allocation (allocation is in large object heap).<br /> 0x2 - Pinned object allocation (allocation is in pinned object heap).|
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|
 |AllocationAmount64|win:UInt64|The allocation size, in bytes. This value is accurate for very large allocations.|
 |TypeId|win:Pointer|The address of the MethodTable. When there are several types of objects that were allocated during this event, this is the address of the MethodTable that corresponds to the last object allocated (the object that caused the 100 KB threshold to be exceeded).|

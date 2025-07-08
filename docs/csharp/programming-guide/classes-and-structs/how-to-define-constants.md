@@ -1,12 +1,11 @@
 ---
-title: "How to define constants in C#"
+title: "How to define constants"
 description: Learn how to define constants in C#, which are fields whose values are set at compile time. Use constants to provide meaningful names for special values.
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "C# language, constants"
   - "constants [C#]"
 ms.topic: how-to
-ms.custom: contperf-fy21q2
 ms.assetid: 43f511be-346c-4b8a-995e-aded94542ece
 ---
 # How to define constants in C\#

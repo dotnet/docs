@@ -1,5 +1,5 @@
 ---
-title: "Set assembly attributes"
+title: "Set assembly attributes in code"
 description: You can set assembly attributes for a .NET assembly, including assembly identity, informational, assembly manifest, and strong name attributes.
 ms.date: 10/22/2021
 helpviewer_keywords:
@@ -13,7 +13,7 @@ dev_langs:
     - "cpp"
 ---
 
-# Set assembly attributes
+# Set assembly attributes in code
 
 Assembly attributes are values that provide information about an assembly. They're usually set in an _AssemblyInfo.cs_ file. The attributes are divided into the following sets of information:
 
@@ -22,8 +22,7 @@ Assembly attributes are values that provide information about an assembly. They'
 - Assembly manifest attributes
 - Strong name attributes
 
-> [!TIP]
-> This article is scoped to adding assembly attributes from code. For information on adding assembly attributes to projects (not in code), see [MSBuild reference for .NET SDK projects: Assembly attribute properties](../../core/project-sdk/msbuild-props.md#assembly-attribute-properties).
+This article is scoped to adding assembly attributes from code. For information on adding assembly attributes to projects (not in code), see [Set assembly attributes in a project file](set-attributes-project-file.md).
 
 ## Assembly identity attributes
 
@@ -116,4 +115,4 @@ The following code example shows the attributes to apply when using delay signin
 ## See also
 
 - [Create assemblies](create.md)
-- [MSBuild reference for .NET SDK projects](../../core/project-sdk/msbuild-props.md)
+- [Assembly attribute MSBuild properties](../../core/project-sdk/msbuild-props.md#assembly-attribute-properties)

@@ -11,7 +11,7 @@ After you've instantiated an XML tree, writing queries is the most effective way
 
 For background information about LINQ queries, see:
 
-- [Introduction to LINQ Queries (C#)](../../csharp/programming-guide/concepts/linq/introduction-to-linq-queries.md)
+- [Introduction to LINQ Queries (C#)](../../csharp/linq/get-started/introduction-to-linq-queries.md)
 - [Writing Your First LINQ Query (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/writing-your-first-linq-query.md)
 
 ## In this section
@@ -28,8 +28,8 @@ This section of articles provides information, including examples, about LINQ to
 
 ## See also
 
-- [Language-Integrated Query (LINQ) (C#)](/dotnet/csharp/linq/)
-- [Introduction to LINQ Queries (C#)](../../csharp/programming-guide/concepts/linq/introduction-to-linq-queries.md)
+- [Language-Integrated Query (LINQ) (C#)](../../csharp/linq/index.md)
+- [Introduction to LINQ Queries (C#)](../../csharp/linq/get-started/introduction-to-linq-queries.md)
 - [LINQ in Visual Basic](../../visual-basic/programming-guide/language-features/linq/index.md)
 - [Language-Integrated Query (LINQ) (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/index.md)
 - [Getting Started with LINQ in Visual Basic](../../visual-basic/programming-guide/concepts/linq/getting-started-with-linq.md)

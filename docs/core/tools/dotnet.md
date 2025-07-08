@@ -1,7 +1,7 @@
 ---
 title: dotnet command
 description: Learn about the dotnet command (the generic driver for the .NET CLI) and its usage.
-ms.date: 05/06/2022
+ms.date: 04/01/2025
 ---
 # dotnet command
 
@@ -35,7 +35,7 @@ dotnet [--additionalprobingpath <PATH>] [--additional-deps <PATH>]
     [--fx-version <VERSION>]  [--roll-forward <SETTING>]
     <PATH_TO_APPLICATION> [arguments]
 
-dotnet exec [--additionalprobingpath] [--additional-deps <PATH>]
+dotnet exec [--additionalprobingpath <PATH>] [--additional-deps <PATH>]
     [--depsfile <PATH>]
     [--fx-version <VERSION>]  [--roll-forward <SETTING>]
     [--runtimeconfig <PATH>]
@@ -74,13 +74,17 @@ The following options are available when `dotnet` is used by itself, without spe
 
 Prints out the version of the .NET SDK used by `dotnet` commands, which may be affected by a *global.json* file. Available only when the SDK is installed.
 
-- **`--list-runtimes`**
+- **`--list-runtimes [--arch <ARCH>]`**
 
-  Prints out a list of the installed .NET runtimes. An x86 version of the SDK lists only x86 runtimes, and an x64 version of the SDK lists only x64 runtimes.
+  Prints out a list of the installed .NET runtimes for the architecture of the invoked `dotnet`. An x86 version of `dotnet` lists only x86 runtimes, and an x64 version of `dotnet` lists only x64 runtimes.
 
-- **`--list-sdks`**
+  .NET 10 and later versions support the `--arch` argument. If specified and not the same as the `dotnet` architecture, searches for a .NET installation of the specified architecture and prints out any runtimes installed there. Allowed values include arm64, x64, and x86. The dotnet/runtime repo has the full [list of valid architecture values](https://github.com/dotnet/runtime/blob/1713d65316467e3eaf23514b6642eba5869f1b70/src/native/corehost/hostmisc/utils.cpp#L194-L205).
 
-  Prints out a list of the installed .NET SDKs.
+- **`--list-sdks [--arch <ARCH>]`**
+
+  Prints out a list of the installed .NET SDKs for the architecture of the invoked `dotnet`. An x86 version of `dotnet` lists only x86 SDKs, and an x64 version of `dotnet` lists only x64 SDKs.
+
+  .NET 10 and later versions support the `--arch` argument. If specified and not the same as the `dotnet` architecture, searches for a .NET installation of the specified architecture and prints out any SDKs installed there. Allowed values include arm64, x64, and x86. The dotnet/runtime repo has the full [list of valid architecture values](https://github.com/dotnet/runtime/blob/1713d65316467e3eaf23514b6642eba5869f1b70/src/native/corehost/hostmisc/utils.cpp#L194-L205).
 
 - **`-?|-h|--help`**
 
@@ -122,7 +126,7 @@ The following options are available when `dotnet` runs an application. For examp
 
 <a name="rollforward"></a>
 
-- **`--roll-forward <SETTING>`** **
+- **`--roll-forward <SETTING>`**
 
   Controls how roll forward is applied to the app. The `SETTING` can be one of the following values. If not specified, `Minor` is the default.
 
@@ -180,55 +184,57 @@ The following options are available only when `dotnet` runs an application by us
 
 ### Project references
 
-Command | Function
---- | ---
-[dotnet add reference](dotnet-add-reference.md) | Adds a project reference.
-[dotnet list reference](dotnet-list-reference.md) | Lists project references.
-[dotnet remove reference](dotnet-remove-reference.md) | Removes a project reference.
+| Command                                               | Function                     |
+|-------------------------------------------------------|------------------------------|
+| [dotnet reference add](dotnet-reference-add.md)       | Adds a project reference.    |
+| [dotnet reference list](dotnet-reference-list.md)     | Lists project references.    |
+| [dotnet reference remove](dotnet-reference-remove.md) | Removes a project reference. |
 
 ### NuGet packages
 
-Command | Function
---- | ---
-[dotnet add package](dotnet-add-package.md) | Adds a NuGet package.
-[dotnet remove package](dotnet-remove-package.md) | Removes a NuGet package.
+| Command                                           | Function                      |
+|---------------------------------------------------|-------------------------------|
+| [dotnet package add](dotnet-package-add.md)       | Adds a NuGet package.         |
+| [dotnet package list](dotnet-package-add.md)      | Lists NuGet packages.         |
+| [dotnet package remove](dotnet-package-remove.md) | Removes a NuGet package.      |
+| [dotnet package search](dotnet-package-search.md) | Searches for a NuGet package. |
 
 ### NuGet commands
 
-Command | Function
---- | ---
-[dotnet nuget delete](dotnet-nuget-delete.md) | Deletes or unlists a package from the server.
-[dotnet nuget push](dotnet-nuget-push.md) | Pushes a package to the server and publishes it.
-[dotnet nuget locals](dotnet-nuget-locals.md) | Clears or lists local NuGet resources such as http-request cache, temporary cache, or machine-wide global packages folder.
-[dotnet nuget add source](dotnet-nuget-add-source.md) | Adds a NuGet source.
-[dotnet nuget disable source](dotnet-nuget-disable-source.md) | Disables a NuGet source.
-[dotnet nuget enable source](dotnet-nuget-enable-source.md) | Enables a NuGet source.
-[dotnet nuget list source](dotnet-nuget-list-source.md) | Lists all configured NuGet sources.
-[dotnet nuget remove source](dotnet-nuget-remove-source.md) | Removes a NuGet source.
-[dotnet nuget update source](dotnet-nuget-update-source.md) | Updates a NuGet source.
+| Command                                       | Function                                         |
+|-----------------------------------------------|--------------------------------------------------|
+| [dotnet nuget delete](dotnet-nuget-delete.md) | Deletes or unlists a package from the server.    |
+| [dotnet nuget push](dotnet-nuget-push.md)     | Pushes a package to the server and publishes it. |
+| [dotnet nuget locals](dotnet-nuget-locals.md) | Clears or lists local NuGet resources such as http-request cache, temporary cache, or machine-wide global packages folder. |
+| [dotnet nuget add source](dotnet-nuget-add-source.md) | Adds a NuGet source. |
+| [dotnet nuget disable source](dotnet-nuget-disable-source.md) | Disables a NuGet source. |
+| [dotnet nuget enable source](dotnet-nuget-enable-source.md) | Enables a NuGet source. |
+| [dotnet nuget list source](dotnet-nuget-list-source.md) | Lists all configured NuGet sources. |
+| [dotnet nuget remove source](dotnet-nuget-remove-source.md) | Removes a NuGet source. |
+| [dotnet nuget update source](dotnet-nuget-update-source.md) | Updates a NuGet source. |
 
 ### Workload commands
 
-Command | Function
---- | ---
-[dotnet workload install](dotnet-workload-install.md) | Installs an optional workload.
-[dotnet workload list](dotnet-workload-list.md) | Lists all installed workloads.
-[dotnet workload repair](dotnet-workload-repair.md) | Repairs all installed workloads.
-[dotnet workload search](dotnet-workload-search.md) | List selected workloads or all available workloads.
-[dotnet workload uninstall](dotnet-workload-install.md) | Uninstalls a workload.
-[dotnet workload update](dotnet-workload-update.md) | Reinstalls all installed workloads.
+| Command                                                 | Function                                            |
+|---------------------------------------------------------|-----------------------------------------------------|
+| [dotnet workload install](dotnet-workload-install.md)   | Installs an optional workload.                      |
+| [dotnet workload list](dotnet-workload-list.md)         | Lists all installed workloads.                      |
+| [dotnet workload repair](dotnet-workload-repair.md)     | Repairs all installed workloads.                    |
+| [dotnet workload search](dotnet-workload-search.md)     | List selected workloads or all available workloads. |
+| [dotnet workload uninstall](dotnet-workload-install.md) | Uninstalls a workload.                              |
+| [dotnet workload update](dotnet-workload-update.md)     | Reinstalls all installed workloads.                 |
 
 ### Global, tool-path, and local tools commands
 
 Tools are console applications that are installed from NuGet packages and are invoked from the command prompt. You can write tools yourself or install tools written by third parties. Tools are also known as global tools, tool-path tools, and local tools. For more information, see [.NET tools overview](global-tools.md).
 
-Command | Function
---- | ---
-[dotnet tool install](dotnet-tool-install.md) | Installs a tool on your machine.
-[dotnet tool list](dotnet-tool-list.md) | Lists all global, tool-path, or local tools currently installed on your machine.
-[dotnet tool search](dotnet-tool-search.md) | Searches NuGet.org for tools that have the specified search term in their name or metadata.
-[dotnet tool uninstall](dotnet-tool-uninstall.md) | Uninstalls a tool from your machine.
-[dotnet tool update](dotnet-tool-update.md) | Updates a tool that is installed on your machine.
+| Command                                       | Function                         |
+|-----------------------------------------------|----------------------------------|
+| [dotnet tool install](dotnet-tool-install.md) | Installs a tool on your machine. |
+| [dotnet tool list](dotnet-tool-list.md) | Lists all global, tool-path, or local tools currently installed on your machine. |
+| [dotnet tool search](dotnet-tool-search.md) | Searches NuGet.org for tools that have the specified search term in their name or metadata. |
+| [dotnet tool uninstall](dotnet-tool-uninstall.md) | Uninstalls a tool from your machine. |
+| [dotnet tool update](dotnet-tool-update.md) | Updates a tool that is installed on your machine. |
 
 ### Additional tools
 

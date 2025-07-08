@@ -1,16 +1,19 @@
 ---
 title: EventCounters in .NET Core
 description: In this article, you'll learn what EventCounters are, how to implement them, and how to consume them.
-ms.date: 08/07/2020
+ms.date: 08/27/2024
 ---
 
 # EventCounters in .NET
 
 **This article applies to: ✔️** .NET Core 3.0 SDK and later versions
 
+  > [!NOTE]
+  > For developing new .NET projects Microsoft recommends using the newer [System.Diagnostics.Metrics](metrics-instrumentation.md) APIs instead. The System.Diagnostics.Metrics APIs offer increased functionality, standardization and integration with a broader ecosystem of tools. See [the metrics API comparison](compare-metric-apis.md) for more information.
+
 EventCounters are .NET APIs used for lightweight, cross-platform, and near real-time performance metric collection. EventCounters were added as a cross-platform alternative to the "performance counters" of .NET Framework on Windows. In this article, you'll learn what EventCounters are, how to implement them, and how to consume them.
 
-The .NET runtime and a few .NET libraries publish basic diagnostics information using EventCounters starting in .NET Core 3.0. Apart from the EventCounters that are provided by the .NET runtime, you may choose to implement your own EventCounters. EventCounters can be used to track various metrics. Learn more about them in [well-known EventCounters in .NET](available-counters.md)
+The .NET runtime and a few .NET libraries publish basic diagnostics information using EventCounters starting in .NET Core 3.0. Apart from the EventCounters that are provided by the .NET runtime, you may choose to implement your own EventCounters. EventCounters can be used to track various metrics. Learn more about them in [well-known EventCounters in .NET](available-counters.md).
 
 EventCounters live as a part of an <xref:System.Diagnostics.Tracing.EventSource>, and are automatically pushed to listener tools on a regular basis. Like all other events on an <xref:System.Diagnostics.Tracing.EventSource>, they can be consumed both in-proc and out-of-proc via <xref:System.Diagnostics.Tracing.EventListener> and [EventPipe](./eventpipe.md). This article focuses on the cross-platform capabilities of EventCounters, and intentionally excludes PerfView and ETW (Event Tracing for Windows) - although both can be used with EventCounters.
 
@@ -39,7 +42,7 @@ An event listener specifies how long measurement intervals are. At the end of ea
 
 ## Implement an EventSource
 
-The following code implements a sample <xref:System.Diagnostics.Tracing.EventSource> exposed as the named `"Sample.EventCounter.Minimal"` provider. This source contains an <xref:System.Diagnostics.Tracing.EventCounter> representing request-processing time. Such a counter has a name (that is, its unique ID in the source) and a display name, both used by listener tools such as [dotnet-counter](dotnet-counters.md).
+The following code implements a sample <xref:System.Diagnostics.Tracing.EventSource> exposed as the named `"Sample.EventCounter.Minimal"` provider. This source contains an <xref:System.Diagnostics.Tracing.EventCounter> representing request-processing time. Such a counter has a name (that is, its unique ID in the source) and a display name, both used by listener tools such as [dotnet-counters](dotnet-counters.md).
 
 :::code language="csharp" source="snippets/EventCounters/MinimalEventCounterSource.cs":::
 
@@ -154,30 +157,20 @@ _requestRateCounter = new IncrementingPollingCounter("request-rate", this, () =>
 There are two primary ways of consuming EventCounters: in-proc and out-of-proc. The consumption of EventCounters can be distinguished into three layers of various consuming technologies.
 
 - Transporting events in a raw stream via ETW or EventPipe:
-  
+
   ETW APIs come with the Windows OS, and EventPipe is accessible as a [.NET API](https://github.com/dotnet/diagnostics/blob/main/documentation/design-docs/diagnostics-client-library.md#1-attaching-to-a-process-and-dumping-out-all-the-runtime-gc-events-in-real-time-to-the-console), or the diagnostic [IPC protocol](https://github.com/dotnet/diagnostics/blob/main/documentation/design-docs/ipc-protocol.md).
 
 - Decoding the binary event stream into events:
-  
+
   The [TraceEvent library](https://www.nuget.org/packages/Microsoft.Diagnostics.Tracing.TraceEvent) handles both ETW and EventPipe stream formats.
 
 - Command-line and GUI tools:
-  
+
   Tools like PerfView (ETW or EventPipe), dotnet-counters (EventPipe only), and dotnet-monitor (EventPipe only).
 
 ### Consume out-of-proc
 
 Consuming EventCounters out-of-proc is a common approach. You can use [dotnet-counters](dotnet-counters.md) to consume them in a cross-platform manner via an EventPipe. The `dotnet-counters` tool is a cross-platform dotnet CLI global tool that can be used to monitor the counter values. To find out how to use `dotnet-counters` to monitor your counters, see [dotnet-counters](dotnet-counters.md), or work through the [Measure performance using EventCounters](event-counter-perf.md) tutorial.
-
-#### dotnet-trace
-
-The `dotnet-trace` tool can be used to consume the counter data through an EventPipe. Here is an example using `dotnet-trace` to collect counter data.
-
-```console
-dotnet-trace collect --process-id <pid> Sample.EventCounter.Minimal:0:0:EventCounterIntervalSec=1
-```
-
-For more information on how to collect counter values over time, see the [dotnet-trace](dotnet-trace.md#use-dotnet-trace-to-collect-counter-values-over-time) documentation.
 
 #### Azure Application Insights
 

@@ -47,7 +47,7 @@ The `switch` statement selects a statement list to execute based on a pattern ma
 
 At the preceding example, the `switch` statement uses the following patterns:
 
-- A [relational pattern](../operators/patterns.md#relational-patterns) (available in C# 9.0 and later): to compare an expression result with a constant.
+- A [relational pattern](../operators/patterns.md#relational-patterns): to compare an expression result with a constant.
 - A [constant pattern](../operators/patterns.md#constant-pattern): test if an expression result equals a constant.
 
 > [!IMPORTANT]
@@ -66,11 +66,21 @@ You can specify multiple case patterns for one section of a `switch` statement, 
 
 Within a `switch` statement, control can't fall through from one switch section to the next. As the examples in this section show, typically you use the `break` statement at the end of each switch section to pass control out of a `switch` statement. You can also use the [return](jump-statements.md#the-return-statement) and [throw](exception-handling-statements.md#the-throw-statement) statements to pass control out of a `switch` statement. To imitate the fall-through behavior and pass control to other switch section, you can use the [`goto` statement](jump-statements.md#the-goto-statement).
 
-In an expression context, you can use the [`switch` expression](../operators/switch-expression.md) to evaluate a single expression from a list of candidate expressions based on a pattern match with an expression.
+> [!IMPORTANT]
+> Every *switch section* must end with a `break`, `goto` or `return`. Falling through from one switch section to the next generates a compiler error. However, multiple switch labels can be applied to the same switch section, like `case < 0:` in example above. This deliberate design choice allows for concisely handling multiple cases that share the same or interdependent logic.
+
+In an expression context, you can use the [`switch` expression](../operators/switch-expression.md) to evaluate a single expression from a list of candidate expressions based on a pattern match with an expression.<br>
+
+> [!IMPORTANT]
+> Differences between **switch expression** and **switch statement**:
+>
+> - **switch statement** is used to control the execution flow within a block of code.
+> - **switch expression** is typically used in contexts of value return and value assignment, often as a [expression-bodied members](../../programming-guide/statements-expressions-operators/expression-bodied-members.md).
+> - a **switch expression** case section cannot be empty, a **switch statement** can.
 
 ### Case guards
 
-A case pattern may be not expressive enough to specify the condition for the execution of the switch section. In such a case, you can use a *case guard*. That is an additional condition that must be satisfied together with a matched pattern. A case guard must be a Boolean expression. You specify a case guard after the `when` keyword that follows a pattern, as the following example shows:
+A case pattern may not be expressive enough to specify the condition for the execution of the switch section. In such a case, you can use a *case guard*. That is an additional condition that must be satisfied together with a matched pattern. A case guard must be a Boolean expression. You specify a case guard after the `when` keyword that follows a pattern, as the following example shows:
 
 :::code language="csharp" source="snippets/selection-statements/SwitchStatement.cs" id="WithCaseGuard":::
 
@@ -87,7 +97,6 @@ For more information about patterns, see the [Patterns and pattern matching](~/_
 
 ## See also
 
-- [C# reference](../index.md)
 - [Conditional operator `?:`](../operators/conditional-operator.md)
 - [Logical operators](../operators/boolean-logical-operators.md)
 - [Patterns](../operators/patterns.md)

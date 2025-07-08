@@ -1,5 +1,5 @@
 ---
-title: "How to determine whether a string represents a numeric value - C# Programming Guide"
+title: "How to determine whether a string represents a numeric value"
 description: Learn how to determine whether a string is a valid representation of a specified numeric type. See code examples and view additional resources.
 ms.topic: how-to
 ms.date: 07/20/2015

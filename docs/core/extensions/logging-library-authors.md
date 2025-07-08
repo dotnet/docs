@@ -3,7 +3,7 @@ title: Logging guidance for .NET library authors
 author: IEvangelist
 description: Learn how to expose logging as a library author in .NET. Follow the guidance to ensure your library is correctly exposed to consumers.
 ms.author: dapine
-ms.date: 08/08/2023
+ms.date: 03/15/2024
 ---
 
 # Logging guidance for .NET library authors
@@ -49,7 +49,7 @@ namespace Logging.LibraryAuthors;
 internal static partial class LogMessages
 {
     [LoggerMessage(
-        Message = "Sold {quantity} of {description}",
+        Message = "Sold {Quantity} of {Description}",
         Level = LogLevel.Information,
         SkipEnabledCheck = true)]
     internal static partial void LogProductSaleDetails(
@@ -81,8 +81,11 @@ A common mistake is to use [string interpolation](../../csharp/tutorials/string-
 
 ## Use no-op logging defaults
 
-Libraries can default to _null logging_ if no `ILoggerFactory` is provided. The use of _null logging_ differs from defining types as nullable (`ILoggerFactory?`), as the types are non-null. These convenience-based types don't log anything and are essentially no-ops. Consider using any of the available abstraction types where applicable:
+There may be times, when consuming a library that exposes logging APIs that expect either an `ILogger` or `ILoggerFactory`, that you don't want to provide a logger. In these cases, the [Microsoft.Extensions.Logging.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.Logging.Abstractions) NuGet package provides no-op logging defaults.
+
+Library consumers can default to _null logging_ if no `ILoggerFactory` is provided. The use of _null logging_ differs from defining types as nullable (`ILoggerFactory?`), as the types are non-null. These convenience-based types don't log anything and are essentially no-ops. Consider using any of the available abstraction types where applicable:
 
 - <xref:Microsoft.Extensions.Logging.Abstractions.NullLogger.Instance?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Logging.Abstractions.NullLogger%601?displayProperty=nameWithType>
 - <xref:Microsoft.Extensions.Logging.Abstractions.NullLoggerFactory.Instance?displayProperty=nameWithType>
 - <xref:Microsoft.Extensions.Logging.Abstractions.NullLoggerProvider.Instance?displayProperty=nameWithType>

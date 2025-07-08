@@ -30,13 +30,13 @@ If that command doesn't work, make sure that .NET Core 2.0 SDK or later is insta
 
 Here are some examples of what tab completion provides:
 
-Input                                | becomes                                                                     | because
-:------------------------------------|:----------------------------------------------------------------------------|:--------------------------------
-`dotnet a⇥`                          | `dotnet add`                                                                 | `add` is the first subcommand, alphabetically.
-`dotnet add p⇥`                      | `dotnet add --help`                                                          | Tab completion matches substrings and `--help` comes first alphabetically.
-`dotnet add p⇥⇥`                    | `dotnet add package`                                                          | Pressing tab a second time brings up the next suggestion.
-`dotnet add package Microsoft⇥`      | `dotnet add package Microsoft.ApplicationInsights.Web`                      | Results are returned alphabetically.
-`dotnet remove reference ⇥`          | `dotnet remove reference ..\..\src\OmniSharp.DotNet\OmniSharp.DotNet.csproj` | Tab completion is project file aware.
+| Input           | Becomes             | Because                                        |
+|:----------------|:--------------------|:-----------------------------------------------|
+| `dotnet a⇥`    | `dotnet add`        | `add` is the first subcommand, alphabetically. |
+| `dotnet add p⇥` | `dotnet add --help` | Tab completion matches substrings, and `--help` comes first alphabetically. |
+| `dotnet add p⇥⇥` | `dotnet add package` | Pressing tab a second time brings up the next suggestion. |
+| `dotnet package add Microsoft⇥` | `dotnet package add Microsoft.ApplicationInsights.Web` | Results are returned alphabetically. |
+| `dotnet reference remove ⇥` | `dotnet reference remove ..\..\src\OmniSharp.DotNet\OmniSharp.DotNet.csproj` | Tab completion is project file aware. |
 
 ## PowerShell
 
@@ -47,11 +47,11 @@ Add the following code to your profile:
 ```powershell
 # PowerShell parameter completion shim for the dotnet CLI
 Register-ArgumentCompleter -Native -CommandName dotnet -ScriptBlock {
-     param($commandName, $wordToComplete, $cursorPosition)
-         dotnet complete --position $cursorPosition "$wordToComplete" | ForEach-Object {
+    param($wordToComplete, $commandAst, $cursorPosition)
+        dotnet complete --position $cursorPosition "$commandAst" | ForEach-Object {
             [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterValue', $_)
-         }
- }
+        }
+}
 ```
 
 ## bash

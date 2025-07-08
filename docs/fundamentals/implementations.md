@@ -1,7 +1,7 @@
 ---
 title: .NET implementations
 description: Describes the various .NET implementations, including .NET 5+, .NET Framework, Mono, and UWP.
-ms.date: 11/08/2022
+ms.date: 11/22/2024
 ms.custom: updateeachrelease
 ---
 # .NET implementations
@@ -10,25 +10,25 @@ A .NET app is developed for one or more *[implementations](../standard/glossary.
 
 Each implementation of .NET includes the following components:
 
-- One or more runtimes&mdash;for example, .NET Framework CLR and .NET 5 CLR.
-- A class library&mdash;for example, .NET Framework Base Class Library and .NET 5 Base Class Library.
+- One or more runtimes&mdash;for example, .NET Framework CLR and .NET 8 CLR.
+- A class library&mdash;for example, .NET Framework Base Class Library and .NET 8 Base Class Library.
 - Optionally, one or more application frameworks&mdash;for example, [ASP.NET](https://www.asp.net/), [Windows Forms](/dotnet/desktop/winforms/windows-forms-overview), and [Windows Presentation Foundation (WPF)](/dotnet/desktop/wpf/) are included in .NET Framework and .NET 5+.
 - Optionally, development tools. Some development tools are shared among multiple implementations.
 
 There are four .NET implementations that Microsoft supports:
 
-- .NET 5 (and .NET Core) and later versions
+- .NET 5 and later versions
 - .NET Framework
 - Mono
 - UWP
 
-.NET 7 is currently the primary implementation, and the one that's the focus of ongoing development. .NET 7 is built on a single code base that supports multiple platforms and many workloads, such as Windows desktop apps and cross-platform console apps, cloud services, and websites. [Some workloads](../core/whats-new/dotnet-6.md#sdk-workloads), such as .NET WebAssembly build tools, are available as optional installations.
+.NET, previously referred to as .NET Core, is currently the primary implementation. .NET (9) is built on a single code base that supports multiple platforms and many workloads, such as Windows desktop apps and cross-platform console apps, cloud services, and websites. [Some workloads](../core/whats-new/dotnet-6.md#sdk-workloads), such as .NET WebAssembly build tools, are available as optional installations.
 
 ## .NET 5 and later versions
 
-.NET 5+, previously referred to as .NET Core, is a cross-platform implementation of .NET that's designed to handle server and cloud workloads at scale. It also supports other workloads, including desktop apps. It runs on Windows, macOS, and Linux. It implements .NET Standard, so code that targets .NET Standard can run on .NET 5+. [ASP.NET Core](https://dotnet.microsoft.com/learn/aspnet/what-is-aspnet-core), [Windows Forms](/dotnet/desktop/winforms/windows-forms-overview), and [Windows Presentation Foundation (WPF)](/dotnet/desktop/wpf/) all run on .NET 5+.
+.NET, previously referred to as .NET Core, is a cross-platform implementation of .NET that's designed to handle server and cloud workloads at scale. It also supports other workloads, including desktop apps. It runs on Windows, macOS, and Linux. It implements .NET Standard, so code that targets .NET Standard can run on .NET. [ASP.NET Core](https://dotnet.microsoft.com/learn/aspnet/what-is-aspnet-core), [Windows Forms](/dotnet/desktop/winforms/windows-forms-overview), and [Windows Presentation Foundation (WPF)](/dotnet/desktop/wpf/) all run on .NET.
 
-.NET 7 is the latest version of this .NET implementation.
+.NET 9 is the latest version of this .NET implementation.
 
 For more information, see the following resources:
 
@@ -44,7 +44,7 @@ For more information, see the [.NET Framework guide](../framework/index.yml).
 
 ## Mono
 
-Mono is a .NET implementation that is mainly used when a small runtime is required. It is the runtime that powers Xamarin applications on Android, macOS, iOS, tvOS, and watchOS and is focused primarily on a small footprint. Mono also powers games built using the Unity engine.
+Mono is a .NET implementation that is mainly used when a small runtime is required. It is the runtime that powered Xamarin applications (now unsupported) on Android, macOS, iOS, tvOS, and watchOS and is focused primarily on a small footprint. Mono also powers games built using the Unity engine.
 
 It supports all of the currently published .NET Standard versions.
 

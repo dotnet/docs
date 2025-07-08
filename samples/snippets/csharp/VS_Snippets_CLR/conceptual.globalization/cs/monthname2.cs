@@ -1,4 +1,4 @@
-﻿// <Snippet20>
+// <Snippet20>
 using System;
 using System.Globalization;
 
@@ -10,10 +10,10 @@ public class Example13
         CultureInfo.CurrentCulture = CultureInfo.CreateSpecificCulture("fr-FR");
 
         DateTime midYear = new DateTime(2013, 7, 1);
-        Console.WriteLine("{0:d} is a {1}.", midYear, DateUtilities.GetDayName(midYear));
-        Console.WriteLine("{0:d} is a {1}.", midYear, DateUtilities.GetDayName((int)midYear.DayOfWeek));
-        Console.WriteLine("{0:d} is in {1}.", midYear, DateUtilities.GetMonthName(midYear));
-        Console.WriteLine("{0:d} is in {1}.", midYear, DateUtilities.GetMonthName(midYear.Month));
+        Console.WriteLine($"{midYear:d} is a {DateUtilities.GetDayName(midYear)}.");
+        Console.WriteLine($"{midYear:d} is a {DateUtilities.GetDayName((int)midYear.DayOfWeek)}.");
+        Console.WriteLine($"{midYear:d} is in {DateUtilities.GetMonthName(midYear)}.");
+        Console.WriteLine($"{midYear:d} is in {DateUtilities.GetMonthName(midYear.Month)}.");
     }
 }
 

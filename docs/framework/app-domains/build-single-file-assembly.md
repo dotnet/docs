@@ -18,6 +18,8 @@ ms.assetid: a6063221-43a5-4d3e-814c-288a4ec69aec
 ---
 # How to: Build a .NET Framework single-file assembly
 
+[!INCLUDE [net-framework-specific](../includes/net-framework-specific.md)]
+
 A single-file assembly, which is the simplest type of assembly, contains type information and implementation, as well as the [assembly manifest](../../standard/assembly/manifest.md). You can use command-line compilers or Visual Studio to create a single-file assembly that targets the .NET Framework. By default, the compiler creates an assembly file with an *.exe* extension.
 
 > [!NOTE]

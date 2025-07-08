@@ -95,5 +95,5 @@ Specifies the compiler version attributes for a language provider.
 - <xref:System.CodeDom.Compiler.CodeDomProvider>
 - [Configuration File Schema](../index.md)
 - [\<compilers> Element](compilers-element.md)
-- [Specifying Fully Qualified Type Names](../../../reflection-and-codedom/specifying-fully-qualified-type-names.md)
+- [Specifying Fully Qualified Type Names](../../../../fundamentals/reflection/specifying-fully-qualified-type-names.md)
 - [compiler Element for compilers for compilation (ASP.NET Settings Schema)](/previous-versions/dotnet/netframework-4.0/a15ebt6c(v=vs.100))

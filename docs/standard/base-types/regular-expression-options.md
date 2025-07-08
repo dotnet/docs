@@ -89,7 +89,7 @@ The following five regular expression options can be set using the `options` par
 
 ## Determine options
 
-You can determine which options were provided to a <xref:System.Text.RegularExpressions.Regex> object when it was instantiated by retrieving the value of the read-only <xref:System.Text.RegularExpressions.Regex.Options%2A?displayProperty=nameWithType> property. This property is particularly useful for determining the options that are defined for a compiled regular expression created by the <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%2A?displayProperty=nameWithType> method.
+You can determine which options were provided to a <xref:System.Text.RegularExpressions.Regex> object when it was instantiated by retrieving the value of the read-only <xref:System.Text.RegularExpressions.Regex.Options%2A?displayProperty=nameWithType> property.
 
 To test for the presence of any option except <xref:System.Text.RegularExpressions.RegexOptions.None?displayProperty=nameWithType>, perform an AND operation with the value of the <xref:System.Text.RegularExpressions.Regex.Options%2A?displayProperty=nameWithType> property and the <xref:System.Text.RegularExpressions.RegexOptions> value in which you are interested. Then test whether the result equals that <xref:System.Text.RegularExpressions.RegexOptions> value. The following example tests whether the <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=nameWithType> option has been set.
 
@@ -226,16 +226,16 @@ Finally, you can use the inline group element `(?n:)` to suppress automatic capt
 ## Compiled regular expressions
 
 > [!NOTE]
-> Where possible, use [source generated regular expressions](regular-expression-source-generators.md) instead of compiling regular expressions using the <xref:System.Text.RegularExpressions.RegexOptions.Compiled?displayProperty=nameWithType> option. Source generation can help your app start faster, run more quickly and be more trimmable. To learn when source generation is possible, see [When to use it](regular-expression-source-generators.md#when-to-use-it).
+> Where possible, use [source-generated regular expressions](regular-expression-source-generators.md) instead of compiling regular expressions using the <xref:System.Text.RegularExpressions.RegexOptions.Compiled?displayProperty=nameWithType> option. Source generation can help your app start faster, run more quickly and be more trimmable. To learn when source generation is possible, see [When to use it](regular-expression-source-generators.md#when-to-use-it).
 
-By default, regular expressions in .NET are interpreted. When a <xref:System.Text.RegularExpressions.Regex> object is instantiated or a static <xref:System.Text.RegularExpressions.Regex> method is called, the regular expression pattern is parsed into a set of custom opcodes, and an interpreter uses these opcodes to run the regular expression. This involves a tradeoff: The cost of initializing the regular expression engine is minimized at the expense of run-time performance.
+By default, regular expressions in .NET are interpreted. When a <xref:System.Text.RegularExpressions.Regex> object is instantiated or a static <xref:System.Text.RegularExpressions.Regex> method is called, the regular expression pattern is parsed into a set of custom opcodes, and an interpreter uses these opcodes to run the regular expression. This involves a tradeoff: the cost of initializing the regular expression engine is minimized at the expense of run-time performance.
 
-You can use compiled instead of interpreted regular expressions by using the <xref:System.Text.RegularExpressions.RegexOptions.Compiled?displayProperty=nameWithType> option. In this case, when a pattern is passed to the regular expression engine, it is parsed into a set of opcodes and then converted to Microsoft intermediate language (MSIL), which can be passed directly to the common language runtime. Compiled regular expressions maximize run-time performance at the expense of initialization time.
+You can use compiled instead of interpreted regular expressions by using the <xref:System.Text.RegularExpressions.RegexOptions.Compiled?displayProperty=nameWithType> option. In this case, when a pattern is passed to the regular expression engine, it is parsed into a set of opcodes and then converted to common intermediate language (CIL), which can be passed directly to the common language runtime. Compiled regular expressions maximize run-time performance at the expense of initialization time.
 
 > [!NOTE]
-> A regular expression can be compiled only by supplying the <xref:System.Text.RegularExpressions.RegexOptions.Compiled?displayProperty=nameWithType> value to the `options` parameter of a <xref:System.Text.RegularExpressions.Regex> class constructor or a static pattern-matching method. It is not available as an inline option.
+> A regular expression can be compiled only by supplying the <xref:System.Text.RegularExpressions.RegexOptions.Compiled?displayProperty=nameWithType> value to the `options` parameter of a <xref:System.Text.RegularExpressions.Regex> class constructor or a static pattern-matching method. It's not available as an inline option.
 
-You can use compiled regular expressions in calls to both static and instance regular expressions. In static regular expressions, the <xref:System.Text.RegularExpressions.RegexOptions.Compiled?displayProperty=nameWithType> option is passed to the `options` parameter of the regular expression pattern-matching method. In instance regular expressions, it is passed to the `options` parameter of the <xref:System.Text.RegularExpressions.Regex> class constructor. In both cases, it results in enhanced performance.
+You can use compiled regular expressions in calls to both static and instance regular expressions. In static regular expressions, the <xref:System.Text.RegularExpressions.RegexOptions.Compiled?displayProperty=nameWithType> option is passed to the `options` parameter of the regular expression pattern-matching method. In instance regular expressions, it's passed to the `options` parameter of the <xref:System.Text.RegularExpressions.Regex> class constructor. In both cases, it results in enhanced performance.
 
 However, this improvement in performance occurs only under the following conditions:
 
@@ -246,7 +246,7 @@ However, this improvement in performance occurs only under the following conditi
 - A static regular expression is used in multiple calls to regular expression pattern-matching methods. (The performance improvement is possible because regular expressions used in static method calls are cached by the regular expression engine.)
 
 > [!NOTE]
-> The <xref:System.Text.RegularExpressions.RegexOptions.Compiled?displayProperty=nameWithType> option is unrelated to the <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%2A?displayProperty=nameWithType> method, which creates a special-purpose assembly that contains predefined compiled regular expressions.
+> The <xref:System.Text.RegularExpressions.RegexOptions.Compiled?displayProperty=nameWithType> option is unrelated to the obsolete <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%2A?displayProperty=nameWithType> method, which creates a special-purpose assembly that contains predefined, compiled regular expressions.
 
 ## Ignore white space
 

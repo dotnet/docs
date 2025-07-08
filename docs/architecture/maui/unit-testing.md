@@ -3,18 +3,18 @@ title: Unit Testing
 description:  Learn how to provide application testing and improve code quality in .NET MAUI.
 author: michaelstonis
 no-loc: [MAUI]
-ms.date: 07/11/2022
+ms.date: 05/30/2024
 ---
 
 # Unit testing
 
 [!INCLUDE [download-alert](includes/download-alert.md)]
 
-multi-platform apps experience problems similar to both desktop and web-based applications. Mobile users will differ by their devices, network connectivity, availability of services, and various other factors. Therefore, multi-platform apps should be tested as they would be used in the real world to improve their quality, reliability, and performance. Many types of testing should be performed on an app, including unit testing, integration testing, and user interface testing. Unit testing is the most common form and essential to building high-quality applications.
+Multi-platform apps experience problems similar to both desktop and web-based applications. Mobile users will differ by their devices, network connectivity, availability of services, and various other factors. Therefore, multi-platform apps should be tested as they would be used in the real world to improve their quality, reliability, and performance. Many types of testing should be performed on an app, including unit testing, integration testing, and user interface testing. Unit testing is the most common form and essential to building high-quality applications.
 
-A unit test takes a small unit of the app, typically a method, isolates it from the remainder of the code, and verifies that it behaves as expected. Its goal is to check that each unit of functionality performs as expected, so errors don't propagate throughout the app. Detecting a bug where it occurs is more efficient that observing the effect of a bug indirectly at a secondary point of failure.
+A unit test takes a small unit of the app, typically a method, isolates it from the remainder of the code, and verifies that it behaves as expected. Its goal is to check that each unit of functionality performs as expected, so errors don't propagate throughout the app. Detecting a bug where it occurs is more efficient than observing the effect of a bug indirectly at a secondary point of failure.
 
-Unit testing has the most significant effect on code quality when it's an integral part of the software development workflow. Unit tests can act as design documentation and functional specifications for an application. As soon as a method has been written, unit tests should be written that verify the method's behavior in response to standard, boundary, and incorrect input data cases and check any explicit or implicit assumptions made by the code. Alternatively, with test-driven development, unit tests are written before the code. For more information on test-driven development and how to implement it, see [Walkthrough: Test-driven development using Test Explorer.](/visualstudio/test/quick-start-test-driven-development-with-test-explorer?view=vs-2022&preserve-view=true)
+Unit testing has the most significant effect on code quality when it's an integral part of the software development workflow. Unit tests can act as design documentation and functional specifications for an application. As soon as a method has been written, unit tests should be written that verify the method's behavior in response to standard, boundary, and incorrect input data cases and check any explicit or implicit assumptions made by the code. Alternatively, with test-driven development, unit tests are written before the code. For more information on test-driven development and how to implement it, see [Walkthrough: Test-driven development using Test Explorer.](/visualstudio/test/quick-start-test-driven-development-with-test-explorer).
 
 > [!NOTE]
 > Unit tests are very effective against regression. That is, functionality that used to work, but has been disturbed by a faulty update.
@@ -58,25 +58,25 @@ Testing models and view models from MVVM applications is identical to testing an
 
 > [!TIP]
 > Test one thing with each unit test. As the complexity of a test expands, it makes verification of that test more difficult. By limiting a unit test to a single concern, we can ensure that our tests are more repeatable, isolated, and have a smaller execution time. See
-[Unit testing best practices with .NET Core and .NET Standard](../../core/testing/unit-testing-best-practices.md) for more best practices.
+[Unit testing best practices with .NET](../../core/testing/unit-testing-best-practices.md) for more best practices.
 
 Don't be tempted to make a unit test exercise more than one aspect of the unit's behavior. Doing so leads to tests that are difficult to read and update. It can also lead to confusion when interpreting a failure.
 
-The eShopOnContainers multi-platform app uses [xUnit](https://xunit.net/) to perform unit testing, which supports two different types of unit tests:
+The eShop multi-platform app uses [MSTest](../../core/testing/unit-testing-csharp-with-mstest.md) to perform unit testing, which supports two different types of unit tests:
 
-| Testing Type | Attribute | Description                                                  |
-|--------------|-----------|--------------------------------------------------------------|
-| Facts        | `Fact`    | Tests that are always true, which test invariant conditions. |
-| Theories     | `Theory`  | Tests that are only true for a particular set of data.       |
+| Testing Type    | Attribute    | Description                                                  |
+|-----------------|--------------|--------------------------------------------------------------|
+| TestMethod      | `TestMethod` | Defines the actual test method to run.                       |
+| DataSource      | `DataSource` | Tests that are only true for a particular set of data.       |
 
-The unit tests included with the eShopOnContainers multi-platform app are fact tests, so each unit test method is decorated with the `Fact` attribute.
+The unit tests included with the eShop multi-platform app are TestMethod, so each unit test method is decorated with the `TestMethod` attribute. In addition to MSTest there are several other testing frameworks available including [NUnit](../../core/testing/unit-testing-csharp-with-nunit.md) and [xUnit](../../core/testing/unit-testing-csharp-with-xunit.md).
 
 ## Testing asynchronous functionality
 
 When implementing the MVVM pattern, view models usually invoke operations on services, often asynchronously. Tests for code that invokes these operations typically use mocks as replacements for the actual services. The following code example demonstrates testing asynchronous functionality by passing a mock service into a view model:
 
 ```csharp
-[Fact]
+[TestMethod]
 public async Task OrderPropertyIsNotNullAfterViewModelInitializationTest()
 {
     // Arrange
@@ -88,7 +88,7 @@ public async Task OrderPropertyIsNotNullAfterViewModelInitializationTest()
     await orderViewModel.InitializeAsync(order);
 
     // Assert
-    Assert.NotNull(orderViewModel.Order);
+    Assert.IsNotNull(orderViewModel.Order);
 }
 ```
 
@@ -103,7 +103,7 @@ Implementing the `INotifyPropertyChanged` interface allows views to react to cha
 Properties that can be updated directly by the unit test can be tested by attaching an event handler to the `PropertyChanged` event and checking whether the event is raised after setting a new value for the property. The following code example shows such a test:
 
 ```csharp
-[Fact]
+[TestMethod]
 public async Task SettingOrderPropertyShouldRaisePropertyChanged()
 {
     var invoked = false;
@@ -118,7 +118,7 @@ public async Task SettingOrderPropertyShouldRaisePropertyChanged()
     var order = await orderService.GetOrderAsync(1, GlobalSetting.Instance.AuthToken);
     await orderViewModel.InitializeAsync(order);
 
-    Assert.True(invoked);
+    Assert.IsTrue(invoked);
 }
 ```
 
@@ -126,10 +126,10 @@ This unit test invokes the `InitializeAsync` method of the `OrderViewModel` clas
 
 ## Testing message-based communication
 
-View models that use the `MessagingCenter` class to communicate between loosely-coupled classes can be unit tested by subscribing to the message being sent by the code under test, as demonstrated in the following code example:
+View models that use the `MessagingCenter` class to communicate between loosely coupled classes can be unit tested by subscribing to the message being sent by the code under test, as demonstrated in the following code example:
 
 ```csharp
-[Fact]
+[TestMethod]
 public void AddCatalogItemCommandSendsAddProductMessageTest()
 {
     var messageReceived = false;
@@ -143,7 +143,7 @@ public void AddCatalogItemCommandSendsAddProductMessageTest()
     });
     catalogViewModel.AddCatalogItemCommand.Execute(null);
 
-    Assert.True(messageReceived);
+    Assert.IsTrue(messageReceived);
 }
 ```
 
@@ -154,7 +154,7 @@ This unit test checks that the `CatalogViewModel` publishes the `AddProduct` mes
 Unit tests can also be written that check that specific exceptions are thrown for invalid actions or inputs, as demonstrated in the following code example:
 
 ```csharp
-[Fact]
+[TestMethod]
 public void InvalidEventNameShouldThrowArgumentExceptionText()
 {
     var behavior = new MockEventToCommandBehavior
@@ -179,7 +179,7 @@ There are two aspects to testing the validation implementation: testing that any
 Validation logic is usually simple to test, because it is typically a self-contained process where the output depends on the input. There should be tests on the results of invoking the `Validate` method on each property that has at least one associated validation rule, as demonstrated in the following code example:
 
 ```csharp
-[Fact]
+[TestMethod]
 public void CheckValidationPassesWhenBothPropertiesHaveDataTest()
 {
     var mockViewModel = new MockViewModel();
@@ -188,7 +188,7 @@ public void CheckValidationPassesWhenBothPropertiesHaveDataTest()
 
     var isValid = mockViewModel.Validate();
 
-    Assert.True(isValid);
+    Assert.IsTrue(isValid);
 }
 ```
 
@@ -197,7 +197,7 @@ This unit test checks that validation succeeds when the two `ValidatableObject<T
 As well as checking that validation succeeds, validation unit tests should also check the values of the `Value`, `IsValid`, and `Errors` property of each `ValidatableObject<T>` instance, to verify that the class performs as expected. The following code example demonstrates a unit test that does this:
 
 ```csharp
-[Fact]
+[TestMethod]
 public void CheckValidationFailsWhenOnlyForenameHasDataTest()
 {
     var mockViewModel = new MockViewModel();
@@ -205,13 +205,13 @@ public void CheckValidationFailsWhenOnlyForenameHasDataTest()
 
     bool isValid = mockViewModel.Validate();
 
-    Assert.False(isValid);
-    Assert.NotNull(mockViewModel.Forename.Value);
-    Assert.Null(mockViewModel.Surname.Value);
-    Assert.True(mockViewModel.Forename.IsValid);
-    Assert.False(mockViewModel.Surname.IsValid);
-    Assert.Empty(mockViewModel.Forename.Errors);
-    Assert.NotEmpty(mockViewModel.Surname.Errors);
+    Assert.IsFalse(isValid);
+    Assert.IsNotNull(mockViewModel.Forename.Value);
+    Assert.IsNull(mockViewModel.Surname.Value);
+    Assert.IsTrue(mockViewModel.Forename.IsValid);
+    Assert.IsFalse(mockViewModel.Surname.IsValid);
+    Assert.AreEqual(mockViewModel.Forename.Errors.Count(), 0);
+    Assert.AreNotEqual(mockViewModel.Surname.Errors.Count(), 0);
 }
 ```
 

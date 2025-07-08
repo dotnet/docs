@@ -2,6 +2,8 @@
 title: SYSLIB1001 error
 description: Learn about the diagnostic that generates compile-time error SYSLIB1001.
 ms.date: 05/07/2021
+f1_keywords:
+  - syslib1001
 ---
 
 # SYSLIB1001: Logging method names can't start with an underscore

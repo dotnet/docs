@@ -2,6 +2,8 @@
 title: SYSLIB0042 warning - FromXmlString and ToXmlString on ECC types are obsolete
 description: Learn about the obsoletion of the 'FromXmlString' and 'ToXmlString' methods on ECC types that generates compile-time warning SYSLIB0042.
 ms.date: 04/08/2022
+f1_keywords:
+  - syslib0042
 ---
 # SYSLIB0042: FromXmlString and ToXmlString on ECC types are obsolete
 

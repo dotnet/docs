@@ -6,8 +6,8 @@ ms.topic: "tutorial"
 ---
 # Task 1: Create a New Windows Presentation Foundation Application
 
-In this task, you will create an empty Windows Presentation Foundation (WPF) application by using the WPF Application Visual Studio template and add references to the appropriate [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] workflow assemblies.  
-  
+In this task, you will create an empty Windows Presentation Foundation (WPF) application by using the WPF Application Visual Studio template and add references to the appropriate .NET Framework 4.6.1 workflow assemblies.
+
 ## To create the WPF Application project
 
 1. Open Visual Studio and on the **File** menu, point to **New**, and then click **Project**.

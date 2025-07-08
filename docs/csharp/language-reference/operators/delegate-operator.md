@@ -23,15 +23,13 @@ When you use the `delegate` operator, you might omit the parameter list. If you 
 
 [!code-csharp-interactive[no parameter list](snippets/shared/DelegateOperator.cs#WithoutParameterList)]
 
-That's the only functionality of anonymous methods that isn't supported by lambda expressions. In all other cases, a lambda expression is a preferred way to write inline code.
-
-Beginning with C# 9.0, you can use [discards](../../fundamentals/functional/discards.md) to specify two or more input parameters of an anonymous method that aren't used by the method:
+That's the only functionality of anonymous methods that isn't supported by lambda expressions. In all other cases, a lambda expression is a preferred way to write inline code. You can use [discards](../../fundamentals/functional/discards.md) to specify two or more input parameters of an anonymous method that aren't used by the method:
 
 :::code language="csharp" source="snippets/shared/DelegateOperator.cs" id="SnippetDiscards" :::
 
 For backwards compatibility, if only a single parameter is named `_`, `_` is treated as the name of that parameter within an anonymous method.
 
-Also beginning with C# 9.0, you can use the `static` modifier at the declaration of an anonymous method:
+You can use the `static` modifier at the declaration of an anonymous method:
 
 :::code language="csharp" source="snippets/shared/DelegateOperator.cs" id="SnippetStatic" :::
 
@@ -63,6 +61,5 @@ For more information, see the [Anonymous function expressions](~/_csharpstandard
 
 ## See also
 
-- [C# reference](../index.md)
 - [C# operators and expressions](index.md)
 - [=> operator](lambda-operator.md)

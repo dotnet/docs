@@ -31,7 +31,7 @@ docker build
 
 **Registry**: A service that provides access to repositories. The default registry for most public images is [Docker Hub](https://hub.docker.com/) (owned by Docker as an organization). A registry usually contains repositories from multiple teams. Companies often have private registries to store and manage images they've created. Azure Container Registry is another example.
 
-**Multi-arch image**: For multi-architecture (or [multi-platform](https://docs.docker.com/build/building/multi-platform/)), it's a Docker feature that simplifies the selection of the appropriate image, according to the platform where Docker is running. For example, when a Dockerfile requests a base image **FROM mcr.microsoft.com/dotnet/sdk:7.0** from the registry, it actually gets **7.0-nanoserver-ltsc2022**, **7.0-nanoserver-1809** or **7.0-bullseye-slim**, depending on the operating system and version where Docker is running.
+**Multi-arch image**: For multi-architecture (or [multi-platform](https://docs.docker.com/build/building/multi-platform/)), it's a Docker feature that simplifies the selection of the appropriate image, according to the platform where Docker is running. For example, when a Dockerfile requests a base image **FROM mcr.microsoft.com/dotnet/sdk:8.0** from the registry, it actually gets **8.0-nanoserver-ltsc2022**, **8.0-nanoserver-1809** or **8.0-bullseye-slim**, depending on the operating system and version where Docker is running.
 
 **Docker Hub**: A public registry to upload images and work with them. Docker Hub provides Docker image hosting, public or private registries, build triggers and web hooks, and integration with GitHub and Bitbucket.
 

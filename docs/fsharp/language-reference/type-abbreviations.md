@@ -3,7 +3,7 @@ title: Type Abbreviations
 description: Learn about F# type abbreviations to give a type a more meaningful name in order to make code easier to read.
 ms.date: 05/16/2016
 ---
-# Type Abbreviations
+# Type abbreviations
 
 A *type abbreviation* is an alias or alternate name for a type.
 
@@ -27,7 +27,7 @@ Type abbreviations can include generic parameters, as in the following code.
 
 In the previous code, `Transform` is a type abbreviation that represents a function that takes a single argument of any type and that returns a single value of that same type.
 
-Type abbreviations are not preserved in the .NET Framework MSIL code. Therefore, when you use an F# assembly from another .NET Framework language, you must use the underlying type name for a type abbreviation.
+Type abbreviations are not preserved in common intermediate language (CIL) code. Therefore, when you use an F# assembly from another .NET language, you must use the underlying type name for a type abbreviation.
 
 Type abbreviations can also be used on units of measure. For more information, see [Units of Measure](units-of-measure.md).
 

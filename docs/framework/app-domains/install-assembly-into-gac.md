@@ -14,6 +14,8 @@ ms.assetid: a7e6f091-d02c-49ba-b736-7295cb0eb743
 ---
 # How to: Install an assembly into the global assembly cache
 
+[!INCLUDE [net-framework-specific](../includes/net-framework-specific.md)]
+
 The global assembly cache (GAC) stores assemblies that several applications share. Install an assembly into the [global assembly cache](gac.md) with one of the following components:
 
 - [Windows Installer](#windows-installer)

@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Creating and Using Dynamic Objects in C#"
+title: "Walkthrough: Creating and Using Dynamic Objects"
 description: Learn how to create and use dynamic objects in this walkthrough. Create a custom dynamic object and a project that uses an 'IronPython' library.
 ms.date: 02/17/2023
 helpviewer_keywords:
@@ -94,7 +94,7 @@ In **Solution Explorer**, double-click the *Program.cs* file. Add the following 
 
 :::code language="csharp" source="./snippets/dynamic-walkthrough/program.cs" id="Snippet8":::
 
-Save the file and press <kbd>Ctrl</kdb>+<kbd>F5</kbd> to build and run the application.
+Save the file and press <kbd>Ctrl</kbd>+<kbd>F5</kbd> to build and run the application.
 
 ## Call a dynamic language library
 
@@ -114,7 +114,7 @@ After the code to load the random.py module, add the following code to create an
 
 :::code language="csharp" source="./snippets/dynamic-iron-python-walkthrough/program.cs" id="Snippet3":::
 
-Save the file and press <kbd>Ctrl</kdb>+<kbd>F5</kbd> to build and run the application.
+Save the file and press <kbd>Ctrl</kbd>+<kbd>F5</kbd> to build and run the application.
 
 ## See also
 

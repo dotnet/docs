@@ -96,19 +96,19 @@ Grouping constructs delineate subexpressions of a regular expression and typical
 |`(?!` *subexpression* `)`|Zero-width negative lookahead assertion.|`\b\w+\b(?!.+and.+)`|`"and"`, `"some"`, `"mice"`<br/>in<br/>`"cats, dogs and some mice."`|
 |`(?<=` *subexpression* `)`|Zero-width positive lookbehind assertion.|`\b\w+\b(?<=.+and.+)`<br/><br/>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;<br/><br/>`\b\w+\b(?<=.+and.*)`|`"some"`, `"mice"`<br/>in<br/>`"cats, dogs and some mice."`<br/>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;<br/>`"and"`, `"some"`, `"mice"`<br/>in<br/>`"cats, dogs and some mice."`|
 |`(?<!` *subexpression* `)`|Zero-width negative lookbehind assertion.|`\b\w+\b(?<!.+and.+)`<br/><br/>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;<br/><br/>`\b\w+\b(?<!.+and.*)`|`"cats"`, `"dogs"`, `"and"`<br/>in<br/>`"cats, dogs and some mice."`<br/>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;<br/>`"cats"`, `"dogs"`<br/>in<br/>`"cats, dogs and some mice."`|
-|`(?>` *subexpression* `)`|Atomic group.|`(?>a|ab)c`|`"ac"` in`"ac"`<br/><br/>_nothing_ in`"abc"`|
+|`(?>` *subexpression* `)`|Atomic group.|'(?>a&#124;ab)c|`"ac"` in`"ac"`<br/><br/>_nothing_ in`"abc"`|
 
 ### Lookarounds at a glance
 
 When the regular expression engine hits a **lookaround expression**, it takes a substring reaching from the current position to the start (lookbehind) or end (lookahead) of the original string, and then runs
 <xref:System.Text.RegularExpressions.Regex.IsMatch%2A?displayProperty=nameWithType> on that substring using the lookaround pattern. Success of this subexpression's result is then determined by whether it's a positive or negative assertion.
 
-| Lookaround | Name | Function |
-| - | - | - |
-`(?=check)` | Positive&nbsp;Lookahead | Asserts that what immediately follows the current position in the string is "check"
-`(?<=check)` | Positive&nbsp;Lookbehind | Asserts that what immediately precedes the current position in the string is "check"
-`(?!check)` | Negative&nbsp;Lookahead  | Asserts that what immediately follows the current position in the string is not "check"
-`(?<!check)` | Negative&nbsp;Lookbehind | Asserts that what immediately precedes the current position in the string is not "check"
+| Lookaround   | Name                     | Function                                                                                 |
+|--------------|--------------------------|------------------------------------------------------------------------------------------|
+| `(?=check)`  | Positive&nbsp;Lookahead  | Asserts that what immediately follows the current position in the string is "check"      |
+| `(?<=check)` | Positive&nbsp;Lookbehind | Asserts that what immediately precedes the current position in the string is "check"     |
+| `(?!check)`  | Negative&nbsp;Lookahead  | Asserts that what immediately follows the current position in the string is not "check"  |
+| `(?<!check)` | Negative&nbsp;Lookbehind | Asserts that what immediately precedes the current position in the string is not "check" |
 
 Once they have matched, **atomic groups** won't be re-evaluated again, even when the remainder of the pattern fails due to the match. This can significantly improve performance when quantifiers occur within the atomic group or the remainder of the pattern.
 

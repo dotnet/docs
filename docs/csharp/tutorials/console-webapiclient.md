@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Make HTTP requests in a .NET console app using C#"
+title: "Tutorial: Make HTTP requests in a .NET console app"
 description: Learn how to make HTTP requests to a REST web service and deserialize JSON responses. This tutorial creates a .NET console and uses C#.
 ms.date: 10/28/2022
 ---
@@ -20,8 +20,7 @@ If you prefer to follow along with the [final sample](/samples/dotnet/samples/co
 
 ## Prerequisites
 
-* [.NET SDK 6.0 or later](https://dotnet.microsoft.com/download/dotnet/6.0)
-* A code editor such as [Visual Studio [Code](https://code.visualstudio.com/) (an open-source, cross-platform editor). You can run the sample app on Windows, Linux, or macOS, or in a Docker container.
+[!INCLUDE [Prerequisites](../../../includes/prerequisites-basic.md)]
 
 ## Create the client app
 
@@ -214,7 +213,7 @@ The `ProcessRepositoriesAsync` method can do the async work and return a collect
 1. Change the signature of `ProcessRepositoriesAsync` to return a task whose result is a list of `Repository` objects:
 
    ```csharp
-   static async Task<List<Repository>> ProcessRepositoriesAsync()
+   static async Task<List<Repository>> ProcessRepositoriesAsync(HttpClient client)
    ```
 
 1. Return the repositories after processing the JSON response:

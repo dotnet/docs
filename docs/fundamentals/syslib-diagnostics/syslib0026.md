@@ -2,6 +2,8 @@
 title: SYSLIB0026 warning
 description: Learn about the obsoletion of mutable X509 certificate APIs that generates compile-time warning SYSLIB0026.
 ms.date: 06/21/2021
+f1_keywords:
+  - syslib0026
 ---
 # SYSLIB0026: X509Certificate and X509Certificate2 are immutable
 

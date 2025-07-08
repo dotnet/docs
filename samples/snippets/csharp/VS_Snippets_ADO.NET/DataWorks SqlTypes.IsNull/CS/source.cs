@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Data;
-using System.Data.SqlClient;
 using System.Data.SqlTypes;
 
-class Program
+static class Program
 {
     static void Main()
     {
@@ -11,9 +10,9 @@ class Program
         Console.ReadLine();
     }
     // <Snippet1>
-    static private void WorkWithSqlNulls()
+    static void WorkWithSqlNulls()
     {
-        DataTable table = new DataTable();
+        DataTable table = new();
 
         // Specify the SqlType for each column.
         DataColumn idColumn =

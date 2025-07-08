@@ -26,7 +26,7 @@ Visual Basic provides for the following property procedures:
 
 You usually define property procedures in pairs, using the `Get` and `Set` statements, but you can define either procedure alone if the property is read-only ([Get Statement](../../../language-reference/statements/get-statement.md)) or write-only ([Set Statement](../../../language-reference/statements/set-statement.md)).
 
-You can omit the `Get` and `Set` procedure when using an auto-implemented property. For more information, see [Auto-Implemented Properties](./auto-implemented-properties.md).
+You can omit the `Get` and `Set` procedure when using an automatially implemented property. For more information, see [Automatically implemented properties](./auto-implemented-properties.md).
 
 You can define properties in classes, structures, and modules. Properties are `Public` by default, which means you can call them from anywhere in your application that can access the property's container.
 

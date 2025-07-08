@@ -20,6 +20,14 @@ groups:
     title: Ubuntu
   - id: os-linux-other
     title: Other
+- id: operating-systems-set-three
+  title: Operating System
+  prompt: Choose an operating system
+  pivots:
+  - id: os-windows
+    title: Windows
+  - id: os-macos
+    title: macOS
 - id: unit-testing-framework-set-one
   title: Unit testing framework
   prompt: Choose a unit testing framework
@@ -47,35 +55,25 @@ groups:
     - id: vscode
       title: Visual Studio Code
     - id: cli
-      title: Command line interface
+      title: Command-line interface
 - id: dotnet-preview-version
-  title: .NET version
+  title: .NET preview version
   prompt: Choose a .NET version
   pivots:
+    - id: dotnet-10-0
+      title: .NET 10 Preview
+    - id: dotnet-9-0
+      title: .NET 9
     - id: dotnet-8-0
-      title: .NET 8 Preview
-    - id: dotnet-7-0
-      title: .NET 7
-    - id: dotnet-6-0
-      title: .NET 6
+      title: .NET 8
 - id: dotnet-version
   title: .NET version
   prompt: Choose a .NET version
   pivots:
-    - id: dotnet-7-0
-      title: .NET 7
-    - id: dotnet-6-0
-      title: .NET 6
-- id: dotnet-version-6-8
-  title: .NET version
-  prompt: Choose a .NET version
-  pivots:
+    - id: dotnet-9-0
+      title: .NET 9
     - id: dotnet-8-0
-      title: .NET 8 Preview
-    - id: dotnet-7-0
-      title: .NET 7
-    - id: dotnet-6-0
-      title: .NET 6
+      title: .NET 8
 - id: orleans-version
   title: Orleans version
   prompt: Choose an Orleans version
@@ -84,3 +82,69 @@ groups:
       title: Orleans 7.0
     - id: orleans-3-x
       title: Orleans 3.x
+- id: orleans-persistence-option
+  title: Orleans persistence option
+  prompt: Choose an option for Orleans persistence
+  pivots:
+    - id: azure-storage
+      title: Azure Storage
+    - id: azure-cosmos-db-nosql
+      title: Azure Cosmos DB for NoSQL
+- id: azure-development-tool
+  title: Azure development tool
+  prompt: Choose an Azure development tool
+  pivots:
+    - id: azure-azd
+      title: Azure Developer CLI
+    - id: azure-cli
+      title: Azure CLI
+    - id: azure-bicep
+      title: Azure Bicep
+- id: azure-interface
+  title: Azure interface
+  prompt: Choose an Azure interface
+  pivots:
+    - id: azure-portal
+      title: Azure Portal
+    - id: azure-cli
+      title: Azure CLI
+- id: code-language
+  title: Code language
+  prompt: Choose a code language
+  pivots:
+    - id: lang-csharp-vb
+      title: C# and Visual Basic
+    - id: lang-fsharp
+      title: F#
+- id: ubuntu-install-set-one
+  title: Ubuntu Version
+  prompt: Choose the Ubuntu distribution version
+  pivots:
+    - id: os-linux-ubuntu-2410
+      title: "24.10"
+    - id: os-linux-ubuntu-2404
+      title: "24.04"
+    - id: os-linux-ubuntu-2204
+      title: "22.04"
+    - id: os-linux-ubuntu-other
+      title: "Other"
+- id: openai-library
+  title: OpenAI Library
+  prompt: Choose a host service for OpenAI
+  pivots:
+    - id: openai
+      title: OpenAI
+    - id: azure-openai
+      title: Azure OpenAI
+- id: meai-targets
+  title: MEAI targets
+  prompt: Choose a host service for your AI models
+  pivots:
+    - id: github-models
+      title: GitHub Models
+    - id: azure-openai
+      title: Azure OpenAI
+    - id: openai
+      title: OpenAI
+    - id: ollama
+      title: Ollama

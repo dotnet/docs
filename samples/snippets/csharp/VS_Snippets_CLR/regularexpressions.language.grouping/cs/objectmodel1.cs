@@ -1,4 +1,4 @@
-﻿// <Snippet4>
+// <Snippet4>
 using System;
 using System.Text.RegularExpressions;
 
@@ -9,14 +9,14 @@ public class Example
       string pattern = @"(\b(\w+)\W+)+";
       string input = "This is a short sentence.";
       Match match = Regex.Match(input, pattern);
-      Console.WriteLine("Match: '{0}'", match.Value);
+      Console.WriteLine($"Match: '{match.Value}'");
       for (int ctr = 1; ctr < match.Groups.Count; ctr++)
       {
-         Console.WriteLine("   Group {0}: '{1}'", ctr, match.Groups[ctr].Value);
+         Console.WriteLine($"   Group {ctr}: '{match.Groups[ctr].Value}'");
          int capCtr = 0;
          foreach (Capture capture in match.Groups[ctr].Captures)
          {
-            Console.WriteLine("      Capture {0}: '{1}'", capCtr, capture.Value);
+            Console.WriteLine($"      Capture {capCtr}: '{capture.Value}'");
             capCtr++;
          }
       }

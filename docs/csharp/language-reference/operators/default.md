@@ -37,11 +37,10 @@ The following example shows the usage of the `default` literal:
 
 ## C# language specification
 
-For more information, see the [Default value expressions](~/_csharpstandard/standard/expressions.md#12820-default-value-expressions) section of the [C# language specification](~/_csharpstandard/standard/README.md).
+For more information, see the [Default value expressions](~/_csharpstandard/standard/expressions.md#12821-default-value-expressions) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 ## See also
 
-- [C# reference](../index.md)
 - [C# operators and expressions](index.md)
 - [Default values of C# types](../builtin-types/default-values.md)
 - [Generics in .NET](../../../standard/generics/index.md)

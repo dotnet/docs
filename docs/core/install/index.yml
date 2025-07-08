@@ -19,14 +19,12 @@ landingContent:
         links:
           - text: Install on Windows
             url: windows.md
-          - text: Supported Windows releases
-            url: windows.md#supported-releases
-          - text: Dependencies
-            url: windows.md#dependencies
+          - text: Supported versions
+            url: windows.md#supported-versions
           - text: Install with Visual Studio
             url: windows.md#install-with-visual-studio
-          - text: Install alongside Visual Studio Code
-            url: windows.md#install-alongside-visual-studio-code
+          - text: Install with Visual Studio Code
+            url: windows.md#install-with-visual-studio-code
 
   # Card
   - title: macOS
@@ -36,9 +34,9 @@ landingContent:
           - text: Install on macOS
             url: macos.md
           - text: Supported macOS releases
-            url: macos.md#supported-releases
+            url: macos.md#supported-versions
           - text: Install alongside Visual Studio Code
-            url: macos.md#install-alongside-visual-studio-code
+            url: macos.md#install-net-for-visual-studio-code
 
   # Card
   - title: Linux
@@ -62,7 +60,7 @@ landingContent:
           - text: SUSE Linux Enterprise Server
             url: linux-sles.md
           - text: Ubuntu
-            url: linux-ubuntu.md
+            url: linux-ubuntu-decision.md
 
   # Card
   - title: "Q&A"

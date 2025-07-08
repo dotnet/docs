@@ -1,6 +1,6 @@
 ---
 description: "ascending - C# Reference"
-title: "ascending - C# Reference"
+title: "ascending keyword"
 ms.date: 07/20/2015
 f1_keywords: 
   - "ascending"
@@ -21,6 +21,5 @@ The `ascending` contextual keyword is used in the [orderby clause](./orderby-cla
   
 ## See also
 
-- [C# Reference](../index.md)
 - [LINQ in C#](../../linq/index.md)
 - [descending](./descending.md)

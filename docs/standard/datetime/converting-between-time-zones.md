@@ -3,10 +3,10 @@ title: "Converting times between time zones"
 description: Learn to convert times between from one time zone to another in .NET. Also learn to convert DateTimeOffset values that have limited time zone awareness.
 ms.date: "07/27/2022"
 ms.custom: devdivchpfy22
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "times [.NET], converting"
   - "time zones [.NET], conversions"
   - "UTC times, converting"
@@ -35,12 +35,12 @@ The easiest way to convert a time to UTC is to call the `static` (`Shared` in Vi
 
 The following code converts the current local time to UTC and displays the result to the console:
 
-[!code-csharp[System.TimeZone2.Concepts#6](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.TimeZone2.Concepts/CS/TimeZone2Concepts.cs#6)]
+[!code-csharp[System.TimeZone2.Concepts#6](./snippets/timezone-concepts/TimeZone2Concepts.cs#6)]
 [!code-vb[System.TimeZone2.Concepts#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.TimeZone2.Concepts/VB/TimeZone2Concepts.vb#6)]
 
 If the date and time value doesn't represent the local time or UTC, the <xref:System.DateTime.ToUniversalTime%2A> method will likely return an erroneous result. However, you can use the <xref:System.TimeZoneInfo.ConvertTimeToUtc%2A?displayProperty=nameWithType> method to convert the date and time from a specified time zone. For details on retrieving a <xref:System.TimeZoneInfo> object that represents the destination time zone, see [Finding the time zones defined on a local system](finding-the-time-zones-on-local-system.md). The following code uses the <xref:System.TimeZoneInfo.ConvertTimeToUtc%2A?displayProperty=nameWithType> method to convert Eastern Standard Time to UTC:
 
-[!code-csharp[System.TimeZone2.Concepts#7](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.TimeZone2.Concepts/CS/TimeZone2Concepts.cs#7)]
+[!code-csharp[System.TimeZone2.Concepts#7](./snippets/timezone-concepts/TimeZone2Concepts.cs#7)]
 [!code-vb[System.TimeZone2.Concepts#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.TimeZone2.Concepts/VB/TimeZone2Concepts.vb#7)]
 
 The <xref:System.TimeZoneInfo.ConvertTimeToUtc%2A?displayProperty=nameWithType> method throws an <xref:System.ArgumentException> if the <xref:System.DateTime> object's <xref:System.DateTime.Kind%2A> property and the time zone are mismatched. A mismatch occurs if the <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind.Local?displayProperty=nameWithType> but the <xref:System.TimeZoneInfo> object doesn't represent the local time zone, or if the <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind.Utc?displayProperty=nameWithType> but the <xref:System.TimeZoneInfo> object doesn't equal <xref:System.TimeZoneInfo.Utc?displayProperty=nameWithType>.
@@ -60,7 +60,7 @@ To convert UTC to local time, see the [Converting UTC to local time](#converting
 
 The following code converts UTC to Central Standard Time:
 
-[!code-csharp[System.TimeZone2.Concepts#8](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.TimeZone2.Concepts/CS/TimeZone2Concepts.cs#8)]
+[!code-csharp[System.TimeZone2.Concepts#8](./snippets/timezone-concepts/TimeZone2Concepts.cs#8)]
 [!code-vb[System.TimeZone2.Concepts#8](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.TimeZone2.Concepts/VB/TimeZone2Concepts.vb#8)]
 
 ## Converting UTC to local time
@@ -94,7 +94,7 @@ Both methods require that the <xref:System.DateTime.Kind%2A> property of the dat
 
 The following example uses the <xref:System.TimeZoneInfo.ConvertTime%2A> method to convert from Hawaiian Standard Time to local time:
 
-[!code-csharp[System.TimeZone2.Concepts#9](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.TimeZone2.Concepts/CS/TimeZone2Concepts.cs#9)]
+[!code-csharp[System.TimeZone2.Concepts#9](./snippets/timezone-concepts/TimeZone2Concepts.cs#9)]
 [!code-vb[System.TimeZone2.Concepts#9](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.TimeZone2.Concepts/VB/TimeZone2Concepts.vb#9)]
 
 ## Converting DateTimeOffset values

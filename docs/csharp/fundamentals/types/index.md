@@ -1,7 +1,7 @@
 ---
-title: "The C# type system"
-description: Learn about creating types in C#, such as tuples, records, value types, and reference types.
-ms.date: 09/30/2021
+title: "Learn the fundamentals of the C# type system"
+description: Learn about creating types in C#, such as tuples, records, value types, and reference types. Learn to choose between these options.
+ms.date: 08/15/2024
 helpviewer_keywords:
   - "value types [C#]"
   - "reference types [C#]"
@@ -22,8 +22,8 @@ The information stored in a type can include the following items:
 - The maximum and minimum values that it can represent.
 - The members (methods, fields, events, and so on) that it contains.
 - The base type it inherits from.
-- The interface(s) it implements.
-- The kinds of operations that are permitted.
+- The interfaces it implements.
+- The operations that are permitted.
 
 The compiler uses type information to make sure all operations that are performed in your code are *type safe*. For example, if you declare a variable of type [`int`](../../language-reference/builtin-types/integral-numeric-types.md), the compiler allows you to use the variable in addition and subtraction operations. If you try to perform those same operations on a variable of type [`bool`](../../language-reference/builtin-types/bool.md), the compiler generates an error, as shown in the following example:
 
@@ -56,6 +56,16 @@ C# provides a standard set of built-in types. These represent integers, floating
 
 You use the [`struct`](../../language-reference/builtin-types/struct.md), [`class`](../../language-reference/keywords/class.md), [`interface`](../../language-reference/keywords/interface.md), [`enum`](../../language-reference/builtin-types/enum.md), and [`record`](../../language-reference/builtin-types/record.md) constructs to create your own custom types. The .NET class library itself is a collection of custom types that you can use in your own applications. By default, the most frequently used types in the class library are available in any C# program. Others become available only when you explicitly add a project reference to the assembly that defines them. After the compiler has a reference to the assembly, you can declare variables (and constants) of the types declared in that assembly in source code. For more information, see [.NET Class Library](../../../standard/class-library-overview.md).
 
+One of the first decisions you make when defining a type is deciding which construct to use for your type. The following list helps make that initial decision. There's overlap in the choices. In most scenarios, more than one option is a reasonable choice.
+
+- If the data storage size is small, no more than 64 bytes, choose a `struct` or `record struct`.
+- If the type is immutable, or you want nondestructive mutation, choose a `struct` or `record struct`.
+- If your type should have value semantics for equality, choose a `record class` or `record struct`.
+- If the type is primarily used for storing data, not behavior, choose a `record class` or `record struct`.
+- If the type is part of an inheritance hierarchy, choose a `record class` or a `class`.
+- If the type uses polymorphism, choose a `class`.
+- If the primary purpose is behavior, choose a `class`.
+
 ## The common type system
 
 It's important to understand two fundamental points about the type system in .NET:
@@ -70,7 +80,7 @@ The following illustration shows the relationship between value types and refere
 > [!NOTE]
 > You can see that the most commonly used types are all organized in the <xref:System> namespace. However, the namespace in which a type is contained has no relation to whether it is a value type or reference type.
 
-Classes and structs are two of the basic constructs of the common type system in .NET. C# 9 adds records, which are a kind of class. Each is essentially a data structure that encapsulates a set of data and behaviors that belong together as a logical unit. The data and behaviors are the *members* of the class, struct, or record. The members include its methods, properties, events, and so on, as listed later in this article.
+Classes and structs are two of the basic constructs of the common type system in .NET. Each is essentially a data structure that encapsulates a set of data and behaviors that belong together as a logical unit. The data and behaviors are the *members* of the class, struct, or record. The members include its methods, properties, events, and so on, as listed later in this article.
 
 A class, struct, or record declaration is like a blueprint that is used to create instances or objects at run time. If you define a class, struct, or record named `Person`, `Person` is the name of the type. If you declare and initialize a variable `p` of type `Person`, `p` is said to be an object or instance of `Person`. Multiple instances of the same `Person` type can be created, and each instance can have different values in its properties and fields.  
   
@@ -78,7 +88,7 @@ A class is a reference type. When an object of the type is created, the variable
   
 A struct is a value type. When a struct is created, the variable to which the struct is assigned holds the struct's actual data. When the struct is assigned to a new variable, it's copied. The new variable and the original variable therefore contain two separate copies of the same data. Changes made to one copy don't affect the other copy.
 
-Record types may be either reference types (`record class`) or value types (`record struct`).
+Record types can be either reference types (`record class`) or value types (`record struct`). Record types contain methods that support value-equality.
   
 In general, classes are used to model more complex behavior. Classes typically store data that is intended to be modified after a class object is created. Structs are best suited for small data structures. Structs typically store data that isn't intended to be modified after the struct is created. Record types are data structures with additional compiler synthesized members. Records typically store data that isn't intended to be modified after the object is created.
 
@@ -116,11 +126,11 @@ All enums inherit from <xref:System.Enum?displayProperty=nameWithType>, which in
 
 A type that is defined as a `class`, `record`, [`delegate`](../../language-reference/builtin-types/reference-types.md), array, or [`interface`](../../language-reference/keywords/interface.md) is a [`reference type`](../../language-reference/keywords/reference-types.md).
 
-When declaring a variable of a [`reference type`](../../language-reference/keywords/reference-types.md), it contains the value [`null`](../../language-reference/keywords/null.md) until you assign it with an instance of that type or create one using the [`new`](../../language-reference/operators/new-operator.md) operator. Creation and assignment of a class are demonstrated in the following example:
+When you declare a variable of a [`reference type`](../../language-reference/keywords/reference-types.md), it contains the value [`null`](../../language-reference/keywords/null.md) until you assign it with an instance of that type or create one using the [`new`](../../language-reference/operators/new-operator.md) operator. Creation and assignment of a class are demonstrated in the following example:
 
 :::code language="csharp" source="../../programming-guide/types/snippets/index/Program.cs" ID="DeclarationAndAssignment":::
 
-An [`interface`](../../language-reference/keywords/interface.md) cannot be directly instantiated using the [`new`](../../language-reference/operators/new-operator.md) operator. Instead, create and assign an instance of a class that implements the interface. Consider the following example:
+An [`interface`](../../language-reference/keywords/interface.md) can't be directly instantiated using the [`new`](../../language-reference/operators/new-operator.md) operator. Instead, create and assign an instance of a class that implements the interface. Consider the following example:
 
 :::code language="csharp" source="../../programming-guide/types/snippets/index/Program.cs" ID="InterfaceDeclaration":::
 
@@ -130,11 +140,11 @@ All arrays are reference types, even if their elements are value types. Arrays i
 
 :::code language="csharp" source="../../programming-guide/types/snippets/index/Program.cs" ID="ArrayDeclaration":::
 
-Reference types fully support inheritance. When you create a class, you can inherit from any other interface or class that isn't defined as [sealed](../../language-reference/keywords/sealed.md). Other classes can inherit from your class and override your virtual methods. For more information about how to create your own classes, see [Classes, structs, and records](../types/index.md). For more information about inheritance and virtual methods, see [Inheritance](../object-oriented/inheritance.md).
+Reference types fully support inheritance. When you create a class, you can inherit from any other interface or class that isn't defined as [sealed](../../language-reference/keywords/sealed.md). Other classes can inherit from your class and override your virtual methods. For more information about how to create your own classes, see [Classes, structs, and records](../object-oriented/index.md). For more information about inheritance and virtual methods, see [Inheritance](../object-oriented/inheritance.md).
 
 ## Types of literal values
 
-In C#, literal values receive a type from the compiler. You can specify how a numeric literal should be typed by appending a letter to the end of the number. For example, to specify that the value `4.56` should be treated as a `float`, append an "f" or "F" after the number: `4.56f`. If no letter is appended, the compiler will infer a type for the literal. For more information about which types can be specified with letter suffixes, see [Integral numeric types](../../language-reference/builtin-types/integral-numeric-types.md) and [Floating-point numeric types](../../language-reference/builtin-types/floating-point-numeric-types.md).
+In C#, literal values receive a type from the compiler. You can specify how a numeric literal should be typed by appending a letter to the end of the number. For example, to specify that the value `4.56` should be treated as a `float`, append an "f" or "F" after the number: `4.56f`. If no letter is appended, the compiler infers a type for the literal. For more information about which types can be specified with letter suffixes, see [Integral numeric types](../../language-reference/builtin-types/integral-numeric-types.md) and [Floating-point numeric types](../../language-reference/builtin-types/floating-point-numeric-types.md).
 
 Because literals are typed, and all types derive ultimately from <xref:System.Object?displayProperty=nameWithType>, you can write and compile code such as the following code:
 
@@ -142,7 +152,7 @@ Because literals are typed, and all types derive ultimately from <xref:System.Ob
 
 ## Generic types
 
-A type can be declared with one or more *type parameters* that serve as a placeholder for the actual type (the *concrete type*). Client code provides the concrete type when it creates an instance of the type. Such types are called *generic types*. For example, the .NET type <xref:System.Collections.Generic.List%601?displayProperty=nameWithType> has one type parameter that by convention is given the name `T`. When you create an instance of the type, you specify the type of the objects that the list will contain, for example, `string`:
+A type can be declared with one or more *type parameters* that serve as a placeholder for the actual type (the *concrete type*). Client code provides the concrete type when it creates an instance of the type. Such types are called *generic types*. For example, the .NET type <xref:System.Collections.Generic.List%601?displayProperty=nameWithType> has one type parameter that by convention is given the name `T`. When you create an instance of the type, you specify the type of the objects that the list contain, for example, `string`:
 
 :::code language="csharp" source="../../programming-guide/types/snippets/index/Program.cs" ID="GenericType":::
 

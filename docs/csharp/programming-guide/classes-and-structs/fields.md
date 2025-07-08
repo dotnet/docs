@@ -1,5 +1,5 @@
 ---
-title: Fields - C# Programming Guide
+title: Fields 
 description: A field in C# is a variable of any type that is declared directly in a class or struct. Fields are members of their containing type.
 ms.date: 05/25/2023
 helpviewer_keywords:
@@ -50,7 +50,6 @@ Beginning with C# 12, [Primary constructor](./instance-constructors.md#primary-c
 
 ## See also
 
-- [C# Programming Guide](../index.md)
 - [The C# type system](../../fundamentals/types/index.md)
 - [Using Constructors](./using-constructors.md)
 - [Inheritance](../../fundamentals/object-oriented/inheritance.md)

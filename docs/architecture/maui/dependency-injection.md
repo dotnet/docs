@@ -3,7 +3,7 @@ title: Dependency Injection
 description: Patterns for building flexible, decoupled, and testable applications
 author: michaelstonis
 no-loc: [MAUI]
-ms.date: 07/10/2022
+ms.date: 05/30/2024
 ---
 
 # Dependency injection
@@ -51,11 +51,11 @@ There are several advantages to using a dependency injection container:
 
 In the context of a .NET MAUI app that uses MVVM, a dependency injection container will typically be used for registering and resolving views, registering and resolving view models, and for registering services and injecting them into view models.
 
-There are many dependency injection containers available in .NET; the eShopOnContainers multi-platform app uses `Microsoft.Extensions.DependencyInjection` to manage the instantiation of views, view models, and service classes in the app. `Microsoft.Extensions.DependencyInjection` facilitates building loosely coupled apps, and provides all of the features commonly found in dependency injection containers, including methods to register type mappings and object instances, resolve objects, manage object lifetimes, and inject dependent objects into constructors of objects that it resolves. For more information about `Microsoft.Extensions.DependencyInjection`, see [Dependency injection in .NET](../../core/extensions/dependency-injection.md).
+There are many dependency injection containers available in .NET; the eShop multi-platform app uses `Microsoft.Extensions.DependencyInjection` to manage the instantiation of views, view models, and service classes in the app. `Microsoft.Extensions.DependencyInjection` facilitates building loosely coupled apps, and provides all of the features commonly found in dependency injection containers, including methods to register type mappings and object instances, resolve objects, manage object lifetimes, and inject dependent objects into constructors of objects that it resolves. For more information about `Microsoft.Extensions.DependencyInjection`, see [Dependency injection in .NET](../../core/extensions/dependency-injection.md).
 
 In .NET MAUI, the `MauiProgram` class will call into the `CreateMauiApp` method to create a `MauiAppBuilder` object. The `MauiAppBuilder` object has a `Services` property of type `IServiceCollection`, which provides a place to register our components, such as views, view models, and services for dependency injection. Any components registered with the `Services` property will be provided to the dependency injection container when the `MauiAppBuilder.Build` method is called.
 
-At runtime, the container must know which implementation of the services are being requested in order to instantiate them for the requested objects. In the eShopOnContainers multi-platform app, the `IAppEnvironmentService`, `IDialogService` , `INavigationService`, and `ISettingsService` interfaces need to be resolved before it can instantiate a `ProfileViewModel` object. This involves the container performing the following actions:
+At runtime, the container must know which implementation of the services are being requested in order to instantiate them for the requested objects. In the eShop multi-platform app, the `IAppEnvironmentService`, `IDialogService`, `INavigationService`, and `ISettingsService` interfaces need to be resolved before it can instantiate a `ProfileViewModel` object. This involves the container performing the following actions:
 
 - Deciding how to instantiate an object that implements the interface. This is known as *registration*.
 - Instantiating the object that implements the required interface and the `ProfileViewModel` object. This is known as *resolution*.
@@ -74,7 +74,7 @@ There are two ways of registering types and objects in the container through cod
 > [!NOTE]
 > Dependency injection containers are not always suitable. Dependency injection introduces additional complexity and requirements that might not be appropriate or useful to small apps. If a class does not have any dependencies, or is not a dependency for other types, it might not make sense to put it in the container. In addition, if a class has a single set of dependencies that are integral to the type and will never change, it might not make sense to put it in the container.
 
-The registration of types requiring dependency injection should be performed in a single method in an app. This method should be invoked early in the app's lifecycle to ensure it is aware of the dependencies between its classes. The eShopOnContainers multi-platform app performs this the `MauiProgram.CreateMauiApp` method. The following code example shows how the eShopOnContainers multi-platform app declares the `CreateMauiApp` in the `MauiProgram` class:
+The registration of types requiring dependency injection should be performed in a single method in an app. This method should be invoked early in the app's lifecycle to ensure it is aware of the dependencies between its classes. The eShop multi-platform app performs this the `MauiProgram.CreateMauiApp` method. The following code example shows how the eShop multi-platform app declares the `CreateMauiApp` in the `MauiProgram` class:
 
 ```csharp
 public static class MauiProgram
@@ -90,7 +90,7 @@ public static class MauiProgram
 }
 ```
 
-The `MauiApp.CreateBuilder` method creates a `MauiAppBuilder` object that we can use to register our dependencies. Many dependencies in the eShopOnContainers multi-platform app need to be registered, so the extension methods `RegisterAppServices`, `RegisterViewModels`, and `RegisterViews` were created to help provide an organized and maintainable registration workflow. The following code shows the `RegisterViewModels` method:
+The `MauiApp.CreateBuilder` method creates a `MauiAppBuilder` object that we can use to register our dependencies. Many dependencies in the eShop multi-platform app need to be registered, so the extension methods `RegisterAppServices`, `RegisterViewModels`, and `RegisterViews` were created to help provide an organized and maintainable registration workflow. The following code shows the `RegisterViewModels` method:
 
 ```csharp
 public static MauiAppBuilder RegisterViewModels(this MauiAppBuilder mauiAppBuilder)
@@ -136,7 +136,7 @@ public static MauiAppBuilder RegisterAppServices(this MauiAppBuilder mauiAppBuil
 Once all services have been registered, the `MauiAppBuilder.Build` method should be called to create our `MauiApp` and populate our dependency injection container with all the registered services.
 
 > [!IMPORTANT]
-> Once the `Build` method has been called, the services registered with the dependency injection container will be immutable and no longer can be updated or modified.
+> Once the `Build` method has been called, the dependency injection container is immutable and can no longer be updated or modified. Ensure that all services that you need within your application have been registered before you call `Build`.
 
 ## Resolution
 
@@ -168,7 +168,7 @@ Routing.RegisterRoute("Filter", typeof(FiltersView));
 During `Shell` navigation, it will look for registrations of the `FiltersView`, and if any are found, it will create that view and inject any dependencies into the constructor. As shown in the code example below, the `CatalogViewModel` will be injected into the `FiltersView`:
 
 ```csharp
-namespace eShopOnContainers.Views;
+namespace eShop.Views;
 
 public partial class FiltersView : ContentPage
 {

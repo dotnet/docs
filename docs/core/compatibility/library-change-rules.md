@@ -2,7 +2,7 @@
 title: .NET API changes that affect compatibility
 description: Learn how .NET attempts to maintain compatibility for developers across .NET versions, and what kind of change is considered a breaking change.
 ms.date: 05/12/2021
-ms.topic: conceptual
+ms.topic: article
 ---
 # Change rules for compatibility
 
@@ -86,7 +86,7 @@ Changes in this category modify the public surface area of a type. Most of the c
 
 ### Members
 
-- ✔️ **ALLOWED: Expanding the visibility of a member that is not [virtual](../../csharp/language-reference/keywords/sealed.md)**
+- ✔️ **ALLOWED: Expanding the visibility of a member that is not [virtual](../../csharp/language-reference/keywords/virtual.md)**
 
 - ✔️ **ALLOWED: Adding an abstract member to a public type that has no *accessible* (public or protected) constructors, or the type is [sealed](../../csharp/language-reference/keywords/sealed.md)**
 
@@ -211,7 +211,7 @@ Changes in this category modify the public surface area of a type. Most of the c
 
 ### Properties, fields, parameters, and return values
 
-- ✔️ **ALLOWED: Changing the value of a property, field, return value, or [out](../../csharp/language-reference/keywords/out-parameter-modifier.md) parameter to a more derived type**
+- ✔️ **ALLOWED: Changing the value of a property, field, return value, or [out](../../csharp/language-reference/keywords/method-parameters.md#out-parameter-modifier) parameter to a more derived type**
 
   For example, a method that returns a type of <xref:System.Object> can return a <xref:System.String> instance. (However, the method signature cannot change.)
 
@@ -225,9 +225,9 @@ Changes in this category modify the public surface area of a type. Most of the c
 
 - ❌ **DISALLOWED: Decreasing the range of accepted values for a property or parameter**
 
-- ❌ **DISALLOWED: Increasing the range of returned values for a property, field, return value, or [out](../../csharp/language-reference/keywords/out-parameter-modifier.md) parameter**
+- ❌ **DISALLOWED: Increasing the range of returned values for a property, field, return value, or [out](../../csharp/language-reference/keywords/method-parameters.md#out-parameter-modifier) parameter**
 
-- ❌ **DISALLOWED: Changing the returned values for a property, field, method return value, or [out](../../csharp/language-reference/keywords/out-parameter-modifier.md) parameter**
+- ❌ **DISALLOWED: Changing the returned values for a property, field, method return value, or [out](../../csharp/language-reference/keywords/method-parameters.md#out-parameter-modifier) parameter**
 
 - ❌ **DISALLOWED: Changing the default value of a property, field, or parameter**
 
@@ -310,15 +310,15 @@ Changes in this category modify the public surface area of a type. Most of the c
 
 ## Code changes
 
-- ✔️ **ALLOWED: Adding [params](../../csharp/language-reference/keywords/params.md) to a parameter**
+- ✔️ **ALLOWED: Adding [params](../../csharp/language-reference/keywords/method-parameters.md#params-modifier) to a parameter**
 
 - ❌ **DISALLOWED: Changing a [struct](../../csharp/language-reference/builtin-types/struct.md) to a [class](../../csharp/language-reference/keywords/class.md) and vice versa**
 
-- ❌ **DISALLOWED: Adding the [checked](../../csharp/language-reference/keywords/virtual.md) keyword to a code block**
+- ❌ **DISALLOWED: Adding the [checked](../../csharp/language-reference/statements/checked-and-unchecked.md) statement to a code block**
 
-   This change may cause code that previously executed to throw an <xref:System.OverflowException> and is unacceptable.
+   This change might cause code that previously executed to throw an <xref:System.OverflowException> and is unacceptable.
 
-- ❌ **DISALLOWED: Removing [params](../../csharp/language-reference/keywords/params.md) from a parameter**
+- ❌ **DISALLOWED: Removing [params](../../csharp/language-reference/keywords/method-parameters.md#params-modifier) from a parameter**
 
 - ❌ **DISALLOWED: Changing the order in which events are fired**
 

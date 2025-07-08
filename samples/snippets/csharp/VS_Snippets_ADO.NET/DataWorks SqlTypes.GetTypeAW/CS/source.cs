@@ -1,47 +1,45 @@
-﻿using System;
+using System;
 using System.Data;
 using System.Data.SqlClient;
 using System.Data.SqlTypes;
 
-class Program
+static class Program
 {
     static void Main()
     {
-        string connectionString = GetConnectionString();
+        var connectionString = GetConnectionString();
         GetSqlTypesAW(connectionString);
         Console.ReadLine();
     }
     // <Snippet1>
-    static private void GetSqlTypesAW(string connectionString)
+    static void GetSqlTypesAW(string connectionString)
     {
         // Create a DataTable and specify a SqlType
         // for each column.
-        DataTable table = new DataTable();
-        DataColumn icolumnolumn =
-            table.Columns.Add("SalesOrderID", typeof(SqlInt32));
-        DataColumn priceColumn =
-            table.Columns.Add("UnitPrice", typeof(SqlMoney));
-        DataColumn totalColumn =
-            table.Columns.Add("LineTotal", typeof(SqlDecimal));
-        DataColumn columnModifiedDate =
-            table.Columns.Add("ModifiedDate", typeof(SqlDateTime));
+        DataTable table = new();
+        table.Columns.Add("SalesOrderID", typeof(SqlInt32));
+        table.Columns.Add("UnitPrice", typeof(SqlMoney));
+        table.Columns.Add("LineTotal", typeof(SqlDecimal));
+        table.Columns.Add("ModifiedDate", typeof(SqlDateTime));
 
         // Open a connection to SQL Server and fill the DataTable
         // with data from the Sales.SalesOrderDetail table
         // in the AdventureWorks sample database.
-        using (SqlConnection connection = new SqlConnection(connectionString))
+        using (SqlConnection connection = new(connectionString))
         {
-            string queryString =
+            const string queryString =
                 "SELECT TOP 5 SalesOrderID, UnitPrice, LineTotal, ModifiedDate "
                 + "FROM Sales.SalesOrderDetail WHERE LineTotal < @LineTotal";
 
             // Create the SqlCommand.
-            SqlCommand command = new SqlCommand(queryString, connection);
+            SqlCommand command = new(queryString, connection);
 
             // Create the SqlParameter and assign a value.
             SqlParameter parameter =
-                new SqlParameter("@LineTotal", SqlDbType.Decimal);
-            parameter.Value = 1.5;
+                new("@LineTotal", SqlDbType.Decimal)
+                {
+                    Value = 1.5
+                };
             command.Parameters.Add(parameter);
 
             // Open the connection and load the data.
@@ -58,8 +56,7 @@ class Program
         Console.WriteLine("Data Types:");
         foreach (DataColumn column in table.Columns)
         {
-            Console.WriteLine(" {0} -- {1}",
-                column.ColumnName, column.DataType.UnderlyingSystemType);
+            Console.WriteLine($" {column.ColumnName} -- {column.DataType.UnderlyingSystemType}");
         }
 
         // Display the value for each row.
@@ -75,12 +72,6 @@ class Program
     }
     // </Snippet1>
 
-    static private string GetConnectionString()
-    {
-        // To avoid storing the connection string in your code,
-        // you can retrieve it from a configuration file, using the
-        // System.Configuration.ConfigurationSettings.AppSettings property
-        return "Data Source=(local);Initial Catalog=AdventureWorks;"
-            + "Integrated Security=SSPI;";
-    }
+    static string GetConnectionString() =>
+        throw new NotImplementedException();
 }

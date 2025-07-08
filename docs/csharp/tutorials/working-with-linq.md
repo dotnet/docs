@@ -2,7 +2,7 @@
 title: Working with LINQ
 description: This tutorial teaches you how to generate sequences with LINQ, write methods for use in LINQ queries, and distinguish between eager and lazy evaluation.
 ms.date: 10/29/2018
-ms.technology: csharp-linq
+ms.subservice: csharp-linq
 ms.assetid: 0db12548-82cb-4903-ac88-13103d70aa77
 ---
 
@@ -26,7 +26,7 @@ This tutorial has multiple steps. After each step, you can run the application a
 
 ## Prerequisites
 
-You’ll need to set up your machine to run .NET core. You can find the installation instructions on the [.NET Core Download](https://dotnet.microsoft.com/download) page. You can run this application on Windows, Ubuntu Linux, or OS X, or in a Docker container. You’ll need to install your favorite code editor. The descriptions below use [Visual Studio Code](https://code.visualstudio.com/) which is an open source, cross-platform editor. However, you can use whatever tools you are comfortable with.
+[!INCLUDE [Prerequisites](../../../includes/prerequisites-basic.md)]
 
 ## Create the Application
 
@@ -45,7 +45,10 @@ using System.Collections.Generic;
 using System.Linq;
 ```
 
-If these three lines (`using` statements) aren't at the top of the file, our program will not compile.
+If these three lines (`using` directives) aren't at the top of the file, your program might not compile.
+
+> [!TIP]
+> For this tutorial, you can organize your code in a namespace called `LinqFaroShuffle` to match the sample code, or you can use the default global namespace. If you choose to use a namespace, make sure all your classes and methods are consistently within the same namespace, or add appropriate `using` statements as needed.
 
 Now that you have all of the references that you'll need, consider what constitutes a deck of cards. Commonly, a deck of playing cards has four suits, and each suit has thirteen values. Normally, you might consider creating a `Card` class right off the bat and populating a collection of `Card` objects by hand. With LINQ, you can be more concise than the usual way of dealing with creating a deck of cards. Instead of creating a `Card` class, you can create two sequences to represent suits and ranks, respectively. You'll create a really simple pair of [*iterator methods*](../iterators.md#enumeration-sources-with-iterator-methods) that will generate the ranks and suits as <xref:System.Collections.Generic.IEnumerable%601>s of strings:
 
@@ -159,6 +162,9 @@ namespace LinqFaroShuffle
     }
 }
 ```
+
+> [!NOTE]
+> If you're using an editor other than Visual Studio (such as Visual Studio Code), you might need to add `using LinqFaroShuffle;` to the top of your _Program.cs_ file for the extension methods to be accessible. Visual Studio automatically adds this using statement, but other editors might not.
 
 Look at the method signature for a moment, specifically the parameters:
 
@@ -345,8 +351,8 @@ Aside from LINQ, you learned a bit about a technique magicians use for card tric
 
 For more information on LINQ, see:
 
-- [Introduction to LINQ](/dotnet/csharp/linq/)
-- [Basic LINQ Query Operations (C#)](../programming-guide/concepts/linq/standard-query-operators-overview.md)
-- [Data Transformations With LINQ (C#)](../programming-guide/concepts/linq/data-transformations-with-linq.md)
-- [Query Syntax and Method Syntax in LINQ (C#)](../linq/write-linq-queries.md)
-- [C# Features That Support LINQ](../programming-guide/concepts/linq/features-that-support-linq.md)
+- [Introduction to LINQ](../linq/index.md)
+- [Basic LINQ Query Operations (C#)](../linq/standard-query-operators/index.md)
+- [Data Transformations With LINQ (C#)](../linq/standard-query-operators/index.md)
+- [Query Syntax and Method Syntax in LINQ (C#)](../linq/get-started/write-linq-queries.md)
+- [C# Features That Support LINQ](../linq/get-started/features-that-support-linq.md)

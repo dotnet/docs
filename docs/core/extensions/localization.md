@@ -3,7 +3,7 @@ title: Localization
 description: Learn the concepts of localization while learning how to use the IStringLocalizer and IStringLocalizerFactory implementations in your .NET workloads.
 author: IEvangelist
 ms.author: dapine
-ms.date: 06/23/2023
+ms.date: 02/02/2024
 helpviewer_keywords:
   - "culture, localization"
   - "application development [.NET], localization"
@@ -29,7 +29,7 @@ In this article, you will learn how to use the <xref:Microsoft.Extensions.Locali
 
 ## Resource files
 
-The primary mechanism for isolating localizable strings is with **resource files**. A resource file is an XML file with the *.resx* file extension. Resource files are translated prior to the execution of the consuming application &mdash; in other words, they represent translated content at rest. A resource file name most commonly contains a locale identifier, and takes on the following form:
+The primary mechanism for isolating localizable strings is with **resource files**. A resource file is an XML file with the *.resx* file extension. Resource files are translated prior to the execution of the consuming application&mdash;in other words, they represent translated content at rest. A resource file name most commonly contains a locale identifier, and takes on the following form:
 
 **`<FullTypeName><.Locale>.resx`**
 
@@ -40,13 +40,13 @@ Where:
 
 ### Specifying locales
 
-The locale should define the language, at a bare minimum, but it can also define the culture (dialect), and even the country or region. These segments are commonly delimited by the `-` character. With the added specificity of a culture, the "culture fallback" rules are applied where best matches are prioritized. The locale should map to a well-known language tag. For more information, see <xref:System.Globalization.CultureInfo.Name?displayProperty=nameWithType>.
+The locale should define the language, at a bare minimum, but it can also define the culture (regional language), and even the country or region. These segments are commonly delimited by the `-` character. With the added specificity of a culture, the "culture fallback" rules are applied where best matches are prioritized. The locale should map to a well-known language tag. For more information, see <xref:System.Globalization.CultureInfo.Name?displayProperty=nameWithType>.
 
 ### Culture fallback scenarios
 
 Imagine that your localized app supports various Serbian locales, and has the following resource files for its `MessageService`:
 
-| File                             | Dialect                       | Country Code |
+| File                             | Regional language             | Country Code |
 |----------------------------------|-------------------------------|--------------|
 | *MessageService.sr-Cyrl-RS.resx* | (Cyrillic, Serbia)            | RS           |
 | *MessageService.sr-Cyrl.resx*    | Cyrillic                      |              |
@@ -57,7 +57,7 @@ Imagine that your localized app supports various Serbian locales, and has the fo
 | *MessageService.sr.resx*         | <sup>†</sup> Latin            |              |
 | *MessageService.resx*            |                               |              |
 
-_<sup>†</sup>  The default dialect for the language._
+*<sup>†</sup>  The default regional language for the language.*
 
 When your app is running with the <xref:System.Globalization.CultureInfo.CurrentCulture?displayProperty=nameWithType> set to a culture of `"sr-Cyrl-RS"` localization attempts to resolve files in the following order:
 
@@ -79,7 +79,7 @@ The "culture fallback" rule will ignore locales when there are no corresponding 
 
 Resource files are automatically resolved as part of a lookup routine. If your project file name is different than the root namespace of your project, the assembly name might differ. This can prevent resource lookup from being otherwise successful. To address this mismatch, use the <xref:Microsoft.Extensions.Localization.RootNamespaceAttribute> to provide a hint to the localization services. When provided, it is used during resource lookup.
 
-The example project is named *example.csproj*, which creates an *example.dll* and *example.exe* &mdash; however, the `Localization.Example` namespace is used. Apply an `assembly` level attribute to correct this mismatch:
+The example project is named *example.csproj*, which creates an *example.dll* and *example.exe*&mdash;however, the `Localization.Example` namespace is used. Apply an `assembly` level attribute to correct this mismatch:
 
 :::code source="snippets/localization/example/Program.cs" range="10":::
 
@@ -121,22 +121,22 @@ After you've [registered](#register-localization-services) (and optionally [conf
 
 To create a message service that is capable of returning localized strings, consider the following `MessageService`:
 
-:::code source="snippets/localization/example/MessageService.cs" highlight="8,10-11,16":::
+:::code source="snippets/localization/example/MessageService.cs":::
 
 In the preceding C# code:
 
-- A `IStringLocalizer<MessageService> _localizer` field is declared.
-- The constructor takes a `IStringLocalizer<MessageService>` parameter and assigns it to the `_localizer` field.
+- A `IStringLocalizer<MessageService> localizer` field is declared.
+- The primary constructor defines an `IStringLocalizer<MessageService>` parameter and captures it as a `localizer` argument.
 - The `GetGreetingMessage` method invokes the <xref:Microsoft.Extensions.Localization.IStringLocalizer.Item(System.String)?displayProperty=nameWithType> passing `"GreetingMessage"` as an argument.
 
 The `IStringLocalizer` also supports parameterized string resources, consider the following `ParameterizedMessageService`:
 
-:::code source="snippets/localization/example/ParameterizedMessageService.cs" highlight="8,10-11,16":::
+:::code source="snippets/localization/example/ParameterizedMessageService.cs":::
 
 In the preceding C# code:
 
 - A `IStringLocalizer _localizer` field is declared.
-- The constructor takes an `IStringLocalizerFactory` parameter, which is used to create an `IStringLocalizer` from the `ParameterizedMessageService` type, and assigns it to the `_localizer` field.
+- The primary constructor takes an `IStringLocalizerFactory` parameter, which is used to create an `IStringLocalizer` from the `ParameterizedMessageService` type, and assigns it to the `_localizer` field.
 - The `GetFormattedMessage` method invokes <xref:Microsoft.Extensions.Localization.IStringLocalizer.Item(System.String,System.Object[])?displayProperty=nameWithType>, passing `"DinnerPriceFormat"`, a `dateTime` object, and `dinnerPrice` as arguments.
 
 > [!IMPORTANT]
@@ -155,7 +155,7 @@ In the preceding C# code:
 - The <xref:Microsoft.Extensions.Localization.RootNamespaceAttribute> sets `"Localization.Example"` as the root namespace.
 - The <xref:System.Console.OutputEncoding?displayProperty=nameWithType> is assigned to <xref:System.Text.Encoding.Unicode?displayProperty=nameWithType>.
 - When a single argument is passed to `args`, the <xref:System.Globalization.CultureInfo.CurrentCulture?displayProperty=nameWithType> and <xref:System.Globalization.CultureInfo.CurrentUICulture?displayProperty=nameWithType> are assigned the result of <xref:System.Globalization.CultureInfo.GetCultureInfo(System.String)?displayProperty=nameWithType> given the `arg[0]`.
-- The <xref:Microsoft.Extensions.Hosting.Host> is created with [defaults](generic-host.md#default-builder-settings).
+- The <xref:Microsoft.Extensions.Hosting.Host> is created with [defaults](generic-host.md#host-builder-settings).
 - The localization services, `MessageService`, and `ParameterizedMessageService` are registered to the `IServiceCollection` for DI.
 - To remove noise, logging is configured to ignore any log level lower than a warning.
 - The `MessageService` is resolved from the `IServiceProvider` instance and its resulting message is logged.
@@ -203,7 +203,7 @@ warn: Localization.Example[0]
       U utorak, 03. avgust 2021. moja večera je koštala 37,63 ¤.
 ```
 
-When omitting an argument to the [.NET CLI to run](../tools/dotnet-run.md) the project, the default system culture is used &mdash; in this case `"en-US"`:
+When omitting an argument to the [.NET CLI to run](../tools/dotnet-run.md) the project, the default system culture is used&mdash;in this case `"en-US"`:
 
 ```dotnetcli
 dotnet run --project .\example\example.csproj

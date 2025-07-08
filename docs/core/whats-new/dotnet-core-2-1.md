@@ -1,7 +1,7 @@
 ---
 title: What's new in .NET Core 2.1
 description: Learn about the new features found in .NET Core 2.1.
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
 ms.date: 10/10/2018
@@ -46,7 +46,7 @@ A number of tools that were available only on a per project basis using `DotnetC
    ```
 
    Note the `--` option that precedes the `--verbose` option. It delimits the options passed directly to the `dotnet watch` command from the arguments that are passed to the child `dotnet` process. Without it, the `--verbose` option applies to the `dotnet watch` command, not the `dotnet build` command.
-  
+
    For more information, see [Develop ASP.NET Core apps using dotnet watch](/aspnet/core/tutorials/dotnet-watch).
 
 - `dotnet dev-certs` generates and manages certificates used during development in ASP.NET Core applications.
@@ -106,7 +106,7 @@ You can modify this setting in any of three ways:
    "rollForwardOnNoCandidateFx" : 0
    ```
 
-- When using the [.NET Core CLI](../tools/index.md), add the following option with the desired value to a .NET Core command such as `run`:
+- When using the [.NET CLI](../tools/index.md), add the following option with the desired value to a .NET command such as `run`:
 
    ```dotnetcli
    dotnet run --rollForwardOnNoCandidateFx=0
@@ -140,7 +140,7 @@ One of the important tasks performed by the JIT compiler is optimizing code exec
 
 - A **second tier**, which generates optimized code for those methods that are executed frequently. The second tier of compilation is performed in parallel for enhanced performance.
 
-You can opt into tiered compilation in either of two ways.
+You can opt in to tiered compilation in either of two ways.
 
 - To use tiered compilation in all projects that use the .NET Core 2.1 SDK, set the following environment variable:
 

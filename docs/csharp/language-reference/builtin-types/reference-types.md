@@ -1,5 +1,5 @@
 ---
-title: "Built-in reference types - C# reference"
+title: "Built-in reference types"
 description: "Learn about reference types that have C# keywords you can use to declare them."
 ms.date: 08/16/2022
 f1_keywords: 
@@ -28,7 +28,7 @@ C# has many built-in reference types. They have keywords or operators that are s
 
 ## The object type
 
-The `object` type is an alias for <xref:System.Object?displayProperty=nameWithType> in .NET. In the unified type system of C#, all types, predefined and user-defined, reference types and value types, inherit directly or indirectly from <xref:System.Object?displayProperty=nameWithType>. You can assign values of any type to variables of type `object`. Any `object` variable can be assigned to its default value using the literal `null`. When a variable of a value type is converted to object, it's said to be *boxed*. When a variable of type `object` is converted to a value type, it's said to be *unboxed*. For more information, see [Boxing and Unboxing](../../programming-guide/types/boxing-and-unboxing.md).
+The `object` type is an alias for <xref:System.Object?displayProperty=nameWithType> in .NET. In the unified type system of C#, all types, predefined and user-defined, reference types and value types, inherit directly or indirectly from <xref:System.Object?displayProperty=nameWithType>. You can assign values of any type (except `ref struct`, see [ref struct](ref-struct.md)) to variables of type `object`. Any `object` variable can be assigned to its default value using the literal `null`. When a variable of a value type is converted to object, it's said to be *boxed*. When a variable of type `object` is converted to a value type, it's said to be *unboxed*. For more information, see [Boxing and Unboxing](../../programming-guide/types/boxing-and-unboxing.md).
 
 ## The string type
 
@@ -239,7 +239,7 @@ Action<string> wrappedObjectAction = new Action<string>(objectAction);
 Action<string> combination = stringAction + wrappedObjectAction;
 ```
 
-Beginning with C# 9, you can declare [*function pointers*](../unsafe-code.md#function-pointers), which use similar syntax. A function pointer uses the `calli` instruction instead of instantiating a delegate type and calling the virtual `Invoke` method.
+You can declare [*function pointers*](../unsafe-code.md#function-pointers), which use similar syntax. A function pointer uses the `calli` instruction instead of instantiating a delegate type and calling the virtual `Invoke` method.
 
 ## The dynamic type
 
@@ -284,7 +284,6 @@ For more information, see the following sections of the [C# language specificati
 
 ### See also
 
-- [C# Reference](../index.md)
 - [C# Keywords](../keywords/index.md)
 - [Events](../../programming-guide/events/index.md)
 - [Using Type dynamic](../../advanced-topics/interop/using-type-dynamic.md)

@@ -3,20 +3,15 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CustomProvider.Example.Providers;
 
-public class EntityConfigurationContext : DbContext
+public sealed class EntityConfigurationContext(string? connectionString) : DbContext
 {
-    private readonly string _connectionString;
-
     public DbSet<Settings> Settings => Set<Settings>();
-
-    public EntityConfigurationContext(string? connectionString) =>
-        _connectionString = connectionString ?? "";
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        _ = _connectionString switch
+        _ = connectionString switch
         {
-            { Length: > 0 } => optionsBuilder.UseSqlServer(_connectionString),
+            { Length: > 0 } => optionsBuilder.UseSqlServer(connectionString),
             _ => optionsBuilder.UseInMemoryDatabase("InMemoryDatabase")
         };
     }

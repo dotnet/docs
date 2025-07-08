@@ -1,6 +1,6 @@
 ---
 description: "sealed modifier - C# Reference"
-title: "sealed modifier - C# Reference"
+title: "sealed modifier"
 ms.date: 07/20/2015
 f1_keywords: 
   - "sealed"
@@ -27,6 +27,11 @@ In the following example, `Z` inherits from `Y` but `Z` cannot override the virt
 [!code-csharp[csrefKeywordsModifiers#16](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsModifiers/CS/csrefKeywordsModifiers.cs#16)]
 
 When you define new methods or properties in a class, you can prevent deriving classes from overriding them by not declaring them as [virtual](virtual.md).
+When you override a `virtual` member declared in a base type, you can prevent deriving types from overriding them by using sealed keyword as in the following example:
+
+```
+public sealed override string ToString() => Value;
+```
 
 It is an error to use the [abstract](abstract.md) modifier with a sealed class, because an abstract class must be inherited by a class that provides an implementation of the abstract methods or properties.
 
@@ -62,8 +67,6 @@ To determine whether to seal a class, method, or property, you should generally 
 
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
 - [Static Classes and Static Class Members](../../programming-guide/classes-and-structs/static-classes-and-static-class-members.md)
 - [Abstract and Sealed Classes and Class Members](../../programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members.md)

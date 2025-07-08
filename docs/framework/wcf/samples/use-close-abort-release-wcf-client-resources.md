@@ -68,7 +68,7 @@ catch (Exception e)
 ```
 
 > [!NOTE]
-> The using statement and ServiceHost: Many self-hosting applications do little more than host a service, and ServiceHost.Close rarely throws an exception, so such applications can safely use the using statement with ServiceHost. However, be aware that ServiceHost.Close can throw a `CommunicationException`, so if your application continues after closing the ServiceHost, you should avoid the using statement and follow the pattern previously given.
+> The `using` statement and `ServiceHost`: Many self-hosting applications do little more than host a service, and `ServiceHost.Close` rarely throws an exception, so such applications can safely use the `using` statement with `ServiceHost`. However, be aware that `ServiceHost.Close` can throw a `CommunicationException`, so if your application continues after closing the `ServiceHost`, you should avoid the `using` statement and follow the pattern previously given.
 
 When you run the sample, the operation responses and exceptions are displayed in the client console window.
 

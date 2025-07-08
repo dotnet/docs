@@ -25,9 +25,6 @@ Demonstrates how to implement a custom token authenticator.
  [Token Provider](token-provider.md)
 Demonstrates how to implement a custom token provider.
 
- [User Name Password Validator](user-name-password-validator.md)
-Demonstrates how to implement a custom UserNamePassword Validator.
-
  [X.509 Certificate Validator](x-509-certificate-validator.md)
 Demonstrates how to implement a custom X.509 Certificate Validator.
 

@@ -27,8 +27,10 @@ Where lists appear in F# Interactive option arguments, list elements are separat
 |------|-----------|
 |**--**|Used to instruct F# Interactive to treat remaining arguments as command-line arguments to the F# program or script, which you can access in code by using the list **fsi.CommandLineArgs**.|
 |**--checked**[**+**&#124;**-**]|Same as the **fsc.exe** compiler option. For more information, see [Compiler Options](compiler-options.md).|
+|**--checknulls**[**+**&#124;**-**]|Same as the **fsc.exe** compiler option. For more information, see [Compiler Options](compiler-options.md).|
 |**--codepage:&lt;int&gt;**|Same as the **fsc.exe** compiler option. For more information, see [Compiler Options](compiler-options.md).|
 |**--consolecolors**[**+**&#124;**-**]|Outputs warning and error messages in color.|
+|**--compilertool:&lt;extensionsfolder&gt;|Reference an assembly or directory containing a design time tool (Short form: -t).|
 |**--crossoptimize**[**+**&#124;**-**]|Enable or disable cross-module optimizations.|
 |**--debug**[**+**&#124;**-**]<br /><br />**--debug:**[**full**&#124;**pdbonly**&#124;**portable**&#124;**embedded**]<br /><br />**-g**[**+**&#124;**-**]<br /><br />**-g:**[**full**&#124;**pdbonly**&#124;**portable**&#124;**embedded**]|Same as the **fsc.exe** compiler option. For more information, see [Compiler Options](compiler-options.md).|
 |**--define:&lt;string&gt;**|Same as the **fsc.exe** compiler option. For more information, see [Compiler Options](compiler-options.md).|

@@ -82,7 +82,7 @@ Enables you to tune native image assemblies using common end-user scenarios. Mpg
 Improves the performance of managed applications through the use of native images (files containing compiled processor-specific machine code). The runtime can use native images from the cache instead of using the just-in-time (JIT) compiler to compile the original assembly.
 
 [Peverify.exe (PEVerify Tool)](peverify-exe-peverify-tool.md)\
-Helps you verify whether your Microsoft intermediate language (MSIL) code and associated metadata meet type safety requirements.
+Helps you verify whether your common intermediate language (CIL) code and associated metadata meet type safety requirements.
 
 [Regasm.exe (Assembly Registration Tool)](regasm-exe-assembly-registration-tool.md)\
 Reads the metadata within an assembly and adds the necessary entries to the registry. This enables COM clients to appear as .NET Framework classes.

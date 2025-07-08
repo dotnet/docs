@@ -1,35 +1,32 @@
 ---
 title: 'Quickstart: Build your first Orleans app with ASP.NET Core'
 description: Learn how to use Orleans to build a scalable, distributed ASP.NET Core application
-author: alexwolfmsft
-ms.author: alexwolf
-ms.date: 06/15/2023
+ms.date: 08/14/2024
 ms.topic: quickstart
 ms.devlang: csharp
 ---
 
 # Quickstart: Build your first Orleans app with ASP.NET Core
 
-In this quickstart, you use Orleans and ASP.NET Core 7.0 Minimal APIs to build a URL shortener app. Users submit a full URL to the app's `/shorten` endpoint and get a shortened version to share with others, who are redirected to the original site. The app uses Orleans grains and silos to manage state in a distributed manner to allow for scalability and resiliency. These features are critical when developing apps for distributed cloud hosting services like Azure Container Apps and platforms like Kubernetes.
+In this quickstart, you use Orleans and ASP.NET Core 8.0 Minimal APIs to build a URL shortener app. Users submit a full URL to the app's `/shorten` endpoint and get a shortened version to share with others, who are redirected to the original site. The app uses Orleans grains and silos to manage state in a distributed manner to allow for scalability and resiliency. These features are critical when developing apps for distributed cloud hosting services like Azure Container Apps and platforms like Kubernetes.
 
 At the end of the quickstart, you have an app that creates and handles redirects using short, friendly URLs. You learn how to:
 
-* Add Orleans to an ASP.NET Core app
-* Work with grains and silos
-* Configure state management
-* Integrate Orleans with API endpoints
+- Add Orleans to an ASP.NET Core app
+- Work with grains and silos
+- Configure state management
+- Integrate Orleans with API endpoints
 
 ## Prerequisites
 
 # [Visual Studio](#tab/visual-studio)
 
-- [.NET 7.0 SDK](https://dotnet.microsoft.com/download)
+- [.NET 8.0 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
 - [Visual Studio 2022](https://visualstudio.microsoft.com/) with the ASP.NET and web development workload
 
 # [Visual Studio Code](#tab/visual-studio-code)
 
-- [.NET 7.0 SDK](https://dotnet.microsoft.com/download)
-- [Visual Studio Code](https://code.visualstudio.com/)
+[!INCLUDE [Prerequisites](../../../includes/prerequisites-basic.md)]
 
 ---
 
@@ -43,25 +40,27 @@ At the end of the quickstart, you have an app that creates and handles redirects
 
 1. On the **Configure your new project** dialog, enter `OrleansURLShortener` for **Project name**, and then select **Next**.
 
-1. On the **Additional information** dialog, select **.NET 7.0 (Standard support)** and uncheck **Use controllers**, and then select **Create**.
+1. On the **Additional information** dialog, select **.NET 8.0 (Long Term Support)** and uncheck **Use controllers**, and then select **Create**.
 
 # [Visual Studio Code](#tab/visual-studio-code)
 
 1. Inside Visual Studio Code, open the [integrated terminal](https://code.visualstudio.com/docs/editor/integrated-terminal).
 
-1. Change directories (`cd`) directory that will contain the project.
+1. Change to the directory (`cd`) that will contain the project.
 1. Run the following commands:
 
    ```dotnetcli
-   dotnet new webapp -o OrleansURLShortener
+   dotnet new webapi -o OrleansURLShortener
    code -r OrleansURLShortener
    ```
 
    The `dotnet new` command creates a new Minimal API project in the *OrleansURLShortener* folder. The `code` command opens the *OrleansURLShortener* folder in the current instance of Visual Studio Code.
 
-   Visual Studio Code displays a dialog box that asks **Do you trust the authors of the files in this folder**.  Select:
-    * The checkbox **trust the authors of all files in the parent folder**
-    * **Yes, I trust the authors** (because dotnet generated the files).
+   Visual Studio Code displays a dialog box that asks **Do you trust the authors of the files in this folder**.
+   Select:
+
+   - The checkbox **trust the authors of all files in the parent folder**
+   - **Yes, I trust the authors** (because dotnet generated the files).
 
 ---
 
@@ -81,6 +80,12 @@ In the Visual Studio Code terminal, run the following command:
 
 ```dotnetcli
 dotnet add package Microsoft.Orleans.Server
+```
+
+Or, in .NET 10+:
+
+```dotnetcli
+dotnet package add Microsoft.Orleans.Server
 ```
 
 ---
@@ -111,11 +116,11 @@ At the top of the _Program.cs_ file, refactor the code to use Orleans. The follo
 
 [Grains](../overview.md) are the most essential primitives and building blocks of Orleans applications. A grain is a class that inherits from the <xref:Orleans.Grain> base class, which manages various internal behaviors and integration points with Orleans. Grains should also implement one of the following interfaces to define their grain key identifier. Each of these interfaces defines a similar contract, but marks your class with a different data type for the identifier that Orleans uses to track the grain, such as a string or integer.
 
-- `IGrainWithGuidKey`
-- `IGrainWithIntegerKey`
-- `IGrainWithStringKey`
-- `IGrainWithGuidCompoundKey`
-- `IGrainWithIntegerCompoundKey`
+- <xref:Orleans.IGrainWithGuidKey>
+- <xref:Orleans.IGrainWithIntegerKey>
+- <xref:Orleans.IGrainWithStringKey>
+- <xref:Orleans.IGrainWithGuidCompoundKey>
+- <xref:Orleans.IGrainWithIntegerCompoundKey>
 
 For this quickstart, you use the `IGrainWithStringKey`, since strings are a logical choice for working with URL values and short codes.
 

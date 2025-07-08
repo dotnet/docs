@@ -8,6 +8,8 @@ ms.assetid: 4fe17546-d56e-4344-a930-6d8e4a545914
 ---
 # How to debug CLR activation issues
 
+[!INCLUDE [net-framework-specific](../includes/net-framework-specific.md)]
+
 If you encounter problems in getting your application to run with the correct version of the common language runtime (CLR), you can view and debug CLR activation logs. These logs can be very useful in determining the root cause of an activation issue, when your application either loads a different CLR version than expected or doesn't load the CLR at all. The [.NET Framework Initialization Errors: Managing the User Experience](initialization-errors-managing-the-user-experience.md) discusses the experience when no CLR is found for an application.
 
 CLR activation logging can be enabled system-wide by using an HKEY_LOCAL_MACHINE registry key or a system environment variable. The log will be generated until the registry entry or the environment variable is removed. Alternatively, you can use a user or process-local environment variable to enable logging with a different scope and duration.

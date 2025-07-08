@@ -11,11 +11,8 @@ ms.custom: mvc, mlnet-tooling
 
 # Tutorial: Predict prices using regression with Model Builder
 
-Learn how to use ML.NET Model Builder to build a regression model to predict prices.  The .NET console app that you develop in this tutorial predicts taxi fares based on historical New York taxi fare data.
+In this tutorial, you learn how to use ML.NET Model Builder to build a regression model to predict prices. The .NET console app that you develop in this tutorial predicts taxi fares based on historical New York taxi fare data.
 
-The Model Builder price prediction template can be used for any scenario requiring a numerical prediction value. Example scenarios include: house price prediction, demand prediction, and sales forecasting.
-
-In this tutorial, you learn how to:
 > [!div class="checklist"]
 >
 > - Prepare and understand the data
@@ -26,13 +23,15 @@ In this tutorial, you learn how to:
 > - Evaluate the model
 > - Use the model for predictions
 
-## Pre-requisites
+The Model Builder price prediction template can be used for any scenario requiring a numerical prediction value. Example scenarios include: house price prediction, demand prediction, and sales forecasting.
 
-For a list of pre-requisites and installation instructions, visit the [Model Builder installation guide](../how-to-guides/install-model-builder.md).
+## Prerequisites
+
+For a list of prerequisites and installation instructions, visit the [Model Builder installation guide](../how-to-guides/install-model-builder.md).
 
 ## Create a console application
 
-1. Create a **C# .NET Core Console Application** called "TaxiFarePrediction". Make sure **Place solution and project in the same directory** is **unchecked** (VS 2019).
+Create a **C# Console Application** called "TaxiFarePrediction". Make sure **Place solution and project in the same directory** is **unchecked**.
 
 ## Prepare and understand the data
 
@@ -64,11 +63,11 @@ Each row in the `taxi-fare-train.csv` data set contains details of trips made by
 
 The `label` is the column you want to predict. When performing a regression task, the goal is to predict a numerical value. In this price prediction scenario, the cost of a taxi ride is being predicted. Therefore, the **fare_amount** is the label. The identified `features` are the inputs you give the model to predict the `label`. In this case, the rest of the columns with the exception of **trip_time_in_secs** are used as features or inputs to predict the fare amount.
 
-## Create Model Builder Config File
+## Create Model Builder config file
 
 When first adding Model Builder to the solution it will prompt you to create an `mbconfig` file. The `mbconfig` file keeps track of everything you do in Model Builder to allow you to reopen the session.
 
-1. In **Solution Explorer**, right-click the *TaxiFarePrediction* project, and select **Add** > **Machine Learning Model...**.
+1. In **Solution Explorer**, right-click the *TaxiFarePrediction* project, and select **Add** > **Machine Learning Model**.
 1. Name the `mbconfig` project **TaxiFarePrediction**, and click the **Add** button.
 
 ## Choose a scenario
@@ -136,7 +135,7 @@ This step will have project templates that you can use to consume the model. Thi
 - Console App
 - Web API
 
-### Console App
+### Console app
 
 When adding a console app to your solution, you will be prompted to name the project.
 
@@ -179,19 +178,7 @@ When adding a web API to your solution, you will be prompted to name the project
     15.020833
     ```
 
-## Next Steps
-
-In this tutorial, you learned how to:
-> [!div class="checklist"]
->
-> - Prepare and understand the data
-> - Choose a scenario
-> - Load the data
-> - Train the model
-> - Evaluate the model
-> - Use the model for predictions
-
-### Additional Resources
+## Related content
 
 To learn more about topics mentioned in this tutorial, visit the following resources:
 

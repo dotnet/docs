@@ -1,0 +1,59 @@
+### YamlMime:Landing
+
+title: "C# language reference"
+summary: "The language reference provides an informal reference to C# syntax and idioms for beginners and experienced C# and .NET developers."
+
+metadata:
+  title: "C# language reference"
+  description: "Read C# reference material - The language reference provides an informal reference to C# syntax and idioms for beginners and experienced C# / .NET developers."
+  ms.topic: landing-page # Required
+  ms.date: 04/05/2024
+
+landingContent:
+  - title: "C# language reference"
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: C# language strategy
+            url: ../tour-of-csharp/strategy.md
+      - linkListType: reference
+        links:
+          - text: "C# keywords"
+            url: ../language-reference/keywords/index.md
+          - text: "C# operators and expressions"
+            url: ../language-reference/operators/index.md
+          - text: Configure language version
+            url: ../language-reference/configure-language-version.md
+          - text: "C# language specification - C# 8 draft in progress"
+            url: ../specification/index.yml
+
+  - title: "What's new"
+    linkLists:
+      - linkListType: whats-new
+        links:
+          - text: "What's new in C# 14"
+            url: ../whats-new/csharp-14.md
+          - text: "What's new in C# 13"
+            url: ../whats-new/csharp-13.md
+          - text: "What's new in C# 12"
+            url: ../whats-new/csharp-12.md
+          - text: "What's new in C# 11"
+            url: ../whats-new/csharp-11.md
+      - linkListType: reference
+        links:
+          - text: Breaking changes in the C# compiler
+            url: ../whats-new/breaking-changes.md
+          - text: Version compatibility
+            url: ../whats-new/version-update-considerations.md
+
+
+  - title: "Stay in touch"
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: ".NET developer community"
+            url: https://dotnet.microsoft.com/platform/community
+          - text: "YouTube"
+            url: https://www.youtube.com/dotnet
+          - text: "Twitter"
+            url: https://twitter.com/DotNet

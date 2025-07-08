@@ -13,6 +13,8 @@ ms.assetid: 07ea8438-7a34-49f0-a7e8-3d6ff7e4a482
 ---
 # How to: Configure an Application Domain
 
+[!INCLUDE [net-framework-specific](../includes/net-framework-specific.md)]
+
 You can provide the common language runtime with configuration information for a new application domain using the <xref:System.AppDomainSetup> class. When creating your own application domains, the most important property is <xref:System.AppDomainSetup.ApplicationBase%2A>. The other **AppDomainSetup** properties are used mainly by runtime hosts to configure a particular application domain.
 
  The **ApplicationBase** property defines the root directory of the application. When the runtime needs to satisfy a type request, it probes for the assembly containing the type in the directory specified by the **ApplicationBase** property.

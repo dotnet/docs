@@ -6,12 +6,6 @@ Imports System.Xml
 Imports System.Data.SqlTypes
 
 Module Module1
-    Sub Main()
-        Dim c As String = "Data Source=(local);Integrated Security=true;" & _
-          "Initial Catalog=AdventureWorks"
-        GetXmlData(c)
-        Console.ReadLine()
-    End Sub
 
     ' <Snippet1>
     ' Example assumes the following directives:
@@ -23,10 +17,10 @@ Module Module1
         Using connection As SqlConnection = New SqlConnection(connectionString)
             connection.Open()
 
-            'The query includes two specific customers for simplicity's 
+            'The query includes two specific customers for simplicity's
             'sake. A more realistic approach would use a parameter
             'for the CustomerID criteria. The example selects two rows
-            'in order to demonstrate reading first from one row to 
+            'in order to demonstrate reading first from one row to
             'another, then from one node to another within the xml
             'column.
             Dim commandText As String = _
@@ -38,11 +32,11 @@ Module Module1
             Dim salesReaderData As SqlDataReader = commandSales.ExecuteReader()
 
             ' Multiple rows are returned by the SELECT, so each row
-            ' is read and an XmlReader (an xml data type) is set to the 
+            ' is read and an XmlReader (an xml data type) is set to the
             ' value of its first (and only) column.
             Dim countRow As Integer = 1
             While salesReaderData.Read()
-                ' Must use GetSqlXml here to get a SqlXml type. 
+                ' Must use GetSqlXml here to get a SqlXml type.
                 ' GetValue returns a string instead of SqlXml.
                 Dim salesXML As SqlXml = _
                  salesReaderData.GetSqlXml(0)
@@ -54,7 +48,7 @@ Module Module1
                 salesReaderXml.MoveToContent()
 
                 ' We know each node type is either Element or Text.
-                ' All elements within the root are string values. 
+                ' All elements within the root are string values.
                 ' For this simple example, no elements
                 ' are empty.
                 While salesReaderXml.Read()

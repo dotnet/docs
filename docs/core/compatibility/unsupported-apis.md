@@ -2,7 +2,7 @@
 title: Unsupported APIs on .NET Core and .NET 5+
 titleSuffix: ""
 description: Learn which .NET APIs always throw an exception on .NET Core and .NET 5 and later versions.
-ms.date: 08/22/2023
+ms.date: 11/22/2024
 ---
 # APIs that always throw exceptions on .NET Core and .NET 5+
 
@@ -17,9 +17,9 @@ This article organizes the affected APIs by namespace.
 
 ## System
 
-| Member | Platforms that throw |
-| - | - |
-| <xref:System.AppDomain.CreateDomain%2A?displayProperty=nameWithType> | All |
+| Member                                                               | Platforms that throw |
+|----------------------------------------------------------------------|----------------------|
+| <xref:System.AppDomain.CreateDomain%2A?displayProperty=nameWithType> | All                  |
 | <xref:System.AppDomain.ExecuteAssembly(System.String,System.String[],System.Byte[],System.Configuration.Assemblies.AssemblyHashAlgorithm)?displayProperty=nameWithType> | All |
 | <xref:System.AppDomain.Unload(System.AppDomain)?displayProperty=nameWithType> | All |
 | <xref:System.Console.CapsLock?displayProperty=nameWithType> | Linux and macOS |
@@ -34,7 +34,7 @@ This article organizes the affected APIs by namespace.
 ## System.CodeDom.Compiler
 
 | Member | Platforms that throw |
-| - | - |
+|--------|----------------------|
 | <xref:System.CodeDom.Compiler.CodeDomProvider.CompileAssemblyFromDom%2A?displayProperty=nameWithType> | All |
 | <xref:System.CodeDom.Compiler.CodeDomProvider.CompileAssemblyFromFile%2A?displayProperty=nameWithType> | All |
 | <xref:System.CodeDom.Compiler.CodeDomProvider.CompileAssemblyFromSource%2A?displayProperty=nameWithType> | All |
@@ -42,7 +42,7 @@ This article organizes the affected APIs by namespace.
 ## System.Collections.Specialized
 
 | Member | Platforms that throw |
-| - | - |
+|--------|----------------------|
 | <xref:System.Collections.Specialized.NameObjectCollectionBase.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)> | All |
 | <xref:System.Collections.Specialized.NameObjectCollectionBase.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=nameWithType> | All |
 | <xref:System.Collections.Specialized.NameObjectCollectionBase.OnDeserialization(System.Object)?displayProperty=nameWithType> | All |
@@ -50,13 +50,13 @@ This article organizes the affected APIs by namespace.
 ## System.Configuration
 
 | Member | Platforms that throw |
-| - | - |
+|--------|----------------------|
 | <xref:System.Configuration.RsaProtectedConfigurationProvider?displayProperty=nameWithType> (all members) | All |
 
 ## System.Console
 
 | Member | Platforms that throw |
-| - | - |
+|--------|----------------------|
 | <xref:System.Console.Beep?displayProperty=nameWithType> | Linux and macOS |
 | <xref:System.Console.BufferHeight?displayProperty=nameWithType> (set only) | Linux and macOS |
 | <xref:System.Console.BufferWidth?displayProperty=nameWithType> (set only) | Linux and macOS |
@@ -74,13 +74,13 @@ This article organizes the affected APIs by namespace.
 ## System.Data.Common
 
 | Member | Platforms that throw |
-| - | - |
+|--------|----------------------|
 | <xref:System.Data.Common.DbDataReader.GetSchemaTable%2A?displayProperty=nameWithType> (throws <xref:System.NotSupportedException>) | All |
 
 ## System.Diagnostics.Process
 
 | Member | Platforms that throw |
-| - | - |
+|--------|----------------------|
 | <xref:System.Diagnostics.Process.MaxWorkingSet?displayProperty=nameWithType> (set only) | Linux |
 | <xref:System.Diagnostics.Process.MinWorkingSet?displayProperty=nameWithType> (set only) | Linux |
 | <xref:System.Diagnostics.Process.ProcessorAffinity?displayProperty=nameWithType> | macOS |
@@ -98,14 +98,14 @@ This article organizes the affected APIs by namespace.
 ## System.IO
 
 | Member | Platforms that throw |
-| - | - |
+|--------|----------------------|
 | <xref:System.IO.FileSystemInfo.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)> | All |
 | <xref:System.IO.FileSystemInfo.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=nameWithType> | All |
 
 ## System.IO.Pipes
 
 | Member | Platforms that throw |
-| - | - |
+|--------|----------------------|
 | <xref:System.IO.Pipes.NamedPipeClientStream.NumberOfServerInstances?displayProperty=nameWithType> | Linux and macOS |
 | <xref:System.IO.Pipes.NamedPipeServerStream.GetImpersonationUserName?displayProperty=nameWithType> | Linux and macOS |
 | <xref:System.IO.Pipes.PipeStream.InBufferSize?displayProperty=nameWithType> | Linux and macOS |
@@ -116,13 +116,14 @@ This article organizes the affected APIs by namespace.
 ## System.Media
 
 | Member | Platforms that throw |
-| - | - |
+|--------|----------------------|
 | <xref:System.Media.SoundPlayer.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)> | All |
 
 ## System.Net
 
-| Member | Platforms that throw |
-| - | - |
+| Member                                                            | Platforms that throw |
+|-------------------------------------------------------------------|----------------------|
+| <xref:System.Net.AuthenticationManager?displayProperty=fullName>\* | All                  |
 | <xref:System.Net.AuthenticationManager.Authenticate(System.String,System.Net.WebRequest,System.Net.ICredentials)?displayProperty=nameWithType> | All |
 | <xref:System.Net.AuthenticationManager.PreAuthenticate(System.Net.WebRequest,System.Net.ICredentials)?displayProperty=nameWithType> | All |
 | <xref:System.Net.FileWebRequest.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)> | All |
@@ -141,31 +142,34 @@ This article organizes the affected APIs by namespace.
 | <xref:System.Net.WebResponse.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)> | All |
 | <xref:System.Net.WebResponse.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=nameWithType> | All |
 
+\* .NET 9 and later versions.
+
 ## System.Net.NetworkInformation
 
 | Member | Platforms that throw |
-| - | - |
+|--------|----------------------|
 | <xref:System.Net.NetworkInformation.Ping.Send%2A?displayProperty=nameWithType> | Windows (UWP) |
 
 ## System.Net.Sockets
 
 | Member | Platforms that throw |
-| - | - |
+|--------|----------------------|
 | <xref:System.Net.Sockets.Socket.%23ctor(System.Net.Sockets.SocketInformation)> | All |
 | <xref:System.Net.Sockets.Socket.DuplicateAndClose(System.Int32)?displayProperty=nameWithType> | All |
 
 ## System.Net.WebSockets
 
 | Member | Platforms that throw |
-| - | - |
+|--------|----------------------|
 | <xref:System.Net.WebSockets.WebSocket.RegisterPrefixes?displayProperty=nameWithType> | All |
 
 ## System.Reflection
 
 | Member | Platforms that throw |
-| - | - |
+|--------|----------------------|
 | <xref:System.Reflection.Assembly.CodeBase?displayProperty=nameWithType> | All |
 | <xref:System.Reflection.Assembly.EscapedCodeBase?displayProperty=nameWithType> | All |
+| <xref:System.Reflection.Assembly.LoadFrom(System.String,System.Byte[],System.Configuration.Assemblies.AssemblyHashAlgorithm)?displayProperty=nameWithType> | All |
 | <xref:System.Reflection.Assembly.ReflectionOnlyLoad%2A?displayProperty=nameWithType> | All |
 | <xref:System.Reflection.Assembly.ReflectionOnlyLoadFrom(System.String)?displayProperty=nameWithType> | All |
 | <xref:System.Reflection.AssemblyName.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=nameWithType> | All |
@@ -177,13 +181,13 @@ This article organizes the affected APIs by namespace.
 ## System.Runtime.CompilerServices
 
 | Member | Platforms that throw |
-| - | - |
+|--------|----------------------|
 | <xref:System.Runtime.CompilerServices.DebugInfoGenerator.CreatePdbGenerator?displayProperty=nameWithType> | All |
 
 ## System.Runtime.InteropServices
 
 | Member | Platforms that throw |
-| - | - |
+|--------|----------------------|
 | <xref:System.Runtime.InteropServices.IDispatchImplAttribute> | All |
 | <xref:System.Runtime.InteropServices.Marshal.GetIDispatchForObject(System.Object)?displayProperty=nameWithType> | All |
 | <xref:System.Runtime.InteropServices.RuntimeEnvironment.SystemConfigurationFile?displayProperty=nameWithType> | All |
@@ -196,17 +200,19 @@ This article organizes the affected APIs by namespace.
 ## System.Runtime.Serialization
 
 | Member | Platforms that throw |
-| - | - |
-| <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Serialize(System.IO.Stream,System.Object)?displayProperty=fullName>* | All |
-| <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize(System.IO.Stream)?displayProperty=nameWithType>* | All |
+|--------|----------------------|
+| <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Serialize(System.IO.Stream,System.Object)?displayProperty=fullName>\* | All |
+| <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Serialize(System.IO.Stream,System.Object)?displayProperty=fullName>† | All |
+| <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize(System.IO.Stream)?displayProperty=nameWithType>† | All |
 | <xref:System.Runtime.Serialization.XsdDataContractExporter.Schemas?displayProperty=nameWithType> | All |
 
-\* .NET 8 and later versions only for all project types except Windows Forms and WPF.
+\* .NET 9 and later versions.
+† .NET 8 only for all project types except Windows Forms and WPF.
 
 ## System.Security
 
 | Member | Platforms that throw |
-| - | - |
+|--------|----------------------|
 | <xref:System.Security.CodeAccessPermission.Deny?displayProperty=nameWithType> | All |
 | <xref:System.Security.CodeAccessPermission.PermitOnly?displayProperty=nameWithType> | All |
 | <xref:System.Security.PermissionSet.ConvertPermissionSet(System.String,System.Byte[],System.String)?displayProperty=nameWithType> | All |
@@ -225,7 +231,7 @@ This article organizes the affected APIs by namespace.
 ## System.Security.Claims
 
 | Member | Platforms that throw |
-| - | - |
+|--------|----------------------|
 | <xref:System.Security.Claims.ClaimsPrincipal.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)> | All |
 | <xref:System.Security.Claims.ClaimsPrincipal.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=nameWithType> | All |
 | <xref:System.Security.Claims.ClaimsIdentity.%23ctor(System.Runtime.Serialization.SerializationInfo)> | All |
@@ -235,7 +241,7 @@ This article organizes the affected APIs by namespace.
 ## System.Security.Cryptography
 
 | Member | Platforms that throw |
-| - | - |
+|--------|----------------------|
 | <xref:System.Security.Cryptography.AsymmetricAlgorithm.Create(System.String)?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.CngAlgorithm?displayProperty=nameWithType> | Linux and macOS |
 | <xref:System.Security.Cryptography.CngAlgorithmGroup?displayProperty=nameWithType> | Linux and macOS |
@@ -288,14 +294,14 @@ This article organizes the affected APIs by namespace.
 ## System.Security.Cryptography.Pkcs
 
 | Member | Platforms that throw |
-| - | - |
+|--------|----------------------|
 | <xref:System.Security.Cryptography.Pkcs.CmsSigner.%23ctor(System.Security.Cryptography.CspParameters)> | All |
 | <xref:System.Security.Cryptography.Pkcs.SignerInfo.ComputeCounterSignature?displayProperty=nameWithType> | All |
 
 ## System.Security.Cryptography.X509Certificates
 
 | Member | Platforms that throw |
-| - | - |
+|--------|----------------------|
 | <xref:System.Security.Cryptography.X509Certificates.X509Certificate.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)> | All |
 | <xref:System.Security.Cryptography.X509Certificates.X509Certificate.Import%2A?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.X509Certificates.X509Certificate2.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)> | All |
@@ -304,31 +310,31 @@ This article organizes the affected APIs by namespace.
 ## System.Security.Authentication.ExtendedProtection
 
 | Member | Platforms that throw |
-| - | - |
+|--------|----------------------|
 | <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)> | All |
 
 ## System.Security.Policy
 
 | Member | Platforms that throw |
-| - | - |
+|--------|----------------------|
 | <xref:System.Security.Policy.Hash.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=nameWithType> | All |
 
 ## System.ServiceProcess.ServiceController
 
 | Member | Platforms that throw |
-| - | - |
+|--------|----------------------|
 | <xref:System.ServiceProcess.TimeoutException.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)> | All |
 
 ## System.Text.RegularExpressions
 
 | Member | Platforms that throw |
-| - | - |
+|--------|----------------------|
 | <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%2A?displayProperty=nameWithType> | All |
 
 ## System.Threading
 
 | Member | Platforms that throw |
-| - | - |
+|--------|----------------------|
 | <xref:System.Threading.CompressedStack.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=nameWithType> | All |
 | <xref:System.Threading.ExecutionContext.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=nameWithType> | All |
 | <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> | All |
@@ -339,7 +345,7 @@ This article organizes the affected APIs by namespace.
 ## System.Xml
 
 | Member | Platforms that throw |
-| - | - |
+|--------|----------------------|
 | <xref:System.Xml.XmlDictionaryReader.CreateMtomReader(System.Byte[],System.Int32,System.Int32,System.Text.Encoding[],System.String,System.Xml.XmlDictionaryReaderQuotas,System.Int32,System.Xml.OnXmlDictionaryReaderClose)?displayProperty=nameWithType> | All |
 | <xref:System.Xml.XmlDictionaryReader.CreateMtomReader(System.IO.Stream,System.Text.Encoding[],System.String,System.Xml.XmlDictionaryReaderQuotas,System.Int32,System.Xml.OnXmlDictionaryReaderClose)?displayProperty=nameWithType> | All |
 | <xref:System.Xml.XmlDictionaryWriter.CreateMtomWriter(System.IO.Stream,System.Text.Encoding,System.Int32,System.String,System.String,System.String,System.Boolean,System.Boolean)?displayProperty=nameWithType> | All |

@@ -1,12 +1,13 @@
 ---
 title: Amazon DynamoDB grain persistence
-description: Learn about Azure DynamoDB grain persistence in .NET Orleans.
-ms.date: 03/15/2022
+description: Learn about Amazon DynamoDB grain persistence in .NET Orleans.
+ms.date: 05/23/2025
+ms.topic: how-to
 ---
 
 # Amazon DynamoDB grain persistence
 
-In this article, you'll learn how to install and configure the Amazon DynamoDB grain persistence.
+In this article, you learn how to install and configure Amazon DynamoDB grain persistence.
 
 ## Installation
 
@@ -14,27 +15,27 @@ Install the [`Microsoft.Orleans.Persistence.DynamoDB`](https://www.nuget.org/pac
 
 ## Configuration
 
-Configure the DynamoDB grain persistence provider using the <xref:Orleans.Hosting.DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorage%2A?displayProperty=nameWithType> extension methods.
+Configure the DynamoDB grain persistence provider using the <xref:Orleans.Hosting.DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorage%2A?displayProperty=nameWithType> extension method.
 
 ```csharp
 siloBuilder.AddDynamoDBGrainStorage(
     name: "profileStore",
     configureOptions: options =>
     {
-        options.UseJson = true;
         options.AccessKey = "<DynamoDB access key>";
         options.SecretKey = "<DynamoDB secret key>";
         options.Service = "<DynamoDB region name>"; // Such as "us-west-2"
     });
+);
 ```
 
-If your authentication method requires a token or non-default profile name, you can define those properties using the following command:
+If your authentication method requires a token or a non-default profile name, you can define those properties. First, view your credentials file using the following command:
 
 ```bash
 cat ~/.aws/credentials
 ```
 
-As an example, the following command will configure the DynamoDB grain persistence provider to use the `default` profile from the `~/.aws/credentials` file:
+As an example, the following configuration shows how to configure the DynamoDB grain persistence provider to use the `default` profile from the `~/.aws/credentials` file:
 
 ```bash
 [YOUR_PROFILE_NAME]
@@ -45,7 +46,7 @@ aws_session_expiration = ***
 aws_session_token = ***
 ```
 
-This allows for both types of authentication credentials:
+This configuration allows for both types of authentication credentials:
 
 - access key & secret key
 - access key & secret key & token

@@ -11,11 +11,11 @@ using static System.Text.Encoding;
 
 OutputEncoding = Unicode;
 
-if (args is { Length: 1 })
+if (args is [var cultureName])
 {
     CultureInfo.CurrentCulture =
         CultureInfo.CurrentUICulture =
-            CultureInfo.GetCultureInfo(args[0]);
+            CultureInfo.GetCultureInfo(cultureName);
 }
 
 HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);

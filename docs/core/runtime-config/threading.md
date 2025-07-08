@@ -1,8 +1,7 @@
 ---
 title: Threading config settings
-description: Learn about the settings that configure threading for .NET Core apps.
+description: Learn about the settings that configure threading for .NET apps.
 ms.date: 11/04/2021
-ms.topic: reference
 ---
 # Runtime configuration options for threading
 
@@ -10,15 +9,27 @@ This article details the settings you can use to configure threading in .NET.
 
 [!INCLUDE [complus-prefix](../../../includes/complus-prefix.md)]
 
-## CPU groups
+## Use all CPU groups on Windows
 
-- Configures whether threads are automatically distributed across CPU groups.
-- If you omit this setting, threads are not distributed across CPU groups. This is equivalent to setting the value to `0`.
+- On machines that have multiple CPU groups, this setting configures whether components such as the thread pool use all CPU groups or only the primary CPU group of the process. The setting also affects what <xref:System.Environment.ProcessorCount?displayProperty=nameWithType> returns.
+- When this setting is enabled, all CPU groups are used and threads are also [automatically distributed across CPU groups](#assign-threads-to-cpu-groups-on-windows) by default.
+- This setting is enabled by default on Windows 11 and later versions, and disabled by default on Windows 10 and earlier versions. For this setting to take effect when enabled, the GC must also be configured to use all CPU groups; for more information, see [GC CPU groups](./garbage-collector.md#cpu-groups).
 
 | | Setting name | Values |
 | - | - | - |
 | **runtimeconfig.json** | N/A | N/A |
 | **Environment variable** | `COMPlus_Thread_UseAllCpuGroups` or `DOTNET_Thread_UseAllCpuGroups` | `0` - disabled<br/>`1` - enabled |
+
+## Assign threads to CPU groups on Windows
+
+- On machines that have multiple CPU groups and [all CPU groups are being used](#use-all-cpu-groups-on-windows), this setting configures whether threads are automatically distributed across CPU groups.
+- When this setting is enabled, new threads are assigned to a CPU group in a way that tries to fully populate a CPU group that is already in use before utilizing a new CPU group.
+- This setting is enabled by default.
+
+| | Setting name | Values |
+| - | - | - |
+| **runtimeconfig.json** | N/A | N/A |
+| **Environment variable** | `COMPlus_Thread_AssignCpuGroups` or `DOTNET_Thread_AssignCpuGroups` | `0` - disabled<br/>`1` - enabled |
 
 ## Minimum threads
 
@@ -41,6 +52,16 @@ This article details the settings you can use to configure threading in .NET.
       "configProperties": {
          "System.Threading.ThreadPool.MinThreads": 4
       }
+   }
+}
+```
+
+*runtimeconfig.template.json* file:
+
+```json
+{
+   "configProperties": {
+      "System.Threading.ThreadPool.MinThreads": 4
    }
 }
 ```
@@ -82,6 +103,16 @@ Project file:
 }
 ```
 
+*runtimeconfig.template.json* file:
+
+```json
+{
+   "configProperties": {
+      "System.Threading.ThreadPool.MaxThreads": 20
+   }
+}
+```
+
 Project file:
 
 ```xml
@@ -99,7 +130,7 @@ Project file:
 - For projects on Windows, configures whether thread pool thread management is delegated to the Windows thread pool.
 - If you omit this setting or the platform is not Windows, the .NET thread pool is used instead.
 - Only applications published with Native AOT on Windows use the Windows thread pool by default, for which you can opt to use the .NET thread pool instead by disabling the config setting.
-- The Windows thread pool may perform better in some cases, such as in cases where the minimum number of threads is configured to a high value, or when the Windows thread pool is already being heavily used by the app. There may also be cases where the .NET thread pool performs better, such as in heavy I/O handling on larger machines. It is advisable to check performance metrics when changing this config setting.
+- The Windows thread pool may perform better in some cases, such as in cases where the minimum number of threads is configured to a high value, or when the Windows thread pool is already being heavily used by the app. There may also be cases where the .NET thread pool performs better, such as in heavy I/O handling on larger machines. It's advisable to check performance metrics when changing this config setting.
 - Some APIs are not supported when using the Windows thread pool, such as <xref:System.Threading.ThreadPool.SetMinThreads%2A?displayProperty=nameWithType>, <xref:System.Threading.ThreadPool.SetMaxThreads%2A?displayProperty=nameWithType>, and <xref:System.Threading.ThreadPool.BindHandle%28System.Runtime.InteropServices.SafeHandle%29?displayProperty=nameWithType>. Thread pool config settings for minimum and maximum threads are also not effective. An alternative to <xref:System.Threading.ThreadPool.BindHandle%28System.Runtime.InteropServices.SafeHandle%29?displayProperty=nameWithType> is the <xref:System.Threading.ThreadPoolBoundHandle> class.
 
 | | Setting name | Values | Version introduced |
@@ -118,6 +149,16 @@ Project file:
       "configProperties": {
          "System.Threading.ThreadPool.UseWindowsThreadPool": true
       }
+   }
+}
+```
+
+*runtimeconfig.template.json* file:
+
+```json
+{
+   "configProperties": {
+      "System.Threading.ThreadPool.UseWindowsThreadPool": true
    }
 }
 ```
@@ -169,6 +210,16 @@ In some cases, the thread pool detects work items that block its threads. To com
 }
 ```
 
+*runtimeconfig.template.json* file:
+
+```json
+{
+   "configProperties": {
+      "System.Threading.ThreadPool.Blocking.ThreadsToAddWithoutDelay_ProcCountFactor": 5
+   }
+}
+```
+
 ## `AutoreleasePool` for managed threads
 
 This option configures whether each managed thread receives an implicit [NSAutoreleasePool](https://developer.apple.com/documentation/foundation/nsautoreleasepool) when running on a supported macOS platform.
@@ -189,6 +240,16 @@ This option configures whether each managed thread receives an implicit [NSAutor
       "configProperties": {
          "System.Threading.Thread.EnableAutoreleasePool": true
       }
+   }
+}
+```
+
+*runtimeconfig.template.json* file:
+
+```json
+{
+   "configProperties": {
+      "System.Threading.Thread.EnableAutoreleasePool": true
    }
 }
 ```

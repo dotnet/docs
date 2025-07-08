@@ -1,18 +1,15 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <RootNamespace>all_rules</RootNamespace>
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFramework>net9.0</TargetFramework>
+    <NoWarn>$(NoWarn);SYSLIB0050</NoWarn>
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Program.vb" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
-    <PackageReference Include="System.Security.Permissions" Version="7.0.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
+    <PackageReference Include="System.Security.Permissions" Version="9.0.0" />
   </ItemGroup>
 
 </Project>

@@ -1,7 +1,7 @@
 ---
 title: Health monitoring
 description: Explore one way of implementing health monitoring.
-ms.date: 06/23/2021
+ms.date: 09/10/2024
 ---
 # Health monitoring
 
@@ -23,14 +23,14 @@ To use this feature effectively, you need to first configure services in your mi
 
 ### Use the HealthChecks feature in your back-end ASP.NET microservices
 
-In this section, you'll learn how to implement the HealthChecks feature in a sample ASP.NET Core 7.0 Web API application when using the [Microsoft.Extensions.Diagnostics.HealthChecks](https://www.nuget.org/packages/Microsoft.Extensions.Diagnostics.HealthChecks) package. The Implementation of this feature in a large-scale microservices like the eShopOnContainers is explained in the next section.
+In this section, you'll learn how to implement the HealthChecks feature in a sample ASP.NET Core 8.0 Web API application when using the [Microsoft.Extensions.Diagnostics.HealthChecks](https://www.nuget.org/packages/Microsoft.Extensions.Diagnostics.HealthChecks) package. The Implementation of this feature in a large-scale microservices like the eShopOnContainers is explained in the next section.
 
 To begin, you need to define what constitutes a healthy status for each microservice. In the sample application, we define the microservice is healthy if its API is accessible via HTTP and its related SQL Server database is also available.
 
-In .NET 7, with the built-in APIs, you can configure the services, add a Health Check for the microservice and its dependent SQL Server database in this way:
+In .NET 8, with the built-in APIs, you can configure the services, add a Health Check for the microservice and its dependent SQL Server database in this way:
 
 ```csharp
-// Program.cs from .NET 7 Web API sample
+// Program.cs from .NET 8 Web API sample
 
 //...
 // Registers required services for health checks
@@ -97,12 +97,14 @@ public class SqlConnectionHealthCheck : IHealthCheck
 }
 ```
 
+[!INCLUDE [managed-identities](../../../includes/managed-identities.md)]
+
 Note that in the previous code, `Select 1` is the query used to check the Health of the database. To monitor the availability of your microservices, orchestrators like Kubernetes periodically perform health checks by sending requests to test the microservices. It's important to keep your database queries efficient so that these operations are quick and don’t result in a higher utilization of resources.
 
 Finally, add a middleware that responds to the url path `/hc`:
 
 ```csharp
-// Program.cs from .NET 7 Web Api sample
+// Program.cs from .NET 8 Web Api sample
 
 app.MapHealthChecks("/hc");
 ```
@@ -113,7 +115,7 @@ When the endpoint `<yourmicroservice>/hc` is invoked, it runs all the health che
 
 Microservices in eShopOnContainers rely on multiple services to perform its task. For example, the `Catalog.API` microservice from eShopOnContainers depends on many services, such as Azure Blob Storage, SQL Server, and RabbitMQ. Therefore, it has several health checks added using the `AddCheck()` method. For every dependent service, a custom `IHealthCheck` implementation that defines its respective health status would need to be added.
 
-The open-source project [AspNetCore.Diagnostics.HealthChecks](https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks) solves this problem by providing custom health check implementations for each of these enterprise services, that are built on top of .NET 7. Each health check is available as an individual NuGet package that can be easily added to the project. eShopOnContainers uses them extensively in all its microservices.
+The open-source project [AspNetCore.Diagnostics.HealthChecks](https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks) solves this problem by providing custom health check implementations for each of these enterprise services, that are built on top of .NET 8. Each health check is available as an individual NuGet package that can be easily added to the project. eShopOnContainers uses them extensively in all its microservices.
 
 For instance, in the `Catalog.API` microservice, the following NuGet packages were added:
 

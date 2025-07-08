@@ -1,6 +1,4 @@
-﻿using System;
-using System.Data;
-using System.Security.Permissions;
+﻿using System.Security.Permissions;
 using System.Data.SqlClient;
 
 class Program

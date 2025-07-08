@@ -1,17 +1,16 @@
 ---
 title: 'Tutorial: Build a movie recommender - matrix factorization'
-description: This tutorial shows you how to build a movie recommender with ML.NET in a .NET Core console application. The steps use C# and Visual Studio 2019.
+description: This tutorial shows you how to build a movie recommender with ML.NET in a .NET console application. The steps use C# and Visual Studio 2019.
 author: briacht
 ms.date: 11/11/2021
 ms.custom: mvc, title-hack-0516
 ms.topic: tutorial
-recommendations: false
 #Customer intent: As a developer, I want to use ML.NET to apply a recommendation learning algorithm so that I can understand how to recommend items based on a user's history.
 ---
 
 # Tutorial: Build a movie recommender using matrix factorization with ML.NET
 
-This tutorial shows you how to build a movie recommender with ML.NET in a .NET Core console application. The steps use C# and Visual Studio 2019.
+This tutorial shows you how to build a movie recommender with ML.NET in a .NET console application. The steps use C# and Visual Studio 2019.
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
@@ -35,7 +34,7 @@ You will use the following steps to accomplish your task, as well as any other M
 
 ## Prerequisites
 
-- [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/).
+* [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/).
 
 ## Select the appropriate machine learning task
 
@@ -47,19 +46,19 @@ There are several ways to approach recommendation problems, such as recommending
 
 1. Create a C# **Console Application** called "MovieRecommender". Click the **Next** button.
 
-2. Choose .NET 6 as the framework to use. Click the **Create** button.
+2. Choose .NET 8 as the framework to use. Click the **Create** button.
 
 3. Create a directory named *Data* in your project to store the data set:
 
-    In **Solution Explorer**, right-click the project and select **Add** > **New Folder**. Type "Data" and hit Enter.
+    In **Solution Explorer**, right-click the project and select **Add** > **New Folder**. Type "Data" and select <kbd>Enter</kbd>.
 
 4. Install the **Microsoft.ML** and **Microsoft.ML.Recommender** NuGet Packages:
 
     [!INCLUDE [mlnet-current-nuget-version](../../../includes/mlnet-current-nuget-version.md)]
 
-    In **Solution Explorer**, right-click the project and select **Manage NuGet Packages**. Choose "nuget.org" as the Package source, select the **Browse** tab, search for **Microsoft.ML**, select the package in the list, and select the **Install** button. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed. Repeat these steps for **Microsoft.ML.Recommender**.
+    In **Solution Explorer**, right-click the project and select **Manage NuGet Packages**. Choose "nuget.org" as the Package source, select the **Browse** tab, search for **Microsoft.ML**, select the package in the list, and select **Install**. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed. Repeat these steps for **Microsoft.ML.Recommender**.
 
-5. Add the following `using` statements at the top of your *Program.cs* file:
+5. Add the following `using` directives at the top of your *Program.cs* file:
 
     [!code-csharp[UsingStatements](./snippets/movie-recommendation/csharp/Program.cs#UsingStatements "Add necessary usings")]
 
@@ -118,9 +117,9 @@ Add a new class to your project:
 
 1. In **Solution Explorer**, right-click the project, and then select **Add > New Item**.
 
-2. In the **Add New Item dialog box**, select **Class** and change the **Name** field to *MovieRatingData.cs*. Then, select the **Add** button.
+2. In the **Add New Item dialog box**, select **Class** and change the **Name** field to *MovieRatingData.cs*. Then, select **Add**.
 
-The *MovieRatingData.cs* file opens in the code editor. Add the following `using` statement to the top of *MovieRatingData.cs*:
+The *MovieRatingData.cs* file opens in the code editor. Add the following `using` directive to the top of *MovieRatingData.cs*:
 
 ```csharp
 using Microsoft.ML.Data;
@@ -196,7 +195,7 @@ Choose the machine learning algorithm and append it to the data transformation d
 
 [!code-csharp[AddAlgorithm](./snippets/movie-recommendation/csharp/Program.cs#AddAlgorithm "Add the training algorithm with options")]
 
-The [MatrixFactorizationTrainer](xref:Microsoft.ML.RecommendationCatalog.RecommendationTrainers.MatrixFactorization%28Microsoft.ML.Trainers.MatrixFactorizationTrainer.Options%29) is your recommendation training algorithm.  [Matrix Factorization](https://en.wikipedia.org/wiki/Matrix_factorization_(recommender_systems)) is a common approach to recommendation when you have data on how users have rated products in the past, which is the case for the datasets in this tutorial. There are other recommendation algorithms for when you have different data available (see the [Other recommendation algorithms](#other-recommendation-algorithms) section below to learn more).
+The [MatrixFactorizationTrainer](xref:Microsoft.ML.RecommendationCatalog.RecommendationTrainers.MatrixFactorization%28Microsoft.ML.Trainers.MatrixFactorizationTrainer.Options%29) is your recommendation training algorithm. [Matrix Factorization](https://en.wikipedia.org/wiki/Matrix_factorization_(recommender_systems)) is a common approach to recommendation when you have data on how users have rated products in the past, which is the case for the datasets in this tutorial. There are other recommendation algorithms for when you have different data available (see the [Other recommendation algorithms](#other-recommendation-algorithms) section below to learn more).
 
 In this case, the `Matrix Factorization` algorithm uses a method called "collaborative filtering", which assumes that if User 1 has the same opinion as User 2 on a certain issue, then User 1 is more likely to feel the same way as User 2 about a different issue.
 
@@ -215,7 +214,7 @@ Fit the model to the `Train` data and return the trained model by adding the fol
 
 The [Fit()](xref:Microsoft.ML.Trainers.MatrixFactorizationTrainer.Fit%28Microsoft.ML.IDataView,Microsoft.ML.IDataView%29) method trains your model with the provided training dataset. Technically, it executes the `Estimator` definitions by transforming the data and applying the training, and it returns back the trained model, which is a `Transformer`.
 
-For more information on the model training workflow in ML.NET, see [What is ML.NET and how does it work?](../how-does-mldotnet-work.md#code-workflow).
+For more information on the model training workflow in ML.NET, see [What is ML.NET and how does it work?](../mldotnet-api.md#code-workflow).
 
 Add the following as the next line of code below the call to the `LoadData()` method to call your `BuildAndTrainModel()` method and return the trained model:
 
@@ -407,7 +406,7 @@ There are several ways that you can improve the performance of your model so tha
 
 ### Data
 
-Adding more training data that has enough samples for each user and movie id can help improve the quality of the recommendation model.
+Adding more training data that has enough samples for each user and movie ID can help improve the quality of the recommendation model.
 
 [Cross validation](../how-to-guides/train-machine-learning-model-cross-validation-ml-net.md) is a technique for evaluating models that randomly splits up data into subsets (instead of extracting out test data from the dataset like you did in this tutorial) and takes some of the groups as train data and some of the groups as test data. This method outperforms making a train-test split in terms of model quality.
 

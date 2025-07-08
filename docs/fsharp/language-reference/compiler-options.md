@@ -18,9 +18,10 @@ The following table shows compiler options listed alphabetically. Some of the F#
 |`--allsigs`|Generates a new (or regenerates an existing) signature file for each source file in the compilation. For more information about signature files, see [Signatures](signature-files.md).|
 |`-a filename.fs`|Generates a library from the specified file. This option is a short form of `--target:library filename.fs`.|
 |`--baseaddress:address`|Specifies the preferred base address at which to load a DLL.<br /><br />This compiler option is equivalent to the C# compiler option of the same name. For more information, see [&#47;baseaddress &#40;C&#35; Compiler Options&#41;](../../csharp/language-reference/compiler-options/advanced.md#baseaddress).|
+|<code>--checknulls[+&#124;-]</code>|Enables [nullable reference types](./values/null-values.md#null-values-starting-with-f-9), added in F# 9.|
 |`--codepage:id`|Specifies which code page to use during compilation if the required page isn't the current default code page for the system.<br /><br />This compiler option is equivalent to the C# compiler option of the same name. For more information, see [&#47;code pages &#40;C&#35; Compiler Options&#41;](../../csharp/language-reference/compiler-options/advanced.md#codepage).|
 |`--consolecolors`|Specifies that errors and warnings use color-coded text on the console.|
-|`--crossoptimize[+|-]`|Enables or disables cross-module optimizations.|
+|`--crossoptimize[+ or -]`|Enables or disables cross-module optimizations.|
 |<code>--delaysign[+&#124;-]</code>|Delay-signs the assembly using only the public portion of the strong name key.<br /><br />This compiler option is equivalent to the C# compiler option of the same name. For more information, see [&#47;delaysign &#40;C&#35; Compiler Options&#41;](../../csharp/language-reference/compiler-options/security.md#delaysign).|
 |<code>--checked[+&#124;-]</code>|Enables or disables the generation of overflow checks.<br /><br />This compiler option is equivalent to the C# compiler option of the same name. For more information, see [&#47;checked &#40;C&#35; Compiler Options&#41;](../../csharp/language-reference/compiler-options/language.md#checkforoverflowunderflow).|
 |<code>--debug[+&#124;-]</code><br /><br /><code>-g[+&#124;-]</code><br /><br /><code>--debug:[full&#124;pdbonly]</code><br /><br /><code>-g: [full&#124;pdbonly]</code>|Enables or disables the generation of debug information, or specifies the type of debug information to generate. The default is `full`, which allows attaching to a running program. Choose `pdbonly` to get limited debugging information stored in a pdb (program database) file.<br /><br />Equivalent to the C# compiler option of the same name. For more information, see<br /><br />[&#47;debug &#40;C&#35; Compiler Options&#41;](../../csharp/language-reference/compiler-options/code-generation.md#debugtype).|
@@ -60,7 +61,7 @@ The following table shows compiler options listed alphabetically. Some of the F#
 |`--times`|Displays timing information for compilation.|
 |`--utf8output`|Enables printing compiler output in the UTF-8 encoding.|
 |`--warn:warning-level`|Sets a warning level (0 to 5). The default level is 3. Each warning is given a level based on its severity. Level 5 gives more, but less severe, warnings than level 1.<br /><br />This compiler option is equivalent to the C# compiler option of the same name. For more information, see [&#47;warn &#40;C&#35; Compiler Options&#41;](../../csharp/language-reference/compiler-options/errors-warnings.md#warninglevel).|
-|`--warnon:warning-number-list`|Enable specific warnings that might be off by default or disabled by another command-line option.|
+|`--warnon:warning-number-list`|Enable specific warnings that might be off by default or disabled by another command-line option. The list is comma-separated.|
 |<code>--warnaserror[+&#124;-] [warning-number-list]</code>|Enables or disables the option to report warnings as errors. You can provide specific warning numbers to be disabled or enabled. Options later in the command line override options earlier in the command line. For example, to specify the warnings that you don't want reported as errors, specify `--warnaserror+` `--warnaserror-:warning-number-list`.<br /><br />This compiler option is equivalent to the C# compiler option of the same name. For more information, see [&#47;warnaserror &#40;C&#35; Compiler Options&#41;](../../csharp/language-reference/compiler-options/errors-warnings.md#treatwarningsaserrors).|
 |`--win32manifest:manifest-filename`|Adds a Win32 manifest file to the compilation. This compiler option is equivalent to the C# compiler option of the same name. For more information, see [&#47;win32manifest &#40;C&#35; Compiler Options&#41;](../../csharp/language-reference/compiler-options/resources.md#win32manifest).|
 |`--win32res:resource-filename`|Adds a Win32 resource file to the compilation.<br /><br />This compiler option is equivalent to the C# compiler option of the same name. For more information, see [&#47;win32res (&#40;C&#35;) Compiler Options&#41;](../../csharp/language-reference/compiler-options/resources.md#win32resource).|
@@ -77,14 +78,22 @@ The F# compiler supports several opt-in warnings:
 | 1178  | Implicit equality/comparison    |  5    | Warn when an F# type declaration is implicitly inferred to be `NoEquality` or `NoComparison` but the attribute is not present on the type. |
 | 1182  | Unused variables                |  n/a  | Warn for unused variables. |
 | 3180  | Implicit heap allocations       |  n/a  | Warn when a mutable local is implicitly allocated as a reference cell because it has been captured by a closure. |
+| 3186  | Missing metadata declaration     |  n/a  | Warn when an F# metadata node has no matching declaration. May indicate a broken assembly; recompilation might be required. |
 | 3366  | Index notation                  |  n/a  | Warn when the F# 5 index notation `expr.[idx]` is used. |
-| 3517  | InlineIfLambda failure          |  n/a  | Warn when the F# optimizer fails to inline an `InlineIfLambda` value, for example if a computed function value has been provided instead of an explicit lambda. |
-| 3387  | `op_Implicit` conversion        |  n/a  | Warn when a .NET implicit conversion is used at a method argument. |
 | 3388  | Additional implicit upcast      |  n/a  | Warn when an additional upcast is implicitly used, added in F# 6. |
 | 3389  | Implicit widening               |  n/a  | Warn when an implicit numeric widening is used. |
 | 3390  | Malformed XML doc comments      |  n/a  | Warn when XML doc comments are malformed in various ways. |
+| 3395  | Implicit method argument conversion |  n/a  | Warn when an implicit conversion is used to match the type of a method argument. |
+| 3517  | InlineIfLambda failure          |  n/a  | Warn when the F# optimizer fails to inline an `InlineIfLambda` value, for example if a computed function value has been provided instead of an explicit lambda. |
+| 3559  | Type inferred as obj             |  n/a  | Warn when a type is implicitly inferred as 'obj'. Suggest adding explicit type annotations. |
+| 3560  | All fields changed in record copy |  n/a  | Warn when a record copy-and-update expression changes all fields. Recommend using record construction syntax. |
+| 3570  | Ambiguous discard or shorthand   |  n/a  | Warn when '_' is ambiguously used both as a discard and a function shorthand in the same scope. |
+| 3579  | Untyped string interpolation     |  n/a  | Warn when interpolated strings contain untyped values. Typed format specifiers are recommended. |
+| 3582  | Function shadows union case      |  n/a  | Warn when a function definition unintentionally shadows a union case. Use parentheses to disambiguate. |
 
 You can enable these warnings by using  `/warnon:NNNN` or `<WarnOn>NNNN</WarnOn>` where `NNNN` is the relevant warning number.
+(You may also use the syntax `<WarnOn>FSNNNN</WarnOn>`, for example, `<WarnOn>FS3388</WarnOn>`.)
+Note that if the `WarnOn` property is specified multiple times, only the last occurrence is used. To specify multiple warnings, provide the `WarnOn` property once with a comma-separated string as its contents: `<WarnOn>3388,3559</WarnOn>`.
 
 ## Related articles
 

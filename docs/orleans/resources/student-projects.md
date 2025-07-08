@@ -1,7 +1,7 @@
 ---
 title: Student projects
 description: Learn how the Orleans team encourages students to build distributed applications.
-ms.date: 03/21/2022
+ms.date: 07/03/2024
 ---
 
 # Student projects
@@ -16,7 +16,7 @@ We suggest two types of projects for students:
 
 1. **Auto-scale**: In this project, students can start by exploring the existing autoscaling mechanisms for controlling resource allocation in Azure [Autoscaling](/azure/architecture/best-practices/auto-scaling). The next step involves exploring various statistics and resource consumption metrics collected by Orleans and using them as an input for Azure Autoscaling. An advanced stage of this project may involve improving the internal Orleans mechanisms for reacting to elasticity changes, for example by implementing live actor migration to reduce the time taken to utilize new resources.
 
-1. **Auto-generated front-ends for Orleans-based cloud services**: This project seamlessly extends the Orleans actor model into the HTTP world. The ramp-up part of the project includes dynamically generating HTTP endpoints for actors based on their .NET interfaces and metadata. The main part involves automatically generating front-ends to support web sockets and bi-directional streaming of data, which requires complex code generation with optimizations for high performance. It also requires attention to fault tolerance, to maintain the high availability of streaming sessions across server reboots and client reconnects and migration &mdash; a significant research challenge.
+1. **Auto-generated front-ends for Orleans-based cloud services**: This project seamlessly extends the Orleans actor model into the HTTP world. The ramp-up part of the project includes dynamically generating HTTP endpoints for actors based on their .NET interfaces and metadata. The main part involves automatically generating front-ends to support web sockets and bi-directional streaming of data, which requires complex code generation with optimizations for high performance. It also requires attention to fault tolerance, to maintain the high availability of streaming sessions across server reboots and client reconnects and migration&mdash;a significant research challenge.
 
 1. **Storage provider for Entity Framework**: This project involves enabling Orleans objects to store their state in a database and to subsequently query it. This might include adding support for Orleans object persistence on SQL Azure Database using Entity Framework (EF), which is Microsoft's open-source object-relational mapper for .NET, and exposing that data via LINQ queries. The implementation can be evaluated and tuned using standard database benchmarks and/or custom Orleans' applications.
 

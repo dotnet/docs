@@ -1,43 +1,40 @@
 ﻿namespace WorkerScope.Example;
 
-public sealed class Worker : BackgroundService
+public sealed class Worker(
+    ILogger<Worker> logger,
+    IServiceScopeFactory serviceScopeFactory)
+    : BackgroundService
 {
-    private readonly ILogger<Worker> _logger;
-    private readonly IServiceScopeFactory _serviceScopeFactory;
-
-    public Worker(ILogger<Worker> logger, IServiceScopeFactory serviceScopeFactory) =>
-        (_logger, _serviceScopeFactory) = (logger, serviceScopeFactory);
-
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
         while (!stoppingToken.IsCancellationRequested)
         {
-            using (IServiceScope scope = _serviceScopeFactory.CreateScope())
+            using (IServiceScope scope = serviceScopeFactory.CreateScope())
             {
                 try
                 {
-                    _logger.LogInformation(
+                    logger.LogInformation(
                         "Starting scoped work, provider hash: {hash}.",
                         scope.ServiceProvider.GetHashCode());
 
                     var store = scope.ServiceProvider.GetRequiredService<IObjectStore>();
                     var next = await store.GetNextAsync();
-                    _logger.LogInformation("{next}", next);
+                    logger.LogInformation("{next}", next);
 
                     var processor = scope.ServiceProvider.GetRequiredService<IObjectProcessor>();
                     await processor.ProcessAsync(next);
-                    _logger.LogInformation("Processing {name}.", next.Name);
+                    logger.LogInformation("Processing {name}.", next.Name);
 
                     var relay = scope.ServiceProvider.GetRequiredService<IObjectRelay>();
                     await relay.RelayAsync(next);
-                    _logger.LogInformation("Processed results have been relayed.");
+                    logger.LogInformation("Processed results have been relayed.");
 
                     var marked = await store.MarkAsync(next);
-                    _logger.LogInformation("Marked as processed: {next}", marked);
+                    logger.LogInformation("Marked as processed: {next}", marked);
                 }
                 finally
                 {
-                    _logger.LogInformation(
+                    logger.LogInformation(
                         "Finished scoped work, provider hash: {hash}.{nl}",
                         scope.ServiceProvider.GetHashCode(), Environment.NewLine);
                 }

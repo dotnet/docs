@@ -1,33 +1,70 @@
 ---
 title: Grain identity
 description: Learn about grain identities in .NET Orleans.
-ms.date: 03/16/2022
+ms.date: 03/31/2025
+ms.topic: conceptual
 ---
 
 # Grain identity
 
-In object-oriented environments, the identity of an object is hard to distinguish from a reference to it. Thus, when an object is created using new, the reference you get back represents all aspects of its identity except those that map the object to some external entity that it represents.
+Grains in Orleans each have a single, unique, user-defined identifier consisting of two parts:
 
-In distributed systems, object references cannot represent instance identity, since references are typically limited to a single address space. That is certainly the case for .NET references. Furthermore, a grain must have an identity regardless of whether it is active, so that we can activate it on demand. Therefore grains have a primary key. The primary key can be a <xref:System.Guid>, a <xref:System.Int64>, or a <xref:System.String>.
+1. The grain _type_ name, uniquely identifying the grain class.
+1. The grain _key_, uniquely identifying a logical instance of that grain class.
 
-The primary key is scoped to the grain type.
-Therefore, the complete identity of a grain is formed from the grain's type and its key.
+Orleans represents both grain type and key as human-readable strings. By convention, write the grain identity with the grain type and key separated by a `/` character. For example, `shoppingcart/bob65` represents the grain type named `shoppingcart` with the key `bob65`.
 
-The caller of the grain decides which scheme should be used. The options are:
+Constructing grain identities directly is uncommon. Instead, creating [grain references](./grain-references.md) using <xref:Orleans.IGrainFactory?displayProperty=nameWithType> is more common.
 
-* long
-* GUID
-* string
-* GUID + string
-* long + string
+The following sections discuss grain type names and grain keys in more detail.
 
-Because the underlying data is the same, the schemes can be used interchangeably. When a long integer is used, a GUID is actually created and padded with zeros.
+## Grain type names
 
-Situations that require a singleton grain instance, such as a dictionary or registry, benefit from using `Guid.Empty` as its key. This is merely a convention, but by adhering to this convention it becomes clear at the caller site that a singleton grain is in use, as we saw in the first tutorial.
+Orleans creates a grain type name based on the grain implementation class. It removes the suffix "Grain" from the class name, if present, and converts the resulting string to its lowercase representation. For example, a class named `ShoppingCartGrain` receives the grain type name `shoppingcart`. It's recommended that grain type names and keys consist only of printable characters, such as alphanumeric characters (`a`-`z`, `A`-`Z`, and `0`-`9`) and symbols like `-`, `_`, `@`, and `=`. Other characters might not be supported and often require special treatment when printed in logs or appearing as identifiers in other systems, such as databases.
 
-## Using globally unique identifiers (GUIDs)
+Alternatively, use the <xref:Orleans.GrainTypeAttribute?displayProperty=nameWithType> attribute to customize the grain type name for the grain class it's attached to, as shown in the following example:
 
-GUIDs are useful when several processes could request a grain, such as several web servers in a web farm. You don't need to coordinate the allocation of keys, which could introduce a single point of failure in the system, or a system-side lock on a resource that could present a bottleneck. There is a very low chance of GUIDs colliding, so they would probably be the default choice when architecting an Orleans system.
+```csharp
+[GrainType("cart")]
+public class ShoppingCartGrain : IShoppingCartGrain
+{
+    // Add your grain implementation here
+}
+```
+
+In the preceding example, the grain class `ShoppingCartGrain` has the grain type name `cart`. Each grain can only have one grain type name.
+
+For generic grains, include the generic arity in the grain type name. For example, consider the following `DictionaryGrain<K, V>` class:
+
+```csharp
+[GrainType("dict`2")]
+public class DictionaryGrain<K, V> : IDictionaryGrain<K, V>
+{
+    // Add your grain implementation here
+}
+```
+
+The grain class has two generic parameters, so a backtick `` ` `` followed by the generic arity, 2, is added to the end of the grain type name `dict` to create the grain type name ``dict`2``. This is specified in the attribute on the grain class: `[GrainType("dict`2")]`.
+
+## Grain keys
+
+For convenience, Orleans exposes methods allowing construction of grain keys from a <xref:System.Guid> or <xref:System.Int64>, in addition to a <xref:System.String>. The primary key is scoped to the grain type. Therefore, the complete identity of a grain forms from its type and key.
+
+The caller of the grain decides which scheme to use. The options are:
+
+- <xref:System.Guid?displayProperty=nameWithType>
+- <xref:System.Int64?displayProperty=nameWithType>
+- <xref:System.String?displayProperty=nameWithType>
+- <xref:System.Guid?displayProperty=nameWithType> and <xref:System.String?displayProperty=nameWithType>
+- <xref:System.Int64?displayProperty=nameWithType> and <xref:System.String?displayProperty=nameWithType>
+
+Because the underlying data is the same, the schemes can be used interchangeably: they are all encoded as strings.
+
+Situations requiring a singleton grain instance can use a well-known, fixed value such as `"default"`. This is merely a convention, but adhering to it clarifies at the caller site that a singleton grain is in use.
+
+### Using globally unique identifiers (GUIDs) as keys
+
+<xref:System.Guid?displayProperty=nameWithType> make useful keys when randomness and global uniqueness are desired, such as when creating a new job in a job processing system. Coordinating key allocation isn't needed, which could introduce a single point of failure or a system-side lock on a resource, potentially creating a bottleneck. The chance of GUID collisions is very low, making them a common choice when architecting systems needing random identifier allocation.
 
 Referencing a grain by GUID in client code:
 
@@ -45,9 +82,9 @@ public override Task OnActivateAsync()
 }
 ```
 
-## Using longs
+### Using integers as keys
 
-A long integer is also available, which would make sense if the grain is persisted to a relational database, where numerical indexes are preferred over GUIDs.
+A long integer is also available. This makes sense if the grain persists to a relational database, where numerical indexes are often preferred over GUIDs.
 
 Referencing a grain by a long integer in client code:
 
@@ -65,9 +102,9 @@ public override Task OnActivateAsync()
 }
 ```
 
-## Using strings
+### Using strings as keys
 
-A string is also available.
+A string key is also available.
 
 Referencing a grain by String in client code:
 
@@ -85,11 +122,11 @@ public override Task OnActivateAsync()
 }
 ```
 
-## Using compound primary key
+### Using compound keys
 
-If you have a system that doesn't fit well with either GUIDs or longs, you can opt for a compound primary key, which allows you to use a combination of a GUID or long and a string to reference a grain.
+If the system doesn't fit well with either GUIDs or longs, opt for a compound primary key. This allows using a combination of a GUID or long and a string to reference a grain.
 
-You can inherit your interface from <xref:Orleans.IGrainWithGuidCompoundKey> or <xref:Orleans.IGrainWithIntegerCompoundKey> interface like this:
+Inherit the interface from <xref:Orleans.IGrainWithGuidCompoundKey> or <xref:Orleans.IGrainWithIntegerCompoundKey> like this:
 
 ```csharp
 public interface IExampleGrain : Orleans.IGrainWithIntegerCompoundKey
@@ -104,7 +141,7 @@ In client code, this adds a second argument to the <xref:Orleans.IGrainFactory.G
 var grain = grainFactory.GetGrain<IExample>(0, "a string!", null);
 ```
 
-To access the compound key in the grain, we can call an overload on the <xref:Orleans.GrainExtensions.GetPrimaryKey%2A?displayProperty=nameWithType> method (the <xref:Orleans.GrainExtensions.GetPrimaryKeyLong%2A?displayProperty=nameWithType>):
+To access the compound key in the grain, call an overload of the <xref:Orleans.GrainExtensions.GetPrimaryKey%2A?displayProperty=nameWithType> method (such as <xref:Orleans.GrainExtensions.GetPrimaryKeyLong%2A?displayProperty=nameWithType>):
 
 ```csharp
 public class ExampleGrain : Orleans.Grain, IExampleGrain
@@ -114,7 +151,11 @@ public class ExampleGrain : Orleans.Grain, IExampleGrain
         long primaryKey = this.GetPrimaryKeyLong(out string keyExtension);
         Console.WriteLine($"Hello from {keyExtension}");
 
-        Task.CompletedTask;
+        return Task.CompletedTask;
     }
 }
 ```
+
+## Why grains use logical identifiers
+
+In object-oriented environments like .NET, an object's identity is hard to distinguish from a reference to it. When an object is created using the `new` keyword, the returned reference represents all aspects of its identity except those mapping the object to some external entity it represents. Orleans is designed for distributed systems. In distributed systems, object references cannot represent instance identity because they are limited to a single process's address space. Orleans uses logical identifiers to avoid this limitation. Grains use logical identifiers so grain references remain valid across process lifetimes and are portable from one process to another. This allows them to be stored and later retrieved, or sent across a network to another process in the application, all while still referring to the same entity: the grain for which the reference was created.

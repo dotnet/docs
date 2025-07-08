@@ -1,12 +1,18 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 
-HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
+HostApplicationBuilderSettings settings = new()
+{
+    Args = args,
+    Configuration = new ConfigurationManager(),
+    ContentRootPath = Directory.GetCurrentDirectory(),
+};
 
-builder.Environment.ContentRootPath = Directory.GetCurrentDirectory();
-builder.Configuration.AddJsonFile("hostsettings.json", optional: true);
-builder.Configuration.AddEnvironmentVariables(prefix: "PREFIX_");
-builder.Configuration.AddCommandLine(args);
+settings.Configuration.AddJsonFile("hostsettings.json", optional: true);
+settings.Configuration.AddEnvironmentVariables(prefix: "PREFIX_");
+settings.Configuration.AddCommandLine(args);
+
+HostApplicationBuilder builder = Host.CreateApplicationBuilder(settings);
 
 using IHost host = builder.Build();
 

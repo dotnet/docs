@@ -48,6 +48,10 @@ public static class StackallocOperator
         Span<int> first = stackalloc int[3] { 1, 2, 3 };
         Span<int> second = stackalloc int[] { 1, 2, 3 };
         ReadOnlySpan<int> third = stackalloc[] { 1, 2, 3 };
+
+        // Using collection expressions:
+        Span<int> fourth = [1, 2, 3];
+        ReadOnlySpan<int> fifth = [1, 2, 3];
         // </SnippetStackallocInit>
     }
 
@@ -57,6 +61,10 @@ public static class StackallocOperator
         Span<int> numbers = stackalloc[] { 1, 2, 3, 4, 5, 6 };
         var ind = numbers.IndexOfAny(stackalloc[] { 2, 4, 6, 8 });
         Console.WriteLine(ind);  // output: 1
+
+        Span<int> numbers2 = [1, 2, 3, 4, 5, 6];
+        var ind2 = numbers2.IndexOfAny([2, 4, 6, 8]);
+        Console.WriteLine(ind2);  // output: 1
         // </SnippetNested>
     }
 

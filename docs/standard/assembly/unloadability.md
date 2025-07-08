@@ -3,12 +3,12 @@ title: "How to use and debug assembly unloadability in .NET"
 description: "Learn how to use collectible AssemblyLoadContext for loading and unloading managed assemblies and how to debug issues preventing the unloading success."
 author: "janvorli"
 ms.author: "janvorli"
-ms.date: 09/16/2022
+ms.date: 11/13/2023
 ms.topic: how-to
 ---
 # How to use and debug assembly unloadability in .NET
 
-.NET Core 3.0 introduced the ability to load and later unload a set of assemblies. In .NET Framework, custom app domains were used for this purpose, but .NET \[Core] only supports a single default app domain.
+.NET (Core) introduced the ability to load and later unload a set of assemblies. In .NET Framework, custom app domains were used for this purpose, but .NET (Core) only supports a single default app domain.
 
 Unloadability is supported through <xref:System.Runtime.Loader.AssemblyLoadContext>. You can load a set of assemblies into a collectible `AssemblyLoadContext`, execute methods in them or just inspect them using reflection, and finally unload the `AssemblyLoadContext`. That unloads the assemblies loaded into the `AssemblyLoadContext`.
 
@@ -21,7 +21,7 @@ There's one noteworthy difference between the unloading using `AssemblyLoadConte
 
 ## Use collectible AssemblyLoadContext
 
-This section contains a detailed step-by-step tutorial that shows a simple way to load a .NET Core application into a collectible `AssemblyLoadContext`, execute its entry point, and then unload it. You can find a complete sample at [https://github.com/dotnet/samples/tree/main/core/tutorials/Unloading](https://github.com/dotnet/samples/tree/main/core/tutorials/Unloading).
+This section contains a detailed step-by-step tutorial that shows a simple way to load a .NET (Core) application into a collectible `AssemblyLoadContext`, execute its entry point, and then unload it. You can find a complete sample at <https://github.com/dotnet/samples/tree/main/core/tutorials/Unloading>.
 
 ### Create a collectible AssemblyLoadContext
 
@@ -45,17 +45,17 @@ You can create an instance of the custom `AssemblyLoadContext` and load an assem
 
 [!code-csharp[Part 1](~/samples/snippets/standard/assembly/unloading/simple_example.cs#3)]
 
-For each of the assemblies referenced by the loaded assembly, the `TestAssemblyLoadContext.Load` method is called so that the `TestAssemblyLoadContext` can decide where to get the assembly from. In our case, it returns `null` to indicate that it should be loaded into the default context from locations that the runtime uses to load assemblies by default.
+For each of the assemblies referenced by the loaded assembly, the `TestAssemblyLoadContext.Load` method is called so that the `TestAssemblyLoadContext` can decide where to get the assembly from. In this case, it returns `null` to indicate that it should be loaded into the default context from locations that the runtime uses to load assemblies by default.
 
 Now that an assembly was loaded, you can execute a method from it. Run the `Main` method:
 
 [!code-csharp[Part 2](~/samples/snippets/standard/assembly/unloading/simple_example.cs#4)]
 
-After the `Main` method returns, you can initiate unloading by either calling the `Unload` method on the custom `AssemblyLoadContext` or getting rid of the reference you have to the `AssemblyLoadContext`:
+After the `Main` method returns, you can initiate unloading by either calling the `Unload` method on the custom `AssemblyLoadContext` or removing the reference you have to the `AssemblyLoadContext`:
 
 [!code-csharp[Part 3](~/samples/snippets/standard/assembly/unloading/simple_example.cs#5)]
 
-This is sufficient to unload the test assembly. Let's actually put all of this into a separate non-inlineable method to ensure that the `TestAssemblyLoadContext`, `Assembly`, and `MethodInfo` (the `Assembly.EntryPoint`) can't be kept alive by stack slot references (real- or JIT-introduced locals). That could keep the `TestAssemblyLoadContext` alive and prevent the unload.
+This is sufficient to unload the test assembly. Next, you'll put all of this into a separate noninlineable method to ensure that the `TestAssemblyLoadContext`, `Assembly`, and `MethodInfo` (the `Assembly.EntryPoint`) can't be kept alive by stack slot references (real- or JIT-introduced locals). That could keep the `TestAssemblyLoadContext` alive and prevent the unload.
 
 Also, return a weak reference to the `AssemblyLoadContext` so that you can use it later to detect unload completion.
 
@@ -65,24 +65,31 @@ Now you can run this function to load, execute, and unload the assembly.
 
 [!code-csharp[Part 5](~/samples/snippets/standard/assembly/unloading/simple_example.cs#6)]
 
-However, the unload doesn't complete immediately. As previously mentioned, it relies on the garbage collector to collect all the objects from the test assembly. In many cases, it isn't necessary to wait for the unload completion. However, there are cases where it's useful to know that the unload has finished. For example, you may want to delete the assembly file that was loaded into the custom `AssemblyLoadContext` from disk. In such a case, the following code snippet can be used. It triggers garbage collection and waits for pending finalizers in a loop until the weak reference to the custom `AssemblyLoadContext` is set to `null`, indicating the target object was collected. In most cases, just one pass through the loop is required. However, for more complex cases where objects created by the code running in the `AssemblyLoadContext` have finalizers, more passes may be needed.
+However, the unload doesn't complete immediately. As previously mentioned, it relies on the garbage collector to collect all the objects from the test assembly. In many cases, it isn't necessary to wait for the unload completion. However, there are cases where it's useful to know that the unload has finished. For example, you might want to delete the assembly file that was loaded into the custom `AssemblyLoadContext` from disk. In such a case, the following code snippet can be used. It triggers garbage collection and waits for pending finalizers in a loop until the weak reference to the custom `AssemblyLoadContext` is set to `null`, indicating the target object was collected. In most cases, just one pass through the loop is required. However, for more complex cases where objects created by the code running in the `AssemblyLoadContext` have finalizers, more passes might be needed.
 
 [!code-csharp[Part 6](~/samples/snippets/standard/assembly/unloading/simple_example.cs#7)]
 
+### Limitations
+
+Assemblies loaded in a collectible `AssemblyLoadContext` must abide by the general [restrictions on collectible assemblies](../../fundamentals/reflection/collectible-assemblies.md#restrictions-on-collectible-assemblies). The following limitations additionally apply:
+
+* Assemblies written in C++/CLI are not supported.
+* [ReadyToRun](../../core/deploying/ready-to-run.md) generated code will be ignored.
+
 ### The Unloading event
 
-In some cases, it may be necessary for the code loaded into a custom `AssemblyLoadContext` to perform some cleanup when the unloading is initiated. For example, it may need to stop threads or clean up strong GC handles. The `Unloading` event can be used in such cases. A handler that performs the necessary cleanup can be hooked to this event.
+In some cases, it might be necessary for the code loaded into a custom `AssemblyLoadContext` to perform some cleanup when the unloading is initiated. For example, it might need to stop threads or clean up strong GC handles. The `Unloading` event can be used in such cases. You can hook a handler that performs the necessary cleanup to this event.
 
 ### Troubleshoot unloadability issues
 
-Due to the cooperative nature of the unloading, it's easy to forget about references that may be keeping the stuff in a collectible `AssemblyLoadContext` alive and preventing unload. Here is a summary of entities (some of them non-obvious) that can hold the references:
+Due to the cooperative nature of the unloading, it's easy to forget about references that might be keeping the stuff in a collectible `AssemblyLoadContext` alive and preventing unload. Here's a summary of entities (some of them nonobvious) that can hold the references:
 
 - Regular references held from outside of the collectible `AssemblyLoadContext` that are stored in a stack slot or a processor register (method locals, either explicitly created by the user code or implicitly by the just-in-time (JIT) compiler), a static variable, or a strong (pinning) GC handle, and transitively pointing to:
   - An assembly loaded into the collectible `AssemblyLoadContext`.
   - A type from such an assembly.
   - An instance of a type from such an assembly.
 - Threads running code from an assembly loaded into the collectible `AssemblyLoadContext`.
-- Instances of custom, non-collectible `AssemblyLoadContext` types created inside of the collectible `AssemblyLoadContext`.
+- Instances of custom, noncollectible `AssemblyLoadContext` types created inside of the collectible `AssemblyLoadContext`.
 - Pending <xref:System.Threading.RegisteredWaitHandle> instances with callbacks set to methods in the custom `AssemblyLoadContext`.
 
 > [!TIP]
@@ -93,11 +100,11 @@ Due to the cooperative nature of the unloading, it's easy to forget about refere
 
 ## Debug unloading issues
 
-Debugging issues with unloading can be tedious. You can get into situations where you don't know what can be holding an `AssemblyLoadContext` alive, but the unload fails. The best weapon to help with that is WinDbg (LLDB on Unix) with the SOS plugin. You need to find what's keeping a `LoaderAllocator` belonging to the specific `AssemblyLoadContext` alive. The SOS plugin allows you to look at GC heap objects, their hierarchies, and roots.
+Debugging issues with unloading can be tedious. You can get into situations where you don't know what can be holding an `AssemblyLoadContext` alive, but the unload fails. The best tool to help with that is WinDbg (or LLDB on Unix) with the SOS plugin. You need to find what's keeping a `LoaderAllocator` that belongs to the specific `AssemblyLoadContext` alive. The SOS plugin lets you look at GC heap objects, their hierarchies, and roots.
 
-To load the plugin into the debugger, enter the following command in the debugger command line:
+To load the SOS plugin into the debugger, enter one of the following commands in the debugger command line.
 
-In WinDbg (it seems WinDbg does that automatically when breaking into .NET Core application):
+In WinDbg (if it's not already loaded):
 
 ```console
 .loadby sos coreclr
@@ -109,7 +116,7 @@ In LLDB:
 plugin load /path/to/libsosplugin.so
 ```
 
-Let's debug an example program that has problems with unloading. Source code is included below. When you run it under WinDbg, the program breaks into the debugger right after attempting to check for the unload success. You can then start looking for the culprits.
+Now you'll debug an example program that has problems with unloading. The source code is available in the [Example source code](#example-source-code) section. When you run it under WinDbg, the program breaks into the debugger right after attempting to check for the unload success. You can then start looking for the culprits.
 
 > [!TIP]
 > If you debug using LLDB on Unix, the SOS commands in the following examples don't have the `!` in front of them.
@@ -118,7 +125,7 @@ Let's debug an example program that has problems with unloading. Source code is 
 !dumpheap -type LoaderAllocator
 ```
 
-This command dumps all objects with a type name containing `LoaderAllocator` that are in the GC heap. Here is an example:
+This command dumps all objects with a type name containing `LoaderAllocator` that are in the GC heap. Here's an example:
 
 ```console
          Address               MT     Size
@@ -132,17 +139,17 @@ Statistics:
 Total 2 objects
 ```
 
-In the "Statistics:" part below, check the `MT` (`MethodTable`) belonging to the `System.Reflection.LoaderAllocator`, which is the object we care about. Then, in the list at the beginning, find the entry with `MT` matching that one and get the address of the object itself. In our case, it is "000002b78000ce40".
+In the "Statistics:" part, check the `MT` (`MethodTable`) that belongs to the `System.Reflection.LoaderAllocator`, which is the object you care about. Then, in the list at the beginning, find the entry with `MT` that matches that one, and get the address of the object itself. In this case, it's "000002b78000ce40".
 
-Now that we know the address of the `LoaderAllocator` object, we can use another command to find its GC roots:
+Now that you know the address of the `LoaderAllocator` object, you can use another command to find its GC roots:
 
 ```console
-!gcroot -all 0x000002b78000ce40
+!gcroot 0x000002b78000ce40
 ```
 
-This command dumps the chain of object references that lead to the `LoaderAllocator` instance. The list starts with the root, which is the entity that keeps our `LoaderAllocator` alive and thus is the core of the problem. The root can be a stack slot, a processor register, a GC handle, or a static variable.
+This command dumps the chain of object references that lead to the `LoaderAllocator` instance. The list starts with the root, which is the entity that keeps the `LoaderAllocator` alive and thus is the core of the problem. The root can be a stack slot, a processor register, a GC handle, or a static variable.
 
-Here is an example of the output of the `gcroot` command:
+Here's an example of the output of the `gcroot` command:
 
 ```console
 Thread 4ac:
@@ -175,7 +182,7 @@ In the previous example, the first root is a local of type `System.Reflection.Ru
 
 The second root is a normal (strong) `GCHandle` that holds a reference to an instance of the `test.Test` class.
 
-The third root is a pinned `GCHandle`. This one is actually a static variable, but unfortunately, there is no way to tell. Statics for reference types are stored in a managed object array in internal runtime structures.
+The third root is a pinned `GCHandle`. This one is actually a static variable, but unfortunately, there's no way to tell. Statics for reference types are stored in a managed object array in internal runtime structures.
 
 Another case that can prevent unloading of an `AssemblyLoadContext` is when a thread has a frame of a method from an assembly loaded into the `AssemblyLoadContext` on its stack. You can check that by dumping managed call stacks of all threads:
 
@@ -229,14 +236,13 @@ OS Thread Id: 0x60bc (7)
 0000001fc727f2f0 00007ffadbc4cbe3 System.Threading.ExecutionContext.RunInternal(System.Threading.ExecutionContext, System.Threading.ContextCallback, System.Object)
 0000001fc727f568 00007ffae5fdc1e3 [GCFrame: 0000001fc727f568]
 0000001fc727f7f0 00007ffae5fdc1e3 [DebuggerU2MCatchHandlerFrame: 0000001fc727f7f0]
-
 ```
 
 As you can see, the last thread has `test.Program.ThreadProc()`. This is a function from the assembly loaded into the `AssemblyLoadContext`, and so it keeps the `AssemblyLoadContext` alive.
 
-## Example source with unloadability issues
+## Example source code
 
-The following code is used in the previous debugging example.
+The following code that contains unloadability issues is used in the previous debugging example.
 
 ### Main testing program
 

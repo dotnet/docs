@@ -1,5 +1,5 @@
 ---
-title: "Tuple types - C# reference"
+title: "Tuple types"
 description: "C# tuples: lightweight data structures that you can use to group loosely related data elements. Tuples introduce a type that contains multiple public members."
 ms.date: 04/24/2023
 helpviewer_keywords:
@@ -25,7 +25,7 @@ You can define tuples with an arbitrary large number of elements:
 
 ## Use cases of tuples
 
-One of the most common use cases of tuples is as a method return type. That is, instead of defining [`out` method parameters](../keywords/out-parameter-modifier.md), you can group method results in a tuple return type, as the following example shows:
+One of the most common use cases of tuples is as a method return type. That is, instead of defining [`out` method parameters](../keywords/method-parameters.md#out-parameter-modifier), you can group method results in a tuple return type, as the following example shows:
 
 :::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/ValueTuples.cs" id="MultipleReturns":::
 
@@ -63,7 +63,7 @@ At compile time, the compiler replaces non-default field names with the correspo
 > [!TIP]
 > Enable .NET code style rule [IDE0037](../../../fundamentals/code-analysis/style-rules/ide0037.md) to set a preference on inferred or explicit tuple field names.
 
-Beginning with C# 12, you can specify an alias for a tuple type with a [`using` directive](../keywords/using-directive.md#using-alias). The following example adds a `global using` alias for a tuple type with two integer values for an allowed `Min` and `Max` value:
+Beginning with C# 12, you can specify an alias for a tuple type with a [`using` directive](../keywords/using-directive.md#the-using-alias). The following example adds a `global using` alias for a tuple type with two integer values for an allowed `Min` and `Max` value:
 
 :::code language="csharp" source="snippets/shared/ValueTuples.cs" id="AliasTupleType":::
 
@@ -143,7 +143,7 @@ The `==` and `!=` operators compare tuples in short-circuiting way. That is, an 
 
 ## Tuples as out parameters
 
-Typically, you refactor a method that has [`out` parameters](../keywords/out-parameter-modifier.md) into a method that returns a tuple. However, there are cases in which an `out` parameter can be of a tuple type. The following example shows how to work with tuples as `out` parameters:
+Typically, you refactor a method that has [`out` parameters](../keywords/method-parameters.md#out-parameter-modifier) into a method that returns a tuple. However, there are cases in which an `out` parameter can be of a tuple type. The following example shows how to work with tuples as `out` parameters:
 
 :::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/ValueTuples.cs" id="TupleAsOutParameter":::
 
@@ -160,11 +160,10 @@ C# tuples, which are backed by <xref:System.ValueTuple?displayProperty=nameWithT
 For more information, see:
 
 - [Tuple types](/dotnet/csharp/language-reference/language-specification/types#8311-tuple-types)
-- [Tuple equality operators](/dotnet/csharp/language-reference/language-specification/expressions#111211-tuple-equality-operators)
+- [Tuple equality operators](/dotnet/csharp/language-reference/language-specification/expressions#121211-tuple-equality-operators)
 
 ## See also
 
-- [C# reference](../index.md)
 - [Value types](value-types.md)
 - [Choosing between anonymous and tuple types](../../../standard/base-types/choosing-between-anonymous-and-tuple.md)
 - <xref:System.ValueTuple?displayProperty=nameWithType>

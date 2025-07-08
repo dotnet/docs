@@ -2,13 +2,9 @@
 
 namespace CustomProvider.Example.Providers;
 
-public class EntityConfigurationSource : IConfigurationSource
+public sealed class EntityConfigurationSource(
+    string? connectionString) : IConfigurationSource
 {
-    private readonly string? _connectionString;
-
-    public EntityConfigurationSource(string? connectionString) =>
-        _connectionString = connectionString;
-
     public IConfigurationProvider Build(IConfigurationBuilder builder) =>
-        new EntityConfigurationProvider(_connectionString);
+        new EntityConfigurationProvider(connectionString);
 }

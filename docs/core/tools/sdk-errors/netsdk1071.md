@@ -15,15 +15,15 @@ When the .NET SDK issues warning NETSDK1071, it suggests there may be a version 
 
 ```xml
 <PropertyGroup>
-  <TargetFramework>netcoreapp3.1</TargetFramework>
+  <TargetFramework>net6.0</TargetFramework>
 </PropertyGroup>
 ```
 
-Since the TargetFramework automatically brings in a version of the metapackage, the versions will conflict should they ever differ.
+Since the `TargetFramework` automatically brings in a version of the metapackage, the versions will conflict should they ever differ.
 
 To resolve this:
 
-1. Consider, when targeting .NET Core or .NET Standard, avoiding explicit references to `Microsoft.NETCore.App` or `NETStandard.Library` in your project file.
+1. When you target .NET Core or .NET Standard, consider avoiding explicit references to `Microsoft.NETCore.App` or `NETStandard.Library` in your project file.
 2. If you need a specific version of the runtime when targeting .NET Core, use the `<RuntimeFrameworkVersion>`property instead of referencing the metapackage directly. As an example, this could happen if you're using [self-contained deployments](../../deploying/index.md#publish-self-contained) and need a specific patch of the 1.0.0 LTS runtime.
 3. If you need a specific version of `NetStandard.Library` when targeting .NET Standard, you can use the `<NetStandardImplicitPackageVersion>` property and set it to the version you need.
 4. Don't explicitly add or update references to either `Microsoft.NETCore.App` or `NETSTandard.Library` in .NET Framework projects. NuGet automatically installs any version of `NETStandard.Library` you need when using a .NET Standard-based NuGet package.

@@ -183,7 +183,7 @@ Anonymous records have a number of characteristics that are essential to fully u
 
 ### Anonymous records are nominal
 
-Anonymous records are [nominal types](https://en.wikipedia.org/wiki/Nominal_type_system). They are best thought as named [record](records.md) types (which are also nominal) that do not require an up-front declaration.
+Anonymous records are [nominal types](https://en.wikipedia.org/wiki/Nominal_type_system). They are best thought of as named [record](records.md) types (which are also nominal) that do not require an up-front declaration.
 
 Consider the following example with two anonymous record declarations:
 
@@ -234,7 +234,7 @@ Anonymous records are useful for sending lightweight data over a network without
 
 ### Anonymous records interoperate with C# anonymous types
 
-It is possible to use a .NET API that requires the use of [C# anonymous types](../../csharp/fundamentals/types/anonymous-types.md). C# anonymous types are trivial to interoperate with by using anonymous records. The following example shows how to use anonymous records to call a [LINQ](/dotnet/csharp/linq/) overload that requires an anonymous type:
+It is possible to use a .NET API that requires the use of [C# anonymous types](../../csharp/fundamentals/types/anonymous-types.md). C# anonymous types are trivial to interoperate with by using anonymous records. The following example shows how to use anonymous records to call a [LINQ](../../csharp/linq/index.md) overload that requires an anonymous type:
 
 ```fsharp
 open System.Linq

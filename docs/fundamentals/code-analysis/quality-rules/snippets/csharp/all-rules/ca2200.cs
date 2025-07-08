@@ -19,8 +19,7 @@ namespace ca2200
             }
             catch (ArithmeticException e)
             {
-                Console.WriteLine("Explicitly specified:{0}{1}",
-                   Environment.NewLine, e.StackTrace);
+                Console.WriteLine($"Explicitly specified:{Environment.NewLine}{e.StackTrace}");
             }
 
             try
@@ -29,8 +28,7 @@ namespace ca2200
             }
             catch (ArithmeticException e)
             {
-                Console.WriteLine("{0}Implicitly specified:{0}{1}",
-                   Environment.NewLine, e.StackTrace);
+                Console.WriteLine($"{Environment.NewLine}Implicitly specified:{Environment.NewLine}{e.StackTrace}");
             }
         }
 

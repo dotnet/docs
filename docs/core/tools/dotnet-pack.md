@@ -1,7 +1,7 @@
 ---
 title: dotnet pack command
 description: The dotnet pack command creates NuGet packages for your .NET project.
-ms.date: 08/23/2021
+ms.date: 04/04/2024
 ---
 # dotnet pack
 
@@ -14,11 +14,12 @@ ms.date: 08/23/2021
 ## Synopsis
 
 ```dotnetcli
-dotnet pack [<PROJECT>|<SOLUTION>] [-c|--configuration <CONFIGURATION>]
-    [--force] [--include-source] [--include-symbols] [--interactive]
+dotnet pack [<PROJECT>|<SOLUTION>] [--artifacts-path <ARTIFACTS_DIR>]
+    [-c|--configuration <CONFIGURATION>] [--force]
+    [--include-source] [--include-symbols] [--interactive]
     [--no-build] [--no-dependencies] [--no-restore] [--nologo]
     [-o|--output <OUTPUT_DIRECTORY>] [--runtime <RUNTIME_IDENTIFIER>]
-    [-s|--serviceable] [-v|--verbosity <LEVEL>]
+    [-s|--serviceable] [--tl:[auto|on|off]] [-v|--verbosity <LEVEL>]
     [--version-suffix <VERSION_SUFFIX>]
 
 dotnet pack -h|--help
@@ -59,7 +60,9 @@ You can provide MSBuild properties to the `dotnet pack` command for the packing 
 
 ## Options
 
-[!INCLUDE [configuration](../../../includes/cli-configuration.md)]
+[!INCLUDE [artifacts-path](../../../includes/cli-artifacts-path.md)]
+
+[!INCLUDE [configuration](../../../includes/cli-configuration-publish-pack.md)]
 
 - **`--force`**
 
@@ -108,6 +111,8 @@ You can provide MSBuild properties to the `dotnet pack` command for the packing 
 - **`-s|--serviceable`**
 
   Sets the serviceable flag in the package. For more information, see [.NET Blog: .NET Framework 4.5.1 Supports Microsoft Security Updates for .NET NuGet Libraries](https://aka.ms/nupkgservicing).
+
+[!INCLUDE [tl](../../../includes/cli-tl.md)]
 
 [!INCLUDE [verbosity](../../../includes/cli-verbosity.md)]
 
@@ -171,10 +176,10 @@ You can provide MSBuild properties to the `dotnet pack` command for the packing 
   dotnet pack -p:TargetFrameworks=net45
   ```
 
-- Pack the project and use a specific runtime (Windows 10) for the restore operation:
+- Pack the project and use a specific runtime (Windows) for the restore operation:
 
   ```dotnetcli
-  dotnet pack --runtime win10-x64
+  dotnet pack --runtime win-x64
   ```
 
 - Pack the project using a *.nuspec* file:

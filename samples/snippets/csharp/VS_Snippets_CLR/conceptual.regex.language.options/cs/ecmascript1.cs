@@ -1,4 +1,4 @@
-﻿// <Snippet16>
+// <Snippet16>
 using System;
 using System.Text.RegularExpressions;
 
@@ -12,15 +12,15 @@ public class EcmaScriptExample
         {
             Console.Write("Canonical matching: ");
             if (Regex.IsMatch(value, pattern))
-                Console.WriteLine("'{0}' matches the pattern.", value);
+                Console.WriteLine($"'{value}' matches the pattern.");
             else
-                Console.WriteLine("{0} does not match the pattern.", value);
+                Console.WriteLine($"{value} does not match the pattern.");
 
             Console.Write("ECMAScript matching: ");
             if (Regex.IsMatch(value, pattern, RegexOptions.ECMAScript))
-                Console.WriteLine("'{0}' matches the pattern.", value);
+                Console.WriteLine($"'{value}' matches the pattern.");
             else
-                Console.WriteLine("{0} does not match the pattern.", value);
+                Console.WriteLine($"{value} does not match the pattern.");
             Console.WriteLine();
         }
     }

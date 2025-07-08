@@ -29,10 +29,10 @@ static void YieldReturn()
 static void YieldBreak()
 {
     // <YieldBreak>
-    Console.WriteLine(string.Join(" ", TakeWhilePositive(new[] { 2, 3, 4, 5, -1, 3, 4})));
+    Console.WriteLine(string.Join(" ", TakeWhilePositive(new int[] {2, 3, 4, 5, -1, 3, 4})));
     // Output: 2 3 4 5
 
-    Console.WriteLine(string.Join(" ", TakeWhilePositive(new[] { 9, 8, 7 })));
+    Console.WriteLine(string.Join(" ", TakeWhilePositive(new int[] {9, 8, 7})));
     // Output: 9 8 7
 
     IEnumerable<int> TakeWhilePositive(IEnumerable<int> numbers)

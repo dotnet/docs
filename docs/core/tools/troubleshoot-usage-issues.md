@@ -55,7 +55,7 @@ The .NET CLI tries to add the default location to the PATH environment variable 
 * If you've installed the .NET Core 3.0 SDK and you've set the `DOTNET_ADD_GLOBAL_TOOLS_TO_PATH` environment variable to `false`.
 * If you've installed .NET Core 2.2 SDK or earlier versions, and you've set the `DOTNET_SKIP_FIRST_TIME_EXPERIENCE` environment variable to `true`.
 
-In these scenarios or if you specified the `--tool-path` option, the `PATH` environment variable on your machine doesn't automatically contain the path where you installed the global tool. In that case, append the tool location (for example, `$HOME/.dotnet/tools`) to the `PATH` environment variable by using whatever method your shell provides for updating environment variables. For more information, see [.NET tools](global-tools.md).
+In these scenarios or if you specified the `--tool-path` option [while installing a dotnet tool](global-tools.md#install-a-global-tool-in-a-custom-location), the `PATH` environment variable on your machine doesn't automatically contain the path where you installed the global tool. In that case, append the tool location (for example, `$HOME/.dotnet/tools`) to the `PATH` environment variable by using whatever method your shell provides for updating environment variables. For more information, see [.NET tools](global-tools.md).
 
 #### Local tools
 
@@ -199,7 +199,7 @@ Most likely you've specified an alternative NuGet feed, and that feed requires a
   </configuration>
   ```
 
-  For more information, see [nuget.config reference](/nuget/reference/nuget-config-file)
+  For more information, see [nuget.config reference](/nuget/reference/nuget-config-file).
 
 - Add the required credentials to the config file.
 

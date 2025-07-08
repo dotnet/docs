@@ -30,7 +30,7 @@ In this tutorial, you:
 
 ## Prerequisites
 
-- For a list of pre-requisites and installation instructions, visit the [Model Builder installation guide](../how-to-guides/install-model-builder.md).
+- For a list of prerequisites and installation instructions, visit the [Model Builder installation guide](../how-to-guides/install-model-builder.md).
 - Azure account. If you don't have one, [create a free Azure account](https://aka.ms/AMLFree).
 - ASP.NET and web development workload.
 
@@ -61,7 +61,7 @@ The EuroSAT dataset contains a collection of satellite images divided into ten c
 
 When first adding Model Builder to the solution it will prompt you to create an `mbconfig` file. The `mbconfig` file keeps track of everything you do in Model Builder to allow you to reopen the session.
 
-1. In Solution Explorer, right-click the **LandUse** project, and select **Add > Machine Learning Model...**.
+1. In Solution Explorer, right-click the **LandUse** project, and select **Add > Machine Learning Model**.
 1. In the dialog, name the Model Builder project **LandUse**, and click **Add**.
 
 ## Choose a scenario

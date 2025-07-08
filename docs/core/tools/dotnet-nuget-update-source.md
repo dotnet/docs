@@ -11,6 +11,9 @@ ms.date: 03/20/2020
 
 `dotnet nuget update source` - Update a NuGet source.
 
+> [!NOTE]
+> Use package sources that you trust.
+
 ## Synopsis
 
 ```dotnetcli
@@ -39,6 +42,10 @@ The `dotnet nuget update source` command updates an existing source in your NuGe
 
   Password to be used when connecting to an authenticated source.
 
+> [!NOTE]
+> Be aware that encrypted passwords are only supported on Windows.
+> Moreover, they can only be decrypted on the same machine and by the same user who originally encrypted them.
+
 - **`-s|--source <SOURCE>`**
 
   Path to the package source.
@@ -46,6 +53,10 @@ The `dotnet nuget update source` command updates an existing source in your NuGe
 - **`--store-password-in-clear-text`**
 
   Enables storing portable package source credentials by disabling password encryption.
+  
+> [!WARNING]
+> Storing passwords in clear text is strongly discouraged.
+> For more information on managing credentials securely, refer to the [security best practices for consuming packages from private feeds](/nuget/consume-packages/consuming-packages-authenticated-feeds#security-best-practices-for-managing-credentials).
 
 - **`-u|--username <USER>`**
 
@@ -64,6 +75,8 @@ The `dotnet nuget update source` command updates an existing source in your NuGe
   ```
 
 ## See also
+
+- [Security best practices for managing package source credentials](/nuget/consume-packages/consuming-packages-authenticated-feeds#security-best-practices-for-managing-credentials)
 
 - [Package source sections in NuGet.config files](/nuget/reference/nuget-config-file#package-source-sections)
 

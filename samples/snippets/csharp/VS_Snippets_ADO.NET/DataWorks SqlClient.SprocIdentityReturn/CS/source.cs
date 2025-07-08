@@ -1,27 +1,30 @@
-﻿// <Snippet1>
 using System;
 using System.Data;
 using System.Data.SqlClient;
 
-class Program
+static class Program
 {
     static void Main()
     {
-        string connectionString = GetConnectionString();
+        var connectionString = GetConnectionString();
         ReturnIdentity(connectionString);
         // Console.ReadLine();
     }
 
-    private static void ReturnIdentity(string connectionString)
+    static void ReturnIdentity(string connectionString)
     {
-        using (SqlConnection connection = new SqlConnection(connectionString))
+        // <Snippet1>
+        using (SqlConnection connection = new(connectionString))
         {
             // Create a SqlDataAdapter based on a SELECT query.
-            SqlDataAdapter adapter = new SqlDataAdapter("SELECT CategoryID, CategoryName FROM dbo.Categories", connection);
-
-            // Create a SqlCommand to execute the stored procedure.
-            adapter.InsertCommand = new SqlCommand("InsertCategory", connection);
-            adapter.InsertCommand.CommandType = CommandType.StoredProcedure;
+            SqlDataAdapter adapter = new("SELECT CategoryID, CategoryName FROM dbo.Categories", connection)
+            {
+                // Create a SqlCommand to execute the stored procedure.
+                InsertCommand = new SqlCommand("InsertCategory", connection)
+                {
+                    CommandType = CommandType.StoredProcedure
+                }
+            };
 
             // Create a parameter for the ReturnValue.
             SqlParameter parameter = adapter.InsertCommand.Parameters.Add("@RowCount", SqlDbType.Int);
@@ -36,7 +39,7 @@ class Program
             parameter.Direction = ParameterDirection.Output;
 
             // Create a DataTable and fill it.
-            DataTable categories = new DataTable();
+            DataTable categories = new();
             adapter.Fill(categories);
 
             // Add a new row.
@@ -48,22 +51,18 @@ class Program
             adapter.Update(categories);
 
             // Retrieve the ReturnValue.
-            Int32 rowCount = (Int32)adapter.InsertCommand.Parameters["@RowCount"].Value;
+            var rowCount = (int)adapter.InsertCommand.Parameters["@RowCount"].Value;
 
-            Console.WriteLine("ReturnValue: {0}", rowCount.ToString());
+            Console.WriteLine($"ReturnValue: {rowCount.ToString()}");
             Console.WriteLine("All Rows:");
             foreach (DataRow row in categories.Rows)
             {
-                    Console.WriteLine("  {0}: {1}", row[0], row[1]);
+                Console.WriteLine($"  {row[0]}: {row[1]}");
             }
         }
+        // </Snippet1>
     }
 
-    static private string GetConnectionString()
-    {
-        // To avoid storing the connection string in your code,
-        // you can retrieve it from a configuration file.
-        return "Data Source=(local);Initial Catalog=Northwind;Integrated Security=true";
-    }
+    static string GetConnectionString() =>
+        throw new NotImplementedException();
 }
-// </Snippet1>

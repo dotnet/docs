@@ -1,4 +1,4 @@
-﻿// <Snippet9>
+// <Snippet9>
 using System;
 using System.Text.RegularExpressions;
 
@@ -13,16 +13,16 @@ public class Explicit1Example
         Console.WriteLine("With implicit captures:");
         foreach (Match match in Regex.Matches(input, pattern))
         {
-            Console.WriteLine("The match: {0}", match.Value);
+            Console.WriteLine($"The match: {match.Value}");
             int groupCtr = 0;
             foreach (Group group in match.Groups)
             {
-                Console.WriteLine("   Group {0}: {1}", groupCtr, group.Value);
+                Console.WriteLine($"   Group {groupCtr}: {group.Value}");
                 groupCtr++;
                 int captureCtr = 0;
                 foreach (Capture capture in group.Captures)
                 {
-                    Console.WriteLine("      Capture {0}: {1}", captureCtr, capture.Value);
+                    Console.WriteLine($"      Capture {captureCtr}: {capture.Value}");
                     captureCtr++;
                 }
             }
@@ -31,16 +31,16 @@ public class Explicit1Example
         Console.WriteLine("With explicit captures only:");
         foreach (Match match in Regex.Matches(input, pattern, RegexOptions.ExplicitCapture))
         {
-            Console.WriteLine("The match: {0}", match.Value);
+            Console.WriteLine($"The match: {match.Value}");
             int groupCtr = 0;
             foreach (Group group in match.Groups)
             {
-                Console.WriteLine("   Group {0}: {1}", groupCtr, group.Value);
+                Console.WriteLine($"   Group {groupCtr}: {group.Value}");
                 groupCtr++;
                 int captureCtr = 0;
                 foreach (Capture capture in group.Captures)
                 {
-                    Console.WriteLine("      Capture {0}: {1}", captureCtr, capture.Value);
+                    Console.WriteLine($"      Capture {captureCtr}: {capture.Value}");
                     captureCtr++;
                 }
             }

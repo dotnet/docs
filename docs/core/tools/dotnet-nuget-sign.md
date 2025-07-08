@@ -64,14 +64,19 @@ The `dotnet nuget sign` command signs all the packages matching the first argume
 
 - **`--certificate-subject-name <SUBJECTNAME>`**
 
-  Specifies the subject name of the certificate used to search a local certificate store for the certificate. The search is a case-insensitive string comparison using the supplied value, which will find all certificates with the subject name containing that string, regardless of other subject values. The certificate store can be specified by `--certificate-store-name` and `--certificate-store-location` options.
+  Specifies the subject name of the certificate used to search a local certificate store for the certificate. The search is a case-insensitive string comparison using the supplied value, which finds all certificates with the subject name containing that string, regardless of other subject values. The certificate store can be specified by `--certificate-store-name` and `--certificate-store-location` options.
 
   > [!NOTE]
   > This option currently supports only a single matching certificate in the result. If there are multiple matching certificates in the result, or no matching certificate in the result, the sign command will fail.
 
 - **`--certificate-fingerprint <FINGERPRINT>`**
 
-   SHA-1 fingerprint of the certificate used to search a local certificate store for the certificate.
+  Specifies the fingerprint of the certificate used to search a local certificate store for the certificate.
+
+  Starting with .NET 9, this option can be used to specify the SHA-1, SHA-256, SHA-384, or SHA-512 fingerprint of the certificate.
+  However, a `NU3043` warning is raised when a SHA-1 certificate fingerprint is used because it is no longer considered secure.
+
+  All the previous versions of the .NET SDK continue to accept only SHA-1 certificate fingerprint.
 
 - **`--certificate-password <PASSWORD>`**
 
@@ -86,7 +91,7 @@ The `dotnet nuget sign` command signs all the packages matching the first argume
 
 - **`-o|--output`**
 
-  Specifies the directory where the signed package should be saved. If this option is not specified, by default the original package is overwritten by the signed package.
+  Specifies the directory where the signed package should be saved. If this option isn't specified, by default the original package is overwritten by the signed package.
 
 - **`--overwrite`**
 

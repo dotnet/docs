@@ -6,38 +6,38 @@ ms.assetid: 98701444-b9bc-4978-9548-89ac3394147d
 ---
 # ICorDebugMergedAssemblyRecord::GetIndex Method
 
-Gets the assembly's prefix index.  
-  
-## Syntax  
-  
-```cpp  
-HRESULT GetIndex(  
-   [out] ULONG32 *pIndex  
-);  
-```  
-  
-## Parameters  
+Gets the assembly's prefix index.
 
- `pIndex`  
- [out] A pointer to the prefix index.  
-  
-## Remarks  
+## Syntax
 
- The prefix index is used to prevent name collisions in the merged metadata type names.  
-  
+```cpp
+HRESULT GetIndex(
+   [out] ULONG32 *pIndex
+);
+```
+
+## Parameters
+
+ `pIndex`
+ [out] A pointer to the prefix index.
+
+## Remarks
+
+ The prefix index is used to prevent name collisions in the merged metadata type names.
+
 > [!NOTE]
-> This method is available with .NET Native only.  
-  
-## Requirements  
+> This method is available with .NET Native only.
 
- **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
-  
- **Header:** CorDebug.idl, CorDebug.h  
-  
- **Library:** CorGuids.lib  
-  
- **.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
-  
+## Requirements
+
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).
+
+ **Header:** CorDebug.idl, CorDebug.h
+
+ **Library:** CorGuids.lib
+
+ **.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]
+
 ## See also
 
 - [ICorDebugMergedAssemblyRecord Interface](icordebugmergedassemblyrecord-interface.md)

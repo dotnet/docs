@@ -1,7 +1,7 @@
 ---
 title: "with expression - create new objects that are modified copies of existing objects"
 description: "Learn about a with expression that performs nondestructive mutation of C# records and structures. The `with` keyword provides the means to modify one or more properties in the new object."
-ms.date: 11/28/2022
+ms.date: 11/22/2024
 f1_keywords:
   - "with_CSharpKeyword"
 helpviewer_keywords:
@@ -10,11 +10,11 @@ helpviewer_keywords:
 ---
 # with expression - Nondestructive mutation creates a new object with modified properties
 
-Available in C# 9.0 and later, a `with` expression produces a copy of its operand with the specified properties and fields modified. You use the [object initializer](../../programming-guide/classes-and-structs/object-and-collection-initializers.md) syntax to specify what members to modify and their new values:
+A `with` expression produces a copy of its operand with the specified properties and fields modified. You use the [object initializer](../../programming-guide/classes-and-structs/object-and-collection-initializers.md) syntax to specify what members to modify and their new values:
 
 :::code language="csharp" source="snippets/with-expression/BasicExample.cs" :::
 
-In C# 9.0, a left-hand operand of a `with` expression must be of a [record type](../builtin-types/record.md). Beginning with C# 10, a left-hand operand of a `with` expression can also be of a [structure type](../builtin-types/struct.md) or an [anonymous type](../../fundamentals/types/anonymous-types.md).
+The left-hand operand of a `with` expression can be of a [record type](../builtin-types/record.md). A left-hand operand of a `with` expression can also be of a [structure type](../builtin-types/struct.md) or an [anonymous type](../../fundamentals/types/anonymous-types.md).
 
 The result of a `with` expression has the same run-time type as the expression's operand, as the following example shows:
 
@@ -41,7 +41,6 @@ For more information, see the following sections of the [records feature proposa
 
 ## See also
 
-- [C# reference](../index.md)
 - [C# operators and expressions](index.md)
 - [Records](../builtin-types/record.md)
 - [Structure types](../builtin-types/struct.md)

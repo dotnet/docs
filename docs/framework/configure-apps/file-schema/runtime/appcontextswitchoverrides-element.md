@@ -29,14 +29,14 @@ Defines one or more switches used by the <xref:System.AppContext> class to provi
 
 ### Attributes
 
-|Attribute|Description|
-|---------------|-----------------|
-|`value`|Required attribute.<br /><br /> Defines one or more switch names and their associated Boolean values.|
+| Attribute | Description                                                                     |
+|-----------|---------------------------------------------------------------------------------|
+| `value`   | Required. Defines one or more switch names and their associated Boolean values. |
 
 ### value Attribute
 
-|Value|Description|
-|-----------|-----------------|
+| Value | Description |
+|-------|-------------|
 |"name=value"|A predefined switch name along with its value (`true` or `false`). Multiple switch name/value pairs are separated by semicolons (";"). For a list of predefined switch names supported by the .NET Framework, see the Remarks section.|
 
 ### Child Elements
@@ -45,21 +45,21 @@ Defines one or more switches used by the <xref:System.AppContext> class to provi
 
 ### Parent Elements
 
-|Element|Description|
-|-------------|-----------------|
+| Element | Description |
+|---------|-------------|
 |`configuration`|The root element in every configuration file used by the common language runtime and .NET Framework applications.|
 |`runtime`|Contains information about runtime initialization options.|
 
 ## Remarks
 
- Starting with .NET Framework 4.6, the `<AppContextSwitchOverrides>` element in a configuration file allows callers of an API to determine whether their app can take advantage of new functionality or preserve compatibility with previous versions of a library. For example, if the behavior of an API has changed between two versions of a library, the `<AppContextSwitchOverrides>` element allows callers of that API to opt out of the new behavior on versions of the library that support the new functionality. For apps that call APIs in the .NET Framework, the `<AppContextSwitchOverrides>` element can also allow callers whose apps target an earlier version of the .NET Framework to opt into new functionality if their app is running on a version of the .NET Framework that includes that functionality.
+ Starting with .NET Framework 4.6, the `<AppContextSwitchOverrides>` element in a configuration file allows callers of an API to determine whether their app can take advantage of new functionality or preserve compatibility with previous versions of a library. For example, if the behavior of an API has changed between two versions of a library, the `<AppContextSwitchOverrides>` element allows callers of that API to opt out of the new behavior on versions of the library that support the new functionality. For apps that call APIs in the .NET Framework, the `<AppContextSwitchOverrides>` element can also allow callers whose apps target an earlier version of the .NET Framework to opt in to new functionality if their app is running on a version of the .NET Framework that includes that functionality.
 
  The `value` attribute of the `<AppContextSwitchOverrides>` element consists of a single string that consists of one or more semicolon-delimited name/value pairs.  Each name identifies a compatibility switch, and its corresponding value is a Boolean (`true` or `false`) that indicates whether the switch is set. By default, the switch is `false`, and libraries  provide the new functionality. They only provide the previous functionality if the switch is set (that is, its value is `true`). This allows libraries to provide new behavior for an existing API while allowing callers who depend on the previous behavior to opt out of the new functionality.
 
 .NET Framework supports the following switches:
 
-|Switch name|Description|Introduced|
-|-----------------|-----------------|----------------|
+| Switch name | Description | Introduced |
+|-------------|-------------|------------|
 |`Switch.MS.Internal.`<br/>`DoNotApplyLayoutRoundingToMarginsAndBorderThickness`|Controls whether Windows Presentation Foundation uses legacy a algorithm for control layout. For more information, see [Mitigation: WPF Layout](../../../migration-guide/mitigation-wpf-layout.md).|.NET Framework 4.6|
 |`Switch.MS.Internal.`<br/>`UseSha1AsDefaultHashAlgorithmForDigitalSignatures`|Controls whether the default algorithm used for signing parts of a package by PackageDigitalSignatureManager is SHA1 or SHA256.<br>Due to collision problems with SHA1, Microsoft recommends SHA256.|.NET Framework 4.7.1|
 |`Switch.System.Activities.`<br/>`UseMD5CryptoServiceProviderForWFDebugger`|When set to `false`, allows debugging of XAML-based workflow projects with Visual Studio when FIPS is enabled. Without it, a <xref:System.NullReferenceException> is thrown in calls to methods in the System.Activities assembly.|.NET Framework 4.7|
@@ -81,7 +81,7 @@ Defines one or more switches used by the <xref:System.AppContext> class to provi
 |`Switch.System.IO.Ports.`<br/>`DoNotCatchSerialStreamThreadExceptions`|Controls whether operating system exceptions that are thrown on background threads created with <xref:System.IO.Ports.SerialPort> streams terminate the process.|.NET Framework 4.7.1|
 |`Switch.System.IO.`<br/>`UseLegacyPathHandling`|Controls whether legacy path normalization is used and URI paths are supported by the <xref:System.IO.Path.GetDirectoryName%2A?displayProperty=nameWithType> and <xref:System.IO.Path.GetPathRoot%2A?displayProperty=nameWithType> methods. For more information, see [Mitigation: Path Normalization](../../../migration-guide/mitigation-path-normalization.md) and [Mitigation: Path Colon Checks](../../../migration-guide/mitigation-path-colon-checks.md).|.NET Framework 4.6.2|
 |`Switch.System.`<br/>`MemberDescriptorEqualsReturnsFalseIfEquivalent`|Controls whether a test for equality compares the <xref:System.ComponentModel.MemberDescriptor.Category%2A?displayProperty=nameWithType> property of one object with the <xref:System.ComponentModel.MemberDescriptor.Description%2A?displayProperty=nameWithType> property of the second object. For more information, see [Incorrect implementation of MemberDescriptor.Equals](../../../migration-guide/retargeting/4.6.x.md#incorrect-implementation-of-memberdescriptorequals).|.NET Framework 4.6.2|
- `Switch.System.Net.`<br/>`DontCheckCertificateEKUs`|Disables certificate enhanced key usage (EKU) object identifier (OID) validation. An enhanced key usage (EKU) extension is a collection of object identifiers (OIDs) that indicate the applications that use the key.|.NET Framework 4.6|
+| `Switch.System.Net.`<br/>`DontCheckCertificateEKUs`|Disables certificate enhanced key usage (EKU) object identifier (OID) validation. An enhanced key usage (EKU) extension is a collection of object identifiers (OIDs) that indicate the applications that use the key.|.NET Framework 4.6|
 |`Switch.System.Net.`<br/>`DontEnableSchSendAuxRecord`|Disables TLS1.0 Browser Exploit Against SSL/TLS (BEAST) mitigation by disabling the use of SCH_SEND_AUX_RECORD.|.NET Framework 4.6|
 |`Switch.System.Net.`<br/>`DontEnableSchUseStrongCrypto`|Controls whether the <xref:System.Net.ServicePointManager?displayProperty=nameWithType> and <xref:System.Net.Security.SslStream?displayProperty=nameWithType> classes can use the SSL 3.0 protocol. For more information, see [Mitigation: TLS Protocols](../../../migration-guide/mitigation-tls-protocols.md).|.NET Framework 4.6|
 |`Switch.System.Net.`<br/>`DontEnableSystemDefaultTlsVersions`|Disables SystemDefault TLS versions reverting back to a default of Tls12, Tls11, Tls.|.NET Framework 4.7|
@@ -117,7 +117,7 @@ Defines one or more switches used by the <xref:System.AppContext> class to provi
 |`Switch.System.Windows.Data.Binding.`<br/>`IListIndexerHidesCustomIndexer`|Controls whether custom IList indexers are used incorrectly (`true`) or correctly (`false`) by the <xref:System.Windows.Data.Binding?displayProperty=nameWithType> class.|.NET Framework 4.8|
 |`Switch.System.Windows.DoNotScaleForDpiChanges`|Determines whether DPI changes occur on a per-system (a value of `false`) or per-monitor basis (a value of `true`).|.NET Framework 4.6.2|
 |`Switch.System.Windows.`<br/>`DoNotUsePresentationDpiCapabilityTier2OrGreater`|Controls whether improvements in sizing of controls in a <xref:System.Windows.Interop.HwndHost?displayProperty=nameWithType> when WPF is run in per-monitor aware mode are disabled (`true`) or enabled (`false`).|.NET Framework 4.8|
-|`Switch.System.Windows.Forms.`<br/>`DisconnectUiaProvidersOnWmDestroy`|Controls whether providers are disconnected when the corresponding control window is destroyed (`true`) or not (`false`). This switch provides an opt-in to a security fix to address a leak of <xref:System.Windows.Automation.Provider.IRawElementProviderSimple> objects.|.NET Framework 4.8|
+|`Switch.System.Windows.Forms.`<br/>`DisconnectUiaProvidersOnWmDestroy`|Controls whether providers are disconnected when the corresponding control window is destroyed (`true`) or not (`false`). This switch provides an opt-in to a performance fix to address a leak of <xref:System.Windows.Automation.Provider.IRawElementProviderSimple> objects.|.NET Framework 4.8|
 |`Switch.System.Windows.Forms.`<br/>`DomainUpDown.UseLegacyScrolling`|Determines whether the developer needs to specially handle the <xref:System.Windows.Forms.DomainUpDown.UpButton?displayProperty=nameWithType> action when control text is present. `true` to handle the <xref:System.Windows.Forms.DomainUpDown.UpButton> action; `false` for the <xref:System.Windows.Forms.DomainUpDown.UpButton?displayProperty=nameWithType> and <xref:System.Windows.Forms.DomainUpDown.DownButton?displayProperty=nameWithType> actions to be properly in sync.|.NET Framework 4.7.2|
 |`Switch.System.Windows.Forms.`<br />`DontSupportReentrantFilterMessage`|Opts out of the code that allows a custom <xref:System.Windows.Forms.IMessageFilter.PreFilterMessage%2A?displayProperty=nameWithType> implementation to safely filter messages without throwing an exception when the <xref:System.Windows.Forms.Application.FilterMessage%2A?displayProperty=nameWithType> method is called. For more information, see [Mitigation: Custom IMessageFilter.PreFilterMessage Implementations](../../../migration-guide/mitigation-custom-imessagefilter-prefiltermessage-implementations.md).|.NET Framework 4.6.1|
 |`Switch.System.Windows.Forms.`<br/>`UseLegacyContextMenuStripSourceControlValue`|Determines whether the <xref:System.Windows.Forms.ContextMenuStrip.SourceControl?displayProperty=nameWithType> property returns the source control when the user opens the menu from a nested <xref:System.Windows.Forms.ToolStripMenuItem> control. `true` to return `null`, the legacy behavior; `false` to return the source control.|.NET Framework 4.7.2|

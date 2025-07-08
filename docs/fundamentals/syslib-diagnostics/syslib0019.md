@@ -2,6 +2,8 @@
 title: SYSLIB0019 warning
 description: Learn about the RuntimeEnvironment obsoletions that generate compile-time warning SYSLIB0019.
 ms.date: 04/24/2021
+f1_keywords:
+  - syslib0019
 ---
 # SYSLIB0019: Some RuntimeEnvironment APIs are obsolete
 

@@ -1,6 +1,6 @@
 ---
 description: "Accessibility Levels - C# Reference"
-title: "Accessibility Levels - C# Reference"
+title: "Accessibility Levels"
 ms.date: 12/06/2017
 helpviewer_keywords: 
   - "access modifiers [C#], accessibility levels"
@@ -51,8 +51,6 @@ The accessibility of a nested type depends on its [accessibility domain](./acces
   
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](./index.md)
 - [Access Modifiers](./access-modifiers.md)
 - [Accessibility Domain](./accessibility-domain.md)

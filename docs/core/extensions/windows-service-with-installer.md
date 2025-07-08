@@ -3,7 +3,7 @@ title: Create a Windows Service installer
 description: Learn how to create a Windows Service installer project.
 author: IEvangelist
 ms.author: dapine
-ms.date: 06/12/2023
+ms.date: 12/13/2023
 ms.topic: tutorial
 ---
 
@@ -23,7 +23,7 @@ In this tutorial, you'll learn how to:
 ## Prerequisites
 
 - You're expected to have completed the [Create a Windows Service](windows-service.md) tutorial, or be prepared to clone the sample repo.
-- The [.NET 6.0 SDK or later](https://dotnet.microsoft.com/download/dotnet)
+- The [.NET 8.0 SDK or later](https://dotnet.microsoft.com/download/dotnet)
 - A Windows OS
 - A .NET integrated development environment (IDE)
   - Feel free to use [Visual Studio](https://visualstudio.microsoft.com)
@@ -65,15 +65,15 @@ Open the solution in Visual Studio, and select <kbd>F5</kbd> to ensure that the 
 
 The Windows Service app needs to handle installation switches. The setup project will call into the Windows Service app with `/Install` and `/Uninstall` switches during installation and uninstallation respectively. When these switches are present, the app will behave differently, in that it will only perform installation or uninstallation using the Windows Service Control Manager executable (_sc.exe_).
 
-For the app to call a separate process, install the [CliWrap](https://www.nuget.org/packages/CliWrap) NuGet package as a convenience. To install the `CliWrap` package, use the `dotnet add package` command:
+For the app to call a separate process, install the [CliWrap](https://www.nuget.org/packages/CliWrap) NuGet package as a convenience. To install the `CliWrap` package, use the following command.
 
 ```dotnetcli
 dotnet add App.WindowsService.csproj package CliWrap
 ```
 
-For more information, see [dotnet add package](../tools/dotnet-add-package.md).
+For more information, see [dotnet package add](../tools/dotnet-package-add.md).
 
-With `CliWrap` installed, open the _Program.cs_ file of the `App.WindowsService` project. After the `using` statements, but before the `IHost` is created, add the following code:
+With `CliWrap` installed, open the _Program.cs_ file of the `App.WindowsService` project. After the `using` directives, but before the `IHost` is created, add the following code:
 
 ```csharp
 using CliWrap;
@@ -86,7 +86,7 @@ if (args is { Length: 1 })
     {
         string executablePath =
             Path.Combine(AppContext.BaseDirectory, "App.WindowsService.exe");
-    
+
         if (args[0] is "/Install")
         {
             await Cli.Wrap("sc")
@@ -98,7 +98,7 @@ if (args is { Length: 1 })
             await Cli.Wrap("sc")
                 .WithArguments(new[] { "stop", ServiceName })
                 .ExecuteAsync();
-    
+
             await Cli.Wrap("sc")
                 .WithArguments(new[] { "delete", ServiceName })
                 .ExecuteAsync();
@@ -181,13 +181,13 @@ After the project reference has been added, configure the _Package.wxs_ file. Op
              Version="$(Version)"
              UpgradeCode="$(var.UpgradeCode)"
              Compressed="true">
-        
+
         <!-- Allow upgrades and prevent downgrades -->
         <MajorUpgrade DowngradeErrorMessage="A later version of [ProductName] is already installed. Setup will now exit." />
 
         <!-- Define the directory structure -->
         <Directory Id="TARGETDIR" Name="SourceDir">
-            <Directory Id="ProgramFilesFolder">
+            <Directory Id="ProgramFiles64Folder">
 
                 <!-- Create a folder inside program files -->
                 <Directory Id="ROOTDIRECTORY" Name="$(var.Manufacturer)">
@@ -204,7 +204,7 @@ After the project reference has been added, configure the _Package.wxs_ file. Op
 
             <!-- Create a single component which is the App.WindowsService.exe file -->
             <Component Id="ServiceExecutable" Bitness="always64">
-                
+
                 <!-- Copies the App.WindowsService.exe file using the
                      project reference preprocessor variables -->
                 <File Id="App.WindowsService.exe"

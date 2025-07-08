@@ -1,25 +1,17 @@
 ﻿namespace ConsoleDI.Example;
 
-internal sealed class ServiceLifetimeReporter
+internal sealed class ServiceLifetimeReporter(
+    IExampleTransientService transientService,
+    IExampleScopedService scopedService,
+    IExampleSingletonService singletonService)
 {
-    private readonly IExampleTransientService _transientService;
-    private readonly IExampleScopedService _scopedService;
-    private readonly IExampleSingletonService _singletonService;
-
-    public ServiceLifetimeReporter(
-        IExampleTransientService transientService,
-        IExampleScopedService scopedService,
-        IExampleSingletonService singletonService) =>
-        (_transientService, _scopedService, _singletonService) =
-            (transientService, scopedService, singletonService);
-
     public void ReportServiceLifetimeDetails(string lifetimeDetails)
     {
         Console.WriteLine(lifetimeDetails);
 
-        LogService(_transientService, "Always different");
-        LogService(_scopedService, "Changes only with lifetime");
-        LogService(_singletonService, "Always the same");
+        LogService(transientService, "Always different");
+        LogService(scopedService, "Changes only with lifetime");
+        LogService(singletonService, "Always the same");
     }
 
     private static void LogService<T>(T service, string message)

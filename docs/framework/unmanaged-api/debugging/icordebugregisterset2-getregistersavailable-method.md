@@ -2,64 +2,64 @@
 description: "Learn more about: ICorDebugRegisterSet2::GetRegistersAvailable Method"
 title: "ICorDebugRegisterSet2::GetRegistersAvailable Method"
 ms.date: "03/30/2017"
-api_name: 
+api_name:
   - "ICorDebugRegisterSet2.GetRegistersAvailable"
-api_location: 
+api_location:
   - "mscordbi.dll"
-api_type: 
+api_type:
   - "COM"
-f1_keywords: 
+f1_keywords:
   - "ICorDebugRegisterSet2::GetRegistersAvailable"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "GetRegistersAvailable method, ICorDebugRegisterSet2 interface [.NET Framework debugging]"
   - "ICorDebugRegisterSet2::GetRegistersAvailable method [.NET Framework debugging]"
 ms.assetid: f3ed344b-0d3a-44e8-8000-2a97e0805a2c
-topic_type: 
+topic_type:
   - "apiref"
 ---
 # ICorDebugRegisterSet2::GetRegistersAvailable Method
 
-Gets an array of bytes that provides a bitmap of the available registers.  
-  
-## Syntax  
-  
-```cpp  
-HRESULT GetRegistersAvailable (  
-    [in] ULONG32 numChunks,  
-    [out, size_is(numChunks)] BYTE availableRegChunks[]  
-);  
-```  
-  
-## Parameters  
+Gets an array of bytes that provides a bitmap of the available registers.
 
- `numChunks`  
- [in] The size of the `availableRegChunks` array.  
-  
- `availableRegChunks`  
- [out] An array of bytes, each bit of which corresponds to a register. If a register is available, the register's corresponding bit is set.  
-  
-## Remarks  
+## Syntax
 
- The values of the CorDebugRegister enumeration specify the registers of different microprocessors. The upper five bits of each value are the index into the `availableRegChunks` array of bytes. The lower three bits of each value identify the bit position within the indexed byte. Given a `CorDebugRegister` value that specifies a particular register, the register's position in the mask is determined as follows:  
-  
-1. Extract the index needed to access the correct byte in the `availableRegChunks` array:  
-  
-     `CorDebugRegister` value >> 3  
-  
-2. Extract the bit position within the indexed byte, where bit zero is the least significant bit:  
-  
-     `CorDebugRegister` value & 7  
-  
-## Requirements  
+```cpp
+HRESULT GetRegistersAvailable (
+    [in] ULONG32 numChunks,
+    [out, size_is(numChunks)] BYTE availableRegChunks[]
+);
+```
 
- **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
-  
- **Header:** CorDebug.idl, CorDebug.h  
-  
- **Library:** CorGuids.lib  
-  
- **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
-  
+## Parameters
+
+ `numChunks`
+ [in] The size of the `availableRegChunks` array.
+
+ `availableRegChunks`
+ [out] An array of bytes, each bit of which corresponds to a register. If a register is available, the register's corresponding bit is set.
+
+## Remarks
+
+ The values of the CorDebugRegister enumeration specify the registers of different microprocessors. The upper five bits of each value are the index into the `availableRegChunks` array of bytes. The lower three bits of each value identify the bit position within the indexed byte. Given a `CorDebugRegister` value that specifies a particular register, the register's position in the mask is determined as follows:
+
+1. Extract the index needed to access the correct byte in the `availableRegChunks` array:
+
+     `CorDebugRegister` value >> 3
+
+2. Extract the bit position within the indexed byte, where bit zero is the least significant bit:
+
+     `CorDebugRegister` value & 7
+
+## Requirements
+
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).
+
+ **Header:** CorDebug.idl, CorDebug.h
+
+ **Library:** CorGuids.lib
+
+ **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]
+
 ## See also
 
 - [ICorDebugRegisterSet2 Interface](icordebugregisterset2-interface.md)

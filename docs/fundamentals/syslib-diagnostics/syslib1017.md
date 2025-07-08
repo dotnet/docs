@@ -2,6 +2,8 @@
 title: SYSLIB1017 error
 description: Learn about the diagnostic that generates compile-time error SYSLIB1017.
 ms.date: 05/07/2021
+f1_keywords:
+  - syslib1017
 ---
 
 # SYSLIB1017: A `LogLevel` value must be supplied in the `LoggerMessage` attribute or as a parameter to the logging method

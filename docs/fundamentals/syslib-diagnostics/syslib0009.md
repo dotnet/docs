@@ -2,14 +2,19 @@
 title: SYSLIB0009 warning
 description: Learn about the obsoletions that generate compile-time warning SYSLIB0009.
 ms.date: 10/20/2020
+f1_keywords:
+  - syslib0009
 ---
 
-# SYSLIB0009: The AuthenticationManager Authenticate and PreAuthenticate methods are not supported
+# SYSLIB0009: AuthenticationManager is not supported
 
 The following APIs are marked obsolete, starting in .NET 5. Use of these APIs generates warning `SYSLIB0009` at compile time and throws a <xref:System.PlatformNotSupportedException> at run time.
 
 - <xref:System.Net.AuthenticationManager.Authenticate%2A?displayProperty=nameWithType>
 - <xref:System.Net.AuthenticationManager.PreAuthenticate%2A?displayProperty=nameWithType>
+
+In .NET 9 and later versions, the entire <xref:System.Net.AuthenticationManager> class is marked obsolete. Use of this class generates warning `SYSLIB0009` at compile time.
+The methods in this class either no-op or throw a <xref:System.PlatformNotSupportedException> at run time.
 
 ## Workarounds
 

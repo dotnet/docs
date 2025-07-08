@@ -1,7 +1,7 @@
 ---
 title: Welcome to .NET
 description: Getting started with the .NET family of technologies.
-ms.date: 11/08/2022
+ms.date: 11/22/2024
 ms.custom: "updateeachrelease"
 ---
 # Welcome to .NET
@@ -15,22 +15,20 @@ You can build many types of apps with .NET, such as cloud, IoT, and games, using
 For news about .NET, check the following blogs:
 
 - [.NET Blog](https://devblogs.microsoft.com/dotnet/)
-- [ASP.NET Blog](https://devblogs.microsoft.com/aspnet/)
 - [The Visual Studio Blog](https://devblogs.microsoft.com/visualstudio/)
-- [The Visual Basic Team](https://devblogs.microsoft.com/vbteam/)
 
 Also follow the latest .NET events:
 
-- [Microsoft Ignite](https://www.microsoft.com/ignite)
-- [Microsoft Build](https://www.microsoft.com/build)
 - [.NET Conf](https://www.dotnetconf.net/)
+- [Microsoft Ignite](https://ignite.microsoft.com/)
+- [Microsoft Build](https://build.microsoft.com/)
 
 For information about the latest features added to the .NET implementations and supported languages, see the following articles:
 
-- [What's new in .NET](core/whats-new/dotnet-7.md)
-- [What's new in .NET Framework](framework/whats-new/index.md)
-- [What's new in C#](./csharp/whats-new/csharp-11.md)
+- [What's new in .NET 9](core/whats-new/dotnet-9/overview.md)
+- [What's new in C# 13](./csharp/whats-new/csharp-13.md)
 - [What's new for Visual Basic](visual-basic/whats-new/index.md)
+- [What's new in .NET Framework](framework/whats-new/index.md)
 
 ## Documentation
 
@@ -58,6 +56,8 @@ This documentation is completely [open source](https://github.com/dotnet/docs). 
 
 - [.NET runtime](https://github.com/dotnet/runtime)
 - [.NET SDK](https://github.com/dotnet/sdk)
+- [.NET extensions](https://github.com/dotnet/extensions)
+- [.NET Aspire](https://github.com/dotnet/aspire)
 - [Roslyn (C# and Visual Basic) Compiler Platform and IDE Tools](https://github.com/dotnet/roslyn)
 - [.NET code analyzers](https://github.com/dotnet/roslyn-analyzers)
 - [F# Compiler and IDE Tools](https://github.com/dotnet/fsharp)

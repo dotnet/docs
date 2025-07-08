@@ -1,5 +1,5 @@
 ---
-title: "Attributes interpreted by the C# compiler: Tracking caller information"
+title: "Attributes interpreted by the compiler: Tracking caller information"
 ms.date: 11/02/2021
 description: These attributes instruct the compiler to generate information about the code that calls a member. You use the CallerFilePath, CallerLineNumber, CallerMemberName, and CallerArgumentExpression to provide detailed trace information
 ---
@@ -54,7 +54,7 @@ You would invoke it as shown in the following example:
 
 The expression used for `condition` is injected by the compiler into the `message` argument. When a developer calls `Operation` with a `null` argument, the following message is stored in the `ArgumentException`:
 
-```dotnetcli
+```text
 Argument failed validation: <func is not null>
 ```
 
@@ -68,7 +68,7 @@ The previous example uses the [`nameof`](../operators/nameof.md) operator for th
 
 The preceding example would throw an <xref:System.ArgumentException> whose message is the following text:
 
-```dotnetcli
+```text
 Expression doesn't have enough elements: Enumerable.Range(0, 10) (Parameter 'sequence')
 ```
 

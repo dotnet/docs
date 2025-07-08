@@ -3,11 +3,6 @@ Imports System.Data.SqlClient
 
 Class Program
 
-    Shared Sub Main()
-        GetSalesByCategory("Data Source=(local);Initial Catalog=Northwind;Integrated Security=true;", "Confections")
-        Console.ReadLine()
-    End Sub
-
     '<Snippet1>
     Shared Sub GetSalesByCategory(ByVal connectionString As String, _
         ByVal categoryName As String)

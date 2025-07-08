@@ -5,6 +5,7 @@ void WriteMessageLength(string? message)
     {
         Console.WriteLine(message.Length);
     }
+    
 }
 // </ProvideNullCheck>
 

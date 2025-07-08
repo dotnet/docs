@@ -1,16 +1,12 @@
 ﻿using System;
 using System.Data;
-using System.Data.SqlClient;
-using System.Data.OleDb;
-using System.Configuration;
 using System.Data.Common;
 
-class Program
+static class Program
 {
     static void Main()
     {
         CreateDataAdapter("System.Data.OleDb", "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=c:\\Data\\Northwind.mdb;");
-        //   CreateDataAdapter("System.Data.SqlClient", "Data Source=(local);Initial Catalog=Northwind;Integrated Security=true;");
 
         Console.ReadLine();
     }
@@ -30,7 +26,7 @@ class Program
             using (connection)
             {
                 // Define the query.
-                string queryString =
+                const string queryString =
                     "SELECT CategoryName FROM Categories";
 
                 // Create the DbCommand.
@@ -43,7 +39,7 @@ class Program
                 adapter.SelectCommand = command;
 
                 // Fill the DataTable.
-                DataTable table = new DataTable();
+                DataTable table = new();
                 adapter.Fill(table);
 
                 //  Display each row and column value.

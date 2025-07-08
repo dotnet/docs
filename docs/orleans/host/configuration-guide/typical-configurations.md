@@ -1,12 +1,13 @@
 ---
 title: Typical configurations
 description: Learn about typical configurations in .NET Orleans.
-ms.date: 08/18/2023
+ms.date: 05/23/2025
+ms.topic: reference
 ---
 
 # Typical configurations
 
-Below are examples of typical configurations that can be used for development and production deployments.
+Below are examples of typical configurations you can use for development and production deployments.
 
 ## Local development
 
@@ -14,9 +15,9 @@ For more information, see [Local development configuration](local-development-co
 
 ## Reliable production deployment using Azure
 
-For a reliable production deployment using Azure, you need to use the Azure Table option for cluster membership. This configuration is typical of deployments to either on-premise servers, containers, or Azure virtual machine instances.
+For a reliable production deployment using Azure, use the Azure Table option for cluster membership. This configuration is typical for deployments to on-premises servers, containers, or Azure virtual machine instances.
 
- The format of the `DataConnection` string is a `;` separated list of `Key=Value` pairs. The following options are supported:
+ The format of the `DataConnection` string is a semicolon-separated list of `Key=Value` pairs. The following options are supported:
 
 | Key                        | Value                               |
 |----------------------------|-------------------------------------|
@@ -37,7 +38,7 @@ const string connectionString = "YOUR_CONNECTION_STRING_HERE";
 var silo = new HostBuilder()
     .UseOrleans(builder =>
     {
-        .Configure<ClusterOptions>(options =>
+        builder.Configure<ClusterOptions>(options =>
         {
             options.ClusterId = "Cluster42";
             options.ServiceId = "MyAwesomeService";
@@ -54,21 +55,22 @@ Client configuration:
 
 ```csharp
 const string connectionString = "YOUR_CONNECTION_STRING_HERE";
-var client = new ClientBuilder()
-    .Configure<ClusterOptions>(options =>
-    {
-        options.ClusterId = "Cluster42";
-        options.ServiceId = "MyAwesomeService";
-    })
-    .UseAzureStorageClustering(
-        options => options.ConfigureTableServiceClient(connectionString))
-    .ConfigureLogging(builder => builder.SetMinimumLevel(LogLevel.Warning).AddConsole())
+
+using var host = Host.CreateDefaultBuilder(args)
+    .UseOrleansClient(clientBuilder =>
+        clientBuilder.Configure<ClusterOptions>(options =>
+        {
+            options.ClusterId = "Cluster42";
+            options.ServiceId = "MyAwesomeService";
+        })
+        .UseAzureStorageClustering(
+            options => options.ConfigureTableServiceClient(connectionString)))
     .Build();
 ```
 
 ## Reliable production deployment using SQL Server
 
-For a reliable production deployment using SQL server, a SQL server connection string needs to be supplied.
+For a reliable production deployment using SQL Server, supply a SQL Server connection string.
 
 Silo configuration:
 
@@ -77,7 +79,7 @@ const string connectionString = "YOUR_CONNECTION_STRING_HERE";
 var silo = new HostBuilder()
     .UseOrleans(builder =>
     {
-        .Configure<ClusterOptions>(options =>
+        builder.Configure<ClusterOptions>(options =>
         {
             options.ClusterId = "Cluster42";
             options.ServiceId = "MyAwesomeService";
@@ -97,24 +99,25 @@ Client configuration:
 
 ```csharp
 const string connectionString = "YOUR_CONNECTION_STRING_HERE";
-var client = new ClientBuilder()
-    .Configure<ClusterOptions>(options =>
-    {
-        options.ClusterId = "Cluster42";
-        options.ServiceId = "MyAwesomeService";
-    })
-    .UseAdoNetClustering(options =>
-    {
-      options.ConnectionString = connectionString;
-      options.Invariant = "System.Data.SqlClient";
-    })
-    .ConfigureLogging(builder => builder.SetMinimumLevel(LogLevel.Warning).AddConsole())
+
+using var host = Host.CreateDefaultBuilder(args)
+    .UseOrleansClient(clientBuilder =>
+        clientBuilder.Configure<ClusterOptions>(options =>
+        {
+            options.ClusterId = "Cluster42";
+            options.ServiceId = "MyAwesomeService";
+        })
+        .UseAdoNetClustering(options =>
+        {
+          options.ConnectionString = connectionString;
+          options.Invariant = "System.Data.SqlClient";
+        }))
     .Build();
 ```
 
 ## Unreliable deployment on a cluster of dedicated servers
 
-For testing on a cluster of dedicated servers when reliability isn't a concern you can leverage `MembershipTableGrain` and avoid dependency on Azure Table. You just need to designate one of the nodes as a primary.
+For testing on a cluster of dedicated servers where reliability isn't a concern, you can leverage `MembershipTableGrain` and avoid dependency on Azure Table. You just need to designate one of the nodes as primary.
 
 On the silos:
 
@@ -146,13 +149,14 @@ var gateways = new IPEndPoint[]
     // ...
     new IPEndPoint(OTHER_SILO__IP_ADDRESS_N, 30_000),
 };
-var client = new ClientBuilder()
-    .UseStaticClustering(gateways)
-    .Configure<ClusterOptions>(options =>
-    {
-        options.ClusterId = "Cluster42";
-        options.ServiceId = "MyAwesomeService";
-    })
-    .ConfigureLogging(logging => logging.AddConsole())
+
+using var host = Host.CreateDefaultBuilder(args)
+    .UseOrleansClient(clientBuilder =>
+        clientBuilder.UseStaticClustering(gateways)
+            .Configure<ClusterOptions>(options =>
+            {
+                options.ClusterId = "Cluster42";
+                options.ServiceId = "MyAwesomeService";
+            }))
     .Build();
 ```

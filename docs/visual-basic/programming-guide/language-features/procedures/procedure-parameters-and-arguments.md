@@ -1,8 +1,8 @@
 ---
-description: "Learn more about: Procedure Parameters and Arguments (Visual Basic)"
 title: "Procedure Parameters and Arguments"
+description: "Learn more about: Procedure Parameters and Arguments (Visual Basic)"
 ms.date: 07/20/2015
-helpviewer_keywords: 
+helpviewer_keywords:
   - "procedures [Visual Basic], arguments"
   - "procedures [Visual Basic], argument lists"
   - "values [Visual Basic], passing to procedures"
@@ -18,7 +18,6 @@ helpviewer_keywords:
   - "Visual Basic code, parameter lists"
   - "argument lists [Visual Basic]"
   - "procedures [Visual Basic], parameter lists"
-ms.assetid: ff275aff-aa13-40df-bd4c-63486db8c1e9
 ---
 # Procedure Parameters and Arguments (Visual Basic)
 
@@ -42,7 +41,7 @@ In most cases, a procedure needs some information about the circumstances in whi
   
  [!code-vb[VbVbcnProcedures#32](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#32)]  
   
- If the type checking switch ([Option Strict Statement](../../../language-reference/statements/option-strict-statement.md)) is `Off,` the `As` clause is optional, except that if any one parameter uses it, all parameters must use it. If type checking is `On`, the `As` clause is required for all procedure parameters.  
+ If the type checking switch ([Option Strict Statement](../../../language-reference/statements/option-strict-statement.md)) is `Off`, the `As` clause is optional, except that if any one parameter uses it, all parameters must use it. If type checking is `On`, the `As` clause is required for all procedure parameters.  
   
  If the calling code expects to supply an argument with a data type different from that of its corresponding parameter, such as `Byte` to a `String` parameter, it must do one of the following:  
   

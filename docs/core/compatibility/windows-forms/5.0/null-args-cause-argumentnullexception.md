@@ -26,6 +26,7 @@ If you call any of these methods and your code currently catches a <xref:System.
 The following table lists the affected methods and parameters:
 
 > [!div class="mx-tdBreakAll"]
+>
 > | Method | Parameter name | Version added |
 > |-|-|-|
 > | <xref:System.Windows.Forms.Control.ControlCollection.%23ctor(System.Windows.Forms.Control)> | `owner` | Preview 1 |

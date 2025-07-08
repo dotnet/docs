@@ -2,6 +2,8 @@
 title: SYSLIB0003 warning
 description: Learn about the obsoletions that generate compile-time warning SYSLIB0003.
 ms.date: 08/16/2021
+f1_keywords:
+  - syslib0003
 ---
 # SYSLIB0003: Code access security is not supported
 

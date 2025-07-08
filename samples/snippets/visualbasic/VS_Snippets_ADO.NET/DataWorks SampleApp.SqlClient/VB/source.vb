@@ -9,8 +9,7 @@ Public Class Program
     Public Shared Sub Main()
 
         Dim connectionString As String = _
-            "Data Source=(local);Initial Catalog=Northwind;" _
-            & "Integrated Security=true"
+            "..."
 
         ' Provide the query string with a parameter placeholder.
         Dim queryString As String = _
@@ -30,7 +29,7 @@ Public Class Program
             Dim command As New SqlCommand(queryString, connection)
             command.Parameters.AddWithValue("@pricePoint", paramValue)
 
-            ' Open the connection in a try/catch block. 
+            ' Open the connection in a try/catch block.
             ' Create and execute the DataReader, writing the result
             ' set to the console window.
             Try

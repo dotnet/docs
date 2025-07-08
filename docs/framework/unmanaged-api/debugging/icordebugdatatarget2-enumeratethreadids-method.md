@@ -6,42 +6,42 @@ ms.assetid: af02460f-2a45-496e-bc4e-a1ac4f80fe11
 ---
 # ICorDebugDataTarget2::EnumerateThreadIDs Method
 
-Returns a list of active thread IDs.  
-  
-## Syntax  
-  
-```cpp  
-HRESULT EnumerateThreadIDs(  
+Returns a list of active thread IDs.
+
+## Syntax
+
+```cpp
+HRESULT EnumerateThreadIDs(
     [in] ULONG32 cThreadIds,
     [out] ULONG32 *pcThreadIds,
-    [out, size_is(cThreadIds), length_is(*pcThreadIds)] ULONG32 pThreadIds[]  
-);  
-```  
-  
-## Parameters  
+    [out, size_is(cThreadIds), length_is(*pcThreadIds)] ULONG32 pThreadIds[]
+);
+```
 
- cThreadIDs  
- [in] The maximum number of threads whose IDs can be returned.  
-  
- pcThreadIds  
- [out] A pointer to a `ULONG32` that indicates the actual number of thread IDs written to the `pThreadIds` array.  
-  
- pThreadIDs  
- An array of thread identifiers.  
-  
-## Remarks  
-  
+## Parameters
+
+ cThreadIDs
+ [in] The maximum number of threads whose IDs can be returned.
+
+ pcThreadIds
+ [out] A pointer to a `ULONG32` that indicates the actual number of thread IDs written to the `pThreadIds` array.
+
+ pThreadIDs
+ An array of thread identifiers.
+
+## Remarks
+
 > [!NOTE]
-> This method is available with .NET Native only.  
-  
-## Requirements  
+> This method is available with .NET Native only.
 
- **Platforms:** See [System Requirements](../../get-started/system-requirements.md).**Header:** CorDebug.idl, CorDebug.h  
-  
- **Library:** CorGuids.lib  
-  
- **.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
-  
+## Requirements
+
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).**Header:** CorDebug.idl, CorDebug.h
+
+ **Library:** CorGuids.lib
+
+ **.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]
+
 ## See also
 
 - [ICorDebugDataTarget2 Interface](icordebugdatatarget2-interface.md)

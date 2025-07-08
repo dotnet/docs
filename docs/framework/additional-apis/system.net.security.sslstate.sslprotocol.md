@@ -2,7 +2,7 @@
 description: "Learn more about: SslState.SslProtocol Property"
 title: SslState.SslProtocol Property (System.Net.Security)
 ms.date: 10/21/2019
-ms.technology: "dotnet-networking"
+ms.subservice: "networking"
 topic_type:
   - "apiref"
 api_name:
@@ -25,7 +25,7 @@ internal SslProtocols SslProtocol { get; }
 
 ## Property value
 
-<xref:System.Security.Authentication.SslProtocols>  
+<xref:System.Security.Authentication.SslProtocols>
 A bitwise combination of the enumeration values that specify the SSL protocol versions.
 
 ## Remarks

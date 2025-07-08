@@ -20,7 +20,7 @@ The set of methods that the marshalling generator expects from a custom marshall
 
 ### `MarshalMode`
 
-The <xref:System.Runtime.InteropServices.Marshalling.MarshalMode> specified in a <xref:System.Runtime.InteropServices.Marshalling.CustomMarshallerAttribute> determines the expected marshalling support and [shape][value_shapes] for the marshaller implementation. All modes support stateless marshaller implementations. Element marshalling modes do not support stateful marshaller implementations.
+The <xref:System.Runtime.InteropServices.Marshalling.MarshalMode> specified in a <xref:System.Runtime.InteropServices.Marshalling.CustomMarshallerAttribute> determines the expected marshalling support and shape for the marshaller implementation. All modes support stateless marshaller implementations. Element marshalling modes do not support stateful marshaller implementations.
 
 | `MarshalMode` | Expected support | Can be stateful |
 | --- | --- | --- |
@@ -235,4 +235,4 @@ internal static partial void ConvertList(
 - [System.Runtime.InteropServices.Marshalling APIs](xref:System.Runtime.InteropServices.Marshalling)
 - [P/Invoke source generation](pinvoke-source-generation.md)
 - [Disabling runtime marshalling](disabled-marshalling.md)
-- [Marshaller shapes](marshaller-shapes.md)
+- [Marshaller shapes](custom-marshaller-shapes.md)

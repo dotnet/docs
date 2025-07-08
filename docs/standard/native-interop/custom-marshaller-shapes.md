@@ -664,7 +664,6 @@ static class TMarshaller<TUnmanagedElement> where TUnmanagedElement : unmanaged
 
 ### Stateful Managed->Unmanaged with Caller Allocated Buffer
 
-
 ```csharp
 [CustomMarshaller(typeof(TCollection), MarshalMode.ManagedToUnmanagedIn, typeof(ManagedToNative))]
 [ContiguousCollectionMarshaller]

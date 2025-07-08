@@ -26,7 +26,6 @@ The following table lists the preprocessor directives that are available in F#.
 |`#nowarn` *warningcode*|Disables a compiler warning or warnings. To disable multiple warning numbers on the same line, separate each string by a space. <br/> For example: `#nowarn 9 42`<br/> The warning is disabled until eof or until a `#warnon` directive for that same warning number is foud.|
 |`#warnon` *warningcode*|Enables a compiler warning (or warnings) that was disabled by a compiler option or by a `#nowarn` directive..<br/> The warning is enabled until eof or until a `#nowarn` directive for that same warning number is found.|
 
-
 ## Conditional Compilation Directives
 
 Code that is deactivated by one of these directives appears dimmed in the Visual Studio Code Editor.

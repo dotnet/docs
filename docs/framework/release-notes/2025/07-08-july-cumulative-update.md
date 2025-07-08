@@ -22,7 +22,7 @@ This release contains the following quality and reliability improvements.
 
 #### .NET Libraries
 
-Addresses an issue with concurrency in TypeDescriptor.GetConverter()issue in TypeDescriptor GetProperties() and GetConverter(). (*Applies to: .NET Framework 4.6.2, 4.7, 4.7.1, 4.7.2, 4.8, 4.8.1.*)
+Addresses an issue with concurrency in <xref:System.ComponentModel.TypeDescriptor.GetConverter*?displayProperty=nameWithType> and <xref:System.ComponentModel.TypeDescriptor.GetProperties*?displayProperty=nameWithType> (*Applies to: .NET Framework 4.6.2, 4.7, 4.7.1, 4.7.2, 4.8, 4.8.1.*)
 
 #### .NET Runtime
 
@@ -84,4 +84,4 @@ The following table is for earlier Windows and Windows Server versions for Secur
 | .NET Framework 3.5 SP1 | [5040673](https://support.microsoft.com/kb/5040673) |
 | .NET Framework 4.6.2 | [5062071](https://support.microsoft.com/kb/5062071) |
 
-The operating system row lists a KB which will be used for update offering purposes. When the operating system KB is offered, the applicability logic will determine the specific .NET Framework update(s) will be installed. Updates for individual .NET Framework versions will be installed based on the version of .NET Framework that is already present on the device. Because of this the operating system KB is not expected to be listed as installed updates on the device. The expected update to be installed are the .NET Framework specific version updates listed in the table above.
+The operating system row lists a KB that is used for update offering purposes. When the operating system KB is offered, the applicability logic determines the specific .NET Framework updates to install. Updates for individual .NET Framework versions are installed based on the version of .NET Framework that's already present on the device. Because of this, the operating system KB isn't expected to be listed as **installed updates** on the device. The expected updates to be installed are the .NET Framework-specific version updates listed in the table above.

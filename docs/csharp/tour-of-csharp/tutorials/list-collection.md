@@ -67,7 +67,7 @@ That creates a list of integers, and sets the first two integers to the value 1.
 
 :::code language="csharp" source="./snippets/ListCollection/Program.cs" id="Fibonacci":::
 
-Press **Run** to see the results;
+Press **Run** to see the results.
 
 ## Challenge
 

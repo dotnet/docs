@@ -273,6 +273,18 @@ If VS Code shows this error when starting the MCP server, you need to install a 
 
 The `dnx` command is shipped as part of the .NET SDK, starting with version 10 preview 6. [Install the .NET 10 SDK](https://dotnet.microsoft.com/download/dotnet) to resolve this issue.
 
+### GitHub Copilot does not use your tool (an answer is provided without invoking your tool).
+
+Generally speaking, an AI agent like GitHub Copilot is informed that it has some tools available by the client application, such as VS Code. Some tools, such as the sample random number tool, might not be leveraged by the AI agent because it has similar functionality built in.
+
+If your tool is not being used, check the following:
+
+1. Verify that your tool appears in the list of tools that VS Code has enabled. See the screenshot in [Test the MCP server](#test-the-mcp-server) for how to check this.
+1. Explicitly reference the name of the tool in your prompt. In VS Code, you can reference your tool by name. For example, `Using #get_random_weather, what is the weather in Redmond?`.
+1. Verify your MCP server is able to start. You can check this by clicking the "Start" button visible above your MCP server configuration in the VS Code user or workspace settings.
+
+:::image type="content" source="../media/mcp/started-mcp-server.png" alt-text="A screenshot showing an MCP server in VS Code configuration that is started.":::
+
 ## Related content
 
 - [Get started with .NET AI and the Model Context Protocol](../get-started-mcp.md)

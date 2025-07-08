@@ -19,7 +19,7 @@ The following table lists the preprocessor directives that are available in F#.
 
 |Directive|Description|
 |---------|-----------|
-|`#if` *if-expression*|Supports conditional compilation. Code in the section after the `#if` is included if the *if-eyxpression* evaluates to `defined` (see below).|
+|`#if` *if-expression*|Supports conditional compilation. Code in the section after the `#if` is included if the *if-expression* evaluates to `defined` (see below).|
 |`#else`|Supports conditional compilation. Marks a section of code to include if the symbol used with the previous `#if` does not evaluate to `defined`.|
 |`#endif`|Supports conditional compilation. Marks the end of a conditional section of code.|
 |`#`[line] *int*,<br/>`#`[line] *int* *string*,<br/>`#`[line] *int* *verbatim-string*|Indicates the original source code line and file name, for debugging. This feature is provided for tools that generate F# source code.|

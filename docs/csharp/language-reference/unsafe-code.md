@@ -16,31 +16,21 @@ helpviewer_keywords:
 
 # Unsafe code
 
-Unsafe code is a dialect of C# that unlocks powerful capabilities often needed for interoperability with native libraries, high-performance algorithms, and other low-level programming needs. However, these capabilities bypass C#'s usual safety checks, placing the responsibility for correctness squarely on the unsafe code author. Mistakes in unsafe code can lead to bugs like buffer overruns and use-after-free errors. To help isolate risks, unsafe code must appear within an [`unsafe`](keywords/unsafe.md) context, keeping it clearly separated from regular safe code and making it easier to audit.
+C#'s unsafe code feature enables direct memory manipulation using pointers and other low-level constructs—capabilities essential for interop with native libraries and high-performance scenarios. However, unsafe code bypasses C#'s safety guarantees, so it's up to you, the author, to ensure correctness. Bugs like buffer overruns and use-after-free become possible. To help isolate risks, unsafe code must appear within an [`unsafe`](keywords/unsafe.md) context and requires the [`AllowUnsafeBlocks`](compiler-options/language.md#allowunsafeblocks) compiler option.
 
-In contrast, most C# code is safe code. Safe code always accesses, uses, and releases memory in ways that are proven correct by the C# compiler and .NET runtime.
-
-Within an `unsafe` context, you can use pointers, manually allocate and free blocks of memory, and call methods through function pointers.
-
-Unsafe code has the following characteristics:
-
-- Methods, types, and code blocks can be marked as unsafe.
-- Removing array bounds checks in unsafe code can, in some cases, improve performance.
-- Unsafe code is required for calling native functions that use pointers.
-- Using unsafe code introduces security and stability risks.
-- Code containing unsafe blocks must be compiled with the [`AllowUnsafeBlocks`](compiler-options/language.md#allowunsafeblocks) compiler option.
+Most C# code is safe code, where the compiler and .NET runtime enforce memory safety.
 
 ## Pointer types
 
-In an unsafe context, a type can be a pointer type, in addition to a value type, or a reference type. A pointer type declaration takes the following forms (with the `*` being the key syntax difference):
+In an unsafe context, C# supports **pointer types**. Pointers let you work with memory addresses directly, which is necessary for many interop scenarios and advanced optimizations.
 
-``` csharp
+A pointer type declaration looks like:
+
+```csharp
 type* identifier;
 ```
 
-The pointer indirection operator `*` can be used to access the contents at the location pointed to by the pointer variable. For example, consider the following declaration:
-
-The following example demonstrates a complete example of using pointer types.
+For example:
 
 ```csharp
 int number = 42;
@@ -50,76 +40,78 @@ bool same = false;
 unsafe
 {
     int* pointer = &number; // Assigns the address of number
-    numberAgain = *pointer; // Retrieves the value at that address (42)
+    numberAgain = *pointer;   // Retrieves the value at that address (42)
     same = number == numberAgain; // Will resolve to true
-    Console.WriteLine($"Pointer (address): {(ulong)pointer}; Pointer value: {*pointer}");
+    PrintAddress(pointer); // Prints the address of the pointer
+    Console.WriteLine($"Pointer value: {*pointer}");
 }
 
 Console.WriteLine($"NumberAgain: {numberAgain}; Same: {same}");
 
+unsafe void PrintAddress(int* pointer) =>
+    Console.WriteLine($"Pointer address: 0x{(nuint)p:X}");
+
 /* Example output (pointer address will vary each run):
-Pointer (address): 6127673188; Pointer value: 42
+Pointer address: 0x16F279F64
+Pointer value: 42
 NumberAgain: 42; Same: True
 */
 ```
 
-The example also demonstrates how safe and unsafe code can interact. The first call to `Console.WriteLine` must be within the unsafe block because `pointer` can only be used in the `unsafe` context given its `int*` definition.
+### Declaring and using pointers
 
-### Defining pointer types
-
-When you declare multiple pointers in the same declaration, you write the asterisk (`*`) together with the underlying type only. For example:
+You can declare multiple pointers in one statement:
 
 ```csharp
-int* p1, p2, p3;     // Ok
-int *p1, *p2, *p3;   // Invalid
+int* p1, p2, p3;   // All are int pointers
 ```
 
-The value of the pointer variable of type `MyType*` is the address of a variable of type `MyType`. The following are examples of pointer type declarations:
+Common pointer types:
 
-- `int* p`: `p` is a pointer to an integer.
-- `int** p`: `p` is a pointer to a pointer to an integer.
-- `int*[] p`: `p` is a single-dimensional array of pointers to integers.
-- `char* p`: `p` is a pointer to a char.
-- `void* p`: `p` is a pointer to an unknown type.
+- `int* p`: pointer to `int`
+- `int** p`: pointer to pointer to `int`
+- `int*[] p`: array of `int` pointers
+- `char* p`: pointer to `char`
+- `void* p`: pointer to unknown type
 
+### Pointer operations
 
-There are several examples of pointers in the articles on the [`fixed` statement](statements/fixed.md). The following example uses the `unsafe` keyword and the `fixed` statement, and shows how to increment an interior pointer. You can paste this code into the Main function of a console application to run it. These examples must be compiled with the [**AllowUnsafeBlocks**](compiler-options/language.md#allowunsafeblocks) compiler option set.
+Pointers don't inherit from [`object`](builtin-types/reference-types.md). You can't box or unbox pointers, and there's no conversion between pointers and `object`. However, you can cast between pointer types and between pointers and integral types (with an explicit cast).
 
-:::code language="csharp" source="snippets/unsafe-code/FixedKeywordExamples.cs" ID="5":::
+The garbage collector doesn't track references from pointers. If you're pointing to a managed object, you must [pin](./statements/fixed.md) it for as long as the pointer is used.
 
-### Using pointer types
-
-Pointer types don't inherit from [object](builtin-types/reference-types.md) and no conversions exist between pointer types and `object`. Also, boxing and unboxing don't support pointers. However, you can convert between different pointer types and between pointer types and integral types.
-
-The garbage collector doesn't keep track of whether an object is being pointed to by any pointer types. If the referrant is an object in the managed heap (including local variables captured by lambda expressions or anonymous delegates), the object must be [pinned](./statements/fixed.md) for as long as the pointer is used.
-
-You can't apply the indirection operator to a pointer of type `void*`. However, you can use a cast to convert a void pointer to any other pointer type, and vice versa.
-
-A pointer can be `null`. Applying the indirection operator to a null pointer causes an implementation-defined behavior.
-
-Passing pointers between methods can cause undefined behavior. Consider a method that returns a pointer to a local variable through an `in`, `out`, or `ref` parameter or as the function result. If the pointer was set in a fixed block, the variable to which it points might no longer be fixed.
-
-The following table lists the operators and statements that can operate on pointers in an unsafe context:
+The following operators and statements work with pointers in an unsafe context:
 
 | Operator/Statement                       | Use                                                            |
 |------------------------------------------|----------------------------------------------------------------|
-| `*`                                      | Performs pointer indirection.                                  |
-| `->`                                     | Accesses a member of a struct through a pointer.               |
-| `[]`                                     | Indexes a pointer.                                             |
-| `&`                                      | Obtains the address of a variable.                             |
-| `++` and `--`                            | Increments and decrements pointers.                            |
-| `+` and `-`                              | Performs pointer arithmetic.                                   |
-| `==`, `!=`, `<`, `>`, `<=`, and `>=`     | Compares pointers.                                             |
-| [`stackalloc`](operators/stackalloc.md)  | Allocates memory on the stack.                                 |
-| [`fixed` statement](statements/fixed.md) | Temporarily fixes a variable so that its address can be found. |
+| `*`                                      | Dereference (pointer indirection).                             |
+| `->`                                     | Access struct member through a pointer.                        |
+| `[]`                                     | Index a pointer.                                               |
+| `&`                                      | Take the address of a variable.                                |
+| `++` and `--`                            | Increment/decrement pointer.                                   |
+| `+` and `-`                              | Pointer arithmetic.                                            |
+| `==`, `!=`, `<`, `>`, `<=`, and `>=`     | Pointer comparison.                                            |
+| [`stackalloc`](operators/stackalloc.md)  | Allocate memory on the stack.                                  |
+| [`fixed` statement](statements/fixed.md) | Pin a variable so its address can be taken.                    |
 
-For more information about pointer-related operators, see [Pointer-related operators](operators/pointer-related-operators.md).
+See [Pointer-related operators](operators/pointer-related-operators.md) for details.
 
-Any pointer type can be implicitly converted to a `void*` type. Any pointer type can be assigned the value `null`. Any pointer type can be explicitly converted to any other pointer type using a cast expression. You can also convert any integral type to a pointer type, or any pointer type to an integral type. These conversions require an explicit cast.
+### Pointer conversions and Interop
 
-The following example converts an `int*` to a `byte*`. Notice that the pointer points to the lowest addressed byte of the variable. When you successively increment the result, up to the size of `int` (4 bytes), you can display the remaining bytes of the variable.
+- Any pointer type can be implicitly converted to `void*`.
+- Any pointer type can be set to `null`.
+- You can explicitly cast between pointer types and between pointers and integral types (integral types must be at least the size of a pointer: `nint`, `nuint`, `IntPtr`, `UIntPtr`, or — on 64-bit — `long`/`ulong`).
+- You can't dereference a `void*` directly, but you can cast it to another pointer type.
+
+For example, converting an `int*` to a `byte*` lets you examine individual bytes:
 
 :::code language="csharp" source="snippets/unsafe-code/Conversions.cs" ID="Conversion":::
+
+### Pointer safety reminders
+
+- Dereferencing a null pointer is implementation-defined and may crash your program.
+- Passing pointers to or from methods, especially if they refer to stack or pinned data, can cause undefined behavior if the referent is no longer valid.
+- Never store a pointer to stack memory outside the current method.
 
 ## Fixed-size buffers
 

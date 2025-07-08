@@ -20,38 +20,47 @@ public static class FixedKeywordExamples
             // Must pin object on heap so that it doesn't move while using interior pointers.
             fixed (int* p = &a[0])
             {
-                // p is pinned as well as object, so create another pointer to show incrementing it.
+                Console.WriteLine("Print first two elements using interior pointers:");
+                Console.WriteLine(*p);
+                // p and its container object a are pinned
+                // The fixed pointer (p) cannot be incremented directly
+                // Another pointer is required for incrementing
                 int* p2 = p;
-                Console.WriteLine(*p2);
-                // Incrementing p2 bumps the pointer by four bytes due to its type ...
+                // Increment the p2 pointer by the size of one int
                 p2 += 1;
                 Console.WriteLine(*p2);
-                p2 += 1;
+                // Increment the p2 pointer by the size of three ints (to the last element)
+                p2 += 3;
                 Console.WriteLine(*p2);
-                Console.WriteLine("--------");
-                Console.WriteLine(*p);
-                // Dereferencing p and incrementing changes the value of a[0] ...
-                *p += 1;
-                Console.WriteLine(*p);
-                *p += 1;
-                Console.WriteLine(*p);
+                Console.WriteLine("Increment each element by 5 using interior pointers");
+                for (int i = 0; i < a.Length; i++)
+                {
+                    // p3 will reference past the end of the loop on the last iteration
+                    // a good reason to keep it private to the loop
+                    int* p3 = p + i;
+                    *p3 += 5; // Increment the value at the pointer
+                }
             }
         }
 
-        Console.WriteLine("--------");
-        Console.WriteLine(a[0]);
+        Console.WriteLine("Print final values:");
+        foreach (var item in a)
+        {
+            Console.WriteLine(item);
+        }
 
-        /*
-        Output:
+        /* Output:
+        Print first two elements using interior pointers:
         10
         20
-        30
-        --------
-        10
-        11
-        12
-        --------
-        12
+        50
+        Increment each element by 5 using interior pointers
+        Print final values:
+        15
+        25
+        35
+        45
+        55
         */
         // </Snippet5>
     }
@@ -102,10 +111,8 @@ public static class FixedKeywordExamples
         int targetOffset, int count)
     {
         // If either array is not instantiated, you cannot complete the copy.
-        if ((source == null) || (target == null))
-        {
-            throw new System.ArgumentException("source or target is null");
-        }
+        ArgumentNullException.ThrowIfNull(source, nameof(source));
+        ArgumentNullException.ThrowIfNull(target, nameof(target));
 
         // If either offset, or the number of bytes to copy, is negative, you
         // cannot complete the copy.

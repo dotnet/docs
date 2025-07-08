@@ -16,7 +16,7 @@ helpviewer_keywords:
 
 # Unsafe code
 
-C#'s unsafe code feature enables direct memory manipulation using pointers and other low-level constructs—capabilities essential for interop with native libraries and high-performance scenarios. However, unsafe code bypasses C#'s safety guarantees, so it's up to you, the author, to ensure correctness. Bugs like buffer overruns and use-after-free become possible. To help isolate risks, unsafe code must appear within an [`unsafe`](keywords/unsafe.md) context and requires the [`AllowUnsafeBlocks`](compiler-options/language.md#allowunsafeblocks) compiler option.
+C#'s unsafe code feature enables direct memory manipulation using pointers and other low-level constructs. These capabilities are essential for interop with native libraries and high-performance scenarios. However, unsafe code bypasses C#'s safety guarantees, so it's up to you, the author, to ensure correctness. Bugs like reading uninitialized/incorrect memory, buffer overruns, and use-after-free become possible. Unsafe code must appear within an [`unsafe`](keywords/unsafe.md) context and requires the [`AllowUnsafeBlocks`](compiler-options/language.md#allowunsafeblocks) compiler option.
 
 Most C# code is safe code, where the compiler and .NET runtime enforce memory safety.
 
@@ -135,7 +135,7 @@ The size of the 128 element `char` array is 256 bytes. Fixed-size [char](builtin
 
 The  preceding example demonstrates accessing `fixed` fields without pinning. Another common fixed-size array is the [bool](builtin-types/bool.md) array. The elements in a `bool` array are always 1 byte in size. `bool` arrays aren't appropriate for creating bit arrays or buffers.
 
-Fixed-size buffers are compiled with the <xref:System.Runtime.CompilerServices.UnsafeValueTypeAttribute?displayProperty=nameWithType>, which instructs the common language runtime (CLR) that a type contains an unmanaged array that can potentially overflow. Memory allocated using [stackalloc](operators/stackalloc.md) also automatically enables buffer overrun detection features in the CLR. The previous example shows how a fixed-size buffer could exist in an `unsafe struct`.
+Fixed-size buffers are compiled with the <xref:System.Runtime.CompilerServices.UnsafeValueTypeAttribute?displayProperty=nameWithType>, which instructs the .NET runtime that a type contains an unmanaged array that can potentially overflow. Memory allocated using [stackalloc](operators/stackalloc.md) also automatically enables buffer overrun detection features in the CLR. The previous example shows how a fixed-size buffer could exist in an `unsafe struct`.
 
 ```csharp
 internal unsafe struct Buffer

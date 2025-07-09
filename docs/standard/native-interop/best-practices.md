@@ -1,7 +1,7 @@
 ---
 title: Native interoperability best practices - .NET
 description: Learn the best practices for interfacing with native components in .NET.
-ms.date: 04/08/2024
+ms.date: 07/09/2025
 ---
 # Native interoperability best practices
 
@@ -13,9 +13,9 @@ The guidance in this section applies to all interop scenarios.
 
 - ✔️ DO use `[LibraryImport]`, if possible, when targeting .NET 7+.
   - There are cases when using `[DllImport]` is appropriate. A code analyzer with ID [SYSLIB1054](../../fundamentals/syslib-diagnostics/syslib1050-1069.md) tells you when that's the case.
-- ✔️ DO define P/Invoke signatures that match the C export's argument count and use types that accurately represent each native type.
 - ✔️ DO use the same naming and capitalization for your methods and parameters as the native method you want to call.
 - ✔️ CONSIDER using the same naming and capitalization for constant values.
+- ✔️ DO define P/Invoke and function pointer signatures that match the C function's arguments.
 - ✔️ DO use .NET types that map closest to the native type. For example, in C#, use `uint` when the native type is `unsigned int`.
 - ✔️ DO prefer expressing higher level native types using .NET structs rather than classes.
 - ✔️ DO prefer using function pointers, as opposed to `Delegate` types, when passing callbacks to unmanaged functions in C#.

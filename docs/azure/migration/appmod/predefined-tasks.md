@@ -10,7 +10,7 @@ Predefined tasks capture industry best practices for using Azure services. Curre
 - Identity management
 
 ## Predefined Task list
-- Migrate to Managed Identity based Database migration on Azure, including Azure SQL DB and Azure PostgreSQL
+- Migrate to Managed Identity based Database on Azure, including Azure SQL DB and Azure PostgreSQL
     - migrate from DB2, Oracle DB to Azure PostgreSQL
     - migrate from local/on-prem SQL server to Azure SQL DB
 - Migrate to Azure Service Bus

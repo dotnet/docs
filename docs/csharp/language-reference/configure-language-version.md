@@ -32,7 +32,7 @@ If you must specify your C# version explicitly, you can do so in several ways:
 
 ## Edit the project file
 
-You can set the language version in your project file. For example, if you explicitly want access to preview features, add an element like the following example:
+You can set the language version in your project file. The project file is the `*.csproj` file in the root folder for your project. For example, if you explicitly want access to preview features, add an element like the following example:
 
 ```xml
 <PropertyGroup>

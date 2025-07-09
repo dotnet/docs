@@ -7,7 +7,7 @@ using ModelContextProtocol.Server;
 /// </summary>
 internal class RandomNumberTools
 {
-    [McpServerTool(Name = "get_random_number")]
+    [McpServerTool]
     [Description("Generates a random number between the specified minimum and maximum values.")]
     public int GetRandomNumber(
         [Description("Minimum value (inclusive)")] int min = 0,
@@ -16,7 +16,7 @@ internal class RandomNumberTools
         return Random.Shared.Next(min, max);
     }
 
-    [McpServerTool(Name = "get_city_weather")]
+    [McpServerTool]
     [Description("Describes random weather in the provided city.")]
     public string GetCityWeather(
         [Description("Name of the city to return weather for")] string city)

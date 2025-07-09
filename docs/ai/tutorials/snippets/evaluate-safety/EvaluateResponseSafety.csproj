@@ -11,13 +11,13 @@
   <ItemGroup>
     <PackageReference Include="Azure.AI.OpenAI" Version="2.1.0" />
     <PackageReference Include="Azure.Identity" Version="1.14.1" />
-    <PackageReference Include="Microsoft.Extensions.AI.Abstractions" Version="9.6.0" />
-    <PackageReference Include="Microsoft.Extensions.AI.Evaluation" Version="9.6.0" />
-    <PackageReference Include="Microsoft.Extensions.AI.Evaluation.Reporting" Version="9.6.0" />
+    <PackageReference Include="Microsoft.Extensions.AI.Abstractions" Version="9.7.0" />
+    <PackageReference Include="Microsoft.Extensions.AI.Evaluation" Version="9.7.0" />
+    <PackageReference Include="Microsoft.Extensions.AI.Evaluation.Reporting" Version="9.7.0" />
     <PackageReference Include="Microsoft.Extensions.AI.Evaluation.Safety" Version="9.5.0-preview.1.25265.7" />
     <PackageReference Include="Microsoft.Extensions.AI.OpenAI" Version="9.5.0-preview.1.25265.7" />
-    <PackageReference Include="Microsoft.Extensions.Configuration" Version="9.0.6" />
-    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="9.0.6" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="9.0.7" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="9.0.7" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.14.1" />
     <PackageReference Include="MSTest" Version="3.9.3" />
   </ItemGroup>

@@ -28,3 +28,7 @@ Automatic fix for compilation errors
 ### Which Visual Studio version should I use?
 
 Please upgrade Visual Studio to the latest version to have better experience on both GitHub Copilot and App Modernization for .NET.
+
+### TODO(wepa) MCP server related faq + config mcp server action 
+
+### TODO(liang) AppCat related faq

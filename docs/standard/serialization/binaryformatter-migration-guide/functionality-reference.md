@@ -20,7 +20,7 @@ The <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> was fi
 
 ## Member names
 
-In most common scenario, the type is annotated with `[Serializable]` and the serializer uses reflection to serialize **all fields** (both public and non-public) except those that are annotated with `[NonSerialized]`. By default, the serialized member names will match the type's field names. This historically led to incompatibilities when even private fields are renamed on `[Serializable]` types. During migrations away from BinaryFormatter, it becomes necessary to understand how serialized field names were handled and overridden.
+In most common scenario, the type is annotated with `[Serializable]` and the serializer uses reflection to serialize **all fields** (both public and non-public) except those that are annotated with `[NonSerialized]`. By default, the serialized member names of public fields will match the type's field names. For non-public fields defined in inherited classes, the member names consist of inherited type name, a `+` sign and the field name (`$InheritedClassName+$nonPublicFieldName`). Serializing field names has historically led to incompatibilities when even private fields are renamed on `[Serializable]` types. During migrations away from BinaryFormatter, it becomes necessary to understand how serialized field names were handled and overridden.
 
 ### C# auto properties
 

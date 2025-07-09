@@ -39,9 +39,9 @@ Where `E` is an expression that returns a value and `T` is the name of a type or
 
 The `is` operator returns `true` when an expression result is non-null and any of the following conditions are true:
 
-- The run-time type of an expression result is `T`.
+- The run-time type of an expression result has an identity conversion to `T`.
 
-- The run-time type of an expression result derives from type `T`, implements interface `T`, or another [implicit reference conversion](~/_csharpstandard/standard/conversions.md#1028-implicit-reference-conversions) exists from it to `T`.
+- The run-time type of an expression result derives from type `T`, implements interface `T`, or another [implicit reference conversion](~/_csharpstandard/standard/conversions.md#1028-implicit-reference-conversions) exists from it to `T`. This covers inheritance relationships and interface implementations.
 
 - The run-time type of an expression result is a [nullable value type](../builtin-types/nullable-value-types.md) with the underlying type `T` and the <xref:System.Nullable%601.HasValue?displayProperty=nameWithType> is `true`.
 

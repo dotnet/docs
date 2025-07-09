@@ -129,3 +129,5 @@ For users of MTP that are using the VSTest mode of `dotnet test`, there are few 
 1. Remove the extra `--`, for example `dotnet test -- --report-trx` should become `dotnet test --report-trx`.
 1. If passing a specific solution, for example, `dotnet test MySolution.sln`, this should become `dotnet test --solution MySolution.sln`.
 1. If passing a specific project, for example, `dotnet test MyProject.csproj`, this should become `dotnet test --project MyProject.csproj`.
+1. If passing a specific directory, for example, `dotnet test path/to/mydirectory`, this should become `dotnet test --directory path/to/mydirectory`
+1. If passing a specific dll, for example, `dotnet test path/to/UnitTests.dll`, this should become `dotnet test --test-modules path/to/UnitTests.dll`. Note that `--test-modules` also supports globbing.

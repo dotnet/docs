@@ -147,35 +147,7 @@ In this example, you enhance the MCP server to use a configuration value set in 
 
    * Use the `package_arguments` property to define CLI arguments that will be passed to your app. For more examples, see the [MCP Registry project](https://github.com/modelcontextprotocol/registry/blob/main/docs/server-json/examples.md).
 
-   ```json
-   {
-     "description": "<your description here>",
-     "name": "io.github.<your GitHub username here>/<your repo name>",
-     "packages": [
-       {
-         "registry_name": "nuget",
-         "name": "<your package ID here, defined by PackageId in the .csproj>",
-         "version": "<your package version here, defined by PackageVersion in the .csproj>",
-         "package_arguments": [],
-         "environment_variables": [
-           {
-             "name": "WEATHER_CHOICES",
-             "description": "Comma separated list of weather descriptions to randomly select.",
-             "is_required": true,
-             "is_secret": false
-           }
-         ]
-       }
-     ],
-     "repository": {
-       "url": "https://github.com/<your GitHub username here>/<your repo name>",
-       "source": "github"
-     },
-     "version_detail": {
-       "version": "0.1.0-beta"
-     }
-   }
-   ```
+   :::code language="json" source="snippets/mcp-server/.mcp/server.json":::
 
    The only information used by NuGet.org in the `server.json` is the first `packages` array item with the `registry_name` value matching `nuget`. The other top-level properties aside from the `packages` property are currently unused and are intended for the upcoming central MCP Registry. You can leave the placeholder values until the MCP Registry is live and ready to accept MCP server entries.
 
@@ -220,7 +192,7 @@ For more information, see [Publish a package](/nuget/nuget-org/publish-a-package
      "inputs": [
        {
          "type": "promptString",
-         "id": "weather-choices",
+         "id": "weather_choices",
          "description": "Comma separated list of weather descriptions to randomly select.",
          "password": false
        }
@@ -229,14 +201,9 @@ For more information, see [Publish a package](/nuget/nuget-org/publish-a-package
        "Contoso.SampleMcpServer": {
          "type": "stdio",
          "command": "dnx",
-         "args": [
-           "Contoso.SampleMcpServer",
-           "--version",
-           "0.0.1-beta",
-           "--yes"
-         ],
+         "args": ["Contoso.SampleMcpServer@0.0.1-beta", "--yes"],
          "env": {
-           "WEATHER_CHOICES": "${input:weather-choices}"
+           "WEATHER_CHOICES": "${input:weather_choices}"
          }
        }
      }

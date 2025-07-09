@@ -10,9 +10,14 @@
       "environment_variables": [
         {
           "name": "WEATHER_CHOICES",
-          "description": "Comma separated list of weather descriptions to randomly select.",
-          "is_required": true,
-          "is_secret": false
+          "value": "{weather_choices}",
+          "variables": {
+            "weather_choices": {
+              "description": "Comma separated list of weather descriptions to randomly select.",
+              "is_required": true,
+              "is_secret": false
+            }
+          }
         }
       ]
     }

@@ -34,7 +34,7 @@ The <xref:System.Runtime.InteropServices.Marshalling.MarshalMode> specified in a
 | <xref:System.Runtime.InteropServices.Marshalling.MarshalMode.ElementRef> | Managed to unmanaged and unmanaged to managed | No |
 | <xref:System.Runtime.InteropServices.Marshalling.MarshalMode.ElementOut> | Unmanaged to managed | No |
 
-<xref:System.Runtime.InteropServices.Marshalling.MarshalMode.Default?displayProperty=nameWithType> indicates that the marshaller implementation should be used for any mode that it supports (assumed by the methods it implements). If a marshaller implementation for a more specific `MarshalMode` is also specified, it takes precedence over `MarshalMode.Default`.
+Use <xref:System.Runtime.InteropServices.Marshalling.MarshalMode.Default?displayProperty=nameWithType> to indicate that the marshaller implementation applies to any supported mode, based on the methods it implements. If you specify a marshaller for a more specific `MarshalMode`, that marshaller takes precedence over one marked as `Default`.
 
 ## Basic usage
 

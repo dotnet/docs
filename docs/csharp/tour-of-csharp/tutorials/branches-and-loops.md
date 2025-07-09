@@ -141,6 +141,7 @@ Did you come up with something like this?
 
 <!-- markdownlint-disable MD033 -->
 <details>
+
 :::code language="csharp" interactive="try-dotnet-method" source="./snippets/BranchesAndLoops/Program.cs" id="Challenge":::
 </details>
 <!-- markdownlint-enable MD033 -->

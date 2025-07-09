@@ -34,6 +34,10 @@ The process involves invoking the `VSTest` MSBuild target, which triggers other 
 >
 > [!NOTE]
 > It is highly recommended to set the `TestingPlatformDotnetTestSupport` property in `Directory.Build.props`. This ensures that you don't need to add it to every test project file individually. Additionally, it prevents the risk of introducing a new test project that doesn't set this property, which could result in a solution where some projects use VSTest while others use Microsoft.Testing.Platform. This mixed configuration might not work correctly and is an unsupported scenario.
+>
+> [!IMPORTANT]
+> Running MTP projects under VSTest mode is considered legacy in favor of the newer experience in .NET 10 SDK. The support of running under this mode will be removed in Microsoft.Testing.Platform version 2.
+> For more information, see [Migrate to MTP mode of `dotnet test`](#migrate-to-mtp-mode-of-dotnet-test).
 
 The following list outlines the command-line options of `dotnet test` command in VSTest mode that are supported by Microsoft.Testing.Platform. These options are specific to the build process and not passed down to VSTest, which is why they work with MTP.
 
@@ -114,3 +118,14 @@ Since this mode is specifically designed for Microsoft.Testing.Platform, neither
 >   <TestingPlatformCommandLineArguments>--minimum-expected-tests 10</TestingPlatformCommandLineArguments>
 > </PropertyGroup>
 > ```
+
+## Migrate to MTP mode of `dotnet test`
+
+For users of MTP that are using the VSTest mode of `dotnet test`, there are few actions needed to migrate to the newer `dotnet test` experience:
+
+1. Add `dotnet.config` in the root of your repository, as shown above.
+1. Remove `TestingPlatformDotnetTestSupport` MSBuild property, as it's no longer required.
+1. Remove `TestingPlatformCaptureOutput` and `TestingPlatformShowTestsFailure` MSBuild properties, as they are no longer used by the new `dotnet test`.
+1. Remove the extra `--`, for example `dotnet test -- --report-trx` should become `dotnet test --report-trx`.
+1. If passing a specific solution, for example, `dotnet test MySolution.sln`, this should become `dotnet test --solution MySolution.sln`.
+1. If passing a specific project, for example, `dotnet test MyProject.csproj`, this should become `dotnet test --project MyProject.csproj`.

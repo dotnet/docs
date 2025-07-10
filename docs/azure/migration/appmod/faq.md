@@ -49,18 +49,13 @@ If you see an AppCAT installation failure in the command-line output when the ex
 1. Follow the instructions in [Install the .NET global tool](/dotnet/azure/migration/appcat/install#install-the-net-global-tool).
 1. After successful installation, run the assessment again.
 
-> [!TIP]
-> Make sure you have the required .NET SDK version installed before attempting to install AppCAT manually.
+### What should I do if I see "Command failed: No .NET SDKs were found" errors?
 
+This error occurs when AppCAT can't find a compatible .NET SDK, even if you have other .NET SDKs installed. AppCAT requires .NET 8 SDK to run properly.
 
-### What should I do if I see errors during assessment?
+To fix this error:
 
-If you encounter errors in the command-line output while running an assessment, the issue might be related to .NET SDK compatibility. AppCAT works best with .NET 8 SDK.
-
-To resolve this:
-
-1. Install .NET 8 SDK from <https://dotnet.microsoft.com/download/dotnet/8.0>.
-1. Restart Visual Studio after installation.
+1. Download and install .NET 8 SDK from <https://dotnet.microsoft.com/download/dotnet/8.0>.
+1. Restart Visual Studio.
 1. Run the assessment again.
 
-AppCAT automatically detects and uses the appropriate .NET SDK version once it's installed.

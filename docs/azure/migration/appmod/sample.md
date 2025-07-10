@@ -21,5 +21,4 @@ This migration showcases how legacy on-premises applications can be transformed 
 
 ## See Also
 
-- [Contoso University sample web app](https://github.com/Azure-Samples/dotnet-migration-copilot-samples/tree/main/ContosoUniversity)
- 
+- [Quickstart: assess and migrate a .NET project using GitHub Copilot App Modernization for .NET](quick-start.md)

@@ -40,7 +40,7 @@ We value your feedback — share [your thoughts here](https://aka.ms/AM4JFeedbac
 
 # License
 
-This extension is licensed under [GitHub Copilot Product Specifc Terms](https://github.com/customer-terms/github-copilot-product-specific-terms).
+This extension is licensed under [GitHub Copilot Product Specific Terms](https://github.com/customer-terms/github-copilot-product-specific-terms).
 
 # Trademarks
 

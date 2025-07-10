@@ -27,7 +27,7 @@ Automatic fix for compilation errors
 
 ### Which Visual Studio version should I use?
 
-Please upgrade Visual Studio to the latest version to have better experience on both GitHub Copilot and App Modernization for .NET.
+Please upgrade Visual Studio 2022 to the latest version (at least equal or above 17.14.7) to have better experience on both GitHub Copilot and App Modernization for .NET.
 
 ### TODO(wepa) MCP server related faq + config mcp server action 
 

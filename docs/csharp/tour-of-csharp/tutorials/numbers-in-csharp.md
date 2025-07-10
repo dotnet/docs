@@ -128,6 +128,7 @@ Once you try it, open the details pane to see how you did:
 
 <!-- markdownlint-disable MD033 -->
 <details>
+
 :::code language="csharp" interactive="try-dotnet-method" source="./snippets/NumbersInCsharp/Program.cs" id="Challenge":::
 </details>
 <!-- markdownlint-enable MD033 -->

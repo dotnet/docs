@@ -77,6 +77,7 @@ Did you come up with something like this?
 
 <!-- markdownlint-disable MD033 -->
 <details>
+
 :::code language="csharp" interactive="try-dotnet-method" source="./snippets/ListCollection/Program.cs" id="Answer":::
 
 With each iteration of the loop, you're taking the last two integers in the list, summing them, and adding that value to the list. The loop repeats until you added 20 items to the list.

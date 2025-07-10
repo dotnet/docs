@@ -9,7 +9,7 @@ ms.date: 07/03/2025
 
 This page answers some of the most common questions about the GitHub Copilot App Modernization for .NET tool.
 
-### What is GitHub Copilot App Modernization for .NET ?
+### What is GitHub Copilot App Modernization for .NET?
 
 GitHub Copilot App Modernization for .NET aims to help enterprises migrate their .NET applications to Azure with confidence and efficiency, covering assessment, code remediation and validation, powered by the intelligence of GitHub Copilot.
  

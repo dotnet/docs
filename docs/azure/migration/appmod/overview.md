@@ -6,18 +6,18 @@ GitHub Copilot App Modernization for .NET aims to help enterprises migrate their
 
 App Modernization for .NET evaluates the readiness of developer's applications for migration to Azure, with an interactive experience on Visual Studio, powered by [AppCAT for .NET](../appcat/install.md).
 
-![Assessment](to_do_update_screenshot)
+![Assessment](media/overview_assessment.png)
 
 ## Solution recommendations
 
 App modernization for .NET recommends target Azure services for the resource dependencies of developer's application, for each category of assessed issues.
 
-![Solution](to_do_update_screenshot)
+![Solution](media/overview_solution.png)
 
 ## Code remediation for common issues
 To accelerate code changes for [common modernization issues](predefined-tasks.md), the developer may apply predefined tasks (code change patterns) that represent best practices from experts.
 
-![Apply Task](to_do_update_screenshot)
+![Apply Task](media/overview_remediation.png)
 
 ## Automatic fix for compilation errors
 

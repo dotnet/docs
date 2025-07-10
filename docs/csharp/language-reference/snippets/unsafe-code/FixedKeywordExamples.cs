@@ -6,7 +6,6 @@ public static class FixedKeywordExamples
     {
         PointerTypes();
         AccessEmbeddedArray();
-        UnsafeCopyArrays();
     }
 
     private static void PointerTypes()

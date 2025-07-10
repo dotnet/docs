@@ -61,17 +61,17 @@ The `IsValidEmail` method merely determines whether the email format is valid fo
 
 :::code language="vb" source="snippets/how-to-verify-that-strings-are-in-valid-email-format/vb/RegexUtilities.vb":::
 
-In this example, the regular expression pattern `^[^@\s]+@[^@\s]+\.[^@\s]+$` is interpreted as shown in the following table. The regular expression is compiled using the <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=nameWithType> flag.
+In this example, the regular expression pattern `^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$` is used, which better reflects common email rules by excluding invalid characters like commas. The regular expression is compiled using the <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=nameWithType> flag.
 
-| Pattern   | Description                                                                              |
-|-----------|------------------------------------------------------------------------------------------|
-| `^`       | Begin the match at the start of the string.                                              |
-| `[^@\s]+` | Match one or more occurrences of any character other than the @ character or whitespace. |
-| `@`       | Match the @ character.                                                                   |
-| `[^@\s]+` | Match one or more occurrences of any character other than the @ character or whitespace. |
-| `\.`      | Match a single period character.                                                         |
-| `[^@\s]+` | Match one or more occurrences of any character other than the @ character or whitespace. |
-| `$`       | End the match at the end of the string.                                                  |
+| Pattern              | Description                                                                 |
+|----------------------|-----------------------------------------------------------------------------|
+| `^`                  | Start of the string                                                         |
+| `[a-zA-Z0-9._%+-]+`  | One or more valid characters in the local part (letters, digits, `.`, `_`, `%`, `+`, `-`) |
+| `@`                  | Matches the at-symbol (`@`)                                                 |
+| `[a-zA-Z0-9.-]+`     | One or more valid domain name characters                                    |
+| `\.`                 | Matches a dot (`.`)                                                         |
+| `[a-zA-Z]{2,}`       | Matches a top-level domain of at least two alphabetical characters          |
+| `$`                  | End of the string                                                           |
 
 > [!IMPORTANT]
 > This regular expression isn't intended to cover every aspect of a valid email address. It's provided as an example for you to extend as needed.

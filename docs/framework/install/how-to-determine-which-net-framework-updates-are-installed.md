@@ -1,7 +1,7 @@
 ---
 title: See installed .NET Framework security updates and hotfixes
 description: Learn how to determine which .NET Framework security updates and hotfixes are installed on a computer.
-ms.date: 04/03/2024
+ms.date: 07/10/2025
 dev_langs:
   - "csharp"
   - "vb"

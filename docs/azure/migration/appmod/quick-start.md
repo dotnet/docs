@@ -4,7 +4,7 @@ This quickstart shows you how to use GitHub Copilot App Modernization for .NET t
 
 ## Prerequisites
 
-- A GitHub account with [GitHub Copilot](https://github.com/features/copilot) enabled.
+- A GitHub account with [GitHub Copilot](https://github.com/features/copilot) enabled. Pro, Pro+, Business or Enterprise plan is needed.
 - The latest version of [Visual Studio 2022](https://visualstudio.microsoft.com/zh-hans/downloads/). Must be version 17.14.7 or later.
 - Enable agent mode for VS GitHub Copilot [Use Copilot agent mode](https://learn.microsoft.com/en-us/visualstudio/ide/copilot-agent-mode?view=vs-2022).
 
@@ -21,9 +21,9 @@ Then, use the following steps to install GitHub Copilot App Modernization for .N
 
 For more information, see [Find, install, and manage extensions for Visual Studio](https://learn.microsoft.com/en-us/visualstudio/ide/finding-and-using-visual-studio-extensions?view=vs-2022).
 
-## Assess cloud readiness
+## Assess application readiness
 
-Use the following steps to start your migration process with solution assessment. This assessment helps you understand what your cloud readiness challenges are and how impactful they are, provides recommended solutions. A solution recommendation includes references to set up Azure resources, add configurations, and make code changes.
+Use the following steps to start your migration process with assessment. This assessment helps you understand what your application readiness challenges are and how impactful they are, provides recommended solutions. A solution recommendation includes references to set up Azure resources, add configurations, and make code changes.
 
 1. Clone the [.NET migration copilot samples](https://github.com/Azure-Samples/dotnet-migration-copilot-samples) repository.
 1. In Visual Studio, open the **Contoso University** project folder in the samples repository.
@@ -46,8 +46,8 @@ Use the following steps to start your migration process with solution assessment
 
  Once you started the migration, a GitHub Copilot session will be started with our pre-defined prompts sent to GitHub Copilot in agent mode. This step will create two files under folder `.appmod/.migration`:
  - plan.md - This file acts as the plan for the overall migration
- - progress.md - This file acts as the progress tracker of the entire migration process, GitHub Copilot will mark items when it finish specific task deined in the progress tracker file. 
- > You can modify these two files to include your customizations before going into next step.
+ - progress.md - This file acts as the progress tracker of the entire migration process, GitHub Copilot will mark items when it finishes a specific task in the progress tracker file. 
+ > You can modify these two files to include your customizations before going into the next step.
 
 
 ### Start code remediation

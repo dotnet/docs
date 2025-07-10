@@ -59,7 +59,7 @@ If you want even more control, you can use [the overload](xref:System.Security.C
 
 ### Post-quantum cryptography (PQC)
 
-.NET 10 includes support for three new asymmetric algorithms: ML-KEM (FIPS 202), ML-DSA (FIPS 203), and SLH-DSA (FIPS 204). The new types are:
+.NET 10 includes support for three new asymmetric algorithms: ML-KEM (FIPS 203), ML-DSA (FIPS 204), and SLH-DSA (FIPS 205). The new types are:
 
 - `System.Security.Cryptography.MLKem` <!--xref:System.Security.Cryptography.MLKem-->
 - `System.Security.Cryptography.MLDsa` <!--xref:System.Security.Cryptography.MLDsa-->

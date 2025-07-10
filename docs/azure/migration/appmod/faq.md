@@ -31,4 +31,36 @@ Please upgrade Visual Studio 2022 to the latest version (at least equal or above
 
 ### TODO(wepa) MCP server related faq + config mcp server action 
 
-### TODO(liang) AppCat related faq
+### How can I monitor the assessment progress?
+
+While the assessment is running, you can monitor its progress by viewing the command-line output:
+
+1. In Visual Studio, go to **View** > **Output** to open the Output window.
+1. In the Output window, find the **Show output from:** dropdown.
+1. Select **AppModernizationExtension** from the dropdown list.
+1. The command-line output from the assessment tool appears here, showing real-time progress.
+
+You can also access the Output window using the keyboard shortcut **Ctrl+Alt+O**.
+
+### What should I do if Visual Studio fails to install AppCAT?
+
+If you see an AppCAT installation failure in the command-line output when the extension tries to install it automatically, you can install AppCAT manually:
+
+1. Follow the instructions in [Install the .NET global tool](/dotnet/azure/migration/appcat/install#install-the-net-global-tool).
+1. After successful installation, run the assessment again.
+
+> [!TIP]
+> Make sure you have the required .NET SDK version installed before attempting to install AppCAT manually.
+
+
+### What should I do if I see errors during assessment?
+
+If you encounter errors in the command-line output while running an assessment, the issue might be related to .NET SDK compatibility. AppCAT works best with .NET 8 SDK.
+
+To resolve this:
+
+1. Install .NET 8 SDK from <https://dotnet.microsoft.com/download/dotnet/8.0>.
+1. Restart Visual Studio after installation.
+1. Run the assessment again.
+
+AppCAT automatically detects and uses the appropriate .NET SDK version once it's installed.

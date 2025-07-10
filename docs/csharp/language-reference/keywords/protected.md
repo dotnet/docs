@@ -24,7 +24,7 @@ For a comparison of `protected` with the other access modifiers, see [Accessibil
 
 A protected member of a base class is accessible in a derived class only if the access occurs through the derived class type. For example, consider the following code segment:
 
-[!code-csharp[snippet1](~/docs/csharp/language-reference/keywords/snippets/protected/Example1.cs#snippet1)]
+:::code language="csharp" source="./snippets/protected/Example1.cs" id="snippet1":::
 
 The statement `baseObject.myValue = 10` generates an error because it accesses the protected member through a base class reference (`baseObject` is of type `BaseClass`). Protected members can only be accessed through the derived class type or types derived from it.
 
@@ -48,9 +48,9 @@ If you change the access levels of `x` and `y` to [private](private.md), the com
 
 The following example demonstrates that `protected` members are accessible from derived classes even when they're in different assemblies:
 
-[!code-csharp[snippet1](~/docs/csharp/language-reference/keywords/snippets/protected/Assembly1.cs#snippet1)]
+:::code language="csharp" source="./snippets/protected/Assembly1.cs" id="snippet1":::
 
-[!code-csharp[snippet1](~/docs/csharp/language-reference/keywords/snippets/protected/Assembly2.cs#snippet1)]
+:::code language="csharp" source="./snippets/protected/Assembly2.cs" id="snippet1":::
 
 This cross-assembly accessibility is what distinguishes `protected` from `private protected` (which restricts access to the same assembly) but is similar to `protected internal` (though `protected internal` also allows same-assembly access from non-derived classes).
 

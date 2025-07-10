@@ -61,6 +61,26 @@ namespace OfficeProgrammingWalkthrough
             // This example uses a single workSheet. The explicit type casting is
             // removed in a later procedure.
             Excel._Worksheet workSheet = (Excel.Worksheet)excelApp.ActiveSheet;
+
+            // Establish column headings in cells A1 and B1.
+            workSheet.Cells[1, "A"] = "ID Number";
+            workSheet.Cells[1, "B"] = "Current Balance";
+
+            var row = 1;
+            foreach (var acct in accounts)
+            {
+                row++;
+                workSheet.Cells[row, "A"] = acct.ID;
+                workSheet.Cells[row, "B"] = acct.Balance;
+            }
+
+            workSheet.Columns[1].AutoFit();
+            workSheet.Columns[2].AutoFit();
+
+            // Put the spreadsheet contents on the clipboard. The Copy method has one
+            // optional parameter for specifying a destination. Because no argument
+            // is sent, the destination is the Clipboard.
+            workSheet.Range["A1:B3"].Copy();
         }
         //</Snippet4>
 

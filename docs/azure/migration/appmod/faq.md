@@ -29,7 +29,22 @@ Automatic fix for compilation errors
 
 Please upgrade Visual Studio 2022 to the latest version (at least equal or above 17.14.7) to have better experience on both GitHub Copilot and App Modernization for .NET.
 
-### TODO(wepa) MCP server related faq + config mcp server action 
+### What is the MCP Server and why is there an initial delay when running a command sometimes?
+
+The GitHub Copilot App Modernization for .NET extension uses an `MCP Server` to fetch Azure .NET SDK knowledge as tools.
+
+- **Automatic setup**  
+  On the first invocation of any App Modernization command, the extension checks for a configuration file at `%USERPROFILE%\.mcp.json`. If it’s missing or the server isn’t running, the extension writes the default settings and launches the MCP Server automatically.
+
+- **First-run delay**  
+  Starting and initializing the MCP Server can take anywhere from a few milliseconds up to about 20 seconds.
+
+- **Subsequent invocations**  
+  Once the MCP Server is running locally, you shouldn’t see that startup delay again.
+
+- **Using MCP tools in the VS Copilot Agent out of extension**  
+  You can also access the same MCP-based knowledge tools inside the built-in VS Copilot Agent. Just run **Configure MCP Server**, and the full suite of MCP tools appears under the Copilot agent’s tools dropdown.
+ 
 
 ### How can I monitor the assessment progress?
 

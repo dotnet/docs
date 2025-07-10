@@ -11,16 +11,16 @@ The task asynchronous programming model is analogous to how people give instruct
 
 1. Pour a cup of coffee.
 1. Heat a pan, then fry two eggs.
-1. Fry three slices of bacon.
+1. Cook three hash brown patties.
 1. Toast two pieces of bread.
 1. Spread butter and jam on the toast.
 1. Pour a glass of orange juice.
 
-If you have experience with cooking, you might complete these instructions **asynchronously**. You start warming the pan for eggs, then start frying the bacon. You put the bread in the toaster, then start cooking the eggs. At each step of the process, you start a task, and then transition to other tasks that are ready for your attention.
+If you have experience with cooking, you might complete these instructions **asynchronously**. You start warming the pan for eggs, then start cooking the hash browns. You put the bread in the toaster, then start cooking the eggs. At each step of the process, you start a task, and then transition to other tasks that are ready for your attention.
 
-Cooking breakfast is a good example of asynchronous work that isn't parallel. One person (or thread) can handle all the tasks. One person can make breakfast asynchronously by starting the next task before the previous task completes. Each cooking task progresses regardless of whether someone is actively watching the process. As soon as you start warming the pan for the eggs, you can begin frying the bacon. After the bacon starts to cook, you can put the bread in the toaster.
+Cooking breakfast is a good example of asynchronous work that isn't parallel. One person (or thread) can handle all the tasks. One person can make breakfast asynchronously by starting the next task before the previous task completes. Each cooking task progresses regardless of whether someone is actively watching the process. As soon as you start warming the pan for the eggs, you can begin cooking the hash browns. After the hash browns start to cook, you can put the bread in the toaster.
 
-For a parallel algorithm, you need multiple people who cook (or multiple threads). One person cooks the eggs, another fries the bacon, and so on. Each person focuses on their one specific task. Each person who is cooking (or each thread) is blocked synchronously waiting for the current task to complete: Bacon ready to flip, bread ready to pop up in toaster, and so on.
+For a parallel algorithm, you need multiple people who cook (or multiple threads). One person cooks the eggs, another cooks the hash browns, and so on. Each person focuses on their one specific task. Each person who is cooking (or each thread) is blocked synchronously waiting for the current task to complete: Hash browns ready to flip, bread ready to pop up in toaster, and so on.
 
 :::image type="content" source="media/synchronous-breakfast.png" border="false" alt-text="Diagram that shows instructions for preparing breakfast as a list of seven sequential tasks completed in 30 minutes.":::
 
@@ -42,12 +42,12 @@ You can start by updating the code so the thread doesn't block while tasks are r
 
 :::code language="csharp" source="snippets/index/AsyncBreakfast-V2/Program.cs" ID="SnippetMain":::
 
-The code updates the original method bodies of `FryEggs`, `FryBacon`, and `ToastBread` to return `Task<Egg>`, `Task<Bacon>`, and `Task<Toast>` objects, respectively. The updated method names include the "Async" suffix: `FryEggsAsync`, `FryBaconAsync`, and `ToastBreadAsync`. The `Main` method returns the `Task` object, although it doesn't have a `return` expression, which is by design. For more information, see [Evaluation of a void-returning async function](/dotnet/csharp/language-reference/language-specification/classes#15144-evaluation-of-a-void-returning-async-function).
+The code updates the original method bodies of `FryEggs`, `FryHashBrowns`, and `ToastBread` to return `Task<Egg>`, `Task<HashBrown>`, and `Task<Toast>` objects, respectively. The updated method names include the "Async" suffix: `FryEggsAsync`, `FryHashBrownsAsync`, and `ToastBreadAsync`. The `Main` method returns the `Task` object, although it doesn't have a `return` expression, which is by design. For more information, see [Evaluation of a void-returning async function](/dotnet/csharp/language-reference/language-specification/classes#15144-evaluation-of-a-void-returning-async-function).
 
 > [!NOTE]
 > The updated code doesn't yet take advantage of key features of asynchronous programming, which can result in shorter completion times. The code processes the tasks in roughly the same amount of time as the initial synchronous version. For the full method implementations, see the [final version of the code](#review-final-code) later in this article.
 
-Let's apply the breakfast example to the updated code. The thread doesn't block while the eggs or bacon are cooking, but the code also doesn't start other tasks until the current work completes. You still put the bread in the toaster and stare at the toaster until the bread pops up, but you can now respond to interruptions. In a restaurant where multiple orders are placed, the cook can start a new order while another is already cooking.
+Let's apply the breakfast example to the updated code. The thread doesn't block while the eggs or hash browns are cooking, but the code also doesn't start other tasks until the current work completes. You still put the bread in the toaster and stare at the toaster until the bread pops up, but you can now respond to interruptions. In a restaurant where multiple orders are placed, the cook can start a new order while another is already cooking.
 
 In the updated code, the thread working on the breakfast isn't blocked while waiting for any started task that's unfinished. For some applications, this change is all you need. You can enable your app to support user interaction while data downloads from the web. In other scenarios, you might want to start other tasks while waiting for the previous task to complete.
 
@@ -55,7 +55,7 @@ In the updated code, the thread working on the breakfast isn't blocked while wai
 
 For most operations, you want to start several independent tasks immediately. As each task completes, you initiate other work that's ready to start. When you apply this methodology to the breakfast example, you can prepare breakfast more quickly. You also get everything ready close to the same time, so you can enjoy a hot breakfast.
 
-The <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> class and related types are classes you can use to apply this style of reasoning to tasks that are in progress. This approach enables you to write code that more closely resembles the way you create breakfast in real life. You start cooking the eggs, bacon, and toast at the same time. As each food item requires action, you turn your attention to that task, take care of the action, and then wait for something else that requires your attention.
+The <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> class and related types are classes you can use to apply this style of reasoning to tasks that are in progress. This approach enables you to write code that more closely resembles the way you create breakfast in real life. You start cooking the eggs, hash browns, and toast at the same time. As each food item requires action, you turn your attention to that task, take care of the action, and then wait for something else that requires your attention.
 
 In your code, you start a task and hold on to the <xref:System.Threading.Tasks.Task> object that represents the work. You use the `await` method on the task to delay acting on the work until the result is ready.
 
@@ -69,9 +69,9 @@ Task<Egg> eggsTask = FryEggsAsync(2);
 Egg eggs = await eggsTask;
 Console.WriteLine("Eggs are ready");
 
-Task<Bacon> baconTask = FryBaconAsync(3);
-Bacon bacon = await baconTask;
-Console.WriteLine("Bacon is ready");
+Task<HashBrown> hashBrownTask = FryHashBrownsAsync(3);
+HashBrown hashBrown = await hashBrownTask;
+Console.WriteLine("Hash browns are ready");
 
 Task<Toast> toastTask = ToastBreadAsync(2);
 Toast toast = await toastTask;
@@ -84,14 +84,14 @@ Console.WriteLine("Oj is ready");
 Console.WriteLine("Breakfast is ready!");
 ```
 
-These revisions don't help to get your breakfast ready any faster. The `await` expression is applied to all tasks as soon as they start. The next step is to move the `await` expressions for the bacon and eggs to the end of the method, before you serve the breakfast:
+These revisions don't help to get your breakfast ready any faster. The `await` expression is applied to all tasks as soon as they start. The next step is to move the `await` expressions for the hash browns and eggs to the end of the method, before you serve the breakfast:
 
 ```csharp
 Coffee cup = PourCoffee();
 Console.WriteLine("Coffee is ready");
 
 Task<Egg> eggsTask = FryEggsAsync(2);
-Task<Bacon> baconTask = FryBaconAsync(3);
+Task<HashBrown> hashBrownTask = FryHashBrownsAsync(3);
 Task<Toast> toastTask = ToastBreadAsync(2);
 
 Toast toast = await toastTask;
@@ -103,17 +103,17 @@ Console.WriteLine("Oj is ready");
 
 Egg eggs = await eggsTask;
 Console.WriteLine("Eggs are ready");
-Bacon bacon = await baconTask;
-Console.WriteLine("Bacon is ready");
+HashBrown hashBrown = await hashBrownTask;
+Console.WriteLine("Hash browns are ready");
 
 Console.WriteLine("Breakfast is ready!");
 ```
 
 You now have an asynchronously prepared breakfast that takes about 20 minutes to prepare. The total cook time is reduced because some tasks run concurrently.
 
-:::image type="content" source="media/asynchronous-breakfast.png" border="false" alt-text="Diagram that shows instructions for preparing breakfast as eight asynchronous tasks that complete in about 20 minutes, where unfortunately, the eggs and bacon burn.":::
+:::image type="content" source="media/asynchronous-breakfast.png" border="false" alt-text="Diagram that shows instructions for preparing breakfast as eight asynchronous tasks that complete in about 20 minutes, where unfortunately, the eggs and hash browns burn.":::
 
-The code updates improve the preparation process by reducing the cook time, but they introduce a regression by burning the eggs and bacon. You start all the asynchronous tasks at once. You wait on each task only when you need the results. The code might be similar to program in a web application that makes requests to different microservices and then combines the results into a single page. You make all the requests immediately, and then apply the `await` expression on all those tasks and compose the web page.
+The code updates improve the preparation process by reducing the cook time, but they introduce a regression by burning the eggs and hash browns. You start all the asynchronous tasks at once. You wait on each task only when you need the results. The code might be similar to program in a web application that makes requests to different microservices and then combines the results into a single page. You make all the requests immediately, and then apply the `await` expression on all those tasks and compose the web page.
 
 ## Support composition with tasks
 
@@ -169,22 +169,22 @@ After you make the code changes, run the application and check the output:
 Pouring coffee
 Coffee is ready
 Warming the egg pan...
-putting 3 slices of bacon in the pan
-Cooking first side of bacon...
+putting 3 hash brown patties in the pan
+Cooking first side of hash browns...
 Putting a slice of bread in the toaster
 Putting a slice of bread in the toaster
 Start toasting...
 Fire! Toast is ruined!
-Flipping a slice of bacon
-Flipping a slice of bacon
-Flipping a slice of bacon
-Cooking the second side of bacon...
+Flipping a hash brown patty
+Flipping a hash brown patty
+Flipping a hash brown patty
+Cooking the second side of hash browns...
 Cracking 2 eggs
 Cooking the eggs ...
-Put bacon on plate
+Put hash browns on plate
 Put eggs on plate
 Eggs are ready
-Bacon is ready
+Hash browns are ready
 Unhandled exception. System.InvalidOperationException: The toaster is on fire
    at AsyncBreakfast.Program.ToastBreadAsync(Int32 slices) in Program.cs:line 65
    at AsyncBreakfast.Program.MakeToastWithButterAndJamAsync(Int32 number) in Program.cs:line 36
@@ -218,9 +218,9 @@ throw new InvalidOperationException("The toaster is on fire");
 You can improve the series of `await` expressions at the end of the previous code by using methods of the `Task` class. One API is the <xref:System.Threading.Tasks.Task.WhenAll%2A> method, which returns a <xref:System.Threading.Tasks.Task> object that completes when all the tasks in its argument list are complete. The following code demonstrates this method:
 
 ```csharp
-await Task.WhenAll(eggsTask, baconTask, toastTask);
+await Task.WhenAll(eggsTask, hashBrownTask, toastTask);
 Console.WriteLine("Eggs are ready");
-Console.WriteLine("Bacon is ready");
+Console.WriteLine("Hash browns are ready");
 Console.WriteLine("Toast is ready");
 Console.WriteLine("Breakfast is ready!");
 ```
@@ -228,7 +228,7 @@ Console.WriteLine("Breakfast is ready!");
 Another option is to use the <xref:System.Threading.Tasks.Task.WhenAny%2A> method, which returns a `Task<Task>` object that completes when any of its arguments complete. You can wait on the returned task because you know the task is done. The following code shows how you can use the <xref:System.Threading.Tasks.Task.WhenAny%2A> method to wait on the first task to finish and then process its result. After you process the result from the completed task, you remove the completed task from the list of tasks passed to the `WhenAny` method.
 
 ```csharp
-var breakfastTasks = new List<Task> { eggsTask, baconTask, toastTask };
+var breakfastTasks = new List<Task> { eggsTask, hashBrownTask, toastTask };
 while (breakfastTasks.Count > 0)
 {
     Task finishedTask = await Task.WhenAny(breakfastTasks);
@@ -236,9 +236,9 @@ while (breakfastTasks.Count > 0)
     {
         Console.WriteLine("Eggs are ready");
     }
-    else if (finishedTask == baconTask)
+    else if (finishedTask == hashBrownTask)
     {
-        Console.WriteLine("Bacon is ready");
+        Console.WriteLine("Hash browns are ready");
     }
     else if (finishedTask == toastTask)
     {

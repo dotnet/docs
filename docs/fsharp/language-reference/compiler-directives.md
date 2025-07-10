@@ -105,7 +105,7 @@ A *warningcode* is a sequence of digits (representing the warning number), optio
 A `#nowarn` directive disables a warning until a `#warnon` directive for the same warning number is found, or else until end of file. Similarly, a `#nowarn` directive disables a warning until a `#warnon` directive for the same warning numberis found, or else until end of file. Before and after such pairs, the compilation default applies, which is
 
 - no warning if disabled by a --nowarn compiler option (or the respective msbuild property)
-- no warning for [opt-in warnings](./compiler-options#opt-in-warnings), unless enabled by the --warnon compiler option (or the respective msbuild property)
+- no warning for [opt-in warnings](./compiler-options.md#opt-in-warnings), unless enabled by the --warnon compiler option (or the respective msbuild property)
 
 Here is a (contrived) example.
 

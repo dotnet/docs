@@ -4,7 +4,7 @@ This quickstart shows you how to use GitHub Copilot App Modernization for .NET t
 
 ## Prerequisites
 
-- A GitHub account with [GitHub Copilot](https://github.com/features/copilot) enabled. All plans are supported, including the Free plan.
+- A GitHub account with [GitHub Copilot](https://github.com/features/copilot) enabled.
 - The latest version of [Visual Studio 2022](https://visualstudio.microsoft.com/zh-hans/downloads/). Must be version 17.14.7 or later.
 - Enable agent mode for VS GitHub Copilot [Use Copilot agent mode](https://learn.microsoft.com/en-us/visualstudio/ide/copilot-agent-mode?view=vs-2022).
 

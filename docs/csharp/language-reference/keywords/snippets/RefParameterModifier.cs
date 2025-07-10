@@ -86,14 +86,32 @@ namespace InRefOutModifier
         private static void FirstInExample()
         {
             // <InParameterModifier>
-            int readonlyArgument = 44;
-            InArgExample(readonlyArgument);
-            Console.WriteLine(readonlyArgument);     // value is still 44
+            var largeStruct = new LargeStruct { Value1 = 42, Value2 = 3.14, Value3 = "Hello" };
+            
+            // Using 'in' avoids copying the large struct and prevents modification
+            ProcessLargeStruct(in largeStruct);
+            Console.WriteLine($"Original value unchanged: {largeStruct.Value1}");
+            
+            // Without 'in', the struct would be copied (less efficient for large structs)
+            ProcessLargeStructByValue(largeStruct);
+            Console.WriteLine($"Original value still unchanged: {largeStruct.Value1}");
 
-            void InArgExample(in int number)
+            void ProcessLargeStruct(in LargeStruct data)
             {
+                // Can read the values
+                Console.WriteLine($"Processing: {data.Value1}, {data.Value2}, {data.Value3}");
+                
                 // Uncomment the following line to see error CS8331
-                //number = 19;
+                // data.Value1 = 99; // Compilation error: cannot assign to 'in' parameter
+            }
+            
+            void ProcessLargeStructByValue(LargeStruct data)
+            {
+                // This method receives a copy of the struct
+                Console.WriteLine($"Processing copy: {data.Value1}, {data.Value2}, {data.Value3}");
+                
+                // Modifying the copy doesn't affect the original
+                data.Value1 = 99;
             }
             // </InParameterModifier>
         }
@@ -110,6 +128,15 @@ namespace InRefOutModifier
     public struct OptionStruct
     {
         // taking the place of lots of fields
+    }
+
+    public struct LargeStruct
+    {
+        public int Value1;
+        public double Value2;
+        public string Value3;
+        // In a real scenario, this struct might have many more fields
+        // making copying expensive
     }
     // <Snippet4>
 

@@ -12,203 +12,158 @@ ms.assetid: f3742fda-13c2-4283-8966-9e21c2674393
 
 This article covers the classes in .NET that support delegates, and how those map to the `delegate` keyword.
 
+## What are delegates?
+
+Think of a delegate as a way to store a reference to a method, similar to how you might store a reference to an object. Just as you can pass objects to methods, you can pass method references using delegates. This is incredibly useful when you want to write flexible code where different methods can be "plugged in" to provide different behaviors.
+
+For example, imagine you have a calculator that can perform operations on two numbers. Instead of hard-coding addition, subtraction, multiplication, and division into separate methods, you could use delegates to represent any operation that takes two numbers and returns a result.
+
 ## Define delegate types
 
-Let's start with the 'delegate' keyword, because that's primarily what
-you will use as you work with delegates. The code that the
-compiler generates when you use the `delegate` keyword will
-map to method calls that invoke members of the <xref:System.Delegate>
-and <xref:System.MulticastDelegate> classes.
+Now let's see how to create delegate types using the `delegate` keyword. When you define a delegate type, you're essentially creating a template that describes what kind of methods can be stored in that delegate.
 
-You define a delegate type using syntax that is similar to defining
-a method signature. You just add the `delegate` keyword to the
-definition.
+You define a delegate type using syntax that looks similar to a method signature, but with the `delegate` keyword at the beginning:
 
-Let's continue to use the List.Sort() method as our example. The first
-step is to create a type for the comparison delegate:
+```csharp
+// Define a simple delegate that can point to methods taking two integers and returning an integer
+public delegate int Calculator(int x, int y);
+```
+
+This `Calculator` delegate can hold references to any method that takes two `int` parameters and returns an `int`.
+
+Let's look at a more practical example. When you want to sort a list, you need to tell the sorting algorithm how to compare items. Let's see how delegates help with the `List.Sort()` method. The first step is to create a delegate type for the comparison operation:
 
 ```csharp
 // From the .NET Core library
-
-// Define the delegate type:
 public delegate int Comparison<in T>(T left, T right);
 ```
 
-The compiler generates a class, derived from `System.Delegate`
-that matches the signature used (in this case, a method that
-returns an integer, and has two arguments). The type
-of that delegate is `Comparison`. The `Comparison` delegate
-type is a generic type. For more information, see [Generic classes and methods](./fundamentals/types/generics.md).
+This `Comparison<T>` delegate can hold references to any method that:
 
-Notice that the syntax may appear as though it is declaring
-a variable, but it is actually declaring a *type*. You can
-define delegate types inside classes, directly inside namespaces,
-or even in the global namespace.
+- Takes two parameters of type `T`
+- Returns an `int` (typically -1, 0, or 1 to indicate "less than", "equal to", or "greater than")
+
+When you define a delegate type like this, the compiler automatically generates a class derived from `System.Delegate` that matches your signature. This class handles all the complexity of storing and invoking the method references for you.
+
+The `Comparison` delegate type is a generic type, which means it can work with any type `T`. For more information about generics, see [Generic classes and methods](./fundamentals/types/generics.md).
+
+Notice that even though the syntax looks similar to declaring a variable, you're actually declaring a new *type*. You can define delegate types inside classes, directly inside namespaces, or even in the global namespace.
 
 > [!NOTE]
 > Declaring delegate types (or other types) directly in
 > the global namespace is not recommended.
 
-The compiler also generates add and remove handlers for this new
-type so that clients of this class can add and remove methods from an instance's
-invocation list. The compiler will enforce that the signature
-of the method being added or removed matches the signature
-used when declaring the method.
+The compiler also generates add and remove handlers for this new type so that clients of this class can add and remove methods from an instance's invocation list. The compiler enforces that the signature of the method being added or removed matches the signature used when declaring the delegate type.
 
 ## Declare instances of delegates
 
-After defining the delegate, you can create an instance of that type.
-Like all variables in C#, you cannot declare delegate instances directly
-in a namespace, or in the global namespace.
+After defining the delegate type, you can create instances (variables) of that type. Think of this as creating a "slot" where you can store a reference to a method.
+
+Like all variables in C#, you cannot declare delegate instances directly in a namespace or in the global namespace.
 
 ```csharp
-// inside a class definition:
-
-// Declare an instance of that type:
+// Inside a class definition:
 public Comparison<T> comparator;
 ```
 
-The type of the variable is `Comparison<T>`, the delegate type
- defined earlier. The name of the variable is `comparator`.
+The type of this variable is `Comparison<T>` (the delegate type you defined earlier), and the name of the variable is `comparator`. At this point, `comparator` doesn't point to any method yet—it's like an empty slot waiting to be filled.
 
- That code snippet above declared a member variable inside a class. You can also
- declare delegate variables that are local variables, or arguments to methods.
+You can also declare delegate variables as local variables or method parameters, just like any other variable type.
 
 ## Invoke delegates
 
-You invoke the methods that are in the invocation list of a delegate by calling
-that delegate. Inside the `Sort()` method, the code will call the
-comparison method to determine which order to place objects:
+Once you have a delegate instance that points to a method, you can call (invoke) that method through the delegate. You invoke the methods that are in the invocation list of a delegate by calling that delegate as if it were a method.
+
+Here's how the `Sort()` method uses the comparison delegate to determine the order of objects:
 
 ```csharp
 int result = comparator(left, right);
 ```
 
-In the line above, the code *invokes* the method attached to the delegate.
-You treat the variable as a method name, and invoke it using normal
-method call syntax.
+In this line, the code *invokes* the method attached to the delegate. You treat the delegate variable as if it were a method name and call it using normal method call syntax.
 
-That line of code makes an unsafe assumption: There's no guarantee that
-a target has been added to the delegate. If no targets have been attached,
-the line above would cause a `NullReferenceException` to be thrown. The
-idioms used to address this problem are more complicated than a simple
-null-check, and are covered later in this [series](delegates-patterns.md).
+However, this line of code makes an unsafe assumption: it assumes that a target method has been added to the delegate. If no methods have been attached, the line above would cause a `NullReferenceException` to be thrown. The patterns used to address this problem are more sophisticated than a simple null-check, and are covered later in this [series](delegates-patterns.md).
 
 ## Assign, add, and remove invocation targets
 
-That's how a delegate type is defined, and how delegate instances
-are declared and invoked.
+Now you know how to define delegate types, declare delegate instances, and invoke delegates. But how do you actually connect a method to a delegate? This is where delegate assignment comes in.
 
-Developers that want to use the `List.Sort()` method need to define
-a method whose signature matches the delegate type definition, and
-assign it to the delegate used by the sort method. This assignment
-adds the method to the invocation list of that delegate object.
+To use a delegate, you need to assign a method to it. The method you assign must have the same signature (same parameters and return type) as the delegate type defines.
 
-Suppose you wanted to sort a list of strings by their length. Your
-comparison function might be the following:
+Let's see a practical example. Suppose you want to sort a list of strings by their length. You need to create a comparison method that matches the `Comparison<string>` delegate signature:
 
 ```csharp
 private static int CompareLength(string left, string right) =>
     left.Length.CompareTo(right.Length);
 ```
 
-The method is declared as a private method. That's fine. You may not
-want this method to be part of your public interface. It can still
-be used as the comparison method when attached to a delegate. The
-calling code will have this method attached to the target list of
-the delegate object, and can access it through that delegate.
+This method takes two strings and returns an integer indicating which string is "greater" (longer in this case). The method is declared as private, which is perfectly fine. You don't need the method to be part of your public interface to use it with a delegate.
 
-You create that relationship by passing that method to the
-`List.Sort()` method:
+Now you can pass this method to the `List.Sort()` method:
 
 ```csharp
 phrases.Sort(CompareLength);
 ```
 
-Notice that the method name is used, without parentheses. Using the method
-as an argument tells the compiler to convert the method reference into a reference
-that can be used as a delegate invocation target, and attach that method as
-an invocation target.
+Notice that you use the method name without parentheses. This tells the compiler to convert the method reference into a delegate that can be invoked later. The `Sort()` method will call your `CompareLength` method whenever it needs to compare two strings.
 
-You could also have been explicit by declaring a variable of type
-`Comparison<string>` and doing an assignment:
+You can also be more explicit by declaring a delegate variable and assigning the method to it:
 
 ```csharp
 Comparison<string> comparer = CompareLength;
 phrases.Sort(comparer);
 ```
 
-In uses where the method being used as a delegate target is a small method,
-it's common to use [lambda expression](language-reference/operators/lambda-expressions.md) syntax
-to perform the assignment:
+Both approaches accomplish the same thing. The first approach is more concise, while the second makes the delegate assignment more explicit.
+
+For simple methods, it's common to use [lambda expressions](language-reference/operators/lambda-expressions.md) instead of defining a separate method:
 
 ```csharp
 Comparison<string> comparer = (left, right) => left.Length.CompareTo(right.Length);
 phrases.Sort(comparer);
 ```
 
-Using lambda expressions for delegate targets
-is covered more in a [later section](delegates-patterns.md).
+Lambda expressions provide a compact way to define simple methods inline. Using lambda expressions for delegate targets is covered in more detail in a [later section](delegates-patterns.md).
 
-The Sort() example typically attaches a single target method to the
-delegate. However, delegate objects do support invocation lists that
-have multiple target methods attached to a delegate object.
+The examples so far show delegates with a single target method. However, delegate objects can support invocation lists that have multiple target methods attached to a single delegate object. This capability is particularly useful for event handling scenarios.
 
 ## Delegate and MulticastDelegate classes
 
-The language support described above provides the features
-and support you'll typically need to work with delegates. These
-features are built on two classes in the .NET Core
-framework: <xref:System.Delegate> and <xref:System.MulticastDelegate>.
+Behind the scenes, the delegate features you've been using are built on two key classes in the .NET framework: <xref:System.Delegate> and <xref:System.MulticastDelegate>. You don't usually work with these classes directly, but they provide the foundation that makes delegates work.
 
-The `System.Delegate` class and its single direct subclass,
-`System.MulticastDelegate`, provide the framework support for
-creating delegates, registering methods as delegate targets,
-and invoking all methods that are registered as a delegate
-target.
+The `System.Delegate` class and its direct subclass `System.MulticastDelegate` provide the framework support for creating delegates, registering methods as delegate targets, and invoking all methods that are registered with a delegate.
 
-Interestingly, the `System.Delegate` and `System.MulticastDelegate`
-classes are not themselves delegate types. They do provide the
-basis for all specific delegate types. That same language
-design process mandated that you cannot declare a class that derives
-from `Delegate` or `MulticastDelegate`. The C# language rules prohibit it.
+Here's an interesting design detail: `System.Delegate` and `System.MulticastDelegate` are not themselves delegate types that you can use. Instead, they serve as the base classes for all the specific delegate types you create. The C# language prevents you from directly inheriting from these classes—you must use the `delegate` keyword instead.
 
-Instead, the C# compiler creates instances of a class derived from `MulticastDelegate`
-when you use the C# language keyword to declare delegate types.
+When you use the `delegate` keyword to declare a delegate type, the C# compiler automatically creates a class derived from `MulticastDelegate` with your specific signature.
 
-This design has its roots in the first release of C# and .NET. One
-goal for the design team was to ensure that the language enforced
-type safety when using delegates. That meant ensuring that delegates
-were invoked with the right type and number of arguments. And, that
-any return type was correctly indicated at compile time. Delegates
-were part of the 1.0 .NET release, which was before generics.
+### Why this design?
 
-The best way to enforce this type safety was for the compiler to
-create the concrete delegate classes that represented the
-method signature being used.
+This design has its roots in the first release of C# and .NET. The design team had several goals:
 
-Even though you cannot create derived classes directly, you will
-use the methods defined on these classes. Let's go through
-the most common methods that you will use when you work with delegates.
+1. **Type Safety**: The team wanted to ensure that the language enforced type safety when using delegates. This means ensuring that delegates are invoked with the correct type and number of arguments, and that return types are correctly verified at compile time.
 
-The first, most important fact to remember is that every delegate you
-work with is derived from `MulticastDelegate`. A multicast delegate means
-that more than one method target can be invoked when invoking through
-a delegate. The original design considered making a distinction between
-delegates where only one target method could be attached and invoked,
-and delegates where multiple target methods could be attached and
-invoked. That distinction proved to be less useful in practice than
-originally thought. The two different classes were already created,
-and have been in the framework since its initial public release.
+2. **Performance**: By having the compiler generate concrete delegate classes that represent specific method signatures, the runtime can optimize delegate invocations.
 
-The methods that you will use the most with delegates are `Invoke()` and
-`BeginInvoke()` / `EndInvoke()`. `Invoke()` will invoke all the methods that
-have been attached to a particular delegate instance. As you saw above, you
-typically invoke delegates using the method call syntax on the delegate
-variable. As you'll see [later in this series](delegates-patterns.md),
-there are patterns that work directly with these methods.
+3. **Simplicity**: Delegates were included in the 1.0 .NET release, which was before generics were introduced. The design needed to work within the constraints of the time.
 
-Now that you've seen the language syntax and the classes that support
-delegates, let's examine how strongly typed delegates are used, created, and invoked.
+The solution was to have the compiler create the concrete delegate classes that match your method signatures, ensuring type safety while hiding the complexity from you.
+
+### Working with delegate methods
+
+Even though you can't create derived classes directly, you'll occasionally use methods defined on the `Delegate` and `MulticastDelegate` classes. Here are the most important ones to know about:
+
+Every delegate you work with is derived from `MulticastDelegate`. A "multicast" delegate means that more than one method target can be invoked when calling through a delegate. The original design considered making a distinction between delegates that could only invoke one method versus delegates that could invoke multiple methods. In practice, this distinction proved less useful than originally thought, so all delegates in .NET support multiple target methods.
+
+The most commonly used methods when working with delegates are:
+
+- `Invoke()`: Calls all the methods attached to the delegate
+- `BeginInvoke()` / `EndInvoke()`: Used for asynchronous invocation patterns (though `async`/`await` is now preferred)
+
+In most cases, you won't call these methods directly. Instead, you'll use the method call syntax on the delegate variable, as shown in the examples above. However, as you'll see [later in this series](delegates-patterns.md), there are patterns that work directly with these methods.
+
+## Summary
+
+Now that you've seen how the C# language syntax maps to the underlying .NET classes, you're ready to explore how strongly typed delegates are used, created, and invoked in more complex scenarios.
 
 [Next](delegates-strongly-typed.md)

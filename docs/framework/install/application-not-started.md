@@ -17,7 +17,7 @@ This error means that a specific application can't be started. The name of the p
 
 :::image type="content" source="media/application-not-started/app-could-not-be-started-details.png" alt-text="This application could not be started dialog box with the executable name highlighted.":::
 
-In the previous figure, the name of the executable that caused this error is `mt.exe`. Try searching for more information about the executable causing your problem.
+In the previous figure, the name of the executable that caused this error is `mt.exe`. Try searching the internet for more information about the executable causing your problem.
 
 ## How to fix the error
 

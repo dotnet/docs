@@ -35,7 +35,7 @@ When interacting with COM or OLE interfaces, you'll likely find that the native 
 
 If you're interacting with WinRT APIs, you can use the <xref:System.Runtime.InteropServices.UnmanagedType.HString?displayProperty=nameWithType> format to marshal a string as an `HSTRING`.
 
-## Customizing array parameters
+## Customize array parameters
 
 .NET also provides you multiple ways to marshal array parameters. If you're calling an API that takes a C-style array, use the <xref:System.Runtime.InteropServices.UnmanagedType.LPArray?displayProperty=nameWithType> unmanaged type. If the values in the array need customized marshalling, you can use the <xref:System.Runtime.InteropServices.MarshalAsAttribute.ArraySubType> field on the `[MarshalAs]` attribute for that.
 

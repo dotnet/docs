@@ -56,6 +56,14 @@ The output should be similar to:
 4807 DiagnosticScena /home/user/git/samples/core/diagnostics/DiagnosticScenarios/bin/Debug/netcoreapp3.0/DiagnosticScenarios
 ```
 
+
+> [!NOTE]
+> If the above command does not work, or is not found, you likely need to install the `dotnet-counters` tool first, with the following command. 
+
+```console
+dotnet tool install --global dotnet-counters
+```
+
 Now, check managed memory usage with the [dotnet-counters](dotnet-counters.md) tool. The `--refresh-interval` specifies the number of seconds between refreshes:
 
 ```console

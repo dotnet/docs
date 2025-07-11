@@ -933,7 +933,7 @@ updates:
         patterns:
           - "*" # Prefer a single PR per project update.
   - package-ecosystem: "nuget"
-    directory: "/docs/ai/quickstarts/snippets/mcp-server" #MinimalMcpServer.csproj
+    directory: "/docs/ai/quickstarts/snippets/mcp-server" #SampleMcpServer.csproj
     schedule:
       interval: "weekly"
       day: "wednesday"

@@ -1,7 +1,7 @@
 ---
 title: "Troubleshoot blocked .NET Framework installations and uninstallations"
 description: "Troubleshoot issues you encounter that prevent installation of the .NET Framework. Consult status messages for information to resolve issues."
-ms.date: "06/19/2025"
+ms.date: 07/10/2025
 helpviewer_keywords:
   - ".NET Framework, troubleshooting blocked installations"
   - "blocked .NET Framework installations, troubleshooting"

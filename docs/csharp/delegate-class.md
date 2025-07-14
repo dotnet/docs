@@ -14,7 +14,7 @@ This article covers the classes in .NET that support delegates, and how those ma
 
 ## What are delegates?
 
-Think of a delegate as a way to store a reference to a method, similar to how you might store a reference to an object. Just as you can pass objects to methods, you can pass method references using delegates. This is incredibly useful when you want to write flexible code where different methods can be "plugged in" to provide different behaviors.
+Think of a delegate as a way to store a reference to a method, similar to how you might store a reference to an object. Just as you can pass objects to methods, you can pass method references using delegates. This is useful when you want to write flexible code where different methods can be "plugged in" to provide different behaviors.
 
 For example, imagine you have a calculator that can perform operations on two numbers. Instead of hard-coding addition, subtraction, multiplication, and division into separate methods, you could use delegates to represent any operation that takes two numbers and returns a result.
 

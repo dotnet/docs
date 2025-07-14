@@ -24,10 +24,10 @@ In this quickstart, you create a minimal Model Context Protocol (MCP) server usi
 
 ## Create the project
 
-1. In a terminal window, install the MCP Server template:
+1. In a terminal window, install the MCP Server template (version 9.7.0-preview.2.25356.2 or newer):
 
    ```bash
-   dotnet new install Microsoft.Extensions.AI.Templates::9.7.0-preview.2.25356.2
+   dotnet new install Microsoft.Extensions.AI.Templates
    ```
 
 1. Create a new MCP server app with the `dotnet new mcpserver` command:

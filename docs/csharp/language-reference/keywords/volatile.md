@@ -30,7 +30,7 @@ The `volatile` keyword can be applied to fields of these types:
 
 Other types, including `double` and `long`, cannot be marked `volatile` because reads and writes to fields of those types cannot be guaranteed to be atomic. To protect multi-threaded access to those types of fields, use the <xref:System.Threading.Interlocked> class members or protect access using the [`lock`](../statements/lock.md) statement.
 
-For most multithreaded scenarios, even with supported types, prefer using <xref:System.Threading.Interlocked> operations, [`lock`](../statements/lock.md) statements, or other synchronization primitives instead of `volatile`. These alternatives provide stronger guarantees and are less prone to subtle concurrency bugs.
+For most multithreaded scenarios, even with supported types, prefer using <xref:System.Threading.Interlocked> operations, [`lock`](../statements/lock.md) statements, or other synchronization primitives instead of `volatile`. These alternatives are less prone to subtle concurrency bugs.
 
 The `volatile` keyword can only be applied to fields of a `class` or `struct`. Local variables cannot be declared `volatile`.
 

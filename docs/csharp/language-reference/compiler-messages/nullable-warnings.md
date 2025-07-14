@@ -233,7 +233,7 @@ To set the nullable context correctly, you have two options:
 
 The nullable context has two independent flags that control different aspects:
 
-- **Annotation flag**: Controls whether you can use `?` to declare nullable reference types
+- **Annotation flag**: Controls whether you can use `?` to declare nullable reference types and `!` to surpress individual warnings.
 - **Warning flag**: Controls whether the compiler emits nullability warnings
 
 For detailed information about nullable contexts and migration strategies, see:

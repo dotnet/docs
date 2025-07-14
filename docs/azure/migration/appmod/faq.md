@@ -73,3 +73,23 @@ To fix this error:
 No. The tool uses GitHub Copilot in the same way you use it to modify code, which doesn't retain code snippets beyond the immediate session. Telemetry metrics are collected and analyzed to track feature usage and effectiveness.
 
 For more information, see the [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839).
+
+### What are the intended uses of GitHub Copilot App Modernization for .NET?
+
+GitHub Copilot App Modernization for .NET is intended to help enterprises migrate their .NET applications to Azure. It assesses the application code issues need to be addressed for migration, and provides code remediation patterns that can be applied with AI.
+
+### How was GitHub Copilot App Modernization for .NET evaluated? What metrics are used to measure performance? 
+
+GitHub Copilot App Modernization for .NET was evaluated through extensive manual and automated testing. More evaluation was performed over custom datasets for offensive and malicious prompts (user questions) and responses. In addition, GitHub Copilot App Modernization for .NET is continuously evaluated with user online feedback.
+
+### What are the limitations of GitHub Copilot App Modernization for .NET?
+
+GitHub Copilot App Modernization for .NET can be used on application source code written in .NET framework or .NET Core. Applications in other languages are not supported.
+
+### What operational factors and settings allow for effective and responsible use of GitHub Copilot App Modernization for .NET?
+
+You may choose the model to make code changes at the bottom of the GitHub Copilot chat box, but different models will have different effects for code changes, with different token consumption. For more information, please refer to [Manage Copilot usage and models](https://learn.microsoft.com/en-us/visualstudio/ide/copilot-usage-and-models).
+
+### How do I provide feedback on GitHub Copilot App Modernization for .NET? 
+
+We value your feedback — share [your thoughts here](https://aka.ms/AM4DFeedback) to help us continue improving the product.

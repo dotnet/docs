@@ -36,7 +36,7 @@ To use App Modernization for .NET, you need:
 
 # Feedback
 
-We value your feedback — share [your thoughts here](https://aka.ms/AM4JFeedback) to help us continue improving the product.
+We value your feedback — share [your thoughts here](https://aka.ms/AM4DFeedback) to help us continue improving the product.
 
 # License
 

@@ -215,6 +215,32 @@ The following warnings indicate that you haven't set the nullable context correc
 - **CS8636** - *Invalid option for `/nullable`; must be `disable`, `enable`, `warnings` or `annotations`*
 - **CS8637** - *Expected `enable`, `disable`, or `restore`*
 
+To set the nullable context correctly, you have two options:
+
+1. **Project-level configuration**: Add the [`<Nullable>`](../compiler-options/language.md#nullable) element to your project file:
+
+```xml
+<PropertyGroup>
+    <Nullable>enable</Nullable>
+</PropertyGroup>
+```
+
+2. **File-level configuration**: Use [`#nullable`](../preprocessor-directives.md#nullable-context) preprocessor directives in your source code:
+
+```csharp
+#nullable enable
+```
+
+The nullable context has two independent flags that control different aspects:
+
+- **Annotation flag**: Controls whether you can use `?` to declare nullable reference types
+- **Warning flag**: Controls whether the compiler emits nullability warnings
+
+For detailed information about nullable contexts and migration strategies, see:
+
+- [Nullable reference types overview](../../nullable-references.md#nullable-context)
+- [Update a codebase with nullable reference types](../../nullable-migration-strategies.md)
+
 ## Incorrect annotation syntax
 
 These errors and warnings indicate that usage of the `!` or `?` annotation is incorrect.

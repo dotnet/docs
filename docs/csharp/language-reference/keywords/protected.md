@@ -36,7 +36,7 @@ Struct members cannot be protected because the struct cannot be inherited.
 
 In this example, the class `DerivedPoint` is derived from `Point`. Therefore, you can access the protected members of the base class directly from the derived class.
 
-[!code-csharp[csrefKeywordsModifiers#12](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsModifiers/CS/csrefKeywordsModifiers.cs#12)]  
+:::code language="csharp" source="./snippets/protected/Example2.cs" id="snippet1":::  
 
 If you change the access levels of `x` and `y` to [private](private.md), the compiler will issue the error messages:
 

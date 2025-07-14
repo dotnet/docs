@@ -47,6 +47,9 @@ First, add the new method to the interface, including the body of the method:
 
 :::code language="csharp" source="./snippets/default-interface-members-versions/finished/customer-relationship/ICustomer.cs" id="SnippetLoyaltyDiscountVersionOne":::
 
+> [!NOTE]
+> The preceding example uses `DateTime.Now.AddYears(-2)` for simplicity in this tutorial. Be aware that `DateTime` calculations can have edge cases with daylight saving time transitions and leap years. For production code, consider using UTC time or more robust date calculation approaches when precision is important.
+
 The library author wrote a first test to check the implementation:
 
 :::code language="csharp" source="./snippets/default-interface-members-versions/finished/customer-relationship/Program.cs" id="SnippetTestDefaultImplementation":::

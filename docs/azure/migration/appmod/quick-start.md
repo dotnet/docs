@@ -1,6 +1,6 @@
-# Quickstart: assess and migrate a .NET project using GitHub Copilot App Modernization for .NET
+# Quickstart: assess and migrate a .NET project using GitHub Copilot App Modernization for .NET (Preview)
 
-This quickstart shows you how to use GitHub Copilot App Modernization for .NET to assess and migrate a .NET project. In this quickstart, you install and configure the extension, then assess and migrate a sample project. 
+This quickstart shows you how to use GitHub Copilot App Modernization for .NET (Preview) to assess and migrate a .NET project. In this quickstart, you install and configure the extension, then assess and migrate a sample project. 
 
 ## Prerequisites
 
@@ -12,7 +12,7 @@ This quickstart shows you how to use GitHub Copilot App Modernization for .NET t
 
 To use GitHub Copilot, sign in to your GitHub account in Visual Studio. Select the Copilot icon at the top of Visual Studio to access the GitHub Copilot pane. For more information about setting up GitHub Copilot, see [Set up GitHub Copilot in Visual Stuido](https://learn.microsoft.com/en-us/visualstudio/ide/visual-studio-github-copilot-install-and-states?view=vs-2022).
 
-Then, use the following steps to install GitHub Copilot App Modernization for .NET:
+Then, use the following steps to install GitHub Copilot App Modernization for .NET (Preview):
 1. In Visual Studio, navigate to `Extensions -> Manage Extensions`.
 1. Search for `Github Copilot App Modernization for .NET` in the marketplace.
 1. On the extension page, select `Install`. 
@@ -36,7 +36,7 @@ Use the following steps to start your migration process with assessment. This as
 
 ## Start a migration
 
- GitHub Copilot App Modernization for .NET provides predefined tasks for common migration scenarios using Microsoft's best practice.
+ GitHub Copilot App Modernization for .NET (Preview) provides predefined tasks for common migration scenarios using Microsoft's best practice.
 
  You can start the migration with a simple click on the `Migrate` button in the `Assessment Report` generated in last step.
 

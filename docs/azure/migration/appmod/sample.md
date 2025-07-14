@@ -1,6 +1,6 @@
-# Contoso University Management System Migration Sample for GitHub Copilot App Modernization for .NET
+# Contoso University Management System Migration Sample for GitHub Copilot App Modernization for .NET (Preview)
 
-To demonstrate GitHub Copilot App Modernization for .NET, we've provided a migration sample [Contoso University sample web app](https://github.com/Azure-Samples/dotnet-migration-copilot-samples/tree/main/ContosoUniversity).  
+To demonstrate GitHub Copilot App Modernization for .NET (Preview), we've provided a migration sample [Contoso University sample web app](https://github.com/Azure-Samples/dotnet-migration-copilot-samples/tree/main/ContosoUniversity).  
 
 This fictional university management system is originally built with .NET Framework 4.8 and contains functionalities such as student enrollment, course management, and instructor assignments. It uses legacy Windows-based components, including:
 
@@ -10,7 +10,7 @@ This fictional university management system is originally built with .NET Framew
 
 ## After Migration
 
-Using App Modernization for .NET, the sample can be updated to leverage modern, cloud-native Azure services, including:
+Using App Modernization for .NET (Preview), the sample can be updated to leverage modern, cloud-native Azure services, including:
 
 - **Azure SQL Database** replacing SQL Server LocalDB  
 - **Azure Blob Storage** replacing local file system access  
@@ -21,4 +21,4 @@ This migration showcases how legacy on-premises applications can be transformed 
 
 ## See Also
 
-- [Quickstart: assess and migrate a .NET project using GitHub Copilot App Modernization for .NET](quick-start.md)
+- [Quickstart: assess and migrate a .NET project using GitHub Copilot App Modernization for .NET (Preview)](quick-start.md)

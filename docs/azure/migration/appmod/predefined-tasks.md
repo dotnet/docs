@@ -1,8 +1,8 @@
-# Predefined tasks for GitHub Copilot App Modernization for .NET
+# Predefined tasks for GitHub Copilot App Modernization for .NET (Preview)
 
-This article describes the predefined tasks available for GitHub Copilot App Modernization for .NET.
+This article describes the predefined tasks available for GitHub Copilot App Modernization for .NET (Preview).
 
-Predefined tasks capture industry best practices for using Azure services. Currently, App Modernization for .NET offers predefined tasks that cover common migration scenarios. These tasks address the following subjects, and more:
+Predefined tasks capture industry best practices for using Azure services. Currently, App Modernization for .NET (Preview) offers predefined tasks that cover common migration scenarios. These tasks address the following subjects, and more:
 
 - Secret management
 - Message queue integration

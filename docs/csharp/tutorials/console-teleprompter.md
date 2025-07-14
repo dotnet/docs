@@ -240,7 +240,7 @@ internal class TelePrompterConfig
 }
 ```
 
-Create a new file; it can be any name ending with .cs. For example TelePrompterConfig.cs. Paste in the code above, save and close. Put that class in the
+Create a new file; it can be any name ending with .cs. For example TelePrompterConfig.cs. Paste in the preceding code, save and close. Put that class in the
 `TeleprompterConsole` namespace as shown. Note the `using static`
 statement allows you to reference the `Min` and `Max` methods without the
 enclosing class or namespace names. A [`using static`](../language-reference/keywords/using-directive.md) statement imports the

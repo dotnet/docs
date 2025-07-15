@@ -231,7 +231,6 @@ To set the nullable context correctly, you have two options:
    #nullable enable
    ```
 
-
 The nullable context has two independent flags that control different aspects:
 
 - **Annotation flag**: Controls whether you can use `?` to declare nullable reference types and `!` to surpress individual warnings.

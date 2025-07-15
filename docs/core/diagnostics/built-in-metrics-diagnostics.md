@@ -69,6 +69,7 @@ The `Microsoft.Extensions.Diagnostics.ResourceMonitoring` metrics report resourc
 
 - [`container.cpu.limit.utilization`](#metric-containercpulimitutilization)
 - [`container.cpu.request.utilization`](#metric-containercpurequestutilization)
+- [`container.cpu.time`](#metric-containercputime)
 - [`container.memory.limit.utilization`](#metric-containermemorylimitutilization)
 - [`container.memory.usage`](#metric-containermemoryusage)
 - [`process.cpu.utilization`](#metric-processcpuutilization)
@@ -97,6 +98,16 @@ The instrument is only available on a system running on containers on Linux.
 | `container.cpu.request.utilization` | ObservableGauge | `1` | The CPU consumption of the running containerized application relative to resource request in range `[0, 1]`. |
 
 Available starting in: .NET 8.8.0.
+
+##### Metric: `container.cpu.time`
+
+The instrument is only available on a system running on a container either on Windows or Linux.
+
+| Name | Instrument Type | Unit (UCUM) | Description |
+| ---- | --------------- | ----------- | ----------- |
+| `container.cpu.time` | ObservableCounter | `s` | CPU time used by the container. |
+
+Available starting in: .NET 9.8.0.
 
 ##### Metric: `container.memory.limit.utilization`
 

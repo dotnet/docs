@@ -54,9 +54,13 @@ If you want your derived class to have a member with the same name as a member i
 
 :::code language="csharp" source="./snippets/inheritance/Inheritance.cs" ID="SnippetNewMethods":::
 
-Hidden base class members may be accessed from client code by casting the instance of the derived class to an instance of the base class. For example:
+When you use the `new` keyword, you're creating a method that *hides* the base class method rather than *overriding* it. This is different from virtual methods. With method hiding, the method that gets called depends on the compile-time type of the variable, not the runtime type of the object.
+
+Hidden base class members can be accessed from client code by casting the instance of the derived class to an instance of the base class. For example:
 
 :::code language="csharp" source="./snippets/inheritance/Inheritance.cs" ID="SnippetUseNewMethods":::
+
+In this example, both variables refer to the same object instance, but the method that gets called depends on the variable's declared type: `DerivedClass.DoWork()` when accessed through the `DerivedClass` variable, and `BaseClass.DoWork()` when accessed through the `BaseClass` variable.
 
 ### Prevent derived classes from overriding virtual members  
 

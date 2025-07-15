@@ -70,6 +70,7 @@ The `Microsoft.Extensions.Diagnostics.ResourceMonitoring` metrics report resourc
 - [`container.cpu.limit.utilization`](#metric-containercpulimitutilization)
 - [`container.cpu.request.utilization`](#metric-containercpurequestutilization)
 - [`container.memory.limit.utilization`](#metric-containermemorylimitutilization)
+- [`container.memory.usage`](#metric-containermemoryusage)
 - [`process.cpu.utilization`](#metric-processcpuutilization)
 - [`dotnet.process.memory.virtual.utilization`](#metric-dotnetprocessmemoryvirtualutilization)
 - [`system.network.connections`](#metric-systemnetworkconnections)
@@ -106,6 +107,16 @@ The instrument is only available on a system running on containers both on Windo
 | `container.memory.limit.utilization` | ObservableGauge | `1` | The memory consumption of the running containerized application relative to resource limit in range `[0, 1]`. |
 
 Available starting in: .NET 8.8.0.
+
+##### Metric: `container.memory.usage`
+
+The instrument is only available on a system running on containers either on Windows or Linux.
+
+| Name | Instrument Type | Unit (UCUM) | Description |
+| ---- | --------------- | ----------- | ----------- |
+| `container.memory.usage` | ObservableUpDownCounter | `By` | Memory usage of all processes in the container measured in bytes. |
+
+Available starting in: .NET 9.8.0.
 
 ##### Metric: `process.cpu.utilization`
 

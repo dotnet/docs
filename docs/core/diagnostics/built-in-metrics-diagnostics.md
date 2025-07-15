@@ -110,7 +110,7 @@ Available starting in: .NET 8.8.0.
 
 ##### Metric: `container.memory.usage`
 
-The instrument is only available on a system running on containers both on Windows and Linux.
+The instrument is only available on a system running on containers either on Windows or Linux.
 
 | Name | Instrument Type | Unit (UCUM) | Description |
 | ---- | --------------- | ----------- | ----------- |

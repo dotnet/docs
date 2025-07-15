@@ -10,7 +10,7 @@ Resource monitoring involves the continuous measurement of resource utilization 
 
 The measurements can be consumed in two ways:
 
-- Use [.NET metrics](metrics.md).
+- Using [.NET metrics](metrics.md).
 - Use the <xref:Microsoft.Extensions.Diagnostics.ResourceMonitoring.IResourceMonitor> interface. This interface is deprecated, use the metrics-based approach instead. If you still need to listen to metric values manually, see [Migrate to metrics-based resource monitoring](#migrate-to-metrics-based-resource-monitoring).
 
 > [!IMPORTANT]

@@ -100,7 +100,7 @@ Available starting in: .NET 8.8.0.
 
 ##### Metric: `container.cpu.time`
 
-The instrument is only available on a system running on containers both on Windows and Linux.
+The instrument is only available on a system running on a container either on Windows or Linux.
 
 | Name | Instrument Type | Unit (UCUM) | Description |
 | ---- | --------------- | ----------- | ----------- |

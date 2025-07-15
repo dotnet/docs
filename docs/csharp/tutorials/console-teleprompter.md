@@ -27,7 +27,7 @@ There are a lot of features in this tutorial. Let's build them one by one.
 
 The first step is to create a new application. Open a command prompt and create a new directory for your application. Make that the current directory. Type the command `dotnet new console` at the command prompt. For example:
 
-```
+```console
 E:\development\VSprojects>mkdir teleprompter
 E:\development\VSprojects>cd teleprompter
 E:\development\VSprojects\teleprompter>dotnet new console

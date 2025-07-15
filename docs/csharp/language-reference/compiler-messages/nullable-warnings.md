@@ -219,11 +219,11 @@ To set the nullable context correctly, you have two options:
 
 1. **Project-level configuration**: Add the [`<Nullable>`](../compiler-options/language.md#nullable) element to your project file:
 
-```xml
-<PropertyGroup>
-    <Nullable>enable</Nullable>
-</PropertyGroup>
-```
+  ```xml
+  <PropertyGroup>
+      <Nullable>enable</Nullable>
+  </PropertyGroup>
+  ```
 
 2. **File-level configuration**: Use [`#nullable`](../preprocessor-directives.md#nullable-context) preprocessor directives in your source code:
 

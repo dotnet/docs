@@ -218,15 +218,19 @@ The following warnings indicate that you haven't set the nullable context correc
 To set the nullable context correctly, you have two options:
 
 1. **Project-level configuration**: Add the [`<Nullable>`](../compiler-options/language.md#nullable) element to your project file:
-   ```xml
+
+      ```xml
    <PropertyGroup>
        <Nullable>enable</Nullable>
    </PropertyGroup>
    ```
+
 2. **File-level configuration**: Use [`#nullable`](../preprocessor-directives.md#nullable-context) preprocessor directives in your source code:
+
    ```csharp
    #nullable enable
    ```
+
 
 The nullable context has two independent flags that control different aspects:
 

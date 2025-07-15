@@ -25,7 +25,22 @@ There are a lot of features in this tutorial. Let's build them one by one.
 
 ## Create the app
 
-The first step is to create a new application. Open a command prompt and create a new directory for your application. Make that the current directory. Type the command `dotnet new console` at the command prompt. This creates the starter files for a basic "Hello World" application.
+The first step is to create a new application. Open a command prompt and create a new directory for your application. Make that the current directory. Type the command `dotnet new console` at the command prompt. For example:
+
+```console
+E:\development\VSprojects>mkdir teleprompter
+E:\development\VSprojects>cd teleprompter
+E:\development\VSprojects\teleprompter>dotnet new console
+The template "Console Application" was created successfully.
+
+Processing post-creation actions...
+Running 'dotnet restore' on E:\development\VSprojects\teleprompter\teleprompter.csproj...
+  Determining projects to restore...
+  Restored E:\development\VSprojects\teleprompter\teleprompter.csproj (in 78 ms).
+Restore succeeded.
+```
+
+This creates the starter files for a basic "Hello World" application.
 
 Before you start making modifications, let's run the simple Hello World application. After creating the application, type `dotnet run` at the command prompt. This command runs the NuGet package restore process, creates the application executable, and runs the executable.
 
@@ -201,11 +216,11 @@ private static async Task GetInput()
 
 This creates a lambda expression to represent an <xref:System.Action> delegate that reads a key from the Console and modifies a local variable representing the delay when the user presses the '<' (less than) or '>' (greater than) keys. The delegate method finishes when user presses the 'X' or 'x'  keys, which allow the user to stop the text display at any time. This method uses <xref:System.Console.ReadKey> to block and wait for the user to press a key.
 
-To finish this feature, you need to create a new `async Task` returning method that starts both of these tasks (`GetInput` and `ShowTeleprompter`), and also manages the shared data between these two tasks.
-
 It's time to create a class that can handle the shared data between these two tasks. This class contains two public properties: the delay, and a flag `Done` to indicate that the file has been completely read:
 
 ```csharp
+using static System.Math;
+
 namespace TeleprompterConsole;
 
 internal class TelePrompterConfig
@@ -225,17 +240,13 @@ internal class TelePrompterConfig
 }
 ```
 
-Put that class in a new file, and include that class in the
-`TeleprompterConsole` namespace as shown. You'll also need to add a `using static`
-statement at the top of the file so that you can reference the `Min` and `Max` methods without the
+Create a new file; it can be any name ending with .cs. For example TelePrompterConfig.cs. Paste in the TelePrompterConfig class code, save and close. Put that class in the
+`TeleprompterConsole` namespace as shown. Note the `using static`
+statement allows you to reference the `Min` and `Max` methods without the
 enclosing class or namespace names. A [`using static`](../language-reference/keywords/using-directive.md) statement imports the
 methods from one class. This is in contrast with the `using` statement without `static`, which imports all classes from a namespace.
 
-```csharp
-using static System.Math;
-```
-
-Next, you need to update the `ShowTeleprompter` and `GetInput` methods to use the new `config` object. Write one final `Task` returning `async` method to start both tasks and exit when the first task finishes:
+Next, you need to update the `ShowTeleprompter` and `GetInput` methods to use the new `config` object. To finish this feature, you need to create a new `async Task` returning method that starts both of these tasks (`GetInput` and `ShowTeleprompter`), and also manages the shared data between these two tasks. Create a RunTelePrompter task to start both tasks and exit when the first task finishes:
 
 ```csharp
 private static async Task RunTeleprompter()
@@ -250,7 +261,7 @@ private static async Task RunTeleprompter()
 
 The one new method here is the <xref:System.Threading.Tasks.Task.WhenAny(System.Threading.Tasks.Task[])> call. That creates a `Task` that finishes as soon as any of the tasks in its argument list completes.
 
-Next, you need to update both the `ShowTeleprompter` and `GetInput` methods to use the `config` object for the delay:
+Next, you need to update both the `ShowTeleprompter` and `GetInput` methods to use the `config` object for the delay. The config object is being passed as a parameter to these methods. Use copy/paste to completely replace the methods with the new code here. You can see the code is using attributes and calling methods from the config object:
 
 ```csharp
 private static async Task ShowTeleprompter(TelePrompterConfig config)
@@ -285,7 +296,7 @@ private static async Task GetInput(TelePrompterConfig config)
 }
 ```
 
-This new version of `ShowTeleprompter` calls a new method in the `TeleprompterConfig` class. Now, you need to update `Main` to call `RunTeleprompter` instead of `ShowTeleprompter`:
+Now, you need to update `Main` to call `RunTeleprompter` instead of `ShowTeleprompter`:
 
 ```csharp
 await RunTeleprompter();

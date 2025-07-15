@@ -1,0 +1,16 @@
+{
+    "servers": {
+        "SampleMcpServer": {
+            "type": "stdio",
+            "command": "dotnet",
+            "args": [
+                "run",
+                "--project",
+                "."
+            ],
+            "env": {
+                "WEATHER_CHOICES": "sunny,humid,freezing"
+            }
+        }
+    }
+}

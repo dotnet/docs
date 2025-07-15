@@ -1,0 +1,33 @@
+{
+  "$schema": "https://modelcontextprotocol.io/schemas/draft/2025-07-09/server.json",
+  "description": "<your description here>",
+  "name": "io.github.<your GitHub username here>/<your repo name>",
+  "packages": [
+    {
+      "registry_name": "nuget",
+      "name": "<your package ID here>",
+      "version": "<your package version here>",
+      "package_arguments": [],
+      "environment_variables": [
+        {
+          "name": "WEATHER_CHOICES",
+          "value": "{weather_choices}",
+          "variables": {
+            "weather_choices": {
+              "description": "Comma separated list of weather descriptions to randomly select.",
+              "is_required": true,
+              "is_secret": false
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "repository": {
+    "url": "https://github.com/<your GitHub username here>/<your repo name>",
+    "source": "github"
+  },
+  "version_detail": {
+    "version": "<your package version here>"
+  }
+}

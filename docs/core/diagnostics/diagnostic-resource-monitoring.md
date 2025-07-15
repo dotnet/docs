@@ -101,7 +101,7 @@ Since the <xref:Microsoft.Extensions.Diagnostics.ResourceMonitoring.IResourceMon
 - `container.cpu.request.utilization`: The CPU consumption share of the running containerized application relative to resource request in range `[0, 1]`. Available for containerized apps on Linux.
 - `container.memory.limit.utilization`: The memory consumption share of the running containerized application relative to resource limit in range `[0, 1]`. Available for containerized apps on Linux and Windows.
 
-See the [Built-in metrics: Microsoft.Extensions.Diagnostics.ResourceMonitoring](built-in-metrics-diagnostics.md#microsoftextensionsdiagnosticsresourcemonitoring) section for more information about the available metrics.
+For more information about the available metrics, see the [Built-in metrics: Microsoft.Extensions.Diagnostics.ResourceMonitoring](built-in-metrics-diagnostics.md#microsoftextensionsdiagnosticsresourcemonitoring) section.
 
 #### Migration guide
 

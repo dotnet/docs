@@ -9,7 +9,7 @@ ai-usage: ai-assisted
 
 # What's new in .NET 10
 
-Learn about the new features in .NET 10 and find links to further documentation.
+Learn about the new features in .NET 10 and find links to further documentation. This page has been updated for Preview 6.
 
 .NET 10, the successor to [.NET 9](../dotnet-9/overview.md), is [supported for three years](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) as a long-term support (LTS) release. You can [download .NET 10 here](https://get.dot.net/10).
 
@@ -26,7 +26,6 @@ For more information, see [What's new in the .NET 10 runtime](runtime.md).
 The .NET 10 libraries introduce new APIs in cryptography, globalization, numerics, serialization, collections, and diagnostics, and when working with ZIP files. New JSON serialization options include disallowing duplicate properties and strict serialization settings. Post-quantum cryptography support has been expanded with Windows CNG support.
 
 For more information, see [What's new in the .NET 10 libraries](libraries.md).
-
 For details on JSON serialization, see [System.Text.Json overview](/dotnet/standard/serialization/system-text-json/overview).
 
 ## .NET SDK
@@ -34,7 +33,6 @@ For details on JSON serialization, see [System.Text.Json overview](/dotnet/stand
 The .NET 10 SDK includes support for Microsoft.Testing.Platform in `dotnet test`, standardizes CLI command order, and updates the CLI to generate native tab-completion scripts for popular shells. For containers, console apps can natively create container images, and a new property lets you explicitly set the format of container images. The SDK also supports platform-specific .NET tools, one-shot tool execution with `dotnet tool exec`, the new `dnx` tool execution script, CLI introspection with `--cli-schema`, and enhanced file-based apps with publish support and native AOT.
 
 For more information, see [What's new in the SDK for .NET 10](sdk.md).
-
 For details on .NET tools, see [Manage .NET tools](/dotnet/core/tools/global-tools).
 
 ## .NET Aspire

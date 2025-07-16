@@ -9,7 +9,7 @@ ai-usage: ai-assisted
 
 # What's new in .NET libraries for .NET 10
 
-This article describes new features in the .NET libraries for .NET 10.
+This article describes new features in the .NET libraries for .NET 10. It has been updated for Preview 6.
 
 ## Cryptography
 
@@ -95,7 +95,25 @@ using (MLKem key = MLKem.GenerateKey(MLKemAlgorithm.MLKem768))
 
 These algorithms all continue with the pattern of having a static `IsSupported` property to indicate if the algorithm is supported on the current system.
 
-.NET 10 includes Windows CNG support for post-quantum cryptography, making these algorithms available on Windows systems with PQC support. The PQC algorithms are available on systems where the system cryptographic libraries are OpenSSL 3.5 (or newer) or Windows CNG with PQC support. Also, the new classes are all marked as [`[Experimental]`](../../../fundamentals/syslib-diagnostics/experimental-overview.md) under diagnostic `SYSLIB5006` until development is complete.
+.NET 10 includes Windows CNG support for post-quantum cryptography, making these algorithms available on Windows systems with PQC support. For example:
+
+```csharp
+using System;
+using System.IO;
+using System.Security.Cryptography;
+
+private static bool ValidateMLDsaSignature(ReadOnlySpan<byte> data, ReadOnlySpan<byte> signature, string publicKeyPath)
+{
+    string publicKeyPem = File.ReadAllText(publicKeyPath);
+
+    using (MLDsa key = MLDsa.ImportFromPem(publicKeyPem))
+    {
+        return key.VerifyData(data, signature);
+    }
+}
+```
+
+The PQC algorithms are available on systems where the system cryptographic libraries are OpenSSL 3.5 (or newer) or Windows CNG with PQC support. Also, the new classes are all marked as [`[Experimental]`](../../../fundamentals/syslib-diagnostics/experimental-overview.md) under diagnostic `SYSLIB5006` until development is complete.
 
 ## Globalization and date/time
 
@@ -176,7 +194,7 @@ When you use [source generators for JSON serialization](../../../standard/serial
 
 ### Option to disallow duplicate JSON properties
 
-The JSON specification doesn't specify how to handle duplicate properties when deserializing a JSON payload. This can lead to unexpected results and security vulnerabilities. .NET 10 introduces the `AllowDuplicateProperties` option to disallow duplicate JSON properties:
+The JSON specification doesn't specify how to handle duplicate properties when deserializing a JSON payload. This can lead to unexpected results and security vulnerabilities. .NET 10 introduces the <xref:System.Text.Json.JsonSerializerOptions.AllowDuplicateProperties?displayProperty=nameWithType> option to disallow duplicate JSON properties:
 
 ```csharp
 string json = """{ "Value": 1, "Value": -1 }""";
@@ -193,20 +211,20 @@ JsonDocument.Parse(json, docOptions);   // throws JsonException
 record MyRecord(int Value);
 ```
 
-Duplicate detection works by checking if a value is assigned multiple times during deserialization, so it works as expected with other options like case-sensitivity and naming policy.
+Duplicates are detected by checking if a value is assigned multiple times during deserialization, so it works as expected with other options like case-sensitivity and naming policy.
 
 ### Strict JSON serialization options
 
-The JSON serializer accepts many options to customize serialization and deserialization, but the defaults may be too relaxed for some applications. .NET 10 adds a new `JsonSerializationOptions.Strict` preset that follows best practices by including the following options:
+The JSON serializer accepts many options to customize serialization and deserialization, but the defaults might be too relaxed for some applications. .NET 10 adds a new <xref:System.Text.Json.JsonSerializerOptions.Strict?displayProperty=nameWithType> preset that follows best practices by including the following options:
 
-- Applies the `JsonUnmappedMemberHandling.Disallow` policy
-- Disables `AllowDuplicateProperties`
-- Preserves case sensitive property binding
-- Enables both `RespectNullableAnnotations` and `RespectRequiredConstructorParameters` settings
+- Applies the <xref:System.Text.Json.Serialization.JsonUnmappedMemberHandling.Disallow?displayProperty=nameWithType> policy.
+- Disables <xref:System.Text.Json.JsonSerializerOptions.AllowDuplicateProperties?displayProperty=nameWithType>.
+- Preserves case sensitive property binding.
+- Enables both <xref:System.Text.Json.JsonSerializerOptions.RespectNullableAnnotations?displayProperty=nameWithType> and <xref:System.Text.Json.JsonSerializerOptions.RespectRequiredConstructorParameters?displayProperty=nameWithType> settings.
 
-These options are read-compatible with `JsonSerializationOptions.Default` - an object serialized with `JsonSerializationOptions.Default` can be deserialized with `JsonSerializationOptions.Strict`.
+These options are read-compatible with <xref:System.Text.Json.JsonSerializerOptions.Default?displayProperty=nameWithType> - an object serialized with <xref:System.Text.Json.JsonSerializerOptions.Default?displayProperty=nameWithType> can be deserialized with <xref:System.Text.Json.JsonSerializerOptions.Strict?displayProperty=nameWithType>.
 
-For more information about JSON serialization, see [System.Text.Json overview](/dotnet/standard/serialization/system-text-json/overview).
+For more information about JSON serialization, see [System.Text.Json overview](../../../standard/serialization/system-text-json/overview.md).
 
 ## System.Numerics
 

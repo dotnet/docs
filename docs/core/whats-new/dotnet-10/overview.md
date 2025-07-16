@@ -9,7 +9,7 @@ ai-usage: ai-assisted
 
 # What's new in .NET 10
 
-Learn about the new features in .NET 10 and find links to further documentation. This page is updated for Preview 6.
+Learn about the new features in .NET 10 and find links to further documentation.
 
 .NET 10, the successor to [.NET 9](../dotnet-9/overview.md), is [supported for three years](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) as a long-term support (LTS) release. You can [download .NET 10 here](https://get.dot.net/10).
 
@@ -17,7 +17,7 @@ Your feedback is important and appreciated. If you have questions or comments, u
 
 ## .NET runtime
 
-The .NET 10 runtime introduces improvements in JIT inlining, method devirtualization, and stack allocations. It also includes AVX10.2 support and NativeAOT enhancements. Preview 6 adds improved code generation for struct arguments and enhanced loop inversion for better optimization.
+The .NET 10 runtime introduces improvements in JIT inlining, method devirtualization, and stack allocations. It also includes AVX10.2 support, NativeAOT enhancements, improved code generation for struct arguments, and enhanced loop inversion for better optimization.
 
 For more information, see [What's new in the .NET 10 runtime](runtime.md).
 
@@ -31,7 +31,7 @@ For details on JSON serialization, see [System.Text.Json overview](/dotnet/stand
 
 ## .NET SDK
 
-The .NET 10 SDK includes support for Microsoft.Testing.Platform in `dotnet test`, standardizes CLI command order, and updates the CLI to generate native tab-completion scripts for popular shells. For containers, console apps can natively create container images, and a new property lets you explicitly set the format of container images. New in Preview 6: platform-specific .NET tools, one-shot tool execution with `dotnet tool exec`, the new `dnx` tool execution script, CLI introspection with `--cli-schema`, and enhanced file-based apps with publish support and native AOT.
+The .NET 10 SDK includes support for Microsoft.Testing.Platform in `dotnet test`, standardizes CLI command order, and updates the CLI to generate native tab-completion scripts for popular shells. For containers, console apps can natively create container images, and a new property lets you explicitly set the format of container images. The SDK also supports platform-specific .NET tools, one-shot tool execution with `dotnet tool exec`, the new `dnx` tool execution script, CLI introspection with `--cli-schema`, and enhanced file-based apps with publish support and native AOT.
 
 For more information, see [What's new in the SDK for .NET 10](sdk.md).
 
@@ -43,7 +43,7 @@ For information about what's new in .NET Aspire, see [.NET Aspire — what's new
 
 ## ASP.NET Core
 
-The ASP.NET Core 10.0 release introduces several new features and enhancements, including Blazor improvements, OpenAPI enhancements, and minimal API updates. Preview 6 adds Blazor WebAssembly preloading, automatic memory pool eviction, enhanced form validation, improved diagnostics, and passkey support for Identity.
+The ASP.NET Core 10.0 release introduces several new features and enhancements, including Blazor improvements, OpenAPI enhancements, and minimal API updates. Features include Blazor WebAssembly preloading, automatic memory pool eviction, enhanced form validation, improved diagnostics, and passkey support for Identity.
 
 For details, see [What's new in ASP.NET Core for .NET 10](/aspnet/core/release-notes/aspnetcore-10.0).
 
@@ -92,13 +92,13 @@ These updates ensure that Visual Basic can consume updated features in C# and th
 
 ## .NET MAUI
 
-The .NET MAUI updates in .NET 10 include several new features and quality improvements for .NET MAUI, .NET for Android, and .NET for iOS, Mac Catalyst, macOS, and tvOS. Preview 6 adds MediaPicker enhancements for selecting multiple files and image compression, WebView request interception, and support for Android API levels 35 and 36.
+The .NET MAUI updates in .NET 10 include several new features and quality improvements for .NET MAUI, .NET for Android, and .NET for iOS, Mac Catalyst, macOS, and tvOS. Features include MediaPicker enhancements for selecting multiple files and image compression, WebView request interception, and support for Android API levels 35 and 36.
 
 For details, see [What's new in .NET MAUI in .NET 10](/dotnet/maui/whats-new/dotnet-10).
 
 ## EF Core
 
-The EF Core 10 release introduces several new features and improvements, including LINQ enhancements, performance optimizations, and improved support for Azure Cosmos DB. Preview 6 adds named query filters, allowing multiple filters per entity type with selective disabling.
+The EF Core 10 release introduces several new features and improvements, including LINQ enhancements, performance optimizations, improved support for Azure Cosmos DB, and named query filters that allow multiple filters per entity type with selective disabling.
 
 For details, see [What's new in EF Core for .NET 10](/ef/core/what-is-new/ef-core-10.0/whatsnew).
 

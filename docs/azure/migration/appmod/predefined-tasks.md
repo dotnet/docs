@@ -1,3 +1,13 @@
+---
+title: Predefined tasks for GitHub Copilot App Modernization for .NET (Preview)
+description: Learn about the predefined tasks that are available for GitHub Copilot App Modernization for .NET
+ms.topic: concept-article
+ms.custom: devx-track-dotnet
+ms.date: 7/15/2025
+author: alexwolfmsft
+ms.author: alexwolf
+---
+
 # Predefined tasks for GitHub Copilot App Modernization for .NET (Preview)
 
 This article describes the predefined tasks available for GitHub Copilot App Modernization for .NET (Preview).
@@ -9,23 +19,24 @@ Predefined tasks capture industry best practices for using Azure services. Curre
 - Database migration
 - Identity management
 
-## Predefined Task list
+## Predefined Task List
+
 - Migrate to Managed Identity based Database on Azure, including Azure SQL DB and Azure PostgreSQL
-    - migrate from DB2, Oracle DB to Azure PostgreSQL
-    - migrate from local/on-prem SQL server to Azure SQL DB
+  - Migrate from DB2, Oracle DB to Azure PostgreSQL
+  - Migrate from local/on-prem SQL server to Azure SQL DB
 - Migrate to Azure File Storage
-    - migrate from file IO in local file system
+  - Migrate from file IO in local file system
 - Migrate to Azure Blob Storage
-    - migrate from on-prem or cross-cloud object storages
-    - migrate from file IO in local file system
+  - Migrate from on-prem or cross-cloud object storages
+  - Migrate from file IO in local file system
 - Migrate to Microsoft Entra ID
-    - migrate from Windows AD
+  - Migrate from Windows AD
 - Migrate to secured crendentials with Managed Identity and Azure KeyVault
-    - migrate from plaintext credentials in configuration or code
+  - Migrate from plaintext credentials in configuration or code
 - Migrate to Azure Service Bus
-    - migrate from Microsoft Message Queue (MSMQ)
-    - migrate from RabbitMQ
+  - Migrate from Microsoft Message Queue (MSMQ)
+  - Migrate from RabbitMQ
 - Migrate to Azure Communication Service email
-    - migrate from using SMTP protocol to send emails
+  - Migrate from using SMTP protocol to send emails
 - Migrate to Confluent Cloud/Azure Event Hub for Apache Kafka
-    - migrate from local/on-prem Kafka
+  - Migrate from local/on-prem Kafka

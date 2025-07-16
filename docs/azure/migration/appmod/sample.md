@@ -1,24 +1,42 @@
-# Contoso University Management System Migration Sample for GitHub Copilot App Modernization for .NET (Preview)
+---
+title: GitHub Copilot App Modernization for .NET (Preview) sample
+description: Learn about the sample project for GitHub Copilot App Modernization for .NET
+ms.topic: concept-article
+ms.custom: devx-track-dotnet
+ms.date: 7/15/2025
+author: alexwolfmsft
+ms.author: alexwolf
+---
 
-To demonstrate GitHub Copilot App Modernization for .NET (Preview), we've provided a migration sample [Contoso University sample web app](https://github.com/Azure-Samples/dotnet-migration-copilot-samples/tree/main/ContosoUniversity).  
+# Contoso University Migration Sample
 
-This fictional university management system is originally built with .NET Framework 4.8 and contains functionalities such as student enrollment, course management, and instructor assignments. It uses legacy Windows-based components, including:
+The [Contoso University sample web app](https://github.com/Azure-Samples/dotnet-migration-copilot-samples/tree/main/ContosoUniversity) provides an example project you can experiment with using GitHub Copilot App Modernization for .NET (Preview). For more details and step-by-step instructions, see the [quickstart guide](quick-start.md).
 
-- **SQL Server LocalDB** for database storage  
-- **Local file system** for file management  
-- **Microsoft Message Queue (MSMQ)** for notification messaging  
+## Scenario Overview
 
-## After Migration
+Contoso University is a fictional university management system originally built with .NET Framework 4.8. The application includes features such as:
 
-Using App Modernization for .NET (Preview), the sample can be updated to leverage modern, cloud-native Azure services, including:
+- Student enrollment
+- Course management
+- Instructor assignments
 
-- **Azure SQL Database** replacing SQL Server LocalDB  
-- **Azure Blob Storage** replacing local file system access  
-- **Azure Service Bus** replacing MSMQ  
-- **Azure Key Vault** for secure secrets management  
+The legacy system relies on Windows-based components:
 
-This migration showcases how legacy on-premises applications can be transformed into scalable, maintainable cloud-native solutions using GitHub Copilot and Azure services.
+- **SQL Server LocalDB** for database storage
+- **Local file system** for file management
+- **Microsoft Message Queue (MSMQ)** for notification messaging
 
-## See Also
+## Modernization with Azure
 
-- [Quickstart: assess and migrate a .NET project using GitHub Copilot App Modernization for .NET (Preview)](quick-start.md)
+Using App Modernization for .NET (Preview), you can update the sample to leverage modern, cloud-native Azure services:
+
+- **Azure SQL Database** replaces SQL Server LocalDB
+- **Azure Blob Storage** replaces local file system access
+- **Azure Service Bus** replaces MSMQ
+- **Azure Key Vault** provides secure secrets management
+
+This migration illustrates how to transform a legacy, on-premises application into a scalable and maintainable cloud-native solution using GitHub Copilot and Azure services.
+
+## Learn More
+
+- [Quickstart: Assess and migrate a .NET project using GitHub Copilot App Modernization for .NET (Preview)](quick-start.md)

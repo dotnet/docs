@@ -1,3 +1,13 @@
+---
+title: Overview of GitHub Copilot App Modernization for .NET (Preview)
+description: Learn about essential concepts for GitHub Copilot App Modernization for .NET 
+ms.topic: concept-article
+ms.custom: devx-track-dotnet
+ms.date: 7/15/2025
+author: alexwolfmsft
+ms.author: alexwolf
+---
+
 # What is GitHub Copilot App Modernization for .NET (Preview)?
 
 GitHub Copilot App Modernization for .NET (Preview) aims to help enterprises migrate their .NET applications to Azure with confidence and efficiency, covering assessment, code remediation and validation, powered by the intelligence of GitHub Copilot.
@@ -15,6 +25,7 @@ App Modernization for .NET (Preview) recommends target Azure services for the re
 ![Solution](media/overview_solution.png)
 
 ## Code remediation for common issues
+
 To accelerate code changes for [common modernization issues](predefined-tasks.md), the developer may apply predefined tasks (code change patterns) that represent best practices from experts.
 
 ![Apply Task](media/overview_remediation.png)
@@ -22,7 +33,6 @@ To accelerate code changes for [common modernization issues](predefined-tasks.md
 ## Automatic fix for compilation errors
 
 After applying tasks, App Modernization for .NET (Preview) will automatically find and fix compilation errors introduced by the code changes.
-
 
 # How do I get started?
 

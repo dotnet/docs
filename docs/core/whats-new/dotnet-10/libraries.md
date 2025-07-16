@@ -9,7 +9,7 @@ ai-usage: ai-assisted
 
 # What's new in .NET libraries for .NET 10
 
-This article describes new features in the .NET libraries for .NET 10. It has been updated for Preview 6.
+This article describes new features in the .NET libraries for .NET 10. It's been updated for Preview 6.
 
 ## Cryptography
 
@@ -95,7 +95,7 @@ using (MLKem key = MLKem.GenerateKey(MLKemAlgorithm.MLKem768))
 
 These algorithms all continue with the pattern of having a static `IsSupported` property to indicate if the algorithm is supported on the current system.
 
-.NET 10 includes Windows CNG support for post-quantum cryptography, making these algorithms available on Windows systems with PQC support. For example:
+.NET 10 includes Windows Cryptography API: Next Generation (CNG) support for Post-Quantum Cryptography (PQC), making these algorithms available on Windows systems with PQC support. For example:
 
 ```csharp
 using System;
@@ -106,10 +106,8 @@ private static bool ValidateMLDsaSignature(ReadOnlySpan<byte> data, ReadOnlySpan
 {
     string publicKeyPem = File.ReadAllText(publicKeyPath);
 
-    using (MLDsa key = MLDsa.ImportFromPem(publicKeyPem))
-    {
-        return key.VerifyData(data, signature);
-    }
+    using MLDsa key = MLDsa.ImportFromPem(publicKeyPem);
+    return key.VerifyData(data, signature);
 }
 ```
 

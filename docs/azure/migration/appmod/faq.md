@@ -13,6 +13,10 @@ This page answers some of the most common questions about the GitHub Copilot App
 
 Please upgrade Visual Studio 2022 to the latest version (at least equal or above 17.14.7) to have better experience on both GitHub Copilot and App Modernization for .NET (Preview).
 
+### Which model should I use in Github Copilot agent mode?
+
+Based on our experience, GitHub Copilot and App Modernization for .NET works better with Claude Sonnet 3.7 & Claude Sonnet 4.0
+
 ### What is the MCP Server and why is there an initial delay when running a command sometimes?
 
 The GitHub Copilot App Modernization for .NET (Preview) extension uses an `MCP Server` to provide Azure related knowledge bases as tools.

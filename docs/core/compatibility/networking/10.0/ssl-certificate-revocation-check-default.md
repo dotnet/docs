@@ -8,7 +8,11 @@ ms.custom: https://github.com/dotnet/docs/issues/46824
 
 # HttpClient/SslStream default certificate revocation check mode changed to `Online`
 
-The default values of <xref:System.Net.Security.SslClientAuthenticationOptions.CertificateRevocationCheckMode?displayProperty=nameWithType> and <xref:System.Net.Security.SslServerAuthenticationOptions.CertificateRevocationCheckMode?displayProperty=nameWithType> have changed from `NoCheck` to `Online`. This change enhances security and makes the behavior consistent with <xref:System.Security.Cryptography.X509Certificates.X509ChainPolicy?displayProperty=nameWithType>.
+The default values of <xref:System.Net.Security.SslClientAuthenticationOptions.CertificateRevocationCheckMode?displayProperty=nameWithType> and <xref:System.Net.Security.SslServerAuthenticationOptions.CertificateRevocationCheckMode?displayProperty=nameWithType> have changed from `NoCheck` to `Online`.
+
+The default values of <xref:System.Net.Http.HttpClientHandler.CheckCertificateRevocationList?displayProperty=nameWithType> and <xref:System.Net.Http.WinHttpHandler.CheckCertificateRevocationList?displayProperty=nameWithType> has changed from `false` to `true`.
+
+This change enhances security and makes the behavior consistent with <xref:System.Security.Cryptography.X509Certificates.X509ChainPolicy?displayProperty=nameWithType>.
 
 ## Version introduced
 
@@ -16,11 +20,11 @@ The default values of <xref:System.Net.Security.SslClientAuthenticationOptions.C
 
 ## Previous behavior
 
-Previously, the default values of <xref:System.Net.Security.SslClientAuthenticationOptions.CertificateRevocationCheckMode?displayProperty=nameWithType> and <xref:System.Net.Security.SslServerAuthenticationOptions.CertificateRevocationCheckMode?displayProperty=nameWithType> were <xref:System.Security.Cryptography.X509Certificates.X509RevocationMode.NoCheck?displayProperty=nameWithType>, meaning revocation status of peer certificates wasn't checked by default.
+Previously, the default values of <xref:System.Net.Security.SslClientAuthenticationOptions.CertificateRevocationCheckMode?displayProperty=nameWithType> and <xref:System.Net.Security.SslServerAuthenticationOptions.CertificateRevocationCheckMode?displayProperty=nameWithType> were <xref:System.Security.Cryptography.X509Certificates.X509RevocationMode.NoCheck?displayProperty=nameWithType>; and values of <xref:System.Net.Http.HttpClientHandler.CheckCertificateRevocationList?displayProperty=nameWithType> and <xref:System.Net.Http.WinHttpHandler.CheckCertificateRevocationList?displayProperty=nameWithType> were `false`, meaning revocation status of peer certificates wasn't checked by default.
 
 ## New behavior
 
-Starting in .NET 10, the default values of <xref:System.Net.Security.SslClientAuthenticationOptions.CertificateRevocationCheckMode?displayProperty=nameWithType> and <xref:System.Net.Security.SslServerAuthenticationOptions.CertificateRevocationCheckMode?displayProperty=nameWithType> are <xref:System.Security.Cryptography.X509Certificates.X509RevocationMode.Online?displayProperty=nameWithType>, meaning revocation status of peer certificates are checked online by default.
+Starting in .NET 10, the default values of <xref:System.Net.Security.SslClientAuthenticationOptions.CertificateRevocationCheckMode?displayProperty=nameWithType> and <xref:System.Net.Security.SslServerAuthenticationOptions.CertificateRevocationCheckMode?displayProperty=nameWithType> are <xref:System.Security.Cryptography.X509Certificates.X509RevocationMode.Online?displayProperty=nameWithType>; and values of <xref:System.Net.Http.HttpClientHandler.CheckCertificateRevocationList?displayProperty=nameWithType> and <xref:System.Net.Http.WinHttpHandler.CheckCertificateRevocationList?displayProperty=nameWithType> are `true`, meaning revocation status of peer certificates are checked online by default.
 
 ## Type of breaking change
 
@@ -32,7 +36,7 @@ This change enhances security and ensures consistency between APIs related to X.
 
 ## Recommended action
 
-If certificate revocation checking is not desired, specify <xref:System.Security.Cryptography.X509Certificates.X509RevocationMode.NoCheck?displayProperty=nameWithType> explicitly:
+If certificate revocation checking is not desired and you are using <xref:System.Net.Security.SslStream> directly, specify <xref:System.Security.Cryptography.X509Certificates.X509RevocationMode.NoCheck?displayProperty=nameWithType> explicitly:
 
 ```csharp
 var clientOptions = new SslClientAuthenticationOptions
@@ -48,8 +52,30 @@ var serverOptions = new SslServerAuthenticationOptions
 };
 ```
 
+When using <xref:System.Net.Http.HttpClient> you need to configure the underlying handler during creation:
+
+```csharp
+var withHttpClientHandler = new HttpClient(new HttpClientHandler
+{
+    CheckCertificateRevocationList = false
+});
+
+var withWinHttpHandler = new HttpClient(new WinHttpHandler
+{
+    CheckCertificateRevocationList = false
+});
+
+var withSocketsHttpHandler = new HttpClient(new SocketsHttpHandler
+{
+    SslOptions =
+    {
+        CertificateRevocationCheckMode = X509RevocationMode.NoCheck
+    }
+});
+```
+
 > [!NOTE]
-> Due to a bug on the OSX platform, you might encounter certificate validation failures with <xref:System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.RevocationStatusUnknown?displayProperty=nameWithType> in scenarios where the certificate doesn't support revocation checking via OCSP. This is a bug in the underlying platform crypto implementation. To avoid failing the certificate validation if revocation status can't be retrieved, either disable certificate revocation checking as per the previous instructions, or set <xref:System.Security.Cryptography.X509Certificates.X509ChainPolicy> with <xref:System.Security.Cryptography.X509Certificates.X509ChainPolicy.VerificationFlags?displayProperty=nameWithType> set to `X509VerificationFlags.IgnoreEndRevocationUnknown | X509VerificationFlags.IgnoreCertificateAuthorityRevocationUnknown`.
+> Due to a bug on the OSX platform, you might encounter certificate validation failures with <xref:System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.RevocationStatusUnknown?displayProperty=nameWithType> in scenarios where the certificate doesn't support revocation checking via OCSP. This is a bug in the underlying platform crypto implementation. To avoid failing the certificate validation if revocation status can't be retrieved, either disable certificate revocation checking as per the previous instructions, or set <xref:System.Net.Security.SslClientAuthenticationOptions.CertificateChainPolicy?displayProperty=nameWithType> to <xref:System.Security.Cryptography.X509Certificates.X509ChainPolicy> with <xref:System.Security.Cryptography.X509Certificates.X509ChainPolicy.VerificationFlags?displayProperty=nameWithType> set to `X509VerificationFlags.IgnoreEndRevocationUnknown | X509VerificationFlags.IgnoreCertificateAuthorityRevocationUnknown`.
 
 In situations where you can't modify the code, you can restore the previous behavior with one of the following settings:
 

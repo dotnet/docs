@@ -10,6 +10,24 @@ ai-usage: ai-assisted
 
 This article describes new features and performance improvements in the .NET runtime for .NET 10.
 
+## JIT compiler improvements
+
+The JIT compiler in .NET 10 includes significant enhancements that improve performance through better code generation and optimization strategies.
+
+### Improved code generation for struct arguments
+
+.NET's JIT compiler is capable of an optimization called physical promotion, where the members of a struct are placed in registers rather than on the stack, eliminating memory accesses. This optimization is particularly useful when passing a struct to a method, and the calling convention requires the struct members to be passed in registers.
+
+.NET 10 improves the JIT compiler's internal representation to handle values that share a register. Previously, when struct members needed to be packed into a single register, the JIT would store values to memory first and then load them into a register. Now, the JIT compiler can place the promoted members of struct arguments into shared registers directly, eliminating unnecessary memory operations.
+
+For example, consider a struct with two `int` members. On x64, since `int` values are four bytes wide and registers are eight bytes wide, both members can be packed into one register. The improved code generation eliminates the need for intermediate memory storage, resulting in more efficient assembly code.
+
+### Improved loop inversion
+
+The JIT compiler can hoist the condition of a `while` loop and transform the loop body into a `do-while` loop, improving code layout by removing the need to branch to the top of the loop to test the condition. This transformation is called loop inversion, and it enables numerous other optimizations like loop cloning, loop unrolling, and induction variable optimizations.
+
+.NET 10 enhances loop inversion by switching from a lexical analysis implementation to a graph-based loop recognition implementation. This change brings improved precision by considering all natural loops (loops with a single entry point) and ignoring false positives that were previously considered. This translates into higher optimization potential for .NET programs with `for` and `while` statements.
+
 ## Array interface method devirtualization
 
 One of the [focus areas](https://github.com/dotnet/runtime/issues/108988) for .NET 10 is to reduce the abstraction overhead of popular language features. In pursuit of this goal, the JIT's ability to devirtualize method calls has expanded to cover array interface methods.

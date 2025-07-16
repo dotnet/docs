@@ -11,6 +11,74 @@ ai-usage: ai-assisted
 
 This article describes new features and enhancements in the .NET SDK for .NET 10.
 
+## .NET tools enhancements
+
+### Platform-specific .NET tools
+
+.NET tools can now be published with support for multiple RuntimeIdentifiers (RIDs) in a single package. Tool authors can bundle binaries for all supported platforms, and the .NET CLI will select the correct one at install or run time. This makes cross-platform tool authoring and distribution much easier.
+
+These enhanced tools support various packaging variations:
+
+- **Framework-dependent, platform-agnostic** (classic mode, runs anywhere with .NET 10 installed)
+- **Framework-dependent, platform-specific** (smaller, optimized for each platform)
+- **Self-contained, platform-specific** (includes the runtime, no .NET installation required)
+- **Trimmed, platform-specific** (smaller, trims unused code)
+- **AOT-compiled, platform-specific** (maximum performance and smallest deployment)
+
+These new tools work much like normal published applications, so any publishing options you can use with applications (self-contained, trimmed, AOT, etc.) can apply to tools as well.
+
+### One-shot tool execution
+
+You can now use the `dotnet tool exec` command to execute a .NET tool without installing it globally or locally. This is especially valuable for CI/CD or ephemeral usage.
+
+```bash
+dotnet tool exec --source ./artifacts/package/ toolsay "Hello, World!"
+```
+
+This downloads and runs the specified tool package in one command. By default, users are prompted to confirm the download if the tool doesn't already exist locally. The latest version of the chosen tool package is used unless an explicit version is specified.
+
+One-shot tool execution works seamlessly with local tool manifests. If you run a tool from a location containing a `.config/dotnet-tools.json` nearby, the version of the tool in that configuration will be used instead of the latest version available.
+
+### The new `dnx` tool execution script
+
+The `dnx` script provides a streamlined way to execute tools. It forwards all arguments to the `dotnet` CLI for processing, making tool usage as simple as possible:
+
+```bash
+dnx toolsay "Hello, World!"
+```
+
+The actual implementation of the `dnx` command is in the `dotnet` CLI itself, allowing its behavior to evolve over time.
+
+For more information about managing .NET tools, see [Manage .NET tools](/dotnet/core/tools/global-tools).
+
+### CLI introspection with `--cli-schema`
+
+A new `--cli-schema` option is available on all CLI commands. When used, it outputs a JSON representation of the CLI command tree for the invoked command or subcommand. This is useful for tool authors, shell integration, and advanced scripting.
+
+```bash
+dotnet clean --cli-schema
+```
+
+The output provides a structured, machine-readable description of the command's arguments, options, and subcommands.
+
+## File-based apps enhancements
+
+.NET 10 brings significant updates to the file-based apps experience, including publish support and native AOT capabilities.
+
+### Enhanced file-based apps with publish support and native AOT
+
+File-based apps now support being published to native executables via the `dotnet publish app.cs` command, making it easier to create simple apps that you can redistribute as native executables. All file-based apps now target native AOT by default. If you need to use packages or features that are incompatible with native AOT, you can disable this using the `#:property PublishAot=false` directive in your .cs file.
+
+File-based apps also include enhanced features:
+
+- **Project referencing**: Support for referencing projects via the `#:project` directive
+- **Runtime path access**: App file and directory paths are available at runtime via `System.AppContext.GetData`
+- **Enhanced shebang support**: Direct shell execution with improved shebang handling, including support for extensionless files
+
+These enhancements make file-based apps more powerful while maintaining their simplicity for quick scripting and prototyping scenarios.
+
+For more information about native AOT, see [.NET native AOT](/dotnet/core/deploying/native-aot/).
+
 ## Pruning of framework-provided package references
 
 Starting in .NET 10, the [NuGet Audit](/nuget/concepts/auditing-packages) feature can now [prune framework-provided package references](https://github.com/NuGet/Home/blob/451c27180d14214bca60483caee57f0dc737b8cf/accepted/2024/prune-package-reference.md) that aren't used by the project. This feature is enabled by default for all `net` target frameworks (for example, `net8.0` and `net10.0`) and .NET Standard 2.0 and greater target frameworks. This change helps reduce the number of packages that are restored and analyzed during the build process, which can lead to faster build times and reduced disk space usage. It also can lead to a reduction in false positives from NuGet Audit and other dependency-scanning mechanisms.

@@ -70,7 +70,7 @@ items:
             items:
               - name: .NET CLI `--interactive` defaults to `true` in user scenarios
                 href: sdk/10.0/dotnet-cli-interactive.md
-              - name: "`dotnet restore` audits transitive packages"
+              - name: "NuGetAuditMode default changed when targeting .NET 10"
                 href: sdk/10.0/nugetaudit-transitive-packages.md
               - name: Default workload configuration from 'loose manifests' to 'workload sets' mode
                 href: sdk/10.0/default-workload-config.md

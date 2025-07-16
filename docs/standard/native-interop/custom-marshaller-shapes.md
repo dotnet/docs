@@ -12,17 +12,17 @@ helpviewer_keywords:
   - "exceptions, custom marshallers"
 ---
 
-# Custom Marshaller Shapes
+# Custom marshaller shapes
 
-This document describes the different "shapes" of custom marshallers that can be used with the .NET interop source generator.
+This article describes the different "shapes" of custom marshallers that can be used with the .NET interop source generator.
 
-## Value Marshallers
+## Value marshallers
 
-This document describes the shapes of custom marshallers that can be used by the .NET interop source generator for marshalling types between managed and unmanaged code.
+This section describes the shapes of custom marshallers that can be used by the .NET interop source generator for marshalling value types between managed and unmanaged code.
 
-### Stateless Managed to Unmanaged
+### Stateless managed to unmanaged
 
-With this shape, the generated code will call `ConvertToUnmanaged` to marshal a value to native code, or `GetPinnableReference` when applicable. The generated code will call `Free` when applicable to allow the marshaller to free any unmanaged resources associated with the managed type once its lifetime ends.
+With this shape, the generated code calls `ConvertToUnmanaged` to marshal a value to native code, or `GetPinnableReference` when applicable. The generated code calls `Free` when applicable to allow the marshaller to free any unmanaged resources associated with the managed type once its lifetime ends.
 
 ```csharp
 [CustomMarshaller(typeof(TManaged), MarshalMode.ManagedToUnmanagedIn, typeof(ManagedToNative))]
@@ -55,9 +55,9 @@ static class TMarshaller
 }
 ```
 
-### Stateless Managed->Unmanaged with Caller-Allocated Buffer
+### Stateless managed to unmanaged with caller-allocated buffer
 
-With this shape, the generator will allocate a buffer of the specified size and pass it to the `ConvertToUnmanaged` method to marshal a value to native code. The generated code will handle the lifetime of this buffer.
+With this shape, the generator will allocate a buffer of the specified size and pass it to the `ConvertToUnmanaged` method to marshal a value to native code. The generated code handles the lifetime of this buffer.
 
 ```csharp
 [CustomMarshaller(typeof(TManaged), MarshalMode.ManagedToUnmanagedIn, typeof(ManagedToNative))]
@@ -86,7 +86,7 @@ static class TMarshaller
 }
 ```
 
-### Stateless Unmanaged->Managed
+### Stateless unmanaged to managed
 
 ```csharp
 [CustomMarshaller(typeof(TManaged), MarshalMode.ManagedToUnmanagedOut, typeof(NativeToManaged))]
@@ -110,7 +110,7 @@ static class TMarshaller
 }
 ```
 
-### Stateless Unmanaged->Managed with Guaranteed Unmarshalling
+### Stateless unmanaged to managed with guaranteed unmarshalling
 
 This shape directs the generator to emit the unmarshaling code in a way that guarantees the unmarshaling will be called, even if a previous marshaller throws an exception. This is useful for types that need to be cleaned up or finalized regardless of the success of the previous operations.
 
@@ -137,7 +137,7 @@ static class TMarshaller
 }
 ```
 
-### Stateless Bidirectional
+### Stateless bidirectional
 
 This shape allows for both managed to unmanaged and unmanaged to managed conversions, with the marshaller being stateless. The generator will use the `ConvertToUnmanaged` method for managed to unmanaged conversions and the `ConvertToManaged` method for unmanaged to managed conversions.
 
@@ -156,7 +156,7 @@ static class TMarshaller<T, U, V...>
 }
 ```
 
-### Stateful Managed->Unmanaged
+### Stateful managed to unmanaged
 
 This shape allows for stateful marshalling from managed to unmanaged. The generated code will use a unique marshaller instance for each parameter, so the marshaller can maintain state across marshalling
 
@@ -222,7 +222,7 @@ static class TMarshaller
 }
 ```
 
-### Stateful Managed->Unmanaged with Caller Allocated Buffer
+### Stateful managed to unmanaged with caller-allocated buffer
 
 This shape allows for stateful marshalling from managed to unmanaged, with the generator allocating a buffer of the specified size and passing it to the `FromManaged` method. The generated code will use a unique marshaller instance for each parameter, so the marshaller can maintain state across marshalling.
 
@@ -293,7 +293,7 @@ static class TMarshaller
 }
 ```
 
-### Stateful Unmanaged->Managed
+### Stateful unmanaged to managed
 
 This shape allows for stateful unmarshalling from unmanaged to managed. The generated code will use a unique instance for each parameter, so the struct can maintain state across unmarshalling.
 
@@ -332,7 +332,7 @@ static class TMarshaller
 }
 ```
 
-### Stateful Unmanaged->Managed with Guaranteed Unmarshalling
+### Stateful unmanaged to managed with guaranteed unmarshalling
 
 This shape allows for stateful unmarshalling from unmanaged to managed, with the generator ensuring that the `ToManagedFinally` method is called even if a previous marshaller throws an exception. This is useful for types that need to be cleaned up or finalized regardless of the success of the previous operations.
 
@@ -371,7 +371,7 @@ static class TMarshaller
 }
 ```
 
-### Stateful Bidirectional
+### Stateful bidirectional
 
 ```csharp
 [CustomMarshaller(typeof(TManaged), MarshalMode.ManagedToUnmanagedRef, typeof(Bidirectional))]
@@ -389,9 +389,9 @@ static class TMarshaller
 
 ## Collection marshallers
 
-This section describes the shapes of custom collection marshallers that the .NET interop source generator supports for marshalling collections between managed and unmanaged code. Contiguous collection marshallers are used for collections which are represented as a contiguous block of memory in their unmanaged representation, such as arrays or lists.
+This section describes the shapes of custom collection marshallers that the .NET interop source generator supports for marshalling collections between managed and unmanaged code. Contiguous collection marshallers are used for collections that are represented as a contiguous block of memory in their unmanaged representation, such as arrays or lists.
 
-When the collection type being marshalled is a generic over it's element type (for example, `List<T>`), the custom marshaller type will typically have two generic parameters, one for the managed element type and one for the unmanaged element type. In cases where the collection is not generic over it's element type (for example, `StringCollection`), the marshaller may only have a single generic parameter for the unmanaged element type. The marshaller shape examples will demonstrate a marshaller for a non-generic collection `TCollection` with elements of type `TManagedElement`. Since the elements may be marshalled using different value marshallers, it must be generic over the unmanaged element type, `TUnmanagedElement`. The native representation of the collection is called `TNative` (typically this is `*TUnmanagedElement`).
+When the collection type being marshalled is a generic over its element type (for example, `List<T>`), the custom marshaller type will typically have two generic parameters: one for the managed element type and one for the unmanaged element type. In cases where the collection is not generic over its element type (for example, `StringCollection`), the marshaller might only have a single generic parameter for the unmanaged element type. The marshaller shape examples demonstrate a marshaller for a non-generic collection `TCollection` with elements of type `TManagedElement`. Since the elements might be marshalled using different value marshallers, it must be generic over the unmanaged element type, `TUnmanagedElement`. The native representation of the collection is called `TNative` (typically this is `*TUnmanagedElement`).
 
 ### Stateless managed to unmanaged
 
@@ -662,7 +662,7 @@ static class TMarshaller<TUnmanagedElement> where TUnmanagedElement : unmanaged
 }
 ```
 
-### Stateful Managed->Unmanaged with Caller Allocated Buffer
+### Stateful managed to unmanaged with caller-allocated buffer
 
 ```csharp
 [CustomMarshaller(typeof(TCollection), MarshalMode.ManagedToUnmanagedIn, typeof(ManagedToNative))]
@@ -738,7 +738,7 @@ static class TMarshaller<TUnmanagedElement> where TUnmanagedElement : unmanaged
 }
 ```
 
-### Stateful Unmanaged->Managed
+### Stateful unmanaged to managed
 
 This shape allows the marshaller to maintain state across the unmarshalling process.
 
@@ -835,7 +835,7 @@ static class TMarshaller<TUnmanagedElement> where TUnmanagedElement : unmanaged
 }
 ```
 
-### Stateful Bidirectional
+### Stateful bidirectional
 
 ```csharp
 [CustomMarshaller(typeof(TCollection), MarshalMode.ManagedToUnmanagedRef, typeof(Bidirectional))]

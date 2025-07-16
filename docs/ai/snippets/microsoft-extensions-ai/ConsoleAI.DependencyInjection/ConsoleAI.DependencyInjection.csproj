@@ -9,8 +9,8 @@
 
   <ItemGroup>
     <PackageReference Include="OllamaSharp" Version="5.2.10" />
-    <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.0-preview.5.25277.114" />
-    <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="10.0.0-preview.5.25277.114" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.0-preview.6.25358.103" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="10.0.0-preview.6.25358.103" />
     <ProjectReference Include="..\AI.Shared\AI.Shared.csproj" />
   </ItemGroup>
 

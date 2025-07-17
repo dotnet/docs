@@ -26,7 +26,7 @@ Use the Oxford comma in lists of three or more items.
 
 Number ordered list items all as "1." instead of "1.", "2.", etc.
 
-Use bullets for unordered lists. Bullet list items should end with a period.
+Use bullets for unordered lists. Unless *all* the bullet list items are three words or less, each bullet item should end with a period.
 
 Use **bold** when referring to UI elements. Use `code style` for file names and folders, custom types, and other text that should never be localized.
 

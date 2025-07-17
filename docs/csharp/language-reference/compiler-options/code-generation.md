@@ -32,9 +32,23 @@ The **DebugType** option causes the compiler to generate debugging information a
 
 For all compiler versions starting with C# 6.0, there is no difference between *pdbonly* and *full*. Choose *pdbonly*. To change the location of the *.pdb* file, see [**PdbFile**](./advanced.md#pdbfile).
 
-### Disabling PDB generation for Release builds
+The following values are valid:
 
-To suppress PDB file generation for Release builds while keeping them for Debug builds, add the following to your project file:
+| Value      | Meaning                                                                                                 |
+|------------|---------------------------------------------------------------------------------------------------------|
+| `full`     | Emit debugging information to _.pdb_ file using default format for the current platform:<br>**Windows**: A Windows pdb file. <br>**Linux/macOS**: A [Portable PDB](https://github.com/dotnet/designs/blob/main/accepted/2020/diagnostics/portable-pdb.md) file. |
+| `pdbonly`  | Same as `full`. See the note below for more information. |
+| `portable` | Emit debugging information to .pdb file using cross-platform [Portable PDB](https://github.com/dotnet/designs/blob/main/accepted/2020/diagnostics/portable-pdb.md) format. |
+| `embedded` | Emit debugging information into the _.dll/.exe_ itself (_.pdb_ file is not produced) using [Portable PDB](https://github.com/dotnet/designs/blob/main/accepted/2020/diagnostics/portable-pdb.md) format. |
+| `none`     | Don't produce a PDB file.                                                                              |
+
+> [!IMPORTANT]
+> The following information applies only to compilers older than C# 6.0.
+> The value of this element can be either `full` or `pdbonly`. The *full* argument, which is in effect if you don't specify *pdbonly*, enables attaching a debugger to the running program. Specifying *pdbonly* allows source code debugging when the program is started in the debugger but will only display assembler when the running program is attached to the debugger. Use this option to create debug builds. If you use *Full*, be aware that there's some impact on the speed and size of JIT optimized code and a small impact on code quality with *full*. We recommend *pdbonly* or no PDB for generating release code. One difference between *pdbonly* and *full* is that with *full* the compiler emits a <xref:System.Diagnostics.DebuggableAttribute>, which is used to tell the JIT compiler that debug information is available. Therefore, you will get an error if your code contains the <xref:System.Diagnostics.DebuggableAttribute> set to false if you use *full*. For more information on how to configure the debug performance of an application, see [Making an Image Easier to Debug](../../../framework/debug-trace-profile/making-an-image-easier-to-debug.md).
+
+### Disable PDB generation for Release builds
+
+To suppress PDB file generation for Release builds while keeping them for Debug builds, add the following property to your project file:
 
 ```xml
 <PropertyGroup Condition="'$(Configuration)' == 'Release'">
@@ -51,21 +65,7 @@ Alternatively, you can set `DebugSymbols` to `false` for Release builds:
 ```
 
 > [!NOTE]
-> In .NET 8 and later versions, setting `DebugSymbols` to `false` should suppress PDB generation according to the [breaking change documentation](../../../core/compatibility/sdk/8.0/debugsymbols.md). However, for the most reliable way to disable PDB generation, explicitly set `DebugType` to `none`.
-
-The following values are valid:
-
-| Value      | Meaning                                                                                                 |
-|------------|---------------------------------------------------------------------------------------------------------|
-| `full`     | Emit debugging information to _.pdb_ file using default format for the current platform:<br>**Windows**: A Windows pdb file. <br>**Linux/macOS**: A [Portable PDB](https://github.com/dotnet/designs/blob/main/accepted/2020/diagnostics/portable-pdb.md) file. |
-| `pdbonly`  | Same as `full`. See the note below for more information. |
-| `portable` | Emit debugging information to .pdb file using cross-platform [Portable PDB](https://github.com/dotnet/designs/blob/main/accepted/2020/diagnostics/portable-pdb.md) format. |
-| `embedded` | Emit debugging information into the _.dll/.exe_ itself (_.pdb_ file is not produced) using [Portable PDB](https://github.com/dotnet/designs/blob/main/accepted/2020/diagnostics/portable-pdb.md) format. |
-| `none`     | Don't produce a PDB file.                                                                              |
-
-> [!IMPORTANT]
-> The following information applies only to compilers older than C# 6.0.
-> The value of this element can be either `full` or `pdbonly`. The *full* argument, which is in effect if you don't specify *pdbonly*, enables attaching a debugger to the running program. Specifying *pdbonly* allows source code debugging when the program is started in the debugger but will only display assembler when the running program is attached to the debugger. Use this option to create debug builds. If you use *Full*, be aware that there's some impact on the speed and size of JIT optimized code and a small impact on code quality with *full*. We recommend *pdbonly* or no PDB for generating release code. One difference between *pdbonly* and *full* is that with *full* the compiler emits a <xref:System.Diagnostics.DebuggableAttribute>, which is used to tell the JIT compiler that debug information is available. Therefore, you will get an error if your code contains the <xref:System.Diagnostics.DebuggableAttribute> set to false if you use *full*. For more information on how to configure the debug performance of an application, see [Making an Image Easier to Debug](../../../framework/debug-trace-profile/making-an-image-easier-to-debug.md).
+> In .NET 8 and later versions, setting `DebugSymbols` to `false` should suppress PDB generation according to the [breaking change documentation](../../../core/compatibility/sdk/8.0/debugsymbols.md). However, the most reliable way to disable PDB generation is to explicitly set `DebugType` to `none`.
 
 ## Optimize
 

@@ -3,7 +3,7 @@ public class ClassConvert
     public static void Conversions()
     {
         // <SnippetConversion>
-        int number = 1024;
+        int number = 1025;
 
         unsafe
         {
@@ -23,8 +23,8 @@ public class ClassConvert
             System.Console.WriteLine($"The value of the integer: {number}");
 
             /* Output:
-                The 4 bytes of the integer: 00 04 00 00
-                The value of the integer: 1024
+                The 4 bytes of the integer: 01 04 00 00
+                The value of the integer: 1025
             */
         }
         // </SnippetConversion>

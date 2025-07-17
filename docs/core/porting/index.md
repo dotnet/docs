@@ -125,7 +125,7 @@ Even if you use a tool to help port your application, you should review the [Con
 
 ### GitHub Copilot App Modernization for .NET
 
-GitHub Copilot App Modernization for .NET (Preview) helps you migrate .NET applications to Azure quickly and confidently. Powered by GitHub Copilot and [Application and code assessment for .NET](/dotnet/azure/migration/appcat/app-code-assessment-toolkit), it guides you through assessment, solution recommendations, code fixes, and validation—all in one tool.
+GitHub Copilot App Modernization for .NET (Preview) helps you migrate .NET applications to Azure efficiently and confidently. Powered by GitHub Copilot and [Application and code assessment for .NET](/dotnet/azure/migration/appcat/app-code-assessment-toolkit), it guides you through assessment, solution recommendations, code fixes, and validation—all within a single tool.
 
 With this assistant, you can:
 
@@ -134,13 +134,23 @@ With this assistant, you can:
 - Fix issues and apply best practices for cloud migration
 - Validate that your app builds and tests successfully
 
-For more information about the tool, see the [GitHub Copilot App Modernization for .NET overview](upgrade-assistant-overview.md).
+For more details, see the [GitHub Copilot App Modernization for .NET overview](upgrade-assistant-overview.md).
 
-### GitHub Copilot app modernization - upgrade for .NET
+### GitHub Copilot App Modernization – Upgrade for .NET
 
-[GitHub Copilot app modernization - upgrade for .NET](/dotnet/core/porting/github-copilot-app-modernization-overview) is a powerful Visual Studio extension that works with you to upgrade projects to newer versions of .NET, upgrade your dependencies, and apply code fixes.
+[GitHub Copilot App Modernization – Upgrade for .NET](/dotnet/core/porting/github-copilot-app-modernization-overview) is a Visual Studio extension that helps you upgrade projects to newer versions of .NET, update dependencies, and apply code fixes. It leverages GitHub Copilot to provide an interactive upgrade experience.
 
-GitHub Copilot app modernization is distributed as a Visual Studio extension, and is an interactive upgrade process.
+This tool supports the following upgrade paths:
+
+- Upgrade projects from .NET Core to .NET
+- Upgrade projects from older versions of .NET to the latest
+- Modernize your code base
+
+### Application and Code Assessment for .NET
+
+[Azure Migrate application and code assessment for .NET](/dotnet/azure/migration/appcat/app-code-assessment-toolkit) provides code and application analysis, along with recommendations for planning cloud deployments. It helps you confidently run business-critical solutions in the cloud by offering a developer-focused assessment of your source code. The tool also provides recommendations and examples to optimize code and configurations for Azure, following industry best practices.
+
+This tool is also used by the GitHub Copilot App Modernization for .NET experience.
 
 ### .NET Upgrade Assistant
 

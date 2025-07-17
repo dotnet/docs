@@ -62,8 +62,42 @@ You can also access the Output window using the keyboard shortcut **Ctrl+Alt+O**
 
 If you see an AppCAT installation failure in the command-line output when the extension tries to install it automatically, you can install AppCAT manually:
 
-1. Follow the instructions in [Install the .NET global tool](/dotnet/azure/migration/appcat/install#install-the-net-global-tool).
-2. After successful installation, run the assessment again.
+1. Open a command prompt or PowerShell as Administrator.
+2. Run the appropriate command based on your shell:
+
+   **For Command Prompt:**
+   ```cmd
+   dotnet tool install dotnet-appcat --tool-path "%LOCALAPPDATA%\Microsoft\VisualStudio\AppModernizationExtension\Tools"
+   ```
+
+   **For PowerShell:**
+   ```powershell
+   dotnet tool install dotnet-appcat --tool-path "$env:LOCALAPPDATA\Microsoft\VisualStudio\AppModernizationExtension\Tools"
+   ```
+
+3. After successful installation, run the assessment again.
+
+> [!IMPORTANT]
+> Installing this tool may fail if you've configured additional NuGet feed sources. Use the `--ignore-failed-sources` parameter to treat those failures as warnings instead of errors.
+
+### What should I do if Visual Studio fails to upgrade AppCAT?
+
+If Visual Studio fails to automatically upgrade AppCAT when a new version is available, you can upgrade it manually:
+
+1. Open a command prompt or PowerShell as Administrator.
+2. Run the appropriate command based on your shell:
+
+   **For Command Prompt:**
+   ```cmd
+   dotnet tool update dotnet-appcat --tool-path "%LOCALAPPDATA%\Microsoft\VisualStudio\AppModernizationExtension\Tools"
+   ```
+
+   **For PowerShell:**
+   ```powershell
+   dotnet tool update dotnet-appcat --tool-path "$env:LOCALAPPDATA\Microsoft\VisualStudio\AppModernizationExtension\Tools"
+   ```
+
+3. After successful upgrade, run the assessment again.
 
 ## What should I do if I see "Command failed: No .NET SDKs were found" errors?
 

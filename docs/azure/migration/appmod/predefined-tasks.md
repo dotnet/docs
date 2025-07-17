@@ -21,22 +21,36 @@ Predefined tasks capture industry best practices for using Azure services. Curre
 
 ## Predefined Task List
 
-- Migrate to Managed Identity based Database on Azure, including Azure SQL DB and Azure PostgreSQL
-  - Migrate from DB2, Oracle DB to Azure PostgreSQL
-  - Migrate from local/on-prem SQL server to Azure SQL DB
-- Migrate to Azure File Storage
-  - Migrate from file IO in local file system
-- Migrate to Azure Blob Storage
-  - Migrate from on-prem or cross-cloud object storages
-  - Migrate from file IO in local file system
-- Migrate to Microsoft Entra ID
-  - Migrate from Windows AD
-- Migrate to secured crendentials with Managed Identity and Azure KeyVault
-  - Migrate from plaintext credentials in configuration or code
-- Migrate to Azure Service Bus
-  - Migrate from Microsoft Message Queue (MSMQ)
-  - Migrate from RabbitMQ
-- Migrate to Azure Communication Service email
-  - Migrate from using SMTP protocol to send emails
-- Migrate to Confluent Cloud/Azure Event Hub for Apache Kafka
-  - Migrate from local/on-prem Kafka
+App Modernization for .NET currently supports the following predefined tasks:
+
+- **Migrate to Managed Identity based Database on Azure, including Azure SQL DB and Azure PostgreSQL**
+  
+  Modernize your data layer by migrating from on-premises or legacy databases (such as DB2, Oracle DB, or SQL Server) to Azure SQL DB or Azure PostgreSQL, using secure managed identity authentication.
+
+- **Migrate to Azure File Storage**
+  
+  Move file I/O operations from the local file system to Azure File Storage for scalable, cloud-based file management.
+
+- **Migrate to Azure Blob Storage**
+  
+  Replace on-premises or cross-cloud object storage, or local file system file I/O, with Azure Blob Storage for unstructured data.
+
+- **Migrate to Microsoft Entra ID**
+  
+  Transition authentication and authorization from Windows Active Directory to Microsoft Entra ID (formerly Azure AD) for modern identity management.
+
+- **Migrate to secured credentials with Managed Identity and Azure Key Vault**
+  
+  Replace plaintext credentials in configuration or code with secure, managed identities and Azure Key Vault for secrets management.
+
+- **Migrate to Azure Service Bus**
+  
+  Move from legacy or third-party message queues (such as MSMQ or RabbitMQ) to Azure Service Bus for reliable, cloud-based messaging.
+
+- **Migrate to Azure Communication Service email**
+  
+  Replace direct SMTP email sending with Azure Communication Service for scalable, secure email delivery.
+
+- **Migrate to Confluent Cloud/Azure Event Hub for Apache Kafka**
+  
+  Transition from local or on-premises Kafka to managed event streaming with Confluent Cloud or Azure Event Hub.

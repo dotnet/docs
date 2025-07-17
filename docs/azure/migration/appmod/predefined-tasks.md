@@ -19,7 +19,7 @@ Predefined tasks capture industry best practices for using Azure services. Curre
 - Database migration
 - Identity management
 
-## Predefined Task List
+## Predefined task list
 
 App Modernization for .NET currently supports the following predefined tasks:
 

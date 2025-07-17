@@ -33,7 +33,7 @@ GitHub Copilot is a dependency of the App Modernization Extension and experience
 
 For more information, see [Set up GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states?view=vs-2022).
 
-## Install the App Modernization Extension
+## Install the GitHub Copilot App Modernization Extension
 
 To complete the steps ahead, you need to install the GitHub Copilot App Modernization for .NET (Preview) Visual Studio extension.
 

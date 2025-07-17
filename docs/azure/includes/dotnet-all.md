@@ -412,7 +412,7 @@
 | Speech Extension Telemetry | NuGet [1.45.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Telemetry/1.45.0) |  |  |
 | System Net Client Model | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/System.Net.ClientModel/1.0.0-beta.1) |  |  |
 | Unknown Display Name | NuGet [0.10.9-akri](https://www.nuget.org/packages/Azure.Iot.Operations.Connector/0.10.9-akri) |  |  |
-| Unknown Display Name | NuGet [1.1.0-preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.AzureCosmosDb.Mongo/1.1.0-preview) |  |  |
+| Unknown Display Name | NuGet [1.1.1-preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.AzureCosmosDb.Mongo/1.1.1-preview) |  |  |
 | Unknown Display Name | NuGet [1.45.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.MAS/1.45.0) |  |  |
 | WebJobs Extension MySQL | NuGet [1.0.129](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.MySql/1.0.129) |  |  |
 | Anomaly Detector | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.AnomalyDetector/1.0.0) |  | GitHub [1.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.AnomalyDetector_1.0.0-preview.1/sdk/cognitiveservices/AnomalyDetector) |

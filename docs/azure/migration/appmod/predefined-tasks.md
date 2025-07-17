@@ -53,4 +53,4 @@ App Modernization for .NET currently supports the following predefined tasks:
 
 - **Migrate to Confluent Cloud/Azure Event Hub for Apache Kafka**
   
-  Transition from local or on-premises Kafka to managed event streaming with Confluent Cloud or Azure Event Hub.
+  Transition from local or on-premises Kafka to managed event streaming with Confluent Cloud or Azure Event Hubs.

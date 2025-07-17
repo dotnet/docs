@@ -10,7 +10,7 @@ ms.author: alexwolf
 
 # Contoso University Migration Sample
 
-The [Contoso University sample web app](https://github.com/Azure-Samples/dotnet-migration-copilot-samples/tree/main/ContosoUniversity) provides an example project you can experiment with using GitHub Copilot App Modernization for .NET (Preview). For more details and step-by-step instructions, see the [quickstart guide](quickstart.md).
+The [Contoso University sample web app](https://github.com/Azure-Samples/dotnet-migration-copilot-samples/tree/main/ContosoUniversity) provides an example project you can experiment with using GitHub Copilot App Modernization for .NET (Preview). For more information and step-by-step instructions, see the [quickstart guide](quickstart.md).
 
 ## Scenario Overview
 
@@ -28,7 +28,7 @@ The legacy system relies on Windows-based components:
 
 ## Modernization with Azure
 
-Using App Modernization for .NET (Preview), you can update the sample to leverage modern, cloud-native Azure services:
+Using App Modernization for .NET (Preview), you can update the sample to use modern, cloud-native Azure services:
 
 - **Azure SQL Database** replaces SQL Server LocalDB
 - **Azure Blob Storage** replaces local file system access

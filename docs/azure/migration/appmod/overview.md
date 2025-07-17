@@ -21,7 +21,7 @@ With this assistant, you can:
 
 This process streamlines modernization and boosts developer productivity and confidence. App Modernization for .NET is an all-in-one migration assistant that uses AI to improve developer velocity, quality, and results.
 
-App Modernization for .NET (Preview) is delivered as a Visual Studio extension and relies on the following:
+App Modernization for .NET is provided as a Visual Studio extension and relies on the following tools to be installed and configured for the full experience:
 
 - [A GitHub account with GitHub Copilot enabled](https://github.com/features/copilot) (Pro, Pro+, Business, or Enterprise plan required)
 - [The GitHub Copilot extension](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot) for Visual Studio (latest version recommended)

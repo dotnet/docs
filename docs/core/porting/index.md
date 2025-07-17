@@ -123,6 +123,25 @@ Instead of manually porting an application from .NET Framework to .NET, you can 
 
 Even if you use a tool to help port your application, you should review the [Considerations when porting section](#considerations-when-porting) in this article.
 
+### GitHub Copilot App Modernization for .NET
+
+GitHub Copilot App Modernization for .NET (Preview) helps you migrate .NET applications to Azure quickly and confidently. Powered by GitHub Copilot and [Application and code assessment for .NET](/dotnet/azure/migration/appcat/app-code-assessment-toolkit), it guides you through assessment, solution recommendations, code fixes, and validation—all in one tool.
+
+With this assistant, you can:
+
+- Assess your application's code, configuration, and dependencies
+- Plan and set up the right Azure resources
+- Fix issues and apply best practices for cloud migration
+- Validate that your app builds and tests successfully
+
+For more information about the tool, see the [GitHub Copilot App Modernization for .NET overview](upgrade-assistant-overview.md).
+
+### GitHub Copilot app modernization - upgrade for .NET
+
+[GitHub Copilot app modernization - upgrade for .NET](/dotnet/core/porting/github-copilot-app-modernization-overview) is a powerful Visual Studio extension that works with you to upgrade projects to newer versions of .NET, upgrade your dependencies, and apply code fixes.
+
+GitHub Copilot app modernization is distributed as a Visual Studio extension, and is an interactive upgrade process.
+
 ### .NET Upgrade Assistant
 
 The [.NET Upgrade Assistant](upgrade-assistant-overview.md) is a command-line tool that can be run on different kinds of .NET Framework apps. It's designed to assist with upgrading .NET Framework apps to .NET. After running the tool, **in most cases the app will require more effort to complete the migration**. The tool includes the installation of analyzers that can assist with completing the migration. This tool works on the following types of .NET Framework applications:

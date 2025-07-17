@@ -10,7 +10,7 @@ ms.author: alexwolf
 
 # Contoso University Migration Sample
 
-The [Contoso University sample web app](https://github.com/Azure-Samples/dotnet-migration-copilot-samples/tree/main/ContosoUniversity) provides an example project you can experiment with using GitHub Copilot App Modernization for .NET (Preview). For more details and step-by-step instructions, see the [quickstart guide](quick-start.md).
+The [Contoso University sample web app](https://github.com/Azure-Samples/dotnet-migration-copilot-samples/tree/main/ContosoUniversity) provides an example project you can experiment with using GitHub Copilot App Modernization for .NET (Preview). For more details and step-by-step instructions, see the [quickstart guide](quickstart.md).
 
 ## Scenario Overview
 
@@ -39,4 +39,4 @@ This migration illustrates how to transform a legacy, on-premises application in
 
 ## Learn More
 
-- [Quickstart: Assess and migrate a .NET project using GitHub Copilot App Modernization for .NET (Preview)](quick-start.md)
+- [Quickstart: Assess and migrate a .NET project using GitHub Copilot App Modernization for .NET (Preview)](quickstart.md)

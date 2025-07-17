@@ -8,9 +8,9 @@ author: alexwolfmsft
 ms.author: alexwolf
 ---
 
-# Frequently Asked Questions
+# Frequently Asked Questions for GitHub Copilot App Modernization for .NET (Preview)
 
-This page answers common questions about the [GitHub Copilot App Modernization for .NET (Preview)](overview.md) tool.
+This page answers common questions about [GitHub Copilot App Modernization for .NET (Preview)](overview.md).
 
 ## Which version of Visual Studio should I use?
 
@@ -129,7 +129,7 @@ GitHub Copilot App Modernization for .NET (Preview) can be used on application s
 
 ## What operational factors and settings allow for effective and responsible use of GitHub Copilot App Modernization for .NET (Preview)?
 
-You can choose the model to make code changes at the bottom of the GitHub Copilot chat box. Different models may produce different results and have varying token consumption. For more information, see [Manage Copilot usage and models](https://learn.microsoft.com/en-us/visualstudio/ide/copilot-usage-and-models).
+You can choose the model to make code changes at the bottom of the GitHub Copilot chat box. Different models may produce different results and have varying token consumption. For more information, see [Manage Copilot usage and models](/visualstudio/ide/copilot-usage-and-models).
 
 ## How do I provide feedback on GitHub Copilot App Modernization for .NET (Preview)?
 

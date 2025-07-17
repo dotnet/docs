@@ -78,5 +78,5 @@ Automatically finds and fixes compilation errors introduced by code changes.
 ## Next Steps
 
 - [Common modernization issues with predefined tasks](predefined-tasks.md)
-- [Quickstart: Assessing an application and applying code changes](quick-start.md)
+- [Quickstart: Assessing an application and applying code changes](quickstart.md)
 - [Frequently Asked Questions](faq.md)

@@ -75,8 +75,7 @@ If you see an AppCAT installation failure in the command-line output when the ex
    dotnet tool install dotnet-appcat --tool-path "$env:LOCALAPPDATA\Microsoft\VisualStudio\AppModernizationExtension\Tools"
    ```
 
-3. After successful installation, restart Visual Studio.
-4. Run the assessment again.
+3. After successful installation, run the assessment again.
 
 > [!IMPORTANT]
 > Installing this tool may fail if you've configured additional NuGet feed sources. Use the `--ignore-failed-sources` parameter to treat those failures as warnings instead of errors.
@@ -98,8 +97,7 @@ If Visual Studio fails to automatically upgrade AppCAT when a new version is ava
    dotnet tool update dotnet-appcat --tool-path "$env:LOCALAPPDATA\Microsoft\VisualStudio\AppModernizationExtension\Tools"
    ```
 
-3. After successful upgrade, restart Visual Studio.
-4. Run the assessment again.
+3. After successful upgrade, run the assessment again.
 
 ### What should I do if I see "Command failed: No .NET SDKs were found" errors?
 

@@ -58,11 +58,11 @@ The output should be similar to:
 
 
 > [!NOTE]
-> If the above command does not work, or is not found, you likely need to install the `dotnet-counters` tool first, with the following command. 
-
-```console
-dotnet tool install --global dotnet-counters
-```
+> If the previous command doesn't work or isn't found, you likely need to install the `dotnet-counters` tool first. Use the following command:
+>
+> ```console
+> dotnet tool install --global dotnet-counters
+> ```
 
 Now, check managed memory usage with the [dotnet-counters](dotnet-counters.md) tool. The `--refresh-interval` specifies the number of seconds between refreshes:
 

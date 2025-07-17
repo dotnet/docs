@@ -10,7 +10,7 @@ ms.custom: https://github.com/dotnet/docs/issues/46824
 
 The default values of <xref:System.Net.Security.SslClientAuthenticationOptions.CertificateRevocationCheckMode?displayProperty=nameWithType> and <xref:System.Net.Security.SslServerAuthenticationOptions.CertificateRevocationCheckMode?displayProperty=nameWithType> have changed from `NoCheck` to `Online`.
 
-The default values of <xref:System.Net.Http.HttpClientHandler.CheckCertificateRevocationList?displayProperty=nameWithType> and <xref:System.Net.Http.WinHttpHandler.CheckCertificateRevocationList?displayProperty=nameWithType> has changed from `false` to `true`.
+The default values of <xref:System.Net.Http.HttpClientHandler.CheckCertificateRevocationList?displayProperty=nameWithType> and <xref:System.Net.Http.WinHttpHandler.CheckCertificateRevocationList?displayProperty=nameWithType> have changed from `false` to `true`.
 
 This change enhances security and makes the behavior consistent with <xref:System.Security.Cryptography.X509Certificates.X509ChainPolicy?displayProperty=nameWithType>.
 
@@ -20,11 +20,11 @@ This change enhances security and makes the behavior consistent with <xref:Syste
 
 ## Previous behavior
 
-Previously, the default values of <xref:System.Net.Security.SslClientAuthenticationOptions.CertificateRevocationCheckMode?displayProperty=nameWithType> and <xref:System.Net.Security.SslServerAuthenticationOptions.CertificateRevocationCheckMode?displayProperty=nameWithType> were <xref:System.Security.Cryptography.X509Certificates.X509RevocationMode.NoCheck?displayProperty=nameWithType>; and values of <xref:System.Net.Http.HttpClientHandler.CheckCertificateRevocationList?displayProperty=nameWithType> and <xref:System.Net.Http.WinHttpHandler.CheckCertificateRevocationList?displayProperty=nameWithType> were `false`, meaning revocation status of peer certificates wasn't checked by default.
+Previously, the default values of <xref:System.Net.Security.SslClientAuthenticationOptions.CertificateRevocationCheckMode?displayProperty=nameWithType> and <xref:System.Net.Security.SslServerAuthenticationOptions.CertificateRevocationCheckMode?displayProperty=nameWithType> were <xref:System.Security.Cryptography.X509Certificates.X509RevocationMode.NoCheck?displayProperty=nameWithType>, and the default values of <xref:System.Net.Http.HttpClientHandler.CheckCertificateRevocationList?displayProperty=nameWithType> and <xref:System.Net.Http.WinHttpHandler.CheckCertificateRevocationList?displayProperty=nameWithType> were `false`, meaning revocation status of peer certificates wasn't checked by default.
 
 ## New behavior
 
-Starting in .NET 10, the default values of <xref:System.Net.Security.SslClientAuthenticationOptions.CertificateRevocationCheckMode?displayProperty=nameWithType> and <xref:System.Net.Security.SslServerAuthenticationOptions.CertificateRevocationCheckMode?displayProperty=nameWithType> are <xref:System.Security.Cryptography.X509Certificates.X509RevocationMode.Online?displayProperty=nameWithType>; and values of <xref:System.Net.Http.HttpClientHandler.CheckCertificateRevocationList?displayProperty=nameWithType> and <xref:System.Net.Http.WinHttpHandler.CheckCertificateRevocationList?displayProperty=nameWithType> are `true`, meaning revocation status of peer certificates are checked online by default.
+Starting in .NET 10, the default values of <xref:System.Net.Security.SslClientAuthenticationOptions.CertificateRevocationCheckMode?displayProperty=nameWithType> and <xref:System.Net.Security.SslServerAuthenticationOptions.CertificateRevocationCheckMode?displayProperty=nameWithType> are <xref:System.Security.Cryptography.X509Certificates.X509RevocationMode.Online?displayProperty=nameWithType>, and the default values of <xref:System.Net.Http.HttpClientHandler.CheckCertificateRevocationList?displayProperty=nameWithType> and <xref:System.Net.Http.WinHttpHandler.CheckCertificateRevocationList?displayProperty=nameWithType> are `true`, meaning revocation status of peer certificates are checked online by default.
 
 ## Type of breaking change
 

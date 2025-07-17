@@ -136,6 +136,10 @@ With this assistant, you can:
 
 For more details, see the [GitHub Copilot App Modernization for .NET overview](upgrade-assistant-overview.md).
 
+**When to use:**
+
+Use the GitHub Copilot App Modernization for .NET (Preview) experience for scenarios where you need end to end assessment, planning, and remediation for migrating your .NET apps to Azure.
+
 ### GitHub Copilot App Modernization – Upgrade for .NET
 
 [GitHub Copilot App Modernization – Upgrade for .NET](/dotnet/core/porting/github-copilot-app-modernization-overview) is a Visual Studio extension that helps you upgrade projects to newer versions of .NET, update dependencies, and apply code fixes. It leverages GitHub Copilot to provide an interactive upgrade experience.
@@ -146,11 +150,19 @@ This tool supports the following upgrade paths:
 - Upgrade projects from older versions of .NET to the latest
 - Modernize your code base
 
+**When to use:**
+
+Use GitHub Copilot App Modernization – Upgrade for .NET for scenarios where you want to upgrade your .NET project code and dependencies to newer versions of .NET using an AI-powered tool.
+
 ### Application and Code Assessment for .NET
 
 [Azure Migrate application and code assessment for .NET](/dotnet/azure/migration/appcat/app-code-assessment-toolkit) provides code and application analysis, along with recommendations for planning cloud deployments. It helps you confidently run business-critical solutions in the cloud by offering a developer-focused assessment of your source code. The tool also provides recommendations and examples to optimize code and configurations for Azure, following industry best practices.
 
 This tool is also used by the GitHub Copilot App Modernization for .NET experience.
+
+**When to use:**
+
+Use the Azure Migrate application and code assessment for .NET toolset for an assessment of and recommendations for migrating an existing code base to Azure. The Azure Migrate application and code assessment is essentially a subset of the GitHub Copilot App Modernization for .NET experience.
 
 ### .NET Upgrade Assistant
 
@@ -163,6 +175,10 @@ The [.NET Upgrade Assistant](upgrade-assistant-overview.md) is a command-line to
 - Class libraries
 
 This tool uses the other tools listed in this article, such as **try-convert**, and guides the migration process. For more information about the tool, see [Overview of the .NET Upgrade Assistant](upgrade-assistant-overview.md).
+
+**When to use:**
+
+Use .NET Upgrade Assistant to upgrade .NET Framework apps to newer versions of .NET. This tool provides an alternative to the AI powered itHub Copilot App Modernization – Upgrade for .NET experience.
 
 ### `try-convert`
 

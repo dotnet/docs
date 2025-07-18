@@ -47,6 +47,22 @@ If the MCP Server doesn't start correctly, try the following steps:
    3. Expand the **appModernization** section by clicking the arrow icon next to it.
    4. Click **Restart** to relaunch the MCP Server.
 
+## Why is there an error in the "appModernization" group under Tools in GitHub Copilot Agent mode after uninstalling the extension, and how can I fix it?
+
+When the extension is installed, it adds a configuration entry to `%USERPROFILE%\.mcp.json` to register the `appModernization` tool with GitHub Copilot Agent in Visual Studio. This enables the `Tools → appModernization` group within Copilot Agent mode.
+After the extension is uninstalled, this configuration remains. Since the associated command no longer exists, GitHub Copilot Agent mode displays a red error indicator next to the `appModernization` group.
+
+To resolve this:
+- **Edit `%USERPROFILE%\.mcp.json`**
+
+   Open the file in a text editor and remove the `"appModernization"` entry from the `"servers"` section.
+   Save the file after removing this block.
+- **Or delete the file entirely**
+
+   If `.mcp.json` contains no other important configuration, you may simply delete the file.
+
+Once cleaned up, the error in the `Tools → appModernization` group will no longer appear.
+
 ## How can I monitor assessment progress?
 
 While the assessment is running, you can monitor its progress by viewing the command-line output:

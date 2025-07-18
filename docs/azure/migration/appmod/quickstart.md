@@ -71,7 +71,7 @@ App Modernization for .NET assessment helps you identify your application readin
 
 4. When the background task finishes, you see an assessment report tab with the results.
 
-    :::image type="content" source="media/assessment-report.png" alt-text="A screenshot showing the generated assessment report.":::
+    :::image type="content" source="media/overview_assessment.png" alt-text="A screenshot showing the generated assessment report.":::
 
     > [!NOTE]
     > A small icon in the lower-left corner shows the background task is running.

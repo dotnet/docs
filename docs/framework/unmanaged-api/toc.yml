@@ -1,5 +1,5 @@
 items:
-- name: Unmanaged API reference
+- name: .NET Framework unmanaged API reference
   href: index.md
 - name: Common data types
   href: common-data-types-unmanaged-api-reference.md
@@ -8,7 +8,7 @@ items:
 - name: Authenticode
   items:
   - name: Overview
-    href: index.md
+    href: authenticode/index.md
     displayName: authenticode
   - name: _AxlGetIssuerPublicKeyHash function
     href: authenticode/axlgetissuerpublickeyhash-function.md
@@ -38,8 +38,6 @@ items:
   href: fusion/
 - name: Hosting
   href: hosting/
-- name: Metadata
-  href: metadata/
 - name: Profiling
   href: profiling/
 - name: Strong naming

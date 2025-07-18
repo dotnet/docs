@@ -46,4 +46,4 @@ typedef enum
 
  **Library:** CorGuids.lib
 
- **.NET Framework Versions:** Available since .NET Core 3.0
+ **.NET versions:** Available since .NET Core 3.0

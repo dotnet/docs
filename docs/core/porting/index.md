@@ -137,9 +137,9 @@ This tool supports the following upgrade paths:
 
 Use GitHub Copilot App Modernization – Upgrade for .NET for scenarios where you want to upgrade your .NET project code and dependencies to newer versions of .NET using an AI-powered tool.
 
-### GitHub Copilot App Modernization for .NET
+### GitHub Copilot app modernization for .NET
 
-GitHub Copilot App Modernization for .NET (Preview) helps you migrate .NET applications to Azure efficiently and confidently. Powered by GitHub Copilot and [Application and code assessment for .NET](../../azure/migration/appcat/app-code-assessment-toolkit.md), it guides you through assessment, solution recommendations, code fixes, and validation—all within a single tool.
+GitHub Copilot app modernization for .NET (Preview) helps you migrate .NET applications to Azure efficiently and confidently. Powered by GitHub Copilot and [Application and code assessment for .NET](../../azure/migration/appcat/app-code-assessment-toolkit.md), it guides you through assessment, solution recommendations, code fixes, and validation—all within a single tool.
 
 With this assistant, you can:
 
@@ -148,21 +148,21 @@ With this assistant, you can:
 - Fix issues and apply best practices for cloud migration.
 - Validate that your app builds and tests successfully.
 
-For more details, see the [GitHub Copilot App Modernization for .NET overview](upgrade-assistant-overview.md).
+For more details, see the [GitHub Copilot app modernization for .NET overview](upgrade-assistant-overview.md).
 
 **When to use:**
 
-Use the GitHub Copilot App Modernization for .NET (Preview) experience for scenarios where you need end to end assessment, planning, and remediation for migrating your .NET apps to Azure.
+Use the GitHub Copilot app modernization for .NET (Preview) experience for scenarios where you need end to end assessment, planning, and remediation for migrating your .NET apps to Azure.
 
 ### Application and Code Assessment for .NET
 
 [Azure Migrate application and code assessment for .NET](../../azure/migration/appcat/app-code-assessment-toolkit.md) provides code and application analysis, along with recommendations for planning cloud deployments. It helps you confidently run business-critical solutions in the cloud by offering a developer-focused assessment of your source code. The tool also provides recommendations and examples to optimize code and configurations for Azure, following industry best practices.
 
-This tool is also used by the GitHub Copilot App Modernization for .NET experience.
+This tool is also used by the GitHub Copilot app modernization for .NET experience.
 
 **When to use:**
 
-Use the Azure Migrate application and code assessment for .NET toolset for an assessment of and recommendations for migrating an existing code base to Azure. The Azure Migrate application and code assessment is essentially a subset of the GitHub Copilot App Modernization for .NET experience.
+Use the Azure Migrate application and code assessment for .NET toolset for an assessment of and recommendations for migrating an existing code base to Azure. The Azure Migrate application and code assessment is essentially a subset of the GitHub Copilot app modernization for .NET experience.
 
 ### .NET Upgrade Assistant
 

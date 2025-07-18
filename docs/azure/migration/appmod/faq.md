@@ -1,6 +1,6 @@
 ---
-title: GitHub Copilot App Modernization for .NET (Preview) FAQ 
-description: Discover answers to common questions about GitHub Copilot App Modernization for .NET 
+title: GitHub Copilot app modernization for .NET (Preview) FAQ 
+description: Discover answers to common questions about GitHub Copilot app modernization for .NET 
 ms.topic: concept-article
 ms.custom: devx-track-dotnet
 ms.date: 7/15/2025
@@ -8,9 +8,9 @@ author: alexwolfmsft
 ms.author: alexwolf
 ---
 
-# Frequently Asked Questions for GitHub Copilot App Modernization for .NET (Preview)
+# Frequently Asked Questions for GitHub Copilot app modernization for .NET (Preview)
 
-This page answers common questions about [GitHub Copilot App Modernization for .NET (Preview)](overview.md).
+This page answers common questions about [GitHub Copilot app modernization for .NET (Preview)](overview.md).
 
 ## Which version of Visual Studio should I use?
 
@@ -22,7 +22,7 @@ Based on our experience, GitHub Copilot and App Modernization for .NET work best
 
 ## What is the MCP Server, and why is there sometimes an initial delay when running a command?
 
-The GitHub Copilot App Modernization for .NET (Preview) extension uses an MCP Server to provide Azure-related knowledge bases as tools.
+The GitHub Copilot app modernization for .NET (Preview) extension uses an MCP Server to provide Azure-related knowledge bases as tools.
 
 - **Automatic setup:**  
   On the first invocation of any App Modernization command, the extension checks for a configuration file at `%USERPROFILE%\.mcp.json`. If it's missing or the server isn't running, the extension writes the default settings and launches the MCP Server automatically.
@@ -131,22 +131,22 @@ No. The tool uses GitHub Copilot in the same way you use it to modify code, and 
 
 For more information, see the [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839).
 
-## What are the intended uses of GitHub Copilot App Modernization for .NET (Preview)?
+## What are the intended uses of GitHub Copilot app modernization for .NET (Preview)?
 
-GitHub Copilot App Modernization for .NET (Preview) is designed to help enterprises migrate their .NET applications to Azure. It assesses application code issues that need to be addressed for migration and provides code remediation patterns that can be applied with AI.
+GitHub Copilot app modernization for .NET (Preview) is designed to help enterprises migrate their .NET applications to Azure. It assesses application code issues that need to be addressed for migration and provides code remediation patterns that can be applied with AI.
 
-## How was GitHub Copilot App Modernization for .NET (Preview) evaluated? What metrics are used to measure performance?
+## How was GitHub Copilot app modernization for .NET (Preview) evaluated? What metrics are used to measure performance?
 
-GitHub Copilot App Modernization for .NET (Preview) was evaluated through extensive manual and automated testing. Additional evaluation was performed using custom datasets for offensive and malicious prompts (user questions) and responses. The tool is also continuously evaluated with user feedback.
+GitHub Copilot app modernization for .NET (Preview) was evaluated through extensive manual and automated testing. Additional evaluation was performed using custom datasets for offensive and malicious prompts (user questions) and responses. The tool is also continuously evaluated with user feedback.
 
-## What are the limitations of GitHub Copilot App Modernization for .NET (Preview)?
+## What are the limitations of GitHub Copilot app modernization for .NET (Preview)?
 
-GitHub Copilot App Modernization for .NET (Preview) can be used on application source code written in .NET Framework or .NET Core. Applications in other languages are not supported.
+GitHub Copilot app modernization for .NET (Preview) can be used on application source code written in .NET Framework or .NET Core. Applications in other languages are not supported.
 
-## What operational factors and settings allow for effective and responsible use of GitHub Copilot App Modernization for .NET (Preview)?
+## What operational factors and settings allow for effective and responsible use of GitHub Copilot app modernization for .NET (Preview)?
 
 You can choose the model to make code changes at the bottom of the GitHub Copilot chat box. Different models may produce different results and have varying token consumption. For more information, see [Manage Copilot usage and models](/visualstudio/ide/copilot-usage-and-models).
 
-## How do I provide feedback on GitHub Copilot App Modernization for .NET (Preview)?
+## How do I provide feedback on GitHub Copilot app modernization for .NET (Preview)?
 
 We value your feedback—share [your thoughts here](https://aka.ms/AM4DFeedback) to help us continue improving the product.

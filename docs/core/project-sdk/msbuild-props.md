@@ -1455,6 +1455,16 @@ The allowed values of this property are SDK feature bands, for example, 8.0.100 
 
 For more information, see [SDK Analysis Level Property and Usage](https://github.com/dotnet/designs/blob/main/proposed/sdk-analysis-level.md).
 
+The following table summarizes summarizes which diagnostics SDKAnalysisLevel affects.
+By setting the value in SDKAnalysisLevel column, you are getting the Current column.
+
+| SDKAnalysisLevel | What | Previous | Current |
+|------------------------|-----------|--------|-------|
+| 9.0.100 | Restore HTTP sources diagnostic | [NU1803](/nuget/reference/errors-and-warnings/nu1803) warning | [NU1302](/nuget/reference/errors-and-warnings/nu1302) error. |  
+| 10.0.100 | Restore Package Pruning diagnostic | N/A | [NU1510](/nuget/reference/errors-and-warnings/nu1510), [NU1511](/nuget/reference/errors-and-warnings/nu1511). |
+| 10.0.100 | Restore resolver with lock files | Uses legacy dependency graph resolver (.NET 8 SDK and earlier) | Uses improved, [.NET 9 dependency graph resolver](/nuget/consume-packages/package-references-in-project-files#nuget-dependency-resolver) |
+| 10.0.100 | Restore behavior for PackageReference without a version | [NU1603](/nuget/reference/errors-and-warnings/nu1603) warning | [NU1015](/nuget/reference/errors-and-warnings/nu1015) error |
+
 ## Microsoft.Testing.Platform&ndash;related properties
 
 The following MSBuild properties are documented in this section:

@@ -290,7 +290,7 @@ The install scripts do not update the registry on Windows. They just download th
 
 - Install multiple versions while not overwriting `dotnet` binaries from prior installs
 
-If you install .NET SDKs or the .NET Runtime from an earlier version on top of a newer version, you need to use `--skip-non-versioned-files` so that 
+If you install .NET SDKs or the .NET Runtime from an earlier version on top of a newer version, you need to use `--skip-non-versioned-files` so that
 the 'unversioned' `dotnet` files from the earlier version do not overwrite the same files from the newer version.
 
 ```shell

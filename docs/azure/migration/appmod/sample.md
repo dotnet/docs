@@ -8,11 +8,11 @@ author: alexwolfmsft
 ms.author: alexwolf
 ---
 
-# Contoso University Migration Sample
+# Contoso University migration sample
 
 The [Contoso University sample web app](https://github.com/Azure-Samples/dotnet-migration-copilot-samples/tree/main/ContosoUniversity) provides an example project you can experiment with using GitHub Copilot app modernization for .NET (Preview). For more information and step-by-step instructions, see the [quickstart guide](quickstart.md).
 
-## Scenario Overview
+## Scenario overview
 
 Contoso University is a fictional university management system originally built with .NET Framework 4.8. The application includes features such as:
 
@@ -37,6 +37,6 @@ Using App Modernization for .NET (Preview), you can update the sample to use mod
 
 This migration illustrates how to transform a legacy, on-premises application into a scalable and maintainable cloud-native solution using GitHub Copilot and Azure services.
 
-## Learn More
+## Learn more
 
 - [Quickstart: Assess and migrate a .NET project using GitHub Copilot app modernization for .NET (Preview)](quickstart.md)

@@ -12,11 +12,11 @@ The [Source Link](https://github.com/dotnet/sourcelink) build tooling is now inc
 
 ## Previous behavior
 
-Prior to this change, the default `InformationalVersion` of a library or application was the `Version` property.
+Prior to this change, `InformationalVersion` did not include any build metadata. The default `InformationalVersion` of a library or application was the `Version` property.
 
 ## New behavior
 
-Starting in .NET 8, the default `InformationalVersion` of a library or application is the `Version` property *and* the `SourceRevisionId` property.
+Starting in .NET 8, `InformationalVersion` includes the `SourceRevisionId` property in all cases. For example, the default `InformationalVersion` of a library or application is the `Version` property *and* the `SourceRevisionId` property.
 
 ## Version introduced
 

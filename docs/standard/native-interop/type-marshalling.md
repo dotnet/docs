@@ -26,7 +26,7 @@ If you apply the [`System.Runtime.CompilerServices.DisableRuntimeMarshallingAttr
 
 Generally, the runtime tries to do the "right thing" when marshalling to require the least amount of work from you. The following tables describe how each type is marshalled by default when used in a parameter or field. The C99/C++11 fixed-width integer and character types are used to ensure that the following table is correct for all platforms. You can use any native type that has the same alignment and size requirements as these types.
 
-This first table describes the mappings for various types for whom the marshalling is the same for both P/Invoke and field marshalling.
+This first table describes the mappings for various types. For these types, the marshalling is the same for both P/Invoke and field marshalling.
 
 | C# keyword  | .NET Type        | Native Type             |
 |-------------|------------------|-------------------------|

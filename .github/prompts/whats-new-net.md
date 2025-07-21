@@ -25,19 +25,20 @@ For preview releases, the path is `<major-release>/preview/preview<n>` where:
 - `<major-release>` is the release number. For example, `8.0`, `9.0` or `10.0`.
 - `n` is the preview number. For example, `1`, `3`, or `6`.
 
-The primary release notes are in the `README.MD` file in that folder.  That file will contain links to other release notes for parts of .NET: libraries, runtime, sdk, languages, and so on. Use all that information for source.
+The primary release notes are in the `README.MD` file in that folder.  That file contains links to other release notes for components of .NET: libraries, runtime, SDK, languages, and so on. Use all that information for source.
 
-## Updates for each file.
+## Updates for each file
 
-- Each file should have its `ms.date` metadata field updated to match today's date.
+- Each file should have its `ms.date` metadata field updated to match the date you're assigned the issue.
 - Ensure each file has the `ai-usage: ai-assisted` metadata field added.
 - Update phrasing on the latest update to reference the current release (preview, GA, or service release). Individual features shouldn't reference a given preview release, but the article should make it clear which was the last preview.
-- Search this repository for articles that have been recently updated pertaining to new features. Add links to those as you write about that feature.
+- Search this repository for articles that have been recently updated pertaining to new features. Add links to those as you write about that feature. Or, add applicable information from the release notes into existing feature articles where it makes sense.
 - For the runtime and libraries articles, include extensive examples as well as links to recently updated articles related to the new feature. The examples should be at least as thorough as the examples from the source release notes.
-- Where applicable, the sdk article should include the samples.
+- Where applicable, the SDK article should include the samples.
 - The overview article generally doesn't include examples. Its purpose is to direct readers to more detailed information in other articles.
-- All APIs should be referenced using the `xref` tag on first mention. The `displayProperty=nameWithType` should be used.
+- All APIs should be referenced using an `xref` style link, at least on first mention.
 - All links to article in the `dotnet/docs` repository should be file relative.
 - Spell out acronyms on first use in each file.
+- In general, don't mention specific contributors or pull requests to the product repos.
 
 Next, create a pull request. In the description, include the text "Fixes #\<issue-number>", where "issue-number" is the GitHub issue number.

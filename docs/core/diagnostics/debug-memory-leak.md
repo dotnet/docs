@@ -56,7 +56,6 @@ The output should be similar to:
 4807 DiagnosticScena /home/user/git/samples/core/diagnostics/DiagnosticScenarios/bin/Debug/netcoreapp3.0/DiagnosticScenarios
 ```
 
-
 > [!NOTE]
 > If the previous command doesn't work or isn't found, you likely need to install the `dotnet-counters` tool first. Use the following command:
 >

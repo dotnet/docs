@@ -123,6 +123,47 @@ Instead of manually porting an application from .NET Framework to .NET, you can 
 
 Even if you use a tool to help port your application, you should review the [Considerations when porting section](#considerations-when-porting) in this article.
 
+### GitHub Copilot App Modernization – Upgrade for .NET
+
+[GitHub Copilot App Modernization – Upgrade for .NET](github-copilot-app-modernization-overview.md) is a Visual Studio extension that helps you upgrade projects to newer versions of .NET, update dependencies, and apply code fixes. It leverages GitHub Copilot to provide an interactive upgrade experience.
+
+This tool supports the following upgrade paths:
+
+- Upgrade projects from .NET Core to .NET.
+- Upgrade projects from older versions of .NET to the latest.
+- Modernize your code base.
+
+**When to use:**
+
+Use GitHub Copilot App Modernization – Upgrade for .NET for scenarios where you want to upgrade your .NET project code and dependencies to newer versions of .NET using an AI-powered tool.
+
+### GitHub Copilot app modernization for .NET
+
+GitHub Copilot app modernization for .NET (Preview) helps you migrate .NET applications to Azure efficiently and confidently. Powered by GitHub Copilot and [Application and code assessment for .NET](../../azure/migration/appcat/app-code-assessment-toolkit.md), it guides you through assessment, solution recommendations, code fixes, and validation—all within a single tool.
+
+With this assistant, you can:
+
+- Assess your application's code, configuration, and dependencies.
+- Plan and set up the right Azure resources.
+- Fix issues and apply best practices for cloud migration.
+- Validate that your app builds and tests successfully.
+
+For more details, see the [GitHub Copilot app modernization for .NET overview](upgrade-assistant-overview.md).
+
+**When to use:**
+
+Use the GitHub Copilot app modernization for .NET (Preview) experience for scenarios where you need end to end assessment, planning, and remediation for migrating your .NET apps to Azure.
+
+### Application and Code Assessment for .NET
+
+[Azure Migrate application and code assessment for .NET](../../azure/migration/appcat/app-code-assessment-toolkit.md) provides code and application analysis, along with recommendations for planning cloud deployments. It helps you confidently run business-critical solutions in the cloud by offering a developer-focused assessment of your source code. The tool also provides recommendations and examples to optimize code and configurations for Azure, following industry best practices.
+
+This tool is also used by the GitHub Copilot app modernization for .NET experience.
+
+**When to use:**
+
+Use the Azure Migrate application and code assessment for .NET toolset for an assessment of and recommendations for migrating an existing code base to Azure. The Azure Migrate application and code assessment is essentially a subset of the GitHub Copilot app modernization for .NET experience.
+
 ### .NET Upgrade Assistant
 
 The [.NET Upgrade Assistant](upgrade-assistant-overview.md) is a command-line tool that can be run on different kinds of .NET Framework apps. It's designed to assist with upgrading .NET Framework apps to .NET. After running the tool, **in most cases the app will require more effort to complete the migration**. The tool includes the installation of analyzers that can assist with completing the migration. This tool works on the following types of .NET Framework applications:
@@ -134,6 +175,10 @@ The [.NET Upgrade Assistant](upgrade-assistant-overview.md) is a command-line to
 - Class libraries
 
 This tool uses the other tools listed in this article, such as **try-convert**, and guides the migration process. For more information about the tool, see [Overview of the .NET Upgrade Assistant](upgrade-assistant-overview.md).
+
+**When to use:**
+
+Use .NET Upgrade Assistant to upgrade .NET Framework apps to newer versions of .NET. This tool provides an alternative to the AI powered GitHub Copilot App Modernization – Upgrade for .NET experience.
 
 ### `try-convert`
 

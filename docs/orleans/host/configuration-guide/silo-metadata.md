@@ -52,9 +52,11 @@ The preceding configuration defines metadata for a Silo, tagging it with:
 To apply this configuration, use the following setup in your silo host builder:
 
 ```csharp
-var siloBuilder = new SiloHostBuilder()
+Host.CreateApplicationBuilder(args).UseOrleans(siloBuilder =>
+{
     // Configuration section Orleans:Metadata is used by default
-    .UseSiloMetadata();
+    siloBuilder.UseSiloMetadata();
+});
 ```
 
 Alternatively, an explicit `IConfiguration` or `IConfigurationSection` can be passed in to control where in configuration the metadata is pulled from.

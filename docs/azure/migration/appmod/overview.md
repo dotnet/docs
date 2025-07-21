@@ -29,7 +29,7 @@ App Modernization for .NET is provided as a Visual Studio extension and relies o
 
 For a complete walkthrough of setting up and using GitHub Copilot app modernization for .NET, see [Quickstart: Assessing an application and applying code changes](quickstart.md).
 
-## Key Concepts
+## Key concepts
 
 GitHub Copilot app modernization for .NET supports end-to-end migration to Azure, including assessment, planning, code remediation, build fixes, and unit test fixes. It uses GitHub Copilot AI capabilities to help you migrate and run your applications on Azure with confidence, accelerating the entire modernization lifecycle.
 
@@ -45,7 +45,7 @@ When code changes are needed, the tool guides you through remediation using pred
 
 For more information, see [Predefined tasks](predefined-tasks.md).
 
-## Common Use Cases
+## Common use cases
 
 App Modernization for .NET (Preview) supports the following scenarios:
 
@@ -53,25 +53,25 @@ App Modernization for .NET (Preview) supports the following scenarios:
 
     Evaluates your application's readiness for Azure migration in Visual Studio, powered by [AppCAT for .NET](../appcat/install.md).
 
-![Assessment](media/overview_assessment.png)
+    ![Assessment](media/overview_assessment.png)
 
 - **Solution recommendations**  
 
     Recommends target Azure services for your application's resource dependencies, tailored to each category of assessed issues.
 
-![Solution](media/overview_solution.png)
+    ![Solution](media/overview_solution.png)
 
 - **Code remediation for common issues**
 
     Accelerates code changes for [common modernization issues](predefined-tasks.md) by applying predefined tasks that represent expert best practices.
 
-![Apply Task](media/overview_remediation.png)
+    ![Apply Task](media/overview_remediation.png)
 
 - **Automatic fixes for compilation errors:**  
 
     Automatically discovers and fixes compilation errors introduced by code changes.
 
-## Feedback and Privacy
+## Feedback and privacy
 
 - **Feedback:** We value your feedback—share [your thoughts here](https://aka.ms/AM4DFeedback) to help us improve the product.
 - **License:** This extension is licensed under the [GitHub Copilot Product Specific Terms](https://github.com/customer-terms/github-copilot-product-specific-terms).

@@ -1,6 +1,6 @@
 ---
-title: GitHub Copilot App Modernization for .NET (Preview) quickstart
-description: Get started with GitHub Copilot App Modernization for .NET
+title: GitHub Copilot app modernization for .NET (Preview) quickstart
+description: Get started with GitHub Copilot app modernization for .NET
 ms.topic: concept-article
 ms.custom: devx-track-dotnet
 ms.date: 7/15/2025
@@ -8,11 +8,11 @@ author: alexwolfmsft
 ms.author: alexwolf
 ---
 
-# Quickstart: Assess and Migrate a .NET Project with GitHub Copilot App Modernization for .NET (Preview)
+# Quickstart: Assess and Migrate a .NET Project with GitHub Copilot app modernization for .NET (Preview)
 
-In this quickstart, you assess and migrate a .NET project using [GitHub Copilot App Modernization for .NET (Preview)]([GitHub Copilot App Modernization for .NET (Preview)](https://marketplace.visualstudio.com/items?itemName=vscjava.appmod-dotnet)). You complete the following tasks:
+In this quickstart, you assess and migrate a .NET project using [GitHub Copilot app modernization for .NET (Preview)](https://marketplace.visualstudio.com/items?itemName=vscjava.appmod-dotnet). You complete the following tasks:
 
-- Install and configure the GitHub Copilot App Modernization for .NET extension
+- Install and configure the GitHub Copilot app modernization for .NET extension
 - Assess a sample project (Contoso University)
 - Start the migration process
 
@@ -35,15 +35,15 @@ For more information, see [Set up GitHub Copilot in Visual Studio](/visualstudio
 
 ## Install the GitHub Copilot App Modernization Extension
 
-To complete the steps ahead, you need to install the GitHub Copilot App Modernization for .NET (Preview) Visual Studio extension.
+To complete the steps ahead, you need to install the GitHub Copilot app modernization for .NET (Preview) Visual Studio extension.
 
 1. Inside Visual Studio, navigate to `Extensions` > `Manage Extensions`.
-1. Search for **GitHub Copilot App Modernization for .NET** in the marketplace.
+1. Search for **GitHub Copilot app modernization for .NET** in the marketplace.
 1. On the extension page, select **Install**.
 1. Follow the notification bar prompts to close Visual Studio and complete the installation.
 1. Relaunch Visual Studio after installation.
 
-You can also view the [GitHub Copilot App Modernization for .NET (Preview)](https://marketplace.visualstudio.com/items?itemName=vscjava.appmod-dotnet) extension directly on the extension marketplace.
+You can also view the [GitHub Copilot app modernization for .NET (Preview)](https://marketplace.visualstudio.com/items?itemName=vscjava.appmod-dotnet) extension directly on the extension marketplace.
 
 For more information, see [Find, install, and manage extensions for Visual Studio](/visualstudio/ide/finding-and-using-visual-studio-extensions?view=vs-2022).
 
@@ -57,13 +57,13 @@ App Modernization for .NET assessment helps you identify your application readin
 
    - **Solution explorer**
 
-    Right-click the top-level solution node, then select `GitHub Copilot App Modernization for .NET` > `Run Assessment`.  
+    Right-click the top-level solution node, then select `GitHub Copilot app modernization for .NET` > `Run Assessment`.  
 
     :::image type="content" source="media/solution-start-assessment.png" alt-text="A screenshot showing how to start the assessment through the solution explorer.":::
 
    - **Top navigation**
 
-    On the top menu, go to `Extensions` > `GitHub Copilot App Modernization for .NET` > `Run Assessment`.  
+    On the top menu, go to `Extensions` > `GitHub Copilot app modernization for .NET` > `Run Assessment`.  
 
     :::image type="content" source="media/extension-start-assessment.png" alt-text="A screenshot showing how to start the assessment from the top navigation.":::
 
@@ -80,12 +80,12 @@ App Modernization for .NET assessment helps you identify your application readin
 
 ## Start a migration
 
-GitHub Copilot App Modernization for .NET (Preview) includes [predefined tasks](predefined-tasks.md) for common migration scenarios, following Microsoft's best practices.
+GitHub Copilot app modernization for .NET (Preview) includes [predefined tasks](predefined-tasks.md) for common migration scenarios, following Microsoft's best practices.
 
 1. Select the **Migrate** button in the Assessment Report generated in the previous step to start a migration.
 
     > [!TIP]
-    > If you already know which migration scenario you want, go to `GitHub Copilot App Modernization for .NET` > `Migration Tasks` and select the appropriate task directly.
+    > If you already know which migration scenario you want, go to `GitHub Copilot app modernization for .NET` > `Migration Tasks` and select the appropriate task directly.
 
 ### Plan and progress tracker generation
 

@@ -10,7 +10,7 @@ ms.author: alexwolf
 
 # GitHub Copilot app modernization for .NET (Preview) overview
 
-[GitHub Copilot App Modernization for .NET (Preview)](https://marketplace.visualstudio.com/items?itemName=vscjava.appmod-dotnet) helps you migrate .NET applications to Azure quickly and confidently by guiding you through assessment, solution recommendations, code fixes, and validation - all in one tool.
+[GitHub Copilot app modernization for .NET (Preview)](https://marketplace.visualstudio.com/items?itemName=vscjava.appmod-dotnet) helps you migrate .NET applications to Azure quickly and confidently by guiding you through assessment, solution recommendations, code fixes, and validation - all in one tool.
 
 With this assistant, you can:
 
@@ -35,7 +35,6 @@ GitHub Copilot app modernization for .NET supports end-to-end migration to Azure
 
 The tool also relies on [Azure Migrate application and code assessment (AppCAT)](../appcat/app-code-assessment-toolkit.md) to analyze your code and identify modernization opportunities. You can use GitHub Copilot app modernization for .NET to get an overview of cloud readiness migration issues, including:
 
-- Instructions for setting up Azure resources
 - Best practice recommendations
 - Suggestions for changing your application code
 

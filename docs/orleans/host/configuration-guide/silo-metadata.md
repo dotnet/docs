@@ -10,7 +10,7 @@ Silo metadata is a feature in Orleans that allows developers to assign custom me
 
 This feature is particularly useful in scenarios where different silos have distinct roles, hardware configurations, or other unique characteristics. For example, silos can be tagged based on their region, compute power, or specialized responsibilities within the system.
 
-Silo metadata lays the groundwork for additional Orleans features, such as [Grain placement filtering](../grains/grain-placement-filtering.md).
+Silo metadata lays the groundwork for additional Orleans features, such as [Grain placement filtering](../../grains/grain-placement-filtering.md).
 
 ## Key concepts
 

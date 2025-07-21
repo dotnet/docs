@@ -53,6 +53,7 @@ When the extension is installed, it adds a configuration entry to `%USERPROFILE%
 After the extension is uninstalled, this configuration remains. Since the associated command no longer exists, GitHub Copilot Agent mode displays a red error indicator next to the `appModernization` group.
 
 To resolve this:
+
 - **Edit `%USERPROFILE%\.mcp.json`**
 
    Open the file in a text editor and remove the `"appModernization"` entry from the `"servers"` section.
@@ -82,11 +83,13 @@ If you see an AppCAT installation failure in the command-line output when the ex
 2. Run the appropriate command based on your shell:
 
    **For Command Prompt:**
+
    ```cmd
    dotnet tool install dotnet-appcat --tool-path "%LOCALAPPDATA%\Microsoft\VisualStudio\AppModernizationExtension\Tools"
    ```
 
    **For PowerShell:**
+
    ```powershell
    dotnet tool install dotnet-appcat --tool-path "$env:LOCALAPPDATA\Microsoft\VisualStudio\AppModernizationExtension\Tools"
    ```
@@ -104,11 +107,13 @@ If Visual Studio fails to automatically upgrade AppCAT when a new version is ava
 2. Run the appropriate command based on your shell:
 
    **For Command Prompt:**
+
    ```cmd
    dotnet tool update dotnet-appcat --tool-path "%LOCALAPPDATA%\Microsoft\VisualStudio\AppModernizationExtension\Tools"
    ```
 
    **For PowerShell:**
+
    ```powershell
    dotnet tool update dotnet-appcat --tool-path "$env:LOCALAPPDATA\Microsoft\VisualStudio\AppModernizationExtension\Tools"
    ```

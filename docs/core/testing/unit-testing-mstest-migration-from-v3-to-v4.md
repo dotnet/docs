@@ -8,7 +8,7 @@ ms.date: 07/08/2025
 
 # Migrate from MSTest v3 to MSTest v4
 
-The first preview of MSTest v4 is now available. This migration guide explores what's changed in MSTest v4 and how you can migrate to this version.
+The preview versions MSTest v4 are now available. This migration guide explores what's changed in MSTest v4 and how you can migrate to this version.
 
 > [!NOTE]
 > Generally speaking, MSTest v4 isn't binary compatible with MSTest v3. Any libraries compiled against v3 must be recompiled against v4.

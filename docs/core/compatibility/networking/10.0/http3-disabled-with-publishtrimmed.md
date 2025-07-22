@@ -32,13 +32,13 @@ Since making HTTP/3 work requires extra gestures and often doesn't work by defau
 
 ## Recommended action
 
-To enable HTTP/3 support in applications that use `PublishTrimmed` or `PublishAot`, set the `<HTTP/3Support>` property to `true` in your project file:
+To enable HTTP/3 support in applications that use `PublishTrimmed` or `PublishAot`, set the `<Http3Support>` property to `true` in your project file:
 
 ```xml
 <PropertyGroup>
   ...
   <PublishTrimmed>true</PublishTrimmed>
-  <HTTP/3Support>true</HTTP/3Support>
+  <Http3Support>true</Http3Support>
 </PropertyGroup>
 ```
 

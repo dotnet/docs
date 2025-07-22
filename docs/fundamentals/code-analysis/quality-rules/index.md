@@ -94,6 +94,7 @@ The following table lists code quality analysis rules.
 > | [CA1513: Use ObjectDisposedException throw helper](ca1513.md) | Throw helpers are simpler and more efficient than `if` blocks that construct a new exception instance. |
 > | [CA1514: Avoid redundant length argument](ca1514.md) | A redundant length argument is used when slicing to the end of a string or buffer. A calculated length can be error-prone and is also unnecessary. |
 > | [CA1515: Consider making public types internal](ca1515.md) | Unlike a class library, an application's API isn't typically referenced publicly, so types can be marked internal. |
+> | [CA1516: Use cross-platform intrinsics](ca1516.md) | This rule detects usage of platform-specific intrinsics that can be replaced with an equivalent cross-platform intrinsic instead. |
 > | [CA1700: Do not name enum values 'Reserved'](ca1700.md) | This rule assumes that an enumeration member that has a name that contains "reserved" is not currently used but is a placeholder to be renamed or removed in a future version. Renaming or removing a member is a breaking change. |
 > | [CA1707: Identifiers should not contain underscores](ca1707.md) | By convention, identifier names do not contain the underscore (_) character. This rule checks namespaces, types, members, and parameters. |
 > | [CA1708: Identifiers should differ by more than case](ca1708.md) | Identifiers for namespaces, types, members, and parameters cannot differ only by case because languages that target the common language runtime are not required to be case-sensitive. |

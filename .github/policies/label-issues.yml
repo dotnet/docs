@@ -117,7 +117,7 @@ configuration:
                 - isActivitySender:
                     issueAuthor: true
                 - not:
-                    - activitySenderHasAssociation:
+                    activitySenderHasAssociation:
                         association: Member
               then:
                 - addLabel:

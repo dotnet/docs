@@ -16,13 +16,9 @@ Applying cost/benefit analysis, there's a good chance some wouldn't support the 
 What type of application might be a candidate for cloud native?
 
 - Strategic enterprise systems that need to constantly evolve business capabilities/features
-
 - An application that requires a high release velocity - with high confidence
-
 - A system where individual features must release *without* a full redeployment of the entire system
-
 - An application developed by teams with expertise in different technology stacks
-
 - An application with components that must scale independently
 
 Smaller, less impactful line-of-business applications might fare well with a simple monolithic architecture hosted in a Cloud PaaS environment.
@@ -70,28 +66,16 @@ With the introduction behind, we now dive into a much more detailed look at clou
 ### References
 
 - [Cloud Native Computing Foundation](https://www.cncf.io/)
-
 - [.NET Microservices: Architecture for Containerized .NET applications](https://dotnet.microsoft.com/download/thank-you/microservices-architecture-ebook)
-
 - [Microsoft Azure Well-Architected Framework](/azure/architecture/framework/)
-
 - [Modernize existing .NET applications with Azure cloud and Windows Containers](https://dotnet.microsoft.com/download/thank-you/modernizing-existing-net-apps-ebook)
-
 - [Cloud Native Patterns by Cornelia Davis](https://www.manning.com/books/cloud-native-patterns)
-
 - [Cloud native applications: Ship faster, reduce risk, and grow your business](https://tanzu.vmware.com/cloud-native)
-
 - [Dapr documents](https://dapr.io/)
-
 - [Beyond the Twelve-Factor Application](https://content.pivotal.io/blog/beyond-the-twelve-factor-app)
-
 - [What is Infrastructure as Code](/devops/deliver/what-is-infrastructure-as-code)
-
 - [Uber Engineering's Micro Deploy: Deploying Daily with Confidence](https://www.uber.com/blog/micro-deploy-code/)
-
 - [How Netflix Deploys Code](https://www.infoq.com/news/2013/06/netflix/)
-
-- [Overload Control for Scaling WeChat Microservices](https://www.cs.columbia.edu/~ruigu/papers/socc18-final100.pdf)
 
 >[!div class="step-by-step"]
 >[Previous](definition.md)

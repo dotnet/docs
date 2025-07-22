@@ -64,10 +64,10 @@ The SDK also makes it possible to disable debugger support using the property `D
 
 Several feature areas of the framework libraries come with trimmer directives that make it possible to remove the code for disabled features.
 
-| MSBuild property | Description |
-| - | - |
+| MSBuild property         | Description |
+|--------------------------|-------------|
 | `AutoreleasePoolSupport` | When set to `false`, removes code that creates [autorelease pools](../../runtime-config/threading.md#autoreleasepool-for-managed-threads) on supported platforms. `false` is the default for the .NET SDK. |
-| `DebuggerSupport` | When set to `false`, removes code that enables better debugging experiences. This setting also [removes symbols](#remove-symbols). |
+| `DebuggerSupport`        | When set to `false`, removes code that enables better debugging experiences. This setting also [removes symbols](#remove-symbols). |
 | `EnableUnsafeBinaryFormatterSerialization` | When set to `false`, removes BinaryFormatter serialization support. For more information, see [BinaryFormatter serialization methods are obsolete](../../compatibility/serialization/5.0/binaryformatter-serialization-obsolete.md) and [In-box BinaryFormatter implementation removed and always throws](../../compatibility/serialization/9.0/binaryformatter-removal.md). |
 | `EnableUnsafeUTF7Encoding` | When set to `false`, removes insecure UTF-7 encoding code. For more information, see [UTF-7 code paths are obsolete](../../compatibility/core-libraries/5.0/utf-7-code-paths-obsolete.md). |
 | `EventSourceSupport` | When set to `false`, removes EventSource-related code and logic. |

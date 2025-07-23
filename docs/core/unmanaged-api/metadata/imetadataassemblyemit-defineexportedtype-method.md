@@ -67,8 +67,6 @@ HRESULT DefineExportedType (
 
  **Library:** Used as a resource in MsCorEE.dll
 
- **.NET versions:** Available since .NET Framework 1.0
-
 ## See also
 
 - [IMetaDataAssemblyEmit Interface](imetadataassemblyemit-interface.md)

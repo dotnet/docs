@@ -43,8 +43,6 @@ void CloseEnum (
 
  **Library:** Included as a resource in MsCorEE.dll
 
- **.NET versions:** Available since .NET Framework 1.0
-
 ## See also
 
 - [IMetaDataImport Interface](imetadataimport-interface.md)

@@ -79,8 +79,6 @@ The sequence values in `pulSequence` begin with 1 for parameters. A return value
 
  **Library:** Included as a resource in MsCorEE.dll
 
- **.NET versions:** Available since .NET Framework 1.0
-
 ## See also
 
 - [IMetaDataImport Interface](imetadataimport-interface.md)

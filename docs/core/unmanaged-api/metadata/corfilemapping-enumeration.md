@@ -37,13 +37,12 @@ typedef enum CorFileMapping {
 
 ## Requirements
 
- **Platforms:** See [System Requirements](../../get-started/system-requirements.md).
+ **Platforms:** See [.NET supported operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md).
 
  **Header:** CorHdr.h
 
- **.NET versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]
+ **.NET versions:** Available since .NET Framework 4.0
 
 ## See also
 
-- [Metadata Enumerations](metadata-enumerations.md)
 - [GetFileMapping Method](imetadatainfo-getfilemapping-method.md)

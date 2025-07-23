@@ -33,8 +33,6 @@ Provides methods to create a new metadata scope, or open an existing one.
 
  **Library:** Used as a resource in MsCorEE.dll
 
- **.NET versions:** Available since .NET Framework 1.0
-
 ## See also
 
 - [IMetaDataDispenserEx Interface](imetadatadispenserex-interface.md)

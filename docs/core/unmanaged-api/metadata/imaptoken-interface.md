@@ -22,19 +22,17 @@ Provides mapping capabilities between assemblies.
 
 ## Methods
 
-|Method|Description|
-|------------|-----------------|
-|[Map Method](imaptoken-map-method.md)|Maps a relationship between two assemblies using metadata signatures.|
+| Method                                | Description |
+|---------------------------------------|-------------|
+| [Map Method](imaptoken-map-method.md) | Maps a relationship between two assemblies using metadata signatures. |
 
 ## Requirements
 
- **Platforms:** See [System Requirements](../../get-started/system-requirements.md).
+ **Platforms:** See [.NET supported operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md).
 
  **Header:** Cor.h
 
  **Library:** Used as a resource in MsCorEE.dll
-
- **.NET versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
 
 ## See also
 

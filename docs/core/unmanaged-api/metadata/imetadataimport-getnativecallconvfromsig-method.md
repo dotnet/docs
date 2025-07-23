@@ -47,8 +47,6 @@ HRESULT GetNativeCallConvFromSig (
 
  **Library:** Included as a resource in MsCorEE.dll
 
- **.NET versions:** Available since .NET Framework 1.0
-
 ## See also
 
 - <xref:System.Runtime.InteropServices.CallingConvention>

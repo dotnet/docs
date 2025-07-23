@@ -43,8 +43,6 @@ HRESULT GetString (
 
  **Library:** Used as a resource in MsCorEE.dll
 
- **.NET versions:** Available since .NET Framework 1.0
-
 ## See also
 
 - [IMetaDataTables Interface](imetadatatables-interface.md)

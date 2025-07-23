@@ -1,3 +1,4 @@
+---
 description: "Learn more about: CorTypeAttr Enumeration"
 title: "CorTypeAttr Enumeration"
 ms.date: "03/30/2017"
@@ -105,12 +106,6 @@ typedef enum CorTypeAttr {
 
 ## Requirements
 
- **Platforms:** See [System Requirements](../../get-started/system-requirements.md).
+ **Platforms:** See [.NET supported operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md).
 
  **Header:** CorHdr.h
-
- **.NET Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
-
-## See also
-
-- [Metadata Enumerations](metadata-enumerations.md)

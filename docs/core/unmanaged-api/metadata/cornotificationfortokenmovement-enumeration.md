@@ -86,12 +86,6 @@ typedef enum CorNotificationForTokenMovement {
 
 ## Requirements
 
- **Platforms:** See [System Requirements](../../get-started/system-requirements.md).
+ **Platforms:** See [.NET supported operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md).
 
  **Header:** CorHdr.h
-
- **.NET versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
-
-## See also
-
-- [Metadata Enumerations](metadata-enumerations.md)

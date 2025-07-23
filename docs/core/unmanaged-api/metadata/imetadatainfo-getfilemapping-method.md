@@ -65,7 +65,7 @@ HRESULT GetFileMapping (
 
  **Library:** Used as a resource in MsCorEE.dll
 
- **.NET versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]
+ **.NET versions:** Available since .NET Framework 4.0
 
 ## See also
 

@@ -39,11 +39,9 @@ typedef struct COR_FIELD_OFFSET {
 
 ## Requirements
 
- **Platforms:** See [System Requirements](../../get-started/system-requirements.md).
+ **Platforms:** See [.NET supported operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md).
 
  **Header:** CorHdr.h, CorProf.idl
-
- **.NET Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
 
 ## See also
 

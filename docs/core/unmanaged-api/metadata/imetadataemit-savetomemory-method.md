@@ -43,8 +43,6 @@ HRESULT SaveToMemory (
 
  **Library:** Used as a resource in MSCorEE.dll
 
- **.NET versions:** Available since .NET Framework 1.0
-
 ## See also
 
 - [IMetaDataEmit Interface](imetadataemit-interface.md)

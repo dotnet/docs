@@ -36,8 +36,6 @@ HRESULT UnmarkAll ();
 
  **Library:** Used as a resource in MsCorEE.dll
 
- **.NET versions:** Available since .NET Framework 1.0
-
 ## See also
 
 - [IMetaDataFilter Interface](imetadatafilter-interface.md)

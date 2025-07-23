@@ -16,8 +16,8 @@ For .NET Framework-specific unmanaged APIs, see [.NET Framework unmanaged API re
 [Debugging](./debugging/index.md)\
 Describes the debugging API, which enables a debugger to debug code that runs in the common language runtime (CLR) environment.
 
-[Metadata](./metadata/index.md)\
-Describes the metadata API, which enables a client such as a compiler to generate or access a component's metadata without the types being loaded by the CLR.
+[Metadata](./metadata/imetadata-interfaces.md)\
+Describes the `IMetadata*` interfaces, which enable a client such as a compiler to generate or access a component's metadata without the types being loaded by the CLR.
 
 [Profiling](./profiling/index.md)\
 Describes the profiling API, which enables a profiler to monitor a program's execution by the CLR.

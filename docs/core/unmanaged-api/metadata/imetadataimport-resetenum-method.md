@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataImport::ResetEnum"
-helpviewer_keywords:
-  - "ResetEnum method [.NET Framework metadata]"
   - "IMetaDataImport::ResetEnum method [.NET Framework metadata]"
 topic_type:
   - "apiref"

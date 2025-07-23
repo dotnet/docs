@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataDispenser::OpenScope"
-helpviewer_keywords:
-  - "IMetaDataDispenser::OpenScope method [.NET Framework metadata]"
   - "OpenScope method, IMetaDataDispenser interface [.NET Framework metadata]"
 topic_type:
   - "apiref"
@@ -37,7 +35,7 @@ HRESULT OpenScope (
  [in] The name of the file to be opened. The file must contain common language runtime (CLR) metadata.
 
  `dwOpenFlags`
- [in] A value of the [CorOpenFlags](../../../framework/unmanaged-api/metadata/coropenflags-enumeration.md) enumeration to specify the mode (read, write, and so on) for opening.
+ [in] A value of the [CorOpenFlags](./coropenflags-enumeration.md) enumeration to specify the mode (read, write, and so on) for opening.
 
  `riid`
  [in] The IID of the desired metadata interface to be returned; the caller will use the interface to import (read) or emit (write) metadata.

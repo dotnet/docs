@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataTables::GetBlob"
-helpviewer_keywords:
-  - "GetBlob method [.NET Framework metadata]"
   - "IMetaDataTables::GetBlob method [.NET Framework metadata]"
 topic_type:
   - "apiref"

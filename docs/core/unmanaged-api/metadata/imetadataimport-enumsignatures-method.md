@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataImport::EnumSignatures"
-helpviewer_keywords:
-  - "EnumSignatures method [.NET Framework metadata]"
   - "IMetaDataImport::EnumSignatures method [.NET Framework metadata]"
 topic_type:
   - "apiref"

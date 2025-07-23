@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataImport::EnumParams"
-helpviewer_keywords:
-  - "IMetaDataImport::EnumParams method [.NET Framework metadata]"
   - "EnumParams method [.NET Framework metadata]"
 topic_type:
   - "apiref"

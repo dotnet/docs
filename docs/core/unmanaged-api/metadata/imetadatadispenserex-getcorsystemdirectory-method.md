@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataDispenserEx::GetCORSystemDirectory"
-helpviewer_keywords:
-  - "IMetaDataDispenserEx::GetCORSystemDirectory method [.NET Framework metadata]"
   - "GetCORSystemDirectory method [.NET Framework metadata]"
 topic_type:
   - "apiref"

@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataImport::GetFieldMarshal"
-helpviewer_keywords:
-  - "GetFieldMarshal method [.NET Framework metadata]"
   - "IMetaDataImport::GetFieldMarshal method [.NET Framework metadata]"
 topic_type:
   - "apiref"

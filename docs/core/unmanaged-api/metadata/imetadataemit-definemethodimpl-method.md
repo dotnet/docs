@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataEmit::DefineMethodImpl"
-helpviewer_keywords:
-  - "DefineMethodImpl method [.NET Framework metadata]"
   - "IMetaDataEmit::DefineMethodImpl method [.NET Framework metadata]"
 topic_type:
   - "apiref"

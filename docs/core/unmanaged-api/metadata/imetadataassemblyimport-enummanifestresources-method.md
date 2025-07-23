@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataAssemblyImport::EnumManifestResources"
-helpviewer_keywords:
-  - "IMetaDataAssemblyImport::EnumManifestResources method [.NET Framework metadata]"
   - "EnumManifestResources method [.NET Framework metadata]"
 topic_type:
   - "apiref"

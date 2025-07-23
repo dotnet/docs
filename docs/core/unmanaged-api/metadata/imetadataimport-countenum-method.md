@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataImport::CountEnum"
-helpviewer_keywords:
-  - "CountEnum method [.NET Framework metadata]"
   - "IMetaDataImport::CountEnum method [.NET Framework metadata]"
 topic_type:
   - "apiref"

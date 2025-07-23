@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataEmit::DefineMemberRef"
-helpviewer_keywords:
-  - "DefineMemberRef method [.NET Framework metadata]"
   - "IMetaDataEmit::DefineMemberRef method [.NET Framework metadata]"
 topic_type:
   - "apiref"

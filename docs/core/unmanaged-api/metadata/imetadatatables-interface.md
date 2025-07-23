@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataTables"
-helpviewer_keywords:
-  - "IMetaDataTables interface [.NET Framework metadata]"
 topic_type:
   - "apiref"
 ---

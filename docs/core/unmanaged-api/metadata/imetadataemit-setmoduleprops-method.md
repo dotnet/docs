@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataEmit::SetModuleProps"
-helpviewer_keywords:
-  - "SetModuleProps method [.NET Framework metadata]"
   - "IMetaDataEmit::SetModuleProps method [.NET Framework metadata]"
 topic_type:
   - "apiref"

@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataEmit2::SaveDelta"
-helpviewer_keywords:
-  - "IMetaDataEmit2::SaveDelta method [.NET Framework metadata]"
   - "SaveDelta method [.NET Framework metadata]"
 topic_type:
   - "apiref"

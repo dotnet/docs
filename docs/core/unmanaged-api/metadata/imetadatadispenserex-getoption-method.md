@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataDispenserEx::GetOption"
-helpviewer_keywords:
-  - "GetOption method [.NET Framework metadata]"
   - "IMetaDataDispenserEx::GetOption method [.NET Framework metadata]"
 topic_type:
   - "apiref"

@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataImport2::GetGenericParamProps"
-helpviewer_keywords:
-  - "IMetaDataImport2::GetGenericParamProps method [.NET Framework metadata]"
   - "GetGenericParamProps method [.NET Framework metadata]"
 topic_type:
   - "apiref"
@@ -44,7 +42,7 @@ HRESULT GetGenericParamProps (
  [out] The ordinal position of the `Type` parameter in the parent constructor or method.
 
  `pdwParamFlags`
- [out] A value of the [CorGenericParamAttr](../../../framework/unmanaged-api/metadata/corgenericparamattr-enumeration.md) enumeration that describes the `Type` for the generic parameter.
+ [out] A value of the [CorGenericParamAttr](./corgenericparamattr-enumeration.md) enumeration that describes the `Type` for the generic parameter.
 
  `ptOwner`
  [out] A TypeDef or MethodDef token that represents the owner of the parameter.

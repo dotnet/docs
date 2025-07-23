@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataAssemblyEmit::DefineManifestResource"
-helpviewer_keywords:
-  - "DefineManifestResource method [.NET Framework metadata]"
   - "IMetaDataAssemblyEmit::DefineManifestResource method [.NET Framework metadata]"
 topic_type:
   - "apiref"

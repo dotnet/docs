@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataInfo::GetFileMapping"
-helpviewer_keywords:
-  - "IMetaDataInfo::GetFileMapping method [.NET Framework metadata]"
   - "GetFileMapping method [.NET Framework metadata]"
 topic_type:
   - "apiref"
@@ -39,7 +37,7 @@ HRESULT GetFileMapping (
  [out] The size of the mapped region. If `pdwMappingType` is `fmFlat`, this is the size of the file.
 
  `pdwMappingType`
- [out] A [CorFileMapping](../../../framework/unmanaged-api/metadata/corfilemapping-enumeration.md) value that indicates the type of mapping. The current implementation of the common language runtime (CLR) always returns `fmFlat`. Other values are reserved for future use. However, you should always verify the returned value, because other values may be enabled in future versions or service releases.
+ [out] A [CorFileMapping](./corfilemapping-enumeration.md) value that indicates the type of mapping. The current implementation of the common language runtime (CLR) always returns `fmFlat`. Other values are reserved for future use. However, you should always verify the returned value, because other values may be enabled in future versions or service releases.
 
 ## Return Value
 
@@ -72,4 +70,4 @@ HRESULT GetFileMapping (
 ## See also
 
 - [IMetaDataInfo Interface](imetadatainfo-interface.md)
-- [CorFileMapping Enumeration](../../../framework/unmanaged-api/metadata/corfilemapping-enumeration.md)
+- [CorFileMapping Enumeration](./corfilemapping-enumeration.md)

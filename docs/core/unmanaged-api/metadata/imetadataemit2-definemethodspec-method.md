@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataEmit2::DefineMethodSpec"
-helpviewer_keywords:
-  - "DefineMethodSpec method [.NET Framework metadata]"
   - "IMetaDataEmit2::DefineMethodSpec method [.NET Framework metadata]"
 topic_type:
   - "apiref"

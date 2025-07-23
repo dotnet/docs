@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataEmit::DefineNestedType"
-helpviewer_keywords:
-  - "IMetaDataEmit::DefineNestedType method [.NET Framework metadata]"
   - "DefineNestedType method [.NET Framework metadata]"
 topic_type:
   - "apiref"

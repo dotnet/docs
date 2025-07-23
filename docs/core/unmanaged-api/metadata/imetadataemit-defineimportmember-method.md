@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataEmit::DefineImportMember"
-helpviewer_keywords:
-  - "DefineImportMember method [.NET Framework metadata]"
   - "IMetaDataEmit::DefineImportMember method [.NET Framework metadata]"
 topic_type:
   - "apiref"

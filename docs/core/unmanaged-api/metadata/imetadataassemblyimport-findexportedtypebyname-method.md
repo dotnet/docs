@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataAssemblyImport::FindExportedTypeByName"
-helpviewer_keywords:
-  - "FindExportedTypeByName method [.NET Framework metadata]"
   - "IMetaDataAssemblyImport::FindExportedTypeByName method [.NET Framework metadata]"
 topic_type:
   - "apiref"

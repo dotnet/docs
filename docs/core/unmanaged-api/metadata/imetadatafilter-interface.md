@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataFilter"
-helpviewer_keywords:
-  - "IMetaDataFilter interface [.NET Framework metadata]"
 topic_type:
   - "apiref"
 ---

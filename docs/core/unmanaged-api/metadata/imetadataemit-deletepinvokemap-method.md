@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataEmit::DeletePinvokeMap"
-helpviewer_keywords:
-  - "IMetaDataEmit::DeletePinvokeMap method [.NET Framework metadata]"
   - "DeletePinvokeMap method [.NET Framework metadata]"
 topic_type:
   - "apiref"

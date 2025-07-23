@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataEmit2::SetGenericParamProps"
-helpviewer_keywords:
-  - "IMetaDataEmit2::SetGenericParamProps method [.NET Framework metadata]"
   - "SetGenericParamProps method [.NET Framework metadata]"
 topic_type:
   - "apiref"
@@ -38,7 +36,7 @@ HRESULT SetGenericParamProps (
  [in] The token for the generic parameter definition for which to set values.
 
  `dwParamFlags`
- [in] A value of the [CorGenericParamAttr](../../../framework/unmanaged-api/metadata/corgenericparamattr-enumeration.md) enumeration that describes the type for the generic parameter.
+ [in] A value of the [CorGenericParamAttr](./corgenericparamattr-enumeration.md) enumeration that describes the type for the generic parameter.
 
  `szName`
  [in] Optional. The name of the parameter for which to set values.

@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataImport::FindTypeDefByName"
-helpviewer_keywords:
-  - "FindTypeDefByName method [.NET Framework metadata]"
   - "IMetaDataImport::FindTypeDefByName method [.NET Framework metadata]"
 topic_type:
   - "apiref"

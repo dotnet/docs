@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataAssemblyImport::EnumExportedTypes"
-helpviewer_keywords:
-  - "EnumExportedTypes method [.NET Framework metadata]"
   - "IMetaDataAssemblyImport::EnumExportedTypes method [.NET Framework metadata]"
 topic_type:
   - "apiref"

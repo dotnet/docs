@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataImport::EnumUnresolvedMethods"
-helpviewer_keywords:
-  - "EnumUnresolvedMethods method [.NET Framework metadata]"
   - "IMetaDataImport::EnumUnresolvedMethods method [.NET Framework metadata]"
 topic_type:
   - "apiref"

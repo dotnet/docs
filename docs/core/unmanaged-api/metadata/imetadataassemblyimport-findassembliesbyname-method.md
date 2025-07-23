@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataAssemblyImport::FindAssembliesByName"
-helpviewer_keywords:
-  - "FindAssembliesByName method [.NET Framework metadata]"
   - "IMetaDataAssemblyImport::FindAssembliesByName method [.NET Framework metadata]"
 topic_type:
   - "apiref"

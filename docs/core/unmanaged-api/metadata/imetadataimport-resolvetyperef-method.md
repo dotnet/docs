@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataImport::ResolveTypeRef"
-helpviewer_keywords:
-  - "ResolveTypeRef method [.NET Framework metadata]"
   - "IMetaDataImport::ResolveTypeRef method [.NET Framework metadata]"
 topic_type:
   - "apiref"

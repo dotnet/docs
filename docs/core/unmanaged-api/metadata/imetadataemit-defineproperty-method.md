@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataEmit::DefineProperty"
-helpviewer_keywords:
-  - "IMetaDataEmit::DefineProperty method [.NET Framework metadata]"
   - "DefineProperty method [.NET Framework metadata]"
 topic_type:
   - "apiref"

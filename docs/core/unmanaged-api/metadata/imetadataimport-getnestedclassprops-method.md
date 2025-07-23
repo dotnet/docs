@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataImport::GetNestedClassProps"
-helpviewer_keywords:
-  - "GetNestedClassProps method [.NET Framework metadata]"
   - "IMetaDataImport::GetNestedClassProps method [.NET Framework metadata]"
 topic_type:
   - "apiref"

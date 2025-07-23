@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataEmit::SetCustomAttributeValue"
-helpviewer_keywords:
-  - "SetCustomAttributeValue method [.NET Framework metadata]"
   - "IMetaDataEmit::SetCustomAttributeValue method [.NET Framework metadata]"
 topic_type:
   - "apiref"

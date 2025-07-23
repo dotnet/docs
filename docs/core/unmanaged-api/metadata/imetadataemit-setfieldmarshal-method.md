@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataEmit::SetFieldMarshal"
-helpviewer_keywords:
-  - "SetFieldMarshal method [.NET Framework metadata]"
   - "IMetaDataEmit::SetFieldMarshal method [.NET Framework metadata]"
 topic_type:
   - "apiref"

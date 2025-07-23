@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataEmit::DefineUserString"
-helpviewer_keywords:
-  - "DefineUserString method [.NET Framework metadata]"
   - "IMetaDataEmit::DefineUserString method [.NET Framework metadata]"
 topic_type:
   - "apiref"

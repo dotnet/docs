@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataImport::GetModuleRefProps"
-helpviewer_keywords:
-  - "GetModuleRefProps method [.NET Framework metadata]"
   - "IMetaDataImport::GetModuleRefProps method [.NET Framework metadata]"
 topic_type:
   - "apiref"

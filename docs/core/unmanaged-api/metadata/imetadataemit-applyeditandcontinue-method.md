@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataEmit::ApplyEditAndContinue"
-helpviewer_keywords:
-  - "ApplyEditAndContinue method [.NET Framework metadata]"
   - "IMetaDataEmit::ApplyEditAndContinue method [.NET Framework metadata]"
 topic_type:
   - "apiref"

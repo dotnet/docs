@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataImport::GetScopeProps"
-helpviewer_keywords:
-  - "IMetaDataImport::GetScopeProps method [.NET Framework metadata]"
   - "GetScopeProps method [.NET Framework metadata]"
 topic_type:
   - "apiref"

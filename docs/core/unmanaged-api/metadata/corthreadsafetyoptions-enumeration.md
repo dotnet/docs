@@ -10,9 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "CorThreadSafetyOptions"
-helpviewer_keywords:
-  - "CorThreadSafetyOptions enumeration [.NET Framework metadata]"
-ms.assetid: dae07d9b-df51-488c-b17e-52d6e48217bd
 topic_type:
   - "apiref"
 ---
@@ -45,7 +42,7 @@ typedef enum CorThreadSafetyOptions {
 
 **Header:** CorHdr.h
 
-**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+**.NET versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
 
 ## See also
 

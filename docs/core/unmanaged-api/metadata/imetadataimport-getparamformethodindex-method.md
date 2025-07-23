@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataImport::GetParamForMethodIndex"
-helpviewer_keywords:
-  - "IMetaDataImport::GetParamForMethodIndex method [.NET Framework metadata]"
   - "GetParamForMethodIndex method [.NET Framework metadata]"
 topic_type:
   - "apiref"

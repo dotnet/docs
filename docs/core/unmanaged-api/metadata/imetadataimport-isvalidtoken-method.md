@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataImport::IsValidToken"
-helpviewer_keywords:
-  - "IMetaDataImport::IsValidToken method [.NET Framework metadata]"
   - "IsValidToken method [.NET Framework metadata]"
 topic_type:
   - "apiref"

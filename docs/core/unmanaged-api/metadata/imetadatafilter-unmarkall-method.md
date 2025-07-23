@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataFilter::UnmarkAll"
-helpviewer_keywords:
-  - "IMetaDataFilter::UnmarkAll method [.NET Framework metadata]"
   - "UnmarkAll method [.NET Framework metadata]"
 topic_type:
   - "apiref"

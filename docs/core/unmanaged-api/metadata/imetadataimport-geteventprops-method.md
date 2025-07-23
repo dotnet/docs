@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataImport::GetEventProps"
-helpviewer_keywords:
-  - "IMetaDataImport::GetEventProps method [.NET Framework metadata]"
   - "GetEventProps method [.NET Framework metadata]"
 topic_type:
   - "apiref"

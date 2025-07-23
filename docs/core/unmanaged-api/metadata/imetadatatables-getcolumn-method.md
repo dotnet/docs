@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataTables::GetColumn"
-helpviewer_keywords:
-  - "IMetaDataTables::GetColumn method [.NET Framework metadata]"
   - "GetColumn method [.NET Framework metadata]"
 topic_type:
   - "apiref"
@@ -74,7 +72,7 @@ The interpretation of the value returned through `pVal` depends on the column's 
 
  **Library:** Used as a resource in MsCorEE.dll
 
- **.NET Framework Versions** Available since .NET Framework 2.0
+ **.NET versions** Available since .NET Framework 2.0
 
 ## See also
 

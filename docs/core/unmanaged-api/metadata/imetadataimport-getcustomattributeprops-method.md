@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataImport::GetCustomAttributeProps"
-helpviewer_keywords:
-  - "GetCustomAttributeProps method [.NET Framework metadata]"
   - "IMetaDataImport::GetCustomAttributeProps method [.NET Framework metadata]"
 topic_type:
   - "apiref"

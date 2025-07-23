@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataAssemblyImport::GetExportedTypeProps"
-helpviewer_keywords:
-  - "GetExportedTypeProps method [.NET Framework metadata]"
   - "IMetaDataAssemblyImport::GetExportedTypeProps method [.NET Framework metadata]"
 topic_type:
   - "apiref"
@@ -55,7 +53,7 @@ HRESULT GetExportedTypeProps (
  [out] A pointer to an `mdTypeDef` token that represents a type in the file.
 
  `pdwExportedTypeFlags`
- [out] A pointer to the flags that describe the metadata applied to the exported type. The flags value can be one or more [CorTypeAttr](../../../framework/unmanaged-api/metadata/cortypeattr-enumeration.md) values.
+ [out] A pointer to the flags that describe the metadata applied to the exported type. The flags value can be one or more [CorTypeAttr](./cortypeattr-enumeration.md) values.
 
 ## Requirements
 

@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataImport::FindMethod"
-helpviewer_keywords:
-  - "FindMethod method [.NET Framework metadata]"
   - "IMetaDataImport::FindMethod method [.NET Framework metadata]"
 topic_type:
   - "apiref"

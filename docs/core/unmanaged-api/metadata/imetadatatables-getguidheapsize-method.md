@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataTables::GetGuidHeapSize"
-helpviewer_keywords:
-  - "GetGuidHeapSize method [.NET Framework metadata]"
   - "IMetaDataTables::GetGuidHeapSize method [.NET Framework metadata]"
 topic_type:
   - "apiref"

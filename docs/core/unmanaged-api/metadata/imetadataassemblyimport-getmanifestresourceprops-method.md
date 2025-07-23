@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataAssemblyImport::GetManifestResourceProps"
-helpviewer_keywords:
-  - "GetManifestResourceProps method [.NET Framework metadata]"
   - "IMetaDataAssemblyImport::GetManifestResourceProps method [.NET Framework metadata]"
 topic_type:
   - "apiref"
@@ -55,7 +53,7 @@ HRESULT GetManifestResourceProps (
  [out] A pointer to a value that specifies the offset to the beginning of the resource within the file.
 
  `pdwResourceFlags`
- [out] A pointer to flags that describe the metadata applied to a resource. The flags value is a combination of one or more [CorManifestResourceFlags](../../../framework/unmanaged-api/metadata/cormanifestresourceflags-enumeration.md) values.
+ [out] A pointer to flags that describe the metadata applied to a resource. The flags value is a combination of one or more [CorManifestResourceFlags](./cormanifestresourceflags-enumeration.md) values.
 
 ## Requirements
 

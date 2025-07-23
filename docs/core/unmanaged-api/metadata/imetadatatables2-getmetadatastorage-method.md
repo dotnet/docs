@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataTables2::GetMetaDataStorage"
-helpviewer_keywords:
-  - "GetMetaDataStorage method [.NET Framework metadata]"
   - "IMetaDataTables2::GetMetaDataStorage method [.NET Framework metadata]"
 topic_type:
   - "apiref"

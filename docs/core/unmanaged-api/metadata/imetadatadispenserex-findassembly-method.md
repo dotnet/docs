@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataDispenserEx::FindAssembly"
-helpviewer_keywords:
-  - "FindAssembly method [.NET Framework metadata]"
   - "IMetaDataDispenserEx::FindAssembly method [.NET Framework metadata]"
 topic_type:
   - "apiref"

@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataImport::EnumFieldsWithName"
-helpviewer_keywords:
-  - "IMetaDataImport::EnumFieldsWithName method [.NET Framework metadata]"
   - "EnumFieldsWithName method [.NET Framework metadata]"
 topic_type:
   - "apiref"

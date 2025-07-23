@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataImport::GetRVA"
-helpviewer_keywords:
-  - "GetRVA method [.NET Framework metadata]"
   - "IMetaDataImport::GetRVA method [.NET Framework metadata]"
 topic_type:
   - "apiref"
@@ -39,7 +37,7 @@ HRESULT GetRVA (
  [out] A pointer to the relative virtual address of the code object represented by the token.
 
  `pdwImplFlags`
- [out] A pointer to the implementation flags for the method. This value is a bitmask from the [CorMethodImpl](../../../framework/unmanaged-api/metadata/cormethodimpl-enumeration.md) enumeration. The value of `pdwImplFlags` is valid only if `tk` is a MethodDef token.
+ [out] A pointer to the implementation flags for the method. This value is a bitmask from the [CorMethodImpl](./cormethodimpl-enumeration.md) enumeration. The value of `pdwImplFlags` is valid only if `tk` is a MethodDef token.
 
 ## Requirements
 

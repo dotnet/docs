@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataImport::GetTypeRefProps"
-helpviewer_keywords:
-  - "IMetaDataImport::GetTypeRefProps method [.NET Framework metadata]"
   - "GetTypeRefProps method [.NET Framework metadata]"
 topic_type:
   - "apiref"

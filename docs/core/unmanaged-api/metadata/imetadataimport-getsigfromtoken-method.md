@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataImport::GetSigFromToken"
-helpviewer_keywords:
-  - "IMetaDataImport::GetSigFromToken method [.NET Framework metadata]"
   - "GetSigFromToken method [.NET Framework metadata]"
 topic_type:
   - "apiref"

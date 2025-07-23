@@ -50,7 +50,7 @@ The profiling API is used by a profiler DLL, which is loaded into the same proce
 
 The following illustration shows how the profiler DLL interacts with the application that is being profiled and the CLR.
 
-![Screenshot that shows the profiling architecture.](../metadata/media/profiling-overview/profiling-architecture.png)
+![Screenshot that shows the profiling architecture.](./media/profiling-overview/profiling-architecture.png)
 
 ### The Notification Interfaces
 

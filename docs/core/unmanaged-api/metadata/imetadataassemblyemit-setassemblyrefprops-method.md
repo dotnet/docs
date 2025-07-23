@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataAssemblyEmit::SetAssemblyRefProps"
-helpviewer_keywords:
-  - "SetAssemblyRefProps method [.NET Framework metadata]"
   - "IMetaDataAssemblyEmit::SetAssemblyRefProps method [.NET Framework metadata]"
 topic_type:
   - "apiref"
@@ -59,7 +57,7 @@ HRESULT SetAssemblyRefProps (
  [in] The size in bytes of `pbHashValue`.
 
  `dwAssemblyRefFlags`
- [in] A bitwise combination of [AssemblyRefFlags](../../../framework/unmanaged-api/metadata/assemblyrefflags-enumeration.md) values that specify attributes of the referenced assembly.
+ [in] A bitwise combination of [AssemblyRefFlags](./assemblyrefflags-enumeration.md) values that specify attributes of the referenced assembly.
 
 ## Remarks
 

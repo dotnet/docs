@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataImport2::GetMethodSpecProps"
-helpviewer_keywords:
-  - "GetMethodSpecProps method [.NET Framework metadata]"
   - "IMetaDataImport2::GetMethodSpecProps method [.NET Framework metadata]"
 topic_type:
   - "apiref"

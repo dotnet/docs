@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataTables::GetBlobHeapSize"
-helpviewer_keywords:
-  - "GetBlobHeapSize method [.NET Framework metadata]"
   - "IMetaDataTables::GetBlobHeapSize method [.NET Framework metadata]"
 topic_type:
   - "apiref"

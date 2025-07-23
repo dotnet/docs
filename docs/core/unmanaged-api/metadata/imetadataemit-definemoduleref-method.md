@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataEmit::DefineModuleRef"
-helpviewer_keywords:
-  - "DefineModuleRef method [.NET Framework metadata]"
   - "IMetaDataEmit::DefineModuleRef method [.NET Framework metadata]"
 topic_type:
   - "apiref"

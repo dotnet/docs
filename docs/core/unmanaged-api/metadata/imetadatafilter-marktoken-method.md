@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataFilter::MarkToken"
-helpviewer_keywords:
-  - "IMetaDataFilter::MarkToken method [.NET Framework metadata]"
   - "MarkToken method, IMetaDataFilter interface [.NET Framework metadata]"
 topic_type:
   - "apiref"

@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataValidate"
-helpviewer_keywords:
-  - "IMetaDataValidate interface [.NET Framework metadata]"
 topic_type:
   - "apiref"
 ---

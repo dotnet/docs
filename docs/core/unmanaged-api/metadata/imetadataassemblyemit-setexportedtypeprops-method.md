@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataAssemblyEmit::SetExportedTypeProps"
-helpviewer_keywords:
-  - "SetExportedTypeProps method [.NET Framework metadata]"
   - "IMetaDataAssemblyEmit::SetExportedTypeProps method [.NET Framework metadata]"
 topic_type:
   - "apiref"

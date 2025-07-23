@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataImport::GetParamProps"
-helpviewer_keywords:
-  - "IMetaDataImport::GetParamProps method [.NET Framework metadata]"
   - "GetParamProps method [.NET Framework metadata]"
 topic_type:
   - "apiref"

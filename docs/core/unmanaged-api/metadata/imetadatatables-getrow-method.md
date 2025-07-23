@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataTables::GetRow"
-helpviewer_keywords:
-  - "IMetaDataTables::GetRow method [.NET Framework metadata]"
   - "GetRow method [.NET Framework metadata]"
 topic_type:
   - "apiref"
@@ -53,7 +51,7 @@ HRESULT GetRow (
 
  **Library:** Used as a resource in MsCorEE.dll
 
- **.NET Framework Versions**  Available since .NET Framework 1.0
+ **.NET versions**  Available since .NET Framework 1.0
 
 ## See also
 

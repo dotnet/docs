@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataImport2::GetVersionString"
-helpviewer_keywords:
-  - "GetVersionString method, IMetaDataImport2 interface [.NET Framework metadata]"
   - "IMetaDataImport2::GetVersionString method [.NET Framework metadata]"
 topic_type:
   - "apiref"

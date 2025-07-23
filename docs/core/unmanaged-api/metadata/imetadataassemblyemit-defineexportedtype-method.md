@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataAssemblyEmit::DefineExportedType"
-helpviewer_keywords:
-  - "IMetaDataAssemblyEmit::DefineExportedType method [.NET Framework metadata]"
   - "DefineExportedType method [.NET Framework metadata]"
 topic_type:
   - "apiref"
@@ -52,7 +50,7 @@ HRESULT DefineExportedType (
  [in] A token to the metadata that specifies the type to be exported. This value is entered in the `TypeDef` table in the file that implements the type and is relevant only if that file is in this assembly.
 
  `dwExportedTypeFlags`
- [in] A bitwise combination of [CorTypeAttr](../../../framework/unmanaged-api/metadata/cortypeattr-enumeration.md) enumeration values that define the property settings for the exported type.
+ [in] A bitwise combination of [CorTypeAttr](./cortypeattr-enumeration.md) enumeration values that define the property settings for the exported type.
 
  `pmdct`
  [out] A pointer to the returned metadata token that indicates the exported type.

@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataAssemblyImport::CloseEnum"
-helpviewer_keywords:
-  - "CloseEnum method, IMetaDataAssemblyImport interface [.NET Framework metadata]"
   - "IMetaDataAssemblyImport::CloseEnum method [.NET Framework metadata]"
 topic_type:
   - "apiref"

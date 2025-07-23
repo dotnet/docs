@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataEmit::SetPinvokeMap"
-helpviewer_keywords:
-  - "IMetaDataEmit::SetPinvokeMap method [.NET Framework metadata]"
   - "SetPinvokeMap method [.NET Framework metadata]"
 topic_type:
   - "apiref"

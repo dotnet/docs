@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataTables::GetUserStringHeapSize"
-helpviewer_keywords:
-  - "IMetaDataTables::GetUserStringHeapSize method [.NET Framework metadata]"
   - "GetUserStringHeapSize method [.NET Framework metadata]"
 topic_type:
   - "apiref"

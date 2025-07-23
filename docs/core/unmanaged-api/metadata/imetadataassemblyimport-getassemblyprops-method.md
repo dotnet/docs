@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataAssemblyImport::GetAssemblyProps"
-helpviewer_keywords:
-  - "GetAssemblyProps method [.NET Framework metadata]"
   - "IMetaDataAssemblyImport::GetAssemblyProps method [.NET Framework metadata]"
 topic_type:
   - "apiref"
@@ -63,7 +61,7 @@ HRESULT GetAssemblyProps (
  [out] A pointer to an ASSEMBLYMETADATA structure that contains the assembly metadata.
 
  `pdwAssemblyFlags`
- [out] Flags that describe the metadata applied to an assembly. This value is a combination of one or more [CorAssemblyFlags](../../../framework/unmanaged-api/metadata/corassemblyflags-enumeration.md) values.
+ [out] Flags that describe the metadata applied to an assembly. This value is a combination of one or more [CorAssemblyFlags](./corassemblyflags-enumeration.md) values.
 
 ## Requirements
 

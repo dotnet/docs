@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataDispenser::DefineScope"
-helpviewer_keywords:
-  - "DefineScope method [.NET Framework metadata]"
   - "IMetaDataDispenser::DefineScope method [.NET Framework metadata]"
 topic_type:
   - "apiref"

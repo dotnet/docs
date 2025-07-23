@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataEmit::DefineImportType"
-helpviewer_keywords:
-  - "DefineImportType method [.NET Framework metadata]"
   - "IMetaDataEmit::DefineImportType method [.NET Framework metadata]"
 topic_type:
   - "apiref"

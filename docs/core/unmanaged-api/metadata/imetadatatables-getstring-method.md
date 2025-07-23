@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataTables::GetString"
-helpviewer_keywords:
-  - "IMetaDataTables::GetString method [.NET Framework metadata]"
   - "GetString method, IMetaDataTables interface [.NET Framework metadata]"
 topic_type:
   - "apiref"

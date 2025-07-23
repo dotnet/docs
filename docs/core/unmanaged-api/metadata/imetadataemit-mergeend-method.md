@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataEmit::MergeEnd"
-helpviewer_keywords:
-  - "MergeEnd method [.NET Framework metadata]"
   - "IMetaDataEmit::MergeEnd method [.NET Framework metadata]"
 topic_type:
   - "apiref"
@@ -44,7 +42,7 @@ The following special conditions apply to the merge:
 
 - For type definitions (`TypeDef`), no duplicates are merged into the current scope. `TypeDef` objects are checked for duplicates against each *fully-qualified object name* + *GUID* + *version number*. If there is a match on either name or GUID, and any of the other two elements is different, an error is raised. Otherwise, if all three items match, `MergeEnd` does a cursory check to ensure the entries are indeed duplicates; if not, an error is raised. This cursory check looks for:
 
-  - The same member declarations, occurring in the same order. Members that are flagged as `mdPrivateScope` (see the [CorMethodAttr](../../../framework/unmanaged-api/metadata/cormethodattr-enumeration.md) enumeration) are not included in this check; they are merged specially.
+  - The same member declarations, occurring in the same order. Members that are flagged as `mdPrivateScope` (see the [CorMethodAttr](./cormethodattr-enumeration.md) enumeration) are not included in this check; they are merged specially.
 
   - The same class layout.
 

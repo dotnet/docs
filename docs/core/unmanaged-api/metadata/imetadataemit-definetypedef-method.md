@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataEmit::DefineTypeDef"
-helpviewer_keywords:
-  - "IMetaDataEmit::DefineTypeDef method [.NET Framework metadata]"
   - "DefineTypeDef method [.NET Framework metadata]"
 topic_type:
   - "apiref"

@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataEmit::SetRVA"
-helpviewer_keywords:
-  - "IMetaDataEmit::SetRVA method [.NET Framework metadata]"
   - "SetRVA method [.NET Framework metadata]"
 topic_type:
   - "apiref"

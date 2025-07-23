@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataImport::EnumCustomAttributes"
-helpviewer_keywords:
-  - "EnumCustomAttributes method [.NET Framework metadata]"
   - "IMetaDataImport::EnumCustomAttributes method [.NET Framework metadata]"
 topic_type:
   - "apiref"

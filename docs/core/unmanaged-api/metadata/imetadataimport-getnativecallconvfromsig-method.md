@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataImport::GetNativeCallConvFromSig"
-helpviewer_keywords:
-  - "GetNativeCallConvFromSig method [.NET Framework metadata]"
   - "IMetaDataImport::GetNativeCallConvFromSig method [.NET Framework metadata]"
 topic_type:
   - "apiref"

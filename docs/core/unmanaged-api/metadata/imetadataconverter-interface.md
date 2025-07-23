@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataConverter"
-helpviewer_keywords:
-  - "IMetaDataConverter interface [.NET Framework metadata]"
 topic_type:
   - "apiref"
 ---

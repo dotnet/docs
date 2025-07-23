@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataEmit::DefineEvent"
-helpviewer_keywords:
-  - "IMetaDataEmit::DefineEvent method [.NET Framework metadata]"
   - "DefineEvent method [.NET Framework metadata]"
 topic_type:
   - "apiref"

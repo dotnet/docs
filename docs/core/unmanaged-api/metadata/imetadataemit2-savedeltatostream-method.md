@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataEmit2::SaveDeltaToStream"
-helpviewer_keywords:
-  - "IMetaDataEmit2::SaveDeltaToStream method [.NET Framework metadata]"
   - "SaveDeltaToStream method [.NET Framework metadata]"
 topic_type:
   - "apiref"

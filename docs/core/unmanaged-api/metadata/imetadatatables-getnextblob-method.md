@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataTables::GetNextBlob"
-helpviewer_keywords:
-  - "IMetaDataTables::GetNextBlob method [.NET Framework metadata]"
   - "GetNextBlob method [.NET Framework metadata]"
 topic_type:
   - "apiref"

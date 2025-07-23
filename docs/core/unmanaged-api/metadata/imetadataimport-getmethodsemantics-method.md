@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataImport::GetMethodSemantics"
-helpviewer_keywords:
-  - "GetMethodSemantics method [.NET Framework metadata]"
   - "IMetaDataImport::GetMethodSemantics method [.NET Framework metadata]"
 topic_type:
   - "apiref"
@@ -39,7 +37,7 @@ HRESULT GetMethodSemantics (
  [in] A token representing the paired property and event for which to get the method's role.
 
  `pdwSemanticsFlags`
- [out] A pointer to the associated semantics flags. This value is a bitmask from the [CorMethodSemanticsAttr](../../../framework/unmanaged-api/metadata/cormethodsemanticsattr-enumeration.md) enumeration.
+ [out] A pointer to the associated semantics flags. This value is a bitmask from the [CorMethodSemanticsAttr](./cormethodsemanticsattr-enumeration.md) enumeration.
 
 ## Remarks
 

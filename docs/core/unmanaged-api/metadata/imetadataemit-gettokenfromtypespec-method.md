@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataEmit::GetTokenFromTypeSpec"
-helpviewer_keywords:
-  - "GetTokenFromTypeSpec method [.NET Framework metadata]"
   - "IMetaDataEmit::GetTokenFromTypeSpec method [.NET Framework metadata]"
 topic_type:
   - "apiref"

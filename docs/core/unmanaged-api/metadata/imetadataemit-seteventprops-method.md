@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataEmit::SetEventProps"
-helpviewer_keywords:
-  - "IMetaDataEmit::SetEventProps method [.NET Framework metadata]"
   - "SetEventProps method [.NET Framework metadata]"
 topic_type:
   - "apiref"

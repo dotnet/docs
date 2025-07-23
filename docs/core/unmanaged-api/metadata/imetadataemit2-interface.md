@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataEmit2"
-helpviewer_keywords:
-  - "IMetaDataEmit2 interface [.NET Framework metadata]"
 topic_type:
   - "apiref"
 ---

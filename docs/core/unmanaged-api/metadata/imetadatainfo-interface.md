@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataInfo"
-helpviewer_keywords:
-  - "IMetaDataInfo interface [.NET Framework metadata]"
 topic_type:
   - "apiref"
 ---
@@ -38,4 +36,4 @@ Provides a method that gets information about the mapping of metadata from an on
 ## See also
 
 - [IMetadata interfaces](imetadata-interfaces.md)
-- [CorFileMapping Enumeration](../../../framework/unmanaged-api/metadata/corfilemapping-enumeration.md)
+- [CorFileMapping Enumeration](./corfilemapping-enumeration.md)

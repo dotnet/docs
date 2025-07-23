@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataTables::GetTableInfo"
-helpviewer_keywords:
-  - "IMetaDataTables::GetTableInfo method [.NET Framework metadata]"
   - "GetTableInfo method [.NET Framework metadata]"
 topic_type:
   - "apiref"

@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataTables::GetUserString"
-helpviewer_keywords:
-  - "IMetaDataTables::GetUserString method [.NET Framework metadata]"
   - "GetUserString method, IMetaDataTables interface [.NET Framework metadata]"
 topic_type:
   - "apiref"

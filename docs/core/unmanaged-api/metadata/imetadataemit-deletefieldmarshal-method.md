@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataEmit::DeleteFieldMarshal"
-helpviewer_keywords:
-  - "IMetaDataEmit::DeleteFieldMarshal method [.NET Framework metadata]"
   - "DeleteFieldMarshal method [.NET Framework metadata]"
 topic_type:
   - "apiref"

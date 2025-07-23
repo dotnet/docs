@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataConverter::GetTypeLibFromMetaData"
-helpviewer_keywords:
-  - "GetTypeLibFromMetaData method [.NET Framework metadata]"
   - "IMetaDataConverter::GetTypeLibFromMetaData method [.NET Framework metadata]"
 topic_type:
   - "apiref"

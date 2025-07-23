@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataError::OnError"
-helpviewer_keywords:
-  - "IMetaDataError::OnError method [.NET Framework metadata]"
   - "OnError method, IMetaDataError interface [.NET Framework metadata]"
 topic_type:
   - "apiref"

@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataEmit::Save"
-helpviewer_keywords:
-  - "Save method, IMetaDataEmit interface [.NET Framework metadata]"
   - "IMetaDataEmit::Save method [.NET Framework metadata]"
 topic_type:
   - "apiref"

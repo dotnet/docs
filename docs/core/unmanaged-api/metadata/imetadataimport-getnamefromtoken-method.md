@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataImport::GetNameFromToken"
-helpviewer_keywords:
-  - "GetNameFromToken method [.NET Framework metadata]"
   - "IMetaDataImport::GetNameFromToken method [.NET Framework metadata]"
 topic_type:
   - "apiref"

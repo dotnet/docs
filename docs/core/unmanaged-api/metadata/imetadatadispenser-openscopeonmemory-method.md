@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataDispenser::OpenScopeOnMemory"
-helpviewer_keywords:
-  - "OpenScopeOnMemory method [.NET Framework metadata]"
   - "IMetaDataDispenser::OpenScopeOnMemory method [.NET Framework metadata]"
 topic_type:
   - "apiref"
@@ -41,7 +39,7 @@ HRESULT OpenScopeOnMemory (
  [in] The size of the memory area, in bytes.
 
  `dwOpenFlags`
- [in] A value of the [CorOpenFlags](../../../framework/unmanaged-api/metadata/coropenflags-enumeration.md) enumeration to specify the mode (read, write, and so on) for opening.
+ [in] A value of the [CorOpenFlags](./coropenflags-enumeration.md) enumeration to specify the mode (read, write, and so on) for opening.
 
  `riid`
  [in] The IID of the desired metadata interface to be returned; the caller will use the interface to import (read) or emit (write) metadata.

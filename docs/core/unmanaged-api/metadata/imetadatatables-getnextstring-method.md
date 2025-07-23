@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataTables::GetNextString"
-helpviewer_keywords:
-  - "IMetaDataTables::GetNextString method [.NET Framework metadata]"
   - "GetNextString method [.NET Framework metadata]"
 topic_type:
   - "apiref"

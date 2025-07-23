@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataImport::GetModuleFromScope"
-helpviewer_keywords:
-  - "GetModuleFromScope method [.NET Framework metadata]"
   - "IMetaDataImport::GetModuleFromScope method [.NET Framework metadata]"
 topic_type:
   - "apiref"

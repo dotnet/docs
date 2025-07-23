@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataImport2::EnumGenericParams"
-helpviewer_keywords:
-  - "EnumGenericParams method [.NET Framework metadata]"
   - "IMetaDataImport2::EnumGenericParams method [.NET Framework metadata]"
 topic_type:
   - "apiref"

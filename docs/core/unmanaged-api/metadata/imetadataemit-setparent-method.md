@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataEmit::SetParent"
-helpviewer_keywords:
-  - "SetParent method [.NET Framework metadata]"
   - "IMetaDataEmit::SetParent method [.NET Framework metadata]"
 topic_type:
   - "apiref"

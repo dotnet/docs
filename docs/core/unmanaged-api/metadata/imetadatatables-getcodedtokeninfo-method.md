@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataTables::GetCodedTokenInfo"
-helpviewer_keywords:
-  - "GetCodedTokenInfo method [.NET Framework metadata]"
   - "IMetaDataTables::GetCodedTokenInfo method [.NET Framework metadata]"
 topic_type:
   - "apiref"

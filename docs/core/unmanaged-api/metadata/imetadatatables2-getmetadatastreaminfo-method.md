@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataTables2::GetMetaDataStreamInfo"
-helpviewer_keywords:
-  - "GetMetaDataStreamInfo method [.NET Framework metadata]"
   - "IMetaDataTables2::GetMetaDataStreamInfo method [.NET Framework metadata]"
 topic_type:
   - "apiref"

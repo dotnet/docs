@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataEmit::DefineSecurityAttributeSet"
-helpviewer_keywords:
-  - "IMetaDataEmit::DefineSecurityAttributeSet method [.NET Framework metadata]"
   - "DefineSecurityAttributeSet method [.NET Framework metadata]"
 topic_type:
   - "apiref"

@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataEmit::DefineParam"
-helpviewer_keywords:
-  - "IMetaDataEmit::DefineParam method [.NET Framework metadata]"
   - "DefineParam method [.NET Framework metadata]"
 topic_type:
   - "apiref"

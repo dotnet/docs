@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataEmit::SetTypeDefProps"
-helpviewer_keywords:
-  - "SetTypeDefProps method [.NET Framework metadata]"
   - "IMetaDataEmit::SetTypeDefProps method [.NET Framework metadata]"
 topic_type:
   - "apiref"

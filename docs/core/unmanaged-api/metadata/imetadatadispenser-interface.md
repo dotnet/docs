@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataDispenser"
-helpviewer_keywords:
-  - "IMetaDataDispenser interface [.NET Framework metadata]"
 topic_type:
   - "apiref"
 ---

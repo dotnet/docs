@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataTables::GetNumTables"
-helpviewer_keywords:
-  - "GetNumTables method [.NET Framework metadata]"
   - "IMetaDataTables::GetNumTables method [.NET Framework metadata]"
 topic_type:
   - "apiref"

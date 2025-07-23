@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataEmit::SetParamProps"
-helpviewer_keywords:
-  - "IMetaDataEmit::SetParamProps method [.NET Framework metadata]"
   - "SetParamProps method [.NET Framework metadata]"
 topic_type:
   - "apiref"

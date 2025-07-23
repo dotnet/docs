@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataAssemblyImport"
-helpviewer_keywords:
-  - "IMetaDataAssemblyImport interface [.NET Framework metadata]"
 topic_type:
   - "apiref"
 ---

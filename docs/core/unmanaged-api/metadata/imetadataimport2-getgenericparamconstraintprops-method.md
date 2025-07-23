@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataImport2::GetGenericParamConstraintProps"
-helpviewer_keywords:
-  - "IMetaDataImport2::GetGenericParamConstraintProps method [.NET Framework metadata]"
   - "GetGenericParamConstraintProps method [.NET Framework metadata]"
 topic_type:
   - "apiref"

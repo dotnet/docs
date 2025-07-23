@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataError"
-helpviewer_keywords:
-  - "IMetaDataError interface [.NET Framework metadata]"
 topic_type:
   - "apiref"
 ---

@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataEmit::TranslateSigWithScope"
-helpviewer_keywords:
-  - "TranslateSigWithScope method [.NET Framework metadata]"
   - "IMetaDataEmit::TranslateSigWithScope method [.NET Framework metadata]"
 topic_type:
   - "apiref"

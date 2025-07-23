@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataEmit::SetClassLayout"
-helpviewer_keywords:
-  - "IMetaDataEmit::SetClassLayout method [.NET Framework metadata]"
   - "SetClassLayout method [.NET Framework metadata]"
 topic_type:
   - "apiref"
@@ -40,7 +38,7 @@ HRESULT SetClassLayout (
  [in] The packing size: 1, 2, 4, 8 or 16 bytes. The packing size is the number of bytes between adjacent fields.
 
  `rFieldOffsets`
- [in] An array of [COR_FIELD_OFFSET](../../../framework/unmanaged-api/metadata/cor-field-offset-structure.md) structures, each of which specifies a field of the class and the field's offset within the class. Terminate the array with `mdTokenNil`.
+ [in] An array of [COR_FIELD_OFFSET](./cor-field-offset-structure.md) structures, each of which specifies a field of the class and the field's offset within the class. Terminate the array with `mdTokenNil`.
 
  `ulClassSize`
  [in] The size, in bytes, of the class.

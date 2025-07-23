@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataEmit::SetMethodImplFlags"
-helpviewer_keywords:
-  - "IMetaDataEmit::SetMethodImplFlags method [.NET Framework metadata]"
   - "SetMethodImpFlags method [.NET Framework metadata]"
 topic_type:
   - "apiref"
@@ -35,7 +33,7 @@ HRESULT SetMethodImplFlags (
  [in] The token for the method to be changed.
 
  `dwImplFlags`
- [in] A combination of the values of the [CorMethodImpl](../../../framework/unmanaged-api/metadata/cormethodimpl-enumeration.md) enumeration that specifies the method implementation features.
+ [in] A combination of the values of the [CorMethodImpl](./cormethodimpl-enumeration.md) enumeration that specifies the method implementation features.
 
 ## Requirements
 

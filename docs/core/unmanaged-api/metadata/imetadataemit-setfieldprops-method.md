@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataEmit::SetFieldProps"
-helpviewer_keywords:
-  - "IMetaDataEmit::SetFieldProps method [.NET Framework metadata]"
   - "SetFieldProps method [.NET Framework metadata]"
 topic_type:
   - "apiref"

@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataImport2::EnumMethodSpecs"
-helpviewer_keywords:
-  - "IMetaDataImport2::EnumMethodSpecs method [.NET Framework metadata]"
   - "EnumMethodSpecs method [.NET Framework metadata]"
 topic_type:
   - "apiref"

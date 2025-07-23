@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataValidate::ValidateMetaData"
-helpviewer_keywords:
-  - "IMetaDataValidate::ValidateMetaData method [.NET Framework metadata]"
   - "ValidateMetaData method [.NET Framework metadata]"
 topic_type:
   - "apiref"

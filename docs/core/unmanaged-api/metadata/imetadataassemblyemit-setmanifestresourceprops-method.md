@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataAssemblyEmit::SetManifestResourceProps"
-helpviewer_keywords:
-  - "SetManifestResourceProps method [.NET Framework metadata]"
   - "IMetaDataAssemblyEmit::SetManifestResourceProps method [.NET Framework metadata]"
 topic_type:
   - "apiref"

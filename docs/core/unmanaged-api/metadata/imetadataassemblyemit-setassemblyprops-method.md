@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataAssemblyEmit::SetAssemblyProps"
-helpviewer_keywords:
-  - "SetAssemblyProps method [.NET Framework metadata]"
   - "IMetaDataAssemblyEmit::SetAssemblyProps method [.NET Framework metadata]"
 topic_type:
   - "apiref"
@@ -55,7 +53,7 @@ HRESULT SetAssemblyProps (
  [in] A pointer to the ASSEMBLYMETADATA that contains version, platform, and locale information for the assembly.
 
  `dwAssemblyFlags`
- [in] A bitwise combination of [AssemblyFlags](../../../framework/unmanaged-api/metadata/assemblyflags-enumeration.md) values that specify various attributes of the assembly.
+ [in] A bitwise combination of [AssemblyFlags](./assemblyflags-enumeration.md) values that specify various attributes of the assembly.
 
 ## Remarks
 

@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataImport::GetPermissionSetProps"
-helpviewer_keywords:
-  - "GetPermissionSetProps method [.NET Framework metadata]"
   - "IMetaDataImport::GetPermissionSetProps method [.NET Framework metadata]"
 topic_type:
   - "apiref"

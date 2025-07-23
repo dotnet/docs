@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataEmit::DeleteToken"
-helpviewer_keywords:
-  - "DeleteToken method [.NET Framework metadata]"
   - "IMetaDataEmit::DeleteToken method [.NET Framework metadata]"
 topic_type:
   - "apiref"

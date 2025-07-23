@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataImport2::GetPEKind"
-helpviewer_keywords:
-  - "GetPEKind method [.NET Framework metadata]"
   - "IMetaDataImport2::GetPEKind method [.NET Framework metadata]"
 topic_type:
   - "apiref"
@@ -32,7 +30,7 @@ HRESULT GetPEKind (
 ## Parameters
 
  `pdwPEKind`
- [out] A pointer to a value of the [CorPEKind](../../../framework/unmanaged-api/metadata/corpekind-enumeration.md) enumeration that describes the PE file.
+ [out] A pointer to a value of the [CorPEKind](./corpekind-enumeration.md) enumeration that describes the PE file.
 
  `pdwMachine`
  [out] A pointer to a value that identifies the architecture of the machine. See the next section for possible values.
@@ -61,4 +59,4 @@ HRESULT GetPEKind (
 
 - [IMetaDataImport2 Interface](imetadataimport2-interface.md)
 - [IMetaDataImport Interface](imetadataimport-interface.md)
-- [CorPEKind Enumeration](../../../framework/unmanaged-api/metadata/corpekind-enumeration.md)
+- [CorPEKind Enumeration](./corpekind-enumeration.md)

@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataEmit::SaveToStream"
-helpviewer_keywords:
-  - "IMetaDataEmit::SaveToStream method [.NET Framework metadata]"
   - "SaveToStream method [.NET Framework metadata]"
 topic_type:
   - "apiref"

@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataImport::FindMemberRef"
-helpviewer_keywords:
-  - "IMetaDataImport::FindMemberRef method [.NET Framework metadata]"
   - "FindMemberRef method [.NET Framework metadata]"
 topic_type:
   - "apiref"

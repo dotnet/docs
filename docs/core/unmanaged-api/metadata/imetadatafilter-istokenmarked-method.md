@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataFilter::IsTokenMarked"
-helpviewer_keywords:
-  - "IMetaDataFilter::IsTokenMarked method [.NET Framework metadata]"
   - "IsTokenMarked method [.NET Framework metadata]"
 topic_type:
   - "apiref"

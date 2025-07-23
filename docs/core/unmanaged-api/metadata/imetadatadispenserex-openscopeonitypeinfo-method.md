@@ -10,8 +10,6 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataDispenserEx::OpenScopeOnITypeInfo"
-helpviewer_keywords:
-  - "OpenScopeOnITypeInfo method [.NET Framework metadata]"
   - "IMetaDataDispenserEx::OpenScopeOnITypeInfo method [.NET Framework metadata]"
 topic_type:
   - "apiref"

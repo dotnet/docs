@@ -47,9 +47,51 @@ configuration:
           - description: Close learn template issues with empty descriptions. (spam)
             if:
               - payloadType: Issues
-              - bodyContains:
-                  pattern: '### Description[\n\r]+\[Enter feedback here\][\n\r]+###'
-                  isRegex: true
+              - or:
+                - bodyContains:
+                    pattern: '### Description[\n\r]+\[Enter feedback here\][\n\r]+###'
+                    isRegex: True
+                - bodyContains:
+                    pattern: '### Description[\n\r]+\[Escriba sus comentarios aquí\][\n\r]+###'
+                    isRegex: True
+                - bodyContains:
+                    pattern: '### Description[\n\r]+\[Tapez vos commentaires ici\][\n\r]+###'
+                    isRegex: True
+                - bodyContains:
+                    pattern: '### Description[\n\r]+\[Hier Feedback eingeben\][\n\r]+###'
+                    isRegex: true
+                - bodyContains:
+                    pattern: '### Description[\n\r]+\[Geri bildiriminizi buraya girin\][\n\r]+###'
+                    isRegex: True
+                - bodyContains:
+                    pattern: '### Description[\n\r]+\[Ketikkan umpan balik di sini\][\n\r]+###'
+                    isRegex: True
+                - bodyContains:
+                    pattern: '### Description[\n\r]+\[Immetti qui i commenti\][\n\r]+###'
+                    isRegex: True
+                - bodyContains:
+                    pattern: '### Description[\n\r]+\[Voer hier feedback in\][\n\r]+###'
+                    isRegex: True
+                - bodyContains:
+                    pattern: '### Description[\n\r]+\[Insira comentários aqui\][\n\r]+###'
+                    isRegex: True
+                - bodyContains:
+                    pattern: '### Description[\n\r]+\[Введите отзыв здесь\][\n\r]+###'
+                    isRegex: True
+                - bodyContains:
+                    pattern: '### Description[\n\r]+\[اكتب ملاحظاتك هنا\][\n\r]+###'
+                    isRegex: True
+                - bodyContains:
+                    pattern: '### Description[\n\r]+\[在此处输入反馈\][\n\r]+###'
+                    isRegex: True
+                - bodyContains:
+                    pattern: '### Description[\n\r]+\[여기에 피드백 입력\][\n\r]+###'
+                    isRegex: True
+                - bodyContains:
+                    pattern: '### Description[\n\r]+\[フィードバックをこちらに入力してください\][\n\r]+###'
+                    isRegex: True
+                - bodyContains:
+                    pattern: '### Description[\n\r]+\[Skriv din feedback här\][\n\r]+###'
             then:
               - addLabel: 'needs-more-info'
               - removeLabel: ':watch: Not Triaged'

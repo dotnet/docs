@@ -7,7 +7,7 @@ ms.date: 03/21/2022
 
 # Learn about any breaking changes in the C# compiler
 
-You can find breaking changes since the C# 10 release [here](~/_roslyn/docs/compilers/CSharp/Compiler%20Breaking%20Changes%20-%20DotNet%207.md).
+To find breaking changes since the C# 10 release, see [Breaking changes in Roslyn after .NET 6.0.100 through .NET 7.0.100](~/_roslyn/docs/compilers/CSharp/Compiler%20Breaking%20Changes%20-%20DotNet%207.md).
 
 The [Roslyn](https://github.com/dotnet/roslyn) team maintains a list of breaking changes in the C# and Visual Basic compilers. You can find information on those changes at these links on their GitHub repository:
 

@@ -85,7 +85,7 @@ Using field validation with data annotations, for example, you do not duplicate 
 - **Rachel Appel. Introduction to model validation in ASP.NET Core MVC** \
   [https://learn.microsoft.com/aspnet/core/mvc/models/validation](/aspnet/core/mvc/models/validation)
 
-- **Rick Anderson. Adding validation** \
+- **Add validation** \
   [https://learn.microsoft.com/aspnet/core/tutorials/first-mvc-app/validation](/aspnet/core/tutorials/first-mvc-app/validation)
 
 - **Martin Fowler. Replacing Throwing Exceptions with Notification in Validations** \

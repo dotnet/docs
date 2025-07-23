@@ -345,8 +345,8 @@ namespace csrefKeywordsModifiers
             var a = new A();
             var b = new B();
 
-            // Error CS1540, because x can only be accessed by
-            // classes derived from A.
+            // Error CS1540, because x can only be accessed through
+            // the derived class type, not through the base class type.
             // a.x = 10;
 
             // OK, because this class derives from A.

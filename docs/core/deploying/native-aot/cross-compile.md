@@ -9,7 +9,7 @@ ms.custom: linux-related-content
 
 # Cross-compilation
 
-Cross-compilation is a process of creating executable code for a platform other than the one on which the compiler is running. The platform difference might be a different OS or a different architecture. For instance, compiling for Windows from Linux, or for Arm64 from x64. On Linux, the difference can also be between the standard C library implementations - glibc (e.g. Ubuntu Linux) or musl (e.g. Alpine Linux).
+Cross-compilation is a process of creating executable code for a platform other than the one on which the compiler is running. The platform difference might be a different OS or a different architecture. For instance, compiling for Windows from Linux, or for Arm64 from x64. On Linux, the difference can also be between the standard C library implementations - glibc (for example, Ubuntu Linux) or musl (for example, Alpine Linux).
 
 Native AOT uses platform tools (linkers) to link platform libraries (static and dynamic) together with AOT-compiled managed code into the final executable file. The availability of cross-linkers and static/dynamic libraries for the target system limits the OS/architecture pairs that can cross-compile.
 

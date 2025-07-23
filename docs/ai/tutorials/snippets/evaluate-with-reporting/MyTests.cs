@@ -59,10 +59,11 @@ public sealed class MyTests
     // <SnippetGetEvaluators>
     private static IEnumerable<IEvaluator> GetEvaluators()
     {
-        IEvaluator rtcEvaluator = new RelevanceTruthAndCompletenessEvaluator();
+        IEvaluator relevanceEvaluator = new RelevanceEvaluator();
+        IEvaluator coherenceEvaluator = new CoherenceEvaluator();
         IEvaluator wordCountEvaluator = new WordCountEvaluator();
 
-        return [rtcEvaluator, wordCountEvaluator];
+        return [relevanceEvaluator, coherenceEvaluator, wordCountEvaluator];
     }
     // </SnippetGetEvaluators>
 
@@ -104,20 +105,15 @@ public sealed class MyTests
     {
         // Retrieve the score for relevance from the <see cref="EvaluationResult"/>.
         NumericMetric relevance =
-            result.Get<NumericMetric>(RelevanceTruthAndCompletenessEvaluator.RelevanceMetricName);
+            result.Get<NumericMetric>(RelevanceEvaluator.RelevanceMetricName);
         Assert.IsFalse(relevance.Interpretation!.Failed, relevance.Reason);
         Assert.IsTrue(relevance.Interpretation.Rating is EvaluationRating.Good or EvaluationRating.Exceptional);
 
-        // Retrieve the score for truth from the <see cref="EvaluationResult"/>.
-        NumericMetric truth = result.Get<NumericMetric>(RelevanceTruthAndCompletenessEvaluator.TruthMetricName);
-        Assert.IsFalse(truth.Interpretation!.Failed, truth.Reason);
-        Assert.IsTrue(truth.Interpretation.Rating is EvaluationRating.Good or EvaluationRating.Exceptional);
-
-        // Retrieve the score for completeness from the <see cref="EvaluationResult"/>.
-        NumericMetric completeness =
-            result.Get<NumericMetric>(RelevanceTruthAndCompletenessEvaluator.CompletenessMetricName);
-        Assert.IsFalse(completeness.Interpretation!.Failed, completeness.Reason);
-        Assert.IsTrue(completeness.Interpretation.Rating is EvaluationRating.Good or EvaluationRating.Exceptional);
+        // Retrieve the score for coherence from the <see cref="EvaluationResult"/>.
+        NumericMetric coherence =
+            result.Get<NumericMetric>(CoherenceEvaluator.CoherenceMetricName);
+        Assert.IsFalse(coherence.Interpretation!.Failed, coherence.Reason);
+        Assert.IsTrue(coherence.Interpretation.Rating is EvaluationRating.Good or EvaluationRating.Exceptional);
 
         // Retrieve the word count from the <see cref="EvaluationResult"/>.
         NumericMetric wordCount = result.Get<NumericMetric>(WordCountEvaluator.WordCountMetricName);
@@ -135,7 +131,9 @@ public sealed class MyTests
         // Create a <see cref="ScenarioRun"/> with the scenario name
         // set to the fully qualified name of the current test method.
         await using ScenarioRun scenarioRun =
-            await s_defaultReportingConfiguration.CreateScenarioRunAsync(this.ScenarioName);
+            await s_defaultReportingConfiguration.CreateScenarioRunAsync(
+                ScenarioName,
+                additionalTags: ["Moon"]);
 
         // Use the <see cref="IChatClient"/> that's included in the
         // <see cref="ScenarioRun.ChatConfiguration"/> to get the LLM response.

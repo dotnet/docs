@@ -49,6 +49,13 @@ f1_keywords:
   - "CS9263"
   - "CS9264"
   - "CS9266"
+  - "CS9273"
+  - "CS9275"
+  - "CS9276"
+  - "CS9277"
+  - "CS9278"
+  - "CS9279"
+  - "CS9280"
 helpviewer_keywords:
   - "CS0260"
   - "CS0261"
@@ -96,7 +103,14 @@ helpviewer_keywords:
   - "CS9258"
   - "CS9263"
   - "CS9266"
-ms.date: 11/06/2024
+  - "CS9273"
+  - "CS9275"
+  - "CS9276"
+  - "CS9277"
+  - "CS9278"
+  - "CS9279"
+  - "CS9280"
+ms.date: 05/23/2025
 ---
 # Errors and warnings related to `partial` type and `partial` member declarations
 
@@ -150,11 +164,18 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS9257**](#partial-properties): *Both partial property declarations must be required or neither may be required*
 - [**CS9258**](#field-backed-properties): *In this language version, the '`field`' keyword binds to a synthesized backing field for the property. To avoid generating a synthesized backing field, and to refer to the existing member, use '`this.field`' or '`@field`' instead.*
 - [**CS9263**](#field-backed-properties): *A partial property cannot have an initializer on both the definition and implementation.*
+- [**CS9275**](#partial-members): *Partial member  must have an implementation part.*
+- [**CS9276**](#partial-members): *Partial member  must have a definition part.*
+- [**CS9277**](#partial-members): *Partial member may not have multiple defining declarations.*
+- [**CS9278**](#partial-members): *Partial member may not have multiple implementing declarations.*
+- [**CS9279**](#partial-events-and-constructors): *Partial event cannot have initializer.*
+- [**CS9280**](#partial-events-and-constructors): *Only the implementing declaration of a partial constructor can have an initializer.*
 
 The following warnings can be generated for field backed properties:
 
 - [**CS9264**](#field-backed-properties): *Non-nullable property must contain a non-null value when exiting constructor. Consider adding the 'required' modifier, or declaring the property as nullable, or adding '`[field: MaybeNull, AllowNull]`' attributes.**
 - [**CS9266**](#field-backed-properties): *One accessor of property  should use '`field`' because the other accessor is using it.*
+- [**CS9273**](#field-backed-properties): *In this language version, '`field`' is a keyword within a property accessor. Rename the variable or use the identifier '`@field`' instead.*
 
 The following sections explain the cause and fixes for these errors and warnings.
 
@@ -202,8 +223,12 @@ The compiler warns you if you have multiple fields declared in multiple files fo
 - **CS8800**: *Both partial member declarations must have identical combinations of `virtual`, `override`, `sealed`, and `new` modifiers.*
 - **CS8818**: *Partial member declarations must have matching `ref` return values.*
 - **CS8988**: *The `scoped` modifier of parameter doesn't match partial definition.*
+- **CS9275**: *Partial member  must have an implementation part.*
+- **CS9276**: *Partial member  must have a definition part.*
+- **CS9277**: *Partial member may not have multiple defining declarations.*
+- **CS9278**: *Partial member may not have multiple implementing declarations.*
 
-Partial members have two declarations. The declaration without an implementation is the *declaring declaration*. The declaration with the implementation is the *implementing declaration*. Partial members are allowed only in a `partial` type. Partial members can't be `abstract`. Partial members can't explicitly implement an interface. Both declarations of a partial member must have identical signatures. For example, either both or neither declarations can include the `static` or `unsafe` modifiers.
+Partial members must have two declarations. The declaration without an implementation is the *defining declaration*. The declaration with the implementation is the *implementing declaration*. Both declarations are required. Partial members are allowed only in a `partial` type. Partial members can't be `abstract`. Partial members can't explicitly implement an interface. Both declarations of a partial member must have identical signatures. For example, either both or neither declarations can include the `static` or `unsafe` modifiers.
 
 ## Partial methods
 
@@ -249,15 +274,23 @@ A partial property or indexer must have both a *declaring declaration* and an *i
 public partial int ImplementingDeclaration { get => field; set; }
 ```
 
+## Partial events and constructors
+
+- **CS9279**: *Partial event cannot have initializer.*
+- **CS9280**: *Only the implementing declaration of a partial constructor can have an initializer.*
+
+You've declared an initializer on the defining declaration of a partial constructor or on a partial event declaration. You must remove it.
+
 ## field backed properties
 
 - **CS9258**: *In this language version, the '`field`' keyword binds to a synthesized backing field for the property. To avoid generating a synthesized backing field, and to refer to the existing member, use '`this.field`' or '`@field`' instead.*
 - **CS9263**: *A partial property cannot have an initializer on both the definition and implementation.*
 - **CS9264**: *Non-nullable property must contain a non-null value when exiting constructor. Consider adding the 'required' modifier, or declaring the property as nullable, or adding '`[field: MaybeNull, AllowNull]`' attributes.**
 - **CS9266**: *One accessor of property  should use '`field`' because the other accessor is using it.*
+- **CS9273**: *In this language version, '`field`' is a keyword within a property accessor. Rename the variable or use the identifier '`@field`' instead.*
 
 [!INCLUDE[field-preview](../../includes/field-preview.md)]
 
-Beginning with C# 13, the preview feature, `field` backed properties allows you to access the compiler synthesized backing field for a property. **CS9258** indicates that you have a variable named `field`, which can be hidden by the contextual keyword `field`.
+Beginning with C# 13, the preview feature, `field` backed properties allows you to access the compiler synthesized backing field for a property. **CS9258** or **CS9273** indicate that you have a variable named `field`, which can be hidden by the contextual keyword `field`.
 
 **CS9263** indicates that your declaring declaration includes an implementation. That implementation might be accessing the compiler synthesized backing field for that property. **CS9264** indicates that the your use of `field` assumes a non-nullable backing field while the property declaration is nullable. The compiler assumes both the backing field and the property have the same nullability. You need to add the `[field:MaybeNull, AllowNull]` attribute to the property declaration to indicate that the `field` value should be considered nullable. **CS9266** indicates that one of a properties accessors uses the `field` keyword, but the other uses a hand-declared backing field. The warning indicates you may have done that by accident.

@@ -3,6 +3,7 @@ title: What's new in C# 14
 description: Get an overview of the new features in C# 14. C# 14 ships with .NET 10.
 ms.date: 04/17/2025
 ms.topic: whats-new
+ms.update-cycle: 180-days
 ---
 # What's new in C# 14
 
@@ -15,6 +16,7 @@ C# 14 includes the following new features. You can try these features using the 
 - [Modifiers on simple lambda parameters](#simple-lambda-parameters-with-modifiers)
 - [`field` backed properties](#the-field-keyword)
 - [`partial` events and constructors](#more-partial-members)
+- [user-defined compound assignment operators](#user-defined-compound-assignment)
 
 C# 14 is supported on **.NET 10**. For more information, see [C# language versioning](../language-reference/configure-language-version.md).
 
@@ -136,9 +138,13 @@ Only the implementing declaration of a partial constructor can include a constru
 
 The implementing declaration of a partial event must include `add` and `remove` accessors. The defining declaration declares a field-like event.
 
-## Null conditional assignment
+## User defined compound assignment
 
-The null conditional member access operators, `?.` and ``?[]`, can now be used on the left hand side of an assignment or compound assignment.
+You can learn more in the feature specification for [user-defined compound assignment](~/_csharplang/proposals/user-defined-compound-assignment.md).
+
+## Null-conditional assignment
+
+The null-conditional member access operators, `?.` and `?[]`, can now be used on the left hand side of an assignment or compound assignment.
 
 Before C# 14, you needed to null-check a variable before assigning to a property:
 
@@ -157,9 +163,9 @@ customer?.Order = GetCurrentOrder();
 
 The right side of the `=` operator is evaluated only when the left side isn't null. If `customer` is null, the code doesn't call `GetCurrentOrder`.
 
-In addition to assignment, you can use null conditional member access operators with compound assignment operators (`+=`, `-=`, and others). However, increment and decrement, `++` and `--`, aren't allowed.
+In addition to assignment, you can use null-conditional member access operators with compound assignment operators (`+=`, `-=`, and others). However, increment and decrement, `++` and `--`, aren't allowed.
 
-You can learn more in the language reference article on the [conditional member access](../language-reference/operators/member-access-operators.md#null-conditional-operators--and-) and the feature specification for [null conditional assignment](~/_csharplang/proposals/null-conditional-assignment.md)
+You can learn more in the language reference article on the [conditional member access](../language-reference/operators/member-access-operators.md#null-conditional-operators--and-) and the feature specification for [null-conditional assignment](~/_csharplang/proposals/null-conditional-assignment.md).
 
 ## See also
 

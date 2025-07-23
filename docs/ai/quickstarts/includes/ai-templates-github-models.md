@@ -52,7 +52,7 @@ After you install the AI app templates, you can use them to create starter apps 
 1. Create a new app with the `dotnet new` command and the following parameters:
 
     ```dotnetcli
-    dotnet new aichatweb --framework net9.0 --AiServiceProvider githubmodels --VectorStore local
+    dotnet new aichatweb --Framework net9.0 --provider githubmodels --vector-store local
     ```
 
     The .NET CLI creates a new .NET 9.0 app with the configurations you specified.

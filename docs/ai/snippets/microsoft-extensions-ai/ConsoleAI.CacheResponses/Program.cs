@@ -2,8 +2,9 @@
 using Microsoft.Extensions.Caching.Distributed;
 using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Options;
+using OllamaSharp;
 
-var sampleChatClient = new OllamaChatClient(new Uri("http://localhost:11434"), "llama3.1");
+var sampleChatClient = new OllamaApiClient(new Uri("http://localhost:11434"), "llama3.1");
 
 IChatClient client = new ChatClientBuilder(sampleChatClient)
     .UseDistributedCache(new MemoryDistributedCache(

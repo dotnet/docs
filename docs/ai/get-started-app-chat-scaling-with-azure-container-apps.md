@@ -1,7 +1,7 @@
 ---
 title: Scale Azure OpenAI for .NET chat sample using RAG
 description: Learn how to add load balancing to your application to extend the chat app beyond the Azure OpenAI token and model quota limits.
-ms.date: 12/19/2024
+ms.date: 05/29/2025
 ms.topic: get-started
 ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 # CustomerIntent: As a .NET developer new to Azure OpenAI, I want to scale my Azure OpenAI capacity to avoid rate limit errors with Azure Container Apps.
@@ -14,11 +14,8 @@ ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 ## Prerequisites
 
 * Azure subscription. [Create one for free](https://azure.microsoft.com/free/ai-services?azure-portal=true).
-* Access granted to Azure OpenAI in the desired Azure subscription.
 
-  Currently, access to this service is granted only by application. You should [apply for access](https://aka.ms/oai/access) to Azure OpenAI.
-
-* [Dev containers](https://containers.dev/) are available for both samples, with all dependencies required to complete this article. You can run the dev containers in GitHub Codespaces (in a browser) or locally using Visual Studio Code.
+[Dev containers](https://containers.dev/) are available for both samples, with all dependencies required to complete this article. You can run the dev containers in GitHub Codespaces (in a browser) or locally using Visual Studio Code.
 
 #### [Codespaces (recommended)](#tab/github-codespaces)
 

@@ -2,6 +2,7 @@
 description: "Learn more about: -langversion (Visual Basic)"
 title: "-langversion"
 ms.date: 03/10/2018
+ms.update-cycle: 1825-days
 helpviewer_keywords: 
   - "/langversion compiler option [Visual Basic]"
   - "langversion compiler option [Visual Basic]"

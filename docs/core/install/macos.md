@@ -264,7 +264,6 @@ Environment variables that add .NET to system path, such as the `PATH` variable,
 The following sections are available to help troubleshoot issues:
 
 - [Arm-based Macs](#arm-based-macs)
-- [System.Drawing.Common and libgdiplus](#systemdrawingcommon-and-libgdiplus)
 - [Make .NET available system-wide](#make-net-available-system-wide)
 
 ### Make .NET available system-wide
@@ -296,17 +295,6 @@ Set the following two environment variables in your shell profile:
   ```bash
   export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
   ```
-
-### System.Drawing.Common and libgdiplus
-
-.NET applications that use the `System.Drawing.Common` assembly require `libgdiplus` to be installed.
-
-An easy way to obtain `libgdiplus` is by using the [Homebrew ("brew")](https://brew.sh/) package manager for macOS. After installing *brew*, install `libgdiplus` by running the following commands in the terminal:
-
-```console
-brew update
-brew install mono-libgdiplus
-```
 
 ## Related content
 

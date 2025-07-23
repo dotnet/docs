@@ -39,6 +39,7 @@ The [SqlTracking sample](https://github.com/dotnet/samples/tree/main/framework/w
 
 11. The emitted tracking records are written to a SQL database. To view the tracking records, open the TrackingSample database in SQL Management Studio and navigate to the tables. Running a select query on the tables displays the data within the tracking records stored in the respective tables.
 
+<!-- markdownlint-disable-next-line MD059 -->
    For more information about SQL Server Management Studio, see [Introducing SQL Server Management Studio](/sql/ssms/sql-server-management-studio-ssms). Download SQL Server Management Studio [here](https://aka.ms/ssmsfullsetup).
 
 ## Uninstall the sample
@@ -46,7 +47,7 @@ The [SqlTracking sample](https://github.com/dotnet/samples/tree/main/framework/w
 1. Run theTrackingcleanup.cmd script in the sample directory (*\WF\Basic\Tracking\SqlTracking*).
 
     > [!NOTE]
-    > The Trackingcleanup.cmd attempts to delete the database in your local computer SQL Express. If you are using another SQL server instance, edit Trackingcleanup.cmd.
+    > The Trackingcleanup.cmd attempts to delete the database in your local computer SQL Express. If you're using another SQL server instance, edit Trackingcleanup.cmd.
 
 ## See also
 

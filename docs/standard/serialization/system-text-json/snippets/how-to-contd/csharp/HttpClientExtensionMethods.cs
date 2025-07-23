@@ -12,7 +12,7 @@ namespace HttpClientExtensionMethods
 
     public class Program
     {
-        public static async Task Main()
+        public static async Task Run()
         {
             using HttpClient client = new()
             {

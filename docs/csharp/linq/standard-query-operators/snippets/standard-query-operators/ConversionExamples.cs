@@ -17,7 +17,7 @@ public class ConversionExamples
         // <CastOperatorQuerySyntax>
         IEnumerable people = students;
 
-        var query = from Student student in students
+        var query = from Student student in people
                     where student.Year == GradeLevel.ThirdYear
                     select student;
 

@@ -58,7 +58,9 @@ public static class ExampleProgram
                 else if (transactionType?.ToUpper() is "WITHDRAWAL")
                     yield return (TransactionType.Withdrawal, amount);
             }
+            else {
             yield return (TransactionType.Invalid, 0.0);
+            }
         }
     }
 }

@@ -104,7 +104,7 @@ Log sampling rules evaluation is performed on each log record, however, there ar
 - Select rules with `EventId` not defined or defined and equal to the log event ID.
 - Select rules with longest matching category prefix. If no match is found, select all rules that don't specify a category.
 - If multiple rules are selected, take the **last** one.
-- If no rules are selected, sampling is not applied, e.g. the log record is emitted as usual.
+- If no rules are selected, sampling is not applied, for example, the log record is emitted as usual.
 
 ### Inline code configuration
 
@@ -143,18 +143,18 @@ For each log record that isn't filtered out, the <xref:Microsoft.Extensions.Logg
 
 Log sampling is designed to reduce storage costs, with a trade-off of slightly increased CPU usage. If your application generates a high volume of logs that are expensive to store, sampling can help reduce that volume. When configured appropriately, sampling can lower storage costs without losing information that's critical for diagnosing incidents.
 
-For the built-in sampling, see the benchmarks [here](https://github.com/dotnet/extensions/blob/main/bench/Libraries/Microsoft.Extensions.Telemetry.PerformanceTests/README.md).
+For the built-in sampling, see [Benchmarks](https://github.com/dotnet/extensions/blob/main/bench/Libraries/Microsoft.Extensions.Telemetry.PerformanceTests/README.md).
 
 ## Log level guidance on when to use sampling
 
-| Log level | Recommendation |
-|--|--|
-| <xref:Microsoft.Extensions.Logging.LogLevel.Trace> | Don't apply sampling, because normally you disable these logs in production |
-| <xref:Microsoft.Extensions.Logging.LogLevel.Debug> | Don't apply sampling, because normally you disable these logs in production |
-| <xref:Microsoft.Extensions.Logging.LogLevel.Information> | Do apply sampling |
-| <xref:Microsoft.Extensions.Logging.LogLevel.Warning> | Consider applying sampling |
-| <xref:Microsoft.Extensions.Logging.LogLevel.Error> | Don't apply sampling |
-| <xref:Microsoft.Extensions.Logging.LogLevel.Critical> | Don't apply sampling |
+| Log level                                                | Recommendation             |
+|----------------------------------------------------------|----------------------------|
+| <xref:Microsoft.Extensions.Logging.LogLevel.Trace>       | Don't apply sampling, because normally you disable these logs in production |
+| <xref:Microsoft.Extensions.Logging.LogLevel.Debug>       | Don't apply sampling, because normally you disable these logs in production |
+| <xref:Microsoft.Extensions.Logging.LogLevel.Information> | Do apply sampling          |
+| <xref:Microsoft.Extensions.Logging.LogLevel.Warning>     | Consider applying sampling |
+| <xref:Microsoft.Extensions.Logging.LogLevel.Error>       | Don't apply sampling       |
+| <xref:Microsoft.Extensions.Logging.LogLevel.Critical>    | Don't apply sampling       |
 
 ## Best practices
 

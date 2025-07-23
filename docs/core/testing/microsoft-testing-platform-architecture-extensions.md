@@ -494,11 +494,11 @@ internal sealed class TestingFramework
 
 #### Well-known properties
 
-As detailed in the [requests section](#handling-requests), the testing platform identifies specific properties added to the `TestNodeUpdateMessage` to determine the status of a `TestNode` (e.g., successful, failed, skipped, etc.). This allows the runtime to accurately display a list of failed tests with their corresponding information in the console, and to set the appropriate exit code for the test process.
+As detailed in the [requests section](#handling-requests), the testing platform identifies specific properties added to the `TestNodeUpdateMessage` to determine the status of a `TestNode` (for example, successful, failed, skipped, etc.). This allows the runtime to accurately display a list of failed tests with their corresponding information in the console, and to set the appropriate exit code for the test process.
 
 In this segment, we'll elucidate the various well-known `IProperty` options and their respective implications.
 
-If you're looking for a comprehensive list of well-known properties, you can find it [here](https://github.com/microsoft/testfx/blob/main/src/Platform/Microsoft.Testing.Platform/Messages/TestNodeProperties.cs). If you notice that a property description is missing, please don't hesitate to file an issue.
+For a comprehensive list of well-known properties, see [TestNodeProperties.cs](https://github.com/microsoft/testfx/blob/main/src/Platform/Microsoft.Testing.Platform/Messages/TestNodeProperties.cs). If you notice that a property description is missing, please file an issue.
 
 These properties can be divided in the following categories:
 

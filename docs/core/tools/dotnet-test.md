@@ -16,17 +16,17 @@ The `dotnet test` command builds the solution and runs the tests with either VST
 Some examples of the `dotnet.config` file:
 
   ```ini
-  [dotnet.test:runner]
+  [dotnet.test.runner]
   name = "Microsoft.Testing.Platform"
   ```
 
   ```ini
-  [dotnet.test:runner]
+  [dotnet.test.runner]
   name = "VSTest"
   ```
 
-> [!NOTE]
-> The format will change from `dotnet.test:runner` to `dotnet.test.runner` in .NET 10 SDK Preview 4.
+> [!IMPORTANT]
+> The `dotnet test` experience for MTP is only supported in `Microsoft.Testing.Platform` version 1.7 and later.
 
 > [!TIP]
 > For conceptual documentation about `dotnet test`, see [Testing with dotnet test](../testing/unit-testing-with-dotnet-test.md).
@@ -437,6 +437,8 @@ dotnet test
     [--no-ansi]
     [--no-progress]
     [--output <VERBOSITY_LEVEL>]
+    [--no-launch-profile]
+    [--no-launch-profile-arguments]
     [<args>...]
 
 dotnet test -h|--help
@@ -522,6 +524,14 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
 - **`--output <VERBOSITY_LEVEL>`**
 
   Specifies the output verbosity when reporting tests. Valid values are `Normal` and `Detailed`. The default is `Normal`.
+
+- **`--no-launch-profile`**
+
+  Do not attempt to use launchSettings.json to configure the application. By default, `launchSettings.json` is used, which can apply environment variables and command-line arguments to the test executable.
+
+- **`--no-launch-profile-arguments`**
+
+  Do not use arguments specified by `commandLineArgs` in launch profile to run the application.
 
 - **`--property:<NAME>=<VALUE>`**
 

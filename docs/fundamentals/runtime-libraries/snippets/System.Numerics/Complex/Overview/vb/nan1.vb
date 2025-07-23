@@ -5,7 +5,7 @@ Option Strict On
 Imports System.Numerics
 
 Module Example4
-    Public Sub Main()
+    Public Sub Run()
         Dim c1 As Complex = New Complex(Double.MaxValue / 2, Double.MaxValue / 2)
 
         Dim c2 As Complex = c1 / Complex.Zero

@@ -53,7 +53,7 @@ After you install the AI app templates, you can use them to create starter apps 
 1. Create a new app with the `dotnet new` command and the following parameters:
 
     ```dotnetcli
-    dotnet new aichatweb --framework "net9.0" --AiServiceProvider "azureopenai" --VectorStore "local"
+    dotnet new aichatweb --Framework net9.0 --provider azureopenai --vector-store local
     ```
 
     The .NET CLI creates a new .NET 9.0 app with the configurations you specified.
@@ -114,7 +114,7 @@ The **AI Chat Web App** app is almost ready to go as soon as it's created. Howev
 # [.NET CLI](#tab/configure-dotnet-cli)
 
 ```dotnetcli
-dotnet user-secrets set AzureOpenAi:Endpoint <your-azure-openai-endpoint>
+dotnet user-secrets set AzureOpenAi:Endpoint <your-Azure-OpenAI-endpoint>
 ```
 
 ---

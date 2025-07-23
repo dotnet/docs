@@ -4,7 +4,7 @@ namespace NonStringKeyDictionary
 {
     public class Program
     {
-        public static void Main()
+        public static void Run()
         {
             Dictionary<int, string> numbers = new()
             {

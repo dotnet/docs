@@ -13,6 +13,8 @@ items:
     href: microsoft-extensions-ai.md
   - name: Semantic Kernel
     href: semantic-kernel-dotnet-overview.md
+  - name: C# SDK for MCP
+    href: get-started-mcp.md
 - name: Quickstarts
   items:
   - name: Build a chat app
@@ -31,6 +33,10 @@ items:
     href: quickstarts/create-assistant.md
   - name: Get started using the AI app templates
     href: quickstarts/ai-templates.md
+  - name: Build a minimal MCP server and publish to NuGet
+    href: quickstarts/build-mcp-server.md
+  - name: Build a minimal MCP client
+    href: quickstarts/build-mcp-client.md
 - name: Concepts
   items:
   - name: How generative AI and LLMs work
@@ -79,12 +85,18 @@ items:
   items:
   - name: The Microsoft.Extensions.AI.Evaluation libraries
     href: conceptual/evaluation-libraries.md
-  - name: "Quickstart: Evaluate a model's response"
-    href: quickstarts/evaluate-ai-response.md
-  - name: "Tutorial: Evaluate a response with response caching and reporting"
-    href: tutorials/evaluate-with-reporting.md
-  - name: "Tutorial: Evaluate LLM prompt completions"
-    href: tutorials/llm-eval.md
+  - name: Tutorials
+    items:
+    - name: "Quickstart: Evaluate the quality of a response"
+      href: quickstarts/evaluate-ai-response.md
+    - name: "Evaluate response quality with caching and reporting"
+      href: tutorials/evaluate-with-reporting.md
+    - name: "Evaluate response safety with caching and reporting"
+      href: tutorials/evaluate-safety.md
+- name: Advanced
+  items:
+  - name: Sample interface implementations
+    href: advanced/sample-implementations.md
 - name: Resources
   items:
   - name: API reference

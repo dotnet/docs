@@ -223,7 +223,7 @@ The `ConnectCallback` property in `SocketsHttpHandler` allows developers to cust
 
 In the old approach using `HttpWebRequest`, you might have used custom logic to bind a specific IP address to a socket. Here's how you can achieve similar functionality using `HttpClient` and `ConnectCallback`:
 
-**Old Code Using `HttpWebRequest`**:
+**Old code using `HttpWebRequest`**:
 
 ```csharp
 HttpWebRequest request = WebRequest.CreateHttp(uri);
@@ -236,7 +236,7 @@ request.ServicePoint.BindIPEndPointDelegate = (servicePoint, remoteEndPoint, ret
 using HttpWebResponse response = (HttpWebResponse)request.GetResponse();
 ```
 
-**New Code Using `HttpClient` and `ConnectCallback`**:
+**New code using `HttpClient` and `ConnectCallback`**:
 
 ```csharp
 var handler = new SocketsHttpHandler
@@ -267,7 +267,7 @@ using var response = await client.GetAsync(uri);
 
 If you need to apply specific socket options, such as enabling TCP keep-alive, you can use `ConnectCallback` to configure the socket before it is used by `HttpClient`. In fact, `ConnectCallback` is more flexible to configure socket options.
 
-**Old Code Using `HttpWebRequest`**:
+**Old code using `HttpWebRequest`**:
 
 ```csharp
 ServicePointManager.ReusePort = true;
@@ -278,7 +278,7 @@ request.ServicePoint.UseNagleAlgorithm = false;
 using HttpWebResponse response = (HttpWebResponse)request.GetResponse();
 ```
 
-**New Code Using `HttpClient` and `ConnectCallback`**:
+**New code using `HttpClient` and `ConnectCallback`**:
 
 ```csharp
 var handler = new SocketsHttpHandler
@@ -322,7 +322,7 @@ DNS Round Robin is a technique used to distribute network traffic across multipl
 
 To enable DNS Round Robin with HttpClient, you can use the ConnectCallback property to manually resolve the DNS entries and rotate through the IP addresses. Here's an example for `HttpWebRequest` and `HttpClient`:
 
-**Old Code Using `HttpWebRequest`**:
+**Old code using `HttpWebRequest`**:
 
 ```csharp
 ServicePointManager.DnsRefreshTimeout = 60000;
@@ -333,13 +333,14 @@ using HttpWebResponse response = (HttpWebResponse)request.GetResponse();
 
 In the older `HttpWebRequest` API, enabling DNS Round Robin was straightforward due to its built-in support for this feature. However, the newer `HttpClient` API does not provide the same built-in functionality. Despite this, you can achieve similar behavior by implementing a `DnsRoundRobinConnector` that manually rotates through the IP addresses returned by DNS resolution.
 
-**New Code Using `HttpClient`**:
+**New code using `HttpClient`**:
 
 :::code source="../snippets/httpclient/DnsRoundRobin.cs" id="DnsRoundRobinConnector":::
 
-You can find implementation of `DnsRoundRobinConnector` [here](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/networking/snippets/httpclient/DnsRoundRobin.cs).
+For the implementation of `DnsRoundRobinConnector`, see [DnsRoundRobin.cs](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/networking/snippets/httpclient/DnsRoundRobin.cs).
 
-`DnsRoundRobinConnector` Usage:
+`DnsRoundRobinConnector` usage:
+
 :::code source="../snippets/httpclient/Program.DnsRoundRobin.cs" id="DnsRoundRobinConnect":::
 
 ### Example: Set SocketsHttpHandler properties
@@ -381,7 +382,7 @@ When working with `HttpClient`, you may need to handle client certificates for v
 
 The `CheckCertificateRevocationList` property in `SocketsHttpHandler.SslOptions` allows developers to enable or disable the check for certificate revocation lists (CRL) during SSL/TLS handshake. Enabling this property ensures that the client verifies whether the server's certificate has been revoked, enhancing the security of the connection.
 
-**Old Code Using `HttpWebRequest`**:
+**Old code using `HttpWebRequest`**:
 
 ```csharp
 ServicePointManager.CheckCertificateRevocationList = true;
@@ -389,7 +390,7 @@ HttpWebRequest request = WebRequest.CreateHttp(uri);
 using HttpWebResponse response = (HttpWebResponse)request.GetResponse();
 ```
 
-**New Code Using `HttpClient`**:
+**New code using `HttpClient`**:
 
 ```csharp
 bool checkCertificateRevocationList = true;
@@ -408,7 +409,7 @@ using var response = await client.GetAsync(uri);
 
 To fetch the certificate from the `RemoteCertificateValidationCallback` in `HttpClient`, you can use the `ServerCertificateCustomValidationCallback` property of `HttpClientHandler` or `SocketsHttpHandler.SslOptions`. This callback allows you to inspect the server's certificate during the SSL/TLS handshake.
 
-**Old Code Using `HttpWebRequest`**:
+**Old code using `HttpWebRequest`**:
 
 ```csharp
 HttpWebRequest request = WebRequest.CreateHttp(uri);
@@ -416,7 +417,7 @@ using HttpWebResponse response = (HttpWebResponse)request.GetResponse();
 X509Certificate? serverCertificate = request.ServicePoint.Certificate;
 ```
 
-**New Code Using `HttpClient`**:
+**New code using `HttpClient`**:
 
 ```csharp
 X509Certificate? serverCertificate = null;
@@ -563,7 +564,7 @@ When migrating from `HttpWebRequest` to `HttpClient`, it's important to correctl
 
 In `HttpWebRequest`, you might have used the `CachePolicy` property to set these headers. However, in `HttpClient`, you need to manually set these headers on the request.
 
-**Old Code Using `HttpWebRequest`**:
+**Old code using `HttpWebRequest`**:
 
 ```csharp
 HttpWebRequest request = WebRequest.CreateHttp(uri);
@@ -573,11 +574,11 @@ using HttpWebResponse response = (HttpWebResponse)request.GetResponse();
 
 In the older `HttpWebRequest` API, applying `CachePolicy` was straightforward due to its built-in support for this feature. However, the newer `HttpClient` API does not provide the same built-in functionality. Despite this, you can achieve similar behavior by implementing a `AddCacheControlHeaders` that manually add cache related headers.
 
-**New Code Using `HttpClient`**:
+**New code using `HttpClient`**:
 
 :::code source="../snippets/httpclient/AddCacheControlHeaders.cs" id="CachePolicy":::
 
-You can find implementation of `AddCacheControlHeaders` [here](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/networking/snippets/httpclient/AddCacheControlHeaders.cs).
+For the implementation of `AddCacheControlHeaders`, see [AddCacheControlHeaders.cs](https://raw.githubusercontent.com/dotnet/docs/refs/heads/main/docs/fundamentals/networking/snippets/httpclient/AddCacheControlHeaders.cs).
 
 `AddCacheControlHeaders` Usage:
 :::code source="../snippets/httpclient/Program.CacheControlHeaders.cs" id="CacheControlProgram":::
@@ -586,7 +587,7 @@ You can find implementation of `AddCacheControlHeaders` [here](https://raw.githu
 
 When migrating from HttpWebRequest to `HttpClient`, it's important to understand the differences in how these two APIs handle buffering.
 
-**Old Code Using `HttpWebRequest`**:
+**Old code using `HttpWebRequest`**:
 
 In `HttpWebRequest`, you have direct control over buffering properties through the `AllowWriteStreamBuffering` and `AllowReadStreamBuffering` properties. These properties enable or disable buffering of data sent to and received from the server.
 
@@ -596,7 +597,7 @@ request.AllowReadStreamBuffering = true; // Default is `false`.
 request.AllowWriteStreamBuffering = false; // Default is `true`.
 ```
 
-**New Code Using `HttpClient`**:
+**New code using `HttpClient`**:
 
 In `HttpClient`, there are no direct equivalents to the `AllowWriteStreamBuffering` and `AllowReadStreamBuffering` properties.
 

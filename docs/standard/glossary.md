@@ -61,7 +61,7 @@ The source code of the BCL for [.NET](#net) is contained in the [.NET runtime re
 
 The following terms often refer to the same collection of APIs that BCL refers to:
 
-- [core .NET libraries](../core/compatibility/corefx.md)
+- core .NET libraries
 - [framework libraries](#framework-libraries)
 - [runtime libraries](#runtime)
 - [shared framework](#shared-framework)

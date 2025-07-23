@@ -34,7 +34,7 @@ Complete the following steps to create a console app that connects to the `gpt-4
     ```dotnetcli
     dotnet add package Azure.AI.OpenAI
     dotnet add package Azure.Identity
-    dotnet add package Microsoft.Extensions.AI --prerelease
+    dotnet add package Microsoft.Extensions.AI
     dotnet add package Microsoft.Extensions.AI.OpenAI --prerelease
     dotnet add package Microsoft.Extensions.Configuration
     dotnet add package Microsoft.Extensions.Configuration.UserSecrets
@@ -44,9 +44,9 @@ Complete the following steps to create a console app that connects to the `gpt-4
 
     ```bash
     dotnet user-secrets init
-    dotnet user-secrets set AZURE_OPENAI_ENDPOINT <your-azure-openai-endpoint>
+    dotnet user-secrets set AZURE_OPENAI_ENDPOINT <your-Azure-OpenAI-endpoint>
     dotnet user-secrets set AZURE_OPENAI_GPT_NAME gpt-4o
-    dotnet user-secrets set AZURE_TENANT_ID <your-tenant-id>
+    dotnet user-secrets set AZURE_TENANT_ID <your-tenant-ID>
     ```
 
    > [!NOTE]
@@ -107,6 +107,13 @@ Complete the following steps to create a console app that connects to the `gpt-4
    Response text: Certainly, I have analyzed the sentiment of the review you provided.
    Sentiment: Neutral
    ```
+
+## Clean up resources
+
+If you no longer need them, delete the Azure OpenAI resource and GPT-4 model deployment.
+
+1. In the [Azure Portal](https://aka.ms/azureportal), navigate to the Azure OpenAI resource.
+1. Select the Azure OpenAI resource, and then select **Delete**.
 
 ## See also
 

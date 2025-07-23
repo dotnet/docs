@@ -94,4 +94,4 @@ To add support for C++/CLI in Visual Studio 2019 version 16.4, install the [Desk
 ## Next steps
 
 - [Review the breaking changes between .NET Core 3.0 and 3.1.](../compatibility/3.1.md)
-- [Review the breaking changes in .NET Core 3.1 for Windows Forms apps.](../compatibility/winforms.md#net-core-31)
+- [Review the breaking changes in .NET Core 3.1 for Windows Forms apps.](../compatibility/3.1.md#windows-forms)

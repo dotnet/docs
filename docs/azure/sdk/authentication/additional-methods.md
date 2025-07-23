@@ -39,7 +39,7 @@ For more exact control, such as setting redirect URIs, you can supply specific a
 
 ## Interactive brokered authentication
 
-This method interactively authenticates an application through [`InteractiveBrowserCredential`](/dotnet/api/azure.identity.interactivebrowsercredential?view=azure-dotnet) by collecting user credentials using the system authentication broker. A system authentication broker is an app running on a user's machine that manages the authentication handshakes and token maintenance for all connected accounts. Currently, only the Windows authentication broker, Web Account Manager (WAM), is supported. Users on macOS and Linux will be authenticated through the non-brokered interactive browser flow.
+This method interactively authenticates an application through <xref:Azure.Identity.InteractiveBrowserCredential> by collecting user credentials using the system authentication broker. A system authentication broker is an app running on a user's machine that manages the authentication handshakes and token maintenance for all connected accounts. Currently, only the Windows authentication broker, Web Account Manager (WAM), is supported. Users on macOS and Linux will be authenticated through the non-brokered interactive browser flow.
 
 WAM enables identity providers such as Microsoft Entra ID to natively plug into the OS and provide the service to other apps to provide a more secure login process. WAM offers the following benefits:
 
@@ -80,7 +80,7 @@ Perform the following steps to enable the application to authenticate through th
 
 ### Example using InteractiveBrowserCredential
 
-The following example demonstrates using an [`InteractiveBrowserCredential`](/dotnet/api/azure.identity.interactivebrowsercredential?view=azure-dotnet) in a Windows Forms app to authenticate with the [`BlobServiceClient`](/dotnet/api/azure.storage.blobs.blobserviceclient):
+The following example demonstrates using an <xref:Azure.Identity.InteractiveBrowserCredential> in a Windows Forms app to authenticate with the [`BlobServiceClient`](/dotnet/api/azure.storage.blobs.blobserviceclient):
 
 :::code language="csharp" source="../snippets/authentication/additional-auth/interactive/InteractiveBrokeredAuth.cs" highlight="16-20":::
 

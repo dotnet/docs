@@ -5,68 +5,67 @@ namespace scl;
 
 class Program
 {
-    static async Task<int> Main(string[] args)
+    static int Main(string[] args)
     {
-        var fileOption = new Option<FileInfo?>(
-            name: "--file",
-            description: "The file to read and display on the console.");
+        Option<FileInfo> fileOption = new("--file")
+        {
+            Description = "The file to read and display on the console."
+        };
 
         // <options>
-        var delayOption = new Option<int>(
-            name: "--delay",
-            description: "Delay between lines, specified as milliseconds per character in a line.",
-            getDefaultValue: () => 42);
-
-        var fgcolorOption = new Option<ConsoleColor>(
-            name: "--fgcolor",
-            description: "Foreground color of text displayed on the console.",
-            getDefaultValue: () => ConsoleColor.White);
-
-        var lightModeOption = new Option<bool>(
-            name: "--light-mode",
-            description: "Background color of text displayed on the console: default is black, light mode is white.");
+        Option<int> delayOption = new("--delay")
+        {
+            Description = "Delay between lines, specified as milliseconds per character in a line.",
+            DefaultValueFactory = parseResult => 42
+        };
+        Option<ConsoleColor> fgcolorOption = new("--fgcolor")
+        {
+            Description = "Foreground color of text displayed on the console.",
+            DefaultValueFactory = parseResult => ConsoleColor.White
+        };
+        Option<bool> lightModeOption = new("--light-mode")
+        {
+            Description = "Background color of text displayed on the console: default is black, light mode is white."
+        };
         // </options>
 
         // <rootcommand>
-        var rootCommand = new RootCommand("Sample app for System.CommandLine");
-        //rootCommand.AddOption(fileOption);
+        RootCommand rootCommand = new("Sample app for System.CommandLine");
         // </rootcommand>
 
         // <subcommand>
-        var readCommand = new Command("read", "Read and display the file.")
-            {
-                fileOption,
-                delayOption,
-                fgcolorOption,
-                lightModeOption
-            };
-        rootCommand.AddCommand(readCommand);
+        Command readCommand = new("read", "Read and display the file.")
+        {
+            fileOption,
+            delayOption,
+            fgcolorOption,
+            lightModeOption
+        };
+        rootCommand.Subcommands.Add(readCommand);
         // </subcommand>
 
-        // <sethandler>
-        readCommand.SetHandler(async (file, delay, fgcolor, lightMode) =>
-            {
-                await ReadFile(file!, delay, fgcolor, lightMode);
-            },
-            fileOption, delayOption, fgcolorOption, lightModeOption);
-        // </sethandler>
+        // <setaction>
+        readCommand.SetAction(parseResult => ReadFile(
+            parseResult.GetValue(fileOption),
+            parseResult.GetValue(delayOption),
+            parseResult.GetValue(fgcolorOption),
+            parseResult.GetValue(lightModeOption)));
+        // </setaction>
 
-        return rootCommand.InvokeAsync(args).Result;
+        return rootCommand.Parse(args).Invoke();
     }
 
-    // <handler>
-    internal static async Task ReadFile(
-            FileInfo file, int delay, ConsoleColor fgColor, bool lightMode)
+    // <action>
+    internal static void ReadFile(FileInfo file, int delay, ConsoleColor fgColor, bool lightMode)
     {
         Console.BackgroundColor = lightMode ? ConsoleColor.White : ConsoleColor.Black;
         Console.ForegroundColor = fgColor;
-        List<string> lines = File.ReadLines(file.FullName).ToList();
-        foreach (string line in lines)
+        foreach (string line in File.ReadLines(file.FullName))
         {
             Console.WriteLine(line);
-            await Task.Delay(delay * line.Length);
-        };
+            Thread.Sleep(TimeSpan.FromMilliseconds(delay * line.Length));
+        }
     }
-    // </handler>
+    // </action>
 }
 // </all>

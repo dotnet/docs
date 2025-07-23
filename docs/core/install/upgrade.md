@@ -38,7 +38,8 @@ Here's how to do it:
 * Change the `<TargetFramework>` property value from, for example, `net6.0` to `net8.0`.
 * The same pattern applies for the `<TargetFrameworks>` property if it is being used.
 
-The [Upgrade Assistant](../porting/upgrade-assistant-overview.md) can make these changes automatically.
+> [!TIP]
+> The [GitHub Copilot app modernization - upgrade](../porting/github-copilot-app-modernization-overview.md) capability can make these changes automatically.
 
 The next step is to build the project (or solution) with the new SDK. If additional changes are needed, the SDK will provide warnings and errors that guide you.
 

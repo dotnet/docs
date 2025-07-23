@@ -286,7 +286,7 @@ The JWT bearer authentication middleware can also support more advanced scenario
 - **Introduction to Identity** \
   [https://learn.microsoft.com/aspnet/core/security/authentication/identity](/aspnet/core/security/authentication/identity)
 
-- **Rick Anderson. Two-factor authentication with SMS** \
+- **Two-factor authentication with SMS** \
   [https://learn.microsoft.com/aspnet/core/security/authentication/2fa](/aspnet/core/security/authentication/2fa)
 
 - **Enabling authentication using Facebook, Google and other external providers** \

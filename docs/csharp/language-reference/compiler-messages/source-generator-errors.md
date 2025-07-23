@@ -31,6 +31,7 @@ f1_keywords:
   - "CS9178"
   - "CS9206"
   - "CS9207"
+  - "CS9270"
 helpviewer_keywords:
   - "CS9137"
   - "CS9138"
@@ -61,7 +62,8 @@ helpviewer_keywords:
   - "CS9178"
   - "CS9206"
   - "CS9207"
-ms.date: 11/02/2023
+  - "CS9270"
+ms.date: 05/23/2025
 ---
 # Errors and warnings associated with source generators and interceptors
 
@@ -99,6 +101,7 @@ The following warnings are  generated when source generators or interceptors are
 - [**CS9154**](#signature-mismatch): *Intercepting a call to `M` with interceptor `V`, but the signatures do not match.*
 - [**CS9158**](#signature-mismatch): *Nullability of reference types in return type doesn't match interceptable method.*
 - [**CS9159**](#signature-mismatch): *Nullability of reference types in type of parameter doesn't match interceptable method.*
+- [**CS9270**](#signature-mismatch): *'`InterceptsLocationAttribute(string, int, int)`' is not supported. Move to 'InterceptableLocation'-based generation of these attributes instead. [(https://github.com/dotnet/roslyn/issues/72133)](https://github.com/dotnet/roslyn/issues/72133)*
 
 These errors and warnings follow these themes:
 
@@ -129,6 +132,7 @@ In addition, the following warnings indicate a mismatch in the signatures of the
 - **CS9154**: *Intercepting a call to `M` with interceptor `V`, but the signatures do not match.*
 - **CS9158**: *Nullability of reference types in return type doesn't match interceptable method.*
 - **CS9159**: *Nullability of reference types in type of parameter doesn't match interceptable method.*
+- **CS9270**: *'`InterceptsLocationAttribute(string, int, int)`' is not supported. Move to 'InterceptableLocation'-based generation of these attributes instead. [(https://github.com/dotnet/roslyn/issues/72133)](https://github.com/dotnet/roslyn/issues/72133)*
 
 The interceptor method must be compatible with the interceptable method. You must follow these rules:
 
@@ -136,6 +140,7 @@ The interceptor method must be compatible with the interceptable method. You mus
 - The method signatures for the interceptor and the interceptable method must match: They must have the same parameters with the same modifiers in the same order. The return types must also match.
 - The ref safe contexts must match. In other words, corresponding `ref` parameters must be either `scoped` or not `scoped`.
 - They methods must both be non-generic, or both must have the same number of type parameters.
+- An updated `InterceptorLocationAttribute` constructor signature is preferred.
 
 ## Incorrect mapping
 

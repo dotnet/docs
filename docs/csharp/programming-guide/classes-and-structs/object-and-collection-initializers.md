@@ -19,6 +19,8 @@ Object initializers let you assign values to any accessible fields or properties
 
 The object initializers syntax allows you to create an instance, and after that it assigns the newly created object, with its assigned properties, to the variable in the assignment.
 
+Starting with nested object properties, you can use object initializer syntax without the `new` keyword. This syntax, `Property = { ... }`, allows you to initialize members of existing nested objects, which is particularly useful with read-only properties. For more details, see [Object Initializers with class-typed properties](#object-initializers-with-class-typed-properties).
+
 Object initializers can set indexers, in addition to assigning fields and properties. Consider this basic `Matrix` class:
 
 :::code language="csharp" source="./snippets/object-collection-initializers/BasicObjectInitializers.cs" id="MatrixDeclaration":::
@@ -124,11 +126,30 @@ Required init-only properties support immutable structures while allowing natura
 
 ## Object Initializers with class-typed properties
 
-It's crucial to consider the implications for class-typed properties when initializing an object:
+When initializing objects with class-typed properties, you can use two different syntaxes:
+
+1. **Object initializer without `new` keyword**: `Property = { ... }`
+2. **Object initializer with `new` keyword**: `Property = new() { ... }`
+
+These syntaxes behave differently. The following example demonstrates both approaches:
 
 :::code language="csharp" source="./snippets/object-collection-initializers/HowToClassTypedInitializer.cs" id="HowToClassTypedInitializer":::
 
-The following example shows how, for ClassB, the initialization process involves updating specific values while retaining others from the original instance. The Initializer reuses current instance: ClassB's values are: `100003` (new value we assign here), `true` (kept from EmbeddedClassTypeA's initialization), `BBBabc` (unchanged default from EmbeddedClassTypeB).
+### Key differences
+
+- **Without `new` keyword** (`ClassB = { BI = 100003 }`): This syntax modifies the existing instance of the property that was created during object construction. It calls member initializers on the existing object.
+
+- **With `new` keyword** (`ClassB = new() { BI = 100003 }`): This syntax creates a completely new instance and assigns it to the property, replacing any existing instance.
+
+The initializer without `new` reuses the current instance. In the example above, ClassB's values are: `100003` (new value assigned), `true` (kept from EmbeddedClassTypeA's initialization), `BBBabc` (unchanged default from EmbeddedClassTypeB).
+
+### Object initializers without `new` for read-only properties
+
+The syntax without `new` is particularly useful with read-only properties, where you can't assign a new instance but can still initialize the existing instance's members:
+
+:::code language="csharp" source="./snippets/object-collection-initializers/ObjectInitializerWithoutNew.cs" id="ReadOnlyPropertyExample":::
+
+This approach allows you to initialize nested objects even when the containing property doesn't have a setter.
 
 ## Collection initializers
 

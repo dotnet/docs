@@ -4,7 +4,7 @@ description: Each .NET language is unique. C# is the most widely used language a
 author: billwagner
 ms.author: wiwagn
 ms.date: 02/06/2023
-ms.topic: conceptual
+ms.topic: concept-article
 ---
 # Microsoft .NET language strategy
 

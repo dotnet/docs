@@ -45,7 +45,7 @@ As applications become more complicated the number of attack vectors increases a
 
 Penetration testing or "pen testing" involves bringing in external actors to attempt to attack the system. These attackers may be an external consulting company or other developers with good security knowledge from another part of the business. They're given carte blanche to attempt to subvert the system. Frequently, they'll find extensive security holes that need to be patched. Sometimes the attack vector will be something totally unexpected like exploiting a phishing attack against the CEO.
 
-Azure itself is constantly undergoing attacks from a [team of hackers inside Microsoft](https://azure.microsoft.com/resources/videos/red-vs-blue-internal-security-penetration-testing-of-microsoft-azure/). Over the years, they've been the first to find dozens of potentially catastrophic attack vectors, closing them before they can be exploited externally. The more tempting a target, the more likely that eternal actors will attempt to exploit it and there are a few targets in the world more tempting than Azure.
+Azure itself is constantly undergoing attacks from a team of hackers inside Microsoft. Over the years, they've been the first to find dozens of potentially catastrophic attack vectors, closing them before they can be exploited externally. The more tempting a target, the more likely that external actors will attempt to exploit it, and there are few targets in the world more tempting than Azure.
 
 ## Monitoring
 
@@ -264,7 +264,7 @@ While Cosmos DB doesn't provide for supplying customer encryption keys, there ha
 
 ## Keeping secure
 
-Azure has all the tools necessary to release a highly secure product. However, a chain is only as strong as its weakest link. If the applications deployed on top of Azure aren't developed with a proper security mindset and good security audits, then they become the weak link in the chain. There are many great static analysis tools, encryption libraries, and security practices that can be used to ensure that the software installed on Azure is as secure as Azure itself. Examples include [static analysis tools](https://www.mend.io/sca/), [encryption libraries](https://www.libressl.org/), and [security practices](https://azure.microsoft.com/resources/videos/red-vs-blue-internal-security-penetration-testing-of-microsoft-azure/).
+Azure has all the tools necessary to release a highly secure product. However, a chain is only as strong as its weakest link. If the applications deployed on top of Azure aren't developed with a proper security mindset and good security audits, then they become the weak link in the chain. There are many great static analysis tools, encryption libraries, and security practices that can be used to ensure that the software installed on Azure is as secure as Azure itself. Examples include [static analysis tools](https://www.mend.io/sca/) and [encryption libraries](https://www.libressl.org/).
 
 >[!div class="step-by-step"]
 >[Previous](security.md)

@@ -58,14 +58,9 @@ When you install with a package manager, these libraries are installed for you. 
 - liblttng-ust1
 - libssl3
 - libstdc++6
-- libunwind8
 - zlib1g
 
 [!INCLUDE [linux-ubuntu-deps-example](includes/linux-ubuntu-deps-example.md)]
-
-[!INCLUDE [linux-libgdiplus-general](includes/linux-libgdiplus-general.md)]
-
-You can install a recent version of _libgdiplus_ by [adding the Mono repository to your system](https://www.mono-project.com/download/stable/#download-lin-ubuntu).
 
 ::: zone-end
 
@@ -119,14 +114,9 @@ When you install with a package manager, these libraries are installed for you. 
 - liblttng-ust1
 - libssl3
 - libstdc++6
-- libunwind8
 - zlib1g
 
 [!INCLUDE [linux-ubuntu-deps-example](includes/linux-ubuntu-deps-example.md)]
-
-[!INCLUDE [linux-libgdiplus-general](includes/linux-libgdiplus-general.md)]
-
-You can install a recent version of _libgdiplus_ by [adding the Mono repository to your system](https://www.mono-project.com/download/stable/#download-lin-ubuntu).
 
 ::: zone-end
 
@@ -181,80 +171,9 @@ When you install with a package manager, these libraries are installed for you. 
 - liblttng-ust1
 - libssl3
 - libstdc++6
-- libunwind8
 - zlib1g
 
 [!INCLUDE [linux-ubuntu-deps-example](includes/linux-ubuntu-deps-example.md)]
-
-[!INCLUDE [linux-libgdiplus-general](includes/linux-libgdiplus-general.md)]
-
-You can install a recent version of _libgdiplus_ by [adding the Mono repository to your system](https://www.mono-project.com/download/stable/#download-lin-ubuntu).
-
-::: zone-end
-
-<!--
-===== Ubuntu 20.04
--->
-
-::: zone pivot="os-linux-ubuntu-2004"
-
-## Ubuntu 20.04
-
-[!INCLUDE [linux-ubuntu-package-feed-ms](includes/linux-ubuntu-package-feed-ms.md)]
-
-The following versions of .NET are supported or available for Ubuntu 20.04:
-
-| Supported .NET versions | Available in<br>built-in Ubuntu feed | [Available in<br>.NET backports<br>Ubuntu feed](linux-ubuntu-decision.md#ubuntu-net-backports-package-repository) | [Available in<br>Microsoft feed](linux-ubuntu-decision.md#register-the-microsoft-package-repository) |
-|-------------------------|--------------------------------------|----------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| 8.0                     | None                                 | None                                                                                                     | 8.0, 7.0. 6.0, 5.0, 3.1, 2.1                                                                |
-
-When an [Ubuntu version](https://wiki.ubuntu.com/Releases) falls out of support, .NET is no longer supported with that version.
-
-## Add the Microsoft package repository
-
-[!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
-
-```bash
-wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
-sudo dpkg -i packages-microsoft-prod.deb
-rm packages-microsoft-prod.deb
-```
-
-# [.NET 9](#tab/dotnet9)
-
-Because Ubuntu 20.04 reaches end of life in April 2025, Microsoft has decided not to support .NET 9 on Ubuntu 20.04.
-
-# [.NET 8](#tab/dotnet8)
-
-[!INCLUDE [linux-apt-install-80](includes/linux-install-80-apt.md)]
-
-# [.NET 6](#tab/dotnet6)
-
-> [!WARNING]
-> .NET 6 is no longer supported.
-
-[!INCLUDE [linux-apt-install-60](includes/linux-install-60-apt.md)]
-
----
-
-## Dependencies
-
-When you install with a package manager, these libraries are installed for you. But, if you manually install .NET or you publish a self-contained app, you'll need to make sure these libraries are installed:
-
-- ca-certificates
-- libc6
-- libgcc-s1
-- libgssapi-krb5-2
-- libicu66
-- libssl1.1
-- libstdc++6
-- zlib1g
-
-[!INCLUDE [linux-ubuntu-deps-example](includes/linux-ubuntu-deps-example.md)]
-
-[!INCLUDE [linux-libgdiplus-general](includes/linux-libgdiplus-general.md)]
-
-You can install a recent version of _libgdiplus_ by [adding the Mono repository to your system](https://www.mono-project.com/download/stable/#download-lin-ubuntu).
 
 ::: zone-end
 
@@ -262,7 +181,7 @@ You can install a recent version of _libgdiplus_ by [adding the Mono repository 
 ===== All versions
 -->
 
-::: zone pivot="os-linux-ubuntu-2410,os-linux-ubuntu-2404,os-linux-ubuntu-2204,os-linux-ubuntu-2004"
+::: zone pivot="os-linux-ubuntu-2410,os-linux-ubuntu-2404,os-linux-ubuntu-2204"
 
 ## Unsupported versions
 
@@ -284,7 +203,7 @@ You can install a recent version of _libgdiplus_ by [adding the Mono repository 
 
 ## Manual install
 
-If your Ubuntu version isn't supported, you most likely need to install .NET by manually extracting the binaries, by using the install script. For more information, see [Install .NET on Linux without using a package manager](linux-scripted-manual.md).
+If your Ubuntu version isn't supported and the version of .NET you want to use wasn't available in a package repository, you most likely need to install .NET by manually extracting the binaries, by using the install script, or with Snap. For more information, see [Install .NET on Linux without using a package manager](linux-scripted-manual.md) and [Install .NET Runtime with Snap](linux-snap-runtime.md).
 
 <!--
 ===== Ubuntu 23.10
@@ -320,7 +239,7 @@ When an [Ubuntu version](https://wiki.ubuntu.com/Releases) falls out of support,
 
 ---
 
-## Dependencies
+### Dependencies
 
 When you install with a package manager, these libraries are installed for you. But, if you manually install .NET or you publish a self-contained app, you'll need to make sure these libraries are installed:
 
@@ -332,14 +251,9 @@ When you install with a package manager, these libraries are installed for you. 
 - liblttng-ust1
 - libssl3
 - libstdc++6
-- libunwind8
 - zlib1g
 
 [!INCLUDE [linux-ubuntu-deps-example](includes/linux-ubuntu-deps-example.md)]
-
-[!INCLUDE [linux-libgdiplus-general](includes/linux-libgdiplus-general.md)]
-
-You can install a recent version of _libgdiplus_ by [adding the Mono repository to your system](https://www.mono-project.com/download/stable/#download-lin-ubuntu).
 
 <!--
 ===== Ubuntu 23.04
@@ -387,14 +301,9 @@ When you install with a package manager, these libraries are installed for you. 
 - liblttng-ust1
 - libssl3
 - libstdc++6
-- libunwind8
 - zlib1g
 
 [!INCLUDE [linux-ubuntu-deps-example](includes/linux-ubuntu-deps-example.md)]
-
-[!INCLUDE [linux-libgdiplus-general](includes/linux-libgdiplus-general.md)]
-
-You can install a recent version of _libgdiplus_ by [adding the Mono repository to your system](https://www.mono-project.com/download/stable/#download-lin-ubuntu).
 
 <!--
 ===== Ubuntu 22.10
@@ -440,16 +349,69 @@ When you install with a package manager, these libraries are installed for you. 
 - liblttng-ust1
 - libssl3
 - libstdc++6
-- libunwind8
 - zlib1g
-
-::: zone-end
 
 [!INCLUDE [linux-ubuntu-deps-example](includes/linux-ubuntu-deps-example.md)]
 
-[!INCLUDE [linux-libgdiplus-general](includes/linux-libgdiplus-general.md)]
+<!--
+===== Ubuntu 20.04
+-->
 
-You can install a recent version of _libgdiplus_ by [adding the Mono repository to your system](https://www.mono-project.com/download/stable/#download-lin-ubuntu).
+## Ubuntu 20.04
+
+[!INCLUDE [linux-ubuntu-package-feed-ms](includes/linux-ubuntu-package-feed-ms.md)]
+
+The following versions of .NET are supported or available for Ubuntu 20.04:
+
+| Supported .NET versions | Available in<br>built-in Ubuntu feed | [Available in<br>.NET backports<br>Ubuntu feed](linux-ubuntu-decision.md#ubuntu-net-backports-package-repository) | [Available in<br>Microsoft feed](linux-ubuntu-decision.md#register-the-microsoft-package-repository) |
+|-------------------------|--------------------------------------|----------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
+| 8.0                     | None                                 | None                                                                                                     | 8.0, 7.0. 6.0, 5.0, 3.1, 2.1                                                                |
+
+When an [Ubuntu version](https://wiki.ubuntu.com/Releases) falls out of support, .NET is no longer supported with that version.
+
+### Add the Microsoft package repository
+
+[!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
+
+```bash
+wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
+rm packages-microsoft-prod.deb
+```
+
+# [.NET 9](#tab/dotnet9)
+
+Because Ubuntu 20.04 reached end of life in April 2025, Microsoft doesn't support .NET 9 on Ubuntu 20.04.
+
+# [.NET 8](#tab/dotnet8)
+
+[!INCLUDE [linux-apt-install-80](includes/linux-install-80-apt.md)]
+
+# [.NET 6](#tab/dotnet6)
+
+> [!WARNING]
+> .NET 6 is no longer supported.
+
+[!INCLUDE [linux-apt-install-60](includes/linux-install-60-apt.md)]
+
+---
+
+### Dependencies
+
+When you install with a package manager, these libraries are installed for you. But, if you manually install .NET or you publish a self-contained app, you'll need to make sure these libraries are installed:
+
+- ca-certificates
+- libc6
+- libgcc-s1
+- libgssapi-krb5-2
+- libicu66
+- libssl1.1
+- libstdc++6
+- zlib1g
+
+[!INCLUDE [linux-ubuntu-deps-example](includes/linux-ubuntu-deps-example.md)]
+
+::: zone-end
 
 ## Next steps
 

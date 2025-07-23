@@ -7,7 +7,7 @@ namespace TypedHttp.Example;
 
 public sealed class TodoService(
     HttpClient httpClient,
-    ILogger<TodoService> logger) : IDisposable
+    ILogger<TodoService> logger)
 {
     public async Task<Todo[]> GetUserTodosAsync(int userId)
     {
@@ -28,6 +28,4 @@ public sealed class TodoService(
 
         return [];
     }
-
-    public void Dispose() => httpClient?.Dispose();
 }

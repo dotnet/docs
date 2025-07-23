@@ -4,6 +4,7 @@ using Microsoft.Extensions.AI;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.VectorData;
 using Microsoft.SemanticKernel.Connectors.InMemory;
+using System.Linq;
 using VectorDataAI;
 
 // <SnippetDataSet>
@@ -42,25 +43,25 @@ List<CloudService> cloudServices =
 ];
 // </SnippetDataSet>
 
-// <SnippetEmbeddingGen>
-// Load the configuration values
+// <SnippetEmbeddingGenerator>
+// Load the configuration values.
 IConfigurationRoot config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
 string endpoint = config["AZURE_OPENAI_ENDPOINT"];
 string model = config["AZURE_OPENAI_GPT_NAME"];
 
-// Create the embedding generator
+// Create the embedding generator.
 IEmbeddingGenerator<string, Embedding<float>> generator =
     new AzureOpenAIClient(new Uri(endpoint), new DefaultAzureCredential())
         .GetEmbeddingClient(deploymentName: model)
         .AsIEmbeddingGenerator();
-// </SnippetEmbeddingGen>
+// </SnippetEmbeddingGenerator>
 
 // <SnippetVectorStore>
-// Create and populate the vector store
+// Create and populate the vector store.
 var vectorStore = new InMemoryVectorStore();
-IVectorStoreRecordCollection<int, CloudService> cloudServicesStore =
+VectorStoreCollection<int, CloudService> cloudServicesStore =
     vectorStore.GetCollection<int, CloudService>("cloudServices");
-await cloudServicesStore.CreateCollectionIfNotExistsAsync();
+await cloudServicesStore.EnsureCollectionExistsAsync();
 
 foreach (CloudService service in cloudServices)
 {
@@ -70,14 +71,15 @@ foreach (CloudService service in cloudServices)
 // </SnippetVectorStore>
 
 // <SnippetSearch>
-// Convert a search query to a vector and search the vector store
+// Convert a search query to a vector
+// and search the vector store.
 string query = "Which Azure service should I use to store my Word documents?";
 ReadOnlyMemory<float> queryEmbedding = await generator.GenerateVectorAsync(query);
 
-List<VectorSearchResult<CloudService>> results =
-    await cloudServicesStore.SearchEmbeddingAsync(queryEmbedding, top: 1).ToListAsync();
+IAsyncEnumerable<VectorSearchResult<CloudService>> results =
+    cloudServicesStore.SearchAsync(queryEmbedding, top: 1);
 
-foreach (VectorSearchResult<CloudService> result in results)
+await foreach (VectorSearchResult<CloudService> result in results)
 {
     Console.WriteLine($"Name: {result.Record.Name}");
     Console.WriteLine($"Description: {result.Record.Description}");

@@ -70,6 +70,7 @@ Additional links:
 
 * [Providing a C API for an Extension Module](https://docs.python.org/3/extending/extending.html#providing-a-c-api-for-an-extension-module)
 * [Python for .NET](https://github.com/pythonnet/pythonnet)
+* [CSnakes](https://tonybaloney.github.io/CSnakes/) - consuming Python from .NET.
 
 ## golang
 

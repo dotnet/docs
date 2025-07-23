@@ -3,6 +3,7 @@ using Microsoft.Extensions.AI;
 using Azure.AI.OpenAI;
 using Azure.Identity;
 
+// <SnippetGetChatClient>
 IConfigurationRoot config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
 string endpoint = config["AZURE_OPENAI_ENDPOINT"];
 string deployment = config["AZURE_OPENAI_GPT_NAME"];
@@ -11,7 +12,9 @@ IChatClient chatClient =
     new AzureOpenAIClient(new Uri(endpoint), new DefaultAzureCredential())
     .GetChatClient(deployment)
     .AsIChatClient();
+// </SnippetGetChatClient>
 
+// <SnippetFirstMessage>
 // Start the conversation with context for the AI model
 List<ChatMessage> chatHistory =
     [
@@ -30,7 +33,9 @@ List<ChatMessage> chatHistory =
             response, ask if there is anything else you can help with.
         """)
     ];
+// </SnippetFirstMessage>
 
+// <SnippetChatLoop>
 while (true)
 {
     // Get user prompt and add to chat history
@@ -50,3 +55,4 @@ while (true)
     chatHistory.Add(new ChatMessage(ChatRole.Assistant, response));
     Console.WriteLine();
 }
+// </SnippetChatLoop>

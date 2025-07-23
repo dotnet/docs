@@ -1,7 +1,7 @@
 ---
 title: Azure Migrate application and code assessment for .NET installation
 description: Learn how to install Azure Migrate application and code assessment for .NET
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 11/09/2023
 author: codemillmatt
 ms.author: masoucou

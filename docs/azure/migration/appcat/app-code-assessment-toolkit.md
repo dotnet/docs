@@ -1,7 +1,7 @@
 ---
 title: Azure Migrate application and code assessment for .NET
 description: Learn how to assess .NET applications to evaluate their readiness to migrate to Azure.
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 11/09/2023
 author: codemillmatt
 ms.author: masoucou

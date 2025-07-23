@@ -2,7 +2,7 @@
 title: "Example: Use OpenTelemetry with Azure Monitor and Application Insights"
 description: An walkthrough of how to use OpenTelemetry in .NET to export telemetry to Application Insights
 ms.date: 8/21/2024
-ms.topic: conceptual
+ms.topic: concept-article
 ---
 
 # Example: Use OpenTelemetry with Azure Monitor and Application Insights

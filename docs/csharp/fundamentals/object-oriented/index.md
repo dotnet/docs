@@ -18,7 +18,7 @@ In C#, the definition of a type&mdash;a class, struct, or record&mdash;is like a
 
 ## Encapsulation  
 
- *Encapsulation* is sometimes referred to as the first pillar or principle of object-oriented programming. A class or struct can specify how accessible each of its members is to code outside of the class or struct. Member not intended for consumers outside of the class or assembly are hidden to limit the potential for coding errors or malicious exploits. For more information, see the [Object-oriented programming](../tutorials/oop.md) tutorial.
+ *Encapsulation* is sometimes referred to as the first pillar or principle of object-oriented programming. A class or struct can specify how accessible each of its members is to code outside of the class or struct. Members not intended for consumers outside of the class or assembly are hidden to limit the potential for coding errors or malicious exploits. For more information, see the [Object-oriented programming](../tutorials/oop.md) tutorial.
 
 ## Members
 

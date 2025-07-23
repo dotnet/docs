@@ -136,7 +136,7 @@ Native sized integer types have special behavior because the storage is determin
 
   :::code language="csharp" source="snippets/shared/NativeIntegerTypes.cs" id="MinMax":::
 
-- You can use constant values in the following ranges:
+- While the full range of `nint` and `nuint` may be larger, compile-time constants are restricted to a 32-bit range:
   - For `nint`: <xref:System.Int32.MinValue?displayProperty=nameWithType> to <xref:System.Int32.MaxValue?displayProperty=nameWithType>.
   - For `nuint`: <xref:System.UInt32.MinValue?displayProperty=nameWithType> to <xref:System.UInt32.MaxValue?displayProperty=nameWithType>.
 - The compiler provides implicit and explicit conversions to other numeric types. For more information, see [Built-in numeric conversions](numeric-conversions.md).

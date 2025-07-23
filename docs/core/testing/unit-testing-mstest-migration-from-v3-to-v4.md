@@ -11,7 +11,7 @@ ms.date: 07/22/2025
 The preview versions MSTest v4 are now available. This migration guide explores what's changed in MSTest v4 and how you can migrate to this version.
 
 > [!NOTE]
-> Generally speaking, MSTest v4 isn't binary compatible with MSTest v3. Any libraries compiled against v3 must be recompiled against v4.
+> Generally speaking, MSTest v4 isn't binary compatible with MSTest v3. Any library compiled against v3 must be recompiled against v4.
 
 ## Source breaking changes
 
@@ -70,7 +70,6 @@ The `TestMethodAttribute` constructor has changed to have parameters that provid
 
 > [!TIP]
 > An analyzer with a codefix is forthcoming to help you with this migration. A single click in the IDE will fix all instances in your solution.
-
 
 ### ClassCleanupBehavior enum is removed
 
@@ -188,7 +187,7 @@ However, the feature remains available. If you have scenarios requiring it, add 
 The `TestContext` type is passed to AssemblyInitialize, ClassInitialize, and to tests, but available information at each stage is different. Now, an exception is thrown when accessing a property related to a test run information as part of `AssemblyInitialize` or `ClassInitialize`.
 
 - `TestContext.FullyQualifiedTestClassName` cannot be accessed in assembly initialize.
-- `TestContext.TestName` cannot be accessed in assembly initialize or class initialize. 
+- `TestContext.TestName` cannot be accessed in assembly initialize or class initialize.
 
 ### TestCase.Id is changing
 

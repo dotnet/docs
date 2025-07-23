@@ -36,7 +36,7 @@ HRESULT GetMetaDataInterface (
  [in] The reference ID that specifies the metadata interface.
 
  `ppObj`
- [out] A pointer to the address of an `T:IUnknown` object that is one of the [metadata interfaces](../../../core/unmanaged-api/metadata/metadata-interfaces.md).
+ [out] A pointer to the address of an `T:IUnknown` object that is one of the [metadata interfaces](../metadata/metadata-interfaces.md).
 
 ## Remarks
 
@@ -54,4 +54,4 @@ HRESULT GetMetaDataInterface (
 
 ## See also
 
-- [Metadata](./index.md)
+- [Metadata](../metadata/index.md)

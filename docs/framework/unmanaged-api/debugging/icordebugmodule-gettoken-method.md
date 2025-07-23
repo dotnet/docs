@@ -50,4 +50,4 @@ HRESULT GetToken(
 
 ## See also
 
-- [Metadata](./index.md)
+- [Metadata](../metadata/index.md)

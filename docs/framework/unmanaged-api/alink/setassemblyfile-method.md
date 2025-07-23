@@ -40,7 +40,7 @@ HRESULT SetAssemblyFile(
  Pointer to [IMetaDataEmit Interface](../../../core/unmanaged-api/metadata/imetadataemit-interface.md) interface.
 
  `afFlags`
- Flags as defined in [AssemblyFlags Enumeration](./assemblyflags-enumeration.md).
+ Flags as defined in [AssemblyFlags Enumeration](../metadata/assemblyflags-enumeration.md).
 
  `pAssemblyID`
  Pointer to ID of resulting assembly.

@@ -110,29 +110,29 @@ If you had usages of `[Timeout(TestTimeout.Infinite)]`, update them to `[Timeout
 ### Types not intended for public consumption are made internal or removed
 
 - `Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.ObjectModel.ITestMethod` is made internal.
-    - Note that this interface is different from ITestMethod in TestFramework assembly, which didn't change.
-    - `Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.ObjectModel.ITestMethod` doesn't have any valid usages for users, so it was made internal.
+  - Note that this interface is different from ITestMethod in TestFramework assembly, which didn't change.
+  - `Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.ObjectModel.ITestMethod` doesn't have any valid usages for users, so it was made internal.
 - Some of the already-obsolete types are made internal. This includes:
-    - MSTestDiscoverer
-    - MSTestExecutor
-    - AssemblyResolver
-    - LogMessageListener
-    - TestExecutionManager
-    - TestMethodInfo
-    - TestResultExtensions
-    - UnitTestOutcomeExtensions
-    - GenericParameterHelper
-    - Types in platform services assembly
+  - MSTestDiscoverer
+  - MSTestExecutor
+  - AssemblyResolver
+  - LogMessageListener
+  - TestExecutionManager
+  - TestMethodInfo
+  - TestResultExtensions
+  - UnitTestOutcomeExtensions
+  - GenericParameterHelper
+  - Types in platform services assembly
 
 ### Assert APIs signature change
 
 - Assert APIs that accept both `message` and `object[]` parameters now accept only `message`. Use string interpolation instead. This was a necessary change to support caller argument expression for assertion APIs.
 - `Assert.AreEqual` APIs for `IEquatable<T>` are removed. There are very few users of this API, and the API is misleading. Most users aren't affected by this removal, as the API didn't initially exist in MSTest v3 and was introduced in 3.2.2.
-    - This API causes issues for F# users as well. For example, see [fsharp/fslang-suggestions/issues/905](https://github.com/fsharp/fslang-suggestions/issues/905#issuecomment-2336831360).
-    - If you're affected, you'll get a compile error about generic type inference. All you need to do is explicitly specify the type argument as `object`.
+  - This API causes issues for F# users as well. For example, see [fsharp/fslang-suggestions/issues/905](https://github.com/fsharp/fslang-suggestions/issues/905#issuecomment-2336831360).
+  - If you're affected, you'll get a compile error about generic type inference. All you need to do is explicitly specify the type argument as `object`.
 - The deprecated `Assert.ThrowsException` APIs are removed. An analyzer and codefix in MSTest 3.10 help migrate you to the newer APIs.
 - Usages of `Assert.IsInstanceOfType<T>(x, out var t)` should now change to `var t = Assert.IsInstanceOfType<T>(x)`.
-    - Existing overloads that didn't have the `out` parameter changed to return the instance of type `T` instead of void. This is only a breaking change for F#.
+  - Existing overloads that didn't have the `out` parameter changed to return the instance of type `T` instead of void. This is only a breaking change for F#.
 
 ### ExpectedExceptionAttribute API is removed
 

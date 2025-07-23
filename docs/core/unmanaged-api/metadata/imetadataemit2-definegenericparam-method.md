@@ -43,7 +43,7 @@ HRESULT DefineGenericParam (
  [in] The index of the generic parameter.
 
  `dwParamFlags`
- [in] A value of the [CorGenericParamAttr](corgenericparamattr-enumeration.md) enumeration that describes the type for the generic parameter.
+ [in] A value of the [CorGenericParamAttr](../../../framework/unmanaged-api/metadata/corgenericparamattr-enumeration.md) enumeration that describes the type for the generic parameter.
 
  `szname`
  [in] The name of the parameter.

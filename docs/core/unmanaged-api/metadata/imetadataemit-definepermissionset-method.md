@@ -38,7 +38,7 @@ HRESULT DefinePermissionSet (
  [in] The object to be decorated.
 
  `dwAction`
- [in] A [CorDeclSecurity](cordeclsecurity-enumeration.md) value that specifies the type of declarative security to be used.
+ [in] A [CorDeclSecurity](../../../framework/unmanaged-api/metadata/cordeclsecurity-enumeration.md) value that specifies the type of declarative security to be used.
 
  `pvPermission`
  [in] The permission BLOB.

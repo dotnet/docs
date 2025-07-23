@@ -55,7 +55,7 @@ HRESULT SetAssemblyProps (
  [in] A pointer to the ASSEMBLYMETADATA that contains version, platform, and locale information for the assembly.
 
  `dwAssemblyFlags`
- [in] A bitwise combination of [AssemblyFlags](assemblyflags-enumeration.md) values that specify various attributes of the assembly.
+ [in] A bitwise combination of [AssemblyFlags](../../../framework/unmanaged-api/metadata/assemblyflags-enumeration.md) values that specify various attributes of the assembly.
 
 ## Remarks
 

@@ -48,7 +48,7 @@ HRESULT GetTypeDefProps (
  [out] The number of wide characters returned in `szTypeDef`.
 
  `pdwTypeDefFlags`
- [out] A pointer to any flags that modify the type definition. This value is a bitmask from the [CorTypeAttr](cortypeattr-enumeration.md) enumeration.
+ [out] A pointer to any flags that modify the type definition. This value is a bitmask from the [CorTypeAttr](../../../framework/unmanaged-api/metadata/cortypeattr-enumeration.md) enumeration.
 
  `ptkExtends`
  [out] A TypeDef or TypeRef metadata token that represents the base type of the requested type.

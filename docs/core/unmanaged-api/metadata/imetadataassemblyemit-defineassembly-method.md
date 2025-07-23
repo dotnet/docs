@@ -49,10 +49,10 @@ HRESULT DefineAssembly (
  [in] The human-readable text name of the assembly. This value must not exceed 1024 characters.
 
  `pMetaData`
- [in] A pointer to an [ASSEMBLYMETADATA](assemblymetadata-structure.md) instance that contains the version, platform, and locale information for the assembly.
+ [in] A pointer to an [ASSEMBLYMETADATA](../../../framework/unmanaged-api/metadata/assemblymetadata-structure.md) instance that contains the version, platform, and locale information for the assembly.
 
  `dwAssemblyFlags`
- [in] A combination of [CorAssemblyFlags](corassemblyflags-enumeration.md) values that describe features of the assembly.
+ [in] A combination of [CorAssemblyFlags](../../../framework/unmanaged-api/metadata/corassemblyflags-enumeration.md) values that describe features of the assembly.
 
  `pmda`
  [out] A pointer to the metadata token.

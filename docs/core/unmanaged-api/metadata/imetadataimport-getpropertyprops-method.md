@@ -61,7 +61,7 @@ HRESULT GetPropertyProps (
  [out] The number of wide characters returned in `szProperty`.
 
  `pdwPropFlags`
- [out] A pointer to any attribute flags applied to the property. This value is a bitmask from the [CorPropertyAttr](corpropertyattr-enumeration.md) enumeration.
+ [out] A pointer to any attribute flags applied to the property. This value is a bitmask from the [CorPropertyAttr](../../../framework/unmanaged-api/metadata/corpropertyattr-enumeration.md) enumeration.
 
  `ppvSig`
  [out] A pointer to the metadata signature of the property.

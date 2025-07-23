@@ -43,7 +43,7 @@ HRESULT SetFileProps (
  [in] The size in bytes of `pbHashValue`.
 
  `dwFileFlags`
- [in] A bitwise combination of [CorFileFlags](corfileflags-enumeration.md) values that specify various attributes of the file.
+ [in] A bitwise combination of [CorFileFlags](../../../framework/unmanaged-api/metadata/corfileflags-enumeration.md) values that specify various attributes of the file.
 
 ## Remarks
 

@@ -110,5 +110,5 @@ Provides methods for importing and manipulating existing metadata from a portabl
 
 ## See also
 
-- [Metadata Interfaces](metadata-interfaces.md)
+- [IMetadata interfaces](imetadata-interfaces.md)
 - [IMetaDataImport2 Interface](imetadataimport2-interface.md)

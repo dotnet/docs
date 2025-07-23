@@ -50,4 +50,4 @@ HRESULT GetToken(
 
 ## See also
 
-- [Metadata](../../../core/unmanaged-api/metadata/index.md)
+- [Metadata](./index.md)

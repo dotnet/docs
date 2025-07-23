@@ -45,5 +45,5 @@ Extends the [IMetaDataImport](imetadataimport-interface.md) interface to provide
 ## See also
 
 - <xref:System.Reflection.PortableExecutableKinds>
-- [Metadata Interfaces](metadata-interfaces.md)
+- [IMetadata interfaces](imetadata-interfaces.md)
 - [IMetaDataImport Interface](imetadataimport-interface.md)

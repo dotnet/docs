@@ -39,7 +39,7 @@ HRESULT GetPinvokeMap (
  [in] A FieldDef or MethodDef token to get the PInvoke mapping metadata for.
 
  `pdwMappingFlags`
- [out] A pointer to flags used for mapping. This value is a bitmask from the [CorPinvokeMap](corpinvokemap-enumeration.md) enumeration.
+ [out] A pointer to flags used for mapping. This value is a bitmask from the [CorPinvokeMap](../../../framework/unmanaged-api/metadata/corpinvokemap-enumeration.md) enumeration.
 
  `szImportName`
  [out] The name of the unmanaged target DLL.

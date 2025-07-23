@@ -37,5 +37,5 @@ Provides a method that gets information about the mapping of metadata from an on
 
 ## See also
 
-- [Metadata Interfaces](metadata-interfaces.md)
-- [CorFileMapping Enumeration](corfilemapping-enumeration.md)
+- [IMetadata interfaces](imetadata-interfaces.md)
+- [CorFileMapping Enumeration](../../../framework/unmanaged-api/metadata/corfilemapping-enumeration.md)

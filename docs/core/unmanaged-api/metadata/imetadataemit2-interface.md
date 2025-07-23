@@ -44,5 +44,5 @@ Extends the [IMetaDataEmit](imetadataemit-interface.md) interface primarily to p
 
 ## See also
 
-- [Metadata Interfaces](metadata-interfaces.md)
+- [IMetadata interfaces](imetadata-interfaces.md)
 - [IMetaDataEmit Interface](imetadataemit-interface.md)

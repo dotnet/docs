@@ -40,4 +40,4 @@ Provides methods to create a new metadata scope, or open an existing one.
 ## See also
 
 - [IMetaDataDispenserEx Interface](imetadatadispenserex-interface.md)
-- [Metadata Interfaces](metadata-interfaces.md)
+- [IMetadata interfaces](imetadata-interfaces.md)

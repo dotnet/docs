@@ -42,7 +42,7 @@ HRESULT GetClassLayout  (
  [out] One of the values 1, 2, 4, 8, or 16, representing the pack size of the class.
 
  `rFieldOffset`
- [out] An array of [COR_FIELD_OFFSET](cor-field-offset-structure.md) values.
+ [out] An array of [COR_FIELD_OFFSET](../../../framework/unmanaged-api/metadata/cor-field-offset-structure.md) values.
 
  `cMax`
  [in] The maximum size of the `rFieldOffset` array.

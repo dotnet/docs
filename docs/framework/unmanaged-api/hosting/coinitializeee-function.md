@@ -32,7 +32,7 @@ HRESULT CoInitializeEE (
 ## Parameters
 
  `fFlags`
- [in] One of the [COINITIEE](../../../core/unmanaged-api/metadata/coinitiee-enumeration.md) enumeration constants.
+ [in] One of the [COINITIEE](./coinitiee-enumeration.md) enumeration constants.
 
 ## Return Value
 

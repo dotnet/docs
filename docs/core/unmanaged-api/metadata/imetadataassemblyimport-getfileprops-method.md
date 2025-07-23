@@ -55,7 +55,7 @@ HRESULT GetFileProps (
  [out] The number of wide chars in the returned hash value.
 
  `pdwFileFlags`
- [out] A pointer to the flags that describe the metadata applied to a file. The flags value is a combination of one or more [CorFileFlags](corfileflags-enumeration.md) values.
+ [out] A pointer to the flags that describe the metadata applied to a file. The flags value is a combination of one or more [CorFileFlags](../../../framework/unmanaged-api/metadata/corfileflags-enumeration.md) values.
 
 ## Requirements
 

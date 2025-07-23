@@ -39,5 +39,5 @@ Provides methods to map type libraries to their metadata signatures, and to conv
 
 ## See also
 
-- [Metadata Interfaces](metadata-interfaces.md)
+- [IMetadata interfaces](imetadata-interfaces.md)
 - [IMetaDataImport Interface](imetadataimport-interface.md)

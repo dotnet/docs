@@ -42,7 +42,7 @@ Extends the [IMetaDataDispenser Interface](imetadatadispenser-interface.md) inte
 
 ## See also
 
-- [Metadata Interfaces](metadata-interfaces.md)
+- [IMetadata interfaces](imetadata-interfaces.md)
 - [IMetaDataDispenser Interface](imetadatadispenser-interface.md)
 - [IMetaDataEmit Interface](imetadataemit-interface.md)
 - [IMetaDataImport Interface](imetadataimport-interface.md)

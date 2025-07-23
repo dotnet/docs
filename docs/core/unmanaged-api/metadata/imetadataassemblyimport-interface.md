@@ -50,5 +50,5 @@ Provides methods to access and examine the contents of an assembly manifest.
 
 ## See also
 
-- [Metadata Interfaces](metadata-interfaces.md)
+- [IMetadata interfaces](imetadata-interfaces.md)
 - [IMetaDataAssemblyEmit Interface](imetadataassemblyemit-interface.md)

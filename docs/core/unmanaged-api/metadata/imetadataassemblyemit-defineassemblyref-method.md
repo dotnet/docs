@@ -56,7 +56,7 @@ HRESULT DefineAssemblyRef (
  [in] The size in bytes of `pbHashValue`.
 
  `dwAssemblyRefFlags`
- [in] A bitwise combination of [CorAssemblyFlags](corassemblyflags-enumeration.md) values that influence the behavior of the execution engine.
+ [in] A bitwise combination of [CorAssemblyFlags](../../../framework/unmanaged-api/metadata/corassemblyflags-enumeration.md) values that influence the behavior of the execution engine.
 
  `pmdar`
  [out] A pointer to the returned `AssemblyRef` metadata token.

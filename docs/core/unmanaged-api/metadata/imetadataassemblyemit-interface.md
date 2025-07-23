@@ -48,5 +48,5 @@ Provides methods that support the self-description model used by the common lang
 
 ## See also
 
-- [Metadata Interfaces](metadata-interfaces.md)
+- [IMetadata interfaces](imetadata-interfaces.md)
 - [IMetaDataAssemblyImport Interface](imetadataassemblyimport-interface.md)

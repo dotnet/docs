@@ -32,7 +32,7 @@ HRESULT ValidatorInit (
 ## Parameters
 
  `dwModule`
- [in] A value of the [CorValidatorModuleType](corvalidatormoduletype-enumeration.md) enumeration that specifies the type of the module in the current metadata scope.
+ [in] A value of the [CorValidatorModuleType](../../../framework/unmanaged-api/metadata/corvalidatormoduletype-enumeration.md) enumeration that specifies the type of the module in the current metadata scope.
 
  `pUnk`
  [in] A pointer to an [IUnknown](/cpp/atl/iunknown) instance that serves as a function callback for validation errors.

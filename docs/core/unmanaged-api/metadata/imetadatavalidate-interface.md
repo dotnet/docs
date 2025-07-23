@@ -38,4 +38,4 @@ Provides methods to validate metadata signatures.
 
 ## See also
 
-- [Metadata Interfaces](metadata-interfaces.md)
+- [IMetadata interfaces](imetadata-interfaces.md)

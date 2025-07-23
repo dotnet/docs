@@ -61,13 +61,13 @@ HRESULT GetAssemblyRefProps (
  [out] A pointer to an ASSEMBLYMETADATA structure that contains the assembly metadata.
 
  `ppbHashValue`
- [out] A pointer to the hash value. This is the hash, using the SHA-1 algorithm, of the `PublicKey` property of the assembly being referenced, unless the arfFullOriginator flag of the [AssemblyRefFlags](assemblyrefflags-enumeration.md) enumeration is set.
+ [out] A pointer to the hash value. This is the hash, using the SHA-1 algorithm, of the `PublicKey` property of the assembly being referenced, unless the arfFullOriginator flag of the [AssemblyRefFlags](../../../framework/unmanaged-api/metadata/assemblyrefflags-enumeration.md) enumeration is set.
 
  `pcbHashValue`
  [out] The number of wide chars in the returned hash value.
 
  `pdwAssemblyRefFlags`
- [out] A pointer to flags that describe the metadata applied to an assembly. The flags value is a combination of one or more [CorAssemblyFlags](corassemblyflags-enumeration.md) values.
+ [out] A pointer to flags that describe the metadata applied to an assembly. The flags value is a combination of one or more [CorAssemblyFlags](../../../framework/unmanaged-api/metadata/corassemblyflags-enumeration.md) values.
 
 ## Return Value
 

@@ -39,4 +39,4 @@ Provides methods for marking and filtering metadata tokens to avoid repeating ac
 
 ## See also
 
-- [Metadata Interfaces](metadata-interfaces.md)
+- [IMetadata interfaces](imetadata-interfaces.md)

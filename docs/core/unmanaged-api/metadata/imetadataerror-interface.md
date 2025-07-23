@@ -40,4 +40,4 @@ Provides a callback mechanism for reporting errors during the metadata merge.
 
 ## See also
 
-- [Metadata Interfaces](metadata-interfaces.md)
+- [IMetadata interfaces](imetadata-interfaces.md)

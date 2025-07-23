@@ -55,5 +55,5 @@ Provides methods for the storage and retrieval of metadata information in tables
 
 ## See also
 
-- [Metadata Interfaces](metadata-interfaces.md)
+- [IMetadata interfaces](imetadata-interfaces.md)
 - [IMetaDataTables2 Interface](imetadatatables2-interface.md)

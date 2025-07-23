@@ -85,5 +85,5 @@ Provides methods to create, modify, and save metadata about the assembly in the 
 
 ## See also
 
-- [Metadata Interfaces](metadata-interfaces.md)
+- [IMetadata interfaces](imetadata-interfaces.md)
 - [IMetaDataEmit2 Interface](imetadataemit2-interface.md)

@@ -39,4 +39,4 @@ Extends [IMetaDataTables](imetadatatables-interface.md) to include methods for w
 ## See also
 
 - [IMetaDataTables Interface](imetadatatables-interface.md)
-- [Metadata Interfaces](metadata-interfaces.md)
+- [IMetadata interfaces](imetadata-interfaces.md)

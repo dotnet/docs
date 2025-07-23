@@ -8,7 +8,7 @@ ms.date: 07/22/2025
 
 # Migrate from MSTest v3 to MSTest v4
 
-The preview versions MSTest v4 are now available. This migration guide explores what's changed in MSTest v4 and how you can migrate to this version.
+The preview version MSTest v4 is now available. This migration guide explores what's changed in MSTest v4 and how you can migrate to this version.
 
 > [!NOTE]
 > Generally speaking, MSTest v4 isn't binary compatible with MSTest v3. Any library compiled against v3 must be recompiled against v4.
@@ -160,7 +160,7 @@ public void TestMethod()
 
 ### Dropped unsupported target frameworks
 
-Support for target frameworks .NET Core 3.1 to .NET 7.0 is dropped. The minimum supported .NET version is .NET 8.0.
+Support for target frameworks .NET Core 3.1 to .NET 7 is dropped. The minimum supported .NET version is .NET 8.
 This change doesn't affect .NET Framework. .NET Framework 4.6.2 continues to be the minimum supported .NET Framework target.
 
 ### Unfolding strategy moved from individual data sources to TestMethodAttribute
@@ -170,7 +170,7 @@ The property was added on individual data sources like `DataRowAttribute` and `D
 
 ### `ConditionBaseAttribute.ShouldRun` API change
 
-We renamed `ConditionBaseAttribute.ShouldRun` property to `IsConditionMet`. That makes it more clear that `ConditionMode` shouldn't be used in the implementation.
+The `ConditionBaseAttribute.ShouldRun` property was renamed to `IsConditionMet`. That makes it clearer that `ConditionMode` shouldn't be used in the implementation.
 
 ## Behavior breaking changes
 

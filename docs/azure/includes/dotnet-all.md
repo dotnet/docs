@@ -397,9 +397,9 @@
 | Functions Worker Extension MCP | NuGet [1.0.0-preview.6](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Mcp/1.0.0-preview.6) |  |  |
 | Functions Worker Extension MySQL | NuGet [1.0.129](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.MySql/1.0.129) |  |  |
 | HTTP ASPNETCore Analyzers | NuGet [1.0.4](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Http.AspNetCore.Analyzers/1.0.4) |  |  |
-| IoT Operations MQTT | NuGet [0.10.4-akri](https://www.nuget.org/packages/Azure.Iot.Operations.Mqtt/0.10.4-akri) |  |  |
-| IoT Operations Protocol | NuGet [0.11.0](https://www.nuget.org/packages/Azure.Iot.Operations.Protocol/0.11.0) |  |  |
-| IoT Operations Services | NuGet [0.11.0](https://www.nuget.org/packages/Azure.Iot.Operations.Services/0.11.0) |  |  |
+| IoT Operations MQTT | NuGet [0.11.0](https://www.nuget.org/packages/Azure.Iot.Operations.Mqtt/0.11.0) |  |  |
+| IoT Operations Protocol | NuGet [0.12.0](https://www.nuget.org/packages/Azure.Iot.Operations.Protocol/0.12.0) |  |  |
+| IoT Operations Services | NuGet [0.12.0](https://www.nuget.org/packages/Azure.Iot.Operations.Services/0.12.0) |  |  |
 | Item Templates NetCore | NuGet [4.0.5192](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ItemTemplates.NetCore/4.0.5192) |  |  |
 | Item Templates NetFx | NuGet [4.0.5192](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ItemTemplates.NetFx/4.0.5192) |  |  |
 | Microsoft.Azure.DataFactoryTestingFramework.Expressions | NuGet [0.2.7](https://www.nuget.org/packages/Microsoft.Azure.DataFactoryTestingFramework.Expressions/0.2.7) |  |  |
@@ -411,7 +411,7 @@
 | Speech Extension ONNX Runtime | NuGet [1.45.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.ONNX.Runtime/1.45.0) |  |  |
 | Speech Extension Telemetry | NuGet [1.45.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Telemetry/1.45.0) |  |  |
 | System Net Client Model | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/System.Net.ClientModel/1.0.0-beta.1) |  |  |
-| Unknown Display Name | NuGet [0.10.9-akri](https://www.nuget.org/packages/Azure.Iot.Operations.Connector/0.10.9-akri) |  |  |
+| Unknown Display Name | NuGet [0.11.0](https://www.nuget.org/packages/Azure.Iot.Operations.Connector/0.11.0) |  |  |
 | Unknown Display Name | NuGet [1.1.2-preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.AzureCosmosDb.Mongo/1.1.2-preview) |  |  |
 | Unknown Display Name | NuGet [1.45.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.MAS/1.45.0) |  |  |
 | WebJobs Extension MySQL | NuGet [1.0.129](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.MySql/1.0.129) |  |  |
@@ -506,7 +506,7 @@
 | Functions extension for Cosmos DB | NuGet [4.9.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.CosmosDB/4.9.0) |  | GitHub [4.9.0](https://github.com/Azure/azure-webjobs-sdk-extensions/tree/cosmos-v3.0.7/src/WebJobs.Extensions.CosmosDB) |
 | Functions extension for DocumentDB | NuGet [1.3.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.DocumentDB/1.3.0) |  | GitHub [1.3.0](https://github.com/Azure/azure-webjobs-sdk-extensions) |
 | Functions extension for Durable Task Framework | NuGet [3.3.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.DurableTask/3.3.0) | [docs](/dotnet/api/overview/azure/functions) | GitHub [3.3.0](https://github.com/Azure/azure-functions-durable-extension/tree/v2.2.2/src/WebJobs.Extensions.DurableTask) |
-| Functions extension for Durable Task Framework - isolated worker | NuGet [1.5.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.DurableTask/1.5.0) |  |  |
+| Functions extension for Durable Task Framework - isolated worker | NuGet [1.6.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.DurableTask/1.6.0) |  |  |
 | Functions extension for HTTP | NuGet [3.2.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Http/3.2.0) |  | GitHub [3.2.0](https://github.com/Azure/azure-webjobs-sdk-extensions/tree/v3.0.2/src/WebJobs.Extensions.Http) |
 | Functions extension for IoT Edge | NuGet [1.0.7](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.EdgeHub/1.0.7) |  | GitHub [1.0.7](https://github.com/Azure/iotedge/tree/1.0.7/edge-hub) |
 | Functions extension for Kafka | NuGet [4.1.2](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Kafka/4.1.2) |  | GitHub [4.1.2](https://github.com/Azure/azure-functions-kafka-extension/tree/3.0.0/src/Microsoft.Azure.WebJobs.Extensions.Kafka) |

@@ -41,6 +41,9 @@ For unmanaged APIs that can be used with both .NET Framework and .NET, see [.NET
  [Hosting](./hosting/index.md)\
  Describes the hosting API, which enables unmanaged hosts to integrate the CLR into their applications.
 
+ [Metadata](./metadata/index.md)\
+ Describes the metadata API, which enables a client such as a compiler to generate or access a component's metadata without the types being loaded by the CLR.
+
  [Profiling](./profiling/index.md)\
  Describes the profiling API, which enables a profiler to monitor a program's execution by the CLR.
 

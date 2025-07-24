@@ -5,7 +5,7 @@ ms.date: 07/24/2025
 ---
 # Metadata enumerations (.NET)
 
-This section describes the unmanaged enumerations that the metadata API uses. For unmanaged enumerations that apply only to .NET Framework, see [Metadata enumerations (.NET Framework)](../../../../framework/unmanaged-api/metadata/enumerations/metadata-enumerations.md).
+This section describes the unmanaged enumerations that the metadata API uses. For unmanaged enumerations that apply only to .NET Framework, see [Metadata enumerations (.NET Framework)](../../../../framework/unmanaged-api/metadata/metadata-enumerations.md).
 
 ## In this section
 

@@ -89,7 +89,7 @@ dotnet-dsrouter client-server
 
 - **`-fp, --forward-port <forwardPort>`**
 
-  Enables port forwarding. The values are `Android` or `iOS` for `TcpClient`, and only `Android` for `TcpServer`. Make sure to set `ANDROID_SDK_ROOT` before using this option on Android.
+  Enables port forwarding. The values are `Android` or `iOS` for `TcpClient`, and only `Android` for `TcpServer`. For Android, optionally set $ANDROID_HOME to a valid Android SDK path.
 
 ## dotnet-dsrouter server-server
 
@@ -126,7 +126,7 @@ dotnet-dsrouter server-server
 
 - **`-fp, --forward-port <forwardPort>`**
 
-  Enables port forwarding. The values are `Android` or `iOS` for `TcpClient`, and only `Android` for `TcpServer`. Make sure to set `ANDROID_SDK_ROOT` before using this option on Android.
+  Enables port forwarding. The values are `Android` or `iOS` for `TcpClient`, and only `Android` for `TcpServer`. For Android, optionally set $ANDROID_HOME to a valid Android SDK path.
 
 ## dotnet-dsrouter server-client
 
@@ -163,7 +163,7 @@ dotnet-dsrouter server-client
 
 - **`-fp, --forward-port <forwardPort>`**
 
-  Enables port forwarding. The values are `Android` or `iOS` for `TcpClient`, and only `Android` for `TcpServer`. Make sure to set `ANDROID_SDK_ROOT` before using this option on Android.
+  Enables port forwarding. The values are `Android` or `iOS` for `TcpClient`, and only `Android` for `TcpServer`. For Android, optionally set $ANDROID_HOME to a valid Android SDK path.
 
 ## dotnet-dsrouter client-client
 
@@ -200,11 +200,11 @@ dotnet-dsrouter client-client
 
 - **`-fp, --forward-port <forwardPort>`**
 
-  Enables port forwarding. The values are `Android` or `iOS` for `TcpClient`, and only `Android` for `TcpServer`. Make sure to set `ANDROID_SDK_ROOT` before using this option on Android.
+  Enables port forwarding. The values are `Android` or `iOS` for `TcpClient`, and only `Android` for `TcpServer`. For Android, optionally set $ANDROID_HOME to a valid Android SDK path.
 
 ## Collect a startup trace using dotnet-trace from a .NET application running on Android
 
-Sometimes it may be useful to collect a trace of an application from its startup. The following steps illustrate the process of doing so targeting a .NET application running on Android. Since `dotnet-dsrouter` is run using port forwarding, the same scenario works against applications running on a local emulator and on a physical device attached over USB. Make sure to set `ANDROID_SDK_ROOT` before using this option or `dotnet-dsrouter` won't be able to find `adb` needed to set up port forwarding.
+Sometimes it may be useful to collect a trace of an application from its startup. The following steps illustrate the process of doing so targeting a .NET application running on Android. Since `dotnet-dsrouter` is run using port forwarding, the same scenario works against applications running on a local emulator and on a physical device attached over USB. `dotnet-dsrouter` attempts to automatically locate the Android SDK and `adb` needed to set up port forwarding. Optionally set `$ANDROID_HOME` to specify a specific Android SDK path.
 
 - Launch dotnet-dsrouter in server-server mode:
 

@@ -43,7 +43,7 @@ To complete the steps ahead, you need to install the GitHub Copilot app moderniz
 1. Follow the notification bar prompts to close Visual Studio and complete the installation.
 1. Relaunch Visual Studio after installation.
 
-You can also view the [GitHub Copilot app modernization for .NET (Preview)](https://marketplace.visualstudio.com/items?itemName=vscjava.appmod-dotnet) extension directly on the extension marketplace.
+You can also view the [GitHub Copilot app modernization for .NET (Preview)](https://aka.ms/appmod-dotnet-marketplace) extension directly on the extension marketplace.
 
 For more information, see [Find, install, and manage extensions for Visual Studio](/visualstudio/ide/finding-and-using-visual-studio-extensions?view=vs-2022).
 

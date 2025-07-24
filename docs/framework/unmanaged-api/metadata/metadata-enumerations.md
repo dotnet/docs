@@ -84,4 +84,4 @@ This section describes the unmanaged enumerations that the metadata API uses.
 
 ## See also
 
-- [Metadata enumerations (.NET)](../../../core/unmanaged-api/metadata/metadata-enumerations.md)
+- [Metadata enumerations (.NET)](../../../core/unmanaged-api/metadata/enumerations/metadata-enumerations.md)

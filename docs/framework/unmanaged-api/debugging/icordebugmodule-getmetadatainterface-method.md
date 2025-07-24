@@ -40,7 +40,7 @@ HRESULT GetMetaDataInterface (
 
 ## Remarks
 
- The debugger can use the `GetMetaDataInterface` method to make a copy of the original metadata for a module, which it must do in order to edit that module. The debugger calls `GetMetaDataInterface` to get an [IMetaDataEmit](../../../core/unmanaged-api/metadata/imetadataemit-interface.md) interface object for the module, then calls [IMetaDataEmit::SaveToMemory](../../../core/unmanaged-api/metadata/imetadataemit-savetomemory-method.md) to save a copy of the module's metadata to memory.
+ The debugger can use the `GetMetaDataInterface` method to make a copy of the original metadata for a module, which it must do in order to edit that module. The debugger calls `GetMetaDataInterface` to get an [IMetaDataEmit](../../../core/unmanaged-api/metadata/interfaces/imetadataemit-interface.md) interface object for the module, then calls [IMetaDataEmit::SaveToMemory](../../../core/unmanaged-api/metadata/interfaces/imetadataemit-savetomemory-method.md) to save a copy of the module's metadata to memory.
 
 ## Requirements
 

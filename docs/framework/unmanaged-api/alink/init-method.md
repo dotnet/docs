@@ -32,10 +32,10 @@ HRESULT Init(
 ## Parameters
 
  `pDispenser`
- [IMetaDataDispenserEx Interface](../../../core/unmanaged-api/metadata/imetadatadispenserex-interface.md) pointer to the metadata dispenser.
+ [IMetaDataDispenserEx Interface](../../../core/unmanaged-api/metadata/interfaces/imetadatadispenserex-interface.md) pointer to the metadata dispenser.
 
  `pErrorHandler`
- [IMetaDataError Interface](../../../core/unmanaged-api/metadata/imetadataerror-interface.md) pointer to an optional error handling interface.
+ [IMetaDataError Interface](../../../core/unmanaged-api/metadata/interfaces/imetadataerror-interface.md) pointer to an optional error handling interface.
 
 ## Return Value
 

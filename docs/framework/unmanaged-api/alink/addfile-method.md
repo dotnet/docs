@@ -42,10 +42,10 @@ HRESULT AddFile(
  Fully qualified name of file to be added.
 
  `dwFlags`\
- COM+ FileDef flags such as `ffContainsNoMetaData` and `ffWriteable`. `dwFlags` is passed to [DefineFile Method](../../../core/unmanaged-api/metadata/imetadataassemblyemit-definefile-method.md).
+ COM+ FileDef flags such as `ffContainsNoMetaData` and `ffWriteable`. `dwFlags` is passed to [DefineFile Method](../../../core/unmanaged-api/metadata/interfaces/imetadataassemblyemit-definefile-method.md).
 
  `pEmitter`\
- [IMetaDataEmit Interface](../../../core/unmanaged-api/metadata/imetadataemit-interface.md) interface to be used to emit metadata, if necessary.
+ [IMetaDataEmit Interface](../../../core/unmanaged-api/metadata/interfaces/imetadataemit-interface.md) interface to be used to emit metadata, if necessary.
 
  `pFileToken`\
  Pointer to where the unique ID of the added file will be stored.

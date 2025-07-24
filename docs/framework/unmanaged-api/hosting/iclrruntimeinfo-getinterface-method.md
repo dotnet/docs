@@ -19,7 +19,7 @@ topic_type:
 ---
 # ICLRRuntimeInfo::GetInterface Method
 
-Loads the CLR into the current process and returns runtime interface pointers, such as [ICLRRuntimeHost](iclrruntimehost-interface.md), [ICLRStrongName](iclrstrongname-interface.md), and [IMetaDataDispenserEx](../../../core/unmanaged-api/metadata/imetadatadispenser-interface.md).
+Loads the CLR into the current process and returns runtime interface pointers, such as [ICLRRuntimeHost](iclrruntimehost-interface.md), [ICLRStrongName](iclrstrongname-interface.md), and [IMetaDataDispenserEx](../../../core/unmanaged-api/metadata/interfaces/imetadatadispenser-interface.md).
 
  This method supersedes all the `CorBindTo`* functions in the [Deprecated CLR Hosting Functions](deprecated-clr-hosting-functions.md) section.
 

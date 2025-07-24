@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Metadata Structures"
-title: "Metadata Structures"
+description: "Learn more about: Metadata Structures (.NET Framework)"
+title: "Metadata Structures (.NET Framework)"
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "structures [.NET Framework metadata]"
@@ -8,17 +8,11 @@ helpviewer_keywords:
   - "metadata structures [.NET Framework]"
 ms.assetid: 3eeaec36-5e1a-4a62-9de3-ea3942f67d04
 ---
-# Metadata Structures
+# Metadata Structures (.NET Framework)
 
 This section describes the unmanaged structures that the metadata API uses.
 
 ## In This Section
-
- ASSEMBLYMETADATA
- Stores assembly metadata for later use.
-
- [COR_FIELD_OFFSET Structure](cor-field-offset-structure.md)
- Stores the offset, within a class, of the specified field.
 
  [COR_NATIVE_LINK Structure](cor-native-link-structure.md)
  Contains information that is used to link native code.
@@ -38,5 +32,4 @@ This section describes the unmanaged structures that the metadata API uses.
 
 ## See also
 
- [OSINFO Structure (.NET)](../../../core/unmanaged-api/metadata/osinfo-structure.md)
- Contains information about the operating system.
+- [Metadata structures (.NET)](../../../core/unmanaged-api/metadata/structures/metadata-structures.md)

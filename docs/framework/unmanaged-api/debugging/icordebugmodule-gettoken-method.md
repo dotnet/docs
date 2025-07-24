@@ -36,7 +36,7 @@ HRESULT GetToken(
 
 ## Remarks
 
- The token can be passed to the [IMetaDataImport](../../../core/unmanaged-api/metadata/imetadataimport-interface.md), [IMetaDataImport2](../../../core/unmanaged-api/metadata/imetadataimport2-interface.md), and [IMetaDataAssemblyImport](../../../core/unmanaged-api/metadata/imetadataassemblyimport-interface.md) metadata import interfaces.
+ The token can be passed to the [IMetaDataImport](../../../core/unmanaged-api/metadata/interfaces/imetadataimport-interface.md), [IMetaDataImport2](../../../core/unmanaged-api/metadata/interfaces/imetadataimport2-interface.md), and [IMetaDataAssemblyImport](../../../core/unmanaged-api/metadata/interfaces/imetadataassemblyimport-interface.md) metadata import interfaces.
 
 ## Requirements
 

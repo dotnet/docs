@@ -36,4 +36,4 @@ Provides mapping capabilities between assemblies.
 
 ## See also
 
-- [Metadata Interfaces](metadata-interfaces.md)
+- [IMetadata Interfaces](imetadata-interfaces.md)

@@ -1,13 +1,13 @@
 ---
-description: "Learn more about: Metadata Interfaces"
-title: "Metadata Interfaces"
+description: "Learn more about: Metadata Interfaces (.NET Framework)"
+title: "Metadata Interfaces (.NET Framework)"
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "unmanaged interfaces [.NET Framework], metadata"
   - "metadata interfaces [.NET Framework]"
   - "interfaces (.NET Framework metadata]"
 ---
-# Metadata interfaces
+# Metadata interfaces (.NET Framework)
 
 This section describes the unmanaged interfaces that provide access to the metadata exposed by the .NET Framework types, methods, fields, and so on.
 
@@ -18,9 +18,6 @@ This section describes the unmanaged interfaces that provide access to the metad
 
  [IHostFilter Interface](ihostfilter-interface.md)
  Provides a method for the run-time host to mark metadata tokens for processing.
-
- [IMapToken Interface](imaptoken-interface.md)
- Provides mapping capabilities between imported and emitted metadata signatures.
 
  [IMetaDataAssemblyEmit Interface](imetadataassemblyemit-interface.md)
  Provides methods that support the self-description model used by the common language runtime (CLR) to resolve and consume resources.
@@ -76,4 +73,4 @@ This section describes the unmanaged interfaces that provide access to the metad
 
 ## See also
 
-- [IMetadata interfaces (.NET)](../../../core/unmanaged-api/metadata/imetadata-interfaces.md)
+- [Metadata interfaces (.NET)](../../../core/unmanaged-api/metadata/interfaces/metadata-interfaces.md)

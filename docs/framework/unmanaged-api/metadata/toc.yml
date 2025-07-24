@@ -42,20 +42,11 @@ items:
     items:
     - name: MarkToken Method
       href: ihostfilter-marktoken-method.md
-  - name: IMapToken Interface
-    href: imaptoken-interface.md
-    items:
-    - name: Map Method
-      href: imaptoken-map-method.md
 - name: Metadata Global Static Functions
   href: metadata-global-static-functions.md
 - name: Metadata Enumerations
   href: metadata-enumerations.md
   items:
-  - name: AssemblyFlags Enumeration
-    href: assemblyflags-enumeration.md
-  - name: AssemblyRefFlags Enumeration
-    href: assemblyrefflags-enumeration.md
   - name: CeeSectionAttr Enumeration
     href: ceesectionattr-enumeration.md
   - name: CeeSectionRelocType Enumeration
@@ -66,97 +57,41 @@ items:
     href: coinitiee-enumeration.md
   - name: CorArgType Enumeration
     href: corargtype-enumeration.md
-  - name: CorAssemblyFlags Enumeration
-    href: corassemblyflags-enumeration.md
   - name: CorAttributeTargets Enumeration
     href: corattributetargets-enumeration.md
   - name: CorCallingConvention Enumeration
     href: corcallingconvention-enumeration.md
-  - name: CorCheckDuplicatesFor Enumeration
-    href: corcheckduplicatesfor-enumeration.md
-  - name: CorDeclSecurity Enumeration
-    href: cordeclsecurity-enumeration.md
   - name: CorElementType Enumeration1
     href: corelementtype-enumeration.md
-  - name: CorErrorIfEmitOutOfOrder Enumeration
-    href: corerrorifemitoutoforder-enumeration.md
   - name: CorEventAttr Enumeration
     href: coreventattr-enumeration.md
   - name: CorFieldAttr Enumeration
     href: corfieldattr-enumeration.md
-  - name: CorFileFlags Enumeration
-    href: corfileflags-enumeration.md
-  - name: CorFileMapping Enumeration
-    href: corfilemapping-enumeration.md
-  - name: CorGenericParamAttr Enumeration
-    href: corgenericparamattr-enumeration.md
-  - name: CorImportOptions Enumeration
-    href: corimportoptions-enumeration.md
-  - name: CorLinkerOptions Enumeration
-    href: corlinkeroptions-enumeration.md
-  - name: CorLocalRefPreservation Enumeration
-    href: corlocalrefpreservation-enumeration.md
-  - name: CorManifestResourceFlags Enumeration
-    href: cormanifestresourceflags-enumeration.md
-  - name: CorMethodAttr Enumeration
-    href: cormethodattr-enumeration.md
-  - name: CorMethodImpl Enumeration
-    href: cormethodimpl-enumeration.md
-  - name: CorMethodSemanticsAttr Enumeration
-    href: cormethodsemanticsattr-enumeration.md
   - name: CorNativeLinkFlags Enumeration
     href: cornativelinkflags-enumeration.md
   - name: CorNativeLinkType Enumeration
     href: cornativelinktype-enumeration.md
   - name: CorNativeType Enumeration
     href: cornativetype-enumeration.md
-  - name: CorNotificationForTokenMovement Enumeration
-    href: cornotificationfortokenmovement-enumeration.md
-  - name: CorOpenFlags Enumeration
-    href: coropenflags-enumeration.md
   - name: CorParamAttr Enumeration
     href: corparamattr-enumeration.md
-  - name: CorPEKind Enumeration
-    href: corpekind-enumeration.md
-  - name: CorPinvokeMap Enumeration
-    href: corpinvokemap-enumeration.md
-  - name: CorPropertyAttr Enumeration
-    href: corpropertyattr-enumeration.md
-  - name: CorRefToDefCheck Enumeration
-    href: correftodefcheck-enumeration.md
   - name: CorRegFlags Enumeration
     href: corregflags-enumeration.md
-  - name: CorSaveSize Enumeration
-    href: corsavesize-enumeration.md
   - name: CorSerializationType Enumeration
     href: corserializationtype-enumeration.md
-  - name: CorSetENC Enumeration
-    href: corsetenc-enumeration.md
-  - name: CorThreadSafetyOptions Enumeration
-    href: corthreadsafetyoptions-enumeration.md
   - name: CorTokenType Enumeration
     href: cortokentype-enumeration.md
-  - name: CorTypeAttr Enumeration
-    href: cortypeattr-enumeration.md
   - name: CorUnmanagedCallingConvention Enumeration
     href: corunmanagedcallingconvention-enumeration.md
-  - name: CorValidatorModuleType Enumeration
-    href: corvalidatormoduletype-enumeration.md
   - name: COUNINITIEE Enumeration
     href: couninitiee-enumeration.md
 - name: Metadata Structures
   href: metadata-structures.md
   items:
-  - name: ASSEMBLYMETADATA Structure
-    href: assemblymetadata-structure.md
-  - name: COR_FIELD_OFFSET Structure
-    href: cor-field-offset-structure.md
   - name: COR_NATIVE_LINK Structure
     href: cor-native-link-structure.md
   - name: CVStruct Structure
     href: cvstruct-structure.md
-  - name: OSINFO Structure
-    href: osinfo-structure.md
 - name: Metadata Unions
   href: metadata-unions.md
   items:

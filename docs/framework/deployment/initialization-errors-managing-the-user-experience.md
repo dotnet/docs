@@ -21,10 +21,15 @@ The CLR provides logging infrastructure to help you debug CLR activation issues,
 The CLR activation APIs return HRESULT codes to report the result of an activation operation to a host. CLR hosts should always consult these return values before proceeding with additional operations.
 
 - CLR_E_SHIM_RUNTIMELOAD
+
 - CLR_E_SHIM_RUNTIMEEXPORT
+
 - CLR_E_SHIM_INSTALLROOT
+
 - CLR_E_SHIM_INSTALLCOMP
+
 - CLR_E_SHIM_LEGACYRUNTIMEALREADYBOUND
+
 - CLR_E_SHIM_SHUTDOWNINPROGRESS
 
 ## UI for initialization errors

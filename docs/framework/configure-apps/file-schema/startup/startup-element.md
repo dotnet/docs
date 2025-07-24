@@ -2,10 +2,10 @@
 description: "Learn more about: <startup> element"
 title: "<startup> element"
 ms.date: "03/30/2017"
-f1_keywords:
+f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/startup"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#startup"
-helpviewer_keywords:
+helpviewer_keywords: 
   - "container tags, <startup> element"
   - "<startup> element"
   - "startup element"
@@ -15,8 +15,8 @@ ms.assetid: 536acfd8-f827-452f-838a-e14fa3b87621
 
 Specifies common language runtime startup information.
 
-[**\<configuration>**](../configuration-element.md)
-&nbsp;&nbsp;**\<startup>**
+[**\<configuration>**](../configuration-element.md)  
+&nbsp;&nbsp;**\<startup>**  
 
 ## Syntax
 

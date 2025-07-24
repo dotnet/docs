@@ -38,7 +38,7 @@ Provides methods to access and examine the contents of an assembly manifest.
 
 ## Requirements
 
- **Platform:** See [System Requirements](../../../framework/get-started/system-requirements.md).
+ **Platform:** See [.NET supported operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md).
 
  **Header:** Cor.h
 
@@ -46,5 +46,5 @@ Provides methods to access and examine the contents of an assembly manifest.
 
 ## See also
 
-- [IMetadata interfaces](imetadata-interfaces.md)
+- [Metadata Interfaces](metadata-interfaces.md)
 - [IMetaDataAssemblyEmit Interface](imetadataassemblyemit-interface.md)

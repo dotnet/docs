@@ -37,7 +37,7 @@ HRESULT GetMethodSemantics (
  [in] A token representing the paired property and event for which to get the method's role.
 
  `pdwSemanticsFlags`
- [out] A pointer to the associated semantics flags. This value is a bitmask from the [CorMethodSemanticsAttr](./cormethodsemanticsattr-enumeration.md) enumeration.
+ [out] A pointer to the associated semantics flags. This value is a bitmask from the [CorMethodSemanticsAttr](../enumerations/cormethodsemanticsattr-enumeration.md) enumeration.
 
 ## Remarks
 
@@ -45,7 +45,7 @@ HRESULT GetMethodSemantics (
 
 ## Requirements
 
- **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).
+ **Platforms:** See [.NET supported operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md).
 
  **Header:** Cor.h
 

@@ -41,7 +41,7 @@ HRESULT FindManifestResourceByName (
 
 ## Requirements
 
- **Platform:** See [System Requirements](../../../framework/get-started/system-requirements.md).
+ **Platform:** See [.NET supported operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md).
 
  **Header:** Cor.h
 
@@ -50,4 +50,4 @@ HRESULT FindManifestResourceByName (
 ## See also
 
 - [IMetaDataAssemblyImport Interface](imetadataassemblyimport-interface.md)
-- [How the Runtime Locates Assemblies](../../../framework/deployment/how-the-runtime-locates-assemblies.md)
+- [How the Runtime Locates Assemblies](../../../../framework/deployment/how-the-runtime-locates-assemblies.md)

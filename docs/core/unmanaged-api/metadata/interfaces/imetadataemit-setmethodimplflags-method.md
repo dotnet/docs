@@ -33,11 +33,11 @@ HRESULT SetMethodImplFlags (
  [in] The token for the method to be changed.
 
  `dwImplFlags`
- [in] A combination of the values of the [CorMethodImpl](./cormethodimpl-enumeration.md) enumeration that specifies the method implementation features.
+ [in] A combination of the values of the [CorMethodImpl](../enumerations/cormethodimpl-enumeration.md) enumeration that specifies the method implementation features.
 
 ## Requirements
 
- **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).
+ **Platforms:** See [.NET supported operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md).
 
  **Header:** Cor.h
 

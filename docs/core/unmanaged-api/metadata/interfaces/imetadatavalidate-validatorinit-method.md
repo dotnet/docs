@@ -30,14 +30,14 @@ HRESULT ValidatorInit (
 ## Parameters
 
  `dwModule`
- [in] A value of the [CorValidatorModuleType](./corvalidatormoduletype-enumeration.md) enumeration that specifies the type of the module in the current metadata scope.
+ [in] A value of the [CorValidatorModuleType](../enumerations/corvalidatormoduletype-enumeration.md) enumeration that specifies the type of the module in the current metadata scope.
 
  `pUnk`
  [in] A pointer to an [IUnknown](/cpp/atl/iunknown) instance that serves as a function callback for validation errors.
 
 ## Requirements
 
- **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).
+ **Platforms:** See [.NET supported operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md).
 
  **Header:** Cor.h
 

@@ -27,7 +27,7 @@ Provides methods to map type libraries to their metadata signatures, and to conv
 
 ## Requirements
 
- **Platform:** See [System Requirements](../../../framework/get-started/system-requirements.md).
+ **Platform:** See [.NET supported operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md).
 
  **Header:** Cor.h
 
@@ -35,5 +35,5 @@ Provides methods to map type libraries to their metadata signatures, and to conv
 
 ## See also
 
-- [IMetadata interfaces](imetadata-interfaces.md)
+- [Metadata Interfaces](metadata-interfaces.md)
 - [IMetaDataImport Interface](imetadataimport-interface.md)

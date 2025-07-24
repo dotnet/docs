@@ -49,4 +49,4 @@ typedef struct {
 
 ## See also
 
-- [IMetaDataAssemblyEmit Interface](imetadataassemblyemit-interface.md)
+- [IMetaDataAssemblyEmit Interface](../interfaces/imtadataassemblyemit-interface.md)

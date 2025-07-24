@@ -47,10 +47,10 @@ HRESULT DefineAssembly (
  [in] The human-readable text name of the assembly. This value must not exceed 1024 characters.
 
  `pMetaData`
- [in] A pointer to an [ASSEMBLYMETADATA](./assemblymetadata-structure.md) instance that contains the version, platform, and locale information for the assembly.
+ [in] A pointer to an [ASSEMBLYMETADATA](../structures/assemblymetadata-structure.md) instance that contains the version, platform, and locale information for the assembly.
 
  `dwAssemblyFlags`
- [in] A combination of [CorAssemblyFlags](./corassemblyflags-enumeration.md) values that describe features of the assembly.
+ [in] A combination of [CorAssemblyFlags](../enumerations/corassemblyflags-enumeration.md) values that describe features of the assembly.
 
  `pmda`
  [out] A pointer to the metadata token.
@@ -61,7 +61,7 @@ HRESULT DefineAssembly (
 
 ## Requirements
 
- **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).
+ **Platforms:** See [.NET supported operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md).
 
  **Header:** Cor.h
 

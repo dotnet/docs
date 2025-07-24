@@ -32,7 +32,7 @@ Extends the [IMetaDataEmit](imetadataemit-interface.md) interface primarily to p
 
 ## Requirements
 
- **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).
+ **Platforms:** See [.NET supported operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md).
 
  **Header:** Cor.h
 
@@ -42,5 +42,5 @@ Extends the [IMetaDataEmit](imetadataemit-interface.md) interface primarily to p
 
 ## See also
 
-- [IMetadata interfaces](imetadata-interfaces.md)
+- [Metadata Interfaces](metadata-interfaces.md)
 - [IMetaDataEmit Interface](imetadataemit-interface.md)

@@ -59,4 +59,4 @@ Provides methods to use for validation of metadata signatures.
 
 ## See also
 
-- [Metadata interfaces (.NET Framework)](../../../framework/unmanaged-api/metadata/metadata-interfaces.md)
+- [Metadata interfaces (.NET Framework)](../../../../framework/unmanaged-api/metadata/metadata-interfaces.md)

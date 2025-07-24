@@ -43,7 +43,7 @@ Provides methods for the storage and retrieval of metadata information in tables
 
 ## Requirements
 
- **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).
+ **Platforms:** See [.NET supported operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md).
 
  **Header:** Cor.h
 
@@ -51,5 +51,5 @@ Provides methods for the storage and retrieval of metadata information in tables
 
 ## See also
 
-- [IMetadata interfaces](imetadata-interfaces.md)
+- [Metadata Interfaces](metadata-interfaces.md)
 - [IMetaDataTables2 Interface](imetadatatables2-interface.md)

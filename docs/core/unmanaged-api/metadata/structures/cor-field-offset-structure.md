@@ -35,7 +35,7 @@ typedef struct COR_FIELD_OFFSET {
 
 ## Remarks
 
- [IMetaDataImport::GetClassLayout](imetadataimport-getclasslayout-method.md) and [IMetaDataEmit::SetClassLayout](imetadataemit-setclasslayout-method.md) methods take a parameter of type `COR_FIELD_OFFSET`.
+ [IMetaDataImport::GetClassLayout](../interfaces/imtadataimport-getclasslayout-method.md) and [IMetaDataEmit::SetClassLayout](../interfaces/imtadataemit-setclasslayout-method.md) methods take a parameter of type `COR_FIELD_OFFSET`.
 
 ## Requirements
 
@@ -45,5 +45,5 @@ typedef struct COR_FIELD_OFFSET {
 
 ## See also
 
-- [IMetaDataEmit Interface](imetadataemit-interface.md)
-- [IMetaDataImport Interface](imetadataimport-interface.md)
+- [IMetaDataEmit Interface](../interfaces/imtadataemit-interface.md)
+- [IMetaDataImport Interface](../interfaces/imtadataimport-interface.md)

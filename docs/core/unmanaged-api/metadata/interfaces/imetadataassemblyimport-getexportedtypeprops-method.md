@@ -53,11 +53,11 @@ HRESULT GetExportedTypeProps (
  [out] A pointer to an `mdTypeDef` token that represents a type in the file.
 
  `pdwExportedTypeFlags`
- [out] A pointer to the flags that describe the metadata applied to the exported type. The flags value can be one or more [CorTypeAttr](./cortypeattr-enumeration.md) values.
+ [out] A pointer to the flags that describe the metadata applied to the exported type. The flags value can be one or more [CorTypeAttr](../enumerations/cortypeattr-enumeration.md) values.
 
 ## Requirements
 
- **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).
+ **Platforms:** See [.NET supported operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md).
 
  **Header:** Cor.h
 

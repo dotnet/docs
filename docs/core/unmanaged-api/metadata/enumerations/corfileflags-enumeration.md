@@ -15,7 +15,7 @@ topic_type:
 ---
 # CorFileFlags Enumeration
 
-Contains values that describe the type of file defined in a call to [IMetaDataAssemblyEmit::DefineFile](imetadataassemblyemit-definefile-method.md).
+Contains values that describe the type of file defined in a call to [IMetaDataAssemblyEmit::DefineFile](../interfaces/imtadataassemblyemit-definefile-method.md).
 
 ## Syntax
 

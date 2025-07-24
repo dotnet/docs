@@ -36,7 +36,7 @@ HRESULT SetGenericParamProps (
  [in] The token for the generic parameter definition for which to set values.
 
  `dwParamFlags`
- [in] A value of the [CorGenericParamAttr](./corgenericparamattr-enumeration.md) enumeration that describes the type for the generic parameter.
+ [in] A value of the [CorGenericParamAttr](../enumerations/corgenericparamattr-enumeration.md) enumeration that describes the type for the generic parameter.
 
  `szName`
  [in] Optional. The name of the parameter for which to set values.
@@ -49,7 +49,7 @@ HRESULT SetGenericParamProps (
 
 ## Requirements
 
- **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).
+ **Platforms:** See [.NET supported operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md).
 
  **Header:** Cor.h
 

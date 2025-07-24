@@ -53,11 +53,11 @@ HRESULT GetManifestResourceProps (
  [out] A pointer to a value that specifies the offset to the beginning of the resource within the file.
 
  `pdwResourceFlags`
- [out] A pointer to flags that describe the metadata applied to a resource. The flags value is a combination of one or more [CorManifestResourceFlags](./cormanifestresourceflags-enumeration.md) values.
+ [out] A pointer to flags that describe the metadata applied to a resource. The flags value is a combination of one or more [CorManifestResourceFlags](../enumerations/cormanifestresourceflags-enumeration.md) values.
 
 ## Requirements
 
- **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).
+ **Platforms:** See [.NET supported operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md).
 
  **Header:** Cor.h
 

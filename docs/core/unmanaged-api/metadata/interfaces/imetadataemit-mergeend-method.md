@@ -42,7 +42,7 @@ The following special conditions apply to the merge:
 
 - For type definitions (`TypeDef`), no duplicates are merged into the current scope. `TypeDef` objects are checked for duplicates against each *fully-qualified object name* + *GUID* + *version number*. If there is a match on either name or GUID, and any of the other two elements is different, an error is raised. Otherwise, if all three items match, `MergeEnd` does a cursory check to ensure the entries are indeed duplicates; if not, an error is raised. This cursory check looks for:
 
-  - The same member declarations, occurring in the same order. Members that are flagged as `mdPrivateScope` (see the [CorMethodAttr](./cormethodattr-enumeration.md) enumeration) are not included in this check; they are merged specially.
+  - The same member declarations, occurring in the same order. Members that are flagged as `mdPrivateScope` (see the [CorMethodAttr](../enumerations/cormethodattr-enumeration.md) enumeration) are not included in this check; they are merged specially.
 
   - The same class layout.
 
@@ -56,13 +56,11 @@ The following special conditions apply to the merge:
 
 ## Requirements
 
-**Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).
+**Platforms:** See [.NET supported operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md).
 
 **Header:** Cor.h
 
 **Library:** Used as a resource in MSCorEE.dll
-
-**.NET versions:** [!INCLUDE[net_current_v11plus](../../../../includes/net-current-v11plus-md.md)]
 
 ## See also
 

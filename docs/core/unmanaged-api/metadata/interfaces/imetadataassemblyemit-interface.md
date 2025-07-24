@@ -36,7 +36,7 @@ Provides methods that support the self-description model used by the common lang
 
 ## Requirements
 
- **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).
+ **Platforms:** See [.NET supported operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md).
 
  **Header:** Cor.h
 
@@ -44,5 +44,5 @@ Provides methods that support the self-description model used by the common lang
 
 ## See also
 
-- [IMetadata interfaces](imetadata-interfaces.md)
+- [Metadata Interfaces](metadata-interfaces.md)
 - [IMetaDataAssemblyImport Interface](imetadataassemblyimport-interface.md)

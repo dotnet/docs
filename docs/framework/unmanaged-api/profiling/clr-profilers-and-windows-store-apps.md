@@ -57,7 +57,6 @@ This is a desktop application that the profiler user interacts with. It's respon
 Throughout this document, the sample code assumes that:
 
 - Your Profiler DLL is written in C++, because it must be a native DLL, as per the requirements of the CLR Profiling API.
-
 - Your Profiler UI is written in C#. This isn't necessary, but because there are no requirements on the language for your Profiler UI's process, why not pick a language that's concise and simple?
 
 ### Windows RT devices
@@ -352,7 +351,7 @@ WinMD files, like regular modules, contain metadata that can be read via the [Me
 
 So which view will your profiler get when it uses the metadata APIs: the raw Windows Runtime view, or the mapped .NET Framework view?  The answer: it's up to you.
 
-When you call the [ICorProfilerInfo::GetModuleMetaData](icorprofilerinfo-getmodulemetadata-method.md) method on a WinMD to obtain a metadata interface, such as [IMetaDataImport](../../../core/unmanaged-api/metadata/enumerations/interfaces/imetadataimport-interface.md),  you can choose to set [ofNoTransform](../../../core/unmanaged-api/metadata/coropenflags-enumeration.md) in the `dwOpenFlags` parameter to turn off this mapping. Otherwise, by default, the mapping will be enabled. Typically, a profiler will keep the mapping enabled, so that the strings that the Profiler DLL obtains from the WinMD metadata (for example, names of types) will look familiar and natural to the profiler user.
+When you call the [ICorProfilerInfo::GetModuleMetaData](icorprofilerinfo-getmodulemetadata-method.md) method on a WinMD to obtain a metadata interface, such as [IMetaDataImport](../../../core/unmanaged-api/metadata/interfaces/imetadataimport-interface.md),  you can choose to set [ofNoTransform](../../../core/unmanaged-api/metadata/enumerations/coropenflags-enumeration.md) in the `dwOpenFlags` parameter to turn off this mapping. Otherwise, by default, the mapping will be enabled. Typically, a profiler will keep the mapping enabled, so that the strings that the Profiler DLL obtains from the WinMD metadata (for example, names of types) will look familiar and natural to the profiler user.
 
 ### Modifying metadata from WinMDs
 

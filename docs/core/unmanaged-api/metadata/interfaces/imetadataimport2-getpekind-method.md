@@ -30,7 +30,7 @@ HRESULT GetPEKind (
 ## Parameters
 
  `pdwPEKind`
- [out] A pointer to a value of the [CorPEKind](./corpekind-enumeration.md) enumeration that describes the PE file.
+ [out] A pointer to a value of the [CorPEKind](../enumerations/corpekind-enumeration.md) enumeration that describes the PE file.
 
  `pdwMachine`
  [out] A pointer to a value that identifies the architecture of the machine. See the next section for possible values.
@@ -47,7 +47,7 @@ HRESULT GetPEKind (
 
 ## Requirements
 
- **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).
+ **Platforms:** See [.NET supported operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md).
 
  **Header:** Cor.h
 
@@ -59,4 +59,4 @@ HRESULT GetPEKind (
 
 - [IMetaDataImport2 Interface](imetadataimport2-interface.md)
 - [IMetaDataImport Interface](imetadataimport-interface.md)
-- [CorPEKind Enumeration](./corpekind-enumeration.md)
+- [CorPEKind Enumeration](../enumerations/corpekind-enumeration.md)

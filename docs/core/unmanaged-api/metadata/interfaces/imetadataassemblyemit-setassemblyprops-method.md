@@ -53,7 +53,7 @@ HRESULT SetAssemblyProps (
  [in] A pointer to the ASSEMBLYMETADATA that contains version, platform, and locale information for the assembly.
 
  `dwAssemblyFlags`
- [in] A bitwise combination of [AssemblyFlags](./assemblyflags-enumeration.md) values that specify various attributes of the assembly.
+ [in] A bitwise combination of [AssemblyFlags](../enumerations/assemblyflags-enumeration.md) values that specify various attributes of the assembly.
 
 ## Remarks
 
@@ -61,7 +61,7 @@ HRESULT SetAssemblyProps (
 
 ## Requirements
 
- **Platform:** See [System Requirements](../../../framework/get-started/system-requirements.md).
+ **Platform:** See [.NET supported operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md).
 
  **Header:** Cor.h
 

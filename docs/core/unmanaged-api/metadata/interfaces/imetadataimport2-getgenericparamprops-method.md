@@ -42,7 +42,7 @@ HRESULT GetGenericParamProps (
  [out] The ordinal position of the `Type` parameter in the parent constructor or method.
 
  `pdwParamFlags`
- [out] A value of the [CorGenericParamAttr](./corgenericparamattr-enumeration.md) enumeration that describes the `Type` for the generic parameter.
+ [out] A value of the [CorGenericParamAttr](../enumerations/corgenericparamattr-enumeration.md) enumeration that describes the `Type` for the generic parameter.
 
  `ptOwner`
  [out] A TypeDef or MethodDef token that represents the owner of the parameter.
@@ -61,7 +61,7 @@ HRESULT GetGenericParamProps (
 
 ## Requirements
 
- **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).
+ **Platforms:** See [.NET supported operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md).
 
  **Header:** Cor.h
 

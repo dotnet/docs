@@ -98,7 +98,7 @@ Provides methods for importing and manipulating existing metadata from a portabl
 
 ## Requirements
 
- **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).
+ **Platforms:** See [.NET supported operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md).
 
  **Header:** Cor.h
 
@@ -106,5 +106,5 @@ Provides methods for importing and manipulating existing metadata from a portabl
 
 ## See also
 
-- [IMetadata interfaces](imetadata-interfaces.md)
+- [Metadata Interfaces](metadata-interfaces.md)
 - [IMetaDataImport2 Interface](imetadataimport2-interface.md)

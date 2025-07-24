@@ -27,7 +27,7 @@ Provides methods to create a new metadata scope, or open an existing one.
 
 ## Requirements
 
- **Platform:** See [System Requirements](../../../framework/get-started/system-requirements.md).
+ **Platform:** See [.NET supported operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md).
 
  **Header:** Cor.h
 
@@ -36,4 +36,4 @@ Provides methods to create a new metadata scope, or open an existing one.
 ## See also
 
 - [IMetaDataDispenserEx Interface](imetadatadispenserex-interface.md)
-- [IMetadata interfaces](imetadata-interfaces.md)
+- [Metadata Interfaces](metadata-interfaces.md)

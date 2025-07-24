@@ -45,7 +45,7 @@ HRESULT FindExportedTypeByName (
 
 ## Requirements
 
- **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).
+ **Platforms:** See [.NET supported operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md).
 
  **Header:** Cor.h
 
@@ -54,4 +54,4 @@ HRESULT FindExportedTypeByName (
 ## See also
 
 - [IMetaDataAssemblyImport Interface](imetadataassemblyimport-interface.md)
-- [How the Runtime Locates Assemblies](../../../framework/deployment/how-the-runtime-locates-assemblies.md)
+- [How the Runtime Locates Assemblies](../../../../framework/deployment/how-the-runtime-locates-assemblies.md)

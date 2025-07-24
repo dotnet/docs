@@ -40,7 +40,7 @@ HRESULT GetClassLayout  (
  [out] One of the values 1, 2, 4, 8, or 16, representing the pack size of the class.
 
  `rFieldOffset`
- [out] An array of [COR_FIELD_OFFSET](./cor-field-offset-structure.md) values.
+ [out] An array of [COR_FIELD_OFFSET](../structures/cor-field-offset-structure.md) values.
 
  `cMax`
  [in] The maximum size of the `rFieldOffset` array.
@@ -53,7 +53,7 @@ HRESULT GetClassLayout  (
 
 ## Requirements
 
- **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).
+ **Platforms:** See [.NET supported operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md).
 
  **Header:** Cor.h
 

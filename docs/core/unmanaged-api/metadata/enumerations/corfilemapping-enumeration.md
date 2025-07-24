@@ -15,7 +15,7 @@ topic_type:
 ---
 # CorFileMapping Enumeration
 
-Contains values that describe the type of file mapping that is returned from a call to the [IMetaDataInfo::GetFileMapping](imetadatainfo-getfilemapping-method.md) method.
+Contains values that describe the type of file mapping that is returned from a call to the [IMetaDataInfo::GetFileMapping](../interfaces/imtadatainfo-getfilemapping-method.md) method.
 
 ## Syntax
 
@@ -45,4 +45,4 @@ typedef enum CorFileMapping {
 
 ## See also
 
-- [GetFileMapping Method](imetadatainfo-getfilemapping-method.md)
+- [GetFileMapping Method](../interfaces/imtadatainfo-getfilemapping-method.md)

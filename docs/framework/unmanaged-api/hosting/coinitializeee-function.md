@@ -32,7 +32,7 @@ HRESULT CoInitializeEE (
 ## Parameters
 
  `fFlags`
- [in] One of the [COINITIEE](../metadata/enumerations/coinitiee-enumeration.md) enumeration constants.
+ [in] One of the [COINITIEE](../metadata/coinitiee-enumeration.md) enumeration constants.
 
 ## Return Value
 

@@ -37,7 +37,7 @@ HRESULT GetPinvokeMap (
  [in] A FieldDef or MethodDef token to get the PInvoke mapping metadata for.
 
  `pdwMappingFlags`
- [out] A pointer to flags used for mapping. This value is a bitmask from the [CorPinvokeMap](./corpinvokemap-enumeration.md) enumeration.
+ [out] A pointer to flags used for mapping. This value is a bitmask from the [CorPinvokeMap](../enumerations/corpinvokemap-enumeration.md) enumeration.
 
  `szImportName`
  [out] The name of the unmanaged target DLL.
@@ -53,7 +53,7 @@ HRESULT GetPinvokeMap (
 
 ## Requirements
 
- **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).
+ **Platforms:** See [.NET supported operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md).
 
  **Header:** Cor.h
 

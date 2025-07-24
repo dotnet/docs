@@ -35,7 +35,7 @@ HRESULT OpenScope (
  [in] The name of the file to be opened. The file must contain common language runtime (CLR) metadata.
 
  `dwOpenFlags`
- [in] A value of the [CorOpenFlags](./coropenflags-enumeration.md) enumeration to specify the mode (read, write, and so on) for opening.
+ [in] A value of the [CorOpenFlags](../enumerations/coropenflags-enumeration.md) enumeration to specify the mode (read, write, and so on) for opening.
 
  `riid`
  [in] The IID of the desired metadata interface to be returned; the caller will use the interface to import (read) or emit (write) metadata.
@@ -57,7 +57,7 @@ HRESULT OpenScope (
 
 ## Requirements
 
- **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).
+ **Platforms:** See [.NET supported operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md).
 
  **Header:** Cor.h
 

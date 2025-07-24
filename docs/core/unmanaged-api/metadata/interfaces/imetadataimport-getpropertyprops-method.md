@@ -59,7 +59,7 @@ HRESULT GetPropertyProps (
  [out] The number of wide characters returned in `szProperty`.
 
  `pdwPropFlags`
- [out] A pointer to any attribute flags applied to the property. This value is a bitmask from the [CorPropertyAttr](./corpropertyattr-enumeration.md) enumeration.
+ [out] A pointer to any attribute flags applied to the property. This value is a bitmask from the [CorPropertyAttr](../enumerations/corpropertyattr-enumeration.md) enumeration.
 
  `ppvSig`
  [out] A pointer to the metadata signature of the property.
@@ -93,7 +93,7 @@ HRESULT GetPropertyProps (
 
 ## Requirements
 
- **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).
+ **Platforms:** See [.NET supported operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md).
 
  **Header:** Cor.h
 

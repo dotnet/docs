@@ -38,7 +38,7 @@ HRESULT SetClassLayout (
  [in] The packing size: 1, 2, 4, 8 or 16 bytes. The packing size is the number of bytes between adjacent fields.
 
  `rFieldOffsets`
- [in] An array of [COR_FIELD_OFFSET](./cor-field-offset-structure.md) structures, each of which specifies a field of the class and the field's offset within the class. Terminate the array with `mdTokenNil`.
+ [in] An array of [COR_FIELD_OFFSET](../structures/cor-field-offset-structure.md) structures, each of which specifies a field of the class and the field's offset within the class. Terminate the array with `mdTokenNil`.
 
  `ulClassSize`
  [in] The size, in bytes, of the class.
@@ -55,7 +55,7 @@ HRESULT SetClassLayout (
 
 ## Requirements
 
- **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).
+ **Platforms:** See [.NET supported operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md).
 
  **Header:** Cor.h
 

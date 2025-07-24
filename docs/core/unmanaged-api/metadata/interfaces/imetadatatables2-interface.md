@@ -26,7 +26,7 @@ Extends [IMetaDataTables](imetadatatables-interface.md) to include methods for w
 
 ## Requirements
 
- **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).
+ **Platforms:** See [.NET supported operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md).
 
  **Header:** Cor.h
 
@@ -37,4 +37,4 @@ Extends [IMetaDataTables](imetadatatables-interface.md) to include methods for w
 ## See also
 
 - [IMetaDataTables Interface](imetadatatables-interface.md)
-- [IMetadata interfaces](imetadata-interfaces.md)
+- [Metadata Interfaces](metadata-interfaces.md)

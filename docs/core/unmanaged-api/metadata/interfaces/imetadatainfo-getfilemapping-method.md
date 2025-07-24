@@ -37,7 +37,7 @@ HRESULT GetFileMapping (
  [out] The size of the mapped region. If `pdwMappingType` is `fmFlat`, this is the size of the file.
 
  `pdwMappingType`
- [out] A [CorFileMapping](./corfilemapping-enumeration.md) value that indicates the type of mapping. The current implementation of the common language runtime (CLR) always returns `fmFlat`. Other values are reserved for future use. However, you should always verify the returned value, because other values may be enabled in future versions or service releases.
+ [out] A [CorFileMapping](../enumerations/corfilemapping-enumeration.md) value that indicates the type of mapping. The current implementation of the common language runtime (CLR) always returns `fmFlat`. Other values are reserved for future use. However, you should always verify the returned value, because other values may be enabled in future versions or service releases.
 
 ## Return Value
 
@@ -59,7 +59,7 @@ HRESULT GetFileMapping (
 
 ## Requirements
 
- **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).
+ **Platforms:** See [.NET supported operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md).
 
  **Header:** Cor.h
 
@@ -70,4 +70,4 @@ HRESULT GetFileMapping (
 ## See also
 
 - [IMetaDataInfo Interface](imetadatainfo-interface.md)
-- [CorFileMapping Enumeration](./corfilemapping-enumeration.md)
+- [CorFileMapping Enumeration](../enumerations/corfilemapping-enumeration.md)

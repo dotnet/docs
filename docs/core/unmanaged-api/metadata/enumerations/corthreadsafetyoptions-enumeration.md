@@ -30,16 +30,14 @@ typedef enum CorThreadSafetyOptions {
 
 ## Members
 
-|Member|Description|
-|------------|-----------------|
-|`MDThreadSafetyDefault`|Default value. Same as `MDThreadSafetyOff`.|
-|`MDThreadSafetyOff`|Indicates that a reader/writer lock cannot be set.|
-|`MDThreadSafetyOn`|Indicates that a reader/writer lock can be set.|
+| Member                  | Description                                        |
+|-------------------------|----------------------------------------------------|
+| `MDThreadSafetyDefault` | Default value. Same as `MDThreadSafetyOff`.        |
+| `MDThreadSafetyOff`     | Indicates that a reader/writer lock cannot be set. |
+| `MDThreadSafetyOn`      | Indicates that a reader/writer lock can be set.    |
 
 ## Requirements
 
 **Platforms:** See [.NET supported operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md).
 
 **Header:** CorHdr.h
-
-**.NET versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

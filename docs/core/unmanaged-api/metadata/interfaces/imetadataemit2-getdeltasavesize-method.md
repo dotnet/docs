@@ -30,14 +30,14 @@ HRESULT GetDeltaSaveSize (
 ## Parameters
 
  `fSave`
- [in] One of the [CorSaveSize](./corsavesize-enumeration.md) values, indicating the level of precision desired. For .NET Framework version 2.0, this parameter is ignored.
+ [in] One of the [CorSaveSize](../enumerations/corsavesize-enumeration.md) values, indicating the level of precision desired. For .NET Framework version 2.0, this parameter is ignored.
 
  `pdwSaveSize`
  [out] The change in the size of the metadata.
 
 ## Requirements
 
- **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).
+ **Platforms:** See [.NET supported operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md).
 
  **Header:** Cor.h
 

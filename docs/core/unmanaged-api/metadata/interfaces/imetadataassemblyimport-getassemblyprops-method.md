@@ -61,11 +61,11 @@ HRESULT GetAssemblyProps (
  [out] A pointer to an ASSEMBLYMETADATA structure that contains the assembly metadata.
 
  `pdwAssemblyFlags`
- [out] Flags that describe the metadata applied to an assembly. This value is a combination of one or more [CorAssemblyFlags](./corassemblyflags-enumeration.md) values.
+ [out] Flags that describe the metadata applied to an assembly. This value is a combination of one or more [CorAssemblyFlags](../enumerations/corassemblyflags-enumeration.md) values.
 
 ## Requirements
 
- **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).
+ **Platforms:** See [.NET supported operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md).
 
  **Header:** Cor.h
 

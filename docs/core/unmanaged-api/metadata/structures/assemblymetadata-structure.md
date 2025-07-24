@@ -36,11 +36,11 @@ typedef struct {
 
 ## Members
 
-|Member|Description|
-|------------|-----------------|
-|`usMajorVersion`|The major version number of the referenced assembly. This value cannot be zero. If all the bits of `usMajorVersion` are set, the major version is not specified.|
-|`usMinorVersion`|The minor version number of the referenced assembly. This value cannot be zero. If all the bits of `usMinorVersion` are set, the minor version is not specified.|
-|`usBuildNumber`|The build number of the referenced assembly. This value cannot be zero. If all the bits of `usBuildNumber` are set, the build number is not specified.|
+| Member           | Description |
+|------------------|-------------|
+| `usMajorVersion` | The major version number of the referenced assembly. This value cannot be zero. If all the bits of `usMajorVersion` are set, the major version is not specified. |
+| `usMinorVersion` |The minor version number of the referenced assembly. This value cannot be zero. If all the bits of `usMinorVersion` are set, the minor version is not specified.|
+| `usBuildNumber` |The build number of the referenced assembly. This value cannot be zero. If all the bits of `usBuildNumber` are set, the build number is not specified.|
 |`usRevisionNumber`|The revision number of the referenced assembly. This value cannot be zero. If all the bits of `usRevisionNumber` are set, the revision number is not specified.|
 |`szLocale`|A list of locale names conforming to the RFC1766 specification, separated by semicolons, specifying the locales supported by the referenced assembly. A null value indicates locale independence.|
 |`cbLocale`|The size in wide characters of `szLocale`.|
@@ -59,5 +59,5 @@ typedef struct {
 
 ## See also
 
-- [IMetaDataAssemblyEmit Interface](imetadataassemblyemit-interface.md)
+- [IMetaDataAssemblyEmit Interface](../interfaces/imtadataassemblyemit-interface.md)
 - [OSINFO Structure](osinfo-structure.md)

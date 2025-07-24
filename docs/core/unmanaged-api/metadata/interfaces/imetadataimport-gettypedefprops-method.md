@@ -46,14 +46,14 @@ HRESULT GetTypeDefProps (
  [out] The number of wide characters returned in `szTypeDef`.
 
  `pdwTypeDefFlags`
- [out] A pointer to any flags that modify the type definition. This value is a bitmask from the [CorTypeAttr](./cortypeattr-enumeration.md) enumeration.
+ [out] A pointer to any flags that modify the type definition. This value is a bitmask from the [CorTypeAttr](../enumerations/cortypeattr-enumeration.md) enumeration.
 
  `ptkExtends`
  [out] A TypeDef or TypeRef metadata token that represents the base type of the requested type.
 
 ## Requirements
 
- **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).
+ **Platforms:** See [.NET supported operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md).
 
  **Header:** Cor.h
 

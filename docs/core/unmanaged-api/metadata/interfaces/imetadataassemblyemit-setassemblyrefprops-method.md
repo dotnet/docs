@@ -57,7 +57,7 @@ HRESULT SetAssemblyRefProps (
  [in] The size in bytes of `pbHashValue`.
 
  `dwAssemblyRefFlags`
- [in] A bitwise combination of [AssemblyRefFlags](./assemblyrefflags-enumeration.md) values that specify attributes of the referenced assembly.
+ [in] A bitwise combination of [AssemblyRefFlags](../enumerations/assemblyrefflags-enumeration.md) values that specify attributes of the referenced assembly.
 
 ## Remarks
 
@@ -65,7 +65,7 @@ HRESULT SetAssemblyRefProps (
 
 ## Requirements
 
- **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).
+ **Platforms:** See [.NET supported operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md).
 
  **Header:** Cor.h
 

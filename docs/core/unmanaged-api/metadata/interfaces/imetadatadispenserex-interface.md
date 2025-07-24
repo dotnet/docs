@@ -30,7 +30,7 @@ Extends the [IMetaDataDispenser Interface](imetadatadispenser-interface.md) inte
 
 ## Requirements
 
- **Platform:** See [System Requirements](../../../framework/get-started/system-requirements.md).
+ **Platform:** See [.NET supported operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md).
 
  **Header:** Cor.h
 
@@ -38,7 +38,7 @@ Extends the [IMetaDataDispenser Interface](imetadatadispenser-interface.md) inte
 
 ## See also
 
-- [IMetadata interfaces](imetadata-interfaces.md)
+- [Metadata Interfaces](metadata-interfaces.md)
 - [IMetaDataDispenser Interface](imetadatadispenser-interface.md)
 - [IMetaDataEmit Interface](imetadataemit-interface.md)
 - [IMetaDataImport Interface](imetadataimport-interface.md)

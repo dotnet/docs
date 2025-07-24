@@ -36,7 +36,7 @@ HRESULT DefineAssemblyRef (
 ## Parameters
 
  `pbPublicKeyOrToken`
- [in] The public key of the publisher of the referenced assembly. The helper function [StrongNameTokenFromAssembly](../../../framework/unmanaged-api/strong-naming/strongnametokenfromassembly-function.md) can be used to get the hash of the public key to pass as this parameter.
+ [in] The public key of the publisher of the referenced assembly. The helper function [StrongNameTokenFromAssembly](../../../../framework/unmanaged-api/strong-naming/strongnametokenfromassembly-function.md) can be used to get the hash of the public key to pass as this parameter.
 
  `cbPublicKeyOrToken`
  [in] The size in bytes of `pbPublicKeyOrToken`.
@@ -54,7 +54,7 @@ HRESULT DefineAssemblyRef (
  [in] The size in bytes of `pbHashValue`.
 
  `dwAssemblyRefFlags`
- [in] A bitwise combination of [CorAssemblyFlags](./corassemblyflags-enumeration.md) values that influence the behavior of the execution engine.
+ [in] A bitwise combination of [CorAssemblyFlags](../enumerations/corassemblyflags-enumeration.md) values that influence the behavior of the execution engine.
 
  `pmdar`
  [out] A pointer to the returned `AssemblyRef` metadata token.
@@ -67,7 +67,7 @@ HRESULT DefineAssemblyRef (
 
 ## Requirements
 
- **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).
+ **Platforms:** See [.NET supported operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md).
 
  **Header:** Cor.h
 

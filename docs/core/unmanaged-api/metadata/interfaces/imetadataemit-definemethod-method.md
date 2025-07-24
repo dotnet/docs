@@ -42,7 +42,7 @@ HRESULT DefineMethod (
  [in] The member name in Unicode.
 
  `dwMethodFlags`
- [in] A value of the [CorMethodAttr](./cormethodattr-enumeration.md) enumeration that specifies the attributes of the method or global function.
+ [in] A value of the [CorMethodAttr](../enumerations/cormethodattr-enumeration.md) enumeration that specifies the attributes of the method or global function.
 
  `pvSigBlob`
  [in] The method signature. The signature is persisted as supplied. If you need to specify additional information for any parameters, use the [IMetaDataEmit::SetParamProps](imetadataemit-setparamprops-method.md) method.
@@ -54,7 +54,7 @@ HRESULT DefineMethod (
  [in] The address of the code.
 
  `dwImplFlags`
- [in] A value of the [CorMethodImpl](./cormethodimpl-enumeration.md) enumeration that specifies the implementation features of the method.
+ [in] A value of the [CorMethodImpl](../enumerations/cormethodimpl-enumeration.md) enumeration that specifies the implementation features of the method.
 
  `pmd`
  [out] The member token.
@@ -67,7 +67,7 @@ HRESULT DefineMethod (
 
 ## Slots in the V-table
 
- The runtime uses method definitions to set up v-table slots. In the case where one or more slots need to be skipped, such as to preserve parity with a COM interface layout, a dummy method is defined to take up the slot or slots in the v-table; set the `dwMethodFlags` to the `mdRTSpecialName` value of the [CorMethodAttr](./cormethodattr-enumeration.md) enumeration and specify the name as:
+ The runtime uses method definitions to set up v-table slots. In the case where one or more slots need to be skipped, such as to preserve parity with a COM interface layout, a dummy method is defined to take up the slot or slots in the v-table; set the `dwMethodFlags` to the `mdRTSpecialName` value of the [CorMethodAttr](../enumerations/cormethodattr-enumeration.md) enumeration and specify the name as:
 
  _VtblGap\<*SequenceNumber*>\<\_*CountOfSlots*>
 
@@ -102,7 +102,7 @@ HRESULT DefineMethod (
 
 ## Requirements
 
- **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).
+ **Platforms:** See [.NET supported operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md).
 
  **Header:** Cor.h
 

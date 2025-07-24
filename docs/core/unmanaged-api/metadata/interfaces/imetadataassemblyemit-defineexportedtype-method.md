@@ -50,7 +50,7 @@ HRESULT DefineExportedType (
  [in] A token to the metadata that specifies the type to be exported. This value is entered in the `TypeDef` table in the file that implements the type and is relevant only if that file is in this assembly.
 
  `dwExportedTypeFlags`
- [in] A bitwise combination of [CorTypeAttr](./cortypeattr-enumeration.md) enumeration values that define the property settings for the exported type.
+ [in] A bitwise combination of [CorTypeAttr](../enumerations/cortypeattr-enumeration.md) enumeration values that define the property settings for the exported type.
 
  `pmdct`
  [out] A pointer to the returned metadata token that indicates the exported type.
@@ -61,7 +61,7 @@ HRESULT DefineExportedType (
 
 ## Requirements
 
- **Platform:** See [System Requirements](../../../framework/get-started/system-requirements.md).
+ **Platform:** See [.NET supported operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md).
 
  **Header:** Cor.h
 

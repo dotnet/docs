@@ -36,7 +36,7 @@ HRESULT SetPermissionSetProps (
  [in] A metadata token that represents the object to be decorated.
 
  `dwAction`
- [in] A [CorDeclSecurity](./cordeclsecurity-enumeration.md) value that specifies the type of declarative security to be used.
+ [in] A [CorDeclSecurity](../enumerations/cordeclsecurity-enumeration.md) value that specifies the type of declarative security to be used.
 
  `pvPermission`
  [in] The permission BLOB.
@@ -49,7 +49,7 @@ HRESULT SetPermissionSetProps (
 
 ## Requirements
 
- **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).
+ **Platforms:** See [.NET supported operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md).
 
  **Header:** Cor.h
 

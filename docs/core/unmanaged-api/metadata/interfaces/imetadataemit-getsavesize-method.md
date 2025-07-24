@@ -30,7 +30,7 @@ HRESULT GetSaveSize (
 ## Parameters
 
  `fSave`
- [in] A value of the [CorSaveSize](./corsavesize-enumeration.md) enumeration that specifies whether to get an accurate or approximate size. Only three values are valid: cssAccurate, cssQuick, and cssDiscardTransientCAs:
+ [in] A value of the [CorSaveSize](../enumerations/corsavesize-enumeration.md) enumeration that specifies whether to get an accurate or approximate size. Only three values are valid: cssAccurate, cssQuick, and cssDiscardTransientCAs:
 
 - cssAccurate returns the exact save size but takes longer to calculate.
 
@@ -51,13 +51,11 @@ HRESULT GetSaveSize (
 
 ## Requirements
 
- **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).
+ **Platforms:** See [.NET supported operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md).
 
  **Header:** Cor.h
 
  **Library:** Used as a resource in MSCorEE.dll
-
- **.NET versions:** [!INCLUDE[net_current_v11plus](../../../../includes/net-current-v11plus-md.md)]
 
 ## See also
 

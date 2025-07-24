@@ -204,7 +204,7 @@ dotnet-dsrouter client-client
 
 ## Collect a startup trace using dotnet-trace from a .NET application running on Android
 
-Sometimes it may be useful to collect a trace of an application from its startup. The following steps illustrate the process of doing so targeting a .NET application running on Android. Since `dotnet-dsrouter` is run using port forwarding, the same scenario works against applications running on a local emulator and on a physical device attached over USB. `dotnet-dsrouter` attempts to automatically locate the Android SDK and `adb` needed to set up port forwarding. Optionally set `$ANDROID_HOME` to specify a specific Android SDK path.
+Sometimes it may be useful to collect a trace of an application from its startup. The following steps illustrate the process of doing so targeting a .NET application running on Android. Since `dotnet-dsrouter` is run using port forwarding, the same scenario works against applications running on a local emulator and on a physical device attached over USB. `dotnet-dsrouter` attempts to automatically locate the Android SDK and `adb` needed to set up port forwarding. Optionally set `$ANDROID_HOME` to specify an Android SDK path.
 
 - Launch dotnet-dsrouter in server-server mode:
 

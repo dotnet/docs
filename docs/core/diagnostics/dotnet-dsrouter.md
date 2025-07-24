@@ -89,7 +89,7 @@ dotnet-dsrouter client-server
 
 - **`-fp, --forward-port <forwardPort>`**
 
-  Enables port forwarding. The values are `Android` or `iOS` for `TcpClient`, and only `Android` for `TcpServer`. For Android, optionally set $ANDROID_HOME to a valid Android SDK path.
+  Enables port forwarding. The values are `Android` or `iOS` for `TcpClient`, and only `Android` for `TcpServer`. For Android, optionally set `$ANDROID_HOME` to a valid Android SDK path.
 
 ## dotnet-dsrouter server-server
 
@@ -126,7 +126,7 @@ dotnet-dsrouter server-server
 
 - **`-fp, --forward-port <forwardPort>`**
 
-  Enables port forwarding. The values are `Android` or `iOS` for `TcpClient`, and only `Android` for `TcpServer`. For Android, optionally set $ANDROID_HOME to a valid Android SDK path.
+  Enables port forwarding. The values are `Android` or `iOS` for `TcpClient`, and only `Android` for `TcpServer`. For Android, optionally set `$ANDROID_HOME` to a valid Android SDK path.
 
 ## dotnet-dsrouter server-client
 
@@ -163,7 +163,7 @@ dotnet-dsrouter server-client
 
 - **`-fp, --forward-port <forwardPort>`**
 
-  Enables port forwarding. The values are `Android` or `iOS` for `TcpClient`, and only `Android` for `TcpServer`. For Android, optionally set $ANDROID_HOME to a valid Android SDK path.
+  Enables port forwarding. The values are `Android` or `iOS` for `TcpClient`, and only `Android` for `TcpServer`. For Android, optionally set `$ANDROID_HOME` to a valid Android SDK path.
 
 ## dotnet-dsrouter client-client
 
@@ -200,7 +200,7 @@ dotnet-dsrouter client-client
 
 - **`-fp, --forward-port <forwardPort>`**
 
-  Enables port forwarding. The values are `Android` or `iOS` for `TcpClient`, and only `Android` for `TcpServer`. For Android, optionally set $ANDROID_HOME to a valid Android SDK path.
+  Enables port forwarding. The values are `Android` or `iOS` for `TcpClient`, and only `Android` for `TcpServer`. For Android, optionally set `$ANDROID_HOME` to a valid Android SDK path.
 
 ## Collect a startup trace using dotnet-trace from a .NET application running on Android
 

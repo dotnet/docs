@@ -59,5 +59,5 @@ typedef struct {
 
 ## See also
 
-- [IMetaDataAssemblyEmit Interface](../interfaces/imtadataassemblyemit-interface.md)
+- [IMetaDataAssemblyEmit Interface](../interfaces/imetadataassemblyemit-interface.md)
 - [OSINFO Structure](osinfo-structure.md)

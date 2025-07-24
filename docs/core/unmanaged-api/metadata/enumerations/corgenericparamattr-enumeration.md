@@ -15,7 +15,7 @@ topic_type:
 ---
 # CorGenericParamAttr Enumeration
 
-Contains values that describe the <xref:System.Type> parameters for generic types, as used in calls to [IMetaDataEmit2::DefineGenericParam](../interfaces/imtadataemit2-definegenericparam-method.md).
+Contains values that describe the <xref:System.Type> parameters for generic types, as used in calls to [IMetaDataEmit2::DefineGenericParam](../interfaces/imetadataemit2-definegenericparam-method.md).
 
 ## Syntax
 

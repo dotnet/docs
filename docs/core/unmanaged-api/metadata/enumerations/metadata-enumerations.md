@@ -28,13 +28,13 @@ Contains values that describe the types of declarative security used by the comm
 Contains flag values that indicate the conditions under which an error message should be generated when metadata is emitted out of order.
 
 [CorFileFlags enumeration](corfileflags-enumeration.md)\
-Contains values that describe the type of file defined in a call to the[IMetaDataAssemblyEmit::DefineFile](../interfaces/imtadataassemblyemit-definefile-method.md) method.
+Contains values that describe the type of file defined in a call to the[IMetaDataAssemblyEmit::DefineFile](../interfaces/imetadataassemblyemit-definefile-method.md) method.
 
 [CorFileMapping enumeration](corfilemapping-enumeration.md)\
-Contains values that describe the type of file mapping that is returned from a call to the[IMetaDataInfo::GetFileMapping](../interfaces/imtadatainfo-getfilemapping-method.md) method.
+Contains values that describe the type of file mapping that is returned from a call to the[IMetaDataInfo::GetFileMapping](../interfaces/imetadatainfo-getfilemapping-method.md) method.
 
 [CorGenericParamAttr enumeration](corgenericparamattr-enumeration.md)\
-Contains values that describe the <xref:System.Type> parameters for generic types, as used in calls to the[IMetaDataEmit2::DefineGenericParam](../interfaces/imtadataemit2-definegenericparam-method.md) method.
+Contains values that describe the <xref:System.Type> parameters for generic types, as used in calls to the[IMetaDataEmit2::DefineGenericParam](../interfaces/imetadataemit2-definegenericparam-method.md) method.
 
 [CorImportOptions enumeration](corimportoptions-enumeration.md)\
 Contains flag values that control the behavior during importation of an assembly outside the current scope.
@@ -64,7 +64,7 @@ Contains flag values that influence notifications upon token movement.
 Contains flag values that control metadata behavior upon opening manifest files.
 
 [CorPEKind enumeration](corpekind-enumeration.md)\
-Contains values that describe a portable executable file, as returned from a call to the[IMetaDataImport2::GetPEKind](../interfaces/imtadataimport2-getpekind-method.md) method.
+Contains values that describe a portable executable file, as returned from a call to the[IMetaDataImport2::GetPEKind](../interfaces/imetadataimport2-getpekind-method.md) method.
 
 [CorPinvokeMap enumeration](corpinvokemap-enumeration.md)\
 Contains values that describe features of a PInvoke call.
@@ -88,8 +88,8 @@ Specifies flags to select options for thread safety.
 Contains values that indicate type metadata.
 
 [CorValidatorModuleType enumeration](corvalidatormoduletype-enumeration.md)\
-Provides values used by the[IMetaDataValidate](../interfaces/imtadatavalidate-interface.md) interface to specify the type of the module (PE file vs. .obj file).
+Provides values used by the[IMetaDataValidate](../interfaces/imetadatavalidate-interface.md) interface to specify the type of the module (PE file vs. .obj file).
 
 ## See also
 
-- [Metadata enumerations (.NET Framework)](../../../../framework/unmanaged-api/metadata/enumerations/metadata-enumerations.md)
+- [Metadata enumerations (.NET Framework)](../../../../framework/unmanaged-api/metadata/metadata-enumerations.md)

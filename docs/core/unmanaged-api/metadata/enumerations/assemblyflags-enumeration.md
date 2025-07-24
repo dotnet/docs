@@ -53,4 +53,4 @@ typedef enum {
 
 ## See also
 
-- [IMetaDataAssemblyEmit Interface](../interfaces/imtadataassemblyemit-interface.md)
+- [IMetaDataAssemblyEmit Interface](../interfaces/imetadataassemblyemit-interface.md)

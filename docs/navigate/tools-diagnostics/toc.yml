@@ -632,7 +632,7 @@ items:
               - name: Enumerations
                 items:
                   - name: LIBRARY_PROVIDER_INDEX_TYPE enumeration
-                    href: ../../core/unmanaged-api/debugging/libraryproviderindextype-enumeration.md
+                    href: ../../core/unmanaged-api/metadata/enumerations/../../core/unmanaged-api/debugging/libraryproviderindextype-enumeration.md
               - name: Function pointers
                 items:
                   - name: PSTARTUP_CALLBACK function pointer
@@ -642,70 +642,70 @@ items:
               - name: Enumerations
                 items:
                   - name: Overview
-                    href: metadata-enumerations.md
+                    href: ../../core/unmanaged-api/metadata/enumerations/metadata-enumerations.md
                   - name: AssemblyFlags enumeration
-                    href: assemblyflags-enumeration.md
+                    href: ../../core/unmanaged-api/metadata/enumerations/../../core/unmanaged-api/metadata/enumerations/assemblyflags-enumeration.md
                   - name: AssemblyRefFlags enumeration
-                    href: assemblyrefflags-enumeration.md
+                    href: ../../core/unmanaged-api/metadata/enumerations/assemblyrefflags-enumeration.md
                   - name: CorAssemblyFlags enumeration
-                    href: corassemblyflags-enumeration.md
+                    href: ../../core/unmanaged-api/metadata/enumerations/corassemblyflags-enumeration.md
                   - name: CorCheckDuplicatesFor enumeration
-                    href: corcheckduplicatesfor-enumeration.md
+                    href: ../../core/unmanaged-api/metadata/enumerations/corcheckduplicatesfor-enumeration.md
                   - name: CorDeclSecurity enumeration
-                    href: cordeclsecurity-enumeration.md
+                    href: ../../core/unmanaged-api/metadata/enumerations/cordeclsecurity-enumeration.md
                   - name: CorErrorIfEmitOutOfOrder enumeration
-                    href: corerrorifemitoutoforder-enumeration.md
+                    href: ../../core/unmanaged-api/metadata/enumerations/corerrorifemitoutoforder-enumeration.md
                   - name: CorFileFlags enumeration
-                    href: corfileflags-enumeration.md
+                    href: ../../core/unmanaged-api/metadata/enumerations/corfileflags-enumeration.md
                   - name: CorFileMapping enumeration
-                    href: corfilemapping-enumeration.md
+                    href: ../../core/unmanaged-api/metadata/enumerations/corfilemapping-enumeration.md
                   - name: CorGenericParamAttr enumeration
-                    href: corgenericparamattr-enumeration.md
+                    href: ../../core/unmanaged-api/metadata/enumerations/corgenericparamattr-enumeration.md
                   - name: CorImportOptions enumeration
-                    href: corimportoptions-enumeration.md
+                    href: ../../core/unmanaged-api/metadata/enumerations/corimportoptions-enumeration.md
                   - name: CorLinkerOptions enumeration
-                    href: corlinkeroptions-enumeration.md
+                    href: ../../core/unmanaged-api/metadata/enumerations/corlinkeroptions-enumeration.md
                   - name: CorLocalRefPreservation enumeration
-                    href: corlocalrefpreservation-enumeration.md
+                    href: ../../core/unmanaged-api/metadata/enumerations/corlocalrefpreservation-enumeration.md
                   - name: CorManifestResourceFlags enumeration
-                    href: cormanifestresourceflags-enumeration.md
+                    href: ../../core/unmanaged-api/metadata/enumerations/cormanifestresourceflags-enumeration.md
                   - name: CorMethodAttr enumeration
-                    href: cormethodattr-enumeration.md
+                    href: ../../core/unmanaged-api/metadata/enumerations/cormethodattr-enumeration.md
                   - name: CorMethodImpl enumeration
-                    href: cormethodimpl-enumeration.md
+                    href: ../../core/unmanaged-api/metadata/enumerations/cormethodimpl-enumeration.md
                   - name: CorMethodSemanticsAttr enumeration
-                    href: cormethodsemanticsattr-enumeration.md
+                    href: ../../core/unmanaged-api/metadata/enumerations/cormethodsemanticsattr-enumeration.md
                   - name: CorNotificationForTokenMovement enumeration
-                    href: cornotificationfortokenmovement-enumeration.md
+                    href: ../../core/unmanaged-api/metadata/enumerations/cornotificationfortokenmovement-enumeration.md
                   - name: CorOpenFlags enumeration
-                    href: coropenflags-enumeration.md
+                    href: ../../core/unmanaged-api/metadata/enumerations/coropenflags-enumeration.md
                   - name: CorPEKind enumeration
-                    href: corpekind-enumeration.md
+                    href: ../../core/unmanaged-api/metadata/enumerations/corpekind-enumeration.md
                   - name: CorPinvokeMap enumeration
-                    href: corpinvokemap-enumeration.md
+                    href: ../../core/unmanaged-api/metadata/enumerations/corpinvokemap-enumeration.md
                   - name: CorPropertyAttr enumeration
-                    href: corpropertyattr-enumeration.md
+                    href: ../../core/unmanaged-api/metadata/enumerations/corpropertyattr-enumeration.md
                   - name: CorRefToDefCheck enumeration
-                    href: correftodefcheck-enumeration.md
+                    href: ../../core/unmanaged-api/metadata/enumerations/correftodefcheck-enumeration.md
                   - name: CorSaveSize enumeration
-                    href: corsavesize-enumeration.md
+                    href: ../../core/unmanaged-api/metadata/enumerations/corsavesize-enumeration.md
                   - name: CorSetENC enumeration
-                    href: corsetenc-enumeration.md
+                    href: ../../core/unmanaged-api/metadata/enumerations/corsetenc-enumeration.md
                   - name: CorThreadSafetyOptions enumeration
-                    href: corthreadsafetyoptions-enumeration.md
+                    href: ../../core/unmanaged-api/metadata/enumerations/corthreadsafetyoptions-enumeration.md
                   - name: CorTypeAttr enumeration
-                    href: cortypeattr-enumeration.md
+                    href: ../../core/unmanaged-api/metadata/enumerations/cortypeattr-enumeration.md
                   - name: CorValidatorModuleType enumeration
-                    href: corvalidatormoduletype-enumeration.md
+                    href: ../../core/unmanaged-api/metadata/enumerations/corvalidatormoduletype-enumeration.md
               - name: Interfaces
                 items:
                   - name: Overview
                     href: ../../core/unmanaged-api/metadata/interfaces/imetadata-interfaces.md
                   - name: IMapToken interface
-                    href: imaptoken-interface.md
+                    href: ../../core/unmanaged-api/metadata/interfaces/imaptoken-interface.md
                     items:
                       - name: Map method
-                        href: imaptoken-map-method.md
+                        href: ../../core/unmanaged-api/metadata/interfaces/imaptoken-map-method.md
                   - name: IMetaDataAssemblyEmit interface
                     href: ../../core/unmanaged-api/metadata/interfaces/imetadataassemblyemit-interface.md
                     items:
@@ -1136,13 +1136,13 @@ items:
               - name: Structures
                 items:
                   - name: Overview
-                    href: metadata-structures.md
+                    href: ../../core/unmanaged-api/metadata/structures/metadata-structures.md
                   - name: ASSEMBLYMETADATA structure
-                    href: assemblymetadata-structure.md
+                    href: ../../core/unmanaged-api/metadata/structures/assemblymetadata-structure.md
                   - name: COR_FIELD_OFFSET structure
-                    href: cor-field-offset-structure.md
+                    href: ../../core/unmanaged-api/metadata/structures/cor-field-offset-structure.md
                   - name: OSINFO structure
-                    href: osinfo-structure.md
+                    href: ../../core/unmanaged-api/metadata/structures/osinfo-structure.md
           - name: Profiling
             items:
               - name: Overview
@@ -1158,13 +1158,13 @@ items:
               - name: Enumerations
                 items:
                   - name: COR_PRF_EVENTPIPE_LEVEL enumeration
-                    href: ../../core/unmanaged-api/profiling/cor-prf-eventpipe-level-enumeration.md
+                    href: ../../core/unmanaged-api/metadata/enumerations/../../core/unmanaged-api/profiling/cor-prf-eventpipe-level-enumeration.md
                   - name: COR_PRF_EVENTPIPE_PARAM_TYPE enumeration
-                    href: ../../core/unmanaged-api/profiling/cor-prf-eventpipe-param-type-enumeration.md
+                    href: ../../core/unmanaged-api/metadata/enumerations/../../core/unmanaged-api/profiling/cor-prf-eventpipe-param-type-enumeration.md
                   - name: COR_PRF_HANDLE_TYPE enumeration
-                    href: ../../core/unmanaged-api/profiling/cor-prf-handle-type-enumeration.md
+                    href: ../../core/unmanaged-api/metadata/enumerations/../../core/unmanaged-api/profiling/cor-prf-handle-type-enumeration.md
                   - name: COR_PRF_REJIT_FLAGS enumeration
-                    href: ../../core/unmanaged-api/profiling/cor-prf-rejit-flags-enumeration.md
+                    href: ../../core/unmanaged-api/metadata/enumerations/../../core/unmanaged-api/profiling/cor-prf-rejit-flags-enumeration.md
               - name: Interfaces
                 items:
                   - name: ICorProfilerCallback10 interface

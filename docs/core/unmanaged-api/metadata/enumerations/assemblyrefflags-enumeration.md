@@ -39,5 +39,5 @@ typedef enum {
 
 ## See also
 
-- [IMetaDataAssemblyEmit Interface](../interfaces/imtadataassemblyemit-interface.md)
-- [DefineAssemblyRef Method](../interfaces/imtadataassemblyemit-defineassemblyref-method.md)
+- [IMetaDataAssemblyEmit Interface](../interfaces/imetadataassemblyemit-interface.md)
+- [DefineAssemblyRef Method](../interfaces/imetadataassemblyemit-defineassemblyref-method.md)

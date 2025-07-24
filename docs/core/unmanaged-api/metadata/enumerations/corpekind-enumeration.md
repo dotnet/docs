@@ -15,7 +15,7 @@ topic_type:
 ---
 # CorPEKind Enumeration
 
-Contains values that describe a portable executable (PE) file, as returned from a call to [IMetaDataImport2::GetPEKind](../interfaces/imtadataimport2-getpekind-method.md).
+Contains values that describe a portable executable (PE) file, as returned from a call to [IMetaDataImport2::GetPEKind](../interfaces/imetadataimport2-getpekind-method.md).
 
 ## Syntax
 

@@ -34,7 +34,7 @@ The Native AOT deployment model uses an ahead-of-time compiler to compile IL to 
 - Fedora (39+)
 
   ```sh
-  sudo dnf install clang zlib-devel
+  sudo dnf install clang zlib-devel zlib-ng-devel zlib-ng-compat-devel
   ```
 
 # [RHEL](#tab/linux-rhel)

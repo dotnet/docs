@@ -10,7 +10,7 @@ ms.author: alexwolf
 
 # Quickstart: Assess and migrate a .NET Project with GitHub Copilot app modernization for .NET (Preview)
 
-In this quickstart, you assess and migrate a .NET project using [GitHub Copilot app modernization for .NET (Preview)](https://marketplace.visualstudio.com/items?itemName=vscjava.appmod-dotnet). You complete the following tasks:
+In this quickstart, you assess and migrate a .NET project using [GitHub Copilot app modernization for .NET (Preview)](https://aka.ms/appmod-dotnet-marketplace). You complete the following tasks:
 
 - Install and configure the GitHub Copilot app modernization for .NET extension
 - Assess a sample project (Contoso University)

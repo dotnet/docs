@@ -1,6 +1,6 @@
 ---
 ms.topic: include
-ms.date: 02/12/2025
+ms.date: 07/25/2025
 ---
 
 [!INCLUDE [implement-service-principal-concepts](implement-service-principal-concepts.md)]
@@ -34,7 +34,3 @@ Azure services are accessed using specialized client classes from the various Az
 1. Pass the `ClientSecretCredential` instance to the `UseCredential` method.
 
 :::code language="csharp" source="../snippets/authentication/local-dev-service-principal/Program.cs" id="snippet_ClientSecretCredential_UseCredential":::
-
-An alternative to the `UseCredential` method is to provide the credential to the service client directly:
-
-:::code language="csharp" source="../snippets/authentication/local-dev-service-principal/Program.cs" id="snippet_ClientSecretCredential":::

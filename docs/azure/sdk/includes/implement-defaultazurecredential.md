@@ -1,6 +1,6 @@
 ---
 ms.topic: include
-ms.date: 04/25/2025
+ms.date: 07/25/2025
 ---
 
 ## Authenticate to Azure services from your app
@@ -37,7 +37,3 @@ Azure services are accessed using specialized client classes from the various Az
 1. Pass an instance of `DefaultAzureCredential` to the `UseCredential` method.
 
 :::code language="csharp" source="../snippets/authentication/local-dev-account/Program.cs" id="snippet_DefaultAzureCredential_UseCredential":::
-
-An alternative to the `UseCredential` method is to provide the credential to the service client directly:
-
-:::code language="csharp" source="../snippets/authentication/local-dev-account/Program.cs" id="snippet_DefaultAzureCredential":::

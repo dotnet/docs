@@ -186,7 +186,7 @@ After the project reference has been added, configure the _Package.wxs_ file. Op
         <MajorUpgrade DowngradeErrorMessage="A later version of [ProductName] is already installed. Setup will now exit." />
 
         <!-- Define the directory structure -->
-        <Directory Id="TARGETDIR" Name="SourceDir">
+        <Directory Id="TARGETDIR" Name="SourceDir" override="true">
             <Directory Id="ProgramFiles64Folder">
 
                 <!-- Create a folder inside program files -->

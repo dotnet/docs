@@ -124,6 +124,10 @@ Note that those members could perform any arbitrary work, the syntax is effectiv
 
 ## Optional Parameters
 
+F# supports two distinct forms of optional parameters for methods, each serving different purposes:
+
+### Optional Arguments with Late Defaults (F# Native)
+
 You can specify an optional parameter for a method by using a question mark in front of the parameter name. From the callee's perspective, optional parameters are interpreted as the F# option type, so you can query them in the regular way that option types are queried, by using a `match` expression with `Some` and `None`. Optional parameters are permitted only on members, not on functions created by using `let` bindings.
 
 You can pass existing optional values to method by parameter name, such as `?arg=None` or `?arg=Some(3)` or `?arg=arg`. This can be useful when building a method that passes optional arguments to another method.
@@ -145,7 +149,9 @@ Baud Rate: 9600 Duplex: Full Parity: false
 Baud Rate: 4800 Duplex: Half Parity: false
 ```
 
-For the purposes of C# and Visual Basic interop you can use the attributes `[<Optional; DefaultParameterValue<(...)>]` in F#, so that callers will see an argument as optional. This is equivalent to defining the argument as optional in C# as in `MyMethod(int i = 3)`.
+### Optional Arguments with Early Defaults (C# Interop)
+
+For the purposes of C# and Visual Basic interop you can use the attributes `[<Optional; DefaultParameterValue<(...)>]` in F#, so that callers will see an argument as optional. This is equivalent to defining the argument as optional in C# as in `MyMethod(int i = 3)`. This form was introduced in F# 4.1 to help facilitate interoperation with C# code.
 
 ```fsharp
 open System

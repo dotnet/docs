@@ -95,16 +95,7 @@ Overloaded methods are methods that have identical names in a given type but tha
 
 ## Optional Arguments
 
-Starting with F# 4.1, you can also have optional arguments with a default parameter value in methods.  This is to help facilitate interoperation with C# code.  The following example demonstrates the syntax:
-
-```fsharp
-open System.Runtime.InteropServices
-// A class with a method M, which takes in an optional integer argument.
-type C() =
-    member _.M([<Optional; DefaultParameterValue(12)>] i) = i + 1
-```
-
-Note that the value passed in for `DefaultParameterValue` must match the input type.  In the above sample, it is an `int`.  Attempting to pass a non-integer value into `DefaultParameterValue` would result in a compile error.
+F# supports optional arguments for methods. For detailed information about the different forms of optional arguments available in F#, see [Optional Parameters](../parameters-and-arguments.md#optional-parameters).
 
 ## Example: Properties and Methods
 

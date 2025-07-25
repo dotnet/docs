@@ -42,7 +42,6 @@ This article details the settings you can use to configure threading in .NET.
 | **runtimeconfig.json** | `System.Threading.DefaultStackSize` | A decimal integer that specifies the size of stack | .NET 10 |
 | **Environment variable** | `DOTNET_Thread_DefaultStackSize` | A hexadecimal integer that specifies the size of stack | .NET 10 |
 
-
 ## Minimum threads
 
 - Specifies the minimum number of threads for the worker thread pool.

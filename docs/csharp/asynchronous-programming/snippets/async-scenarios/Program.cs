@@ -147,9 +147,9 @@ public class Program
 
     // <ExtractDataFromNetwork>
     [HttpGet, Route("DotNetCount")]
-    static public async Task<int> GetDotNetCount(string URL)
+    static public async Task<int> GetDotNetCountAsync(string URL)
     {
-        // Suspends GetDotNetCount() to allow the caller (the web server)
+        // Suspends GetDotNetCountAsync() to allow the caller (the web server)
         // to accept another request, rather than blocking on this one.
         var html = await s_httpClient.GetStringAsync(URL);
         return Regex.Matches(html, @"\.NET").Count;
@@ -164,7 +164,7 @@ public class Program
         int total = 0;
         foreach (string url in s_urlList)
         {
-            var result = await GetDotNetCount(url);
+            var result = await GetDotNetCountAsync(url);
             Console.WriteLine($"{url}: {result}");
             total += result;
         }

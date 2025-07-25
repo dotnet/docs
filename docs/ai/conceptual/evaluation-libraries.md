@@ -11,7 +11,7 @@ The Microsoft.Extensions.AI.Evaluation libraries simplify the process of evaluat
 The evaluation libraries, which are built on top of the [Microsoft.Extensions.AI abstractions](../microsoft-extensions-ai.md), are composed of the following NuGet packages:
 
 - [📦 Microsoft.Extensions.AI.Evaluation](https://www.nuget.org/packages/Microsoft.Extensions.AI.Evaluation) – Defines the core abstractions and types for supporting evaluation.
-- [📦 Microsoft.Extensions.AI.Evaluation.NLP](https://www.nuget.org/packages/Microsoft.Extensions.AI.Evaluation.NLP) - Contains [evaluators](#nlp-evaluators) that evaluate the quality of an LLM response by comparing it to a reference response. These evaluators aren't LLM or AI-based; they use older natural language processing (NLP) techniques to perform text comparisons.
+- [📦 Microsoft.Extensions.AI.Evaluation.NLP](https://www.nuget.org/packages/Microsoft.Extensions.AI.Evaluation.NLP) - Contains [evaluators](#nlp-evaluators) that evaluate the similarity of an LLM's response text to one or more reference responses using natural language processing (NLP) metrics. These evaluators aren't LLM or AI-based; they use traditional NLP techniques such as text tokenization and n-gram analysis to evaluate text similarity.
 - [📦 Microsoft.Extensions.AI.Evaluation.Quality](https://www.nuget.org/packages/Microsoft.Extensions.AI.Evaluation.Quality) – Contains [evaluators](#quality-evaluators) that assess the quality of LLM responses in an app according to metrics such as relevance and completeness. These evaluators use the LLM directly to perform evaluations.
 - [📦 Microsoft.Extensions.AI.Evaluation.Safety](https://www.nuget.org/packages/Microsoft.Extensions.AI.Evaluation.Safety) – Contains [evaluators](#safety-evaluators), such as the `ProtectedMaterialEvaluator` and `ContentHarmEvaluator`, that use the [Azure AI Foundry](/azure/ai-foundry/) Evaluation service to perform evaluations.
 - [📦 Microsoft.Extensions.AI.Evaluation.Reporting](https://www.nuget.org/packages/Microsoft.Extensions.AI.Evaluation.Reporting) – Contains support for caching LLM responses, storing the results of evaluations, and generating reports from that data.
@@ -54,9 +54,9 @@ NLP evaluators evaluate the quality of an LLM response by comparing it to a refe
 
 | Evaluator type                                                            | Metric             | Description |
 |---------------------------------------------------------------------------|--------------------|-------------|
-| <xref:Microsoft.Extensions.AI.Evaluation.NLP.BLEUEvaluator>  | `BLEU` | Evaluates a response by comparing it to a reference response using the bilingual evaluation understudy (BLEU) algorithm. This algorithm is commonly used to evaluate the quality of machine-translation or text-generation tasks.  |
-| <xref:Microsoft.Extensions.AI.Evaluation.NLP.GLEUEvaluator> | `GLEU` | Measures the similarity between the generated response and one or more reference responses using the GLEU algorithm (n-gram overlap). |
-| <xref:Microsoft.Extensions.AI.Evaluation.NLP.F1Evaluator> | `F1` | Evaluates a response by comparing it to a reference response using the *F1* scoring algorithm (the ratio of the number of shared words between the generated response and the reference response) |
+| <xref:Microsoft.Extensions.AI.Evaluation.NLP.BLEUEvaluator>  | `BLEU` | Evaluates a response by comparing it to one or more reference responses using the bilingual evaluation understudy (BLEU) algorithm. This algorithm is commonly used to evaluate the quality of machine-translation or text-generation tasks.  |
+| <xref:Microsoft.Extensions.AI.Evaluation.NLP.GLEUEvaluator> | `GLEU` | Measures the similarity between the generated response and one or more reference responses using the Google BLEU (GLEU) algorithm, a variant of the BLEU algorithm that's optimized for sentence-level evaluation. |
+| <xref:Microsoft.Extensions.AI.Evaluation.NLP.F1Evaluator> | `F1` | Evaluates a response by comparing it to a reference response using the *F1* scoring algorithm (the ratio of the number of shared words between the generated response and the reference response). |
 
 ### Safety evaluators
 

@@ -31,6 +31,18 @@ This article details the settings you can use to configure threading in .NET.
 | **runtimeconfig.json** | N/A | N/A |
 | **Environment variable** | `COMPlus_Thread_AssignCpuGroups` or `DOTNET_Thread_AssignCpuGroups` | `0` - disabled<br/>`1` - enabled |
 
+## Set the size of stack for VM-created threads
+
+- The default size of stack is dictated by VM and OS policies.
+- This setting allows overriding the default.
+- The specified size should be between 64 kB and 2 GB and a multiple of the natural allocation granularity of the OS.
+
+| | Setting name | Values | Version introduced |
+| - | - | - | - |
+| **runtimeconfig.json** | `System.Threading.DefaultStackSize` | A decimal integer that specifies the size of stack | .NET 10 |
+| **Environment variable** | `DOTNET_Thread_DefaultStackSize` | A hexadecimal integer that specifies the size of stack | .NET 10 |
+
+
 ## Minimum threads
 
 - Specifies the minimum number of threads for the worker thread pool.

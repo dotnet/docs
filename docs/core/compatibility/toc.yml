@@ -50,6 +50,8 @@ items:
             items:
               - name: "ProviderAliasAttribute moved to Microsoft.Extensions.Logging.Abstractions assembly"
                 href: extensions/10.0/provideraliasattribute-moved-assembly.md
+              - name: "Removed DynamicallyAccessedMembers annotation from trim-unsafe Microsoft.Extensions.Configuration code"
+                href: extensions/10.0/dynamically-accessed-members-configuration.md
           - name: Globalization
             items:
               - name: Environment variable renamed to DOTNET_ICU_VERSION_OVERRIDE
@@ -62,6 +64,8 @@ items:
                 href: interop/10.0/search-assembly-directory.md
           - name: Networking
             items:
+              - name: HTTP/3 support disabled by default with PublishTrimmed
+                href: networking/10.0/http3-disabled-with-publishtrimmed.md
               - name: HttpClient/SslStream default certificate revocation check mode changed to Online
                 href: networking/10.0/ssl-certificate-revocation-check-default.md
               - name: Streaming HTTP responses enabled by default in browser HTTP clients

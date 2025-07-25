@@ -27,8 +27,8 @@ The `System.Net.NameResolution` metrics report DNS name resolution from <xref:Sy
 
 | Attribute  | Type | Description  | Examples  | Presence |
 |---|---|---|---|---|
-| `dns.question.name` | string | The name being queried. | `www.example.com`; `dot.net` | Always |
-| `error.type` | string | A well-known error string or the full type name of an exception that occurred. | `host_not_found`; `System.Net.Sockets.SocketException` | If an error occurred |
+| `dns.question.name` | `string` | The name being queried. | `www.example.com`; `dot.net` | Always |
+| `error.type` | `string` | A well-known error string or the full type name of an exception that occurred. | `host_not_found`; `System.Net.Sockets.SocketException` | If an error occurred |
 
 This metric measures the time take to make DNS requests. These requests can occur by calling methods on
 <xref:System.Net.Dns> or indirectly within higher level APIs on types such as <xref:System.Net.Http.HttpClient>.
@@ -66,12 +66,12 @@ The `System.Net.Http` metrics report HTTP request and connection information fro
 
 | Attribute  | Type | Description  | Examples  | Presence |
 |---|---|---|---|---|
-| `http.connection.state` | string | State of HTTP connection in the HTTP connection pool. | `active`; `idle` | Always |
-| `network.protocol.version` | string | Version of the HTTP protocol used. | `1.1`; `2` | Always |
-| `server.address` | string | Host identifier of the ["URI origin"](https://www.rfc-editor.org/rfc/rfc9110.html#name-uri-origin) HTTP request is sent to. | `example.com` | Always |
-| `server.port` | int | Port identifier of the ["URI origin"](https://www.rfc-editor.org/rfc/rfc9110.html#name-uri-origin) HTTP request is sent to. | `80`; `8080`; `443` | If not default (`80` for `http` scheme, `443` for `https`) |
-| `network.peer.address` | string | Peer IP address of the socket connection. | `10.5.3.2` | Always |
-| `url.scheme` | string | The [URI scheme](https://www.rfc-editor.org/rfc/rfc3986#section-3.1) component identifying the used protocol. | `http`; `https`; `ftp` | Always |
+| `http.connection.state` | `string` | State of HTTP connection in the HTTP connection pool. | `active`; `idle` | Always |
+| `network.protocol.version` | `string` | Version of the HTTP protocol used. | `1.1`; `2` | Always |
+| `server.address` | `string` | Host identifier of the ["URI origin"](https://www.rfc-editor.org/rfc/rfc9110.html#name-uri-origin) HTTP request is sent to. | `example.com` | Always |
+| `server.port` | `int` | Port identifier of the ["URI origin"](https://www.rfc-editor.org/rfc/rfc9110.html#name-uri-origin) HTTP request is sent to. | `80`; `8080`; `443` | If not default (`80` for `http` scheme, `443` for `https`) |
+| `network.peer.address` | `string` | Peer IP address of the socket connection. | `10.5.3.2` | Always |
+| `url.scheme` | `string` | The [URI scheme](https://www.rfc-editor.org/rfc/rfc3986#section-3.1) component identifying the used protocol. | `http`; `https`; `ftp` | Always |
 
 <xref:System.Net.Http.HttpClient>, when configured to use the default <xref:System.Net.Http.SocketsHttpHandler>, maintains a cached pool of network connections for sending HTTP messages. This metric counts how many connections are currently in the pool. Active connections are handling active requests. Active connects could be transmitting data or awaiting the client or server. Idle connections aren't handling any requests, but are left open so that future requests can be handled more quickly.
 
@@ -85,11 +85,11 @@ Available starting in: .NET 8
 
 | Attribute  | Type | Description  | Examples  | Presence |
 |---|---|---|---|---|
-| `network.protocol.version` | string | Version of the HTTP protocol used. | `1.1`; `2` | Always |
-| `server.address` | string | Host identifier of the ["URI origin"](https://www.rfc-editor.org/rfc/rfc9110.html#name-uri-origin) HTTP request is sent to. | `example.com` | Always |
-| `server.port` | int | Port identifier of the ["URI origin"](https://www.rfc-editor.org/rfc/rfc9110.html#name-uri-origin) HTTP request is sent to. | `80`; `8080`; `443` | If not default (`80` for `http` scheme, `443` for `https`) |
-| `network.peer.address` | string | IP address of the socket connection. | `10.5.3.2` | Always |
-| `url.scheme` | string | The [URI scheme](https://www.rfc-editor.org/rfc/rfc3986#section-3.1) component identifying the used protocol. | `http`; `https`; `ftp` | Always |
+| `network.protocol.version` | `string` | Version of the HTTP protocol used. | `1.1`; `2` | Always |
+| `server.address` | `string` | Host identifier of the ["URI origin"](https://www.rfc-editor.org/rfc/rfc9110.html#name-uri-origin) HTTP request is sent to. | `example.com` | Always |
+| `server.port` | `int` | Port identifier of the ["URI origin"](https://www.rfc-editor.org/rfc/rfc9110.html#name-uri-origin) HTTP request is sent to. | `80`; `8080`; `443` | If not default (`80` for `http` scheme, `443` for `https`) |
+| `network.peer.address` | `string` | IP address of the socket connection. | `10.5.3.2` | Always |
+| `url.scheme` | `string` | The [URI scheme](https://www.rfc-editor.org/rfc/rfc3986#section-3.1) component identifying the used protocol. | `http`; `https`; `ftp` | Always |
 
 This metric is only captured when <xref:System.Net.Http.HttpClient> is configured to use the default <xref:System.Net.Http.SocketsHttpHandler>.
 
@@ -105,13 +105,13 @@ Available starting in: .NET 8
 
 | Attribute  | Type | Description  | Examples  | Presence |
 |---|---|---|---|---|
-| `error.type` | string | Request failure reason: one of the [HTTP request errors](xref:System.Net.Http.HttpRequestError) in snake_case, or a full exception type, or an HTTP 4xx/5xx status code. | `System.Threading.Tasks.TaskCanceledException`; `name_resolution_error`; `secure_connection_error` ; `404` | If request has failed. |
-| `http.request.method` | string | HTTP request method. | `GET`; `POST`; `HEAD`; `_OTHER` [2] | Always |
-| `http.response.status_code` | int | [HTTP response status code](https://tools.ietf.org/html/rfc7231#section-6). | `200` | If response was received. |
-| `network.protocol.version` | string | Version of the HTTP protocol used. | `1.1`; `2` | If response was received. |
-| `server.address` | string | Host identifier of the ["URI origin"](https://www.rfc-editor.org/rfc/rfc9110.html#name-uri-origin) HTTP request is sent to. | `example.com` | Always |
-| `server.port` | int | Port identifier of the ["URI origin"](https://www.rfc-editor.org/rfc/rfc9110.html#name-uri-origin) HTTP request is sent to. | `80`; `8080`; `443` | Depends on .NET version. [3] |
-| `url.scheme` | string | The [URI scheme](https://www.rfc-editor.org/rfc/rfc3986#section-3.1) component identifying the used protocol. | `http`; `https`; `ftp` | Always |
+| `error.type` | `string` | Request failure reason: one of the [HTTP request errors](xref:System.Net.Http.HttpRequestError) in snake_case, or a full exception type, or an HTTP 4xx/5xx status code. | `System.Threading.Tasks.TaskCanceledException`; `name_resolution_error`; `secure_connection_error` ; `404` | If request has failed. |
+| `http.request.method` | `string` | HTTP request method. | `GET`; `POST`; `HEAD`; `_OTHER` [2] | Always |
+| `http.response.status_code` | `int` | [HTTP response status code](https://tools.ietf.org/html/rfc7231#section-6). | `200` | If response was received. |
+| `network.protocol.version` | `string` | Version of the HTTP protocol used. | `1.1`; `2` | If response was received. |
+| `server.address` | `string` | Host identifier of the ["URI origin"](https://www.rfc-editor.org/rfc/rfc9110.html#name-uri-origin) HTTP request is sent to. | `example.com` | Always |
+| `server.port` | `int` | Port identifier of the ["URI origin"](https://www.rfc-editor.org/rfc/rfc9110.html#name-uri-origin) HTTP request is sent to. | `80`; `8080`; `443` | Depends on .NET version. [3] |
+| `url.scheme` | `string` | The [URI scheme](https://www.rfc-editor.org/rfc/rfc3986#section-3.1) component identifying the used protocol. | `http`; `https`; `ftp` | Always |
 
 **[1] `error.type`:** If the request has failed, the value is set to one of the following:
 
@@ -143,11 +143,11 @@ Available starting in: .NET 8
 
 | Attribute  | Type | Description  | Examples  | Presence |
 |---|---|---|---|---|
-| `http.request.method` | string | HTTP request method. | `GET`; `POST`; `HEAD` | Always |
-| `network.protocol.version` | string | Version of the HTTP protocol used. | `1.1`; `2` | Always |
-| `server.address` | string | Host identifier of the ["URI origin"](https://www.rfc-editor.org/rfc/rfc9110.html#name-uri-origin) HTTP request is sent to. | `example.com` | Always |
-| `server.port` | int | Port identifier of the ["URI origin"](https://www.rfc-editor.org/rfc/rfc9110.html#name-uri-origin) HTTP request is sent to. | `80`; `8080`; `443` | If not default (`80` for `http` scheme, `443` for `https`) |
-| `url.scheme` | string | The [URI scheme](https://www.rfc-editor.org/rfc/rfc3986#section-3.1) component identifying the used protocol. | `http`; `https`; `ftp` | Always |
+| `http.request.method` | `string` | HTTP request method. | `GET`; `POST`; `HEAD` | Always |
+| `network.protocol.version` | `string` | Version of the HTTP protocol used. | `1.1`; `2` | Always |
+| `server.address` | `string` | Host identifier of the ["URI origin"](https://www.rfc-editor.org/rfc/rfc9110.html#name-uri-origin) HTTP request is sent to. | `example.com` | Always |
+| `server.port` | `int` | Port identifier of the ["URI origin"](https://www.rfc-editor.org/rfc/rfc9110.html#name-uri-origin) HTTP request is sent to. | `80`; `8080`; `443` | If not default (`80` for `http` scheme, `443` for `https`) |
+| `url.scheme` | `string` | The [URI scheme](https://www.rfc-editor.org/rfc/rfc3986#section-3.1) component identifying the used protocol. | `http`; `https`; `ftp` | Always |
 
 <xref:System.Net.Http.HttpClient>, when configured to use the default <xref:System.Net.Http.SocketsHttpHandler>, sends HTTP requests using a pool of network connections. If all connections are busy handling other requests, new requests are placed in a queue and wait until a network connection is available for use. This instrument measures the amount of time HTTP requests spend waiting in that queue, prior to anything being sent across the network.
 
@@ -161,10 +161,10 @@ Available starting in: .NET 8
 
 | Attribute  | Type | Description  | Examples  | Presence |
 |---|---|---|---|---|
-| `http.request.method` | string | HTTP request method. | `GET`; `POST`; `HEAD` | Always |
-| `server.address` | string | Host identifier of the ["URI origin"](https://www.rfc-editor.org/rfc/rfc9110.html#name-uri-origin) HTTP request is sent to. | `example.com` | Always |
-| `server.port` | int | Port identifier of the ["URI origin"](https://www.rfc-editor.org/rfc/rfc9110.html#name-uri-origin) HTTP request is sent to. | `80`; `8080`; `443` | If not default (`80` for `http` scheme, `443` for `https`) |
-| `url.scheme` | string | The [URI scheme](https://www.rfc-editor.org/rfc/rfc3986#section-3.1) component identifying the used protocol. | `http`; `https`; `ftp` | Always |
+| `http.request.method` | `string` | HTTP request method. | `GET`; `POST`; `HEAD` | Always |
+| `server.address` | `string` | Host identifier of the ["URI origin"](https://www.rfc-editor.org/rfc/rfc9110.html#name-uri-origin) HTTP request is sent to. | `example.com` | Always |
+| `server.port` | `int` | Port identifier of the ["URI origin"](https://www.rfc-editor.org/rfc/rfc9110.html#name-uri-origin) HTTP request is sent to. | `80`; `8080`; `443` | If not default (`80` for `http` scheme, `443` for `https`) |
+| `url.scheme` | `string` | The [URI scheme](https://www.rfc-editor.org/rfc/rfc3986#section-3.1) component identifying the used protocol. | `http`; `https`; `ftp` | Always |
 
 This metric counts how many requests are considered active. Requests are active for the same time period that is measured by the [http.client.request.duration](#metric-httpclientrequestduration) instrument.
 

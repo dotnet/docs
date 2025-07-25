@@ -30,7 +30,7 @@ You can enable these metrics by calling the <xref:Microsoft.Extensions.Dependenc
 
 | Attribute | Type | Description | Examples | Presence |
 |---|---|---|---|---|
-| `dotnet.health_check.status` | string | The health status of an application. | `Healthy`; `Unhealthy` | Always |
+| `dotnet.health_check.status` | `string` | The health status of an application. | `Healthy`; `Unhealthy` | Always |
 
 `dotnet.health_check.status` is one of the following:
 
@@ -50,8 +50,8 @@ Available starting in: .NET 8.0.
 
 | Attribute | Type | Description | Examples | Presence |
 |---|---|---|---|---|
-| `dotnet.health_check.name` | string | The name of the health check. | `ApplicationLifecycle` | Always |
-| `dotnet.health_check.status` | string | The health status of an application. | `Healthy`; `Unhealthy` | Always |
+| `dotnet.health_check.name` | `string` | The name of the health check. | `ApplicationLifecycle` | Always |
+| `dotnet.health_check.status` | `string` | The health status of an application. | `Healthy`; `Unhealthy` | Always |
 
 `dotnet.health_check.status` is one of the following:
 

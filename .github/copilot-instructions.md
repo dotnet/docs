@@ -1,3 +1,5 @@
+When you're assigned an issue, after you've completed your work and the workflows (status checks) have run, check to make sure there are no build warnings under the OpenPublishing.Build status check. If there are, open the build report (under View Details) and resolve any build warnings you introduced.
+
 When writing documentation, follow the following guidelines:
 
 Unless otherwise specified, all .NET content refers to modern .NET (not .NET Framework).

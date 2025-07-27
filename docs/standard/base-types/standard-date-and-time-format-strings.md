@@ -30,7 +30,7 @@ A standard date and time format string uses a single character as the format spe
 
 ## Table of format specifiers
 
-<a name="table"></a> The following table describes the standard date and time format specifiers. Unless otherwise noted, a particular standard date and time format specifier produces an identical string representation regardless of whether it is used with a <xref:System.DateTime> or a <xref:System.DateTimeOffset> value. See [Notes](#notes) for additional information about using standard date and time format strings with <xref:System.DateOnly> and <xref:System.TimeOnly> values. See [Control Panel Settings](#control-panel-settings) and [DateTimeFormatInfo Properties](#datetimeformatinfo-properties) for additional information about using standard date and time format strings.
+<a name="table"></a> The following table describes the standard date and time format specifiers. Unless otherwise noted, a particular standard date and time format specifier produces an identical string representation regardless of whether it is used with a <xref:System.DateTime> or a <xref:System.DateTimeOffset> value. Not all format specifiers can be used with <xref:System.DateOnly> and <xref:System.TimeOnly> values; for additional information, see [DateOnly and TimeOnly formatting](#dateonly-and-timeonly-formatting). For information about how regional settings on Windows and the current <xref:System.Globalization.DateTimeFormatInfo> object can affect date and time formatting, see [Control Panel Settings](#control-panel-settings) and [DateTimeFormatInfo Properties](#datetimeformatinfo-properties).
 
 |Format specifier|Description|Examples|
 |----------------------|-----------------|--------------|
@@ -84,7 +84,7 @@ In some cases, the standard format string serves as a convenient abbreviation fo
 |"s"|<xref:System.Globalization.DateTimeFormatInfo.SortableDateTimePattern%2A>|yyyy'-'MM'-'dd'T'HH':'mm':'ss|
 |"u"|<xref:System.Globalization.DateTimeFormatInfo.UniversalSortableDateTimePattern%2A>|yyyy'-'MM'-'dd HH':'mm':'ss'Z'|
 
-Standard format strings can also be used in parsing operations with the <xref:System.DateTime.ParseExact%2A?displayProperty=nameWithType>, <xref:System.DateTimeOffset.ParseExact%2A?displayProperty=nameWithType>, <xref:System.DateOnly.ParseExact%2A?displayProperty=nameWithType>, or <xref:System.TimeOnly.ParseExact%2A?displayProperty=nameWithType> methods, which require an input string to exactly conform to a particular pattern for the parse operation to succeed. Many standard format strings map to multiple custom format strings, so a date and time value can be represented in a variety of formats and the parse operation will still succeed. You can determine the custom format string or strings that correspond to a standard format string by calling the <xref:System.Globalization.DateTimeFormatInfo.GetAllDateTimePatterns%28System.Char%29?displayProperty=nameWithType> method. The following example displays the custom format strings that map to the "d" (short date pattern) standard format string.
+Standard format strings can also be used in parsing operations with the <xref:System.DateTime.ParseExact%2A?displayProperty=nameWithType>, <xref:System.DateTimeOffset.ParseExact%2A?displayProperty=nameWithType>, <xref:System.DateOnly.ParseExact%2A?displayProperty=nameWithType>, and <xref:System.TimeOnly.ParseExact%2A?displayProperty=nameWithType> methods, which require an input string to exactly conform to a particular pattern for the parse operation to succeed. Many standard format strings map to multiple custom format strings, so a date and time value can be represented in a variety of formats and the parse operation will still succeed. You can determine the custom format string or strings that correspond to a standard format string by calling the <xref:System.Globalization.DateTimeFormatInfo.GetAllDateTimePatterns%28System.Char%29?displayProperty=nameWithType> method. The following example displays the custom format strings that map to the "d" (short date pattern) standard format string.
 
 [!code-csharp[Formatting.DateAndTime.Standard#17](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Standard/cs/stdandparsing1.cs#17)]
 [!code-vb[Formatting.DateAndTime.Standard#17](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Standard/vb/stdandparsing1.vb#17)]
@@ -465,9 +465,7 @@ The following example uses the "y" format specifier to display a date and time v
 
 <a name="Notes"></a>
 
-## Notes
-
-### DateOnly and TimeOnly formatting
+## DateOnly and TimeOnly formatting
 
 <xref:System.DateOnly> and <xref:System.TimeOnly> types support a subset of the standard date and time format strings:
 

@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataImport::GetModuleFromScope"
-  - "IMetaDataImport::GetModuleFromScope method [.NET Framework metadata]"
+  - "IMetaDataImport::GetModuleFromScope method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -37,7 +37,7 @@ HRESULT GetModuleFromScope (
 
  **Header:** Cor.h
 
- **Library:** Included as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

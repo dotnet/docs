@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataAssemblyImport::GetExportedTypeProps"
-  - "IMetaDataAssemblyImport::GetExportedTypeProps method [.NET Framework metadata]"
+  - "IMetaDataAssemblyImport::GetExportedTypeProps method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -61,7 +61,7 @@ HRESULT GetExportedTypeProps (
 
  **Header:** Cor.h
 
- **Library:** Used as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

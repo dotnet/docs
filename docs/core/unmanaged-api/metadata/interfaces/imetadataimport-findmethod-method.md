@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataImport::FindMethod"
-  - "IMetaDataImport::FindMethod method [.NET Framework metadata]"
+  - "IMetaDataImport::FindMethod method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -61,7 +61,7 @@ HRESULT FindMethod (
 
  **Header:** Cor.h
 
- **Library:** Included as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

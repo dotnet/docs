@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataTables::GetGuidHeapSize"
-  - "IMetaDataTables::GetGuidHeapSize method [.NET Framework metadata]"
+  - "IMetaDataTables::GetGuidHeapSize method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -37,7 +37,7 @@ HRESULT GetGuidHeapSize (
 
  **Header:** Cor.h
 
- **Library:** Used as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

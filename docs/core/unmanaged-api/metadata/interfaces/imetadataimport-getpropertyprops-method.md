@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataImport::GetPropertyProps"
-  - "IMetaDataImport::GetPropertyProps method [.NET Framework metadata]"
+  - "IMetaDataImport::GetPropertyProps method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -97,7 +97,7 @@ HRESULT GetPropertyProps (
 
  **Header:** Cor.h
 
- **Library:** Included as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

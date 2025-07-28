@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataImport::EnumCustomAttributes"
-  - "IMetaDataImport::EnumCustomAttributes method [.NET Framework metadata]"
+  - "IMetaDataImport::EnumCustomAttributes method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -64,7 +64,7 @@ HRESULT EnumCustomAttributes (
 
  **Header:** Cor.h
 
- **Library:** Included as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

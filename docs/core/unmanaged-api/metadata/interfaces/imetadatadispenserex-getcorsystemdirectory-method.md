@@ -10,13 +10,13 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataDispenserEx::GetCORSystemDirectory"
-  - "GetCORSystemDirectory method [.NET Framework metadata]"
+  - "GetCORSystemDirectory method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
 # IMetaDataDispenserEx::GetCORSystemDirectory Method
 
-Gets the directory that holds the current common language runtime (CLR). This method is supported only for use by out-of-process debuggers. If called from another component, it will return E_NOTIMPL.
+Gets the directory that holds the current common language runtime (CLR). This method is supported only for use by .NET Framework out-of-process debuggers. If called from another component, it will return `E_NOTIMPL`.
 
 ## Syntax
 
@@ -45,7 +45,7 @@ HRESULT GetCORSystemDirectory (
 
  **Header:** Cor.h
 
- **Library:** Used as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

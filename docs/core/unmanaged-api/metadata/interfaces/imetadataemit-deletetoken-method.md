@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataEmit::DeleteToken"
-  - "IMetaDataEmit::DeleteToken method [.NET Framework metadata]"
+  - "IMetaDataEmit::DeleteToken method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -37,7 +37,7 @@ HRESULT DeleteToken (
 
  **Header:** Cor.h
 
- **Library:** Used as a resource in MSCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataImport::GetFieldMarshal"
-  - "IMetaDataImport::GetFieldMarshal method [.NET Framework metadata]"
+  - "IMetaDataImport::GetFieldMarshal method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -45,7 +45,7 @@ HRESULT GetFieldMarshal (
 
  **Header:** Cor.h
 
- **Library:** Included as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

@@ -30,7 +30,7 @@ Extends [IMetaDataTables](imetadatatables-interface.md) to include methods for w
 
  **Header:** Cor.h
 
- **Library:** Used as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
  **.NET versions:** Available since .NET Framework 2.0
 

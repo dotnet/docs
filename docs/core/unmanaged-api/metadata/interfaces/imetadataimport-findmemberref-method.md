@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataImport::FindMemberRef"
-  - "FindMemberRef method [.NET Framework metadata]"
+  - "FindMemberRef method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -61,7 +61,7 @@ HRESULT FindMemberRef (
 
  **Header:** Cor.h
 
- **Library:** Included as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

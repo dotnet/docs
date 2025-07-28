@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataImport::EnumFields"
-  - "IMetaDataImport::EnumFields method [.NET Framework metadata]"
+  - "IMetaDataImport::EnumFields method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -60,7 +60,7 @@ HRESULT EnumFields (
 
  **Header:** Cor.h
 
- **Library:** Included as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

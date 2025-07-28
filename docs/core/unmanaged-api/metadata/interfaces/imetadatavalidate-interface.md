@@ -30,7 +30,7 @@ Provides methods to validate metadata signatures.
 
  **Header:** Cor.h
 
- **Library:** Used as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

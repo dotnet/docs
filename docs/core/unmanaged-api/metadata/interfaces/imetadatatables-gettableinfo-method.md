@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataTables::GetTableInfo"
-  - "GetTableInfo method [.NET Framework metadata]"
+  - "GetTableInfo method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -57,7 +57,7 @@ HRESULT GetTableInfo (
 
  **Header:** Cor.h
 
- **Library:** Used as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

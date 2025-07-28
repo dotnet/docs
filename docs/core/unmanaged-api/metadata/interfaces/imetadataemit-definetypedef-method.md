@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataEmit::DefineTypeDef"
-  - "DefineTypeDef method [.NET Framework metadata]"
+  - "DefineTypeDef method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -61,7 +61,7 @@ HRESULT DefineTypeDef (
 
  **Header:** Cor.h
 
- **Library:** Used as a resource in MSCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

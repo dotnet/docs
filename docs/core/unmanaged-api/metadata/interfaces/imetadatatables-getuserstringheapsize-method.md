@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataTables::GetUserStringHeapSize"
-  - "GetUserStringHeapSize method [.NET Framework metadata]"
+  - "GetUserStringHeapSize method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -37,7 +37,7 @@ HRESULT GetUserStringHeapSize (
 
  **Header:** Cor.h
 
- **Library:** Used as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

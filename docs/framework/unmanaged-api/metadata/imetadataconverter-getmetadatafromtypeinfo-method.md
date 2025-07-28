@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataConverter::GetMetaDataFromTypeInfo"
-  - "IMetaDataConverter::GetMetaDataFromTypeInfo method [.NET Framework metadata]"
+  - "IMetaDataConverter::GetMetaDataFromTypeInfo method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -41,7 +41,7 @@ HRESULT GetMetaDataFromTypeInfo (
 
  **Header:** Cor.h
 
- **Library:** Used as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

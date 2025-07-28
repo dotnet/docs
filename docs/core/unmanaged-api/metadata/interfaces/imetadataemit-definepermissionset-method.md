@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataEmit::DefinePermissionSet"
-  - "IMetaDataEmit::DefinePermissionSet method [.NET Framework metadata]"
+  - "IMetaDataEmit::DefinePermissionSet method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -53,7 +53,7 @@ HRESULT DefinePermissionSet (
 
  **Header:** Cor.h
 
- **Library:** Used as a resource in MSCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

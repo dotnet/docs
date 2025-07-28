@@ -29,7 +29,7 @@ Provides a method that gets information about the mapping of metadata from an on
 
  **Header:** Cor.h
 
- **Library:** Used as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
  **.NET versions:** Available since .NET Framework 4.0
 

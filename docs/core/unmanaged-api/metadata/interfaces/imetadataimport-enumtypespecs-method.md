@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataImport::EnumTypeSpecs"
-  - "IMetaDataImport::EnumTypeSpecs method [.NET Framework metadata]"
+  - "IMetaDataImport::EnumTypeSpecs method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -60,7 +60,7 @@ HRESULT EnumTypeSpecs (
 
  **Header:** Cor.h
 
- **Library:** Included as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
  **.NET versions:** Available since .NET Framework 2.0
 

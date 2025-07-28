@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataTables::GetCodedTokenInfo"
-  - "IMetaDataTables::GetCodedTokenInfo method [.NET Framework metadata]"
+  - "IMetaDataTables::GetCodedTokenInfo method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -49,7 +49,7 @@ HRESULT GetCodedTokenInfo (
 
  **Header:** Cor.h
 
- **Library:** Used as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
  **.NET versions:** Available since .NET Framework 2.0
 

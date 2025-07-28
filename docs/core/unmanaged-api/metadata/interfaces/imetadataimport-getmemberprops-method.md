@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataImport::GetMemberProps"
-  - "GetMemberProps method [.NET Framework metadata]"
+  - "GetMemberProps method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -85,7 +85,7 @@ HRESULT GetMemberProps (
 
  **Header:** Cor.h
 
- **Library:** Included as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

@@ -31,7 +31,7 @@ Provides methods to create a new metadata scope, or open an existing one.
 
  **Header:** Cor.h
 
- **Library:** Used as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

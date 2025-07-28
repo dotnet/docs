@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataEmit::DefineCustomAttribute"
-  - "IMetaDataEmit::DefineCustomAttribute method [.NET Framework metadata]"
+  - "IMetaDataEmit::DefineCustomAttribute method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -53,7 +53,7 @@ HRESULT DefineCustomAttribute (
 
  **Header:** Cor.h
 
- **Library:** Used as a resource in MSCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

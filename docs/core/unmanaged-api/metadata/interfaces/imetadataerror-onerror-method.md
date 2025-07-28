@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataError::OnError"
-  - "OnError method, IMetaDataError interface [.NET Framework metadata]"
+  - "OnError method, IMetaDataError interface [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -41,7 +41,7 @@ HRESULT OnError (
 
  **Header:** Cor.h
 
- **Library:** Used as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

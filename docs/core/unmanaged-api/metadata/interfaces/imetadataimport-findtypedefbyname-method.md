@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataImport::FindTypeDefByName"
-  - "IMetaDataImport::FindTypeDefByName method [.NET Framework metadata]"
+  - "IMetaDataImport::FindTypeDefByName method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -45,7 +45,7 @@ HRESULT FindTypeDefByName
 
  **Header:** Cor.h
 
- **Library:** Included as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

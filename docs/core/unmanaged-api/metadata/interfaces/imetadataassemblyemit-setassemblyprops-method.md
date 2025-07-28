@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataAssemblyEmit::SetAssemblyProps"
-  - "IMetaDataAssemblyEmit::SetAssemblyProps method [.NET Framework metadata]"
+  - "IMetaDataAssemblyEmit::SetAssemblyProps method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -53,7 +53,7 @@ HRESULT SetAssemblyProps (
  [in] A pointer to the ASSEMBLYMETADATA that contains version, platform, and locale information for the assembly.
 
  `dwAssemblyFlags`
- [in] A bitwise combination of [AssemblyFlags](../enumerations/assemblyflags-enumeration.md) values that specify various attributes of the assembly.
+ [in] A bitwise combination of [CorAssemblyFlags](../enumerations/corassemblyflags-enumeration.md) values that specify various attributes of the assembly.
 
 ## Remarks
 
@@ -65,7 +65,7 @@ HRESULT SetAssemblyProps (
 
  **Header:** Cor.h
 
- **Library:** Used as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

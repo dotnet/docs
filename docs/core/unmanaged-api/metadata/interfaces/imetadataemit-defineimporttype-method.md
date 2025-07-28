@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataEmit::DefineImportType"
-  - "IMetaDataEmit::DefineImportType method [.NET Framework metadata]"
+  - "IMetaDataEmit::DefineImportType method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -65,7 +65,7 @@ HRESULT DefineImportType (
 
  **Header:** Cor.h
 
- **Library:** Used as a resource in MSCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

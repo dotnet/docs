@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataImport::GetNameFromToken"
-  - "IMetaDataImport::GetNameFromToken method [.NET Framework metadata]"
+  - "IMetaDataImport::GetNameFromToken method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -45,7 +45,7 @@ HRESULT GetNameFromToken (
 
  **Header:** Cor.h
 
- **Library:** Included as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
  **.NET versions:** 1.0
 

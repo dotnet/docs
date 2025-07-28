@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataAssemblyImport::FindAssembliesByName"
-  - "IMetaDataAssemblyImport::FindAssembliesByName method [.NET Framework metadata]"
+  - "IMetaDataAssemblyImport::FindAssembliesByName method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -74,7 +74,7 @@ HRESULT FindAssembliesByName (
 
  **Header:** Cor.h
 
- **Library:** Used as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

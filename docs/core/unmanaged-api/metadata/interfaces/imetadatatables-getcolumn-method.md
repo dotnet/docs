@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataTables::GetColumn"
-  - "GetColumn method [.NET Framework metadata]"
+  - "GetColumn method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -70,7 +70,7 @@ The interpretation of the value returned through `pVal` depends on the column's 
 
  **Header:** Cor.h
 
- **Library:** Used as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
  **.NET versions** Available since .NET Framework 2.0
 

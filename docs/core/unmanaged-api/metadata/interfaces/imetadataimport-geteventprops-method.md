@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataImport::GetEventProps"
-  - "GetEventProps method [.NET Framework metadata]"
+  - "GetEventProps method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -82,7 +82,7 @@ HRESULT GetEventProps (
 
  **Header:** Cor.h
 
- **Library:** Included as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataImport2::GetMethodSpecProps"
-  - "IMetaDataImport2::GetMethodSpecProps method [.NET Framework metadata]"
+  - "IMetaDataImport2::GetMethodSpecProps method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -49,7 +49,7 @@ HRESULT GetMethodSpecProps (
 
  **Header:** Cor.h
 
- **Library:** Used as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
  **.NET versions:** Available since .NET Framework 2.0
 

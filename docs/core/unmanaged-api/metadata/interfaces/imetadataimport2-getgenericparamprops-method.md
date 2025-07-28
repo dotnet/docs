@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataImport2::GetGenericParamProps"
-  - "GetGenericParamProps method [.NET Framework metadata]"
+  - "GetGenericParamProps method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -65,7 +65,7 @@ HRESULT GetGenericParamProps (
 
  **Header:** Cor.h
 
- **Library:** Used as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
  **.NET versions:** Available since .NET Framework 2.0
 

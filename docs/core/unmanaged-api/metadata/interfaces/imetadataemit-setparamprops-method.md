@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataEmit::SetParamProps"
-  - "SetParamProps method [.NET Framework metadata]"
+  - "SetParamProps method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -57,7 +57,7 @@ HRESULT SetParamProps (
 
  **Header:** Cor.h
 
- **Library:** Used as a resource in MSCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

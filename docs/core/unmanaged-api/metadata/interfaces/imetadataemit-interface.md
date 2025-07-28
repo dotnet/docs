@@ -77,7 +77,7 @@ Provides methods to create, modify, and save metadata about the assembly in the 
 
  **Header:** Cor.h
 
- **Library:** Used as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

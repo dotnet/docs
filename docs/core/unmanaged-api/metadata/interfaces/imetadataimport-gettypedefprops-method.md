@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataImport::GetTypeDefProps"
-  - "IMetaDataImport::GetTypeDefProps method [.NET Framework metadata]"
+  - "IMetaDataImport::GetTypeDefProps method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -57,7 +57,7 @@ HRESULT GetTypeDefProps (
 
  **Header:** Cor.h
 
- **Library:** Included as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

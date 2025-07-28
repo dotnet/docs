@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataAssemblyImport::GetAssemblyRefProps"
-  - "GetAssemblyRefProps method [.NET Framework metadata]"
+  - "GetAssemblyRefProps method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -37,34 +37,34 @@ HRESULT GetAssemblyRefProps (
 
 ## Parameters
 
- `mdar`
+ `mdar`\
  [in] The `mdAssemblyRef` metadata token that represents the assembly reference for which to get the properties.
 
- `ppbPublicKeyOrToken`
+ `ppbPublicKeyOrToken`\
  [out] A pointer to the public key or the metadata token.
 
- `pcbPublicKeyOrToken`
+ `pcbPublicKeyOrToken`\
  [out] The number of bytes in the returned public key or token.
 
- `szName`
+ `szName`\
  [out] The simple name of the assembly.
 
- `cchName`
+ `cchName`\
  [in] The size, in wide chars, of `szName`.
 
- `pchName`
+ `pchName`\
  [out] A pointer to the number of wide chars actually returned in `szName`.
 
- `pMetaData`
+ `pMetaData`\
  [out] A pointer to an ASSEMBLYMETADATA structure that contains the assembly metadata.
 
- `ppbHashValue`
- [out] A pointer to the hash value. This is the hash, using the SHA-1 algorithm, of the `PublicKey` property of the assembly being referenced, unless the arfFullOriginator flag of the [AssemblyRefFlags](../enumerations/assemblyrefflags-enumeration.md) enumeration is set.
+ `ppbHashValue`\
+ [out] A pointer to the hash value. This is the hash, using the SHA-1 algorithm, of the `PublicKey` property of the assembly being referenced.
 
- `pcbHashValue`
+ `pcbHashValue`\
  [out] The number of wide chars in the returned hash value.
 
- `pdwAssemblyRefFlags`
+ `pdwAssemblyRefFlags`\
  [out] A pointer to flags that describe the metadata applied to an assembly. The flags value is a combination of one or more [CorAssemblyFlags](../enumerations/corassemblyflags-enumeration.md) values.
 
 ## Return Value
@@ -77,7 +77,7 @@ HRESULT GetAssemblyRefProps (
 
  **Header:** Cor.h
 
- **Library:** Used as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

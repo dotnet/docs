@@ -40,5 +40,3 @@ typedef enum CorSaveSize {
  **Platforms:** See [.NET supported operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md).
 
  **Header:** CorHdr.h
-
- **Library:** Used as a resource in MsCorEE.dll

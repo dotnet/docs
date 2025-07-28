@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataImport::EnumInterfaceImpls"
-  - "EnumInterfaceImpls method [.NET Framework metadata]"
+  - "EnumInterfaceImpls method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -64,7 +64,7 @@ The enumeration returns a collection of `mdInterfaceImpl` tokens for each interf
 
  **Header:** Cor.h
 
- **Library:** Included as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

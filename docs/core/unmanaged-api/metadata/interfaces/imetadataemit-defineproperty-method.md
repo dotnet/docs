@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataEmit::DefineProperty"
-  - "DefineProperty method [.NET Framework metadata]"
+  - "DefineProperty method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -81,7 +81,7 @@ HRESULT DefineProperty (
 
  **Header:** Cor.h
 
- **Library:** Used as a resource in MSCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataTables::GetBlobHeapSize"
-  - "IMetaDataTables::GetBlobHeapSize method [.NET Framework metadata]"
+  - "IMetaDataTables::GetBlobHeapSize method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -37,7 +37,7 @@ HRESULT GetBlobHeapSize (
 
  **Header:** Cor.h
 
- **Library:** Used as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataImport::EnumUnresolvedMethods"
-  - "IMetaDataImport::EnumUnresolvedMethods method [.NET Framework metadata]"
+  - "IMetaDataImport::EnumUnresolvedMethods method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -62,7 +62,7 @@ HRESULT EnumUnresolvedMethods (
 
  **Header:** Cor.h
 
- **Library:** Included as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataEmit::DefineUserString"
-  - "IMetaDataEmit::DefineUserString method [.NET Framework metadata]"
+  - "IMetaDataEmit::DefineUserString method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -45,7 +45,7 @@ HRESULT DefineUserString (
 
  **Header:** Cor.h
 
- **Library:** Used as a resource in MSCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

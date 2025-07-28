@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataImport::EnumTypeDefs"
-  - "IMetaDataImport::EnumTypeDefs method [.NET Framework metadata]"
+  - "IMetaDataImport::EnumTypeDefs method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -60,7 +60,7 @@ HRESULT EnumTypeDefs (
 
  **Header:** Cor.h
 
- **Library:** Included as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

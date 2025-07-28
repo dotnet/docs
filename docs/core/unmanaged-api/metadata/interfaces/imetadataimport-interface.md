@@ -102,7 +102,7 @@ Provides methods for importing and manipulating existing metadata from a portabl
 
  **Header:** Cor.h
 
- **Library:** Used as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

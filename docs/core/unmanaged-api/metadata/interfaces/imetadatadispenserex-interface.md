@@ -34,7 +34,7 @@ Extends the [IMetaDataDispenser Interface](imetadatadispenser-interface.md) inte
 
  **Header:** Cor.h
 
- **Library:** Used as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

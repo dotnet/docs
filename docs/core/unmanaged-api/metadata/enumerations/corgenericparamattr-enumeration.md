@@ -31,24 +31,26 @@ typedef enum CorGenericParamAttr {
     gpNoSpecialConstraint              =   0x0000,
     gpReferenceTypeConstraint          =   0x0004,
     gpNotNullableValueTypeConstraint   =   0x0008,
-    gpDefaultConstructorConstraint     =   0x0010
+    gpDefaultConstructorConstraint     =   0x0010,
+    gpAllowByRefLike                   =   0x0020,
 
 } CorGenericParamAttr;
 ```
 
 ## Members
 
-|Member|Description|
-|------------|-----------------|
-|`gpVarianceMask`|Parameter variance applies only to generic parameters for interfaces and delegates.|
-|`gpNonVariant`|Indicates the absence of variance.|
-|`gpCovariant`|Indicates covariance.|
-|`gpContravariant`|Indicates contravariance.|
-|`gpSpecialConstraintMask`|Special constraints can apply to any <xref:System.Type> parameter.|
-|`gpNoSpecialConstraint`|Indicates that no constraint applies to the <xref:System.Type> parameter.|
-|`gpReferenceTypeConstraint`|Indicates that the <xref:System.Type> parameter must be a reference type.|
+| Member                      | Description                                                                         |
+|-----------------------------|-------------------------------------------------------------------------------------|
+| `gpVarianceMask`            | Parameter variance applies only to generic parameters for interfaces and delegates. |
+| `gpNonVariant`              | Indicates the absence of variance.                                                  |
+| `gpCovariant`               | Indicates covariance.                                                               |
+| `gpContravariant`           | Indicates contravariance.                                                           |
+| `gpSpecialConstraintMask`   | Special constraints can apply to any <xref:System.Type> parameter.                  |
+| `gpNoSpecialConstraint`     | Indicates that no constraint applies to the <xref:System.Type> parameter.           |
+| `gpReferenceTypeConstraint` | Indicates that the <xref:System.Type> parameter must be a reference type.           |
 |`gpNotNullableValueTypeConstraint`|Indicates that the <xref:System.Type> parameter must be a value type that cannot be a null value.|
 |`gpDefaultConstructorConstraint`|Indicates that the <xref:System.Type> parameter must have a default public constructor that takes no parameters.|
+|`gpAllowByRefLike`|Indicates that the <xref:System.Type> parameter can be a [byref-like type](xref:System.Type.IsByRefLike). (available since .NET 7) |
 
 ## Requirements
 

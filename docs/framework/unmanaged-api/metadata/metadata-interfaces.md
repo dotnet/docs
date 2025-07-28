@@ -19,6 +19,9 @@ Provides methods for dynamic code compilation.
 [IHostFilter Interface](ihostfilter-interface.md)\
 Provides a method for the run-time host to mark metadata tokens for processing.
 
+[IMetaDataConverter interface](imetadataconverter-interface.md)\
+Provides methods to map type libraries to their metadata signatures, and to convert from one to the other.
+
 ## Related sections
 
 - [Metadata global static functions](metadata-global-static-functions.md)

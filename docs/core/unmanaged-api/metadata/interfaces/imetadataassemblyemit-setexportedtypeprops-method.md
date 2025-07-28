@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataAssemblyEmit::SetExportedTypeProps"
-  - "IMetaDataAssemblyEmit::SetExportedTypeProps method [.NET Framework metadata]"
+  - "IMetaDataAssemblyEmit::SetExportedTypeProps method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -53,7 +53,7 @@ HRESULT SetExportedTypeProps (
 
  **Header:** Cor.h
 
- **Library:** Used as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

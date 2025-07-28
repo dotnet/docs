@@ -36,7 +36,7 @@ Extends the [IMetaDataEmit](imetadataemit-interface.md) interface primarily to p
 
  **Header:** Cor.h
 
- **Library:** Used as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
  **.NET versions:** Available since .NET Framework 2.0
 

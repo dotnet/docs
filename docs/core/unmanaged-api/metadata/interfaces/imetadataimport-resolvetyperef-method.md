@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataImport::ResolveTypeRef"
-  - "IMetaDataImport::ResolveTypeRef method [.NET Framework metadata]"
+  - "IMetaDataImport::ResolveTypeRef method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -58,7 +58,7 @@ HRESULT ResolveTypeRef (
 
  **Header:** Cor.h
 
- **Library:** Included as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

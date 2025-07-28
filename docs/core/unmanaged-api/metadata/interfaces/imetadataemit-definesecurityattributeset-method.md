@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataEmit::DefineSecurityAttributeSet"
-  - "DefineSecurityAttributeSet method [.NET Framework metadata]"
+  - "DefineSecurityAttributeSet method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -49,7 +49,7 @@ HRESULT DefineSecurityAttributeSet (
 
  **Header:** Cor.h
 
- **Library:** Used as a resource in MSCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

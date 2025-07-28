@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataImport::GetMethodSemantics"
-  - "IMetaDataImport::GetMethodSemantics method [.NET Framework metadata]"
+  - "IMetaDataImport::GetMethodSemantics method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -49,7 +49,7 @@ HRESULT GetMethodSemantics (
 
  **Header:** Cor.h
 
- **Library:** Included as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

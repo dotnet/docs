@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataEmit::SetParent"
-  - "IMetaDataEmit::SetParent method [.NET Framework metadata]"
+  - "IMetaDataEmit::SetParent method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -41,7 +41,7 @@ HRESULT SetParent (
 
  **Header:** Cor.h
 
- **Library:** Used as a resource in MSCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

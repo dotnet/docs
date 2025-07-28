@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataDispenser::DefineScope"
-  - "IMetaDataDispenser::DefineScope method [.NET Framework metadata]"
+  - "IMetaDataDispenser::DefineScope method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -31,18 +31,18 @@ HRESULT DefineScope (
 
 ## Parameters
 
- `rclsid`
- [in] The CLSID of the version of metadata structures to be created. This value must be CLSID_CorMetaDataRuntime for .NET Framework version 2.0.
+ `rclsid`\
+ [in] The CLSID of the version of metadata structures to be created.
 
- `dwCreateFlags`
- [in] Flags that specify options. This value must be zero for .NET Framework 2.0.
+ `dwCreateFlags`\
+ [in] Flags that specify options.
 
- `riid`
+ `riid`\
  [in] The IID of the desired metadata interface to be returned; the caller will use the interface to create the new metadata.
 
- The value of `riid` must specify one of the "emit" interfaces. Valid values are IID_IMetaDataEmit, IID_IMetaDataAssemblyEmit, or IID_IMetaDataEmit2.
+ The value of `riid` must specify one of the "emit" interfaces. Valid values are `IID_IMetaDataEmit`, `IID_IMetaDataAssemblyEmit`, or `IID_IMetaDataEmit2`.
 
- `ppIUnk`
+ `ppIUnk`\
  [out] The pointer to the returned interface.
 
 ## Remarks
@@ -57,7 +57,7 @@ HRESULT DefineScope (
 
  **Header:** Cor.h
 
- **Library:** Used as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

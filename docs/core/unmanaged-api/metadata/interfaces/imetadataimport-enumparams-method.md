@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataImport::EnumParams"
-  - "EnumParams method [.NET Framework metadata]"
+  - "EnumParams method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -60,7 +60,7 @@ HRESULT EnumParams (
 
  **Header:** Cor.h
 
- **Library:** Used as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataEmit::ApplyEditAndContinue"
-  - "IMetaDataEmit::ApplyEditAndContinue method [.NET Framework metadata]"
+  - "IMetaDataEmit::ApplyEditAndContinue method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -39,7 +39,7 @@ HRESULT ApplyEditAndContinue (
 
  **Header:** Cor.h
 
- **Library:** Used as a resource in MSCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

@@ -9,12 +9,6 @@ This section describes the unmanaged enumerations that the metadata API uses. Fo
 
 ## In this section
 
-[AssemblyFlags enumeration](assemblyflags-enumeration.md)\
-Contains values that describe the run-time features of an assembly.
-
-[AssemblyRefFlags enumeration](assemblyrefflags-enumeration.md)\
-Contains values that describe the features of an assembly reference.
-
 [CorAssemblyFlags enumeration](corassemblyflags-enumeration.md)\
 Contains values that describe the metadata applied to an assembly compilation.
 

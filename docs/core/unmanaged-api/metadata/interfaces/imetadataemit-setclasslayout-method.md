@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataEmit::SetClassLayout"
-  - "SetClassLayout method [.NET Framework metadata]"
+  - "SetClassLayout method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -59,7 +59,7 @@ HRESULT SetClassLayout (
 
  **Header:** Cor.h
 
- **Library:** Used as a resource in MSCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

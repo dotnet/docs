@@ -29,6 +29,7 @@ typedef enum CorAssemblyFlags {
     afPA_IA64               =   0x0030,
     afPA_AMD64              =   0x0040,
     afPA_ARM                =   0x0050,
+    afPA_ARM64              =   0x0060,
     afPA_NoPlatform         =   0x0070,
     afPA_Specified          =   0x0080,
     afPA_Mask               =   0x0070,
@@ -48,15 +49,16 @@ typedef enum CorAssemblyFlags {
 
 ## Members
 
-|Member|Description|
-|------------|-----------------|
-|`afPublicKey`|Indicates that the assembly reference holds the full, unhashed public key.|
-|`afPA_None`|Indicates that the processor architecture is unspecified.|
-|`afPA_MSIL`|Indicates that the processor architecture is neutral (PE32).|
-|`afPA_x86`|Indicates that the processor architecture is x86 (PE32).|
-|`afPA_IA64`|Indicates that the processor architecture is Itanium (PE32+).|
-|`afPA_AMD64`|Indicates that the processor architecture is AMD X64 (PE32+).|
-|`afPA_ARM`|Indicates that the processor architecture is ARM (PE32).|
+| Member        | Description                                                                |
+|---------------|----------------------------------------------------------------------------|
+| `afPublicKey` | Indicates that the assembly reference holds the full, unhashed public key. |
+| `afPA_None`   | Indicates that the processor architecture is unspecified.                  |
+| `afPA_MSIL`   | Indicates that the processor architecture is neutral (PE32).               |
+| `afPA_x86`    | Indicates that the processor architecture is x86 (PE32).                   |
+| `afPA_IA64`   | Indicates that the processor architecture is Itanium (PE32+).              |
+| `afPA_AMD64`  | Indicates that the processor architecture is x86-64 (PE32+).               |
+| `afPA_ARM`    | Indicates that the processor architecture is ARM (PE32).                   |
+| `afPA_ARM64`  | Indicates that the processor architecture is ARM64 (PE32+).                |
 |`afPA_NoPlatform`|Indicates that the assembly is a reference assembly; that is, it applies to any architecture but cannot run on any architecture. Thus, the flag is the same as `afPA_Mask`.|
 |`afPA_Specified`|Indicates that the processor architecture flags should be propagated to the `AssemblyRef` record.|
 |`afPA_Mask`|A mask that describes the processor architecture.|

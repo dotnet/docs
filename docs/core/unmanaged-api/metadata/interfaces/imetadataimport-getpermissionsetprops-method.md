@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataImport::GetPermissionSetProps"
-  - "IMetaDataImport::GetPermissionSetProps method [.NET Framework metadata]"
+  - "IMetaDataImport::GetPermissionSetProps method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -49,7 +49,7 @@ HRESULT GetPermissionSetProps (
 
  **Header:** Cor.h
 
- **Library:** Included as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

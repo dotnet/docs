@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataAssemblyImport::EnumExportedTypes"
-  - "IMetaDataAssemblyImport::EnumExportedTypes method [.NET Framework metadata]"
+  - "IMetaDataAssemblyImport::EnumExportedTypes method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -56,7 +56,7 @@ HRESULT EnumExportedTypes (
 
  **Header:** Cor.h
 
- **Library:** Used as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

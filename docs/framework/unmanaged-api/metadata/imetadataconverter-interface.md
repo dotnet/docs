@@ -31,7 +31,7 @@ Provides methods to map type libraries to their metadata signatures, and to conv
 
  **Header:** Cor.h
 
- **Library:** Used as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

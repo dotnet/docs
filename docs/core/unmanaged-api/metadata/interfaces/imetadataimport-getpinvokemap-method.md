@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataImport::GetPinvokeMap"
-  - "GetPinvokeMap method [.NET Framework metadata]"
+  - "GetPinvokeMap method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -57,7 +57,7 @@ HRESULT GetPinvokeMap (
 
  **Header:** Cor.h
 
- **Library:** Included as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

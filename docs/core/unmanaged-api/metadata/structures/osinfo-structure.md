@@ -45,8 +45,6 @@ typedef struct {
 
  **Header:** Cor.h
 
- **Library:** Used as a resource in MsCorEE.dll
-
 ## See also
 
 - [IMetaDataAssemblyEmit Interface](../interfaces/imetadataassemblyemit-interface.md)

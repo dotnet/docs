@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataDispenserEx::GetOption"
-  - "IMetaDataDispenserEx::GetOption method [.NET Framework metadata]"
+  - "IMetaDataDispenserEx::GetOption method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -59,7 +59,7 @@ HRESULT GetOption (
 
  **Header:** Cor.h
 
- **Library:** Used as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

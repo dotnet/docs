@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataEmit2::ResetENCLog"
-  - "IMetaDataEmit2::ResetENCLog method [.NET Framework metadata]"
+  - "IMetaDataEmit2::ResetENCLog method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -34,7 +34,7 @@ HRESULT ResetENCLog ();
 
  **Header:** Cor.h
 
- **Library:** Used as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
  **.NET versions:** Available since .NET Framework 2.0
 

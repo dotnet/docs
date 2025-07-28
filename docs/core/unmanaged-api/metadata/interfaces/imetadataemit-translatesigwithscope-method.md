@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataEmit::TranslateSigWithScope"
-  - "IMetaDataEmit::TranslateSigWithScope method [.NET Framework metadata]"
+  - "IMetaDataEmit::TranslateSigWithScope method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -77,7 +77,7 @@ HRESULT TranslateSigWithScope (
 
  **Header:** Cor.h
 
- **Library:** Used as a resource in MSCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

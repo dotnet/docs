@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataEmit::DefineMethodImpl"
-  - "IMetaDataEmit::DefineMethodImpl method [.NET Framework metadata]"
+  - "IMetaDataEmit::DefineMethodImpl method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -45,7 +45,7 @@ HRESULT DefineMethodImpl (
 
  **Header:** Cor.h
 
- **Library:** Used as a resource in MSCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

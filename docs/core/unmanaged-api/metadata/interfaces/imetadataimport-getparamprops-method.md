@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataImport::GetParamProps"
-  - "GetParamProps method [.NET Framework metadata]"
+  - "GetParamProps method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -77,7 +77,7 @@ The sequence values in `pulSequence` begin with 1 for parameters. A return value
 
  **Header:** Cor.h
 
- **Library:** Included as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

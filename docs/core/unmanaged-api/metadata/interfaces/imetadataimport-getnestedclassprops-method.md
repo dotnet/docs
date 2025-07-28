@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataImport::GetNestedClassProps"
-  - "IMetaDataImport::GetNestedClassProps method [.NET Framework metadata]"
+  - "IMetaDataImport::GetNestedClassProps method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -41,7 +41,7 @@ HRESULT GetNestedClassProps (
 
  **Header:** Cor.h
 
- **Library:** Included as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

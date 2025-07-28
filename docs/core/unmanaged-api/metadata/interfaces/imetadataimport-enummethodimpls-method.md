@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataImport::EnumMethodImpls"
-  - "IMetaDataImport::EnumMethodImpls method [.NET Framework metadata]"
+  - "IMetaDataImport::EnumMethodImpls method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -64,7 +64,7 @@ HRESULT EnumMethodImpls (
 
  **Header:** Cor.h
 
- **Library:** Included as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

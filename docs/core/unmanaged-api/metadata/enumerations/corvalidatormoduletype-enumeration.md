@@ -49,5 +49,3 @@ typedef enum
  **Platforms:** See [.NET supported operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md).
 
  **Header:** Cor.h
-
- **Library:** Included as a resource in MsCorEE.dll

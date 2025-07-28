@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataAssemblyImport::GetAssemblyProps"
-  - "IMetaDataAssemblyImport::GetAssemblyProps method [.NET Framework metadata]"
+  - "IMetaDataAssemblyImport::GetAssemblyProps method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -69,7 +69,7 @@ HRESULT GetAssemblyProps (
 
  **Header:** Cor.h
 
- **Library:** Used as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

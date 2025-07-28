@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataEmit2::GetDeltaSaveSize"
-  - "GetDeltaSaveSize method [.NET Framework metadata]"
+  - "GetDeltaSaveSize method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -29,10 +29,10 @@ HRESULT GetDeltaSaveSize (
 
 ## Parameters
 
- `fSave`
- [in] One of the [CorSaveSize](../enumerations/corsavesize-enumeration.md) values, indicating the level of precision desired. For .NET Framework version 2.0, this parameter is ignored.
+ `fSave`\
+ [in] One of the [CorSaveSize](../enumerations/corsavesize-enumeration.md) values, indicating the level of precision desired.
 
- `pdwSaveSize`
+ `pdwSaveSize`\
  [out] The change in the size of the metadata.
 
 ## Requirements
@@ -41,7 +41,7 @@ HRESULT GetDeltaSaveSize (
 
  **Header:** Cor.h
 
- **Library:** Used as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
  **.NET versions:** Available since .NET Framework 2.0
 

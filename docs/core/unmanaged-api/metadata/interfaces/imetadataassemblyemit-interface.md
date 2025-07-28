@@ -40,7 +40,7 @@ Provides methods that support the self-description model used by the common lang
 
  **Header:** Cor.h
 
- **Library:** Used as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

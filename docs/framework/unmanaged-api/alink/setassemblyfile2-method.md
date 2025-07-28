@@ -40,7 +40,7 @@ HRESULT SetAssemblyFile2(
  [IMetaDataEmit2 Interface](../../../core/unmanaged-api/metadata/interfaces/imetadataemit2-interface.md) interface for this file.
 
  `afFlags`
- Options represented by [AssemblyFlags Enumeration](../../../core/unmanaged-api/metadata/enumerations/assemblyflags-enumeration.md).
+ Options represented by [AssemblyFlags Enumeration](../metadata/assemblyflags-enumeration.md).
 
  `pAssemblyID`
  Receives unique ID for the assembly being constructed.

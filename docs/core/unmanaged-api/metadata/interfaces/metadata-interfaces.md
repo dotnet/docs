@@ -18,9 +18,6 @@ Provides methods that support the self-description model used by the common lang
 [IMetaDataAssemblyImport interface](imetadataassemblyimport-interface.md)\
 Provides methods to access and examine the contents of an assembly manifest.
 
-[IMetaDataConverter interface](imetadataconverter-interface.md)\
-Provides methods to map type libraries to their metadata signatures, and to convert from one to the other.
-
 [IMetaDataDispenser interface](imetadatadispenser-interface.md)\
 `IMetaDataDispenser` is obsolete. Use `IMetaDataDispenserEx` instead.
 

@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataDispenser::OpenScopeOnMemory"
-  - "IMetaDataDispenser::OpenScopeOnMemory method [.NET Framework metadata]"
+  - "IMetaDataDispenser::OpenScopeOnMemory method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -63,7 +63,7 @@ HRESULT OpenScopeOnMemory (
 
  **Header:** Cor.h
 
- **Library:** Used as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

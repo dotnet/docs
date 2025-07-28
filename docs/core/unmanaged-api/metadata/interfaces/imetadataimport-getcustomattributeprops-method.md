@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataImport::GetCustomAttributeProps"
-  - "IMetaDataImport::GetCustomAttributeProps method [.NET Framework metadata]"
+  - "IMetaDataImport::GetCustomAttributeProps method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -57,7 +57,7 @@ HRESULT GetCustomAttributeProps (
 
  **Header:** Cor.h
 
- **Library:** Included as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

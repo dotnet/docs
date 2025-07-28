@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataAssemblyImport::CloseEnum"
-  - "IMetaDataAssemblyImport::CloseEnum method [.NET Framework metadata]"
+  - "IMetaDataAssemblyImport::CloseEnum method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -37,7 +37,7 @@ void CloseEnum (
 
  **Header:** Cor.h
 
- **Library:** Used as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataEmit::DefineTypeRefByName"
-  - "IMetaDataEmit::DefineTypeRefByName method [.NET Framework metadata]"
+  - "IMetaDataEmit::DefineTypeRefByName method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -55,7 +55,7 @@ HRESULT DefineTypeRefByName (
 
  **Header:** Cor.h
 
- **Library:** Used as a resource in MSCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

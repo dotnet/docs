@@ -32,7 +32,7 @@ Provides a callback mechanism for reporting errors during the metadata merge.
 
  **Header:** Cor.h
 
- **Library:** Used as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

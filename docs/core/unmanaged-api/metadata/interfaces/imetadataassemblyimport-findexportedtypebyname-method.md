@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataAssemblyImport::FindExportedTypeByName"
-  - "IMetaDataAssemblyImport::FindExportedTypeByName method [.NET Framework metadata]"
+  - "IMetaDataAssemblyImport::FindExportedTypeByName method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -49,7 +49,7 @@ HRESULT FindExportedTypeByName (
 
  **Header:** Cor.h
 
- **Library:** Used as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

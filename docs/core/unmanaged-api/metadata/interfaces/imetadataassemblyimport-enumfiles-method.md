@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataAssemblyImport::EnumFiles"
-  - "EnumFiles method [.NET Framework metadata]"
+  - "EnumFiles method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -56,7 +56,7 @@ HRESULT EnumFiles (
 
  **Header:** Cor.h
 
- **Library:** Used as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

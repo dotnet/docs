@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataAssemblyEmit::SetAssemblyRefProps"
-  - "IMetaDataAssemblyEmit::SetAssemblyRefProps method [.NET Framework metadata]"
+  - "IMetaDataAssemblyEmit::SetAssemblyRefProps method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -57,7 +57,7 @@ HRESULT SetAssemblyRefProps (
  [in] The size in bytes of `pbHashValue`.
 
  `dwAssemblyRefFlags`
- [in] A bitwise combination of [AssemblyRefFlags](../enumerations/assemblyrefflags-enumeration.md) values that specify attributes of the referenced assembly.
+ [in] A bitwise combination of [CorAssemblyFlags](../enumerations/corassemblyflags-enumeration.md) values that specify attributes of the referenced assembly.
 
 ## Remarks
 
@@ -69,7 +69,7 @@ HRESULT SetAssemblyRefProps (
 
  **Header:** Cor.h
 
- **Library:** Used as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

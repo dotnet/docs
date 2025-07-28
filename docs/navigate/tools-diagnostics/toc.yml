@@ -643,10 +643,6 @@ items:
                 items:
                   - name: Overview
                     href: ../../core/unmanaged-api/metadata/enumerations/metadata-enumerations.md
-                  - name: AssemblyFlags enumeration
-                    href: ../../core/unmanaged-api/metadata/enumerations/assemblyflags-enumeration.md
-                  - name: AssemblyRefFlags enumeration
-                    href: ../../core/unmanaged-api/metadata/enumerations/assemblyrefflags-enumeration.md
                   - name: CorAssemblyFlags enumeration
                     href: ../../core/unmanaged-api/metadata/enumerations/corassemblyflags-enumeration.md
                   - name: CorCheckDuplicatesFor enumeration
@@ -760,15 +756,6 @@ items:
                         href: ../../core/unmanaged-api/metadata/interfaces/imetadataassemblyimport-getfileprops-method.md
                       - name: GetManifestResourceProps method
                         href: ../../core/unmanaged-api/metadata/interfaces/imetadataassemblyimport-getmanifestresourceprops-method.md
-                  - name: IMetaDataConverter interface
-                    href: ../../core/unmanaged-api/metadata/interfaces/imetadataconverter-interface.md
-                    items:
-                      - name: GetMetaDataFromTypeInfo method
-                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataconverter-getmetadatafromtypeinfo-method.md
-                      - name: GetMetaDataFromTypeLib method
-                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataconverter-getmetadatafromtypelib-method.md
-                      - name: GetTypeLibFromMetaData method
-                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataconverter-gettypelibfrommetadata-method.md
                   - name: IMetaDataDispenser interface
                     href: ../../core/unmanaged-api/metadata/interfaces/imetadatadispenser-interface.md
                     items:

@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataEmit::SetHandler"
-  - "SetHandler method [.NET Framework metadata]"
+  - "SetHandler method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -43,7 +43,7 @@ HRESULT SetHandler (
 
  **Header:** Cor.h
 
- **Library:** Used as a resource in MSCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

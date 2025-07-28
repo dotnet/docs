@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataFilter::MarkToken"
-  - "MarkToken method, IMetaDataFilter interface [.NET Framework metadata]"
+  - "MarkToken method, IMetaDataFilter interface [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -37,7 +37,7 @@ HRESULT MarkToken (
 
  **Header:** Cor.h
 
- **Library:** Used as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

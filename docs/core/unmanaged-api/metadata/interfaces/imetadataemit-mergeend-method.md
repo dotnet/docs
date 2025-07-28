@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataEmit::MergeEnd"
-  - "IMetaDataEmit::MergeEnd method [.NET Framework metadata]"
+  - "IMetaDataEmit::MergeEnd method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -60,7 +60,7 @@ The following special conditions apply to the merge:
 
 **Header:** Cor.h
 
-**Library:** Used as a resource in MSCorEE.dll
+**Library:** CorGuids.lib
 
 ## See also
 

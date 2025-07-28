@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataDispenser::OpenScope"
-  - "OpenScope method, IMetaDataDispenser interface [.NET Framework metadata]"
+  - "OpenScope method, IMetaDataDispenser interface [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -47,13 +47,11 @@ HRESULT OpenScope (
 
 ## Remarks
 
- The in-memory copy of the metadata can be queried using methods from one of the "import" interfaces, or added to using methods from the one of the "emit" interfaces.
+The in-memory copy of the metadata can be queried using methods from one of the "import" interfaces, or added to using methods from the one of the "emit" interfaces.
 
- If the target file does not contain CLR metadata, the `OpenScope` method will fail.
+If the target file does not contain CLR metadata, the `OpenScope` method will fail.
 
- In the .NET Framework version 1.0 and version 1.1, if a scope is opened with `dwOpenFlags` set to ofRead, it is eligible for sharing. That is, if subsequent calls to `OpenScope` pass in the name of a file that was previously opened, the existing scope is reused and a new set of data structures is not created. However, problems can arise due to this sharing.
-
- In .NET Framework version 2.0, scopes opened with `dwOpenFlags` set to ofRead are no longer shared. Use the ofReadOnly value to allow the scope to be shared. When a scope is shared, queries that use "read/write" metadata interfaces will fail.
+Scopes opened with `dwOpenFlags` set to `ofRead` aren't shared. Use the `ofReadOnly` value to allow the scope to be shared. When a scope is shared, queries that use "read/write" metadata interfaces will fail.
 
 ## Requirements
 
@@ -61,7 +59,7 @@ HRESULT OpenScope (
 
  **Header:** Cor.h
 
- **Library:** Used as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

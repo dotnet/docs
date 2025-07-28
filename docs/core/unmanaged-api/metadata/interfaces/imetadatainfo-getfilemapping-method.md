@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataInfo::GetFileMapping"
-  - "GetFileMapping method [.NET Framework metadata]"
+  - "GetFileMapping method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -63,7 +63,7 @@ HRESULT GetFileMapping (
 
  **Header:** Cor.h
 
- **Library:** Used as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
  **.NET versions:** Available since .NET Framework 4.0
 

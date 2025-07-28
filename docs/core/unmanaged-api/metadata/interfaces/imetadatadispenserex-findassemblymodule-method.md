@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataDispenserEx::FindAssemblyModule"
-  - "IMetaDataDispenserEx::FindAssemblyModule method [.NET Framework metadata]"
+  - "IMetaDataDispenserEx::FindAssemblyModule method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -65,7 +65,7 @@ HRESULT FindAssemblyModule(
 
  **Header:** Cor.h
 
- **Library:** Used as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

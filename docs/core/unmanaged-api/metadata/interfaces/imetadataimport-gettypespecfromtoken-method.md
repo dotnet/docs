@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataImport::GetTypeSpecFromToken"
-  - "IMetaDataImport::GetTypeSpecFromToken method [.NET Framework metadata]"
+  - "IMetaDataImport::GetTypeSpecFromToken method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -49,7 +49,7 @@ HRESULT GetTypeSpecFromToken (
 
  **Header:** Cor.h
 
- **Library:** Included as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

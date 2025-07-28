@@ -10,7 +10,7 @@ api_type:
   - "COM"
 f1_keywords:
   - "IMetaDataImport::GetFieldProps"
-  - "GetFieldProps method [.NET Framework metadata]"
+  - "GetFieldProps method [.NET metadata]"
 topic_type:
   - "apiref"
 ---
@@ -77,7 +77,7 @@ HRESULT GetFieldProps (
 
  **Header:** Cor.h
 
- **Library:** Included as a resource in MsCorEE.dll
+ **Library:** CorGuids.lib
 
 ## See also
 

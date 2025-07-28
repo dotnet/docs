@@ -44,11 +44,14 @@ Each property is available by calling the <xref:System.AppContext.GetData(System
 
 The .NET Core runtime host will output useful trace messages when certain environment variables are enabled:
 
-|Environment Variable        |Description  |
-|----------------------------|---------|
-|`COREHOST_TRACE=1`          |Enables tracing.|
-|`COREHOST_TRACEFILE=<path>` |Traces to a file path instead of the default `stderr`.|
-|`COREHOST_TRACE_VERBOSITY`  |Sets the verbosity from 1 (lowest) to 4 (highest).|
+|Environment Variable           |Description  |
+|-------------------------------|---------|
+|`DOTNET_HOST_TRACE=1`          |Enables tracing. (.NET 10+)|
+|`DOTNET_HOST_TRACEFILE=<path>` |Traces to a file path instead of the default `stderr`. (.NET 10+)|
+|`DOTNET_HOST_TRACE_VERBOSITY`  |Sets the verbosity from 1 (lowest) to 4 (highest). (.NET 10+)|
+|`COREHOST_TRACE=1`             |Enables tracing.|
+|`COREHOST_TRACEFILE=<path>`    |Traces to a file path instead of the default `stderr`.|
+|`COREHOST_TRACE_VERBOSITY`     |Sets the verbosity from 1 (lowest) to 4 (highest).|
 
 ## Managed assembly default probing
 

@@ -423,8 +423,6 @@ Controls diagnostics tracing from the hosting components, such as `dotnet.exe`, 
 - `COREHOST_TRACEFILE` - see [`DOTNET_HOST_TRACEFILE`](#dotnet_host_trace).
 - `COREHOST_TRACE_VERBOSITY` - see [`DOTNET_HOST_TRACE_VERBOSITY`](#dotnet_host_trace).
 
-The typical way to get detailed trace information about application startup is to set `COREHOST_TRACE=1` and`COREHOST_TRACEFILE=host_trace.txt` and then run the application. A new file `host_trace.txt` will be created in the current directory with the detailed information.
-
 ### `SuppressNETCoreSdkPreviewMessage`
 
 If set to `true`, invoking `dotnet` won't produce a warning when a preview SDK is being used.

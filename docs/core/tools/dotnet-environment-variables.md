@@ -199,7 +199,15 @@ Specifies the location of the .NET runtimes, if they are not installed in the de
 - GitHub issue [dotnet/core#7699](https://github.com/dotnet/core/issues/7699)
 - GitHub issue [dotnet/runtime#79237](https://github.com/dotnet/runtime/issues/79237)
 
-This environment variable is used only when running apps via generated executables (apphosts). `DOTNET_ROOT(x86)` is used instead when running a 32-bit executable on a 64-bit OS. `DOTNET_ROOT_X64` is used instead when running a 64-bit executable on an ARM64 OS.
+These environment variables are used only when running apps via generated executables (apphosts). The order in which the environment variables are considered is:
+
+1. `DOTNET_ROOT_<ARCH>`, where `<ARCH>` is the architecture of the running executable (apphost).
+   For example:
+     - `DOTNET_ROOT_ARM64` is used for an Arm64 process.
+     - `DOTNET_ROOT_X64` is used for an x64 process. This process might be running on x64 or Arm64 architecture.
+     - `DOTNET_ROOT_X86` is used for an x86 process. This process might be running on x86 or x64 architecture.
+2. `DOTNET_ROOT(x86)` is used when a 32-bit process is running on 64-bit Windows. In other cases, this environment variable is ignored.
+3. `DOTNET_ROOT`.
 
 ### `DOTNET_HOST_PATH`
 

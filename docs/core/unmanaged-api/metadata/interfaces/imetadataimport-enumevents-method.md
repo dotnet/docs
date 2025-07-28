@@ -49,10 +49,10 @@ HRESULT EnumEvents (
 
 ## Return Value
 
-|HRESULT|Description|
+| HRESULT | Description |
 |-------------|-----------------|
-|`S_OK`|`EnumEvents` returned successfully.|
-|`S_FALSE`|There are no events to enumerate. In that case, `pcEvents` is zero.|
+| `S_OK` | `EnumEvents` returned successfully. |
+| `S_FALSE` | There are no events to enumerate. In that case, `pcEvents` is zero. |
 
 ## Requirements
 

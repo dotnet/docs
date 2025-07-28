@@ -33,10 +33,10 @@ typedef enum
 
 ## Members
 
-|Member|Description|
+| Member | Description |
 |------------|-----------------|
-|`COR_PRF_REJIT_BLOCK_INLINING`| ReJITted methods will be blocked from being inlined in other methods. |
-|`COR_PRF_REJIT_INLINING_CALLBACKS`| Receive `GetFunctionParameters` callbacks for any methods that inline the methods requested to be ReJITted. |
+| `COR_PRF_REJIT_BLOCK_INLINING` | ReJITted methods will be blocked from being inlined in other methods. |
+| `COR_PRF_REJIT_INLINING_CALLBACKS` | Receive `GetFunctionParameters` callbacks for any methods that inline the methods requested to be ReJITted. |
 
 ## Requirements
 

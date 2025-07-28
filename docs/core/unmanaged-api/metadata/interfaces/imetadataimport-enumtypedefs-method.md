@@ -45,10 +45,10 @@ HRESULT EnumTypeDefs (
 
 ## Return Value
 
-|HRESULT|Description|
+| HRESULT | Description |
 |-------------|-----------------|
-|`S_OK`|`EnumTypeDefs` returned successfully.|
-|`S_FALSE`|There are no tokens to enumerate. In that case, `pcTypeDefs` is zero.|
+| `S_OK` | `EnumTypeDefs` returned successfully. |
+| `S_FALSE` | There are no tokens to enumerate. In that case, `pcTypeDefs` is zero. |
 
 ## Remarks
 

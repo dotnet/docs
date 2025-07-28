@@ -34,15 +34,15 @@ typedef enum
 
 ## Members
 
-|Member|Description|
+| Member | Description |
 |------------|-----------------|
-|`ValidatorModuleTypeInvalid`|The module is an invalid type.|
-|`ValidatorModuleTypeMin`|The minimum value of the `CorValidatorModuleType` enum.|
-|`ValidatorModuleTypePE`|The module is a portable executable (PE) file.|
-|`ValidatorModuleTypeObj`|The module is a .obj file.|
-|`ValidatorModuleTypeEnc`|The module is an edit-and-continue debugger session.|
-|`ValidatorModuleTypeIncr`|The module is one that has been incrementally built.|
-|`ValidatorModuleTypeMax`|The maximum value of the `CorValidatorModuleType` enum.|
+| `ValidatorModuleTypeInvalid` | The module is an invalid type. |
+| `ValidatorModuleTypeMin` | The minimum value of the `CorValidatorModuleType` enum. |
+| `ValidatorModuleTypePE` | The module is a portable executable (PE) file. |
+| `ValidatorModuleTypeObj` | The module is a .obj file. |
+| `ValidatorModuleTypeEnc` |The module is an edit-and-continue debugger session.|
+| `ValidatorModuleTypeIncr` | The module is one that has been incrementally built. |
+| `ValidatorModuleTypeMax` | The maximum value of the `CorValidatorModuleType` enum. |
 
 ## Requirements
 

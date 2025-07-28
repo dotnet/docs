@@ -53,10 +53,10 @@ HRESULT FindAssembliesByName (
 
 ## Return Value
 
-|HRESULT|Description|
+| HRESULT | Description |
 |-------------|-----------------|
-|`S_OK`|`FindAssembliesByName` returned successfully.|
-|`S_FALSE`|There are no assemblies.|
+| `S_OK` | `FindAssembliesByName` returned successfully. |
+| `S_FALSE` | There are no assemblies. |
 
 ## Remarks
 

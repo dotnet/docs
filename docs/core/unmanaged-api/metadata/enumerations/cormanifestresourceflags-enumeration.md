@@ -31,11 +31,11 @@ typedef enum CorManifestResourceFlags {
 
 ## Members
 
-|Member|Description|
+| Member | Description |
 |------------|-----------------|
-|`mrVisibilityMask`|Reserved.|
-|`mrPublic`|The resources are public.|
-|`mrPrivate`|The resources are private.|
+| `mrVisibilityMask` | Reserved. |
+| `mrPublic` | The resources are public. |
+| `mrPrivate` | The resources are private. |
 
 ## Requirements
 

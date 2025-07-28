@@ -29,11 +29,11 @@ typedef enum CorSaveSize {
 
 ## Members
 
-|Member|Description|
+| Member | Description |
 |------------|-----------------|
-|`cssAccurate`|Specifies that the return value should be exact.|
-|`cssQuick`|Specifies that the return value should be estimated.|
-|`cssDiscardTransientCAs`|Specifies that discardable types should be removed.|
+| `cssAccurate` | Specifies that the return value should be exact. |
+| `cssQuick` | Specifies that the return value should be estimated. |
+| `cssDiscardTransientCAs` | Specifies that discardable types should be removed. |
 
 ## Requirements
 

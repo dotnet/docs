@@ -49,10 +49,10 @@ HRESULT EnumMethodSpecs (
 
 ## Return Value
 
-|HRESULT|Description|
+| HRESULT | Description |
 |-------------|-----------------|
-|`S_OK`|`EnumMethodSpecs` returned successfully.|
-|`S_FALSE`|`phEnum` has no member elements. In this case, `pcMethodSpecs` is set to 0 (zero).|
+| `S_OK` | `EnumMethodSpecs` returned successfully. |
+| `S_FALSE` |`phEnum` has no member elements. In this case, `pcMethodSpecs` is set to 0 (zero).|
 
 ## Requirements
 

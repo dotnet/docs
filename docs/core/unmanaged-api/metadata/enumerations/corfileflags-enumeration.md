@@ -30,10 +30,10 @@ typedef enum CorFileFlags {
 
 ## Members
 
-|Member|Description|
+| Member | Description |
 |------------|-----------------|
-|`ffContainsMetaData`|Indicates that the file is not a resource file.|
-|`ffContainsNoMetaData`|Indicates that the file, possibly a resource file, does not contain metadata.|
+| `ffContainsMetaData` | Indicates that the file is not a resource file. |
+| `ffContainsNoMetaData` | Indicates that the file, possibly a resource file, does not contain metadata. |
 
 ## Requirements
 

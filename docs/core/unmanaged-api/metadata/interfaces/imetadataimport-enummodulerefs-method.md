@@ -45,10 +45,10 @@ HRESULT EnumModuleRefs (
 
 ## Return Value
 
-|HRESULT|Description|
+| HRESULT | Description |
 |-------------|-----------------|
-|`S_OK`|`EnumModuleRefs` returned successfully.|
-|`S_FALSE`|There are no tokens to enumerate. In that case, `pcModuleRefs` is zero.|
+| `S_OK` | `EnumModuleRefs` returned successfully. |
+| `S_FALSE` | There are no tokens to enumerate. In that case, `pcModuleRefs` is zero. |
 
 ## Requirements
 

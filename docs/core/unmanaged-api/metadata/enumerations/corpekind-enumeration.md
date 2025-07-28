@@ -34,13 +34,13 @@ typedef enum CorPEKind {
 
 ## Members
 
-|Member|Description|
+| Member | Description |
 |------------|-----------------|
-|`peNot`|Indicates that this is not a PE file.|
-|`peILOnly`|Indicates that this PE file contains only managed code.|
+| `peNot` | Indicates that this is not a PE file. |
+| `peILOnly` | Indicates that this PE file contains only managed code. |
 |`pe32BitRequired`|Indicates that this PE file makes Win32 calls.|
 |`pe32Plus`|Indicates that this PE file runs on a 64-bit platform.|
-|`pe32Unmanaged`|Indicates that this PE file is native code.|
+|`pe32Unmanaged`| Indicates that this PE file is native code. |
 |pe32BitPreferred|Indicates that this PE file is platform-neutral and prefers to be loaded in a 32-bit environment.|
 
 ## Remarks

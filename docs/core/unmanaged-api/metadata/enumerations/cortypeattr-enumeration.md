@@ -68,41 +68,41 @@ typedef enum CorTypeAttr {
 
 ## Members
 
-|Member|Description|
+| Member | Description |
 |------------|-----------------|
-|`tdVisibilityMask`|Used for type visibility information.|
-|`tdNotPublic`|Specifies that the type is not in public scope.|
-|`tdPublic`|Specifies that the type is in public scope.|
-|`tdNestedPublic`|Specifies that the type is nested with public visibility.|
-|`tdNestedPrivate`|Specifies that the type is nested with private visibility.|
-|`tdNestedFamily`|Specifies that the type is nested with family visibility.|
-|`tdNestedAssembly`|Specifies that the type is nested with assembly visibility.|
-|`tdNestedFamANDAssem`|Specifies that the type is nested with family and assembly visibility.|
-|`tdNestedFamORAssem`|Specifies that the type is nested with family or assembly visibility.|
-|`tdLayoutMask`|Gets layout information for the type.|
-|`tdAutoLayout`|Specifies that the fields of this type are laid out automatically.|
-|`tdSequentialLayout`|Specifies that the fields of this type are laid out sequentially.|
-|`tdExplicitLayout`|Specifies that field layout is supplied explicitly.|
-|`tdClassSemanticsMask`|Gets semantic information about the type.|
-|`tdClass`|Specifies that the type is a class.|
-|`tdInterface`|Specifies that the type is an interface.|
-|`tdAbstract`|Specifies that the type is abstract.|
-|`tdSealed`|Specifies that the type cannot be extended.|
-|`tdSpecialName`|Specifies that the class name is special. Its name describes how.|
-|`tdImport`|Specifies that the type is imported.|
-|`tdSerializable`|Specifies that the type is serializable.|
-|`tdWindowsRuntime`|Specifies that this type is a Windows Runtime type.|
-|`tdStringFormatMask`|Gets information about how strings are encoded and formatted.|
-|`tdAnsiClass`|Specifies that this type interprets an LPTSTR as ANSI.|
-|`tdUnicodeClass`|Specifies that this type interprets an LPTSTR as Unicode.|
-|`tdAutoClass`|Specifies that this type interprets an LPTSTR automatically.|
-|`tdCustomFormatClass`|Specifies that the type has a non-standard encoding, as specified by `CustomFormatMask`.|
-|`tdCustomFormatMask`|Use this mask to get non-standard encoding information for native interop. The meaning of the values of these two bits is unspecified.|
-|`tdBeforeFieldInit`|Specifies that the type must be initialized before the first attempt to access a static field.|
-|`tdForwarder`|Specifies that the type is exported, and a type forwarder.|
-|`tdReservedMask`|This flag and the flags below are used internally by the common language runtime.|
-|`tdRTSpecialName`|Specifies that the common language runtime should check the name encoding.|
-|`tdHasSecurity`|Specifies that the type has security associated with it.|
+| `tdVisibilityMask` | Used for type visibility information. |
+| `tdNotPublic` | Specifies that the type is not in public scope. |
+| `tdPublic` | Specifies that the type is in public scope. |
+| `tdNestedPublic` | Specifies that the type is nested with public visibility. |
+| `tdNestedPrivate` | Specifies that the type is nested with private visibility. |
+| `tdNestedFamily` | Specifies that the type is nested with family visibility. |
+| `tdNestedAssembly` | Specifies that the type is nested with assembly visibility. |
+| `tdNestedFamANDAssem` | Specifies that the type is nested with family and assembly visibility. |
+| `tdNestedFamORAssem` | Specifies that the type is nested with family or assembly visibility. |
+| `tdLayoutMask` | Gets layout information for the type. |
+| `tdAutoLayout` | Specifies that the fields of this type are laid out automatically. |
+| `tdSequentialLayout` | Specifies that the fields of this type are laid out sequentially. |
+| `tdExplicitLayout` | Specifies that field layout is supplied explicitly. |
+| `tdClassSemanticsMask` | Gets semantic information about the type. |
+| `tdClass` | Specifies that the type is a class. |
+| `tdInterface` | Specifies that the type is an interface. |
+| `tdAbstract` | Specifies that the type is abstract. |
+| `tdSealed` | Specifies that the type cannot be extended. |
+| `tdSpecialName` | Specifies that the class name is special. Its name describes how. |
+| `tdImport` | Specifies that the type is imported. |
+| `tdSerializable` | Specifies that the type is serializable. |
+| `tdWindowsRuntime` | Specifies that this type is a Windows Runtime type. |
+| `tdStringFormatMask` | Gets information about how strings are encoded and formatted. |
+| `tdAnsiClass` | Specifies that this type interprets an LPTSTR as ANSI. |
+| `tdUnicodeClass` | Specifies that this type interprets an LPTSTR as Unicode. |
+| `tdAutoClass` | Specifies that this type interprets an LPTSTR automatically. |
+| `tdCustomFormatClass` |Specifies that the type has a non-standard encoding, as specified by `CustomFormatMask`.|
+| `tdCustomFormatMask` |Use this mask to get non-standard encoding information for native interop. The meaning of the values of these two bits is unspecified.|
+| `tdBeforeFieldInit` | Specifies that the type must be initialized before the first attempt to access a static field. |
+| `tdForwarder` | Specifies that the type is exported, and a type forwarder. |
+| `tdReservedMask` | This flag and the flags below are used internally by the common language runtime. |
+| `tdRTSpecialName` | Specifies that the common language runtime should check the name encoding. |
+| `tdHasSecurity` | Specifies that the type has security associated with it. |
 
 ## Requirements
 

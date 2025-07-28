@@ -16,7 +16,7 @@ topic_type:
 ---
 # IMetaDataConverter::GetMetaDataFromTypeLib Method
 
-Gets an interface pointer to an [IMetaDataImport](imetadataimport-interface.md) instance that represents the metadata signature of the type library represented by the specified `ITypeLib` instance.
+Gets an interface pointer to an [IMetaDataImport](../../../core/unmanaged-api/metadata/interfaces/imetadataimport-interface.md) instance that represents the metadata signature of the type library represented by the specified `ITypeLib` instance.
 
 ## Syntax
 
@@ -45,5 +45,5 @@ HRESULT GetMetaDataFromTypeLib (
 
 ## See also
 
-- [IMetaDataEmit Interface](imetadataemit-interface.md)
-- [IMetaDataImport Interface](imetadataimport-interface.md)
+- [IMetaDataEmit Interface](../../../core/unmanaged-api/metadata/interfaces/imetadataemit-interface.md)
+- [IMetaDataImport Interface](../../../core/unmanaged-api/metadata/interfaces/imetadataimport-interface.md)

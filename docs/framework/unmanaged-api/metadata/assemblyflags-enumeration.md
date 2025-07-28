@@ -48,7 +48,3 @@ typedef enum _AssemblyFlags {
  **Header:** MsCorEE.h
 
  **Library:** Included as a resource in MsCorEE.dll
-
-## See also
-
-- [IMetaDataAssemblyEmit Interface](../interfaces/imetadataassemblyemit-interface.md)

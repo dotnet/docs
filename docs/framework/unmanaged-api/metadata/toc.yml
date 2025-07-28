@@ -43,14 +43,14 @@ items:
     - name: MarkToken Method
       href: ihostfilter-marktoken-method.md
     - name: IMetaDataConverter interface
-      href: ../../core/unmanaged-api/metadata/interfaces/imetadataconverter-interface.md
+      href: imetadataconverter-interface.md
       items:
       - name: GetMetaDataFromTypeInfo method
-        href: ../../core/unmanaged-api/metadata/interfaces/imetadataconverter-getmetadatafromtypeinfo-method.md
+        href: imetadataconverter-getmetadatafromtypeinfo-method.md
       - name: GetMetaDataFromTypeLib method
-        href: ../../core/unmanaged-api/metadata/interfaces/imetadataconverter-getmetadatafromtypelib-method.md
+        href: imetadataconverter-getmetadatafromtypelib-method.md
       - name: GetTypeLibFromMetaData method
-        href: ../../core/unmanaged-api/metadata/interfaces/imetadataconverter-gettypelibfrommetadata-method.md
+        href: imetadataconverter-gettypelibfrommetadata-method.md
 - name: Metadata Global Static Functions
   href: metadata-global-static-functions.md
 - name: Metadata Enumerations

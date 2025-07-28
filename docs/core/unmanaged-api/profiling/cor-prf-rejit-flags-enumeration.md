@@ -15,7 +15,6 @@ helpviewer_keywords:
 topic_type:
   - "apiref"
 author: "davmason"
-ms.author: "davmason"
 ---
 # COR_PRF_REJIT_FLAGS enumeration
 

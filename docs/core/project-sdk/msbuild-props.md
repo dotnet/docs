@@ -1461,7 +1461,7 @@ By setting the value in SDKAnalysisLevel column, you are getting the Current col
 | SDKAnalysisLevel | What | Previous | Current |
 |------------------------|-----------|--------|-------|
 | 9.0.100 | Restore HTTP sources diagnostic | [NU1803](/nuget/reference/errors-and-warnings/nu1803) warning | [NU1302](/nuget/reference/errors-and-warnings/nu1302) error. |  
-| 10.0.100 | Restore Package Pruning, [PrunePackageReference](/nuget/consume-packages/package-references-in-project-files#prunepackagereference), enabled by default | N/A | Enabled for projects targeting .NET 8+ & .NET Standard 2.0+ |
+| 10.0.100 | Restore package pruning, [PrunePackageReference](/nuget/consume-packages/package-references-in-project-files#prunepackagereference), enabled by default | N/A | Enabled for projects that target .NET 8+ or .NET Standard 2.0+ |
 | 10.0.100 | Restore resolver with lock files | Uses legacy dependency graph resolver (.NET 8 SDK and earlier) | Uses improved, [.NET 9 dependency graph resolver](/nuget/consume-packages/package-references-in-project-files#nuget-dependency-resolver) |
 | 10.0.100 | Restore behavior for PackageReference without a version | [NU1603](/nuget/reference/errors-and-warnings/nu1603) warning | [NU1015](/nuget/reference/errors-and-warnings/nu1015) error |
 

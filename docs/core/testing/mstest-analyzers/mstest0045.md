@@ -30,10 +30,10 @@ A test method uses <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TimeoutAtt
 
 ## Rule description
 
-There is no way to gracefully abort a running thread. So, for a timeout to work, there are two ways:
+There's no way to gracefully abort a running thread. There are two ways for a timeout to work:
 
-1. Stop observing the thread running the test. But this can be problematic in many cases and might make the remaining tests unstable due to potential race conditions. This is non-cooperative cancellation.
-2. A cancellation is requested once the timeout is reached, and it's the test responsibility to terminate on request. This is cooperative cancellation.
+- Stop observing the thread running the test. But this can be problematic in many cases and might make the remaining tests unstable due to potential race conditions. This is *non-cooperative cancellation*.
+- Request cancellation once the timeout is reached, and it's the test responsibility to terminate on request. This is *cooperative cancellation*.
 
 When using <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TimeoutAttribute>, you should set `CooperativeCancellation` to `true` to enable cooperative cancellation. Without cooperative cancellation, the test framework stops observing the test execution when the timeout is reached, but the test continues running in the background. This can lead to problems for other tests or cleanup steps, as the original test is still executing and might interfere with subsequent operations.
 

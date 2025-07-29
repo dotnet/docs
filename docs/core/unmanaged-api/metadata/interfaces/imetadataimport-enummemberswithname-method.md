@@ -57,10 +57,10 @@ HRESULT EnumMembersWithName (
 
 ## Return Value
 
-|HRESULT|Description|
+| HRESULT | Description |
 |-------------|-----------------|
-|`S_OK`|`EnumTypeDefs` returned successfully.|
-|`S_FALSE`|There are no MemberDef tokens to enumerate. In that case, `pcTokens` is zero.|
+| `S_OK` | `EnumTypeDefs` returned successfully. |
+| `S_FALSE` | There are no MemberDef tokens to enumerate. In that case, `pcTokens` is zero. |
 
 ## Requirements
 

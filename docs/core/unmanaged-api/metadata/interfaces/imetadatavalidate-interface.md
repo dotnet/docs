@@ -19,10 +19,10 @@ Provides methods to validate metadata signatures.
 
 ## Methods
 
-|Method|Description|
+| Method | Description |
 |------------|-----------------|
-|[ValidateMetaData Method](imetadatavalidate-validatemetadata-method.md)|Validates the metadata signatures of the objects in the current metadata scope.|
-|[ValidatorInit Method](imetadatavalidate-validatorinit-method.md)|Sets a flag that specifies the type of the module in the current metadata scope, and registers the specified callback method for validation errors.|
+|[ValidateMetaData Method](imetadatavalidate-validatemetadata-method.md)| Validates the metadata signatures of the objects in the current metadata scope. |
+|[ValidatorInit Method](imetadatavalidate-validatorinit-method.md)| Sets a flag that specifies the type of the module in the current metadata scope, and registers the specified callback method for validation errors. |
 
 ## Requirements
 

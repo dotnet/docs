@@ -59,17 +59,17 @@ typedef enum CorAssemblyFlags {
 | `afPA_AMD64`  | Indicates that the processor architecture is x86-64 (PE32+).               |
 | `afPA_ARM`    | Indicates that the processor architecture is ARM (PE32).                   |
 | `afPA_ARM64`  | Indicates that the processor architecture is ARM64 (PE32+).                |
-|`afPA_NoPlatform`|Indicates that the assembly is a reference assembly; that is, it applies to any architecture but cannot run on any architecture. Thus, the flag is the same as `afPA_Mask`.|
-|`afPA_Specified`|Indicates that the processor architecture flags should be propagated to the `AssemblyRef` record.|
-|`afPA_Mask`|A mask that describes the processor architecture.|
-|`afPA_FullMask`|Specifies that the processor architecture description is included.|
-|`afPA_Shift`|Indicates a shift count in the processor architecture flags to and from the index.|
-|`afEnableJITcompileTracking`|Indicates the corresponding value from the <xref:System.Diagnostics.DebuggableAttribute.DebuggingModes> of the <xref:System.Diagnostics.DebuggableAttribute>.|
-|`afDisableJITcompileOptimizer`|Indicates the corresponding value from the <xref:System.Diagnostics.DebuggableAttribute.DebuggingModes> of the <xref:System.Diagnostics.DebuggableAttribute>.|
-|`afRetargetable`|Indicates that the assembly can be retargeted at run time to an assembly from a different publisher.|
-|`afContentType_Mask`|A mask that describes the content type.|
-|`afContentType_Default`|Indicates the default content type.|
-|`afContentType_WindowsRuntime`|Indicates the Windows Runtime content type.|
+| `afPA_NoPlatform` |Indicates that the assembly is a reference assembly; that is, it applies to any architecture but cannot run on any architecture. Thus, the flag is the same as `afPA_Mask`.|
+| `afPA_Specified` | Indicates that the processor architecture flags should be propagated to the `AssemblyRef` record. |
+| `afPA_Mask` | A mask that describes the processor architecture. |
+| `afPA_FullMask` | Specifies that the processor architecture description is included. |
+| `afPA_Shift` | Indicates a shift count in the processor architecture flags to and from the index. |
+| `afEnableJITcompileTracking` |Indicates the corresponding value from the <xref:System.Diagnostics.DebuggableAttribute.DebuggingModes> of the <xref:System.Diagnostics.DebuggableAttribute>.|
+| `afDisableJITcompileOptimizer` |Indicates the corresponding value from the <xref:System.Diagnostics.DebuggableAttribute.DebuggingModes> of the <xref:System.Diagnostics.DebuggableAttribute>.|
+| `afRetargetable` | Indicates that the assembly can be retargeted at run time to an assembly from a different publisher. |
+| `afContentType_Mask` | A mask that describes the content type. |
+| `afContentType_Default` | Indicates the default content type. |
+| `afContentType_WindowsRuntime` | Indicates the Windows Runtime content type. |
 
 ## Requirements
 

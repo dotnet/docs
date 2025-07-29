@@ -36,16 +36,16 @@ typedef enum CorErrorIfEmitOutOfOrder {
 
 ## Members
 
-|Member|Description|
+| Member | Description |
 |------------|-----------------|
-|`MDErrorOutOfOrderDefault`|Indicates the default behavior, which does not generate error messages.|
-|`MDErrorOutOfOrderNone`|Indicates that the compiler should not generate error messages.|
-|`MDErrorOutOfOrderAll`|Indicates that the compiler should generate an error message when a field, property, event, method, or parameter is emitted out of order.|
-|`MDMethodOutOfOrder`|Indicates that the compiler should generate an error message when a method is emitted out of order.|
-|`MDFieldOutOfOrder`|Indicates that the compiler should generate an error message when a field is emitted out of order.|
-|`MDParamOutOfOrder`|Indicates that the compiler should generate an error message when a parameter is emitted out of order.|
-|`MDPropertyOutOfOrder`|Indicates that the compiler should generate an error message when a property is emitted out of order.|
-|`MDEventOutOfOrder`|Indicates that the compiler should generate an error message when an event is emitted out of order.|
+| `MDErrorOutOfOrderDefault` | Indicates the default behavior, which does not generate error messages. |
+| `MDErrorOutOfOrderNone` | Indicates that the compiler should not generate error messages. |
+| `MDErrorOutOfOrderAll` | Indicates that the compiler should generate an error message when a field, property, event, method, or parameter is emitted out of order. |
+| `MDMethodOutOfOrder` | Indicates that the compiler should generate an error message when a method is emitted out of order. |
+| `MDFieldOutOfOrder` | Indicates that the compiler should generate an error message when a field is emitted out of order. |
+| `MDParamOutOfOrder` | Indicates that the compiler should generate an error message when a parameter is emitted out of order. |
+| `MDPropertyOutOfOrder` | Indicates that the compiler should generate an error message when a property is emitted out of order. |
+| `MDEventOutOfOrder` | Indicates that the compiler should generate an error message when an event is emitted out of order. |
 
 ## Requirements
 

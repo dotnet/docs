@@ -45,10 +45,10 @@ HRESULT EnumSignatures (
 
 ## Return Value
 
-|HRESULT|Description|
+| HRESULT | Description |
 |-------------|-----------------|
-|`S_OK`|`EnumSignatures` returned successfully.|
-|`S_FALSE`|There are no tokens to enumerate. In that case, `pcSignatures` is zero.|
+| `S_OK` | `EnumSignatures` returned successfully. |
+| `S_FALSE` | There are no tokens to enumerate. In that case, `pcSignatures` is zero. |
 
 ## Remarks
 

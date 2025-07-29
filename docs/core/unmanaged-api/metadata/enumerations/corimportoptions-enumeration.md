@@ -37,17 +37,17 @@ typedef enum CorImportOptions {
 
 ## Members
 
-|Member|Description|
+| Member | Description |
 |------------|-----------------|
-|`MDImportOptionDefault`|Indicates the default behavior, which is to skip deleted records.|
-|`MDImportOptionAll`|Indicates that all metadata should be enumerated.|
-|`MDImportOptionAllTypeDefs`|Indicates that all TypeDefs, including deleted ones, should be enumerated.|
-|`MDImportOptionAllMethodDefs`|Indicates that all MethodDefs, including deleted ones, should be enumerated.|
-|`MDImportOptionAllFieldDefs`|Indicates that all FieldDefs, including deleted ones, should be enumerated.|
-|`MDImportOptionAllProperties`|Indicates that all PropertyDefs, including deleted ones, should be enumerated.|
-|`MDImportOptionAllEvents`|Indicates that all EventDefs, including deleted ones, should be enumerated.|
-|`MDImportOptionAllCustomAttributes`|Indicates that all custom attributes, including deleted ones, should be enumerated.|
-|`MDImportOptionAllExportedTypes`|Indicates that all exported types, including deleted ones, should be enumerated.|
+| `MDImportOptionDefault` | Indicates the default behavior, which is to skip deleted records. |
+| `MDImportOptionAll` | Indicates that all metadata should be enumerated. |
+| `MDImportOptionAllTypeDefs` | Indicates that all TypeDefs, including deleted ones, should be enumerated. |
+| `MDImportOptionAllMethodDefs` | Indicates that all MethodDefs, including deleted ones, should be enumerated. |
+| `MDImportOptionAllFieldDefs` | Indicates that all FieldDefs, including deleted ones, should be enumerated. |
+| `MDImportOptionAllProperties` | Indicates that all PropertyDefs, including deleted ones, should be enumerated. |
+| `MDImportOptionAllEvents` | Indicates that all EventDefs, including deleted ones, should be enumerated. |
+| `MDImportOptionAllCustomAttributes` | Indicates that all custom attributes, including deleted ones, should be enumerated. |
+| `MDImportOptionAllExportedTypes` | Indicates that all exported types, including deleted ones, should be enumerated. |
 
 ## Requirements
 

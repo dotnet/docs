@@ -10,7 +10,7 @@ A subclass of [ICorProfilerInfo8](../../../framework/unmanaged-api/profiling/ico
 
 ## Methods
 
-| Method|Description|
+| Method | Description |
 | ------------|-----------------|
 |[GetNativeCodeStartAddresses Method](icorprofilerinfo9-getnativecodestartaddresses-method.md)| Given a `functionId` and `rejitId`, enumerates the native code start address of all jitted versions of this code that currently exist. |
 |[GetILToNativeMapping3 Method](icorprofilerinfo9-getiltonativemapping3-method.md)| Given the native code start address, returns the native to IL mapping information for this jitted version of the code. |

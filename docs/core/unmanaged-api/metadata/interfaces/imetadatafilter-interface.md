@@ -19,11 +19,11 @@ Provides methods for marking and filtering metadata tokens to avoid repeating ac
 
 ## Methods
 
-|Method|Description|
+| Method | Description |
 |------------|-----------------|
-|[IsTokenMarked Method](imetadatafilter-istokenmarked-method.md)|Gets a value indicating whether the specified metadata token has been processed.|
-|[MarkToken Method](imetadatafilter-marktoken-method.md)|Sets a value indicating that the specified metadata token has been processed.|
-|[UnmarkAll Method](imetadatafilter-unmarkall-method.md)|Removes the processing marks from all the tokens in the current metadata scope.|
+|[IsTokenMarked Method](imetadatafilter-istokenmarked-method.md)| Gets a value indicating whether the specified metadata token has been processed. |
+|[MarkToken Method](imetadatafilter-marktoken-method.md)| Sets a value indicating that the specified metadata token has been processed. |
+|[UnmarkAll Method](imetadatafilter-unmarkall-method.md)| Removes the processing marks from all the tokens in the current metadata scope. |
 
 ## Requirements
 

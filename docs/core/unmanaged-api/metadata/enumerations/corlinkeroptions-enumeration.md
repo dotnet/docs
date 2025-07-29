@@ -28,10 +28,10 @@ typedef enum CorLinkerOptions {
 
 ## Members
 
-|Member|Description|
+| Member | Description |
 |------------|-----------------|
-|`MDAssembly`|The private types and global functions are not preserved.|
-|`MDNetModule`|The private types and global functions are preserved.|
+| `MDAssembly` | The private types and global functions are not preserved. |
+| `MDNetModule` | The private types and global functions are preserved. |
 
 ## Requirements
 

@@ -45,10 +45,10 @@ HRESULT EnumTypeSpecs (
 
 ## Return Value
 
-|HRESULT|Description|
+| HRESULT | Description |
 |-------------|-----------------|
-|`S_OK`|`EnumTypeSpecs` returned successfully.|
-|`S_FALSE`|There are no tokens to enumerate. In that case, `pcTypeSpecs` is zero.|
+| `S_OK` | `EnumTypeSpecs` returned successfully. |
+| `S_FALSE` | There are no tokens to enumerate. In that case, `pcTypeSpecs` is zero. |
 
 ## Remarks
 

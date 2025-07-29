@@ -57,10 +57,10 @@ HRESULT EnumFieldsWithName (
 
 ## Return Value
 
-|HRESULT|Description|
+| HRESULT | Description |
 |-------------|-----------------|
-|`S_OK`|`EnumFieldsWithName` returned successfully.|
-|`S_FALSE`|There are no fields to enumerate. In that case, `pcTokens` is zero.|
+| `S_OK` | `EnumFieldsWithName` returned successfully. |
+| `S_FALSE` | There are no fields to enumerate. In that case, `pcTokens` is zero. |
 
 ## Requirements
 

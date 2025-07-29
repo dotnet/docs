@@ -49,10 +49,10 @@ HRESULT EnumProperties (
 
 ## Return Value
 
-|HRESULT|Description|
+| HRESULT | Description |
 |-------------|-----------------|
-|`S_OK`|`EnumProperties` returned successfully.|
-|`S_FALSE`|There are no tokens to enumerate. In that case, `pcProperties` is zero.|
+| `S_OK` | `EnumProperties` returned successfully. |
+| `S_FALSE` | There are no tokens to enumerate. In that case, `pcProperties` is zero. |
 
 ## Requirements
 

@@ -37,16 +37,16 @@ typedef enum CorSetENC {
 
 ## Members
 
-|Member|Description|
+| Member | Description |
 |------------|-----------------|
-|`MDSetENCOn`|Obsolete.|
-|`MDSetENCOff`|Obsolete.|
-|`MDUpdateENC`|Indicates that whereas metadata can be updated, tokens cannot be moved.|
-|`MDUpdateFull`|Indicates that tokens can be moved during updates.|
-|`MDUpdateExtension`|Indicates that updates can consist only of additions. Tokens cannot be moved.|
-|`MDUpdateIncremental`|Indicates that compilation is incremental.|
-|`MDUpdateDelta`|Indicates that only changed metadata should be saved.|
-|`MDUpdateMask`|Includes `MDUpdateENC`, `MDUpdateFull` and `MDUpdateIncremental`.|
+| `MDSetENCOn` | Obsolete. |
+| `MDSetENCOff` | Obsolete. |
+| `MDUpdateENC` | Indicates that whereas metadata can be updated, tokens cannot be moved. |
+| `MDUpdateFull` | Indicates that tokens can be moved during updates. |
+| `MDUpdateExtension` | Indicates that updates can consist only of additions. Tokens cannot be moved. |
+| `MDUpdateIncremental` | Indicates that compilation is incremental. |
+| `MDUpdateDelta` | Indicates that only changed metadata should be saved. |
+| `MDUpdateMask` | Includes `MDUpdateENC`, `MDUpdateFull` and `MDUpdateIncremental`. |
 
 ## Requirements
 

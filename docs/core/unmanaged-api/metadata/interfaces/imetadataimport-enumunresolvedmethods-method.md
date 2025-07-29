@@ -45,10 +45,10 @@ HRESULT EnumUnresolvedMethods (
 
 ## Return Value
 
-|HRESULT|Description|
+| HRESULT | Description |
 |-------------|-----------------|
-|`S_OK`|`EnumUnresolvedMethods` returned successfully.|
-|`S_FALSE`|There are no tokens to enumerate. In that case, `pcTokens` is zero.|
+| `S_OK` | `EnumUnresolvedMethods` returned successfully. |
+| `S_FALSE` | There are no tokens to enumerate. In that case, `pcTokens` is zero. |
 
 ## Remarks
 

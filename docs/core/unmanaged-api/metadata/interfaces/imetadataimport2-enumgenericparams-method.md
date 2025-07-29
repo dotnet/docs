@@ -49,10 +49,10 @@ HRESULT EnumGenericParams (
 
 ## Return Value
 
-|HRESULT|Description|
+| HRESULT | Description |
 |-------------|-----------------|
-|`S_OK`|`EnumGenericParams` returned successfully.|
-|`S_FALSE`|`phEnum` has no member elements. In this case, `pcGenericParams` is set to 0 (zero).|
+| `S_OK` | `EnumGenericParams` returned successfully. |
+| `S_FALSE` |`phEnum` has no member elements. In this case, `pcGenericParams` is set to 0 (zero).|
 
 ## Requirements
 

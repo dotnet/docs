@@ -53,10 +53,10 @@ HRESULT EnumCustomAttributes (
 
 ## Return Value
 
-|HRESULT|Description|
+| HRESULT | Description |
 |-------------|-----------------|
-|`S_OK`|`EnumCustomAttributes` returned successfully.|
-|`S_FALSE`|There are no custom attributes to enumerate. In that case, `pcCustomAttributes` is zero.|
+| `S_OK` | `EnumCustomAttributes` returned successfully. |
+| `S_FALSE` | There are no custom attributes to enumerate. In that case, `pcCustomAttributes` is zero. |
 
 ## Requirements
 

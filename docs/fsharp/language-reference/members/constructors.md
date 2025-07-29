@@ -9,7 +9,7 @@ This article describes how to define and use constructors to create and initiali
 
 ## Construction of class objects
 
-Objects of class types have constructors. There are two kinds of constructors. One is the primary constructor, whose parameters appear in parentheses just after the type name. You specify other, optional additional constructors by using the `new` keyword. Any such additional constructors must call the primary constructor.
+Objects of class types have constructors. There are two kinds of constructors. One is the primary constructor, whose parameters appear in parentheses just after the type name. Optionally, you can specify additional constructors by using the `new` keyword. Any such additional constructors must call the primary constructor.
 
 The primary constructor contains `let` and `do` bindings that appear at the start of the class definition. A `let` binding declares private fields and methods of the class; a `do` binding executes code. For more information about `let` bindings in class constructors, see [`let` Bindings in Classes](let-bindings-in-classes.md). For more information about `do` bindings in constructors, see [`do` Bindings in Classes](do-bindings-in-classes.md).
 

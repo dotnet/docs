@@ -95,6 +95,9 @@ Specifies the locations that should be considered when searching for a compatibl
 
 These paths are searched in the order they're defined and the first [matching](#matching-rules) SDK is used.
 
+> [!NOTE]
+> The "paths" feature only works when using commands that engage the .NET SDK, such as with `dotnet run`. It does NOT affect scenarios such as running the native apphost launcher (`app.exe`), running with `dotnet app.dll`, or running with `dotnet exec app.dll`. To use the "paths" feature, you must use SDK commands like `dotnet run`.
+
 #### errorMessage
 
 - Type: `string`

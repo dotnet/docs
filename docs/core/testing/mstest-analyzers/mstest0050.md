@@ -40,34 +40,4 @@ Ensure that global test fixture methods follow the required layout.
 
 ## When to suppress warnings
 
-Don't suppress warnings from this rule. Global test fixture methods with invalid layouts may not execute properly or may cause runtime errors.
-
-## Example of a violation
-
-```csharp
-[TestClass]
-public class GlobalTestFixture
-{
-    // Violation: AssemblyInitialize method should be static and take TestContext parameter
-    [AssemblyInitialize]
-    public void Setup()
-    {
-        // Setup code
-    }
-}
-```
-
-## Example of how to fix
-
-```csharp
-[TestClass]
-public class GlobalTestFixture
-{
-    // Fixed: Correct method signature for AssemblyInitialize
-    [AssemblyInitialize]
-    public static void Setup(TestContext testContext)
-    {
-        // Setup code
-    }
-}
-```
+Don't suppress warnings from this rule. Invalid global test fixture methods will not execute at run-time.

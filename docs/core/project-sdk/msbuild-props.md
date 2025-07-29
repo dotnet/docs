@@ -1457,7 +1457,7 @@ For more information, see [SDK Analysis Level Property and Usage](https://github
 
 The following table summarizes the diagnostics affected by `SDKAnalysisLevel`.
 
-| SDKAnalysisLevel | What | Previous | Current |
+| SDKAnalysisLevel | Diagnostic | Previous | Current |
 |------------------------|-----------|--------|-------|
 | 9.0.100 | Restore HTTP sources diagnostic | [NU1803](/nuget/reference/errors-and-warnings/nu1803) warning | [NU1302](/nuget/reference/errors-and-warnings/nu1302) error. |  
 | 10.0.100 | Restore package pruning, [PrunePackageReference](/nuget/consume-packages/package-references-in-project-files#prunepackagereference), enabled by default | N/A | Enabled for projects that target .NET 8+ or .NET Standard 2.0+ |

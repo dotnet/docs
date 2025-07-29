@@ -26,25 +26,17 @@ ms.author: amauryleve
 
 ## Cause
 
-A global test fixture method (marked with <xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssemblyInitializeAttribute> or <xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssemblyCleanupAttribute>) doesn't follow the required layout or has invalid configuration.
+A global test fixture method (marked with `GlobalTestInitializeAttribute` or `GlobalTestCleanupAttribute`) doesn't follow the required layout or has invalid configuration.
 
 ## Rule description
 
-Global test fixture methods must follow specific requirements to ensure proper test execution. This rule validates that methods marked with <xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssemblyInitializeAttribute> or <xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssemblyCleanupAttribute> adhere to the correct method signature and configuration rules.
+Global test fixture methods must follow specific requirements to ensure proper test execution. This rule validates that methods marked with `GlobalTestInitializeAttribute` or `GlobalTestCleanupAttribute` adhere to the correct method signature and configuration rules.
 
-Common violations include:
-
-- Incorrect method signatures or parameters
-- Invalid access modifiers
-- Missing or incorrect return types
-- Improper method declarations
+The method must be `public`, `static`, non-generic, have a single parameter of type `TestContext`, and return `void` or `Task`. In addition, the containing type must be `public`, `static`, non-generic, and be marked with `TestClassAttribute`.
 
 ## How to fix violations
 
-Ensure that global test fixture methods follow the required layout:
-
-- Methods marked with <xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssemblyInitializeAttribute> should be `public static` and take a <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> parameter
-- Methods marked with <xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssemblyCleanupAttribute> should be `public static` and optionally take a <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> parameter (starting with MSTest 3.6)
+Ensure that global test fixture methods follow the required layout.
 
 ## When to suppress warnings
 

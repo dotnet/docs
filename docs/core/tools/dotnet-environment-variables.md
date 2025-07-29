@@ -397,7 +397,7 @@ Specifies whether .NET SDK local tools search for tool manifest files in the roo
 
 ### `DOTNET_HOST_TRACE`
 
-**This variable applies to .NET 10 and later versions.** For older versions, replace the `DOTNET_HOST_` prefix with `COREHOST_`. See [`COREHOST_TRACE`](#corehost_trace).
+**This variable applies to .NET 10 and later versions.** For older versions, replace the `DOTNET_HOST_` prefix with [`COREHOST_`](#corehost_trace).
 
 Controls diagnostics tracing from the hosting components, such as `dotnet.exe`, `hostfxr`, and `hostpolicy`.
 

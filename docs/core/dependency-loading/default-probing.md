@@ -50,7 +50,7 @@ The .NET Core runtime host will output useful trace messages when certain enviro
 |`DOTNET_HOST_TRACEFILE=<path>` |Traces to a file path instead of the default `stderr`.|
 |`DOTNET_HOST_TRACE_VERBOSITY`  |Sets the verbosity from 1 (lowest) to 4 (highest).|
 
-See [DOTNET_HOST_TRACE environment variables](../tools/dotnet-environment-variables.md#dotnet_host_trace) for details.
+For more information, see [DOTNET_HOST_TRACE environment variables](../tools/dotnet-environment-variables.md#dotnet_host_trace).
 
 ## Managed assembly default probing
 

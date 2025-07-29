@@ -20,9 +20,9 @@ ms.author: amauryleve
 | **Category**                        | Usage                                                                                    |
 | **Fix is breaking or non-breaking** | Non-breaking                                                                             |
 | **Enabled by default**              | Yes                                                                                      |
-| **Default severity**                | Warning                                                                                  |
+| **Default severity**                | Error                                                                                    |
 | **Introduced in version**           | 3.10.0                                                                                   |
-| **Is there a code fix**             | Yes                                                                                      |
+| **Is there a code fix**             | No                                                                                       |
 
 ## Cause
 

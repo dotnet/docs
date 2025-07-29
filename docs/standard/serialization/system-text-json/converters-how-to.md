@@ -355,6 +355,42 @@ When the sample code calls the serializer, it uses a <xref:System.Text.Json.Json
 
 The preceding example only does serialization, but a similar approach can be adopted for deserialization.
 
+### ReferenceResolver limitations with custom converters
+
+When using <xref:System.Text.Json.Serialization.ReferenceHandler.Preserve%2A>, there's an important limitation to be aware of when working with custom converters: **reference handling state is not preserved when the serializer calls into custom converters**. This means that if you have a custom converter for a type that's part of an object graph being serialized or deserialized with reference preservation enabled, the converter won't have access to the current <xref:System.Text.Json.Serialization.ReferenceResolver> instance.
+
+Consider this scenario:
+
+```csharp
+public class Parent
+{
+    public Child Child1 { get; set; }
+    public Child Child2 { get; set; }
+}
+
+[JsonConverter(typeof(ChildConverter))]
+public class Child
+{
+    public string Name { get; set; }
+}
+```
+
+If `Child1` and `Child2` reference the same object instance, and you serialize `Parent` with `ReferenceHandler.Preserve`, the custom `ChildConverter` won't be able to participate in the reference handling. The converter will be called for each `Child` instance separately, without knowledge of whether the object has already been serialized elsewhere in the graph.
+
+#### Current workarounds and limitations
+
+Currently, there's no direct way to access the active `ReferenceResolver` from within a custom converter. Calling `ReferenceHandler.CreateResolver()` throws an exception because the resolver has already been created earlier in the serialization process.
+
+If you need both custom conversion logic and reference preservation, consider these approaches:
+
+1. **Implement reference handling in the converter itself**: Manually track object references within your converter using a static or thread-local dictionary, but be aware this has limitations and complexity.
+
+2. **Use a different serialization approach**: Consider whether you can restructure your data or use alternative serialization strategies that don't require both custom converters and reference preservation simultaneously.
+
+3. **Avoid custom converters for reference types in the object graph**: If possible, use custom converters only for leaf nodes or value types that don't participate in reference cycles.
+
+This limitation is tracked in the .NET runtime repository as [issue #51715](https://github.com/dotnet/runtime/issues/51715), with plans for improvement tracked in [issue #42163](https://github.com/dotnet/runtime/issues/42163).
+
 ## Other custom converter samples
 
 The [Migrate from Newtonsoft.Json to System.Text.Json](migrate-from-newtonsoft.md) article contains additional samples of custom converters.

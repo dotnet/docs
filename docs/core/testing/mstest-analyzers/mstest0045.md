@@ -44,7 +44,18 @@ When using cooperative cancellation mode, MSTest only triggers cancellation of t
 Use the provided code fixer to automatically set the `CooperativeCancellation` property to `true` on the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TimeoutAttribute>. You can also manually add the property if needed.
 
 ```csharp
-[Timeout(TimeoutValue, CooperativeCancellation = true)]
+[TestClass]
+public class TestClass1
+{
+    public TestContext TestContext { get; set; }
+
+    [Timeout(TimeoutValue, CooperativeCancellation = true)]
+    [TestMethod]
+    public void TestMethod1()
+    {
+        // Respect TestContext.CancellationTokenSource.Token
+    }
+}
 ```
 
 Alternatively, you can configure cooperative cancellation globally in your [runsettings](/dotnet/core/testing/unit-testing-mstest-configure#mstest-element) or [testconfig.json](/dotnet/core/testing/unit-testing-mstest-configure#timeout-settings) file to apply this setting to all timeout attributes in your test project.

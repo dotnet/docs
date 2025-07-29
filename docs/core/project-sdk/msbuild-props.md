@@ -1455,7 +1455,7 @@ The allowed values of this property are SDK feature bands, for example, 8.0.100 
 
 For more information, see [SDK Analysis Level Property and Usage](https://github.com/dotnet/designs/blob/main/proposed/sdk-analysis-level.md).
 
-The following table summarizes summarizes which diagnostics SDKAnalysisLevel affects.
+The following table summarizes the diagnostics affected by `SDKAnalysisLevel`.
 By setting the value in SDKAnalysisLevel column, you are getting the Current column.
 
 | SDKAnalysisLevel | What | Previous | Current |

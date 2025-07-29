@@ -89,6 +89,35 @@ These compiler errors indicate one of these problems in your code:
 - You used the [global scope operator, (`::`)](../operators/namespace-alias-qualifier.md) when the type isn't in the global namespace.
 - You're accessing an extension member and either the namespace isn't specified in a `using` directive, or you're not referencing the assembly that contains the extension.
 
+### When the assembly appears to be referenced
+
+If the assembly appears to be referenced in your project but you still receive CS0012, try these troubleshooting steps:
+
+1. **Restore packages**: Run `dotnet restore` to ensure all package references are properly resolved, especially after installing or uninstalling NuGet packages.
+
+1. **Clear package caches**: Clear the NuGet package cache and restore:
+
+   ```console
+   dotnet nuget locals all --clear
+   dotnet restore
+   ```
+
+1. **Check for version conflicts**: Verify that all referenced assemblies use compatible versions. Look for binding redirect warnings in the build output.
+
+1. **Clean and rebuild**: Clean the solution and rebuild to ensure no stale references remain:
+
+   ```console
+   dotnet clean
+   dotnet build
+   ```
+
+1. **Verify package integrity**: If the error occurred after package operations, ensure the package was installed correctly by removing and reinstalling it:
+
+   ```console
+   dotnet remove package [PackageName]
+   dotnet add package [PackageName]
+   ```
+
 ## Type forwarding
 
 - **CS1068**: *The type name could not be found in the global namespace. This type has been forwarded to another assembly. Consider adding a reference to that assembly.*

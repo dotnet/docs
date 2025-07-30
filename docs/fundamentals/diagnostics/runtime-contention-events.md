@@ -9,11 +9,11 @@ helpviewer_keywords:
 
 # .NET runtime contention events
 
-These runtime events capture information about monitor lock contentions, such as with `Monitor.Enter` or the C# lock keyword. For more information about how to use these events for diagnostic purposes, see [logging and tracing .NET applications](../../core/diagnostics/logging-tracing.md).
+These runtime events capture information about monitor lock contentions such as with `Monitor.Enter` or the C# lock keyword. For more information about how to use these events for diagnostic purposes, see [logging and tracing .NET applications](../../core/diagnostics/logging-tracing.md).
 
 ## ContentionStart_V2 event
 
-The runtime emits this event when a monitor lock contention starts.
+This event is emitted at the start of a monitor lock contention.
 
 | Keyword for raising the event | Level             |
 |-------------------------------|-------------------|
@@ -34,7 +34,7 @@ The runtime emits this event when a monitor lock contention starts.
 
 ## ContentionStop_V1 event
 
-The runtime emits this event at the end of a monitor lock contention.
+This event is emitted at the end of a monitor lock contention.
 
 | Keyword for raising the event | Level             |
 |-------------------------------|-------------------|

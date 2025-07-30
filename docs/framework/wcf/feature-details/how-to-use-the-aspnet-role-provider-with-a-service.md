@@ -2,6 +2,7 @@
 description: "Learn how to use the ASP.NET role provider with a service"
 title: "How to: Use the ASP.NET Role Provider with a Service"
 ms.date: "03/30/2017"
+ms.custom: sfi-ropc-nochange
 ---
 # How to: Use the ASP.NET Role Provider with a Service
 

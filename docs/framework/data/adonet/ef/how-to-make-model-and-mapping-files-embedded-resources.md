@@ -2,6 +2,7 @@
 description: "Learn more about deploying model and mapping files as embedded resources of an Entity Framework application."
 title: "How to: Make Model and Mapping Files Embedded Resources"
 ms.date: "03/30/2017"
+ms.custom: sfi-ropc-nochange
 ---
 # How to: Make Model and Mapping Files Embedded Resources
 

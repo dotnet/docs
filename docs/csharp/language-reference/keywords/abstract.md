@@ -12,8 +12,22 @@ ms.assetid: b0797770-c1f3-4b4d-9441-b9122602a6bb
 # abstract (C# Reference)
 
 The `abstract` modifier indicates that the thing being modified has a missing or incomplete implementation. The abstract modifier can be used with classes, methods, properties, indexers, and events. Use the `abstract` modifier in a class declaration to indicate that a class is intended only to be a base class of other classes, not instantiated on its own. Members marked as abstract must be implemented by non-abstract classes that derive from the abstract class.
+
+Abstract classes can contain both abstract members (which have no implementation and must be overridden in derived classes) and fully implemented members (such as regular methods, properties, and constructors). This allows abstract classes to provide common functionality while still requiring derived classes to implement specific abstract members.
   
-## Example 1
+## Example 1 - Abstract class with mixed members
+
+The following example demonstrates an abstract class that contains both implemented methods and abstract members:
+
+[!code-csharp[AbstractWithImplemented](snippets/abstract/Program.cs#snippet1)]
+
+In this example, the `Vehicle` abstract class provides:
+- **Implemented members**: `GetInfo()` method, `StartEngine()` method, and constructor - these provide common functionality for all vehicles
+- **Abstract members**: `Move()` method and `MaxSpeed` property - these must be implemented by each specific vehicle type
+
+This design allows the abstract class to provide shared functionality while ensuring that derived classes implement vehicle-specific behavior.
+
+## Example 2
 
  In this example, the class `Square` must provide an implementation of `GetArea` because it derives from `Shape`:  
   
@@ -24,6 +38,8 @@ The `abstract` modifier indicates that the thing being modified has a missing or
 - An abstract class cannot be instantiated.  
   
 - An abstract class may contain abstract methods and accessors.  
+  
+- An abstract class can also contain implemented methods, properties, fields, and other members that provide functionality to derived classes.
   
 - It is not possible to modify an abstract class with the [sealed](./sealed.md) modifier because the two modifiers have opposite meanings. The `sealed` modifier prevents a class from being inherited and the `abstract` modifier requires a class to be inherited.  
   
@@ -61,7 +77,7 @@ The `abstract` modifier indicates that the thing being modified has a missing or
   
 [!code-csharp[csrefKeywordsModifiers#2](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsModifiers/CS/csrefKeywordsModifiers.cs#2)]
   
-## Example 2
+## Example 3
 
  In this example, the class `DerivedClass` is derived from an abstract class `BaseClass`. The abstract class contains an abstract method, `AbstractMethod`, and two abstract properties, `X` and `Y`.  
   
@@ -77,7 +93,7 @@ You will get an error saying that the compiler cannot create an instance of the 
 
 Nonetheless, it is possible to use an abstract class constructor, as in the  example below
 
-## Example 3
+## Example 4
 
 [!code-csharp[csrefKeywordsModifiers#27](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsModifiers/CS/csrefKeywordsModifiers.cs#27)]
 

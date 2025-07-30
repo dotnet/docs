@@ -53,10 +53,10 @@ HRESULT EnumMethodImpls (
 
 ## Return Value
 
-|HRESULT|Description|
+| HRESULT | Description |
 |-------------|-----------------|
-|`S_OK`|`EnumMethodImpls` returned successfully.|
-|`S_FALSE`|There are no method tokens to enumerate. In that case, `pcTokens` is zero.|
+| `S_OK` | `EnumMethodImpls` returned successfully. |
+| `S_FALSE` | There are no method tokens to enumerate. In that case, `pcTokens` is zero. |
 
 ## Requirements
 

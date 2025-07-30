@@ -22,9 +22,9 @@ Provides a callback mechanism for reporting errors during the metadata merge.
 
 ## Methods
 
-|Method|Description|
+| Method | Description |
 |------------|-----------------|
-|[OnError Method](imetadataerror-onerror-method.md)|Provides notification of errors that occur during the metadata merge.|
+|[OnError Method](imetadataerror-onerror-method.md)| Provides notification of errors that occur during the metadata merge. |
 
 ## Requirements
 

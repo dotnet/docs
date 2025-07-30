@@ -49,29 +49,29 @@ typedef enum CorDeclSecurity {
 
 ## Members
 
-|Member|Description|
+| Member | Description |
 |------------|-----------------|
-|`dclActionMask`|Reserved.|
-|`dclActionNil`|Reserved.|
-|`dclRequest`|Reserved.|
-|`dclDemand`|All callers higher in the call stack are required to have been granted the permission specified by the current permission object.|
-|`dclAssert`|The calling code can access the resource identified by the current permission object, even if callers higher in the stack have not been granted permission to access the resource|
-|`dclDeny`|The ability to access the resource specified by the current permission object is denied to callers, even if they have been granted permission to access it.|
-|`dclPermitOnly`|Only the resources specified by this permission object can be accessed, even if the code has been granted permission to access other resources.|
-|`dclLinktimeCheck`|The immediate caller is required to have been granted the specified permission for a given period of time.|
-|`dclInheritanceCheck`|The derived class inheriting another class or overriding a method is required to have been granted the specified permission.|
-|`dclRequestMinimum`|The caller can request for the minimum permissions required for code to run. This action can only be used within the scope of the assembly.|
-|`dclRequestOptional`|The caller can request for additional permissions that are optional (not required to run). This request implicitly refuses all other permissions not specifically requested. This action can only be used within the scope of the assembly.|
-|`dclRequestRefuse`|The caller's request for permissions that might be misused will not be granted. This action can only be used within the scope of the assembly.|
-|`dclPrejitGrant`|Reserved.|
-|`dclPrejitDenied`|Reserved.|
-|`dclNonCasDemand`|Reserved.|
-|`dclNonCasLinkDemand`|The immediate caller is required to have been granted the specified permission.|
-|`dclNonCasInheritance`|Reserved.|
-|`dclLinkDemandChoice`|Reserved.|
-|`dclInheritanceDemandChoice`|Reserved.|
-|`dclDemandChoice`|Reserved.|
-|`dclMaximumValue`|Reserved.|
+| `dclActionMask` | Reserved. |
+| `dclActionNil` | Reserved. |
+| `dclRequest` | Reserved. |
+| `dclDemand` | All callers higher in the call stack are required to have been granted the permission specified by the current permission object. |
+| `dclAssert` |The calling code can access the resource identified by the current permission object, even if callers higher in the stack have not been granted permission to access the resource|
+| `dclDeny` | The ability to access the resource specified by the current permission object is denied to callers, even if they have been granted permission to access it. |
+| `dclPermitOnly` | Only the resources specified by this permission object can be accessed, even if the code has been granted permission to access other resources. |
+| `dclLinktimeCheck` | The immediate caller is required to have been granted the specified permission for a given period of time. |
+| `dclInheritanceCheck` | The derived class inheriting another class or overriding a method is required to have been granted the specified permission. |
+| `dclRequestMinimum` | The caller can request for the minimum permissions required for code to run. This action can only be used within the scope of the assembly. |
+| `dclRequestOptional` | The caller can request for additional permissions that are optional (not required to run). This request implicitly refuses all other permissions not specifically requested. This action can only be used within the scope of the assembly. |
+| `dclRequestRefuse` | The caller's request for permissions that might be misused will not be granted. This action can only be used within the scope of the assembly. |
+| `dclPrejitGrant` | Reserved. |
+| `dclPrejitDenied` | Reserved. |
+| `dclNonCasDemand` | Reserved. |
+| `dclNonCasLinkDemand` | The immediate caller is required to have been granted the specified permission. |
+| `dclNonCasInheritance` | Reserved. |
+| `dclLinkDemandChoice` | Reserved. |
+| `dclInheritanceDemandChoice` | Reserved. |
+| `dclDemandChoice` | Reserved. |
+| `dclMaximumValue` | Reserved. |
 
 ## Requirements
 

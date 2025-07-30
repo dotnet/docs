@@ -31,13 +31,13 @@ typedef enum CorRefToDefCheck {
 
 ## Members
 
-|Member|Description|
+| Member | Description |
 |------------|-----------------|
-|`MDRefToDefDefault`|Specifies that type references and member references should be converted to definitions. This is the default value (`MDTypeRefToDef` &#124; `MDMemberRefToDef`).|
-|`MDRefToDefAll`|Specifies that all referenced items should be converted to definitions.|
-|`MDRefToDefNone`|Specifies that no referenced items should be converted to definitions.|
-|`MDTypeRefToDef`|Specifies that only type references should be converted to type definitions.|
-|`MDMemberRefToDef`|Specifies that only member references should be converted to definitions. That is, member references should be converted to either method definitions or field definitions.|
+| `MDRefToDefDefault` |Specifies that type references and member references should be converted to definitions. This is the default value (`MDTypeRefToDef` &#124; `MDMemberRefToDef`).|
+| `MDRefToDefAll` | Specifies that all referenced items should be converted to definitions. |
+| `MDRefToDefNone` | Specifies that no referenced items should be converted to definitions. |
+| `MDTypeRefToDef` | Specifies that only type references should be converted to type definitions. |
+| `MDMemberRefToDef` | Specifies that only member references should be converted to definitions. That is, member references should be converted to either method definitions or field definitions. |
 
 ## Requirements
 

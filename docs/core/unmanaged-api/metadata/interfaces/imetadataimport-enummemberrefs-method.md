@@ -49,10 +49,10 @@ HRESULT EnumMemberRefs (
 
 ## Return Value
 
-|HRESULT|Description|
+| HRESULT | Description |
 |-------------|-----------------|
-|`S_OK`|`EnumMemberRefs` returned successfully.|
-|`S_FALSE`|There are no MemberRef tokens to enumerate. In that case, `pcTokens` is to zero.|
+| `S_OK` | `EnumMemberRefs` returned successfully. |
+| `S_FALSE` | There are no MemberRef tokens to enumerate. In that case, `pcTokens` is to zero. |
 
 ## Requirements
 

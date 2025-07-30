@@ -39,7 +39,7 @@ HRESULT GetPEKind (
 
  The value referenced by the `pdwMachine` parameter can be one of the following.
 
-|Value|Machine architecture|
+| Value |Machine architecture|
 |-----------|--------------------------|
 |IMAGE_FILE_MACHINE_I386<br /><br /> 0x014C|x86|
 |IMAGE_FILE_MACHINE_IA64<br /><br /> 0x0200|Intel IPF|

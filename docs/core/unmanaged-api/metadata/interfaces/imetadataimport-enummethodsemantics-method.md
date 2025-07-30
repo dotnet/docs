@@ -49,10 +49,10 @@ HRESULT EnumMethodSemantics (
 
 ## Return Value
 
-|HRESULT|Description|
+| HRESULT | Description |
 |-------------|-----------------|
-|`S_OK`|`EnumMethodSemantics` returned successfully.|
-|`S_FALSE`|There are no events or properties to enumerate. In that case, `pcEventProp` is zero.|
+| `S_OK` | `EnumMethodSemantics` returned successfully. |
+| `S_FALSE` | There are no events or properties to enumerate. In that case, `pcEventProp` is zero. |
 
 ## Remarks
 

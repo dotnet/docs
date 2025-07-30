@@ -27,9 +27,9 @@ typedef enum {
 
 ## Members
 
-|Member|Description|
+| Member | Description |
 |------------|-----------------|
-|`arfFullOriginator`|Specifies that the assembly reference contains full, unhashed information about the publisher of the assembly.|
+| `arfFullOriginator` | Specifies that the assembly reference contains full, unhashed information about the publisher of the assembly. |
 
 ## Requirements
 

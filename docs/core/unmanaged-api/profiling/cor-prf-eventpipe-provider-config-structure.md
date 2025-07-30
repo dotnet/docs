@@ -28,12 +28,12 @@ typedef struct
 
 ## Members
 
-|Member|Description|
+| Member | Description |
 |------------|-----------------|
-|`providerName`|The name of the provider to enable.|
-|`keywords`|The keywords to enable on the provider.|
-|`loggingLevel`|The level to enable on the provider.|
-|`filterData`|A wide character string containing the filterdata to use when enabling the provider.|
+| `providerName` | The name of the provider to enable. |
+| `keywords` | The keywords to enable on the provider. |
+| `loggingLevel` | The level to enable on the provider. |
+| `filterData` | A wide character string containing the filterdata to use when enabling the provider. |
 
 ## Remarks
 

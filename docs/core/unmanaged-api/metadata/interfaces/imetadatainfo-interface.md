@@ -19,9 +19,9 @@ Provides a method that gets information about the mapping of metadata from an on
 
 ## Methods
 
-|Method|Description|
+| Method | Description |
 |------------|-----------------|
-|[GetFileMapping Method](imetadatainfo-getfilemapping-method.md)|Gets the memory region of the mapped file, and the kind of mapping.|
+|[GetFileMapping Method](imetadatainfo-getfilemapping-method.md)| Gets the memory region of the mapped file, and the kind of mapping. |
 
 ## Requirements
 

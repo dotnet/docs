@@ -30,10 +30,10 @@ typedef enum CorFileMapping {
 
 ## Members
 
-|Member|Description|
+| Member | Description |
 |------------|-----------------|
-|`fmFlat`|The file is mapped as a data file. That is, the `SEC_IMAGE` flag was not passed to the Microsoft Win32 `CreateFileMapping` function.|
-|`fmExecutableImage`|The file is mapped for execution, by using either the `LoadLibrary` function or the `CreateFileMapping` function with the `SEC_IMAGE` flag.|
+| `fmFlat` |The file is mapped as a data file. That is, the `SEC_IMAGE` flag was not passed to the Microsoft Win32 `CreateFileMapping` function.|
+| `fmExecutableImage` | The file is mapped for execution, by using either the `LoadLibrary` function or the `CreateFileMapping` function with the `SEC_IMAGE` flag. |
 
 ## Requirements
 

@@ -50,6 +50,9 @@ The `dotnet tool install` command provides a way for you to install .NET tools o
 * To install a global tool in a custom location,  use the `--tool-path` option.
 * To install a local tool, omit the `--global` and `--tool-path` options.
 
+> [!WARNING]
+> Make sure the directory you specify with the `--tool-path` option is secure. Tools installed in this location can be executed directly, so using an untrusted or shared path might introduce security risks.
+
 ## Installation locations
 
 ### Global tools
@@ -120,6 +123,11 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
   * If neither of the previous two steps finds a directory, create the manifest in the current working directory.
 
   For more information on how manifests are located, see [Install a local tool](global-tools.md#install-a-local-tool).
+
+  Starting in .NET 10, this flag will be applied automatically if not tools manifest is found.
+
+  > [!WARNING]
+  > Don't run tool commands from the **Downloads** folder or any shared location. The CLI walks up the directory tree to find a tool manifest, which might cause it to use a manifest you don't expect. Always run tool commands from a trusted, project-specific directory.
 
 - **`--disable-parallel`**
 

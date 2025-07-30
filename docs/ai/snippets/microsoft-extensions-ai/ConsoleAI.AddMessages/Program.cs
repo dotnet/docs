@@ -27,7 +27,7 @@ while (true)
 
     List<ChatResponseUpdate> updates = [];
     await foreach (ChatResponseUpdate update in
-        client.GetStreamingResponseAsync(history))
+        client.GetStreamingResponseAsync(chatHistory))
     {
         Console.Write(update);
         updates.Add(update);

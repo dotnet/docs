@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 dev_langs:
   - "csharp"
   - "vb"
+ms.custom: sfi-ropc-nochange
 ---
 
 # Detect changes with SqlDependency

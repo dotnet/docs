@@ -3,6 +3,7 @@ title: "Example: Use OpenTelemetry with OTLP and the standalone Aspire Dashboard
 description: An introduction to observing .NET apps with OTLP and the standalone Aspire Dashboard
 ms.date: 6/14/2023
 ms.topic: article
+ms.custom: sfi-image-nochange
 ---
 
 # Example: Use OpenTelemetry with OTLP and the standalone Aspire Dashboard

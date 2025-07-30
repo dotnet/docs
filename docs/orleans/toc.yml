@@ -24,10 +24,12 @@ items:
         href: grains/grain-references.md
       - name: Grain identity
         href: grains/grain-identity.md
-      - name: Grain placement
-        href: grains/grain-placement.md
-      - name: Grain placement filtering
-        href: grains/grain-placement-filtering.md
+    - name: Grain placement  
+      items:  
+        - name: Overview  
+          href: grains/grain-placement.md  
+        - name: Grain placement filtering  
+          href: grains/grain-placement-filtering.md 
       - name: Grain extensions
         href: grains/grain-extensions.md
       - name: Timers and reminders

@@ -46,7 +46,7 @@ When your version of Ubuntu supports .NET through the built-in or .NET backports
 
 | Method | Pros | Cons |
 |--------|------|------|
-| [Package manager<br>(built-in<br>Ubuntu feed)](#supported-distributions) | <ul><li>Usually the latest version is available.</li><li>Patches are available right way.</li><li>Dependencies are included.</li><li>Easy removal.</li><li>Available .NET versions are supported for the support period of the particular Ubuntu version.</li><li>Support for the IBM System Z platform for .NET 8 on Ubuntu 24.04.</li></ul> | <ul><li>Not available for Ubuntu 16.04, 18.04, 20.04.</li><li>.NET versions available vary by Ubuntu version.</li><li>Preview releases aren't available.</li></ul> |
+| [Package manager<br>(built-in<br>Ubuntu feed)](#supported-distributions) | <ul><li>Usually the latest version is available.</li><li>Patches are available right way.</li><li>Dependencies are included.</li><li>Easy removal.</li><li>Available .NET versions are supported for the support period of the particular Ubuntu version.</li><li>Support for the IBM System Z and Power platforms for .NET 8 and newer.</li></ul> | <ul><li>Not available for Ubuntu 16.04, 18.04, 20.04.</li><li>.NET versions available vary by Ubuntu version.</li><li>Preview releases aren't available.</li></ul> |
 | [Package manager<br>(.NET backports<br>Ubuntu feed)](#register-the-ubuntu-net-backports-package-repository) | <ul><li>Contains any supported version, which is not contained in the built-in Ubuntu feed.</li><li>Patches are available right way.</li><li>Dependencies are included.</li><li>Easy removal.</li><li>Compatible with built-in Ubuntu feed.</li></ul> | <ul><li>Not available for Ubuntu 16.04, 18.04, 20.04.</li><li>Requires registering the Ubuntu .NET backports package repository.</li><li>Preview releases aren't available.</li></ul> |
 | [Package manager<br>(Microsoft feed)](#register-the-microsoft-package-repository) | <ul><li>Supported versions always available.</li><li>Patches are available right way.</li><li>Dependencies are included.</li><li>Easy removal.</li></ul> | <ul><li>Not available for Ubuntu 24.04+.</li><li>Requires registering the Microsoft package repository.</li><li>Preview releases aren't available.</li><li>Only supports x64 Ubuntu.</li></ul> |
 | [Script \ Manual extraction](linux-scripted-manual.md) | <ul><li>Control where .NET is installed.</li><li>Preview releases are available.</li></ul> | <ul><li>Manually install updates.</li><li>Manually install dependencies.</li><li>Manual removal.</li></ul> |
@@ -62,7 +62,7 @@ Use the following sections to determine how you should install .NET:
 - [I want to install a preview version](#i-want-to-install-a-preview-version)
 - [I don't want to use APT](#i-dont-want-to-use-apt)
 - [I'm using an Arm-based CPU](#im-using-an-arm-based-cpu)
-- [I'm using the IBM System Z platform](#im-using-the-ibm-system-z-platform)
+- [I'm using the IBM System Z or Power platform](#im-using-the-ibm-system-z-or-power-platform)
 
 ### I'm using Ubuntu 22.04 or later, and I only need .NET
 
@@ -126,9 +126,9 @@ If the version of .NET you want isn't available, try using one of the following 
 - [Install .NET with `install-dotnet` script.](linux-scripted-manual.md#scripted-install)
 - [Manually install .NET](linux-scripted-manual.md#manual-install)
 
-### I'm using the IBM System Z platform
+### I'm using the IBM System Z or Power platform
 
-Starting with .NET 8 on Ubuntu 24.04, Canonical supports .NET for the IBM System Z platform. Canonical works on extending the support to other .NET and Ubuntu versions.
+Starting with .NET 8 on Ubuntu 22.04, Canonical supports .NET for the IBM System Z and Power platforms. This support will now continue for every .NET release going forward.
 
 Install .NET through the built-in Ubuntu feed. For more information, see the following page:
 

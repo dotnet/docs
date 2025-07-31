@@ -1,4 +1,6 @@
 //<snippet1>
+namespace LanguageKeywords;
+
 public abstract class Vehicle
 {
     protected string _brand;
@@ -41,9 +43,9 @@ public class Boat : Vehicle
     public override int MaxSpeed => 50;
 }
 
-class Program
+public class AbstractExample
 {
-    static void Main()
+    public static void Examples()
     {
         // Cannot instantiate abstract class: Vehicle v = new Vehicle("Generic"); // Error!
         
@@ -64,6 +66,14 @@ class Program
         boat.StartEngine();
         boat.Move();
         Console.WriteLine($"Max speed: {boat.MaxSpeed} km/h");
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        AbstractExample.Examples();
     }
 }
 /* Output:

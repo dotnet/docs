@@ -19,9 +19,10 @@ Abstract classes can contain both abstract members (which have no implementation
 
 The following example demonstrates an abstract class that contains both implemented methods and abstract members:
 
-:::code language="csharp" source="snippets/abstract/Program.cs" id="snippet1":::
+:::code language="csharp" source="snippets/shared/Abstract.cs" id="snippet1":::
 
 In this example, the `Vehicle` abstract class provides:
+
 - **Implemented members**: `GetInfo()` method, `StartEngine()` method, and constructor - these provide common functionality for all vehicles
 - **Abstract members**: `Move()` method and `MaxSpeed` property - these must be implemented by each specific vehicle type
 

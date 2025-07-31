@@ -4,10 +4,7 @@ public abstract class Vehicle
     protected string _brand;
     
     // Constructor - implemented method in abstract class
-    public Vehicle(string brand)
-    {
-        _brand = brand;
-    }
+    public Vehicle(string brand) => _brand = brand;
     
     // Implemented method - provides functionality that all vehicles share
     public string GetInfo() => $"This is a {_brand} vehicle.";

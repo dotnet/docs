@@ -124,7 +124,7 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 
   For more information on how manifests are located, see [Install a local tool](global-tools.md#install-a-local-tool).
 
-  Starting in .NET 10, this flag will be applied automatically if not tools manifest is found.
+  Starting in .NET 10, this flag is applied automatically if no tools manifest is found.
 
   > [!WARNING]
   > Don't run tool commands from the **Downloads** folder or any shared location. The CLI walks up the directory tree to find a tool manifest, which might cause it to use a manifest you don't expect. Always run tool commands from a trusted, project-specific directory.

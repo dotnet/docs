@@ -59,7 +59,7 @@ The following example illustrates the definition and use of a non-abstract insta
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet3401.fs)]
 
-Within instance methods, do not use the self identifier to access fields defined by using let bindings. Use the self identifier when accessing other members and properties.
+Within instance methods, do not use the self identifier to access fields defined by using `let` bindings. Use the self identifier when accessing other members and properties.
 
 ## Static Methods
 
@@ -91,11 +91,22 @@ The following example illustrates a derived class that overrides a base class me
 
 ## Overloaded Methods
 
-Overloaded methods are methods that have identical names in a given type but that have different arguments. In F#, optional arguments are usually used instead of overloaded methods. However, overloaded methods are permitted in the language, provided that the arguments are in tuple form, not curried form.
+Overloaded methods are methods that have identical names in a given type but that have different arguments. In F#, optional arguments are usually used instead of overloaded methods. However, overloaded methods are permitted in the language, provided that the arguments are in tuple form, not curried form. The following example demonstrates it:
+
+```fsharp
+type MyType(dataIn: int) =
+    let data = dataIn           
+    member this.DoSomething(a: int) = a + data
+    member this.DoSomething(a: string) = sprintf "Hello world, %s!" a
+
+let m = MyType(10)
+printfn "With int: %d" (m.DoSomething(2)) // With int: 12
+printfn "With string: %s" (m.DoSomething("Bill")) // With string: Hello world, Bill!
+```
 
 ## Optional Arguments
 
-Starting with F# 4.1, you can also have optional arguments with a default parameter value in methods.  This is to help facilitate interoperation with C# code.  The following example demonstrates the syntax:
+Starting with F# 4.1, you can also have optional arguments with a default parameter value in methods. This improves interoperability with C# code. The following example demonstrates the syntax:
 
 ```fsharp
 open System.Runtime.InteropServices
@@ -104,7 +115,7 @@ type C() =
     member _.M([<Optional; DefaultParameterValue(12)>] i) = i + 1
 ```
 
-Note that the value passed in for `DefaultParameterValue` must match the input type.  In the above sample, it is an `int`.  Attempting to pass a non-integer value into `DefaultParameterValue` would result in a compile error.
+Note that the value passed in for `DefaultParameterValue` must match the input type. In the above example, it is an `int`. Attempting to pass a non-integer value into `DefaultParameterValue` would result in a compile error.
 
 ## Example: Properties and Methods
 

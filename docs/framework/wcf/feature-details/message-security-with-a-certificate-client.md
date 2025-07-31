@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 99770573-c815-4428-a38c-e4335c8bd7ce
+ms.custom: sfi-image-nochange
 ---
 # Message Security with a Certificate Client
 

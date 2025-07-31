@@ -3,6 +3,7 @@ title: Add distributed tracing instrumentation - .NET
 description: A tutorial to instrument distributed traces in .NET applications
 ms.topic: tutorial
 ms.date: 06/05/2024
+ms.custom: sfi-image-nochange
 ---
 
 # Adding distributed tracing instrumentation

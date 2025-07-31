@@ -3,6 +3,7 @@ description: "Learn more about: How to: Host a Workflow Service with Windows Ser
 title: "How to: Host a Workflow Service with Windows Server App Fabric"
 ms.date: "03/30/2017"
 ms.assetid: 83b62cce-5fc2-4c6d-b27c-5742ba3bac73
+ms.custom: sfi-image-nochange
 ---
 # How to: Host a Workflow Service with Windows Server App Fabric
 

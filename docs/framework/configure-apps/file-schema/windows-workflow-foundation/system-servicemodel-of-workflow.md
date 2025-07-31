@@ -2,6 +2,7 @@
 description: "Learn more about: <system.serviceModel> of workflow"
 title: "<system.serviceModel> of workflow"
 ms.date: "03/30/2017"
+ms.custom: sfi-ropc-nochange
 ---
 # \<system.serviceModel> of workflow
 

@@ -3,6 +3,7 @@ description: "Learn more about pausing and resuming workflows. Workflows pause a
 title: "Pausing and Resuming a Workflow"
 ms.date: "03/30/2017"
 ms.topic: "how-to"
+ms.custom: sfi-ropc-nochange
 ---
 # Pause and Resume a workflow
 

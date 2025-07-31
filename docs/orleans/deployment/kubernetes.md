@@ -3,7 +3,9 @@ title: Kubernetes hosting
 description: Learn how to host an Orleans app with Kubernetes.
 ms.date: 05/23/2025
 ms.topic: how-to
-ms.custom: devops
+ms.custom:
+  - devops
+  - sfi-ropc-nochange
 ---
 
 # Kubernetes hosting

@@ -3,6 +3,9 @@ title: .NET Observability with OpenTelemetry
 description: An introduction to observing .NET apps with OpenTelemetry
 ms.date: 6/14/2023
 ms.topic: article
+ms.custom:
+  - sfi-image-nochange
+  - sfi-ropc-nochange
 ---
 
 # .NET observability with OpenTelemetry

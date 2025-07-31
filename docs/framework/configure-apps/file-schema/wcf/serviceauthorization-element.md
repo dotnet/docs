@@ -2,6 +2,7 @@
 description: "Learn more about: <serviceAuthorization> element"
 title: "<serviceAuthorization> element"
 ms.date: "03/30/2017"
+ms.custom: sfi-ropc-nochange
 ---
 # \<serviceAuthorization> element
 

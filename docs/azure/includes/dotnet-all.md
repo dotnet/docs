@@ -537,9 +537,9 @@
 | Microsoft.Azure.Cosmos.Templates | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Templates/1.0.0) |  |  |
 | Microsoft.Azure.Functions.Analyzers | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Analyzers/1.0.0) |  |  |
 | Microsoft.Azure.Functions.Authentication.WebAssembly | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Authentication.WebAssembly/1.0.0)<br>NuGet [1.0.1-preview](https://www.nuget.org/packages/Microsoft.Azure.Functions.Authentication.WebAssembly/1.0.1-preview) |  |  |
-| Microsoft.Azure.Functions.Worker | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker/2.0.0) |  |  |
+| Microsoft.Azure.Functions.Worker | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker/2.0.0)<br>NuGet [2.50.0-preview1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker/2.50.0-preview1) |  |  |
 | Microsoft.Azure.Functions.Worker.ApplicationInsights | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ApplicationInsights/2.0.0) |  |  |
-| Microsoft.Azure.Functions.Worker.Core | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Core/2.0.0) |  |  |
+| Microsoft.Azure.Functions.Worker.Core | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Core/2.0.0)<br>NuGet [2.50.0-preview1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Core/2.50.0-preview1) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Abstractions | NuGet [1.3.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Abstractions/1.3.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.ApplicationInsights | NuGet [1.0.0-preview4](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.ApplicationInsights/1.0.0-preview4) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.CosmosDB | NuGet [4.12.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.CosmosDB/4.12.0) |  |  |
@@ -562,7 +562,7 @@
 | Microsoft.Azure.Functions.Worker.Extensions.Tables | NuGet [1.5.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Tables/1.5.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Timer | NuGet [4.3.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Timer/4.3.1) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Warmup | NuGet [4.0.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Warmup/4.0.2) |  |  |
-| Microsoft.Azure.Functions.Worker.Grpc | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Grpc/2.0.0) |  |  |
+| Microsoft.Azure.Functions.Worker.Grpc | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Grpc/2.0.0)<br>NuGet [2.50.0-preview1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Grpc/2.50.0-preview1) |  |  |
 | Microsoft.Azure.Functions.Worker.ItemTemplates | NuGet [4.0.5196](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ItemTemplates/4.0.5196) |  |  |
 | Microsoft.Azure.Functions.Worker.ProjectTemplates | NuGet [4.0.5196](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ProjectTemplates/4.0.5196) |  |  |
 | Microsoft.Azure.Functions.Worker.Sdk | NuGet [2.0.5](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk/2.0.5) |  |  |

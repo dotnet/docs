@@ -11,7 +11,7 @@ helpviewer_keywords:
 
 # System.CommandLine 2.0.0-beta5 migration guide
 
-[!INCLUDE [scl-preview](../../../includes/scl-preview.md)]
+[!INCLUDE [scl-preview](./includes/scl-preview.md)]
 
 The main focus for the 2.0.0-beta5 release was to improve the APIs and take a step toward releasing a stable version of System.CommandLine. The APIs have been simplified and made more coherent and consistent with the [Framework design guidelines](../design-guidelines/index.md). This article describes the breaking changes that were made in 2.0.0-beta5 and the reasoning behind them.
 
@@ -19,38 +19,38 @@ The main focus for the 2.0.0-beta5 release was to improve the APIs and take a st
 
 In 2.0.0-beta4, not all types and members followed the [naming guidelines](../design-guidelines/naming-guidelines.md). Some were not consistent with the naming conventions, such as using the `Is` prefix for Boolean properties. In 2.0.0-beta5, some types and members have been renamed. The following table shows the old and new names:
 
-| Old name                                                    | New name                                                       |
-|-------------------------------------------------------------|----------------------------------------------------------------|
-| `System.CommandLine.Parsing.Parser`                         | `System.CommandLine.Parsing.CommandLineParser`                 |
-| `System.CommandLine.Parsing.OptionResult.IsImplicit`        | `System.CommandLine.Parsing.OptionResult.Implicit`             |
-| `System.CommandLine.Option.IsRequired`                      | `System.CommandLine.Option.Required`                           |
-| `System.CommandLine.Symbol.IsHidden`                        | `System.CommandLine.Symbol.Hidden`                             |
-| `System.CommandLine.Option.ArgumentHelpName`                | `System.CommandLine.Option.HelpName`                           |
-| `System.CommandLine.Parsing.OptionResult.Token`             | `System.CommandLine.Parsing.OptionResult.IdentifierToken`      |
-| `System.CommandLine.Parsing.ParseResult.FindResultFor`      | `System.CommandLine.Parsing.ParseResult.GetResult`             |
-| `System.CommandLine.Parsing.SymbolResult.ErrorMessage`      | `System.CommandLine.Parsing.SymbolResult.AddError`             |
+| Old name                                               | New name                                                       |
+|--------------------------------------------------------|----------------------------------------------------------------|
+| `System.CommandLine.Parsing.Parser`                    | <xref:System.CommandLine.Parsing.CommandLineParser>            |
+| `System.CommandLine.Parsing.OptionResult.IsImplicit`   | <xref:System.CommandLine.Parsing.OptionResult.Implicit>        |
+| `System.CommandLine.Option.IsRequired`                 | <xref:System.CommandLine.Option.Required>                      |
+| `System.CommandLine.Symbol.IsHidden`                   | <xref:System.CommandLine.Symbol.Hidden>                        |
+| `System.CommandLine.Option.ArgumentHelpName`           | <xref:System.CommandLine.Option.HelpName>                      |
+| `System.CommandLine.Parsing.OptionResult.Token`        | <xref:System.CommandLine.Parsing.OptionResult.IdentifierToken> |
+| `System.CommandLine.Parsing.ParseResult.FindResultFor` | <xref:System.CommandLine.ParseResult.GetResult*>               |
+| `System.CommandLine.Parsing.SymbolResult.ErrorMessage` | <xref:System.CommandLine.Parsing.SymbolResult.AddError(System.String)>† |
 
-To allow multiple errors for the same symbol to be reported, the `ErrorMessage` property was converted to a method and renamed to `AddError`.
+†To allow multiple errors for the same symbol to be reported, the `ErrorMessage` property was converted to a method and renamed to `AddError`.
 
-## Exposing mutable collections
+## Mutable collections of options and validators
 
 Version 2.0.0-beta4 had numerous `Add` methods that were used to add items to collections, such as arguments, options, subcommands, validators, and completions. Some of these collections were exposed via properties as read-only collections. Because of that, it was impossible to remove items from those collections.
 
-In 2.0.0-beta5, we changed the APIs to expose mutable collections instead of `Add` methods and (sometimes) read-only collections. This allows you to not only add items or enumerate them, but also remove them. The following table shows the old method and new property names:
+In 2.0.0-beta5, the APIs were changed to expose mutable collections instead of `Add` methods and (sometimes) read-only collections. This allows you to not only add items or enumerate them, but also remove them. The following table shows the old method and new property names:
 
-| Old method name                                             | New property                                                   |
-|-------------------------------------------------------------|----------------------------------------------------------------|
-| `System.CommandLine.Command.AddArgument`                    | `System.CommandLine.Command.Arguments.Add`                     |
-| `System.CommandLine.Command.AddOption`                      | `System.CommandLine.Command.Options.Add`                       |
-| `System.CommandLine.Command.AddCommand`                     | `System.CommandLine.Command.Subcommands.Add`                   |
-| `System.CommandLine.Command.AddValidator`                   | `System.CommandLine.Command.Validators.Add`                    |
-| `System.CommandLine.Option.AddValidator`                    | `System.CommandLine.Option.Validators.Add`                     |
-| `System.CommandLine.Argument.AddValidator`                  | `System.CommandLine.Argument.Validators.Add`                   |
-| `System.CommandLine.Command.AddCompletions`                 | `System.CommandLine.Command.CompletionSources.Add`             |
-| `System.CommandLine.Option.AddCompletions`                  | `System.CommandLine.Option.CompletionSources.Add`              |
-| `System.CommandLine.Argument.AddCompletions`                | `System.CommandLine.Argument.CompletionSources.Add`            |
-| `System.CommandLine.Command.AddAlias`                       | `System.CommandLine.Command.Aliases.Add`                       |
-| `System.CommandLine.Option.AddAlias`                        | `System.CommandLine.Option.Aliases.Add`                        |
+| Old method name           | New property                     |
+|---------------------------|----------------------------------|
+| `Command.AddArgument`     | `Command.Arguments.Add`          |
+| `Command.AddOption`       | `Command.Options.Add`            |
+| `Command.AddCommand`      | `Command.Subcommands.Add`        |
+| `Command.AddValidator`    | `Command.Validators.Add`         |
+| `Option.AddValidator`     | `Option.Validators.Add`          |
+| `Argument.AddValidator`   | `Argument.Validators.Add`        |
+| `Command.AddCompletions`  | `Command.CompletionSources.Add`  |
+| `Option.AddCompletions`   | `Option.CompletionSources.Add`   |
+| `Argument.AddCompletions` | `Argument.CompletionSources.Add` |
+| `Command.AddAlias`        | `Command.Aliases.Add`            |
+| `Option.AddAlias`         | `Option.Aliases.Add`             |
 
 The `RemoveAlias` and `HasAlias` methods were also removed, as the `Aliases` property is now a mutable collection. You can use the `Remove` method to remove an alias from the collection. Use the `Contains` method to check if an alias exists.
 
@@ -60,14 +60,14 @@ Before 2.0.0-beta5, there was no clear separation between the name and [aliases]
 
 Moreover, to get the parsed value, users had to store a reference to an option or an argument and then use it to get the value from `ParseResult`.
 
-To promote simplicity and explicitness, the name of a symbol is now a mandatory parameter for every symbol constructor (including `Argument<T>`). We also separated the concept of a name and aliases; now aliases are just aliases and don't include the name of the symbol. Of course, they are optional. As a result, the following changes were made:
+To promote simplicity and explicitness, the name of a symbol is now a mandatory parameter for every symbol constructor (including `Argument<T>`). The concept of a name and aliases is now separate: aliases are just aliases and don't include the name of the symbol. Of course, they're optional. As a result, the following changes were made:
 
-- `name` is now a mandatory argument for every public constructor of `Argument<T>`, `Option<T>`, and `Command`. In the case of `Argument<T>`, it is not used for parsing, but to generate the help. In the case of `Option<T>` and `Command`, it is used to identify the symbol during parsing and also for help and completions.
+- `name` is now a mandatory argument for every public constructor of <xref:System.CommandLine.Argument`1>, <xref:System.CommandLine.Option`1>, and <xref:System.CommandLine.Command>. In the case of `Argument<T>`, it isn't used for parsing, but to generate the help. In the case of `Option<T>` and `Command`, it's used to identify the symbol during parsing and also for help and completions.
 - The `Symbol.Name` property is no longer `virtual`; it's now read-only and returns the name as it was provided when the symbol was created. Because of that, `Symbol.DefaultName` was removed and `Option.Name` no longer removes the `--`, `-`, or `/` or any other prefix from the longest alias.
-- The `Aliases` property exposed by `Option` and `Command` is now a mutable collection. This collection no longer includes the name of the symbol.
+- The `Aliases` property exposed by [`Option`](xref:System.CommandLine.Option.Aliases) and [`Command`](xref:System.CommandLine.Command.Aliases) is now a mutable collection. This collection no longer includes the name of the symbol.
 - `System.CommandLine.Parsing.IdentifierSymbol` was removed (it was a base type for both `Command` and `Option`).
 
-Having the name always present allows for [getting the parsed value by name](how-to-parse-and-invoke.md#getvalue):
+Having the name always present lets you [get the parsed value by name](how-to-parse-and-invoke.md#getvalue):
 
 ```csharp
 RootCommand command = new("The description.")
@@ -81,9 +81,9 @@ int number = parseResult.GetValue<int>("--number");
 
 ### Creating options with aliases
 
-In the past, `Option<T>` exposed many constructors, some of which accepted the name. Since the name is now mandatory and we expect aliases to be frequently provided for `Option<T>`, there's only a single constructor. It accepts the name and a `params` array of aliases.
+In the past, `Option<T>` exposed many constructors, some of which accepted the name. Since the name is now mandatory and aliases will frequently be provided for `Option<T>`, there's only a single constructor. It accepts the name and a `params` array of aliases.
 
-Before 2.0.0-beta5, `Option<T>` had a constructor that took a name and a description. Because of that, the second argument might now be treated as an alias rather than a description. It's the only known breaking change in the API that is not going to cause a compiler error.
+Before 2.0.0-beta5, `Option<T>` had a constructor that took a name and a description. Because of that, the second argument might now be treated as an alias rather than a description. It's the only known breaking change in the API that doesn't cause a compiler error.
 
 Old code that used the constructor with a description should be updated to use the new constructor that takes a name and aliases, and then set the `Description` property separately. For example:
 
@@ -100,16 +100,16 @@ Option<bool> beta5 = new("--help", "-h", "/h")
 
 ## Default values and custom parsing
 
-In 2.0.0-beta4, users could set default values for options and arguments by using the `SetDefaultValue` methods. Those methods accepted an `object` value, which was not type-safe and could lead to run-time errors if the value was not compatible with the option or argument type:
+In 2.0.0-beta4, you could set default values for options and arguments by using the `SetDefaultValue` methods. Those methods accepted an `object` value, which wasn't type-safe and could lead to run-time errors if the value was not compatible with the option or argument type:
 
 ```csharp
 Option<int> option = new("--number");
 option.SetDefaultValue("text"); // This is not type-safe, as the value is a string, not an int.
 ```
 
-Moreover, some of the `Option` and `Argument` constructors accepted a parse delegate and a boolean indicating whether the delegate was a custom parser or a default value provider. This was confusing.
+Moreover, some of the `Option` and `Argument` constructors accepted a parse delegate and a Boolean indicating whether the delegate was a custom parser or a default value provider. This was confusing.
 
-`Option<T>` and `Argument<T>` classes now have a `DefaultValueFactory` property that can be used to set a delegate that can be called to get the default value for the option or argument. This delegate is invoked when the option or argument is not found in the parsed command line input.
+`Option<T>` and `Argument<T>` classes now have a <xref:System.CommandLine.Option`1.DefaultValueFactory> property that can be used to set a delegate that can be called to get the default value for the option or argument. This delegate is invoked when the option or argument is not found in the parsed command line input.
 
 ```csharp
 Option<int> number = new("--number")
@@ -118,7 +118,7 @@ Option<int> number = new("--number")
 };
 ```
 
-`Argument<T>` and `Option<T>` also come with a `CustomParser` property that can be used to set a custom parser for the symbol:
+`Argument<T>` and `Option<T>` also come with a <xref:System.CommandLine.Option`1.CustomParser> property that can be used to set a custom parser for the symbol:
 
 ```csharp
 Argument<Uri> uri = new("arg")
@@ -136,13 +136,13 @@ Argument<Uri> uri = new("arg")
 };
 ```
 
-Moreover, `CustomParser` accepts a delegate of type `Func<ParseResult, T>`, rather than the previous `ParseArgument` delegate. This and a few other custom delegates were removed to simplify the API and reduce the number of types exposed by the API, which reduces startup time spent during JIT compilation.
+Moreover, `CustomParser` accepts a delegate of type `Func<ParseResult,T>`, rather than the previous `ParseArgument` delegate. This and a few other custom delegates were removed to simplify the API and reduce the number of types exposed by the API, which reduces startup time spent during JIT compilation.
 
 For more examples of how to use `DefaultValueFactory` and `CustomParser`, see [How to customize parsing and validation in System.CommandLine](how-to-customize-parsing-and-validation.md).
 
 ## The separation of parsing and invocation
 
-In 2.0.0-beta4, it was possible to separate the parsing and invoking of commands, but it was quite unclear how to do it. `Command` did not expose a `Parse` method, but `CommandExtensions` provided `Parse`, `Invoke`, and `InvokeAsync` extension methods for `Command`. This was confusing, as it was not clear which method to use and when. The following changes were made to simplify the API:
+In 2.0.0-beta4, it was possible to separate the parsing and invoking of commands, but it wasn't clear how to do it. `Command` did not expose a `Parse` method, but `CommandExtensions` provided `Parse`, `Invoke`, and `InvokeAsync` extension methods for `Command`. This was confusing, as it was not clear which method to use and when. The following changes were made to simplify the API:
 
 - `Command` now exposes a `Parse` method that returns a `ParseResult` object. This method is used to parse the command line input and return the result of the parse operation. Moreover, it makes it clear that the command is not invoked, but only parsed and only in synchronous manner.
 - `ParseResult` now exposes both `Invoke` and `InvokeAsync` methods that can be used to invoke the command. This makes it clear that the command is invoked after parsing, and allows for both synchronous and asynchronous invocation.
@@ -167,7 +167,7 @@ Before 2.0.0-beta5, it was possible to customize the parsing, but only with some
 - `UseHelp` and `UseVersion` were removed. The help and version are now exposed by the [HelpOption](how-to-customize-help.md#customize-help-output) and [VersionOption](syntax.md#version-option) public types. They are both included by default in the options defined by [RootCommand](syntax.md#root-command).
 - `UseHelpBuilder` was removed. For more information on how to customize the help output, see [How to customize help in System.CommandLine](how-to-customize-help.md).
 - `AddMiddleware` was removed. It slowed down the application startup, and features can be expressed without it.
-- `UseParseErrorReporting` and `UseTypoCorrections` were removed. The parse errors are now reported by default when invoking `ParseResult`. You can configure it by using the `ParseErrorAction` exposed by `ParseResult.Action` property.
+- `UseParseErrorReporting` and `UseTypoCorrections` were removed. The parse errors are now reported by default when invoking `ParseResult`. You can configure it by using the <xref:System.CommandLine.Invocation.ParseErrorAction> action exposed by `ParseResult.Action` property.
 
   ```csharp
   ParseResult result = rootCommand.Parse("myArgs", config);
@@ -178,18 +178,18 @@ Before 2.0.0-beta5, it was possible to customize the parsing, but only with some
   }
   ```
 
-- `UseLocalizationResources` and `LocalizationResources` were removed. This feature was used mostly by the `dotnet` CLI to add missing translations to `System.CommandLine`. All those translations were moved to the System.CommandLine itself, so this feature is no longer needed. If we are missing support for your language, please [report an issue](https://github.com/dotnet/command-line-api/issues/new/choose).
-- `UseTokenReplacer` was removed. [Response files](syntax.md#response-files) are enabled by default, but you can disable them by setting the `System.CommandLine.CommandLineConfiguration.ResponseFileTokenReplacer` property to `null`. You can also provide a custom implementation to customize how response files are processed.
+- `UseLocalizationResources` and `LocalizationResources` were removed. This feature was used mostly by the `dotnet` CLI to add missing translations to `System.CommandLine`. All those translations were moved to the System.CommandLine itself, so this feature is no longer needed. If support for your language is missing, please [report an issue](https://github.com/dotnet/command-line-api/issues/new/choose).
+- `UseTokenReplacer` was removed. [Response files](syntax.md#response-files) are enabled by default, but you can disable them by setting the <xref:System.CommandLine.CommandLineConfiguration.ResponseFileTokenReplacer> property to `null`. You can also provide a custom implementation to customize how response files are processed.
 
-Last but not least, the `IConsole` and all related interfaces (`IStandardOut`, `IStandardError`, `IStandardIn`) were removed. `System.CommandLine.CommandLineConfiguration` exposes two `TextWriter` properties: `Output` and `Error`. These can be set to any `TextWriter` instance, such as a `StringWriter`, which can be used to capture output for testing. Our motivation was to expose fewer types and reuse existing abstractions.
+Last but not least, the `IConsole` and all related interfaces (`IStandardOut`, `IStandardError`, `IStandardIn`) were removed. <xref:System.CommandLine.CommandLineConfiguration> exposes two `TextWriter` properties: <xref:System.CommandLine.CommandLineConfiguration.Output> and <xref:System.CommandLine.CommandLineConfiguration.Error>. You can set these properties to any <xref:System.IO.TextWriter> instance, such as a `StringWriter`, which can be used to capture output for testing. The motivation for this change was to expose fewer types and reuse existing abstractions.
 
 ### Invocation
 
 In 2.0.0-beta4, the `ICommandHandler` interface exposed `Invoke` and `InvokeAsync` methods that were used to invoke the parsed command. This made it easy to mix synchronous and asynchronous code, for example by defining a synchronous handler for a command and then invoking it asynchronously (which could lead to a [deadlock](../../csharp/asynchronous-programming/index.md#dont-block-await-instead)). Moreover, it was possible to define a handler only for a command, but not for an option (like help, which displays help) or a directive.
 
-A new abstract base class `System.CommandLine.CommandLineAction`and two derived classes: `System.CommandLine.SynchronousCommandLineAction` and `System.CommandLine.AsynchronousCommandLineAction` have been introduced. The former is used for synchronous actions that return an `int` exit code, while the latter is used for asynchronous actions that return a `Task<int>` exit code.
+A new abstract base class <xref:System.CommandLine.Invocation.CommandLineAction> and two derived classes, `SynchronousCommandLineAction` and `AsynchronousCommandLineAction`, have been introduced. The former is used for synchronous actions that return an `int` exit code, while the latter is used for asynchronous actions that return a `Task<int>` exit code.
 
-You don't need to create a derived type to define an action. You can use the `System.CommandLine.Command.SetAction` method to set an action for a command. The synchronous action can be a delegate that takes a `System.CommandLine.ParseResult` parameter and returns an `int` exit code (or nothing, and then a default `0` exit code is returned). The asynchronous action can be a delegate that takes a `System.CommandLine.ParseResult` and <xref:System.Threading.CancellationToken> parameters and returns a `Task<int>` (or `Task` to get default exit code returned).
+You don't need to create a derived type to define an action. You can use the <xref:System.CommandLine.Command.SetAction*?displayProperty=nameWithType> method to set an action for a command. The synchronous action can be a delegate that takes a `System.CommandLine.ParseResult` parameter and returns an `int` exit code (or nothing, and then a default `0` exit code is returned). The asynchronous action can be a delegate that takes a `System.CommandLine.ParseResult` and <xref:System.Threading.CancellationToken> parameters and returns a `Task<int>` (or `Task` to get default exit code returned).
 
 ```csharp
 rootCommand.SetAction(ParseResult parseResult =>
@@ -210,7 +210,7 @@ rootCommand.SetHandler(async (InvocationContext context) =>
 });
 ```
 
-Majority of our users were not obtaining this token and passing it further. We made `CancellationToken` mandatory argument for asynchronous actions, in order for the compiler to produce a warning when it's not passed further ([CA2016](../../fundamentals/code-analysis/quality-rules/ca2016.md)).
+Most users weren't obtaining this token and passing it further. `CancellationToken` is now a mandatory argument for asynchronous actions, such that the compiler produces a warning when it's not passed further (see [CA2016](../../fundamentals/code-analysis/quality-rules/ca2016.md)).
 
 ```csharp
 rootCommand.SetAction((ParseResult parseResult, CancellationToken token) =>
@@ -220,7 +220,7 @@ rootCommand.SetAction((ParseResult parseResult, CancellationToken token) =>
 });
 ```
 
-As a result of these and other forementioned changes, the `InvocationContext` class got also removed. The `ParseResult` is now passed directly to the action, so you can access the parsed values and options directly from it.
+As a result of these and other aforementioned changes, the `InvocationContext` class got also removed. The `ParseResult` is now passed directly to the action, so you can access the parsed values and options directly from it.
 
 To summarize these changes:
 
@@ -233,7 +233,7 @@ For more details about how to use actions, see [How to parse and invoke commands
 
 ## The benefits of the simplified API
 
-We hope that the changes made in 2.0.0-beta5 will make the API more consistent, futureproof and easier to use for existing and new users.
+The changes made in 2.0.0-beta5 make the API more consistent, future-proof, and easier to use for existing and new users.
 
 New users need to learn fewer concepts and types, as the number of public interfaces decreased from 11 to 0, and public classes (and structs) decreased from 56 to 38. The public method count dropped from 378 to 235, and public properties from 118 to 99.
 
@@ -300,7 +300,7 @@ static void Run(bool boolean, string text)
 
 Simplicity has also improved the performance of the library (it's a side effect of the work, not the main goal of it). The [benchmarks](https://github.com/adamsitnik/commandline-perf/tree/update) show that the parsing and invoking of commands is now faster than in 2.0.0-beta4, especially for large commands with many options and arguments. The performance improvements are visible in both synchronous and asynchronous scenarios.
 
-For the simplest app presented previously, we got the following results:
+The simplest app, presented previously, produces the following results:
 
 ```ini
 BenchmarkDotNet v0.15.0, Windows 11 (10.0.26100.4061/24H2/2024Update/HudsonValley)
@@ -322,7 +322,7 @@ IterationCount=100  UnrollFactor=1  WarmupCount=3
 | SystemCommandLineNowAOT | --bool -s test |  17.35 ms | 0.487 ms |  0.23 |
 ```
 
-As you can see, the startup time (the benchmarks report the time required to run given executable) has improved by 12% compared to 2.0.0-beta4. If we compile the app with NativeAOT, it is just 3 ms slower than a NativeAOT app that does not parse the args at all (EmptyAOT in the table above). Also, when we exclude the overhead of an empty app (63.58 ms), the parsing is 40% faster than in 2.0.0-beta4 (22.22 ms vs 13.66 ms).
+As you can see, the startup time (the benchmarks report the time required to run given executable) has improved by 12% compared to 2.0.0-beta4. If you compile the app with NativeAOT, it's just 3 ms slower than a NativeAOT app that does not parse the args at all (EmptyAOT in the table above). Also, if you exclude the overhead of an empty app (63.58 ms), the parsing is 40% faster than in 2.0.0-beta4 (22.22 ms vs 13.66 ms).
 
 ## See also
 

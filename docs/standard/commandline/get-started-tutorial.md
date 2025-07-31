@@ -11,7 +11,7 @@ helpviewer_keywords:
 ---
 # Tutorial: Get started with System.CommandLine
 
-[!INCLUDE [scl-preview](../../../includes/scl-preview.md)]
+[!INCLUDE [scl-preview](./includes/scl-preview.md)]
 
 This tutorial shows how to create a .NET command-line app that uses the [`System.CommandLine` library](index.md). You'll begin by creating a simple root command that has one option. Then you'll build on that base, creating a more complex app that contains multiple subcommands and different options for each command.
 
@@ -166,7 +166,7 @@ Options:
   --file          The file to read and display on the conso
 ```
 
-`System.CommandLine.RootCommand` by default provides [Help option](how-to-customize-help.md#customize-help-output), [Version option](syntax.md#version-option) and [Suggest directive](syntax.md#suggest-directive). `ParseResult.Invoke` method is responsible for invoking the action of parsed symbol. It could be the action explicitly defined for our command, or the help action defined by `System.CommandLine` for `System.CommandLine.Help.HelpOption`. Moreover, when it detects any parse errors, it prints them to the standard error, prints help to standard output and returns `1` exit code:
+<xref:System.CommandLine.RootCommand> by default provides [Help option](how-to-customize-help.md#customize-help-output), [Version option](syntax.md#version-option), and [Suggest directive](syntax.md#suggest-directive). The <xref:System.CommandLine.ParseResult.Invoke?displayProperty=nameWithType> method is responsible for invoking the action of parsed symbol. It could be the action explicitly defined for the command, or the help action defined by `System.CommandLine` for `System.CommandLine.Help.HelpOption`. Moreover, when it detects any parse errors, it prints them to the standard error, prints help to standard output, and returns `1` as the exit code:
 
 ```console
 scl --invalid bla

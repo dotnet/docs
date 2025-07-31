@@ -12,7 +12,7 @@ ms.topic: overview
 
 # System.CommandLine overview
 
-[!INCLUDE [scl-preview](../../../includes/scl-preview.md)]
+[!INCLUDE [scl-preview](./includes/scl-preview.md)]
 
 The `System.CommandLine` library provides functionality commonly needed by command-line apps, such as parsing command-line input and displaying help text.
 
@@ -31,9 +31,7 @@ Use of the library also benefits app users:
 
 ## NuGet package
 
-The library is available as a NuGet package:
-
-- [System.CommandLine](https://www.nuget.org/packages/System.CommandLine)
+The library is available as a NuGet package: [System.CommandLine](https://www.nuget.org/packages/System.CommandLine).
 
 ## Next steps
 

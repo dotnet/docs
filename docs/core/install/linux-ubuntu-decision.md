@@ -21,7 +21,7 @@ The following table is a list of currently supported .NET releases and the versi
 
 | Ubuntu                                                             | Supported .NET versions | Available in<br>built-in Ubuntu feed | [Available in<br>.NET backports<br>Ubuntu feed](#register-the-ubuntu-net-backports-package-repository) | [Available in<br>Microsoft feed](#register-the-microsoft-package-repository) |
 |--------------------------------------------------------------------|-------------------------|--------------------------------------|--------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| [24.10](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2410)       | 9.0, 8.0                | 9.0, 8.0                             | None                                                                                                   | None                                                                         |
+| [25.04](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2504)       | 9.0, 8.0                | 9.0, 8.0                             | None                                                                                                   | None                                                                         |
 | [24.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2404) | 9.0, 8.0                | 8.0                                  | 9.0, 7.0, 6.0                                                                                          | None                                                                         |
 | [22.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2204) | 9.0, 8.0                | 8.0, 7.0, 6.0                        | 9.0                                                                                                    | 8.0, 7.0, 6.0, 3.1                                                           |
 
@@ -68,7 +68,7 @@ Use the following sections to determine how you should install .NET:
 
 If you don't need other Microsoft packages, such as `powershell`, `mdatp`, or `mssql`, install .NET through the Ubuntu feed. For more information, see the following pages:
 
-- [Install .NET on Ubuntu 24.10](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2410).
+- [Install .NET on Ubuntu 25.04](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2504).
 - [Install .NET on Ubuntu 24.04](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2404).
 - [Install .NET on Ubuntu 22.04](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2204).
 
@@ -132,7 +132,7 @@ Starting with .NET 8 on Ubuntu 24.04, Canonical supports .NET for the IBM System
 
 Install .NET through the built-in Ubuntu feed. For more information, see the following page:
 
-- [Install .NET 9 on Ubuntu 24.10](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2410&tabs=dotnet9).
+- [Install .NET 9 on Ubuntu 25.04](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2504&tabs=dotnet9).
 
 ## Register a package repository
 

@@ -8,10 +8,10 @@ ms.author: alexwolf
 
 ## Prerequisites
 
-* .NET 9.0 SDK - [Install the .NET 9.0 SDK](https://dotnet.microsoft.com/download)
-* Visual Studio 2022 - [Install Visual Studio 2022](https://visualstudio.microsoft.com/) (optional), or
-* Visual Studio Code - [Install Visual Studio Code](https://code.visualstudio.com) (optional)
-  * With the C# DevKit - [Install C# Dev Kit extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit)
+* [.NET 9.0 SDK](https://dotnet.microsoft.com/download)
+* One of the following IDEs (optional):
+  * [Visual Studio 2022](https://visualstudio.microsoft.com/)
+  * [Visual Studio Code](https://code.visualstudio.com) with [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit)
 
 ## Install the .NET AI app template
 
@@ -31,10 +31,10 @@ After you install the AI app templates, you can use them to create starter apps 
 1. On the **Create a new project** screen, search for **AI Chat Web App**. Select the matching result and then choose **Next**.
 1. On the **Configure your new project** screen, enter the desired name and location for your project and then choose **Next**.
 1. On the **Additional information** screen:
-    - For the **Framework** option, select **.NET 9.0**.
-    - For the **AI service provider** option, select **Azure OpenAI**.
-    - Make sure the **Use keyless authentication for Azure services** checkbox is checked.
-    - For the **Vector store** option, select **Local on-disc (for prototyping)**.
+    * For the **Framework** option, select **.NET 9.0**.
+    * For the **AI service provider** option, select **Azure OpenAI**.
+    * Make sure the **Use keyless authentication for Azure services** checkbox is checked.
+    * For the **Vector store** option, select **Local on-disc (for prototyping)**.
 1. Select **Create** to complete the process.
 
 # [Visual Studio Code](#tab/visual-studio-code)
@@ -86,9 +86,9 @@ The AI template uses Microsoft Entra ID for seamless, keyless authentication. It
 
 1. Assign a role to your developer account to access the Azure OpenAI resource:
 
-    - In the Azure Portal, navigate to the overview page of your Azure OpenAI resource.
-    - Select **Access control (IAM)** from the left navigation.
-    - [Add a role assignment](../../../azure/sdk/authentication/local-development-dev-accounts.md#assign-roles-to-the-group) for the `Azure AI Developer` role to your Azure account.
+    * In the Azure Portal, navigate to the overview page of your Azure OpenAI resource.
+    * Select **Access control (IAM)** from the left navigation.
+    * [Add a role assignment](../../../azure/sdk/authentication/local-development-dev-accounts.md#assign-roles-to-the-group) for the `Azure AI Developer` role to your Azure account.
 
 1. [Sign-in to a local development tool](../../../azure/sdk/authentication/local-development-dev-accounts.md#sign-in-to-azure-using-developer-tooling) such as Visual Studio or the Azure CLI using the Azure account you assigned the `Azure AI Developer` role to.
 

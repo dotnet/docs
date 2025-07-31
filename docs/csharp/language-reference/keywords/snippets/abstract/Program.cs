@@ -10,16 +10,10 @@ public abstract class Vehicle
     }
     
     // Implemented method - provides functionality that all vehicles share
-    public string GetInfo()
-    {
-        return $"This is a {_brand} vehicle.";
-    }
+    public string GetInfo() => $"This is a {_brand} vehicle.";
     
     // Another implemented method
-    public virtual void StartEngine()
-    {
-        Console.WriteLine($"{_brand} engine is starting...");
-    }
+    public virtual void StartEngine() => Console.WriteLine($"{_brand} engine is starting...");
     
     // Abstract method - must be implemented by derived classes
     public abstract void Move();
@@ -33,10 +27,7 @@ public class Car : Vehicle
     public Car(string brand) : base(brand) { }
     
     // Implementation of abstract method
-    public override void Move()
-    {
-        Console.WriteLine($"{_brand} car is driving on the road.");
-    }
+    public override void Move() => Console.WriteLine($"{_brand} car is driving on the road.");
     
     // Implementation of abstract property
     public override int MaxSpeed => 200;
@@ -47,10 +38,7 @@ public class Boat : Vehicle
     public Boat(string brand) : base(brand) { }
     
     // Implementation of abstract method
-    public override void Move()
-    {
-        Console.WriteLine($"{_brand} boat is sailing on the water.");
-    }
+    public override void Move() => Console.WriteLine($"{_brand} boat is sailing on the water.");
     
     // Implementation of abstract property
     public override int MaxSpeed => 50;

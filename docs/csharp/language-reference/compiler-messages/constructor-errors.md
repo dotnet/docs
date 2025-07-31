@@ -110,7 +110,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS8054**](#constructor-declaration): *Enums cannot contain explicit parameterless constructors.*
 - [**CS8091**](#constructor-declaration): *cannot be extern and have a constructor initializer.*
 - [**CS8861**](#primary-constructor-declaration): *Unexpected argument list.*
-- [**CS8862**](#primary-constructor-declaration): *Every declared constructor must call `this(...)` where the `...` argument list invokes the primary constructor.*
+- [**CS8862**](#primary-constructor-declaration): *A constructor declared in a type with parameter list must have 'this' constructor initializer.*
 - [**CS8358**](#constructor-declaration): *Cannot use attribute constructor because it has 'in' parameters.*
 - [**CS8867**](#records-and-copy-constructors): *No accessible copy constructor found in base type '{0}'.*
 - [**CS8868**](#records-and-copy-constructors): *A copy constructor in a record must call a copy constructor of the base, or a parameterless object constructor if the record inherits from object.*
@@ -237,7 +237,7 @@ Adding the `record` modifier to a `struct` or `class` type creates a [record](..
 The compiler emits the following errors when a primary constructor violates one or more rules on primary constructors for classes and structs:
 
 - **CS8861**: *Unexpected argument list.*
-- **CS8862**: *Every declared constructor must call `this(...)` where the `...` argument list invokes the primary constructor.*
+- **CS8862**: *A constructor declared in a type with parameter list must have 'this' constructor initializer.*
 - **CS9105**: *Cannot use primary constructor parameter in this context.*
 - **CS9106**: *Identifier is ambiguous between type and parameter in this context.*
 - **CS9108**: *Cannot use parameter that has ref-like type inside an anonymous method, lambda expression, query expression, or local function.*
@@ -256,6 +256,8 @@ The compiler emits the following errors when a primary constructor violates one 
 - **CS9122**: *Unexpected parameter list.*
 - **CS9124**: *Parameter is captured into the state of the enclosing type and its value is also used to initialize a field, property, or event.*
 - **CS9136**: *Cannot use primary constructor parameter of type inside an instance member.*
+
+When using a primary constructor in a class or struct, every explicitly declared constructor must call the primary constructor using `: this(...)` with an appropriate argument list. This ensures that the primary constructor is always invoked. See [programming guide](../../programming-guide/classes-and-structs/instance-constructors.md#primary-constructors) for more details.
 
 Primary constructor parameters are in scope in the body of that type. The compiler can synthesize a field that stores the parameter for use in members or in field initializers. Because a primary constructor parameter may be copied to a field, the following restrictions apply:
 

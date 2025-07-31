@@ -355,6 +355,10 @@ When the sample code calls the serializer, it uses a <xref:System.Text.Json.Json
 
 The preceding example only does serialization, but a similar approach can be adopted for deserialization.
 
+### ReferenceResolver limitations with custom converters
+
+When you use <xref:System.Text.Json.Serialization.ReferenceHandler.Preserve%2A>, be aware that reference handling state isn't preserved when the serializer calls into a custom converter. This means that if you have a custom converter for a type that's part of an object graph being serialized or deserialized with reference preservation enabled, the converter and any nested serialization calls won't have access to the current <xref:System.Text.Json.Serialization.ReferenceResolver> instance.
+
 ## Other custom converter samples
 
 The [Migrate from Newtonsoft.Json to System.Text.Json](migrate-from-newtonsoft.md) article contains additional samples of custom converters.

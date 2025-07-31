@@ -5,7 +5,7 @@ ms.date: 07/31/2023
 ---
 # Security token events return a JsonWebToken
 
-The <xref:Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerEvents>, <xref:Microsoft.AspNetCore.Authentication.WsFederation.WsFederationEvents>, and <xref:Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectEvents> events are authentication events fired respectively by the [JwtBearer](xref:Microsoft.AspNetCore.Authentication.JwtBearer), [WsFederation](xref:Microsoft.AspNetCore.Authentication.WsFederation), and [OpenIdConnect](xref:Microsoft.AspNetCore.Authentication.OpenIdConnect) authentication handlers. For example, the <xref:Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerEvents.OnTokenValidated> event is fired when a security token is validated. These events are fired with a context (for example, <xref:Microsoft.AspNetCore.Authentication.JwtBearer.TokenValidatedContext>) that exposes a <xref:Microsoft.AspNetCore.Authentication.JwtBearer.TokenValidatedContext.SecurityToken?displayProperty=nameWithType> property of abstract type <xref:System.IdentityModel.Tokens.SecurityToken>. The default real implementation of <xref:Microsoft.AspNetCore.Authentication.JwtBearer.TokenValidatedContext.SecurityToken?displayProperty=nameWithType> changed from <xref:System.IdentityModel.Tokens.Jwt.JwtSecurityToken> to <xref:Microsoft.IdentityModel.JsonWebTokens.JsonWebToken>.
+The <xref:Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerEvents>, <xref:Microsoft.AspNetCore.Authentication.WsFederation.WsFederationEvents>, and <xref:Microsoft.AspNetCore.Authentication.OpenIdConnect.OpenIdConnectEvents> events are authentication events fired respectively by the [JwtBearer](xref:Microsoft.AspNetCore.Authentication.JwtBearer), [WsFederation](xref:Microsoft.AspNetCore.Authentication.WsFederation), and [OpenIdConnect](xref:Microsoft.AspNetCore.Authentication.OpenIdConnect) authentication handlers. For example, the <xref:Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerEvents.OnTokenValidated> event is fired when a security token is validated. These events are fired with a context (for example, <xref:Microsoft.AspNetCore.Authentication.JwtBearer.TokenValidatedContext>) that exposes a <xref:Microsoft.AspNetCore.Authentication.JwtBearer.TokenValidatedContext.SecurityToken?displayProperty=nameWithType> property of abstract type <xref:System.IdentityModel.Tokens.SecurityToken>. The default real implementation of <xref:Microsoft.AspNetCore.Authentication.JwtBearer.TokenValidatedContext.SecurityToken?displayProperty=nameWithType> changed from `System.IdentityModel.Tokens.Jwt.JwtSecurityToken` to <xref:Microsoft.IdentityModel.JsonWebTokens.JsonWebToken>.
 
 ## Version introduced
 
@@ -13,13 +13,13 @@ ASP.NET Core 8.0 Preview 7
 
 ## Previous behavior
 
-Previously, the affected `SecurityToken` properties were implemented by <xref:System.IdentityModel.Tokens.Jwt.JwtSecurityToken>, which derives from <xref:System.IdentityModel.Tokens.SecurityToken>. <xref:System.IdentityModel.Tokens.Jwt.JwtSecurityToken> is the previous generation of JSON Web Token (JWT) implementation. The <xref:System.IdentityModel.Tokens.Jwt.JwtSecurityToken> tokens were produced by <xref:Microsoft.AspNetCore.Builder.JwtBearerOptions.SecurityTokenValidators>.
+Previously, the affected `SecurityToken` properties were implemented by `System.IdentityModel.Tokens.Jwt.JwtSecurityToken`, which derives from <xref:System.IdentityModel.Tokens.SecurityToken>. `JwtSecurityToken` is the previous generation of JSON Web Token (JWT) implementation. The `JwtSecurityToken` tokens were produced by <xref:Microsoft.AspNetCore.Builder.JwtBearerOptions.SecurityTokenValidators>.
 
-In addition, the <xref:System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.DefaultInboundClaimTypeMap?displayProperty=nameWithType> field provided the default claim type mapping for inbound claims.
+In addition, the `JwtSecurityTokenHandler.DefaultInboundClaimTypeMap` field provided the default claim type mapping for inbound claims.
 
 ## New behavior
 
-Starting in ASP.NET Core 8.0, the <xref:Microsoft.IdentityModel.JsonWebTokens> class, which also derives from <xref:System.IdentityModel.Tokens.SecurityToken>, implements the `SecurityToken` properties, by default. <xref:Microsoft.IdentityModel.JsonWebTokens> tokens are produced by more optimized <xref:Microsoft.IdentityModel.Tokens.TokenHandler> handlers.
+Starting in ASP.NET Core 8.0, the <xref:Microsoft.IdentityModel.JsonWebTokens> class, which also derives from <xref:System.IdentityModel.Tokens.SecurityToken>, implements the `SecurityToken` properties, by default. <xref:Microsoft.IdentityModel.JsonWebTokens> tokens are produced by more optimized `TokenHandler` handlers.
 
 In addition, the <xref:Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.DefaultInboundClaimTypeMap?displayProperty=nameWithType> field provides the default claim type mapping for inbound claims.
 
@@ -37,7 +37,7 @@ This change was made because <xref:Microsoft.IdentityModel.JsonWebTokens.JsonWeb
 
 ## Recommended action
 
-For most users, this change shouldn't be a problem as the type of the properties ([SecurityToken](xref:Microsoft.IdentityModel.Tokens.SecurityToken)) hasn't changed, and you weren't supposed to look at the real type.
+For most users, this change shouldn't be a problem as the type of the properties (`SecurityToken`) hasn't changed, and you weren't supposed to look at the real type.
 
 However, if you were down-casting one of the affected `SecurityToken` properties to `JwtSecurityToken` (for example, to get the claims), you have two options:
 

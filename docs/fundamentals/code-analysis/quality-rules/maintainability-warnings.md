@@ -32,6 +32,7 @@ Maintainability rules support library and application maintenance.
 | [CA1513: Use ObjectDisposedException throw helper](ca1513.md) | Throw helpers are simpler and more efficient than `if` blocks that construct a new exception instance. |
 | [CA1514: Avoid redundant length argument](ca1514.md) | A redundant length argument is used when slicing to the end of a string or buffer. A calculated length can be error-prone and is also unnecessary. |
 | [CA1515: Consider making public types internal](ca1515.md) | Unlike a class library, an application's API isn't typically referenced publicly, so types can be marked internal. |
+| [CA1516: Use cross-platform intrinsics](ca1516.md) | This rule detects usage of platform-specific intrinsics that can be replaced with an equivalent cross-platform intrinsic instead. |
 
 ## See also
 

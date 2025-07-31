@@ -2,8 +2,11 @@
 title: Authenticate to Azure resources from .NET apps hosted on-premises
 description: This article describes how to authenticate your application to Azure services when using the Azure SDK for .NET in on-premises hosted apps. 
 ms.topic: how-to
-ms.custom: devx-track-dotnet, engagement-fy23
 ms.date: 03/13/2025
+ms.custom:
+  - devx-track-dotnet
+  - engagement-fy23
+  - sfi-image-nochange
 ---
 
 # Authenticate to Azure resources from .NET apps hosted on-premises

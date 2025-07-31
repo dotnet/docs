@@ -3,7 +3,10 @@ title: Deploy Orleans to Azure Container Apps
 description: Learn how to deploy an updated Orleans shopping cart app to Azure Container Apps.
 ms.date: 05/23/2025
 ms.topic: tutorial
-ms.custom: devx-track-bicep
+ms.custom:
+  - devx-track-bicep
+  - sfi-image-nochange
+  - sfi-ropc-nochange
 ---
 
 # Deploy Orleans to Azure Container Apps

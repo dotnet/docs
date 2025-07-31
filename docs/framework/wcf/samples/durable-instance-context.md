@@ -2,6 +2,7 @@
 description: "Learn more about: Durable Instance Context"
 title: "Durable Instance Context"
 ms.date: "03/30/2017"
+ms.custom: sfi-ropc-nochange
 ---
 # Durable Instance Context
 

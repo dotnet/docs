@@ -3,7 +3,6 @@ title: How to format data for Named Entity Recognition (NER)
 description: Learn how to format data for the Named Entity Recognition (NER) scenario in Model Builder
 ms.date: 02/23/2024
 author: zewditu
-ms.author: zehailem
 ms.custom: mvc,how-to
 ms.topic: how-to
 #Customer intent: As a non-developer, I want to be able to format training data for Model Builder to use for training NER scenarios

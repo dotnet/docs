@@ -1,7 +1,7 @@
 ---
 title: Determine which .NET Framework versions are installed
 description: Use code, regedit.exe, or PowerShell to detect which versions of .NET Framework are installed on a machine by querying the Windows registry. Or, check Control Panel.
-ms.date: 02/14/2025
+ms.date: 07/10/2025
 dev_langs:
   - "csharp"
   - "vb"

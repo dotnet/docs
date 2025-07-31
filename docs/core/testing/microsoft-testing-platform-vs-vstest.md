@@ -117,7 +117,7 @@ Visual Studio Test Explorer supports the new test platform starting with version
 
 #### Visual Studio Code
 
-Visual Studio Code Test Explorer supports the new test platform starting with version X.
+Visual Studio Code with C# DevKit supports the new test platform.
 
 ### Azure DevOps
 

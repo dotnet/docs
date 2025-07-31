@@ -229,7 +229,7 @@ You can combine contracts from multiple source-generated contexts inside a singl
 ```csharp
 var options = new JsonSerializerOptions
 {
-    TypeInfoResolver = JsonTypeInfoResolver.Combine(ContextA.Default, ContextB.Default, ContextC.Default);
+    TypeInfoResolver = JsonTypeInfoResolver.Combine(ContextA.Default, ContextB.Default, ContextC.Default),
 };
 ```
 

@@ -98,7 +98,7 @@ The machine learning task used to train the sentiment analysis model in this tut
 
     - *SentimentAnalysis.consumption.cs* -  This file contains the `ModelInput` and `ModelOutput` schemas as well as the `Predict` function generated for consuming the model.
     - *SentimentAnalysis.training.cs* - This file contains the training pipeline (data transforms, trainer, trainer hyperparameters) chosen by Model Builder to train the model. You can use this pipeline for re-training your model.
-    - **SentimentAnalysis.zip* - This is a serialized zip file which represents your trained ML.NET model.
+    - **SentimentAnalysis.mlnet* - This file contains metadata and configuration details for an ML.NET model.
 
 1. Select the **Next step** button to move to the next step.
 
@@ -144,7 +144,7 @@ To make a single prediction, you have to create a <xref:Microsoft.ML.PredictionE
 
     ```csharp
     builder.Services.AddPredictionEnginePool<ModelInput, ModelOutput>()
-        .FromFile("SentimentAnalysis.zip");
+        .FromFile("SentimentAnalysis.mlnet");
     ```
 
 ### Create sentiment analysis handler

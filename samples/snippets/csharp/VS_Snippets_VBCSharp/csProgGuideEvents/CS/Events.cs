@@ -686,10 +686,10 @@ namespace ImplementInterfaceEvents
     }
     public class Shape : IDrawingObject
     {
-        public event EventHandler ShapeChanged;
+        public event EventHandler? ShapeChanged;
         void ChangeShape()
         {
-            // Do something here before the event�
+            // Do something here before the event…
 
             OnShapeChanged(new MyEventArgs(/*arguments*/));
 
@@ -697,10 +697,7 @@ namespace ImplementInterfaceEvents
         }
         protected virtual void OnShapeChanged(MyEventArgs e)
         {
-            if (ShapeChanged != null)
-            {
-                ShapeChanged(this, e);
-            }
+            ShapeChanged?.Invoke(this, e);
         }
     }
 }

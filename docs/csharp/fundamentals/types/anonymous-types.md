@@ -38,6 +38,24 @@ If you don't specify member names in the anonymous type, the compiler gives the 
 
 :::code language="csharp" source="snippets/anonymous-types/Program.cs" ID="snippet81":::
 
+## Projection initializers
+
+Anonymous types support *projection initializers*, which allow you to use local variables or parameters directly without explicitly specifying the member name. The compiler infers the member names from the variable names. The following example demonstrates this simplified syntax:
+
+:::code language="csharp" source="snippets/anonymous-types/Program.cs" ID="ProjectionInitializers":::
+
+This simplified syntax is particularly useful when creating anonymous types with many properties:
+
+:::code language="csharp" source="snippets/anonymous-types/Program.cs" ID="ProjectionExample":::
+
+The member name isn't inferred in the following cases:
+
+- The candidate name is a member name of an anonymous type, such as `ToString` or `GetHashCode`.
+- The candidate name is a duplicate of another member name, either explicit or implicit.
+- The candidate name isn't a valid identifier (for example, it contains spaces or special characters).
+
+In these cases, you must explicitly specify the member name.
+
 > [!TIP]
 > You can use .NET style rule [IDE0037](../../../fundamentals/code-analysis/style-rules/ide0037.md) to enforce whether inferred or explicit member names are preferred.
 

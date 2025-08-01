@@ -22,8 +22,6 @@ dotnet add package Microsoft.Extensions.Azure
 
 Right-click your project in the Visual Studio **Solution Explorer** window and select **Manage NuGet Packages**. Search for **Azure.Identity**, and install the matching package. Repeat this process for the **Microsoft.Extensions.Azure** package.
 
-:::image type="content" source="../media/nuget-azure-identity.png" alt-text="Install a package using the package manager.":::
-
 ---
 
 Azure services are accessed using specialized client classes from the various Azure SDK client libraries. These classes and your own custom services should be registered for dependency injection so they can be used throughout your app. In `Program.cs`, complete the following steps to configure a client class for dependency injection and token-based authentication:

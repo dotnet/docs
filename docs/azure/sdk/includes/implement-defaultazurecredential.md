@@ -1,6 +1,6 @@
 ---
 ms.topic: include
-ms.date: 07/25/2025
+ms.date: 08/01/2025
 ---
 
 ## Authenticate to Azure services from your app
@@ -11,29 +11,30 @@ The [Azure Identity library](/dotnet/api/azure.identity?view=azure-dotnet&preser
 
 [DefaultAzureCredential](../authentication/credential-chains.md#defaultazurecredential-overview) is an opinionated, ordered sequence of mechanisms for authenticating to Microsoft Entra ID. Each authentication mechanism is a class derived from the [TokenCredential](/dotnet/api/azure.core.tokencredential?view=azure-dotnet&preserve-view=true) class and is known as a *credential*. At runtime, `DefaultAzureCredential` attempts to authenticate using the first credential. If that credential fails to acquire an access token, the next credential in the sequence is attempted, and so on, until an access token is successfully obtained. In this way, your app can use different credentials in different environments without writing environment-specific code.
 
-To use `DefaultAzureCredential`, add the [Azure.Identity](/dotnet/api/azure.identity) and optionally the [Microsoft.Extensions.Azure](/dotnet/api/microsoft.extensions.azure) packages to your application:
+To use `DefaultAzureCredential`:
 
-### [Command Line](#tab/command-line)
+1. Add the [Microsoft.Extensions.Azure](/dotnet/api/microsoft.extensions.azure) package to your application:
 
-In a terminal of your choice, navigate to the application project directory and run the following commands:
+    ```dotnetcli
+    dotnet add package Microsoft.Extensions.Azure
+    ```
 
-```dotnetcli
-dotnet add package Azure.Identity
-dotnet add package Microsoft.Extensions.Azure
-```
+1. Azure services are accessed using specialized client classes from the various Azure SDK client libraries. These classes and your own custom services should be registered so they can be accessed via dependency injection throughout your app. In `Program.cs`, complete the following steps to register a client class and `DefaultAzureCredential`:
 
-### [NuGet Package Manager](#tab/nuget-package)
+    1. Include the `Microsoft.Extensions.Azure` namespace via a `using` directive.
+    1. Register the Azure service client using the corresponding `Add`-prefixed extension method.
 
-Right-click your project in Visual Studio's **Solution Explorer** window and select **Manage NuGet Packages**. Search for **Azure.Identity**, and install the matching package. Repeat this process for the **Microsoft.Extensions.Azure** package.
+    :::code language="csharp" source="../snippets/authentication/local-dev-account/Program.cs" id="snippet_DefaultAzureCredential":::
 
-:::image type="content" source="../media/nuget-azure-identity.png" alt-text="Install a package using the package manager.":::
+By default, the client builder creates a `DefaultAzureCredential` instance on your behalf. For production usage, register a [deterministic credential](../authentication/best-practices.md#use-deterministic-credentials-in-production-environments) instance with the builder instead of using `DefaultAzureCredential`. To use a different credential for Azure SDK clients:
 
----
+1. Add the [Azure.Identity](/dotnet/api/azure.identity) package to your application:
 
-Azure services are accessed using specialized client classes from the various Azure SDK client libraries. These classes and your own custom services should be registered so they can be accessed via dependency injection throughout your app. In `Program.cs`, complete the following steps to register a client class and `DefaultAzureCredential`:
+    ```dotnetcli
+    dotnet add package Azure.Identity
+    ```
 
-1. Include the `Azure.Identity` and `Microsoft.Extensions.Azure` namespaces via `using` directives.
-1. Register the Azure service client using the corresponding `Add`-prefixed extension method.
-1. Pass an instance of `DefaultAzureCredential` to the `UseCredential` method.
+1. Include the `Azure.Identity` namespace via a `using` directive.
+1. Register a custom credential instance with the builder. For example:
 
-:::code language="csharp" source="../snippets/authentication/local-dev-account/Program.cs" id="snippet_DefaultAzureCredential_UseCredential":::
+    :::code language="csharp" source="../snippets/authentication/local-dev-account/Program.cs" id="snippet_DefaultAzureCredential_UseCredential" highlight="6":::

@@ -44,13 +44,21 @@ app.Run();
 
 void registerUsingServicePrincipal(WebApplicationBuilder builder)
 {
+    #region snippet_DefaultAzureCredential
+    builder.Services.AddAzureClients(clientBuilder =>
+    {
+        clientBuilder.AddBlobServiceClient(
+            new Uri("https://<account-name>.blob.core.windows.net"));
+    });
+    #endregion snippet_DefaultAzureCredential
+
     #region snippet_DefaultAzureCredential_UseCredential
     builder.Services.AddAzureClients(clientBuilder =>
     {
         clientBuilder.AddBlobServiceClient(
             new Uri("https://<account-name>.blob.core.windows.net"));
 
-        clientBuilder.UseCredential(new DefaultAzureCredential());
+        clientBuilder.UseCredential(new AzureCliCredential());
     });
     #endregion snippet_DefaultAzureCredential_UseCredential
 }

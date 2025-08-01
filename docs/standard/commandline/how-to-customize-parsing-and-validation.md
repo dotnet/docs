@@ -12,7 +12,7 @@ ms.topic: how-to
 
 # How to customize parsing and validation in System.CommandLine
 
-[!INCLUDE [scl-preview](../../../includes/scl-preview.md)]
+[!INCLUDE [scl-preview](./includes/preview.md)]
 
 By default, System.CommandLine provides a set of built-in parsers that can parse many common types:
 
@@ -36,7 +36,7 @@ Other types are not supported, but you can create custom parsers for them. You c
 
 Every option, argument, and command can have one or more validators. Validators are used to ensure that the parsed value meets certain criteria. For example, you can validate that a number is positive, or that a string is not empty. You can also create complex validators that check against multiple conditions.
 
-Every symbol type in System.CommandLine has a `Validators` property that contains a list of validators. The validators are executed after the input is parsed, and they can report an error if the validation fails.
+Every symbol type in System.CommandLine has a <xref:System.CommandLine.Option.Validators> property that contains a list of validators. The validators are executed after the input is parsed, and they can report an error if the validation fails.
 
 To provide custom validation code, call `System.CommandLine.Option.Validators.Add` on your option or argument (or command), as shown in the following example:
 
@@ -44,13 +44,13 @@ To provide custom validation code, call `System.CommandLine.Option.Validators.Ad
 
 System.CommandLine provides a set of built-in validators that can be used to validate common types:
 
-- `AcceptExistingOnly` - configures given option or argument to accept only values corresponding to an existing file or directory.
-- `AcceptLegalFileNamesOnly` - configures given option or argument to accept only values representing legal file names.
-- `AcceptOnlyFromAmong` - configures given option or argument to accept only values from a specified set of values.
+* `AcceptExistingOnly` - configures given option or argument to accept only values corresponding to an existing file or directory.
+* `AcceptLegalFileNamesOnly` - configures given option or argument to accept only values representing legal file names.
+* `AcceptOnlyFromAmong` - configures given option or argument to accept only values from a specified set of values.
 
 ## Custom parsers
 
-Custom parsers are required to parse types with no default parser, such as complex types. They can also be used to parse supported types in a different way than the built-in parsers.
+To parse types with no default parser, such as complex types, you need a custom parser. Custom parsers can also be used to parse supported types in a different way than the built-in parsers.
 
 Suppose you have a `Person` type:
 
@@ -75,5 +75,5 @@ Here are some examples of what you can do with `CustomParser` that you can't do 
 
 ## See also
 
-- [How to parse and invoke the result](how-to-parse-and-invoke.md)
-- [System.CommandLine overview](index.md)
+* [How to parse and invoke the result](how-to-parse-and-invoke.md)
+* [System.CommandLine overview](index.md)

@@ -11,9 +11,9 @@ ms.topic: conceptual
 
 # Design guidance
 
-The following sections present guidance that we recommend you follow when designing a CLI. Think of what your app expects on the command line as similar to what a REST API server expects in the URL. Consistent rules for REST APIs are what make them readily usable to client app developers. In the same way, users of your command-line apps will have a better experience if the CLI design follows common patterns.
+The following sections present guidance for designing a CLI. Think of what your app expects on the command line as similar to what a REST API server expects in the URL. Consistent rules for REST APIs are what make them readily usable to client app developers. In the same way, users of your command-line apps will have a better experience if the CLI design follows common patterns.
 
-Once you create a CLI, it is hard to change, especially if your users have used your CLI in scripts they expect to keep running. The guidelines here were developed after the .NET CLI, and it doesn't always follow these guidelines. We are updating the .NET CLI where we can do so without introducing breaking changes. An example of this work is the new design for `dotnet new` in .NET 7.
+Once you create a CLI, it is hard to change it, especially if your users have used your CLI in scripts they expect to keep running.
 
 ## Symbols
 
@@ -39,7 +39,7 @@ In particular, avoid using any of the following aliases differently than their c
 
 * `-i` for `--interactive`.
 
-  This option signals to the user that they may be prompted for inputs to questions that the command needs answered. For example, prompting for a username. Your CLI may be used in scripts, so use caution in prompting users who have not specified this switch.
+  This option signals to the user that they might be prompted for inputs to questions that the command needs answered. For example, prompting for a username. Your CLI might be used in scripts, so use caution in prompting users who haven't specified this switch.
 
 * `-o` for `--output`.
 

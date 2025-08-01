@@ -24,7 +24,7 @@ To use `DefaultAzureCredential`:
     1. Include the `Microsoft.Extensions.Azure` namespace via a `using` directive.
     1. Register the Azure service client using the corresponding `Add`-prefixed extension method.
 
-    :::code language="csharp" source="../snippets/authentication/local-dev-account/Program.cs" id="snippet_DefaultAzureCredential":::
+        :::code language="csharp" source="../snippets/authentication/local-dev-account/Program.cs" id="snippet_DefaultAzureCredential":::
 
 By default, the client builder creates a `DefaultAzureCredential` instance on your behalf. For production usage, register a [deterministic credential](../authentication/best-practices.md#use-deterministic-credentials-in-production-environments) instance with the builder instead of using `DefaultAzureCredential`. To use a different credential for Azure SDK clients:
 

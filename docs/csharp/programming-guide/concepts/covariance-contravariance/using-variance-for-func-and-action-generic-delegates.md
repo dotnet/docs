@@ -78,7 +78,57 @@ class Program
     }  
 }  
 ```  
-  
+
+## Contravariance and Anonymous Functions
+
+When working with anonymous functions (lambda expressions), you might encounter counterintuitive behavior related to contravariance. Consider the following example:
+
+```csharp
+public class Person
+{
+    public virtual void ReadContact() { /*...*/ }
+}
+
+public class Employee : Person
+{
+    public override void ReadContact() { /*...*/ }
+}
+
+class Program
+{
+    private static void Main()
+    {
+        var personReadContact = (Person p) => p.ReadContact();
+
+        // This works - contravariance allows assignment
+        Action<Employee> employeeReadContact = personReadContact;
+
+        // This causes a compile error: CS1661
+        // Action<Employee> employeeReadContact2 = (Person p) => p.ReadContact();
+    }
+}
+```
+
+This behavior seems contradictory: if contravariance allows assigning a delegate that accepts a base type (`Person`) to a delegate variable expecting a derived type (`Employee`), why does direct assignment of the lambda expression fail?
+
+The key difference is **type inference**. In the first case, the lambda expression is first assigned to a variable with explicit type `var`, which causes the compiler to infer the lambda's type as `Action<Person>`. The subsequent assignment to `Action<Employee>` succeeds because of contravariance rules for delegates.
+
+In the second case, the compiler cannot directly infer that the lambda expression `(Person p) => p.ReadContact()` should have type `Action<Person>` when it's being assigned to `Action<Employee>`. The type inference rules for anonymous functions don't automatically apply contravariance during the initial type determination.
+
+### Workarounds
+
+To make direct assignment work, you can use explicit casting:
+
+```csharp
+// Explicit cast to the desired delegate type
+Action<Employee> employeeReadContact = (Action<Person>)((Person p) => p.ReadContact());
+
+// Or specify the lambda parameter type that matches the target delegate
+Action<Employee> employeeReadContact2 = (Employee e) => e.ReadContact();
+```
+
+This behavior illustrates the difference between delegate contravariance (which works after types are established) and lambda expression type inference (which occurs during compilation).
+
 ## See also
 
 - [Covariance and Contravariance (C#)](./index.md)

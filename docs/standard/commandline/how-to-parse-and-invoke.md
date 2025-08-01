@@ -11,7 +11,7 @@ helpviewer_keywords:
 
 # Parsing and invocation in System.CommandLine
 
-[!INCLUDE [scl-preview](./includes/scl-preview.md)]
+[!INCLUDE [scl-preview](./includes/preview.md)]
 
 System.CommandLine provides a clear separation between command-line parsing and action invocation. The *parsing process* is responsible for parsing command-line input and creating a <xref:System.CommandLine.ParseResult> object that contains the parsed values (and parse errors). The *action invocation process* is responsible for invoking the action associated with the parsed command, option, or directive (arguments can't have actions).
 

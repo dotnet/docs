@@ -12,7 +12,7 @@ ms.topic: how-to
 
 # How to customize parsing and validation in System.CommandLine
 
-[!INCLUDE [scl-preview](./includes/scl-preview.md)]
+[!INCLUDE [scl-preview](./includes/preview.md)]
 
 By default, System.CommandLine provides a set of built-in parsers that can parse many common types:
 

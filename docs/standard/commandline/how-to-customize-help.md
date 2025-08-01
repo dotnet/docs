@@ -12,7 +12,7 @@ ms.topic: how-to
 
 # Customize help output
 
-Command-line apps typically provide an option to display a brief description of the available commands, options, and arguments. `System.CommandLine` provides <xref:System.CommandLine.Help.HelpOption> that's included in the [RootCommand](syntax.md#root-command) options by default. `HelpOption` generates help output for defined symbols by using the information exposed by <xref:System.CommandLine.Symbol.Name>, <xref:System.CommandLine.Symbol.HelpName>, <xref:System.CommandLine.Symbol.Description>, and other properties like default value or completion sources.
+Command-line apps typically provide an option to display a brief description of the available commands, options, and arguments. `System.CommandLine` provides <xref:System.CommandLine.Help.HelpOption>, which is included in the [RootCommand](syntax.md#root-command) options by default. `HelpOption` generates help output for defined symbols by using the information exposed by <xref:System.CommandLine.Symbol.Name>, <xref:System.CommandLine.Option.HelpName>, <xref:System.CommandLine.Symbol.Description>, and other properties like default value or completion sources.
 
 :::code language="csharp" source="snippets/customize-help/csharp/Program.cs" id="original" :::
 

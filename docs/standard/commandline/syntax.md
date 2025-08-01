@@ -12,7 +12,7 @@ ms.topic: concept-article
 
 # Syntax overview: Commands, options, and arguments
 
-[!INCLUDE [scl-preview](./includes/scl-preview.md)]
+[!INCLUDE [scl-preview](./includes/preview.md)]
 
 This article explains the command-line syntax that `System.CommandLine` recognizes. The information is useful to both users and developers of .NET command-line apps, including the [.NET CLI](../../core/tools/index.md).
 

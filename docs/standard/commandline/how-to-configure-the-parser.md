@@ -12,7 +12,7 @@ ms.topic: how-to
 
 # How to configure the parser in System.CommandLine
 
-[!INCLUDE [scl-preview](./includes/scl-preview.md)]
+[!INCLUDE [scl-preview](./includes/preview.md)]
 
 <xref:System.CommandLine.CommandLineConfiguration> is a class that provides properties to configure the parser. It is an optional argument for every `Parse` method, such as <xref:System.CommandLine.Command.Parse*?displayProperty=nameWithType> and <xref:System.CommandLine.Parsing.CommandLineParser.Parse*?displayProperty=nameWithType>. When it isn't provided, the default configuration is used.
 

@@ -12,7 +12,7 @@ ms.topic: overview
 
 # System.CommandLine overview
 
-[!INCLUDE [scl-preview](./includes/scl-preview.md)]
+[!INCLUDE [scl-preview](./includes/preview.md)]
 
 The `System.CommandLine` library provides functionality commonly needed by command-line apps, such as parsing command-line input and displaying help text.
 

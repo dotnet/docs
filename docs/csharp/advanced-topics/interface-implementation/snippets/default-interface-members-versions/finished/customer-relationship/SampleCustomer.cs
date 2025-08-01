@@ -26,6 +26,7 @@ public class SampleCustomer : ICustomer
     }
 
     // <SnippetOverrideAndExtend>
+    // This method belongs in the SampleCustomer class (SampleCustomer.cs) that implements ICustomer
     public decimal ComputeLoyaltyDiscount()
     {
        if (PreviousOrders.Any() == false)

@@ -177,6 +177,9 @@ Before you can pack and distribute the application as a tool, you need to modify
 
    `<ToolCommandName>` is an optional element that specifies the command that will invoke the tool after it's installed. If this element isn't provided, the command name for the tool is the assembly name, which is typically the project file name without the *.csproj* extension.
 
+   > [!NOTE]
+   > Choose a unique value for `<ToolCommandName>`. Avoid using file extensions (like `.exe` or `.cmd`) because the tool is installed as an app host and the command should not include an extension. This helps prevent conflicts with existing commands and ensures a smooth installation experience.
+
    `<PackageOutputPath>` is an optional element that determines where the NuGet package will be produced. The NuGet package is what the .NET CLI uses to install your tool.
 
    The project file now looks like the following example:

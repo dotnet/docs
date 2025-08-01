@@ -250,6 +250,23 @@ Certain `partial` method declarations don't require an *implementing declaration
 
 When a partial method includes an implementing declaration, both declarations must be identical. Exactly one implementing declaration can be defined.
 
+**CS0759** occurs when you have an implementing declaration (a partial method with a body) but no corresponding defining declaration (the signature without a body). Every partial method with an implementation must have both:
+
+1. A *defining declaration*: the method signature without a body, as mentioned in the [Partial members](#partial-members) section.
+2. An *implementing declaration*: the method signature with a body.
+
+The following example shows code that generates CS0759:
+
+:::code language="csharp" source="./snippets/partial-declarations/CS0759Examples.cs" id="IncorrectExample":::
+
+To fix this error, add the defining declaration:
+
+:::code language="csharp" source="./snippets/partial-declarations/CS0759Examples.cs" id="CorrectExample":::
+
+You can also place both declarations in the same partial class section:
+
+:::code language="csharp" source="./snippets/partial-declarations/CS0759Examples.cs" id="AlternativeCorrect":::
+
 ## Partial properties
 
 The following errors indicate mistakes in your partial property or indexer declarations:

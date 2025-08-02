@@ -11,9 +11,9 @@ public class FunctionPointers
 
         // <InvokeViaFunctionPointer>
         int product = 0;
+        static int localMultiply(int x, int y) => x * y;
         unsafe
         {
-            static int localMultiply(int x, int y) => x * y;
             product = UnsafeCombine(&localMultiply, 3, 4);
         }
         // </InvokeViaFunctionPointer>

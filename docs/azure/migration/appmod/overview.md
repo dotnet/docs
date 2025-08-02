@@ -45,6 +45,10 @@ When code changes are needed, the tool guides you through remediation using pred
 
 For more information, see [Predefined tasks](predefined-tasks.md).
 
+### Upgrading .NET projects
+
+Upgrading .NET apps is a common task that requires substantial time and resources. GitHub Copilot App Modernization - upgrade for .NET is also available and provides an AI-based solution designed to assist with updating your .NET apps. For more information, see [GitHub Copilot App Modernization - upgrade for .NET](/dotnet/core/porting/github-copilot-app-modernization-overview).
+
 ## Common use cases
 
 App Modernization for .NET (Preview) supports the following scenarios:

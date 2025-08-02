@@ -121,7 +121,7 @@ class Program
         // <setcustomaction>
         for (int i = 0; i < rootCommand.Options.Count; i++)
         {
-            // RootCommand has a default HelpOption, we need to update its Action.
+            // RootCommand has a default HelpOption; update its Action.
             if (rootCommand.Options[i] is HelpOption defaultHelpOption)
             {
                 defaultHelpOption.Action = new CustomHelpAction((HelpAction)defaultHelpOption.Action!);

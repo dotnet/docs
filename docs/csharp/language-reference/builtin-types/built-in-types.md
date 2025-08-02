@@ -37,7 +37,7 @@ The following table lists the C# built-in [reference](../keywords/reference-type
 | [`delegate`](reference-types.md#the-delegate-type) |<xref:System.Delegate?displayProperty=nameWithType> |
 | [`dynamic`](reference-types.md#the-dynamic-type)   |<xref:System.Object?displayProperty=nameWithType>   |
 
-In the preceding tables, the C# type keyword from the left column (except [delegate](reference-types.md#the-delegate-type) and [dynamic](reference-types.md#the-dynamic-type)) is an alias for the corresponding .NET type. They're interchangeable. For example, the following declarations declare variables of the same type:
+In the preceding tables, most C# type keywords from the left column are aliases for the corresponding .NET type. They're interchangeable. For example, the following declarations declare variables of the same type:
 
 ```csharp
 int a = 123;
@@ -50,7 +50,7 @@ The `dynamic` type is similar to `object`. The main differences are:
 - You can't use `new dynamic()`.
 - You can't derive a type from the `dynamic` type.
 
-The `delegate` keyword declares a type derived from <xref:System.Delegate?displayProperty=nameWithType>. `System.Delegate` type is an abstract type.
+The `delegate` keyword is a built-in reference type keyword that declares a type derived from <xref:System.Delegate?displayProperty=nameWithType>. Unlike the other built-in type keywords, `delegate` isn't an alias for a specific .NET type. Instead, it declares custom types that derive from the abstract `System.Delegate` type. Similarly, `dynamic` represents runtime binding behavior rather than being a direct alias for a specific .NET type.
 
 The [`void`](void.md) keyword represents the absence of a type. You use it as the return type of a method that doesn't return a value.
 

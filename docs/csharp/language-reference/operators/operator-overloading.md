@@ -18,7 +18,7 @@ Use the `operator` keyword to declare an operator. An operator declaration must 
 - It includes a `public` modifier.
 - A unary operator has one input parameter. A binary operator has two input parameters. In each case, at least one parameter must have type `T` or `T?` where `T` is the type that contains the operator declaration.
 - It includes the `static` modifier, except for the compound assignment operators, such as `+=`.
-- The increment (`++`) and decrement (`--`) operators can be implemented as either static or instance methods, new feature in C# 14.
+- The increment (`++`) and decrement (`--`) operators can be implemented as either static or instance methods. This is a new feature introduced in C# 14.
 
 The following example defines a simplified structure to represent a rational number. The structure overloads some of the [arithmetic operators](arithmetic-operators.md):
 

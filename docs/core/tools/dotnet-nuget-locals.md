@@ -30,10 +30,11 @@ The `dotnet nuget locals` command clears or lists local NuGet resources in the h
 
   The cache location to list or clear. It accepts one of the following values:
 
-  * `all` - Indicates that the specified operation is applied to all cache types: http-request cache, global packages cache, and the temporary cache.
+  * `all` - Indicates that the specified operation is applied to all cache types: http-request cache, global packages cache, temporary cache, and plugins cache.
   * `http-cache` - Indicates that the specified operation is applied only to the http-request cache. The other cache locations aren't affected.
   * `global-packages` - Indicates that the specified operation is applied only to the global packages cache. The other cache locations aren't affected.
   * `temp` - Indicates that the specified operation is applied only to the temporary cache. The other cache locations aren't affected.
+  * `plugins-cache` - Indicates that the specified operation is applied only to the plugins cache. The other cache locations aren't affected.
 
 ## Options
 
@@ -53,7 +54,7 @@ The `dotnet nuget locals` command clears or lists local NuGet resources in the h
 
 ## Examples
 
-- Displays the paths of all the local cache directories (http-cache directory, global-packages cache directory, and temporary cache directory):
+- Displays the paths of all the local cache directories (http-cache directory, global-packages cache directory, temporary cache directory, and plugins cache directory):
 
   ```dotnetcli
   dotnet nuget locals all -l
@@ -65,7 +66,13 @@ The `dotnet nuget locals` command clears or lists local NuGet resources in the h
   dotnet nuget locals http-cache --list
   ```
 
-- Clears all files from all local cache directories (http-cache directory, global-packages cache directory, and temporary cache directory):
+- Displays the path for the local plugins cache directory:
+
+  ```dotnetcli
+  dotnet nuget locals plugins-cache --list
+  ```
+
+- Clears all files from all local cache directories (http-cache directory, global-packages cache directory, temporary cache directory, and plugins cache directory):
 
   ```dotnetcli
   dotnet nuget locals all --clear
@@ -81,6 +88,12 @@ The `dotnet nuget locals` command clears or lists local NuGet resources in the h
 
   ```dotnetcli
   dotnet nuget locals temp -c
+  ```
+
+- Clears all files in local plugins cache directory:
+
+  ```dotnetcli
+  dotnet nuget locals plugins-cache -c
   ```
 
 ## Troubleshooting

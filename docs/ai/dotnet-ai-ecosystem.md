@@ -44,6 +44,7 @@ Many different SDKs are available to build .NET apps with AI capabilities depend
 | [Microsoft.SemanticKernel](https://www.nuget.org/packages/Microsoft.SemanticKernel/) | [OpenAI models](https://platform.openai.com/docs/models/overview)<br/>[Azure OpenAI supported models](/azure/ai-services/openai/concepts/models) | [Semantic Kernel](https://github.com/microsoft/semantic-kernel) (Microsoft) | [Semantic Kernel documentation](/semantic-kernel/) |
 | [Azure OpenAI SDK](https://www.nuget.org/packages/Azure.AI.OpenAI/) | [Azure OpenAI supported models](/azure/ai-services/openai/concepts/models) | [Azure SDK for .NET](https://github.com/Azure/azure-sdk-for-net) (Microsoft) | [Azure OpenAI services documentation](/azure/ai-services/openai/) |
 | [OpenAI SDK](https://www.nuget.org/packages/OpenAI/) | [OpenAI supported models](https://platform.openai.com/docs/models) | [OpenAI SDK for .NET](https://github.com/openai/openai-dotnet) (OpenAI) | [OpenAI services documentation](https://platform.openai.com/docs/overview) |
+| [Microsoft 365 Agents SDK](https://www.nuget.org/packages?q=microsoft.agents+AND+nugetbotbuilder&includeComputedFrameworks=true&prerel=false&sortby=relevance) | Model Agnostic/Model Neutral | [Microsoft 365 Agents SDK](https://github.com/Microsoft/Agents-for-net) (Microsoft) | [Microsoft 365 Agents SDK documentation](https://learn.microsoft.com/en-us/microsoft-365/agents-sdk/) |
 
 ### .NET SDKs for Azure AI Services
 

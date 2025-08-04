@@ -130,7 +130,20 @@ You can write this code more succinctly by using LINQ:
 
 :::code language="csharp" source="snippets/async-scenarios/Program.cs" ID="GetUsersForDatasetByLINQ":::
 
-Although you write less code by using LINQ, exercise caution when mixing LINQ with asynchronous code. LINQ uses deferred (or lazy) execution. Asynchronous calls don't happen immediately as they do in a `foreach` loop, unless you force the generated sequence to iterate with a call to the `.ToList()` or `.ToArray()` method. This example uses the <xref:System.Linq.Enumerable.ToArray%2A?displayProperty=nameWithType> method to perform the query eagerly and store the results in an array. This approach forces the `id => GetUserAsync(id)` statement to run and initiate the task.
+Here's an example that demonstrates using `ToList()` with `Task.WhenAny` to process tasks as they complete:
+
+:::code language="csharp" source="snippets/async-scenarios/Program.cs" ID="ProcessTasksAsTheyComplete":::
+
+In this example, `ToList()` creates a list that supports the `Remove()` operation, allowing you to dynamically remove completed tasks. This pattern is particularly useful when you want to handle results as soon as they're available, rather than waiting for all tasks to complete.
+
+Although you write less code by using LINQ, exercise caution when mixing LINQ with asynchronous code. LINQ uses deferred (or lazy) execution. Asynchronous calls don't happen immediately as they do in a `foreach` loop, unless you force the generated sequence to iterate with a call to the `.ToList()` or `.ToArray()` method. 
+
+You can choose between <xref:System.Linq.Enumerable.ToArray%2A?displayProperty=nameWithType> and <xref:System.Linq.Enumerable.ToList%2A?displayProperty=nameWithType> based on your scenario:
+
+- **Use `ToArray()`** when you plan to process all tasks together, such as with `Task.WhenAll`. Arrays are efficient for scenarios where the collection size is fixed.
+- **Use `ToList()`** when you need to dynamically manage tasks, such as with `Task.WhenAny` where you might remove completed tasks from the collection as they finish.
+
+This example uses the `ToArray()` method to perform the query eagerly and store the results in an array. This approach forces the `id => GetUserAsync(id)` statement to run and initiate the task.
 
 ## Review considerations for asynchronous programming
 

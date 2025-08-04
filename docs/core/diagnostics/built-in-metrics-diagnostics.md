@@ -125,7 +125,7 @@ The instrument is only available on a system running on containers either on Win
 
 | Name | Instrument Type | Unit (UCUM) | Description |
 | ---- | --------------- | ----------- | ----------- |
-| `container.memory.usage` | <xref:System.Diagnostics.Metrics.<xref:System.Diagnostics.Metrics.ObservableUpDownCounter`1>`1> | `By` | Memory usage of all processes in the container measured in bytes. |
+| `container.memory.usage` | <xref:System.Diagnostics.Metrics.<xref:System.Diagnostics.Metrics.ObservableUpDownCounter`1> | `By` | Memory usage of all processes in the container measured in bytes. |
 
 Available starting in: .NET 9.
 

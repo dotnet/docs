@@ -29,7 +29,7 @@ namespace ImplementInterfaceEvents
     }  
     public class Shape : IDrawingObject  
     {  
-        public event EventHandler ShapeChanged;  
+        public event EventHandler? ShapeChanged;  
         void ChangeShape()  
         {  
             // Do something here before the event…  

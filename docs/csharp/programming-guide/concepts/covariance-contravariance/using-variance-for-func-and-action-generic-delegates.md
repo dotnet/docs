@@ -120,10 +120,10 @@ In the second case, the compiler cannot directly infer that the lambda expressio
 To make direct assignment work, you can use explicit casting:
 
 ```csharp
-// Explicit cast to the desired delegate type
+// Explicit cast to the desired delegate type.
 Action<Employee> employeeReadContact = (Action<Person>)((Person p) => p.ReadContact());
 
-// Or specify the lambda parameter type that matches the target delegate
+// Or specify the lambda parameter type that matches the target delegate.
 Action<Employee> employeeReadContact2 = (Employee e) => e.ReadContact();
 ```
 

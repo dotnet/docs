@@ -223,7 +223,7 @@ The length of each dimension of an array must be specified as part of the array 
 
 There are some types that cannot be used as the type of an array. These types include <xref:System.TypedReference?displayProperty=fullName> and <xref:System.ArgIterator?displayProperty=fullName>. The type of an array can't be a `static` class, because instances of a `static` class can't be created.
 
-You can declare arrays as [implicitly typed local variables](../statements/declarations.md#implicitly-typed-local-variables). The array must be initialized using a `new` expression. In addition, all elements in an array initializer must have a [best common type](~/_csharpstandard/standard/expressions.md#126315-finding-the-best-common-type-of-a-set-of-expressions). The following examples show how to declare an implicitly typed array:
+You can declare arrays as [implicitly typed local variables](../statements/declarations.md#implicitly-typed-local-variables). The array must be initialized using a `new` expression. In addition, all elements in an array initializer must have a [best common type](~/_csharpstandard/standard/expressions.md#126316-finding-the-best-common-type-of-a-set-of-expressions). The following examples show how to declare an implicitly typed array:
 
 :::code language="csharp" source="./snippets/array-warnings/Program.cs" id="ImplicitInitializer":::
 

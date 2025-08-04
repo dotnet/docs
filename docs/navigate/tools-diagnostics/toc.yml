@@ -571,6 +571,8 @@ items:
             href: ../../core/diagnostics/debug-stackoverflow.md
       - name: Unmanaged API reference
         items:
+          - name: Overview
+            href: ../../core/unmanaged-api/index.md
           - name: Debugging
             items:
               - name: Overview
@@ -635,6 +637,499 @@ items:
                 items:
                   - name: PSTARTUP_CALLBACK function pointer
                     href: ../../core/unmanaged-api/debugging/pstartup_callback-function-pointer.md
+          - name: Metadata
+            items:
+              - name: Enumerations
+                items:
+                  - name: Overview
+                    href: ../../core/unmanaged-api/metadata/enumerations/metadata-enumerations.md
+                  - name: CorAssemblyFlags enumeration
+                    href: ../../core/unmanaged-api/metadata/enumerations/corassemblyflags-enumeration.md
+                  - name: CorCheckDuplicatesFor enumeration
+                    href: ../../core/unmanaged-api/metadata/enumerations/corcheckduplicatesfor-enumeration.md
+                  - name: CorDeclSecurity enumeration
+                    href: ../../core/unmanaged-api/metadata/enumerations/cordeclsecurity-enumeration.md
+                  - name: CorErrorIfEmitOutOfOrder enumeration
+                    href: ../../core/unmanaged-api/metadata/enumerations/corerrorifemitoutoforder-enumeration.md
+                  - name: CorFileFlags enumeration
+                    href: ../../core/unmanaged-api/metadata/enumerations/corfileflags-enumeration.md
+                  - name: CorFileMapping enumeration
+                    href: ../../core/unmanaged-api/metadata/enumerations/corfilemapping-enumeration.md
+                  - name: CorGenericParamAttr enumeration
+                    href: ../../core/unmanaged-api/metadata/enumerations/corgenericparamattr-enumeration.md
+                  - name: CorImportOptions enumeration
+                    href: ../../core/unmanaged-api/metadata/enumerations/corimportoptions-enumeration.md
+                  - name: CorLinkerOptions enumeration
+                    href: ../../core/unmanaged-api/metadata/enumerations/corlinkeroptions-enumeration.md
+                  - name: CorLocalRefPreservation enumeration
+                    href: ../../core/unmanaged-api/metadata/enumerations/corlocalrefpreservation-enumeration.md
+                  - name: CorManifestResourceFlags enumeration
+                    href: ../../core/unmanaged-api/metadata/enumerations/cormanifestresourceflags-enumeration.md
+                  - name: CorMethodAttr enumeration
+                    href: ../../core/unmanaged-api/metadata/enumerations/cormethodattr-enumeration.md
+                  - name: CorMethodImpl enumeration
+                    href: ../../core/unmanaged-api/metadata/enumerations/cormethodimpl-enumeration.md
+                  - name: CorMethodSemanticsAttr enumeration
+                    href: ../../core/unmanaged-api/metadata/enumerations/cormethodsemanticsattr-enumeration.md
+                  - name: CorNotificationForTokenMovement enumeration
+                    href: ../../core/unmanaged-api/metadata/enumerations/cornotificationfortokenmovement-enumeration.md
+                  - name: CorOpenFlags enumeration
+                    href: ../../core/unmanaged-api/metadata/enumerations/coropenflags-enumeration.md
+                  - name: CorPEKind enumeration
+                    href: ../../core/unmanaged-api/metadata/enumerations/corpekind-enumeration.md
+                  - name: CorPinvokeMap enumeration
+                    href: ../../core/unmanaged-api/metadata/enumerations/corpinvokemap-enumeration.md
+                  - name: CorPropertyAttr enumeration
+                    href: ../../core/unmanaged-api/metadata/enumerations/corpropertyattr-enumeration.md
+                  - name: CorRefToDefCheck enumeration
+                    href: ../../core/unmanaged-api/metadata/enumerations/correftodefcheck-enumeration.md
+                  - name: CorSaveSize enumeration
+                    href: ../../core/unmanaged-api/metadata/enumerations/corsavesize-enumeration.md
+                  - name: CorSetENC enumeration
+                    href: ../../core/unmanaged-api/metadata/enumerations/corsetenc-enumeration.md
+                  - name: CorThreadSafetyOptions enumeration
+                    href: ../../core/unmanaged-api/metadata/enumerations/corthreadsafetyoptions-enumeration.md
+                  - name: CorTypeAttr enumeration
+                    href: ../../core/unmanaged-api/metadata/enumerations/cortypeattr-enumeration.md
+                  - name: CorValidatorModuleType enumeration
+                    href: ../../core/unmanaged-api/metadata/enumerations/corvalidatormoduletype-enumeration.md
+              - name: Interfaces
+                items:
+                  - name: Overview
+                    href: ../../core/unmanaged-api/metadata/interfaces/metadata-interfaces.md
+                  - name: IMapToken interface
+                    href: ../../core/unmanaged-api/metadata/interfaces/imaptoken-interface.md
+                    items:
+                      - name: Map method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imaptoken-map-method.md
+                  - name: IMetaDataAssemblyEmit interface
+                    href: ../../core/unmanaged-api/metadata/interfaces/imetadataassemblyemit-interface.md
+                    items:
+                      - name: DefineAssembly method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataassemblyemit-defineassembly-method.md
+                      - name: DefineAssemblyRef method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataassemblyemit-defineassemblyref-method.md
+                      - name: DefineExportedType method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataassemblyemit-defineexportedtype-method.md
+                      - name: DefineFile method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataassemblyemit-definefile-method.md
+                      - name: DefineManifestResource method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataassemblyemit-definemanifestresource-method.md
+                      - name: SetAssemblyProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataassemblyemit-setassemblyprops-method.md
+                      - name: SetAssemblyRefProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataassemblyemit-setassemblyrefprops-method.md
+                      - name: SetExportedTypeProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataassemblyemit-setexportedtypeprops-method.md
+                      - name: SetFileProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataassemblyemit-setfileprops-method.md
+                      - name: SetManifestResourceProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataassemblyemit-setmanifestresourceprops-method.md
+                  - name: IMetaDataAssemblyImport interface
+                    href: ../../core/unmanaged-api/metadata/interfaces/imetadataassemblyimport-interface.md
+                    items:
+                      - name: CloseEnum method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataassemblyimport-closeenum-method.md
+                      - name: EnumAssemblyRefs method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataassemblyimport-enumassemblyrefs-method.md
+                      - name: EnumExportedTypes method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataassemblyimport-enumexportedtypes-method.md
+                      - name: EnumFiles method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataassemblyimport-enumfiles-method.md
+                      - name: EnumManifestResources method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataassemblyimport-enummanifestresources-method.md
+                      - name: FindAssembliesByName method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataassemblyimport-findassembliesbyname-method.md
+                      - name: FindExportedTypeByName method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataassemblyimport-findexportedtypebyname-method.md
+                      - name: FindManifestResourceByName method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataassemblyimport-findmanifestresourcebyname-method.md
+                      - name: GetAssemblyFromScope method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataassemblyimport-getassemblyfromscope-method.md
+                      - name: GetAssemblyProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataassemblyimport-getassemblyprops-method.md
+                      - name: GetAssemblyRefProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataassemblyimport-getassemblyrefprops-method.md
+                      - name: GetExportedTypeProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataassemblyimport-getexportedtypeprops-method.md
+                      - name: GetFileProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataassemblyimport-getfileprops-method.md
+                      - name: GetManifestResourceProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataassemblyimport-getmanifestresourceprops-method.md
+                  - name: IMetaDataDispenser interface
+                    href: ../../core/unmanaged-api/metadata/interfaces/imetadatadispenser-interface.md
+                    items:
+                      - name: DefineScope method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatadispenser-definescope-method.md
+                      - name: OpenScope method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatadispenser-openscope-method.md
+                      - name: OpenScopeOnMemory method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatadispenser-openscopeonmemory-method.md
+                  - name: IMetaDataDispenserEx interface
+                    href: ../../core/unmanaged-api/metadata/interfaces/imetadatadispenserex-interface.md
+                    items:
+                      - name: FindAssembly method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatadispenserex-findassembly-method.md
+                      - name: FindAssemblyModule method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatadispenserex-findassemblymodule-method.md
+                      - name: GetCORSystemDirectory method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatadispenserex-getcorsystemdirectory-method.md
+                      - name: GetOption method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatadispenserex-getoption-method.md
+                      - name: OpenScopeOnITypeInfo method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatadispenserex-openscopeonitypeinfo-method.md
+                      - name: SetOption method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatadispenserex-setoption-method.md
+                  - name: IMetaDataEmit interface
+                    href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-interface.md
+                    items:
+                      - name: ApplyEditAndContinue method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-applyeditandcontinue-method.md
+                      - name: DefineCustomAttribute method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-definecustomattribute-method.md
+                      - name: DefineEvent method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-defineevent-method.md
+                      - name: DefineField method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-definefield-method.md
+                      - name: DefineImportMember method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-defineimportmember-method.md
+                      - name: DefineImportType method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-defineimporttype-method.md
+                      - name: DefineMemberRef method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-definememberref-method.md
+                      - name: DefineMethod method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-definemethod-method.md
+                      - name: DefineMethodImpl method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-definemethodimpl-method.md
+                      - name: DefineModuleRef method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-definemoduleref-method.md
+                      - name: DefineNestedType method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-definenestedtype-method.md
+                      - name: DefineParam method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-defineparam-method.md
+                      - name: DefinePermissionSet method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-definepermissionset-method.md
+                      - name: DefinePinvokeMap method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-definepinvokemap-method.md
+                      - name: DefineProperty method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-defineproperty-method.md
+                      - name: DefineSecurityAttributeSet method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-definesecurityattributeset-method.md
+                      - name: DefineTypeDef method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-definetypedef-method.md
+                      - name: DefineTypeRefByName method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-definetyperefbyname-method.md
+                      - name: DefineUserString method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-defineuserstring-method.md
+                      - name: DeleteClassLayout method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-deleteclasslayout-method.md
+                      - name: DeleteFieldMarshal method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-deletefieldmarshal-method.md
+                      - name: DeletePinvokeMap method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-deletepinvokemap-method.md
+                      - name: DeleteToken method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-deletetoken-method.md
+                      - name: GetSaveSize method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-getsavesize-method.md
+                      - name: GetTokenFromSig method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-gettokenfromsig-method.md
+                      - name: GetTokenFromTypeSpec method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-gettokenfromtypespec-method.md
+                      - name: Merge method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-merge-method.md
+                      - name: MergeEnd method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-mergeend-method.md
+                      - name: Save method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-save-method.md
+                      - name: SaveToMemory method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-savetomemory-method.md
+                      - name: SaveToStream method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-savetostream-method.md
+                      - name: SetClassLayout method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-setclasslayout-method.md
+                      - name: SetCustomAttributeValue method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-setcustomattributevalue-method.md
+                      - name: SetEventProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-seteventprops-method.md
+                      - name: SetFieldMarshal method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-setfieldmarshal-method.md
+                      - name: SetFieldProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-setfieldprops-method.md
+                      - name: SetFieldRVA method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-setfieldrva-method.md
+                      - name: SetHandler method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-sethandler-method.md
+                      - name: SetMethodImplFlags method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-setmethodimplflags-method.md
+                      - name: SetMethodProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-setmethodprops-method.md
+                      - name: SetModuleProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-setmoduleprops-method.md
+                      - name: SetParamProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-setparamprops-method.md
+                      - name: SetParent method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-setparent-method.md
+                      - name: SetPermissionSetProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-setpermissionsetprops-method.md
+                      - name: SetPinvokeMap method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-setpinvokemap-method.md
+                      - name: SetPropertyProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-setpropertyprops-method.md
+                      - name: SetRVA method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-setrva-method.md
+                      - name: SetTypeDefProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-settypedefprops-method.md
+                      - name: TranslateSigWithScope method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-translatesigwithscope-method.md
+                  - name: IMetaDataEmit2 interface
+                    href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit2-interface.md
+                    items:
+                      - name: DefineGenericParam method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit2-definegenericparam-method.md
+                      - name: DefineMethodSpec method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit2-definemethodspec-method.md
+                      - name: GetDeltaSaveSize method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit2-getdeltasavesize-method.md
+                      - name: ResetENCLog method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit2-resetenclog-method.md
+                      - name: SaveDelta method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit2-savedelta-method.md
+                      - name: SaveDeltaToMemory method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit2-savedeltatomemory-method.md
+                      - name: SaveDeltaToStream method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit2-savedeltatostream-method.md
+                      - name: SetGenericParamProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit2-setgenericparamprops-method.md
+                  - name: IMetaDataError interface
+                    href: ../../core/unmanaged-api/metadata/interfaces/imetadataerror-interface.md
+                    items:
+                      - name: OnError method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataerror-onerror-method.md
+                  - name: IMetaDataFilter interface
+                    href: ../../core/unmanaged-api/metadata/interfaces/imetadatafilter-interface.md
+                    items:
+                      - name: IsTokenMarked method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatafilter-istokenmarked-method.md
+                      - name: MarkToken method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatafilter-marktoken-method.md
+                      - name: UnmarkAll method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatafilter-unmarkall-method.md
+                  - name: IMetaDataImport interface
+                    href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-interface.md
+                    items:
+                      - name: CloseEnum method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-closeenum-method.md
+                      - name: CountEnum method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-countenum-method.md
+                      - name: EnumCustomAttributes method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-enumcustomattributes-method.md
+                      - name: EnumEvents method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-enumevents-method.md
+                      - name: EnumFields method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-enumfields-method.md
+                      - name: EnumFieldsWithName method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-enumfieldswithname-method.md
+                      - name: EnumInterfaceImpls method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-enuminterfaceimpls-method.md
+                      - name: EnumMemberRefs method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-enummemberrefs-method.md
+                      - name: EnumMembers method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-enummembers-method.md
+                      - name: EnumMembersWithName method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-enummemberswithname-method.md
+                      - name: EnumMethodImpls method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-enummethodimpls-method.md
+                      - name: EnumMethods method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-enummethods-method.md
+                      - name: EnumMethodSemantics method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-enummethodsemantics-method.md
+                      - name: EnumMethodsWithName method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-enummethodswithname-method.md
+                      - name: EnumModuleRefs method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-enummodulerefs-method.md
+                      - name: EnumParams method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-enumparams-method.md
+                      - name: EnumPermissionSets method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-enumpermissionsets-method.md
+                      - name: EnumProperties method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-enumproperties-method.md
+                      - name: EnumSignatures method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-enumsignatures-method.md
+                      - name: EnumTypeDefs method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-enumtypedefs-method.md
+                      - name: EnumTypeRefs method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-enumtyperefs-method.md
+                      - name: EnumTypeSpecs method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-enumtypespecs-method.md
+                      - name: EnumUnresolvedMethods method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-enumunresolvedmethods-method.md
+                      - name: EnumUserStrings method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-enumuserstrings-method.md
+                      - name: FindField method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-findfield-method.md
+                      - name: FindMember method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-findmember-method.md
+                      - name: FindMemberRef method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-findmemberref-method.md
+                      - name: FindMethod method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-findmethod-method.md
+                      - name: FindTypeDefByName method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-findtypedefbyname-method.md
+                      - name: FindTypeRef method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-findtyperef-method.md
+                      - name: GetClassLayout method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-getclasslayout-method.md
+                      - name: GetCustomAttributeByName method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-getcustomattributebyname-method.md
+                      - name: GetCustomAttributeProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-getcustomattributeprops-method.md
+                      - name: GetEventProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-geteventprops-method.md
+                      - name: GetFieldMarshal method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-getfieldmarshal-method.md
+                      - name: GetFieldProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-getfieldprops-method.md
+                      - name: GetInterfaceImplProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-getinterfaceimplprops-method.md
+                      - name: GetMemberProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-getmemberprops-method.md
+                      - name: GetMemberRefProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-getmemberrefprops-method.md
+                      - name: GetMethodProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-getmethodprops-method.md
+                      - name: GetMethodSemantics method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-getmethodsemantics-method.md
+                      - name: GetModuleFromScope method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-getmodulefromscope-method.md
+                      - name: GetModuleRefProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-getmodulerefprops-method.md
+                      - name: GetNameFromToken method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-getnamefromtoken-method.md
+                      - name: GetNativeCallConvFromSig method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-getnativecallconvfromsig-method.md
+                      - name: GetNestedClassProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-getnestedclassprops-method.md
+                      - name: GetParamForMethodIndex method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-getparamformethodindex-method.md
+                      - name: GetParamProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-getparamprops-method.md
+                      - name: GetPermissionSetProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-getpermissionsetprops-method.md
+                      - name: GetPinvokeMap
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-getpinvokemap-method.md
+                      - name: GetPropertyProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-getpropertyprops-method.md
+                      - name: GetRVA method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-getrva-method.md
+                      - name: GetScopeProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-getscopeprops-method.md
+                      - name: GetSigFromToken method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-getsigfromtoken-method.md
+                      - name: GetTypeDefProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-gettypedefprops-method.md
+                      - name: GetTypeRefProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-gettyperefprops-method.md
+                      - name: GetTypeSpecFromToken method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-gettypespecfromtoken-method.md
+                      - name: GetUserString method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-getuserstring-method.md
+                      - name: IsGlobal method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-isglobal-method.md
+                      - name: IsValidToken method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-isvalidtoken-method.md
+                      - name: ResetEnum method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-resetenum-method.md
+                      - name: ResolveTypeRef method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-resolvetyperef-method.md
+                  - name: IMetaDataImport2 interface
+                    href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport2-interface.md
+                    items:
+                      - name: EnumGenericParamConstraints method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport2-enumgenericparamconstraints-method.md
+                      - name: EnumGenericParams method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport2-enumgenericparams-method.md
+                      - name: EnumMethodSpecs method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport2-enummethodspecs-method.md
+                      - name: GetGenericParamConstraintProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport2-getgenericparamconstraintprops-method.md
+                      - name: GetGenericParamProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport2-getgenericparamprops-method.md
+                      - name: GetMethodSpecProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport2-getmethodspecprops-method.md
+                      - name: GetPEKind method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport2-getpekind-method.md
+                      - name: GetVersionString method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport2-getversionstring-method.md
+                  - name: IMetaDataInfo interface
+                    href: ../../core/unmanaged-api/metadata/interfaces/imetadatainfo-interface.md
+                    items:
+                      - name: GetFileMapping method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatainfo-getfilemapping-method.md
+                  - name: IMetaDataTables interface
+                    href: ../../core/unmanaged-api/metadata/interfaces/imetadatatables-interface.md
+                    items:
+                      - name: GetBlob method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatatables-getblob-method.md
+                      - name: GetBlobHeapSize method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatatables-getblobheapsize-method.md
+                      - name: GetCodedTokenInfo method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatatables-getcodedtokeninfo-method.md
+                      - name: GetColumn method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatatables-getcolumn-method.md
+                      - name: GetColumnInfo method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatatables-getcolumninfo-method.md
+                      - name: GetGuid method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatatables-getguid-method.md
+                      - name: GetGuidHeapSize method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatatables-getguidheapsize-method.md
+                      - name: GetNextBlob method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatatables-getnextblob-method.md
+                      - name: GetNextGuid method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatatables-getnextguid-method.md
+                      - name: GetNextString method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatatables-getnextstring-method.md
+                      - name: GetNextUserString method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatatables-getnextuserstring-method.md
+                      - name: GetNumTables method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatatables-getnumtables-method.md
+                      - name: GetRow method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatatables-getrow-method.md
+                      - name: GetString method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatatables-getstring-method.md
+                      - name: GetStringHeapSize method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatatables-getstringheapsize-method.md
+                      - name: GetTableIndex method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatatables-gettableindex-method.md
+                      - name: GetTableInfo method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatatables-gettableinfo-method.md
+                      - name: GetUserString method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatatables-getuserstring-method.md
+                      - name: GetUserStringHeapSize method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatatables-getuserstringheapsize-method.md
+                  - name: IMetaDataTables2 interface
+                    href: ../../core/unmanaged-api/metadata/interfaces/imetadatatables2-interface.md
+                    items:
+                      - name: GetMetaDataStorage method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatatables2-getmetadatastorage-method.md
+                      - name: GetMetaDataStreamInfo method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatatables2-getmetadatastreaminfo-method.md
+                  - name: IMetaDataValidate interface
+                    href: ../../core/unmanaged-api/metadata/interfaces/imetadatavalidate-interface.md
+                    items:
+                      - name: ValidateMetaData method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatavalidate-validatemetadata-method.md
+                      - name: ValidatorInit method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatavalidate-validatorinit-method.md
+              - name: Structures
+                items:
+                  - name: Overview
+                    href: ../../core/unmanaged-api/metadata/structures/metadata-structures.md
+                  - name: ASSEMBLYMETADATA structure
+                    href: ../../core/unmanaged-api/metadata/structures/assemblymetadata-structure.md
+                  - name: COR_FIELD_OFFSET structure
+                    href: ../../core/unmanaged-api/metadata/structures/cor-field-offset-structure.md
+                  - name: OSINFO structure
+                    href: ../../core/unmanaged-api/metadata/structures/osinfo-structure.md
           - name: Profiling
             items:
               - name: Overview
@@ -951,6 +1446,8 @@ items:
                     href: ../../fundamentals/code-analysis/quality-rules/ca1514.md
                   - name: CA1515
                     href: ../../fundamentals/code-analysis/quality-rules/ca1515.md
+                  - name: CA1516
+                    href: ../../fundamentals/code-analysis/quality-rules/ca1516.md
               - name: Naming rules
                 items:
                   - name: Overview

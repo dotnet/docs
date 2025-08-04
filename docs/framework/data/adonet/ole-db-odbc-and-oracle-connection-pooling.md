@@ -2,6 +2,7 @@
 description: "Learn more about: OLE DB, ODBC, and Oracle connection pooling, which can significantly enhance the performance and scalability of your application."
 title: "OLE DB, ODBC, and Oracle Connection Pooling"
 ms.date: "03/30/2017"
+ms.custom: sfi-ropc-nochange
 ---
 # OLE DB, ODBC, and Oracle connection pooling
 

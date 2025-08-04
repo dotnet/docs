@@ -2,6 +2,7 @@
 description: "Learn more about generating code to represent a database by using either the Object Relational Designer or the SQLMetal command-line tool."
 title: "Code Generation in LINQ to SQL"
 ms.date: "03/30/2017"
+ms.custom: sfi-ropc-nochange
 ---
 # Code generation in LINQ to SQL
 

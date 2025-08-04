@@ -22,7 +22,7 @@ Before you begin, ensure you have:
 
 - A GitHub account with [GitHub Copilot](https://github.com/features/copilot) enabled (Pro, Pro+, Business, or Enterprise plan required)
 - [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/) version 17.14.7 or later
-- Agent mode enabled for GitHub Copilot in Visual Studio ([Learn how](/visualstudio/ide/copilot-agent-mode?view=vs-2022))
+- Agent mode enabled for GitHub Copilot in Visual Studio ([Learn how](/visualstudio/ide/copilot-agent-mode))
 
 ### Sign-in to GitHub Copilot
 
@@ -31,7 +31,7 @@ GitHub Copilot is a dependency of the App Modernization Extension and experience
 1. Select the Copilot icon at the top of Visual Studio to open the GitHub Copilot pane.
 1. Follow the UI prompts to sign-in to Copilot.
 
-For more information, see [Set up GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states?view=vs-2022).
+For more information, see [Set up GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states).
 
 ## Install the GitHub Copilot app modernization extension
 
@@ -45,7 +45,7 @@ To complete the steps ahead, you need to install the GitHub Copilot app moderniz
 
 You can also view the [GitHub Copilot app modernization for .NET (Preview)](https://aka.ms/appmod-dotnet-marketplace) extension directly on the extension marketplace.
 
-For more information, see [Find, install, and manage extensions for Visual Studio](/visualstudio/ide/finding-and-using-visual-studio-extensions?view=vs-2022).
+For more information, see [Find, install, and manage extensions for Visual Studio](/visualstudio/ide/finding-and-using-visual-studio-extensions).
 
 ## Assess application readiness
 
@@ -57,13 +57,13 @@ App Modernization for .NET assessment helps you identify your application readin
 
    - **Solution explorer**
 
-    Right-click the top-level solution node, then select `GitHub Copilot app modernization for .NET` > `Run Assessment`.  
+    Right-click the top-level solution node, then select `GitHub Copilot app modernization for .NET` > `Run Assessment`.
 
     :::image type="content" source="media/solution-start-assessment.png" alt-text="A screenshot showing how to start the assessment through the solution explorer.":::
 
    - **Top navigation**
 
-    On the top menu, go to `Extensions` > `GitHub Copilot app modernization for .NET` > `Run Assessment`.  
+    On the top menu, go to `Extensions` > `GitHub Copilot app modernization for .NET` > `Run Assessment`.
 
     :::image type="content" source="media/extension-start-assessment.png" alt-text="A screenshot showing how to start the assessment from the top navigation.":::
 

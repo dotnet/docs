@@ -1,62 +1,50 @@
 ---
 description: "Learn more about: AssemblyFlags Enumeration"
 title: "AssemblyFlags Enumeration"
-ms.date: "03/30/2017"
-api_name: 
+ms.date: 07/28/2025
+api_name:
   - "AssemblyFlags"
-api_location: 
+api_location:
   - "mscoree.dll"
-api_type: 
+api_type:
   - "COM"
-f1_keywords: 
+f1_keywords:
   - "AssemblyFlags"
-helpviewer_keywords: 
-  - "AssemblyFlags enumeration [.NET Framework metadata]"
-ms.assetid: 40f9bd9e-16ec-447e-81b0-168c875e9866
-topic_type: 
+topic_type:
   - "apiref"
 ---
 # AssemblyFlags Enumeration
 
-Contains values that describe run-time features of an assembly.  
-  
-## Syntax  
-  
-```cpp  
-typedef enum {  
-    afImplicitExportedTypes = 0x0001,  
-    afImplicitResources = 0x0002,  
-    afNonSideBySideAppDomain = 0x0010,  
-    afNonSideBySideProcess = 0x0020,  
-    afNonSideBySideMachine = 0x0030  
-} AssemblyFlags;  
-```  
-  
-## Members  
-  
-|Member|Description|  
-|------------|-----------------|  
-|`afImplicitExportedTypes`|Specifies that exported type definitions are implicit within the files that comprise the assembly. In the .NET Framework versions 1.0 and 1.1, this value is always assumed to be set.|  
-|`afImplicitResources`|Specifies that resource definitions are implicit within the files that comprise the assembly. In the .NET Framework 1.0 and 1.1, this value is always assumed to be set.|  
-|`afNonSideBySideAppDomain`|Specifies that the assembly cannot execute with other versions if they are running in the same application domain.|  
-|`afNonSideBySideProcess`|Specifies that the assembly cannot execute with other versions if they are running in the same process.|  
-|`afNonSideBySideMachine`|Specifies that the assembly cannot execute with other versions if they are running on the same computer.|  
-  
-## Remarks  
+Contains values that describe run-time features of an assembly.
 
- The values between 0x0010 and 0x0070, inclusive, are used to describe side-by-side compatibility features of the referenced assembly. If none of these values are set, the assembly is assumed to be side-by-side compatible.  
-  
-## Requirements  
+## Syntax
 
- **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
-  
- **Header:** MsCorEE.h  
-  
- **Library:** Included as a resource in MsCorEE.dll  
-  
- **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
-  
-## See also
+```cpp
+typedef enum _AssemblyFlags {
+    afNone              = 0x00000000,
+    afInMemory          = 0x00000001,
+    afCleanModules      = 0x00000002,
+    afNoRefHash         = 0x00000004,
+    afNoDupTypeCheck    = 0x00000008,
+    afDupeCheckTypeFwds = 0x00000010,
+} AssemblyFlags;
+```
 
-- [Metadata Enumerations](metadata-enumerations.md)
-- [IMetaDataAssemblyEmit Interface](imetadataassemblyemit-interface.md)
+## Members
+
+| Member             | Description                                                         |
+|--------------------|---------------------------------------------------------------------|
+| `afNone`           | Normal case.                                                        |
+| `afInMemory`       | An InMemory single-file assembly the filename == AssemblyName.      |
+| `afCleanModules`   | Use DeleteToken and Merging to remove the AssemblyAttributesGoHere. |
+| `afNoRefHash`      | Do not generate hashes for AssemblyRefs.                            |
+| `afNoDupTypeCheck` | Do not check for duplicate types (ExportedType table + manifest file's TypeDef table). |
+| `afDupeCheckTypeFwds` | Do dupe checking for type forwarders. This is so you can specify afNoDupTypeCheck for regular typedefs + afDupeCheckTypeFwds. |
+
+## Requirements
+
+ **Platforms:** See [.NET supported operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md).
+
+ **Header:** MsCorEE.h
+
+ **Library:** Included as a resource in MsCorEE.dll

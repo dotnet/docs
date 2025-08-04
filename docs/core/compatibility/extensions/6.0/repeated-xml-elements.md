@@ -2,6 +2,7 @@
 title: "Breaking change: Repeated XML elements include index"
 description: Learn about the .NET 6 breaking change where repeated XML elements now include an index key when using Microsoft.Extensions.Configuration.Xml.
 ms.date: 10/04/2022
+ms.custom: sfi-ropc-nochange
 ---
 # Repeated XML elements include index
 

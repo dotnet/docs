@@ -6,6 +6,7 @@ ms.author: dapine
 ms.date: 12/13/2023
 ms.topic: tutorial
 zone_pivot_groups: development-environment-one
+ms.custom: sfi-image-nochange
 ---
 
 # Deploy a Worker Service to Azure

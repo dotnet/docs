@@ -5,6 +5,7 @@ ms.topic: concept-article
 ms.date: 10/09/2024
 author: alexwolfmsft
 ms.author: alexwolf
+ms.custom: sfi-image-nochange
 ---
 
 # Use Copilot Conversational Assessment with the Azure Migrate application and code assessment tool

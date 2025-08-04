@@ -18,9 +18,9 @@ namespace anonymous_types
     {
         static void Main()
         {
-            // don't show this unless you add a bunch more
-            // properties to the type. otherwise it obviates the
-            // need for the anonymous type
+            // Don't show this unless you add a bunch more
+            // properties to the type. Otherwise it obviates the
+            // need for the anonymous type.
             List<Product> products = new ()
             {
                 new Product() { Color="Orange", Price=2.00M},
@@ -52,15 +52,15 @@ namespace anonymous_types
             // </Snippet03>
 
             // <ProjectionInitializers>
-            // Explicit member names
+            // Explicit member names.
             var personExplicit = new { FirstName = "Kyle", LastName = "Mit" };
             
-            // Projection initializers (inferred member names)
+            // Projection initializers (inferred member names).
             var firstName = "Kyle";
             var lastName = "Mit";
             var personInferred = new { firstName, lastName };
             
-            // Both create equivalent anonymous types with the same property names
+            // Both create equivalent anonymous types with the same property names.
             Console.WriteLine($"Explicit: {personExplicit.FirstName} {personExplicit.LastName}");
             Console.WriteLine($"Inferred: {personInferred.firstName} {personInferred.lastName}");
             // </ProjectionInitializers>
@@ -70,7 +70,7 @@ namespace anonymous_types
             var department = "Engineering";
             var salary = 75000;
             
-            // Using projection initializers
+            // Using projection initializers.
             var employee = new { title, department, salary };
             
             // Equivalent to explicit syntax:

@@ -214,7 +214,7 @@ hats-sold recorded measurement 912
 ...
 ```
 
-### Explaining the sample code
+### Sample code explanation
 
 The code snippets in this section come from the preceding sample.
 

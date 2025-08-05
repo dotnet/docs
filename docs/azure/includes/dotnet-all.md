@@ -416,6 +416,7 @@
 | Unknown Display Name | NuGet [0.11.0](https://www.nuget.org/packages/Azure.Iot.Operations.Connector/0.11.0) |  |  |
 | Unknown Display Name | NuGet [1.1.2-preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.AzureCosmosDb.Mongo/1.1.2-preview) |  |  |
 | Unknown Display Name | NuGet [1.45.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.MAS/1.45.0) |  |  |
+| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Extensions.Caching.Postgres/1.0.0) |  |  |
 | WebJobs Extension MySQL | NuGet [1.0.129](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.MySql/1.0.129) |  |  |
 | Anomaly Detector | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.AnomalyDetector/1.0.0) |  | GitHub [1.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.AnomalyDetector_1.0.0-preview.1/sdk/cognitiveservices/AnomalyDetector) |
 | App Service | NuGet [0.2.2-alpha](https://www.nuget.org/packages/Microsoft.Azure.AppService/0.2.2-alpha) |  |  |
@@ -574,12 +575,12 @@
 | Microsoft.Azure.WebJobs.Extensions.Rpc | NuGet [3.0.41](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Rpc/3.0.41) |  |  |
 | Microsoft.Azure.WebJobs.Rpc.Core | NuGet [3.0.41](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Rpc.Core/3.0.41) |  |  |
 | Service Bus - Message ID plugin | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.ServiceBus.MessageIdPlugin/2.0.0) |  |  |
-| SignalR | NuGet [1.30.3](https://www.nuget.org/packages/Microsoft.Azure.SignalR/1.30.3)<br>NuGet [1.25.0-preview1-11147](https://www.nuget.org/packages/Microsoft.Azure.SignalR/1.25.0-preview1-11147) |  | GitHub [1.30.3](https://github.com/Azure/azure-signalr/tree/v1.5.0/src/Microsoft.Azure.SignalR) |
-| SignalR - ASP.NET | NuGet [1.30.3](https://www.nuget.org/packages/Microsoft.Azure.SignalR.AspNet/1.30.3) |  | GitHub [1.30.3](https://github.com/Azure/azure-signalr/tree/v1.5.0/src/Microsoft.Azure.SignalR.AspNet) |
+| SignalR | NuGet [1.31.0](https://www.nuget.org/packages/Microsoft.Azure.SignalR/1.31.0)<br>NuGet [1.25.0-preview1-11147](https://www.nuget.org/packages/Microsoft.Azure.SignalR/1.25.0-preview1-11147) |  | GitHub [1.31.0](https://github.com/Azure/azure-signalr/tree/v1.5.0/src/Microsoft.Azure.SignalR) |
+| SignalR - ASP.NET | NuGet [1.31.0](https://www.nuget.org/packages/Microsoft.Azure.SignalR.AspNet/1.31.0) |  | GitHub [1.31.0](https://github.com/Azure/azure-signalr/tree/v1.5.0/src/Microsoft.Azure.SignalR.AspNet) |
 | SignalR - Benchmark | NuGet [1.0.0-preview1-10415](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Benchmark/1.0.0-preview1-10415) |  | GitHub [1.0.0-preview1-10415](https://github.com/azure/azure-signalr-bench) |
-| SignalR - Protocols | NuGet [1.30.3](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Protocols/1.30.3) |  | GitHub [1.30.3](https://github.com/Azure/azure-signalr/tree/v1.5.0/src/Microsoft.Azure.SignalR.Protocols) |
+| SignalR - Protocols | NuGet [1.31.0](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Protocols/1.31.0) |  | GitHub [1.31.0](https://github.com/Azure/azure-signalr/tree/v1.5.0/src/Microsoft.Azure.SignalR.Protocols) |
 | SignalR - Serverless Protocols | NuGet [1.11.0](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Serverless.Protocols/1.11.0) |  | GitHub [1.11.0](https://github.com/Azure/azure-functions-signalrservice-extension/tree/v1.2.0/src/Microsoft.Azure.SignalR.Serverless.Protocols) |
-| SignalR Management | NuGet [1.30.3](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Management/1.30.3) |  | GitHub [1.30.3](https://github.com/Azure/azure-signalr/tree/v1.5.0/src/Microsoft.Azure.SignalR.Management) |
+| SignalR Management | NuGet [1.31.0](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Management/1.31.0) |  | GitHub [1.31.0](https://github.com/Azure/azure-signalr/tree/v1.5.0/src/Microsoft.Azure.SignalR.Management) |
 | SQL Database Elastic Scale Client | NuGet [2.4.2](https://www.nuget.org/packages/Microsoft.Azure.SqlDatabase.ElasticScale.Client/2.4.2) |  | GitHub [2.4.2](https://github.com/Azure/elastic-db-tools/tree/v2.3.0/Src/ElasticScale.Client) |
 | SQL Database Elastic Scale Service SplitMerge | NuGet [1.2.0](https://www.nuget.org/packages/Microsoft.Azure.SqlDatabase.ElasticScale.Service.SplitMerge/1.2.0) |  |  |
 | SQL Database Jobs | NuGet [0.8.3362.1](https://www.nuget.org/packages/Microsoft.Azure.SqlDatabase.Jobs/0.8.3362.1) |  |  |

@@ -3,7 +3,7 @@ using System;
 namespace CS0759Examples
 {
     // <IncorrectExample>
-    // This will cause CS0759: No defining declaration found for implementing declaration of partial method
+    // This will cause CS0759: No defining declaration found for implementing declaration of partial method.
     // Uncomment the class below to see the CS0759 error:
     /*
     public partial class ExampleClass

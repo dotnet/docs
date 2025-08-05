@@ -167,6 +167,71 @@ If your program needs the result of a task, write code that implements the `awai
 | _Continue when **all** tasks complete_     | `Task.WaitAll`               | `await Task.WhenAll` |
 | _Continue after some amount of time_       | `Thread.Sleep`               | `await Task.Delay`   |
 
+### Synchronous access to asynchronous operations
+
+In rare scenarios, you might need to block on asynchronous operations when the `await` keyword isn't available throughout your call stack. This situation commonly occurs in legacy codebases or when integrating asynchronous methods into synchronous APIs that can't be changed.
+
+> [!WARNING]
+> Synchronous blocking on asynchronous operations can lead to deadlocks and should be avoided whenever possible. The preferred solution is to use `async`/`await` throughout your call stack.
+
+When you must block synchronously on a `Task`, here are the available approaches, listed from most to least preferred:
+
+#### Use GetAwaiter().GetResult()
+
+The `GetAwaiter().GetResult()` pattern is generally the preferred approach when you must block synchronously:
+
+```csharp
+// When you cannot use await
+Task<string> task = GetDataAsync();
+string result = task.GetAwaiter().GetResult();
+```
+
+This approach:
+
+- Preserves the original exception without wrapping it in an `AggregateException`
+- Blocks the current thread until the task completes
+- Still carries deadlock risk if not used carefully
+
+#### Use Task.Run for complex scenarios
+
+For complex scenarios where you need to isolate the asynchronous work:
+
+```csharp
+// Offload to thread pool to avoid context deadlocks
+string result = Task.Run(async () => await GetDataAsync()).GetAwaiter().GetResult();
+```
+
+This pattern:
+
+- Executes the asynchronous method on a thread pool thread
+- Can help avoid some deadlock scenarios
+- Adds overhead by scheduling work to the thread pool
+
+#### Avoid Wait() and Result
+
+These blocking approaches are discouraged:
+
+```csharp
+// Discouraged: Wraps exceptions in AggregateException
+Task<string> task = GetDataAsync();
+task.Wait();
+string result = task.Result;
+```
+
+Problems with `Wait()` and `Result`:
+
+- Exceptions are wrapped in `AggregateException`, making error handling more complex
+- Higher deadlock risk
+- Less clear intent in code
+
+#### Additional considerations
+
+- **Deadlock prevention**: Be especially careful in UI applications or when using a synchronization context
+- **Performance impact**: Blocking threads reduces scalability
+- **Exception handling**: Test error scenarios carefully as exception behavior differs between patterns
+
+For more detailed guidance on the challenges and considerations of synchronous wrappers for asynchronous methods, see [Should I expose synchronous wrappers for asynchronous methods?](https://devblogs.microsoft.com/pfxteam/should-i-expose-synchronous-wrappers-for-asynchronous-methods/).
+
 ### Consider using ValueTask type
 
 When an asynchronous method returns a `Task` object, performance bottlenecks might be introduced in certain paths. Because `Task` is a reference type, a `Task` object is allocated from the heap. If a method declared with the `async` modifier returns a cached result or completes synchronously, the extra allocations can accrue significant time costs in performance critical sections of code. This scenario can become costly when the allocations occur in tight loops. For more information, see [generalized async return types](../language-reference/keywords/async.md#return-types).

@@ -50,6 +50,8 @@ items:
                 href: cryptography/10.0/x509-publickey-null.md
           - name: Extensions
             items:
+              - name: "Preserving null values in configuration"
+                href: extensions/10.0/configuration-null-values-preserved.md
               - name: "ProviderAliasAttribute moved to Microsoft.Extensions.Logging.Abstractions assembly"
                 href: extensions/10.0/provideraliasattribute-moved-assembly.md
               - name: "Removed DynamicallyAccessedMembers annotation from trim-unsafe Microsoft.Extensions.Configuration code"

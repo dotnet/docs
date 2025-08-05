@@ -18,35 +18,13 @@ You can control many aspects of the generated container through MSBuild properti
 
 There's no way of performing `RUN` commands with the .NET SDK. These commands are often used to install some OS packages or create a new OS user, or any number of arbitrary things. If you would like to keep using the .NET SDK container building feature, you can instead create a custom base image with these changes and then using this base image. For more information, see [`ContainerBaseImage`](#containerbaseimage).
 
-The following sections organize container properties by their primary purpose to improve readability and navigation.
-
-### Container image naming configuration
-
-Container images follow a specific naming convention. The name of the image is composed of several parts, the registry, optional port, repository, and optional tag and family.
-
-```dockerfile
-REGISTRY[:PORT]/REPOSITORY[:TAG[-FAMILY]]
-```
-
-For example, consider the fully qualified `mcr.microsoft.com/dotnet/runtime:8.0-alpine` image name:
-
-- `mcr.microsoft.com` is the registry (and in this case represents the Microsoft container registry).
-- `dotnet/runtime` is the repository (but some consider this the `user/repository`).
-- `8.0-alpine` is the tag and family (the family is an optional specifier that helps disambiguate OS packaging).
-
-Some properties described in the following sections correspond to managing parts of the generated image name. Consider the following table that maps the relationship between the image name and the build properties:
-
-| Image name part   | MSBuild property      | Example values          |
-| ----------------- | --------------------- | ----------------------- |
-| `REGISTRY[:PORT]` | `ContainerRegistry`   | `mcr.microsoft.com:443` |
-| `PORT`            | `ContainerPort`       | `:443`                  |
-| `REPOSITORY`      | `ContainerRepository` | `dotnet/runtime`        |
-| `TAG`             | `ContainerImageTag`   | `8.0`                   |
-| `FAMILY`          | `ContainerFamily`     | `-alpine`               |
-
 ## Flags that control the base image
 
-The following properties control which base image is used for your container and how it's selected.
+The following properties control which base image is used for your container and how it's selected:
+
+- [`ContainerBaseImage`](#containerbaseimage)
+- [`ContainerFamily`](#containerfamily)
+- [`ContainerRuntimeIdentifier(s)`](#containerruntimeidentifiers)
 
 ### `ContainerBaseImage`
 
@@ -109,15 +87,44 @@ To specify multiple container runtime identifiers for multi-architecture images,
 ```
 
 > [!IMPORTANT]
-> The `ContainerRuntimeIdentifiers` property must be a subset of the `RuntimeIdentifiers` property. If this condition isn't met, critical parts of the build pipeline may fail.
+> The `ContainerRuntimeIdentifiers` property must be a subset of the `RuntimeIdentifiers` property. If this condition isn't met, critical parts of the build pipeline might fail.
 >
 > Setting multiple `ContainerRuntimeIdentifiers` results in a multi-architecture image being created. For more information, see [Multi-architecture images](#multi-architecture-images).
 
 For more information regarding the runtime identifiers supported by .NET, see [RID catalog](../rid-catalog.md).
 
+#### Multi-architecture images
+
+Multi-architecture images enable a single container image to support multiple architectures, simplifying cross-platform development and deployment. The .NET SDK supports this through the `ContainerRuntimeIdentifiers` property.
+
+Beginning with SDK versions 8.0.405, 9.0.102, and 9.0.2xx, multi-RID container publishing is supported. When publishing with `/t:PublishContainer`:
+
+- If a single `RuntimeIdentifier` or `ContainerRuntimeIdentifier` is specified, a single-architecture container is generated as before.
+- If no single `RuntimeIdentifier` is specified but multiple `RuntimeIdentifiers` or `ContainerRuntimeIdentifiers` are set, the SDK publishes the app for each specified RID and combines the resulting images into an [OCI Image Index](https://specs.opencontainers.org/image-spec/image-index/). This index allows multiple architecture-specific images to share a single name.
+
+> [!NOTE]
+> The `ContainerRuntimeIdentifiers` property must be a subset of the `RuntimeIdentifiers` property. For more information, see [ContainerRuntimeIdentifiers](#containerruntimeidentifiers).
+
+This feature streamlines container workflows in mixed-architecture environments. For example, a developer on a `linux-x64` host can publish a container supporting both `linux-x64` and `linux-arm64`, enabling deployment to either architecture without changing image names or labels.
+
+The generated OCI Image Index is widely supported with modern container tooling, enhancing compatibility and ease of use.
+
 ## Flags that control generated-image-independent metadata
 
-The following properties control metadata and configuration that applies to the generated container image regardless of the target runtime identifier.
+The following properties control metadata and configuration that applies to the generated container image regardless of the target runtime identifier:
+
+- [`ContainerAppCommand`](#containerappcommand)
+- [`ContainerAppCommandArgs`](#containerappcommandargs)
+- [`ContainerAppCommandInstruction`](#containerappcommandinstruction)
+- [`ContainerDefaultArgs`](#containerdefaultargs)
+- [`ContainerEnvironmentVariable`](#containerenvironmentvariable)
+- [`ContainerImageFormat`](#containerimageformat)
+- [`ContainerImageTag`](#containerimagetag)
+- [`ContainerLabel`](#containerlabel)
+- [`ContainerPort`](#containerport)
+- [`ContainerRepository`](#containerrepository)
+- [`ContainerUser`](#containeruser)
+- [`ContainerWorkingDirectory`](#containerworkingdirectory)
 
 ### `ContainerAppCommand`
 
@@ -214,7 +221,7 @@ For more information, see [.NET environment variables](../tools/dotnet-environme
 
 ### `ContainerImageFormat`
 
-Starting with .NET 8.0.405, you can use the `ContainerImageFormat` MSBuild property to specify the image format as either `Docker` or `OCI`. By default, the .NET tooling infers the format from the base image. For example, .NET base images use the Docker-specific format `application/vnd.docker.distribution.manifest.v2+json`. However, many modern tools prefer the OCI format `application/vnd.oci.image.manifest.v1+json`. To force a specific format, set the property as shown:
+You can use the `ContainerImageFormat` MSBuild property to specify the image format as either `Docker` or `OCI`. By default, the .NET tooling infers the format from the base image. For example, .NET base images use the Docker-specific format `application/vnd.docker.distribution.manifest.v2+json`. However, many modern tools prefer the OCI format `application/vnd.oci.image.manifest.v1+json`. To force a specific format, set the property as shown:
 
 ```xml
 <PropertyGroup>
@@ -382,35 +389,15 @@ By default, the `/app` directory value is used as the working directory.
 </PropertyGroup>
 ```
 
-### Default container labels
-
-Labels are often used to provide consistent metadata on container images. The built-in container tools provide some default labels to increase the quality of the generated images. All default label generation can be disabled by setting `ContainerGenerateLabels` to `false`. In addition, each default label has an  individual enablement flag that can be set to `false` to disable that specific label.
-
-Where possible, existing MSBuild properties provide the values for these labels. Other properties allow for explicit control of their values.
-
-| Annotation                                                                           | Default Value                                                                                      | Dedicated Property Name      | Fallback Property Name     | Enabled Property Name                       | Notes                                                                                                               |
-| ------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------- | ---------------------------- | -------------------------- | ------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| `org.opencontainers.image.created` and `org.opencontainers.artifact.created`         | The [RFC 3339](https://tools.ietf.org/html/rfc3339#section-5.6) format of the current UTC DateTime |                              |                            | `ContainerGenerateLabelsImageCreated`       |                                                                                                                     |
-| `org.opencontainers.artifact.description` and `org.opencontainers.image.description` |                                                                                                    | `ContainerDescription`       | `Description`              | `ContainerGenerateLabelsImageDescription`   |                                                                                                                     |
-| `org.opencontainers.image.authors`                                                   |                                                                                                    | `ContainerAuthors`           | `Authors`                  | `ContainerGenerateLabelsImageAuthors`       |                                                                                                                     |
-| `org.opencontainers.image.url`                                                       |                                                                                                    | `ContainerInformationUrl`    | `PackageProjectUrl`        | `ContainerGenerateLabelsImageUrl`           |                                                                                                                     |
-| `org.opencontainers.image.documentation`                                             |                                                                                                    | `ContainerDocumentationUrl`  | `PackageProjectUrl`        | `ContainerGenerateLabelsImageDocumentation` |                                                                                                                     |
-| `org.opencontainers.image.version`                                                   |                                                                                                    | `ContainerVersion`           | `PackageVersion`           | `ContainerGenerateLabelsImageVersion`       |                                                                                                                     |
-| `org.opencontainers.image.vendor`                                                    |                                                                                                    | `ContainerVendor`            |                            | `ContainerGenerateLabelsImageVendor`        |                                                                                                                     |
-| `org.opencontainers.image.licenses`                                                  |                                                                                                    | `ContainerLicenseExpression` | `PackageLicenseExpression` | `ContainerGenerateLabelsImageLicenses`      |                                                                                                                     |
-| `org.opencontainers.image.title`                                                     |                                                                                                    | `ContainerTitle`             | `Title`                    | `ContainerGenerateLabelsImageTitle`         |                                                                                                                     |
-| `org.opencontainers.image.base.name`                                                 |                                                                                                    | `ContainerBaseImage`         |                            | `ContainerGenerateLabelsImageBaseName`      |                                                                                                                     |
-| `org.opencontainers.image.base.digest`                                               |                                                                                                    |                              |                            | `ContainerGenerateLabelsImageBaseDigest`    | This is the SHA digest of the chosen base image. Available from .NET SDK 9.0.100 onwards.                      |
-| `org.opencontainers.image.source`                                                    |                                                                                                    | `PrivateRepositoryUrl`       |                            | `ContainerGenerateLabelsImageSource`        | Only written if `PublishRepositoryUrl` is `true`. Also relies on Sourcelink infrastructure being part of the build. |
-| `org.opencontainers.image.revision`                                                  |                                                                                                    | `SourceRevisionId`           |                            | `ContainerGenerateLabelsImageRevision`      | Only written if `PublishRepositoryUrl` is `true`. Also relies on Sourcelink infrastructure being part of the build. |
-
 ## Flags that control execution metadata
 
 The following properties control runtime-specific execution behavior and multi-architecture image generation.
 
+- [`ContainerPublishInParallel`](#containerpublishinparallel)
+
 ### `ContainerPublishInParallel`
 
-For multi-RID containers, certain project types (like Blazor WebAssembly) may encounter build race conditions. To address this, starting with .NET SDK versions 8.0.408, 9.0.300, and 10.0, you can control the parallelism of the publish process using the `ContainerPublishInParallel` property. By default, publishing occurs in parallel for each Runtime Identifier (RID). Setting this property to `false` ensures sequential publishing, which increases stability but may take longer.
+For multi-RID containers, certain project types (like Blazor WebAssembly) might encounter build race conditions. To address this, starting with .NET SDK versions 8.0.408, 9.0.300, and 10.0, you can control the parallelism of the publish process using the `ContainerPublishInParallel` property. By default, publishing occurs in parallel for each Runtime Identifier (RID). Setting this property to `false` ensures sequential publishing, which increases stability but might take longer.
 
 ```xml
 <PropertyGroup>
@@ -420,25 +407,13 @@ For multi-RID containers, certain project types (like Blazor WebAssembly) may en
 
 For more information on multi-RID publishing, see [ContainerRuntimeIdentifier(s)](#containerruntimeidentifiers).
 
-### Multi-architecture images
+## Flags that control the destination of the generated image
 
-Multi-architecture images enable a single container image to support multiple architectures, simplifying cross-platform development and deployment. The .NET SDK supports this through the `ContainerRuntimeIdentifiers` property.
+The following properties control where the generated container image is stored or published:
 
-Beginning with SDK versions 8.0.405, 9.0.102, and 9.0.2xx, multi-RID container publishing is supported. When publishing with `/t:PublishContainer`:
-
-- If a single `RuntimeIdentifier` or `ContainerRuntimeIdentifier` is specified, a single-architecture container is generated as before.
-- If no single `RuntimeIdentifier` is specified but multiple `RuntimeIdentifiers` or `ContainerRuntimeIdentifiers` are set, the SDK publishes the app for each specified RID and combines the resulting images into an [OCI Image Index](https://specs.opencontainers.org/image-spec/image-index/). This index allows multiple architecture-specific images to share a single name.
-
-> [!NOTE]
-> The `ContainerRuntimeIdentifiers` property must be a subset of the `RuntimeIdentifiers` property. For more information, see [ContainerRuntimeIdentifiers](#containerruntimeidentifiers).
-
-This feature streamlines container workflows in mixed-architecture environments. For example, a developer on a `linux-x64` host can publish a container supporting both `linux-x64` and `linux-arm64`, enabling deployment to either architecture without changing image names or labels.
-
-The generated OCI Image Index is widely supported with modern container tooling, enhancing compatibility and ease of use.
-
-## Flags that control the destination of the generated image(s)
-
-The following properties control where the generated container image is stored or published.
+- [`ContainerArchiveOutputPath`](#containerarchiveoutputpath)
+- [`ContainerRegistry`](#containerregistry)
+- [`LocalRegistry`](#localregistry)
 
 ### `ContainerArchiveOutputPath`
 
@@ -492,6 +467,52 @@ To explicitly set the local registry tool, use the following configuration:
   <LocalRegistry>podman</LocalRegistry>
 </PropertyGroup>
 ```
+
+## Container image naming configuration
+
+Container images follow a specific naming convention. The name of the image is composed of several parts, the registry, optional port, repository, and optional tag and family.
+
+```dockerfile
+REGISTRY[:PORT]/REPOSITORY[:TAG[-FAMILY]]
+```
+
+For example, consider the fully qualified `mcr.microsoft.com/dotnet/runtime:8.0-alpine` image name:
+
+- `mcr.microsoft.com` is the registry (and in this case represents the Microsoft container registry).
+- `dotnet/runtime` is the repository (but some consider this the `user/repository`).
+- `8.0-alpine` is the tag and family (the family is an optional specifier that helps disambiguate OS packaging).
+
+Some properties described in the following sections correspond to managing parts of the generated image name. Consider the following table that maps the relationship between the image name and the build properties:
+
+| Image name part   | MSBuild property      | Example values          |
+| ----------------- | --------------------- | ----------------------- |
+| `REGISTRY[:PORT]` | `ContainerRegistry`   | `mcr.microsoft.com:443` |
+| `PORT`            | `ContainerPort`       | `:443`                  |
+| `REPOSITORY`      | `ContainerRepository` | `dotnet/runtime`        |
+| `TAG`             | `ContainerImageTag`   | `8.0`                   |
+| `FAMILY`          | `ContainerFamily`     | `-alpine`               |
+
+## Default container labels
+
+Labels are often used to provide consistent metadata on container images. The built-in container tools provide some default labels to increase the quality of the generated images. All default label generation can be disabled by setting `ContainerGenerateLabels` to `false`. In addition, each default label has an individual enablement flag that can be set to `false` to disable that specific label.
+
+Where possible, existing MSBuild properties provide the values for these labels. Other properties allow for explicit control of their values.
+
+| Annotation | Default value | Dedicated property name | Fallback property name | Enabled property name | Notes |
+|------------|---------------|-------------------------|------------------------|-----------------------|-------|
+| `org.opencontainers.image.created` and `org.opencontainers.artifact.created` | The [RFC 3339](https://tools.ietf.org/html/rfc3339#section-5.6) format of the current UTC DateTime | | | `ContainerGenerateLabelsImageCreated` | |
+| `org.opencontainers.artifact.description` and `org.opencontainers.image.description` | | `ContainerDescription` | `Description` | `ContainerGenerateLabelsImageDescription` | |
+| `org.opencontainers.image.authors` | | `ContainerAuthors` | `Authors` | `ContainerGenerateLabelsImageAuthors` | |
+| `org.opencontainers.image.url` | | `ContainerInformationUrl` | `PackageProjectUrl` | `ContainerGenerateLabelsImageUrl` | |
+| `org.opencontainers.image.documentation` |                                                                                                    | `ContainerDocumentationUrl`  | `PackageProjectUrl` | `ContainerGenerateLabelsImageDocumentation` | |
+| `org.opencontainers.image.version` | | `ContainerVersion` | `PackageVersion` | `ContainerGenerateLabelsImageVersion` | |
+| `org.opencontainers.image.vendor` | | `ContainerVendor` | | `ContainerGenerateLabelsImageVendor` | |
+| `org.opencontainers.image.licenses` |                                                                                                    | `ContainerLicenseExpression` | `PackageLicenseExpression` | `ContainerGenerateLabelsImageLicenses` | |
+| `org.opencontainers.image.title` | | `ContainerTitle` | `Title` | `ContainerGenerateLabelsImageTitle` | |
+| `org.opencontainers.image.base.name` | | `ContainerBaseImage` | |`ContainerGenerateLabelsImageBaseName` | |
+| `org.opencontainers.image.base.digest` | | | | `ContainerGenerateLabelsImageBaseDigest` | This is the SHA digest of the chosen base image. Available from .NET SDK 9.0.100 onwards. |
+| `org.opencontainers.image.source` |                                                                                                    | `PrivateRepositoryUrl` | | `ContainerGenerateLabelsImageSource` | Only written if `PublishRepositoryUrl` is `true`. Also relies on Sourcelink infrastructure being part of the build. |
+| `org.opencontainers.image.revision` | | `SourceRevisionId` | | `ContainerGenerateLabelsImageRevision` | Only written if `PublishRepositoryUrl` is `true`. Also relies on Sourcelink infrastructure being part of the build. |
 
 ## See also
 

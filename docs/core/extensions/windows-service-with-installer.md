@@ -186,17 +186,15 @@ After the project reference has been added, configure the _Package.wxs_ file. Op
         <MajorUpgrade DowngradeErrorMessage="A later version of [ProductName] is already installed. Setup will now exit." />
 
         <!-- Define the directory structure -->
-        <Directory Id="TARGETDIR" Name="SourceDir" override="true">
-            <Directory Id="ProgramFiles64Folder">
+        <StandardDirectory Id="ProgramFiles64Folder">
 
-                <!-- Create a folder inside program files -->
-                <Directory Id="ROOTDIRECTORY" Name="$(var.Manufacturer)">
+            <!-- Create a folder inside program files -->
+            <Directory Id="ROOTDIRECTORY" Name="$(var.Manufacturer)">
 
-                    <!-- Create a folder within the parent folder given the name -->
-                    <Directory Id="INSTALLFOLDER" Name="$(Name)" />
-                </Directory>
+                <!-- Create a folder within the parent folder given the name -->
+                <Directory Id="INSTALLFOLDER" Name="$(Name)" />
             </Directory>
-        </Directory>
+        </StandardDirectory>
 
         <!-- The files inside this DirectoryRef are linked to
              the App.WindowsService directory via INSTALLFOLDER -->

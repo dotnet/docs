@@ -75,7 +75,7 @@ It then registers the OTLP exporter using env vars for its configuration.
 
 The OTLP exporter can be configured via APIs in code, but its more common to configure it via environment variables. Add the following to _AppSettings.Development.json_
 
-``` josn
+``` json
 "OTEL_EXPORTER_OTLP_ENDPOINT": "http://localhost:4317",
 "OTEL_SERVICE_NAME": "OTLP-Example"
 ```

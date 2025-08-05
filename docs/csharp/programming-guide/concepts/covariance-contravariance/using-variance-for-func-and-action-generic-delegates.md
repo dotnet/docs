@@ -79,7 +79,7 @@ class Program
 }  
 ```  
 
-## Contravariance and Anonymous Functions
+## Contravariance and anonymous functions
 
 When working with anonymous functions (lambda expressions), you might encounter counterintuitive behavior related to contravariance. Consider the following example:
 
@@ -100,10 +100,10 @@ class Program
     {
         var personReadContact = (Person p) => p.ReadContact();
 
-        // This works - contravariance allows assignment
+        // This works - contravariance allows assignment.
         Action<Employee> employeeReadContact = personReadContact;
 
-        // This causes a compile error: CS1661
+        // This causes a compile error: CS1661.
         // Action<Employee> employeeReadContact2 = (Person p) => p.ReadContact();
     }
 }

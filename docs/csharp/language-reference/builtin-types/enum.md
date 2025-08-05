@@ -42,6 +42,20 @@ You cannot define a method inside the definition of an enumeration type. To add 
 
 The default value of an enumeration type `E` is the value produced by expression `(E)0`, even if zero doesn't have the corresponding enum member.
 
+## Implicit conversions from zero
+
+C# allows implicit conversions from the literal value `0` to any enum type, and from `const` values equal to zero. This behavior can lead to unexpected results when an enum doesn't include a member with the value zero:
+
+[!code-csharp[zero conversions](snippets/shared/EnumType.cs#ZeroConversions)]
+
+In the preceding example, both `port1` and `port2` are assigned the value `0`, but `GpioPort` has no member with that value. The <xref:System.Enum.IsDefined%2A?displayProperty=nameWithType> method confirms these are invalid enum values.
+
+This implicit conversion exists for backward compatibility, but it can introduce bugs in your code. To avoid these issues:
+
+- Consider defining a member with value `0` in your enums when appropriate.
+- Use <xref:System.Enum.IsDefined%2A?displayProperty=nameWithType> to validate enum values when converting from numeric types.
+- Be cautious when using numeric parameters that might be implicitly converted to enum types.
+
 You use an enumeration type to represent a choice from a set of mutually exclusive values or a combination of choices. To represent a combination of choices, define an enumeration type as bit flags.
 
 ## Enumeration types as bit flags

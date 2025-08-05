@@ -484,13 +484,13 @@ For example, consider the fully qualified `mcr.microsoft.com/dotnet/runtime:8.0-
 
 Some properties described in the following sections correspond to managing parts of the generated image name. Consider the following table that maps the relationship between the image name and the build properties:
 
-| Image name part   | MSBuild property      | Example values          |
-| ----------------- | --------------------- | ----------------------- |
-| `REGISTRY[:PORT]` | `ContainerRegistry`   | `mcr.microsoft.com:443` |
-| `PORT`            | `ContainerPort`       | `:443`                  |
-| `REPOSITORY`      | `ContainerRepository` | `dotnet/runtime`        |
-| `TAG`             | `ContainerImageTag`   | `8.0`                   |
-| `FAMILY`          | `ContainerFamily`     | `-alpine`               |
+| Image name part   | MSBuild property                              | Example values          |
+|-------------------|-----------------------------------------------|-------------------------|
+| `REGISTRY[:PORT]` | [`ContainerRegistry`](#containerregistry)     | `mcr.microsoft.com:443` |
+| `PORT`            | [`ContainerPort`](#containerport)             | `:443`                  |
+| `REPOSITORY`      | [`ContainerRepository`](#containerrepository) | `dotnet/runtime`        |
+| `TAG`             | [`ContainerImageTag`](#containerimagetag)     | `8.0`                   |
+| `FAMILY`          | [`ContainerFamily`](#containerfamily)         | `-alpine`               |
 
 ## Default container labels
 

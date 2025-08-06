@@ -243,7 +243,59 @@ For more information about how enforced-notarization affects .NET (and your .NET
 
 [!INCLUDE [verify-download-intro](includes/verify-download-intro.md)]
 
-[!INCLUDE [verify-download-macos-linux](includes/verify-download-macos-linux.md)]
+Use the `shasum -a 512` command to print the checksum of the file you've downloaded. For example, the following command reports the checksum of the _dotnet-sdk-8.0.100-osx-x64.tar.gz_ file:
+
+```bash
+$ shasum -a 512 dotnet-sdk-8.0.100-osx-x64.tar.gz
+13905ea20191e70baeba50b0e9bbe5f752a7c34587878ee104744f9fb453bfe439994d38969722bdae7f60ee047d75dda8636f3ab62659450e9cd4024f38b2a5  dotnet-sdk-8.0.100-osx-x64.tar.gz
+```
+
+Compare the checksum with the value provided by the download site.
+
+### Use a checksum file to validate
+
+The .NET release notes contain a link to a checksum file you can use to validate your downloaded file. The following steps describe how to download the checksum file and validate a .NET install binary:
+
+01. The release notes page for .NET 8 on GitHub at <https://github.com/dotnet/core/tree/main/release-notes/8.0#releases> contains a section named **Releases**. The table in that section links to the downloads and checksum files for each .NET 8 release:
+
+    :::image type="content" source="../media/install-sdk/release-notes-root.png" alt-text="The github release notes version table for .NET":::
+
+01. Select the link for the version of .NET that you downloaded.
+
+    The previous section used .NET SDK 8.0.100, which is in the .NET 8.0.0 release.
+
+01. In the release page, you can see the .NET Runtime and .NET SDK version, and a link to the checksum file:
+
+    :::image type="content" source="../media/install-sdk/release-notes-version.png" alt-text="The download table with checksums for .NET":::
+
+01. Right-click on the **Checksum** link, and copy the link to your clipboard.
+
+01. Open a terminal.
+
+01. Use `curl -O {link}` to download the checksum file.
+
+    Replace the link in the following command with the link you copied.
+
+    ```bash
+    curl -O https://builds.dotnet.microsoft.com/dotnet/checksums/8.0.0-sha.txt
+    ```
+
+01. With both the checksum file and the .NET release file downloaded to the same directory, use the `shasum -a 512 -c {file}` command to validate the downloaded file.
+
+    When validation passes, you see the file printed with the **OK** status:
+
+    ```bash
+    $ shasum -a 512 -c 8.0.0-sha.txt
+    dotnet-sdk-8.0.100-osx-x64.tar.gz: OK
+    ```
+
+    If you see the file marked as **FAILED**, the file you downloaded isn't valid and shouldn't be used.
+
+    ```bash
+    $ shasum -a 512 -c 8.0.0-sha.txt
+    dotnet-sdk-8.0.100-osx-x64.tar.gz: FAILED
+    shasum: WARNING: 1 computed checksum did NOT match
+    ```
 
 ## Arm-based Macs
 

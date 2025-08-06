@@ -20,7 +20,7 @@ dotnet nuget push [<ROOT>] [-d|--disable-buffering] [--force-english-output]
     [--no-service-endpoint] [-s|--source <SOURCE>] [--skip-duplicate]
     [-sk|--symbol-api-key <API_KEY>] [-ss|--symbol-source <SOURCE>]
     [-t|--timeout <TIMEOUT>]
-    [--configfile <FILE>]
+    [--configfile <FILE>][--allow-insecure-connections]
 
 dotnet nuget push -h|--help
 ```
@@ -49,6 +49,9 @@ Alternatively, use the NuGet CLI for the first package, then you can use `dotnet
   Specifies the file path to the package to be pushed.
 
 ## Options
+
+- **`--allow-insecure-connections`**
+  Allows pushing to HTTP sources (insecure).
 
 - **`-d|--disable-buffering`**
 

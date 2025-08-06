@@ -51,6 +51,7 @@ Alternatively, use the NuGet CLI for the first package, then you can use `dotnet
 ## Options
 
 - **`--allow-insecure-connections`**
+  
   Allows pushing to HTTP sources (insecure).
 
 - **`-d|--disable-buffering`**

@@ -1,12 +1,12 @@
 ---
 title: dotnet-counters diagnostic tool - .NET CLI
 description: Learn how to install and use the dotnet-counter CLI tool for ad-hoc health monitoring and first-level performance investigation.
-ms.date: 11/17/2020
+ms.date: 08/06/2025
 ms.topic: reference
 ---
 # Investigate performance counters (dotnet-counters)
 
-**This article applies to:** ✔️ `dotnet-counters` version 3.0.47001 and later versions.
+**This article applies to:** ✔️ `dotnet-counters` version 10.0 and later versions.
 
 Counters can be read from applications running .NET 5 or later.
 
@@ -70,7 +70,7 @@ Periodically collect selected counter values and export them into a specified fi
 ### Synopsis
 
 ```dotnetcli
-dotnet-counters collect [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-port] [--refresh-interval] [--counters <COUNTERS>] [--format] [-o|--output] [-- <command>]
+dotnet-counters collect [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-port] [--refresh-interval] [--counters <COUNTERS>] [--format] [-o|--output] [--dsrouter <ios|ios-sim|android|android-emu>] [-- <command>]
 ```
 
 ### Options
@@ -229,6 +229,10 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
 - **`--counters <COUNTERS>`**
 
   A comma-separated list of counters. Counters can be specified `provider_name[:counter_name]`. If the `provider_name` is used without a qualifying list of counters, then all counters from the provider are shown. To discover provider and counter names, use the [dotnet-counters list](#dotnet-counters-list) command. For [EventCounters](event-counters.md), `provider_name` is the name of the EventSource and for [Meters](metrics.md), `provider_name` is the name of the Meter.
+
+- **`--dsrouter {ios|ios-sim|android|android-emu}`**
+
+  Starts [dotnet-dsrouter](dotnet-dsrouter.md) and connects to it. Requires [dotnet-dsrouter](dotnet-dsrouter.md) to be installed. Run `dotnet-dsrouter -h` for more information.
 
  **`-- <command>`**
 

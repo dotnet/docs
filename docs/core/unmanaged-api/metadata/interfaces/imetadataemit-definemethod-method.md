@@ -93,12 +93,12 @@ HRESULT DefineMethod (
 
  The parameter settings are given in the following table.
 
-|Parameter|Values for true PInvoke|Values for local PInvoke|
+| Parameter |Values for true PInvoke|Values for local PInvoke|
 |---------------|-----------------------------|------------------------------|
-|`dwMethodFlags`||Set `mdStatic`; clear `mdSynchronized` and `mdAbstract`.|
-|`pvSigBlob`|A valid common language runtime (CLR) method signature with parameters that are valid managed types.|A valid CLR method signature with parameters that are valid managed types.|
-|`ulCodeRVA`||0|
-|`dwImplFlags`|Set `miCil` and `miManaged`.|Set `miNative` and `miUnmanaged`.|
+| `dwMethodFlags` |  |Set `mdStatic`; clear `mdSynchronized` and `mdAbstract`.|
+| `pvSigBlob` | A valid common language runtime (CLR) method signature with parameters that are valid managed types. |A valid CLR method signature with parameters that are valid managed types.|
+| `ulCodeRVA` |  |0|
+| `dwImplFlags` | Set `miCil` and `miManaged`. |Set `miNative` and `miUnmanaged`.|
 
 ## Requirements
 

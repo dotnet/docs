@@ -49,10 +49,10 @@ HRESULT EnumGenericParamConstraints (
 
 ## Return Value
 
-|HRESULT|Description|
+| HRESULT | Description |
 |-------------|-----------------|
-|`S_OK`|`EnumGenericParameterConstraints` returned successfully.|
-|`S_FALSE`|`phEnum` has no member elements. In this case, `pcGenericParameterConstraints` is set to 0 (zero).|
+| `S_OK` | `EnumGenericParameterConstraints` returned successfully. |
+| `S_FALSE` |`phEnum` has no member elements. In this case, `pcGenericParameterConstraints` is set to 0 (zero).|
 
 ## Requirements
 

@@ -57,32 +57,32 @@ typedef enum CorMethodAttr {
 
 ## Members
 
-|Member|Description|
+| Member | Description |
 |------------|-----------------|
-|`mdMemberAccessMask`|Specifies member access.|
-|`mdPrivateScope`|Specifies that the member cannot be referenced.|
-|`mdPrivate`|Specifies that the member is accessible only by the parent type.|
-|`mdFamANDAssem`|Specifies that the member is accessible by subtypes only in this assembly.|
-|`mdAssem`|Specifies that the member is accessibly by anyone in the assembly.|
-|`mdFamily`|Specifies that the member is accessible only by type and subtypes.|
-|`mdFamORAssem`|Specifies that the member is accessible by derived classes and by other types in its assembly.|
-|`mdPublic`|Specifies that the member is accessible by all types with access to the scope.|
-|`mdStatic`|Specifies that the member is defined as part of the type rather than as a member of an instance.|
-|`mdFinal`|Specifies that the method cannot be overridden.|
-|`mdVirtual`|Specifies that the method can be overridden.|
-|`mdHideBySig`|Specifies that the method hides by name and signature, rather than just by name.|
-|`mdVtableLayoutMask`|Specifies virtual table layout.|
-|`mdReuseSlot`|Specifies that the slot used for this method in the virtual table be reused. This is the default.|
-|`mdNewSlot`|Specifies that the method always gets a new slot in the virtual table.|
-|`mdCheckAccessOnOverride`|Specifies that the method can be overridden by the same types to which it is visible.|
-|`mdAbstract`|Specifies that the method is not implemented.|
-|`mdSpecialName`|Specifies that the method is special, and that its name describes how.|
-|`mdPinvokeImpl`|Specifies that the method implementation is forwarded using PInvoke.|
-|`mdUnmanagedExport`|Specifies that the method is a managed method exported to unmanaged code.|
-|`mdReservedMask`|Reserved for internal use by the common language runtime.|
-|`mdRTSpecialName`|Specifies that the common language runtime should check the encoding of the method name.|
-|`mdHasSecurity`|Specifies that the method has security associated with it.|
-|`mdRequireSecObject`|Specifies that the method calls another method containing security code.|
+| `mdMemberAccessMask` | Specifies member access. |
+| `mdPrivateScope` | Specifies that the member cannot be referenced. |
+| `mdPrivate` | Specifies that the member is accessible only by the parent type. |
+| `mdFamANDAssem` | Specifies that the member is accessible by subtypes only in this assembly. |
+| `mdAssem` | Specifies that the member is accessibly by anyone in the assembly. |
+| `mdFamily` | Specifies that the member is accessible only by type and subtypes. |
+| `mdFamORAssem` | Specifies that the member is accessible by derived classes and by other types in its assembly. |
+| `mdPublic` | Specifies that the member is accessible by all types with access to the scope. |
+| `mdStatic` | Specifies that the member is defined as part of the type rather than as a member of an instance. |
+| `mdFinal` | Specifies that the method cannot be overridden. |
+| `mdVirtual` | Specifies that the method can be overridden. |
+| `mdHideBySig` | Specifies that the method hides by name and signature, rather than just by name. |
+| `mdVtableLayoutMask` | Specifies virtual table layout. |
+| `mdReuseSlot` | Specifies that the slot used for this method in the virtual table be reused. This is the default. |
+| `mdNewSlot` | Specifies that the method always gets a new slot in the virtual table. |
+| `mdCheckAccessOnOverride` | Specifies that the method can be overridden by the same types to which it is visible. |
+| `mdAbstract` | Specifies that the method is not implemented. |
+| `mdSpecialName` | Specifies that the method is special, and that its name describes how. |
+| `mdPinvokeImpl` | Specifies that the method implementation is forwarded using PInvoke. |
+| `mdUnmanagedExport` | Specifies that the method is a managed method exported to unmanaged code. |
+| `mdReservedMask` | Reserved for internal use by the common language runtime. |
+| `mdRTSpecialName` | Specifies that the common language runtime should check the encoding of the method name. |
+| `mdHasSecurity` | Specifies that the method has security associated with it. |
+| `mdRequireSecObject` | Specifies that the method calls another method containing security code. |
 
 ## Requirements
 

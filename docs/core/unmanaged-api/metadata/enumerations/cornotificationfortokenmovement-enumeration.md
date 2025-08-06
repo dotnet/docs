@@ -54,31 +54,31 @@ typedef enum CorNotificationForTokenMovement {
 
 ## Members
 
-|Member|Description|
+| Member | Description |
 |------------|-----------------|
-|`MDNotifyDefault`|Notify when `mdTypeRef`, `mdMethodDef`, `mdMemberRef`, or `mdFieldDef` tokens move.|
-|`MDNotifyAll`|Notify when any token moves.|
-|`MDNotifyNone`|Do not notify when tokens move.|
-|`MDNotifyMethodDef`|Notify when an `mdMethodDef` token moves.|
-|`MDNotifyMemberRef`|Notify when an `mdMemberRef` token moves.|
-|`MDNotifyFieldDef`|Notify when an `mdFieldDef` token moves.|
-|`MDNotifyTypeRef`|Notify when an `mdTypeRef` token moves.|
-|`MDNotifyTypeDef`|Notify when an `mdTypeDef` token moves.|
-|`MDNotifyParamDef`|Notify when an `mdParamDef` token moves.|
-|`MDNotifyInterfaceImpl`|Notify when an `mdInterfaceImpl` token moves.|
-|`MDNotifyProperty`|Notify when an `mdProperty` token moves.|
-|`MDNotifyEvent`|Notify when an `mdEvent` token moves.|
-|`MDNotifySignature`|Notify when an `mdSignature` token moves.|
-|`MDNotifyTypeSpec`|Notify when an `mdTypeSpec` token moves.|
-|`MDNotifyCustomAttribute`|Notify when an `mdCustomAttribute` token moves.|
-|`MDNotifySecurityValue`|Notify when an `mdSecurityValue` token moves.|
-|`MDNotifyPermission`|Notify when an `mdPermission` token moves.|
-|`MDNotifyModuleRef`|Notify when an `mdModuleRef` token moves.|
-|`MDNotifyNameSpace`|Notify when an `mdNameSpace` token moves.|
-|`MDNotifyAssemblyRef`|Notify when an `mdAssemblyRef` token moves.|
-|`MDNotifyFile`|Notify when an `mdFile` token moves.|
-|`MDNotifyExportedType`|Notify when an `mdExportedType` token moves.|
-|`MDNotifyResource`|Notify when an `mdManifestResource` token moves.|
+| `MDNotifyDefault` | Notify when `mdTypeRef`, `mdMethodDef`, `mdMemberRef`, or `mdFieldDef` tokens move. |
+| `MDNotifyAll` | Notify when any token moves. |
+| `MDNotifyNone` | Do not notify when tokens move. |
+| `MDNotifyMethodDef` | Notify when an `mdMethodDef` token moves. |
+| `MDNotifyMemberRef` | Notify when an `mdMemberRef` token moves. |
+| `MDNotifyFieldDef` | Notify when an `mdFieldDef` token moves. |
+| `MDNotifyTypeRef` | Notify when an `mdTypeRef` token moves. |
+| `MDNotifyTypeDef` | Notify when an `mdTypeDef` token moves. |
+| `MDNotifyParamDef` | Notify when an `mdParamDef` token moves. |
+| `MDNotifyInterfaceImpl` | Notify when an `mdInterfaceImpl` token moves. |
+| `MDNotifyProperty` | Notify when an `mdProperty` token moves. |
+| `MDNotifyEvent` | Notify when an `mdEvent` token moves. |
+| `MDNotifySignature` | Notify when an `mdSignature` token moves. |
+| `MDNotifyTypeSpec` | Notify when an `mdTypeSpec` token moves. |
+| `MDNotifyCustomAttribute` | Notify when an `mdCustomAttribute` token moves. |
+| `MDNotifySecurityValue` | Notify when an `mdSecurityValue` token moves. |
+| `MDNotifyPermission` | Notify when an `mdPermission` token moves. |
+| `MDNotifyModuleRef` | Notify when an `mdModuleRef` token moves. |
+| `MDNotifyNameSpace` | Notify when an `mdNameSpace` token moves. |
+| `MDNotifyAssemblyRef` | Notify when an `mdAssemblyRef` token moves. |
+| `MDNotifyFile` | Notify when an `mdFile` token moves. |
+| `MDNotifyExportedType` | Notify when an `mdExportedType` token moves. |
+| `MDNotifyResource` | Notify when an `mdManifestResource` token moves. |
 
 ## Remarks
 

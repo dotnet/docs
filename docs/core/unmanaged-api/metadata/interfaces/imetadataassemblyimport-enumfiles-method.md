@@ -45,10 +45,10 @@ HRESULT EnumFiles (
 
 ## Return Value
 
-|HRESULT|Description|
+| HRESULT | Description |
 |-------------|-----------------|
-|`S_OK`|`EnumFiles` returned successfully.|
-|`S_FALSE`|There are no tokens to enumerate. In this case, `pcTokens` is set to zero.|
+| `S_OK` | `EnumFiles` returned successfully. |
+| `S_FALSE` | There are no tokens to enumerate. In this case, `pcTokens` is set to zero. |
 
 ## Requirements
 

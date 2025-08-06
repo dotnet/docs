@@ -31,6 +31,15 @@ The following code illustrates a vector class that has just two operators, one f
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet4001.fs)]
 
+**Output:**
+
+```console
+1 2
+2 4
+2 4
+-2 -4
+```
+
 ## Creating New Operators
 
 You can overload all the standard operators, but you can also create new operators out of sequences of certain characters. Allowed operator characters are `!`, `$`, `%`, `&`, `*`, `+`, `-`, `.`, `/`, `<`, `=`, `>`, `?`, `@`, `^`, `|`, and `~`. The `~` character has the special meaning of making an operator unary, and is not part of the operator character sequence. Not all operators can be made unary.
@@ -91,7 +100,7 @@ The following table shows the standard operators and their corresponding generat
 
 Note that the `not` operator in F# does not emit `op_Inequality` because it is not a symbolic operator. It is a function that emits IL that negates a boolean expression.
 
-Other combinations of operator characters that are not listed here can be used as operators and have names that are made up by concatenating names for the individual characters from the following table. For example, +! becomes `op_PlusBang`.
+Other combinations of operator characters that are not listed here can be used as operators and have names that are made up by concatenating names for the individual characters from the following table. For example, `+!` becomes `op_PlusBang`.
 
 |Operator character|Name|
 |------------------|----|
@@ -122,7 +131,7 @@ Other combinations of operator characters that are not listed here can be used a
 
 *Prefix* operators are expected to be placed in front of an operand or operands, much like a function. *Infix* operators are expected to be placed between the two operands.
 
-Only certain operators can be used as prefix operators. Some operators are always prefix operators, others can be infix or prefix, and the rest are always infix operators. Operators that begin with `!`, except `!=`, and the operator `~`, or repeated sequences of`~`, are always prefix operators. The operators `+`, `-`, `+.`, `-.`, `&`, `&&`, `%`, and `%%` can be prefix operators or infix operators. You distinguish the prefix version of these operators from the infix version by adding a `~` at the beginning of a prefix operator when it is defined. The `~` is not used when you use the operator, only when it is defined.
+Only certain operators can be used as prefix operators. Some operators are always prefix operators, others can be infix or prefix, and the rest are always infix operators. Operators that begin with `!`, except `!=`, and the operator `~`, or repeated sequences of `~`, are always prefix operators. The operators `+`, `-`, `+.`, `-.`, `&`, `&&`, `%`, and `%%` can be prefix operators or infix operators. You distinguish the prefix version of these operators from the infix version by adding a `~` at the beginning of a prefix operator when it is defined. The `~` is not used when you use the operator, only when it is defined.
 
 ## Example
 

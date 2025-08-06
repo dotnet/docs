@@ -2,6 +2,7 @@
 description: "Learn how to use the ASP.NET Authorization Manager Role Provider with a Service"
 title: "Use the ASP.NET Authorization Manager Role Provider with a Service"
 ms.date: "03/30/2017"
+ms.custom: sfi-ropc-nochange
 ---
 # How to: Use the ASP.NET Authorization Manager Role Provider with a Service
 

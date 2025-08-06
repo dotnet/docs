@@ -48,9 +48,9 @@ typedef enum CorGenericParamAttr {
 | `gpSpecialConstraintMask`   | Special constraints can apply to any <xref:System.Type> parameter.                  |
 | `gpNoSpecialConstraint`     | Indicates that no constraint applies to the <xref:System.Type> parameter.           |
 | `gpReferenceTypeConstraint` | Indicates that the <xref:System.Type> parameter must be a reference type.           |
-|`gpNotNullableValueTypeConstraint`|Indicates that the <xref:System.Type> parameter must be a value type that cannot be a null value.|
-|`gpDefaultConstructorConstraint`|Indicates that the <xref:System.Type> parameter must have a default public constructor that takes no parameters.|
-|`gpAllowByRefLike`|Indicates that the <xref:System.Type> parameter can be a [byref-like type](xref:System.Type.IsByRefLike). (available since .NET 7) |
+| `gpNotNullableValueTypeConstraint` |Indicates that the <xref:System.Type> parameter must be a value type that cannot be a null value.|
+| `gpDefaultConstructorConstraint` |Indicates that the <xref:System.Type> parameter must have a default public constructor that takes no parameters.|
+| `gpAllowByRefLike` |Indicates that the <xref:System.Type> parameter can be a [byref-like type](xref:System.Type.IsByRefLike). (Available since .NET 7.) |
 
 ## Requirements
 

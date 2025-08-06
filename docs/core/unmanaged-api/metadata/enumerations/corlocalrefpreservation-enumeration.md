@@ -30,11 +30,11 @@ typedef enum CorLocalRefPreservation
 
 ## Members
 
-|Member|Description|
+| Member | Description |
 |------------|-----------------|
-|`MDPreserveLocalRefsNone`|Preserve no local references.|
-|`MDPreserveLocalTypeRef`|Preserve local type references.|
-|`MDPreserveLocalMemberRef`|Preserve local member references.|
+| `MDPreserveLocalRefsNone` | Preserve no local references. |
+| `MDPreserveLocalTypeRef` | Preserve local type references. |
+| `MDPreserveLocalMemberRef` | Preserve local member references. |
 
 ## Requirements
 

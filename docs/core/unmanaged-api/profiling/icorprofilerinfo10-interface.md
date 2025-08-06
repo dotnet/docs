@@ -10,7 +10,7 @@ A subclass of [ICorProfilerInfo9](icorprofilerinfo9-interface.md) that provides 
 
 ## Methods
 
-| Method|Description|
+| Method | Description |
 | ------------|-----------------|
 |[EnumerateObjectReferences Method](icorprofilerinfo10-enumerateobjectreferences-method.md)|Given an ObjectID, callback and clientData, enumerates each object reference (if any). |
 |[IsFrozenObject Method](icorprofilerinfo10-isfrozenobject-method.md)|Given an ObjectID, determines whether the object is in a read-only segment. |

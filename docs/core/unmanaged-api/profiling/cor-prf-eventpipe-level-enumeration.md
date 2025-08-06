@@ -30,14 +30,14 @@ typedef enum
 
 ## Members
 
-|Member|Description|
+| Member | Description |
 |------------|-----------------|
-|`COR_PRF_EVENTPIPE_LOGALWAYS`|The event is always logged.|
-|`COR_PRF_EVENTPIPE_CRITICAL`|The event represents a critical message.|
-|`COR_PRF_EVENTPIPE_ERROR`|The event represents an error message.|
-|`COR_PRF_EVENTPIPE_WARNING`|The event represents a warning message.|
-|`COR_PRF_EVENTPIPE_INFORMATIONAL`|The event represents an informational message.|
-|`COR_PRF_EVENTPIPE_VERBOSE`|The event represents a verbose message.|
+| `COR_PRF_EVENTPIPE_LOGALWAYS` | The event is always logged. |
+| `COR_PRF_EVENTPIPE_CRITICAL` | The event represents a critical message. |
+| `COR_PRF_EVENTPIPE_ERROR` | The event represents an error message. |
+| `COR_PRF_EVENTPIPE_WARNING` | The event represents a warning message. |
+| `COR_PRF_EVENTPIPE_INFORMATIONAL` | The event represents an informational message. |
+| `COR_PRF_EVENTPIPE_VERBOSE` | The event represents a verbose message. |
 
 ## Remarks
 

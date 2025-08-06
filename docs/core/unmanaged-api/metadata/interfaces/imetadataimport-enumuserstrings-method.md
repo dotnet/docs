@@ -45,10 +45,10 @@ HRESULT EnumUserStrings (
 
 ## Return Value
 
-|HRESULT|Description|
+| HRESULT | Description |
 |-------------|-----------------|
-|`S_OK`|`EnumUserStrings` returned successfully.|
-|`S_FALSE`|There are no tokens to enumerate. In that case, `pcStrings` is zero.|
+| `S_OK` | `EnumUserStrings` returned successfully. |
+| `S_FALSE` | There are no tokens to enumerate. In that case, `pcStrings` is zero. |
 
 ## Remarks
 

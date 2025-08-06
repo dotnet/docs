@@ -49,10 +49,10 @@ HRESULT EnumInterfaceImpls (
 
 ## Return Value
 
-|HRESULT|Description|
+| HRESULT | Description |
 |-------------|-----------------|
-|`S_OK`|`EnumInterfaceImpls` returned successfully.|
-|`S_FALSE`|There are no MethodDef tokens to enumerate. In that case, `pcImpls` is set to zero.|
+| `S_OK` | `EnumInterfaceImpls` returned successfully. |
+| `S_FALSE` | There are no MethodDef tokens to enumerate. In that case, `pcImpls` is set to zero. |
 
 ## Remarks
 

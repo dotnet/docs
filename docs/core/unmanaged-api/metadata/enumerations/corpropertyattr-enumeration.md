@@ -33,13 +33,13 @@ typedef enum CorPropertyAttr {
 
 ## Members
 
-|Member|Description|
+| Member | Description |
 |------------|-----------------|
-|`prSpecialName`|Specifies that the property is special, and that its name describes how.|
-|`prReservedMask`|Reserved for internal use by the common language runtime.|
-|`prRTSpecialName`|Specifies that the common language runtime metadata internal APIs should check the encoding of the property name.|
-|`prHasDefault`|Specifies that the property has a default value.|
-|`prUnused`|Unused.|
+| `prSpecialName` | Specifies that the property is special, and that its name describes how. |
+| `prReservedMask` | Reserved for internal use by the common language runtime. |
+| `prRTSpecialName` | Specifies that the common language runtime metadata internal APIs should check the encoding of the property name. |
+| `prHasDefault` | Specifies that the property has a default value. |
+| `prUnused` | Unused. |
 
 ## Requirements
 

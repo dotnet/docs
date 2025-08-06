@@ -8,6 +8,7 @@ dev_langs:
 helpviewer_keywords: 
   - "WCF, authentication"
 ms.assetid: bb0190ff-0738-4e54-8d22-c97d343708bf
+ms.custom: sfi-ropc-nochange
 ---
 # How to: Create a Service that Employs a Custom Certificate Validator
 

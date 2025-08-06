@@ -24,7 +24,7 @@ Includes callback methods that allow common language runtime version-specific de
 
 ## Methods
 
-|Method|Description|
+| Method | Description |
 |------------|-----------------|
 |[ProvideWindowsLibrary](iclrdebugginglibraryprovider3-providewindowslibrary-method.md)|Allows the debugger to provide a path to a version-specific Windows debugging library.|
 |[ProvideUnixLibrary](iclrdebugginglibraryprovider3-provideunixlibrary-method.md)|Allows the debugger to provide a path to a version-specific Linux or macOS debugging library.|

@@ -35,9 +35,9 @@ All exceptions contain a property named <xref:System.Exception.Message%2A>. This
 
 Public and protected methods throw exceptions whenever they can't complete their intended functions. The exception class thrown is the most specific exception available that fits the error conditions. These exceptions should be documented as part of the class functionality, and derived classes or updates to the original class should retain the same behavior for backward compatibility.
 
-## Things to avoid when throwing exceptions
+## Things to consider when throwing exceptions
 
-The following list identifies practices to avoid when throwing exceptions:
+The following list identifies practices to consider when throwing exceptions:
 
 - Don't use exceptions to change the flow of a program as part of ordinary execution. Use exceptions to report and handle error conditions.
 - Exceptions shouldn't be returned as a return value or parameter instead of being thrown.

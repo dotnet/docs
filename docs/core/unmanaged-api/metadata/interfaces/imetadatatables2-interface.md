@@ -19,10 +19,10 @@ Extends [IMetaDataTables](imetadatatables-interface.md) to include methods for w
 
 ## Methods
 
-|Method|Description|
+| Method | Description |
 |------------|-----------------|
-|[GetMetaDataStorage Method](imetadatatables2-getmetadatastorage-method.md)|Gets the size and contents of the metadata stored in the specified section.|
-|[GetMetaDataStreamInfo Method](imetadatatables2-getmetadatastreaminfo-method.md)|Gets the name, size, and contents of the metadata stream at the specified index.|
+|[GetMetaDataStorage Method](imetadatatables2-getmetadatastorage-method.md)| Gets the size and contents of the metadata stored in the specified section. |
+|[GetMetaDataStreamInfo Method](imetadatatables2-getmetadatastreaminfo-method.md)| Gets the name, size, and contents of the metadata stream at the specified index. |
 
 ## Requirements
 

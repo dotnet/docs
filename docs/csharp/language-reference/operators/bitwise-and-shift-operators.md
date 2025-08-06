@@ -201,7 +201,7 @@ For more information, see the following sections of the [C# language specificati
 - [Numeric promotions](~/_csharpstandard/standard/expressions.md#1247-numeric-promotions)
 - [C# 11 - Relaxed shift requirements](~/_csharplang/proposals/csharp-11.0/relaxing_shift_operator_requirements.md)
 - [C# 11 - Logical right-shift operator](~/_csharplang/proposals/csharp-11.0/unsigned-right-shift-operator.md)
-- [User defined compound assignment](~/_csharplang/proposals/user-defined-compound-assignment.md)
+- [User defined compound assignment](~/_csharplang/proposals/csharp-14.0/user-defined-compound-assignment.md)
 
 ## See also
 

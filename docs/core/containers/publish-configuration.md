@@ -113,16 +113,119 @@ The generated OCI Image Index is widely supported with modern container tooling,
 
 The following properties control metadata and configuration that applies to the generated container image regardless of the target runtime identifier:
 
+- [`ContainerImageFormat`](#containerimageformat)
+- [`ContainerImageTag`](#containerimagetag)
+- [`ContainerLabel`](#containerlabel)
+- [`ContainerRepository`](#containerrepository)
+
+### `ContainerImageFormat`
+
+You can use the `ContainerImageFormat` MSBuild property to specify the image format as either `Docker` or `OCI`. By default, the .NET tooling infers the format from the base image. For example, .NET base images use the Docker-specific format `application/vnd.docker.distribution.manifest.v2+json`. However, many modern tools prefer the OCI format `application/vnd.oci.image.manifest.v1+json`. To force a specific format, set the property as shown:
+
+```xml
+<PropertyGroup>
+  <ContainerImageFormat>OCI</ContainerImageFormat>
+</PropertyGroup>
+```
+
+Both formats are largely interchangeable without loss of information.
+
+> [!NOTE]
+> When building a multi-architecture image, the resulting image format is always OCI.
+
+### `ContainerImageTag`
+
+The container image tag property controls the tags that are generated for the image. To specify a single tag use `ContainerImageTag` and for multiple tags use `ContainerImageTags`.
+
+> [!IMPORTANT]
+> When you use `ContainerImageTags`, you end up with multiple images, one per unique tag.
+
+Tags are often used to refer to different versions of an app, but they can also refer to different operating system distributions, or even different configurations.
+
+Starting with .NET 8, when a tag isn't provided the default is `latest`.
+
+To override the default, specify either of the following properties:
+
+```xml
+<PropertyGroup>
+    <ContainerImageTag>1.2.3-alpha2</ContainerImageTag>
+</PropertyGroup>
+```
+
+To specify multiple tags, use a semicolon-delimited set of tags in the `ContainerImageTags` property, similar to setting multiple `TargetFrameworks`:
+
+```xml
+<PropertyGroup>
+    <ContainerImageTags>1.2.3-alpha2;latest</ContainerImageTags>
+</PropertyGroup>
+```
+
+Tags can only contain up to 127 alphanumeric characters, periods, underscores, and dashes. They must start with an alphanumeric character or an underscore. Any other form results in an error being thrown.
+
+> [!NOTE]
+> When using `ContainerImageTags` or any MSBuild property requiring `;`-delimited values, ensure proper escaping when calling `dotnet publish` from the command line, especially in CI/CD environments. Escaping rules differ between PowerShell and Bash. For example:
+>
+> ```powershell
+> dotnet publish --os linux --arch x64 /t:PublishContainer /p:ContainerImageTags=`"1.2.3-alpha2`;latest`"
+> ```
+>
+> In PowerShell, both the `;` and `"` characters need to be escaped.
+>
+> ```bash
+> dotnet publish --os linux --arch x64 /t:PublishContainer /p:ContainerImageTags='"1.2.3-alpha2;latest"'
+> ```
+>
+> In Bash, only the `"` character needs to be escaped.
+>
+> This results in two images being generated: `my-app:1.2.3-alpha2` and `my-app:latest`.
+
+> [!TIP]
+> If you experience issues with the `ContainerImageTags` property, consider scoping an environment variable `ContainerImageTags` instead:
+>
+> ```powershell
+> $Env:ContainerImageTags='1.2.3;latest'; dotnet publish --os linux --arch x64 /t:PublishContainer
+> ```
+
+### `ContainerLabel`
+
+The container label adds a metadata label to the container. Labels are often used to store version and authoring metadata for use by security scanners and other infrastructure tools. You can specify any number of container labels.
+
+The `ContainerLabel` node has two attributes:
+
+- `Include`: The key of the label.
+- `Value`: The value of the label (this might be empty).
+
+```xml
+<ItemGroup>
+    <ContainerLabel Include="org.contoso.businessunit" Value="contoso-university" />
+</ItemGroup>
+```
+
+For a list of labels that are created by default, see [default container labels](#default-container-labels).
+
+### `ContainerRepository`
+
+The container repository is the name of the image itself, for example, `dotnet/runtime` or `my-app`. By default, the `AssemblyName` of the project is used.
+
+```xml
+<PropertyGroup>
+    <ContainerRepository>my-app</ContainerRepository>
+</PropertyGroup>
+```
+
+Image names consist of one or more slash-delimited segments, each of which can only contain lowercase alphanumeric characters, periods, underscores, and dashes, and must start with a letter or number. Any other characters result in an error being thrown.
+
+## Flags that control execution metadata
+
+The following properties control runtime-specific execution behavior and multi-architecture image generation:
+
 - [`ContainerAppCommand`](#containerappcommand)
 - [`ContainerAppCommandArgs`](#containerappcommandargs)
 - [`ContainerAppCommandInstruction`](#containerappcommandinstruction)
 - [`ContainerDefaultArgs`](#containerdefaultargs)
 - [`ContainerEnvironmentVariable`](#containerenvironmentvariable)
-- [`ContainerImageFormat`](#containerimageformat)
-- [`ContainerImageTag`](#containerimagetag)
-- [`ContainerLabel`](#containerlabel)
 - [`ContainerPort`](#containerport)
-- [`ContainerRepository`](#containerrepository)
+- [`ContainerPublishInParallel`](#containerpublishinparallel)
 - [`ContainerUser`](#containeruser)
 - [`ContainerWorkingDirectory`](#containerworkingdirectory)
 
@@ -219,91 +322,6 @@ For more information, see [.NET environment variables](../tools/dotnet-environme
 > [!NOTE]
 > It's currently not possible to set environment variables from the .NET CLI when publishing a container image. For more information, see [GitHub: .NET SDK container builds](https://github.com/dotnet/sdk-container-builds/issues/451).
 
-### `ContainerImageFormat`
-
-You can use the `ContainerImageFormat` MSBuild property to specify the image format as either `Docker` or `OCI`. By default, the .NET tooling infers the format from the base image. For example, .NET base images use the Docker-specific format `application/vnd.docker.distribution.manifest.v2+json`. However, many modern tools prefer the OCI format `application/vnd.oci.image.manifest.v1+json`. To force a specific format, set the property as shown:
-
-```xml
-<PropertyGroup>
-  <ContainerImageFormat>OCI</ContainerImageFormat>
-</PropertyGroup>
-```
-
-Both formats are largely interchangeable without loss of information.
-
-> [!NOTE]
-> When building a multi-architecture image, the resulting image format is always OCI.
-
-### `ContainerImageTag`
-
-The container image tag property controls the tags that are generated for the image. To specify a single tag use `ContainerImageTag` and for multiple tags use `ContainerImageTags`.
-
-> [!IMPORTANT]
-> When you use `ContainerImageTags`, you end up with multiple images, one per unique tag.
-
-Tags are often used to refer to different versions of an app, but they can also refer to different operating system distributions, or even different configurations.
-
-Starting with .NET 8, when a tag isn't provided the default is `latest`.
-
-To override the default, specify either of the following properties:
-
-```xml
-<PropertyGroup>
-    <ContainerImageTag>1.2.3-alpha2</ContainerImageTag>
-</PropertyGroup>
-```
-
-To specify multiple tags, use a semicolon-delimited set of tags in the `ContainerImageTags` property, similar to setting multiple `TargetFrameworks`:
-
-```xml
-<PropertyGroup>
-    <ContainerImageTags>1.2.3-alpha2;latest</ContainerImageTags>
-</PropertyGroup>
-```
-
-Tags can only contain up to 127 alphanumeric characters, periods, underscores, and dashes. They must start with an alphanumeric character or an underscore. Any other form results in an error being thrown.
-
-> [!NOTE]
-> When using `ContainerImageTags` or any MSBuild property requiring `;`-delimited values, ensure proper escaping when calling `dotnet publish` from the command line, especially in CI/CD environments. Escaping rules differ between PowerShell and Bash. For example:
->
-> ```powershell
-> dotnet publish --os linux --arch x64 /t:PublishContainer /p:ContainerImageTags=`"1.2.3-alpha2`;latest`"
-> ```
->
-> In PowerShell, both the `;` and `"` characters need to be escaped.
->
-> ```bash
-> dotnet publish --os linux --arch x64 /t:PublishContainer /p:ContainerImageTags='"1.2.3-alpha2;latest"'
-> ```
->
-> In Bash, only the `"` character needs to be escaped.
->
-> This results in two images being generated: `my-app:1.2.3-alpha2` and `my-app:latest`.
-
-> [!TIP]
-> If you experience issues with the `ContainerImageTags` property, consider scoping an environment variable `ContainerImageTags` instead:
->
-> ```powershell
-> $Env:ContainerImageTags='1.2.3;latest'; dotnet publish --os linux --arch x64 /t:PublishContainer
-> ```
-
-### `ContainerLabel`
-
-The container label adds a metadata label to the container. Labels are often used to store version and authoring metadata for use by security scanners and other infrastructure tools. You can specify any number of container labels.
-
-The `ContainerLabel` node has two attributes:
-
-- `Include`: The key of the label.
-- `Value`: The value of the label (this might be empty).
-
-```xml
-<ItemGroup>
-    <ContainerLabel Include="org.contoso.businessunit" Value="contoso-university" />
-</ItemGroup>
-```
-
-For a list of labels that are created by default, see [default container labels](#default-container-labels).
-
 ### `ContainerPort`
 
 The container port adds Transmission Control Protocol (TCP) or User Datagram Protocol (UDP) ports to the list of known ports for the container. This enables container runtimes like Docker to map these ports to the host machine automatically. This is often used as documentation for the container, but can also be used to enable automatic port mapping.
@@ -327,17 +345,17 @@ Starting with .NET 8, the `ContainerPort` is inferred when not explicitly provid
 
 If these environment variables are present, their values are parsed and converted to TCP port mappings. These environment variables are read from your base image, if present, or from the environment variables defined in your project through `ContainerEnvironmentVariable` items. For more information, see [ContainerEnvironmentVariable](#containerenvironmentvariable).
 
-### `ContainerRepository`
+### `ContainerPublishInParallel`
 
-The container repository is the name of the image itself, for example, `dotnet/runtime` or `my-app`. By default, the `AssemblyName` of the project is used.
+For multi-RID containers, certain project types (like Blazor WebAssembly) might encounter build race conditions. To address this, starting with .NET SDK versions 8.0.408, 9.0.300, and 10.0, you can control the parallelism of the publish process using the `ContainerPublishInParallel` property. By default, publishing occurs in parallel for each Runtime Identifier (RID). Setting this property to `false` ensures sequential publishing, which increases stability but might take longer.
 
 ```xml
 <PropertyGroup>
-    <ContainerRepository>my-app</ContainerRepository>
+  <ContainerPublishInParallel>false</ContainerPublishInParallel>
 </PropertyGroup>
 ```
 
-Image names consist of one or more slash-delimited segments, each of which can only contain lowercase alphanumeric characters, periods, underscores, and dashes, and must start with a letter or number. Any other characters result in an error being thrown.
+For more information on multi-RID publishing, see [ContainerRuntimeIdentifier(s)](#containerruntimeidentifiers).
 
 ### `ContainerUser`
 
@@ -388,24 +406,6 @@ By default, the `/app` directory value is used as the working directory.
     <ContainerWorkingDirectory>/bin</ContainerWorkingDirectory>
 </PropertyGroup>
 ```
-
-## Flags that control execution metadata
-
-The following properties control runtime-specific execution behavior and multi-architecture image generation.
-
-- [`ContainerPublishInParallel`](#containerpublishinparallel)
-
-### `ContainerPublishInParallel`
-
-For multi-RID containers, certain project types (like Blazor WebAssembly) might encounter build race conditions. To address this, starting with .NET SDK versions 8.0.408, 9.0.300, and 10.0, you can control the parallelism of the publish process using the `ContainerPublishInParallel` property. By default, publishing occurs in parallel for each Runtime Identifier (RID). Setting this property to `false` ensures sequential publishing, which increases stability but might take longer.
-
-```xml
-<PropertyGroup>
-  <ContainerPublishInParallel>false</ContainerPublishInParallel>
-</PropertyGroup>
-```
-
-For more information on multi-RID publishing, see [ContainerRuntimeIdentifier(s)](#containerruntimeidentifiers).
 
 ## Flags that control the destination of the generated image
 

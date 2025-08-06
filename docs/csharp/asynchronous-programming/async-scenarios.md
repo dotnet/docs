@@ -167,6 +167,27 @@ If your program needs the result of a task, write code that implements the `awai
 | _Continue when **all** tasks complete_     | `Task.WaitAll`               | `await Task.WhenAll` |
 | _Continue after some amount of time_       | `Thread.Sleep`               | `await Task.Delay`   |
 
+### Consider using ValueTask type
+
+When an asynchronous method returns a `Task` object, performance bottlenecks might be introduced in certain paths. Because `Task` is a reference type, a `Task` object is allocated from the heap. If a method declared with the `async` modifier returns a cached result or completes synchronously, the extra allocations can accrue significant time costs in performance critical sections of code. This scenario can become costly when the allocations occur in tight loops. For more information, see [generalized async return types](../language-reference/keywords/async.md#return-types).
+
+### Understand when to set ConfigureAwait(false)
+
+Developers often inquire about when to use the <xref:System.Threading.Tasks.Task.ConfigureAwait(System.Boolean)?displayProperty=nameWithType> boolean. This API allows for a `Task` instance to configure the context for the state machine that implements any `await` expression. When the boolean isn't set correctly, performance can degrade or deadlocks can occur. For more information, see [ConfigureAwait FAQ](https://devblogs.microsoft.com/dotnet/configureawait-faq).
+
+### Write less-stateful code
+
+Avoid writing code that depends on the state of global objects or the execution of certain methods. Instead, depend only on the return values of methods. There are many benefits to writing code that is less-stateful:
+
+* Easier to reason about code
+* Easier to test code
+* More simple to mix asynchronous and synchronous code
+* Able to avoid race conditions in code
+* Simple to coordinate asynchronous code that depends on return values
+* (Bonus) Works well with dependency injection in code
+
+A recommended goal is to achieve complete or near-complete [Referential Transparency](https://en.wikipedia.org/wiki/Referential_transparency) in your code. This approach results in a predictable, testable, and maintainable codebase.
+
 ### Synchronous access to asynchronous operations
 
 In rare scenarios, you might need to block on asynchronous operations when the `await` keyword isn't available throughout your call stack. This situation commonly occurs in legacy codebases or when integrating asynchronous methods into synchronous APIs that can't be changed.
@@ -231,27 +252,6 @@ Problems with `Wait()` and `Result`:
 - **Exception handling**: Test error scenarios carefully as exception behavior differs between patterns
 
 For more detailed guidance on the challenges and considerations of synchronous wrappers for asynchronous methods, see [Should I expose synchronous wrappers for asynchronous methods?](https://devblogs.microsoft.com/pfxteam/should-i-expose-synchronous-wrappers-for-asynchronous-methods/).
-
-### Consider using ValueTask type
-
-When an asynchronous method returns a `Task` object, performance bottlenecks might be introduced in certain paths. Because `Task` is a reference type, a `Task` object is allocated from the heap. If a method declared with the `async` modifier returns a cached result or completes synchronously, the extra allocations can accrue significant time costs in performance critical sections of code. This scenario can become costly when the allocations occur in tight loops. For more information, see [generalized async return types](../language-reference/keywords/async.md#return-types).
-
-### Understand when to set ConfigureAwait(false)
-
-Developers often inquire about when to use the <xref:System.Threading.Tasks.Task.ConfigureAwait(System.Boolean)?displayProperty=nameWithType> boolean. This API allows for a `Task` instance to configure the context for the state machine that implements any `await` expression. When the boolean isn't set correctly, performance can degrade or deadlocks can occur. For more information, see [ConfigureAwait FAQ](https://devblogs.microsoft.com/dotnet/configureawait-faq).
-
-### Write less-stateful code
-
-Avoid writing code that depends on the state of global objects or the execution of certain methods. Instead, depend only on the return values of methods. There are many benefits to writing code that is less-stateful:
-
-* Easier to reason about code
-* Easier to test code
-* More simple to mix asynchronous and synchronous code
-* Able to avoid race conditions in code
-* Simple to coordinate asynchronous code that depends on return values
-* (Bonus) Works well with dependency injection in code
-
-A recommended goal is to achieve complete or near-complete [Referential Transparency](https://en.wikipedia.org/wiki/Referential_transparency) in your code. This approach results in a predictable, testable, and maintainable codebase.
 
 ## Review the complete example
 

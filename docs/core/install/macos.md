@@ -268,7 +268,7 @@ The .NET release notes contain a link to a checksum file you can use to validate
 
     :::image type="content" source="../media/install-sdk/release-notes-version.png" alt-text="The download table with checksums for .NET":::
 
-01. Right-click on the **Checksum** link, and copy the link to your clipboard.
+01. Right-click on the **Checksum** link and copy it to your clipboard.
 
 01. Open a terminal.
 

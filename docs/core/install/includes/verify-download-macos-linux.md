@@ -6,10 +6,19 @@ ms.topic: include
 ms.custom: linux-related-content
 ---
 
-Use the `sha512sum` command to print the checksum of the file you've downloaded. For example, the following command reports the checksum of the _dotnet-sdk-8.0.100-linux-x64.tar.gz_ file:
+Use the `sha512sum` command on Linux or `shasum -a 512` command on macOS to print the checksum of the file you've downloaded. For example, the following command reports the checksum of the _dotnet-sdk-8.0.100-linux-x64.tar.gz_ file:
+
+**Linux:**
 
 ```bash
 $ sha512sum dotnet-sdk-8.0.100-linux-x64.tar.gz
+13905ea20191e70baeba50b0e9bbe5f752a7c34587878ee104744f9fb453bfe439994d38969722bdae7f60ee047d75dda8636f3ab62659450e9cd4024f38b2a5  dotnet-sdk-8.0.100-linux-x64.tar.gz
+```
+
+**macOS:**
+
+```bash
+$ shasum -a 512 dotnet-sdk-8.0.100-linux-x64.tar.gz
 13905ea20191e70baeba50b0e9bbe5f752a7c34587878ee104744f9fb453bfe439994d38969722bdae7f60ee047d75dda8636f3ab62659450e9cd4024f38b2a5  dotnet-sdk-8.0.100-linux-x64.tar.gz
 ```
 
@@ -46,7 +55,9 @@ The .NET release notes contain a link to a checksum file you can use to validate
     curl -O https://builds.dotnet.microsoft.com/dotnet/checksums/8.0.0-sha.txt
     ```
 
-01. With both the checksum file and the .NET release file downloaded to the same directory, use the `sha512sum -c {file} --ignore-missing` command to validate the downloaded file.
+01. With both the checksum file and the .NET release file downloaded to the same directory, use the `sha512sum -c {file} --ignore-missing` command on Linux or `shasum -a 512 -c {file}` command on macOS to validate the downloaded file.
+
+    **Linux:**
 
     When validation passes, you see the file printed with the **OK** status:
 
@@ -62,4 +73,21 @@ The .NET release notes contain a link to a checksum file you can use to validate
     dotnet-sdk-8.0.100-linux-x64.tar.gz: FAILED
     sha512sum: WARNING: 1 computed checksum did NOT match
     sha512sum: 8.0.0-sha.txt: no file was verified
+    ```
+
+    **macOS:**
+
+    When validation passes, you see the file printed with the **OK** status:
+
+    ```bash
+    $ shasum -a 512 -c 8.0.0-sha.txt
+    dotnet-sdk-8.0.100-linux-x64.tar.gz: OK
+    ```
+
+    If you see the file marked as **FAILED**, the file you downloaded isn't valid and shouldn't be used.
+
+    ```bash
+    $ shasum -a 512 -c 8.0.0-sha.txt
+    dotnet-sdk-8.0.100-linux-x64.tar.gz: FAILED
+    shasum: WARNING: 1 computed checksum did NOT match
     ```

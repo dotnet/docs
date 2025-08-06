@@ -132,7 +132,7 @@ The **library** option causes the compiler to create a dynamic-link library (DLL
 
 ### exe
 
-The **exe** option causes the compiler to create an executable (EXE), console application. The executable file will be created with the .exe extension. Use **winexe** to create a Windows program executable. Unless otherwise specified with the [**OutputAssembly**](#outputassembly) option, the output file name takes the name of the input file that contains the entry point ([Main](../../fundamentals/program-structure/main-command-line.md) method or top-level statements). One and only one entry point is required in the source code files that are compiled into an .exe file. The [**StartupObject**](./advanced.md#mainentrypoint-or-startupobject) compiler option lets you specify which class contains the `Main` method, in cases where your code has more than one class with a `Main` method.  
+The **exe** option causes the compiler to create an executable (EXE), console application. The executable file will be created with the .exe extension. Use **winexe** to create a Windows program executable. Unless otherwise specified with the [**OutputAssembly**](#outputassembly) option, the output file name takes the name of the input file that contains the entry point ([Main](../../fundamentals/program-structure/main-command-line.md) method or top-level statements). One and only one entry point is required in the source code files that are compiled into an .exe file. The [**StartupObject**](./advanced.md#startupobject) compiler option lets you specify which class contains the `Main` method, in cases where your code has more than one class with a `Main` method.  
 
 ### module
 
@@ -140,7 +140,7 @@ This option causes the compiler to not generate an assembly manifest. By default
 
 ### winexe
 
-The **winexe** option causes the compiler to create an executable (EXE), Windows program. The executable file will be created with the .exe extension. A Windows program is one that provides a user interface from either the .NET library or with the Windows APIs. Use **exe** to create a console application. Unless otherwise specified with the [**OutputAssembly**](#outputassembly) option, the output file name takes the name of the input file that contains the [`Main`](../../fundamentals/program-structure/main-command-line.md) method. One and only one `Main` method is required in the source code files that are compiled into an .exe file. The [**StartupObject**](./advanced.md#mainentrypoint-or-startupobject) option lets you specify which class contains the `Main` method, in cases where your code has more than one class with a `Main` method.
+The **winexe** option causes the compiler to create an executable (EXE), Windows program. The executable file will be created with the .exe extension. A Windows program is one that provides a user interface from either the .NET library or with the Windows APIs. Use **exe** to create a console application. Unless otherwise specified with the [**OutputAssembly**](#outputassembly) option, the output file name takes the name of the input file that contains the [`Main`](../../fundamentals/program-structure/main-command-line.md) method. One and only one `Main` method is required in the source code files that are compiled into an .exe file. The [**StartupObject**](./advanced.md#startupobject) option lets you specify which class contains the `Main` method, in cases where your code has more than one class with a `Main` method.
 
 ### winmdobj
 

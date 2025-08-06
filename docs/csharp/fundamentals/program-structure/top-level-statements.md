@@ -38,7 +38,7 @@ You can write a `Main` method explicitly, but it can't function as an entry poin
 
 > CS7022 The entry point of the program is global code; ignoring 'Main()' entry point.
 
-In a project with top-level statements, you can't use the [-main](../../language-reference/compiler-options/advanced.md#mainentrypoint-or-startupobject) compiler option to select the entry point, even if the project has one or more `Main` methods.
+In a project with top-level statements, you can't use the [-main](../../language-reference/compiler-options/advanced.md#startupobject) compiler option to select the entry point, even if the project has one or more `Main` methods.
 
 ## `using` directives
 

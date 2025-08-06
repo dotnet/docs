@@ -51,7 +51,7 @@ Alternatively, use the NuGet CLI for the first package, then you can use `dotnet
 ## Options
 
 - **`--allow-insecure-connections`**
-  Allows pushing to HTTP sources (insecure).
+  Allows pushing to HTTP sources (insecure). For more information, refer to https://aka.ms/nuget-https-everywhere.
 
 - **`-d|--disable-buffering`**
 

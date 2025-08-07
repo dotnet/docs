@@ -258,7 +258,7 @@ The .NET release notes contain a link to a checksum file you can use to validate
 
 01. The release notes page for .NET 8 on GitHub at <https://github.com/dotnet/core/tree/main/release-notes/8.0#releases> contains a section named **Releases**. The table in that section links to the downloads and checksum files for each .NET 8 release:
 
-    :::image type="content" source="../media/install-sdk/release-notes-root.png" alt-text="The github release notes version table for .NET":::
+    :::image type="content" source="media/install-sdk/release-notes-root.png" alt-text="The github release notes version table for .NET":::
 
 01. Select the link for the version of .NET that you downloaded.
 
@@ -266,7 +266,7 @@ The .NET release notes contain a link to a checksum file you can use to validate
 
 01. In the release page, you can see the .NET Runtime and .NET SDK version, and a link to the checksum file:
 
-    :::image type="content" source="../media/install-sdk/release-notes-version.png" alt-text="The download table with checksums for .NET":::
+    :::image type="content" source="media/install-sdk/release-notes-version.png" alt-text="The download table with checksums for .NET":::
 
 01. Right-click on the **Checksum** link and copy it to your clipboard.
 

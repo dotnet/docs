@@ -1,12 +1,12 @@
 ---
-title: "Breaking change: Avoid duplicate messages in Console logging with JSON formatter"
-description: "Learn about the breaking change in .NET 10 where duplicate messages are avoided in Console logging with JSON formatter."
+title: "Breaking change: Message no longer duplicated in Console log output"
+description: "Learn about the breaking change in .NET 10 where `Message` is no longer duplicated in Console log output using the JSON formatter."
 ms.date: 01/15/2025
 ai-usage: ai-assisted
 ms.custom: https://github.com/dotnet/docs/issues/47006
 ---
 
-# Avoid duplicate messages in Console logging with JSON formatter
+# Message no longer duplicated in Console log output
 
 When logging to the console using the JSON formatter, log messages are no longer duplicated in the log output. Previously, messages typically appeared three times: once as the top-level `Message`, again within the `State` object, and a third time as the original format string.
 
@@ -35,7 +35,7 @@ As you can see, `Message` appears twice: once as the top-level `Message` and aga
 
 ## New behavior
 
-Starting in .NET 10, the log output looks like this:
+Starting in .NET 10, `Message` appears only at the top level and not inside the `State` object (typically). The log output looks like this:
 
 ```json
 {
@@ -48,8 +48,6 @@ Starting in .NET 10, the log output looks like this:
   }
 }
 ```
-
-`Message` is no longer duplicated. It now appears only at the top level, resulting in cleaner and more concise log output.
 
 ## Type of breaking change
 

@@ -50,11 +50,11 @@ items:
                 href: cryptography/10.0/x509-publickey-null.md
           - name: Extensions
             items:
-              - name: "Avoid duplicate messages in Console logging with JSON formatter"
+              - name: Message no longer duplicated in Console log output
                 href: extensions/10.0/console-json-logging-duplicate-messages.md
-              - name: "ProviderAliasAttribute moved to Microsoft.Extensions.Logging.Abstractions assembly"
+              - name: ProviderAliasAttribute moved to Microsoft.Extensions.Logging.Abstractions assembly
                 href: extensions/10.0/provideraliasattribute-moved-assembly.md
-              - name: "Removed DynamicallyAccessedMembers annotation from trim-unsafe Microsoft.Extensions.Configuration code"
+              - name: Removed DynamicallyAccessedMembers annotation from trim-unsafe Microsoft.Extensions.Configuration code
                 href: extensions/10.0/dynamically-accessed-members-configuration.md
           - name: Globalization
             items:

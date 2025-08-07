@@ -8,6 +8,10 @@ items:
         items:
           - name: Overview
             href: 10.0.md
+          - name: ASP.NET Core
+            items:
+              - name: IncludeOpenAPIAnalyzers property and MVC API analyzers are deprecated
+                href: aspnet-core/10.0/openapi-analyzers-deprecated.md
           - name: Containers
             items:
               - name: Default .NET images use Ubuntu

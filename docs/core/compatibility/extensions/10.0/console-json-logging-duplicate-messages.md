@@ -1,7 +1,7 @@
 ---
 title: "Breaking change: Message no longer duplicated in Console log output"
 description: "Learn about the breaking change in .NET 10 where `Message` is no longer duplicated in Console log output using the JSON formatter."
-ms.date: 01/15/2025
+ms.date: 08/07/2025
 ai-usage: ai-assisted
 ms.custom: https://github.com/dotnet/docs/issues/47006
 ---

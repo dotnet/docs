@@ -61,7 +61,7 @@ public static class Enumerable
 
 The members in the first extension block are called as though they're instance members of `IEnumerable<TSource>`, for example `sequence.IsEmpty`. The members in the second extension block are called as though they're static members of `IEnumerable<TSource>`, for example `IEnumerable<int>.Identity`.
 
-You can learn more details by reading the article on [extension members](../programming-guide/classes-and-structs/extension-methods.md) in the programming guide, the language reference article on the [`extension` keyword](../language-reference/keywords/extension.md), and the [feature specification](~/_csharplang/proposals/extensions.md) for the new extension members feature.
+You can learn more details by reading the article on [extension members](../programming-guide/classes-and-structs/extension-methods.md) in the programming guide, the language reference article on the [`extension` keyword](../language-reference/keywords/extension.md), and the [feature specification](~/_csharplang/proposals/csharp-14.0/extensions.md) for the new extension members feature.
 
 ## The `field` keyword
 
@@ -102,7 +102,7 @@ C# 14 introduces first-class support for <xref:System.Span`1?displayProperty=ful
 
 `Span<T>` and `ReadOnlySpan<T>` are used in many key ways in C# and the runtime. Their introduction improves performance without risking safety. C# 14 recognizes the relationship and supports some conversions between `ReadOnlySpan<T>`, `Span<T>`, and `T[]`. The span types can be extension method receivers, compose with other conversions, and help with generic type inference scenarios.
 
-You can find the list of implicit span conversions in the article on [built-in types](../language-reference/builtin-types/built-in-types.md) in the language reference section. You can learn more details by reading the feature specification for [First class span types](~/_csharplang/proposals/first-class-span-types.md).
+You can find the list of implicit span conversions in the article on [built-in types](../language-reference/builtin-types/built-in-types.md) in the language reference section. You can learn more details by reading the feature specification for [First class span types](~/_csharplang/proposals/csharp-14.0/first-class-span-types.md).
 
 ## Unbound generic types and `nameof`
 
@@ -140,7 +140,7 @@ The implementing declaration of a partial event must include `add` and `remove` 
 
 ## User defined compound assignment
 
-You can learn more in the feature specification for [user-defined compound assignment](~/_csharplang/proposals/user-defined-compound-assignment.md).
+You can learn more in the feature specification for [user-defined compound assignment](~/_csharplang/proposals/csharp-14.0/user-defined-compound-assignment.md).
 
 ## Null-conditional assignment
 
@@ -165,7 +165,7 @@ The right side of the `=` operator is evaluated only when the left side isn't nu
 
 In addition to assignment, you can use null-conditional member access operators with compound assignment operators (`+=`, `-=`, and others). However, increment and decrement, `++` and `--`, aren't allowed.
 
-You can learn more in the language reference article on the [conditional member access](../language-reference/operators/member-access-operators.md#null-conditional-operators--and-) and the feature specification for [null-conditional assignment](~/_csharplang/proposals/null-conditional-assignment.md).
+You can learn more in the language reference article on the [conditional member access](../language-reference/operators/member-access-operators.md#null-conditional-operators--and-) and the feature specification for [null-conditional assignment](~/_csharplang/proposals/csharp-14.0/null-conditional-assignment.md).
 
 ## See also
 

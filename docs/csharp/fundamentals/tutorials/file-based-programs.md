@@ -1,7 +1,7 @@
 ---
 title: Build file-based programs
 description: File-based programs are command line utilities that are built and execute without a project file. The build and run commands are implicit. New syntax supports project settings in source.
-ms.date: 08/01/2025
+ms.date: 08/08/2025
 ms.topic: tutorial
 #customer intent: As a developer, I want build utilities so that more work is automated.
 ---
@@ -188,7 +188,7 @@ Next, let's add command line parsing. The current version writes each work as a 
 
 Users should be able to use both.
 
-Most command line applications need to parse command line arguments to handle options, commands, and user input effectively. The [`System.CommandLine` library](~/standard/commandline/index.md) provides comprehensive capabilities to handle commands, subcommands, options, and arguments, allowing you to concentrate on what your application does rather than the mechanics of parsing command line input.
+Most command line applications need to parse command line arguments to handle options, commands, and user input effectively. The [`System.CommandLine` library](../../../standard/commandline/index.md) provides comprehensive capabilities to handle commands, subcommands, options, and arguments, allowing you to concentrate on what your application does rather than the mechanics of parsing command line input.
 
 The `System.CommandLine` library offers several key benefits:
 
@@ -308,17 +308,10 @@ Test the application by running several different commands. If you have trouble,
 
 :::code language="csharp" source="./snippets/file-based-programs/AsciiArt.cs":::
 
-## Next step -or- Related content
+In this tutorial, you learned to build a file-based program, where you build the program in a single C# file. These utilities don't need a project file, and can use the `#!` directive on unix systems. These programs provide a learning platform between our [online tutorials](../../tour-of-csharp/tutorials/hello-world.md) and larger project-based programs. They also are a great platform for smaller command line utilitie.
 
--or-
+## Related content
 
-* [Related article title](link.md)
-* [Related article title](link.md)
-* [Related article title](link.md)
-
-<!-- Optional: Next step or Related content - H2
-
-A "Related content" section that lists links to 
-1 to 3 articles the user might find helpful.
-
--->
+- [Top level statement](../program-structure/top-level-statements.md)
+- [Preprocessor directives](../../language-reference/preprocessor-directives.md#file-based-programs)
+- [What's new in C# 14](../../whats-new/csharp-14.md)

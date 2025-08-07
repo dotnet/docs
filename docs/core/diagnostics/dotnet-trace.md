@@ -60,6 +60,7 @@ The `dotnet-trace` tool:
 | Command                                                   |
 |-----------------------------------------------------------|
 | [dotnet-trace collect](#dotnet-trace-collect)             |
+| [dotnet-trace collect-linux](#dotnet-trace-collect-linux) |
 | [dotnet-trace convert](#dotnet-trace-convert)             |
 | [dotnet-trace ps](#dotnet-trace-ps)                       |
 | [dotnet-trace list-profiles](#dotnet-trace-list-profiles) |
@@ -264,6 +265,134 @@ dotnet-trace collect
 > - If you experience an unhandled exception while running `dotnet-trace collect`, this results in an incomplete trace. If finding the root cause of the exception is your priority, navigate to [Collect dumps on crash](collect-dumps-crash.md). As a result of the unhandled exception, the trace is truncated when the runtime shuts down to prevent other undesired behavior such as a hang or data corruption. Even though the trace is incomplete, you can still open it to see what happened leading up to the failure. However, it will be missing Rundown information (this happens at the end of a trace) so stacks might be unresolved (depending on what providers were turned on). Open the trace by executing PerfView with the `/ContinueOnError` flag at the command line. The logs will also contain the location the exception was fired.
 
 > - When specifying a stopping event through the `--stopping-event-*` options, as the EventStream is being parsed asynchronously, there will be some events that pass through between the time a trace event matching the specified stopping event options is parsed and the EventPipeSession is stopped.
+
+## dotnet-trace collect-linux
+
+Collects diagnostic traces from .NET applications using Linux user_events as a transport layer. This command provides the same functionality as [`dotnet-trace collect`](#dotnet-trace-collect) but routes .NET runtime events through the Linux kernel's user_events subsystem before writing them to `.nettrace` files.
+
+This transport approach enables automatic unification of user-space .NET events with kernel-space system events, since both are captured in the same kernel tracing infrastructure. Linux tools like `perf` and `ftrace` can monitor events in real-time while maintaining full compatibility with existing .NET profiling workflows.
+
+### Prerequisites
+
+- Linux kernel with `CONFIG_USER_EVENTS=y` support (kernel 6.4+)
+- Appropriate permissions to access `/sys/kernel/tracing/user_events_data`
+- .NET 10+
+
+### Synopsis
+
+```dotnetcli
+dotnet-trace collect-linux
+    [--buffersize <size>]
+    [--clreventlevel <clreventlevel>]
+    [--clrevents <clrevents>]
+    [--format <Chromium|NetTrace|Speedscope>]
+    [-h|--help]
+    [--duration dd:hh:mm:ss]
+    [-n, --name <name>]
+    [--diagnostic-port]
+    [-o|--output <trace-file-path>]
+    [-p|--process-id <pid>]
+    [--profile <profile-name>]
+    [--providers <list-of-comma-separated-providers>]
+    [-- <command>] (for target applications running .NET 10 or later)
+    [--show-child-io]
+    [--resume-runtime]
+    [--stopping-event-provider-name <stoppingEventProviderName>]
+    [--stopping-event-event-name <stoppingEventEventName>]
+    [--stopping-event-payload-filter <stoppingEventPayloadFilter>]
+    [--tracepoint-configs <list-of-comma-separated-tracepoint-configs>]
+    [--kernel-events <list-of-kernel-events>]
+```
+
+### Options
+
+`dotnet-trace collect-linux` supports all the same options as [`dotnet-trace collect`](#dotnet-trace-collect), excluding `--dsrouter`, and additionally offers:
+
+- **`--tracepoint-configs <list-of-comma-separated-tracepoint-configs>` (required)**
+
+  Defines the explicit mapping between EventPipe providers and kernel tracepoints. Each provider in `--providers` must have a corresponding entry in `--tracepoint-configs`
+
+  **Format:** `ProviderName:<DefaultTracepointName>:<TracepointSets>`
+
+  Where:
+  - `ProviderName`: The EventPipe provider name (e.g., `Microsoft-Windows-DotNETRuntime`)
+  - `DefaultTracepointName`: Default tracepoint name for this provider (can be empty to require explicit assignment)
+  - `TracepointSets`: Semi-colon delimited `TracepointName=<EventIds>`
+  - `EventIds`: Plus-delimited event IDs to route to that tracepoint
+
+  > [!NOTE]
+  > All tracepoint names are automatically prefixed with the provider name to avoid collisions. For example, `gc_events` for the `Microsoft-Windows-DotNETRuntime` provider becomes `Microsoft_Windows_DotNETRuntime_gc_events`.
+
+  **Examples:**
+  ```
+  # Scenario: All events from provider go to a default tracepoint
+  --tracepoint-configs "Microsoft-Windows-DotNETRuntime:dotnet_runtime"
+  # All enabled events from Microsoft-Windows-DotNETRuntime will be written to Microsoft_Windows_DotNETRuntime_dotnet_runtime
+  
+  # Scenario: Split events by categories
+  --tracepoint-configs "Microsoft-Windows-DotNETRuntime::gc_events=1+2+3;jit_events=10+11+12"
+  # EventIDs 1, 2, and 3 will be written to Microsoft_Windows_DotNETRuntime_gc_events
+  # EventIDs 10, 11, and 12 will be written to Microsoft_Windows_DotNETRuntime_jit_events
+
+  # Multiple providers (comma-separated)
+  --tracepoint-configs "Microsoft-Windows-DotNETRuntime::gc_events=1+2+3,MyCustomProvider:custom_events"
+  # EventIds 1, 2, and 3 from Microsoft-Windows-DotNETRuntime will be written to Microsoft_Windows_DotNETRuntime_gc_events
+  # All enabled events from MyCustomProvider will be written to MyCustomProvider_custom_events
+  ```
+
+- **`--kernel-events <list-of-kernel-events>` (optional)**
+
+  A comma-separated list of kernel event categories to include in the trace. These events are automatically grouped into kernel-named tracepoints. Available categories include:
+
+  | Category | Description | Linux Tracepoints |
+  |----------|-------------|-------------------|
+  | `syscalls` | System call entry/exit events | `syscalls:sys_enter_*`, `syscalls:sys_exit_*` |
+  | `sched` | Process scheduling events | `sched:sched_switch`, `sched:sched_wakeup` |
+  | `net` | Network-related events | `net:netif_rx`, `net:net_dev_xmit` |
+  | `fs` | Filesystem I/O events | `ext4:*`, `vfs:*` |
+  | `mm` | Memory management events | `kmem:*`, `vmscan:*` |
+
+  These events correspond to Linux kernel tracepoints documented in the [Linux kernel tracing documentation](https://www.kernel.org/doc/html/latest/trace/index.html). For more details on available tracepoints, see [ftrace](https://www.kernel.org/doc/html/latest/trace/ftrace.html) and [tracepoints](https://www.kernel.org/doc/html/latest/trace/tracepoints.html).
+
+  Example: `--kernel-events syscalls,sched,net`
+
+### Linux Integration
+
+**Tracepoint Configuration Requirements:**
+
+- **Mandatory Mapping**: Every provider must be explicitly mapped to at least a default tracepoint and/or exclusive tracepoint sets via `--tracepoint-configs`
+- **Tracepoint Isolation**: Each tracepoint can only receive events from one provider
+- **Event Routing**: Different event IDs within a provider can be routed to different tracepoints for granular control
+- **Automatic Prefixing**: All tracepoint names are prefixed with the provider name to avoid collisions
+
+**Kernel Integration Points:**
+
+The kernel tracepoints can be accessed through standard Linux tracing interfaces:
+
+- **ftrace**: `/sys/kernel/tracing/events/user_events/`
+- **perf**: Use `perf list user_events*` to see available events
+- **System monitoring tools**: Any tool that can consume Linux tracepoints
+
+### Examples
+
+```dotnetcli
+# All runtime events to one tracepoint
+dotnet-trace collect-linux --process-id 1234 \
+    --providers Microsoft-Windows-DotNETRuntime:0x8000:5 \
+    --kernel-events syscalls,sched \
+    --tracepoint-configs "Microsoft-Windows-DotNETRuntime:dotnet_runtime"
+
+# Split runtime events by category
+dotnet-trace collect-linux --process-id 1234 \
+    --providers Microsoft-Windows-DotNETRuntime:0x8001:5 \
+    --kernel-events syscalls,sched,net,fs \
+    --tracepoint-configs "Microsoft-Windows-DotNETRuntime::exception_events=80;gc_events=1+2"
+
+# Multiple providers
+dotnet-trace collect-linux --process-id 1234 \
+    --providers "Microsoft-Windows-DotNETRuntime:0x8001:5,MyCustomProvider:0xFFFFFFFF:5" \
+    --tracepoint-configs "Microsoft-Windows-DotNETRuntime:dotnet_runtime,MyCustomProvider:custom_events"
+```
 
 ## dotnet-trace convert
 

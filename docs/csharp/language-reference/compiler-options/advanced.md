@@ -56,7 +56,7 @@ You add any of these options in a `<PropertyGroup>` element in your `*.csproj` f
 
 ## MainEntryPoint or StartupObject
 
-This option specifies the class that contains the entry point to the program, if more than one class contains a `Main` method.
+This option specifies the class that contains the entry point to the program when your compilation includes more than one type with a `Main` method. When there's exactly one acceptable `Main` method in the project, this option is ignored.
 
 ```xml
 <StartupObject>MyNamespace.Program</StartupObject>
@@ -68,7 +68,7 @@ or
 <MainEntryPoint>MyNamespace.Program</MainEntryPoint>
 ```
 
-Where `Program` is the type that contains the `Main` method. The provided class name must be fully qualified; it must include the full namespace containing the class, followed by the class name. For example, when the `Main` method is located inside the `Program` class in the `MyApplication.Core` namespace, the compiler option has to be `-main:MyApplication.Core.Program`. If your compilation includes more than one type with a [`Main`](../../fundamentals/program-structure/main-command-line.md) method, you can specify which type contains the `Main` method.
+Where `Program` is the type that contains the `Main` method. When this option is required (multiple `Main` methods exist), the provided class name must be fully qualified; it must include the full namespace containing the class, followed by the class name. For example, when the `Main` method is located inside the `Program` class in the `MyApplication.Core` namespace, the compiler option has to be `-main:MyApplication.Core.Program`. If the class is in the global namespace, the fully qualified name is the same as the simple class name (for example, `Program` instead of `MyNamespace.Program`).
 
 > [!NOTE]
 > This option can't be used for a project that includes [top-level statements](../../fundamentals/program-structure/top-level-statements.md), even if that project contains one or more `Main` methods.

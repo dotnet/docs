@@ -26,17 +26,9 @@ In this tutorial, you:
 
 ## Prerequisites
 
-- The .NET 10 preview SDK. Download it [here](https://dotnet.microsoft.com/download/dotnet/10.0).
-- Visual Studio Code. Download it [here](https://code.visualstudio.com/Download).
-- (Optional) The C# DevKit extension for Visual Studio code. Download it [here](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit).
-
-If you install the C# DevKit, add this setting:
-
-```json
-"dotnet.projects.enableFileBasedPrograms": true
-```
-
-Or, in the UI, it's under "Extensions", C#, LSP Server, Dotnet->Projects: Enable File Based programs".
+- The .NET 10 preview SDK. Download it from the [.NET download site](https://dotnet.microsoft.com/download/dotnet/10.0).
+- Visual Studio Code. Download it from the [Visual Studio Code homepage](https://code.visualstudio.com/Download).
+- (Optional) The C# DevKit extension for Visual Studio Code. Download it from the [Visual Studio Code marketplace](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit).
 
 ## Create a file-based program
 

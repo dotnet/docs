@@ -70,7 +70,7 @@ Common pointer types:
 
 - `int* p`: pointer to `int`
 - `int** p`: pointer to pointer to `int`
-- `int*[] p`: array of `int` pointers
+- `int*[] p`: array of pointers to `int`
 - `char* p`: pointer to `char`
 - `void* p`: pointer to unknown type
 

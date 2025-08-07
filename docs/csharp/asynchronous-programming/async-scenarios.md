@@ -130,7 +130,27 @@ You can write this code more succinctly by using LINQ:
 
 :::code language="csharp" source="snippets/async-scenarios/Program.cs" ID="GetUsersForDatasetByLINQ":::
 
-Although you write less code by using LINQ, exercise caution when mixing LINQ with asynchronous code. LINQ uses deferred (or lazy) execution. Asynchronous calls don't happen immediately as they do in a `foreach` loop, unless you force the generated sequence to iterate with a call to the `.ToList()` or `.ToArray()` method. This example uses the <xref:System.Linq.Enumerable.ToArray%2A?displayProperty=nameWithType> method to perform the query eagerly and store the results in an array. This approach forces the `id => GetUserAsync(id)` statement to run and initiate the task.
+Although you write less code by using LINQ, exercise caution when mixing LINQ with asynchronous code. LINQ uses deferred (or lazy) execution, which means that without immediate evaluation, async calls don't happen until the sequence is enumerated.
+
+The previous example is correct and safe, because it uses the <xref:System.Linq.Enumerable.ToArray%2A?displayProperty=nameWithType> method to immediately evaluate the LINQ query and store the tasks in an array. This approach ensures the `id => GetUserAsync(id)` calls execute immediately and all tasks start concurrently, just like the `foreach` loop approach.
+
+**Problematic approach** (without immediate evaluation):
+
+```csharp
+// DON'T do this - tasks won't start until enumerated.
+var getUserTasks = userIds.Select(id => GetUserAsync(id)); // No .ToArray()!
+return await Task.WhenAll(getUserTasks); // Tasks start here.
+```
+
+**Recommended approach**:
+
+```csharp
+// DO this - tasks start immediately.
+var getUserTasks = userIds.Select(id => GetUserAsync(id)).ToArray();
+return await Task.WhenAll(getUserTasks);
+```
+
+Always use <xref:System.Linq.Enumerable.ToArray%2A?displayProperty=nameWithType> or <xref:System.Linq.Enumerable.ToList%2A?displayProperty=nameWithType> when creating tasks with LINQ to ensure immediate execution and concurrent task execution.
 
 ## Review considerations for asynchronous programming
 

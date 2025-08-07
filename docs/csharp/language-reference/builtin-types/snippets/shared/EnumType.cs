@@ -8,6 +8,7 @@ public static class EnumType
     {
         FlagsEnumExample.Main();
         EnumConversionExample.Main();
+        ZeroConversionExample.Main();
     }
 
     // <SnippetFlags>
@@ -76,4 +77,50 @@ public static class EnumType
         }
     }
     // </SnippetConversions>
+
+    // <SnippetZeroConversions>
+    public enum GpioPort
+    {
+        GpioA = 1,
+        GpioB,
+        GpioC,
+        GpioD
+    }
+
+    public class ZeroConversionExample
+    {
+        public static void Main()
+        {
+            // This compiles without warning but creates an invalid enum value
+            GpioPort port1 = (GpioPort)0;
+            Console.WriteLine($"port1: {port1}"); // Output: port1: 0
+
+            // This also compiles due to implicit conversion from zero
+            GpioPort port2 = GetPort(0);
+            Console.WriteLine($"port2: {port2}"); // Output: port2: 0
+
+            // Check if the enum value is valid
+            bool isValid1 = Enum.IsDefined(typeof(GpioPort), port1);
+            bool isValid2 = Enum.IsDefined(typeof(GpioPort), port2);
+            Console.WriteLine($"port1 is valid: {isValid1}"); // Output: port1 is valid: False
+            Console.WriteLine($"port2 is valid: {isValid2}"); // Output: port2 is valid: False
+
+            // Safer approach - validate enum values
+            if (Enum.IsDefined(typeof(GpioPort), 0))
+            {
+                GpioPort safePort = (GpioPort)0;
+            }
+            else
+            {
+                Console.WriteLine("Value 0 is not a valid GpioPort");
+                // Handle the invalid case appropriately
+            }
+        }
+
+        public static GpioPort GetPort(GpioPort port)
+        {
+            return port;
+        }
+    }
+    // </SnippetZeroConversions>
 }

@@ -12,7 +12,7 @@ This section describes features and behaviors that are specific to the .NET Fram
  <xref:System.Data.SqlClient> provides access to versions of SQL Server, which encapsulates database-specific protocols. The functionality of the data provider is designed to be similar to that of the .NET Framework data providers for OLE DB, ODBC, and Oracle. <xref:System.Data.SqlClient> includes a tabular data stream (TDS) parser to communicate directly with SQL Server.
 
 > [!NOTE]
-> To use the .NET Framework Data Provider for SQL Server, an application must reference the <xref:System.Data.SqlClient> namespace.
+> The <xref:System.Data.SqlClient> namespace is not under active development. Use the Microsoft.Data.SqlClient namespace, which has been available since 2019.
 
 ## In This Section
 

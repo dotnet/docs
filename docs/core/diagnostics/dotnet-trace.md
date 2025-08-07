@@ -43,7 +43,7 @@ The `dotnet-trace` tool:
 * Is a cross-platform .NET Core tool.
 * Enables the collection of .NET Core traces of a running process without a native profiler.
 * Is built on [`EventPipe`](./eventpipe.md) of the .NET Core runtime.
-* Delivers the same experience on Windows, Linux, or macOS.
+* On Linux, provides additional integration with kernel user_events for native tracing tool compatibility.
 
 ## Options
 
@@ -54,10 +54,6 @@ The `dotnet-trace` tool:
 - **`--version`**
 
   Displays the version of the dotnet-trace utility.
-
-- **`--duration`**
-
-  How long to run the trace. `--duration 00:00:00:05` will run it for 5 seconds.
 
 ## Commands
 
@@ -76,13 +72,23 @@ Collects a diagnostic trace from a running process or launches a child process a
 ### Synopsis
 
 ```dotnetcli
-dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--clrevents <clrevents>]
+dotnet-trace collect
+    [--buffersize <size>]
+    [--clreventlevel <clreventlevel>]
+    [--clrevents <clrevents>]
     [--dsrouter <ios|ios-sim|android|android-emu>]
-    [--format <Chromium|NetTrace|Speedscope>] [-h|--help] [--duration dd:hh:mm:ss]
-    [-n, --name <name>] [--diagnostic-port] [-o|--output <trace-file-path>] [-p|--process-id <pid>]
-    [--profile <profile-name>] [--providers <list-of-comma-separated-providers>]
+    [--format <Chromium|NetTrace|Speedscope>]
+    [-h|--help]
+    [--duration dd:hh:mm:ss]
+    [-n, --name <name>]
+    [--diagnostic-port]
+    [-o|--output <trace-file-path>]
+    [-p|--process-id <pid>]
+    [--profile <profile-name>]
+    [--providers <list-of-comma-separated-providers>]
     [-- <command>] (for target applications running .NET 5 or later)
-    [--show-child-io] [--resume-runtime]
+    [--show-child-io]
+    [--resume-runtime]
     [--stopping-event-provider-name <stoppingEventProviderName>]
     [--stopping-event-event-name <stoppingEventEventName>]
     [--stopping-event-payload-filter <stoppingEventPayloadFilter>]
@@ -158,7 +164,7 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
 
 - **`--dsrouter {ios|ios-sim|android|android-emu}**
 
- Starts [dotnet-dsrouter](dotnet-dsrouter.md) and connects to it. Requires [dotnet-dsrouter](dotnet-dsrouter.md) to be installed. Run `dotnet-dsrouter -h` for more information.
+  Starts [dotnet-dsrouter](dotnet-dsrouter.md) and connects to it. Requires [dotnet-dsrouter](dotnet-dsrouter.md) to be installed. Run `dotnet-dsrouter -h` for more information.
 
 - **`--format {Chromium|NetTrace|Speedscope}`**
 
@@ -204,11 +210,11 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
 
   A named pre-defined set of provider configurations that allows common tracing scenarios to be specified succinctly. The following profiles are available:
 
- | Profile | Description |
- |---------|-------------|
- |`cpu-sampling`|Useful for tracking CPU usage and general .NET runtime information. This is the default option if no profile or providers are specified.|
- |`gc-verbose`|Tracks GC collections and samples object allocations.|
- |`gc-collect`|Tracks GC collections only at very low overhead.|
+  | Profile | Description |
+  |---------|-------------|
+  |`cpu-sampling`|Useful for tracking CPU usage and general .NET runtime information. This is the default option if no profile or providers are specified.|
+  |`gc-verbose`|Tracks GC collections and samples object allocations.|
+  |`gc-collect`|Tracks GC collections only at very low overhead.|
 
 - **`--providers <list-of-comma-separated-providers>`**
 

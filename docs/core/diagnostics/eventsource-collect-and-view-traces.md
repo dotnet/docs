@@ -214,7 +214,7 @@ into other formats, such as Chromium or [Speedscope](https://www.speedscope.app/
    Trace completed.
    ```
 
-   dotnet-trace uses the [conventional text format](#conventions-for-describing-provider-configuration) for describing provider configuration in
+   dotnet-trace uses a comma-delimited variant of the [conventional text format](#conventions-for-describing-provider-configuration) for describing provider configuration in
    the `--providers` argument. For more options on how to take traces using dotnet-trace, see the
    [dotnet-trace docs](./dotnet-trace.md#collect-a-trace-with-dotnet-trace).
 

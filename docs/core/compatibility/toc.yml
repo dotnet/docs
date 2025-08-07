@@ -52,6 +52,8 @@ items:
             items:
               - name: Message no longer duplicated in Console log output
                 href: extensions/10.0/console-json-logging-duplicate-messages.md
+              - name: Null values preserved in configuration
+                href: extensions/10.0/configuration-null-values-preserved.md
               - name: ProviderAliasAttribute moved to Microsoft.Extensions.Logging.Abstractions assembly
                 href: extensions/10.0/provideraliasattribute-moved-assembly.md
               - name: Removed DynamicallyAccessedMembers annotation from trim-unsafe Microsoft.Extensions.Configuration code

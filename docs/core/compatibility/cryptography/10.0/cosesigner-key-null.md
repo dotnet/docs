@@ -1,7 +1,7 @@
 ---
 title: "Breaking change - CoseSigner.Key may now be null"
 description: "Learn about the breaking change in .NET 10 where CoseSigner.Key may now be null when backed by Post-Quantum Cryptography algorithms."
-ms.date: 01/25/2025
+ms.date: 08/07/2025
 ai-usage: ai-assisted
 ms.custom: https://github.com/dotnet/docs/issues/46999
 ---

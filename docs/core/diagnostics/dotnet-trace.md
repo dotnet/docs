@@ -93,6 +93,7 @@ dotnet-trace collect
     [--stopping-event-provider-name <stoppingEventProviderName>]
     [--stopping-event-event-name <stoppingEventEventName>]
     [--stopping-event-payload-filter <stoppingEventPayloadFilter>]
+    [--event-filters <list-of-comma-separated-event-filters>]
 ```
 
 ### Options
@@ -256,6 +257,34 @@ dotnet-trace collect
 
   A string, parsed as [payload_field_name]:[payload_field_value] pairs separated by commas, that will stop the trace upon hitting an event containing all specified payload pairs. Requires `--stopping-event-provider-name` and `--stopping-event-event-name` to be set. for example, `--stopping-event-provider-name Microsoft-Windows-DotNETRuntime --stopping-event-event-name Method/JittingStarted --stopping-event-payload-filter MethodNameSpace:Program,MethodName:OnButtonClick` to stop the trace upon the first `Method/JittingStarted` event for the method `OnButtonClick` in the `Program` namespace emitted by the `Microsoft-Windows-DotNETRuntime` event provider.
 
+- **`--event-filters <list-of-comma-separated-event-filters>`**
+
+  Defines an additional optional filter for each provider's events. When no `--event-filters` is specified for a provider, all events allowed by the provider's keywords and level configuration are collected. Event filters provide additional granular control beyond the keyword/level filtering.
+
+  **Format:** `ProviderName:<Enable>:<EventIds>`
+
+  Where:
+  - `ProviderName`: The EventPipe provider name (e.g., `Microsoft-Windows-DotNETRuntime`)
+  - `Enable` : Boolean value indicating whether EventIds will be enabled or disabled, defaults to false
+  - `EventIds`: Plus-delimited event IDs to enable or disable, defaults to empty.
+
+  **Examples:**
+  ```
+  # Scenario: Disable specific events from Microsoft-Windows-DotNETRuntime
+  --event-filters "Microsoft-Windows-DotNETRuntime:false:1+2+3+4+5+6+7+8+9"
+
+  # Scenario: Enable specific events from a provider
+  --event-filters "Microsoft-Windows-DotNETRuntime:true:80+129+130+250"
+  # Only events 80, 129, 130, and 250 will be collected from this provider (others are filtered out)
+
+  # Scenario: Multiple providers with mixed filtering - some providers have no filters
+  --providers "Microsoft-Windows-DotNETRuntime:0xFFFFFFFF:5,System.Threading.Tasks.TplEventSource:0xFFFFFFFF:5,MyCustomProvider:0xFFFFFFFF:5"
+  --event-filters "Microsoft-Windows-DotNETRuntime:false:1+2+3,System.Threading.Tasks.TplEventSource:true:7+8+9"
+  # Microsoft-Windows-DotNETRuntime: All events EXCEPT 1,2,3 are collected
+  # System.Threading.Tasks.TplEventSource: ONLY events 7,8,9 are collected
+  # MyCustomProvider: ALL events are collected (no filter specified - follows provider keywords/level)
+  ```
+
 > [!NOTE]
 
 > - Stopping the trace may take a long time (up to minutes) for large applications. The runtime needs to send over the type cache for all managed code that was captured in the trace.
@@ -300,6 +329,7 @@ dotnet-trace collect-linux
     [--stopping-event-provider-name <stoppingEventProviderName>]
     [--stopping-event-event-name <stoppingEventEventName>]
     [--stopping-event-payload-filter <stoppingEventPayloadFilter>]
+    [--event-filters <list-of-comma-separated-event-filters>]
     [--tracepoint-configs <list-of-comma-separated-tracepoint-configs>]
     [--kernel-events <list-of-kernel-events>]
 ```
@@ -322,6 +352,9 @@ dotnet-trace collect-linux
 
   > [!NOTE]
   > All tracepoint names are automatically prefixed with the provider name to avoid collisions. For example, `gc_events` for the `Microsoft-Windows-DotNETRuntime` provider becomes `Microsoft_Windows_DotNETRuntime_gc_events`.
+
+  > [!TIP]
+  > Use `--event-filters` to disable specific events before they are routed to tracepoints. Event filtering happens before tracepoint routing - only events that pass the filter will be sent to their assigned tracepoints.
 
   **Examples:**
   ```

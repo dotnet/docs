@@ -128,7 +128,7 @@ If the version of .NET you want isn't available, try using one of the following 
 
 ### I'm using the IBM System Z or Power platform
 
-Starting with .NET 8 on Ubuntu 22.04, Canonical supports .NET for the IBM System Z and Power platforms. This support will now continue for every .NET release going forward.
+Starting with .NET 8 on Ubuntu 22.04, Canonical supports .NET for the IBM System Z and Power platforms. This support will continue for every .NET release going forward.
 
 Install .NET through the built-in Ubuntu feed. For more information, see the following page:
 

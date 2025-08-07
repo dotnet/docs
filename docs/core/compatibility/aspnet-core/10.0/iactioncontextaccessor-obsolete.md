@@ -1,14 +1,14 @@
 ---
 title: "IActionContextAccessor and ActionContextAccessor are obsolete"
 description: "Learn about the breaking change in ASP.NET Core 10 where IActionContextAccessor and ActionContextAccessor are marked as obsolete."
-ms.date: 01/08/2025
+ms.date: 08/07/2025
 ai-usage: ai-assisted
 ms.custom: https://github.com/aspnet/Announcements/issues/520
 ---
 
 # IActionContextAccessor and ActionContextAccessor are obsolete
 
-`IActionContextAccessor` and `ActionContextAccessor` have been marked as obsolete in ASP.NET Core 10 with diagnostic ID `ASPDEPR006`. With the introduction of endpoint routing, `IActionContextAccessor` is no longer necessary as developers can access action descriptor and metadata information directly through `HttpContext.GetEndpoint()`.
+<xref:Microsoft.AspNetCore.Mvc.Infrastructure.IActionContextAccessor> and <xref:Microsoft.AspNetCore.Mvc.Infrastructure.ActionContextAccessor> have been marked as obsolete with diagnostic ID `ASPDEPR006`. With the introduction of endpoint routing, `IActionContextAccessor` is no longer necessary as developers can access action descriptor and metadata information directly through `HttpContext.GetEndpoint()`.
 
 ## Version introduced
 
@@ -16,38 +16,36 @@ ms.custom: https://github.com/aspnet/Announcements/issues/520
 
 ## Previous behavior
 
-Developers could use `IActionContextAccessor` to access the current `ActionContext`:
+Previously, you could use `IActionContextAccessor` to access the current <xref:Microsoft.AspNetCore.Mvc.ActionContext>:
 
 ```csharp
 public class MyService
 {
    private readonly IActionContextAccessor _actionContextAccessor;
-   
+
    public MyService(IActionContextAccessor actionContextAccessor)
    {
        _actionContextAccessor = actionContextAccessor;
    }
-   
+
    public void DoSomething()
    {
        var actionContext = _actionContextAccessor.ActionContext;
        var actionDescriptor = actionContext?.ActionDescriptor;
-       // Use action descriptor metadata
+       // Use action descriptor metadata.
    }
 }
 ```
 
 ## New behavior
 
-Using `IActionContextAccessor` and `ActionContextAccessor` produces a compiler warning with diagnostic ID `ASPDEPR006`:
+Starting in .NET 10, using `IActionContextAccessor` and `ActionContextAccessor` produces a compiler warning with diagnostic ID `ASPDEPR006`:
 
-```
-warning ASPDEPR006: ActionContextAccessor is obsolete and will be removed in a future version. For more information, visit https://aka.ms/aspnet/deprecate/006.
-```
+> warning ASPDEPR006: ActionContextAccessor is obsolete and will be removed in a future version. For more information, visit <https://aka.ms/aspnet/deprecate/006>.
 
 ## Type of breaking change
 
-This change can affect [source compatibility](../../categories.md#source-compatibility) and is a [behavioral change](../../categories.md#behavioral-change).
+This change can affect [source compatibility](../../categories.md#source-compatibility).
 
 ## Reason for change
 
@@ -55,20 +53,20 @@ With the introduction of endpoint routing in ASP.NET Core, `IActionContextAccess
 
 ## Recommended action
 
-Migrate from `IActionContextAccessor` to `IHttpContextAccessor` and use `HttpContext.GetEndpoint()`:
+Migrate from `IActionContextAccessor` to <xref:Microsoft.AspNetCore.Http.IHttpContextAccessor> and use `HttpContext.GetEndpoint()`:
 
-**Before:**
+Before:
 
 ```csharp
 public class MyService
 {
    private readonly IActionContextAccessor _actionContextAccessor;
-   
+
    public MyService(IActionContextAccessor actionContextAccessor)
    {
        _actionContextAccessor = actionContextAccessor;
    }
-   
+
    public void DoSomething()
    {
        var actionContext = _actionContextAccessor.ActionContext;
@@ -78,24 +76,24 @@ public class MyService
 }
 ```
 
-**After:**
+After:
 
 ```csharp
 public class MyService
 {
    private readonly IHttpContextAccessor _httpContextAccessor;
-   
+
    public MyService(IHttpContextAccessor httpContextAccessor)
    {
        _httpContextAccessor = httpContextAccessor;
    }
-   
+
    public void DoSomething()
    {
        var httpContext = _httpContextAccessor.HttpContext;
        var endpoint = httpContext?.GetEndpoint();
        var actionDescriptor = endpoint?.Metadata.GetMetadata<ActionDescriptor>();
-       // Use action descriptor metadata
+       // Use action descriptor metadata.
    }
 }
 ```

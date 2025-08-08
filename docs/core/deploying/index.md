@@ -187,7 +187,7 @@ dotnet publish -c Release -r win-x64 --self-contained -p:PublishReadyToRun=true
 
 ## See also
 
-- [Deploying .NET Apps with .NET CLI.](deploy-with-cli.md)
-- [Deploying .NET Apps with Visual Studio.](deploy-with-vs.md)
+- [Deploying .NET Apps with .NET CLI.](publish-with-cli.md)
+- [Deploying .NET Apps with Visual Studio.](publish-with-vs.md)
 - [.NET Runtime Identifier (RID) catalog.](../rid-catalog.md)
 - [Select the .NET version to use.](../versions/selection.md)

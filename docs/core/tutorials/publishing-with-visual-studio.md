@@ -64,11 +64,11 @@ In the following steps, you'll look at the files created by the publish process.
 
    - *HelloWorld.dll*
 
-      This is the [framework-dependent deployment](../deploying/deploy-with-cli.md#framework-dependent-deployment) version of the application. To execute this dynamic link library, enter `dotnet HelloWorld.dll` at a command prompt. This method of running the app works on any platform that has the .NET runtime installed.
+      This is the [framework-dependent deployment](../deploying/publish-with-cli.md#framework-dependent-deployment) version of the application. To execute this dynamic link library, enter `dotnet HelloWorld.dll` at a command prompt. This method of running the app works on any platform that has the .NET runtime installed.
 
    - *HelloWorld.exe*
 
-      This is the [framework-dependent executable](../deploying/deploy-with-cli.md#framework-dependent-executable) version of the application. To run it, enter `HelloWorld.exe` at a command prompt. The file is operating-system-specific.
+      This is the [framework-dependent executable](../deploying/publish-with-cli.md#framework-dependent-executable) version of the application. To run it, enter `HelloWorld.exe` at a command prompt. The file is operating-system-specific.
 
    - *HelloWorld.pdb* (optional for deployment)
 
@@ -103,7 +103,7 @@ In the following steps, you'll look at the files created by the publish process.
 ## Additional resources
 
 - [.NET application deployment](../deploying/index.md)
-- [Publish .NET apps with the .NET CLI](../deploying/deploy-with-cli.md)
+- [Publish .NET apps with the .NET CLI](../deploying/publish-with-cli.md)
 - [`dotnet publish`](../tools/dotnet-publish.md)
 - [Tutorial: Publish a .NET console application using Visual Studio Code](publishing-with-visual-studio-code.md)
 - [Use the .NET SDK in continuous integration (CI) environments](../../devops/dotnet-cli-and-continuous-integration.md)

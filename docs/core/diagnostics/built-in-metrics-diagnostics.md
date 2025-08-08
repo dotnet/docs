@@ -87,7 +87,7 @@ The instrument is only available on a system running on containers both on Windo
 | ---- | --------------- | ----------- | ----------- |
 | `container.cpu.limit.utilization` | ObservableGauge | `1` | The CPU consumption of the running containerized application relative to resource limit in range `[0, 1]`. |
 
-Available starting in: .NET 8.0.
+Available starting in: .NET 8 (servicing).
 
 ##### Metric: `container.cpu.request.utilization`
 
@@ -97,7 +97,7 @@ The instrument is only available on a system running on containers on Linux.
 | ---- | --------------- | ----------- | ----------- |
 | `container.cpu.request.utilization` | ObservableGauge | `1` | The CPU consumption of the running containerized application relative to resource request in range `[0, 1]`. |
 
-Available starting in: .NET 8.0.
+Available starting in: .NET 8 (servicing).
 
 ##### Metric: `container.cpu.time`
 
@@ -107,7 +107,7 @@ The instrument is only available on a system running on a container either on Wi
 | ---- | --------------- | ----------- | ----------- |
 | `container.cpu.time` | ObservableCounter | `s` | CPU time used by the container. |
 
-Available starting in: .NET 9.0.
+Available starting in: .NET 9 (servicing).
 
 ##### Metric: `container.memory.limit.utilization`
 
@@ -117,7 +117,7 @@ The instrument is only available on a system running on containers both on Windo
 | ---- | --------------- | ----------- | ----------- |
 | `container.memory.limit.utilization` | ObservableGauge | `1` | The memory consumption of the running containerized application relative to resource limit in range `[0, 1]`. |
 
-Available starting in: .NET 8.0.
+Available starting in: .NET 8 (servicing).
 
 ##### Metric: `container.memory.usage`
 
@@ -127,7 +127,7 @@ The instrument is only available on a system running on containers either on Win
 | ---- | --------------- | ----------- | ----------- |
 | `container.memory.usage` | ObservableUpDownCounter | `By` | Memory usage of all processes in the container measured in bytes. |
 
-Available starting in: .NET 9.0.
+Available starting in: .NET 9 (servicing).
 
 ##### Metric: `process.cpu.utilization`
 

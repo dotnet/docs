@@ -10,7 +10,7 @@ ms.custom: https://github.com/aspnet/Announcements/issues/525
 
 By default, unauthenticated and unauthorized requests made to known API endpoints protected by cookie authentication now result in 401 and 403 responses rather than redirecting to a login or access-denied URI.
 
-Known API [endpoints](/aspnet/core/fundamentals/routing) are identified using the new <xref:Microsoft.AspNetCore.Http.Metadata.IApiEndpointMetadata> interface, and metadata implementing the new interface has been added automatically to the following:
+Known API [endpoints](/aspnet/core/fundamentals/routing) are identified using the new `IApiEndpointMetadata` <!--xref:Microsoft.AspNetCore.Http.Metadata.IApiEndpointMetadata--> interface, and metadata implementing the new interface has been added automatically to the following:
 
 - [`[ApiController]`](xref:Microsoft.AspNetCore.Mvc.ApiControllerAttribute) endpoints.
 - Minimal API endpoints that read JSON request bodies or write JSON responses.
@@ -105,6 +105,6 @@ builder.Services.AddAuthentication()
 
 ## Affected APIs
 
-- <xref:Microsoft.AspNetCore.Http.Metadata.IApiEndpointMetadata?displayProperty=fullName>
-- <xref:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents.RedirectToLogin?displayProperty=fullName>
-- <xref:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents.RedirectToAccessDenied?displayProperty=fullName>
+- `Microsoft.AspNetCore.Http.Metadata.IApiEndpointMetadata` <!--xref:Microsoft.AspNetCore.Http.Metadata.IApiEndpointMetadata?displayProperty=fullName-->
+- <xref:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents.RedirectToLogin*?displayProperty=fullName>
+- <xref:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents.RedirectToAccessDenied*?displayProperty=fullName>

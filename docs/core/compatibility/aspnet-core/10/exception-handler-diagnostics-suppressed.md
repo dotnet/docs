@@ -14,17 +14,17 @@ The ASP.NET Core exception handler middleware no longer records diagnostics for 
 
 ## Previous behavior
 
-The exception handler middleware recorded diagnostics about exceptions handled by <xref:Microsoft.AspNetCore.Diagnostics.IExceptionHandler>.
+Previously, the exception handler middleware recorded diagnostics about exceptions handled by <xref:Microsoft.AspNetCore.Diagnostics.IExceptionHandler>.
 
 The exception diagnostics are:
 
-- Logging `UnhandledException` to `ILogger`.
-- Writing the `Microsoft.AspNetCore.Diagnostics.HandledException` event to `EventSource`.
+- Logging `UnhandledException` to <xref:Microsoft.Extensions.Logging.ILogger>.
+- Writing the `Microsoft.AspNetCore.Diagnostics.HandledException` event to <xref:Microsoft.Extensions.Logging.EventSource>.
 - Adding the `error.type` tag to the `http.server.request.duration` metric.
 
 ## New behavior
 
-If <xref:Microsoft.AspNetCore.Diagnostics.IExceptionHandler.TryHandleAsync%2A> returns `true`, then exception diagnostics are no longer recorded by default.
+Starting in .NET 10, if <xref:Microsoft.AspNetCore.Diagnostics.IExceptionHandler.TryHandleAsync%2A?displayProperty=nameWithType> returns `true`, then exception diagnostics are no longer recorded by default.
 
 ## Type of breaking change
 
@@ -38,7 +38,7 @@ ASP.NET Core now follows the behavior expected by users by suppressing diagnosti
 
 ## Recommended action
 
-If you want handled exceptions to continue recording telemetry, you can use the new `ExceptionHandlerOptions.SuppressDiagnosticsCallback` option:
+If you want handled exceptions to continue to record telemetry, you can use the new `ExceptionHandlerOptions.SuppressDiagnosticsCallback` option:
 
 ```csharp
 app.UseExceptionHandler(new ExceptionHandlerOptions
@@ -47,9 +47,9 @@ app.UseExceptionHandler(new ExceptionHandlerOptions
 });
 ```
 
-The context passed to the callback includes information about the exception, the request, and whether the exception was handled. Returning `false` from the callback indicates that diagnostics shouldn't be suppressed. This restores the previous behavior.
+The `context` passed to the callback includes information about the exception, the request, and whether the exception was handled. The callback returns `false` to indicate that diagnostics shouldn't be suppressed, thus restoring the previous behavior.
 
 ## Affected APIs
 
-- <xref:Microsoft.AspNetCore.Builder.ExceptionHandlerExtensions.UseExceptionHandler%2A?displayProperty=nameWithType>
-- <xref:Microsoft.AspNetCore.Diagnostics.IExceptionHandler?displayProperty=nameWithType>
+- <xref:Microsoft.AspNetCore.Builder.ExceptionHandlerExtensions.UseExceptionHandler%2A?displayProperty=fullName>
+- <xref:Microsoft.AspNetCore.Diagnostics.IExceptionHandler?displayProperty=fullName>

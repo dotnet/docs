@@ -207,7 +207,6 @@ The preceding code defines the argument type for the `--delay` option, and that 
 
 :::code language="csharp" source="./snippets/file-based-programs/AsciiArt.cs" id="RootCommand":::
 
-
 Next, add the code to parse the command line arguments and handle any errors. This code validates the command line arguments and stores parsed arguments in the <xref:System.CommandLine.ParseResult?displayProperty=nameWithType> object:
 
 :::code language="csharp" source="./snippets/file-based-programs/AsciiArt.cs" id="ParseAndValidate":::

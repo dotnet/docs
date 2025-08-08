@@ -7,7 +7,7 @@ ms.custom: https://github.com/aspnet/Announcements/issues/523
 ---
 # IPNetwork and ForwardedHeadersOptions.KnownNetworks are obsolete
 
-<xref:Microsoft.AspNetCore.HttpOverrides.IPNetwork> and <xref:Microsoft.AspNetCore.Builder.ForwardedHeadersOptions.KnownNetworks?displayProperty=nameWithType> have been marked as obsolete in favor of using <xref:System.Net.IPNetwork> and <xref:Microsoft.AspNetCore.Builder.ForwardedHeadersOptions.KnownIPNetworks?displayProperty=nameWithType>.
+<xref:Microsoft.AspNetCore.HttpOverrides.IPNetwork?displayProperty=fullName> and <xref:Microsoft.AspNetCore.Builder.ForwardedHeadersOptions.KnownNetworks> have been marked as obsolete in favor of using <xref:System.Net.IPNetwork?displayProperty=fullName> and <xref:Microsoft.AspNetCore.Builder.ForwardedHeadersOptions.KnownIPNetworks>.
 
 ## Version introduced
 
@@ -15,7 +15,7 @@ ms.custom: https://github.com/aspnet/Announcements/issues/523
 
 ## Previous behavior
 
-Developers could use <xref:Microsoft.AspNetCore.HttpOverrides.IPNetwork> and <xref:Microsoft.AspNetCore.Builder.ForwardedHeadersOptions.KnownNetworks?displayProperty=nameWithType> to configure known networks for the forwarded headers middleware:
+Previously, you could use <xref:Microsoft.AspNetCore.HttpOverrides.IPNetwork?displayProperty=fullName> and <xref:Microsoft.AspNetCore.Builder.ForwardedHeadersOptions.KnownNetworks> to configure known networks for the forwarded headers middleware:
 
 ```csharp
 app.UseForwardedHeaders(new ForwardedHeadersOptions
@@ -26,30 +26,23 @@ app.UseForwardedHeaders(new ForwardedHeadersOptions
 
 ## New behavior
 
-If you use the obsolete APIs in your code, you'll get warning `ASPDEPR005` at compile time:
+Starting in .NET 10, if you use [the obsolete APIs](#affected-apis) in your code, you'll get warning `ASPDEPR005` at compile time:
 
-> warning ASPDEPR005: Please use KnownIPNetworks instead. For more information, visit https://aka.ms/aspnet/deprecate/005.
+> warning ASPDEPR005: Please use KnownIPNetworks instead. For more information, visit <https://aka.ms/aspnet/deprecate/005>.
 
-Use the <xref:System.Net.IPNetwork> type and <xref:Microsoft.AspNetCore.Builder.ForwardedHeadersOptions.KnownIPNetworks?displayProperty=nameWithType> property instead:
-
-```csharp
-app.UseForwardedHeaders(new ForwardedHeadersOptions
-{
-    KnownIPNetworks.Add(new(IPAddress.Loopback, 8))
-});
-```
+Use the <xref:System.Net.IPNetwork?displayProperty=fullName> type and <xref:Microsoft.AspNetCore.Builder.ForwardedHeadersOptions.KnownIPNetworks> property instead.
 
 ## Type of breaking change
 
-This change affects [source compatibility](../../categories.md#source-compatibility).
+This change can affect [source compatibility](../../categories.md#source-compatibility).
 
 ## Reason for change
 
-<xref:System.Net.IPNetwork> has replaced the <xref:Microsoft.AspNetCore.HttpOverrides.IPNetwork> type that was implemented for <xref:Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersMiddleware>.
+<xref:System.Net.IPNetwork?displayProperty=fullName> has replaced the <xref:Microsoft.AspNetCore.HttpOverrides.IPNetwork?displayProperty=fullName> type that was implemented for <xref:Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersMiddleware>.
 
 ## Recommended action
 
-Change to using <xref:System.Net.IPNetwork> and <xref:Microsoft.AspNetCore.Builder.ForwardedHeadersOptions.KnownIPNetworks?displayProperty=nameWithType>.
+Change to using <xref:System.Net.IPNetwork?displayProperty=fullName> and <xref:Microsoft.AspNetCore.Builder.ForwardedHeadersOptions.KnownIPNetworks>.
 
 ## Affected APIs
 

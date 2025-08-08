@@ -10,8 +10,16 @@ items:
             href: 10.0.md
           - name: ASP.NET Core
             items:
+              - name: Deprecation of WithOpenApi extension method
+                href: aspnet-core/10/withopenapi-deprecated.md
+              - name: IActionContextAccessor and ActionContextAccessor are obsolete
+                href: aspnet-core/10/iactioncontextaccessor-obsolete.md
+              - name: IncludeOpenAPIAnalyzers property and MVC API analyzers are deprecated
+                href: aspnet-core/10/openapi-analyzers-deprecated.md
               - name: IPNetwork and ForwardedHeadersOptions.KnownNetworks are obsolete
                 href: aspnet-core/10.0/ipnetwork-knownnetworks-obsolete.md
+              - name: Microsoft.Extensions.ApiDescription.Client package deprecated
+                href: aspnet-core/10/apidescription-client-deprecated.md
           - name: Containers
             items:
               - name: Default .NET images use Ubuntu

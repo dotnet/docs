@@ -126,6 +126,10 @@ Use exception filters when you need to:
 
 :::code language="csharp" source="snippets/exception-handling-statements/WhenFilterExamples.cs" id="MultipleConditionsExample":::
 
+**Stack trace preservation:**
+
+Exception filters preserve the original `ex.StackTrace` property. If a `catch` clause can't process the exception and re-throws, the original stack information is lost. The `when` filter doesn't unwind the stack, so if a `when` filter is `false`, the original stack trace isn't changed.
+
 The exception filter approach is valuable in applications where preserving debugging information is crucial for diagnosing issues.
 
 #### Exceptions in async and iterator methods

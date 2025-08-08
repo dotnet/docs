@@ -28,6 +28,8 @@ items:
                 href: core-libraries/10.0/obsolete-apis.md
               - name: ActivitySource.CreateActivity and ActivitySource.StartActivity behavior change
                 href: core-libraries/10.0/activity-sampling.md
+              - name: Arm64 SVE NonFaulting loads require mask parameter
+                href: core-libraries/10.0/sve-nonfaulting-loads-mask-parameter.md
               - name: C# 14 overload resolution with span parameters
                 href: core-libraries/10.0/csharp-overload-resolution.md
               - name: Consistent shift behavior in generic math

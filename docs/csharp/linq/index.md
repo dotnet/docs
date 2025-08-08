@@ -2,7 +2,7 @@
 title: Language Integrated Query (LINQ)
 description: Introduces Language Integrated Query (LINQ) in C#.
 ms.topic: concept-article
-ms.date: 12/14/2023
+ms.date: 08/08/2026
 ---
 # Language Integrated Query (LINQ)
 
@@ -40,7 +40,7 @@ You might need to add a [`using`](../language-reference/keywords/using-directive
 
  LINQ providers that implement <xref:System.Linq.IQueryable%601> can vary widely in their complexity.
   
- A less complex `IQueryable` provider might access a single method from a Web service. This type of provider is very specific because it expects specific information in the queries that it handles. It has a closed type system, perhaps exposing a single result type. Most of the execution of the query occurs locally, for example by using the <xref:System.Linq.Enumerable> implementations of the standard query operators. A less complex provider might examine only one method call expression in the expression tree that represents the query, and let the remaining logic of the query be handled elsewhere.  
+ A less complex `IQueryable` provider might access a single method from a Web service. This type of provider is specific to the data source because it expects specific information in the queries that it handles. It has a closed type system, perhaps exposing a single result type. Most of the execution of the query occurs locally, for example by using the <xref:System.Linq.Enumerable> implementations of the standard query operators. A less complex provider might examine only one method call expression in the expression tree that represents the query, and let the remaining logic of the query be handled elsewhere.  
   
  An `IQueryable` provider of medium complexity might target a data source that has a partially expressive query language. If it targets a Web service, it might access more than one method of the Web service and select which method to call based on the information that the query seeks. A provider of medium complexity would have a richer type system than a simple provider, but it would still be a fixed type system. For example, the provider might expose types that have one-to-many relationships that can be traversed, but it wouldn't provide mapping technology for user-defined types.  
   

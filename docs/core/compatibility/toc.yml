@@ -8,6 +8,10 @@ items:
         items:
           - name: Overview
             href: 10.0.md
+          - name: ASP.NET Core
+            items:
+              - name: Exception diagnostics are suppressed when IExceptionHandler.TryHandleAsync returns true
+                href: aspnet-core/10.0/exception-handler-diagnostics-suppressed.md
           - name: Containers
             items:
               - name: Default .NET images use Ubuntu

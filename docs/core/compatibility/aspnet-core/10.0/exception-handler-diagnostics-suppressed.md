@@ -1,0 +1,55 @@
+---
+title: "Breaking change: Exception diagnostics are suppressed when IExceptionHandler.TryHandleAsync returns true"
+description: Learn about the breaking change in ASP.NET Core 10 where exception diagnostics are no longer recorded when IExceptionHandler.TryHandleAsync returns true.
+ms.date: 08/08/2025
+---
+
+# Exception diagnostics are suppressed when IExceptionHandler.TryHandleAsync returns true
+
+The ASP.NET Core exception handler middleware no longer records diagnostics for exceptions handled by <xref:Microsoft.AspNetCore.Diagnostics.IExceptionHandler> by default.
+
+## Version introduced
+
+.NET 10 Preview 7
+
+## Previous behavior
+
+The exception handler middleware recorded diagnostics about exceptions handled by <xref:Microsoft.AspNetCore.Diagnostics.IExceptionHandler>.
+
+The exception diagnostics are:
+
+- Logging `UnhandledException` to `ILogger`.
+- Writing the `Microsoft.AspNetCore.Diagnostics.HandledException` event to `EventSource`.
+- Adding the `error.type` tag to the `http.server.request.duration` metric.
+
+## New behavior
+
+If <xref:Microsoft.AspNetCore.Diagnostics.IExceptionHandler.TryHandleAsync%2A> returns `true`, then exception diagnostics are no longer recorded by default.
+
+## Type of breaking change
+
+This change is a [behavioral change](../../categories.md#behavioral-change).
+
+## Reason for change
+
+ASP.NET Core users have given feedback that the previous behavior was undesirable. Their <xref:Microsoft.AspNetCore.Diagnostics.IExceptionHandler> implementation reported that the exception was handled, but the error handling middleware still recorded the error in the app's telemetry.
+
+ASP.NET Core now follows the behavior expected by users by suppressing diagnostics when <xref:Microsoft.AspNetCore.Diagnostics.IExceptionHandler> handles the exception. Configuration options are also available to customize exception diagnostics behavior if needed.
+
+## Recommended action
+
+If you want handled exceptions to continue recording telemetry, you can use the new `ExceptionHandlerOptions.SuppressDiagnosticsCallback` option:
+
+```csharp
+app.UseExceptionHandler(new ExceptionHandlerOptions
+{
+    SuppressDiagnosticsCallback = context => false;
+});
+```
+
+The context passed to the callback includes information about the exception, the request, and whether the exception was handled. Returning `false` from the callback indicates that diagnostics shouldn't be suppressed. This restores the previous behavior.
+
+## Affected APIs
+
+- <xref:Microsoft.AspNetCore.Builder.ExceptionHandlerExtensions.UseExceptionHandler%2A?displayProperty=nameWithType>
+- <xref:Microsoft.AspNetCore.Diagnostics.IExceptionHandler?displayProperty=nameWithType>

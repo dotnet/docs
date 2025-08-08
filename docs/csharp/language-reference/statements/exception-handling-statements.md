@@ -109,12 +109,9 @@ Here's a comparison showing the difference:
 **Advantages of exception filters:**
 
 1. **Better debugging experience**: Since the stack isn't unwound until a filter matches, debuggers can show the original point of failure with all local variables intact.
-
-2. **Performance benefits**: If no filter matches, the exception continues propagating without the overhead of stack unwinding and restoration.
-
-3. **Cleaner code**: Multiple filters can handle different conditions of the same exception type without requiring nested if-else statements.
-
-4. **Logging and diagnostics**: You can examine and log exception details before deciding whether to handle the exception:
+1. **Performance benefits**: If no filter matches, the exception continues propagating without the overhead of stack unwinding and restoration.
+1. **Cleaner code**: Multiple filters can handle different conditions of the same exception type without requiring nested if-else statements.
+1. **Logging and diagnostics**: You can examine and log exception details before deciding whether to handle the exception:
 
 :::code language="csharp" source="snippets/exception-handling-statements/WhenFilterExamples.cs" id="DebuggingAdvantageExample":::
 

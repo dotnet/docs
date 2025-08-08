@@ -18,7 +18,7 @@ Previously, you could use [Razor run-time compilation](/aspnet/core/mvc/views/vi
 
 ## New behavior
 
-Starting in .NET 10, use of the affected APIs produces a compiler warning with diagnostic ID `ASPDEPR003`:
+Starting in .NET 10, use of the [affected APIs](#affected-apis) produces a compiler warning with diagnostic ID `ASPDEPR003`:
 
 > warning ASPDEPR003: Razor run-time compilation is obsolete and is not recommended for production scenarios. For production scenarios, use the default build time compilation. For development scenarios, use Hot Reload instead. For more information, visit <https://aka.ms/aspnet/deprecate/003>.
 

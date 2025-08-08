@@ -44,6 +44,8 @@ items:
                 href: core-libraries/10.0/maccatalyst-version-normalization.md
               - name: No default SIGTERM signal handler
                 href: core-libraries/10.0/sigterm-signal-handler.md
+              - name: Specifying explicit struct Size is now disallowed with InlineArray
+                href: core-libraries/10.0/inlinearray-explicit-size-disallowed.md
               - name: System.Linq.AsyncEnumerable included in core libraries
                 href: core-libraries/10.0/asyncenumerable.md
               - name: YMM embedded rounding removed from AVX10.2

@@ -7,7 +7,7 @@ ms.custom: https://github.com/aspnet/Announcements/issues/523
 ---
 # IPNetwork and ForwardedHeadersOptions.KnownNetworks are obsolete
 
-<xref:Microsoft.AspNetCore.HttpOverrides.IPNetwork?displayProperty=fullName> and <xref:Microsoft.AspNetCore.Builder.ForwardedHeadersOptions.KnownNetworks> have been marked as obsolete in favor of using <xref:System.Net.IPNetwork?displayProperty=fullName> and <xref:Microsoft.AspNetCore.Builder.ForwardedHeadersOptions.KnownIPNetworks>.
+<xref:Microsoft.AspNetCore.HttpOverrides.IPNetwork?displayProperty=fullName> and <xref:Microsoft.AspNetCore.Builder.ForwardedHeadersOptions.KnownNetworks> have been marked as obsolete in favor of using <xref:System.Net.IPNetwork?displayProperty=fullName> and `KnownIPNetworks`.
 
 ## Version introduced
 
@@ -30,7 +30,7 @@ Starting in .NET 10, if you use [the obsolete APIs](#affected-apis) in your code
 
 > warning ASPDEPR005: Please use KnownIPNetworks instead. For more information, visit <https://aka.ms/aspnet/deprecate/005>.
 
-Use the <xref:System.Net.IPNetwork?displayProperty=fullName> type and <xref:Microsoft.AspNetCore.Builder.ForwardedHeadersOptions.KnownIPNetworks> property instead.
+Use the <xref:System.Net.IPNetwork?displayProperty=fullName> type and `KnownIPNetworks` property instead.
 
 ## Type of breaking change
 
@@ -42,7 +42,7 @@ This change can affect [source compatibility](../../categories.md#source-compati
 
 ## Recommended action
 
-Change to using <xref:System.Net.IPNetwork?displayProperty=fullName> and <xref:Microsoft.AspNetCore.Builder.ForwardedHeadersOptions.KnownIPNetworks>.
+Change to using <xref:System.Net.IPNetwork?displayProperty=fullName> and `KnownIPNetworks`.
 
 ## Affected APIs
 

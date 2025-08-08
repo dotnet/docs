@@ -55,6 +55,14 @@ Another common scenario is when you need to model a dictionary or a map. This sc
 
 In this example, the `ArgsAction` collection maps closely to the underlying collection. The `get` determines if a given option is configured. If so, it returns the <xref:System.Action> associated with that option. If not, it returns an <xref:System.Action> that does nothing. The public accessor doesn't include a `set` accessor. Rather, the design is using a public method for setting options.
 
+### Date-based indexers
+
+When working with date-based data, you can use either <xref:System.DateTime> or <xref:System.DateOnly> as indexer keys. Use <xref:System.DateOnly> when you only need the date part and want to avoid time-related complications. The following example shows a temperature tracking system that uses `DateOnly` as the primary indexer key:
+
+:::code language="csharp" source="./snippets/indexers/DateOnlyIndexer.cs":::
+
+This example demonstrates both `DateOnly` and `DateTime` indexers. While the `DateOnly` indexer is the primary interface, the `DateTime` overload provides convenience by extracting only the date portion. This approach ensures that all temperature data for a given day is treated consistently, regardless of the time component.
+
 ### Multi-Dimensional Maps
 
 You can create indexers that use multiple arguments. In addition, those arguments aren't constrained to be the same type.

@@ -42,7 +42,7 @@ signer = new CoseSigner(coseKey);
 
 ## Type of breaking change
 
-This is both a [behavioral change](../../categories.md#behavioral-change) but it can also affect [source compatibility](../../categories.md#source-compatibility).
+This is a [behavioral change](../../categories.md#behavioral-change) but it can also affect [source compatibility](../../categories.md#source-compatibility).
 
 ## Reason for change
 

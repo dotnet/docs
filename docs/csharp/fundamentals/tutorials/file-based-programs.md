@@ -152,9 +152,7 @@ If you prefer, you can remove the extension so you can type `./AsciiArt` instead
 
 Next, add a package that supports ASCII art, [Colorful.Console](https://www.nuget.org/packages/Colorful.Console). To add a package to a file based program, you use the `#:package` directive. Add the following directive after the `#!` directive in your AsciiArt.cs file:
 
-```csharp
-#:package Colorful.Console@1.2.15
-```
+:::code language="csharp" source="./snippets/file-based-programs/AsciiArt.cs" id="ColorfulPackage":::
 
 > [!IMPORTANT]
 >
@@ -162,9 +160,7 @@ Next, add a package that supports ASCII art, [Colorful.Console](https://www.nuge
 
 Next, change the lines that call `Console.WriteLine` to use the `Colorful.Console.WriteAscii` method instead:
 
-```csharp
-Colorful.Console.WriteAscii(message);
-```
+:::code language="csharp" source="./snippets/file-based-programs/AsciiArt.cs" id="WriteAscii":::
 
 Run the program, and you see ASCII art output instead of echoed text. Next, let's add command line parsing. The current version writes each word as a different line of output. The command line arguments you add support two features:
 
@@ -193,9 +189,7 @@ The `System.CommandLine` library offers several key benefits:
 
 To add command line parsing capabilities, first add the `System.CommandLine` package. Add this directive after the existing package directive:
 
-```csharp
-#:package System.CommandLine@2.0.0-beta6
-```
+:::code language="csharp" source="./snippets/file-based-programs/AsciiArt.cs" id="CommandLinePackage":::
 
 > [!IMPORTANT]
 >
@@ -203,48 +197,20 @@ To add command line parsing capabilities, first add the `System.CommandLine` pac
 
 Next, add the necessary using statements at the top of your file (after the `#!` and `#:package` directives):
 
-```csharp
-using System.CommandLine;
-using System.CommandLine.Parsing;
-```
+:::code language="csharp" source="./snippets/file-based-programs/AsciiArt.cs" id="Usings":::
 
 Define the delay option and messages argument. In command-line applications, options typically begin with `--` (double dash) and can accept arguments. The `--delay` option accepts an integer argument that specifies the delay in milliseconds. The `messagesArgument` defines how any remaining tokens after options are parsed as text. Each token becomes a separate string in the array, but text can be quoted to include multiple words in one token. For example, `"This is one message"` becomes a single token, while `This is four tokens` becomes four separate tokens. Add the following code to create the <xref:System.CommandLine.Option`1?displayProperty=nameWithType> and <xref:System.CommandLine.Argument`1?displayProperty=nameWithType> objects to represent the command line option and argument:
 
-```csharp
-Option<int> delayOption = new("--delay")
-{
-    Description = "Delay between lines, specified as milliseconds.",
-    DefaultValueFactory = parseResult => 100
-};
-
-Argument<string[]> messagesArgument = new("Messages")
-{
-    Description = "Text to render."
-};
-```
+:::code language="csharp" source="./snippets/file-based-programs/AsciiArt.cs" id="OptionArgument":::
 
 The preceding code defines the argument type for the `--delay` option, and that the arguments are an array of `string` values. This application has only one command, so you use the *root command*. Create a root command and configure it with the option and argument. Add the argument and option to the root command:
 
-```csharp
-RootCommand rootCommand = new("Ascii Art file-based program sample");
+:::code language="csharp" source="./snippets/file-based-programs/AsciiArt.cs" id="RootCommand":::
 
-rootCommand.Options.Add(delayOption);
-rootCommand.Arguments.Add(messagesArgument);
-```
 
 Next, add the code to parse the command line arguments and handle any errors. This code validates the command line arguments and stores parsed arguments in the <xref:System.CommandLine.ParseResult?displayProperty=nameWithType> object:
 
-```csharp
-ParseResult result = rootCommand.Parse(args);
-foreach (ParseError parseError in result.Errors)
-{
-    Console.Error.WriteLine(parseError.Message);
-}
-if (result.Errors.Count > 0)
-{
-    return 1;
-}
-```
+:::code language="csharp" source="./snippets/file-based-programs/AsciiArt.cs" id="ParseAndValidate":::
 
 The preceding code validates all command line arguments. If the validation fails, errors are written to the console, and the app exits.
 
@@ -252,51 +218,19 @@ The preceding code validates all command line arguments. If the validation fails
 
 Now, finish the app to use the parsed options and write the output. First, define a record to hold the parsed options. File-based apps can include type declarations, like records. They must be after all top-level statements and local functions. Add a `record` declaration to store the messages and the delay option value:
 
-```csharp
-public record AsciiMessageOptions(string[] Messages, int Delay);
-```
+:::code language="csharp" source="./snippets/file-based-programs/AsciiArt.cs" id="Record":::
 
 Now that you declared the record to store those results, add a local function to process the parse results and store the values in an instance of the record. Add the following local function before the record declaration. This method handles both command line arguments and standard input, and returns a new record instance:
 
-```csharp
-async Task<AsciiMessageOptions> ProcessParseResults(ParseResult result)
-{
-    int delay = result.GetValue(delayOption);
-    List<string> messages = [.. result.GetValue(messagesArgument) ?? Array.Empty<string>()];
-
-    if (messages.Count == 0)
-    {
-        while (Console.ReadLine() is string line && line.Length > 0)
-        {
-            Colorful.Console.WriteAscii(line);
-            await Task.Delay(delay);
-        }
-    }
-    return new ([..messages], delay);
-}
-```
+:::code language="csharp" source="./snippets/file-based-programs/AsciiArt.cs" id="ProcessParsedArgs":::
 
 Next, create a local function to write the ASCII art with the specified delay. This function writes each message in the record with the specified delay between each message:
 
-```csharp
-async Task WriteAsciiArt(AsciiMessageOptions options)
-{
-    foreach(string message in options.Messages)
-    {
-        Colorful.Console.WriteAscii(message);
-        await Task.Delay(options.Delay);
-    }
-}
-```
+:::code language="csharp" source="./snippets/file-based-programs/AsciiArt.cs" id="WriteAscii":::
 
 Finally, replace the `if` clause you wrote earlier with the following code to process the command line arguments and write the output:
 
-```csharp
-var parsedArgs = await ProcessParseResults(result);
-
-await WriteAsciiArt(parsedArgs);
-return 0;
-```
+:::code language="csharp" source="./snippets/file-based-programs/AsciiArt.cs" id="InvokeCommand":::
 
 ## Test the final application
 

@@ -34,7 +34,7 @@ The spread element `..vowels`, when evaluated, produces five elements: `"a"`, `"
 A *collection expression* can be converted to different collection types, including:
 
 - <xref:System.Span%601?displayProperty=nameWithType> and <xref:System.ReadOnlySpan%601?displayProperty=nameWithType>.
-- [Arrays](../builtin-types/arrays.md).
+- [Arrays](../builtin-types/arrays.md), such as `int[]` or `string[]`.
 - Any type with a *create* method whose parameter type is `ReadOnlySpan<T>` where there's an implicit conversion from the collection expression type to `T`.
 - Any type that supports a [collection initializer](../../programming-guide/classes-and-structs/object-and-collection-initializers.md#collection-initializers), such as <xref:System.Collections.Generic.List%601?displayProperty=nameWithType>. Usually, this requirement means the type supports <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> and there's an accessible `Add` method to add items to the collection. There must be an implicit conversion from the collection expression elements' type to the collection's element type. For spread elements, there must be an implicit conversion from the spread element's type to the collection's element type.
 - Any of the following interfaces:
@@ -43,6 +43,9 @@ A *collection expression* can be converted to different collection types, includ
   - <xref:System.Collections.Generic.IReadOnlyList%601?displayProperty=fullName>.
   - <xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>.
   - <xref:System.Collections.Generic.IList%601?displayProperty=fullName>.
+
+> [!NOTE]
+> Collection expressions cannot be used to initialize [inline arrays](../builtin-types/struct.md#inline-arrays). Inline arrays require different initialization syntax.
 
 > [!IMPORTANT]
 > A collection expression always creates a collection that includes all elements in the collection expression, regardless of the target type of the conversion. For example, when the target of the conversion is <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType>, the generated code evaluates the collection expression and stores the results in an in-memory collection.

@@ -126,7 +126,7 @@ Use exception filters when you need to:
 
 :::code language="csharp" source="snippets/exception-handling-statements/WhenFilterExamples.cs" id="MultipleConditionsExample":::
 
-The exception filter approach is particularly valuable in production applications where preserving debugging information is crucial for diagnosing issues.
+The exception filter approach is valuable in applications where preserving debugging information is crucial for diagnosing issues.
 
 #### Exceptions in async and iterator methods
 

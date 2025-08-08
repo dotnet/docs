@@ -20,7 +20,7 @@ There are no new security improvements in this release. This update is cumulativ
 
 #### ASP.NET
 
-Addresses an issue in ASP.NET where some error events fail to log properly in the Windows Event log. (*Applies to: .NET Framework 4.8, 4.8.1*)
+Addressed an issue in ASP.NET where some error events fail to log properly in the Windows Event log. (*Applies to: .NET Framework 4.8, 4.8.1*)
 
 #### WPF
 

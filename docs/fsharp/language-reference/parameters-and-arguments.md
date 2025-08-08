@@ -124,12 +124,15 @@ Note that those members could perform any arbitrary work, the syntax is effectiv
 
 F# supports two distinct forms of optional parameters for methods, each serving different purposes:
 
-- [Optional arguments with late defaults (F# native)](#optional-arguments-with-late-defaults-f-native)
-- [Optional arguments with early defaults (C# interop)](#optional-arguments-with-early-defaults-c-interop)
+- [Optional arguments (F# native)](#optional-arguments-f-native)
+- [Optional arguments (C# interop)](#optional-arguments-c-interop)
 
-### Optional arguments with late defaults (F# native)
+### Optional arguments (F# native)
 
 You can specify an optional parameter for a method by using a question mark in front of the parameter name. From the callee's perspective, optional parameters are interpreted as the F# option type, so you can query them in the regular way that option types are queried, by using a `match` expression with `Some` and `None`. Optional parameters are permitted only on members, not on functions created by using `let` bindings.
+
+Should also mention usage of defaultArg and shadowing to convert an optional argument to a value.
+Possibly also mention the advantage - unlike "C# style extensions", this allows authors of the method to tell if caller passed in a value or not.
 
 You can pass existing optional values to method by parameter name, such as `?arg=None` or `?arg=Some(3)` or `?arg=arg`. This can be useful when building a method that passes optional arguments to another method.
 
@@ -150,7 +153,7 @@ Baud Rate: 9600 Duplex: Full Parity: false
 Baud Rate: 4800 Duplex: Half Parity: false
 ```
 
-### Optional arguments with early defaults (C# interop)
+### Optional arguments (C# interop)
 
 For the purposes of C# interop, you can use the attributes `[<Optional; DefaultParameterValue<(...)>]` in F#, so that callers will see an argument as optional. This is equivalent to defining the argument as optional in C# as in `MyMethod(int i = 3)`. This form was introduced in F# 4.1 to help facilitate interoperation with C# code.
 

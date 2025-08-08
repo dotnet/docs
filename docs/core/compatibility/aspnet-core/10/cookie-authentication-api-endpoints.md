@@ -8,14 +8,14 @@ ms.custom: https://github.com/aspnet/Announcements/issues/525
 
 # Cookie login redirects are disabled for known API endpoints
 
-By default, unauthenticated and unauthorized requests made to known API endpoints protected by cookie authentication now result in 401 and 403 responses rather than redirecting to a login or access denied URI.
+By default, unauthenticated and unauthorized requests made to known API endpoints protected by cookie authentication now result in 401 and 403 responses rather than redirecting to a login or access-denied URI.
 
-Known API [endpoints](https://learn.microsoft.com/aspnet/core/fundamentals/routing) are identified using the new <xref:Microsoft.AspNetCore.Http.Metadata.IApiEndpointMetadata> interface, and metadata implementing the new interface has been added automatically to the following:
+Known API [endpoints](/aspnet/core/fundamentals/routing) are identified using the new <xref:Microsoft.AspNetCore.Http.Metadata.IApiEndpointMetadata> interface, and metadata implementing the new interface has been added automatically to the following:
 
-- `[ApiController]` endpoints
-- Minimal API endpoints that read JSON request bodies or write JSON responses
-- Endpoints using `TypedResults` return types
-- SignalR endpoints
+- [`[ApiController]`](xref:Microsoft.AspNetCore.Mvc.ApiControllerAttribute) endpoints.
+- Minimal API endpoints that read JSON request bodies or write JSON responses.
+- Endpoints using <xref:Microsoft.AspNetCore.Http.TypedResults> return types.
+- SignalR endpoints.
 
 ## Version introduced
 
@@ -23,23 +23,23 @@ Known API [endpoints](https://learn.microsoft.com/aspnet/core/fundamentals/routi
 
 ## Previous behavior
 
-The cookie authentication handler would redirect unauthenticated and unauthorized requests to a login or access denied URI by default for all requests other than [XMLHttpRequests (XHRs)](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest).
+Previously, the cookie authentication handler redirected unauthenticated and unauthorized requests to a login or access-denied URI by default for all requests other than [XMLHttpRequests (XHRs)](https://developer.mozilla.org/docs/Web/API/XMLHttpRequest).
 
 ## New behavior
 
-Unauthenticated and unauthorized requests made to known API endpoints will result in 401 and 403 responses rather than redirecting to a login or access denied URI. XHRs continue to result in 401 and 403 responses regardless of the target endpoint.
+Starting in .NET 10, unauthenticated and unauthorized requests made to known API endpoints result in 401 and 403 responses rather than redirecting to a login or access-denied URI. XHRs continue to result in 401 and 403 responses regardless of the target endpoint.
 
 ## Type of breaking change
 
-This change can affect [behavioral change](../../categories.md#behavioral-change).
+This change is a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 
-This change was highly requested, and redirecting unauthenticated requests to a login page doesn't usually make sense for API endpoints which typically rely on 401 and 403 status codes rather than HTML redirects to communicate auth failures.
+This change was highly requested. Redirecting unauthenticated requests to a login page doesn't usually make sense for API endpoints, which typically rely on 401 and 403 status codes rather than HTML redirects to communicate auth failures.
 
 ## Recommended action
 
-If you want to always redirect to the login and access denied URIs for unauthenticated or unauthorized requests regardless of the target endpoint or whether the source of the request is an XHR, you can override the `RedirectToLogin` and `RedirectToAccessDenied` as follows:
+If you want to always redirect to the login and access-denied URIs for unauthenticated or unauthorized requests regardless of the target endpoint or whether the source of the request is an XHR, you can override <xref:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents.RedirectToLogin*> and <xref:Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationEvents.RedirectToAccessDenied*> as follows:
 
 ```csharp
 builder.Services.AddAuthentication()
@@ -59,7 +59,7 @@ builder.Services.AddAuthentication()
     });
 ```
 
-If you want to revert to the exact previous behavior which avoids redirecting for only XHRs, you can override the events with this slightly more complicated logic:
+If you want to revert to the exact previous behavior that avoids redirecting for only XHRs, you can override the events with this slightly more complicated logic:
 
 ```csharp
 builder.Services.AddAuthentication()

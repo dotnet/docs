@@ -12,6 +12,8 @@ items:
             items:
               - name: Deprecation of WithOpenApi extension method
                 href: aspnet-core/10/withopenapi-deprecated.md
+              - name: Exception diagnostics suppressed when TryHandleAsync returns true
+                href: aspnet-core/10/exception-handler-diagnostics-suppressed.md
               - name: IActionContextAccessor and ActionContextAccessor are obsolete
                 href: aspnet-core/10/iactioncontextaccessor-obsolete.md
               - name: IncludeOpenAPIAnalyzers property and MVC API analyzers are deprecated

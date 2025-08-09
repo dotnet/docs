@@ -1,7 +1,6 @@
 ﻿using Azure.Identity;
 using Microsoft.Extensions.Azure;
 using Azure.Storage.Blobs;
-using Azure.Core;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -45,22 +44,23 @@ app.Run();
 
 void registerUsingServicePrincipal(WebApplicationBuilder builder)
 {
+    #region snippet_DefaultAzureCredential
+    builder.Services.AddAzureClients(clientBuilder =>
+    {
+        clientBuilder.AddBlobServiceClient(
+            new Uri("https://<account-name>.blob.core.windows.net"));
+    });
+    #endregion snippet_DefaultAzureCredential
+
     #region snippet_DefaultAzureCredential_UseCredential
     builder.Services.AddAzureClients(clientBuilder =>
     {
         clientBuilder.AddBlobServiceClient(
             new Uri("https://<account-name>.blob.core.windows.net"));
 
-        clientBuilder.UseCredential(new DefaultAzureCredential());
+        clientBuilder.UseCredential(new AzureCliCredential());
     });
     #endregion snippet_DefaultAzureCredential_UseCredential
-
-    #region snippet_DefaultAzureCredential
-    builder.Services.AddSingleton<BlobServiceClient>(_ =>
-        new BlobServiceClient(
-            new Uri("https://<account-name>.blob.core.windows.net"),
-            new DefaultAzureCredential()));
-    #endregion snippet_DefaultAzureCredential
 }
 
 internal record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)

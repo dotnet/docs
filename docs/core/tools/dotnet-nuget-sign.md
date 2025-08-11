@@ -76,6 +76,8 @@ The `dotnet nuget sign` command signs all the packages matching the first argume
   Starting with .NET 9, this option can be used to specify the SHA-1, SHA-256, SHA-384, or SHA-512 fingerprint of the certificate.
   However, a `NU3043` warning is raised when a SHA-1 certificate fingerprint is used because it is no longer considered secure.
 
+  Starting with .NET 10, the `NU3043` warning is promoted to an error when using SHA-1 fingerprints, effectively blocking the use of SHA-1 for signing operations. Only SHA-2 family fingerprints (SHA-256, SHA-384, SHA-512) are supported.
+
   All the previous versions of the .NET SDK continue to accept only SHA-1 certificate fingerprint.
 
 - **`--certificate-password <PASSWORD>`**
@@ -123,10 +125,10 @@ The `dotnet nuget sign` command signs all the packages matching the first argume
   dotnet nuget sign foo.nupkg --certificate-path cert.pfx --certificate-password password
   ```
 
-- Sign *foo.nupkg* with certificate (password protected) matches with the specified SHA-1 fingerprint in the default certificate store (CurrentUser\My):
+- Sign *foo.nupkg* with certificate (password protected) matches with the specified SHA-256 fingerprint in the default certificate store (CurrentUser\My):
 
   ```dotnetcli
-  dotnet nuget sign foo.nupkg --certificate-fingerprint 89967D1DD995010B6C66AE24FF8E66885E6E03A8 --certificate-password password
+  dotnet nuget sign foo.nupkg --certificate-fingerprint B2C40F2F8775D7B7EBEB76BD5A9D3A4BC3F4B8A4D8D7C5F8A4C6B3E7A9E2D5F1 --certificate-password password
   ```
 
 - Sign *foo.nupkg* with certificate (password protected) matches with the specified subject name :::no-loc text="\"Test certificate for testing signing\""::: in the default certificate store (CurrentUser\My):
@@ -135,10 +137,10 @@ The `dotnet nuget sign` command signs all the packages matching the first argume
   dotnet nuget sign foo.nupkg --certificate-subject-name "Test certificate for testing signing" --certificate-password password
   ```
 
-- Sign *foo.nupkg* with certificate (password protected) matches with the specified SHA-1 fingerprint in the certificate store CurrentUser\Root:
+- Sign *foo.nupkg* with certificate (password protected) matches with the specified SHA-256 fingerprint in the certificate store CurrentUser\Root:
 
   ```dotnetcli
-  dotnet nuget sign foo.nupkg --certificate-fingerprint 89967D1DD995010B6C66AE24FF8E66885E6E03A8 --certificate-password password --certificate-store-location CurrentUser --certificate-store-name Root
+  dotnet nuget sign foo.nupkg --certificate-fingerprint B2C40F2F8775D7B7EBEB76BD5A9D3A4BC3F4B8A4D8D7C5F8A4C6B3E7A9E2D5F1 --certificate-password password --certificate-store-location CurrentUser --certificate-store-name Root
   ```
 
 - Sign multiple NuGet packages - *foo.nupkg* and *all .nupkg files in the directory specified* with certificate *cert.pfx* (not password protected):

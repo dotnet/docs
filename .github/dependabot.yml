@@ -933,7 +933,7 @@ updates:
         patterns:
           - "*" # Prefer a single PR per project update.
   - package-ecosystem: "nuget"
-    directory: "/docs/ai/quickstarts/snippets/mcp-server" #MinimalMcpServer.csproj
+    directory: "/docs/ai/quickstarts/snippets/mcp-server" #SampleMcpServer.csproj
     schedule:
       interval: "weekly"
       day: "wednesday"
@@ -1352,6 +1352,17 @@ updates:
           - "*" # Prefer a single PR per project update.
   - package-ecosystem: "nuget"
     directory: "/docs/core/diagnostics/snippets/OTLP-Example/csharp" #OTLP-Example.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+    groups:
+      # Group .NET updates together for projects.
+      dotnet:
+        patterns:
+          - "*" # Prefer a single PR per project update.
+  - package-ecosystem: "nuget"
+    directory: "/docs/core/diagnostics/snippets/resource-monitoring-with-manual-metrics" #resource-monitoring-with-manual-metrics.csproj
     schedule:
       interval: "weekly"
       day: "wednesday"
@@ -2177,17 +2188,6 @@ updates:
           - "*" # Prefer a single PR per project update.
   - package-ecosystem: "nuget"
     directory: "/docs/core/resilience/snippets/http-resilience" #http-resilience.csproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-    groups:
-      # Group .NET updates together for projects.
-      dotnet:
-        patterns:
-          - "*" # Prefer a single PR per project update.
-  - package-ecosystem: "nuget"
-    directory: "/docs/core/resilience/snippets/resilience" #resilience.csproj
     schedule:
       interval: "weekly"
       day: "wednesday"

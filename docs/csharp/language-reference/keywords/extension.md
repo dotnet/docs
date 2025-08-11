@@ -61,7 +61,7 @@ The equivalent extension method declarations demonstrate how those type paramete
 
 ## See also
 
-- [Extensions feature specification](~/_csharplang/proposals/extensions.md)
+- [Extensions feature specification](~/_csharplang/proposals/csharp-14.0/extensions.md)
 
 ## C# language specification
 

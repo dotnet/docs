@@ -4,6 +4,7 @@ description: Learn about grain persistence in .NET Orleans.
 ms.date: 05/23/2025
 ms.topic: overview
 zone_pivot_groups: orleans-version
+ms.custom: sfi-ropc-nochange
 ---
 
 # Grain persistence

@@ -31,14 +31,12 @@ configuration:
                 * 'needs-more-info' label removed
               if:
                 - payloadType: Issues
-                - or:
-                
+                - or:                
                   - or:
                     - isAction: 
                         action: Opened
                     - isAction: 
-                        action: Reopened
-                        
+                        action: Reopened                        
                   - labelRemoved:
                       label: 'needs-more-info'
               then:
@@ -57,8 +55,7 @@ configuration:
                     - isAction: 
                         action: Closed
                     - isActivitySender:
-                        issueAuthor: true
-                  
+                        issueAuthor: true                  
                   - labelAdded: 
                       label: ':world_map: reQUEST'
               then:
@@ -71,7 +68,6 @@ configuration:
                 - or:
                   - payloadType: Issues
                   - payloadType: Pull_Request
-
                 - labelAdded:
                     label: ':world_map: mapQUEST'
               then:
@@ -97,8 +93,7 @@ configuration:
                 - isAction: 
                     action: Reopened
                 - hasLabel:
-                    label: "won't fix"
-                  
+                    label: "won't fix"                  
               then:
                 - removeLabel:
                    label: "won't fix"
@@ -109,8 +104,7 @@ configuration:
                 - isAction: 
                     action: Closed
                 - hasLabel:
-                    label: 'in-progress'
-                  
+                    label: 'in-progress'                  
               then:
                 - removeLabel:
                    label: 'in-progress'
@@ -122,7 +116,9 @@ configuration:
                     action: Closed
                 - isActivitySender:
                     issueAuthor: true
-
+                - not:
+                    activitySenderHasAssociation:
+                        association: Member
               then:
                 - addLabel:
                    label: resolved-by-customer

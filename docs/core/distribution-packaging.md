@@ -27,7 +27,7 @@ When installed, .NET consists of several components that are laid out as follows
 │   └── <sdk version>            (3)
 ├── sdk-manifests                (4)              (*)
 │   └── <sdk feature band version>
-├── library-packs                (20)             (*)
+├── library-packs                (21)             (*)
 ├── metadata                     (4)              (*)
 │   └── workloads
 │       └── <sdk feature band version>
@@ -47,8 +47,10 @@ When installed, .NET consists of several components that are laid out as follows
 │   │   └── <runtime version>            (18)
 │   ├── Microsoft.AspNetCore.App.Runtime.<rid>    (*)
 │   │   └── <aspnetcore version>         (18)
-│   └── runtime.<rid>.Microsoft.DotNet.ILCompiler (*)
-│       └── <runtime version>            (19)
+│   ├── runtime.<rid>.Microsoft.DotNet.ILCompiler (*)
+│   │   └── <runtime version>            (19)
+│   └── Microsoft.NETCore.App.Runtime.NativeAOT.<rid> (*)
+│       └── <runtime version>            (20)
 ├── shared                                        (*)
 │   ├── Microsoft.NETCore.App                     (*)
 │   │   └── <runtime version>     (5)
@@ -107,13 +109,14 @@ The **shared** folder contains frameworks. A shared framework provides a set of 
 
 - (18) **Microsoft.NETCore.App.Runtime.\<rid>/\<runtime version>,Microsoft.AspNetCore.App.Runtime.\<rid>/\<aspnetcore version>** These files enable building self-contained applications. These directories contain symbolic links to files in (2), (5) and (6).
 
-- (19) **runtime.\<rid>.Microsoft.DotNet.ILCompiler/\<runtime version>** These files enable building NativeAOT applications for the target platform.
+- (19) **runtime.\<rid>.Microsoft.DotNet.ILCompiler/\<runtime version>** These files enable building NativeAOT applications on the target platform. In .NET 9, enables building NativeAOT applications for the target platform as well. May be present in .NET 9 and newer.
+- (20) **Microsoft.NETCore.App.Runtime.NativeAOT.\<rid>/\<runtime version>** These files enable building NativeAOT applications for the target platform. May be present in .NET 10 and newer.
 
-- (20) **library-packs** contains NuGet package files. The SDK is configured to use this folder as a NuGet source. The list of NuGet packages provided by a .NET build is described below.
+- (21) **library-packs** contains NuGet package files. The SDK is configured to use this folder as a NuGet source. The list of NuGet packages provided by a .NET build is described below.
 
 The folders marked with `(*)` are used by multiple packages. Some package formats (for example, `rpm`) require special handling of such folders. The package maintainer must take care of this.
 
-Package files added to `library-packs` (20) can be packages that Microsoft does not distribute for the target platform. The files can also be packages that Microsoft distributes and for which `library-packs` provides a package that was built from source to meet platform package distribution guidelines. The following packages are included by the .NET build:
+Package files added to `library-packs` (21) can be packages that Microsoft does not distribute for the target platform. The files can also be packages that Microsoft distributes and for which `library-packs` provides a package that was built from source to meet platform package distribution guidelines. The following packages are included by the .NET build:
 
 | Package name | Published by Microsoft | Needed for |
 |----|----|----|
@@ -133,13 +136,13 @@ The following lists the recommended packages:
 - `dotnet-sdk-[major].[minor]` - Installs the latest SDK for specific runtime
   - **Version:** \<sdk version>
   - **Example:** dotnet-sdk-7.0
-  - **Contains:** (3),(4),(18),(20)
+  - **Contains:** (3),(4),(18),(21)
   - **Dependencies:** `dotnet-runtime-[major].[minor]`, `aspnetcore-runtime-[major].[minor]`, `dotnet-targeting-pack-[major].[minor]`, `aspnetcore-targeting-pack-[major].[minor]`, `netstandard-targeting-pack-[netstandard_major].[netstandard_minor]`, `dotnet-apphost-pack-[major].[minor]`, `dotnet-templates-[major].[minor]`
 
 - `dotnet-sdk-aot-[major].[minor]` - Installs the SDK components for platform NativeAOT
   - **Version:** \<sdk version>
   - **Example:** dotnet-sdk-aot-9.0
-  - **Contains:** (19)
+  - **Contains:** (19, 20)
   - **Dependencies:** `dotnet-sdk-[major].[minor]`, _compiler toolchain and developer packages for libraries that the .NET runtime depends on_
 
 - `aspnetcore-runtime-[major].[minor]` - Installs a specific ASP.NET Core runtime

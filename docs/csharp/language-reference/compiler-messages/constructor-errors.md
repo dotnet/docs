@@ -257,6 +257,8 @@ The compiler emits the following errors when a primary constructor violates one 
 - **CS9124**: *Parameter is captured into the state of the enclosing type and its value is also used to initialize a field, property, or event.*
 - **CS9136**: *Cannot use primary constructor parameter of type inside an instance member.*
 
+When using a primary constructor in a class or struct, every explicitly declared constructor must call the primary constructor using `: this(...)` with an appropriate argument list. This ensures that the primary constructor is always invoked. For more information on primary constructors, see the article on [instance constructors](../../programming-guide/classes-and-structs/instance-constructors.md#primary-constructors) in the programming guide.
+
 Primary constructor parameters are in scope in the body of that type. The compiler can synthesize a field that stores the parameter for use in members or in field initializers. Because a primary constructor parameter may be copied to a field, the following restrictions apply:
 
 - Primary constructors can be declared on `struct` and `class` types, but not on `interface` types.

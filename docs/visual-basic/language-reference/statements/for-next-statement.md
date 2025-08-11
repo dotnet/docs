@@ -27,7 +27,7 @@ ms.assetid: f5fc0d51-67ce-4c36-9f09-31c9a91c94e9
 ---
 # For...Next Statement (Visual Basic)
 
-Repeats a group of statements a specified number of times.
+Repeats a group of statements while the loop counter approaches its final value.
 
 ## Syntax
 

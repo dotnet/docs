@@ -159,6 +159,18 @@ However you set the roll-forward setting, use one of the following values to set
 
 [!INCLUDE [roll-forward-table](../../../includes/roll-forward-table.md)]
 
+For example, suppose an application requests version `8.0.0`, while the locally available versions are `8.2.0`, `8.2.3`, `8.4.5`, `9.0.0`, `9.0.6`, `9.7.8`.
+Then the resolved version is as follows in each case:
+
+| Value         | Resolved version | Resolved version if `8.0.1` were also available |
+|---------------|------------------|-------------------------------------------------|
+| `Minor`       | `8.2.3`          | `8.0.1`                                         |
+| `Major`       | `8.2.3`          | `8.0.1`                                         |
+| `LatestPatch` | (fails)          | `8.0.1`                                         |
+| `LatestMinor` | `8.4.5`          | `8.4.5`                                         |
+| `LatestMajor` | `9.7.8`          | `9.7.8`                                         |
+| `Disable`     | (fails)          | (fails)                                         |
+
 ## Self-contained deployments include the selected runtime
 
 You can publish an application as a [**self-contained distribution**](../deploying/index.md#publish-self-contained). This approach bundles the .NET runtime and libraries with your application. Self-contained deployments don't have a dependency on runtime environments. Runtime version selection occurs at publishing time, not run time.

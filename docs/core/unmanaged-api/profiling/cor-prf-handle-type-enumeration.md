@@ -27,11 +27,11 @@ typedef enum
 
 ## Members
 
-|Member|Description|
+| Member | Description |
 |------------|-----------------|
-|`COR_PRF_HANDLE_TYPE_WEAK`|The handle tracks an object as long as it is alive. It does not act as a root for the garbage collector.|
-|`COR_PRF_HANDLE_TYPE_STRONG`|The handle acts as a normal object reference. The object will stay alive and be promoted during the next garbage collection.|
-|`COR_PRF_HANDLE_TYPE_PINNED`|The handle acts as a strong handle with an added property to prevent the object from moving in memory during any garbage collection.|
+| `COR_PRF_HANDLE_TYPE_WEAK` | The handle tracks an object as long as it is alive. It does not act as a root for the garbage collector. |
+| `COR_PRF_HANDLE_TYPE_STRONG` | The handle acts as a normal object reference. The object will stay alive and be promoted during the next garbage collection. |
+| `COR_PRF_HANDLE_TYPE_PINNED` | The handle acts as a strong handle with an added property to prevent the object from moving in memory during any garbage collection. |
 
 ## Remarks
 

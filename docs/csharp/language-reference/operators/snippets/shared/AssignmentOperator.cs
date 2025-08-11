@@ -9,7 +9,7 @@ public static class AssignmentOperator
         // <Usage>
         string msg = "Hi";
         RefReassignAndModify(ref msg);
-        Console.WriteLine(msg); // Output: Hi!
+        Console.WriteLine(msg); // Output: Hi
         // </Usage>
     }
 

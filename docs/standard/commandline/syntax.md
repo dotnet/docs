@@ -12,7 +12,7 @@ ms.topic: concept-article
 
 # Syntax overview: Commands, options, and arguments
 
-[!INCLUDE [scl-preview](../../../includes/scl-preview.md)]
+[!INCLUDE [scl-preview](./includes/preview.md)]
 
 This article explains the command-line syntax that `System.CommandLine` recognizes. The information is useful to both users and developers of .NET command-line apps, including the [.NET CLI](../../core/tools/index.md).
 
@@ -54,7 +54,7 @@ A *command* in command-line input is a token that specifies an action or defines
 
 The *root command* is the one that specifies the name of the app's executable. For example, the `dotnet` command specifies the *dotnet.exe* executable.
 
-`System.CommandLine.Command` is the general-purpose class for any command or subcommand, while `System.CommandLine.RootCommand` is a specialized version intended for the application's root entry point, inheriting all features of `System.CommandLine.Command` but adding root-specific behavior and defaults, such as [Help option](how-to-customize-help.md#customize-help-output), [Version option](#version-option) and [Suggest directive](#suggest-directive).
+<xref:System.CommandLine.Command> is the general-purpose class for any command or subcommand, while <xref:System.CommandLine.RootCommand> is a specialized version intended for the application's root entry point. `RootCommand` inherits all features of `Command` but adds root-specific behavior and defaults, such as [Help option](how-to-customize-help.md#customize-help-output), [Version option](#version-option), and [Suggest directive](#suggest-directive).
 
 ### Subcommands
 
@@ -81,7 +81,7 @@ dotnet tool update dotnet-suggest --verbosity quiet --global
                                   ^---------^       ^------^
 ```
 
-As this example illustrates, the value of the option may be explicit (`quiet` for `--verbosity`) or implicit (nothing follows `--global`). Options that have no value specified are typically Boolean parameters that default to `true` if the option is specified on the command line.
+As this example illustrates, the value of the option can be explicit (`quiet` for `--verbosity`) or implicit (nothing follows `--global`). Options that have no value specified are typically Boolean parameters that default to `true` if the option is specified on the command line.
 
 For some Windows command-line apps, you identify an option by using a leading slash (`/`) with the option name. For example:
 
@@ -100,11 +100,11 @@ To add an option to a command and recursively to all of its subcommands, use the
 
 ### Required Options
 
-Some options have required arguments. For example in the .NET CLI, `--output` requires a folder name argument. If the argument is not provided, the command fails. To make an option required, set its `System.CommandLine.Symbol.Required` property to `true`, as shown in the following example:
+Some options have required arguments. For example in the .NET CLI, `--output` requires a folder name argument. If the argument is not provided, the command fails. To make an option required, set its <xref:System.CommandLine.Option.Required> property to `true`, as shown in the following example:
 
 :::code language="csharp" source="snippets/define-symbols/csharp/Program.cs" id="requiredoption" :::
 
-If a required option has a default value (specified via `DefaultValueFactory` property), the option doesn't have to be specified on the command line. In that case, the default value provides the required option value.
+If a required option has a default value (specified via the <xref:System.CommandLine.Option`1.DefaultValueFactory> property), the option doesn't have to be specified on the command line. In that case, the default value provides the required option value.
 
 ## Arguments
 
@@ -278,15 +278,15 @@ Arity is expressed with a minimum value and a maximum value, as the following ta
 |     |         | Valid:           | --file a.json b.json        |
 |     |         | Invalid:         | --file                      |
 
-`System.CommandLine` has an `System.CommandLine.ArgumentArity` struct for defining arity, with the following values:
+`System.CommandLine` has an <xref:System.CommandLine.ArgumentArity> struct for defining arity, with the following values:
 
-* `System.CommandLine.ArgumentArity.Zero` - No values allowed.
-* `System.CommandLine.ArgumentArity.ZeroOrOne` - May have one value, may have no values.
-* `System.CommandLine.ArgumentArity.ExactlyOne` - Must have one value.
-* `System.CommandLine.ArgumentArity.ZeroOrMore` - May have one value, multiple values, or no values.
-* `System.CommandLine.ArgumentArity.OneOrMore` - May have multiple values, must have at least one value.
+* <xref:System.CommandLine.ArgumentArity.Zero> - No values allowed.
+* <xref:System.CommandLine.ArgumentArity.ZeroOrOne> - Can have one value or no value.
+* <xref:System.CommandLine.ArgumentArity.ExactlyOne> - Must have one value.
+* <xref:System.CommandLine.ArgumentArity.ZeroOrMore> - Can have one value, multiple values, or no values.
+* <xref:System.CommandLine.ArgumentArity.OneOrMore> - Can have multiple values; must have at least one value.
 
-You can explicitly set arity by using the `Arity` property, but in most cases that is not necessary. `System.CommandLine` automatically determines the argument arity based on the argument type:
+You can explicitly set arity by using the `Arity` property, but in most cases that isn't necessary. `System.CommandLine` automatically determines the argument arity based on the argument type:
 
 | Argument type    | Default arity              |
 |------------------|----------------------------|
@@ -310,7 +310,7 @@ By default, when you call a command, you can repeat an option name to specify mu
 myapp --items one --items two --items three
 ```
 
-To allow multiple arguments without repeating the option name, set `System.CommandLine.Option.AllowMultipleArgumentsPerToken` to `true`. This setting lets you enter the following command line.
+To allow multiple arguments without repeating the option name, set <xref:System.CommandLine.Option.AllowMultipleArgumentsPerToken> to `true`. This setting lets you enter the following command line.
 
 ```console
 myapp --items one two three
@@ -342,7 +342,7 @@ In both variants in this example, the argument `arg` would apply only to the opt
 
 ## Boolean options (flags)
 
-If `true` or `false` is passed for an option having a `bool` argument, it's parsed as expected. But an option whose argument type is `bool` typically doesn't require an argument to be specified. Boolean options, sometimes called "flags", typically have an [arity](#argument-arity) of `System.CommandLine.ArgumentArity.ZeroOrOne`. The presence of the option name on the command line, with no argument following it, results in a default value of `true`. The absence of the option name in command-line input results in a value of `false`. If the `myapp` command prints out the value of a Boolean option named `--interactive`, the following input creates the following output:
+If `true` or `false` is passed for an option having a `bool` argument, it's parsed as expected. But an option whose argument type is `bool` typically doesn't require an argument to be specified. Boolean options, sometimes called "flags", typically have an [arity](#argument-arity) of <xref:System.CommandLine.ArgumentArity.ZeroOrOne>. The presence of the option name on the command line, with no argument following it, results in a default value of `true`. The absence of the option name in command-line input results in a value of `false`. If the `myapp` command prints out the value of a Boolean option named `--interactive`, the following input creates the following output:
 
 ```console
 myapp
@@ -412,7 +412,7 @@ Here are syntax rules that determine how the text in a response file is interpre
 
 ## Directives
 
-`System.CommandLine` introduces a syntactic element called a *directive* represented by `System.CommandLine.Directive` type. The `[diagram]` directive is an example. When you include `[diagram]` after the app's name, `System.CommandLine` displays a diagram of the parse result instead of invoking the command-line app:
+`System.CommandLine` introduces a syntactic element called a *directive* represented by the <xref:System.CommandLine.Directive> type. For example, the [`[diagram]` directive](#the-diagram-directive) is a built-in directive. When you include `[diagram]` after the app's name, `System.CommandLine` displays a diagram of the parse result instead of invoking the command-line app:
 
 ```dotnetcli
 dotnet [diagram] build --no-restore --output ./build-output/

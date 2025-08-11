@@ -27,11 +27,11 @@ At the same time, business systems have also become increasingly complex with us
 
 Here are some companies who have implemented cloud-native techniques. Think about the speed, agility, and scalability they've achieved.
 
-| Company | Experience |
-| :-------- | :-------- |
-| [Netflix](https://www.infoq.com/news/2013/06/netflix/) | Has 600+ services in production. Deploys 100 times per day. |
-| [Uber](https://www.uber.com/blog/micro-deploy-code/) | Has 1,000+ services in production. Deploys several thousand times each week. |
-| [WeChat](https://www.cs.columbia.edu/~ruigu/papers/socc18-final100.pdf) | Has 3,000+ services in production. Deploys 1,000 times a day. |
+| Company                                                | Experience                                                    |
+|:-------------------------------------------------------|:--------------------------------------------------------------|
+| [Netflix](https://www.infoq.com/news/2013/06/netflix/) | Has 600+ services in production. Deploys 100 times per day.   |
+| [Uber](https://www.uber.com/blog/micro-deploy-code/)   | Has 1,000+ services in production. Deploys several thousand times each week. |
+| WeChat                                                 | Has 3,000+ services in production. Deploys 1,000 times a day. |
 
 As you can see, Netflix, Uber, and, WeChat expose cloud-native systems that consist of many independent services. This architectural style enables them to rapidly respond to market conditions. They instantaneously update small areas of a live, complex application, without a full redeployment. They individually scale services as needed.
 

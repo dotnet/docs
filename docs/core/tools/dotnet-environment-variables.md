@@ -199,7 +199,15 @@ Specifies the location of the .NET runtimes, if they are not installed in the de
 - GitHub issue [dotnet/core#7699](https://github.com/dotnet/core/issues/7699)
 - GitHub issue [dotnet/runtime#79237](https://github.com/dotnet/runtime/issues/79237)
 
-This environment variable is used only when running apps via generated executables (apphosts). `DOTNET_ROOT(x86)` is used instead when running a 32-bit executable on a 64-bit OS. `DOTNET_ROOT_X64` is used instead when running a 64-bit executable on an ARM64 OS.
+These environment variables are used only when running apps via generated executables (apphosts). The order in which the environment variables are considered is:
+
+1. `DOTNET_ROOT_<ARCH>`, where `<ARCH>` is the architecture of the running executable (apphost).
+   For example:
+     - `DOTNET_ROOT_ARM64` is used for an Arm64 process.
+     - `DOTNET_ROOT_X64` is used for an x64 process. This process might be running on x64 or Arm64 architecture.
+     - `DOTNET_ROOT_X86` is used for an x86 process. This process might be running on x86 or x64 architecture.
+2. `DOTNET_ROOT(x86)` is used when a 32-bit process is running on 64-bit Windows. In other cases, this environment variable is ignored.
+3. `DOTNET_ROOT`.
 
 ### `DOTNET_HOST_PATH`
 
@@ -387,20 +395,33 @@ Specifies the minimum number of hours between background downloads of advertisin
 
 Specifies whether .NET SDK local tools search for tool manifest files in the root folder on Windows. The default is `false`.
 
-### `COREHOST_TRACE`
+### `DOTNET_HOST_TRACE`
+
+**This variable applies to .NET 10 and later versions.** For older versions, replace the `DOTNET_HOST_` prefix with [`COREHOST_`](#corehost_trace).
 
 Controls diagnostics tracing from the hosting components, such as `dotnet.exe`, `hostfxr`, and `hostpolicy`.
 
-- `COREHOST_TRACE=[0/1]` - default is `0` - tracing disabled. If set to `1`, diagnostics tracing is enabled.
-- `COREHOST_TRACEFILE=<file path>` - has an effect only if tracing is enabled by setting `COREHOST_TRACE=1`. When set, the tracing information is written to the specified file; otherwise, the trace information is written to `stderr`.
-- `COREHOST_TRACE_VERBOSITY=[1/2/3/4]` - default is `4`. The setting is used only when tracing is enabled via `COREHOST_TRACE=1`.
+- `DOTNET_HOST_TRACE=[0/1]` - default is `0` - tracing disabled. If set to `1`, diagnostics tracing is enabled.
+- `DOTNET_HOST_TRACEFILE=<file path>` - has an effect only if tracing is enabled by setting `DOTNET_HOST_TRACE=1`. When set, the tracing information is written to the specified file; otherwise, the trace information is written to `stderr`.
+- `DOTNET_HOST_TRACE_VERBOSITY=[1/2/3/4]` - default is `4`. The setting is used only when tracing is enabled via `DOTNET_HOST_TRACE=1`.
 
   - `4` - all tracing information is written
   - `3` - only informational, warning, and error messages are written
   - `2` - only warning and error messages are written
   - `1` - only error messages are written
 
-The typical way to get detailed trace information about application startup is to set `COREHOST_TRACE=1` and`COREHOST_TRACEFILE=host_trace.txt` and then run the application. A new file `host_trace.txt` will be created in the current directory with the detailed information.
+The typical way to get detailed trace information about application startup is to set `DOTNET_HOST_TRACE=1` and `DOTNET_HOST_TRACEFILE=host_trace.txt` and then run the application. A new file `host_trace.txt` will be created in the current directory with the detailed information.
+
+### `COREHOST_TRACE`
+
+Controls diagnostics tracing from the hosting components, such as `dotnet.exe`, `hostfxr`, and `hostpolicy`.
+
+> [!NOTE]
+> Starting with .NET 10, use the [`DOTNET_HOST_TRACE`](#dotnet_host_trace) environment variables instead. The `COREHOST_TRACE` variables work the same as `DOTNET_HOST_TRACE` variables.
+
+- `COREHOST_TRACE` - see [`DOTNET_HOST_TRACE`](#dotnet_host_trace).
+- `COREHOST_TRACEFILE` - see [`DOTNET_HOST_TRACEFILE`](#dotnet_host_trace).
+- `COREHOST_TRACE_VERBOSITY` - see [`DOTNET_HOST_TRACE_VERBOSITY`](#dotnet_host_trace).
 
 ### `SuppressNETCoreSdkPreviewMessage`
 

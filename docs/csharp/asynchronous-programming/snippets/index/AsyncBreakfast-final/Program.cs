@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 namespace AsyncBreakfast
 {
     // These classes are intentionally empty for the purpose of this example. They are simply marker classes for the purpose of demonstration, contain no properties, and serve no other purpose.
-    internal class Bacon { }
+    internal class HashBrown { }
     internal class Coffee { }
     internal class Egg { }
     internal class Juice { }
@@ -19,10 +19,10 @@ namespace AsyncBreakfast
             Console.WriteLine("coffee is ready");
 
             var eggsTask = FryEggsAsync(2);
-            var baconTask = FryBaconAsync(3);
+            var hashBrownTask = FryHashBrownsAsync(3);
             var toastTask = MakeToastWithButterAndJamAsync(2);
 
-            var breakfastTasks = new List<Task> { eggsTask, baconTask, toastTask };
+            var breakfastTasks = new List<Task> { eggsTask, hashBrownTask, toastTask };
             while (breakfastTasks.Count > 0)
             {
                 Task finishedTask = await Task.WhenAny(breakfastTasks);
@@ -30,9 +30,9 @@ namespace AsyncBreakfast
                 {
                     Console.WriteLine("eggs are ready");
                 }
-                else if (finishedTask == baconTask)
+                else if (finishedTask == hashBrownTask)
                 {
-                    Console.WriteLine("bacon is ready");
+                    Console.WriteLine("hash browns are ready");
                 }
                 else if (finishedTask == toastTask)
                 {
@@ -81,20 +81,20 @@ namespace AsyncBreakfast
             return new Toast();
         }
 
-        private static async Task<Bacon> FryBaconAsync(int slices)
+        private static async Task<HashBrown> FryHashBrownsAsync(int patties)
         {
-            Console.WriteLine($"putting {slices} slices of bacon in the pan");
-            Console.WriteLine("cooking first side of bacon...");
+            Console.WriteLine($"putting {patties} hash brown patties in the pan");
+            Console.WriteLine("cooking first side of hash browns...");
             await Task.Delay(3000);
-            for (int slice = 0; slice < slices; slice++)
+            for (int patty = 0; patty < patties; patty++)
             {
-                Console.WriteLine("flipping a slice of bacon");
+                Console.WriteLine("flipping a hash brown patty");
             }
-            Console.WriteLine("cooking the second side of bacon...");
+            Console.WriteLine("cooking the second side of hash browns...");
             await Task.Delay(3000);
-            Console.WriteLine("Put bacon on plate");
+            Console.WriteLine("Put hash browns on plate");
 
-            return new Bacon();
+            return new HashBrown();
         }
 
         private static async Task<Egg> FryEggsAsync(int howMany)

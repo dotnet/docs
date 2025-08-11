@@ -5,6 +5,7 @@ author: adegeo
 ms.date: 05/25/2023
 dev_langs: ["csharp", "vb"]
 no-loc: ["package.config", PackageReference]
+ms.custom: sfi-ropc-nochange
 ---
 
 # Modernize after upgrading to .NET from .NET Framework

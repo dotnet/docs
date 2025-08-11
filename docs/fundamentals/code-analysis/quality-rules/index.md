@@ -94,6 +94,7 @@ The following table lists code quality analysis rules.
 > | [CA1513: Use ObjectDisposedException throw helper](ca1513.md) | Throw helpers are simpler and more efficient than `if` blocks that construct a new exception instance. |
 > | [CA1514: Avoid redundant length argument](ca1514.md) | A redundant length argument is used when slicing to the end of a string or buffer. A calculated length can be error-prone and is also unnecessary. |
 > | [CA1515: Consider making public types internal](ca1515.md) | Unlike a class library, an application's API isn't typically referenced publicly, so types can be marked internal. |
+> | [CA1516: Use cross-platform intrinsics](ca1516.md) | This rule detects usage of platform-specific intrinsics that can be replaced with an equivalent cross-platform intrinsic instead. |
 > | [CA1700: Do not name enum values 'Reserved'](ca1700.md) | This rule assumes that an enumeration member that has a name that contains "reserved" is not currently used but is a placeholder to be renamed or removed in a future version. Renaming or removing a member is a breaking change. |
 > | [CA1707: Identifiers should not contain underscores](ca1707.md) | By convention, identifier names do not contain the underscore (_) character. This rule checks namespaces, types, members, and parameters. |
 > | [CA1708: Identifiers should differ by more than case](ca1708.md) | Identifiers for namespaces, types, members, and parameters cannot differ only by case because languages that target the common language runtime are not required to be case-sensitive. |
@@ -331,8 +332,8 @@ The following table lists code quality analysis rules.
 > | [CA5401: Do not use CreateEncryptor with non-default IV](ca5401.md) | Symmetric encryption should always use a non-repeatable initialization vector to prevent dictionary attacks. |
 > | [CA5402: Use CreateEncryptor with the default IV](ca5402.md) | Symmetric encryption should always use a non-repeatable initialization vector to prevent dictionary attacks. |
 > | [CA5403: Do not hard-code certificate](ca5403.md) | The `data` or `rawData` parameter of a <xref:System.Security.Cryptography.X509Certificates.X509Certificate> or <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> constructor is hard-coded. |
-> | [CA5404: Do not disable token validation checks](ca5404.md) | <xref:Microsoft.IdentityModel.Tokens.TokenValidationParameters> properties that control token validation should not be set to `false`. |
-> | [CA5405: Do not always skip token validation in delegates](ca5405.md) | The callback assigned to <xref:Microsoft.IdentityModel.Tokens.AudienceValidator>  or <xref:Microsoft.IdentityModel.Tokens.LifetimeValidator> always returns `true`. |
+> | [CA5404: Do not disable token validation checks](ca5404.md) | `TokenValidationParameters` properties that control token validation should not be set to `false`. |
+> | [CA5405: Do not always skip token validation in delegates](ca5405.md) | The callback assigned to `AudienceValidator`  or `LifetimeValidator` always returns `true`. |
 > | [IL3000: Avoid accessing Assembly file path when publishing as a single file](../../../core/deploying/single-file/warnings/il3000.md) | Avoid accessing Assembly file path when publishing as a single file. |
 > | [IL3001: Avoid accessing Assembly file path when publishing as a single-file](../../../core/deploying/single-file/warnings/il3001.md) | Avoid accessing Assembly file path when publishing as a single file. |
 > | [IL3002: Avoid calling members annotated with 'RequiresAssemblyFilesAttribute' when publishing as a single file](../../../core/deploying/single-file/warnings/il3002.md) | Avoid calling members annotated with 'RequiresAssemblyFilesAttribute' when publishing as a single file|

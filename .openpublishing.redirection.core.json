@@ -1332,6 +1332,10 @@
             "redirect_url": "/dotnet/core/tutorials/with-visual-studio-code"
         },
         {
+            "source_path_from_root": "/docs/core/unmanaged-api/metadata/enumerations/assemblyrefflags-enumeration.md",
+            "redirect_url": "/dotnet/core/unmanaged-api/metadata/enumerations/corassemblyflags-enumeration"
+        },
+        {
             "source_path_from_root": "/docs/core/versions/install-management.md",
             "redirect_url": "/dotnet/core/install/remove-runtime-sdk-versions"
         },
@@ -1353,8 +1357,7 @@
         },
         {
             "source_path_from_root": "/docs/whats-new/dotnet-7-docs.md",
-            "redirect_url": "/dotnet/whats-new/dotnet-docs-mod0",
-            "redirect_document_id": true
+            "redirect_url": "/dotnet/whats-new"
         },
         {
             "source_path_from_root": "/docs/core/whats-new/dotnet-8.md",

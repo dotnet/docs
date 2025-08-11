@@ -42,7 +42,7 @@ Beginning with C# 14 and .NET 10, you can create *file based programs*, which si
 
 :::code language="csharp" source="./snippets/file-based-programs/hello-world.cs":::
 
-The first line of the program contains the `#!` sequence for unix shells. The location of the `dotnet` CLI can vary on different distributions. On any unix system, if you set the *execute* (`+x`) permission on a C# file, you can run the C# file from the command line:
+The first line of the program contains the `#!` sequence (shebang) for unix shells. The location of the `dotnet` CLI can vary on different distributions. On any unix system, if you set the *execute* (`+x`) permission on such a C# file that contains the shebang directive, you can run the C# file directly from the command line:
 
 ```bash
 ./hello-world.cs

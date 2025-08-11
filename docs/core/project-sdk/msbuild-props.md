@@ -1455,6 +1455,15 @@ The allowed values of this property are SDK feature bands, for example, 8.0.100 
 
 For more information, see [SDK Analysis Level Property and Usage](https://github.com/dotnet/designs/blob/main/proposed/sdk-analysis-level.md).
 
+The following table summarizes the diagnostics affected by `SDKAnalysisLevel`.
+
+| SDKAnalysisLevel | Diagnostic | Previous | Current |
+|------------------------|-----------|--------|-------|
+| 9.0.100 | Restore HTTP sources diagnostic | [NU1803](/nuget/reference/errors-and-warnings/nu1803) warning | [NU1302](/nuget/reference/errors-and-warnings/nu1302) error. |  
+| 10.0.100 | Restore package pruning, [PrunePackageReference](/nuget/consume-packages/package-references-in-project-files#prunepackagereference), enabled by default | N/A | Enabled for projects that target .NET 8+ or .NET Standard 2.0+ |
+| 10.0.100 | Restore resolver with lock files | Uses legacy dependency graph resolver (.NET 8 SDK and earlier) | Uses improved, [.NET 9 dependency graph resolver](/nuget/consume-packages/package-references-in-project-files#nuget-dependency-resolver) |
+| 10.0.100 | Restore behavior for PackageReference without a version | [NU1603](/nuget/reference/errors-and-warnings/nu1603) warning | [NU1015](/nuget/reference/errors-and-warnings/nu1015) error |
+
 ## Microsoft.Testing.Platform&ndash;related properties
 
 The following MSBuild properties are documented in this section:
@@ -1628,7 +1637,7 @@ The following table lists valid values. You can specify multiple values, separat
 | --- | --- |
 | `AppLocal` | App executable's folder |
 | `AppRelative` | Path relative to the app executable as specified by [AppHostRelativeDotNet](#apphostrelativedotnet) |
-| `EnvironmentVariables` | Value of [`DOTNET_ROOT[_<arch>]`](../tools/dotnet-environment-variables.md#dotnet_root-dotnet_rootx86-dotnet_root_x86-dotnet_root_x64) environment variables |
+| `EnvironmentVariable` | Value of [`DOTNET_ROOT[_<arch>]`](../tools/dotnet-environment-variables.md#dotnet_root-dotnet_rootx86-dotnet_root_x86-dotnet_root_x64) environment variables |
 | `Global` | [Registered](https://github.com/dotnet/designs/blob/main/accepted/2020/install-locations.md#global-install-to-custom-location) and [default](https://github.com/dotnet/designs/blob/main/accepted/2020/install-locations.md#global-install-to-default-location) global install locations |
 
 This property was introduced in .NET 9.

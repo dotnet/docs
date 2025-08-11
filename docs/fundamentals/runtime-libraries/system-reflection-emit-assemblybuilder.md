@@ -51,7 +51,7 @@ public void CreateAndRunAssembly(string assemblyPath)
 
 ## Persisted dynamic assemblies in .NET
 
-The new <xref:System.Reflection.Emit.PersistedAssemblyBuilder> type derived from the <xref:System.Reflection.Emit.AssemblyBuilder> and allows save the dynamic assemblies in .NET Core, check the usage scenarios and examples from [PersistedAssemblyBuilder](system-reflection-emit-persistedassemblybuilder.md) page.
+In .NET, the <xref:System.Reflection.Emit.PersistedAssemblyBuilder> type, which derives from <xref:System.Reflection.Emit.AssemblyBuilder>, lets you save dynamic assemblies. For more information, see the usage scenarios and examples at [PersistedAssemblyBuilder](system-reflection-emit-persistedassemblybuilder.md).
 
 ## Persisted dynamic assemblies in .NET Framework
 

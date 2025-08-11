@@ -42,26 +42,26 @@ typedef enum
 
 ## Members
 
-|Member|Description|
+| Member | Description |
 |------------|-----------------|
-|`COR_PRF_EVENTPIPE_OBJECT`|The parameter type is a self describing object.|
-|`COR_PRF_EVENTPIPE_BOOLEAN`|The parameter type is a boolean.|
-|`COR_PRF_EVENTPIPE_CHAR`|The parameter type is a 16 bit wide character.|
-|`COR_PRF_EVENTPIPE_SBYTE`|The parameter type is a signed 8 bit integer.|
-|`COR_PRF_EVENTPIPE_BYTE`|The parameter type is an unsigned 8 bit integer.|
+| `COR_PRF_EVENTPIPE_OBJECT` | The parameter type is a self describing object. |
+| `COR_PRF_EVENTPIPE_BOOLEAN` | The parameter type is a boolean. |
+| `COR_PRF_EVENTPIPE_CHAR` |The parameter type is a 16 bit wide character.|
+| `COR_PRF_EVENTPIPE_SBYTE` |The parameter type is a signed 8 bit integer.|
+| `COR_PRF_EVENTPIPE_BYTE` |The parameter type is an unsigned 8 bit integer.|
 |`COR_PRF_EVENTPIPE_INT16`|The parameter type is a signed 16 bit integer.|
 |`COR_PRF_EVENTPIPE_UINT16`|The parameter type is an unsigned 16 bit integer.|
 |`COR_PRF_EVENTPIPE_INT32`|The parameter type is a signed 32 bit integer.|
 |`COR_PRF_EVENTPIPE_UINT32`|The parameter type is an unsigned 32 bit integer.|
 |`COR_PRF_EVENTPIPE_INT64`|The parameter type is a signed 64 bit integer.|
 |`COR_PRF_EVENTPIPE_UINT64`|The parameter type is an unsigned 64 bit integer.|
-|`COR_PRF_EVENTPIPE_SINGLE`|The parameter type is a 32 bit floating point number.|
-|`COR_PRF_EVENTPIPE_DOUBLE`|The parameter type is a 64 bit floating point number.|
-|`COR_PRF_EVENTPIPE_DECIMAL`|The parameter type is a 128 bit floating point number.|
-|`COR_PRF_EVENTPIPE_DATETIME`|The parameter type is a serialized DataTime structure.|
-|`COR_PRF_EVENTPIPE_GUID`|The parameter type is a GUID.|
-|`COR_PRF_EVENTPIPE_STRING`|The parameter type is a 16 bit null terminated wide character string.|
-|`COR_PRF_EVENTPIPE_ARRAY`|The parameter type is an array of one of the preceding types.|
+| `COR_PRF_EVENTPIPE_SINGLE` |The parameter type is a 32 bit floating point number.|
+| `COR_PRF_EVENTPIPE_DOUBLE` |The parameter type is a 64 bit floating point number.|
+| `COR_PRF_EVENTPIPE_DECIMAL` |The parameter type is a 128 bit floating point number.|
+| `COR_PRF_EVENTPIPE_DATETIME` | The parameter type is a serialized DataTime structure. |
+| `COR_PRF_EVENTPIPE_GUID` | The parameter type is a GUID. |
+| `COR_PRF_EVENTPIPE_STRING` |The parameter type is a 16 bit null terminated wide character string.|
+| `COR_PRF_EVENTPIPE_ARRAY` | The parameter type is an array of one of the preceding types. |
 
 ## Remarks
 

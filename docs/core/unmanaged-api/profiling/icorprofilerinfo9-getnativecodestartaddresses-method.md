@@ -11,7 +11,6 @@ api_location:
 api_type:
   - "COM"
 author: "davmason"
-ms.author: "davmason"
 ---
 # ICorProfilerInfo9::GetNativeCodeStartAddresses method
 

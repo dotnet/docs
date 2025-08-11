@@ -12,21 +12,21 @@ ms.topic: how-to
 
 # How to configure the parser in System.CommandLine
 
-[!INCLUDE [scl-preview](../../../includes/scl-preview.md)]
+[!INCLUDE [scl-preview](./includes/preview.md)]
 
-`System.CommandLine.CommandLineConfiguration` is a class that provides properties to configure the parser. It is an optional argument for every `Parse` method, such as `System.CommandLine.Command.Parse` or `System.CommandLine.Parsing.CommandLineParser.Parse`. When it is not provided, the default configuration is used.
+<xref:System.CommandLine.CommandLineConfiguration> is a class that provides properties to configure the parser. It is an optional argument for every `Parse` method, such as <xref:System.CommandLine.Command.Parse*?displayProperty=nameWithType> and <xref:System.CommandLine.Parsing.CommandLineParser.Parse*?displayProperty=nameWithType>. When it isn't provided, the default configuration is used.
 
-Every `System.CommandLine.ParseResult` instance has a `System.CommandLine.ParseResult.Configuration` property that returns the configuration used for parsing.
+<xref:System.CommandLine.ParseResult> has a <xref:System.CommandLine.ParseResult.Configuration> property that returns the configuration used for parsing.
 
 ## Standard output and error
 
-`System.CommandLine.CommandLineConfiguration` makes testing, as well as many extensibility scenarios, easier than using `System.Console`. It exposes two `TextWriter` properties: `Output` and `Error`. These can be set to any `TextWriter` instance, such as a `StringWriter`, which can be used to capture output for testing.
+`CommandLineConfiguration` makes testing, as well as many extensibility scenarios, easier than using `System.Console`. It exposes two `TextWriter` properties: `Output` and `Error`. These can be set to any `TextWriter` instance, such as a `StringWriter`, which can be used to capture output for testing.
 
-Let's define a simple command that writes to standard output:
+Define a simple command that writes to standard output:
 
 :::code language="csharp" source="snippets/configuration/csharp/Program.cs" id="rootcommand":::
 
-Now, let's use `CommandLineConfiguration` to capture the output:
+Now, use `CommandLineConfiguration` to capture the output:
 
 :::code language="csharp" source="snippets/configuration/csharp/Program.cs" id="captureoutput":::
 

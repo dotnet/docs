@@ -120,8 +120,8 @@ groups:
   title: Ubuntu Version
   prompt: Choose the Ubuntu distribution version
   pivots:
-    - id: os-linux-ubuntu-2410
-      title: "24.10"
+    - id: os-linux-ubuntu-2504
+      title: "25.04"
     - id: os-linux-ubuntu-2404
       title: "24.04"
     - id: os-linux-ubuntu-2204

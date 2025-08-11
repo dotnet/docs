@@ -3,6 +3,7 @@ title: Timers and reminders
 description: Learn how to use timers and reminders in .NET Orleans.
 ms.date: 05/23/2025
 ms.topic: conceptual
+ms.custom: sfi-ropc-nochange
 ---
 
 # Timers and reminders

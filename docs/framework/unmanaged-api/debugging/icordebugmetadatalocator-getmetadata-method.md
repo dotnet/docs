@@ -57,16 +57,16 @@ HRESULT GetMetaData(
  `wszPathBuffer`
  [out] Pointer to a buffer into which the debugger will copy the full path of the file that contains the requested metadata.
 
- The `ofReadOnly` flag from the [CorOpenFlags](../metadata/coropenflags-enumeration.md) enumeration is used to request read-only access to the metadata in this file.
+ The `ofReadOnly` flag from the [CorOpenFlags](../../../core/unmanaged-api/metadata/enumerations/coropenflags-enumeration.md) enumeration is used to request read-only access to the metadata in this file.
 
 ## Return Value
 
  This method returns the following specific HRESULTs as well as HRESULT errors that indicate method failure. All other failure HRESULTs indicate that the file is not retrievable.
 
-|HRESULT|Description|
-|-------------|-----------------|
-|S_OK|The method completed successfully. `wszPathBuffer` contains the full path to the file and is null-terminated.|
-|E_NOT_SUFFICIENT_BUFFER|The current size of `wszPathBuffer` is not sufficient to hold the full path. In this case, `pcchPathBuffer` contains the needed count of `WCHAR`s, including the terminating null character, and `GetMetaData` is called a second time with the requested buffer size.|
+| HRESULT | Description |
+|---------|-------------|
+| S_OK    | The method completed successfully. `wszPathBuffer` contains the full path to the file and is null-terminated. |
+| E_NOT_SUFFICIENT_BUFFER | The current size of `wszPathBuffer` is not sufficient to hold the full path. In this case, `pcchPathBuffer` contains the needed count of `WCHAR`s, including the terminating null character, and `GetMetaData` is called a second time with the requested buffer size. |
 
 ## Remarks
 

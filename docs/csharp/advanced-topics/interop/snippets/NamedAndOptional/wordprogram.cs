@@ -19,7 +19,8 @@ namespace OfficeHowTo
         static void DisplayInWord()
         {
             var wordApp = new Word.Application();
-            wordApp.Visible = true;
+            // Keep Word invisible during operations to avoid COM threading issues
+            wordApp.Visible = false;
             // docs is a collection of all the Document objects currently
             // open in Word.
             Word.Documents docs = wordApp.Documents;
@@ -61,6 +62,9 @@ namespace OfficeHowTo
             range.ConvertToTable(Separator: ",", AutoFit: true, NumColumns: 1,
                 Format: Word.WdTableFormat.wdTableFormatElegant);
             //</Snippet11>
+
+            // Make Word visible after all operations are complete
+            wordApp.Visible = true;
         }
     }
 }
@@ -74,20 +78,25 @@ namespace Parts
         static void DisplayInWord()
         {
             var wordApp = new Word.Application();
-            wordApp.Visible = true;
+            // Keep Word invisible during operations to avoid COM threading issues
+            wordApp.Visible = false;
             // docs is a collection of all the Document objects currently
             // open in Word.
             Word.Documents docs = wordApp.Documents;
 
             // Add a document to the collection and name it doc.
             Word.Document doc = docs.Add();
+            
+            // Make Word visible after operations are complete
+            wordApp.Visible = true;
         }
         //</Snippet6>
 
         static void VS2008()
         {
             var wordApp = new Word.Application();
-            wordApp.Visible = true;
+            // Keep Word invisible during operations to avoid COM threading issues
+            wordApp.Visible = false;
             // docs is a collection of all the Document objects currently
             // open in Word.
             Word.Documents docs = wordApp.Documents;
@@ -101,6 +110,9 @@ namespace Parts
             Word.Range range = doc.Range(ref n, ref n);
 
             range.InsertAfter("Testing, testing, testing. . .");
+            
+            // Make Word visible after operations are complete
+            wordApp.Visible = true;
         }
     }
 }

@@ -63,7 +63,6 @@ You might need to install [.NET dependencies](https://github.com/dotnet/core/blo
 
 ### Package managers
 
-- <https://formulae.brew.sh/cask/dotnet>
 - <https://formulae.brew.sh/cask/dotnet-sdk>
 - <https://ports.macports.org/port/dotnet-cli>
 - <https://search.nixos.org/packages?query=dotnet>

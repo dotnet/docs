@@ -34,7 +34,7 @@ Without using  `ClassCleanupBehavior.EndOfClass`, the `[ClassCleanup]` will by d
 
 ## How to fix violations
 
-Use `ClassCleanupBehavior.EndOfClass` with the `[ClassCleanup]`.
+Use `[ClassCleanup(ClassCleanupBehavior.EndOfClass)]`.
 
 ## When to suppress warnings
 

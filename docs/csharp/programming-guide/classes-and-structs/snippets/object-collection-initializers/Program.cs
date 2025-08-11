@@ -9,5 +9,9 @@ class Program
         HowToIndexInitializer.Main();
         HowToDictionaryInitializer.Main();
         ObjectInitializersExecutionOrder.Main();
+        
+        Console.WriteLine("\n--- Object Initializer Without New Examples ---");
+        ObjectInitializerWithoutNew.Examples();
+        ReadOnlyPropertyExample.Example();
     }
 }

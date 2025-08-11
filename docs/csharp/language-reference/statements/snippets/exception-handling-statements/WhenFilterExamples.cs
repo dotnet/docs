@@ -17,9 +17,9 @@ namespace ExceptionFilterExamples
             }
             catch (InvalidOperationException ex) when (ex.Message.Contains("filter"))
             {
-                // Exception filter: Stack not unwound yet
-                // localVariable is still accessible in debugger
-                // Call stack shows original throwing location
+                // Exception filter: Stack not unwound yet.
+                // localVariable is still accessible in debugger.
+                // Call stack shows original throwing location.
                 Console.WriteLine($"Caught with filter: {ex.Message}");
                 Console.WriteLine($"Local variable accessible: {localVariable}");
             }
@@ -30,8 +30,8 @@ namespace ExceptionFilterExamples
             }
             catch (InvalidOperationException ex)
             {
-                // Traditional catch: Stack already unwound
-                // Some debugging information may be lost
+                // Traditional catch: Stack already unwound.
+                // Some debugging information may be lost.
                 if (ex.Message.Contains("traditional"))
                 {
                     Console.WriteLine($"Caught with if: {ex.Message}");
@@ -39,7 +39,7 @@ namespace ExceptionFilterExamples
                 }
                 else
                 {
-                    throw; // Re-throws and further modifies stack trace
+                    throw; // Re-throws and further modifies stack trace.
                 }
             }
         }
@@ -60,7 +60,7 @@ namespace ExceptionFilterExamples
         {
             try
             {
-                // Simulate file operation that might fail
+                // Simulate file operation that might fail.
                 ProcessFile(filePath);
             }
             catch (IOException ex) when (ex.Message.Contains("access denied"))
@@ -83,7 +83,7 @@ namespace ExceptionFilterExamples
 
         private static void ProcessFile(string filePath)
         {
-            // Simulate different types of file exceptions
+            // Simulate different types of file exceptions.
             if (filePath.Contains("denied"))
                 throw new IOException("File access denied");
             if (filePath.Contains("missing"))
@@ -110,13 +110,13 @@ namespace ExceptionFilterExamples
 
             try
             {
-                // Simulate a deep call stack
+                // Simulate a deep call stack.
                 Level1Method(contextData);
             }
             catch (Exception ex) when (LogAndFilter(ex, contextData))
             {
-                // This catch block may never execute if LogAndFilter returns false
-                // But LogAndFilter can examine the exception while the stack is intact
+                // This catch block may never execute if LogAndFilter returns false.
+                // But LogAndFilter can examine the exception while the stack is intact.
                 Console.WriteLine("Exception handled after logging");
             }
         }
@@ -138,13 +138,13 @@ namespace ExceptionFilterExamples
 
         private static bool LogAndFilter(Exception ex, Dictionary<string, object> context)
         {
-            // This method runs before stack unwinding
-            // Full call stack and local variables are still available
+            // This method runs before stack unwinding.
+            // Full call stack and local variables are still available.
             Console.WriteLine($"Exception occurred: {ex.Message}");
             Console.WriteLine($"Request ID: {context["RequestId"]}");
             Console.WriteLine($"Full stack trace preserved: {ex.StackTrace}");
             
-            // Return true to handle the exception, false to continue search
+            // Return true to handle the exception, false to continue search.
             return ex.Message.Contains("deep call stack");
         }
         // </DebuggingAdvantageExample>

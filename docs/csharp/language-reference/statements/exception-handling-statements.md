@@ -100,18 +100,18 @@ If a `catch` clause has an exception filter, it can specify the exception type t
 Exception filters provide significant advantages over traditional exception handling approaches. The key difference is **when** the exception handling logic is evaluated:
 
 - **Exception filters (`when`)**: The filter expression is evaluated *before* the stack is unwound. This means the original call stack and all local variables remain intact during filter evaluation.
-- **Traditional `catch` blocks**: The stack is unwound *before* entering the catch block, potentially losing valuable debugging information.
+- **Traditional `catch` blocks**: The catch block executes *after* the stack is unwound, potentially losing valuable debugging information.
 
 Here's a comparison showing the difference:
 
 :::code language="csharp" source="snippets/exception-handling-statements/WhenFilterExamples.cs" id="ExceptionFilterVsIfElse":::
 
-**Advantages of exception filters:**
+## Advantages of exception filters
 
-1. **Better debugging experience**: Since the stack isn't unwound until a filter matches, debuggers can show the original point of failure with all local variables intact.
-1. **Performance benefits**: If no filter matches, the exception continues propagating without the overhead of stack unwinding and restoration.
-1. **Cleaner code**: Multiple filters can handle different conditions of the same exception type without requiring nested if-else statements.
-1. **Logging and diagnostics**: You can examine and log exception details before deciding whether to handle the exception:
+- **Better debugging experience**: Since the stack isn't unwound until a filter matches, debuggers can show the original point of failure with all local variables intact.
+- **Performance benefits**: If no filter matches, the exception continues propagating without the overhead of stack unwinding and restoration.
+- **Cleaner code**: Multiple filters can handle different conditions of the same exception type without requiring nested if-else statements.
+- **Logging and diagnostics**: You can examine and log exception details before deciding whether to handle the exception:
 
 :::code language="csharp" source="snippets/exception-handling-statements/WhenFilterExamples.cs" id="DebuggingAdvantageExample":::
 
@@ -119,10 +119,10 @@ Here's a comparison showing the difference:
 
 Use exception filters when you need to:
 
-- Handle exceptions based on specific conditions or properties
-- Preserve the original call stack for debugging
-- Log or examine exceptions before deciding whether to handle them
-- Handle the same exception type differently based on context
+- Handle exceptions based on specific conditions or properties.
+- Preserve the original call stack for debugging.
+- Log or examine exceptions before deciding whether to handle them.
+- Handle the same exception type differently based on context.
 
 :::code language="csharp" source="snippets/exception-handling-statements/WhenFilterExamples.cs" id="MultipleConditionsExample":::
 

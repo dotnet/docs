@@ -38,7 +38,7 @@ The following table outlines the updates in this release.
 | --- | --- |
 | **Windows 11, version 24H2** | |
 | .NET Framework 3.5, 4.8.1 | [5064401](https://support.microsoft.com/kb/5064401) |
-| **Windows 11, version 22H2 and Windows 11, version 23H2** | |
+| **Windows 11, version 23H2** | |
 | .NET Framework 3.5, 4.8.1 | [5064403](https://support.microsoft.com/kb/5064403) |
 | **Windows 10, version 22H2** | **[5064794](https://support.microsoft.com/kb/5064794)** |
 | .NET Framework 3.5, 4.8 | [5064399](https://support.microsoft.com/kb/5064399) |

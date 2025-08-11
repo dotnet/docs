@@ -5,6 +5,7 @@ author: adegeo
 ms.author: adegeo
 ms.date: 08/08/2025
 ms.custom: vs-dotnet, updateeachrelease
+ai-usage: ai-generated
 dev_langs:
   - "csharp"
   - "vb"
@@ -53,29 +54,17 @@ You can use the following app to explore the publishing options in Visual Studio
 01. Select **Next**.
 01. Enter a project name, such as "AppTest1", and select **Next**.
 01. Choose the latest framework version and select **Create**.
-01. In **Solution Explorer**, right-click on the project and select **Manage NuGet Packages**.
+01. In **Solution Explorer**, right-click on the project and select **Manage NuGet Packages...**.
+01. Select the **Browse** tab.
 01. Search for "Figgle.Fonts" and install the package.
 
 Change the `Program.cs` or `Program.vb` code to the following snippet:
 
-```csharp
-using Figgle.Fonts;
+:::code language="csharp" source="./snippets/shared/publish/csharp/Program.cs":::
 
-Console.WriteLine(FiggleFonts.Standard.Render("Hello, World!"));
-```
+:::code language="vb" source="./snippets/shared/publish/vb/Program.vb":::
 
-```vb
-Imports System
-Imports Figgle.Fonts
-
-Module Program
-    Sub Main(args As String())
-        Console.WriteLine(FiggleFonts.Standard.Render("Hello World!"))
-    End Sub
-End Module
-```
-
-When you run the app (**Debug** > **Start Debugging** or press **F5**), the following output is displayed:
+When you run the app ([`dotnet run`](../tools/dotnet-run.md)), the following output is displayed:
 
 ```terminal
   _   _      _ _         __        __         _     _ _

@@ -5,6 +5,7 @@ author: adegeo
 ms.author: adegeo
 ms.date: 08/07/2025
 ms.custom: updateeachrelease
+ai-usage: ai-assisted
 dev_langs:
   - "csharp"
   - "vb"
@@ -62,22 +63,9 @@ dotnet add package Figgle.Fonts
 
 Change the `Program.cs` or `Program.vb` code to the following snippet:
 
-```csharp
-using Figgle.Fonts;
+:::code language="csharp" source="./snippets/shared/publish/csharp/Program.cs":::
 
-Console.WriteLine(FiggleFonts.Standard.Render("Hello, World!"));
-```
-
-```vb
-Imports System
-Imports Figgle.Fonts
-
-Module Program
-    Sub Main(args As String())
-        Console.WriteLine(FiggleFonts.Standard.Render("Hello World!"))
-    End Sub
-End Module
-```
+:::code language="vb" source="./snippets/shared/publish/vb/Program.vb":::
 
 When you run the app ([`dotnet run`](../tools/dotnet-run.md)), the following output is displayed:
 

@@ -290,7 +290,7 @@ For more information, see the following sections of the [C# language specificati
 - [Compound assignment](~/_csharpstandard/standard/expressions.md#12214-compound-assignment)
 - [The checked and unchecked operators](~/_csharpstandard/standard/expressions.md#12820-the-checked-and-unchecked-operators)
 - [Numeric promotions](~/_csharpstandard/standard/expressions.md#1247-numeric-promotions)
-- [User defined compound assignment](~/_csharplang/proposals/user-defined-compound-assignment.md)
+- [User defined compound assignment](~/_csharplang/proposals/csharp-14.0/user-defined-compound-assignment.md)
 
 ## See also
 

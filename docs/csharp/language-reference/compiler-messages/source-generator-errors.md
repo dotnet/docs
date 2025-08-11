@@ -96,8 +96,10 @@ The following errors are generated when source generators or interceptors are lo
 - [**CS9206**](#other-failures): *An interceptor cannot be declared in the global namespace.*
 - [**CS9207**](#other-failures): *Cannot intercept because method is not an invocation of an ordinary member method.*
 
-The following warnings are  generated when source generators or interceptors are loaded during a compilation:
+The following warnings are generated when source generators or interceptors are loaded during a compilation:
 
+- [**CS8784**](#other-failures): *Generator '`YourSourceGeneratorName`' failed to initialize. It will not contribute to the output and compilation errors may occur as a result.*
+- [**CS8785**](#other-failures): *Generator '`YourSourceGeneratorName`' failed to generate source. It will not contribute to the output and compilation errors may occur as a result.*
 - [**CS9154**](#signature-mismatch): *Intercepting a call to `M` with interceptor `V`, but the signatures do not match.*
 - [**CS9158**](#signature-mismatch): *Nullability of reference types in return type doesn't match interceptable method.*
 - [**CS9159**](#signature-mismatch): *Nullability of reference types in type of parameter doesn't match interceptable method.*

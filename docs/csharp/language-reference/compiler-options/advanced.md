@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "ChecksumAlgorithm compiler option [C#]"
   - "CodePage compiler option [C#]"
   - "Utf8Output compiler option [C#]"
-  - "MainEntryPoint compiler option [C#]"
+  - "StartupObject compiler option [C#]"
   - "GenerateFullPaths compiler option [C#]"
   - "FileAlignment compiler option [C#]"
   - "PathMap compiler option [C#]"
@@ -27,7 +27,7 @@ helpviewer_keywords:
 
 The following options support advanced scenarios. The new MSBuild syntax is shown in **Bold**. The older `csc.exe` syntax is shown in `code style`.
 
-- **MainEntryPoint**, **StartupObject** / `-main`: Specify the type that contains the entry point.
+- **StartupObject** / `-main`: Specify the type that contains the entry point.
 - **PdbFile** / `-pdb`: Specify debug information file name.
 - **PathMap** / `-pathmap`: Specify a mapping for source path names output by the compiler.
 - **ApplicationConfiguration** / `-appconfig`: Specify an application configuration file containing assembly binding settings.
@@ -54,18 +54,12 @@ You add any of these options in a `<PropertyGroup>` element in your `*.csproj` f
 </PropertyGroup>
 ``````
 
-## MainEntryPoint or StartupObject
+## StartupObject
 
 This option specifies the class that contains the entry point to the program when your compilation includes more than one type with a `Main` method. When there's exactly one acceptable `Main` method in the project, this option is ignored.
 
 ```xml
 <StartupObject>MyNamespace.Program</StartupObject>
-```
-
-or
-
-```xml
-<MainEntryPoint>MyNamespace.Program</MainEntryPoint>
 ```
 
 Where `Program` is the type that contains the `Main` method. When this option is required (multiple `Main` methods exist), the provided class name must be fully qualified; it must include the full namespace containing the class, followed by the class name. For example, when the `Main` method is located inside the `Program` class in the `MyApplication.Core` namespace, the compiler option has to be `-main:MyApplication.Core.Program`. If the class is in the global namespace, the fully qualified name is the same as the simple class name (for example, `Program` instead of `MyNamespace.Program`).
@@ -245,7 +239,7 @@ Use this option if you want to define or create your own System namespace and ob
 Specifies the minimum version of the subsystem on which the executable file runs. Most commonly, this option ensures that the executable file can use security features that aren’t available with older versions of Windows.
 
 > [!NOTE]
-> To specify the subsystem itself, use the [**TargetType**](./output.md#targettype) compiler option.
+> To specify the subsystem itself, use the [**OutputType**](./output.md#outputtype) compiler option.
 
 ```xml
 <SubsystemVersion>major.minor</SubsystemVersion>
@@ -266,9 +260,9 @@ The following table lists common subsystem versions of Windows.
 The default value of the **SubsystemVersion** compiler option depends on the conditions in the following list:
 
 - The default value is 6.02 if any compiler option in the following list is set:
-  - [-target:appcontainerexe](output.md)
-  - [-target:winmdobj](output.md)
-  - [-platform:arm](output.md)
+  - [-target:appcontainerexe](output.md#outputtype)
+  - [-target:winmdobj](output.md#outputtype)
+  - [-platform:arm](output.md#platformtarget)
 - The default value is 6.00 if you're using MSBuild, you're targeting .NET Framework 4.5, and you haven't set any of the compiler options that were specified earlier in this list.
 - The default value is 4.00 if none of the previous conditions are true.
 
@@ -286,7 +280,7 @@ Specifies the name of an assembly whose nonpublic types a *.netmodule* can acces
 - You know the name of the assembly into which the .netmodule will be built.
 - The existing assembly has granted friend assembly access to the assembly into which the .*netmodule* will be built.
 
-For more information on building a .netmodule, see [**TargetType**](output.md#targettype) option of **module**. For more information on friend assemblies, see [Friend Assemblies](../../../standard/assembly/friend.md).
+For more information on building a .netmodule, see [**OutputType**](output.md#outputtype) option of **module**. For more information on friend assemblies, see [Friend Assemblies](../../../standard/assembly/friend.md).
 
 ## ReportIVTs
 

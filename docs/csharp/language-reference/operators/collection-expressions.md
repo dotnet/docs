@@ -45,7 +45,7 @@ A *collection expression* can be converted to different collection types, includ
   - <xref:System.Collections.Generic.IList%601?displayProperty=fullName>.
 
 > [!NOTE]
-> Collection expressions cannot be used to initialize [inline arrays](../builtin-types/struct.md#inline-arrays). Inline arrays require different initialization syntax.
+> Collection expressions can't be used to initialize [inline arrays](../builtin-types/struct.md#inline-arrays). Inline arrays require different initialization syntax.
 
 > [!IMPORTANT]
 > A collection expression always creates a collection that includes all elements in the collection expression, regardless of the target type of the conversion. For example, when the target of the conversion is <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType>, the generated code evaluates the collection expression and stores the results in an in-memory collection.

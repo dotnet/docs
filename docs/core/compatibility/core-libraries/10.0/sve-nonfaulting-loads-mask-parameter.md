@@ -8,7 +8,7 @@ ms.custom: https://github.com/dotnet/docs/issues/47439
 
 # Arm64 SVE nonfaulting loads require mask parameter
 
-All Arm64 SVE nonfaulting load APIs have been updated to include a `mask` parameter in the first position. This change affects all methods with `LoadVector*NonFaulting` in their name in the <xref:System.Runtime.Intrinsics.Arm.Sve?displayProperty=fullName> class.
+All Arm64 SVE nonfaulting load APIs have been updated to include a `mask` parameter in the first position. This change affects all methods with `LoadVector*NonFaulting` in their name in the <xref:System.Runtime.Intrinsics.Arm.Sve?displayProperty=nameWithType> class.
 
 ## Version introduced
 
@@ -33,9 +33,9 @@ Vector<short> maskedResult = Sve.ConditionalSelect(
 
 ## New behavior
 
-Starting in .NET 10, nonfaulting load APIs now require a mask parameter as the first argument.
+Starting in .NET 10, nonfaulting load APIs require a mask parameter as the first argument.
 
-To do a nonfaulting load for all elements, use code similar to the following: `Sve.LoadVector*NonFaulting*(Sve.CreateTrueMask*(), addr);`
+To do a nonfaulting load for all elements, create and pass a true mask: `Sve.LoadVector*NonFaulting*(Sve.CreateTrueMask*(), addr);`
 
 ## Type of breaking change
 
@@ -52,6 +52,7 @@ This change was necessary because a nonfaulting load updates the first fault reg
 
 ## Affected APIs
 
+- <xref:System.Runtime.Intrinsics.Arm.Sve.LoadVectorNonFaulting%2A?displayProperty=fullName>
 - <xref:System.Runtime.Intrinsics.Arm.Sve.LoadVectorByteNonFaultingZeroExtendToInt16(System.Byte*)?displayProperty=fullName>
 - <xref:System.Runtime.Intrinsics.Arm.Sve.LoadVectorByteNonFaultingZeroExtendToInt32(System.Byte*)?displayProperty=fullName>
 - <xref:System.Runtime.Intrinsics.Arm.Sve.LoadVectorByteNonFaultingZeroExtendToInt64(System.Byte*)?displayProperty=fullName>
@@ -64,7 +65,6 @@ This change was necessary because a nonfaulting load updates the first fault reg
 - <xref:System.Runtime.Intrinsics.Arm.Sve.LoadVectorInt16NonFaultingSignExtendToUInt64(System.Int16*)?displayProperty=fullName>
 - <xref:System.Runtime.Intrinsics.Arm.Sve.LoadVectorInt32NonFaultingSignExtendToInt64(System.Int32*)?displayProperty=fullName>
 - <xref:System.Runtime.Intrinsics.Arm.Sve.LoadVectorInt32NonFaultingSignExtendToUInt64(System.Int32*)?displayProperty=fullName>
-- <xref:System.Runtime.Intrinsics.Arm.Sve.LoadVectorNonFaulting%2A?displayProperty=fullName>
 - <xref:System.Runtime.Intrinsics.Arm.Sve.LoadVectorSByteNonFaultingSignExtendToInt16(System.SByte*)?displayProperty=fullName>
 - <xref:System.Runtime.Intrinsics.Arm.Sve.LoadVectorSByteNonFaultingSignExtendToInt32(System.SByte*)?displayProperty=fullName>
 - <xref:System.Runtime.Intrinsics.Arm.Sve.LoadVectorSByteNonFaultingSignExtendToInt64(System.SByte*)?displayProperty=fullName>

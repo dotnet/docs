@@ -14,12 +14,16 @@ items:
                 href: aspnet-core/10/cookie-authentication-api-endpoints.md
               - name: Deprecation of WithOpenApi extension method
                 href: aspnet-core/10/withopenapi-deprecated.md
+              - name: Exception diagnostics suppressed when TryHandleAsync returns true
+                href: aspnet-core/10/exception-handler-diagnostics-suppressed.md
               - name: IActionContextAccessor and ActionContextAccessor are obsolete
                 href: aspnet-core/10/iactioncontextaccessor-obsolete.md
               - name: IncludeOpenAPIAnalyzers property and MVC API analyzers are deprecated
                 href: aspnet-core/10/openapi-analyzers-deprecated.md
               - name: Microsoft.Extensions.ApiDescription.Client package deprecated
                 href: aspnet-core/10/apidescription-client-deprecated.md
+              - name: Razor run-time compilation is obsolete
+                href: aspnet-core/10/razor-runtime-compilation-obsolete.md
           - name: Containers
             items:
               - name: Default .NET images use Ubuntu

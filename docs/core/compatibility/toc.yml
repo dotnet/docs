@@ -92,6 +92,8 @@ items:
                 href: networking/10.0/ssl-certificate-revocation-check-default.md
               - name: Streaming HTTP responses enabled by default in browser HTTP clients
                 href: networking/10.0/default-http-streaming.md
+              - name: "'Uri' length limits removed"
+                href: networking/10.0/uri-length-limits-removed.md
           - name: SDK and MSBuild
             items:
               - name: .NET CLI `--interactive` defaults to `true` in user scenarios

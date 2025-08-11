@@ -56,7 +56,7 @@ You add any of these options in a `<PropertyGroup>` element in your `*.csproj` f
 
 ## StartupObject
 
-This option specifies the class that contains the entry point to the program when your compilation includes more than one type with a `Main` method. When there's exactly one acceptable `Main` method in the project, this option is ignored.
+This option specifies the class that contains the entry point to the program when your project includes more than one type with a `Main` method. When there's exactly one acceptable `Main` method in the project, this option is ignored.
 
 ```xml
 <StartupObject>MyNamespace.Program</StartupObject>

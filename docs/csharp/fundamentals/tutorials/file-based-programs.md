@@ -10,11 +10,10 @@ ai-usage: ai-assisted
 # Tutorial: Build file-based C# programs
 
 > [!IMPORTANT]
->
 > File-based programs are a feature of .NET 10, which is in preview.
 > Some information relates to prerelease product that might be modified before release. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-*File-based programs* are programs contained within a single `*.cs` file that are built and run without a corresponding project (`*.csproj`) file. File-based programs are ideal for learning C# because they have less complexity: The entire program is stored in a single file. File-based programs are also useful for building command line utilities. On Unix platforms, file-based programs can be executed using `#!` (shebang) directives.
+*File-based programs* are programs contained within a single `*.cs` file that are built and run without a corresponding project (`*.csproj`) file. File-based programs are ideal for learning C# because they have less complexity: The entire program is stored in a single file. File-based programs are also useful for building command line utilities. On Unix platforms, file-based programs can be run using `#!` (shebang) directives.
 
 In this tutorial, you:
 
@@ -45,9 +44,9 @@ Save the file. Then, open the integrated terminal in Visual Studio Code and type
 dotnet run AsciiArt.cs
 ```
 
-The first time you run this program, the `dotnet` host builds the executable from your source file, stores build artifacts in a temporary folder, then runs the created executable. You can verify this experience by typing `dotnet run AsciiArt.cs` again. This time, the `dotnet` host determines that the executable is current, and runs the executable without building it again. You don't see any build output. The executable runs without the extra build step.
+The first time you run this program, the `dotnet` host builds the executable from your source file, stores build artifacts in a temporary folder, then runs the created executable. You can verify this experience by typing `dotnet run AsciiArt.cs` again. This time, the `dotnet` host determines that the executable is current, and runs the executable without building it again. You don't see any build output.
 
-The preceding steps demonstrate that file based programs aren't script files. They're C# source files that are built using a generated project file in a temporary folder. One of the lines of output when you built the program should look something like this (on Windows):
+The preceding steps demonstrate that file based programs aren't script files. They're C# source files that are built using a generated project file in a temporary folder. One of the lines of output displayed when you built the program should look something like this (on Windows):
 
 ```dotnetcli
 AsciiArt succeeded (7.3s) → AppData\Local\Temp\dotnet\runfile\AsciiArt-85c58ae0cd68371711f06f297fa0d7891d0de82afde04d8c64d5f910ddc04ddc\bin\debug\AsciiArt.dll
@@ -85,9 +84,9 @@ The `--` option indicates that all following command arguments should be passed 
 
 This version demonstrates these new concepts:
 
-1. The command line arguments are passed to the program using the predefined variable `args`. The `args` variable is an array of strings: `string[]`. If the length of `args` is 0, that means no arguments were provided. Otherwise, each word on the argument list is stored in the corresponding entry in the array.
-1. The `string.Join` method joins multiple strings into a single string, with the specified separator. In this case, the separator is a single space.
-1. `Console.WriteLine` writes the string to the standard output console, followed by a new line.
+- The command line arguments are passed to the program using the predefined variable `args`. The `args` variable is an array of strings: `string[]`. If the length of `args` is 0, that means no arguments were provided. Otherwise, each word on the argument list is stored in the corresponding entry in the array.
+- The `string.Join` method joins multiple strings into a single string, with the specified separator. In this case, the separator is a single space.
+- `Console.WriteLine` writes the string to the standard output console, followed by a new line.
 
 That handles command line arguments correctly. Now, add the code to handle reading input from standard input (`stdin`) instead of command line arguments. Add the following `else` clause to the `if` statement you added in the preceding code:
 
@@ -156,13 +155,13 @@ Next, add a package that supports ASCII art, [Colorful.Console](https://www.nuge
 
 > [!IMPORTANT]
 >
-> The version `1.2.15` was the latest version when this tutorial was last updated. If there's a newer version available, use the latest version to ensure you have the latest security packages.
+> The version `1.2.15` was the latest version of the `Colorful.Console` package when this tutorial was last updated. Check the package's [NuGet page](https://www.nuget.org/packages/Colorful.Console) for the latest version to ensure you use a package version with the latest security fixes.
 
 Next, change the lines that call `Console.WriteLine` to use the `Colorful.Console.WriteAscii` method instead:
 
 :::code language="csharp" source="./snippets/file-based-programs/AsciiArt.cs" id="WriteAscii":::
 
-Run the program, and you see ASCII art output instead of echoed text. Next, let's add command line parsing. The current version writes each word as a different line of output. The command line arguments you add support two features:
+Run the program, and you see ASCII art output instead of echoed text. Next, let's add command line parsing. The current version writes each word as a different line of output. The command line arguments you added support two features:
 
 1. Quote multiple words that should be written on one line:
 
@@ -176,16 +175,16 @@ Run the program, and you see ASCII art output instead of echoed text. Next, let'
    AsciiArt.cs --delay 1000
    ```
 
-Users should be able to use both together.
+Users should be able to use both arguments together.
 
 Most command line applications need to parse command line arguments to handle options, commands, and user input effectively. The [`System.CommandLine` library](../../../standard/commandline/index.md) provides comprehensive capabilities to handle commands, subcommands, options, and arguments, allowing you to concentrate on what your application does rather than the mechanics of parsing command line input.
 
 The `System.CommandLine` library offers several key benefits:
 
-- Automatic help text generation and validation
-- Support for POSIX and Windows command-line conventions  
-- Built-in tab completion capabilities
-- Consistent parsing behavior across applications
+- Automatic help text generation and validation.
+- Support for POSIX and Windows command-line conventions.
+- Built-in tab completion capabilities.
+- Consistent parsing behavior across applications.
 
 To add command line parsing capabilities, first add the `System.CommandLine` package. Add this directive after the existing package directive:
 
@@ -215,7 +214,7 @@ The preceding code validates all command line arguments. If the validation fails
 
 ## Use parsed command line results
 
-Now, finish the app to use the parsed options and write the output. First, define a record to hold the parsed options. File-based apps can include type declarations, like records. They must be after all top-level statements and local functions. Add a `record` declaration to store the messages and the delay option value:
+Now, finish the app to use the parsed options and write the output. First, define a record to hold the parsed options. File-based apps can include type declarations, like records and classes. They must be after all top-level statements and local functions. Add a `record` declaration to store the messages and the delay option value:
 
 :::code language="csharp" source="./snippets/file-based-programs/AsciiArt.cs" id="Record":::
 

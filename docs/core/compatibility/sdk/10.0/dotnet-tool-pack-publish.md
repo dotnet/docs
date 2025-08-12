@@ -8,7 +8,7 @@ ms.custom: https://github.com/dotnet/docs/issues/47916
 
 # .NET tool packaging invokes Publish instead of Build
 
-The .NET tool packaging process changed from invoking the MSBuild `Build` target to the `Publish` target (logically, not precisely). This means that assets that are included in `Publish` but not in `Build`, like WebSDK StaticWebAssets, will begin appearing in tool packages by default. If you explicitly copied those files into place, you might begin to receive build diagnostics warning of duplicate copies.
+The .NET tool packaging process changed from invoking the MSBuild `Build` target to the `Publish` target (logically, not precisely). This means that assets that are included in `Publish` but not in `Build`, like WebSDK StaticWebAssets, now appear in tool packages by default. If you explicitly copied those files into place, you might begin to receive build diagnostics warning of duplicate copies.
 
 ## Version introduced
 

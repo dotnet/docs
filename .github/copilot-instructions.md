@@ -46,7 +46,7 @@ Use the `url` value from results for manual links.
 
 ## Code Snippets
 For snippets >6 lines:
-1. Create `./snippets/my-doc/language` folder in same directory as document (for a document named `my-doc.md`) where language is either vb (for visual basic) or cs (for c#)
+1. Create `./snippets/my-doc/language` folder in same directory as document (for a document named `my-doc.md`) where language is either vb (for visual basic) or cs (for c#). Omit the `language` component when the document is in the `docs/visual-basic`, `docs/csharp`, or `docs/fsharp` folders.
 1. Add snippet as separate code file
 1. Include simple project file targeting latest .NET
 1. All code should use the latest stable versions/features

@@ -226,15 +226,15 @@ For more information, see the following resources:
 
 ## Examples
 
-- Create a [framework-dependent cross-platform binary](../deploying/index.md#produce-a-cross-platform-binary) for the project in the current directory:
+- Create a [framework-dependent cross-platform binary](../deploying/index.md#cross-platform-dll-deployment) for the project in the current directory:
 
   ```dotnetcli
   dotnet publish
   ```
 
-  Starting with .NET Core 3.0 SDK, this example also creates a [framework-dependent executable](../deploying/index.md#publish-framework-dependent) for the current platform.
+  Starting with .NET Core 3.0 SDK, this example also creates a [framework-dependent executable](../deploying/index.md#framework-dependent-deployment) for the current platform.
 
-- Create a [self-contained executable](../deploying/index.md#publish-self-contained) for the project in the current directory, for a specific runtime:
+- Create a [self-contained executable](../deploying/index.md#self-contained-deployment) for the project in the current directory, for a specific runtime:
 
   ```dotnetcli
   dotnet publish --runtime osx-x64
@@ -242,7 +242,7 @@ For more information, see the following resources:
 
   The RID must be in the project file.
 
-- Create a [framework-dependent executable](../deploying/index.md#publish-framework-dependent) for the project in the current directory, for a specific platform:
+- Create a [framework-dependent executable](../deploying/index.md#framework-dependent-deployment) for the project in the current directory, for a specific platform:
 
   ```dotnetcli
   dotnet publish --runtime osx-x64 --self-contained false

@@ -64,11 +64,11 @@ The benefit of targeting a specific platform is that it can handle [native depen
 
 ### Native dependencies
 
-If your app has native dependencies, it might not run on a different operating system. For example, apps that depend on the Windows API don't natively run on macOS or Linux. You would need to provide platform-specific code and compile an executable for each platform.
+If your app has native dependencies, it might not run on a different operating system if published as a portable binary. For example, apps that depend on the Windows API don't natively run on macOS or Linux. You would need to provide platform-specific code and compile an executable for each platform.
 
-Consider also, if a library you referenced has a native dependency, your app might not run on every platform. However, it's possible a NuGet package you're referencing includes platform-specific versions to handle the required native dependencies for you.
+Consider also, if a library you referenced provides platform-specific dependencies, your app might not run on every platform. However, when you publish and target a specific platform, the platform-specific dependencies of a NuGet package are copied to the publish folder.
 
-To ensure that your app is published with its native dependencies:
+To ensure that your app is published with its native dependencies, publish for a specific platform:
 
 ::: zone pivot="cli,vscode"
 

@@ -8,10 +8,7 @@ ai-usage: ai-assisted
 ---
 # What's new in the .NET 10 runtime
 
-This article describes new features and performance improvements in the .NET runtime for .NET 10. It has been updated for Preview 7.
-
-> [!NOTE]
-> .NET 10 Preview 7 does not include new runtime features. The runtime improvements and features described below were introduced in earlier previews.
+This article describes new features and performance improvements in the .NET runtime for .NET 10.
 
 ## JIT compiler improvements
 

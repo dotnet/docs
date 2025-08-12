@@ -78,7 +78,7 @@ dotnet publish -c Release -r <RID>
 
 - [!INCLUDE [cli-c-release](includes/cli-c-release.md)]
 
-- [!INCLUDE [cli-r-rid-native-deps](includes/cli-r-rid-native-deps.md)]
+- [!INCLUDE [cli-r-rid](includes/cli-r-rid.md)]
 
 ::: zone-end
 
@@ -360,7 +360,7 @@ Native AOT publishing must be configured in the project file. You cannot enable 
 01. Set **Target Runtime** to your desired platform (for example, **win-x64** for 64-bit Windows).
 01. Click **Save** and then **Publish**.
 
-For more information about the `PublishAot` property, see [MSBuild properties for Microsoft.NET.Sdk](../project-sdk/msbuild-props.md#publishaot).
+For more information about Native AOT deployment, see [Native AOT deployment](native-aot/index.md).
 
 ::: zone-end
 

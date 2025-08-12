@@ -130,7 +130,7 @@ items:
                 href: windows-forms/10.0/statusstrip-renderer.md
           - name: WPF
             items:
-              - name: WPF throws MC3063 error for empty ColumnDefinitions or RowDefinitions
+              - name: Empty ColumnDefinitions and RowDefinitions are disallowed
                 href: wpf/10.0/empty-grid-definitions.md
               - name: Incorrect usage of DynamicResource causes application crash
                 href: wpf/10.0/dynamicresource-crash.md

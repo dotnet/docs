@@ -12,6 +12,7 @@ Follow [Microsoft Writing Style Guide](https://learn.microsoft.com/en-us/style-g
 - Present tense for instructions/descriptions
 - Imperative mood for instructions ("Call the method" not "You should call the method")
 - Use "might" instead of "may" for possibility
+- Use "can" instead of "may" for permissible actions
 - Avoid "we"/"our" referring to documentation authors
 
 ### Structure and Format

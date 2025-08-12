@@ -36,11 +36,21 @@ If upgrading to .NET 10 and the code includes a direct package reference to `Sys
 
 If `System.Linq.Async` is consumed indirectly via another package, avoid ambiguity errors by including this in the project:
 
+**Option 1 (Recommended): Allow transitive usage**
+```xml
+<PackageReference Include="System.Linq.Async" Version="6.0.1">
+  <ExcludeAssets>compile</ExcludeAssets> 
+</PackageReference>
+```
+This prevents direct usage in your code while allowing other packages to continue using System.Linq.Async internally.
+
+**Option 2: Complete exclusion**
 ```xml
 <PackageReference Include="System.Linq.Async" Version="6.0.1">
   <ExcludeAssets>all</ExcludeAssets>
 </PackageReference>
 ```
+Use this only if you're certain no dependencies require System.Linq.Async at runtime.
 
 Most consuming code should be compatible without changes, but some call sites might need updates to refer to newer names and signatures. For example, a `Select` call like `e.Select(i => i * 2)` will work the same before and after. However, the call `e.SelectAwait(async (int i, CancellationToken ct) => i * 2)` will need to be changed to use `Select` instead of `SelectAwait`, as in `e.Select(async (int i, CancellationToken ct) => i * 2)`.
 

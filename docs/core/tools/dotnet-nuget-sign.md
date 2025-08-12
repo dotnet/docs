@@ -2,7 +2,7 @@
 title: dotnet nuget sign command
 description: The dotnet nuget sign command signs all the packages matching the first argument with a certificate.
 author: heng-liu
-ms.date: 07/07/2021
+ms.date: 08/11/2025
 ---
 # dotnet nuget sign
 
@@ -36,8 +36,8 @@ dotnet nuget sign -h|--help
 
 The `dotnet nuget sign` command signs all the packages matching the first argument with a certificate. The certificate with the private key can be obtained from a file or from a certificate installed in a certificate store by providing a subject name or a SHA-1 fingerprint.
 
-  > [!NOTE]
-  > This command requires a certificate root store that is valid for both code signing and timestamping. Also, this command may not be supported on some combinations of operating system and .NET SDK. For more information, see [NuGet signed package verification](nuget-signed-package-verification.md).
+> [!NOTE]
+> This command requires a certificate root store that's valid for both code signing and timestamping. Also, this command might not be supported on some combinations of operating system and .NET SDK. For more information, see [NuGet signed package verification](nuget-signed-package-verification.md).
 
 ## Arguments
 
@@ -73,12 +73,9 @@ The `dotnet nuget sign` command signs all the packages matching the first argume
 
   Specifies the fingerprint of the certificate used to search a local certificate store for the certificate.
 
-  Starting with .NET 9, this option can be used to specify the SHA-1, SHA-256, SHA-384, or SHA-512 fingerprint of the certificate.
-  However, a `NU3043` warning is raised when a SHA-1 certificate fingerprint is used because it is no longer considered secure.
+  Starting with .NET 9, this option can be used to specify the SHA-1, SHA-256, SHA-384, or SHA-512 fingerprint of the certificate. However, a `NU3043` warning is raised when a SHA-1 certificate fingerprint is used because it's no longer considered secure. In .NET 10 and later versions, [the warning is elevated to an error](../compatibility/sdk/10.0/dotnet-nuget-sign-sha1-deprecated.md). Only SHA-2 family fingerprints (SHA-256, SHA-384, and SHA-512) are supported.
 
-  Starting with .NET 10, the `NU3043` warning is promoted to an error when using SHA-1 fingerprints, effectively blocking the use of SHA-1 for signing operations. Only SHA-2 family fingerprints (SHA-256, SHA-384, SHA-512) are supported.
-
-  All the previous versions of the .NET SDK continue to accept only SHA-1 certificate fingerprint.
+  All pre-.NET 9 versions of the .NET SDK continue to accept only SHA-1 certificate fingerprint.
 
 - **`--certificate-password <PASSWORD>`**
 

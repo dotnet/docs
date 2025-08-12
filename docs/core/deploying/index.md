@@ -85,11 +85,11 @@ dotnet publish -c Release -r <RID>
 ::: zone pivot="visualstudio"
 
 01. Right-click on the project in **Solution Explorer** and select **Publish**.
-01. If this is your first time publishing, select **Folder** as the publish target and click **Next**.
-01. Choose a folder location or accept the default, then click **Finish**.
-01. In the publish profile, click **Show all settings**.
+01. If this is your first time publishing, select **Folder** as the publish target and select **Next**.
+01. Choose a folder location or accept the default, then select **Finish**.
+01. In the publish profile, select **Show all settings**.
 01. Set **Target Runtime** to your desired platform (for example, **win-x64** for 64-bit Windows).
-01. Click **Save** and then **Publish**.
+01. Select **Save** and then **Publish**.
 
 ::: zone-end
 
@@ -159,12 +159,12 @@ dotnet publish -c Release [-r <RID>] --self-contained false
 ::: zone pivot="visualstudio"
 
 01. Right-click on the project in **Solution Explorer** and select **Publish**.
-01. If this is your first time publishing, select **Folder** as the publish target and click **Next**.
-01. Choose a folder location or accept the default, then click **Finish**.
-01. In the publish profile, click **Show all settings**.
+01. If this is your first time publishing, select **Folder** as the publish target and select **Next**.
+01. Choose a folder location or accept the default, then select **Finish**.
+01. In the publish profile, select **Show all settings**.
 01. Set **Deployment Mode** to **Framework-dependent** (this is the default).
 01. Set **Target Runtime** to your desired platform (for example, **win-x64** for 64-bit Windows).
-01. Click **Save** and then **Publish**.
+01. Select **Save** and then **Publish**.
 
 ::: zone-end
 
@@ -206,13 +206,13 @@ dotnet publish -c Release -p:UseAppHost=false
 ::: zone pivot="visualstudio"
 
 01. Right-click on the project in **Solution Explorer** and select **Publish**.
-01. If this is your first time publishing, select **Folder** as the publish target and click **Next**.
-01. Choose a folder location or accept the default, then click **Finish**.
-01. In the publish profile, click **Show all settings**.
+01. If this is your first time publishing, select **Folder** as the publish target and select **Next**.
+01. Choose a folder location or accept the default, then select **Finish**.
+01. In the publish profile, select **Show all settings**.
 01. Set **Deployment Mode** to **Framework-dependent**.
 01. Uncheck **Produce single file**.
 01. Set **Target Runtime** to **Portable** (or leave blank).
-01. Click **Save** and then **Publish**.
+01. Select **Save** and then **Publish**.
 
 ::: zone-end
 
@@ -256,12 +256,12 @@ dotnet publish -c Release -r <RID> --self-contained true
 ::: zone pivot="visualstudio"
 
 01. Right-click on the project in **Solution Explorer** and select **Publish**.
-01. If this is your first time publishing, select **Folder** as the publish target and click **Next**.
-01. Choose a folder location or accept the default, then click **Finish**.
-01. In the publish profile, click **Show all settings**.
+01. If this is your first time publishing, select **Folder** as the publish target and select **Next**.
+01. Choose a folder location or accept the default, then select **Finish**.
+01. In the publish profile, select **Show all settings**.
 01. Set **Deployment Mode** to **Self-contained**.
 01. Set **Target Runtime** to your desired platform (for example, **win-x64** for 64-bit Windows).
-01. Click **Save** and then **Publish**.
+01. Select **Save** and then **Publish**.
 
 ::: zone-end
 
@@ -308,13 +308,13 @@ dotnet publish -c Release -r <RID> -p:PublishSingleFile=true
 ::: zone pivot="visualstudio"
 
 01. Right-click on the project in **Solution Explorer** and select **Publish**.
-01. If this is your first time publishing, select **Folder** as the publish target and click **Next**.
-01. Choose a folder location or accept the default, then click **Finish**.
-01. In the publish profile, click **Show all settings**.
+01. If this is your first time publishing, select **Folder** as the publish target and select **Next**.
+01. Choose a folder location or accept the default, then select **Finish**.
+01. In the publish profile, select **Show all settings**.
 01. Set **Deployment Mode** to **Self-contained** or **Framework-dependent**.
 01. Set **Target Runtime** to your desired platform (for example, **win-x64** for 64-bit Windows).
 01. Check **Produce single file**.
-01. Click **Save** and then **Publish**.
+01. Select **Save** and then **Publish**.
 
 ::: zone-end
 
@@ -332,7 +332,7 @@ Native AOT deployment compiles your app directly to native code, eliminating the
 **Disadvantages**
 
 - **Limited framework support**: Not all .NET features and libraries are compatible with Native AOT.
-- **Longer build times**: Compilation to native code takes significantly longer than regular builds.
+- **Longer build times**: Compilation to native code takes longer than regular builds.
 - **Platform-specific**: Must compile separately for each target platform and architecture.
 - **Debugging limitations**: More complex debugging experience compared to regular .NET applications.
 
@@ -358,7 +358,7 @@ dotnet publish -c Release -r <RID> -p:PublishAot=true
 
 ::: zone pivot="visualstudio"
 
-Native AOT publishing must be configured in the project file. You cannot enable it through the Visual Studio publishing UI.
+Native AOT publishing must be configured in the project file. You can't enable it through the Visual Studio publishing UI.
 
 01. In **Solution Explorer**, right-click on your project and select **Edit Project File**.
 01. Add the following property to a `<PropertyGroup>`:
@@ -369,12 +369,12 @@ Native AOT publishing must be configured in the project file. You cannot enable 
 
 01. Save the project file.
 01. Right-click on the project in **Solution Explorer** and select **Publish**.
-01. If this is your first time publishing, select **Folder** as the publish target and click **Next**.
-01. Choose a folder location or accept the default, then click **Finish**.
-01. In the publish profile, click **Show all settings**.
+01. If this is your first time publishing, select **Folder** as the publish target and select **Next**.
+01. Choose a folder location or accept the default, then select **Finish**.
+01. In the publish profile, select **Show all settings**.
 01. Set **Deployment Mode** to **Self-contained**.
 01. Set **Target Runtime** to your desired platform (for example, **win-x64** for 64-bit Windows).
-01. Click **Save** and then **Publish**.
+01. Select **Save** and then **Publish**.
 
 For more information about Native AOT deployment, see [Native AOT deployment](native-aot/index.md).
 
@@ -420,13 +420,13 @@ dotnet publish -c Release -r <RID> -p:PublishReadyToRun=true
 ::: zone pivot="visualstudio"
 
 01. Right-click on the project in **Solution Explorer** and select **Publish**.
-01. If this is your first time publishing, select **Folder** as the publish target and click **Next**.
-01. Choose a folder location or accept the default, then click **Finish**.
-01. In the publish profile, click **Show all settings**.
+01. If this is your first time publishing, select **Folder** as the publish target and select **Next**.
+01. Choose a folder location or accept the default, then select **Finish**.
+01. In the publish profile, select **Show all settings**.
 01. Set **Deployment Mode** to **Self-contained** or **Framework-dependent**.
 01. Set **Target Runtime** to your desired platform (for example, **win-x64** for 64-bit Windows).
 01. Check **Enable ReadyToRun compilation**.
-01. Click **Save** and then **Publish**.
+01. Select **Save** and then **Publish**.
 
 ::: zone-end
 
@@ -436,7 +436,7 @@ For more information about ReadyToRun deployment, see [ReadyToRun compilation](r
 
 When you publish your app as a container, the .NET SDK packages your application and its dependencies into a container image without requiring a separate Dockerfile. This deployment mode creates a complete container image that can be run on any container runtime, such as Docker or Podman. Container deployment simplifies the containerization process by eliminating the need to write and maintain Dockerfiles while providing optimized base images.
 
-Starting with .NET SDK 8.0.200, container support is included by default and doesn't require additional NuGet packages. For console applications, you might need to enable container support explicitly by setting the `EnableSdkContainerSupport` property to `true`.
+Starting with .NET SDK 8.0.200, container support is included by default and doesn't require extra NuGet packages. For console applications, you might need to enable container support explicitly by setting the `EnableSdkContainerSupport` property to `true`.
 
 > [!TIP]
 > For more information about project settings related to containers, see [Containerize a .NET app reference](../containers/publish-configuration.md).
@@ -487,14 +487,14 @@ dotnet publish -c Release [-r <RID>] -p:PublishProfile=DefaultContainer
 ::: zone pivot="visualstudio"
 
 01. Right-click on the project in **Solution Explorer** and select **Publish**.
-01. Select **Container Registry** as the publish target and click **Next**.
-01. Choose your target container registry (such as **Azure Container Registry**, **Docker Hub**, or **Generic Registry**) and click **Next**.
+01. Select **Container Registry** as the publish target and select **Next**.
+01. Choose your target container registry (such as **Azure Container Registry**, **Docker Hub**, or **Generic Registry**) and select **Next**.
 01. Configure the registry connection details and authentication.
-01. In the publish profile, click **Show all settings**.
+01. In the publish profile, select **Show all settings**.
 01. Set **Deployment Mode** to **Self-contained** or **Framework-dependent** based on your needs.
 01. Set **Target Runtime** to your desired platform (for example, **linux-x64** for Linux containers).
 01. Configure container-specific settings like image name and tags.
-01. Click **Save** and then **Publish**.
+01. Select **Save** and then **Publish**.
 
 ::: zone-end
 

@@ -112,6 +112,8 @@ items:
                 href: sdk/10.0/nu1510-pruned-references.md
               - name: PackageReference without a version raises error
                 href: sdk/10.0/nu1015-packagereference-version.md
+              - name: PrunePackageReference marks direct prunable references with PrivateAssets=all and IncludeAssets=none
+                href: sdk/10.0/prune-packagereference-privateassets.md
               - name: HTTP warnings promoted to errors in package list and search
                 href: sdk/10.0/http-warnings-to-errors.md
               - name: NUGET_ENABLE_ENHANCED_HTTP_RETRY environment variable removed

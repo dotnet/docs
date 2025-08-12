@@ -120,13 +120,13 @@ Your app is configured to target a specific version of .NET. That targeted .NET 
 
 Publishing a framework-dependent deployment creates an app that automatically rolls-forward to the latest .NET security patch available on the environment that runs the app. For more information on version binding at compile time, see [Select the .NET version to use](../versions/selection.md#framework-dependent-apps-roll-forward).
 
-### Advantages
+**Advantages**
 
 - **Small deployment**: Only the app and its dependencies are distributed. The environment where the app is run must already have the .NET runtime installed.
 - **Cross-platform**: The app and any .NET-based library runs on other operating systems.
 - **Uses the latest patched runtime**: The app uses the latest runtime installed in the environment.
 
-### Disadvantages
+**Disadvantages**
 
 - **Requires pre-installing the runtime**: The app can run only if the version of .NET it targets is already installed in the environment.
 - **.NET might change**: The environment where the app is run might use a newer .NET runtime, which could change app behavior.
@@ -206,12 +206,12 @@ When you publish a self-contained deployment (SCD), the publishing process creat
 
 Publishing an SCD creates an app that doesn't roll forward to the latest available .NET security patch. For more information on version binding at compile time, see [Select the .NET version to use](../versions/selection.md#self-contained-deployments-include-the-selected-runtime).
 
-### Advantages
+**Advantages**
 
 - **Control .NET version**: Control which version of .NET is deployed with the app.
 - **Platform-specific targeting**: Because the app must be published for each platform, it's clear where the app runs.
 
-### Disadvantages
+**Disadvantages**
 
 - **Larger deployments**: Because the app includes the .NET runtime and all dependencies, the download size and hard drive space required is greater than a **framework-dependent deployment**.
 - **Harder to update the .NET version**: The .NET Runtime can only be upgraded by releasing a new version of the app.
@@ -255,13 +255,13 @@ When you publish your app as a single-file deployment, all application-dependent
 
 Single-file apps are always OS and architecture specific. You need to publish for each configuration, such as Linux x64, Linux Arm64, Windows x64, and so forth.
 
-### Advantages
+**Advantages**
 
 - **Simplified distribution**: Deploy and distribute your application as a single executable file.
 - **Reduced file clutter**: All dependencies are bundled, eliminating the need to manage multiple files.
 - **Easy deployment**: Copy a single file to deploy the application.
 
-### Disadvantages
+**Disadvantages**
 
 - **Larger file size**: The single file includes all dependencies, making it larger than individual files.
 - **Slower startup**: Files must be extracted at runtime, which can impact startup performance.
@@ -306,14 +306,14 @@ This property bundles all application-dependent files into a single binary.
 
 Native AOT deployment compiles your app directly to native code, eliminating the need for a runtime. This publishing option uses **self-contained deployment** mode, as the compiled native code must include everything needed to run the application. This results in faster startup times and reduced memory usage, but comes with some limitations on supported features.
 
-### Advantages
+**Advantages**
 
 - **Fast startup**: No JIT compilation needed at runtime, leading to faster application startup.
 - **Reduced memory usage**: Lower memory footprint compared to traditional .NET applications.
 - **No runtime dependency**: The application runs without requiring .NET runtime installation.
 - **Smaller deployment size**: Often smaller than **self-contained deployment** with the full runtime.
 
-### Disadvantages
+**Disadvantages**
 
 - **Limited framework support**: Not all .NET features and libraries are compatible with Native AOT.
 - **Longer build times**: Compilation to native code takes significantly longer than regular builds.
@@ -370,14 +370,14 @@ When you publish your app with ReadyToRun compilation, your application assembli
 
 ReadyToRun binaries contain both intermediate language (IL) code and the native version of the same code. While R2R binaries are larger than regular assemblies, they provide better startup performance.
 
-### Advantages
+**Advantages**
 
 - **Improved startup time**: The app spends less time running the JIT compiler during startup.
 - **Better first-use performance**: Reduced latency for first-time execution of code paths.
 - **Compatible with existing code**: Works with most .NET libraries and frameworks without modification.
 - **Flexible deployment**: Can be combined with both **framework-dependent deployment** and **self-contained deployment** modes.
 
-### Disadvantages
+**Disadvantages**
 
 - **Larger size**: The app is larger on disk due to including both IL and native code.
 - **Longer build times**: Compilation takes more time than standard publishing.

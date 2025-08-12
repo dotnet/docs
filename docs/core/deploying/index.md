@@ -109,6 +109,7 @@ The following table provides quick examples of how to publish your app.
 | [Single-file deployment](#single-file-deployment) | `dotnet publish -c Release [-r <RID>] -p:PublishSingleFile=true` |
 | [Native AOT deployment](#native-aot-deployment) | `dotnet publish -c Release [-r <RID>] -p:PublishAot=true` |
 | [ReadyToRun deployment](#readytorun-deployment) | `dotnet publish -c Release [-r <RID>] -p:PublishReadyToRun=true` |
+| [Container deployment](#container-deployment) | `dotnet publish -c Release [-r <RID>] -t:PublishContainer` |
 
 ::: zone-end
 
@@ -430,6 +431,74 @@ dotnet publish -c Release -r <RID> -p:PublishReadyToRun=true
 ::: zone-end
 
 For more information about ReadyToRun deployment, see [ReadyToRun compilation](ready-to-run.md).
+
+## Container deployment
+
+When you publish your app as a container, the .NET SDK packages your application and its dependencies into a container image without requiring a separate Dockerfile. This deployment mode creates a complete container image that can be run on any container runtime, such as Docker or Podman. Container deployment simplifies the containerization process by eliminating the need to write and maintain Dockerfiles while providing optimized base images.
+
+Starting with .NET SDK 8.0.200, container support is included by default and doesn't require additional NuGet packages. For console applications, you might need to enable container support explicitly by setting the `EnableSdkContainerSupport` property to `true`.
+
+> [!TIP]
+> For more information about project settings related to containers, see [Containerize a .NET app reference](../containers/publish-configuration.md).
+
+**Advantages**
+
+- **Simplified containerization**: No need to write or maintain Dockerfiles for basic scenarios.
+- **Optimized base images**: Uses Microsoft-provided, optimized base images with the latest security updates.
+- **Consistent environment**: Ensures consistent runtime environment across development, testing, and production.
+- **Easy distribution**: Container images can be easily shared and deployed across different environments.
+- **Platform isolation**: Applications run in isolated containers, reducing conflicts between applications.
+
+**Disadvantages**
+
+- **Container runtime dependency**: The target environment must have a container runtime installed.
+- **Image size**: Container images are typically larger than other deployment methods.
+- **Learning curve**: Requires understanding of container concepts and tooling.
+- **Limited customization**: Less flexibility compared to custom Dockerfiles for complex scenarios.
+
+### Publish
+
+::: zone pivot="cli,vscode"
+
+```dotnetcli
+dotnet publish -c Release [-r <RID>] /t:PublishContainer
+```
+
+- [!INCLUDE [cli-c-release](includes/cli-c-release.md)]
+
+- [!INCLUDE [cli-r-rid](includes/cli-r-rid.md)]
+
+- `-t:PublishContainer`
+
+  This target publishes the application as a container image.
+
+You can also use the publish profile approach:
+
+```dotnetcli
+dotnet publish -c Release [-r <RID>] -p:PublishProfile=DefaultContainer
+```
+
+- `-p:PublishProfile=DefaultContainer`
+
+  This profile triggers the container publishing process.
+
+::: zone-end
+
+::: zone pivot="visualstudio"
+
+01. Right-click on the project in **Solution Explorer** and select **Publish**.
+01. Select **Container Registry** as the publish target and click **Next**.
+01. Choose your target container registry (such as **Azure Container Registry**, **Docker Hub**, or **Generic Registry**) and click **Next**.
+01. Configure the registry connection details and authentication.
+01. In the publish profile, click **Show all settings**.
+01. Set **Deployment Mode** to **Self-contained** or **Framework-dependent** based on your needs.
+01. Set **Target Runtime** to your desired platform (for example, **linux-x64** for Linux containers).
+01. Configure container-specific settings like image name and tags.
+01. Click **Save** and then **Publish**.
+
+::: zone-end
+
+For more information about container deployment, see [.NET SDK container creation overview](../containers/overview.md).
 
 ## See also
 

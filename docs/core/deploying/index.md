@@ -151,7 +151,7 @@ dotnet publish -c Release [-r <RID>] --self-contained false
 
 - `--self-contained false`
 
-This switch explicitly tells the .NET SDK to create a framework-dependent deployment.
+  This switch explicitly tells the .NET SDK to create a framework-dependent deployment.
 
 ::: zone-end
 
@@ -198,7 +198,7 @@ dotnet publish -c Release -p:UseAppHost=false
 
 - `-p:UseAppHost=false`
 
-This property disables the creation of a platform-specific executable, producing only the portable DLL.
+  This property disables the creation of a platform-specific executable, producing only the portable DLL.
 
 ::: zone-end
 
@@ -248,7 +248,7 @@ dotnet publish -c Release -r <RID> --self-contained true
 
 - `--self-contained true`
 
-This switch tells the .NET SDK to create an executable as a self-contained deployment (SCD).
+  This switch tells the .NET SDK to create an executable as a self-contained deployment (SCD).
 
 ::: zone-end
 
@@ -300,7 +300,7 @@ dotnet publish -c Release -r <RID> -p:PublishSingleFile=true
 
 - `-p:PublishSingleFile=true`
 
-This property bundles all application-dependent files into a single binary.
+  This property bundles all application-dependent files into a single binary.
 
 ::: zone-end
 
@@ -351,7 +351,7 @@ dotnet publish -c Release -r <RID> -p:PublishAot=true
 
 - `-p:PublishAot=true`
 
-This property enables Native AOT compilation, which compiles the app directly to native code.
+  This property enables Native AOT compilation, which compiles the app directly to native code.
 
 ::: zone-end
 
@@ -412,7 +412,7 @@ dotnet publish -c Release -r <RID> -p:PublishReadyToRun=true
 
 - `-p:PublishReadyToRun=true`
 
-This property enables ReadyToRun compilation, which improves startup performance by pre-compiling assemblies.
+  This property enables ReadyToRun compilation, which improves startup performance by pre-compiling assemblies.
 
 ::: zone-end
 

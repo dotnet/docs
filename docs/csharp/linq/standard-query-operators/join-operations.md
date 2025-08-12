@@ -27,6 +27,8 @@ The following illustration shows a conceptual view of two sets and the elements 
 
 [!INCLUDE [Datasources](../includes/data-sources-definition.md)]
 
+[!INCLUDE [Common Datasources reference](../includes/common-data-sources-reference.md)]
+
 The following example uses the `join … in … on … equals …` clause to join two sequences based on specific value:
 
 :::code language="csharp" source="./snippets/standard-query-operators/JoinOverviewExamples.cs" id="JoinQuerySyntax":::

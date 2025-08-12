@@ -1,6 +1,6 @@
 ---
-title: Build file-based programs
-description: File-based programs are command line utilities that are built and execute without a project file. The build and run commands are implicit. New syntax supports project settings in source.
+title: Build file-based apps
+description: File-based apps are command line utilities that are built and execute without a project file. The build and run commands are implicit. New syntax supports project settings in source.
 ms.date: 08/08/2025
 ms.topic: tutorial
 ai-usage: ai-assisted
@@ -10,10 +10,10 @@ ai-usage: ai-assisted
 # Tutorial: Build file-based C# programs
 
 > [!IMPORTANT]
-> File-based programs are a feature of .NET 10, which is in preview.
+> File-based apps are a feature of .NET 10, which is in preview.
 > Some information relates to prerelease product that might be modified before release. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-*File-based programs* are programs contained within a single `*.cs` file that are built and run without a corresponding project (`*.csproj`) file. File-based programs are ideal for learning C# because they have less complexity: The entire program is stored in a single file. File-based programs are also useful for building command line utilities. On Unix platforms, file-based programs can be run using `#!` (shebang) directives.
+*File-based apps* are programs contained within a single `*.cs` file that are built and run without a corresponding project (`*.csproj`) file. File-based apps are ideal for learning C# because they have less complexity: The entire program is stored in a single file. File-based apps are also useful for building command line utilities. On Unix platforms, file-based apps can be run using `#!` (shebang) directives.
 
 In this tutorial, you:
 
@@ -23,6 +23,8 @@ In this tutorial, you:
 > * Run the program using the .NET CLI and `#!` directives.
 > * Add features and NuGet packages to the program.
 > * Parse and process command line arguments and standard input.
+
+You build a file-based program that writes text as ASCII art. It's declared in a single file, uses NuGet packages that implement some of the core features.
 
 ## Prerequisites
 
@@ -46,7 +48,7 @@ dotnet run AsciiArt.cs
 
 The first time you run this program, the `dotnet` host builds the executable from your source file, stores build artifacts in a temporary folder, then runs the created executable. You can verify this experience by typing `dotnet run AsciiArt.cs` again. This time, the `dotnet` host determines that the executable is current, and runs the executable without building it again. You don't see any build output.
 
-The preceding steps demonstrate that file based programs aren't script files. They're C# source files that are built using a generated project file in a temporary folder. One of the lines of output displayed when you built the program should look something like this (on Windows):
+The preceding steps demonstrate that file-based apps aren't script files. They're C# source files that are built using a generated project file in a temporary folder. One of the lines of output displayed when you built the program should look something like this (on Windows):
 
 ```dotnetcli
 AsciiArt succeeded (7.3s) → AppData\Local\Temp\dotnet\runfile\AsciiArt-85c58ae0cd68371711f06f297fa0d7891d0de82afde04d8c64d5f910ddc04ddc\bin\debug\AsciiArt.dll
@@ -60,9 +62,9 @@ AsciiArt succeeded (7.3s) → Library/Application Support/dotnet/runfile/AsciiAr
 
 That output tells you where the temporary files and build outputs are placed. Throughout this tutorial, anytime you edit the source file, the `dotnet` host updates the executable before it runs.
 
-File based programs are regular C# programs. The only limitation is that they must be written in one source file. You can use top-level statements or a classic `Main` method as an entry point. You can declare any types: classes, interfaces, and structs. You can structure the algorithms in a file based program the same as you would in any C# program. You can even declare multiple namespaces to organize your code. If you find a file based program is growing too large for a single file, you can convert it to a project based program and split the source into multiple files. File based programs are a great prototyping tool. You can start experimenting with minimal overhead to prove concepts and build algorithms.
+File-based apps are regular C# programs. The only limitation is that they must be written in one source file. You can use top-level statements or a classic `Main` method as an entry point. You can declare any types: classes, interfaces, and structs. You can structure the algorithms in a file-based program the same as you would in any C# program. You can even declare multiple namespaces to organize your code. If you find a file-based program is growing too large for a single file, you can convert it to a project based program and split the source into multiple files. File-based apps are a great prototyping tool. You can start experimenting with minimal overhead to prove concepts and build algorithms.
 
-In this tutorial, you build a file-based program that writes text as ASCII art. You learn how to include packages in file-based programs, process command input, and read arguments either from the command line or standard input.
+## Process command line arguments
 
 As a first step, let's write all arguments on the command line to the output. Replace the current contents of `AsciiArt.cs` with the following code:
 
@@ -104,7 +106,7 @@ The preceding code reads the console input until either a blank line or a `null`
 
 ```text
 This is the input file
-for a file based program.
+for a file-based program.
 It prints the messages
 from a file or the
 command line.
@@ -125,7 +127,7 @@ Now your program can accept either command line arguments or standard input.
 >
 > Support for `#!` directives applies on unix platforms only. There isn't a similar directive for Windows to directly execute a C# program. On Windows, you must use `dotnet run` on the command line.
 
-On unix, you can run file-based programs directly, typing the source file name on the command line instead of `dotnet run`. You need to make two changes. First, set *execute* permissions on the source file:
+On unix, you can run file-based apps directly, typing the source file name on the command line instead of `dotnet run`. You need to make two changes. First, set *execute* permissions on the source file:
 
 ```bash
 chmod +x AsciiArt.cs
@@ -145,11 +147,11 @@ After making these two changes, you can run the program from the command line di
 ./AsciiArt.cs
 ```
 
-If you prefer, you can remove the extension so you can type `./AsciiArt` instead. You can add the `#!` to your source file even if you use Windows. The Windows command line doesn't support `#!`, but the C# compiler allows that directive in file based programs on all platforms.
+If you prefer, you can remove the extension so you can type `./AsciiArt` instead. You can add the `#!` to your source file even if you use Windows. The Windows command line doesn't support `#!`, but the C# compiler allows that directive in file-based apps on all platforms.
 
 ## Add features and NuGet packages to the program
 
-Next, add a package that supports ASCII art, [Colorful.Console](https://www.nuget.org/packages/Colorful.Console). To add a package to a file based program, you use the `#:package` directive. Add the following directive after the `#!` directive in your AsciiArt.cs file:
+Next, add a package that supports ASCII art, [Colorful.Console](https://www.nuget.org/packages/Colorful.Console). To add a package to a file-based program, you use the `#:package` directive. Add the following directive after the `#!` directive in your AsciiArt.cs file:
 
 :::code language="csharp" source="./snippets/file-based-programs/AsciiArt.cs" id="ColorfulPackage":::
 
@@ -234,9 +236,9 @@ Finally, replace the `if` clause you wrote earlier with the following code to pr
 
 Test the application by running several different commands. If you have trouble, here's the finished sample to compare with what you built:
 
-:::code language="csharp" source="./snippets/file-based-programs/AsciiArt.cs":::
+:::code language="csharp" source="./snippets/file-based-programs/AsciiArt.cs" Lines="1-88":::
 
-In this tutorial, you learned to build a file-based program, where you build the program in a single C# file. These programs don't use a project file, and can use the `#!` directive on unix systems. Learners can create these programs after trying our [online tutorials](../../tour-of-csharp/tutorials/hello-world.md) and before building larger project-based programs. File based programs are also a great platform for command line utilities.
+In this tutorial, you learned to build a file-based program, where you build the program in a single C# file. These programs don't use a project file, and can use the `#!` directive on unix systems. Learners can create these programs after trying our [online tutorials](../../tour-of-csharp/tutorials/hello-world.md) and before building larger project-based apps. File-based apps are also a great platform for command line utilities.
 
 ## Related content
 

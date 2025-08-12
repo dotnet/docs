@@ -236,12 +236,12 @@ Finally, replace the `if` clause you wrote earlier with the following code to pr
 
 Test the application by running several different commands. If you have trouble, here's the finished sample to compare with what you built:
 
-:::code language="csharp" source="./snippets/file-based-programs/AsciiArt.cs" Lines="1-88":::
+:::code language="csharp" source="./snippets/file-based-programs/AsciiArt.cs" range="1-88":::
 
 In this tutorial, you learned to build a file-based program, where you build the program in a single C# file. These programs don't use a project file, and can use the `#!` directive on unix systems. Learners can create these programs after trying our [online tutorials](../../tour-of-csharp/tutorials/hello-world.md) and before building larger project-based apps. File-based apps are also a great platform for command line utilities.
 
 ## Related content
 
 - [Top level statement](../program-structure/top-level-statements.md)
-- [Preprocessor directives](../../language-reference/preprocessor-directives.md#file-based-programs)
+- [Preprocessor directives](../../language-reference/preprocessor-directives.md#file-based-apps)
 - [What's new in C# 14](../../whats-new/csharp-14.md)

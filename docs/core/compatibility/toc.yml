@@ -68,6 +68,8 @@ items:
                 href: cryptography/10.0/x500distinguishedname-validation.md
               - name: X509Certificate and PublicKey key parameters can be null
                 href: cryptography/10.0/x509-publickey-null.md
+          - name: Entity Framework Core
+            href: /ef/core/what-is-new/ef-core-10.0/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
           - name: Extensions
             items:
               - name: Message no longer duplicated in Console log output

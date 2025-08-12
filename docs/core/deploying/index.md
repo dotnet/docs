@@ -30,40 +30,6 @@ This mode produces a publishing folder that includes a platform-specific executa
 > [!IMPORTANT]
 > You specify the target platform with a runtime identifier (RID). For more information about RIDs, see [.NET RID Catalog](../rid-catalog.md).
 
-## Quick reference
-
-The following table provides quick examples of how to publish your app.
-
-::: zone pivot="cli,vscode"
-
-### Commands
-
-| Publish Mode | Command |
-|--|--|
-| [Framework-dependent deployment](#framework-dependent-deployment) | `dotnet publish -c Release [-r <RID>]` |
-| [Framework-dependent deployment (DLL)](#framework-dependent-deployment) | `dotnet publish -c Release -p:UseAppHost=false` |
-| [Self-contained deployment](#self-contained-deployment) | `dotnet publish -c Release [-r <RID>] --self-contained true` |
-| [Single-file deployment](#single-file-deployment) | `dotnet publish -c Release [-r <RID>] -p:PublishSingleFile=true` |
-| [Native AOT deployment](#native-aot-deployment) | `dotnet publish -c Release [-r <RID>] -p:PublishAot=true` |
-| [ReadyToRun deployment](#readytorun-deployment) | `dotnet publish -c Release [-r <RID>] -p:PublishReadyToRun=true` |
-
-::: zone-end
-
-::: zone pivot="visualstudio"
-
-### Configurations
-
-| Publish Mode | Visual Studio Configuration |
-|--|--|
-| [Framework-dependent deployment](#framework-dependent-deployment) | Set **Deployment Mode** to **Framework-dependent** (default) |
-| [Framework-dependent deployment (DLL)](#framework-dependent-deployment) | Set **Deployment Mode** to **Framework-dependent** and **Produce single file** to unchecked |
-| [Self-contained deployment](#self-contained-deployment) | Set **Deployment Mode** to **Self-contained** |
-| [Single-file deployment](#single-file-deployment) | Set **Deployment Mode** to **Self-contained** or **Framework-dependent** and **Produce single file** to checked |
-| [Native AOT deployment](#native-aot-deployment) | Requires `<PublishAot>true</PublishAot>` in project file and **Deployment Mode** set to **Self-contained** |
-| [ReadyToRun deployment](#readytorun-deployment) | Set **Deployment Mode** to **Self-contained** or **Framework-dependent** and **Enable ReadyToRun compilation** to checked |
-
-::: zone-end
-
 ## Publishing basics
 
 The [`<TargetFramework>`](../project-sdk/msbuild-props.md#targetframework) setting of the project file specifies the default target framework when you publish your app. You can change the target framework to any valid [Target Framework Moniker (TFM)](../../standard/frameworks.md). For example, if your project uses `<TargetFramework>net9.0</TargetFramework>`, a binary that targets .NET 9 is created.
@@ -128,6 +94,23 @@ dotnet publish -c Release -r <RID>
 ::: zone-end
 
 For a list of runtime identifiers, see [Runtime Identifier (RID) catalog](../rid-catalog.md).
+
+::: zone pivot="cli,vscode"
+
+## Quick reference
+
+The following table provides quick examples of how to publish your app.
+
+| Publish Mode | Command |
+|--|--|
+| [Framework-dependent deployment](#framework-dependent-deployment) | `dotnet publish -c Release [-r <RID>]` |
+| [Framework-dependent deployment (DLL)](#framework-dependent-deployment) | `dotnet publish -c Release -p:UseAppHost=false` |
+| [Self-contained deployment](#self-contained-deployment) | `dotnet publish -c Release [-r <RID>] --self-contained true` |
+| [Single-file deployment](#single-file-deployment) | `dotnet publish -c Release [-r <RID>] -p:PublishSingleFile=true` |
+| [Native AOT deployment](#native-aot-deployment) | `dotnet publish -c Release [-r <RID>] -p:PublishAot=true` |
+| [ReadyToRun deployment](#readytorun-deployment) | `dotnet publish -c Release [-r <RID>] -p:PublishReadyToRun=true` |
+
+::: zone-end
 
 ## Framework-dependent deployment
 

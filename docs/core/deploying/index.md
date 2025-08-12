@@ -111,7 +111,7 @@ The following table provides quick examples of how to publish your app.
 | [ReadyToRun deployment](#readytorun-deployment) | `dotnet publish -c Release [-r <RID>] -p:PublishReadyToRun=true` |
 
 ::: zone-end
-
+[](#framework-dependent-deployment)
 ## Framework-dependent deployment
 
 Framework-dependent deployment is the default mode when you publish from either the CLI or Visual Studio. In this mode, a platform-specific executable host is created to host your cross-platform app. The host executable filename varies per platform and is named something similar to `<PROJECT-FILE>.exe`. You can run this executable directly instead of calling `dotnet <PROJECT-FILE>.dll`, which is still an acceptable way to run the app.
@@ -166,6 +166,21 @@ This switch explicitly tells the .NET SDK to create a framework-dependent deploy
 01. Click **Save** and then **Publish**.
 
 ::: zone-end
+
+### Configure .NET install search behavior
+
+In .NET 9 and later versions, you can configure the .NET installation search paths of the published executable via the [`AppHostDotNetSearch`](../project-sdk//msbuild-props.md#apphostdotnetsearch) and [`AppHostRelativeDotNet`](../project-sdk//msbuild-props.md#apphostrelativedotnet) properties.
+
+`AppHostDotNetSearch` allows specifying one or more locations where the executable will look for a .NET installation:
+
+- `AppLocal`: app executable's folder
+- `AppRelative`: path relative to the app executable
+- `EnvironmentVariable`: value of [`DOTNET_ROOT[_<arch>]`](../tools/dotnet-environment-variables.md#dotnet_root-dotnet_rootx86-dotnet_root_x86-dotnet_root_x64) environment variables
+- `Global`: [registered](https://github.com/dotnet/designs/blob/main/accepted/2020/install-locations.md#global-install-to-custom-location) and [default](https://github.com/dotnet/designs/blob/main/accepted/2020/install-locations.md#global-install-to-default-location) global install locations
+
+`AppHostRelativeDotNet` specifies the path relative to the executable that will be searched when `AppHostDotNetSearch` contains `AppRelative`.
+
+For more information, see [`AppHostDotNetSearch`](../project-sdk//msbuild-props.md#apphostdotnetsearch), [`AppHostRelativeDotNet`](../project-sdk//msbuild-props.md#apphostrelativedotnet) and [install location options in apphost](https://github.com/dotnet/designs/blob/main/proposed/apphost-embed-install-location.md).
 
 ### Cross-platform DLL deployment
 

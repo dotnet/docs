@@ -1,25 +1,25 @@
 ---
-title: "Breaking change: DefaultValueAttribute(System.Type type, string? value) constructor no longer annotated with DynamicallyAccessedMembers"
-description: "Learn about the breaking change in .NET 10 where DefaultValueAttribute(System.Type type, string? value) constructor is no longer annotated with DynamicallyAccessedMembers."
-ms.date: 01/30/2025
+title: "Breaking change: 'DynamicallyAccessedMembers' annotation removed from 'DefaultValueAttribute' ctor"
+description: "Learn about the breaking change in .NET 10 where a 'DefaultValueAttribute' constructor is no longer annotated with 'DynamicallyAccessedMembers'."
+ms.date: 08/11/2025
 ai-usage: ai-assisted
 ---
 
-# DefaultValueAttribute(System.Type type, string? value) constructor no longer annotated with DynamicallyAccessedMembers
+# `DynamicallyAccessedMembers` annotation removed from `DefaultValueAttribute` ctor
 
-The <xref:System.ComponentModel.DefaultValueAttribute.%23ctor(System.Type,System.String)?displayProperty=nameWithType> constructor is no longer annotated with <xref:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMembersAttribute>. This constructor is not supported with trimming and will throw an exception if reached at runtime in a trimmed app.
+The <xref:System.ComponentModel.DefaultValueAttribute.%23ctor(System.Type,System.String)?displayProperty=nameWithType> constructor is no longer annotated with <xref:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMembersAttribute>. This constructor is not supported with trimming and throws an exception if reached at run time in a trimmed app.
 
 ## Version introduced
 
-.NET 10
+.NET 10 Preview 7
 
 ## Previous behavior
 
-If the constructor was used in a trimmed app and the feature switch to disable exception throwing was used, publishing the app would generate a trimming warning and there was a chance the code would work at runtime.
+Previously, if the constructor was used in a trimmed app and the feature switch to disable exception throwing was used, publishing the app generated a trimming warning, and there was a chance the code worked at run time.
 
 ## New behavior
 
-If the constructor is used in a trimmed app and the feature switch to disable exception throwing is used, publishing the app will generate a trimming warning and there's a smaller chance the code will work at runtime.
+Starting in .NET 10, if the constructor is used in a trimmed app and the feature switch to disable exception throwing is used, publishing the app still generates a trimming warning. But there's a smaller chance the code will work at run time.
 
 ## Type of breaking change
 
@@ -31,8 +31,8 @@ This attribute should not be used in trimmed apps because it doesn't reliably wo
 
 ## Recommended action
 
-Do not enable the feature switch that attempts to make this attribute (unreliably) work in trimmed apps.
+Don't enable the feature switch that attempts to make <xref:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMembersAttribute> (unreliably) work in trimmed apps.
 
 ## Affected APIs
 
-- <xref:System.ComponentModel.DefaultValueAttribute.%23ctor(System.Type,System.String)?displayProperty=fullName>
+- <xref:System.ComponentModel.DefaultValueAttribute.%23ctor(System.Type,System.String)>

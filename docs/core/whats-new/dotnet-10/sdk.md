@@ -2,14 +2,14 @@
 title: What's new in the SDK and tooling for .NET 10
 description: Learn about the new .NET SDK features introduced in .NET 10.
 titleSuffix: ""
-ms.date: 07/16/2025
+ms.date: 08/12/2025
 ms.topic: whats-new
 ai-usage: ai-assisted
 ---
 
 # What's new in the SDK and tooling for .NET 10
 
-This article describes new features and enhancements in the .NET SDK for .NET 10. It has been updated for Preview 6.
+This article describes new features and enhancements in the .NET SDK for .NET 10. It has been updated for Preview 7.
 
 ## .NET tools enhancements
 
@@ -202,3 +202,31 @@ name = "Microsoft.Testing.Platform"
 ```
 
 For more details, see [Testing with `dotnet test`](../../testing/unit-testing-with-dotnet-test.md).
+
+## Preview 7 additions
+
+The following feature was added in Preview 7:
+
+### Use the `any` RuntimeIdentifier with platform-specific .NET tools
+
+The [platform-specific .NET tools](#platform-specific-net-tools) feature released in Preview 6 is great for making sure your tools are optimized for specific platforms that you target ahead-of-time. However, there are times where you won't know all of the platforms that you'd like to target, or sometimes .NET itself will learn how to support a new platform, and you'd like your tool to be runnable there too.
+
+The good news is that .NET is great at this - the platform at its heart is meant to support this kind of platform-agnostic execution. To make your new platform-specific .NET tools work this way, you only need to add one thing to your project file: the `any` Runtime Identifier.
+
+```diff
+<PropertyGroup>
+  <RuntimeIdentifiers>
+        linux-x64;
+        linux-arm64;
+        macos-arm64;
+        win-x64;
+-       win-arm64
++       win-arm64;
++       any
+  </RuntimeIdentifiers>
+</PropertyGroup>
+```
+
+This RuntimeIdentifier is at the 'root' of our platform-compatibility checking, and since it declares support for, well, _any_ platform, the tool that we package for you will be the most compatible kind of tool - a framework-dependent, platform-agnostic .NET dll, which requires a compatible .NET Runtime in order to execute. When you perform a `dotnet pack` to create your tool, you'll see a new package for the `any` RuntimeIdentifier appear alongside the other platform-specific packages and the top-level manifest package.
+
+The eagle-eyed among you will note that this is the exact same kind of tool that you would make in .NET 9 and earlier, but now it fits into the overall goal of enabling platform-specific .NET tools!

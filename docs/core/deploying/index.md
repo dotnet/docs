@@ -110,13 +110,9 @@ To ensure that your app is published with its native dependencies:
 dotnet publish -c Release -r <RID>
 ```
 
-- `-c Release`
+- [!INCLUDE [cli-c-release](includes/cli-c-release.md)]
 
-  This switch sets the build configuration to Release, which is optimized for production deployment.
-
-- `-r <RID>`
-
-  This switch uses a runtime identifier (RID) to specify the target platform and ensures native dependencies are included. For a list of runtime identifiers, see [Runtime Identifier (RID) catalog](../rid-catalog.md).
+- [!INCLUDE [cli-r-rid-native-deps](includes/cli-r-rid-native-deps.md)]
 
 ::: zone-end
 
@@ -160,13 +156,9 @@ Publishing a framework-dependent deployment creates an app that automatically ro
 dotnet publish -c Release [-r <RID>]
 ```
 
-- `-c Release`
+- [!INCLUDE [cli-c-release](includes/cli-c-release.md)]
 
-  This switch sets the build configuration to Release, which is optimized for production deployment.
-
-- `-r <RID>` (optional)
-
-  This switch uses a runtime identifier (RID) to specify the target platform. For a list of runtime identifiers, see [Runtime Identifier (RID) catalog](../rid-catalog.md).
+- [!INCLUDE [cli-r-rid](includes/cli-r-rid.md)]
 
 Or explicitly:
 
@@ -176,7 +168,7 @@ dotnet publish -c Release [-r <RID>] --self-contained false
 
 - `--self-contained false`
 
-  This switch explicitly tells the .NET SDK to create a framework-dependent deployment.
+This switch explicitly tells the .NET SDK to create a framework-dependent deployment.
 
 ::: zone-end
 
@@ -204,13 +196,11 @@ To publish as a cross-platform DLL:
 dotnet publish -c Release -p:UseAppHost=false
 ```
 
-- `-c Release`
-
-  This switch sets the build configuration to Release, which is optimized for production deployment.
+- [!INCLUDE [cli-c-release](includes/cli-c-release.md)]
 
 - `-p:UseAppHost=false`
 
-  This property disables the creation of a platform-specific executable, producing only the portable DLL.
+This property disables the creation of a platform-specific executable, producing only the portable DLL.
 
 ::: zone-end
 
@@ -254,17 +244,13 @@ Publishing an SCD creates an app that doesn't roll forward to the latest availab
 dotnet publish -c Release -r <RID> --self-contained true
 ```
 
-- `-c Release`
+- [!INCLUDE [cli-c-release](includes/cli-c-release.md)]
 
-  This switch sets the build configuration to Release, which is optimized for production deployment.
-
-- `-r <RID>`
-
-  This switch uses a runtime identifier (RID) to specify the target platform. For a list of runtime identifiers, see [Runtime Identifier (RID) catalog](../rid-catalog.md).
+- [!INCLUDE [cli-r-rid](includes/cli-r-rid.md)]
 
 - `--self-contained true`
 
-  This switch tells the .NET SDK to create an executable as a self-contained deployment (SCD).
+This switch tells the .NET SDK to create an executable as a self-contained deployment (SCD).
 
 ::: zone-end
 
@@ -310,17 +296,13 @@ For more information about single-file deployment, see [Single-file deployment](
 dotnet publish -c Release -r <RID> -p:PublishSingleFile=true
 ```
 
-- `-c Release`
+- [!INCLUDE [cli-c-release](includes/cli-c-release.md)]
 
-  This switch sets the build configuration to Release, which is optimized for production deployment.
-
-- `-r <RID>`
-
-  This switch uses a runtime identifier (RID) to specify the target platform. For a list of runtime identifiers, see [Runtime Identifier (RID) catalog](../rid-catalog.md).
+- [!INCLUDE [cli-r-rid](includes/cli-r-rid.md)]
 
 - `-p:PublishSingleFile=true`
 
-  This property bundles all application-dependent files into a single binary.
+This property bundles all application-dependent files into a single binary.
 
 ::: zone-end
 
@@ -365,17 +347,13 @@ For more information about Native AOT deployment, see [Native AOT deployment](na
 dotnet publish -c Release -r <RID> -p:PublishAot=true
 ```
 
-- `-c Release`
+- [!INCLUDE [cli-c-release](includes/cli-c-release.md)]
 
-  This switch sets the build configuration to Release, which is optimized for production deployment.
-
-- `-r <RID>`
-
-  This switch uses a runtime identifier (RID) to specify the target platform. For a list of runtime identifiers, see [Runtime Identifier (RID) catalog](../rid-catalog.md).
+- [!INCLUDE [cli-r-rid](includes/cli-r-rid.md)]
 
 - `-p:PublishAot=true`
 
-  This property enables Native AOT compilation, which compiles the app directly to native code.
+This property enables Native AOT compilation, which compiles the app directly to native code.
 
 ::: zone-end
 
@@ -430,17 +408,13 @@ ReadyToRun binaries contain both intermediate language (IL) code and the native 
 dotnet publish -c Release -r <RID> -p:PublishReadyToRun=true
 ```
 
-- `-c Release`
+- [!INCLUDE [cli-c-release](includes/cli-c-release.md)]
 
-  This switch sets the build configuration to Release, which is optimized for production deployment.
-
-- `-r <RID>`
-
-  This switch uses a runtime identifier (RID) to specify the target platform. For a list of runtime identifiers, see [Runtime Identifier (RID) catalog](../rid-catalog.md).
+- [!INCLUDE [cli-r-rid](includes/cli-r-rid.md)]
 
 - `-p:PublishReadyToRun=true`
 
-  This property enables ReadyToRun compilation, which improves startup performance by pre-compiling assemblies.
+This property enables ReadyToRun compilation, which improves startup performance by pre-compiling assemblies.
 
 ::: zone-end
 

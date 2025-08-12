@@ -60,7 +60,7 @@ The same project configuration now generates a *.nuspec* file with the prunable 
 
 ## Type of breaking change
 
-This is a [behavioral change](../../categories.md#behavioral-changes).
+This is a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 

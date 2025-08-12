@@ -50,7 +50,7 @@ For snippets >6 lines:
 1. Add snippet as separate code file
 1. Include simple project file targeting latest .NET
 1. All code should use the latest stable versions/features
-1. Create examples in both C# and Visual Basic
+1. Create examples in both C# and Visual Basic except in the `csharp`, `fsharp`, and `visual-basic` folders.
 
 ## File Naming
 New Markdown files: lowercase with hyphens, omit filler words (the, a, etc.)

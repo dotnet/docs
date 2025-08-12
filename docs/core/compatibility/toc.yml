@@ -10,14 +10,20 @@ items:
             href: 10.0.md
           - name: ASP.NET Core
             items:
+              - name: Cookie login redirects disabled for known API endpoints
+                href: aspnet-core/10/cookie-authentication-api-endpoints.md
               - name: Deprecation of WithOpenApi extension method
                 href: aspnet-core/10/withopenapi-deprecated.md
+              - name: Exception diagnostics suppressed when TryHandleAsync returns true
+                href: aspnet-core/10/exception-handler-diagnostics-suppressed.md
               - name: IActionContextAccessor and ActionContextAccessor are obsolete
                 href: aspnet-core/10/iactioncontextaccessor-obsolete.md
               - name: IncludeOpenAPIAnalyzers property and MVC API analyzers are deprecated
                 href: aspnet-core/10/openapi-analyzers-deprecated.md
               - name: Microsoft.Extensions.ApiDescription.Client package deprecated
                 href: aspnet-core/10/apidescription-client-deprecated.md
+              - name: Razor run-time compilation is obsolete
+                href: aspnet-core/10/razor-runtime-compilation-obsolete.md
           - name: Containers
             items:
               - name: Default .NET images use Ubuntu
@@ -88,6 +94,8 @@ items:
                 href: networking/10.0/ssl-certificate-revocation-check-default.md
               - name: Streaming HTTP responses enabled by default in browser HTTP clients
                 href: networking/10.0/default-http-streaming.md
+              - name: "'Uri' length limits removed"
+                href: networking/10.0/uri-length-limits-removed.md
           - name: SDK and MSBuild
             items:
               - name: .NET CLI `--interactive` defaults to `true` in user scenarios

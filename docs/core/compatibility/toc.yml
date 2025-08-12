@@ -468,6 +468,8 @@ items:
                 href: sdk/8.0/rid-graph.md
               - name: Setting DebugSymbols to false disables PDB generation
                 href: sdk/8.0/debugsymbols.md
+              - name: "SHA-1 fingerprint support deprecated in 'dotnet nuget sign'"
+                href: sdk/10.0/dotnet-nuget-sign-sha1-deprecated.md
               - name: Source Link included in the .NET SDK
                 href: sdk/8.0/source-link.md
               - name: Trimming can't be used with .NET Standard or .NET Framework

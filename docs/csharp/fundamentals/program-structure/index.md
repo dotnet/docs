@@ -32,7 +32,7 @@ The first line of the program contains the `#!` sequence for Unix shells. The lo
 ./hello-world.cs
 ```
 
-The source for these programs must be a single file, but otherwise all C# syntax is valid. You can use file-based apps for small command-line utilities, prototypes, or other experiments. file-based apps allow [preprocessor directives](../../language-reference/preprocessor-directives.md#file-based-programs) that configure the build system.
+The source for these programs must be a single file, but otherwise all C# syntax is valid. You can use file-based apps for small command-line utilities, prototypes, or other experiments. file-based apps allow [preprocessor directives](../../language-reference/preprocessor-directives.md#file-based-apps) that configure the build system.
 
 ## Expressions and statements
 

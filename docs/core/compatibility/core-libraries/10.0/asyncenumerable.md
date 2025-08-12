@@ -43,6 +43,7 @@ If `System.Linq.Async` is consumed indirectly via another package, avoid ambigui
     <ExcludeAssets>compile</ExcludeAssets> 
   </PackageReference>
   ```
+
   This configuration prevents direct usage in your code while allowing other packages to continue using System.Linq.Async internally.
 
 - For complete exclusion, set `<ExcludeAssets>` to `all`:

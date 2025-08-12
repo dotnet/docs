@@ -16,7 +16,7 @@ Starting with .NET 10, WPF applications fail to build if `<Grid.ColumnDefinition
 
 ## Previous behavior
 
-WPF applications with empty `<Grid.ColumnDefinitions>` or `<Grid.RowDefinitions>` compiled successfully, even though the layout definitions were incomplete. WPF would default to a single row and column, placing all child elements in that single cell unless otherwise specified.
+Previously, WPF applications with empty `<Grid.ColumnDefinitions>` or `<Grid.RowDefinitions>` compiled successfully, even though the layout definitions were incomplete. The layout defaulted to a single row and column, placing all child elements in that single cell unless otherwise specified.
 
 Example that previously compiled:
 
@@ -29,7 +29,7 @@ Example that previously compiled:
 
 ## New behavior
 
-The same code now fails to compile with the following error:
+Starting in .NET 10, the same code now fails to compile with the following error:
 
 ```output
 error MC3063: Property 'ColumnDefinitions' does not have a value.

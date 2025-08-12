@@ -30,14 +30,6 @@ This mode produces a publishing folder that includes a platform-specific executa
 > [!IMPORTANT]
 > You specify the target platform with a runtime identifier (RID). For more information about RIDs, see [.NET RID Catalog](../rid-catalog.md).
 
-## Portable binaries
-
-When you publish a .NET app, you can target a specific platform or create a portable binary. By default, even when creating a portable binary, .NET publishes a platform-specific executable alongside the portable DLL unless you explicitly disable this behavior.
-
-The platform-specific executable is created because of the `UseAppHost` property, which defaults to `true`. To publish only the portable DLL without the platform-specific executable, set `UseAppHost` to `false` either on the command line (`-p:UseAppHost=false`) or as a project property.
-
-The benefit of targeting a specific platform is that it can handle [native dependencies](#native-dependencies) that your app might require, ensuring compatibility with the target platform's specific requirements.
-
 ## Quick reference
 
 The following table provides quick examples of how to publish your app.
@@ -80,15 +72,29 @@ If you want to target more than one framework, you can set the [`<TargetFramewor
 
 ::: zone pivot="cli,vscode"
 
-Use `dotnet publish -f <TFM>`
+The default build configuration mode is **Release**, unless changed with the `-c` parameter.
+
+```dotnet
+dotnet publish -c Release -f net9.0
+```
+
+The default output directory of the [`dotnet publish`](../tools/dotnet-publish.md) command is `./bin/<BUILD-CONFIGURATION>/<TFM>/publish/`. For example, `dotnet publish -c Release -f net9.0` publishes to `./bin/Release/net9.0/publish/`. However, you can opt in to a simplified output path and folder structure for all build outputs. For more information, see [Artifacts output layout](../sdk/artifacts-output.md).
 
 ::: zone-end
 
 ::: zone pivot="visualstudio"
 
-Create separate publishing profiles for each target framework
+In Visual Studio, create separate publishing profiles for each target framework.
 
 ::: zone-end
+
+### Portable binaries
+
+When you publish a .NET app, you can target a specific platform or create a portable binary. By default, even when creating a portable binary, .NET publishes a platform-specific executable alongside the portable DLL unless you explicitly disable this behavior.
+
+The platform-specific executable is created because of the `UseAppHost` property, which defaults to `true`. To publish only the portable DLL without the platform-specific executable, set `UseAppHost` to `false` either on the command line (`-p:UseAppHost=false`) or as a project property.
+
+The benefit of targeting a specific platform is that it can handle [native dependencies](#native-dependencies) that your app might require, ensuring compatibility with the target platform's specific requirements.
 
 ### Native dependencies
 
@@ -100,13 +106,28 @@ To ensure that your app is published with its native dependencies:
 
 ::: zone pivot="cli,vscode"
 
-Use `dotnet publish -r <RID>` to publish for a specific platform
+```dotnetcli
+dotnet publish -c Release -r <RID>
+```
+
+- `-c Release`
+
+  This switch sets the build configuration to Release, which is optimized for production deployment.
+
+- `-r <RID>`
+
+  This switch uses a runtime identifier (RID) to specify the target platform and ensures native dependencies are included. For a list of runtime identifiers, see [Runtime Identifier (RID) catalog](../rid-catalog.md).
 
 ::: zone-end
 
 ::: zone pivot="visualstudio"
 
-Set **Target Runtime** to your desired platform
+01. Right-click on the project in **Solution Explorer** and select **Publish**.
+01. If this is your first time publishing, select **Folder** as the publish target and click **Next**.
+01. Choose a folder location or accept the default, then click **Finish**.
+01. In the publish profile, click **Show all settings**.
+01. Set **Target Runtime** to your desired platform (for example, **win-x64** for 64-bit Windows).
+01. Click **Save** and then **Publish**.
 
 ::: zone-end
 
@@ -139,11 +160,23 @@ Publishing a framework-dependent deployment creates an app that automatically ro
 dotnet publish -c Release [-r <RID>]
 ```
 
+- `-c Release`
+
+  This switch sets the build configuration to Release, which is optimized for production deployment.
+
+- `-r <RID>` (optional)
+
+  This switch uses a runtime identifier (RID) to specify the target platform. For a list of runtime identifiers, see [Runtime Identifier (RID) catalog](../rid-catalog.md).
+
 Or explicitly:
 
 ```dotnetcli
 dotnet publish -c Release [-r <RID>] --self-contained false
 ```
+
+- `--self-contained false`
+
+  This switch explicitly tells the .NET SDK to create a framework-dependent deployment.
 
 ::: zone-end
 
@@ -170,6 +203,14 @@ To publish as a cross-platform DLL:
 ```dotnetcli
 dotnet publish -c Release -p:UseAppHost=false
 ```
+
+- `-c Release`
+
+  This switch sets the build configuration to Release, which is optimized for production deployment.
+
+- `-p:UseAppHost=false`
+
+  This property disables the creation of a platform-specific executable, producing only the portable DLL.
 
 ::: zone-end
 
@@ -212,6 +253,18 @@ Publishing an SCD creates an app that doesn't roll forward to the latest availab
 ```dotnetcli
 dotnet publish -c Release -r <RID> --self-contained true
 ```
+
+- `-c Release`
+
+  This switch sets the build configuration to Release, which is optimized for production deployment.
+
+- `-r <RID>`
+
+  This switch uses a runtime identifier (RID) to specify the target platform. For a list of runtime identifiers, see [Runtime Identifier (RID) catalog](../rid-catalog.md).
+
+- `--self-contained true`
+
+  This switch tells the .NET SDK to create an executable as a self-contained deployment (SCD).
 
 ::: zone-end
 
@@ -257,6 +310,18 @@ For more information about single-file deployment, see [Single-file deployment](
 dotnet publish -c Release -r <RID> -p:PublishSingleFile=true
 ```
 
+- `-c Release`
+
+  This switch sets the build configuration to Release, which is optimized for production deployment.
+
+- `-r <RID>`
+
+  This switch uses a runtime identifier (RID) to specify the target platform. For a list of runtime identifiers, see [Runtime Identifier (RID) catalog](../rid-catalog.md).
+
+- `-p:PublishSingleFile=true`
+
+  This property bundles all application-dependent files into a single binary.
+
 ::: zone-end
 
 ::: zone pivot="visualstudio"
@@ -299,6 +364,18 @@ For more information about Native AOT deployment, see [Native AOT deployment](na
 ```dotnetcli
 dotnet publish -c Release -r <RID> -p:PublishAot=true
 ```
+
+- `-c Release`
+
+  This switch sets the build configuration to Release, which is optimized for production deployment.
+
+- `-r <RID>`
+
+  This switch uses a runtime identifier (RID) to specify the target platform. For a list of runtime identifiers, see [Runtime Identifier (RID) catalog](../rid-catalog.md).
+
+- `-p:PublishAot=true`
+
+  This property enables Native AOT compilation, which compiles the app directly to native code.
 
 ::: zone-end
 
@@ -352,6 +429,18 @@ ReadyToRun binaries contain both intermediate language (IL) code and the native 
 ```dotnetcli
 dotnet publish -c Release -r <RID> -p:PublishReadyToRun=true
 ```
+
+- `-c Release`
+
+  This switch sets the build configuration to Release, which is optimized for production deployment.
+
+- `-r <RID>`
+
+  This switch uses a runtime identifier (RID) to specify the target platform. For a list of runtime identifiers, see [Runtime Identifier (RID) catalog](../rid-catalog.md).
+
+- `-p:PublishReadyToRun=true`
+
+  This property enables ReadyToRun compilation, which improves startup performance by pre-compiling assemblies.
 
 ::: zone-end
 

@@ -509,4 +509,3 @@ DOTNET_SYSTEM_NET_SECURITY_USENETWORKFRAMEWORK=true
 - Zero-byte reads: semantics might differ. Avoid relying on zero-length reads for detecting data availability.
 - Internationalized domain names (IDN): certain IDN hostnames might be rejected by Network.framework. Prefer ASCII/Punycode (A-label) hostnames or validate names against macOS/Network.framework constraints.
 - If your app relies on specific <xref:System.Net.Security.SslStream> edge-case behavior, validate it under Network.framework.
-

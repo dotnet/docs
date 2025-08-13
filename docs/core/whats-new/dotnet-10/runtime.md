@@ -48,7 +48,7 @@ private static void Main()
 }
 ```
 
-On x64, we pass the members of `Point` to `Consume` in separate registers, and since physical promotion kicked in for the local `p`, we don't allocate anything on the stack first:
+On x64, the members of `Point` are passed to `Consume` in separate registers, and since physical promotion kicked in for the local `p`, nothing is allocated on the stack first:
 
 ```asm
 Program:Main() (FullOpts):
@@ -57,7 +57,7 @@ Program:Main() (FullOpts):
        tail.jmp [Program:Consume(Program+Point)]
 ```
 
-Now, suppose we changed the type of the members of `Point` to `int` instead of `long`. Because an `int` is four bytes wide, and registers are eight bytes wide on x64, the calling convention requires us to pass the members of `Point` in one register. Previously, the JIT compiler would first store the values to memory, and then load the eight-byte chunk into a register. With the .NET 10 improvements, the JIT compiler can now place the promoted members of struct arguments into shared registers directly:
+Now, suppose the type of the members of `Point` was changed to `int` instead of `long`. Because an `int` is four bytes wide, and registers are eight bytes wide on x64, the calling convention requires the members of `Point` to be passed in one register. Previously, the JIT compiler would first store the values to memory, and then load the eight-byte chunk into a register. With the .NET 10 improvements, the JIT compiler can now place the promoted members of struct arguments into shared registers directly:
 
 ```asm
 Program:Main() (FullOpts):

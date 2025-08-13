@@ -13,7 +13,7 @@ The Azure Identity library provides *credentials*&mdash;public classes derived f
 
 At runtime, a credential chain attempts to authenticate using the sequence's first credential. If that credential fails to acquire an access token, the next credential in the sequence is attempted, and so on, until an access token is successfully obtained. The following sequence diagram illustrates this behavior:
 
-:::image type="content" source="../media/mermaidjs/ChainSequence.svg" alt-text="Credential chain sequence diagram":::
+:::image type="content" source="../media/mermaidjs/chain-sequence.svg" alt-text="Credential chain sequence diagram":::
 
 ## Why use credential chains
 
@@ -37,7 +37,7 @@ There are two disparate philosophies to credential chaining:
 
 [DefaultAzureCredential](/dotnet/api/azure.identity.defaultazurecredential?view=azure-dotnet&preserve-view=true) is an opinionated, preconfigured chain of credentials. It's designed to support many environments, along with the most common authentication flows and developer tools. In graphical form, the underlying chain looks like this:
 
-:::image type="content" source="../media/mermaidjs/DefaultAzureCredentialAuthFlow-inline.svg" alt-text="Diagram that shows DefaultAzureCredential authentication flow." lightbox="../media/mermaidjs/DefaultAzureCredentialAuthFlow-expanded.png":::
+:::image type="content" source="../media/mermaidjs/default-azure-credential-authentication-flow-inline.svg" alt-text="Diagram that shows DefaultAzureCredential authentication flow." lightbox="../media/mermaidjs/default-azure-credential-authentication-flow-expanded.png":::
 
 The order in which `DefaultAzureCredential` attempts credentials follows.
 
@@ -85,7 +85,7 @@ To exclude an individual credential from `DefaultAzureCredential`, use the corre
 
 In the preceding code sample, `EnvironmentCredential`, `ManagedIdentityCredential`, and `WorkloadIdentityCredential` are removed from the credential chain. As a result, the first credential to be attempted is `VisualStudioCredential`. The modified chain contains only development-time credentials and looks like this:
 
-:::image type="content" source="../media/mermaidjs/DefaultAzureCredentialExcludes.svg" alt-text="DefaultAzureCredential using Excludes properties":::
+:::image type="content" source="../media/mermaidjs/default-azure-credential-excludes.svg" alt-text="DefaultAzureCredential using Excludes properties":::
 
 > [!NOTE]
 > `InteractiveBrowserCredential` is excluded by default and therefore isn't shown in the preceding diagram. To include `InteractiveBrowserCredential`, either pass `true` to constructor <xref:Azure.Identity.DefaultAzureCredential.%23ctor%28System.Boolean%29> or set property <xref:Azure.Identity.DefaultAzureCredentialOptions.ExcludeInteractiveBrowserCredential%2A?displayProperty=nameWithType> to `false`.
@@ -106,11 +106,11 @@ As more `Exclude`-prefixed properties are set to `true` (credential exclusions a
 
 To exclude all `Developer tool` or `Deployed service` credentials, set environment variable `AZURE_TOKEN_CREDENTIALS` to `prod` or `dev`, respectively. When a value of `prod` is used, the underlying credential chain looks as follows:
 
-:::image type="content" source="../media/mermaidjs/DefaultAzureCredentialEnvVarProd.svg" alt-text="DefaultAzureCredential with AZURE_TOKEN_CREDENTIALS set to 'prod'":::
+:::image type="content" source="../media/mermaidjs/default-azure-credential-environment-variable-production.svg" alt-text="DefaultAzureCredential with AZURE_TOKEN_CREDENTIALS set to 'prod'":::
 
 When a value of `dev` is used, the chain looks as follows:
 
-:::image type="content" source="../media/mermaidjs/DefaultAzureCredentialEnvVarDev.svg" alt-text="DefaultAzureCredential with AZURE_TOKEN_CREDENTIALS set to 'dev'":::
+:::image type="content" source="../media/mermaidjs/default-azure-credential-environment-variable-development.svg" alt-text="DefaultAzureCredential with AZURE_TOKEN_CREDENTIALS set to 'dev'":::
 
 > [!IMPORTANT]
 > The `AZURE_TOKEN_CREDENTIALS` environment variable is supported in `Azure.Identity` package versions 1.14.0 and later.
@@ -141,7 +141,7 @@ To exclude all credentials except for one, set environment variable `AZURE_TOKEN
 
 The preceding code sample creates a tailored credential chain comprised of two development-time credentials. `AzurePowerShellCredential` is attempted first, followed by `VisualStudioCredential`, if necessary. In graphical form, the chain looks like this:
 
-:::image type="content" source="../media/mermaidjs/ChainedTokenCredentialAuthFlow.svg" alt-text="ChainedTokenCredential":::
+:::image type="content" source="../media/mermaidjs/chained-token-credential-authentication-flow.svg" alt-text="ChainedTokenCredential":::
 
 > [!TIP]
 > For improved performance, optimize credential ordering in `ChainedTokenCredential` from most to least used credential.

@@ -8,7 +8,7 @@ ms.date: 08/13/2025
 %% =======================
 %% 1. Install mermaid CLI v10.9.1 (see https://github.com/mermaid-js/mermaid-cli/blob/master/README.md):
 %%    npm i -g @mermaid-js/mermaid-cli@10.9.1
-%% 2. Run command: mmdc -i DefaultAzureCredentialEnvVarDev.md -o ../../media/mermaidjs/DefaultAzureCredentialEnvVarDev.svg
+%% 2. Run command: mmdc -i default-azure-credential-environment-variable-development.md -o ../../media/mermaidjs/default-azure-credential-environment-variable-development.svg
 
 %%{
   init: {

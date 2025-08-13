@@ -52,7 +52,7 @@ The order in which `DefaultAzureCredential` attempts credentials follows.
 | 7     | [Azure PowerShell][pwsh-cred]    |If the developer authenticated to Azure using Azure PowerShell's `Connect-AzAccount` cmdlet, authenticate the app to Azure using that same account.             | Yes                 |
 | 8     | [Azure Developer CLI][azd-cred] |If the developer authenticated to Azure using Azure Developer CLI's `azd auth login` command, authenticate with that account.             | Yes                 |
 | 9     | [Interactive browser][int-cred]         |If enabled, interactively authenticate the developer via the current system's default browser.             | No                  |
-| 10    | [Broker][int-cred] |Authenticates using the default account logged into the OS via a broker. Requires that the [Azure.Identity.Broker package][broker-pkg] is installed, since an instance of `InteractiveBrowserBrokerCredential` is used. | Yes |
+| 10    | [Broker][int-cred] |Authenticates using the default account logged into the OS via a broker. Requires that the [Azure.Identity.Broker package][broker-pkg] is installed, since an instance of `InteractiveBrowserCredential` is used. | Yes |
 
 [env-cred]: /dotnet/api/azure.identity.environmentcredential?view=azure-dotnet&preserve-view=true
 [wi-cred]: /dotnet/api/azure.identity.workloadidentitycredential?view=azure-dotnet&preserve-view=true

@@ -14,11 +14,11 @@ This page answers common questions about [GitHub Copilot app modernization for .
 
 ## Which version of Visual Studio should I use?
 
-Upgrade to Visual Studio 2022 version 17.14.7 or later for the best experience with both GitHub Copilot and App Modernization for .NET (Preview).
+Upgrade to Visual Studio 2022 version 17.14.11 or later for the best experience with both GitHub Copilot and App Modernization for .NET (Preview).
 
 ## Which model should I use in GitHub Copilot agent mode?
 
-Based on our experience, GitHub Copilot and App Modernization for .NET work best with Claude Sonnet 3.7 and Claude Sonnet 4.0.
+Based on our benchmark, GitHub Copilot and App Modernization for .NET work best with Claude Sonnet 4.0 then Claude Sonnet 3.7.
 
 ## What is the MCP Server, and why is there sometimes an initial delay when running a command?
 

@@ -28,6 +28,8 @@ The equivalent query using method syntax is shown in the following code:
 
 [!INCLUDE [Datasources](../includes/data-sources-definition.md)]
 
+[!INCLUDE [Common Datasources reference](../includes/common-data-sources-reference.md)]
+
 ## Group query results
 
 Grouping is one of the most powerful capabilities of LINQ. The following examples show how to group data in various ways:

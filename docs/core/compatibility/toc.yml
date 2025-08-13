@@ -20,6 +20,8 @@ items:
                 href: aspnet-core/10/iactioncontextaccessor-obsolete.md
               - name: IncludeOpenAPIAnalyzers property and MVC API analyzers are deprecated
                 href: aspnet-core/10/openapi-analyzers-deprecated.md
+              - name: IPNetwork and ForwardedHeadersOptions.KnownNetworks are obsolete
+                href: aspnet-core/10/ipnetwork-knownnetworks-obsolete.md
               - name: Microsoft.Extensions.ApiDescription.Client package deprecated
                 href: aspnet-core/10/apidescription-client-deprecated.md
               - name: Razor run-time compilation is obsolete
@@ -42,6 +44,8 @@ items:
                 href: core-libraries/10.0/default-trace-context-propagator.md
               - name: DriveInfo.DriveFormat returns Linux filesystem types
                 href: core-libraries/10.0/driveinfo-driveformat-linux.md
+              - name: DynamicallyAccessedMembers annotation removed from DefaultValueAttribute ctor
+                href: core-libraries/10.0/defaultvalueattribute-dynamically-accessed-members.md
               - name: GnuTarEntry and PaxTarEntry exclude atime and ctime by default
                 href: core-libraries/10.0/tar-atime-ctime-default.md
               - name: LDAP DirectoryControl parsing is now more stringent
@@ -66,6 +70,8 @@ items:
                 href: cryptography/10.0/x500distinguishedname-validation.md
               - name: X509Certificate and PublicKey key parameters can be null
                 href: cryptography/10.0/x509-publickey-null.md
+          - name: Entity Framework Core
+            href: /ef/core/what-is-new/ef-core-10.0/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
           - name: Extensions
             items:
               - name: Message no longer duplicated in Console log output
@@ -114,6 +120,8 @@ items:
                 href: sdk/10.0/nu1510-pruned-references.md
               - name: PackageReference without a version raises error
                 href: sdk/10.0/nu1015-packagereference-version.md
+              - name: PrunePackageReference marks direct prunable references with PrivateAssets=all and IncludeAssets=none
+                href: sdk/10.0/prune-packagereference-privateassets.md
               - name: HTTP warnings promoted to errors in package list and search
                 href: sdk/10.0/http-warnings-to-errors.md
               - name: NUGET_ENABLE_ENHANCED_HTTP_RETRY environment variable removed
@@ -464,6 +472,8 @@ items:
                 href: sdk/8.0/rid-graph.md
               - name: Setting DebugSymbols to false disables PDB generation
                 href: sdk/8.0/debugsymbols.md
+              - name: "SHA-1 fingerprint support deprecated in 'dotnet nuget sign'"
+                href: sdk/10.0/dotnet-nuget-sign-sha1-deprecated.md
               - name: Source Link included in the .NET SDK
                 href: sdk/8.0/source-link.md
               - name: Trimming can't be used with .NET Standard or .NET Framework

@@ -24,7 +24,7 @@ The <xref:System.Linq.AsyncEnumerable> class in .NET 10, and in the [`System.Lin
 
 ## Type of breaking change
 
-This is a [source incompatible](../../categories.md#source-compatibility) change.
+This change can affect [source compatibility](../../categories.md#source-compatibility).
 
 ## Reason for change
 
@@ -32,15 +32,29 @@ This is a [source incompatible](../../categories.md#source-compatibility) change
 
 ## Recommended action
 
-If upgrading to .NET 10 and the code includes a direct package reference to `System.Linq.Async`, remove that package reference. For multitargeting both .NET 10 and previous versions, add a package reference to `System.Linq.AsyncEnumerable` instead.
+If you're upgrading to .NET 10 and your code includes a direct package reference to `System.Linq.Async`, remove that package reference. For multitargeting both .NET 10 and a previous version, add a package reference to `System.Linq.AsyncEnumerable` instead.
 
-If `System.Linq.Async` is consumed indirectly via another package, avoid ambiguity errors by including this in the project:
+If `System.Linq.Async` is consumed indirectly via another package, avoid ambiguity errors by adding `<ExcludeAssets>` metadata with a value of `compile` or `all`:
 
-```xml
-<PackageReference Include="System.Linq.Async" Version="6.0.1">
-  <ExcludeAssets>all</ExcludeAssets>
-</PackageReference>
-```
+- To allow transitive use of `System.Linq.Async`, set `<ExcludeAssets>` to `compile`:
+
+  ```xml
+  <PackageReference Include="System.Linq.Async" Version="6.0.1">
+    <ExcludeAssets>compile</ExcludeAssets> 
+  </PackageReference>
+  ```
+
+  This configuration prevents direct usage in your code while allowing other packages to continue using System.Linq.Async internally.
+
+- For complete exclusion, set `<ExcludeAssets>` to `all`:
+
+  ```xml
+  <PackageReference Include="System.Linq.Async" Version="6.0.1">
+    <ExcludeAssets>all</ExcludeAssets>
+  </PackageReference>
+  ```
+
+  Use this configuration only if you're certain no dependencies require System.Linq.Async at run time.
 
 Most consuming code should be compatible without changes, but some call sites might need updates to refer to newer names and signatures. For example, a `Select` call like `e.Select(i => i * 2)` will work the same before and after. However, the call `e.SelectAwait(async (int i, CancellationToken ct) => i * 2)` will need to be changed to use `Select` instead of `SelectAwait`, as in `e.Select(async (int i, CancellationToken ct) => i * 2)`.
 

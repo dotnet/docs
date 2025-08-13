@@ -66,7 +66,7 @@ In the following steps, you'll look at the files created by the publish process.
 
    - *HelloWorld.dll*
 
-      This is the [framework-dependent deployment](../deploying/index#cross-platform-dll-deployment) version of the application. To execute this dynamic link library, enter `dotnet HelloWorld.dll` at a command prompt. This method of running the app works on any platform that has the .NET runtime installed.
+      This is the [framework-dependent deployment](../deploying/index.md#cross-platform-dll-deployment) version of the application. To execute this dynamic link library, enter `dotnet HelloWorld.dll` at a command prompt. This method of running the app works on any platform that has the .NET runtime installed.
 
    - *HelloWorld.exe*
 

@@ -1623,7 +1623,7 @@ The following MSBuild properties are documented in this section:
 
 ### AppHostDotNetSearch
 
-The `AppHostDotNetSearch` property configures how [the native executable](../deploying/index.md#produce-an-executable) produced for an application will search for a .NET installation. This property only impacts the executable produced on publish, not build.
+The `AppHostDotNetSearch` property configures how [the native executable](../deploying/index.md#configure-net-install-search-behavior) produced for an application will search for a .NET installation. This property only impacts the executable produced on publish, not build.
 
 ```xml
 <PropertyGroup>

@@ -1,7 +1,6 @@
 ---
 title: "NETSDK1032: RuntimeIdentifier and PlatformTarget must be compatible."
 description: How to resolve the NETSDK1032 error 'RuntimeIdentifier and PlatformTarget must be compatible.'
-author: tdykstra
 ms.topic: error-reference
 ms.date: 01/14/2025
 ai-usage: ai-assisted

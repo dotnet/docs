@@ -1,8 +1,6 @@
 ---
 title: .NET SDK workload sets
 description: "Learn how to use workload sets to control which versions of workloads get installed, updated, or restored."
-author: tdykstra
-ms.author: tdykstra
 ms.service: dotnet
 ms.topic: how-to
 ms.date: 08/02/2024

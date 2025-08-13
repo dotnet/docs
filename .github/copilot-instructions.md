@@ -13,7 +13,7 @@ Follow [Microsoft Writing Style Guide](https://learn.microsoft.com/en-us/style-g
 - Imperative mood for instructions ("Call the method" not "You should call the method")
 - Use "might" instead of "may" for possibility
 - Use "can" instead of "may" for permissible actions
-- Avoid "we"/"our" referring to documentation authors
+- Avoid "we"/"our" referring to documentation authors or product teams
 
 ### Structure and Format
 - Sentence case headings (no gerunds in titles)
@@ -46,7 +46,7 @@ Use the `url` value from results for manual links.
 
 ## Code Snippets
 For snippets >6 lines:
-1. Create `./snippets/my-doc/language` folder in same directory as document (for a document named `my-doc.md`) where language is either vb (for visual basic) or cs (for c#). Omit the `language` component when the document is in the `docs/visual-basic`, `docs/csharp`, or `docs/fsharp` folders.
+1. Create `./snippets/my-doc/language` folder in same directory as document (for a document named `my-doc.md`) where language is either vb (for visual basic) or csharp (for c#). Omit the `language` component when the document is in the `docs/visual-basic`, `docs/csharp`, or `docs/fsharp` folders.
 1. Add snippet as separate code file
 1. Include simple project file targeting latest .NET
 1. All code should use the latest stable versions/features
@@ -57,4 +57,4 @@ New Markdown files: lowercase with hyphens, omit filler words (the, a, etc.)
 
 ## Special Cases
 - Breaking changes: Include directions from `.github/prompts/breaking-change.md`
-- When you (Copilot) is assigned an issue in GitHub, after you've completed your work and the workflows (status checks) have run, check to make sure there are no build warnings under the OpenPublishing.Build status check. If there are, open the build report (under View Details) and resolve any build warnings you introduced.
+- When you (Copilot) are assigned an issue in GitHub, after you've completed your work and the workflows (status checks) have run, check to make sure there are no build warnings under the OpenPublishing.Build status check. If there are, open the build report (under View Details) and resolve any build warnings you introduced.

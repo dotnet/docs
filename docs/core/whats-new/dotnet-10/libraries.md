@@ -9,7 +9,7 @@ ai-usage: ai-assisted
 
 # What's new in .NET libraries for .NET 10
 
-This article describes new features in the .NET libraries for .NET 10.
+This article describes new features in the .NET libraries for .NET 10. It's been updated for Preview 7.
 
 ## Cryptography
 
@@ -142,7 +142,7 @@ private static byte[] SignPreHashSha3_256(MLDsa signingKey, ReadOnlySpan<byte> d
 
 #### Composite ML-DSA
 
-This release also introduces new types to support ietf-lamps-pq-composite-sigs (currently at draft 7), and an implementation of the primitive methods for RSA variants.
+This release also introduces new types to support [ietf-lamps-pq-composite-sigs](https://datatracker.ietf.org/doc/draft-ietf-lamps-pq-composite-sigs/) (currently at draft 7), and an implementation of the primitive methods for RSA variants.
 
 ```csharp
 var algorithm = CompositeMLDsaAlgorithm.MLDsa65WithRSA4096Pss;
@@ -448,7 +448,7 @@ Traditional `WebSocket` APIs are low-level and require significant boilerplate: 
 
 #### Common usage patterns
 
-Here are a few examples of how `WebSocketStream` simplifies typical WebSocket workflows:
+Here are a few examples of how `WebSocketStream` simplifies typical `WebSocket` workflows:
 
 ##### Streaming text protocol (for example, STOMP)
 

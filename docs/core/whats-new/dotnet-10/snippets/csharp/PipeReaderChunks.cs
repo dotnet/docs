@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 var pipe = new Pipe();
 
-// Producer writes to the pipe in chunks
+// Producer writes to the pipe in chunks.
 var producerTask = Task.Run(async () =>
 {
     async static IAsyncEnumerable<Chunk> GenerateResponse()
@@ -22,14 +22,14 @@ var producerTask = Task.Run(async () =>
     await pipe.Writer.CompleteAsync();
 });
 
-// Consumer reads from the pipe and outputs to console
+// Consumer reads from the pipe and outputs to console.
 var consumerTask = Task.Run(async () =>
 {
     var thinkingString = "...";
     var clearThinkingString = new string("\b\b\b");
     var lastTimestamp = DateTime.MinValue;
 
-    // Read response to end
+    // Read response to end.
     Console.Write(thinkingString);
     await foreach (var chunk in JsonSerializer.DeserializeAsyncEnumerable<Chunk>(pipe.Reader))
     {

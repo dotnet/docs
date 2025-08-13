@@ -9,7 +9,7 @@ ai-usage: ai-assisted
 
 # What's new in the SDK and tooling for .NET 10
 
-This article describes new features and enhancements in the .NET SDK for .NET 10.
+This article describes new features and enhancements in the .NET SDK for .NET 10. It's been updated for Preview 7.
 
 ## .NET tools enhancements
 
@@ -65,7 +65,7 @@ The [platform-specific .NET tools](#platform-specific-net-tools) feature is grea
 
 .NET is great at this - the platform at its heart is meant to support this kind of platform-agnostic execution. To make platform-specific .NET tools work this way, you only need to add one thing to your project file: the `any` Runtime Identifier.
 
-```diff
+```xml
 <PropertyGroup>
   <RuntimeIdentifiers>
         linux-x64;

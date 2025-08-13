@@ -4,7 +4,7 @@ using System.Net.WebSockets;
 using System.Threading;
 using System.Threading.Tasks;
 
-// Streaming binary protocol (for example, AMQP)
+// Streaming binary protocol (for example, AMQP).
 Stream transportStream = WebSocketStream.Create(
     connectedWebSocket,
     WebSocketMessageType.Binary,
@@ -13,4 +13,4 @@ await message.SerializeToStreamAsync(transportStream, cancellationToken);
 var receivePayload = new byte[payloadLength];
 await transportStream.ReadExactlyAsync(receivePayload, cancellationToken);
 transportStream.Dispose();
-// `Dispose` automatically handles closing handshake
+// `Dispose` automatically handles closing handshake.

@@ -1,7 +1,7 @@
 ---
-title: System.CommandLine migration guide to 2.0.0-beta5
-description: "Learn about how to migrate to System.CommandLine 2.0.0-beta5."
-ms.date: 06/19/2025
+title: System.CommandLine migration guide to 2.0.0-beta7
+description: "Learn about how to migrate to System.CommandLine 2.0.0-beta7."
+ms.date: 08/13/2025
 no-loc: [System.CommandLine]
 helpviewer_keywords:
   - "command line interface"
@@ -9,15 +9,15 @@ helpviewer_keywords:
   - "System.CommandLine"
 ---
 
-# System.CommandLine 2.0.0-beta5 migration guide
+# System.CommandLine 2.0.0-beta7 migration guide
 
 [!INCLUDE [scl-preview](./includes/preview.md)]
 
-The main focus for the 2.0.0-beta5 release was to improve the APIs and take a step toward releasing a stable version of System.CommandLine. The APIs have been simplified and made more coherent and consistent with the [Framework design guidelines](../design-guidelines/index.md). This article describes the breaking changes that were made in 2.0.0-beta5 and the reasoning behind them.
+The main focus for the 2.0.0-beta7 release was to improve the APIs and take a step toward releasing a stable version of System.CommandLine. The APIs have been simplified and made more coherent and consistent with the [Framework design guidelines](../design-guidelines/index.md). This article describes the breaking changes that were made in 2.0.0-beta7 and the reasoning behind them.
 
 ## Renaming
 
-In 2.0.0-beta4, not all types and members followed the [naming guidelines](../design-guidelines/naming-guidelines.md). Some were not consistent with the naming conventions, such as using the `Is` prefix for Boolean properties. In 2.0.0-beta5, some types and members have been renamed. The following table shows the old and new names:
+In 2.0.0-beta4, not all types and members followed the [naming guidelines](../design-guidelines/naming-guidelines.md). Some were not consistent with the naming conventions, such as using the `Is` prefix for Boolean properties. In 2.0.0-beta7, some types and members have been renamed. The following table shows the old and new names:
 
 | Old name                                               | New name                                                       |
 |--------------------------------------------------------|----------------------------------------------------------------|
@@ -36,7 +36,7 @@ In 2.0.0-beta4, not all types and members followed the [naming guidelines](../de
 
 Version 2.0.0-beta4 had numerous `Add` methods that were used to add items to collections, such as arguments, options, subcommands, validators, and completions. Some of these collections were exposed via properties as read-only collections. Because of that, it was impossible to remove items from those collections.
 
-In 2.0.0-beta5, the APIs were changed to expose mutable collections instead of `Add` methods and (sometimes) read-only collections. This allows you to not only add items or enumerate them, but also remove them. The following table shows the old method and new property names:
+In 2.0.0-beta7, the APIs were changed to expose mutable collections instead of `Add` methods and (sometimes) read-only collections. This allows you to not only add items or enumerate them, but also remove them. The following table shows the old method and new property names:
 
 | Old method name           | New property                     |
 |---------------------------|----------------------------------|
@@ -56,7 +56,7 @@ The `RemoveAlias` and `HasAlias` methods were also removed, as the `Aliases` pro
 
 ## Names and aliases
 
-Before 2.0.0-beta5, there was no clear separation between the name and [aliases](syntax.md#aliases) of a symbol. When `name` was not provided for the `Option<T>` constructor, the symbol reported its name as the longest alias with prefixes like `--`, `-`, or `/` removed. That was confusing.
+Before 2.0.0-beta7, there was no clear separation between the name and [aliases](syntax.md#aliases) of a symbol. When `name` was not provided for the `Option<T>` constructor, the symbol reported its name as the longest alias with prefixes like `--`, `-`, or `/` removed. That was confusing.
 
 Moreover, to get the parsed value, users had to store a reference to an option or an argument and then use it to get the value from `ParseResult`.
 
@@ -83,7 +83,7 @@ int number = parseResult.GetValue<int>("--number");
 
 In the past, `Option<T>` exposed many constructors, some of which accepted the name. Since the name is now mandatory and aliases will frequently be provided for `Option<T>`, there's only a single constructor. It accepts the name and a `params` array of aliases.
 
-Before 2.0.0-beta5, `Option<T>` had a constructor that took a name and a description. Because of that, the second argument might now be treated as an alias rather than a description. It's the only known breaking change in the API that doesn't cause a compiler error.
+Before 2.0.0-beta7, `Option<T>` had a constructor that took a name and a description. Because of that, the second argument might now be treated as an alias rather than a description. It's the only known breaking change in the API that doesn't cause a compiler error.
 
 Old code that used the constructor with a description should be updated to use the new constructor that takes a name and aliases, and then set the `Description` property separately. For example:
 
@@ -92,7 +92,7 @@ Option<bool> beta4 = new("--help", "An option with aliases.");
 beta4b.Aliases.Add("-h");
 beta4b.Aliases.Add("/h");
 
-Option<bool> beta5 = new("--help", "-h", "/h")
+Option<bool> beta7 = new("--help", "-h", "/h")
 {
     Description = "An option with aliases."
 };
@@ -150,7 +150,7 @@ In 2.0.0-beta4, it was possible to separate the parsing and invoking of commands
 
 ### Configuration
 
-Before 2.0.0-beta5, it was possible to customize the parsing, but only with some of the public `Parse` methods. There was a `Parser` class that exposed two public constructors: one accepting a `Command` and another accepting a `CommandLineConfiguration`. `CommandLineConfiguration` was immutable, and to create it, you had to use a builder pattern exposed by the `CommandLineBuilder` class. The following changes were made to simplify the API:
+Before 2.0.0-beta7, it was possible to customize the parsing, but only with some of the public `Parse` methods. There was a `Parser` class that exposed two public constructors: one accepting a `Command` and another accepting a `CommandLineConfiguration`. `CommandLineConfiguration` was immutable, and to create it, you had to use a builder pattern exposed by the `CommandLineBuilder` class. The following changes were made to simplify the API:
 
 - `CommandLineConfiguration` was made mutable and `CommandLineBuilder` was removed. Creating a configuration is now as simple as creating an instance of `CommandLineConfiguration` and setting the properties you want to customize. Moreover, creating a new instance of configuration is the equivalent of calling `CommandLineBuilder`'s `UseDefaults` method.
 - Every `Parse` method now accepts an optional `CommandLineConfiguration` parameter that can be used to customize the parsing. When it's not provided, the default configuration is used.
@@ -179,9 +179,9 @@ Before 2.0.0-beta5, it was possible to customize the parsing, but only with some
   ```
 
 - `UseLocalizationResources` and `LocalizationResources` were removed. This feature was used mostly by the `dotnet` CLI to add missing translations to `System.CommandLine`. All those translations were moved to the System.CommandLine itself, so this feature is no longer needed. If support for your language is missing, please [report an issue](https://github.com/dotnet/command-line-api/issues/new/choose).
-- `UseTokenReplacer` was removed. [Response files](syntax.md#response-files) are enabled by default, but you can disable them by setting the <xref:System.CommandLine.CommandLineConfiguration.ResponseFileTokenReplacer> property to `null`. You can also provide a custom implementation to customize how response files are processed.
+- `UseTokenReplacer` was removed. [Response files](syntax.md#response-files) are enabled by default, but you can disable them by setting the <xref:System.CommandLine.ParserConfiguration.ResponseFileTokenReplacer> property to `null`. You can also provide a custom implementation to customize how response files are processed.
 
-Last but not least, the `IConsole` and all related interfaces (`IStandardOut`, `IStandardError`, `IStandardIn`) were removed. <xref:System.CommandLine.CommandLineConfiguration> exposes two `TextWriter` properties: <xref:System.CommandLine.CommandLineConfiguration.Output> and <xref:System.CommandLine.CommandLineConfiguration.Error>. You can set these properties to any <xref:System.IO.TextWriter> instance, such as a `StringWriter`, which can be used to capture output for testing. The motivation for this change was to expose fewer types and reuse existing abstractions.
+Last but not least, the `IConsole` and all related interfaces (`IStandardOut`, `IStandardError`, `IStandardIn`) were removed. <xref:System.CommandLine.InvocationConfiguration> exposes two `TextWriter` properties: <xref:System.CommandLine.InvocationConfiguration.Output> and <xref:System.CommandLine.InvocationConfiguration.Error>. You can set these properties to any <xref:System.IO.TextWriter> instance, such as a `StringWriter`, which can be used to capture output for testing. The motivation for this change was to expose fewer types and reuse existing abstractions.
 
 ### Invocation
 
@@ -233,7 +233,7 @@ For more details about how to use actions, see [How to parse and invoke commands
 
 ## The benefits of the simplified API
 
-The changes made in 2.0.0-beta5 make the API more consistent, future-proof, and easier to use for existing and new users.
+The changes made in 2.0.0-beta7 make the API more consistent, future-proof, and easier to use for existing and new users.
 
 New users need to learn fewer concepts and types, as the number of public interfaces decreased from 11 to 0, and public classes (and structs) decreased from 56 to 38. The public method count dropped from 378 to 235, and public properties from 118 to 99.
 

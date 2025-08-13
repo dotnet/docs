@@ -68,13 +68,12 @@ The [platform-specific .NET tools](#platform-specific-net-tools) feature is grea
 ```xml
 <PropertyGroup>
   <RuntimeIdentifiers>
-        linux-x64;
-        linux-arm64;
-        macos-arm64;
-        win-x64;
--       win-arm64
-+       win-arm64;
-+       any
+       linux-x64;
+       linux-arm64;
+       macos-arm64;
+       win-x64;
+       win-arm64;
+       any
   </RuntimeIdentifiers>
 </PropertyGroup>
 ```

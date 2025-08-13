@@ -13,6 +13,18 @@ zone_pivot_groups: development-environment-one
 
 This article explains the different ways to publish a .NET application. It covers publishing modes, how to produce executables and cross-platform binaries, and the impact of each approach on deployment and runtime environments. You can publish .NET applications using either the .NET CLI or Visual Studio.
 
+::: zone pivot="vscode"
+
+For a short tutorial on publishing, see [Tutorial: Publish a .NET console application using Visual Studio Code](../tutorials/publishing-with-visual-studio-code.md).
+
+::: zone-end
+
+::: zone pivot="visualstudio"
+
+For a short tutorial on publishing, see [Tutorial: Publish a .NET console application using Visual Studio](../tutorials/publishing-with-visual-studio.md).
+
+::: zone-end
+
 ## What is publishing
 
 Publishing a .NET app means compiling source code to create an executable or binary, along with its dependencies and related files, for distribution. After publishing, deploy the app to a server, distribution platform, container, or cloud environment. The publishing process prepares an app for deployment and use outside of a development environment.

@@ -54,7 +54,7 @@ In the following steps, you'll look at the files created by the publish process.
 
 1. In **Solution Explorer**, select **Show all files**.
 
-1. In the project folder, expand *bin/Release/net7.0/publish*.
+1. In the project folder, expand *bin/Release/{net}/publish*. (Where {net} is the target framework folder, such as _net8.0_.)
 
    :::image type="content" source="media/publishing-with-visual-studio/published-files-output-net8.png" alt-text="Solution Explorer showing published files":::
 
@@ -70,7 +70,7 @@ In the following steps, you'll look at the files created by the publish process.
 
    - *HelloWorld.exe*
 
-      This is the [framework-dependent executable](../deploying/publish-with-cli.md#framework-dependent-executable) version of the application. To run it, enter `HelloWorld.exe` at a command prompt. The file is operating-system-specific.
+      This is the [framework-dependent executable](../deploying/index.md#framework-dependent-deployment) version of the application. To run it, enter `HelloWorld.exe` at a command prompt. The file is operating-system-specific.
 
    - *HelloWorld.pdb* (optional for deployment)
 

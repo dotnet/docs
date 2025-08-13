@@ -75,7 +75,7 @@ In its simplest form, you can use the parameterless version of `DefaultAzureCred
 
 ### How to customize DefaultAzureCredential
 
-The following sections describe strategies for omitting credentials from the chain.
+The following sections describe strategies for controlling which credentials are included in the chain.
 
 #### Exclude an individual credential
 
@@ -114,6 +114,24 @@ When a value of `dev` is used, the chain looks as follows:
 
 > [!IMPORTANT]
 > The `AZURE_TOKEN_CREDENTIALS` environment variable is supported in `Azure.Identity` package versions 1.14.0 and later.
+
+#### Use a specific credential
+
+To exclude all credentials except for one, set environment variable `AZURE_TOKEN_CREDENTIALS` to the credential name. For example, you can reduce the `DefaultAzureCredential` chain to `VisualStudioCredential` by setting `AZURE_TOKEN_CREDENTIALS` to `VisualStudioCredential`. The string comparison is performed in a case-insensitive manner. Valid string values for the environment variable include:
+
+- `AzureCliCredential`
+- `AzureDeveloperCliCredential`
+- `AzurePowerShellCredential`
+- `BrokerCredential`
+- `EnvironmentCredential`
+- `InteractiveBrowserCredential`
+- `ManagedIdentityCredential`
+- `VisualStudioCredential`
+- `VisualStudioCodeCredential`
+- `WorkloadIdentityCredential`
+
+> [!IMPORTANT]
+> The `AZURE_TOKEN_CREDENTIALS` environment variable supports individual credential names in `Azure.Identity` package versions 1.15.0 and later.
 
 ## ChainedTokenCredential overview
 

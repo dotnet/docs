@@ -1,6 +1,6 @@
 ---
 ms.topic: include
-ms.date: 05/30/2025
+ms.date: 08/13/2025
 ---
 
 ```mermaid
@@ -24,7 +24,11 @@ flowchart LR;
     accTitle: DefaultAzureCredential authentication flow without deployed service credentials;
     accDescr: Flowchart showing the credential chain implemented by DefaultAzureCredential when AZURE_TOKEN_CREDENTIALS is set to "dev";
 
-    D(Visual Studio):::developer --> E(Azure CLI):::developer --> F(Azure PowerShell):::developer --> G(Azure Developer CLI):::developer;
+    D(Visual Studio):::developer -->
+    E(Visual Studio Code):::developer -->
+    F(Azure CLI):::developer -->
+    G(Azure PowerShell):::developer -->
+    H(Azure Developer CLI):::developer;
 
     %% Define styles for credential type boxes
     classDef developer fill:#F5AF6F, stroke:#EB7C39, stroke-width:2px;

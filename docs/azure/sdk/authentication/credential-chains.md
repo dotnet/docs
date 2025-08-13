@@ -2,7 +2,7 @@
 title: 'Credential chains in the Azure Identity library for .NET'
 description: 'This article describes the DefaultAzureCredential and ChainedTokenCredential classes in the Azure Identity library.'
 ms.topic: concept-article
-ms.date: 05/30/2025
+ms.date: 08/13/2025
 ---
 
 # Credential chains in the Azure Identity library for .NET
@@ -37,7 +37,7 @@ There are two disparate philosophies to credential chaining:
 
 [DefaultAzureCredential](/dotnet/api/azure.identity.defaultazurecredential?view=azure-dotnet&preserve-view=true) is an opinionated, preconfigured chain of credentials. It's designed to support many environments, along with the most common authentication flows and developer tools. In graphical form, the underlying chain looks like this:
 
-:::image type="content" source="../media/mermaidjs/DefaultAzureCredentialAuthFlow.svg" alt-text="DefaultAzureCredential auth flowchart":::
+:::image type="content" source="../media/mermaidjs/DefaultAzureCredentialAuthFlow-inline.svg" alt-text="Diagram that shows DefaultAzureCredential authentication flow." lightbox="../media/mermaidjs/DefaultAzureCredentialAuthFlow-expanded.png":::
 
 The order in which `DefaultAzureCredential` attempts credentials follows.
 
@@ -47,19 +47,24 @@ The order in which `DefaultAzureCredential` attempts credentials follows.
 | 2     | [Workload Identity][wi-cred]   |If the app is deployed to an Azure host with Workload Identity enabled, authenticate that account.             | Yes                 |
 | 3     | [Managed Identity][mi-cred]    |If the app is deployed to an Azure host with Managed Identity enabled, authenticate the app to Azure using that Managed Identity.             | Yes                 |
 | 4     | [Visual Studio][vs-cred]       |If the developer authenticated to Azure by logging into Visual Studio, authenticate the app to Azure using that same account.             | Yes                 |
-| 5     | [Azure CLI][az-cred]           |If the developer authenticated to Azure using Azure CLI's `az login` command, authenticate the app to Azure using that same account.             | Yes                 |
-| 6     | [Azure PowerShell][pwsh-cred]    |If the developer authenticated to Azure using Azure PowerShell's `Connect-AzAccount` cmdlet, authenticate the app to Azure using that same account.             | Yes                 |
-| 7     | [Azure Developer CLI][azd-cred] |If the developer authenticated to Azure using Azure Developer CLI's `azd auth login` command, authenticate with that account.             | Yes                 |
-| 8     | [Interactive browser][int-cred]         |If enabled, interactively authenticate the developer via the current system's default browser.             | No                  |
+| 5     | [Visual Studio Code][vsc-cred] |If the developer authenticated via Visual Studio Code's [Azure Resources extension][vsc-ext] and the [Azure.Identity.Broker package][broker-pkg] is installed, authenticate that account.             | Yes |
+| 6     | [Azure CLI][az-cred]           |If the developer authenticated to Azure using Azure CLI's `az login` command, authenticate the app to Azure using that same account.             | Yes                 |
+| 7     | [Azure PowerShell][pwsh-cred]    |If the developer authenticated to Azure using Azure PowerShell's `Connect-AzAccount` cmdlet, authenticate the app to Azure using that same account.             | Yes                 |
+| 8     | [Azure Developer CLI][azd-cred] |If the developer authenticated to Azure using Azure Developer CLI's `azd auth login` command, authenticate with that account.             | Yes                 |
+| 9     | [Interactive browser][int-cred]         |If enabled, interactively authenticate the developer via the current system's default browser.             | No                  |
+| 10    | [Broker][int-cred] |Authenticates using the default account logged into the OS via a broker. Requires that the [Azure.Identity.Broker package][broker-pkg] is installed, since an instance of `InteractiveBrowserBrokerCredential` is used. | Yes |
 
 [env-cred]: /dotnet/api/azure.identity.environmentcredential?view=azure-dotnet&preserve-view=true
 [wi-cred]: /dotnet/api/azure.identity.workloadidentitycredential?view=azure-dotnet&preserve-view=true
 [mi-cred]: /dotnet/api/azure.identity.managedidentitycredential?view=azure-dotnet&preserve-view=true
 [vs-cred]: /dotnet/api/azure.identity.visualstudiocredential?view=azure-dotnet&preserve-view=true
+[vsc-cred]: /dotnet/api/azure.identity.visualstudiocodecredential?view=azure-dotnet&preserve-view=true
 [az-cred]: /dotnet/api/azure.identity.azureclicredential?view=azure-dotnet&preserve-view=true
 [pwsh-cred]: /dotnet/api/azure.identity.azurepowershellcredential?view=azure-dotnet&preserve-view=true
 [azd-cred]: /dotnet/api/azure.identity.azuredeveloperclicredential?view=azure-dotnet&preserve-view=true
 [int-cred]: /dotnet/api/azure.identity.interactivebrowsercredential?view=azure-dotnet&preserve-view=true
+[vsc-ext]: https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureresourcegroups
+[broker-pkg]: https://www.nuget.org/packages/Azure.Identity.Broker
 
 In its simplest form, you can use the parameterless version of `DefaultAzureCredential` as follows:
 

@@ -1,6 +1,6 @@
 ---
 ms.topic: include
-ms.date: 08/07/2024
+ms.date: 08/13/2025
 ---
 
 ```mermaid
@@ -21,7 +21,12 @@ ms.date: 08/07/2024
 }%%
 
 flowchart LR;
-    D(Visual Studio):::developer --> E(Azure CLI):::developer --> F(Azure PowerShell):::developer --> G(Azure Developer CLI):::developer;
+    D(Visual Studio):::developer -->
+    E(Visual Studio Code):::developer -->
+    F(Azure CLI):::developer -->
+    G(Azure PowerShell):::developer -->
+    H(Azure Developer CLI):::developer -->
+    I(Broker):::developer;
 
     %% Define styles for credential type boxes
     classDef developer fill:#F5AF6F, stroke:#EB7C39, stroke-width:2px;

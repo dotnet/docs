@@ -75,7 +75,7 @@ Publish a single file application using the [dotnet publish](../../tools/dotnet-
 dotnet publish -r linux-x64 -p:PublishSingleFile=true --self-contained false
 ```
 
-For more information, see [Publish .NET Core apps with .NET CLI](../publish-with-cli.md).
+For more information, see [.NET application publishing overview](../../deploying/index.md).
 
 # [Visual Studio](#tab/vs)
 
@@ -105,7 +105,7 @@ Visual Studio creates reusable publishing profiles that control how your applica
 
 1. Choose **Publish** to publish your app as a single file.
 
-For more information, see [Publish .NET Core apps with Visual Studio](../publish-with-vs.md).
+For more information, see[.NET application publishing overview](../../deploying/index.md).
 
 ---
 
@@ -235,7 +235,5 @@ Single file apps can be inspected using the [ILSpy tool](https://ilspy.net/). Th
 
 ## See also
 
-- [.NET Core application deployment](../index.md)
-- [Publish .NET apps with .NET CLI](../publish-with-cli.md)
-- [Publish .NET Core apps with Visual Studio](../publish-with-vs.md)
+- [.NET application publishing overview](../../deploying/index.md)
 - [`dotnet publish` command](../../tools/dotnet-publish.md)

@@ -108,6 +108,8 @@ items:
             items:
               - name: .NET CLI `--interactive` defaults to `true` in user scenarios
                 href: sdk/10.0/dotnet-cli-interactive.md
+              - name: .NET tool packaging invokes Publish instead of Build
+                href: sdk/10.0/dotnet-tool-pack-publish.md
               - name: "`dotnet restore` audits transitive packages"
                 href: sdk/10.0/nugetaudit-transitive-packages.md
               - name: Default workload configuration from 'loose manifests' to 'workload sets' mode

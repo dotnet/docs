@@ -22,6 +22,8 @@ The standard query operator methods that perform selection are listed in the fol
 
 The following example uses the `where` clause to filter from an array those strings that have a specific length.
 
+[!INCLUDE [Common Datasources reference](../includes/common-data-sources-reference.md)]
+
 :::code language="csharp" source="./snippets/standard-query-operators/WhereFilter.cs" id="FilterExampleQuery":::
 
 The equivalent query using method syntax is shown in the following code:

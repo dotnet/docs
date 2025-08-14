@@ -1,6 +1,4 @@
 ---
-author: tdykstra
-ms.author: tdykstra
 ms.date: 04/04/2024
 ms.topic: include
 ---

@@ -3,6 +3,9 @@ title: "Breaking change: System.Drawing OutOfMemoryException changed to External
 description: "Learn about the breaking change in .NET 10 where System.Drawing GDI+ OutOfMemory errors now throw ExternalException instead of OutOfMemoryException."
 ms.date: 08/15/2025
 ai-usage: ai-assisted
+dev_langs:
+- CSharp
+- VB
 ---
 
 # System.Drawing OutOfMemoryException changed to ExternalException
@@ -35,6 +38,8 @@ The change to `ExternalException` provides more accurate error reporting, as thi
 
 If your code catches `OutOfMemoryException` when using System.Drawing APIs, ensure you also catch `ExternalException` to handle these GDI+ errors.
 
+### [C#](#tab/csharp)
+
 ```csharp
 try
 {
@@ -49,6 +54,20 @@ catch (OutOfMemoryException ex)
     // Handle actual memory issues
 }
 ```
+
+### [VB.NET](#tab/vb)
+
+```vb
+Try
+    ' System.Drawing operations
+Catch ex As ExternalException
+    ' Handle GDI+ errors (including former OutOfMemoryException cases)
+Catch ex As OutOfMemoryException
+    ' Handle actual memory issues
+End Try
+```
+
+---
 
 ## Affected APIs
 

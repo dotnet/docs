@@ -83,9 +83,9 @@ int number = parseResult.GetValue<int>("--number");
 
 In the past, <xref:System.CommandLine.Option`1> exposed many constructors, some of which accepted the name. Since the name is now mandatory and aliases will frequently be provided for `Option<T>`, there's only a single constructor. It accepts the name and a `params` array of aliases.
 
-> [!NOTE]
-> Before 2.0.0-beta5, `Option<T>` had a constructor that took a name and a description. Because of that, the second argument might now be treated as an alias rather than a description. It's the only known breaking change in the API that doesn't cause a compiler error.
-> Update any code that passed a description to the constructor to use the new constructor that takes a name and aliases, and then set the `Description` property separately. For example:
+Before 2.0.0-beta5, `Option<T>` had a constructor that took a name and a description. Because of that, the second argument might now be treated as an alias rather than a description. It's the only known breaking change in the API that doesn't cause a compiler error.
+
+Update any code that passed a description to the constructor to use the new constructor that takes a name and aliases, and then set the `Description` property separately. For example:
 
 ```csharp
 Option<bool> beta4 = new("--help", "An option with aliases.");

@@ -197,6 +197,10 @@ In scenarios, you might need to block on asynchronous operations when the `await
 
 When you must block synchronously on a `Task`, here are the available approaches, listed from most to least preferred:
 
+- [Use GetAwaiter().GetResult()](#use-getawaitergetresult)
+- [Use Task.Run for complex scenarios](#use-taskrun-for-complex-scenarios)  
+- [Use Wait() and Result](#use-wait-and-result)
+
 #### Use GetAwaiter().GetResult()
 
 The `GetAwaiter().GetResult()` pattern is generally the preferred approach when you must block synchronously:

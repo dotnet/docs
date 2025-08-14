@@ -38,8 +38,6 @@ The change to `ExternalException` provides more accurate error reporting, as thi
 
 If your code catches `OutOfMemoryException` when using System.Drawing APIs, ensure you also catch `ExternalException` to handle these GDI+ errors.
 
-### [C#](#tab/csharp)
-
 ```csharp
 try
 {
@@ -55,8 +53,6 @@ catch (OutOfMemoryException ex)
 }
 ```
 
-### [VB.NET](#tab/vb)
-
 ```vb
 Try
     ' System.Drawing operations
@@ -66,8 +62,6 @@ Catch ex As OutOfMemoryException
     ' Handle actual memory issues
 End Try
 ```
-
----
 
 ## Affected APIs
 

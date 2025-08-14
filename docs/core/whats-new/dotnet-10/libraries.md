@@ -115,7 +115,7 @@ The PQC algorithms are available on systems where the system cryptographic libra
 
 #### ML-DSA enhancements
 
-The <xref:System.Security.Cryptography.MLDsa> class gained ease-of-use updates, allowing some common code patterns to be simplified:
+The <xref:System.Security.Cryptography.MLDsa> class includes ease-of-use features that simplify common code patterns:
 
 ```diff
 private static byte[] SignData(string privateKeyPath, ReadOnlySpan<byte> data)
@@ -142,7 +142,7 @@ private static byte[] SignPreHashSha3_256(MLDsa signingKey, ReadOnlySpan<byte> d
 
 #### Composite ML-DSA
 
-This release also introduces new types to support [ietf-lamps-pq-composite-sigs](https://datatracker.ietf.org/doc/draft-ietf-lamps-pq-composite-sigs/) (currently at draft 7), and an implementation of the primitive methods for RSA variants.
+.NET 10 introduces new types to support [ietf-lamps-pq-composite-sigs](https://datatracker.ietf.org/doc/draft-ietf-lamps-pq-composite-sigs/) (currently at draft 7), including `CompositeMLDsa` and `CompositeMLDsaAlgorithm` types with implementation of the primitive methods for RSA variants.
 
 ```csharp
 var algorithm = CompositeMLDsaAlgorithm.MLDsa65WithRSA4096Pss;
@@ -446,6 +446,8 @@ Traditional `WebSocket` APIs are low-level and require significant boilerplate: 
 
 `WebSocketStream` addresses these pain points by providing a <xref:System.IO.Stream>-based abstraction over a WebSocket. This enables seamless integration with existing APIs for reading, writing, and parsing data, whether binary or text, and reduces the need for manual plumbing.
 
+`WebSocketStream` enables high-level, familiar APIs for common WebSocket consumption and production patterns. These APIs reduce friction and make advanced scenarios easier to implement.
+
 #### Common usage patterns
 
 Here are a few examples of how `WebSocketStream` simplifies typical `WebSocket` workflows:
@@ -465,8 +467,6 @@ Here are a few examples of how `WebSocketStream` simplifies typical `WebSocket` 
 ##### Write a single message as a stream (for example, binary serialization)
 
 :::code language="csharp" source="snippets/csharp/WebSocketStreamWrite.cs":::
-
-`WebSocketStream` enables high-level, familiar APIs for common WebSocket consumption and production patterns—reducing friction and making advanced scenarios easier to implement.
 
 ## TLS enhancements
 
@@ -503,7 +503,7 @@ DOTNET_SYSTEM_NET_SECURITY_USENETWORKFRAMEWORK=true
 
 #### Notes
 
-- TLS 31.3 applies to <xref:System.Net.Security.SslStream> and APIs built on it (for example, <xref:System.Net.Http.HttpClient>/<xref:System.Net.Http.HttpMessageHandler>).
+- TLS 1.3 applies to <xref:System.Net.Security.SslStream> and APIs built on it (for example, <xref:System.Net.Http.HttpClient>/<xref:System.Net.Http.HttpMessageHandler>).
 - Cipher suites are controlled by macOS via Network.framework.
 - Underlying stream behavior might differ when Network.framework is enabled (for example, buffering, read/write completion, cancellation semantics).
 - Semantics might differ for zero-byte reads. Avoid relying on zero-length reads for detecting data availability.

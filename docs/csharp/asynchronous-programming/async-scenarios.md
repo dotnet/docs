@@ -209,9 +209,9 @@ string result = task.GetAwaiter().GetResult();
 
 This approach:
 
-- Preserves the original exception without wrapping it in an `AggregateException`
-- Blocks the current thread until the task completes
-- Still carries deadlock risk if not used carefully
+- Preserves the original exception without wrapping it in an `AggregateException`.
+- Blocks the current thread until the task completes.
+- Still carries deadlock risk if not used carefully.
 
 #### Use Task.Run for complex scenarios
 
@@ -224,16 +224,15 @@ string result = Task.Run(async () => await GetDataAsync()).GetAwaiter().GetResul
 
 This pattern:
 
-- Executes the asynchronous method on a thread pool thread
-- Can help avoid some deadlock scenarios
-- Adds overhead by scheduling work to the thread pool
+- Executes the asynchronous method on a thread pool thread.
+- Can help avoid some deadlock scenarios.
+- Adds overhead by scheduling work to the thread pool.
 
-#### Avoid Wait() and Result
+#### Use Wait() and Result
 
 These blocking approaches are discouraged:
 
 ```csharp
-// Discouraged: Wraps exceptions in AggregateException
 Task<string> task = GetDataAsync();
 task.Wait();
 string result = task.Result;
@@ -241,15 +240,15 @@ string result = task.Result;
 
 Problems with `Wait()` and `Result`:
 
-- Exceptions are wrapped in `AggregateException`, making error handling more complex
-- Higher deadlock risk
-- Less clear intent in code
+- Exceptions are wrapped in `AggregateException`, making error handling more complex.
+- Higher deadlock risk.
+- Less clear intent in code.
 
 #### Additional considerations
 
-- **Deadlock prevention**: Be especially careful in UI applications or when using a synchronization context
-- **Performance impact**: Blocking threads reduces scalability
-- **Exception handling**: Test error scenarios carefully as exception behavior differs between patterns
+- Deadlock prevention: Be especially careful in UI applications or when using a synchronization context.
+- Performance impact: Blocking threads reduces scalability.
+- Exception handling: Test error scenarios carefully as exception behavior differs between patterns.
 
 For more detailed guidance on the challenges and considerations of synchronous wrappers for asynchronous methods, see [Should I expose synchronous wrappers for asynchronous methods?](https://devblogs.microsoft.com/pfxteam/should-i-expose-synchronous-wrappers-for-asynchronous-methods/).
 

@@ -143,7 +143,7 @@ You can choose between <xref:System.Linq.Enumerable.ToArray%2A?displayProperty=n
 - Use `ToArray()` when you plan to process all tasks together, such as with `Task.WhenAll`. Arrays are efficient for scenarios where the collection size is fixed.
 - Use `ToList()` when you need to dynamically manage tasks, such as with `Task.WhenAny` where you might remove completed tasks from the collection as they finish.
 
-This example uses the `ToArray()` method to perform the query eagerly and store the results in an array. This approach forces the `id => GetUserAsync(id)` statement to run and initiate the task.
+The preceding example uses the `ToArray()` method to perform the query eagerly and store the results in an array. This approach forces the `id => GetUserAsync(id)` statement to run and initiate the task.
 
 ## Review considerations for asynchronous programming
 

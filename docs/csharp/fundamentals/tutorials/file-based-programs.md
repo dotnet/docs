@@ -20,9 +20,13 @@ In this tutorial, you:
 > [!div class="checklist"]
 >
 > * Create a file-based program.
-> * Run the program using the .NET CLI and `#!` directives.
-> * Add features and NuGet packages to the program.
-> * Parse and process command line arguments and standard input.
+> * Add Unix shebang (`#!`) support.
+> * Read command line arguments.
+> * Handle standard input.
+> * Write ASCII art output.
+> * Process command line arguments.
+> * Use parsed command line results.
+> * Test the final application.
 
 You build a file-based program that writes text as ASCII art. The app is contained in a single file, uses NuGet packages that implement some of the core features.
 
@@ -94,7 +98,7 @@ After making these two changes, you can run the program from the command line di
 
 If you prefer, you can remove the extension so you can type `./AsciiArt` instead. You can add the `#!` to your source file even if you use Windows. The Windows command line doesn't support `#!`, but the C# compiler allows that directive in file-based apps on all platforms.
 
-## Process command line arguments
+## Read command line arguments
 
 Now, write all arguments on the command line to the output.
 

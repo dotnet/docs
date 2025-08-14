@@ -113,7 +113,7 @@ private static bool ValidateMLDsaSignature(ReadOnlySpan<byte> data, ReadOnlySpan
 
 The PQC algorithms are available on systems where the system cryptographic libraries are OpenSSL 3.5 (or newer) or Windows CNG with PQC support. Also, the new classes are all marked as [`[Experimental]`](../../../fundamentals/syslib-diagnostics/experimental-overview.md) under diagnostic `SYSLIB5006` until development is complete.
 
-#### ML-DSA enhancements
+#### ML-DSA
 
 The <xref:System.Security.Cryptography.MLDsa> class includes ease-of-use features that simplify common code patterns:
 

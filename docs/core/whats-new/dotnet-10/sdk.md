@@ -80,7 +80,6 @@ To make your tool work this way, add the `any` runtime identifier to your projec
 
 This RuntimeIdentifier is at the 'root' of the platform-compatibility checking, and since it declares support for _any_ platform, the tool that gets packaged will be the most compatible kind of tool - a framework-dependent, platform-agnostic .NET DLL, which requires a compatible .NET Runtime to execute. When you perform a `dotnet pack` to create your tool, you'll see a new package for the `any` RuntimeIdentifier appear alongside the other platform-specific packages and the top-level manifest package.
 
-
 ### CLI introspection with `--cli-schema`
 
 A new `--cli-schema` option is available on all CLI commands. When used, it outputs a JSON representation of the CLI command tree for the invoked command or subcommand. This is useful for tool authors, shell integration, and advanced scripting.

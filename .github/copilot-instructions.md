@@ -40,9 +40,7 @@ To find API doc IDs:
 2. For types: `Value` attribute of `<TypeSignature>` where `Language="DocId"` (omit first 2 characters)
 3. For members: `Value` attribute of `<MemberSignature>` where `Language="DocId"` (omit first 2 characters)
 
-If unsure, use API browser: `https://learn.microsoft.com/api/apibrowser/dotnet/search?api-version=0.2&locale=en-us&search={API_NAME}&$skip=0&$top=5`
-
-Use the `url` value from results for manual links.
+If unsure, use API browser: `https://learn.microsoft.com/api/apibrowser/dotnet/search?api-version=0.2&locale=en-us&search={API_NAME}&$skip=0&$top=5` and then use the `url` value from the results as a manual link.
 
 ## Code Snippets
 For snippets >6 lines:

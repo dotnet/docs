@@ -230,7 +230,7 @@ This pattern:
 
 #### Use Wait() and Result
 
-These blocking approaches are discouraged:
+You can use a blocking approach by calling <xref:System.Threading.Tasks.Task.Wait> and <xref:System.Threading.Tasks.Task`1.Result>. However, this approach is discouraged because it wraps exceptions in <xref:System.AggregateException>.
 
 ```csharp
 Task<string> task = GetDataAsync();

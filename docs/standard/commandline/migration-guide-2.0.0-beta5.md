@@ -150,24 +150,24 @@ In 2.0.0-beta4, it was possible to separate the parsing and invoking of commands
 
 ### Configuration
 
-Before 2.0.0-beta7, it was possible to customize the parsing, but only with some of the public `Parse` methods. There was a `Parser` class that exposed two public constructors: one accepting a `Command` and another accepting a `CommandLineConfiguration`. `CommandLineConfiguration` was immutable, and to create it, you had to use a builder pattern exposed by the `CommandLineBuilder` class. The following changes were made to simplify the API:
+Before 2.0.0-beta5, it was possible to customize the parsing, but only with some of the public `Parse` methods. There was a `Parser` class that exposed two public constructors: one accepting a `Command` and another accepting a `CommandLineConfiguration`. `CommandLineConfiguration` was immutable, and to create it, you had to use a builder pattern exposed by the `CommandLineBuilder` class. The following changes were made to simplify the API:
 
-- `CommandLineConfiguration` was made mutable and `CommandLineBuilder` was removed. Creating a configuration is now as simple as creating an instance of `CommandLineConfiguration` and setting the properties you want to customize. Moreover, creating a new instance of configuration is the equivalent of calling `CommandLineBuilder`'s `UseDefaults` method.
-- Every `Parse` method now accepts an optional `CommandLineConfiguration` parameter that can be used to customize the parsing. When it's not provided, the default configuration is used.
-- `Parser` was renamed to `CommandLineParser` to disambiguate from other parser types to avoid name conflicts. Since it's stateless, it's now a static class with only static methods. It exposes two `Parse` parse methods: one accepting a `IReadOnlyList<string> args` and another accepting a `string args`. The latter uses `CommandLineParser.SplitCommandLine` (also public) to split the command line input into [tokens](syntax.md#tokens) before parsing it.
+- `CommandLineConfiguration` was split into two *mutable* classes (in beta7): <xref:System.CommandLine.ParserConfiguration> and <xref:System.CommandLine.InvocationConfiguration>. Creating an invocation configuration is now as simple as creating an instance of `InvocationConfiguration` and setting the properties you want to customize.
+- Every `Parse` method now accepts an optional <xref:System.CommandLine.ParserConfiguration> parameter that can be used to customize the parsing. When it's not provided, the default configuration is used.
+- To avoid name conflicts, `Parser` was renamed to <xref:Microsoft.CodeAnalysis.CommandLineParser> to disambiguate from other parser types. Since it's stateless, it's now a static class with only static methods. It exposes two `Parse` parse methods: one accepting an `IReadOnlyList<string> args` and another accepting a `string args`. The latter uses `CommandLineParser.SplitCommandLine` (also public) to split the command line input into [tokens](syntax.md#tokens) before parsing it.
 
 `CommandLineBuilderExtensions` was also removed. Here is how you can map its methods to the new APIs:
 
-- `CancelOnProcessTermination` is now a property of `CommandLineConfiguration` called [ProcessTerminationTimeout](how-to-parse-and-invoke.md#process-termination-timeout). It's enabled by default, with a 2s timeout. Set it to `null` to disable it.
-- `EnableDirectives`, `UseEnvironmentVariableDirective`, `UseParseDirective`, and `UseSuggestDirective` were removed. A new [Directive](syntax.md#directives) type was introduced and the [RootCommand](syntax.md#root-command) now exposes `System.CommandLine.RootCommand.Directives` property. You can add, remove, and iterate directives by using this collection. [Suggest directive](syntax.md#suggest-directive) is included by default; you can also use other directives like [DiagramDirective](syntax.md#the-diagram-directive) or `EnvironmentVariablesDirective`.
-- `EnableLegacyDoubleDashBehavior` was removed. All unmatched tokens are now exposed by the [ParseResult.UnmatchedTokens](how-to-parse-and-invoke.md#unmatched-tokens) property.
-- `EnablePosixBundling` was removed. The bundling is now enabled by default, you can disable it by setting the [CommandLineConfiguration.EnableBundling](how-to-configure-the-parser.md#enableposixbundling) property to `false`.
+- `CancelOnProcessTermination` is now a property of <xref:System.CommandLine.InvocationConfiguration> called [ProcessTerminationTimeout](how-to-parse-and-invoke.md#process-termination-timeout). It's enabled by default, with a 2 second timeout. To disable it, set it to `null`.
+- `EnableDirectives`, `UseEnvironmentVariableDirective`, `UseParseDirective`, and `UseSuggestDirective` were removed. A new [Directive](syntax.md#directives) type was introduced and [RootCommand](syntax.md#root-command) now exposes a <xref:System.CommandLine.RootCommand.Directives> property. You can add, remove, and iterate directives by using this collection. [Suggest directive](syntax.md#suggest-directive) is included by default; you can also use other directives like [DiagramDirective](syntax.md#the-diagram-directive) or <xref:System.CommandLine.EnvironmentVariablesDirective>.
+- `EnableLegacyDoubleDashBehavior` was removed. All unmatched tokens are now exposed by the <xref:System.CommandLine.ParseResult.UnmatchedTokens?displayProperty=nameWithType> property. For more information, see [Unmatched tokens](how-to-parse-and-invoke.md#unmatched-tokens).
+- `EnablePosixBundling` was removed. The bundling is now enabled by default, you can disable it by setting the <xref:System.CommandLine.ParserConfiguration.EnablePosixBundling?displayProperty=nameWithType> property to `false`. For more information, see [EnablePosixBundling](how-to-configure-the-parser.md#enableposixbundling).
 - `RegisterWithDotnetSuggest` was removed as it performed an expensive operation, typically during application startup. Now you must register commands with `dotnet suggest` [manually](how-to-enable-tab-completion.md#enable-tab-completion).
-- `UseExceptionHandler` was removed. The default exception handler is now enabled by default, you can disable it by setting the [CommandLineConfiguration.EnableDefaultExceptionHandler](how-to-configure-the-parser.md#enabledefaultexceptionhandler) property to `false`. This is useful when you want to handle exceptions in a custom way, by just wrapping the `Invoke` or `InvokeAsync` methods in a try-catch block.
-- `UseHelp` and `UseVersion` were removed. The help and version are now exposed by the [HelpOption](how-to-customize-help.md#customize-help-output) and [VersionOption](syntax.md#version-option) public types. They are both included by default in the options defined by [RootCommand](syntax.md#root-command).
+- `UseExceptionHandler` was removed. The default exception handler is now enabled by default; you can disable it by setting the <xref:System.CommandLine.InvocationConfiguration.EnableDefaultExceptionHandler?displayProperty=nameWithType> property to `false`. This is useful when you want to handle exceptions in a custom way, by just wrapping the `Invoke` or `InvokeAsync` methods in a try-catch block. For more information, see [EnableDefaultExceptionHandler](how-to-configure-the-parser.md#enabledefaultexceptionhandler).
+- `UseHelp` and `UseVersion` were removed. The help and version are now exposed by the <xref:System.CommandLine.Help.HelpOption> and <xref:System.CommandLine.VersionOption> public types. They are both included by default in the options defined by [RootCommand](syntax.md#root-command). For more information, see [Customize help output](how-to-customize-help.md#customize-help-output) and [Version option](syntax.md#version-option).
 - `UseHelpBuilder` was removed. For more information on how to customize the help output, see [How to customize help in System.CommandLine](how-to-customize-help.md).
 - `AddMiddleware` was removed. It slowed down the application startup, and features can be expressed without it.
-- `UseParseErrorReporting` and `UseTypoCorrections` were removed. The parse errors are now reported by default when invoking `ParseResult`. You can configure it by using the <xref:System.CommandLine.Invocation.ParseErrorAction> action exposed by `ParseResult.Action` property.
+- `UseParseErrorReporting` and `UseTypoCorrections` were removed. The parse errors are now reported by default when invoking `ParseResult`. You can configure it by using the <xref:System.CommandLine.Invocation.ParseErrorAction> action exposed by the <xref:System.CommandLine.ParseResult.Action?displayProperty=nameWithType> property.
 
   ```csharp
   ParseResult result = rootCommand.Parse("myArgs", config);
@@ -254,49 +254,7 @@ System.Runtime
 - System.Threading
 ```
 
-It allowed us to reduce the size of the library by 32% and the size of the following NativeAOT app by 20%:
-
-```csharp
-Option<bool> boolOption = new Option<bool>(new[] { "--bool", "-b" }, "Bool option");
-Option<string> stringOption = new Option<string>(new[] { "--string", "-s" }, "String option");
-
-RootCommand command = new RootCommand
-{
-    boolOption,
-    stringOption
-};
-
-command.SetHandler<bool, string>(Run, boolOption, stringOption);
-
-return new CommandLineBuilder(command).UseDefaults().Build().Invoke(args);
-
-static void Run(bool boolean, string text)
-{
-    Console.WriteLine($"Bool option: {text}");
-    Console.WriteLine($"String option: {boolean}");
-}
-```
-
-```csharp
-Option<bool> boolOption = new Option<bool>("--bool", "-b") { Description = "Bool option" };
-Option<string> stringOption = new Option<string>("--string", "-s") { Description = "String option" };
-
-RootCommand command = new ()
-{
-    boolOption,
-    stringOption,
-};
-
-command.SetAction(parseResult => Run(parseResult.GetValue(boolOption), parseResult.GetValue(stringOption)));
-
-return new CommandLineConfiguration(command).Invoke(args);
-
-static void Run(bool boolean, string text)
-{
-    Console.WriteLine($"Bool option: {text}");
-    Console.WriteLine($"String option: {boolean}");
-}
-```
+The size of the library is reduced (by 32%) and so is the size of NativeAOT apps that use the library.
 
 Simplicity has also improved the performance of the library (it's a side effect of the work, not the main goal of it). The [benchmarks](https://github.com/adamsitnik/commandline-perf/tree/update) show that the parsing and invoking of commands is now faster than in 2.0.0-beta4, especially for large commands with many options and arguments. The performance improvements are visible in both synchronous and asynchronous scenarios.
 

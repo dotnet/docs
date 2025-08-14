@@ -190,7 +190,7 @@ A recommended goal is to achieve complete or near-complete [Referential Transpar
 
 ### Synchronous access to asynchronous operations
 
-In rare scenarios, you might need to block on asynchronous operations when the `await` keyword isn't available throughout your call stack. This situation commonly occurs in legacy codebases or when integrating asynchronous methods into synchronous APIs that can't be changed.
+In scenarios, you might need to block on asynchronous operations when the `await` keyword isn't available throughout your call stack. This situation occurs in legacy codebases or when integrating asynchronous methods into synchronous APIs that can't be changed.
 
 > [!WARNING]
 > Synchronous blocking on asynchronous operations can lead to deadlocks and should be avoided whenever possible. The preferred solution is to use `async`/`await` throughout your call stack.

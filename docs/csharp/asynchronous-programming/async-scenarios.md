@@ -205,7 +205,7 @@ A recommended goal is to achieve complete or near-complete [Referential Transpar
 
 The following code represents the complete example, which is available in the *Program.cs* example file.
 
-:::code language="csharp" source="snippets/async-scenarios/Program.cs":::
+:::code language="csharp" source="snippets/async-scenarios/Program.cs" ID="complete":::
 
 ## Related links
 

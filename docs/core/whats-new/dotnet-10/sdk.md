@@ -63,7 +63,7 @@ For more information about managing .NET tools, see [Manage .NET tools](../../to
 
 The [platform-specific .NET tools](#platform-specific-net-tools) feature is great for making sure tools are optimized for specific platforms that you target ahead-of-time. However, there are times where you won't know all of the platforms that you'd like to target, or sometimes .NET itself will learn how to support a new platform, and you'd like your tool to be runnable there too.
 
-.NET is great at this - the platform at its heart is meant to support this kind of platform-agnostic execution. To make platform-specific .NET tools work this way, you only need to add one thing to your project file: the `any` Runtime Identifier.
+To make your tool work this way, add the `any` runtime identifier to your project file:
 
 ```xml
 <PropertyGroup>
@@ -78,9 +78,7 @@ The [platform-specific .NET tools](#platform-specific-net-tools) feature is grea
 </PropertyGroup>
 ```
 
-This RuntimeIdentifier is at the 'root' of the platform-compatibility checking, and since it declares support for _any_ platform, the tool that gets packaged will be the most compatible kind of tool - a framework-dependent, platform-agnostic .NET dll, which requires a compatible .NET Runtime to execute. When you perform a `dotnet pack` to create your tool, you'll see a new package for the `any` RuntimeIdentifier appear alongside the other platform-specific packages and the top-level manifest package.
-
-This is the exact same kind of tool that you would make in .NET 9 and earlier, but now it fits into the overall goal of enabling platform-specific .NET tools!
+This RuntimeIdentifier is at the 'root' of the platform-compatibility checking, and since it declares support for _any_ platform, the tool that gets packaged will be the most compatible kind of tool - a framework-dependent, platform-agnostic .NET DLL, which requires a compatible .NET Runtime to execute. When you perform a `dotnet pack` to create your tool, you'll see a new package for the `any` RuntimeIdentifier appear alongside the other platform-specific packages and the top-level manifest package.
 
 ### CLI introspection with `--cli-schema`
 

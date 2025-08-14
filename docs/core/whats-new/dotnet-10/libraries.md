@@ -304,7 +304,7 @@ Here is an example of a producer that produces tokens in chunks and a consumer t
 
 :::code language="csharp" source="snippets/csharp/PipeReaderChunks.cs":::
 
-Note that all of this is serialized as JSON in the <xref:System.IO.Pipelines.Pipe> (formatted here for readability):
+All of this is serialized as JSON in the <xref:System.IO.Pipelines.Pipe> (formatted here for readability):
 
 ```json
 [
@@ -432,7 +432,7 @@ A community contribution improved the performance of <xref:System.IO.Compression
 
 ### Launch Windows processes in new process group
 
-For Windows, you can now use <xref:System.Diagnostics.ProcessStartInfo.CreateNewProcessGroup?displayProperty=nameWithType> to launch a process in a separate process group. This allows you to send isolated signals to child processes which could otherwise take down the parent without proper handling. Sending signals is convenient to avoid forceful termination.
+For Windows, you can now use <xref:System.Diagnostics.ProcessStartInfo.CreateNewProcessGroup?displayProperty=nameWithType> to launch a process in a separate process group. This allows you to send isolated signals to child processes that could otherwise take down the parent without proper handling. Sending signals is convenient to avoid forceful termination.
 
 :::code language="csharp" source="snippets/csharp/ProcessGroup.cs":::
 
@@ -440,7 +440,7 @@ For Windows, you can now use <xref:System.Diagnostics.ProcessStartInfo.CreateNew
 
 ### WebSocketStream
 
-.NET 10 introduces `WebSocketStream`, a new API designed to simplify some of the most common—and previously cumbersome—<xref:System.Net.WebSockets.WebSocket> scenarios in .NET.
+.NET 10 introduces `WebSocketStream` <!--<xref:System.Net.WebSockets.WebSocketStream>-->, a new API designed to simplify some of the most common&mdash;and previously cumbersome&mdash;<xref:System.Net.WebSockets.WebSocket> scenarios in .NET.
 
 Traditional `WebSocket` APIs are low-level and require significant boilerplate: handling buffering and framing, reconstructing messages, managing encoding/decoding, and writing custom wrappers to integrate with streams, channels, or other transport abstractions. These complexities make it difficult to use WebSockets as a transport, especially for apps with streaming or text-based protocols, or event-driven handlers.
 
@@ -458,11 +458,11 @@ Here are a few examples of how `WebSocketStream` simplifies typical `WebSocket` 
 
 :::code language="csharp" source="snippets/csharp/WebSocketStreamBinary.cs":::
 
-##### Reading a single message as a stream (for example, JSON deserialization)
+##### Read a single message as a stream (for example, JSON deserialization)
 
 :::code language="csharp" source="snippets/csharp/WebSocketStreamRead.cs":::
 
-##### Writing a single message as a stream (for example, binary serialization)
+##### Write a single message as a stream (for example, binary serialization)
 
 :::code language="csharp" source="snippets/csharp/WebSocketStreamWrite.cs":::
 
@@ -503,9 +503,9 @@ DOTNET_SYSTEM_NET_SECURITY_USENETWORKFRAMEWORK=true
 
 #### Notes
 
-- Applies to <xref:System.Net.Security.SslStream> and APIs built on it (for example, <xref:System.Net.Http.HttpClient>/<xref:System.Net.Http.HttpMessageHandler>).
+- TLS 31.3 applies to <xref:System.Net.Security.SslStream> and APIs built on it (for example, <xref:System.Net.Http.HttpClient>/<xref:System.Net.Http.HttpMessageHandler>).
 - Cipher suites are controlled by macOS via Network.framework.
 - Underlying stream behavior might differ when Network.framework is enabled (for example, buffering, read/write completion, cancellation semantics).
-- Zero-byte reads: semantics might differ. Avoid relying on zero-length reads for detecting data availability.
-- Internationalized domain names (IDN): certain IDN hostnames might be rejected by Network.framework. Prefer ASCII/Punycode (A-label) hostnames or validate names against macOS/Network.framework constraints.
+- Semantics might differ for zero-byte reads. Avoid relying on zero-length reads for detecting data availability.
+- Certain internationalized domain names (IDN) hostnames might be rejected by Network.framework. Prefer ASCII/Punycode (A-label) hostnames or validate names against macOS/Network.framework constraints.
 - If your app relies on specific <xref:System.Net.Security.SslStream> edge-case behavior, validate it under Network.framework.

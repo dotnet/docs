@@ -1,7 +1,7 @@
 ---
 title: "Tutorial: Get started with System.CommandLine"
 description: Learn how to use the System.CommandLine library for command-line apps.
-ms.date: 04/07/2022
+ms.date: 08/13/2025
 ms.topic: tutorial
 no-loc: [System.CommandLine]
 helpviewer_keywords:
@@ -166,7 +166,7 @@ Options:
   --file          The file to read and display on the conso
 ```
 
-<xref:System.CommandLine.RootCommand> by default provides [Help option](how-to-customize-help.md#customize-help-output), [Version option](syntax.md#version-option), and [Suggest directive](syntax.md#suggest-directive). The <xref:System.CommandLine.ParseResult.Invoke?displayProperty=nameWithType> method is responsible for invoking the action of parsed symbol. It could be the action explicitly defined for the command, or the help action defined by `System.CommandLine` for `System.CommandLine.Help.HelpOption`. Moreover, when it detects any parse errors, it prints them to the standard error, prints help to standard output, and returns `1` as the exit code:
+<xref:System.CommandLine.RootCommand> by default provides [Help option](how-to-customize-help.md#customize-help-output), [Version option](syntax.md#version-option), and [Suggest directive](syntax.md#suggest-directive). The <xref:System.CommandLine.ParseResult.Invoke(System.CommandLine.InvocationConfiguration)?displayProperty=nameWithType> method is responsible for invoking the action of parsed symbol. It could be the action explicitly defined for the command, or the help action defined by `System.CommandLine` for `System.CommandLine.Help.HelpOption`. Moreover, when it detects any parse errors, it prints them to the standard error, prints help to standard output, and returns `1` as the exit code:
 
 ```console
 scl --invalid bla

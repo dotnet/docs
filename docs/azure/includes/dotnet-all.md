@@ -1,6 +1,6 @@
 | Name | Package | Docs | Source |
 | ---- | ------- | ---- | ------ |
-| AI Agents Persistent | NuGet [1.1.0](https://www.nuget.org/packages/Azure.AI.Agents.Persistent/1.1.0)<br>NuGet [1.2.0-beta.1](https://www.nuget.org/packages/Azure.AI.Agents.Persistent/1.2.0-beta.1) | [docs](/dotnet/api/overview/azure/AI.Agents.Persistent-readme) | GitHub [1.1.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.Agents.Persistent_1.1.0/sdk/ai/Azure.AI.Agents.Persistent/)<br>GitHub [1.2.0-beta.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.Agents.Persistent_1.2.0-beta.1/sdk/ai/Azure.AI.Agents.Persistent/) |
+| AI Agents Persistent | NuGet [1.1.0](https://www.nuget.org/packages/Azure.AI.Agents.Persistent/1.1.0)<br>NuGet [1.2.0-beta.2](https://www.nuget.org/packages/Azure.AI.Agents.Persistent/1.2.0-beta.2) | [docs](/dotnet/api/overview/azure/AI.Agents.Persistent-readme) | GitHub [1.1.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.Agents.Persistent_1.1.0/sdk/ai/Azure.AI.Agents.Persistent/)<br>GitHub [1.2.0-beta.2](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.Agents.Persistent_1.2.0-beta.2/sdk/ai/Azure.AI.Agents.Persistent/) |
 | AI Foundry | NuGet [1.0.0-beta.10](https://www.nuget.org/packages/Azure.AI.Projects/1.0.0-beta.10) | [docs](/dotnet/api/overview/azure/AI.Projects-readme?view=azure-dotnet-preview&amp;preserve-view=true) | GitHub [1.0.0-beta.10](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.Projects_1.0.0-beta.10/sdk/ai/Azure.AI.Projects/) |
 | AI Model Inference | NuGet [1.0.0-beta.5](https://www.nuget.org/packages/Azure.AI.Inference/1.0.0-beta.5) | [docs](/dotnet/api/overview/azure/AI.Inference-readme?view=azure-dotnet-preview&amp;preserve-view=true) | GitHub [1.0.0-beta.5](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.Inference_1.0.0-beta.5/sdk/ai/Azure.AI.Inference/) |
 | Anomaly Detector | NuGet [3.0.0-preview.7](https://www.nuget.org/packages/Azure.AI.AnomalyDetector/3.0.0-preview.7) | [docs](/dotnet/api/overview/azure/AI.AnomalyDetector-readme?view=azure-dotnet-preview&amp;preserve-view=true) | GitHub [3.0.0-preview.7](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.AnomalyDetector_3.0.0-preview.7/sdk/anomalydetector/Azure.AI.AnomalyDetector/) |
@@ -400,8 +400,8 @@
 | Functions Worker Extension MySQL | NuGet [1.0.129](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.MySql/1.0.129) |  |  |
 | HTTP ASPNETCore Analyzers | NuGet [1.0.4](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Http.AspNetCore.Analyzers/1.0.4) |  |  |
 | IoT Operations MQTT | NuGet [0.11.0](https://www.nuget.org/packages/Azure.Iot.Operations.Mqtt/0.11.0) |  |  |
-| IoT Operations Protocol | NuGet [0.12.0](https://www.nuget.org/packages/Azure.Iot.Operations.Protocol/0.12.0) |  |  |
-| IoT Operations Services | NuGet [0.13.0](https://www.nuget.org/packages/Azure.Iot.Operations.Services/0.13.0) |  |  |
+| IoT Operations Protocol | NuGet [0.12.1](https://www.nuget.org/packages/Azure.Iot.Operations.Protocol/0.12.1) |  |  |
+| IoT Operations Services | NuGet [0.14.0](https://www.nuget.org/packages/Azure.Iot.Operations.Services/0.14.0) |  |  |
 | Item Templates NetCore | NuGet [4.0.5212](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ItemTemplates.NetCore/4.0.5212) |  |  |
 | Item Templates NetFx | NuGet [4.0.5212](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ItemTemplates.NetFx/4.0.5212) |  |  |
 | Microsoft.Azure.DataFactoryTestingFramework.Expressions | NuGet [0.2.7](https://www.nuget.org/packages/Microsoft.Azure.DataFactoryTestingFramework.Expressions/0.2.7) |  |  |
@@ -413,7 +413,7 @@
 | Speech Extension ONNX Runtime | NuGet [1.45.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.ONNX.Runtime/1.45.0) |  |  |
 | Speech Extension Telemetry | NuGet [1.45.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Telemetry/1.45.0) |  |  |
 | System Net Client Model | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/System.Net.ClientModel/1.0.0-beta.1) |  |  |
-| Unknown Display Name | NuGet [0.11.0](https://www.nuget.org/packages/Azure.Iot.Operations.Connector/0.11.0) |  |  |
+| Unknown Display Name | NuGet [0.12.0](https://www.nuget.org/packages/Azure.Iot.Operations.Connector/0.12.0) |  |  |
 | Unknown Display Name | NuGet [1.1.2-preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.AzureCosmosDb.Mongo/1.1.2-preview) |  |  |
 | Unknown Display Name | NuGet [1.45.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.MAS/1.45.0) |  |  |
 | Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Extensions.Caching.Postgres/1.0.0) |  |  |
@@ -438,7 +438,7 @@
 | Common | NuGet [2.2.1](https://www.nuget.org/packages/Microsoft.Azure.Common/2.2.1) |  |  |
 | Common - Dependencies | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Common.Dependencies/1.0.0) |  |  |
 | Computer Vision | NuGet [7.0.1](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Vision.ComputerVision/7.0.1) |  | GitHub [7.0.1](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.Vision.ComputerVision_6.0.0-preview.1/sdk/cognitiveservices/Vision.ComputerVision) |
-| Cosmos DB | NuGet [3.47.0](https://www.nuget.org/packages/Microsoft.Azure.Cosmos/3.47.0)<br>NuGet [3.53.0-preview.0](https://www.nuget.org/packages/Microsoft.Azure.Cosmos/3.53.0-preview.0) | [docs](/dotnet/api/overview/azure/cosmosdb) | GitHub [3.47.0](https://github.com/Azure/azure-cosmos-dotnet-v3/tree/3.12.0/Microsoft.Azure.Cosmos) |
+| Cosmos DB | NuGet [3.47.0](https://www.nuget.org/packages/Microsoft.Azure.Cosmos/3.47.0)<br>NuGet [3.54.0-preview.0](https://www.nuget.org/packages/Microsoft.Azure.Cosmos/3.54.0-preview.0) | [docs](/dotnet/api/overview/azure/cosmosdb) | GitHub [3.47.0](https://github.com/Azure/azure-cosmos-dotnet-v3/tree/3.12.0/Microsoft.Azure.Cosmos) |
 | Custom Vision Prediction | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction/2.0.0) |  | GitHub [2.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction_2.0.0/sdk/cognitiveservices/Vision.CustomVision.Prediction) |
 | Custom Vision Training | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Training/2.0.0)<br>NuGet [2.1.0-preview](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Training/2.1.0-preview) |  | GitHub [2.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Training_2.0.0/sdk/cognitiveservices/Vision.CustomVision.Training) |
 | Data Lake Analytics | NuGet [1.4.211011](https://www.nuget.org/packages/Microsoft.Azure.DataLake.USQL.SDK/1.4.211011) |  |  |
@@ -508,8 +508,8 @@
 | Functions extension for Azure SQL and SQL Server | NuGet [3.1.512](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Sql/3.1.512) |  |  |
 | Functions extension for Cosmos DB | NuGet [4.9.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.CosmosDB/4.9.0) |  | GitHub [4.9.0](https://github.com/Azure/azure-webjobs-sdk-extensions/tree/cosmos-v3.0.7/src/WebJobs.Extensions.CosmosDB) |
 | Functions extension for DocumentDB | NuGet [1.3.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.DocumentDB/1.3.0) |  | GitHub [1.3.0](https://github.com/Azure/azure-webjobs-sdk-extensions) |
-| Functions extension for Durable Task Framework | NuGet [3.4.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.DurableTask/3.4.0) | [docs](/dotnet/api/overview/azure/functions) | GitHub [3.4.0](https://github.com/Azure/azure-functions-durable-extension/tree/v2.2.2/src/WebJobs.Extensions.DurableTask) |
-| Functions extension for Durable Task Framework - isolated worker | NuGet [1.7.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.DurableTask/1.7.0) |  |  |
+| Functions extension for Durable Task Framework | NuGet [3.4.1](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.DurableTask/3.4.1) | [docs](/dotnet/api/overview/azure/functions) | GitHub [3.4.1](https://github.com/Azure/azure-functions-durable-extension/tree/v2.2.2/src/WebJobs.Extensions.DurableTask) |
+| Functions extension for Durable Task Framework - isolated worker | NuGet [1.7.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.DurableTask/1.7.1) |  |  |
 | Functions extension for HTTP | NuGet [3.2.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Http/3.2.0) |  | GitHub [3.2.0](https://github.com/Azure/azure-webjobs-sdk-extensions/tree/v3.0.2/src/WebJobs.Extensions.Http) |
 | Functions extension for IoT Edge | NuGet [1.0.7](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.EdgeHub/1.0.7) |  | GitHub [1.0.7](https://github.com/Azure/iotedge/tree/1.0.7/edge-hub) |
 | Functions extension for Kafka | NuGet [4.1.3](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Kafka/4.1.3) |  | GitHub [4.1.3](https://github.com/Azure/azure-functions-kafka-extension/tree/3.0.0/src/Microsoft.Azure.WebJobs.Extensions.Kafka) |

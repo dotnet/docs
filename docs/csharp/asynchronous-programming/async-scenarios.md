@@ -130,7 +130,9 @@ You can write this code more succinctly by using LINQ:
 
 :::code language="csharp" source="snippets/async-scenarios/Program.cs" ID="GetUsersForDatasetByLINQ":::
 
-Here's an example that demonstrates using `ToList()` with `Task.WhenAny` to process tasks as they complete:
+Although you write less code by using LINQ, exercise caution when mixing LINQ with asynchronous code. LINQ uses deferred (or lazy) execution, which means that without immediate evaluation, async calls don't happen until the sequence is enumerated.
+
+The previous example is correct and safe, because it uses the <xref:System.Linq.Enumerable.ToArray%2A?displayProperty=nameWithType> method to immediately evaluate the LINQ query and store the tasks in an array. This approach ensures the `id => GetUserAsync(id)` calls execute immediately and all tasks start concurrently, just like the `foreach` loop approach. Always use <xref:System.Linq.Enumerable.ToArray%2A?displayProperty=nameWithType> or <xref:System.Linq.Enumerable.ToList%2A?displayProperty=nameWithType> when creating tasks with LINQ to ensure immediate execution and concurrent task execution. Here's an example that demonstrates using `ToList()` with `Task.WhenAny` to process tasks as they complete:
 
 :::code language="csharp" source="snippets/async-scenarios/Program.cs" ID="ProcessTasksAsTheyComplete":::
 
@@ -142,8 +144,6 @@ You can choose between <xref:System.Linq.Enumerable.ToArray%2A?displayProperty=n
 
 - Use `ToArray()` when you plan to process all tasks together, such as with `Task.WhenAll`. Arrays are efficient for scenarios where the collection size is fixed.
 - Use `ToList()` when you need to dynamically manage tasks, such as with `Task.WhenAny` where you might remove completed tasks from the collection as they finish.
-
-The preceding example uses the `ToArray()` method to perform the query eagerly and store the results in an array. This approach forces the `id => GetUserAsync(id)` statement to run and initiate the task.
 
 ## Review considerations for asynchronous programming
 

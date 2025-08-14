@@ -24,6 +24,8 @@ The following illustration depicts two different quantifier operations on two di
 
 The following example uses the `All` to find students that scored above 70 on all exams.
 
+[!INCLUDE [Common Datasources reference](../includes/common-data-sources-reference.md)]
+
 :::code language="csharp" source="./snippets/standard-query-operators/QuantifierExamples.cs" id="AllQuantifier":::
   
 ## Any

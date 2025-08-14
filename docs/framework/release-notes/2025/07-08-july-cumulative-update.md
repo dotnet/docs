@@ -45,11 +45,11 @@ This release contains no known issues.
 | **Windows 11, version 22H2 and Windows 11, version 23H2** | |
 | .NET Framework 3.5, 4.8.1 | [5056580](https://support.microsoft.com/kb/5056580) |
 | **Microsoft server operating system, version 22H2** | **[5062159](https://support.microsoft.com/kb/5062159)** |
-| .NET Framework 3.5, 4.8 | [5055169](https://support.microsoft.com/kb/5055169) |
-| .NET Framework 3.5, 4.8.1 | [5054693](https://support.microsoft.com/kb/5054693) |
+| .NET Framework 3.5, 4.8 | [5062063](https://support.microsoft.com/kb/5062063) |
+| .NET Framework 3.5, 4.8.1 | [5062061](https://support.microsoft.com/kb/5062061) |
 | **Microsoft server operating system, version 21H2** | **[5062159](https://support.microsoft.com/kb/5062159)** |
 | .NET Framework 3.5, 4.8 | [5062063](https://support.microsoft.com/kb/5062063) |
-| .NET Framework 3.5, 4.8.1 | [5054693](https://support.microsoft.com/kb/5054693) |
+| .NET Framework 3.5, 4.8.1 | [5062061](https://support.microsoft.com/kb/5062061) |
 | **Windows 10, version 22H2** | **[5062154](https://support.microsoft.com/kb/5062154)** |
 | .NET Framework 3.5, 4.8 | [5056577](https://support.microsoft.com/kb/5056577) |
 | .NET Framework 3.5, 4.8.1 | [5056578](https://support.microsoft.com/kb/5056578) |

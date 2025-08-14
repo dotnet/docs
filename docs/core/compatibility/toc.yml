@@ -54,8 +54,6 @@ items:
                 href: core-libraries/10.0/sigterm-signal-handler.md
               - name: System.Linq.AsyncEnumerable included in core libraries
                 href: core-libraries/10.0/asyncenumerable.md
-              - name: System.Drawing OutOfMemoryException changed to ExternalException
-                href: core-libraries/10.0/system-drawing-outofmemory-externalexception.md
               - name: YMM embedded rounding removed from AVX10.2
                 href: core-libraries/10.0/ymm-embedded-rounding.md
           - name: Cryptography
@@ -138,6 +136,8 @@ items:
                 href: windows-forms/10.0/treeview-text-location.md
               - name: StatusStrip uses System RenderMode by default
                 href: windows-forms/10.0/statusstrip-renderer.md
+              - name: System.Drawing OutOfMemoryException changed to ExternalException
+                href: windows-forms/10.0/system-drawing-outofmemory-externalexception.md
           - name: WPF
             items:
               - name: Incorrect usage of DynamicResource causes application crash

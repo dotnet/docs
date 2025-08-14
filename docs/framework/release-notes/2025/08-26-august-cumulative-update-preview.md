@@ -1,6 +1,6 @@
 ---
-title: April 2025 cumulative update preview
-description: Learn about the improvements in the .NET Framework April 2025 cumulative update preview.
+title: August 2025 cumulative update preview
+description: Learn about the improvements in the .NET Framework August 2025 cumulative update preview.
 ms.date: 08/26/2025
 ---
 # August 2025 cumulative update preview

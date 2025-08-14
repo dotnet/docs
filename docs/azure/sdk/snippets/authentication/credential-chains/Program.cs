@@ -92,8 +92,10 @@ credential = new DefaultAzureCredential(
         ExcludeEnvironmentCredential = true,
         ExcludeWorkloadIdentityCredential = true,
         ExcludeManagedIdentityCredential = true,
+        ExcludeVisualStudioCodeCredential = true,
         ExcludeAzurePowerShellCredential = true,
         ExcludeAzureDeveloperCliCredential = true,
+        ExcludeBrokerCredential = true,
     });
 #endregion
 

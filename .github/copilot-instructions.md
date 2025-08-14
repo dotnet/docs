@@ -42,4 +42,6 @@ If you're assigned a GitHub issue that's labeled "breaking-change", include the 
 
 If you include a code snippet that's more than 6 lines long, put it in a separate .cs file in a folder named "snippets" in the same folder as the document. Within the "snippets" folder, add a new directory with the name of the document. For example, if the document is named "my-doc.md", create a folder named "snippets/my-doc" folder. Also add a simple .csproj file to the same directory that targets the latest version of .NET. It can be a library or executable project.
 
+When you add code, use code comments sparingly because they don't get localized. You can use them to briefly clarify code-specific details (such as logic, parameters, or edge cases). Put any critical information and context in the markdown text.
+
 If you're adding a new Markdown file, it should be named in all lowercase with hyphens separating words. Also, omit any filler words such as "the" or "a" from the file name.

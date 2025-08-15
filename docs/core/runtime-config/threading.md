@@ -33,7 +33,7 @@ This article details the settings you can use to configure threading in .NET.
 
 ## Set the size of stack for VM-created threads
 
-- The default size of stack is dictated by VM and OS policies.
+- The default stack size is dictated by .NET and OS policies. The default stack size for .NET apps is 1.5 MB on Windows and macOS, and 8 MB on Linux. The default stack size when .NET runtime is hosted (for example, COM components) is dictated by the hosting process.
 - This setting allows overriding the default.
 - The specified size should be between 64 kB and 2 GB and a multiple of the natural allocation granularity of the OS.
 

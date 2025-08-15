@@ -34,11 +34,11 @@ The `Program` class declared by the "Hello, World" program has a single member, 
 > [!TIP]
 > The examples in this article give you a first look at C# code. Some samples might show elements of C# that you're not familiar with. When you're ready to learn C#, start with our [beginner tutorials](./tutorials/index.md), or dive into the links in each section. If you're experienced in [Java](./tips-for-java-developers.md), [JavaScript](./tips-for-javascript-developers.md), [TypeScript](./tips-for-javascript-developers.md), or [Python](./tips-for-python-developers.md), read our tips to help you find the information you need to quickly learn C#.
 
-## File based programs
+## File-based apps
 
 C# is a *compiled* language. In most C# programs, you use the [`dotnet build`](../../core/tools/dotnet-build.md) command to compile a group of source files into a binary package. Then, you use the [`dotnet run`](../../core/tools/dotnet-run.md) command to run the program. (You can simplify this process because `dotnet run` compiles the program before running it if necessary.) These tools support a rich language of configuration options and command-line switches. The `dotnet` command line interface (CLI), which is included in the .NET SDK, provides many [tools](../../core/tools/index.md) to generate and modify C# files.
 
-Beginning with C# 14 and .NET 10, you can create *file based programs*, which simplifies building and running C# programs. You use the `dotnet run` command to run a program contained in a single `*.cs` file. For example, if the following code is stored in a file named `hello-world.cs`, you can run it by typing `dotnet run hello-world.cs`:
+Beginning with C# 14 and .NET 10, you can create *file-based apps*, which simplifies building and running C# programs. You use the `dotnet run` command to run a program contained in a single `*.cs` file. For example, if the following code is stored in a file named `hello-world.cs`, you can run it by typing `dotnet run hello-world.cs`:
 
 :::code language="csharp" source="./snippets/file-based-programs/hello-world.cs":::
 
@@ -48,7 +48,7 @@ The first line of the program contains the `#!` sequence (shebang) for unix shel
 ./hello-world.cs
 ```
 
-The source for these programs must be a single file, but otherwise all C# syntax is valid. You can use file based programs for small command-line utilities, prototypes, or other experiments.
+The source for these programs must be a single file, but otherwise all C# syntax is valid. You can use file-based apps for small command-line utilities, prototypes, or other experiments.
 
 ## Familiar C# features
 

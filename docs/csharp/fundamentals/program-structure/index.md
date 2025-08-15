@@ -22,7 +22,7 @@ In that case the program starts in the opening brace of `Main` method, which is 
 
 C# is a *compiled* language. In most C# programs, you use the [`dotnet build`](../../../core/tools/dotnet-build.md) command to compile a group of source files into a binary package. Then, you use the [`dotnet run`](../../../core/tools/dotnet-run.md) command to run the program. (You can simplify this process because `dotnet run` compiles the program before running it if necessary.) These tools support a rich language of configuration options and command-line switches. The `dotnet` command line interface (CLI), which is included in the .NET SDK, provides many [tools](../../../core/tools/index.md) to generate and modify C# files.  
 
-Beginning with C# 14 and .NET 10, you can create *file based programs*, which simplifies building and running C# programs. You use the `dotnet run` command to run a program contained in a single `*.cs` file. For example, if the following snippet is stored in a file named `hello-world.cs`, you can run it by typing `dotnet run hello-world.cs`:
+Beginning with C# 14 and .NET 10, you can create *file-based apps*, which simplifies building and running C# programs. You use the `dotnet run` command to run a program contained in a single `*.cs` file. For example, if the following snippet is stored in a file named `hello-world.cs`, you can run it by typing `dotnet run hello-world.cs`:
 
 :::code language="csharp" source="./snippets/file-based-program/hello-world.cs":::
 
@@ -32,7 +32,7 @@ The first line of the program contains the `#!` sequence for Unix shells. The lo
 ./hello-world.cs
 ```
 
-The source for these programs must be a single file, but otherwise all C# syntax is valid. You can use file based programs for small command-line utilities, prototypes, or other experiments. File based programs allow [preprocessor directives](../../language-reference/preprocessor-directives.md#file-based-programs) that configure the build system.
+The source for these programs must be a single file, but otherwise all C# syntax is valid. You can use file-based apps for small command-line utilities, prototypes, or other experiments. file-based apps allow [preprocessor directives](../../language-reference/preprocessor-directives.md#file-based-apps) that configure the build system.
 
 ## Expressions and statements
 

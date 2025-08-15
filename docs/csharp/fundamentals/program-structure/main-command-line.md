@@ -24,7 +24,7 @@ You can also use top-level statements in one file as the entry point for your ap
 
 :::code language="csharp" source="snippets/top-level-statements-1/Program.cs":::
 
-Beginning with C# 14, programs can be [*file based programs*](./index.md#building-and-running-c-programs), where a single file contains the program. You run *file based programs* with the command `dotnet run <file.cs>`, or using the `#!/usr/local/share/dotnet/dotnet run` directive as the first line (unix shells only).
+Beginning with C# 14, programs can be [*file-based apps*](./index.md#building-and-running-c-programs), where a single file contains the program. You run *file-based apps* with the command `dotnet run <file.cs>`, or using the `#!/usr/local/share/dotnet/dotnet run` directive as the first line (unix shells only).
 
 ## Overview
 

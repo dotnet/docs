@@ -57,6 +57,8 @@ The following example demonstrates use of a `with` expression to copy an immutab
 
 :::code language="csharp" source="./snippets/records/ImmutableRecord.cs" id="ImmutableRecord":::
 
+In the preceding examples, all properties are independent. None are computed from other properties. A `with` expression first copies the existing record instance, then modifies any properties or fields specified in the `with` expression. Computed properties in `record` types should be computed on access, not initialized when the instance is created. Otherwise, a property could return the computed value based on the original instance, not the modified copy. If you must initialize a computed property rather than compute on access, you should consider a [`class`](./classes.md) instead of a record.
+
 For more information, see [Records (C# reference)](../../language-reference/builtin-types/record.md).
   
 ## C# Language Specification

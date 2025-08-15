@@ -32,6 +32,9 @@ Any record class type has the *copy constructor*. A *copy constructor* is a cons
 
 You can't customize the copy semantics for structure types.
 
+> [!IMPORTANT]
+>In the preceding examples, all properties are independent. None are computed from other properties. A `with` expression first copies the existing record instance, then modifies any properties or fields specified in the `with` expression. Computed properties in `record` types should be computed on access, not initialized when the instance is created. Otherwise, a property could return the computed value based on the original instance, not the modified copy. See the language reference article on [`record` types](../builtin-types/record.md#nondestructive-mutation) for more details.
+
 ## C# language specification
 
 For more information, see the following sections of the [records feature proposal note](~/_csharplang/proposals/csharp-9.0/records.md):

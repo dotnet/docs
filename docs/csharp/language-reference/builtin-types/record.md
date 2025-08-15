@@ -146,6 +146,27 @@ If you need different copying behavior, you can write your own copy constructor 
 
 You can't override the clone method, and you can't create a member named `Clone` in any record type. The actual name of the clone method is compiler-generated.
 
+> [!IMPORTANT]
+>In the preceding examples, all properties are independent. None are computed from other properties. A `with` expression first copies the existing record instance, then modifies any properties or fields specified in the `with` expression. Computed properties in `record` types should be computed on access, not initialized when the instance is created. Otherwise, a property could return the computed value based on the original instance, not the modified copy.
+
+You ensure correctness on computed properties by computing the value on access, as shown in the following declaration:
+
+:::code language="csharp" source="snippets/shared/RecordType.cs" id="Wither-Computed":::
+
+The preceding record type computes the `Distance` when it's accessed, as shown in the following example:
+
+:::code language="csharp" source="snippets/shared/RecordType.cs" id="Wither-Computed-usage":::
+
+Contrast that with the following declaration, where the `Distance` property is computed and cached as part of the initialization of a new instance:
+
+:::code language="csharp" source="snippets/shared/RecordType.cs" id="Wither-Init":::
+
+Because `Distance` is computed as part of initialization, the value is computed and cached before the `with` expression changes the value of `Y` in the copy. The result is that the distance is incorrect:
+
+:::code language="csharp" source="snippets/shared/RecordType.cs" id="Wither-Init-usage":::
+
+The `Distance` computation isn't expensive to compute on each access. However, some computed properties may require access to more data or more extensive computation. In those cases, instead of a record, use a `class` type and compute the cached value when one of the components changes value.
+
 ## Built-in formatting for display
 
 Record types have a compiler-generated <xref:System.Object.ToString%2A> method that displays the names and values of public properties and fields. The `ToString` method returns a string of the following format:

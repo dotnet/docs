@@ -2,6 +2,7 @@
 title: Azure security for cloud-native apps
 description: Architecting Cloud Native .NET Apps for Azure | Azure Security for Cloud Native Apps
 ms.date: 04/06/2022
+ms.custom: sfi-image-nochange
 ---
 
 # Azure security for cloud-native apps

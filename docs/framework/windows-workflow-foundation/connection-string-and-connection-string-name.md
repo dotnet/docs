@@ -3,6 +3,7 @@ description: "Learn more about: Connection String and Connection String Name"
 title: "Connection String and Connection String Name"
 ms.date: "03/30/2017"
 ms.topic: "reference"
+ms.custom: sfi-ropc-nochange
 ---
 # Connection String and Connection String Name
 

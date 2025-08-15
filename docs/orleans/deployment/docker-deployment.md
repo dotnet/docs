@@ -3,7 +3,9 @@ title: Docker deployment
 description: Learn how to deploy Orleans apps with Docker.
 ms.date: 05/23/2025
 ms.topic: how-to
-ms.custom: devops
+ms.custom:
+  - devops
+  - sfi-ropc-nochange
 ---
 
 # Docker deployment

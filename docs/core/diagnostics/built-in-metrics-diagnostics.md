@@ -87,7 +87,7 @@ The instrument is only available on a system running on containers both on Windo
 | ---- | --------------- | ----------- | ----------- |
 | `container.cpu.limit.utilization` | <xref:System.Diagnostics.Metrics.ObservableGauge`1> | `1` | The CPU consumption of the running containerized application relative to resource limit in range `[0, 1]`. |
 
-Available starting in: .NET 8.8.0.
+Available starting in `Microsoft.Extensions.Diagnostics.ResourceMonitoring` 8.8.0.
 
 ##### Metric: `container.cpu.request.utilization`
 
@@ -97,7 +97,7 @@ The instrument is only available on a system running on containers on Linux.
 | ---- | --------------- | ----------- | ----------- |
 | `container.cpu.request.utilization` | <xref:System.Diagnostics.Metrics.ObservableGauge`1> | `1` | The CPU consumption of the running containerized application relative to resource request in range `[0, 1]`. |
 
-Available starting in: .NET 8.8.0.
+Available starting in `Microsoft.Extensions.Diagnostics.ResourceMonitoring` 8.8.0.
 
 ##### Metric: `container.cpu.time`
 
@@ -107,7 +107,7 @@ The instrument is only available on a system running on a container either on Wi
 | ---- | --------------- | ----------- | ----------- |
 | `container.cpu.time` | <xref:System.Diagnostics.Metrics.ObservableCounter`1> | `s` | CPU time used by the container. |
 
-Available starting in: .NET 9.
+Available starting in `Microsoft.Extensions.Diagnostics.ResourceMonitoring` 9.8.0.
 
 ##### Metric: `container.memory.limit.utilization`
 
@@ -117,7 +117,7 @@ The instrument is only available on a system running on containers both on Windo
 | ---- | --------------- | ----------- | ----------- |
 | `container.memory.limit.utilization` | <xref:System.Diagnostics.Metrics.ObservableGauge`1> | `1` | The memory consumption of the running containerized application relative to resource limit in range `[0, 1]`. |
 
-Available starting in: .NET 8.
+Available starting in `Microsoft.Extensions.Diagnostics.ResourceMonitoring` 8.8.0.
 
 ##### Metric: `container.memory.usage`
 
@@ -127,7 +127,7 @@ The instrument is only available on a system running on containers either on Win
 | ---- | --------------- | ----------- | ----------- |
 | `container.memory.usage` | <xref:System.Diagnostics.Metrics.<xref:System.Diagnostics.Metrics.ObservableUpDownCounter`1> | `By` | Memory usage of all processes in the container measured in bytes. |
 
-Available starting in: .NET 9.
+Available starting in `Microsoft.Extensions.Diagnostics.ResourceMonitoring` 9.8.0.
 
 ##### Metric: `process.cpu.utilization`
 

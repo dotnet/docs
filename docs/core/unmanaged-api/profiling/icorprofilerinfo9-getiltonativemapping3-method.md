@@ -11,7 +11,6 @@ api_location:
 api_type:
   - "COM"
 author: "davmason"
-ms.author: "davmason"
 ---
 # ICorProfilerInfo9::GetILToNativeMapping3 method
 
@@ -52,7 +51,7 @@ When tiered compilation is enabled, a method may have more than one native code 
 
 **Library:** CorGuids.lib
 
-**.NET Framework Versions:** Available since .NET Core 2.1
+**.NET versions:** Available since .NET Core 2.1
 
 ## See also
 

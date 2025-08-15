@@ -95,6 +95,10 @@ Specifies the locations that should be considered when searching for a compatibl
 
 These paths are searched in the order they're defined and the first [matching](#matching-rules) SDK is used.
 
+This feature enables using local SDK installations (such as SDKs relative to a repository root or placed in a custom folder) that aren't installed globally on the system.
+
+> The "paths" feature only works when using commands that engage the .NET SDK, such as `dotnet run`. It does NOT affect scenarios such as running the native apphost launcher (`app.exe`), running with `dotnet app.dll`, or running with `dotnet exec app.dll`. To use the "paths" feature, you must use SDK commands like `dotnet run`.
+
 #### errorMessage
 
 - Type: `string`

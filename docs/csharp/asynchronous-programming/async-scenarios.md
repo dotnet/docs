@@ -130,7 +130,27 @@ You can write this code more succinctly by using LINQ:
 
 :::code language="csharp" source="snippets/async-scenarios/Program.cs" ID="GetUsersForDatasetByLINQ":::
 
-Although you write less code by using LINQ, exercise caution when mixing LINQ with asynchronous code. LINQ uses deferred (or lazy) execution. Asynchronous calls don't happen immediately as they do in a `foreach` loop, unless you force the generated sequence to iterate with a call to the `.ToList()` or `.ToArray()` method. This example uses the <xref:System.Linq.Enumerable.ToArray%2A?displayProperty=nameWithType> method to perform the query eagerly and store the results in an array. This approach forces the `id => GetUserAsync(id)` statement to run and initiate the task.
+Although you write less code by using LINQ, exercise caution when mixing LINQ with asynchronous code. LINQ uses deferred (or lazy) execution, which means that without immediate evaluation, async calls don't happen until the sequence is enumerated.
+
+The previous example is correct and safe, because it uses the <xref:System.Linq.Enumerable.ToArray%2A?displayProperty=nameWithType> method to immediately evaluate the LINQ query and store the tasks in an array. This approach ensures the `id => GetUserAsync(id)` calls execute immediately and all tasks start concurrently, just like the `foreach` loop approach.
+
+**Problematic approach** (without immediate evaluation):
+
+```csharp
+// DON'T do this - tasks won't start until enumerated.
+var getUserTasks = userIds.Select(id => GetUserAsync(id)); // No .ToArray()!
+return await Task.WhenAll(getUserTasks); // Tasks start here.
+```
+
+**Recommended approach**:
+
+```csharp
+// DO this - tasks start immediately.
+var getUserTasks = userIds.Select(id => GetUserAsync(id)).ToArray();
+return await Task.WhenAll(getUserTasks);
+```
+
+Always use <xref:System.Linq.Enumerable.ToArray%2A?displayProperty=nameWithType> or <xref:System.Linq.Enumerable.ToList%2A?displayProperty=nameWithType> when creating tasks with LINQ to ensure immediate execution and concurrent task execution.
 
 ## Review considerations for asynchronous programming
 
@@ -187,6 +207,74 @@ Avoid writing code that depends on the state of global objects or the execution 
 * (Bonus) Works well with dependency injection in code
 
 A recommended goal is to achieve complete or near-complete [Referential Transparency](https://en.wikipedia.org/wiki/Referential_transparency) in your code. This approach results in a predictable, testable, and maintainable codebase.
+
+### Synchronous access to asynchronous operations
+
+In scenarios, you might need to block on asynchronous operations when the `await` keyword isn't available throughout your call stack. This situation occurs in legacy codebases or when integrating asynchronous methods into synchronous APIs that can't be changed.
+
+> [!WARNING]
+> Synchronous blocking on asynchronous operations can lead to deadlocks and should be avoided whenever possible. The preferred solution is to use `async`/`await` throughout your call stack.
+
+When you must block synchronously on a `Task`, here are the available approaches, listed from most to least preferred:
+
+- [Use GetAwaiter().GetResult()](#use-getawaitergetresult)
+- [Use Task.Run for complex scenarios](#use-taskrun-for-complex-scenarios)  
+- [Use Wait() and Result](#use-wait-and-result)
+
+#### Use GetAwaiter().GetResult()
+
+The `GetAwaiter().GetResult()` pattern is generally the preferred approach when you must block synchronously:
+
+```csharp
+// When you cannot use await
+Task<string> task = GetDataAsync();
+string result = task.GetAwaiter().GetResult();
+```
+
+This approach:
+
+- Preserves the original exception without wrapping it in an `AggregateException`.
+- Blocks the current thread until the task completes.
+- Still carries deadlock risk if not used carefully.
+
+#### Use Task.Run for complex scenarios
+
+For complex scenarios where you need to isolate the asynchronous work:
+
+```csharp
+// Offload to thread pool to avoid context deadlocks
+string result = Task.Run(async () => await GetDataAsync()).GetAwaiter().GetResult();
+```
+
+This pattern:
+
+- Executes the asynchronous method on a thread pool thread.
+- Can help avoid some deadlock scenarios.
+- Adds overhead by scheduling work to the thread pool.
+
+#### Use Wait() and Result
+
+You can use a blocking approach by calling <xref:System.Threading.Tasks.Task.Wait> and <xref:System.Threading.Tasks.Task`1.Result>. However, this approach is discouraged because it wraps exceptions in <xref:System.AggregateException>.
+
+```csharp
+Task<string> task = GetDataAsync();
+task.Wait();
+string result = task.Result;
+```
+
+Problems with `Wait()` and `Result`:
+
+- Exceptions are wrapped in `AggregateException`, making error handling more complex.
+- Higher deadlock risk.
+- Less clear intent in code.
+
+#### Additional considerations
+
+- Deadlock prevention: Be especially careful in UI applications or when using a synchronization context.
+- Performance impact: Blocking threads reduces scalability.
+- Exception handling: Test error scenarios carefully as exception behavior differs between patterns.
+
+For more detailed guidance on the challenges and considerations of synchronous wrappers for asynchronous methods, see [Should I expose synchronous wrappers for asynchronous methods?](https://devblogs.microsoft.com/pfxteam/should-i-expose-synchronous-wrappers-for-asynchronous-methods/).
 
 ## Review the complete example
 

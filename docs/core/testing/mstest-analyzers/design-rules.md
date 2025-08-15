@@ -23,3 +23,5 @@ Identifier | Name | Description
 [MSTEST0025](mstest0025.md) | PreferAssertFailOverAlwaysFalseConditionsAnalyzer | Use 'Assert.Fail' instead of an always-failing assert
 [MSTEST0029](mstest0029.md) | PublicMethodShouldBeTestMethod | A `public` method of a class marked with `[TestClass]` should be a test method (marked with `[TestMethod]`). The rule ignores methods that are marked with `[TestInitialize]`, or `[TestCleanup]` attributes.
 [MSTEST0036](mstest0036.md) | DoNotUseShadowingAnalyzer | Shadowing test members could cause testing issues (such as NRE).
+[MSTEST0044](mstest0044.md) | PreferTestMethodOverDataTestMethodAnalyzer | A method or type uses <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataTestMethodAttribute> or inherits from it.
+[MSTEST0045](mstest0045.md) | UseCooperativeCancellationForTimeoutAnalyzer | A test method uses <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TimeoutAttribute> without setting the `CooperativeCancellation` property to `true`.

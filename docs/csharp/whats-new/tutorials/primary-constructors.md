@@ -56,7 +56,7 @@ Consider the following code:
 
 :::code source="./snippets/primary-constructors/Distance.cs" id="MutableStruct":::
 
-In this example, the `Translate` method changes the `dx` and `dy` components, which requires the `Magnitude` and `Direction` properties be computed when accessed. The greater than or equal to (`=>`) operator designates an expression-bodied `get` accessor, whereas the equal to (`=`) operator designates an initializer.
+In this example, the `Translate` method changes the `dx` and `dy` components, which requires the `Magnitude` and `Direction` properties be computed when accessed. The lambda operator (`=>`) designates an expression-bodied `get` accessor, whereas the equal-to operator (`=`) designates an initializer.
 
 This version of the code adds a parameterless constructor to the struct. The parameterless constructor must invoke the primary constructor, which ensures all primary constructor parameters are initialized. The primary constructor properties are accessed in a method, and the compiler creates hidden fields to represent each parameter.
 

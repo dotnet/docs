@@ -59,6 +59,9 @@ The programmer has no control over when the finalizer is called; the garbage col
 
 In general, C# does not require as much memory management on the part of the developer as languages that don't target a runtime with garbage collection. This is because the .NET garbage collector implicitly manages the allocation and release of memory for your objects. However, when your application encapsulates unmanaged resources, such as windows, files, and network connections, you should use finalizers to free those resources. When the object is eligible for finalization, the garbage collector runs the `Finalize` method of the object.
 
+> [!WARNING]
+> Don't access managed object members from a finalizer. During finalization, managed objects might already be disposed, making them unavailable or in an invalid state. Only access unmanaged resources directly from finalizers.
+
 ## Explicit release of resources
 
 If your application is using an expensive external resource, we also recommend that you provide a way to explicitly release the resource before the garbage collector frees the object. To release the resource, implement a `Dispose` method from the <xref:System.IDisposable> interface that performs the necessary cleanup for the object. This can considerably improve the performance of the application. Even with this explicit control over resources, the finalizer becomes a safeguard to clean up resources if the call to the `Dispose` method fails.

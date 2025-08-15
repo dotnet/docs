@@ -3,6 +3,7 @@ description: "Learn more about: <userNameAuthentication>"
 title: "<userNameAuthentication>"
 ms.date: "03/30/2017"
 ms.assetid: 24d8b398-770f-418f-ba23-c4325419cfa6
+ms.custom: sfi-ropc-nochange
 ---
 # \<userNameAuthentication>
 

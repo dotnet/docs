@@ -15,7 +15,7 @@ ms.date: 02/14/2020
 ## Synopsis
 
 ```dotnetcli
-dotnet nuget push [<ROOT>] [-d|--disable-buffering] [--force-english-output]
+dotnet nuget push [<ROOT>] [--allow-insecure-connections] [-d|--disable-buffering] [--force-english-output]
     [--interactive] [-k|--api-key <API_KEY>] [-n|--no-symbols]
     [--no-service-endpoint] [-s|--source <SOURCE>] [--skip-duplicate]
     [-sk|--symbol-api-key <API_KEY>] [-ss|--symbol-source <SOURCE>]
@@ -49,6 +49,10 @@ Alternatively, use the NuGet CLI for the first package, then you can use `dotnet
   Specifies the file path to the package to be pushed.
 
 ## Options
+
+- **`--allow-insecure-connections`**
+  
+  Allows pushing to HTTP sources (insecure).
 
 - **`-d|--disable-buffering`**
 

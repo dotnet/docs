@@ -6,6 +6,7 @@ helpviewer_keywords:
   - ".NET Framework, obsolete members"
   - "members, obsolete in .NET Framework"
   - "obsolete members [.NET Framework]"
+ms.custom: sfi-ropc-nochange
 ---
 # Obsolete members in .NET Framework
 

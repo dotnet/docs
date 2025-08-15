@@ -12,24 +12,31 @@
         /// <include file='include.xml' path='docs/members[@name="math"]/AddInt/*'/>
         public static int Add(int a, int b)
         {
-            // If any parameter is equal to the max value of an integer
-            // and the other is greater than zero
-            if ((a == int.MaxValue && b > 0) || (b == int.MaxValue && a > 0))
+            // Use checked context to automatically detect integer overflow
+            try
+            {
+                return checked(a + b);
+            }
+            catch (OverflowException)
+            {
                 throw new System.OverflowException();
-
-            return a + b;
+            }
         }
 
         // Adds two doubles and returns the result
         /// <include file='include.xml' path='docs/members[@name="math"]/AddDouble/*'/>
         public static double Add(double a, double b)
         {
-            // If any parameter is equal to the max value of an integer
-            // and the other is greater than zero
-            if ((a == double.MaxValue && b > 0) || (b == double.MaxValue && a > 0))
+            // Check for overflow conditions with floating point numbers
+            if (double.IsInfinity(a) || double.IsInfinity(b) || 
+                (a == double.MaxValue && b > 0) || (b == double.MaxValue && a > 0))
                 throw new System.OverflowException();
 
-            return a + b;
+            double result = a + b;
+            if (double.IsInfinity(result))
+                throw new System.OverflowException();
+
+            return result;
         }
 
         // Subtracts an integer from another and returns the result

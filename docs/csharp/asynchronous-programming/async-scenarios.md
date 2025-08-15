@@ -132,25 +132,18 @@ You can write this code more succinctly by using LINQ:
 
 Although you write less code by using LINQ, exercise caution when mixing LINQ with asynchronous code. LINQ uses deferred (or lazy) execution, which means that without immediate evaluation, async calls don't happen until the sequence is enumerated.
 
-The previous example is correct and safe, because it uses the <xref:System.Linq.Enumerable.ToArray%2A?displayProperty=nameWithType> method to immediately evaluate the LINQ query and store the tasks in an array. This approach ensures the `id => GetUserAsync(id)` calls execute immediately and all tasks start concurrently, just like the `foreach` loop approach.
+The previous example is correct and safe, because it uses the <xref:System.Linq.Enumerable.ToArray%2A?displayProperty=nameWithType> method to immediately evaluate the LINQ query and store the tasks in an array. This approach ensures the `id => GetUserAsync(id)` calls execute immediately and all tasks start concurrently, just like the `foreach` loop approach. Always use <xref:System.Linq.Enumerable.ToArray%2A?displayProperty=nameWithType> or <xref:System.Linq.Enumerable.ToList%2A?displayProperty=nameWithType> when creating tasks with LINQ to ensure immediate execution and concurrent task execution. Here's an example that demonstrates using `ToList()` with `Task.WhenAny` to process tasks as they complete:
 
-**Problematic approach** (without immediate evaluation):
+:::code language="csharp" source="snippets/async-scenarios/Program.cs" ID="ProcessTasksAsTheyComplete":::
 
-```csharp
-// DON'T do this - tasks won't start until enumerated.
-var getUserTasks = userIds.Select(id => GetUserAsync(id)); // No .ToArray()!
-return await Task.WhenAll(getUserTasks); // Tasks start here.
-```
+In this example, `ToList()` creates a list that supports the `Remove()` operation, allowing you to dynamically remove completed tasks. This pattern is particularly useful when you want to handle results as soon as they're available, rather than waiting for all tasks to complete.
 
-**Recommended approach**:
+Although you write less code by using LINQ, exercise caution when mixing LINQ with asynchronous code. LINQ uses deferred (or lazy) execution. Asynchronous calls don't happen immediately as they do in a `foreach` loop, unless you force the generated sequence to iterate with a call to the `.ToList()` or `.ToArray()` method.
 
-```csharp
-// DO this - tasks start immediately.
-var getUserTasks = userIds.Select(id => GetUserAsync(id)).ToArray();
-return await Task.WhenAll(getUserTasks);
-```
+You can choose between <xref:System.Linq.Enumerable.ToArray%2A?displayProperty=nameWithType> and <xref:System.Linq.Enumerable.ToList%2A?displayProperty=nameWithType> based on your scenario:
 
-Always use <xref:System.Linq.Enumerable.ToArray%2A?displayProperty=nameWithType> or <xref:System.Linq.Enumerable.ToList%2A?displayProperty=nameWithType> when creating tasks with LINQ to ensure immediate execution and concurrent task execution.
+- Use `ToArray()` when you plan to process all tasks together, such as with `Task.WhenAll`. Arrays are efficient for scenarios where the collection size is fixed.
+- Use `ToList()` when you need to dynamically manage tasks, such as with `Task.WhenAny` where you might remove completed tasks from the collection as they finish.
 
 ## Review considerations for asynchronous programming
 
@@ -280,7 +273,7 @@ For more detailed guidance on the challenges and considerations of synchronous w
 
 The following code represents the complete example, which is available in the *Program.cs* example file.
 
-:::code language="csharp" source="snippets/async-scenarios/Program.cs":::
+:::code language="csharp" source="snippets/async-scenarios/Program.cs" ID="complete":::
 
 ## Related links
 

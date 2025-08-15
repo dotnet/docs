@@ -31,7 +31,7 @@ This article details the settings you can use to configure threading in .NET.
 | **runtimeconfig.json** | N/A | N/A |
 | **Environment variable** | `COMPlus_Thread_AssignCpuGroups` or `DOTNET_Thread_AssignCpuGroups` | `0` - disabled<br/>`1` - enabled |
 
-## Set the size of stack for VM-created threads
+## Set the stack size for threads created by the .NET runtime
 
 - The default stack size is dictated by .NET and OS policies. The default stack size for .NET apps is 1.5 MB on Windows and macOS, and 8 MB on Linux. The default stack size when .NET runtime is hosted (for example, COM components) is dictated by the hosting process.
 - This setting allows overriding the default for threads created by .NET runtime. For example, threads created by the <xref:System.Threading.Thread.%23ctor*> API.

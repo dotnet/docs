@@ -433,25 +433,25 @@ namespace builtin_types
 
     namespace ComputedWither
     {
-        // <Wither-Computed>
+        // <WitherComputed>
         public record Point(int X, int Y)
         {
             public double Distance => Math.Sqrt(X * X + Y * Y);
         }
-        // </Wither-Computed>
+        // </WitherComputed>
 
-        // <Wither-Init>
+        // <WitherInit>
         public record PointInit(int X, int Y)
         {
             public double Distance { get; } = Math.Sqrt(X * X + Y * Y);
         }
-        // </Wither-Init>
+        // </WitherInit>
 
         public static class ExampleUsage
         {
             public static void Example()
             {
-                // <Wither-Computed-Usage>
+                // <WitherComputedUsage>
                 Point p1 = new Point(3, 4);
                 Console.WriteLine($"Original point: {p1}");
                 p1 = p1 with { Y = 8 };
@@ -459,9 +459,9 @@ namespace builtin_types
                 // Output:
                 // Original point: Point { X = 3, Y = 4, Distance = 5 }
                 // Modified point: Point { X = 3, Y = 8, Distance = 8.54400374531753 }
-                // </Wither-Computed-Usage>
+                // </WitherComputedUsage>
 
-                // <Wither-init-usage>
+                // <WitherInitUsage>
                 PointInit pt1 = new PointInit(3, 4);
                 Console.WriteLine($"Original point: {pt1}");
                 pt1 = pt1 with { Y = 8 };
@@ -469,7 +469,7 @@ namespace builtin_types
                 // Output:
                 // Original point: PointInit { X = 3, Y = 4, Distance = 5 }
                 // Modified point: PointInit { X = 3, Y = 8, Distance = 5 }
-                // </Wither-init-usage>
+                // </WitherInitUsage>
             }
         }
     }

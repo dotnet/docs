@@ -1,14 +1,14 @@
 ---
-title: "with expression - create new objects that are modified copies of existing objects"
+title: "The with expression - create new objects that are modified copies of existing objects"
 description: "Learn about a with expression that performs nondestructive mutation of C# records and structures. The `with` keyword provides the means to modify one or more properties in the new object."
-ms.date: 11/22/2024
+ms.date: 08/15/2025
 f1_keywords:
   - "with_CSharpKeyword"
 helpviewer_keywords:
   - "with expression [C#]"
   - "with operator [C#]"
 ---
-# with expression - Nondestructive mutation creates a new object with modified properties
+# The `with` expression - Nondestructive mutation creates a new object with modified properties
 
 A `with` expression produces a copy of its operand with the specified properties and fields modified. You use the [object initializer](../../programming-guide/classes-and-structs/object-and-collection-initializers.md) syntax to specify what members to modify and their new values:
 
@@ -20,7 +20,7 @@ The result of a `with` expression has the same run-time type as the expression's
 
 :::code language="csharp" source="snippets/with-expression/InheritanceExample.cs" :::
 
-In the case of a reference-type member, only the reference to a member instance is copied when an operand is copied. Both the copy and original operand have access to the same reference-type instance. The following example demonstrates that behavior:
+When a member is a reference-type, only the reference to a member instance is copied when an operand is copied. Both the copy and original operand have access to the same reference-type instance. The following example demonstrates that behavior:
 
 :::code language="csharp" source="snippets/with-expression/ExampleWithReferenceType.cs" :::
 
@@ -33,7 +33,7 @@ Any record class type has the *copy constructor*. A *copy constructor* is a cons
 You can't customize the copy semantics for structure types.
 
 > [!IMPORTANT]
->In the preceding examples, all properties are independent. None are computed from other properties. A `with` expression first copies the existing record instance, then modifies any properties or fields specified in the `with` expression. Computed properties in `record` types should be computed on access, not initialized when the instance is created. Otherwise, a property could return the computed value based on the original instance, not the modified copy. See the language reference article on [`record` types](../builtin-types/record.md#nondestructive-mutation) for more details.
+>In the preceding examples, all properties are independent. None of the properties are computed from other property values. A `with` expression first copies the existing record instance, then modifies any properties or fields specified in the `with` expression. Computed properties in `record` types should be computed on access, not initialized when the instance is created. Otherwise, a property could return the computed value based on the original instance, not the modified copy. For more information, see the language reference article on [`record` types](../builtin-types/record.md#nondestructive-mutation).
 
 ## C# language specification
 

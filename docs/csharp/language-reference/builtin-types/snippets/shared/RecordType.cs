@@ -23,6 +23,9 @@ namespace builtin_types
             var p = new Point();
             (double x, double y, double z) = p;
 
+            Console.WriteLine("=================================================");
+            ComputedWither.ExampleUsage.Example();
+
         }
         // <PositionalRecord>
         public record Person(string FirstName, string LastName);
@@ -102,7 +105,7 @@ namespace builtin_types
         /// map to the JSON elements "firstName" and "lastName" when
         /// serialized or deserialized.
         /// </remarks>
-        public record Person([property: JsonPropertyName("firstName")] string FirstName, 
+        public record Person([property: JsonPropertyName("firstName")] string FirstName,
             [property: JsonPropertyName("lastName")] string LastName);
         // </PositionalAttributes>
 
@@ -335,7 +338,8 @@ namespace builtin_types
                     if (base.PrintMembers(stringBuilder))
                     {
                         stringBuilder.Append(", ");
-                    };
+                    }
+                    ;
                     stringBuilder.Append($"Grade = {Grade}");
                     return true;
                 }
@@ -424,6 +428,49 @@ namespace builtin_types
                 // output: NamedPoint { X = 5, Y = 6, Zbase = 7, Name = B, Zderived = 8 }
             }
             // </WithExpressionInheritance>
+        }
+    }
+
+    namespace ComputedWither
+    {
+        // <WitherComputed>
+        public record Point(int X, int Y)
+        {
+            public double Distance => Math.Sqrt(X * X + Y * Y);
+        }
+        // </WitherComputed>
+
+        // <WitherInit>
+        public record PointInit(int X, int Y)
+        {
+            public double Distance { get; } = Math.Sqrt(X * X + Y * Y);
+        }
+        // </WitherInit>
+
+        public static class ExampleUsage
+        {
+            public static void Example()
+            {
+                // <WitherComputedUsage>
+                Point p1 = new Point(3, 4);
+                Console.WriteLine($"Original point: {p1}");
+                p1 = p1 with { Y = 8 };
+                Console.WriteLine($"Modified point: {p1}");
+                // Output:
+                // Original point: Point { X = 3, Y = 4, Distance = 5 }
+                // Modified point: Point { X = 3, Y = 8, Distance = 8.54400374531753 }
+                // </WitherComputedUsage>
+
+                // <WitherInitUsage>
+                PointInit pt1 = new PointInit(3, 4);
+                Console.WriteLine($"Original point: {pt1}");
+                pt1 = pt1 with { Y = 8 };
+                Console.WriteLine($"Incorrect Modified point: {pt1}");
+                // Output:
+                // Original point: PointInit { X = 3, Y = 4, Distance = 5 }
+                // Modified point: PointInit { X = 3, Y = 8, Distance = 5 }
+                // </WitherInitUsage>
+            }
         }
     }
 }

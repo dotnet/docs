@@ -27,6 +27,8 @@ catch (ExceptionType [e]) when (expr)
 
 where *expr* is an expression that evaluates to a Boolean value. If it returns `true`, the exception handler executes; if `false`, it does not.
 
+Exception filters with the `when` keyword provide several advantages over traditional exception handling approaches, including better debugging support and performance benefits. For a detailed explanation of how exception filters preserve the call stack and improve debugging, see [Exception filters vs. traditional exception handling](../statements/exception-handling-statements.md#exception-filters-vs-traditional-exception-handling).
+
 The following example uses the `when` keyword to conditionally execute handlers for an <xref:System.Net.Http.HttpRequestException> depending on the text of the exception message.
 
 [!code-csharp[when-with-catch](~/samples/snippets/csharp/language-reference/keywords/when/catch.cs)]

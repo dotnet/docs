@@ -95,6 +95,43 @@ You can provide several `catch` clauses for the same exception type if they dist
 
 If a `catch` clause has an exception filter, it can specify the exception type that is the same as or less derived than an exception type of a `catch` clause that appears after it. For example, if an exception filter is present, a `catch (Exception e)` clause doesn't need to be the last clause.
 
+##### Exception filters vs. traditional exception handling
+
+Exception filters provide significant advantages over traditional exception handling approaches. The key difference is **when** the exception handling logic is evaluated:
+
+- **Exception filters (`when`)**: The filter expression is evaluated *before* the stack is unwound. This means the original call stack and all local variables remain intact during filter evaluation.
+- **Traditional `catch` blocks**: The catch block executes *after* the stack is unwound, potentially losing valuable debugging information.
+
+Here's a comparison showing the difference:
+
+:::code language="csharp" source="snippets/exception-handling-statements/WhenFilterExamples.cs" id="ExceptionFilterVsIfElse":::
+
+## Advantages of exception filters
+
+- **Better debugging experience**: Since the stack isn't unwound until a filter matches, debuggers can show the original point of failure with all local variables intact.
+- **Performance benefits**: If no filter matches, the exception continues propagating without the overhead of stack unwinding and restoration.
+- **Cleaner code**: Multiple filters can handle different conditions of the same exception type without requiring nested if-else statements.
+- **Logging and diagnostics**: You can examine and log exception details before deciding whether to handle the exception:
+
+:::code language="csharp" source="snippets/exception-handling-statements/WhenFilterExamples.cs" id="DebuggingAdvantageExample":::
+
+### When to use exception filters
+
+Use exception filters when you need to:
+
+- Handle exceptions based on specific conditions or properties.
+- Preserve the original call stack for debugging.
+- Log or examine exceptions before deciding whether to handle them.
+- Handle the same exception type differently based on context.
+
+:::code language="csharp" source="snippets/exception-handling-statements/WhenFilterExamples.cs" id="MultipleConditionsExample":::
+
+### Stack trace preservation
+
+Exception filters preserve the original `ex.StackTrace` property. If a `catch` clause can't process the exception and re-throws, the original stack information is lost. The `when` filter doesn't unwind the stack, so if a `when` filter is `false`, the original stack trace isn't changed.
+
+The exception filter approach is valuable in applications where preserving debugging information is crucial for diagnosing issues.
+
 #### Exceptions in async and iterator methods
 
 If an exception occurs in an [async function](../keywords/async.md), it propagates to the caller of the function when you [await](../operators/await.md) the result of the function, as the following example shows:

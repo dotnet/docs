@@ -18,7 +18,7 @@ Previously, the middleware, when not configured to use `X-Forwarded-For`, proces
 
 ## New behavior
 
-Starting in .NET 8 and .NET 9 servicing releases, only headers sent by known, trusted proxies (as configured via <xref:Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersOptions.KnownProxies> and <xref:Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersOptions.KnownNetworks>) are processed. Headers from unknown sources are ignored.
+Starting in .NET 8 and .NET 9 servicing releases, only headers sent by known, trusted proxies (as configured via <xref:Microsoft.AspNetCore.Builder.ForwardedHeadersOptions.KnownProxies?displayProperty=nameWithType> and <xref:Microsoft.AspNetCore.Builder.ForwardedHeadersOptions.KnownNetworks?displayProperty=nameWithType>) are processed. Headers from unknown sources are ignored.
 
 > [!NOTE]
 > If your deployment relied on forwarded headers from proxies not configured in your application's trusted proxy list, those headers are no longer honored.
@@ -35,7 +35,7 @@ The change was made for security hardening, as the proxy and IP lists weren't be
 
 ## Recommended action
 
-Review your deployment topology. Ensure that all legitimate proxy servers in front of your app are properly added to `KnownProxies` or `KnownNetworks` in your <xref:Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersOptions> configuration.
+Review your deployment topology. Ensure that all legitimate proxy servers in front of your app are properly added to <xref:Microsoft.AspNetCore.Builder.ForwardedHeadersOptions.KnownProxies> or <xref:Microsoft.AspNetCore.Builder.ForwardedHeadersOptions.KnownNetworks> in your <xref:Microsoft.AspNetCore.Builder.ForwardedHeadersOptions> configuration.
 
 ```csharp
 app.UseForwardedHeaders(new ForwardedHeadersOptions
@@ -53,7 +53,7 @@ app.UseForwardedHeaders(new ForwardedHeadersOptions
 });
 ```
 
-If you wish to enable the previous behavior, which isn't recommended due to security risks, you can do so by clearing the `KnownNetworks` and `KnownProxies` lists in <xref:Microsoft.AspNetCore.HttpOverrides.ForwardedHeadersOptions> to allow any proxy or network to forward these headers.
+If you wish to enable the previous behavior, which isn't recommended due to security risks, you can do so by clearing the `KnownNetworks` and `KnownProxies` lists in <xref:Microsoft.AspNetCore.Builder.ForwardedHeadersOptions> to allow any proxy or network to forward these headers.
 
 You can also set the `ASPNETCORE_FORWARDEDHEADERS_ENABLED` environment variable to `true`, which clears the lists and enables `ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto`.
 

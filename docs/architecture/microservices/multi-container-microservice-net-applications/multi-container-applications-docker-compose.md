@@ -457,7 +457,7 @@ The .NET team provides some basic variants in [dotnet/](https://hub.docker.com/r
 - **sdk**: for development and build scenarios
 - **aspnet**: for ASP.NET production scenarios
 - **runtime**: for .NET production scenarios
-- **runtime-deps**: for production scenarios of [self-contained applications](../../../core/deploying/index.md#publish-self-contained)
+- **runtime-deps**: for production scenarios of [self-contained applications](../../../core/deploying/index.md#self-contained-deployment)
 
 For faster startup, runtime images also automatically set aspnetcore\_urls to port 80 and use Ngen to create a native image cache of assemblies.
 

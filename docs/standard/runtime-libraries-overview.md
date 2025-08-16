@@ -42,4 +42,4 @@ The following table shows some examples of package-provided libraries.
 * [Introduction to .NET](../core/introduction.md)
 * [Install .NET SDK or runtime](../core/install/index.yml)
 * [Select the installed .NET SDK or runtime version to use](../core/versions/selection.md)
-* [Publish framework-dependent apps](../core/deploying/index.md#publish-framework-dependent)
+* [Publish framework-dependent apps](../core/deploying/index.md#framework-dependent-deployment)

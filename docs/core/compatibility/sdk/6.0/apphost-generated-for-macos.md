@@ -5,7 +5,7 @@ ms.date: 07/13/2021
 ---
 # Generate apphost for macOS
 
-When building on macOS, the .NET SDK now [produces an executable](../../../deploying/index.md#produce-an-executable) for app projects.
+When building on macOS, the .NET SDK now produces an executable for app projects.
 
 Since .NET Core 3.0, the .NET SDK has created an executable for app projects when building on non-macOS operating systems. However, it did not create an executable on macOS since we weren't signing this binary. That resulted in an app that was recognized as dangerous by the OS, which made it hard for the user to run it. The .NET 6 SDK can sign the app executable, so it now produces the executable by default.
 

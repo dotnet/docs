@@ -36,7 +36,7 @@ You can also distribute your app without the apphost and rely on users to run yo
   dotnet run -p:UseAppHost=false
   ```
 
-An **appHost** is required when you publish your app [self-contained](../deploying/index.md#publish-self-contained) and you cannot disable it.
+An **appHost** is required when you publish your app [self-contained](../deploying/index.md#self-contained-deployment) and you cannot disable it.
 
 For more information about the `UseAppHost` setting, see [MSBuild properties for Microsoft.NET.Sdk](../project-sdk/msbuild-props.md#useapphost).
 

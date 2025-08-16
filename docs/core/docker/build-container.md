@@ -300,7 +300,7 @@ The `ENTRYPOINT` instruction sets `dotnet` as the host for the `DotNet.Docker.dl
 ENTRYPOINT ["./DotNet.Docker"]
 ```
 
-This causes the app to be executed directly, without `dotnet`, and instead relies on the app host and the underlying OS. For more information on deploying cross-platform binaries, see [Produce a cross-platform binary](../deploying/index.md#produce-an-executable).
+This causes the app to be executed directly, without `dotnet`, and instead relies on the app host and the underlying OS. For more information on publishing cross-platform binaries, see [Cross-platform DLL deployment](../deploying/index.md#cross-platform-dll-deployment).
 
 To build the container, from your terminal, run the following command:
 

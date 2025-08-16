@@ -7,7 +7,7 @@ ms.date: 04/03/2020
 ---
 # Trim self-contained deployments and executables
 
-The [framework-dependent deployment model](../index.md#publish-framework-dependent) has been the most successful deployment model since the inception of .NET. In this scenario, the application developer bundles only the application and third-party assemblies with the expectation that the .NET runtime and runtime libraries will be available in the client machine. This deployment model continues to be the dominant one in the latest .NET release, however, there are some scenarios where the framework-dependent model is not the best choice. The alternative is to publish a [self-contained application](../index.md#publish-self-contained), where the .NET runtime and runtime libraries are bundled together with the application and third-party assemblies.
+The [framework-dependent deployment model](../index.md#framework-dependent-deployment) has been the most successful deployment model since the inception of .NET. In this scenario, the application developer bundles only the application and third-party assemblies with the expectation that the .NET runtime and runtime libraries will be available in the client machine. This deployment model continues to be the dominant one in the latest .NET release, however, there are some scenarios where the framework-dependent model is not the best choice. The alternative is to publish a [self-contained application](../index.md#self-contained-deployment), where the .NET runtime and runtime libraries are bundled together with the application and third-party assemblies.
 
 The trim-self-contained deployment model is a specialized version of the self-contained deployment model that is optimized to reduce deployment size. Minimizing deployment size is a critical requirement for some client-side scenarios like Blazor applications. Depending on the complexity of the application, only a subset of the framework assemblies are referenced, and a subset of the code within each assembly is required to run the application. The unused parts of the libraries are unnecessary and can be trimmed from the packaged application.
 
@@ -51,7 +51,7 @@ Trimming is only supported for self-contained apps.
 
 `dotnet publish -r win-x64 -p:PublishTrimmed=true`
 
-For more information, see [Publish .NET apps with .NET CLI](../deploy-with-cli.md).
+For more information, see [.NET application publishing overview](../../deploying/index.md).
 
 ### Publish with Visual Studio
 
@@ -67,11 +67,9 @@ For more information, see [Publish .NET apps with .NET CLI](../deploy-with-cli.m
 
     :::image type="content" source="../media/trim-self-contained/vs-publish-trimmed.png" alt-text="Visual studio publish page with Publish Trimmed selected.":::
 
-For more information, see [Publish .NET Core apps with Visual Studio](../deploy-with-vs.md).
+For more information, see [.NET application publishing overview](../../deploying/index.md).
 
 ## See also
 
-- [.NET Core application deployment](../index.md).
-- [Publish .NET apps with .NET CLI](../deploy-with-cli.md).
-- [Publish .NET Core apps with Visual Studio](../deploy-with-vs.md).
+- [.NET application publishing overview](../../deploying/index.md).
 - [dotnet publish command](../../tools/dotnet-publish.md).

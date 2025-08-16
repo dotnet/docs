@@ -5,7 +5,7 @@ ms.date: 06/05/2023
 ---
 # Runtime-specific apps no longer self-contained
 
-Runtime-specific apps, or .NET apps with a `RuntimeIdentifier`, are no longer [self-contained](../../../deploying/index.md#publish-self-contained) by default. Instead, they are [framework-dependent](../../../deploying/index.md#publish-framework-dependent) by default.
+Runtime-specific apps, or .NET apps with a `RuntimeIdentifier`, are no longer [self-contained](../../../deploying/index.md#self-contained-deployment) by default. Instead, they are [framework-dependent](../../../deploying/index.md#framework-dependent-deployment) by default.
 
 This is a breaking change in the following situations:
 

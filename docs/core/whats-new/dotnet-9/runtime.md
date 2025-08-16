@@ -74,7 +74,7 @@ CET imposes some limitations on CET-enabled processes and can result in a small 
 
 ## .NET install search behavior
 
-.NET apps can now be configured for how they should [search for the .NET runtime](../../deploying/deploy-with-cli.md#configure-net-install-search-behavior). This capability can be used with private runtime installations or to more strongly control the execution environment.
+.NET apps can now be configured for how they should [search for the .NET runtime](../../deploying/index.md#configure-net-install-search-behavior). This capability can be used with private runtime installations or to more strongly control the execution environment.
 
 ## Performance improvements
 

@@ -61,9 +61,9 @@ If you want even more control, you can use [the overload](xref:System.Security.C
 
 .NET 10 includes support for three new asymmetric algorithms: ML-KEM (FIPS 203), ML-DSA (FIPS 204), and SLH-DSA (FIPS 205). The new types are:
 
-- `System.Security.Cryptography.MLKem` <!--xref:System.Security.Cryptography.MLKem-->
-- `System.Security.Cryptography.MLDsa` <!--xref:System.Security.Cryptography.MLDsa-->
-- `System.Security.Cryptography.SlhDsa` <!--xref:System.Security.Cryptography.SlhDsa-->
+- <xref:System.Security.Cryptography.MLKem?displayProperty=fullName>
+- <xref:System.Security.Cryptography.MLDsa?displayProperty=fullName>
+- <xref:System.Security.Cryptography.SlhDsa?displayProperty=fullName>
 
 Because it adds little benefit, these new types don't derive from <xref:System.Security.Cryptography.AsymmetricAlgorithm>. Rather than the `AsymmetricAlgorithm` approach of creating an object and then importing a key into it, or generating a fresh key, the new types all use static methods to generate or import a key:
 
@@ -95,7 +95,7 @@ using (MLKem key = MLKem.GenerateKey(MLKemAlgorithm.MLKem768))
 
 These algorithms all continue with the pattern of having a static `IsSupported` property to indicate if the algorithm is supported on the current system.
 
-.NET 10 includes Windows Cryptography API: Next Generation (CNG) support for Post-Quantum Cryptography (PQC), making these algorithms available on Windows systems with PQC support. For example:
+.NET 10 includes Windows Cryptography API: Next Generation (CNG) support for Post-Quantum Cryptography (PQC), which makes these algorithms available on Windows systems with PQC support. For example:
 
 ```csharp
 using System;
@@ -130,7 +130,7 @@ private static byte[] SignData(string privateKeyPath, ReadOnlySpan<byte> data)
 }
 ```
 
-Additionally, this release added support for HashML-DSA, which is called "PreHash" to help distinguish it from "pure" ML-DSA. As the underlying specification interacts with the Object Identifier (OID) value, the SignPreHash and VerifyPreHash methods on this `[Experimental]` type take the dotted-decimal OID as a string. This might evolve as more scenarios using HashML-DSA become well-defined.
+Additionally, .NET 10 adds support for HashML-DSA, which is called "PreHash" to help distinguish it from "pure" ML-DSA. As the underlying specification interacts with the Object Identifier (OID) value, the SignPreHash and VerifyPreHash methods on this `[Experimental]` type take the dotted-decimal OID as a string. This might evolve as more scenarios using HashML-DSA become well-defined.
 
 ```csharp
 private static byte[] SignPreHashSha3_256(MLDsa signingKey, ReadOnlySpan<byte> data)
@@ -142,7 +142,7 @@ private static byte[] SignPreHashSha3_256(MLDsa signingKey, ReadOnlySpan<byte> d
 
 #### Composite ML-DSA
 
-.NET 10 introduces new types to support [ietf-lamps-pq-composite-sigs](https://datatracker.ietf.org/doc/draft-ietf-lamps-pq-composite-sigs/) (currently at draft 7), including `CompositeMLDsa` and `CompositeMLDsaAlgorithm` types with implementation of the primitive methods for RSA variants.
+.NET 10 introduces new types to support [ietf-lamps-pq-composite-sigs](https://datatracker.ietf.org/doc/draft-ietf-lamps-pq-composite-sigs/) (currently at draft 7), including the <xref:System.Security.Cryptography.CompositeMLDsa> and <xref:System.Security.Cryptography.CompositeMLDsaAlgorithm> types, with implementation of the primitive methods for RSA variants.
 
 ```csharp
 var algorithm = CompositeMLDsaAlgorithm.MLDsa65WithRSA4096Pss;
@@ -160,7 +160,7 @@ Console.WriteLine(publicKey.VerifyData(data, signature)); // False
 
 ### AES KeyWrap with Padding (IETF RFC 5649)
 
-AES-KWP is an algorithm that is occasionally used in constructions like Cryptographic Message Syntax (CMS) EnvelopedData, where content is encrypted once, but the decryption key needs to be distributed to multiple parties, each one in a distinct secret form.
+AES-KWP is an algorithm that's occasionally used in constructions like Cryptographic Message Syntax (CMS) EnvelopedData, where content is encrypted once, but the decryption key needs to be distributed to multiple parties, each one in a distinct secret form.
 
 .NET now supports the AES-KWP algorithm via instance methods on the <xref:System.Security.Cryptography.Aes> class:
 
@@ -440,7 +440,7 @@ For Windows, you can now use <xref:System.Diagnostics.ProcessStartInfo.CreateNew
 
 ### WebSocketStream
 
-.NET 10 introduces `WebSocketStream` <!--<xref:System.Net.WebSockets.WebSocketStream>-->, a new API designed to simplify some of the most common&mdash;and previously cumbersome&mdash;<xref:System.Net.WebSockets.WebSocket> scenarios in .NET.
+.NET 10 introduces <xref:System.Net.WebSockets.WebSocketStream>, a new API designed to simplify some of the most common&mdash;and previously cumbersome&mdash;<xref:System.Net.WebSockets.WebSocket> scenarios in .NET.
 
 Traditional `WebSocket` APIs are low-level and require significant boilerplate: handling buffering and framing, reconstructing messages, managing encoding/decoding, and writing custom wrappers to integrate with streams, channels, or other transport abstractions. These complexities make it difficult to use WebSockets as a transport, especially for apps with streaming or text-based protocols, or event-driven handlers.
 
@@ -485,7 +485,7 @@ Here are a few examples of how `WebSocketStream` simplifies typical `WebSocket` 
 Use an AppContext switch in code:
 
 ```csharp
-// Opt in to Network.framework-backed TLS on Apple platforms
+// Opt in to Network.framework-backed TLS on Apple platforms.
 AppContext.SetSwitch("System.Net.Security.UseNetworkFramework", true);
 
 using var client = new HttpClient();

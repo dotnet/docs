@@ -89,7 +89,7 @@ The code produces the following XML output:
 
 For more information, see [Creating XML Trees in C# (LINQ to XML)](../../../standard/linq/create-xml-trees.md).
 
-You can use the results of one query as the data source for a subsequent query. This example shows how to order the results of a join operation. This query creates a group join, and then sorts the groups based on the category element, which is still in scope. Inside the anonymous type initializer, a subquery orders all the matching elements from the products sequence.
+You can use the results of one query as the data source for a subsequent query. This example shows how to order the results of a join operation. This query creates a group join, and then sorts the groups based on the `department` element, which is still in scope. Inside the anonymous type initializer, a subquery orders all the matching elements from the `students` sequence.
 
 :::code language="csharp" source="./snippets/standard-query-operators/OrderResultsOfJoin.cs" id="OrderResultsOfJoinQuery":::
 

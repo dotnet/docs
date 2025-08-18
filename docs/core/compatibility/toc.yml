@@ -114,7 +114,7 @@ items:
                 href: sdk/10.0/dotnet-tool-pack-publish.md
               - name: "`dotnet restore` audits transitive packages"
                 href: sdk/10.0/nugetaudit-transitive-packages.md
-              - name: project.json is no longer supported in `dotnet restore`
+              - name: project.json not supported in `dotnet restore`
                 href: sdk/10.0/dotnet-restore-project-json-unsupported.md
               - name: Default workload configuration from 'loose manifests' to 'workload sets' mode
                 href: sdk/10.0/default-workload-config.md

@@ -10,6 +10,7 @@ using System.Collections;
 public class LineBuffer : IEnumerable<char>
 {
     private readonly char[] _buffer = new char[80];
+    private readonly int _count;
 
     public LineBuffer(ReadOnlySpan<char> buffer)
     {
@@ -18,10 +19,30 @@ public class LineBuffer : IEnumerable<char>
         {
             _buffer[i] = buffer[i];
         }
+        _count = number;
     }
 
-    public IEnumerator<char> GetEnumerator() => _buffer.AsEnumerable<char>().GetEnumerator();
-    IEnumerator IEnumerable.GetEnumerator() => _buffer.GetEnumerator();
+    public int Count => _count;
+    
+    public char this[int index]
+    {
+        get
+        {
+            if ((uint)index >= (uint)_count)
+                throw new IndexOutOfRangeException();
+            return _buffer[index];
+        }
+    }
+
+    public IEnumerator<char> GetEnumerator()
+    {
+        for (int i = 0; i < _count; i++)
+        {
+            yield return _buffer[i];
+        }
+    }
+    
+    IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
 
     // etc
 }

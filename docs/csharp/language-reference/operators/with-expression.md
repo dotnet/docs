@@ -20,7 +20,7 @@ The result of a `with` expression has the same run-time type as the expression's
 
 :::code language="csharp" source="snippets/with-expression/InheritanceExample.cs" :::
 
-When a member is a reference-type, only the reference to a member instance is copied when an operand is copied. Both the copy and original operand have access to the same reference-type instance. The following example demonstrates that behavior:
+When a member is a reference type, only the reference to a member instance is copied when an operand is copied. Both the copy and original operand have access to the same reference-type instance. The following example demonstrates that behavior:
 
 :::code language="csharp" source="snippets/with-expression/ExampleWithReferenceType.cs" :::
 
@@ -33,7 +33,7 @@ Any record class type has the *copy constructor*. A *copy constructor* is a cons
 You can't customize the copy semantics for structure types.
 
 > [!IMPORTANT]
->In the preceding examples, all properties are independent. None of the properties are computed from other property values. A `with` expression first copies the existing record instance, then modifies any properties or fields specified in the `with` expression. Computed properties in `record` types should be computed on access, not initialized when the instance is created. Otherwise, a property could return the computed value based on the original instance, not the modified copy. For more information, see the language reference article on [`record` types](../builtin-types/record.md#nondestructive-mutation).
+> In the preceding examples, all properties are independent. None of the properties are computed from other property values. A `with` expression first copies the existing record instance, then modifies any properties or fields specified in the `with` expression. Computed properties in `record` types should be computed on access, not initialized when the instance is created. Otherwise, a property could return the computed value based on the original instance, not the modified copy. For more information, see the language reference article on [`record` types](../builtin-types/record.md#nondestructive-mutation).
 
 ## C# language specification
 

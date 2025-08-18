@@ -147,7 +147,7 @@ If you need different copying behavior, you can write your own copy constructor 
 You can't override the clone method, and you can't create a member named `Clone` in any record type. The actual name of the clone method is compiler-generated.
 
 > [!IMPORTANT]
->In the preceding examples, all properties are independent. None of the properties are computed from other property values. A `with` expression first copies the existing record instance, then modifies any properties or fields specified in the `with` expression. Computed properties in `record` types should be computed on access, not initialized when the instance is created. Otherwise, a property could return the computed value based on the original instance, not the modified copy.
+> In the preceding examples, all properties are independent. None of the properties are computed from other property values. A `with` expression first copies the existing record instance, then modifies any properties or fields specified in the `with` expression. Computed properties in `record` types should be computed on access, not initialized when the instance is created. Otherwise, a property could return the computed value based on the original instance, not the modified copy.
 
 You ensure correctness on computed properties by computing the value on access, as shown in the following declaration:
 

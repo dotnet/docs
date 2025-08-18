@@ -902,20 +902,15 @@
             "open_to_public_contributors": {
                 "docs/standard/design-guidelines/**.md": false
             },
-            "ms.custom": {
-                "docs/framework/**/*.md": "UpdateFrequency5",
-                "docs/visual-basic/**/*.md": "UpdateFrequency5"
-            },
             "ms.collection": {
-                "docs/ai/**/**.md": "ce-skilling-ai-copilot",
-                "docs/ai/**/**.yml": "ce-skilling-ai-copilot"
+                "docs/ai/**/**.{md,yml}": "ce-skilling-ai-copilot"
             },
             "ms.update-cycle": {
                 "docs/ai/**/**.{md,yml}": "180-days",
-                "docs/csharp/whats-new/**/*.md": "1825-days",
-                "docs/framework/**/*.md": "1825-days",
-                "docs/visual-basic/**/*.md": "1825-days",
-                "docs/framework/additional-apis/pos-for-net/**/**.md": "1825-days"
+                "docs/csharp/whats-new/**/**.{md,yml}": "1825-days",
+                "docs/framework/**/**.{md,yml}": "3650-days",
+                "docs/iot/**/**.{md,yml}": "1825-days",
+                "docs/visual-basic/**/**.{md,yml}": "3650-days"
             },
             "no-loc": {
                 "docs/orleans/**/**.md": [

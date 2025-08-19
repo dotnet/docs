@@ -46,7 +46,7 @@ For example, given the user input *Give me three ideas for a healthy breakfast i
 
 Some generative AI applications produce image outputs from natural language inputs. Depending on the application and its models, users might be able to specify:
 
-- The people or things to appear the image
+- The people or things to appear in the image
 - The artistic style to create the image in
 - References for generating similar images
 

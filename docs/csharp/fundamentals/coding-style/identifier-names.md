@@ -2,6 +2,7 @@
 title: "Identifier names - rules and conventions"
 description: "Learn the rules for valid identifier names in the C# programming language. In addition, learn the common naming conventions used by the .NET runtime team and the .NET docs team."
 ms.date: 11/27/2023
+ai-usage: ai-generated
 ---
 # C# identifier naming rules and conventions
 
@@ -158,6 +159,22 @@ public T SomeMethod<T>(int someNumber, bool isValid)
 {
 }
 ```
+
+#### Primary constructor parameters
+
+Primary constructor parameter naming depends on the type being declared:
+
+- For `class` and `struct` types: Use camel casing, consistent with other method parameters.
+
+:::code language="csharp" source="./snippets/identifier-names/PrimaryConstructorExamples.cs" id="ClassPrimaryConstructor":::
+
+:::code language="csharp" source="./snippets/identifier-names/PrimaryConstructorExamples.cs" id="StructPrimaryConstructor":::
+
+- For `record` types: Use pascal casing, as the parameters become public properties.
+
+:::code language="csharp" source="./snippets/identifier-names/PrimaryConstructorExamples.cs" id="RecordPrimaryConstructor":::
+
+For more information on primary constructors, see [Primary constructors](../../programming-guide/classes-and-structs/instance-constructors.md#primary-constructors).
 
 For more information on C# naming conventions, see the [.NET Runtime team's coding style](https://github.com/dotnet/runtime/blob/main/docs/coding-guidelines/coding-style.md).
 

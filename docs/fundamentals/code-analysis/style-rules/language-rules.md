@@ -208,10 +208,15 @@ C# style rules:
 
 ### New-line preferences
 
+.NET style rules (C# and Visual Basic):
+
 - [Avoid multiple blank lines (IDE2000)](ide2000.md)
+- [Blank line required between block and subsequent statement (IDE2003)](ide2003.md)
+
+C# style rules:
+
 - [Embedded statements must be on their own line (IDE2001)](ide2001.md)
 - [Consecutive braces must not have blank line between them (IDE2002)](ide2002.md)
-- [Blank line required between block and subsequent statement (IDE2003)](ide2003.md)
 - [Blank line not allowed after constructor initializer colon (IDE2004)](ide2004.md)
 - [Blank line not allowed after conditional expression token (IDE2005)](ide2005.md)
 - [Blank line not allowed after arrow expression clause token (IDE2006)](ide2006.md)

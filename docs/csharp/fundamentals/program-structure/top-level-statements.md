@@ -85,7 +85,7 @@ The compiler generates a method to serve as the program entry point for a projec
 | `return`                | `static int Main(string[] args)`             |
 | No `await` or `return`  | `static void Main(string[] args)`            |
 
-Beginning with C# 14, programs can be [*file based programs*](./index.md#building-and-running-c-programs), where a single file contains the program. You run *file based programs* with the command `dotnet run <file.cs>`, or using the `#!/usr/local/share/dotnet/dotnet run` directive as the first line (unix shells only).
+Beginning with C# 14, programs can be [*file-based apps*](./index.md#building-and-running-c-programs), where a single file contains the program. You run *file-based apps* with the command `dotnet run <file.cs>`, or using the `#!/usr/local/share/dotnet/dotnet run` directive as the first line (unix shells only).
 
 ## C# language specification
 

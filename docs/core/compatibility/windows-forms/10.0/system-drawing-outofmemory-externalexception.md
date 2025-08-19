@@ -22,7 +22,7 @@ When GDI+ encountered `Status.OutOfMemory` errors (often due to invalid input ra
 
 ## New behavior
 
-When GDI+ encounters `Status.OutOfMemory` errors, System.Drawing APIs now throw <xref:System.Runtime.InteropServices.ExternalException> instead.
+Starting in .NET 10, when GDI+ encounters `Status.OutOfMemory` errors, System.Drawing APIs now throw <xref:System.Runtime.InteropServices.ExternalException>.
 
 ## Type of breaking change
 

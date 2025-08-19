@@ -23,8 +23,8 @@ The following example demonstrates an abstract class that contains both implemen
 
 In this example, the `Vehicle` abstract class provides:
 
-- **Implemented members**: `GetInfo()` method, `StartEngine()` method, and constructor - these provide common functionality for all vehicles
-- **Abstract members**: `Move()` method and `MaxSpeed` property - these must be implemented by each specific vehicle type
+- **Implemented members**: `GetInfo()` method, `StartEngine()` method, and constructor - these provide common functionality for all vehicles.
+- **Abstract members**: `Move()` method and `MaxSpeed` property - these must be implemented by each specific vehicle type.
 
 This design allows the abstract class to provide shared functionality while ensuring that derived classes implement vehicle-specific behavior.
 

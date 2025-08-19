@@ -146,7 +146,7 @@ As with other `IChatClient` implementations, the `RateLimitingChatClient` can be
 
 :::code language="csharp" source="snippets/microsoft-extensions-ai/ConsoleAI.CustomClientMiddle/Program.cs":::
 
-To simplify the composition of such components with others, component authors should create a `Use*` extension method for registering the component into a pipeline. For example, consider the following `UseRatingLimiting` extension method:
+To simplify the composition of such components with others, component authors should create a `Use*` extension method for registering the component into a pipeline. For example, consider the following `UseRateLimiting` extension method:
 
 :::code language="csharp" source="snippets/microsoft-extensions-ai/AI.Shared/RateLimitingChatClientExtensions.cs" id="one":::
 

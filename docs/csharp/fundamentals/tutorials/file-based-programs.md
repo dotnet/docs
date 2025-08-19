@@ -82,7 +82,7 @@ On unix, you can run file-based apps directly, typing the source file name on th
    chmod +x AsciiArt.cs
    ```
 
-2. Add a shebang (`#!`) directive as the first line of the `AsciiArt.cs` file:
+1. Add a shebang (`#!`) directive as the first line of the `AsciiArt.cs` file:
 
    ```csharp
    #!/usr/local/share/dotnet/dotnet run
@@ -257,7 +257,7 @@ Now, finish the app to use the parsed options and write the output. First, defin
 
 1. Replace the `if` clause you wrote earlier with the following code that processes the command line arguments and write the output:
 
-:::code language="csharp" source="./snippets/file-based-programs/AsciiArt.cs" id="InvokeCommand":::
+   :::code language="csharp" source="./snippets/file-based-programs/AsciiArt.cs" id="InvokeCommand":::
 
 You created a `record` type that provides structure to the parsed command line options and arguments. New local functions create an instance of the record, and use the record to write the ASCII art output.
 

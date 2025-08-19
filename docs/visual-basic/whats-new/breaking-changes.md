@@ -2,6 +2,7 @@
 title: Breaking changes in the Visual Basic compiler
 description: Find any breaking changes in the Visual Basic compiler that you are using.
 ms.topic: troubleshooting
+ms.update-cycle: 365-days
 ms.custom: "updateeachrelease"
 ms.date: 08/18/2020
 ---

@@ -2,6 +2,7 @@
 description: "Learn more about: What's new for Visual Basic"
 title: What's new
 ms.date: 10/24/2018
+ms.update-cycle: 365-days
 f1_keywords:
   - "VB.StartPage.WhatsNew"
 helpviewer_keywords:

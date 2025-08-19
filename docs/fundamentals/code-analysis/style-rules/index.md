@@ -148,6 +148,13 @@ The following table list all the code-style rules by ID and [options](../code-st
 > | [IDE0350](ide0350.md) | Use implicitly typed lambda | [csharp_style_prefer_implicitly_typed_lambda_expression](ide0350.md#csharp_style_prefer_implicitly_typed_lambda_expression) |
 > | [IDE1005](ide1005.md) | Use conditional delegate call | [csharp_style_conditional_delegate_call](ide1005.md#csharp_style_conditional_delegate_call) |
 > | [IDE1006](naming-rules.md) | Naming styles | |
+> | [IDE2000](ide2000.md) | Avoid multiple blank lines | |
+> | [IDE2001](ide2001.md) | Embedded statements must be on their own line | |
+> | [IDE2002](ide2002.md) | Consecutive braces must not have blank line between them | |
+> | [IDE2003](ide2003.md) | Blank line required between block and subsequent statement | |
+> | [IDE2004](ide2004.md) | Blank line not allowed after constructor initializer colon | |
+> | [IDE2005](ide2005.md) | Blank line not allowed after conditional expression token | |
+> | [IDE2006](ide2006.md) | Blank line not allowed after arrow expression clause token | |
 > | [IDE3000](ide3000.md) | Implement with Copilot | |
 
 > [!NOTE]

@@ -28,7 +28,7 @@ public class LineBuffer : IEnumerable<char>
     {
         get
         {
-            if ((uint)index >= (uint)_count)
+            if (index >= _count)
                 throw new IndexOutOfRangeException();
             return _buffer[index];
         }

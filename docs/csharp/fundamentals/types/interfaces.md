@@ -26,7 +26,7 @@ For more information about abstract classes, see [Abstract and Sealed Classes an
 
 Interfaces can contain instance methods, properties, events, indexers, or any combination of those four member types. Interfaces may contain static constructors, fields, constants, or operators. Beginning with C# 11, interface members that aren't fields may be `static abstract`. An interface can't contain instance fields, instance constructors, or finalizers. Interface members are public by default, and you can explicitly specify accessibility modifiers, such as `public`, `protected`, `internal`, `private`, `protected internal`, or `private protected`. A `private` member must have a default implementation.
 
-To implement an interface member, the corresponding member of the implementing class must be public, non-static, and have the same name and signature as the interface member.
+To implement an interface member using implicit implementation, the corresponding member of the implementing class must be public, non-static, and have the same name and signature as the interface member. However, when an interface has internal accessibility or uses internal types in its signature, you can use explicit interface implementation instead, which doesn't require the implementing member to be public.
 
 > [!NOTE]
 > When an interface declares static members, a type implementing that interface may also declare static members with the same signature. Those are distinct and uniquely identified by the type declaring the member. The static member declared in a type *doesn't* override the static member declared in the interface.
@@ -42,6 +42,16 @@ Properties and indexers of a class can define extra accessors for a property or 
 Interfaces can inherit from one or more interfaces. The derived interface inherits the members from its base interfaces. A class that implements a derived interface must implement all members in the derived interface, including all members of the derived interface's base interfaces. That class may be implicitly converted to the derived interface or any of its base interfaces. A class might include an interface multiple times through base classes that it inherits or through interfaces that other interfaces inherit. However, the class can provide an implementation of an interface only one time and only if the class declares the interface as part of the definition of the class (`class ClassName : InterfaceName`). If the interface is inherited because you inherited a base class that implements the interface, the base class provides the implementation of the members of the interface. However, the derived class can reimplement any virtual interface members instead of using the inherited implementation. When interfaces declare a default implementation of a method, any class implementing that interface inherits that implementation (You need to cast the class instance to the interface type to access the default implementation on the Interface member).
 
 A base class can also implement interface members by using virtual members. In that case, a derived class can change the interface behavior by overriding the virtual members. For more information about virtual members, see [Polymorphism](../object-oriented/polymorphism.md).
+
+## Working with internal interfaces
+
+When an interface has internal accessibility or uses internal types in its member signatures, implicit implementation isn't possible because the implementing class member would need to be public while exposing internal types. In such cases, you must use explicit interface implementation. The following example demonstrates this scenario:
+
+:::code language="csharp" source="./snippets/interfaces/interfaces.cs" ID="InternalInterfaceExample":::
+
+In the preceding example, the `IConfigurable` interface uses an internal type `InternalConfiguration` in its method signature. The `ServiceImplementation` class cannot use implicit implementation because that would require making the `Configure` method public, which isn't allowed when the method signature contains internal types. Instead, explicit interface implementation is used, which doesn't have an access modifier and is only accessible through the interface type.
+
+For more information about explicit interface implementation, see [Explicit Interface Implementation](../../programming-guide/interfaces/explicit-interface-implementation.md).
 
 ## Interfaces summary
 

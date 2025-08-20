@@ -1,15 +1,7 @@
 namespace ValueEqualityRecord;
 
 // A simple record type that automatically implements value equality
-public record TwoDPoint(int X, int Y)
-{
-    // Records automatically implement:
-    // - IEquatable<TwoDPoint>
-    // - Equals(object?)
-    // - GetHashCode()
-    // - operator == and !=
-    // - ToString() with useful output
-}
+public record TwoDPoint(int X, int Y);
 
 // Records can be derived and still maintain proper value equality
 public record ThreeDPoint(int X, int Y, int Z) : TwoDPoint(X, Y);

@@ -835,7 +835,7 @@
                 "_csharplang/proposals/csharp-14.0/null-conditional-assignment.md": "This proposal allows the null conditional operator to be used for the destination of assignment expressions. This allows you to assign a value to a property or field only if the left side is not null.",
                 "_csharplang/proposals/csharp-14.0/extensions.md": "This proposal enables new kinds of extension members. These new extension members support extension properties, extension static members, including extension operators.",
                 "_csharplang/proposals/csharp-14.0/user-defined-compound-assignment.md": "This proposal introduces user-defined compound assignment operators. Developers can override compound assignment, increment, and decrement operators.",
-                "_csharplang/proposals/csharp-14.0/ignored-directives.md": "This proposal allows a source file to include ignored directives. In most cases, ignored directives are used for file based programs, for example `#!`",
+                "_csharplang/proposals/csharp-14.0/ignored-directives.md": "This proposal allows a source file to include ignored directives. In most cases, ignored directives are used for file-based apps, for example `#!`",
                 "_csharplang/proposals/csharp-14.0/extension-operators.md": "This proposal extends the proposal for extensions to include *extension operators*, where an operator can be an extension member.",
                 "_csharplang/proposals/csharp-14.0/named-and-optional-parameters-in-expression-trees.md": "This proposal allows an expression tree to include named and optional parameters. This enables expression trees to be more flexible in how they are constructed.",
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 7.md": "Learn about any breaking changes since the initial release of C# 10 and included in C# 11",
@@ -902,20 +902,25 @@
             "open_to_public_contributors": {
                 "docs/standard/design-guidelines/**.md": false
             },
-            "ms.custom": {
-                "docs/framework/**/*.md": "UpdateFrequency5",
-                "docs/visual-basic/**/*.md": "UpdateFrequency5"
-            },
             "ms.collection": {
-                "docs/ai/**/**.md": "ce-skilling-ai-copilot",
-                "docs/ai/**/**.yml": "ce-skilling-ai-copilot"
+                "docs/ai/**/**.{md,yml}": "ce-skilling-ai-copilot"
             },
             "ms.update-cycle": {
                 "docs/ai/**/**.{md,yml}": "180-days",
-                "docs/csharp/whats-new/**/*.md": "1825-days",
-                "docs/framework/**/*.md": "1825-days",
-                "docs/visual-basic/**/*.md": "1825-days",
-                "docs/framework/additional-apis/pos-for-net/**/**.md": "1825-days"
+                "docs/csharp/whats-new/**/**.{md,yml}": "1095-days",
+                "docs/csharp/advanced-topics/interop/**/**.{md,yml}": "1825-days",
+                "docs/csharp/advanced-topics/reflection-and-attributes/**/**.{md,yml}": "1825-days",
+                "docs/csharp/fundamentals/exceptions/**/**.{md,yml}": "1825-days",
+                "docs/csharp/language-reference/**/**.{md,yml}": "1095-days",
+                "docs/csharp/language-reference/compiler-messages/**/**.{md,yml}": "3650-days",
+                "docs/csharp/language-reference/xmldoc/**/**.{md,yml}": "3650-days",
+                "docs/csharp/linq/**/**.{md,yml}": "1825-days",
+                "docs/csharp/misc/**/**.{md,yml}": "3650-days",
+                "docs/csharp/roslyn-sdk/**/**.{md,yml}": "1825-days",
+                "docs/csharp/specification/**/**.{md,yml}": "1825-days",
+                "docs/framework/**/*.md": "3650-days",
+                "docs/iot/**/**.{md,yml}": "1825-days",
+                "docs/visual-basic/**/**.{md,yml}": "3650-days"
             },
             "no-loc": {
                 "docs/orleans/**/**.md": [

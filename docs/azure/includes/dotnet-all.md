@@ -414,6 +414,7 @@
 | Speech Extension Telemetry | NuGet [1.45.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Telemetry/1.45.0) |  |  |
 | System Net Client Model | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/System.Net.ClientModel/1.0.0-beta.1) |  |  |
 | Unknown Display Name | NuGet [0.12.0](https://www.nuget.org/packages/Azure.Iot.Operations.Connector/0.12.0) |  |  |
+| Unknown Display Name | NuGet [0.1.0-preview.1](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Aot/0.1.0-preview.1) |  |  |
 | Unknown Display Name | NuGet [1.1.2-preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.AzureCosmosDb.Mongo/1.1.2-preview) |  |  |
 | Unknown Display Name | NuGet [1.45.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.MAS/1.45.0) |  |  |
 | Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Extensions.Caching.Postgres/1.0.0) |  |  |

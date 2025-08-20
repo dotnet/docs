@@ -141,7 +141,7 @@ Include this section in your JSON config file:
 - Different key IDs mean the values are unrelated and can't be used for correlation.
 
 > [!NOTE]
-> The <xref:Microsoft.Extensions.Compliance.Redaction.HmacRedactor> is still experimental, so the preceding methods will cause the `EXTEXP0002` warningm indicating it's not yet stable.
+> The <xref:Microsoft.Extensions.Compliance.Redaction.HmacRedactor> is still experimental, so the preceding methods will cause the `EXTEXP0002` warning indicating it's not yet stable.
 > To use it, add `<NoWarn>$(NoWarn);EXTEXP0002</NoWarn>` to your project file or add `#pragma warning disable EXTEXP0002` around the calls to `SetHmacRedactor`.
 
 ### Configure a custom redactor
@@ -150,8 +150,6 @@ To create a custom redactor, define a subclass that inherits from <xref:Microsof
 
 ```csharp
 public sealed class StarRedactor : Redactor
-
-public class StarRedactor : Redactor
 {
     private const string Stars = "****";
 

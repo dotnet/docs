@@ -113,7 +113,7 @@ The output provides a structured, machine-readable description of the command's 
 
 ## File-based apps enhancements
 
-.NET 10 brings significant updates to the file-based apps experience, including publish support and native AOT capabilities. For an introduction to file-based programs, see [File based programs](../../../csharp/tour-of-csharp/overview.md#file-based-programs) and [Building and running C# programs](../../../csharp/fundamentals/program-structure/index.md#building-and-running-c-programs).
+.NET 10 brings significant updates to the file-based apps experience, including publish support and native AOT capabilities. For an introduction to file-based apps, see [File-based apps](../../../csharp/tour-of-csharp/overview.md#file-based-apps) and [Building and running C# programs](../../../csharp/fundamentals/program-structure/index.md#building-and-running-c-programs).
 
 ### Enhanced file-based apps with publish support and native AOT
 

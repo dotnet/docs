@@ -55,7 +55,7 @@ The following example shows how records automatically implement value equality w
 
 Records provide several advantages for value equality:
 
-- **Automatic implementation**: Records automatically implement `IEquatable<T>`, override `Equals(object?)`, `GetHashCode()`, and the `==`/`!=` operators.
+- **Automatic implementation**: Records automatically implement `IEquatable<T>` and override `Equals(object?)`, `GetHashCode()`, and the `==`/`!=` operators.
 - **Correct inheritance behavior**: Unlike the class example shown earlier, records handle inheritance scenarios correctly.
 - **Immutability by default**: Records encourage immutable design, which works well with value equality semantics.
 - **Concise syntax**: Positional parameters provide a compact way to define data types.

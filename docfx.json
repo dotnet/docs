@@ -920,7 +920,10 @@
                 "docs/csharp/specification/**/**.{md,yml}": "1825-days",
                 "docs/framework/**/*.md": "3650-days",
                 "docs/iot/**/**.{md,yml}": "1825-days",
-                "docs/visual-basic/**/**.{md,yml}": "3650-days"
+                "docs/visual-basic/**/**.{md,yml}": "3650-days",
+                "docs/visual-basic/whats-new/**/**.{md,yml}": "1095-days",
+                "docs/visual-basic/getting-started/**/**.{md,yml}": "1825-days",
+                "docs/visual-basic/developing-apps/**/**.{md,yml}": "1825-days"
             },
             "no-loc": {
                 "docs/orleans/**/**.md": [

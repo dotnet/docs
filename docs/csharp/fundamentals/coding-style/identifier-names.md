@@ -162,17 +162,17 @@ public T SomeMethod<T>(int someNumber, bool isValid)
 
 #### Primary constructor parameters
 
-Primary constructor parameter naming depends on the type being declared:
+How you name primary constructor parameters depends on the type being declared:
 
 - For `class` and `struct` types: Use camel casing, consistent with other method parameters.
 
-:::code language="csharp" source="./snippets/identifier-names/PrimaryConstructorExamples.cs" id="ClassPrimaryConstructor":::
+  :::code language="csharp" source="./snippets/identifier-names/PrimaryConstructorExamples.cs" id="ClassPrimaryConstructor":::
 
-:::code language="csharp" source="./snippets/identifier-names/PrimaryConstructorExamples.cs" id="StructPrimaryConstructor":::
+  :::code language="csharp" source="./snippets/identifier-names/PrimaryConstructorExamples.cs" id="StructPrimaryConstructor":::
 
-- For `record` types: Use pascal casing, as the parameters become public properties.
+- For `record` types: Use Pascal casing, as the parameters become public properties.
 
-:::code language="csharp" source="./snippets/identifier-names/PrimaryConstructorExamples.cs" id="RecordPrimaryConstructor":::
+  :::code language="csharp" source="./snippets/identifier-names/PrimaryConstructorExamples.cs" id="RecordPrimaryConstructor":::
 
 For more information on primary constructors, see [Primary constructors](../../programming-guide/classes-and-structs/instance-constructors.md#primary-constructors).
 

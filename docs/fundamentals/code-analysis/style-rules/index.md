@@ -148,14 +148,16 @@ The following table list all the code-style rules by ID and [options](../code-st
 > | [IDE0350](ide0350.md) | Use implicitly typed lambda | [csharp_style_prefer_implicitly_typed_lambda_expression](ide0350.md#csharp_style_prefer_implicitly_typed_lambda_expression) |
 > | [IDE1005](ide1005.md) | Use conditional delegate call | [csharp_style_conditional_delegate_call](ide1005.md#csharp_style_conditional_delegate_call) |
 > | [IDE1006](naming-rules.md) | Naming styles | |
-> | [IDE2000](ide2000.md) | Avoid multiple blank lines | [dotnet_style_allow_multiple_blank_lines_experimental](ide2000.md#dotnet_style_allow_multiple_blank_lines_experimental) |
-> | [IDE2001](ide2001.md) | Embedded statements must be on their own line | [csharp_style_allow_embedded_statements_on_same_line_experimental](ide2001.md#csharp_style_allow_embedded_statements_on_same_line_experimental) |
-> | [IDE2002](ide2002.md) | Consecutive braces must not have blank line between them | [csharp_style_allow_blank_lines_between_consecutive_braces_experimental](ide2002.md#csharp_style_allow_blank_lines_between_consecutive_braces_experimental) |
-> | [IDE2003](ide2003.md) | Blank line required between block and subsequent statement | [dotnet_style_allow_statement_immediately_after_block_experimental](ide2003.md#dotnet_style_allow_statement_immediately_after_block_experimental) |
-> | [IDE2004](ide2004.md) | Blank line not allowed after constructor initializer colon | [csharp_style_allow_blank_line_after_colon_in_constructor_initializer_experimental](ide2004.md#csharp_style_allow_blank_line_after_colon_in_constructor_initializer_experimental) |
-> | [IDE2005](ide2005.md) | Blank line not allowed after conditional expression token | [csharp_style_allow_blank_line_after_token_in_conditional_expression_experimental](ide2005.md#csharp_style_allow_blank_line_after_token_in_conditional_expression_experimental) |
-> | [IDE2006](ide2006.md) | Blank line not allowed after arrow expression clause token | [csharp_style_allow_blank_line_after_token_in_arrow_expression_clause_experimental](ide2006.md#csharp_style_allow_blank_line_after_token_in_arrow_expression_clause_experimental) |
+> | [IDE2000](ide2000.md) | Avoid multiple blank lines | [dotnet_style_allow_multiple_blank_lines_experimental](ide2000.md#dotnet_style_allow_multiple_blank_lines_experimental)† |
+> | [IDE2001](ide2001.md) | Embedded statements must be on their own line | [csharp_style_allow_embedded_statements_on_same_line_experimental](ide2001.md#csharp_style_allow_embedded_statements_on_same_line_experimental)† |
+> | [IDE2002](ide2002.md) | Consecutive braces must not have blank line between them | [csharp_style_allow_blank_lines_between_consecutive_braces_experimental](ide2002.md#csharp_style_allow_blank_lines_between_consecutive_braces_experimental)† |
+> | [IDE2003](ide2003.md) | Blank line required between block and subsequent statement | [dotnet_style_allow_statement_immediately_after_block_experimental](ide2003.md#dotnet_style_allow_statement_immediately_after_block_experimental)† |
+> | [IDE2004](ide2004.md) | Blank line not allowed after constructor initializer colon | [csharp_style_allow_blank_line_after_colon_in_constructor_initializer_experimental](ide2004.md#csharp_style_allow_blank_line_after_colon_in_constructor_initializer_experimental)† |
+> | [IDE2005](ide2005.md) | Blank line not allowed after conditional expression token | [csharp_style_allow_blank_line_after_token_in_conditional_expression_experimental](ide2005.md#csharp_style_allow_blank_line_after_token_in_conditional_expression_experimental)† |
+> | [IDE2006](ide2006.md) | Blank line not allowed after arrow expression clause token | [csharp_style_allow_blank_line_after_token_in_arrow_expression_clause_experimental](ide2006.md#csharp_style_allow_blank_line_after_token_in_arrow_expression_clause_experimental)† |
 > | [IDE3000](ide3000.md) | Implement with Copilot | |
+
+†These rules are experimental and subject to change or removal.
 
 > [!NOTE]
 > There are some rules that only surface in the Visual Studio IDE, and these regard JSON and regular expression pattern strings. For more information, see [JSON001](/visualstudio/ide/reference/json001), [JSON002](/visualstudio/ide/reference/json002), and [RE0001](/visualstudio/ide/reference/re0001).

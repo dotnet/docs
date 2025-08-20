@@ -57,9 +57,9 @@ The following example demonstrates using an <xref:Azure.Identity.InteractiveBrow
 :::code language="csharp" source="../snippets/authentication/additional-auth/interactive/InteractiveBrokeredAuth.cs" highlight="16-20":::
 
 > [!NOTE]
-> Visit the [Parent window handles](/entra/msal/dotnet/acquiring-tokens/desktop-mobile/wam#parent-window-handles) and [Retrieve a window handle](/windows/apps/develop/ui-input/retrieve-hwnd) articles for more information about retrieving window handles.
+> For more information about retrieving window handles, see [Parent window handles](/entra/msal/dotnet/acquiring-tokens/desktop-mobile/wam#parent-window-handles) and [Retrieve a window handle](/windows/apps/develop/ui-input/retrieve-hwnd).
 
-For the code to run successfully, your user account must be assigned an Azure role on the storage account that allows access to blob containers such as **Storage Account Data Contributor**. If an app is specified, it must have API permissions set for **user_impersonation Access Azure Storage** (step 6 in the previous section). This API permission allows the app to access Azure storage on behalf of the signed-in user after consent is granted during sign-in.
+For the code to run successfully, your user account must be assigned an Azure role on the storage account that allows access to blob containers, such as **Storage Account Data Contributor**. If an app is specified, it must have API permissions set for **user_impersonation Access Azure Storage** (step 6 in the previous section). This API permission allows the app to access Azure storage on behalf of the signed-in user after consent is granted during sign-in.
 
 The following screenshot shows the user sign-in experience:
 

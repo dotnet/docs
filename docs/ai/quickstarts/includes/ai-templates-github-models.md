@@ -118,7 +118,7 @@ dotnet user-secrets set GitHubModels:Token <your-personal-access-token>
 
 To use the AIChatWeb template with .NET Aspire orchestration, add the following configurations:
 
-# [Visual Studio](#tab/configure-visual-studio-aspire)
+## [Visual Studio](#tab/configure-visual-studio-aspire)
 
 1. In Visual Studio, right-click on your `*.AppHost` project in the Solution Explorer and select **Manage User Secrets**. This opens a `secrets.json` file where you can store your API keys without them being tracked in source control.
 
@@ -130,14 +130,15 @@ To use the AIChatWeb template with .NET Aspire orchestration, add the following 
     }
     ```
 
-# [.NET CLI](#tab/configure-dotnet-cli-aspire)
+## [.NET CLI](#tab/configure-dotnet-cli-aspire)
 
 1. Open a terminal window set to the root of your `*.AppHost` project.
+
 1. Running the `dotnet user-secrets set` command to set the user secret:
 
-```dotnetcli
-dotnet user-secrets set ConnectionStrings:openai "Endpoint=https://models.inference.ai.azure.com;Key=<YOUR-API-KEY>"
-```
+    ```dotnetcli
+    dotnet user-secrets set ConnectionStrings:openai "Endpoint=https://models.inference.ai.azure.com;Key=<YOUR-API-KEY>"
+    ```
 
 ---
 

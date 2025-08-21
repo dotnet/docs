@@ -70,8 +70,8 @@ In parsing operations, custom date and time format strings can be used with the 
 | "mm" | The minute, from 00 to 59.<br /><br /> More information: [The "mm" Custom Format Specifier](#mmSpecifier). | 2009-06-15T01:09:30 -> 09<br /><br /> 2009-06-15T01:45:30 -> 45 |
 | "M" | The month, from 1 to 12.<br /><br /> More information: [The "M" Custom Format Specifier](#M_Specifier). | 2009-06-15T13:45:30 -> 6 |
 | "MM" | The month, from 01 to 12.<br /><br /> More information: [The "MM" Custom Format Specifier](#MM_Specifier). | 2009-06-15T13:45:30 -> 06 |
-| "MMM" | The abbreviated name of the month.<br /><br /> More information: [The "MMM" Custom Format Specifier](#MMM_Specifier). | 2009-06-15T13:45:30 -> Jun (en-US)<br /><br /> 2009-06-15T13:45:30 -> juin (fr-FR)<br /><br /> 2009-06-15T13:45:30 -> Jun (zu-ZA) |
-| "MMMM" | The full name of the month.<br /><br /> More information: [The "MMMM" Custom Format Specifier](#MMMM_Specifier). | 2009-06-15T13:45:30 -> June (en-US)<br /><br /> 2009-06-15T13:45:30 -> juni (da-DK)<br /><br /> 2009-06-15T13:45:30 -> uJuni (zu-ZA) |
+| "MMM" | The abbreviated name of the month. When used with "d" or "dd" specifiers, uses genitive names (.NET 8+).<br /><br /> More information: [The "MMM" Custom Format Specifier](#MMM_Specifier). | 2009-06-15T13:45:30 -> Jun (en-US)<br /><br /> 2009-06-15T13:45:30 -> juin (fr-FR)<br /><br /> 2009-06-15T13:45:30 -> Jun (zu-ZA) |
+| "MMMM" | The full name of the month. When used with "d" or "dd" specifiers, uses genitive names (.NET 8+).<br /><br /> More information: [The "MMMM" Custom Format Specifier](#MMMM_Specifier). | 2009-06-15T13:45:30 -> June (en-US)<br /><br /> 2009-06-15T13:45:30 -> juni (da-DK)<br /><br /> 2009-06-15T13:45:30 -> uJuni (zu-ZA) |
 | "s" | The second, from 0 to 59.<br /><br /> More information: [The "s" Custom Format Specifier](#sSpecifier). | 2009-06-15T13:45:09 -> 9 |
 | "ss" | The second, from 00 to 59.<br /><br /> More information: [The "ss" Custom Format Specifier](#ssSpecifier). | 2009-06-15T13:45:09 -> 09 |
 | "t" | The first character of the AM/PM designator.<br /><br /> More information: [The "t" Custom Format Specifier](#tSpecifier). | 2009-06-15T13:45:30 -> P (en-US)<br /><br /> 2009-06-15T13:45:30 -> 午 (ja-JP)<br /><br /> 2009-06-15T13:45:30 ->  (fr-FR) |
@@ -427,7 +427,7 @@ The following example includes the "MM" custom format specifier in a custom form
 
 ### <a name="MMM_Specifier"></a> The "MMM" custom format specifier
 
-The "MMM" custom format specifier represents the abbreviated name of the month. The localized abbreviated name of the month is retrieved from the <xref:System.Globalization.DateTimeFormatInfo.AbbreviatedMonthNames%2A?displayProperty=nameWithType> property of the current or specified culture. If there is a "d" or "dd" custom format specifier in the custom format string, it is retrieved from the <xref:System.Globalization.DateTimeFormatInfo.AbbreviatedMonthGenitiveNames%2A?displayProperty=nameWithType> property instead.
+The "MMM" custom format specifier represents the abbreviated name of the month. The localized abbreviated name of the month is retrieved from the <xref:System.Globalization.DateTimeFormatInfo.AbbreviatedMonthNames%2A?displayProperty=nameWithType> property of the current or specified culture. If there is a "d" or "dd" custom format specifier in the custom format string, it is retrieved from the <xref:System.Globalization.DateTimeFormatInfo.AbbreviatedMonthGenitiveNames%2A?displayProperty=nameWithType> property instead (applies to .NET 8+).
 
 The following example includes the "MMM" custom format specifier in a custom format string.
 
@@ -438,7 +438,7 @@ The following example includes the "MMM" custom format specifier in a custom for
 
 ### <a name="MMMM_Specifier"></a> The "MMMM" custom format specifier
 
-The "MMMM" custom format specifier represents the full name of the month. The localized name of the month is retrieved from the <xref:System.Globalization.DateTimeFormatInfo.MonthNames%2A?displayProperty=nameWithType> property of the current or specified culture. If there is a "d" or "dd" custom format specifier in the custom format string, it is retrieved from the <xref:System.Globalization.DateTimeFormatInfo.MonthGenitiveNames%2A?displayProperty=nameWithType> property instead.
+The "MMMM" custom format specifier represents the full name of the month. The localized name of the month is retrieved from the <xref:System.Globalization.DateTimeFormatInfo.MonthNames%2A?displayProperty=nameWithType> property of the current or specified culture. If there is a "d" or "dd" custom format specifier in the custom format string, it is retrieved from the <xref:System.Globalization.DateTimeFormatInfo.MonthGenitiveNames%2A?displayProperty=nameWithType> property instead (applies to .NET 8+).
 
 The following example includes the "MMMM" custom format specifier in a custom format string.
 

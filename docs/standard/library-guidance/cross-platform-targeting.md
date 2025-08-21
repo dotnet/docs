@@ -1,7 +1,7 @@
 ---
 title: Cross-platform targeting for .NET libraries
 description: Best practice recommendations for creating cross-platform .NET libraries.
-ms.date: 01/28/2025
+ms.date: 08/20/2025
 ---
 
 # Cross-platform targeting
@@ -10,7 +10,7 @@ Modern .NET supports multiple operating systems and devices. It's important for 
 
 When choosing target frameworks for your library, it's important to distinguish between two different goals:
 
-- **Cross-platform compatibility**: Your library works on different operating systems (Windows, Linux, macOS). Modern .NET versions like .NET 6+ provide excellent cross-platform support.
+- **Cross-platform compatibility**: Your library works on different operating systems (Windows, Linux, macOS). Modern .NET versions like .NET 8+ provide excellent cross-platform support.
 - **Breadth targeting**: Your library supports a wide range of .NET implementations and versions to maximize compatibility across different user scenarios.
 
 These goals don't always require the same approach. If your target applications all use modern .NET, your libraries can target the same modern .NET versions without needing to target older frameworks.
@@ -19,8 +19,8 @@ These goals don't always require the same approach. If your target applications 
 
 .NET and .NET Standard targets are the best way to add cross-platform support to a .NET library.
 
+* .NET versions 5 through 10 are implementations of .NET. Each version is a single product with a uniform set of capabilities and APIs that can be used for Windows desktop apps and cross-platform console apps, cloud services, and websites.
 * [.NET Standard](../net-standard.md) is a specification of .NET APIs that are available on all .NET implementations. Targeting .NET Standard lets you produce libraries that are constrained to use APIs that are in a given version of .NET Standard, which means it's usable by all platforms that implement that version of .NET Standard.
-* .NET 6-9 are implementations of .NET. Each version is a single product with a uniform set of capabilities and APIs that can be used for Windows desktop apps and cross-platform console apps, cloud services, and websites.
 
 For more information about how .NET compares to .NET Standard, see [.NET 5 and .NET Standard](../net-standard.md#net-5-and-net-standard).
 
@@ -34,9 +34,9 @@ If your project targets .NET or .NET Standard and compiles successfully, it does
 > [!TIP]
 > The .NET team offers a [Platform compatibility analyzer](../analyzers/platform-compat-analyzer.md) to help you discover possible issues.
 
-✔️ DO start with including a `net6.0` target or later for new libraries.
+✔️ DO start with including a `net8.0` target or later for new libraries.
 
-> For new libraries, targeting modern .NET (such as .NET 6 or later) provides access to the latest APIs, performance improvements, and enables features like AOT and trimming. Modern .NET versions are cross-platform and provide excellent compatibility across Windows, Linux, and macOS.
+> For new libraries, targeting modern .NET (such as .NET 8 or later) provides access to the latest APIs and performance improvements, and enables features like AOT and trimming. Modern .NET versions are cross-platform and provide excellent compatibility across Windows, Linux, and macOS.
 
 ✔️ CONSIDER including a `netstandard2.0` target if you need broad compatibility or .NET Framework support.
 
@@ -111,7 +111,7 @@ public static class GpsLocation
 
 > The .NET Standard assembly will automatically be used by NuGet. Targeting individual .NET implementations increases the `*.nupkg` size for no benefit.
 
-✔️ CONSIDER adding a target for `net462` when you're also targeting `netstandard2.0` and need to support older .NET Framework applications.
+✔️ CONSIDER adding a target for `net462` when you're also targeting `netstandard2.0`.
 
 > Using .NET Standard 2.0 from .NET Framework has some issues that were addressed in .NET Framework 4.7.2. You can improve the experience for developers that are still on .NET Framework 4.6.2 - 4.7.1 by offering them a binary that's built for .NET Framework 4.6.2.
 
@@ -124,8 +124,8 @@ public static class GpsLocation
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <!-- This project will output net6.0 and netstandard2.0 assemblies -->
-    <TargetFrameworks>net6.0;netstandard2.0</TargetFrameworks>
+    <!-- This project will output net8.0 and netstandard2.0 assemblies -->
+    <TargetFrameworks>net8.0;netstandard2.0</TargetFrameworks>
   </PropertyGroup>
 </Project>
 ```

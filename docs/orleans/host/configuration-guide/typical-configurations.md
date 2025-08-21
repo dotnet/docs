@@ -3,6 +3,7 @@ title: Typical configurations
 description: Learn about typical configurations in .NET Orleans.
 ms.date: 05/23/2025
 ms.topic: reference
+ms.custom: sfi-ropc-nochange
 ---
 
 # Typical configurations

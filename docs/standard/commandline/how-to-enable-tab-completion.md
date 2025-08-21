@@ -12,9 +12,9 @@ ms.topic: how-to
 
 # Tab completion for System.CommandLine
 
-[!INCLUDE [scl-preview](../../../includes/scl-preview.md)]
+[!INCLUDE [scl-preview](./includes/preview.md)]
 
-Apps that use `System.CommandLine` have built-in support for tab completion in certain shells. To enable it, the end user must take a few steps once per shell. Once this is done, tab completion is automatic for static values in your app, such as enum values or values defined by calling `System.CommandLine.Option<T>.AcceptOnlyFromAmong`. You can also customize tab completion by providing values dynamically at runtime.
+Apps that use `System.CommandLine` have built-in support for tab completion in certain shells. To enable it, the end user must take a few steps once per shell. Once this is done, tab completion is automatic for static values in your app, such as enum values or values defined by calling <xref:System.CommandLine.Option`1.AcceptOnlyFromAmong(System.String[])>. You can also customize tab completion by providing values dynamically at runtime.
 
 ## Enable tab completion
 
@@ -59,7 +59,7 @@ The values shown when the Tab key is pressed are provided as `CompletionItem` in
 The following `CompletionItem` properties are set:
 
 * `Label` is the completion value to be shown.
-* `SortText` ensures that the values in the list are presented in the correct order. It is set by converting `i` to a two-digit string, so that sorting is based on 01, 02, 03, and so on, through 14. If you do not set this parameter, sorting is based on the `Label`, which in this example is in short date format and will not sort correctly.
+* `SortText` ensures that the values in the list are presented in the correct order. It is set by converting `i` to a two-digit string, so that sorting is based on 01, 02, 03, and so on, through 14. If you don't set this parameter, sorting is based on the `Label`, which in this example is in short date format and will not sort correctly.
 
 There are other `CompletionItem` properties, such as `Documentation` and `Detail`, but they are not yet used in `System.CommandLine`.
 

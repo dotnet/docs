@@ -2,6 +2,7 @@
 title: Publishing a NuGet package
 description: Best practice recommendations for publishing .NET libraries to NuGet.
 ms.date: 10/02/2018
+ms.custom: sfi-image-nochange
 ---
 # Publishing a NuGet package
 

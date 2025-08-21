@@ -3,6 +3,7 @@ description: "Learn more about: Configuring Tracking for a Workflow"
 title: "Configuring Tracking for a Workflow"
 ms.date: "03/30/2017"
 ms.assetid: 905adcc9-30a0-4918-acd6-563f86db988a
+ms.custom: sfi-image-nochange
 ---
 
 # Configuring Tracking for a Workflow

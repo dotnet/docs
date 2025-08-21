@@ -28,7 +28,9 @@ await Host.CreateDefaultBuilder(args)
 
 The preceding code relies on the [Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting) and [Microsoft.Orleans.Server](https://www.nuget.org/packages/Microsoft.Orleans.Server) NuGet packages. The <xref:Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.RunConsoleAsync%2A> extension method extends <xref:Microsoft.Extensions.Hosting.IHostBuilder> to help manage the app's lifetime accordingly, listening for process termination signals and shutting down the silo gracefully.
 
-Internally, the `RunConsoleAsync` method calls <xref:Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.UseConsoleLifetime%2A>, which ensures the app shuts down gracefully. For more information on host shutdown, see [.NET Generic Host: Host shutdown](../../../core/extensions/generic-host.md#host-shutdown).
+Internally, the `RunConsoleAsync` method calls <xref:Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.UseConsoleLifetime%2A>, which ensures the app shuts down gracefully. Orleans is hosted within the .NET Generic Host, so it shuts down when the host application does, regardless of the lifetime model used.
+
+For more information on host shutdown, see [.NET Generic Host: Host shutdown](../../../core/extensions/generic-host.md#host-shutdown).
 
 ## See also
 

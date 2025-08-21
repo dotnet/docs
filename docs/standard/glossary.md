@@ -2,8 +2,6 @@
 title: .NET glossary
 description: Find out the meaning of selected terms used in the .NET documentation.
 ms.date: 09/25/2024
-author: tdykstra
-ms.author: tdykstra
 ms.topic: reference
 ---
 # .NET glossary

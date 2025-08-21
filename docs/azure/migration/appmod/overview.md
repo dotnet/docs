@@ -10,7 +10,7 @@ ms.author: alexwolf
 
 # GitHub Copilot app modernization for .NET (Preview) overview
 
-[GitHub Copilot app modernization for .NET (Preview)](https://marketplace.visualstudio.com/items?itemName=vscjava.appmod-dotnet) helps you migrate .NET applications to Azure quickly and confidently by guiding you through assessment, solution recommendations, code fixes, and validation - all in one tool.
+[GitHub Copilot app modernization for .NET (Preview)](https://aka.ms/appmod-dotnet-marketplace) helps you migrate .NET applications to Azure quickly and confidently by guiding you through assessment, solution recommendations, code fixes, and validation - all in one tool.
 
 With this assistant, you can:
 
@@ -44,6 +44,10 @@ When code changes are needed, the tool guides you through remediation using pred
 - Moving from AWS S3 to Azure Blob Storage
 
 For more information, see [Predefined tasks](predefined-tasks.md).
+
+### Upgrading .NET projects
+
+Upgrading .NET apps is a common task that requires substantial time and resources. GitHub Copilot App Modernization - upgrade for .NET provides an AI-based solution designed to assist with updating your .NET apps. For more information, see [GitHub Copilot App Modernization - upgrade for .NET](../../../core/porting/github-copilot-app-modernization-overview.md).
 
 ## Common use cases
 

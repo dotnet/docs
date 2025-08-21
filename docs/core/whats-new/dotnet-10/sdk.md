@@ -2,14 +2,14 @@
 title: What's new in the SDK and tooling for .NET 10
 description: Learn about the new .NET SDK features introduced in .NET 10.
 titleSuffix: ""
-ms.date: 07/16/2025
+ms.date: 08/12/2025
 ms.topic: whats-new
 ai-usage: ai-assisted
 ---
 
 # What's new in the SDK and tooling for .NET 10
 
-This article describes new features and enhancements in the .NET SDK for .NET 10. It has been updated for Preview 6.
+This article describes new features and enhancements in the .NET SDK for .NET 10. It's been updated for Preview 7.
 
 ## .NET tools enhancements
 
@@ -59,6 +59,27 @@ The actual implementation of the `dnx` command is in the `dotnet` CLI itself, al
 
 For more information about managing .NET tools, see [Manage .NET tools](../../tools/global-tools.md).
 
+### Use the `any` RuntimeIdentifier with platform-specific .NET tools
+
+The [platform-specific .NET tools](#platform-specific-net-tools) feature is great for making sure tools are optimized for specific platforms that you target ahead-of-time. However, there are times where you won't know all of the platforms that you'd like to target, or sometimes .NET itself will learn how to support a new platform, and you'd like your tool to be runnable there too.
+
+To make your tool work this way, add the `any` runtime identifier to your project file:
+
+```xml
+<PropertyGroup>
+  <RuntimeIdentifiers>
+       linux-x64;
+       linux-arm64;
+       macos-arm64;
+       win-x64;
+       win-arm64;
+       any
+  </RuntimeIdentifiers>
+</PropertyGroup>
+```
+
+This RuntimeIdentifier is at the 'root' of the platform-compatibility checking, and since it declares support for _any_ platform, the tool that gets packaged will be the most compatible kind of tool - a framework-dependent, platform-agnostic .NET DLL, which requires a compatible .NET Runtime to execute. When you perform a `dotnet pack` to create your tool, you'll see a new package for the `any` RuntimeIdentifier appear alongside the other platform-specific packages and the top-level manifest package.
+
 ### CLI introspection with `--cli-schema`
 
 A new `--cli-schema` option is available on all CLI commands. When used, it outputs a JSON representation of the CLI command tree for the invoked command or subcommand. This is useful for tool authors, shell integration, and advanced scripting.
@@ -92,7 +113,7 @@ The output provides a structured, machine-readable description of the command's 
 
 ## File-based apps enhancements
 
-.NET 10 brings significant updates to the file-based apps experience, including publish support and native AOT capabilities. For an introduction to file-based programs, see [File based programs](../../../csharp/tour-of-csharp/overview.md#file-based-programs) and [Building and running C# programs](../../../csharp/fundamentals/program-structure/index.md#building-and-running-c-programs).
+.NET 10 brings significant updates to the file-based apps experience, including publish support and native AOT capabilities. For an introduction to file-based apps, see [File-based apps](../../../csharp/tour-of-csharp/overview.md#file-based-apps) and [Building and running C# programs](../../../csharp/fundamentals/program-structure/index.md#building-and-running-c-programs).
 
 ### Enhanced file-based apps with publish support and native AOT
 

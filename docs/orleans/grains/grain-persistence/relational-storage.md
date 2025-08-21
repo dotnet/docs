@@ -3,6 +3,7 @@ title: ADO.NET grain persistence
 description: Learn about ADO.NET grain persistence in .NET Orleans.
 ms.date: 05/23/2025
 ms.topic: how-to
+ms.custom: sfi-ropc-nochange
 ---
 
 # ADO.NET grain persistence

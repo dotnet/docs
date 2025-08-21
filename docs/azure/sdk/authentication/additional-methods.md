@@ -2,8 +2,11 @@
 title: Additional methods to authenticate to Azure from .NET apps
 description: This article describes additional, less common methods you can use to authenticate your .NET app to Azure resources.
 ms.topic: how-to
-ms.custom: devx-track-dotnet, engagement-fy23
 ms.date: 03/14/2025
+ms.custom:
+  - devx-track-dotnet
+  - engagement-fy23
+  - sfi-ropc-nochange
 ---
 
 # Additional methods to authenticate to Azure resources from .NET apps

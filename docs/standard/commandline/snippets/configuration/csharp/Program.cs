@@ -20,19 +20,15 @@ class Program
         rootCommand.SetAction((parseResult) =>
         {
             FileInfo? fileOptionValue = parseResult.GetValue(fileOption);
-            parseResult.Configuration.Output.WriteLine($"File option value: {fileOptionValue?.FullName}");
+            parseResult.InvocationConfiguration.Output.WriteLine(
+                $"File option value: {fileOptionValue?.FullName}"
+                );
         });
         // </rootcommand>
 
         // <captureoutput>
         StringWriter output = new();
-        CommandLineConfiguration configuration = new(rootCommand)
-        {
-            Output = output,
-            Error = TextWriter.Null
-        };
-
-        configuration.Parse("-h").Invoke();
+        rootCommand.Parse("-h").Invoke(new() { Output = output });
         Debug.Assert(output.ToString().Contains("Configuration sample"));
         // </captureoutput>
     }

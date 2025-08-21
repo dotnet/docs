@@ -23,6 +23,8 @@ The standard query operator methods that perform projection are listed in the fo
 
 The following example uses the `select` clause to project the first letter from each string in a list of strings.
 
+[!INCLUDE [Common Datasources reference](../includes/common-data-sources-reference.md)]
+
 :::code language="csharp" source="./snippets/standard-query-operators/SelectProjectionExamples.cs" id="SelectSimpleQuery":::
 
 The equivalent query using method syntax is shown in the following code:

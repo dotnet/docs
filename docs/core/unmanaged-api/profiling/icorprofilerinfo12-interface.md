@@ -16,15 +16,15 @@ api_type:
 
 ## Methods
 
-|Method|Description|
+| Method | Description |
 |------------|-----------------|
-|[EventPipeStartSession Method](icorprofilerinfo12-eventpipestartsession-method.md)|Starts a profiler EventPipe session.|
-|[EventPipeAddProviderToSession Method](icorprofilerinfo12-eventpipeaddprovidertosession-method.md)|Adds a provider to an existing EventPipe session.|
-|[EventPipeStopSession Method](icorprofilerinfo12-eventpipestopsession-method.md)|Stops an EventPipe session.|
-|[EventPipeCreateProvider Method](icorprofilerinfo12-eventpipecreateprovider-method.md)|Creates an EventPipe provider.|
-|[EventPipeGetProviderInfo Method](icorprofilerinfo12-eventpipegetproviderinfo-method.md)|Gets the name of an EventPipe provider from its ID.|
-|[EventPipeDefineEvent Method](icorprofilerinfo12-eventpipedefineevent-method.md)|Defines an event on an existing EventPipe provider.|
-|[EventPipeWriteEvent Method](icorprofilerinfo12-eventpipewriteevent-method.md)|Writes an EventPipe event.|
+|[EventPipeStartSession Method](icorprofilerinfo12-eventpipestartsession-method.md)| Starts a profiler EventPipe session. |
+|[EventPipeAddProviderToSession Method](icorprofilerinfo12-eventpipeaddprovidertosession-method.md)| Adds a provider to an existing EventPipe session. |
+|[EventPipeStopSession Method](icorprofilerinfo12-eventpipestopsession-method.md)| Stops an EventPipe session. |
+|[EventPipeCreateProvider Method](icorprofilerinfo12-eventpipecreateprovider-method.md)| Creates an EventPipe provider. |
+|[EventPipeGetProviderInfo Method](icorprofilerinfo12-eventpipegetproviderinfo-method.md)| Gets the name of an EventPipe provider from its ID. |
+|[EventPipeDefineEvent Method](icorprofilerinfo12-eventpipedefineevent-method.md)| Defines an event on an existing EventPipe provider. |
+|[EventPipeWriteEvent Method](icorprofilerinfo12-eventpipewriteevent-method.md)| Writes an EventPipe event. |
 
 ## Requirements
 

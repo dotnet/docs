@@ -63,7 +63,7 @@ internal class TotalCount
     public void Add(int value, object? env, object? region, object? requestName, object? requestStatus)
 }
 
-internal TotalFailures
+internal class TotalFailures
 {
     public void Add(int value)
 }

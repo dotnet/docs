@@ -3,6 +3,7 @@ title: "How to: Configure an IIS-hosted WCF service with SSL"
 description: Learn how to set up an IIS-hosted WCF service to use HTTP transport security, which requires a certificate that is registered with IIS.
 ms.date: "03/30/2017"
 ms.assetid: df2fe31f-a4bb-4024-92ca-b74ba055e038
+ms.custom: sfi-image-nochange
 ---
 # How to: Configure an IIS-hosted WCF service with SSL
 

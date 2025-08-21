@@ -16,10 +16,10 @@ api_type:
 
 ## Methods
 
-|Method|Description|
+| Method | Description |
 |------------|-----------------|
-|[GetEnvironmentVariable Method](icorprofilerinfo11-getenvironmentvariable-method.md)|Gets an environment variable.|
-|[SetEnvironmentVariable Method](icorprofilerinfo11-setenvironmentvariable-method.md)|Sets an environment variable.|
+|[GetEnvironmentVariable Method](icorprofilerinfo11-getenvironmentvariable-method.md)| Gets an environment variable. |
+|[SetEnvironmentVariable Method](icorprofilerinfo11-setenvironmentvariable-method.md)| Sets an environment variable. |
 
 ## Requirements
 

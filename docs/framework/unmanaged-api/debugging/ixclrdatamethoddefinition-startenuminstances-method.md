@@ -15,7 +15,6 @@ helpviewer.keywords:
 topic_type:
   - "apiref"
 author: "cshung"
-ms.author: "andrewau"
 ---
 # IXCLRDataMethodDefinition::StartEnumInstances Method
 
@@ -46,10 +45,10 @@ The provided method is part of the `IXCLRDataMethodDefinition` interface and cor
 
 ## Requirements
 
-**Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
-**Header:** None  
-**Library:** None  
-**.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
+**Platforms:** See [System Requirements](../../get-started/system-requirements.md).
+**Header:** None
+**Library:** None
+**.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]
 
 ## See also
 

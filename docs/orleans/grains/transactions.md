@@ -20,7 +20,7 @@ Orleans transactions are opt-in. Both the silo and the client must be configured
 
 ```csharp
 var builder = Host.CreateDefaultBuilder(args)
-    UseOrleans((context, siloBuilder) =>
+    .UseOrleans((context, siloBuilder) =>
     {
         siloBuilder.UseTransactions();
     });
@@ -30,7 +30,7 @@ Likewise, to enable transactions on the client, call <xref:Orleans.Hosting.Clien
 
 ```csharp
 var builder = Host.CreateDefaultBuilder(args)
-    UseOrleansClient((context, clientBuilder) =>
+    .UseOrleansClient((context, clientBuilder) =>
     {
         clientBuilder.UseTransactions();
     });

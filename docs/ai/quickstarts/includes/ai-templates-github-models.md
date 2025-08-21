@@ -8,10 +8,10 @@ ms.author: alexwolf
 
 ## Prerequisites
 
-* .NET 9.0 SDK - [Install the .NET 9.0 SDK](https://dotnet.microsoft.com/download)
-* Visual Studio 2022 - [Install Visual Studio 2022](https://visualstudio.microsoft.com/) (optional), or
-* Visual Studio Code - [Install Visual Studio Code](https://code.visualstudio.com) (optional)
-  * With the C# DevKit - [Install C# Dev Kit extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit)
+* [.NET 9.0 SDK](https://dotnet.microsoft.com/download)
+* One of the following IDEs (optional):
+  * [Visual Studio 2022](https://visualstudio.microsoft.com/)
+  * [Visual Studio Code](https://code.visualstudio.com) with [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit)
 
 ## Install the .NET AI app template
 
@@ -79,16 +79,20 @@ The sample app you created is a Blazor Interactive Server web app preconfigured 
 
 ## Configure access to GitHub Models
 
-To authenticate to GitHub models from your code, you'll need to create a GitHub personal access token:
+To authenticate to GitHub models from your code, you'll need to [create a GitHub personal access token](https://docs.github.com/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-fine-grained-personal-access-token):
 
-1. Navigate to the **Personal access tokens** page of your GitHub account settings.
+1. Navigate to the **Personal access tokens** page of your GitHub account settings under **Developer Settings**.
 1. Select **Generate new token**.
-1. Enter a **Token name** and then select **Generate token** at the bottom of the page.
+1. Enter a name for the token, and under **Permissions**, set **Models** to **Access: Read-only**.
+1. Select **Generate token** at the bottom of the page.
 1. Copy the token for use in the steps ahead.
 
 ## Configure the app
 
-The **AI Chat Web App** app is almost ready to go as soon as it's created. However, you'll need to configure the app to use the personal access token you setup for GitHub Models. By default, the app template searches for this value in the project's local .NET user secrets. You can manage user secrets using either the Visual Studio UI or the .NET CLI.
+The **AI Chat Web App** app is almost ready to go as soon as it's created. However, you need to configure the app to use the personal access token you set up for GitHub Models. By default, the app template searches for this value in the project's local .NET user secrets. You can manage user secrets using either the Visual Studio UI or the .NET CLI.
+
+> [!NOTE]
+> If you enabled .NET Aspire for your app, skip to the [.NET Aspire configuration](#dotnet-aspire-configuration) section.
 
 ## [Visual Studio](#tab/configure-visual-studio)
 
@@ -103,9 +107,6 @@ The **AI Chat Web App** app is almost ready to go as soon as it's created. Howev
     ```
 
 ## [.NET CLI](#tab/configure-dotnet-cli)
-
-1. Open a terminal window set to the root of your project.
-1. Running the `dotnet user-secrets set` command to set the user secret:
 
 ```dotnetcli
 dotnet user-secrets set GitHubModels:Token <your-personal-access-token>
@@ -139,3 +140,10 @@ dotnet user-secrets set ConnectionStrings:openai "Endpoint=https://models.infere
 ```
 
 ---
+
+By default, the app template uses the `gpt-4o-mini` and `text-embedding-3-small` models. To try other models, update the name parameters in `Program.cs`:
+
+  ```csharp
+  var chatClient = ghModelsClient.AsChatClient("gpt-4o-mini");
+  var embeddingGenerator = ghModelsClient.AsEmbeddingGenerator("text-embedding-3-small");
+  ```

@@ -13,11 +13,8 @@ The <xref:System.ServiceModel.Routing.RoutingService> is implemented as a Window
 - Content-based routing
 
   - Service aggregation
-
   - Service versioning
-
   - Priority routing
-
   - Dynamic configuration
 
 - Protocol bridging
@@ -33,24 +30,21 @@ While it is possible to create an intermediary service that accomplishes one or 
 The Routing Service provides a generic, dynamically configurable, pluggable SOAP intermediary that is compatible with the WCF Service and Channel models and allows you to perform content-based routing of SOAP-based messages.
 
 > [!NOTE]
-> The Routing Service does not currently support routing of WCF REST services.  To route REST calls, consider using <xref:System.Web.Routing> or [Application Request Routing](https://iis-umbraco.azurewebsites.net/downloads/microsoft/application-request-routing).
+> The Routing Service does not currently support routing of WCF REST services. To route REST calls, consider using <xref:System.Web.Routing> or [Application Request Routing](https://www.iis.net/downloads/microsoft/application-request-routing).
 
 ## Content-Based Routing
 
 Content-based routing is the ability to route a message based on one or more values contained within the message. The Routing Service inspects each message and routes it to the destination endpoint based on the message contents and the routing logic you create. Content-based routing provides the basis for service aggregation, service versioning, and priority routing.
 
-To implement content-based routing, the Routing Service relies on <xref:System.ServiceModel.Dispatcher.MessageFilter> implementations that are used to match specific values within the messages to be routed. If a **MessageFilter** matches a message, the message is routed to the destination endpoint associated with the **MessageFilter**.  Message filters are grouped together into filter tables (<xref:System.ServiceModel.Routing.Configuration.FilterTableCollection>) to construct complex routing logic. For example, a filter table might contain five mutually exclusive message filters that cause messages to be routed to only one of the five destination endpoints.
+To implement content-based routing, the Routing Service relies on <xref:System.ServiceModel.Dispatcher.MessageFilter> implementations that are used to match specific values within the messages to be routed. If a **MessageFilter** matches a message, the message is routed to the destination endpoint associated with the **MessageFilter**. Message filters are grouped together into filter tables (<xref:System.ServiceModel.Routing.Configuration.FilterTableCollection>) to construct complex routing logic. For example, a filter table might contain five mutually exclusive message filters that cause messages to be routed to only one of the five destination endpoints.
 
 The Routing Service allows you to configure the logic that is used to perform content-based routing, as well as dynamically update the routing logic at run time.
 
 Through the grouping of message filters into filter tables, routing logic can be constructed that allows you to handle multiple routing scenarios such as:
 
 - Service aggregation
-
 - Service versioning
-
 - Priority routing
-
 - Dynamic configuration
 
 For more information about message filters and filter tables, see [Routing Introduction](routing-introduction.md) and [Message Filters](message-filters.md).
@@ -87,9 +81,9 @@ For more information about SOAP processing, see [Routing Introduction](routing-i
 
 ## Error Handling
 
-In a system composed of distributed services that rely on network communications, it is important to ensure that communications within your system are resistant to transient network failures.  The Routing Service implements error handling that allows you to handle many communication failure scenarios that might otherwise result in a service outage.
+In a system composed of distributed services that rely on network communications, it is important to ensure that communications within your system are resistant to transient network failures. The Routing Service implements error handling that allows you to handle many communication failure scenarios that might otherwise result in a service outage.
 
-If the Routing Service encounters a <xref:System.ServiceModel.CommunicationException> while attempting to send a message, error handling will take place.  These exceptions typically indicate that a problem was encountered while attempting to communicate with the defined client endpoint, such as an <xref:System.ServiceModel.EndpointNotFoundException>, <xref:System.ServiceModel.ServerTooBusyException>, or <xref:System.ServiceModel.CommunicationObjectFaultedException>.  The error-handling code will also catch and attempt to retry sending when a **TimeoutException** occurs, which is another common exception that is not derived from **CommunicationException**.
+If the Routing Service encounters a <xref:System.ServiceModel.CommunicationException> while attempting to send a message, error handling will take place. These exceptions typically indicate that a problem was encountered while attempting to communicate with the defined client endpoint, such as an <xref:System.ServiceModel.EndpointNotFoundException>, <xref:System.ServiceModel.ServerTooBusyException>, or <xref:System.ServiceModel.CommunicationObjectFaultedException>. The error-handling code will also catch and attempt to retry sending when a **TimeoutException** occurs, which is another common exception that is not derived from **CommunicationException**.
 
 For more information about error handling, see [Routing Introduction](routing-introduction.md).
 
@@ -101,15 +95,12 @@ For more information about backup endpoints, see [Routing Introduction](routing-
 
 ## Streaming
 
-The routing service can successfully stream messages if you set the binding to support streaming.  However, there are some conditions under which messages may need to buffered:
+The routing service can successfully stream messages if you set the binding to support streaming. However, there are some conditions under which messages may need to buffered:
 
-- Multicast (buffer to create additional message copies)
-
-- Failover (buffer in case the message needs to be sent to a backup)
-
-- System.ServiceModel.Routing.RoutingConfiguration.RouteOnHeadersOnly is false (buffer to present the MessageFilterTable with a MessageBuffer so that filters can inspect the body)
-
-- Dynamic configuration
+- Multicast (buffer to create additional message copies).
+- Failover (buffer in case the message needs to be sent to a backup).
+- System.ServiceModel.Routing.RoutingConfiguration.RouteOnHeadersOnly is false (buffer to present the MessageFilterTable with a MessageBuffer so that filters can inspect the body).
+- Dynamic configuration.
 
 ## See also
 

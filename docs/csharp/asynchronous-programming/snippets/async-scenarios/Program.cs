@@ -1,3 +1,4 @@
+// <complete>
 using System.Text.RegularExpressions;
 using System.Windows;
 using Microsoft.AspNetCore.Mvc;
@@ -145,6 +146,22 @@ public class Program
     }
     // </GetUsersForDatasetByLINQ>
 
+    // <ProcessTasksAsTheyComplete>
+    private static async Task ProcessTasksAsTheyCompleteAsync(IEnumerable<int> userIds)
+    {
+        var getUserTasks = userIds.Select(id => GetUserAsync(id)).ToList();
+        
+        while (getUserTasks.Count > 0)
+        {
+            Task<User> completedTask = await Task.WhenAny(getUserTasks);
+            getUserTasks.Remove(completedTask);
+            
+            User user = await completedTask;
+            Console.WriteLine($"Processed user {user.id}");
+        }
+    }
+    // </ProcessTasksAsTheyComplete>
+
     // <ExtractDataFromNetwork>
     [HttpGet, Route("DotNetCount")]
     static public async Task<int> GetDotNetCountAsync(string URL)
@@ -177,6 +194,9 @@ public class Program
         {
             Console.WriteLine($"{user.id}: isEnabled={user.isEnabled}");
         }
+
+        Console.WriteLine("Processing tasks as they complete...");
+        await ProcessTasksAsTheyCompleteAsync(ids);
 
         Console.WriteLine("Application ending.");
     }
@@ -219,4 +239,5 @@ public class Program
 // 9: isEnabled= False
 // 0: isEnabled= False
 // Application ending.
+// </complete>
 

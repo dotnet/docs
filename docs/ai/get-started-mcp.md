@@ -68,7 +68,7 @@ dotnet add package ModelContextProtocol --prerelease
 
 Instead of building unique connectors for each integration point, you can often leverage or reference prebuilt integrations from various providers such as GitHub and Docker:
 
-- [Available MPC clients](https://modelcontextprotocol.io/clients)
+- [Available MCP clients](https://modelcontextprotocol.io/clients)
 - [Available MCP servers](https://modelcontextprotocol.io/examples)
 
 ### Integration with Microsoft.Extensions.AI

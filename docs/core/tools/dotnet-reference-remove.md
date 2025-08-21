@@ -12,7 +12,7 @@ ms.date: 04/02/2025
 `dotnet reference remove` - Removes project-to-project (P2P) references.
 
 > [!NOTE]
-> If you're using .NET 9 SDK or earlier, use the "verb first" form (`dotnet reference remove`) instead. The "noun first" form was introduced in .NET 10. For more information, see [More consistent command order](../whats-new/dotnet-10/sdk.md#more-consistent-command-order).
+> If you're using .NET 9 SDK or earlier, use the "verb first" form (`dotnet remove reference`) instead. The "noun first" form was introduced in .NET 10. For more information, see [More consistent command order](../whats-new/dotnet-10/sdk.md#more-consistent-command-order).
 
 ## Synopsis
 

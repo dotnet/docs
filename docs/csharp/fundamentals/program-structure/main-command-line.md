@@ -16,7 +16,7 @@ helpviewer_keywords:
 
 The `Main` method is the entry point of a C# application. When the application is started, the `Main` method is the first method that is invoked.
 
-There can only be one entry point in a C# program. If you have more than one class that has a `Main` method, you must compile your program with the **StartupObject** compiler option to specify which `Main` method to use as the entry point. For more information, see [**StartupObject** (C# Compiler Options)](../../language-reference/compiler-options/advanced.md#mainentrypoint-or-startupobject). The following example displays the number of command line arguments as its first action:
+There can only be one entry point in a C# program. If you have more than one class that has a `Main` method, you must compile your program with the **StartupObject** compiler option to specify which `Main` method to use as the entry point. For more information, see [**StartupObject** (C# Compiler Options)](../../language-reference/compiler-options/advanced.md#startupobject). The following example displays the number of command line arguments as its first action:
 
 :::code language="csharp" source="snippets/main-command-line/TestClass.cs":::
 
@@ -24,7 +24,7 @@ You can also use top-level statements in one file as the entry point for your ap
 
 :::code language="csharp" source="snippets/top-level-statements-1/Program.cs":::
 
-Beginning with C# 14, programs can be [*file based programs*](./index.md#building-and-running-c-programs), where a single file contains the program. You run *file based programs* with the command `dotnet run <file.cs>`, or using the `#!/usr/local/share/dotnet/dotnet run` directive as the first line (unix shells only).
+Beginning with C# 14, programs can be [*file-based apps*](./index.md#building-and-running-c-programs), where a single file contains the program. You run *file-based apps* with the command `dotnet run <file.cs>`, or using the `#!/usr/local/share/dotnet/dotnet run` directive as the first line (unix shells only).
 
 ## Overview
 

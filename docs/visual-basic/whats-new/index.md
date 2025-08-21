@@ -9,7 +9,6 @@ helpviewer_keywords:
   - "new features, Visual Basic"
   - "what's new [Visual Basic]"
   - "Visual Basic, what's new"
-ms.custom: UpdateFrequency1
 ms.topic: whats-new
 ---
 # What's new for Visual Basic

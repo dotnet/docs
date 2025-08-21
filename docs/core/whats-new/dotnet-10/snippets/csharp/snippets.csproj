@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <OutputType>Library</OutputType>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>preview</LangVersion>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.IO.Pipelines" Version="8.0.0" />
+  </ItemGroup>
+
+  <!-- Exclude all C# files from compilation as they are code snippets, not a complete application -->
+  <ItemGroup>
+    <Compile Remove="**/*.cs" />
+  </ItemGroup>
+  
+  <!-- Include C# files as content for documentation purposes -->
+  <ItemGroup>
+    <Content Include="**/*.cs" />
+  </ItemGroup>
+
+</Project>

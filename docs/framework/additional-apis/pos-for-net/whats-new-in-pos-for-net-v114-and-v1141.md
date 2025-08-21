@@ -2,7 +2,7 @@
 title: What's New in POS for .NET v1.14 and v1.14.1
 description: What's New in POS for .NET v1.14 and v1.14.1 (POS for .NET v1.14 SDK Documentation)
 ms.date: 04/12/2017
-ms.custom: "pos-restored-from-archive,UpdateFrequency5"
+ms.custom: "pos-restored-from-archive"
 ms.topic: whats-new
 ---
 

@@ -34,6 +34,8 @@ The conversion methods in this table whose names start with "As" change the stat
 
 [!INCLUDE [Datasources](../includes/data-sources-definition.md)]
 
+[!INCLUDE [Common Datasources reference](../includes/common-data-sources-reference.md)]
+
 ## Query Expression Syntax Example
 
 The following code example uses an explicitly typed range variable to cast a type to a subtype before accessing a member that is available only on the subtype.

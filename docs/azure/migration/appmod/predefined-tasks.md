@@ -23,9 +23,9 @@ Predefined tasks capture industry best practices for using Azure services. Curre
 
 App Modernization for .NET currently supports the following predefined tasks:
 
-- **Migrate to Managed Identity based Database on Azure, including Azure SQL DB and Azure PostgreSQL**
+- **Migrate to Managed Identity based Database on Azure, including Azure SQL DB, Azure SQL MI and Azure PostgreSQL**
   
-  Modernize your data layer by migrating from on-premises or legacy databases (such as DB2, Oracle DB, or SQL Server) to Azure SQL DB or Azure PostgreSQL, using secure managed identity authentication.
+  Modernize your data layer by migrating from on-premises or legacy databases (such as DB2, Oracle DB, or SQL Server) to Azure SQL DB, Azure SQL Managed Instance or Azure PostgreSQL, using secure managed identity authentication.
 
 - **Migrate to Azure File Storage**
   
@@ -54,3 +54,7 @@ App Modernization for .NET currently supports the following predefined tasks:
 - **Migrate to Confluent Cloud/Azure Event Hub for Apache Kafka**
   
   Transition from local or on-premises Kafka to managed event streaming with Confluent Cloud or Azure Event Hubs.
+
+- **Migrate to OpenTelemetry on Azure**
+
+  Transition from local logging frameworks like log4net, serilog, windows event log to OpenTelemetry on Azure.

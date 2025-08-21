@@ -427,7 +427,7 @@ The following example includes the "MM" custom format specifier in a custom form
 
 ### <a name="MMM_Specifier"></a> The "MMM" custom format specifier
 
-The "MMM" custom format specifier represents the abbreviated name of the month. The localized abbreviated name of the month is retrieved from the <xref:System.Globalization.DateTimeFormatInfo.AbbreviatedMonthNames%2A?displayProperty=nameWithType> property of the current or specified culture. If there is a "d" or "dd" custom format specifier in the custom format string, it is retrieved from the <xref:System.Globalization.DateTimeFormatInfo.AbbreviatedMonthGenitiveNames%2A?displayProperty=nameWithType> property instead (applies to .NET 8+).
+The "MMM" custom format specifier represents the abbreviated name of the month. The localized abbreviated name of the month is retrieved from the <xref:System.Globalization.DateTimeFormatInfo.AbbreviatedMonthNames%2A?displayProperty=nameWithType> property of the current or specified culture. Starting with .NET 8, if there is a "d" or "dd" custom format specifier in the custom format string, it is retrieved from the <xref:System.Globalization.DateTimeFormatInfo.AbbreviatedMonthGenitiveNames%2A?displayProperty=nameWithType> property instead..
 
 The following example includes the "MMM" custom format specifier in a custom format string.
 
@@ -438,7 +438,7 @@ The following example includes the "MMM" custom format specifier in a custom for
 
 ### <a name="MMMM_Specifier"></a> The "MMMM" custom format specifier
 
-The "MMMM" custom format specifier represents the full name of the month. The localized name of the month is retrieved from the <xref:System.Globalization.DateTimeFormatInfo.MonthNames%2A?displayProperty=nameWithType> property of the current or specified culture. If there is a "d" or "dd" custom format specifier in the custom format string, it is retrieved from the <xref:System.Globalization.DateTimeFormatInfo.MonthGenitiveNames%2A?displayProperty=nameWithType> property instead (applies to .NET 8+).
+The "MMMM" custom format specifier represents the full name of the month. The localized name of the month is retrieved from the <xref:System.Globalization.DateTimeFormatInfo.MonthNames%2A?displayProperty=nameWithType> property of the current or specified culture. Starting with .NET 8, if there is a "d" or "dd" custom format specifier in the custom format string, it is retrieved from the <xref:System.Globalization.DateTimeFormatInfo.MonthGenitiveNames%2A?displayProperty=nameWithType> property instead.
 
 The following example includes the "MMMM" custom format specifier in a custom format string.
 

@@ -10,7 +10,7 @@ Modern .NET supports multiple operating systems and devices. It's important for 
 
 When choosing target frameworks for your library, it's important to distinguish between two different goals:
 
-- **Cross-platform compatibility**: Your library works on different operating systems (Windows, Linux, macOS). Modern .NET versions like .NET 8+ provide excellent cross-platform support.
+- **Modern APIs and patterns**: Your library leans into the benefits of the recent versions of the .NET platform. You use modern language patterns and support advanced deployment models like Native Ahead-of-Time compilation on the CoreCLR.
 - **Breadth targeting**: Your library supports a wide range of .NET implementations and versions to maximize compatibility across different user scenarios.
 
 These goals don't always require the same approach. If your target applications all use modern .NET, your libraries can target the same modern .NET versions without needing to target older frameworks.

@@ -50,22 +50,28 @@ Complete the following steps to enable the application to authenticate through t
     > [!IMPORTANT]
     > You must also be the admin of your tenant to grant consent to your application when you sign in for the first time.
 
-## Example using InteractiveBrowserCredential
+## Implement the code
 
-The following example demonstrates using <xref:Azure.Identity.InteractiveBrowserCredential> in a Windows Forms app to authenticate with the [`BlobServiceClient`](/dotnet/api/azure.storage.blobs.blobserviceclient):
+Complete the following steps in your .NET project:
+
+1. Install the [Azure.Identity](https://www.nuget.org/packages/Azure.Identity) and [Azure.Identity.Broker](https://www.nuget.org/packages/Azure.Identity.Broker) packages.
+1. Get a reference to the parent window on top of which the account picker dialog should appear.
+1. Create an instance of <xref:Azure.Identity.InteractiveBrowserCredential> that accepts an instance of <xref:Azure.Identity.Broker.InteractiveBrowserCredentialBrokerOptions>.
+
+Consider the following sample code from a Windows Forms app that passes the credential to an instance of [BlobServiceClient](/dotnet/api/azure.storage.blobs.blobserviceclient):
 
 :::code language="csharp" source="../snippets/authentication/additional-auth/interactive/InteractiveBrokeredAuth.cs" highlight="16-20":::
 
 > [!NOTE]
 > For more information about retrieving window handles, see [Parent window handles](/entra/msal/dotnet/acquiring-tokens/desktop-mobile/wam#parent-window-handles) and [Retrieve a window handle](/windows/apps/develop/ui-input/retrieve-hwnd).
 
-For the code to run successfully, your user account must be assigned an Azure role on the storage account that allows access to blob containers, such as **Storage Account Data Contributor**. If an app is specified, it must have API permissions set for **user_impersonation Access Azure Storage** (step 6 in the previous section). This API permission allows the app to access Azure storage on behalf of the signed-in user after consent is granted during sign-in.
+For the code to run successfully, your user account must be assigned an Azure RBAC role on the storage account that allows access to blob containers, such as **Storage Account Data Contributor**. If an app is specified, it must have API permissions set for **user_impersonation Access Azure Storage** (step 6 in the previous section). This API permission allows the app to access Azure storage on behalf of the signed-in user after consent is granted during sign-in.
 
 The following screenshot shows the user sign-in experience:
 
-:::image type="content" source="../media/web-account-manager-sign-in-account-picker.png" alt-text="A screenshot that shows the sign-in experience when using the interactive browser broker credential to authenticate a user." :::
+:::image type="content" source="../media/web-account-manager-sign-in-account-picker.png" alt-text="A screenshot that shows the sign-in experience when using a broker-enabled InteractiveBrowserCredential instance to authenticate a user." :::
 
-## Authenticate the default system account via WAM
+### Authenticate the default system account via WAM
 
 Many people always sign in to Windows with the same user account and, therefore, only ever want to authenticate using that account. WAM and `InteractiveBrowserCredential` also support a silent login process that automatically uses a default account so the user doesn't have to repeatedly select it.
 

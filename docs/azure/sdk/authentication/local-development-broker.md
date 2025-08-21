@@ -26,7 +26,7 @@ Brokered authentication enables the application for all operations allowed by th
 
 Complete the following steps to enable the application to authenticate through the broker flow:
 
-1. On the [Azure portal](https://portal.azure.com), navigate to **Microsoft Entra ID** and select **App registrations** on the left-hand menu.
+1. In the [Azure portal](https://portal.azure.com), navigate to **Microsoft Entra ID** and select **App registrations** on the left-hand menu.
 1. Select the registration for your app, then select **Authentication**.
 1. Add the WAM redirect URI to your app registration via a platform configuration:
     1. Under **Platform configurations**, select **+ Add a platform**.

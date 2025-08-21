@@ -35,25 +35,36 @@ namespace objectoriented
         public string Setting { get; set; } = "";
     }
 
+    // Internal interface that CAN be implemented with public members
+    // because it only uses public types in its signature
+    internal interface ILoggable
+    {
+        void Log(string message); // string is public, so this works with implicit implementation
+    }
+
     // Interface with internal accessibility using internal types
     internal interface IConfigurable
     {
-        void Configure(InternalConfiguration config);
+        void Configure(InternalConfiguration config); // Internal type prevents implicit implementation
     }
 
-    // This class shows explicit interface implementation
-    // to work with internal interfaces
-    public class ServiceImplementation : IConfigurable
+    // This class shows both implicit and explicit interface implementation
+    public class ServiceImplementation : ILoggable, IConfigurable
     {
-        // Explicit implementation - no access modifier allowed
-        // This method is not publicly accessible on the class
+        // Implicit implementation works for ILoggable because string is public
+        public void Log(string message)
+        {
+            Console.WriteLine($"Log: {message}");
+        }
+
+        // Explicit implementation required for IConfigurable because it uses internal types
         void IConfigurable.Configure(InternalConfiguration config)
         {
             // Implementation here
             Console.WriteLine($"Configured with: {config.Setting}");
         }
         
-        // If we tried implicit implementation, this wouldn't compile:
+        // If we tried implicit implementation for IConfigurable, this wouldn't compile:
         // public void Configure(InternalConfiguration config) // Error: cannot expose internal type
     }
     // </SnippetInternalInterfaceExample>

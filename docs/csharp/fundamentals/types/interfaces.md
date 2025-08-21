@@ -45,11 +45,15 @@ A base class can also implement interface members by using virtual members. In t
 
 ## Working with internal interfaces
 
-When an interface has internal accessibility or uses internal types in its member signatures, implicit implementation isn't possible because the implementing class member would need to be public while exposing internal types. In such cases, you must use explicit interface implementation. The following example demonstrates this scenario:
+An internal interface can typically be implemented using implicit implementation with public members, as long as all the types in the interface signature are publicly accessible. However, when an interface uses internal types in its member signatures, implicit implementation becomes impossible because the implementing class member would need to be public while exposing internal types. In such cases, you must use explicit interface implementation.
+
+The following example shows both scenarios:
 
 :::code language="csharp" source="./snippets/interfaces/interfaces.cs" ID="InternalInterfaceExample":::
 
 In the preceding example, the `IConfigurable` interface uses an internal type `InternalConfiguration` in its method signature. The `ServiceImplementation` class cannot use implicit implementation because that would require making the `Configure` method public, which isn't allowed when the method signature contains internal types. Instead, explicit interface implementation is used, which doesn't have an access modifier and is only accessible through the interface type.
+
+In contrast, the `ILoggable` interface can be implemented implicitly with public members because all types in its signature (`string`) are publicly accessible, even though the interface itself is internal.
 
 For more information about explicit interface implementation, see [Explicit Interface Implementation](../../programming-guide/interfaces/explicit-interface-implementation.md).
 

@@ -102,14 +102,18 @@ The **AI Chat Web App** app is almost ready to go as soon as it's created. Howev
 
     ```json
     {
-        "GitHubModels:Token": "<your-personal-access-token>"
+        "GitHubModels:Token": "<your-gh-models-access-token>"
     }
     ```
 
 ## [.NET CLI](#tab/configure-dotnet-cli)
 
+1. Open a terminal window set to the root of your project.
+
+1. Run the `dotnet user-secrets set` command to set the user secret:
+
 ```dotnetcli
-dotnet user-secrets set GitHubModels:Token <your-personal-access-token>
+dotnet user-secrets set GitHubModels:Token <your-gh-models-access-token>
 ```
 
 ---
@@ -120,13 +124,13 @@ To use the AIChatWeb template with .NET Aspire orchestration, add the following 
 
 ## [Visual Studio](#tab/configure-visual-studio-aspire)
 
-1. In Visual Studio, right-click on your `*.AppHost` project in the Solution Explorer and select **Manage User Secrets**. This opens a `secrets.json` file where you can store your API keys without them being tracked in source control.
+1. Right-click on your `*.AppHost` project in the Solution Explorer and select **Manage User Secrets**. This opens a `secrets.json` file where you can store your API keys without them being tracked in source control.
 
 2. Add the following key and value:
 
     ```json
     {
-        "ConnectionStrings:openai": "Endpoint=https://models.inference.ai.azure.com;Key=YOUR-API-KEY"
+        "ConnectionStrings:openai": "Endpoint=https://models.inference.ai.azure.com;Key=<your-gh-models-access-token>"
     }
     ```
 
@@ -134,10 +138,10 @@ To use the AIChatWeb template with .NET Aspire orchestration, add the following 
 
 1. Open a terminal window set to the root of your `*.AppHost` project.
 
-1. Running the `dotnet user-secrets set` command to set the user secret:
+1. Run the `dotnet user-secrets set` command to set the user secret:
 
     ```dotnetcli
-    dotnet user-secrets set ConnectionStrings:openai "Endpoint=https://models.inference.ai.azure.com;Key=<YOUR-API-KEY>"
+    dotnet user-secrets set ConnectionStrings:openai "Endpoint=https://models.inference.ai.azure.com;Key=<your-gh-models-access-token>"
     ```
 
 ---

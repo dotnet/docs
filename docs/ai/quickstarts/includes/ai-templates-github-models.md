@@ -88,7 +88,57 @@ To authenticate to GitHub models from your code, you'll need to create a GitHub 
 
 ## Configure the app
 
-The **AI Chat Web App** app is almost ready to go as soon as it's created. However, you'll need to configure the app to use the personal access token you setup for GitHub Modelsfor. By default, the app template searches for this value in the project's local .NET user secrets. You can manage user secrets using either the Visual Studio UI or the .NET CLI.
+The **AI Chat Web App** app is almost ready to go as soon as it's created. However, you'll need to configure the app to use the personal access token you setup for GitHub Models. By default, the app template searches for this value in the project's local .NET user secrets. You can manage user secrets using either the Visual Studio UI or the .NET CLI.
+
+## [Visual Studio](#tab/configure-visual-studio)
+
+1. In Visual Studio, right-click on your project in the Solution Explorer and select **Manage User Secrets**. This opens a `secrets.json` file where you can store your API keys without them being tracked in source control.
+
+2. Add the following key and value:
+
+    ```json
+    {
+        "GitHubModels:Token": "<your-personal-access-token>"
+    }
+    ```
+
+## [.NET CLI](#tab/configure-dotnet-cli)
+
+1. Open a terminal window set to the root of your project.
+1. Running the `dotnet user-secrets set` command to set the user secret:
+
+```dotnetcli
+dotnet user-secrets set GitHubModels:Token <your-personal-access-token>
+```
+
+---
+
+### .NET Aspire configuration
+
+To use the AIChatWeb template with .NET Aspire orchestration, add the following configurations:
+
+# [Visual Studio](#tab/configure-visual-studio-aspire)
+
+1. In Visual Studio, right-click on your `*.AppHost` project in the Solution Explorer and select **Manage User Secrets**. This opens a `secrets.json` file where you can store your API keys without them being tracked in source control.
+
+2. Add the following key and value:
+
+    ```json
+    {
+        "ConnectionStrings:openai": "Endpoint=https://models.inference.ai.azure.com;Key=YOUR-API-KEY"
+    }
+    ```
+
+# [.NET CLI](#tab/configure-dotnet-cli-aspire)
+
+1. Open a terminal window set to the root of your `*.AppHost` project.
+1. Running the `dotnet user-secrets set` command to set the user secret:
+
+```dotnetcli
+dotnet user-secrets set ConnectionStrings:openai "Endpoint=https://models.inference.ai.azure.com;Key=<YOUR-API-KEY>"
+```
+
+---
 
 # [Visual Studio](#tab/configure-visual-studio)
 
@@ -103,6 +153,9 @@ The **AI Chat Web App** app is almost ready to go as soon as it's created. Howev
     ```
 
 # [.NET CLI](#tab/configure-dotnet-cli)
+
+1. Open a terminal window set to the root of your project.
+1. Running the `dotnet user-secrets set` command to set the user secret:
 
 ```dotnetcli
 dotnet user-secrets set GitHubModels:Token <your-personal-access-token>

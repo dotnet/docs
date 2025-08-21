@@ -27,11 +27,11 @@ For a short tutorial on publishing, see [Tutorial: Publish a .NET console applic
 
 ## What is publishing
 
-Publishing a .NET app means compiling source code to create an executable or binary, along with its dependencies and related files, for distribution. After publishing, deploy the app to a server, distribution platform, container, or cloud environment. The publishing process prepares an app for deployment and use outside of a development environment.
+Publishing a .NET app means compiling source code to create an executable or binary, along with its dependencies and related files, for distribution. After publishing, you deploy the app to a server, distribution platform, container, or cloud environment. The publishing process prepares an app for deployment and use outside of a development environment.
 
 ## Publishing modes
 
-There are two primary ways to publish an app. The choice depends on both the deployment environment and the compilation options you want to use. Some factors that influence this decision include whether the deployment environment has the appropriate .NET Runtime installed and whether you need specific compilation features that require bundling the runtime with your app. The two publishing modes are:
+There are two primary ways to publish an app. Some factors that influence this decision include whether the deployment environment has the appropriate .NET Runtime installed and whether you need specific compilation features that require bundling the runtime with your app. The two publishing modes are:
 
 - **Publish self-contained**\
 This mode produces a publishing folder that includes a platform-specific executable used to start the app, a compiled binary containing app code, any app dependencies, and the .NET runtime required to run the app. The environment that runs the app doesn't need to have the .NET runtime preinstalled.
@@ -46,7 +46,7 @@ This mode produces a publishing folder that includes a platform-specific executa
 
 The [`<TargetFramework>`](../project-sdk/msbuild-props.md#targetframework) setting of the project file specifies the default target framework when you publish your app. You can change the target framework to any valid [Target Framework Moniker (TFM)](../../standard/frameworks.md). For example, if your project uses `<TargetFramework>net9.0</TargetFramework>`, a binary that targets .NET 9 is created.
 
-If you want to target more than one framework, you can set the [`<TargetFrameworks>`](../project-sdk/msbuild-props.md#targetframeworks) setting to multiple TFM values, separated by a semicolon. When you build your app, a build is produced for each target framework. However, when you publish your app, you must specify the target framework:
+If you want to target more than one framework, you can set the [`<TargetFrameworks>`](../project-sdk/msbuild-props.md#targetframeworks) setting to multiple TFM values, separated by a semicolon. When you build your app, your app is built for each target framework defined by your project. However, when you publish your app, you must specify the target framework:
 
 ::: zone pivot="cli,vscode"
 
@@ -70,7 +70,7 @@ In Visual Studio, create separate publishing profiles for each target framework.
 
 When you publish a .NET app, you can target a specific platform or create a portable binary. By default, even when creating a portable binary, .NET publishes a platform-specific executable alongside the portable DLL unless you explicitly disable this behavior.
 
-The platform-specific executable is created because of the `UseAppHost` property, which defaults to `true`. To publish only the portable DLL without the platform-specific executable, set `UseAppHost` to `false` either on the command line (`-p:UseAppHost=false`) or as a project property.
+The platform-specific executable is created because of the `UseAppHost` property, which defaults to `true`. To publish only the portable DLL without the platform-specific executable, set `UseAppHost` to `false` either on the command line (`-p:UseAppHost=false`) or as a [project property](../project-sdk/msbuild-props.md#useapphost).
 
 The benefit of targeting a specific platform is that it can handle [native dependencies](#native-dependencies) that your app might require, ensuring compatibility with the target platform's specific requirements.
 
@@ -131,7 +131,7 @@ Framework-dependent deployment is the default mode when you publish from either 
 
 Your app is configured to target a specific version of .NET. That targeted .NET runtime is required to be on the environment where your app runs. For example, if your app targets .NET 9, any environment that your app runs on must have the .NET 9 runtime installed.
 
-Publishing a framework-dependent deployment creates an app that automatically rolls-forward to the latest .NET security patch available on the environment that runs the app. For more information on version binding at compile time, see [Select the .NET version to use](../versions/selection.md#framework-dependent-apps-roll-forward).
+Publishing a framework-dependent deployment creates an app that automatically rolls forward to the latest .NET security patch available on the environment that runs the app. For more information on version binding at compile time, see [Select the .NET version to use](../versions/selection.md#framework-dependent-apps-roll-forward).
 
 **Advantages**
 
@@ -193,7 +193,7 @@ In .NET 9 and later versions, you can configure the .NET installation search pat
 
 `AppHostRelativeDotNet` specifies the path relative to the executable that will be searched when `AppHostDotNetSearch` contains `AppRelative`.
 
-For more information, see [`AppHostDotNetSearch`](../project-sdk//msbuild-props.md#apphostdotnetsearch), [`AppHostRelativeDotNet`](../project-sdk//msbuild-props.md#apphostrelativedotnet) and [install location options in apphost](https://github.com/dotnet/designs/blob/main/proposed/apphost-embed-install-location.md).
+For more information, see [`AppHostDotNetSearch`](../project-sdk//msbuild-props.md#apphostdotnetsearch), [`AppHostRelativeDotNet`](../project-sdk//msbuild-props.md#apphostrelativedotnet), and [install location options in apphost](https://github.com/dotnet/designs/blob/main/proposed/apphost-embed-install-location.md).
 
 ### Cross-platform DLL deployment
 
@@ -292,7 +292,7 @@ Single-file apps are always OS and architecture specific. You need to publish fo
 **Disadvantages**
 
 - **Larger file size**: The single file includes all dependencies, making it larger than individual files.
-- **Slower startup**: Files must be extracted at runtime, which can impact startup performance.
+- **Slower startup**: Files must be extracted at run time, which can impact startup performance.
 - **Platform-specific**: Must publish separate files for each target platform.
 
 Single-file deployment can be combined with other optimizations like [trimming](trimming/trim-self-contained.md) and [ReadyToRun compilation](#readytorun-deployment) for further optimization.
@@ -336,7 +336,7 @@ Native AOT deployment compiles your app directly to native code, eliminating the
 
 **Advantages**
 
-- **Fast startup**: No JIT compilation needed at runtime, leading to faster application startup.
+- **Fast startup**: No JIT compilation needed at run time, leading to faster application startup.
 - **Reduced memory usage**: Lower memory footprint compared to traditional .NET applications.
 - **No runtime dependency**: The application runs without requiring .NET runtime installation.
 - **Smaller deployment size**: Often smaller than **self-contained deployment** with the full runtime.

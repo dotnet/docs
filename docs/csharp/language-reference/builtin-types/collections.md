@@ -42,7 +42,7 @@ For the type of elements in the <xref:System.Collections.Generic.List%601>, you 
 
 :::code language="csharp" source="./snippets/shared/Collections.cs" id="SnippetCustomList":::
 
-For more information about indices, see the [Explore indexes and ranges](../../tutorials/ranges-indexes.md) article in the [C# conceptual docs](../../tour-of-csharp/).
+For more information about indices, see the [Explore indexes and ranges](../../tutorials/ranges-indexes.md) article.
 
 ## Key/value pair collections
 

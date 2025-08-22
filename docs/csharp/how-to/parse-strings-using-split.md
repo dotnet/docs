@@ -38,6 +38,8 @@ The <xref:System.String.Split*?displayProperty=nameWithType> has many overloads.
 
 The remaining examples use different overloads to show each of these behaviors.
 
+For more information about indices, see the [Explore indexes and ranges](../tutorials/ranges-indexes.md) article.
+
 ## Specify multiple separators
 
 <xref:System.String.Split%2A?displayProperty=nameWithType> can use multiple separator characters. The following example uses spaces, commas, periods, colons, and tabs as separating characters, which are passed to <xref:System.String.Split%2A> in an array. The loop at the bottom of the code displays each of the words in the returned array.

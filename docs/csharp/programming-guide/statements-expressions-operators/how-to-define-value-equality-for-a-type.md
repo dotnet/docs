@@ -3,6 +3,7 @@ title: "How to define value equality for a class or struct"
 description: Learn how to define value equality for a class or struct. See code examples and view available resources.
 ms.topic: how-to
 ms.date: 03/26/2021
+ai-usage: ai-generated
 helpviewer_keywords: 
   - "overriding Equals method [C#]"
   - "object equivalence [C#]"

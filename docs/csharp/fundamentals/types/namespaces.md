@@ -20,7 +20,7 @@ Namespaces are heavily used in C# programming in two ways. First, .NET uses name
 
 For more information, see the [using directive](../../language-reference/keywords/using-directive.md).
 
-You can also create an **alias** for a namespace or type using the [using alias directive](../../language-reference/keywords/using-alias-directive.md).  
+You can also create an **alias** for a namespace or type using the [using alias directive](../../language-reference/keywords/using-directive.md#the-using-alias).  
 In more advanced scenarios, you can reference multiple assemblies with the same namespaces or types by using the [extern alias](../../language-reference/keywords/extern-alias.md) feature.
 
 [!INCLUDE [csharp10-templates](../../../../includes/csharp10-templates.md)]

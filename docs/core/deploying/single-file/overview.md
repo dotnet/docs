@@ -8,7 +8,7 @@ ms.custom: kr2b-contr-experiment
 
 # Single-file deployment
 
-Bundling all application-dependent files into a single binary provides an application developer with the attractive option to deploy and distribute the application as a single file. Single-file deployment is available for both the [framework-dependent deployment model](../index.md#publish-framework-dependent) and [self-contained applications](../index.md#publish-self-contained).
+Bundling all application-dependent files into a single binary provides an application developer with the attractive option to deploy and distribute the application as a single file. Single-file deployment is available for both the [framework-dependent deployment model](../index.md#framework-dependent-deployment) and [self-contained applications](../index.md#self-contained-deployment).
 
 The size of the single file in a self-contained application is large since it includes the runtime and the framework libraries. In .NET 6, you can [publish trimmed](../trimming/trim-self-contained.md) to reduce the total size of trim-compatible applications. The single file deployment option can be combined with [ReadyToRun](../ready-to-run.md) and [Trim](../trimming/trim-self-contained.md) publish options.
 
@@ -75,7 +75,7 @@ Publish a single file application using the [dotnet publish](../../tools/dotnet-
 dotnet publish -r linux-x64 -p:PublishSingleFile=true --self-contained false
 ```
 
-For more information, see [Publish .NET Core apps with .NET CLI](../deploy-with-cli.md).
+For more information, see [.NET application publishing overview](../../deploying/index.md).
 
 # [Visual Studio](#tab/vs)
 
@@ -105,7 +105,7 @@ Visual Studio creates reusable publishing profiles that control how your applica
 
 1. Choose **Publish** to publish your app as a single file.
 
-For more information, see [Publish .NET Core apps with Visual Studio](../deploy-with-vs.md).
+For more information, see[.NET application publishing overview](../../deploying/index.md).
 
 ---
 
@@ -235,7 +235,5 @@ Single file apps can be inspected using the [ILSpy tool](https://ilspy.net/). Th
 
 ## See also
 
-- [.NET Core application deployment](../index.md)
-- [Publish .NET apps with .NET CLI](../deploy-with-cli.md)
-- [Publish .NET Core apps with Visual Studio](../deploy-with-vs.md)
+- [.NET application publishing overview](../../deploying/index.md)
 - [`dotnet publish` command](../../tools/dotnet-publish.md)

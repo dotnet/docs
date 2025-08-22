@@ -1,7 +1,7 @@
 ---
 description: "Advanced C# Compiler Options. These options are used in advanced scenarios."
 title: "Compiler Options - advanced scenarios"
-ms.date: 08/19/2025
+ms.date: 08/22/2025
 f1_keywords:
   - "cs.build.options"
 helpviewer_keywords:
@@ -226,7 +226,7 @@ By default, the compiler writes the starting location in source for all errors a
 
 ## NoStandardLib
 
-**NoStandardLib** prevents the automatic reference to the .NET Base Class Library. In .NET Framework projects, this refers to *mscorlib.dll*, while in modern .NET projects (.NET 5+), this refers to *System.Private.CoreLib.dll*. Both assemblies define the entire System namespace.
+**NoStandardLib** prevents the automatic reference to the .NET Base Class Library. In .NET Framework projects, this refers to *mscorlib.dll*, while in modern .NET projects, this refers to *System.Private.CoreLib.dll*. Both assemblies define the entire System namespace.
 
 ```xml
 <NoStandardLib>true</NoStandardLib>

@@ -122,7 +122,7 @@ The **AI Chat Web App** is almost ready to go as soon as it's created. However, 
 
 To use the **AI Chat Web App** template with .NET Aspire orchestration, add the following configurations:
 
-## [Visual Studio](#tab/configure-visual-studio-aspire)
+#### [Visual Studio](#tab/configure-visual-studio-aspire)
 
 1. Right-click on your `*.AppHost` project in the Solution Explorer and select **Manage User Secrets**. This opens a `secrets.json` file where you can store your API keys without them being tracked in source control.
 
@@ -134,7 +134,7 @@ To use the **AI Chat Web App** template with .NET Aspire orchestration, add the 
     }
     ```
 
-## [.NET CLI](#tab/configure-dotnet-cli-aspire)
+#### [.NET CLI](#tab/configure-dotnet-cli-aspire)
 
 1. Open a terminal window set to the root of your `*.AppHost` project.
 

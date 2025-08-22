@@ -64,6 +64,38 @@ Records provide several advantages for value equality:
 
 Use records when your primary goal is to store data and you need value equality semantics.
 
+> [!IMPORTANT]
+> **Records with reference-equality members**: While records provide excellent value equality for basic data types, they don't automatically solve value equality for members that use reference equality. For example, if a record contains a `List<T>`, `Array`, or other reference types that don't implement value equality, two record instances with identical content in those members will still not be equal because the members use reference equality.
+>
+> ```csharp
+> public record PersonWithHobbies(string Name, List<string> Hobbies);
+> 
+> var person1 = new PersonWithHobbies("Alice", new List<string> { "Reading", "Swimming" });
+> var person2 = new PersonWithHobbies("Alice", new List<string> { "Reading", "Swimming" });
+> 
+> Console.WriteLine(person1.Equals(person2)); // False - different List instances!
+> ```
+>
+> See the [Records with collections](#records-with-collections) section for solutions to this issue.
+
+## Records with collections
+
+When records contain collection types like `List<T>`, arrays, or other reference types that use reference equality, the automatic value equality behavior of records doesn't work as expected. This is because records use the `Equals` method of each member, and collection types typically use reference equality rather than comparing their contents.
+
+:::code language="csharp" source="snippets/how-to-define-value-equality-for-a-type/RecordCollectionsIssue/Program.cs":::
+
+### Solutions for records with collections
+
+1. **Custom `IEquatable<T>` implementation**: Override the compiler-generated equality to provide content-based comparison for collection members.
+
+2. **Use value types where possible**: Consider if your data can be represented with value types that naturally support value equality.
+
+3. **Immutable collection patterns**: Design your records to work with the limitations by being explicit about when reference equality is acceptable.
+
+4. **Consider composition over inheritance**: Sometimes restructuring the data model can avoid these equality complications.
+
+The key insight is that records solve the *structural* equality problem but don't change the *semantic* equality behavior of the types they contain.
+
 ## Class example
 
 The following example shows how to implement value equality in a class (reference type). This manual approach is needed when you can't use records or need custom equality logic:
@@ -83,9 +115,53 @@ The `==` and `!=` operators can be used with classes even if the class does not 
 > Console.WriteLine(p1.Equals(p2)); // output: True
 > ```
 >
-> This code reports that `p1` equals `p2` despite the difference in `z` values. The difference is ignored because the compiler picks the `TwoDPoint` implementation of `IEquatable` based on the compile-time type.
+> This code reports that `p1` equals `p2` despite the difference in `z` values. The difference is ignored because the compiler picks the `TwoDPoint` implementation of `IEquatable` based on the compile-time type. This is a fundamental issue with polymorphic equality in inheritance hierarchies.
 >
-> The built-in value equality of `record` types handles scenarios like this correctly. If `TwoDPoint` and `ThreeDPoint` were `record` types, the result of `p1.Equals(p2)` would be `False`. For more information, see [Equality in `record` type inheritance hierarchies](../../language-reference/builtin-types/record.md#equality-in-inheritance-hierarchies).
+> The built-in value equality of `record` types handles scenarios like this correctly. If `TwoDPoint` and `ThreeDPoint` were `record` types, the result of `p1.Equals(p2)` would be `False`. For more information, see [Equality in `record` type inheritance hierarchies](../../language-reference/builtin-types/record.md#equality-in-inheritance-hierarchies). For classes that must use inheritance and value equality, see the [Polymorphic equality](#polymorphic-equality) section for a safer approach.
+
+## Polymorphic equality
+
+When implementing value equality in inheritance hierarchies with classes, the standard approach shown in the class example can lead to incorrect behavior when objects are used polymorphically. The issue occurs because `IEquatable<T>` implementations are chosen based on compile-time type, not runtime type.
+
+### The problem with standard implementations
+
+Consider this problematic scenario:
+
+```csharp
+TwoDPoint p1 = new ThreeDPoint(1, 2, 3);  // Declared as TwoDPoint
+TwoDPoint p2 = new ThreeDPoint(1, 2, 4);  // Declared as TwoDPoint
+Console.WriteLine(p1.Equals(p2)); // True - but should be False!
+```
+
+The comparison returns `True` because the compiler selects `TwoDPoint.Equals(TwoDPoint)` based on the declared type, ignoring the `Z` coordinate differences.
+
+### Solution: Explicit interface implementation
+
+A safer approach for polymorphic equality uses [explicit interface implementation](../interfaces/explicit-interface-implementation.md) for `IEquatable<T>`. This forces all equality comparisons to go through the virtual `Equals(object?)` method, which uses runtime type information:
+
+:::code language="csharp" source="snippets/how-to-define-value-equality-for-a-type/ValueEqualityPolymorphic/Program.cs":::
+
+### Key benefits of explicit interface implementation
+
+- **Runtime type checking**: All equality comparisons use the `virtual Equals(object?)` method, ensuring runtime type compatibility.
+- **Safe polymorphism**: Objects behave correctly regardless of their declared type.
+- **Inheritance-friendly**: Derived classes can safely override the base implementation.
+- **Collection compatibility**: Works correctly with hash-based collections like `Dictionary<TKey,TValue>` and `HashSet<T>`.
+
+### When to use this approach
+
+Use explicit interface implementation for `IEquatable<T>` when:
+
+- You have inheritance hierarchies where value equality is important
+- Objects might be used polymorphically (declared as base type, instantiated as derived type)
+- You cannot use `record` types for your scenario
+- You need reference types with value equality semantics
+
+### Considerations
+
+- **Performance**: Slight overhead from virtual method calls and type checking
+- **Complexity**: More complex implementation than the standard approach
+- **Testing**: Requires thorough testing of polymorphic scenarios to ensure correctness
 
 ## Struct example
 

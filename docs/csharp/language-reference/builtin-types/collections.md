@@ -42,6 +42,8 @@ For the type of elements in the <xref:System.Collections.Generic.List%601>, you 
 
 :::code language="csharp" source="./snippets/shared/Collections.cs" id="SnippetCustomList":::
 
+For more information about indices, see the [Explore indexes and ranges](../../tutorials/ranges-indexes.md) article in the [C# conceptual docs](../../tour-of-csharp/).
+
 ## Key/value pair collections
 
 These examples use the <xref:System.Collections.Generic.Dictionary%602> class. It's the most common dictionary collection. A dictionary collection enables you to access elements in the collection by using the key of each element. Each addition to the dictionary consists of a value and its associated key.

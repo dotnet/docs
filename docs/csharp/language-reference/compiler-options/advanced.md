@@ -267,7 +267,7 @@ The default value of the **SubsystemVersion** compiler option depends on the con
   - [-target:winmdobj](output.md#outputtype)
   - [-platform:arm](output.md#platformtarget)
 - The default value is 6.00 if you're using MSBuild, you're targeting .NET Framework 4.5 or later, and you haven't set any of the compiler options that were specified earlier in this list.
-- For modern .NET projects (.NET 5+), the default value is 6.00, which allows your application to run on Windows Vista and later versions.
+- For modern .NET projects, the default value is 6.00, which allows your application to run on Windows Vista and later versions.
 - The default value is 4.00 if none of the previous conditions are true.
 
 ## ModuleAssemblyName

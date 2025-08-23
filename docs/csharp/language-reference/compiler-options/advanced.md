@@ -1,7 +1,7 @@
 ---
 description: "Advanced C# Compiler Options. These options are used in advanced scenarios."
 title: "Compiler Options - advanced scenarios"
-ms.date: 03/12/2021
+ms.date: 08/22/2025
 f1_keywords:
   - "cs.build.options"
 helpviewer_keywords:
@@ -40,7 +40,7 @@ The following options support advanced scenarios. The new MSBuild syntax is show
 - **Utf8Output** / `-utf8output`: Output compiler messages in UTF-8 encoding.
 - **FileAlignment** / `-filealign`: Specify the alignment used for output file sections.
 - **ErrorEndLocation** / `-errorendlocation`: Output line and column of the end location of each error.
-- **NoStandardLib** / `-nostdlib`: Don't reference standard library *mscorlib.dll*.
+- **NoStandardLib** / `-nostdlib`: Don't reference standard library. (Prevents automatic reference to the .NET Base Class Library - *mscorlib.dll* in .NET Framework projects, *System.Private.CoreLib.dll* in modern .NET projects.)
 - **SubsystemVersion** / `-subsystemversion`: Specify subsystem version of this assembly.
 - **ModuleAssemblyName** / `-moduleassemblyname`: Name of the assembly that this module will be a part of.
 - **ReportIVTs** / `-reportivts`: Produce additional information on <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=nameWithType> information.
@@ -226,13 +226,13 @@ By default, the compiler writes the starting location in source for all errors a
 
 ## NoStandardLib
 
-**NoStandardLib** prevents the import of mscorlib.dll, which defines the entire System namespace.
+**NoStandardLib** prevents the automatic reference to the .NET Base Class Library. In .NET Framework projects, this refers to *mscorlib.dll*, while in modern .NET projects, this refers to *System.Private.CoreLib.dll*. Both assemblies define the entire System namespace.
 
 ```xml
 <NoStandardLib>true</NoStandardLib>
 ```
 
-Use this option if you want to define or create your own System namespace and objects. If you don't specify **NoStandardLib**, mscorlib.dll is imported into your program (same as specifying `<NoStandardLib>false</NoStandardLib>`).
+Use this option if you want to define or create your own System namespace and objects. If you don't specify **NoStandardLib**, the appropriate base class library is automatically referenced (same as specifying `<NoStandardLib>false</NoStandardLib>`).
 
 ## SubsystemVersion
 
@@ -256,6 +256,9 @@ The following table lists common subsystem versions of Windows.
 |Windows 7|6.01|
 |Windows Server 2008|6.01|
 |Windows 8|6.02|
+|Windows 8.1|6.03|
+|Windows 10|6.04|
+|Windows 11|6.04|
 
 The default value of the **SubsystemVersion** compiler option depends on the conditions in the following list:
 
@@ -263,7 +266,8 @@ The default value of the **SubsystemVersion** compiler option depends on the con
   - [-target:appcontainerexe](output.md#outputtype)
   - [-target:winmdobj](output.md#outputtype)
   - [-platform:arm](output.md#platformtarget)
-- The default value is 6.00 if you're using MSBuild, you're targeting .NET Framework 4.5, and you haven't set any of the compiler options that were specified earlier in this list.
+- The default value is 6.00 if you're using MSBuild, you're targeting .NET Framework 4.5 or later, and you haven't set any of the compiler options that were specified earlier in this list.
+- For modern .NET projects, the default value is 6.00, which allows your application to run on Windows Vista and later versions.
 - The default value is 4.00 if none of the previous conditions are true.
 
 ## ModuleAssemblyName

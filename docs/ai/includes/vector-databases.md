@@ -24,6 +24,6 @@ Semantic Kernel provides connectors for the following vector databases and servi
 | Postgres                      | [Microsoft.SemanticKernel.Connectors.Postgres](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.Postgres)            | [Npgsql](https://www.nuget.org/packages/Npgsql/)        |
 | Qdrant                        | [Microsoft.SemanticKernel.Connectors.Qdrant](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.Qdrant)               | [Qdrant.Client](https://www.nuget.org/packages/Qdrant.Client)         |
 | Redis                         | [Microsoft.SemanticKernel.Connectors.Redis](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.Redis)                    |  [StackExchange.Redis](https://www.nuget.org/packages/StackExchange.Redis)       |
-| Weaviate                      | [Microsoft.SemanticKernel.Connectors.Weaviate](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.Weaviate)            | [REST API](https://weaviate.io/developers/weaviate/api/rest)       |
+| Weaviate                      | [Microsoft.SemanticKernel.Connectors.Weaviate](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.Weaviate)            | [REST API](https://docs.weaviate.io/weaviate/api/rest)       |
 
 To discover .NET SDK and API support, visit the documentation for each respective service.

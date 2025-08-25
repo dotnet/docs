@@ -1,8 +1,11 @@
 namespace RecordCollectionsIssue;
 
+// <ProblemExample>
 // Records with reference-equality members don't work as expected
 public record PersonWithHobbies(string Name, List<string> Hobbies);
+// </ProblemExample>
 
+// <SolutionExample>
 // A potential solution using IEquatable<T> with custom equality
 public record PersonWithHobbiesFixed(string Name, List<string> Hobbies) : IEquatable<PersonWithHobbiesFixed>
 {
@@ -27,16 +30,21 @@ public record PersonWithHobbiesFixed(string Name, List<string> Hobbies) : IEquat
         return hashCode.ToHashCode();
     }
 }
+// </SolutionExample>
 
+// <OtherTypes>
 // These also use reference equality - the issue persists
 public record PersonWithHobbiesArray(string Name, string[] Hobbies);
 
 public record PersonWithHobbiesImmutable(string Name, IReadOnlyList<string> Hobbies);
+// </OtherTypes>
 
+// <MainProgram>
 class Program
 {
     static void Main(string[] args)
     {
+        // <ProblemDemonstration>
         Console.WriteLine("=== Records with Collections - The Problem ===");
         
         // Problem: Records with mutable collections use reference equality for the collection
@@ -48,7 +56,9 @@ class Program
         Console.WriteLine($"person1.Equals(person2): {person1.Equals(person2)}"); // False! Different List instances
         Console.WriteLine($"Lists have same content: {person1.Hobbies.SequenceEqual(person2.Hobbies)}"); // True
         Console.WriteLine();
+        // </ProblemDemonstration>
         
+        // <SolutionDemonstration>
         Console.WriteLine("=== Solution 1: Custom IEquatable Implementation ===");
         
         var personFixed1 = new PersonWithHobbiesFixed("Bob", [ "Cooking", "Hiking" ]);
@@ -58,7 +68,9 @@ class Program
         Console.WriteLine($"personFixed2: {personFixed2}");
         Console.WriteLine($"personFixed1.Equals(personFixed2): {personFixed1.Equals(personFixed2)}"); // True! Custom equality
         Console.WriteLine();
+        // </SolutionDemonstration>
         
+        // <ArrayExample>
         Console.WriteLine("=== Arrays Also Use Reference Equality ===");
         
         var personArray1 = new PersonWithHobbiesArray("Charlie", ["Gaming", "Music" ]);
@@ -69,7 +81,9 @@ class Program
         Console.WriteLine($"personArray1.Equals(personArray2): {personArray1.Equals(personArray2)}"); // False! Arrays use reference equality too
         Console.WriteLine($"Arrays have same content: {personArray1.Hobbies.SequenceEqual(personArray2.Hobbies)}"); // True
         Console.WriteLine();
+        // </ArrayExample>
         
+        // <ImmutableExample>
         Console.WriteLine("=== Same Issue with IReadOnlyList ===");
         
         var personImmutable1 = new PersonWithHobbiesImmutable("Diana", [ "Art", "Travel" ]);
@@ -80,6 +94,7 @@ class Program
         Console.WriteLine($"personImmutable1.Equals(personImmutable2): {personImmutable1.Equals(personImmutable2)}"); // False! Reference equality
         Console.WriteLine($"Content is the same: {personImmutable1.Hobbies.SequenceEqual(personImmutable2.Hobbies)}"); // True
         Console.WriteLine();
+        // </ImmutableExample>
         
         Console.WriteLine("=== Collection Behavior Summary ===");
         Console.WriteLine("Type                              | Equals Result | Reason");
@@ -93,6 +108,7 @@ class Program
         Console.ReadKey();
     }
 }
+// </MainProgram>
 
 /* Expected Output:
 === Records with Collections - The Problem ===

@@ -70,7 +70,7 @@ Use records when your primary goal is to store data and you need value equality 
 When records contain members that use reference equality, the automatic value equality behavior of records doesn't work as expected. This applies to collections like <xref:System.Collections.Generic.List%601?displayProperty=nameWithType>, arrays, and other reference types that don't implement value-based equality (with the notable exception of <xref:System.String?displayProperty=nameWithType>, which does implement value equality).
 
 > [!IMPORTANT]
-> While records provide excellent value equality for basic data types, they don't automatically solve value equality for members that use reference equality. For example, if a record contains a <xref:System.Collections.Generic.List%601?displayProperty=nameWithType>, <xref:System.Array?displayProperty=nameWithType>, or other reference types that don't implement value equality, two record instances with identical content in those members will still not be equal because the members use reference equality.
+> While records provide excellent value equality for basic data types, they don't automatically solve value equality for members that use reference equality. If a record contains a <xref:System.Collections.Generic.List%601?displayProperty=nameWithType>, <xref:System.Array?displayProperty=nameWithType>, or other reference types that don't implement value equality, two record instances with identical content in those members will still not be equal because the members use reference equality.
 >
 > ```csharp
 > public record PersonWithHobbies(string Name, List<string> Hobbies);
@@ -83,18 +83,39 @@ When records contain members that use reference equality, the automatic value eq
 
 This is because records use the <xref:System.Object.Equals%2A?displayProperty=nameWithType> method of each member, and collection types typically use reference equality rather than comparing their contents.
 
-:::code language="csharp" source="snippets/how-to-define-value-equality-for-a-type/RecordCollectionsIssue/Program.cs":::
+The following shows the problem:
+
+:::code language="csharp" source="snippets/how-to-define-value-equality-for-a-type/RecordCollectionsIssue/Program.cs" id="ProblemExample":::
+
+Here's how this behaves when you run the code:
+
+:::code language="csharp" source="snippets/how-to-define-value-equality-for-a-type/RecordCollectionsIssue/Program.cs" id="ProblemDemonstration":::
 
 ### Solutions for records with reference-equality members
 
 - **Custom <xref:System.IEquatable%601?displayProperty=nameWithType> implementation**: Replace the compiler-generated equality with a hand-coded version that provides content-based comparison for reference-equality members. For collections, implement element-by-element comparison using <xref:System.Linq.Enumerable.SequenceEqual%2A?displayProperty=nameWithType> or similar methods.
 
-- **Use value types where possible**: Consider if your data can be represented with value types or immutable structures that naturally support value equality, such as <xref:System.Numerics.Vector%601?displayProperty=nameWithType.> or <xref:System.Numerics.Plane>
+- **Use value types where possible**: Consider if your data can be represented with value types or immutable structures that naturally support value equality, such as <xref:System.Numerics.Vector%601?displayProperty=nameWithType> or <xref:System.Numerics.Plane>.
 
 - **Use types with value-based equality**: For collections, consider using types that implement value-based equality or implement custom collection types that override <xref:System.Object.Equals%2A?displayProperty=nameWithType> to provide content-based comparison, such as <xref:System.Collections.Immutable.ImmutableArray%601?displayProperty=nameWithType> or <xref:System.Collections.Immutable.ImmutableList%601?displayProperty=nameWithType>.
-.
 
 - **Design with reference equality in mind**: Accept that some members will use reference equality and design your application logic accordingly, ensuring that you reuse the same instances when equality is important.
+
+Here's an example of implementing custom equality for records with collections:
+
+:::code language="csharp" source="snippets/how-to-define-value-equality-for-a-type/RecordCollectionsIssue/Program.cs" id="SolutionExample":::
+
+This custom implementation works correctly:
+
+:::code language="csharp" source="snippets/how-to-define-value-equality-for-a-type/RecordCollectionsIssue/Program.cs" id="SolutionDemonstration":::
+
+The same issue affects arrays and other collection types:
+
+:::code language="csharp" source="snippets/how-to-define-value-equality-for-a-type/RecordCollectionsIssue/Program.cs" id="OtherTypes":::
+
+:::code language="csharp" source="snippets/how-to-define-value-equality-for-a-type/RecordCollectionsIssue/Program.cs" id="ArrayExample":::
+
+:::code language="csharp" source="snippets/how-to-define-value-equality-for-a-type/RecordCollectionsIssue/Program.cs" id="ImmutableExample":::
 
 The key insight is that records solve the *structural* equality problem but don't change the *semantic* equality behavior of the types they contain.
 
@@ -118,8 +139,6 @@ The `==` and `!=` operators can be used with classes even if the class does not 
 > ```
 >
 > This code reports that `p1` equals `p2` despite the difference in `z` values. The difference is ignored because the compiler picks the `TwoDPoint` implementation of `IEquatable` based on the compile-time type. This is a fundamental issue with polymorphic equality in inheritance hierarchies.
->
-> The built-in value equality of `record` types handles scenarios like this correctly. If `TwoDPoint` and `ThreeDPoint` were `record` types, the result of `p1.Equals(p2)` would be `False`. For more information, see [Equality in `record` type inheritance hierarchies](../../language-reference/builtin-types/record.md#equality-in-inheritance-hierarchies).
 
 ## Polymorphic equality
 
@@ -139,7 +158,23 @@ The comparison returns `True` because the compiler selects `TwoDPoint.Equals(Two
 
 The key to correct polymorphic equality is ensuring that all equality comparisons use the virtual <xref:System.Object.Equals%2A?displayProperty=nameWithType> method, which can check runtime types and handle inheritance correctly. This can be achieved by using explicit interface implementation for <xref:System.IEquatable%601?displayProperty=nameWithType> that delegates to the virtual method:
 
-:::code language="csharp" source="snippets/how-to-define-value-equality-for-a-type/ValueEqualityPolymorphic/Program.cs":::
+The base class demonstrates the key patterns:
+
+:::code language="csharp" source="snippets/how-to-define-value-equality-for-a-type/ValueEqualityPolymorphic/Program.cs" id="TwoDPointClass":::
+
+The derived class correctly extends the equality logic:
+
+:::code language="csharp" source="snippets/how-to-define-value-equality-for-a-type/ValueEqualityPolymorphic/Program.cs" id="ThreeDPointClass":::
+
+Here's how this implementation handles the problematic polymorphic scenarios:
+
+:::code language="csharp" source="snippets/how-to-define-value-equality-for-a-type/ValueEqualityPolymorphic/Program.cs" id="PolymorphicTest":::
+
+The implementation also correctly handles direct type comparisons and works properly with collections:
+
+:::code language="csharp" source="snippets/how-to-define-value-equality-for-a-type/ValueEqualityPolymorphic/Program.cs" id="DirectTest":::
+
+:::code language="csharp" source="snippets/how-to-define-value-equality-for-a-type/ValueEqualityPolymorphic/Program.cs" id="CollectionTest":::
 
 The preceding code demonstrates key elements to implementing value based equality:
 
@@ -152,7 +187,6 @@ Use this pattern when:
 
 - You have inheritance hierarchies where value equality is important
 - Objects might be used polymorphically (declared as base type, instantiated as derived type)
-- You cannot use `record` types for your scenario
 - You need reference types with value equality semantics
 
 The preferred approach is to use `record` types to implement value based equality. This approach requires a more complex implementation than the standard approach and requires thorough testing of polymorphic scenarios to ensure correctness.

@@ -1,5 +1,6 @@
 namespace ValueEqualityPolymorphic;
 
+// <TwoDPointClass>
 // Safe polymorphic equality implementation using explicit interface implementation
 class TwoDPoint : IEquatable<TwoDPoint>
 {
@@ -66,7 +67,9 @@ class TwoDPoint : IEquatable<TwoDPoint>
 
     public static bool operator !=(TwoDPoint? lhs, TwoDPoint? rhs) => !(lhs == rhs);
 }
+// </TwoDPointClass>
 
+// <ThreeDPointClass>
 // For the sake of simplicity, assume a ThreeDPoint IS a TwoDPoint.
 class ThreeDPoint : TwoDPoint, IEquatable<ThreeDPoint>
 {
@@ -136,11 +139,14 @@ class ThreeDPoint : TwoDPoint, IEquatable<ThreeDPoint>
 
     public static bool operator !=(ThreeDPoint? lhs, ThreeDPoint? rhs) => !(lhs == rhs);
 }
+// </ThreeDPointClass>
 
+// <MainProgram>
 class Program
 {
     static void Main(string[] args)
     {
+        // <PolymorphicTest>
         Console.WriteLine("=== Safe Polymorphic Equality ===");
         
         // Test polymorphic scenarios that were problematic before
@@ -161,7 +167,9 @@ class Program
         Console.WriteLine($"p1.Equals(p4) = {p1.Equals(p4)}"); // False - different types
         Console.WriteLine($"p4.Equals(p1) = {p4.Equals(p1)}"); // False - different types
         Console.WriteLine();
+        // </PolymorphicTest>
         
+        // <DirectTest>
         // Test direct type comparisons
         var point3D_A = new ThreeDPoint(3, 4, 5);
         var point3D_B = new ThreeDPoint(3, 4, 5);
@@ -174,14 +182,18 @@ class Program
         Console.WriteLine($"point3D_A.Equals(point2D_A) = {point3D_A.Equals(point2D_A)}"); // False
         Console.WriteLine($"point2D_A.Equals(point3D_A) = {point2D_A.Equals(point3D_A)}"); // False
         Console.WriteLine();
+        // </DirectTest>
         
+        // <OperatorTest>
         // Test operators
         Console.WriteLine("Testing operators:");
         Console.WriteLine($"p1 == p2: {p1 == p2}"); // False
         Console.WriteLine($"p1 == p3: {p1 == p3}"); // True
         Console.WriteLine($"point3D_A == point3D_B: {point3D_A == point3D_B}"); // True
         Console.WriteLine();
+        // </OperatorTest>
         
+        // <CollectionTest>
         // Test with collections
         Console.WriteLine("Testing with collections:");
         var hashSet = new HashSet<TwoDPoint> { p1, p2, p3, p4 };
@@ -196,11 +208,13 @@ class Program
         
         Console.WriteLine($"Dictionary contains {dictionary.Count} entries");
         Console.WriteLine($"Dictionary lookup for equivalent point: {dictionary.ContainsKey(new ThreeDPoint(1, 2, 3))}"); // True
+        // </CollectionTest>
 
         Console.WriteLine("Press any key to exit.");
         Console.ReadKey();
     }
 }
+// </MainProgram>
 
 /* Expected Output:
 === Safe Polymorphic Equality ===

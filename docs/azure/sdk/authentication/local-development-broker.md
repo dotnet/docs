@@ -13,7 +13,7 @@ Interactive brokered authentication collects user credentials using the system a
 
 Interactive brokered authentication offers the following benefits:
 
-- **Enables Single Sign-On:** Enables apps to simplify how users authenticate with Microsoft Entra ID and protects Microsoft Entra ID refresh tokens from exfiltration and misuse
+- **Enables Single Sign-On (SSO):** Enables apps to simplify how users authenticate with Microsoft Entra ID and protects Microsoft Entra ID refresh tokens from exfiltration and misuse
 - **Enhanced security.** Many security enhancements are delivered with the broker, without needing to update the application logic.
 - **Feature support.** With the help of the broker developers can access rich OS and service capabilities.
 - **System integration.** Applications that use the broker plug-and-play with the built-in account picker, allowing the user to quickly pick an existing account instead of reentering the same credentials over and over.
@@ -36,7 +36,7 @@ Authentication brokers are not pre-installed on macOS but are applications devel
 The Linux operating system uses [Microsoft single sign-on for Linux](/entra/identity/devices/sso-linux) as its authentication broker.
 
 > [!NOTE]
-> Microsoft single sign-on (SSO) for Linux authentication broker support is introduced with `Microsoft.Identity.Client` version v4.69.1.
+> Microsoft SSO for Linux authentication broker support is introduced with `Azure.Identity.Broker` version v1.3.0.
 
 :::zone-end
 
@@ -58,7 +58,7 @@ Complete the following steps to enable the application to authenticate through t
         | WSL         | `ms-appx-web://Microsoft.AAD.BrokerPlugin/your_client_id`                                                             |
         | Linux       | `https://login.microsoftonline.com/common/oauth2/nativeclient`                                                        |
 
-         The `{client_id}` placeholder must be replaced with the **Application (client) ID** listed on the **Overview** pane of the app registration.
+         The `{your_client_id}` placeholder must be replaced with the **Application (client) ID** listed on the **Overview** pane of the app registration.
 
     1. Select **Configure**.
 
@@ -75,14 +75,14 @@ Complete the following steps to enable the application to authenticate through t
 
 For app code to run successfully with brokered auth, your user account must be [assigned an appropriate Azure RBAC role](/dotnet/azure/sdk/authentication/local-development-dev-accounts) on the corresponding Azure service. For example:
 
-**Azure Blob Storage**: Assign a role such as **Storage Account Data Contributor**.
-**Azure Key Vault**: Assign a role such as **Key Vault Secrets Officer**.
+- **Azure Blob Storage**: Assign a role such as **Storage Account Data Contributor**.
+- **Azure Key Vault**: Assign a role such as **Key Vault Secrets Officer**.
 
 If an app is specified, it must have API permissions set for **user_impersonation Access Azure Storage** (step 6 in the previous section). This API permission allows the app to access Azure storage on behalf of the signed-in user after consent is granted during sign-in.
 
 ## Implement the code
 
-The following example demonstrates using an <xref:Azure.Identity.InteractiveBrowserCredential> in a MAUI app to authenticate with the [`BlobServiceClient`](/dotnet/api/azure.storage.blobs.blobserviceclient):
+Complete the following steps to use <xref:Azure.Identity.InteractiveBrowserCredential> in a MAUI app to authenticate with the [`SecretClient`](/dotnet/api/azure.security.keyvault.secrets.secretclient?view=azure-dotnet):
 
 1. Install the [Azure.Identity](https://www.nuget.org/packages/Azure.Identity) and [Azure.Identity.Broker](https://www.nuget.org/packages/Azure.Identity.Broker) packages.
 
@@ -110,48 +110,16 @@ The following screenshot shows the user sign-in experience:
 
 :::zone target="docs" pivot="os-linux"
 
-:::code language="csharp" source="../snippets/authentication/brokered/console-app/Program.cs" :::
+:::code language="csharp" source="../snippets/authentication/brokered/console-app/Program.cs" range="22-28" :::
 
 :::zone-end
 
 :::zone target="docs" pivot="os-windows"
 
-### Authenticate the default system account via WAM
+### Authenticate the default system account
 
-Many people always sign in to Windows with the same user account and, therefore, only ever want to authenticate using that account. WAM and `InteractiveBrowserCredential` also support a silent login process that automatically uses a default account so the user doesn't have to repeatedly select it.
+`InteractiveBrowserCredential` also supports a silent login process that automatically uses a default account so the user doesn't have to repeatedly select it. Once you opt in to this behavior, the credential attempts to sign in by asking the underlying Microsoft Authentication Library (MSAL) to perform the sign-in for the default system account. If the sign-in fails, the credential falls back to displaying the account picker dialog, from which the user can select the appropriate account.
 
-The example shows how to enable sign-in with the default system account:
+The previous example shows how to enable sign-in with the default system account:
 
-:::code language="csharp" source="../snippets/authentication/brokered/maui-app/MainPage.xaml.cs" highlight="42-46" :::
-
-Once you opt in to this behavior, the credential attempts to sign in by asking the underlying Microsoft Authentication Library (MSAL) to perform the sign-in for the default system account. If the sign-in fails, the credential falls back to displaying the account picker dialog, from which the user can select the appropriate account.
-
-:::zone-end
-
-:::zone target="docs" pivot="os-macos"
-
-### Authenticate the default system account via MacCatalyst
-
-Many people always sign in with the same user account and, therefore, only ever want to authenticate using that account. `InteractiveBrowserCredential` also supports a silent login process that automatically uses a default account so the user doesn't have to repeatedly select it.
-
-The example shows how to enable sign-in with the default system account:
-
-:::code language="csharp" source="../snippets/authentication/brokered/maui-app/MainPage.xaml.cs" highlight="58-62" :::
-
-Once you opt in to this behavior, the credential attempts to sign in by asking the underlying Microsoft Authentication Library (MSAL) to perform the sign-in for the default system account. If the sign-in fails, the credential falls back to displaying the account picker dialog, from which the user can select the appropriate account.
-
-:::zone-end
-
-:::zone target="docs" pivot="os-linux"
-
-### Authenticate the default system account on Linux
-
-Many people always sign in with the same user account and, therefore, only ever want to authenticate using that account. `InteractiveBrowserCredential` also supports a silent login process that automatically uses a default account so the user doesn't have to repeatedly select it.
-
-The example shows how to enable sign-in with the default system account:
-
-:::code language="csharp" source="../snippets/authentication/brokered/console-app/Program.cs"highlight="22-25" :::
-
-Once you opt in to this behavior, the credential attempts to sign in by asking the underlying Microsoft Authentication Library (MSAL) to perform the sign-in for the default system account. If the sign-in fails, the credential falls back to displaying the account picker dialog, from which the user can select the appropriate account.
-
-:::zone-end
+:::code language="csharp" source="../snippets/authentication/brokered/console-app/Program.cs" range="6-10" :::

@@ -252,33 +252,33 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
 
   > [!NOTE]
   > If you are using an older version of .NET (<=8), if you are specifically requesting EventCounters as opposed to the default meters (for example through the command ```dotnet-counters monitor -p 65492 --counters EventCounters\System.Runtime```), or if only EventCounters are available, then the UI will look slightly different. See below for an example.
-  >
-  >  ```
-  > [System.Runtime]
-  >      % Time in GC since last GC (%)                                 0
-  >      Allocation Rate (B / 1 sec)                                5,376
-  >      CPU Usage (%)                                                  0
-  >      Exception Count (Count / 1 sec)                                0
-  >      GC Fragmentation (%)                                          48.467
-  >      GC Heap Size (MB)                                              0
-  >      Gen 0 GC Count (Count / 1 sec)                                 1
-  >      Gen 0 Size (B)                                                24
-  >      Gen 1 GC Count (Count / 1 sec)                                 1
-  >      Gen 1 Size (B)                                                24
-  >      Gen 2 GC Count (Count / 1 sec)                                 1
-  >      Gen 2 Size (B)                                           272,000
-  >      IL Bytes Jitted (B)                                       19,449
-  >      LOH Size (B)                                              19,640
-  >      Monitor Lock Contention Count (Count / 1 sec)                  0
-  >      Number of Active Timers                                        0
-  >      Number of Assemblies Loaded                                    7
-  >      Number of Methods Jitted                                     166
-  >      POH (Pinned Object Heap) Size (B)                             24
-  >      ThreadPool Completed Work Item Count (Count / 1 sec)           0
-  >      ThreadPool Queue Length                                        0
-  >      ThreadPool Thread Count                                        2
-  >      Working Set (MB)                                              19
-  > ```
+
+  ```
+  [System.Runtime]
+        % Time in GC since last GC (%)                                 0
+        Allocation Rate (B / 1 sec)                                5,376
+        CPU Usage (%)                                                  0
+        Exception Count (Count / 1 sec)                                0
+        GC Fragmentation (%)                                          48.467
+        GC Heap Size (MB)                                              0
+        Gen 0 GC Count (Count / 1 sec)                                 1
+        Gen 0 Size (B)                                                24
+        Gen 1 GC Count (Count / 1 sec)                                 1
+        Gen 1 Size (B)                                                24
+        Gen 2 GC Count (Count / 1 sec)                                 1
+        Gen 2 Size (B)                                           272,000
+        IL Bytes Jitted (B)                                       19,449
+        LOH Size (B)                                              19,640
+        Monitor Lock Contention Count (Count / 1 sec)                  0
+        Number of Active Timers                                        0
+        Number of Assemblies Loaded                                    7
+        Number of Methods Jitted                                     166
+        POH (Pinned Object Heap) Size (B)                             24
+        ThreadPool Completed Work Item Count (Count / 1 sec)           0
+        ThreadPool Queue Length                                        0
+        ThreadPool Thread Count                                        2
+        Working Set (MB)                                              19
+  ```
 
 - Monitor just GC collections and GC heap allocation from `System.Runtime`:
 

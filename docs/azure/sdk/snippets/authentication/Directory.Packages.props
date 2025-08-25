@@ -15,5 +15,7 @@
     <!-- ASP.NET Core packages -->
     <PackageVersion Include="Microsoft.AspNetCore.OpenApi" Version="8.0.8" />
     <PackageVersion Include="Swashbuckle.AspNetCore" Version="6.7.3" />
+  <PackageVersion Include="Microsoft.Maui.Controls" Version="9.0.0" />
+  <PackageVersion Include="Microsoft.Extensions.Logging.Debug" Version="9.0.0" />
   </ItemGroup>
 </Project>

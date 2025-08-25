@@ -74,6 +74,7 @@ The `#:` directives that are used in file-based apps include:
   ```
 
   The two preceding preprocessors is translated into:
+
   ```xml
   <Project Sdk="Microsoft.NET.Sdk.Web" />
       <Sdk Name="Aspire.AppHost.Sdk" Version="9.4.1" />

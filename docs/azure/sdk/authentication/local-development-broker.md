@@ -7,36 +7,33 @@ ms.date: 08/20/2025
 zone_pivot_groups: operating-systems-set-one
 ---
 
-# Authenticate .NET apps to Azure services during local development using brokered authentication
+# Authenticate .NET apps to Azure services during local development using interactive brokered authentication
 
-Brokered authentication collects user credentials using the system authentication broker to authenticate an application with <xref:Azure.Identity.InteractiveBrowserCredential>. A system authentication broker is an app running on a user's machine that manages the authentication handshakes and token maintenance for all connected accounts.
+Interactive brokered authentication collects user credentials using the system authentication broker to authenticate an application with <xref:Azure.Identity.InteractiveBrowserCredential>. A system authentication broker is an app running on a user's machine that manages the authentication handshakes and token maintenance for all connected accounts.
+
+Interactive brokered authentication offers the following benefits:
+
+- **Enables Single Sign-On:** Enables apps to simplify how users authenticate with Microsoft Entra ID and protects Microsoft Entra ID refresh tokens from exfiltration and misuse
+- **Enhanced security.** Many security enhancements are delivered with the broker, without needing to update the application logic.
+- **Feature support.** With the help of the broker developers can access rich OS and service capabilities.
+- **System integration.** Applications that use the broker plug-and-play with the built-in account picker, allowing the user to quickly pick an existing account instead of reentering the same credentials over and over.
+- **Token Protection.** Ensures that the refresh tokens are device bound and enables apps to acquire device bound access tokens. See [Token Protection](/azure/active-directory/conditional-access/concept-token-protection).
 
 :::zone target="docs" pivot="os-windows"
 
-Windows Account Manager (WAM) enables identity providers such as Microsoft Entra ID to natively plug into the OS and provide the service to other apps to provide a more secure login process. WAM offers the following benefits:
-
-- **Feature support**: Apps can access OS-level and service-level capabilities, including Windows Hello, conditional access policies, and FIDO keys.
-- **Streamlined single sign-on**: Apps can use the built-in account picker, allowing the user to select an existing account instead of repeatedly entering the same credentials.
-- **Enhanced security**: Bug fixes and enhancements ship with Windows.
-- **Token protection**: Refresh tokens are device-bound, and apps can acquire device-bound access tokens.
-
-Brokered authentication enables the application for all operations allowed by the interactive login credentials. Personal Microsoft accounts and work or school accounts are supported. If a supported version of Windows is used, the default browser-based UI is replaced with a smoother authentication experience, similar to Windows built-in apps.
+Windows provides an authentication broker called Web Account Manager (WAM). Wam enables identity providers such as Microsoft Entra ID to natively plug into the OS and provide the service to other apps to provide a more secure login process. Brokered authentication enables the app for all operations allowed by the interactive login credentials. Personal Microsoft accounts and work or school accounts are supported. If a supported version of Windows is used, the default browser-based UI is replaced with a smoother authentication experience, similar to Windows built-in apps.
 
 :::zone-end
 
 :::zone target="docs" pivot="os-macos"
 
+Authentication brokers are not pre-installed on macOS but are applications developed by Microsoft, such as Company Portal. These applications are usually installed when a macOS computer is enrolled in a company's device fleet via an endpoint management solution like Microsoft Intune. To learn more about Apple device set up with the Microsoft Identity Platform, refer to Microsoft Enterprise SSO plug-in for Apple devices.
+
 :::zone-end
 
 :::zone target="docs" pivot="os-linux"
 
-The Linux operating system uses [Microsoft single sign-on for Linux](/entra/identity/devices/sso-linux) as its authentication broker. It has many benefits for developers and customers alike, including:
-
-- **Enables Single Sign-On:** enables apps to simplify how users authenticate with Microsoft Entra ID and protects Microsoft Entra ID refresh tokens from exfiltration and misuse
-- **Enhanced security.** Many security enhancements are delivered with the broker, without needing to update the application logic.
-- **Feature support.** With the help of the broker developers can access rich OS and service capabilities.
-- **System integration.** Applications that use the broker plug-and-play with the built-in account picker, allowing the user to quickly pick an existing account instead of reentering the same credentials over and over.
-- **Token Protection.** Ensures that the refresh tokens are device bound and enables apps to acquire device bound access tokens. See [Token Protection](/azure/active-directory/conditional-access/concept-token-protection).
+The Linux operating system uses [Microsoft single sign-on for Linux](/entra/identity/devices/sso-linux) as its authentication broker.
 
 > [!NOTE]
 > Microsoft single sign-on (SSO) for Linux authentication broker support is introduced with `Microsoft.Identity.Client` version v4.69.1.

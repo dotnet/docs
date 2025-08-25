@@ -47,7 +47,7 @@ dotnet-trace ps
 Take note of the process ID from your command output. Our process ID was `22884`, but yours will be different. To check the current CPU usage, use the [dotnet-counters](dotnet-counters.md) tool command:
 
 ```dotnetcli
-dotnet-counters monitor --refresh-interval 1 -p 22884
+dotnet-counters monitor -p 22884 --refresh-interval 1 --counters EventCounters\System.Runtime
 ```
 
 The `refresh-interval` is the number of seconds between the counter polling CPU values. The output should be similar to the following:
@@ -85,7 +85,7 @@ With the web app running, immediately after startup, the CPU isn't being consume
 Now, rerun the [dotnet-counters](dotnet-counters.md) command. If interested in monitoring just the `cpu-usage` counter, add '--counters System.Runtime[cpu-usage]` to the previous command. We are unsure if the CPU is being consumed, so we will monitor the same list of counters as above to verify counter values are within expected range for our application.
 
 ```dotnetcli
-dotnet-counters monitor -p 22884 --refresh-interval 1
+dotnet-counters monitor -p 22884 --refresh-interval 1 --counters EventCounters\System.Runtime
 ```
 
 You should see an increase in CPU usage as shown below (depending on the host machine, expect varying CPU usage):

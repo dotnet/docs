@@ -72,29 +72,48 @@ dotnet-counters monitor -n metric-instr
 Output similar to the following is displayed:
 
 ```dotnetcli
-Press p to pause, r to resume, q to quit.
-    Status: Running
-
-[System.Runtime]
-    % Time in GC since last GC (%)                                 0
-    Allocation Rate (B / 1 sec)                                8,168
-    CPU Usage (%)                                                  0
-    Exception Count (Count / 1 sec)                                0
-    GC Heap Size (MB)                                              2
-    Gen 0 GC Count (Count / 1 sec)                                 0
-    Gen 0 Size (B)                                         2,216,256
-    Gen 1 GC Count (Count / 1 sec)                                 0
-    Gen 1 Size (B)                                           423,392
-    Gen 2 GC Count (Count / 1 sec)                                 0
-    Gen 2 Size (B)                                           203,248
-    LOH Size (B)                                             933,216
-    Monitor Lock Contention Count (Count / 1 sec)                  0
-    Number of Active Timers                                        1
-    Number of Assemblies Loaded                                   39
-    ThreadPool Completed Work Item Count (Count / 1 sec)           0
-    ThreadPool Queue Length                                        0
-    ThreadPool Thread Count                                        3
-    Working Set (MB)                                              30
+System.Runtime
+  Press p to pause, r to resume, q to quit.
+      Status: Running
+  Name                                              Current Value
+  [System.Runtime]
+  dotnet.assembly.count ({assembly})                    11
+  dotnet.gc.collections ({collection})
+    gc.heap.generation
+      gen0                                              0
+      gen1                                              0
+      gen2                                              0
+  dotnet.gc.heap.total_allocated (By)                   1,376,024
+  dotnet.gc.last_collection.heap.fragmentation.size (By)
+    gc.heap.generation
+      gen0                                              0
+      gen1                                              0
+      gen2                                              0
+      loh                                               0
+      poh                                               0
+  dotnet.gc.last_collection.heap.size (By)
+    gc.heap.generation
+      gen0                                              0
+      gen1                                              0
+      gen2                                              0
+      loh                                               0
+      poh                                               0
+  dotnet.gc.last_collection.memory.committed_size (By)   0
+  dotnet.gc.pause.time (s)                              0
+  dotnet.jit.compilation.time (s)                       0.253
+  dotnet.jit.compiled_il.size (By)                      79,536
+  dotnet.jit.compiled_methods ({method})                743
+  dotnet.monitor.lock_contentions ({contention})        0
+  dotnet.process.cpu.count ({cpu})                      22
+  dotnet.process.cpu.time (s)
+    cpu.mode
+      system                                            0.125
+      user                                              46.453
+  dotnet.process.memory.working_set (By)                34,447,360
+  dotnet.thread_pool.queue.length ({work_item})         0
+  dotnet.thread_pool.thread.count ({thread})            0
+  dotnet.thread_pool.work_item.count ({work_item})      0
+  dotnet.timer.count ({timer})                          0
 ```
 
 For more information, see [dotnet-counters](dotnet-counters.md). To learn more about metrics in .NET, see [built-in metrics](built-in-metrics.md).

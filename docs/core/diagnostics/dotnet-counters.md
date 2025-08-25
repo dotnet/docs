@@ -59,7 +59,6 @@ dotnet-counters [-h|--help] [--version] <command>
 | Command                                             |
 |-----------------------------------------------------|
 | [dotnet-counters collect](#dotnet-counters-collect) |
-| [dotnet-counters list](#dotnet-counters-list)       |
 | [dotnet-counters monitor](#dotnet-counters-monitor) |
 | [dotnet-counters ps](#dotnet-counters-ps)           |
 
@@ -109,7 +108,7 @@ dotnet-counters collect [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
 
 - **`--counters <COUNTERS>`**
 
-  A comma-separated list of counters. Counters can be specified `provider_name[:counter_name]`. If the `provider_name` is used without a qualifying list of counters, then all counters from the provider are shown. To discover provider and counter names, use the [dotnet-counters list](#dotnet-counters-list) command. For [EventCounters](event-counters.md), `provider_name` is the name of the EventSource and for [Meters](metrics.md), `provider_name` is the name of the Meter.
+  A comma-separated list of counters. Counters can be specified `provider_name[:counter_name]`. If the `provider_name` is used without a qualifying list of counters, then all counters from the provider are shown. To discover provider and counter names, consult [built-in metrics docs](https://learn.microsoft.com/en-us/dotnet/core/diagnostics/built-in-metrics). For [EventCounters](event-counters.md), `provider_name` is the name of the EventSource and for [Meters](metrics.md), `provider_name` is the name of the Meter.
 
 - **`--format <csv|json>`**
 
@@ -150,54 +149,6 @@ dotnet-counters collect [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
   Starting a counter session. Press Q to quit.
   File saved to counter.json
   ```
-
-## dotnet-counters list
-
-Displays a list of counter names and descriptions, grouped by provider.
-
-### Synopsis
-
-```dotnetcli
-dotnet-counters list [-h|--help]
-```
-
-### Example
-
-```dotnetcli
-> dotnet-counters list
-Showing well-known counters only. Specific processes may support additional counters.
-
-System.Runtime
-    cpu-usage                                    Amount of time the process has utilized the CPU (ms)
-    working-set                                  Amount of working set used by the process (MB)
-    gc-heap-size                                 Total heap size reported by the GC (MB)
-    gen-0-gc-count                               Number of Gen 0 GCs per interval
-    gen-1-gc-count                               Number of Gen 1 GCs per interval
-    gen-2-gc-count                               Number of Gen 2 GCs per interval
-    time-in-gc                                   % time in GC since the last GC
-    gen-0-size                                   Gen 0 Heap Size
-    gen-1-size                                   Gen 1 Heap Size
-    gen-2-size                                   Gen 2 Heap Size
-    loh-size                                     LOH Heap Size
-    alloc-rate                                   Allocation Rate
-    assembly-count                               Number of Assemblies Loaded
-    exception-count                              Number of Exceptions per interval
-    threadpool-thread-count                      Number of ThreadPool Threads
-    monitor-lock-contention-count                Monitor Lock Contention Count
-    threadpool-queue-length                      ThreadPool Work Items Queue Length
-    threadpool-completed-items-count             ThreadPool Completed Work Items Count
-    active-timer-count                           Active Timers Count
-
-Microsoft.AspNetCore.Hosting
-    requests-per-second                  Request rate
-    total-requests                       Total number of requests
-    current-requests                     Current number of requests
-    failed-requests                      Failed number of requests
-```
-
-> [!NOTE]
-> The `Microsoft.AspNetCore.Hosting` counters are displayed when there are processes identified that support these counters, for example; when an ASP.NET Core application is running on the host machine.
-
 ## dotnet-counters monitor
 
 Displays periodically refreshing values of selected counters.
@@ -228,7 +179,7 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
 
 - **`--counters <COUNTERS>`**
 
-  A comma-separated list of counters. Counters can be specified `provider_name[:counter_name]`. If the `provider_name` is used without a qualifying list of counters, then all counters from the provider are shown. To discover provider and counter names, use the [dotnet-counters list](#dotnet-counters-list) command. For [EventCounters](event-counters.md), `provider_name` is the name of the EventSource and for [Meters](metrics.md), `provider_name` is the name of the Meter.
+  A comma-separated list of counters. Counters can be specified `provider_name[:counter_name]`. If the `provider_name` is used without a qualifying list of counters, then all counters from the provider are shown. To discover provider and counter names, consult [built-in metrics docs](https://learn.microsoft.com/en-us/dotnet/core/diagnostics/built-in-metrics). For [EventCounters](event-counters.md), `provider_name` is the name of the EventSource and for [Meters](metrics.md), `provider_name` is the name of the Meter.
 
  **`-- <command>`**
 
@@ -257,44 +208,92 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
   > dotnet-counters monitor --process-id 1902  --refresh-interval 3 --counters System.Runtime
   Press p to pause, r to resume, q to quit.
       Status: Running
-
+  Name                                              Current Value
   [System.Runtime]
-      % Time in GC since last GC (%)                                 0
-      Allocation Rate (B / 1 sec)                                5,376
-      CPU Usage (%)                                                  0
-      Exception Count (Count / 1 sec)                                0
-      GC Fragmentation (%)                                          48.467
-      GC Heap Size (MB)                                              0
-      Gen 0 GC Count (Count / 1 sec)                                 1
-      Gen 0 Size (B)                                                24
-      Gen 1 GC Count (Count / 1 sec)                                 1
-      Gen 1 Size (B)                                                24
-      Gen 2 GC Count (Count / 1 sec)                                 1
-      Gen 2 Size (B)                                           272,000
-      IL Bytes Jitted (B)                                       19,449
-      LOH Size (B)                                              19,640
-      Monitor Lock Contention Count (Count / 1 sec)                  0
-      Number of Active Timers                                        0
-      Number of Assemblies Loaded                                    7
-      Number of Methods Jitted                                     166
-      POH (Pinned Object Heap) Size (B)                             24
-      ThreadPool Completed Work Item Count (Count / 1 sec)           0
-      ThreadPool Queue Length                                        0
-      ThreadPool Thread Count                                        2
-      Working Set (MB)                                              19
+    dotnet.assembly.count ({assembly})                  11
+    dotnet.gc.collections ({collection})
+      gc.heap.generation
+        gen0                                            0
+        gen1                                            0
+        gen2                                            0
+    dotnet.gc.heap.total_allocated (By)                 1,376,024
+    dotnet.gc.last_collection.heap.fragmentation.size (By)
+      gc.heap.generation
+        gen0                                            0
+        gen1                                            0
+        gen2                                            0
+        loh                                             0
+        poh                                             0
+    dotnet.gc.last_collection.heap.size (By)
+      gc.heap.generation
+        gen0                                            0
+        gen1                                            0
+        gen2                                            0
+        loh                                             0
+        poh                                             0
+    dotnet.gc.last_collection.memory.committed_size (By)   0
+    dotnet.gc.pause.time (s)                            0
+    dotnet.jit.compilation.time (s)                     0.253
+    dotnet.jit.compiled_il.size (By)                    79,536
+    dotnet.jit.compiled_methods ({method})              743
+    dotnet.monitor.lock_contentions ({contention})      0
+    dotnet.process.cpu.count ({cpu})                    22
+    dotnet.process.cpu.time (s)
+      cpu.mode
+        system                                          0.125
+        user                                            46.453
+    dotnet.process.memory.working_set (By)              34,447,360
+    dotnet.thread_pool.queue.length ({work_item})       0
+    dotnet.thread_pool.thread.count ({thread})          0
+    dotnet.thread_pool.work_item.count ({work_item})    0
+    dotnet.timer.count ({timer})                        0
   ```
 
-- Monitor just CPU usage and GC heap size from `System.Runtime`:
+  > [!NOTE]
+  > If you are using an older version of .NET (<=8), if you are specifically requesting EventCounters as opposed to the default meters (for example through the command ```dotnet-counters monitor -p 65492 --counters EventCounters\System.Runtime```), or if only EventCounters are available, then the UI will look slightly different. See below for an example.
+  >  ```
+  >  [System.Runtime]
+  >      % Time in GC since last GC (%)                                 0
+  >      Allocation Rate (B / 1 sec)                                5,376
+  >      CPU Usage (%)                                                  0
+  >      Exception Count (Count / 1 sec)                                0
+  >      GC Fragmentation (%)                                          48.467
+  >      GC Heap Size (MB)                                              0
+  >      Gen 0 GC Count (Count / 1 sec)                                 1
+  >      Gen 0 Size (B)                                                24
+  >      Gen 1 GC Count (Count / 1 sec)                                 1
+  >      Gen 1 Size (B)                                                24
+  >      Gen 2 GC Count (Count / 1 sec)                                 1
+  >      Gen 2 Size (B)                                           272,000
+  >      IL Bytes Jitted (B)                                       19,449
+  >      LOH Size (B)                                              19,640
+  >      Monitor Lock Contention Count (Count / 1 sec)                  0
+  >      Number of Active Timers                                        0
+  >      Number of Assemblies Loaded                                    7
+  >      Number of Methods Jitted                                     166
+  >      POH (Pinned Object Heap) Size (B)                             24
+  >      ThreadPool Completed Work Item Count (Count / 1 sec)           0
+  >      ThreadPool Queue Length                                        0
+  >      ThreadPool Thread Count                                        2
+  >      Working Set (MB)                                              19
+
+- Monitor just GC collections and GC heap allocation from `System.Runtime`:
 
   ```dotnetcli
-  > dotnet-counters monitor --process-id 1902 --counters System.Runtime[cpu-usage,gc-heap-size]
+  > dotnet-counters monitor --process-id 1902 --counters System.Runtime[dotnet.gc.collections,dotnet.gc.heap.total_allocated] 
 
   Press p to pause, r to resume, q to quit.
-    Status: Running
+  Status: Running
 
+  Name                                  Current Value
   [System.Runtime]
-      CPU Usage (%)                                 24
-      GC Heap Size (MB)                            811
+    dotnet.gc.collections ({collection})
+      gc.heap.generation
+        gen0                                0
+        gen1                                0
+        gen2                                0
+    dotnet.gc.heap.total_allocated (By)     9,943,384
+
   ```
 
 - Monitor `EventCounter` values from user-defined `EventSource`. For more information, see [Tutorial: Measure performance using EventCounters in .NET Core](event-counter-perf.md).
@@ -306,121 +305,36 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
       request                                      100
   ```
 
-- View all well-known counters that are available in `dotnet-counters`:
-
-  ```dotnetcli
-  > dotnet-counters list
-
-  Showing well-known counters for .NET (Core) version 3.1 only. Specific processes may support additional counters.
-  System.Runtime
-      cpu-usage                          The percent of process' CPU usage relative to all of the system CPU resources [0-100]
-      working-set                        Amount of working set used by the process (MB)
-      gc-heap-size                       Total heap size reported by the GC (MB)
-      gen-0-gc-count                     Number of Gen 0 GCs between update intervals
-      gen-1-gc-count                     Number of Gen 1 GCs between update intervals
-      gen-2-gc-count                     Number of Gen 2 GCs between update intervals
-      time-in-gc                         % time in GC since the last GC
-      gen-0-size                         Gen 0 Heap Size
-      gen-1-size                         Gen 1 Heap Size
-      gen-2-size                         Gen 2 Heap Size
-      loh-size                           LOH Size
-      alloc-rate                         Number of bytes allocated in the managed heap between update intervals
-      assembly-count                     Number of Assemblies Loaded
-      exception-count                    Number of Exceptions / sec
-      threadpool-thread-count            Number of ThreadPool Threads
-      monitor-lock-contention-count      Number of times there were contention when trying to take the monitor lock between update intervals
-      threadpool-queue-length            ThreadPool Work Items Queue Length
-      threadpool-completed-items-count   ThreadPool Completed Work Items Count
-      active-timer-count                 Number of timers that are currently active
-
-  Microsoft.AspNetCore.Hosting
-      requests-per-second                Number of requests between update intervals
-      total-requests                     Total number of requests
-      current-requests                   Current number of requests
-      failed-requests                    Failed number of requests
-  ```
-
-- View all well-known counters that are available in `dotnet-counters` for .NET 5 apps:
-
-  ```dotnetcli
-  > dotnet-counters list --runtime-version 5.0
-
-  Showing well-known counters for .NET (Core) version 5.0 only. Specific processes may support additional counters.
-  System.Runtime
-      cpu-usage                          The percent of process' CPU usage relative to all of the system CPU resources [0-100]
-      working-set                        Amount of working set used by the process (MB)
-      gc-heap-size                       Total heap size reported by the GC (MB)
-      gen-0-gc-count                     Number of Gen 0 GCs between update intervals
-      gen-1-gc-count                     Number of Gen 1 GCs between update intervals
-      gen-2-gc-count                     Number of Gen 2 GCs between update intervals
-      time-in-gc                         % time in GC since the last GC
-      gen-0-size                         Gen 0 Heap Size
-      gen-1-size                         Gen 1 Heap Size
-      gen-2-size                         Gen 2 Heap Size
-      loh-size                           LOH Size
-      poh-size                           POH (Pinned Object Heap) Size
-      alloc-rate                         Number of bytes allocated in the managed heap between update intervals
-      gc-fragmentation                   GC Heap Fragmentation
-      assembly-count                     Number of Assemblies Loaded
-      exception-count                    Number of Exceptions / sec
-      threadpool-thread-count            Number of ThreadPool Threads
-      monitor-lock-contention-count      Number of times there were contention when trying to take the monitor lock between update intervals
-      threadpool-queue-length            ThreadPool Work Items Queue Length
-      threadpool-completed-items-count   ThreadPool Completed Work Items Count
-      active-timer-count                 Number of timers that are currently active
-      il-bytes-jitted                    Total IL bytes jitted
-      methods-jitted-count               Number of methods jitted
-
-  Microsoft.AspNetCore.Hosting
-      requests-per-second   Number of requests between update intervals
-      total-requests        Total number of requests
-      current-requests      Current number of requests
-      failed-requests       Failed number of requests
-
-  Microsoft-AspNetCore-Server-Kestrel
-      connections-per-second      Number of connections between update intervals
-      total-connections           Total Connections
-      tls-handshakes-per-second   Number of TLS Handshakes made between update intervals
-      total-tls-handshakes        Total number of TLS handshakes made
-      current-tls-handshakes      Number of currently active TLS handshakes
-      failed-tls-handshakes       Total number of failed TLS handshakes
-      current-connections         Number of current connections
-      connection-queue-length     Length of Kestrel Connection Queue
-      request-queue-length        Length total HTTP request queue
-
-  System.Net.Http
-      requests-started        Total Requests Started
-      requests-started-rate   Number of Requests Started between update intervals
-      requests-aborted        Total Requests Aborted
-      requests-aborted-rate   Number of Requests Aborted between update intervals
-      current-requests        Current Requests
-  ```
-
 - Launch `my-aspnet-server.exe` and monitor the # of assemblies loaded from its startup:
 
   ```dotnetcli
-  > dotnet-counters monitor --counters System.Runtime[assembly-count] -- my-aspnet-server.exe
-
+  > dotnet-counters monitor --counters System.Runtime[dotnet.assembly.count] -- my-aspnet-server.exe
   Press p to pause, r to resume, q to quit.
-    Status: Running
+  Status: Running
 
+  Name                               Current Value
   [System.Runtime]
-      Number of Assemblies Loaded                   24
+  dotnet.assembly.count ({assembly})      11
   ```
   
 - Launch `my-aspnet-server.exe` with `arg1` and `arg2` as command-line arguments and monitor its working set and GC heap size from its startup:
 
   ```dotnetcli
-  > dotnet-counters monitor --counters System.Runtime[working-set,gc-heap-size] -- my-aspnet-server.exe arg1 arg2
+  > dotnet-counters monitor --counters System.Runtime[dotnet.process.memory.working_set,dotnet.gc.last_collection.heap.size] -- my-aspnet-server.exe arg1 arg2
   ```
 
   ```output
-  Press p to pause, r to resume, q to quit.
-    Status: Running
-
+  Name                                  Current Value
   [System.Runtime]
-      GC Heap Size (MB)                                 39
-      Working Set (MB)                                  59
+    dotnet.gc.last_collection.heap.size (By)
+      gc.heap.generation
+        gen0                              560
+        gen1                              462,720
+        gen2                              0
+        loh                               0
+        poh                               8,184
+    dotnet.process.memory.working_set (By) 48,431,104
+
   ```
 
 ## dotnet-counters ps

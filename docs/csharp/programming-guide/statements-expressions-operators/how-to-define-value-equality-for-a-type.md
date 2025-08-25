@@ -3,7 +3,7 @@ title: "How to define value equality for a class or struct"
 description: Learn how to define value equality for a class or struct. See code examples and view available resources.
 ms.topic: how-to
 ms.date: 03/26/2021
-ai-usage: ai-generated
+ai-usage: ai-assisted
 helpviewer_keywords: 
   - "overriding Equals method [C#]"
   - "object equivalence [C#]"
@@ -57,16 +57,20 @@ The following example shows how records automatically implement value equality w
 
 Records provide several advantages for value equality:
 
-- **Automatic implementation**: Records automatically implement `IEquatable<T>` and override `Equals(object?)`, `GetHashCode()`, and the `==`/`!=` operators.
-- **Correct inheritance behavior**: Unlike the class example shown earlier, records handle inheritance scenarios correctly.
+- **Automatic implementation**: Records automatically implement <xref:System.IEquatable%601?displayProperty=nameWithType> and override <xref:System.Object.Equals%2A?displayProperty=nameWithType>, <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType>, and the `==`/`!=` operators.
+- **Correct inheritance behavior**: Records implement <xref:System.IEquatable%601?displayProperty=nameWithType> using virtual methods that check the runtime type of both operands, ensuring correct behavior in inheritance hierarchies and polymorphic scenarios.
 - **Immutability by default**: Records encourage immutable design, which works well with value equality semantics.
 - **Concise syntax**: Positional parameters provide a compact way to define data types.
 - **Better performance**: The compiler-generated equality implementation is optimized and doesn't use reflection like the default struct implementation.
 
 Use records when your primary goal is to store data and you need value equality semantics.
 
+## Records with members that use reference equality
+
+When records contain members that use reference equality, the automatic value equality behavior of records doesn't work as expected. This applies to collections like <xref:System.Collections.Generic.List%601?displayProperty=nameWithType>, arrays, and other reference types that don't implement value-based equality (with the notable exception of <xref:System.String?displayProperty=nameWithType>, which does implement value equality).
+
 > [!IMPORTANT]
-> **Records with reference-equality members**: While records provide excellent value equality for basic data types, they don't automatically solve value equality for members that use reference equality. For example, if a record contains a `List<T>`, `Array`, or other reference types that don't implement value equality, two record instances with identical content in those members will still not be equal because the members use reference equality.
+> **Records with reference-equality members**: While records provide excellent value equality for basic data types, they don't automatically solve value equality for members that use reference equality. For example, if a record contains a <xref:System.Collections.Generic.List%601?displayProperty=nameWithType>, <xref:System.Array?displayProperty=nameWithType>, or other reference types that don't implement value equality, two record instances with identical content in those members will still not be equal because the members use reference equality.
 >
 > ```csharp
 > public record PersonWithHobbies(string Name, List<string> Hobbies);
@@ -76,24 +80,20 @@ Use records when your primary goal is to store data and you need value equality 
 > 
 > Console.WriteLine(person1.Equals(person2)); // False - different List instances!
 > ```
->
-> See the [Records with collections](#records-with-collections) section for solutions to this issue.
 
-## Records with collections
-
-When records contain collection types like `List<T>`, arrays, or other reference types that use reference equality, the automatic value equality behavior of records doesn't work as expected. This is because records use the `Equals` method of each member, and collection types typically use reference equality rather than comparing their contents.
+This is because records use the <xref:System.Object.Equals%2A?displayProperty=nameWithType> method of each member, and collection types typically use reference equality rather than comparing their contents.
 
 :::code language="csharp" source="snippets/how-to-define-value-equality-for-a-type/RecordCollectionsIssue/Program.cs":::
 
-### Solutions for records with collections
+### Solutions for records with reference-equality members
 
-1. **Custom `IEquatable<T>` implementation**: Override the compiler-generated equality to provide content-based comparison for collection members.
+- **Custom <xref:System.IEquatable%601?displayProperty=nameWithType> implementation**: Override the compiler-generated equality to provide content-based comparison for reference-equality members. For collections, implement element-by-element comparison using <xref:System.Linq.Enumerable.SequenceEqual%2A?displayProperty=nameWithType> or similar methods.
 
-2. **Use value types where possible**: Consider if your data can be represented with value types that naturally support value equality.
+- **Use value types where possible**: Consider if your data can be represented with value types or immutable structures that naturally support value equality, such as <xref:System.Collections.Immutable.ImmutableArray%601?displayProperty=nameWithType> or <xref:System.Collections.Immutable.ImmutableList%601?displayProperty=nameWithType>.
 
-3. **Immutable collection patterns**: Design your records to work with the limitations by being explicit about when reference equality is acceptable.
+- **Use types with value-based equality**: For collections, consider using types that implement value-based equality or implement custom collection types that override <xref:System.Object.Equals%2A?displayProperty=nameWithType> to provide content-based comparison.
 
-4. **Consider composition over inheritance**: Sometimes restructuring the data model can avoid these equality complications.
+- **Design with reference equality in mind**: Accept that some members will use reference equality and design your application logic accordingly, ensuring that you reuse the same instances when equality is important.
 
 The key insight is that records solve the *structural* equality problem but don't change the *semantic* equality behavior of the types they contain.
 
@@ -122,7 +122,7 @@ The `==` and `!=` operators can be used with classes even if the class does not 
 
 ## Polymorphic equality
 
-When implementing value equality in inheritance hierarchies with classes, the standard approach shown in the class example can lead to incorrect behavior when objects are used polymorphically. The issue occurs because `IEquatable<T>` implementations are chosen based on compile-time type, not runtime type.
+When implementing value equality in inheritance hierarchies with classes, the standard approach shown in the class example can lead to incorrect behavior when objects are used polymorphically. The issue occurs because <xref:System.IEquatable%601?displayProperty=nameWithType> implementations are chosen based on compile-time type, not runtime type.
 
 ### The problem with standard implementations
 
@@ -136,22 +136,22 @@ Console.WriteLine(p1.Equals(p2)); // True - but should be False!
 
 The comparison returns `True` because the compiler selects `TwoDPoint.Equals(TwoDPoint)` based on the declared type, ignoring the `Z` coordinate differences.
 
-### Solution: Explicit interface implementation
+### Solution: Proper virtual `Equals` implementation
 
-A safer approach for polymorphic equality uses [explicit interface implementation](../interfaces/explicit-interface-implementation.md) for `IEquatable<T>`. This forces all equality comparisons to go through the virtual `Equals(object?)` method, which uses runtime type information:
+The key to correct polymorphic equality is ensuring that all equality comparisons use the virtual <xref:System.Object.Equals%2A?displayProperty=nameWithType> method, which can check runtime types and handle inheritance correctly. This can be achieved by using explicit interface implementation for <xref:System.IEquatable%601?displayProperty=nameWithType> that delegates to the virtual method:
 
 :::code language="csharp" source="snippets/how-to-define-value-equality-for-a-type/ValueEqualityPolymorphic/Program.cs":::
 
-### Key benefits of explicit interface implementation
+### Key elements of the solution
 
-- **Runtime type checking**: All equality comparisons use the `virtual Equals(object?)` method, ensuring runtime type compatibility.
-- **Safe polymorphism**: Objects behave correctly regardless of their declared type.
-- **Inheritance-friendly**: Derived classes can safely override the base implementation.
-- **Collection compatibility**: Works correctly with hash-based collections like `Dictionary<TKey,TValue>` and `HashSet<T>`.
+- **Virtual `Equals(object?)` override**: The main equality logic happens in the virtual <xref:System.Object.Equals%2A?displayProperty=nameWithType> method, which is called regardless of compile-time type.
+- **Runtime type checking**: Using `this.GetType() != p.GetType()` ensures that objects of different types are never considered equal.
+- **Explicit interface implementation**: The <xref:System.IEquatable%601?displayProperty=nameWithType> implementation delegates to the virtual method, preventing compile-time type selection issues.
+- **Protected virtual helper method**: The `protected virtual Equals(TwoDPoint? p)` method allows derived classes to override equality logic while maintaining type safety.
 
 ### When to use this approach
 
-Use explicit interface implementation for `IEquatable<T>` when:
+Use this pattern when:
 
 - You have inheritance hierarchies where value equality is important
 - Objects might be used polymorphically (declared as base type, instantiated as derived type)
@@ -160,7 +160,7 @@ Use explicit interface implementation for `IEquatable<T>` when:
 
 ### Considerations
 
-- **Performance**: Slight overhead from virtual method calls and type checking
+- **Performance**: Slight overhead from virtual method calls and runtime type checking
 - **Complexity**: More complex implementation than the standard approach
 - **Testing**: Requires thorough testing of polymorphic scenarios to ensure correctness
 

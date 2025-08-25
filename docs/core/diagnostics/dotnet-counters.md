@@ -149,6 +149,7 @@ dotnet-counters collect [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
   Starting a counter session. Press Q to quit.
   File saved to counter.json
   ```
+
 ## dotnet-counters monitor
 
 Displays periodically refreshing values of selected counters.
@@ -251,8 +252,9 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
 
   > [!NOTE]
   > If you are using an older version of .NET (<=8), if you are specifically requesting EventCounters as opposed to the default meters (for example through the command ```dotnet-counters monitor -p 65492 --counters EventCounters\System.Runtime```), or if only EventCounters are available, then the UI will look slightly different. See below for an example.
+  >
   >  ```
-  >  [System.Runtime]
+  > [System.Runtime]
   >      % Time in GC since last GC (%)                                 0
   >      Allocation Rate (B / 1 sec)                                5,376
   >      CPU Usage (%)                                                  0
@@ -276,6 +278,7 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
   >      ThreadPool Queue Length                                        0
   >      ThreadPool Thread Count                                        2
   >      Working Set (MB)                                              19
+  > ```
 
 - Monitor just GC collections and GC heap allocation from `System.Runtime`:
 

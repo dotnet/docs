@@ -102,24 +102,24 @@ Name                                                       Current Value
     dotnet.assembly.count ({assembly})                               115
     dotnet.gc.collections ({collection})
         gc.heap.generation
-        gen0                                                           2
-        gen1                                                           1
-        gen2                                                           1
+          gen0                                                         2
+          gen1                                                         1
+          gen2                                                         1
     dotnet.gc.heap.total_allocated (By)                       64,329,632
     dotnet.gc.last_collection.heap.fragmentation.size (By)
         gc.heap.generation
-        gen0                                                     199,920
-        gen1                                                      29,208
-        gen2                                                           0
-        loh                                                           32
-        poh                                                            0
+          gen0                                                   199,920
+          gen1                                                    29,208
+          gen2                                                         0
+          loh                                                         32
+          poh                                                          0
     dotnet.gc.last_collection.heap.size (By)
         gc.heap.generation
-        gen0                                                     208,712
-        gen1                                                   3,456,000
-        gen2                                                   5,065,600
-        loh                                                       98,384
-        poh                                                    3,147,488
+          gen0                                                   208,712
+          gen1                                                 3,456,000
+          gen2                                                 5,065,600
+          loh                                                     98,384
+          poh                                                  3,147,488
     dotnet.gc.last_collection.memory.committed_size (By)      31,096,832
     dotnet.gc.pause.time (s)                                           0.024
     dotnet.jit.compilation.time (s)                                    1.285

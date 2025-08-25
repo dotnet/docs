@@ -1,15 +1,15 @@
 ---
-title: Authenticate .NET apps to Azure using interactive brokered authentication.
-description: Learn how to authenticate your application to Azure services when using the Azure SDK for .NET during local development using interactive brokered authentication.
+title: Authenticate .NET apps to Azure using brokered authentication.
+description: Learn how to authenticate your app to Azure services when using the Azure SDK for .NET during local development using brokered authentication.
 ms.topic: how-to
 ms.custom: devx-track-dotnet, engagement-fy23, devx-track-azurecli
 ms.date: 08/20/2025
 zone_pivot_groups: operating-systems-set-one
 ---
 
-# Authenticate .NET apps to Azure services during local development using interactive brokered authentication
+# Authenticate .NET apps to Azure services during local development using brokered authentication
 
-Interactive brokered authentication collects user credentials using the system authentication broker to authenticate an application with <xref:Azure.Identity.InteractiveBrowserCredential>. A system authentication broker is an app running on a user's machine that manages the authentication handshakes and token maintenance for all connected accounts.
+Brokered authentication collects user credentials using the system authentication broker to authenticate an application with <xref:Azure.Identity.InteractiveBrowserCredential>. A system authentication broker is an app running on a user's machine that manages the authentication handshakes and token maintenance for all connected accounts.
 
 WAM enables identity providers such as Microsoft Entra ID to natively plug into the OS and provide the service to other apps to provide a more secure login process. WAM offers the following benefits:
 
@@ -18,13 +18,13 @@ WAM enables identity providers such as Microsoft Entra ID to natively plug into 
 - **Enhanced security**: Bug fixes and enhancements ship with Windows.
 - **Token protection**: Refresh tokens are device-bound, and apps can acquire device-bound access tokens.
 
-Interactive brokered authentication enables the application for all operations allowed by the interactive login credentials. Personal Microsoft accounts and work or school accounts are supported. If a supported version of Windows is used, the default browser-based UI is replaced with a smoother authentication experience, similar to Windows built-in apps.
+Brokered authentication enables the application for all operations allowed by the interactive login credentials. Personal Microsoft accounts and work or school accounts are supported. If a supported version of Windows is used, the default browser-based UI is replaced with a smoother authentication experience, similar to Windows built-in apps.
 
-### Enable applications for interactive brokered authentication
+## Configure the app for brokered authentication
 
-Perform the following steps to enable the application to authenticate through the interactive broker flow.
+Complete the following steps to enable the application to authenticate through the broker flow:
 
-1. On the [Azure portal](https://portal.azure.com), navigate to **Microsoft Entra ID** and select **App registrations** on the left-hand menu.
+1. In the [Azure portal](https://portal.azure.com), navigate to **Microsoft Entra ID** and select **App registrations** on the left-hand menu.
 1. Select the registration for your app, then select **Authentication**.
 1. Add the WAM redirect URI to your app registration via a platform configuration:
     1. Under **Platform configurations**, select **+ Add a platform**.
@@ -32,7 +32,7 @@ Perform the following steps to enable the application to authenticate through th
     1. In **Custom redirect URIs**, enter the following WAM redirect URI:
 
         ```text
-        ms-appx-web://microsoft.aad.brokerplugin/{client_id}
+        ms-appx-web://Microsoft.AAD.BrokerPlugin/{client_id}
         ```
 
          The `{client_id}` placeholder must be replaced with the **Application (client) ID** listed on the **Overview** pane of the app registration.
@@ -48,22 +48,29 @@ Perform the following steps to enable the application to authenticate through th
     > [!IMPORTANT]
     > You must also be the admin of your tenant to grant consent to your application when you sign in for the first time.
 
-### Example using InteractiveBrowserCredential
+## Implement the code
 
 The following example demonstrates using an <xref:Azure.Identity.InteractiveBrowserCredential> in a MAUI app to authenticate with the [`BlobServiceClient`](/dotnet/api/azure.storage.blobs.blobserviceclient):
 
 :::zone target="docs" pivot="windows"
+Complete the following steps in your .NET project:
+
+1. Install the [Azure.Identity](https://www.nuget.org/packages/Azure.Identity) and [Azure.Identity.Broker](https://www.nuget.org/packages/Azure.Identity.Broker) packages.
+1. Get a reference to the parent window on top of which the account picker dialog should appear.
+1. Create an instance of <xref:Azure.Identity.InteractiveBrowserCredential> that accepts an instance of <xref:Azure.Identity.Broker.InteractiveBrowserCredentialBrokerOptions>.
+
+Consider the following sample code from a Windows Forms app that passes the credential to an instance of [BlobServiceClient](/dotnet/api/azure.storage.blobs.blobserviceclient):
 
 :::code language="csharp" source="../snippets/authentication/additional-auth/interactive/InteractiveBrokeredAuth.cs" highlight="16-20":::
 
 > [!NOTE]
-> Visit the [Parent window handles](/entra/msal/dotnet/acquiring-tokens/desktop-mobile/wam#parent-window-handles) and [Retrieve a window handle](/windows/apps/develop/ui-input/retrieve-hwnd) articles for more information about retrieving window handles.
+> For more information about retrieving window handles, see [Parent window handles](/entra/msal/dotnet/acquiring-tokens/desktop-mobile/wam#parent-window-handles) and [Retrieve a window handle](/windows/apps/develop/ui-input/retrieve-hwnd).
 
-For the code to run successfully, your user account must be assigned an Azure role on the storage account that allows access to blob containers such as **Storage Account Data Contributor**. If an app is specified, it must have API permissions set for **user_impersonation Access Azure Storage** (step 6 in the previous section). This API permission allows the app to access Azure storage on behalf of the signed-in user after consent is granted during sign-in.
+For the code to run successfully, your user account must be assigned an Azure RBAC role on the storage account that allows access to blob containers, such as **Storage Account Data Contributor**. If an app is specified, it must have API permissions set for **user_impersonation Access Azure Storage** (step 6 in the previous section). This API permission allows the app to access Azure storage on behalf of the signed-in user after consent is granted during sign-in.
 
 The following screenshot shows the user sign-in experience:
 
-:::image type="content" source="../media/web-account-manager-sign-in-account-picker.png" alt-text="A screenshot that shows the sign-in experience when using the interactive browser broker credential to authenticate a user." :::
+:::image type="content" source="../media/web-account-manager-sign-in-account-picker.png" alt-text="A screenshot that shows the sign-in experience when using a broker-enabled InteractiveBrowserCredential instance to authenticate a user." :::
 
 :::zone-end
 

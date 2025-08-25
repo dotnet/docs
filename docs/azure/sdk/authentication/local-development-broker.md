@@ -11,7 +11,7 @@ zone_pivot_groups: operating-systems-set-one
 
 Brokered authentication collects user credentials using the system authentication broker to authenticate an application with <xref:Azure.Identity.InteractiveBrowserCredential>. A system authentication broker is an app running on a user's machine that manages the authentication handshakes and token maintenance for all connected accounts.
 
-:::zone target="docs" pivot="windows"
+:::zone target="docs" pivot="os-windows"
 
 Windows Account Manager (WAM) enables identity providers such as Microsoft Entra ID to natively plug into the OS and provide the service to other apps to provide a more secure login process. WAM offers the following benefits:
 
@@ -24,7 +24,7 @@ Brokered authentication enables the application for all operations allowed by th
 
 :::zone-end
 
-:::zone target="docs" pivot="linux"
+:::zone target="docs" pivot="os-linux"
 
 The Linux operating system uses [Microsoft single sign-on for Linux](/entra/identity/devices/sso-linux) as its authentication broker. It has many benefits for developers and customers alike, including:
 
@@ -91,7 +91,7 @@ The following example demonstrates using an <xref:Azure.Identity.InteractiveBrow
 1. Get a reference to the parent window on top of which the account picker dialog should appear.
 1. Create an instance of <xref:Azure.Identity.InteractiveBrowserCredential> that accepts an instance of <xref:Azure.Identity.Broker.InteractiveBrowserCredentialBrokerOptions>.
 
-:::zone target="docs" pivot="windows"
+:::zone target="docs" pivot="os-windows"
 
 :::code language="csharp" source="../snippets/authentication/brokered/MauiApp/MainPage.xaml.cs" highlight="36-48" :::
 
@@ -101,19 +101,19 @@ The following screenshot shows the user sign-in experience:
 
 :::zone-end
 
-:::zone target="docs" pivot="macos"
+:::zone target="docs" pivot="os-macos"
 
 :::code language="csharp" source="../snippets/authentication/brokered/MauiApp/MainPage.xaml.cs" highlight="50-62" :::
 
 :::zone-end
 
-:::zone target="docs" pivot="linux"
+:::zone target="docs" pivot="os-linux"
 
 :::code language="csharp" source="../snippets/authentication/brokered/ConsoleApp/Program.cs" :::
 
 :::zone-end
 
-:::zone target="docs" pivot="windows"
+:::zone target="docs" pivot="os-windows"
 
 ### Authenticate the default system account via WAM
 
@@ -127,7 +127,7 @@ Once you opt in to this behavior, the credential attempts to sign in by asking t
 
 :::zone-end
 
-:::zone target="docs" pivot="macOS"
+:::zone target="docs" pivot="os-macos"
 
 ### Authenticate the default system account via MacCatalyst
 
@@ -141,7 +141,7 @@ Once you opt in to this behavior, the credential attempts to sign in by asking t
 
 :::zone-end
 
-:::zone target="docs" pivot="linux"
+:::zone target="docs" pivot="os-linux"
 
 ### Authenticate the default system account on Linux
 

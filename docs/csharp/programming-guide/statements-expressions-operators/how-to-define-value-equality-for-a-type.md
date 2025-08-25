@@ -58,7 +58,7 @@ The following example shows how records automatically implement value equality w
 Records provide several advantages for value equality:
 
 - **Automatic implementation**: Records automatically implement <xref:System.IEquatable%601?displayProperty=nameWithType> and override <xref:System.Object.Equals%2A?displayProperty=nameWithType>, <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType>, and the `==`/`!=` operators.
-- **Correct inheritance behavior**: Records implement <xref:System.IEquatable%601?displayProperty=nameWithType> using virtual methods that check the runtime type of both operands, ensuring correct behavior in inheritance hierarchies and polymorphic scenarios.
+- **Correct inheritance behavior**: Records implement `IEquatable<T>` using virtual methods that check the runtime type of both operands, ensuring correct behavior in inheritance hierarchies and polymorphic scenarios.
 - **Immutability by default**: Records encourage immutable design, which works well with value equality semantics.
 - **Concise syntax**: Positional parameters provide a compact way to define data types.
 - **Better performance**: The compiler-generated equality implementation is optimized and doesn't use reflection like the default struct implementation.

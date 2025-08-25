@@ -82,7 +82,7 @@ If an app is specified, it must have API permissions set for **user_impersonatio
 
 ## Implement the code
 
-Complete the following steps to use <xref:Azure.Identity.InteractiveBrowserCredential> in a MAUI app to authenticate with the [`SecretClient`](/dotnet/api/azure.security.keyvault.secrets.secretclient?view=azure-dotnet):
+Complete the following steps to use <xref:Azure.Identity.InteractiveBrowserCredential> in a MAUI app to authenticate with the [`SecretClient`](/dotnet/api/azure.security.keyvault.secrets.secretclient):
 
 1. Install the [Azure.Identity](https://www.nuget.org/packages/Azure.Identity) and [Azure.Identity.Broker](https://www.nuget.org/packages/Azure.Identity.Broker) packages.
 
@@ -113,8 +113,6 @@ The following screenshot shows the user sign-in experience:
 :::code language="csharp" source="../snippets/authentication/brokered/console-app/Program.cs" range="22-28" :::
 
 :::zone-end
-
-:::zone target="docs" pivot="os-windows"
 
 ### Authenticate the default system account
 

@@ -40,15 +40,13 @@ You can't use the `yield` statements in:
 - [unsafe blocks](../keywords/unsafe.md). Before C# 13, `yield` was invalid in any method with an `unsafe` block. Beginning with C# 13, you can use `yield` in methods with `unsafe` blocks, but not in the `unsafe` block.
 - `yield return` and `yield break` can not be used in [catch](../statements/exception-handling-statements.md) and [finally](../statements/exception-handling-statements.md) blocks, or in [try](../statements/exception-handling-statements.md) blocks with a corresponding `catch` block. The `yield return` and `yield break` statements can be used in a `try` block with no `catch` blocks, only a `finally` block.
 
-## Using statements in iterators
+## `using` statements in iterators
 
 You can use [`using` statements](using.md) in iterator methods. Since `using` statements are compiled into `try` blocks with `finally` clauses (and no `catch` blocks), they work correctly with iterators. The disposable resources are properly managed throughout the iterator's execution:
 
 :::code language="csharp" interactive="try-dotnet-method" source="snippets/yield/Program.cs" id="UsingInIterator":::
 
 As the preceding example shows, the resource acquired in the `using` statement remains available throughout the iterator's execution, even when the iterator suspends and resumes execution at `yield return` statements. The resource is disposed when the iterator completes (either by reaching the end or via `yield break`) or when the iterator itself is disposed (for example, when the caller breaks out of enumeration early).
-
-This behavior occurs because the compiler transforms `using` statements into `try`/`finally` blocks without `catch` clauses, which are permitted in iterator methods.
 
 ## Execution of an iterator
 

@@ -24,6 +24,10 @@ Brokered authentication enables the application for all operations allowed by th
 
 :::zone-end
 
+:::zone target="docs" pivot="os-macos"
+
+:::zone-end
+
 :::zone target="docs" pivot="os-linux"
 
 The Linux operating system uses [Microsoft single sign-on for Linux](/entra/identity/devices/sso-linux) as its authentication broker. It has many benefits for developers and customers alike, including:
@@ -32,7 +36,7 @@ The Linux operating system uses [Microsoft single sign-on for Linux](/entra/iden
 - **Enhanced security.** Many security enhancements are delivered with the broker, without needing to update the application logic.
 - **Feature support.** With the help of the broker developers can access rich OS and service capabilities.
 - **System integration.** Applications that use the broker plug-and-play with the built-in account picker, allowing the user to quickly pick an existing account instead of reentering the same credentials over and over.
-- **Token Protection.** Ensures that the refresh tokens are device bound and [enables apps](/dotnet/advanced/proof-of-possession-tokens) to acquire device bound access tokens. See [Token Protection](/azure/active-directory/conditional-access/concept-token-protection).
+- **Token Protection.** Ensures that the refresh tokens are device bound and enables apps to acquire device bound access tokens. See [Token Protection](/azure/active-directory/conditional-access/concept-token-protection).
 
 > [!NOTE]
 > Microsoft single sign-on (SSO) for Linux authentication broker support is introduced with `Microsoft.Identity.Client` version v4.69.1.

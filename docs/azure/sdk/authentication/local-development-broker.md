@@ -4,14 +4,12 @@ description: Learn how to authenticate your application to Azure services when u
 ms.topic: how-to
 ms.custom: devx-track-dotnet, engagement-fy23, devx-track-azurecli
 ms.date: 08/20/2025
+zone_pivot_groups: operating-systems-set-one
 ---
 
 # Authenticate .NET apps to Azure services during local development using interactive brokered authentication
 
 Interactive brokered authentication collects user credentials using the system authentication broker to authenticate an application with <xref:Azure.Identity.InteractiveBrowserCredential>. A system authentication broker is an app running on a user's machine that manages the authentication handshakes and token maintenance for all connected accounts.
-
-> [!NOTE]
-> Currently, only the Windows authentication broker, Web Account Manager (WAM), is supported. Users on macOS and Linux will be authenticated through the non-brokered interactive browser flow.
 
 WAM enables identity providers such as Microsoft Entra ID to natively plug into the OS and provide the service to other apps to provide a more secure login process. WAM offers the following benefits:
 
@@ -52,7 +50,9 @@ Perform the following steps to enable the application to authenticate through th
 
 ### Example using InteractiveBrowserCredential
 
-The following example demonstrates using an <xref:Azure.Identity.InteractiveBrowserCredential> in a Windows Forms app to authenticate with the [`BlobServiceClient`](/dotnet/api/azure.storage.blobs.blobserviceclient):
+The following example demonstrates using an <xref:Azure.Identity.InteractiveBrowserCredential> in a MAUI app to authenticate with the [`BlobServiceClient`](/dotnet/api/azure.storage.blobs.blobserviceclient):
+
+:::zone target="docs" pivot="windows"
 
 :::code language="csharp" source="../snippets/authentication/additional-auth/interactive/InteractiveBrokeredAuth.cs" highlight="16-20":::
 
@@ -65,6 +65,18 @@ The following screenshot shows the user sign-in experience:
 
 :::image type="content" source="../media/web-account-manager-sign-in-account-picker.png" alt-text="A screenshot that shows the sign-in experience when using the interactive browser broker credential to authenticate a user." :::
 
+:::zone-end
+
+:::zone target="docs" pivot="linux"
+
+:::zone-end
+
+:::zone target="docs" pivot="macos"
+
+:::zone-end
+
+:::zone target="docs" pivot="windows"
+
 ### Authenticate the default system account via WAM
 
 Many people always sign in to Windows with the same user account and, therefore, only ever want to authenticate using that account. WAM and `InteractiveBrowserCredential` also support a silent login process that automatically uses a default account so the user doesn't have to repeatedly select it.
@@ -74,3 +86,5 @@ The following example shows how to enable sign-in with the default system accoun
 :::code language="csharp" source="../snippets/authentication/additional-auth/interactive/SilentBrokeredAuth.cs" highlight="16-24":::
 
 Once you opt in to this behavior, the credential attempts to sign in by asking the underlying Microsoft Authentication Library (MSAL) to perform the sign-in for the default system account. If the sign-in fails, the credential falls back to displaying the account picker dialog, from which the user can select the appropriate account.
+
+:::zone-end

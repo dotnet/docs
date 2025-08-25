@@ -97,7 +97,7 @@ The following example demonstrates using an <xref:Azure.Identity.InteractiveBrow
 
 :::zone target="docs" pivot="os-windows"
 
-:::code language="csharp" source="../snippets/authentication/brokered/MauiApp/MainPage.xaml.cs" highlight="36-48" :::
+:::code language="csharp" source="../snippets/authentication/brokered/maui-app/MainPage.xaml.cs" highlight="36-48" :::
 
 The following screenshot shows the user sign-in experience:
 
@@ -107,13 +107,13 @@ The following screenshot shows the user sign-in experience:
 
 :::zone target="docs" pivot="os-macos"
 
-:::code language="csharp" source="../snippets/authentication/brokered/MauiApp/MainPage.xaml.cs" highlight="50-62" :::
+:::code language="csharp" source="../snippets/authentication/brokered/maui-app/MainPage.xaml.cs" highlight="50-62" :::
 
 :::zone-end
 
 :::zone target="docs" pivot="os-linux"
 
-:::code language="csharp" source="../snippets/authentication/brokered/ConsoleApp/Program.cs" :::
+:::code language="csharp" source="../snippets/authentication/brokered/console-app/Program.cs" :::
 
 :::zone-end
 
@@ -125,7 +125,7 @@ Many people always sign in to Windows with the same user account and, therefore,
 
 The example shows how to enable sign-in with the default system account:
 
-:::code language="csharp" source="../snippets/authentication/brokered/MauiApp/MainPage.xaml.cs" highlight="42-46" :::
+:::code language="csharp" source="../snippets/authentication/brokered/maui-app/MainPage.xaml.cs" highlight="42-46" :::
 
 Once you opt in to this behavior, the credential attempts to sign in by asking the underlying Microsoft Authentication Library (MSAL) to perform the sign-in for the default system account. If the sign-in fails, the credential falls back to displaying the account picker dialog, from which the user can select the appropriate account.
 
@@ -139,7 +139,7 @@ Many people always sign in with the same user account and, therefore, only ever 
 
 The example shows how to enable sign-in with the default system account:
 
-:::code language="csharp" source="../snippets/authentication/brokered/MauiApp/MainPage.xaml.cs" highlight="58-62" :::
+:::code language="csharp" source="../snippets/authentication/brokered/maui-app/MainPage.xaml.cs" highlight="58-62" :::
 
 Once you opt in to this behavior, the credential attempts to sign in by asking the underlying Microsoft Authentication Library (MSAL) to perform the sign-in for the default system account. If the sign-in fails, the credential falls back to displaying the account picker dialog, from which the user can select the appropriate account.
 
@@ -153,7 +153,7 @@ Many people always sign in with the same user account and, therefore, only ever 
 
 The example shows how to enable sign-in with the default system account:
 
-:::code language="csharp" source="../snippets/authentication/brokered/ConsoleApp/Program.cs"highlight="22-25" :::
+:::code language="csharp" source="../snippets/authentication/brokered/console-app/Program.cs"highlight="22-25" :::
 
 Once you opt in to this behavior, the credential attempts to sign in by asking the underlying Microsoft Authentication Library (MSAL) to perform the sign-in for the default system account. If the sign-in fails, the credential falls back to displaying the account picker dialog, from which the user can select the appropriate account.
 

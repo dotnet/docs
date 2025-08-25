@@ -40,8 +40,8 @@ class Program
         Console.WriteLine("=== Records with Collections - The Problem ===");
         
         // Problem: Records with mutable collections use reference equality for the collection
-        var person1 = new PersonWithHobbies("Alice", new List<string> { "Reading", "Swimming" });
-        var person2 = new PersonWithHobbies("Alice", new List<string> { "Reading", "Swimming" });
+        var person1 = new PersonWithHobbies("Alice", [ "Reading", "Swimming" ]);
+        var person2 = new PersonWithHobbies("Alice", [ "Reading", "Swimming" ]);
         
         Console.WriteLine($"person1: {person1}");
         Console.WriteLine($"person2: {person2}");
@@ -51,8 +51,8 @@ class Program
         
         Console.WriteLine("=== Solution 1: Custom IEquatable Implementation ===");
         
-        var personFixed1 = new PersonWithHobbiesFixed("Bob", new List<string> { "Cooking", "Hiking" });
-        var personFixed2 = new PersonWithHobbiesFixed("Bob", new List<string> { "Cooking", "Hiking" });
+        var personFixed1 = new PersonWithHobbiesFixed("Bob", [ "Cooking", "Hiking" ]);
+        var personFixed2 = new PersonWithHobbiesFixed("Bob", [ "Cooking", "Hiking" ]);
         
         Console.WriteLine($"personFixed1: {personFixed1}");
         Console.WriteLine($"personFixed2: {personFixed2}");
@@ -61,8 +61,8 @@ class Program
         
         Console.WriteLine("=== Arrays Also Use Reference Equality ===");
         
-        var personArray1 = new PersonWithHobbiesArray("Charlie", new[] { "Gaming", "Music" });
-        var personArray2 = new PersonWithHobbiesArray("Charlie", new[] { "Gaming", "Music" });
+        var personArray1 = new PersonWithHobbiesArray("Charlie", ["Gaming", "Music" ]);
+        var personArray2 = new PersonWithHobbiesArray("Charlie", ["Gaming", "Music" ]);
         
         Console.WriteLine($"personArray1: {personArray1}");
         Console.WriteLine($"personArray2: {personArray2}");
@@ -72,8 +72,8 @@ class Program
         
         Console.WriteLine("=== Same Issue with IReadOnlyList ===");
         
-        var personImmutable1 = new PersonWithHobbiesImmutable("Diana", new[] { "Art", "Travel" });
-        var personImmutable2 = new PersonWithHobbiesImmutable("Diana", new[] { "Art", "Travel" });
+        var personImmutable1 = new PersonWithHobbiesImmutable("Diana", [ "Art", "Travel" ]);
+        var personImmutable2 = new PersonWithHobbiesImmutable("Diana", [ "Art", "Travel" ]);
         
         Console.WriteLine($"personImmutable1: {personImmutable1}");
         Console.WriteLine($"personImmutable2: {personImmutable2}");

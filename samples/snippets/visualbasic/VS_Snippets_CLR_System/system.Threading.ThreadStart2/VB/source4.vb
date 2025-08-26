@@ -1,10 +1,10 @@
 ﻿'<snippet4>
 Imports System.Threading
 
-' The ThreadWithState class contains the information needed for
+' The ThreadWithState2 class contains the information needed for
 ' a task, the method that executes the task, and a delegate
 ' to call when the task is complete.
-Public Class ThreadWithState
+Public Class ThreadWithState2
     ' State information used in the task.
     Private boilerplate As String
     Private numberValue As Integer
@@ -34,13 +34,12 @@ Public Class ThreadWithState
 End Class
 
 ' Delegate that defines the signature for the callback method.
-'
 Public Delegate Sub ExampleCallback(lineCount As Integer)
 
-Public Class Example
+Public Class Example2
     Public Shared Sub Main()
         ' Supply the state information required by the task.
-        Dim tws As New ThreadWithState( _
+        Dim tws As New ThreadWithState2( _
             "This report displays the number {0}.", _
             42, _
             AddressOf ResultCallback)

@@ -27,7 +27,6 @@ try
     
     // Create the InteractiveBrowserCredential using broker support
     InteractiveBrowserCredential credential = new(options);
-#endregion
 
     Uri vaultUri = new("https://<your-key-vault-name>.vault.azure.net/");
     SecretClient client = new(vaultUri, credential);
@@ -38,6 +37,7 @@ try
 
     return 0;
 }
+#endregion
 catch (AuthenticationFailedException ex)
 {
     Console.Error.WriteLine($"Authentication failed: {ex.Message}");

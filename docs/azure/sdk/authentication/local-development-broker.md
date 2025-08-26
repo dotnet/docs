@@ -105,10 +105,6 @@ If an app is specified, it must have API permissions set for **user_impersonatio
 
 :::code language="csharp" source="../snippets/authentication/brokered/maui-app/MainPage.xaml.cs" id="snippet_brokered_windows":::
 
-The following screenshot shows the user sign-in experience:
-
-:::image type="content" source="../media/web-account-manager-sign-in-account-picker.png" alt-text="A screenshot that shows the sign-in experience when using a broker-enabled InteractiveBrowserCredential instance to authenticate a user." :::
-
 :::zone-end
 
 :::zone target="docs" pivot="os-macos"
@@ -123,5 +119,20 @@ The following screenshot shows the user sign-in experience:
 
 :::zone-end
 
-> [!NOTE]
-> In the preceding example, `UseDefaultBrokerAccount` is set to true. `InteractiveBrowserCredential` supports a silent sign-in process that automatically uses a default account, so the user doesn't have to repeatedly select it. When you opt in to this behavior, the credential attempts to sign in by asking the underlying Microsoft Authentication Library (MSAL) to perform the sign-in for the default system account. If sign-in fails, the credential falls back to displaying the account picker dialog.
+In the preceding example, `UseDefaultBrokerAccount` is set to true. `InteractiveBrowserCredential` uses this property to initiate a silent brokered authentication process that automatically uses a default account to sign-in, so the user doesn't have to repeatedly select it. When you opt in to this behavior, the credential attempts to sign in by asking the underlying Microsoft Authentication Library (MSAL) to perform the sign-in for the default system account. If silent brokered authentication fails, or the `UseDefaultBrokerAccount` is set to false, the credential instead uses interactive brokered authentication.
+
+:::zone target="docs" pivot="os-windows"
+
+The following screenshot shows the alternative interactive brokered authentication experience:
+
+:::image type="content" source="../media/web-account-manager-sign-in-account-picker.png" alt-text="A screenshot that shows the sign-in experience when using a broker-enabled InteractiveBrowserCredential instance to authenticate a user." :::
+
+:::zone-end
+
+:::zone target="docs" pivot="os-linux"
+
+The following video shows the alternative interactive brokered authentication experience:
+
+:::image type="content" source="../media/linux-entra-login.gif" alt-text="An animated gif that shows the sign-in experience when using a broker-enabled InteractiveBrowserCredential instance to authenticate a user." :::
+
+:::zone-end

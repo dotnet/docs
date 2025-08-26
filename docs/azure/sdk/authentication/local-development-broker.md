@@ -81,7 +81,17 @@ If an app is specified, it must have API permissions set for **user_impersonatio
 
 ## Implement the code
 
+:::zone target="docs" pivot="os-windows, os-macos"
+
 .NET and the `Azure.Identity` libraries provide interactive brokered authentication using <xref:Azure.Identity.InteractiveBrowserCredential>. For example, to use `InteractiveBrowserCredential` in a MAUI app to authenticate to Azure Key Vault with the [`SecretClient`](/dotnet/api/azure.security.keyvault.secrets.secretclient), follow these steps:
+
+:::zone-end
+
+:::zone target="docs" pivot="os-linux"
+
+.NET and the `Azure.Identity` libraries provide interactive brokered authentication using <xref:Azure.Identity.InteractiveBrowserCredential>. For example, to use `InteractiveBrowserCredential` in a console app to authenticate to Azure Key Vault with the [`SecretClient`](/dotnet/api/azure.security.keyvault.secrets.secretclient), follow these steps:
+
+:::zone-end
 
 1. Install the [Azure.Identity](https://www.nuget.org/packages/Azure.Identity) and [Azure.Identity.Broker](https://www.nuget.org/packages/Azure.Identity.Broker) packages.
 
@@ -113,10 +123,5 @@ The following screenshot shows the user sign-in experience:
 
 :::zone-end
 
-### Authenticate the default system account
-
-`InteractiveBrowserCredential` also supports a silent sign-in process that automatically uses a default account, so the user doesn't have to repeatedly select it. When you opt in to this behavior, the credential attempts to sign in by asking the underlying Microsoft Authentication Library (MSAL) to perform the sign-in for the default system account. If sign-in fails, the credential falls back to displaying the account picker dialog, allowing the user to select the appropriate account.
-
-The previous example shows how to enable sign-in with the default system account:
-
-:::code language="csharp" source="../snippets/authentication/brokered/console-app/Program.cs" range="22-28" highlight="3" :::
+> [!NOTE]
+> In the preceding example, `UseDefaultBrokerAccount` is set to true. `InteractiveBrowserCredential` supports a silent sign-in process that automatically uses a default account, so the user doesn't have to repeatedly select it. When you opt in to this behavior, the credential attempts to sign in by asking the underlying Microsoft Authentication Library (MSAL) to perform the sign-in for the default system account. If sign-in fails, the credential falls back to displaying the account picker dialog.

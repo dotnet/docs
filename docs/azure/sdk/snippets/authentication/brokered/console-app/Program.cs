@@ -20,7 +20,10 @@ try
     IntPtr parentWindowHandle = XRootWindow(XOpenDisplay(null), 0);
     Func<IntPtr> consoleWindowHandleProvider = () => parentWindowHandle;
 
-    InteractiveBrowserCredentialBrokerOptions options = new(parentWindowHandle);
+    InteractiveBrowserCredentialBrokerOptions options = new(parentWindowHandle)
+    {
+        UseDefaultBrokerAccount = true,
+    };
     
     // Create the InteractiveBrowserCredential using broker support
     InteractiveBrowserCredential credential = new(options);

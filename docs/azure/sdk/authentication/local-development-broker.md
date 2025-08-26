@@ -93,15 +93,11 @@ If an app is specified, it must have API permissions set for **user_impersonatio
 
 :::zone-end
 
+:::zone target="docs" pivot="os-windows"
+
 1. Install the [Azure.Identity](https://www.nuget.org/packages/Azure.Identity) and [Azure.Identity.Broker](https://www.nuget.org/packages/Azure.Identity.Broker) packages.
-
-    > [!NOTE]
-    > macOS and Linux support exists in `Azure.Identity.Broker` versions 1.3.0 and later.
-
 1. Get a reference to the parent window on top of which the account picker dialog should appear.
 1. Create an instance of <xref:Azure.Identity.InteractiveBrowserCredential> using <xref:Azure.Identity.Broker.InteractiveBrowserCredentialBrokerOptions>.
-
-:::zone target="docs" pivot="os-windows"
 
 :::code language="csharp" source="../snippets/authentication/brokered/maui-app/MainPage.xaml.cs" id="snippet_brokered_windows" highlight="6-13":::
 
@@ -109,11 +105,27 @@ If an app is specified, it must have API permissions set for **user_impersonatio
 
 :::zone target="docs" pivot="os-macos"
 
+1. Install the [Azure.Identity](https://www.nuget.org/packages/Azure.Identity) and [Azure.Identity.Broker](https://www.nuget.org/packages/Azure.Identity.Broker) packages.
+
+    > [!NOTE]
+    > macOS support exists in `Azure.Identity.Broker` versions 1.3.0 and later.
+
+2. Get a reference to the parent window on top of which the account picker dialog should appear.
+3. Create an instance of <xref:Azure.Identity.InteractiveBrowserCredential> using <xref:Azure.Identity.Broker.InteractiveBrowserCredentialBrokerOptions>.
+
 :::code language="csharp" source="../snippets/authentication/brokered/maui-app/MainPage.xaml.cs" id="snippet_brokered_macos" highlight="6-13":::
 
 :::zone-end
 
 :::zone target="docs" pivot="os-linux"
+
+1. Install the [Azure.Identity](https://www.nuget.org/packages/Azure.Identity) and [Azure.Identity.Broker](https://www.nuget.org/packages/Azure.Identity.Broker) packages.
+
+    > [!NOTE]
+    > Linux support exists in `Azure.Identity.Broker` versions 1.3.0 and later.
+
+2. Get a reference to the parent window on top of which the account picker dialog should appear.
+3. Create an instance of <xref:Azure.Identity.InteractiveBrowserCredential> using <xref:Azure.Identity.Broker.InteractiveBrowserCredentialBrokerOptions>.
 
 :::code language="csharp" source="../snippets/authentication/brokered/console-app/Program.cs" id="snippet_brokered_linux" highlight="15-21":::
 

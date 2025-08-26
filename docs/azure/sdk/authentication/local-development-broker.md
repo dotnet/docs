@@ -89,7 +89,7 @@ The Azure Identity library supports brokered authentication using <xref:Azure.Id
 :::zone target="docs" pivot="os-linux"
 
 .NET and the `Azure.Identity` libraries provide interactive brokered authentication using <xref:Azure.Identity.InteractiveBrowserCredential>. For example, to use `InteractiveBrowserCredential` in a console app to authenticate to Azure Key Vault with the [`SecretClient`](/dotnet/api/azure.security.keyvault.secrets.secretclient), follow these steps:
-
+The Azure Identity library supports brokered authentication using <xref:Azure.Identity.InteractiveBrowserCredential>. For example, to use `InteractiveBrowserCredential` in a console app to authenticate to Azure Key Vault with the [`SecretClient`](/dotnet/api/azure.security.keyvault.secrets.secretclient), follow these steps:
 :::zone-end
 
 :::zone target="docs" pivot="os-windows"
@@ -140,7 +140,7 @@ In the preceding example, property <xref:Azure.Identity.Broker.InteractiveBrowse
 
 :::zone target="docs" pivot="os-windows"
 
-The following screenshot shows the alternative interactive brokered authentication experience:
+The following screenshot shows the alternative interactive, brokered authentication experience:
 
 :::image type="content" source="../media/web-account-manager-sign-in-account-picker.png" alt-text="A screenshot that shows the sign-in experience when using a broker-enabled InteractiveBrowserCredential instance to authenticate a user." :::
 
@@ -148,7 +148,7 @@ The following screenshot shows the alternative interactive brokered authenticati
 
 :::zone target="docs" pivot="os-linux"
 
-The following video shows the alternative interactive brokered authentication experience:
+The following video shows the alternative interactive, brokered authentication experience:
 
 :::image type="content" source="../media/linux-entra-login.gif" alt-text="An animated gif that shows the sign-in experience when using a broker-enabled InteractiveBrowserCredential instance to authenticate a user." :::
 

@@ -37,7 +37,7 @@ This change enables the creation of optimized, platform-specific .NET Tool packa
 
 ## Recommended action
 
-If you would like to create tools for only a subset of platforms, use `ToolPackageRuntimeIdentifiers`. If you would like to disable RID-specific tool packages entirely, you should conditionally include or exclude the `RuntimeIdentifiers` property in your project file.
+If you want to create tools for only a subset of platforms, use `ToolPackageRuntimeIdentifiers`. If you want to disable RID-specific tool packages entirely, you should conditionally include or exclude the `RuntimeIdentifiers` property in your project file.
 
 ## Affected APIs
 

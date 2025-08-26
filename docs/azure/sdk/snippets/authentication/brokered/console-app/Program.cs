@@ -33,7 +33,6 @@ try
 
     Console.WriteLine("Retrieving secret 'MySecret' from Key Vault...");
     KeyVaultSecret secret = await client.GetSecretAsync("MySecret");
-    Console.WriteLine($"Secret value: {secret.Value}");
 
     return 0;
 }

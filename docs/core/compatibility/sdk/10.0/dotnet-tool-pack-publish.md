@@ -1,6 +1,6 @@
 ---
-title: "Breaking change: .NET tool packaging may create RuntimeIdentifier-specific tool packages"
-description: "Learn about the breaking change in the .NET 10 SDK where .NET tool packaging may use RuntimeIdentifiers to create platform-specific tools"
+title: "Breaking change: .NET tool packaging might create RuntimeIdentifier-specific tool packages"
+description: "Learn about the breaking change in the .NET 10 SDK where .NET tool packaging might use RuntimeIdentifiers to create platform-specific tools"
 ms.date: 08/11/2025
 ai-usage: ai-assisted
 ms.custom: https://github.com/dotnet/docs/issues/47916

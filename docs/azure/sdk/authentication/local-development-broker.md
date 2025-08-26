@@ -52,9 +52,9 @@ To enable brokered authentication in your application, follow these steps:
 
         | Platform    | Redirect URI                                                                                                          |
         |-------------|-----------------------------------------------------------------------------------------------------------------------|
-        | Windows 10+ | `ms-appx-web://Microsoft.AAD.BrokerPlugin/{your_client_id}`                                                             |
+        | Windows 10+ or WSL | `ms-appx-web://Microsoft.AAD.BrokerPlugin/{your_client_id}`                                                             |
         | macOS       | `msauth.com.msauth.unsignedapp://auth` for unsigned apps<br>`msauth.{bundle_id}://auth` for signed apps                    |
-        | WSL         | `ms-appx-web://Microsoft.AAD.BrokerPlugin/{your_client_id}`                                                             |
+|
         | Linux       | `https://login.microsoftonline.com/common/oauth2/nativeclient`                                                        |
 
          Replace `{your_client_id}` or `{bundle_id}` with the **Application (client) ID** from the app registration's **Overview** pane.
@@ -83,7 +83,7 @@ If an app is specified, it must have API permissions set for **user_impersonatio
 
 :::zone target="docs" pivot="os-windows, os-macos"
 
-.NET and the `Azure.Identity` libraries provide interactive brokered authentication using <xref:Azure.Identity.InteractiveBrowserCredential>. For example, to use `InteractiveBrowserCredential` in a MAUI app to authenticate to Azure Key Vault with the [`SecretClient`](/dotnet/api/azure.security.keyvault.secrets.secretclient), follow these steps:
+The Azure Identity library supports brokered authentication using <xref:Azure.Identity.InteractiveBrowserCredential>. For example, to use `InteractiveBrowserCredential` in a MAUI app to authenticate to Azure Key Vault with the [`SecretClient`](/dotnet/api/azure.security.keyvault.secrets.secretclient), follow these steps:
 
 :::zone-end
 
@@ -119,7 +119,7 @@ If an app is specified, it must have API permissions set for **user_impersonatio
 
 :::zone-end
 
-In the preceding example, `UseDefaultBrokerAccount` is set to true. `InteractiveBrowserCredential` uses this property to initiate a silent brokered authentication process that automatically uses a default account to sign-in, so the user doesn't have to repeatedly select it. When you opt in to this behavior, the credential attempts to sign in by asking the underlying Microsoft Authentication Library (MSAL) to perform the sign-in for the default system account. If silent brokered authentication fails, or the `UseDefaultBrokerAccount` is set to false, the credential instead uses interactive brokered authentication.
+In the preceding example, property <xref:Azure.Identity.Broker.InteractiveBrowserCredentialBrokerOptions.UseDefaultBrokerAccount%2A> is set to `true`, which opts into a silent, brokered authentication flow with the default system account. In this way, the user doesn't have to repeatedly select the same account. If silent, brokered authentication fails, or `UseDefaultBrokerAccount` is set to `false`, `InteractiveBrowserCredential` falls back to interactive, brokered authentication.
 
 :::zone target="docs" pivot="os-windows"
 

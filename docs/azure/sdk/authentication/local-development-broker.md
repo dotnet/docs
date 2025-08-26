@@ -9,25 +9,27 @@ zone_pivot_groups: operating-systems-set-one
 
 # Authenticate .NET apps to Azure services during local development using interactive brokered authentication
 
-Interactive brokered authentication collects user credentials using the system authentication broker to authenticate an application with <xref:Azure.Identity.InteractiveBrowserCredential>. A system authentication broker is an app running on a user's machine that manages the authentication handshakes and token maintenance for all connected accounts.
+Interactive brokered authentication collects user credentials using the system authentication broker to authenticate an app with <xref:Azure.Identity.InteractiveBrowserCredential>. A system authentication broker is an app running on a user's machine that manages the authentication handshakes and token maintenance for all connected accounts.
 
 Interactive brokered authentication offers the following benefits:
 
-- **Enables Single Sign-On (SSO):** Enables apps to simplify how users authenticate with Microsoft Entra ID and protects Microsoft Entra ID refresh tokens from exfiltration and misuse
-- **Enhanced security.** Many security enhancements are delivered with the broker, without needing to update the application logic.
+- **Enables Single Sign-On (SSO):** Enables apps to simplify how users authenticate with Microsoft Entra ID and protects Microsoft Entra ID refresh tokens from exfiltration and misuse.
+- **Enhanced security.** Many security enhancements are delivered with the broker, without needing to update the app logic.
 - **Feature support.** With the help of the broker developers can access rich OS and service capabilities.
 - **System integration.** Applications that use the broker plug-and-play with the built-in account picker, allowing the user to quickly pick an existing account instead of reentering the same credentials over and over.
 - **Token Protection.** Ensures that the refresh tokens are device bound and enables apps to acquire device bound access tokens. See [Token Protection](/azure/active-directory/conditional-access/concept-token-protection).
 
 :::zone target="docs" pivot="os-windows"
 
-Windows provides an authentication broker called Web Account Manager (WAM). Wam enables identity providers such as Microsoft Entra ID to natively plug into the OS and provide the service to other apps to provide a more secure login process. Brokered authentication enables the app for all operations allowed by the interactive login credentials. Personal Microsoft accounts and work or school accounts are supported. If a supported version of Windows is used, the default browser-based UI is replaced with a smoother authentication experience, similar to Windows built-in apps.
+Windows provides an authentication broker called [Web Account Manager (WAM)](/entra/msal/dotnet/acquiring-tokens/desktop-mobile/wam). Wam enables identity providers such as Microsoft Entra ID to natively plug into the OS and provide the service to other apps for a more secure login process. Brokered authentication enables the app for all operations allowed by the interactive login credentials.
+
+Personal Microsoft accounts and work or school accounts are supported. If a supported version of Windows is used, the default browser-based UI is replaced with a smoother authentication experience, similar to Windows built-in apps.
 
 :::zone-end
 
 :::zone target="docs" pivot="os-macos"
 
-Authentication brokers are not pre-installed on macOS but are applications developed by Microsoft, such as Company Portal. These applications are usually installed when a macOS computer is enrolled in a company's device fleet via an endpoint management solution like Microsoft Intune. To learn more about Apple device set up with the Microsoft Identity Platform, refer to Microsoft Enterprise SSO plug-in for Apple devices.
+Authentication brokers are not pre-installed on macOS but are apps developed by Microsoft, such as Company Portal. These apps are usually installed when a macOS computer is enrolled in a company's device fleet via an endpoint management solution like Microsoft Intune. To learn more about Apple device set up with the Microsoft Identity Platform, refer to Microsoft Enterprise SSO plug-in for Apple devices.
 
 :::zone-end
 
@@ -58,7 +60,7 @@ Complete the following steps to enable the application to authenticate through t
         | WSL         | `ms-appx-web://Microsoft.AAD.BrokerPlugin/your_client_id`                                                             |
         | Linux       | `https://login.microsoftonline.com/common/oauth2/nativeclient`                                                        |
 
-         The `{your_client_id}` placeholder must be replaced with the **Application (client) ID** listed on the **Overview** pane of the app registration.
+         The `{your_client_id}` or `{BUNDLE_ID}` placeholder must be replaced with the **Application (client) ID** listed on the **Overview** pane of the app registration.
 
     1. Select **Configure**.
 
@@ -73,7 +75,7 @@ Complete the following steps to enable the application to authenticate through t
 
 ### Assign Azure RBAC roles
 
-For your app code to run successfully with brokered auth, your user account must be [assigned an appropriate Azure RBAC role](/dotnet/azure/sdk/authentication/local-development-dev-accounts) on the corresponding Azure service. For example:
+For your app code to run successfully with interactive brokered auth, your user account must be [assigned an appropriate Azure RBAC role](/dotnet/azure/sdk/authentication/local-development-dev-accounts) on the corresponding Azure service. For example:
 
 - **Azure Blob Storage**: Assign a role such as **Storage Account Data Contributor**.
 - **Azure Key Vault**: Assign a role such as **Key Vault Secrets Officer**.

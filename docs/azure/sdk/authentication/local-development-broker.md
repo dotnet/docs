@@ -88,8 +88,8 @@ The Azure Identity library supports brokered authentication using <xref:Azure.Id
 
 :::zone target="docs" pivot="os-linux"
 
-.NET and the `Azure.Identity` libraries provide interactive brokered authentication using <xref:Azure.Identity.InteractiveBrowserCredential>. For example, to use `InteractiveBrowserCredential` in a console app to authenticate to Azure Key Vault with the [`SecretClient`](/dotnet/api/azure.security.keyvault.secrets.secretclient), follow these steps:
-The Azure Identity library supports brokered authentication using <xref:Azure.Identity.InteractiveBrowserCredential>. For example, to use `InteractiveBrowserCredential` in a console app to authenticate to Azure Key Vault with the [`SecretClient`](/dotnet/api/azure.security.keyvault.secrets.secretclient), follow these steps:
+The Azure Identity library provide interactive brokered authentication using <xref:Azure.Identity.InteractiveBrowserCredential>. For example, to use `InteractiveBrowserCredential` in a console app to authenticate to Azure Key Vault with the [`SecretClient`](/dotnet/api/azure.security.keyvault.secrets.secretclient), follow these steps:
+
 :::zone-end
 
 :::zone target="docs" pivot="os-windows"
@@ -112,6 +112,11 @@ The Azure Identity library supports brokered authentication using <xref:Azure.Id
 
 1. Install the [Azure.Identity](https://www.nuget.org/packages/Azure.Identity) and [Azure.Identity.Broker](https://www.nuget.org/packages/Azure.Identity.Broker) packages.
 
+    ```dotnetcli
+    dotnet add package Azure.Identity
+    dotnet add package Azure.Identity.Broker
+    ```
+
     > [!NOTE]
     > macOS support exists in `Azure.Identity.Broker` versions 1.3.0 and later.
 
@@ -126,6 +131,11 @@ The Azure Identity library supports brokered authentication using <xref:Azure.Id
 
 1. Install the [Azure.Identity](https://www.nuget.org/packages/Azure.Identity) and [Azure.Identity.Broker](https://www.nuget.org/packages/Azure.Identity.Broker) packages.
 
+    ```dotnetcli
+    dotnet add package Azure.Identity
+    dotnet add package Azure.Identity.Broker
+    ```
+
     > [!NOTE]
     > Linux support exists in `Azure.Identity.Broker` versions 1.3.0 and later.
 
@@ -135,6 +145,9 @@ The Azure Identity library supports brokered authentication using <xref:Azure.Id
 :::code language="csharp" source="../snippets/authentication/brokered/console-app/Program.cs" id="snippet_brokered_linux" highlight="15-21":::
 
 :::zone-end
+
+> [!TIP]
+> View the [complete sample app code](https://github.com/dotnet/docs/tree/main/docs/azure/sdk/snippets/authentication/brokered) in the .NET docs GitHub repository.
 
 In the preceding example, property <xref:Azure.Identity.Broker.InteractiveBrowserCredentialBrokerOptions.UseDefaultBrokerAccount%2A> is set to `true`, which opts into a silent, brokered authentication flow with the default system account. In this way, the user doesn't have to repeatedly select the same account. If silent, brokered authentication fails, or `UseDefaultBrokerAccount` is set to `false`, `InteractiveBrowserCredential` falls back to interactive, brokered authentication.
 

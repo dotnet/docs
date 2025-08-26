@@ -113,7 +113,11 @@ The same issue affects arrays and other collection types:
 
 :::code language="csharp" source="snippets/how-to-define-value-equality-for-a-type/RecordCollectionsIssue/Program.cs" id="OtherTypes":::
 
+Arrays also use reference equality, producing the same unexpected results:
+
 :::code language="csharp" source="snippets/how-to-define-value-equality-for-a-type/RecordCollectionsIssue/Program.cs" id="ArrayExample":::
+
+Even readonly collections exhibit this reference equality behavior:
 
 :::code language="csharp" source="snippets/how-to-define-value-equality-for-a-type/RecordCollectionsIssue/Program.cs" id="ImmutableExample":::
 
@@ -170,9 +174,11 @@ Here's how this implementation handles the problematic polymorphic scenarios:
 
 :::code language="csharp" source="snippets/how-to-define-value-equality-for-a-type/ValueEqualityPolymorphic/Program.cs" id="PolymorphicTest":::
 
-The implementation also correctly handles direct type comparisons and works properly with collections:
+The implementation also correctly handles direct type comparisons:
 
 :::code language="csharp" source="snippets/how-to-define-value-equality-for-a-type/ValueEqualityPolymorphic/Program.cs" id="DirectTest":::
+
+The equality implementation also works properly with collections:
 
 :::code language="csharp" source="snippets/how-to-define-value-equality-for-a-type/ValueEqualityPolymorphic/Program.cs" id="CollectionTest":::
 

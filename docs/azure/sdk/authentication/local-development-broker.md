@@ -69,7 +69,7 @@ To enable brokered authentication in your application, follow these steps:
     > [!IMPORTANT]
     > You must also be the admin of your tenant to grant consent to your application when you sign in for the first time.
 
-### Assign roles
+## Assign roles
 
 To run your app code successfully with brokered authentication, grant your user account permissions using [Azure role-based access control (RBAC)](/azure/role-based-access-control/overview). Assign an appropriate role to your user account for the relevant Azure service. For example:
 

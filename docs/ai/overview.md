@@ -25,7 +25,7 @@ Millions of developers use .NET to create applications that run on the web, on m
 The opportunities with AI are near endless. Here are a few examples of solutions you can build using AI in your .NET applications:
 
 * Language processing: Create virtual agents or chatbots to talk with your data and generate content and images.
-* Computer vision: Identify objects in an object or video.
+* Computer vision: Identify objects in an image or video.
 * Audio generation: Use synthesized voices to interact with customers.
 * Classification: Label the severity of a customer-reported issue.
 * Task automation: Automatically perform the next step in a workflow as tasks are completed.

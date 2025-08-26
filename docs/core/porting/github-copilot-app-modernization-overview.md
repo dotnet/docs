@@ -23,7 +23,16 @@ GitHub Copilot app modernization is distributed as a Visual Studio extension, an
 - [Visual Studio 2022 version 17.14 or newer](https://visualstudio.microsoft.com/downloads/).
 - [.NET desktop development workload](/visualstudio/install/modify-visual-studio?view=vs-2022&preserve-view=true#change-workloads-or-individual-components).
 - [Sign in to Visual Studio using a GitHub account](/visualstudio/ide/work-with-github-accounts) with [Copilot access](https://docs.github.com/copilot/about-github-copilot/what-is-github-copilot#getting-access-to-copilot).
-  - You can use [GitHub Copilot for free](/visualstudio/ide/copilot-free-plan).
+
+  Supported subscription plans:
+
+  - Copilot Pro
+  - Copilot Pro+
+  - Copilot Business
+  - Copilot Enterprise
+
+(If you change subscriptions, you must restart Visual Studio.)
+
 - Code must be in a local Git repository.
 - Code must be written in C#.
 - Optional but recommended: Use **GitHub Copilot agent mode** for the upgrade process. For more information, see [Use Copilot agent mode in Visual Studio](/visualstudio/ide/copilot-agent-mode?view=vs-2022&preserve-view=true).

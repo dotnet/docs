@@ -1,6 +1,6 @@
 ---
 title: "Breaking change - Incorrect usage of DynamicResource causes application crash"
-description: "Learn about the breaking change in .NET 10 Preview 4 where incorrect usage of DynamicResource now causes application crashes."
+description: "Learn about the breaking change in .NET 10 where incorrect usage of DynamicResource now causes application crashes."
 ms.date: 5/12/2025
 ai-usage: ai-assisted
 ms.custom: https://github.com/dotnet/docs/issues/46089

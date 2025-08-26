@@ -1,12 +1,12 @@
 ---
 title: dotnet-gcdump diagnostic tool - .NET CLI
 description: Learn how to install and use dotnet-gcdump CLI tool to collect GC (Garbage Collector) dumps of live .NET processes using the .NET EventPipe.
-ms.date: 11/17/2020
+ms.date: 06/03/2025
 ms.topic: reference
 ---
 # Heap analysis tool (dotnet-gcdump)
 
-**This article applies to:** ✔️ `dotnet-gcdump` version 3.1.57502 and later versions
+**This article applies to:** ✔️ `dotnet-gcdump` version 10.0 and later versions
 
 ## Install
 
@@ -80,7 +80,7 @@ Collects a GC dump from a currently running process.
 ### Synopsis
 
 ```console
-dotnet-gcdump collect [-h|--help] [-p|--process-id <pid>] [-o|--output <gcdump-file-path>] [-v|--verbose] [-t|--timeout <timeout>] [-n|--name <name>]
+dotnet-gcdump collect [-h|--help] [-p|--process-id <pid>] [-o|--output <gcdump-file-path>] [-v|--verbose] [-t|--timeout <timeout>] [-n|--name <name>] [--dsrouter <ios|ios-sim|android|android-emu>]
 ```
 
 ### Options
@@ -126,6 +126,10 @@ dotnet-gcdump collect [-h|--help] [-p|--process-id <pid>] [-o|--output <gcdump-f
   - Android, iOS, and tvOS - an IP:port such as `127.0.0.1:9000`.
   
   By default, dotnet-gcdump listens at the specified address. You can request dotnet-gcdump to connect instead by appending `,connect` after the address. For example, `--diagnostic-port /foo/tool1.socket,connect` will connect to a .NET runtime process that's listening to the `/foo/tool1.socket` Unix domain socket.
+
+- **`--dsrouter {ios|ios-sim|android|android-emu}**
+
+  Starts [dotnet-dsrouter](dotnet-dsrouter.md) and connects to it. Requires [dotnet-dsrouter](dotnet-dsrouter.md) to be installed. Run `dotnet-dsrouter -h` for more information.
 
 > [!NOTE]
 > To collect a GC dump using `dotnet-gcdump`, it needs to be run as the same user as the user running target process or as root. Otherwise, the tool will fail to establish a connection with the target process.

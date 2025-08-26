@@ -4,6 +4,7 @@ description: Explore the various runtime monitoring, logging, distributed tracin
 ms.date: 05/23/2025
 ms.topic: overview
 zone_pivot_groups: orleans-version
+ms.custom: sfi-image-nochange
 ---
 
 # Orleans observability

@@ -81,14 +81,6 @@ When you install with a package manager, these libraries are installed for you. 
 
 Use the `apk add` command to install the dependencies.
 
-[!INCLUDE [linux-libgdiplus-general](includes/linux-libgdiplus-general.md)]
-
-To install `libgdiplus`, run:
-
-```bash
-apk add libgdiplus
-```
-
 ## Next steps
 
 - [.NET CLI overview](../tools/index.md)

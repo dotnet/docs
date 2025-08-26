@@ -2,7 +2,6 @@
 title: Use HTTP/3 with HttpClient
 description: Learn how to use the HttpClient to access HTTP/3 servers in .NET
 author: IEvangelist
-ms.author: samsp
 ms.date: 05/19/2023
 ---
 

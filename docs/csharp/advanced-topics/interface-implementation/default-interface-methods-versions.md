@@ -47,6 +47,9 @@ First, add the new method to the interface, including the body of the method:
 
 :::code language="csharp" source="./snippets/default-interface-members-versions/finished/customer-relationship/ICustomer.cs" id="SnippetLoyaltyDiscountVersionOne":::
 
+> [!NOTE]
+> The preceding example uses `DateTime.Now.AddYears(-2)` for simplicity in this tutorial. Be aware that `DateTime` calculations can have edge cases with daylight saving time transitions and leap years. For production code, consider using UTC time or more robust date calculation approaches when precision is important.
+
 The library author wrote a first test to check the implementation:
 
 :::code language="csharp" source="./snippets/default-interface-members-versions/finished/customer-relationship/Program.cs" id="SnippetTestDefaultImplementation":::
@@ -55,7 +58,7 @@ Notice the following portion of the test:
 
 :::code language="csharp" source="./snippets/default-interface-members-versions/finished/customer-relationship/Program.cs" id="SnippetHighlightCast":::
 
-That cast from `SampleCustomer` to `ICustomer` is necessary. The `SampleCustomer` class doesn't need to provide an implementation for `ComputeLoyaltyDiscount`; that's provided by the `ICustomer` interface. However, the `SampleCustomer` class doesn't inherit members from its interfaces. That rule hasn't changed. In order to call any method declared and implemented in the interface, the variable must be the type of the interface, `ICustomer` in this example.
+That implicit conversion from `SampleCustomer` to `ICustomer` is necessary. The `SampleCustomer` class doesn't need to provide an implementation for `ComputeLoyaltyDiscount`; that's provided by the `ICustomer` interface. However, the `SampleCustomer` class doesn't inherit members from its interfaces. That rule hasn't changed. In order to call any method declared and implemented in the interface, the variable must be the type of the interface, `ICustomer` in this example.
 
 ## Provide parameterization
 

@@ -3,12 +3,17 @@
 using Microsoft.Extensions.AI;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using OllamaSharp;
 
 // <SnippetUse>
 HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
 
+IChatClient client = new OllamaApiClient(
+    new Uri("http://localhost:11434/"),
+    "phi3:mini");
+
 builder.Services.AddChatClient(services =>
-    new SampleChatClient(new Uri("http://localhost"), "test")
+        client
         .AsBuilder()
         .UseDistributedCache()
         .UseRateLimiting()

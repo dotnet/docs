@@ -1,9 +1,8 @@
 ---
 title: "Zero-shot and few-shot learning"
 description: "Learn the use cases for zero-shot and few-shot learning in prompt engineering."
-author: catbutler
 ms.topic: concept-article #Don't change.
-ms.date: 11/25/2024
+ms.date: 05/29/2025
 
 #customer intent: As a .NET developer, I want to understand how zero-shot and few-shot learning techniques can help me improve my prompt engineering.
 
@@ -33,7 +32,7 @@ Intent:
 
 There are two primary use cases for zero-shot learning:
 
-- **Work with fined-tuned LLMs** - Because it relies on the model's existing knowledge, zero-shot learning is not as resource-intensive as few-shot learning, and it works well with LLMs that have already been fined-tuned on instruction datasets. You might be able to rely solely on zero-shot learning and keep costs relatively low.
+- **Work with fined-tuned LLMs** - Because it relies on the model's existing knowledge, zero-shot learning is not as resource-intensive as few-shot learning, and it works well with LLMs that have already been fine-tuned on instruction datasets. You might be able to rely solely on zero-shot learning and keep costs relatively low.
 - **Establish performance baselines** - Zero-shot learning can help you simulate how your app would perform for actual users. This lets you evaluate various aspects of your model's current performance, such as accuracy or precision. In this case, you typically use zero-shot learning to establish a performance baseline and then experiment with few-shot learning to improve performance.
 
 ## Few-shot learning

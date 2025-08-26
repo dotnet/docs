@@ -74,7 +74,7 @@ When you run the app for the first time, it connects to Azure Cosmos DB and repo
                 var jsonString= System.IO.File.ReadAllText(f);
                 Recipe recipe = JsonConvert.DeserializeObject<Recipe>(jsonString);
                 recipe.id = recipe.name.ToLower().Replace(" ", "");
-                ret.Add(recipe);
+                recipes.Add(recipe);
             }
         );
 

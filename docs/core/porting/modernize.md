@@ -5,11 +5,15 @@ author: adegeo
 ms.date: 05/25/2023
 dev_langs: ["csharp", "vb"]
 no-loc: ["package.config", PackageReference]
+ms.custom: sfi-ropc-nochange
 ---
 
 # Modernize after upgrading to .NET from .NET Framework
 
 In this article, you'll learn about different ways you can modernize your app after it's been upgraded from .NET Framework to .NET. Use the [.NET Upgrade Assistant](upgrade-assistant-overview.md) tool to upgrade your app to .NET.
+
+> [!TIP]
+> You can use GitHub Copilot to modernize your application after migrating from .NET Framework. For more information, see [What is GitHub Copilot app modernization - upgrade for .NET?](github-copilot-app-modernization-overview.md).
 
 ## Missing APIs
 

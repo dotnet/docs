@@ -1,6 +1,6 @@
 ---
 title: "Breaking change - Streaming HTTP responses enabled by default in browser HTTP clients"
-description: "Learn about the breaking change in .NET 10 Preview 3 where streaming HTTP responses are enabled by default in browser HTTP clients."
+description: "Learn about the breaking change in .NET 10 where streaming HTTP responses are enabled by default in browser HTTP clients."
 ms.date: 4/7/2025
 ai-usage: ai-assisted
 ms.custom: https://github.com/dotnet/docs/issues/45644

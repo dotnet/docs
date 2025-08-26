@@ -79,6 +79,8 @@ items:
       href: ../../../_csharplang/proposals/csharp-10.0/enhanced-line-directives.md
     - name: "Escape sequence '\\e'"
       href: ../../../_csharplang/proposals/csharp-13.0/esc-escape-sequence.md
+    - name: "Ignored directives"
+      href: ../../../_csharplang/proposals/csharp-14.0/ignored-directives.md
   - name: Basic concepts
     items:
     - name: Top-level statements
@@ -109,6 +111,8 @@ items:
       href: ../../../_csharplang/proposals/csharp-9.0/native-integers.md
     - name: Numeric IntPtr
       href: ../../../_csharplang/proposals/csharp-11.0/numeric-intptr.md
+    - name: Named and optional parameters in expression trees
+      href: ../../../_csharplang/proposals/csharp-14.0/optional-and-named-parameters-in-expression-trees.md
   - name: Variables
     items:
     - name: Improved definite assignment analysis
@@ -118,7 +122,7 @@ items:
   - name: Conversions
     items:
     - name: First class span types
-      href: ../../../_csharplang/proposals/first-class-span-types.md
+      href: ../../../_csharplang/proposals/csharp-14.0/first-class-span-types.md
   - name: Patterns
     items:
     - name: Recursive pattern matching
@@ -135,8 +139,6 @@ items:
     items:
     - name: Ranges
       href: ../../../_csharplang/proposals/csharp-8.0/ranges.md
-    - name: Null coalescing assignment
-      href: ../../../_csharplang/proposals/csharp-8.0/null-coalescing-assignment.md
     - name: Target-typed new expressions
       href: ../../../_csharplang/proposals/csharp-9.0/target-typed-new.md
     - name: Target-typed conditional expression
@@ -160,7 +162,7 @@ items:
     - name: Optional Lambda expression parameters
       href: ../../../_csharplang/proposals/csharp-12.0/lambda-method-group-defaults.md
     - name: Simple lambda parameters with modifiers
-      href: ../../../_csharplang/proposals/simple-lambda-parameters-with-modifiers.md
+      href: ../../../_csharplang/proposals/csharp-14.0/simple-lambda-parameters-with-modifiers.md
     - name: Checked user-defined operators
       href: ../../../_csharplang/proposals/csharp-11.0/checked-user-defined-operators.md
     - name: Unsigned right-shift operator
@@ -172,11 +174,13 @@ items:
     - name: Extended nameof scope
       href: ../../../_csharplang/proposals/csharp-11.0/extended-nameof-scope.md
     - name: Unbound generic types in nameof
-      href: ../../../_csharplang/proposals/unbound-generic-types-in-nameof.md
+      href: ../../../_csharplang/proposals/csharp-14.0/unbound-generic-types-in-nameof.md
     - name: Overload resolution priority
       href: ../../../_csharplang/proposals/csharp-13.0/overload-resolution-priority.md
     - name: Null conditional assignment
-      href: ../../../_csharplang/proposals/null-conditional-assignment.md
+      href: ../../../_csharplang/proposals/csharp-14.0/null-conditional-assignment.md
+    - name: User defined compound assignment operators
+      href: ../../../_csharplang/proposals/csharp-14.0/user-defined-compound-assignment.md
   - name: Statements
     items:
     - name: Global using directive
@@ -187,8 +191,6 @@ items:
       href: ../../../_csharplang/proposals/csharp-9.0/local-function-attributes.md
     - name: Pattern based using and using declarations
       href: ../../../_csharplang/proposals/csharp-8.0/using.md
-    - name: Async streams
-      href: ../../../_csharplang/proposals/csharp-8.0/async-streams.md
     - name: Lock object semantics
       href: ../../../_csharplang/proposals/csharp-13.0/lock-object.md
     - name: Allow `ref` and `unsafe`
@@ -204,9 +206,9 @@ items:
     - name: Partial properties
       href: ../../../_csharplang/proposals/csharp-13.0/partial-properties.md
     - name: Partial events and constructors
-      href: ../../../_csharplang/proposals/partial-events-and-constructors.md
-    - name: Field backed properties (preview)
-      href: ../../../_csharplang/proposals/field-keyword.md
+      href: ../../../_csharplang/proposals/csharp-14.0/partial-events-and-constructors.md
+    - name: Field backed properties
+      href: ../../../_csharplang/proposals/csharp-14.0/field-keyword.md
     - name: Covariant return types
       href: ../../../_csharplang/proposals/csharp-9.0/covariant-returns.md
     - name: Primary constructors
@@ -220,11 +222,11 @@ items:
     - name: Params collections
       href: ../../../_csharplang/proposals/csharp-13.0/params-collections.md
     - name: Extension members
-      href: ../../../_csharplang/proposals/extensions.md
+      href: ../../../_csharplang/proposals/csharp-14.0/extensions.md
+    - name: Extension operators
+      href: ../../../_csharplang/proposals/csharp-14.0/extension-operators.md
   - name: Structs
     items:
-    - name: Readonly instance members
-      href: ../../../_csharplang/proposals/csharp-8.0/readonly-instance-members.md
     - name: Parameterless struct constructors
       href: ../../../_csharplang/proposals/csharp-10.0/parameterless-struct-constructors.md
     - name: Auto-default struct

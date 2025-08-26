@@ -1,8 +1,8 @@
 ---
 title: 'Credential chains in the Azure Identity library for .NET'
 description: 'This article describes the DefaultAzureCredential and ChainedTokenCredential classes in the Azure Identity library.'
-ms.topic: conceptual
-ms.date: 02/13/2025
+ms.topic: concept-article
+ms.date: 08/13/2025
 ---
 
 # Credential chains in the Azure Identity library for .NET
@@ -13,7 +13,7 @@ The Azure Identity library provides *credentials*&mdash;public classes derived f
 
 At runtime, a credential chain attempts to authenticate using the sequence's first credential. If that credential fails to acquire an access token, the next credential in the sequence is attempted, and so on, until an access token is successfully obtained. The following sequence diagram illustrates this behavior:
 
-:::image type="content" source="../media/mermaidjs/ChainSequence.svg" alt-text="Credential chain sequence diagram":::
+:::image type="content" source="../media/mermaidjs/chain-sequence.svg" alt-text="Credential chain sequence diagram":::
 
 ## Why use credential chains
 
@@ -37,7 +37,7 @@ There are two disparate philosophies to credential chaining:
 
 [DefaultAzureCredential](/dotnet/api/azure.identity.defaultazurecredential?view=azure-dotnet&preserve-view=true) is an opinionated, preconfigured chain of credentials. It's designed to support many environments, along with the most common authentication flows and developer tools. In graphical form, the underlying chain looks like this:
 
-:::image type="content" source="../media/mermaidjs/DefaultAzureCredentialAuthFlow.svg" alt-text="DefaultAzureCredential auth flowchart":::
+:::image type="content" source="../media/mermaidjs/default-azure-credential-authentication-flow-inline.svg" alt-text="Diagram that shows DefaultAzureCredential authentication flow." lightbox="../media/mermaidjs/default-azure-credential-authentication-flow-expanded.png":::
 
 The order in which `DefaultAzureCredential` attempts credentials follows.
 
@@ -47,19 +47,24 @@ The order in which `DefaultAzureCredential` attempts credentials follows.
 | 2     | [Workload Identity][wi-cred]   |If the app is deployed to an Azure host with Workload Identity enabled, authenticate that account.             | Yes                 |
 | 3     | [Managed Identity][mi-cred]    |If the app is deployed to an Azure host with Managed Identity enabled, authenticate the app to Azure using that Managed Identity.             | Yes                 |
 | 4     | [Visual Studio][vs-cred]       |If the developer authenticated to Azure by logging into Visual Studio, authenticate the app to Azure using that same account.             | Yes                 |
-| 5     | [Azure CLI][az-cred]           |If the developer authenticated to Azure using Azure CLI's `az login` command, authenticate the app to Azure using that same account.             | Yes                 |
-| 6     | [Azure PowerShell][pwsh-cred]    |If the developer authenticated to Azure using Azure PowerShell's `Connect-AzAccount` cmdlet, authenticate the app to Azure using that same account.             | Yes                 |
-| 7     | [Azure Developer CLI][azd-cred] |If the developer authenticated to Azure using Azure Developer CLI's `azd auth login` command, authenticate with that account.             | Yes                 |
-| 8     | [Interactive browser][int-cred]         |If enabled, interactively authenticate the developer via the current system's default browser.             | No                  |
+| 5     | [Visual Studio Code][vsc-cred] |If the developer authenticated via Visual Studio Code's [Azure Resources extension][vsc-ext] and the [Azure.Identity.Broker package][broker-pkg] is installed, authenticate that account.             | Yes |
+| 6     | [Azure CLI][az-cred]           |If the developer authenticated to Azure using Azure CLI's `az login` command, authenticate the app to Azure using that same account.             | Yes                 |
+| 7     | [Azure PowerShell][pwsh-cred]    |If the developer authenticated to Azure using Azure PowerShell's `Connect-AzAccount` cmdlet, authenticate the app to Azure using that same account.             | Yes                 |
+| 8     | [Azure Developer CLI][azd-cred] |If the developer authenticated to Azure using Azure Developer CLI's `azd auth login` command, authenticate with that account.             | Yes                 |
+| 9     | [Interactive browser][int-cred]         |If enabled, interactively authenticate the developer via the current system's default browser.             | No                  |
+| 10    | [Broker][int-cred] |Authenticates using the default account logged into the OS via a broker. Requires that the [Azure.Identity.Broker package][broker-pkg] is installed. | Yes |
 
 [env-cred]: /dotnet/api/azure.identity.environmentcredential?view=azure-dotnet&preserve-view=true
 [wi-cred]: /dotnet/api/azure.identity.workloadidentitycredential?view=azure-dotnet&preserve-view=true
 [mi-cred]: /dotnet/api/azure.identity.managedidentitycredential?view=azure-dotnet&preserve-view=true
 [vs-cred]: /dotnet/api/azure.identity.visualstudiocredential?view=azure-dotnet&preserve-view=true
+[vsc-cred]: /dotnet/api/azure.identity.visualstudiocodecredential?view=azure-dotnet&preserve-view=true
 [az-cred]: /dotnet/api/azure.identity.azureclicredential?view=azure-dotnet&preserve-view=true
 [pwsh-cred]: /dotnet/api/azure.identity.azurepowershellcredential?view=azure-dotnet&preserve-view=true
 [azd-cred]: /dotnet/api/azure.identity.azuredeveloperclicredential?view=azure-dotnet&preserve-view=true
 [int-cred]: /dotnet/api/azure.identity.interactivebrowsercredential?view=azure-dotnet&preserve-view=true
+[vsc-ext]: https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureresourcegroups
+[broker-pkg]: https://www.nuget.org/packages/Azure.Identity.Broker
 
 In its simplest form, you can use the parameterless version of `DefaultAzureCredential` as follows:
 
@@ -70,13 +75,17 @@ In its simplest form, you can use the parameterless version of `DefaultAzureCred
 
 ### How to customize DefaultAzureCredential
 
-To remove a credential from `DefaultAzureCredential`, use the corresponding `Exclude`-prefixed property in [DefaultAzureCredentialOptions](/dotnet/api/azure.identity.defaultazurecredentialoptions?view=azure-dotnet&preserve-view=true#properties). For example:
+The following sections describe strategies for controlling which credentials are included in the chain.
+
+#### Exclude an individual credential
+
+To exclude an individual credential from `DefaultAzureCredential`, use the corresponding `Exclude`-prefixed property in [DefaultAzureCredentialOptions](/dotnet/api/azure.identity.defaultazurecredentialoptions?view=azure-dotnet&preserve-view=true#properties). For example:
 
 :::code language="csharp" source="../snippets/authentication/credential-chains/Program.cs" id="snippet_DacExcludes" highlight="11-13":::
 
 In the preceding code sample, `EnvironmentCredential`, `ManagedIdentityCredential`, and `WorkloadIdentityCredential` are removed from the credential chain. As a result, the first credential to be attempted is `VisualStudioCredential`. The modified chain contains only development-time credentials and looks like this:
 
-:::image type="content" source="../media/mermaidjs/DefaultAzureCredentialExcludes.svg" alt-text="DefaultAzureCredential using Excludes properties":::
+:::image type="content" source="../media/mermaidjs/default-azure-credential-excludes.svg" alt-text="DefaultAzureCredential using Excludes properties":::
 
 > [!NOTE]
 > `InteractiveBrowserCredential` is excluded by default and therefore isn't shown in the preceding diagram. To include `InteractiveBrowserCredential`, either pass `true` to constructor <xref:Azure.Identity.DefaultAzureCredential.%23ctor%28System.Boolean%29> or set property <xref:Azure.Identity.DefaultAzureCredentialOptions.ExcludeInteractiveBrowserCredential%2A?displayProperty=nameWithType> to `false`.
@@ -93,6 +102,37 @@ As more `Exclude`-prefixed properties are set to `true` (credential exclusions a
 
 ---
 
+#### Exclude a credential type category
+
+To exclude all `Developer tool` or `Deployed service` credentials, set environment variable `AZURE_TOKEN_CREDENTIALS` to `prod` or `dev`, respectively. When a value of `prod` is used, the underlying credential chain looks as follows:
+
+:::image type="content" source="../media/mermaidjs/default-azure-credential-environment-variable-production.svg" alt-text="DefaultAzureCredential with AZURE_TOKEN_CREDENTIALS set to 'prod'":::
+
+When a value of `dev` is used, the chain looks as follows:
+
+:::image type="content" source="../media/mermaidjs/default-azure-credential-environment-variable-development.svg" alt-text="DefaultAzureCredential with AZURE_TOKEN_CREDENTIALS set to 'dev'":::
+
+> [!IMPORTANT]
+> The `AZURE_TOKEN_CREDENTIALS` environment variable is supported in `Azure.Identity` package versions 1.14.0 and later.
+
+#### Use a specific credential
+
+To exclude all credentials except for one, set environment variable `AZURE_TOKEN_CREDENTIALS` to the credential name. For example, you can reduce the `DefaultAzureCredential` chain to `VisualStudioCredential` by setting `AZURE_TOKEN_CREDENTIALS` to `VisualStudioCredential`. The string comparison is performed in a case-insensitive manner. Valid string values for the environment variable include:
+
+- `AzureCliCredential`
+- `AzureDeveloperCliCredential`
+- `AzurePowerShellCredential`
+- `BrokerCredential`
+- `EnvironmentCredential`
+- `InteractiveBrowserCredential`
+- `ManagedIdentityCredential`
+- `VisualStudioCredential`
+- `VisualStudioCodeCredential`
+- `WorkloadIdentityCredential`
+
+> [!IMPORTANT]
+> The `AZURE_TOKEN_CREDENTIALS` environment variable supports individual credential names in `Azure.Identity` package versions 1.15.0 and later.
+
 ## ChainedTokenCredential overview
 
 [ChainedTokenCredential](/dotnet/api/azure.identity.chainedtokencredential?view=azure-dotnet&preserve-view=true) is an empty chain to which you add credentials to suit your app's needs. For example:
@@ -101,7 +141,7 @@ As more `Exclude`-prefixed properties are set to `true` (credential exclusions a
 
 The preceding code sample creates a tailored credential chain comprised of two development-time credentials. `AzurePowerShellCredential` is attempted first, followed by `VisualStudioCredential`, if necessary. In graphical form, the chain looks like this:
 
-:::image type="content" source="../media/mermaidjs/ChainedTokenCredentialAuthFlow.svg" alt-text="ChainedTokenCredential":::
+:::image type="content" source="../media/mermaidjs/chained-token-credential-authentication-flow.svg" alt-text="ChainedTokenCredential":::
 
 > [!TIP]
 > For improved performance, optimize credential ordering in `ChainedTokenCredential` from most to least used credential.

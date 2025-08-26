@@ -1,185 +1,518 @@
 ---
-title: Application publishing
+title: .NET application publishing overview
 description: Learn about the ways to publish a .NET application. .NET can publish platform-specific or cross-platform apps. You can publish an app as self-contained or as framework-dependent. Each mode affects how a user runs your app.
-ms.date: 03/18/2024
+author: adegeo
+ms.author: adegeo
+ms.date: 08/11/2025
+ms.custom: updateeachrelease
+ai-usage: ai-assisted
+zone_pivot_groups: development-environment-one
 ---
 
 # .NET application publishing overview
 
-Applications you create with .NET can be published in two different modes, and the mode affects how a user runs your app.
+This article explains the different ways to publish a .NET application. It covers publishing modes, how to produce executables and cross-platform binaries, and the impact of each approach on deployment and runtime environments. You can publish .NET applications using either the .NET CLI or Visual Studio.
 
-Publishing your app as *self-contained* produces an application that includes the .NET runtime and libraries, and your application and its dependencies. Users of the application can run it on a machine that doesn't have the .NET runtime installed.
+::: zone pivot="vscode"
 
-Publishing your app as *framework-dependent* produces an application that includes only your application itself and its dependencies. Users of the application have to separately install the .NET runtime.
+For a short tutorial on publishing, see [Tutorial: Publish a .NET console application using Visual Studio Code](../tutorials/publishing-with-visual-studio-code.md).
 
-Both publishing modes produce a platform-specific executable by default. Framework-dependent applications can be created without an executable, and these applications are cross-platform.
+::: zone-end
 
-When an executable is produced, you can specify the target platform with a runtime identifier (RID). For more information about RIDs, see [.NET RID Catalog](../rid-catalog.md).
+::: zone pivot="visualstudio"
 
-The following table outlines the commands used to publish an app as framework-dependent or self-contained:
+For a short tutorial on publishing, see [Tutorial: Publish a .NET console application using Visual Studio](../tutorials/publishing-with-visual-studio.md).
 
-| Type | Command |
+::: zone-end
+
+## What is publishing
+
+Publishing a .NET app means compiling source code to create an executable or binary, along with its dependencies and related files, for distribution. After publishing, you deploy the app to a server, distribution platform, container, or cloud environment. The publishing process prepares an app for deployment and use outside of a development environment.
+
+## Publishing modes
+
+There are two primary ways to publish an app. Some factors that influence this decision include whether the deployment environment has the appropriate .NET Runtime installed and whether you need specific compilation features that require bundling the runtime with your app. The two publishing modes are:
+
+- **Publish self-contained**\
+This mode produces a publishing folder that includes a platform-specific executable used to start the app, a compiled binary containing app code, any app dependencies, and the .NET runtime required to run the app. The environment that runs the app doesn't need to have the .NET runtime preinstalled.
+
+- **Publish framework-dependent**\
+This mode produces a publishing folder that includes a platform-specific executable used to start the app, a compiled binary containing app code, and any app dependencies. The environment that runs the app must have a version of the .NET runtime installed that the app can use. An optional platform-specific executable can be produced.
+
+> [!IMPORTANT]
+> You specify the target platform with a runtime identifier (RID). For more information about RIDs, see [.NET RID Catalog](../rid-catalog.md).
+
+## Publishing basics
+
+The [`<TargetFramework>`](../project-sdk/msbuild-props.md#targetframework) setting of the project file specifies the default target framework when you publish your app. You can change the target framework to any valid [Target Framework Moniker (TFM)](../../standard/frameworks.md). For example, if your project uses `<TargetFramework>net9.0</TargetFramework>`, a binary that targets .NET 9 is created.
+
+If you want to target more than one framework, you can set the [`<TargetFrameworks>`](../project-sdk/msbuild-props.md#targetframeworks) setting to multiple TFM values, separated by a semicolon. When you build your app, your app is built for each target framework defined by your project. However, when you publish your app, you must specify the target framework:
+
+::: zone pivot="cli,vscode"
+
+The default build configuration mode is **Release**, unless changed with the `-c` parameter.
+
+```dotnet
+dotnet publish -c Release -f net9.0
+```
+
+The default output directory of the [`dotnet publish`](../tools/dotnet-publish.md) command is `./bin/<BUILD-CONFIGURATION>/<TFM>/publish/`. For example, `dotnet publish -c Release -f net9.0` publishes to `./bin/Release/net9.0/publish/`. However, you can opt in to a simplified output path and folder structure for all build outputs. For more information, see [Artifacts output layout](../sdk/artifacts-output.md).
+
+::: zone-end
+
+::: zone pivot="visualstudio"
+
+In Visual Studio, create separate publishing profiles for each target framework.
+
+::: zone-end
+
+### Portable binaries
+
+When you publish a .NET app, you can target a specific platform or create a portable binary. By default, even when creating a portable binary, .NET publishes a platform-specific executable alongside the portable DLL unless you explicitly disable this behavior.
+
+The platform-specific executable is created because of the `UseAppHost` property, which defaults to `true`. To publish only the portable DLL without the platform-specific executable, set `UseAppHost` to `false` either on the command line (`-p:UseAppHost=false`) or as a [project property](../project-sdk/msbuild-props.md#useapphost).
+
+The benefit of targeting a specific platform is that it can handle [native dependencies](#native-dependencies) that your app might require, ensuring compatibility with the target platform's specific requirements.
+
+### Native dependencies
+
+If your app has native dependencies, it might not run on a different operating system if published as a portable binary. For example, apps that depend on the Windows API don't natively run on macOS or Linux. You would need to provide platform-specific code and compile an executable for each platform.
+
+Consider also, if a library you referenced provides platform-specific dependencies, your app might not run on every platform. However, when you publish and target a specific platform, the platform-specific dependencies of a NuGet package are copied to the publish folder.
+
+To ensure that your app is published with its native dependencies, publish for a specific platform:
+
+::: zone pivot="cli,vscode"
+
+```dotnetcli
+dotnet publish -c Release -r <RID>
+```
+
+- [!INCLUDE [cli-c-release](includes/cli-c-release.md)]
+
+- [!INCLUDE [cli-r-rid](includes/cli-r-rid.md)]
+
+::: zone-end
+
+::: zone pivot="visualstudio"
+
+01. Right-click on the project in **Solution Explorer** and select **Publish**.
+01. If this is your first time publishing, select **Folder** as the publish target and select **Next**.
+01. Choose a folder location or accept the default, then select **Finish**.
+01. In the publish profile, select **Show all settings**.
+01. Set **Target Runtime** to your desired platform (for example, **win-x64** for 64-bit Windows).
+01. Select **Save** and then **Publish**.
+
+::: zone-end
+
+For a list of runtime identifiers, see [Runtime Identifier (RID) catalog](../rid-catalog.md).
+
+::: zone pivot="cli,vscode"
+
+## Quick reference
+
+The following table provides quick examples of how to publish your app.
+
+| Publish Mode | Command |
 |--|--|
-| [framework-dependent executable](#publish-framework-dependent) for the current platform. | [`dotnet publish`](../tools/dotnet-publish.md) |
-| [framework-dependent executable](#publish-framework-dependent) for a specific platform. | [`dotnet publish -r <RID>`](../tools/dotnet-publish.md) |
-| [framework-dependent binary](#publish-framework-dependent). | [`dotnet publish`](../tools/dotnet-publish.md) |
-| [self-contained executable](#publish-self-contained). | [`dotnet publish -r <RID> --self-contained`](../tools/dotnet-publish.md) |
+| [Framework-dependent deployment](#framework-dependent-deployment) | `dotnet publish -c Release [-r <RID>]` |
+| [Framework-dependent deployment (DLL)](#framework-dependent-deployment) | `dotnet publish -c Release -p:UseAppHost=false` |
+| [Self-contained deployment](#self-contained-deployment) | `dotnet publish -c Release [-r <RID>] --self-contained true` |
+| [Single-file deployment](#single-file-deployment) | `dotnet publish -c Release [-r <RID>] -p:PublishSingleFile=true` |
+| [Native AOT deployment](#native-aot-deployment) | `dotnet publish -c Release [-r <RID>] -p:PublishAot=true` |
+| [ReadyToRun deployment](#readytorun-deployment) | `dotnet publish -c Release [-r <RID>] -p:PublishReadyToRun=true` |
+| [Container deployment](#container-deployment) | `dotnet publish -c Release [-r <RID>] -t:PublishContainer` |
 
-For more information, see [.NET dotnet publish command](../tools/dotnet-publish.md).
+::: zone-end
 
-## Produce an executable
+## Framework-dependent deployment
 
-Executables aren't cross-platform, they're specific to an operating system and CPU architecture. When publishing your app and creating an executable, you can publish the app as [self-contained](#publish-self-contained) or [framework-dependent](#publish-framework-dependent). Publishing an app as self-contained includes the .NET runtime with the app, and users of the app don't have to worry about installing .NET before running the app. Publishing an app as framework-dependent doesn't include the .NET runtime; only the app and third-party dependencies are included.
+Framework-dependent deployment is the default mode when you publish from either the CLI or Visual Studio. In this mode, a platform-specific executable host is created to host your cross-platform app. The host executable filename varies per platform and is named something similar to `<PROJECT-FILE>.exe`. You can run this executable directly instead of calling `dotnet <PROJECT-FILE>.dll`, which is still an acceptable way to run the app.
 
-The following commands produce an executable:
+Your app is configured to target a specific version of .NET. That targeted .NET runtime is required to be on the environment where your app runs. For example, if your app targets .NET 9, any environment that your app runs on must have the .NET 9 runtime installed.
 
-| Type | Command |
-|--|--|
-| [framework-dependent executable](#publish-framework-dependent) for the current platform. | [`dotnet publish`](../tools/dotnet-publish.md) |
-| [framework-dependent executable](#publish-framework-dependent) for a specific platform. | [`dotnet publish -r <RID>`](../tools/dotnet-publish.md) |
-| [self-contained executable](#publish-self-contained). | [`dotnet publish -r <RID> --self-contained`](../tools/dotnet-publish.md) |
+Publishing a framework-dependent deployment creates an app that automatically rolls forward to the latest .NET security patch available on the environment that runs the app. For more information on version binding at compile time, see [Select the .NET version to use](../versions/selection.md#framework-dependent-apps-roll-forward).
 
-## Produce a cross-platform binary
+**Advantages**
 
-Cross-platform binaries are created when you publish your app as [framework-dependent](#publish-framework-dependent), in the form of a *dll* file. The *dll* file is named after your project. For example, if you have an app named **word_reader**, a file named *word_reader.dll* is created. Apps published in this way are run with the `dotnet <filename.dll>` command and can be run on any platform.
+- **Small deployment**: Only the app and its dependencies are distributed. The environment where the app is run must already have the .NET runtime installed.
+- **Cross-platform**: The app and any .NET-based library runs on other operating systems.
+- **Uses the latest patched runtime**: The app uses the latest runtime installed in the environment.
 
-Cross-platform binaries can be run on any operating system as long as the targeted .NET runtime is already installed. If the targeted .NET runtime isn't installed, the app may run using a newer runtime if the app is configured to roll-forward. For more information, see [framework-dependent apps roll forward](../versions/selection.md#framework-dependent-apps-roll-forward).
+**Disadvantages**
 
-You can choose to run the app as a platform-specific executable or as a cross-platform binary via `dotnet` command. There should be no app behavior difference when launching the platform-specific executable versus the `dotnet` command for ordinary server apps Launching via a platform-specific executable gives you better integration with the underlying OS. For example:
+- **Requires pre-installing the runtime**: The app can run only if the version of .NET it targets is already installed in the environment.
+- **.NET might change**: The environment where the app is run might use a newer .NET runtime, which could change app behavior.
 
-- You see the application executable name in your process list and not `dotnet`, which could be confusing if there's more than one.
-- You can customize the platform-specific executable with OS specific features. For example, see [this discussion about configuring default stack size on Windows](https://github.com/dotnet/runtime/issues/96347#issuecomment-1981470713).
+### Publish
 
-The following command produces a cross-platform binary:
-
-| Type | Command |
-|--|--|
-| [framework-dependent cross-platform binary](#publish-framework-dependent). | [`dotnet publish`](../tools/dotnet-publish.md) |
-
-## Publish framework-dependent
-
-Apps published as framework-dependent are cross-platform and don't include the .NET runtime. The user of your app is required to install the .NET runtime.
-
-Publishing an app as framework-dependent produces a [cross-platform binary](#produce-a-cross-platform-binary) as a *dll* file, and a [platform-specific executable](#produce-an-executable) that targets your current platform. The *dll* is cross-platform while the executable isn't. For example, if you publish an app named **word_reader** and target Windows, a *word_reader.exe* executable is created along with *word_reader.dll*. When targeting Linux or macOS, a *word_reader* executable is created along with *word_reader.dll*. If the app uses a NuGet package that has platform-specific implementations, dependencies for all platforms are copied to the *publish\\runtimes\\{platform}* folder.
-
-The cross-platform binary of your app can be run with the `dotnet <filename.dll>` command, and can be run on any platform.
-
-### Platform-specific and framework-dependent
-
-You can publish a framework-dependent app that's platform-specific by passing the `-r <RID>` parameters to the [`dotnet publish`](../tools/dotnet-publish.md) command. Publishing in this way is the same as [publish framework-dependent](#publish-framework-dependent), except that platform-specific dependencies are handled differently. If the app uses a NuGet package that has platform-specific implementations, only the targeted platform's dependencies are copied. These dependencies are copied directly to the *publish* folder.
-
-While technically the binary produced is cross-platform, by targeting a specific platform, your app isn't guaranteed to run cross-platform. You can run `dotnet <filename.dll>`, but the app may crash when it tries to access platform-specific dependencies that are missing.
-
-For more information about RIDs, see [.NET RID Catalog](../rid-catalog.md).
-
-### Advantages
-
-- **Small deployment**\
-Only your app and its dependencies are distributed. The .NET runtime and libraries are installed by the user and all apps share the runtime.
-
-- **Cross-platform**\
-Your app and any .NET-based library runs on other operating systems. You don't need to define a target platform for your app. For information about the .NET file format, see [.NET Assembly File Format](../../standard/assembly/file-format.md).
-
-- **Uses the latest patched runtime**\
-The app uses the latest runtime (within the targeted major-minor family of .NET) installed on the target system. This means your app automatically uses the latest patched version of the .NET runtime. This default behavior can be overridden. For more information, see [framework-dependent apps roll forward](../versions/selection.md#framework-dependent-apps-roll-forward).
-
-### Disadvantages
-
-- **Requires pre-installing the runtime**\
-Your app can run only if the version of .NET your app targets is already installed on the host system. You can configure roll-forward behavior for the app to either require a specific version of .NET or allow a newer version of .NET. For more information, see [framework-dependent apps roll forward](../versions/selection.md#framework-dependent-apps-roll-forward).
-
-- **.NET may change**\
-It's possible for the .NET runtime and libraries to be updated on the machine where the app is run. In rare cases, this may change the behavior of your app if you use the .NET libraries, which most apps do. You can configure how your app uses newer versions of .NET. For more information, see [framework-dependent apps roll forward](../versions/selection.md#framework-dependent-apps-roll-forward).
-
-### Examples
-
-Publish an app as cross-platform and framework-dependent. An executable that targets your current platform is created along with the *dll* file. Any platform-specific dependencies are published with the app.
+::: zone pivot="cli,vscode"
 
 ```dotnetcli
-dotnet publish
+dotnet publish -c Release [-r <RID>]
 ```
 
-Publish an app as platform-specific and framework-dependent. A Linux 64-bit executable is created along with the *dll* file. Only the targeted platform's dependencies are published with the app.
+- [!INCLUDE [cli-c-release](includes/cli-c-release.md)]
+
+- [!INCLUDE [cli-r-rid](includes/cli-r-rid.md)]
+
+Or explicitly:
 
 ```dotnetcli
-dotnet publish -r linux-x64
+dotnet publish -c Release [-r <RID>] --self-contained false
 ```
 
-## Publish self-contained
+- `--self-contained false`
 
-Publishing your app as self-contained produces a platform-specific executable. The output publishing folder contains all components of the app, including the .NET libraries and target runtime. The app is isolated from other .NET apps and doesn't use a locally installed shared runtime. The user of your app isn't required to download and install .NET.
+  This switch explicitly tells the .NET SDK to create a framework-dependent deployment.
 
-You can publish a self-contained app by passing the `--self-contained` parameter to the [`dotnet publish`](../tools/dotnet-publish.md) command. The executable binary is produced for the specified target platform. For example, if you have an app named **word_reader**, and you publish a self-contained executable for Windows, a *word_reader.exe* file is created. Publishing for Linux or macOS, a *word_reader* file is created. The target platform and architecture is specified with the `-r <RID>` parameter for the [`dotnet publish`](../tools/dotnet-publish.md) command. For more information about RIDs, see [.NET RID Catalog](../rid-catalog.md).
+::: zone-end
 
-If the app has platform-specific dependencies, such as a NuGet package containing platform-specific dependencies, these are copied to the publish folder along with the app.
+::: zone pivot="visualstudio"
 
-### Advantages
+01. Right-click on the project in **Solution Explorer** and select **Publish**.
+01. If this is your first time publishing, select **Folder** as the publish target and select **Next**.
+01. Choose a folder location or accept the default, then select **Finish**.
+01. In the publish profile, select **Show all settings**.
+01. Set **Deployment Mode** to **Framework-dependent** (this is the default).
+01. Set **Target Runtime** to your desired platform (for example, **win-x64** for 64-bit Windows).
+01. Select **Save** and then **Publish**.
 
-- **Control .NET version**\
-You control which version of .NET is deployed with your app.
+::: zone-end
 
-- **Platform-specific targeting**\
-Because you have to publish your app for each platform, you know where your app runs. If .NET introduces a new platform, users can't run your app on that platform until you release a version targeting that platform. You can test your app for compatibility problems before your users run your app on the new platform.
+### Configure .NET install search behavior
 
-### Disadvantages
+In .NET 9 and later versions, you can configure the .NET installation search paths of the published executable via the [`AppHostDotNetSearch`](../project-sdk//msbuild-props.md#apphostdotnetsearch) and [`AppHostRelativeDotNet`](../project-sdk//msbuild-props.md#apphostrelativedotnet) properties.
 
-- **Larger deployments**\
-Because your app includes the .NET runtime and all of your app dependencies, the download size and hard drive space required is greater than a [framework-dependent](#publish-framework-dependent) version.
+`AppHostDotNetSearch` allows specifying one or more locations where the executable will look for a .NET installation:
 
-  > [!TIP]
-  > You can reduce the size of your deployment on Linux systems by approximately 28 MB by using .NET [*globalization invariant mode*](https://github.com/dotnet/runtime/blob/main/docs/design/features/globalization-invariant-mode.md). This forces your app to treat all cultures like the [invariant culture](xref:System.Globalization.CultureInfo.InvariantCulture?displayProperty=nameWithType).
+- `AppLocal`: app executable's folder
+- `AppRelative`: path relative to the app executable
+- `EnvironmentVariable`: value of [`DOTNET_ROOT[_<arch>]`](../tools/dotnet-environment-variables.md#dotnet_root-dotnet_rootx86-dotnet_root_x86-dotnet_root_x64) environment variables
+- `Global`: [registered](https://github.com/dotnet/designs/blob/main/accepted/2020/install-locations.md#global-install-to-custom-location) and [default](https://github.com/dotnet/designs/blob/main/accepted/2020/install-locations.md#global-install-to-default-location) global install locations
 
-  > [!TIP]
-  > [IL trimming](trimming/trim-self-contained.md) can further reduce the size of your deployment.
+`AppHostRelativeDotNet` specifies the path relative to the executable that will be searched when `AppHostDotNetSearch` contains `AppRelative`.
 
-- **Harder to update the .NET version**\
-.NET Runtime (distributed with your app) can only be upgraded by releasing a new version of your app.
+For more information, see [`AppHostDotNetSearch`](../project-sdk//msbuild-props.md#apphostdotnetsearch), [`AppHostRelativeDotNet`](../project-sdk//msbuild-props.md#apphostrelativedotnet), and [install location options in apphost](https://github.com/dotnet/designs/blob/main/proposed/apphost-embed-install-location.md).
 
-### Examples
+### Cross-platform DLL deployment
 
-Publish an app self-contained. A macOS 64-bit executable is created.
+Alternatively, you can publish your app as a cross-platform DLL without a platform-specific executable. In this mode, a `<PROJECT-NAME>.dll` file is created in the publish output folder. To run your app, navigate to the output folder and use the `dotnet <PROJECT-NAME>.dll` command.
+
+To publish as a cross-platform DLL:
+
+::: zone pivot="cli,vscode"
 
 ```dotnetcli
-dotnet publish -r osx-x64 --self-contained
+dotnet publish -c Release -p:UseAppHost=false
 ```
 
-Publish an app self-contained. A Windows 64-bit executable is created.
+- [!INCLUDE [cli-c-release](includes/cli-c-release.md)]
+
+- `-p:UseAppHost=false`
+
+  This property disables the creation of a platform-specific executable, producing only the portable DLL.
+
+::: zone-end
+
+::: zone pivot="visualstudio"
+
+01. Right-click on the project in **Solution Explorer** and select **Publish**.
+01. If this is your first time publishing, select **Folder** as the publish target and select **Next**.
+01. Choose a folder location or accept the default, then select **Finish**.
+01. In the publish profile, select **Show all settings**.
+01. Set **Deployment Mode** to **Framework-dependent**.
+01. Uncheck **Produce single file**.
+01. Set **Target Runtime** to **Portable** (or leave blank).
+01. Select **Save** and then **Publish**.
+
+::: zone-end
+
+## Self-contained deployment
+
+When you publish a self-contained deployment (SCD), the publishing process creates a platform-specific executable. Publishing an SCD includes all required .NET files to run your app but it doesn't include the native dependencies of .NET. These dependencies must be present on the environment before the app runs.
+
+Publishing an SCD creates an app that doesn't roll forward to the latest available .NET security patch. For more information on version binding at compile time, see [Select the .NET version to use](../versions/selection.md#self-contained-deployments-include-the-selected-runtime).
+
+**Advantages**
+
+- **Control .NET version**: Control which version of .NET is deployed with the app.
+- **Platform-specific targeting**: Because the app must be published for each platform, it's clear where the app runs.
+
+**Disadvantages**
+
+- **Larger deployments**: Because the app includes the .NET runtime and all dependencies, the download size and hard drive space required is greater than a **framework-dependent deployment**.
+- **Harder to update the .NET version**: The .NET Runtime can only be upgraded by releasing a new version of the app.
+
+> [!TIP]
+> You can reduce the total size of compatible self-contained apps by [publishing trimmed](trimming/trim-self-contained.md) or by enabling **globalization invariant mode**. For more information about globalization invariant mode, see [.NET Globalization Invariant Mode](https://github.com/dotnet/runtime/blob/main/docs/design/features/globalization-invariant-mode.md).
+
+### Publish
+
+::: zone pivot="cli,vscode"
 
 ```dotnetcli
-dotnet publish -r win-x64 --self-contained
+dotnet publish -c Release -r <RID> --self-contained true
 ```
 
-## Publish with ReadyToRun images
+- [!INCLUDE [cli-c-release](includes/cli-c-release.md)]
 
-Publishing with ReadyToRun images improves the startup time of your application at the cost of increasing the size of your application. For more information, see [ReadyToRun](ready-to-run.md).
+- [!INCLUDE [cli-r-rid](includes/cli-r-rid.md)]
 
-### Advantages
+- `--self-contained true`
 
-- **Improved startup time**\
-The application spends less time running the JIT.
+  This switch tells the .NET SDK to create an executable as a self-contained deployment (SCD).
 
-### Disadvantages
+::: zone-end
 
-- **Larger size**\
-The application is larger on disk.
+::: zone pivot="visualstudio"
 
-### Examples
+01. Right-click on the project in **Solution Explorer** and select **Publish**.
+01. If this is your first time publishing, select **Folder** as the publish target and select **Next**.
+01. Choose a folder location or accept the default, then select **Finish**.
+01. In the publish profile, select **Show all settings**.
+01. Set **Deployment Mode** to **Self-contained**.
+01. Set **Target Runtime** to your desired platform (for example, **win-x64** for 64-bit Windows).
+01. Select **Save** and then **Publish**.
 
-Publish an app self-contained and ReadyToRun. A macOS 64-bit executable is created.
+::: zone-end
+
+## Single-file deployment
+
+When you publish your app as a single-file deployment, all application-dependent files are bundled into a single binary. This deployment model is available for both framework-dependent and self-contained applications, providing an attractive option to deploy and distribute your application as a single file.
+
+Single-file apps are always OS and architecture specific. You need to publish for each configuration, such as Linux x64, Linux Arm64, Windows x64, and so forth.
+
+**Advantages**
+
+- **Simplified distribution**: Deploy and distribute your application as a single executable file.
+- **Reduced file clutter**: All dependencies are bundled, eliminating the need to manage multiple files.
+- **Easy deployment**: Copy a single file to deploy the application.
+
+**Disadvantages**
+
+- **Larger file size**: The single file includes all dependencies, making it larger than individual files.
+- **Slower startup**: Files must be extracted at run time, which can impact startup performance.
+- **Platform-specific**: Must publish separate files for each target platform.
+
+Single-file deployment can be combined with other optimizations like [trimming](trimming/trim-self-contained.md) and [ReadyToRun compilation](#readytorun-deployment) for further optimization.
+
+For more information about single-file deployment, see [Single-file deployment](single-file/overview.md).
+
+### Publish
+
+::: zone pivot="cli,vscode"
 
 ```dotnetcli
-dotnet publish -c Release -r osx-x64 --self-contained -p:PublishReadyToRun=true
+dotnet publish -c Release -r <RID> -p:PublishSingleFile=true
 ```
 
-Publish an app self-contained and ReadyToRun. A Windows 64-bit executable is created.
+- [!INCLUDE [cli-c-release](includes/cli-c-release.md)]
+
+- [!INCLUDE [cli-r-rid](includes/cli-r-rid.md)]
+
+- `-p:PublishSingleFile=true`
+
+  This property bundles all application-dependent files into a single binary.
+
+::: zone-end
+
+::: zone pivot="visualstudio"
+
+01. Right-click on the project in **Solution Explorer** and select **Publish**.
+01. If this is your first time publishing, select **Folder** as the publish target and select **Next**.
+01. Choose a folder location or accept the default, then select **Finish**.
+01. In the publish profile, select **Show all settings**.
+01. Set **Deployment Mode** to **Self-contained** or **Framework-dependent**.
+01. Set **Target Runtime** to your desired platform (for example, **win-x64** for 64-bit Windows).
+01. Check **Produce single file**.
+01. Select **Save** and then **Publish**.
+
+::: zone-end
+
+## Native AOT deployment
+
+Native AOT deployment compiles your app directly to native code, eliminating the need for a runtime. This publishing option uses **self-contained deployment** mode, as the compiled native code must include everything needed to run the application. This results in faster startup times and reduced memory usage, but comes with some limitations on supported features.
+
+**Advantages**
+
+- **Fast startup**: No JIT compilation needed at run time, leading to faster application startup.
+- **Reduced memory usage**: Lower memory footprint compared to traditional .NET applications.
+- **No runtime dependency**: The application runs without requiring .NET runtime installation.
+- **Smaller deployment size**: Often smaller than **self-contained deployment** with the full runtime.
+
+**Disadvantages**
+
+- **Limited framework support**: Not all .NET features and libraries are compatible with Native AOT.
+- **Longer build times**: Compilation to native code takes longer than regular builds.
+- **Platform-specific**: Must compile separately for each target platform and architecture.
+- **Debugging limitations**: More complex debugging experience compared to regular .NET applications.
+
+For more information about Native AOT deployment, see [Native AOT deployment](native-aot/index.md).
+
+### Publish
+
+::: zone pivot="cli,vscode"
 
 ```dotnetcli
-dotnet publish -c Release -r win-x64 --self-contained -p:PublishReadyToRun=true
+dotnet publish -c Release -r <RID> -p:PublishAot=true
 ```
+
+- [!INCLUDE [cli-c-release](includes/cli-c-release.md)]
+
+- [!INCLUDE [cli-r-rid](includes/cli-r-rid.md)]
+
+- `-p:PublishAot=true`
+
+  This property enables Native AOT compilation, which compiles the app directly to native code.
+
+::: zone-end
+
+::: zone pivot="visualstudio"
+
+Native AOT publishing must be configured in the project file. You can't enable it through the Visual Studio publishing UI.
+
+01. In **Solution Explorer**, right-click on your project and select **Edit Project File**.
+01. Add the following property to a `<PropertyGroup>`:
+
+    ```xml
+    <PublishAot>true</PublishAot>
+    ```
+
+01. Save the project file.
+01. Right-click on the project in **Solution Explorer** and select **Publish**.
+01. If this is your first time publishing, select **Folder** as the publish target and select **Next**.
+01. Choose a folder location or accept the default, then select **Finish**.
+01. In the publish profile, select **Show all settings**.
+01. Set **Deployment Mode** to **Self-contained**.
+01. Set **Target Runtime** to your desired platform (for example, **win-x64** for 64-bit Windows).
+01. Select **Save** and then **Publish**.
+
+For more information about Native AOT deployment, see [Native AOT deployment](native-aot/index.md).
+
+::: zone-end
+
+## ReadyToRun deployment
+
+When you publish your app with ReadyToRun compilation, your application assemblies are compiled as ReadyToRun (R2R) format. R2R is a form of ahead-of-time (AOT) compilation that improves startup performance by reducing the amount of work the just-in-time (JIT) compiler needs to do as your application loads. This publishing option can be used with both **framework-dependent** and **self-contained** deployment modes.
+
+ReadyToRun binaries contain both intermediate language (IL) code and the native version of the same code. While R2R binaries are larger than regular assemblies, they provide better startup performance.
+
+**Advantages**
+
+- **Improved startup time**: The app spends less time running the JIT compiler during startup.
+- **Better first-use performance**: Reduced latency for first-time execution of code paths.
+- **Compatible with existing code**: Works with most .NET libraries and frameworks without modification.
+- **Flexible deployment**: Can be combined with both **framework-dependent deployment** and **self-contained deployment** modes.
+
+**Disadvantages**
+
+- **Larger size**: The app is larger on disk due to including both IL and native code.
+- **Longer build times**: Compilation takes more time than standard publishing.
+- **Platform-specific optimizations**: Best performance gains require targeting specific platforms.
+
+### Publish
+
+::: zone pivot="cli,vscode"
+
+```dotnetcli
+dotnet publish -c Release -r <RID> -p:PublishReadyToRun=true
+```
+
+- [!INCLUDE [cli-c-release](includes/cli-c-release.md)]
+
+- [!INCLUDE [cli-r-rid](includes/cli-r-rid.md)]
+
+- `-p:PublishReadyToRun=true`
+
+  This property enables ReadyToRun compilation, which improves startup performance by pre-compiling assemblies.
+
+::: zone-end
+
+::: zone pivot="visualstudio"
+
+01. Right-click on the project in **Solution Explorer** and select **Publish**.
+01. If this is your first time publishing, select **Folder** as the publish target and select **Next**.
+01. Choose a folder location or accept the default, then select **Finish**.
+01. In the publish profile, select **Show all settings**.
+01. Set **Deployment Mode** to **Self-contained** or **Framework-dependent**.
+01. Set **Target Runtime** to your desired platform (for example, **win-x64** for 64-bit Windows).
+01. Check **Enable ReadyToRun compilation**.
+01. Select **Save** and then **Publish**.
+
+::: zone-end
+
+For more information about ReadyToRun deployment, see [ReadyToRun compilation](ready-to-run.md).
+
+## Container deployment
+
+When you publish your app as a container, the .NET SDK packages your application and its dependencies into a container image without requiring a separate Dockerfile. This deployment mode creates a complete container image that can be run on any container runtime, such as Docker or Podman. Container deployment simplifies the containerization process by eliminating the need to write and maintain Dockerfiles while providing optimized base images.
+
+Starting with .NET SDK 8.0.200, container support is included by default and doesn't require extra NuGet packages. For console applications, you might need to enable container support explicitly by setting the `EnableSdkContainerSupport` property to `true`.
+
+> [!TIP]
+> For more information about project settings related to containers, see [Containerize a .NET app reference](../containers/publish-configuration.md).
+
+**Advantages**
+
+- **Simplified containerization**: No need to write or maintain Dockerfiles for basic scenarios.
+- **Optimized base images**: Uses Microsoft-provided, optimized base images with the latest security updates.
+- **Consistent environment**: Ensures consistent runtime environment across development, testing, and production.
+- **Easy distribution**: Container images can be easily shared and deployed across different environments.
+- **Platform isolation**: Applications run in isolated containers, reducing conflicts between applications.
+
+**Disadvantages**
+
+- **Container runtime dependency**: The target environment must have a container runtime installed.
+- **Image size**: Container images are typically larger than other deployment methods.
+- **Learning curve**: Requires understanding of container concepts and tooling.
+- **Limited customization**: Less flexibility compared to custom Dockerfiles for complex scenarios.
+
+### Publish
+
+::: zone pivot="cli,vscode"
+
+```dotnetcli
+dotnet publish -c Release [-r <RID>] /t:PublishContainer
+```
+
+- [!INCLUDE [cli-c-release](includes/cli-c-release.md)]
+
+- [!INCLUDE [cli-r-rid](includes/cli-r-rid.md)]
+
+- `-t:PublishContainer`
+
+  This target publishes the application as a container image.
+
+You can also use the publish profile approach:
+
+```dotnetcli
+dotnet publish -c Release [-r <RID>] -p:PublishProfile=DefaultContainer
+```
+
+- `-p:PublishProfile=DefaultContainer`
+
+  This profile triggers the container publishing process.
+
+::: zone-end
+
+::: zone pivot="visualstudio"
+
+01. Right-click on the project in **Solution Explorer** and select **Publish**.
+01. Select **Container Registry** as the publish target and select **Next**.
+01. Choose your target container registry (such as **Azure Container Registry**, **Docker Hub**, or **Generic Registry**) and select **Next**.
+01. Configure the registry connection details and authentication.
+01. In the publish profile, select **Show all settings**.
+01. Set **Deployment Mode** to **Self-contained** or **Framework-dependent** based on your needs.
+01. Set **Target Runtime** to your desired platform (for example, **linux-x64** for Linux containers).
+01. Configure container-specific settings like image name and tags.
+01. Select **Save** and then **Publish**.
+
+::: zone-end
+
+For more information about container deployment, see [.NET SDK container creation overview](../containers/overview.md).
 
 ## See also
 
-- [Deploying .NET Apps with .NET CLI.](deploy-with-cli.md)
-- [Deploying .NET Apps with Visual Studio.](deploy-with-vs.md)
-- [.NET Runtime Identifier (RID) catalog.](../rid-catalog.md)
-- [Select the .NET version to use.](../versions/selection.md)
+- [.NET Runtime Identifier (RID) catalog](../rid-catalog.md)
+- [Select the .NET version to use](../versions/selection.md)

@@ -1,9 +1,8 @@
 ---
 title: "Using Vector Databases to Extend LLM Capabilities"
 description: "Learn how vector databases extend LLM capabilities by storing and processing embeddings in .NET."
-author: catbutler
 ms.topic: concept-article #Don't change.
-ms.date: 11/24/2024
+ms.date: 05/29/2025
 
 #customer intent: As a .NET developer, I want to learn how vector databases store and process embeddings in .NET so I can make more data available to LLMs in my apps.
 
@@ -35,7 +34,7 @@ Vector databases and their search features are especially useful in [RAG pattern
 1. Store and index the embeddings in a vector database or search service.
 1. Convert user prompts from your application to embeddings.
 1. Run a vector search across your data, comparing the user prompt embedding to the embeddings your database.
-1. Use a language model such as GPT-35 or GPT-4 to assembly a user friendly completion from the vector search results.
+1. Use a language model such as GPT-35 or GPT-4 to assemble a user friendly completion from the vector search results.
 
 Visit the [Implement Azure OpenAI with RAG using vector search in a .NET app](../tutorials/tutorial-ai-vector-search.md) tutorial for a hands-on example of this flow.
 

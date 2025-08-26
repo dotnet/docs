@@ -3,6 +3,7 @@ title: "What's new in ADO.NET"
 description: Learn about the new features in ADO.NET in .NET Framework 4.5, including new features for SqlClient data provider and ADO.NET Entity Framework.
 ms.date: "03/30/2017"
 ms.topic: whats-new
+ms.custom: sfi-ropc-nochange
 ---
 # What's new in ADO.NET
 

@@ -26,7 +26,7 @@ Cross-compiling from x64 Windows to ARM64 Windows or vice versa works as long as
 
 ## Mac
 
-MacOS provides the x64 and amd64 toolchains in the default XCode install.
+MacOS provides the x64 and arm64 toolchains in the default XCode install.
 
 ## Linux
 

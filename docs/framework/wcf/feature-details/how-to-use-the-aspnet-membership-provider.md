@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "WCF and ASP.NET"
   - "WCF, authorization"
   - "WCF, security"
+ms.custom: sfi-ropc-nochange
 ---
 # How to: Use the ASP.NET Membership Provider
 

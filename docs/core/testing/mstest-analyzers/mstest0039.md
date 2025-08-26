@@ -20,7 +20,7 @@ ms.author: ygerges
 | **Category**                        | Usage                                                                  |
 | **Fix is breaking or non-breaking** | Non-breaking                                                           |
 | **Enabled by default**              | Yes                                                                    |
-| **Default severity**                | Info                                                                   |
+| **Default severity**                | Warning starting with 3.10, Info before                                |
 | **Introduced in version**           | 3.8.0                                                                  |
 | **Is there a code fix**             | Yes                                                                    |
 

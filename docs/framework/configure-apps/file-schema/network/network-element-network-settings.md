@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "<network> element"
   - "network element"
 ms.assetid: 2c2c6ad4-ed11-48ab-b28e-2bc0ba9b42c7
+ms.custom: sfi-ropc-nochange
 ---
 # \<network> Element (Network Settings)
 

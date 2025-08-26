@@ -4,6 +4,7 @@ description: Description of how to collect assembly loading information in .NET 
 author: elinor-fung
 ms.author: elfung
 ms.date: 11/17/2020
+ms.custom: sfi-image-nochange
 ---
 # Collect detailed assembly loading information
 

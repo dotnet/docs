@@ -1,7 +1,7 @@
 ---
 title: What's new in C# 13
 description: Get an overview of the new features in C# 13.
-ms.date: 01/27/2025
+ms.date: 05/29/2025
 ms.topic: whats-new
 ---
 # What's new in C# 13
@@ -71,7 +71,7 @@ You can read the details of the changes in the [proposal specification](~/_cshar
 
 ## Implicit index access
 
-The implicit "from the end" index operator, `^`, is now allowed in an object initializer expression. For example, you can now initialize an array in an object initializer as shown in the following code:
+The implicit "from the end" index operator, `^`, is now allowed in an object initializer expression for single-dimension collections. For example, you can now initialize a single-dimension array using an object initializer as shown in the following code:
 
 ```csharp
 public class TimerRemaining
@@ -103,7 +103,7 @@ In versions before C# 13, the `^` operator can't be used in an object initialize
 
 ## `ref` and `unsafe` in iterators and `async` methods
 
-This feature and the following two features enable `ref struct` types to use new constructs. You won't use these unless you write your own `ref struct` types. More likely, you'll see an indirect benefit as <xref:System.Span`1?displayProperty=nameWithType> and <xref:System.ReadOnlySpan`1?displayProperty=nameWithType> gain more functionality.
+This feature and the following two features enable `ref struct` types to use new constructs. You won't use these features unless you write your own `ref struct` types. More likely, you'll see an indirect benefit as <xref:System.Span`1?displayProperty=nameWithType> and <xref:System.ReadOnlySpan`1?displayProperty=nameWithType> gain more functionality.
 
 Before C# 13, iterator methods (methods that use `yield return`) and `async` methods couldn't declare local `ref` variables, nor could they have an `unsafe` context.
 

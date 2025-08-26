@@ -41,7 +41,7 @@ User-assigned managed identities are created as standalone resources in your Azu
 
 ### [Azure CLI](#tab/azure-cli)
 
-Use the Azure CLI command [`az identity create`](/cli/azure/identity?view=azure-cli-latest#az-identity-create) to create a managed identity:
+Use the Azure CLI command [`az identity create`](/cli/azure/identity#az-identity-create) to create a managed identity:
 
 ```azurecli
 az identity create \
@@ -53,7 +53,7 @@ az identity create \
 
 The command output prints the client ID of the created user-assigned managed identity. The client ID is used to configure application code that relies on the identity.
 
-You can always view the managed identity properties again using the [`az identity show`](/cli/azure/identity?view=azure-cli-latest#az-identity-show) command:
+You can always view the managed identity properties again using the [`az identity show`](/cli/azure/identity#az-identity-show) command:
 
 ```azurecli
 az identity show \
@@ -83,7 +83,7 @@ A user-assigned managed identity can be associated with one or more Azure resour
 
 The Azure CLI provides different commands to assign a user-assigned managed identity to different types of hosting services.
 
-1. To assign a user-assigned managed identity to a resource such as an Azure App Service web app using the Azure CLI, you'll need the resource ID of the identity. Use the [`az identity show`](/cli/azure/identity?view=azure-cli-latest#az-identity-show) command to retrieve the resource ID:
+1. To assign a user-assigned managed identity to a resource such as an Azure App Service web app using the Azure CLI, you'll need the resource ID of the identity. Use the [`az identity show`](/cli/azure/identity#az-identity-show) command to retrieve the resource ID:
 
     ```azurecli
     az identity show \
@@ -95,7 +95,7 @@ The Azure CLI provides different commands to assign a user-assigned managed iden
 
 2. Once you have the resource ID, use the Azure CLI command `az <resourceType> identity assign` command to associate the user-assigned managed identity with different resources, such as the following:
 
-    For Azure App Service, use the Azure CLI command [`az webapp identity assign`](/cli/azure/webapp/identity?view=azure-cli-latest#az-webapp-identity-assign):
+    For Azure App Service, use the Azure CLI command [`az webapp identity assign`](/cli/azure/webapp/identity#az-webapp-identity-assign):
 
     ```azurecli
     az webapp identity assign \
@@ -104,7 +104,7 @@ The Azure CLI provides different commands to assign a user-assigned managed iden
         --identities <user-assigned-identity-resource-id>
     ```
 
-    For Azure Container Apps, use the Azure CLI command [`az containerapp identity assign`](/cli/azure/containerapp/identity?view=azure-cli-latest#az-containerapp-identity-assign):
+    For Azure Container Apps, use the Azure CLI command [`az containerapp identity assign`](/cli/azure/containerapp/identity#az-containerapp-identity-assign):
 
     ```azurecli
     az containerapp identity assign \
@@ -113,7 +113,7 @@ The Azure CLI provides different commands to assign a user-assigned managed iden
         --identities <user-assigned-identity-resource-id>
     ```
 
-    For Azure Virtual Machines, use the Azure CLI command [`az vm identity assign`](/cli/azure/vm/identity?view=azure-cli-latest#az-vm-identity-assign):
+    For Azure Virtual Machines, use the Azure CLI command [`az vm identity assign`](/cli/azure/vm/identity#az-vm-identity-assign):
 
     ```azurecli
     az vm identity assign \

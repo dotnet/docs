@@ -3,6 +3,7 @@ title: Grain directory
 description: Learn about the grain directory in .NET Orleans.
 ms.date: 05/23/2025
 ms.topic: conceptual
+ms.custom: sfi-ropc-nochange
 ---
 
 # Orleans grain directory

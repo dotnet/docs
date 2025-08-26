@@ -72,3 +72,20 @@ public class LabelledContainer<T>(string label)
 }
 // </PrimaryCtor>
 
+// <DualConstructor>
+public class Example
+{
+    static Example()
+    {
+        Console.WriteLine("Static constructor called.");
+    }
+    
+    public Example()
+    {
+        Console.WriteLine("Instance constructor called.");
+    }
+
+    // Remaining implementation of Child class.
+}
+// </DualConstructor>
+

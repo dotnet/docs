@@ -22,8 +22,8 @@ Provides methods that handle loading and unloading modules for debugging.
 
 ## Methods
 
-|Method|Description|
-|------------|-----------------|
+| Method | Description |
+|--------|-------------|
 |[OpenVirtualProcess Method](iclrdebugging-openvirtualprocess-method.md)|Gets the "ICorDebugProcess" interface that corresponds to a common language runtime (CLR) module loaded in the process.|
 |[CanUnloadNow Method](iclrdebugging-canunloadnow-method.md)|Determines whether a library that was provided by an [ICLRDebuggingLibraryProvider](iclrdebugginglibraryprovider-interface.md) interface is still in use or can be unloaded.|
 

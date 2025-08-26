@@ -6,7 +6,7 @@ no-loc: [System.Text.Json, Newtonsoft.Json]
 dev_langs:
   - "csharp"
   - "vb"
-ms.topic: conceptual
+ms.topic: concept-article
 ---
 
 # Include fields

@@ -39,7 +39,7 @@ Starting with the notarized .NET Core SDK 3.1 for macOS, the appHost setting is 
 
 When the appHost setting is enabled, .NET Core generates a native Mach-O executable when you build or publish. Your app runs in the context of the appHost when it is run from source code with the `dotnet run` command, or by starting the Mach-O executable directly.
 
-Without the appHost, the only way a user can start a [framework-dependent](../deploying/index.md#publish-framework-dependent) app is with the `dotnet <filename.dll>` command. An appHost is always created when you publish your app [self-contained](../deploying/index.md#publish-self-contained).
+Without the appHost, the only way a user can start a [framework-dependent](../deploying/index.md#framework-dependent-deployment) app is with the `dotnet <filename.dll>` command. An appHost is always created when you publish your app [self-contained](../deploying/index.md#self-contained-deployment).
 
 You can either configure the appHost at the project level, or toggle the appHost for a specific `dotnet` command with the `-p:UseAppHost` parameter:
 
@@ -94,4 +94,4 @@ To add support for C++/CLI in Visual Studio 2019 version 16.4, install the [Desk
 ## Next steps
 
 - [Review the breaking changes between .NET Core 3.0 and 3.1.](../compatibility/3.1.md)
-- [Review the breaking changes in .NET Core 3.1 for Windows Forms apps.](../compatibility/winforms.md#net-core-31)
+- [Review the breaking changes in .NET Core 3.1 for Windows Forms apps.](../compatibility/3.1.md#windows-forms)

@@ -3,6 +3,7 @@ description: "Learn more about: Troubleshooting Queued Messaging"
 title: "Troubleshooting Queued Messaging"
 ms.date: "03/30/2017"
 ms.assetid: a5f2836f-018d-42f5-a571-1e97e64ea5b0
+ms.custom: sfi-image-nochange
 ---
 # Troubleshooting Queued Messaging
 

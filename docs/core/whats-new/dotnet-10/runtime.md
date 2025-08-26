@@ -2,15 +2,90 @@
 title: What's new in .NET 10 runtime
 description: Learn about the new features introduced in the .NET 10 runtime.
 titleSuffix: ""
-ms.date: 05/15/2025
+ms.date: 08/12/2025
 ms.topic: whats-new
 ai-usage: ai-assisted
 ---
 # What's new in the .NET 10 runtime
 
-This article describes new features and performance improvements in the .NET runtime for .NET 10. It's updated for Preview 4.
+This article describes new features and performance improvements in the .NET runtime for .NET 10. It's been updated for Preview 7.
 
-## Array interface method devirtualization
+## JIT compiler improvements
+
+The JIT compiler in .NET 10 includes significant enhancements that improve performance through better code generation and optimization strategies.
+
+### Improved code generation for struct arguments
+
+.NET's JIT compiler is capable of an optimization called physical promotion, where the members of a struct are placed in registers rather than on the stack, eliminating memory accesses. This optimization is particularly useful when passing a struct to a method, and the calling convention requires the struct members to be passed in registers.
+
+.NET 10 improves the JIT compiler's internal representation to handle values that share a register. Previously, when struct members needed to be packed into a single register, the JIT would store values to memory first and then load them into a register. Now, the JIT compiler can place the promoted members of struct arguments into shared registers directly, eliminating unnecessary memory operations.
+
+Consider the following example:
+
+```csharp
+struct Point
+{
+    public long X;
+    public long Y;
+
+    public Point(long x, long y)
+    {
+        X = x;
+        Y = y;
+    }
+}
+
+[MethodImpl(MethodImplOptions.NoInlining)]
+private static void Consume(Point p)
+{
+    Console.WriteLine(p.X + p.Y);
+}
+
+private static void Main()
+{
+    Point p = new Point(10, 20);
+    Consume(p);
+}
+```
+
+On x64, the members of `Point` are passed to `Consume` in separate registers, and since physical promotion kicked in for the local `p`, nothing is allocated on the stack first:
+
+```asm
+Program:Main() (FullOpts):
+       mov      edi, 10
+       mov      esi, 20
+       tail.jmp [Program:Consume(Program+Point)]
+```
+
+Now, suppose the type of the members of `Point` was changed to `int` instead of `long`. Because an `int` is four bytes wide, and registers are eight bytes wide on x64, the calling convention requires the members of `Point` to be passed in one register. Previously, the JIT compiler would first store the values to memory, and then load the eight-byte chunk into a register. With the .NET 10 improvements, the JIT compiler can now place the promoted members of struct arguments into shared registers directly:
+
+```asm
+Program:Main() (FullOpts):
+       mov      rdi, 0x140000000A
+       tail.jmp [Program:Consume(Program+Point)]
+```
+
+This eliminates the need for intermediate memory storage, resulting in more efficient assembly code.
+
+### Improved loop inversion
+
+The JIT compiler can hoist the condition of a `while` loop and transform the loop body into a `do-while` loop, producing the final shape:
+
+```csharp
+if (loopCondition)
+{
+    do
+    {
+        // loop body
+    } while (loopCondition);
+}
+```
+
+This transformation is called loop inversion. By moving the condition to the bottom of the loop, the JIT removes the need to branch to the top of the loop to test the condition, improving code layout. Numerous optimizations (like loop cloning, loop unrolling, and induction variable optimizations) also depend on loop inversion to produce this shape to aid analysis.
+
+.NET 10 enhances loop inversion by switching from a lexical analysis implementation to a graph-based loop recognition implementation. This change brings improved precision by considering all natural loops (loops with a single entry point) and ignoring false positives that were previously considered. This translates into higher optimization potential for .NET programs with `for` and `while` statements.
+
+### Array interface method devirtualization
 
 One of the [focus areas](https://github.com/dotnet/runtime/issues/108988) for .NET 10 is to reduce the abstraction overhead of popular language features. In pursuit of this goal, the JIT's ability to devirtualize method calls has expanded to cover array interface methods.
 
@@ -48,15 +123,51 @@ The type of the underlying collection is clear, and the JIT should be able to tr
 
 Starting in .NET 10, the JIT can devirtualize and inline array interface methods. This is the first of many steps to achieve performance parity between the implementations, as detailed in the [.NET 10 de-abstraction plans](https://github.com/dotnet/runtime/issues/108913).
 
-## Array enumeration de-abstraction
+### Array enumeration de-abstraction
 
 Efforts to reduce the abstraction overhead of array iteration via enumerators have improved the JIT's inlining, stack allocation, and loop cloning abilities. For example, the overhead of enumerating arrays via `IEnumerable` is reduced, and conditional escape analysis now enables stack allocation of enumerators in certain scenarios.
 
-## Stack allocation of small arrays of value types
+### Improved code layout
 
-In .NET 9, the JIT gained the ability to allocate objects on the stack when the object is guaranteed to not outlive its parent method. Not only does stack allocation reduce the number of objects the GC has to track, but it also unlocks other optimizations. For example, after an object is stack-allocated, the JIT can consider replacing it entirely with its scalar values. Because of this, stack allocation is key to reducing the abstraction penalty of reference types.
+The JIT compiler in .NET 10 introduces a new approach to organizing method code into basic blocks for better runtime performance. Previously, the JIT used a reverse postorder (RPO) traversal of the program's flowgraph as an initial layout, followed by iterative transformations. While effective, this approach had limitations in modeling the trade-offs between reducing branching and increasing hot code density.
 
-In .NET 10, the JIT now stack-allocates small, fixed-sized arrays of value types that don't contain GC pointers when it can make the same lifetime guarantees described previously. Consider the following example:
+In .NET 10, the JIT models the block reordering problem as a reduction of the asymmetric Travelling Salesman Problem and implements the 3-opt heuristic to find a near-optimal traversal. This optimization improves hot path density and reduces branch distances, resulting in better runtime performance.
+
+### Inlining improvements
+
+Various inlining improvements have been made in .NET 10.
+
+The JIT can now inline methods that become eligible for devirtualization due to previous inlining. This improvement allows the JIT to uncover more optimization opportunities, such as further inlining and devirtualization.
+
+Some methods that have exception-handling semantics, in particular those with `try-finally` blocks, can also be inlined.
+
+To better take advantage of the JIT's ability to stack-allocate some arrays, the inliner's heuristics have been adjusted to increase the profitability of candidates that might be returning small, fixed-sized arrays.
+
+#### Return types
+
+During inlining, the JIT now updates the type of temporary variables that hold return values. If all return sites in a callee yield the same type, this precise type information is used to devirtualize subsequent calls. This enhancement complements the improvements in late devirtualization and array enumeration de-abstraction.
+
+#### Profile data
+
+.NET 10 enhances the JIT's inlining policy to take better advantage of profile data. Among numerous heuristics, the JIT's inliner doesn't consider methods over a certain size to avoid bloating the caller method. When the caller has profile data that suggests an inlining candidate is frequently executed, the inliner increases its size tolerance for the candidate.
+
+Suppose the JIT inlines some callee `Callee` without profile data into some caller `Caller` with profile data. This discrepancy can occur if the callee is too small to be worth instrumenting, or if it's inlined too often to have a sufficient call count. If `Callee` has its own inlining candidates, the JIT previously didn't consider them with its default size limit due to `Callee` lacking profile data. Now, the JIT will realize `Caller` has profile data and loosen its size restriction (but, to account for loss of precision, not to the same degree as if `Callee` had profile data).
+
+Similarly, when the JIT decides a call site isn't profitable for inlining, it marks the method with `NoInlining` to save future inlining attempts from considering it. However, many inlining heuristics are sensitive to profile data. For example, the JIT might decide a method is too large to be worth inlining in the absence of profile data. But when the caller is sufficiently hot, the JIT might be willing to relax its size restriction and inline the call. In .NET 10, the JIT no longer flags unprofitable inlinees with `NoInlining` to avoid pessimizing call sites with profile data.
+
+## AVX10.2 support
+
+.NET 10 introduces support for the Advanced Vector Extensions (AVX) 10.2 for x64-based processors. The new intrinsics available in the <xref:System.Runtime.Intrinsics.X86.Avx10v2?displayProperty=fullName> class can be tested once capable hardware is available.
+
+Because AVX10.2-enabled hardware isn't yet available, the JIT's support for AVX10.2 is currently disabled by default.
+
+## Stack allocation
+
+Stack allocation reduces the number of objects the GC has to track, and it also unlocks other optimizations. For example, after an object is stack-allocated, the JIT can consider replacing it entirely with its scalar values. Because of this, stack allocation is key to reducing the abstraction penalty of reference types. .NET 10 adds stack allocation for [small arrays of  value types](#small-arrays-of-value-types) _and_ [small arrays of reference types](#small-arrays-of-reference-types). It also includes [escape analysis](#escape-analysis) for local struct fields and delegates. (Objects that can't escape can be allocated on the stack.)
+
+### Small arrays of value types
+
+The JIT now stack-allocates small, fixed-sized arrays of value types that don't contain GC pointers when they can be guaranteed not to outlive their parent method. In the following example, the JIT knows at compile time that `numbers` is an array of only three integers that doesn't outlive a call to `Sum`, and therefore allocates it on the stack.
 
 ```csharp
 static void Sum()
@@ -73,11 +184,9 @@ static void Sum()
 }
 ```
 
-Because the JIT knows `numbers` is an array of only three integers at compile time, and it doesn't outlive a call to `Sum`, it allocates it on the stack.
+### Small arrays of reference types
 
-## Stack allocation of small arrays of reference types
-
-.NET 10 extends the [.NET 9 stack allocation improvements](../dotnet-9/runtime.md#object-stack-allocation-for-boxes) to small arrays of reference types. Previously, arrays of reference types were always allocated on the heap, even when their lifetime was scoped to a single method. Now, the JIT can stack-allocate such arrays when it determines that they don't outlive their creation context. For example:
+.NET 10 extends the [.NET 9 stack allocation improvements](../dotnet-9/runtime.md#object-stack-allocation-for-boxes) to small arrays of reference types. Previously, arrays of reference types were always allocated on the heap, even when their lifetime was scoped to a single method. Now, the JIT can stack-allocate such arrays when it determines that they don't outlive their creation context. In the following example, the array `words` is now allocated on the stack.
 
 ```csharp
 static void Print()
@@ -90,29 +199,16 @@ static void Print()
 }
 ```
 
-In this example, the array `words` is now allocated on the stack. The elimination of heap allocations reduces GC pressure and improves performance.
+### Escape analysis
 
-## Improved code layout
+*Escape analysis* determines if an object can outlive its parent method. Objects "escape" when assigned to non-local variables or passed to functions not inlined by the JIT. If an object can't escape, it can be allocated on the stack. .NET 10 includes escape analysis for:
 
-The JIT compiler in .NET 10 introduces a new approach to organizing method code into basic blocks for better runtime performance. Previously, the JIT used a reverse postorder (RPO) traversal of the program's flowgraph as an initial layout, followed by iterative transformations. While effective, this approach had limitations in modeling the trade-offs between reducing branching and increasing hot code density.
+- [Local struct fields](#local-struct-fields)
+- [Delegates](#delegates)
 
-In .NET 10, the JIT models the block reordering problem as a reduction of the asymmetric Travelling Salesman Problem and implements the 3-opt heuristic to find a near-optimal traversal. This optimization improves hot path density and reduces branch distances, resulting in better runtime performance.
+#### Local struct fields
 
-## AVX10.2 support
-
-.NET 10 introduces support for the Advanced Vector Extensions (AVX) 10.2 for x64-based processors. The new intrinsics available in the <xref:System.Runtime.Intrinsics.X86.Avx10v2?displayProperty=fullName> class can be tested once capable hardware is available.
-
-Because AVX10.2-enabled hardware isn't yet available, the JIT's support for AVX10.2 is currently disabled by default.
-
-## Support for casting and negation in NativeAOT's type preinitializer
-
-NativeAOT's type preinitializer now supports all variants of the `conv.*` and `neg` opcodes. This enhancement allows preinitialization of methods that include casting or negation operations, further optimizing runtime performance.
-
-## Escape analysis for local struct fields
-
-*Escape analysis* determines if an object can outlive its parent method. Objects "escape" when assigned to non-local variables or passed to functions not inlined by the JIT. If an object can't escape, it can be allocated on the stack. Starting in .NET 10, the JIT also considers objects referenced by *struct fields*, which enables more stack allocations and reduces heap overhead.
-
-Consider the following example:
+Starting in .NET 10, the JIT considers objects referenced by *struct fields*, which enables more stack allocations and reduces heap overhead. Consider the following example:
 
 ```csharp
 public class Program
@@ -131,7 +227,7 @@ public class Program
 }
 ```
 
-Normally, the JIT stack-allocates small, fixed-sized arrays that don't escape, such as `x`. Its assignment to `y.arr` doesn't cause `x` to escape, because `y` doesn't escape either. However, the JIT's escape analysis implementation previously did not model struct field references. In .NET 9, the x64 assembly generated for `Main` looks like this:
+Normally, the JIT stack-allocates small, fixed-sized arrays that don't escape, such as `x`. Its assignment to `y.arr` doesn't cause `x` to escape, because `y` doesn't escape either. However, the JIT's previous escape analysis implementation didn't model struct field references. In .NET 9, the x64 assembly generated for `Main` includes a call to `CORINFO_HELP_NEWARR_1_VC` to allocate `x` on the heap, indicating it was marked as escaping:
 
 ```asm
 Program:Main():int (FullOpts):
@@ -144,7 +240,7 @@ Program:Main():int (FullOpts):
        ret
 ```
 
-Note the call to `CORINFO_HELP_NEWARR_1_VC` to allocate `x` on the heap, indicating it was marked as escaping. In .NET 10, the JIT no longer marks objects referenced by local struct fields as escaping, as long as the struct in question does not escape. The assembly now looks like this:
+In .NET 10, the JIT no longer marks objects referenced by local struct fields as escaping, as long as the struct in question does not escape. The assembly now looks like this (notice that the heap allocation helper call is gone):
 
 ```asm
 Program:Main():int (FullOpts):
@@ -164,19 +260,101 @@ Program:Main():int (FullOpts):
        ret
 ```
 
-Notice that the heap allocation helper call is gone.
-
 For more information about de-abstraction improvements in .NET 10, see [dotnet/runtime#108913](https://github.com/dotnet/runtime/issues/108913).
 
-## Inlining improvements
+#### Delegates
 
-In .NET 10, the JIT can inline:
+When source code is compiled to IL, each delegate is transformed into a closure class with a method corresponding to the delegate's definition and fields matching any captured variables. At run time, a closure object is created to instantiate the captured variables, along with a `Func` object to invoke the delegate. If escape analysis determines the `Func` object won't outlive its current scope, the JIT allocates it on the stack.
 
-* Methods that become eligible for devirtualization due to previous inlining. This improvement allows the JIT to uncover more optimization opportunities, such as further inlining and devirtualization.
-* Some methods that have exception-handling semantics, in particular those with `try-finally` blocks.
+Consider the following `Main` method:
 
-The following improvements are also new for .NET 10:
+```csharp
+ public static int Main()
+{
+    int local = 1;
+    int[] arr = new int[100];
+    var func = (int x) => x + local;
+    int sum = 0;
 
-* To better take advantage of the JIT's ability to stack-allocate some arrays, the inliner's heuristics were adjusted to increase the profitability of candidates that might be returning small, fixed-sized arrays.
-* During inlining, the JIT now updates the type of temporary variables holding return values. If all return sites in a callee yield the same type, this precise type information is used to devirtualize subsequent calls. This enhancement complements the improvements in late devirtualization and array enumeration de-abstraction.
-* When the JIT decides a call site isn't profitable for inlining, to reduce compile times, it marks the method with `NoInlining` to save future inlining attempts from considering it. However, many inlining heuristics are sensitive to profile data. For example, the JIT might decide a method is too large to be worth inlining in the absence of profile data. But when the caller is sufficiently hot, the JIT might be willing to relax its size restriction and inline the call. In .NET 10, the JIT no longer flags unprofitable inlinees with `NoInlining` to avoid pessimizing call sites with profile data.
+    foreach (int num in arr)
+    {
+        sum += func(num);
+    }
+
+    return sum;
+}
+```
+
+Previously, the JIT produces the following abbreviated x64 assembly for `Main`. Before entering the loop, `arr`, `func`, and the closure class for `func` called `Program+<>c__DisplayClass0_0` are all allocated on the _heap_, as indicated by the `CORINFO_HELP_NEW*` calls.
+
+```asm
+       ; prolog omitted for brevity
+       mov      rdi, 0x7DD0AE362E28      ; Program+<>c__DisplayClass0_0
+       call     CORINFO_HELP_NEWSFAST
+       mov      rbx, rax
+       mov      dword ptr [rbx+0x08], 1
+       mov      rdi, 0x7DD0AE268A98      ; int[]
+       mov      esi, 100
+       call     CORINFO_HELP_NEWARR_1_VC
+       mov      r15, rax
+       mov      rdi, 0x7DD0AE4A9C58      ; System.Func`2[int,int]
+       call     CORINFO_HELP_NEWSFAST
+       mov      r14, rax
+       lea      rdi, bword ptr [r14+0x08]
+       mov      rsi, rbx
+       call     CORINFO_HELP_ASSIGN_REF
+       mov      rsi, 0x7DD0AE461140      ; code for Program+<>c__DisplayClass0_0:<Main>b__0(int):int:this
+       mov      qword ptr [r14+0x18], rsi
+       xor      ebx, ebx
+       add      r15, 16
+       mov      r13d, 100
+G_M24375_IG03:  ;; offset=0x0075
+       mov      esi, dword ptr [r15]
+       mov      rdi, gword ptr [r14+0x08]
+       call     [r14+0x18]System.Func`2[int,int]:Invoke(int):int:this
+       add      ebx, eax
+       add      r15, 4
+       dec      r13d
+       jne      SHORT G_M24375_IG03
+       ; epilog omitted for brevity
+```
+
+Now, because `func` is never referenced outside the scope of `Main`, it's also allocated on the _stack_:
+
+```asm
+       ; prolog omitted for brevity
+       mov      rdi, 0x7B52F7837958      ; Program+<>c__DisplayClass0_0
+       call     CORINFO_HELP_NEWSFAST
+       mov      rbx, rax
+       mov      dword ptr [rbx+0x08], 1
+       mov      rsi, 0x7B52F7718CC8      ; int[]
+       mov      qword ptr [rbp-0x1C0], rsi
+       lea      rsi, [rbp-0x1C0]
+       mov      dword ptr [rsi+0x08], 100
+       lea      r15, [rbp-0x1C0]
+       xor      r14d, r14d
+       add      r15, 16
+       mov      r13d, 100
+G_M24375_IG03:  ;; offset=0x0099
+       mov      esi, dword ptr [r15]
+       mov      rdi, rbx
+       mov      rax, 0x7B52F7901638      ; address of definition for "func"
+       call     rax
+       add      r14d, eax
+       add      r15, 4
+       dec      r13d
+       jne      SHORT G_M24375_IG03
+       ; epilog omitted for brevity
+```
+
+Notice there is one remaining `CORINFO_HELP_NEW*` call, which is the heap allocation for the closure. The runtime team plans to expand escape analysis to support stack allocation of closures in a future release.
+
+## NativeAOT type preinitializer improvements
+
+NativeAOT's type preinitializer now supports all variants of the `conv.*` and `neg` opcodes. This enhancement allows preinitialization of methods that include casting or negation operations, further optimizing runtime performance.
+
+## Arm64 write-barrier improvements
+
+.NET's garbage collector (GC) is generational, meaning it separates live objects by age to improve collection performance. The GC collects younger generations more often under the assumption that long-lived objects are less likely to be unreferenced (or "dead") at any given time. However, suppose an old object starts referencing a young object; the GC needs to know it can't collect the young object. However, needing to scan older objects to collect a young object defeats the performance gains of a generational GC.
+
+To solve this problem, the JIT inserts write barriers before object reference updates to keep the GC informed. On x64, the runtime can dynamically switch between write-barrier implementations to balance write speeds and collection efficiency, depending on the GC's configuration. In .NET 10, this functionality is also available on Arm64. In particular, the new default write-barrier implementation on Arm64 handles GC regions more precisely, which improves collection performance at a slight cost to write-barrier throughput. Benchmarks show GC pause improvements from 8% to over 20% with the new GC defaults.

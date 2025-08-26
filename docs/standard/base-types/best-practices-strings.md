@@ -2,7 +2,7 @@
 title: "Best Practices for Comparing Strings in .NET"
 description: Learn how to compare strings effectively in .NET applications.
 ms.date: 01/26/2023
-ms.topic: conceptual
+ms.topic: concept-article
 dev_langs:
   - "csharp"
   - "vb"

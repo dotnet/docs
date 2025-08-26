@@ -11,6 +11,7 @@ public interface ICustomer
 
     /*
     // <SnippetLoyaltyDiscountVersionOne>
+    // This method belongs in the ICustomer interface (ICustomer.cs).
     // Version 1:
     public decimal ComputeLoyaltyDiscount()
     {
@@ -26,6 +27,7 @@ public interface ICustomer
 
     /*
     // <SnippetLoyaltyDiscountVersionTwo>
+    // These methods belong in the ICustomer interface (ICustomer.cs).
     // Version 2:
     public static void SetLoyaltyThresholds(
         TimeSpan ago,
@@ -65,6 +67,7 @@ public interface ICustomer
     private static decimal discountPercent = 0.10m;
 
     // <SnippetFinalVersion>
+    // These methods belong in the ICustomer interface (ICustomer.cs).
     public decimal ComputeLoyaltyDiscount() => DefaultLoyaltyDiscount(this);
     protected static decimal DefaultLoyaltyDiscount(ICustomer c)
     {

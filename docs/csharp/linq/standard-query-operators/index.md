@@ -59,7 +59,7 @@ The following table lists the standard query operators that have equivalent quer
 | Method | C# query expression syntax |
 |------------|---------------------------------|
 |<xref:System.Linq.Enumerable.Cast%2A>|Use an explicitly typed range variable:<br /><br /> `from int i in numbers`<br /><br /> (For more information, see [from clause](../../language-reference/keywords/from-clause.md).)|
-|<xref:System.Linq.Enumerable.GroupBy%2A>|`group … by`<br /><br /> -or-<br /><br /> `group … by … into …`<br /><br /> (For more information, see [group clause](../../language-reference/keywords/group-clause.md).)|
+|<xref:System.Linq.Enumerable.GroupBy%2A>|`group … by …`<br /><br /> -or-<br /><br /> `group … by … into …`<br /><br /> (For more information, see [group clause](../../language-reference/keywords/group-clause.md).)|
 |<xref:System.Linq.Enumerable.GroupJoin%60%604%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Collections.Generic.IEnumerable%7B%60%601%7D%2CSystem.Func%7B%60%600%2C%60%602%7D%2CSystem.Func%7B%60%601%2C%60%602%7D%2CSystem.Func%7B%60%600%2CSystem.Collections.Generic.IEnumerable%7B%60%601%7D%2C%60%603%7D%29>|`join … in … on … equals … into …`<br /><br /> (For more information, see [join clause](../../language-reference/keywords/join-clause.md).)|
 |<xref:System.Linq.Enumerable.Join%60%604%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Collections.Generic.IEnumerable%7B%60%601%7D%2CSystem.Func%7B%60%600%2C%60%602%7D%2CSystem.Func%7B%60%601%2C%60%602%7D%2CSystem.Func%7B%60%600%2C%60%601%2C%60%603%7D%29>|`join … in … on … equals …`<br /><br /> (For more information, see [join clause](../../language-reference/keywords/join-clause.md).)|
 |<xref:System.Linq.Enumerable.OrderBy%60%602%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2C%60%601%7D%29>|`orderby`<br /><br /> (For more information, see [orderby clause](../../language-reference/keywords/orderby-clause.md).)|
@@ -89,7 +89,7 @@ The code produces the following XML output:
 
 For more information, see [Creating XML Trees in C# (LINQ to XML)](../../../standard/linq/create-xml-trees.md).
 
-You can use the results of one query as the data source for a subsequent query. This example shows how to order the results of a join operation. This query creates a group join, and then sorts the groups based on the category element, which is still in scope. Inside the anonymous type initializer, a subquery orders all the matching elements from the products sequence.
+You can use the results of one query as the data source for a subsequent query. This example shows how to order the results of a join operation. This query creates a group join, and then sorts the groups based on the `department` element, which is still in scope. Inside the anonymous type initializer, a subquery orders all the matching elements from the `students` sequence.
 
 :::code language="csharp" source="./snippets/standard-query-operators/OrderResultsOfJoin.cs" id="OrderResultsOfJoinQuery":::
 

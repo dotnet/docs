@@ -81,7 +81,7 @@ For more information, see [.NET 5 and .NET Standard](../../standard/net-standard
 
 ## Framework-dependent apps roll-forward
 
-When you run an application from source with [`dotnet run`](../tools/dotnet-run.md), from a [**framework-dependent deployment**](../deploying/index.md#publish-framework-dependent) with [`dotnet myapp.dll`](../tools/dotnet.md#description), or from a [**framework-dependent executable**](../deploying/index.md#publish-framework-dependent) with `myapp.exe`, the `dotnet` executable is the **host** for the application.
+When you run an application from source with [`dotnet run`](../tools/dotnet-run.md), from a [**framework-dependent deployment**](../deploying/index.md#framework-dependent-deployment) with [`dotnet myapp.dll`](../tools/dotnet.md#description), or from a [**framework-dependent executable**](../deploying/index.md#framework-dependent-deployment) with `myapp.exe`, the `dotnet` executable is the **host** for the application.
 
 The host chooses the latest patch version installed on the machine. For example, if you specified `net5.0` in your project file, and `5.0.2` is the latest .NET runtime installed, the `5.0.2` runtime is used.
 
@@ -173,7 +173,7 @@ Then the resolved version is as follows in each case:
 
 ## Self-contained deployments include the selected runtime
 
-You can publish an application as a [**self-contained distribution**](../deploying/index.md#publish-self-contained). This approach bundles the .NET runtime and libraries with your application. Self-contained deployments don't have a dependency on runtime environments. Runtime version selection occurs at publishing time, not run time.
+You can publish an application as a [**self-contained distribution**](../deploying/index.md#self-contained-deployment). This approach bundles the .NET runtime and libraries with your application. Self-contained deployments don't have a dependency on runtime environments. Runtime version selection occurs at publishing time, not run time.
 
 The *restore* event that occurs when publishing selects the latest patch version of the given runtime family. For example, `dotnet publish` will select .NET 5.0.3 if it's the latest patch version in the .NET 5 runtime family. The target framework (including the latest installed security patches) is packaged with the application.
 

@@ -82,10 +82,13 @@ Analyzers issue diagnostics if you duplicate `global` using directives in differ
 The `using static` directive names a type whose static members and nested types you can access without specifying a type name. Its syntax is:
 
 ```csharp
+// not within a namespace
 using static <fully-qualified-type-name>;
 ```
 
 The `<fully-qualified-type-name>` is the name of the type whose static members and nested types can be referenced without specifying a type name. If you don't provide a fully qualified type name (the full namespace name along with the type name), C# generates compiler error [CS0246](../compiler-messages/assembly-references.md): "The type or namespace name 'type/namespace' couldn't be found (are you missing a using directive or an assembly reference?)".
+
+If the `using static` directive is applied within the context of a namespace (either file-scoped or nested in a `namespace` block, it is not necessary to fully qualify the type.
 
 The `using static` directive applies to any type that has static members (or nested types), even if it also has instance members. However, instance members can only be invoked through the type instance.
 

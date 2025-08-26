@@ -1,7 +1,7 @@
 ---
 title: "Records"
 description: Learn about the record modifier for class and struct types in C#. Records provide standard support for value based equality on instances of record types.
-ms.date: 02/05/2025
+ms.date: 08/15/2025
 f1_keywords: 
   - "record_CSharpKeyword"
 helpviewer_keywords: 
@@ -145,6 +145,27 @@ To implement this feature for `record class` types, the compiler synthesizes a c
 If you need different copying behavior, you can write your own copy constructor in a `record class`. If you do that, the compiler doesn't synthesize one. Make your constructor `private` if the record is `sealed`, otherwise make it `protected`. The compiler doesn't synthesize a copy constructor for `record struct` types. You can write one, but the compiler doesn't generate calls to it for `with` expressions. The values of the `record struct` are copied on assignment.
 
 You can't override the clone method, and you can't create a member named `Clone` in any record type. The actual name of the clone method is compiler-generated.
+
+> [!IMPORTANT]
+> In the preceding examples, all properties are independent. None of the properties are computed from other property values. A `with` expression first copies the existing record instance, then modifies any properties or fields specified in the `with` expression. Computed properties in `record` types should be computed on access, not initialized when the instance is created. Otherwise, a property could return the computed value based on the original instance, not the modified copy.
+
+You ensure correctness on computed properties by computing the value on access, as shown in the following declaration:
+
+:::code language="csharp" source="snippets/shared/RecordType.cs" id="WitherComputed":::
+
+The preceding record type computes the `Distance` when accessed, as shown in the following example:
+
+:::code language="csharp" source="snippets/shared/RecordType.cs" id="WitherComputedUsage":::
+
+Contrast that with the following declaration, where the `Distance` property is computed and cached as part of the initialization of a new instance:
+
+:::code language="csharp" source="snippets/shared/RecordType.cs" id="WitherInit":::
+
+Because `Distance` is computed as part of initialization, the value is computed and cached before the `with` expression changes the value of `Y` in the copy. The result is that the distance is incorrect:
+
+:::code language="csharp" source="snippets/shared/RecordType.cs" id="WitherInitUsage":::
+
+The `Distance` computation isn't expensive to compute on each access. However, some computed properties might require access to more data or more extensive computation. In those cases, instead of a record, use a `class` type and compute the cached value when one of the components changes value.
 
 ## Built-in formatting for display
 

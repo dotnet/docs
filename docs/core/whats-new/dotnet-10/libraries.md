@@ -2,14 +2,14 @@
 title: What's new in .NET libraries for .NET 10
 description: Learn about the updates to the .NET libraries for .NET 10.
 titleSuffix: ""
-ms.date: 07/16/2025
+ms.date: 08/12/2025
 ms.topic: whats-new
 ai-usage: ai-assisted
 ---
 
 # What's new in .NET libraries for .NET 10
 
-This article describes new features in the .NET libraries for .NET 10. It's been updated for Preview 6.
+This article describes new features in the .NET libraries for .NET 10. It's been updated for Preview 7.
 
 ## Cryptography
 
@@ -61,9 +61,9 @@ If you want even more control, you can use [the overload](xref:System.Security.C
 
 .NET 10 includes support for three new asymmetric algorithms: ML-KEM (FIPS 203), ML-DSA (FIPS 204), and SLH-DSA (FIPS 205). The new types are:
 
-- `System.Security.Cryptography.MLKem` <!--xref:System.Security.Cryptography.MLKem-->
-- `System.Security.Cryptography.MLDsa` <!--xref:System.Security.Cryptography.MLDsa-->
-- `System.Security.Cryptography.SlhDsa` <!--xref:System.Security.Cryptography.SlhDsa-->
+- <xref:System.Security.Cryptography.MLKem?displayProperty=fullName>
+- <xref:System.Security.Cryptography.MLDsa?displayProperty=fullName>
+- <xref:System.Security.Cryptography.SlhDsa?displayProperty=fullName>
 
 Because it adds little benefit, these new types don't derive from <xref:System.Security.Cryptography.AsymmetricAlgorithm>. Rather than the `AsymmetricAlgorithm` approach of creating an object and then importing a key into it, or generating a fresh key, the new types all use static methods to generate or import a key:
 
@@ -95,7 +95,7 @@ using (MLKem key = MLKem.GenerateKey(MLKemAlgorithm.MLKem768))
 
 These algorithms all continue with the pattern of having a static `IsSupported` property to indicate if the algorithm is supported on the current system.
 
-.NET 10 includes Windows Cryptography API: Next Generation (CNG) support for Post-Quantum Cryptography (PQC), making these algorithms available on Windows systems with PQC support. For example:
+.NET 10 includes Windows Cryptography API: Next Generation (CNG) support for Post-Quantum Cryptography (PQC), which makes these algorithms available on Windows systems with PQC support. For example:
 
 ```csharp
 using System;
@@ -112,6 +112,73 @@ private static bool ValidateMLDsaSignature(ReadOnlySpan<byte> data, ReadOnlySpan
 ```
 
 The PQC algorithms are available on systems where the system cryptographic libraries are OpenSSL 3.5 (or newer) or Windows CNG with PQC support. Also, the new classes are all marked as [`[Experimental]`](../../../fundamentals/syslib-diagnostics/experimental-overview.md) under diagnostic `SYSLIB5006` until development is complete.
+
+#### ML-DSA
+
+The <xref:System.Security.Cryptography.MLDsa> class includes ease-of-use features that simplify common code patterns:
+
+```diff
+private static byte[] SignData(string privateKeyPath, ReadOnlySpan<byte> data)
+{
+    using (MLDsa signingKey = MLDsa.ImportFromPem(File.ReadAllBytes(privateKeyPath)))
+    {
+-       byte[] signature = new byte[signingKey.Algorithm.SignatureSizeInBytes];
+-       signingKey.SignData(data, signature);
++       return signingKey.SignData(data);
+-       return signature;
+    }
+}
+```
+
+Additionally, .NET 10 adds support for HashML-DSA, which is called "PreHash" to help distinguish it from "pure" ML-DSA. As the underlying specification interacts with the Object Identifier (OID) value, the SignPreHash and VerifyPreHash methods on this `[Experimental]` type take the dotted-decimal OID as a string. This might evolve as more scenarios using HashML-DSA become well-defined.
+
+```csharp
+private static byte[] SignPreHashSha3_256(MLDsa signingKey, ReadOnlySpan<byte> data)
+{
+    const string Sha3_256Oid = "2.16.840.1.101.3.4.2.8";
+    return signingKey.SignPreHash(SHA3_256.HashData(data), Sha3_256Oid);
+}
+```
+
+#### Composite ML-DSA
+
+.NET 10 introduces new types to support [ietf-lamps-pq-composite-sigs](https://datatracker.ietf.org/doc/draft-ietf-lamps-pq-composite-sigs/) (currently at draft 7), including the <xref:System.Security.Cryptography.CompositeMLDsa> and <xref:System.Security.Cryptography.CompositeMLDsaAlgorithm> types, with implementation of the primitive methods for RSA variants.
+
+```csharp
+var algorithm = CompositeMLDsaAlgorithm.MLDsa65WithRSA4096Pss;
+using var privateKey = CompositeMLDsa.GenerateKey(algorithm);
+
+byte[] data = [42];
+byte[] signature = privateKey.SignData(data);
+
+using var publicKey = CompositeMLDsa.ImportCompositeMLDsaPublicKey(algorithm, privateKey.ExportCompositeMLDsaPublicKey());
+Console.WriteLine(publicKey.VerifyData(data, signature)); // True
+
+signature[0] ^= 1; // Tamper with signature
+Console.WriteLine(publicKey.VerifyData(data, signature)); // False
+```
+
+### AES KeyWrap with Padding (IETF RFC 5649)
+
+AES-KWP is an algorithm that's occasionally used in constructions like Cryptographic Message Syntax (CMS) EnvelopedData, where content is encrypted once, but the decryption key needs to be distributed to multiple parties, each one in a distinct secret form.
+
+.NET now supports the AES-KWP algorithm via instance methods on the <xref:System.Security.Cryptography.Aes> class:
+
+```csharp
+private static byte[] DecryptContent(ReadOnlySpan<byte> kek, ReadOnlySpan<byte> encryptedKey, ReadOnlySpan<byte> ciphertext)
+{
+    using (Aes aes = Aes.Create())
+    {
+        aes.SetKey(kek);
+
+        Span<byte> dek = stackalloc byte[256 / 8];
+        int length = aes.DecryptKeyWrapPadded(encryptedKey, dek);
+
+        aes.SetKey(dek.Slice(0, length));
+        return aes.DecryptCbc(ciphertext);
+    }
+}
+```
 
 ## Globalization and date/time
 
@@ -183,6 +250,7 @@ This new API is already used in <xref:System.Json.JsonObject> and improves the p
 - [Allow specifying ReferenceHandler in `JsonSourceGenerationOptions`](#allow-specifying-referencehandler-in-jsonsourcegenerationoptions)
 - [Option to disallow duplicate JSON properties](#option-to-disallow-duplicate-json-properties)
 - [Strict JSON serialization options](#strict-json-serialization-options)
+- [PipeReader support for JSON serializer](#pipereader-support-for-json-serializer)
 
 ### Allow specifying ReferenceHandler in `JsonSourceGenerationOptions`
 
@@ -223,6 +291,37 @@ The JSON serializer accepts many options to customize serialization and deserial
 These options are read-compatible with <xref:System.Text.Json.JsonSerializerOptions.Default?displayProperty=nameWithType> - an object serialized with <xref:System.Text.Json.JsonSerializerOptions.Default?displayProperty=nameWithType> can be deserialized with <xref:System.Text.Json.JsonSerializerOptions.Strict?displayProperty=nameWithType>.
 
 For more information about JSON serialization, see [System.Text.Json overview](../../../standard/serialization/system-text-json/overview.md).
+
+### PipeReader support for JSON serializer
+
+<xref:System.Text.Json.JsonSerializer.Deserialize%2A?displayProperty=nameWithType> now supports <xref:System.IO.Pipelines.PipeReader>, complementing the existing <xref:System.IO.Pipelines.PipeWriter> support. Previously, deserializing from a `PipeReader` required converting it to a <xref:System.IO.Stream>, but the new overloads eliminate that step by integrating `PipeReader` directly into the serializer. As a bonus, not having to convert from what you're already holding can yield some efficiency benefits.
+
+This shows the basic usage:
+
+:::code language="csharp" source="snippets/csharp/PipeReaderBasic.cs":::
+
+Here is an example of a producer that produces tokens in chunks and a consumer that receives and displays them:
+
+:::code language="csharp" source="snippets/csharp/PipeReaderChunks.cs":::
+
+All of this is serialized as JSON in the <xref:System.IO.Pipelines.Pipe> (formatted here for readability):
+
+```json
+[
+    {
+        "Message": "The quick brown fox",
+        "Timestamp": "2025-08-01T18:37:27.2930151-07:00"
+    },
+    {
+        "Message": " jumps over",
+        "Timestamp": "2025-08-01T18:37:27.8594502-07:00"
+    },
+    {
+        "Message": " the lazy dog.",
+        "Timestamp": "2025-08-01T18:37:28.3753669-07:00"
+    }
+]
+```
 
 ## System.Numerics
 
@@ -328,3 +427,85 @@ A community contribution improved the performance of <xref:System.IO.Compression
 
 - Eliminates repeated allocation of ~64-80 bytes of memory per concatenated stream, with additional unmanaged memory savings.
 - Reduces execution time by approximately 400 ns per concatenated stream.
+
+## Windows process management
+
+### Launch Windows processes in new process group
+
+For Windows, you can now use <xref:System.Diagnostics.ProcessStartInfo.CreateNewProcessGroup?displayProperty=nameWithType> to launch a process in a separate process group. This allows you to send isolated signals to child processes that could otherwise take down the parent without proper handling. Sending signals is convenient to avoid forceful termination.
+
+:::code language="csharp" source="snippets/csharp/ProcessGroup.cs":::
+
+## WebSocket enhancements
+
+### WebSocketStream
+
+.NET 10 introduces <xref:System.Net.WebSockets.WebSocketStream>, a new API designed to simplify some of the most common&mdash;and previously cumbersome&mdash;<xref:System.Net.WebSockets.WebSocket> scenarios in .NET.
+
+Traditional `WebSocket` APIs are low-level and require significant boilerplate: handling buffering and framing, reconstructing messages, managing encoding/decoding, and writing custom wrappers to integrate with streams, channels, or other transport abstractions. These complexities make it difficult to use WebSockets as a transport, especially for apps with streaming or text-based protocols, or event-driven handlers.
+
+`WebSocketStream` addresses these pain points by providing a <xref:System.IO.Stream>-based abstraction over a WebSocket. This enables seamless integration with existing APIs for reading, writing, and parsing data, whether binary or text, and reduces the need for manual plumbing.
+
+`WebSocketStream` enables high-level, familiar APIs for common WebSocket consumption and production patterns. These APIs reduce friction and make advanced scenarios easier to implement.
+
+#### Common usage patterns
+
+Here are a few examples of how `WebSocketStream` simplifies typical `WebSocket` workflows:
+
+##### Streaming text protocol (for example, STOMP)
+
+:::code language="csharp" source="snippets/csharp/WebSocketStreamText.cs":::
+
+##### Streaming binary protocol (for example, AMQP)
+
+:::code language="csharp" source="snippets/csharp/WebSocketStreamBinary.cs":::
+
+##### Read a single message as a stream (for example, JSON deserialization)
+
+:::code language="csharp" source="snippets/csharp/WebSocketStreamRead.cs":::
+
+##### Write a single message as a stream (for example, binary serialization)
+
+:::code language="csharp" source="snippets/csharp/WebSocketStreamWrite.cs":::
+
+## TLS enhancements
+
+### TLS 1.3 for macOS (client)
+
+.NET 10 adds client-side TLS 1.3 support on macOS by integrating Apple's Network.framework into <xref:System.Net.Security.SslStream> and <xref:System.Net.Http.HttpClient>. Historically, macOS used Secure Transport which doesn't support TLS 1.3; opting into Network.framework enables TLS 1.3.
+
+#### Scope and behavior
+
+- macOS only, client-side in this release.
+- Opt-in. Existing apps continue to use the current stack unless enabled.
+- When enabled, older TLS versions (TLS 1.0 and 1.1) might no longer be available via Network.framework.
+
+#### How to enable
+
+Use an AppContext switch in code:
+
+```csharp
+// Opt in to Network.framework-backed TLS on Apple platforms.
+AppContext.SetSwitch("System.Net.Security.UseNetworkFramework", true);
+
+using var client = new HttpClient();
+var html = await client.GetStringAsync("https://example.com");
+```
+
+Or use an environment variable:
+
+```bash
+# Opt-in via environment variable (set for the process or machine as appropriate)
+DOTNET_SYSTEM_NET_SECURITY_USENETWORKFRAMEWORK=1
+# or
+DOTNET_SYSTEM_NET_SECURITY_USENETWORKFRAMEWORK=true
+```
+
+#### Notes
+
+- TLS 1.3 applies to <xref:System.Net.Security.SslStream> and APIs built on it (for example, <xref:System.Net.Http.HttpClient>/<xref:System.Net.Http.HttpMessageHandler>).
+- Cipher suites are controlled by macOS via Network.framework.
+- Underlying stream behavior might differ when Network.framework is enabled (for example, buffering, read/write completion, cancellation semantics).
+- Semantics might differ for zero-byte reads. Avoid relying on zero-length reads for detecting data availability.
+- Certain internationalized domain names (IDN) hostnames might be rejected by Network.framework. Prefer ASCII/Punycode (A-label) hostnames or validate names against macOS/Network.framework constraints.
+- If your app relies on specific <xref:System.Net.Security.SslStream> edge-case behavior, validate it under Network.framework.

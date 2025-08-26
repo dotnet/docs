@@ -1,7 +1,7 @@
 ---
 title: "Record types"
 description: Learn about C# record types and how to create them. A record is a class that provides value semantics.
-ms.date: 05/24/2023
+ms.date: 08/15/2025
 helpviewer_keywords: 
   - "records [C#]"
   - "C# language, records"
@@ -31,7 +31,7 @@ Immutability isn't appropriate for all data scenarios. [Entity Framework Core](/
 
 ## How records differ from classes and structs
 
-The same syntax that [declares](classes.md#declaring-classes) and [instantiates](classes.md#creating-objects) classes or structs can be used with records. Just substitute the `class` keyword with the `record`, or use `record struct` instead of `struct`. Likewise, the same syntax for expressing inheritance relationships is supported by record classes. Records differ from classes in the following ways:
+The same syntax that [declares](classes.md#declaring-classes) and [instantiates](classes.md#creating-objects) classes or structs can be used with records. Just substitute the `class` keyword with the `record`, or use `record struct` instead of `struct`. Likewise, record classes support the same syntax for expressing inheritance relationships. Records differ from classes in the following ways:
 
 * You can use [positional parameters](../../language-reference/builtin-types/record.md#positional-syntax-for-property-and-field-definition) in a [primary constructor](../../programming-guide/classes-and-structs/instance-constructors.md#primary-constructors) to create and instantiate a type with immutable properties.
 * The same methods and operators that indicate reference equality or inequality in classes (such as <xref:System.Object.Equals(System.Object)?displayProperty=nameWithType> and `==`), indicate [value equality or inequality](../../language-reference/builtin-types/record.md#value-equality) in records.
@@ -56,6 +56,8 @@ The following example demonstrates value equality in records:
 The following example demonstrates use of a `with` expression to copy an immutable object and change one of the properties:
 
 :::code language="csharp" source="./snippets/records/ImmutableRecord.cs" id="ImmutableRecord":::
+
+In the preceding examples, all properties are independent. None of the properties are computed from other property values. A `with` expression first copies the existing record instance, then modifies any properties or fields specified in the `with` expression. Computed properties in `record` types should be computed on access, not initialized when the instance is created. Otherwise, a property could return the computed value based on the original instance, not the modified copy. If you must initialize a computed property rather than compute on access, you should consider a [`class`](./classes.md) instead of a record.
 
 For more information, see [Records (C# reference)](../../language-reference/builtin-types/record.md).
   

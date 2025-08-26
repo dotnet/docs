@@ -34,7 +34,7 @@ Vector databases and their search features are especially useful in [RAG pattern
 1. Store and index the embeddings in a vector database or search service.
 1. Convert user prompts from your application to embeddings.
 1. Run a vector search across your data, comparing the user prompt embedding to the embeddings your database.
-1. Use a language model such as GPT-35 or GPT-4 to assembly a user friendly completion from the vector search results.
+1. Use a language model such as GPT-35 or GPT-4 to assemble a user friendly completion from the vector search results.
 
 Visit the [Implement Azure OpenAI with RAG using vector search in a .NET app](../tutorials/tutorial-ai-vector-search.md) tutorial for a hands-on example of this flow.
 

@@ -72,7 +72,7 @@ Two different patterns could be used, based on the semantics of the Cancel contr
 
 One pattern would allow any one subscriber to cancel the operation. For this pattern, the new field is initialized to `false`. Any subscriber can change it to `true`. After the raising the event for all subscribers, the FileSearcher component examines the boolean value and takes action.
 
-The second pattern would only cancel the operation if all subscribers wanted the operation canceled. In this pattern, the new field is initialized to indicate the operation should cancel, and any subscriber could change it to indicate the operation should continue. After all subscribers process the raised the event, the FileSearcher component examines the boolean and takes action. There's one extra step in this pattern: the component needs to know if any subscribers responded to the event. If there are no subscribers, the field would indicate a cancel incorrectly.
+The second pattern would only cancel the operation if all subscribers wanted the operation canceled. In this pattern, the new field is initialized to indicate the operation should cancel, and any subscriber could change it to indicate the operation should continue. After all subscribers process the raised event, the FileSearcher component examines the boolean and takes action. There's one extra step in this pattern: the component needs to know if any subscribers responded to the event. If there are no subscribers, the field would indicate a cancel incorrectly.
 
 Let's implement the first version for this sample. You need to add a boolean field named `CancelRequested` to the `FileFoundArgs` type:
 

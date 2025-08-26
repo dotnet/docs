@@ -1,14 +1,14 @@
 ---
 title: "Breaking change - NU1510 is raised for direct references pruned by NuGet"
-description: "Learn about the breaking change in .NET 10 where NU1510 is raised for unnecessary direct package references."
-ms.date: 3/25/2025
+description: "Learn about the breaking change in the .NET 10 SDK where NU1510 is raised for unnecessary direct package references."
+ms.date: 08/11/2025
 ai-usage: ai-assisted
 ms.custom: https://github.com/dotnet/docs/issues/45462
 ---
 
 # NU1510 is raised for direct references pruned by NuGet
 
-Starting in .NET 10, NuGet raises a [`NU1510` warning](/nuget/reference/errors-and-warnings/nu1510) when a project includes a direct package reference that overlaps with a framework-provided library and is not required.
+Starting in .NET 10, NuGet raises a [`NU1510` warning](/nuget/reference/errors-and-warnings/nu1510) when a project includes a direct package reference that overlaps with a framework-provided library and isn't required.
 
 ## Version introduced
 
@@ -20,11 +20,14 @@ Previously, the .NET SDK ignored the contents of a package if it overlapped with
 
 ## New behavior
 
-NuGet now removes unnecessary package references entirely and raises a `NU1510` warning to notify you of the issue.
+Starting in .NET 10, NuGet handles any unnecessary package references by raising a `NU1510` warning to notify you of the issue.
+
+> [!NOTE]
+> In a later .NET 10 preview, this behavior changed again such that direct prunable package references are automatically excluded from the `.nuspec` file. For more information, see [PrunePackageReference marks direct prunable references with PrivateAssets=all and IncludeAssets=none](prune-packagereference-privateassets.md).
 
 ## Type of breaking change
 
-This is a [source-incompatible change](../../categories.md#source-compatibility).
+This change can affect [source compatibility](../../categories.md#source-compatibility).
 
 ## Reason for change
 
@@ -50,3 +53,7 @@ If your project targets only frameworks where the package is pruned, remove the 
 ## Affected APIs
 
 None.
+
+## See also
+
+- [PrunePackageReference marks direct prunable references with PrivateAssets=all and IncludeAssets=none](prune-packagereference-privateassets.md)

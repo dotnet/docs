@@ -15,7 +15,6 @@ helpviewer.keywords:
 topic_type:
   - "apiref"
 author: "cshung"
-ms.author: "andrewau"
 ---
 # IXCLRDataMethodDefinition Interface
 

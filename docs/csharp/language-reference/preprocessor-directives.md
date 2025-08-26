@@ -47,9 +47,9 @@ helpviewer_keywords:
 
 Although the compiler doesn't have a separate preprocessor, the directives described in this section are processed as if there were one. You use them to help in conditional compilation. Unlike C and C++ directives, you can't use these directives to create macros. A preprocessor directive must be the only instruction on a line.
 
-## File based programs
+## File-based apps
 
-*File based programs* are programs that are compiled and run using `dotnet run Program.cs` (or any `*.cs` file). The C# compiler ignores these preprocessor directives, but the build system parses them to produce the output. These directives generate warnings when encountered in a project-based compilation.
+*File-based apps* are programs that are compiled and run using `dotnet run Program.cs` (or any `*.cs` file). The C# compiler ignores these preprocessor directives, but the build system parses them to produce the output. These directives generate warnings when encountered in a project-based compilation.
 
 The C# compiler ignores any preprocessor directive that starts with `#:` or `#!`.
 
@@ -62,14 +62,22 @@ Console.WriteLine("Hello");
 
 The preceding code snippet informs a Unix shell to execute the file using `/usr/local/share/dotnet/dotnet run`. (Your installation directory for the `dotnet` CLI can be different on different Unix or macOS distributions). The `#!` line must be the first line in the file, and the following tokens are the program to run. You need to enable the *execute* (`x`) permission on the C# file for that feature.
 
-The `#:` directives that are used in file based programs include:
+The `#:` directives that are used in file-based apps include:
 
 - `#:sdk`:
 
-  The first instance specifies the value for the `<Project Sdk="value" />` node. Subsequent instances specify the `<Sdk Name="value" Version="version" />` node. The version can be omitted. For example:
+  The first instance specifies the value for the `<Project Sdk="value" />` node. Subsequent instances specify the `<Sdk Name="value" Version="version" />` node. The version can be omitted (i.e. if specified in global.json or included in .NET SDK). For example:
 
   ```csharp
   #:sdk Microsoft.NET.Sdk.Web
+  #:sdk Aspire.AppHost.Sdk@9.4.1
+  ```
+
+  The two preceding preprocessors is translated into:
+
+  ```xml
+  <Project Sdk="Microsoft.NET.Sdk.Web" />
+      <Sdk Name="Aspire.AppHost.Sdk" Version="9.4.1" />
   ```
 
 - `#:property`:

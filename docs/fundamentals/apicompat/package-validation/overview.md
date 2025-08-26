@@ -43,3 +43,7 @@ There are three different validators that verify your package as part of the `Pa
 ## Suppress compatibility warnings
 
 For information about suppressing compatibility warnings, see [How to suppress](../diagnostic-ids.md#how-to-suppress).
+
+## See also
+
+- [Package validation properties](../../../core/project-sdk/msbuild-props.md#package-validation-properties)

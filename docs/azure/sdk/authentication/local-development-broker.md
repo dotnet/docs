@@ -73,7 +73,7 @@ Complete the following steps to enable the application to authenticate through t
 
 ### Assign Azure RBAC roles
 
-For app code to run successfully with brokered auth, your user account must be [assigned an appropriate Azure RBAC role](/dotnet/azure/sdk/authentication/local-development-dev-accounts) on the corresponding Azure service. For example:
+For your app code to run successfully with brokered auth, your user account must be [assigned an appropriate Azure RBAC role](/dotnet/azure/sdk/authentication/local-development-dev-accounts) on the corresponding Azure service. For example:
 
 - **Azure Blob Storage**: Assign a role such as **Storage Account Data Contributor**.
 - **Azure Key Vault**: Assign a role such as **Key Vault Secrets Officer**.
@@ -94,7 +94,7 @@ Complete the following steps to use <xref:Azure.Identity.InteractiveBrowserCrede
 
 :::zone target="docs" pivot="os-windows"
 
-:::code language="csharp" source="../snippets/authentication/brokered/maui-app/MainPage.xaml.cs" highlight="36-48" :::
+:::code language="csharp" source="../snippets/authentication/brokered/maui-app/MainPage.xaml.cs" highlight="37-49" :::
 
 The following screenshot shows the user sign-in experience:
 
@@ -104,13 +104,13 @@ The following screenshot shows the user sign-in experience:
 
 :::zone target="docs" pivot="os-macos"
 
-:::code language="csharp" source="../snippets/authentication/brokered/maui-app/MainPage.xaml.cs" highlight="50-62" :::
+:::code language="csharp" source="../snippets/authentication/brokered/maui-app/MainPage.xaml.cs" highlight="53-65" :::
 
 :::zone-end
 
 :::zone target="docs" pivot="os-linux"
 
-:::code language="csharp" source="../snippets/authentication/brokered/console-app/Program.cs" range="22-28" :::
+:::code language="csharp" source="../snippets/authentication/brokered/console-app/Program.cs" highlight="22-28" :::
 
 :::zone-end
 
@@ -120,4 +120,4 @@ The following screenshot shows the user sign-in experience:
 
 The previous example shows how to enable sign-in with the default system account:
 
-:::code language="csharp" source="../snippets/authentication/brokered/console-app/Program.cs" range="6-10" :::
+:::code language="csharp" source="../snippets/authentication/brokered/console-app/Program.cs" range="22-28" :::

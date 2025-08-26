@@ -29,7 +29,7 @@ Personal Microsoft accounts and work or school accounts are supported. If a supp
 
 :::zone target="docs" pivot="os-macos"
 
-Authentication brokers are not pre-installed on macOS but are apps developed by Microsoft, such as Company Portal. These apps are usually installed when a macOS computer is enrolled in a company's device fleet via an endpoint management solution like Microsoft Intune. To learn more about Apple device set up with the Microsoft Identity Platform, refer to Microsoft Enterprise SSO plug-in for Apple devices.
+Authentication brokers aren't preinstalled on macOS, but they are available through apps developed by Microsoft, such as Company Portal. These apps are installed when a macOS device is enrolled in a company device fleet via a solution like Microsoft Intune. To learn more about Apple device set up with the Microsoft Identity Platform, refer to [Microsoft Enterprise SSO plug-in for Apple devices](/entra/identity-platform/apple-sso-plugin).
 
 :::zone-end
 
@@ -68,14 +68,14 @@ Complete the following steps to enable the application to authenticate through t
 
 1. Back on the **Authentication** pane, under **Advanced settings**, select **Yes** for **Allow public client flows**.
 1. Select **Save** to apply the changes.
-1. To authorize the application for specific resources, navigate to the resource in question, select **API Permissions**, and enable **Microsoft Graph** and other resources you want to access. Microsoft Graph is usually enabled by default.
+1. To authorize the application for specific resources, navigate to the resource in question, select **API Permissions**, and enable **Microsoft Graph** and other resources you want to access.
 
     > [!IMPORTANT]
     > You must also be the admin of your tenant to grant consent to your application when you sign in for the first time.
 
-### Assign Azure RBAC roles
+### Assign roles
 
-For your app code to run successfully with interactive brokered auth, your user account must be [assigned an appropriate Azure RBAC role](/dotnet/azure/sdk/authentication/local-development-dev-accounts) on the corresponding Azure service. For example:
+For your app code to run successfully with brokered auth, you need grant your user account permissions through [Azure role-based access control (RBAC)](/azure/role-based-access-control/overview). Your user account must be [assigned an appropriate role](/dotnet/azure/sdk/authentication/local-development-dev-accounts) on the corresponding Azure service. For example:
 
 - **Azure Blob Storage**: Assign a role such as **Storage Account Data Contributor**.
 - **Azure Key Vault**: Assign a role such as **Key Vault Secrets Officer**.
@@ -118,8 +118,8 @@ The following screenshot shows the user sign-in experience:
 
 ### Authenticate the default system account
 
-`InteractiveBrowserCredential` also supports a silent login process that automatically uses a default account so the user doesn't have to repeatedly select it. Once you opt in to this behavior, the credential attempts to sign in by asking the underlying Microsoft Authentication Library (MSAL) to perform the sign-in for the default system account. If the sign-in fails, the credential falls back to displaying the account picker dialog, from which the user can select the appropriate account.
+`InteractiveBrowserCredential` also supports a silent sign-in process that automatically uses a default account so the user doesn't have to repeatedly select it. Once you opt-in to this behavior, the credential attempts to sign-in by asking the underlying Microsoft Authentication Library (MSAL) to perform the sign-in for the default system account. If the sign-in fails, the credential falls back to displaying the account picker dialog, from which the user can select the appropriate account.
 
 The previous example shows how to enable sign-in with the default system account:
 
-:::code language="csharp" source="../snippets/authentication/brokered/console-app/Program.cs" range="22-28" :::
+:::code language="csharp" source="../snippets/authentication/brokered/console-app/Program.cs" range="22-28" highlight="3" :::

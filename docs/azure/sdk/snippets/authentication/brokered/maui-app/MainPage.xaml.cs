@@ -47,6 +47,17 @@ public partial class MainPage : ContentPage
 
             // Create credential that will use WAM broker on Windows
             InteractiveBrowserCredential credential = new(options);
+
+            SecretClient client = new(new Uri(KeyVaultUrl), credential);
+            KeyVaultSecret secret = await client.GetSecretAsync(SecretName);
+
+            // Display the secret value (in production, be careful about displaying secrets)
+            ResultLabel.Text = $"✅ Secret '{SecretName}' retrieved successfully!\n" +
+                              $"🔑 Value: {secret.Value}\n" +
+                              $"📅 Created: {secret.Properties.CreatedOn:yyyy-MM-dd HH:mm:ss}";
+            ResultLabel.IsVisible = true;
+
+            Debug.WriteLine($"Successfully retrieved secret: {SecretName}");
             #endregion
 #elif MACCATALYST
             #region snippet_brokered_macos
@@ -63,11 +74,6 @@ public partial class MainPage : ContentPage
 
             // Create credential that will use the broker on macOS
             InteractiveBrowserCredential credential = new(options);
-            #endregion
-#else
-            // For non-Windows and non-macOS platforms, use standard interactive browser credential
-            InteractiveBrowserCredential credential = new();
-#endif
 
             SecretClient client = new(new Uri(KeyVaultUrl), credential);
             KeyVaultSecret secret = await client.GetSecretAsync(SecretName);
@@ -79,6 +85,11 @@ public partial class MainPage : ContentPage
             ResultLabel.IsVisible = true;
 
             Debug.WriteLine($"Successfully retrieved secret: {SecretName}");
+            #endregion
+#else
+            // For non-Windows and non-macOS platforms, use standard interactive browser credential
+            InteractiveBrowserCredential credential = new();
+#endif
         }
         catch (RequestFailedException ex)
         {

@@ -103,19 +103,19 @@ If an app is specified, it must have API permissions set for **user_impersonatio
 
 :::zone target="docs" pivot="os-windows"
 
-:::code language="csharp" source="../snippets/authentication/brokered/maui-app/MainPage.xaml.cs" id="snippet_brokered_windows":::
+:::code language="csharp" source="../snippets/authentication/brokered/maui-app/MainPage.xaml.cs" id="snippet_brokered_windows" highlight="6-13":::
 
 :::zone-end
 
 :::zone target="docs" pivot="os-macos"
 
-:::code language="csharp" source="../snippets/authentication/brokered/maui-app/MainPage.xaml.cs" id="snippet_brokered_macos":::
+:::code language="csharp" source="../snippets/authentication/brokered/maui-app/MainPage.xaml.cs" id="snippet_brokered_macos" highlight="6-13":::
 
 :::zone-end
 
 :::zone target="docs" pivot="os-linux"
 
-:::code language="csharp" source="../snippets/authentication/brokered/console-app/Program.cs" id="snippet_brokered_linux":::
+:::code language="csharp" source="../snippets/authentication/brokered/console-app/Program.cs" id="snippet_brokered_linux" highlight="15-21":::
 
 :::zone-end
 

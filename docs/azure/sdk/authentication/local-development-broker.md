@@ -84,7 +84,7 @@ If an app is specified, it must have API permissions set for **user_impersonatio
 
 ## Implement the code
 
-.NET and the `Azure.Identity` libraries provide interactive brokered authentication using <xref:Azure.Identity.InteractiveBrowserCredential>. For example, to use <xref:Azure.Identity.InteractiveBrowserCredential> in a MAUI app to authenticate with the [`SecretClient`](/dotnet/api/azure.security.keyvault.secrets.secretclient), follow these steps:
+.NET and the `Azure.Identity` libraries provide interactive brokered authentication using <xref:Azure.Identity.InteractiveBrowserCredential>. For example, to use `InteractiveBrowserCredential` in a MAUI app to authenticate to Azure Key Vault with the [`SecretClient`](/dotnet/api/azure.security.keyvault.secrets.secretclient), follow these steps:
 
 1. Install the [Azure.Identity](https://www.nuget.org/packages/Azure.Identity) and [Azure.Identity.Broker](https://www.nuget.org/packages/Azure.Identity.Broker) packages.
 

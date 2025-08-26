@@ -3,7 +3,7 @@ title: How to authenticate .NET applications with Azure services
 description: Learn how to authenticate a .NET app with Azure services by using classes in the Azure Identity library.
 ms.topic: conceptual
 ms.custom: devx-track-dotnet, engagement-fy23
-ms.date: 08/02/2024
+ms.date: 08/26/2025
 ---
 
 # Authenticate .NET apps to Azure services using the Azure Identity library

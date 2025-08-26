@@ -73,6 +73,9 @@ public partial class MainPage : ContentPage
 #else
             // For non-Windows and non-macOS platforms, use standard interactive browser credential
             InteractiveBrowserCredential credential = new();
+
+            SecretClient client = new(new Uri(KeyVaultUrl), credential);
+            KeyVaultSecret secret = await client.GetSecretAsync(SecretName);
 #endif
 
             // Display the secret value (in production, be careful about displaying secrets)

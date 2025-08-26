@@ -33,33 +33,27 @@ public partial class MainPage : ContentPage
         try
         {
 #if WINDOWS
-            #region brokered_windows
+            #region snippet_brokered_windows
             // Get the parent window handle for MAUI on Windows
             Microsoft.Maui.Controls.Window? parentWindow = this.GetParentWindow();
             Microsoft.UI.Xaml.Window? windowHandle = parentWindow?.Handler?.PlatformView as Microsoft.UI.Xaml.Window;
             IntPtr hwnd = windowHandle != null ? WinRT.Interop.WindowNative.GetWindowHandle(windowHandle) : IntPtr.Zero;
 
             // Configure InteractiveBrowserCredentialBrokerOptions with parent window reference
-            InteractiveBrowserCredentialBrokerOptions options = new(hwnd)
-			{
-				UseDefaultBrokerAccount = true,
-			};
+            InteractiveBrowserCredentialBrokerOptions options = new(hwnd);
 
             // Create credential that will use WAM broker on Windows
             InteractiveBrowserCredential credential = new(options);
             #endregion
 #elif MACCATALYST
-            #region brokered_maccatalyst
+            #region snippet_brokered_macos
             // Get the parent window handle for MAUI on Mac Catalyst
             Microsoft.Maui.Controls.Window? parentWindow = this.GetParentWindow();
             UIWindow? uiWindow = parentWindow?.Handler?.PlatformView as UIWindow;
             IntPtr windowHandle = uiWindow != null ? uiWindow.Handle : IntPtr.Zero;
 
             // Configure InteractiveBrowserCredentialBrokerOptions with parent window reference
-            InteractiveBrowserCredentialBrokerOptions options = new(windowHandle)
-            {
-                UseDefaultBrokerAccount = true,
-            };
+            InteractiveBrowserCredentialBrokerOptions options = new(windowHandle);
 
             // Create credential that will use the broker on macOS
             InteractiveBrowserCredential credential = new(options);

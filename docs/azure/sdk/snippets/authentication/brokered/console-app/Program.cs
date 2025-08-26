@@ -5,6 +5,7 @@ using Azure.Identity;
 using Azure.Identity.Broker;
 using Azure.Security.KeyVault.Secrets;
 
+#region snippet_brokered_linux
 /// <summary>
 /// Get the handle of the console window for Linux
 /// </summary>
@@ -19,13 +20,11 @@ try
     IntPtr parentWindowHandle = XRootWindow(XOpenDisplay(null), 0);
     Func<IntPtr> consoleWindowHandleProvider = () => parentWindowHandle;
 
-    InteractiveBrowserCredentialBrokerOptions brokerOptions = new(parentWindowHandle)
-    {
-        UseDefaultBrokerAccount = true,
-    };
-
+    InteractiveBrowserCredentialBrokerOptions options = new(parentWindowHandle);
+    
     // Create the InteractiveBrowserCredential using broker support
-    InteractiveBrowserCredential credential = new(brokerOptions);
+    InteractiveBrowserCredential credential = new(options);
+#endregion
 
     Uri vaultUri = new("https://<your-key-vault-name>.vault.azure.net/");
     SecretClient client = new(vaultUri, credential);

@@ -29,16 +29,13 @@ Personal Microsoft accounts and work or school accounts are supported. On suppor
 
 :::zone target="docs" pivot="os-macos"
 
-macOS does not include a built-in authentication broker. Brokered authentication is supported via the Azure.Identity.Broker library, which uses platform-specific mechanisms and may integrate with apps like Microsoft Company Portal when devices are managed. For more information, see [Microsoft Enterprise SSO plug-in for Apple devices](/entra/identity-platform/apple-sso-plugin).
+macOS doesn't natively include a built-in authentication broker. Brokered authentication is supported via the `Azure.Identity.Broker` library, which uses platform-specific mechanisms and may integrate with apps like Microsoft Company Portal when devices are managed. For more information, see [Microsoft Enterprise SSO plug-in for Apple devices](/entra/identity-platform/apple-sso-plugin).
 
 :::zone-end
 
 :::zone target="docs" pivot="os-linux"
 
 Linux uses [Microsoft single sign-on for Linux](/entra/identity/devices/sso-linux) as its authentication broker.
-
-> [!NOTE]
-> Microsoft SSO for Linux authentication broker support is available starting with `Azure.Identity.Broker` version 1.3.0.
 
 :::zone-end
 
@@ -55,12 +52,12 @@ To enable brokered authentication in your application, follow these steps:
 
         | Platform    | Redirect URI                                                                                                          |
         |-------------|-----------------------------------------------------------------------------------------------------------------------|
-        | Windows 10+ | `ms-appx-web://Microsoft.AAD.BrokerPlugin/your_client_id`                                                             |
-        | macOS       | `msauth.com.msauth.unsignedapp://auth` for unsigned apps `msauth.BUNDLE_ID://auth` for signed apps                    |
-        | WSL         | `ms-appx-web://Microsoft.AAD.BrokerPlugin/your_client_id`                                                             |
+        | Windows 10+ | `ms-appx-web://Microsoft.AAD.BrokerPlugin/{your_client_id}`                                                             |
+        | macOS       | `msauth.com.msauth.unsignedapp://auth` for unsigned apps<br>`msauth.{bundle_id}://auth` for signed apps                    |
+        | WSL         | `ms-appx-web://Microsoft.AAD.BrokerPlugin/{your_client_id}`                                                             |
         | Linux       | `https://login.microsoftonline.com/common/oauth2/nativeclient`                                                        |
 
-         Replace `{your_client_id}` or `{BUNDLE_ID}` with the **Application (client) ID** from the app registration's **Overview** pane.
+         Replace `{your_client_id}` or `{bundle_id}` with the **Application (client) ID** from the app registration's **Overview** pane.
 
     1. Select **Configure**.
 
@@ -96,7 +93,7 @@ If an app is specified, it must have API permissions set for **user_impersonatio
 
 :::zone target="docs" pivot="os-windows"
 
-:::code language="csharp" source="../snippets/authentication/brokered/maui-app/MainPage.xaml.cs" highlight="37-49" :::
+:::code language="csharp" source="../snippets/authentication/brokered/maui-app/MainPage.xaml.cs" id="snippet_brokered_windows":::
 
 The following screenshot shows the user sign-in experience:
 
@@ -106,13 +103,13 @@ The following screenshot shows the user sign-in experience:
 
 :::zone target="docs" pivot="os-macos"
 
-:::code language="csharp" source="../snippets/authentication/brokered/maui-app/MainPage.xaml.cs" highlight="53-65" :::
+:::code language="csharp" source="../snippets/authentication/brokered/maui-app/MainPage.xaml.cs" id="snippet_brokered_macos":::
 
 :::zone-end
 
 :::zone target="docs" pivot="os-linux"
 
-:::code language="csharp" source="../snippets/authentication/brokered/console-app/Program.cs" highlight="22-28" :::
+:::code language="csharp" source="../snippets/authentication/brokered/console-app/Program.cs" id="snippet_brokered_linux":::
 
 :::zone-end
 

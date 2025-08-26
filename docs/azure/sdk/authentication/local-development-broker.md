@@ -7,7 +7,7 @@ ms.date: 08/20/2025
 zone_pivot_groups: operating-systems-set-one
 ---
 
-# Authenticate .NET apps to Azure services during local development using interactive brokered authentication
+# Authenticate .NET apps to Azure services during local development using brokered authentication
 
 Brokered authentication collects user credentials using the system authentication broker to authenticate an app with <xref:Azure.Identity.InteractiveBrowserCredential>. A system authentication broker is an app running on a user's machine that manages the authentication handshakes and token maintenance for all connected accounts.
 
@@ -54,7 +54,6 @@ To enable brokered authentication in your application, follow these steps:
         |-------------|-----------------------------------------------------------------------------------------------------------------------|
         | Windows 10+ or WSL | `ms-appx-web://Microsoft.AAD.BrokerPlugin/{your_client_id}`                                                             |
         | macOS       | `msauth.com.msauth.unsignedapp://auth` for unsigned apps<br>`msauth.{bundle_id}://auth` for signed apps                    |
-|
         | Linux       | `https://login.microsoftonline.com/common/oauth2/nativeclient`                                                        |
 
          Replace `{your_client_id}` or `{bundle_id}` with the **Application (client) ID** from the app registration's **Overview** pane.
@@ -94,6 +93,11 @@ The Azure Identity library supports brokered authentication using <xref:Azure.Id
 :::zone-end
 
 1. Install the [Azure.Identity](https://www.nuget.org/packages/Azure.Identity) and [Azure.Identity.Broker](https://www.nuget.org/packages/Azure.Identity.Broker) packages.
+
+    ```dotnetcli
+    dotnet add package Azure.Identity
+    dotnet add package Azure.Identity.Broker
+    ```
 
     > [!NOTE]
     > macOS and Linux support exists in `Azure.Identity.Broker` versions 1.3.0 and later.

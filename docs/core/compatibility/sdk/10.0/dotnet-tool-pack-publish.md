@@ -6,7 +6,7 @@ ai-usage: ai-assisted
 ms.custom: https://github.com/dotnet/docs/issues/47916
 ---
 
-# .NET tool packaging invokes Publish instead of Build
+# .NET tool packaging creates RuntimeIdentifier-specific tool packages
 
 The .NET tool packaging process changed when `RuntimeIdentifiers` are present in the project.
 Since the SDK now supports creating [platform-specific tools](https://github.com/dotnet/core/blob/main/release-notes/10.0/preview/preview6/sdk.md#platform-specific-net-tools), `RuntimeIdentifiers` are used to determine the set of platforms for which to create tool packages.

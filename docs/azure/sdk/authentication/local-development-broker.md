@@ -9,9 +9,9 @@ zone_pivot_groups: operating-systems-set-one
 
 # Authenticate .NET apps to Azure services during local development using interactive brokered authentication
 
-Interactive brokered authentication collects user credentials using the system authentication broker to authenticate an app with <xref:Azure.Identity.InteractiveBrowserCredential>. A system authentication broker is an app running on a user's machine that manages the authentication handshakes and token maintenance for all connected accounts.
+Brokered authentication collects user credentials using the system authentication broker to authenticate an app with <xref:Azure.Identity.InteractiveBrowserCredential>. A system authentication broker is an app running on a user's machine that manages the authentication handshakes and token maintenance for all connected accounts.
 
-Interactive brokered authentication offers the following benefits:
+Brokered authentication offers the following benefits:
 
 - **Enables Single Sign-On (SSO):** Enables apps to simplify how users authenticate with Microsoft Entra ID and protects Microsoft Entra ID refresh tokens from exfiltration and misuse.
 - **Enhanced security:** Many security enhancements are delivered with the broker, without needing to update the app logic.
@@ -84,7 +84,7 @@ If an app is specified, it must have API permissions set for **user_impersonatio
 
 ## Implement the code
 
-To use <xref:Azure.Identity.InteractiveBrowserCredential> in a MAUI app to authenticate with the [`SecretClient`](/dotnet/api/azure.security.keyvault.secrets.secretclient), follow these steps:
+.NET and the `Azure.Identity` libraries provide interactive brokered authentication using <xref:Azure.Identity.InteractiveBrowserCredential>. For example, to use <xref:Azure.Identity.InteractiveBrowserCredential> in a MAUI app to authenticate with the [`SecretClient`](/dotnet/api/azure.security.keyvault.secrets.secretclient), follow these steps:
 
 1. Install the [Azure.Identity](https://www.nuget.org/packages/Azure.Identity) and [Azure.Identity.Broker](https://www.nuget.org/packages/Azure.Identity.Broker) packages.
 

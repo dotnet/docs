@@ -1,13 +1,15 @@
 ---
-title: "Breaking change: dotnet tool install --local creates manifest by default"
-description: "Learn about the breaking change where dotnet tool install --local now creates a manifest by default using --create-manifest-if-needed behavior."
-ms.date: 08/27/2024
+title: "Breaking change: 'dotnet tool install --local' creates manifest by default"
+description: "Learn about the breaking change where 'dotnet tool install --local' now creates a manifest by default if no tools manifest is found."
+ms.date: 08/27/2025
 ai-usage: ai-generated
 ---
 
 # dotnet tool install --local creates manifest by default
 
-When running `dotnet tool install --local`, a manifest is now created if one does not exist instead of failing with an error. This was implemented by making `--create-manifest-if-needed` enabled by default.
+When running [`dotnet tool install --local`](../../../tools/dotnet-tool-install.md), a manifest is now created if none exists instead of failing with an error. This change was implemented by making the [`--create-manifest-if-needed` option](../../../tools/dotnet-tool-install.md#options) enabled by default. This is a breaking change, since users might have relied on the failure behavior to check if they needed to create a manifest.
+
+The `-d` flag on `dotnet tool install` was previously added to show a user the locations that were searched for manifests. This information was relayed in the error given when there was no manifest. That error is no longer shown since a manifest is now created if necessary. Also, the flag never worked properly.
 
 ## Version introduced
 
@@ -15,15 +17,13 @@ When running `dotnet tool install --local`, a manifest is now created if one doe
 
 ## Previous behavior
 
-When a user tried to install a .NET tool as a local tool in a folder that did not contain a manifest, they would get an error: "Cannot find a manifest file."
+Previously, if you tried to install a .NET tool as a local tool in a folder that didn't contain a manifest, you got an error:
+
+> Cannot find a manifest file.
 
 ## New behavior
 
-The `--create-manifest-if-needed` functionality is now enabled by default, so the manifest will be created automatically if it does not exist when a tool is installed as a local tool. The manifest is created according to the following rules:
-
-- Walk up the directory tree searching for a directory that has a `.git` subfolder. If one is found, create the manifest in that directory.
-- If the previous step doesn't find a directory, walk up the directory tree searching for a directory that has a `.sln` or `.git` file. If one is found, create the manifest in that directory.
-- If neither of the previous two steps finds a directory, create the manifest in the current working directory.
+Starting in .NET 10, the `--create-manifest-if-needed=true` functionality is now enabled by default. When a tool is installed as a local tool, the manifest is created automatically if it doesn't exist. The manifest is created according to the rules defined under the [`--create-manifest-if-needed` option documentation](../../../tools/dotnet-tool-install.md#options).
 
 ## Type of breaking change
 
@@ -35,8 +35,12 @@ This change improves the user experience by making `dotnet tool install --local`
 
 ## Recommended action
 
-Users can turn off the automatic manifest creation behavior by setting `--create-manifest-if-needed=false` if they prefer the previous behavior where the command would fail when no manifest exists.
+You can turn off the automatic manifest creation behavior by passing `--create-manifest-if-needed=false` when calling `dotnet tool install --local`.
 
 ## Affected APIs
 
 N/A
+
+## See also
+
+- [dotnet tool install](../../../tools/dotnet-tool-install.md)

@@ -1,7 +1,7 @@
 ---
 title: dotnet tool install command
 description: The dotnet tool install command installs the specified .NET tool on your machine.
-ms.date: 04/07/2025
+ms.date: 08/27/2025
 ---
 # dotnet tool install
 
@@ -46,9 +46,9 @@ dotnet tool install -h|--help
 
 The `dotnet tool install` command provides a way for you to install .NET tools on your machine. To use the command, you specify one of the following installation options:
 
-* To install a global tool in the default location, use the `--global` option.
-* To install a global tool in a custom location,  use the `--tool-path` option.
-* To install a local tool, omit the `--global` and `--tool-path` options.
+- To install a global tool in the default location, use the `--global` option.
+- To install a global tool in a custom location,  use the `--tool-path` option.
+- To install a local tool, omit the `--global` and `--tool-path` options.
 
 > [!WARNING]
 > Make sure the directory you specify with the `--tool-path` option is secure. Tools installed in this location can be executed directly, so using an untrusted or shared path might introduce security risks.
@@ -112,19 +112,21 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 
 - **`--create-manifest-if-needed`**
 
-  Applies to local tools. Available starting with .NET 8 SDK. Starting in .NET 10, this behavior is enabled by default. To find a manifest, the search algorithm searches up the directory tree for `dotnet-tools.json` or a `.config` folder that contains a `dotnet-tools.json` file.
+  Available starting in .NET 8 SDK.
 
-  If a tool-manifest can't be found and the `--create-manifest-if-needed` option is set to false, the `CannotFindAManifestFile` error occurs.
+  Applies to local tools. To find a manifest, the search algorithm searches up the directory tree for `dotnet-tools.json` or a `.config` folder that contains a `dotnet-tools.json` file.
 
-  If a tool-manifest can't be found and the `--create-manifest-if-needed` option is set to true (or starting in .NET 10, when not specified), the tool creates a manifest automatically. It chooses a folder for the manifest as follows:
+  If a tool-manifest can't be found and the `--create-manifest-if-needed` option is set to `false`, the `CannotFindAManifestFile` error occurs.
 
-  * Walk up the directory tree searching for a directory that has a `.git` subfolder. If one is found, create the manifest in that directory.
-  * If the previous step doesn't find a directory, walk up the directory tree searching for a directory that has a `.sln` or `.git` file. If one is found, create the manifest in that directory.
-  * If neither of the previous two steps finds a directory, create the manifest in the current working directory.
+  If a tool-manifest can't be found and the `--create-manifest-if-needed` option is set to `true` (or, in .NET 10 and later versions, when not specified), the tool creates a manifest automatically. It chooses a folder for the manifest as follows:
+
+  - Walk up the directory tree searching for a directory that has a `.git` subfolder. If one is found, create the manifest in that directory.
+  - If the previous step doesn't find a directory, walk up the directory tree searching for a directory that has a `.sln` or `.git` file. If one is found, create the manifest in that directory.
+  - If neither of the previous two steps finds a directory, create the manifest in the current working directory.
 
   For more information on how manifests are located, see [Install a local tool](global-tools.md#install-a-local-tool).
 
-  Starting in .NET 10, this behavior is applied automatically if no tools manifest is found. Users can opt out by explicitly setting `--create-manifest-if-needed=false`.
+  Starting in .NET 10, a manifest is created automatically if no tools manifest is found. You can opt out by explicitly setting `--create-manifest-if-needed=false`. This change can be a [breaking change](../compatibility/sdk/10.0/dotnet-tool-install-local-manifest.md).
 
   > [!WARNING]
   > Don't run tool commands from the **Downloads** folder or any shared location. The CLI walks up the directory tree to find a tool manifest, which might cause it to use a manifest you don't expect. Always run tool commands from a trusted, project-specific directory.

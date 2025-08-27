@@ -91,6 +91,18 @@ landingContent:
             url: https://github.com/jmatthiesen/dotnet-ai-resources
 
   # Card
+  - title: API reference
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: ChatClientBuilder
+            url: /dotnet/api/microsoft.extensions.ai.chatclientbuilder
+          - text: IChatClient
+            url: /dotnet/api/microsoft.extensions.ai.ichatclient
+          - text: IEmbeddingGenerator
+            url: /dotnet/api/microsoft.extensions.ai.iembeddinggenerator
+
+  # Card
   - title: Common tasks
     linkLists:
       - linkListType: how-to-guide

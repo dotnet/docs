@@ -56,7 +56,7 @@ To enable brokered authentication in your application, follow these steps:
         | macOS       | `msauth.com.msauth.unsignedapp://auth` for unsigned apps<br>`msauth.{bundle_id}://auth` for signed apps                    |
         | Linux       | `https://login.microsoftonline.com/common/oauth2/nativeclient`                                                        |
 
-         Replace `{your_client_id}` or `{bundle_id}` with the **Application (client) ID** from the app registration's **Overview** pane.
+        Replace `{your_client_id}` or `{bundle_id}` with the **Application (client) ID** from the app registration's **Overview** pane.
 
     1. Select **Configure**.
 
@@ -155,7 +155,15 @@ In the preceding example, property <xref:Azure.Identity.Broker.InteractiveBrowse
 
 The following screenshot shows the alternative interactive, brokered authentication experience:
 
-:::image type="content" source="../media/web-account-manager-sign-in-account-picker.png" alt-text="A screenshot that shows the sign-in experience when using a broker-enabled InteractiveBrowserCredential instance to authenticate a user." :::
+:::image type="content" source="../media/broker-web-account-manager-account-picker.png" alt-text="A screenshot that shows the Windows sign-in experience when using a broker-enabled InteractiveBrowserCredential instance to authenticate a user.":::
+
+:::zone-end
+
+:::zone target="docs" pivot="os-macos"
+
+The following screenshot shows the alternative interactive, brokered authentication experience:
+
+:::image type="content" source="../media/broker-macos-account-picker.png" alt-text="A screenshot that shows the macOS sign-in experience when using a broker-enabled InteractiveBrowserCredential instance to authenticate a user.":::
 
 :::zone-end
 
@@ -163,6 +171,6 @@ The following screenshot shows the alternative interactive, brokered authenticat
 
 The following video shows the alternative interactive, brokered authentication experience:
 
-:::image type="content" source="../media/linux-entra-login.gif" alt-text="An animated gif that shows the sign-in experience when using a broker-enabled InteractiveBrowserCredential instance to authenticate a user." :::
+:::image type="content" source="../media/broker-linux-login.gif" alt-text="An animated gif that shows the Linux sign-in experience when using a broker-enabled InteractiveBrowserCredential instance to authenticate a user.":::
 
 :::zone-end

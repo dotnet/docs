@@ -80,7 +80,7 @@ Tools with explicit tool paths are stored wherever you specified the `--tool-pat
 
 Local tools are stored in the NuGet global directory, whatever you've set that to be. There are shim files in `$HOME/.dotnet/toolResolverCache` for each local tool that point to where the tools are within that location.
 
-References to local tools are added to a *dotnet-tools.json* file in a *.config* directory under the current directory. If a manifest file doesn't exist yet, create it by using the `--create-manifest-if-needed` option or by running the following command:
+References to local tools are added to a *dotnet-tools.json* file in a *.config* directory under the current directory. Starting in .NET 10, if a manifest file doesn't exist yet, one is created automatically. You can also create one manually by running the following command:
 
 ```dotnetcli
 dotnet new tool-manifest
@@ -112,11 +112,11 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 
 - **`--create-manifest-if-needed`**
 
-  Applies to local tools. Available starting with .NET 8 SDK. To find a manifest, the search algorithm searches up the directory tree for `dotnet-tools.json` or a `.config` folder that contains a `dotnet-tools.json` file.
+  Applies to local tools. Available starting with .NET 8 SDK. Starting in .NET 10, this behavior is enabled by default. To find a manifest, the search algorithm searches up the directory tree for `dotnet-tools.json` or a `.config` folder that contains a `dotnet-tools.json` file.
 
   If a tool-manifest can't be found and the `--create-manifest-if-needed` option is set to false, the `CannotFindAManifestFile` error occurs.
 
-  If a tool-manifest can't be found and the `--create-manifest-if-needed` option is set to true, the tool creates a manifest automatically. It chooses a folder for the manifest as follows:
+  If a tool-manifest can't be found and the `--create-manifest-if-needed` option is set to true (or starting in .NET 10, when not specified), the tool creates a manifest automatically. It chooses a folder for the manifest as follows:
 
   * Walk up the directory tree searching for a directory that has a `.git` subfolder. If one is found, create the manifest in that directory.
   * If the previous step doesn't find a directory, walk up the directory tree searching for a directory that has a `.sln` or `.git` file. If one is found, create the manifest in that directory.
@@ -124,7 +124,7 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 
   For more information on how manifests are located, see [Install a local tool](global-tools.md#install-a-local-tool).
 
-  Starting in .NET 10, this flag is applied automatically if no tools manifest is found.
+  Starting in .NET 10, this behavior is applied automatically if no tools manifest is found. Users can opt out by explicitly setting `--create-manifest-if-needed=false`.
 
   > [!WARNING]
   > Don't run tool commands from the **Downloads** folder or any shared location. The CLI walks up the directory tree to find a tool manifest, which might cause it to use a manifest you don't expect. Always run tool commands from a trusted, project-specific directory.

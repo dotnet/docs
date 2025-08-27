@@ -77,7 +77,7 @@ The following items, even though they pertain to the parameter list, are not com
 
 You cannot overload a procedure by varying only one or more of the preceding items.
 
-**Correct approach:** To be able to define a procedure overload, you must vary the signature. Because you must use the same name, you must vary the number, order, or data types of the parameters. In a generic procedure, you can vary the number of type parameters. In a conversion operator ([CType Function](../../../language-reference/functions/ctype-function.md)), you can vary the return type.
+**Correct approach:** To be able to define a procedure overload, you must vary the signature. Because you must use the same name, you must vary the number, order, or data types of the parameters. In a generic procedure, you can vary the number of type parameters. In a conversion operator ([CType Operator](../../../language-reference/functions/ctype-function.md)), you can vary the return type.
 
 ### Overload resolution with Optional and ParamArray arguments
 

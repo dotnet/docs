@@ -34,7 +34,7 @@ ms.assetid: 8a8fb553-a8ac-424e-8103-26eea25eaa71
 - [CShort Function](type-conversion-functions.md)
 - [CSng Function](type-conversion-functions.md)
 - [CStr Function](type-conversion-functions.md)
-- [CType Function](ctype-function.md)
+- [CType Operator](ctype-function.md)
 - [CUInt Function](type-conversion-functions.md)
 - [CULng Function](type-conversion-functions.md)
 - [CUShort Function](type-conversion-functions.md)

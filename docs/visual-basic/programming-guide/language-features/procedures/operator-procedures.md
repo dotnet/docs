@@ -51,7 +51,7 @@ Public Shared [Widening | Narrowing] Operator operatorsymbol ( operand1 [,  oper
 End Operator
 ```
 
-You use the `Widening` or `Narrowing` keyword only on a type conversion operator. The operator symbol is always [CType Function](../../../language-reference/functions/ctype-function.md) for a type conversion operator.
+You use the `Widening` or `Narrowing` keyword only on a type conversion operator. The operator symbol is always [CType Operator](../../../language-reference/functions/ctype-function.md) for a type conversion operator.
 
 You declare two operands to define a binary operator, and you declare one operand to define a unary operator, including a type conversion operator. All operands must be declared `ByVal`.
 

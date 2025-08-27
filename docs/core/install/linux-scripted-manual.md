@@ -15,7 +15,7 @@ This article demonstrates how to install the .NET SDK or the .NET Runtime on Lin
 
 ## .NET releases
 
-There are two types of supported releases, Long Term Support (LTS) and Standard Term Support (STS). The quality of all releases is the same. The only difference is the length of support. LTS releases get free support and patches for 3 years. STS releases get free support and patches for 2 years. For more information, see [.NET Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
+There are two types of supported releases, Long Term Support (LTS) and Standard Term Support (STS). The quality of all releases is the same. The only difference is the length of support. LTS releases get free support and patches for three years. STS releases get free support and patches for two years. For more information, see [.NET Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
 
 The following table lists the support status of each version of .NET (and .NET Core):
 

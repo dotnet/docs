@@ -59,11 +59,11 @@ There are two support tracks for releases:
 
 * *Standard Term Support* (STS) releases
 
-  These versions are supported for 2 years (24 months).
+  These versions are supported for two years (24 months).
 
   Example:
 
-  * .NET 9 is an STS release and was released in November 2024. It's supported for 2 years, until November 2026.
+  * .NET 9 is an STS release and was released in November 2024. It's supported for two years, until November 2026.
 
 * *Long Term Support* (LTS) releases
 
@@ -71,8 +71,8 @@ There are two support tracks for releases:
 
   Examples:
 
-  * .NET Core 3.1 is an LTS release and was released in December 2019. It was supported for 3 years, until December 2022.
-  * .NET 8 is an LTS release and was released in November, 2023. It's supported for 3 years, until November 2026.
+  * .NET Core 3.1 is an LTS release and was released in December 2019. It was supported for three years, until December 2022.
+  * .NET 8 is an LTS release and was released in November 2023. It's supported for three years, until November 2026.
 
 Releases alternate between LTS and STS.
 
@@ -80,9 +80,9 @@ Servicing updates ship monthly and include both security and non-security (relia
 
 ## How to choose a release
 
-If you're building a service and expect to continue updating it on a regular basis, then an STS release like the .NET 7 runtime might be your best option to stay up to date with the latest features .NET has to offer.
+If you're building a service and expect to continue updating it on a regular basis, then use the latest release, whether LTS or STS, to stay up to date with the latest features .NET has to offer.
 
-If you're building a client application that will be distributed to consumers, stability might be more important than access to the latest features. Your application might need to be supported for a certain period before the consumer can upgrade to the next version of the application. In that case, an LTS release like the .NET 6 runtime could be the right option.
+If you're building a client application that will be distributed to consumers, stability might be more important than access to the latest features. Your application might need to be supported for a certain period before the consumer can upgrade to the next version of the application. In that case, an LTS release like the .NET 8 runtime could be the right option.
 
 > [!NOTE]
 > We recommend upgrading to the latest SDK version, even if it's an STS release, as it can target all available runtimes.

@@ -1,11 +1,11 @@
 ---
-title: "Breaking change: dotnet tool install --local works by default, by creating a manifest by default"
+title: "Breaking change: dotnet tool install --local creates manifest by default"
 description: "Learn about the breaking change where dotnet tool install --local now creates a manifest by default using --create-manifest-if-needed behavior."
-ms.date: 08/27/2025
+ms.date: 08/27/2024
 ai-usage: ai-generated
 ---
 
-# dotnet tool install --local works by default, by creating a manifest by default
+# dotnet tool install --local creates manifest by default
 
 When running `dotnet tool install --local`, a manifest is now created if one does not exist instead of failing with an error. This was implemented by making `--create-manifest-if-needed` enabled by default.
 

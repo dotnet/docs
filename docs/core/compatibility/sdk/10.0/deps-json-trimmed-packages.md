@@ -21,7 +21,7 @@ Previously, all referenced NuGet packages and projects were included in the deps
 
 NuGet packages or other libraries might be excluded from the deps.json file if:
 
-- They don't contribute any runtime assets.
+- They don't contribute any runtime assets, and
 - Removing the library from the deps.json would not cause any libraries that do contribute runtime assets to no longer have a dependency path to them.
 
 ## Type of breaking change

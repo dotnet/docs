@@ -1,14 +1,15 @@
 ---
-title: "Breaking change: .NET tool packaging invokes Publish instead of Build"
-description: "Learn about the breaking change in the .NET 10 SDK where .NET tool packaging changed from invoking Build to Publish, affecting included assets."
+title: "Breaking change: .NET tool packaging might create RuntimeIdentifier-specific tool packages"
+description: "Learn about the breaking change in the .NET 10 SDK where .NET tool packaging might use RuntimeIdentifiers to create platform-specific tools"
 ms.date: 08/11/2025
 ai-usage: ai-assisted
 ms.custom: https://github.com/dotnet/docs/issues/47916
 ---
 
-# .NET tool packaging invokes Publish instead of Build
+# .NET tool packaging creates RuntimeIdentifier-specific tool packages
 
-The .NET tool packaging process changed from invoking the MSBuild `Build` target to the `Publish` target (logically, not precisely). This means that assets that are included in `Publish` but not in `Build`, like WebSDK StaticWebAssets, now appear in tool packages by default. If you explicitly copied those files into place, you might begin to receive build diagnostics warning of duplicate copies.
+The .NET tool packaging process has changed when `RuntimeIdentifiers` are present in the project.
+Since the SDK now supports creating [platform-specific tools](https://github.com/dotnet/core/blob/main/release-notes/10.0/preview/preview6/sdk.md#platform-specific-net-tools), `RuntimeIdentifiers` are used to determine the set of platforms for which to create tool packages.
 
 ## Version introduced
 
@@ -16,11 +17,11 @@ The .NET tool packaging process changed from invoking the MSBuild `Build` target
 
 ## Previous behavior
 
-Previously when you ran `dotnet pack` on a project with `PackAsTool` set to `true`, it invoked the `Build` target, and only `Build`-created assets were included in the package.
+Previously when you ran `dotnet pack` on a project with `PackAsTool` set to `true`, it ignored any `RuntimeIdentifiers`.
 
 ## New behavior
 
-Starting in .NET 10, the tool packaging process invokes the `Publish` target, which means `Publish`-created assets are included in the package. This includes StaticWebAssets and minified and trimmed application assets.
+Starting in .NET 10, `RuntimeIdentifiers` are used to determine the set of platforms for which to create tool packages.
 
 ## Type of breaking change
 
@@ -36,7 +37,7 @@ This change enables the creation of optimized, platform-specific .NET Tool packa
 
 ## Recommended action
 
-If your project is impacted, remove any explicit file copy customizations.
+If you want to create tools for only a subset of platforms, use `ToolPackageRuntimeIdentifiers`. If you want to disable RID-specific tool packages entirely, you should conditionally include or exclude the `RuntimeIdentifiers` property in your project file.
 
 ## Affected APIs
 

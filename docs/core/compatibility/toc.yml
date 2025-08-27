@@ -32,7 +32,7 @@ items:
                 href: containers/10.0/default-images-use-ubuntu.md
           - name: Deployment
             items:
-              - name: NuGet packages may not be included in deps.json files if no runtime assets were included from the package
+              - name: NuGet packages with no runtime assets aren't included in deps.json
                 href: deployment/10.0/deps-json-trimmed-packages.md
           - name: Core .NET libraries
             items:
@@ -830,7 +830,7 @@ items:
                 href: core-libraries/6.0/system-drawing-common-windows-only.md
               - name: System.Security.SecurityContext is marked obsolete
                 href: core-libraries/6.0/securitycontext-obsolete.md
-              - name: Task.FromResult may return singleton
+              - name: Task.FromResult might return singleton
                 href: core-libraries/6.0/task-fromresult-returns-singleton.md
               - name: Unhandled exceptions from a BackgroundService
                 href: core-libraries/6.0/hosting-exception-handling.md

@@ -74,7 +74,7 @@ There are two support tracks for releases:
   * .NET Core 3.1 is an LTS release and was released in December 2019. It was supported for 3 years, until December 2022.
   * .NET 8 is an LTS release and was released in November, 2023. It's supported for 3 years, until November 2026.
 
-Releases alternate between LTS and STS, so it's possible for an earlier release to be supported longer than a later release.
+Releases alternate between LTS and STS.
 
 Servicing updates ship monthly and include both security and non-security (reliability, compatibility, and stability) fixes. Servicing updates are supported until the next servicing update is released. Servicing updates have runtime roll forward behavior. That means that applications default to running on the latest installed runtime servicing update.
 

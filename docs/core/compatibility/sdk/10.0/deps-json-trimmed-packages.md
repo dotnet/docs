@@ -45,3 +45,7 @@ To disable the new behavior, set the `TrimDepsJsonLibrariesWithoutAssets` MSBuil
 ## Affected APIs
 
 None.
+
+## See also
+
+- [Pruning of framework-provided package references](../../../whats-new/dotnet-10/sdk.md#pruning-of-framework-provided-package-references)

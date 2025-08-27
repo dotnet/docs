@@ -55,6 +55,42 @@ landingContent:
             url: conceptual/evaluation-libraries.md
 
   # Card
+  - title: External resources
+    linkLists:
+      - linkListType: sample
+        links:
+          - text: AI samples for .NET
+            url: https://github.com/dotnet/ai-samples
+          - text: Azure AI samples hub
+            url: https://github.com/Azure-Samples/azureai-samples
+          - text: Azure AI content understanding
+            url: https://github.com/Azure-Samples/azure-ai-content-understanding-dotnet
+          - text: Azure OpenAI samples
+            url: https://github.com/Azure-Samples/openai-dotnet-samples
+      - linkListType: concept
+        links:
+          - text: Build Agents using Model Context Protocol on Azure
+            url: /azure/developer/ai/intro-agents-mcp
+      - linkListType: tutorial
+        links:
+          - text: Generative AI for beginners
+            url: https://github.com/microsoft/Generative-AI-for-beginners-dotnet
+          - text: AI workshop
+            url: https://github.com/dotnet-presentations/ai-workshop
+          - text: Steve Sanderson's AI workshop
+            url: https://github.com/SteveSandersonMS/dotnet-ai-workshop
+          - text: MCP workshop
+            url: https://github.com/Azure-Samples/mcp-workshop-dotnet
+      - linkListType: reference
+        links:
+          - text: MCP C# SDK docs
+            url: https://modelcontextprotocol.github.io/csharp-sdk/index.html
+      - linkListType: overview
+        links:
+          - text: Community-curated AI resources for .NET
+            url: https://github.com/jmatthiesen/dotnet-ai-resources
+
+  # Card
   - title: Common tasks
     linkLists:
       - linkListType: how-to-guide
@@ -97,51 +133,3 @@ landingContent:
             url: get-started-app-chat-template.md
           - text: Develop AI agents using Azure OpenAI
             url: /training/paths/develop-ai-agents-azure-open-ai-semantic-kernel-sdk
-
-  # Card
-  - title: API reference
-    linkLists:
-      - linkListType: reference
-        links:
-          - text: ChatClientBuilder
-            url: /dotnet/api/microsoft.extensions.ai.chatclientbuilder
-          - text: IChatClient
-            url: /dotnet/api/microsoft.extensions.ai.ichatclient
-          - text: IEmbeddingGenerator
-            url: /dotnet/api/microsoft.extensions.ai.iembeddinggenerator
-
-  # Card
-  - title: Resources
-    linkLists:
-      - linkListType: sample
-        links:
-          - text: AI samples for .NET
-            url: https://github.com/dotnet/ai-samples
-          - text: Azure AI samples hub
-            url: https://github.com/Azure-Samples/azureai-samples
-          - text: Azure AI content understanding
-            url: https://github.com/Azure-Samples/azure-ai-content-understanding-dotnet
-          - text: Azure OpenAI samples
-            url: https://github.com/Azure-Samples/openai-dotnet-samples
-      - linkListType: concept
-        links:
-          - text: Build Agents using Model Context Protocol on Azure
-            url: /azure/developer/ai/intro-agents-mcp
-      - linkListType: tutorial
-        links:
-          - text: Generative AI for beginners
-            url: https://github.com/microsoft/Generative-AI-for-beginners-dotnet
-          - text: AI workshop
-            url: https://github.com/dotnet-presentations/ai-workshop
-          - text: Steve Sanderson's AI workshop
-            url: https://github.com/SteveSandersonMS/dotnet-ai-workshop
-          - text: MCP workshop
-            url: https://github.com/Azure-Samples/mcp-workshop-dotnet
-      - linkListType: reference
-        links:
-          - text: MCP C# SDK docs
-            url: https://modelcontextprotocol.github.io/csharp-sdk/index.html
-      - linkListType: overview
-        links:
-          - text: Community-curated AI resources for .NET
-            url: https://github.com/jmatthiesen/dotnet-ai-resources

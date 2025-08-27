@@ -115,20 +115,6 @@ landingContent:
             url: how-to/work-with-local-models.md
 
   # Card
-  - title: Tutorials
-    linkLists:
-      - linkListType: tutorial
-        links:
-          - text: Scale Azure OpenAI with Azure Container Apps
-            url: get-started-app-chat-scaling-with-azure-container-apps.md
-          - text: .NET enterprise chat sample using RAG
-            url: get-started-app-chat-template.md
-          - text: Implement RAG using vector search
-            url: tutorials/tutorial-ai-vector-search.md
-          - text: Evaluate a model's response
-            url: tutorials/evaluate-with-reporting.md
-
-  # Card
   - title: Training
     linkLists:
       - linkListType: tutorial
@@ -141,3 +127,17 @@ landingContent:
             url: get-started-app-chat-template.md
           - text: Develop AI agents using Azure OpenAI
             url: /training/paths/develop-ai-agents-azure-open-ai-semantic-kernel-sdk
+
+  # Card
+  - title: Tutorials
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: Scale Azure OpenAI with Azure Container Apps
+            url: get-started-app-chat-scaling-with-azure-container-apps.md
+          - text: .NET enterprise chat sample using RAG
+            url: get-started-app-chat-template.md
+          - text: Implement RAG using vector search
+            url: tutorials/tutorial-ai-vector-search.md
+          - text: Evaluate a model's response
+            url: tutorials/evaluate-with-reporting.md

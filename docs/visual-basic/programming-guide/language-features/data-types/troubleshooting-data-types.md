@@ -65,7 +65,7 @@ Note that it is not sufficient to declare `decimalRemainder` as `Decimal`. You m
 
 ## Boolean Type Does Not Convert to Numeric Type Accurately
 
-[Boolean Data Type](../../../language-reference/data-types/boolean-data-type.md) values are not stored as numbers, and the stored values are not intended to be equivalent to numbers. For compatibility with earlier versions, Visual Basic provides conversion keywords ([CType Function](../../../language-reference/functions/ctype-function.md), `CBool`, `CInt`, and so on) to convert between `Boolean` and numeric types. However, other languages sometimes perform these conversions differently, as do the .NET Framework methods.
+[Boolean Data Type](../../../language-reference/data-types/boolean-data-type.md) values are not stored as numbers, and the stored values are not intended to be equivalent to numbers. For compatibility with earlier versions, Visual Basic provides conversion keywords ([CType Operator](../../../language-reference/functions/ctype-function.md), `CBool`, `CInt`, and so on) to convert between `Boolean` and numeric types. However, other languages sometimes perform these conversions differently, as do the .NET Framework methods.
 
 You should never write code that relies on equivalent numeric values for `True` and `False`. Whenever possible, you should restrict usage of `Boolean` variables to the logical values for which they are designed. If you must mix `Boolean` and numeric values, make sure that you understand the conversion method that you select.
 
@@ -99,7 +99,7 @@ There is always a risk in using narrowing conversions, because they can fail at 
 
 The [String Data Type](../../../language-reference/data-types/string-data-type.md) participates in very few widening conversions. `String` widens only to itself and `Object`, and only `Char` and `Char()` (a `Char` array) widen to `String`. This is because `String` variables and constants can contain values that other data types cannot contain.
 
-When the type checking switch ([Option Strict Statement](../../../language-reference/statements/option-strict-statement.md)) is `On`, the compiler disallows all implicit narrowing conversions. This includes those involving `String`. Your code can still use conversion keywords such as `CStr` and [CType Function](../../../language-reference/functions/ctype-function.md), which direct the .NET Framework to attempt the conversion.
+When the type checking switch ([Option Strict Statement](../../../language-reference/statements/option-strict-statement.md)) is `On`, the compiler disallows all implicit narrowing conversions. This includes those involving `String`. Your code can still use conversion keywords such as `CStr` and [CType Operator](../../../language-reference/functions/ctype-function.md), which direct the .NET Framework to attempt the conversion.
 
 > [!NOTE]
 > The narrowing-conversion error is suppressed for conversions from the elements in a `For Each…Next` collection to the loop control variable. For more information and examples, see the "Narrowing Conversions" section in [For Each...Next Statement](../../../language-reference/statements/for-each-next-statement.md).

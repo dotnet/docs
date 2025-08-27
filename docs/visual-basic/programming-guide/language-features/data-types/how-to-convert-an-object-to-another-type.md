@@ -8,7 +8,7 @@ ms.assetid: 60cb5fc7-7ba4-4ab5-9c24-480fa12ddcdc
 ---
 # How to: Convert an Object to Another Type in Visual Basic
 
-You convert an `Object` variable to another data type by using a conversion keyword such as [CType Function](../../../language-reference/functions/ctype-function.md).  
+You convert an `Object` variable to another data type by using a conversion keyword such as [CType Operator](../../../language-reference/functions/ctype-function.md).  
   
 ## Example  
 

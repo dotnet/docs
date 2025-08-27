@@ -1,18 +1,18 @@
 ---
-description: "Learn more about: CType Function (Visual Basic)"
-title: "CType Function"
+description: "Learn more about: CType Operator (Visual Basic)"
+title: "CType Operator"
 ms.date: 07/20/2015
 f1_keywords:
   - "vb.CType"
 helpviewer_keywords:
   - "expression conversion results"
   - "explicit data type conversions [Visual Basic]"
-  - "CType function"
+  - "CType operator"
   - "conversions [Visual Basic], expression"
 ms.assetid: dd4b29e7-6fa1-428c-877e-69955420bb72
 ---
 
-# CType Function (Visual Basic)
+# CType Operator (Visual Basic)
 
 Returns the result of explicitly converting an expression to a specified data type, object, structure, class, or interface.
 
@@ -66,7 +66,7 @@ Type conversions of dynamic objects are performed by user-defined dynamic conver
 
 ## Example
 
-The following example uses the `CType` function to convert an expression to the `Single` data type.
+The following example uses the `CType` operator to convert an expression to the `Single` data type.
 
 [!code-vb[VbVbalrFunctions#24](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#24)]
 

@@ -17,7 +17,7 @@ Introduces a type conversion operation based on inheritance or implementation.
 
  `DirectCast` does not use the Visual Basic run-time helper routines for conversion, so it can provide somewhat better performance than `CType` when converting to and from data type `Object`.  
   
- You use the `DirectCast` keyword similar to the way you use the [CType Function](../functions/ctype-function.md) and the [TryCast Operator](trycast-operator.md) keyword. You supply an expression as the first argument and a type to convert it to as the second argument. `DirectCast` requires an inheritance or implementation relationship between the data types of the two arguments. This means that one type must inherit from or implement the other.  
+ You use the `DirectCast` keyword similar to the way you use the [CType Operator](../functions/ctype-function.md) and the [TryCast Operator](trycast-operator.md) keyword. You supply an expression as the first argument and a type to convert it to as the second argument. `DirectCast` requires an inheritance or implementation relationship between the data types of the two arguments. This means that one type must inherit from or implement the other.  
   
 ## Errors and Failures  
 
@@ -29,7 +29,7 @@ Introduces a type conversion operation based on inheritance or implementation.
   
 |Keyword|Data types|Argument relationship|Run-time failure|  
 |---|---|---|---|  
-|[CType Function](../functions/ctype-function.md)|Any data types|Widening or narrowing conversion must be defined between the two data types|Throws <xref:System.InvalidCastException>|  
+|[CType Operator](../functions/ctype-function.md)|Any data types|Widening or narrowing conversion must be defined between the two data types|Throws <xref:System.InvalidCastException>|  
 |`DirectCast`|Any data types|One type must inherit from or implement the other type|Throws <xref:System.InvalidCastException>|  
 |[TryCast Operator](trycast-operator.md)|Reference types only|One type must inherit from or implement the other type|Returns [Nothing](../nothing.md)|  
   

@@ -126,7 +126,7 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 
   For more information on how manifests are located, see [Install a local tool](global-tools.md#install-a-local-tool).
 
-  Starting in .NET 10, a manifest is created automatically if no tools manifest is found. You can opt out by explicitly setting `--create-manifest-if-needed=false`. This change can be a [breaking change](../compatibility/sdk/10.0/dotnet-tool-install-local-manifest.md).
+  Starting in .NET 10, a manifest is created automatically if no tools manifest is found. This change can be a [breaking change](../compatibility/sdk/10.0/dotnet-tool-install-local-manifest.md). You can opt out by passing `--create-manifest-if-needed=false`.
 
   > [!WARNING]
   > Don't run tool commands from the **Downloads** folder or any shared location. The CLI walks up the directory tree to find a tool manifest, which might cause it to use a manifest you don't expect. Always run tool commands from a trusted, project-specific directory.

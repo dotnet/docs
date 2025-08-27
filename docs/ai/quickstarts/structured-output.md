@@ -97,7 +97,7 @@ Complete the following steps to create a console app that connects to the `gpt-4
 
    :::code language="csharp" source="./snippets/structured-output/Program.cs" id="InputOutputRecord":::
 
-   (This record type is defined using [primary constructor](../../csharp/programming-guide/classes-and-structs/instance-constructors.md#primary-constructors) syntax. Primary constructors, which are available in C# 12 and later versions, combine the class definition with the parameters that are necessary to instantiate any instance of the class. The C# compiler generates public properties for the primary constructor parameters.)
+   (This record type is defined using [primary constructor](../../csharp/programming-guide/classes-and-structs/instance-constructors.md#primary-constructors) syntax. Primary constructors combine the type definition with the parameters necessary to instantiate any instance of the class. The C# compiler generates public properties for the primary constructor parameters.)
 
    Send the request using the record type as the type argument to `GetResponseAsync<T>`:
 

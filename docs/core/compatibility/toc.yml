@@ -30,6 +30,10 @@ items:
             items:
               - name: Default .NET images use Ubuntu
                 href: containers/10.0/default-images-use-ubuntu.md
+          - name: Deployment
+            items:
+              - name: NuGet packages may not be included in deps.json files if no runtime assets were included from the package
+                href: deployment/10.0/deps-json-trimmed-packages.md
           - name: Core .NET libraries
             items:
               - name: API obsoletions with non-default diagnostic IDs

@@ -39,4 +39,3 @@ HRESULT GetObjectForCCW(
 ## See also
 
 - [ICorDebugAppDomain4 Interface](icordebugappdomain4-interface.md)
-- [Debugging Interfaces](debugging-interfaces.md)

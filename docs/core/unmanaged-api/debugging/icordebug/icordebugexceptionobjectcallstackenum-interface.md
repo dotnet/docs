@@ -40,8 +40,3 @@ Provides an enumerator for call stack information that is embedded in an excepti
  **Library:** CorGuids.lib
 
  **.NET versions:** Available since .NET Framework 4.5
-
-## See also
-
-- [Debugging Interfaces](debugging-interfaces.md)
-- [Debugging](index.md)

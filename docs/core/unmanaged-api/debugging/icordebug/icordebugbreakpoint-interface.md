@@ -44,7 +44,3 @@ Represents a breakpoint in a function, or a watch point on a value.
  **Library:** CorGuids.lib
 
  **.NET versions:** Available since .NET Framework 1.0
-
-## See also
-
-- [Debugging Interfaces](debugging-interfaces.md)

@@ -57,4 +57,3 @@ HRESULT Next(
 ## See also
 
 - [ICorDebugHeapEnum Interface](icordebugheapenum-interface.md)
-- [Debugging Interfaces](debugging-interfaces.md)

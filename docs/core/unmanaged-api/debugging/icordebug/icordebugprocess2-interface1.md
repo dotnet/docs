@@ -45,7 +45,3 @@ A logical extension of the ICorDebugProcess interface, which represents a proces
  **Library:** CorGuids.lib
 
  **.NET versions:** Available since .NET Framework 2.0
-
-## See also
-
-- [Debugging Interfaces](debugging-interfaces.md)

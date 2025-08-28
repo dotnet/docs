@@ -82,4 +82,3 @@ The inclusion of the length for each heap element enables simple sorting of the 
 ## See also
 
 - [ICorDebugSymbolProvider2 Interface](icordebugsymbolprovider2-interface.md)
-- [Debugging Interfaces](debugging-interfaces.md)

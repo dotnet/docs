@@ -42,7 +42,3 @@ A subclass of ICorDebugReferenceValue that represents a reference value to which
  **Library:** CorGuids.lib
 
  **.NET versions:** Available since .NET Framework 2.0
-
-## See also
-
-- [Debugging Interfaces](debugging-interfaces.md)

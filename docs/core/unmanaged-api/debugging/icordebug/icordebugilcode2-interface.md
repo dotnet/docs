@@ -37,5 +37,3 @@ topic_type:
 ## See also
 
 - [ICorDebugILCode Interface](icordebugilcode-interface.md)
-- [Debugging Interfaces](debugging-interfaces.md)
-- [Debugging](index.md)

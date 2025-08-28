@@ -85,8 +85,4 @@ for (int i = 0; i < celtFetched; i++)
  **Library:** CorGuids.lib
 
  **.NET versions:** Available since .NET Framework 4.6.2
-
-## See also
-
-- [Debugging Interfaces](debugging-interfaces.md)
 - [ICorDebugVariableHomeEnum Interface](icordebugvariablehomeenum-interface.md)

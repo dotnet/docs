@@ -51,4 +51,3 @@ HRESULT GetMethodParameterSymbols(
 
 - [GetMethodLocalSymbols Method](icordebugsymbolprovider-getmethodlocalsymbols-method.md)
 - [ICorDebugSymbolProvider Interface](icordebugsymbolprovider-interface.md)
-- [Debugging Interfaces](debugging-interfaces.md)

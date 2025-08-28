@@ -55,4 +55,3 @@ HRESULT Next(
 ## See also
 
 - [ICorDebugHeapSegmentEnum Interface](icordebugheapsegmentenum-interface.md)
-- [Debugging Interfaces](debugging-interfaces.md)

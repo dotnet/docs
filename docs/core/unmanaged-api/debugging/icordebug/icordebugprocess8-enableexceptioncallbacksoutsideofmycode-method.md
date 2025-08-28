@@ -47,4 +47,3 @@ HRESULT EnableExceptionCallbacksOutsideOfMyCode(
 ## See also
 
 - [ICorDebugProcess8 Interface](icordebugprocess8-interface.md)
-- [Debugging Interfaces](debugging-interfaces.md)

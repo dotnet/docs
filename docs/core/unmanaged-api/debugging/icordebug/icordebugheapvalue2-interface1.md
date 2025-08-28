@@ -39,7 +39,3 @@ An extension of ICorDebugHeapValue that provides support for common language run
  **Library:** CorGuids.lib
 
  **.NET versions:** Available since .NET Framework 2.0
-
-## See also
-
-- [Debugging Interfaces](debugging-interfaces.md)

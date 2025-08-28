@@ -52,4 +52,3 @@ HRESULT EnumerateExceptionCallStack(
 ## See also
 
 - [ICorDebugExceptionObjectValue Interface](icordebugexceptionobjectvalue-interface.md)
-- [Debugging Interfaces](debugging-interfaces.md)

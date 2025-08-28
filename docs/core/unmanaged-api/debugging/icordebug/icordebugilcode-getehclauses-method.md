@@ -57,4 +57,3 @@ HRESULT GetEHClauses(
 
 - [ICorDebugILCode Interface](icordebugilcode-interface.md)
 - [CorDebugEHClause Structure](cordebugehclause-structure.md)
-- [Debugging Interfaces](debugging-interfaces.md)

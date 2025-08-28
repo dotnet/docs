@@ -59,5 +59,3 @@ HRESULT GetBlockingObjects (
 ## See also
 
 - [ICorDebugThread4 Interface](icordebugthread4-interface.md)
-- [Debugging Interfaces](debugging-interfaces.md)
-- [Debugging](index.md)

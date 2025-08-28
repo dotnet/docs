@@ -49,4 +49,3 @@ HRESULT GetCachedInterfaceTypes(
 ## See also
 
 - [ICorDebugComObjectValue Interface](icordebugcomobjectvalue-interface.md)
-- [Debugging Interfaces](debugging-interfaces.md)

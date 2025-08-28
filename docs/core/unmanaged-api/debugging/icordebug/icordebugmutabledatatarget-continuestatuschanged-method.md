@@ -21,7 +21,7 @@ HRESULT ContinueStatusChanged(
  The operating system-defined thread identifier.
 
  `continueStatus`
- A [COREDB_CONTINUE_STATUS](../common-data-types-unmanaged-api-reference.md) value that represents the new requested continuation status.
+ A [COREDB_CONTINUE_STATUS](../../../../framework/unmanaged-api/common-data-types-unmanaged-api-reference.md) value that represents the new requested continuation status.
 
 ## Remarks
 
@@ -40,4 +40,3 @@ HRESULT ContinueStatusChanged(
 ## See also
 
 - [ICorDebugMutableDataTarget Interface](icordebugmutabledatatarget-interface.md)
-- [Debugging Interfaces](debugging-interfaces.md)

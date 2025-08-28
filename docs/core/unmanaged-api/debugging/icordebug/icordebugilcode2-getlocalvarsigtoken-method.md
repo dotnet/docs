@@ -47,4 +47,3 @@ HRESULT GetLocalVarSigToken(
 ## See also
 
 - [ICorDebugILCode2 Interface](icordebugilcode2-interface.md)
-- [Debugging Interfaces](debugging-interfaces.md)

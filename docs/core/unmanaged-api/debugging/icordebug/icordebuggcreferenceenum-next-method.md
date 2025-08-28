@@ -55,4 +55,3 @@ HRESULT Next(
 ## See also
 
 - [ICorDebugGCReferenceEnum Interface](icordebuggcreferenceenum-interface.md)
-- [Debugging Interfaces](debugging-interfaces.md)

@@ -46,7 +46,3 @@ A subclass of "ICorDebugValue" that applies to all values. This interface provid
  **Library:** CorGuids.lib
 
  **.NET versions:** Available since .NET Framework 1.0
-
-## See also
-
-- [Debugging Interfaces](debugging-interfaces.md)

@@ -45,4 +45,4 @@ HRESULT GetToken (
 
 ## See also
 
-- [Metadata Interfaces](../metadata/metadata-interfaces.md)
+- [Metadata Interfaces](../../metadata/metadata-interfaces.md)

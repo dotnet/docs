@@ -40,8 +40,3 @@ This interface lives inside the runtime and isn't exposed through any headers or
 **Library:** None
 
 **.NET versions:** Available since .NET Framework 4.5
-
-## See also
-
-- [Debugging Interfaces](debugging-interfaces.md)
-- [Debugging](index.md)

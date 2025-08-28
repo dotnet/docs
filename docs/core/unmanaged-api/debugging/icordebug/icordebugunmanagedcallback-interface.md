@@ -39,7 +39,3 @@ Provides notification of native events that are not directly related to the comm
  **Library:** CorGuids.lib
 
  **.NET versions:** Available since .NET Framework 1.0
-
-## See also
-
-- [Debugging Interfaces](debugging-interfaces.md)

@@ -51,5 +51,3 @@ The provided method is part of the `ICorDebugProcess4` interface and corresponds
 ## See also
 
 - [ICorDebugProcess4 Interface](icordebugprocess4-interface.md)
-- [Debugging Interfaces](debugging-interfaces.md)
-- [Debugging](index.md)

@@ -65,8 +65,3 @@ HRESULT GetMonitorEventWaitList (
  **Library:** CorGuids.lib
 
  **.NET versions:** Available since .NET Framework 4.0
-
-## See also
-
-- [Debugging Interfaces](debugging-interfaces.md)
-- [Debugging](index.md)

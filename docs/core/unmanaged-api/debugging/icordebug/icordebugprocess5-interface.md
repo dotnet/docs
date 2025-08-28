@@ -52,8 +52,3 @@ Extends the ICorDebugProcess interface to support access to the managed heap, to
  **Library:** CorGuids.lib
 
  **.NET versions:** Available since .NET Framework 4.5
-
-## See also
-
-- [Debugging Interfaces](debugging-interfaces.md)
-- [Debugging](index.md)

@@ -40,7 +40,3 @@ Extends the ICorDebugBreakpoint interface to support breakpoints within function
  **Library:** CorGuids.lib
 
  **.NET versions:** Available since .NET Framework 1.0
-
-## See also
-
-- [Debugging Interfaces](debugging-interfaces.md)

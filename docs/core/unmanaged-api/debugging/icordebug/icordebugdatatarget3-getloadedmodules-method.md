@@ -46,4 +46,3 @@ HRESULT GetLoadedModules(
 ## See also
 
 - [ICorDebugDataTarget3 Interface](icordebugdatatarget3-interface.md)
-- [Debugging Interfaces](debugging-interfaces.md)

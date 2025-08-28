@@ -42,7 +42,3 @@ Provides an enumerator for the memory regions of the managed heap. This interfac
  **Library:** CorGuids.lib
 
  **.NET versions:** Available since .NET Framework 4.5
-
-## See also
-
-- [Debugging Interfaces](debugging-interfaces.md)

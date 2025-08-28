@@ -69,6 +69,6 @@ HRESULT MDANotification(
 
 ## See also
 
-- [Diagnosing Errors with Managed Debugging Assistants](../../debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)
+- [Diagnose Errors with Managed Debugging Assistants](../../../../framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)
 - [ICorDebugManagedCallback2 Interface](icordebugmanagedcallback2-interface.md)
 - [ICorDebugManagedCallback Interface](icordebugmanagedcallback-interface.md)

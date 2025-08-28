@@ -19,7 +19,3 @@ topic_type:
 # ICorDebugEditAndContinueSnapshot::GetRwDataRVA Method
 
 `GetRwDataRVA` is obsolete. Do not call this method.
-
-## See also
-
-- [Debugging Interfaces](debugging-interfaces.md)

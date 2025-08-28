@@ -58,4 +58,3 @@ interface ICorDebugModule4 : IUnknown
 - [ICorDebugRemoteTarget Interface](icordebugremotetarget-interface.md)
 - [ICorDebug Interface](icordebug-interface.md)
 
-- [Debugging Interfaces](debugging-interfaces.md)

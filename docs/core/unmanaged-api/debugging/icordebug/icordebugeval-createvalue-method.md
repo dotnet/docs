@@ -34,13 +34,13 @@ HRESULT CreateValue (
 
 ## Parameters
 
- `elementType`
- [in] A value of the [CorElementType](../metadata/corelementtype-enumeration.md) enumeration that specifies the type of the value.
+ `elementType`\
+ [in] A value of the [CorElementType](../../../../framework/unmanaged-api/metadata/corelementtype-enumeration.md) enumeration that specifies the type of the value.
 
- `pElementClass`
+ `pElementClass`\
  [in] Pointer to an [ICorDebugClass](icordebugclass-interface.md) object that specifies the class of the value, if the type is not a primitive type.
 
- `ppValue`
+ `ppValue`\
  [out] Pointer to the address of an "ICorDebugValue" object that represents the value.
 
 ## Remarks

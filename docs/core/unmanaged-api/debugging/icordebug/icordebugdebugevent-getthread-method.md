@@ -38,4 +38,3 @@ HRESULT GetThread(
 ## See also
 
 - [ICorDebugDebugEvent Interface](icordebugdebugevent-interface.md)
-- [Debugging Interfaces](debugging-interfaces.md)

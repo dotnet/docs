@@ -57,5 +57,4 @@ HRESULT GetLocalVariableEx(
 ## See also
 
 - [ICorDebugILFrame4 Interface](icordebugilframe4-interface.md)
-- [Debugging Interfaces](debugging-interfaces.md)
 - [ReJIT: A How-To Guide](/archive/blogs/davbr/rejit-a-how-to-guide)

@@ -34,8 +34,3 @@ Provides a method that enumerates ranges of native memory that are used by the .
  **Library:** CorGuids.lib
 
  **.NET Versions:** Available since .NET Core 5.0
-
-## See also
-
-- [Debugging Interfaces](debugging-interfaces.md)
-- [Debugging](index.md)

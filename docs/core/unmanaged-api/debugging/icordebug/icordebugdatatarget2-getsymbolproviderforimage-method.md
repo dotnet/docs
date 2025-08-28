@@ -19,7 +19,7 @@ HRESULT GetSymbolProviderForImage(
 ## Parameters
 
  `imageBaseAddress`
- [in] A [CORDB_ADDRESS](../common-data-types-unmanaged-api-reference.md) value that represents the base address of a module.
+ [in] A [CORDB_ADDRESS](../../../../framework/unmanaged-api/common-data-types-unmanaged-api-reference.md) value that represents the base address of a module.
 
  `ppSymProvider`
  [out] A pointer to the address of an [ICorDebugSymbolProvider](icordebugsymbolprovider-interface.md) object.
@@ -42,4 +42,3 @@ HRESULT GetSymbolProviderForImage(
 ## See also
 
 - [ICorDebugDataTarget2 Interface](icordebugdatatarget2-interface.md)
-- [Debugging Interfaces](debugging-interfaces.md)

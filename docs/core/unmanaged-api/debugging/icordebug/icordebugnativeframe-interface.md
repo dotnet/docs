@@ -47,7 +47,3 @@ A specialized implementation of ICorDebugFrame used for native frames.
  **Library:** CorGuids.lib
 
  **.NET versions:** Available since .NET Framework 1.0
-
-## See also
-
-- [Debugging Interfaces](debugging-interfaces.md)

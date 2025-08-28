@@ -56,8 +56,3 @@ HRESULT EnumerateHandles(     [in] CorGCReferenceType types,
  **Library:** CorGuids.lib
 
  **.NET versions:** Available since .NET Framework 4.5
-
-## See also
-
-- [Debugging Structures](debugging-structures.md)
-- [Debugging](index.md)

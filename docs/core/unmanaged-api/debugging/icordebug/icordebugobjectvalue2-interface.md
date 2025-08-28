@@ -39,7 +39,3 @@ Extends the "ICorDebugObjectValue" interface to support inheritance and override
  **Library:** CorGuids.lib
 
  **NET Framework Versions:** Available since .NET Framework 2.0
-
-## See also
-
-- [Debugging Interfaces](debugging-interfaces.md)

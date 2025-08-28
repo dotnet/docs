@@ -19,7 +19,3 @@ topic_type:
 # ICorDebugEditAndContinueErrorInfo::GetErrorCode Method
 
 `GetErrorCode` is obsolete. Do not call this method.
-
-## See also
-
-- [Debugging Interfaces](debugging-interfaces.md)

@@ -58,5 +58,3 @@ HRESULT GetFrameAddress([out] CORDB_ADDRESS *pAddress);
 ## See also
 
 - [ICorDebugInternalFrame2 Interface](icordebuginternalframe2-interface.md)
-- [Debugging Interfaces](debugging-interfaces.md)
-- [Debugging](index.md)

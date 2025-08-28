@@ -55,4 +55,3 @@ HRESULT GetInstanceFieldSymbols(
 
 - [GetStaticFieldSymbols Method](icordebugsymbolprovider-getstaticfieldsymbols-method.md)
 - [ICorDebugSymbolProvider Interface](icordebugsymbolprovider-interface.md)
-- [Debugging Interfaces](debugging-interfaces.md)

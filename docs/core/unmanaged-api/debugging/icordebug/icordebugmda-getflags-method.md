@@ -46,4 +46,4 @@ HRESULT GetFlags (
 ## See also
 
 - [ICorDebugMDA Interface](icordebugmda-interface.md)
-- [Diagnosing Errors with Managed Debugging Assistants](../../debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)
+- [Diagnose Errors with Managed Debugging Assistants](../../../../framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)

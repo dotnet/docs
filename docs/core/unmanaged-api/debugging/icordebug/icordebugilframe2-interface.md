@@ -40,7 +40,3 @@ A logical extension of the ICorDebugILFrame interface.
  **Library:** CorGuids.lib
 
  **.NET versions:** Available since .NET Framework 2.0
-
-## See also
-
-- [Debugging Interfaces](debugging-interfaces.md)

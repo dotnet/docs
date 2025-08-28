@@ -46,4 +46,3 @@ HRESULT GetName(
 ## See also
 
 - [ICorDebugVariableSymbol Interface](icordebugvariablesymbol-interface.md)
-- [Debugging Interfaces](debugging-interfaces.md)

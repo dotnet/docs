@@ -50,4 +50,3 @@ HRESULT GetGCHeapInformation(
 ## See also
 
 - [ICorDebugProcess5 Interface](icordebugprocess5-interface.md)
-- [Debugging Interfaces](debugging-interfaces.md)

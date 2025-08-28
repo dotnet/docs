@@ -24,9 +24,9 @@ Provides methods that allow developers to debug applications in the common langu
 
 ## Methods
 
-|Method|Description|
-|------------|-----------------|
-|[CanLaunchOrAttach Method](icordebug-canlaunchorattach-method.md)|Determines whether launching a new process or attaching to the given process is possible within the context of the current machine and runtime configuration.|
+| Method                                                            | Description |
+|-------------------------------------------------------------------|-------------|
+| [CanLaunchOrAttach Method](icordebug-canlaunchorattach-method.md) | Determines whether launching a new process or attaching to the given process is possible within the context of the current machine and runtime configuration. |
 |[CreateProcess Method](icordebug-createprocess-method.md)|Launches a process and its primary thread under the control of the debugger.|
 |[DebugActiveProcess Method](icordebug-debugactiveprocess-method.md)|Attaches the debugger to an existing process.|
 |[EnumerateProcesses Method](icordebug-enumerateprocesses-method.md)|Gets an enumerator for the processes that are being debugged.|
@@ -40,7 +40,7 @@ Provides methods that allow developers to debug applications in the common langu
 
  `ICorDebug` represents an event processing loop for a debugger process. The debugger must wait for the [ICorDebugManagedCallback::ExitProcess](icordebugmanagedcallback-exitprocess-method.md) callback from all processes being debugged before releasing this interface.
 
- The `ICorDebug` object must be created by the [CreateDebuggingInterfaceFromVersion](../hosting/createdebugginginterfacefromversion-function.md) function, which allows clients to get a specific implementation of `ICorDebug` that emulates a specific version of the debugging API.
+ The `ICorDebug` object must be created by the [CreateDebuggingInterfaceFromVersion function](../createdebugginginterfacefromversion-function.md) function, which allows clients to get a specific implementation of `ICorDebug` that emulates a specific version of the debugging API.
 
 > [!NOTE]
 > This interface does not support being called remotely, either cross-machine or cross-process.
@@ -54,7 +54,3 @@ Provides methods that allow developers to debug applications in the common langu
  **Library:** CorGuids.lib
 
  **.NET versions:** Available since .NET Framework 1.0
-
-## See also
-
-- [Debugging Interfaces](debugging-interfaces.md)

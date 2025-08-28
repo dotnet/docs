@@ -36,7 +36,7 @@ interface ICorDebugModule3 : IUnknown
 
 |Method|Description|
 |------------|-----------------|
-|[ICorDebugModule3::CreateReaderForInMemorySymbols Method](icordebugmodule3-createreaderforinmemorysymbols-method.md)|Creates a symbol reader (typically [ISymUnmanagedReader Interface](../diagnostics/isymunmanagedreader-interface.md)) for a dynamic module.|
+|[ICorDebugModule3::CreateReaderForInMemorySymbols Method](icordebugmodule3-createreaderforinmemorysymbols-method.md)|Creates a symbol reader (typically [ISymUnmanagedReader Interface](../../../../framework/unmanaged-api/diagnostics/isymunmanagedreader-interface.md)) for a dynamic module.|
 
 ## Remarks
 
@@ -60,4 +60,3 @@ interface ICorDebugModule3 : IUnknown
 - [ICorDebugRemoteTarget Interface](icordebugremotetarget-interface.md)
 - [ICorDebug Interface](icordebug-interface.md)
 
-- [Debugging Interfaces](debugging-interfaces.md)

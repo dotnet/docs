@@ -46,4 +46,3 @@ HRESULT GetFrameProps(
 ## See also
 
 - [ICorDebugSymbolProvider2 Interface](icordebugsymbolprovider2-interface.md)
-- [Debugging Interfaces](debugging-interfaces.md)

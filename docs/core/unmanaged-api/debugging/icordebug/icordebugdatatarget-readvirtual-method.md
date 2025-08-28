@@ -62,5 +62,3 @@ HRESULT ReadVirtual(
 ## See also
 
 - [ICorDebugDataTarget Interface](icordebugdatatarget-interface.md)
-- [Debugging Interfaces](debugging-interfaces.md)
-- [Debugging](index.md)

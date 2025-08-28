@@ -46,4 +46,3 @@ HRESULT GetAssemblyImageBytes(
 ## See also
 
 - [ICorDebugSymbolProvider Interface](icordebugsymbolprovider-interface.md)
-- [Debugging Interfaces](debugging-interfaces.md)

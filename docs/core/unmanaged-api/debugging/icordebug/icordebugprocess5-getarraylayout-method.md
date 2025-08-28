@@ -49,4 +49,3 @@ HRESULT GetArrayLayout(    [in] COR_TYPEID id,     [out] COR_ARRAY_LAYOUT *pLayo
 ## See also
 
 - [ICorDebugProcess5 Interface](icordebugprocess5-interface.md)
-- [Debugging Interfaces](debugging-interfaces.md)

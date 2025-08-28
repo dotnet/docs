@@ -64,5 +64,3 @@ HRESULT CustomNotification(ICorDebugThread *    pThread,
 ## See also
 
 - [ICorDebugManagedCallback3 Interface](icordebugmanagedcallback3-interface.md)
-- [Debugging Interfaces](debugging-interfaces.md)
-- [Debugging](index.md)

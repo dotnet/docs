@@ -43,4 +43,3 @@ HRESULT Next();
 ## See also
 
 - [ICorDebugMemoryBuffer Interface](icordebugmemorybuffer-interface.md)
-- [Debugging Interfaces](debugging-interfaces.md)

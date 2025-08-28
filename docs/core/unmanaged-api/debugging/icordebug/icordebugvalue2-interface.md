@@ -40,8 +40,4 @@ Extends the "ICorDebugValue" interface to provide support for "ICorDebugType" ob
 
  **.NET versions:** Available since .NET Framework 2.0
 
-## See also
-
-- [Debugging Interfaces](debugging-interfaces.md)
-
 - [ICorDebugValue3 Interface](icordebugvalue3-interface.md)

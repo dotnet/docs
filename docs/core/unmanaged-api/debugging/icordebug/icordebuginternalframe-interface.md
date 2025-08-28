@@ -39,7 +39,3 @@ Represents a runtime-internal frame on the stack. This interface is a subclass o
  **Library:** CorGuids.lib
 
  **.NET versions:** Available since .NET Framework 2.0
-
-## See also
-
-- [Debugging Interfaces](debugging-interfaces.md)

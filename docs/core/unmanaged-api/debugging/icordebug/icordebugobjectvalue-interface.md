@@ -47,7 +47,3 @@ A subclass of "ICorDebugValue" that represents a value that contains an object.
  **Library:** CorGuids.lib
 
  **.NET versions:** Available since .NET Framework 1.0
-
-## See also
-
-- [Debugging Interfaces](debugging-interfaces.md)

@@ -56,7 +56,7 @@ HRESULT GetMetaData(
  `wszPathBuffer`
  [out] Pointer to a buffer into which the debugger will copy the full path of the file that contains the requested metadata.
 
- The `ofReadOnly` flag from the [CorOpenFlags](../../../core/unmanaged-api/metadata/enumerations/coropenflags-enumeration.md) enumeration is used to request read-only access to the metadata in this file.
+ The `ofReadOnly` flag from the [CorOpenFlags](../../metadata/enumerations/coropenflags-enumeration.md) enumeration is used to request read-only access to the metadata in this file.
 
 ## Return Value
 
@@ -84,5 +84,3 @@ HRESULT GetMetaData(
 ## See also
 
 - [ICorDebugThread4 Interface](icordebugthread4-interface.md)
-- [Debugging Interfaces](debugging-interfaces.md)
-- [Debugging](index.md)

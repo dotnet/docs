@@ -54,5 +54,3 @@ HRESULT SetEnableCustomNotification(ICorDebugClass * pClass,
 ## See also
 
 - [ICorDebugProcess3 Interface](icordebugprocess3-interface.md)
-- [Debugging Interfaces](debugging-interfaces.md)
-- [Debugging](index.md)

@@ -32,8 +32,3 @@ Provides support for unmanaged methods that require the common language runtime 
  **Library:** CorGuids.lib
 
  **.NET versions:** Available since .NET Framework 4.0
-
-## See also
-
-- [Debugging Interfaces](debugging-interfaces.md)
-- [Debugging](index.md)

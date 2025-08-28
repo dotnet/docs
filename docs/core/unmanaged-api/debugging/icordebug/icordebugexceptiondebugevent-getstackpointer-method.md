@@ -49,4 +49,3 @@ HRESULT GetStackPointer(
 ## See also
 
 - [ICorDebugExceptionDebugEvent Interface](icordebugexceptiondebugevent-interface.md)
-- [Debugging Interfaces](debugging-interfaces.md)

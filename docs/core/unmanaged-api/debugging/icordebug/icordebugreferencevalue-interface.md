@@ -47,7 +47,3 @@ Provides methods that manage a value that is a reference to an object. (That is,
  **Library:** CorGuids.lib
 
  **.NET versions:** Available since .NET Framework 1.0
-
-## See also
-
-- [Debugging Interfaces](debugging-interfaces.md)

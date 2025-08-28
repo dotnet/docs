@@ -43,4 +43,3 @@ Provides the `Next` method, which returns a specified number of `ICorDebugAppDom
 ## See also
 
 - [ICorDebug Interface](icordebug-interface.md)
-- [Debugging Interfaces](debugging-interfaces.md)

@@ -39,7 +39,3 @@ Represents an assembly. This interface is an extension of the ICorDebugAssembly 
  **Library:** CorGuids.lib
 
  **.NET versions:** Available since .NET Framework 2.0
-
-## See also
-
-- [Debugging Interfaces](debugging-interfaces.md)

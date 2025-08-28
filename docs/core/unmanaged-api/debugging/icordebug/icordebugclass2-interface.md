@@ -44,4 +44,3 @@ Represents a generic class or a class with a method parameter of type <xref:Syst
 ## See also
 
 - [ICorDebugClass Interface](icordebugclass-interface.md)
-- [Debugging Interfaces](debugging-interfaces.md)

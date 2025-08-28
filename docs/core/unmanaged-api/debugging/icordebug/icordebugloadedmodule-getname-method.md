@@ -47,4 +47,3 @@ HRESULT GetName(
 ## See also
 
 - [ICorDebugLoadedModule Interface](icordebugloadedmodule-interface.md)
-- [Debugging Interfaces](debugging-interfaces.md)

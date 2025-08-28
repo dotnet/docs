@@ -18,7 +18,3 @@ topic_type:
 # ICorDebugEditAndContinueErrorInfo Interface
 
 `ICorDebugEditAndContinueErrorInfo` is obsolete. Do not use this interface.
-
-## See also
-
-- [Debugging Interfaces](debugging-interfaces.md)

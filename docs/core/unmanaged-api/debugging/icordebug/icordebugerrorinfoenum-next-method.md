@@ -19,7 +19,3 @@ topic_type:
 # ICorDebugErrorInfoEnum::Next Method
 
 `ICorDebugErrorInfoEnum::Next` is obsolete. Do not call this method.
-
-## See also
-
-- [Debugging Interfaces](debugging-interfaces.md)

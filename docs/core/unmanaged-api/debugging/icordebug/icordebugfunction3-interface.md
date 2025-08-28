@@ -34,9 +34,4 @@ topic_type:
  **Library:** CorGuids.lib
 
  **.NET versions:** Available since .NET Framework 4.5.2
-
-## See also
-
-- [Debugging Interfaces](debugging-interfaces.md)
-- [Debugging](index.md)
 - [ReJIT: A How-To Guide](/archive/blogs/davbr/rejit-a-how-to-guide)

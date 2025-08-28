@@ -49,7 +49,3 @@ Represents a stack frame of common intermediate language (CIL) code. This interf
  **Library:** CorGuids.lib
 
  **.NET versions:** Available since .NET Framework 1.0
-
-## See also
-
-- [Debugging Interfaces](debugging-interfaces.md)

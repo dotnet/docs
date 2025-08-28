@@ -41,8 +41,4 @@ Extends the capabilities of the [ICorDebugRegisterSet](icordebugregisterset-inte
  **Library:** CorGuids.lib
 
  **.NET versions:** Available since .NET Framework 2.0
-
-## See also
-
-- [Debugging Interfaces](debugging-interfaces.md)
 - [ICorDebugRegisterSet Interface](icordebugregisterset-interface.md)

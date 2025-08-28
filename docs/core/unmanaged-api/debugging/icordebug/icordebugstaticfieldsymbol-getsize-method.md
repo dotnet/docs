@@ -38,4 +38,3 @@ HRESULT GetSize(
 ## See also
 
 - [ICorDebugStaticFieldSymbol Interface](icordebugstaticfieldsymbol-interface.md)
-- [Debugging Interfaces](debugging-interfaces.md)

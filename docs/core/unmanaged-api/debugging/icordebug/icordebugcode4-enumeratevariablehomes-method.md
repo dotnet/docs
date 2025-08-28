@@ -50,4 +50,3 @@ HRESULT EnumerateVariableHomes(
 ## See also
 
 - [ICorDebugCode4 Interface](icordebugcode4-interface.md)
-- [Debugging Interfaces](debugging-interfaces.md)

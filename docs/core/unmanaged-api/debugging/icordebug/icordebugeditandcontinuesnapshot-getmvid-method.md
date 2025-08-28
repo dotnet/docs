@@ -19,7 +19,3 @@ topic_type:
 # ICorDebugEditAndContinueSnapshot::GetMvid Method
 
 `GetMvid` is obsolete. Do not call this method.
-
-## See also
-
-- [Debugging Interfaces](debugging-interfaces.md)

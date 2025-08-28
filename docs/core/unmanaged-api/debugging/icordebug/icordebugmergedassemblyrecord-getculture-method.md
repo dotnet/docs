@@ -48,4 +48,3 @@ HRESULT GetCulture(
 ## See also
 
 - [ICorDebugMergedAssemblyRecord Interface](icordebugmergedassemblyrecord-interface.md)
-- [Debugging Interfaces](debugging-interfaces.md)

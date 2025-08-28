@@ -61,5 +61,3 @@ HRESULT GetStackParameterSize([out] ULONG32 * pSize)
 ## See also
 
 - [ICorDebugNativeFrame2 Interface](icordebugnativeframe2-interface.md)
-- [Debugging Interfaces](debugging-interfaces.md)
-- [Debugging](index.md)

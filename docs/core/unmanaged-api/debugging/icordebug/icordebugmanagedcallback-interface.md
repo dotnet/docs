@@ -75,4 +75,3 @@ Provides methods to process debugger callbacks.
 
 - [ICorDebug Interface](icordebug-interface.md)
 - [ICorDebugManagedCallback2 Interface](icordebugmanagedcallback2-interface.md)
-- [Debugging Interfaces](debugging-interfaces.md)

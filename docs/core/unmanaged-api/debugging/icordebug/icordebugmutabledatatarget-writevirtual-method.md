@@ -48,4 +48,3 @@ HRESULT WriteVirtual(
 ## See also
 
 - [ICorDebugMutableDataTarget Interface](icordebugmutabledatatarget-interface.md)
-- [Debugging Interfaces](debugging-interfaces.md)

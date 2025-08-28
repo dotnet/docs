@@ -20,10 +20,10 @@ HRESULT GetImageFromPointer(
 ## Parameters
 
  `addr`
- A [CORDB_ADDRESS](../common-data-types-unmanaged-api-reference.md) value that represents an address in a module.
+ A [CORDB_ADDRESS](../../../../framework/unmanaged-api/common-data-types-unmanaged-api-reference.md) value that represents an address in a module.
 
  `pImageBase`
- [out] A [CORDB_ADDRESS](../common-data-types-unmanaged-api-reference.md) value that represents the module's base address.
+ [out] A [CORDB_ADDRESS](../../../../framework/unmanaged-api/common-data-types-unmanaged-api-reference.md) value that represents the module's base address.
 
  `pSize`
  A pointer to the module size.
@@ -46,4 +46,3 @@ HRESULT GetImageFromPointer(
 ## See also
 
 - [ICorDebugDataTarget2 Interface](icordebugdatatarget2-interface.md)
-- [Debugging Interfaces](debugging-interfaces.md)

@@ -34,8 +34,3 @@ Defines the base interface from which all `ICorDebug` debug events derive.
  **Library:** CorGuids.lib
 
  **.NET versions:** Available since .NET Framework 4.6
-
-## See also
-
-- [Debugging Interfaces](debugging-interfaces.md)
-- [Debugging](index.md)

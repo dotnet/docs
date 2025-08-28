@@ -20,7 +20,7 @@ HRESULT GetImageLocation(    [in] CORDB_ADDRESS baseAddress,
 ## Parameters
 
  `baseAddress`
- [in] A [CORDB_ADDRESS](../common-data-types-unmanaged-api-reference.md) value that represents the module's base address.
+ [in] A [CORDB_ADDRESS](../../../../framework/unmanaged-api/common-data-types-unmanaged-api-reference.md) value that represents the module's base address.
 
  `cchName`
  [in] The number of characters in the buffer that is to receive the module path.
@@ -49,4 +49,3 @@ HRESULT GetImageLocation(    [in] CORDB_ADDRESS baseAddress,
 ## See also
 
 - [ICorDebugDataTarget2 Interface](icordebugdatatarget2-interface.md)
-- [Debugging Interfaces](debugging-interfaces.md)

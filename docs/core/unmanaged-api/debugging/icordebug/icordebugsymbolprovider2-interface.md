@@ -32,5 +32,3 @@ Logically extends the [ICorDebugSymbolProvider](icordebugsymbolprovider-interfac
 ## See also
 
 - [ICorDebugSymbolProvider Interface](icordebugsymbolprovider-interface.md)
-- [Debugging Interfaces](debugging-interfaces.md)
-- [Debugging](index.md)

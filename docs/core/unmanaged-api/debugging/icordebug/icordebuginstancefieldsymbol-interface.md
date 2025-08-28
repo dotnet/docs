@@ -35,5 +35,3 @@ Represents the debug symbol information for an instance field.
 ## See also
 
 - [ICorDebugStaticFieldSymbol Interface](icordebugstaticfieldsymbol-interface.md)
-- [Debugging Interfaces](debugging-interfaces.md)
-- [Debugging](index.md)

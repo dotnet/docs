@@ -31,7 +31,7 @@ HRESULT CreateReaderForInMemorySymbols (
 ## Parameters
 
  riid
- [in] The IID of the COM interface to return. Typically, this is an [ISymUnmanagedReader Interface](../diagnostics/isymunmanagedreader-interface.md).
+ [in] The IID of the COM interface to return. Typically, this is an [ISymUnmanagedReader Interface](../../../../framework/unmanaged-api/diagnostics/isymunmanagedreader-interface.md).
 
  ppObj
  [out] Pointer to a pointer to the returned interface.
@@ -73,4 +73,3 @@ HRESULT CreateReaderForInMemorySymbols (
 - [ICorDebugRemoteTarget Interface](icordebugremotetarget-interface.md)
 - [ICorDebug Interface](icordebug-interface.md)
 
-- [Debugging Interfaces](debugging-interfaces.md)

@@ -44,7 +44,7 @@ HRESULT LogSwitch (
  [in] A value that indicates the severity level of the descriptive message that was written to the event log.
 
  `ulReason`
- [in] A value of the [LogSwitchCallReason](logswitchcallreason-enumeration.md) enumeration that indicates the operation performed on the debugging/tracing switch.
+ [in] A value of the [LogSwitchCallReason](../../../../framework/unmanaged-api/debugging/logswitchcallreason-enumeration.md) enumeration that indicates the operation performed on the debugging/tracing switch.
 
  `pLogSwitchName`
  [in] A pointer to the name of the debugging/tracing switch.

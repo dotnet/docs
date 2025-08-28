@@ -51,5 +51,3 @@ The value of `ppNotificationObject` is null if the method is not called from wit
 ## See also
 
 - [ICorDebugThread4 Interface](icordebugthread4-interface.md)
-- [Debugging Interfaces](debugging-interfaces.md)
-- [Debugging](index.md)

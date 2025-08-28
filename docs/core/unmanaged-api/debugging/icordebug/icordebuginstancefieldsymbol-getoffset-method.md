@@ -38,4 +38,3 @@ HRESULT GetOffset(
 ## See also
 
 - [ICorDebugInstanceFieldSymbol Interface](icordebuginstancefieldsymbol-interface.md)
-- [Debugging Interfaces](debugging-interfaces.md)

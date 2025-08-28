@@ -52,4 +52,3 @@ HRESULT GetSize64(
 ## See also
 
 - [ICorDebugValue3 Interface](icordebugvalue3-interface.md)
-- [Debugging Interfaces](debugging-interfaces.md)

@@ -29,8 +29,8 @@ HRESULT SetWriteableMetadataUpdateMode(
 
 ## Parameters
 
- `flags`
- A [WriteableMetadataUpdateMode](writeablemetadataupdatemode-enumeration.md) enumeration value that specifies whether in-memory updates to metadata in the target process are visible (`WriteableMetadataUpdateMode::AlwaysShowUpdates`) or not visible (`WriteableMetadataUpdateMode::LegacyCompatPolicy`) to the debugger.
+ `flags`\
+ A [WriteableMetadataUpdateMode](../../../../framework/unmanaged-api/debugging/writeablemetadataupdatemode-enumeration.md) enumeration value that specifies whether in-memory updates to metadata in the target process are visible (`WriteableMetadataUpdateMode::AlwaysShowUpdates`) or not visible (`WriteableMetadataUpdateMode::LegacyCompatPolicy`) to the debugger.
 
 ## Remarks
 
@@ -49,4 +49,3 @@ HRESULT SetWriteableMetadataUpdateMode(
 ## See also
 
 - [ICorDebugProcess7 Interface](icordebugprocess7-interface.md)
-- [Debugging Interfaces](debugging-interfaces.md)

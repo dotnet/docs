@@ -38,8 +38,3 @@ Extends the "ICorDebugValue" and "ICorDebugValue2" interfaces to provide support
  **Library:** CorGuids.lib
 
  **.NET versions:** Available since .NET Framework 4.5
-
-## See also
-
-- [Debugging Interfaces](debugging-interfaces.md)
-- [Debugging](index.md)

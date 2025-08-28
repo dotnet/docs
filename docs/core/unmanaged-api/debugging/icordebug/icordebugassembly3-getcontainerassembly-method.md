@@ -44,4 +44,3 @@ HRESULT GetContainerAssembly(
 ## See also
 
 - [ICorDebugAssembly3 Interface](icordebugassembly3-interface.md)
-- [Debugging Interfaces](debugging-interfaces.md)

@@ -52,4 +52,3 @@ HRESULT GetTypeLayout(    [in] COR_TYPEID id,     [out] COR_TYPE_LAYOUT *pLayout
 
 - [COR_TYPE_LAYOUT Structure](cor-type-layout-structure.md)
 - [ICorDebugProcess5 Interface](icordebugprocess5-interface.md)
-- [Debugging Interfaces](debugging-interfaces.md)

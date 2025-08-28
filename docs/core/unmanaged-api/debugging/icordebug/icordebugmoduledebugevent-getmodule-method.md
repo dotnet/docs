@@ -40,4 +40,3 @@ HRESULT GetModule(
 ## See also
 
 - [ICorDebugModuleDebugEvent Interface](icordebugmoduledebugevent-interface.md)
-- [Debugging Interfaces](debugging-interfaces.md)

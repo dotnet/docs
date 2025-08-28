@@ -40,7 +40,3 @@ Provides methods to work with arrays, pointers, function pointers, and reference
  **Library:** CorGuids.lib
 
  **.NET versions:** Available since .NET Framework 2.0
-
-## See also
-
-- [Debugging Interfaces](debugging-interfaces.md)

@@ -48,4 +48,3 @@ HRESULT MarkDebuggerAttached(
 ## See also
 
 - [ICorDebugProcess6 Interface](icordebugprocess6-interface.md)
-- [Debugging Interfaces](debugging-interfaces.md)

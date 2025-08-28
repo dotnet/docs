@@ -61,4 +61,3 @@ HRESULT GetMethodProps(
 
 - [GetTypeProps Method](icordebugsymbolprovider-gettypeprops-method.md)
 - [ICorDebugSymbolProvider Interface](icordebugsymbolprovider-interface.md)
-- [Debugging Interfaces](debugging-interfaces.md)

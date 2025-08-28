@@ -56,5 +56,3 @@ HRESULT Next();
 ## See also
 
 - [ICorDebugStackWalk Interface](icordebugstackwalk-interface.md)
-- [Debugging Interfaces](debugging-interfaces.md)
-- [Debugging](index.md)

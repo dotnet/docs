@@ -39,7 +39,3 @@ Extends the ICorDebugBreakpoint interface to provide access to specific values.
  **Library:** CorGuids.lib
 
  **.NET versions:** Available since .NET Framework 1.0
-
-## See also
-
-- [Debugging Interfaces](debugging-interfaces.md)

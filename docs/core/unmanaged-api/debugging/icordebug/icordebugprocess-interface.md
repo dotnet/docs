@@ -59,4 +59,3 @@ Represents a process that is executing managed code. This interface is a subclas
 ## See also
 
 - [ICorDebug Interface](icordebug-interface.md)
-- [Debugging Interfaces](debugging-interfaces.md)

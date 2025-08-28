@@ -19,7 +19,3 @@ topic_type:
 # ICorDebugEditAndContinueErrorInfo::GetModule Method
 
 `GetModule` is obsolete. Do not call this method.
-
-## See also
-
-- [Debugging Interfaces](debugging-interfaces.md)

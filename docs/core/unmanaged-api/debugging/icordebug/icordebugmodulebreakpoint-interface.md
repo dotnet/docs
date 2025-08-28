@@ -39,7 +39,3 @@ Provides access to specific modules. This interface is a subclass of the ICorDeb
  **Library:** CorGuids.lib
 
  **.NET versions:** Available since .NET Framework 1.0
-
-## See also
-
-- [Debugging Interfaces](debugging-interfaces.md)

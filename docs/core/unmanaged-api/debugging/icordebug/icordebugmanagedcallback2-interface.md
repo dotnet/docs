@@ -53,6 +53,5 @@ Provides methods to support debugger exception handling and managed debugging as
 
 ## See also
 
-- [Diagnosing Errors with Managed Debugging Assistants](../../debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)
-- [Debugging Interfaces](debugging-interfaces.md)
+- [Diagnose Errors with Managed Debugging Assistants](../../../../framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)
 - [ICorDebugManagedCallback Interface](icordebugmanagedcallback-interface.md)

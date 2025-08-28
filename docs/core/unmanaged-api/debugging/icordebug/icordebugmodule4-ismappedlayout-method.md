@@ -61,4 +61,3 @@ The `pIsMapped` value should only be interpreted as valid when this function ret
 
 - [ICorDebugRemoteTarget Interface](icordebugremotetarget-interface.md)
 - [ICorDebug Interface](icordebug-interface.md)
-- [Debugging Interfaces](debugging-interfaces.md)

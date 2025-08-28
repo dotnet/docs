@@ -39,7 +39,3 @@ Implements ICorDebugEnum methods, and enumerates arrays of objects by their rela
  **Library:** CorGuids.lib
 
  **.NET versions:** Available since .NET Framework 2.0
-
-## See also
-
-- [Debugging Interfaces](debugging-interfaces.md)

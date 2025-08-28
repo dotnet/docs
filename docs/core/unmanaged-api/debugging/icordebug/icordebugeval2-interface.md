@@ -45,7 +45,3 @@ Extends "ICorDebugEval" to provide support for generic types.
  **Library:** CorGuids.lib
 
  **.NET versions:** Available since .NET Framework 2.0
-
-## See also
-
-- [Debugging Interfaces](debugging-interfaces.md)

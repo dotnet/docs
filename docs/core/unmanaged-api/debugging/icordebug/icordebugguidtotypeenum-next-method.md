@@ -56,4 +56,3 @@ HRESULT Next(
 ## See also
 
 - [ICorDebugGuidToTypeEnum Interface](icordebugguidtotypeenum-interface.md)
-- [Debugging Interfaces](debugging-interfaces.md)

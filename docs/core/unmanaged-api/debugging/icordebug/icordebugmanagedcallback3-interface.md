@@ -46,5 +46,3 @@ Provides a callback method that indicates that an enabled custom debugger notifi
 
 - [ICorDebugManagedCallback Interface](icordebugmanagedcallback-interface.md)
 - [ICorDebugManagedCallback2 Interface](icordebugmanagedcallback2-interface.md)
-- [Debugging Interfaces](debugging-interfaces.md)
-- [Debugging](index.md)

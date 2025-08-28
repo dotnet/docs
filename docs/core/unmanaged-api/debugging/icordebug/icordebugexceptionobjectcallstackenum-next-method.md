@@ -56,4 +56,3 @@ HRESULT Next(
 ## See also
 
 - [ICorDebugExceptionObjectCallStackEnum Interface](icordebugexceptionobjectcallstackenum-interface.md)
-- [Debugging Interfaces](debugging-interfaces.md)

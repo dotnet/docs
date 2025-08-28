@@ -52,7 +52,3 @@ Represents a segment of a physical or logical call stack.
  **Library:** CorGuids.lib
 
  **.NET versions:** Available since .NET Framework 1.0
-
-## See also
-
-- [Debugging Interfaces](debugging-interfaces.md)

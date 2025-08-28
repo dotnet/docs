@@ -40,7 +40,3 @@ Provides an enumerator for objects on the managed heap. This interface is a subc
  **Library:** CorGuids.lib
 
  **.NET versions:** Available since .NET Framework 4.5
-
-## See also
-
-- [Debugging Interfaces](debugging-interfaces.md)

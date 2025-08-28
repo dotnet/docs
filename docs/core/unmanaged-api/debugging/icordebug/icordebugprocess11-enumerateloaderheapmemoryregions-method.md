@@ -47,4 +47,3 @@ HRESULT EnumerateLoaderHeapMemoryRegions(
 ## See also
 
 - [ICorDebugProcess11 Interface](icordebugprocess11-interface.md)
-- [Debugging Interfaces](debugging-interfaces.md)

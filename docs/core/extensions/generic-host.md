@@ -185,10 +185,10 @@ Inject the <xref:Microsoft.Extensions.Hosting.IHostEnvironment> service into a c
 
 Additionally, the `IHostEnvironment` service exposes the ability to evaluate the environment with the help of these extension methods:
 
-- <xref:Microsoft.Extensions.Hosting.HostingEnvironmentExtensions.IsDevelopment%2A?displayProperty=nameWithType>
-- <xref:Microsoft.Extensions.Hosting.HostingEnvironmentExtensions.IsEnvironment%2A?displayProperty=nameWithType>
-- <xref:Microsoft.Extensions.Hosting.HostingEnvironmentExtensions.IsProduction%2A?displayProperty=nameWithType>
-- <xref:Microsoft.Extensions.Hosting.HostingEnvironmentExtensions.IsStaging%2A?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Hosting.HostEnvironmentEnvExtensions.IsDevelopment%2A?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Hosting.HostEnvironmentEnvExtensions.IsEnvironment%2A?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Hosting.HostEnvironmentEnvExtensions.IsProduction%2A?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Hosting.HostEnvironmentEnvExtensions.IsStaging%2A?displayProperty=nameWithType>
 
 ## Host configuration
 
@@ -212,7 +212,7 @@ The preceding code:
 
 # [IHostBuilder](#tab/hostbuilder)
 
-The host configuration is available in [HostBuilderContext.Configuration](xref:Microsoft.Extensions.Hosting.HostBuilderContext.Configuration) within the <xref:Microsoft.Extensions.Hosting.HostBuilder.ConfigureAppConfiguration%2A> method. When you call the `ConfigureAppConfiguration` method, the `HostBuilderContext` and `IConfigurationBuilder` are passed into the `configureDelegate`. The `configureDelegate` is defined as an `Action<HostBuilderContext, IConfigurationBuilder>`. The host builder context exposes the `Configuration` property, which is an instance of `IConfiguration`. It represents the configuration built from the host, whereas the `IConfigurationBuilder` is the builder object used to configure the app.
+The host configuration is available in [HostBuilderContext.Configuration](xref:Microsoft.Extensions.Hosting.HostBuilderContext.Configuration) within the <xref:Microsoft.Extensions.Hosting.HostBuilder.ConfigureAppConfiguration%2A> method. When you call the `ConfigureAppConfiguration` method, the `HostBuilderContext` and `IConfigurationBuilder` are passed into the `configureDelegate`. The `configureDelegate` is defined as an `Action<HostBuilderContext, IConfigurationBuilder>`. The `HostBuilderContext` exposes the `Configuration` property, which is an instance of `IConfiguration`. It represents the configuration built from the host, whereas the `IConfigurationBuilder` is the builder object used to configure the app.
 
 > [!TIP]
 > After `ConfigureAppConfiguration` is called the `HostBuilderContext.Configuration` is replaced with the [app config](#app-configuration).

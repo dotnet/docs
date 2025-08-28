@@ -66,7 +66,7 @@ Visual Basic 16.9 enables consumption of init-only properties.
 
 ## Visual Basic 16.0
 
-Visual Basic 16.0 focuses on supplying more of the features of the Visual Basic Runtime (microsoft.visualbasic.dll) to .NET Core and is the first version of Visual Basic focused on .NET Core. Many portions of the Visual Basic Runtime depend on WinForms and these were added with .NET Core 3.0.
+Visual Basic 16.0 focuses on supplying more of the features of the Visual Basic Runtime (microsoft.visualbasic.dll) to .NET Core and is the first version of Visual Basic focused on .NET Core. The parts of the Visual Basic Runtime that depend on WinForms were added in .NET Core 3.0.
 
 **Comments allowed in more places within statements**
 

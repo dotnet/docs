@@ -69,9 +69,8 @@ There are two support tracks for releases:
 
   These versions are supported for a minimum of 3 years, or 1 year after the next LTS release ships if that date is later.
 
-  Examples:
+  Example:
 
-  * .NET Core 3.1 is an LTS release and was released in December 2019. It was supported for three years, until December 2022.
   * .NET 8 is an LTS release and was released in November 2023. It's supported for three years, until November 2026.
 
 Releases alternate between LTS and STS.
@@ -103,7 +102,7 @@ End of support refers to the date after which Microsoft no longer provides fixes
 
 .NET can be run on a range of operating systems. Each of these operating systems has a lifecycle defined by its sponsor organization (for example, Microsoft, Red Hat, or Apple). These lifecycle schedules are taken into account when .NET adds and removes support for operating system versions.
 
-When an operating system version goes out of support, Microsoft stops testing and providing support for that version. Users need to move forward to a supported operating system version to get support.
+When an operating system version reaches end of support, Microsoft stops testing and providing support for that version. Users need to move forward to a supported operating system version to get support.
 
 For more information, see the [.NET OS Lifecycle Policy](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md).
 

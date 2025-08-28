@@ -35,8 +35,8 @@ Any expression that is legal within an `As` clause in a `Dim` statement, that is
 > [!TIP]
 > You can also use the following functions to perform a type conversion:
 >
-> - Type conversion functions such as `CByte`, `CDbl`, and `CInt` that perform a conversion to a specific data type. For more information, see [Type Conversion Functions](type-conversion-functions.md).
-> - [DirectCast Operator](../operators/directcast-operator.md) or [TryCast Operator](../operators/trycast-operator.md). These operators require that one type inherit from or implement the other type. They can provide somewhat better performance than `CType` when converting to and from the `Object` data type.
+> - Type conversion functions such as `CByte`, `CDbl`, and `CInt` that perform a conversion to a specific data type. For more information, see [Type Conversion Functions](../functions/type-conversion-functions.md).
+> - [DirectCast Operator](directcast-operator.md) or [TryCast Operator](trycast-operator.md). These operators require that one type inherit from or implement the other type. They can provide somewhat better performance than `CType` when converting to and from the `Object` data type.
 
 `CType` is compiled inline, which means that the conversion code is part of the code that evaluates the expression. In some cases, the code runs faster because no procedures are called to perform the conversion.
 
@@ -53,8 +53,8 @@ If the data type of `expression` or `typename` is a class or structure you've de
 |Keyword|Data types|Argument relationship|Run-time failure|  
 |---|---|---|---|  
 |`CType`|Any data types|Widening or narrowing conversion must be defined between the two data types|Throws <xref:System.InvalidCastException>|  
-|[DirectCast Operator](../operators/directcast-operator.md)|Any data types|One type must inherit from or implement the other type|Throws <xref:System.InvalidCastException>|  
-|[TryCast](../operators/trycast-operator.md)|Reference types only|One type must inherit from or implement the other type|Returns [Nothing](../nothing.md)|  
+|[DirectCast Operator](directcast-operator.md)|Any data types|One type must inherit from or implement the other type|Throws <xref:System.InvalidCastException>|  
+|[TryCast](trycast-operator.md)|Reference types only|One type must inherit from or implement the other type|Returns [Nothing](../nothing.md)|  
 
 ## Overloading
 
@@ -76,8 +76,8 @@ For additional examples, see [Implicit and Explicit Conversions](../../programmi
 
 - <xref:System.OverflowException>
 - <xref:System.InvalidCastException>
-- [Type Conversion Functions](type-conversion-functions.md)
-- [Conversion Functions](conversion-functions.md)
+- [Type Conversion Functions](../functions/type-conversion-functions.md)
+- [Conversion Functions](../functions/conversion-functions.md)
 - [Operator Statement](../statements/operator-statement.md)
 - [How to: Define a Conversion Operator](../../programming-guide/language-features/procedures/how-to-define-a-conversion-operator.md)
 - [Type Conversion in the .NET Framework](../../../standard/base-types/type-conversion.md)

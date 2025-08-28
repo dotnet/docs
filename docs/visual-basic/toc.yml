@@ -368,8 +368,6 @@ items:
       items:
       - name: Return Values for the CStr Function
         href: language-reference/functions/return-values-for-the-cstr-function.md
-    - name: CType Operator
-      href: language-reference/functions/ctype-function.md
   - name: Modifiers
     href: language-reference/modifiers/index.md
     items:
@@ -589,6 +587,8 @@ items:
         href: language-reference/operators/andalso-operator.md
       - name: Await Operator
         href: language-reference/operators/await-operator.md
+      - name: CType Operator
+        href: language-reference/operators/ctype-operator.md
       - name: DirectCast Operator
         href: language-reference/operators/directcast-operator.md
       - name: Function Expression

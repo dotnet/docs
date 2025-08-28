@@ -24,8 +24,6 @@ The topics in this section contain tables of the Visual Basic run-time member fu
   
  [Type Conversion Functions](type-conversion-functions.md)  
   
- [CType Operator](ctype-function.md)  
-  
 ## Related Sections  
 
  [Visual Basic Language Reference](../index.md)  

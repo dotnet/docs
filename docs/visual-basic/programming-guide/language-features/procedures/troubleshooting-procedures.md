@@ -77,7 +77,7 @@ The following items, even though they pertain to the parameter list, are not com
 
 You cannot overload a procedure by varying only one or more of the preceding items.
 
-**Correct approach:** To be able to define a procedure overload, you must vary the signature. Because you must use the same name, you must vary the number, order, or data types of the parameters. In a generic procedure, you can vary the number of type parameters. In a conversion operator ([CType Operator](../../../language-reference/functions/ctype-function.md)), you can vary the return type.
+**Correct approach:** To be able to define a procedure overload, you must vary the signature. Because you must use the same name, you must vary the number, order, or data types of the parameters. In a generic procedure, you can vary the number of type parameters. In a conversion operator ([CType Operator](../../../language-reference/operators/ctype-operator.md)), you can vary the return type.
 
 ### Overload resolution with Optional and ParamArray arguments
 
@@ -93,7 +93,7 @@ When you have determined which overload you want to call, be careful to observe 
 - Ideally, your arguments should have the exact same data types as the corresponding parameters. In any case, the data type of each argument must widen to that of its corresponding parameter. This is true even with the [Option Strict Statement](../../../language-reference/statements/option-strict-statement.md) set to `Off`. If an overload requires any narrowing conversion from your argument list, that overload is not eligible to be called.
 - If you supply arguments that require widening, make their data types as close as possible to the corresponding parameter data types. If two or more overloads accept your argument data types, the compiler resolves your call to the overload that calls for the least amount of widening.
 
-You can reduce the chance of data type mismatches by using the [CType Function](../../../language-reference/functions/ctype-function.md) conversion keyword when preparing your arguments.
+You can reduce the chance of data type mismatches by using the [CType Function](../../../language-reference/operators/ctype-operator.md) conversion keyword when preparing your arguments.
 
 ### Overload resolution failure
 
@@ -109,7 +109,7 @@ In the first call, the compiler eliminates the first overload because the type o
 
 In the second call, the compiler cannot eliminate any of the overloads on the basis of narrowing. It eliminates the third overload for the same reason as in the first call, because it can call the second overload with less widening of the argument types. However, the compiler cannot resolve between the first and second overloads. Each has one defined parameter type that widens to the corresponding type in the other (`Byte` to `Short`, but `Single` to `Double`). The compiler therefore generates an overload resolution error.
 
-**Correct approach:** To be able to call an overloaded procedure without ambiguity, use [CType Function](../../../language-reference/functions/ctype-function.md) to match the argument data types to the parameter types. The following example shows a call to `z` that forces resolution to the second overload.
+**Correct approach:** To be able to call an overloaded procedure without ambiguity, use [CType Function](../../../language-reference/operators/ctype-operator.md) to match the argument data types to the parameter types. The following example shows a call to `z` that forces resolution to the second overload.
 
 [!code-vb[VbVbcnProcedures#65](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#65)]
 

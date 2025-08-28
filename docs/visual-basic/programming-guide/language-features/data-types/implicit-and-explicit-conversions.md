@@ -71,7 +71,7 @@ The following table shows the available conversion keywords.
 
 ## The CType Operator
 
-The [CType Operator](../../../language-reference/functions/ctype-function.md) operates on two arguments. The first is the expression to be converted, and the second is the destination data type or object class. Note that the first argument must be an expression, not a type.
+The [CType Operator](../../../language-reference/operators/ctype-operator.md) operates on two arguments. The first is the expression to be converted, and the second is the destination data type or object class. Note that the first argument must be an expression, not a type.
 
 `CType` is an *inline function*, meaning the compiled code makes the conversion, often without generating a function call. This improves performance.
 

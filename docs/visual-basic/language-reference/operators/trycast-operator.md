@@ -17,7 +17,7 @@ Introduces a type conversion operation that does not throw an exception.
 
  If an attempted conversion fails, `CType` and `DirectCast` both throw an <xref:System.InvalidCastException> error. This can adversely affect the performance of your application. `TryCast` returns [Nothing](../nothing.md), so that instead of having to handle a possible exception, you need only test the returned result against `Nothing`.  
   
- You use the `TryCast` keyword the same way you use the [CType Operator](../functions/ctype-function.md) and the [DirectCast Operator](directcast-operator.md) keyword. You supply an expression as the first argument and a type to convert it to as the second argument. `TryCast` operates only on reference types, such as classes and interfaces. It requires an inheritance or implementation relationship between the two types. This means that one type must inherit from or implement the other.  
+ You use the `TryCast` keyword the same way you use the [CType Operator](../operators/ctype-operator.md) and the [DirectCast Operator](directcast-operator.md) keyword. You supply an expression as the first argument and a type to convert it to as the second argument. `TryCast` operates only on reference types, such as classes and interfaces. It requires an inheritance or implementation relationship between the two types. This means that one type must inherit from or implement the other.  
   
 ## Errors and Failures  
 
@@ -29,7 +29,7 @@ Introduces a type conversion operation that does not throw an exception.
   
 |Keyword|Data types|Argument relationship|Run-time failure|  
 |---|---|---|---|  
-|[CType Operator](../functions/ctype-function.md)|Any data types|Widening or narrowing conversion must be defined between the two data types|Throws <xref:System.InvalidCastException>|  
+|[CType Operator](../operators/ctype-operator.md)|Any data types|Widening or narrowing conversion must be defined between the two data types|Throws <xref:System.InvalidCastException>|  
 |[DirectCast Operator](directcast-operator.md)|Any data types|One type must inherit from or implement the other type|Throws <xref:System.InvalidCastException>|  
 |`TryCast`|Reference types only|One type must inherit from or implement the other type|Returns [Nothing](../nothing.md)|  
   

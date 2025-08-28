@@ -60,4 +60,4 @@ End If
 - [Conversion Summary](../keywords/conversion-summary.md)
 - [Efficient Use of Data Types](../../programming-guide/language-features/data-types/efficient-use-of-data-types.md)
 - [Troubleshooting Data Types](../../programming-guide/language-features/data-types/troubleshooting-data-types.md)
-- [CType Operator](../functions/ctype-function.md)
+- [CType Operator](../operators/ctype-operator.md)

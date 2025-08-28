@@ -68,23 +68,21 @@ This small example demonstrates the motivation for this feature. You can use nat
 
 ## Static virtual interface methods
 
-Similar can be achieved using the static virtual methods of an interface. This is done with the syntax of `static` and `virtual` modifiers added to any member that should be implemented in the type implementing that interface. The following example defines the `IGetDuplicated<T>` interface, providing any type with a constraint that a type will implement the `operator ++`:
+You can also provide a default implementation for static methods defined in an interface. This is done with the syntax of `static` and `virtual` modifiers added to any member that should be implemented in the type implementing that interface. The following example defines the `ISingleton<T>` interface, providing any type with a constraint that a type will implement the unique `Instance` field:
 
-:::code language="csharp" source="./snippets/staticinterfaces/GetDuplicated.cs":::
+:::code language="csharp" source="./snippets/staticinterfaces/Singleton.cs":::
 
-Because virtual methods aren't abstract, they must declare their body. However, for now it's throwing the `NotImplementedException` exception by default, to highlight the lack of implementation.
+Because virtual methods aren't abstract, they must declare their body. In this case the body is the implementation of `get` and `set` of the unique `Instance` that a singleton will share.
 
-The next snippet creates a structure that implements the `IGetDuplicated<T>` interface. This `Duplicate` structure uses the `++` operator implementation to duplicate the initial number given when creating the structure:
+The next snippet creates a class that implements the `ISingleton<T>` interface. This `UniqueInstance` class does not override the behavior of `PrintMessage()` method, but relies on it's original definition:
 
-:::code language="csharp" source="./snippets/staticinterfaces/Duplicate.cs":::
+:::code language="csharp" source="./snippets/staticinterfaces/UniqueInstance.cs":::
 
-You can use this `Duplicate` type by calling the `operator ++`:
+You can use this `UniqueInstance` type by calling the `PrintMessage()` method:
 
-:::code language="csharp" source="./snippets/staticinterfaces/Program.cs" id="TestDuplication":::
+:::code language="csharp" source="./snippets/staticinterfaces/Program.cs" id="TestUniqueInstance":::
 
-which will print the result of `4`.
-
-Note that without having the `operator ++` implemented, calling `num++` would still not compile, leading to [CS0023](../../misc/cs0023.md). Reason for that is that even if we have the default implementation in the static virtual method of an interface, this is still only an interface and the type implementing that interface has no such operator implemented.
+which will print the message defined in the `ISingleton` interface.
 
 ## Generic math
 

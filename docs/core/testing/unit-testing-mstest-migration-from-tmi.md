@@ -26,7 +26,7 @@ MSTest v1 run was offloaded to legacy TestPlatform runner, this is typically cau
 This runner was removed from the product and can no longer be used. 
 ```
 
-Version 18 of VSTest removed the ability to run MSTest v1 tests via the legacy runner (running MSTest v1 tests via VSTest remains unaffected.). The legacy runner, also called TMI, TPv0, QTAgent, was removed from VSTest and VisualStudio.
+Version 18 of VSTest removed the ability to run MSTest v1 tests via the legacy runner (running MSTest v1 tests via VSTest remains unaffected.). The legacy runner, also called TMI, TPv0, QTAgent, was removed from VSTest and Visual Studio.
 
 ### Solving the error
 
@@ -36,9 +36,9 @@ The error can show up for multiple reasons, typically the reasons that are liste
 
 Providing `.testsettings` file to the run will trigger this error. Test settings files are no longer supported in VSTest and you should replace them with `.runsettings` file.
 
-To migrate from testsettings to run settings you can use the TestSettings migrator tool that is shipped with VisualStudio 2022. See <https://learn.microsoft.com/visualstudio/test/migrate-testsettings-to-runsettings?view=vs-2022>
+To migrate from testsettings to runsettings, you can use the TestSettings migrator tool that is shipped with Visual Studio 2022. For more information, see [Upgrade from .testsettings to .runsettings](https://learn.microsoft.com/visualstudio/test/migrate-testsettings-to-runsettings).
 
-When moving away from testsettings, please also consider upgrading from MSTest v1 to latest MSTest following [this migration guide](unit-testing-mstest-migration-from-v1-to-v3.md).
+When moving away from testsettings, consider upgrading from MSTest v1 to latest MSTest following [this migration guide](unit-testing-mstest-migration-from-v1-to-v3.md).
 
 #### Setting ForcedLegacyMode in runsettings
 

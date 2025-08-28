@@ -1,0 +1,56 @@
+---
+description: "Learn more about: ICorDebugController::Terminate Method"
+title: "ICorDebugController::Terminate Method"
+ms.date: "03/30/2017"
+api_name:
+  - "ICorDebugController.Terminate"
+api_location:
+  - "mscordbi.dll"
+api_type:
+  - "COM"
+f1_keywords:
+  - "ICorDebugController::Terminate"
+helpviewer_keywords:
+  - "Terminate method, ICorDebugController interface [.NET debugging]"
+  - "ICorDebugController::Terminate method [.NET debugging]"
+topic_type:
+  - "apiref"
+---
+# ICorDebugController::Terminate Method
+
+Terminates the process with the specified exit code.
+
+> [!NOTE]
+> This method is a wrapper for the Win32 `TerminateProcess` function. Thus, `Terminate` uses the exit code in the same way that the Win32 `TerminateProcess` function uses it.
+
+## Syntax
+
+```cpp
+HRESULT Terminate (
+    [in] UINT exitCode
+);
+```
+
+## Parameters
+
+ `exitCode`
+ [in] A numeric value that is the exit code. The valid numeric values are defined in Winbase.h.
+
+## Remarks
+
+ If the process is stopped when `Terminate` is called, the process should be continued by using the [ICorDebugController::Continue](icordebugcontroller-continue-method.md) method so that the debugger receives confirmation of the termination through the [ICorDebugManagedCallback::ExitProcess](icordebugmanagedcallback-exitprocess-method.md) or [ICorDebugManagedCallback::ExitAppDomain](icordebugmanagedcallback-exitappdomain-method.md) callback.
+
+> [!NOTE]
+> This method is not implemented by an application domain. That is, it is not implemented at the <xref:System.AppDomain> level.
+
+## Requirements
+
+ **Platforms:** See [.NET supported operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md).
+
+ **Header:** CorDebug.idl, CorDebug.h
+
+ **Library:** CorGuids.lib
+
+ **.NET versions:** Available since .NET Framework 1.0
+
+## See also

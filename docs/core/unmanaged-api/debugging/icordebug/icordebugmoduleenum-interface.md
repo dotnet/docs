@@ -1,0 +1,45 @@
+---
+description: "Learn more about: ICorDebugModuleEnum Interface"
+title: "ICorDebugModuleEnum Interface"
+ms.date: "03/30/2017"
+api_name:
+  - "ICorDebugModuleEnum"
+api_location:
+  - "mscordbi.dll"
+api_type:
+  - "COM"
+f1_keywords:
+  - "ICorDebugModuleEnum"
+helpviewer_keywords:
+  - "ICorDebugModuleEnum interface [.NET debugging]"
+topic_type:
+  - "apiref"
+---
+# ICorDebugModuleEnum Interface
+
+Implements ICorDebugEnum methods, and enumerates ICorDebugModule arrays.
+
+## Methods
+
+|Method|Description|
+|------------|-----------------|
+|[Next Method](icordebugmoduleenum-next-method.md)|Gets the specified number of `ICorDebugModule` instances from the enumeration, starting at the current position.|
+
+## Remarks
+
+> [!NOTE]
+> This interface does not support being called remotely, either cross-machine or cross-process.
+
+## Requirements
+
+ **Platforms:** See [.NET supported operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md).
+
+ **Header:** CorDebug.idl, CorDebug.h
+
+ **Library:** CorGuids.lib
+
+ **.NET versions:** Available since .NET Framework 1.0
+
+## See also
+
+- [Debugging Interfaces](debugging-interfaces.md)

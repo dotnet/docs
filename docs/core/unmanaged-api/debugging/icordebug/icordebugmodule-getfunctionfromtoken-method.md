@@ -1,0 +1,52 @@
+---
+description: "Learn more about: ICorDebugModule::GetFunctionFromToken Method"
+title: "ICorDebugModule::GetFunctionFromToken Method"
+ms.date: "03/30/2017"
+api_name:
+  - "ICorDebugModule.GetFunctionFromToken"
+api_location:
+  - "mscordbi.dll"
+api_type:
+  - "COM"
+f1_keywords:
+  - "ICorDebugModule::GetFunctionFromToken"
+helpviewer_keywords:
+  - "GetFunctionFromToken method, ICorDebugModule interface [.NET debugging]"
+  - "ICorDebugModule::GetFunctionFromToken method [.NET debugging]"
+topic_type:
+  - "apiref"
+---
+# ICorDebugModule::GetFunctionFromToken Method
+
+Gets the function that is specified by the metadata token.
+
+## Syntax
+
+```cpp
+HRESULT GetFunctionFromToken(
+    [in] mdMethodDef methodDef,
+    [out] ICorDebugFunction **ppFunction
+);
+```
+
+## Parameters
+
+ `methodDef`
+ [in] A `mdMethodDef` metadata token that references the function's metadata.
+
+ `ppFunction`
+ [out] A pointer to the address of a ICorDebugFunction interface object that represents the function.
+
+## Remarks
+
+ The `GetFunctionFromToken` method returns a CORDBG_E_FUNCTION_NOT_IL HRESULT if the value passed in `methodDef` does not refer to a common intermediate language (CIL) method.
+
+## Requirements
+
+ **Platforms:** See [.NET supported operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md).
+
+ **Header:** CorDebug.idl, CorDebug.h
+
+ **Library:** CorGuids.lib
+
+ **.NET versions:** Available since .NET Framework 1.0

@@ -1,0 +1,76 @@
+---
+description: "Learn more about: ICorDebugStackWalk::GetContext Method"
+title: "ICorDebugStackWalk::GetContext Method"
+ms.date: "03/30/2017"
+api_name:
+  - "ICorDebugStackWalk.GetContext Method"
+api_location:
+  - "mscordbi.dll"
+api_type:
+  - "COM"
+f1_keywords:
+  - "ICorDebugStackWalk::GetContext"
+helpviewer_keywords:
+  - "GetContext method, ICorDebugStackWalk interface [.NET debugging]"
+  - "ICorDebugStackWalk::GetContext method [.NET debugging]"
+topic_type:
+  - "apiref"
+---
+# ICorDebugStackWalk::GetContext Method
+
+Returns the context for the current frame in the [ICorDebugStackWalk](icordebugstackwalk-interface.md) object.
+
+## Syntax
+
+```cpp
+HRESULT GetContext([in]  ULONG32 contextFlags,
+                   [in]  ULONG32 contextBufSize,
+                   [out] ULONG32* contextSize,
+                   [out, size_is(contextBufSize)] BYTE contextBuf[]);
+```
+
+## Parameters
+
+ `contextFlags`
+ [in] Flags that indicate the requested contents of the context buffer (defined in WinNT.h).
+
+ `contextBufSize`
+ [in] The allocated size of the context buffer.
+
+ `contextSize`
+ [out] The actual size of the context. This value must be less than or equal to the size of the context buffer.
+
+ `contextBuf`
+ [out] The context buffer.
+
+## Return Value
+
+ This method returns the following specific HRESULTs as well as HRESULT errors that indicate method failure.
+
+|HRESULT|Description|
+|-------------|-----------------|
+|S_OK|The context for the current frame was successfully returned.|
+|E_FAIL|The context could not be returned.|
+|HRESULT_FROM_WIN32(ERROR_INSUFFICIENT BUFFER)|The context buffer is too small.|
+|CORDBG_E_PAST_END_OF_STACK|The frame pointer is already at the end of the stack; therefore, no additional frames can be accessed.|
+
+## Exceptions
+
+## Remarks
+
+ Because unwinding restores only a subset of the registers, such as non-volatile registers, the context may not exactly match the register state at the time of the call.
+
+## Requirements
+
+ **Platforms:** See [.NET supported operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md).
+
+ **Header:** CorDebug.idl, CorDebug.h
+
+ **Library:** CorGuids.lib
+
+ **.NET versions:** Available since .NET Framework 4.0
+
+## See also
+
+- [Debugging Interfaces](debugging-interfaces.md)
+- [Debugging](index.md)

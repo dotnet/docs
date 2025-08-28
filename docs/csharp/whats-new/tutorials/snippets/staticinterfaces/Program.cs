@@ -10,7 +10,7 @@ for (int i = 0; i < 10; i++)
 // </TestRepeat>
 
 // <TestUniqueInstance>
-var instance = UniqueInstance.Instance;
+var instance = (UniqueInstance as ISingleton)?.Instance;
 instance.PrintMessage();
 // </TestUniqueInstance>
 

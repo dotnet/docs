@@ -65,4 +65,4 @@ Each of the preceding lines of code explicitly casts the `Object` variable `o1` 
 
 - [Procedure Overloading](../../programming-guide/language-features/procedures/procedure-overloading.md)
 - [Overload Resolution](../../programming-guide/language-features/procedures/overload-resolution.md)
-- [CType Operator](../operators/ctype-operator.md)
+- [CType Operator](ctype-operator.md)

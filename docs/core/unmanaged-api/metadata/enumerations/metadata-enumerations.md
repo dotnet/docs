@@ -5,9 +5,7 @@ ms.date: 07/24/2025
 ---
 # Metadata enumerations (.NET)
 
-This section describes the unmanaged enumerations that the metadata API uses. For unmanaged enumerations that apply only to .NET Framework, see [Metadata enumerations (.NET Framework)](../../../../framework/unmanaged-api/metadata/metadata-enumerations.md).
-
-## In this section
+These articles describe the unmanaged enumerations that the metadata API uses. For unmanaged enumerations that apply only to .NET Framework, see [Metadata enumerations (.NET Framework)](../../../../framework/unmanaged-api/metadata/metadata-enumerations.md).
 
 [CorAssemblyFlags enumeration](corassemblyflags-enumeration.md)\
 Contains values that describe the metadata applied to an assembly compilation.

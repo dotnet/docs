@@ -12,6 +12,8 @@ ms.assetid: f0bf70be-42ef-4c46-8709-1694b5f99018
 
 The debugging API enables a debugger to debug code that runs in the common language runtime (CLR) environment. The code to be debugged can be any type of code that the CLR supports.
 
+These articles describe APIs for .NET Framework. For unmanaged APIs that are supported on .NET (Core), see [.NET debugging (unmanaged API reference)](../../../core/unmanaged-api/debugging/index.md).
+
 ## In This Section
 
  [Debugging Coclasses](debugging-coclasses.md)\

@@ -689,6 +689,10 @@ items:
                     href: ../../core/unmanaged-api/debugging/resumeprocess-function.md
                   - name: UnregisterForRuntimeStartup function
                     href: ../../core/unmanaged-api/debugging/unregisterforruntimestartup-function.md
+              - name: Function pointers
+                items:
+                  - name: PSTARTUP_CALLBACK function pointer
+                    href: ../../core/unmanaged-api/debugging/pstartup_callback-function-pointer.md
               - name: Interfaces
                 items:
                   - name: ICLRDebuggingLibraryProvider2 interface
@@ -757,6 +761,8 @@ items:
                         href: ../../core/unmanaged-api/debugging/icordebug/icordebugappdomain-isattached-method.md
                   - name: ICorDebugAppDomain2 interface
                     items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugappdomain2-interface.md
                       - name: GetArrayOrPointerType method
                         href: ../../core/unmanaged-api/debugging/icordebug/icordebugappdomain2-getarrayorpointertype-method.md
                       - name: GetFunctionPointerType
@@ -2239,10 +2245,6 @@ items:
                         href: ../../core/unmanaged-api/debugging/icordebug/icordebugvirtualunwinder-getcontext-method.md
                       - name: Next method
                         href: ../../core/unmanaged-api/debugging/icordebug/icordebugvirtualunwinder-next-method.md
-              - name: Function pointers
-                items:
-                  - name: PSTARTUP_CALLBACK function pointer
-                    href: ../../core/unmanaged-api/debugging/pstartup_callback-function-pointer.md
               - name: Structures
                 items:
                   - name: CodeChunkInfo structure
@@ -2283,6 +2285,8 @@ items:
                     href: ../../core/unmanaged-api/debugging/icordebug/cordebugguidtotypemapping-structure.md
           - name: Metadata
             items:
+              - name: overview
+                href: ../../core/unmanaged-api/metadata/index.md
               - name: Enumerations
                 items:
                   - name: Overview

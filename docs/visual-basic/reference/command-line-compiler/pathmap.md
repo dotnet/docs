@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: -pathmap"
 title: "-pathmap"
-ms.date: 12/16/2024
+ms.date: 08/29/2025
 f1_keywords: 
   - "pathmap"
   - "-pathmap"
@@ -23,10 +23,10 @@ Specifies how to map physical paths to source path names output by the compiler.
 
 ## Arguments
 
-|Term|Definition|
-|---|---|
-|`path1`|Required. The full path to the source files in the current environment.|
-|`sourcePath1`|Required. The source path substituted for `path1` in any output files.|
+| Term              | Definition                                                                                                |
+|----------------|-----------------------------------------------------------------------------|
+| `path1`           | Required. The full path to the source files in the current environment. |
+| `sourcePath1` | Required. The source path substituted for `path1` in any output files.  |
 
 ## Remarks
 
@@ -40,13 +40,11 @@ To specify multiple mapped source paths, separate each with a comma.
 
 The compiler writes the source path into its output for the following reasons:
 
-1. The source path is substituted for an argument when the <xref:System.Runtime.CompilerServices.CallerFilePathAttribute> is applied to an optional parameter.
-1. The source path is embedded in a PDB file.
-1. The path of the PDB file is embedded into a PE (portable executable) file.
+- The source path is substituted for an argument when the <xref:System.Runtime.CompilerServices.CallerFilePathAttribute> is applied to an optional parameter.
+- The source path is embedded in a PDB file.
+- The path of the PDB file is embedded into a PE (portable executable) file.
 
-|To set -pathmap in the Visual Studio integrated development environment|
-|---|
-|The **-pathmap** option is not available from within the Visual Studio development environment; it is available only when compiling from the command line.|
+The `-pathmap` option is not available from within the Visual Studio development environment; it is available only when compiling from the command line.
 
 ## Example
 

@@ -62,7 +62,7 @@ The MSBuild project or solution to clean. If a project or solution file is not s
 
 * **`-r|--runtime <RUNTIME_IDENTIFIER>`**
 
-  Cleans the output folder of the specified runtime. This is used when a [self-contained deployment](../deploying/index.md#publish-self-contained) was created.
+  Cleans the output folder of the specified runtime. This is used when a [self-contained deployment](../deploying/index.md#self-contained-deployment) was created.
 
 [!INCLUDE [tl](../../../includes/cli-tl.md)]
 

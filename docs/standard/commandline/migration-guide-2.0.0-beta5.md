@@ -108,7 +108,7 @@ Option<int> option = new("--number");
 option.SetDefaultValue("text");
 ```
 
-Moreover, some of the `Option` and `Argument` constructors accepted a parse delegate and a Boolean indicating whether the delegate was a custom parser or a default value provider, which was confusing.
+Moreover, some of the `Option` and `Argument` constructors accepted a parse delegate (`parse`) and a Boolean (`isDefault`) indicating whether the delegate was a custom parser or a default value provider, which was confusing.
 
 `Option<T>` and `Argument<T>` classes now have a <xref:System.CommandLine.Option`1.DefaultValueFactory> property that you can use to set a delegate that can be called to get the default value for the option or argument. This delegate is invoked when the option or argument isn't found in the parsed command-line input.
 

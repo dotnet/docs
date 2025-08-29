@@ -6,7 +6,7 @@ ai-usage: ai-generated
 ---
 # Asynchronous programming with Async and Await (Visual Basic)
 
-The [Task asynchronous programming (TAP) model](../../standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md) provides a layer of abstraction over typical asynchronous coding. In this model, you write code as a sequence of statements, the same as usual. The difference is you can read your task-based code as the compiler processes each statement and before it starts processing the next statement. To accomplish this model, the compiler performs many transformations to complete each task. Some statements can initiate work and return a <xref:System.Threading.Tasks.Task> object that represents the ongoing work and the compiler must resolve these transformations. The goal of task asynchronous programming is to enable code that reads like a sequence of statements, but executes in a more complicated order. Execution is based on external resource allocation and when tasks complete.
+The [Task asynchronous programming (TAP) model](../../../../standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md) provides a layer of abstraction over typical asynchronous coding. In this model, you write code as a sequence of statements, the same as usual. The difference is you can read your task-based code as the compiler processes each statement and before it starts processing the next statement. To accomplish this model, the compiler performs many transformations to complete each task. Some statements can initiate work and return a <xref:System.Threading.Tasks.Task> object that represents the ongoing work and the compiler must resolve these transformations. The goal of task asynchronous programming is to enable code that reads like a sequence of statements, but executes in a more complicated order. Execution is based on external resource allocation and when tasks complete.
 
 The task asynchronous programming model is analogous to how people give instructions for processes that include asynchronous tasks. This article uses an example with instructions for making breakfast to show how the `Async` and `Await` keywords make it easier to reason about code that includes a series of asynchronous instructions. The instructions for making a breakfast might be provided as a list:
 
@@ -23,9 +23,11 @@ Cooking breakfast is a good example of asynchronous work that isn't parallel. On
 
 For a parallel algorithm, you need multiple people who cook (or multiple threads). One person cooks the eggs, another cooks the hash browns, and so on. Each person focuses on their one specific task. Each person who is cooking (or each thread) is blocked synchronously waiting for the current task to complete: Hash browns ready to flip, bread ready to pop up in toaster, and so on.
 
+:::image type="content" source="media/synchronous-breakfast.png" border="false" alt-text="Diagram that shows instructions for preparing breakfast as a list of seven sequential tasks completed in 30 minutes.":::
+
 Consider the same list of synchronous instructions written as Visual Basic code statements:
 
-[!code-vb[VB SynchronousBreakfast](snippets/breakfast/Program.vb#SynchronousBreakfast)]
+:::code language="vb" source="snippets/breakfast/Program.vb" id="SynchronousBreakfast":::
 
 If you interpret these instructions as a computer would, breakfast takes about 30 minutes to prepare. The duration is the sum of the individual task times. The computer blocks for each statement until all work completes, and then it proceeds to the next task statement. This approach can take significant time. In the breakfast example, the computer method creates an unsatisfying breakfast. Later tasks in the synchronous list, like toasting the bread, don't start until earlier tasks complete. Some food gets cold before the breakfast is ready to serve.
 
@@ -39,7 +41,7 @@ The previous code highlights an unfortunate programming practice: Writing synchr
 
 You can start by updating the code so the thread doesn't block while tasks are running. The `Await` keyword provides a nonblocking way to start a task, then continue execution when the task completes. A simple asynchronous version of the breakfast code looks like the following snippet:
 
-[!code-vb[VB AsyncBreakfast](snippets/breakfast/AsyncBreakfast.vb#AsyncBreakfast)]
+:::code language="vb" source="snippets/breakfast/AsyncBreakfast.vb" id="AsyncBreakfast":::
 
 The code updates the original method bodies of `FryEggs`, `FryHashBrowns`, and `ToastBread` to return `Task(Of Egg)`, `Task(Of HashBrown)`, and `Task(Of Toast)` objects, respectively. The updated method names include the "Async" suffix: `FryEggsAsync`, `FryHashBrownsAsync`, and `ToastBreadAsync`. The `Main` function returns the `Task` object, although it doesn't have a `Return` expression, which is by design.
 
@@ -109,6 +111,8 @@ Console.WriteLine("Breakfast is ready!")
 ```
 
 You now have an asynchronously prepared breakfast that takes about 20 minutes to prepare. The total cook time is reduced because some tasks run concurrently.
+
+:::image type="content" source="media/asynchronous-breakfast.png" border="false" alt-text="Diagram that shows instructions for preparing breakfast as eight asynchronous tasks that complete in about 20 minutes, where unfortunately, the eggs and hash browns burn.":::
 
 The code updates improve the preparation process by reducing the cook time, but they introduce a regression by burning the eggs and hash browns. You start all the asynchronous tasks at once. You wait on each task only when you need the results. The code might be similar to program in a web application that makes requests to different microservices and then combines the results into a single page. You make all the requests immediately, and then apply the `Await` expression on all those tasks and compose the web page.
 
@@ -252,7 +256,7 @@ Console.WriteLine("Breakfast is ready!")
 
 Another option is to use the <xref:System.Threading.Tasks.Task.WhenAny%2A> method, which returns a `Task(Of Task)` object that completes when any of its arguments complete. You can wait on the returned task because you know the task is done. The following code shows how you can use the <xref:System.Threading.Tasks.Task.WhenAny%2A> method to wait on the first task to finish and then process its result. After you process the result from the completed task, you remove the completed task from the list of tasks passed to the `WhenAny` method.
 
-[!code-vb[VB ConcurrentBreakfast](snippets/breakfast/ConcurrentBreakfast.vb#ConcurrentBreakfast)]
+:::code language="vb" source="snippets/breakfast/ConcurrentBreakfast.vb" id="ConcurrentBreakfast":::
 
 Near the end of the code snippet, notice the `Await finishedTask` expression. This line is important because `Task.WhenAny` returns a `Task(Of Task)` - a wrapper task that contains the completed task. When you `Await Task.WhenAny`, you're waiting for the wrapper task to complete, and the result is the actual task that finished first. However, to retrieve that task's result or ensure any exceptions are properly thrown, you must `Await` the completed task itself (stored in `finishedTask`). Even though you know the task has finished, awaiting it again allows you to access its result or handle any exceptions that might have caused it to fault.
 
@@ -260,7 +264,9 @@ Near the end of the code snippet, notice the `Await finishedTask` expression. Th
 
 Here's what the final version of the code looks like:
 
-[!code-vb[VB ConcurrentBreakfast](snippets/breakfast/ConcurrentBreakfast.vb#ConcurrentBreakfast)]
+:::code language="vb" source="snippets/breakfast/ConcurrentBreakfast.vb" id="ConcurrentBreakfast":::
+
+:::image type="content" source="media/whenany-async-breakfast.png" border="false" alt-text="Diagram that shows instructions for preparing breakfast as six asynchronous tasks that complete in about 15 minutes, and the code monitors for possible interruptions.":::
 
 The code completes the asynchronous breakfast tasks in about 15 minutes. The total time is reduced because some tasks run concurrently. The code simultaneously monitors multiple tasks and takes action only as needed.
 

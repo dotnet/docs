@@ -86,7 +86,7 @@ dotnet-trace collect
     [--diagnostic-port]
     [-o|--output <trace-file-path>]
     [-p|--process-id <pid>]
-    [--profile <profile-name>]
+    [--profiles <list-of-comma-separated-profile-names>]
     [--providers <list-of-comma-separated-providers>]
     [-- <command>] (for target applications running .NET 5 or later)
     [--show-child-io]
@@ -211,21 +211,24 @@ dotnet-trace collect
   > [!NOTE]
   > On Linux and macOS, using this option requires the target application and `dotnet-trace` to share the same `TMPDIR` environment variable. Otherwise, the command will time out.
 
-- **`--profile <profile-name>`**
+- **`--profiles <list-of-comma-separated-profile-names>`**
 
-  A named pre-defined set of provider configurations that allows common tracing scenarios to be specified succinctly. The following profiles are available:
+  A comma-separated list of named, pre-defined set of provider configurations for common tracing scenarios. The union of profiles and providers will be in effect.
+
+  Default behavior (when `--profiles`, `--providers`, and `--clrevents` are omitted): dotnet-trace enables a useful, low-overhead composition: `dotnet-common` + `dotnet-thread-time`.
+
+  Available profiles:
 
   | Profile | Description |
   |---------|-------------|
-  |`dotnet-default`|Combination of `dotnet-thread-time` and `dotnet-clr-default`. This is the default profile used when no other provider/event/profile options are specified.|
-  |`dotnet-thread-time`|Useful for tracking .NET thread-time information. This is the default profile used when no other provider/event/profile options are specified.|
-  |`dotnet-clr-default`|Useful for tracking a multitude of .NET events.|
+  |`dotnet-common`|Lightweight .NET runtime diagnostics (GC, JIT, loader/assembly loader, threading, contention). Designed to stay low overhead.|
+  |`dotnet-thread-time`|Samples .NET thread stacks (~100 Hz) to identify hotspots over time. Uses the runtime sample profiler with managed stacks.|
   |`gc-verbose`|Tracks GC collections and samples object allocations.|
   |`gc-collect`|Tracks GC collections only at very low overhead.|
 
 - **`--providers <list-of-comma-separated-providers>`**
 
-  A comma-separated list of `EventPipe` providers to be enabled. These providers supplement any providers implied by `--profile <profile-name>`. If there's any inconsistency for a particular provider, this configuration takes precedence over the implicit configuration from the profile.
+  A comma-separated list of `EventPipe` providers to be enabled. These providers supplement any providers implied by `--profiles <list-of-comma-separated-profile-names>`. If there's any inconsistency for a particular provider, this configuration takes precedence over the implicit configuration from the profiles.
 
   This list of providers is in the form:
 
@@ -278,6 +281,19 @@ Collects diagnostic traces using perf_events, a Linux OS technology. `collect-li
 
 This Linux-only command includes the same .NET events as [`dotnet-trace collect`](#dotnet-trace-collect), and it uses the kernel’s user_events mechanism to emit .NET events as perf events, enabling unification of user-space .NET events with kernel-space system events.
 
+### Default collection behavior
+
+When `--profiles`, `--clrevents`, and `--providers` aren’t specified, `collect-linux` enables the default `profile` providing the comprehensive composition:
+
+- `dotnet-common` — lightweight .NET runtime diagnostics.
+- `dotnet-thread-time` — runtime thread stack sampling.
+- `kernel-cpu` — kernel CPU sampling (perf-based) via `Universal.Events/cpu`.
+- `kernel-cswitch` — kernel context switches via `Universal.Events/cswitch` for on/off-CPU analysis.
+
+By default, a machine-wide trace will be collected. .NET Processes are discovered through their diagnostics ports, which are located under the `TMPDIR` environment variable when set and otherwise under `/tmp`. `dotnet-trace` will need to share the same `TMPDIR` value as .NET Processes of interest, otherwise events will not be collected from those processes.
+
+If collecting events from all .NET Processes is undesired, `-n, --name <name>` or `-p|--process-id <PID>` can be used to specify a particular process. **NOTE**: Should the target application have a `TMPDIR` enviornment variable set, `dotnet-trace` will need to share the same `TMPDIR` value, otherwise events will not be collected from the target application.
+
 ### Prerequisites
 
 - Linux kernel with `CONFIG_USER_EVENTS=y` support (kernel 6.4+)
@@ -295,7 +311,7 @@ dotnet-trace collect-linux
     [--clreventlevel <clreventlevel>]
     [--clrevents <clrevents>]
     [--perf-event-tracepoints <list-of-perf-event-tracepoints>]
-    [--profile <profile-name>]
+    [--profiles <list-of-comma-separated-profile-names>]
 
     # Trace Collection
     [--format <Chromium|NetTrace|Speedscope>]
@@ -315,7 +331,7 @@ dotnet-trace collect-linux
 
 - **`--providers <list-of-comma-separated-providers>`**
 
-  A comma-separated list of `EventPipe` providers to be enabled. These providers supplement any providers implied by `--profile <profile-name>`. If there's any inconsistency for a particular provider, this configuration takes precedence over the implicit configuration from the profile.
+  A comma-separated list of `EventPipe` providers to be enabled. These providers supplement any providers implied by `--profiles <list-of-comma-separated-profile-names>`. If there's any inconsistency for a particular provider, this configuration takes precedence over the implicit configuration from the specified profiles.
 
   This list of providers is in the form:
 
@@ -393,18 +409,24 @@ dotnet-trace collect-linux
 
   Example: `--perf-event-tracepoints syscalls:sys_enter_execve,sched:sched_switch,sched:sched_wakeup`
 
-- **`--profile <profile-name>`**
+- **`--profiles <list-of-comma-separated-profile-names>`**
 
-  A named pre-defined set of provider configurations that allows common tracing scenarios to be specified succinctly. The following profiles are available:
+  A named, pre-defined set of provider configurations for common tracing scenarios. You can specify multiple profiles as a comma-separated list. When multiple profiles are specified, the providers and settings are combined (union), and duplicates are ignored.
+
+  Available profiles:
 
   | Profile | Description |
   |---------|-------------|
-  |`dotnet-default`|Combination of `dotnet-thread-time` and `dotnet-clr-default`. This is the default profile used when no other provider/event/profile options are specified.|
-  |`dotnet-thread-time`|Useful for tracking .NET thread-time information. This is the default profile used when no other provider/event/profile options are specified.|
-  |`dotnet-clr-default`|Useful for tracking a multitude of .NET events.|
+  |`dotnet-common`|Lightweight .NET runtime diagnostics (GC, JIT, loader/assembly loader, threading, contention). Designed to stay low overhead.|
+  |`dotnet-thread-time`|Samples .NET thread stacks (~100 Hz) to identify hotspots over time. Uses the runtime sample profiler with managed stacks.|
+  |`kernel-cpu`|Kernel CPU sampling (perf-based), emitted as `Universal.Events/cpu`, for precise on-CPU attribution.|
+  |`kernel-cswitch`|Kernel thread context switches, emitted as `Universal.Events/cswitch`, for on/off-CPU and scheduler analysis.|
+  |`kernel-precise-thread-time`|Combines `kernel-cpu` + `kernel-cswitch` for a precise thread-time view using kernel events only.|
   |`gc-verbose`|Tracks GC collections and samples object allocations.|
   |`gc-collect`|Tracks GC collections only at very low overhead.|
-  |`cpu-sampling`|Useful for tracking CPU usage.|
+
+  > [!NOTE]
+  > The former default `cpu-sampling` profile is now named as `dotnet-thread-time`.
 
 #### Trace Collection Options
 
@@ -422,22 +444,21 @@ dotnet-trace collect-linux
 
 #### .NET Process Target Options
 
-> ![NOTE]
-> The default behavior for collect-linux is to collect .NET events and perf event tracepoints from ALL discoverable processes.
+See [Default collection behavior](#default-collection-behavior)
 
 - **`-n, --name <name>`**
 
   The name of the process to collect the trace from.
 
   > [!NOTE]
-  > By default, `/tmp` will be searched to discover .NET processes diagnostics ports. Should the target application have a `TMPDIR` enviornment variable set, `dotnet-trace` will need to share the same `TMPDIR` value, otherwise events will not be collected from the target application.
+  > Should the target application have a `TMPDIR` enviornment variable set, `dotnet-trace` will need to share the same `TMPDIR` value, otherwise events will not be collected from the target application.
 
 - **`-p|--process-id <PID>`**
 
   The process ID to collect the trace from.
 
   > [!NOTE]
-  > By default, `/tmp` will be searched to discover .NET processes diagnostics ports. Should the target application have a `TMPDIR` enviornment variable set, `dotnet-trace` will need to share the same `TMPDIR` value, otherwise events will not be collected from the target application.
+  > Should the target application have a `TMPDIR` enviornment variable set, `dotnet-trace` will need to share the same `TMPDIR` value, otherwise events will not be collected from the target application.
 
 - **`-- <command>`**
 
@@ -600,11 +621,11 @@ dotnet-trace collect -- hello.exe arg1 arg2
 The preceding command generates output similar to the following:
 
 ```output
-No profile or providers specified, defaulting to trace profile 'cpu-sampling'
+No profile or providers specified. Using default composition: dotnet-common + dotnet-thread-time
 
 Provider Name                           Keywords            Level               Enabled By
-Microsoft-DotNETCore-SampleProfiler     0x0000F00000000000  Informational(4)    --profile
-Microsoft-Windows-DotNETRuntime         0x00000014C14FCCBD  Informational(4)    --profile
+Microsoft-DotNETCore-SampleProfiler     0x0000F00000000000  Informational(4)    --profiles
+Microsoft-Windows-DotNETRuntime         0x00000014C14FCCBD  Informational(4)    --profiles
 
 Process        : E:\temp\gcperfsim\bin\Debug\net5.0\gcperfsim.exe
 Output File    : E:\temp\gcperfsim\trace.nettrace

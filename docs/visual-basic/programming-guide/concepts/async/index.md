@@ -35,44 +35,27 @@ The async-based approach adds the equivalent of an automatic transmission to the
 
 The [Async](../../../language-reference/modifiers/async.md) and [Await](../../../language-reference/operators/await-operator.md) keywords in Visual Basic are the heart of async programming. By using those two keywords, you can use resources in the .NET Framework or the Windows Runtime to create an asynchronous method almost as easily as you create a synchronous method. Asynchronous methods that you define by using `Async` and `Await` are referred to as async methods.
 
-The following example shows an async method. Almost everything in the code should look completely familiar to you. The comments call out the features that you add to create the asynchrony.
+The following example shows an async method. Almost everything in the code should look completely familiar to you.
 
-You can find a complete Windows Presentation Foundation (WPF) example file at the end of this topic, and you can download the sample from [Async Sample: Example from "Asynchronous Programming with Async and Await"](/samples/dotnet/samples/async-and-await-vb/).
+You can find a complete Windows Presentation Foundation (WPF) example available for download from [Asynchronous programming with async and await in Visual Basic](/samples/dotnet/samples/async-and-await-vb/).
 
-```vb
-' Three things to note about writing an Async Function:
-'  - The function has an Async modifier.
-'  - Its return type is Task or Task(Of T). (See "Return Types" section.)
-'  - As a matter of convention, its name ends in "Async".
-Async Function AccessTheWebAsync() As Task(Of Integer)
-    Using client As New HttpClient()
-        ' Call and await separately.
-        '  - AccessTheWebAsync can do other things while GetStringAsync is also running.
-        '  - getStringTask stores the task we get from the call to GetStringAsync.
-        '  - Task(Of String) means it is a task which returns a String when it is done.
-        Dim getStringTask As Task(Of String) =
-            client.GetStringAsync("https://learn.microsoft.com/dotnet")
-        ' You can do other work here that doesn't rely on the string from GetStringAsync.
-        DoIndependentWork()
-        ' The Await operator suspends AccessTheWebAsync.
-        '  - AccessTheWebAsync does not continue until getStringTask is complete.
-        '  - Meanwhile, control returns to the caller of AccessTheWebAsync.
-        '  - Control resumes here when getStringTask is complete.
-        '  - The Await operator then retrieves the String result from getStringTask.
-        Dim urlContents As String = Await getStringTask
-        ' The Return statement specifies an Integer result.
-        ' A method which awaits AccessTheWebAsync receives the Length value.
-        Return urlContents.Length
+[!code-vb[VB ControlFlow](snippets/access-web/Program.vb#ControlFlow)]
 
-    End Using
+You can learn several practices from the preceding sample. Start with the method signature. It includes the `Async` modifier. The return type is `Task(Of Integer)` (See "Return Types" section for more options). The method name ends in `Async`. In the body of the method, `GetStringAsync` returns a `Task(Of String)`. That means that when you `Await` the task you'll get a `String` (`contents`). Before awaiting the task, you can do work that doesn't rely on the `String` from `GetStringAsync`.
 
-End Function
-```
+Pay close attention to the `Await` operator. It suspends `GetUrlContentLengthAsync`:
 
-If `AccessTheWebAsync` doesn't have any work that it can do between calling `GetStringAsync` and awaiting its completion, you can simplify your code by calling and awaiting in the following single statement.
+- `GetUrlContentLengthAsync` can't continue until `getStringTask` is complete.
+- Meanwhile, control returns to the caller of `GetUrlContentLengthAsync`.
+- Control resumes here when `getStringTask` is complete.
+- The `Await` operator then retrieves the `String` result from `getStringTask`.
+
+The return statement specifies an integer result. Any methods that are awaiting `GetUrlContentLengthAsync` retrieve the length value.
+
+If `GetUrlContentLengthAsync` doesn't have any work that it can do between calling `GetStringAsync` and awaiting its completion, you can simplify your code by calling and awaiting in the following single statement.
 
 ```vb
-Dim urlContents As String = Await client.GetStringAsync()
+Dim contents As String = Await client.GetStringAsync("https://learn.microsoft.com/dotnet")
 ```
 
 The following characteristics summarize what makes the previous example an async method:
@@ -85,7 +68,7 @@ The following characteristics summarize what makes the previous example an async
   - <xref:System.Threading.Tasks.Task> if your method has no return statement or has a return statement with no operand.
   - [Sub](../../language-features/procedures/sub-procedures.md) if you're writing an async event handler.
 
-  For more information, see "Return Types and Parameters" later in this topic.
+  For more information, see the [Return types and parameters](#BKMK_ReturnTypesandParameters) section.
 
 - The method usually includes at least one await expression, which marks a point where the method can't continue until the awaited asynchronous operation is complete. In the meantime, the method is suspended, and control returns to the method's caller. The next section of this topic illustrates what happens at the suspension point.
 
@@ -99,33 +82,32 @@ The most important thing to understand in asynchronous programming is how the co
 
 ![Diagram that shows tracing an async program.](./media/index/navigation-trace-async-program.png)
 
-The numbers in the diagram correspond to the following steps:
+The numbers in the diagram correspond to the following steps, initiated when a calling method calls the async method.
 
-1. An event handler calls and awaits the `AccessTheWebAsync` async method.
+1. A calling method calls and awaits the `GetUrlContentLengthAsync` async method.
 
-2. `AccessTheWebAsync` creates an <xref:System.Net.Http.HttpClient> instance and calls the <xref:System.Net.Http.HttpClient.GetStringAsync%2A> asynchronous method to download the contents of a website as a string.
+1. `GetUrlContentLengthAsync` creates an <xref:System.Net.Http.HttpClient> instance and calls the <xref:System.Net.Http.HttpClient.GetStringAsync%2A> asynchronous method to download the contents of a website as a string.
 
-3. Something happens in `GetStringAsync` that suspends its progress. Perhaps it must wait for a website to download or some other blocking activity. To avoid blocking resources, `GetStringAsync` yields control to its caller, `AccessTheWebAsync`.
+1. Something happens in `GetStringAsync` that suspends its progress. Perhaps it must wait for a website to download or some other blocking activity. To avoid blocking resources, `GetStringAsync` yields control to its caller, `GetUrlContentLengthAsync`.
 
-     `GetStringAsync` returns a [Task(Of TResult)](xref:System.Threading.Tasks.Task%601) where TResult is a string, and `AccessTheWebAsync` assigns the task to the `getStringTask` variable. The task represents the ongoing process for the call to `GetStringAsync`, with a commitment to produce an actual string value when the work is complete.
+     `GetStringAsync` returns a [Task(Of TResult)](xref:System.Threading.Tasks.Task%601) where TResult is a string, and `GetUrlContentLengthAsync` assigns the task to the `getStringTask` variable. The task represents the ongoing process for the call to `GetStringAsync`, with a commitment to produce an actual string value when the work is complete.
 
-4. Because `getStringTask` hasn't been awaited yet, `AccessTheWebAsync` can continue with other work that doesn't depend on the final result from `GetStringAsync`. That work is represented by a call to the synchronous method `DoIndependentWork`.
+1. Because `getStringTask` hasn't been awaited yet, `GetUrlContentLengthAsync` can continue with other work that doesn't depend on the final result from `GetStringAsync`. That work is represented by a call to the synchronous method `DoIndependentWork`.
 
-5. `DoIndependentWork` is a synchronous method that does its work and returns to its caller.
+1. `DoIndependentWork` is a synchronous method that does its work and returns to its caller.
 
-6. `AccessTheWebAsync` has run out of work that it can do without a result from `getStringTask`. `AccessTheWebAsync` next wants to calculate and return the length of the downloaded string, but the method can't calculate that value until the method has the string.
+1. `GetUrlContentLengthAsync` has run out of work that it can do without a result from `getStringTask`. `GetUrlContentLengthAsync` next wants to calculate and return the length of the downloaded string, but the method can't calculate that value until the method has the string.
 
-     Therefore, `AccessTheWebAsync` uses an await operator to suspend its progress and to yield control to the method that called `AccessTheWebAsync`. `AccessTheWebAsync` returns a `Task(Of Integer)` to the caller. The task represents a promise to produce an integer result that's the length of the downloaded string.
+     Therefore, `GetUrlContentLengthAsync` uses an await operator to suspend its progress and to yield control to the method that called `GetUrlContentLengthAsync`. `GetUrlContentLengthAsync` returns a `Task(Of Integer)` to the caller. The task represents a promise to produce an integer result that's the length of the downloaded string.
 
     > [!NOTE]
-    > If `GetStringAsync` (and therefore `getStringTask`) is complete before `AccessTheWebAsync` awaits it, control remains in `AccessTheWebAsync`. The expense of suspending and then returning to `AccessTheWebAsync` would be wasted if the called asynchronous process (`getStringTask`) has already completed and AccessTheWebSync doesn't have to wait for the final result.
+    > If `GetStringAsync` (and therefore `getStringTask`) is complete before `GetUrlContentLengthAsync` awaits it, control remains in `GetUrlContentLengthAsync`. The expense of suspending and then returning to `GetUrlContentLengthAsync` would be wasted if the called asynchronous process (`getStringTask`) has already completed and `GetUrlContentLengthAsync` doesn't have to wait for the final result.
 
-     Inside the caller (the event handler in this example), the processing pattern continues. The caller might do other work that doesn't depend on the result from `AccessTheWebAsync` before awaiting that result, or the caller might await immediately.   The event handler is waiting for `AccessTheWebAsync`, and `AccessTheWebAsync` is waiting for `GetStringAsync`.
+     Inside the caller (the event handler in this example), the processing pattern continues. The caller might do other work that doesn't depend on the result from `GetUrlContentLengthAsync` before awaiting that result, or the caller might await immediately. The calling method is waiting for `GetUrlContentLengthAsync`, and `GetUrlContentLengthAsync` is waiting for `GetStringAsync`.
 
-7. `GetStringAsync` completes and produces a string result. The string result isn't returned by the call to `GetStringAsync` in the way that you might expect. (Remember that the method already returned a task in step 3.) Instead, the string result is stored in the task that represents the completion of the method, `getStringTask`. The await operator retrieves the result from `getStringTask`. The assignment statement assigns the retrieved result to `urlContents`.
+1. `GetStringAsync` completes and produces a string result. The string result isn't returned by the call to `GetStringAsync` in the way that you might expect. (Remember that the method already returned a task in step 3.) Instead, the string result is stored in the task that represents the completion of the method, `getStringTask`. The await operator retrieves the result from `getStringTask`. The assignment statement assigns the retrieved result to `contents`.
 
-8. When `AccessTheWebAsync` has the string result, the method can calculate the length of the string. Then the work of `AccessTheWebAsync` is also complete, and the waiting event handler can resume. In the full example at the end of the topic, you can confirm that the event handler retrieves and prints the value of the length result.
-
+1. When `GetUrlContentLengthAsync` has the string result, the method can calculate the length of the string. Then the work of `GetUrlContentLengthAsync` is also complete, and the waiting event handler can resume. In the full example at the end of the topic, you can confirm that the event handler retrieves and prints the value of the length result.
 If you are new to asynchronous programming, take a minute to consider the difference between synchronous and asynchronous behavior. A synchronous method returns when its work is complete (step 5), but an async method returns a task value when its work is suspended (steps 3 and 6). When the async method eventually completes its work, the task is marked as completed and the result, if any, is stored in the task.
 
 For more information about control flow, see [Control Flow in Async Programs (Visual Basic)](control-flow-in-async-programs.md).

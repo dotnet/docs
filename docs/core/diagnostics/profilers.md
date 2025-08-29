@@ -15,7 +15,6 @@ Microsoft provides a profiler with Visual Studio as well as through the ```dotne
 
 - [Measure app performance in Visual Studio](https://learn.microsoft.com/visualstudio/profiling/)
 
-
 ## dotnet-trace
 
 ```dotnet-trace``` is a cross-platform command-line tool that allows the collection of diagnostic traces on Windows, Linux and Mac. These traces can then be viewed in [Visual Studio](/visualstudio/profiling/beginners-guide-to-performance-profiling?#step-2-analyze-cpu-usage-data) or [PerfView](https://github.com/microsoft/perfview).

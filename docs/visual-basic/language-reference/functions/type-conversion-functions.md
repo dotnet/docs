@@ -190,7 +190,7 @@ Dim i3 As Integer = CInt(Math.Round(s))        ' Result: 174
 
 ## CType Operator
 
-The [CType Operator](ctype-function.md) takes a second argument, `typename`, and coerces `expression` to `typename`, where `typename` can be any data type, structure, class, or interface to which there exists a valid conversion.
+The [CType Operator](../operators/ctype-operator.md) takes a second argument, `typename`, and coerces `expression` to `typename`, where `typename` can be any data type, structure, class, or interface to which there exists a valid conversion.
 
 For a comparison of `CType` with the other type conversion keywords, see [DirectCast Operator](../operators/directcast-operator.md) and [TryCast Operator](../operators/trycast-operator.md).
 

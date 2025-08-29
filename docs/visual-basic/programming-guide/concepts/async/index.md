@@ -1,8 +1,7 @@
 ---
 description: "Learn more about: Asynchronous programming with Async and Await (Visual Basic)"
 title: "Asynchronous Programming with Async and Await"
-ms.date: 07/20/2015
-ms.assetid: bd7e462b-583b-4395-9c36-45aa9e61072c
+ms.date: 08/29/2025
 ai-usage: ai-generated
 ---
 # Asynchronous programming with Async and Await (Visual Basic)

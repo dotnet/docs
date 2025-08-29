@@ -3,7 +3,7 @@ title: .NET default templates for dotnet new
 description: The information about dotnet new templates shipped with dotnet SDK.
 ms.custom: updateeachrelease
 no-loc: [Blazor, WebAssembly]
-ms.date: 02/21/2024
+ms.date: 08/29/2024
 ---
 # .NET default templates for dotnet new
 
@@ -20,6 +20,30 @@ dotnet new list
 Each template may have additional options available. To show the additional options available for the template use the `--help` option with the template name argument, for example: `dotnet new console --help`.
 In case the template supports multiple languages, this command will show help for the template in the default language. By combining it with the `--language` option, you can see the help for other languages: `dotnet new console --help --language F#`.
 The templates that ship with the .NET SDK have the following additional options:
+
+## `buildprops`
+
+Creates a *Directory.Build.props* file for customizing MSBuild properties for an entire folder tree. For more information, see [Customize your build](/visualstudio/msbuild/customize-your-build).
+
+- **`--inherit`**
+
+  If specified, adds an Import element for the closest *Directory.Build.props* file in the parent directory hierarchy. By default, *Directory.Build.props* files don't inherit from parent directories, so enabling this option allows you to build up a hierarchy of customizations folder-by-folder.
+
+- **`--use-artifacts`**
+
+  If specified, adds a property to enable the artifacts output layout. This is a common pattern for projects that produce build artifacts, such as NuGet packages, that are placed in a common folder structure.
+
+***
+
+## `buildtargets`
+
+Creates a *Directory.Build.targets* file for customizing MSBuild targets and tasks for an entire folder tree. For more information, see [Customize your build](/visualstudio/msbuild/customize-your-build).
+
+- **`--inherit`**
+
+  If specified, adds an Import element for the closest *Directory.Build.targets* file in the parent directory hierarchy. By default, *Directory.Build.targets* files don't inherit from parent directories, so enabling this option allows you to build up a hierarchy of customizations folder-by-folder.
+
+***
 
 ## `console`
 
@@ -900,6 +924,15 @@ API Controller with or without read/write actions.
 
   The roll-forward policy to use when selecting an SDK version, either as a fallback when a specific SDK version is missing or as a directive to use a later version.
   For more information, see [global-json](global-json.md#rollforward).
+
+## `sln`
+
+Creates an empty solution file containing no projects.
+
+> [!NOTE]
+> In .NET SDK 9.0.200 and later, this template supports a `--format` option to choose between `sln` and `slnx` formats. Starting with .NET 10, the default format will be `slnx`.
+
+***
 
 ## `editorconfig`
 

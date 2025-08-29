@@ -108,7 +108,7 @@ dotnet-counters collect [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
 
 - **`--counters <COUNTERS>`**
 
-  A comma-separated list of counters. Counters can be specified `provider_name[:counter_name]`. If the `provider_name` is used without a qualifying list of counters, then all counters from the provider are shown. To discover provider and counter names, consult [built-in metrics docs](https://learn.microsoft.com/en-us/dotnet/core/diagnostics/built-in-metrics). For [EventCounters](event-counters.md), `provider_name` is the name of the EventSource and for [Meters](metrics.md), `provider_name` is the name of the Meter.
+  A comma-separated list of counters. Counters can be specified `provider_name[:counter_name]`. If the `provider_name` is used without a qualifying list of counters, then all counters from the provider are shown. To discover provider and counter names, consult [built-in metrics docs](https://learn.microsoft.com/dotnet/core/diagnostics/built-in-metrics). For [EventCounters](event-counters.md), `provider_name` is the name of the EventSource and for [Meters](metrics.md), `provider_name` is the name of the Meter.
 
 - **`--format <csv|json>`**
 
@@ -180,7 +180,7 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
 
 - **`--counters <COUNTERS>`**
 
-  A comma-separated list of counters. Counters can be specified `provider_name[:counter_name]`. If the `provider_name` is used without a qualifying list of counters, then all counters from the provider are shown. To discover provider and counter names, consult [built-in metrics docs](https://learn.microsoft.com/en-us/dotnet/core/diagnostics/built-in-metrics). For [EventCounters](event-counters.md), `provider_name` is the name of the EventSource and for [Meters](metrics.md), `provider_name` is the name of the Meter.
+  A comma-separated list of counters. Counters can be specified `provider_name[:counter_name]`. If the `provider_name` is used without a qualifying list of counters, then all counters from the provider are shown. To discover provider and counter names, consult [built-in metrics docs](https://learn.microsoft.com/dotnet/core/diagnostics/built-in-metrics). For [EventCounters](event-counters.md), `provider_name` is the name of the EventSource and for [Meters](metrics.md), `provider_name` is the name of the Meter.
 
  **`-- <command>`**
 

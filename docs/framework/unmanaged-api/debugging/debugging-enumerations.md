@@ -59,7 +59,7 @@ This section describes the unmanaged enumerations that the debugging API uses.
  Indicates various attributes of a value.
 
  [CorDebugJITCompilerFlagsDeprecated enumeration](cordebugjitcompilerflagsdeprecated-enumeration.md)\
- Obsolete. Use the `CORDEBUG_JIT_DEFAULT` member of the [CorDebugJITCompilerFlags](cordebugjitcompilerflags-enumeration.md) enumeration instead.
+ Obsolete. Use the `CORDEBUG_JIT_DEFAULT` member of the [CorDebugJITCompilerFlags](../../../core/unmanaged-api/debugging/icordebug/cordebugjitcompilerflags-enumeration.md) enumeration instead.
 
 ## Related Sections
 

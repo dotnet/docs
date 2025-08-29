@@ -255,7 +255,7 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
   ```
 
   > [!NOTE]
-  > If you are using an older version of .NET (<=8), if you are specifically requesting EventCounters as opposed to the default meters (for example through the command ```dotnet-counters monitor -p 65492 --counters EventCounters\System.Runtime```), or if only EventCounters are available, then the UI will look slightly different. See below for an example.
+  > If the app uses .NET version 8 or lower the [System.Runtime Meter](https://learn.microsoft.com/dotnet/core/diagnostics/built-in-metrics-runtime#systemruntime) didn't exist yet and dotnet-counters will fall back to display the older [System.Runtime EventCounters](https://learn.microsoft.com/dotnet/core/diagnostics/available-counters#systemruntime-counters) instead. The UI will look slightly different as shown below.
 
   ```
   [System.Runtime]

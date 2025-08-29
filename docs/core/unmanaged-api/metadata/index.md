@@ -7,7 +7,7 @@ ms.date: 08/29/2025
 
 The metadata API enables a client, such as a compiler, to generate or access a component's metadata without the types being loaded by the common language runtime (CLR).
 
-These articles describe APIs that were introduced in .NET Core 2.0 or later, or were introduced in .NET Framework but can be used on .NET (Core). For .NET Framework-specific unmanaged APIs, see [.NET Framework debugging](../../../framework/unmanaged-api/debugging/index.md).
+These articles describe APIs that were introduced in .NET Core 2.0 or later, or were introduced in .NET Framework but can be used on .NET (Core). For .NET Framework-specific unmanaged APIs, see [Metadata (Unmanaged API Reference)](../../../framework/unmanaged-api/metadata/index.md).
 
 ## Enumerations
 

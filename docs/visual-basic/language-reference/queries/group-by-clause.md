@@ -24,6 +24,13 @@ Groups the elements of a query result. Can also be used to apply aggregate funct
 Group [ listField1 [, listField2 [...] ] By keyExp1 [, keyExp2 [...] ]  
   Into aggregateList  
 ```  
+
+ -or-  
+
+```vb  
+Group [ listField1 [, listField2 [...] ] By alias1 = keyExp1 [, alias2 = keyExp2 [...] ]  
+  Into aggregateList  
+```  
   
 ## Parts  
   
@@ -31,13 +38,17 @@ Group [ listField1 [, listField2 [...] ] By keyExp1 [, keyExp2 [...] ]
   
      Optional. One or more fields of the query variable or variables that explicitly identify the fields to be included in the grouped result. If no fields are specified, all fields of the query variable or variables are included in the grouped result.  
   
+- `alias1`, `alias2`  
+
+     Optional. Names that are assigned to the grouping keys. If aliases are provided, they can be referenced in the query result instead of the key expressions.  
+
 - `keyExp1`  
-  
+
      Required. An expression that identifies the key to use to determine the groups of elements. You can specify more than one key to specify a composite key.  
-  
+
 - `keyExp2`  
-  
-     Optional. One or more additional keys that are combined with `keyExp1` to create a composite key.  
+
+     Optional. One or more additional keys that are combined with `keyExp1` to create a composite key.
   
 - `aggregateList`  
   

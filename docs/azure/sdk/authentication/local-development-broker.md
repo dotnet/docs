@@ -19,7 +19,7 @@ Brokered authentication offers the following benefits:
 - **System integration:** Applications that use the broker plug-and-play with the built-in account picker, allowing the user to quickly pick an existing account instead of reentering the same credentials over and over.
 - **Token Protection:** Ensures that the refresh tokens are device bound and enables apps to acquire device bound access tokens. See [Token Protection](/azure/active-directory/conditional-access/concept-token-protection).
 
-:::image type="content" source="../media/mermaidjs/local-broker-authentication.svg" alt-text="A diagram showing how a local .NET app uses the developer's credentials to connect to Azure by using locally installed development tools.":::
+:::image type="content" source="../media/mermaidjs/local-broker-authentication.svg" alt-text="A diagram showing how a local .NET app uses brokered credentials to connect to Azure resources.":::
 
 :::zone target="docs" pivot="os-windows"
 

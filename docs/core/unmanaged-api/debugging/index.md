@@ -24,16 +24,16 @@ Describes how an exported function invokes managed code.
 Describes why an exported function calls managed code.
 
 [CorDebugCreateProcessFlags enumeration](icordebug/cordebugcreateprocessflags-enumeration.md)\
-Provides additional debugging options that can be used in a call to the [ICorDebug::CreateProcess](icordebug-createprocess-method.md) method.
+Provides additional debugging options that can be used in a call to the [ICorDebug::CreateProcess](icordebug/icordebug-createprocess-method.md) method.
 
 [CorDebugDebugEventKind enumeration](icordebug/cordebugdebugeventkind-enumeration.md)\
-Indicates the type of event whose information is decoded by the [DecodeEvent](icordebugprocess6-decodeevent-method.md) method.
+Indicates the type of event whose information is decoded by the [DecodeEvent](icordebug/icordebugprocess6-decodeevent-method.md) method.
 
 [CorDebugDecodeEventFlagsWindows enumeration](icordebug/cordebugdecodeeventflagswindows-enumeration.md)\
 Provides additional information about debug events on the Windows platform.
 
 [CorDebugExceptionCallbackType enumeration](icordebug/cordebugexceptioncallbacktype-enumeration.md)\
-Indicates the type of callback that is made from an [ICorDebugManagedCallback2::Exception](icordebugmanagedcallback2-exception-method.md) event.
+Indicates the type of callback that is made from an [ICorDebugManagedCallback2::Exception](icordebug/icordebugmanagedcallback2-exception-method.md) event.
 
 [CorDebugExceptionFlags enumeration](icordebug/cordebugexceptionflags-enumeration.md)\
 Provides additional information about an exception.
@@ -65,9 +65,6 @@ Identifies the type of stack frame.
 [CorDebugJITCompilerFlags enumeration](icordebug/cordebugjitcompilerflags-enumeration.md)\
 Contains values that influence the behavior of the managed just-in-time (JIT) compiler.
 
-[CorDebugJITCompilerFlagsDeprecated enumeration](icordebug/cordebugjitcompilerflagsdeprecated-enumeration.md)\
-Obsolete. Use the `CORDEBUG_JIT_DEFAULT` member of the [CorDebugJITCompilerFlags](icordebug/cordebugjitcompilerflags-enumeration.md) enumeration instead.
-
 [CorDebugMappingResult enumeration](icordebug/cordebugmappingresult-enumeration.md)\
 Provides the details of how the value of the instruction pointer (IP) was obtained.
 
@@ -78,7 +75,7 @@ Specifies the status of the thread on which the managed debugging assistant (MDA
 Provides a value that determines whether a debugger loads native (NGen) images from the native image cache.
 
 [CorDebugPlatform enumeration](icordebug/cordebugplatform-enumeration.md)\
-Provides target platform values that are used by the [ICorDebugDataTarget::GetPlatform](icordebugdatatarget-getplatform-method.md) method.
+Provides target platform values that are used by the [ICorDebugDataTarget::GetPlatform](icordebug/icordebugdatatarget-getplatform-method.md) method.
 
 [CorDebugRecordFormat enumeration](icordebug/cordebugrecordformat-enumeration.md)\
 Describes the format of the data in a byte array that contains information about a native exception debug event.

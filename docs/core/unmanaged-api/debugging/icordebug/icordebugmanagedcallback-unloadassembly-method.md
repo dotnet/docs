@@ -39,7 +39,7 @@ HRESULT UnloadAssembly (
 
 ## Remarks
 
- The assembly should not be used after this callback.
+The assembly should not be used after this callback.
 
 ## Requirements
 

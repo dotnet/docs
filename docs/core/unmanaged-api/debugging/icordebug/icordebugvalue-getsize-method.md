@@ -35,9 +35,9 @@ HRESULT GetSize (
 
 ## Remarks
 
- If the value's type is a reference type, this method returns the size of the pointer rather than the size of the object.
+If the value's type is a reference type, this method returns the size of the pointer rather than the size of the object.
 
- The `ICorDebugValue::GetSize` method returns `COR_E_OVERFLOW` for objects that are larger than 4 GB on 64-bit platforms. Use the [ICorDebugValue3::GetSize64](icordebugvalue3-getsize64-method.md) method instead for objects that are larger than 4 GB.
+The `ICorDebugValue::GetSize` method returns `COR_E_OVERFLOW` for objects that are larger than 4 GB on 64-bit platforms. Use the [ICorDebugValue3::GetSize64](icordebugvalue3-getsize64-method.md) method instead for objects that are larger than 4 GB.
 
 ## Requirements
 

@@ -17,7 +17,7 @@ Represents the debug symbol information for an instance field.
 
 ## Remarks
 
- The `ICorDebugInstanceFieldSymbol` interface is used to retrieve the debug symbol information for an instance field.
+The `ICorDebugInstanceFieldSymbol` interface is used to retrieve the debug symbol information for an instance field.
 
 > [!NOTE]
 > This interface is available with .NET Native only. If you implement this interface for ICorDebug scenarios outside of .NET Native, the common language runtime will ignore this interface.

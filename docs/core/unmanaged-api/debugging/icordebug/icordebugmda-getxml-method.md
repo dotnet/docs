@@ -44,7 +44,7 @@ HRESULT GetXML (
 
 ## Remarks
 
- The `GetXML` method can potentially affect performance, depending on the size of the associated XML stream.
+The `GetXML` method can potentially affect performance, depending on the size of the associated XML stream.
 
 ## Requirements
 

@@ -35,11 +35,11 @@ HRESULT ExitProcess (
 
 ## Remarks
 
- You cannot continue from an `ExitProcess` event. This event may fire asynchronously to other events while the process appears to be stopped. This can occur if the process terminates while stopped, usually due to some external force.
+You cannot continue from an `ExitProcess` event. This event may fire asynchronously to other events while the process appears to be stopped. This can occur if the process terminates while stopped, usually due to some external force.
 
- If the common language runtime (CLR) is already dispatching a managed callback, this event will be delayed until after that callback has returned.
+If the common language runtime (CLR) is already dispatching a managed callback, this event will be delayed until after that callback has returned.
 
- The `ExitProcess` event is the only exit/unload event that is guaranteed to get called on shutdown.
+The `ExitProcess` event is the only exit/unload event that is guaranteed to get called on shutdown.
 
 ## Requirements
 

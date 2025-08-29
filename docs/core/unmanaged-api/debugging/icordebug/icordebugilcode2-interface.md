@@ -13,9 +13,7 @@ topic_type:
 ---
 # ICorDebugILCode2 Interface
 
-[Supported in the .NET Framework 4.5.2 and later versions]
-
- Logically extends the [ICorDebugILCode](icordebugilcode-interface.md) interface to provide methods that return the token for a function's local variable signature, and that map a profiler's instrumented intermediate language (IL) offsets to original method IL offsets.
+Logically extends the [ICorDebugILCode](icordebugilcode-interface.md) interface to provide methods that return the token for a function's local variable signature, and that map a profiler's instrumented intermediate language (IL) offsets to original method IL offsets.
 
 ## Methods
 

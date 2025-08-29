@@ -35,7 +35,7 @@ HRESULT CreateProcess (
 
 ## Remarks
 
- This method is not called until the common language runtime is initialized. Most of the [ICorDebug](icordebug-interface.md) methods will return CORDBG_E_NOTREADY before the `CreateProcess` callback.
+This method is not called until the common language runtime is initialized. Most of the [ICorDebug](icordebug-interface.md) methods will return CORDBG_E_NOTREADY before the `CreateProcess` callback.
 
 ## Requirements
 

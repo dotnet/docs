@@ -28,20 +28,20 @@ HRESULT GetFrame([out] ICorDebugFrame ** pFrame);
 
 ## Parameters
 
- `pFrame`
+ `pFrame`\
  [in] A pointer to the address of the created frame object that represents the current frame in the stack.
 
 ## Return Value
 
- This method returns the following specific HRESULTs as well as HRESULT errors that indicate method failure.
+This method returns the following specific HRESULTs as well as HRESULT errors that indicate method failure.
 
-|HRESULT|Description|
-|-------------|-----------------|
-|S_OK|The runtime successfully returned the current frame.|
-|E_FAIL|The current frame was not returned.|
-|S_FALSE|The current frame is a native stack frame.|
-|E_INVALIDARG|`pFrame` is null.|
-|CORDBG_E_PAST_END_OF_STACK|The frame pointer is already at the end of the stack; therefore, no additional frames can be accessed.|
+| HRESULT                    | Description                                          |
+|----------------------------|------------------------------------------------------|
+| S_OK                       | The runtime successfully returned the current frame. |
+| E_FAIL                     | The current frame was not returned.                  |
+| S_FALSE                    | The current frame is a native stack frame.           |
+| E_INVALIDARG               | `pFrame` is null.                                    |
+| CORDBG_E_PAST_END_OF_STACK | The frame pointer is already at the end of the stack; therefore, no additional frames can be accessed. |
 
 ## Exceptions
 

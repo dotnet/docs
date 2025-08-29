@@ -45,7 +45,7 @@ HRESULT GetActiveInternalFrames
 
 ## Return Value
 
- This method returns the following specific HRESULTs as well as HRESULT errors that indicate method failure.
+This method returns the following specific HRESULTs as well as HRESULT errors that indicate method failure.
 
 |HRESULT|Description|
 |-------------|-----------------|
@@ -57,13 +57,13 @@ HRESULT GetActiveInternalFrames
 
 ## Remarks
 
- Internal frames are data structures pushed onto the stack by the runtime to store temporary data.
+Internal frames are data structures pushed onto the stack by the runtime to store temporary data.
 
- When you first call `GetActiveInternalFrames`, you should set the `cInternalFrames` parameter to 0 (zero), and the `ppInternalFrames` parameter to null. When `GetActiveInternalFrames` first returns, `pcInternalFrames` contains the count of the internal frames on the stack.
+When you first call `GetActiveInternalFrames`, you should set the `cInternalFrames` parameter to 0 (zero), and the `ppInternalFrames` parameter to null. When `GetActiveInternalFrames` first returns, `pcInternalFrames` contains the count of the internal frames on the stack.
 
  `GetActiveInternalFrames` should then be called a second time. You should pass the proper count (`pcInternalFrames`) in the `cInternalFrames` parameter, and specify a pointer to an appropriately sized array in `ppInternalFrames`.
 
- Use the [ICorDebugStackWalk::GetFrame](icordebugthread3-getactiveinternalframes-method.md) method to return actual stack frames.
+Use the [ICorDebugStackWalk::GetFrame](icordebugthread3-getactiveinternalframes-method.md) method to return actual stack frames.
 
 ## Requirements
 

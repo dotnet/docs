@@ -17,14 +17,11 @@ Extends the [ICorDebugDebugEvent](icordebugdebugevent-interface.md) interface to
 
 ## Remarks
 
- The `ICorDebugExceptionDebugEvent` interface is implemented by the following event types:
+The `ICorDebugExceptionDebugEvent` interface is implemented by the following event types:
 
 - [MANAGED_EXCEPTION_FIRST_CHANCE](cordebugrecordformat-enumeration.md)
-
 - [MANAGED_EXCEPTION_USER_FIRST_CHANCE](cordebugrecordformat-enumeration.md)
-
 - [MANAGED_EXCEPTION_CATCH_HANDLER_FOUND](cordebugrecordformat-enumeration.md)
-
 - [MANAGED_EXCEPTION_UNHANDLED](cordebugrecordformat-enumeration.md)
 
 > [!NOTE]

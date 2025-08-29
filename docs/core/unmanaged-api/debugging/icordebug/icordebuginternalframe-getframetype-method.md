@@ -35,7 +35,7 @@ HRESULT GetFrameType (
 
 ## Remarks
 
- The internal frame type will never be STUBFRAME_NONE. Debuggers should gracefully ignore unrecognized internal frame types.
+The internal frame type will never be STUBFRAME_NONE. Debuggers should gracefully ignore unrecognized internal frame types.
 
 ## Requirements
 

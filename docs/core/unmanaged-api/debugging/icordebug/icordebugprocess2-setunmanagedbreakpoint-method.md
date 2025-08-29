@@ -48,7 +48,7 @@ HRESULT SetUnmanagedBreakpoint (
 
 ## Remarks
 
- If the native image offset is within the common language runtime (CLR), the breakpoint will be ignored. This allows the CLR to avoid dispatching an out-of-band breakpoint, when the breakpoint is set by the debugger.
+If the native image offset is within the common language runtime (CLR), the breakpoint will be ignored. This allows the CLR to avoid dispatching an out-of-band breakpoint, when the breakpoint is set by the debugger.
 
 ## Requirements
 

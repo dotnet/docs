@@ -39,7 +39,7 @@ HRESULT GetFunctionFromToken(
 
 ## Remarks
 
- The `GetFunctionFromToken` method returns a CORDBG_E_FUNCTION_NOT_IL HRESULT if the value passed in `methodDef` does not refer to a common intermediate language (CIL) method.
+The `GetFunctionFromToken` method returns a CORDBG_E_FUNCTION_NOT_IL HRESULT if the value passed in `methodDef` does not refer to a common intermediate language (CIL) method.
 
 ## Requirements
 

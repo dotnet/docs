@@ -47,7 +47,7 @@ HRESULT ReadVirtual(
 
 ## Remarks
 
- If the first byte (at the specified start address) can be read, the call should return success (to support efficient reading of data structures with self-describing length, like null-terminated strings).
+If the first byte (at the specified start address) can be read, the call should return success (to support efficient reading of data structures with self-describing length, like null-terminated strings).
 
 ## Requirements
 

@@ -35,7 +35,7 @@ HRESULT GetVersionNumber (
 
 ## Remarks
 
- The version number is incremented each time an edit-and-continue (EnC) operation is performed on the code.
+The version number is incremented each time an edit-and-continue (EnC) operation is performed on the code.
 
 ## Requirements
 

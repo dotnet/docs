@@ -40,7 +40,7 @@ Provides methods that allow developers to debug applications in the common langu
 
  `ICorDebug` represents an event processing loop for a debugger process. The debugger must wait for the [ICorDebugManagedCallback::ExitProcess](icordebugmanagedcallback-exitprocess-method.md) callback from all processes being debugged before releasing this interface.
 
- The `ICorDebug` object must be created by the [CreateDebuggingInterfaceFromVersion function](../createdebugginginterfacefromversion-function.md) function, which allows clients to get a specific implementation of `ICorDebug` that emulates a specific version of the debugging API.
+The `ICorDebug` object must be created by the [CreateDebuggingInterfaceFromVersion function](../createdebugginginterfacefromversion-function.md) function, which allows clients to get a specific implementation of `ICorDebug` that emulates a specific version of the debugging API.
 
 > [!NOTE]
 > This interface does not support being called remotely, either cross-machine or cross-process.

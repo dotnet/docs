@@ -39,7 +39,7 @@ HRESULT EnableJITDebugging(
 
 ## Remarks
 
- JIT debugging is enabled by default for all modules that are loaded when the debugger is active. Programmatically enabling or disabling the settings overrides global settings.
+JIT debugging is enabled by default for all modules that are loaded when the debugger is active. Programmatically enabling or disabling the settings overrides global settings.
 
 ## Requirements
 

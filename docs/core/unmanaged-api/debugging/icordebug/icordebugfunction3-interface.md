@@ -13,15 +13,13 @@ topic_type:
 ---
 # ICorDebugFunction3 Interface
 
-[Supported in the .NET Framework 4.5.2 and later versions]
-
- Logically extends the ICorDebugFunction interface to provide access to code from a ReJIT request.
+Logically extends the ICorDebugFunction interface to provide access to code from a ReJIT request.
 
 ## Methods
 
-|Method|Description|
-|------------|-----------------|
-|[GetActiveReJitRequestILCode Method](icordebugfunction3-getactiverejitrequestilcode-method.md)|Gets an interface pointer to an [ICorDebugILCode](icordebugilcode-interface.md) that contains the IL from an active ReJIT request.|
+| Method                                                                                         | Description |
+|------------------------------------------------------------------------------------------------|-------------|
+| [GetActiveReJitRequestILCode Method](icordebugfunction3-getactiverejitrequestilcode-method.md) | Gets an interface pointer to an [ICorDebugILCode](icordebugilcode-interface.md) that contains the IL from an active ReJIT request. |
 
 ## Remarks
 
@@ -34,4 +32,7 @@ topic_type:
  **Library:** CorGuids.lib
 
  **.NET versions:** Available since .NET Framework 4.5.2
+
+## See also
+
 - [ReJIT: A How-To Guide](/archive/blogs/davbr/rejit-a-how-to-guide)

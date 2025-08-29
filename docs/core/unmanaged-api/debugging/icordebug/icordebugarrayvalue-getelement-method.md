@@ -36,12 +36,12 @@ HRESULT GetElement (
  `cdim`
  [in] The number of dimensions of this `ICorDebugArrayValue` object.
 
- This value is also the size of the `indices` array because its size is equal to the number of dimensions of the `ICorDebugArrayValue` object.
+This value is also the size of the `indices` array because its size is equal to the number of dimensions of the `ICorDebugArrayValue` object.
 
  `indices`
  [in] An array of index values, each of which specifies a position within a dimension of the `ICorDebugArrayValue` object.
 
- This value must not be null.
+This value must not be null.
 
  `ppValue`
  [out] A pointer to the address of an ICorDebugValue object that represents the value of the specified element.

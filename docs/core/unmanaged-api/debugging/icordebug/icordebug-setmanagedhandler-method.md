@@ -37,7 +37,7 @@ HRESULT SetManagedHandler (
 
  `SetManagedHandler` must be called at creation time.
 
- If the `ICorDebugManagedCallback` implementation does not contain sufficient interfaces to handle debugging events for the application that is being debugged, `SetManagedHandler` returns an HRESULT of E_NOINTERFACE.
+If the `ICorDebugManagedCallback` implementation does not contain sufficient interfaces to handle debugging events for the application that is being debugged, `SetManagedHandler` returns an HRESULT of E_NOINTERFACE.
 
 ## Requirements
 

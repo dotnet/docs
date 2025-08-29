@@ -35,7 +35,7 @@ HRESULT GetActiveFrame (
 
 ## Remarks
 
- The `ppFrame` parameter is null if no frame is currently active.
+The `ppFrame` parameter is null if no frame is currently active.
 
 ## Requirements
 

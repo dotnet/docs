@@ -35,7 +35,7 @@ HRESULT GetID (
 
 ## Remarks
 
- The operating system identifier can potentially change during execution of a process, and can be a different value for different parts of the thread.
+The operating system identifier can potentially change during execution of a process, and can be a different value for different parts of the thread.
 
 ## Requirements
 

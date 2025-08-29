@@ -9,17 +9,16 @@ Defines the base interface from which all `ICorDebug` debug events derive.
 
 ## Methods
 
-|Method|Description|
-|------------|-----------------|
+| Method | Description |
+|--------|-------------|
 |[GetEventKind Method](icordebugdebugevent-geteventkind-method.md)|Indicates what kind of event this `ICorDebugDebugEvent` object represents.|
 |[GetThread Method](icordebugdebugevent-getthread-method.md)|Gets the thread on which the event occurred.|
 
 ## Remarks
 
- The following interfaces are derived from the `ICorDebugDebugEvent` interface:
+The following interfaces are derived from the `ICorDebugDebugEvent` interface:
 
 - [ICorDebugExceptionDebugEvent](icordebugexceptiondebugevent-interface.md)
-
 - [ICorDebugModuleDebugEvent](icordebugmoduledebugevent-interface.md)
 
 > [!NOTE]

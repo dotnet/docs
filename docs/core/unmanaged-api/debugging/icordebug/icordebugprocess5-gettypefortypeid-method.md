@@ -39,7 +39,7 @@ HRESULT GetTypeForTypeID(
 
 ## Remarks
 
- In some cases, methods that return a type identifier may return a null `COR_TYPEID` value. If this value is passed as the `id` argument, the `GetTypeForTypeID` method will fail and return `E_FAIL`.
+In some cases, methods that return a type identifier may return a null `COR_TYPEID` value. If this value is passed as the `id` argument, the `GetTypeForTypeID` method will fail and return `E_FAIL`.
 
 ## Requirements
 

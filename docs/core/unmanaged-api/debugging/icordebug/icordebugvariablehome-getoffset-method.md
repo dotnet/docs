@@ -35,7 +35,7 @@ HRESULT GetOffset(
 
 ## Return Value
 
- The method returns the following values:
+The method returns the following values:
 
 |Value|Description|
 |-----------|-----------------|

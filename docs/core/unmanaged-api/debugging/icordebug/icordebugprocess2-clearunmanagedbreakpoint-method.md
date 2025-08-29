@@ -35,11 +35,11 @@ HRESULT ClearUnmanagedBreakpoint (
 
 ## Remarks
 
- The specified breakpoint would have been previously set by an earlier call to [ICorDebugProcess2::SetUnmanagedBreakpoint](icordebugprocess2-setunmanagedbreakpoint-method.md).
+The specified breakpoint would have been previously set by an earlier call to [ICorDebugProcess2::SetUnmanagedBreakpoint](icordebugprocess2-setunmanagedbreakpoint-method.md).
 
- The `ClearUnmanagedBreakpoint` method can be called while the process being debugged is running.
+The `ClearUnmanagedBreakpoint` method can be called while the process being debugged is running.
 
- The `ClearUnmanagedBreakpoint` method returns a failure code if the debugger is attached in managed-only mode or if no breakpoint exists at the specified address.
+The `ClearUnmanagedBreakpoint` method returns a failure code if the debugger is attached in managed-only mode or if no breakpoint exists at the specified address.
 
 ## Requirements
 

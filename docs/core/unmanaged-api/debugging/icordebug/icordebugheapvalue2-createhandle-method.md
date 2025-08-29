@@ -39,9 +39,9 @@ HRESULT CreateHandle (
 
 ## Remarks
 
- The handle will be created in the application domain that is associated with the heap value, and will become invalid if the application domain gets unloaded.
+The handle will be created in the application domain that is associated with the heap value, and will become invalid if the application domain gets unloaded.
 
- Multiple calls to this function for the same heap value will create multiple handles. Because handles affect the performance of the garbage collector, the debugger should limit itself to a relatively small number of handles (about 256) that are active at a time.
+Multiple calls to this function for the same heap value will create multiple handles. Because handles affect the performance of the garbage collector, the debugger should limit itself to a relatively small number of handles (about 256) that are active at a time.
 
 ## Requirements
 

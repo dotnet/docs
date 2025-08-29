@@ -26,7 +26,7 @@ HRESULT GetSlotIndex(
 
 ## Remarks
 
- The managed slot index of a local variable can be used to retrieve the variable's metadata information
+The managed slot index of a local variable can be used to retrieve the variable's metadata information
 
 > [!NOTE]
 > This method is available with .NET Native only.

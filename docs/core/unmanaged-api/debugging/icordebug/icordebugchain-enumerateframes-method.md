@@ -35,9 +35,9 @@ HRESULT EnumerateFrames (
 
 ## Remarks
 
- The chain represents the physical call stack for the thread.
+The chain represents the physical call stack for the thread.
 
- The `EnumerateFrames` method should be called only for managed chains. The debugging API does not provide methods for obtaining frames contained in unmanaged chains. The debugger must use other means to obtain this information.
+The `EnumerateFrames` method should be called only for managed chains. The debugging API does not provide methods for obtaining frames contained in unmanaged chains. The debugger must use other means to obtain this information.
 
 ## Requirements
 

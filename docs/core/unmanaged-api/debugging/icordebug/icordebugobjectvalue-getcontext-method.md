@@ -18,7 +18,7 @@ topic_type:
 ---
 # ICorDebugObjectValue::GetContext Method
 
-`GetContext` is not implemented in this version of the .NET Framework.
+`GetContext` is not implemented.
 
 ## Syntax
 

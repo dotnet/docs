@@ -33,11 +33,11 @@ HRESULT GetCaller (
  `ppChain`
  [out] A pointer to the address of an ICorDebugChain object that represents the calling chain.
 
- If this chain was spontaneously called (as would be the case if this chain or the debugger initialized the call stack), `ppChain` will be null.
+If this chain was spontaneously called (as would be the case if this chain or the debugger initialized the call stack), `ppChain` will be null.
 
 ## Remarks
 
- The calling chain may be on a different thread, if the call was marshalled across threads.
+The calling chain may be on a different thread, if the call was marshalled across threads.
 
 ## Requirements
 

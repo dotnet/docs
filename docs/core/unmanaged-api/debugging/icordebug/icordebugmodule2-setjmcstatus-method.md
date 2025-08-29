@@ -43,11 +43,11 @@ HRESULT SetJMCStatus (
 
 ## Remarks
 
- The JMC status of each method that is specified in the `pTokens` array is set to the opposite of the `bIsJustMycode` value. The status of all other methods in this module is set to the `bIsJustMycode` value.
+The JMC status of each method that is specified in the `pTokens` array is set to the opposite of the `bIsJustMycode` value. The status of all other methods in this module is set to the `bIsJustMycode` value.
 
- The `SetJMCStatus` method erases all previous JMC settings in this module.
+The `SetJMCStatus` method erases all previous JMC settings in this module.
 
- The `SetJMCStatus` method returns an S_OK HRESULT if all functions were set successfully. It returns a CORDBG_E_FUNCTION_NOT_DEBUGGABLE HRESULT if some functions that are marked `true` are not debuggable.
+The `SetJMCStatus` method returns an S_OK HRESULT if all functions were set successfully. It returns a CORDBG_E_FUNCTION_NOT_DEBUGGABLE HRESULT if some functions that are marked `true` are not debuggable.
 
 ## Requirements
 

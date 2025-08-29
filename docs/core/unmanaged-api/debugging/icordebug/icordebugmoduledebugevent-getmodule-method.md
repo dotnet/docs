@@ -22,7 +22,7 @@ HRESULT GetModule(
 
 ## Remarks
 
- You can call the [GetEventKind](icordebugdebugevent-geteventkind-method.md) method to determine whether the module was loaded or unloaded.
+You can call the [GetEventKind](icordebugdebugevent-geteventkind-method.md) method to determine whether the module was loaded or unloaded.
 
 > [!NOTE]
 > This method is available with .NET Native only.

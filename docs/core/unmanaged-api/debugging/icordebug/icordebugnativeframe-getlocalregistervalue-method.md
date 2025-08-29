@@ -47,7 +47,7 @@ HRESULT GetLocalRegisterValue (
 
 ## Remarks
 
- The `GetLocalRegisterValue` method can be used either in a native frame or a just-in-time (JIT)-compiled frame.
+The `GetLocalRegisterValue` method can be used either in a native frame or a just-in-time (JIT)-compiled frame.
 
 ## Requirements
 

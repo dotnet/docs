@@ -35,7 +35,7 @@ HRESULT SetValue (
 
 ## Remarks
 
- For reference types, the value is the reference, not the content.
+For reference types, the value is the reference, not the content.
 
 ## Requirements
 

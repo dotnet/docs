@@ -30,7 +30,7 @@ HRESULT GetCulture(
 
 ## Remarks
 
- The culture name is a unique string that identifies a culture, such as "en-US" (for the English (United States) culture), or "neutral" (for a neutral culture).
+The culture name is a unique string that identifies a culture, such as "en-US" (for the English (United States) culture), or "neutral" (for a neutral culture).
 
 > [!NOTE]
 > This method is available with .NET Native only.

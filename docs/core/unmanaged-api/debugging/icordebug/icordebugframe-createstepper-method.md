@@ -35,7 +35,7 @@ HRESULT CreateStepper (
 
 ## Remarks
 
- If the frame is not active, the stepper object will typically have to return to the frame before the step is completed.
+If the frame is not active, the stepper object will typically have to return to the frame before the step is completed.
 
 ## Requirements
 

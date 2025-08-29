@@ -35,7 +35,7 @@ HRESULT GetDebugState (
 
 ## Remarks
 
- If the process is currently stopped, `pState` represents the debug state that would exist for this thread if the process were to be continued, not the actual current state of this thread.
+If the process is currently stopped, `pState` represents the debug state that would exist for this thread if the process were to be continued, not the actual current state of this thread.
 
 ## Requirements
 

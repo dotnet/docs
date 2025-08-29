@@ -44,7 +44,7 @@ HRESULT GetDescription (
 
 ## Remarks
 
- The string can be zero in length.
+The string can be zero in length.
 
 ## Requirements
 

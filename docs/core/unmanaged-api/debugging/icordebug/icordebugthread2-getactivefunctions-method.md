@@ -42,13 +42,13 @@ HRESULT GetActiveFunctions (
  `pFunctions`
  [in, out] An array of COR_ACTIVE_FUNCTION objects, each of which contains information about the active functions in this thread's frames.
 
- The first element will be used for the leaf frame, and so on back to the root of the stack.
+The first element will be used for the leaf frame, and so on back to the root of the stack.
 
 ## Remarks
 
- If `pFunctions` is null on input, `GetActiveFunctions` returns only the number of functions that are on the stack. That is, If `pFunctions` is null on input, `GetActiveFunctions` returns a value only in `pcFunctions`.
+If `pFunctions` is null on input, `GetActiveFunctions` returns only the number of functions that are on the stack. That is, If `pFunctions` is null on input, `GetActiveFunctions` returns a value only in `pcFunctions`.
 
- The `GetActiveFunctions` method is intended as an optimization over getting the same information from frames in a stack trace, and includes only frames that would have had an ICorDebugILFrame object for them in the full stack trace.
+The `GetActiveFunctions` method is intended as an optimization over getting the same information from frames in a stack trace, and includes only frames that would have had an ICorDebugILFrame object for them in the full stack trace.
 
 ## Requirements
 

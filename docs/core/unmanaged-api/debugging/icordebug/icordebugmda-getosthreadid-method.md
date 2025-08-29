@@ -35,7 +35,7 @@ HRESULT GetOSThreadId (
 
 ## Remarks
 
- The OS thread is used instead of an ICorDebugThread to allow for situations in which an MDA is fired either on a native thread or on a managed thread that has not yet entered managed code.
+The OS thread is used instead of an ICorDebugThread to allow for situations in which an MDA is fired either on a native thread or on a managed thread that has not yet entered managed code.
 
 ## Requirements
 

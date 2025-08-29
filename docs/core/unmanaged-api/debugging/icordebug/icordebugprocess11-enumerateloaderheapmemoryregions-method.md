@@ -18,7 +18,7 @@ topic_type:
 
 [Supported in .NET 5 and later versions.]
 
- Enumerates ranges of native memory that are used by the .NET runtime to store internal data structures that describe .NET types and methods. The information returned is the same information that would be shown by using the SOS `eeheap-loader` command.
+Enumerates ranges of native memory that are used by the .NET runtime to store internal data structures that describe .NET types and methods. The information returned is the same information that would be shown by using the SOS `eeheap-loader` command.
 
 ## Syntax
 

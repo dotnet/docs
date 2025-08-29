@@ -47,7 +47,7 @@ HRESULT BreakpointSetError (
 
 ## Remarks
 
- The given breakpoint will never be hit. The debugger should deactivate and rebind it.
+The given breakpoint will never be hit. The debugger should deactivate and rebind it.
 
 ## Requirements
 

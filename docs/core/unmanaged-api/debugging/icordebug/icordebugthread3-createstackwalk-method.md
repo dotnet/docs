@@ -33,7 +33,7 @@ HRESULT CreateStackWalk([out] ICorDebugStackWalk **ppStackWalk);
 
 ## Return Value
 
- This method returns the following specific HRESULTs as well as HRESULT errors that indicate method failure.
+This method returns the following specific HRESULTs as well as HRESULT errors that indicate method failure.
 
 |HRESULT|Description|
 |-------------|-----------------|
@@ -44,7 +44,7 @@ HRESULT CreateStackWalk([out] ICorDebugStackWalk **ppStackWalk);
 
 ## Remarks
 
- If the `CreateStackWalk` method succeeds, the returned `ICorDebugStackWalk` object's context is set to the thread's current context.
+If the `CreateStackWalk` method succeeds, the returned `ICorDebugStackWalk` object's context is set to the thread's current context.
 
 ## Requirements
 

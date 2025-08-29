@@ -29,7 +29,7 @@ Provides methods that test for child and parent frame relationships.
 
 ## Remarks
 
- This interface logically extends the "ICorDebugNativeFrame" interface.
+This interface logically extends the "ICorDebugNativeFrame" interface.
 
 > [!NOTE]
 > This interface does not support being called remotely, either cross-machine or cross-process.

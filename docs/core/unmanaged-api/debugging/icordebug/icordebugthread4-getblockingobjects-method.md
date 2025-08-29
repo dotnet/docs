@@ -34,15 +34,15 @@ HRESULT GetBlockingObjects (
 
 ## Remarks
 
- The first element in the returned enumeration corresponds to the first structure that is blocking the thread. The second element corresponds to a blocking item that is encountered while running an asynchronous procedure call (APC) when blocked on the first, and so on.
+The first element in the returned enumeration corresponds to the first structure that is blocking the thread. The second element corresponds to a blocking item that is encountered while running an asynchronous procedure call (APC) when blocked on the first, and so on.
 
- The enumeration is valid only for the duration of the current synchronized state.
+The enumeration is valid only for the duration of the current synchronized state.
 
- This method must be called while the debuggee is in a synchronized state.
+This method must be called while the debuggee is in a synchronized state.
 
- If `ppBlockingObjectEnum` is not a valid pointer, the result is undefined.
+If `ppBlockingObjectEnum` is not a valid pointer, the result is undefined.
 
- If a thread is blocked and the error cannot be determined, the method returns an HRESULT that indicates failure; otherwise, it returns S_OK.
+If a thread is blocked and the error cannot be determined, the method returns an HRESULT that indicates failure; otherwise, it returns S_OK.
 
 ## Requirements
 

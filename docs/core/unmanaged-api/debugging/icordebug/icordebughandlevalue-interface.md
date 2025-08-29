@@ -28,7 +28,7 @@ A subclass of ICorDebugReferenceValue that represents a reference value to which
 
 ## Remarks
 
- An `ICorDebugReferenceValue` object is invalidated by a break in the execution of debugged code. An `ICorDebugHandleValue` maintains its reference through breaks and continuations, until it is explicitly released.
+An `ICorDebugReferenceValue` object is invalidated by a break in the execution of debugged code. An `ICorDebugHandleValue` maintains its reference through breaks and continuations, until it is explicitly released.
 
 > [!NOTE]
 > This interface does not support being called remotely, either cross-machine or cross-process.

@@ -18,7 +18,7 @@ HRESULT GetContainerAssembly(
 ## Parameters
 
  `ppAssembly`
- A pointer to the address of an ICorDebugAssembly object that represents the container assembly, or **null** if the method call fails.
+A pointer to the address of an ICorDebugAssembly object that represents the container assembly, or **null** if the method call fails.
 
 ## Return Value
 
@@ -26,7 +26,7 @@ HRESULT GetContainerAssembly(
 
 ## Remarks
 
- If this assembly has been merged with others inside a single container assembly, this method returns the container assembly. For more information and terminology, see the [ICorDebugProcess6::EnableVirtualModuleSplitting](icordebugprocess6-enablevirtualmodulesplitting-method.md) topic.
+If this assembly has been merged with others inside a single container assembly, this method returns the container assembly. For more information and terminology, see the [ICorDebugProcess6::EnableVirtualModuleSplitting](icordebugprocess6-enablevirtualmodulesplitting-method.md) topic.
 
 > [!NOTE]
 > This method is available with .NET Native only.

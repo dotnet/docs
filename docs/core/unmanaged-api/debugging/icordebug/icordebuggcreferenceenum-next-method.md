@@ -31,13 +31,13 @@ HRESULT Next(
 
 ## Parameters
 
- celt
+celt
  [in] The number of roots to be retrieved.
 
- roots
+roots
  [out] An array of pointers, each of which points to a [COR_GC_REFERENCE](cor-gc-reference-structure.md) object that represents the root of an object to be garbage-collected.
 
- pceltFetched
+pceltFetched
  [out] A pointer to the number of [COR_GC_REFERENCE](cor-gc-reference-structure.md) objects actually returned in `roots`. This value may be `null` if `celt` is 1.
 
 ## Remarks

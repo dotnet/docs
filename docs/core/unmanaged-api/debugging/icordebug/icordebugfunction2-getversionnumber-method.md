@@ -35,13 +35,13 @@ HRESULT GetVersionNumber (
 
 ## Remarks
 
- The runtime keeps track of the number of edits that have taken place to each module during a debug session. The version number of a function is one more than the number of the edit that introduced the function. The function's original version is version 1. The number is incremented for a module every time [ICorDebugModule2::ApplyChanges](icordebugmodule2-applychanges-method.md) is called on that module. Thus, if a function’s body was replaced in the first and third call to `ICorDebugModule2::ApplyChanges`, `GetVersionNumber` may return version 1, 2, or 4 for that function, but not version 3. (That function would have no version 3.)
+The runtime keeps track of the number of edits that have taken place to each module during a debug session. The version number of a function is one more than the number of the edit that introduced the function. The function's original version is version 1. The number is incremented for a module every time [ICorDebugModule2::ApplyChanges](icordebugmodule2-applychanges-method.md) is called on that module. Thus, if a function’s body was replaced in the first and third call to `ICorDebugModule2::ApplyChanges`, `GetVersionNumber` may return version 1, 2, or 4 for that function, but not version 3. (That function would have no version 3.)
 
- The version number is tracked separately for each module. So, if you perform four edits on Module 1, and none on Module 2, your next edit on Module 1 will assign a version number of 6 to all the edited functions in Module 1. If the same edit touches Module 2, the functions in Module 2 will get a version number of 2.
+The version number is tracked separately for each module. So, if you perform four edits on Module 1, and none on Module 2, your next edit on Module 1 will assign a version number of 6 to all the edited functions in Module 1. If the same edit touches Module 2, the functions in Module 2 will get a version number of 2.
 
- The version number obtained by the `GetVersionNumber` method may be lower than that obtained by [ICorDebugFunction::GetCurrentVersionNumber](icordebugfunction-getcurrentversionnumber-method.md).
+The version number obtained by the `GetVersionNumber` method may be lower than that obtained by [ICorDebugFunction::GetCurrentVersionNumber](icordebugfunction-getcurrentversionnumber-method.md).
 
- The [ICorDebugCode::GetVersionNumber](icordebugcode-getversionnumber-method.md) method performs the same operation as `ICorDebugFunction2::GetVersionNumber`.
+The [ICorDebugCode::GetVersionNumber](icordebugcode-getversionnumber-method.md) method performs the same operation as `ICorDebugFunction2::GetVersionNumber`.
 
 ## Requirements
 

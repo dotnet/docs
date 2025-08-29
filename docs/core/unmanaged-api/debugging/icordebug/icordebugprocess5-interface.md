@@ -38,7 +38,7 @@ Extends the ICorDebugProcess interface to support access to the managed heap, to
 
 ## Remarks
 
- This interface logically extends the ICorDebugProcess, ICorDebugProcess2, and [ICorDebugProcess3](icordebugprocess3-interface.md) interfaces.
+This interface logically extends the ICorDebugProcess, ICorDebugProcess2, and [ICorDebugProcess3](icordebugprocess3-interface.md) interfaces.
 
 > [!NOTE]
 > This interface does not support being called remotely, either from another machine or from another process.

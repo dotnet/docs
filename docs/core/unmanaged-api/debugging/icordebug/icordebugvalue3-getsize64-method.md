@@ -30,14 +30,14 @@ HRESULT GetSize64(
 
 ## Parameters
 
- pSize
+pSize
  [out] A pointer to the size, in bytes, of this object.
 
 ## Remarks
 
- If this value's type is a reference type, this method returns the size of the pointer rather than the size of the object.
+If this value's type is a reference type, this method returns the size of the pointer rather than the size of the object.
 
- The `ICorDebugValue3::GetSize` method differs from the [ICorDebugValue::GetSize](icordebugvalue-getsize-method.md) method in the type of its output parameter. In [ICorDebugValue::GetSize](icordebugvalue-getsize-method.md), the output parameter is a `ULONG32`; in `ICorDebugValue3::GetSize`, it is a `ULONG64`. This enables the [ICorDebugValue3](icordebugvalue3-interface.md) interface to report the size of arrays that exceed 2GB.
+The `ICorDebugValue3::GetSize` method differs from the [ICorDebugValue::GetSize](icordebugvalue-getsize-method.md) method in the type of its output parameter. In [ICorDebugValue::GetSize](icordebugvalue-getsize-method.md), the output parameter is a `ULONG32`; in `ICorDebugValue3::GetSize`, it is a `ULONG64`. This enables the [ICorDebugValue3](icordebugvalue3-interface.md) interface to report the size of arrays that exceed 2GB.
 
 ## Requirements
 

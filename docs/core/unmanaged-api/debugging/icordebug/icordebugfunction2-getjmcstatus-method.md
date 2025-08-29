@@ -35,7 +35,7 @@ HRESULT GetJMCStatus (
 
 ## Remarks
 
- If the function represented by this `ICorDebugFunction2` cannot be debugged, `pbIsJustMyCode` will always be `false`.
+If the function represented by this `ICorDebugFunction2` cannot be debugged, `pbIsJustMyCode` will always be `false`.
 
 ## Requirements
 

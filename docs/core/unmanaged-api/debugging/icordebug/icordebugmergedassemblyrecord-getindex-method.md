@@ -22,7 +22,7 @@ HRESULT GetIndex(
 
 ## Remarks
 
- The prefix index is used to prevent name collisions in the merged metadata type names.
+The prefix index is used to prevent name collisions in the merged metadata type names.
 
 > [!NOTE]
 > This method is available with .NET Native only.

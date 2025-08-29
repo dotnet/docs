@@ -35,9 +35,9 @@ HRESULT GetResult (
 
 ## Remarks
 
- The `GetResult` method is valid only after the evaluation is completed.
+The `GetResult` method is valid only after the evaluation is completed.
 
- If the evaluation completes normally, `ppResult` specifies the results. If it terminates with an exception, the result is the exception thrown. If the evaluation was for a new object, the result is the reference to the new object.
+If the evaluation completes normally, `ppResult` specifies the results. If it terminates with an exception, the result is the exception thrown. If the evaluation was for a new object, the result is the reference to the new object.
 
 ## Requirements
 

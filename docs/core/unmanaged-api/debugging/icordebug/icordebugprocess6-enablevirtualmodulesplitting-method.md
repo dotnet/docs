@@ -22,35 +22,35 @@ HRESULT EnableVirtualModuleSplitting(
 
 ## Remarks
 
- Virtual module splitting causes [ICorDebug](icordebug-interface.md) to recognize modules that were merged together during the build process and present them as a group of separate modules rather than a single large module. Doing this changes the behavior of various [ICorDebug](icordebug-interface.md) methods described below.
+Virtual module splitting causes [ICorDebug](icordebug-interface.md) to recognize modules that were merged together during the build process and present them as a group of separate modules rather than a single large module. Doing this changes the behavior of various [ICorDebug](icordebug-interface.md) methods described below.
 
 > [!NOTE]
 > This method is available with .NET Native only.
 
- This method can be called and the value of `enableSplitting` can be changed at any time. It does not cause any stateful functional changes in an [ICorDebug](icordebug-interface.md) object, other than altering the behavior of the methods listed in the [Virtual module splitting and the unmanaged debugging APIs](#APIs) section at the time they are called. Using virtual modules does incur a performance penalty when calling those methods. In addition, significant in-memory caching of the virtualized metadata may be required to correctly implement the [IMetaDataImport](../../metadata/interfaces/imetadataimport-interface.md) APIs, and these caches may be retained even after virtual module splitting has been turned off.
+This method can be called and the value of `enableSplitting` can be changed at any time. It does not cause any stateful functional changes in an [ICorDebug](icordebug-interface.md) object, other than altering the behavior of the methods listed in the [Virtual module splitting and the unmanaged debugging APIs](#APIs) section at the time they are called. Using virtual modules does incur a performance penalty when calling those methods. In addition, significant in-memory caching of the virtualized metadata may be required to correctly implement the [IMetaDataImport](../../metadata/interfaces/imetadataimport-interface.md) APIs, and these caches may be retained even after virtual module splitting has been turned off.
 
 ## Terminology
 
- The following terms are used when describing virtual module splitting:
+The following terms are used when describing virtual module splitting:
 
- container modules, or containers
- The aggregate modules.
+container modules, or containers
+The aggregate modules.
 
- sub-modules, or virtual modules
- The modules found in a container.
+sub-modules, or virtual modules
+The modules found in a container.
 
- regular modules
- Modules that were not merged at build time. They are neither container modules nor sub-modules.
+regular modules
+Modules that were not merged at build time. They are neither container modules nor sub-modules.
 
- Both container modules and sub-modules are represented by ICorDebugModule interface objects. However, the behavior of the interface is slightly different in each case, as the \<x-ref to section> section describes.
+Both container modules and sub-modules are represented by ICorDebugModule interface objects. However, the behavior of the interface is slightly different in each case, as the \<x-ref to section> section describes.
 
 ## Modules and assemblies
 
- Multi-module assemblies are not supported for assembly merging scenarios, so there is a one-to-one relationship between a module and an assembly. Each ICorDebugModule object, regardless of whether it represents a container module or a sub-module, has a corresponding ICorDebugAssembly object. The [ICorDebugModule::GetAssembly](icordebugmodule-getassembly-method.md) method converts from the module to the assembly. To map in the other direction, the [ICorDebugAssembly::EnumerateModules](icordebugassembly-enumeratemodules-method.md) method enumerates only 1 module. Because assembly and module form a tightly coupled pair in this case, the terms assembly and module become largely interchangeable.
+Multi-module assemblies are not supported for assembly merging scenarios, so there is a one-to-one relationship between a module and an assembly. Each ICorDebugModule object, regardless of whether it represents a container module or a sub-module, has a corresponding ICorDebugAssembly object. The [ICorDebugModule::GetAssembly](icordebugmodule-getassembly-method.md) method converts from the module to the assembly. To map in the other direction, the [ICorDebugAssembly::EnumerateModules](icordebugassembly-enumeratemodules-method.md) method enumerates only 1 module. Because assembly and module form a tightly coupled pair in this case, the terms assembly and module become largely interchangeable.
 
 ## Behavioral differences
 
- Container modules have the following behaviors and characteristics:
+Container modules have the following behaviors and characteristics:
 
 - Their metadata for all of the constituent sub-modules is merged together.
 
@@ -64,7 +64,7 @@ HRESULT EnableVirtualModuleSplitting(
 
 - The ICorDebugAssembly3.GetContainerAssembly method returns `S_FALSE`.
 
- Sub-modules have the following behaviors and characteristics:
+Sub-modules have the following behaviors and characteristics:
 
 - They have a reduced set of metadata that corresponds only to the original assembly that was merged.
 
@@ -82,19 +82,19 @@ HRESULT EnableVirtualModuleSplitting(
 
 ## Interfaces retrieved from modules
 
- A variety of interfaces can be created or retrieved from modules. Some of these include:
+A variety of interfaces can be created or retrieved from modules. Some of these include:
 
 - An ICorDebugClass object, which is returned by the [ICorDebugModule::GetClassFromToken](icordebugmodule-getclassfromtoken-method.md) method.
 
 - An ICorDebugAssembly object, which is returned by the [ICorDebugModule::GetAssembly](icordebugmodule-getassembly-method.md) method.
 
- These objects are always cached by [ICorDebug](icordebug-interface.md), and they will have the same pointer identity regardless of whether they were created or queried from the container module or a sub-module. The sub-module provides a filtered view of these cached objects, not a separate cache with its own copies.
+These objects are always cached by [ICorDebug](icordebug-interface.md), and they will have the same pointer identity regardless of whether they were created or queried from the container module or a sub-module. The sub-module provides a filtered view of these cached objects, not a separate cache with its own copies.
 
 <a name="APIs"></a>
 
 ## Virtual module splitting and the unmanaged debugging APIs
 
- The following table shows how virtual module splitting affects the behavior of other methods in the unmanaged debugging API.
+The following table shows how virtual module splitting affects the behavior of other methods in the unmanaged debugging API.
 
 |Method|`enableSplitting` = `true`|`enableSplitting` = `false`|
 |------------|---------------------------------|----------------------------------|

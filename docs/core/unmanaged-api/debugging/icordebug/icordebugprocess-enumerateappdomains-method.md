@@ -34,7 +34,7 @@ HRESULT EnumerateAppDomains(
 
 ## Remarks
 
- This method can be used before the [ICorDebugManagedCallback::CreateProcess](icordebugmanagedcallback-createprocess-method.md) callback.
+This method can be used before the [ICorDebugManagedCallback::CreateProcess](icordebugmanagedcallback-createprocess-method.md) callback.
 
 ## Requirements
 

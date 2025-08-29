@@ -38,10 +38,10 @@ HRESULT GetArgumentIndex(
 
 The method returns the following values.
 
-|Value|Description|
-|-----------|-----------------|
-|`S_OK`|The method call returned a valid argument index.|
-|`E_FAIL`|The current [ICorDebugVariableHome](icordebugvariablehome-interface.md) instance represents a local variable.|
+| Value    | Description                                      |
+|----------|--------------------------------------------------|
+| `S_OK`   | The method call returned a valid argument index. |
+| `E_FAIL` | The current [ICorDebugVariableHome](icordebugvariablehome-interface.md) instance represents a local variable. |
 
 ## Remarks
 

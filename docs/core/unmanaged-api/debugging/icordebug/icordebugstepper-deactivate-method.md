@@ -28,7 +28,7 @@ HRESULT Deactivate ();
 
 ## Remarks
 
- A new stepping command may be issued after the most recently received step command has been canceled.
+A new stepping command may be issued after the most recently received step command has been canceled.
 
 ## Requirements
 

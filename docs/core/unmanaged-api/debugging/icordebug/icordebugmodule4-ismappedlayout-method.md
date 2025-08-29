@@ -37,10 +37,10 @@ HRESULT IsMappedLayout(
 ## Return Value
 
 `S_OK`\
- Successfully created the reader.
+Successfully created the reader.
 
 `S_FALSE`\
- The layout couldn't be determined.
+The layout couldn't be determined.
 
 ## Remarks
 

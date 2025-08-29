@@ -47,15 +47,15 @@ HRESULT DebugActiveProcessEx (
 
 ## Return Value
 
- S_OK
- Successfully attached to the process on the remote machine.
+S_OK
+Successfully attached to the process on the remote machine.
 
- E_FAIL (or other E_ return codes)
- Unable to attach to the process on the remote machine.
+E_FAIL (or other E_ return codes)
+Unable to attach to the process on the remote machine.
 
 ## Remarks
 
- Mixed-mode debugging is not supported in Silverlight.
+Mixed-mode debugging is not supported in Silverlight.
 
 ## Requirements
 
@@ -71,4 +71,3 @@ HRESULT DebugActiveProcessEx (
 
 - [ICorDebugRemote Interface](icordebugremote-interface.md)
 - [ICorDebug Interface](icordebug-interface.md)
-

@@ -18,7 +18,7 @@ HRESULT GetOffset(
 ## Parameters
 
  `pcbOffset`
- A pointer to the number of bytes that this instance field is offset in its parent class.
+A pointer to the number of bytes that this instance field is offset in its parent class.
 
 ## Remarks
 

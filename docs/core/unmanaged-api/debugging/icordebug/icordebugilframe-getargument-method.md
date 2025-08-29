@@ -39,7 +39,7 @@ HRESULT GetArgument (
 
 ## Remarks
 
- The `GetArgument` method can be used either in an CIL stack frame or in a just-in-time (JIT) compiled frame.
+The `GetArgument` method can be used either in an CIL stack frame or in a just-in-time (JIT) compiled frame.
 
 ## Requirements
 

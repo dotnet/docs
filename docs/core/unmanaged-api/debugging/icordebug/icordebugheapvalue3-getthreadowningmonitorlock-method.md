@@ -39,7 +39,7 @@ HRESULT GetThreadOwningMonitorLock (
 
 ## Return Value
 
- This method returns the following specific HRESULTs as well as HRESULT errors that indicate method failure.
+This method returns the following specific HRESULTs as well as HRESULT errors that indicate method failure.
 
 |HRESULT|Description|
 |-------------|-----------------|
@@ -50,17 +50,17 @@ HRESULT GetThreadOwningMonitorLock (
 
 ## Remarks
 
- If a managed thread owns the monitor lock on this object:
+If a managed thread owns the monitor lock on this object:
 
 - The method returns S_OK.
 
 - The thread object is valid until the thread exits.
 
- If no managed thread owns the monitor lock on this object, `ppThread` and `pAcquisitionCount` are unchanged, and the method returns S_FALSE.
+If no managed thread owns the monitor lock on this object, `ppThread` and `pAcquisitionCount` are unchanged, and the method returns S_FALSE.
 
- If `ppThread` or `pAcquisitionCount` is not a valid pointer, the result is undefined.
+If `ppThread` or `pAcquisitionCount` is not a valid pointer, the result is undefined.
 
- If an error occurs such that it cannot be determined which, if any, thread owns the monitor lock on this object, the method returns an HRESULT that indicates failure.
+If an error occurs such that it cannot be determined which, if any, thread owns the monitor lock on this object, the method returns an HRESULT that indicates failure.
 
 ## Requirements
 

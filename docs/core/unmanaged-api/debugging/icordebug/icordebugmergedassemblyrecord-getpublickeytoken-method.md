@@ -30,7 +30,7 @@ HRESULT GetPublicKeyToken(
 
 ## Remarks
 
- An assembly's public key token is the last eight bytes of a SHA1 hash of its public key.
+An assembly's public key token is the last eight bytes of a SHA1 hash of its public key.
 
 > [!NOTE]
 > This method is available with .NET Native only.

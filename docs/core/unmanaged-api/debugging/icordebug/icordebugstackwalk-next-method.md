@@ -28,7 +28,7 @@ HRESULT Next();
 
 ## Return Value
 
- This method returns the following specific HRESULTs as well as HRESULT errors that indicate method failure.
+This method returns the following specific HRESULTs as well as HRESULT errors that indicate method failure.
 
 |HRESULT|Description|
 |-------------|-----------------|
@@ -41,7 +41,7 @@ HRESULT Next();
 
 ## Remarks
 
- The `Next` method advances the `ICorDebugStackWalk` object to the calling frame only if the runtime can unwind the current frame. Otherwise, the object advances to the next frame that the runtime is able to unwind.
+The `Next` method advances the `ICorDebugStackWalk` object to the calling frame only if the runtime can unwind the current frame. Otherwise, the object advances to the next frame that the runtime is able to unwind.
 
 ## Requirements
 

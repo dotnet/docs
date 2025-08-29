@@ -33,11 +33,11 @@ HRESULT EnableClassLoadCallbacks(
  `bClassLoadCallbacks`
  [in] Set this value to `true` to enable the common language runtime (CLR) to call the `ICorDebugManagedCallback::LoadClass` and `ICorDebugManagedCallback::UnloadClass` methods when their associated events occur.
 
- The default value is `false` for non-dynamic modules. The value is always `true` for dynamic modules and cannot be changed.
+The default value is `false` for non-dynamic modules. The value is always `true` for dynamic modules and cannot be changed.
 
 ## Remarks
 
- The `ICorDebugManagedCallback::LoadClass` and `ICorDebugManagedCallback::UnloadClass` callbacks are always enabled for dynamic modules and cannot be disabled.
+The `ICorDebugManagedCallback::LoadClass` and `ICorDebugManagedCallback::UnloadClass` callbacks are always enabled for dynamic modules and cannot be disabled.
 
 ## Requirements
 

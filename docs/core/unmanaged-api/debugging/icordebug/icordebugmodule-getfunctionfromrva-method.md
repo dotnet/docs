@@ -18,7 +18,7 @@ topic_type:
 ---
 # ICorDebugModule::GetFunctionFromRVA Method
 
-This method has not been implemented in the current version of the .NET Framework.
+This method has not been implemented.
 
 ## Syntax
 

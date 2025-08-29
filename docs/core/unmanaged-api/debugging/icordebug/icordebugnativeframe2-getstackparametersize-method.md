@@ -33,7 +33,7 @@ HRESULT GetStackParameterSize([out] ULONG32 * pSize)
 
 ## Return Value
 
- This method returns the following specific HRESULTs as well as HRESULT errors that indicate method failure.
+This method returns the following specific HRESULTs as well as HRESULT errors that indicate method failure.
 
 |HRESULT|Description|
 |-------------|-----------------|
@@ -46,7 +46,7 @@ HRESULT GetStackParameterSize([out] ULONG32 * pSize)
 
 ## Remarks
 
- The [ICorDebugStackWalk](icordebugstackwalk-interface.md) methods do not adjust the stack pointer for parameters that are pushed on the stack. Instead, you can use the value returned by `GetStackParameterSize` to adjust the stack pointer to seed a native unwinder, which does adjust for the parameters.
+The [ICorDebugStackWalk](icordebugstackwalk-interface.md) methods do not adjust the stack pointer for parameters that are pushed on the stack. Instead, you can use the value returned by `GetStackParameterSize` to adjust the stack pointer to seed a native unwinder, which does adjust for the parameters.
 
 ## Requirements
 

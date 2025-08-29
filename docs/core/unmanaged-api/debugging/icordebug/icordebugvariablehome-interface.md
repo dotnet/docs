@@ -35,7 +35,7 @@ Represents a local variable or argument of a function.
 
 ## Example
 
- The following code fragment uses the [ICorDebugCode4](icordebugcode4-interface.md) object named `pCode4`.
+The following code fragment uses the [ICorDebugCode4](icordebugcode4-interface.md) object named `pCode4`.
 
 ```cpp
 ICorDebugCode4 *pCode4 = NULL;
@@ -85,4 +85,7 @@ for (int i = 0; i < celtFetched; i++)
  **Library:** CorGuids.lib
 
  **.NET versions:** Available since .NET Framework 4.6.2
+
+## See also
+
 - [ICorDebugVariableHomeEnum Interface](icordebugvariablehomeenum-interface.md)

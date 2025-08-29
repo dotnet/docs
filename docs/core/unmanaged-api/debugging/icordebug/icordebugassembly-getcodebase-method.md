@@ -18,7 +18,7 @@ topic_type:
 ---
 # ICorDebugAssembly::GetCodeBase Method
 
-This method is not implemented in the current version of the .NET Framework.
+This method is not implemented.
 
 ## Syntax
 

@@ -35,7 +35,7 @@ HRESULT GetBase (
 
 ## Remarks
 
- Looking up the base type for a type is useful to implement common debugger functionality, such as printing out all the fields of an object or its parent classes.
+Looking up the base type for a type is useful to implement common debugger functionality, such as printing out all the fields of an object or its parent classes.
 
 ## Requirements
 

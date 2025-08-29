@@ -41,7 +41,7 @@ HRESULT SetContext([in] CorDebugSetContextFlag flag,
 
 ## Return Value
 
- This method returns the following specific HRESULTs as well as HRESULT errors that indicate method failure.
+This method returns the following specific HRESULTs as well as HRESULT errors that indicate method failure.
 
 |HRESULT|Description|
 |-------------|-----------------|
@@ -54,11 +54,11 @@ HRESULT SetContext([in] CorDebugSetContextFlag flag,
 
 ## Remarks
 
- This method does not alter the current context of the thread.
+This method does not alter the current context of the thread.
 
- Setting the current context to an invalid context may cause unpredictable results from the stack walker.
+Setting the current context to an invalid context may cause unpredictable results from the stack walker.
 
- You can retrieve an exact bitwise copy of this context by immediately calling the [ICorDebugStackWalk::GetContext](icordebugstackwalk-getcontext-method.md) method.
+You can retrieve an exact bitwise copy of this context by immediately calling the [ICorDebugStackWalk::GetContext](icordebugstackwalk-getcontext-method.md) method.
 
 ## Requirements
 

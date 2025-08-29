@@ -28,7 +28,7 @@ Provides information about internal frames, including stack address and position
 
 ## Remarks
 
- This interface extends the ICorDebugInternalFrame interface.
+This interface extends the ICorDebugInternalFrame interface.
 
 > [!NOTE]
 > This interface does not support being called remotely, either cross-machine or cross-process.

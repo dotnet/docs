@@ -43,7 +43,7 @@ HRESULT GetName (
 
 ## Remarks
 
- The `GetName` method returns the full path and file name of the assembly.
+The `GetName` method returns the full path and file name of the assembly.
 
 ## Requirements
 

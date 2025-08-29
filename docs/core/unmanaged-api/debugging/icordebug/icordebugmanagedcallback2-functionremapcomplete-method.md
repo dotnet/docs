@@ -43,7 +43,7 @@ HRESULT FunctionRemapComplete (
 
 ## Remarks
 
- This callback gives the debugger an opportunity to recreate any steppers that previously existed.
+This callback gives the debugger an opportunity to recreate any steppers that previously existed.
 
 ## Requirements
 

@@ -35,7 +35,7 @@ HRESULT GetSlotIndex(
 
 ## Return Value
 
- The method returns the following values.
+The method returns the following values.
 
 |Value|Description|
 |-----------|-----------------|
@@ -44,7 +44,7 @@ HRESULT GetSlotIndex(
 
 ## Remarks
 
- The slot-index can be used to retrieve the metadata for this local variable.
+The slot-index can be used to retrieve the metadata for this local variable.
 
 ## Requirements
 

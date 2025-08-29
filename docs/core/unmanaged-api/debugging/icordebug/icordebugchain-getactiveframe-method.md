@@ -35,9 +35,9 @@ HRESULT GetActiveFrame (
 
 ## Remarks
 
- If no managed stack frame is available, `ppFrame` is set to null.
+If no managed stack frame is available, `ppFrame` is set to null.
 
- If the active frame is not available, the call will succeed and `ppFrame` will be null. Active frames will not be available for chains initiated due to CHAIN_ENTER_UNMANAGED, and for some chains initiated due to CHAIN_CLASS_INIT. See the CorDebugChainReason enumeration.
+If the active frame is not available, the call will succeed and `ppFrame` will be null. Active frames will not be available for chains initiated due to CHAIN_ENTER_UNMANAGED, and for some chains initiated due to CHAIN_CLASS_INIT. See the CorDebugChainReason enumeration.
 
 ## Requirements
 

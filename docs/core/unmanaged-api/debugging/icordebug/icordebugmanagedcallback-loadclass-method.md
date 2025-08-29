@@ -39,9 +39,9 @@ HRESULT LoadClass (
 
 ## Remarks
 
- This callback occurs only if class loading has been enabled for the module that contains the class. Class loading is always enabled for dynamic modules.
+This callback occurs only if class loading has been enabled for the module that contains the class. Class loading is always enabled for dynamic modules.
 
- The `LoadClass` callback provides an appropriate time to bind breakpoints to newly generated classes in dynamic modules.
+The `LoadClass` callback provides an appropriate time to bind breakpoints to newly generated classes in dynamic modules.
 
 ## Requirements
 

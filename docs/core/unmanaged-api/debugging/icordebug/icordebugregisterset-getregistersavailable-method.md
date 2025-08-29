@@ -35,9 +35,9 @@ HRESULT GetRegistersAvailable (
 
 ## Remarks
 
- A register may be unavailable if its value cannot be determined for the given situation.
+A register may be unavailable if its value cannot be determined for the given situation.
 
- The returned mask contains a bit for each register (1 << the register index). The bit value is 1 if the register is available, or 0 if it is not available.
+The returned mask contains a bit for each register (1 << the register index). The bit value is 1 if the register is available, or 0 if it is not available.
 
 ## Requirements
 

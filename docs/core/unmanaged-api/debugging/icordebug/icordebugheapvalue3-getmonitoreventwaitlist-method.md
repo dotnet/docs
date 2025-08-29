@@ -35,7 +35,7 @@ HRESULT GetMonitorEventWaitList (
 
 ## Return Value
 
- This method returns the following specific HRESULTs as well as HRESULT errors that indicate method failure.
+This method returns the following specific HRESULTs as well as HRESULT errors that indicate method failure.
 
 |HRESULT|Description|
 |-------------|-----------------|
@@ -46,15 +46,15 @@ HRESULT GetMonitorEventWaitList (
 
 ## Remarks
 
- The first thread in the list is the first thread that is released by the next call to <xref:System.Threading.Monitor.Pulse%28System.Object%29?displayProperty=nameWithType>. The next thread in the list is released on the following call, and so on.
+The first thread in the list is the first thread that is released by the next call to <xref:System.Threading.Monitor.Pulse%28System.Object%29?displayProperty=nameWithType>. The next thread in the list is released on the following call, and so on.
 
- If the list is not empty, this method returns S_OK. If the list is empty, the method returns S_FALSE; in this case, the enumeration is still valid, although it is empty.
+If the list is not empty, this method returns S_OK. If the list is empty, the method returns S_FALSE; in this case, the enumeration is still valid, although it is empty.
 
- In either case, the enumeration interface is usable only for the duration of the current synchronized state. However, the thread's interfaces dispensed from it are valid until the thread exits.
+In either case, the enumeration interface is usable only for the duration of the current synchronized state. However, the thread's interfaces dispensed from it are valid until the thread exits.
 
- If `ppThreadEnum` is not a valid pointer, the result is undefined.
+If `ppThreadEnum` is not a valid pointer, the result is undefined.
 
- If an error occurs such that it cannot be determined which, if any, threads are waiting for the monitor, the method returns an HRESULT that indicates failure.
+If an error occurs such that it cannot be determined which, if any, threads are waiting for the monitor, the method returns an HRESULT that indicates failure.
 
 ## Requirements
 

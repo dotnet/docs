@@ -21,17 +21,17 @@ Represents the set of registers available on the computer that is currently exec
 
 ## Methods
 
-|Method|Description|
-|------------|-----------------|
-|[GetRegisters Method](icordebugregisterset-getregisters-method.md)|Gets the value of each register (on the computer that is currently executing code) that is specified by the bit mask.|
-|[GetRegistersAvailable Method](icordebugregisterset-getregistersavailable-method.md)|Gets a bit mask indicating which registers in this `ICorDebugRegisterSet` are currently available.|
-|[GetThreadContext Method](icordebugregisterset-getthreadcontext-method.md)|Gets the context of the current thread.|
-|[SetRegisters Method](icordebugregisterset-setregisters-method.md)|Not implemented for .NET Framework version 2.0.|
-|[SetThreadContext Method](icordebugregisterset-setthreadcontext-method.md)|Not implemented for the .NET Framework 2.0.|
+| Method                                                                     | Description                             |
+|----------------------------------------------------------------------------|-----------------------------------------|
+| [GetRegisters Method](icordebugregisterset-getregisters-method.md)         | Gets the value of each register (on the computer that's currently executing code) that's specified by the bit mask. |
+| [GetRegistersAvailable Method](icordebugregisterset-getregistersavailable-method.md) | Gets a bit mask indicating which registers in this `ICorDebugRegisterSet` are currently available. |
+| [GetThreadContext Method](icordebugregisterset-getthreadcontext-method.md) | Gets the context of the current thread. |
+| [SetRegisters Method](icordebugregisterset-setregisters-method.md)         | Not implemented.                        |
+| [SetThreadContext Method](icordebugregisterset-setthreadcontext-method.md) | Not implemented.                        |
 
 ## Remarks
 
- The `ICorDebugRegisterSet` interface supports only 32-bit registers. Use the [ICorDebugRegisterSet2](icordebugregisterset2-interface.md) interface on platforms such as IA-64 that require additional registers.
+The `ICorDebugRegisterSet` interface supports only 32-bit registers. Use the [ICorDebugRegisterSet2](icordebugregisterset2-interface.md) interface on platforms such as IA-64 that require additional registers.
 
 > [!NOTE]
 > This interface does not support being called remotely, either cross-machine or cross-process.
@@ -45,4 +45,7 @@ Represents the set of registers available on the computer that is currently exec
  **Library:** CorGuids.lib
 
  **.NET versions:** Available since .NET Framework 1.0
+
+## See also
+
 - [ICorDebugRegisterSet2 Interface](icordebugregisterset2-interface.md)

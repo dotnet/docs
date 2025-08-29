@@ -33,7 +33,7 @@ HRESULT EditAndContinueRemap (
 
 ## Remarks
 
- The `EditAndContinueRemap` method is called when the execution of the code in an old version of an updated function has been attempted. The common language runtime calls the `EditAndContinueRemap` method to send a remap event to the IDE.
+The `EditAndContinueRemap` method is called when the execution of the code in an old version of an updated function has been attempted. The common language runtime calls the `EditAndContinueRemap` method to send a remap event to the IDE.
 
 ## Requirements
 

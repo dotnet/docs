@@ -41,13 +41,13 @@ HRESULT GetThreadContext(
  `context`
  [in, out] An array of bytes that describe the thread's context.
 
- The context specifies the architecture of the processor on which the thread is executing.
+The context specifies the architecture of the processor on which the thread is executing.
 
 ## Remarks
 
- The debugger should call this method rather than the Win32 `GetThreadContext` method, because the thread may actually be in a "hijacked" state, in which its context has been temporarily changed. This method should be used only when a thread is in native code. Use [ICorDebugRegisterSet](icordebugregisterset-interface.md) for threads in managed code.
+The debugger should call this method rather than the Win32 `GetThreadContext` method, because the thread may actually be in a "hijacked" state, in which its context has been temporarily changed. This method should be used only when a thread is in native code. Use [ICorDebugRegisterSet](icordebugregisterset-interface.md) for threads in managed code.
 
- The data returned is a context structure for the current platform. Just as with the Win32 `GetThreadContext` method, the caller should initialize the `context` parameter before calling this method.
+The data returned is a context structure for the current platform. Just as with the Win32 `GetThreadContext` method, the caller should initialize the `context` parameter before calling this method.
 
 ## Requirements
 

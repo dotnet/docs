@@ -15,7 +15,7 @@ Logically extends the ICorDebugProcess interface to enable features such as deco
 |[EnableVirtualModuleSplitting Method](icordebugprocess6-enablevirtualmodulesplitting-method.md)|Enables or disables virtual module splitting.|
 |[GetCode Method](icordebugprocess6-getcode-method.md)|Gets information about the managed code at a particular code address.|
 |[GetExportStepInfo Method](icordebugprocess6-getexportstepinfo-method.md)|Provides information on runtime exported functions to help step through managed code.|
-|[MarkDebuggerAttached Method](icordebugprocess6-markdebuggerattached-method.md)|Changes the internal state of the debugee so that the <xref:System.Diagnostics.Debugger.IsAttached%2A?displayProperty=nameWithType> method in the .NET Framework Class Library returns `true`.|
+|[MarkDebuggerAttached Method](icordebugprocess6-markdebuggerattached-method.md)|Changes the internal state of the debugee so that the <xref:System.Diagnostics.Debugger.IsAttached%2A?displayProperty=nameWithType> method returns `true`.|
 |[ProcessStateChanged Method](icordebugprocess6-processstatechanged-method.md)|Notifies [ICorDebug](icordebug-interface.md) that the process is running.|
 
 ## Remarks

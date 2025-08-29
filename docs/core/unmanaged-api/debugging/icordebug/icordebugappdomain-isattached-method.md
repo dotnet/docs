@@ -35,7 +35,7 @@ HRESULT IsAttached (
 
 ## Remarks
 
- The ICorDebugController methods cannot be used until the debugger attaches to the application domain.
+The ICorDebugController methods cannot be used until the debugger attaches to the application domain.
 
 ## Requirements
 

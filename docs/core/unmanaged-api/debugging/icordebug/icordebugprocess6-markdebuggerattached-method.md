@@ -5,7 +5,7 @@ ms.date: "03/30/2017"
 ---
 # ICorDebugProcess6::MarkDebuggerAttached Method
 
-Changes the internal state of the debugee so that the <xref:System.Diagnostics.Debugger.IsAttached%2A?displayProperty=nameWithType> method in the .NET Framework Class Library returns `true`.
+Changes the internal state of the debugee so that the <xref:System.Diagnostics.Debugger.IsAttached%2A?displayProperty=nameWithType> method returns `true`.
 
 ## Syntax
 
@@ -22,7 +22,7 @@ HRESULT MarkDebuggerAttached(
 
 ## Return Value
 
- The method can return the values listed in the following table.
+The method can return the values listed in the following table.
 
 |Return value|Description|
 |------------------|-----------------|

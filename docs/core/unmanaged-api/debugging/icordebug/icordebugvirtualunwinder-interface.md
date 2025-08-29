@@ -16,7 +16,7 @@ Provides methods to help in stack unwinding.
 
 ## Remarks
 
- The members of the `ICorDebugVirtualUnwinder` interface are implemented by the debugger to help in stack unwinding.
+The members of the `ICorDebugVirtualUnwinder` interface are implemented by the debugger to help in stack unwinding.
 
 > [!NOTE]
 > This interface is available with .NET Native only. If you implement this interface for ICorDebug scenarios outside of .NET Native, the common language runtime will ignore this interface.

@@ -33,7 +33,7 @@ HRESULT GetFrameAddress([out] CORDB_ADDRESS *pAddress);
 
 ## Return Value
 
- This method returns the following specific HRESULTs as well as HRESULT errors that indicate method failure.
+This method returns the following specific HRESULTs as well as HRESULT errors that indicate method failure.
 
 |HRESULT|Description|
 |-------------|-----------------|
@@ -43,7 +43,7 @@ HRESULT GetFrameAddress([out] CORDB_ADDRESS *pAddress);
 
 ## Remarks
 
- The value returned in `pAddress` can be used to determine the location of the internal frame relative to other frames on the stack. Even on IA-64-based computers, the internal frame lives on the stack only, and there is no corresponding pointer to a backing store.
+The value returned in `pAddress` can be used to determine the location of the internal frame relative to other frames on the stack. Even on IA-64-based computers, the internal frame lives on the stack only, and there is no corresponding pointer to a backing store.
 
 ## Requirements
 

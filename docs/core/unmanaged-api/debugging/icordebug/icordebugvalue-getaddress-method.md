@@ -35,7 +35,7 @@ HRESULT GetAddress (
 
 ## Remarks
 
- If the value is unavailable, 0 (zero) is returned. This could happen if the value is at least partly in registers or stored in a garbage collector handle (`GCHandle`).
+If the value is unavailable, 0 (zero) is returned. This could happen if the value is at least partly in registers or stored in a garbage collector handle (`GCHandle`).
 
 ## Requirements
 

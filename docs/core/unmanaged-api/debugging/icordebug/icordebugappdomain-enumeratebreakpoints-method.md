@@ -35,7 +35,7 @@ HRESULT EnumerateBreakpoints (
 
 ## Remarks
 
- The enumerator includes all types of breakpoints, including function breakpoints and data breakpoints.
+The enumerator includes all types of breakpoints, including function breakpoints and data breakpoints.
 
 ## Requirements
 

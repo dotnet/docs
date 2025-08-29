@@ -39,7 +39,7 @@ HRESULT LoadModule (
 
 ## Remarks
 
- The `LoadModule` callback provides an appropriate time to examine metadata for the module, set just-in-time (JIT) compiler flags, or enable or disable class loading callbacks for the module.
+The `LoadModule` callback provides an appropriate time to examine metadata for the module, set just-in-time (JIT) compiler flags, or enable or disable class loading callbacks for the module.
 
 ## Requirements
 

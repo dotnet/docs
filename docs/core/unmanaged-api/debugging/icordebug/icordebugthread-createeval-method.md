@@ -35,7 +35,7 @@ HRESULT CreateEval (
 
 ## Remarks
 
- The evaluation object will push a new chain on the thread before doing its computation. This interrupts the computation currently being performed on the thread until the evaluation completes.
+The evaluation object will push a new chain on the thread before doing its computation. This interrupts the computation currently being performed on the thread until the evaluation completes.
 
 ## Requirements
 

@@ -39,7 +39,7 @@ HRESULT GetStackRange (
 
 ## Remarks
 
- The numeric range is meaningful only for comparison of stack frame locations. You cannot make any assumptions about what is actually stored on the stack.
+The numeric range is meaningful only for comparison of stack frame locations. You cannot make any assumptions about what is actually stored on the stack.
 
 ## Requirements
 

@@ -38,7 +38,7 @@ interface ICorDebugModule4 : IUnknown
 
 ## Remarks
 
- This interface logically extends the 'ICorDebugModule', 'ICorDebugModule2', and 'ICoreDebugModule3' interfaces.
+This interface logically extends the 'ICorDebugModule', 'ICorDebugModule2', and 'ICoreDebugModule3' interfaces.
 
 > [!NOTE]
 > This interface does not support being called remotely, either cross-machine or cross-process.
@@ -57,4 +57,3 @@ interface ICorDebugModule4 : IUnknown
 
 - [ICorDebugRemoteTarget Interface](icordebugremotetarget-interface.md)
 - [ICorDebug Interface](icordebug-interface.md)
-

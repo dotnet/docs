@@ -31,15 +31,15 @@ HRESULT EnumerateTypeParameters (
 ## Parameters
 
  `ppTyParEnum`
- A pointer to the address of a ICorDebugTypeEnum interface object that allows enumeration of type parameters.
+A pointer to the address of a ICorDebugTypeEnum interface object that allows enumeration of type parameters.
 
- The list of type parameters include the class type parameters (if any) followed by the method type parameters (if any).
+The list of type parameters include the class type parameters (if any) followed by the method type parameters (if any).
 
 ## Remarks
 
- Use the [IMetaDataImport2::EnumGenericParams](../../metadata/interfaces/imetadataimport2-enumgenericparams-method.md) method to determine how many class type parameters and method type parameters this list contains.
+Use the [IMetaDataImport2::EnumGenericParams](../../metadata/interfaces/imetadataimport2-enumgenericparams-method.md) method to determine how many class type parameters and method type parameters this list contains.
 
- The type parameters are not always available.
+The type parameters are not always available.
 
 ## Requirements
 

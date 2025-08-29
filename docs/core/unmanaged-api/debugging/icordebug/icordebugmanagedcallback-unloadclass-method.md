@@ -39,7 +39,7 @@ HRESULT UnloadClass (
 
 ## Remarks
 
- The class should not be referenced after this call.
+The class should not be referenced after this call.
 
 ## Requirements
 

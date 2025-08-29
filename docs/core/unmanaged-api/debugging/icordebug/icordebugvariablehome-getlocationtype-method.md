@@ -45,5 +45,5 @@ HRESULT GetLocationType(
 
 ## See also
 
-- [ICorDebugVariableHome Interface](icordebugvariablehome-interface.md)
-- [VariableLocationType Enumeration](../../../../framework/unmanaged-api/debugging/variablelocationtype-enumeration.md)
+- [ICorDebugVariableHome interface](icordebugvariablehome-interface.md)
+- [VariableLocationType enumeration](variablelocationtype-enumeration.md)

@@ -38,9 +38,9 @@ HRESULT IsTransitionStub(
 
 ## Remarks
 
- The `IsTransitionStub` method can be used by unmanaged stepping code to decide when to return stepping control to the managed stepper.
+The `IsTransitionStub` method can be used by unmanaged stepping code to decide when to return stepping control to the managed stepper.
 
- You can also identity transition stubs by looking at information in the portable executable (PE) file.
+You can also identity transition stubs by looking at information in the portable executable (PE) file.
 
 ## Requirements
 

@@ -55,11 +55,11 @@ HRESULT Exception (
 
 ## Remarks
 
- The `Exception` callback is called at various points during the search phase of the exception-handling process. That is, it can be called more than once while unwinding an exception.
+The `Exception` callback is called at various points during the search phase of the exception-handling process. That is, it can be called more than once while unwinding an exception.
 
- The exception being processed can be retrieved from the ICorDebugThread object referenced by the `pThread` parameter.
+The exception being processed can be retrieved from the ICorDebugThread object referenced by the `pThread` parameter.
 
- The particular frame and offset are determined by the `dwEventType` parameter as follows:
+The particular frame and offset are determined by the `dwEventType` parameter as follows:
 
 |Value of `dwEventType`|Value of `pFrame`|Value of `nOffset`|
 |----------------------------|-----------------------|------------------------|

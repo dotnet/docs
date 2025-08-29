@@ -47,7 +47,7 @@ HRESULT StepComplete (
 
 ## Remarks
 
- The stepper may be used to continue stepping if desired, unless the debugging is terminated.
+The stepper may be used to continue stepping if desired, unless the debugging is terminated.
 
 ## Requirements
 

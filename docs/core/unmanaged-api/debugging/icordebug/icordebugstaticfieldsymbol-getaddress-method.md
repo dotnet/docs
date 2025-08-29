@@ -17,7 +17,7 @@ HRESULT GetAddress(
 
 ## Parameters
 
- pRVA
+pRVA
  [out] A pointer to the relative virtual address (RVA) of the static field.
 
 ## Remarks

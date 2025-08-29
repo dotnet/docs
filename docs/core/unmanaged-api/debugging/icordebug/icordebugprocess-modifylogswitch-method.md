@@ -38,7 +38,7 @@ HRESULT ModifyLogSwitch(
 
 ## Remarks
 
- This method is valid only after the [ICorDebugManagedCallback::CreateProcess](icordebugmanagedcallback-createprocess-method.md) callback has occurred.
+This method is valid only after the [ICorDebugManagedCallback::CreateProcess](icordebugmanagedcallback-createprocess-method.md) callback has occurred.
 
 ## Requirements
 

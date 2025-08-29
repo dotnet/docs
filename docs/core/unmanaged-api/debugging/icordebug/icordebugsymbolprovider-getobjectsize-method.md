@@ -22,7 +22,7 @@ HRESULT GetObjectSize(
  `cbSignature`
  [in] The number of bytes in the typespec signature.
 
- typeSig
+typeSig
  [in] The typespec signature.
 
  `pObjectSize`

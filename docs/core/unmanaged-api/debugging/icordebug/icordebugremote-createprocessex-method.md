@@ -83,15 +83,15 @@ HRESULT CreateProcessEx (
 
 ## Return Value
 
- S_OK
- Successfully launched the process on the remote machine and returned an "ICorDebugProcess Interface" for debugging.
+S_OK
+Successfully launched the process on the remote machine and returned an "ICorDebugProcess Interface" for debugging.
 
- E_FAIL (or other E_ return codes)
- Unable to launch the process on the remote machine and return an "ICorDebugProcess Interface" for debugging.
+E_FAIL (or other E_ return codes)
+Unable to launch the process on the remote machine and return an "ICorDebugProcess Interface" for debugging.
 
 ## Remarks
 
- Mixed-mode debugging is not supported in Silverlight.
+Mixed-mode debugging is not supported in Silverlight.
 
 ## Requirements
 
@@ -107,4 +107,3 @@ HRESULT CreateProcessEx (
 
 - [ICorDebugRemote Interface](icordebugremote-interface.md)
 - [ICorDebug Interface](icordebug-interface.md)
-

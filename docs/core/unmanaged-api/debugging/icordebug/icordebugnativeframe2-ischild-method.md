@@ -33,7 +33,7 @@ HRESULT IsChild([out] BOOL * pIsChild);
 
 ## Return Value
 
- This method returns the following specific HRESULTs as well as HRESULT errors that indicate method failure.
+This method returns the following specific HRESULTs as well as HRESULT errors that indicate method failure.
 
 |HRESULT|Description|
 |-------------|-----------------|
@@ -45,7 +45,7 @@ HRESULT IsChild([out] BOOL * pIsChild);
 
 ## Remarks
 
- The `IsChild` method returns `true` if the frame object on which you call the method is a child of another frame. If this is the case, use the [IsMatchingParentFrame](icordebugnativeframe2-ismatchingparentframe-method.md) method to check whether a frame is its parent.
+The `IsChild` method returns `true` if the frame object on which you call the method is a child of another frame. If this is the case, use the [IsMatchingParentFrame](icordebugnativeframe2-ismatchingparentframe-method.md) method to check whether a frame is its parent.
 
 ## Requirements
 

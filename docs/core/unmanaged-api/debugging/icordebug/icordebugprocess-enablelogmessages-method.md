@@ -33,7 +33,7 @@ HRESULT EnableLogMessages([in]BOOL fOnOff);
 
 ## Remarks
 
- This method is valid only after the [ICorDebugManagedCallback::CreateProcess](icordebugmanagedcallback-createprocess-method.md) callback occurs.
+This method is valid only after the [ICorDebugManagedCallback::CreateProcess](icordebugmanagedcallback-createprocess-method.md) callback occurs.
 
 ## Requirements
 

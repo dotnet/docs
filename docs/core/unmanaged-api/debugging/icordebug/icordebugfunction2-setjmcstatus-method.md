@@ -42,7 +42,7 @@ HRESULT SetJMCStatus (
 
 ## Remarks
 
- A Just My Code stepper will skip non-user code. User code must be a subset of debuggable code.
+A Just My Code stepper will skip non-user code. User code must be a subset of debuggable code.
 
 ## Requirements
 

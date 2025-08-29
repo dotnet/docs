@@ -27,7 +27,7 @@ Provides an enumerator for a list of [CorDebugBlockingObject](cordebugblockingob
 
 ## Remarks
 
- Each `CorDebugBlockingObject` structure represents an object that is blocking a thread.
+Each `CorDebugBlockingObject` structure represents an object that is blocking a thread.
 
 > [!NOTE]
 > This interface does not support being called remotely, either cross-machine or cross-process.

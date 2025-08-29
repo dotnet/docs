@@ -22,7 +22,7 @@ HRESULT GetStackPointer(
 
 ## Remarks
 
- The meaning of this stack pointer depends on the event type, as shown in the following table.
+The meaning of this stack pointer depends on the event type, as shown in the following table.
 
 |Event type|Meaning of `pStackPointer` value|
 |----------------|--------------------------------------|
@@ -34,7 +34,7 @@ HRESULT GetStackPointer(
 > [!NOTE]
 > This method is available with .NET Native only.
 
- The event type is available from the [ICorDebugDebugEvent::GetEventKind](icordebugdebugevent-geteventkind-method.md) method.
+The event type is available from the [ICorDebugDebugEvent::GetEventKind](icordebugdebugevent-geteventkind-method.md) method.
 
 ## Requirements
 

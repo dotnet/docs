@@ -35,7 +35,7 @@ HRESULT GetCallee (
 
 ## Remarks
 
- This chain will wait for the called chain to return before it resumes execution. The called chain may be on another thread in the case of cross-thread marshalled calls.
+This chain will wait for the called chain to return before it resumes execution. The called chain may be on another thread in the case of cross-thread marshalled calls.
 
 ## Requirements
 

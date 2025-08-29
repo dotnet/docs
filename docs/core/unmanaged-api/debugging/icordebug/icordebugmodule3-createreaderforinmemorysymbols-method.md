@@ -30,33 +30,33 @@ HRESULT CreateReaderForInMemorySymbols (
 
 ## Parameters
 
- riid
- [in] The IID of the COM interface to return. Typically, this is an [ISymUnmanagedReader Interface](../../../../framework/unmanaged-api/diagnostics/isymunmanagedreader-interface.md).
+`riid`\
+[in] The IID of the COM interface to return. Typically, this is an [ISymUnmanagedReader Interface](../../../../framework/unmanaged-api/diagnostics/isymunmanagedreader-interface.md).
 
- ppObj
- [out] Pointer to a pointer to the returned interface.
+`ppObj`\
+[out] Pointer to a pointer to the returned interface.
 
 ## Return Value
 
- S_OK
- Successfully created the reader.
+`S_OK`\
+Successfully created the reader.
 
- CORDBG_E_MODULE_LOADED_FROM_DISK
- The module is not an in-memory or dynamic module.
+`CORDBG_E_MODULE_LOADED_FROM_DISK`\
+The module is not an in-memory or dynamic module.
 
- CORDBG_E_SYMBOLS_NOT_AVAILABLE
- Symbols have not been supplied by the application or are not yet available.
+`CORDBG_E_SYMBOLS_NOT_AVAILABLE`\
+Symbols have not been supplied by the application or are not yet available.
 
- E_FAIL (or other E_ return codes)
- Unable to create the reader.
+`E_FAIL` (or other `E_` return codes)\
+Unable to create the reader.
 
 ## Remarks
 
- This method can also be used to create a symbol reader object for in-memory (non-dynamic) modules, but only after the symbols are first available (indicated by the [UpdateModuleSymbols Method](icordebugmanagedcallback-updatemodulesymbols-method.md) callback).
+This method can also be used to create a symbol reader object for in-memory (non-dynamic) modules, but only after the symbols are first available (indicated by the [UpdateModuleSymbols Method](icordebugmanagedcallback-updatemodulesymbols-method.md) callback).
 
- This method returns a new reader instance every time it is called (like [CComPtrBase::CoCreateInstance](/cpp/atl/reference/ccomptrbase-class#cocreateinstance)). Therefore, the debugger should cache the result and request a new instance only when the underlying data may have changed (that is, when a [LoadClass Method](icordebugmanagedcallback-loadclass-method.md) callback is received).
+This method returns a new reader instance every time it is called (like [CComPtrBase::CoCreateInstance](/cpp/atl/reference/ccomptrbase-class#cocreateinstance)). Therefore, the debugger should cache the result and request a new instance only when the underlying data may have changed (that is, when a [LoadClass Method](icordebugmanagedcallback-loadclass-method.md) callback is received).
 
- Dynamic modules do not have any symbols available until the first type has been loaded (as indicated by the [LoadClass Method](icordebugmanagedcallback-loadclass-method.md) callback).
+Dynamic modules do not have any symbols available until the first type has been loaded (as indicated by the [LoadClass Method](icordebugmanagedcallback-loadclass-method.md) callback).
 
 ## Requirements
 
@@ -72,4 +72,3 @@ HRESULT CreateReaderForInMemorySymbols (
 
 - [ICorDebugRemoteTarget Interface](icordebugremotetarget-interface.md)
 - [ICorDebug Interface](icordebug-interface.md)
-

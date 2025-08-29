@@ -39,9 +39,9 @@ HRESULT GetIP (
 
 ## Remarks
 
- The value of the instruction pointer is the stack frame's offset into the function's common intermediate language (CIL) code. If the stack frame is active, this address is the next instruction to execute. If the stack frame is not active, this address is the next instruction to execute when the stack frame is reactivated.
+The value of the instruction pointer is the stack frame's offset into the function's common intermediate language (CIL) code. If the stack frame is active, this address is the next instruction to execute. If the stack frame is not active, this address is the next instruction to execute when the stack frame is reactivated.
 
- If this frame is a just-in-time (JIT) compiled frame, the value of the instruction pointer will be determined by mapping backwards from the actual native instruction pointer, so the value may be only approximate.
+If this frame is a just-in-time (JIT) compiled frame, the value of the instruction pointer will be determined by mapping backwards from the actual native instruction pointer, so the value may be only approximate.
 
 ## Requirements
 

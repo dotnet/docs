@@ -21,57 +21,37 @@ Serves as the abstract base interface for the enumerators that are used by a deb
 
 ## Methods
 
-|Method|Description|
-|------------|-----------------|
-|[Clone Method](icordebugenum-clone-method.md)|Creates a copy of this `ICorDebugEnum` object.|
-|[GetCount Method](icordebugenum-getcount-method.md)|Gets the number of items in the enumeration.|
-|[Reset Method](icordebugenum-reset-method.md)|Moves the cursor to the beginning of the enumeration.|
-|[Skip Method](icordebugenum-skip-method.md)|Moves the cursor forward in the enumeration by the specified number of items.|
+| Method                                              | Description                                           |
+|-----------------------------------------------------|-------------------------------------------------------|
+| [Clone Method](icordebugenum-clone-method.md)       | Creates a copy of this `ICorDebugEnum` object.        |
+| [GetCount Method](icordebugenum-getcount-method.md) | Gets the number of items in the enumeration.          |
+| [Reset Method](icordebugenum-reset-method.md)       | Moves the cursor to the beginning of the enumeration. |
+| [Skip Method](icordebugenum-skip-method.md)         | Moves the cursor forward in the enumeration by the specified number of items. |
 
 ## Remarks
 
- The following enumerators derive from `ICorDebugEnum`:
+The following enumerators derive from `ICorDebugEnum`:
 
-- "ICorDebugAppDomainEnum"
-
-- "ICorDebugAssemblyEnum"
-
+- `ICorDebugAppDomainEnum`
+- `ICorDebugAssemblyEnum`
 - [ICorDebugBlockingObjectEnum](icordebugblockingobjectenum-interface.md)
-
-- "ICorDebugBreakpointEnum"
-
-- "ICorDebugChainEnum"
-
-- "ICorDebugCodeEnum"
-
-- "ICorDebugErrorInfoEnum"
-
+- `ICorDebugBreakpointEnum`
+- `ICorDebugChainEnum`
+- `ICorDebugCodeEnum`
+- `ICorDebugErrorInfoEnum`
 - [ICorDebugExceptionObjectCallStackEnum](icordebugexceptionobjectcallstackenum-interface.md)
-
-- "ICorDebugFrameEnum"
-
+- `ICorDebugFrameEnum`
 - [ICorDebugGCReferenceEnum](icordebuggcreferenceenum-interface.md)
-
 - [ICorDebugGuidToTypeEnum](icordebugguidtotypeenum-interface.md)
-
 - [ICorDebugHeapEnum](icordebugheapenum-interface.md)
-
 - [ICorDebugHeapSegmentEnum](icordebugheapsegmentenum-interface.md)
-
-- "ICorDebugModuleEnum"
-
-- "ICorDebugObjectEnum"
-
-- "ICorDebugProcessEnum"
-
-- "ICorDebugStepperEnum"
-
-- "ICorDebugThreadEnum"
-
-- "ICorDebugTypeEnum"
-
-- "ICorDebugValueEnum"
-
+- `ICorDebugModuleEnum`
+- `ICorDebugObjectEnum`
+- `ICorDebugProcessEnum`
+- `ICorDebugStepperEnum`
+- `ICorDebugThreadEnum`
+- `ICorDebugTypeEnum`
+- `ICorDebugValueEnum`
 - [ICorDebugVariableHomeEnum](icordebugvariablehomeenum-interface.md)
 
 > [!NOTE]

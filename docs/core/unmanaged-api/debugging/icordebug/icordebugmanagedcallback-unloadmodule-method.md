@@ -39,7 +39,7 @@ HRESULT UnloadModule (
 
 ## Remarks
 
- The module should not be used after this call.
+The module should not be used after this call.
 
 ## Requirements
 

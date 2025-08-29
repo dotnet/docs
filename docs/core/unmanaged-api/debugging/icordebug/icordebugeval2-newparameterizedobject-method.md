@@ -51,7 +51,7 @@ HRESULT NewParameterizedObject (
 
 ## Remarks
 
- The object's constructor may take <xref:System.Type> parameters.
+The object's constructor may take <xref:System.Type> parameters.
 
 ## Requirements
 

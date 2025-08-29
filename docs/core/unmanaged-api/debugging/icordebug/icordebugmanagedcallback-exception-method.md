@@ -43,7 +43,7 @@ HRESULT Exception (
 
 ## Remarks
 
- The specific exception can be retrieved from the thread object.
+The specific exception can be retrieved from the thread object.
 
 ## Requirements
 

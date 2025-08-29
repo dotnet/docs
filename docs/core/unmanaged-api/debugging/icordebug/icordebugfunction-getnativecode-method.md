@@ -35,7 +35,7 @@ HRESULT GetNativeCode (
 
 ## Remarks
 
- If the function that is represented by this `ICorDebugFunction` instance has been JIT-compiled more than once, as in the case of generic types, `GetNativeCode` returns a random native code object.
+If the function that is represented by this `ICorDebugFunction` instance has been JIT-compiled more than once, as in the case of generic types, `GetNativeCode` returns a random native code object.
 
 ## Requirements
 

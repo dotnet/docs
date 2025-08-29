@@ -26,7 +26,7 @@ HRESULT GetCodeRange(
  [out] A pointer to the starting address of the method.
 
  `pCodeSize`
- A pointer to the method code size (the number of bytes of the method's code).
+A pointer to the method code size (the number of bytes of the method's code).
 
 ## Remarks
 

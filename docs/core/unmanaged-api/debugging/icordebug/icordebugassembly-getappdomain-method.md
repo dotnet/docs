@@ -35,7 +35,7 @@ HRESULT GetAppDomain (
 
 ## Remarks
 
- If this assembly is the system assembly, `GetAppDomain` returns null.
+If this assembly is the system assembly, `GetAppDomain` returns null.
 
 ## Requirements
 

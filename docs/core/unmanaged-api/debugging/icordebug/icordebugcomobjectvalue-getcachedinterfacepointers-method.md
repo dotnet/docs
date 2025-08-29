@@ -40,7 +40,7 @@ HRESULT GetCachedInterfacePointers(
  [out] A pointer to the number of `CORDB_ADDRESS` values actually returned in `ptrs`.
 
  `ptrs`
- A pointer to the starting address of an array of `CORDB_ADDRESS` values that contain the addresses of cached interface objects.
+A pointer to the starting address of an array of `CORDB_ADDRESS` values that contain the addresses of cached interface objects.
 
 ## Remarks
 

@@ -29,7 +29,7 @@ Provides thread blocking information.
 
 ## Remarks
 
- This interface is a logical extension of the ICorDebugThread, ICorDebugThread2, and [ICorDebugThread3](icordebugthread3-interface.md) interfaces.
+This interface is a logical extension of the ICorDebugThread, ICorDebugThread2, and [ICorDebugThread3](icordebugthread3-interface.md) interfaces.
 
 > [!NOTE]
 > This interface does not support being called remotely, either cross-machine or cross-process.

@@ -27,14 +27,14 @@ Extends the ICorDebugType interface to retrieve the type identifier  of a base t
 
 ## Remarks
 
- This interface is a logical extension of the ICorDebugType interface.
+This interface is a logical extension of the ICorDebugType interface.
 
 > [!NOTE]
 > This interface does not support being called remotely, either cross-machine or cross-process.
 
 ## Example
 
- The following code fragment illustrates the use of the [ICorDebugType2::GetTypeID](icordebugtype2-gettypeid-method.md) method.
+The following code fragment illustrates the use of the [ICorDebugType2::GetTypeID](icordebugtype2-gettypeid-method.md) method.
 
 ```cpp
 // (error checking omitted for brevity)

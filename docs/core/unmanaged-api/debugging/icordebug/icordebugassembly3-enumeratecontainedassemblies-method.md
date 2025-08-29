@@ -26,7 +26,7 @@ HRESULT EnumerateContainedAssemblies(
 
 ## Remarks
 
- Symbols are needed to enumerate the contained assemblies. If they aren't present, the method returns `S_FALSE`, and no valid enumerator is provided.
+Symbols are needed to enumerate the contained assemblies. If they aren't present, the method returns `S_FALSE`, and no valid enumerator is provided.
 
 > [!NOTE]
 > This method is available with .NET Native only.

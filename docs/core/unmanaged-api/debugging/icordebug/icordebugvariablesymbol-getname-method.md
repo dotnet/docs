@@ -26,7 +26,7 @@ HRESULT GetName(
  [out] A pointer to the number of characters actually written to the `szName` buffer.
 
  `szName`
- A pointer to a character array that contains the variable name.
+A pointer to a character array that contains the variable name.
 
 ## Remarks
 

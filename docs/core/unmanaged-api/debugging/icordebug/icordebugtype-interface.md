@@ -33,9 +33,9 @@ Represents a type, either basic or complex (that is, user-defined). If the type 
 
 ## Remarks
 
- If the type is generic, `ICorDebugClass` represents the uninstantiated type. The `ICorDebugType` interface represents an instantiated generic type. For example, Hashtable\<K, V> would be represented by `ICorDebugClass`, whereas Hashtable\<Int32, String> would be represented by `ICorDebugType`.
+If the type is generic, `ICorDebugClass` represents the uninstantiated type. The `ICorDebugType` interface represents an instantiated generic type. For example, Hashtable\<K, V> would be represented by `ICorDebugClass`, whereas Hashtable\<Int32, String> would be represented by `ICorDebugType`.
 
- Non-generic types are represented by both `ICorDebugClass` and `ICorDebugType`. The latter interface was introduced in the .NET Framework version 2.0 to deal with type instantiation.
+Non-generic types are represented by both `ICorDebugClass` and `ICorDebugType`. The latter interface was introduced in .NET Framework 2.0 to deal with type instantiation.
 
 > [!NOTE]
 > This interface does not support being called remotely, either cross-machine or cross-process.

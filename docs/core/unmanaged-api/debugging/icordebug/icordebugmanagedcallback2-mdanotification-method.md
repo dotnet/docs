@@ -35,27 +35,27 @@ HRESULT MDANotification(
  `pController`
  [in] A pointer to an ICorDebugController interface that exposes the process or application domain in which the MDA occurred.
 
- A debugger should not make any assumptions about whether the controller is a process or an application domain, although it can always query the interface to make a determination.
+A debugger should not make any assumptions about whether the controller is a process or an application domain, although it can always query the interface to make a determination.
 
  `pThread`
  [in] A pointer to an ICorDebugThread interface that exposes the managed thread on which the debug event occurred.
 
- If the MDA occurred on an unmanaged thread, the value of `pThread` will be null.
+If the MDA occurred on an unmanaged thread, the value of `pThread` will be null.
 
- You must get the operating system (OS) thread ID from the MDA object itself.
+You must get the operating system (OS) thread ID from the MDA object itself.
 
  `pMDA`
  [in] A pointer to an [ICorDebugMDA](icordebugmda-interface.md) interface that exposes the MDA information.
 
 ## Remarks
 
- An MDA is a heuristic warning and does not require any explicit debugger action except for calling [ICorDebugController::Continue](icordebugcontroller-continue-method.md) to resume execution of the application that is being debugged.
+An MDA is a heuristic warning and does not require any explicit debugger action except for calling [ICorDebugController::Continue](icordebugcontroller-continue-method.md) to resume execution of the application that is being debugged.
 
- The common language runtime (CLR) can determine which MDAs are fired and which data is in any given MDA at any point. Therefore, debuggers should not build any functionality requiring specific MDA patterns.
+The common language runtime (CLR) can determine which MDAs are fired and which data is in any given MDA at any point. Therefore, debuggers should not build any functionality requiring specific MDA patterns.
 
- MDAs may be queued and fired shortly after the MDA is encountered. This could happen if the runtime needs to wait until it reaches a safe point for firing the MDA, instead of firing the MDA when it encounters it. It also means that the runtime may fire a number of MDAs in a single set of queued callbacks (similar to an "attach" event operation).
+MDAs may be queued and fired shortly after the MDA is encountered. This could happen if the runtime needs to wait until it reaches a safe point for firing the MDA, instead of firing the MDA when it encounters it. It also means that the runtime may fire a number of MDAs in a single set of queued callbacks (similar to an "attach" event operation).
 
- A debugger should release the reference to an `ICorDebugMDA` instance immediately after returning from the `MDANotification` callback, to allow the CLR to recycle the memory consumed by an MDA. Releasing the instance may improve performance if many MDAs are firing.
+A debugger should release the reference to an `ICorDebugMDA` instance immediately after returning from the `MDANotification` callback, to allow the CLR to recycle the memory consumed by an MDA. Releasing the instance may improve performance if many MDAs are firing.
 
 ## Requirements
 

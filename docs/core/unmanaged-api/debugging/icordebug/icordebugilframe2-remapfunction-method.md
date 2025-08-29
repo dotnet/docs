@@ -33,16 +33,16 @@ HRESULT RemapFunction (
  `newILOffset`
  [in] The stack frame's new CIL offset at which the instruction pointer should be placed. This value must be a sequence point.
 
- It is the caller’s responsibility to ensure the validity of this value. For example, the CIL offset is not valid if it is outside the bounds of the function.
+It is the caller’s responsibility to ensure the validity of this value. For example, the CIL offset is not valid if it is outside the bounds of the function.
 
 ## Remarks
 
- When a frame’s function has been edited, the debugger can call the `RemapFunction` method to swap in the latest version of the frame's function so it can be executed. The code execution will begin at the given CIL offset.
+When a frame’s function has been edited, the debugger can call the `RemapFunction` method to swap in the latest version of the frame's function so it can be executed. The code execution will begin at the given CIL offset.
 
 > [!NOTE]
 > Calling `RemapFunction`, like calling [ICorDebugILFrame::SetIP](icordebugilframe-setip-method.md), will immediately invalidate all debugging interfaces that are related to generating a stack trace for the thread. These interfaces include [ICorDebugChain](icordebugchain-interface.md), ICorDebugILFrame, ICorDebugInternalFrame, and ICorDebugNativeFrame.
 
- The `RemapFunction` method can be called only in the context of the current frame, and only in one of the following cases:
+The `RemapFunction` method can be called only in the context of the current frame, and only in one of the following cases:
 
 - After receipt of a [ICorDebugManagedCallback2::FunctionRemapOpportunity](icordebugmanagedcallback2-functionremapopportunity-method.md) callback that has not yet been continued.
 

@@ -35,7 +35,7 @@ HRESULT SetJMCStatus (
 
 ## Remarks
 
- A just-my-code (JMC) stepper will skip non-user-defined code. User-defined code must be a subset of debuggable code.
+A just-my-code (JMC) stepper will skip non-user-defined code. User-defined code must be a subset of debuggable code.
 
  `SetJMCStatus` returns an HRESULT value of S_FALSE if it fails to set the value for any method, even if it successfully sets the value for all other methods.
 

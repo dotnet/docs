@@ -19,14 +19,14 @@ HRESULT EnumerateThreadIDs(
 
 ## Parameters
 
- cThreadIDs
+cThreadIDs
  [in] The maximum number of threads whose IDs can be returned.
 
- pcThreadIds
+pcThreadIds
  [out] A pointer to a `ULONG32` that indicates the actual number of thread IDs written to the `pThreadIds` array.
 
- pThreadIDs
- An array of thread identifiers.
+pThreadIDs
+An array of thread identifiers.
 
 ## Remarks
 

@@ -30,9 +30,9 @@ A subclass of "ICorDebugValue" that applies to all values. This interface provid
 
  `ICorDebugGenericValue` is a sub-interface because it is non-remotable.
 
- For reference types, the value is the reference rather than the contents of the reference.
+For reference types, the value is the reference rather than the contents of the reference.
 
- This interface does not support being called remotely, either cross-machine or cross-process.
+This interface does not support being called remotely, either cross-machine or cross-process.
 
 > [!NOTE]
 > This interface does not support being called remotely, either cross-machine or cross-process.

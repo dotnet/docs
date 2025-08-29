@@ -41,7 +41,7 @@ HRESULT LogMessage (
  [in] A pointer to an ICorDebugThread object that represents the managed thread.
 
  `lLevel`
- [in] A value of the [LoggingLevelEnum](../../../../framework/unmanaged-api/debugging/logginglevelenum-enumeration.md) enumeration that indicates the severity level of the descriptive message that was written to the event log.
+ [in] A value of the [LoggingLevelEnum](logginglevelenum-enumeration.md) enumeration that indicates the severity level of the descriptive message that was written to the event log.
 
  `pLogSwitchName`
  [in] A pointer to the name of the tracing switch.

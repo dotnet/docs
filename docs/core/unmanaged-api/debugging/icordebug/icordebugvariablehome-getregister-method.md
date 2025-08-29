@@ -31,16 +31,16 @@ HRESULT GetRegister(
 ## Parameters
 
  `pRegister`\
- [out] A CorDebugRegister enumeration value  that indicates the register for a variable with a location type of `VLT_REGISTER`, and the base register for a variable with a location type of `VLT_REGISTER_RELATIVE`.
+ [out] A [CorDebugRegister](cordebugregister-enumeration.md) enumeration value that indicates the register for a variable with a location type of `VLT_REGISTER`, and the base register for a variable with a location type of `VLT_REGISTER_RELATIVE`.
 
 ## Return Value
 
- The method returns the following values:
+The method returns the following values:
 
-|Value|Description|
-|-----------|-----------------|
-|`S_OK`|The variable is in the register indicated by the `pRegister` argument.|
-|`E_FAIL`|The variable is not in a register or a register-relative location.|
+| Value    | Description                                                            |
+|----------|------------------------------------------------------------------------|
+| `S_OK`   | The variable is in the register indicated by the `pRegister` argument. |
+| `E_FAIL` | The variable is not in a register or a register-relative location.     |
 
 ## Requirements
 
@@ -54,5 +54,4 @@ HRESULT GetRegister(
 
 ## See also
 
-- [VariableLocationType Enumeration](../../../../framework/unmanaged-api/debugging/variablelocationtype-enumeration.md)
-- [ICorDebugVariableHome Interface](icordebugvariablehome-interface.md)
+- [ICorDebugVariableHome interface](icordebugvariablehome-interface.md)

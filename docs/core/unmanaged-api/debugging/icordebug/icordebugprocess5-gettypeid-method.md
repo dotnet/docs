@@ -37,7 +37,7 @@ HRESULT GetTypeID(
  [in] The object address.
 
  `pId`
- A pointer to the [COR_TYPEID](cor-typeid-structure.md) value that identifies the object.
+A pointer to the [COR_TYPEID](cor-typeid-structure.md) value that identifies the object.
 
 ## Remarks
 

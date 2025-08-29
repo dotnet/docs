@@ -31,7 +31,7 @@ HRESULT Stop (
 ## Parameters
 
  `dwTimeoutIgnored`
- Not used.
+Not used.
 
 ## Remarks
 
@@ -40,7 +40,7 @@ HRESULT Stop (
 > [!NOTE]
 > `Stop` is the only synchronous method in the debugging API. When `Stop` returns S_OK, the process is stopped. No callback is given to notify listeners of the stop. The debugger must call [ICorDebugController::Continue](icordebugcontroller-continue-method.md) to allow the process to resume.
 
- The debugger maintains a stop counter. When the counter goes to zero, the controller is resumed. Each call to `Stop` or each dispatched callback increments the counter. Each call to `ICorDebugController::Continue` decrements the counter.
+The debugger maintains a stop counter. When the counter goes to zero, the controller is resumed. Each call to `Stop` or each dispatched callback increments the counter. Each call to `ICorDebugController::Continue` decrements the counter.
 
 ## Requirements
 

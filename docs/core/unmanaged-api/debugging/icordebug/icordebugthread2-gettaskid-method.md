@@ -35,7 +35,7 @@ HRESULT GetTaskID (
 
 ## Remarks
 
- A task can only be running on the thread if the thread is associated with a connection. `GetTaskID` returns zero in `pTaskId` if the thread is not associated with a connection.
+A task can only be running on the thread if the thread is associated with a connection. `GetTaskID` returns zero in `pTaskId` if the thread is not associated with a connection.
 
 ## Requirements
 

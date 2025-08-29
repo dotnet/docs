@@ -35,9 +35,9 @@ HRESULT CreateStepper (
 
 ## Remarks
 
- The active frame may be unmanaged code.
+The active frame may be unmanaged code.
 
- The `ICorDebugStepper` interface must be used to perform the actual stepping.
+The `ICorDebugStepper` interface must be used to perform the actual stepping.
 
 ## Requirements
 

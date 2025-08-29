@@ -35,7 +35,7 @@ HRESULT GetActiveChain (
 
 ## Remarks
 
- The `ppChain` parameter is null if no stack chain is currently active.
+The `ppChain` parameter is null if no stack chain is currently active.
 
 ## Requirements
 

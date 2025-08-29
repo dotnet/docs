@@ -44,7 +44,7 @@ HRESULT GetName (
 
 ## Remarks
 
- MDA names are unique values. The `GetName` method is a convenient performance alternative to getting the XML stream and extracting the name from the stream based on the schema.
+MDA names are unique values. The `GetName` method is a convenient performance alternative to getting the XML stream and extracting the name from the stream based on the schema.
 
 ## Requirements
 

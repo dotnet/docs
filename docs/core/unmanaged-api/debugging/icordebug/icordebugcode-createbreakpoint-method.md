@@ -39,9 +39,9 @@ HRESULT CreateBreakpoint (
 
 ## Remarks
 
- Before the breakpoint is active, it must be added to the process object.
+Before the breakpoint is active, it must be added to the process object.
 
- If this code is common intermediate language (CIL) code, and there is a just-in-time (JIT)-compiled, native version of the code, the breakpoint will be applied in the JIT-compiled code as well. (The same is true if the code is JIT-compiled later.)
+If this code is common intermediate language (CIL) code, and there is a just-in-time (JIT)-compiled, native version of the code, the breakpoint will be applied in the JIT-compiled code as well. (The same is true if the code is JIT-compiled later.)
 
 ## Requirements
 

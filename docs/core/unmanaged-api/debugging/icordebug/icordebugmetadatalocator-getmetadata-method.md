@@ -51,16 +51,16 @@ HRESULT GetMetaData(
  `pcchPathBuffer`
  [out] The count of `WCHAR`s written to `wszPathBuffer`.
 
- If the method returns E_NOT_SUFFICIENT_BUFFER, contains the count of `WCHAR`s needed to store the path.
+If the method returns E_NOT_SUFFICIENT_BUFFER, contains the count of `WCHAR`s needed to store the path.
 
  `wszPathBuffer`
  [out] Pointer to a buffer into which the debugger will copy the full path of the file that contains the requested metadata.
 
- The `ofReadOnly` flag from the [CorOpenFlags](../../metadata/enumerations/coropenflags-enumeration.md) enumeration is used to request read-only access to the metadata in this file.
+The `ofReadOnly` flag from the [CorOpenFlags](../../metadata/enumerations/coropenflags-enumeration.md) enumeration is used to request read-only access to the metadata in this file.
 
 ## Return Value
 
- This method returns the following specific HRESULTs as well as HRESULT errors that indicate method failure. All other failure HRESULTs indicate that the file is not retrievable.
+This method returns the following specific HRESULTs as well as HRESULT errors that indicate method failure. All other failure HRESULTs indicate that the file is not retrievable.
 
 | HRESULT | Description |
 |---------|-------------|
@@ -69,7 +69,7 @@ HRESULT GetMetaData(
 
 ## Remarks
 
- If `wszImagePath` contains a full path for a module from a dump, it specifies the path from the computer where the dump was collected. The file may not exist at this location, or an incorrect file with the same name may be stored on the path.
+If `wszImagePath` contains a full path for a module from a dump, it specifies the path from the computer where the dump was collected. The file may not exist at this location, or an incorrect file with the same name may be stored on the path.
 
 ## Requirements
 

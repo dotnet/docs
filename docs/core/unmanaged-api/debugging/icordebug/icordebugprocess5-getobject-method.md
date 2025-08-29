@@ -39,7 +39,7 @@ HRESULT GetObject(
 
 ## Remarks
 
- If `addr` does not point to a valid managed object, the `GetObject` method returns `E_FAIL`.
+If `addr` does not point to a valid managed object, the `GetObject` method returns `E_FAIL`.
 
 ## Requirements
 

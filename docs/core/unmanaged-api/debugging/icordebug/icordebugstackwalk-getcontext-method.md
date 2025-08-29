@@ -45,7 +45,7 @@ HRESULT GetContext([in]  ULONG32 contextFlags,
 
 ## Return Value
 
- This method returns the following specific HRESULTs as well as HRESULT errors that indicate method failure.
+This method returns the following specific HRESULTs as well as HRESULT errors that indicate method failure.
 
 |HRESULT|Description|
 |-------------|-----------------|
@@ -58,7 +58,7 @@ HRESULT GetContext([in]  ULONG32 contextFlags,
 
 ## Remarks
 
- Because unwinding restores only a subset of the registers, such as non-volatile registers, the context may not exactly match the register state at the time of the call.
+Because unwinding restores only a subset of the registers, such as non-volatile registers, the context may not exactly match the register state at the time of the call.
 
 ## Requirements
 

@@ -28,7 +28,7 @@ HRESULT Initialize ();
 
 ## Remarks
 
- The debugger must call `Initialize` at creation time to initialize the debugging services. This method must be called before any other method on `ICorDebug` is called.
+The debugger must call `Initialize` at creation time to initialize the debugging services. This method must be called before any other method on `ICorDebug` is called.
 
 ## Requirements
 

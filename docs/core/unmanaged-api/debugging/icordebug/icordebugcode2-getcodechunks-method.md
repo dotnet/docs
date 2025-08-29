@@ -44,7 +44,7 @@ HRESULT GetCodeChunks (
 
 ## Remarks
 
-The code chunks will never overlap, and they will follow the order in which they would have been concatenated by [ICorDebugCode::GetCode](icordebugcode-getcode-method.md). A common intermediate language (CIL) code object in the .NET Framework version 2.0 will comprise a single code chunk.
+The code chunks will never overlap, and they will follow the order in which they would have been concatenated by [ICorDebugCode::GetCode](icordebugcode-getcode-method.md). A common intermediate language (CIL) code object comprises a single code chunk.
 
 ## Requirements
 

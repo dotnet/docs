@@ -20,7 +20,7 @@ topic_type:
 
 Creates a value of the specified type, with an initial value of zero or null.
 
- This method is obsolete in .NET Framework version 2.0. Use [ICorDebugEval2::CreateValueForType](icordebugeval2-createvaluefortype-method.md) instead.
+This method is obsolete. Use [ICorDebugEval2::CreateValueForType](icordebugeval2-createvaluefortype-method.md) instead.
 
 ## Syntax
 
@@ -35,7 +35,7 @@ HRESULT CreateValue (
 ## Parameters
 
  `elementType`\
- [in] A value of the [CorElementType](../../../../framework/unmanaged-api/metadata/corelementtype-enumeration.md) enumeration that specifies the type of the value.
+ [in] A value of the [CorElementType](../../metadata/enumerations/corelementtype-enumeration.md) enumeration that specifies the type of the value.
 
  `pElementClass`\
  [in] Pointer to an [ICorDebugClass](icordebugclass-interface.md) object that specifies the class of the value, if the type is not a primitive type.
@@ -47,9 +47,9 @@ HRESULT CreateValue (
 
  `CreateValue` creates an `ICorDebugValue` object of the given type for the sole purpose of using it in a function evaluation. This value object can be used to pass user constants as parameters.
 
- If the type of the value is a primitive type, its initial value is zero or null. Use [ICorDebugGenericValue::SetValue](icordebuggenericvalue-setvalue-method.md) to set the value of a primitive type.
+If the type of the value is a primitive type, its initial value is zero or null. Use [ICorDebugGenericValue::SetValue](icordebuggenericvalue-setvalue-method.md) to set the value of a primitive type.
 
- If the value of `elementType` is ELEMENT_TYPE_CLASS, you get an "ICorDebugReferenceValue" (returned in `ppValue`) representing the null object reference. You can use this object to pass null to a function evaluation that has object reference parameters. You cannot set the `ICorDebugValue` to anything; it always remains null.
+If the value of `elementType` is ELEMENT_TYPE_CLASS, you get an "ICorDebugReferenceValue" (returned in `ppValue`) representing the null object reference. You can use this object to pass null to a function evaluation that has object reference parameters. You cannot set the `ICorDebugValue` to anything; it always remains null.
 
 ## Requirements
 

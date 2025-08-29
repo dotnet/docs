@@ -35,7 +35,7 @@ HRESULT GetID (
 
 ## Remarks
 
- The identifier for the application domain is unique within the containing process.
+The identifier for the application domain is unique within the containing process.
 
 ## Requirements
 

@@ -39,7 +39,7 @@ HRESULT EnumerateGCReferences(
 
 ## Remarks
 
- This method provides a way to determine the full rooting chain for any managed object in a process and can be used to determine why an object is still alive.
+This method provides a way to determine the full rooting chain for any managed object in a process and can be used to determine why an object is still alive.
 
 ## Requirements
 

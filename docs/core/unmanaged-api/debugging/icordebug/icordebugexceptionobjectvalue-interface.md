@@ -27,7 +27,7 @@ Extends the "ICorDebugObjectValue" interface to provide stack trace information 
 
 ## Remarks
 
- The call to `QueryInterface` will succeed for managed objects that derive from <xref:System.Exception?displayProperty=nameWithType>.
+The call to `QueryInterface` will succeed for managed objects that derive from <xref:System.Exception?displayProperty=nameWithType>.
 
 ## Requirements
 

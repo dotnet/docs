@@ -38,14 +38,14 @@ HRESULT GetStaticFieldValue (
  `pFrame`
  [in] A pointer to an ICorDebugFrame object that represents the frame to be used to disambiguate among thread, context, or application domain statics.
 
- If the static field is relative to a thread, a context, or an application domain, the frame will determine the proper value.
+If the static field is relative to a thread, a context, or an application domain, the frame will determine the proper value.
 
  `ppValue`
  [out] A pointer to the address of an ICorDebugValue object that represents the value of the static field.
 
 ## Remarks
 
- For parameterized types, the value of a static field is relative to the particular instantiation. Therefore, if the class constructor takes parameters of type <xref:System.Type>, call [ICorDebugType::GetStaticFieldValue](icordebugtype-getstaticfieldvalue-method.md) instead of `ICorDebugClass::GetStaticFieldValue`.
+For parameterized types, the value of a static field is relative to the particular instantiation. Therefore, if the class constructor takes parameters of type <xref:System.Type>, call [ICorDebugType::GetStaticFieldValue](icordebugtype-getstaticfieldvalue-method.md) instead of `ICorDebugClass::GetStaticFieldValue`.
 
 ## Requirements
 

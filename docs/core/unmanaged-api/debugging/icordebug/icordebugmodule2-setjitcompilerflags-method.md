@@ -35,11 +35,11 @@ HRESULT SetJITCompilerFlags (
 
 ## Remarks
 
- If the `dwFlags` value is invalid, the `SetJITCompilerFlags` method will fail.
+If the `dwFlags` value is invalid, the `SetJITCompilerFlags` method will fail.
 
- The `SetJITCompilerFlags` method can be called only from within the [ICorDebugManagedCallback::LoadModule](icordebugmanagedcallback-loadmodule-method.md) callback for this module. Attempts to call it after the `ICorDebugManagedCallback::LoadModule` callback has been delivered will fail.
+The `SetJITCompilerFlags` method can be called only from within the [ICorDebugManagedCallback::LoadModule](icordebugmanagedcallback-loadmodule-method.md) callback for this module. Attempts to call it after the `ICorDebugManagedCallback::LoadModule` callback has been delivered will fail.
 
- Edit and Continue is not supported on 64-bit or Win9x platforms. Therefore, if you call the `SetJITCompilerFlags` method on either of these two platforms with the CORDEBUG_JIT_ENABLE_ENC flag set in `dwFlags`, the `SetJITCompilerFlags` method and all methods specific to Edit and Continue, such as [ICorDebugModule2::ApplyChanges](icordebugmodule2-applychanges-method.md), will fail.
+Edit and Continue is not supported on 64-bit or Win9x platforms. Therefore, if you call the `SetJITCompilerFlags` method on either of these two platforms with the CORDEBUG_JIT_ENABLE_ENC flag set in `dwFlags`, the `SetJITCompilerFlags` method and all methods specific to Edit and Continue, such as [ICorDebugModule2::ApplyChanges](icordebugmodule2-applychanges-method.md), will fail.
 
 ## Requirements
 

@@ -33,7 +33,7 @@ A subclass of "ICorDebugValue" that represents a value that contains an object.
 
 ## Remarks
 
- An `ICorDebugObjectValue` remains valid until the process being debugged is continued.
+An `ICorDebugObjectValue` remains valid until the process being debugged is continued.
 
 > [!NOTE]
 > This interface does not support being called remotely, either cross-machine or cross-process.

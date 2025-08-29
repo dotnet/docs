@@ -20,7 +20,7 @@ HRESULT ProcessStateChanged(   [in] CorDebugStateChange change);
 
 ## Remarks
 
- The debugger calls this method to notify [ICorDebug](icordebug-interface.md) that the process is running.
+The debugger calls this method to notify [ICorDebug](icordebug-interface.md) that the process is running.
 
 > [!NOTE]
 > This method is available with .NET Native only.

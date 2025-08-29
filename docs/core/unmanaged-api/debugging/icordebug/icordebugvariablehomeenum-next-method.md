@@ -36,14 +36,14 @@ HRESULT Next(
  [in] The number of objects to be retrieved.
 
  `homes`
- An array of pointers, each of which points to a [ICorDebugVariableHome](icordebugvariablehome-interface.md) object that provides information about  a local variable or argument of a function.
+An array of pointers, each of which points to a [ICorDebugVariableHome](icordebugvariablehome-interface.md) object that provides information about  a local variable or argument of a function.
 
  `pceltFetched`
  [out] The number of instances actually returned in objects.
 
 ## Return Value
 
- The method returns the following values.
+The method returns the following values.
 
 |HRESULT|Description|
 |-------------|-----------------|
@@ -52,7 +52,7 @@ HRESULT Next(
 
 ## Remarks
 
- The [ICorDebugVariableHomeEnum::Next](icordebugvariablehomeenum-next-method.md) method retrieves a maximum of  `celt` objects starting at the current position of the enumerator. When the method returns, `pceltFetched` contains the actual number of objects retrieved.
+The [ICorDebugVariableHomeEnum::Next](icordebugvariablehomeenum-next-method.md) method retrieves a maximum of  `celt` objects starting at the current position of the enumerator. When the method returns, `pceltFetched` contains the actual number of objects retrieved.
 
 ## Requirements
 

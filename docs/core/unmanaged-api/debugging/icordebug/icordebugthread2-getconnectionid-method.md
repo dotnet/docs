@@ -35,9 +35,9 @@ HRESULT GetConnectionID (
 
 ## Remarks
 
- The `GetConnectionID` method returns zero in the `pdwConnectionId` parameter, if this thread is not part of a connection.
+The `GetConnectionID` method returns zero in the `pdwConnectionId` parameter, if this thread is not part of a connection.
 
- If this thread is connected to an instance of Microsoft SQL Server 2005 Analysis Services (SSAS), the `CONNID` maps to a server process identifier (SPID).
+If this thread is connected to an instance of Microsoft SQL Server 2005 Analysis Services (SSAS), the `CONNID` maps to a server process identifier (SPID).
 
 ## Requirements
 

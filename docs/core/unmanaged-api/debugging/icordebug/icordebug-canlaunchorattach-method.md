@@ -39,7 +39,7 @@ HRESULT CanLaunchOrAttach (
 
 ## Return Value
 
- S_OK if the debugging services determine that launching a new process or attaching to the given process is possible, given the information about the current machine and runtime configuration. Possible HRESULT values are:
+S_OK if the debugging services determine that launching a new process or attaching to the given process is possible, given the information about the current machine and runtime configuration. Possible HRESULT values are:
 
 - S_OK
 - CORDBG_E_DEBUGGING_NOT_POSSIBLE
@@ -48,9 +48,9 @@ HRESULT CanLaunchOrAttach (
 
 ## Remarks
 
- This method is purely informational. The interface will not stop you from launching or attaching to a process, regardless of the value returned by `CanLaunchOrAttach`.
+This method is purely informational. The interface will not stop you from launching or attaching to a process, regardless of the value returned by `CanLaunchOrAttach`.
 
- If you plan to launch with Win32 debugging enabled or attach with Win32 debugging enabled, pass `true` for `win32DebuggingEnabled`. The HRESULT returned by `CanLaunchOrAttach` might differ if you use this option.
+If you plan to launch with Win32 debugging enabled or attach with Win32 debugging enabled, pass `true` for `win32DebuggingEnabled`. The HRESULT returned by `CanLaunchOrAttach` might differ if you use this option.
 
 ## Requirements
 

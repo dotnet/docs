@@ -47,17 +47,15 @@ HRESULT GetParameterizedType (
 
 ## Remarks
 
- If the class is non-generic, that is, if it has no type parameters, `GetParameterizedType` simply gets the runtime type object corresponding to the class. The `elementType` parameter should be set to the correct element type for the class: ELEMENT_TYPE_VALUETYPE if the class is a value type; otherwise, ELEMENT_TYPE_CLASS.
+If the class is non-generic, that is, if it has no type parameters, `GetParameterizedType` simply gets the runtime type object corresponding to the class. The `elementType` parameter should be set to the correct element type for the class: ELEMENT_TYPE_VALUETYPE if the class is a value type; otherwise, ELEMENT_TYPE_CLASS.
 
- If the class accepts type parameters (for example, `ArrayList<T>`), you can use `GetParameterizedType` to construct a type object for an instantiated type such as `ArrayList<int>`.
+If the class accepts type parameters (for example, `ArrayList<T>`), you can use `GetParameterizedType` to construct a type object for an instantiated type such as `ArrayList<int>`.
 
 ## Background Information
 
- In the .NET Framework versions 1.0 and 1.1, every type in the metadata could be directly mapped to a type in the running process. Thus, a metadata type and a runtime type had a single representation in the running process. However, one generic type in metadata can be mapped to many different instantiations of the type in the running process. For example, the metadata type `SortedList<K,V>` can map to `SortedList<String, EmployeeRecord>`, `SortedList<Int32, String>`, `SortedList<String,Array<Int32>>`, and so on. Thus, you need a way to handle type instantiation.
+.NET Framework version 2.0 introduced the `ICorDebugType` interface. For a generic type, an `ICorDebugClass` or `ICorDebugClass2` object represents the uninstantiated type (`SortedList<K,V>`), and an `ICorDebugType` object represents the various instantiated types. Given an `ICorDebugClass` or `ICorDebugClass2` object, you can create an `ICorDebugType` object for any instantiation by calling the `ICorDebugClass2::GetParameterizedType` method. You can also create an `ICorDebugType` object for a simple type, such as Int32, or for a non-generic type.
 
- The .NET Framework version 2.0 introduces the `ICorDebugType` interface. For a generic type, an `ICorDebugClass` or `ICorDebugClass2` object represents the uninstantiated type (`SortedList<K,V>`), and an `ICorDebugType` object represents the various instantiated types. Given an `ICorDebugClass` or `ICorDebugClass2` object, you can create an `ICorDebugType` object for any instantiation by calling the `ICorDebugClass2::GetParameterizedType` method. You can also create an `ICorDebugType` object for a simple type, such as Int32, or for a non-generic type.
-
- The introduction of the `ICorDebugType` object to represent the run-time notion of a type has a ripple effect throughout the API. Functions that previously took an `ICorDebugClass` or `ICorDebugClass2` object or even a `CorElementType` value are generalized to take an `ICorDebugType` object.
+The introduction of the `ICorDebugType` object to represent the run-time notion of a type has a ripple effect throughout the API. Functions that previously took an `ICorDebugClass` or `ICorDebugClass2` object or even a `CorElementType` value are generalized to take an `ICorDebugType` object.
 
 ## Requirements
 

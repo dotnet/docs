@@ -43,7 +43,7 @@ HRESULT DebugActiveProcess (
 
 ## Remarks
 
- Interop debugging is not supported on Win9x and non-x86 platforms, such as IA-64-based and AMD64-based platforms.
+Interop debugging is not supported on Win9x and non-x86 platforms, such as IA-64-based and AMD64-based platforms.
 
 ## Requirements
 

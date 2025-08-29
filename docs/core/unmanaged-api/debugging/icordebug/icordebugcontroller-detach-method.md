@@ -28,9 +28,9 @@ HRESULT Detach ();
 
 ## Remarks
 
- The process or application domain continues execution normally, but the "ICorDebugProcess" or "ICorDebugAppDomain" object is no longer valid and no further callbacks will occur.
+The process or application domain continues execution normally, but the `ICorDebugProcess` or `ICorDebugAppDomain` object is no longer valid and no further callbacks will occur.
 
- In .NET Framework version 2.0, if unmanaged debugging is enabled, this method will fail due to operating system limitations.
+If unmanaged debugging is enabled, this method will fail due to operating system limitations.
 
 ## Requirements
 

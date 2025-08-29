@@ -44,9 +44,9 @@ HRESULT GetRegisters (
 
 ## Remarks
 
- The size of the array should be equal to the number of bits set to one in the bit mask. The `regCount` parameter specifies the number of elements in the buffer that will receive the register values. If the `regCount` value is too small for the number of registers indicated by the mask, the higher numbered registers will be truncated from the set. If the `regCount` value is too large, the unused `regBuffer` elements will be unmodified.
+The size of the array should be equal to the number of bits set to one in the bit mask. The `regCount` parameter specifies the number of elements in the buffer that will receive the register values. If the `regCount` value is too small for the number of registers indicated by the mask, the higher numbered registers will be truncated from the set. If the `regCount` value is too large, the unused `regBuffer` elements will be unmodified.
 
- If the bit mask specifies a register that is unavailable, `GetRegisters` returns an indeterminate value for that register.
+If the bit mask specifies a register that is unavailable, `GetRegisters` returns an indeterminate value for that register.
 
 ## Requirements
 

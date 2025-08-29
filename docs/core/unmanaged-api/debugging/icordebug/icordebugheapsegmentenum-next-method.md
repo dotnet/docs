@@ -31,13 +31,13 @@ HRESULT Next(
 
 ## Parameters
 
- celt
+celt
  [in] The number of segments to be retrieved.
 
- segments
+segments
  [out] An array of pointers, each of which points to a [COR_SEGMENT](cor-segment-structure.md) object that provides information about a region of memory in the managed heap.
 
- pceltFetched
+pceltFetched
  [out] A pointer to the number of [COR_SEGMENT](cor-segment-structure.md) objects actually returned in `segments`. This value may be `null` if `celt` is 1.
 
 ## Remarks

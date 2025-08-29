@@ -39,7 +39,7 @@ HRESULT CreateThread (
 
 ## Remarks
 
- The thread will be positioned at the first managed code instruction to be executed.
+The thread will be positioned at the first managed code instruction to be executed.
 
 ## Requirements
 

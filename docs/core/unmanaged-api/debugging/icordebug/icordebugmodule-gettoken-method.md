@@ -35,7 +35,7 @@ HRESULT GetToken(
 
 ## Remarks
 
- The token can be passed to the [IMetaDataImport](../../metadata/interfaces/imetadataimport-interface.md), [IMetaDataImport2](../../metadata/interfaces/imetadataimport2-interface.md), and [IMetaDataAssemblyImport](../../metadata/interfaces/imetadataassemblyimport-interface.md) metadata import interfaces.
+The token can be passed to the [IMetaDataImport](../../metadata/interfaces/imetadataimport-interface.md), [IMetaDataImport2](../../metadata/interfaces/imetadataimport2-interface.md), and [IMetaDataAssemblyImport](../../metadata/interfaces/imetadataassemblyimport-interface.md) metadata import interfaces.
 
 ## Requirements
 

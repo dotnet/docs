@@ -27,7 +27,7 @@ Provides a callback method that indicates that an enabled custom debugger notifi
 
 ## Remarks
 
- This interface is a logical extension of the [ICorDebugManagedCallback](icordebugmanagedcallback-interface.md) and [ICorDebugManagedCallback2](icordebugmanagedcallback2-interface.md) interfaces.
+This interface is a logical extension of the [ICorDebugManagedCallback](icordebugmanagedcallback-interface.md) and [ICorDebugManagedCallback2](icordebugmanagedcallback2-interface.md) interfaces.
 
 > [!NOTE]
 > This interface does not support being called remotely, either cross-machine or cross-process.

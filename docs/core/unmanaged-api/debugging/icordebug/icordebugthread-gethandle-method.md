@@ -35,9 +35,9 @@ HRESULT GetHandle (
 
 ## Remarks
 
- The handle may change as the process executes, and may be different for different parts of the thread.
+The handle may change as the process executes, and may be different for different parts of the thread.
 
- This handle is owned by the debugging API. The debugger should duplicate it before using it.
+This handle is owned by the debugging API. The debugger should duplicate it before using it.
 
 ## Requirements
 

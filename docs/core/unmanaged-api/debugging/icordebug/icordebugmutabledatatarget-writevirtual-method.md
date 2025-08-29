@@ -33,7 +33,7 @@ HRESULT WriteVirtual(
 
 ## Remarks
 
- If any bytes cannot be written, the method call fails without changing any bytes in the target address space. (Otherwise, the target would be in an inconsistent state that makes further debugging unreliable.)
+If any bytes cannot be written, the method call fails without changing any bytes in the target address space. (Otherwise, the target would be in an inconsistent state that makes further debugging unreliable.)
 
 ## Requirements
 

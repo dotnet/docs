@@ -35,7 +35,7 @@ HRESULT GetUserState (
 
 ## Remarks
 
- The user state of the thread is the state of the thread when it is examined by the program that is being debugged. A thread may have multiple state bits set.
+The user state of the thread is the state of the thread when it is examined by the program that is being debugged. A thread may have multiple state bits set.
 
 ## Requirements
 

@@ -51,7 +51,7 @@ HRESULT GetLocalDoubleRegisterValue (
 
 ## Remarks
 
- The `GetLocalDoubleRegisterValue` method can be used either in a native frame or a just-in-time (JIT)-compiled frame.
+The `GetLocalDoubleRegisterValue` method can be used either in a native frame or a just-in-time (JIT)-compiled frame.
 
 ## Requirements
 

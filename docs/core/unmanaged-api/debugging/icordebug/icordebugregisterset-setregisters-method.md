@@ -18,7 +18,7 @@ topic_type:
 ---
 # ICorDebugRegisterSet::SetRegisters Method
 
-`SetRegisters` is not implemented in .NET Framework version 2.0. Do not call this method.
+`SetRegisters` is not implemented.
 
 > [!NOTE]
 > Use the higher-level operations such as [ICorDebugILFrame::SetIP](icordebugilframe-setip-method.md) or [ICorDebugNativeFrame::SetIP](icordebugnativeframe-setip-method.md).

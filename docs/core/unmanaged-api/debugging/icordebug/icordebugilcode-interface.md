@@ -13,9 +13,7 @@ topic_type:
 ---
 # ICorDebugILCode Interface
 
-[Supported in the .NET Framework 4.5.2 and later versions]
-
- Represents a segment of intermediate language (IL) code.
+Represents a segment of intermediate language (IL) code.
 
 ## Methods
 

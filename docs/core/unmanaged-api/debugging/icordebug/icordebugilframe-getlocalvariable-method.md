@@ -39,7 +39,7 @@ HRESULT GetLocalVariable (
 
 ## Remarks
 
- The `GetLocalVariable` method can be used either in an CIL stack frame or in a just-in-time (JIT) compiled frame.
+The `GetLocalVariable` method can be used either in an CIL stack frame or in a just-in-time (JIT) compiled frame.
 
 ## Requirements
 

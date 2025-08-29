@@ -47,7 +47,7 @@ HRESULT GetArrayOrPointerType (
 
 ## Remarks
 
- The value of *elementType* must be one of the following:
+The value of *elementType* must be one of the following:
 
 - ELEMENT_TYPE_PTR
 
@@ -55,7 +55,7 @@ HRESULT GetArrayOrPointerType (
 
 - ELEMENT_TYPE_ARRAY or ELEMENT_TYPE_SZARRAY
 
- If the value of *elementType* is ELEMENT_TYPE_PTR or ELEMENT_TYPE_BYREF, *nRank* must be zero.
+If the value of *elementType* is ELEMENT_TYPE_PTR or ELEMENT_TYPE_BYREF, *nRank* must be zero.
 
 ## Requirements
 

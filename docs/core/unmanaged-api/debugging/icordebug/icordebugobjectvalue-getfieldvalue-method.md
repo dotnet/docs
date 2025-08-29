@@ -43,9 +43,9 @@ HRESULT GetFieldValue (
 
 ## Remarks
 
- The class, specified in the `pClass` parameter, must be in the hierarchy of the object value's class, and the field must be a field of that class.
+The class, specified in the `pClass` parameter, must be in the hierarchy of the object value's class, and the field must be a field of that class.
 
- The `GetFieldValue` method will still succeed for generic objects and generic classes. For example, if MyDictionary\<V> inherits from Dictionary\<string,V>, and the object value is of type MyDictionary\<int32>, passing the `ICorDebugClass` object for Dictionary\<K,V> will successfully get a field of Dictionary\<string,int32>.
+The `GetFieldValue` method will still succeed for generic objects and generic classes. For example, if MyDictionary\<V> inherits from Dictionary\<string,V>, and the object value is of type MyDictionary\<int32>, passing the `ICorDebugClass` object for Dictionary\<K,V> will successfully get a field of Dictionary\<string,int32>.
 
 ## Requirements
 

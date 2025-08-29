@@ -34,22 +34,22 @@ HRESULT LogSwitch (
 
 ## Parameters
 
- `PAppDomain`
+ `PAppDomain`\
  [in] A pointer to an ICorDebugAppDomain object that represents the application domain containing the managed thread that created, modified, or deleted a debugging/tracing switch.
 
- `pThread`
+ `pThread`\
  [in] A pointer to an ICorDebugThread object that represents the managed thread.
 
- `lLevel`
+ `lLevel`\
  [in] A value that indicates the severity level of the descriptive message that was written to the event log.
 
- `ulReason`
- [in] A value of the [LogSwitchCallReason](../../../../framework/unmanaged-api/debugging/logswitchcallreason-enumeration.md) enumeration that indicates the operation performed on the debugging/tracing switch.
+ `ulReason`\
+ [in] A value of the [LogSwitchCallReason](logswitchcallreason-enumeration.md) enumeration that indicates the operation performed on the debugging/tracing switch.
 
- `pLogSwitchName`
+ `pLogSwitchName`\
  [in] A pointer to the name of the debugging/tracing switch.
 
- `pParentName`
+ `pParentName`\
  [in] A pointer to the name of the parent of the debugging/tracing switch.
 
 ## Requirements

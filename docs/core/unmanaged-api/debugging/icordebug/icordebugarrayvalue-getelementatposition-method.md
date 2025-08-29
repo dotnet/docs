@@ -39,7 +39,7 @@ HRESULT GetElementAtPosition (
 
 ## Remarks
 
- The layout of a multi-dimension array follows the C++ style of array layout.
+The layout of a multi-dimension array follows the C++ style of array layout.
 
 ## Requirements
 

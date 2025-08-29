@@ -52,11 +52,11 @@ Provides methods to process debugger callbacks.
 
 ## Remarks
 
- All callbacks are serialized, called in the same thread, and called with the process in the synchronized state.
+All callbacks are serialized, called in the same thread, and called with the process in the synchronized state.
 
- Each callback implementation must call [ICorDebugController::Continue](icordebugcontroller-continue-method.md) to resume execution. If `ICorDebugController::Continue` is not called before the callback returns, the process will remain stopped and no more event callbacks will occur until `ICorDebugController::Continue` is called.
+Each callback implementation must call [ICorDebugController::Continue](icordebugcontroller-continue-method.md) to resume execution. If `ICorDebugController::Continue` is not called before the callback returns, the process will remain stopped and no more event callbacks will occur until `ICorDebugController::Continue` is called.
 
- A debugger must implement [ICorDebugManagedCallback2](icordebugmanagedcallback2-interface.md) if it is debugging .NET Framework version 2.0 applications. An instance of `ICorDebugManagedCallback` or `ICorDebugManagedCallback2` is passed as the callback object to [ICorDebug::SetManagedHandler](icordebug-setmanagedhandler-method.md).
+A debugger must implement [ICorDebugManagedCallback2](icordebugmanagedcallback2-interface.md). An instance of `ICorDebugManagedCallback` or `ICorDebugManagedCallback2` is passed as the callback object to [ICorDebug::SetManagedHandler](icordebug-setmanagedhandler-method.md).
 
 > [!NOTE]
 > This interface does not support being called remotely, either cross-machine or cross-process.

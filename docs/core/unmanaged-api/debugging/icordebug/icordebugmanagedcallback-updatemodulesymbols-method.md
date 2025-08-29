@@ -43,11 +43,11 @@ HRESULT UpdateModuleSymbols (
 
 ## Remarks
 
- This method provides an opportunity to update the debugger's view of a module's symbols by calling [ISymUnmanagedReader::UpdateSymbolStore](../../../../framework/unmanaged-api/diagnostics/isymunmanagedreader-updatesymbolstore-method.md) or [ISymUnmanagedReader::ReplaceSymbolStore](../../../../framework/unmanaged-api/diagnostics/isymunmanagedreader-replacesymbolstore-method.md).
+This method provides an opportunity to update the debugger's view of a module's symbols by calling [ISymUnmanagedReader::UpdateSymbolStore](../../../../framework/unmanaged-api/diagnostics/isymunmanagedreader-updatesymbolstore-method.md) or [ISymUnmanagedReader::ReplaceSymbolStore](../../../../framework/unmanaged-api/diagnostics/isymunmanagedreader-replacesymbolstore-method.md).
 
- This callback can occur multiple times for the same module.
+This callback can occur multiple times for the same module.
 
- A debugger should try to bind unbound source-level breakpoints.
+A debugger should try to bind unbound source-level breakpoints.
 
 ## Requirements
 

@@ -28,7 +28,7 @@ HRESULT Abort ();
 
 ## Remarks
 
- If the evaluation is nested and it is not the most recent one, the `Abort` method may fail.
+If the evaluation is nested and it is not the most recent one, the `Abort` method may fail.
 
 ## Requirements
 

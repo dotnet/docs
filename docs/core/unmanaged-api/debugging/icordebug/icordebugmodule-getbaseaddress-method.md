@@ -35,7 +35,7 @@ HRESULT GetBaseAddress(
 
 ## Remarks
 
- If the module is a native image (that is, if the module was produced by the native image generator, NGen.exe), its base address will be zero.
+If the module is a native image (that is, if the module was produced by the native image generator, NGen.exe), its base address will be zero.
 
 ## Requirements
 

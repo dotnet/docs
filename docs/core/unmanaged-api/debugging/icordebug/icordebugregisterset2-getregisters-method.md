@@ -47,13 +47,13 @@ HRESULT GetRegisters (
 
 ## Remarks
 
- The `GetRegisters` method returns an array of values from the registers that are specified by the mask. The array does not contain values of registers whose mask bit is not set. Thus, the size of the `regBuffer` array must be equal to the number of 1's in the mask. If the value of `regCount` is too small for the number of registers indicated by the mask, the values of the higher numbered registers will be truncated from the set. If `regCount` is too large, the unused `regBuffer` elements will be unmodified.
+The `GetRegisters` method returns an array of values from the registers that are specified by the mask. The array does not contain values of registers whose mask bit is not set. Thus, the size of the `regBuffer` array must be equal to the number of 1's in the mask. If the value of `regCount` is too small for the number of registers indicated by the mask, the values of the higher numbered registers will be truncated from the set. If `regCount` is too large, the unused `regBuffer` elements will be unmodified.
 
- If an unavailable register is indicated by the mask, an indeterminate value will be returned for that register.
+If an unavailable register is indicated by the mask, an indeterminate value will be returned for that register.
 
- The `ICorDebugRegisterSet2::GetRegisters` method is necessary for platforms that have more than 64 registers. For example, IA64 has 128 general purpose registers and 128 floating-point registers, so you need more than 64 bits in the bit mask.
+The `ICorDebugRegisterSet2::GetRegisters` method is necessary for platforms that have more than 64 registers. For example, IA64 has 128 general purpose registers and 128 floating-point registers, so you need more than 64 bits in the bit mask.
 
- If you don't have more than 64 registers, as is the case on platforms such as x86, the `GetRegisters` method just translates the bytes in the `mask` byte array into a `ULONG64` and then calls the [ICorDebugRegisterSet::GetRegisters](icordebugregisterset-getregisters-method.md) method, which takes the `ULONG64` mask.
+If you don't have more than 64 registers, as is the case on platforms such as x86, the `GetRegisters` method just translates the bytes in the `mask` byte array into a `ULONG64` and then calls the [ICorDebugRegisterSet::GetRegisters](icordebugregisterset-getregisters-method.md) method, which takes the `ULONG64` mask.
 
 ## Requirements
 

@@ -42,11 +42,11 @@ HRESULT GetILToNativeMapping (
  `map`
  [out] An array of `COR_DEBUG_IL_TO_NATIVE_MAP` structures, each of which represents a mapping from a CIL offset to a native offset.
 
- There is no ordering to the array of elements returned.
+There is no ordering to the array of elements returned.
 
 ## Remarks
 
- The `GetILToNativeMapping` method returns meaningful results only if this "ICorDebugCode" instance represents native code that was just-in-time (JIT) compiled from CIL code.
+The `GetILToNativeMapping` method returns meaningful results only if this "ICorDebugCode" instance represents native code that was just-in-time (JIT) compiled from CIL code.
 
 ## Requirements
 

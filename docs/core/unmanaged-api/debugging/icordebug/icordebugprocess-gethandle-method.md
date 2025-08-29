@@ -33,7 +33,7 @@ HRESULT GetHandle([out] HPROCESS *phProcessHandle);
 
 ## Remarks
 
- The retrieved handle is owned by the debugging interface. The debugger should duplicate the handle before using it.
+The retrieved handle is owned by the debugging interface. The debugger should duplicate the handle before using it.
 
 ## Requirements
 

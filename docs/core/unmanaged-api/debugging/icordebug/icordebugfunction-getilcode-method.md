@@ -35,7 +35,7 @@ HRESULT GetILCode (
 
 ## Remarks
 
- If Edit and Continue has been allowed on this function, the `GetILCode` method will get the CIL code corresponding to this function's edited version of the code in the common language runtime (CLR).
+If Edit and Continue has been allowed on this function, the `GetILCode` method will get the CIL code corresponding to this function's edited version of the code in the common language runtime (CLR).
 
 ## Requirements
 

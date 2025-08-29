@@ -43,7 +43,7 @@ HRESULT NewParameterizedObjectNoConstructor (
 
 ## Remarks
 
- The `NewParameterizedObjectNoConstructor` method will fail if an incorrect number of type arguments or the wrong types of type arguments are passed.
+The `NewParameterizedObjectNoConstructor` method will fail if an incorrect number of type arguments or the wrong types of type arguments are passed.
 
 ## Requirements
 

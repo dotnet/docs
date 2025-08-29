@@ -25,7 +25,7 @@ Represents an assembly.
 |------------|-----------------|
 |[EnumerateModules Method](icordebugassembly-enumeratemodules-method.md)|Gets an enumerator for the modules contained in the assembly.|
 |[GetAppDomain Method](icordebugassembly-getappdomain-method.md)|Gets an interface pointer to the application domain that contains this `ICorDebugAssembly` instance.|
-|[GetCodeBase Method](icordebugassembly-getcodebase-method.md)|Not implemented in the current version of the .NET Framework.|
+|[GetCodeBase Method](icordebugassembly-getcodebase-method.md)|Not implemented.|
 |[GetName Method](icordebugassembly-getname-method.md)|Gets the name of the assembly.|
 |[GetProcess Method](icordebugassembly-getprocess-method.md)|Gets the ICorDebugProcess instance in which the assembly is running.|
 

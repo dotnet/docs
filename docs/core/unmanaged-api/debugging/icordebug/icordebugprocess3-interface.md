@@ -27,7 +27,7 @@ Controls custom debugger notifications.
 
 ## Remarks
 
- This interface logically extends the ICorDebugProcess and ICorDebugProcess2 interfaces.
+This interface logically extends the ICorDebugProcess and ICorDebugProcess2 interfaces.
 
 > [!NOTE]
 > This interface does not support being called remotely, either cross-machine or cross-process.

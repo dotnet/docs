@@ -42,7 +42,7 @@ HRESULT ControlCTrap (
 
 ## Remarks
 
- All application domains within the process are stopped for this callback.
+All application domains within the process are stopped for this callback.
 
 ## Requirements
 

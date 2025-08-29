@@ -18,6 +18,8 @@ Contains values used during checks for duplications.
 [CorDeclSecurity enumeration](cordeclsecurity-enumeration.md)\
 Contains values that describe the types of declarative security used by the common language runtime.
 
+[CorElementType enumeration](corelementtype-enumeration.md)
+
 [CorErrorIfEmitOutOfOrder enumeration](corerrorifemitoutoforder-enumeration.md)\
 Contains flag values that indicate the conditions under which an error message should be generated when metadata is emitted out of order.
 

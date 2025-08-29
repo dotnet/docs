@@ -35,7 +35,7 @@ HRESULT GetDimensions (
  `cdim`
  [in] The number of dimensions of this ICorDebugArrayValue object.
 
- This value is also the size of the `dims` array because its size is equal to the number of dimensions of the `ICorDebugArrayValue` object.
+This value is also the size of the `dims` array because its size is equal to the number of dimensions of the `ICorDebugArrayValue` object.
 
  `dims`
  [out] An array of integers, each of which specifies the number of elements in a dimension in this `ICorDebugArrayValue` object.

@@ -35,7 +35,7 @@ HRESULT NewString (
 
 ## Remarks
 
- The string is always created in the application domain in which the thread is currently executing.
+The string is always created in the application domain in which the thread is currently executing.
 
 ## Requirements
 

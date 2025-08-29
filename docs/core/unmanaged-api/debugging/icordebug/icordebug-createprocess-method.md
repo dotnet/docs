@@ -79,13 +79,13 @@ HRESULT CreateProcess (
 
 ## Remarks
 
- The parameters of this method are the same as those of the Win32 `CreateProcess` method.
+The parameters of this method are the same as those of the Win32 `CreateProcess` method.
 
- To enable unmanaged mixed-mode debugging, set `dwCreationFlags` to DEBUG_PROCESS &#124; DEBUG_ONLY_THIS_PROCESS. If you want to use only managed debugging, do not set these flags.
+To enable unmanaged mixed-mode debugging, set `dwCreationFlags` to DEBUG_PROCESS &#124; DEBUG_ONLY_THIS_PROCESS. If you want to use only managed debugging, do not set these flags.
 
- If the debugger and the process to be debugged (the attached process) share a single console, and if interop debugging is used, it is possible for the attached process to hold console locks and stop at a debug event. The debugger will then block any attempt to use the console. To avoid this problem, set the CREATE_NEW_CONSOLE flag in the `dwCreationFlags` parameter.
+If the debugger and the process to be debugged (the attached process) share a single console, and if interop debugging is used, it is possible for the attached process to hold console locks and stop at a debug event. The debugger will then block any attempt to use the console. To avoid this problem, set the CREATE_NEW_CONSOLE flag in the `dwCreationFlags` parameter.
 
- Interop debugging is not supported on Win9x and non-x86 platforms such as IA-64-based and AMD64-based platforms.
+Interop debugging is not supported on Win9x and non-x86 platforms such as IA-64-based and AMD64-based platforms.
 
 ## Requirements
 

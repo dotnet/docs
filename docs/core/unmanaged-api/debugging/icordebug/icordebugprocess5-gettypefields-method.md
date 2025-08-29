@@ -47,7 +47,7 @@ HRESULT GetTypeFields(
 
 ## Remarks
 
- The `celt` parameter, which specifies the number of fields whose field information the method uses to populate `fields`, should correspond to the value of the `COR_TYPE_LAYOUT::numFields` field.
+The `celt` parameter, which specifies the number of fields whose field information the method uses to populate `fields`, should correspond to the value of the `COR_TYPE_LAYOUT::numFields` field.
 
 ## Requirements
 

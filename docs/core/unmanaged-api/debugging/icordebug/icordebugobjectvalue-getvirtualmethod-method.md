@@ -18,7 +18,7 @@ topic_type:
 ---
 # ICorDebugObjectValue::GetVirtualMethod Method
 
-`GetVirtualMethod` is not implemented in this version of the .NET Framework.
+`GetVirtualMethod` is not implemented.
 
 ## Syntax
 

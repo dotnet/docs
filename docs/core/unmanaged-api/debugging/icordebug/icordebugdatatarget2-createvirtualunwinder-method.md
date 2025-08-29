@@ -21,19 +21,19 @@ HRESULT CreateVirtualUnwinder(
 
 ## Parameters
 
- nativeThreadID
+nativeThreadID
  [in] The native thread ID of the thread whose stack is to be unwound.
 
- contextFlags
+contextFlags
  [in] Flags that specify which parts of the context are defined in `initialContext`.
 
- cbContext
+cbContext
  [in] The size of `initialContext`.
 
- initialContext
+initialContext
  [in] The data in the context.
 
- ppUnwinder
+ppUnwinder
  [out] A pointer to the address of an ICorDebugVirtualUnwinder interface object.
 
 ## Return Value

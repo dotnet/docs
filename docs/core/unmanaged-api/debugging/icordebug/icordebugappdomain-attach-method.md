@@ -28,7 +28,7 @@ HRESULT Attach ();
 
 ## Remarks
 
- The debugger must be attached to the application domain to receive events and to enable debugging of the application domain.
+The debugger must be attached to the application domain to receive events and to enable debugging of the application domain.
 
 ## Requirements
 

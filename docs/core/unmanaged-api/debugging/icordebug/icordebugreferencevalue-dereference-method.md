@@ -35,7 +35,7 @@ HRESULT Dereference (
 
 ## Remarks
 
- The `ICorDebugValue` object is valid only while its reference has not yet been disabled.
+The `ICorDebugValue` object is valid only while its reference has not yet been disabled.
 
 ## Requirements
 

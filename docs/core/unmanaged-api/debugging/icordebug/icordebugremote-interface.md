@@ -60,7 +60,7 @@ interface ICorDebugRemote : IUnknown
 
 ## Remarks
 
- Currently, this functionality is supported only for debugging a Silverlight-based application target that is running on a remote Macintosh machine.
+Currently, this functionality is supported only for debugging a Silverlight-based application target that is running on a remote Macintosh machine.
 
 ## Requirements
 
@@ -76,4 +76,3 @@ interface ICorDebugRemote : IUnknown
 
 - [ICorDebugRemoteTarget Interface](icordebugremotetarget-interface.md)
 - [ICorDebug Interface](icordebug-interface.md)
-

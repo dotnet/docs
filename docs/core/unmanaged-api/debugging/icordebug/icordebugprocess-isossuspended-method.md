@@ -38,9 +38,9 @@ HRESULT IsOSSuspended(
 
 ## Remarks
 
- When the specified thread has been suspended as a result of the debugger stopping this process, the specified thread's Win32 suspend count is incremented by one. The debugger user interface (UI) may want to take this information into account if it displays the operating system (OS) suspend count of the thread to the user.
+When the specified thread has been suspended as a result of the debugger stopping this process, the specified thread's Win32 suspend count is incremented by one. The debugger user interface (UI) may want to take this information into account if it displays the operating system (OS) suspend count of the thread to the user.
 
- The `IsOSSuspended` method makes sense only in the context of unmanaged debugging. During managed debugging, threads are cooperatively suspended rather than OS-suspended.
+The `IsOSSuspended` method makes sense only in the context of unmanaged debugging. During managed debugging, threads are cooperatively suspended rather than OS-suspended.
 
 ## Requirements
 

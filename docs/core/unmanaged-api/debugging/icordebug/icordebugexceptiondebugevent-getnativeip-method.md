@@ -22,7 +22,7 @@ HRESULT GetNativeIP(
 
 ## Remarks
 
- The meaning of this instruction pointer depends on the event type, as shown in the following table.
+The meaning of this instruction pointer depends on the event type, as shown in the following table.
 
 |Event type|Meaning of `pStackPointer` value|
 |----------------|--------------------------------------|
@@ -31,7 +31,7 @@ HRESULT GetNativeIP(
 |[MANAGED_EXCEPTION_CATCH_HANDLER_FOUND](cordebugrecordformat-enumeration.md)|The code address where `catch` handler execution will start in the frame indicated by the [GetStackPointer](icordebugexceptiondebugevent-getstackpointer-method.md) method.|
 |[MANAGED_EXCEPTION_UNHANDLED](cordebugrecordformat-enumeration.md)|`pIP` is 0.|
 
- The event type is available from the [ICorDebugDebugEvent::GetEventKind](icordebugdebugevent-geteventkind-method.md) method.
+The event type is available from the [ICorDebugDebugEvent::GetEventKind](icordebugdebugevent-geteventkind-method.md) method.
 
 > [!NOTE]
 > This method is available with .NET Native only.

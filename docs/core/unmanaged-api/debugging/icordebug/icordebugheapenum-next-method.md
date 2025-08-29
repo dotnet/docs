@@ -31,18 +31,18 @@ HRESULT Next(
 
 ## Parameters
 
- celt
+celt
  [in] The number of objects to be retrieved.
 
- objects
+objects
  [out] An array of pointers, each of which points to a [COR_HEAPOBJECT](cor-heapobject-structure.md) object that provides information about an object on the managed heap.
 
- pceltFetched
+pceltFetched
  [out] A pointer to the number of [COR_HEAPOBJECT](cor-heapobject-structure.md) objects actually returned in `objects`. This value may be `null` if `celt` is 1.
 
 ## Remarks
 
- The `COR_HEAPOBJECT.type` field is the identifier of a nested reference-counted COM interface. This reference must be released by the caller of `ICorDebugHeapEnum::Next`.
+The `COR_HEAPOBJECT.type` field is the identifier of a nested reference-counted COM interface. This reference must be released by the caller of `ICorDebugHeapEnum::Next`.
 
 ## Requirements
 

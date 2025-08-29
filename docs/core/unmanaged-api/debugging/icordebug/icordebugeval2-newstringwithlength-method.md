@@ -39,9 +39,9 @@ HRESULT NewStringWithLength (
 
 ## Remarks
 
- If the string's trailing null character is expected to be in the managed string, the caller of the `NewStringWithLength` method must ensure that the string length includes the trailing null character.
+If the string's trailing null character is expected to be in the managed string, the caller of the `NewStringWithLength` method must ensure that the string length includes the trailing null character.
 
- The string is always created in the application domain in which the thread is currently executing.
+The string is always created in the application domain in which the thread is currently executing.
 
 ## Requirements
 

@@ -35,11 +35,11 @@ HRESULT GetCurrentException (
 
 ## Remarks
 
- The exception object will exist from the time the exception is thrown until the end of the `catch` block. A function evaluation, which is performed by the ICorDebugEval methods, will clear out the exception object on setup and restore it on completion.
+The exception object will exist from the time the exception is thrown until the end of the `catch` block. A function evaluation, which is performed by the ICorDebugEval methods, will clear out the exception object on setup and restore it on completion.
 
- Exceptions can be nested (for example, if an exception is thrown in a filter or in a function evaluation), so there may be multiple outstanding exceptions on a single thread. `GetCurrentException` returns the most current exception.
+Exceptions can be nested (for example, if an exception is thrown in a filter or in a function evaluation), so there may be multiple outstanding exceptions on a single thread. `GetCurrentException` returns the most current exception.
 
- The exception object and type may change throughout the life of the exception. For example, after an exception of type x is thrown, the common language runtime (CLR) may run out of memory and promote it to an out-of-memory exception.
+The exception object and type may change throughout the life of the exception. For example, after an exception of type x is thrown, the common language runtime (CLR) may run out of memory and promote it to an out-of-memory exception.
 
 ## Requirements
 

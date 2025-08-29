@@ -35,7 +35,7 @@ HRESULT IsInMemory(
 
 ## Remarks
 
- The common language runtime (CLR) supports the loading of modules from raw streams of bytes. Such modules are called *in-memory modules* and do not exist on disk.
+The common language runtime (CLR) supports the loading of modules from raw streams of bytes. Such modules are called *in-memory modules* and do not exist on disk.
 
 ## Requirements
 

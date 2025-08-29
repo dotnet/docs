@@ -35,7 +35,7 @@ HRESULT GetTypeID(
 
 ## Return Value
 
- The return value is `S_OK` on success, or a failure `HRESULT` code on failure. The `HRESULT` codes include the following:
+The return value is `S_OK` on success, or a failure `HRESULT` code on failure. The `HRESULT` codes include the following:
 
 |Return code|Description|
 |-----------------|-----------------|
@@ -45,9 +45,9 @@ HRESULT GetTypeID(
 
 ## Remarks
 
- This method provides a mapping from the ICorDebugType, which represents a type that may or may not have been loaded into the runtime, to a [COR_TYPEID](cor-typeid-structure.md), which serves as an opaque handle that identifies a type loaded into the runtime.
+This method provides a mapping from the ICorDebugType, which represents a type that may or may not have been loaded into the runtime, to a [COR_TYPEID](cor-typeid-structure.md), which serves as an opaque handle that identifies a type loaded into the runtime.
 
- When the type that the ICorDebugType represents has not yet been loaded, this method returns `CORDBG_E_CLASS_NOT_LOADED`.  If the type is not supported, it returns `CORDBG_E_UNSUPPORTED`.
+When the type that the ICorDebugType represents has not yet been loaded, this method returns `CORDBG_E_CLASS_NOT_LOADED`.  If the type is not supported, it returns `CORDBG_E_UNSUPPORTED`.
 
 ## Requirements
 

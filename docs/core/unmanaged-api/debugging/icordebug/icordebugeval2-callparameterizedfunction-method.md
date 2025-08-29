@@ -53,9 +53,9 @@ HRESULT CallParameterizedFunction (
 
  `CallParameterizedFunction` is like [ICorDebugEval::CallFunction](icordebugeval-callfunction-method.md) except that the function may be inside a class with type parameters, may itself take type parameters, or both. The type arguments should be given first for the class, and then for the function.
 
- If the function is in a different application domain, a transition will occur. However, all type and value arguments must be in the target application domain.
+If the function is in a different application domain, a transition will occur. However, all type and value arguments must be in the target application domain.
 
- Function evaluation can be performed only in limited scenarios. If `CallParameterizedFunction` or `ICorDebugEval::CallFunction` fails, the returned HRESULT will indicate the most general possible reason for failure.
+Function evaluation can be performed only in limited scenarios. If `CallParameterizedFunction` or `ICorDebugEval::CallFunction` fails, the returned HRESULT will indicate the most general possible reason for failure.
 
 ## Requirements
 

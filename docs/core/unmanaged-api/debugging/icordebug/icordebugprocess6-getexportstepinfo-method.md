@@ -18,18 +18,18 @@ HRESULT GetExportStepInfo(
 
 ## Parameters
 
- pszExportName
+pszExportName
  [in] The name of a runtime export function as written in the PE export table.
 
- invokeKind
+invokeKind
  [out] A pointer to a member of the [CorDebugCodeInvokeKind](cordebugcodeinvokekind-enumeration.md) enumeration that describes how the exported function will invoke managed code.
 
- invokePurpose
+invokePurpose
  [out] A pointer to a member of the [CorDebugCodeInvokePurpose](cordebugcodeinvokepurpose-enumeration.md) enumeration that describes why the exported function will call managed code.
 
 ## Return Value
 
- The method can return the values listed in the following table.
+The method can return the values listed in the following table.
 
 |Return value|Description|
 |------------------|-----------------|

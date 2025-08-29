@@ -35,7 +35,7 @@ Represents a stack frame of common intermediate language (CIL) code. This interf
 
 ## Remarks
 
- The `ICorDebugILFrame` interface is a specialized ICorDebugFrame interface. It is used either for CIL code frames or for just-in-time (JIT) compiled frames. The JIT-compiled frames implement both the `ICorDebugILFrame` interface and the ICorDebugNativeFrame interface.
+The `ICorDebugILFrame` interface is a specialized ICorDebugFrame interface. It is used either for CIL code frames or for just-in-time (JIT) compiled frames. The JIT-compiled frames implement both the `ICorDebugILFrame` interface and the ICorDebugNativeFrame interface.
 
 > [!NOTE]
 > This interface does not support being called remotely, either cross-machine or cross-process.

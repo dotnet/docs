@@ -15,9 +15,7 @@ topic_type:
 ---
 # ICorDebugILFrame4::EnumerateLocalVariablesEx Method
 
-[Supported in the .NET Framework 4.5.2 and later versions]
-
- Gets an enumerator for the local variable in the frame, and optionally includes variables added in profiler ReJIT instrumentation.
+Gets an enumerator for the local variable in the frame, and optionally includes variables added in profiler ReJIT instrumentation.
 
 ## Syntax
 
@@ -38,9 +36,9 @@ HRESULT EnumerateLocalVariablesEx(
 
 ## Remarks
 
- This method is similar to the [EnumerateLocalVariables](icordebugilframe-enumeratelocalvariables-method.md) method, except that it optionally accesses variables added in profiler ReJIT instrumentation. Setting `flags` to `ILCODE_ORIGINAL_IL` is equivalent to calling [ICorDebugILFrame::EnumerateLocalVariables](icordebugilframe-enumeratelocalvariables-method.md). Setting `flags` to `ILCODE_REJIT_IL` allows the debugger to access the local variables added in profiler ReJIT instrumentation. If the intermediate language (IL) is not instrumented, the enumeration is empty and the method returns `S_OK`.
+This method is similar to the [EnumerateLocalVariables](icordebugilframe-enumeratelocalvariables-method.md) method, except that it optionally accesses variables added in profiler ReJIT instrumentation. Setting `flags` to `ILCODE_ORIGINAL_IL` is equivalent to calling [ICorDebugILFrame::EnumerateLocalVariables](icordebugilframe-enumeratelocalvariables-method.md). Setting `flags` to `ILCODE_REJIT_IL` allows the debugger to access the local variables added in profiler ReJIT instrumentation. If the intermediate language (IL) is not instrumented, the enumeration is empty and the method returns `S_OK`.
 
- The enumerator may not include all of the local variables in the running method, since some of them may not be active.
+The enumerator may not include all of the local variables in the running method, since some of them may not be active.
 
 ## Requirements
 

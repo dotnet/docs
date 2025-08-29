@@ -42,7 +42,7 @@ HRESULT Next([in] ULONG  celt,
 
 ## Return Value
 
- This method returns the following specific HRESULTs.
+This method returns the following specific HRESULTs.
 
 |HRESULT|Description|
 |-------------|-----------------|
@@ -51,9 +51,9 @@ HRESULT Next([in] ULONG  celt,
 
 ## Remarks
 
- This method functions like a typical COM enumerator.
+This method functions like a typical COM enumerator.
 
- The input array values must be at least of size `celt`. The array will be filled with either the next `celt` values in the enumeration or with all remaining values if fewer than `celt` remain. When this method returns, `pceltFetched` will be filled with the number of values that were retrieved. If `values` contains invalid pointers or points to a buffer that is smaller than `celt`, or if `pceltFetched` is an invalid pointer, the result is undefined.
+The input array values must be at least of size `celt`. The array will be filled with either the next `celt` values in the enumeration or with all remaining values if fewer than `celt` remain. When this method returns, `pceltFetched` will be filled with the number of values that were retrieved. If `values` contains invalid pointers or points to a buffer that is smaller than `celt`, or if `pceltFetched` is an invalid pointer, the result is undefined.
 
 > [!NOTE]
 > Although the [CorDebugBlockingObject](cordebugblockingobject-structure.md) structure does not need to be released, the "ICorDebugValue" interface inside of it does need to be released.

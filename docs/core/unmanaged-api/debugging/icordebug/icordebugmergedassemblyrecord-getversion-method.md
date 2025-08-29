@@ -34,7 +34,7 @@ HRESULT GetVersion(
 
 ## Remarks
 
- For information on assembly version numbers, see the <xref:System.Version> class topic.
+For information on assembly version numbers, see the <xref:System.Version> class topic.
 
 > [!NOTE]
 > This method is available with .NET Native only.

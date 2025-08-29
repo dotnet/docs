@@ -15,9 +15,7 @@ topic_type:
 ---
 # ICorDebugILCode2::GetLocalVarSigToken Method
 
-[Supported in the .NET Framework 4.5.2 and later versions]
-
- Gets the metadata token for the local variable signature for the function that is represented by this instance.
+Gets the metadata token for the local variable signature for the function that is represented by this instance.
 
 ## Syntax
 

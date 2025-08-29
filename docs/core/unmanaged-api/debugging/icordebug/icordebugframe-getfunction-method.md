@@ -35,7 +35,7 @@ HRESULT GetFunction (
 
 ## Remarks
 
- The `GetFunction` method may fail if the frame is not associated with any particular function.
+The `GetFunction` method may fail if the frame is not associated with any particular function.
 
 ## Requirements
 

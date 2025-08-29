@@ -39,7 +39,7 @@ HRESULT ExitThread (
 
 ## Remarks
 
- Once the `ExitThread` callback is fired, the thread will no longer appear in thread enumerations.
+Once the `ExitThread` callback is fired, the thread will no longer appear in thread enumerations.
 
 ## Requirements
 

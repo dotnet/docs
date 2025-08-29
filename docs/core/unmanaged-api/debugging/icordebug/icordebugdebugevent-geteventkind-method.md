@@ -17,12 +17,12 @@ HRESULT GetEventKind(
 
 ## Parameters
 
- pDebugEventKind
- A pointer to a [CorDebugDebugEventKind](cordebugdebugeventkind-enumeration.md) enumeration member that indicates the type of event.
+pDebugEventKind
+A pointer to a [CorDebugDebugEventKind](cordebugdebugeventkind-enumeration.md) enumeration member that indicates the type of event.
 
 ## Remarks
 
- Based on the value of `pDebugEventKind`, you can call `QueryInterface` to get a more precise debug event interface that has additional data.
+Based on the value of `pDebugEventKind`, you can call `QueryInterface` to get a more precise debug event interface that has additional data.
 
 > [!NOTE]
 > This method is available with .NET Native only.

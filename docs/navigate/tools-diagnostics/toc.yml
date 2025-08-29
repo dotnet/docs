@@ -359,6 +359,8 @@ items:
         href: ../../core/diagnostics/index.md
       - name: Managed debuggers
         href: ../../core/diagnostics/managed-debuggers.md
+      - name: Profiling tools
+        href: ../../core/diagnostics/profilers.md
       - name: Logging & tracing options
         href: ../../core/diagnostics/logging-tracing.md
       - name: ILogger Logging
@@ -377,8 +379,6 @@ items:
             href: ../../core/diagnostics/observability-prgrja-example.md
           - name: "Example: Use OpenTelemetry with Azure Monitor and Application Insights"
             href: ../../core/diagnostics/observability-applicationinsights.md
-      - name: Resource monitoring
-        href: ../../core/diagnostics/diagnostic-resource-monitoring.md
         displayName: resource monitoring,
       - name: App health checks
         href: ../../core/diagnostics/diagnostic-health-checks.md
@@ -423,6 +423,8 @@ items:
                 href: ../../core/diagnostics/event-counter-perf.md
           - name: Compare metric APIs
             href: ../../core/diagnostics/compare-metric-apis.md
+          - name: Resource monitoring
+            href: ../../core/diagnostics/diagnostic-resource-monitoring.md
           - name: Migrate from Windows Performance Counters
             href: ../../core/diagnostics/migrate-from-windows-performance-counters.md
       - name: Distributed tracing

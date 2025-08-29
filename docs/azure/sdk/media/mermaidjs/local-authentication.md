@@ -4,7 +4,7 @@ ms.date: 08/07/2024
 ---
 
 ```mermaid
-flowchart TD
+flowchart LR
     LA[Authentication environment]
     ARL[.NET app running locally]
     
@@ -14,7 +14,7 @@ flowchart TD
     AZPS[Azure PowerShell]
     AZD[Azure Developer CLI]
     
-    AS["Azure services <br/><br/> Azure AI Services, Azure Blob Storage, Key Vault, Azure Service Bus, etc."]
+    AS["Azure services <br/><br/> Azure AI Services, Azure Blob Storage, Azure Key Vault, Azure Service Bus, etc."]
     
     LA --> ARL
     ARL --> VS

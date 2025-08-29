@@ -211,43 +211,47 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
       Status: Running
   Name                                              Current Value
   [System.Runtime]
-    dotnet.assembly.count ({assembly})                  11
-    dotnet.gc.collections ({collection})
-      gc.heap.generation
-        gen0                                            0
-        gen1                                            0
-        gen2                                            0
-    dotnet.gc.heap.total_allocated (By)                 1,376,024
-    dotnet.gc.last_collection.heap.fragmentation.size (By)
-      gc.heap.generation
-        gen0                                            0
-        gen1                                            0
-        gen2                                            0
-        loh                                             0
-        poh                                             0
-    dotnet.gc.last_collection.heap.size (By)
-      gc.heap.generation
-        gen0                                            0
-        gen1                                            0
-        gen2                                            0
-        loh                                             0
-        poh                                             0
-    dotnet.gc.last_collection.memory.committed_size (By)   0
-    dotnet.gc.pause.time (s)                            0
-    dotnet.jit.compilation.time (s)                     0.253
-    dotnet.jit.compiled_il.size (By)                    79,536
-    dotnet.jit.compiled_methods ({method})              743
-    dotnet.monitor.lock_contentions ({contention})      0
-    dotnet.process.cpu.count ({cpu})                    22
-    dotnet.process.cpu.time (s)
-      cpu.mode
-        system                                          0.125
-        user                                            46.453
-    dotnet.process.memory.working_set (By)              34,447,360
-    dotnet.thread_pool.queue.length ({work_item})       0
-    dotnet.thread_pool.thread.count ({thread})          0
-    dotnet.thread_pool.work_item.count ({work_item})    0
-    dotnet.timer.count ({timer})                        0
+      dotnet.assembly.count ({assembly})                               115
+      dotnet.gc.collections ({collection})
+          gc.heap.generation
+          ------------------
+          gen0                                                           5
+          gen1                                                           1
+          gen2                                                           1
+      dotnet.gc.heap.total_allocated (By)                       1.6947e+08
+      dotnet.gc.last_collection.heap.fragmentation.size (By)
+          gc.heap.generation
+          ------------------
+          gen0                                                           0
+          gen1                                                     348,248
+          gen2                                                           0
+          loh                                                           32
+          poh                                                            0
+      dotnet.gc.last_collection.heap.size (By)
+          gc.heap.generation
+          ------------------
+          gen0                                                           0
+          gen1                                                  18,010,920
+          gen2                                                   5,065,600
+          loh                                                       98,384
+          poh                                                    3,407,048
+      dotnet.gc.last_collection.memory.committed_size (By)      66,842,624
+      dotnet.gc.pause.time (s)                                           0.05
+      dotnet.jit.compilation.time (s)                                    1.317
+      dotnet.jit.compiled_il.size (By)                             574,886
+      dotnet.jit.compiled_methods ({method})                         6,008
+      dotnet.monitor.lock_contentions ({contention})                   194
+      dotnet.process.cpu.count ({cpu})                                  16
+      dotnet.process.cpu.time (s)
+          cpu.mode
+          --------
+          system                                                         4.953
+          user                                                           6.266
+      dotnet.process.memory.working_set (By)                             1.3217e+08
+      dotnet.thread_pool.queue.length ({work_item})                      0
+      dotnet.thread_pool.thread.count ({thread})                       133
+      dotnet.thread_pool.work_item.count ({work_item})              71,188
+      dotnet.timer.count ({timer})                                     124
   ```
 
   > [!NOTE]
@@ -290,12 +294,13 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
 
   Name                                  Current Value
   [System.Runtime]
-    dotnet.gc.collections ({collection})
-      gc.heap.generation
-        gen0                                0
-        gen1                                0
-        gen2                                0
-    dotnet.gc.heap.total_allocated (By)     9,943,384
+      dotnet.gc.collections ({collection})
+          gc.heap.generation
+          ------------------
+          gen0                                0
+          gen1                                0
+          gen2                                0
+      dotnet.gc.heap.total_allocated (By)     9,943,384
 
   ```
 
@@ -327,16 +332,17 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
   ```
 
   ```output
-  Name                                  Current Value
+  Name                                             Current Value
   [System.Runtime]
-    dotnet.gc.last_collection.heap.size (By)
-      gc.heap.generation
-        gen0                              560
-        gen1                              462,720
-        gen2                              0
-        loh                               0
-        poh                               8,184
-    dotnet.process.memory.working_set (By) 48,431,104
+      dotnet.gc.last_collection.heap.size (By)
+          gc.heap.generation
+          ------------------
+          gen0                                          560
+          gen1                                      462,720
+          gen2                                            0
+          loh                                             0
+          poh                                         8,184
+      dotnet.process.memory.working_set (By)     48,431,104
 
   ```
 

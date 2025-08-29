@@ -47,6 +47,8 @@ If the [dotnet-counters](dotnet-counters.md) tool isn't installed, run the follo
 dotnet tool update -g dotnet-counters
 ```
 
+If your app is running a version of .NET older than .NET 9, the output UI of dotnet-counters will look slightly different than below; see [dotnet-counters](dotnet-counters.md) for details.
+
 While the example app is running, launch [dotnet-counters](dotnet-counters.md). The following command shows an example of `dotnet-counters` monitoring all metrics from the `HatCo.HatStore` meter. The meter name is case-sensitive. Our sample app was metric-instr.exe, substitute this with the name of your sample app.
 
 ```dotnetcli
@@ -80,12 +82,14 @@ System.Runtime
   dotnet.assembly.count ({assembly})                    11
   dotnet.gc.collections ({collection})
     gc.heap.generation
+    ------------------
       gen0                                              0
       gen1                                              0
       gen2                                              0
   dotnet.gc.heap.total_allocated (By)                   1,376,024
   dotnet.gc.last_collection.heap.fragmentation.size (By)
     gc.heap.generation
+    ------------------
       gen0                                              0
       gen1                                              0
       gen2                                              0
@@ -93,6 +97,7 @@ System.Runtime
       poh                                               0
   dotnet.gc.last_collection.heap.size (By)
     gc.heap.generation
+    ------------------
       gen0                                              0
       gen1                                              0
       gen2                                              0
@@ -107,6 +112,7 @@ System.Runtime
   dotnet.process.cpu.count ({cpu})                      22
   dotnet.process.cpu.time (s)
     cpu.mode
+    --------
       system                                            0.125
       user                                              46.453
   dotnet.process.memory.working_set (By)                34,447,360

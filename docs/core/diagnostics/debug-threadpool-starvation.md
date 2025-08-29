@@ -97,29 +97,32 @@ dotnet-counters monitor -n DiagnosticScenarios
 Press p to pause, r to resume, q to quit.
     Status: Running
 
-Name                                                       Current Value
+Name                                                            Current Value
 [System.Runtime]
     dotnet.assembly.count ({assembly})                               115
     dotnet.gc.collections ({collection})
         gc.heap.generation
-          gen0                                                         2
-          gen1                                                         1
-          gen2                                                         1
+        ------------------
+        gen0                                                           2
+        gen1                                                           1
+        gen2                                                           1
     dotnet.gc.heap.total_allocated (By)                       64,329,632
     dotnet.gc.last_collection.heap.fragmentation.size (By)
         gc.heap.generation
-          gen0                                                   199,920
-          gen1                                                    29,208
-          gen2                                                         0
-          loh                                                         32
-          poh                                                          0
+        ------------------
+        gen0                                                     199,920
+        gen1                                                      29,208
+        gen2                                                           0
+        loh                                                           32
+        poh                                                            0
     dotnet.gc.last_collection.heap.size (By)
         gc.heap.generation
-          gen0                                                   208,712
-          gen1                                                 3,456,000
-          gen2                                                 5,065,600
-          loh                                                     98,384
-          poh                                                  3,147,488
+        ------------------
+        gen0                                                     208,712
+        gen1                                                   3,456,000
+        gen2                                                   5,065,600
+        loh                                                       98,384
+        poh                                                    3,147,488
     dotnet.gc.last_collection.memory.committed_size (By)      31,096,832
     dotnet.gc.pause.time (s)                                           0.024
     dotnet.jit.compilation.time (s)                                    1.285
@@ -129,6 +132,7 @@ Name                                                       Current Value
     dotnet.process.cpu.count ({cpu})                                  16
     dotnet.process.cpu.time (s)
         cpu.mode
+        --------
         system                                                         2.156
         user                                                           2.734
     dotnet.process.memory.working_set (By)                             1.3217e+08
@@ -137,6 +141,8 @@ Name                                                       Current Value
     dotnet.thread_pool.work_item.count ({work_item})              32,267
     dotnet.timer.count ({timer})                                       0
 ```
+
+If your app is running a version of .NET older than .NET 9, the output UI of dotnet-counters will look slightly different; see [dotnet-counters](dotnet-counters.md) for details.
 
 The preceding counters are an example while the web server wasn't serving any requests. Run Bombardier again with the `api/diagscenario/tasksleepwait` endpoint and sustained load for 2 minutes so there's plenty of time to observe what happens to the performance counters.
 
@@ -151,12 +157,14 @@ ThreadPool starvation occurs when there are no free threads to handle the queued
     dotnet.assembly.count ({assembly})                               115
     dotnet.gc.collections ({collection})
         gc.heap.generation
+        ------------------
         gen0                                                           5
         gen1                                                           1
         gen2                                                           1
     dotnet.gc.heap.total_allocated (By)                       1.6947e+08
     dotnet.gc.last_collection.heap.fragmentation.size (By)
         gc.heap.generation
+        ------------------
         gen0                                                           0
         gen1                                                     348,248
         gen2                                                           0
@@ -164,6 +172,7 @@ ThreadPool starvation occurs when there are no free threads to handle the queued
         poh                                                            0
     dotnet.gc.last_collection.heap.size (By)
         gc.heap.generation
+        ------------------
         gen0                                                           0
         gen1                                                  18,010,920
         gen2                                                   5,065,600
@@ -178,6 +187,7 @@ ThreadPool starvation occurs when there are no free threads to handle the queued
     dotnet.process.cpu.count ({cpu})                                  16
     dotnet.process.cpu.time (s)
         cpu.mode
+        --------
         system                                                         4.953
         user                                                           6.266
     dotnet.process.memory.working_set (By)                             1.3217e+08

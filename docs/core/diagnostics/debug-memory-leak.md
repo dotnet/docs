@@ -34,6 +34,8 @@ The tutorial uses:
 
 The tutorial assumes the sample apps and tools are installed and ready to use.
 
+If your app is running a version of .NET older than .NET 9, the output UI of dotnet-counters will look slightly different; see [dotnet-counters](dotnet-counters.md) for details.
+
 ## Examine managed memory usage
 
 Before you start collecting diagnostic data to help root cause this scenario, make sure you're actually seeing a memory leak (growth in memory usage). You can use the [dotnet-counters](dotnet-counters.md) tool to confirm that.
@@ -75,62 +77,66 @@ The live output should be similar to:
 Press p to pause, r to resume, q to quit.
 Status: Running
 
-Name                                  Current Value
+Name                                                            Current Value
 [System.Runtime]
-    dotnet.assembly.count ({assembly})    111
+    dotnet.assembly.count ({assembly})                              111
     dotnet.gc.collections ({collection})
     gc.heap.generation
-        gen0                              1
-        gen1                              0
-        gen2                              0
-    dotnet.gc.heap.total_allocated (By)   4,431,712
+    ------------------
+    gen0                                                              1
+    gen1                                                              0
+    gen2                                                              0
+    dotnet.gc.heap.total_allocated (By)                       4,431,712
     dotnet.gc.last_collection.heap.fragmentation.size (By)
     gc.heap.generation
-        gen0                              803,576
-        gen1                              15,456
-        gen2                              0
-        loh                               0
-        poh                               0
+    ------------------
+    gen0                                                        803,576
+    gen1                                                         15,456
+    gen2                                                              0
+    loh                                                               0
+    poh                                                               0
     dotnet.gc.last_collection.heap.size (By)
     gc.heap.generation
-        gen0                              811,960
-        gen1                              1,214,720
-        gen2                              0
-        loh                               0
-        poh                               24,528
-    dotnet.gc.last_collection.memory.committed_size (By)   4,296,704
-    dotnet.gc.pause.time (s)              0.003
-    dotnet.jit.compilation.time (s)       0.329
-    dotnet.jit.compiled_il.size (By)      120,212
-    dotnet.jit.compiled_methods ({method}) 1,202
-    dotnet.monitor.lock_contentions ({contention})  2
-    dotnet.process.cpu.count ({cpu})      22
+    ------------------
+    gen0                                                        811,960
+    gen1                                                      1,214,720
+    gen2                                                              0
+    loh                                                               0
+    poh                                                          24,528
+    dotnet.gc.last_collection.memory.committed_size (By)      4,296,704
+    dotnet.gc.pause.time (s)                                          0.003
+    dotnet.jit.compilation.time (s)                                   0.329
+    dotnet.jit.compiled_il.size (By)                            120,212
+    dotnet.jit.compiled_methods ({method})                            1,202
+    dotnet.monitor.lock_contentions ({contention})                    2
+    dotnet.process.cpu.count ({cpu})                                 22
     dotnet.process.cpu.time (s)
     cpu.mode
-        system                            0.344
-        user                              0.344
-    dotnet.process.memory.working_set (By) 64,331,776
-    dotnet.thread_pool.queue.length ({work_item})   0
-    dotnet.thread_pool.thread.count ({thread})      0
-    dotnet.thread_pool.work_item.count ({work_item}) 7
-    dotnet.timer.count ({timer})          0
+    --------
+    system                                                            0.344
+    user                                                              0.344
+    dotnet.process.memory.working_set (By)                   64,331,776
+    dotnet.thread_pool.queue.length ({work_item})                     0
+    dotnet.thread_pool.thread.count ({thread})                        0
+    dotnet.thread_pool.work_item.count ({work_item})                  7
+    dotnet.timer.count ({timer})                                      0
 
 ```
 
 Focusing on this line:
 
 ```console
-    dotnet.gc.heap.total_allocated (By)   4,431,712
+    dotnet.gc.last_collection.memory.committed_size (By)   4,296,704
 ```
 
 You can see that the managed heap memory is 4 MB right after startup.
 
 Now, go to the URL `https://localhost:5001/api/diagscenario/memleak/20000`.
 
-Observe that the memory usage has grown to over 30 MB.
+Observe that the memory usage has grown to over 20 MB.
 
 ```console
-    dotnet.gc.heap.total_allocated (By)   38,806,944
+    dotnet.gc.last_collection.memory.committed_size (By)   21,020,672
 ```
 
 By watching the memory usage, you can safely say that memory is growing or leaking. The next step is to collect the right data for memory analysis.

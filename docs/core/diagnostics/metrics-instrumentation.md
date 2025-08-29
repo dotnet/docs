@@ -461,6 +461,7 @@ Name                                                  Current Value
 [HatCo.Store]
     hatco.store.hats_sold (Count)
         product.color product.size
+        ------------- ------------
         blue          19                                     73
         red           12                                    146
 ```
@@ -507,6 +508,7 @@ Name                                                  Current Value
 [HatCo.Store]
     hatco.store.orders_pending
         customer.country
+        ----------------
         Italy                                                 6
         Mexico                                                1
         Spain                                                 3

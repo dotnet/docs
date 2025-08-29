@@ -19,7 +19,7 @@ During local development, applications need to authenticate to Azure to access v
 - How to sign-in to supported local development tools
 - How to authenticate using a developer account from your app code
 
-:::image type="content" source="../media/mermaidjs/local-authentication.png" alt-text="A diagram showing an app running in local development using a developer tool identity to connect to Azure resources.":::
+:::image type="content" source="../media/mermaidjs/local-authentication.svg" alt-text="A diagram showing an app running in local development using a developer tool identity to connect to Azure resources.":::
 
 For an app to authenticate to Azure during local development using the developer's Azure credentials, the developer must be signed-in to Azure from one of the following developer tools:
 

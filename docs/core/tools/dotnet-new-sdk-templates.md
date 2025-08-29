@@ -31,7 +31,7 @@ Creates a *Directory.Build.props* file for customizing MSBuild properties for an
 
 - **`--use-artifacts`**
 
-  If specified, adds a property to enable the artifacts output layout. This is a common pattern for projects that produce build artifacts, such as NuGet packages, that are placed in a common folder structure.
+  If specified, adds a property to enable the artifacts output layout. This is a common pattern for projects that produce build artifacts, such as NuGet packages, that are placed in a common folder structure. For more information, see [Artifacts output layout](../sdk/artifacts-output.md).
 
 ***
 

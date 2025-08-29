@@ -58,9 +58,6 @@ This section describes the unmanaged enumerations that the debugging API uses.
  [CLRDataValueFlag Enumeration](clrdatavalueflag-enumeration.md)\
  Indicates various attributes of a value.
 
- [COR_PUB_ENUMPROCESS Enumeration](cor-pub-enumprocess-enumeration.md)\
- Identifies the type of process to be enumerated.
-
 ## Related Sections
 
  [Debugging Coclasses](debugging-coclasses.md)

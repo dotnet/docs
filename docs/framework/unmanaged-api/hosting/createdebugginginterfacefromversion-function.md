@@ -36,7 +36,7 @@ HRESULT CreateDebuggingInterfaceFromVersion (
 ## Parameters
 
  `iDebuggerVersion`\
- [in] The version of `ICorDebug` that is expected by the debugger. See the [CorDebugInterfaceVersion](../../../core/unmanaged-api/debugging/icordebug/cordebuginterfaceversion-enumeration.md) enumeration for valid values.
+ [in] The version of `ICorDebug` that's expected by the debugger. See the [CorDebugInterfaceVersion](../../../core/unmanaged-api/debugging/icordebug/cordebuginterfaceversion-enumeration.md) enumeration for valid values.
 
  `szDebuggeeVersion`\
  [in] The common language runtime version associated with the application or process to be debugged. See the [GetVersionFromProcess](getversionfromprocess-function.md) or [GetRequestedRuntimeVersion](getrequestedruntimeversion-function.md) method for information on retrieving this value.
@@ -48,10 +48,10 @@ HRESULT CreateDebuggingInterfaceFromVersion (
 
  This method returns standard COM error codes as defined in the WinError.h file in addition to the following values.
 
-|Return code|Description|
-|-----------------|-----------------|
-|S_OK|The method completed successfully.|
-|E_INVALIDARG|`szDebuggeeVersion` or `ppCordb` is null, or the version string is incorrect.|
+| Return code  | Description                                                                   |
+|--------------|-------------------------------------------------------------------------------|
+| S_OK         | The method completed successfully.                                            |
+| E_INVALIDARG | `szDebuggeeVersion` or `ppCordb` is null, or the version string is incorrect. |
 
 ## Remarks
 

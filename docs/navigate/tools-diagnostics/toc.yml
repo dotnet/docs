@@ -577,6 +577,86 @@ items:
             items:
               - name: Overview
                 href: ../../core/unmanaged-api/debugging/index.md
+              - name: Enumerations
+                items:
+                  - name: COR_PUB_ENUMPROCESS enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/or-pub-enumprocess-enumeration.md
+                  - name: CorDebugBlockingReason enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/ordebugblockingreason-enumeration.md
+                  - name: CorDebugChainReason enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/ordebugchainreason-enumeration.md
+                  - name: CorDebugCodeInvokeKind enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/ordebugcodeinvokekind-enumeration.md
+                  - name: CorDebugCodeInvokePurpose enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/ordebugcodeinvokepurpose-enumeration.md
+                  - name: CorDebugCreateProcessFlags enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/ordebugcreateprocessflags-enumeration.md
+                  - name: CorDebugDebugEventKind enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/ordebugdebugeventkind-enumeration.md
+                  - name: CorDebugDecodeEventFlagsWindows enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/ordebugdecodeeventflagswindows-enumeration.md
+                  - name: CorDebugExceptionCallbackType enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/ordebugexceptioncallbacktype-enumeration.md
+                  - name: CorDebugExceptionFlags enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/ordebugexceptionflags-enumeration.md
+                  - name: CorDebugExceptionUnwindCallbackType enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/ordebugexceptionunwindcallbacktype-enumeration.md
+                  - name: CorDebugGCType enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/ordebuggctype-enumeration.md
+                  - name: CorDebugGenerationTypes enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/ordebuggenerationtypes-enumeration.md
+                  - name: CorDebugHandleType enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/ordebughandletype-enumeration.md
+                  - name: CorDebugIlToNativeMappingTypes enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/ordebugiltonativemappingtypes-enumeration.md
+                  - name: CorDebugIntercept enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/ordebugintercept-enumeration.md
+                  - name: CorDebugInterfaceVersion enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/ordebuginterfaceversion-enumeration.md
+                  - name: CorDebugInternalFrameType enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/ordebuginternalframetype-enumeration.md
+                  - name: CorDebugJITCompilerFlags enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/ordebugjitcompilerflags-enumeration.md
+                  - name: CorDebugJITCompilerFlagsDeprecated enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/ordebugjitcompilerflagsdeprecated-enumeration.md
+                  - name: CorDebugMappingResult enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/ordebugmappingresult-enumeration.md
+                  - name: CorDebugMDAFlags enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/ordebugmdaflags-enumeration.md
+                  - name: CorDebugNGenPolicy enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/ordebugngenpolicy-enumeration.md
+                  - name: CorDebugPlatform enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/ordebugplatform-enumeration.md
+                  - name: CorDebugRecordFormat enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/ordebugrecordformat-enumeration.md
+                  - name: CorDebugRegister enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/ordebugregister-enumeration.md
+                  - name: CorDebugSetContextFlag enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/ordebugsetcontextflag-enumeration.md
+                  - name: CorDebugStateChange enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/ordebugstatechange-enumeration.md
+                  - name: CorDebugStepReason enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/ordebugstepreason-enumeration.md
+                  - name: CorDebugThreadState enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/ordebugthreadstate-enumeration.md
+                  - name: CorDebugUnmappedStop enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/ordebugunmappedstop-enumeration.md
+                  - name: CorDebugUserState enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/ordebuguserstate-enumeration.md
+                  - name: CorGCReferenceType enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/orgcreferencetype-enumeration.md
+                  - name: ILCodeKind enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/lcodekind-enumeration.md
+                  - name: LIBRARY_PROVIDER_INDEX_TYPE enumeration
+                    href: ../../core/unmanaged-api/debugging/libraryproviderindextype-enumeration.md
+                  - name: LoggingLevelEnum enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/ogginglevelenum-enumeration.md
+                  - name: LogSwitchCallReason enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/ogswitchcallreason-enumeration.md
+                  - name: VariableLocationType enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/ariablelocationtype-enumeration.md
+                  - name: WriteableMetadataUpdateMode enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/riteablemetadataupdatemode-enumeration.md
               - name: Functions
                 items:
                   - name: CLRCreateInstance function
@@ -2161,14 +2241,48 @@ items:
                         href: ../../core/unmanaged-api/debugging/icordebug/icordebugvirtualunwinder-getcontext-method.md
                       - name: Next method
                         href: ../../core/unmanaged-api/debugging/icordebug/icordebugvirtualunwinder-next-method.md
-              - name: Enumerations
-                items:
-                  - name: LIBRARY_PROVIDER_INDEX_TYPE enumeration
-                    href: ../../core/unmanaged-api/debugging/libraryproviderindextype-enumeration.md
               - name: Function pointers
                 items:
                   - name: PSTARTUP_CALLBACK function pointer
                     href: ../../core/unmanaged-api/debugging/pstartup_callback-function-pointer.md
+              - name: Structures
+                items:
+                  - name: CodeChunkInfo structure
+                    href: ../../core/unmanaged-api/debugging/icordebug/odechunkinfo-structure.md
+                  - name: COR_ACTIVE_FUNCTION structure
+                    href: ../../core/unmanaged-api/debugging/icordebug/or-active-function-structure.md
+                  - name: COR_ARRAY_LAYOUT structure
+                    href: ../../core/unmanaged-api/debugging/icordebug/or-array-layout-structure.md
+                  - name: COR_DEBUG_IL_TO_NATIVE_MAP structure
+                    href: ../../core/unmanaged-api/debugging/icordebug/or-debug-il-to-native-map-structure.md
+                  - name: COR_DEBUG_STEP_RANGE structure
+                    href: ../../core/unmanaged-api/debugging/icordebug/or-debug-step-range-structure.md
+                  - name: COR_FIELD structure
+                    href: ../../core/unmanaged-api/debugging/icordebug/or-field-structure.md
+                  - name: COR_GC_REFERENCE structure
+                    href: ../../core/unmanaged-api/debugging/icordebug/or-gc-reference-structure.md
+                  - name: COR_HEAPINFO structure
+                    href: ../../core/unmanaged-api/debugging/icordebug/or-heapinfo-structure.md
+                  - name: COR_HEAPOBJECT structure
+                    href: ../../core/unmanaged-api/debugging/icordebug/or-heapobject-structure.md
+                  - name: COR_IL_MAP structure
+                    href: ../../core/unmanaged-api/debugging/icordebug/or-il-map-structure.md
+                  - name: COR_SEGMENT structure
+                    href: ../../core/unmanaged-api/debugging/icordebug/or-segment-structure.md
+                  - name: COR_TYPEID structure
+                    href: ../../core/unmanaged-api/debugging/icordebug/or-typeid-structure.md
+                  - name: COR_TYPE_LAYOUT structure
+                    href: ../../core/unmanaged-api/debugging/icordebug/or-type-layout-structure.md
+                  - name: COR_VERSION structure
+                    href: ../../core/unmanaged-api/debugging/icordebug/or-version-structure.md
+                  - name: CorDebugBlockingObject structure
+                    href: ../../core/unmanaged-api/debugging/icordebug/ordebugblockingobject-structure.md
+                  - name: CorDebugEHClause structure
+                    href: ../../core/unmanaged-api/debugging/icordebug/ordebugehclause-structure.md
+                  - name: CorDebugExceptionObjectStackFrame structure
+                    href: ../../core/unmanaged-api/debugging/icordebug/ordebugexceptionobjectstackframe-structure.md
+                  - name: CorDebugGuidToTypeMapping structure
+                    href: ../../core/unmanaged-api/debugging/icordebug/ordebugguidtotypemapping-structure.md
           - name: Metadata
             items:
               - name: Enumerations
@@ -2182,7 +2296,7 @@ items:
                   - name: CorDeclSecurity enumeration
                     href: ../../core/unmanaged-api/metadata/enumerations/cordeclsecurity-enumeration.md
                   - name: CorElementType enumeration
-                    href: corelementtype-enumeration.md
+                    href: ../../core/unmanaged-api/metadata/enumerations/corelementtype-enumeration.md
                   - name: CorErrorIfEmitOutOfOrder enumeration
                     href: ../../core/unmanaged-api/metadata/enumerations/corerrorifemitoutoforder-enumeration.md
                   - name: CorFileFlags enumeration

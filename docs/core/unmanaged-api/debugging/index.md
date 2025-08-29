@@ -11,115 +11,121 @@ These articles describe APIs that were introduced in .NET Core 2.0 or later, or 
 
 ## Enumerations
 
-[CorDebugBlockingReason enumeration](cordebugblockingreason-enumeration.md)\
+[CorDebugBlockingReason enumeration](icordebug/cordebugblockingreason-enumeration.md)\
 Specifies the reasons why a thread may become blocked on a given object.
 
-[CorDebugChainReason enumeration](cordebugchainreason-enumeration.md)\
+[CorDebugChainReason enumeration](icordebug/cordebugchainreason-enumeration.md)\
 Indicates the reason or reasons for the initiation of a call chain.
 
-[CorDebugCodeInvokeKind enumeration](cordebugcodeinvokekind-enumeration.md)\
+[CorDebugCodeInvokeKind enumeration](icordebug/cordebugcodeinvokekind-enumeration.md)\
 Describes how an exported function invokes managed code.
 
-[CorDebugCodeInvokePurpose enumeration](cordebugcodeinvokepurpose-enumeration.md)\
+[CorDebugCodeInvokePurpose enumeration](icordebug/cordebugcodeinvokepurpose-enumeration.md)\
 Describes why an exported function calls managed code.
 
-[CorDebugCreateProcessFlags enumeration](cordebugcreateprocessflags-enumeration.md)\
+[CorDebugCreateProcessFlags enumeration](icordebug/cordebugcreateprocessflags-enumeration.md)\
 Provides additional debugging options that can be used in a call to the [ICorDebug::CreateProcess](icordebug-createprocess-method.md) method.
 
-[CorDebugDebugEventKind enumeration](cordebugdebugeventkind-enumeration.md)\
+[CorDebugDebugEventKind enumeration](icordebug/cordebugdebugeventkind-enumeration.md)\
 Indicates the type of event whose information is decoded by the [DecodeEvent](icordebugprocess6-decodeevent-method.md) method.
 
-[CorDebugDecodeEventFlagsWindows enumeration](cordebugdecodeeventflagswindows-enumeration.md)\
+[CorDebugDecodeEventFlagsWindows enumeration](icordebug/cordebugdecodeeventflagswindows-enumeration.md)\
 Provides additional information about debug events on the Windows platform.
 
-[CorDebugExceptionCallbackType enumeration](cordebugexceptioncallbacktype-enumeration.md)\
+[CorDebugExceptionCallbackType enumeration](icordebug/cordebugexceptioncallbacktype-enumeration.md)\
 Indicates the type of callback that is made from an [ICorDebugManagedCallback2::Exception](icordebugmanagedcallback2-exception-method.md) event.
 
-[CorDebugExceptionFlags enumeration](cordebugexceptionflags-enumeration.md)\
+[CorDebugExceptionFlags enumeration](icordebug/cordebugexceptionflags-enumeration.md)\
 Provides additional information about an exception.
 
-[CorDebugExceptionUnwindCallbackType enumeration](cordebugexceptionunwindcallbacktype-enumeration.md)\
+[CorDebugExceptionUnwindCallbackType enumeration](icordebug/cordebugexceptionunwindcallbacktype-enumeration.md)\
 Indicates the event that is being signaled by the callback during the unwind phase.
 
-[CorDebugGCType enumeration](cordebuggctype-enumeration.md)\
+[CorDebugGCType enumeration](icordebug/cordebuggctype-enumeration.md)\
 Indicates whether the garbage collector is running on a workstation or a server.
 
-[CorDebugGenerationTypes enumeration](cordebuggenerationtypes-enumeration.md)\
+[CorDebugGenerationTypes enumeration](icordebug/cordebuggenerationtypes-enumeration.md)\
 Specifies the generation of a region of memory on the managed heap.
 
-[CorDebugHandleType enumeration](cordebughandletype-enumeration.md)\
+[CorDebugHandleType enumeration](icordebug/cordebughandletype-enumeration.md)\
 Indicates the handle type.
 
-[CorDebugIlToNativeMappingTypes enumeration](cordebugiltonativemappingtypes-enumeration.md)\
+[CorDebugIlToNativeMappingTypes enumeration](icordebug/cordebugiltonativemappingtypes-enumeration.md)\
 Indicates whether a particular range of native instructions corresponds to a special code region.
 
-[CorDebugIntercept enumeration](cordebugintercept-enumeration.md)\
+[CorDebugIntercept enumeration](icordebug/cordebugintercept-enumeration.md)\
 Indicates the types of code that can be stepped into.
 
-[CorDebugInterfaceVersion enumeration](cordebuginterfaceversion-enumeration.md)\
+[CorDebugInterfaceVersion enumeration](icordebug/cordebuginterfaceversion-enumeration.md)\
 Specifies either a version of the .NET Framework, or the version of the .NET Framework in which an interface was introduced.
 
-[CorDebugInternalFrameType enumeration](cordebuginternalframetype-enumeration.md)\
+[CorDebugInternalFrameType enumeration](icordebug/cordebuginternalframetype-enumeration.md)\
 Identifies the type of stack frame.
 
-[CorDebugJITCompilerFlags enumeration](cordebugjitcompilerflags-enumeration.md)\
+[CorDebugJITCompilerFlags enumeration](icordebug/cordebugjitcompilerflags-enumeration.md)\
 Contains values that influence the behavior of the managed just-in-time (JIT) compiler.
 
-[CorDebugJITCompilerFlagsDeprecated enumeration](cordebugjitcompilerflagsdeprecated-enumeration.md)\
-Obsolete. Use the `CORDEBUG_JIT_DEFAULT` member of the [CorDebugJITCompilerFlags](cordebugjitcompilerflags-enumeration.md) enumeration instead.
+[CorDebugJITCompilerFlagsDeprecated enumeration](icordebug/cordebugjitcompilerflagsdeprecated-enumeration.md)\
+Obsolete. Use the `CORDEBUG_JIT_DEFAULT` member of the [CorDebugJITCompilerFlags](icordebug/cordebugjitcompilerflags-enumeration.md) enumeration instead.
 
-[CorDebugMappingResult enumeration](cordebugmappingresult-enumeration.md)\
+[CorDebugMappingResult enumeration](icordebug/cordebugmappingresult-enumeration.md)\
 Provides the details of how the value of the instruction pointer (IP) was obtained.
 
-[CorDebugMDAFlags enumeration](cordebugmdaflags-enumeration.md)\
+[CorDebugMDAFlags enumeration](icordebug/cordebugmdaflags-enumeration.md)\
 Specifies the status of the thread on which the managed debugging assistant (MDA) is fired.
 
-[CorDebugNGenPolicy enumeration](cordebugngenpolicy-enumeration.md)\
+[CorDebugNGenPolicy enumeration](icordebug/cordebugngenpolicy-enumeration.md)\
 Provides a value that determines whether a debugger loads native (NGen) images from the native image cache.
 
-[CorDebugPlatform enumeration](cordebugplatform-enumeration.md)\
+[CorDebugPlatform enumeration](icordebug/cordebugplatform-enumeration.md)\
 Provides target platform values that are used by the [ICorDebugDataTarget::GetPlatform](icordebugdatatarget-getplatform-method.md) method.
 
-[CorDebugRecordFormat enumeration](cordebugrecordformat-enumeration.md)\
+[CorDebugRecordFormat enumeration](icordebug/cordebugrecordformat-enumeration.md)\
 Describes the format of the data in a byte array that contains information about a native exception debug event.
 
-[CorDebugRegister enumeration](cordebugregister-enumeration.md)\
+[CorDebugRegister enumeration](icordebug/cordebugregister-enumeration.md)\
 Specifies the registers associated with a given processor architecture.
 
-[CorDebugSetContextFlag enumeration](cordebugsetcontextflag-enumeration.md)\
+[CorDebugSetContextFlag enumeration](icordebug/cordebugsetcontextflag-enumeration.md)\
 Indicates whether the context is from the active (or leaf) frame on the stack or has been computed by unwinding from another frame.
 
-[CorDebugStateChange enumeration](cordebugstatechange-enumeration.md)\
+[CorDebugStateChange enumeration](icordebug/cordebugstatechange-enumeration.md)\
 Describes the amount of cached data that must be discarded based on changes to the process.
 
-[CorDebugStepReason enumeration](cordebugstepreason-enumeration.md)\
+[CorDebugStepReason enumeration](icordebug/cordebugstepreason-enumeration.md)\
 Indicates the outcome of an individual step.
 
-[CorDebugThreadState enumeration](cordebugthreadstate-enumeration.md)\
+[CorDebugThreadState enumeration](icordebug/cordebugthreadstate-enumeration.md)\
 Specifies the state of a thread for debugging.
 
-[CorDebugUnmappedStop enumeration](cordebugunmappedstop-enumeration.md)\
+[CorDebugUnmappedStop enumeration](icordebug/cordebugunmappedstop-enumeration.md)\
 Specifies the type of unmapped code that can trigger a halt in code execution by the stepper.
 
-[CorDebugUserState enumeration](cordebuguserstate-enumeration.md)\
+[CorDebugUserState enumeration](icordebug/cordebuguserstate-enumeration.md)\
 Indicates the user state of a thread.
 
-[CorGCReferenceType enumeration](corgcreferencetype-enumeration.md)\
+[CorGCReferenceType enumeration](icordebug/corgcreferencetype-enumeration.md)\
 Identifies the source of an object to be garbage-collected.
 
-[ILCodeKind enumeration](ilcodekind-enumeration.md)\
+[COR_PUB_ENUMPROCESS enumeration](icordebug/cor-pub-enumprocess-enumeration.md)\
+Identifies the type of process to be enumerated.
+
+[ILCodeKind enumeration](icordebug/ilcodekind-enumeration.md)\
 Provides values that specify whether the debugger is able to access local variables or code added in profiler ReJIT instrumentation.
 
-[LoggingLevelEnum enumeration](logginglevelenum-enumeration.md)\
+[LIBRARY_PROVIDER_INDEX_TYPE enumeration](libraryproviderindextype-enumeration.md)\
+The type of index information passed to the library provider is either the identity of the requested module or of the runtime (coreclr) module.
+
+[LoggingLevelEnum enumeration](icordebug/logginglevelenum-enumeration.md)\
 Indicates the severity level of a descriptive message that is written to the event log when a managed thread logs an event.
 
-[LogSwitchCallReason enumeration](logswitchcallreason-enumeration.md)\
+[LogSwitchCallReason enumeration](icordebug/logswitchcallreason-enumeration.md)\
 Indicates the operation that was performed on a debugging/tracing switch.
 
-[VariableLocationType enumeration](variablelocationtype-enumeration.md)\
+[VariableLocationType enumeration](icordebug/variablelocationtype-enumeration.md)\
 Indicates the native location type of a variable.
 
-[WriteableMetadataUpdateMode enumeration](writeablemetadataupdatemode-enumeration.md)\
+[WriteableMetadataUpdateMode enumeration](icordebug/writeablemetadataupdatemode-enumeration.md)\
 Provides values that specify whether in-memory updates to metadata are visible to a debugger.
 
 ## Functions
@@ -176,11 +182,6 @@ Stops/cancels runtime startup notification.
 
 [PSTARTUP_CALLBACK function pointer](pstartup_callback-function-pointer.md)\
 Points to a function that's called when the .NET runtime has started for the [RegisterForRuntimeStartup](registerforruntimestartup-function.md) API.
-
-## Enumerations
-
-[LIBRARY_PROVIDER_INDEX_TYPE enumeration](libraryproviderindextype-enumeration.md)\
-The type of index information passed to the library provider is either the identity of the requested module or of the runtime (coreclr) module.
 
 ## Interfaces
 

@@ -1799,7 +1799,7 @@ Universal Windows Platform (UWP) apps that are written in C# or Visual Basic can
 
   Your apps are compiled to native code by default when you compile them with Visual Studio 2015 or later. For more information, see [Getting Started with .NET Native](/windows/uwp/dotnet-native/getting-started-with-net-native).
 
-  To support debugging .NET Native apps, a number of new interfaces and enumerations have been added to the unmanaged debugging API. For more information, see the [Debugging (Unmanaged API Reference)](../../core/unmanaged-api/debugging/icordebug/index.md) topic.
+  To support debugging .NET Native apps, new interfaces and enumerations have been added to the unmanaged debugging API. For more information, see [Debugging (Unmanaged API Reference)](../unmanaged-api/debugging/index.md).
 
 - **Open-source .NET Framework packages**
 

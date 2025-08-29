@@ -217,7 +217,7 @@ typedef enum CorDebugInterfaceVersion {
 
 ## Remarks
 
- A debugger can use the `CorDebugInterfaceVersion` enumeration in the [CreateDebuggingInterfaceFromVersion](../hosting/createdebugginginterfacefromversion-function.md) function to specify the highest version of .NET that the debugger supports.
+ A debugger can use the `CorDebugInterfaceVersion` enumeration in the [CreateDebuggingInterfaceFromVersion](../createdebugginginterfacefromversion-function.md) function to specify the highest version of .NET that the debugger supports.
 
 ## Interface Names
 

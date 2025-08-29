@@ -35,7 +35,7 @@ HRESULT GetMetaDataInterface (
  [in] The reference ID that specifies the metadata interface.
 
  `ppObj`
- [out] A pointer to the address of an `T:IUnknown` object that is one of the [metadata interfaces](../../metadata/metadata-interfaces.md).
+ [out] A pointer to the address of an `T:IUnknown` object that is one of the [metadata interfaces](../../metadata/interfaces/metadata-interfaces.md).
 
 ## Remarks
 
@@ -50,7 +50,3 @@ The debugger can use the `GetMetaDataInterface` method to make a copy of the ori
  **Library:** CorGuids.lib
 
  **.NET versions:** Available since .NET Framework 1.0
-
-## See also
-
-- [Metadata](../metadata/index.md)

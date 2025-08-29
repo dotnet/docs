@@ -46,7 +46,3 @@ The token can be passed to the [IMetaDataImport](../../metadata/interfaces/imeta
  **Library:** CorGuids.lib
 
  **.NET versions:** Available since .NET Framework 1.0
-
-## See also
-
-- [Metadata](../metadata/index.md)

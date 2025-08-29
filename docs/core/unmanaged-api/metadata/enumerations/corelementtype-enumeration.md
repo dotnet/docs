@@ -134,7 +134,7 @@ The type modifiers form the basis for representing more complex types. A `CorEle
 
 ## Requirements
 
-**Platforms:** See [System Requirements](../../get-started/system-requirements.md).
+**Platforms:** See [.NET supported operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md).
 
 **Header:** CorHdr.h
 

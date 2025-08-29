@@ -632,1535 +632,1535 @@ items:
                   - name: ICorDebug interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebug-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebug-interface.md
                         displayName: ICorDebug
                       - name: CanLaunchOrAttach method
-                        href: icordebug/icordebug-canlaunchorattach-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebug-canlaunchorattach-method.md
                       - name: CreateProcess method
-                        href: icordebug/icordebug-createprocess-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebug-createprocess-method.md
                       - name: DebugActiveProcess method
-                        href: icordebug/icordebug-debugactiveprocess-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebug-debugactiveprocess-method.md
                       - name: EnumerateProcesses method
-                        href: icordebug/icordebug-enumerateprocesses-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebug-enumerateprocesses-method.md
                       - name: GetProcess method
-                        href: icordebug/icordebug-getprocess-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebug-getprocess-method.md
                       - name: Initialize method
-                        href: icordebug/icordebug-initialize-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebug-initialize-method.md
                       - name: SetManagedHandler method
-                        href: icordebug/icordebug-setmanagedhandler-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebug-setmanagedhandler-method.md
                       - name: SetUnmanagedHandler method
-                        href: icordebug/icordebug-setunmanagedhandler-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebug-setunmanagedhandler-method.md
                       - name: Terminate method
-                        href: icordebug/icordebug-terminate-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebug-terminate-method.md
                   - name: ICorDebugAppDomain interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugappdomain-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugappdomain-interface.md
                         displayName: ICorDebugAppDomain
                       - name: Attach method
-                        href: icordebug/icordebugappdomain-attach-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugappdomain-attach-method.md
                       - name: EnumerateAssemblies method
-                        href: icordebug/icordebugappdomain-enumerateassemblies-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugappdomain-enumerateassemblies-method.md
                       - name: EnumerateBreakpoints method
-                        href: icordebug/icordebugappdomain-enumeratebreakpoints-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugappdomain-enumeratebreakpoints-method.md
                       - name: EnumerateSteppers method
-                        href: icordebug/icordebugappdomain-enumeratesteppers-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugappdomain-enumeratesteppers-method.md
                       - name: GetId method
-                        href: icordebug/icordebugappdomain-getid-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugappdomain-getid-method.md
                       - name: GetModuleFromMetaDataInterface method
-                        href: icordebug/icordebugappdomain-getmodulefrommetadatainterface-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugappdomain-getmodulefrommetadatainterface-method.md
                       - name: GetName method
-                        href: icordebug/icordebugappdomain-getname-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugappdomain-getname-method.md
                       - name: GetObject method
-                        href: icordebug/icordebugappdomain-getobject-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugappdomain-getobject-method.md
                       - name: GetProcess method
-                        href: icordebug/icordebugappdomain-getprocess-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugappdomain-getprocess-method.md
                       - name: IsAttached method
-                        href: icordebug/icordebugappdomain-isattached-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugappdomain-isattached-method.md
                   - name: ICorDebugAppDomain2 interface
                     items:
                       - name: GetArrayOrPointerType method
-                        href: icordebug/icordebugappdomain2-getarrayorpointertype-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugappdomain2-getarrayorpointertype-method.md
                       - name: GetFunctionPointerType
-                        href: icordebug/icordebugappdomain2-getfunctionpointertype-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugappdomain2-getfunctionpointertype-method.md
                   - name: ICorDebugAppDomain3 interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugappdomain3-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugappdomain3-interface.md
                         displayName: ICorDebugAppDomain3
                       - name: GetCachedWinRTTypes method
-                        href: icordebug/icordebugappdomain3-getcachedwinrttypes-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugappdomain3-getcachedwinrttypes-method.md
                       - name: GetCachedWinRTTypesForIIDs method
-                        href: icordebug/icordebugappdomain3-getcachedwinrttypesforiids-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugappdomain3-getcachedwinrttypesforiids-method.md
                   - name: ICorDebugAppDomain4 interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugappdomain4-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugappdomain4-interface.md
                         displayName: ICorDebugAppDomain4
                       - name: GetObjectForCCW method
-                        href: icordebug/icordebugappdomain4-getobjectforccw-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugappdomain4-getobjectforccw-method.md
                   - name: ICorDebugAppDomainEnum interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugappdomainenum-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugappdomainenum-interface.md
                         displayName: ICorDebugAppDomainEnum
                       - name: Next method
-                        href: icordebug/icordebugappdomainenum-next-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugappdomainenum-next-method.md
                   - name: ICorDebugArrayValue interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugarrayvalue-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugarrayvalue-interface.md
                         displayName: ICorDebugArrayValue
                       - name: GetBaseIndicies method
-                        href: icordebug/icordebugarrayvalue-getbaseindicies-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugarrayvalue-getbaseindicies-method.md
                       - name: GetCount method
-                        href: icordebug/icordebugarrayvalue-getcount-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugarrayvalue-getcount-method.md
                       - name: GetDimensions method
-                        href: icordebug/icordebugarrayvalue-getdimensions-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugarrayvalue-getdimensions-method.md
                       - name: GetElement method
-                        href: icordebug/icordebugarrayvalue-getelement-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugarrayvalue-getelement-method.md
                       - name: GetElementAtPosition method
-                        href: icordebug/icordebugarrayvalue-getelementatposition-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugarrayvalue-getelementatposition-method.md
                       - name: GetElementType method
-                        href: icordebug/icordebugarrayvalue-getelementtype-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugarrayvalue-getelementtype-method.md
                       - name: GetRank method
-                        href: icordebug/icordebugarrayvalue-getrank-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugarrayvalue-getrank-method.md
                       - name: HasBaseIndicies method
-                        href: icordebug/icordebugarrayvalue-hasbaseindicies-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugarrayvalue-hasbaseindicies-method.md
                   - name: ICorDebugAssembly interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugassembly-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugassembly-interface.md
                         displayName: ICorDebugAssembly
                       - name: EnumerateModules method
-                        href: icordebug/icordebugassembly-enumeratemodules-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugassembly-enumeratemodules-method.md
                       - name: GetAppDomain method
-                        href: icordebug/icordebugassembly-getappdomain-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugassembly-getappdomain-method.md
                       - name: GetCodeBase method
-                        href: icordebug/icordebugassembly-getcodebase-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugassembly-getcodebase-method.md
                       - name: GetName method
-                        href: icordebug/icordebugassembly-getname-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugassembly-getname-method.md
                       - name: GetProcess method
-                        href: icordebug/icordebugassembly-getprocess-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugassembly-getprocess-method.md
                   - name: ICorDebugAssembly2 interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugassembly2-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugassembly2-interface.md
                         displayName: ICorDebugAssembly2
                       - name: IsFullyTrusted method
-                        href: icordebug/icordebugassembly2-isfullytrusted-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugassembly2-isfullytrusted-method.md
                   - name: ICorDebugAssembly3 interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugassembly3-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugassembly3-interface.md
                         displayName: ICorDebugAssembly3
                       - name: EnumerateContainedAssemblies method
-                        href: icordebug/icordebugassembly3-enumeratecontainedassemblies-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugassembly3-enumeratecontainedassemblies-method.md
                       - name: GetContainerAssembly method
-                        href: icordebug/icordebugassembly3-getcontainerassembly-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugassembly3-getcontainerassembly-method.md
                   - name: ICorDebugAssemblyEnum interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugassemblyenum-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugassemblyenum-interface.md
                         displayName: ICorDebugAssemblyEnum
                       - name: Next method
-                        href: icordebug/icordebugassemblyenum-next-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugassemblyenum-next-method.md
                   - name: ICorDebugBlockingObjectEnum interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugblockingobjectenum-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugblockingobjectenum-interface.md
                         displayName: ICorDebugBlockingObjectEnum
                       - name: Next method
-                        href: icordebug/icordebugblockingobjectenum-next-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugblockingobjectenum-next-method.md
                   - name: ICorDebugBoxValue interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugboxvalue-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugboxvalue-interface.md
                         displayName: ICorDebugBoxValue
                       - name: GetObject method
-                        href: icordebug/icordebugboxvalue-getobject-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugboxvalue-getobject-method.md
                   - name: ICorDebugBreakpoint interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugbreakpoint-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugbreakpoint-interface.md
                         displayName: ICorDebugBreakpoint
                       - name: Activate method
-                        href: icordebug/icordebugbreakpoint-activate-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugbreakpoint-activate-method.md
                       - name: IsActive method
-                        href: icordebug/icordebugbreakpoint-isactive-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugbreakpoint-isactive-method.md
                   - name: ICorDebugBreakpointEnum interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugbreakpointenum-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugbreakpointenum-interface.md
                         displayName: ICorDebugBreakpointEnum
                       - name: Next method
-                        href: icordebug/icordebugbreakpointenum-next-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugbreakpointenum-next-method.md
                   - name: ICorDebugChain interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugchain-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugchain-interface.md
                         displayName: ICorDebugChain
                       - name: EnumerateFrames method
-                        href: icordebug/icordebugchain-enumerateframes-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugchain-enumerateframes-method.md
                       - name: GetActiveFrame method
-                        href: icordebug/icordebugchain-getactiveframe-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugchain-getactiveframe-method.md
                       - name: GetCallee method
-                        href: icordebug/icordebugchain-getcallee-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugchain-getcallee-method.md
                       - name: GetCaller method
-                        href: icordebug/icordebugchain-getcaller-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugchain-getcaller-method.md
                       - name: GetContext method
-                        href: icordebug/icordebugchain-getcontext-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugchain-getcontext-method.md
                       - name: GetNext method
-                        href: icordebug/icordebugchain-getnext-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugchain-getnext-method.md
                       - name: GetPrevious method
-                        href: icordebug/icordebugchain-getprevious-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugchain-getprevious-method.md
                       - name: GetReason method
-                        href: icordebug/icordebugchain-getreason-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugchain-getreason-method.md
                       - name: GetRegisterSet method
-                        href: icordebug/icordebugchain-getregisterset-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugchain-getregisterset-method.md
                       - name: GetStackRange method
-                        href: icordebug/icordebugchain-getstackrange-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugchain-getstackrange-method.md
                       - name: GetThread method
-                        href: icordebug/icordebugchain-getthread-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugchain-getthread-method.md
                       - name: IsManaged method
-                        href: icordebug/icordebugchain-ismanaged-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugchain-ismanaged-method.md
                   - name: ICorDebugChainEnum interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugchainenum-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugchainenum-interface.md
                         displayName: ICorDebugChainEnum
                       - name: Next method
-                        href: icordebug/icordebugchainenum-next-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugchainenum-next-method.md
                   - name: ICorDebugClass interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugclass-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugclass-interface.md
                         displayName: ICorDebugClass
                       - name: GetModule method
-                        href: icordebug/icordebugclass-getmodule-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugclass-getmodule-method.md
                       - name: GetStaticFieldValue method
-                        href: icordebug/icordebugclass-getstaticfieldvalue-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugclass-getstaticfieldvalue-method.md
                       - name: GetToken method
-                        href: icordebug/icordebugclass-gettoken-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugclass-gettoken-method.md
                   - name: ICorDebugClass2 interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugclass2-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugclass2-interface.md
                         displayName: ICorDebugClass2
                       - name: GetParameterizedType method
-                        href: icordebug/icordebugclass2-getparameterizedtype-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugclass2-getparameterizedtype-method.md
                       - name: SetJMCStatus method
-                        href: icordebug/icordebugclass2-setjmcstatus-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugclass2-setjmcstatus-method.md
                   - name: ICorDebugCode interface
-                    href: icordebug/icordebugcode-interface1.md
+                    href: ../../core/unmanaged-api/debugging/icordebug/icordebugcode-interface1.md
                     items:
                       - name: CreateBreakpoint method
-                        href: icordebug/icordebugcode-createbreakpoint-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugcode-createbreakpoint-method.md
                       - name: GetAddress method
-                        href: icordebug/icordebugcode-getaddress-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugcode-getaddress-method.md
                       - name: GetCode method
-                        href: icordebug/icordebugcode-getcode-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugcode-getcode-method.md
                       - name: GetEnCRemapSequencePoints method
-                        href: icordebug/icordebugcode-getencremapsequencepoints-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugcode-getencremapsequencepoints-method.md
                       - name: GetFunction method
-                        href: icordebug/icordebugcode-getfunction-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugcode-getfunction-method.md
                       - name: GetILToNativeMapping method
-                        href: icordebug/icordebugcode-getiltonativemapping-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugcode-getiltonativemapping-method.md
                       - name: GetSize method
-                        href: icordebug/icordebugcode-getsize-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugcode-getsize-method.md
                       - name: GetVersionNumber method
-                        href: icordebug/icordebugcode-getversionnumber-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugcode-getversionnumber-method.md
                       - name: IsIL method
-                        href: icordebug/icordebugcode-isil-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugcode-isil-method.md
                   - name: ICorDebugCode2 interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugcode2-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugcode2-interface.md
                         displayName: ICorDebugCode2
                       - name: GetCodeChunks method
-                        href: icordebug/icordebugcode2-getcodechunks-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugcode2-getcodechunks-method.md
                       - name: GetCompilerFlags method
-                        href: icordebug/icordebugcode2-getcompilerflags-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugcode2-getcompilerflags-method.md
                   - name: ICorDebugCode3 interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugcode3-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugcode3-interface.md
                         displayName: ICorDebugCode3
                       - name: GetReturnValueLiveOffset method
-                        href: icordebug/icordebugcode3-getreturnvalueliveoffset-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugcode3-getreturnvalueliveoffset-method.md
                   - name: ICorDebugCode4 interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugcode4-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugcode4-interface.md
                         displayName: ICorDebugCode4
                       - name: EnumerateVariableHomes method
-                        href: icordebug/icordebugcode4-enumeratevariablehomes-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugcode4-enumeratevariablehomes-method.md
                   - name: ICorDebugCodeEnum interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugcodeenum-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugcodeenum-interface.md
                         displayName: ICorDebugCodeEnum
                       - name: Next method
-                        href: icordebug/icordebugcodeenum-next-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugcodeenum-next-method.md
                   - name: ICorDebugComObjectValue interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugcomobjectvalue-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugcomobjectvalue-interface.md
                         displayName: ICorDebugComObjectValue
                       - name: GetCachedInterfacePointers method
-                        href: icordebug/icordebugcomobjectvalue-getcachedinterfacepointers-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugcomobjectvalue-getcachedinterfacepointers-method.md
                       - name: GetCachedInterfaceTypes method
-                        href: icordebug/icordebugcomobjectvalue-getcachedinterfacetypes-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugcomobjectvalue-getcachedinterfacetypes-method.md
                   - name: ICorDebugContext interface
-                    href: icordebug/icordebugcontext-interface.md
+                    href: ../../core/unmanaged-api/debugging/icordebug/icordebugcontext-interface.md
                   - name: ICorDebugController interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugcontroller-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugcontroller-interface.md
                         displayName: ICorDebugController
                       - name: CanCommitChanges method
-                        href: icordebug/icordebugcontroller-cancommitchanges-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugcontroller-cancommitchanges-method.md
                       - name: CommitChanges method
-                        href: icordebug/icordebugcontroller-commitchanges-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugcontroller-commitchanges-method.md
                       - name: Continue method
-                        href: icordebug/icordebugcontroller-continue-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugcontroller-continue-method.md
                       - name: Detach method
-                        href: icordebug/icordebugcontroller-detach-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugcontroller-detach-method.md
                       - name: EnumerateThreads method
-                        href: icordebug/icordebugcontroller-enumeratethreads-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugcontroller-enumeratethreads-method.md
                       - name: HasQueuedCallbacks method
-                        href: icordebug/icordebugcontroller-hasqueuedcallbacks-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugcontroller-hasqueuedcallbacks-method.md
                       - name: IsRunning method
-                        href: icordebug/icordebugcontroller-isrunning-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugcontroller-isrunning-method.md
                       - name: SetAllThreadsDebugState method
-                        href: icordebug/icordebugcontroller-setallthreadsdebugstate-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugcontroller-setallthreadsdebugstate-method.md
                       - name: Stop method
-                        href: icordebug/icordebugcontroller-stop-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugcontroller-stop-method.md
                       - name: Terminate method
-                        href: icordebug/icordebugcontroller-terminate-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugcontroller-terminate-method.md
                   - name: ICorDebugDataTarget interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugdatatarget-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugdatatarget-interface.md
                         displayName: ICorDebugDataTarget
                       - name: GetPlatform method
-                        href: icordebug/icordebugdatatarget-getplatform-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugdatatarget-getplatform-method.md
                       - name: ReadVirtual method
-                        href: icordebug/icordebugdatatarget-readvirtual-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugdatatarget-readvirtual-method.md
                       - name: GetThreadContext method
-                        href: icordebug/icordebugdatatarget-getthreadcontext-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugdatatarget-getthreadcontext-method.md
                   - name: ICorDebugDataTarget2 interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugdatatarget2-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugdatatarget2-interface.md
                         displayName: ICorDebugDataTarget2
                       - name: CreateVirtualUnwinder method
-                        href: icordebug/icordebugdatatarget2-createvirtualunwinder-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugdatatarget2-createvirtualunwinder-method.md
                       - name: EnumerateThreadIDs method
-                        href: icordebug/icordebugdatatarget2-enumeratethreadids-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugdatatarget2-enumeratethreadids-method.md
                       - name: GetImageFromPointer method
-                        href: icordebug/icordebugdatatarget2-getimagefrompointer-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugdatatarget2-getimagefrompointer-method.md
                       - name: GetImageLocation method
-                        href: icordebug/icordebugdatatarget2-getimagelocation-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugdatatarget2-getimagelocation-method.md
                       - name: GetSymbolProviderForImage method
-                        href: icordebug/icordebugdatatarget2-getsymbolproviderforimage-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugdatatarget2-getsymbolproviderforimage-method.md
                   - name: ICorDebugDataTarget3 interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugdatatarget3-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugdatatarget3-interface.md
                         displayName: ICorDebugDataTarget3
                       - name: GetLoadedModules method
-                        href: icordebug/icordebugdatatarget3-getloadedmodules-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugdatatarget3-getloadedmodules-method.md
                   - name: ICorDebugDebugEvent interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugdebugevent-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugdebugevent-interface.md
                         displayName: ICorDebugDebugEvent
                       - name: GetEventKind method
-                        href: icordebug/icordebugdebugevent-geteventkind-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugdebugevent-geteventkind-method.md
                       - name: GetThread method
-                        href: icordebug/icordebugdebugevent-getthread-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugdebugevent-getthread-method.md
                   - name: ICorDebugEditAndContinueErrorInfo interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugeditandcontinueerrorinfo-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugeditandcontinueerrorinfo-interface.md
                         displayName: ICorDebugEditAndContinueErrorInfo
                       - name: GetErrorCode method
-                        href: icordebug/icordebugeditandcontinueerrorinfo-geterrorcode-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugeditandcontinueerrorinfo-geterrorcode-method.md
                       - name: GetModule method
-                        href: icordebug/icordebugeditandcontinueerrorinfo-getmodule-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugeditandcontinueerrorinfo-getmodule-method.md
                       - name: GetString method
-                        href: icordebug/icordebugeditandcontinueerrorinfo-getstring-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugeditandcontinueerrorinfo-getstring-method.md
                       - name: GetToken method
-                        href: icordebug/icordebugeditandcontinueerrorinfo-gettoken-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugeditandcontinueerrorinfo-gettoken-method.md
                   - name: ICorDebugEditAndContinueSnapshot interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugeditandcontinuesnapshot-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugeditandcontinuesnapshot-interface.md
                         displayName: ICorDebugEditAndContinueSnapshot
                       - name: CopyMetaData method
-                        href: icordebug/icordebugeditandcontinuesnapshot-copymetadata-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugeditandcontinuesnapshot-copymetadata-method.md
                       - name: GetMvid method
-                        href: icordebug/icordebugeditandcontinuesnapshot-getmvid-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugeditandcontinuesnapshot-getmvid-method.md
                       - name: GetRoDataRVA method
-                        href: icordebug/icordebugeditandcontinuesnapshot-getrodatarva-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugeditandcontinuesnapshot-getrodatarva-method.md
                       - name: GetRwDataRVA method
-                        href: icordebug/icordebugeditandcontinuesnapshot-getrwdatarva-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugeditandcontinuesnapshot-getrwdatarva-method.md
                       - name: SetILMap method
-                        href: icordebug/icordebugeditandcontinuesnapshot-setilmap-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugeditandcontinuesnapshot-setilmap-method.md
                       - name: SetPEBytes method
-                        href: icordebug/icordebugeditandcontinuesnapshot-setpebytes-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugeditandcontinuesnapshot-setpebytes-method.md
                       - name: SetPESymbolBytes method
-                        href: icordebug/icordebugeditandcontinuesnapshot-setpesymbolbytes-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugeditandcontinuesnapshot-setpesymbolbytes-method.md
                   - name: ICorDebugEnum interface
-                    href: icordebug/icordebugenum-interface1.md
+                    href: ../../core/unmanaged-api/debugging/icordebug/icordebugenum-interface1.md
                     items:
                       - name: Clone method
-                        href: icordebug/icordebugenum-clone-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugenum-clone-method.md
                       - name: GetCount method
-                        href: icordebug/icordebugenum-getcount-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugenum-getcount-method.md
                       - name: Reset method
-                        href: icordebug/icordebugenum-reset-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugenum-reset-method.md
                       - name: Skip method
-                        href: icordebug/icordebugenum-skip-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugenum-skip-method.md
                   - name: ICorDebugErrorInfoEnum interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugerrorinfoenum-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugerrorinfoenum-interface.md
                         displayName: ICorDebugErrorInfoEnum
                       - name: Next method
-                        href: icordebug/icordebugerrorinfoenum-next-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugerrorinfoenum-next-method.md
                   - name: ICorDebugEval interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugeval-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugeval-interface.md
                         displayName: ICorDebugEval
                       - name: Abort method
-                        href: icordebug/icordebugeval-abort-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugeval-abort-method.md
                       - name: CallFunction method
-                        href: icordebug/icordebugeval-callfunction-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugeval-callfunction-method.md
                       - name: CreateValue method
-                        href: icordebug/icordebugeval-createvalue-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugeval-createvalue-method.md
                       - name: GetResult method
-                        href: icordebug/icordebugeval-getresult-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugeval-getresult-method.md
                       - name: GetThread method
-                        href: icordebug/icordebugeval-getthread-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugeval-getthread-method.md
                       - name: IsActive method
-                        href: icordebug/icordebugeval-isactive-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugeval-isactive-method.md
                       - name: NewArray method
-                        href: icordebug/icordebugeval-newarray-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugeval-newarray-method.md
                       - name: NewObject method
-                        href: icordebug/icordebugeval-newobject-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugeval-newobject-method.md
                       - name: NewObjectNoConstructor method
-                        href: icordebug/icordebugeval-newobjectnoconstructor-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugeval-newobjectnoconstructor-method.md
                       - name: NewString method
-                        href: icordebug/icordebugeval-newstring-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugeval-newstring-method.md
                   - name: ICorDebugEval2 interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugeval2-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugeval2-interface.md
                         displayName: ICorDebugEval2
                       - name: CallParameterizedFunction method
-                        href: icordebug/icordebugeval2-callparameterizedfunction-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugeval2-callparameterizedfunction-method.md
                       - name: CreateValueForType method
-                        href: icordebug/icordebugeval2-createvaluefortype-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugeval2-createvaluefortype-method.md
                       - name: NewParameterizedArray method
-                        href: icordebug/icordebugeval2-newparameterizedarray-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugeval2-newparameterizedarray-method.md
                       - name: NewParameterizedObject method
-                        href: icordebug/icordebugeval2-newparameterizedobject-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugeval2-newparameterizedobject-method.md
                       - name: NewParameterizedObjectNoConstructor method
-                        href: icordebug/icordebugeval2-newparameterizedobjectnoconstructor-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugeval2-newparameterizedobjectnoconstructor-method.md
                       - name: NewStringWithLength method
-                        href: icordebug/icordebugeval2-newstringwithlength-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugeval2-newstringwithlength-method.md
                       - name: RudeAbort method
-                        href: icordebug/icordebugeval2-rudeabort-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugeval2-rudeabort-method.md
                   - name: ICorDebugExceptionDebugEvent interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugexceptiondebugevent-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugexceptiondebugevent-interface.md
                         displayName: ICorDebugExceptionDebugEvent
                       - name: GetFlags method
-                        href: icordebug/icordebugexceptiondebugevent-getflags-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugexceptiondebugevent-getflags-method.md
                       - name: GetNativeIP method
-                        href: icordebug/icordebugexceptiondebugevent-getnativeip-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugexceptiondebugevent-getnativeip-method.md
                       - name: GetStackPointer method
-                        href: icordebug/icordebugexceptiondebugevent-getstackpointer-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugexceptiondebugevent-getstackpointer-method.md
                   - name: ICorDebugExceptionObjectCallStackEnum interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugexceptionobjectcallstackenum-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugexceptionobjectcallstackenum-interface.md
                         displayName: ICorDebugExceptionObjectCallStackEnum
                       - name: Next method
-                        href: icordebug/icordebugexceptionobjectcallstackenum-next-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugexceptionobjectcallstackenum-next-method.md
                   - name: ICorDebugExceptionObjectValue interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugexceptionobjectvalue-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugexceptionobjectvalue-interface.md
                         displayName: ICorDebugExceptionObjectValue
                       - name: EnumerateExceptionCallStack method
-                        href: icordebug/icordebugexceptionobjectvalue-enumerateexceptioncallstack-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugexceptionobjectvalue-enumerateexceptioncallstack-method.md
                   - name: ICorDebugFrame interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugframe-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugframe-interface.md
                         displayName: ICorDebugFrame
                       - name: CreateStepper method
-                        href: icordebug/icordebugframe-createstepper-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugframe-createstepper-method.md
                       - name: GetCallee method
-                        href: icordebug/icordebugframe-getcallee-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugframe-getcallee-method.md
                       - name: GetCaller method
-                        href: icordebug/icordebugframe-getcaller-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugframe-getcaller-method.md
                       - name: GetChain method
-                        href: icordebug/icordebugframe-getchain-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugframe-getchain-method.md
                       - name: GetCode method
-                        href: icordebug/icordebugframe-getcode-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugframe-getcode-method.md
                       - name: GetFunction method
-                        href: icordebug/icordebugframe-getfunction-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugframe-getfunction-method.md
                       - name: GetFunctionToken method
-                        href: icordebug/icordebugframe-getfunctiontoken-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugframe-getfunctiontoken-method.md
                       - name: GetStackRange method
-                        href: icordebug/icordebugframe-getstackrange-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugframe-getstackrange-method.md
                   - name: ICorDebugFrameEnum interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugframeenum-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugframeenum-interface.md
                         displayName: ICorDebugFrameEnum
                       - name: Next method
-                        href: icordebug/icordebugframeenum-next-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugframeenum-next-method.md
                   - name: ICorDebugFunction interface
-                    href: icordebug/icordebugfunction-interface1.md
+                    href: ../../core/unmanaged-api/debugging/icordebug/icordebugfunction-interface1.md
                     items:
                       - name: CreateBreakpoint method
-                        href: icordebug/icordebugfunction-createbreakpoint-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugfunction-createbreakpoint-method.md
                       - name: GetClass method
-                        href: icordebug/icordebugfunction-getclass-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugfunction-getclass-method.md
                       - name: GetCurrentVersionNumber method
-                        href: icordebug/icordebugfunction-getcurrentversionnumber-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugfunction-getcurrentversionnumber-method.md
                       - name: GetILCode method
-                        href: icordebug/icordebugfunction-getilcode-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugfunction-getilcode-method.md
                       - name: GetLocalVarSigToken method
-                        href: icordebug/icordebugfunction-getlocalvarsigtoken-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugfunction-getlocalvarsigtoken-method.md
                       - name: GetModule method
-                        href: icordebug/icordebugfunction-getmodule-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugfunction-getmodule-method.md
                       - name: GetNativeCode method
-                        href: icordebug/icordebugfunction-getnativecode-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugfunction-getnativecode-method.md
                       - name: GetToken method
-                        href: icordebug/icordebugfunction-gettoken-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugfunction-gettoken-method.md
                   - name: ICorDebugFunction2 interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugfunction2-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugfunction2-interface.md
                         displayName: ICorDebugFunction2
                       - name: EnumerateNativeCode method
-                        href: icordebug/icordebugfunction2-enumeratenativecode-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugfunction2-enumeratenativecode-method.md
                       - name: GetJMCStatus method
-                        href: icordebug/icordebugfunction2-getjmcstatus-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugfunction2-getjmcstatus-method.md
                       - name: GetVersionNumber method
-                        href: icordebug/icordebugfunction2-getversionnumber-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugfunction2-getversionnumber-method.md
                       - name: SetJMCStatus method
-                        href: icordebug/icordebugfunction2-setjmcstatus-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugfunction2-setjmcstatus-method.md
                   - name: ICorDebugFunction3 interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugfunction3-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugfunction3-interface.md
                         displayName: ICorDebugFunction3
                       - name: GetActiveReJitRequestILCode method
-                        href: icordebug/icordebugfunction3-getactiverejitrequestilcode-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugfunction3-getactiverejitrequestilcode-method.md
                   - name: ICorDebugFunctionBreakpoint interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugfunctionbreakpoint-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugfunctionbreakpoint-interface.md
                         displayName: ICorDebugFunctionBreakpoint
                       - name: GetFunction method
-                        href: icordebug/icordebugfunctionbreakpoint-getfunction-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugfunctionbreakpoint-getfunction-method.md
                       - name: GetOffset method
-                        href: icordebug/icordebugfunctionbreakpoint-getoffset-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugfunctionbreakpoint-getoffset-method.md
                   - name: ICorDebugGCReferenceEnum interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebuggcreferenceenum-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebuggcreferenceenum-interface.md
                         displayName: ICorDebugGCReferenceEnum
                       - name: Next method
-                        href: icordebug/icordebuggcreferenceenum-next-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebuggcreferenceenum-next-method.md
                   - name: ICorDebugGenericValue interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebuggenericvalue-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebuggenericvalue-interface.md
                         displayName: ICorDebugGenericValue
                       - name: GetValue method
-                        href: icordebug/icordebuggenericvalue-getvalue-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebuggenericvalue-getvalue-method.md
                       - name: SetValue method
-                        href: icordebug/icordebuggenericvalue-setvalue-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebuggenericvalue-setvalue-method.md
                   - name: ICorDebugGuidToTypeEnum interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugguidtotypeenum-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugguidtotypeenum-interface.md
                         displayName: ICorDebugGuidToTypeEnum
                       - name: Next method
-                        href: icordebug/icordebugguidtotypeenum-next-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugguidtotypeenum-next-method.md
                   - name: ICorDebugHandleValue interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebughandlevalue-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebughandlevalue-interface.md
                         displayName: ICorDebugHandleValue
                       - name: Dispose method
-                        href: icordebug/icordebughandlevalue-dispose-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebughandlevalue-dispose-method.md
                       - name: GetHandleType method
-                        href: icordebug/icordebughandlevalue-gethandletype-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebughandlevalue-gethandletype-method.md
                   - name: ICorDebugHeapEnum interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugheapenum-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugheapenum-interface.md
                         displayName: ICorDebugHeapEnum
                       - name: Next method
-                        href: icordebug/icordebugheapenum-next-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugheapenum-next-method.md
                   - name: ICorDebugHeapSegmentEnum interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugheapsegmentenum-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugheapsegmentenum-interface.md
                         displayName: ICorDebugHeapSegmentEnum
                       - name: Next method
-                        href: icordebug/icordebugheapsegmentenum-next-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugheapsegmentenum-next-method.md
                   - name: ICorDebugHeapValue interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugheapvalue-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugheapvalue-interface.md
                         displayName: ICorDebugHeapValue
                       - name: CreateRelocBreakpoint method
-                        href: icordebug/icordebugheapvalue-createrelocbreakpoint-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugheapvalue-createrelocbreakpoint-method.md
                       - name: IsValid method
-                        href: icordebug/icordebugheapvalue-isvalid-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugheapvalue-isvalid-method.md
                   - name: ICorDebugHeapValue2 interface
-                    href: icordebug/icordebugheapvalue2-interface1.md
+                    href: ../../core/unmanaged-api/debugging/icordebug/icordebugheapvalue2-interface1.md
                     items:
                       - name: CreateHandle method
-                        href: icordebug/icordebugheapvalue2-createhandle-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugheapvalue2-createhandle-method.md
                   - name: ICorDebugHeapValue3 interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugheapvalue3-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugheapvalue3-interface.md
                         displayName: ICorDebugHeapValue3
                       - name: GetThreadOwningMonitorLock method
-                        href: icordebug/icordebugheapvalue3-getthreadowningmonitorlock-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugheapvalue3-getthreadowningmonitorlock-method.md
                       - name: GetMonitorEventWaitList method
-                        href: icordebug/icordebugheapvalue3-getmonitoreventwaitlist-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugheapvalue3-getmonitoreventwaitlist-method.md
                   - name: ICorDebugILCode interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugilcode-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugilcode-interface.md
                         displayName: ICorDebugILCode
                       - name: GetEHClauses method
-                        href: icordebug/icordebugilcode-getehclauses-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugilcode-getehclauses-method.md
                   - name: ICorDebugILCode2 interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugilcode2-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugilcode2-interface.md
                         displayName: ICorDebugILCode2
                       - name: GetInstrumentedILMap method
-                        href: icordebug/icordebugilcode2-getinstrumentedilmap-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugilcode2-getinstrumentedilmap-method.md
                       - name: GetLocalVarSigToken method
-                        href: icordebug/icordebugilcode2-getlocalvarsigtoken-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugilcode2-getlocalvarsigtoken-method.md
                   - name: ICorDebugILFrame interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugilframe-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugilframe-interface.md
                         displayName: ICorDebugILFrame
                       - name: CanSetIP method
-                        href: icordebug/icordebugilframe-cansetip-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugilframe-cansetip-method.md
                       - name: EnumerateArguments method
-                        href: icordebug/icordebugilframe-enumeratearguments-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugilframe-enumeratearguments-method.md
                       - name: EnumerateLocalVariables method
-                        href: icordebug/icordebugilframe-enumeratelocalvariables-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugilframe-enumeratelocalvariables-method.md
                       - name: GetArgument method
-                        href: icordebug/icordebugilframe-getargument-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugilframe-getargument-method.md
                       - name: GetIP method
-                        href: icordebug/icordebugilframe-getip-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugilframe-getip-method.md
                       - name: GetLocalVariable method
-                        href: icordebug/icordebugilframe-getlocalvariable-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugilframe-getlocalvariable-method.md
                       - name: GetStackDepth method
-                        href: icordebug/icordebugilframe-getstackdepth-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugilframe-getstackdepth-method.md
                       - name: GetStackValue method
-                        href: icordebug/icordebugilframe-getstackvalue-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugilframe-getstackvalue-method.md
                       - name: SetIP method
-                        href: icordebug/icordebugilframe-setip-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugilframe-setip-method.md
                   - name: ICorDebugILFrame2 interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugilframe2-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugilframe2-interface.md
                         displayName: ICorDebugILFrame2
                       - name: EnumerateTypeParameters method
-                        href: icordebug/icordebugilframe2-enumeratetypeparameters-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugilframe2-enumeratetypeparameters-method.md
                       - name: RemapFunction method
-                        href: icordebug/icordebugilframe2-remapfunction-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugilframe2-remapfunction-method.md
                   - name: ICorDebugILFrame3 interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugilframe3-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugilframe3-interface.md
                         displayName: ICorDebugILFrame3
                       - name: GetReturnValueForILOffset method
-                        href: icordebug/icordebugilframe3-getreturnvalueforiloffset-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugilframe3-getreturnvalueforiloffset-method.md
                   - name: ICorDebugILFrame4 interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugilframe4-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugilframe4-interface.md
                         displayName: ICorDebugILFrame4
                       - name: EnumerateLocalVariablesEx method
-                        href: icordebug/icordebugilframe4-enumeratelocalvariablesex-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugilframe4-enumeratelocalvariablesex-method.md
                       - name: GetCodeEx method
-                        href: icordebug/icordebugilframe4-getcodeex-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugilframe4-getcodeex-method.md
                       - name: GetLocalVariableEx method
-                        href: icordebug/icordebugilframe4-getlocalvariableex-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugilframe4-getlocalvariableex-method.md
                   - name: ICorDebugInstanceFieldSymbol interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebuginstancefieldsymbol-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebuginstancefieldsymbol-interface.md
                         displayName: ICorDebugInstanceFieldSymbol
                       - name: GetName method
-                        href: icordebug/icordebuginstancefieldsymbol-getname-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebuginstancefieldsymbol-getname-method.md
                       - name: GetOffset method
-                        href: icordebug/icordebuginstancefieldsymbol-getoffset-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebuginstancefieldsymbol-getoffset-method.md
                       - name: GetSize method
-                        href: icordebug/icordebuginstancefieldsymbol-getsize-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebuginstancefieldsymbol-getsize-method.md
                   - name: ICorDebugInternalFrame interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebuginternalframe-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebuginternalframe-interface.md
                         displayName: ICorDebugInternalFrame
                       - name: GetFrameType method
-                        href: icordebug/icordebuginternalframe-getframetype-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebuginternalframe-getframetype-method.md
                   - name: ICorDebugInternalFrame2 interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebuginternalframe2-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebuginternalframe2-interface.md
                         displayName: ICorDebugInternalFrame2
                       - name: GetFrameAddress method
-                        href: icordebug/icordebuginternalframe2-getframeaddress-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebuginternalframe2-getframeaddress-method.md
                       - name: IsCloserToLeaf method
-                        href: icordebug/icordebuginternalframe2-isclosertoleaf-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebuginternalframe2-isclosertoleaf-method.md
                   - name: ICorDebugLoadedModule interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugloadedmodule-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugloadedmodule-interface.md
                         displayName: ICorDebugLoadedModule
                       - name: GetBaseAddress method
-                        href: icordebug/icordebugloadedmodule-getbaseaddress-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugloadedmodule-getbaseaddress-method.md
                       - name: GetName method
-                        href: icordebug/icordebugloadedmodule-getname-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugloadedmodule-getname-method.md
                       - name: GetSize method
-                        href: icordebug/icordebugloadedmodule-getsize-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugloadedmodule-getsize-method.md
                   - name: ICorDebugManagedCallback interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugmanagedcallback-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback-interface.md
                         displayName: ICorDebugManagedCallback
                       - name: Break method
-                        href: icordebug/icordebugmanagedcallback-break-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback-break-method.md
                       - name: Breakpoint method
-                        href: icordebug/icordebugmanagedcallback-breakpoint-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback-breakpoint-method.md
                       - name: BreakpointSetError method
-                        href: icordebug/icordebugmanagedcallback-breakpointseterror-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback-breakpointseterror-method.md
                       - name: ControlCTrap method
-                        href: icordebug/icordebugmanagedcallback-controlctrap-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback-controlctrap-method.md
                       - name: CreateAppDomain method
-                        href: icordebug/icordebugmanagedcallback-createappdomain-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback-createappdomain-method.md
                       - name: CreateProcess method
-                        href: icordebug/icordebugmanagedcallback-createprocess-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback-createprocess-method.md
                       - name: CreateThread method
-                        href: icordebug/icordebugmanagedcallback-createthread-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback-createthread-method.md
                       - name: DebuggerError method
-                        href: icordebug/icordebugmanagedcallback-debuggererror-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback-debuggererror-method.md
                       - name: EditAndContinueRemap method
-                        href: icordebug/icordebugmanagedcallback-editandcontinueremap-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback-editandcontinueremap-method.md
                       - name: EvalComplete method
-                        href: icordebug/icordebugmanagedcallback-evalcomplete-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback-evalcomplete-method.md
                       - name: EvalException method
-                        href: icordebug/icordebugmanagedcallback-evalexception-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback-evalexception-method.md
                       - name: Exception method
-                        href: icordebug/icordebugmanagedcallback-exception-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback-exception-method.md
                       - name: ExitAppDomain method
-                        href: icordebug/icordebugmanagedcallback-exitappdomain-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback-exitappdomain-method.md
                       - name: ExitProcess method
-                        href: icordebug/icordebugmanagedcallback-exitprocess-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback-exitprocess-method.md
                       - name: ExitThread method
-                        href: icordebug/icordebugmanagedcallback-exitthread-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback-exitthread-method.md
                       - name: LoadAssembly method
-                        href: icordebug/icordebugmanagedcallback-loadassembly-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback-loadassembly-method.md
                       - name: LoadClass method
-                        href: icordebug/icordebugmanagedcallback-loadclass-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback-loadclass-method.md
                       - name: LoadModule method
-                        href: icordebug/icordebugmanagedcallback-loadmodule-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback-loadmodule-method.md
                       - name: LogMessage method
-                        href: icordebug/icordebugmanagedcallback-logmessage-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback-logmessage-method.md
                       - name: LogSwitch method
-                        href: icordebug/icordebugmanagedcallback-logswitch-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback-logswitch-method.md
                       - name: NameChange method
-                        href: icordebug/icordebugmanagedcallback-namechange-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback-namechange-method.md
                       - name: StepComplete method
-                        href: icordebug/icordebugmanagedcallback-stepcomplete-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback-stepcomplete-method.md
                       - name: UnloadAssembly method
-                        href: icordebug/icordebugmanagedcallback-unloadassembly-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback-unloadassembly-method.md
                       - name: UnloadClass method
-                        href: icordebug/icordebugmanagedcallback-unloadclass-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback-unloadclass-method.md
                       - name: UnloadModule method
-                        href: icordebug/icordebugmanagedcallback-unloadmodule-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback-unloadmodule-method.md
                       - name: UpdateModuleSymbols method
-                        href: icordebug/icordebugmanagedcallback-updatemodulesymbols-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback-updatemodulesymbols-method.md
                   - name: ICorDebugManagedCallback2 interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugmanagedcallback2-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback2-interface.md
                         displayName: ICorDebugManagedCallback2
                       - name: ChangeConnection method
-                        href: icordebug/icordebugmanagedcallback2-changeconnection-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback2-changeconnection-method.md
                       - name: CreateConnection method
-                        href: icordebug/icordebugmanagedcallback2-createconnection-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback2-createconnection-method.md
                       - name: DestroyConnection method
-                        href: icordebug/icordebugmanagedcallback2-destroyconnection-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback2-destroyconnection-method.md
                       - name: Exception method
-                        href: icordebug/icordebugmanagedcallback2-exception-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback2-exception-method.md
                       - name: ExceptionUnwind method
-                        href: icordebug/icordebugmanagedcallback2-exceptionunwind-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback2-exceptionunwind-method.md
                       - name: FunctionRemapComplete method
-                        href: icordebug/icordebugmanagedcallback2-functionremapcomplete-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback2-functionremapcomplete-method.md
                       - name: FunctionRemapOpportunity method
-                        href: icordebug/icordebugmanagedcallback2-functionremapopportunity-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback2-functionremapopportunity-method.md
                       - name: MDANotification method
-                        href: icordebug/icordebugmanagedcallback2-mdanotification-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback2-mdanotification-method.md
                   - name: ICorDebugManagedCallback3 interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugmanagedcallback3-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback3-interface.md
                         displayName: ICorDebugManagedCallback3
                       - name: CustomNotification method
-                        href: icordebug/icordebugmanagedcallback3-customnotification-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback3-customnotification-method.md
                   - name: ICorDebugMDA interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugmda-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmda-interface.md
                         displayName: ICorDebugMDA
                       - name: GetDescription method
-                        href: icordebug/icordebugmda-getdescription-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmda-getdescription-method.md
                       - name: GetFlags method
-                        href: icordebug/icordebugmda-getflags-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmda-getflags-method.md
                       - name: GetName method
-                        href: icordebug/icordebugmda-getname-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmda-getname-method.md
                       - name: GetOSThreadId method
-                        href: icordebug/icordebugmda-getosthreadid-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmda-getosthreadid-method.md
                       - name: GetXML method
-                        href: icordebug/icordebugmda-getxml-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmda-getxml-method.md
                   - name: ICorDebugMemoryBuffer interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugmemorybuffer-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmemorybuffer-interface.md
                         displayName: ICorDebugMemoryBuffer
                       - name: GetSize method
-                        href: icordebug/icordebugmemorybuffer-getsize-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmemorybuffer-getsize-method.md
                       - name: GetStartAddress method
-                        href: icordebug/icordebugmemorybuffer-getstartaddress-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmemorybuffer-getstartaddress-method.md
                   - name: ICorDebugMergedAssemblyRecord interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugmergedassemblyrecord-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmergedassemblyrecord-interface.md
                         displayName: ICorDebugMergedAssemblyRecord
                       - name: GetCulture method
-                        href: icordebug/icordebugmergedassemblyrecord-getculture-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmergedassemblyrecord-getculture-method.md
                       - name: GetIndex method
-                        href: icordebug/icordebugmergedassemblyrecord-getindex-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmergedassemblyrecord-getindex-method.md
                       - name: GetPublicKey method
-                        href: icordebug/icordebugmergedassemblyrecord-getpublickey-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmergedassemblyrecord-getpublickey-method.md
                       - name: GetPublicKeyToken method
-                        href: icordebug/icordebugmergedassemblyrecord-getpublickeytoken-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmergedassemblyrecord-getpublickeytoken-method.md
                       - name: GetSimpleName method
-                        href: icordebug/icordebugmergedassemblyrecord-getsimplename-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmergedassemblyrecord-getsimplename-method.md
                       - name: GetVersion method
-                        href: icordebug/icordebugmergedassemblyrecord-getversion-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmergedassemblyrecord-getversion-method.md
                   - name: ICorDebugMetaDataLocator interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugmetadatalocator-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmetadatalocator-interface.md
                         displayName: ICorDebugMetaDataLocator
                       - name: GetMetaData method
-                        href: icordebug/icordebugmetadatalocator-getmetadata-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmetadatalocator-getmetadata-method.md
                   - name: ICorDebugModule interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugmodule-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmodule-interface.md
                         displayName: ICorDebugModule
                       - name: CreateBreakpoint method
-                        href: icordebug/icordebugmodule-createbreakpoint-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmodule-createbreakpoint-method.md
                       - name: EnableClassLoadCallbacks method
-                        href: icordebug/icordebugmodule-enableclassloadcallbacks-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmodule-enableclassloadcallbacks-method.md
                       - name: EnableJITDebugging method
-                        href: icordebug/icordebugmodule-enablejitdebugging-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmodule-enablejitdebugging-method.md
                       - name: GetAssembly method
-                        href: icordebug/icordebugmodule-getassembly-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmodule-getassembly-method.md
                       - name: GetBaseAddress method
-                        href: icordebug/icordebugmodule-getbaseaddress-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmodule-getbaseaddress-method.md
                       - name: GetClassFromToken method
-                        href: icordebug/icordebugmodule-getclassfromtoken-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmodule-getclassfromtoken-method.md
                       - name: GetEditAndContinueSnapshot method
-                        href: icordebug/icordebugmodule-geteditandcontinuesnapshot-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmodule-geteditandcontinuesnapshot-method.md
                       - name: GetFunctionFromRVA method
-                        href: icordebug/icordebugmodule-getfunctionfromrva-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmodule-getfunctionfromrva-method.md
                       - name: GetFunctionFromToken method
-                        href: icordebug/icordebugmodule-getfunctionfromtoken-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmodule-getfunctionfromtoken-method.md
                       - name: GetGlobalVariableValue method
-                        href: icordebug/icordebugmodule-getglobalvariablevalue-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmodule-getglobalvariablevalue-method.md
                       - name: GetMetaDataInterface method
-                        href: icordebug/icordebugmodule-getmetadatainterface-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmodule-getmetadatainterface-method.md
                       - name: GetName method
-                        href: icordebug/icordebugmodule-getname-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmodule-getname-method.md
                       - name: GetProcess method
-                        href: icordebug/icordebugmodule-getprocess-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmodule-getprocess-method.md
                       - name: GetSize method
-                        href: icordebug/icordebugmodule-getsize-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmodule-getsize-method.md
                       - name: GetToken method
-                        href: icordebug/icordebugmodule-gettoken-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmodule-gettoken-method.md
                       - name: IsDynamic method
-                        href: icordebug/icordebugmodule-isdynamic-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmodule-isdynamic-method.md
                       - name: IsInMemory method
-                        href: icordebug/icordebugmodule-isinmemory-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmodule-isinmemory-method.md
                   - name: ICorDebugModule2 interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugmodule2-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmodule2-interface.md
                         displayName: ICorDebugModule2
                       - name: ApplyChanges method
-                        href: icordebug/icordebugmodule2-applychanges-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmodule2-applychanges-method.md
                       - name: GetJITCompilerFlags method
-                        href: icordebug/icordebugmodule2-getjitcompilerflags-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmodule2-getjitcompilerflags-method.md
                       - name: ResolveAssembly method
-                        href: icordebug/icordebugmodule2-resolveassembly-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmodule2-resolveassembly-method.md
                       - name: SetJITCompilerFlags method
-                        href: icordebug/icordebugmodule2-setjitcompilerflags-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmodule2-setjitcompilerflags-method.md
                       - name: SetJMCStatus method
-                        href: icordebug/icordebugmodule2-setjmcstatus-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmodule2-setjmcstatus-method.md
                   - name: ICorDebugModule3 interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugmodule3-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmodule3-interface.md
                         displayName: ICorDebugModule3
                       - name: "ICorDebugModule3::CreateReaderForInMemorySymbols method"
-                        href: icordebug/icordebugmodule3-createreaderforinmemorysymbols-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmodule3-createreaderforinmemorysymbols-method.md
                   - name: ICorDebugModule4 interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugmodule4-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmodule4-interface.md
                         displayName: ICorDebugModule4
                       - name: "ICorDebugModule4::IsMappedLayout method"
-                        href: icordebug/icordebugmodule4-ismappedlayout-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmodule4-ismappedlayout-method.md
                   - name: ICorDebugModuleBreakpoint interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugmodulebreakpoint-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmodulebreakpoint-interface.md
                         displayName: ICorDebugModuleBreakpoint
                       - name: GetModule method
-                        href: icordebug/icordebugmodulebreakpoint-getmodule-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmodulebreakpoint-getmodule-method.md
                   - name: ICorDebugModuleDebugEvent interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugmoduledebugevent-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmoduledebugevent-interface.md
                         displayName: ICorDebugModuleDebugEvent
                       - name: GetModule method
-                        href: icordebug/icordebugmoduledebugevent-getmodule-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmoduledebugevent-getmodule-method.md
                   - name: ICorDebugModuleEnum interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugmoduleenum-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmoduleenum-interface.md
                         displayName: ICorDebugModuleEnum
                       - name: Next method
-                        href: icordebug/icordebugmoduleenum-next-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmoduleenum-next-method.md
                   - name: ICorDebugMutableDataTarget interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugmutabledatatarget-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmutabledatatarget-interface.md
                         displayName: ICorDebugMutableDataTarget
                       - name: ContinueStatusChanged method
-                        href: icordebug/icordebugmutabledatatarget-continuestatuschanged-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmutabledatatarget-continuestatuschanged-method.md
                       - name: SetThreadContext method
-                        href: icordebug/icordebugmutabledatatarget-setthreadcontext-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmutabledatatarget-setthreadcontext-method.md
                       - name: WriteVirtual method
-                        href: icordebug/icordebugmutabledatatarget-writevirtual-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmutabledatatarget-writevirtual-method.md
                   - name: ICorDebugNativeFrame interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugnativeframe-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugnativeframe-interface.md
                         displayName: ICorDebugNativeFrame
                       - name: CanSetIP method
-                        href: icordebug/icordebugnativeframe-cansetip-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugnativeframe-cansetip-method.md
                       - name: GetIP method
-                        href: icordebug/icordebugnativeframe-getip-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugnativeframe-getip-method.md
                       - name: GetLocalDoubleRegisterValue method
-                        href: icordebug/icordebugnativeframe-getlocaldoubleregistervalue-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugnativeframe-getlocaldoubleregistervalue-method.md
                       - name: GetLocalMemoryRegisterValue method
-                        href: icordebug/icordebugnativeframe-getlocalmemoryregistervalue-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugnativeframe-getlocalmemoryregistervalue-method.md
                       - name: GetLocalMemoryValue method
-                        href: icordebug/icordebugnativeframe-getlocalmemoryvalue-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugnativeframe-getlocalmemoryvalue-method.md
                       - name: GetLocalRegisterMemoryValue method
-                        href: icordebug/icordebugnativeframe-getlocalregistermemoryvalue-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugnativeframe-getlocalregistermemoryvalue-method.md
                       - name: GetLocalRegisterValue method
-                        href: icordebug/icordebugnativeframe-getlocalregistervalue-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugnativeframe-getlocalregistervalue-method.md
                       - name: GetRegisterSet method
-                        href: icordebug/icordebugnativeframe-getregisterset-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugnativeframe-getregisterset-method.md
                       - name: SetIP method
-                        href: icordebug/icordebugnativeframe-setip-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugnativeframe-setip-method.md
                   - name: ICorDebugNativeFrame2 interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugnativeframe2-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugnativeframe2-interface.md
                         displayName: ICorDebugNativeFrame2
                       - name: IsChild method
-                        href: icordebug/icordebugnativeframe2-ischild-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugnativeframe2-ischild-method.md
                       - name: IsMatchingParentFrame method
-                        href: icordebug/icordebugnativeframe2-ismatchingparentframe-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugnativeframe2-ismatchingparentframe-method.md
                       - name: GetStackParameterSize method
-                        href: icordebug/icordebugnativeframe2-getstackparametersize-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugnativeframe2-getstackparametersize-method.md
                   - name: ICorDebugObjectEnum interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugobjectenum-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugobjectenum-interface.md
                         displayName: ICorDebugObjectEnum
                       - name: Next method
-                        href: icordebug/icordebugobjectenum-next-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugobjectenum-next-method.md
                   - name: ICorDebugObjectValue interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugobjectvalue-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugobjectvalue-interface.md
                         displayName: ICorDebugObjectValue
                       - name: GetClass method
-                        href: icordebug/icordebugobjectvalue-getclass-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugobjectvalue-getclass-method.md
                       - name: GetContext method
-                        href: icordebug/icordebugobjectvalue-getcontext-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugobjectvalue-getcontext-method.md
                       - name: GetFieldValue method
-                        href: icordebug/icordebugobjectvalue-getfieldvalue-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugobjectvalue-getfieldvalue-method.md
                       - name: GetManagedCopy method
-                        href: icordebug/icordebugobjectvalue-getmanagedcopy-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugobjectvalue-getmanagedcopy-method.md
                       - name: GetVirtualMethod method
-                        href: icordebug/icordebugobjectvalue-getvirtualmethod-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugobjectvalue-getvirtualmethod-method.md
                       - name: IsValueClass method
-                        href: icordebug/icordebugobjectvalue-isvalueclass-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugobjectvalue-isvalueclass-method.md
                       - name: SetFromManagedCopy method
-                        href: icordebug/icordebugobjectvalue-setfrommanagedcopy-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugobjectvalue-setfrommanagedcopy-method.md
                   - name: ICorDebugObjectValue2 interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugobjectvalue2-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugobjectvalue2-interface.md
                         displayName: ICorDebugObjectValue2
                       - name: GetVirtualMethodAndType method
-                        href: icordebug/icordebugobjectvalue2-getvirtualmethodandtype-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugobjectvalue2-getvirtualmethodandtype-method.md
                   - name: ICorDebugProcess interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugprocess-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess-interface.md
                         displayName: ICorDebugProcess
                       - name: ClearCurrentException method
-                        href: icordebug/icordebugprocess-clearcurrentexception-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess-clearcurrentexception-method.md
                       - name: EnableLogMessages method
-                        href: icordebug/icordebugprocess-enablelogmessages-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess-enablelogmessages-method.md
                       - name: EnumerateAppDomains method
-                        href: icordebug/icordebugprocess-enumerateappdomains-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess-enumerateappdomains-method.md
                       - name: EnumerateObjects method
-                        href: icordebug/icordebugprocess-enumerateobjects-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess-enumerateobjects-method.md
                       - name: GetHandle method
-                        href: icordebug/icordebugprocess-gethandle-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess-gethandle-method.md
                       - name: GetHelperThreadID method
-                        href: icordebug/icordebugprocess-gethelperthreadid-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess-gethelperthreadid-method.md
                       - name: GetID method
-                        href: icordebug/icordebugprocess-getid-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess-getid-method.md
                       - name: GetObject method
-                        href: icordebug/icordebugprocess-getobject-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess-getobject-method.md
                       - name: GetThread method
-                        href: icordebug/icordebugprocess-getthread-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess-getthread-method.md
                       - name: GetThreadContext method
-                        href: icordebug/icordebugprocess-getthreadcontext-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess-getthreadcontext-method.md
                       - name: IsOSSuspended method
-                        href: icordebug/icordebugprocess-isossuspended-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess-isossuspended-method.md
                       - name: IsTransitionStub method
-                        href: icordebug/icordebugprocess-istransitionstub-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess-istransitionstub-method.md
                       - name: ModifyLogSwitch method
-                        href: icordebug/icordebugprocess-modifylogswitch-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess-modifylogswitch-method.md
                       - name: ReadMemory method
-                        href: icordebug/icordebugprocess-readmemory-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess-readmemory-method.md
                       - name: SetThreadContext method
-                        href: icordebug/icordebugprocess-setthreadcontext-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess-setthreadcontext-method.md
                       - name: ThreadForFiberCookie method
-                        href: icordebug/icordebugprocess-threadforfibercookie-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess-threadforfibercookie-method.md
                       - name: WriteMemory method
-                        href: icordebug/icordebugprocess-writememory-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess-writememory-method.md
                   - name: ICorDebugProcess2 interface
-                    href: icordebug/icordebugprocess2-interface1.md
+                    href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess2-interface1.md
                     items:
                       - name: ClearUnmanagedBreakpoint method
-                        href: icordebug/icordebugprocess2-clearunmanagedbreakpoint-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess2-clearunmanagedbreakpoint-method.md
                       - name: GetDesiredNGENCompilerFlags method
-                        href: icordebug/icordebugprocess2-getdesiredngencompilerflags-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess2-getdesiredngencompilerflags-method.md
                       - name: GetReferenceValueFromGCHandle method
-                        href: icordebug/icordebugprocess2-getreferencevaluefromgchandle-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess2-getreferencevaluefromgchandle-method.md
                       - name: GetThreadForTaskID method
-                        href: icordebug/icordebugprocess2-getthreadfortaskid-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess2-getthreadfortaskid-method.md
                       - name: GetVersion method
-                        href: icordebug/icordebugprocess2-getversion-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess2-getversion-method.md
                       - name: SetDesiredNGENCompilerFlags method
-                        href: icordebug/icordebugprocess2-setdesiredngencompilerflags-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess2-setdesiredngencompilerflags-method.md
                       - name: SetUnmanagedBreakpoint method
-                        href: icordebug/icordebugprocess2-setunmanagedbreakpoint-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess2-setunmanagedbreakpoint-method.md
                   - name: ICorDebugProcess3 interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugprocess3-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess3-interface.md
                         displayName: ICorDebugProcess3
                       - name: SetEnableCustomNotification method
-                        href: icordebug/icordebugprocess3-setenablecustomnotification-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess3-setenablecustomnotification-method.md
                   - name: ICorDebugProcess4 interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugprocess4-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess4-interface.md
                         displayName: ICorDebugProcess4
                       - name: ProcessStateChanged method
-                        href: icordebug/icordebugprocess4-processstatechanged-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess4-processstatechanged-method.md
                   - name: ICorDebugProcess5 interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugprocess5-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess5-interface.md
                         displayName: ICorDebugProcess5
                       - name: EnableNGenPolicy method
-                        href: icordebug/icordebugprocess5-enablengenpolicy-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess5-enablengenpolicy-method.md
                       - name: EnumerateGCReferences method
-                        href: icordebug/icordebugprocess5-enumerategcreferences-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess5-enumerategcreferences-method.md
                       - name: EnumerateHandles method
-                        href: icordebug/icordebugprocess5-enumeratehandles-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess5-enumeratehandles-method.md
                       - name: EnumerateHeap method
-                        href: icordebug/icordebugprocess5-enumerateheap-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess5-enumerateheap-method.md
                       - name: EnumerateHeapRegions method
-                        href: icordebug/icordebugprocess5-enumerateheapregions-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess5-enumerateheapregions-method.md
                       - name: GetArrayLayout method
-                        href: icordebug/icordebugprocess5-getarraylayout-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess5-getarraylayout-method.md
                       - name: GetGCHeapInformation method
-                        href: icordebug/icordebugprocess5-getgcheapinformation-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess5-getgcheapinformation-method.md
                       - name: GetObject method
-                        href: icordebug/icordebugprocess5-getobject-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess5-getobject-method.md
                       - name: GetTypeFields method
-                        href: icordebug/icordebugprocess5-gettypefields-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess5-gettypefields-method.md
                       - name: GetTypeForTypeID method
-                        href: icordebug/icordebugprocess5-gettypefortypeid-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess5-gettypefortypeid-method.md
                       - name: GetTypeID method
-                        href: icordebug/icordebugprocess5-gettypeid-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess5-gettypeid-method.md
                       - name: GetTypeLayout method
-                        href: icordebug/icordebugprocess5-gettypelayout-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess5-gettypelayout-method.md
                   - name: ICorDebugProcess6 interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugprocess6-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess6-interface.md
                         displayName: ICorDebugProcess6
                       - name: DecodeEvent method
-                        href: icordebug/icordebugprocess6-decodeevent-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess6-decodeevent-method.md
                       - name: EnableVirtualModuleSplitting method
-                        href: icordebug/icordebugprocess6-enablevirtualmodulesplitting-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess6-enablevirtualmodulesplitting-method.md
                       - name: GetCode method
-                        href: icordebug/icordebugprocess6-getcode-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess6-getcode-method.md
                       - name: GetExportStepInfo method
-                        href: icordebug/icordebugprocess6-getexportstepinfo-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess6-getexportstepinfo-method.md
                       - name: MarkDebuggerAttached method
-                        href: icordebug/icordebugprocess6-markdebuggerattached-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess6-markdebuggerattached-method.md
                       - name: ProcessStateChanged method
-                        href: icordebug/icordebugprocess6-processstatechanged-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess6-processstatechanged-method.md
                   - name: ICorDebugProcess7 interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugprocess7-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess7-interface.md
                         displayName: ICorDebugProcess7
                       - name: SetWriteableMetadataUpdateMode method
-                        href: icordebug/icordebugprocess7-setwriteablemetadataupdatemode-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess7-setwriteablemetadataupdatemode-method.md
                   - name: ICorDebugProcess8 interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugprocess8-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess8-interface.md
                         displayName: ICorDebugProcess8
                       - name: EnableExceptionCallbacksOutsideOfMyCode method
-                        href: icordebug/icordebugprocess8-enableexceptioncallbacksoutsideofmycode-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess8-enableexceptioncallbacksoutsideofmycode-method.md
                   - name: ICorDebugProcess11 interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugprocess11-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess11-interface.md
                         displayName: ICorDebugProcess11
                       - name: EnumerateLoaderHeapMemoryRegions method
-                        href: icordebug/icordebugprocess11-enumerateloaderheapmemoryregions-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess11-enumerateloaderheapmemoryregions-method.md
                   - name: ICorDebugProcessEnum interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugprocessenum-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocessenum-interface.md
                         displayName: ICorDebugProcessEnum
                       - name: Next method
-                        href: icordebug/icordebugprocessenum-next-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocessenum-next-method.md
                   - name: ICorDebugReferenceValue interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugreferencevalue-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugreferencevalue-interface.md
                         displayName: ICorDebugReferenceValue
                       - name: Dereference method
-                        href: icordebug/icordebugreferencevalue-dereference-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugreferencevalue-dereference-method.md
                       - name: DereferenceStrong method
-                        href: icordebug/icordebugreferencevalue-dereferencestrong-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugreferencevalue-dereferencestrong-method.md
                       - name: GetValue method
-                        href: icordebug/icordebugreferencevalue-getvalue-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugreferencevalue-getvalue-method.md
                       - name: IsNull method
-                        href: icordebug/icordebugreferencevalue-isnull-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugreferencevalue-isnull-method.md
                       - name: SetValue method
-                        href: icordebug/icordebugreferencevalue-setvalue-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugreferencevalue-setvalue-method.md
                   - name: ICorDebugRegisterSet interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugregisterset-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugregisterset-interface.md
                         displayName: ICorDebugRegisterSet
                       - name: GetRegisters method
-                        href: icordebug/icordebugregisterset-getregisters-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugregisterset-getregisters-method.md
                       - name: GetRegistersAvailable method
-                        href: icordebug/icordebugregisterset-getregistersavailable-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugregisterset-getregistersavailable-method.md
                       - name: GetThreadContext method
-                        href: icordebug/icordebugregisterset-getthreadcontext-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugregisterset-getthreadcontext-method.md
                       - name: SetRegisters method
-                        href: icordebug/icordebugregisterset-setregisters-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugregisterset-setregisters-method.md
                       - name: SetThreadContext method
-                        href: icordebug/icordebugregisterset-setthreadcontext-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugregisterset-setthreadcontext-method.md
                   - name: ICorDebugRegisterSet2 interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugregisterset2-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugregisterset2-interface.md
                         displayName: ICorDebugRegisterSet2
                       - name: GetRegisters method
-                        href: icordebug/icordebugregisterset2-getregisters-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugregisterset2-getregisters-method.md
                       - name: GetRegistersAvailable method
-                        href: icordebug/icordebugregisterset2-getregistersavailable-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugregisterset2-getregistersavailable-method.md
                       - name: SetRegisters method
-                        href: icordebug/icordebugregisterset2-setregisters-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugregisterset2-setregisters-method.md
                   - name: ICorDebugRemote interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugremote-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugremote-interface.md
                         displayName: ICorDebugRemote
                       - name: "ICorDebugRemote::CreateProcessEx method"
-                        href: icordebug/icordebugremote-createprocessex-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugremote-createprocessex-method.md
                       - name: "ICorDebugRemote::DebugActiveProcessEx method"
-                        href: icordebug/icordebugremote-debugactiveprocessex-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugremote-debugactiveprocessex-method.md
                   - name: ICorDebugRemoteTarget interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugremotetarget-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugremotetarget-interface.md
                         displayName: ICorDebugRemoteTarget
                       - name: "ICorDebugRemoteTarget::GetHostName method"
-                        href: icordebug/icordebugremotetarget-gethostname-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugremotetarget-gethostname-method.md
                   - name: ICorDebugRuntimeUnwindableFrame interface
-                    href: icordebug/icordebugruntimeunwindableframe-interface.md
+                    href: ../../core/unmanaged-api/debugging/icordebug/icordebugruntimeunwindableframe-interface.md
                   - name: ICorDebugStackWalk interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugstackwalk-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugstackwalk-interface.md
                         displayName: ICorDebugStackWalk
                       - name: GetContext method
-                        href: icordebug/icordebugstackwalk-getcontext-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugstackwalk-getcontext-method.md
                       - name: SetContext method
-                        href: icordebug/icordebugstackwalk-setcontext-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugstackwalk-setcontext-method.md
                       - name: Next method
-                        href: icordebug/icordebugstackwalk-next-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugstackwalk-next-method.md
                       - name: GetFrame method
-                        href: icordebug/icordebugstackwalk-getframe-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugstackwalk-getframe-method.md
                   - name: ICorDebugStaticFieldSymbol interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugstaticfieldsymbol-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugstaticfieldsymbol-interface.md
                         displayName: ICorDebugStaticFieldSymbol
                       - name: GetAddress method
-                        href: icordebug/icordebugstaticfieldsymbol-getaddress-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugstaticfieldsymbol-getaddress-method.md
                       - name: GetName method
-                        href: icordebug/icordebugstaticfieldsymbol-getname-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugstaticfieldsymbol-getname-method.md
                       - name: GetSize method
-                        href: icordebug/icordebugstaticfieldsymbol-getsize-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugstaticfieldsymbol-getsize-method.md
                   - name: ICorDebugStepper interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugstepper-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugstepper-interface.md
                         displayName: ICorDebugStepper
                       - name: Deactivate method
-                        href: icordebug/icordebugstepper-deactivate-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugstepper-deactivate-method.md
                       - name: IsActive method
-                        href: icordebug/icordebugstepper-isactive-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugstepper-isactive-method.md
                       - name: SetInterceptMask method
-                        href: icordebug/icordebugstepper-setinterceptmask-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugstepper-setinterceptmask-method.md
                       - name: SetRangeIL method
-                        href: icordebug/icordebugstepper-setrangeil-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugstepper-setrangeil-method.md
                       - name: SetUnmappedStopMask method
-                        href: icordebug/icordebugstepper-setunmappedstopmask-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugstepper-setunmappedstopmask-method.md
                       - name: Step method
-                        href: icordebug/icordebugstepper-step-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugstepper-step-method.md
                       - name: StepOut method
-                        href: icordebug/icordebugstepper-stepout-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugstepper-stepout-method.md
                       - name: StepRange method
-                        href: icordebug/icordebugstepper-steprange-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugstepper-steprange-method.md
                   - name: ICorDebugStepper2 interface
-                    href: icordebug/icordebugstepper2-interface1.md
+                    href: ../../core/unmanaged-api/debugging/icordebug/icordebugstepper2-interface1.md
                     items:
                       - name: SetJMC method
-                        href: icordebug/icordebugstepper2-setjmc-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugstepper2-setjmc-method.md
                   - name: ICorDebugStepperEnum interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugstepperenum-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugstepperenum-interface.md
                         displayName: ICorDebugStepperEnum
                       - name: Next method
-                        href: icordebug/icordebugstepperenum-next-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugstepperenum-next-method.md
                   - name: ICorDebugStringValue interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugstringvalue-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugstringvalue-interface.md
                         displayName: ICorDebugStringValue
                       - name: GetLength method
-                        href: icordebug/icordebugstringvalue-getlength-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugstringvalue-getlength-method.md
                       - name: GetString method
-                        href: icordebug/icordebugstringvalue-getstring-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugstringvalue-getstring-method.md
                   - name: ICorDebugSymbolProvider interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugsymbolprovider-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugsymbolprovider-interface.md
                         displayName: ICorDebugSymbolProvider
                       - name: GetAssemblyImageBytes method
-                        href: icordebug/icordebugsymbolprovider-getassemblyimagebytes-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugsymbolprovider-getassemblyimagebytes-method.md
                       - name: GetAssemblyImageMetadata method
-                        href: icordebug/icordebugsymbolprovider-getassemblyimagemetadata-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugsymbolprovider-getassemblyimagemetadata-method.md
                       - name: GetCodeRange method
-                        href: icordebug/icordebugsymbolprovider-getcoderange-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugsymbolprovider-getcoderange-method.md
                       - name: GetInstanceFieldSymbols method
-                        href: icordebug/icordebugsymbolprovider-getinstancefieldsymbols-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugsymbolprovider-getinstancefieldsymbols-method.md
                       - name: GetMergedAssemblyRecords method
-                        href: icordebug/icordebugsymbolprovider-getmergedassemblyrecords-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugsymbolprovider-getmergedassemblyrecords-method.md
                       - name: GetMethodLocalSymbols method
-                        href: icordebug/icordebugsymbolprovider-getmethodlocalsymbols-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugsymbolprovider-getmethodlocalsymbols-method.md
                       - name: GetMethodParameterSymbols method
-                        href: icordebug/icordebugsymbolprovider-getmethodparametersymbols-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugsymbolprovider-getmethodparametersymbols-method.md
                       - name: GetMethodProps method
-                        href: icordebug/icordebugsymbolprovider-getmethodprops-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugsymbolprovider-getmethodprops-method.md
                       - name: GetObjectSize method
-                        href: icordebug/icordebugsymbolprovider-getobjectsize-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugsymbolprovider-getobjectsize-method.md
                       - name: GetStaticFieldSymbols method
-                        href: icordebug/icordebugsymbolprovider-getstaticfieldsymbols-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugsymbolprovider-getstaticfieldsymbols-method.md
                       - name: GetTypeProps method
-                        href: icordebug/icordebugsymbolprovider-gettypeprops-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugsymbolprovider-gettypeprops-method.md
                   - name: ICorDebugSymbolProvider2 interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugsymbolprovider2-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugsymbolprovider2-interface.md
                         displayName: ICorDebugSymbolProvider2
                       - name: GetFrameProps method
-                        href: icordebug/icordebugsymbolprovider2-getframeprops-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugsymbolprovider2-getframeprops-method.md
                       - name: GetGenericDictionaryInfo method
-                        href: icordebug/icordebugsymbolprovider2-getgenericdictionaryinfo-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugsymbolprovider2-getgenericdictionaryinfo-method.md
                   - name: ICorDebugThread interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugthread-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugthread-interface.md
                         displayName: ICorDebugThread
                       - name: ClearCurrentException method
-                        href: icordebug/icordebugthread-clearcurrentexception-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugthread-clearcurrentexception-method.md
                       - name: CreateEval method
-                        href: icordebug/icordebugthread-createeval-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugthread-createeval-method.md
                       - name: CreateStepper method
-                        href: icordebug/icordebugthread-createstepper-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugthread-createstepper-method.md
                       - name: EnumerateChains method
-                        href: icordebug/icordebugthread-enumeratechains-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugthread-enumeratechains-method.md
                       - name: GetActiveChain method
-                        href: icordebug/icordebugthread-getactivechain-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugthread-getactivechain-method.md
                       - name: GetActiveFrame method
-                        href: icordebug/icordebugthread-getactiveframe-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugthread-getactiveframe-method.md
                       - name: GetAppDomain method
-                        href: icordebug/icordebugthread-getappdomain-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugthread-getappdomain-method.md
                       - name: GetCurrentException method
-                        href: icordebug/icordebugthread-getcurrentexception-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugthread-getcurrentexception-method.md
                       - name: GetDebugState method
-                        href: icordebug/icordebugthread-getdebugstate-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugthread-getdebugstate-method.md
                       - name: GetHandle method
-                        href: icordebug/icordebugthread-gethandle-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugthread-gethandle-method.md
                       - name: GetID method
-                        href: icordebug/icordebugthread-getid-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugthread-getid-method.md
                       - name: GetObject method
-                        href: icordebug/icordebugthread-getobject-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugthread-getobject-method.md
                       - name: GetProcess method
-                        href: icordebug/icordebugthread-getprocess-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugthread-getprocess-method.md
                       - name: GetRegisterSet method
-                        href: icordebug/icordebugthread-getregisterset-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugthread-getregisterset-method.md
                       - name: GetUserState method
-                        href: icordebug/icordebugthread-getuserstate-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugthread-getuserstate-method.md
                       - name: SetDebugState method
-                        href: icordebug/icordebugthread-setdebugstate-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugthread-setdebugstate-method.md
                   - name: ICorDebugThread2 interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugthread2-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugthread2-interface.md
                         displayName: ICorDebugThread2
                       - name: GetActiveFunctions method
-                        href: icordebug/icordebugthread2-getactivefunctions-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugthread2-getactivefunctions-method.md
                       - name: GetConnectionID method
-                        href: icordebug/icordebugthread2-getconnectionid-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugthread2-getconnectionid-method.md
                       - name: GetTaskID method
-                        href: icordebug/icordebugthread2-gettaskid-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugthread2-gettaskid-method.md
                       - name: GetVolatileOSThreadID method
-                        href: icordebug/icordebugthread2-getvolatileosthreadid-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugthread2-getvolatileosthreadid-method.md
                       - name: InterceptCurrentException method
-                        href: icordebug/icordebugthread2-interceptcurrentexception-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugthread2-interceptcurrentexception-method.md
                   - name: ICorDebugThread3 interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugthread3-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugthread3-interface.md
                         displayName: ICorDebugThread3
                       - name: CreateStackWalk method
-                        href: icordebug/icordebugthread3-createstackwalk-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugthread3-createstackwalk-method.md
                       - name: GetActiveInternalFrames method
-                        href: icordebug/icordebugthread3-getactiveinternalframes-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugthread3-getactiveinternalframes-method.md
                   - name: ICorDebugThread4 interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugthread4-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugthread4-interface.md
                         displayName: ICorDebugThread4
                       - name: GetBlockingObjects method
-                        href: icordebug/icordebugthread4-getblockingobjects-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugthread4-getblockingobjects-method.md
                       - name: HadUnhandledException method
-                        href: icordebug/icordebugthread4-hadunhandledexception-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugthread4-hadunhandledexception-method.md
                       - name: GetCurrentCustomDebuggerNotification method
-                        href: icordebug/icordebugthread4-getcurrentcustomdebuggernotification-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugthread4-getcurrentcustomdebuggernotification-method.md
                   - name: ICorDebugThreadEnum interface
-                    href: icordebug/icordebugthreadenum-interface1.md
+                    href: ../../core/unmanaged-api/debugging/icordebug/icordebugthreadenum-interface1.md
                     items:
                       - name: Next method
-                        href: icordebug/icordebugthreadenum-next-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugthreadenum-next-method.md
                   - name: ICorDebugType interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugtype-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugtype-interface.md
                         displayName: ICorDebugType
                       - name: EnumerateTypeParameters method
-                        href: icordebug/icordebugtype-enumeratetypeparameters-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugtype-enumeratetypeparameters-method.md
                       - name: GetBase method
-                        href: icordebug/icordebugtype-getbase-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugtype-getbase-method.md
                       - name: GetClass method
-                        href: icordebug/icordebugtype-getclass-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugtype-getclass-method.md
                       - name: GetFirstTypeParameter method
-                        href: icordebug/icordebugtype-getfirsttypeparameter-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugtype-getfirsttypeparameter-method.md
                       - name: GetRank method
-                        href: icordebug/icordebugtype-getrank-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugtype-getrank-method.md
                       - name: GetStaticFieldValue method
-                        href: icordebug/icordebugtype-getstaticfieldvalue-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugtype-getstaticfieldvalue-method.md
                       - name: GetType method
-                        href: icordebug/icordebugtype-gettype-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugtype-gettype-method.md
                   - name: ICorDebugType2 interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugtype2-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugtype2-interface.md
                         displayName: ICorDebugType2
                       - name: GetTypeID method
-                        href: icordebug/icordebugtype2-gettypeid-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugtype2-gettypeid-method.md
                   - name: ICorDebugTypeEnum interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugtypeenum-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugtypeenum-interface.md
                         displayName: ICorDebugTypeEnum
                       - name: Next method
-                        href: icordebug/icordebugtypeenum-next-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugtypeenum-next-method.md
                   - name: ICorDebugUnmanagedCallback interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugunmanagedcallback-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugunmanagedcallback-interface.md
                         displayName: ICorDebugUnmanagedCallback
                       - name: DebugEvent method
-                        href: icordebug/icordebugunmanagedcallback-debugevent-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugunmanagedcallback-debugevent-method.md
                   - name: ICorDebugValue interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugvalue-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugvalue-interface.md
                         displayName: ICorDebugValue
                       - name: CreateBreakpoint method
-                        href: icordebug/icordebugvalue-createbreakpoint-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugvalue-createbreakpoint-method.md
                       - name: GetAddress method
-                        href: icordebug/icordebugvalue-getaddress-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugvalue-getaddress-method.md
                       - name: GetSize method
-                        href: icordebug/icordebugvalue-getsize-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugvalue-getsize-method.md
                       - name: GetType method
-                        href: icordebug/icordebugvalue-gettype-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugvalue-gettype-method.md
                   - name: ICorDebugValue2 interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugvalue2-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugvalue2-interface.md
                         displayName: ICorDebugValue2
                       - name: GetExactType method
-                        href: icordebug/icordebugvalue2-getexacttype-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugvalue2-getexacttype-method.md
                   - name: ICorDebugValue3 interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugvalue3-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugvalue3-interface.md
                         displayName: ICorDebugValue3
                       - name: GetSize64 method
-                        href: icordebug/icordebugvalue3-getsize64-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugvalue3-getsize64-method.md
                   - name: ICorDebugValueBreakpoint interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugvaluebreakpoint-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugvaluebreakpoint-interface.md
                         displayName: ICorDebugValueBreakpoint
                       - name: GetValue method
-                        href: icordebug/icordebugvaluebreakpoint-getvalue-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugvaluebreakpoint-getvalue-method.md
                   - name: ICorDebugValueEnum interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugvalueenum-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugvalueenum-interface.md
                         displayName: ICorDebugValueEnum
                       - name: Next method
-                        href: icordebug/icordebugvalueenum-next-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugvalueenum-next-method.md
                   - name: ICorDebugVariableHome interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugvariablehome-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugvariablehome-interface.md
                         displayName: ICorDebugVariableHome
                       - name: GetArgumentIndex method
-                        href: icordebug/icordebugvariablehome-getargumentindex-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugvariablehome-getargumentindex-method.md
                       - name: GetCode method
-                        href: icordebug/icordebugvariablehome-getcode-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugvariablehome-getcode-method.md
                       - name: GetLiveRange method
-                        href: icordebug/icordebugvariablehome-getliverange-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugvariablehome-getliverange-method.md
                       - name: GetLocationType method
-                        href: icordebug/icordebugvariablehome-getlocationtype-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugvariablehome-getlocationtype-method.md
                       - name: GetOffset method
-                        href: icordebug/icordebugvariablehome-getoffset-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugvariablehome-getoffset-method.md
                       - name: GetRegister method
-                        href: icordebug/icordebugvariablehome-getregister-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugvariablehome-getregister-method.md
                       - name: GetSlotIndex method
-                        href: icordebug/icordebugvariablehome-getslotindex-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugvariablehome-getslotindex-method.md
                   - name: ICorDebugVariableHomeEnum interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugvariablehomeenum-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugvariablehomeenum-interface.md
                         displayName: ICorDebugVariableHomeEnum
                       - name: Next method
-                        href: icordebug/icordebugvariablehomeenum-next-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugvariablehomeenum-next-method.md
                   - name: ICorDebugVariableSymbol interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugvariablesymbol-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugvariablesymbol-interface.md
                         displayName: ICorDebugVariableSymbol
                       - name: GetName method
-                        href: icordebug/icordebugvariablesymbol-getname-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugvariablesymbol-getname-method.md
                       - name: GetSize method
-                        href: icordebug/icordebugvariablesymbol-getsize-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugvariablesymbol-getsize-method.md
                       - name: GetSlotIndex method
-                        href: icordebug/icordebugvariablesymbol-getslotindex-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugvariablesymbol-getslotindex-method.md
                       - name: GetValue method
-                        href: icordebug/icordebugvariablesymbol-getvalue-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugvariablesymbol-getvalue-method.md
                       - name: SetValue method
-                        href: icordebug/icordebugvariablesymbol-setvalue-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugvariablesymbol-setvalue-method.md
                   - name: ICorDebugVirtualUnwinder interface
                     items:
                       - name: Overview
-                        href: icordebug/icordebugvirtualunwinder-interface.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugvirtualunwinder-interface.md
                         displayName: ICorDebugVirtualUnwinder
                       - name: GetContext method
-                        href: icordebug/icordebugvirtualunwinder-getcontext-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugvirtualunwinder-getcontext-method.md
                       - name: Next method
-                        href: icordebug/icordebugvirtualunwinder-next-method.md
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugvirtualunwinder-next-method.md
               - name: Enumerations
                 items:
                   - name: LIBRARY_PROVIDER_INDEX_TYPE enumeration
@@ -2181,6 +2181,8 @@ items:
                     href: ../../core/unmanaged-api/metadata/enumerations/corcheckduplicatesfor-enumeration.md
                   - name: CorDeclSecurity enumeration
                     href: ../../core/unmanaged-api/metadata/enumerations/cordeclsecurity-enumeration.md
+                  - name: CorElementType enumeration
+                    href: corelementtype-enumeration.md
                   - name: CorErrorIfEmitOutOfOrder enumeration
                     href: ../../core/unmanaged-api/metadata/enumerations/corerrorifemitoutoforder-enumeration.md
                   - name: CorFileFlags enumeration

@@ -49,5 +49,4 @@ typedef struct COR_DEBUG_IL_TO_NATIVE_MAP {
 
 ## See also
 
-- [GetILToNativeMapping Method](../profiling/icorprofilerinfo-getiltonativemapping-method.md)
 - [GetILToNativeMapping Method](icordebugcode-getiltonativemapping-method.md)

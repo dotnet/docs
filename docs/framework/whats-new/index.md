@@ -1284,11 +1284,11 @@ Converted desktop apps gain an app identity similar to the app identity of UWP a
 
 ### Debugging improvements
 
-The *unmanaged debugging API* has been enhanced in .NET Framework 4.6.2 to perform additional analysis when a <xref:System.NullReferenceException> is thrown so that it is possible to determine which variable in a single line of source code is `null`.   To support this scenario, the following APIs have been added to the unmanaged debugging API.
+The *unmanaged debugging API* has been enhanced in .NET Framework 4.6.2 to perform additional analysis when a <xref:System.NullReferenceException> is thrown so that it's possible to determine which variable in a single line of source code is `null`. To support this scenario, the following APIs have been added to the unmanaged debugging API.
 
-- The [ICorDebugCode4](../unmanaged-api/debugging/icordebugcode4-interface.md), [ICorDebugVariableHome](../unmanaged-api/debugging/icordebugvariablehome-interface.md), and [ICorDebugVariableHomeEnum](../unmanaged-api/debugging/icordebugvariablehomeenum-interface.md) interfaces, which expose the native homes of managed variables. This enables debuggers to do some code flow analysis when a  <xref:System.NullReferenceException> occurs and to work backwards to determine the managed variable that corresponds to the native location that was `null`.
+- The [ICorDebugCode4](../../core/unmanaged-api/debugging/icordebug/icordebugcode4-interface.md), [ICorDebugVariableHome](../../core/unmanaged-api/debugging/icordebug/icordebugvariablehome-interface.md), and [ICorDebugVariableHomeEnum](../../core/unmanaged-api/debugging/icordebug/icordebugvariablehomeenum-interface.md) interfaces, which expose the native homes of managed variables. This enables debuggers to do some code flow analysis when a  <xref:System.NullReferenceException> occurs and to work backwards to determine the managed variable that corresponds to the native location that was `null`.
 
-- The [ICorDebugType2::GetTypeID](../unmanaged-api/debugging/icordebugtype2-gettypeid-method.md) method provides a mapping for ICorDebugType to [COR_TYPEID](../unmanaged-api/debugging/cor-typeid-structure.md), which allows the debugger to obtain a [COR_TYPEID](../unmanaged-api/debugging/cor-typeid-structure.md) without an instance of the ICorDebugType. Existing APIs on [COR_TYPEID](../unmanaged-api/debugging/cor-typeid-structure.md) can then be used to determine the class layout of the type.
+- The [ICorDebugType2::GetTypeID](../../core/unmanaged-api/debugging/icordebug/icordebugtype2-gettypeid-method.md) method provides a mapping for ICorDebugType to [COR_TYPEID](../../core/unmanaged-api/debugging/icordebug/cor-typeid-structure.md), which allows the debugger to obtain a [COR_TYPEID](../../core/unmanaged-api/debugging/icordebug/cor-typeid-structure.md) without an instance of the ICorDebugType. Existing APIs on [COR_TYPEID](../../core/unmanaged-api/debugging/icordebug/cor-typeid-structure.md) can then be used to determine the class layout of the type.
 
 <a name="v461"></a>
 
@@ -1799,7 +1799,7 @@ Universal Windows Platform (UWP) apps that are written in C# or Visual Basic can
 
   Your apps are compiled to native code by default when you compile them with Visual Studio 2015 or later. For more information, see [Getting Started with .NET Native](/windows/uwp/dotnet-native/getting-started-with-net-native).
 
-  To support debugging .NET Native apps, a number of new interfaces and enumerations have been added to the unmanaged debugging API. For more information, see the [Debugging (Unmanaged API Reference)](../unmanaged-api/debugging/index.md) topic.
+  To support debugging .NET Native apps, a number of new interfaces and enumerations have been added to the unmanaged debugging API. For more information, see the [Debugging (Unmanaged API Reference)](../../core/unmanaged-api/debugging/icordebug/index.md) topic.
 
 - **Open-source .NET Framework packages**
 
@@ -1853,12 +1853,12 @@ Universal Windows Platform (UWP) apps that are written in C# or Visual Basic can
 
 - **Debugging improvements.** The following new unmanaged debugging APIs provide better integration with a profiler. You can now access metadata inserted by the profiler as well as local variables and code produced by compiler ReJIT requests when dump debugging.
 
-  - [SetWriteableMetadataUpdateMode Method](../unmanaged-api/debugging/icordebugprocess7-setwriteablemetadataupdatemode-method.md)
-  - [EnumerateLocalVariablesEx Method](../unmanaged-api/debugging/icordebugilframe4-enumeratelocalvariablesex-method.md)
-  - [GetLocalVariableEx Method](../unmanaged-api/debugging/icordebugilframe4-getlocalvariableex-method.md)
-  - [GetCodeEx Method](../unmanaged-api/debugging/icordebugilframe4-getcodeex-method.md)
-  - [GetActiveReJitRequestILCode Method](../unmanaged-api/debugging/icordebugfunction3-getactiverejitrequestilcode-method.md)
-  - [GetInstrumentedILMap Method](../unmanaged-api/debugging/icordebugilcode2-getinstrumentedilmap-method.md)
+  - [SetWriteableMetadataUpdateMode Method](../../core/unmanaged-api/debugging/icordebug/icordebugprocess7-setwriteablemetadataupdatemode-method.md)
+  - [EnumerateLocalVariablesEx Method](../../core/unmanaged-api/debugging/icordebug/icordebugilframe4-enumeratelocalvariablesex-method.md)
+  - [GetLocalVariableEx Method](../../core/unmanaged-api/debugging/icordebug/icordebugilframe4-getlocalvariableex-method.md)
+  - [GetCodeEx Method](../../core/unmanaged-api/debugging/icordebug/icordebugilframe4-getcodeex-method.md)
+  - [GetActiveReJitRequestILCode Method](../../core/unmanaged-api/debugging/icordebug/icordebugfunction3-getactiverejitrequestilcode-method.md)
+  - [GetInstrumentedILMap Method](../../core/unmanaged-api/debugging/icordebug/icordebugilcode2-getinstrumentedilmap-method.md)
 
 - **Event tracing changes.** .NET Framework 4.5.2 enables out-of-process, Event Tracing for Windows (ETW)-based activity tracing for a larger surface area. This enables Advanced Power Management (APM) vendors to provide lightweight tools that accurately track the costs of individual requests and activities that cross threads.  These events are raised only when ETW controllers enable them; therefore, the changes don't affect previously written ETW code or code that runs with ETW disabled.
 

@@ -33,7 +33,7 @@ HRESULT EnumProcesses (
 ## Parameters
 
  `Type`
- A value of the [COR_PUB_ENUMPROCESS](cor-pub-enumprocess-enumeration.md) enumeration that specifies the type of process to be retrieved. In the current version, only COR_PUB_MANAGEDONLY is valid.
+ A value of the [COR_PUB_ENUMPROCESS](../../../core/unmanaged-api/debugging/icordebug/cor-pub-enumprocess-enumeration.md) enumeration that specifies the type of process to be retrieved. In the current version, only COR_PUB_MANAGEDONLY is valid.
 
  `ppIEnum`
  A pointer to the address of an [ICorPublishProcessEnum](icorpublishprocessenum-interface.md) instance that is the enumerator of the processes.

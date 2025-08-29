@@ -17,7 +17,7 @@ ms.topic: how-to
 Parsing and invocation are two separate steps, so each of them has their own configuration:
 
 - <xref:System.CommandLine.ParserConfiguration> is a class that provides properties to configure the parsing. It is an optional argument for every `Parse` method, such as <xref:System.CommandLine.Command.Parse*?displayProperty=nameWithType> and <xref:System.CommandLine.Parsing.CommandLineParser.Parse*?displayProperty=nameWithType>.
-- <xref:System.CommandLine.InvocationConfiguration> is a class that provides properties to configure the invocation. It is an optional argument of the <xref:System.CommandLine.ParseResult.Invoke*?displayProperty=nameWithType> and <xref:System.CommandLine.ParseResult.InvokeAsync*?displayProperty=nameWithType> methods. 
+- <xref:System.CommandLine.InvocationConfiguration> is a class that provides properties to configure the invocation. It is an optional argument of the <xref:System.CommandLine.ParseResult.Invoke*?displayProperty=nameWithType> and <xref:System.CommandLine.ParseResult.InvokeAsync*?displayProperty=nameWithType> methods.
 
 They are exposed by the <xref:System.CommandLine.ParseResult.Configuration?displayProperty=nameWithType> and <xref:System.CommandLine.ParseResult.InvocationConfiguration?displayProperty=nameWithType> properties. When they aren't provided, the default configurations are used.
 

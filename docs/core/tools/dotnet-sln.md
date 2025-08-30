@@ -1,7 +1,7 @@
 ---
 title: dotnet sln command
 description: The dotnet-sln command provides a convenient option to add, remove, and list projects in a solution file.
-ms.date: 03/26/2025
+ms.date: 08/29/2025
 ---
 # dotnet sln
 
@@ -27,23 +27,26 @@ The `dotnet sln` command provides a convenient way to list and modify projects i
 
 To use the `dotnet sln` command, the solution file must already exist. If you need to create one, use the [dotnet new](dotnet-new.md) command with the `sln` template name.
 
-The following example creates a *.sln* file in the current folder, with the same name as the folder:
+The following example creates an *.slnx* file in the current folder, with the same name as the folder:
 
 ```dotnetcli
 dotnet new sln
 ```
 
-The following example creates a *.sln* file in the current folder, with the specified file name:
+The following example creates an *.slnx* file in the current folder, with the specified file name:
 
 ```dotnetcli
 dotnet new sln --name MySolution
 ```
 
-The following example creates a *.sln* file in the specified folder, with the same name as the folder:
+The following example creates an *.slnx* file in the specified folder, with the same name as the folder:
 
 ```dotnetcli
 dotnet new sln --output MySolution
 ```
+
+> [!NOTE]
+> In .NET 9 and earlier versions, `dotnet new sln` creates an *.sln* file instead of an *.slnx* file.
 
 ## Arguments
 

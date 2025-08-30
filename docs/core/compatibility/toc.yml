@@ -118,6 +118,8 @@ items:
                 href: sdk/10.0/dotnet-restore-project-json-unsupported.md
               - name: Default workload configuration from 'loose manifests' to 'workload sets' mode
                 href: sdk/10.0/default-workload-config.md
+              - name: "`dotnet new sln` defaults to SLNX file format"
+                href: sdk/10.0/dotnet-new-sln-slnx-default.md
               - name: "`dotnet package list` performs restore"
                 href: sdk/10.0/dotnet-package-list-restore.md
               - name: MSBUILDCUSTOMBUILDEVENTWARNING escape hatch removed

@@ -217,11 +217,13 @@ The following steps add code to process more of the properties in the received J
     using System.Text.Json.Serialization;
 
     public record class Repository(
-        [property: JsonPropertyName("name")] string Name,
-        [property: JsonPropertyName("description")] string Description,
-        [property: JsonPropertyName("html_url")] Uri GitHubHomeUrl,
-        [property: JsonPropertyName("homepage")] Uri Homepage,
-        [property: JsonPropertyName("watchers")] int Watchers);
+        string Name,
+        string Description,
+        Uri GitHubHomeUrl,
+        Uri Homepage,
+        int Watchers,
+        DateTime LastPushUtc
+    );
     ```
 
    The <xref:System.Uri> and `int` types have built-in functionality to convert to and from string representation. No extra code is needed to deserialize from JSON string format to those target types. If the JSON packet contains data that doesn't convert to a target type, the serialization action throws an exception.

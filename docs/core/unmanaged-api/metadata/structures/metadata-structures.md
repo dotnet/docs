@@ -5,9 +5,7 @@ ms.date: 07/24/2025
 ---
 # Metadata structures (.NET)
 
-This section describes the unmanaged structures that the metadata API uses. For unmanaged structures that apply only to .NET Framework, see [Metadata structures (.NET Framework)](../../../../framework/unmanaged-api/metadata/metadata-structures.md).
-
-## In this section
+These articles describe the unmanaged structures that the metadata API uses. For unmanaged structures that apply only to .NET Framework, see [Metadata structures (.NET Framework)](../../../../framework/unmanaged-api/metadata/metadata-structures.md).
 
 [ASSEMBLYMETADATA structure](assemblymetadata-structure.md)\
 Stores assembly metadata for later use.

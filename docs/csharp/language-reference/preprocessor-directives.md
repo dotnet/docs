@@ -66,10 +66,18 @@ The `#:` directives that are used in file-based apps include:
 
 - `#:sdk`:
 
-  The first instance specifies the value for the `<Project Sdk="value" />` node. Subsequent instances specify the `<Sdk Name="value" Version="version" />` node. The version can be omitted. For example:
+  The first instance specifies the value for the `<Project Sdk="value" />` node. Subsequent instances specify the `<Sdk Name="value" Version="version" />` node. The version can be omitted (i.e. if specified in global.json or included in .NET SDK). For example:
 
   ```csharp
   #:sdk Microsoft.NET.Sdk.Web
+  #:sdk Aspire.AppHost.Sdk@9.4.1
+  ```
+
+  The two preceding preprocessors is translated into:
+
+  ```xml
+  <Project Sdk="Microsoft.NET.Sdk.Web" />
+      <Sdk Name="Aspire.AppHost.Sdk" Version="9.4.1" />
   ```
 
 - `#:property`:

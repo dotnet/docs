@@ -126,14 +126,14 @@ The following steps simplify the approach to fetching the data and processing it
 1. Create a file named *Repository.cs* and add the following code:
 
    ```csharp
-   public record class Repository(string name);
+   public record class Repository(string Name);
    ```
 
    The preceding code defines a class to represent the JSON object returned from the GitHub API. You'll use this class to display a list of repository names.
 
-   The JSON for a repository object contains dozens of properties, but only the `name` property will be deserialized. The serializer automatically ignores JSON properties for which there is no match in the target class. This feature makes it easier to create types that work with only a subset of fields in a large JSON packet.
+   The JSON for a repository object contains dozens of properties, but only the `Name` property will be deserialized. The serializer automatically ignores JSON properties for which there is no match in the target class. This feature makes it easier to create types that work with only a subset of fields in a large JSON packet.
 
-   The C# convention is to [capitalize the first letter of property names](../../standard/design-guidelines/capitalization-conventions.md), but the `name` property here starts with a lowercase letter because that matches exactly what's in the JSON. Later you'll see how to use C# property names that don't match the JSON property names.
+   The C# convention is to [capitalize the first letter of property names](../../standard/design-guidelines/capitalization-conventions.md).
 
 1. Use the <xref:System.Net.Http.Json.HttpClientJsonExtensions.GetFromJsonAsync%2A?displayProperty=nameWithType> method to fetch and convert JSON into C# objects. Replace the call to <xref:System.Net.Http.HttpClient.GetStringAsync(System.String)> in the `ProcessRepositoriesAsync` method with the following lines:
 
@@ -157,7 +157,7 @@ The following steps simplify the approach to fetching the data and processing it
 
     ```csharp
     foreach (var repo in repositories ?? Enumerable.Empty<Repository>())
-        Console.Write(repo.name);
+        Console.Write(repo.Name);
     ```
 
 1. The following `using` directives should be present at the top of the file:
@@ -188,10 +188,7 @@ The `ProcessRepositoriesAsync` method can do the async work and return a collect
 1. Return the repositories after processing the JSON response:
 
     ```csharp
-    await using Stream stream =
-        await client.GetStreamAsync("https://api.github.com/orgs/dotnet/repos");
-    var repositories =
-        await JsonSerializer.DeserializeAsync<List<Repository>>(stream);
+    var repositories = await client.GetFromJsonAsync<List<Repository>>("https://api.github.com/orgs/dotnet/repos");
     return repositories ?? new();
     ```
 

@@ -175,33 +175,6 @@ The following steps simplify the approach to fetching the data and processing it
 
    The output is a list of the names of the repositories that are part of the .NET Foundation.
 
-## Configure deserialization
-
-1. In *Repository.cs*, replace the file contents with the following C#.
-
-    ```csharp
-    using System.Text.Json.Serialization;
-
-    public record class Repository(
-        [property: JsonPropertyName("name")] string Name);
-    ```
-
-    This code:
-
-    * Changes the name of the `name` property to `Name`.
-    * Adds the <xref:System.Text.Json.Serialization.JsonPropertyNameAttribute> to specify how this property appears in the JSON.
-
-1. In *Program.cs*, update the code to use the new capitalization of the `Name` property:
-
-   ```csharp
-   foreach (var repo in repositories)
-      Console.Write(repo.Name);
-   ```
-
-1. Run the app.
-
-   The output is the same.
-
 ## Refactor the code
 
 The `ProcessRepositoriesAsync` method can do the async work and return a collection of the repositories. Change that method to return `Task<List<Repository>>`, and move the code that writes to the console near its caller.

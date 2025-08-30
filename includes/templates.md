@@ -35,7 +35,9 @@ The following table shows the templates that come pre-installed with the .NET SD
 | NuGet Config                                 | `nugetconfig`                                                                       |              | Config                                | 1.0              |
 | Dotnet local tool manifest file              | `tool-manifest`                                                                     |              | Config                                | 3.0              |
 | Web Config                                   | `webconfig`                                                                         |              | Config                                | 1.0              |
-| Solution File                                | `sln`                                                                               |              | Solution                              | 1.0              |
+| Directory.Build.props file                   | [`buildprops`](../docs/core/tools/dotnet-new-sdk-templates.md#buildprops)          |              | Config                                | 8.0.100          |
+| Directory.Build.targets file                 | [`buildtargets`](../docs/core/tools/dotnet-new-sdk-templates.md#buildtargets)      |              | Config                                | 8.0.100          |
+| Solution File                                | [`sln`](../docs/core/tools/dotnet-new-sdk-templates.md#sln)                        |              | Solution                              | 1.0              |
 | Protocol Buffer File                         | [`proto`](../docs/core/tools/dotnet-new-sdk-templates.md#namespace)                 |              | Web/gRPC                              | 3.0              |
 | EditorConfig file                            | [`editorconfig`](../docs/core/tools/dotnet-new-sdk-templates.md#editorconfig)       |              | Config                                | 6.0              |
 

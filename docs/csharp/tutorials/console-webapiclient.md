@@ -214,8 +214,6 @@ The following steps add code to process more of the properties in the received J
 1. Replace the contents of `Repository` class, with the following `record` definition:
 
     ```csharp
-    using System.Text.Json.Serialization;
-
     public record class Repository(
         string Name,
         string Description,

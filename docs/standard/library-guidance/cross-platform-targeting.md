@@ -1,19 +1,26 @@
 ---
 title: Cross-platform targeting for .NET libraries
 description: Best practice recommendations for creating cross-platform .NET libraries.
-ms.date: 11/11/2024
+ms.date: 08/20/2025
 ---
 
 # Cross-platform targeting
 
 Modern .NET supports multiple operating systems and devices. It's important for .NET open-source libraries to support as many developers as possible, whether they're building an ASP.NET website hosted in Azure, or a .NET game in Unity.
 
+When choosing target frameworks for your library, it's important to distinguish between two different goals:
+
+- **Modern APIs and patterns**: Your library leans into the benefits of the recent versions of the .NET platform. You use modern language patterns and support advanced deployment models like Native Ahead-of-Time compilation on the CoreCLR.
+- **Breadth targeting**: Your library supports a wide range of .NET implementations and versions to maximize compatibility across different user scenarios.
+
+These goals don't always require the same approach. If your target applications all use modern .NET, your libraries can target the same modern .NET versions without needing to target older frameworks.
+
 ## .NET and .NET Standard targets
 
 .NET and .NET Standard targets are the best way to add cross-platform support to a .NET library.
 
+* .NET versions 5 through 10 are implementations of .NET. Each version is a single product with a uniform set of capabilities and APIs that can be used for Windows desktop apps and cross-platform console apps, cloud services, and websites.
 * [.NET Standard](../net-standard.md) is a specification of .NET APIs that are available on all .NET implementations. Targeting .NET Standard lets you produce libraries that are constrained to use APIs that are in a given version of .NET Standard, which means it's usable by all platforms that implement that version of .NET Standard.
-* .NET 6-8 are implementations of .NET. Each version is a single product with a uniform set of capabilities and APIs that can be used for Windows desktop apps and cross-platform console apps, cloud services, and websites.
 
 For more information about how .NET compares to .NET Standard, see [.NET 5 and .NET Standard](../net-standard.md#net-5-and-net-standard).
 
@@ -27,13 +34,13 @@ If your project targets .NET or .NET Standard and compiles successfully, it does
 > [!TIP]
 > The .NET team offers a [Platform compatibility analyzer](../analyzers/platform-compat-analyzer.md) to help you discover possible issues.
 
-✔️ DO start with including a `netstandard2.0` target.
+✔️ DO start with including a `net8.0` target or later for new libraries.
 
-> Most general-purpose libraries don't need APIs outside of .NET Standard 2.0. .NET Standard 2.0 is supported by all modern platforms and is the recommended way to support multiple platforms with one target. If you don't need to support .NET Framework, you could also target .NET Standard 2.1.
+> For new libraries, targeting modern .NET (such as .NET 8 or later) provides access to the latest APIs and performance improvements, and enables features like AOT and trimming. Modern .NET versions are cross-platform and provide excellent compatibility across Windows, Linux, and macOS.
 
-✔️ DO include a `net6.0` target or later if you require new APIs introduced in a modern .NET.
+✔️ CONSIDER including a `netstandard2.0` target if you need broad compatibility or .NET Framework support.
 
-> .NET 6 and later apps can use a `netstandard2.0` target, so `net6.0` isn't required. You should explicitly target `net6.0`, `net7.0`, `net8.0`, or `net9.0` when you want to use newer .NET APIs.
+> .NET Standard 2.0 is supported by .NET Framework 4.6.1+ and all modern .NET implementations. Include this target when you need to support .NET Framework applications or when building libraries for maximum compatibility across different .NET ecosystems.
 
 ❌ AVOID including a `netstandard1.x` target.
 
@@ -104,7 +111,7 @@ public static class GpsLocation
 
 > The .NET Standard assembly will automatically be used by NuGet. Targeting individual .NET implementations increases the `*.nupkg` size for no benefit.
 
-✔️ CONSIDER adding a target for `net462` when you're offering a `netstandard2.0` target.
+✔️ CONSIDER adding a target for `net462` when you're also targeting `netstandard2.0`.
 
 > Using .NET Standard 2.0 from .NET Framework has some issues that were addressed in .NET Framework 4.7.2. You can improve the experience for developers that are still on .NET Framework 4.6.2 - 4.7.1 by offering them a binary that's built for .NET Framework 4.6.2.
 
@@ -117,8 +124,8 @@ public static class GpsLocation
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <!-- This project will output netstandard2.0 and net462 assemblies -->
-    <TargetFrameworks>netstandard2.0;net462</TargetFrameworks>
+    <!-- This project will output net8.0 and netstandard2.0 assemblies -->
+    <TargetFrameworks>net8.0;netstandard2.0</TargetFrameworks>
   </PropertyGroup>
 </Project>
 ```

@@ -157,7 +157,7 @@ The following steps simplify the approach to fetching the data and processing it
 
     ```csharp
     foreach (var repo in repositories ?? Enumerable.Empty<Repository>())
-        Console.Write(repo.Name);
+        Console.WriteLine(repo.Name);
     ```
 
 4. The following `using` directives should be present at the top of the file:
@@ -200,7 +200,7 @@ The `ProcessRepositoriesAsync` method can do the async work and return a collect
     var repositories = await ProcessRepositoriesAsync(client);
 
     foreach (var repo in repositories)
-        Console.Write(repo.Name);
+        Console.WriteLine(repo.Name);
     ```
 
 4. Run the app.

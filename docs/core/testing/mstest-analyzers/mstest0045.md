@@ -58,7 +58,7 @@ public class TestClass1
 }
 ```
 
-Alternatively, you can configure cooperative cancellation globally in your [runsettings](/dotnet/core/testing/unit-testing-mstest-configure#mstest-element) or [testconfig.json](/dotnet/core/testing/unit-testing-mstest-configure#timeout-settings) file to apply this setting to all timeout attributes in your test project.
+Alternatively, you can configure cooperative cancellation globally in your [runsettings](../unit-testing-mstest-configure.md#mstest-element) or [testconfig.json](../unit-testing-mstest-configure.md#timeout-settings) file to apply this setting to all timeout attributes in your test project.
 
 ## When to suppress warnings
 

@@ -482,9 +482,6 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
 
 [!INCLUDE [arch-no-a](../../../includes/cli-arch-no-a.md)]
 
-> [!NOTE]
-> Running tests for a solution with a specific `Architecture` is not supported. If needed, this should be specified at the individual project level instead.
-
 [!INCLUDE [configuration](../../../includes/cli-configuration.md)]
 
 - **`-f|--framework <FRAMEWORK>`**
@@ -499,8 +496,8 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
 
   Short form `-r` available starting in .NET SDK 7.
 
-> [!NOTE]
-> Running tests for a solution with a specific `Runtime Identifier` is not supported. If needed, this should be specified at the individual project level instead.
+  > [!NOTE]
+  > Running tests for a solution with a global `RuntimeIdentifier` property (explicitly or via `--arch`, `--runtime`, or `--os`) is not supported. You can set `RuntimeIdentifier` on individual project level instead.
 
 - **`-v|--verbosity <LEVEL>`**
   

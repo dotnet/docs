@@ -133,7 +133,7 @@ The following steps simplify the approach to fetching the data and processing it
 
    The JSON for a repository object contains dozens of properties, but only the `Name` property will be deserialized. The serializer automatically ignores JSON properties for which there is no match in the target class. This feature makes it easier to create types that work with only a subset of fields in a large JSON packet.
 
-   The C# convention is to [capitalize the first letter of property names](../../standard/design-guidelines/capitalization-conventions.md).
+   Although the `GetFromJsonAsync` method you will use in the next point has a benefit of being case-insensitive when it comes to property names, the C# convention is to [capitalize the first letter of property names](../../standard/design-guidelines/capitalization-conventions.md).
 
 1. Use the <xref:System.Net.Http.Json.HttpClientJsonExtensions.GetFromJsonAsync%2A?displayProperty=nameWithType> method to fetch and convert JSON into C# objects. Replace the call to <xref:System.Net.Http.HttpClient.GetStringAsync(System.String)> in the `ProcessRepositoriesAsync` method with the following lines:
 
@@ -225,6 +225,8 @@ The following steps add code to process more of the properties in the received J
     ```
 
    The <xref:System.Uri> and `int` types have built-in functionality to convert to and from string representation. No extra code is needed to deserialize from JSON string format to those target types. If the JSON packet contains data that doesn't convert to a target type, the serialization action throws an exception.
+
+   JSON most often uses lowercase for names of it's objects, however we don't need to make any conversion and can keep the uppercase of the fields names, because, like mentioned in one of previous points, the `GetFromJsonAsync` extension method is case-insensitive when it comes to property names.
 
 1. Update the `foreach` loop in the *Program.cs* file to display the property values:
 

@@ -19,7 +19,7 @@ flowchart LR
     
     %% Local Development Machine Branch
     Q1 --> LocalDev[Development Machine]
-    LocalDev --> AppSP["**Application service principal**"]
+    LocalDev --> AppSP["**Service principal**"]
     LocalDev --> DevAccount["**Developer account**"]
     LocalDev --> Broker["**Broker**"]
     

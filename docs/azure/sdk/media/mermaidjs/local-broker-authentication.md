@@ -12,7 +12,7 @@ ms.date: 08/07/2024
 
 flowchart LR
     APP["Local .NET app"]
-    BK["Developer account credentials supplied by broker"]
+    BK["User credentials supplied by broker"]
     AS["Azure services"]
     
     APP --> BK

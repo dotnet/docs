@@ -170,7 +170,8 @@ The code completes the following tasks:
 
 #### Create the HTTP POST request as JSON
 
-To automatically serialize `POST` request arguments and deserialize responses into strongly typed C# objects, use the <xref:System.Net.Http.Json.HttpClientJsonExtensions.PostAsJsonAsync%2A> extension method that's part of the [System.Net.Http.Json](https://www.nuget.org/packages/System.Net.Http.Json) NuGet package.
+To automatically serialize `POST` request arguments and deserialize responses into strongly typed C# objects, use the <xref:System.Net.Http.Json.HttpClientJsonExtensions.PostAsJsonAsync%2A> and the 
+<xref:System.Net.Http.Json.HttpContentJsonExtensions.ReadFromJsonAsync%2A> extension methods respectively, which are part of the [System.Net.Http.Json](https://www.nuget.org/packages/System.Net.Http.Json) NuGet package.
 
 :::code source="../snippets/httpclient/Program.PostAsJson.cs" id="postasjson":::
 
@@ -194,7 +195,8 @@ The code completes the following tasks:
 
 #### Create the HTTP PUT request as JSON
 
-To automatically serialize `PUT` request arguments and deserialize responses into strongly typed C# objects, use the <xref:System.Net.Http.Json.HttpClientJsonExtensions.PutAsJsonAsync%2A> extension method that's part of the [System.Net.Http.Json](https://www.nuget.org/packages/System.Net.Http.Json) NuGet package.
+To automatically serialize `PUT` request arguments and deserialize responses into strongly typed C# objects, use the <xref:System.Net.Http.Json.HttpClientJsonExtensions.PutAsJsonAsync%2A> and the
+<xref:System.Net.Http.Json.HttpContentJsonExtensions.ReadFromJsonAsync%2A> extension methods respectively, which are part of the [System.Net.Http.Json](https://www.nuget.org/packages/System.Net.Http.Json) NuGet package.
 
 :::code source="../snippets/httpclient/Program.PutAsJson.cs" id="putasjson":::
 

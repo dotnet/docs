@@ -21,7 +21,7 @@ flowchart TD
 
     DevAccount["Developer account credentials"]
 
-    AS["Azure services <br/><br/> Azure AI Services, Azure Blob Storage, Azure Key Vault, other Azure services"]
+    AS["Azure services"]
     
     ARL --> VS
     ARL --> VSC

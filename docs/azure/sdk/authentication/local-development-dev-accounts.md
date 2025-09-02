@@ -23,11 +23,11 @@ During local development, applications need to authenticate to Azure to access v
 
 For an app to authenticate to Azure during local development using the developer's Azure credentials, the developer must be signed-in to Azure from one of the following developer tools:
 
+- Azure CLI
+- Azure Developer CLI
+- Azure PowerShell
 - Visual Studio
 - Visual Studio Code
-- Azure CLI
-- Azure PowerShell
-- Azure Developer CLI
 
 The Azure Identity library can detect that the developer is signed-in from one of these tools. The library can then obtain the Microsoft Entra access token via the tool to authenticate the app to Azure as the signed-in user.
 

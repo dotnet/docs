@@ -13,7 +13,7 @@ ms.date: 08/07/2024
 flowchart LR
     APP["Local .NET app"]
     SP["App service principal stored in environment variables"]
-    AS["Azure services <br/><br/> Azure AI Services, Azure Blob Storage, Azure Key Vault, other Azure services"]
+    AS["Azure services"]
     
     APP --> SP
     SP --> AS

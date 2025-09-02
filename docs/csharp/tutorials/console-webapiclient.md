@@ -27,7 +27,7 @@ If you prefer to follow along with the [final sample](/samples/dotnet/samples/co
 1. Open a command prompt and create a new directory for your app. Make that the current
 directory.
 
-2. Enter the following command in a console window:
+1. Enter the following command in a console window:
 
    ```dotnetcli
    dotnet new console --name WebAPIClient
@@ -35,7 +35,7 @@ directory.
 
    This command creates the starter files for a basic "Hello World" app. The project name is "WebAPIClient".
 
-3. Navigate into the "WebAPIClient" directory, and run the app.
+1. Navigate into the "WebAPIClient" directory, and run the app.
 
    ```dotnetcli
    cd WebAPIClient
@@ -69,7 +69,7 @@ Use the <xref:System.Net.Http.HttpClient> class to make HTTP requests. <xref:Sys
    * Replaces the `Console.WriteLine` statement with a call to `ProcessRepositoriesAsync` that uses the `await` keyword.
    * Defines an empty `ProcessRepositoriesAsync` method.
 
-2. In the `Program` class, use an <xref:System.Net.Http.HttpClient> to handle requests and responses, by replacing the content with the following C#.
+1. In the `Program` class, use an <xref:System.Net.Http.HttpClient> to handle requests and responses, by replacing the content with the following C#.
 
     ```csharp
     using System.Net.Http.Headers;
@@ -94,7 +94,7 @@ Use the <xref:System.Net.Http.HttpClient> class to make HTTP requests. <xref:Sys
      * A [`User-Agent`](https://developer.mozilla.org/docs/Web/HTTP/Headers/User-Agent) header.
      These headers are checked by the GitHub server code and are necessary to retrieve information from GitHub.
 
-3. In the `ProcessRepositoriesAsync` method, call the GitHub endpoint that returns a list of all repositories under the .NET foundation organization:
+1. In the `ProcessRepositoriesAsync` method, call the GitHub endpoint that returns a list of all repositories under the .NET foundation organization:
 
    ```csharp
     static async Task ProcessRepositoriesAsync(HttpClient client)
@@ -111,7 +111,7 @@ Use the <xref:System.Net.Http.HttpClient> class to make HTTP requests. <xref:Sys
    * Awaits the task returned from calling <xref:System.Net.Http.HttpClient.GetStringAsync(System.String)?displayProperty=nameWithType> method. This method sends an HTTP GET request to the specified URI. The body of the response is returned as a <xref:System.String>, which is available when the task completes.
    * The response string `json` is printed to the console.
 
-4. Build the app and run it.
+1. Build the app and run it.
 
    ```dotnetcli
    dotnet run
@@ -135,7 +135,7 @@ The following steps simplify the approach to fetching the data and processing it
 
    The C# convention is to [capitalize the first letter of property names](../../standard/design-guidelines/capitalization-conventions.md).
 
-2. Use the <xref:System.Net.Http.Json.HttpClientJsonExtensions.GetFromJsonAsync%2A?displayProperty=nameWithType> method to fetch and convert JSON into C# objects. Replace the call to <xref:System.Net.Http.HttpClient.GetStringAsync(System.String)> in the `ProcessRepositoriesAsync` method with the following lines:
+1. Use the <xref:System.Net.Http.Json.HttpClientJsonExtensions.GetFromJsonAsync%2A?displayProperty=nameWithType> method to fetch and convert JSON into C# objects. Replace the call to <xref:System.Net.Http.HttpClient.GetStringAsync(System.String)> in the `ProcessRepositoriesAsync` method with the following lines:
 
     ```csharp
     var repositories = await client.GetFromJsonAsync<List<Repository>>("https://api.github.com/orgs/dotnet/repos");
@@ -147,7 +147,7 @@ The following steps simplify the approach to fetching the data and processing it
 
    The `GetFromJsonAsync` method is [*generic*](../fundamentals/types/generics.md), which means you supply type arguments for what kind of objects should be created from the fetched JSON text. In this example, you're deserializing to a `List<Repository>`, which is another generic object, a <xref:System.Collections.Generic.List%601?displayProperty=nameWithType>. The `List<T>` class stores a collection of objects. The type argument declares the type of objects stored in the `List<T>`. The type argument is your `Repository` record, because the JSON text represents a collection of repository objects.
 
-3. Add code to display the name of each repository. Replace the lines that read:
+1. Add code to display the name of each repository. Replace the lines that read:
 
     ```csharp
     Console.Write(json);
@@ -160,14 +160,14 @@ The following steps simplify the approach to fetching the data and processing it
         Console.WriteLine(repo.Name);
     ```
 
-4. The following `using` directives should be present at the top of the file:
+1. The following `using` directives should be present at the top of the file:
 
     ```csharp
     using System.Net.Http.Headers;
     using System.Net.Http.Json;
     ```
 
-5. Run the app.
+1. Run the app.
 
    ```dotnetcli
    dotnet run
@@ -185,7 +185,7 @@ The `ProcessRepositoriesAsync` method can do the async work and return a collect
    static async Task<List<Repository>> ProcessRepositoriesAsync(HttpClient client)
    ```
 
-2. Return the repositories after processing the JSON response:
+1. Return the repositories after processing the JSON response:
 
     ```csharp
     var repositories = await client.GetFromJsonAsync<List<Repository>>("https://api.github.com/orgs/dotnet/repos");
@@ -194,7 +194,7 @@ The `ProcessRepositoriesAsync` method can do the async work and return a collect
 
    The compiler generates the `Task<T>` object for the return value because you've marked this method as `async`.
 
-3. Modify the *Program.cs* file, replacing the call to `ProcessRepositoriesAsync` with the following to capture the results and write each repository name to the console.
+1. Modify the *Program.cs* file, replacing the call to `ProcessRepositoriesAsync` with the following to capture the results and write each repository name to the console.
 
     ```csharp
     var repositories = await ProcessRepositoriesAsync(client);
@@ -203,7 +203,7 @@ The `ProcessRepositoriesAsync` method can do the async work and return a collect
         Console.WriteLine(repo.Name);
     ```
 
-4. Run the app.
+1. Run the app.
 
    The output is the same.
 
@@ -226,7 +226,7 @@ The following steps add code to process more of the properties in the received J
 
    The <xref:System.Uri> and `int` types have built-in functionality to convert to and from string representation. No extra code is needed to deserialize from JSON string format to those target types. If the JSON packet contains data that doesn't convert to a target type, the serialization action throws an exception.
 
-2. Update the `foreach` loop in the *Program.cs* file to display the property values:
+1. Update the `foreach` loop in the *Program.cs* file to display the property values:
 
     ```csharp
     foreach (var repo in repositories)
@@ -240,7 +240,7 @@ The following steps add code to process more of the properties in the received J
     }
     ```
 
-3. Run the app.
+1. Run the app.
 
    The list now includes the additional properties.
 
@@ -262,18 +262,18 @@ To get a date and time represented in your time zone, you have to write a custom
 
    The `LastPush` property is defined using an *expression-bodied member* for the `get` accessor. There's no `set` accessor. Omitting the `set` accessor is one way to define a *read-only* property in C#. (Yes, you can create *write-only* properties in C#, but their value is limited.)
 
-2. Add another output statement in *Program.cs*:
+1. Add another output statement in *Program.cs*:
 again:
 
    ```csharp
    Console.WriteLine($"Last push: {repo.LastPush}");
    ```
 
-3. The complete app should resemble the following *Program.cs* file:
+1. The complete app should resemble the following *Program.cs* file:
 
     :::code source="snippets/WebAPIClient/Program.cs":::
 
-4. Run the app.
+1. Run the app.
 
    The output includes the date and time of the last push to each repository.
 

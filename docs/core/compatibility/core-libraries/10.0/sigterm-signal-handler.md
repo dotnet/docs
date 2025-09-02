@@ -45,7 +45,7 @@ static void Main()
             PosixSignal.SIGTERM,
             (_) => Environment.Exit(0));
 
-    using var termSignalRegistration =
+    using var sigHupSignalRegistration =
         PosixSignalRegistration.Create(
             PosixSignal.SIGHUP,
             (_) => Environment.Exit(0));

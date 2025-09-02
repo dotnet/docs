@@ -29,7 +29,7 @@ This change is a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 
-<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> serialization is obsolete in .NET 8 and later versions. Any use of <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> is deamed unsecure and throws an exception at run time. Since MSBuild custom derived build events use <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>, your build would crash if you use these events in your build. The new build error provides a more graceful failure.
+<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> serialization is obsolete in .NET 8 and later versions. Any use of <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> is deemed insecure and throws an exception at run time. Since MSBuild custom derived build events use <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>, your build would crash if you used these events in your build. The new build error provides a more graceful failure.
 
 ## Recommended action
 

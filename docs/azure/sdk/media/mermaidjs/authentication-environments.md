@@ -18,7 +18,7 @@ flowchart LR
     NetApp --> Q1
     
     %% Local Development Machine Branch
-    Q1 --> LocalDev[Development Machine]
+    Q1 --> LocalDev[Development machine]
     LocalDev --> AppSP["**Service principal**"]
     LocalDev --> DevAccount["**Developer account**"]
     LocalDev --> Broker["**Broker**"]

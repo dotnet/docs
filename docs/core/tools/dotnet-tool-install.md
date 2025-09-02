@@ -100,7 +100,7 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 
 - **`--allow-roll-forward`**
 
-  Allow tool to use a newer version of the .NET runtime if the runtime it targets isn't installed.
+  Available starting with .NET 9.0 SDK. Allow tool to use a newer version of the .NET runtime if the runtime it targets isn't installed.
 
 - **`-a|--arch <ARCHITECTURE>`**
 
@@ -206,6 +206,10 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 - **`dotnet tool install -g dotnetsay --verbosity minimal`**
 
   Installs [dotnetsay](https://www.nuget.org/packages/dotnetsay/) as a global tool with the verbosity of minimal. The default verbosity for global tool is quiet.
+
+- **`dotnet tool install -g dotnetsay --allow-roll-forward`**
+
+  Installs [dotnetsay](https://www.nuget.org/packages/dotnetsay/) as a global tool and allows it to run on newer .NET versions if the target runtime isn't available.
 
 ## See also
 

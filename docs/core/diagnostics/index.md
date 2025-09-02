@@ -5,9 +5,9 @@ ms.date: 10/20/2023
 ms.topic: overview
 #Customer intent: As a .NET Core developer I want to find the best tools to help me diagnose problems so that I can be productive.
 ---
-# Diagnostics in .NET Core
+# Diagnostics in .NET
 
-Software doesn't always behave as you would expect, but .NET Core has tools and APIs that will help you diagnose these issues quickly and effectively.
+Software doesn't always behave as you would expect, but .NET has tools and APIs that will help you diagnose these issues quickly and effectively.
 
 [Native AOT deployment](../../core/deploying/native-aot/index.md) is an application model that's been available since .NET 7. For information about .NET 8 diagnostic support for Native AOT apps, see [Native AOT diagnostics](../../core/deploying/native-aot/diagnostics.md).
 
@@ -90,4 +90,4 @@ If debugging or observability is not sufficient, .NET supports additional diagno
 
 ### Write your own diagnostic tool
 
-[The diagnostics client library](diagnostics-client-library.md) lets you write your own custom diagnostic tool best suited for your diagnostic scenario. Look up information in the [Microsoft.Diagnostics.NETCore.Client API reference](microsoft-diagnostics-netcore-client.md).
+[The diagnostics client library](diagnostics-client-library.md) lets you write your own custom diagnostic tool best suited for your diagnostic scenario. For more information, see the [Microsoft.Diagnostics.NETCore.Client API reference](microsoft-diagnostics-netcore-client.md).

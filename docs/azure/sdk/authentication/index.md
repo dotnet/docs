@@ -76,6 +76,13 @@ A service principal is created in a Microsoft Entra tenant to represent an app a
 > [!div class="nextstepaction"]
 > [Authenticate locally using a service principal](local-development-service-principal.md)
 
+#### Use a broker
+
+Brokered authentication collects user credentials using the system authentication broker to authenticate an app. A system authentication broker runs on a user's machine and manages the authentication handshakes and token maintenance for all connected accounts.
+
+> [!div class="nextstepaction"]
+> [Authenticate locally using a broker](local-broker-authentication.md)
+
 ## Authentication for apps hosted on-premises
 
 For apps hosted on-premises, you can use a service principal to authenticate to Azure resources. This involves creating a service principal in Microsoft Entra ID, assigning it the necessary permissions, and configuring your app to use its credentials. This method allows your on-premises app to securely access Azure services.

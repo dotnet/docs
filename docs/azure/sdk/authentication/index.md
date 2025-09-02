@@ -81,7 +81,7 @@ A service principal is created in a Microsoft Entra tenant to represent an app a
 Brokered authentication collects user credentials using the system authentication broker to authenticate an app. A system authentication broker runs on a user's machine and manages the authentication handshakes and token maintenance for all connected accounts.
 
 > [!div class="nextstepaction"]
-> [Authenticate locally using a broker](local-broker-authentication.md)
+> [Authenticate locally using a broker](local-development-broker.md)
 
 ## Authentication for apps hosted on-premises
 

@@ -4,6 +4,12 @@ ms.date: 08/07/2024
 ---
 
 ```mermaid
+%% STEPS TO GENERATE IMAGE 
+%% ======================= 
+%% 1. Install mermaid CLI v10.9.1 (see https://github.com/mermaid-js/mermaid-cli/blob/master/README.md): 
+%%    npm i -g @mermaid-js/mermaid-cli@10.9.1 
+%% 2. Run command: mmdc -i local-broker-authentication.md -o ../../media/mermaidjs/local-broker-authentication.svg 
+
 flowchart LR
     APP["Local .NET app"]
     BK["Developer account credentials supplied by broker"]

@@ -45,6 +45,7 @@ static void Main()
             PosixSignal.SIGTERM,
             (_) => Environment.Exit(0));
 
+    // Replicates the previous behavior on Windows
     using var sigHupSignalRegistration =
         PosixSignalRegistration.Create(
             PosixSignal.SIGHUP,

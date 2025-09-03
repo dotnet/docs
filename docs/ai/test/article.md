@@ -41,6 +41,10 @@ From ASPX file (without angle brackets):
 :::code language="csharp" source="snippets/asp-cs.aspx" id="Snippet3":::
 :::code language="vb" source="snippets/asp-vb.aspx" id="Snippet3":::
 
+From ASPX file (with language="aspx"):
+
+:::code language="aspx" source="snippets/asp-cs.aspx" id="Snippet3":::
+
 ## Legacy snippet syntax
 
 With prefix:

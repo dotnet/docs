@@ -32,85 +32,60 @@ The tutorial uses:
 
 ## CPU counters
 
-Before attempting this tutorial, please install the latest version of dotnet-counters:
-
-  ```dotnetcli
-  dotnet tool install --global dotnet-counters
-  ```
-
-If your app is running a version of .NET older than .NET 9, the output UI of dotnet-counters will look slightly different; see [dotnet-counters](dotnet-counters.md) for details.
-
 Before attempting to collect diagnostics data, you need to observe a high CPU condition. Run the [sample application](/samples/dotnet/samples/diagnostic-scenarios) using the following command from the project root directory.
 
 ```dotnetcli
 dotnet run
 ```
 
-To check the current CPU usage, use the [dotnet-counters](dotnet-counters.md) tool command:
+To find the process ID, use the following command:
 
 ```dotnetcli
-dotnet-counters monitor -n DiagnosticScenarios --showDeltas
+dotnet-trace ps
 ```
 
-The output should be similar to the following:
+Take note of the process ID from your command output. Our process ID was `22884`, but yours will be different. To check the current CPU usage, use the [dotnet-counters](dotnet-counters.md) tool command:
+
+```dotnetcli
+dotnet-counters monitor --refresh-interval 1 -p 22884
+```
+
+The `refresh-interval` is the number of seconds between the counter polling CPU values. The output should be similar to the following:
 
 ```console
 Press p to pause, r to resume, q to quit.
     Status: Running
 
-Name                                                            Current Value      Last Delta
 [System.Runtime]
-    dotnet.assembly.count ({assembly})                               111               0
-    dotnet.gc.collections ({collection})
-        gc.heap.generation
-        ------------------
-        gen0                                                           8               0
-        gen1                                                           1               0
-        gen2                                                           0               0
-    dotnet.gc.heap.total_allocated (By)                        4,042,656          24,512
-    dotnet.gc.last_collection.heap.fragmentation.size (By)
-        gc.heap.generation
-        ------------------
-        gen0                                                     801,728               0
-        gen1                                                       6,048               0
-        gen2                                                           0               0
-        loh                                                            0               0
-        poh                                                            0               0
-    dotnet.gc.last_collection.heap.size (By)
-        gc.heap.generation
-        ------------------
-        gen0                                                     811,512               0
-        gen1                                                     562,024               0
-        gen2                                                   1,095,056               0
-        loh                                                       98,384               0
-        poh                                                       24,528               0
-    dotnet.gc.last_collection.memory.committed_size (By)       5,623,808               0
-    dotnet.gc.pause.time (s)                                           0.019           0
-    dotnet.jit.compilation.time (s)                                    0.582           0
-    dotnet.jit.compiled_il.size (By)                             138,895               0
-    dotnet.jit.compiled_methods ({method})                         1,470               0
-    dotnet.monitor.lock_contentions ({contention})                     4               0
-    dotnet.process.cpu.count ({cpu})                                  22               0
-    dotnet.process.cpu.time (s)
-        cpu.mode
-        --------
-        system                                                         0.109           0
-        user                                                           0.453           0
-    dotnet.process.memory.working_set (By)                    65,515,520               0
-    dotnet.thread_pool.queue.length ({work_item})                      0               0
-    dotnet.thread_pool.thread.count ({thread})                         0               0
-    dotnet.thread_pool.work_item.count ({work_item})                   6               0
-    dotnet.timer.count ({timer})                                       0               0
+    % Time in GC since last GC (%)                         0
+    Allocation Rate / 1 sec (B)                            0
+    CPU Usage (%)                                          0
+    Exception Count / 1 sec                                0
+    GC Heap Size (MB)                                      4
+    Gen 0 GC Count / 60 sec                                0
+    Gen 0 Size (B)                                         0
+    Gen 1 GC Count / 60 sec                                0
+    Gen 1 Size (B)                                         0
+    Gen 2 GC Count / 60 sec                                0
+    Gen 2 Size (B)                                         0
+    LOH Size (B)                                           0
+    Monitor Lock Contention Count / 1 sec                  0
+    Number of Active Timers                                1
+    Number of Assemblies Loaded                          140
+    ThreadPool Completed Work Item Count / 1 sec           3
+    ThreadPool Queue Length                                0
+    ThreadPool Thread Count                                7
+    Working Set (MB)                                      63
 ```
 
-Focusing in on the ```Last Delta``` values of ```dotnet.process.cpu.time```, these tell us how many seconds within the refresh period (currently set to the default of 1 s) the CPU has been active. With the web app running, immediately after startup, the CPU isn't being consumed at all and these deltas are both `0`. Navigate to the `api/diagscenario/highcpu` route with `60000` as the route parameter:
+With the web app running, immediately after startup, the CPU isn't being consumed at all and is reported at `0%`. Navigate to the `api/diagscenario/highcpu` route with `60000` as the route parameter:
 
 `https://localhost:5001/api/diagscenario/highcpu/60000`
 
-Now, rerun the [dotnet-counters](dotnet-counters.md) command.
+Now, rerun the [dotnet-counters](dotnet-counters.md) command. If interested in monitoring just the `cpu-usage` counter, add '--counters System.Runtime[cpu-usage]` to the previous command. We are unsure if the CPU is being consumed, so we will monitor the same list of counters as above to verify counter values are within expected range for our application.
 
 ```dotnetcli
-dotnet-counters monitor -n DiagnosticScenarios --showDeltas
+dotnet-counters monitor -p 22884 --refresh-interval 1
 ```
 
 You should see an increase in CPU usage as shown below (depending on the host machine, expect varying CPU usage):
@@ -119,52 +94,29 @@ You should see an increase in CPU usage as shown below (depending on the host ma
 Press p to pause, r to resume, q to quit.
     Status: Running
 
-Name                                                            Current Value      Last Delta
 [System.Runtime]
-    dotnet.assembly.count ({assembly})                               111               0
-    dotnet.gc.collections ({collection})
-        gc.heap.generation
-        ------------------
-        gen0                                                           8               0
-        gen1                                                           1               0
-        gen2                                                           0               0
-    dotnet.gc.heap.total_allocated (By)                        4,042,656          24,512
-    dotnet.gc.last_collection.heap.fragmentation.size (By)
-        gc.heap.generation
-        ------------------
-        gen0                                                     801,728               0
-        gen1                                                       6,048               0
-        gen2                                                           0               0
-        loh                                                            0               0
-        poh                                                            0               0
-    dotnet.gc.last_collection.heap.size (By)
-        gc.heap.generation
-        ------------------
-        gen0                                                     811,512               0
-        gen1                                                     562,024               0
-        gen2                                                   1,095,056               0
-        loh                                                       98,384               0
-        poh                                                       24,528               0
-    dotnet.gc.last_collection.memory.committed_size (By)       5,623,808               0
-    dotnet.gc.pause.time (s)                                           0.019           0
-    dotnet.jit.compilation.time (s)                                    0.582           0
-    dotnet.jit.compiled_il.size (By)                             138,895               0
-    dotnet.jit.compiled_methods ({method})                         1,470               0
-    dotnet.monitor.lock_contentions ({contention})                     4               0
-    dotnet.process.cpu.count ({cpu})                                  22               0
-    dotnet.process.cpu.time (s)
-        cpu.mode
-        --------
-        system                                                         0.344           0.013
-        user                                                          14.203           0.963
-    dotnet.process.memory.working_set (By)                    65,515,520               0
-    dotnet.thread_pool.queue.length ({work_item})                      0               0
-    dotnet.thread_pool.thread.count ({thread})                         0               0
-    dotnet.thread_pool.work_item.count ({work_item})                   6               0
-    dotnet.timer.count ({timer})                                       0               0
+    % Time in GC since last GC (%)                         0
+    Allocation Rate / 1 sec (B)                            0
+    CPU Usage (%)                                         25
+    Exception Count / 1 sec                                0
+    GC Heap Size (MB)                                      4
+    Gen 0 GC Count / 60 sec                                0
+    Gen 0 Size (B)                                         0
+    Gen 1 GC Count / 60 sec                                0
+    Gen 1 Size (B)                                         0
+    Gen 2 GC Count / 60 sec                                0
+    Gen 2 Size (B)                                         0
+    LOH Size (B)                                           0
+    Monitor Lock Contention Count / 1 sec                  0
+    Number of Active Timers                                1
+    Number of Assemblies Loaded                          140
+    ThreadPool Completed Work Item Count / 1 sec           3
+    ThreadPool Queue Length                                0
+    ThreadPool Thread Count                                7
+    Working Set (MB)                                      63
 ```
 
-Throughout the duration of the request, the CPU usage will hover around the increased value.
+Throughout the duration of the request, the CPU usage will hover around the increased percentage.
 
 > [!TIP]
 > To visualize an even higher CPU usage, you can exercise this endpoint in multiple browser tabs simultaneously.

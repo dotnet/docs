@@ -20,12 +20,6 @@
 
         ' <Snippet3>
     Dim sb2 As New StringBuilder()
-    Dim pathstring1 As String = Context.Request.CurrentExecutionFilePath.ToString()
-        sb2.Append("Current Executing File Path = " & pathstring1.ToString() & "<br />")
-        sb2.Append("Is Absolute = " & VirtualPathUtility.IsAbsolute(pathstring1).ToString() & "<br />")
-        sb2.Append("Is AppRelative = " & VirtualPathUtility.IsAppRelative(pathstring1).ToString() & "<br />")
-        sb2.Append("Make AppRelative = " & VirtualPathUtility.ToAppRelative(pathstring1).ToString() & "<br />")
-        Response.Write(sb2.ToString())
         ' </Snippet3>
 
   End Sub

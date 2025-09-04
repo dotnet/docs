@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: -pathmap"
 title: "-pathmap"
-ms.date: 08/29/2025
+ms.date: 09/04/2025
 f1_keywords: 
   - "pathmap"
   - "-pathmap"
@@ -23,7 +23,7 @@ Specifies how to map physical paths to source path names output by the compiler.
 
 ## Arguments
 
-| Term              | Definition                                                           |
+| Term              | Definition                                                                                                |
 |----------------|-----------------------------------------------------------------------------|
 | `path1`           | Required. The full path to the source files in the current environment. |
 | `sourcePath1` | Required. The source path substituted for `path1` in any output files.  |

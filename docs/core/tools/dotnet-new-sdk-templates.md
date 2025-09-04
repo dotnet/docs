@@ -3,9 +3,9 @@ title: .NET default templates for dotnet new
 description: The information about dotnet new templates shipped with dotnet SDK.
 ms.custom: updateeachrelease
 no-loc: [Blazor, WebAssembly]
-ms.date: 08/29/2024
+ms.date: 08/29/2025
 ---
-# .NET default templates for dotnet new
+# Default templates for `dotnet new`
 
 When you install the [.NET SDK](https://dotnet.microsoft.com/download), you receive over a dozen built-in templates for creating projects and files, including console apps, class libraries, unit test projects, ASP.NET Core apps (including [Angular](https://angular.io/) and [React](https://reactjs.org/) projects), and configuration files. To list the built-in templates, run the `dotnet new list` command:
 
@@ -19,7 +19,7 @@ dotnet new list
 
 Each template may have additional options available. To show the additional options available for the template use the `--help` option with the template name argument, for example: `dotnet new console --help`.
 In case the template supports multiple languages, this command will show help for the template in the default language. By combining it with the `--language` option, you can see the help for other languages: `dotnet new console --help --language F#`.
-The templates that ship with the .NET SDK have the following additional options:
+The templates that ship with the .NET SDK have additional options that are described in the following sections.
 
 ## `buildprops`
 
@@ -930,7 +930,7 @@ API Controller with or without read/write actions.
 Creates an empty solution file containing no projects.
 
 > [!NOTE]
-> In .NET SDK 9.0.200 and later, this template supports a `--format` option to choose between `sln` and `slnx` formats. Starting with .NET 10, the default format will be `slnx`.
+> In .NET SDK 9.0.200 and later, this template supports a `--format` option to choose between `sln` and `slnx` formats. Starting with .NET 10, the default format is `slnx`.
 
 ***
 

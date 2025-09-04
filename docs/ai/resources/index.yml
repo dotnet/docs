@@ -1,0 +1,91 @@
+### YamlMime:Landing
+
+title: AI resources for .NET developers
+summary: Find links to non-Learn resources such as samples, workshops, and reference docs.
+
+metadata:
+  title: AI resources for .NET developers
+  description: Links to resources such as samples, workshops, and reference docs.
+  ms.topic: landing-page
+  ms.service: dotnet
+  ms.date: 09/04/2025
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | tutorial | overview | quickstart | reference | sample | training | tutorial | video | whats-new
+
+landingContent:
+  # Cards and links should be based on top customer tasks or top subjects
+  # Start card title with a verb
+
+  # Card
+  - title: Get started with AI in .NET
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: Generative AI for beginners
+            url: https://github.com/microsoft/Generative-AI-for-beginners-dotnet
+          - text: AI workshop
+            url: https://github.com/dotnet-presentations/ai-workshop
+          - text: Steve Sanderson's AI workshop
+            url: https://github.com/SteveSandersonMS/dotnet-ai-workshop
+      - linkListType: sample
+        links:
+          - text: AI samples for .NET
+            url: https://github.com/dotnet/ai-samples
+
+  # Card
+  - title: Azure AI
+    linkLists:
+      - linkListType: sample
+        links:
+          - text: Azure AI samples hub
+            url: https://github.com/Azure-Samples/azureai-samples
+          - text: Azure AI content understanding
+            url: https://github.com/Azure-Samples/azure-ai-content-understanding-dotnet
+          - text: Azure OpenAI samples
+            url: ../azure-ai-for-dotnet-developers.md#samples
+          - text: More Azure OpenAI samples
+            url: https://github.com/Azure-Samples/openai-dotnet-samples
+          - text: Samples for Azure AI services
+            url: ../azure-ai-for-dotnet-developers.md#samples-1
+      - linkListType: training
+        links:
+          - text: Workshops and training
+            url: ../azure-ai-for-dotnet-developers.md#training
+
+  # Card
+  - title: Model Context Protocol (MCP)
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: Get started with MCP
+            url: https://modelcontextprotocol.io/docs/getting-started/intro
+          - text: MCP for beginners
+            url: https://github.com/microsoft/mcp-for-beginners
+          - text: Create a minimal MCP server using C# and publish to NuGet
+            url: ../quickstarts/build-mcp-server.md
+      - linkListType: concept
+        links:
+          - text: Build Agents using MCP on Azure
+            url: /azure/developer/ai/intro-agents-mcp
+      - linkListType: tutorial
+        links:
+          - text: MCP workshop
+            url: https://github.com/Azure-Samples/mcp-workshop-dotnet
+      - linkListType: reference
+        links:
+          - text: MCP C# SDK docs
+            url: https://modelcontextprotocol.github.io/csharp-sdk/index.html
+          - text: MCP servers for VS Code
+            url: https://code.visualstudio.com/mcp
+          - text: MCP server reference
+            url: https://github.com/modelcontextprotocol/servers
+          - text: MCP inspector tool
+            url: https://github.com/modelcontextprotocol/inspector
+      - linkListType: video
+        links:
+          - text: Beginner's guide to building an MCP server with C# and .NET
+            url: https://youtu.be/MKD-sCZWpZQ?si=q7MPtBfCuAJXNwJN
+          - text: Build MCP servers with ASP.NET Core
+            url: https://www.youtube.com/live/x_6iUhdHnhc?si=J8QQuirYWk0JXC_V
+          - text: MCP Dev Days (Microsoft Reactor)
+            url: https://developer.microsoft.com/reactor/series/S-1563/

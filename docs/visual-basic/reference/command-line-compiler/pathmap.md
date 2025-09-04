@@ -23,7 +23,7 @@ Specifies how to map physical paths to source path names output by the compiler.
 
 ## Arguments
 
-| Term              | Definition                                                                                                |
+| Term              | Definition                                                           |
 |----------------|-----------------------------------------------------------------------------|
 | `path1`           | Required. The full path to the source files in the current environment. |
 | `sourcePath1` | Required. The source path substituted for `path1` in any output files.  |
@@ -31,7 +31,6 @@ Specifies how to map physical paths to source path names output by the compiler.
 ## Remarks
 
 > [!NOTE]
->
 > Specifying `-pathmap` prevents breakpoints from working in local debug builds. Only set `-pathmap` for production or continuous integration builds.
 
 The `-pathmap` compiler option specifies how to map physical paths to source path names output by the compiler. This option maps each physical path on the machine where the compiler runs to a corresponding path that should be written in the output files.
@@ -44,7 +43,7 @@ The compiler writes the source path into its output for the following reasons:
 - The source path is embedded in a PDB file.
 - The path of the PDB file is embedded into a PE (portable executable) file.
 
-The `-pathmap` option is not available from within the Visual Studio development environment; it is available only when compiling from the command line.
+The `-pathmap` option is not available from within the Visual Studio development environment; it's available only when compiling from the command line.
 
 ## Example
 

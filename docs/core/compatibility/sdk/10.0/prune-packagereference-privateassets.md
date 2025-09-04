@@ -1,13 +1,13 @@
 ---
-title: "Breaking change - PrunePackageReference marks direct prunable references with PrivateAssets=all and IncludeAssets=none"
+title: "Breaking change - PrunePackageReference privatizes direct prunable references"
 description: "Learn about the breaking change in the .NET 10 SDK where PrunePackageReference automatically marks directly prunable PackageReference with PrivateAssets=all and IncludeAssets=none."
 ms.date: 09/04/2025
 ai-usage: ai-assisted
 ---
 
-# PrunePackageReference marks direct prunable references with PrivateAssets=all and IncludeAssets=none
+# PrunePackageReference privatizes direct prunable references"
 
-The [PrunePackageReference](/nuget/consume-packages/package-references-in-project-files#prunepackagereference) feature automatically removes *transitive* packages that are provided by the target platform. With this change, the feature also marks *directly* prunable `PackageReference` items with `PrivateAssets=all` and `IncludeAssets=none` attributes. These attributes prevent the packages from appearing in generated dependency lists for packages.
+The [PrunePackageReference](/nuget/consume-packages/package-references-in-project-files#prunepackagereference) feature automatically removes *transitive* packages that are provided by the target platform. This pruning feature is enabled by default for projects that target or multi-target .NET 10. Now, the feature also marks *directly* prunable `PackageReference` items with `PrivateAssets=all` and `IncludeAssets=none` attributes. These attributes prevent the packages from appearing in generated dependency lists for packages.
 
 ## Version introduced
 
@@ -15,7 +15,7 @@ The [PrunePackageReference](/nuget/consume-packages/package-references-in-projec
 
 ## Previous behavior
 
-In earlier .NET 10 previews, directly prunable `PackageReference` items might have generated an [`NU1510` warning](/nuget/reference/errors-and-warnings/nu1510) but still appeared in the generated *.nuspec* dependencies for all target frameworks, even those where the package is provided by the platform.
+Prior to .NET 10, all `PackageReference` items appeared in the generated *.nuspec* dependencies for all target frameworks, even those where the package is provided by the platform. Starting in .NET 10 Preview 1, if pruning was enabled, directly prunable `PackageReference` items might have generated an [`NU1510` warning](/nuget/reference/errors-and-warnings/nu1510) but still appeared in the dependencies list.
 
 For example, consider a multi-targeting project with the following configuration:
 
@@ -44,7 +44,7 @@ Such a project file generated a *.nuspec* file with dependencies for both target
 
 ## New behavior
 
-Starting in .NET 10 Preview 7, directly prunable `PackageReference` items are automatically marked with `PrivateAssets=all` and `IncludeAssets=none`, which excludes them from the generated dependencies for target frameworks where they're provided by the platform.
+Starting in .NET 10 Preview 7, if pruning is enabled, directly prunable `PackageReference` items are automatically marked with `PrivateAssets=all` and `IncludeAssets=none`, which excludes them from the generated dependencies for target frameworks where they're provided by the platform.
 
 The same project configuration now generates a *.nuspec* file with the prunable dependency removed from the target framework that provides it (.NET 9):
 
@@ -57,9 +57,6 @@ The same project configuration now generates a *.nuspec* file with the prunable 
   </group>
 </dependencies>
 ```
-
-> [!NOTE]
-> Another change was made in .NET 10 RC1 that narrows the scope of this breaking change somewhat. Now, prunable dependencies are removed only for projects with a `net10.0` target framework moniker (TFM).
 
 ## Type of breaking change
 

@@ -1,18 +1,18 @@
 ---
 title: "Breaking change - NU1510 is raised for direct references pruned by NuGet"
 description: "Learn about the breaking change in the .NET 10 SDK where NU1510 is raised for unnecessary direct package references."
-ms.date: 08/11/2025
+ms.date: 09/04/2025
 ai-usage: ai-assisted
 ms.custom: https://github.com/dotnet/docs/issues/45462
 ---
 
 # NU1510 is raised for direct references pruned by NuGet
 
-Starting in .NET 10, NuGet raises a [`NU1510` warning](/nuget/reference/errors-and-warnings/nu1510) when a project includes a direct package reference that overlaps with a framework-provided library and isn't required.
+Starting in the .NET 10 SDK, pruning is enabled by default for projects that target or multi-target .NET 10. When pruning is enabled, NuGet raises a [`NU1510` warning](/nuget/reference/errors-and-warnings/nu1510) when a project includes a direct package reference that overlaps with a framework-provided library and isn't required.
 
 ## Version introduced
 
-.NET 10 Preview 1
+.NET 10
 
 ## Previous behavior
 
@@ -20,10 +20,10 @@ Previously, the .NET SDK ignored the contents of a package if it overlapped with
 
 ## New behavior
 
-Starting in .NET 10, NuGet handles any unnecessary package references by raising a `NU1510` warning to notify you of the issue.
+Starting with the .NET 10 SDK, if pruning is enabled, NuGet notifies you of any unnecessary package references by raising a `NU1510` warning.
 
 > [!NOTE]
-> In a later .NET 10 preview, this behavior changed again such that direct prunable package references are automatically excluded from the `.nuspec` file. For more information, see [PrunePackageReference marks direct prunable references with PrivateAssets=all and IncludeAssets=none](prune-packagereference-privateassets.md).
+> In a later .NET 10 preview, a related change was made such that direct prunable package references are automatically excluded from the `.nuspec` file instead of raising `NU1510`. For more information, see [PrunePackageReference marks direct prunable references with PrivateAssets=all and IncludeAssets=none](prune-packagereference-privateassets.md).
 
 ## Type of breaking change
 

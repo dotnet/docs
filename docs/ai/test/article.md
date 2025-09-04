@@ -45,6 +45,11 @@ From ASPX file (with language="aspx"):
 
 :::code language="aspx" source="snippets/asp-cs.aspx" id="Snippet3":::
 
+From ASPX file (with language="aspx-cs" or language="aspx-vb"):
+
+:::code language="aspx-cs" source="snippets/asp-cs.aspx" id="Snippet3":::
+:::code language="aspx-vb" source="snippets/asp-vb.aspx" id="Snippet3":::
+
 ## Legacy snippet syntax
 
 With prefix:

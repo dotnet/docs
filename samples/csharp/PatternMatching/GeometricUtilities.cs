@@ -7,9 +7,17 @@ using System.Threading.Tasks;
 
 namespace PatternMatching
 {
+    /// <summary>
+    /// Provides utilities for geometric calculations.
+    /// </summary>
     public static class GeometricUtilities
     {
         #region 04_ClassicSwitch
+        /// <summary>
+        /// Generates a message based on the number of parts provided.
+        /// </summary>
+        /// <param name="parts">The parts to include in the message.</param>
+        /// <returns>A message based on the number of parts.</returns>
         public static string GenerateMessage(params string[] parts)
         {
             switch (parts.Length)
@@ -27,6 +35,11 @@ namespace PatternMatching
         #endregion
 
         #region 02_ClassicIsExpression
+        /// <summary>
+        /// Computes the area of a shape.
+        /// </summary>
+        /// <param name="shape">The shape to compute the area of.</param>
+        /// <returns>The area of the shape.</returns>
         public static double ComputeArea(object shape)
         {
             if (shape is Square)
@@ -46,6 +59,11 @@ namespace PatternMatching
         #endregion
 
         #region 03_IsPatternExpression
+        /// <summary>
+        /// Computes the area of a shape using modern C# `is` pattern matching.
+        /// </summary>
+        /// <param name="shape">The shape to compute the area of.</param>
+        /// <returns>The area of the shape.</returns>
         public static double ComputeAreaModernIs(object shape)
         {
             if (shape is Square s)
@@ -62,6 +80,11 @@ namespace PatternMatching
         #endregion
 
         #region 05_SwitchTypePattern
+        /// <summary>
+        /// Computes the area of a shape using modern C# `switch` pattern matching.
+        /// </summary>
+        /// <param name="shape">The shape to compute the area of.</param>
+        /// <returns>The area of the shape.</returns>
         public static double ComputeAreaModernSwitch(object shape)
         {
             switch (shape)
@@ -82,6 +105,11 @@ namespace PatternMatching
 
 
         #region 07_ComputeDegenerateShapes
+        /// <summary>
+        /// Computes the area of a shape, handling degenerate shapes.
+        /// </summary>
+        /// <param name="shape">The shape to compute the area of.</param>
+        /// <returns>The area of the shape.</returns>
         public static double ComputeArea_Version3(object shape)
         {
             switch (shape)
@@ -103,6 +131,11 @@ namespace PatternMatching
         #endregion
 
         #region 09_AddRectangleAndTriangle
+        /// <summary>
+        /// Computes the area of a shape, including rectangles and triangles.
+        /// </summary>
+        /// <param name="shape">The shape to compute the area of.</param>
+        /// <returns>The area of the shape.</returns>
         public static double ComputeArea_Version4(object shape)
         {
             switch (shape)
@@ -130,6 +163,11 @@ namespace PatternMatching
         #endregion
 
         #region 10_NullCase
+        /// <summary>
+        /// Computes the area of a shape, handling null input.
+        /// </summary>
+        /// <param name="shape">The shape to compute the area of.</param>
+        /// <returns>The area of the shape.</returns>
         public static double ComputeArea_Version5(object shape)
         {
             switch (shape)

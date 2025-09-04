@@ -3,14 +3,26 @@ using System.Linq.Expressions;
 
 namespace ExpressionVisitor
 {
+    /// <summary>
+    /// A visitor for block expressions.
+    /// </summary>
     public class BlockVisitor : Visitor
     {
         private readonly BlockExpression node;
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="BlockVisitor"/> class.
+        /// </summary>
+        /// <param name="node">The block expression to visit.</param>
         public BlockVisitor(BlockExpression node) : base(node)
         {
             this.node = node;
         }
 
+        /// <summary>
+        /// Visits the block expression.
+        /// </summary>
+        /// <param name="prefix">The prefix to use for the output.</param>
         public override void Visit(string prefix)
         {
             Console.WriteLine($"{prefix}This expression is a {NodeType} expression");

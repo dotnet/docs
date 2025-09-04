@@ -3,18 +3,38 @@ using System.Linq.Expressions;
 
 namespace ExpressionVisitor
 {
+    /// <summary>
+    /// The base class for all expression tree visitors.
+    /// </summary>
     public abstract class Visitor
     {
         private readonly Expression node;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Visitor"/> class.
+        /// </summary>
+        /// <param name="node">The expression to visit.</param>
         protected Visitor(Expression node)
         {
             this.node = node;
         }
 
+        /// <summary>
+        /// Visits the expression.
+        /// </summary>
+        /// <param name="prefix">The prefix to use for the output.</param>
         public abstract void Visit(string prefix);
 
+        /// <summary>
+        /// Gets the node type of the expression.
+        /// </summary>
         public ExpressionType NodeType => this.node.NodeType;
+
+        /// <summary>
+        /// Creates a visitor for the specified expression.
+        /// </summary>
+        /// <param name="node">The expression to create a visitor for.</param>
+        /// <returns>A visitor for the specified expression.</returns>
         public static Visitor CreateFromExpression(Expression node)
         {
             switch(node.NodeType)

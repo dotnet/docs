@@ -7,8 +7,15 @@ using System.Threading.Tasks;
 
 namespace PatternMatching
 {
+    /// <summary>
+    /// The main program class.
+    /// </summary>
     class Program
     {
+        /// <summary>
+        /// The main entry point for the application.
+        /// </summary>
+        /// <param name="args">The command-line arguments.</param>
         static void Main(string[] args)
         {
             var s = new Square(4);

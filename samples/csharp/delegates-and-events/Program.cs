@@ -2,13 +2,24 @@
 
 namespace DelegatesAndEvents
 {
+    /// <summary>
+    /// The main program class.
+    /// </summary>
     public class Program
     {
+        /// <summary>
+        /// Logs a message to the console.
+        /// </summary>
+        /// <param name="message">The message to log.</param>
         public static void LogToConsole(string message)
         {
             Console.Error.WriteLine(message);
         }
 
+        /// <summary>
+        /// The main entry point for the application.
+        /// </summary>
+        /// <param name="args">The command-line arguments.</param>
         public static void Main(string[] args)
         {
             Logger.WriteMessage += LogToConsole;

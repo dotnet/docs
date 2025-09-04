@@ -3,14 +3,26 @@ using System.Linq.Expressions;
 
 namespace ExpressionVisitor
 {
+    /// <summary>
+    /// A visitor for lambda expressions.
+    /// </summary>
     public class LambdaVisitor : Visitor
     {
         private readonly LambdaExpression node;
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="LambdaVisitor"/> class.
+        /// </summary>
+        /// <param name="node">The lambda expression to visit.</param>
         public LambdaVisitor(LambdaExpression node) : base(node)
         {
             this.node = node;
         }
 
+        /// <summary>
+        /// Visits the lambda expression.
+        /// </summary>
+        /// <param name="prefix">The prefix to use for the output.</param>
         public override void Visit(string prefix)
         {
             Console.WriteLine($"{prefix}This expression is a {NodeType} expression type");

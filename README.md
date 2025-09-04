@@ -1,15 +1,34 @@
 # .NET Docs
 
-This repo contains work-in-progress documentation for .NET. To contribute, see the [Contributing Guide](CONTRIBUTING.md) and the [issues list](https://github.com/dotnet/docs/issues). 
+This repository contains the source for the official .NET documentation, which is published to [docs.microsoft.com/dotnet](https://docs.microsoft.com/dotnet). It also includes a collection of samples that demonstrate various .NET features.
 
-We welcome contributions to help us improve and complete the .NET docs. Feel free to copy/paste documentation from [.NET Framework docs](https://msdn.microsoft.com/library/w0x726c2.aspx) as a starting point for .NET docs. We anticipate that [Xamarin](http://developer.xamarin.com/api/root/classlib/), [Mono](http://docs.go-mono.com/?link=root%3a%2fclasslib) and [Unity](http://docs.unity3d.com/Manual/index.html) will also use this documentation.
+## Repository Structure
 
-This project has adopted the code of conduct defined by the Contributor Covenant
-to clarify expected behavior in our community.
-For more information, see the [.NET Foundation Code of Conduct](https://dotnetfoundation.org/code-of-conduct).
+The repository is organized as follows:
 
-Samples Build Status
-===
+*   `docs/`: Contains the Markdown files that are published as .NET documentation.
+*   `samples/`: Contains a collection of sample projects that demonstrate various .NET features.
+*   `xml/`: Contains XML files that are used to generate API documentation.
+*   `styleguide/`: Contains the style guide for writing .NET documentation.
+
+## How to Use the Samples
+
+The samples in this repository are organized by language and platform. To run a sample, you will need to have the .NET SDK installed. You can download it from the [.NET website](https://dotnet.microsoft.com/download).
+
+To run a sample, navigate to the sample's directory and use the `dotnet` command-line interface (CLI) to build and run the project. For example, to run the `PatternMatching` sample, you would use the following commands:
+
+```bash
+cd samples/csharp/PatternMatching
+dotnet run
+```
+
+## Contributing
+
+We welcome contributions to help us improve and complete the .NET docs. To contribute, see the [Contributing Guide](CONTRIBUTING.md) and the [issues list](https://github.com/dotnet/docs/issues).
+
+This project has adopted the code of conduct defined by the Contributor Covenant to clarify expected behavior in our community. For more information, see the [.NET Foundation Code of Conduct](https://dotnetfoundation.org/code-of-conduct).
+
+## Samples Build Status
 
 | Samples | Ubuntu 16.04<br/>_.NET Core 1.1.0_ | Ubuntu 16.04<br/>_.NET Core 2.0.0-preview_  |
 | ------------- |------------| -----|

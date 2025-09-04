@@ -3,14 +3,26 @@ using System.Linq.Expressions;
 
 namespace ExpressionVisitor
 {
+    /// <summary>
+    /// A visitor for method call expressions.
+    /// </summary>
     public class MethodCallVisitor : Visitor
     {
         private readonly MethodCallExpression node;
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="MethodCallVisitor"/> class.
+        /// </summary>
+        /// <param name="node">The method call expression to visit.</param>
         public MethodCallVisitor(MethodCallExpression node) : base(node)
         {
             this.node = node;
         }
 
+        /// <summary>
+        /// Visits the method call expression.
+        /// </summary>
+        /// <param name="prefix">The prefix to use for the output.</param>
         public override void Visit(string prefix)
         {
             Console.WriteLine($"{prefix}This expression is a {NodeType} expression");

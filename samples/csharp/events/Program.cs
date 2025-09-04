@@ -8,8 +8,15 @@ using System.Threading.Tasks;
 
 namespace EventSampleCode
 {
+    /// <summary>
+    /// The main program class.
+    /// </summary>
     class Program
     {
+        /// <summary>
+        /// The main entry point for the application.
+        /// </summary>
+        /// <param name="args">The command-line arguments.</param>
         static void Main(string[] args)
         {
             var lister = new FileSearcher();
@@ -36,23 +43,54 @@ namespace EventSampleCode
         }
     }
 
+    /// <summary>
+    /// Provides data for the <see cref="FileSearcher.FileFound"/> event.
+    /// </summary>
     public class FileFoundArgs : EventArgs
     {
+        /// <summary>
+        /// The name of the found file.
+        /// </summary>
         public string FoundFile { get; }
+        /// <summary>
+        /// Gets or sets a value indicating whether the search should be canceled.
+        /// </summary>
         public bool CancelRequested { get; set;}
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="FileFoundArgs"/> class.
+        /// </summary>
+        /// <param name="fileName">The name of the found file.</param>
         public FileFoundArgs(string fileName)
         {
             FoundFile = fileName;
         }
     }
 
+    /// <summary>
+    /// Provides data for the <see cref="FileSearcher.DirectoryChanged"/> event.
+    /// </summary>
     internal struct SearchDirectoryArgs 
     {
+        /// <summary>
+        /// The current directory being searched.
+        /// </summary>
         internal string CurrentSearchDirectory { get; }
+        /// <summary>
+        /// The total number of directories to search.
+        /// </summary>
         internal int TotalDirs { get; }
+        /// <summary>
+        /// The number of directories that have been searched.
+        /// </summary>
         internal int CompletedDirs { get; }
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="SearchDirectoryArgs"/> struct.
+        /// </summary>
+        /// <param name="dir">The current directory being searched.</param>
+        /// <param name="totalDirs">The total number of directories to search.</param>
+        /// <param name="completedDirs">The number of directories that have been searched.</param>
         internal SearchDirectoryArgs(string dir, int totalDirs, int completedDirs)
         {
             CurrentSearchDirectory = dir;
@@ -60,8 +98,15 @@ namespace EventSampleCode
             CompletedDirs = completedDirs;
         }
     }
+
+    /// <summary>
+    /// Searches for files in a directory.
+    /// </summary>
     public class FileSearcher
     {
+        /// <summary>
+        /// Occurs when a file is found.
+        /// </summary>
         public event EventHandler<FileFoundArgs> FileFound;
         internal event EventHandler<SearchDirectoryArgs> DirectoryChanged
         {
@@ -70,6 +115,12 @@ namespace EventSampleCode
         }
         private EventHandler<SearchDirectoryArgs> directoryChanged;
 
+        /// <summary>
+        /// Searches for files in a directory.
+        /// </summary>
+        /// <param name="directory">The directory to search.</param>
+        /// <param name="searchPattern">The search string to match against the names of files in <paramref name="directory"/>.</param>
+        /// <param name="searchSubDirs">Specifies whether to search subdirectories.</param>
         public void Search(string directory, string searchPattern, bool searchSubDirs = false)
         {
             if (searchSubDirs)

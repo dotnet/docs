@@ -3,14 +3,26 @@ using System.Linq.Expressions;
 
 namespace ExpressionVisitor
 {
+    /// <summary>
+    /// A visitor for goto expressions.
+    /// </summary>
     public class GoToVisitor : Visitor
     {
         private readonly GotoExpression node;
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="GoToVisitor"/> class.
+        /// </summary>
+        /// <param name="node">The goto expression to visit.</param>
         public GoToVisitor(GotoExpression node) : base(node)
         {
             this.node = node;
         }
 
+        /// <summary>
+        /// Visits the goto expression.
+        /// </summary>
+        /// <param name="prefix">The prefix to use for the output.</param>
         public override void Visit(string prefix)
         {
             Console.WriteLine($"{prefix}This expression is a {NodeType} expression");

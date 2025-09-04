@@ -3,14 +3,26 @@ using System.Linq.Expressions;
 
 namespace ExpressionVisitor
 {
+    /// <summary>
+    /// A visitor for binary expressions.
+    /// </summary>
     public class BinaryVisitor : Visitor
     {
         private readonly BinaryExpression node;
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="BinaryVisitor"/> class.
+        /// </summary>
+        /// <param name="node">The binary expression to visit.</param>
         public BinaryVisitor(BinaryExpression node) : base(node)
         {
             this.node = node;
         }
 
+        /// <summary>
+        /// Visits the binary expression.
+        /// </summary>
+        /// <param name="prefix">The prefix to use for the output.</param>
         public override void Visit(string prefix)
         {
             Console.WriteLine($"{prefix}This binary expression is a {NodeType} expression");

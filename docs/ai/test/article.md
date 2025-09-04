@@ -39,6 +39,7 @@ From ASPX file (with language="csharp" or language="vb"):
 From ASPX file (with language="aspx"):
 
 :::code language="aspx" source="snippets/asp-cs.aspx" id="Snippet3":::
+:::code language="aspx" source="snippets/asp-vb.aspx" id="Snippet3":::
 
 From ASPX file (with language="aspx-cs" or language="aspx-vb"):
 

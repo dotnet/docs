@@ -497,7 +497,7 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
   Short form `-r` available starting in .NET SDK 7.
 
   > [!NOTE]
-  > Running tests for a solution with a global `RuntimeIdentifier` property (explicitly or via `--arch`, `--runtime`, or `--os`) is not supported. You can set `RuntimeIdentifier` on individual project level instead.
+  > Running tests for a solution with a global `RuntimeIdentifier` property (explicitly or via `--arch`, `--runtime`, or `--os`) is not supported. Set `RuntimeIdentifier` on an individual project level instead.
 
 - **`-v|--verbosity <LEVEL>`**
   

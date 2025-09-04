@@ -36,12 +36,3 @@ The following code example generates a schema that incorporates `description` ke
 
 :::code language="csharp" source="snippets/schema-exporter/TransformSchema.cs" id="2":::
 :::code language="csharp" source="snippets/schema-exporter/TransformSchema.cs" id="Person":::
-
-Similarly, you can set a custom title for the schema by modifying the schema node:
-
-:::code language="csharp" source="snippets/schema-exporter/JsonObjectTitleExample.cs" id="1":::
-
-The following code example generates a schema that includes a `title` keyword:
-
-:::code language="csharp" source="snippets/schema-exporter/JsonObjectTitleExample.cs" id="2":::
-:::code language="csharp" source="snippets/schema-exporter/JsonObjectTitleExample.cs" id="Person":::

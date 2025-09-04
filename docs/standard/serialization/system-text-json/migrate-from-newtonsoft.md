@@ -463,7 +463,7 @@ In .NET 8 and later versions, you can set your preference for whether to skip or
 
 ### JsonObjectAttribute
 
-`Newtonsoft.Json` has an attribute, `JsonObjectAttribute`, that can be applied at the *type level* to control which members are serialized, how `null` values are handled, and whether all members are required. System.Text.Json has no equivalent attribute that can be applied on a type. For some behaviors, such as `null` value handling, you can either configure the same behavior on the global <xref:System.Text.Json.JsonSerializerOptions> or individually on each property.
+`Newtonsoft.Json` has an attribute, `JsonObjectAttribute`, that can be applied at the *type level* to control which members are serialized, how `null` values are handled, and whether all members are required. System.Text.Json has no equivalent attribute that can be applied on a type. For some behaviors, such as `null` value handling, you can configure the same behavior either on the global <xref:System.Text.Json.JsonSerializerOptions> or individually on each property using <xref:System.Text.Json.Serialization.JsonIgnoreAttribute>.
 
 Consider the following example that uses `Newtonsoft.Json.JsonObjectAttribute` to specify that all `null` properties should be ignored:
 
@@ -522,16 +522,7 @@ Finally, consider the following example that uses `Newtonsoft.Json.JsonObjectAtt
 public class Person { ... }
 ```
 
-The `Title` property is used for JSON schema metadata and doesn't have a direct equivalent in System.Text.Json. Starting in .NET 9, you can use the <xref:System.Text.Json.Schema.JsonSchemaExporter> to generate JSON schemas and customize the schema title using the <xref:System.Text.Json.Schema.JsonSchemaExporterOptions.TransformSchemaNode%2A> delegate:
-
-:::code language="csharp" source="snippets/schema-exporter/JsonObjectTitleExample.cs" id="1":::
-
-The following code example generates a schema that includes the `title` keyword:
-
-:::code language="csharp" source="snippets/schema-exporter/JsonObjectTitleExample.cs" id="2":::
-:::code language="csharp" source="snippets/schema-exporter/JsonObjectTitleExample.cs" id="Person":::
-
-For OpenAPI scenarios, you can also set the schema title using document transformers or by directly manipulating the OpenAPI schema. For more information about JSON schema generation, see [JSON schema exporter](extract-schema.md).
+The `Title` property is used for JSON schema metadata and doesn't have a direct equivalent in System.Text.Json. Starting in .NET 9, you can use the <xref:System.Text.Json.Schema.JsonSchemaExporter> to generate JSON schemas and customize the schema title using the <xref:System.Text.Json.Schema.JsonSchemaExporterOptions.TransformSchemaNode%2A> delegate. For an example, see [Transform the generated schema](extract-schema.md#transform-the-generated-schema).
 
 ### TraceWriter
 

@@ -12,7 +12,7 @@ metadata:
   author: alexwolfmsft
   ms.author: alexwolf
 
-# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | tutorial | overview | quickstart | reference | sample | tutorial | video | whats-new
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | tutorial | overview | quickstart | reference | sample | training | tutorial | video | whats-new
 
 landingContent:
 # Cards and links should be based on top customer tasks or top subjects
@@ -53,18 +53,6 @@ landingContent:
             url: conceptual/prompt-engineering-dotnet.md
           - text: Evaluation libraries
             url: conceptual/evaluation-libraries.md
-
-  # Card
-  - title: API reference
-    linkLists:
-      - linkListType: reference
-        links:
-          - text: ChatClientBuilder
-            url: /dotnet/api/microsoft.extensions.ai.chatclientbuilder
-          - text: IChatClient
-            url: /dotnet/api/microsoft.extensions.ai.ichatclient
-          - text: IEmbeddingGenerator
-            url: /dotnet/api/microsoft.extensions.ai.iembeddinggenerator
 
   # Card
   - title: Common tasks
@@ -109,3 +97,15 @@ landingContent:
             url: tutorials/tutorial-ai-vector-search.md
           - text: Evaluate a model's response
             url: tutorials/evaluate-with-reporting.md
+
+  # Card
+  - title: API reference
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: ChatClientBuilder
+            url: /dotnet/api/microsoft.extensions.ai.chatclientbuilder
+          - text: IChatClient
+            url: /dotnet/api/microsoft.extensions.ai.ichatclient
+          - text: IEmbeddingGenerator
+            url: /dotnet/api/microsoft.extensions.ai.iembeddinggenerator

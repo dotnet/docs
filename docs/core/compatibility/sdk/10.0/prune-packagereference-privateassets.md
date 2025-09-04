@@ -1,7 +1,7 @@
 ---
 title: "Breaking change - PrunePackageReference marks direct prunable references with PrivateAssets=all and IncludeAssets=none"
 description: "Learn about the breaking change in the .NET 10 SDK where PrunePackageReference automatically marks directly prunable PackageReference with PrivateAssets=all and IncludeAssets=none."
-ms.date: 01/03/2025
+ms.date: 09/04/2025
 ai-usage: ai-assisted
 ---
 
@@ -57,6 +57,9 @@ The same project configuration now generates a *.nuspec* file with the prunable 
   </group>
 </dependencies>
 ```
+
+> [!NOTE]
+> Another change was made in .NET 10 RC1 that narrows the scope of this breaking change somewhat. Now, prunable dependencies are removed only for projects with a `net10.0` target framework moniker (TFM).
 
 ## Type of breaking change
 

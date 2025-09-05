@@ -8,7 +8,10 @@ ms.custom: https://github.com/dotnet/docs/issues/45462
 
 # NU1510 is raised for direct references pruned by NuGet
 
-Starting in the .NET 10 SDK, pruning is enabled by default for projects that target or multi-target .NET 10. When pruning is enabled, NuGet raises a [`NU1510` warning](/nuget/reference/errors-and-warnings/nu1510) when a project includes a direct package reference that overlaps with a framework-provided library and isn't required.
+Starting in the .NET 10 SDK, when pruning is enabled, NuGet raises a [`NU1510` warning](/nuget/reference/errors-and-warnings/nu1510) for projects that:
+
+- Target or multi-target .NET 10 or a later version.
+- Include a direct package reference that overlaps with a framework-provided library (that is, the reference isn't necessary).
 
 ## Version introduced
 
@@ -20,10 +23,10 @@ Previously, the .NET SDK ignored the contents of a package if it overlapped with
 
 ## New behavior
 
-Starting with the .NET 10 SDK, if pruning is enabled, NuGet notifies you of any unnecessary package references by raising a `NU1510` warning.
+Starting with the .NET 10 SDK, if pruning is enabled and the project targets .NET 10 or a later version, NuGet notifies you of any unnecessary package references by raising a `NU1510` warning.
 
 > [!NOTE]
-> In a later .NET 10 preview, a related change was made such that direct prunable package references are automatically excluded from the `.nuspec` file instead of raising `NU1510`. For more information, see [PrunePackageReference marks direct prunable references with PrivateAssets=all and IncludeAssets=none](prune-packagereference-privateassets.md).
+> In a later .NET 10 preview, a related change was made such that [direct prunable package references](prune-packagereference-privateassets.md) are automatically excluded from the `.nuspec` file. However, you'll still get the `NU1510` warning to clean up your project.
 
 ## Type of breaking change
 
@@ -56,4 +59,4 @@ None.
 
 ## See also
 
-- [PrunePackageReference marks direct prunable references with PrivateAssets=all and IncludeAssets=none](prune-packagereference-privateassets.md)
+- [PrunePackageReference privatizes direct prunable references](prune-packagereference-privateassets.md)

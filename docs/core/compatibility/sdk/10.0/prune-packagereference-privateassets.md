@@ -5,9 +5,9 @@ ms.date: 09/04/2025
 ai-usage: ai-assisted
 ---
 
-# PrunePackageReference privatizes direct prunable references"
+# PrunePackageReference privatizes direct prunable references
 
-The [PrunePackageReference](/nuget/consume-packages/package-references-in-project-files#prunepackagereference) feature automatically removes *transitive* packages that are provided by the target platform. This pruning feature is enabled by default for projects that target or multi-target .NET 10. Now, the feature also marks *directly* prunable `PackageReference` items with `PrivateAssets=all` and `IncludeAssets=none` attributes. These attributes prevent the packages from appearing in generated dependency lists for packages.
+The [PrunePackageReference](/nuget/consume-packages/package-references-in-project-files#prunepackagereference) feature automatically removes *transitive* packages that are provided by the target platform. With this change, the feature also marks *directly* prunable `PackageReference` items with `PrivateAssets=all` and `IncludeAssets=none` attributes. These attributes prevent the packages from appearing in generated dependency lists for packages.
 
 ## Version introduced
 
@@ -15,17 +15,17 @@ The [PrunePackageReference](/nuget/consume-packages/package-references-in-projec
 
 ## Previous behavior
 
-Prior to .NET 10, all `PackageReference` items appeared in the generated *.nuspec* dependencies for all target frameworks, even those where the package is provided by the platform. Starting in .NET 10 Preview 1, if pruning was enabled, directly prunable `PackageReference` items might have generated an [`NU1510` warning](/nuget/reference/errors-and-warnings/nu1510) but still appeared in the dependencies list.
+Starting in .NET 10 Preview 1, if pruning was enabled, directly prunable `PackageReference` items might have generated an [`NU1510` warning](/nuget/reference/errors-and-warnings/nu1510) but still appeared in the generated *.nuspec* dependencies list, even if the package was provided by the platform.
 
 For example, consider a multi-targeting project with the following configuration:
 
 ```xml
 <PropertyGroup>
-  <TargetFramework>net9.0;net472</TargetFramework>
+  <TargetFramework>net10.0;net472</TargetFramework>
 </PropertyGroup>
 
 <ItemGroup>
-  <PackageReference Include="System.Text.Json" Version="9.0.4" />
+  <PackageReference Include="System.Text.Json" Version="9.0.8" />
 </ItemGroup>
 ```
 
@@ -34,26 +34,26 @@ Such a project file generated a *.nuspec* file with dependencies for both target
 ```xml
 <dependencies>
   <group targetFramework=".NETFramework4.7.2">
-    <dependency id="System.Text.Json" version="9.0.4" />
+    <dependency id="System.Text.Json" version="9.0.8" />
   </group>
-  <group targetFramework="net9.0">
-    <dependency id="System.Text.Json" version="9.0.4" />
+  <group targetFramework="net10.0">
+    <dependency id="System.Text.Json" version="9.0.8" />
   </group>
 </dependencies>
 ```
 
 ## New behavior
 
-Starting in .NET 10 Preview 7, if pruning is enabled, directly prunable `PackageReference` items are automatically marked with `PrivateAssets=all` and `IncludeAssets=none`, which excludes them from the generated dependencies for target frameworks where they're provided by the platform.
+Starting in .NET 10 Preview 7, when pruning is enabled, directly prunable `PackageReference` items are automatically marked with `PrivateAssets=all` and `IncludeAssets=none`, which excludes them from the generated dependencies for target frameworks where they're provided by the platform. (However, you'll still get the `NU1510` warning until you remove the reference from your project.)
 
-The same project configuration now generates a *.nuspec* file with the prunable dependency removed from the target framework that provides it (.NET 9):
+The same project configuration now generates a *.nuspec* file with the prunable dependency removed from the target framework that provides it (.NET 10):
 
 ```xml
 <dependencies>
   <group targetFramework=".NETFramework4.7.2">
-    <dependency id="System.Text.Json" version="9.0.4" />
+    <dependency id="System.Text.Json" version="9.0.8" />
   </group>
-  <group targetFramework="net9.0">
+  <group targetFramework="net10.0">
   </group>
 </dependencies>
 ```

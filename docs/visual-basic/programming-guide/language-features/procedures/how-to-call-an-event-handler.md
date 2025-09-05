@@ -43,7 +43,7 @@ You can associate more than one event handler with the same event. In some cases
 
 3. When the event occurs, Visual Basic automatically calls the `Sub` procedure. Your code can use a `RaiseEvent` statement to make the event occur.
 
-    The following example uses the [AddHandler statement](../../../language-reference/statements/addhandler-statement.md) in the constructor to associate the `OnFormClosing` procedure as an event handler for <xref:System.Windows.Forms.Form.FormClosing>.
+    The following example uses the [AddHandler statement](../../../language-reference/statements/addhandler-statement.md) in the constructor to associate the `OnTimerElapsed` procedure as an event handler for a custom timer event.
 
     :::code language="vb" source="snippets/how-to-call-an-event-handler/SpecialForm.vb" id="5":::
 

@@ -54,6 +54,7 @@ The Visual Basic command-line compiler is provided as an alternative to compilin
 |[-optionstrict](optionstrict.md)|Enforces strict language semantics.|  
 |[-out](out.md)|Specifies an output file.|  
 |<code>-parallel[+&#124;-]</code>|Specifies whether to use concurrent build (+).|  
+|[-pathmap](pathmap.md)|Specifies how to map physical paths to source path names output by the compiler.|
 |[-platform](platform.md)|Specifies the processor platform the compiler targets for the output file.|  
 |`-preferreduilang`|Specify the preferred output language name.|  
 |[-quiet](quiet.md)|Prevents the compiler from displaying code for syntax-related errors and warnings.|  

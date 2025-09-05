@@ -889,33 +889,33 @@ items:
       href: language-reference/error-messages/attribute-attributename-cannot-be-applied-multiple-times.md
     - name: BC32500
       href: language-reference/error-messages/attribute-cannot-be-applied-because-the-format-of-the-guid-is-not-correct.md
-    - name: "'#ElseIf' must be preceded by a matching '#If' or '#ElseIf'"
+    - name: BC30014
       href: language-reference/error-messages/elseif-must-be-preceded-by-a-matching-if-or-elseif.md
-    - name: "'#Region' and '#End Region' statements are not valid within method bodies-multiline lambdas"
+    - name: BC32025
       href: language-reference/error-messages/region-and-end-region-are-not-valid-within-method-bodies-multiline-lambdas.md
-    - name: "'<classname>' is not CLS-compliant because the interface '<interfacename>' it implements is not CLS-compliant"
+    - name: BC40029
       href: language-reference/error-messages/classname-is-not-cls-compliant-because-the-interface-is-not-cls-compliant.md
-    - name: "'<elementname>' is obsolete (Visual Basic Warning)"
+    - name: BC40008
       href: language-reference/error-messages/elementname-is-obsolete-visual-basic-warning.md
-    - name: "'<eventname>' is an event, and cannot be called directly"
+    - name: BC32022
       href: language-reference/error-messages/eventname-is-an-event-and-cannot-be-called-directly.md
-    - name: "'<expression>' cannot be used as a type constraint"
+    - name: BC32061
       href: language-reference/error-messages/expression-cannot-be-used-as-a-type-constraint.md
-    - name: "'<functionname>' is not declared (Smart Device-Visual Basic Compiler Error)"
+    - name: BC30766
       href: language-reference/error-messages/functionname-is-not-declared-smart-device-visual-basic-compiler-error.md
-    - name: "'<interfacename>.<membername>' is already implemented by the base class '<baseclassname>'. Re-implementation of <type> assumed"
+    - name: BC42015
       href: language-reference/error-messages/interfacename-membername-is-already-implemented-by-the-base-class.md
-    - name: "'<keyword>' is valid only within an instance method"
+    - name: BC30043
       href: language-reference/error-messages/keyword-is-valid-only-within-an-instance-method.md
-    - name: "'<membername>' cannot expose type '<typename>' outside the project through <containertype> '<containertypename>'"
+    - name: BC30909
       href: language-reference/error-messages/membername-cannot-expose-type-typename-outside-the-project.md
-    - name: "'<membername>' is ambiguous across the inherited interfaces '<interfacename1>' and '<interfacename2>'"
+    - name: BC30685
       href: language-reference/error-messages/membername-is-ambiguous-across-the-inherited-interfaces.md
-    - name: <message> This error could also be due to mixing a file reference with a project reference to assembly '<assemblyname>'
+    - name: BC30971
       href: language-reference/error-messages/message-this-error-could-also-be-due-to-mixing-a-file-reference.md
-    - name: "'<methodname>' has multiple definitions with identical signatures"
+    - name: BC30269
       href: language-reference/error-messages/methodname-has-multiple-definitions-with-identical-signatures.md
-    - name: "'<name>' is ambiguous in the namespace '<namespacename>'"
+    - name: BC30560
       href: language-reference/error-messages/name-is-ambiguous-in-the-namespace-namespacename.md
     - name: "'<name1>' is ambiguous, imported from the namespaces or types '<name2>'"
       href: language-reference/error-messages/name1-is-ambiguous-imported-from-the-namespaces-or-types-name2.md

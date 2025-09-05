@@ -44,7 +44,7 @@ Such a project file generated a *.nuspec* file with dependencies for both target
 
 ## New behavior
 
-Starting in .NET 10 Preview 7, when pruning is enabled, directly prunable `PackageReference` items are automatically marked with `PrivateAssets=all` and `IncludeAssets=none`, which excludes them from the generated dependencies for target frameworks where they're provided by the platform. (However, you'll still get the `NU1510` warning until you remove the reference from your project.)
+Starting in .NET 10 Preview 7, when pruning is enabled, directly prunable `PackageReference` items are automatically marked with `PrivateAssets=all` and `IncludeAssets=none`, which excludes them from the generated dependencies for target frameworks where they're provided by the platform. (However, if your project targets .NET 10 or later, you'll still get the `NU1510` warning until you remove the reference from your project.)
 
 The same project configuration now generates a *.nuspec* file with the prunable dependency removed from the target framework that provides it (.NET 10):
 

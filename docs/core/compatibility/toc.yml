@@ -132,7 +132,7 @@ items:
                 href: sdk/10.0/deps-json-trimmed-packages.md
               - name: PackageReference without a version raises error
                 href: sdk/10.0/nu1015-packagereference-version.md
-              - name: PrunePackageReference marks direct prunable references with PrivateAssets=all and IncludeAssets=none
+              - name: PrunePackageReference privatizes direct prunable references
                 href: sdk/10.0/prune-packagereference-privateassets.md
               - name: HTTP warnings promoted to errors in package list and search
                 href: sdk/10.0/http-warnings-to-errors.md

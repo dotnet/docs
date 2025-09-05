@@ -233,19 +233,13 @@ Class Class647cd825e8774910b4f18d168beebe6a
         Private ds As DataSet
         
         Public Sub New()
-            ' Initialize controls and data
             textBox1 = New TextBox()
             ds = New DataSet()
-            
-            ' Setup sample data
             SetupSampleData()
-            
-            ' Demonstrate AddHandler with ConvertEventHandler
             BindControlWithAddHandler()
         End Sub
         
         Private Sub SetupSampleData()
-            ' Create a sample DataTable with decimal values
             Dim table As New DataTable("Orders")
             table.Columns.Add("OrderAmount", GetType(Decimal))
             table.Rows.Add(123.45D)
@@ -254,34 +248,26 @@ Class Class647cd825e8774910b4f18d168beebe6a
         End Sub
         
         Private Sub BindControlWithAddHandler()
-            ' Create a binding for the TextBox to the OrderAmount column
             Dim binding As New Binding("Text", ds, "Orders.OrderAmount")
             
-            ' Use AddHandler to associate ConvertEventHandler delegates with events
+            ' Use AddHandler to associate ConvertEventHandler delegates
             AddHandler binding.Format, AddressOf DecimalToCurrency
             AddHandler binding.Parse, AddressOf CurrencyToDecimal
             
-            ' Add the binding to the TextBox
             textBox1.DataBindings.Add(binding)
         End Sub
         
         Private Sub DecimalToCurrency(ByVal sender As Object, ByVal e As ConvertEventArgs)
-            ' Convert decimal value to currency string format
             If e.DesiredType IsNot GetType(String) Then
                 Return
             End If
-            
-            ' Format the decimal value as currency
             e.Value = CDec(e.Value).ToString("c")
         End Sub
         
         Private Sub CurrencyToDecimal(ByVal sender As Object, ByVal e As ConvertEventArgs)
-            ' Convert currency string back to decimal value
             If e.DesiredType IsNot GetType(Decimal) Then
                 Return
             End If
-            
-            ' Parse the currency string back to decimal
             e.Value = Convert.ToDecimal(e.Value.ToString())
         End Sub
     End Class
@@ -289,33 +275,25 @@ Class Class647cd825e8774910b4f18d168beebe6a
     ' Simple example for basic AddHandler usage
     Sub TestBasicEvents()
         Dim Obj As New Class1
-        ' Associate an event handler with an event.
         AddHandler Obj.Ev_Event, AddressOf EventHandler
-        ' Call the method to raise the event.
         Obj.CauseSomeEvent()
-        ' Stop handling events.
         RemoveHandler Obj.Ev_Event, AddressOf EventHandler
-        ' This event will not be handled.
         Obj.CauseSomeEvent()
-        ' Associate an event handler with an event, using a lambda.
-        ' This handler cannot be removed.
+        
+        ' Lambda expression example
         AddHandler Obj.Ev_Event, Sub ()
             MsgBox("Lambda caught event.")
         End Sub
-        ' This event will be handled by the lambda above.
         Obj.CauseSomeEvent()
     End Sub
 
     Sub EventHandler()
-        ' Handle the event.
         MsgBox("EventHandler caught event.")
     End Sub
 
     Public Class Class1
-        ' Declare an event.
         Public Event Ev_Event()
         Sub CauseSomeEvent()
-            ' Raise an event.
             RaiseEvent Ev_Event()
         End Sub
     End Class

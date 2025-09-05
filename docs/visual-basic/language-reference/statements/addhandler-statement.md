@@ -51,10 +51,10 @@ The following example demonstrates how to use `AddHandler` with `ConvertEventHan
 
 This example shows:
 
-- Creating a `Binding` object for data binding
-- Using `AddHandler` to attach `ConvertEventHandler` delegates to the `Format` and `Parse` events
-- Implementing event handler methods that convert between decimal and currency string formats
-- A simpler example demonstrating basic `AddHandler` usage with custom events and lambda expressions
+- Creating a `Binding` object for data binding.
+- Using `AddHandler` to attach `ConvertEventHandler` delegates to the `Format` and `Parse` events.
+- Implementing event handler methods that convert between decimal and currency string formats.
+- A simpler example demonstrating basic `AddHandler` usage with custom events and lambda expressions.
 
 ## See also
 

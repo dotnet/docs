@@ -99,13 +99,13 @@ landingContent:
             url: tutorials/evaluate-with-reporting.md
 
   # Card
-  - title: API reference
+  - title: External resources
     linkLists:
-      - linkListType: reference
+      - linkListType: sample
         links:
-          - text: ChatClientBuilder
-            url: /dotnet/api/microsoft.extensions.ai.chatclientbuilder
-          - text: IChatClient
-            url: /dotnet/api/microsoft.extensions.ai.ichatclient
-          - text: IEmbeddingGenerator
-            url: /dotnet/api/microsoft.extensions.ai.iembeddinggenerator
+          - text: Get started resources
+            url: resources/get-started.md
+          - text: Azure AI resources
+            url: resources/azure-ai.md
+          - text: MCP server resources
+            url: resources/mcp-servers.md

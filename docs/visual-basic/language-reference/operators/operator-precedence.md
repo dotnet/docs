@@ -24,7 +24,7 @@ When several operations occur in an expression, each part is evaluated and resol
 
  When expressions contain operators from more than one category, they are evaluated according to the following rules:
 
-- The arithmetic and concatenation operators have the order of precedence described in the following section, and all have greater precedence than the comparison, logical, and bitwise operators.
+- The arithmetic and concatenation operators have the order of precedence described in the following section, and all have greater precedence than the comparison, logical, and bitwise operators. Higher precedence means these operators are evaluated first.
 
 - All comparison operators have equal precedence, and all have greater precedence than the logical and bitwise operators, but lower precedence than the arithmetic and concatenation operators.
 
@@ -34,7 +34,7 @@ When several operations occur in an expression, each part is evaluated and resol
 
 ## Precedence Order
 
- Operators are evaluated in the following order of precedence:
+ Operators are evaluated in the following order of precedence. Operators listed first have higher precedence and are evaluated before operators listed later:
 
 ### Await Operator
 
@@ -108,7 +108,9 @@ e = 1.0
 f = a - b + c / d * e
 ' The preceding line sets f to 7.0. Because of natural operator
 ' precedence and associativity, it is exactly equivalent to the
-' following line.
+' following line. Division and multiplication (/, *) have higher
+' precedence than addition and subtraction (+, -), so c / d * e
+' is evaluated first, then the addition and subtraction from left to right.
 f = (a - b) + ((c / d) * e)
 ' The following line overrides the natural operator precedence
 ' and left associativity.

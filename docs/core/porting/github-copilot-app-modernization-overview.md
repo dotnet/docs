@@ -5,7 +5,7 @@ titleSuffix: ""
 author: adegeo
 ms.author: adegeo
 ms.topic: overview
-ms.date: 05/16/2025
+ms.date: 09/04/2025
 
 #customer intent: As a developer, I want to upgrade my project so that I can take advantage of the latest features.
 
@@ -50,9 +50,6 @@ GitHub Copilot app modernization supports upgrading projects coded in C#. The fo
 - Windows Forms
 - Class libraries
 - Console apps
-
-> [!IMPORTANT]
-> The current version of the extension doesn't support upgrading from .NET Framework to .NET. In these scenarios, use the [.NET Upgrade Assistant](upgrade-assistant-overview.md) to migrate to .NET, then use this tool to modernize your code.
 
 ## Upgrade paths
 

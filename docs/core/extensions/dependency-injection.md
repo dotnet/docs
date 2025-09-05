@@ -81,7 +81,7 @@ The host contains the dependency injection service provider. It also contains al
 
 By using the DI pattern, the worker service:
 
-- Doesn't use the concrete type `MessageWriter`, only the `IMessageWriter` interface that implements it. That makes it easy to change the implementation that the worker service uses without modifying the worker service.
+- Doesn't use the concrete type `MessageWriter`, only the `IMessageWriter` interface that it implements. That makes it easy to change the implementation that the worker service uses without modifying the worker service.
 - Doesn't create an instance of `MessageWriter`. The instance is created by the DI container.
 
 The implementation of the `IMessageWriter` interface can be improved by using the built-in logging API:

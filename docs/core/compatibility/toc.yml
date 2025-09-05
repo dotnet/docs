@@ -68,6 +68,8 @@ items:
                 href: cryptography/10.0/cosesigner-key-null.md
               - name: Environment variable renamed to DOTNET_OPENSSL_VERSION_OVERRIDE
                 href: cryptography/10.0/version-override.md
+              - name: MLDsa and SlhDsa members renamed from using "SecretKey" to using "PrivateKey"
+                href: cryptography/10.0/mldsa-slhdsa-secretkey-to-privatekey.md
               - name: OpenSSL cryptographic primitives not supported on macOS
                 href: cryptography/10.0/openssl-macos-unsupported.md
               - name: X500DistinguishedName validation is stricter

@@ -225,7 +225,69 @@ Class Class647cd825e8774910b4f18d168beebe6a
     ' AddHandler Statement
 
     ' <snippet17>
-    Sub TestEvents()
+    Imports System.Windows.Forms
+    Imports System.Data
+    
+    Public Class DataBindingExample
+        Private textBox1 As TextBox
+        Private ds As DataSet
+        
+        Public Sub New()
+            ' Initialize controls and data
+            textBox1 = New TextBox()
+            ds = New DataSet()
+            
+            ' Setup sample data
+            SetupSampleData()
+            
+            ' Demonstrate AddHandler with ConvertEventHandler
+            BindControlWithAddHandler()
+        End Sub
+        
+        Private Sub SetupSampleData()
+            ' Create a sample DataTable with decimal values
+            Dim table As New DataTable("Orders")
+            table.Columns.Add("OrderAmount", GetType(Decimal))
+            table.Rows.Add(123.45D)
+            table.Rows.Add(67.89D)
+            ds.Tables.Add(table)
+        End Sub
+        
+        Private Sub BindControlWithAddHandler()
+            ' Create a binding for the TextBox to the OrderAmount column
+            Dim binding As New Binding("Text", ds, "Orders.OrderAmount")
+            
+            ' Use AddHandler to associate ConvertEventHandler delegates with events
+            AddHandler binding.Format, AddressOf DecimalToCurrency
+            AddHandler binding.Parse, AddressOf CurrencyToDecimal
+            
+            ' Add the binding to the TextBox
+            textBox1.DataBindings.Add(binding)
+        End Sub
+        
+        Private Sub DecimalToCurrency(ByVal sender As Object, ByVal e As ConvertEventArgs)
+            ' Convert decimal value to currency string format
+            If e.DesiredType IsNot GetType(String) Then
+                Return
+            End If
+            
+            ' Format the decimal value as currency
+            e.Value = CDec(e.Value).ToString("c")
+        End Sub
+        
+        Private Sub CurrencyToDecimal(ByVal sender As Object, ByVal e As ConvertEventArgs)
+            ' Convert currency string back to decimal value
+            If e.DesiredType IsNot GetType(Decimal) Then
+                Return
+            End If
+            
+            ' Parse the currency string back to decimal
+            e.Value = Convert.ToDecimal(e.Value.ToString())
+        End Sub
+    End Class
+    
+    ' Simple example for basic AddHandler usage
+    Sub TestBasicEvents()
         Dim Obj As New Class1
         ' Associate an event handler with an event.
         AddHandler Obj.Ev_Event, AddressOf EventHandler

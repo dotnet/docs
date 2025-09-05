@@ -45,7 +45,16 @@ The parts `AddressOf eventhandler` and `expression` are mutually exclusive.
 
 ## Example
 
- [!code-vb[VbVbalrEvents#17](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEvents/VB/Class1.vb#17)]
+The following example demonstrates how to use `AddHandler` with `ConvertEventHandler` delegates for data binding scenarios. This shows a practical use case where event handlers are attached to `Format` and `Parse` events of a `Binding` object to convert between decimal values and currency strings.
+
+[!code-vb[VbVbalrEvents#17](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEvents/VB/Class1.vb#17)]
+
+This example shows:
+
+- Creating a `Binding` object for data binding
+- Using `AddHandler` to attach `ConvertEventHandler` delegates to the `Format` and `Parse` events
+- Implementing event handler methods that convert between decimal and currency string formats
+- A simpler example demonstrating basic `AddHandler` usage with custom events and lambda expressions
 
 ## See also
 

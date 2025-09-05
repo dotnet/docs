@@ -917,335 +917,335 @@ items:
       href: language-reference/error-messages/methodname-has-multiple-definitions-with-identical-signatures.md
     - name: BC30560
       href: language-reference/error-messages/name-is-ambiguous-in-the-namespace-namespacename.md
-    - name: "'<name1>' is ambiguous, imported from the namespaces or types '<name2>'"
+    - name: BC30561
       href: language-reference/error-messages/name1-is-ambiguous-imported-from-the-namespaces-or-types-name2.md
-    - name: <proceduresignature1> is not CLS-compliant because it overloads <proceduresignature2> which differs from it only by array of array parameter types or by the rank of the array parameter types
+    - name: BC40035
       href: language-reference/error-messages/proceduresignature1-not-cls-compliant-because-it-overloads-proceduresignature2.md
-    - name: <type1>'<typename>' must implement '<membername>' for interface '<interfacename>'
+    - name: BC30154
       href: language-reference/error-messages/type1-must-implement-membername-for-interface.md
-    - name: <type1>'<typename>' must implement '<methodname>' for interface '<interfacename>'
+    - name: BC30149
       href: language-reference/error-messages/type1-typename-must-implement-methodname-for-interface-interfacename.md
-    - name: "'<typename>' cannot inherit from <type> '<basetypename>' because it expands the access of the base <type> outside the assembly"
+    - name: BC30910
       href: language-reference/error-messages/typename-cannot-inherit-from-type-basetypename.md
-    - name: "'<typename>' is a delegate type"
+    - name: BC32008
       href: language-reference/error-messages/typename-is-a-delegate-type.md
-    - name: "'<typename>' is a type and cannot be used as an expression"
+    - name: BC30108
       href: language-reference/error-messages/typename-is-a-type-and-cannot-be-used-as-an-expression.md
-    - name: A double quote is not a valid comment token for delimited fields where EscapeQuote is set to True
+    - name: TextFieldParser Error
       href: language-reference/error-messages/a-double-quote-is-not-a-valid-comment-token-for-delimited-fields.md
-    - name: A property or method call cannot include a reference to a private object, either as an argument or as a return value
+    - name: Runtime Error 98
       href: language-reference/error-messages/a-property-or-method-call-cannot-include-a-reference-to-a-private-object.md
-    - name: A reference was created to embedded interop assembly '<assembly1>' because of an indirect reference to that assembly from assembly '<assembly2>'
+    - name: BC40059
       href: language-reference/error-messages/bc40059.md
-    - name: A startup form has not been specified
+    - name: Runtime Error
       href: language-reference/error-messages/a-startup-form-has-not-been-specified.md
-    - name: Access of shared member through an instance; qualifying expression will not be evaluated
+    - name: BC42025
       href: language-reference/error-messages/bc42025.md
-    - name: "'AddressOf' operand must be the name of a method (without parentheses)"
+    - name: BC30577
       href: language-reference/error-messages/bc30577.md
-    - name: An unexpected error has occurred because an operating system resource required for single instance startup cannot be acquired
+    - name: Runtime Error
       href: language-reference/error-messages/an-unexpected-error-has-occurred.md
-    - name: Anonymous type member name can be inferred only from a simple or qualified name with no arguments
+    - name: BC36556
       href: language-reference/error-messages/bc36556.md
-    - name: Argument not optional
+    - name: Runtime Error 449
       href: language-reference/error-messages/argument-not-optional.md
-    - name: Array bounds cannot appear in type specifiers
+    - name: BC30638
       href: language-reference/error-messages/bc30638.md
-    - name: Array declared as for loop control variable cannot be declared with an initial size
+    - name: BC32039
       href: language-reference/error-messages/bc32039.md
-    - name: Array subscript expression missing
+    - name: BC30306
       href: language-reference/error-messages/bc30306.md
-    - name: Arrays declared as structure members cannot be declared with an initial size
+    - name: BC31043
       href: language-reference/error-messages/bc31043.md
-    - name: "'As Any' is not supported in 'Declare' statements"
+    - name: BC30828
       href: language-reference/error-messages/bc30828.md
-    - name: Automation error
+    - name: Runtime Error 440
       href: language-reference/error-messages/automation-error.md
-    - name: Bad checksum value, non hex digits or odd number of hex digits
+    - name: BC42033
       href: language-reference/error-messages/bad-checksum-value-non-hex-digits-or-odd-number-of-hex-digits.md
-    - name: Bad DLL calling convention
+    - name: Runtime Error 49
       href: language-reference/error-messages/bad-dll-calling-convention.md
-    - name: Bad file mode
+    - name: Runtime Error 54
       href: language-reference/error-messages/bad-file-mode.md
-    - name: Bad file name or number
+    - name: Runtime Error 52
       href: language-reference/error-messages/bad-file-name-or-number.md
-    - name: Bad record length
+    - name: Runtime Error 59
       href: language-reference/error-messages/bad-record-length.md
-    - name: Because this call is not awaited, execution of the current method continues before the call is completed
+    - name: BC42358
       href: language-reference/error-messages/bc42358.md
-    - name: Cannot convert anonymous type to an expression tree because a property of the type is used to initialize another property
+    - name: BC36548
       href: language-reference/error-messages/bc36548.md
-    - name: Cannot create ActiveX Component
+    - name: Runtime Error 429
       href: language-reference/error-messages/cannot-create-activex-component.md
-    - name: Cannot refer to '<name>' because it is a member of the value-typed field '<name>' of class '<classname>' which has 'System.MarshalByRefObject' as a base class
+    - name: BC30310
       href: language-reference/error-messages/bc30310.md
-    - name: Cannot refer to an instance member of a class from within a shared method or shared member initializer without an explicit instance of the class
+    - name: BC30369
       href: language-reference/error-messages/bc30369.md
-    - name: Can't create necessary temporary file
+    - name: Runtime Error
       href: language-reference/error-messages/can-t-create-necessary-temporary-file.md
-    - name: Can't open '<filename>' for writing
+    - name: BC2012
       href: language-reference/error-messages/bc2012.md
-    - name: Class '<classname>' cannot be found
+    - name: BC31098
       href: language-reference/error-messages/bc31098.md
-    - name: Class does not support Automation or does not support expected interface
+    - name: Runtime Error 438
       href: language-reference/error-messages/class-does-not-support-automation-or-does-not-support-expected-interface.md
-    - name: "'Class' statement must end with a matching 'End Class'"
+    - name: BC30481
       href: language-reference/error-messages/class-statement-must-end-with-a-matching-end-class.md
-    - name: Clipboard format is not valid
+    - name: Runtime Error 460
       href: language-reference/error-messages/clipboard-format-is-not-valid.md
-    - name: Constant expression not representable in type '<typename>'
+    - name: BC30439
       href: language-reference/error-messages/constant-expression-not-representable-in-type-typename.md
-    - name: Constants must be of an intrinsic or enumerated type, not a class, structure, type parameter, or array type
+    - name: BC30424
       href: language-reference/error-messages/constants-must-be-of-an-intrinsic-or-enumerated-type.md
-    - name: Constructor '<name>' cannot call itself
+    - name: BC30298
       href: language-reference/error-messages/constructor-name-cannot-call-itself.md
-    - name: Copying the value of 'ByRef' parameter '<parametername>' back to the matching argument narrows from type '<typename1>' to type '<typename2>'
+    - name: BC32053
       href: language-reference/error-messages/copying-the-value-of-byref-parameter-back-to-the-matching-argument-narrows.md
-    - name: "'Custom' modifier is not valid on events declared without explicit delegate types"
+    - name: BC31122
       href: language-reference/error-messages/custom-modifier-is-not-valid-on-events-declared-without-explicit-delegate-types.md
-    - name: Data type(s) of the type parameter(s) cannot be inferred from these arguments
+    - name: BC36647
       href: language-reference/error-messages/data-type-s-of-the-type-parameter-s-cannot-be-inferred-from-these-arguments.md
-    - name: Declaration expected
+    - name: BC30188
       href: language-reference/error-messages/declaration-expected.md
-    - name: Default property '<propertyname1>' conflicts with default property '<propertyname2>' in '<classname>' and so should be declared 'Shadows'
+    - name: BC40007
       href: language-reference/error-messages/default-property-propertyname1-conflicts-with-default-property-propertyname2.md
-    - name: Default property access is ambiguous between the inherited interface members '<defaultpropertyname>' of interface '<interfacename1>' and '<defaultpropertyname>' of interface '<interfacename2>'
+    - name: BC30686
       href: language-reference/error-messages/default-property-access-is-ambiguous.md
-    - name: Delegate class '<classname>' has no Invoke method, so an expression of this type cannot be the target of a method call
+    - name: BC30220
       href: language-reference/error-messages/delegate-class-classname-has-no-invoke-method.md
-    - name: Derived classes cannot raise base class events
+    - name: BC30029
       href: language-reference/error-messages/derived-classes-cannot-raise-base-class-events.md
-    - name: Device I/O error
+    - name: Runtime Error 57
       href: language-reference/error-messages/device-i-o-error.md
-    - name: "'Dir' function must first be called with a 'PathName' argument"
+    - name: Runtime Error 68
       href: language-reference/error-messages/dir-function-must-first-be-called-with-a-pathname-argument.md
-    - name: End of statement expected
+    - name: BC30205
       href: language-reference/error-messages/end-of-statement-expected.md
-    - name: "Error creating assembly manifest: <error message>"
+    - name: BC30140
       href: language-reference/error-messages/error-creating-assembly-manifest-error-message.md
-    - name: "Error creating Win32 resources: <error message>"
+    - name: BC30136
       href: language-reference/error-messages/error-creating-win32-resources-error-message.md
-    - name: Error in loading DLL
+    - name: Runtime Error 48
       href: language-reference/error-messages/error-in-loading-dll.md
     - name: "Error saving temporary Win32 resource file '<filename>': <error message>"
       href: language-reference/error-messages/error-saving-temporary-win32-resource-file-filename-error-message.md
-    - name: Errors occurred while compiling the XML schemas in the project
+    - name: BC36810
       href: language-reference/error-messages/errors-occurred-while-compiling-the-xml-schemas-in-the-project.md
-    - name: Evaluation of expression or statement timed out
+    - name: BC30722
       href: language-reference/error-messages/evaluation-of-expression-or-statement-timed-out.md
-    - name: Event '<eventname1>' cannot implement event '<eventname2>' on interface '<interface>' because their delegate types '<delegate1>' and '<delegate2>' do not match
+    - name: BC31423
       href: language-reference/error-messages/event-eventname1-cannot-implement-event-eventname2-on-interface.md
-    - name: Events cannot be declared with a delegate type that has a return type
+    - name: BC31084
       href: language-reference/error-messages/events-cannot-be-declared-with-a-delegate-type-that-has-a-return-type.md
-    - name: Events of shared WithEvents variables cannot be handled by non-shared methods
+    - name: BC30594
       href: language-reference/error-messages/events-of-shared-withevents-variables-cannot-be-handled-by-non-shared-methods.md
-    - name: Expression does not produce a value
+    - name: BC30491
       href: language-reference/error-messages/expression-does-not-produce-a-value.md
-    - name: Expression has the type '<typename>' which is a restricted type and cannot be used to access members inherited from 'Object' or 'ValueType'
+    - name: BC31393
       href: language-reference/error-messages/expression-has-the-type-typename-which-is-a-restricted-type.md
-    - name: Expression is a value and therefore cannot be the target of an assignment
+    - name: BC30068
       href: language-reference/error-messages/expression-is-a-value-and-therefore-cannot-be-the-target-of-an-assignment.md
-    - name: Expression of type <type> is not queryable
+    - name: BC36593
       href: language-reference/error-messages/expression-of-type-type-is-not-queryable.md
-    - name: Expression recursively calls the containing property '<propertyname>'
+    - name: BC42026
       href: language-reference/error-messages/expression-recursively-calls-the-containing-property-propertyname.md
-    - name: Expression too complex
+    - name: BC30494
       href: language-reference/error-messages/expression-too-complex.md
     - name: "'Extension' attribute can be applied only to 'Module', 'Sub', or 'Function' declarations"
       href: language-reference/error-messages/extension-attribute-can-be-applied-only-to-module-sub-or-function-declarations.md
-    - name: File already open
+    - name: Runtime Error 55
       href: language-reference/error-messages/file-already-open.md
-    - name: File is too large to read into a byte array
+    - name: Runtime Error
       href: language-reference/error-messages/file-is-too-large-to-read-into-a-byte-array.md
-    - name: File name or class name not found during Automation operation
+    - name: Runtime Error 432
       href: language-reference/error-messages/file-name-or-class-name-not-found-during-automation-operation.md
-    - name: File not found (Visual Basic Run-Time Error)
+    - name: Runtime Error 53
       href: language-reference/error-messages/file-not-found-visual-basic-run-time-error.md
-    - name: First operand in a binary 'If' expression must be nullable or a reference type
+    - name: BC33107
       href: language-reference/error-messages/first-operand-in-a-binary-if-expression-must-be-nullable-or-a-reference-type.md
-    - name: First statement of this 'Sub New' must be a call to 'MyBase.New' or 'MyClass.New' (No Accessible Constructor Without Parameters)
+    - name: BC30148
       href: language-reference/error-messages/first-statement-of-this-sub-new-must-be-a-call-to-mybase-new-or-myclass-new.md
     - name: "First statement of this 'Sub New' must be an explicit call to 'MyBase.New' or 'MyClass.New' because the '<constructorname>' in the base class '<baseclassname>' of '<derivedclassname>' is marked obsolete: '<errormessage>'"
       href: language-reference/error-messages/first-statement-of-sub-new-must-be-explicit-call-to-mybase-new-or-myclass-new.md
     - name: "'For Each' on type '<typename>' is ambiguous because the type implements multiple instantiations of 'System.Collections.Generic.IEnumerable(Of T)'"
       href: language-reference/error-messages/for-each-on-type-typename-is-ambiguous.md
-    - name: Friend assembly reference <reference> is invalid
+    - name: BC31535
       href: language-reference/error-messages/friend-assembly-reference-reference-is-invalid.md
-    - name: Function '<procedurename>' doesn't return a value on all code paths
+    - name: BC42105
       href: language-reference/error-messages/function-procedurename-doesn-t-return-a-value-on-all-code-paths.md
-    - name: Function evaluation is disabled because a previous function evaluation timed out
+    - name: BC30957
       href: language-reference/error-messages/function-evaluation-is-disabled.md
-    - name: Generic parameters used as optional parameter types must be class constrained
+    - name: BC32124
       href: language-reference/error-messages/generic-parameters-used-as-optional-parameter-types-must-be-class-constrained.md
     - name: "'Get' accessor of property '<propertyname>' is not accessible"
       href: language-reference/error-messages/get-accessor-of-property-propertyname-is-not-accessible.md
-    - name: Handles clause requires a WithEvents variable defined in the containing type or one of its base types
+    - name: BC30506
       href: language-reference/error-messages/handles-clause-requires-a-withevents-variable-defined.md
-    - name: Identifier expected
+    - name: BC30203
       href: language-reference/error-messages/identifier-expected.md
-    - name: Identifier is too long
+    - name: BC30033
       href: language-reference/error-messages/identifier-is-too-long.md
-    - name: Initializer expected
+    - name: BC30996
       href: language-reference/error-messages/initializer-expected.md
-    - name: Input past end of file
+    - name: Runtime Error 62
       href: language-reference/error-messages/input-past-end-of-file.md
-    - name: Internal error happened at <location>
+    - name: Runtime Error 51
       href: language-reference/error-messages/internal-error-happened-at-location.md
-    - name: Implicit conversion from '<typename1>' to '<typename2>' in copying the value of 'ByRef' parameter '<parametername>' back to the matching argument.
+    - name: BC41999
       href: language-reference/error-messages/implicit-conversion-from-typename1-to-typename2-in-copying.md
     - name: "'Is' requires operands that have reference types, but this operand has the value type '<typename>'"
       href: language-reference/error-messages/is-requires-operands-that-have-reference-types.md
     - name: "'IsNot' operand of type 'typename' can only be compared to 'Nothing', because 'typename' is a nullable type"
       href: language-reference/error-messages/isnot-operand-of-type-can-only-be-compared-to-nothing.md
-    - name: Labels that are numbers must be followed by colons
+    - name: BC30801
       href: language-reference/error-messages/labels-that-are-numbers-must-be-followed-by-colons.md
-    - name: Lambda expression will not be removed from this event handler
+    - name: BC42326
       href: language-reference/error-messages/lambda-expression-will-not-be-removed-from-this-event-handler.md
-    - name: Lambda expressions are not valid in the first expression of a 'Select Case' statement
+    - name: BC36635
       href: language-reference/error-messages/lambda-expressions-are-not-valid-in-the-first-expression-of-select-case.md
-    - name: Late bound resolution; runtime errors could occur
+    - name: BC42017
       href: language-reference/error-messages/late-bound-resolution-runtime-errors-could-occur.md
-    - name: Latebound overload resolution cannot be applied to '<procedurename>' because the accessing instance is an interface type
+    - name: BC30933
       href: language-reference/error-messages/latebound-overload-resolution-cannot-be-applied.md
-    - name: Leading '.' or '!' can only appear inside a 'With' statement
+    - name: BC30157
       href: language-reference/error-messages/leading-period-or-exclamation-point-can-only-appear-inside-a-with-statement.md
-    - name: Line is too long
+    - name: BC30494
       href: language-reference/error-messages/line-is-too-long.md
     - name: "'Line' statements are no longer supported (Visual Basic Compiler Error)"
       href: language-reference/error-messages/line-statements-are-no-longer-supported-visual-basic-compiler-error.md
-    - name: Method does not have a signature compatible with the delegate
+    - name: BC36563
       href: language-reference/error-messages/method-does-not-have-a-signature-compatible-with-the-delegate.md
-    - name: Methods of 'System.Nullable(Of T)' cannot be used as operands of the 'AddressOf' operator
+    - name: BC32126
       href: language-reference/error-messages/methods-of-system-nullable-of-t-cannot-be-used-as-operands-of-the-addressof.md
     - name: "'Module' statements can occur only at file or namespace level"
       href: language-reference/error-messages/module-statements-can-occur-only-at-file-or-namespace-level.md
-    - name: Name <membername> is not CLS-compliant
+    - name: BC40031
       href: language-reference/error-messages/name-membername-is-not-cls-compliant.md
-    - name: Name '<name>' is not declared
+    - name: BC30451
       href: language-reference/error-messages/name-name-is-not-declared.md
-    - name: Name <namespacename> in the root namespace <fullnamespacename> is not CLS-compliant
+    - name: BC40039
       href: language-reference/error-messages/name-namespacename-in-the-root-namespace-fullnamespacename-is-not-cls-compliant.md
-    - name: Namespace or type specified in the Imports '<qualifiedelementname>' doesn't contain any public member or cannot be found
+    - name: BC40056
       href: language-reference/error-messages/namespace-or-type-specified-in-the-imports-qualifiedelementname.md
-    - name: Namespace or type specified in the project-level Imports '<qualifiedelementname>' doesn't contain any public member or cannot be found
+    - name: BC40057
       href: language-reference/error-messages/namespace-or-type-specified-in-the-project-level-imports-qualifiedelementname.md
-    - name: Need property array index
+    - name: Runtime Error 381
       href: language-reference/error-messages/need-property-array-index.md
-    - name: Nested function does not have a signature that is compatible with delegate '<delegatename>'
+    - name: BC36532
       href: language-reference/error-messages/nested-function-does-not-have-a-signature-that-is-compatible-with-delegate.md
-    - name: No accessible 'Main' method with an appropriate signature was found in '<name>'
+    - name: BC30737
       href: language-reference/error-messages/no-accessible-main-method-with-an-appropriate-signature-was-found-in-name.md
-    - name: Non-CLS-compliant <membername> is not allowed in a CLS-compliant interface
+    - name: BC40033
       href: language-reference/error-messages/non-cls-compliant-membername-is-not-allowed-in-a-cls-compliant-interface.md
-    - name: Nullable type inference is not supported in this context
+    - name: BC36629
       href: language-reference/error-messages/nullable-type-inference-is-not-supported-in-this-context.md
-    - name: Number of indices exceeds the number of dimensions of the indexed array
+    - name: BC30106
       href: language-reference/error-messages/number-of-indices-exceeds-the-number-of-dimensions-of-the-indexed-array.md
-    - name: Object or class does not support the set of events
+    - name: Runtime Error 80
       href: language-reference/error-messages/object-or-class-does-not-support-the-set-of-events.md
-    - name: Object required
+    - name: Runtime Error 424
       href: language-reference/error-messages/object-required.md
-    - name: Object variable or With block variable not set
+    - name: Runtime Error 91
       href: language-reference/error-messages/object-variable-or-with-block-variable-not-set.md
     - name: "Operator declaration must be one of:  +,-,*,-,-,^, &, Like, Mod, And, Or, Xor, Not, <<, >>, =, <>, <, <=, >, >=, CType, IsTrue, IsFalse"
       href: language-reference/error-messages/operator-declaration-must-be-one-of.md
     - name: "'Optional' expected"
       href: language-reference/error-messages/optional-expected.md
-    - name: Optional parameters must specify a default value
+    - name: BC30812
       href: language-reference/error-messages/optional-parameters-must-specify-a-default-value.md
-    - name: Ordinal is not valid
+    - name: Runtime Error 452
       href: language-reference/error-messages/ordinal-is-not-valid.md
-    - name: Out of memory (Visual Basic Compiler Error)
+    - name: BC2004
       href: language-reference/error-messages/out-of-memory-visual-basic-compiler-error.md
-    - name: Out of stack space
+    - name: Runtime Error 28
       href: language-reference/error-messages/out-of-stack-space.md
-    - name: Out of string space
+    - name: Runtime Error 14
       href: language-reference/error-messages/out-of-string-space.md
-    - name: Overflow (Visual Basic Error)
+    - name: BC30036
       href: language-reference/error-messages/overflow-visual-basic-error.md
-    - name: Overflow (Visual Basic Run-Time Error)
+    - name: Runtime Error 6
       href: language-reference/error-messages/overflow-visual-basic-run-time-error.md
-    - name: Path not found
+    - name: Runtime Error 76
       href: language-reference/error-messages/path-not-found.md
-    - name: Path-File access error
+    - name: Runtime Error 75
       href: language-reference/error-messages/path-file-access-error.md
-    - name: Permission denied
+    - name: Runtime Error 70
       href: language-reference/error-messages/permission-denied.md
-    - name: Procedure call or argument is not valid
+    - name: Runtime Error 5
       href: language-reference/error-messages/procedure-call-or-argument-is-not-valid.md
-    - name: Property '<propertyname>' doesn't return a value on all code paths
+    - name: BC42107
       href: language-reference/error-messages/property-propertyname-doesn-t-return-a-value-on-all-code-paths.md
-    - name: Property array index is not valid
+    - name: Runtime Error 381
       href: language-reference/error-messages/property-array-index-is-not-valid.md
-    - name: Property let procedure not defined and property get procedure did not return an object
+    - name: Runtime Error 451
       href: language-reference/error-messages/property-let-procedure-not-defined-and-property-get-procedure-did-not-return.md
-    - name: Property not found
+    - name: Runtime Error 422
       href: language-reference/error-messages/property-not-found.md
-    - name: Property or method not found
+    - name: Runtime Error 438
       href: language-reference/error-messages/property-or-method-not-found.md
-    - name: Range variable <variable> hides a variable in an enclosing block, a previously defined range variable, or an implicitly declared variable in a query expression
+    - name: BC36633
       href: language-reference/error-messages/range-variable-variable-hides-a-variable-in-an-enclosing-block.md
-    - name: Range variable name can be inferred only from a simple or qualified name with no arguments
+    - name: BC36599
       href: language-reference/error-messages/range-variable-name-can-be-inferred.md
-    - name: Reference required to assembly '<assemblyidentity>' containing type '<typename>', but a suitable reference could not be found due to ambiguity between projects '<projectname1>' and '<projectname2>'
+    - name: BC30969
       href: language-reference/error-messages/reference-required-to-assembly-containing-type-but-suitable-reference-not-found.md
-    - name: Reference required to assembly '<assemblyname>' containing the base class '<classname>'
+    - name: BC30007
       href: language-reference/error-messages/reference-required-to-assembly-assemblyname-containing-the-base-class-classname.md
-    - name: Requested operation is not available (BC35000)
+    - name: BC35000
       href: language-reference/error-messages/bc35000.md
-    - name: Resume without error
+    - name: Runtime Error 20
       href: language-reference/error-messages/resume-without-error.md
-    - name: Return type of function '<procedurename>' is not CLS-compliant
+    - name: BC40027
       href: language-reference/error-messages/return-type-of-function-procedurename-is-not-cls-compliant.md
     - name: "'Set' accessor of property '<propertyname>' is not accessible"
       href: language-reference/error-messages/set-accessor-of-property-propertyname-is-not-accessible.md
-    - name: Some subkeys cannot be deleted
+    - name: Runtime Error 383
       href: language-reference/error-messages/some-subkeys-cannot-be-deleted.md
-    - name: Statement cannot end a block outside of a line 'If' statement
+    - name: BC32005
       href: language-reference/error-messages/statement-cannot-end-a-block-outside-of-a-line-if-statement.md
-    - name: Statement is not valid in a namespace
+    - name: BC30001
       href: language-reference/error-messages/statement-is-not-valid-in-a-namespace.md
-    - name: Statement is not valid inside a method-multiline lambda
+    - name: BC30024
       href: language-reference/error-messages/statement-is-not-valid-inside-a-method-multiline-lambda.md
-    - name: String constants must end with a double quote
+    - name: BC30648
       href: language-reference/error-messages/string-constants-must-end-with-a-double-quote.md
-    - name: Structure '<structurename>' must contain at least one instance member variable or at least one instance event declaration not marked 'Custom'
+    - name: BC30941
       href: language-reference/error-messages/structure-structurename-must-contain.md
     - name: "'Sub Main' was not found in '<name>'"
       href: language-reference/error-messages/sub-main-was-not-found-in-name.md
-    - name: Sub or Function not defined
+    - name: Runtime Error 35
       href: language-reference/error-messages/sub-or-function-not-defined.md
-    - name: Subscript out of range
+    - name: Runtime Error 9
       href: language-reference/error-messages/subscript-out-of-range.md
-    - name: TextFieldParser is unable to complete the read operation because maximum buffer size has been exceeded
+    - name: BC31430
       href: language-reference/error-messages/textfieldparser-is-unable-to-complete-read-operation.md
-    - name: The type for variable '<variablename>' will not be inferred because it is bound to a field in an enclosing scope
+    - name: BC42110
       href: language-reference/error-messages/the-type-for-variable-variablename-will-not-be-inferred.md
-    - name: This array is fixed or temporarily locked
+    - name: Runtime Error 10
       href: language-reference/error-messages/this-array-is-fixed-or-temporarily-locked.md
-    - name: This key is already associated with an element of this collection
+    - name: Runtime Error 457
       href: language-reference/error-messages/this-key-is-already-associated-with-an-element-of-this-collection.md
-    - name: Too many files
+    - name: Runtime Error 67
       href: language-reference/error-messages/too-many-files.md
-    - name: Type '<typename>' has no constructors
+    - name: BC30251
       href: language-reference/error-messages/type-typename-has-no-constructors.md
-    - name: Type <typename> is not CLS-compliant
+    - name: BC40041
       href: language-reference/error-messages/type-typename-is-not-cls-compliant.md
-    - name: Type '<typename>' is not defined
+    - name: BC30002
       href: language-reference/error-messages/type-typename-is-not-defined.md
-    - name: Type arguments could not be inferred from the delegate
+    - name: BC36564
       href: language-reference/error-messages/type-arguments-could-not-be-inferred-from-the-delegate.md
-    - name: Type mismatch
+    - name: Runtime Error 13
       href: language-reference/error-messages/type-mismatch.md
-    - name: Type of '<variablename>' cannot be inferred because the loop bounds and the step variable do not widen to the same type
+    - name: BC30982
       href: language-reference/error-messages/type-of-variablename-cannot-be-inferred.md
-    - name: Type of member '<membername>' is not CLS-compliant
+    - name: BC40025
       href: language-reference/error-messages/type-of-member-membername-is-not-cls-compliant.md
-    - name: Type of optional value for optional parameter <parametername> is not CLS-compliant
+    - name: BC40042
       href: language-reference/error-messages/type-of-optional-value-for-optional-parameter-is-not-cls-compliant.md
-    - name: Type of parameter '<parametername>' is not CLS-compliant
+    - name: BC40028
       href: language-reference/error-messages/type-of-parameter-parametername-is-not-cls-compliant.md
-    - name: Type parameters cannot be used as qualifiers
+    - name: BC32098
       href: language-reference/error-messages/type-parameters-cannot-be-used-as-qualifiers.md
     - name: "Unable to create strong-named assembly from key file '<filename>': <error>"
       href: language-reference/error-messages/unable-to-create-strong-named-assembly-from-key-file-filename-error.md
@@ -1253,45 +1253,45 @@ items:
       href: language-reference/error-messages/unable-to-embed-resource-file-filename-error-message.md
     - name: "Unable to emit assembly: <error message>"
       href: language-reference/error-messages/unable-to-emit-assembly-error-message.md
-    - name: Unable to find required file '<filename>'
+    - name: BC30655
       href: language-reference/error-messages/unable-to-find-required-file-filename.md
-    - name: Unable to get serial port names because of an internal system error
+    - name: BC31427
       href: language-reference/error-messages/unable-to-get-serial-port-names-because-of-an-internal-system-error.md
     - name: "Unable to link to resource file '<filename>': <error message>"
       href: language-reference/error-messages/unable-to-link-to-resource-file-filename-error-message.md
-    - name: Unable to load information for class '<classname>'
+    - name: BC30712
       href: language-reference/error-messages/unable-to-load-information-for-class-classname.md
-    - name: Unable to write output to memory
+    - name: BC31020
       href: language-reference/error-messages/unable-to-write-output-to-memory.md
-    - name: Unable to write temporary file because temporary path is not available
+    - name: BC30698
       href: language-reference/error-messages/unable-to-write-temporary-file-because-temporary-path-is-not-available.md
     - name: "Unable to write to output file '<filename>': <error>"
       href: language-reference/error-messages/unable-to-write-to-output-file-filename-error.md
-    - name: Underlying type <typename> of Enum is not CLS-compliant
+    - name: BC40032
       href: language-reference/error-messages/underlying-type-typename-of-enum-is-not-cls-compliant.md
-    - name: Using the iteration variable in a lambda expression may have unexpected results
+    - name: BC42324
       href: language-reference/error-messages/using-the-iteration-variable-in-a-lambda-expression-may-have-unexpected-results.md
-    - name: Value of type '<typename1>' cannot be converted to '<typename2>'
+    - name: BC30955
       href: language-reference/error-messages/value-of-type-typename1-cannot-be-converted-to-typename2.md
-    - name: Value of type '<typename1>' cannot be converted to '<typename2>' (Multiple file references)
+    - name: BC30955 (Multiple file references)
       href: language-reference/error-messages/value-of-type-typename1-cannot-be-converted-to-typename2-multiple.md
-    - name: Value of type 'type1' cannot be converted to 'type2'
+    - name: BC31194
       href: language-reference/error-messages/value-of-type-type1-cannot-be-converted-to-type2.md
-    - name: Variable '<variablename>' hides a variable in an enclosing block
+    - name: BC30616
       href: language-reference/error-messages/variable-variablename-hides-a-variable-in-an-enclosing-block.md
-    - name: Variable '<variablename>' is used before it has been assigned a value
+    - name: BC42104
       href: language-reference/error-messages/variable-variablename-is-used-before-it-has-been-assigned-a-value.md
-    - name: Variable uses an Automation type not supported in Visual Basic
+    - name: Runtime Error 458
       href: language-reference/error-messages/variable-uses-an-automation-type-not-supported.md
-    - name: XML axis properties do not support late binding
+    - name: BC31168
       href: language-reference/error-messages/xml-axis-properties-do-not-support-late-binding.md
-    - name: XML comment exception must have a 'cref' attribute
+    - name: BC42319
       href: language-reference/error-messages/xml-comment-exception-must-have-a-cref-attribute.md
-    - name: XML entity references are not supported
+    - name: BC31180
       href: language-reference/error-messages/xml-entity-references-are-not-supported.md
-    - name: XML literals and XML properties are not supported in embedded code within ASP.NET
+    - name: BC31200
       href: language-reference/error-messages/xml-literals-and-xml-properties-are-not-supported-in-embedded-code-in-aspnet.md
-    - name: XML namespace URI '<uri>' can be bound only to 'xmlns'
+    - name: BC31183
       href: language-reference/error-messages/xml-namespace-uri-uri-can-be-bound-only-to-xmlns.md
 - name: Reference
   href: reference/index.md

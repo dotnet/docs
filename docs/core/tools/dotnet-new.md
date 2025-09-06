@@ -56,7 +56,7 @@ To activate tab completion for the .NET SDK, see [Enable tab completion](enable-
 
   Starting with .NET SDK 5.0.300, the [`search` command](dotnet-new-search.md) should be used to search for templates in NuGet.org.
 
-[!INCLUDE [templates](../../../includes/templates.md)]
+  For a list of templates that ship with the .NET SDK, see [Preinstalled templates](dotnet-new-sdk-templates.md#preinstalled-templates).
 
 ## Options
 

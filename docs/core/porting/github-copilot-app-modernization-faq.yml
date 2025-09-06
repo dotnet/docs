@@ -6,7 +6,7 @@ metadata:
   author: adegeo
   ms.author: adegeo
   ms.topic: faq
-  ms.date: 05/16/2025
+  ms.date: 09/04/2025
 
 title: GitHub Copilot app modernization - upgrade for .NET FAQ
 summary: |
@@ -48,10 +48,10 @@ sections:
             - Web API
           - Desktop technologies such as Windows Forms and Windows Presentation Foundation.
           - Test projects such as MSTest and NUnit.
+          - .NET Framework projects.
 
       - question: What limitations are there?
         answer: |
-          - It doesn't support .NET Framework projects. (First upgrade the project to .NET with the [Upgrade Assistant tool](upgrade-assistant-overview.md).)
           - Only Git repositories are supported.
           - There's no guarantee that the upgrade suggestions are considered best practices.
           - The LLM doesn't persist learning from the upgrade. Meaning, code fixes and corrections you provide during the upgrade process don't persist and can't be remembered for future upgrades.

@@ -3,7 +3,6 @@ title: Quickstart - Create a .NET AI app using the AI app template
 description: Create a .NET AI app to chat with custom data using the AI app template extensions and the Microsoft.Extensions.AI libraries
 ms.date: 07/30/2025
 ms.topic: quickstart
-ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 author: alexwolfmsft
 ms.author: alexwolf
 zone_pivot_groups: meai-targets

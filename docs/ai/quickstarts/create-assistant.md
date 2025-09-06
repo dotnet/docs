@@ -3,7 +3,6 @@ title: Quickstart - Create a minimal AI assistant using .NET
 description: Learn to create a minimal AI assistant with tooling capabilities using .NET and the Azure OpenAI SDK libraries
 ms.date: 01/25/2025
 ms.topic: quickstart
-ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 zone_pivot_groups: openai-library
 ---
 

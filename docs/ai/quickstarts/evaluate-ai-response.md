@@ -3,7 +3,6 @@ title: Quickstart - Evaluate the quality of a model's response
 description: Learn how to create an MSTest app to evaluate the AI chat response of a language model.
 ms.date: 03/18/2025
 ms.topic: quickstart
-ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 ---
 
 # Quickstart: Evaluate response quality

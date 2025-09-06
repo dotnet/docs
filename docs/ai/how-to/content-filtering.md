@@ -1,7 +1,6 @@
 ---
 title: "Manage OpenAI Content Filtering in a .NET app"
 description: "Learn how to manage OpenAI content filtering programmatically in a .NET app using the OpenAI client library."
-ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 ms.topic: how-to
 ms.date: 05/29/2025
 

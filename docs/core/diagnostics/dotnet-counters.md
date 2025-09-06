@@ -1,7 +1,7 @@
 ---
 title: dotnet-counters diagnostic tool - .NET CLI
 description: Learn how to install and use the dotnet-counter CLI tool for ad-hoc health monitoring and first-level performance investigation.
-ms.date: 09/06/2020
+ms.date: 09/06/2025
 ms.topic: reference
 ---
 # Investigate performance counters (dotnet-counters)
@@ -127,7 +127,7 @@ dotnet-counters collect [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
 
 - **`--counters <COUNTERS>`**
 
-  A comma-separated list of counters. Counters can be specified `provider_name[:counter_name]`. If the `provider_name` is used without a qualifying list of counters, then all counters from the provider are shown. To discover provider and counter names, consult [built-in metrics docs](https://learn.microsoft.com/dotnet/core/diagnostics/built-in-metrics). For [EventCounters](event-counters.md), `provider_name` is the name of the EventSource and for [Meters](metrics.md), `provider_name` is the name of the Meter.
+  A comma-separated list of counters. Counters can be specified `provider_name[:counter_name]`. If the `provider_name` is used without a qualifying list of counters, then all counters from the provider are shown. To discover provider and counter names, consult [built-in metrics docs](built-in-metrics.md). For [EventCounters](event-counters.md), `provider_name` is the name of the EventSource and for [Meters](metrics.md), `provider_name` is the name of the Meter.
 
 - **`--format <csv|json>`**
 
@@ -199,7 +199,7 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
 
 - **`--counters <COUNTERS>`**
 
-  A comma-separated list of counters. Counters can be specified `provider_name[:counter_name]`. If the `provider_name` is used without a qualifying list of counters, then all counters from the provider are shown. To discover provider and counter names, consult [built-in metrics docs](https://learn.microsoft.com/dotnet/core/diagnostics/built-in-metrics). For [EventCounters](event-counters.md), `provider_name` is the name of the EventSource and for [Meters](metrics.md), `provider_name` is the name of the Meter.
+  A comma-separated list of counters. Counters can be specified `provider_name[:counter_name]`. If the `provider_name` is used without a qualifying list of counters, then all counters from the provider are shown. To discover provider and counter names, consult [built-in metrics docs](built-in-metrics.md). For [EventCounters](event-counters.md), `provider_name` is the name of the EventSource and for [Meters](metrics.md), `provider_name` is the name of the Meter.
 
  **`-- <command>`**
 
@@ -274,7 +274,7 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
   ```
 
   > [!NOTE]
-  > If the app uses .NET version 8 or lower the [System.Runtime Meter](https://learn.microsoft.com/dotnet/core/diagnostics/built-in-metrics-runtime#systemruntime) didn't exist yet and dotnet-counters will fall back to display the older [System.Runtime EventCounters](https://learn.microsoft.com/dotnet/core/diagnostics/available-counters#systemruntime-counters) instead. The UI will look slightly different as shown below.
+  > If the app uses .NET version 8 or lower the [System.Runtime Meter](built-in-metrics-runtime#systemruntime) didn't exist yet and dotnet-counters will fall back to display the older [System.Runtime EventCounters](available-counters#systemruntime-counters) instead. The UI will look slightly different as shown below.
 
   ```
   [System.Runtime]

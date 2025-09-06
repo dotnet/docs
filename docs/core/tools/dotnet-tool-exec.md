@@ -61,11 +61,11 @@ This command also exists in two other forms for easier use
 
 - **`--add-source <SOURCE>`**
 
-  Adds an additional NuGet package source to use during installation. Feeds are accessed in parallel, not in a fallback cascade sequence. If the same package and version is available in multiple feeds, the fastest feed wins. See [What happens when a NuGet package is installed](/nuget/concepts/package-installation-process#what-happens-when-a-nuget-package-is-installed). This can be controlled through the use of NuGet Package Source Mapping. For more information, see [Package Source Mapping](~/nuget/consume-packages/package-source-mapping).
+  Adds an additional NuGet package source to use during installation. Feeds are accessed in parallel, not in a fallback cascade sequence. If the same package and version is available in multiple feeds, the fastest feed wins. See [What happens when a NuGet package is installed](/nuget/concepts/package-installation-process#what-happens-when-a-nuget-package-is-installed). This can be controlled through the use of NuGet Package Source Mapping. For more information, see [Package Source Mapping](/nuget/consume-packages/package-source-mapping).
 
 - **`--configfile <FILE>`**
 
-  The NuGet configuration file (*nuget.config*) to use. If specified, only the settings from this file will be used. If not specified, the hierarchy of configuration files from the current directory will be used. For more information, see [Common NuGet Configurations](~/nuget/consume-packages/configuring-nuget-behavior).
+  The NuGet configuration file (*nuget.config*) to use. If specified, only the settings from this file will be used. If not specified, the hierarchy of configuration files from the current directory will be used. For more information, see [Common NuGet Configurations](/nuget/consume-packages/configuring-nuget-behavior).
 
 - **`--disable-parallel`**
 

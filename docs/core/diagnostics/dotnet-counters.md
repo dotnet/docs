@@ -23,6 +23,7 @@ There are three ways to download and use `dotnet-counters`:
   ```
 
   For example:
+
   ```dotnetcli
   dnx dotnet-counters monitor --process-id 1234
   ```

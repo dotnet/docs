@@ -102,13 +102,14 @@ Once installed as a local tool, you can invoke it in multiple ways:
    > [!NOTE]
    > When using dnx with a local tool manifest, it automatically uses the version specified in the manifest.
 
+2. Using `dotnet botsay`:
 
-2. Using `dotnet botsay` (recommended for local tools):
    ```dotnetcli
    dotnet botsay hello from the bot
    ```
 
 3. Using `dotnet tool run`
+
    ```dotnetcli
    dotnet tool run botsay hello from the bot
    ```

@@ -36,18 +36,10 @@ When you run `dotnet tool exec`, the command:
 3. Invokes the tool with any provided arguments
 4. Returns the tool's exit code
 
-The command interacts with local tool configurations seamlessly:
-- If a local tool manifest exists and contains the specified tool, it uses that version
-- Otherwise, it downloads the latest version or the version you specify
-
-This command is ideal for:
-- Running tools without permanent installation
-- Trying out tools before deciding to install them
-- Running tools in CI/CD pipelines without setup steps
-- Using different versions of tools for different projects
-- Using the same mechanism across global and local tools
+`dotnet tool exec` works seamlessly with both global and local tools. If you have a local tool manifest available, it uses the manifest to determine which version of the tool to run.
 
 This command also exists in two other forms for easier use
+
 * `dotnet dnx` - a hidden alias for `dotnet tool exec` that is mostly used to give us a point to easily implement the
 * `dnx` - a shell script that invokes `dotnet dnx` from the SDK. This script is provided by the installer and is available on the PATH. It allows for very simple use of Tools directly via `dnx <toolname>`.
 

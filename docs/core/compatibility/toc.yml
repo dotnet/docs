@@ -58,6 +58,8 @@ items:
                 href: core-libraries/10.0/sigterm-signal-handler.md
               - name: Explicit struct Size disallowed with InlineArray
                 href: core-libraries/10.0/inlinearray-explicit-size-disallowed.md
+              - name: FilePatternMatch.Stem changed to non-nullable
+                href: core-libraries/10.0/filepatternmatch-stem-nonnullable.md
               - name: System.Linq.AsyncEnumerable included in core libraries
                 href: core-libraries/10.0/asyncenumerable.md
               - name: YMM embedded rounding removed from AVX10.2

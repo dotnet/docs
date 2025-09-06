@@ -131,7 +131,6 @@ The `dotnet tool install -g` command does still serve an important purpose for u
 ## See also
 
 - [.NET tools](global-tools.md)
-- [dnx command](dnx.md)
 - [dotnet tool install](dotnet-tool-install.md)
 - [dotnet tool run](dotnet-tool-run.md)
 - [Tutorial: Install and use a .NET global tool using the .NET CLI](global-tools-how-to-use.md)

@@ -274,7 +274,7 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
   ```
 
   > [!NOTE]
-  > If the app uses .NET version 8 or lower the [System.Runtime Meter](built-in-metrics-runtime#systemruntime) didn't exist yet and dotnet-counters will fall back to display the older [System.Runtime EventCounters](available-counters#systemruntime-counters) instead. The UI will look slightly different as shown below.
+  > If the app uses .NET version 8 or lower the [System.Runtime Meter](https://learn.microsoft.com/dotnet/core/diagnostics/built-in-metrics-runtime#systemruntime) didn't exist yet and dotnet-counters will fall back to display the older [System.Runtime EventCounters](https://learn.microsoft.com/dotnet/core/diagnostics/available-counters#systemruntime-counters) instead. The UI will look slightly different as shown below.
 
   ```
   [System.Runtime]

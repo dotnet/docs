@@ -18,6 +18,7 @@ When installed, .NET consists of several components that are laid out as follows
 ```
 {dotnet_root}                    (0)              (*)
 ├── dotnet                       (1)
+├── dnx                          (22)
 ├── LICENSE.txt                  (8)
 ├── ThirdPartyNotices.txt        (8)
 ├── host                                          (*)
@@ -69,11 +70,14 @@ When installed, .NET consists of several components that are laid out as follows
 │       └── dotnet.1.gz          (9)
 └── usr/bin
         └── dotnet               (10)
+        └── dnx                  (23)
 ```
 
 - (0) **{dotnet_root}** is a shared root for all .NET major and minor versions. If multiple runtimes are installed, they share the **{dotnet_root}** folder, for example, `{dotnet_root}/shared/Microsoft.NETCore.App/6.0.11` and `{dotnet_root}/shared/Microsoft.NETCore.App/7.0.0`. The name of the `{dotnet_root}` folder should be version agnostic, that is, simply `dotnet`.
 
 - (1) **dotnet** The host (also known as the "muxer") has two distinct roles: activate a runtime to launch an application, and activate an SDK to dispatch commands to it. The host is a native executable (`dotnet.exe`).
+
+- (22) **dnx** The `dnx` script is an executable shell script whose purpose is to foward along user commands to the `dotnet dnx` command inside an SDK. This functionality primarily exists to make acquiring and launching various kinds of .NET applications, like .NET Tools, easier for end-users. Think of it similarly to the `npx` command from Node. It is version-independent since most of the actual functionality of the `dnx` one-shot execution process is handled in the `dotnet` CLI implementation in the versioned SDK directory.
 
 While there's a single host, most of the other components are in versioned directories (2,3,5,6). This means multiple versions can be present on the system since they're installed side by side.
 
@@ -93,7 +97,7 @@ The **shared** folder contains frameworks. A shared framework provides a set of 
 
 - (8) **LICENSE.txt,ThirdPartyNotices.txt** are the .NET license and licenses of third-party libraries used in .NET, respectively.
 
-- (9,10) **dotnet.1.gz, dotnet** `dotnet.1.gz` is the dotnet manual page. `dotnet` is a symlink to the dotnet host(1). These files are installed at well-known locations for system integration.
+- (9,10, 23) **dotnet.1.gz, dotnet** `dotnet.1.gz` is the dotnet manual page. `dotnet` is a symlink to the dotnet host(1). `dnx` is a symlink to the `dnx` shell script (22). These files are installed at well-known locations for system integration.
 
 - (11,12) **Microsoft.NETCore.App.Ref,Microsoft.AspNetCore.App.Ref** describe the API of an `x.y` version of .NET and ASP.NET Core respectively. These packs are used when compiling for those target versions.
 
@@ -171,7 +175,7 @@ The following lists the recommended packages:
 - `dotnet-host` - dependency
   - **Version:** \<runtime version>
   - **Example:** dotnet-host
-  - **Contains:** (1),(8),(9),(10),(16)
+  - **Contains:** (1),(8),(9),(10),(16),(22),(23)
 
 - `dotnet-apphost-pack-[major].[minor]` - dependency
   - **Version:** \<runtime version>

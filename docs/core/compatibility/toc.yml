@@ -138,6 +138,8 @@ items:
                 href: sdk/10.0/http-warnings-to-errors.md
               - name: NUGET_ENABLE_ENHANCED_HTTP_RETRY environment variable removed
                 href: sdk/10.0/nuget-enhanced-http-retry-removed.md
+              - name: NuGet logs an error for invalid package IDs
+                href: sdk/10.0/nuget-packageid-validation.md
           - name: Windows Forms
             items:
               - name: API obsoletions

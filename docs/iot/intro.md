@@ -47,7 +47,8 @@ Some commonly used device bindings include:
 - [RGBLedMatrix - RGB LED Matrix](https://github.com/dotnet/iot/tree/main/src/devices/RGBLedMatrix)
 
 ## A word on threads
-By convention objects in these libraries are **not** designed to be **thread safe**. This means that all access to an object should be done from the thread it was created on. Be aware when using the libraries that they may run other threads internally for monitoring hardware and firing events. If you subscribe to an event it will likely be fired from a different thread. 
+
+By default objects in these libraries are **not thread safe**. This means that access to an object must only be from one thread at a time. When using the libraries you must be aware that they will often run other threads internally for monitoring hardware and firing events. If you subscribe to an event, it will be fired from a different thread. It is your responsibility as a user of the library user to control thread access to the object.
 
 ## Supported operating systems
 

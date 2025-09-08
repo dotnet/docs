@@ -78,7 +78,7 @@ Some common regular expression patterns that contain positive character classes 
  The following example defines a positive character group that contains the characters "a" and "e" so that the input string must contain the words "grey" or "gray" followed by another word for a match to occur.  
   
  :::code language="csharp" source="snippets/character-classes-in-regular-expressions/csharp/Program.cs" id="PositiveCharacterGroup":::
- [!code-vb[Conceptual.RegEx.Language.CharacterClasses#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.characterclasses/vb/positivecharclasses.vb#1)]  
+ :::code language="vb" source="snippets/character-classes-in-regular-expressions/vb/Program.vb" id="PositiveCharacterGroup":::  
   
  The regular expression `gr[ae]y\s\S+?[\s|\p{P}]` is defined as follows:  
   
@@ -93,7 +93,7 @@ Some common regular expression patterns that contain positive character classes 
  The following example matches words that begin with any capital letter. It uses the subexpression `[A-Z]` to represent the range of capital letters from A to Z.  
   
  :::code language="csharp" source="snippets/character-classes-in-regular-expressions/csharp/Program.cs" id="CharacterRange":::
- [!code-vb[Conceptual.RegEx.Language.CharacterClasses#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.characterclasses/vb/range.vb#3)]  
+ :::code language="vb" source="snippets/character-classes-in-regular-expressions/vb/Program.vb" id="CharacterRange":::  
   
  The regular expression `\b[A-Z]\w*\b` is defined as shown in the following table.  
   
@@ -142,7 +142,7 @@ where *firstCharacter* is the character that begins the range and *lastCharacter
  The following example matches any word that begins with the characters "th" and is not followed by an "o".  
   
  :::code language="csharp" source="snippets/character-classes-in-regular-expressions/csharp/Program.cs" id="NegativeCharacterGroup":::
- [!code-vb[Conceptual.RegEx.Language.CharacterClasses#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.characterclasses/vb/negativecharclasses.vb#2)]  
+ :::code language="vb" source="snippets/character-classes-in-regular-expressions/vb/Program.vb" id="NegativeCharacterGroup":::  
   
  The regular expression `\bth[^o]\w+\b` is defined as shown in the following table.  
   
@@ -165,7 +165,7 @@ where *firstCharacter* is the character that begins the range and *lastCharacter
      The following example illustrates the different behavior of the `.` character class by default and with the <xref:System.Text.RegularExpressions.RegexOptions.Singleline?displayProperty=nameWithType> option. The regular expression `^.+` starts at the beginning of the string and matches every character. By default, the match ends at the end of the first line; the regular expression pattern matches the carriage return character, `\r`, but it does not match `\n`. Because the <xref:System.Text.RegularExpressions.RegexOptions.Singleline?displayProperty=nameWithType> option interprets the entire input string as a single line, it matches every character in the input string, including `\n`.  
   
      :::code language="csharp" source="snippets/character-classes-in-regular-expressions/csharp/Program.cs" id="AnyCharacterMultiline":::
-     [!code-vb[Conceptual.Regex.Language.CharacterClasses#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.characterclasses/vb/any2.vb#5)]  
+     :::code language="vb" source="snippets/character-classes-in-regular-expressions/vb/Program.vb" id="AnyCharacterMultiline":::  
   
 > [!NOTE]
 > Because it matches any character except `\n`, the `.` character class also matches `\r` (the carriage return character).
@@ -173,7 +173,7 @@ where *firstCharacter* is the character that begins the range and *lastCharacter
 - In a positive or negative character group, a period is treated as a literal period character, and not as a character class. For more information, see [Positive Character Group](#PositiveGroup) and [Negative Character Group](#NegativeGroup) earlier in this topic. The following example provides an illustration by defining a regular expression that includes the period character (`.`) both as a character class and as a member of a positive character group. The regular expression `\b.*[.?!;:](\s|\z)` begins at a word boundary, matches any character until it encounters one of five punctuation marks, including a period, and then matches either a white-space character or the end of the string.  
   
      :::code language="csharp" source="snippets/character-classes-in-regular-expressions/csharp/Program.cs" id="AnyCharacterSingleline":::
-     [!code-vb[Conceptual.RegEx.Language.CharacterClasses#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.characterclasses/vb/any1.vb#4)]  
+     :::code language="vb" source="snippets/character-classes-in-regular-expressions/vb/Program.vb" id="AnyCharacterSingleline":::  
   
 > [!NOTE]
 > Because it matches any character, the `.` language element is often used with a lazy quantifier if a regular expression pattern attempts to match any character multiple times. For more information, see [Quantifiers](quantifiers-in-regular-expressions.md).  
@@ -196,7 +196,7 @@ where *firstCharacter* is the character that begins the range and *lastCharacter
  The following example uses the `\p{`*name*`}` construct to match both a Unicode general category (in this case, the `Pd`, or Punctuation, Dash category) and a named block (the `IsGreek` and `IsBasicLatin` named blocks).  
   
  :::code language="csharp" source="snippets/character-classes-in-regular-expressions/csharp/Program.cs" id="UnicodeCategory":::
- [!code-vb[Conceptual.RegEx.Language.CharacterClasses#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.characterclasses/vb/category1.vb#6)]  
+ :::code language="vb" source="snippets/character-classes-in-regular-expressions/vb/Program.vb" id="UnicodeCategory":::  
   
  The regular expression `\b(\p{IsGreek}+(\s)?)+\p{Pd}\s(\p{IsBasicLatin}+(\s)?)+` is defined as shown in the following table.  
   
@@ -230,7 +230,7 @@ where *firstCharacter* is the character that begins the range and *lastCharacter
  The following example uses the `\P{`*name*`}` construct to remove any currency symbols (in this case, the `Sc`, or Symbol, Currency category) from numeric strings.  
   
  :::code language="csharp" source="snippets/character-classes-in-regular-expressions/csharp/Program.cs" id="NegativeUnicodeCategory":::
- [!code-vb[Conceptual.RegEx.Language.CharacterClasses#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.characterclasses/vb/notcategory1.vb#7)]  
+ :::code language="vb" source="snippets/character-classes-in-regular-expressions/vb/Program.vb" id="NegativeUnicodeCategory":::  
   
  The regular expression pattern `(\P{Sc})+` matches one or more characters that are not currency symbols; it effectively strips any currency symbol from the result string.  
   
@@ -264,7 +264,7 @@ where *firstCharacter* is the character that begins the range and *lastCharacter
 |\1|Match the value of the first capture.|  
   
  :::code language="csharp" source="snippets/character-classes-in-regular-expressions/csharp/Program.cs" id="WordCharacter":::
- [!code-vb[Conceptual.RegEx.Language.CharacterClasses#8](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.characterclasses/vb/wordchar1.vb#8)]  
+ :::code language="vb" source="snippets/character-classes-in-regular-expressions/vb/Program.vb" id="WordCharacter":::  
   
 <a name="NonWordCharacter"></a>
 
@@ -301,7 +301,7 @@ where *firstCharacter* is the character that begins the range and *lastCharacter
 |(\W){1,2}|Match a non-word character either one or two times. This is the second capturing group.|  
   
  :::code language="csharp" source="snippets/character-classes-in-regular-expressions/csharp/Program.cs" id="NonWordCharacter":::
- [!code-vb[Conceptual.RegEx.Language.CharacterClasses#9](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.characterclasses/vb/nonwordchar1.vb#9)]  
+ :::code language="vb" source="snippets/character-classes-in-regular-expressions/vb/Program.vb" id="NonWordCharacter":::  
   
  Because the <xref:System.Text.RegularExpressions.Group> object for the second capturing group contains only a single captured non-word character, the example retrieves all captured non-word characters from the <xref:System.Text.RegularExpressions.CaptureCollection> object that is returned by the <xref:System.Text.RegularExpressions.Group.Captures%2A?displayProperty=nameWithType> property.  
   
@@ -334,7 +334,7 @@ where *firstCharacter* is the character that begins the range and *lastCharacter
 |(\s&#124;$)|Match either a white-space character or the end of the input string.|  
   
  :::code language="csharp" source="snippets/character-classes-in-regular-expressions/csharp/Program.cs" id="WhitespaceCharacter":::
- [!code-vb[Conceptual.RegEx.Language.CharacterClasses#10](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.characterclasses/vb/whitespace1.vb#10)]  
+ :::code language="vb" source="snippets/character-classes-in-regular-expressions/vb/Program.vb" id="WhitespaceCharacter":::  
   
 <a name="NonWhitespaceCharacter"></a>
 
@@ -353,7 +353,7 @@ where *firstCharacter* is the character that begins the range and *lastCharacter
 |`\s?`|Match zero or one white-space character.|  
   
  :::code language="csharp" source="snippets/character-classes-in-regular-expressions/csharp/Program.cs" id="NonWhitespaceCharacter":::
- [!code-vb[Conceptual.RegEx.Language.CharacterClasses#11](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.characterclasses/vb/nonwhitespace1.vb#11)]  
+ :::code language="vb" source="snippets/character-classes-in-regular-expressions/vb/Program.vb" id="NonWhitespaceCharacter":::  
   
 <a name="DigitCharacter"></a>
 
@@ -377,7 +377,7 @@ where *firstCharacter* is the character that begins the range and *lastCharacter
 |`$`|Match the end of the input string.|  
   
  :::code language="csharp" source="snippets/character-classes-in-regular-expressions/csharp/Program.cs" id="DigitCharacter":::
- [!code-vb[Conceptual.RegEx.Language.CharacterClasses#12](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.characterclasses/vb/digit1.vb#12)]  
+ :::code language="vb" source="snippets/character-classes-in-regular-expressions/vb/Program.vb" id="DigitCharacter":::  
   
 <a name="NonDigitCharacter"></a>
 
@@ -398,7 +398,7 @@ where *firstCharacter* is the character that begins the range and *lastCharacter
 |`$`|Match the end of the input string.|  
   
  :::code language="csharp" source="snippets/character-classes-in-regular-expressions/csharp/Program.cs" id="NonDigitCharacter":::
- [!code-vb[Conceptual.RegEx.Language.CharacterClasses#13](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.characterclasses/vb/nondigit1.vb#13)]  
+ :::code language="vb" source="snippets/character-classes-in-regular-expressions/vb/Program.vb" id="NonDigitCharacter":::  
   
 <a name="SupportedUnicodeGeneralCategories"></a>
 
@@ -449,7 +449,7 @@ where *firstCharacter* is the character that begins the range and *lastCharacter
  You can determine the Unicode category of any particular character by passing that character to the <xref:System.Char.GetUnicodeCategory%2A> method. The following example uses the <xref:System.Char.GetUnicodeCategory%2A> method to determine the category of each element in an array that contains selected Latin characters.  
   
  :::code language="csharp" source="snippets/character-classes-in-regular-expressions/csharp/Program.cs" id="GetUnicodeCategory":::
- [!code-vb[Conceptual.RegEx.Language.CharacterClasses#14](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.characterclasses/vb/getunicodecategory1.vb#14)]  
+ :::code language="vb" source="snippets/character-classes-in-regular-expressions/vb/Program.vb" id="GetUnicodeCategory":::  
   
 <a name="SupportedNamedBlocks"></a>
 
@@ -594,7 +594,7 @@ where *firstCharacter* is the character that begins the range and *lastCharacter
 |$|End the match at the end of the input string.|  
   
  :::code language="csharp" source="snippets/character-classes-in-regular-expressions/csharp/Program.cs" id="CharacterClassSubtraction":::
- [!code-vb[Conceptual.RegEx.Language.CharacterClasses#15](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.characterclasses/vb/classsubtraction1.vb#15)]  
+ :::code language="vb" source="snippets/character-classes-in-regular-expressions/vb/Program.vb" id="CharacterClassSubtraction":::  
   
 ## See also
 

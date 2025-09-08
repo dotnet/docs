@@ -166,6 +166,29 @@ For any given URL, the method will use the `client` instance provided to get the
 
 Run the program several times to verify that the downloaded lengths don't always appear in the same order.
 
+## Simplify the approach using `Task.WhenEach`
+
+The `while` loop implemented in `SumPageSizesAsync` method can be simplified using the new <xref:System.Threading.Tasks.Task.WhenEach%2A?displayProperty=nameWithType> method introduced in .NET 9, by calling it in `await foreach` loop.
+<br/>Replace the previously implemented `while` loop:
+
+```csharp
+    while (downloadTasks.Any())
+    {
+        Task<int> finishedTask = await Task.WhenAny(downloadTasks);
+        downloadTasks.Remove(finishedTask);
+        total += await finishedTask;
+    }
+```
+
+with the simplified `await foreach`:
+
+```csharp
+    await foreach (Task<int> t in Task.WhenEach(downloadTasks))
+    {
+        total += await t;
+    }
+```
+
 > [!CAUTION]
 > You can use `WhenAny` in a loop, as described in the example, to solve problems that involve a small number of tasks. However, other approaches are more efficient if you have a large number of tasks to process. For more information and examples, see [Processing tasks as they complete](https://devblogs.microsoft.com/pfxteam/processing-tasks-as-they-complete).
 

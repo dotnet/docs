@@ -221,25 +221,25 @@ Unhandled exception. System.InvalidOperationException: The toaster is on fire
    at AsyncBreakfast.Program.<Main>(String[] args)
 ```
 
-Notice that quite a few tasks finish between the time when the toaster catches fire and the system observes the exception. When a task that runs asynchronously throws an exception, that task is **faulted**. The <xref:System.Threading.Tasks.Task> object holds the exception thrown in the <xref:System.Threading.Tasks.Task.Exception?displayProperty=nameWithType> property. Faulted tasks throw an exception when the `Await` expression is applied to the task.
+Notice that quite a few tasks finish between the time when the toaster catches fire and the system observes the exception. When a task that runs asynchronously throws an exception, that task is **faulted**. The <xref:System.Threading.Tasks.Task> object holds the exception that was thrown in the <xref:System.Threading.Tasks.Task.Exception?displayProperty=nameWithType> property. Faulted tasks *throw* the exception when the `Await` expression is applied to the task.
 
 There are two important mechanisms to understand about this process:
 
-- How an exception is stored in a faulted task
-- How an exception is unpackaged and rethrown when code waits (`Await`) on a faulted task
+- How an exception is stored in a faulted task.
+- How an exception is unpackaged and rethrown when code waits (`Await`) on a faulted task.
 
-When code running asynchronously throws an exception, the exception is stored in the <xref:System.Threading.Tasks.Task> object. The <xref:System.Threading.Tasks.Task.Exception?displayProperty=nameWithType> property is a <xref:System.AggregateException> object because more than one exception might be thrown during asynchronous work. Any exception thrown is added to the <xref:System.AggregateException.InnerExceptions?displayProperty=nameWithType> collection. If the `Exception` property is null, a new `AggregateException` object is created and the thrown exception is the first item in the collection.
+When code running asynchronously throws an exception, the exception is stored in the <xref:System.Threading.Tasks.Task> object. The <xref:System.Threading.Tasks.Task.Exception?displayProperty=nameWithType> property is an <xref:System.AggregateException> object because more than one exception might be thrown during asynchronous work. Any exception thrown is added to the <xref:System.AggregateException.InnerExceptions?displayProperty=nameWithType> collection. If the `Exception` property is null, a new `AggregateException` object is created and the thrown exception is the first item in the collection.
 
 The most common scenario for a faulted task is that the `Exception` property contains exactly one exception. When your code waits on a faulted task, it rethrows the first <xref:System.AggregateException.InnerExceptions?displayProperty=nameWithType> exception in the collection. This result is the reason why the output from the example shows an <xref:System.InvalidOperationException> object rather than an `AggregateException` object. Extracting the first inner exception makes working with asynchronous methods as similar as possible to working with their synchronous counterparts. You can examine the `Exception` property in your code when your scenario might generate multiple exceptions.
 
 > [!TIP]
-> The recommended practice is for any argument validation exceptions to emerge *synchronously* from task-returning methods. For more information and examples, see [Exceptions in task-returning methods](/dotnet/fundamentals/exceptions/creating-and-throwing-exceptions#exceptions-in-task-returning-methods).
+> The recommended practice is for any argument validation exceptions to emerge *synchronously* from task-returning methods. For more information and examples, see [Exceptions in task-returning methods](../../../../fundamentals/exceptions/creating-and-throwing-exceptions.md#exceptions-in-task-returning-methods).
 
 Before you continue to the next section, comment out the following two statements in your `ToastBreadAsync` method. You don't want to start another fire:
 
 ```vb
-Console.WriteLine("Fire! Toast is ruined!")
-Throw New InvalidOperationException("The toaster is on fire")
+' Console.WriteLine("Fire! Toast is ruined!")
+' Throw New InvalidOperationException("The toaster is on fire")
 ```
 
 ## Apply await expressions to tasks efficiently

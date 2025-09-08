@@ -1,4 +1,7 @@
-﻿Class Class072b9cf6629846f1849e4edc1631564c
+﻿Imports System.Windows.Forms
+Imports System.Data
+
+Class Class072b9cf6629846f1849e4edc1631564c
     ' WithEvents and the Handles Clause
 
     ' <snippet1>
@@ -225,9 +228,6 @@ Class Class647cd825e8774910b4f18d168beebe6a
     ' AddHandler Statement
 
     ' <snippet17>
-    Imports System.Windows.Forms
-    Imports System.Data
-    
     Public Class DataBindingExample
         Private textBox1 As TextBox
         Private ds As DataSet

@@ -272,7 +272,7 @@ where *firstCharacter* is the character that begins the range and *lastCharacter
 
  `\W` matches any non-word character. The \W language element is equivalent to the following character class:  
   
-`[^\p{Ll}\p{Lu}\p{Lt}\p{Lo}\p{Nd}\p{Pc}\p{Lm}]`  
+`[^\p{Ll}\p{Lu}\p{Lt}\p{Lo}\p{Lm}\p{Mn}\p{Nd}\p{Pc}]`  
   
  In other words, it matches any character except for those in the Unicode categories listed in the following table.  
   

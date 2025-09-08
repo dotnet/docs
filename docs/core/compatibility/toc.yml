@@ -48,6 +48,10 @@ items:
                 href: core-libraries/10.0/driveinfo-driveformat-linux.md
               - name: DynamicallyAccessedMembers annotation removed from DefaultValueAttribute ctor
                 href: core-libraries/10.0/defaultvalueattribute-dynamically-accessed-members.md
+              - name: Explicit struct Size disallowed with InlineArray
+                href: core-libraries/10.0/inlinearray-explicit-size-disallowed.md
+              - name: FilePatternMatch.Stem changed to non-nullable
+                href: core-libraries/10.0/filepatternmatch-stem-nonnullable.md
               - name: GnuTarEntry and PaxTarEntry exclude atime and ctime by default
                 href: core-libraries/10.0/tar-atime-ctime-default.md
               - name: LDAP DirectoryControl parsing is now more stringent
@@ -56,10 +60,6 @@ items:
                 href: core-libraries/10.0/maccatalyst-version-normalization.md
               - name: No default termination signal handlers
                 href: core-libraries/10.0/sigterm-signal-handler.md
-              - name: Explicit struct Size disallowed with InlineArray
-                href: core-libraries/10.0/inlinearray-explicit-size-disallowed.md
-              - name: FilePatternMatch.Stem changed to non-nullable
-                href: core-libraries/10.0/filepatternmatch-stem-nonnullable.md
               - name: System.Linq.AsyncEnumerable included in core libraries
                 href: core-libraries/10.0/asyncenumerable.md
               - name: YMM embedded rounding removed from AVX10.2

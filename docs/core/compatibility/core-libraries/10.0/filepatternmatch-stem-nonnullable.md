@@ -1,14 +1,16 @@
 ---
 title: "Breaking change - FilePatternMatch.Stem changed to non-nullable"
 description: "Learn about the breaking change in .NET 10 where FilePatternMatch.Stem property was changed from nullable to non-nullable."
-ms.date: 01/27/2025
+ms.date: 09/08/2025
 ai-usage: ai-assisted
 ms.custom: https://github.com/dotnet/docs/issues/47914
 ---
 
 # FilePatternMatch.Stem changed to non-nullable
 
-The <xref:Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch.Stem?displayProperty=fullName> property was previously annotated as nullable purely because the `PatternTestResult.Stem` property it gets its value from is nullable. While the `PatternTestResult` can indeed be null if the result is not successful, the `FilePatternMatch` never is because it is only ever constructed when `PatternTestResult` is successful. To accurately reflect nullability, the `FilePatternMatch.Stem` property is now non-nullable and the constructor parameter has been changed accordingly.
+The <xref:Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch.Stem?displayProperty=nameWithType> property was previously annotated as nullable because the `PatternTestResult.Stem` property it gets its value from is nullable. While the <xref:Microsoft.Extensions.FileSystemGlobbing.Internal.PatternTestResult> can indeed be null if the result isn't successful, the `FilePatternMatch` never is because it's only constructed when `PatternTestResult` is successful.
+
+To accurately reflect nullability, the `[MemberNotNullWhen()]` attribute is applied to the `PatternTestResult.Stem` property to tell the compiler it won't be null if it's successful. Additionally, the `stem` argument passed into the `FilePatternMatch` constructor is no longer nullable, and an `ArgumentNullException` will be thrown if a null `stem` is passed in.
 
 ## Version introduced
 
@@ -16,24 +18,24 @@ The <xref:Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch.Stem?displayP
 
 ## Previous behavior
 
-The <xref:Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch> constructor would accept a `null` for the `stem` parameter without any compile-time or run-time warnings or errors. The <xref:Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch.Stem?displayProperty=fullName> property was also annotated as being nullable (`string?`).
+Previously, the <xref:Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch> constructor accepted `null` for the `stem` parameter without any compile-time or run-time warnings or errors.
 
 ```csharp
-// This was allowed in previous versions
+// Allowed in previous versions.
 var match = new FilePatternMatch("path/to/file.txt", null);
-string? stem = match.Stem; // Could be null
 ```
+
+The <xref:Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch.Stem?displayProperty=nameWithType> property was also annotated as being nullable.
 
 ## New behavior
 
-Passing a `null` or possibly-null value to the `stem` argument in the <xref:Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch> constructor will yield a compile-time warning, and if `null` is passed in, a run-time <xref:System.ArgumentNullException> will be thrown. The <xref:Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch.Stem?displayProperty=fullName> property is now annotated as non-nullable (`string`).
+Starting in .NET 10, passing a `null` or possibly-null value to the `stem` argument in the <xref:Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch> constructor yields a compile-time warning. And, if `null` is passed in, a run-time <xref:System.ArgumentNullException> is thrown.
+
+The <xref:Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch.Stem?displayProperty=nameWithType> property is now annotated to indicate that the value won't be null if `IsSuccessful` is `true`.
 
 ```csharp
-// This now throws ArgumentNullException at runtime
-var match = new FilePatternMatch("path/to/file.txt", null); // Throws!
-
-// The Stem property is now non-nullable
-string stem = match.Stem; // No null check needed
+// Throws ArgumentNullException at run time.
+var match = new FilePatternMatch("path/to/file.txt", null);
 ```
 
 ## Type of breaking change
@@ -42,26 +44,15 @@ This change can affect [source compatibility](../../categories.md#source-compati
 
 ## Reason for change
 
-The previous nullability annotations were inaccurate, and a `null` value for the `stem` argument was unexpected but not properly guarded against. This change reflects the expected behavior of the API and guards against unpredictable behavior while also producing design-time guidance around usage. The `[MemberNotNullWhen()]` attribute is applied to the `PatternTestResult.Stem` property to tell the compiler it will not be null if it is successful.
+The previous nullability annotations were inaccurate, and a `null` value for the `stem` argument was unexpected but not properly guarded against. This change reflects the expected behavior of the API and guards against unpredictable behavior while also producing design-time guidance around usage.
 
 ## Recommended action
 
-If a possibly-null value was passed in for the `stem` argument, review usage and update the call site to ensure `stem` cannot be passed in as `null`. If nullability warning suppressions were applied when consuming the `FilePatternMatch.Stem` property, such suppressions can be removed.
+If a possibly null value was passed in for the `stem` argument, review usage and update the call site to ensure `stem` can't be passed in as `null`.
 
-```csharp
-// Before: Check for null
-string? stem = match.Stem;
-if (stem != null)
-{
-    // Use stem
-}
-
-// After: No null check needed
-string stem = match.Stem;
-// Use stem directly
-```
+If you applied nullability warning suppressions when consuming the `FilePatternMatch.Stem` property, you can remove those suppressions.
 
 ## Affected APIs
 
-- <xref:Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch.%23ctor(System.String,System.String)?displayProperty=fullName>
+- <xref:Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch.%23ctor(System.String,System.String)>
 - <xref:Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch.Stem?displayProperty=fullName>

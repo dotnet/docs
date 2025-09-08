@@ -124,7 +124,7 @@ static void AnyCharacterMultiline()
 static void UnicodeCategory()
 {
     string pattern = @"\b(\p{IsGreek}+(\s)?)+\p{Pd}\s(\p{IsBasicLatin}+(\s)?)+";
-    string input = "Κατα Μαθθαίον - The Gospel of Matthew";
+    string input = "Ελληνική Γλώσσα - Greek Language";
 
     Console.WriteLine(Regex.IsMatch(input, pattern));        // Displays True.
 }

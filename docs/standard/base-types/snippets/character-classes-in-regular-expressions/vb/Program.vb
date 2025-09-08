@@ -128,7 +128,7 @@ Module Program
     ' <UnicodeCategory>
     Sub UnicodeCategory()
         Dim pattern As String = "\b(\p{IsGreek}+(\s)?)+\p{Pd}\s(\p{IsBasicLatin}+(\s)?)+"
-        Dim input As String = "Κατα Μαθθαίον - The Gospel of Matthew"
+        Dim input As String = "Ελληνική Γλώσσα - Greek Language"
 
         Console.WriteLine(Regex.IsMatch(input, pattern))        ' Displays True.
     End Sub

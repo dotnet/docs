@@ -158,6 +158,10 @@ items:
                 href: wpf/10.0/empty-grid-definitions.md
               - name: Incorrect usage of DynamicResource causes application crash
                 href: wpf/10.0/dynamicresource-crash.md
+          - name: XML and XSLT
+            items:
+              - name: XsltSettings.EnableScript property is obsolete
+                href: xml/10.0/xsltsettings-enablescript-obsolete.md
       - name: .NET 9
         items:
           - name: Overview

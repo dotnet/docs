@@ -192,6 +192,8 @@ with the simplified `await foreach`:
     }
 ```
 
+This new approach allows to no longer repeatedly call `Task.WhenAny` to manually call a task and remove the one that finishes, because `Task.WhenEach` iterates through task *in an order of their completion*.
+
 ## Complete example
 
 The following code is the complete text of the *Program.cs* file for the example.

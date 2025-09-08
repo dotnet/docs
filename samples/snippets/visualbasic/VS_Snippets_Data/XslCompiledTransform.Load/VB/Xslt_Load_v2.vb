@@ -50,7 +50,6 @@ Class XslCompiledTransformLoad
         Dim reader As XmlReader = XmlReader.Create("http://serverName/data/xsl/sort.xsl")
 
         ' Create the XsltSettings object with script enabled.
-        ' Warning: Script enabling (True parameter) will be obsolete in .NET 10
         Dim settings As New XsltSettings(False, True)
 
         ' Load the style sheet.
@@ -98,7 +97,6 @@ Class XslCompiledTransformLoad
     Shared Sub XslCompiledTransform_Load6()
         '<snippet6>
         ' Create the XsltSettings object with script enabled.
-        ' Warning: Script enabling (True parameter) will be obsolete in .NET 10
         Dim settings As New XsltSettings(False, True)
 
         ' Create the XslCompiledTransform object and load the style sheet.
@@ -144,8 +142,6 @@ Class XslCompiledTransformLoad
         '<snippet9>
         ' Create the XsltSettings object with script enabled.
         Dim settings As New XsltSettings()
-        ' Warning: Starting in .NET 10, EnableScript is obsolete (SYSLIB0062)
-        ' and will throw PlatformNotSupportedException on .NET Core/.NET 5+
         settings.EnableScript = True
 
         ' Create a resolver that will be used to resolve the style sheet.

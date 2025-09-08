@@ -48,7 +48,6 @@ resolver.Credentials = CredentialCache.DefaultCredentials;
 XmlReader reader = XmlReader.Create("http://serverName/data/xsl/sort.xsl");
 
 // Create the XsltSettings object with script enabled.
-// Warning: Script enabling (true parameter) will be obsolete in .NET 10
 XsltSettings settings = new XsltSettings(false,true);
 
 // Load the style sheet.
@@ -96,7 +95,6 @@ xslt.Load(reader);
 static void XslCompiledTransform_Load6() {
 //<snippet6>
 // Create the XsltSettings object with script enabled.
-// Warning: Script enabling (true parameter) will be obsolete in .NET 10
 XsltSettings settings = new XsltSettings(false,true);
 
 // Create the XslCompiledTransform object and load the style sheet.
@@ -142,8 +140,6 @@ static void XslCompiledTransform_Load9() {
 //<snippet9>
 // Create the XsltSettings object with script enabled.
 XsltSettings settings = new XsltSettings();
-// Warning: Starting in .NET 10, EnableScript is obsolete (SYSLIB0062)
-// and will throw PlatformNotSupportedException on .NET Core/.NET 5+
 settings.EnableScript = true;
 
 // Create a resolver that will be used to resolve the style sheet.

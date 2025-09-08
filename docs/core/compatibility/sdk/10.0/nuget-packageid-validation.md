@@ -1,7 +1,7 @@
 ---
 title: "Breaking change: NuGet logs an error for invalid package IDs"
 description: "Learn about the breaking change in .NET 10 where NuGet validates package IDs when constructing URLs and throws exceptions for invalid formats."
-ms.date: 01/06/2025
+ms.date: 09/08/2025
 ai-usage: ai-assisted
 ms.custom: https://github.com/dotnet/docs/issues/47984
 ---
@@ -19,11 +19,11 @@ Previously, NuGet resources that constructed URLs from package IDs did not valid
 
 ## New behavior
 
-With the new change, any package ID used to construct a URL via NuGet resources is now validated. If the package ID does not conform to NuGet's expected format, an exception is thrown, and the URL is not constructed.
+Starting with the .NET 10 SDK, any package ID used to construct a URL via NuGet resources is now validated. If the package ID doesn't conform to NuGet's expected format, an exception is thrown, and the URL is not constructed.
 
 ## Type of breaking change
 
-This is a [behavioral change](../../categories.md#behavioral-change).
+This change is a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 
@@ -31,7 +31,7 @@ This change introduces validation to ensure that only properly formatted package
 
 ## Recommended action
 
-If you need to bypass the new validation, you can set the environment variable `NUGET_DISABLE_PACKAGEID_VALIDATION` to `true` in your environment. This will disable the package ID validation logic and restore the previous behavior.
+To disable the package ID validation logic and restore the previous behavior, you can set the environment variable `NUGET_DISABLE_PACKAGEID_VALIDATION` to `true`.
 
 ## Affected APIs
 

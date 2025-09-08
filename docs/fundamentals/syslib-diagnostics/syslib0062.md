@@ -11,7 +11,7 @@ Starting in .NET 10, the <xref:System.Xml.Xsl.XsltSettings.EnableScript?displayP
 
 ## Reason for obsoletion
 
-XSLT script blocks aren't supported on .NET Core or .NET 5+. This obsoletion turns a run-time error into a build warning, which provides better guidance for migration.
+XSLT script blocks aren't supported on .NET (Core). Previously, if you set the property to `true`, a <xref:System.PlatformNotSupportedException> was thrown at run time. This obsoletion turns a run-time error into a build warning, which provides better guidance for migration.
 
 ## Workaround
 

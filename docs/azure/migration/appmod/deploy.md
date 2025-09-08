@@ -3,7 +3,7 @@ title: Deploy your project to Azure using GitHub Copilot app modernization for .
 description: Learn how to deploy your migrated .NET project to Azure using GitHub Copilot app modernization for .NET.
 ms.topic: quickstart
 ms.custom: devx-track-dotnet
-ms.date: 9/03/2025
+ms.date: 09/03/2025
 author: JiDong
 ms.author: donji
 ---
@@ -20,12 +20,12 @@ Before you begin, ensure you have the following prerequisites:
 - [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/) version 17.14.7 or later
 - Agent mode enabled for GitHub Copilot in Visual Studio ([Learn how](/visualstudio/ide/copilot-agent-mode))
 
-### Sign-in to GitHub Copilot
+### Sign in to GitHub Copilot
 
 GitHub Copilot is required for the App Modernization extension. Make sure you're signed-in to GitHub Copilot inside Visual Studio:
 
 1. Select the Copilot icon at the top of Visual Studio to open the GitHub Copilot pane.
-1. Follow the UI prompts to sign-in to Copilot.
+1. Follow the UI prompts to sign in to Copilot.
 
 For more information, see [Set up GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states).
 

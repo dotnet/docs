@@ -203,4 +203,5 @@ The following code is the complete text of the *Program.cs* file for the example
 ## See also
 
 - <xref:System.Threading.Tasks.Task.WhenAny%2A>
+- <xref:System.Threading.Tasks.Task.WhenEach%2A>
 - [Asynchronous programming with async and await (C#)](index.md)

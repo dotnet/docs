@@ -11,18 +11,24 @@ ms.date: 03/27/2024
 
 ## Description
 
-The `dotnet test` command builds the solution and runs the tests with either VSTest or Microsoft Testing Platform (MTP). To enable MTP, you need to add a config file named `dotnet.config` with an INI-like format located at the root of the solution or repository.
+The `dotnet test` command builds the solution and runs the tests with either VSTest or Microsoft Testing Platform (MTP). To enable MTP, you need to specify the test runner in the `global.json` file.
 
-Some examples of the `dotnet.config` file:
+Some examples of how to specify the test runner in the `global.json` file:
 
-  ```ini
-  [dotnet.test.runner]
-  name = "Microsoft.Testing.Platform"
+  ```json
+  {
+      "test": {
+          "runner": "Microsoft.Testing.Platform"
+      }
+  }
   ```
 
-  ```ini
-  [dotnet.test.runner]
-  name = "VSTest"
+  ```json
+  {
+      "test": {
+          "runner": "VSTest"
+      }
+  }
   ```
 
 > [!IMPORTANT]
@@ -448,7 +454,7 @@ dotnet test -h|--help
 With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest. The test-related arguments are no longer fixed, as they are tied to the registered extensions in the test project(s). Moreover, MTP supports a globbing filter when running tests. For more information, see [Microsoft.Testing.Platform](../testing/microsoft-testing-platform-intro.md).
 
 > [!WARNING]
-> When Microsoft.Testing.Platform is opted in via `dotnet.config`, `dotnet test` expects all test projects to use Microsoft.Testing.Platform. It is an error if any of the test projects use VSTest.
+> When Microsoft.Testing.Platform is opted in via `global.json`, `dotnet test` expects all test projects to use Microsoft.Testing.Platform. It is an error if any of the test projects use VSTest.
 
 #### Implicit restore
 

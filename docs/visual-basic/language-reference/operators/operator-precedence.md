@@ -36,11 +36,11 @@ When several operations occur in an expression, each part is evaluated and resol
 
  Operators are evaluated in the following order of precedence. Operators listed first have higher precedence and are evaluated before operators listed later:
 
-### Await Operator
+### 1. Await Operator
 
  Await
 
-### Arithmetic and Concatenation Operators
+### 2. Arithmetic and Concatenation Operators
 
  Exponentiation (`^`)
 
@@ -58,11 +58,11 @@ When several operations occur in an expression, each part is evaluated and resol
 
  Arithmetic bit shift (`<<`, `>>`)
 
-### Comparison Operators
+### 3. Comparison Operators
 
  All comparison operators (`=`, `<>`, `<`, `<=`, `>`, `>=`, `Is`, `IsNot`, `Like`, `TypeOf`...`Is`)
 
-### Logical and Bitwise Operators
+### 4. Logical and Bitwise Operators
 
  Negation (`Not`)
 

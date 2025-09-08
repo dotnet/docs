@@ -34,7 +34,7 @@ Starting in .NET 10, passing a `null` or possibly-null value to the `stem` argum
 The <xref:Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch.Stem?displayProperty=nameWithType> property is now annotated to indicate that the value won't be null if `IsSuccessful` is `true`.
 
 ```csharp
-// Throws ArgumentNullException at run time.
+// Generates compile-time warning.
 var match = new FilePatternMatch("path/to/file.txt", null);
 ```
 
@@ -48,11 +48,11 @@ The previous nullability annotations were inaccurate, and a `null` value for the
 
 ## Recommended action
 
-If a possibly null value was passed in for the `stem` argument, review usage and update the call site to ensure `stem` can't be passed in as `null`.
+If a possibly null value was passed in for the `stem` argument, review usage and update the call site to ensure `stem` can't be paTssed in as `null`.
 
 If you applied nullability warning suppressions when consuming the `FilePatternMatch.Stem` property, you can remove those suppressions.
 
 ## Affected APIs
 
-- <xref:Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch.%23ctor(System.String,System.String)>
+- [FilePatternMatch(String,String) constructor](xref:Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch.%23ctor(System.String,System.String))
 - <xref:Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch.Stem?displayProperty=fullName>

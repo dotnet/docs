@@ -37,6 +37,7 @@ The Visual Basic compiler can process documentation comments in your code to an 
 - [\<seealso>](seealso.md) <sup>1</sup>
 - [\<summary>](summary.md)
 - [\<typeparam>](typeparam.md) <sup>1</sup>
+- [\<typeparamref>](typeparamref.md)
 - [\<value>](value.md)
   
 (<sup>1</sup> The compiler verifies syntax.)  

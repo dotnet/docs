@@ -111,7 +111,7 @@ private static bool ValidateMLDsaSignature(ReadOnlySpan<byte> data, ReadOnlySpan
 }
 ```
 
-The PQC algorithms are available on systems where the system cryptographic libraries are OpenSSL 3.5 (or newer) or Windows CNG with PQC support. The <xref:System.Security.Cryptography.MLKem> type is no longer marked as `[Experimental]` as of RC 1, though some of its methods may retain the experimental attribute until the underlying standards are finalized. The <xref:System.Security.Cryptography.MLDsa> type is expected to follow a similar policy, with the experimental designation moving from the entire type to specific methods. The <xref:System.Security.Cryptography.SlhDsa> and <xref:System.Security.Cryptography.CompositeMLDsa> classes continue to be marked as `[Experimental]` under diagnostic `SYSLIB5006` until development is complete.
+The PQC algorithms are available on systems where the system cryptographic libraries are OpenSSL 3.5 (or newer) or Windows CNG with PQC support. The <xref:System.Security.Cryptography.MLKem> type isn't marked as `[Experimental]`, but some of its methods are (and will be until the underlying standards are finalized). The <xref:System.Security.Cryptography.MLDsa>, <xref:System.Security.Cryptography.SlhDsa>, and <xref:System.Security.Cryptography.CompositeMLDsa> classes are marked as `[Experimental]` under diagnostic `SYSLIB5006` until development is complete.
 
 #### ML-DSA
 
@@ -245,7 +245,7 @@ Unicode string normalization has been supported for a long time, but existing AP
 
 ### UTF-8 support for hex-string conversion
 
-.NET 10 RC 1 adds UTF-8 support for hex-string conversion operations in the <xref:System.Convert> class. These new methods provide efficient ways to convert between UTF-8 byte sequences and hexadecimal representations without requiring intermediate string allocations:
+.NET 10 adds UTF-8 support for hex-string conversion operations in the <xref:System.Convert> class. These new methods provide efficient ways to convert between UTF-8 byte sequences and hexadecimal representations without requiring intermediate string allocations:
 
 - <xref:System.Convert.FromHexString(System.ReadOnlySpan{System.Byte})?displayProperty=nameWithType>
 - <xref:System.Convert.FromHexString(System.ReadOnlySpan{System.Byte},System.Span{System.Byte},System.Int32@,System.Int32@)?displayProperty=nameWithType>
@@ -365,7 +365,7 @@ All of this is serialized as JSON in the <xref:System.IO.Pipelines.Pipe> (format
 
 The <xref:System.Numerics.Tensors> interface now includes a nongeneric interface, <xref:System.Numerics.Tensors.IReadOnlyTensor>, for operations like accessing <xref:System.Numerics.Tensors.IReadOnlyTensor.Lengths> and <xref:System.Numerics.Tensors.IReadOnlyTensor.Strides>. Slice operations no longer copy data, which improves performance. Additionally, you can access data nongenerically by boxing to `object` when performance isn't critical.
 
-Starting in RC 1, the tensor APIs are now stable and no longer marked as experimental. While the APIs still require referencing the [System.Numerics.Tensors](https://www.nuget.org/packages/System.Numerics.Tensors) NuGet package, they have been thoroughly reviewed and finalized for the .NET 10 release. The types take advantage of C# 14 extension operators to provide arithmetic operations when the underlying type `T` supports them through Generic Math interfaces.
+The tensor APIs are now stable and no longer marked as experimental. While the APIs still require referencing the [System.Numerics.Tensors](https://www.nuget.org/packages/System.Numerics.Tensors) NuGet package, they have been thoroughly reviewed and finalized for the .NET 10 release. The types take advantage of C# 14 extension operators to provide arithmetic operations when the underlying type `T` supports the operation. If `T` implements the relevant [generic math](../../../standard/generics/math.md) interfaces, for example, `IAdditionOperators<TSelf, TOther, TResult>` or `INumber<TSelf>`, the operation is supported. For example, `tensor + tensor` is available for a `Tensor<int>`, but isn't available for a `Tensor<bool>`.
 
 ## Options validation
 

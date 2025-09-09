@@ -10,7 +10,7 @@ ms.topic: quickstart
 In this quickstart, you create an MSTest app to evaluate the quality of a chat response from an OpenAI model. The test app uses the [Microsoft.Extensions.AI.Evaluation](https://www.nuget.org/packages/Microsoft.Extensions.AI.Evaluation) libraries.
 
 > [!NOTE]
-> This quickstart demonstrates the simplest usage of the evaluation API. Notably, it doesn't demonstrate use of the [response caching](../conceptual/evaluation-libraries.md#cached-responses) and [reporting](../conceptual/evaluation-libraries.md#reporting) functionality, which are important if you're authoring unit tests that run as part of an "offline" evaluation pipeline. The scenario shown in this quickstart is suitable in use cases such as "online" evaluation of AI responses within production code and logging scores to telemetry, where caching and reporting aren't relevant. For a tutorial that demonstrates the caching and reporting functionality, see [Tutorial: Evaluate a model's response with response caching and reporting](../tutorials/evaluate-with-reporting.md)
+> This quickstart demonstrates the simplest usage of the evaluation API. Notably, it doesn't demonstrate use of the [response caching](/dotnet/ai/evaluation/libraries#cached-responses) and [reporting](/dotnet/ai/evaluation/libraries#reporting) functionality, which are important if you're authoring unit tests that run as part of an "offline" evaluation pipeline. The scenario shown in this quickstart is suitable in use cases such as "online" evaluation of AI responses within production code and logging scores to telemetry, where caching and reporting aren't relevant. For a tutorial that demonstrates the caching and reporting functionality, see [Tutorial: Evaluate a model's response with response caching and reporting](/dotnet/ai/evaluation/evaluate-with-reporting)
 
 ## Prerequisites
 
@@ -103,4 +103,4 @@ If you no longer need them, delete the Azure OpenAI resource and GPT-4 model dep
 ## Next steps
 
 - Evaluate the responses from different OpenAI models.
-- Add response caching and reporting to your evaluation code. For more information, see [Tutorial: Evaluate a model's response with response caching and reporting](../tutorials/evaluate-with-reporting.md).
+- Add response caching and reporting to your evaluation code. For more information, see [Tutorial: Evaluate a model's response with response caching and reporting](/dotnet/ai/evaluation/evaluate-with-reporting).

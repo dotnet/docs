@@ -124,6 +124,8 @@ items:
                 href: sdk/10.0/dotnet-new-sln-slnx-default.md
               - name: "`dotnet package list` performs restore"
                 href: sdk/10.0/dotnet-package-list-restore.md
+              - name: "`dotnet tool install --local` creates manifest by default"
+                href: sdk/10.0/dotnet-tool-install-local-manifest.md
               - name: MSBUILDCUSTOMBUILDEVENTWARNING escape hatch removed
                 href: sdk/10.0/custom-build-event-warning.md
               - name: MSBuild custom culture resource handling

@@ -1,7 +1,6 @@
 ---
 ms.date: 2/21/2025
 ms.topic: include
-ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 author: alexwolfmsft
 ms.author: alexwolf
 ---

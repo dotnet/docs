@@ -3,7 +3,6 @@ title: Tutorial - Evaluate response quality with caching and reporting
 description: Create an MSTest app to evaluate the response quality of a language model, add a custom evaluator, and learn how to use the caching and reporting features of Microsoft.Extensions.AI.Evaluation.
 ms.date: 05/09/2025
 ms.topic: tutorial
-ms.custom: devx-track-dotnet-ai
 ---
 
 # Tutorial: Evaluate response quality with caching and reporting

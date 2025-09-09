@@ -4,7 +4,6 @@ description: "Learn how to authenticate your Azure hosted .NET app to an Azure O
 author: alexwolfmsft
 ms.author: alexwolf
 ms.topic: how-to
-ms.custom: devx-track-azurecli
 ms.date: 05/29/2025
 zone_pivot_groups: azure-interface
 #customer intent: As a .NET developer, I want authenticate and authorize my App Service to Azure OpenAI by using Microsoft Entra so that I can securely use AI in my .NET application.

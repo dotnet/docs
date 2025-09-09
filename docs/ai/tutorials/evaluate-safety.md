@@ -3,7 +3,6 @@ title: Tutorial - Evaluate response safety with caching and reporting
 description: Create an MSTest app that evaluates the content safety of a model's response using the evaluators in the Microsoft.Extensions.AI.Evaluation.Safety package and with caching and reporting.
 ms.date: 05/12/2025
 ms.topic: tutorial
-ms.custom: devx-track-dotnet-ai
 ---
 
 # Tutorial: Evaluate response safety with caching and reporting

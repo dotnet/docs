@@ -48,7 +48,7 @@ Some commonly used device bindings include:
 
 ## A word on threads
 
-By default objects in these libraries are **not thread safe**. This means that access to an object must only be from one thread at a time. When using the libraries you must be aware that they will often run other threads internally for monitoring hardware and firing events. If you subscribe to an event, it will be fired from a different thread. It is your responsibility as a user of the library user to control thread access to the object.
+By default, the objects in these libraries **aren't thread safe**. That means that access to an object must only be from one thread at a time. When using the libraries, you must be aware that they often run other threads internally for things like monitoring hardware and firing events. If you subscribe to an event, it's fired from a different thread. It's your responsibility to control thread access to the object.
 
 ## Supported operating systems
 

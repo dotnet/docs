@@ -55,7 +55,7 @@ The tools listed in a manifest file are available to the current directory and s
 
 When you use a CLI command that refers to a local tool, the SDK searches for a manifest file in the current directory and parent directories. If it finds a manifest file, but the file doesn't include the referenced tool, it continues the search up through parent directories. The search ends when it finds the referenced tool or it finds a manifest file with `isRoot` set to `true`.
 
-## Install botsay as a local tool (Traditional approach)
+## Install botsay as a local tool (traditional approach)
 
 Install the tool from the package that you created in the first tutorial:
 
@@ -93,7 +93,7 @@ The *.config/dotnet-tools.json* file now has one tool:
 
 Once installed as a local tool, you can invoke it in multiple ways:
 
-1. Run the tool directly using `dnx`:
+- Run the tool directly using `dnx`:
 
    ```dotnetcli
    dnx microsoft.botsay --add-source ./nupkg hello from the bot
@@ -102,13 +102,13 @@ Once installed as a local tool, you can invoke it in multiple ways:
    > [!NOTE]
    > When using dnx with a local tool manifest, it automatically uses the version specified in the manifest.
 
-2. Using `dotnet botsay`:
+- Using `dotnet botsay`:
 
    ```dotnetcli
    dotnet botsay hello from the bot
    ```
 
-3. Using `dotnet tool run`
+- Using `dotnet tool run`
 
    ```dotnetcli
    dotnet tool run botsay hello from the bot

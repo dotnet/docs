@@ -16,7 +16,7 @@ This tutorial teaches you how to install and use a global tool. You use a tool t
 * Complete the [first tutorial of this series](global-tools-how-to-create.md).
 * .NET 10.0.100 SDK or later (for `dnx`) - optional but recommended.
 
-## Run the tool without installation (Recommended)
+## Run the tool without installation (recommended)
 
 Starting with .NET 10.0.100, you can run .NET tools without permanent installation using [`dnx`](dotnet-tool-exec.md):
 
@@ -28,7 +28,7 @@ Starting with .NET 10.0.100, you can run .NET tools without permanent installati
 
    The `--add-source` parameter tells the .NET CLI to use the *./nupkg* directory as an additional source feed for NuGet packages when the tool is not available on NuGet.org.
 
-## Use the tool as a global tool (Traditional installation)
+## Use the tool as a global tool (traditional installation)
 
 If you prefer permanent installation for frequent use:
 

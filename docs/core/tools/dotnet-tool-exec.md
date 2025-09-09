@@ -5,7 +5,7 @@ ms.date: 09/06/2025
 ---
 # dotnet tool exec
 
-**This article applies to:** ✔️ .NET 10.0.100-preview.6 SDK and later versions
+**This article applies to:** ✔️ .NET 10.0.100 SDK and later versions
 
 ## Name
 
@@ -27,21 +27,21 @@ dotnet tool exec -h|--help
 
 ## Description
 
-The `dotnet tool exec` command provides a one-shot tool invocation mode for .NET Tools. It automatically downloads the specified tool package to the NuGet cache and invokes it without modifying your system PATH or requiring permanent installation.
+The `dotnet tool exec` command provides a one-shot tool invocation mode for .NET Tools. It automatically downloads the specified tool package to the NuGet cache and invokes it without modifying your system `PATH` or requiring permanent installation.
 
 When you run `dotnet tool exec`, the command:
 
-1. Checks the version (or version range) you specify (or the latest version if none is specified) against your configured NuGet feeds to decide which package to download
-2. Downloads the specified package to the NuGet cache (if not already present)
-3. Invokes the tool with any provided arguments
-4. Returns the tool's exit code
+1. Checks the version (or version range) you specify (or the latest version if none is specified) against your configured NuGet feeds to decide which package to download.
+2. Downloads the specified package to the NuGet cache (if not already present).
+3. Invokes the tool with any provided arguments.
+4. Returns the tool's exit code.
 
 `dotnet tool exec` works seamlessly with both global and local tools. If you have a local tool manifest available, it uses the manifest to determine which version of the tool to run.
 
 This command also exists in two other forms for easier use
 
-* `dotnet dnx` - a hidden alias for `dotnet tool exec` that is mostly used to give us a point to easily implement the
-* `dnx` - a shell script that invokes `dotnet dnx` from the SDK. This script is provided by the installer and is available on the PATH. It allows for very simple use of Tools directly via `dnx <toolname>`.
+* `dotnet dnx` - A hidden alias for `dotnet tool exec` that is mostly used to as a point to easily implement the ???
+* `dnx` - A shell script that invokes `dotnet dnx` from the SDK. This script is provided by the installer and is available on `PATH`. It allows for very simple use of tools directly via `dnx <toolname>`.
 
 ## Arguments
 
@@ -61,11 +61,11 @@ This command also exists in two other forms for easier use
 
 - **`--add-source <SOURCE>`**
 
-  Adds an additional NuGet package source to use during installation. Feeds are accessed in parallel, not in a fallback cascade sequence. If the same package and version is available in multiple feeds, the fastest feed wins. See [What happens when a NuGet package is installed](/nuget/concepts/package-installation-process#what-happens-when-a-nuget-package-is-installed). This can be controlled through the use of NuGet Package Source Mapping. For more information, see [Package Source Mapping](/nuget/consume-packages/package-source-mapping).
+  Adds an additional NuGet package source to use during installation. Feeds are accessed in parallel, not in a fallback cascade sequence. If the same package and version is available in multiple feeds, the fastest feed wins. For more information, see [What happens when a NuGet package is installed](/nuget/concepts/package-installation-process#what-happens-when-a-nuget-package-is-installed). You can control this through the use of NuGet package source mapping. For more information, see [Package Source Mapping](/nuget/consume-packages/package-source-mapping).
 
 - **`--configfile <FILE>`**
 
-  The NuGet configuration file (*nuget.config*) to use. If specified, only the settings from this file will be used. If not specified, the hierarchy of configuration files from the current directory will be used. For more information, see [Common NuGet Configurations](/nuget/consume-packages/configuring-nuget-behavior).
+  The NuGet configuration file (*nuget.config*) to use. If specified, only the settings from this file are used. If not specified, the hierarchy of configuration files from the current directory are used. For more information, see [Common NuGet Configurations](/nuget/consume-packages/configuring-nuget-behavior).
 
 - **`--disable-parallel`**
 
@@ -77,7 +77,7 @@ This command also exists in two other forms for easier use
 
 - **`--interactive`**
 
-  Allows the command to stop and wait for user input or action. For example, to complete authentication. This is defaulted to `true` when the command detects that it's being run directly by a user.
+  Allows the command to stop and wait for user input or action, for example, to complete authentication. This option defaults to `true` when the command detects that it's being run directly by a user.
 
 - **`--no-http-cache`**
 
@@ -117,7 +117,7 @@ This command also exists in two other forms for easier use
 
 ## Comparison with other commands
 
-This command is intended to be a unified way to work with .NET Tools. While the previously-available Tool installation commands remain available, we think that `dotnet tool exec` provides a simpler and more flexible experience for most users.
+This command is intended to be a unified way to work with .NET Tools. While the previously available tool installation commands remain available, `dotnet tool exec` provides a simpler and more flexible experience for most users.
 
 | Command | Purpose | Installation | Scope |
 |---------|---------|--------------|-------|

@@ -14,7 +14,7 @@ Counters can be read from applications running .NET 5 or later.
 
 There are three ways to download and use `dotnet-counters`:
 
-- **One-shot execution (Recommended):**
+- **One-shot execution (recommended):**
 
   Starting with .NET 10.0.100, you can run `dotnet-counters` without permanent installation using [`dnx`](../tools/dotnet-tool-exec.md):
 
@@ -38,7 +38,7 @@ There are three ways to download and use `dotnet-counters`:
   dotnet tool install --global dotnet-counters
   ```
 
-This method installs a `dotnet-counters` binary to your .NET SDK Tools path, which
+  This command installs a `dotnet-counters` binary to your .NET SDK Tools path, which
 you can add to your PATH to easily invoke globally-installed tools.
 
 - **Direct download:**

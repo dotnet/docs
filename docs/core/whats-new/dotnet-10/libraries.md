@@ -111,7 +111,7 @@ private static bool ValidateMLDsaSignature(ReadOnlySpan<byte> data, ReadOnlySpan
 }
 ```
 
-The PQC algorithms are available on systems where the system cryptographic libraries are OpenSSL 3.5 (or newer) or Windows CNG with PQC support. The <xref:System.Security.Cryptography.MLKem> type is no longer marked as `[Experimental]` as of RC 1, though some of its methods may retain the experimental attribute until the underlying standards are finalized. The <xref:System.Security.Cryptography.MLDsa> type is expected to follow a similar path, with the experimental designation moving from the entire type to specific methods. The <xref:System.Security.Cryptography.SlhDsa> and <xref:System.Security.Cryptography.CompositeMLDsa> classes continue to be marked as `[Experimental]` under diagnostic `SYSLIB5006` until development is complete.
+The PQC algorithms are available on systems where the system cryptographic libraries are OpenSSL 3.5 (or newer) or Windows CNG with PQC support. The <xref:System.Security.Cryptography.MLKem> type is no longer marked as `[Experimental]` as of RC 1, though some of its methods may retain the experimental attribute until the underlying standards are finalized. The <xref:System.Security.Cryptography.MLDsa> type is expected to follow a similar policy, with the experimental designation moving from the entire type to specific methods. The <xref:System.Security.Cryptography.SlhDsa> and <xref:System.Security.Cryptography.CompositeMLDsa> classes continue to be marked as `[Experimental]` under diagnostic `SYSLIB5006` until development is complete.
 
 #### ML-DSA
 

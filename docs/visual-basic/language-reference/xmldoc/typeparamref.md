@@ -1,11 +1,11 @@
 ---
 description: "Learn more about: <typeparamref> (Visual Basic)"
 title: "<typeparamref>"
-ms.date: 07/20/2015
+ms.date: 09/10/2025
 helpviewer_keywords: 
   - "typeparamref XML tag"
   - "<typeparamref> XML tag"
-ms.assetid: 8979d53b-beb1-41b7-b41e-6bbea1c17a03
+ai-usage: ai-assisted
 ---
 # \<typeparamref> (Visual Basic)
 
@@ -19,8 +19,7 @@ Formats a word as a type parameter.
   
 ## Parameters  
 
- `name`  
- The name of the type parameter to refer to. Enclose the name in double quotation marks (" ").  
+ `name`: The name of the type parameter to refer to. Enclose the name in double quotation marks (" ").  
   
 ## Remarks  
 
@@ -32,7 +31,7 @@ Formats a word as a type parameter.
 
  This example uses the `<typeparamref>` tag to refer to the `T` type parameter.  
   
- [!code-vb[VbVbcnXmlDocComments#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnXmlDocComments/VB/Class1.vb#9)]  
+:::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnXmlDocComments/VB/Class1.vb id="snippet9":::  
   
 ## See also
 

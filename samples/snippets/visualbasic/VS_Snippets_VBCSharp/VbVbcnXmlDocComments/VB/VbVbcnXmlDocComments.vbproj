@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
+    <OutputType>classlib</OutputType>
     <TargetFramework>net9.0</TargetFramework>
     <RootNamespace>VbVbcnXmlDocComments</RootNamespace>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>

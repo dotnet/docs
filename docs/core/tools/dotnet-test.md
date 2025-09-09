@@ -13,7 +13,7 @@ ms.date: 03/27/2024
 
 The `dotnet test` command builds the solution and runs the tests with either VSTest or Microsoft Testing Platform (MTP). To enable MTP, you need to specify the test runner in the `global.json` file.
 
-Some examples of how to specify the test runner in the `global.json` file:
+Some examples of how to specify the test runner in the [`global.json`](global-json.md) file:
 
   ```json
   {

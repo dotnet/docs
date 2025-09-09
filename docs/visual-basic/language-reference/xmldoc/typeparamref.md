@@ -29,7 +29,7 @@ Formats a word as a type parameter.
   
 ## Example  
 
- This example uses the `<typeparamref>` tag to refer to the `T` type parameter.  
+This example uses the `<typeparamref>` tag to refer to the `T` type parameter.  
   
 :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnXmlDocComments/VB/Class1.vb" id="snippet9":::  
   

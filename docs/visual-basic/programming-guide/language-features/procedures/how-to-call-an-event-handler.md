@@ -21,7 +21,7 @@ In Visual Basic, there are two sides to working with events:
 
 2. **Event subscription** — You subscribe to events by identifying procedures as handlers for specific events. You can do this either with a [`Handles`](../../../language-reference/statements/handles-clause.md) clause and a [`WithEvents`](../../../language-reference/modifiers/withevents.md) variable, or with an [AddHandler Statement](../../../language-reference/statements/addhandler-statement.md).
 
-An event handler in Visual Basic is a `Sub` procedure. However, you do not normally call it directly like other `Sub` procedures. Instead, you subscribe the procedure to an event, and Visual Basic automatically calls the event handler when the event is raised.
+An event handler in Visual Basic is a `Sub` procedure. Your code doesn't call it directly like other `Sub` procedures. Instead, event publishers invoke the procedure when the event is raised because the procedure is subscribed to the event.
 
 Using a `Handles` clause is the default way to subscribe to events in Visual Basic. This is how event handlers are written by the designers when you program in the integrated development environment (IDE). The `AddHandler` statement is suitable for subscribing to events dynamically at run time.
 
@@ -37,7 +37,7 @@ You can associate more than one event handler with the same event. In some cases
 
 3. In the declaration of the event-handling `Sub` procedure, add a [`Handles`](../../../language-reference/statements/handles-clause.md) clause that specifies the `WithEvents` variable and the event name.
 
-4. When the event occurs, Visual Basic automatically calls the `Sub` procedure. Your code can use a `RaiseEvent` statement to raise the event and trigger all subscribed handlers.
+4. When the event occurs, Visual Basic automatically calls the `Sub` procedure. Your code can use a `RaiseEvent` statement to raise the event and invoke all subscribed handlers.
 
     The following example defines an event and a `WithEvents` variable that refers to the class that raises the event. The event-handling `Sub` procedure uses a `Handles` clause to specify the class and event it handles.
 
@@ -49,7 +49,7 @@ You can associate more than one event handler with the same event. In some cases
 
 2. Execute an [AddHandler statement](../../../language-reference/statements/addhandler-statement.md) to dynamically connect the event-handling `Sub` procedure with the event.
 
-3. When the event occurs, Visual Basic automatically calls the `Sub` procedure. Your code can use a `RaiseEvent` statement to raise the event and trigger all subscribed handlers.
+3. When the event occurs, Visual Basic automatically calls the `Sub` procedure. Your code can use a `RaiseEvent` statement to raise the event and invoke all subscribed handlers.
 
     The following example uses the [AddHandler statement](../../../language-reference/statements/addhandler-statement.md) in the constructor to associate the `OnTimerElapsed` procedure as an event handler for a custom timer event.
 

@@ -1,5 +1,5 @@
 items:
-  - name: .NET migration guide
+  - name: .NET upgrade guide
     href: index.yml
   - name: Upgrade and modernize .NET apps
     href: ../../core/porting/github-copilot-app-modernization-overview.md
@@ -7,16 +7,16 @@ items:
   - name: GitHub Copilot FAQ
     href: ../../core/porting/github-copilot-app-modernization-faq.yml
     displayName: copilot, upgrade, faq
-  - name: Migrating from .NET Framework to modern .NET
-    expanded: false
+  - name: Upgrade Strategy for .NET Framework
+    expanded: true
     items:
       - name: Overview
         href: ../../core/porting/index.md
-      - name: Migrate with GitHub Copilot
+      - name: Upgrade with GitHub Copilot
         href: ../../core/porting/github-copilot-app-modernization-overview.md
         displayName: copilot, upgrade, modernization
       - name: General information
-        expanded: false
+        expanded: true
         items:
           - name: About .NET
             items:

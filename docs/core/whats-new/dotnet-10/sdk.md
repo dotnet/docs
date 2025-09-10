@@ -172,7 +172,7 @@ For more information about native AOT, see [.NET native AOT](../../deploying/nat
 
 ## Pruning of framework-provided package references
 
-Starting in .NET 10, the [NuGet Audit](/nuget/concepts/auditing-packages) feature can now [prune framework-provided package references](/nuget/consume-packages/package-references-in-project-files#prunepackagereference) that aren't used by the project. 
+Starting in .NET 10, the [NuGet Audit](/nuget/concepts/auditing-packages) feature can [prune framework-provided package references](/nuget/consume-packages/package-references-in-project-files#prunepackagereference) that aren't used by the project.
 This feature is enabled by default for all frameworks of a project that targets >= .NET 10.0 in the latest SDK.
 This change helps reduce the number of packages that are restored and analyzed during the build process, which can lead to faster build times and reduced disk space usage. It also can lead to a reduction in false positives from NuGet Audit and other dependency-scanning mechanisms.
 

@@ -1,112 +1,130 @@
 items:
   - name: .NET upgrade guide
     href: index.yml
-  - name: Upgrade and modernize .NET apps
-    href: ../../core/porting/github-copilot-app-modernization-overview.md
-    displayName: copilot, upgrade
-  - name: Upgrade with GitHub Copilot FAQ
-    href: ../../core/porting/github-copilot-app-modernization-faq.yml
-    displayName: copilot, upgrade, faq
-  - name: Upgrade Strategy for .NET Framework
+
+  - name: Upgrade .NET apps
     expanded: true
     items:
       - name: Overview
-        href: ../../core/porting/index.md
-      - name: Upgrade with GitHub Copilot
         href: ../../core/porting/github-copilot-app-modernization-overview.md
-        displayName: copilot, upgrade, modernization
-      - name: General information
+        displayName: copilot, upgrade
+      - name: Upgrade with GitHub Copilot FAQ
+        href: ../../core/porting/github-copilot-app-modernization-faq.yml
+        displayName: copilot, upgrade, faq
+      - name: Planning your .NET Framework upgrade
         expanded: true
         items:
-          - name: About .NET
-            items:
-              - name: Versioning info for .NET SDK, MSBuild, and Visual Studio
-                href: ../../core/porting/versioning-sdk-msbuild-vs.md
-              - name: Choose between .NET and .NET Framework for server apps
-                href: ../../standard/choosing-core-framework-server.md
-          - name: Breaking changes
-            items:
-              - name: Overview
-                displayName: app compatibility
-                href: ../../core/porting/breaking-changes.md
-              - name: Breaking changes
-                href: ../../core/compatibility/fx-core.md
-      - name: Pre-migration
-        expanded: false
-        items:
-          - name: Assess the portability of your project
-            items:
-              - name: Unsupported dependencies
-                href: ../../core/porting/third-party-deps.md
-              - name: Use the Windows Compatibility Pack
-                href: ../../core/porting/windows-compat-pack.md
-              - name: Unavailable technologies
-                href: ../../core/porting/net-framework-tech-unavailable.md
-              - name: Unsupported APIs
-                items:
-                - name: Tools to find unsupported APIs
-                  href: ../../core/porting/unsupported-apis.md
-                - name: Unsupported API list
-                  href: ../../core/compatibility/unsupported-apis.md
-          - name: Needed changes before porting code
-            href: ../../core/porting/premigration-needed-changes.md
-      - name: Migration
-        expanded: false
-        items:
-          - name: Create a porting plan
-            items:
-              - name: Approaches
-                href: ../../core/porting/porting-approaches.md
-              - name: Project structure
-                href: ../../core/porting/project-structure.md
-          - name: Application porting guides
-            items:
-              - name: Windows Forms
-                href: /dotnet/desktop/winforms/migration/?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
-              - name: Windows Presentation Foundation
-                href: /dotnet/desktop/wpf/migration/?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
-              - name: C++/CLI projects
-                href: ../../core/porting/cpp-cli.md
-      - name: Post-migration
-        expanded: false
-        items:
-          - name: Modernize
-            href: ../../core/porting/modernize.md
-  - name: Other tools
-    expanded: false
-    items:
-      - name: .NET Upgrade Assistant tool
-        items:
           - name: Overview
-            href: ../../core/porting/upgrade-assistant-overview.md
-            displayName: upgrade assistant
-          - name: Install
-            href: ../../core/porting/upgrade-assistant-install.md
-            displayName: upgrade assistant
-          - name: How to upgrade
-            href: ../../core/porting/upgrade-assistant-how-to-upgrade.md
-            displayName: upgrade assistant
-          - name: Analyze
+            href: ../../core/porting/index.md
+          - name: Upgrade with GitHub Copilot
+            href: ../../core/porting/github-copilot-app-modernization-overview.md
+            displayName: copilot, upgrade, modernization
+          - name: General information
+            expanded: true
+            items:
+              - name: About .NET
+                items:
+                  - name: Versioning info for .NET SDK, MSBuild, and Visual Studio
+                    href: ../../core/porting/versioning-sdk-msbuild-vs.md
+                  - name: Choose between .NET and .NET Framework for server apps
+                    href: ../../standard/choosing-core-framework-server.md
+              - name: Breaking changes
+                items:
+                  - name: Overview
+                    displayName: app compatibility
+                    href: ../../core/porting/breaking-changes.md
+                  - name: Breaking changes
+                    href: ../../core/compatibility/fx-core.md
+          - name: Pre-upgrade
             expanded: false
+            items:
+              - name: Assess the portability of your project
+                items:
+                  - name: Unsupported dependencies
+                    href: ../../core/porting/third-party-deps.md
+                  - name: Use the Windows Compatibility Pack
+                    href: ../../core/porting/windows-compat-pack.md
+                  - name: Unavailable technologies
+                    href: ../../core/porting/net-framework-tech-unavailable.md
+                  - name: Unsupported APIs
+                    items:
+                    - name: Tools to find unsupported APIs
+                      href: ../../core/porting/unsupported-apis.md
+                    - name: Unsupported API list
+                      href: ../../core/compatibility/unsupported-apis.md
+              - name: Needed changes before porting code
+                href: ../../core/porting/premigration-needed-changes.md
+          - name: Upgrade
+            expanded: false
+            items:
+              - name: Create a porting plan
+                items:
+                  - name: Approaches
+                    href: ../../core/porting/porting-approaches.md
+                  - name: Project structure
+                    href: ../../core/porting/project-structure.md
+              - name: Application porting guides
+                items:
+                  - name: Windows Forms
+                    href: /dotnet/desktop/winforms/migration/?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
+                  - name: Windows Presentation Foundation
+                    href: /dotnet/desktop/wpf/migration/?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
+                  - name: C++/CLI projects
+                    href: ../../core/porting/cpp-cli.md
+          - name: Post-Upgrade
+            expanded: false
+            items:
+              - name: Modernize
+                href: ../../core/porting/modernize.md
+      - name: Other tools
+        expanded: false
+        items:
+          - name: .NET Upgrade Assistant tool
             items:
               - name: Overview
-                href: ../../core/porting/upgrade-assistant-analyze-overview.md
+                href: ../../core/porting/upgrade-assistant-overview.md
                 displayName: upgrade assistant
-              - name: How to analyze a project
-                href: ../../core/porting/upgrade-assistant-how-to-analyze.md
+              - name: Install
+                href: ../../core/porting/upgrade-assistant-install.md
                 displayName: upgrade assistant
-          - name: Project upgrade guide
-            expanded: false
-            items:
-              - name: ASP.NET
-                href: /aspnet/core/migration/fx-to-core/tooling
-              - name: Windows Presentation Foundation
-                href: /dotnet/desktop/wpf/migration/
-              - name: Windows Forms
-                href: /dotnet/desktop/winforms/migration/
-              - name: Universal Windows Platform
-                href: /windows/apps/windows-app-sdk/migrate-to-windows-app-sdk/upgrade-assistant
-              - name: Windows Communication Foundation
-                href: ../../core/porting/upgrade-assistant-wcf.md
-          - name: Telemetry
-            href: ../../core/porting/upgrade-assistant-telemetry.md
+              - name: How to upgrade
+                href: ../../core/porting/upgrade-assistant-how-to-upgrade.md
+                displayName: upgrade assistant
+              - name: Analyze
+                expanded: false
+                items:
+                  - name: Overview
+                    href: ../../core/porting/upgrade-assistant-analyze-overview.md
+                    displayName: upgrade assistant
+                  - name: How to analyze a project
+                    href: ../../core/porting/upgrade-assistant-how-to-analyze.md
+                    displayName: upgrade assistant
+              - name: Project upgrade guide
+                expanded: false
+                items:
+                  - name: ASP.NET
+                    href: /aspnet/core/migration/fx-to-core/tooling
+                  - name: Windows Presentation Foundation
+                    href: /dotnet/desktop/wpf/migration/
+                  - name: Windows Forms
+                    href: /dotnet/desktop/winforms/migration/
+                  - name: Universal Windows Platform
+                    href: /windows/apps/windows-app-sdk/migrate-to-windows-app-sdk/upgrade-assistant
+                  - name: Windows Communication Foundation
+                    href: ../../core/porting/upgrade-assistant-wcf.md
+              - name: Telemetry
+                href: ../../core/porting/upgrade-assistant-telemetry.md
+
+  - name: Migrate .NET apps to Azure
+    expanded: true
+    items:
+      - name: Overview
+        href: /dotnet/azure/migration/appmod/overview?toc=/azure/developer/github-copilot-app-modernization/toc.json&bc=/azure/developer/github-copilot-app-modernization/breadcrumb/toc.json
+      - name: FAQ
+        href: /dotnet/azure/migration/appmod/faq?toc=/azure/developer/github-copilot-app-modernization/toc.json&bc=/azure/developer/github-copilot-app-modernization/breadcrumb/toc.json
+      - name: Predefined tasks
+        href: /dotnet/azure/migration/appmod/predefined-tasks?toc=/azure/developer/github-copilot-app-modernization/toc.json&bc=/azure/developer/github-copilot-app-modernization/breadcrumb/toc.json
+      - name: "Quickstart: Assess and migrate a .NET project"
+        href: /dotnet/azure/migration/appmod/quickstart?toc=/azure/developer/github-copilot-app-modernization/toc.json&bc=/azure/developer/github-copilot-app-modernization/breadcrumb/toc.json
+      - name: Migration sample
+        href: /dotnet/azure/migration/appmod/sample?toc=/azure/developer/github-copilot-app-modernization/toc.json&bc=/azure/developer/github-copilot-app-modernization/breadcrumb/toc.json

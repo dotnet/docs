@@ -177,7 +177,7 @@ This feature is enabled by default for all frameworks of a project that targets 
 This change helps reduce the number of packages that are restored and analyzed during the build process, which can lead to faster build times and reduced disk space usage. It also can lead to a reduction in false positives from NuGet Audit and other dependency-scanning mechanisms.
 
 When this feature is enabled, you might see a reduction in the contents of your applications' generated *.deps.json* files. Any package references supplied by the .NET runtime are automatically removed from the generated dependency file.
-When a direct package reference is within the pruning range, [`PrivateAssets="all"` and `IncludeAssets="none"` will be applied](/nuget/consume-packages/package-references-in-project-files#how-prunepackagereference-works).
+When a direct package reference is within the pruning range, [`PrivateAssets="all"` and `IncludeAssets="none"` are applied](/nuget/consume-packages/package-references-in-project-files#how-prunepackagereference-works).
 
 While this feature is enabled by default for the listed TFMs, you can disable it by setting the `RestoreEnablePackagePruning` property to `false` in your project file or *Directory.Build.props* file.
 

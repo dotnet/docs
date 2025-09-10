@@ -905,6 +905,9 @@
             "ms.collection": {
                 "docs/ai/**/**.{md,yml}": "ce-skilling-ai-copilot"
             },
+            "ms.custom": {
+                "docs/ai/**/**.{md,yml}": "devx-track-dotnet"
+            },
             "ms.update-cycle": {
                 "docs/ai/**/**.{md,yml}": "180-days",
                 "docs/csharp/whats-new/**/**.{md,yml}": "1095-days",

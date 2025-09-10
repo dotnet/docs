@@ -10,7 +10,7 @@ ai-usage: ai-generated
 
 ## Terminology
 
-- Unless otherwise specified, all .NET content refers to modern .NET (not .NET Framework).
+Unless otherwise specified, all .NET content refers to modern .NET (not .NET Framework).
 
 ## Writing Style
 
@@ -31,10 +31,12 @@ Follow [Microsoft Writing Style Guide](https://learn.microsoft.com/en-us/style-g
 - Sentence case headings (no gerunds in titles).
 - Be concise, break up long sentences.
 - Oxford comma in lists.
-- Number all ordered list items as "1." (not sequential numbering like "1.", "2.", "3.", etc.)
 - Use bullets for unordered lists.
+- Number all ordered list items as "1." (not sequential numbering like "1.", "2.", "3.", etc.)
 - Ordered and unordered lists should use complete sentences with proper punctuation, ending with a period if it's more than three words.
 - Avoid "etc." or "and so on" - provide complete lists or use "for example".
+- Use "for example" instead of "e.g.".
+- Use "that is" instead of "i.e.".
 - No consecutive headings without content between them.
 
 ### Formatting Conventions

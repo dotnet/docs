@@ -3,7 +3,6 @@ title: Azure AI learning resources
 description: This article provides a list of resources about Azure AI scenarios for .NET developers, including documentation and code samples.
 ms.date: 09/04/2025
 ms.topic: reference
-ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 ---
 
 # Azure AI learning resources

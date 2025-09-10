@@ -5,8 +5,8 @@ ms.date: 08/26/2025
 ---
 # August 2025 cumulative update preview
 
-_Released August 26, 2025_
-_Update August 29, 2025 to include Windows 11, version 24H2
+_Released August 26, 2025_  
+_Update August 29, 2025 to include Windows 11, version 24H2_
 
 ## Summary of what's new in this release
 

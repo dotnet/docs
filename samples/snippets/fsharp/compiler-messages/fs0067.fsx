@@ -1,11 +1,11 @@
 (* Redundant Type test *)
 type Dog() =
-    member this.Name = "Dog"
+    member this.Bark() = printfn "Woof!"
 
 let dog = Dog()
 
 if dog :? Dog then
-    printfn "It always be a dog"
+    dog.Bark()
 
 (* Redundant Downcast *)
 type Cat(name: string) =

@@ -43,7 +43,7 @@ A token can contain spaces if it's enclosed in quotation marks (`"`). Here's an 
 dotnet tool search "ef migrations add"
 ```
 
-The symbol hierarchy (commands, options, arguments) is considered to be trusted input, the token values are not.
+The symbol hierarchy (commands, options, arguments) is considered to be trusted input; the token values are not.
 
 ## Commands
 

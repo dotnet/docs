@@ -31,7 +31,7 @@ They are exposed by the <xref:System.CommandLine.ParseResult.Configuration?displ
 
 [Response files](syntax.md#response-files) are enabled by default, but you can disable them by setting the <xref:System.CommandLine.ParserConfiguration.ResponseFileTokenReplacer> property to `null`. You can also provide a custom implementation to customize how response files are processed.
 
-Response file can contain other response file names, hence parsing may include opening other files. The library expects that all response files were generated and stored by trust worthy agent(s).
+Response file can contain other response file names, hence parsing might include opening other files. The library expects that all response files were generated and stored by trustworthy agents.
 
 ## InvocationConfiguration
 

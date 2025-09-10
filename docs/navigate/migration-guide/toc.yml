@@ -1,29 +1,23 @@
 items:
   - name: .NET migration guide
     href: index.yml
-  - name: Overview
-    href: ../../core/porting/index.md
-  - name: App modernization
-    expanded: true
-    items:
-      - name: Overview
-        href: ../../core/porting/github-copilot-app-modernization-overview.md
-        displayName: copilot, upgrade
-      - name: Install
-        href: ../../core/porting/github-copilot-app-modernization-install.md
-        displayName: copilot, upgrade
-      - name: FAQ
-        href: ../../core/porting/github-copilot-app-modernization-faq.yml
-        displayName: copilot, upgrade, faq
+  - name: Upgrade and modernize .NET apps
+    href: ../../core/porting/github-copilot-app-modernization-overview.md
+    displayName: copilot, upgrade
+  - name: GitHub Copilot FAQ
+    href: ../../core/porting/github-copilot-app-modernization-faq.yml
+    displayName: copilot, upgrade, faq
   - name: Migrating from .NET Framework to modern .NET
     expanded: false
     items:
+      - name: Overview
+        href: ../../core/porting/index.md
+      - name: Migrate with GitHub Copilot
+        href: ../../core/porting/github-copilot-app-modernization-overview.md
+        displayName: copilot, upgrade, modernization
       - name: General information
         expanded: false
         items:
-          - name: Modernize with GitHub Copilot
-            href: ../../core/porting/github-copilot-app-modernization-overview.md
-            displayName: copilot, upgrade, modernization
           - name: About .NET
             items:
               - name: Versioning info for .NET SDK, MSBuild, and Visual Studio

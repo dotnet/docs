@@ -17,9 +17,8 @@ An *event* is an action or occurrence — such as a mouse click or a credit limi
 
 In Visual Basic, there are two sides to working with events:
 
-1. **Event publishing** — Classes declare events and raise them when something interesting happens using the [RaiseEvent Statement](../../../language-reference/statements/raiseevent-statement.md). This is what actually invokes (calls) the event handlers.
-
-2. **Event subscription** — You subscribe to events by identifying procedures as handlers for specific events. You can do this either with a [`Handles`](../../../language-reference/statements/handles-clause.md) clause and a [`WithEvents`](../../../language-reference/modifiers/withevents.md) variable, or with an [AddHandler Statement](../../../language-reference/statements/addhandler-statement.md).
+- **Event publishing** — Classes declare events and raise them when something interesting happens using the [RaiseEvent Statement](../../../language-reference/statements/raiseevent-statement.md). This is what actually invokes (calls) the event handlers.
+- **Event subscription** — You subscribe to events by identifying procedures as handlers for specific events. You can do this either with a [`Handles`](../../../language-reference/statements/handles-clause.md) clause and a [`WithEvents`](../../../language-reference/modifiers/withevents.md) variable, or with an [AddHandler Statement](../../../language-reference/statements/addhandler-statement.md).
 
 An event handler in Visual Basic is a `Sub` procedure. Your code doesn't call it directly like other `Sub` procedures. Instead, event publishers invoke the procedure when the event is raised because the procedure is subscribed to the event.
 

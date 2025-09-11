@@ -126,7 +126,7 @@ Since this mode is specifically designed for Microsoft.Testing.Platform, neither
 
 For users of MTP that are using the VSTest mode of `dotnet test`, there are few actions needed to migrate to the newer `dotnet test` experience:
 
-1. Add some configuration to your `global.json` file, as shown above.
+1. Add `test` section to your `global.json` file, as shown above.
 1. Remove `TestingPlatformDotnetTestSupport` MSBuild property, as it's no longer required.
 1. Remove `TestingPlatformCaptureOutput` and `TestingPlatformShowTestsFailure` MSBuild properties, as they are no longer used by the new `dotnet test`.
 1. Remove the extra `--`, for example `dotnet test -- --report-trx` should become `dotnet test --report-trx`.

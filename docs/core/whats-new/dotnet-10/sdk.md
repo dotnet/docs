@@ -2,14 +2,14 @@
 title: What's new in the SDK and tooling for .NET 10
 description: Learn about the new .NET SDK features introduced in .NET 10.
 titleSuffix: ""
-ms.date: 08/12/2025
+ms.date: 09/09/2025
 ms.topic: whats-new
 ai-usage: ai-assisted
 ---
 
 # What's new in the SDK and tooling for .NET 10
 
-This article describes new features and enhancements in the .NET SDK for .NET 10. It's been updated for Preview 7.
+This article describes new features and enhancements in the .NET SDK for .NET 10. It's been updated for RC 1.
 
 ## .NET tools enhancements
 

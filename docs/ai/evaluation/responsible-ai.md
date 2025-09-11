@@ -18,7 +18,7 @@ Microsoft has identified [six principles](https://www.microsoft.com/ai/responsib
 - Transparency
 - Accountability
 
-If you're building an AI app with .NET, the [📦 Microsoft.Extensions.AI.Evaluation.Safety](https://www.nuget.org/packages/Microsoft.Extensions.AI.Evaluation.Safety) package provides evaluators to help ensure that the responses, both text and image, that your app generates meet the standards for responsible AI. The evaluators can also detect problematic content in user input. These safety evaluators use the [Azure AI Foundry evaluation service](/azure/ai-foundry/concepts/evaluation-evaluators/risk-safety-evaluators) to perform evaluations. They include metrics for hate and unfairness, groundedness, ungrounded inference of human attributes, and the presence of:
+If you're building an AI app with .NET, the [📦 Microsoft.Extensions.AI.Evaluation.Safety](https://www.nuget.org/packages/Microsoft.Extensions.AI.Evaluation.Safety) package provides evaluators to help ensure that the responses your app generates, both text and image, meet the standards for responsible AI. The evaluators can also detect problematic content in user input. These safety evaluators use the [Azure AI Foundry evaluation service](/azure/ai-foundry/concepts/evaluation-evaluators/risk-safety-evaluators) to perform evaluations. They include metrics for hate and unfairness, groundedness, ungrounded inference of human attributes, and the presence of:
 
 - Protected material
 - Self-harm content

@@ -155,6 +155,9 @@ Run the test using your preferred test workflow, for example, by using the CLI c
    dotnet tool install --local Microsoft.Extensions.AI.Evaluation.Console
    ```
 
+  > [!TIP]
+  > You might need to create a manifest file first. For more information about that and installing local tools, see [Local tools](../../core/tools/dotnet-tool-install.md#local-tools).
+
 1. Generate a report by running the following command:
 
    ```dotnetcli

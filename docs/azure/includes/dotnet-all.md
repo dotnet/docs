@@ -203,7 +203,7 @@
 | Resource Management - Communication | NuGet [1.2.1](https://www.nuget.org/packages/Azure.ResourceManager.Communication/1.2.1) | [docs](/dotnet/api/overview/azure/ResourceManager.Communication-readme) | GitHub [1.2.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.Communication_1.2.1/sdk/communication/Azure.ResourceManager.Communication/) |
 | Resource Management - Compute | NuGet [1.11.0](https://www.nuget.org/packages/Azure.ResourceManager.Compute/1.11.0) | [docs](/dotnet/api/overview/azure/ResourceManager.Compute-readme) | GitHub [1.11.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.Compute_1.11.0/sdk/compute/Azure.ResourceManager.Compute/) |
 | Resource Management - Compute Fleet | NuGet [1.0.0](https://www.nuget.org/packages/Azure.ResourceManager.ComputeFleet/1.0.0) | [docs](/dotnet/api/overview/azure/ResourceManager.ComputeFleet-readme) | GitHub [1.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.ComputeFleet_1.0.0/sdk/computefleet/Azure.ResourceManager.ComputeFleet/) |
-| Resource Management - Compute Schedule | NuGet [1.0.0](https://www.nuget.org/packages/Azure.ResourceManager.ComputeSchedule/1.0.0) | [docs](/dotnet/api/overview/azure/ResourceManager.ComputeSchedule-readme) | GitHub [1.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.ComputeSchedule_1.0.0/sdk/computeschedule/Azure.ResourceManager.ComputeSchedule/) |
+| Resource Management - Compute Schedule | NuGet [1.1.0](https://www.nuget.org/packages/Azure.ResourceManager.ComputeSchedule/1.1.0) | [docs](/dotnet/api/overview/azure/ResourceManager.ComputeSchedule-readme) | GitHub [1.1.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.ComputeSchedule_1.1.0/sdk/computeschedule/Azure.ResourceManager.ComputeSchedule/) |
 | Resource Management - Confidential Ledger | NuGet [1.0.1](https://www.nuget.org/packages/Azure.ResourceManager.ConfidentialLedger/1.0.1)<br>NuGet [1.1.0-beta.6](https://www.nuget.org/packages/Azure.ResourceManager.ConfidentialLedger/1.1.0-beta.6) | [docs](/dotnet/api/overview/azure/ResourceManager.ConfidentialLedger-readme) | GitHub [1.0.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.ConfidentialLedger_1.0.1/sdk/confidentialledger/Azure.ResourceManager.ConfidentialLedger/)<br>GitHub [1.1.0-beta.6](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.ConfidentialLedger_1.1.0-beta.6/sdk/confidentialledger/Azure.ResourceManager.ConfidentialLedger/) |
 | Resource Management - Confluent | NuGet [1.2.1](https://www.nuget.org/packages/Azure.ResourceManager.Confluent/1.2.1) | [docs](/dotnet/api/overview/azure/ResourceManager.Confluent-readme) | GitHub [1.2.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.Confluent_1.2.1/sdk/confluent/Azure.ResourceManager.Confluent/) |
 | Resource Management - Connected VMware vSphere | NuGet [1.1.1](https://www.nuget.org/packages/Azure.ResourceManager.ConnectedVMwarevSphere/1.1.1) | [docs](/dotnet/api/overview/azure/ResourceManager.ConnectedVMwarevSphere-readme) | GitHub [1.1.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.ConnectedVMwarevSphere_1.1.1/sdk/connectedvmwarevsphere/Azure.ResourceManager.ConnectedVMwarevSphere/) |
@@ -406,23 +406,24 @@
 | Microsoft.Azure.DataFactoryTestingFramework.Expressions | NuGet [0.2.7](https://www.nuget.org/packages/Microsoft.Azure.DataFactoryTestingFramework.Expressions/0.2.7) |  |  |
 | Microsoft.Azure.Functions.Worker.OpenTelemetry | NuGet [1.1.0-preview6](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.OpenTelemetry/1.1.0-preview6) |  |  |
 | OpenTelemetry Profiler | NuGet [1.0.0-beta5](https://www.nuget.org/packages/Azure.Monitor.OpenTelemetry.Profiler/1.0.0-beta5) |  |  |
-| Speech CLI | NuGet [1.45.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.CLI/1.45.0) |  |  |
-| Speech Extension Embedded SR | NuGet [1.45.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Embedded.SR/1.45.0) |  |  |
-| Speech Extension Embedded TTS | NuGet [1.45.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Embedded.TTS/1.45.0) |  |  |
-| Speech Extension ONNX Runtime | NuGet [1.45.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.ONNX.Runtime/1.45.0) |  |  |
-| Speech Extension Telemetry | NuGet [1.45.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Telemetry/1.45.0) |  |  |
+| Speech CLI | NuGet [1.46.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.CLI/1.46.0) |  |  |
+| Speech Extension Embedded SR | NuGet [1.46.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Embedded.SR/1.46.0) |  |  |
+| Speech Extension Embedded TTS | NuGet [1.46.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Embedded.TTS/1.46.0) |  |  |
+| Speech Extension ONNX Runtime | NuGet [1.46.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.ONNX.Runtime/1.46.0) |  |  |
+| Speech Extension Telemetry | NuGet [1.46.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Telemetry/1.46.0) |  |  |
 | System Net Client Model | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/System.Net.ClientModel/1.0.0-beta.1) |  |  |
 | Unknown Display Name | NuGet [0.12.0](https://www.nuget.org/packages/Azure.Iot.Operations.Connector/0.12.0) |  |  |
 | Unknown Display Name | NuGet [0.1.2-preview.2](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Aot/0.1.2-preview.2) |  |  |
 | Unknown Display Name | NuGet [1.1.2-preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.AzureCosmosDb.Mongo/1.1.2-preview) |  |  |
-| Unknown Display Name | NuGet [1.45.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.MAS/1.45.0) |  |  |
+| Unknown Display Name | NuGet [1.46.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.MAS/1.46.0) |  |  |
 | Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Extensions.Caching.Postgres/1.0.0) |  |  |
-| Unknown Display Name | NuGet [0.0.5](https://www.nuget.org/packages/Microsoft.Template.Mcp.Server.linux-arm64/0.0.5) |  |  |
-| Unknown Display Name | NuGet [0.0.5](https://www.nuget.org/packages/Microsoft.Template.Mcp.Server.linux-x64/0.0.5) |  |  |
-| Unknown Display Name | NuGet [0.0.5](https://www.nuget.org/packages/Microsoft.Template.Mcp.Server.osx-arm64/0.0.5) |  |  |
-| Unknown Display Name | NuGet [0.0.5](https://www.nuget.org/packages/Microsoft.Template.Mcp.Server.osx-x64/0.0.5) |  |  |
-| Unknown Display Name | NuGet [0.0.5](https://www.nuget.org/packages/Microsoft.Template.Mcp.Server.win-arm64/0.0.5) |  |  |
-| Unknown Display Name | NuGet [0.0.5](https://www.nuget.org/packages/Microsoft.Template.Mcp.Server.win-x64/0.0.5) |  |  |
+| Unknown Display Name | NuGet [0.0.9](https://www.nuget.org/packages/Microsoft.Template.Mcp.Server/0.0.9) |  |  |
+| Unknown Display Name | NuGet [0.0.9](https://www.nuget.org/packages/Microsoft.Template.Mcp.Server.linux-arm64/0.0.9) |  |  |
+| Unknown Display Name | NuGet [0.0.9](https://www.nuget.org/packages/Microsoft.Template.Mcp.Server.linux-x64/0.0.9) |  |  |
+| Unknown Display Name | NuGet [0.0.9](https://www.nuget.org/packages/Microsoft.Template.Mcp.Server.osx-arm64/0.0.9) |  |  |
+| Unknown Display Name | NuGet [0.0.9](https://www.nuget.org/packages/Microsoft.Template.Mcp.Server.osx-x64/0.0.9) |  |  |
+| Unknown Display Name | NuGet [0.0.9](https://www.nuget.org/packages/Microsoft.Template.Mcp.Server.win-arm64/0.0.9) |  |  |
+| Unknown Display Name | NuGet [0.0.9](https://www.nuget.org/packages/Microsoft.Template.Mcp.Server.win-x64/0.0.9) |  |  |
 | WebJobs Extension MySQL | NuGet [1.0.129](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.MySql/1.0.129) |  |  |
 | Anomaly Detector | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.AnomalyDetector/1.0.0) |  | GitHub [1.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.AnomalyDetector_1.0.0-preview.1/sdk/cognitiveservices/AnomalyDetector) |
 | App Service | NuGet [0.2.2-alpha](https://www.nuget.org/packages/Microsoft.Azure.AppService/0.2.2-alpha) |  |  |
@@ -490,8 +491,8 @@
 | Search - Common | NuGet [10.1.0](https://www.nuget.org/packages/Microsoft.Azure.Search.Common/10.1.0) |  | GitHub [10.1.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Search.Common_10.1.0/sdk/search/Microsoft.Azure.Search.Common/) |
 | Search - Data | NuGet [10.1.0](https://www.nuget.org/packages/Microsoft.Azure.Search.Data/10.1.0) |  | GitHub [10.1.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Search.Data_10.1.0/sdk/search/Microsoft.Azure.Search.Data/) |
 | Search - Service | NuGet [10.1.0](https://www.nuget.org/packages/Microsoft.Azure.Search.Service/10.1.0) |  | GitHub [10.1.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Search.Service_10.1.0/sdk/search/Microsoft.Azure.Search.Service/) |
-| Speech | NuGet [1.45.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech/1.45.0) |  |  |
-| Speech Remote Conversation | NuGet [1.45.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Remoteconversation/1.45.0) |  |  |
+| Speech | NuGet [1.46.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech/1.46.0) |  |  |
+| Speech Remote Conversation | NuGet [1.46.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Remoteconversation/1.46.0) |  |  |
 | Speech Xamarin iOS | NuGet [1.25.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Xamarin.iOS/1.25.0) |  |  |
 | Spell Check | NuGet [4.1.0-preview.1](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Language.SpellCheck/4.1.0-preview.1) |  | GitHub [4.1.0-preview.1](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.Language.SpellCheck_4.1.0-preview.1/sdk/cognitiveservices/Language.SpellCheck) |
 | Spring Cloud Client | NuGet [2.0.0-preview.3](https://www.nuget.org/packages/Microsoft.Azure.SpringCloud.Client/2.0.0-preview.3) |  |  |

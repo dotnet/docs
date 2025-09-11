@@ -66,7 +66,7 @@ The use of `stackalloc` automatically enables buffer overrun detection features 
 
 ## C# language specification
 
-For more information, see the [Stack allocation](~/_csharpstandard/standard/unsafe-code.md#239-stack-allocation) section of the [C# language specification](~/_csharpstandard/standard/README.md).
+For more information, see the [Stack allocation](~/_csharpstandard/standard/unsafe-code.md#249-stack-allocation) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 ## See also
 

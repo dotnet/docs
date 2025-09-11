@@ -175,10 +175,10 @@ For more information, see the following sections of the [C# language specificati
 - [Fixed and moveable variables](~/_csharpstandard/standard/unsafe-code.md#244-fixed-and-moveable-variables)
 - [The address-of operator](~/_csharpstandard/standard/unsafe-code.md#2465-the-address-of-operator)
 - [Pointer indirection](~/_csharpstandard/standard/unsafe-code.md#2462-pointer-indirection)
-- [Pointer member access](~/_csharpstandard/standard/unsafe-code.md#2363-pointer-member-access)
-- [Pointer element access](~/_csharpstandard/standard/unsafe-code.md#2364-pointer-element-access)
-- [Pointer arithmetic](~/_csharpstandard/standard/unsafe-code.md#2367-pointer-arithmetic)
-- [Pointer increment and decrement](~/_csharpstandard/standard/unsafe-code.md#2366-pointer-increment-and-decrement)
+- [Pointer member access](~/_csharpstandard/standard/unsafe-code.md#2463-pointer-member-access)
+- [Pointer element access](~/_csharpstandard/standard/unsafe-code.md#2464-pointer-element-access)
+- [Pointer arithmetic](~/_csharpstandard/standard/unsafe-code.md#2467-pointer-arithmetic)
+- [Pointer increment and decrement](~/_csharpstandard/standard/unsafe-code.md#2466-pointer-increment-and-decrement)
 - [Pointer comparison](~/_csharpstandard/standard/unsafe-code.md#2468-pointer-comparison)
 
 ## See also

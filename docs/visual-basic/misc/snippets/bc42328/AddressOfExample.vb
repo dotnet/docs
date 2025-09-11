@@ -1,5 +1,6 @@
 Imports System
 
+' <DocumentProcessor>
 Public Class DocumentProcessor
     ' Standard .NET event using EventHandler
     Public Event DocumentProcessed As EventHandler
@@ -64,6 +65,7 @@ Public Class DocumentProcessor
         RaiseEvent StatusChanged("All solutions work")
     End Sub
 End Class
+' </DocumentProcessor>
 
 Module Program
     Sub Main()

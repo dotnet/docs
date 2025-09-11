@@ -168,6 +168,20 @@ Public Class Test
         ' Code goes here.
     End Sub
     ' </snippet7>
+
+    ' <typeparamref>	
+    ' <snippet9>
+    ''' <summary>
+    ''' Compares two items of type <typeparamref name="T"/>.
+    ''' </summary>
+    ''' <typeparam name="T">The type of items to compare.</typeparam>
+    ''' <param name="item1">The first item of type <typeparamref name="T"/>.</param>
+    ''' <param name="item2">The second item of type <typeparamref name="T"/>.</param>
+    ''' <returns>True if the items are equal, False otherwise.</returns>
+    Public Function CompareItems(Of T As IComparable)(ByVal item1 As T, ByVal item2 As T) As Boolean
+        Return item1.CompareTo(item2) = 0
+    End Function
+    ' </snippet9>
 End Class
 
 ' <code>	    925e5342-be05-45f2-bf66-7398bbd6710e.xml

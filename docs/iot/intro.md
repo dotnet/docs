@@ -46,6 +46,10 @@ Some commonly used device bindings include:
 - [Max7219 - LED Matrix driver](https://github.com/dotnet/iot/tree/main/src/devices/Max7219)
 - [RGBLedMatrix - RGB LED Matrix](https://github.com/dotnet/iot/tree/main/src/devices/RGBLedMatrix)
 
+## A word on threads
+
+By default, the objects in these libraries **aren't thread safe**. That means that access to an object must only be from one thread at a time. When using the libraries, you must be aware that they often run other threads internally for things like monitoring hardware and firing events. If you subscribe to an event, it's fired from a different thread. It's your responsibility to control thread access to the object.
+
 ## Supported operating systems
 
 `System.Device.Gpio` is supported on any operating system that supports .NET, including most versions of Linux that support ARM/ARM64 and Windows 10 IoT Core.

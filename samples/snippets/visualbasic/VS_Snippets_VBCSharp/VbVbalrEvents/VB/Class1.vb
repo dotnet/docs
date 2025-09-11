@@ -1,4 +1,7 @@
-﻿Class Class072b9cf6629846f1849e4edc1631564c
+﻿Imports System.Windows.Forms
+Imports System.Data
+
+Class Class072b9cf6629846f1849e4edc1631564c
     ' WithEvents and the Handles Clause
 
     ' <snippet1>
@@ -225,35 +228,72 @@ Class Class647cd825e8774910b4f18d168beebe6a
     ' AddHandler Statement
 
     ' <snippet17>
-    Sub TestEvents()
+    Public Class DataBindingExample
+        Private textBox1 As TextBox
+        Private ds As DataSet
+        
+        Public Sub New()
+            textBox1 = New TextBox()
+            ds = New DataSet()
+            SetupSampleData()
+            BindControlWithAddHandler()
+        End Sub
+        
+        Private Sub SetupSampleData()
+            Dim table As New DataTable("Orders")
+            table.Columns.Add("OrderAmount", GetType(Decimal))
+            table.Rows.Add(123.45D)
+            table.Rows.Add(67.89D)
+            ds.Tables.Add(table)
+        End Sub
+        
+        Private Sub BindControlWithAddHandler()
+            Dim binding As New Binding("Text", ds, "Orders.OrderAmount")
+            
+            ' Use AddHandler to associate ConvertEventHandler delegates
+            AddHandler binding.Format, AddressOf DecimalToCurrency
+            AddHandler binding.Parse, AddressOf CurrencyToDecimal
+            
+            textBox1.DataBindings.Add(binding)
+        End Sub
+        
+        Private Sub DecimalToCurrency(ByVal sender As Object, ByVal e As ConvertEventArgs)
+            If e.DesiredType IsNot GetType(String) Then
+                Return
+            End If
+            e.Value = CDec(e.Value).ToString("c")
+        End Sub
+        
+        Private Sub CurrencyToDecimal(ByVal sender As Object, ByVal e As ConvertEventArgs)
+            If e.DesiredType IsNot GetType(Decimal) Then
+                Return
+            End If
+            e.Value = Convert.ToDecimal(e.Value.ToString())
+        End Sub
+    End Class
+    
+    ' Simple example for basic AddHandler usage
+    Sub TestBasicEvents()
         Dim Obj As New Class1
-        ' Associate an event handler with an event.
         AddHandler Obj.Ev_Event, AddressOf EventHandler
-        ' Call the method to raise the event.
         Obj.CauseSomeEvent()
-        ' Stop handling events.
         RemoveHandler Obj.Ev_Event, AddressOf EventHandler
-        ' This event will not be handled.
         Obj.CauseSomeEvent()
-        ' Associate an event handler with an event, using a lambda.
-        ' This handler cannot be removed.
+        
+        ' Lambda expression example
         AddHandler Obj.Ev_Event, Sub ()
             MsgBox("Lambda caught event.")
         End Sub
-        ' This event will be handled by the lambda above.
         Obj.CauseSomeEvent()
     End Sub
 
     Sub EventHandler()
-        ' Handle the event.
         MsgBox("EventHandler caught event.")
     End Sub
 
     Public Class Class1
-        ' Declare an event.
         Public Event Ev_Event()
         Sub CauseSomeEvent()
-            ' Raise an event.
             RaiseEvent Ev_Event()
         End Sub
     End Class

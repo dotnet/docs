@@ -57,7 +57,7 @@ Action a = () => StaticFunction();
 
 ## C# language specification
 
-For more information, see the [Anonymous function expressions](~/_csharpstandard/standard/expressions.md#1219-anonymous-function-expressions) section of the [C# language specification](~/_csharpstandard/standard/README.md).
+For more information, see the [Anonymous function expressions](~/_csharpstandard/standard/expressions.md#1220-anonymous-function-expressions) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 ## See also
 

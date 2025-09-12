@@ -51,9 +51,9 @@ With this assistant, you can:
 
 - Code must be written in C#.
 
-## Supported project types
+## Upgrade .NET projects
 
-GitHub Copilot app modernization supports upgrading projects coded in C#. The following types of projects are supported:
+The modernization agent supports upgrading projects coded in C#. The following types of projects are supported:
 
 - ASP.NET and related technologies such as MVC, Razor Pages, Web API
 - Blazor
@@ -63,7 +63,7 @@ GitHub Copilot app modernization supports upgrading projects coded in C#. The fo
 - Class libraries
 - Console apps
 
-## Upgrade paths
+### Upgrade paths
 
 The following upgrade paths are supported:
 
@@ -71,6 +71,26 @@ The following upgrade paths are supported:
 - Upgrade projects from .NET Framework to the latest version of .NET.
 - Modernize your code base with new features.
 - Migrate components and services to Azure.
+
+## Migrate .NET projects to Azure
+
+The modernization agent combines automated analysis, AI-driven code remediation, build and vulnerability checks, and deployment automation to simplify migrations to Azure. The following capabilities describe how the agent assesses readiness, applies fixes, and streamlines the migration process:
+
+- Analysis & Intelligent Recommendations.
+
+  Assess your application's readiness for Azure migration and receive tailored guidance based on its dependencies and identified issues.
+
+- AI-Powered Code Remediation.
+
+  Apply predefined best-practice code patterns to accelerate modernization with minimal manual effort.
+
+- Automatic Build and CVE Resolution.
+
+  automatically builds your app and resolves compilation errors and vulnerabilities, streamlining development.
+
+- Seamless Deployment.
+
+  Deploy to Azure effortlessly, taking your code from development to cloud faster than ever.
 
 ## How does it work
 

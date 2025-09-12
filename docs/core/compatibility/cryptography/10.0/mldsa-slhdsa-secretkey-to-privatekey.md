@@ -44,9 +44,9 @@ byte[] output = new byte[targetSize];
 
 ## Affected APIs
 
-- <xref:System.Security.Cryptography.MLDsa.ImportMLDsaSecretKey*?displayProperty=fullName>
-- <xref:System.Security.Cryptography.MLDsa.ExportMLDsaSecretKey*?displayProperty=fullName>
-- <xref:System.Security.Cryptography.MLDsaAlgorithm.SecretKeySizeInBytes?displayProperty=fullName>
-- <xref:System.Security.Cryptography.SlhDsa.ImportSlhDsaSecretKey*?displayProperty=fullName>
-- <xref:System.Security.Cryptography.SlhDsa.ExportSlhDsaSecretKey*?displayProperty=fullName>
-- <xref:System.Security.Cryptography.SlhDsaAlgorithm.SecretKeySizeInBytes?displayProperty=fullName>
+- `System.Security.Cryptography.MLDsa.ImportMLDsaSecretKey()`
+- `System.Security.Cryptography.MLDsa.ExportMLDsaSecretKey()`
+- `System.Security.Cryptography.MLDsaAlgorithm.SecretKeySizeInBytes`
+- `System.Security.Cryptography.SlhDsa.ImportSlhDsaSecretKey()`
+- `System.Security.Cryptography.SlhDsa.ExportSlhDsaSecretKey()`
+- `System.Security.Cryptography.SlhDsaAlgorithm.SecretKeySizeInBytes`

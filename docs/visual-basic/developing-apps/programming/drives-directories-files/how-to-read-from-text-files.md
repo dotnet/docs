@@ -31,6 +31,19 @@ Use the `ReadAllText` method of the `My.Computer.FileSystem` object to read the 
 
 [!code-vb[VbFileIORead#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbFileIORead/VB/Class1.vb#3)]
 
+### To read from a text file into a RichTextBox control
+
+To load the contents of a text file directly into a RichTextBox control, read the file contents into a string and assign it to the `Text` property of the RichTextBox. The following example shows how to read a text file and load it into a RichTextBox control.
+
+[!code-vb[VbFileIORead#21](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbFileIORead/VB/Class1.vb#21)]
+
+For better error handling and file path management, you can use the following approach that constructs a proper file path and handles potential exceptions. This approach avoids hardcoded drive paths that can cause issues on different systems:
+
+[!code-vb[VbFileIORead#22](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbFileIORead/VB/Class1.vb#22)]
+
+> [!NOTE]
+> When specifying file paths, avoid using hardcoded absolute paths like "C:\temp\file.txt" as these can cause issues on systems where the drive letter or directory structure is different. Instead, use relative paths or construct paths using <xref:System.IO.Path.Combine%2A> to ensure your code works across different environments.
+
 ## Robust Programming
 
 The following conditions may cause an exception:

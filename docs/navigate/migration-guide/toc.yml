@@ -6,16 +6,18 @@ items:
     expanded: true
     items:
       - name: Overview
+        href: ../../core/porting/index.md
+        displayName: copilot, upgrade
+      - name: Upgrade with GitHub Copilot
         href: ../../core/porting/github-copilot-app-modernization-overview.md
         displayName: copilot, upgrade
       - name: Upgrade with GitHub Copilot FAQ
         href: ../../core/porting/github-copilot-app-modernization-faq.yml
         displayName: copilot, upgrade, faq
       - name: Planning your .NET Framework upgrade
-        expanded: true
         items:
           - name: Overview
-            href: ../../core/porting/index.md
+            href: ../../core/porting/framework-overview.md
           - name: Upgrade with GitHub Copilot
             href: ../../core/porting/github-copilot-app-modernization-overview.md
             displayName: copilot, upgrade, modernization

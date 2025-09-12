@@ -1,6 +1,6 @@
 ---
-title: GitHub Copilot app modernization - upgrade for .NET overview
-description: "Learn more about GitHub Copilot app modernization - upgrade for .NET. This Visual Studio extension helps you upgrade your code and projects. Upgrades can include .NET versioning or migrating code from one technology to another."
+title: GitHub Copilot app modernization overview
+description: "Learn more about GitHub Copilot app modernization. This Visual Studio extension helps you upgrade your code and projects. Upgrades can include .NET versioning or migrating code from one technology to another."
 titleSuffix: ""
 author: adegeo
 ms.author: adegeo
@@ -11,17 +11,33 @@ ms.date: 09/04/2025
 
 ---
 
-# What is GitHub Copilot app modernization - upgrade for .NET?
+# What is GitHub Copilot app modernization
 
-GitHub Copilot app modernization - upgrade for .NET is a powerful Visual Studio extension that works with you to upgrade projects to newer versions of .NET, upgrade your dependencies, and apply code fixes.
+GitHub Copilot app modernization helps you upgrade projects to newer versions of .NET and migrate .NET applications to Azure quickly and confidently by guiding you through assessment, solution recommendations, code fixes, and validation - all within Visual Studio.  
 
-GitHub Copilot app modernization is distributed as a Visual Studio extension, and is an interactive upgrade process.
+This process streamlines modernization and boosts developer productivity and confidence. GitHub Copilot app modernization for .NET is an all-in-one upgrade and migration assistant that uses AI to improve developer velocity, quality, and results.
+
+With this assistant, you can:
+
+- Upgrade to a newer version of .NET
+- Assess your application's code, configuration, and dependencies.
+- Upgrade projects from older versions of .NET to the latest.
+- Migrate technolgies your app depends on to Azure
+- Plan and set up the right Azure resource
+- Fix issues and apply best practices for cloud migration
+- Validate that your app builds and tests successfully
 
 ## Prerequisites
 
 - Windows Operating System
-- [Visual Studio 2022 version 17.14 or newer](https://visualstudio.microsoft.com/downloads/).
+- [Visual Studio 2022 version 17.14.16 or newer](https://visualstudio.microsoft.com/downloads/)&mdash;or&mdash;[Visual Studio 2026 Insiders Preview 2 or newer](https://visualstudio.microsoft.com/insiders)
 - [.NET desktop development workload](/visualstudio/install/modify-visual-studio?view=vs-2022&preserve-view=true#change-workloads-or-individual-components).
+
+  Enable the following optional components:
+
+  - GitHub Copilot
+  - GitHub Copilot app modernization for .NET
+
 - [Sign in to Visual Studio using a GitHub account](/visualstudio/ide/work-with-github-accounts) with [Copilot access](https://docs.github.com/copilot/about-github-copilot/what-is-github-copilot#getting-access-to-copilot).
 
   Supported subscription plans:
@@ -31,13 +47,9 @@ GitHub Copilot app modernization is distributed as a Visual Studio extension, an
   - Copilot Business
   - Copilot Enterprise
 
-(If you change subscriptions, you must restart Visual Studio.)
+  (If you change subscriptions, you must restart Visual Studio.)
 
-- Code must be in a local Git repository.
 - Code must be written in C#.
-- Optional but recommended: Use **GitHub Copilot agent mode** for the upgrade process. For more information, see [Use Copilot agent mode in Visual Studio](/visualstudio/ide/copilot-agent-mode?view=vs-2022&preserve-view=true).
-
-For installation instructions, see [Install GitHub Copilot app modernization - upgrade for .NET](github-copilot-app-modernization-install.md).
 
 ## Supported project types
 
@@ -63,16 +75,13 @@ The following upgrade paths are supported:
 
 The first step to upgrading is generating a plan by interacting with GitHub Copilot. There are two ways to get Copilot to use the tool:
 
-- Right-click on the solution or project and select **Upgrade with GitHub Copilot**.
+- Right-click on the solution or project and select **Modernize**.
+
+  ..TODO: IMAGE.. 
 
   —or—
 
-- [Enable GitHub Copilot agent mode](/visualstudio/ide/copilot-agent-mode?view=vs-2022&preserve-view=true), and ask a new Copilot chat to upgrade the solution or project.
-
-  > [!IMPORTANT]
-  > After enabling GitHub Copilot agent mode, set the chat mode to **Agent** and enable the **upgrade_start** tool.
-  >
-  > :::image type="content" source="media/github-copilot-app-modernization-overview/copilot-agent-tools.png" alt-text="The GitHub Copilot chat window. The Agent Mode dropdown and Tool selection dropdown are both highlighted.":::
+- Open the **GitHub Copilot Chat** window and ask the `@Modernize` agent to upgrade.
 
 ## Generate a plan
 
@@ -86,13 +95,13 @@ You can adjust the plan by editing the Markdown file to change the upgrade steps
 The following snippet demonstrates the structure of a plan:
 
 ```md
-# .NET 9.0 Upgrade Plan
+# .NET 10.0 Upgrade Plan
 
 ## Execution Steps
 
-1. Validate that an .NET 9.0 SDK required for this upgrade is installed on the machine and if not, help to get it installed.
-2. Ensure that the SDK version specified in global.json files is compatible with the .NET 9.0 upgrade.
-3. Upgrade projects to .NET 9.0.
+1. Validate that an .NET 10.0 SDK required for this upgrade is installed on the machine and if not, help to get it installed.
+2. Ensure that the SDK version specified in global.json files is compatible with the .NET 10.0 upgrade.
+3. Upgrade projects to .NET 10.0.
   - 3.1. Upgrade RazorMovie.csproj
   - 3.2. Upgrade RazorMovie.Tests.csproj
 4. Run unit tests to validate upgrade in the projects listed below:
@@ -110,10 +119,10 @@ NuGet packages used across all selected projects or their dependencies that need
 |:-------------------------------------------------|:-------------------:|:-----------:|:-------------------------|
 | HtmlSanitizer                                    | 7.1.542             | 9.0.884     | Security vulnerability   |
 | Microsoft.Data.SqlClient                         | 4.0.5               | 6.0.2       | Deprecated               |
-| Microsoft.EntityFrameworkCore.Design             | 6.0.0-rtm.21467.1   | 9.0.5       | Recommended for .NET 9.0 |
-| Microsoft.EntityFrameworkCore.SqlServer          | 6.0.0-rc.1.21452.10 | 9.0.5       | Recommended for .NET 9.0 |
-| Microsoft.EntityFrameworkCore.Tools              | 6.0.0-rc.1.21452.10 | 9.0.5       | Recommended for .NET 9.0 |
-| Microsoft.VisualStudio.Web.CodeGeneration.Design | 6.0.0-rc.1.21464.1  | 9.0.0       | Recommended for .NET 9.0 |
+| Microsoft.EntityFrameworkCore.Design             | 6.0.0-rtm.21467.1   | 9.0.5       | Recommended for .NET 10.0 |
+| Microsoft.EntityFrameworkCore.SqlServer          | 6.0.0-rc.1.21452.10 | 9.0.5       | Recommended for .NET 10.0 |
+| Microsoft.EntityFrameworkCore.Tools              | 6.0.0-rc.1.21452.10 | 9.0.5       | Recommended for .NET 10.0 |
+| Microsoft.VisualStudio.Web.CodeGeneration.Design | 6.0.0-rc.1.21464.1  | 9.0.0       | Recommended for .NET 10.0 |
 
 ...
 ```
@@ -141,7 +150,7 @@ When the upgrade completes, a report is generated that describes every step of t
 The report also provides a _Next steps_ section that describes the steps you should take after the upgrade finishes. The following example shows the report of a completed upgrade that contained a test failure:
 
 ```md
-# .NET 9 Upgrade Report
+# .NET 10 Upgrade Report
 
 ## Project modifications
 
@@ -173,7 +182,7 @@ The report also provides a _Next steps_ section that describes the steps you sho
 | aa61a18d  | Upgrade target framework in RazorMovie.csproj           |
 | cc8c9015  | Upgrade to .NET 9 and update dependencies               |
 | bf8deeac  | Update package references in MvcMovie.csproj            |
-| 9c4b13f9  | Update WpfMovie.csproj to target .NET 9.0               |
+| 9c4b13f9  | Update WpfMovie.csproj to target .NET 10.0               |
 | b8d85e97  | Update test projects to .NET 9 and enhance dependencies |
 
 ## Test Results
@@ -188,7 +197,7 @@ The report also provides a _Next steps_ section that describes the steps you sho
 
 - Review the test results and address the single failing test in `WpfMovie.Tests`.
 - Ensure all updated NuGet packages are compatible with your application.
-- Leverage new features and improvements in .NET 9.0 for your projects.
+- Leverage new features and improvements in .NET 10.0 for your projects.
 ```
 
 ## Telemetry
@@ -197,5 +206,4 @@ The tool only collects data about project types, intent to upgrade, and upgrade 
 
 ## Related content
 
-- [Install GitHub Copilot app modernization - upgrade for .NET](github-copilot-app-modernization-install.md)
 - [GitHub Copilot app modernization - upgrade for .NET FAQ](github-copilot-app-modernization-faq.yml)

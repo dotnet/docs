@@ -8,12 +8,19 @@ items:
       - name: Overview
         href: ../../core/porting/index.md
         displayName: copilot, upgrade
-      - name: Upgrade with GitHub Copilot
-        href: ../../core/porting/github-copilot-app-modernization-overview.md
-        displayName: copilot, upgrade
-      - name: Upgrade with GitHub Copilot FAQ
+      - name: GitHub Copilot app modernization
+        expanded: true
+        items:
+          - name: Overview
+            href: ../../core/porting/github-copilot-app-modernization-overview.md
+            displayName: copilot, upgrade, faq
+          - name: Example
+            href: ../../core/porting/github-copilot-app-modernization-example.md
+          - name: FAQ
+            href: ../../core/porting/github-copilot-app-modernization-faq.yml
+            displayName: copilot, upgrade, faq
+      - name: Update .NET SDK and Runtime
         href: ../../core/porting/github-copilot-app-modernization-faq.yml
-        displayName: copilot, upgrade, faq
       - name: Planning your .NET Framework upgrade
         items:
           - name: Overview
@@ -78,7 +85,6 @@ items:
               - name: Modernize
                 href: ../../core/porting/modernize.md
       - name: Other tools
-        expanded: false
         items:
           - name: .NET Upgrade Assistant tool
             items:
@@ -92,7 +98,6 @@ items:
                 href: ../../core/porting/upgrade-assistant-how-to-upgrade.md
                 displayName: upgrade assistant
               - name: Analyze
-                expanded: false
                 items:
                   - name: Overview
                     href: ../../core/porting/upgrade-assistant-analyze-overview.md
@@ -101,7 +106,6 @@ items:
                     href: ../../core/porting/upgrade-assistant-how-to-analyze.md
                     displayName: upgrade assistant
               - name: Project upgrade guide
-                expanded: false
                 items:
                   - name: ASP.NET
                     href: /aspnet/core/migration/fx-to-core/tooling
@@ -123,9 +127,7 @@ items:
         href: /dotnet/azure/migration/appmod/overview?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
       - name: FAQ
         href: /dotnet/azure/migration/appmod/faq?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
-      - name: Predefined tasks
-        href: /dotnet/azure/migration/appmod/predefined-tasks?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
-      - name: "Quickstart: Assess and migrate a .NET project"
+      - name: Migrate a .NET project
         href: /dotnet/azure/migration/appmod/quickstart?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
       - name: Migration sample
         href: /dotnet/azure/migration/appmod/sample?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json

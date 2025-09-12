@@ -8,17 +8,12 @@ items:
       - name: Overview
         href: ../../core/porting/index.md
         displayName: copilot, upgrade
-      - name: GitHub Copilot app modernization
-        expanded: true
-        items:
-          - name: Overview
-            href: ../../core/porting/github-copilot-app-modernization-overview.md
-            displayName: copilot, upgrade, faq
-          - name: Example
-            href: ../../core/porting/github-copilot-app-modernization-example.md
-          - name: FAQ
-            href: ../../core/porting/github-copilot-app-modernization-faq.yml
-            displayName: copilot, upgrade, faq
+      - name: GitHub Copilot app modernization Overview
+        href: ../../core/porting/github-copilot-app-modernization-overview.md
+        displayName: copilot, upgrade, faq
+      - name: GitHub Copilot app modernization FAQ
+        href: ../../core/porting/github-copilot-app-modernization-faq.yml
+        displayName: copilot, upgrade, faq
       - name: Update .NET SDK and Runtime
         href: ../../core/porting/github-copilot-app-modernization-faq.yml
       - name: Planning your .NET Framework upgrade

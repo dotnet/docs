@@ -72,6 +72,26 @@ The following upgrade paths are supported:
 - Modernize your code base with new features.
 - Migrate components and services to Azure.
 
+## How does it work
+
+Once you request the Modernization agent to upgrade or migrate your app, Copilot analyzes your projects and their dependencies, and then asks you a series of questions about the upgrade or migration. After you answer these questions, a plan is written in the form of a Markdown file. If you tell Copilot to proceed with the upgrade or migration, it follows the steps described in the plan.
+
+You can adjust the plan by editing the Markdown file to change the upgrade steps or add more context.
+
+### Perform the upgrade or migration
+
+Once an plan is ready, tell Copilot to start using it. Once the process starts, Copilot lets you know what it's doing in the chat window and it opens the **Upgrade Progress Details** document, which lists the status of every step.
+
+If it runs into a problem, Copilot tries to identify the cause of a problem and apply a fix. If Copilot can't seem to correct the problem, it asks for your help. When you intervene, Copilot learns from the changes you make and tries to automatically apply them for you, if the problem is encountered again.
+
+Each major step in the plan is committed to the local Git repository.
+
+### Upgrade and migration results
+
+When the process completes, a report is generated that describes every step taken by Copilot. The tool creates a Git commit for every portion of the process, so you can easily roll back the changes or get detailed information about what changed. The report contains the Git commit hashes.
+
+The report also provides a _Next steps_ section that describes the steps you should take after the upgrade finishes.
+
 ## Telemetry
 
 The tool only collects data about project types, intent to upgrade, and upgrade duration. The data is collected and aggregated through Visual Studio itself and doesn't contain any user-identifiable information. For more information about Microsoft's privacy policy, see [Visual Studio Customer Experience Improvement Program](/visualstudio/ide/visual-studio-experience-improvement-program?view=vs-2022&preserve-view=true).

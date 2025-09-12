@@ -520,7 +520,7 @@
                 "includes/**/**.md": "dapine"
             },
             "ms.date": {
-                "_csharpstandard/standard/*.md": "02/07/2024",
+                "_csharpstandard/standard/*.md": "09/12/2025",
                 "_csharplang/proposals/csharp-8.0/*.md": "09/10/2019",
                 "_csharplang/proposals/csharp-9.0/*.md": "07/29/2020",
                 "_csharplang/proposals/csharp-10.0/*.md": "08/07/2021",
@@ -637,7 +637,6 @@
                 "_csharpstandard/standard/Bibliography.md": "Bibliography",
                 "_csharplang/proposals/csharp-8.0/patterns.md": "Recursive pattern matching",
                 "_csharplang/proposals/csharp-8.0/default-interface-methods.md": "Default interface methods",
-                "_csharplang/proposals/csharp-8.0/using.md": "Pattern based using and using declarations",
                 "_csharplang/proposals/csharp-9.0/covariant-returns.md": "Covariant return types",
                 "_csharplang/proposals/csharp-9.0/extending-partial-methods.md": "Extending partial methods",
                 "_csharplang/proposals/csharp-9.0/extension-getenumerator.md": "Extension GetEnumerator support in foreach",
@@ -765,7 +764,6 @@
                 "_csharpstandard/standard/Bibliography.md": "This appendix lists external standards referenced in this specification.",
                 "_csharplang/proposals/csharp-8.0/patterns.md": "This feature specification describes recursive pattern matching, where patterns can nest inside other patterns.",
                 "_csharplang/proposals/csharp-8.0/default-interface-methods.md": "This feature specification describe the syntax updates necessary to support default interface methods. This includes declaring bodies in interface declarations, and supporting modifiers on declarations.",
-                "_csharplang/proposals/csharp-8.0/using.md": "This feature specification supports pattern based using and using declarations to simplify resource cleanup.",
                 "_csharplang/proposals/csharp-9.0/covariant-returns.md": "This feature specification describes covariant return types, where overriding member declarations can return a type derived from the overridden member declaration.",
                 "_csharplang/proposals/csharp-9.0/extending-partial-methods.md": "This feature specification describes extensions to partial methods. These extensions enable source generators to create or call partial methods.",
                 "_csharplang/proposals/csharp-9.0/extension-getenumerator.md": "This feature specification describes the necessary pattern for an extension method to provide the GetEnumerator support in a foreach loop.",

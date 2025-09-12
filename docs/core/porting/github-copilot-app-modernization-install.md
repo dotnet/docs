@@ -15,10 +15,13 @@ ms.date: 09/04/2025
 
 This article guides you through installing GitHub Copilot app modernization - upgrade for .NET extension in Visual Studio.
 
+> [!IMPORTANT]
+> The GitHib Copilot Modernization agent is included in Visual Studio, starting with versions Visual Studio 2022 17.14.16 and Visual Studio 2026.
+
 ## Prerequisites
 
 - Windows operating system
-- [Visual Studio 2022 version 17.14 or newer](https://visualstudio.microsoft.com/downloads/)
+- [Visual Studio 2022 version 17.14.15 or earlier](https://visualstudio.microsoft.com/downloads/)
 - [.NET desktop development workload](/visualstudio/install/modify-visual-studio?view=vs-2022&preserve-view=true#change-workloads-or-individual-components)
 
 While not required to _install_ the extension, to use the extension you must [sign in to Visual Studio using a GitHub account](/visualstudio/ide/work-with-github-accounts) with [Copilot access](https://docs.github.com/copilot/about-github-copilot/what-is-github-copilot#getting-access-to-copilot).

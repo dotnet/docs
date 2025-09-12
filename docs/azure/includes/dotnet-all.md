@@ -417,13 +417,18 @@
 | Unknown Display Name | NuGet [1.1.2-preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.AzureCosmosDb.Mongo/1.1.2-preview) |  |  |
 | Unknown Display Name | NuGet [1.46.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.MAS/1.46.0) |  |  |
 | Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Extensions.Caching.Postgres/1.0.0) |  |  |
-| Unknown Display Name | NuGet [0.0.9](https://www.nuget.org/packages/Microsoft.Template.Mcp.Server/0.0.9) |  |  |
+| Unknown Display Name | NuGet [0.0.11](https://www.nuget.org/packages/Microsoft.Template.Mcp.linux-arm64/0.0.11) |  |  |
+| Unknown Display Name | NuGet [0.0.11](https://www.nuget.org/packages/Microsoft.Template.Mcp.linux-x64/0.0.11) |  |  |
+| Unknown Display Name | NuGet [0.0.11](https://www.nuget.org/packages/Microsoft.Template.Mcp.osx-arm64/0.0.11) |  |  |
+| Unknown Display Name | NuGet [0.0.11](https://www.nuget.org/packages/Microsoft.Template.Mcp.osx-x64/0.0.11) |  |  |
 | Unknown Display Name | NuGet [0.0.9](https://www.nuget.org/packages/Microsoft.Template.Mcp.Server.linux-arm64/0.0.9) |  |  |
 | Unknown Display Name | NuGet [0.0.9](https://www.nuget.org/packages/Microsoft.Template.Mcp.Server.linux-x64/0.0.9) |  |  |
 | Unknown Display Name | NuGet [0.0.9](https://www.nuget.org/packages/Microsoft.Template.Mcp.Server.osx-arm64/0.0.9) |  |  |
 | Unknown Display Name | NuGet [0.0.9](https://www.nuget.org/packages/Microsoft.Template.Mcp.Server.osx-x64/0.0.9) |  |  |
 | Unknown Display Name | NuGet [0.0.9](https://www.nuget.org/packages/Microsoft.Template.Mcp.Server.win-arm64/0.0.9) |  |  |
 | Unknown Display Name | NuGet [0.0.9](https://www.nuget.org/packages/Microsoft.Template.Mcp.Server.win-x64/0.0.9) |  |  |
+| Unknown Display Name | NuGet [0.0.11](https://www.nuget.org/packages/Microsoft.Template.Mcp.win-arm64/0.0.11) |  |  |
+| Unknown Display Name | NuGet [0.0.11](https://www.nuget.org/packages/Microsoft.Template.Mcp.win-x64/0.0.11) |  |  |
 | WebJobs Extension MySQL | NuGet [1.0.129](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.MySql/1.0.129) |  |  |
 | Anomaly Detector | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.AnomalyDetector/1.0.0) |  | GitHub [1.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.AnomalyDetector_1.0.0-preview.1/sdk/cognitiveservices/AnomalyDetector) |
 | App Service | NuGet [0.2.2-alpha](https://www.nuget.org/packages/Microsoft.Azure.AppService/0.2.2-alpha) |  |  |

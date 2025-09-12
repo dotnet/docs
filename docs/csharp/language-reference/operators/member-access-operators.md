@@ -271,7 +271,7 @@ For more information, see the following sections of the [C# language specificati
 - [Null-conditional member access](~/_csharpstandard/standard/expressions.md#1288-null-conditional-member-access)
 - [Invocation expressions](~/_csharpstandard/standard/expressions.md#12810-invocation-expressions)
 
-For more information about indices and ranges, see the [feature proposal note](~/_csharplang/proposals/csharp-8.0/ranges.md).
+For more information about indices and ranges, see the [feature proposal note](~/_csharpstandard/standard/ranges.md).
 
 ## See also
 

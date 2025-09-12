@@ -2,14 +2,14 @@
 title: How the .NET Runtime and SDK are versioned
 description: This article explains how the .NET SDK and Runtime are versioned (similar to semantic versioning).
 ms.custom: updateeachrelease
-ms.date: 04/26/2023
+ms.date: 08/26/2025
 ---
 
 # How .NET is versioned
 
 The [.NET Runtime and the .NET SDK](../introduction.md) add new features at different frequencies. In general, the SDK is updated more frequently than the runtime. This article explains the runtime and the SDK version numbers.
 
-.NET releases a new major version every November. Even-numbered releases, such as .NET 6 or .NET 8, are long-term supported (LTS). LTS releases get free support and patches for three years. Odd-numbered releases are standard-term support. Standard-term support releases get free support and patches for 18 months.
+.NET releases a new major version every November. Even-numbered releases, such as .NET 6 or .NET 8, are long-term support (LTS) releases. LTS releases get free support and patches for three years. Odd-numbered releases are standard-term support (STS) releases. Standard-term support releases get free support and patches for two years (starting with .NET 9).
 
 ## Versioning details
 

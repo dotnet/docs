@@ -32,7 +32,7 @@ Use of connection strings should be limited to scenarios where token-based authe
 
 The specific type of token-based authentication an app should use to authenticate to Azure resources depends on where the app runs. The following diagram provides guidance for different scenarios and environments:
 
-:::image type="content" source="../media/dotnet-sdk-auth-strategy.png" alt-text="A diagram showing the recommended token-based authentication strategies for an app depending on where it's running." :::
+:::image type="content" source="../media/mermaidjs/authentication-environments.svg" alt-text="A diagram showing the recommended token-based authentication strategies for an app depending on where it's running." :::
 
 When an app is:
 
@@ -68,6 +68,13 @@ You can use your own Azure credentials to authenticate to Azure resources during
 
 > [!div class="nextstepaction"]
 > [Authenticate locally using developer credentials](local-development-dev-accounts.md)
+
+#### Use a broker
+
+Brokered authentication collects user credentials using the system authentication broker to authenticate an app. A system authentication broker runs on a user's machine and manages the authentication handshakes and token maintenance for all connected accounts.
+
+> [!div class="nextstepaction"]
+> [Authenticate locally using a broker](local-development-broker.md)
 
 #### Use a service principal
 

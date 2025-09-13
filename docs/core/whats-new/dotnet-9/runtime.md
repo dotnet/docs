@@ -22,7 +22,7 @@ Two new attributes make it possible to define [feature switches](https://github.
   public class Feature
   {
       [FeatureSwitchDefinition("Feature.IsSupported")]
-      internal static bool IsSupported => AppContext.TryGetSwitch("Feature.IsSupported", out bool isEnabled) ? isEnabled : true;
+      internal static bool IsSupported { get; } = AppContext.TryGetSwitch("Feature.IsSupported", out bool isEnabled) ? isEnabled : true;
 
       internal static void Implementation() => ...;
   }

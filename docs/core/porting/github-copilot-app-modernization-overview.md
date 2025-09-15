@@ -27,7 +27,7 @@ With this assistant, you can:
 - Fix issues and apply best practices for cloud migration.
 - Validate that your app builds and tests successfully.
 
-## Feedback
+## Provide feedback
 
 Feedback is important to Microsoft and the efficiency of this agent. Use the [Suggest a feature](/visualstudio/ide/suggest-a-feature) and [Report a Problem](/visualstudio/ide/report-a-problem) features of in Visual Studio to provide feedback.
 

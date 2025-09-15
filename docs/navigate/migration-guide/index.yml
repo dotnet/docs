@@ -40,7 +40,7 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Using Copilot to speed up porting and modernization
-            url: ../../core/porting/github-copilot-app-modernization-overview.md##how-does-it-work
+            url: ../../core/porting/github-copilot-app-modernization-overview.md#how-does-it-work
 
   - title: Migrate .NET apps to Azure
     linkLists:
@@ -58,19 +58,6 @@ landingContent:
         links:
           - text: Azure migration FAQ
             url: /dotnet/azure/migration/appmod/faq?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
-
-  - title: Post-upgrade and modernization
-    linkLists:
-      - linkListType: concept
-        links:
-          - text: Modernize apps after porting
-            url: ../../core/porting/modernize.md
-          - text: Performance and reliability guidance
-            url: ../../core/porting/modernize.md#performance
-      - linkListType: sample
-        links:
-          - text: Modernization samples and patterns
-            url: ../../core/porting/modernize.md#samples
 
   - title: Get help and community
     linkLists:

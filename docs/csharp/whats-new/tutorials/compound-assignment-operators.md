@@ -6,7 +6,7 @@ ms.author: wiwagn
 ms.service: dotnet-csharp
 ms.topic: tutorial
 ms.date: 09/15/2025
-ai-usage:ai-assisted
+ai-usage: ai-assisted
 #customer intent: As a C# developer, I want implement user defined instance compound assignment operators so that my algorithms are more efficient.
 ---
 # Tutorial: Create compound assignment operators
@@ -31,6 +31,7 @@ C# supports the existing expansion, but it uses it only when a compound user def
 In this tutorial, you:
 
 > [!div class="checklist"]
+> 
 > * Install prerequisites
 > * Analyze the starting sample
 > * Implement compound assignment operators

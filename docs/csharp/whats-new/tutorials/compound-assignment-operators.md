@@ -31,7 +31,7 @@ C# supports the existing expansion, but it uses it only when a compound user def
 In this tutorial, you:
 
 > [!div class="checklist"]
-> 
+>
 > * Install prerequisites
 > * Analyze the starting sample
 > * Implement compound assignment operators
@@ -94,7 +94,7 @@ Examine the starter `GateAttendance` record class:
 
 The `InitialImplementation.GateAttendance` record demonstrates the traditional approach to operator overloading in C#. Notice how both the increment operator (`++`) and addition operator (`+`) create entirely new instances of `GateAttendance` using the `with` expression. Each time you write `gate++` or `gate += partySize`, the operators allocate a new record instance with the updated `Count` value, then return that new instance. While this approach maintains immutability and thread safety, it comes at the cost of frequent memory allocations. In scenarios with many operations—like our concert simulation with hundreds of attendance updates—these allocations accumulate quickly, potentially impacting performance and increasing garbage collection pressure.
 
-To see this allocation behavior in action, try running the [.NET Object Allocation tracking tool](~/visualstudio/profiling/dotnet-alloc-tool) in Visual Studio. When you profile the current implementation during the concert simulation, you discover that it allocates 134 `GateAttendance` objects to complete the relatively small simulation. Each operator call creates a new instance, demonstrating how quickly allocations can accumulate in real-world scenarios. This measurement provides a concrete baseline for comparing the performance improvements you achieve with compound assignment operators.
+To see this allocation behavior in action, try running the [.NET Object Allocation tracking tool](/visualstudio/profiling/dotnet-alloc-tool) in Visual Studio. When you profile the current implementation during the concert simulation, you discover that it allocates 134 `GateAttendance` objects to complete the relatively small simulation. Each operator call creates a new instance, demonstrating how quickly allocations can accumulate in real-world scenarios. This measurement provides a concrete baseline for comparing the performance improvements you achieve with compound assignment operators.
 
 ## Implement compound assignment operators
 

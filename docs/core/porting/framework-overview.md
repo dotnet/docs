@@ -2,7 +2,7 @@
 title: Port from .NET Framework to .NET
 description: Understand the porting process and discover tools you might find helpful when porting a .NET Framework project to .NET.
 author: adegeo
-ms.date: 06/03/2025
+ms.date: 09/15/2025
 ms.custom: devdivchpfy22, updateeachrelease
 no-loc: ["package.config", PackageReference]
 ---
@@ -72,13 +72,13 @@ There are a few technologies in .NET Framework that don't exist in .NET:
 
 - [Application domains](net-framework-tech-unavailable.md#application-domains)
 
-  Creating additional application domains isn't supported. For code isolation, use separate processes or containers as an alternative.
+  Creating other application domains isn't supported. For code isolation, use separate processes or containers as an alternative.
 
 - [Remoting](net-framework-tech-unavailable.md#remoting)
 
   Remoting is used for communicating across application domains, which are no longer supported. For simple communication across processes, consider inter-process communication (IPC) mechanisms as an alternative to remoting, such as the <xref:System.IO.Pipes> class or the <xref:System.IO.MemoryMappedFiles.MemoryMappedFile> class. For more complex scenarios, consider frameworks such as [StreamJsonRpc](https://github.com/microsoft/vs-streamjsonrpc) or [ASP.NET Core](/aspnet/core) (either using [gRPC](/aspnet/core/grpc) or [RESTful Web API services](/aspnet/core/web-api)).
 
-  Because remoting isn't supported, calls to `BeginInvoke()` and `EndInvoke()` on delegate objects will throw `PlatformNotSupportedException`.
+  Because remoting isn't supported, calls to `BeginInvoke()` and `EndInvoke()` on delegate objects throw `PlatformNotSupportedException`.
 
 - [Code access security (CAS)](net-framework-tech-unavailable.md#code-access-security-cas)
 
@@ -123,36 +123,30 @@ Instead of manually porting an application from .NET Framework to .NET, you can 
 
 Even if you use a tool to help port your application, you should review the [Considerations when porting section](#considerations-when-porting) in this article.
 
-### GitHub Copilot App Modernization – Upgrade for .NET
+### GitHub Copilot app modernization assistant
 
-[GitHub Copilot App Modernization – Upgrade for .NET](github-copilot-app-modernization-overview.md) is a Visual Studio extension that helps you upgrade projects to newer versions of .NET, update dependencies, and apply code fixes. It leverages GitHub Copilot to provide an interactive upgrade experience.
+[GitHub Copilot app modernization](github-copilot-app-modernization-overview.md) is a GitHub Copilot chat assistant helps you plan and upgrade projects to newer versions of .NET, migrate to Azure, update dependencies, and apply code fixes. Azure migration is powered by [Application and code assessment for .NET](../../azure/migration/appcat/app-code-assessment-toolkit.md)
 
-This tool supports the following upgrade paths:
+This chat assistant supports the following upgrade paths:
 
-- Upgrade projects from .NET Core to .NET.
-- Upgrade projects from older versions of .NET to the latest.
-- Modernize your code base.
+- Upgrade projects from older .NET versions to the latest.
+- Upgrade projects from .NET Framework to the latest version of .NET.
+- Modernize your code base with new features.
+- Migrate components and services to Azure.
 
-**When to use:**
+It also works on various project types, such as:
 
-Use GitHub Copilot App Modernization – Upgrade for .NET for scenarios where you want to upgrade your .NET project code and dependencies to newer versions of .NET using an AI-powered tool.
-
-### GitHub Copilot app modernization for .NET
-
-GitHub Copilot app modernization for .NET (Preview) helps you migrate .NET applications to Azure efficiently and confidently. Powered by GitHub Copilot and [Application and code assessment for .NET](../../azure/migration/appcat/app-code-assessment-toolkit.md), it guides you through assessment, solution recommendations, code fixes, and validation—all within a single tool.
-
-With this assistant, you can:
-
-- Assess your application's code, configuration, and dependencies.
-- Plan and set up the right Azure resources.
-- Fix issues and apply best practices for cloud migration.
-- Validate that your app builds and tests successfully.
-
-For more details, see the [GitHub Copilot app modernization for .NET overview](upgrade-assistant-overview.md).
+- ASP.NET and related technologies such as MVC, Razor Pages, Web API
+- Blazor
+- Azure Functions
+- Windows Presentation Foundation
+- Windows Forms
+- Class libraries
+- Console apps
 
 **When to use:**
 
-Use the GitHub Copilot app modernization for .NET (Preview) experience for scenarios where you need end to end assessment, planning, and remediation for migrating your .NET apps to Azure.
+Use GitHub Copilot app modernization when you want an AI-powered, end-to-end experience to upgrade .NET Framework projects and dependencies to modern .NET&mdash;covering assessment, planning, remediation, and guidance for migrating applications to Azure.
 
 ### Application and Code Assessment for .NET
 
@@ -196,7 +190,7 @@ For more information, see [Platform compatibility analyzer](../../standard/analy
 
 When porting your application to .NET, consider the following suggestions in order:
 
-✔️ CONSIDER using the [.NET Upgrade Assistant](upgrade-assistant-overview.md) to migrate your projects. Even though this tool is in preview, it automates most of the manual steps detailed in this article and gives you a great starting point for continuing your migration path.
+✔️ CONSIDER using the [GitHub Copilot app modernization](github-copilot-app-modernization-overview.md) to migrate your projects. GitHub Copilot is powerful at identifying and fixing incompatibilities when porting. It automates most of the manual steps detailed in this article and gives you a great starting point for continuing your migration path.
 
 ✔️ CONSIDER examining your dependencies first. Your dependencies must target .NET, .NET Standard, or .NET Core.
 
@@ -208,7 +202,7 @@ When porting your application to .NET, consider the following suggestions in ord
 
 ✔️ CONSIDER targeting .NET 8, which is a long-term support (LTS) release.
 
-✔️ DO target .NET 6+ for **Windows Forms and WPF** projects. .NET 6 and later versions contain many improvements for Desktop apps.
+✔️ DO target .NET 8+ for **Windows Forms and WPF** projects. .NET 8 and later versions contain many improvements for Desktop apps.
 
 ✔️ CONSIDER targeting .NET Standard 2.0 if you're migrating a library that might also be used with .NET Framework projects. You can also multitarget your library, targeting both .NET Framework and .NET Standard.
 
@@ -216,8 +210,8 @@ When porting your application to .NET, consider the following suggestions in ord
 
 ## See also
 
-- [Overview of the .NET Upgrade Assistant](upgrade-assistant-overview.md)
+- [What is GitHub Copilot app modernization](github-copilot-app-modernization-overview.md)
 - [ASP.NET to ASP.NET Core migration](/aspnet/core/migration/proper-to-2x)
-- [How to upgrade a WPF desktop app to .NET](/dotnet/desktop/wpf/migration/)
-- [Migrate .NET Framework Windows Forms apps to .NET](/dotnet/desktop/winforms/migration/)
-- [.NET 5 vs. .NET Framework for server apps](../../standard/choosing-core-framework-server.md)
+- [Upgrade a WPF desktop app to .NET](/dotnet/desktop/wpf/migration/)
+- [Upgrade a Windows Forms app to .NET](/dotnet/desktop/winforms/migration/)
+- [.NET vs. .NET Framework for server apps](../../standard/choosing-core-framework-server.md)

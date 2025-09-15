@@ -16,6 +16,8 @@ ms.date: 10/08/2024
 
 .NET Upgrade Assistant is distributed as a Visual Studio extension or a command-line interface (CLI) tool.
 
+[!INCLUDE [github-copilot-suggestion](includes/github-copilot-suggestion.md)]
+
 ## Analyze and upgrade
 
 .NET Upgrade Assistant includes an analysis engine that scans your projects and their dependencies. After the scan is complete, a report is generated with detailed information about performing an upgrade. You can use this information to upgrade either the entire project or specific parts of the project.

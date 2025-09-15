@@ -10,7 +10,7 @@ metadata:
 
 title: GitHub Copilot app modernization FAQ
 summary: |
-  GitHub Copilot app modernization is an interactive GitHub Copilot agent that adds powerful upgrade capabilities to Visual Studio. This article answers frequently asked questions. For more information about the tool, see [What is GitHub Copilot app modernization?](github-copilot-app-modernization-overview.md).
+  GitHub Copilot app modernization is an interactive GitHub Copilot agent that adds powerful upgrade capabilities to Visual Studio. This article answers frequently asked questions. For more information about the tool, see [What is GitHub Copilot app modernization](github-copilot-app-modernization-overview.md).
 
   The tool requires one of the following GitHub Copilot subscriptions:
 
@@ -24,7 +24,7 @@ sections:
     questions:
       - question: What can the agent do?
         answer: |
-          Currently, GitHub Copilot app modernization helps you upgrade your .NET projects to newer versions of .NET. The agent is an extension for Visual Studio that performs the following steps in a GitHub Copilot chat session:
+          Currently, GitHub Copilot app modernization helps you upgrade your .NET (.NET, .NET Core, and .NET Framework) projects to newer versions of .NET. It also helps migrate services to Azure. It also upgrades dependencies and fixes errors in the code post-migration. The agent performs the following steps in a GitHub Copilot chat session:
 
           - Analyzes your projects and proposes an upgrade plan.
           - According to the plan, runs a series of tasks to upgrade your projects.
@@ -35,9 +35,7 @@ sections:
 
       - question: What can the agent upgrade?
         answer: |
-          GitHub Copilot app modernization currently focuses on migrating your projects from one version of .NET to another. For example, upgrading from .NET Core 3.1 or .NET 6, to .NET 9. It also upgrades dependencies and fixes errors in the code post-migration.
-
-          Besides upgrading the target framework, the agent can work with the following types of projects:
+          GitHub Copilot app modernization helps you upgrade your .NET projects or migrate them to Azure. Besides upgrading the target framework, the agent can work with the following types of projects:
 
           - Azure Functions.
           - Console apps and class libraries.
@@ -70,6 +68,10 @@ sections:
           No. Unlike traditional AI tools where you might enter freeform prompts, the agent operates in a more structured way. The AI is embedded within the build-and-fix process, meaning the prompts it uses are predefined and tied to the upgrade plan. So it's not something you can train on your codebase, and it's not something you can manually steer with custom instructions, beyond the changes you can make to the plan Markdown file.
 
           However, the agent does have some adaptability within a session. If you manually adjust a fix, it learns from that interaction in the short term and applies similar corrections if it encounters the same issue again. Think of it as refining its approach within the scope of that upgrade. We never store a user's codebase and never use your code for training the model. Once an upgrade is complete, session data is deleted and not stored.
+
+      - question: Can I provide feedback?
+        answer: |
+          Yes! Use the [Suggest a feature](/visualstudio/ide/suggest-a-feature) and [Report a Problem](/visualstudio/ide/report-a-problem) features of in Visual Studio to provide feedback.
 
 additionalContent: |
     ## Related content

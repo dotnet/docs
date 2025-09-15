@@ -20,17 +20,21 @@ This process streamlines modernization and boosts developer productivity and con
 With this assistant, you can:
 
 - Upgrade to a newer version of .NET.
-- Migrate technolgies to Azure.
+- Migrate technologies to Azure.
 - Modernize your .NET app, especially when upgrading from .NET Framework.
 - Assess your application's code, configuration, and dependencies.
 - Plan and set up the right Azure resource.
 - Fix issues and apply best practices for cloud migration.
 - Validate that your app builds and tests successfully.
 
+## Feedback
+
+Feedback is important to Microsoft and the efficiency of this agent. Use the [Suggest a feature](/visualstudio/ide/suggest-a-feature) and [Report a Problem](/visualstudio/ide/report-a-problem) features of in Visual Studio to provide feedback.
+
 ## Prerequisites
 
 - Windows Operating System
-- [Visual Studio 2022 version 17.14.16 or newer](https://visualstudio.microsoft.com/downloads/)&mdash;or&mdash;[Visual Studio 2026 Insiders Preview 2 or newer](https://visualstudio.microsoft.com/insiders)
+- [Visual Studio 2022 version 17.14.16 or newer](https://visualstudio.microsoft.com/downloads/) (To be released).
 - [.NET desktop development workload](/visualstudio/install/modify-visual-studio?view=vs-2022&preserve-view=true#change-workloads-or-individual-components) with the following optional components enabled:
 
   - GitHub Copilot
@@ -100,7 +104,7 @@ You can adjust the plan by editing the Markdown file to change the upgrade steps
 
 ### Perform the upgrade or migration
 
-Once an plan is ready, tell Copilot to start using it. Once the process starts, Copilot lets you know what it's doing in the chat window and it opens the **Upgrade Progress Details** document, which lists the status of every step.
+Once a plan is ready, tell Copilot to start using it. Once the process starts, Copilot lets you know what it's doing in the chat window and it opens the **Upgrade Progress Details** document, which lists the status of every step.
 
 If it runs into a problem, Copilot tries to identify the cause of a problem and apply a fix. If Copilot can't seem to correct the problem, it asks for your help. When you intervene, Copilot learns from the changes you make and tries to automatically apply them for you, if the problem is encountered again.
 

@@ -37,7 +37,7 @@ landingContent:
             url: ../../core/porting/github-copilot-app-modernization-overview.md
           - text: GitHub Copilot app modernization FAQ
             url: ../../core/porting/github-copilot-app-modernization-faq.yml
-      - linkListType: how-to-guide
+      - linkListType: concept
         links:
           - text: Using Copilot to speed up porting and modernization
             url: ../../core/porting/github-copilot-app-modernization-overview.md#how-does-it-work
@@ -50,11 +50,11 @@ landingContent:
             url: /dotnet/azure/migration/appmod/overview?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
           - text: Azure migration quickstart
             url: /dotnet/azure/migration/appmod/quickstart?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
-      - linkListType: tutorial
+      - linkListType: sample
         links:
           - text: Migration sample
             url: /dotnet/azure/migration/appmod/sample?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
-      - linkListType: whats-new
+      - linkListType: concept
         links:
           - text: Azure migration FAQ
             url: /dotnet/azure/migration/appmod/faq?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
@@ -67,7 +67,3 @@ landingContent:
             url: /answers/products/dotnet
           - text: .NET tech community forums
             url: https://techcommunity.microsoft.com/category/dotnet
-      - linkListType: learn
-        links:
-          - text: Porting documentation index
-            url: ../../core/porting/index.md

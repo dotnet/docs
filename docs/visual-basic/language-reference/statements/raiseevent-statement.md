@@ -54,26 +54,19 @@ RaiseEvent eventname[( argumentlist )]
   
  The class that raises an event is the event source, and the methods that process the event are the event handlers. An event source can have multiple handlers for the events it generates. When the class raises the event, that event is raised on every class that has elected to handle events for that instance of the object.  
   
- The example also uses a form (`Form1`) with a button (`Button1`) and a text box (`TextBox1`). When you click the button, the first text box displays a countdown from 10 to 0 seconds. When the full time (10 seconds) has elapsed, the first text box displays "Done".  
+ The example demonstrates a simple timer that counts down from 10 to 0 seconds and displays the progress to the console. When the countdown finishes, it displays "Done".  
   
- The code for `Form1` specifies the initial and terminal states of the form. It also contains the code executed when events are raised.  
-  
- To use this example, open a new Windows Application project, add a button named `Button1` and a text box named `TextBox1` to the main form, named `Form1`. Then right-click the form and click **View Code** to open the Code Editor.  
-  
- Add a `WithEvents` variable to the declarations section of the `Form1` class.  
+ Add a `WithEvents` variable to your class declarations.  
   
  [!code-vb[VbVbalrEvents#14](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEvents/VB/Class1.vb#14)]  
   
 ## Example 2  
 
- Add the following code to the code for `Form1`. Replace any duplicate procedures that may exist, such as `Form_Load`, or `Button_Click`.  
+ Add the following code to implement the event handlers and timer logic. This example shows how to use the `RaiseEvent` statement to notify event handlers when the timer updates or completes.  
   
  [!code-vb[VbVbalrEvents#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEvents/VB/Class1.vb#15)]  
   
- Press F5 to run the preceding example, and click the button labeled **Start**. The first text box starts to count down the seconds. When the full time (10 seconds) has elapsed, the first text box displays "Done".  
-  
-> [!NOTE]
-> The `My.Application.DoEvents` method does not process events in exactly the same way as the form does. To allow the form to handle the events directly, you can use multithreading. For more information, see [Managed Threading](../../../standard/threading/managed-threading-basics.md).  
+ When you run the preceding example, it starts counting down the seconds from 10 to 0, displaying the progress to the console. When the full time (10 seconds) has elapsed, it displays "Done".  
   
 ## See also
 

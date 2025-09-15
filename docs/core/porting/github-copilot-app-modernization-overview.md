@@ -5,7 +5,7 @@ titleSuffix: ""
 author: adegeo
 ms.author: adegeo
 ms.topic: overview
-ms.date: 09/04/2025
+ms.date: 09/15/2025
 
 #customer intent: As a developer, I want to upgrade my project so that I can take advantage of the latest features.
 

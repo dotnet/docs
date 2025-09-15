@@ -1,2 +1,2 @@
-﻿TheaterConcertSimulationCompound.SimulateConcertAttendance();
+﻿TheaterConcertSimulation.SimulateConcertAttendance();
 

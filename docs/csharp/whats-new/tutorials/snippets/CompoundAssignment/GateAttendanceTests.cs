@@ -1,4 +1,4 @@
-﻿public static class TheaterConcertSimulationCompound
+﻿public static class TheaterConcertSimulation
 {
     private const int MAX_ATTENDANCE = 1000;
     private const int EXPECTED_SALES = 850;
@@ -72,6 +72,7 @@
         // Heavy traffic through main floor gates
         for (int i = 0; i < 3; i++)
         {
+            // <Simulation>
             // Gate 1 - busiest entrance (target: ~100-130 people)
             gates.MainFloorGates[0] += random.Next(8, 15);     // Corporate group
             ++gates.MainFloorGates[0];                          // Single patron
@@ -86,7 +87,8 @@
             gates.MainFloorGates[1] += random.Next(8, 15);     // Corporate/business group
             gates.MainFloorGates[1] += random.Next(4, 8);      // Couples/small groups
             ++gates.MainFloorGates[1];                          // Individual patron
-
+            // </Simulation>
+            
             // Gate 3 - moderate traffic (target: ~70-95 people)
             ++gates.MainFloorGates[2];                          // Individual
             gates.MainFloorGates[2] += random.Next(4, 8);      // Small group
@@ -226,7 +228,7 @@
 public struct TheaterGates
 {
     // Main floor gates (4 gates) - initialized with default gate instances
-    public GateAttendance[] MainFloorGates { get; set; } =
+    public GateAttendance[] MainFloorGates { get; } =
     [
         new GateAttendance("Main-Floor-Gate-1"),
         new GateAttendance("Main-Floor-Gate-2"), 
@@ -235,7 +237,7 @@ public struct TheaterGates
     ];
     
     // Balcony gates (2 gates) - initialized with default gate instances
-    public GateAttendance[] BalconyGates { get; set; } =
+    public GateAttendance[] BalconyGates { get; } =
     [
         new GateAttendance("Balcony-Gate-Left"),
         new GateAttendance("Balcony-Gate-Right")

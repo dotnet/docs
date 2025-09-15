@@ -1,29 +1,34 @@
 ---
-title: Explore instance compound assignment operators
-description: "C# 14 enables instance compound assignment operators. These can provide better performance by minimizing allocations or copy operations. Learn how to create these operators."
+title: Explore user defined instance compound assignment operators
+description: "C# 14 enables user defined instance compound assignment operators. These can provide better performance by minimizing allocations or copy operations. Learn how to create these operators."
 author: billwagner
 ms.author: wiwagn
 ms.service: dotnet-csharp
 ms.topic: tutorial
 ms.date: 09/15/2025
 
-#customer intent: As a C# developer, I want implement compound assignment operators so that my algorithms are more efficient.
+#customer intent: As a C# developer, I want implement user defined instance compound assignment operators so that my algorithms are more efficient.
 
 ---
 
 # Tutorial: Create compound assignment operators
 
+C#14.0 adds *user defined compound assignment operators* that enable mutating a data structure in place, rather than creating a new instance. In previous versions of C#, the expression:
 
-[Introduce and explain the purpose of the article.]
+```csharp
+a += b;
+```
 
-<!-- Required: Introductory paragraphs (no heading)
+was expanded to the following code:
 
-Write a brief introduction that can help the user 
-decide whether the article is relevant for them and
-to describe how reading the article might benefit
-them.
+```csharp
+var tmp = a + b;
+a = tmp;
+```
 
--->
+Depending on the type of `a`, this leads to excessive allocations to create new instances, or copying the values of several properties to set values on the copy. Adding a user defined operator for `+=` indicates a type can do a better job by updating the destination object in place.
+
+C# still supports the existing expansion, but it uses it only when a compound user defined operator isn't available.
 
 In this tutorial, you:
 
@@ -40,20 +45,116 @@ In this tutorial, you:
 
 ## Analyze the starting sample
 
-- Run the app: understand what it does.
-- Read the `GateAttendance` class closely. Note that the operators allocate new instances of objects.
-- (optional) Run the Visual Studio performance profiler to count allocations (134 `GateAttendance` allocations)
+Run the app to understand what it does. The sample application simulates concert attendance tracking at a theater venue. The simulation models realistic arrival patterns throughout the evening, from early patrons to the main rush before showtime. This simulation demonstrates the performance impact of object allocations when using traditional operators versus the efficiency gains possible with user-defined compound assignment operators.
+
+The app tracks attendance through multiple theater gates (main floor and balcony sections) as concert-goers arrive. Each gate maintains a count of attendees using a `GateAttendance` record. Throughout the simulation, the code frequently updates these counts using increment (`++`) and addition (`+=`) operations. The following code shows a portion of that simulation:
+
+:::code language="csharp" source="./snippets/CompoundAssignment/GateAttendanceTests.cs" id="Simulation":::
+
+With traditional operators, each operation creates a new `GateAttendance` instance due to the immutable nature of records, leading to significant memory allocations.
+
+When you run the simulation, you'll see detailed output showing:
+
+- Gate-by-gate attendance numbers during different arrival periods.
+- Total attendance tracking across all gates.
+- A final comprehensive report with attendance statistics.
+
+You can see a portion of the output:
+
+```txt
+Peak arrival time - all gates busy...
+
+Peak rush period completed - all gates processed heavy traffic.
+
+--- Gate Status After Main Rush (7:15 PM) ---
+Main Floor Gates:
+  Main-Floor-Gate-1: 145 attendees
+  Main-Floor-Gate-2: 168 attendees
+  Main-Floor-Gate-3: 149 attendees
+  Main-Floor-Gate-4:  71 attendees
+  Main Floor Subtotal: 533 attendees
+
+Balcony Gates:
+  Balcony-Gate-Left: 164 attendees
+  Balcony-Gate-Right: 134 attendees
+  Balcony Subtotal: 298 attendees
+
+Total Current Attendance: 831 / 1000
+
+--- Late Arrivals (7:15 PM - 7:30 PM) ---
+Final patrons arriving before curtain...
+
+Final arrivals processed - concert about to begin!
+```
+
+This realistic scenario provides an excellent test case for measuring the performance benefits of compound assignment operators, as the frequent count updates mirror common patterns in real applications where objects are repeatedly modified.
+
+Examine the starter `GateAttendance` record class:
+
+:::code language="csharp" source="./snippets/CompoundAssignment/GateAttendance.cs" id="GateAttendanceStarter":::
+
+The `InitialImplementation.GateAttendance` record demonstrates the traditional approach to operator overloading in C#. Notice how both the increment operator (`++`) and addition operator (`+`) create entirely new instances of `GateAttendance` using the `with` expression. Each time you write `gate++` or `gate += partySize`, the operators allocate a new record instance with the updated `Count` value, then return that new instance. While this approach maintains immutability and thread safety, it comes at the cost of frequent memory allocations. In scenarios with many operations—like our concert simulation with hundreds of attendance updates—these allocations accumulate quickly, potentially impacting performance and increasing garbage collection pressure.
+
+To see this allocation behavior in action, try running the [.NET Object Allocation tracking tool](~/visualstudio/profiling/dotnet-alloc-tool) in Visual Studio. When you profile the current implementation during the concert simulation, you'll discover that it allocates 134 `GateAttendance` objects to complete the relatively small simulation. Each operator call creates a new instance, demonstrating how quickly allocations can accumulate in real-world scenarios. This measurement provides a concrete baseline for comparing the performance improvements you'll achieve with compound assignment operators.
 
 ## Implement compound assignment operators
 
+C# 14 introduces user-defined compound assignment operators that enable in-place mutations instead of creating new instances. These operators provide a more efficient alternative to the traditional pattern while maintaining the familiar compound assignment syntax.
+
+Compound assignment operators use a new syntax that declares `void` return methods with the `operator` keyword:
+
+```csharp
+public void operator +=(int value) => this.property += value;
+public void operator ++() => this.property++;
+```
+
+The key differences from traditional operators are:
+
+- **Return type**: Compound assignment operators return `void`, not the type itself
+- **Mutation**: They modify the current instance directly using `this`
+- **No new instances**: Unlike traditional operators that return new objects, compound operators modify existing ones
+
+When the compiler encounters compound assignment expressions like `a += b` or `++a`, it follows this resolution order:
+
+1. **Check for compound assignment operator**: If the type defines a user-defined compound assignment operator (`+=`, `++`, etc.), use it directly
+2. **Fallback to traditional expansion**: If no compound operator exists, expand to the traditional form (`a = a + b`)
+
+This means you can implement both approaches simultaneously. The compound operators take precedence when available, but the traditional operators serve as fallbacks for scenarios where compound assignment isn't suitable.
+
+Compound assignment operators provide several advantages:
+
+- **Reduced allocations**: Modify objects in-place instead of creating new instances
+- **Improved performance**: Eliminate temporary object creation and reduce garbage collection pressure  
+- **Familiar syntax**: Use the same `+=`, `++` syntax developers already know
+- **Backward compatibility**: Traditional operators continue to work as fallbacks
+
+The new compound assignment operators are shown in the following code:
+
+:::code language="csharp" source="./snippets/CompoundAssignment/GateAttendance.cs" id="CompoundAssignmentOperators":::
+
 ## Analyze finished sample
 
-- (Optional) Run the profiler again. Now, only 10 instance of GateAttendance objects are allocated. 
-- Try and spot any additional allocations by replacing `+` operations with `+=` where possible.
-- Discuss other options, like `struct` types. Point out that compound assignment helps here by avoiding copy operations
+Now that you've implemented the compound assignment operators, it's time to measure the performance improvement. Run the [.NET Object Allocation tracking tool](~/visualstudio/profiling/dotnet-alloc-tool) again on the updated code to see the dramatic difference in memory allocations.
+
+When you profile the application with the compound assignment operators enabled, you'll observe a remarkable reduction: only **10 `GateAttendance` objects** are allocated during the entire concert simulation, compared to the previous 134 allocations. This represents a 92% reduction in object allocations!
+
+The remaining 10 allocations come from the initial creation of the `GateAttendance` instances for each theater gate (4 main floor gates + 2 balcony gates = 6 initial instances), plus a few additional allocations from other parts of the simulation that don't use the compound operators.
+
+This allocation reduction translates to real performance benefits:
+
+- **Reduced memory pressure**: Less frequent garbage collection cycles
+- **Better cache locality**: Fewer object creations mean less memory fragmentation  
+- **Improved throughput**: CPU cycles saved from allocation and collection overhead
+- **Scalability**: Benefits multiply in scenarios with higher operation volumes
+
+The performance improvement becomes even more significant in production applications where similar patterns occur at much larger scales—imagine tracking millions of transactions, updating thousands of counters, or processing high-frequency data streams.
+
+Try identifying other opportunities for compound assignment operators in the codebase. Look for patterns where you see traditional assignment operations like `gates.MainFloorGates[1] = gates.MainFloorGates[1] + 4` and consider whether they could benefit from compound assignment syntax. While some of these are already using `+=` in the simulation code, the principle applies to any scenario where you're repeatedly modifying objects rather than creating new instances.
+
+As a final experiment, change the `GateAttendance` type from a `record class` to a `record struct`. It's a different optimization, and it works in this simulation because the struct has a small memory footprint. Copying a `GateAttendance` struct isn't an expensive operation. Even so, you'll see small improvements.
 
 ## Related content
 
-- What's new.
-- Operators in language reference
-- [Analyze memory usage by using the .NET Object Allocation tool - Visual Studio](~/visualstudio/profiling/dotnet-alloc-tool.md)
+- [What's new in C# 14](../csharp-14.md)
+- [Operator overloading - define unary, arithmetic, equality and comparison operators](../../language-reference/operators/operator-overloading.md)
+- [Analyze memory usage by using the .NET Object Allocation tool - Visual Studio](~/visualstudio/profiling/dotnet-alloc-tool)

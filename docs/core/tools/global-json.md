@@ -112,7 +112,7 @@ Type: `object`
 
 Lets you control the project SDK version in one place rather than in each individual project. For more information, see [How project SDKs are resolved](/visualstudio/msbuild/how-to-use-project-sdk#how-project-sdks-are-resolved).
 
-### test
+### `test`
 
 - Type: `object`
 

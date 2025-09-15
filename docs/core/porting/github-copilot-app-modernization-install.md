@@ -1,6 +1,6 @@
 ---
-title: Install GitHub Copilot app modernization - upgrade for .NET
-description: "Learn how to install the GitHub Copilot app modernization - upgrade for .NET Visual Studio extension. App modernization assists you when upgrading projects to the latest dependencies or when upgrading to a new version of .NET"
+title: Install GitHub Copilot app modernization
+description: "Learn how to install the GitHub Copilot app modernization Visual Studio extension. App modernization assists you when upgrading projects to the latest dependencies or when upgrading to a new version of .NET"
 titleSuffix: ""
 author: adegeo
 ms.author: adegeo
@@ -11,9 +11,9 @@ ms.date: 09/04/2025
 
 ---
 
-# Install GitHub Copilot app modernization - upgrade for .NET
+# Install GitHub Copilot app modernization
 
-This article guides you through installing GitHub Copilot app modernization - upgrade for .NET extension in Visual Studio.
+This article guides you through installing GitHub Copilot app modernization extension in Visual Studio.
 
 > [!IMPORTANT]
 > The GitHib Copilot Modernization agent is included in Visual Studio, starting with versions Visual Studio 2022 17.14.16 and Visual Studio 2026.
@@ -68,4 +68,4 @@ There are two ways to determine if GitHub Copilot App Modernization is installed
 
 ## Related content
 
-- [What is GitHub Copilot app modernization - upgrade for .NET?](github-copilot-app-modernization-overview.md)
+- [What is GitHub Copilot app modernization?](github-copilot-app-modernization-overview.md)

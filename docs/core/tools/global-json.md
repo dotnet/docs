@@ -118,7 +118,7 @@ Lets you control the project SDK version in one place rather than in each indivi
 
 Specifies information about tests.
 
-### runner
+### `runner`
 
 - Type: `string`
 - Available since: .NET 10.0 SDK.

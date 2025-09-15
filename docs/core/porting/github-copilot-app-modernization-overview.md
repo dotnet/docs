@@ -122,5 +122,4 @@ The tool only collects data about project types, intent to upgrade, and upgrade 
 
 ## Related content
 
-- [GitHub Copilot app modernization update example](github-copilot-app-modernization-example.md)
 - [GitHub Copilot app modernization FAQ](github-copilot-app-modernization-faq.yml)

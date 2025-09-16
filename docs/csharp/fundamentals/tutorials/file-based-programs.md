@@ -142,7 +142,7 @@ That handles command line arguments correctly. Now, add the code to handle readi
    }
    ```
 
-   The preceding code reads the console input until either a blank line or a `null` is read. (The <xref:Java.IO.Console.ReadLine*?displayProperty=nameWithType> method returns `null` if the input stream is closed by typing <kbd>ctrl+C</kbd>.)
+   The preceding code reads the console input until either a blank line or a `null` is read. (The <xref:System.Console.ReadLine*?displayProperty=nameWithType> method returns `null` if the input stream is closed by typing <kbd>ctrl+C</kbd>.)
 
 1. Test reading standard input by creating a new text file in the same folder. Name the file `input.txt` and add the following lines:
 

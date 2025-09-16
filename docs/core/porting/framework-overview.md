@@ -8,7 +8,7 @@ no-loc: ["package.config", PackageReference]
 ---
 # Overview of porting from .NET Framework to .NET
 
-This article provides an overview of what you should consider when porting your code from .NET Framework to .NET (formerly named .NET Core). Porting to .NET from .NET Framework is relatively straightforward for many projects. The complexity of your projects dictates how much work you'll need to do after the initial migration of the project files.
+This article provides an overview of what you should consider when porting your code from .NET Framework to .NET (formerly named .NET Core). Porting to .NET from .NET Framework is relatively straightforward for many projects. The complexity of your projects dictates how much work you'll need to do after the initial upgrade of the project files.
 
 Projects where the app model is available in .NET, such as libraries, console apps, and desktop apps, usually require little change. Projects that require a new app model, such as moving to [ASP.NET Core from ASP.NET](/aspnet/core/migration/proper-to-2x/), require more work. Many patterns from the old app model have equivalents that can be used during the conversion.
 
@@ -16,7 +16,7 @@ Projects where the app model is available in .NET, such as libraries, console ap
 
 Many applications created for .NET Framework use a desktop technology such as Windows Forms or Windows Presentation Foundation (WPF). Both Windows Forms and WPF are available in .NET, but they remain Windows-only technologies.
 
-Consider the following dependencies before you migrate a Windows Forms or WPF application:
+Consider the following dependencies before you upgrade a Windows Forms or WPF application:
 
 - Project files for .NET use a different format than .NET Framework.
 - Your project might use an API that isn't available in .NET.
@@ -25,10 +25,10 @@ Consider the following dependencies before you migrate a Windows Forms or WPF ap
 
 .NET uses the open-source versions of Windows Forms and WPF and includes enhancements over .NET Framework.
 
-For tutorials on migrating your desktop application to .NET, see one of the following articles:
+For tutorials on upgrading your desktop application to .NET, see one of the following articles:
 
 - [How to upgrade a WPF desktop app to .NET](/dotnet/desktop/wpf/migration/)
-- [Migrate .NET Framework Windows Forms apps to .NET](/dotnet/desktop/winforms/migration/)
+- [Upgrade .NET Framework Windows Forms apps to .NET](/dotnet/desktop/winforms/migration/)
 
 ## Windows-specific APIs
 
@@ -119,7 +119,7 @@ It's possible that your library or console-based application can be used cross-p
 
 ## Tools to assist porting
 
-Instead of manually porting an application from .NET Framework to .NET, you can use different tools to help automate some aspects of the migration. Porting a complex project is, in itself, a complex process. The tools might help in that journey.
+Instead of manually porting an application from .NET Framework to .NET, you can use different tools to help automate some aspects of the upgrade. Porting a complex project is, in itself, a complex process. The tools might help in that journey.
 
 Even if you use a tool to help port your application, you should review the [Considerations when porting section](#considerations-when-porting) in this article.
 
@@ -160,7 +160,7 @@ Use the Azure Migrate application and code assessment for .NET toolset for an as
 
 ### .NET Upgrade Assistant
 
-The [.NET Upgrade Assistant](upgrade-assistant-overview.md) is a command-line tool that can be run on different kinds of .NET Framework apps. It's designed to assist with upgrading .NET Framework apps to .NET. After running the tool, **in most cases the app will require more effort to complete the migration**. The tool includes the installation of analyzers that can assist with completing the migration. This tool works on the following types of .NET Framework applications:
+The [.NET Upgrade Assistant](upgrade-assistant-overview.md) is a command-line tool that can be run on different kinds of .NET Framework apps. It's designed to assist with upgrading .NET Framework apps to .NET. After running the tool, **in most cases the app will require more effort to complete the upgrade**. The tool includes the installation of analyzers that can assist with completing the upgrade. This tool works on the following types of .NET Framework applications:
 
 - Windows Forms
 - WPF
@@ -168,11 +168,11 @@ The [.NET Upgrade Assistant](upgrade-assistant-overview.md) is a command-line to
 - Console
 - Class libraries
 
-This tool uses the other tools listed in this article, such as **try-convert**, and guides the migration process. For more information about the tool, see [Overview of the .NET Upgrade Assistant](upgrade-assistant-overview.md).
+This tool uses the other tools listed in this article, such as **try-convert**, and guides the upgrade process. For more information about the tool, see [Overview of the .NET Upgrade Assistant](upgrade-assistant-overview.md).
 
 **When to use:**
 
-Use .NET Upgrade Assistant to upgrade .NET Framework apps to newer versions of .NET. This tool provides an alternative to the AI powered GitHub Copilot App Modernization – Upgrade for .NET experience.
+Use when an AI powered solution like GitHub Copilot app modernization isn't available.
 
 ### `try-convert`
 
@@ -190,11 +190,11 @@ For more information, see [Platform compatibility analyzer](../../standard/analy
 
 When porting your application to .NET, consider the following suggestions in order:
 
-✔️ CONSIDER using the [GitHub Copilot app modernization](github-copilot-app-modernization-overview.md) to migrate your projects. GitHub Copilot is powerful at identifying and fixing incompatibilities when porting. It automates most of the manual steps detailed in this article and gives you a great starting point for continuing your migration path.
+✔️ CONSIDER using the [GitHub Copilot app modernization](github-copilot-app-modernization-overview.md) to upgrade your projects. GitHub Copilot is powerful at identifying and fixing incompatibilities when porting. It automates most of the manual steps detailed in this article and gives you a great starting point for continuing your upgrade path.
 
 ✔️ CONSIDER examining your dependencies first. Your dependencies must target .NET, .NET Standard, or .NET Core.
 
-✔️ DO migrate from a NuGet _packages.config_ file to [PackageReference](/nuget/consume-packages/package-references-in-project-files) settings in the project file. Use Visual Studio to [convert the _package.config_ file](/nuget/consume-packages/migrate-packages-config-to-package-reference#migration-steps).
+✔️ DO upgrade from a NuGet _packages.config_ file to [PackageReference](/nuget/consume-packages/package-references-in-project-files) settings in the project file. Use Visual Studio to [convert the _package.config_ file](/nuget/consume-packages/migrate-packages-config-to-package-reference#migration-steps).
 
 ✔️ CONSIDER upgrading to the latest project file format even if you can't yet port your app. .NET Framework projects use an outdated project format. Even though the latest project format, known as SDK-style projects, was created for .NET Core and beyond, the format also works with .NET Framework. Having your project file in the latest format gives you a good basis for porting your app in the future.
 
@@ -204,7 +204,7 @@ When porting your application to .NET, consider the following suggestions in ord
 
 ✔️ DO target .NET 8+ for **Windows Forms and WPF** projects. .NET 8 and later versions contain many improvements for Desktop apps.
 
-✔️ CONSIDER targeting .NET Standard 2.0 if you're migrating a library that might also be used with .NET Framework projects. You can also multitarget your library, targeting both .NET Framework and .NET Standard.
+✔️ CONSIDER targeting .NET Standard 2.0 if you're upgrading a library that might also be used with .NET Framework projects. You can also multitarget your library, targeting both .NET Framework and .NET Standard.
 
 ✔️ DO add reference to the [Microsoft.Windows.Compatibility NuGet package](https://www.nuget.org/packages/Microsoft.Windows.Compatibility) if, after migrating, you get errors of missing APIs. A large portion of the .NET Framework API surface is available to .NET via the NuGet package.
 

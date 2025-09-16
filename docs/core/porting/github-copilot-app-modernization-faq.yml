@@ -54,7 +54,7 @@ sections:
 
       - question: Does the agent store my source code?
         answer: |
-          We never store a user's codebase and never use your code for training the model. Once an upgrade is complete, session data is deleted.
+          The agent never stores a user's codebase and never uses your code for training the model. Once an upgrade is complete, session data is deleted.
 
       - question: Can I provide feedback?
         answer: |

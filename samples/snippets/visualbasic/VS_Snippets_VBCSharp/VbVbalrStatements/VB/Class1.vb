@@ -278,7 +278,7 @@ Public Class Class1
     Sub TestThrow()
         '<Snippet84>
         ' Throws a new exception.
-        Throw New System.Exception("An exception has occurred.")
+        Throw New InvalidOperationException("The operation is not valid for the current state.")
         '</Snippet84>
     End Sub
 

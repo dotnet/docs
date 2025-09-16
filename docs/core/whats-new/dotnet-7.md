@@ -167,10 +167,6 @@ WPF in .NET 7 includes numerous bug fixes as well as performance and accessibili
 
 Orleans is a cross-platform framework for building robust, scalable distributed applications. For information about the latest updates for Orleans, see [Migrate from Orleans 3.x to 7.0](../../orleans/migration-guide.md).
 
-### .NET Upgrade Assistant and CoreWCF
-
-The .NET Upgrade Assistant now supports upgrading server-side WCF apps to [CoreWCF](https://github.com/CoreWCF/CoreWCF), which is a community-created port of WCF to .NET (Core). For more information, see [Upgrade a WCF server-side project to use CoreWCF](../porting/upgrade-assistant-wcf.md).
-
 ### ML.NET
 
 ML.NET now includes a text classification API that makes it easy to train custom text classification models using the latest state-of-the-art deep learning techniques. For more information, see the [What's new with AutoML and tooling](https://devblogs.microsoft.com/dotnet/whats-new-with-mldotnet-automl/) and [Introducing the ML.NET Text Classification API](https://devblogs.microsoft.com/dotnet/introducing-the-ml-dotnet-text-classification-api-preview/) blog posts.

@@ -41,3 +41,5 @@ The GitHub Copilot app modernization agent provides an AI-assisted, end-to-end e
 - Validate that your app builds and that tests pass.
 
 Use the GitHub Copilot app modernization agent when you want a guided, AI-powered path to assess, remediate, and modernize codebases—particularly for projects that have many dependencies, rely on Windows-specific APIs, or when you plan to containerize or migrate services to the cloud.
+
+For more information, see [What is GitHub Copilot app modernization](github-copilot-app-modernization-overview.md).

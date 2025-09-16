@@ -157,47 +157,46 @@ Class Class306ff8ed74dd4b6abd2fe91b17474042
     End Class
     ' </snippet13>
 
-    Class Form1
-        Inherits Form
-        Private WithEvents Button1 As New Button
-        Private WithEvents TextBox1 As New TextBox
-
-        ' <snippet14>
+    ' <snippet14>
+    Public Class TimerExample
         Private WithEvents mTimer As TimerState
         ' </snippet14>
 
         ' <snippet15>
-        Private WithEvents mTimer As TimerState
-
-        Private Sub StartCountdownExample()
-            Console.WriteLine("Starting countdown from 10 seconds...")
+        Public Sub StartCountdownExample()
             mTimer = New TimerState()
             mTimer.StartCountdown(10.0, 1.0)
         End Sub
 
         Private Sub mTimer_UpdateTime(ByVal Countdown As Double) Handles mTimer.UpdateTime
-            Console.WriteLine($"Time remaining: {Countdown:0.0} seconds")
+            Console.WriteLine("Time remaining: " & Format(Countdown, "##0.0") & " seconds")
         End Sub
 
         Private Sub mTimer_Finished() Handles mTimer.Finished
             Console.WriteLine("Done")
         End Sub
+    End Class
 
-        Class TimerState
-            Public Event UpdateTime(ByVal Countdown As Double)
-            Public Event Finished()
-            Public Sub StartCountdown(ByVal Duration As Double,
-                                      ByVal Increment As Double)
-                Dim SoFar As Double = 0
-                Do While SoFar < Duration
-                    System.Threading.Thread.Sleep(CInt(Increment * 1000)) ' Sleep for increment seconds
-                    SoFar += Increment
-                    RaiseEvent UpdateTime(Duration - SoFar)
-                Loop
-                RaiseEvent Finished()
-            End Sub
-        End Class
-        ' </snippet15>
+    Public Class TimerState
+        Public Event UpdateTime(ByVal Countdown As Double)
+        Public Event Finished()
+        Public Sub StartCountdown(ByVal Duration As Double,
+                                  ByVal Increment As Double)
+            Dim SoFar As Double = 0
+            Do While SoFar < Duration
+                System.Threading.Thread.Sleep(CInt(Increment * 1000))
+                SoFar += Increment
+                RaiseEvent UpdateTime(Duration - SoFar)
+            Loop
+            RaiseEvent Finished()
+        End Sub
+    End Class
+    ' </snippet15>
+
+    Class Form1
+        Inherits Form
+        Private WithEvents Button1 As New Button
+        Private WithEvents TextBox1 As New TextBox
 
     End Class
 End Class

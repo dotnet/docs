@@ -56,7 +56,7 @@ RaiseEvent eventname[( argumentlist )]
   
  The example demonstrates a simple timer that counts down from 10 to 0 seconds and displays the progress to the console. When the countdown finishes, it displays "Done".  
   
- Add a `WithEvents` variable to your class declarations.  
+ Declare a `WithEvents` variable in your class to handle events from the timer:  
   
  [!code-vb[VbVbalrEvents#14](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEvents/VB/Class1.vb#14)]  
   

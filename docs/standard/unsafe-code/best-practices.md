@@ -32,7 +32,7 @@ may be applicable to them as well.
   * [17. String mutations](#17-string-mutations)
   * [18. Raw IL code (System.Reflection.Emit, Mono.Cecil, etc.)](#18-raw-il-code-systemreflectionemit-monocecil-etc)
   * [19. SkipLocalsInit and Unsafe.SkipInit](#19-uninitialized-locals-skiplocalsinit-and-unsafeskipinit)
-  * [20. ArrayPool<T>.Shared and similar pooling APIs](#20-arraypooltshared-and-similar-pooling-apis)
+  * [20. ArrayPool&lt;T&gt;.Shared and similar pooling APIs](#20-arraypooltshared-and-similar-pooling-apis)
   * [21. bool <-> int conversions](#21-bool---int-conversions)
   * [22. Interop](#22-interop)
   * [23. Thread safety](#23-thread-safety)
@@ -669,47 +669,43 @@ the intended logic.
 ### Recommendations
 
 1. ✔️ DO always consume `stackalloc` into `ReadOnlySpan<T>`/`Span<T>` on the left side of the expression to provide bounds checks:
+    ```cs
+    // Good:
+    Span<int> s = stackalloc int[10];
+    s[2] = 0;  // Bounds check is eliminated by JIT for this write.
+    s[42] = 0; // IndexOutOfRangeException is thrown
 
-```cs
-// Good:
-Span<int> s = stackalloc int[10];
-s[2] = 0;  // Bounds check is eliminated by JIT for this write.
-s[42] = 0; // IndexOutOfRangeException is thrown
-
-// Bad:
-int* s = stackalloc int[10];
-s[2] = 0;
-s[42] = 0; // Out of bounds write, undefined behavior.
-```
-
+    // Bad:
+    int* s = stackalloc int[10];
+    s[2] = 0;
+    s[42] = 0; // Out of bounds write, undefined behavior.
+    ```
 2. ❌ DON'T use `stackalloc` inside loops. The stack space isn't reclaimed until the method returns, so including a `stackalloc` inside a loop could result in process termination due to stack overflow.
 3. ❌ DON'T use large lengths for `stackalloc`. For example, 1024 bytes could be considered a reasonable upper bound.
 4. ✔️ DO check the range of variables used as `stackalloc` lengths.
+    ```cs
+    void ProblematicCode(int length)
+    {
+        Span<int> s = stackalloc int[length]; // Bad practice: check the range of `length`!
+        Consume(s);
+    }
+    ```
 
-```cs
-void ProblematicCode(int length)
-{
-    Span<int> s = stackalloc int[length]; // Bad practice: check the range of `length`!
-    Consume(s);
-}
-```
+    Fixed version:
 
-Fixed version:
-
-```cs
-void BetterCode(int length)
-{
-    // The "throw if length < 0" check below is important, as attempting to stackalloc a negative
-    // length will result in process termination.
-    ArgumentOutOfRangeException.ThrowIfLessThan(length, 0, nameof(length));
-    Span<int> s = length <= 512 ? stackalloc int[length] : new int[length];
-    // Or:
-    // Span<int> s = length <= 512 ? stackalloc int[512] : new int[length];
-    // Which performs a faster zeroing of the stackalloc, but potentially consumes more stack space.
-    Consume(s);
-}
-```
-
+    ```cs
+    void BetterCode(int length)
+    {
+        // The "throw if length < 0" check below is important, as attempting to stackalloc a negative
+        // length will result in process termination.
+        ArgumentOutOfRangeException.ThrowIfLessThan(length, 0, nameof(length));
+        Span<int> s = length <= 512 ? stackalloc int[length] : new int[length];
+        // Or:
+        // Span<int> s = length <= 512 ? stackalloc int[512] : new int[length];
+        // Which performs a faster zeroing of the stackalloc, but potentially consumes more stack space.
+        Consume(s);
+    }
+    ```
 5. ✔️ DO use modern C# features such as collection literals (`Span<int> s = [1, 2, 3];`), `params Span<T>` and Inline Arrays to avoid manual memory management when possible.
 
 ## 15. Fixed-size buffers
@@ -779,36 +775,34 @@ can lead to information disclosure, data corruption, or process termination via 
 1. ❌ DON'T expose methods whose arguments are pointer types (unmanaged pointers `T*` or managed pointers `ref T`) when those arguments are intended to represent buffers. Use safe buffer types like `Span<T>` or `ReadOnlySpan<T>` instead.
 2. ❌ DON'T use implicit contracts for byref arguments, such as requiring all callers to allocate the input on the stack. If such a contract is necessary, consider using [ref struct](https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/ref-struct) instead.
 3. ❌ DON'T assume buffers are zero-terminated unless the scenario explicitly documents that this is a valid assumption. For example, even though .NET guarantees that `string` instances are null-terminated, the same does not hold of other buffer types like `ReadOnlySpan<char>` or `char[]`.
-
-```cs
-unsafe void NullTerminationExamples(string str, ReadOnlySpan<char> span, char[] array)
-{
-    Debug.Assert(str is not null);
-    Debug.Assert(array is not null);
-
-    fixed (char* pStr = str)
+    ```cs
+    unsafe void NullTerminationExamples(string str, ReadOnlySpan<char> span, char[] array)
     {
-        // OK: Strings are always guaranteed to have a null terminator.
-        // This will assign the value '\0' to the variable 'ch'.
-        char ch = pStr[str.Length];
-    }
+        Debug.Assert(str is not null);
+        Debug.Assert(array is not null);
 
-    fixed (char* pSpan = span)
-    {
-        // INCORRECT: Spans aren't guaranteed to be null-terminated.
-        // This could throw, assign garbage data to 'ch', or cause an AV and crash.
-        char ch = pSpan[span.Length];
-    }
-    
-    fixed (char* pArray = array)
-    {
-        // INCORRECT: Arrays aren't guaranteed to be null-terminated.
-        // This could throw, assign garbage data to 'ch', or cause an AV and crash.
-        char ch = pArray[array.Length];
-    }
-}
-```
+        fixed (char* pStr = str)
+        {
+            // OK: Strings are always guaranteed to have a null terminator.
+            // This will assign the value '\0' to the variable 'ch'.
+            char ch = pStr[str.Length];
+        }
 
+        fixed (char* pSpan = span)
+        {
+            // INCORRECT: Spans aren't guaranteed to be null-terminated.
+            // This could throw, assign garbage data to 'ch', or cause an AV and crash.
+            char ch = pSpan[span.Length];
+        }
+        
+        fixed (char* pArray = array)
+        {
+            // INCORRECT: Arrays aren't guaranteed to be null-terminated.
+            // This could throw, assign garbage data to 'ch', or cause an AV and crash.
+            char ch = pArray[array.Length];
+        }
+    }
+    ```
 4. ❌ DON'T pass a pinned `Span<char>` or `ReadOnlySpan<char>` across a p/invoke boundary unless you have also passed an explicit length argument. Otherwise, the code on the other side of the p/invoke boundary might improperly believe the buffer is null-terminated.
 
 ```cs

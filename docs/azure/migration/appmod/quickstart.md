@@ -72,18 +72,27 @@ App Modernization for .NET assessment helps you identify your application readin
     :::image type="content" source="media/assessment-report.png" alt-text="A screenshot showing the generated assessment report with detailed findings.":::
 
 
-## Start a migration
+## Start migration
 
 GitHub Copilot app modernization for .NET (Preview) includes [predefined tasks](predefined-tasks.md) for common migration scenarios, following Microsoft's best practices.
 
-1. Select the **Migrate** button in the Assessment Report generated in the previous step to start a migration.
+### Start a migration task
 
-    > [!TIP]
-    > If you already know which migration scenario you want, go to `GitHub Copilot app modernization for .NET` > `Migration Tasks` and select the appropriate task directly.
+You can start a migration task in one of the following ways:
+
+**Option 1. Run from the Assessment Report**
+
+Select the **Run Task** button in the Assessment Report generated in the previous step to start a migration task.
+
+**Option 2. Send in Copilot Chat**
+
+Send the migration task number (e.g., 1.1) or its name in the chat.
+
+    :::image type="content" source="media/quickstart_chat_experience.png" alt-text="A screenshot showing sending the message in the Copilot Chat to start a migration task.":::
 
 ### Plan and progress tracker generation
 
-- When you start the migration, GitHub Copilot begins a session in agent mode with predefined prompts.
+- When you start the migration, GitHub Copilot begins a session named "App modernization: migrate from <source technology> to <target technology>" in agent mode with predefined prompts.
 - The tool creates two files in the `.appmod/.migration` folder:
   - `plan.md` - the overall migration plan
   - `progress.md` - a progress tracker; GitHub Copilot marks items as it completes tasks
@@ -103,10 +112,15 @@ GitHub Copilot app modernization for .NET (Preview) includes [predefined tasks](
   - Apply configuration changes
   - Make code changes
   - Build the solution, fix all compilation and configuration errors, and ensure a successful build
+  - Security vulnerability fix
 
-### Default chat messages
+## Default chat messages
 
-The GitHub Copilot app modernization for .NET extension provides default chat message options to streamline your workflow. When you open the Copilot chat interface, you can choose from the following predefined options:
+The GitHub Copilot app modernization for .NET extension provides default chat message options to streamline your workflow.
+
+    :::image type="content" source="media/quickstart_followup.png" alt-text="A screenshot showing default chat message options in the Copilot Chat.":::
+
+You can choose one of the predefined options below and send it in the chat:
 
 - **Run modernization assessment**: Initiates a comprehensive new assessment of your application to identify migration readiness issues and Azure compatibility challenges.
 - **View assessment report**: Opens the previously generated assessment report and provides a summarized list of migration tasks based on the assessment results. If no previous assessment exists, it will automatically run a new assessment first.

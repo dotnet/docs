@@ -29,7 +29,7 @@ With this assistant, you can:
 
 ## Provide feedback
 
-Feedback is important to Microsoft and the efficiency of this agent. Use the [Suggest a feature](/visualstudio/ide/suggest-a-feature) and [Report a Problem](/visualstudio/ide/report-a-problem) features of in Visual Studio to provide feedback.
+Feedback is important to Microsoft and the efficiency of this agent. Use the [Suggest a feature](/visualstudio/ide/suggest-a-feature) and [Report a problem](/visualstudio/ide/report-a-problem) features of Visual Studio to provide feedback.
 
 ## Prerequisites
 
@@ -92,7 +92,7 @@ The modernization agent combines automated analysis, AI-driven code remediation,
 
 - Automatic Build and CVE Resolution.
 
-  automatically builds your app and resolves compilation errors and vulnerabilities, streamlining development.
+  Automatically builds your app and resolves compilation errors and vulnerabilities, streamlining development.
 
 - Seamless Deployment.
 
@@ -102,9 +102,9 @@ The modernization agent combines automated analysis, AI-driven code remediation,
 
 Predefined tasks capture industry best practices for using Azure services. Currently, App Modernization for .NET (Preview) offers predefined tasks that cover common migration scenarios.
 
-- **Migrate to Managed Identity based Database on Azure, including Azure SQL DB, Azure SQL MI and Azure PostgreSQL**
+- **Migrate to Managed Identity based Database on Azure, including Azure SQL DB, Azure SQL MI, and Azure PostgreSQL**
 
-  Modernize your data layer by migrating from on-premises or legacy databases (such as DB2, Oracle DB, or SQL Server) to Azure SQL DB, Azure SQL Managed Instance or Azure PostgreSQL, using secure managed identity authentication.
+  Modernize your data layer by migrating from on-premises or legacy databases (such as DB2, Oracle DB, or SQL Server) to Azure SQL DB, Azure SQL Managed Instance, or Azure PostgreSQL, using secure managed identity authentication.
 
 - **Migrate to Azure File Storage**
 
@@ -136,7 +136,7 @@ Predefined tasks capture industry best practices for using Azure services. Curre
 
 - **Migrate to OpenTelemetry on Azure**
 
-  Transition from local logging frameworks like log4net, serilog, windows event log to OpenTelemetry on Azure.
+  Transition from local logging frameworks like log4net, serilog, and Windows event log to OpenTelemetry on Azure.
 
 ## How does it work
 

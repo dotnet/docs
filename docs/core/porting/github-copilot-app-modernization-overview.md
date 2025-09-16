@@ -13,7 +13,7 @@ ms.date: 09/15/2025
 
 # What is GitHub Copilot app modernization
 
-GitHub Copilot app modernization is a GitHub Copilot agent that helps upgrade projects to newer versions of .NET and migrate .NET applications to Azure quickly and confidently by guiding you through assessment, solution recommendations, code fixes, and validation - all within Visual Studio.  
+GitHub Copilot app modernization is a GitHub Copilot agent that helps upgrade projects to newer versions of .NET and migrate .NET applications to Azure quickly and confidently by guiding you through assessment, solution recommendations, code fixes, and validation - all within Visual Studio.
 
 This process streamlines modernization and boosts developer productivity and confidence. GitHub Copilot app modernization is an all-in-one upgrade and migration assistant that uses AI to improve developer velocity, quality, and results.
 
@@ -98,9 +98,49 @@ The modernization agent combines automated analysis, AI-driven code remediation,
 
   Deploy to Azure effortlessly, taking your code from development to cloud faster than ever.
 
+### Predefined tasks for migration
+
+Predefined tasks capture industry best practices for using Azure services. Currently, App Modernization for .NET (Preview) offers predefined tasks that cover common migration scenarios.
+
+- **Migrate to Managed Identity based Database on Azure, including Azure SQL DB, Azure SQL MI and Azure PostgreSQL**
+
+  Modernize your data layer by migrating from on-premises or legacy databases (such as DB2, Oracle DB, or SQL Server) to Azure SQL DB, Azure SQL Managed Instance or Azure PostgreSQL, using secure managed identity authentication.
+
+- **Migrate to Azure File Storage**
+
+  Move file I/O operations from the local file system to Azure File Storage for scalable, cloud-based file management.
+
+- **Migrate to Azure Blob Storage**
+
+  Replace on-premises or cross-cloud object storage, or local file system file I/O, with Azure Blob Storage for unstructured data.
+
+- **Migrate to Microsoft Entra ID**
+
+  Transition authentication and authorization from Windows Active Directory to Microsoft Entra ID (formerly Azure AD) for modern identity management.
+
+- **Migrate to secured credentials with Managed Identity and Azure Key Vault**
+
+  Replace plaintext credentials in configuration or code with secure, managed identities and Azure Key Vault for secrets management.
+
+- **Migrate to Azure Service Bus**
+
+  Move from legacy or third-party message queues (such as MSMQ or RabbitMQ) to Azure Service Bus for reliable, cloud-based messaging.
+
+- **Migrate to Azure Communication Service email**
+
+  Replace direct SMTP email sending with Azure Communication Service for scalable, secure email delivery.
+
+- **Migrate to Confluent Cloud/Azure Event Hub for Apache Kafka**
+
+  Transition from local or on-premises Kafka to managed event streaming with Confluent Cloud or Azure Event Hubs.
+
+- **Migrate to OpenTelemetry on Azure**
+
+  Transition from local logging frameworks like log4net, serilog, windows event log to OpenTelemetry on Azure.
+
 ## How does it work
 
-Once you request the Modernization agent to upgrade or migrate your app, Copilot analyzes your projects and their dependencies, and then asks you a series of questions about the upgrade or migration. After you answer these questions, a plan is written in the form of a Markdown file. If you tell Copilot to proceed with the upgrade or migration, it follows the steps described in the plan.
+Once you request the modernization agent to upgrade or migrate your app, Copilot analyzes your projects and their dependencies, and then asks you a series of questions about the upgrade or migration. After you answer these questions, a plan is written in the form of a Markdown file. If you tell Copilot to proceed with the upgrade or migration, it follows the steps described in the plan.
 
 You can adjust the plan by editing the Markdown file to change the upgrade steps or add more context.
 

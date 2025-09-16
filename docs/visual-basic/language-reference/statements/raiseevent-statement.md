@@ -54,7 +54,7 @@ RaiseEvent eventname[( argumentlist )]
   
  The class that raises an event is the event source, and the methods that process the event are the event handlers. An event source can have multiple handlers for the events it generates. When the class raises the event, that event is raised on every class that has elected to handle events for that instance of the object.  
   
- The example demonstrates a simple timer that counts down from 10 to 0 seconds and displays the progress to the console. When the countdown finishes, it displays "Done".  
+ The example demonstrates a timer that counts down from 10 to 0 seconds and displays the progress to the console. When the countdown finishes, it displays "Done".  
   
  Declare a `WithEvents` variable in your class to handle events from the timer:  
   

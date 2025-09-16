@@ -1,46 +1,28 @@
 ### YamlMime:Landing
 
-title: Upgrade .NET apps documentation
-summary: Learn about migrating apps from .NET Framework to .NET.
+title: Use GitHub Copilot to upgrade .NET apps
+summary: Learn about updating and migrating .NET apps with GitHub Copilot.
 
 metadata:
-  title: Upgrade .NET apps documentation
-  description: Learn about migrating apps from .NET Framework to .NET.
+  title: Use GitHub Copilot to upgrade .NET apps
+  description: Learn about updating apps from .NET Framework to .NET with GitHub Copilot.
   ms.topic: landing-page
   ms.date: 09/15/2025
 
 landingContent:
 
-  - title: .NET upgrade guide
+  - title: Upgrade .NET apps
     linkLists:
       - linkListType: overview
         links:
-          - text: Upgrade apps to the latest version of .NET
-            url: ../../core/porting/index.md
-          - text: Use GitHub Copilot to assist in upgrading
+          - text: Upgrade .NET apps
             url: ../../core/porting/github-copilot-app-modernization-overview.md
-          - text: Planning your .NET Framework upgrade
-            url: ../../core/porting/framework-overview.md
-      - linkListType: concept
-        links:
-          - text: Breaking changes and app compatibility
-            url: ../../core/porting/breaking-changes.md
-          - text: Unsupported APIs
-            url: ../../core/compatibility/unsupported-apis.md
-
-
-  - title: GitHub Copilot app modernization
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: GitHub Copilot app modernization overview
-            url: ../../core/porting/github-copilot-app-modernization-overview.md
-          - text: GitHub Copilot app modernization FAQ
+          - text: FAQ
             url: ../../core/porting/github-copilot-app-modernization-faq.yml
-      - linkListType: concept
+      - linkListType: how-to-guide
         links:
-          - text: Using Copilot to speed up porting and modernization
-            url: ../../core/porting/github-copilot-app-modernization-overview.md#how-does-it-work
+          - text: How to upgrade a .NET app
+            url: ../../core/porting/how-to-upgrade-with-github-copilot.md
 
   - title: Migrate .NET apps to Azure
     linkLists:

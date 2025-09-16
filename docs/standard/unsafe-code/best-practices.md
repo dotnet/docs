@@ -669,6 +669,7 @@ the intended logic.
 ### Recommendations
 
 1. ✔️ DO always consume `stackalloc` into `ReadOnlySpan<T>`/`Span<T>` on the left side of the expression to provide bounds checks:
+
     ```cs
     // Good:
     Span<int> s = stackalloc int[10];
@@ -680,9 +681,11 @@ the intended logic.
     s[2] = 0;
     s[42] = 0; // Out of bounds write, undefined behavior.
     ```
+
 2. ❌ DON'T use `stackalloc` inside loops. The stack space isn't reclaimed until the method returns, so including a `stackalloc` inside a loop could result in process termination due to stack overflow.
 3. ❌ DON'T use large lengths for `stackalloc`. For example, 1024 bytes could be considered a reasonable upper bound.
 4. ✔️ DO check the range of variables used as `stackalloc` lengths.
+
     ```cs
     void ProblematicCode(int length)
     {
@@ -706,6 +709,7 @@ the intended logic.
         Consume(s);
     }
     ```
+
 5. ✔️ DO use modern C# features such as collection literals (`Span<int> s = [1, 2, 3];`), `params Span<T>` and Inline Arrays to avoid manual memory management when possible.
 
 ## 15. Fixed-size buffers
@@ -775,6 +779,7 @@ can lead to information disclosure, data corruption, or process termination via 
 1. ❌ DON'T expose methods whose arguments are pointer types (unmanaged pointers `T*` or managed pointers `ref T`) when those arguments are intended to represent buffers. Use safe buffer types like `Span<T>` or `ReadOnlySpan<T>` instead.
 2. ❌ DON'T use implicit contracts for byref arguments, such as requiring all callers to allocate the input on the stack. If such a contract is necessary, consider using [ref struct](https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/ref-struct) instead.
 3. ❌ DON'T assume buffers are zero-terminated unless the scenario explicitly documents that this is a valid assumption. For example, even though .NET guarantees that `string` instances are null-terminated, the same does not hold of other buffer types like `ReadOnlySpan<char>` or `char[]`.
+
     ```cs
     unsafe void NullTerminationExamples(string str, ReadOnlySpan<char> span, char[] array)
     {
@@ -803,6 +808,7 @@ can lead to information disclosure, data corruption, or process termination via 
         }
     }
     ```
+
 4. ❌ DON'T pass a pinned `Span<char>` or `ReadOnlySpan<char>` across a p/invoke boundary unless you have also passed an explicit length argument. Otherwise, the code on the other side of the p/invoke boundary might improperly believe the buffer is null-terminated.
 
 ```cs

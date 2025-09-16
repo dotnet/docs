@@ -564,7 +564,7 @@
 | Microsoft.Azure.Functions.Worker.Core | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Core/2.0.0)<br>NuGet [2.50.0-preview1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Core/2.50.0-preview1) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Abstractions | NuGet [1.3.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Abstractions/1.3.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.ApplicationInsights | NuGet [1.0.0-preview4](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.ApplicationInsights/1.0.0-preview4) |  |  |
-| Microsoft.Azure.Functions.Worker.Extensions.CosmosDB | NuGet [4.12.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.CosmosDB/4.12.0) |  |  |
+| Microsoft.Azure.Functions.Worker.Extensions.CosmosDB | NuGet [4.13.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.CosmosDB/4.13.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.EventGrid | NuGet [3.5.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.EventGrid/3.5.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.EventHubs | NuGet [6.5.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.EventHubs/6.5.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Http | NuGet [3.3.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Http/3.3.0) |  |  |
@@ -578,8 +578,8 @@
 | Microsoft.Azure.Functions.Worker.Extensions.SignalRService | NuGet [2.0.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.SignalRService/2.0.1) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Sql | NuGet [3.1.527](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Sql/3.1.527) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Storage | NuGet [6.7.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Storage/6.7.0) |  |  |
-| Microsoft.Azure.Functions.Worker.Extensions.Storage.Blobs | NuGet [6.7.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Storage.Blobs/6.7.0) |  |  |
-| Microsoft.Azure.Functions.Worker.Extensions.Storage.Queues | NuGet [5.5.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Storage.Queues/5.5.2) |  |  |
+| Microsoft.Azure.Functions.Worker.Extensions.Storage.Blobs | NuGet [6.8.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Storage.Blobs/6.8.0) |  |  |
+| Microsoft.Azure.Functions.Worker.Extensions.Storage.Queues | NuGet [5.5.3](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Storage.Queues/5.5.3) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Storage.Tables | NuGet [1.0.0-preview1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Storage.Tables/1.0.0-preview1) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Tables | NuGet [1.5.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Tables/1.5.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Timer | NuGet [4.3.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Timer/4.3.1) |  |  |

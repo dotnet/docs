@@ -125,7 +125,7 @@ Even if you use a tool to help port your application, you should review the [Con
 
 ### GitHub Copilot app modernization assistant
 
-[GitHub Copilot app modernization](github-copilot-app-modernization-overview.md) is a GitHub Copilot chat assistant helps you plan and upgrade projects to newer versions of .NET, migrate to Azure, update dependencies, and apply code fixes. Azure migration is powered by [Application and code assessment for .NET](../../azure/migration/appcat/app-code-assessment-toolkit.md)
+[GitHub Copilot app modernization](github-copilot-app-modernization-overview.md) is a GitHub Copilot chat assistant that helps you plan and upgrade projects to newer versions of .NET, migrate to Azure, update dependencies, and apply code fixes. Azure migration is powered by [Application and code assessment for .NET](../../azure/migration/appcat/app-code-assessment-toolkit.md)
 
 This chat assistant supports the following upgrade paths:
 
@@ -148,7 +148,7 @@ It also works on various project types, such as:
 
 Use GitHub Copilot app modernization when you want an AI-powered, end-to-end experience to upgrade .NET Framework projects and dependencies to modern .NET&mdash;covering assessment, planning, remediation, and guidance for migrating applications to Azure.
 
-### Application and Code Assessment for .NET
+### Application and code assessment for .NET
 
 [Azure Migrate application and code assessment for .NET](../../azure/migration/appcat/app-code-assessment-toolkit.md) provides code and application analysis, along with recommendations for planning cloud deployments. It helps you confidently run business-critical solutions in the cloud by offering a developer-focused assessment of your source code. The tool also provides recommendations and examples to optimize code and configurations for Azure, following industry best practices.
 

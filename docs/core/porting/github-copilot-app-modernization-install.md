@@ -13,10 +13,10 @@ ms.date: 09/15/2025
 
 # Install GitHub Copilot app modernization
 
-This article guides you through installing GitHub Copilot app modernization extension in Visual Studio.
+This article guides you through installing the GitHub Copilot app modernization extension in Visual Studio.
 
 > [!IMPORTANT]
-> The GitHub Copilot Modernization agent is included in Visual Studio, starting with versions Visual Studio 2022 17.14.16 and Visual Studio 2026.
+> The GitHub Copilot Modernization agent is included in Visual Studio, starting with Visual Studio 2022 17.14.16 and Visual Studio 2026.
 
 ## Prerequisites
 

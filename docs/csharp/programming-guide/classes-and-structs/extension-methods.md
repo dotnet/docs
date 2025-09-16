@@ -1,7 +1,7 @@
 ---
 title: "Extension members"
 description: Extension members in C# enable you to add methods, properties, or operators to existing types without creating a new derived type, recompiling, or otherwise modifying the original type.
-ms.date: 04/15/2025
+ms.date: 09/17/2025
 helpviewer_keywords: 
   - "methods [C#], adding to existing types"
   - "extension methods [C#]"
@@ -12,7 +12,9 @@ helpviewer_keywords:
 
 Extension members enable you to "add" methods to existing types without creating a new derived type, recompiling, or otherwise modifying the original type.
 
-Beginning with C# 14, there are two syntaxes you use to define extension methods. C# 14 adds [`extension`](../../language-reference/keywords/extension.md) containers, where you define multiple extension members for a type or an instance of a type. Before C# 14, you add the [`this`](../../language-reference/keywords/this.md) modifier to the first parameter of a static method to indicate that the method appears as a member of an instance of the parameter type.
+Beginning with C# 14, there are two syntaxes you use to define extension methods. C# 14 adds [`extension`](../../language-reference/keywords/extension.md) blocks, where you define multiple extension members for a type or an instance of a type. Before C# 14, you add the [`this`](../../language-reference/keywords/this.md) modifier to the first parameter of a static method to indicate that the method appears as a member of an instance of the parameter type.
+
+Extension blocks support multiple member types: methods, properties, and operators. With extension blocks, you can define both instance extensions and static extensions. Instance extensions extend an instance of the type; static extensions extend the type itself. The form of extension methods declared with the `this` modifier supports instance extension methods.
 
 Extension methods are static methods, but they're called as if they were instance methods on the extended type. For client code written in C#, F# and Visual Basic, there's no apparent difference between calling an extension method and the methods defined in a type. Both forms of extension methods are compiled to the same IL (Intermediate Language). Consumers of extension members don't need to know which syntax was used to define extension methods.
 

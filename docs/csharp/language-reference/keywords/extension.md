@@ -1,16 +1,16 @@
 ---
 title: "Extension member declarations"
 description: "Learn the syntax to declare extension members in C#. Extension members enable you to add functionality to types and interfaces in those instances where you don't have the source for the original type. Extensions are often paired with generic interfaces to implement a common set of functionality across all types that implement that interface."
-ms.date: 04/17/2025
+ms.date: 09/17/2025
 f1_keywords:
   - "extension_CSharpKeyword"
   - "extension"
 ---
 # Extension declaration (C# Reference)
 
-Beginning with C# 14, top level, nongeneric `static class` declarations can use `extension` containers to declare *extension members*. Extension members are methods or properties and can appear to be instance or static members. Earlier versions of C# enable *extension methods* by adding `this` as a modifier to the first parameter of a static method declared in a top-level, nongeneric static class.
+Beginning with C# 14, top level, nongeneric `static class` declarations can use `extension` blocks to declare *extension members*. Extension members are methods or properties and can appear to be instance or static members. Earlier versions of C# enable *extension methods* by adding `this` as a modifier to the first parameter of a static method declared in a top-level, nongeneric static class.
 
-The `extension` block specifies the type and receiver for extension members. You can declare methods and properties inside the `extension` declaration. The following example declares a single extension block that defines an instance extension method and an instance property.
+The `extension` block specifies the type and receiver for extension members. You can declare methods, properties or operators inside the `extension` declaration. The following example declares a single extension block that defines an instance extension method, an instance property, and a static operator method.
 
 :::code language="csharp" source="./snippets/extensions.cs" id="ExtensionMembers":::
 
@@ -20,13 +20,15 @@ Any of the extension members can be accessed as though they were members of the 
 
 :::code language="csharp" source="./snippets/extensions.cs" id="UseExtensionMethod":::
 
-You can declare any number of members in a single container, as long as they share the same receiver. You can declare as many extension blocks in a single class as well. Different extensions don't need to declare the same type or name of receiver. The extension parameter doesn't need to include the parameter name if the only members are static:
+You can declare any number of members in a single block, as long as they share the same receiver. You can declare as many extension blocks in a single class as well. Different extensions don't need to declare the same type or name of receiver. The extension parameter doesn't need to include the parameter name if the only members are static:
 
 :::code language="csharp" source="./snippets/extensions.cs" id="StaticExtensions":::
 
 Static extensions can be called as though they're static members of the receiver type:
 
 :::code language="csharp" source="./snippets/extensions.cs" id="UseStaticExtensions":::
+
+Operators are called as though they are user defined operators on the type.
 
 > [!IMPORTANT]  
 > An extension doesn't introduce a *scope* for member declarations. All members declared in a single class, even if in multiple extensions, must have unique signatures. The generated signature includes the receiver type in its name for static members and the receiver parameter for extension instance members.

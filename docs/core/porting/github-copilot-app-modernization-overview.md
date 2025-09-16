@@ -34,7 +34,7 @@ Feedback is important to Microsoft and the efficiency of this agent. Use the [Su
 ## Prerequisites
 
 - Windows Operating System
-- [Visual Studio 2022 version 17.14.16 or newer](https://visualstudio.microsoft.com/downloads/) (To be released).
+- [Visual Studio 2022 version 17.14.16 or newer](https://visualstudio.microsoft.com/downloads/). (To be released)
 - [.NET desktop development workload](/visualstudio/install/modify-visual-studio?view=vs-2022&preserve-view=true#change-workloads-or-individual-components) with the following optional components enabled:
 
   - GitHub Copilot
@@ -66,6 +66,8 @@ The modernization agent supports upgrading projects coded in C#. The following t
 - Windows Forms
 - Class libraries
 - Console apps
+
+To learn how to start an upgrade, see [How to upgrade a .NET app with GitHub Copilot app modernization](how-to-upgrade-with-github-copilot.md).
 
 ### Upgrade paths
 
@@ -122,4 +124,5 @@ The tool only collects data about project types, intent to upgrade, and upgrade 
 
 ## Related content
 
+- [How to upgrade a .NET app with GitHub Copilot app modernization](how-to-upgrade-with-github-copilot.md)
 - [GitHub Copilot app modernization FAQ](github-copilot-app-modernization-faq.yml)

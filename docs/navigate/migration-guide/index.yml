@@ -11,36 +11,14 @@ metadata:
 
 landingContent:
 
-  - title: .NET upgrade guide
+  - title: Upgrade .NET apps
     linkLists:
       - linkListType: overview
         links:
-          - text: Upgrade apps to the latest version of .NET
-            url: ../../core/porting/index.md
-          - text: Use GitHub Copilot to assist in upgrading
+          - text: Upgrade .NET apps
             url: ../../core/porting/github-copilot-app-modernization-overview.md
-          - text: Planning your .NET Framework upgrade
-            url: ../../core/porting/framework-overview.md
-      - linkListType: concept
-        links:
-          - text: Breaking changes and app compatibility
-            url: ../../core/porting/breaking-changes.md
-          - text: Unsupported APIs
-            url: ../../core/compatibility/unsupported-apis.md
-
-
-  - title: GitHub Copilot app modernization
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: GitHub Copilot app modernization overview
-            url: ../../core/porting/github-copilot-app-modernization-overview.md
-          - text: GitHub Copilot app modernization FAQ
+          - text: FAQ
             url: ../../core/porting/github-copilot-app-modernization-faq.yml
-      - linkListType: concept
-        links:
-          - text: Using Copilot to speed up porting and modernization
-            url: ../../core/porting/github-copilot-app-modernization-overview.md#how-does-it-work
 
   - title: Migrate .NET apps to Azure
     linkLists:

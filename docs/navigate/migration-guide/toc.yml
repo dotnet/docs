@@ -1,19 +1,19 @@
 items:
   - name: .NET upgrade guide
     href: index.yml
-
+  - name: Overview
+    href: ../../core/porting/index.md
   - name: Upgrade .NET apps
     expanded: true
     items:
       - name: Overview
-        href: ../../core/porting/index.md
-        displayName: copilot, upgrade
-      - name: GitHub Copilot app modernization
         href: ../../core/porting/github-copilot-app-modernization-overview.md
         displayName: copilot, upgrade, faq
-      - name: GitHub Copilot app modernization FAQ
+      - name: FAQ
         href: ../../core/porting/github-copilot-app-modernization-faq.yml
         displayName: copilot, upgrade, faq
+      - name: How to upgrade with GitHub Copilot
+        href: ../../core/porting/how-to-upgrade-with-github-copilot.md
       - name: Planning your .NET Framework upgrade
         items:
           - name: Overview

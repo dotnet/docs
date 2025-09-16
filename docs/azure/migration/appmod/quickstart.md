@@ -49,25 +49,27 @@ For more information, see [Find, install, and manage extensions for Visual Studi
 
 ## Assess application readiness
 
-App Modernization for .NET assessment helps you identify your application readiness challenges, understand their impact, and find recommended solutions. Each solution recommendation includes references to set up Azure resources, add configurations, and make code changes. Follow these steps to start your migration process with assessment:
+App Modernization for .NET assessment helps you identify your application readiness challenges, understand their impact, and find recommended migration tasks. Each migration task includes references to set up Azure resources, add configurations, and make code changes. Follow these steps to start your migration process with assessment:
 
-1. Clone the [.NET migration copilot samples](https://github.com/Azure-Samples/dotnet-migration-copilot-samples) repository.
-2. In Visual Studio, open the **Contoso University** project folder from the samples repository.
-3. Right-click the solution and select **Modernize**.
+1. Clone the [.NET migration copilot samples](https://github.com/Azure-Samples/dotnet-migration-copilot-samples) repository to your local machine.
 
-    :::image type="content" source="media/Modernize.png" alt-text="A screenshot showing the modernize option.":::
+2. In Visual Studio, open the **Contoso University** solution from the samples repository. 
 
-4. A GitHub Copilot Chat window opens with a welcome message and a list of options. Choose **Migrate to Azure** and send it to Copilot.
+3. Right-click the solution in Solution Explorer and select **Modernize**.
 
-    :::image type="content" source="media/Welcome.png" alt-text="A screenshot showing the welcome message.":::
+    :::image type="content" source="media/Modernize.png" alt-text="A screenshot showing the modernize option in the context menu.":::
 
-5. A new Copilot chat session opens and displays the welcome message. The assessment runs automatically.
+4. A GitHub Copilot Chat window opens with a welcome message and predefined options. Select **Migrate to Azure** from the available choices and send it to Copilot.
 
-    :::image type="content" source="media/AssessmentInProcess.png" alt-text="A screenshot showing assessment in progress.":::
+    :::image type="content" source="media/Welcome.png" alt-text="A screenshot showing the welcome message with migration options.":::
 
-6. When the assessment finishes, you can view an assessment report UI page and a list of migration tasks in the chat.
+5. A new Copilot chat session opens and displays the welcome message. The assessment automatically begins analyzing your project for migration readiness.
 
-    :::image type="content" source="media/assessment-report.png" alt-text="A screenshot showing the generated assessment report.":::
+    :::image type="content" source="media/AssessmentInProcess.png" alt-text="A screenshot showing assessment in progress with status indicators.":::
+
+6. When the assessment completes, you can view a comprehensive assessment report UI page and receive a list of migration tasks in the chat window.
+
+    :::image type="content" source="media/assessment-report.png" alt-text="A screenshot showing the generated assessment report with detailed findings.":::
 
 
 ## Start a migration
@@ -101,6 +103,18 @@ GitHub Copilot app modernization for .NET (Preview) includes [predefined tasks](
   - Apply configuration changes
   - Make code changes
   - Build the solution, fix all compilation and configuration errors, and ensure a successful build
+
+### Default chat messages
+
+The GitHub Copilot app modernization for .NET extension provides default chat message options to streamline your workflow. When you open the Copilot chat interface, you can choose from the following predefined options:
+
+- **Run modernization assessment**: Initiates a comprehensive new assessment of your application to identify migration readiness issues and Azure compatibility challenges.
+- **View assessment report**: Opens the previously generated assessment report and provides a summarized list of migration tasks based on the assessment results. If no previous assessment exists, it will automatically run a new assessment first.
+- **Browse top migration tasks**: Displays recommended migration tasks and common modernization scenarios, independent of any specific assessment results.
+
+> [!TIP]
+> These default messages help you quickly navigate common workflows without typing custom prompts. You can also type your own custom messages to interact with Copilot for specific questions or requirements.
+
 
 ## Next Steps
 

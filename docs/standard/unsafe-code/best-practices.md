@@ -581,7 +581,7 @@ While some .NET runtimes rely on the OS to fixup misaligned accesses, there are 
 platforms where misaligned access can lead to an `DataMisalignedException` (or `SEHException`).
 Some of the examples include:
 
-* `Interlocked` operations on misaligned memory on some platforms ([example]((https://github.com/dotnet/runtime/issues/91662)))
+* `Interlocked` operations on misaligned memory on some platforms ([example](https://github.com/dotnet/runtime/issues/91662))
 * Misaligned floating point operations on ARM
 * Accessing special device memory with certain alignment requirements (not really supported by .NET)
 

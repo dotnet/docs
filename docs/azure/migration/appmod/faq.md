@@ -122,13 +122,16 @@ If Visual Studio fails to automatically upgrade AppCAT when a new version is ava
 
 ## What should I do if I see "Command failed: No .NET SDKs were found" errors?
 
-This error occurs when AppCAT cannot find a compatible .NET SDK, even if you have other .NET SDKs installed. AppCAT requires the .NET 8.0 SDK to run properly.
+This error occurs when AppCAT cannot find a compatible .NET SDK, even if you have other .NET SDKs installed. AppCAT requires the .NET 9.0 SDK to run properly.
 
 To fix this error:
 
-1. Download and install the .NET 8 SDK from <https://dotnet.microsoft.com/download/dotnet/8.0>.
+1. Download and install the .NET 9 SDK from <https://dotnet.microsoft.com/download/dotnet/9.0>.
 2. Restart Visual Studio.
 3. Run the assessment again.
+
+> [!NOTE]
+> The GitHub Copilot app modernization for .NET extension can automatically help you install or upgrade to .NET 9. If you have an older version of the extension, updating to the latest version will provide automatic installation assistance for the required .NET 9 SDK.
 
 ## Does the tool store my source code?
 

@@ -10,7 +10,7 @@ f1_keywords:
 
 Beginning with C# 14, top level, nongeneric `static class` declarations can use `extension` blocks to declare *extension members*. Extension members are methods or properties and can appear to be instance or static members. Earlier versions of C# enable *extension methods* by adding `this` as a modifier to the first parameter of a static method declared in a top-level, nongeneric static class.
 
-The `extension` block specifies the type and receiver for extension members. You can declare methods, properties or operators inside the `extension` declaration. The following example declares a single extension block that defines an instance extension method, an instance property, and a static operator method.
+The `extension` block specifies the type and receiver for extension members. You can declare methods, properties, or operators inside the `extension` declaration. The following example declares a single extension block that defines an instance extension method, an instance property, and a static operator method.
 
 :::code language="csharp" source="./snippets/extensions.cs" id="ExtensionMembers":::
 
@@ -28,7 +28,7 @@ Static extensions can be called as though they're static members of the receiver
 
 :::code language="csharp" source="./snippets/extensions.cs" id="UseStaticExtensions":::
 
-Operators are called as though they are user defined operators on the type.
+Operators are called as though they're user defined operators on the type.
 
 > [!IMPORTANT]  
 > An extension doesn't introduce a *scope* for member declarations. All members declared in a single class, even if in multiple extensions, must have unique signatures. The generated signature includes the receiver type in its name for static members and the receiver parameter for extension instance members.

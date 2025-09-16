@@ -6,23 +6,21 @@ items:
   - name: Use GitHub Copilot to upgrade
     expanded: true
     items:
+      - name: Overview
+        href: ../../core/porting/github-copilot-app-modernization-overview.md?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
+        displayName: copilot, upgrade
+      - name: FAQ
+        href: ../../core/porting/github-copilot-app-modernization-faq.yml?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
+        displayName: copilot, upgrade
       - name: Upgrade .NET apps
         expanded: false
         items:
-          - name: Overview
-            href: ../../core/porting/github-copilot-app-modernization-overview.md?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
-            displayName: copilot, upgrade
           - name: How to upgrade with GitHub Copilot
             href: ../../core/porting/how-to-upgrade-with-github-copilot.md?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
-            displayName: copilot, upgrade
-          - name: FAQ
-            href: ../../core/porting/github-copilot-app-modernization-faq.yml?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
             displayName: copilot, upgrade
       - name: Migrate .NET apps to Azure
         expanded: false
         items:
-          - name: Overview
-            href: /dotnet/azure/migration/appmod/overview?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
           - name: Migrate a .NET project
             href: /dotnet/azure/migration/appmod/quickstart?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
           - name: Migration sample

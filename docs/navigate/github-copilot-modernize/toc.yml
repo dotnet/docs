@@ -1,23 +1,21 @@
 items:
   - name: GitHub Copilot app modernization for .NET
     href: index.yml
+  - name: Overview
+    href: ../../core/porting/github-copilot-app-modernization-overview.md
   - name: FAQ
     href: ../../core/porting/github-copilot-app-modernization-faq.yml
     displayName: copilot, upgrade
+
   - name: Upgrade .NET apps
     expanded: true
     items:
-      - name: Overview
-        href: ../../core/porting/github-copilot-app-modernization-overview.md
-        displayName: copilot, upgrade
       - name: How to upgrade with GitHub Copilot
         href: ../../core/porting/how-to-upgrade-with-github-copilot.md
 
   - name: Migrate .NET apps to Azure
     expanded: true
     items:
-      - name: Overview
-        href: /dotnet/azure/migration/appmod/overview?toc=/dotnet/navigate/github-copilot-modernize/toc.json&bc=/dotnet/breadcrumb/toc.json
       - name: Migrate a .NET project
         href: /dotnet/azure/migration/appmod/quickstart?toc=/dotnet/navigate/github-copilot-modernize/toc.json&bc=/dotnet/breadcrumb/toc.json
       - name: Migration sample

@@ -17,7 +17,9 @@ Predefined tasks capture industry best practices for using Azure services. Curre
 - Secret management
 - Message queue integration
 - Database migration
+- Cache migration
 - Identity management
+- Log management
 
 ## Predefined task list
 
@@ -58,3 +60,11 @@ App Modernization for .NET currently supports the following predefined tasks:
 - **Migrate to OpenTelemetry on Azure**
 
   Transition from local logging frameworks like log4net, serilog, windows event log to OpenTelemetry on Azure.
+
+- **Migrate to Azure Cache for Redis**
+
+  Replace in-memory or local Redis cache implementations with Azure Cache for Redis for high availability, scalability, and enterprise-grade security.
+
+- **Migrate from File Logging to Centralized Logging**
+
+  Replace local file-based logging with more resilient approaches such as console logging and OpenTelemetry integration, enabling unified, cloud-native observability on Azure.

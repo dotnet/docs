@@ -10,33 +10,24 @@ ms.author: alexwolf
 
 # GitHub Copilot app modernization for .NET (Preview) overview
 
-[GitHub Copilot app modernization for .NET (Preview)](https://aka.ms/appmod-dotnet-marketplace) helps you migrate .NET applications to Azure quickly and confidently by guiding you through assessment, solution recommendations, code fixes, and validation - all in one tool.
+[GitHub Copilot app modernization for .NET (Preview)]([https://aka.ms/appmod-dotnet-marketplace](https://aka.ms/ghcp-appmod/dotNET)) helps you migrate .NET applications to Azure quickly and confidently by guiding you through assessment, solution recommendations, code fixes, validation and deployment.
 
 With this assistant, you can:
-
 - Assess your application's code, configuration, and dependencies.
 - Plan and set up the right Azure resource
 - Fix issues and apply best practices for cloud migration
 - Validate that your app builds and tests successfully
+- Deploy to Azure
 
 This process streamlines modernization and boosts developer productivity and confidence. App Modernization for .NET is an all-in-one migration assistant that uses AI to improve developer velocity, quality, and results.
 
-App Modernization for .NET is provided as a Visual Studio extension and relies on the following tools to be installed and configured for the full experience:
+Please refer to [Github Copilot App Modernization Overview](https://aka.ms/ghcp-appmod/dotNET) for overview and prerequisites.
 
-- [A GitHub account with GitHub Copilot enabled](https://github.com/features/copilot) (Pro, Pro+, Business, or Enterprise plan required)
-- [The GitHub Copilot extension](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot) for Visual Studio (latest version recommended)
-- [Azure Migrate application and code assessment for .NET](../appcat/install.md) for assessment features
-
-For a complete walkthrough of setting up and using GitHub Copilot app modernization for .NET, see [Quickstart: Assessing an application and applying code changes](quickstart.md).
+For a complete walkthrough of setting up and using GitHub Copilot app modernization for .NET for Migration, see [Quickstart: Assessing an application and applying code changes](quickstart.md).
 
 ## Key concepts
 
-GitHub Copilot app modernization for .NET supports end-to-end migration to Azure, including assessment, planning, code remediation, build fixes, and unit test fixes. It uses GitHub Copilot AI capabilities to help you migrate and run your applications on Azure with confidence, accelerating the entire modernization lifecycle.
-
-The tool also relies on [Azure Migrate application and code assessment (AppCAT)](../appcat/app-code-assessment-toolkit.md) to analyze your code and identify modernization opportunities. You can use GitHub Copilot app modernization for .NET to get an overview of cloud readiness migration issues, including:
-
-- Best practice recommendations
-- Suggestions for changing your application code
+GitHub Copilot app modernization for .NET supports end-to-end migration to Azure, including assessment, planning, code remediation, build fixes, and deployment. It uses GitHub Copilot AI capabilities to help you migrate and run your applications on Azure with confidence, accelerating the entire modernization lifecycle.
 
 When code changes are needed, the tool guides you through remediation using predefined tasks for common issues, such as:
 
@@ -45,11 +36,7 @@ When code changes are needed, the tool guides you through remediation using pred
 
 For more information, see [Predefined tasks](predefined-tasks.md).
 
-### Upgrading .NET projects
-
-Upgrading .NET apps is a common task that requires substantial time and resources. GitHub Copilot app modernization is an AI-based solution designed to assist with updating your .NET apps. For more information, see [GitHub Copilot app modernization](../../../core/porting/github-copilot-app-modernization-overview.md).
-
-## Common use cases
+## Key Features
 
 App Modernization for .NET (Preview) supports the following scenarios:
 

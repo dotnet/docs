@@ -62,7 +62,7 @@ RaiseEvent eventname[( argumentlist )]
   
 ## Example 2  
 
- Add the following code to implement the event handlers and timer logic. This example shows how to use the `RaiseEvent` statement to notify event handlers when the timer updates or completes.  
+ Add the following code to implement the event handlers and timer logic. This example shows how to use the [RaiseEvent](raiseevent-statement.md) statement to notify event handlers when the timer updates or completes.  
   
  [!code-vb[VbVbalrEvents#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEvents/VB/Class1.vb#15)]  
   

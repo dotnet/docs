@@ -14,10 +14,11 @@ This article describes the predefined tasks available for GitHub Copilot app mod
 
 Predefined tasks capture industry best practices for using Azure services. Currently, App Modernization for .NET (Preview) offers predefined tasks that cover common migration scenarios. These tasks address the following subjects, and more:
 
+- Database migration
+- Storage migration
 - Secret management
 - Message queue integration
-- Database migration
-- Cache migration
+- Caching migration
 - Identity management
 - Log management
 
@@ -64,7 +65,3 @@ App Modernization for .NET currently supports the following predefined tasks:
 - **Migrate to Azure Cache for Redis**
 
   Replace in-memory or local Redis cache implementations with Azure Cache for Redis for high availability, scalability, and enterprise-grade security.
-
-- **Migrate from File Logging to Centralized Logging**
-
-  Replace local file-based logging with more resilient approaches such as console logging and OpenTelemetry integration, enabling unified, cloud-native observability on Azure.

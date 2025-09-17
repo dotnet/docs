@@ -384,6 +384,7 @@
 | Resource Management - Web PubSub | NuGet [1.2.0](https://www.nuget.org/packages/Azure.ResourceManager.WebPubSub/1.2.0) | [docs](/dotnet/api/overview/azure/ResourceManager.WebPubSub-readme) | GitHub [1.2.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.WebPubSub_1.2.0/sdk/webpubsub/Azure.ResourceManager.WebPubSub/) |
 | Resource Management - Weightsandbiases | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.WeightsAndBiases/1.0.0-beta.1) | [docs](/dotnet/api/overview/azure/ResourceManager.WeightsAndBiases-readme?view=azure-dotnet-preview&amp;preserve-view=true) | GitHub [1.0.0-beta.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.WeightsAndBiases_1.0.0-beta.1/sdk/weightsandbiases/Azure.ResourceManager.WeightsAndBiases/) |
 | Resource Management - Workload Monitor | NuGet [1.0.0-beta.5](https://www.nuget.org/packages/Azure.ResourceManager.WorkloadMonitor/1.0.0-beta.5) | [docs](/dotnet/api/overview/azure/ResourceManager.WorkloadMonitor-readme?view=azure-dotnet-preview&amp;preserve-view=true) | GitHub [1.0.0-beta.5](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.WorkloadMonitor_1.0.0-beta.5/sdk/workloadmonitor/Azure.ResourceManager.WorkloadMonitor/) |
+| Resource Management - Workloadorchestration | NuGet [1.0.0](https://www.nuget.org/packages/Azure.ResourceManager.WorkloadOrchestration/1.0.0) |  | GitHub [1.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.WorkloadOrchestration_1.0.0/sdk/workloadorchestration/Azure.ResourceManager.WorkloadOrchestration/) |
 | Resource Management - Workloads | NuGet [1.1.1](https://www.nuget.org/packages/Azure.ResourceManager.Workloads/1.1.1)<br>NuGet [1.2.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.Workloads/1.2.0-beta.1) | [docs](/dotnet/api/overview/azure/ResourceManager.Workloads-readme) | GitHub [1.1.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.Workloads_1.1.1/sdk/workloads/Azure.ResourceManager.Workloads/)<br>GitHub [1.2.0-beta.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.Workloads_1.2.0-beta.1/sdk/workloads/Azure.ResourceManager.Workloads/) |
 | Resource Management - Workloadssapvirtualinstance | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.WorkloadsSapVirtualInstance/1.0.0-beta.1) | [docs](/dotnet/api/overview/azure/ResourceManager.WorkloadsSapVirtualInstance-readme?view=azure-dotnet-preview&amp;preserve-view=true) | GitHub [1.0.0-beta.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.WorkloadsSapVirtualInstance_1.0.0-beta.1/sdk/workloadssapvirtualinstance/Azure.ResourceManager.WorkloadsSapVirtualInstance/) |
 | App Configuration Extension | NuGet [8.3.0](https://www.nuget.org/packages/Microsoft.Azure.AppConfiguration.Functions.Worker/8.3.0) |  |  |
@@ -413,14 +414,15 @@
 | Speech Extension Telemetry | NuGet [1.46.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Telemetry/1.46.0) |  |  |
 | System Net Client Model | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/System.Net.ClientModel/1.0.0-beta.1) |  |  |
 | Unknown Display Name | NuGet [0.12.0](https://www.nuget.org/packages/Azure.Iot.Operations.Connector/0.12.0) |  |  |
-| Unknown Display Name | NuGet [0.6.0](https://www.nuget.org/packages/Azure.Mcp/0.6.0) |  |  |
-| Unknown Display Name | NuGet [0.6.0](https://www.nuget.org/packages/Azure.Mcp.linux-arm64/0.6.0) |  |  |
-| Unknown Display Name | NuGet [0.6.0](https://www.nuget.org/packages/Azure.Mcp.linux-x64/0.6.0) |  |  |
-| Unknown Display Name | NuGet [0.6.0](https://www.nuget.org/packages/Azure.Mcp.osx-arm64/0.6.0) |  |  |
-| Unknown Display Name | NuGet [0.6.0](https://www.nuget.org/packages/Azure.Mcp.osx-x64/0.6.0) |  |  |
-| Unknown Display Name | NuGet [0.6.0](https://www.nuget.org/packages/Azure.Mcp.win-arm64/0.6.0) |  |  |
-| Unknown Display Name | NuGet [0.6.0](https://www.nuget.org/packages/Azure.Mcp.win-x64/0.6.0) |  |  |
+| Unknown Display Name | NuGet [0.7.0](https://www.nuget.org/packages/Azure.Mcp/0.7.0) |  |  |
+| Unknown Display Name | NuGet [0.7.0](https://www.nuget.org/packages/Azure.Mcp.linux-arm64/0.7.0) |  |  |
+| Unknown Display Name | NuGet [0.7.0](https://www.nuget.org/packages/Azure.Mcp.linux-x64/0.7.0) |  |  |
+| Unknown Display Name | NuGet [0.7.0](https://www.nuget.org/packages/Azure.Mcp.osx-arm64/0.7.0) |  |  |
+| Unknown Display Name | NuGet [0.7.0](https://www.nuget.org/packages/Azure.Mcp.osx-x64/0.7.0) |  |  |
+| Unknown Display Name | NuGet [0.7.0](https://www.nuget.org/packages/Azure.Mcp.win-arm64/0.7.0) |  |  |
+| Unknown Display Name | NuGet [0.7.0](https://www.nuget.org/packages/Azure.Mcp.win-x64/0.7.0) |  |  |
 | Unknown Display Name | NuGet [0.1.2-preview.2](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Aot/0.1.2-preview.2) |  |  |
+| Unknown Display Name | NuGet [0.2.802](https://www.nuget.org/packages/Microsoft.Azure.Mcp.AzTypes.Internal.Compact/0.2.802) |  |  |
 | Unknown Display Name | NuGet [1.1.2-preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.AzureCosmosDb.Mongo/1.1.2-preview) |  |  |
 | Unknown Display Name | NuGet [1.46.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.MAS/1.46.0) |  |  |
 | Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Extensions.Caching.Postgres/1.0.0) |  |  |

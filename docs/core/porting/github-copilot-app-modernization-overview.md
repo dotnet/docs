@@ -7,7 +7,7 @@ ms.author: adegeo
 ms.topic: overview
 ms.date: 09/15/2025
 
-#customer intent: As a developer, I want to upgrade my project so that I can take advantage of the latest features.
+#customer intent: As a developer, I want to upgrade my project or migrate the project to Azure so that I can take advantage of the latest features.
 
 ---
 
@@ -20,7 +20,7 @@ This process streamlines modernization and boosts developer productivity and con
 With this assistant, you can:
 
 - Upgrade to a newer version of .NET.
-- Migrate technologies to Azure.
+- Migrate technologies and deploy to Azure.
 - Modernize your .NET app, especially when upgrading from .NET Framework.
 - Assess your application's code, configuration, and dependencies.
 - Plan and set up the right Azure resource.
@@ -124,7 +124,7 @@ Predefined tasks capture industry best practices for using Azure services. Curre
 
 - **Migrate to Azure Service Bus**
 
-  Move from legacy or third-party message queues (such as MSMQ or RabbitMQ) to Azure Service Bus for reliable, cloud-based messaging.
+  Move from legacy or third-party message queues (such as MSMQ or RabbitMQ) or Amazon SQS (AWS Simple Queue Service) to Azure Service Bus for reliable, cloud-based messaging.
 
 - **Migrate to Azure Communication Service email**
 
@@ -137,6 +137,9 @@ Predefined tasks capture industry best practices for using Azure services. Curre
 - **Migrate to OpenTelemetry on Azure**
 
   Transition from local logging frameworks like log4net, serilog, and Windows event log to OpenTelemetry on Azure.
+
+- **Migrate to Azure Cache for Redis with Managed Identity**
+  Replace in-memory or local Redis cache implementations with Azure Cache for Redis for high availability, scalability, and enterprise-grade security.
 
 ## How does it work
 
@@ -165,4 +168,5 @@ The tool only collects data about project types, intent to upgrade, and upgrade 
 ## Related content
 
 - [How to upgrade a .NET app with GitHub Copilot app modernization](how-to-upgrade-with-github-copilot.md)
+- [Quickstart to migrate a .NET Project]((../../azure/migration/appmod/quickstart.md))
 - [GitHub Copilot app modernization FAQ](github-copilot-app-modernization-faq.yml)

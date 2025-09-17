@@ -3,7 +3,7 @@ title: Predefined tasks for GitHub Copilot app modernization for .NET (Preview)
 description: Learn about the predefined tasks that are available for GitHub Copilot app modernization for .NET
 ms.topic: concept-article
 ms.custom: devx-track-dotnet
-ms.date: 7/15/2025
+ms.date: 9/17/2025
 author: alexwolfmsft
 ms.author: alexwolf
 ---

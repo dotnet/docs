@@ -3,14 +3,14 @@ title: GitHub Copilot app modernization for .NET (Preview) quickstart
 description: Get started with GitHub Copilot app modernization for .NET
 ms.topic: concept-article
 ms.custom: devx-track-dotnet
-ms.date: 7/15/2025
+ms.date: 9/17/2025
 author: alexwolfmsft
 ms.author: alexwolf
 ---
 
-# Quickstart: Assess and migrate a .NET Project with GitHub Copilot app modernization for .NET (Preview)
+# Quickstart: assess and migrate a .NET Project to Azure
 
-In this quickstart, you assess and migrate a .NET project using [GitHub Copilot app modernization for .NET (Preview)](https://aka.ms/appmod-dotnet-marketplace). You complete the following tasks:
+In this quickstart, you assess and migrate a .NET project using [GitHub Copilot app modernization for .NET (Preview)](https://aka.ms/ghcp-appmod/dotNET). You will complete the following tasks:
 
 - Install and configure the GitHub Copilot app modernization for .NET extension
 - Assess a sample project (Contoso University)
@@ -18,11 +18,7 @@ In this quickstart, you assess and migrate a .NET project using [GitHub Copilot 
 
 ## Prerequisites
 
-Before you begin, ensure you have:
-
-- A GitHub account with [GitHub Copilot](https://github.com/features/copilot) enabled (Pro, Pro+, Business, or Enterprise plan required)
-- [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/) version 17.14.7 or later
-- Agent mode enabled for GitHub Copilot in Visual Studio ([Learn how](/visualstudio/ide/copilot-agent-mode))
+Before you begin, ensure follow the prerequisites of [https://aka.ms/ghcp-appmod/dotNET#prerequisites] and install [GitHub Copilot app modernization for .NET](https://aka.ms/appmod-dotnet-marketplace) extension.
 
 ### Sign-in to GitHub Copilot
 
@@ -35,7 +31,7 @@ For more information, see [Set up GitHub Copilot in Visual Studio](/visualstudio
 
 ## Install the GitHub Copilot app modernization extension
 
-To complete the steps ahead, you need to install the GitHub Copilot app modernization for .NET (Preview) Visual Studio extension.
+To complete the steps ahead, you need to install [GitHub Copilot app modernization for .NET](https://aka.ms/appmod-dotnet-marketplace) extension.
 
 1. Inside Visual Studio, navigate to `Extensions` > `Manage Extensions`.
 1. Search for **GitHub Copilot app modernization for .NET** in the marketplace.
@@ -43,7 +39,7 @@ To complete the steps ahead, you need to install the GitHub Copilot app moderniz
 1. Follow the notification bar prompts to close Visual Studio and complete the installation.
 1. Relaunch Visual Studio after installation.
 
-You can also view the [GitHub Copilot app modernization for .NET (Preview)](https://aka.ms/appmod-dotnet-marketplace) extension directly on the extension marketplace.
+You can also view the [GitHub Copilot app modernization for .NET (Preview)](https://aka.ms/ghcp-appmod/dotNET) directly on the extension marketplace.
 
 For more information, see [Find, install, and manage extensions for Visual Studio](/visualstudio/ide/finding-and-using-visual-studio-extensions).
 

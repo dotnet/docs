@@ -63,9 +63,15 @@ The App Modernization for .NET containerization feature helps you containerize y
 
         :::image type="content" source="media/containerization-prompt.png" alt-text="Screenshot showing how to start the containerization process in GitHub Copilot using a prompt.":::
 
+1. After you start the process, GitHub Copilot might ask for your approval to use tools or run commands. Grant permission when prompted.
 
+1. GitHub Copilot analyzes your project and generates a plan. The plan includes a breakdown of your project and execution steps for containerizing your project.
 
+1. GitHub Copilot follows the execution steps to generate Dockerfile and validate your docker image can be built successfully.
 
+1. Once GitHub Copilot finishes the containerizing your project, it will provide a summary of what it did.
 
+## Notes
 
-
+- We recommend using Claude Sonnet 4 or later models for the best results.
+- It might take Copilot a few iterations to correct containerization errors.

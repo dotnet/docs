@@ -990,7 +990,7 @@ In the context of the unsafe code it's important to keep in mind:
 
 ## 25. Fuzz testing
 
-Fuzz testing (or "fuzzing") is an automated software testing technique that involves providing invalid, unexpected, or random data as inputs to a computer program. It provides a way to detect memory safety issues in code that may have gaps in test coverage. Tools like [SharpFuzz](https://github.com/Metalnem/sharpfuzz) can be used to set up fuzz testing for .NET code. In the dotnet/runtime repository, the [fuzzlyn](https://github.com/jakobbotsch/Fuzzlyn) fuzzing tool reported more than 130 bugs against RyuJIT and other components.
+Fuzz testing (or "fuzzing") is an automated software testing technique that involves providing invalid, unexpected, or random data as inputs to a computer program. It provides a way to detect memory safety issues in code that may have gaps in test coverage. Tools like [SharpFuzz](https://github.com/Metalnem/sharpfuzz) can be used to set up fuzz testing for .NET code.
 
 ## References
 

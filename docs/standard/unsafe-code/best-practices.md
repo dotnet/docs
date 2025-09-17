@@ -643,7 +643,7 @@ ref object obj = ref Unsafe.NullRef<object>();
 ref object obj = ref Unsafe.AsRef<object>((void*)0);
 ```
 
-The risk of introducing memory safety issues is admittedly low, since with modern .NET runtimes, any attempt to dereference
+The risk of introducing memory safety issues is admittedly low any attempt to dereference
 a null byref will lead to a well-defined `NullReferenceException`. However, since this is documented as a disallowed operation,
 and since the runtime and .NET tools might assume soundness while performing various optimizations, the actual observed behavior
 might be something other than what the developer expected.

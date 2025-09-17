@@ -48,7 +48,7 @@ App Modernization for .NET currently supports the following predefined tasks:
 
 - **Migrate to Azure Service Bus**
   
-  Move from legacy or third-party message queues (such as MSMQ or RabbitMQ) to Azure Service Bus for reliable, cloud-based messaging.
+  Move from legacy or third-party message queues (such as MSMQ or RabbitMQ) or Amazon SQS (AWS Simple Queue Service) to Azure Service Bus for reliable, cloud-based messaging.
 
 - **Migrate to Azure Communication Service email**
   

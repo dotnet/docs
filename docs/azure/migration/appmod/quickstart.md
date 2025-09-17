@@ -87,7 +87,6 @@ Select the **Run Task** button in the Assessment Report generated in the previou
 **Option 2. Send in Copilot Chat**
 
 Send the migration task number (e.g., 1.1) or its name in the chat.
-
     :::image type="content" source="media/quickstart_chat_experience.png" alt-text="A screenshot showing sending the message in the Copilot Chat to start a migration task.":::
 
 ### Plan and progress tracker generation
@@ -117,7 +116,6 @@ Send the migration task number (e.g., 1.1) or its name in the chat.
 ## Default chat messages
 
 The GitHub Copilot app modernization for .NET extension provides default chat message options to streamline your workflow.
-
     :::image type="content" source="media/quickstart_followup.png" alt-text="A screenshot showing default chat message options in the Copilot Chat.":::
 
 You can choose one of the predefined options below and send it in the chat:

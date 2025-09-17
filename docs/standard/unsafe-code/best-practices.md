@@ -625,23 +625,22 @@ The only correct approach is to use field-by-field loads/store specialized for e
 
 ## 13. Null managed pointers
 
-While it is legal for a managed pointer to point to null (in much the same way that it's legal for a managed pointer to point just past the end of an array, see [ECMA-335 augments](#references)), it is not legal to _dereference_ such a pointer, and doing so results in undefined behavior.
-
-There are various ways to generate a null byref, though none involve idiomatic C# code.
+Generally, byrefs (managed pointers) are rarely null and the only safe way to create a null byref as of today is
+to initialize a `ref struct` with `default`, then all its `ref` fields will be null managed pointers:
 
 ```cs
-// Null reference (not byref):
-object obj = null;
+RefStructWithRefField s = default;
+ref byte nullRef = ref s.refFld;
+```
 
+However, there are several unsafe ways to create null byrefs, some examples include:
+
+```cs
 // Null byref by calling Unsafe.NullRef directly:
 ref object obj = ref Unsafe.NullRef<object>();
 
 // Null byref by turning a null unmanaged pointer into a null managed pointer:
 ref object obj = ref Unsafe.AsRef<object>((void*)0);
-
-// Null byref without Unsafe API:
-RefStructWithRefField s = default;
-ref byte nullRef = ref s.refFld;
 ```
 
 The risk of introducing memory safety issues is admittedly low, since with modern .NET runtimes, any attempt to dereference

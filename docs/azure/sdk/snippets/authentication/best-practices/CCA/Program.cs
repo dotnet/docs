@@ -36,7 +36,7 @@ builder.Services.AddAzureClients(clientBuilder =>
 });
 #endregion snippet_credential_reuse_AspNetCore
 
-#region snippet_retries_mic
+#region snippet_retries
 ManagedIdentityCredentialOptions miCredentialOptions = new(
         ManagedIdentityId.FromUserAssignedClientId(clientId)
     )
@@ -49,20 +49,6 @@ ManagedIdentityCredentialOptions miCredentialOptions = new(
     };
 
 ManagedIdentityCredential miCredential = new(miCredentialOptions);
-#endregion
-
-#region snippet_retries_dac
-DefaultAzureCredentialOptions dacOptions = new()
-{
-    ManagedIdentityClientId = clientId,
-    Retry =
-    {
-        MaxRetries = 3,
-        Delay = TimeSpan.FromSeconds(0.5),
-    }
-};
-
-DefaultAzureCredential credential = new(dacOptions);
 #endregion
 
 builder.Services.AddEndpointsApiExplorer();

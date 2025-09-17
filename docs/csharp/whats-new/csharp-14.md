@@ -40,8 +40,6 @@ public static class Enumerable
     {
         // Extension property:
         public bool IsEmpty => !source.Any();
-        // Extension indexer:
-        public TSource this[int index] => source.Skip(index).First();
 
         // Extension method:
         public IEnumerable<TSource> Where(Func<TSource, bool> predicate) { ... }

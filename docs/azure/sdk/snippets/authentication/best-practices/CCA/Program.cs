@@ -52,17 +52,17 @@ ManagedIdentityCredential miCredential = new(miCredentialOptions);
 #endregion
 
 #region snippet_retries_dac
-DefaultAzureCredential credential = new(
-    new DefaultAzureCredentialOptions
+DefaultAzureCredentialOptions dacOptions = new()
+{
+    ManagedIdentityClientId = clientId,
+    Retry =
     {
-        ManagedIdentityClientId = clientId,
-        Retry =
-        {
-            MaxRetries = 3,
-            Delay = TimeSpan.FromSeconds(0.5),
-        }
+        MaxRetries = 3,
+        Delay = TimeSpan.FromSeconds(0.5),
     }
-);
+};
+
+DefaultAzureCredential credential = new(dacOptions);
 #endregion
 
 builder.Services.AddEndpointsApiExplorer();

@@ -94,7 +94,7 @@ The Azure Identity library for .NET allows you to authenticate via managed ident
 
         # [DefaultAzureCredential](#tab/dac)
 
-        :::code language="csharp" source="../snippets/authentication/best-practices/CCA/Program.cs" id="snippet_retries_dac" highlight="5-9":::
+        :::code language="csharp" source="../snippets/authentication/best-practices/CCA/Program.cs" id="snippet_retries_dac" highlight="4-8":::
 
         # [ManagedIdentityCredential](#tab/mic)
 

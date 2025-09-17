@@ -12,7 +12,7 @@ The <xref:System.Net.Http.HttpClient?displayProperty=fullName> class sends HTTP 
 
 ## DNS behavior
 
-<xref:System.Net.Http.HttpClient> only resolves DNS entries when a connection is created. It does not track any time to live (TTL) durations specified by the DNS server. If DNS entries change regularly, which can happen in some scenarios, the client doesn't respect those updates. To solve this issue, you can limit the lifetime of the connection by setting the <xref:System.Net.Http.SocketsHttpHandler.PooledConnectionLifetime> property, so that DNS lookup is repeated when the connection is replaced. Consider the following example:
+<xref:System.Net.Http.HttpClient> only resolves DNS entries when a connection is created. It doesn't track anytime to live (TTL) durations specified by the DNS server. If DNS entries change regularly, which can happen in some scenarios, the client doesn't respect those updates. To solve this issue, you can limit the lifetime of the connection by setting the <xref:System.Net.Http.SocketsHttpHandler.PooledConnectionLifetime> property, so that DNS lookup is repeated when the connection is replaced. Consider the following example:
 
 ```csharp
 var handler = new SocketsHttpHandler

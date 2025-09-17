@@ -100,7 +100,7 @@ The preceding code:
 - Calls `GetStreamingResponseAsync` on the client, passing a prompt and a list of tools that includes a function created with <xref:Microsoft.Extensions.AI.AIFunctionFactory.Create*>.
 - Iterates over the response, printing each update to the console.
 
-You can also use Model Context Protocol (MCP) tools with your `IChatClient`. For more details, see the [build a minimal MCP client](./quickstarts/build-mcp-client.md) article.
+You can also use Model Context Protocol (MCP) tools with your `IChatClient`. For more information, see [Build a minimal MCP client](./quickstarts/build-mcp-client.md).
 
 #### Cache responses
 

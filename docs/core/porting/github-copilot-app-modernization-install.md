@@ -1,24 +1,27 @@
 ---
-title: Install GitHub Copilot app modernization - upgrade for .NET
-description: "Learn how to install the GitHub Copilot app modernization - upgrade for .NET Visual Studio extension. App modernization assists you when upgrading projects to the latest dependencies or when upgrading to a new version of .NET"
+title: Install GitHub Copilot app modernization
+description: "Learn how to install the GitHub Copilot app modernization Visual Studio extension. App modernization assists you when upgrading projects to the latest dependencies or when upgrading to a new version of .NET"
 titleSuffix: ""
 author: adegeo
 ms.author: adegeo
 ms.topic: install-set-up-deploy
-ms.date: 09/04/2025
+ms.date: 09/15/2025
 
 #customer intent: As a developer, I want to install GitHub Copilot App Modernization so that I can upgrade my projects.
 
 ---
 
-# Install GitHub Copilot app modernization - upgrade for .NET
+# Install GitHub Copilot app modernization
 
-This article guides you through installing GitHub Copilot app modernization - upgrade for .NET extension in Visual Studio.
+This article guides you through installing the GitHub Copilot app modernization extension in Visual Studio.
+
+> [!IMPORTANT]
+> The GitHub Copilot Modernization agent is included in Visual Studio, starting with Visual Studio 2022 17.14.16 and Visual Studio 2026.
 
 ## Prerequisites
 
 - Windows operating system
-- [Visual Studio 2022 version 17.14 or newer](https://visualstudio.microsoft.com/downloads/)
+- [Visual Studio 2022 version 17.14.15 or earlier](https://visualstudio.microsoft.com/downloads/)
 - [.NET desktop development workload](/visualstudio/install/modify-visual-studio?view=vs-2022&preserve-view=true#change-workloads-or-individual-components)
 
 While not required to _install_ the extension, to use the extension you must [sign in to Visual Studio using a GitHub account](/visualstudio/ide/work-with-github-accounts) with [Copilot access](https://docs.github.com/copilot/about-github-copilot/what-is-github-copilot#getting-access-to-copilot).
@@ -65,4 +68,4 @@ There are two ways to determine if GitHub Copilot App Modernization is installed
 
 ## Related content
 
-- [What is GitHub Copilot app modernization - upgrade for .NET?](github-copilot-app-modernization-overview.md)
+- [What is GitHub Copilot app modernization?](github-copilot-app-modernization-overview.md)

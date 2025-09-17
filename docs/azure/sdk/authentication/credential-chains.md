@@ -112,8 +112,7 @@ When a value of `dev` is used, the chain looks as follows:
 
 :::image type="content" source="../media/mermaidjs/default-azure-credential-environment-variable-development.svg" alt-text="DefaultAzureCredential with AZURE_TOKEN_CREDENTIALS set to 'dev'":::
 
-> [!IMPORTANT]
-> The `AZURE_TOKEN_CREDENTIALS` environment variable is supported in `Azure.Identity` package versions 1.14.0 and later.
+To ensure the environment variable is defined and set to a supported string, use constructor overload <xref:Azure.Identity.DefaultAzureCredential.%23ctor(System.String,Azure.Identity.DefaultAzureCredentialOptions)?displayProperty=name>.
 
 #### Use a specific credential
 
@@ -132,6 +131,8 @@ To exclude all credentials except for one, set environment variable `AZURE_TOKEN
 
 > [!IMPORTANT]
 > The `AZURE_TOKEN_CREDENTIALS` environment variable supports individual credential names in `Azure.Identity` package versions 1.15.0 and later.
+
+To ensure the environment variable is defined and set to a supported string, use constructor overload <xref:Azure.Identity.DefaultAzureCredential.%23ctor(System.String,Azure.Identity.DefaultAzureCredentialOptions)?displayProperty=name>.
 
 ## ChainedTokenCredential overview
 

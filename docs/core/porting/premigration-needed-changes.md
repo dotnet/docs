@@ -9,6 +9,8 @@ ms.date: 06/10/2021
 
 Make the needed changes to build and run a .NET application before beginning the work to port your code. These changes can be done while still building and running a .NET Framework application.
 
+[!INCLUDE [github-copilot-suggestion](includes/github-copilot-suggestion.md)]
+
 ## Upgrade to required tooling
 
 Upgrade to a version of MSBuild/Visual Studio that supports the version of .NET you will be targeting. See [Versioning relationship between the .NET SDK, MSBuild and VS](versioning-sdk-msbuild-vs.md) for more info.

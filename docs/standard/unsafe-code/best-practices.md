@@ -644,11 +644,8 @@ ref object obj = ref Unsafe.AsRef<object>((void*)0);
 ```
 
 The risk of introducing memory safety issues is admittedly low any attempt to dereference
-a null byref will lead to a well-defined `NullReferenceException`. However, since this is documented as a disallowed operation,
-and since the runtime and .NET tools might assume soundness while performing various optimizations, the actual observed behavior
-might be something other than what the developer expected.
-
-For example, the C# compiler [assumes](https://github.com/dotnet/roslyn/issues/72165) that dereferencing a byref always succeeds
+a null byref will lead to a well-defined `NullReferenceException`.
+However, the C# compiler [assumes](https://github.com/dotnet/roslyn/issues/72165) that dereferencing a byref always succeeds
 and produces no observable side effect. Therefore it is a legal optimization to elide any dereference whose resulting value is
 immediately thrown away. See [dotnet/runtime#98681](https://github.com/dotnet/runtime/pull/98681) (and
 [this related comment](https://github.com/dotnet/runtime/pull/98623#discussion_r1493490532)) for an example of a now-fixed bug within .NET
@@ -902,7 +899,7 @@ Avoid using such techniques unless absolutely necessary.
 
 ## 19. Uninitialized locals `[SkipLocalsInit]` and `Unsafe.SkipInit`
 
-`[SkipLocalsInit]` was introduced in .NET 5.0 to allow the JIT to skip zeroing local variables in methods, either on a per-method basis or assembly-wide. This feature was often used to help the JIT eliminate redundant zero initializations, such as those for `stackalloc`. However, it can lead to undefined behavior if locals are not explicitly initialized before use. With recent improvements in the JIT's ability to eliminate zero-initializations and perform vectorization, the need for `[SkipLocalsInit]` and `Unsafe.SkipInit` has significantly decreased.
+`[SkipLocalsInit]` was introduced in .NET 5.0 to allow the JIT to skip zeroing local variables in methods, either on a per-method basis or module-wide. This feature was often used to help the JIT eliminate redundant zero initializations, such as those for `stackalloc`. However, it can lead to undefined behavior if locals are not explicitly initialized before use. With recent improvements in the JIT's ability to eliminate zero-initializations and perform vectorization, the need for `[SkipLocalsInit]` and `Unsafe.SkipInit` has significantly decreased.
 
 ### Recommendations
 

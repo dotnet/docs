@@ -3,7 +3,7 @@ title: Deploy your project to Azure using GitHub Copilot app modernization for .
 description: Learn how to deploy your migrated .NET project to Azure using GitHub Copilot app modernization for .NET.
 ms.topic: quickstart
 ms.custom: devx-track-dotnet
-ms.date: 09/03/2025
+ms.date: 09/17/2025
 author: JiDong
 ms.author: donji
 ---
@@ -51,7 +51,7 @@ The App Modernization for .NET deployment feature helps you deploy your migrated
 
 1. Start the deployment using one of the following approaches:
 
-    - **Deploy after migration**: Deploy your project after completing your migration task. Copilot will ask if you'd like to deploy your project to Azure upon completing a migration task. Instructing Copilot to continue will start the deployment process.
+    - **Deploy after migration**: Deploy your project after completing your migration task. GitHub Copilot will ask if you'd like to deploy your project to Azure upon completing a migration task. Instructing Copilot to continue will start the deployment process.
 
         :::image type="content" source="media/start-deploy.png" alt-text="Screenshot showing how to start the deployment process in GitHub Copilot.":::
 
@@ -61,15 +61,17 @@ The App Modernization for .NET deployment feature helps you deploy your migrated
 
         :::image type="content" source="media/start-deploy-prompt.png" alt-text="Screenshot showing how to start the deployment process in GitHub Copilot using a prompt.":::
 
-1. After you start the deployment, GitHub Copilot might ask for your approval to use tools in the Model Context Protocol (MCP) server. Grant permission when prompted.
+1. After you start the deployment, GitHub Copilot might ask for your approval to use tools or run commands. Grant permission when prompted.
 
-1. GitHub Copilot creates a `plan.copilot.md` file in the `.azure` folder. This file explains the overall deployment plan, including deployment goals, project information, Azure resource architecture, Azure resources, and execution steps.
+1. GitHub Copilot creates a plan. This plan explains the overall deployment plan, including deployment goals, project information, Azure resource architecture, Azure resources, and execution steps.
 
-1. Edit the file directly or ask GitHub Copilot to edit it to customize your deployment before proceeding.
+1. You can edit the plan directly or ask GitHub Copilot to edit it to customize your deployment before proceeding.
 
 1. Once you're satisfied with the plan, instruct GitHub Copilot to continue.
 
 1. GitHub Copilot follows the plan and executes the deployment process.
+
+1. Once deployment is finished, GitHub Copilot will provide a summary on the deployment process.
 
 ## Notes
 

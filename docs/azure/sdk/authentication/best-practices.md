@@ -92,6 +92,6 @@ The Azure Identity library for .NET allows you to authenticate via managed ident
 
     To change the default retry settings, use the <xref:Azure.Core.ClientOptions.Retry%2A> property on `DefaultAzureCredentialOptions` or `ManagedIdentityCredentialOptions`. For example, retry a maximum of three times, with a starting interval of 0.5 seconds:
 
-    :::code language="csharp" source="../snippets/authentication/best-practices/CCA/Program.cs" id="snippet_retries_mic" highlight="5-9":::
+    :::code language="csharp" source="../snippets/authentication/best-practices/CCA/Program.cs" id="snippet_retries" highlight="5-9":::
 
     For more information on customizing retry policies, see [Setting a custom retry policy](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/Configuration.md#setting-a-custom-retry-policy).

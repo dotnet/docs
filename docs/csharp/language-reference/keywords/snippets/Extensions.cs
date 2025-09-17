@@ -35,7 +35,8 @@ public static class NumericSequences
             }
         }
 
-        public int this[int index] => sequence.Skip(index).First();
+        public static IEnumerable<int> operator +(IEnumerable<int> left, IEnumerable<int> right)
+            => left.Concat(right);
     }
 }
 // </ExtensionMembers>
@@ -102,6 +103,8 @@ public static class ExtensionExamples
         numbers = numbers.AddValue(10);
 
         var median = numbers.Median;
+
+        var combined = numbers + Enumerable.Range(100, 10);
         // </UseExtensionMethod>
 
         // <UseStaticExtensions>

@@ -8,7 +8,7 @@ author: gewarren
 ---
 # What's new in .NET 7
 
-.NET 7 is the successor to [.NET 6](dotnet-6.md) and focuses on being unified, modern, simple, and *fast*. .NET 7 will be [supported for 18 months](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) as a standard-term support (STS) release (previously known as a *current* release).
+.NET 7 was the successor to [.NET 6](dotnet-6.md) and focused on being unified, modern, simple, and *fast*. .NET 7 was a standard-term support (STS) release (previously known as a *current* release).
 
 This article lists the new features of .NET 7 and provides links to more detailed information on each.
 

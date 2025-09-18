@@ -41,7 +41,7 @@ To summarize recommended `HttpClient` use in terms of lifetime management, you s
   > [!TIP]
   > If you only use a limited number of <xref:System.Net.Http.HttpClient> instances, that's also an acceptable strategy. What matters is that they're not created and disposed with each request, as they each contain a connection pool. Using more than one instance is necessary for scenarios with multiple proxies or to separate cookie containers without completely disabling cookie handling.
 
-  - Using <xref:System.Net.Http.IHttpClientFactory>, you can have multiple, differently configured clients for different use cases. However, be aware that the factory-created clients are intended to be short-lived, and once the client is created, the factory no longer has control over it.
+  - Using <xref:System.Net.Http.IHttpClientFactory>, you can have multiple, differently configured clients for different use cases. However, the factory-created clients are intended to be short-lived, and once the client is created, the factory no longer has control over it.
 
     The factory pools <xref:System.Net.Http.HttpMessageHandler> instances, and, if its lifetime isn't expired, a handler can be reused from the pool when the factory creates a new <xref:System.Net.Http.HttpClient> instance. This reuse avoids any socket exhaustion issues.
 
@@ -50,7 +50,7 @@ To summarize recommended `HttpClient` use in terms of lifetime management, you s
 - In .NET Framework, use <xref:System.Net.Http.IHttpClientFactory> to manage your `HttpClient` instances. If you don't use the factory and instead create a new client instance for each request yourself, you can exhaust available ports.
 
     > [!WARNING]
-    > If your app requires cookies, it's recommended to avoid using <xref:System.Net.Http.IHttpClientFactory>. Pooling the <xref:System.Net.Http.HttpMessageHandler> instances results in sharing of <xref:System.Net.CookieContainer> objects. Unanticipated <xref:System.Net.CookieContainer> sharing might leak cookies between unrelated parts of the application. Moreover, when <xref:Microsoft.Extensions.Http.HttpClientFactoryOptions.HandlerLifetime> expires, the handler is recycled, meaning that all cookies stored in its <xref:System.Net.CookieContainer> are lost.
+    > If your app requires cookies, it's best to avoid using <xref:System.Net.Http.IHttpClientFactory>. Pooling the <xref:System.Net.Http.HttpMessageHandler> instances results in sharing of <xref:System.Net.CookieContainer> objects. Unanticipated <xref:System.Net.CookieContainer> sharing might leak cookies between unrelated parts of the application. Moreover, when <xref:Microsoft.Extensions.Http.HttpClientFactoryOptions.HandlerLifetime> expires, the handler is recycled, meaning that all cookies stored in its <xref:System.Net.CookieContainer> are lost.
 
 For more information about managing `HttpClient` lifetime with `IHttpClientFactory`, see [`IHttpClientFactory` guidelines](../../../core/extensions/httpclient-factory.md#httpclient-lifetime-management).
 

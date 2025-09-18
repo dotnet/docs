@@ -92,7 +92,7 @@ The Azure Identity library for .NET allows you to authenticate via managed ident
 
   - Use `ChainedTokenCredential` containing `ManagedIdentityCredential`
   - Use `ManagedIdentityCredential` directly
-- **How it works:** The time interval between retries starts at 0.8 seconds, and a maximum of five retries are attempted, by default. This mode is optimized for resilience but introduces potentially unwanted delays in the development inner loop.
+- **How it works:** The time interval between retries starts at 0.8 seconds, and a maximum of five retries are attempted with exponential backoff, by default. This mode is optimized for resilience but introduces potentially unwanted delays in the development inner loop.
 
     To change the default retry settings, use the <xref:Azure.Core.ClientOptions.Retry%2A> property on `DefaultAzureCredentialOptions` or `ManagedIdentityCredentialOptions`. For example, retry a maximum of three times, with a starting interval of 0.5 seconds:
 

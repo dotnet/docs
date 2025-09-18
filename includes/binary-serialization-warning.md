@@ -1,2 +1,2 @@
 > [!WARNING]
-> Binary serialization with `BinaryFormatter` can be very dangerous. For more information, see the [BinaryFormatter security guide](../docs/standard/serialization/binaryformatter-security-guide.md) and the [BinaryFormatter migration guide](../docs/standard/serialization/binaryformatter-migration-guide/index.md).
+> Binary serialization with `BinaryFormatter` can be mightily dangerous. For more information, see the [BinaryFormatter security guide](../docs/standard/serialization/binaryformatter-security-guide.md) and the [BinaryFormatter migration guide](../docs/standard/serialization/binaryformatter-migration-guide/index.md).

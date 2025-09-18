@@ -8,7 +8,7 @@ author: alexwolfmsft
 ms.author: alexwolf
 ---
 
-# Quickstart: Assess and migrate a .NET project to Azure
+# Quickstart: Assess and migrate a .NET projectwith GitHub Copilot app modernization for .NET (Preview)
 
 In this quickstart, you assess and migrate a .NET project by using [GitHub Copilot app modernization for .NET (Preview)](https://aka.ms/ghcp-appmod/dotNET). You complete the following tasks:
 
@@ -43,7 +43,7 @@ You can also view the [GitHub Copilot app modernization for .NET (Preview)](http
 
 For more information, see [Find, install, and manage extensions for Visual Studio](/visualstudio/ide/finding-and-using-visual-studio-extensions).
 
-## Assess application readiness
+## Assess app readiness
 
 App Modernization for .NET assessment helps you identify your application readiness challenges, understand their impact, and find recommended migration tasks. Each migration task includes references to set up Azure resources, add configurations, and make code changes. Follow these steps to start your migration process with assessment:
 
@@ -67,7 +67,7 @@ App Modernization for .NET assessment helps you identify your application readin
 
     :::image type="content" source="media/assessment-report.png" alt-text="Screenshot that shows the generated assessment report with detailed findings.":::
 
-## Start migration
+## App migrations
 
 GitHub Copilot app modernization for .NET (Preview) includes [predefined tasks](predefined-tasks.md) for common migration scenarios, following Microsoft's best practices.
 

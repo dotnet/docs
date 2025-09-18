@@ -1,16 +1,16 @@
 ---
-title: GitHub Copilot app modernization for .NET (Preview) quickstart
-description: Get started with GitHub Copilot app modernization for .NET
-ms.topic: concept-article
+title: GitHub Copilot app modernization for .NET quickstart
+description: Learn how to assess and migrate a .NET project by using GitHub Copilot app modernization for .NET.
+ms.topic: quickstart
 ms.custom: devx-track-dotnet
-ms.date: 9/17/2025
+ms.date: 09/17/2025
 author: alexwolfmsft
 ms.author: alexwolf
 ---
 
-# Quickstart: assess and migrate a .NET Project to Azure
+# Quickstart: Assess and migrate a .NET project to Azure
 
-In this quickstart, you assess and migrate a .NET project using [GitHub Copilot app modernization for .NET (Preview)](https://aka.ms/ghcp-appmod/dotNET). You will complete the following tasks:
+In this quickstart, you assess and migrate a .NET project by using [GitHub Copilot app modernization for .NET (Preview)](https://aka.ms/ghcp-appmod/dotNET). You complete the following tasks:
 
 - Install and configure the GitHub Copilot app modernization for .NET extension
 - Assess a sample project (Contoso University)
@@ -18,26 +18,26 @@ In this quickstart, you assess and migrate a .NET project using [GitHub Copilot 
 
 ## Prerequisites
 
-Before you begin, [complete the preqrequisites](https://aka.ms/ghcp-appmod/dotNET#prerequisites).
+Before you begin, [complete the prerequisites](https://aka.ms/ghcp-appmod/dotNET#prerequisites).
 
-### Sign-in to GitHub Copilot
+### Sign in to GitHub Copilot
 
-GitHub Copilot is a dependency of the App Modernization Extension and experience. Make sure you're signed-in to GitHub Copilot inside Visual Studio.
+GitHub Copilot is a dependency of the app modernization extension and experience. Make sure you're signed in to GitHub Copilot in Visual Studio.
 
-1. Select the Copilot icon at the top of Visual Studio to open the GitHub Copilot pane.
-1. Follow the UI prompts to sign-in to Copilot.
+1. Select the **Copilot** icon at the top of Visual Studio to open the GitHub Copilot pane.
+1. Follow the UI prompts to sign in to Copilot.
 
 For more information, see [Set up GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states).
 
 ## Install the GitHub Copilot app modernization extension
 
-To complete the steps ahead, you need to install [GitHub Copilot app modernization for .NET](https://aka.ms/appmod-dotnet-marketplace) extension.
+To complete the steps ahead, you need to install the [GitHub Copilot app modernization for .NET](https://aka.ms/appmod-dotnet-marketplace) extension.
 
-1. Inside Visual Studio, navigate to `Extensions` > `Manage Extensions`.
+1. In Visual Studio, go to **Extensions** > **Manage Extensions**.
 1. Search for **GitHub Copilot app modernization for .NET** in the marketplace.
 1. On the extension page, select **Install**.
 1. Follow the notification bar prompts to close Visual Studio and complete the installation.
-1. Relaunch Visual Studio after installation.
+1. Restart Visual Studio after installation.
 
 You can also view the [GitHub Copilot app modernization for .NET (Preview)](https://aka.ms/appmod-dotnet-marketplace) directly on the extension marketplace.
 
@@ -53,20 +53,19 @@ App Modernization for .NET assessment helps you identify your application readin
 
 3. Right-click the solution in Solution Explorer and select **Modernize**.
 
-    :::image type="content" source="media/Modernize.png" alt-text="A screenshot showing the modernize option in the context menu.":::
+    :::image type="content" source="media/Modernize.png" alt-text="Screenshot that shows the modernize option in the context menu.":::
 
 4. A GitHub Copilot Chat window opens with a welcome message and predefined options. Select **Migrate to Azure** from the available choices and send it to Copilot.
 
-    :::image type="content" source="media/Welcome.png" alt-text="A screenshot showing the welcome message with migration options.":::
+    :::image type="content" source="media/Welcome.png" alt-text="Screenshot that shows the welcome message with migration options.":::
 
-5. A new Copilot chat session opens and displays the welcome message. The assessment automatically begins analyzing your project for migration readiness.
+5. A new Copilot chat session opens and displays the welcome message. The assessment automatically begins and analyzes your project for migration readiness.
 
-    :::image type="content" source="media/AssessmentInProcess.png" alt-text="A screenshot showing assessment in progress with status indicators.":::
+    :::image type="content" source="media/AssessmentInProcess.png" alt-text="Screenshot that shows assessment in progress with status indicators.":::
 
 6. When the assessment completes, you can view a comprehensive assessment report UI page and receive a list of migration tasks in the chat window.
 
-    :::image type="content" source="media/assessment-report.png" alt-text="A screenshot showing the generated assessment report with detailed findings.":::
-
+    :::image type="content" source="media/assessment-report.png" alt-text="Screenshot that shows the generated assessment report with detailed findings.":::
 
 ## Start migration
 
@@ -96,7 +95,7 @@ Send the migration task number (e.g., 1.1) or its name in the chat.
 
 ### Start code remediation
 
-- If you're satisfied with the plan and progress tracker, enter prompt to initiate the migration, such as the following:
+- If you're satisfied with the plan and progress tracker, enter a prompt to initiate the migration, such as the following:
 
     ```console
     `The plan and progress tracker look good to me. Go ahead with the migration.`
@@ -114,17 +113,16 @@ Send the migration task number (e.g., 1.1) or its name in the chat.
 
 The GitHub Copilot app modernization for .NET extension provides default chat message options to streamline your workflow.
 
-:::image type="content" source="media/quickstart_followup.png" alt-text="A screenshot showing default chat message options in the Copilot Chat.":::
+:::image type="content" source="media/quickstart_followup.png" alt-text="Screenshot that shows default chat message options in the Copilot Chat.":::
 
 You can choose one of the predefined options below and send it in the chat:
 
 - **Run modernization assessment**: Initiates a comprehensive new assessment of your application to identify migration readiness issues and Azure compatibility challenges.
-- **View assessment report**: Opens the previously generated assessment report and provides a summarized list of migration tasks based on the assessment results. If no previous assessment exists, it will automatically run a new assessment first.
+- **View assessment report**: Opens the previously generated assessment report and provides a summarized list of migration tasks based on the assessment results. If no previous assessment exists, it automatically runs a new assessment first.
 - **Browse top migration tasks**: Displays recommended migration tasks and common modernization scenarios, independent of any specific assessment results.
 
 > [!TIP]
 > These default messages help you quickly navigate common workflows without typing custom prompts. You can also type your own custom messages to interact with Copilot for specific questions or requirements.
-
 
 ### Default chat messages
 
@@ -136,7 +134,6 @@ The GitHub Copilot app modernization for .NET extension provides default chat me
 
 > [!TIP]
 > These default messages help you quickly navigate common workflows without typing custom prompts. You can also type your own custom messages to interact with Copilot for specific questions or requirements.
-
 
 ## Next Steps
 

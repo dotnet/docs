@@ -49,15 +49,15 @@ App Modernization for .NET assessment helps you identify your application readin
 
 1. Clone the [.NET migration copilot samples](https://github.com/Azure-Samples/dotnet-migration-copilot-samples) repository to your local machine.
 
-2. In Visual Studio, open the **Contoso University** solution from the samples repository. 
+2. In Visual Studio, open the **Contoso University** solution from the samples repository.
 
 3. Right-click the solution in Solution Explorer and select **Modernize**.
 
-    :::image type="content" source="media/modernize.png" alt-text="Screenshot that shows the modernize option in the context menu.":::
+    :::image type="content" source="media/modernize-solution.png" alt-text="Screenshot that shows the modernize option in the context menu.":::
 
 4. A GitHub Copilot Chat window opens with a welcome message and predefined options. Select **Migrate to Azure** from the available choices and send it to Copilot.
 
-    :::image type="content" source="media/welcome.png" alt-text="Screenshot that shows the welcome message with migration options.":::
+    :::image type="content" source="media/modernization-welcome.png" alt-text="Screenshot that shows the welcome message with migration options.":::
 
 5. A new Copilot chat session opens and displays the welcome message. The assessment automatically begins and analyzes your project for migration readiness.
 

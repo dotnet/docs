@@ -93,7 +93,7 @@ unsafe void ReliableCode(ref int x)
 ### Recommendations
 
 1. ❌ DON'T use `ref X` arguments with an implicit contract that `X` is always stack-allocated, pinned, or otherwise not relocatable by the GC. Consider instead taking a [ref struct](../../csharp/language-reference/builtin-types/ref-struct.md) argument or changing the argument to be a raw pointer type (`X*`).
-2. ❌ DON'T use a pointer from `Unsafe.AsPointer` if it can outlive the original object it is pointing to. [Per the API's documentation](xref:System.Runtime.CompilerServices.Unsafe.AsPointer), it's up to the caller of `Unsafe.AsPointer` to guarantee that the GC cannot relocate the reference. Ensure it's clearly visible to code reviewers that the caller has fulfilled this prerequisite.
+2. ❌ DON'T use a pointer from `Unsafe.AsPointer` if it can outlive the original object it is pointing to. [Per the API's documentation](xref:System.Runtime.CompilerServices.Unsafe.AsPointer``1(``0@)), it's up to the caller of `Unsafe.AsPointer` to guarantee that the GC cannot relocate the reference. Ensure it's clearly visible to code reviewers that the caller has fulfilled this prerequisite.
 3. ✔️ DO use `GCHandle` or `fixed` scopes instead of `Unsafe.AsPointer` to define explicit scopes for unmanaged pointers and to ensure that the object is always pinned.
 4. ✔️ DO use unmanaged pointers (with `fixed`) instead of byrefs when you need to align an array to a specific boundary. This ensures the GC won't relocate the object and invalidate any alignment assumptions your logic might rely upon.
 
@@ -226,7 +226,7 @@ And even if the layout is similar, you should still be careful when GC reference
 
 1. ❌ DON'T cast structs to classes or vice versa.
 2. ❌ DON'T use `Unsafe.As` for struct-to-struct or class-to-class conversions unless you're absolutely sure that the cast is legal.
-   * For more information, see the _Remarks_ section of the [`Unsafe.As` API docs](xref:System.Runtime.CompilerServices.Unsafe.As).
+   * For more information, see the _Remarks_ section of the [`Unsafe.As` API docs](xref:System.Runtime.CompilerServices.Unsafe.As``2(``0@)).
 3. ✔️ DO prefer safer field-by-field copying, external libraries such as [AutoMapper](https://github.com/AutoMapper/AutoMapper), or Source Generators for such conversions.
 4. ✔️ DO prefer `Unsafe.BitCast` over `Unsafe.As`, as `BitCast` provides some rudimentary usage checks. Note that these checks do not provide full correctness guarantees, meaning `BitCast` is still considered an unsafe API.
 
@@ -328,14 +328,14 @@ void DoWork()
 }
 ```
 
-Therefore, it is recommended to explicitly extend the lifetime of objects using <xref:System.GC.KeepAlive?displayProperty=nameWithType>
+Therefore, it is recommended to explicitly extend the lifetime of objects using <xref:System.GC.KeepAlive(System.Object)?displayProperty=nameWithType>
 or <xref:System.Runtime.InteropServices.SafeHandle>.
 
 ### Recommendations
 
 1. ❌ DON'T make assumptions about object lifetimes. For instance, never assume `this` is always alive through the end of the method.
 2. ✔️ DO use <xref:System.Runtime.InteropServices.SafeHandle> for managing native resources.
-3. ✔️ DO use <xref:System.GC.KeepAlive?displayProperty=nameWithType> to extend the lifetime of objects when necessary.
+3. ✔️ DO use <xref:System.GC.KeepAlive(System.Object)?displayProperty=nameWithType> to extend the lifetime of objects when necessary.
 
 ## 8. Cross-thread access to local variables
 

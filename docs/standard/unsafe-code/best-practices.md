@@ -11,35 +11,6 @@ writing or reviewing unsafe code in C#. Other
 .NET languages such as F# and Visual Basic are outside of the scope of this article, although some recommendations
 might be applicable to those languages as well.
 
-* [Glossary](#glossary)
-* [Common unreliable patterns](#common-unreliable-patterns)
-  * [1. Untracked managed pointers (`Unsafe.AsPointer` and friends)](#1-untracked-managed-pointers-unsafeaspointer-and-friends)
-  * [2. Exposing pointers outside of the `fixed` scope](#2-exposing-pointers-outside-of-the-fixed-scope)
-  * [3. Accessing internal implementation details or relying on them](#3-internal-implementation-details-of-the-runtime-and-libraries)
-  * [4. Invalid managed pointers (even if they are never dereferenced)](#4-invalid-managed-pointers-even-if-they-are-never-dereferenced)
-  * [5. Reinterpret-like type casts](#5-reinterpret-like-type-casts)
-  * [6. Bypassing the Write Barrier and non-atomic operations on GC references](#6-bypassing-the-write-barrier-and-non-atomic-operations-on-gc-references)
-  * [7. Assumptions about object lifetimes (finalizers, GC.KeepAlive)](#7-assumptions-about-object-lifetimes-finalizers-gckeepalive)
-  * [8. Cross-thread access to local variables](#8-cross-thread-access-to-local-variables)
-  * [9. Unsafe bounds check removal](#9-unsafe-bounds-check-removal)
-  * [10. Memory access coalescing](#10-memory-access-coalescing)
-  * [11. Unaligned memory access](#11-unaligned-memory-access)
-  * [12. Binary (de)serialization of structs with paddings or non-blittable members](#12-binary-deserialization-of-structs-with-paddings-or-non-blittable-members)
-  * [13. Null managed pointers](#13-null-managed-pointers)
-  * [14. stackalloc](#14-stackalloc)
-  * [15. Fixed-size buffers](#15-fixed-size-buffers)
-  * [16. Passing contiguous data as pointers + lengths (or relying on zero-termination)](#16-passing-contiguous-data-as-pointers--lengths-or-relying-on-zero-termination)
-  * [17. String mutations](#17-string-mutations)
-  * [18. Raw IL code (System.Reflection.Emit, Mono.Cecil, etc.)](#18-raw-il-code-systemreflectionemit-monocecil-etc)
-  * [19. SkipLocalsInit and Unsafe.SkipInit](#19-uninitialized-locals-skiplocalsinit-and-unsafeskipinit)
-  * [20. ArrayPool&lt;T&gt;.Shared and similar pooling APIs](#20-arraypooltshared-and-similar-pooling-apis)
-  * [21. bool <-> int conversions](#21-bool---int-conversions)
-  * [22. Interop](#22-interop)
-  * [23. Thread safety](#23-thread-safety)
-  * [24. Unsafe code around SIMD/Vectorization](#24-unsafe-code-around-simdvectorization)
-  * [25. Fuzz testing](#25-fuzz-testing)
-* [References](#references)
-
 ## Glossary
 
 * AVE - Access violation exception.
@@ -454,7 +425,7 @@ bounds checks when it is safe to do so.
 
 1. ✔️ DO verify whether the latest version of .NET still can't eliminate the bounds check. If it can, rewrite using safe code. Otherwise, file an issue against the RyuJIT. Use [this tracking issue](https://github.com/dotnet/runtime/issues/109677) as a good starting point.
 2. ✔️ DO measure the real-world performance impact. If the performance gain is negligible or the code isn't proven to be hot outside of a trivial microbenchmark, rewrite using safe code.
-3. ✔️ DO provide additional hints to the JIT, such as manual bounds checks before loops and saving fields to locals, as .NET's memory model might conservatively prevent the JIT from removing bounds checks in some scenarios.
+3. ✔️ DO provide additional hints to the JIT, such as manual bounds checks before loops and saving fields to locals, as [.NET Memory Model](https://github.com/dotnet/runtime/blob/main/docs/design/specs/Memory-model.md) might conservatively prevent the JIT from removing bounds checks in some scenarios.
 4. ✔️ DO guard code with `Debug.Assert` bounds checks if unsafe code is still necessary. Consider the example below.
 
 ```cs
@@ -560,7 +531,7 @@ arr[i + 1] = 0;
 ```
 
 Let's say the previous values at these locations were both `uint.MaxValue` (`0xFFFFFFFF`).
-The .NET Memory Model guarantees that both writes are atomic, so all other threads in the process will only ever
+The [.NET Memory Model](https://github.com/dotnet/runtime/blob/main/docs/design/specs/Memory-model.md) guarantees that both writes are atomic, so all other threads in the process will only ever
 observe the new value `0` or the old value `0xFFFFFFFF`, never "torn" values like `0xFFFF0000`.
 
 However, assume the following unsafe code is used to bypass the bounds check and zero both elements with a single 64-bit store:
@@ -575,7 +546,7 @@ atomicity guarantee. Torn values might be observed by other threads, leading to 
 For such a coalesced write to be atomic, the memory must be aligned to the size of the write (8 bytes in this case).
 If you attempt to manually align the memory prior to the operation, you must consider that the GC can relocate
 (and, effectively, change the alignment of) the array at any time if it's not pinned.
-See the Memory Model documentation for more details.
+See the [.NET Memory Model](https://github.com/dotnet/runtime/blob/main/docs/design/specs/Memory-model.md) documentation for more details.
 
 Another risk of unaligned memory access is the potential for an application crash in certain scenarios.
 While some .NET runtimes rely on the OS to fixup misaligned accesses, there are still some scenarios on some
@@ -595,7 +566,7 @@ at any time, effectively changing the alignment dynamically. This is especially 
 3. ✔️ DO use explicit unaligned Read/Write APIs such as `Unsafe.ReadUnaligned`/`Unsafe.WriteUnaligned`
 instead of aligned ones such as `Unsafe.Read`/`Unsafe.Write` or `Unsafe.As` if data might be misaligned.
 4. ✔️ DO keep in mind that various memory manipulation APIs such as `Span<T>.CopyTo` also don't provide atomicity guarantees.
-5. ✔️ DO consult with the .NET Memory Model documentation ([see references](#references)) for more details on atomicity guarantees.
+5. ✔️ DO consult with the [.NET Memory Model](https://github.com/dotnet/runtime/blob/main/docs/design/specs/Memory-model.md) documentation ([see references](#references)) for more details on atomicity guarantees.
 6. ✔️ DO measure performance across all your target platforms, as some platforms impose a significant performance penalty for unaligned memory accesses. You may find that on these platforms, naive code performs better than clever code.
 7. ✔️ DO keep in mind that there are scenarios and platforms where unaligned memory access might lead to an exception.
 

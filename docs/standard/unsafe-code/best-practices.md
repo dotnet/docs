@@ -5,11 +5,11 @@ ms.date: 09/17/2025
 ---
 # Unsafe code best practices
 
-This document contains fine-grained recommendations for specific unsafe patterns, the risks
+This article contains fine-grained recommendations for specific unsafe patterns, the risks
 they entail, and how to mitigate those risks. These guidelines target all developers who are
 writing or reviewing unsafe code in C#. Other
-.NET languages such as F# and VB.NET are outside of the scope of this document, although some recommendations
-may be applicable to them as well.
+.NET languages such as F# and Visual Basic are outside of the scope of this article, although some recommendations
+might be applicable to those languages as well.
 
 * [Glossary](#glossary)
 * [Common unreliable patterns](#common-unreliable-patterns)
@@ -42,18 +42,19 @@ may be applicable to them as well.
 
 ## Glossary
 
-* AVE - Access Violation Exception
-* Byref - A managed pointer (`ref T t`) similar to unmanaged pointer, but is tracked
+* AVE - Access violation exception.
+* Byref - A managed pointer (`ref T t`) that's similar to unmanaged pointer but tracked
 by the GC. Typically points to arbitrary parts of objects or stack. Reference is effectively a managed pointer with +0 offset.
-* CVE - [publicly disclosed cybersecurity vulnerabilities](https://www.cve.org/)
-* JIT - Just-In-Time compiler (RyuJIT in CoreCLR and NativeAOT).
-* PGO - Profile-Guided Optimization
-* Unmanaged pointer (or raw pointer) - A pointer (`T* p`) that points to arbitrary memory location and is not managed/tracked by the GC.
-* Also, see [.NET Runtime Glossary](https://github.com/dotnet/runtime/blob/main/docs/project/glossary.md)
+* CVE - [Publicly disclosed cybersecurity vulnerabilities](https://www.cve.org/).
+* JIT - Just-in-time compiler (RyuJIT in CoreCLR and NativeAOT).
+* PGO - Profile-guided optimization.
+* Unmanaged pointer (or raw pointer) - A pointer (`T* p`) that points to arbitrary memory location and is not managed or tracked by the GC.
+
+For other terms, see [.NET Runtime Glossary](https://github.com/dotnet/runtime/blob/main/docs/project/glossary.md).
 
 ## Common unreliable patterns
 
-C# provides a safe environment where developers don't need to worry about the internal workings of the runtime and the GC. Unsafe code allows them to bypass these safety checks, potentially introducing unreliable patterns that can lead to memory corruption. While such patterns might be useful in certain scenarios, they should be used with caution and only when absolutely necessary. Not only do C# and .NET not provide tools to verify the soundness of unsafe code (as various C/C++ sanitizers might provide), GC-specific behaviors might introduce additional risks in unsafe C# beyond those that traditional C/C++ developers might be familiar with.
+C# provides a safe environment where developers don't need to worry about the internal workings of the runtime and the GC. Unsafe code allows you to bypass these safety checks, potentially introducing unreliable patterns that can lead to memory corruption. While such patterns might be useful in certain scenarios, you should use them with caution and only when absolutely necessary. Not only do C# and .NET not provide tools to verify the soundness of unsafe code (as various C/C++ sanitizers might provide), GC-specific behaviors might introduce additional risks in unsafe C# beyond those that traditional C/C++ developers might be familiar with.
 
 Unsafe code around managed references should be written with the following conservative assumptions in mind:
 
@@ -73,12 +74,12 @@ The next sections describe common unsafe patterns with ✔️ DO and ❌ DON'T r
 ## 1. Untracked managed pointers (`Unsafe.AsPointer` and friends)
 
 It's not possible to convert a managed (tracked) pointer to an unmanaged (untracked)
-pointer in safe C#. When such need arises, it may be tempting to use `Unsafe.AsPointer`
+pointer in safe C#. When such need arises, it might be tempting to use `Unsafe.AsPointer`
 to avoid the overhead of a `fixed` statement. While there are valid
 use cases for that, it introduces a risk of creating untracked pointers to moveable objects.
 Example:
 
-```cs
+```csharp
 unsafe void UnreliableCode(ref int x)
 {
     int* nativePointer = (int*)Unsafe.AsPointer(ref x);
@@ -102,7 +103,7 @@ unsafe void UnreliableCode(ref int x)
 }
 ```
 
-Once GC resumes the execution of the method, it will write 42 into the old location of `x`, which may lead
+Once GC resumes the execution of the method, it will write 42 into the old location of `x`, which might lead
 to an unexpected exception, general global state corruption, or process termination via an access violation.
 
 The recommended solution is instead to use the `fixed` keyword and `&` address-of operator to ensure that the
@@ -120,14 +121,14 @@ unsafe void ReliableCode(ref int x)
 
 ### Recommendations
 
-1. ❌ DON'T use `ref X` arguments with an implicit contract that `X` is always stack-allocated, pinned, or otherwise not relocatable by the GC. Consider instead taking a [ref struct](https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/ref-struct) argument or changing the argument to be a raw pointer type (`X*`).
-2. ❌ DON'T use a pointer from `Unsafe.AsPointer` if it can outlive the original object it is pointing to. [Per the API's documentation](https://learn.microsoft.com/dotnet/api/system.runtime.compilerservices.unsafe.aspointer), it's up to the caller of `Unsafe.AsPointer` to guarantee that the GC cannot relocate the reference. Ensure it's clearly visible to code reviewers that the caller has fulfilled this prerequisite.
+1. ❌ DON'T use `ref X` arguments with an implicit contract that `X` is always stack-allocated, pinned, or otherwise not relocatable by the GC. Consider instead taking a [ref struct](../../csharp/language-reference/builtin-types/ref-struct.md) argument or changing the argument to be a raw pointer type (`X*`).
+2. ❌ DON'T use a pointer from `Unsafe.AsPointer` if it can outlive the original object it is pointing to. [Per the API's documentation](xref:System.Runtime.CompilerServices.Unsafe.AsPointer), it's up to the caller of `Unsafe.AsPointer` to guarantee that the GC cannot relocate the reference. Ensure it's clearly visible to code reviewers that the caller has fulfilled this prerequisite.
 3. ✔️ DO use `GCHandle` or `fixed` scopes instead of `Unsafe.AsPointer` to define explicit scopes for unmanaged pointers and to ensure that the object is always pinned.
 4. ✔️ DO use unmanaged pointers (with `fixed`) instead of byrefs when you need to align an array to a specific boundary. This ensures the GC won't relocate the object and invalidate any alignment assumptions your logic might rely upon.
 
 ## 2. Exposing pointers outside of the `fixed` scope
 
-While the [fixed](https://learn.microsoft.com/dotnet/csharp/language-reference/statements/fixed)
+While the [fixed](../../csharp/language-reference/statements/fixed.md)
 keyword defines a scope for the pointer obtained from the pinned object, it's still possible for that pointer
 to escape the `fixed` scope and introduce bugs, as C# doesn't provide any ownership/lifecycle protections for it.
 A typical example is the following snippet:
@@ -148,22 +149,22 @@ unsafe int* GetPointerToArray(int[] array)
 }
 ```
 
-Here we pin the array properly using the `fixed` keyword (ensuring the GC can't relocate it within the `fixed` block),
-but we then expose the pointer outside of the `fixed` block. This creates a dangling pointer whose dereference will result in undefined behavior.
+In this example, the array is pinned properly using the `fixed` keyword (ensuring the GC can't relocate it within the `fixed` block),
+but then the pointer is exposed outside of the `fixed` block. This creates a dangling pointer whose dereference will result in undefined behavior.
 
 ### Recommendations
 
 1. ✔️ DO make sure that pointers in `fixed` blocks do not leave the defined scope.
-2. ✔️ DO prefer safe low-level primitives with built-in escape analysis, such as C#'s [ref struct](https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/ref-struct). See [Low Level Struct Improvements](https://learn.microsoft.com/dotnet/csharp/language-reference/proposals/csharp-11.0/low-level-struct-improvements) for more details.
+2. ✔️ DO prefer safe low-level primitives with built-in escape analysis, such as C#'s [ref struct](../../csharp/language-reference/builtin-types/ref-struct.md). For more information, see [Low Level Struct Improvements](../../csharp/language-reference/proposals/csharp-11.0/low-level-struct-improvements.md).
 
 ## 3. Internal implementation details of the runtime and libraries
 
-While accessing or relying on internal implementation details is bad practice in general (and not supported by .NET), it's worth calling out specific commonly-observed cases. This is not intended to be an exhaustive list of all possible things that could go wrong when code inappropriately relies on an internal implementation detail.
+While accessing or relying on internal implementation details is bad practice in general (and not supported by .NET), it's worth calling out specific commonly observed cases. This is not intended to be an exhaustive list of all possible things that could go wrong when code inappropriately relies on an internal implementation detail.
 
 ### Recommendations
 
 1. ❌ DON'T alter or read any parts of an object's header.
-   * Object headers may differ across runtimes.
+   * Object headers might differ across runtimes.
    * In CoreCLR, the object header cannot be accessed safely without pinning the object first.
    * Never change object's type by modifying the MethodTable pointer.
 2. ❌ DON'T store any data in an object's padding. Don't assume padding contents will be preserved or that padding is always zeroed by default.
@@ -171,9 +172,9 @@ While accessing or relying on internal implementation details is bad practice in
 4. ❌ DON'T invoke nonpublic methods, access nonpublic fields, or mutate readonly fields in BCL types with reflection or unsafe code.
 5. ❌ DON'T assume any given nonpublic member in the BCL will always be present or will have a specific shape. The .NET team does occasionally modify or remove nonpublic APIs in servicing releases.
 6. ❌ DON'T change `static readonly` fields using reflection or unsafe code, as they're assumed to be constant. For example, RyuJIT usually inlines them as explicit constants.
-7. ❌ DON'T simply assume that a reference is non-relocatable. This guidance applies to string and utf8 (`"..."u8`) literals, static fields, RVA fields, LOH objects, etc.
-   * These are runtime implementation details that may hold for some runtimes but not for others.
-   * Unmanaged pointers to such objects may not stop assemblies from being unloaded, causing the pointers to become dangling. Use `fixed` scopes to ensure correctness.
+7. ❌ DON'T simply assume that a reference is non-relocatable. This guidance applies to string and UTF-8 (`"..."u8`) literals, static fields, RVA fields, LOH objects, and so on.
+   * These are runtime implementation details that might hold for some runtimes but not for others.
+   * Unmanaged pointers to such objects might not stop assemblies from being unloaded, causing the pointers to become dangling. Use `fixed` scopes to ensure correctness.
 8. ❌ DON'T write code that relies on the implementation details of a specific runtime.
 
 ## 4. Invalid managed pointers (even if they are never dereferenced)
@@ -186,7 +187,7 @@ and it's possible to create unreliable patterns with both. However, for certain 
 accidentally create GC-unsafe patterns when manipulating managed pointers. Since unmanaged pointers aren't tracked
 by the GC, the value they contain is only relevant when dereferenced by the developer's code. In contrast,
 a managed pointer's value is relevant not only when it's dereferenced by the developer's code, but also
-when it's examined by the GC. Thus, a developer may create invalid unmanaged pointers without consequence
+when it's examined by the GC. Thus, a developer can create invalid unmanaged pointers without consequence
 as long as they're not dereferenced, but creating any invalid managed pointer is a bug. Example:
 
 ```cs
@@ -216,7 +217,7 @@ void ManagedPointers_Incorrect(int[] array)
 ```
 
 While the managed implementation here avoids the minor pinning overhead, it is unsound because
-`invalidPtr` *may* become an exterior pointer while the actual address of `array[0]` is being updated by GC.
+`invalidPtr` *might* become an exterior pointer while the actual address of `array[0]` is being updated by GC.
 Such bugs are subtle, and [even .NET has run afoul of them](https://github.com/dotnet/runtime/issues/75792#issuecomment-1251523057) during development.
 
 ### Recommendations
@@ -227,8 +228,8 @@ Such bugs are subtle, and [even .NET has run afoul of them](https://github.com/d
 
 ## 5. Reinterpret-like type casts
 
-While all kinds of struct->class or class->struct casts are an undefined behavior by definition,
-it's also possible to encounter unreliable patterns with struct->struct or class->class conversions.
+While all kinds of struct-to-class or class-to-struct casts are an undefined behavior by definition,
+it's also possible to encounter unreliable patterns with struct-to-struct or class-to-class conversions.
 A typical example of an unreliable pattern is the following code:
 
 ```cs
@@ -248,13 +249,13 @@ S1 s1 = ...
 S2 s2 = Unsafe.As<S1, S2>(ref s1); // Bug! A random nint value becomes a reference reported to the GC.
 ```
 
-And even if the layout is similar, developers should still be careful when GC references (fields) are involved.
+And even if the layout is similar, you should still be careful when GC references (fields) are involved.
 
 ### Recommendations
 
 1. ❌ DON'T cast structs to classes or vice versa.
-2. ❌ DON'T use `Unsafe.As` for struct->struct or class->class conversions unless you're absolutely sure that the cast is legal.
-   * See the _Remarks_ section of the [`Unsafe.As` API docs](https://learn.microsoft.com/dotnet/api/system.runtime.compilerservices.unsafe.as) for more information.
+2. ❌ DON'T use `Unsafe.As` for struct-to-struct or class-to-class conversions unless you're absolutely sure that the cast is legal.
+   * For more information, see the _Remarks_ section of the [`Unsafe.As` API docs](xref:System.Runtime.CompilerServices.Unsafe.As).
 3. ✔️ DO prefer safer field-by-field copying, external libraries such as [AutoMapper](https://github.com/AutoMapper/AutoMapper), or Source Generators for such conversions.
 4. ✔️ DO prefer `Unsafe.BitCast` over `Unsafe.As`, as `BitCast` provides some rudimentary usage checks. Note that these checks do not provide full correctness guarantees, meaning `BitCast` is still considered an unsafe API.
 
@@ -313,8 +314,8 @@ void InvalidCode2(ref StructWithGcFields dst, ref StructWithGcFields src)
 
 ## 7. Assumptions about object lifetimes (finalizers, `GC.KeepAlive`)
 
-Developers should avoid making assumptions about the lifetime of objects from the GC's perspective.
-Specifically, do not assume that an object is still alive when it may not be. Object lifetimes can vary
+Avoid making assumptions about the lifetime of objects from the GC's perspective.
+Specifically, do not assume that an object is still alive when it might not be. Object lifetimes can vary
 across different runtimes or even between different Tiers of the same method (Tier0 and Tier1 in RyuJIT).
 Finalizers are a common scenario where such assumptions can be incorrect.
 
@@ -356,25 +357,25 @@ void DoWork()
 }
 ```
 
-Therefore, it is recommended to explicitly extend the lifetime of objects using [`GC.KeepAlive`](https://learn.microsoft.com/dotnet/api/system.gc.keepalive)
-or [SafeHandle](https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.safehandle).
+Therefore, it is recommended to explicitly extend the lifetime of objects using <xref:System.GC.KeepAlive?displayProperty=nameWithType>
+or <xref:System.Runtime.InteropServices.SafeHandle>.
 
 ### Recommendations
 
 1. ❌ DON'T make assumptions about object lifetimes. For instance, never assume `this` is always alive through the end of the method.
-2. ✔️ DO use [SafeHandle](https://learn.microsoft.com/dotnet/api/system.runtime.interopservices.safehandle) for managing native resources.
-3. ✔️ DO use [`GC.KeepAlive`](https://learn.microsoft.com/dotnet/api/system.gc.keepalive) to extend the lifetime of objects when necessary.
+2. ✔️ DO use <xref:System.Runtime.InteropServices.SafeHandle> for managing native resources.
+3. ✔️ DO use <xref:System.GC.KeepAlive?displayProperty=nameWithType> to extend the lifetime of objects when necessary.
 
 ## 8. Cross-thread access to local variables
 
 Accessing local variables from a different thread is generally considered bad practice. However, it becomes explicitly undefined behavior when managed references are involved, as outlined in the [.NET Memory Model](https://github.com/dotnet/runtime/blob/main/docs/design/specs/Memory-model.md#cross-thread-access-to-local-variables).
 
-Example: A struct containing GC references might be zeroed or overwritten in a non thread-safe manner within a no-GC region, while another thread is reading it, leading to undefined behavior.
+Example: A struct containing GC references might be zeroed or overwritten in a non-thread-safe manner within a no-GC region while another thread is reading it, leading to undefined behavior.
 
 ### Recommendations
 
 1. ❌ DON'T access locals across threads (especially if they contain GC references).
-2. ✔️ DO use heap or unmanaged memory (e.g., `NativeMemory.Alloc`) instead.
+2. ✔️ DO use heap or unmanaged memory (for example, `NativeMemory.Alloc`) instead.
 
 ## 9. Unsafe bounds check removal
 
@@ -397,7 +398,7 @@ int SumAllElements(int[] array)
 ```
 
 While the JIT is continually improving at recognizing such patterns, there are still scenarios where it leaves the checks in place,
-potentially impacting performance in hot code. In such cases, developers might be tempted to
+potentially impacting performance in hot code. In such cases, you might be tempted to
 use unsafe code to manually remove these checks without fully understanding the risks or
 accurately assessing the performance benefits.
 
@@ -421,7 +422,7 @@ int FetchAnElement_AsJitted(int[] array, int index)
 }
 ```
 
-To reduce the overhead from that check in hot code, developers might be tempted to use unsafe-equivalent APIs (`Unsafe` and `MemoryMarshal`):
+To reduce the overhead from that check in hot code, you might be tempted to use unsafe-equivalent APIs (`Unsafe` and `MemoryMarshal`):
 
 ```cs
 int FetchAnElement_Unsafe1(int[] array, int index)
@@ -453,7 +454,7 @@ bounds checks when it is safe to do so.
 
 1. ✔️ DO verify whether the latest version of .NET still can't eliminate the bounds check. If it can, rewrite using safe code. Otherwise, file an issue against the RyuJIT. Use [this tracking issue](https://github.com/dotnet/runtime/issues/109677) as a good starting point.
 2. ✔️ DO measure the real-world performance impact. If the performance gain is negligible or the code isn't proven to be hot outside of a trivial microbenchmark, rewrite using safe code.
-3. ✔️ DO provide additional hints to the JIT, such as manual bounds checks before loops and saving fields to locals, as the .NET's Memory Model may conservatively prevent the JIT from removing bounds checks in some scenarios.
+3. ✔️ DO provide additional hints to the JIT, such as manual bounds checks before loops and saving fields to locals, as .NET's memory model might conservatively prevent the JIT from removing bounds checks in some scenarios.
 4. ✔️ DO guard code with `Debug.Assert` bounds checks if unsafe code is still necessary. Consider the example below.
 
 ```cs
@@ -474,11 +475,11 @@ static T UnsafeGetElementAt<T>(this T[] array, int index)
 }
 ```
 
-Inclusion of `Debug.Assert` doesn't provide any soundness checks for Release builds, but it may help detect potential bugs in Debug builds.
+Inclusion of `Debug.Assert` doesn't provide any soundness checks for Release builds, but it might help detect potential bugs in Debug builds.
 
 ## 10. Memory access coalescing
 
-Developers might be tempted to use unsafe code to coalesce memory accesses to improve performance.
+You might be tempted to use unsafe code to coalesce memory accesses to improve performance.
 A classic example is the following code to write `"False"` into a char array:
 
 ```cs
@@ -531,8 +532,8 @@ There is an even simpler and more readable version of the code:
 ```
 
 As of .NET 10, this call produces identical codegen as above. It even has an additional benefit: it hints to the JIT that
-strict per-element writes are not required to be atomic. The JIT may combine this hint with other contextual knowledge
-to provide even more optimizations beyond what was discussed above.
+strict per-element writes are not required to be atomic. The JIT might combine this hint with other contextual knowledge
+to provide even more optimizations beyond what was discussed here.
 
 ### Recommendations
 
@@ -550,7 +551,7 @@ The memory access coalescing described in [Memory access coalescing](#10-memory-
 or implicit misaligned reads/writes. While this usually doesn't cause serious issues (aside from
 potential performance penalties due to crossing cache and page boundaries), it still poses some real risks.
 
-For example, consider the scenario where we're clearing two elements of an array at once:
+For example, consider the scenario where you're clearing two elements of an array at once:
 
 ```cs
 uint[] arr = _arr;
@@ -562,7 +563,7 @@ Let's say the previous values at these locations were both `uint.MaxValue` (`0xF
 The .NET Memory Model guarantees that both writes are atomic, so all other threads in the process will only ever
 observe the new value `0` or the old value `0xFFFFFFFF`, never "torn" values like `0xFFFF0000`.
 
-However, assume we use the following unsafe code to bypass the bounds check and zero both elements with a single 64-bit store:
+However, assume the following unsafe code is used to bypass the bounds check and zero both elements with a single 64-bit store:
 
 ```cs
 ref uint p = ref Unsafe.Add(ref MemoryMarshal.GetArrayDataReference(arr), i);
@@ -570,7 +571,7 @@ Unsafe.WriteUnaligned<ulong>(ref Unsafe.As<uint, byte>(ref p), 0UL);
 ```
 
 This code has the side effect of removing the
-atomicity guarantee. Torn values may be observed by other threads, leading to undefined behavior.
+atomicity guarantee. Torn values might be observed by other threads, leading to undefined behavior.
 For such a coalesced write to be atomic, the memory must be aligned to the size of the write (8 bytes in this case).
 If you attempt to manually align the memory prior to the operation, you must consider that the GC can relocate
 (and, effectively, change the alignment of) the array at any time if it's not pinned.
@@ -581,9 +582,9 @@ While some .NET runtimes rely on the OS to fixup misaligned accesses, there are 
 platforms where misaligned access can lead to an `DataMisalignedException` (or `SEHException`).
 Some of the examples include:
 
-* `Interlocked` operations on misaligned memory on some platforms ([example](https://github.com/dotnet/runtime/issues/91662))
-* Misaligned floating point operations on ARM
-* Accessing special device memory with certain alignment requirements (not really supported by .NET)
+* `Interlocked` operations on misaligned memory on some platforms ([example](https://github.com/dotnet/runtime/issues/91662)).
+* Misaligned floating point operations on ARM.
+* Accessing special device memory with certain alignment requirements (not really supported by .NET).
 
 ### Recommendations
 
@@ -596,12 +597,12 @@ instead of aligned ones such as `Unsafe.Read`/`Unsafe.Write` or `Unsafe.As` if d
 4. ✔️ DO keep in mind that various memory manipulation APIs such as `Span<T>.CopyTo` also don't provide atomicity guarantees.
 5. ✔️ DO consult with the .NET Memory Model documentation ([see references](#references)) for more details on atomicity guarantees.
 6. ✔️ DO measure performance across all your target platforms, as some platforms impose a significant performance penalty for unaligned memory accesses. You may find that on these platforms, naive code performs better than clever code.
-7. ✔️ DO keep in mind that there are scenarios and platforms where unaligned memory access may lead to an exception.
+7. ✔️ DO keep in mind that there are scenarios and platforms where unaligned memory access might lead to an exception.
 
 ## 12. Binary (de)serialization of structs with paddings or non-blittable members
 
-Developers should be cautious when they use various serialization-like APIs to copy/read structs to/from byte arrays.
-If a struct contains paddings or non-blittable members (`bool`, GC fields, etc.), then classic unsafe memory operations such as `Fill`, `CopyTo` or `SequenceEqual` may accidentally copy sensitive data from the stack to the paddings or treat garbage data as significant during comparisons creating rarely reproducible bugs. A common anti-pattern may look like this:
+Be cautious when you use various serialization-like APIs to copy or read structs to or from byte arrays.
+If a struct contains paddings or non-blittable members (for example, `bool` or GC fields), then classic unsafe memory operations such as `Fill`, `CopyTo`, and `SequenceEqual` might accidentally copy sensitive data from the stack to the paddings or treat garbage data as significant during comparisons creating rarely reproducible bugs. A common anti-pattern might look like this:
 
 ```cs
 T UnreliableDeserialization<TObject>(ReadOnlySpan<byte> data) where TObject : unmanaged
@@ -611,11 +612,11 @@ T UnreliableDeserialization<TObject>(ReadOnlySpan<byte> data) where TObject : un
 }
 ```
 
-The only correct approach is to use field-by-field loads/store specialized for each `TObject` input (or generalized with Reflection, Source Generators or (de)serialization libraries).
+The only correct approach is to use field-by-field loads/store specialized for each `TObject` input (or generalized with Reflection, Source Generators, or (de)serialization libraries).
 
 ### Recommendations
 
-1. ❌ DON'T use unsafe code to copy/load/compare structs with paddings or non-blittable members. Loads from untrusted inputs are problematic even for basic types like `bool` or `decimal`. At the same time, stores may accidentally serialize sensitive information from the stack in a struct's gaps/paddings.
+1. ❌ DON'T use unsafe code to copy/load/compare structs with paddings or non-blittable members. Loads from untrusted inputs are problematic even for basic types like `bool` or `decimal`. At the same time, stores might accidentally serialize sensitive information from the stack in a struct's gaps/paddings.
 2. ❌ DON'T rely on `T : unmanaged` constraint, `RuntimeHelpers.IsReferenceOrContainsReferences`, or similar APIs to guarantee that a generic type is safe to perform bitwise operations on. At the time of writing these guidelines, there is no reliable programmatic way to determine whether it is legal to perform arbitrary bitwise operations on a given type.
    * If you must perform such bitwise manipulation, only do it against this hardcoded list of types, and be aware of the current machine's endianness:
       * The primitive integral types `Byte`, `SByte`, `Int16`, `UInt16`, `Int32`, `UInt32`, `Int64`, and `UInt64`;
@@ -626,14 +627,14 @@ The only correct approach is to use field-by-field loads/store specialized for e
 ## 13. Null managed pointers
 
 Generally, byrefs (managed pointers) are rarely null and the only safe way to create a null byref as of today is
-to initialize a `ref struct` with `default`, then all its `ref` fields will be null managed pointers:
+to initialize a `ref struct` with `default`. Then all its `ref` fields are null managed pointers:
 
 ```cs
 RefStructWithRefField s = default;
 ref byte nullRef = ref s.refFld;
 ```
 
-However, there are several unsafe ways to create null byrefs, some examples include:
+However, there are several unsafe ways to create null byrefs. Some examples include:
 
 ```cs
 // Null byref by calling Unsafe.NullRef directly:
@@ -643,7 +644,7 @@ ref object obj = ref Unsafe.NullRef<object>();
 ref object obj = ref Unsafe.AsRef<object>((void*)0);
 ```
 
-The risk of introducing memory safety issues is admittedly low any attempt to dereference
+The risk of introducing memory safety issues is low, and any attempt to dereference
 a null byref will lead to a well-defined `NullReferenceException`.
 However, the C# compiler [assumes](https://github.com/dotnet/roslyn/issues/72165) that dereferencing a byref always succeeds
 and produces no observable side effect. Therefore it is a legal optimization to elide any dereference whose resulting value is
@@ -656,7 +657,7 @@ the intended logic.
 
 1. ❌ DON'T create null byrefs in C# if it's not necessary. Consider using normal managed references, the
 [Null Object Pattern](https://en.wikipedia.org/wiki/Null_object_pattern), or empty spans instead.
-2. ❌ DON'T discard the result of a byref dereference, as it may be optimized out and lead to potential bugs.
+2. ❌ DON'T discard the result of a byref dereference, as it might be optimized out and lead to potential bugs.
 
 ## 14. `stackalloc`
 
@@ -706,11 +707,11 @@ the intended logic.
     }
     ```
 
-5. ✔️ DO use modern C# features such as collection literals (`Span<int> s = [1, 2, 3];`), `params Span<T>` and Inline Arrays to avoid manual memory management when possible.
+5. ✔️ DO use modern C# features such as collection literals (`Span<int> s = [1, 2, 3];`), `params Span<T>`, and inline arrays to avoid manual memory management when possible.
 
 ## 15. Fixed-size buffers
 
-Fixed-size buffers useful for interop scenarios with data sources from other languages or platforms. They then were replaced by safer and more convenient [Inline-Arrays](https://learn.microsoft.com/dotnet/csharp/language-reference/proposals/csharp-12.0/inline-arrays).
+Fixed-size buffers were useful for interop scenarios with data sources from other languages or platforms. They then were replaced by safer and more convenient [inline-arrays](../../csharp/language-reference/proposals/csharp-12.0/inline-arrays.md).
 An example of a fixed-size buffer (requires `unsafe` context) is the following snippet:
 
 ```cs
@@ -724,7 +725,7 @@ MyStruct m = new();
 ms.data[10] = 0; // Out-of-bounds write, undefined behavior.
 ```
 
-A modern and a safer alternative is [Inline-Arrays](https://learn.microsoft.com/dotnet/csharp/language-reference/proposals/csharp-12.0/inline-arrays):
+A modern and a safer alternative is [inline-arrays](../../csharp/language-reference/proposals/csharp-12.0/inline-arrays.md):
 
 ```cs
 [System.Runtime.CompilerServices.InlineArray(8)]
@@ -747,7 +748,7 @@ ms.buffer[10] = 0; // Compiler knows this is out of range and produces compiler 
 
 ### Recommendations
 
-1. ✔️ DO prefer replacing fixed-size buffers with Inline Arrays or IL marshalling attributes where possible.
+1. ✔️ DO prefer replacing fixed-size buffers with inline arrays or IL marshalling attributes where possible.
 
 ## 16. Passing contiguous data as pointers + lengths (or relying on zero-termination)
 
@@ -773,7 +774,7 @@ can lead to information disclosure, data corruption, or process termination via 
 ### Recommendations
 
 1. ❌ DON'T expose methods whose arguments are pointer types (unmanaged pointers `T*` or managed pointers `ref T`) when those arguments are intended to represent buffers. Use safe buffer types like `Span<T>` or `ReadOnlySpan<T>` instead.
-2. ❌ DON'T use implicit contracts for byref arguments, such as requiring all callers to allocate the input on the stack. If such a contract is necessary, consider using [ref struct](https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/ref-struct) instead.
+2. ❌ DON'T use implicit contracts for byref arguments, such as requiring all callers to allocate the input on the stack. If such a contract is necessary, consider using [ref struct](../../csharp/language-reference/builtin-types/ref-struct.md) instead.
 3. ❌ DON'T assume buffers are zero-terminated unless the scenario explicitly documents that this is a valid assumption. For example, even though .NET guarantees that `string` instances are null-terminated, the same does not hold of other buffer types like `ReadOnlySpan<char>` or `char[]`.
 
     ```cs
@@ -822,7 +823,7 @@ unsafe void IncorrectPInvokeExample(ReadOnlySpan<char> data)
 }
 ```
 
-To resolve this, use an alternative p/invoke signature which accepts _both_ the data pointer _and_ the length if possible. Otherwise, if the receiver has no way of accepting a separate length argument, ensure the original data is converted to a `string` before pinning it and passing it across the p/invoke boundary.
+To resolve this, use an alternative p/invoke signature that accepts _both_ the data pointer _and_ the length if possible. Otherwise, if the receiver has no way of accepting a separate length argument, ensure the original data is converted to a `string` before pinning it and passing it across the p/invoke boundary.
 
 ```cs
 unsafe static extern void SomePInvokeMethod(char* pwszData);
@@ -883,10 +884,10 @@ string s = string.Create(4, state, (chr, state) =>
 
 1. ❌ DON'T mutate strings. Use the `String.Create` API to create a new string if complex copying logic is needed. Otherwise, use `.ToString()`, `StringBuilder`, `new string(...)` or string interpolation syntax.
 
-## 18. Raw IL code (System.Reflection.Emit, Mono.Cecil, etc.)
+## 18. Raw IL code (for example, System.Reflection.Emit and Mono.Cecil)
 
-Emitting raw IL (either via `System.Reflection.Emit`, 3rd party libraries such as `Mono.Cecil`
-or writing IL code directly) by definition bypass all memory safety guarantees C# provides.
+Emitting raw IL (either via `System.Reflection.Emit`, third-party libraries such as `Mono.Cecil`,
+or writing IL code directly) by definition bypasses all memory safety guarantees C# provides.
 Avoid using such techniques unless absolutely necessary.
 
 ### Recommendations
@@ -894,7 +895,7 @@ Avoid using such techniques unless absolutely necessary.
 1. ❌ DON'T emit raw IL code as it comes with no guiderails and it makes it easy to introduce type safety and other issues.
      * Like other dynamic code generation techniques, emitting raw IL is also not AOT-friendly if it's not done at the build time.
 2. ✔️ DO use Source Generators instead, if possible.
-3. ✔️ DO prefer [\[UnsafeAccessor\]](https://learn.microsoft.com/dotnet/api/system.runtime.compilerservices.unsafeaccessorattribute) instead of emitting raw IL for writing low overhead serialization code for private members if the need arises.
+3. ✔️ DO prefer [\[UnsafeAccessor\]](xref:System.Runtime.CompilerServices.UnsafeAccessorAttribute) instead of emitting raw IL for writing low overhead serialization code for private members if the need arises.
 4. ✔️ DO file an API proposal against [dotnet/runtime](https://github.com/dotnet/runtime) if some API is missing and you're forced to use raw IL code instead.
 
 ## 19. Uninitialized locals `[SkipLocalsInit]` and `Unsafe.SkipInit`
@@ -926,7 +927,7 @@ but the bug becomes harder to detect when `Rent` and `Return` are in different s
 
 1. ✔️ DO keep matched calls to `Rent` and `Return` within the same method if possible to narrow the scope of potential bugs.
 2. ❌ DON'T use a `try-finally` pattern in order to call `Return` in the `finally` block unless you are confident the failed logic has finished using the buffer. It's better to abandon the buffer rather than risk a use-after-free bug due to an unexpected early `Return`.
-3. ✔️ DO be aware that similar issues may arise with other pooling APIs or patterns, such as [`ObjectPool<T>`](https://learn.microsoft.com/dotnet/api/microsoft.extensions.objectpool.objectpool-1).
+3. ✔️ DO be aware that similar issues may arise with other pooling APIs or patterns, such as <xref:Microsoft.Extensions.ObjectPool.ObjectPool`1>.
 
 ## 21. `bool` <-> `int` conversions
 
@@ -967,15 +968,15 @@ bool[] boolArray = new bool[byteSpan];
 for (int i = 0; i < byteSpan.Length; i++) { boolArray[i] = byteSpan[i] != 0; }
 ```
 
-See [Binary (de)serialization of structs with paddings or non-blittable members](#12-binary-deserialization-of-structs-with-paddings-or-non-blittable-members) for more information.
+For more information, see [Binary (de)serialization of structs with paddings or non-blittable members](#12-binary-deserialization-of-structs-with-paddings-or-non-blittable-members).
 
 ## 22. Interop
 
-While most of the suggestions in this document apply to interop scenarios as well, it is recommended to follow the [Native interoperability best practices](https://learn.microsoft.com/dotnet/standard/native-interop/best-practices) guide. Additionally, consider using auto-generated interop wrappers like [CsWin32](https://github.com/microsoft/CsWin32) and [CsWinRT](https://github.com/microsoft/CsWinRT/). This minimizes the need for you to write manual interop code and reduces the risk of introducing memory safety issues.
+While most of the suggestions in this document apply to interop scenarios as well, it is recommended to follow the [Native interoperability best practices](../../standard/native-interop/best-practices.md) guide. Additionally, consider using auto-generated interop wrappers like [CsWin32](https://github.com/microsoft/CsWin32) and [CsWinRT](https://github.com/microsoft/CsWinRT/). This minimizes the need for you to write manual interop code and reduces the risk of introducing memory safety issues.
 
 ## 23. Thread safety
 
-See [Managed threading best practices](https://learn.microsoft.com/dotnet/standard/threading/managed-threading-best-practices) and [.NET Memory Model](https://github.com/dotnet/runtime/blob/main/docs/design/specs/Memory-model.md) for more details.
+See [Managed threading best practices](../../standard/threading/managed-threading-best-practices.md) and [.NET Memory Model](https://github.com/dotnet/runtime/blob/main/docs/design/specs/Memory-model.md).
 
 ## 24. Unsafe code around SIMD/Vectorization
 
@@ -987,16 +988,16 @@ In the context of the unsafe code it's important to keep in mind:
 
 ## 25. Fuzz testing
 
-Fuzz testing (or "fuzzing") is an automated software testing technique that involves providing invalid, unexpected, or random data as inputs to a computer program. It provides a way to detect memory safety issues in code that may have gaps in test coverage. Tools like [SharpFuzz](https://github.com/Metalnem/sharpfuzz) can be used to set up fuzz testing for .NET code.
+Fuzz testing (or "fuzzing") is an automated software testing technique that involves providing invalid, unexpected, or random data as inputs to a computer program. It provides a way to detect memory safety issues in code that may have gaps in test coverage. You can use tools like [SharpFuzz](https://github.com/Metalnem/sharpfuzz) to set up fuzz testing for .NET code.
 
 ## References
 
-* [Unsafe code, pointer types, and function pointers](https://learn.microsoft.com/dotnet/csharp/language-reference/unsafe-code)
-* [Unsafe code, language specification](https://learn.microsoft.com/dotnet/csharp/language-reference/language-specification/unsafe-code)
+* [Unsafe code, pointer types, and function pointers](../../csharp/language-reference/unsafe-code.md).
+* [Unsafe code, language specification](../../csharp/language-reference/language-specification/unsafe-code.md).
 * [What Every CLR Developer Must Know Before Writing Code](https://github.com/dotnet/runtime/blob/main/docs/coding-guidelines/clr-code-guide.md) for advanced topics around the CoreCLR and the GC internals.
-* [Native interoperability best practices](https://learn.microsoft.com/dotnet/standard/native-interop/best-practices)
-* [Managed threading best practices](https://learn.microsoft.com/dotnet/standard/threading/managed-threading-best-practices)
-* [Best practices for exceptions](https://learn.microsoft.com/dotnet/standard/exceptions/best-practices-for-exceptions)
+* [Native interoperability best practices](../../standard/native-interop/best-practices.md).
+* [Managed threading best practices](../../standard/threading/managed-threading-best-practices.md).
+* [Best practices for exceptions](../../standard/exceptions/best-practices-for-exceptions.md).
 * [Vectorization guidelines](https://github.com/dotnet/runtime/blob/main/docs/coding-guidelines/vectorization-guidelines.md)
 * [.NET Memory Model](https://github.com/dotnet/runtime/blob/main/docs/design/specs/Memory-model.md)
 * [ECMA-335](https://ecma-international.org/publications-and-standards/standards/ecma-335/)

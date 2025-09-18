@@ -53,7 +53,7 @@ You can also go to Preview Features options in Visual Studio and deselect the "U
 
 ## Executables
 
-VSTest ships multiple executables, notably `vstest.console.exe`, `testhost.exe`, and `datacollector.exe`. However, MSTest is embedded directly into your test project and doesn't ship any other executables. The executable your test project compiles to is used to host all the testing tools and carry out all the tasks needed to run tests.
+VSTest ships multiple executables, notably `vstest.console.exe`, `testhost.exe`, and `datacollector.exe`. However, Microsoft.Testing.Platform is embedded directly into your test project and doesn't ship any other executables. The executable your test project compiles to is used to host all the testing tools and carry out all the tasks needed to run tests.
 
 ## See also
 

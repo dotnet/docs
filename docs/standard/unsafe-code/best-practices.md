@@ -126,7 +126,7 @@ but then the pointer is exposed outside of the `fixed` block. This creates a dan
 ### Recommendations
 
 1. ✔️ DO make sure that pointers in `fixed` blocks do not leave the defined scope.
-2. ✔️ DO prefer safe low-level primitives with built-in escape analysis, such as C#'s [ref struct](../../csharp/language-reference/builtin-types/ref-struct.md). For more information, see [Low Level Struct Improvements](../../csharp/language-reference/proposals/csharp-11.0/low-level-struct-improvements.md).
+2. ✔️ DO prefer safe low-level primitives with built-in escape analysis, such as C#'s [ref struct](../../csharp/language-reference/builtin-types/ref-struct.md). For more information, see [Low-level struct improvements](~/_csharplang/proposals/csharp-11.0/low-level-struct-improvements.md).
 
 ## 3. Internal implementation details of the runtime and libraries
 
@@ -682,7 +682,7 @@ the intended logic.
 
 ## 15. Fixed-size buffers
 
-Fixed-size buffers were useful for interop scenarios with data sources from other languages or platforms. They then were replaced by safer and more convenient [inline-arrays](../../csharp/language-reference/proposals/csharp-12.0/inline-arrays.md).
+Fixed-size buffers were useful for interop scenarios with data sources from other languages or platforms. They then were replaced by safer and more convenient [inline arrays](~/_csharplang/proposals/csharp-12.0/inline-arrays.md).
 An example of a fixed-size buffer (requires `unsafe` context) is the following snippet:
 
 ```csharp
@@ -696,7 +696,7 @@ MyStruct m = new();
 ms.data[10] = 0; // Out-of-bounds write, undefined behavior.
 ```
 
-A modern and a safer alternative is [inline-arrays](../../csharp/language-reference/proposals/csharp-12.0/inline-arrays.md):
+A modern and a safer alternative is [inline arrays](~/_csharplang/proposals/csharp-12.0/inline-arrays.md):
 
 ```csharp
 [System.Runtime.CompilerServices.InlineArray(8)]
@@ -964,7 +964,7 @@ Fuzz testing (or "fuzzing") is an automated software testing technique that invo
 ## References
 
 * [Unsafe code, pointer types, and function pointers](../../csharp/language-reference/unsafe-code.md).
-* [Unsafe code, language specification](../../csharp/language-reference/language-specification/unsafe-code.md).
+* [Unsafe code, language specification](~/_csharpstandard/standard/unsafe-code.md).
 * [What Every CLR Developer Must Know Before Writing Code](https://github.com/dotnet/runtime/blob/main/docs/coding-guidelines/clr-code-guide.md) for advanced topics around the CoreCLR and the GC internals.
 * [Native interoperability best practices](../../standard/native-interop/best-practices.md).
 * [Managed threading best practices](../../standard/threading/managed-threading-best-practices.md).

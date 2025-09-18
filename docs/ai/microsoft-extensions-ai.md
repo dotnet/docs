@@ -100,6 +100,8 @@ The preceding code:
 - Calls `GetStreamingResponseAsync` on the client, passing a prompt and a list of tools that includes a function created with <xref:Microsoft.Extensions.AI.AIFunctionFactory.Create*>.
 - Iterates over the response, printing each update to the console.
 
+You can also use Model Context Protocol (MCP) tools with your `IChatClient`. For more information, see [Build a minimal MCP client](./quickstarts/build-mcp-client.md).
+
 #### Cache responses
 
 If you're familiar with [Caching in .NET](../core/extensions/caching.md), it's good to know that <xref:Microsoft.Extensions.AI> provides other such delegating `IChatClient` implementations. The <xref:Microsoft.Extensions.AI.DistributedCachingChatClient> is an `IChatClient` that layers caching around another arbitrary `IChatClient` instance. When a novel chat history is submitted to the `DistributedCachingChatClient`, it forwards it to the underlying client and then caches the response before sending it back to the consumer. The next time the same history is submitted, such that a cached response can be found in the cache, the `DistributedCachingChatClient` returns the cached response rather than forwarding the request along the pipeline.

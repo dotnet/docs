@@ -43,7 +43,7 @@ The test platform is the engine that runs the tests and acts as a communication 
 
 VSTest has been used for many years in .NET and was the only test platform in the ecosystem. Early in 2024, the first stable version of a new test platform, called [Microsoft.Testing.Platform (MTP)](./microsoft-testing-platform-intro.md), was released. For more information about migrating from VSTest to Microsoft.Testing.Platform, see [Migration guide from VSTest to Microsoft.Testing.Platform](./migrating-vstest-microsoft-testing-platform.md).
 
-The test platform also provides extensibility APIs so that additional features can be implemented and get them working for all test frameworks. There are usually built-in features built on top of the extensibility APIs, such as TRX reporting and hang and crash dumps. The community can also build their own extensions that end up working for all test frameworks.
+The test platform also provides extensibility APIs so that additional features can be implemented and made available for all test frameworks. There are usually built-in features built on top of the extensibility APIs, such as TRX reporting and hang and crash dumps. The community can also build custom extensions that work for all test frameworks.
 
 ### Test frameworks
 

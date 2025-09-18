@@ -6,9 +6,9 @@ ms.author: ygerges
 ms.date: 09/15/2025
 ---
 
-# Migration guide from VSTest to Microsoft.Testing.Platform
+# Migrate from VSTest to Microsoft.Testing.Platform
 
-In this article, you'll learn how to migrate from VSTest to Microsoft.Testing.Platform.
+In this article, you learn how to migrate from VSTest to Microsoft.Testing.Platform.
 
 ## Opt-in to use Microsoft.Testing.Platform
 
@@ -41,7 +41,7 @@ To opt-in, add `<UseMicrosoftTestingPlatformRunner>true</UseMicrosoftTestingPlat
 
 ### Opt-in for .NET 9 SDK and earlier
 
-In .NET 9 SDK and earlier, there is no *native* support for Microsoft.Testing.Platform for `dotnet test`. However, we provide support that is built on top of VSTest infrastructure. To use that, add `<TestingPlatformDotnetTestSupport>true</TestingPlatformDotnetTestSupport>` under a `PropertyGroup` in [`Directory.Build.props`](/visualstudio/msbuild/customize-by-directory) file.
+In .NET 9 SDK and earlier, there is no *native* support for Microsoft.Testing.Platform for `dotnet test`. Support is built on top of the VSTest infrastructure. To use that, add `<TestingPlatformDotnetTestSupport>true</TestingPlatformDotnetTestSupport>` under a `PropertyGroup` in [`Directory.Build.props`](/visualstudio/msbuild/customize-by-directory) file.
 
 > [!IMPORTANT]
 > When running Microsoft.Testing.Platform support in this mode, you need to add `--` to separate the `dotnet test` arguments from the new platform arguments. For example, `dotnet test --no-build -- --list-tests`.
@@ -63,9 +63,9 @@ Starting with .NET 10 SDK, there is *native* support for Microsoft.Testing.Platf
 
 ### Update `dotnet test` invocations
 
-Command line options of `dotnet test` are divided into 2 categories: build related arguments and test related ones.
+Command line options of `dotnet test` are divided into two categories: build-related arguments and test-related ones.
 
-The build related arguments are irrelevant to the test platform and as such don't need to be updated for the new platform. Build related arguments are listed below:
+The build-related arguments are irrelevant to the test platform and as such don't need to be updated for the new platform. Build-related arguments are listed here:
 
 - `-a|--arch <ARCHITECTURE>`
 - `--artifacts-path <ARTIFACTS_DIR>`
@@ -81,7 +81,7 @@ The build related arguments are irrelevant to the test platform and as such don'
 - `-r|--runtime <RUNTIME_IDENTIFIER>`
 - `-v|--verbosity <LEVEL>`
 
-The test related arguments are VSTest specific and so need to be transformed to match the new platform. The following table shows the mapping between the VSTest arguments and the new platform:
+The test-related arguments are VSTest specific and so need to be transformed to match the new platform. The following table shows the mapping between the VSTest arguments and the new platform:
 
 | VSTest argument | New platform argument |
 |-----------------|-----------------------|
@@ -104,7 +104,7 @@ The test related arguments are VSTest specific and so need to be transformed to 
 
 #### `--collect`
 
-`--collect` is a general extensibility point in VSTest for any data collector. The extensibility model of Microsoft.Testing.Platform is different and there is no such centralized argument to be used by all data collectors. With Microsoft.Testing.Platform, each data collector can add its own command-line option. For example, running Microsoft CodeCoverage through VSTest can be similar to the following:
+`--collect` is a general extensibility point in VSTest for any data collector. The extensibility model of Microsoft.Testing.Platform is different and there is no such centralized argument to be used by all data collectors. With Microsoft.Testing.Platform, each data collector can add its own command-line option. For example, running Microsoft CodeCoverage through VSTest might be similar to the following:
 
 ```dotnetcli
 dotnet test --collect "Code Coverage;Format=cobertura"
@@ -122,7 +122,7 @@ dotnet test --coverage --coverage-output-format cobertura
 
 #### `--filter`
 
-`--filter` is the VSTest-based filter. This is supported by MSTest and NUnit even when running with Microsoft.Testing.Platform. However, for xUnit.net, this is no longer supported when running with Microsoft.Testing.Platform. You must migrate from the VSTest-based filter to the new filter support in xunit.v3 which is provided using the following command-line options:
+`--filter` is the VSTest-based filter. This is supported by MSTest and NUnit even when running with Microsoft.Testing.Platform. However, for xUnit.net, this is no longer supported when running with Microsoft.Testing.Platform. You must migrate from the VSTest-based filter to the new filter support in xunit.v3, which is provided using the following command-line options:
 
 - `--filter-class`
 - `--filter-not-class`
@@ -140,22 +140,22 @@ For more information, see [Microsoft.Testing.Platform documentation for xUnit.ne
 
 What was usually referred to as "logger" in VSTest is referred to as "reporter" in Microsoft.Testing.Platform. In Microsoft.Testing.Platform, logging is explicitly for diagnosing purposes only.
 
-Similar to `--collect`, `--logger` is a general extensibility point in VSTest for any logger (what we call reporter in the context of Microsoft.Testing.Platform). Each Microsoft.Testing.Platform reporter is free to add its own command-line option, and as such there is no centralized command-line option similar to VSTest's `--logger`.
+Similar to `--collect`, `--logger` is a general extensibility point in VSTest for any logger (or, in the context of Microsoft.Testing.Platform, any *reporter*). Each Microsoft.Testing.Platform reporter is free to add its own command-line option, and as such there is no centralized command-line option like VSTest's `--logger`.
 
-One of the very commonly used VSTest loggers is the TRX logger. This was usually called as follows:
+One of the very commonly used VSTest loggers is the TRX logger. This logger is usually called as follows:
 
 ```dotnetcli
 dotnet test --logger trx
 ```
 
-With Microsoft.Testing.Platform, this becomes:
+With Microsoft.Testing.Platform, the command becomes:
 
 ```dotnetcli
 dotnet test --report-trx
 ```
 
 > [!IMPORTANT]
-> In order to use `--report-trx`, you must have `Microsoft.Testing.Extensions.TrxReport` NuGet package.
+> To use `--report-trx`, you must have the `Microsoft.Testing.Extensions.TrxReport` NuGet package installed.
 >
 > [!IMPORTANT]
 > As explained earlier, when using Microsoft.Testing.Platform with the VSTest-based `dotnet test`, extra `--` is needed before the arguments intended to be passed to the platform.
@@ -191,8 +191,8 @@ If you're using the [VSTest task](/azure/devops/pipelines/tasks/reference/vstest
 
 ### .NET Core CLI task
 
-1. If you have custom `arguments` passed to the task, this needs to follow the same guidance as the `dotnet test` migration guidance.
-1. If you're using the [DotNetCoreCLI](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2) task without opting-in the native Microsoft.Testing.Platform experience for .NET 10 SDK and later via `global.json` file, you need to set the task `arguments` to correctly point to the results directory it used to point to, as well as requested TRX report. For example:
+- If you have custom `arguments` passed to the task, follow the same guidance for `dotnet test` migration.
+- If you're using the [DotNetCoreCLI](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2) task without opting-in to the native Microsoft.Testing.Platform experience for .NET 10 SDK and later via `global.json` file, you need to set the task `arguments` to correctly point to the results directory it used to point to, as well as the requested TRX report. For example:
 
     ```yml
     - task: DotNetCoreCLI@2

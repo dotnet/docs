@@ -208,6 +208,7 @@ Project file:
 
 </Project>
 ```
+
 ## Standalone GC
 
 To use a standalone garbage collector instead of the default GC implementation, you can specify either the *[path](#path)* (in .NET 9 and later versions) or the *[name](#name)* of a GC native library.
@@ -303,7 +304,7 @@ To use a standalone garbage collector instead of the default GC implementation, 
 
 ## Manage resource usage for all GC flavors
 
-The following settings apply to all flavors of the GC: 
+The following settings apply to all flavors of the GC:
 
 - [Heap hard limit](#heap-hard-limit)
 - [Heap hard limit percent](#heap-hard-limit-percent)
@@ -575,6 +576,7 @@ Project file:
 
 </Project>
 ```
+
 ### Conserve memory
 
 - Configures the garbage collector to conserve memory at the expense of more frequent garbage collections and possibly longer pause times.

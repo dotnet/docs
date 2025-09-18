@@ -85,7 +85,11 @@ The Azure Identity library for .NET allows you to authenticate via managed ident
 
 - **When to use:** For production scenarios where resilience is important
 - **How to activate:** Take one of the following approaches:
-  - Use `DefaultAzureCredential` with `AZURE_TOKEN_CREDENTIALS` environment variable set to `ManagedIdentityCredential`
+  - Use `DefaultAzureCredential` with `AZURE_TOKEN_CREDENTIALS` environment variable set to `ManagedIdentityCredential`.
+  
+    > [!IMPORTANT]
+    > This approach only operates in resilient mode when using `Azure.Identity` package version 1.16.0 or later. In earlier versions, this approach operates in "fail fast" mode.
+
   - Use `ChainedTokenCredential` containing `ManagedIdentityCredential`
   - Use `ManagedIdentityCredential` directly
 - **How it works:** The time interval between retries starts at 0.8 seconds, and a maximum of five retries are attempted, by default. This mode is optimized for resilience but introduces potentially unwanted delays in the development inner loop.

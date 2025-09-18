@@ -126,12 +126,12 @@ This error occurs when AppCAT cannot find a compatible .NET SDK, even if you hav
 
 To fix this error:
 
-1. Download and install the .NET 9 SDK from <https://dotnet.microsoft.com/download/dotnet/9.0>.
+1. Download and install the .NET 9.0 SDK from <https://dotnet.microsoft.com/download/dotnet/9.0>.
 2. Restart Visual Studio.
 3. Run the assessment again.
 
 > [!NOTE]
-> The GitHub Copilot app modernization for .NET extension can automatically help you install or upgrade to .NET 9. If you have an older version of the extension, updating to the latest version will provide automatic installation assistance for the required .NET 9 SDK.
+> The GitHub Copilot app modernization for .NET extension can automatically help you install or upgrade to .NET 9. If you have an older version of the extension, update to the latest version for automatic installation assistance for the required .NET 9.0 SDK.
 
 ## Does the tool store my source code?
 

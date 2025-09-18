@@ -18,7 +18,7 @@ In this quickstart, you assess and migrate a .NET project using [GitHub Copilot 
 
 ## Prerequisites
 
-Before you begin, ensure follow the prerequisites of [https://aka.ms/ghcp-appmod/dotNET#prerequisites].
+Before you begin, [complete the preqrequisites](https://aka.ms/ghcp-appmod/dotNET#prerequisites).
 
 ### Sign-in to GitHub Copilot
 
@@ -74,7 +74,7 @@ GitHub Copilot app modernization for .NET (Preview) includes [predefined tasks](
 
 ### Start a migration task
 
-You can start a migration task in one of the following ways:
+Start a migration task using one of the following options:
 
 **Option 1. Run from the Assessment Report**
 
@@ -83,11 +83,12 @@ Select the **Run Task** button in the Assessment Report generated in the previou
 **Option 2. Send in Copilot Chat**
 
 Send the migration task number (e.g., 1.1) or its name in the chat.
-    :::image type="content" source="media/quickstart_chat_experience.png" alt-text="A screenshot showing sending the message in the Copilot Chat to start a migration task.":::
+
+:::image type="content" source="media/quickstart_chat_experience.png" alt-text="A screenshot showing sending the message in the Copilot Chat to start a migration task.":::
 
 ### Plan and progress tracker generation
 
-- When you start the migration, GitHub Copilot begins a session named "App modernization: migrate from <source technology> to <target technology>" in agent mode with predefined prompts.
+- When you start the migration, GitHub Copilot begins a session named "App modernization: migrate from `<source technology>` to `<target technology>`" in agent mode with predefined prompts.
 - The tool creates two files in the `.appmod/.migration` folder:
   - `plan.md` - the overall migration plan
   - `progress.md` - a progress tracker; GitHub Copilot marks items as it completes tasks
@@ -112,7 +113,8 @@ Send the migration task number (e.g., 1.1) or its name in the chat.
 ## Default chat messages
 
 The GitHub Copilot app modernization for .NET extension provides default chat message options to streamline your workflow.
-    :::image type="content" source="media/quickstart_followup.png" alt-text="A screenshot showing default chat message options in the Copilot Chat.":::
+
+:::image type="content" source="media/quickstart_followup.png" alt-text="A screenshot showing default chat message options in the Copilot Chat.":::
 
 You can choose one of the predefined options below and send it in the chat:
 

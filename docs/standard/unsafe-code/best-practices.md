@@ -63,7 +63,7 @@ If the GC interrupts the execution of the `UnreliableCode` method right after th
 location stored in `x` but won't know anything about `nativePointer` and will not update the value
 it contains. At that point, writing to `nativePointer` is writing to arbitrary memory.
 
-```cs
+```csharp
 unsafe void UnreliableCode(ref int x)
 {
     int* nativePointer = (int*)Unsafe.AsPointer(ref x);
@@ -80,7 +80,7 @@ to an unexpected exception, general global state corruption, or process terminat
 The recommended solution is instead to use the `fixed` keyword and `&` address-of operator to ensure that the
 GC cannot relocate the target reference for the duration of the operation.
 
-```cs
+```csharp
 unsafe void ReliableCode(ref int x)
 {
     fixed (int* nativePointer = &x) // `x` cannot be relocated for the duration of this block.
@@ -104,7 +104,7 @@ keyword defines a scope for the pointer obtained from the pinned object, it's st
 to escape the `fixed` scope and introduce bugs, as C# doesn't provide any ownership/lifecycle protections for it.
 A typical example is the following snippet:
 
-```cs
+```csharp
 unsafe int* GetPointerToArray(int[] array)
 {
     fixed (int* pArray = array)
@@ -161,7 +161,7 @@ a managed pointer's value is relevant not only when it's dereferenced by the dev
 when it's examined by the GC. Thus, a developer can create invalid unmanaged pointers without consequence
 as long as they're not dereferenced, but creating any invalid managed pointer is a bug. Example:
 
-```cs
+```csharp
 unsafe void UnmanagedPointers(int[] array)
 {
     fixed (int* p = array)
@@ -178,7 +178,7 @@ unsafe void UnmanagedPointers(int[] array)
 
 However, similar code using byrefs (managed pointers) is invalid.
 
-```cs
+```csharp
 void ManagedPointers_Incorrect(int[] array)
 {
     ref int invalidPtr = ref Unsafe.Add(ref array[0], -1000); // Already a bug!
@@ -203,7 +203,7 @@ While all kinds of struct-to-class or class-to-struct casts are an undefined beh
 it's also possible to encounter unreliable patterns with struct-to-struct or class-to-class conversions.
 A typical example of an unreliable pattern is the following code:
 
-```cs
+```csharp
 struct S1
 {
     string a;
@@ -237,7 +237,7 @@ to assign a GC reference (or a byref to struct with GC fields) to a potential he
 go through the Write Barrier that ensures that the GC is aware of new connections between objects.
 However, unsafe code allows us to bypass these guarantees and introduce unreliable patterns. Example:
 
-```cs
+```csharp
 unsafe void InvalidCode1(object[] arr1, object[] arr2)
 {
     fixed (object* p1 = arr1)
@@ -256,7 +256,7 @@ unsafe void InvalidCode1(object[] arr1, object[] arr2)
 
 Similarly, the following code with managed pointers is also unreliable:
 
-```cs
+```csharp
 struct StructWithGcFields
 {
     object a;
@@ -290,7 +290,7 @@ Specifically, do not assume that an object is still alive when it might not be. 
 across different runtimes or even between different Tiers of the same method (Tier0 and Tier1 in RyuJIT).
 Finalizers are a common scenario where such assumptions can be incorrect.
 
-```cs
+```csharp
 public class MyClassWithBadCode
 {
     public IntPtr _handle;
@@ -308,7 +308,7 @@ obj.DoWork();
 In this example, `DestroyHandle` might be called before `DoWork` completes or even before it begins.
 Therefore, it's crucial not to assume that objects, such as `this`, will remain alive until the end of the method.
 
-```cs
+```csharp
 void DoWork()
 {
     // A pseudo-code of what might happen under the hood:
@@ -353,7 +353,7 @@ Example: A struct containing GC references might be zeroed or overwritten in a n
 In C#, all idiomatic memory accesses include bounds checks by default.
 The JIT compiler can remove these checks if it can prove that they are unnecessary, as in the example below.
 
-```cs
+```csharp
 int SumAllElements(int[] array)
 {
     int sum = 0;
@@ -375,7 +375,7 @@ accurately assessing the performance benefits.
 
 Consider for example the following method.
 
-```cs
+```csharp
 int FetchAnElement(int[] array, int index)
 {
     return array[index];
@@ -384,7 +384,7 @@ int FetchAnElement(int[] array, int index)
 
 If the JIT cannot prove that `index` is always legally within the bounds of `array`, it will rewrite the method to look something like the below.
 
-```cs
+```csharp
 int FetchAnElement_AsJitted(int[] array, int index)
 {
     if (index < 0 || index >= array.Length)
@@ -395,7 +395,7 @@ int FetchAnElement_AsJitted(int[] array, int index)
 
 To reduce the overhead from that check in hot code, you might be tempted to use unsafe-equivalent APIs (`Unsafe` and `MemoryMarshal`):
 
-```cs
+```csharp
 int FetchAnElement_Unsafe1(int[] array, int index)
 {
     // DANGER: The access below is not bounds-checked and could cause an access violation.
@@ -405,7 +405,7 @@ int FetchAnElement_Unsafe1(int[] array, int index)
 
 Or use pinning and raw pointers:
 
-```cs
+```csharp
 unsafe int FetchAnElement_Unsafe2(int[] array, int index)
 {
     fixed (int* pArray = array)
@@ -428,7 +428,7 @@ bounds checks when it is safe to do so.
 3. ✔️ DO provide additional hints to the JIT, such as manual bounds checks before loops and saving fields to locals, as [.NET Memory Model](https://github.com/dotnet/runtime/blob/main/docs/design/specs/Memory-model.md) might conservatively prevent the JIT from removing bounds checks in some scenarios.
 4. ✔️ DO guard code with `Debug.Assert` bounds checks if unsafe code is still necessary. Consider the example below.
 
-```cs
+```csharp
 Debug.Assert(array is not null);
 Debug.Assert((index >= 0) && (index < array.Length));
 // Unsafe code here
@@ -436,7 +436,7 @@ Debug.Assert((index >= 0) && (index < array.Length));
 
 You might even refactor these checks into reusable helper methods.
 
-```cs
+```csharp
 [MethodImpl(MethodImplOptions.AggressiveInlining)]
 static T UnsafeGetElementAt<T>(this T[] array, int index)
 {
@@ -453,7 +453,7 @@ Inclusion of `Debug.Assert` doesn't provide any soundness checks for Release bui
 You might be tempted to use unsafe code to coalesce memory accesses to improve performance.
 A classic example is the following code to write `"False"` into a char array:
 
-```cs
+```csharp
 // Naive implementation
 static void WriteToDestination_Safe(char[] dst)
 {
@@ -498,7 +498,7 @@ mov      word  ptr [rax+0x08], 101
 
 There is an even simpler and more readable version of the code:
 
-```cs
+```csharp
 "False".CopyTo(dst);
 ```
 
@@ -524,7 +524,7 @@ potential performance penalties due to crossing cache and page boundaries), it s
 
 For example, consider the scenario where you're clearing two elements of an array at once:
 
-```cs
+```csharp
 uint[] arr = _arr;
 arr[i + 0] = 0;
 arr[i + 1] = 0;
@@ -536,7 +536,7 @@ observe the new value `0` or the old value `0xFFFFFFFF`, never "torn" values lik
 
 However, assume the following unsafe code is used to bypass the bounds check and zero both elements with a single 64-bit store:
 
-```cs
+```csharp
 ref uint p = ref Unsafe.Add(ref MemoryMarshal.GetArrayDataReference(arr), i);
 Unsafe.WriteUnaligned<ulong>(ref Unsafe.As<uint, byte>(ref p), 0UL);
 ```
@@ -575,7 +575,7 @@ instead of aligned ones such as `Unsafe.Read`/`Unsafe.Write` or `Unsafe.As` if d
 Be cautious when you use various serialization-like APIs to copy or read structs to or from byte arrays.
 If a struct contains paddings or non-blittable members (for example, `bool` or GC fields), then classic unsafe memory operations such as `Fill`, `CopyTo`, and `SequenceEqual` might accidentally copy sensitive data from the stack to the paddings or treat garbage data as significant during comparisons creating rarely reproducible bugs. A common anti-pattern might look like this:
 
-```cs
+```csharp
 T UnreliableDeserialization<TObject>(ReadOnlySpan<byte> data) where TObject : unmanaged
 {
     return MemoryMarshal.Read<TObject>(data); // or Unsafe.ReadUnaligned
@@ -600,14 +600,14 @@ The only correct approach is to use field-by-field loads/store specialized for e
 Generally, byrefs (managed pointers) are rarely null and the only safe way to create a null byref as of today is
 to initialize a `ref struct` with `default`. Then all its `ref` fields are null managed pointers:
 
-```cs
+```csharp
 RefStructWithRefField s = default;
 ref byte nullRef = ref s.refFld;
 ```
 
 However, there are several unsafe ways to create null byrefs. Some examples include:
 
-```cs
+```csharp
 // Null byref by calling Unsafe.NullRef directly:
 ref object obj = ref Unsafe.NullRef<object>();
 
@@ -638,7 +638,7 @@ the intended logic.
 
 1. ✔️ DO always consume `stackalloc` into `ReadOnlySpan<T>`/`Span<T>` on the left side of the expression to provide bounds checks:
 
-    ```cs
+    ```csharp
     // Good:
     Span<int> s = stackalloc int[10];
     s[2] = 0;  // Bounds check is eliminated by JIT for this write.
@@ -654,7 +654,7 @@ the intended logic.
 3. ❌ DON'T use large lengths for `stackalloc`. For example, 1024 bytes could be considered a reasonable upper bound.
 4. ✔️ DO check the range of variables used as `stackalloc` lengths.
 
-    ```cs
+    ```csharp
     void ProblematicCode(int length)
     {
         Span<int> s = stackalloc int[length]; // Bad practice: check the range of `length`!
@@ -664,7 +664,7 @@ the intended logic.
 
     Fixed version:
 
-    ```cs
+    ```csharp
     void BetterCode(int length)
     {
         // The "throw if length < 0" check below is important, as attempting to stackalloc a negative
@@ -685,7 +685,7 @@ the intended logic.
 Fixed-size buffers were useful for interop scenarios with data sources from other languages or platforms. They then were replaced by safer and more convenient [inline-arrays](../../csharp/language-reference/proposals/csharp-12.0/inline-arrays.md).
 An example of a fixed-size buffer (requires `unsafe` context) is the following snippet:
 
-```cs
+```csharp
 public struct MyStruct
 {
     public unsafe fixed byte data[8];
@@ -698,7 +698,7 @@ ms.data[10] = 0; // Out-of-bounds write, undefined behavior.
 
 A modern and a safer alternative is [inline-arrays](../../csharp/language-reference/proposals/csharp-12.0/inline-arrays.md):
 
-```cs
+```csharp
 [System.Runtime.CompilerServices.InlineArray(8)]
 public struct Buffer
 {
@@ -725,7 +725,7 @@ ms.buffer[10] = 0; // Compiler knows this is out of range and produces compiler 
 
 Avoid defining APIs that accept unmanaged or managed pointers to contiguous data. Instead, use `Span<T>` or `ReadOnlySpan<T>`:
 
-```cs
+```csharp
 // Poor API designs:
 void Consume(ref byte data, int length);
 void Consume(byte* data, int length);
@@ -748,7 +748,7 @@ can lead to information disclosure, data corruption, or process termination via 
 2. ❌ DON'T use implicit contracts for byref arguments, such as requiring all callers to allocate the input on the stack. If such a contract is necessary, consider using [ref struct](../../csharp/language-reference/builtin-types/ref-struct.md) instead.
 3. ❌ DON'T assume buffers are zero-terminated unless the scenario explicitly documents that this is a valid assumption. For example, even though .NET guarantees that `string` instances are null-terminated, the same does not hold of other buffer types like `ReadOnlySpan<char>` or `char[]`.
 
-    ```cs
+    ```csharp
     unsafe void NullTerminationExamples(string str, ReadOnlySpan<char> span, char[] array)
     {
         Debug.Assert(str is not null);
@@ -779,7 +779,7 @@ can lead to information disclosure, data corruption, or process termination via 
 
 4. ❌ DON'T pass a pinned `Span<char>` or `ReadOnlySpan<char>` across a p/invoke boundary unless you have also passed an explicit length argument. Otherwise, the code on the other side of the p/invoke boundary might improperly believe the buffer is null-terminated.
 
-```cs
+```csharp
 unsafe static extern void SomePInvokeMethod(char* pwszData);
 
 unsafe void IncorrectPInvokeExample(ReadOnlySpan<char> data)
@@ -796,7 +796,7 @@ unsafe void IncorrectPInvokeExample(ReadOnlySpan<char> data)
 
 To resolve this, use an alternative p/invoke signature that accepts _both_ the data pointer _and_ the length if possible. Otherwise, if the receiver has no way of accepting a separate length argument, ensure the original data is converted to a `string` before pinning it and passing it across the p/invoke boundary.
 
-```cs
+```csharp
 unsafe static extern void SomePInvokeMethod(char* pwszData);
 unsafe static extern void SomePInvokeMethodWhichTakesLength(char* pwszData, uint cchData);
 
@@ -825,7 +825,7 @@ unsafe void CorrectPInvokeExample(ReadOnlySpan<char> data)
 
 Strings in C# are immutable by design, and any attempt to mutate them using unsafe code can lead to undefined behavior. Example:
 
-```cs
+```csharp
 string s = "Hello";
 fixed (char* p = s)
 {
@@ -836,7 +836,7 @@ Console.WriteLine("Hello"); // prints "_ello" instead of "Hello"
 
 Modifying an interned string (*most* string literals are) will change the value for all other uses. Even without string interning, writing into a newly created string should be replaced with the safer `String.Create` API:
 
-```cs
+```csharp
 // Bad:
 string s = new string('\n', 4); // non-interned string
 fixed (char* p = s)
@@ -853,7 +853,7 @@ string s = string.Create(4, state, (chr, state) =>
 
 ### Recommendations
 
-1. ❌ DON'T mutate strings. Use the `String.Create` API to create a new string if complex copying logic is needed. Otherwise, use `.ToString()`, `StringBuilder`, `new string(...)` or string interpolation syntax.
+1. ❌ DON'T mutate strings. Use the `String.Create` API to create a new string if complex copying logic is needed. Otherwise, use `.ToString()`, `StringBuilder`, `new string(...)`, or string interpolation syntax.
 
 ## 18. Raw IL code (for example, System.Reflection.Emit and Mono.Cecil)
 
@@ -884,7 +884,7 @@ Avoid using such techniques unless absolutely necessary.
 allocating temporary buffers for I/O operations or other short-lived scenarios. While the API is straightforward
 and doesn't inherently contain unsafe features, it can lead to use-after-free bugs in C#. Example:
 
-```cs
+```csharp
 var buffer = ArrayPool<byte>.Shared.Rent(1024);
 _buffer = buffer; // buffer object escapes the scope
 Use(buffer);
@@ -904,7 +904,7 @@ but the bug becomes harder to detect when `Rent` and `Return` are in different s
 
 While ECMA-335 standard defines a Boolean as 0-255 where `true` is any non-zero value, it's better to avoid any explicit conversions between integers and Booleans in order to avoid introducing "denormalized" values as anything other than 0 or 1 likely leads to unreliable behavior.
 
-```cs
+```csharp
 // Bad:
 bool b = Unsafe.As<int, bool>(ref someInteger);
 int i = Unsafe.As<bool, int>(ref someBool);
@@ -922,7 +922,7 @@ The JIT present in earlier .NET runtimes did not fully optimize the safe version
 2. ✔️ DO use ternary operators (or other branching logic) instead. Modern .NET JITs will optimize them effectively.
 3. ❌ DON'T read `bool` using unsafe APIs such as `Unsafe.ReadUnaligned` or `MemoryMarshal.Cast` if you don't trust the input. Consider using ternary operators or equality comparisons instead:
 
-```cs
+```csharp
 // Bad:
 bool b = Unsafe.ReadUnaligned<bool>(ref byteData);
 

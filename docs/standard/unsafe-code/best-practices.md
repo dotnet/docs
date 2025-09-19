@@ -1002,6 +1002,7 @@ await Task.Delay(100);
 
 // ptr is used here
 ```
+
 This code produces warning `warning CS9123: The '&' operator should not be used on parameters or local variables in async methods.` which implies the code is likely incorrect.
 
 ## References

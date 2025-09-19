@@ -893,7 +893,7 @@ Avoid using such techniques unless absolutely necessary.
 2. ✔️ DO use Source Generators instead, if possible.
 3. ✔️ DO prefer [\[UnsafeAccessor\]](xref:System.Runtime.CompilerServices.UnsafeAccessorAttribute) instead of emitting raw IL for writing low overhead serialization code for private members if the need arises.
 4. ✔️ DO file an API proposal against [dotnet/runtime](https://github.com/dotnet/runtime) if some API is missing and you're forced to use raw IL code instead.
-5. ✔️ DO cuse `ilverify` or similar tools to validate the emitted IL code if you must use raw IL.
+5. ✔️ DO use `ilverify` or similar tools to validate the emitted IL code if you must use raw IL.
 
 ## 19. Uninitialized locals `[SkipLocalsInit]` and `Unsafe.SkipInit`
 

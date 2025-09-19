@@ -20,8 +20,7 @@ flowchart LR
     %% Local Development Machine Branch
     Q1 --> LocalDev[Development machine]
     LocalDev --> AppSP["**Service principal**"]
-    LocalDev --> DevAccount["**Developer account**"]
-    LocalDev --> Broker["**Broker**"]
+    LocalDev --> UserPrincipal["**User principal**"]
     
     %% Azure Branch
     Q1 --> AzureApp[Azure]
@@ -42,6 +41,6 @@ flowchart LR
     
     class NetApp startNode
     class Q1 questionBox
-    class AppSP,DevAccount,Broker,ManagedId,ServicePrincipal authMethod
+    class AppSP,UserPrincipal,ManagedId,ServicePrincipal authMethod
     class LocalDev,AzureApp,OnPremApp envNode
 ```

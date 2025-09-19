@@ -42,10 +42,10 @@ or memory corruption. Heap corruption bugs are particularly challenging to diagn
 
 The next sections describe common unsafe patterns with ✔️ DO and ❌ DON'T recommendations.
 
-## 1. Untracked managed pointers (`Unsafe.AsPointer` and friends)
+## 1. Untracked managed pointers (<xref:System.Runtime.CompilerServices.Unsafe.AsPointer``1(``0@)?displayProperty=nameWithType> and friends)
 
 It's not possible to convert a managed (tracked) pointer to an unmanaged (untracked)
-pointer in safe C#. When such need arises, it might be tempting to use `Unsafe.AsPointer`
+pointer in safe C#. When such need arises, it might be tempting to use <xref:System.Runtime.CompilerServices.Unsafe.AsPointer``1(``0@)?displayProperty=nameWithType>
 to avoid the overhead of a `fixed` statement. While there are valid
 use cases for that, it introduces a risk of creating untracked pointers to moveable objects.
 Example:
@@ -92,9 +92,9 @@ unsafe void ReliableCode(ref int x)
 
 ### Recommendations
 
-1. ❌ DON'T use `ref X` arguments with an implicit contract that `X` is always stack-allocated, pinned, or otherwise not relocatable by the GC. Consider instead taking a [ref struct](../../csharp/language-reference/builtin-types/ref-struct.md) argument or changing the argument to be a raw pointer type (`X*`).
-2. ❌ DON'T use a pointer from `Unsafe.AsPointer` if it can outlive the original object it is pointing to. [Per the API's documentation](xref:System.Runtime.CompilerServices.Unsafe.AsPointer``1(``0@)), it's up to the caller of `Unsafe.AsPointer` to guarantee that the GC cannot relocate the reference. Ensure it's clearly visible to code reviewers that the caller has fulfilled this prerequisite.
-3. ✔️ DO use `GCHandle` or `fixed` scopes instead of `Unsafe.AsPointer` to define explicit scopes for unmanaged pointers and to ensure that the object is always pinned.
+1. ❌ DON'T use `ref X` arguments with an implicit contract that `X` is always stack-allocated, pinned, or otherwise not relocatable by the GC. Same applies to plain objects and Spans - don't introduce non-obvious caller-based contracts about their lifetimes in methods signatures. Consider instead taking a [ref struct](../../csharp/language-reference/builtin-types/ref-struct.md) argument or changing the argument to be a raw pointer type (`X*`).
+2. ❌ DON'T use a pointer from <xref:System.Runtime.CompilerServices.Unsafe.AsPointer``1(``0@)?displayProperty=nameWithType> if it can outlive the original object it is pointing to. [Per the API's documentation](xref:System.Runtime.CompilerServices.Unsafe.AsPointer``1(``0@)), it's up to the caller of <xref:System.Runtime.CompilerServices.Unsafe.AsPointer``1(``0@)?displayProperty=nameWithType> to guarantee that the GC cannot relocate the reference. Ensure it's clearly visible to code reviewers that the caller has fulfilled this prerequisite.
+3. ✔️ DO use [GCHandle](xref:System.Runtime.InteropServices.GCHandle`1) or `fixed` scopes instead of <xref:System.Runtime.CompilerServices.Unsafe.AsPointer``1(``0@)?displayProperty=nameWithType> to define explicit scopes for unmanaged pointers and to ensure that the object is always pinned.
 4. ✔️ DO use unmanaged pointers (with `fixed`) instead of byrefs when you need to align an array to a specific boundary. This ensures the GC won't relocate the object and invalidate any alignment assumptions your logic might rely upon.
 
 ## 2. Exposing pointers outside of the `fixed` scope
@@ -111,7 +111,8 @@ unsafe int* GetPointerToArray(int[] array)
     {
         _ptrField = pArray; // Bug!
 
-        Method(pArray);     // Bug if `Method` allows `pArray` to escape, perhaps by assigning it to a field.
+        Method(pArray);     // Bug if `Method` allows `pArray` to escape,
+                            // perhaps by assigning it to a field.
 
         return pArray;      // Bug!
 
@@ -146,6 +147,15 @@ While accessing or relying on internal implementation details is bad practice in
 7. ❌ DON'T simply assume that a reference is non-relocatable. This guidance applies to string and UTF-8 (`"..."u8`) literals, static fields, RVA fields, LOH objects, and so on.
    * These are runtime implementation details that might hold for some runtimes but not for others.
    * Unmanaged pointers to such objects might not stop assemblies from being unloaded, causing the pointers to become dangling. Use `fixed` scopes to ensure correctness.
+
+   ```csharp
+   ReadOnlySpan<int> rva = [1, 2, 4, 4];
+   int* p = (int*)Unsafe.AsPointer(ref MemoryMarshal.GetReference(rva));
+   // Bug! The assembly containing the RVA field might be unloaded at this point
+   // and `p` becomes a dangling pointer.
+   int value = p[0]; // Access violation or other issue.
+   ```
+
 8. ❌ DON'T write code that relies on the implementation details of a specific runtime.
 
 ## 4. Invalid managed pointers (even if they are never dereferenced)
@@ -225,8 +235,7 @@ And even if the layout is similar, you should still be careful when GC reference
 ### Recommendations
 
 1. ❌ DON'T cast structs to classes or vice versa.
-2. ❌ DON'T use `Unsafe.As` for struct-to-struct or class-to-class conversions unless you're absolutely sure that the cast is legal.
-   * For more information, see the _Remarks_ section of the [`Unsafe.As` API docs](xref:System.Runtime.CompilerServices.Unsafe.As``2(``0@)).
+2. ❌ DON'T use `Unsafe.As` for struct-to-struct or class-to-class conversions unless you're absolutely sure that the cast is legal. For more information, see the _Remarks_ section of the [`Unsafe.As` API docs](xref:System.Runtime.CompilerServices.Unsafe.As``2(``0@)).
 3. ✔️ DO prefer safer field-by-field copying, external libraries such as [AutoMapper](https://github.com/AutoMapper/AutoMapper), or Source Generators for such conversions.
 4. ✔️ DO prefer `Unsafe.BitCast` over `Unsafe.As`, as `BitCast` provides some rudimentary usage checks. Note that these checks do not provide full correctness guarantees, meaning `BitCast` is still considered an unsafe API.
 
@@ -331,6 +340,20 @@ void DoWork()
 Therefore, it is recommended to explicitly extend the lifetime of objects using <xref:System.GC.KeepAlive(System.Object)?displayProperty=nameWithType>
 or <xref:System.Runtime.InteropServices.SafeHandle>.
 
+Another classic instance of this problem is <xref:System.Runtime.InteropServices.Marshal.GetFunctionPointerForDelegate``1(``0)?displayProperty=nameWithType> API:
+
+```csharp
+var callback = new NativeCallback(OnCallback);
+
+// Convert delegate to function pointer
+IntPtr fnPtr = Marshal.GetFunctionPointerForDelegate(callback);
+
+// Bug! The delegate might be collected by the GC here.
+// It should be kept alive until the native code is done with it.
+
+RegisterCallback(fnPtr);
+```
+
 ### Recommendations
 
 1. ❌ DON'T make assumptions about object lifetimes. For instance, never assume `this` is always alive through the end of the method.
@@ -346,7 +369,7 @@ Example: A struct containing GC references might be zeroed or overwritten in a n
 ### Recommendations
 
 1. ❌ DON'T access locals across threads (especially if they contain GC references).
-2. ✔️ DO use heap or unmanaged memory (for example, `NativeMemory.Alloc`) instead.
+2. ✔️ DO use heap or unmanaged memory (for example, <xref:System.Runtime.InteropServices.NativeMemory.Alloc*?displayProperty=nameWithType>) instead.
 
 ## 9. Unsafe bounds check removal
 
@@ -550,7 +573,7 @@ See the [.NET Memory Model](https://github.com/dotnet/runtime/blob/main/docs/des
 
 Another risk of unaligned memory access is the potential for an application crash in certain scenarios.
 While some .NET runtimes rely on the OS to fixup misaligned accesses, there are still some scenarios on some
-platforms where misaligned access can lead to an `DataMisalignedException` (or `SEHException`).
+platforms where misaligned access can lead to an <xref:System.DataMisalignedException> (or <xref:System.Runtime.InteropServices.SEHException>).
 Some of the examples include:
 
 * `Interlocked` operations on misaligned memory on some platforms ([example](https://github.com/dotnet/runtime/issues/91662)).
@@ -563,9 +586,9 @@ Some of the examples include:
 2. ✔️ DO align data manually if necessary, but keep in mind that the GC can relocate objects
 at any time, effectively changing the alignment dynamically. This is especially important for various
 `StoreAligned`/`LoadAligned` APIs in SIMD.
-3. ✔️ DO use explicit unaligned Read/Write APIs such as `Unsafe.ReadUnaligned`/`Unsafe.WriteUnaligned`
-instead of aligned ones such as `Unsafe.Read`/`Unsafe.Write` or `Unsafe.As` if data might be misaligned.
-4. ✔️ DO keep in mind that various memory manipulation APIs such as `Span<T>.CopyTo` also don't provide atomicity guarantees.
+3. ✔️ DO use explicit unaligned Read/Write APIs such as <xref:System.Runtime.CompilerServices.Unsafe.ReadUnaligned*?displayProperty=nameWithType>/<xref:System.Runtime.CompilerServices.Unsafe.WriteUnaligned*?displayProperty=nameWithType>
+instead of aligned ones such as <xref:System.Runtime.CompilerServices.Unsafe.Read``1(System.Void*)?displayProperty=nameWithType>/<xref:System.Runtime.CompilerServices.Unsafe.Write``1(System.Void*,``0)?displayProperty=nameWithType> or <xref:System.Runtime.CompilerServices.Unsafe.As``2(``0@)?displayProperty=nameWithType> if data might be misaligned.
+4. ✔️ DO keep in mind that various memory manipulation APIs such as <xref:System.Span`1.CopyTo(System.Span{`0})?displayProperty=nameWithType> also don't provide atomicity guarantees.
 5. ✔️ DO consult with the [.NET Memory Model](https://github.com/dotnet/runtime/blob/main/docs/design/specs/Memory-model.md) documentation ([see references](#references)) for more details on atomicity guarantees.
 6. ✔️ DO measure performance across all your target platforms, as some platforms impose a significant performance penalty for unaligned memory accesses. You may find that on these platforms, naive code performs better than clever code.
 7. ✔️ DO keep in mind that there are scenarios and platforms where unaligned memory access might lead to an exception.
@@ -616,7 +639,7 @@ ref object obj = ref Unsafe.AsRef<object>((void*)0);
 ```
 
 The risk of introducing memory safety issues is low, and any attempt to dereference
-a null byref will lead to a well-defined `NullReferenceException`.
+a null byref will lead to a well-defined [NullReferenceException](xref:System.NullReferenceException).
 However, the C# compiler [assumes](https://github.com/dotnet/roslyn/issues/72165) that dereferencing a byref always succeeds
 and produces no observable side effect. Therefore it is a legal optimization to elide any dereference whose resulting value is
 immediately thrown away. See [dotnet/runtime#98681](https://github.com/dotnet/runtime/pull/98681) (and
@@ -670,9 +693,9 @@ the intended logic.
         // The "throw if length < 0" check below is important, as attempting to stackalloc a negative
         // length will result in process termination.
         ArgumentOutOfRangeException.ThrowIfLessThan(length, 0, nameof(length));
-        Span<int> s = length <= 512 ? stackalloc int[length] : new int[length];
+        Span<int> s = length <= 256 ? stackalloc int[length] : new int[length];
         // Or:
-        // Span<int> s = length <= 512 ? stackalloc int[512] : new int[length];
+        // Span<int> s = length <= 256 ? stackalloc int[256] : new int[length];
         // Which performs a faster zeroing of the stackalloc, but potentially consumes more stack space.
         Consume(s);
     }
@@ -717,6 +740,9 @@ ms.buffer[7] = 0; // Bounds check elided; index is known to be in range.
 ms.buffer[10] = 0; // Compiler knows this is out of range and produces compiler error CS9166.
 ```
 
+It's also worth noting that fixed-size buffers might have non-zeroed contents in certain scenarios, which
+is another reason to avoid them in favor of inline arrays which are always zero-initialized by default.
+
 ### Recommendations
 
 1. ✔️ DO prefer replacing fixed-size buffers with inline arrays or IL marshalling attributes where possible.
@@ -746,7 +772,7 @@ can lead to information disclosure, data corruption, or process termination via 
 
 1. ❌ DON'T expose methods whose arguments are pointer types (unmanaged pointers `T*` or managed pointers `ref T`) when those arguments are intended to represent buffers. Use safe buffer types like `Span<T>` or `ReadOnlySpan<T>` instead.
 2. ❌ DON'T use implicit contracts for byref arguments, such as requiring all callers to allocate the input on the stack. If such a contract is necessary, consider using [ref struct](../../csharp/language-reference/builtin-types/ref-struct.md) instead.
-3. ❌ DON'T assume buffers are zero-terminated unless the scenario explicitly documents that this is a valid assumption. For example, even though .NET guarantees that `string` instances are null-terminated, the same does not hold of other buffer types like `ReadOnlySpan<char>` or `char[]`.
+3. ❌ DON'T assume buffers are zero-terminated unless the scenario explicitly documents that this is a valid assumption. For example, even though .NET guarantees that `string` instances and `"..."u8` literals are null-terminated, the same does not hold of other buffer types like `ReadOnlySpan<char>` or `char[]`.
 
     ```csharp
     unsafe void NullTerminationExamples(string str, ReadOnlySpan<char> span, char[] array)
@@ -863,11 +889,11 @@ Avoid using such techniques unless absolutely necessary.
 
 ### Recommendations
 
-1. ❌ DON'T emit raw IL code as it comes with no guiderails and it makes it easy to introduce type safety and other issues.
-     * Like other dynamic code generation techniques, emitting raw IL is also not AOT-friendly if it's not done at the build time.
+1. ❌ DON'T emit raw IL code as it comes with no guiderails and it makes it easy to introduce type safety and other issues. Like other dynamic code generation techniques, emitting raw IL is also not AOT-friendly if it's not done at the build time.
 2. ✔️ DO use Source Generators instead, if possible.
 3. ✔️ DO prefer [\[UnsafeAccessor\]](xref:System.Runtime.CompilerServices.UnsafeAccessorAttribute) instead of emitting raw IL for writing low overhead serialization code for private members if the need arises.
 4. ✔️ DO file an API proposal against [dotnet/runtime](https://github.com/dotnet/runtime) if some API is missing and you're forced to use raw IL code instead.
+5. ✔️ DO cuse `ilverify` or similar tools to validate the emitted IL code if you must use raw IL.
 
 ## 19. Uninitialized locals `[SkipLocalsInit]` and `Unsafe.SkipInit`
 
@@ -947,7 +973,7 @@ While most of the suggestions in this document apply to interop scenarios as wel
 
 ## 23. Thread safety
 
-See [Managed threading best practices](../../standard/threading/managed-threading-best-practices.md) and [.NET Memory Model](https://github.com/dotnet/runtime/blob/main/docs/design/specs/Memory-model.md).
+Although memory safety and thread safety are orthogonal concepts, many of the highlighed issues in this document can lead to thread safety issues as well. For example, non-atomic coalesced writes. See [Managed threading best practices](../../standard/threading/managed-threading-best-practices.md) and [.NET Memory Model](https://github.com/dotnet/runtime/blob/main/docs/design/specs/Memory-model.md).
 
 ## 24. Unsafe code around SIMD/Vectorization
 
@@ -960,6 +986,23 @@ In the context of the unsafe code it's important to keep in mind:
 ## 25. Fuzz testing
 
 Fuzz testing (or "fuzzing") is an automated software testing technique that involves providing invalid, unexpected, or random data as inputs to a computer program. It provides a way to detect memory safety issues in code that may have gaps in test coverage. You can use tools like [SharpFuzz](https://github.com/Metalnem/sharpfuzz) to set up fuzz testing for .NET code.
+
+## 26. Compiler warnings
+
+Generally, Roslyn intentionally doesn't provide extensive support such as warnings and analyzers around incorrect unsafe code usage to motivate developers to use safe code instead. However, there are some existing warnings that can help detect potential issues and should not be ignored or suppressed without careful consideration. Some examples include:
+
+```csharp
+nint ptr = 0;
+unsafe
+{
+    int local = 0;
+    ptr = (nint)(&local);
+}
+await Task.Delay(100);
+
+// ptr is used here
+```
+This code produces warning `warning CS9123: The '&' operator should not be used on parameters or local variables in async methods.` which implies the code is likely incorrect.
 
 ## References
 

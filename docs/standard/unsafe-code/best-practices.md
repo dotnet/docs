@@ -973,7 +973,7 @@ While most of the suggestions in this document apply to interop scenarios as wel
 
 ## 23. Thread safety
 
-Although memory safety and thread safety are orthogonal concepts, many of the highlighed issues in this document can lead to thread safety issues as well. For example, non-atomic coalesced writes. See [Managed threading best practices](../../standard/threading/managed-threading-best-practices.md) and [.NET Memory Model](https://github.com/dotnet/runtime/blob/main/docs/design/specs/Memory-model.md).
+Memory safety and thread safety are orthogonal concepts. Code can be memory safe yet still contain data races, torn reads, or visibility bugs; conversely, code can be thread safe while still invoking undefined behavior through unsafe memory manipulation. For broader guidance, see [Managed threading best practices](../../standard/threading/managed-threading-best-practices.md) and [.NET Memory Model](https://github.com/dotnet/runtime/blob/main/docs/design/specs/Memory-model.md).
 
 ## 24. Unsafe code around SIMD/Vectorization
 

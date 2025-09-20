@@ -1005,6 +1005,11 @@ await Task.Delay(100);
 
 This code produces warning `warning CS9123: The '&' operator should not be used on parameters or local variables in async methods.` which implies the code is likely incorrect.
 
+### Recommendations
+
+1. ✔️ DO pay attention to compiler warnings and fix the underlying issues instead of suppressing them.
+2. ❌ DON'T assume that the absence of compiler warnings implies the code is correct - C# compiler has very limited to no support for detecting incorrect unsafe code usage.
+
 ## References
 
 * [Unsafe code, pointer types, and function pointers](../../csharp/language-reference/unsafe-code.md).

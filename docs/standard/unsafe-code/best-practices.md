@@ -989,7 +989,7 @@ Fuzz testing (or "fuzzing") is an automated software testing technique that invo
 
 ## 26. Compiler warnings
 
-Generally, Roslyn intentionally doesn't provide extensive support such as warnings and analyzers around incorrect unsafe code usage. However, there are some existing warnings that can help detect potential issues and should not be ignored or suppressed without careful consideration. Some examples include:
+Generally, C# compiler doesn't provide extensive support such as warnings and analyzers around incorrect unsafe code usage. However, there are some existing warnings that can help detect potential issues and should not be ignored or suppressed without careful consideration. Some examples include:
 
 ```csharp
 nint ptr = 0;

@@ -36,10 +36,10 @@
 
     // Define increment and decrement to add 1/den, rather than 1/1.
     public static Fraction operator ++(Fraction operand)
-        => new Fraction(operand.numerator++, operand.denominator);
+        => new Fraction(operand.numerator + 1, operand.denominator);
 
     public static Fraction operator --(Fraction operand) =>
-        new Fraction(operand.numerator--, operand.denominator);
+        new Fraction(operand.numerator - 1, operand.denominator);
 
     public override string ToString() => $"{numerator} / {denominator}";
 

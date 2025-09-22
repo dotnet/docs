@@ -9,7 +9,6 @@ author: JiDong
 ms.author: donji
 ---
 
-
 # Quickstart: Containerize your project using GitHub Copilot app modernization for .NET
 
 In this quickstart, you learn how to containerize your project using GitHub Copilot app modernization for .NET. The app modernization extension uses GitHub Copilot's AI capabilities to:
@@ -35,7 +34,7 @@ Before you begin, ensure you have the following requirements:
 
 ## Containerize your project
 
-The App Modernization for .NET containerization feature helps you containerize your project. Follow these steps to start the containerization process:
+The GitHub Copilot app modernization for .NET containerization feature helps you containerize your project. To start the containerization process, complete the following steps:
 
 1. In Visual Studio, open your project.
 

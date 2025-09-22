@@ -107,7 +107,7 @@ dotnet-trace collect
 
 - **`--clreventlevel <clreventlevel>`**
 
-  Verbosity of CLR events to be emitted.
+  Verbosity of CLR events to be emitted. This option only applies when `--clrevents` is specified and not overridden by `--profile` or `--providers`.
   The following table shows the available event levels.
 
   | String value    | Numeric value |
@@ -121,7 +121,7 @@ dotnet-trace collect
 
 - **`--clrevents <clrevents>`**
 
-  A list of CLR runtime provider keywords to enable separated by `+` signs. This is a simple mapping that lets you specify event keywords via string aliases rather than their hex values. For example, `dotnet-trace collect --providers Microsoft-Windows-DotNETRuntime:3:4` requests the same set of events as `dotnet-trace collect --clrevents gc+gchandle --clreventlevel informational`. The table below shows the list of available keywords:
+  A list of CLR runtime provider keywords to enable separated by `+` signs. This is a simple mapping that lets you specify event keywords via string aliases rather than their hex values. For example, `dotnet-trace collect --providers Microsoft-Windows-DotNETRuntime:3:4` requests the same set of events as `dotnet-trace collect --clrevents gc+gchandle --clreventlevel informational`. If the CLR runtime provider `Microsoft-Windows-DotNETRuntime` is also enabled through `--providers` or `--profile`, this option will be ignored. The table below shows the list of available keywords:
 
   | Keyword String Alias | Keyword Hex Value |
   | ------------ | ------------------- |
@@ -213,9 +213,9 @@ dotnet-trace collect
 
 - **`--profile <list-of-comma-separated-profile-names>`**
 
-  A comma-separated list of named, pre-defined set of provider configurations for common tracing scenarios. The union of profiles and providers will be in effect.
+  A comma-separated list of named, pre-defined set of provider configurations for common tracing scenarios. Providers configured through `--providers` will override the profile's configuration. Similarly, if any profile configures the CLR runtime provider, it will override any configurations prescribed through `--clrevents`.
 
-  Default behavior (when `--profile`, `--providers`, and `--clrevents` are omitted): dotnet-trace enables a useful, low-overhead composition: `dotnet-common` + `dotnet-thread-time`.
+  Default behavior (when `--profile`, `--providers`, and `--clrevents` are omitted): dotnet-trace enables a useful, low-overhead composition: `dotnet-common` + `dotnet-sampled-thread-time`.
 
   Available profiles:
 
@@ -225,13 +225,14 @@ dotnet-trace collect
   |`dotnet-sampled-thread-time`|Samples .NET thread stacks (~100 Hz) to identify hotspots over time. Uses the runtime sample profiler with managed stacks.|
   |`gc-verbose`|Tracks GC collections and samples object allocations.|
   |`gc-collect`|Tracks GC collections only at very low overhead.|
+  |`database`|Captures ADO.NET and Entity Framework database commands.|
 
   > [!NOTE]
   > The former default `cpu-sampling` profile is now `--profile dotnet-sampled-thread-time` + `--providers "Microsoft-Windows-DotNETRuntime:0x14C14FCCBD:4"`.
 
 - **`--providers <list-of-comma-separated-providers>`**
 
-  A comma-separated list of `EventPipe` providers to be enabled. These providers supplement any providers implied by `--profile <list-of-comma-separated-profile-names>`. If there's any inconsistency for a particular provider, this configuration takes precedence over the implicit configuration from the profiles.
+  A comma-separated list of `EventPipe` providers to be enabled. These providers supplement any providers implied by `--profile <list-of-comma-separated-profile-names>`. If there's any inconsistency for a particular provider, this configuration takes precedence over the implicit configuration from `--profile` and `--clrevents`.
 
   This list of providers is in the form:
 
@@ -286,10 +287,10 @@ This Linux-only command includes the same .NET events as [`dotnet-trace collect`
 
 ### Default collection behavior
 
-When `--profile`, `--clrevents`, and `--providers` aren’t specified, `collect-linux` enables the default `profile` providing the comprehensive composition:
+When `--providers`, `--profile`, `--clrevents`, and `--perf-events` aren’t specified, `collect-linux` enables the default `profile` providing the comprehensive composition:
 
 - `dotnet-common` — lightweight .NET runtime diagnostics.
-- `kernel-cpu` — kernel CPU sampling (perf-based) via `Universal.Events/cpu`.
+- `cpu-sampling` — kernel CPU sampling (perf-based) via `Universal.Events/cpu`.
 
 By default, a machine-wide trace will be collected. .NET Processes are discovered through their diagnostics ports, which are located under the `TMPDIR` environment variable when set and otherwise under `/tmp`.
 
@@ -315,15 +316,12 @@ dotnet-trace collect-linux
     [--profile <list-of-comma-separated-profile-names>]
 
     # Trace Collection
-    [--format <Chromium|NetTrace|Speedscope>]
     [-o|--output <trace-file-path>]
     [--duration dd:hh:mm:ss]
 
     # .NET Process Target (Optional)
     [-n, --name <name>]
     [-p|--process-id <pid>]
-    [-- <command>]
-    [--show-child-io]
 ```
 
 ### Options
@@ -332,7 +330,7 @@ dotnet-trace collect-linux
 
 - **`--providers <list-of-comma-separated-providers>`**
 
-  A comma-separated list of `EventPipe` providers to be enabled. These providers supplement any providers implied by `--profile <list-of-comma-separated-profile-names>`. If there's any inconsistency for a particular provider, this configuration takes precedence over the implicit configuration from the specified profiles.
+  A comma-separated list of `EventPipe` providers to be enabled. These providers supplement any providers implied by `--profile <list-of-comma-separated-profile-names>`. If there's any inconsistency for a particular provider, this configuration takes precedence over the implicit configuration from `--profile` and `--clrevents`.
 
   This list of providers is in the form:
 
@@ -344,7 +342,7 @@ dotnet-trace collect-linux
 
 - **`--clreventlevel <clreventlevel>`**
 
-  Verbosity of CLR events to be emitted.
+  Verbosity of CLR events to be emitted. This option only applies when `--clrevents` is specified and not overridden by `--profile` or `--providers`.
   The following table shows the available event levels.
 
   | String value    | Numeric value |
@@ -358,7 +356,7 @@ dotnet-trace collect-linux
 
 - **`--clrevents <clrevents>`**
 
-  A list of CLR runtime provider keywords to enable separated by `+` signs. This is a simple mapping that lets you specify event keywords via string aliases rather than their hex values. For example, `dotnet-trace collect-linux --providers Microsoft-Windows-DotNETRuntime:3:4` requests the same set of events as `dotnet-trace collect-linux --clrevents gc+gchandle --clreventlevel informational`. The table below shows the list of available keywords:
+    A list of CLR runtime provider keywords to enable separated by `+` signs. This is a simple mapping that lets you specify event keywords via string aliases rather than their hex values. For example, `dotnet-trace collect-linux --providers Microsoft-Windows-DotNETRuntime:3:4` requests the same set of events as `dotnet-trace collect-linux --clrevents gc+gchandle --clreventlevel informational`. If the CLR runtime provider `Microsoft-Windows-DotNETRuntime` is also enabled through `--providers` or `--profile`, this option will be ignored. The table below shows the list of available keywords:
 
   | Keyword String Alias | Keyword Hex Value |
   | ------------ | ------------------- |
@@ -406,33 +404,32 @@ dotnet-trace collect-linux
 
 - **`--perf-events <list-of-perf-events>`**
 
-  A comma-separated list of kernel perf events to include in the trace. Available kernel events can be found under tracefs, which is typically mounted at `/sys/kernel/tracing`, through `available_events` for all available events or through the `events/` subdirectory for categorized events.
+  A comma-separated list of perf events to include in the trace. Available events can be found under tracefs, which is typically mounted at `/sys/kernel/tracing`, through `available_events` for all available events or through the `events/` subdirectory for categorized events.
 
   Example: `--perf-events syscalls:sys_enter_execve,sched:sched_switch,sched:sched_wakeup`
 
 - **`--profile <list-of-comma-separated-profile-names>`**
 
-  A named, pre-defined set of provider configurations for common tracing scenarios. You can specify multiple profiles as a comma-separated list. When multiple profiles are specified, the providers and settings are combined (union), and duplicates are ignored.
+  A comma-separated list of named, pre-defined set of provider configurations for common tracing scenarios. Providers configured through `--providers` will override the profile's configuration. Similarly, if any profile configures the CLR runtime provider, it will override any configurations prescribed through `--clrevents`.
+
+  Default behavior (when `--profile`, `--providers`, `--clrevents`, and `--perf-events` are omitted): dotnet-trace enables a useful, low-overhead composition: `dotnet-common` + `cpu-sampling`.
 
   Available profiles:
 
   | Profile | Description |
   |---------|-------------|
   |`dotnet-common`|Lightweight .NET runtime diagnostics designed to stay low overhead. Includes:<br/><ul><li>GC</li><li>AssemblyLoader</li><li>Loader</li><li>Jit</li><li>Exception</li><li>Threading</li><li>JittedMethodILToNativeMap</li><li>Compilation</li></ul>Equivalent to `--providers "Microsoft-Windows-DotNETRuntime:0x100003801D:4"`.|
-  |`kernel-cpu`|Kernel CPU sampling (perf-based), emitted as `Universal.Events/cpu`, for precise on-CPU attribution.|
-  |`kernel-cswitch`|Kernel thread context switches, emitted as `Universal.Events/cswitch`, for on/off-CPU and scheduler analysis.|
+  |`cpu-sampling`|Kernel CPU sampling (perf-based), emitted as `Universal.Events/cpu`, for precise on-CPU attribution.|
+  |`thread-time`|Kernel thread context switches, emitted as `Universal.Events/cswitch`, for on/off-CPU and scheduler analysis.|
   |`gc-verbose`|Tracks GC collections and samples object allocations.|
   |`gc-collect`|Tracks GC collections only at very low overhead.|
+  |`database`|Captures ADO.NET and Entity Framework database commands.|
 
 #### Trace Collection Options
 
-- **`--format {Chromium|NetTrace|Speedscope}`**
-
-  Sets the output format for the trace file conversion. The default is `NetTrace`.
-
 - **`-o|--output <trace-file-path>`**
 
-  The output path for the collected trace data. If not specified it defaults to `<appname>_<yyyyMMdd>_<HHmmss>.nettrace`, for example, `myapp_20210315_111514.nettrace``.
+  The output path for the collected trace data. If not specified, it defaults to `trace_<yyyyMMdd>_<HHmmss>.nettrace` for the default machine-wide trace and to `<appname>_<yyyyMMdd>_<HHmmss>.nettrace` for a process-specific trace (`--name` or `--process-id`)
 
 - **`--duration <time-to-run>`**
 

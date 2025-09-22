@@ -24,15 +24,6 @@ In this quickstart, you learn how to deploy your project to Azure using GitHub C
   - Supported subscription plans: Copilot Pro, Copilot Pro+, Copilot Business, or Copilot Enterprise
   - If you change subscriptions, you must restart Visual Studio
 
-### Sign in to GitHub Copilot
-
-GitHub Copilot is required for the App Modernization extension. Make sure you're signed in to GitHub Copilot in Visual Studio:
-
-1. Select the **Copilot** icon at the top of Visual Studio to open the GitHub Copilot pane.
-1. Follow the UI prompts to sign in to Copilot.
-
-For more information, see [Set up GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states).
-
 ## Deploy your project
 
 The App Modernization for .NET deployment feature helps you deploy your migrated app to Azure. Follow these steps to start the deployment process:

@@ -10,9 +10,8 @@ ms.author: alexwolf
 
 # Quickstart: Assess and migrate a .NET project with GitHub Copilot app modernization for .NET (Preview)
 
-In this quickstart, you assess and migrate a .NET project by using [GitHub Copilot app modernization for .NET (Preview)](https://aka.ms/ghcp-appmod/dotNET). You complete the following tasks:
+In this quickstart, you assess and migrate a .NET project by using GitHub Copilot app modernization for .NET. You complete the following tasks:
 
-- Install and configure the GitHub Copilot app modernization for .NET extension
 - Assess a sample project (Contoso University)
 - Start the migration process
 
@@ -28,20 +27,6 @@ GitHub Copilot is a dependency of the app modernization extension and experience
 1. Follow the UI prompts to sign in to Copilot.
 
 For more information, see [Set up GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states).
-
-## Install the GitHub Copilot app modernization extension
-
-To complete the steps ahead, you need to install the [GitHub Copilot app modernization for .NET](https://aka.ms/appmod-dotnet-marketplace) extension.
-
-1. In Visual Studio, go to **Extensions** > **Manage Extensions**.
-1. Search for **GitHub Copilot app modernization for .NET** in the marketplace.
-1. On the extension page, select **Install**.
-1. Follow the notification bar prompts to close Visual Studio and complete the installation.
-1. Restart Visual Studio after installation.
-
-You can also view the [GitHub Copilot app modernization for .NET (Preview)](https://aka.ms/appmod-dotnet-marketplace) directly on the extension marketplace.
-
-For more information, see [Find, install, and manage extensions for Visual Studio](/visualstudio/ide/finding-and-using-visual-studio-extensions).
 
 ## Assess app readiness
 

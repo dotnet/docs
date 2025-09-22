@@ -10,19 +10,19 @@ ms.author: donji
 
 # Deploy your project to Azure by using GitHub Copilot app modernization for .NET
 
-In this quickstart, you learn how to deploy your project to Azure using GitHub Copilot app modernization for .NET. This tool helps you deploy migrated projects to Azure and automatically fixes deployment errors during the process.
+In this quickstart, you learn how to deploy your project to Azure with GitHub Copilot app modernization for .NET. This tool lets you deploy migrated projects to Azure and automatically fixes deployment errors during the process.
 
 ## Prerequisites
 
-- Windows Operating System
-- [Visual Studio 2022 version 17.14.16 or newer](https://visualstudio.microsoft.com/downloads/) (To be released)
-- [.NET desktop development workload](/visualstudio/install/modify-visual-studio?view=vs-2022&preserve-view=true#change-workloads-or-individual-components) with the following optional components enabled:
+- Windows operating system
+- [Visual Studio 2022 version 17.14.16 or newer](https://visualstudio.microsoft.com/downloads/)
+- [.NET desktop development workload](/visualstudio/install/modify-visual-studio?view=vs-2022&preserve-view=true#change-workloads-or-individual-components) with these optional components enabled:
   - GitHub Copilot
   - GitHub Copilot app modernization for .NET
-- GitHub account with Copilot access and supported subscription plan:
-  - [Sign in to Visual Studio using a GitHub account](/visualstudio/ide/work-with-github-accounts) with [Copilot access](https://docs.github.com/copilot/about-github-copilot/what-is-github-copilot#getting-access-to-copilot)
-  - Supported subscription plans: Copilot Pro, Copilot Pro+, Copilot Business, or Copilot Enterprise
-  - If you change subscriptions, you must restart Visual Studio
+- GitHub account with Copilot access and a supported subscription plan:
+  - [Sign in to Visual Studio using a GitHub account](/visualstudio/ide/work-with-github-accounts) with [Copilot access](https://docs.github.com/copilot/about-github-copilot/what-is-github-copilot#getting-access-to-copilot).
+  - Supported subscription plans: Copilot Pro, Copilot Pro+, Copilot Business, or Copilot Enterprise.
+  - If you change subscriptions, restart Visual Studio.
 
 ## Deploy your project
 
@@ -44,17 +44,17 @@ The App Modernization for .NET deployment feature helps you deploy your migrated
 
 1. After you start the deployment, GitHub Copilot might ask for your approval to use tools or run commands. Grant permission when prompted.
 
-1. GitHub Copilot creates a plan. This plan explains the overall deployment strategy, including deployment goals, project information, Azure resource architecture, Azure resources, and execution steps.
+1. GitHub Copilot creates a plan. The plan explains the deployment strategy, including deployment goals, project information, Azure resource architecture, Azure resources, and execution steps.
 
 1. You can edit the plan directly or ask GitHub Copilot to edit it to customize your deployment before you proceed.
 
 1. When you're satisfied with the plan, instruct GitHub Copilot to continue.
 
-1. GitHub Copilot follows the plan and executes the deployment process.
+1. GitHub Copilot follows the plan and runs the deployment process.
 
 1. When deployment finishes, GitHub Copilot provides a summary of the deployment process.
 
 ## Notes
 
 - Use Claude Sonnet 4 or later models for the best results.
-- Copilot might need a few iterations to correct deployment errors.
+- Copilot can need a few iterations to fix deployment errors.

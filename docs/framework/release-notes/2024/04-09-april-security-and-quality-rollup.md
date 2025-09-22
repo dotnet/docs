@@ -46,7 +46,7 @@ Addresses an issue when the native C# compiler (csc.exe) is used to compile code
 
 ## Known issues
 
-This release contains no known issues.  
+This release contains no known issues.
 
 ## Summary tables
 
@@ -55,7 +55,7 @@ The following table outlines the updates in this release.
 | Product version | Cumulative update |
 | --- | --- |
 | **Microsoft server operating system, version 23H2** | |
-| .NET Framework 3.5, 4.8.1 | [5036617](https://support.microsoft.com/kb/5036617) |
+| .NET Framework 3.5, 4.8.1 | [5036617](https://support.microsoft.com/topic/april-9-2024-kb5036617-cumulative-update-for-net-framework-3-5-and-4-8-1-for-microsoft-server-operating-system-version-23h2-fddb7c8a-9f68-4bda-96ca-e1033802e6e3) |
 | **Windows 11, version 22H2 and Windows 11, version 23H2** | |
 | .NET Framework 3.5, 4.8.1 | [5036620](https://support.microsoft.com/kb/5036620) |
 | **Windows 11, version 21H2** | **[5037037](https://support.microsoft.com/kb/5037037)** |
@@ -89,7 +89,7 @@ The following table is for earlier Windows and Windows Server versions for Secur
 | .NET Framework 4.8 | [5036614](https://support.microsoft.com/kb/5036614) |
 | **Windows Server 2012** | **[5037039](https://support.microsoft.com/kb/5037039)** |
 | .NET Framework 3.5 | [5036624](https://support.microsoft.com/kb/5036624) |
-| .NET Framework 4.6.2, 4.7, 4.7.1, 4.7.2 | [5036605](https://support.microsoft.com/kb/5036605) |
+| .NET Framework 4.6.2, 4.7, 4.7.1, 4.7.2 | [5036605](https://support.microsoft.com/topic/april-9-2024-security-and-quality-rollup-for-net-framework-4-6-2-4-7-4-7-1-4-7-2-for-windows-server-2012-kb5036605-60a4d4aa-c68c-441e-aff0-d9c3a58d562d) |
 | .NET Framework 4.8 | [5036612](https://support.microsoft.com/kb/5036612) |
 | **Windows Server 2008 R2** | **[5037038](https://support.microsoft.com/kb/5037038)** |
 | .NET Framework 3.5.1 | [5036626](https://support.microsoft.com/kb/5036626) |
@@ -108,7 +108,7 @@ The following table is for earlier Windows and Windows Server versions for Secur
 | .NET Framework 3.5.1 | [5036634](https://support.microsoft.com/kb/5036634) |
 | .NET Framework 4.6.2, 4.7, 4.7.1, 4.7.2 | [5036631](https://support.microsoft.com/kb/5036631) |
 | .NET Framework 4.8 |[5036632](https://support.microsoft.com/kb/5036632) |
-| **Windows Server 2008** | **[5037128](https://support.microsoft.com/kb/5037128)** |
+| **Windows Server 2008** | **[5037128](https://support.microsoft.com/topic/april-9-2024-security-only-update-for-net-framework-2-0-3-0-3-5-sp1-4-6-2-for-windows-server-2008-sp2-kb5037128-19f7a85f-a04f-4085-b68e-f2d8fb7196bd)** |
 | .NET Framework 2.0, 3.0 | [5036633](https://support.microsoft.com/kb/5036633) |
 | .NET Framework 3.5 SP1 | [5036636](https://support.microsoft.com/kb/5036636) |
 | .NET Framework 4.6.2 | [5036631](https://support.microsoft.com/kb/5036631) |

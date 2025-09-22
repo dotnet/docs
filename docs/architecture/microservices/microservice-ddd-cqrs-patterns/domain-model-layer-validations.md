@@ -92,7 +92,7 @@ Using field validation with data annotations, for example, you do not duplicate 
   <https://martinfowler.com/articles/replaceThrowWithNotification.html>
 
 - **Specification and Notification Patterns** \
-  <https://www.codeproject.com/Tips/790758/Specification-and-Notification-Patterns>
+  <https://www.codeproject.com/articles/Specification-and-Notification-Patterns>
 
 - **Lev Gorodinski. Validation in Domain-Driven Design (DDD)** \
   <http://gorodinski.com/blog/2012/05/19/validation-in-domain-driven-design-ddd/>

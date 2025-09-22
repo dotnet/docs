@@ -30,21 +30,21 @@ Addressed an update for GB18030 certificate for Chinese language changes. (*Appl
 
 ## Known issues
 
-This release contains no known issues.  
+This release contains no known issues.
 
 ## Summary tables
 
 | Product version | Cumulative update |
 | --- | --- |
 | **Windows 11, version 24H2** | |
-| .NET Framework 3.5, 4.8.1 | [5064401](https://support.microsoft.com/kb/5064401) |
+| .NET Framework 3.5, 4.8.1 | [5064401](https://support.microsoft.com/topic/august-28-2025-kb5064401-cumulative-update-for-net-framework-3-5-and-4-8-1-for-windows-11-version-24h2-and-microsoft-server-operating-system-version-24h2-71f4180b-3364-4d0e-8032-e8aca043b0fe) |
 | **Microsoft server operating system, version 24H2** | |
 | .NET Framework 3.5, 4.8.1 | [5064401](https://support.microsoft.com/kb/5064401) |
 | **Microsoft server operating system, version 23H2** | |
 | .NET Framework 3.5, 4.8.1 | [5065756](https://support.microsoft.com/kb/5065756) |
 | **Windows 11, version 22H2 and Windows 11, version 23H2** | |
 | .NET Framework 3.5, 4.8.1 | [5064403](https://support.microsoft.com/kb/5064403) |
-| **Microsoft server operating system, version 22H2** | **[5065962](https://support.microsoft.com/kb/5065962)** |
+| **Microsoft server operating system, version 22H2** | **[5065962](https://support.microsoft.com/topic/september-9-2025-kb5065962-cumulative-update-for-net-framework-3-5-4-8-and-4-8-1-for-windows-server-2022-55389349-2511-4062-ba42-aa3434986582)** |
 | .NET Framework 3.5, 4.8 | [5065748](https://support.microsoft.com/kb/5065748) |
 | .NET Framework 3.5, 4.8.1 | [5065753](https://support.microsoft.com/kb/5065753) |
 | **Microsoft server operating system, version 21H2** | **[5065962](https://support.microsoft.com/kb/5065962)** |

@@ -127,17 +127,6 @@ You can choose one of the predefined options below and send it in the chat:
 > [!TIP]
 > These default messages help you quickly navigate common workflows without typing custom prompts. You can also type your own custom messages to interact with Copilot for specific questions or requirements.
 
-### Default chat messages
-
-The GitHub Copilot app modernization for .NET extension provides default chat message options to streamline your workflow. When you open the Copilot chat interface, you can choose from the following predefined options:
-
-- **Run modernization assessment**: Initiates a comprehensive new assessment of your application to identify migration readiness issues and Azure compatibility challenges.
-- **View assessment report**: Opens the previously generated assessment report and provides a summarized list of migration tasks based on the assessment results. If no previous assessment exists, it will automatically run a new assessment first.
-- **Browse top migration tasks**: Displays recommended migration tasks and common modernization scenarios, independent of any specific assessment results.
-
-> [!TIP]
-> These default messages help you quickly navigate common workflows without typing custom prompts. You can also type your own custom messages to interact with Copilot for specific questions or requirements.
-
 ## Next Steps
 
 - [Predefined Tasks](predefined-tasks.md)

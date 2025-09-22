@@ -887,3 +887,4 @@ Three settings are provided to adjust what the formula calculates and modify the
   [!INCLUDE [runtimehostconfigurationoption](includes/runtimehostconfigurationoption.md)]
   
   If this value is 200, the minimum clamping value is `200 * 0.001 = 0.2`.
+  

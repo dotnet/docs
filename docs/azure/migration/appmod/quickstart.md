@@ -8,7 +8,7 @@ author: alexwolfmsft
 ms.author: alexwolf
 ---
 
-# Quickstart: Assess and migrate a .NET project with GitHub Copilot app modernization for .NET (Preview)
+# Quickstart: Assess and migrate a .NET project with GitHub Copilot app modernization for .NET
 
 In this quickstart, you assess and migrate a .NET project by using GitHub Copilot app modernization for .NET. You complete the following tasks:
 
@@ -18,7 +18,7 @@ In this quickstart, you assess and migrate a .NET project by using GitHub Copilo
 ## Prerequisites
 
 - Windows Operating System
-- [Visual Studio 2022 version 17.14.16 or newer](https://visualstudio.microsoft.com/downloads/) (To be released)
+- [Visual Studio 2022 version 17.14.16 or newer](https://visualstudio.microsoft.com/downloads/)
 - [.NET desktop development workload](/visualstudio/install/modify-visual-studio?view=vs-2022&preserve-view=true#change-workloads-or-individual-components) with the following optional components enabled:
   - GitHub Copilot
   - GitHub Copilot app modernization for .NET
@@ -29,34 +29,34 @@ In this quickstart, you assess and migrate a .NET project by using GitHub Copilo
 
 ## Assess app readiness
 
-App Modernization for .NET assessment helps you identify your application readiness challenges, understand their impact, and find recommended migration tasks. Each migration task includes references to set up Azure resources, add configurations, and make code changes. Follow these steps to start your migration process with assessment:
+The app modernization for .NET assessment helps you find your app readiness challenges, understand their impact, and see recommended migration tasks. Each migration task includes references to set up Azure resources, add configurations, and make code changes. Follow these steps to start your migration process:
 
 1. Clone the [.NET migration copilot samples](https://github.com/Azure-Samples/dotnet-migration-copilot-samples) repository to your local machine.
 
 2. In Visual Studio, open the **Contoso University** solution from the samples repository.
 
-3. Right-click the solution in Solution Explorer and select **Modernize**.
+3. In the solution explorer, right-click the solution node and select **Modernize**.
 
     :::image type="content" source="media/modernize-solution.png" alt-text="Screenshot that shows the modernize option in the context menu.":::
 
-4. A GitHub Copilot Chat window opens with a welcome message and predefined options. Select **Migrate to Azure** from the available choices and send it to Copilot.
+4. The GitHub Copilot Chat window opens with a welcome message and predefined options. Select **Migrate to Azure** from the available choices and send it to Copilot.
 
     :::image type="content" source="media/modernization-welcome.png" alt-text="Screenshot that shows the welcome message with migration options.":::
 
     > [!TIP]
-    > Alternative: Instead of steps 3 and 4, open **GitHub Copilot Chat** directly and send `@Modernize Migrate to Azure` to start the assessment and migration flow.
+    > Instead of steps 3 and 4, you can open **GitHub Copilot Chat** directly and send `@Modernize Migrate to Azure` to start the assessment and migration flow.
 
-5. A new Copilot chat session opens and displays the welcome message. The assessment automatically begins and analyzes your project for migration readiness.
+5. A new Copilot chat session opens and shows the welcome message. The assessment starts automatically and analyzes your project for migration readiness.
 
     :::image type="content" source="media/assessment-in-process.png" alt-text="Screenshot that shows assessment in progress with status indicators.":::
 
-6. When the assessment completes, you can view a comprehensive assessment report UI page and receive a list of migration tasks in the chat window.
+6. When the assessment finishes, you see a comprehensive assessment report UI page and a list of migration tasks in the chat window.
 
     :::image type="content" source="media/assessment-report.png" alt-text="Screenshot that shows the generated assessment report with detailed findings.":::
 
 ## App migrations
 
-GitHub Copilot app modernization for .NET (Preview) includes [predefined tasks](predefined-tasks.md) for common migration scenarios, following Microsoft's best practices.
+GitHub Copilot app modernization for .NET includes [predefined tasks](predefined-tasks.md) for common migration scenarios, following Microsoft's best practices.
 
 ### Start a migration task
 
@@ -68,21 +68,21 @@ Select the **Run Task** button in the Assessment Report generated in the previou
 
 **Option 2. Send in Copilot Chat**
 
-Send the migration task number (e.g., 1.1) or its name in the chat.
+Send the migration task number (for example, 1.1) or its name in the chat.
 
 :::image type="content" source="media/quickstart-chat-experience.png" alt-text="A screenshot showing sending the message in the Copilot Chat to start a migration task.":::
 
 ### Plan and progress tracker generation
 
-- When you start the migration, GitHub Copilot begins a session named "App modernization: migrate from `<source technology>` to `<target technology>`" in agent mode with predefined prompts.
+- When you start the migration, GitHub Copilot starts a session named "App modernization: migrate from `<source technology>` to `<target technology>`" in agent mode with predefined prompts.
 - The tool creates two files in the `.appmod/.migration` folder:
   - `plan.md` - the overall migration plan
   - `progress.md` - a progress tracker; GitHub Copilot marks items as it completes tasks
-- Edit these files to customize your migration before proceeding.
+- Edit these files to customize your migration before you continue.
 
 ### Start code remediation
 
-- If you're satisfied with the plan and progress tracker, enter a prompt to initiate the migration, such as the following:
+- If you're satisfied with the plan and progress tracker, enter a prompt to start the migration, such as the following:
 
     ```console
     `The plan and progress tracker look good to me. Go ahead with the migration.`
@@ -102,7 +102,7 @@ The GitHub Copilot app modernization for .NET extension provides default chat me
 
 :::image type="content" source="media/quickstart-followup.png" alt-text="Screenshot that shows default chat message options in the Copilot Chat.":::
 
-You can choose one of the predefined options below and send it in the chat:
+You can choose one of the predefined options and send it in the chat:
 
 - **Run modernization assessment**: Initiates a comprehensive new assessment of your application to identify migration readiness issues and Azure compatibility challenges.
 - **View assessment report**: Opens the previously generated assessment report and provides a summarized list of migration tasks based on the assessment results. If no previous assessment exists, it automatically runs a new assessment first.

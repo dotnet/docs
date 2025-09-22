@@ -57,19 +57,19 @@ App Modernization for .NET (Preview) supports the following scenarios:
 
     Evaluates your application's readiness for Azure migration in Visual Studio, powered by [AppCAT for .NET](../appcat/install.md).
 
-    ![Assessment](media/overview_assessment.png)
+    ![Assessment](media/overview-assessment.png)
 
 - **Solution recommendations**  
 
     Recommends target Azure services for your application's resource dependencies, tailored to each category of assessed issues.
 
-    ![Solution](media/overview_solution.png)
+    ![Solution](media/overview-solution.png)
 
 - **Code remediation for common issues**
 
     Accelerates code changes for [common modernization issues](predefined-tasks.md) by applying predefined tasks that represent expert best practices.
 
-    ![Apply Task](media/overview_remediation.png)
+    ![Apply Task](media/overview-remediation.png)
 
 - **Automatic fixes for compilation errors:**  
 

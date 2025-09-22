@@ -4,6 +4,7 @@ description: Store unstructured data in the cloud with Azure Blob Storage.
 author: sylvanc
 ms.date: 09/17/2024
 ms.custom: "devx-track-fsharp"
+ai-usage: ai-assisted
 ---
 # Get started with Azure Blob Storage using F\#
 
@@ -11,7 +12,7 @@ Azure Blob Storage is a service that stores unstructured data in the cloud as ob
 
 This article shows you how to perform common tasks using Blob storage. The samples are written using F# using the Azure Storage Client Library for .NET. The tasks covered include how to upload, list, download, and delete blobs.
 
-For a conceptual overview of blob storage, see [the .NET guide for blob storage](/azure/storage/blobs/storage-quickstart-blobs-dotnet). For ease, these tutorials use [connection strings](/azure/storage/storage-configure-connection-string) to authenticate with Azure. For optimal security, you should use Microsoft Entra ID with [managed identities](/entra/identity/managed-identities-azure-resources/).
+For a conceptual overview of blob storage, see [the .NET guide for blob storage](/azure/storage/blobs/storage-quickstart-blobs-dotnet). For ease, these tutorials use [connection strings](/azure/storage/storage-configure-connection-string) to authenticate with Azure. For production applications, you should use Microsoft Entra ID with [managed identities](/entra/identity/managed-identities-azure-resources/) or the [Azure.Identity library](https://learn.microsoft.com/dotnet/api/overview/azure/identity-readme) for enhanced security.
 
 ## Prerequisites
 
@@ -90,7 +91,7 @@ To upload a file to a block blob, get a container client and use it to get a blo
 
 ## List the blobs in a container
 
-To list the blobs in a container, first get a container reference. You can then use the container's `GetBlobs` method to retrieve the blobs and/or directories within it. To access the rich set of properties and methods for a returned `BlobItem`.
+To list the blobs in a container, first get a container reference. You can then use the container's `GetBlobsByHierarchy` method to retrieve the blobs and/or directories within it. This method returns `BlobItem` objects that provide access to blob properties and metadata.
 
 [!code-fsharp[BlobStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L57-L58)]
 
@@ -134,7 +135,7 @@ To delete a blob, first get a blob reference and then call the
 
 If you are listing a large number of blobs, or you want to control the number of results you return in one listing operation, you can list blobs in pages of results. This example shows how to return results in pages.
 
-This example shows a hierarchical listing, by using the `GetBlobsByHierarchy` method of the `BlobClient` .
+This example shows a hierarchical listing, by using the `GetBlobsByHierarchy` method of the `BlobContainerClient`.
 
 [!code-fsharp[BlobStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L88-L100)]
 

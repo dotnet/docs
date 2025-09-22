@@ -3,7 +3,7 @@ title: Predefined tasks for GitHub Copilot app modernization for .NET (Preview)
 description: Learn about the predefined tasks that are available for GitHub Copilot app modernization for .NET
 ms.topic: concept-article
 ms.custom: devx-track-dotnet
-ms.date: 9/17/2025
+ms.date: 7/15/2025
 author: alexwolfmsft
 ms.author: alexwolf
 ---
@@ -14,13 +14,10 @@ This article describes the predefined tasks available for GitHub Copilot app mod
 
 Predefined tasks capture industry best practices for using Azure services. Currently, App Modernization for .NET (Preview) offers predefined tasks that cover common migration scenarios. These tasks address the following subjects, and more:
 
-- Database migration
-- Storage migration
 - Secret management
 - Message queue integration
-- Caching migration
+- Database migration
 - Identity management
-- Log management
 
 ## Predefined task list
 
@@ -48,7 +45,7 @@ App Modernization for .NET currently supports the following predefined tasks:
 
 - **Migrate to Azure Service Bus**
   
-  Move from legacy or third-party message queues (such as MSMQ or RabbitMQ) or Amazon SQS (AWS Simple Queue Service) to Azure Service Bus for reliable, cloud-based messaging.
+  Move from legacy or third-party message queues (such as MSMQ or RabbitMQ) to Azure Service Bus for reliable, cloud-based messaging.
 
 - **Migrate to Azure Communication Service email**
   
@@ -61,7 +58,3 @@ App Modernization for .NET currently supports the following predefined tasks:
 - **Migrate to OpenTelemetry on Azure**
 
   Transition from local logging frameworks like log4net, serilog, windows event log to OpenTelemetry on Azure.
-
-- **Migrate to Azure Cache for Redis**
-
-  Replace in-memory or local Redis cache implementations with Azure Cache for Redis for high availability, scalability, and enterprise-grade security.

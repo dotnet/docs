@@ -740,8 +740,7 @@ ms.buffer[7] = 0; // Bounds check elided; index is known to be in range.
 ms.buffer[10] = 0; // Compiler knows this is out of range and produces compiler error CS9166.
 ```
 
-It's also worth noting that fixed-size buffers might have non-zeroed contents in certain scenarios, which
-is another reason to avoid them in favor of inline arrays which are always zero-initialized by default.
+Another reason to avoid fixed-size buffers in favor of inline arrays, which are always zero-initialized by default, is that fixed-size buffers might have non-zeroed contents in certain scenarios.
 
 ### Recommendations
 

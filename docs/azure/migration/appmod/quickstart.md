@@ -6,7 +6,6 @@ ms.custom: devx-track-dotnet
 ms.date: 09/17/2025
 author: alexwolfmsft
 ms.author: alexwolf
-ai-usage: ai-generated
 ---
 
 # Quickstart: Assess and migrate a .NET projectwith GitHub Copilot app modernization for .NET (Preview)

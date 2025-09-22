@@ -27,15 +27,6 @@ In this quickstart, you assess and migrate a .NET project by using GitHub Copilo
   - Supported subscription plans: Copilot Pro, Copilot Pro+, Copilot Business, or Copilot Enterprise
   - If you change subscriptions, you must restart Visual Studio
 
-### Sign in to GitHub Copilot
-
-GitHub Copilot is a dependency of the app modernization extension and experience. Make sure you're signed in to GitHub Copilot in Visual Studio.
-
-1. Select the **Copilot** icon at the top of Visual Studio to open the GitHub Copilot pane.
-1. Follow the UI prompts to sign in to Copilot.
-
-For more information, see [Set up GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states).
-
 ## Assess app readiness
 
 App Modernization for .NET assessment helps you identify your application readiness challenges, understand their impact, and find recommended migration tasks. Each migration task includes references to set up Azure resources, add configurations, and make code changes. Follow these steps to start your migration process with assessment:

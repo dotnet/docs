@@ -42,7 +42,7 @@ or memory corruption. Heap corruption bugs are particularly challenging to diagn
 
 The next sections describe common unsafe patterns with ✔️ DO and ❌ DON'T recommendations.
 
-## 1. Untracked managed pointers (<xref:System.Runtime.CompilerServices.Unsafe.AsPointer``1(``0@)?displayProperty=nameWithType> and friends)
+## 1. Untracked managed pointers (`Unsafe.AsPointer` and friends)
 
 It's not possible to convert a managed (tracked) pointer to an unmanaged (untracked)
 pointer in safe C#. When such need arises, it might be tempting to use <xref:System.Runtime.CompilerServices.Unsafe.AsPointer``1(``0@)?displayProperty=nameWithType>

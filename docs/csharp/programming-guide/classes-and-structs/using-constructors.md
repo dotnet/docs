@@ -5,7 +5,7 @@ ms.date: 01/15/2025
 helpviewer_keywords: 
   - "constructors [C#], about constructors"
 ---
-# Use constructors (C# programming guide)
+# Using constructors (C# programming guide)
 
 When a [class](../../language-reference/keywords/class.md) or [struct](../../language-reference/builtin-types/struct.md) is instantiated, the runtime calls its constructor. Constructors have the same name as the class or struct, and they usually initialize the data members of the new object.
 

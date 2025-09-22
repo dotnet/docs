@@ -6,6 +6,7 @@ ms.custom: devx-track-dotnet
 ms.date: 09/17/2025
 author: alexwolfmsft
 ms.author: alexwolf
+ai-usage: ai-generated
 ---
 
 # Quickstart: Assess and migrate a .NET projectwith GitHub Copilot app modernization for .NET (Preview)
@@ -58,6 +59,9 @@ App Modernization for .NET assessment helps you identify your application readin
 4. A GitHub Copilot Chat window opens with a welcome message and predefined options. Select **Migrate to Azure** from the available choices and send it to Copilot.
 
     :::image type="content" source="media/modernization-welcome.png" alt-text="Screenshot that shows the welcome message with migration options.":::
+
+    > [!TIP]
+    > Alternative: Instead of steps 3 and 4, open **GitHub Copilot Chat** directly and send `@Modernize Migrate to Azure` to start the assessment and migration flow.
 
 5. A new Copilot chat session opens and displays the welcome message. The assessment automatically begins and analyzes your project for migration readiness.
 

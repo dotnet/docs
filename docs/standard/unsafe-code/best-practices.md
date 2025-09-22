@@ -988,7 +988,7 @@ Fuzz testing (or "fuzzing") is an automated software testing technique that invo
 
 ## 26. Compiler warnings
 
-Generally, C# compiler doesn't provide extensive support such as warnings and analyzers around incorrect unsafe code usage. However, there are some existing warnings that can help detect potential issues and should not be ignored or suppressed without careful consideration. Some examples include:
+Generally, the C# compiler doesn't provide extensive support such as warnings and analyzers around incorrect unsafe code usage. However, there are some existing warnings that can help detect potential issues and should not be ignored or suppressed without careful consideration. Some examples include:
 
 ```csharp
 nint ptr = 0;
@@ -1002,12 +1002,12 @@ await Task.Delay(100);
 // ptr is used here
 ```
 
-This code produces warning `warning CS9123: The '&' operator should not be used on parameters or local variables in async methods.` which implies the code is likely incorrect.
+This code produces warning CS9123 ("The '&' operator should not be used on parameters or local variables in async methods"), which implies the code is likely incorrect.
 
 ### Recommendations
 
 1. ✔️ DO pay attention to compiler warnings and fix the underlying issues instead of suppressing them.
-2. ❌ DON'T assume that the absence of compiler warnings implies the code is correct - C# compiler has very limited to no support for detecting incorrect unsafe code usage.
+2. ❌ DON'T assume that the absence of compiler warnings implies the code is correct. The C# compiler has limited to no support for detecting incorrect unsafe code usage.
 
 ## References
 

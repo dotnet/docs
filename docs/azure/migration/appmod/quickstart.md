@@ -8,7 +8,7 @@ author: alexwolfmsft
 ms.author: alexwolf
 ---
 
-# Quickstart: Assess and migrate a .NET projectwith GitHub Copilot app modernization for .NET (Preview)
+# Quickstart: Assess and migrate a .NET project with GitHub Copilot app modernization for .NET (Preview)
 
 In this quickstart, you assess and migrate a .NET project by using [GitHub Copilot app modernization for .NET (Preview)](https://aka.ms/ghcp-appmod/dotNET). You complete the following tasks:
 

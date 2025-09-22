@@ -14,7 +14,15 @@ In this quickstart, you learn how to deploy your project to Azure using GitHub C
 
 ## Prerequisites
 
-Before you begin, [complete the prerequisites](https://aka.ms/ghcp-appmod/dotNET#prerequisites).
+- Windows Operating System
+- [Visual Studio 2022 version 17.14.16 or newer](https://visualstudio.microsoft.com/downloads/) (To be released)
+- [.NET desktop development workload](/visualstudio/install/modify-visual-studio?view=vs-2022&preserve-view=true#change-workloads-or-individual-components) with the following optional components enabled:
+  - GitHub Copilot
+  - GitHub Copilot app modernization for .NET
+- GitHub account with Copilot access and supported subscription plan:
+  - [Sign in to Visual Studio using a GitHub account](/visualstudio/ide/work-with-github-accounts) with [Copilot access](https://docs.github.com/copilot/about-github-copilot/what-is-github-copilot#getting-access-to-copilot)
+  - Supported subscription plans: Copilot Pro, Copilot Pro+, Copilot Business, or Copilot Enterprise
+  - If you change subscriptions, you must restart Visual Studio
 
 ### Sign in to GitHub Copilot
 

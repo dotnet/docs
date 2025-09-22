@@ -841,13 +841,13 @@ DATAS uses 2% as the default TCP which can be adjusted with this setting. It's a
 
 [!INCLUDE [runtimehostconfigurationoption](includes/runtimehostconfigurationoption.md)]
 
-#### Gen0 max budget settings 
+#### Gen0 max budget settings
 
-Adjusting the gen0 budget is one of the key elements DATAS uses to adapt to application sizes. DATAS defines an upper threshold called the BCD (Budget Computed via DATAS) for the total gen0 budget as a function of the application size. We use this formula to calculate a multiplier 
+Adjusting the gen0 budget is one of the key elements DATAS uses to adapt to application sizes. DATAS defines an upper threshold called the BCD (Budget Computed via DATAS) for the total gen0 budget as a function of the application size. We use this formula to calculate a multiplier -
 
 `f (application_size_in_MB) = (20 - conserve_memory) / sqrt (application_size_in_MB)`
 
-which is then clamped by a maximum and minimum value before it's applied to the application size in MB. If the [conserve memory](#conserve-memory) setting isn't specified, DATAS uses 5 by default. And the maximum and minimum value are default to 10 and 0.1. 
+which is then clamped by a maximum and minimum value before it's applied to the application size in MB. If the [conserve memory](#conserve-memory) setting isn't specified, DATAS uses 5 by default. And the maximum and minimum value are default to 10 and 0.1.
 
 For example, if the application size is 1 GB, the formula gives us `(20 - 5) / sqrt (1000) = 0.474`. Since it's between 10 and 0.1, clamping has no effect. This means the total gen0 budget is 47.4% of 1 GB which is 474 MB. If the application size is 1 MB, the formula would give us 15 which would then be adjusted to 10, meaning the total gen0 budget allowed is 10 MB.
 
@@ -873,7 +873,7 @@ So if `f` calculates 0.474 and this setting is 200, it means the multiplier will
 
 [!INCLUDE [runtimehostconfigurationoption](includes/runtimehostconfigurationoption.md)]
 
-If this value is 20000, it means the maximum clamping value is `20000 * 0.001 = 20`. 
+If this value is 20000, it means the maximum clamping value is `20000 * 0.001 = 20`.
 
 - The minimum clamping value in permil
 
@@ -884,4 +884,4 @@ If this value is 20000, it means the maximum clamping value is `20000 * 0.001 = 
 
 [!INCLUDE [runtimehostconfigurationoption](includes/runtimehostconfigurationoption.md)]
 
-If this value is 200, it means the minimum clamping value is `200 * 0.001 = 0.2`. 
+If this value is 200, it means the minimum clamping value is `200 * 0.001 = 0.2`.

@@ -22,15 +22,7 @@ In this quickstart, you learn how to containerize your project using GitHub Copi
 
 Before you begin, make sure you have:
 
-- Windows operating system
-- [Visual Studio 2022 version 17.14.16 or newer](https://visualstudio.microsoft.com/downloads/)
-- [.NET desktop development workload](/visualstudio/install/modify-visual-studio?view=vs-2022&preserve-view=true#change-workloads-or-individual-components) with these optional components enabled:
-  - GitHub Copilot
-  - GitHub Copilot app modernization for .NET
-- GitHub account with Copilot access and a supported subscription plan:
-  - [Sign in to Visual Studio using a GitHub account](/visualstudio/ide/work-with-github-accounts) with [Copilot access](https://docs.github.com/copilot/about-github-copilot/what-is-github-copilot#getting-access-to-copilot).
-  - Supported subscription plans: Copilot Pro, Copilot Pro+, Copilot Business, or Copilot Enterprise.
-  - If you change subscriptions, restart Visual Studio.
+[!INCLUDE[github-copilot-app-mod-prereqs](../../../includes/github-copilot-app-mod-prereqs.md)]
 
 ## Containerize your project
 

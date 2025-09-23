@@ -98,7 +98,7 @@ azd auth login --use-device-code
 
 ### [Azure PowerShell](#tab/sign-in-azure-powershell)
 
-Developers can also use [Azure PowerShell](/powershell/azure/what-is-azure-powershell) to authenticate. Apps using `DefaultAzureCredential` or <xref:Azure.Identity.AzurePowerShellCredential> can then use this account to authenticate app requests when running locally.
+Developers can use [Azure PowerShell](/powershell/azure/what-is-azure-powershell) to authenticate. Apps using `DefaultAzureCredential` or <xref:Azure.Identity.AzurePowerShellCredential> can then use this account to authenticate app requests when running locally.
 
 To authenticate with Azure PowerShell, run the command `Connect-AzAccount`. On a system with a default web browser and version 5.0.0 or later of Azure PowerShell, it launches the browser to authenticate the user.
 

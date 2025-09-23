@@ -64,8 +64,6 @@ Developers using Visual Studio Code can authenticate with their developer accoun
     dotnet add package Azure.Identity.Broker
     ```
 
----
-
 ### [Azure CLI](#tab/sign-in-azure-cli)
 
 Developers coding outside of an IDE can also use the [Azure CLI](/cli/azure/what-is-azure-cli) to authenticate. Apps using `DefaultAzureCredential` or <xref:Azure.Identity.AzureCliCredential> can then use this account to authenticate app requests when running locally.
@@ -115,3 +113,5 @@ Connect-AzAccount -UseDeviceAuthentication
 ```
 
 [!INCLUDE [Implement DefaultAzureCredential](<../includes/implement-defaultazurecredential.md>)]
+
+---

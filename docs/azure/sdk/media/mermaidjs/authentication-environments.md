@@ -26,9 +26,11 @@ flowchart LR
     Q1 --> AzureApp[Azure]
     AzureApp --> ManagedId["**Managed identity**"]
     
+
     %% On-premises Server Branch
     Q1 --> OnPremApp[On-premises server]
     OnPremApp --> ServicePrincipal["**Service principal**"]
+    OnPremApp --> ArcManagedId["**Managed identity (Azure Arc only)**"]
 
     %% Styling
     classDef questionBox fill:#4472C4,stroke:#333,stroke-width:2px,color:#fff,font-size:24px
@@ -41,6 +43,6 @@ flowchart LR
     
     class NetApp startNode
     class Q1 questionBox
-    class AppSP,UserPrincipal,ManagedId,ServicePrincipal authMethod
+    class AppSP,UserPrincipal,ManagedId,ServicePrincipal,ArcManagedId authMethod
     class LocalDev,AzureApp,OnPremApp envNode
 ```

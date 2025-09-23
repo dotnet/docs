@@ -30,7 +30,7 @@ With this assistant, you can:
 > [!IMPORTANT]
 > Starting with Visual Studio 2022 17.14.16, the GitHub Copilot app modernization agent is included with Visual Studio. If you're using an older version of Visual Studio 2022, upgrade to the latest release.
 >
-> If you installed any of the previously released upgrade extensions published by Microsoft, uninstall them before using the version now included in Visual Studio.
+> If you installed any of the following extensions published by Microsoft, uninstall them before using the version now included in Visual Studio:
 >
 > - .NET Upgrade Assistant
 > - GitHub Copilot App Modernization – Upgrade for .NET

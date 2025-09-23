@@ -68,7 +68,7 @@ The modernization agent supports upgrading projects coded in C#. The following t
 
 > [!WARNING]
 > ASP.NET and related technologies such as MVC, Razor Pages, Web API are still in preview. You may use the tool to attempt
-> upgrading these, but be aware it will only work for limited scenarios. Please see [ASP.NET Migration](~/aspnet/core/migration/fx-to-core)
+> upgrading these, but be aware it will only work for limited scenarios. Please see [ASP.NET Migration](/aspnet/core/migration/fx-to-core)
 > for details on recommendations for these kinds of migrations.
 
 To learn how to start an upgrade, see [How to upgrade a .NET app with GitHub Copilot app modernization](how-to-upgrade-with-github-copilot.md).

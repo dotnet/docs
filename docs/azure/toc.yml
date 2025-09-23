@@ -27,15 +27,15 @@ items:
     - name: GitHub Copilot app modernization for .NET
       items:
         - name: Overview
-          href: ./migration/appmod/overview.md
+          href: ../core/porting/github-copilot-app-modernization-overview.md
         - name: FAQ
-          href: ./migration/appmod/faq.md
+          href: ../core/porting/github-copilot-app-modernization-faq.yml
         - name: Predefined Tasks
           href: ./migration/appmod/predefined-tasks.md
         - name: Quickstart - Assess and migrate a .NET project
-          href: ./migration/appmod/containerization.md
-        - name: Quickstart - Containerize a .NET project
           href: ./migration/appmod/quickstart.md
+        - name: Quickstart - Containerize a .NET project
+          href: ./migration/appmod/containerization.md
         - name: Quickstart - Deploy a .NET project to Azure
           href: ./migration/appmod/deploy.md
         - name: Sample - Contoso University

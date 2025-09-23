@@ -50,7 +50,7 @@ To start an upgrade or migration, interact with GitHub Copilot, following these 
 
 The modernization agent supports upgrading projects coded in C#. The following types of projects are supported:
 
-- ASP.NET and related technologies such as MVC, Razor Pages, Web API
+- ASP.NET and ASP.NET Core (including related technologies such as MVC, Razor Pages, and Web API)
 - Blazor
 - Azure Functions
 - Windows Presentation Foundation

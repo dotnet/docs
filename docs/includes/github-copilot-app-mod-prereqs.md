@@ -24,6 +24,7 @@ ms.topic: include
   - Copilot Business
   - Copilot Enterprise
 
-  (If you change subscriptions, you must restart Visual Studio.)
+  > [!IMPORTANT]
+  > If you change subscriptions, you must restart Visual Studio.
 
 - Code must be written in C#.

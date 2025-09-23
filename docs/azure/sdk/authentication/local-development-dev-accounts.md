@@ -12,7 +12,7 @@ ms.custom:
 
 # Authenticate .NET apps to Azure services during local development using developer accounts
 
-During local development, applications need to authenticate to Azure to access various Azure services. Two common approaches for local authentication are to [use a service principal](local-development-service-principal.md) or to use a developer account. This article explains how to use a developer account. In the sections ahead, you learn:
+During local development, applications need to authenticate to Azure to access various Azure services. You can authenticate locally using a developer account, a [broker](local-development-broker.md), or a [service principal](local-development-service-principal.md). This article explains how to use a developer account. In the sections ahead, you learn:
 
 - How to use Microsoft Entra groups to efficiently manage permissions for multiple developer accounts
 - How to assign roles to developer accounts to scope permissions

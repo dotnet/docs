@@ -100,7 +100,7 @@ The modernization agent combines automated analysis, AI-driven code remediation,
 
 ### Predefined tasks for migration
 
-Predefined tasks capture industry best practices for using Azure services. Currently, App Modernization for .NET (Preview) offers predefined tasks that cover common migration scenarios.
+Predefined tasks capture industry best practices for using Azure services. Currently, GitHub Copilot app modernization for .NET offers predefined tasks that cover common migration scenarios.
 
 - **Migrate to Managed Identity based Database on Azure, including Azure SQL DB, Azure SQL MI, and Azure PostgreSQL**
 

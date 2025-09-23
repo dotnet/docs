@@ -122,9 +122,9 @@ dotnet test --coverage --coverage-output-format cobertura
 
 #### `--filter`
 
-`--filter` is the VSTest-based filter. 
+`--filter` is the VSTest-based filter.
 
-MSTest and NUnit support the same filter format even when running with Microsoft.Testing.Platform. 
+MSTest and NUnit support the same filter format even when running with Microsoft.Testing.Platform.
 
 xUnit.net, does not support the same filter format when running with Microsoft.Testing.Platform. You must migrate from the VSTest-based filter to the new filter support in xunit.v3, which is provided using the following command-line options.
 

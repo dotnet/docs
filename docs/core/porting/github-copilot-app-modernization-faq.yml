@@ -90,12 +90,24 @@ sections:
       - question: What can the agent migrate?
         answer: |
           The agent can assist in migrating and deploying your .NET applications to Azure, including:
+
           - Web apps
           - API apps
           - Azure Functions
           - Containerized applications
 
-          The scenarios include modernizing databases, storage, identity, messaging, event streaming, email, logging, and security by migrating to Azure-managed services with Managed Identity and Key Vault. Refer to [pre-defined tasks](github-copilot-app-modernization-overview.md#predefined-tasks-for-migration)
+          The migration scenarios include:
+
+          - Modernizing databases
+          - Storage
+          - Identity
+          - Messaging
+          - Event streaming
+          - Email
+          - Logging
+          - Security
+
+          For more information about these scenarios, see [Predefined tasks for migration](github-copilot-app-modernization-overview.md#predefined-tasks-for-migration).
 
       - question: Can I monitor assessment progress?
         answer: |

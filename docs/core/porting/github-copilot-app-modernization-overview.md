@@ -28,7 +28,9 @@ With this assistant, you can:
 - Validate that your app builds and tests successfully.
 
 > [!IMPORTANT]
-> Starting with Visual Studio 2022 17.14.16, the GitHub Copilot Modernization agent is included with Visual Studio. If you're using an older version of Visual Studio 2022, upgrade to the latest release.
+> Starting with Visual Studio 2022 17.14.16, the GitHub Copilot app modernization agent is included with Visual Studio. If you're using an older version of Visual Studio 2022, upgrade to the latest release.
+>
+> If you previously installed the GitHub Copilot app modernization for .NET Visual Studio extension, uninstall it before using the version now included in Visual Studio.
 
 ## Provide feedback
 

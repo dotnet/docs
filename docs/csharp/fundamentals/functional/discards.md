@@ -57,7 +57,7 @@ You can use a standalone discard to indicate any variable that you choose to ign
 
 :::code language="csharp" source="snippets/discards/standalone-discard1.cs" ID="ArgNullCheck" :::
 
-The following example uses a standalone discard to ignore the <xref:System.Threading.Tasks.Task> object returned by an asynchronous operation. Assigning the task has the effect of suppressing the compiler warning about unobserved exceptions. It makes your intent clear: You want to discard the `Task`, and ignore any errors generated from that asynchronous operation.
+The following example uses a standalone discard to ignore the <xref:System.Threading.Tasks.Task> object returned by an asynchronous operation. Assigning the task has the effect of suppressing the compiler warning about unobserved exceptions. It makes your intent clear: You want to discard the `Task`, and propagate any errors generated from that asynchronous operation to callers.
 
 :::code language="csharp" source="snippets/discards/standalone-discard1.cs" ID="SnippetDiscardTask" :::
 

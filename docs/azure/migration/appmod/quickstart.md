@@ -31,7 +31,7 @@ In this quickstart, you assess and migrate a .NET project by using GitHub Copilo
 
 ## Assess app readiness
 
-The app modernization for .NET assessment helps you find app readiness challenges, learn their impact, and see recommended migration tasks. Each migration task includes references to set up Azure resources, add configurations, and make code changes. Follow these steps to start your migration:
+GitHub Copilot app modernization for .NET assessment helps you find app readiness challenges, learn their impact, and see recommended migration tasks. Each migration task includes references to set up Azure resources, add configurations, and make code changes. Follow these steps to start your migration:
 
 1. Clone the [.NET migration copilot samples](https://github.com/Azure-Samples/dotnet-migration-copilot-samples) repository to your computer.
 
@@ -100,7 +100,7 @@ Send the migration task number (for example, 1.1) or its name in the chat.
 
 ## Default chat messages
 
-The GitHub Copilot app modernization for .NET extension gives you default chat message options to streamline your workflow.
+GitHub Copilot app modernization for .NET gives you default chat message options to streamline your workflow.
 
 :::image type="content" source="media/quickstart-followup.png" alt-text="Screenshot that shows default chat message options in the Copilot Chat.":::
 

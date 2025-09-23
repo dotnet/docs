@@ -66,7 +66,7 @@ Developers using Visual Studio Code can authenticate with their developer accoun
 
 ### [Azure CLI](#tab/sign-in-azure-cli)
 
-Developers can use [Azure CLI](/cli/azure/what-is-azure-cli) to authenticate. Apps using <xref:Azure.Identity.DefaultAzureCredential>` or <xref:Azure.Identity.AzureCliCredential> can then use this account to authenticate app requests when running locally.
+Developers can use [Azure CLI](/cli/azure/what-is-azure-cli) to authenticate. Apps using <xref:Azure.Identity.DefaultAzureCredential> or <xref:Azure.Identity.AzureCliCredential> can then use this account to authenticate app requests when running locally.
 
 To authenticate with the Azure CLI, run the `az login` command. On a system with a default web browser, the Azure CLI launches the browser to authenticate the user.
 

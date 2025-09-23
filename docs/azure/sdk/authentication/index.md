@@ -38,7 +38,7 @@ When an app is:
 
 - **Hosted on Azure**: The app should authenticate to Azure resources using a managed identity. This option is discussed in more detail at [authentication in server environments](#authentication-for-azure-hosted-apps).
 - **Running locally during development**: The app can authenticate to Azure using a [developer account](local-development-dev-accounts.md), a [broker](local-development-broker.md), or a [service principal](local-development-service-principal.md). Each option is discussed in more detail at [authentication during local development](#authentication-during-local-development).
-- **Hosted on-premises**: The app should authenticate to Azure resources using an application service principal, or a managed identity in the case of Azure Arc. On-premises workflows are discussed in more detail at [authentication in server environments](#authentication-for-apps-hosted-on-premises).
+- **Hosted on-premises**: The app should authenticate to Azure resources using an application service principal, or a managed identity in the case of Azure Arc. On-premises workflows are discussed in more detail at [Authentication for apps hosted on-premises](#authentication-for-apps-hosted-on-premises).
 
 ## Authentication for Azure-hosted apps
 

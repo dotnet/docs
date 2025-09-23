@@ -601,7 +601,7 @@ request.AllowWriteStreamBuffering = false; // Default is `true`.
 
 In `HttpClient`, there are no direct equivalents to the `AllowWriteStreamBuffering` and `AllowReadStreamBuffering` properties.
 
-`HttpClient` does not buffer request bodies on its own, instead delegating the responsibility to the `HttpContent` used. Contents like `StringContent` or `ByteArrayContent` are logically already buffered in memory, while using `StreamContent` will not incur any buffering by default. To force the content to be buffered, you may call `HttpContent.LoadIntoBufferAsync` before sending the request. Here's an example:
+`HttpClient` doesn't buffer request bodies on its own, instead delegating the responsibility to the `HttpContent` used. Contents like `StringContent` or `ByteArrayContent` are logically already buffered in memory, while using `StreamContent` won't incur any buffering by default. To force the content to be buffered, you may call `HttpContent.LoadIntoBufferAsync` before sending the request. Here's an example:
 
 ```csharp
 HttpClient client = new HttpClient();

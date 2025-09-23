@@ -558,7 +558,7 @@ And usage example of `TruncatedReadStream`:
 ### Example: Apply `CachePolicy` headers
 
 > [!WARNING]
-> `HttpClient` does not have built-in logic to cache responses. There is no workaround other than implementing all the caching yourself. Simply setting the headers will not achieve caching.
+> `HttpClient` doesn't have built-in logic to cache responses. There is no workaround other than implementing all the caching yourself. Simply setting the headers won't achieve caching.
 
 When migrating from `HttpWebRequest` to `HttpClient`, it's important to correctly handle cache-related headers such as `pragma` and `cache-control`. These headers control how responses are cached and retrieved, ensuring that your application behaves as expected in terms of performance and data freshness.
 

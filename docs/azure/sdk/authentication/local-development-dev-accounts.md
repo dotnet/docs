@@ -95,7 +95,7 @@ Connect-AzAccount -UseDeviceAuthentication
 
 Developers using Visual Studio Code can authenticate using their developer account directly through the code editor. Apps using <xref:Azure.Identity.DefaultAzureCredential> or <xref:Azure.Identity.VisualStudioCodeCredential> can discover and use this account to authenticate app requests when running locally.
 
-1. Install the [Azure Resources](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureresourcegroups) Visual Studio Code extension, which lets you to view and manage Azure resources directly from Visual Studio Code. This extension also uses the built-in Visual Studio Code Microsoft authentication provider to authenticate with Azure.
+1. Inside Visual Studio Code, navigate to the **Extensions** panel and install the [Azure Resources](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureresourcegroups) extension. This extension lets you to view and manage Azure resources directly from Visual Studio Code. It also uses the built-in Visual Studio Code Microsoft authentication provider to authenticate with Azure.
 
     :::image type="content" source="../media/azure-resources-extension.png" alt-text="Screenshot showing the Azure Resources extension.":::
 
@@ -105,6 +105,12 @@ Developers using Visual Studio Code can authenticate using their developer accou
 
     > [!TIP]
     > Open the Command Palette using `Ctrl+Shift+P` on Windows/Linux and `Cmd+Shift+P` on MacOS.
+
+1. Add the [Azure.Identity.Broker](https://www.nuget.org/packages/Azure.Identity.Broker) NuGet package to your app:
+
+    ```dotnetcli
+    dotnet add package Azure.Identity.Broker
+    ```
 
 ---
 

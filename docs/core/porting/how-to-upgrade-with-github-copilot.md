@@ -21,31 +21,13 @@ The modernization agent analyzes your projects and dependencies, creates an upgr
 
 Before you begin, ensure you have the following requirements:
 
-- Windows Operating System
-- [Visual Studio 2022 version 17.14.16 or newer](https://visualstudio.microsoft.com/downloads/) (To be released)
-- [.NET desktop development workload](/visualstudio/install/modify-visual-studio?view=vs-2022&preserve-view=true#change-workloads-or-individual-components) with the following optional components enabled:
-  - GitHub Copilot
-  - GitHub Copilot app modernization for .NET
-- GitHub account with Copilot access and supported subscription plan:
-  - [Sign in to Visual Studio using a GitHub account](/visualstudio/ide/work-with-github-accounts) with [Copilot access](https://docs.github.com/copilot/about-github-copilot/what-is-github-copilot#getting-access-to-copilot)
-  - Supported subscription plans: Copilot Pro, Copilot Pro+, Copilot Business, or Copilot Enterprise
-  - If you change subscriptions, you must restart Visual Studio
-- A .NET project written in C# that you want to upgrade
+[!INCLUDE[github-copilot-app-mod-prereqs](../../includes/github-copilot-app-mod-prereqs.md)]
 
 ## Start the upgrade process
 
 The first step to upgrading is generating a plan by interacting with GitHub Copilot. Follow these steps to initiate the upgrade:
 
-1. Open your .NET project or solution in Visual Studio.
-1. Access the GitHub Copilot app modernization agent using one of these methods:
-
-   Right-click on the solution or project in **Solution Explorer** and select **Modernize**.
-
-   —or—
-
-   Open the **GitHub Copilot Chat** window and type `@modernize` followed by your upgrade request.
-
-1. Tell the `@modernize` agent what you want to upgrade.
+[!INCLUDE[github-copilot-how-to-initiate](./includes/github-copilot-how-to-initiate.md)]
 
 ## Generate an upgrade plan
 

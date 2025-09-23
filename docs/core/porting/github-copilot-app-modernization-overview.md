@@ -5,13 +5,13 @@ titleSuffix: ""
 author: adegeo
 ms.author: adegeo
 ms.topic: overview
-ms.date: 09/15/2025
+ms.date: 09/23/2025
 
-#customer intent: As a developer, I want to upgrade my project or migrate the project to Azure so that I can take advantage of the latest features.
+#customer intent: As a developer, I want to learn about what the GitHub Copilot app modernziation is, so that I understand its capabilities and how I can take advantage of it.
 
 ---
 
-# GitHub Copilot app modernization
+# What is GitHub Copilot app modernization?
 
 GitHub Copilot app modernization is a GitHub Copilot agent that helps upgrade projects to newer versions of .NET and migrate .NET applications to Azure quickly and confidently by guiding you through assessment, solution recommendations, code fixes, and validation - all within Visual Studio.
 
@@ -27,39 +27,36 @@ With this assistant, you can:
 - Fix issues and apply best practices for cloud migration.
 - Validate that your app builds and tests successfully.
 
+> [!IMPORTANT]
+> Starting with Visual Studio 2022 17.14.16, the GitHub Copilot app modernization agent is included with Visual Studio. If you're using an older version of Visual Studio 2022, upgrade to the latest release.
+>
+> If you installed any of the following extensions published by Microsoft, uninstall them before using the version now included in Visual Studio:
+>
+> - .NET Upgrade Assistant
+> - GitHub Copilot App Modernization – Upgrade for .NET
+> - Azure Migrate Application and Code Assessment for .NET
+
 ## Provide feedback
 
 Feedback is important to Microsoft and the efficiency of this agent. Use the [Suggest a feature](/visualstudio/ide/suggest-a-feature) and [Report a problem](/visualstudio/ide/report-a-problem) features of Visual Studio to provide feedback.
 
 ## Prerequisites
 
-- Windows Operating System
-- [Visual Studio 2022 version 17.14.16 or newer](https://visualstudio.microsoft.com/downloads/). (To be released)
-- [.NET desktop development workload](/visualstudio/install/modify-visual-studio?view=vs-2022&preserve-view=true#change-workloads-or-individual-components) with the following optional components enabled:
+The following items are required before you can use GitHub Copilot app modernization:
 
-  - GitHub Copilot
-  - GitHub Copilot app modernization for .NET
+[!INCLUDE[github-copilot-app-mod-prereqs](../../includes/github-copilot-app-mod-prereqs.md)]
 
-- Copilot license and supported subscription plan:
+## How to start an upgrade or migration
 
-  [Sign in to Visual Studio using a GitHub account](/visualstudio/ide/work-with-github-accounts) with [Copilot access](https://docs.github.com/copilot/about-github-copilot/what-is-github-copilot#getting-access-to-copilot).
+To start an upgrade or migration, interact with GitHub Copilot, following these steps:
 
-  Supported subscription plans:
-
-  - Copilot Pro
-  - Copilot Pro+
-  - Copilot Business
-  - Copilot Enterprise
-
-  (If you change subscriptions, you must restart Visual Studio.)
-
-- Code must be written in C#.
+[!INCLUDE[github-copilot-how-to-initiate](./includes/github-copilot-how-to-initiate.md)]
 
 ## Upgrade .NET projects
 
 The modernization agent supports upgrading projects coded in C#. The following types of projects are supported:
 
-- ASP.NET and related technologies such as MVC, Razor Pages, Web API
+- ASP.NET and ASP.NET Core (including related technologies such as MVC, Razor Pages, and Web API)
 - Blazor
 - Azure Functions
 - Windows Presentation Foundation

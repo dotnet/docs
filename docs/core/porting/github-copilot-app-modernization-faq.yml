@@ -1,7 +1,7 @@
 ### YamlMime:FAQ
 metadata:
-  title: GitHub Copilot app modernization - upgrade for .NET FAQ
-  description: "This article answers frequently asked questions about GitHub Copilot app modernization - upgrade for .NET."
+  title: GitHub Copilot app modernization for .NET FAQ
+  description: "This article answers frequently asked questions about GitHub Copilot app modernization for .NET."
   titleSuffix: ""
   author: adegeo
   ms.author: adegeo
@@ -10,7 +10,7 @@ metadata:
 
 title: GitHub Copilot app modernization FAQ
 summary: |
-  GitHub Copilot app modernization is an interactive GitHub Copilot agent that adds powerful upgrade capabilities to Visual Studio. This article answers frequently asked questions. For more information about the modernization agent, see [What is GitHub Copilot app modernization](github-copilot-app-modernization-overview.md).
+  GitHub Copilot app modernization is an interactive GitHub Copilot agent that adds powerful capabilities to Visual Studio. This article answers frequently asked questions. For more information about the modernization agent, see [What is GitHub Copilot app modernization](github-copilot-app-modernization-overview.md).
 
   The tool requires one of the following GitHub Copilot subscriptions:
 
@@ -28,8 +28,8 @@ sections:
         answer: |
           Currently, GitHub Copilot app modernization helps you upgrade your .NET (.NET, .NET Core, and .NET Framework) projects to newer versions of .NET. It also helps migrate services to Azure. It also upgrades dependencies and fixes errors in the code post-migration. The agent performs the following steps in a GitHub Copilot chat session:
 
-          - Analyzes your projects and proposes an upgrade plan.
-          - According to the plan, runs a series of tasks to upgrade your projects.
+          - Analyzes your projects and proposes an modernization plan.
+          - According to the plan, runs a series of tasks to modernize your projects.
           - Operates in a working branch under a local Git repository.
           - Automatically fixes issues during the code transformation.
           - Reports progress and allow access to code changes & logs.
@@ -38,7 +38,7 @@ sections:
       - question: What limitations are there?
         answer: |
           - Only Git repositories are supported.
-          - There's no guarantee that the upgrade suggestions are considered best practices.
+          - There's no guarantee that the upgrade or migration suggestions are considered best practices.
           - The LLM doesn't persist learning from the upgrade. Meaning, code fixes and corrections you provide during the upgrade process don't persist and can't be remembered for future upgrades.
           - It only runs on Windows.
 
@@ -54,7 +54,7 @@ sections:
 
       - question: Does the agent store my source code?
         answer: |
-          The agent never stores a user's codebase and never uses your code for training the model. Once an upgrade is complete, session data is deleted.
+          The agent never stores a user's codebase and never uses your code for training the model. Once an upgrade or migration is complete, session data is deleted.
 
       - question: Can I provide feedback?
         answer: |
@@ -89,11 +89,25 @@ sections:
     questions:
       - question: What can the agent migrate?
         answer: |
-          The agent can assist in migrating your .NET applications to Azure, including:
+          The agent can assist in migrating and deploying your .NET applications to Azure, including:
+
           - Web apps
           - API apps
           - Azure Functions
           - Containerized applications
+
+          The migration scenarios include:
+
+          - Modernizing databases
+          - Storage
+          - Identity
+          - Messaging
+          - Event streaming
+          - Email
+          - Logging
+          - Security
+
+          For more information about these scenarios, see [Predefined tasks for migration](github-copilot-app-modernization-overview.md#predefined-tasks-for-migration).
 
       - question: Can I monitor assessment progress?
         answer: |

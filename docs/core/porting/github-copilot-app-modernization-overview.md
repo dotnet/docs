@@ -66,7 +66,7 @@ The modernization agent supports upgrading projects coded in C#. The following t
 - Class libraries
 - Console apps
 
-> [!WARNING]
+> [!NOTE]
 > ASP.NET and related technologies such as MVC, Razor Pages, Web API are still in preview. You may use the tool to attempt
 > upgrading these, but be aware it will only work for limited scenarios. Please see [ASP.NET Migration](/aspnet/core/migration/fx-to-core)
 > for details on recommendations for these kinds of migrations.
@@ -81,7 +81,7 @@ The following upgrade paths are supported:
 - Modernize your code base with new features.
 - Migrate components and services to Azure.
 
-> [!WARNING]
+> [!NOTE]
 > Upgrading projects from .NET Framework to the latest version of .NET is still in preview.
 
 ## Migrate .NET projects to Azure

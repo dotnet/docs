@@ -14,7 +14,7 @@ This article shows you how to perform common tasks using Blob storage. The sampl
 For a conceptual overview of blob storage, see [the .NET guide for blob storage](/azure/storage/blobs/storage-quickstart-blobs-dotnet). For ease, these tutorials use [connection strings](/azure/storage/storage-configure-connection-string) to authenticate with Azure. For optimal security, you should use Microsoft Entra ID with [managed identities](/entra/identity/managed-identities-azure-resources/).
 
 > [!NOTE]
-> While this article uses the standard Azure Storage Client Library for .NET, F# developers might also consider the [FSharp.Azure.Blob](https://github.com/random82/FSharp.Azure.Blob) library, which provides a more idiomatic F# API for working with Azure Blob Storage. This community library offers F#-friendly functions and patterns that can make blob operations more natural for F# developers.
+> This article uses the standard Azure Storage Client Library for .NET. F# developers might consider the [FSharp.Azure.Blob](https://github.com/random82/FSharp.Azure.Blob) library, which provides a more idiomatic F# API for working with Azure Blob Storage. This community library offers idiomatic F# functions and patterns that make blob operations more natural in F#.
 
 ## Prerequisites
 

@@ -11,7 +11,7 @@ ms.author: donji
 
 # Quickstart: Containerize your project using GitHub Copilot app modernization for .NET
 
-In this quickstart, you learn how to containerize your project using GitHub Copilot app modernization for .NET. The app modernization extension uses GitHub Copilot's AI capabilities to:
+In this quickstart, you learn how to containerize your project using GitHub Copilot app modernization for .NET. The app modernization tooling uses GitHub Copilot's AI capabilities to:
 
 - Analyze your project structure and dependencies
 - Generate Dockerfile configurations

@@ -11,7 +11,7 @@ ms.date: 09/15/2025
 
 ---
 
-# What is GitHub Copilot app modernization
+# What is GitHub Copilot app modernization?
 
 GitHub Copilot app modernization is a GitHub Copilot agent that helps upgrade projects to newer versions of .NET and migrate .NET applications to Azure quickly and confidently by guiding you through assessment, solution recommendations, code fixes, and validation - all within Visual Studio.
 

@@ -120,7 +120,7 @@ using HttpResponseMessage responseMessage = await client.PostAsync(uri, new Stri
 | `UseDefaultCredentials` | No direct equivalent API | [Example: Setting SocketsHttpHandler Properties](#example-set-socketshttphandler-properties). |
 | `UserAgent` | <xref:System.Net.Http.Headers.HttpRequestHeaders.UserAgent> | [Example: Set Request Headers](#example-set-common-request-headers). |
 
-## Migrate `ServicePoint`(`Manager`) usage
+## Migrate `ServicePointManager` usage
 
 You should be aware that `ServicePointManager` is a static class, meaning that any changes made to its properties will have a global effect on all newly created `ServicePoint` objects within the application. For example, when you modify a property like `ConnectionLimit` or `Expect100Continue`, it impacts every new `ServicePoint` instance.
 

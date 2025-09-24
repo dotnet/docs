@@ -1,11 +1,11 @@
 ---
 title: dotnet run command
 description: The dotnet run command provides a convenient option to run your application from the source code.
-ms.date: 03/26/2025
+ms.date: 09/24/2025
 ---
 # dotnet run
 
-**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
+**This article applies to:** ✔️ .NET Core 6 and later versions
 
 ## Name
 
@@ -14,7 +14,7 @@ ms.date: 03/26/2025
 ## Synopsis
 
 ```dotnetcli
-dotnet run [-a|--arch <ARCHITECTURE>] [-c|--configuration <CONFIGURATION>]
+dotnet run [<applicationArguments>] [-a|--arch <ARCHITECTURE>] [-c|--configuration <CONFIGURATION>]
     [-e|--environment <KEY=VALUE>]
     [-f|--framework <FRAMEWORK>] [--force] [--interactive]
     [--launch-profile <NAME>] [--no-build]
@@ -53,6 +53,12 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 
 [!INCLUDE [cli-advertising-manifests](../../../includes/cli-advertising-manifests.md)]
 
+## Arguments
+
+  `<applicationArguments>`
+  
+  Arguments passed to the application that is being run.
+
 ## Options
 
 - **`--`**
@@ -74,6 +80,10 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 - **`-f|--framework <FRAMEWORK>`**
 
   Builds and runs the app using the specified [framework](../../standard/frameworks.md). The framework must be specified in the project file.
+
+- **`--file <FILE_PATH>`**
+
+  The path to the file-based app to run. This option can be passed as the first argument if there is no project in the current directory.
 
 - **`--force`**
 
@@ -153,6 +163,12 @@ The environment is constructed in the same order as this list, so the `-e|--envi
 
   ```dotnetcli
   dotnet run
+  ```
+
+- Run the specified file-based app:
+
+  ```dotnetcli
+  dotnet run ConsoleApp.cs -- arg1 arg2
   ```
 
 - Run the specified project:

@@ -395,6 +395,28 @@ let methods2 = System.AppDomain.CurrentDomain.GetAssemblies()
                |> Array.concat
 ```
 
+For reverse pipeline `<|` operators, place arguments on new lines and align them with the first argument:
+
+```fsharp
+// ✔️ OK
+failwith <| sprintf "foobar: %s - foobarbaz: %s"
+                    foobar
+                    foobarbaz
+
+// ✔️ OK  
+let message = sprintf "error: %s, details: %s"
+              <| errorMsg
+              <| details
+
+// ✔️ OK
+let result = someFunction <| arg1
+                         <| arg2  
+                         <| arg3
+
+// ❌ Not OK
+failwith <| sprintf "foobar: %s - foobarbaz: %s" foobar foobarbaz
+```
+
 ### Formatting lambda expressions
 
 When a lambda expression is used as an argument in a multi-line expression, and is followed by other arguments,
@@ -571,6 +593,7 @@ The following operators are defined in the F# standard library and should be use
 ```fsharp
 // ✔️ OK
 x |> f // Forward pipeline
+f <| x // Reverse pipeline
 f >> g // Forward composition
 x |> ignore // Discard away a value
 x + y // Overloaded addition (including string concatenation)

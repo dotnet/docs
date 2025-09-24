@@ -5,7 +5,7 @@ ms.date: 09/24/2025
 ---
 # dotnet run
 
-**This article applies to:** ✔️ .NET Core 6 and later versions
+**This article applies to:** ✔️ .NET 6 and later versions
 
 ## Name
 
@@ -15,7 +15,7 @@ ms.date: 09/24/2025
 
 ```dotnetcli
 dotnet run [<applicationArguments>] [-a|--arch <ARCHITECTURE>] [-c|--configuration <CONFIGURATION>]
-    [-e|--environment <KEY=VALUE>]
+    [-e|--environment <KEY=VALUE>] [--file <FILE_PATH>]
     [-f|--framework <FRAMEWORK>] [--force] [--interactive]
     [--launch-profile <NAME>] [--no-build]
     [--no-dependencies] [--no-launch-profile] [--no-restore]
@@ -83,7 +83,7 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 
 - **`--file <FILE_PATH>`**
 
-  The path to the file-based app to run. This option can be passed as the first argument if there is no project in the current directory.
+  The path to the file-based program to run. This option can be passed as the first argument if there is no project in the current directory.  For more information, see [Build file-based C# programs](/dotnet/csharp/fundamentals/tutorials/file-based-programs).
 
 - **`--force`**
 
@@ -165,7 +165,7 @@ The environment is constructed in the same order as this list, so the `-e|--envi
   dotnet run
   ```
 
-- Run the specified file-based app:
+- Run the specified file-based program with arguments:
 
   ```dotnetcli
   dotnet run ConsoleApp.cs -- arg1 arg2

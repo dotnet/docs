@@ -14,7 +14,7 @@ ms.custom:
 
 During local development, applications need to authenticate to Azure to access various Azure services. You can authenticate locally using one of these approaches:
 
-- Use a developer account with one of the [developer tools supported by the Azure Identity library](#supported-developer-tools).
+- Use a developer account with one of the [developer tools supported by the Azure Identity library](#supported-developer-tools-for-authentication).
 - Delegate credential management to a [broker](local-development-broker.md).
 - Use a [service principal](local-development-service-principal.md).
 

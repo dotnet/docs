@@ -112,7 +112,7 @@ The `#:` directives that are used in file-based apps include:
 
 - `#:project`:
 
-  Instance of `#:project` are translated into `ProjectReference` elements to include the project with the specified path to the project. For example:
+  Instances of `#:project` are translated into `ProjectReference` elements to include the project with the specified path to the project. For example:
 
   ```csharp
   #:project ../Path/To.Example.csproj

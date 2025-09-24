@@ -45,7 +45,7 @@ Next, sign-in to Azure using one of several developer tools that can be used to 
 
 ### [Visual Studio Code](#tab/sign-in-visual-studio-code)
 
-Developers using Visual Studio Code can authenticate with their developer account directly through the editor. Apps that use <xref:Azure.Identity.DefaultAzureCredential> or <xref:Azure.Identity.VisualStudioCodeCredential> can discover and use this account to authenticate app requests when running locally.
+Developers using Visual Studio Code can authenticate with their developer account directly through the editor via the broker. Apps that use <xref:Azure.Identity.DefaultAzureCredential> or <xref:Azure.Identity.VisualStudioCodeCredential> can then use this account to authenticate app requests through a seamless single-sign-on experience.
 
 1. In Visual Studio Code, go to the **Extensions** panel and install the [Azure Resources](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureresourcegroups) extension. This extension lets you view and manage Azure resources directly from Visual Studio Code. It also uses the built-in Visual Studio Code Microsoft authentication provider to authenticate with Azure.
 
@@ -66,7 +66,7 @@ Developers using Visual Studio Code can authenticate with their developer accoun
 
 ### [Azure CLI](#tab/sign-in-azure-cli)
 
-Developers can use [Azure CLI](/cli/azure/what-is-azure-cli) to authenticate. Apps using <xref:Azure.Identity.DefaultAzureCredential> or <xref:Azure.Identity.AzureCliCredential> can then use this account to authenticate app requests when running locally.
+Developers can use [Azure CLI](/cli/azure/what-is-azure-cli) to authenticate. Apps using <xref:Azure.Identity.DefaultAzureCredential> or <xref:Azure.Identity.AzureCliCredential> can then use this account to authenticate app requests.
 
 To authenticate with the Azure CLI, run the `az login` command. On a system with a default web browser, the Azure CLI launches the browser to authenticate the user.
 

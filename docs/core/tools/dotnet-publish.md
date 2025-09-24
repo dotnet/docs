@@ -1,11 +1,11 @@
 ---
 title: dotnet publish command
 description: The dotnet publish command publishes a .NET project or solution to a directory.
-ms.date: 01/07/2025
+ms.date: 09/24/2025
 ---
 # dotnet publish
 
-**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
+**This article applies to:** ✔️ .NET 6 and later versions
 
 ## Name
 
@@ -14,7 +14,7 @@ ms.date: 01/07/2025
 ## Synopsis
 
 ```dotnetcli
-dotnet publish [<PROJECT>|<SOLUTION>] [-a|--arch <ARCHITECTURE>]
+dotnet publish [<PROJECT>|<SOLUTION>|<FILE>] [-a|--arch <ARCHITECTURE>]
     [--artifacts-path <ARTIFACTS_DIR>]
     [-c|--configuration <CONFIGURATION>] [--disable-build-servers]
     [-f|--framework <FRAMEWORK>] [--force] [--interactive]
@@ -114,13 +114,15 @@ For more information, see the following resources:
 
 ## Arguments
 
-- **`PROJECT|SOLUTION`**
+`PROJECT | SOLUTION | FILE`
 
-  The project or solution to publish.
+  The project or solution or C# (file-based program) file to operate on. If a file isn't specified, MSBuild searches the current directory for a project or solution.
 
   * `PROJECT` is the path and filename of a C#, F#, or Visual Basic project file, or the path to a directory that contains a C#, F#, or Visual Basic project file. If the directory is not specified, it defaults to the current directory.
 
   * `SOLUTION` is the path and filename of a solution file (*.sln* or *.slnx* extension), or the path to a directory that contains a solution file. If the directory is not specified, it defaults to the current directory.
+
+  * `FILE` is the path and filename of a file-based app. Files-based apps are programs contained within a single `*.cs` file that are built and run without a corresponding project (`*.csproj`) file. For more information, see [Build file-based C# programs](/dotnet/csharp/fundamentals/tutorials/file-based-programs).
 
 ## Options
 
@@ -266,6 +268,12 @@ For more information, see the following resources:
 
   ```dotnetcli
   dotnet publish --no-dependencies
+  ```
+
+- Publish the file-based C# program *app.cs* in the current directory:
+
+  ```dotnetcli
+  dotnet publish app.cs
   ```
 
 ## See also

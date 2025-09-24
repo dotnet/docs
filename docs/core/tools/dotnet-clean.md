@@ -1,11 +1,11 @@
 ---
 title: dotnet clean command
 description: The dotnet clean command cleans the current directory.
-ms.date: 02/14/2020
+ms.date: 09/23/2025
 ---
 # dotnet clean
 
-**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
+**This article applies to:** ✔️ .NET 6 and later versions
 
 ## Name
 
@@ -14,7 +14,7 @@ ms.date: 02/14/2020
 ## Synopsis
 
 ```dotnetcli
-dotnet clean [<PROJECT>|<SOLUTION>] [--artifacts-path <ARTIFACTS_DIR>]
+dotnet clean [<PROJECT>|<SOLUTION>|<FILE>] [--artifacts-path <ARTIFACTS_DIR>]
     [-c|--configuration <CONFIGURATION>]
     [-f|--framework <FRAMEWORK>] [--interactive]
     [--nologo] [-o|--output <OUTPUT_DIRECTORY>]
@@ -30,9 +30,9 @@ The `dotnet clean` command cleans the output of the previous build. It's impleme
 
 ## Arguments
 
-`PROJECT | SOLUTION`
+`PROJECT | SOLUTION | FILE`
 
-The MSBuild project or solution to clean. If a project or solution file is not specified, MSBuild searches the current working directory for a file that has a file extension that ends in *proj* or *sln*, and uses that file.
+The project or solution or C# (file-based program) file to operate on. If a file isn't specified, MSBuild searches the current directory for a project or solution.
 
 ## Options
 
@@ -74,6 +74,12 @@ The MSBuild project or solution to clean. If a project or solution file is not s
 
   ```dotnetcli
   dotnet clean
+  ```
+
+* Clean a project in a specified file:
+
+  ```dotnetcli
+  dotnet clean Program.cs.
   ```
 
 * Clean a project built using the Release configuration:

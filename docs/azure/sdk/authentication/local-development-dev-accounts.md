@@ -12,12 +12,20 @@ ms.custom:
 
 # Authenticate .NET apps to Azure services during local development using developer accounts
 
-During local development, applications need to authenticate to Azure to access various Azure services. You can authenticate locally using a developer account, a [broker](local-development-broker.md), or a [service principal](local-development-service-principal.md). This article explains how to use a developer account. In the sections ahead, you learn:
+During local development, applications need to authenticate to Azure to access various Azure services. You can authenticate locally using one of these approaches:
 
-- How to use Microsoft Entra groups to efficiently manage permissions for multiple developer accounts
-- How to assign roles to developer accounts to scope permissions
-- How to sign-in to supported local development tools
-- How to authenticate using a developer account from your app code
+- Use a developer account with one of the [developer tools supported by the Azure Identity library](#supported-developer-tools).
+- Delegate credential management to a [broker](local-development-broker.md).
+- Use a [service principal](local-development-service-principal.md).
+
+This article explains how to authenticate using a developer account with tools supported by the Azure Identity library. In the sections ahead, you learn:
+
+- How to use Microsoft Entra groups to efficiently manage permissions for multiple developer accounts.
+- How to assign roles to developer accounts to scope permissions.
+- How to sign-in to supported local development tools.
+- How to authenticate using a developer account from your app code.
+
+## Supported developer tools for authentication
 
 For an app to authenticate to Azure during local development using the developer's Azure credentials, the developer must be signed-in to Azure from one of the following developer tools:
 
@@ -82,7 +90,7 @@ az login --use-device-code
 
 ### [Azure Developer CLI](#tab/sign-in-azure-developer-cli)
 
-Developers can use [Azure Developer CLI](/azure/developer/azure-developer-cli/overview) to authenticate. Apps using <xref:Azure.Identity.DefaultAzureCredential> or <xref:Azure.Identity.AzureDeveloperCliCredential> can then use this account to authenticate app requests when running locally.
+Developers can use [Azure Developer CLI](/azure/developer/azure-developer-cli/overview) to authenticate. Apps using <xref:Azure.Identity.DefaultAzureCredential> or <xref:Azure.Identity.AzureDeveloperCliCredential> can then use this account to authenticate app requests.
 
 To authenticate with the Azure Developer CLI, run the `azd auth login` command. On a system with a default web browser, the Azure Developer CLI launches the browser to authenticate the user.
 
@@ -90,7 +98,7 @@ To authenticate with the Azure Developer CLI, run the `azd auth login` command. 
 azd auth login
 ```
 
-For systems without a default web browser, the `azd auth login --use-device-code` uses the device code authentication flow. The user can also force the the Azure Developer CLI to use the device code flow rather than launching a browser by specifying the `--use-device-code` argument.
+For systems without a default web browser, the `azd auth login --use-device-code` uses the device code authentication flow. The user can also force the Azure Developer CLI to use the device code flow rather than launching a browser by specifying the `--use-device-code` argument.
 
 ```azdeveloper
 azd auth login --use-device-code
@@ -98,7 +106,7 @@ azd auth login --use-device-code
 
 ### [Azure PowerShell](#tab/sign-in-azure-powershell)
 
-Developers can use [Azure PowerShell](/powershell/azure/what-is-azure-powershell) to authenticate. Apps using <xref:Azure.Identity.DefaultAzureCredential> or <xref:Azure.Identity.AzurePowerShellCredential> can then use this account to authenticate app requests when running locally.
+Developers can use [Azure PowerShell](/powershell/azure/what-is-azure-powershell) to authenticate. Apps using <xref:Azure.Identity.DefaultAzureCredential> or <xref:Azure.Identity.AzurePowerShellCredential> can then use this account to authenticate app requests.
 
 To authenticate with Azure PowerShell, run the command `Connect-AzAccount`. On a system with a default web browser and version 5.0.0 or later of Azure PowerShell, it launches the browser to authenticate the user.
 

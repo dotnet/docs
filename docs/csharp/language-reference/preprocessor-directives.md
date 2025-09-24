@@ -1,7 +1,7 @@
 ---
 description: "Learn the different C# preprocessor directives that control conditional compilation, warnings, nullable analysis, and more"
 title: "Preprocessor directives"
-ms.date: 06/19/2025
+ms.date: 09/24/2025
 f1_keywords:
   - "cs.preprocessor"
   - "#nullable"
@@ -108,6 +108,20 @@ The `#:` directives that are used in file-based apps include:
 
   ```xml
   <PackageReference Include="System.CommandLine" Version="2.0.0-*">
+  ```
+
+- `#:project`:
+
+  Instances of `#:project` are translated into `ProjectReference` elements to include the project with the specified path to the project. For example:
+
+  ```csharp
+  #:project ../Path/To.Example.csproj
+  ```
+
+  The preceding preprocessor token is translated into:
+
+  ```xml
+  <ProjectReference Include="../Path/To.Example.csproj" />
   ```
   
 Tools can add new tokens following the `#:` convention.

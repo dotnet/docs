@@ -88,13 +88,13 @@ There are three specific settings that `dotnet restore` ignores:
 
 `PROJECT | SOLUTION | FILE`
 
-  The project or solution or C# (file-based program) file to restore. If a file isn't specified, MSBuild searches the current directory for a project or solution.
+The project or solution or C# (file-based program) file to restore. If a file isn't specified, MSBuild searches the current directory for a project or solution.
 
-  * `PROJECT` is the path and filename of a C#, F#, or Visual Basic project file, or the path to a directory that contains a C#, F#, or Visual Basic project file. If the directory is not specified, it defaults to the current directory.
+* `PROJECT` is the path and filename of a C#, F#, or Visual Basic project file, or the path to a directory that contains a C#, F#, or Visual Basic project file. If the directory is not specified, it defaults to the current directory.
 
-  * `SOLUTION` is the path and filename of a solution file (*.sln* or *.slnx* extension), or the path to a directory that contains a solution file. If the directory is not specified, it defaults to the current directory.
+* `SOLUTION` is the path and filename of a solution file (*.sln* or *.slnx* extension), or the path to a directory that contains a solution file. If the directory is not specified, it defaults to the current directory.
 
-  * `FILE` is the path and filename of a file-based app. Files-based apps are programs contained within a single `*.cs` file that are built and run without a corresponding project (`*.csproj`) file. For more information, see [Build file-based C# programs](/dotnet/csharp/fundamentals/tutorials/file-based-programs).
+* `FILE` is the path and filename of a file-based app. Files-based apps are programs contained within a single `*.cs` file that are built and run without a corresponding project (`*.csproj`) file. For more information, see [Build file-based C# programs](/dotnet/csharp/fundamentals/tutorials/file-based-programs).
 
 ## Options
 

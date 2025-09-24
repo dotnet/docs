@@ -12,7 +12,7 @@ Azure Blob Storage is a service that stores unstructured data in the cloud as ob
 
 This article shows you how to perform common tasks using Blob storage. The samples are written using F# using the Azure Storage Client Library for .NET. The tasks covered include how to upload, list, download, and delete blobs.
 
-For a conceptual overview of blob storage, see [the .NET guide for blob storage](/azure/storage/blobs/storage-quickstart-blobs-dotnet). For ease, these tutorials use [connection strings](/azure/storage/storage-configure-connection-string) to authenticate with Azure. For production applications, you should use Microsoft Entra ID with [managed identities](/entra/identity/managed-identities-azure-resources/) or the [Azure.Identity library](https://learn.microsoft.com/dotnet/api/overview/azure/identity-readme) for enhanced security.
+For a conceptual overview of blob storage, see [the .NET guide for blob storage](/azure/storage/blobs/storage-quickstart-blobs-dotnet). For ease, these tutorials use [connection strings](/azure/storage/storage-configure-connection-string) to authenticate with Azure. For production applications, you should use Microsoft Entra ID with [managed identities](/entra/identity/managed-identities-azure-resources/) or the [Azure.Identity library](/dotnet/api/overview/azure/identity-readme) for enhanced security.
 
 ## Prerequisites
 

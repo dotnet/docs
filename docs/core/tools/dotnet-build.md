@@ -1,11 +1,11 @@
 ---
 title: dotnet build command
 description: The dotnet build command builds a project and all of its dependencies.
-ms.date: 11/27/2023
+ms.date: 09/24/2025
 ---
 # dotnet build
 
-**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
+**This article applies to:** ✔️ .NET 6 and later versions
 
 ## Name
 
@@ -14,7 +14,7 @@ ms.date: 11/27/2023
 ## Synopsis
 
 ```dotnetcli
-dotnet build [<PROJECT>|<SOLUTION>] [-a|--arch <ARCHITECTURE>]
+dotnet build [<PROJECT>|<SOLUTION>|<FILE>] [-a|--arch <ARCHITECTURE>]
     [--artifacts-path <ARTIFACTS_DIR>]
     [-c|--configuration <CONFIGURATION>] [-f|--framework <FRAMEWORK>]
     [--disable-build-servers]
@@ -23,7 +23,7 @@ dotnet build [<PROJECT>|<SOLUTION>] [-a|--arch <ARCHITECTURE>]
     [-o|--output <OUTPUT_DIRECTORY>]
     [-p|--property:<PROPERTYNAME>=<VALUE>]
     [-r|--runtime <RUNTIME_IDENTIFIER>]
-    [--self-contained [true|false]] [--source <SOURCE>]
+    [-sc|--self-contained [true|false]] [--source <SOURCE>]
     [--tl:[auto|on|off]] [--use-current-runtime, --ucr [true|false]]
     [-v|--verbosity <LEVEL>] [--version-suffix <VERSION_SUFFIX>]
 
@@ -77,9 +77,9 @@ Running `dotnet build` is equivalent to running `dotnet msbuild -restore`; howev
 
 ## Arguments
 
-`PROJECT | SOLUTION`
+`PROJECT | SOLUTION | FILE`
 
-The project or solution file to build. If a project or solution file isn't specified, MSBuild searches the current working directory for a file that has a file extension that ends in either *proj* or *sln* and uses that file.
+The project or solution or C# (file-based program) file to build. If a file isn't specified, MSBuild searches the current directory for a project or solution.
 
 ## Options
 
@@ -175,6 +175,12 @@ The project or solution file to build. If a project or solution file isn't speci
   ```dotnetcli
   dotnet build
   ```
+
+- Build a specific project file:
+
+  ```dotnetcli
+  dotnet build MyProject.cs
+  ```  
 
 - Build a project and its dependencies using Release configuration:
 

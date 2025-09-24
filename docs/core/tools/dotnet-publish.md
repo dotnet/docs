@@ -116,13 +116,13 @@ For more information, see the following resources:
 
 `PROJECT | SOLUTION | FILE`
 
-The project or solution or C# (file-based program) file to operate on. If a file isn't specified, MSBuild searches the current directory for a project or solution.
+The project or solution or C# (file-based program) file to publish. If a file isn't specified, MSBuild searches the current directory for a project or solution.
 
-* `PROJECT` is the path and filename of a C#, F#, or Visual Basic project file, or the path to a directory that contains a C#, F#, or Visual Basic project file. If the directory is not specified, it defaults to the current directory.
+* `PROJECT` is the path and filename of a C#, F#, or Visual Basic project file, or the path to a directory that contains a C#, F#, or Visual Basic project file.
 
-* `SOLUTION` is the path and filename of a solution file (*.sln* or *.slnx* extension), or the path to a directory that contains a solution file. If the directory is not specified, it defaults to the current directory.
+* `SOLUTION` is the path and filename of a solution file (*.sln* or *.slnx* extension), or the path to a directory that contains a solution file.
 
-* `FILE` is the path and filename of a file-based app. Files-based apps are programs contained within a single `*.cs` file that are built and run without a corresponding project (`*.csproj`) file. For more information, see [Build file-based C# programs](/dotnet/csharp/fundamentals/tutorials/file-based-programs).
+* `FILE` is the path and filename of a file-based program. Files-based programs are contained within a single `*.cs` file that are built and run without a corresponding project (`*.csproj`) file. For more information, see [Build file-based C# programs](/dotnet/csharp/fundamentals/tutorials/file-based-programs).
 
 ## Options
 
@@ -187,12 +187,6 @@ The project or solution or C# (file-based program) file to operate on. If a file
     If you specify a relative path when publishing a project, the generated output directory is relative to the current working directory, not to the project file location.
 
     If you specify a relative path when publishing a solution, all output for all projects goes into the specified folder relative to the current working directory. To make publish output go to separate folders for each project, specify a relative path by using the msbuild `PublishDir` property instead of the `--output` option. For example, `dotnet publish -p:PublishDir=.\publish` sends publish output for each project to a `publish` folder under the folder that contains the project file.
-
-  - .NET Core 2.x SDK
-
-    If you specify a relative path when publishing a project, the generated output directory is relative to the project file location, not to the current working directory.
-
-    If you specify a relative path when publishing a solution, each project's output goes into a separate folder relative to the project file location. If you specify an absolute path when publishing a solution, all publish output for all projects goes into the specified folder.
 
 [!INCLUDE [os](../../../includes/cli-os.md)]
 

@@ -1,7 +1,7 @@
 ---
 title: dotnet clean command
 description: The dotnet clean command cleans the current directory.
-ms.date: 09/23/2025
+ms.date: 09/24/2025
 ---
 # dotnet clean
 
@@ -32,7 +32,13 @@ The `dotnet clean` command cleans the output of the previous build. It's impleme
 
 `PROJECT | SOLUTION | FILE`
 
-The project or solution or C# (file-based program) file to operate on. If a file isn't specified, MSBuild searches the current directory for a project or solution.
+The project or solution or C# (file-based program) file to publish. If a file isn't specified, MSBuild searches the current directory for a project or solution.
+
+* `PROJECT` is the path and filename of a C#, F#, or Visual Basic project file, or the path to a directory that contains a C#, F#, or Visual Basic project file.
+
+* `SOLUTION` is the path and filename of a solution file (*.sln* or *.slnx* extension), or the path to a directory that contains a solution file.
+
+* `FILE` is the path and filename of a file-based program. Files-based programs are contained within a single `*.cs` file that are built and run without a corresponding project (`*.csproj`) file. For more information, see [Build file-based C# programs](/dotnet/csharp/fundamentals/tutorials/file-based-programs).
 
 ## Options
 
@@ -76,7 +82,7 @@ The project or solution or C# (file-based program) file to operate on. If a file
   dotnet clean
   ```
 
-* Clean a project in a specified file:
+* Clean a file-based program:
 
   ```dotnetcli
   dotnet clean Program.cs.

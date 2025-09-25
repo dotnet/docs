@@ -83,7 +83,19 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 
 - **`--file <FILE_PATH>`**
 
-  The path to the file-based program to run. This option can be passed as the first argument if there is no project in the current directory.  For more information, see [Build file-based C# programs](/dotnet/csharp/fundamentals/tutorials/file-based-programs).
+  The path to the file-based app to run. This option can be passed as the first argument if there is no project in the current directory. For more information, see [Build file-based C# apps](/dotnet/csharp/fundamentals/tutorials/file-based-programs).
+  
+  On Unix, you can run file-based apps directly, using the source file name on the command line instead of `dotnet run`. First, ensure the file has execute permissions. Then, add a shebang line `#!` as the first line of the file, for example:
+  
+  ```csharp
+  #!/usr/bin/env dotnet run
+  ```
+  
+  Then you can run the file directly from the command line:
+  
+  ```bash
+  ./ConsoleApp.cs
+  ```
 
   Introduced in .NET SDK 10.0.100.
 
@@ -167,13 +179,13 @@ The environment is constructed in the same order as this list, so the `-e|--envi
   dotnet run
   ```
 
-- Run the specified file-based program with arguments:
+- Run the specified file-based app with arguments:
 
   ```dotnetcli
   dotnet run ConsoleApp.cs -- arg1 arg2
   ```
 
-  File-based program support was added in .NET SDK 10.0.100.
+  File-based app support was added in .NET SDK 10.0.100.
 
 - Run the specified project:
 

@@ -410,8 +410,8 @@ let message = sprintf "error: %s, details: %s"
 
 // ✔️ OK
 let result = someFunction <| arg1
-                         <| arg2  
-                         <| arg3
+                          <| arg2  
+                          <| arg3
 
 // ❌ Not OK
 failwith <| sprintf "foobar: %s - foobarbaz: %s" foobar foobarbaz

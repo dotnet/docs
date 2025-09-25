@@ -405,8 +405,8 @@
 | IoT Operations MQTT | NuGet [0.11.0](https://www.nuget.org/packages/Azure.Iot.Operations.Mqtt/0.11.0) |  |  |
 | IoT Operations Protocol | NuGet [0.12.1](https://www.nuget.org/packages/Azure.Iot.Operations.Protocol/0.12.1) |  |  |
 | IoT Operations Services | NuGet [0.14.0](https://www.nuget.org/packages/Azure.Iot.Operations.Services/0.14.0) |  |  |
-| Item Templates NetCore | NuGet [4.0.5212](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ItemTemplates.NetCore/4.0.5212) |  |  |
-| Item Templates NetFx | NuGet [4.0.5212](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ItemTemplates.NetFx/4.0.5212) |  |  |
+| Item Templates NetCore | NuGet [4.0.5267](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ItemTemplates.NetCore/4.0.5267) |  |  |
+| Item Templates NetFx | NuGet [4.0.5267](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ItemTemplates.NetFx/4.0.5267) |  |  |
 | Microsoft.Azure.DataFactoryTestingFramework.Expressions | NuGet [0.2.7](https://www.nuget.org/packages/Microsoft.Azure.DataFactoryTestingFramework.Expressions/0.2.7) |  |  |
 | Microsoft.Azure.Functions.Worker.OpenTelemetry | NuGet [1.1.0-preview6](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.OpenTelemetry/1.1.0-preview6) |  |  |
 | OpenTelemetry Profiler | NuGet [1.0.0-beta5](https://www.nuget.org/packages/Azure.Monitor.OpenTelemetry.Profiler/1.0.0-beta5) |  |  |
@@ -553,10 +553,10 @@
 | Functions Extensions - Redis | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Redis/1.0.0) |  |  |
 | Functions Extensions - Redis | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Redis/1.0.0) |  |  |
 | Functions Extensions - Worker Extentions | NuGet [1.0.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Dapr/1.0.1) |  |  |
-| Functions item template pack for Microsoft Template Engine | NuGet [4.0.5212](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.ItemTemplates/4.0.5212) |  | GitHub [4.0.5212](https://github.com/Azure/azure-functions-templates/tree/3.1.1582) |
+| Functions item template pack for Microsoft Template Engine | NuGet [4.0.5267](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.ItemTemplates/4.0.5267) |  | GitHub [4.0.5267](https://github.com/Azure/azure-functions-templates/tree/3.1.1582) |
 | Functions OpenAPI app settings deserialization library | NuGet [1.4.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.OpenApi.Configuration.AppSettings/1.4.0)<br>NuGet [2.0.0-preview2](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.OpenApi.Configuration.AppSettings/2.0.0-preview2) |  |  |
 | Functions OpenAPI document and Swagger UI renderer library | NuGet [1.4.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.OpenApi/1.4.0)<br>NuGet [2.0.0-preview2](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.OpenApi/2.0.0-preview2) |  |  |
-| Functions project template pack for Microsoft Template Engine | NuGet [4.0.5212](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.ProjectTemplates/4.0.5212) |  | GitHub [4.0.5212](https://github.com/Azure/azure-functions-templates/tree/3.1.1582) |
+| Functions project template pack for Microsoft Template Engine | NuGet [4.0.5267](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.ProjectTemplates/4.0.5267) |  | GitHub [4.0.5267](https://github.com/Azure/azure-functions-templates/tree/3.1.1582) |
 | Functions runtime assemblies for App Insights logging | NuGet [3.0.41](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Logging.ApplicationInsights/3.0.41) |  | GitHub [3.0.41](https://github.com/Azure/azure-webjobs-sdk/tree/v3.0.18/src/Microsoft.Azure.WebJobs.Logging.ApplicationInsights) |
 | Functions runtime assemblies for logging | NuGet [4.0.3](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Logging/4.0.3) |  |  |
 | Functions runtime assemblies for Microsoft.Azure.WebJobs.Host | NuGet [3.0.42](https://www.nuget.org/packages/Microsoft.Azure.WebJobs/3.0.42) |  | GitHub [3.0.42](https://github.com/Azure/azure-webjobs-sdk/tree/v3.0.18/src/Microsoft.Azure.WebJobs) |
@@ -590,7 +590,7 @@
 | Microsoft.Azure.Functions.Worker.Extensions.Timer | NuGet [4.3.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Timer/4.3.1) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Warmup | NuGet [4.0.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Warmup/4.0.2) |  |  |
 | Microsoft.Azure.Functions.Worker.Grpc | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Grpc/2.0.0)<br>NuGet [2.50.0-preview1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Grpc/2.50.0-preview1) |  |  |
-| Microsoft.Azure.Functions.Worker.ItemTemplates | NuGet [4.0.5212](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ItemTemplates/4.0.5212) |  |  |
+| Microsoft.Azure.Functions.Worker.ItemTemplates | NuGet [4.0.5267](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ItemTemplates/4.0.5267) |  |  |
 | Microsoft.Azure.Functions.Worker.ProjectTemplates | NuGet [4.0.5267](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ProjectTemplates/4.0.5267) |  |  |
 | Microsoft.Azure.Functions.Worker.Sdk | NuGet [2.0.5](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk/2.0.5) |  |  |
 | Microsoft.Azure.Functions.Worker.Sdk.Analyzers | NuGet [1.2.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk.Analyzers/1.2.2) |  |  |

@@ -86,15 +86,7 @@ There are three specific settings that `dotnet restore` ignores:
 
 ## Arguments
 
-`PROJECT | SOLUTION | FILE`
-
-The project or solution or C# (file-based app) file to restore. If a file isn't specified, MSBuild searches the current directory for a project or solution.
-
-- `PROJECT` is the path and filename of a C#, F#, or Visual Basic project file, or the path to a directory that contains a C#, F#, or Visual Basic project file. If the directory is not specified, it defaults to the current directory.
-
-- `SOLUTION` is the path and filename of a solution file (*.sln* or *.slnx* extension), or the path to a directory that contains a solution file. If the directory is not specified, it defaults to the current directory.
-
-- `FILE` is an argument added in .NET 10. The path and filename of a file-based app. File-based apps are contained within a single file that is built and run without a corresponding project (`*.csproj`) file. For more information, see [Build file-based C# apps](/dotnet/csharp/fundamentals/tutorials/file-based-programs).
+[!INCLUDE [arguments-project-solution-file](../../../includes/cli-arguments-project-solution-file.md)]
 
 ## Options
 

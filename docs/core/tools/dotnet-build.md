@@ -75,15 +75,7 @@ Running `dotnet build` is equivalent to running `dotnet msbuild -restore`; howev
 
 ## Arguments
 
-`PROJECT | SOLUTION | FILE`
-
-The project or solution or C# (file-based app) file to build. If a file isn't specified, MSBuild searches the current directory for a project or solution.
-
-- `PROJECT` is the path and filename of a C#, F#, or Visual Basic project file, or the path to a directory that contains a C#, F#, or Visual Basic project file.
-
-- `SOLUTION` is the path and filename of a solution file (*.sln* or *.slnx* extension), or the path to a directory that contains a solution file.
-
-- `FILE` is an argument added in .NET 10. The path and filename of a file-based app. File-based apps are contained within a single file that is built and run without a corresponding project (`*.csproj`) file. For more information, see [Build file-based C# programs](/dotnet/csharp/fundamentals/tutorials/file-based-programs).
+[!INCLUDE [arguments-project-solution-file](../../../includes/cli-arguments-project-solution-file.md)]
 
 ## Options
 

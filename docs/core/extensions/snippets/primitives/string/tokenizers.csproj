@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="BenchmarkDotNet" Version="0.15.2" />
+    <PackageReference Include="BenchmarkDotNet" Version="0.15.3" />
     <PackageReference Include="Microsoft.Extensions.Primitives" Version="9.0.9" />
   </ItemGroup>
 

@@ -58,6 +58,8 @@ To run the application, the `dotnet run` command resolves the dependencies of th
   `<applicationArguments>`
   
   Arguments passed to the application that is being run.
+  
+  Any arguments that aren't recognized by `dotnet run` are passed to the application. To separate arguments for `dotnet run` from arguments for the application, use the `--` option.
 
 ## Options
 
@@ -83,7 +85,7 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 
 - **`--file <FILE_PATH>`**
 
-  The path to the file-based app to run. This option can be passed as the first argument if there is no project in the current directory. For more information, see [Build file-based C# apps](/dotnet/csharp/fundamentals/tutorials/file-based-programs).
+  The path to the file-based app to run. If a path isn't specified, the current directory is used to find and run the file. For more information on file-based apps, see [Build file-based C# apps](/dotnet/csharp/fundamentals/tutorials/file-based-programs).
   
   On Unix, you can run file-based apps directly, using the source file name on the command line instead of `dotnet run`. First, ensure the file has execute permissions. Then, add a shebang line `#!` as the first line of the file, for example:
   
@@ -179,10 +181,10 @@ The environment is constructed in the same order as this list, so the `-e|--envi
   dotnet run
   ```
 
-- Run the specified file-based app with arguments:
+- Run the specified file-based app in the current directory:
 
   ```dotnetcli
-  dotnet run ConsoleApp.cs -- arg1 arg2
+  dotnet run --file ConsoleApp.cs
   ```
 
   File-based app support was added in .NET SDK 10.0.100.
@@ -209,4 +211,16 @@ The environment is constructed in the same order as this list, so the `-e|--envi
 
   ```dotnetcli
   dotnet run --verbosity m
+  ```
+
+- Run the project in the current directory using the specified framework and pass arguments to the application:
+
+  ```dotnetcli
+  dotnet run -f net6.0 -- arg1 arg2
+  ```
+
+  In the following example, three arguments are passed to the application. One argument is passed using `-`, and two arguments are passed after `--`:
+
+  ```dotnetcli
+  dotnet run -f net6.0 -arg1 -- arg2 arg3
   ```

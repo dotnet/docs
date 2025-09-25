@@ -5,7 +5,7 @@ ms.topic: include
 
 `PROJECT | SOLUTION | FILE`
 
-The project or solution or C# (file-based app) file to clean. If a file isn't specified, MSBuild searches the current directory for a project or solution.
+The project or solution or C# (file-based app) file to operate on. If a file isn't specified, MSBuild searches the current directory for a project or solution.
 
 - `PROJECT` is the path and filename of a C#, F#, or Visual Basic project file, or the path to a directory that contains a C#, F#, or Visual Basic project file.
 

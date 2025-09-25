@@ -1,9 +1,8 @@
 ---
 title: Tutorial - Integrate OpenAI with the RAG pattern and vector search using Azure Cosmos DB for MongoDB
 description: Create a simple recipe app using the RAG pattern and vector search using Azure Cosmos DB for MongoDB.
-ms.date: 11/24/2024
+ms.date: 08/26/2025
 ms.topic: tutorial
-ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 author: alexwolfmsft
 ms.author: alexwolf
 ---

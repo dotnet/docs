@@ -83,22 +83,30 @@ items:
     href: /azure/ai-services/openai/how-to/risks-safety-monitor?toc=/dotnet/ai/toc.json&bc=/dotnet/ai/toc.json
 - name: Evaluation
   items:
+  - name: Responsible AI with .NET
+    href: evaluation/responsible-ai.md
   - name: The Microsoft.Extensions.AI.Evaluation libraries
-    href: conceptual/evaluation-libraries.md
+    href: evaluation/libraries.md
   - name: Tutorials
     items:
     - name: "Quickstart: Evaluate the quality of a response"
-      href: quickstarts/evaluate-ai-response.md
+      href: evaluation/evaluate-ai-response.md
     - name: "Evaluate response quality with caching and reporting"
-      href: tutorials/evaluate-with-reporting.md
+      href: evaluation/evaluate-with-reporting.md
     - name: "Evaluate response safety with caching and reporting"
-      href: tutorials/evaluate-safety.md
+      href: evaluation/evaluate-safety.md
 - name: Advanced
   items:
   - name: Sample interface implementations
     href: advanced/sample-implementations.md
 - name: Resources
   items:
+  - name: Get started resources
+    href: resources/get-started.md
+  - name: Azure AI resources
+    href: resources/azure-ai.md
+  - name: MCP server resources
+    href: resources/mcp-servers.md
   - name: API reference
     items:
     - name: ChatClientBuilder
@@ -107,5 +115,3 @@ items:
       href: /dotnet/api/microsoft.extensions.ai.ichatclient
     - name: IEmbeddingGenerator
       href: /dotnet/api/microsoft.extensions.ai.iembeddinggenerator
-  - name: Azure AI samples and docs
-    href: azure-ai-for-dotnet-developers.md

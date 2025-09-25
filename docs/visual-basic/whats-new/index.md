@@ -66,11 +66,11 @@ Visual Basic 16.9 enables consumption of init-only properties.
 
 ## Visual Basic 16.0
 
-Visual Basic 16.0 focuses on supplying more of the features of the Visual Basic Runtime (microsoft.visualbasic.dll) to .NET Core and is the first version of Visual Basic focused on .NET Core. Many portions of the Visual Basic Runtime depend on WinForms and these will be added in a later version of Visual Basic.
+Visual Basic 16.0 focuses on supplying more of the features of the Visual Basic Runtime (microsoft.visualbasic.dll) to .NET Core and is the first version of Visual Basic focused on .NET Core. The parts of the Visual Basic Runtime that depend on WinForms were added in .NET Core 3.0.
 
 **Comments allowed in more places within statements**
 
-In Visual Basic 15.8 and earlier versions, comments are only allowed on blank lines, at the end of a statement, or in specific places within a statement where an implicit line continuation is allowed. Starting with Visual Basic 16.0, comments are also allowed after explicit line continuations and within a statement on a line beginning with a space followed by an underscore.
+In Visual Basic 15.5 and earlier versions, comments are only allowed on blank lines, at the end of a statement, or in specific places within a statement where an implicit line continuation is allowed. Starting with Visual Basic 16.0, comments are also allowed after explicit line continuations and within a statement on a line beginning with a space followed by an underscore.
 
 ```vb
 Public Sub Main()
@@ -84,7 +84,7 @@ End Sub
 
 **Optimized floating-point to integer conversion**
 
-In previous versions of Visual Basic, conversion of [Double](../language-reference/data-types/double-data-type.md) and [Single](../language-reference/data-types/single-data-type.md) values to integers offered relatively poor performance. Visual Basic 15.8 significantly enhances the performance of floating-point conversions to integers when you pass the value returned by any of the following methods to one of the [intrinsic Visual Basic integer conversion functions](../language-reference/functions/type-conversion-functions.md) (CByte, CShort, CInt, CLng, CSByte, CUShort, CUInt, CULng), or when the value returned by any of the following methods is implicitly cast to an integral type when [Option Strict](../language-reference/statements/option-strict-statement.md) is set to `Off`:
+In previous versions of Visual Basic, conversion of [Double](../language-reference/data-types/double-data-type.md) and [Single](../language-reference/data-types/single-data-type.md) values to integers offered relatively poor performance. Visual Basic 16.0 significantly enhances the performance of floating-point conversions to integers when you pass the value returned by any of the following methods to one of the [intrinsic Visual Basic integer conversion functions](../language-reference/functions/type-conversion-functions.md) (CByte, CShort, CInt, CLng, CSByte, CUShort, CUInt, CULng), or when the value returned by any of the following methods is implicitly cast to an integral type when [Option Strict](../language-reference/statements/option-strict-statement.md) is set to `Off`:
 
 - <xref:Microsoft.VisualBasic.Conversion.Fix(System.Double)?displayProperty=nameWithType>
 - <xref:Microsoft.VisualBasic.Conversion.Fix(System.Object)?displayProperty=nameWithType>

@@ -15,7 +15,11 @@ Previously, you could derive from any subclass of <xref:Microsoft.Build.Framewor
 
 Starting in .NET 8, a build error is issued if your code uses any type derived from <xref:Microsoft.Build.Framework.BuildEventArgs> and you build using the .NET 8 version of MSBuild, that is, from the command line:
 
-> Usage of unsecure BinaryFormatter during serialization of custom event type 'MyCustomBuildEventArgs'. This will be deprecated soon. Please use Extended*EventArgs instead. More info: <https://aka.ms/msbuild/eventargs>
+> Usage of unsecure BinaryFormatter during serialization of custom event type 'MyCustomBuildEventArgs'. This will be deprecated soon. Please use Extended*EventArgs instead. More info: <https://aka.ms/msbuild/eventargs>.
+
+In .NET 10, the error message was changed to:
+
+> Custom event type 'MyCustomBuildEventArgs' is not supported as all custom event types were deprecated. Please use Extended*EventArgs instead. More info: <https://aka.ms/msbuild/eventargs>.
 
 Starting from Visual Studio version 17.10, the same behavior applies to builds in Visual Studio.
 
@@ -29,7 +33,7 @@ This change is a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 
-<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> serialization is obsolete in .NET 8 and later versions. Any use of <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> is deamed unsecure and throws an exception at run time. Since MSBuild custom derived build events use <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>, your build would crash if you use these events in your build. The new build error provides a more graceful failure.
+<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> serialization is obsolete in .NET 8 and later versions. Any use of <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> is deemed insecure and throws an exception at run time. Since MSBuild custom derived build events use <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>, your build would crash if you used these events in your build. The new build error provides a more graceful failure.
 
 ## Recommended action
 

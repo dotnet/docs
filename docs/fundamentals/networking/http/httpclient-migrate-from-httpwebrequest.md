@@ -66,7 +66,7 @@ HttpClient client = new();
 using HttpResponseMessage responseMessage = await client.PostAsync(uri, new StringContent("Hello World!"));
 ```
 
-## HttpWebRequest to HttpClient, SocketsHttpHandler migration guide
+## `HttpWebRequest` to `HttpClient`, `SocketsHttpHandler` migration guide
 
 | <xref:System.Net.HttpWebRequest> Old API | New API | Notes |
 |------------------------------------------|---------|-------|
@@ -120,9 +120,9 @@ using HttpResponseMessage responseMessage = await client.PostAsync(uri, new Stri
 | `UseDefaultCredentials` | No direct equivalent API | [Example: Setting SocketsHttpHandler Properties](#example-set-socketshttphandler-properties). |
 | `UserAgent` | <xref:System.Net.Http.Headers.HttpRequestHeaders.UserAgent> | [Example: Set Request Headers](#example-set-common-request-headers). |
 
-## Migrate ServicePoint(Manager) usage
+## Migrate `ServicePointManager` usage
 
-You should be aware that `ServicePointManager` is a static class, meaning that any changes made to its properties will have a global effect on all newly created `ServicePoint` objects within the application. For example, when you modify a property like `ConnectionLimit` or `Expect100Continue`, it impacts every new ServicePoint instance.
+You should be aware that `ServicePointManager` is a static class, meaning that any changes made to its properties will have a global effect on all newly created `ServicePoint` objects within the application. For example, when you modify a property like `ConnectionLimit` or `Expect100Continue`, it impacts every new `ServicePoint` instance.
 
 > [!WARNING]
 > In modern .NET, `HttpClient` does not take into account any configurations set on `ServicePointManager`.
@@ -181,19 +181,19 @@ You should be aware that `ServicePointManager` is a static class, meaning that a
 | `CloseConnectionGroup` | No equivalent | No workaround |
 | `SetTcpKeepAlive` | No direct equivalent API | [Usage of SocketsHttpHandler and ConnectCallback](#usage-of-socketshttphandler-and-connectcallback). |
 
-## Usage of HttpClient and HttpRequestMessage properties
+## Usage of `HttpClient` and `HttpRequestMessage` properties
 
-When working with HttpClient in .NET, you have access to a variety of properties that allow you to configure and customize HTTP requests and responses. Understanding these properties can help you make the most of HttpClient and ensure that your application communicates efficiently and securely with web services.
+When working with HttpClient in .NET, you have access to a variety of properties that allow you to configure and customize HTTP requests and responses. Understanding these properties can help you make the most of `HttpClient` and ensure that your application communicates efficiently and securely with web services.
 
-### Example: Usage of HttpRequestMessage properties
+### Example: Usage of `HttpRequestMessage` properties
 
-Here's an example of how to use HttpClient and HttpRequestMessage together:
+Here's an example of how to use `HttpClient` and `HttpRequestMessage` together:
 
 ```csharp
 var client = new HttpClient();
 
-var request = new HttpRequestMessage(HttpMethod.Post, "https://example.com"); // Method and RequestUri usage
-var request = new HttpRequestMessage() // Alternative way to set RequestUri and Method
+using var request = new HttpRequestMessage(HttpMethod.Post, "https://example.com"); // Method and RequestUri usage
+using var request = new HttpRequestMessage() // Alternative way to set RequestUri and Method
 {
     RequestUri = new Uri("https://example.com"),
     Method = HttpMethod.Post
@@ -215,7 +215,7 @@ using var response = await client.GetAsync(uri);
 var redirectedUri = response.RequestMessage.RequestUri;
 ```
 
-## Usage of SocketsHttpHandler and ConnectCallback
+## Usage of `SocketsHttpHandler` and `ConnectCallback`
 
 The `ConnectCallback` property in `SocketsHttpHandler` allows developers to customize the process of establishing a TCP connection. This can be useful for scenarios where you need to control DNS resolution or apply specific socket options on the connection. By using `ConnectCallback`, you can intercept and modify the connection process before it is used by `HttpClient`.
 
@@ -318,9 +318,9 @@ using var response = await client.GetAsync(uri);
 
 ### Example: Enable DNS round robin
 
-DNS Round Robin is a technique used to distribute network traffic across multiple servers by rotating through a list of IP addresses associated with a single domain name. This helps in load balancing and improving the availability of services. When using HttpClient, you can implement DNS Round Robin by manually handling the DNS resolution and rotating through the IP addresses using the ConnectCallback property of SocketsHttpHandler.
+DNS Round Robin is a technique used to distribute network traffic across multiple servers by rotating through a list of IP addresses associated with a single domain name. This helps in load balancing and improving the availability of services. When using `HttpClient`, you can implement DNS Round Robin by manually handling the DNS resolution and rotating through the IP addresses using the `ConnectCallback` property of `SocketsHttpHandler`.
 
-To enable DNS Round Robin with HttpClient, you can use the ConnectCallback property to manually resolve the DNS entries and rotate through the IP addresses. Here's an example for `HttpWebRequest` and `HttpClient`:
+To enable DNS Round Robin with `HttpClient`, you can use the `ConnectCallback` property to manually resolve the DNS entries and rotate through the IP addresses. Here's an example for `HttpWebRequest` and `HttpClient`:
 
 **Old code using `HttpWebRequest`**:
 
@@ -343,11 +343,11 @@ For the implementation of `DnsRoundRobinConnector`, see [DnsRoundRobin.cs](https
 
 :::code source="../snippets/httpclient/Program.DnsRoundRobin.cs" id="DnsRoundRobinConnect":::
 
-### Example: Set SocketsHttpHandler properties
+### Example: Set `SocketsHttpHandler` properties
 
-SocketsHttpHandler is a powerful and flexible handler in .NET that provides advanced configuration options for managing HTTP connections. By setting various properties of SocketsHttpHandler, you can fine-tune the behavior of your HTTP client to meet specific requirements, such as performance optimization, security enhancements, and custom connection handling.
+`SocketsHttpHandler` is a powerful and flexible handler in .NET that provides advanced configuration options for managing HTTP connections. By setting various properties of `SocketsHttpHandler`, you can fine-tune the behavior of your HTTP client to meet specific requirements, such as performance optimization, security enhancements, and custom connection handling.
 
-Here's an example of how to configure SocketsHttpHandler with various properties and use it with HttpClient:
+Here's an example of how to configure `SocketsHttpHandler` with various properties and use it with `HttpClient`:
 
 ```c#
 var cookieContainer = new CookieContainer();
@@ -374,11 +374,11 @@ using var response = await client.GetAsync(uri);
 
 This functionality is specific to certain platforms and is somewhat outdated. If you need a workaround, you can refer to [this section of the code](https://github.com/dotnet/runtime/blob/171f1a73a9f0fa77464995bcb893a59b9b98bc3d/src/libraries/System.Net.Requests/src/System/Net/HttpWebRequest.cs#L1678-L1684).
 
-## Usage of Certificate and TLS-related properties in HttpClient
+## Usage of Certificate and TLS-related properties in `HttpClient`
 
 When working with `HttpClient`, you may need to handle client certificates for various purposes, such as custom validation of server certificates or fetching the server certificate. `HttpClient` provides several properties and options to manage certificates effectively.
 
-### Example: Check certificate revocation list with SocketsHttpHandler
+### Example: Check certificate revocation list with `SocketsHttpHandler`
 
 The `CheckCertificateRevocationList` property in `SocketsHttpHandler.SslOptions` allows developers to enable or disable the check for certificate revocation lists (CRL) during SSL/TLS handshake. Enabling this property ensures that the client verifies whether the server's certificate has been revoked, enhancing the security of the connection.
 
@@ -445,10 +445,10 @@ Mutual authentication, also known as two-way SSL or client certificate authentic
 To enable mutual authentication, follow these steps:
 
 - Load the client certificate.
-- Configure the HttpClientHandler or SocketsHttpHandler to include the client certificate.
+- Configure the `HttpClientHandler` or `SocketsHttpHandler` to include the client certificate.
 - Set up the server certificate validation callback if custom validation is needed.
 
-Here's an example using SocketsHttpHandler:
+Here's an example using `SocketsHttpHandler`:
 
 ```csharp
 var handler = new SocketsHttpHandler
@@ -478,21 +478,21 @@ Headers play a crucial role in HTTP communication, providing essential metadata 
 
 ### Set request headers
 
-Request headers are used to provide additional information to the server about the request being made. Common use cases include specifying the content type, setting authentication tokens, and adding custom headers. You can set request headers using the `DefaultRequestHeaders` property of `HttpClient` or the Headers property of `HttpRequestMessage`.
+Request headers are used to provide additional information to the server about the request being made. Common use cases include specifying the content type, setting authentication tokens, and adding custom headers. You can set request headers using the `DefaultRequestHeaders` property of `HttpClient` or the `Headers` property of `HttpRequestMessage`.
 
 #### Example: Set custom request headers
 
-**Setting Default Custom Request Headers in HttpClient**
+**Setting Default Custom Request Headers in `HttpClient`**
 
 ```csharp
 var client = new HttpClient();
 client.DefaultRequestHeaders.Add("Custom-Header", "value");
 ```
 
-**Setting Custom Request Headers in HttpRequestMessage**
+**Setting Custom Request Headers in `HttpRequestMessage`**
 
 ```csharp
-var request = new HttpRequestMessage(HttpMethod.Get, uri);
+using var request = new HttpRequestMessage(HttpMethod.Get, uri);
 request.Headers.Add("Custom-Header", "value");
 ```
 
@@ -503,7 +503,7 @@ For a comprehensive list of common properties available in <xref:System.Net.Http
 
 To set common request headers in `HttpRequestMessage`, you can use the `Headers` property of the `HttpRequestMessage` object. This property provides access to the `HttpRequestHeaders` collection, where you can add or modify headers as needed.
 
-**Setting Common Default Request Headers in HttpClient**
+**Setting Common Default Request Headers in `HttpClient`**
 
 ```csharp
 using System.Net.Http.Headers;
@@ -512,12 +512,12 @@ var client = new HttpClient();
 client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", "token");
 ```
 
-**Setting Common Request Headers in HttpRequestMessage**
+**Setting Common Request Headers in `HttpRequestMessage`**
 
 ```csharp
 using System.Net.Http.Headers;
 
-var request = new HttpRequestMessage(HttpMethod.Get, uri);
+using var request = new HttpRequestMessage(HttpMethod.Get, uri);
 request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", "token");
 ```
 
@@ -527,7 +527,7 @@ Content headers are used to provide additional information about the body of an 
 
 ```csharp
 var client = new HttpClient();
-var request = new HttpRequestMessage(HttpMethod.Post, uri);
+using var request = new HttpRequestMessage(HttpMethod.Post, uri);
 
 // Create the content and set the content headers
 var jsonData = "{\"key\":\"value\"}";
@@ -543,7 +543,7 @@ request.Content = content;
 using var response = await client.SendAsync(request);
 ```
 
-### Example: Set MaximumErrorResponseLength in HttpClient
+### Example: Set `MaximumErrorResponseLength` in `HttpClient`
 
 The `MaximumErrorResponseLength` usage allows developers to specify the maximum length of the error response content that the handler will buffer. This is useful for controlling the amount of data that is read and stored in memory when an error response is received from the server. By using this technique, you can prevent excessive memory usage and improve the performance of your application when handling large error responses.
 
@@ -555,10 +555,10 @@ And usage example of `TruncatedReadStream`:
 
 :::code source="../snippets/httpclient/Program.TruncatedReadStream.cs" id="TruncatedReadStreamUsage":::
 
-### Example: Apply CachePolicy headers
+### Example: Apply `CachePolicy` headers
 
 > [!WARNING]
-> `HttpClient` does not have built-in logic to cache responses. There is no workaround other than implementing all the caching yourself. Simply setting the headers will not achieve caching.
+> `HttpClient` doesn't have built-in logic to cache responses. There is no workaround other than implementing all the caching yourself. Simply setting the headers won't achieve caching.
 
 When migrating from `HttpWebRequest` to `HttpClient`, it's important to correctly handle cache-related headers such as `pragma` and `cache-control`. These headers control how responses are cached and retrieved, ensuring that your application behaves as expected in terms of performance and data freshness.
 
@@ -585,7 +585,7 @@ For the implementation of `AddCacheControlHeaders`, see [AddCacheControlHeaders.
 
 ## Usage of buffering properties
 
-When migrating from HttpWebRequest to `HttpClient`, it's important to understand the differences in how these two APIs handle buffering.
+When migrating from `HttpWebRequest` to `HttpClient`, it's important to understand the differences in how these two APIs handle buffering.
 
 **Old code using `HttpWebRequest`**:
 
@@ -601,16 +601,16 @@ request.AllowWriteStreamBuffering = false; // Default is `true`.
 
 In `HttpClient`, there are no direct equivalents to the `AllowWriteStreamBuffering` and `AllowReadStreamBuffering` properties.
 
-HttpClient does not buffer request bodies on its own, instead delegating the responsibility to the `HttpContent` used. Contents like `StringContent` or `ByteArrayContent` are logically already buffered in memory, while using `StreamContent` will not incur any buffering by default. To force the content to be buffered, you may call `HttpContent.LoadIntoBufferAsync` before sending the request. Here's an example:
+`HttpClient` doesn't buffer request bodies on its own, instead delegating the responsibility to the `HttpContent` used. Contents like `StringContent` or `ByteArrayContent` are logically already buffered in memory, while using `StreamContent` won't incur any buffering by default. To force the content to be buffered, you may call `HttpContent.LoadIntoBufferAsync` before sending the request. Here's an example:
 
 ```csharp
 HttpClient client = new HttpClient();
 
-HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Post, uri);
+using HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Post, uri);
 request.Content = new StreamContent(yourStream);
 await request.Content.LoadIntoBufferAsync();
 
-HttpResponseMessage response = await client.SendAsync(request);
+using HttpResponseMessage response = await client.SendAsync(request);
 ```
 
 In `HttpClient` read buffering is enabled by default. To avoid it, you may specify the `HttpCompletionOption.ResponseHeadersRead` flag, or use the `GetStreamAsync` helper.

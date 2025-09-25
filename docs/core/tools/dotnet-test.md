@@ -422,7 +422,6 @@ For more information and examples on how to use selective unit test filtering, s
 dotnet test
     [--project <PROJECT_PATH>]
     [--solution <SOLUTION_PATH>]
-    [--directory <DIRECTORY_PATH>]
     [--test-modules <EXPRESSION>] 
     [--root-directory <ROOT_PATH>]
     [--max-parallel-test-modules <NUMBER>]
@@ -458,20 +457,16 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
 #### Options
 
 > [!NOTE]
-> You can use only one of the following options at a time: `--project`, `--solution`, `--directory`, or `--test-modules`. These options can't be combined.
+> You can use only one of the following options at a time: `--project`, `--solution`, or `--test-modules`. These options can't be combined.
 > In addition, when using `--test-modules`, you can't specify `--arch`, `--configuration`, `--framework`, `--os`, or `--runtime`. These options are not relevant for an already-built module.
 
 - **`--project <PROJECT_PATH>`**
 
-  Specifies the path to the test project.
+  Specifies the path of the project file to run (folder name or full path). If not specified, it defaults to the current directory.
 
 - **`--solution <SOLUTION_PATH>`**
 
-  Specifies the path to the solution.
-
-- **`--directory <DIRECTORY_PATH>`**
-
-  Specifies the path to a directory that contains a project or a solution.
+  Specifies the path of the solution file to run (folder name or full path). If not specified, it defaults to the current directory.
 
 - **`--test-modules <EXPRESSION>`**
 
@@ -500,6 +495,9 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
   The target runtime to test for.
 
   Short form `-r` available starting in .NET SDK 7.
+
+  > [!NOTE]
+  > Running tests for a solution with a global `RuntimeIdentifier` property (explicitly or via `--arch`, `--runtime`, or `--os`) is not supported. Set `RuntimeIdentifier` on an individual project level instead.
 
 - **`-v|--verbosity <LEVEL>`**
   
@@ -576,12 +574,6 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
 
   ```dotnetcli
   dotnet test --solution ./TestProjects/TestProjects.sln
-  ```
-
-- Run the tests in a solution or project that can be found in the `TestProjects` directory:
-
-  ```dotnetcli
-  dotnet test --directory ./TestProjects
   ```
 
 - Run the tests using `TestProject.dll` assembly:

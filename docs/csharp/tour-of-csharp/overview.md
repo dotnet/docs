@@ -88,6 +88,8 @@ You can use *index* and *range* expressions to retrieve one or more elements fro
 
 The `^` index indicates *from the end* rather than from the start. The `^0` element is one past the end of the collection, so `^1` is the last element. The `..` in a range expression denotes the range of elements to include. The range starts with the first index and includes all elements up to, but not including, the element at the last index.
 
+For more information about index and range expressions, see the [Explore indexes and ranges](../tutorials/ranges-indexes.md) article.
+
 [Language integrated query (LINQ)](../linq/index.md) provides a common pattern-based syntax to query or transform any collection of data. LINQ unifies the syntax for querying in-memory collections, structured data like XML or JSON, database storage, and even cloud based data APIs. You learn one set of syntax and you can search and manipulate data regardless of its storage. The following query finds all students whose grade point average is greater than 3.5:
 
 :::code language="csharp" source="./snippets/shared/LinqExample.cs" id="LinqExampleQuery":::

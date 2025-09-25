@@ -167,7 +167,7 @@ C# style rules:
 - [Use collection expression for empty (IDE0301)](ide0301.md)
 - [Use collection expression for stack alloc (IDE0302)](ide0302.md)
 - [Use collection expression for `Create()` (IDE0303)](ide0303.md)
-- [Use collection expression for builder (IDE0304](ide0304.md)
+- [Use collection expression for builder (IDE0304)](ide0304.md)
 - [Use collection expression for fluent (IDE0305)](ide0305.md)
 - [Use collection expression for new (IDE0306)](ide0306.md)
 - [Use unbound generic type (IDE0340)](ide0340.md)

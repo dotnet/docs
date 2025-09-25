@@ -37,7 +37,7 @@ The following table outlines the updates in this release.
 | .NET Framework 3.5, 4.8.1 | [5048162](https://support.microsoft.com/kb/5048162) |
 | **Windows 11, version 22H2 and Windows 11, version 23H2** | |
 | .NET Framework 3.5, 4.8.1 | [5048163](https://support.microsoft.com/kb/5048163) |
-| **Windows 10, version 22H2** | **[5048292](https://support.microsoft.com/kb/5048292)** |
+| **Windows 10, version 22H2** | **[5048292](https://support.microsoft.com/topic/november-21-2024-kb5048292-cumulative-update-preview-for-net-framework-3-5-4-8-and-4-8-1-for-windows-10-version-22h2-5d645428-d7be-4fe1-8b5d-34b7506f7d55)** |
 | .NET Framework 3.5, 4.8 | [5048160](https://support.microsoft.com/kb/5048160) |
 | .NET Framework 3.5, 4.8.1 | [5048161](https://support.microsoft.com/kb/5048161) |
 

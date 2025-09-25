@@ -150,6 +150,8 @@ If the <xref:System.String> methods don't provide the functionality that you mus
 
 :::code language="csharp" source="./snippets/StringCharacters.cs" id="AccessChars":::
 
+For more information about indices, see the [Explore indexes and ranges](../../tutorials/ranges-indexes.md) article.
+
 ## Null strings and empty strings
 
 An empty string is an instance of a <xref:System.String?displayProperty=nameWithType> object that contains zero characters. Empty strings are used often in various programming scenarios to represent a blank text field. You can call methods on empty strings because they're valid <xref:System.String?displayProperty=nameWithType> objects. Empty strings are initialized as follows:

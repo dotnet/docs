@@ -77,6 +77,8 @@ A *single-dimensional array* is a sequence of like elements. You access an eleme
 
 The first declaration declares an uninitialized array of five integers, from `array[0]` to `array[4]`. The elements of the array are initialized to the [default value](default-values.md) of the element type, `0` for integers. The second declaration declares an array of strings and initializes all seven values of that array. A series of `Console.WriteLine` statements prints all the elements of the `weekDay` array. For single-dimensional arrays, the `foreach` statement processes elements in increasing index order, starting with index 0 and ending with index `Length - 1`.
 
+For more information about indices, see the [Explore indexes and ranges](../../tutorials/ranges-indexes.md) article.
+
 ### Pass single-dimensional arrays as arguments
 
 You can pass an initialized single-dimensional array to a method. In the following example, an array of strings is initialized and passed as an argument to a `DisplayArray` method for strings. The method displays the elements of the array. Next, the `ChangeArray` method reverses the array elements, and then the `ChangeArrayElements` method modifies the first three elements of the array. After each method returns, the `DisplayArray` method shows that passing an array by value doesn't prevent changes to the array elements.

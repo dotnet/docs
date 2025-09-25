@@ -14,7 +14,7 @@ ms.date: 02/14/2020
 ## Synopsis
 
 ```dotnetcli
-dotnet tool run <COMMAND NAME>
+dotnet tool run <COMMAND NAME> [--allow-roll-forward]
 
 dotnet tool run -h|--help
 ```
@@ -31,6 +31,10 @@ The `dotnet tool run` command searches tool manifest files that are in scope for
 
 ## Options
 
+- **`--allow-roll-forward`**
+
+  Available starting with .NET 9.0 SDK. Allow tool to use a newer version of the .NET runtime if the runtime it targets isn't installed.
+
 [!INCLUDE [help](../../../includes/cli-help.md)]
 
 ## Example
@@ -38,6 +42,10 @@ The `dotnet tool run` command searches tool manifest files that are in scope for
 - **`dotnet tool run dotnetsay`**
 
   Runs the `dotnetsay` local tool.
+
+- **`dotnet tool run dotnetsay --allow-roll-forward`**
+
+  Runs the `dotnetsay` local tool and allows it to run on newer .NET versions if the target runtime isn't available.
 
 ## See also
 

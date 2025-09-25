@@ -21,7 +21,7 @@ During local development, applications need to authenticate to Azure to access v
 
 Using dedicated application service principals allows you to adhere to the principle of least privilege when accessing Azure resources. Permissions are limited to the specific requirements of the app during development, preventing accidental access to Azure resources intended for other apps or services. This approach also helps avoid issues when the app is moved to production by ensuring it isn't over-privileged in the development environment.
 
-:::image type="content" source="../media/local-dev-service-principal-overview.png" alt-text="A diagram showing how a local .NET app uses the developer's credentials to connect to Azure by using locally installed development tools.":::
+:::image type="content" source="../media/mermaidjs/local-service-principal-authentication.svg" alt-text="A diagram showing how a local .NET app uses a service principal to connect to Azure resources.":::
 
 When the app is registered in Azure, an application service principal is created. For local development:
 

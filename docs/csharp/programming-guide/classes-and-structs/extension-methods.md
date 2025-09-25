@@ -1,7 +1,7 @@
 ---
 title: "Extension members"
 description: Extension members in C# enable you to add methods, properties, or operators to existing types without creating a new derived type, recompiling, or otherwise modifying the original type.
-ms.date: 04/15/2025
+ms.date: 09/17/2025
 helpviewer_keywords: 
   - "methods [C#], adding to existing types"
   - "extension methods [C#]"
@@ -12,7 +12,9 @@ helpviewer_keywords:
 
 Extension members enable you to "add" methods to existing types without creating a new derived type, recompiling, or otherwise modifying the original type.
 
-Beginning with C# 14, there are two syntaxes you use to define extension methods. C# 14 adds [`extension`](../../language-reference/keywords/extension.md) containers, where you define multiple extension members for a type or an instance of a type. Before C# 14, you add the [`this`](../../language-reference/keywords/this.md) modifier to the first parameter of a static method to indicate that the method appears as a member of an instance of the parameter type.
+Beginning with C# 14, there are two syntaxes you use to define extension methods. C# 14 adds [`extension`](../../language-reference/keywords/extension.md) blocks, where you define multiple extension members for a type or an instance of a type. Before C# 14, you add the [`this`](../../language-reference/keywords/this.md) modifier to the first parameter of a static method to indicate that the method appears as a member of an instance of the parameter type.
+
+Extension blocks support multiple member types: methods, properties, and operators. With extension blocks, you can define both instance extensions and static extensions. Instance extensions extend an instance of the type; static extensions extend the type itself. The form of extension methods declared with the `this` modifier supports instance extension methods.
 
 Extension methods are static methods, but they're called as if they were instance methods on the extended type. For client code written in C#, F# and Visual Basic, there's no apparent difference between calling an extension method and the methods defined in a type. Both forms of extension methods are compiled to the same IL (Intermediate Language). Consumers of extension members don't need to know which syntax was used to define extension methods.
 
@@ -87,7 +89,7 @@ In the past, it was common to create "Collection Classes" that implemented the <
 
 ### Layer-Specific Functionality
 
-When using an Onion Architecture or other layered application design, it's common to have a set of Domain Entities or Data Transfer Objects that can be used to communicate across application boundaries. These objects generally contain no functionality, or only minimal functionality that applies to all layers of the application. Extension methods can be used to add functionality that is specific to each application layer.
+When using an Onion Architecture or other layered application design, it's common to have a set of Domain Entities or Data Transfer Objects that can be used to communicate across application boundaries. These objects generally contain no functionality, or only minimal functionality that applies to all layers of the application. Extension methods can be used to add functionality that's specific to each application layer.
 
 :::code language="csharp" source="./snippets/ExtensionMembers/CustomExtensionMethods.cs" id="DomainEntity":::
 
@@ -99,7 +101,7 @@ You can declare an equivalent `FullName` property in C# 14 and later using the n
 
 Rather than creating new objects when reusable functionality needs to be created, you can often extend an existing type, such as a .NET or CLR type. As an example, if you don't use extension methods, you might create an `Engine` or `Query` class to do the work of executing a query on a SQL Server that might be called from multiple places in our code. However you can instead extend the <xref:System.Data.SqlClient.SqlConnection?displayProperty=nameWithType> class using extension methods to perform that query from anywhere you have a connection to a SQL Server. Other examples might be to add common functionality to the <xref:System.String?displayProperty=nameWithType> class, extend the data processing capabilities of the <xref:System.IO.Stream?displayProperty=nameWithType> object, and <xref:System.Exception?displayProperty=nameWithType> objects for specific error handling functionality. These types of use-cases are limited only by your imagination and good sense.
 
-Extending predefined types can be difficult with `struct` types because they're passed by value to methods. That means any changes to the struct are made to a copy of the struct. Those changes aren't visible once the extension method exits. You can add the `ref` modifier to the first argument making it a `ref` extension method. The `ref` keyword can appear before or after the `this` keyword without any semantic differences. Adding the `ref` modifier indicates that the first argument is passed by reference. This technique enables you to write extension methods that change the state of the struct being extended (note that private members aren't accessible). Only value types or generic types constrained to struct (For more information about these rules, see [`struct` constraint](../../language-reference/builtin-types/struct.md#struct-constraint) for more information) are allowed as the first parameter of a `ref` extension method or as the receiver of an extension block. The following example shows how to use a `ref` extension method to directly modify a built-in type without the need to reassign the result or pass it through a function with the `ref` keyword:
+Extending predefined types can be difficult with `struct` types because they're passed by value to methods. That means any changes to the struct are made to a copy of the struct. Those changes aren't visible once the extension method exits. You can add the `ref` modifier to the first argument making it a `ref` extension method. The `ref` keyword can appear before or after the `this` keyword without any semantic differences. Adding the `ref` modifier indicates that the first argument is passed by reference. This technique enables you to write extension methods that change the state of the struct being extended (note that private members aren't accessible). Only value types or generic types constrained to struct (For more information about these rules, see the article on the [`struct` constraint](../../language-reference/builtin-types/struct.md#struct-constraint)) are allowed as the first parameter of a `ref` extension method or as the receiver of an extension block. The following example shows how to use a `ref` extension method to directly modify a built-in type without the need to reassign the result or pass it through a function with the `ref` keyword:
 
 :::code language="csharp" source="./snippets/ExtensionMembers/CustomExtensionMethods.cs" id="RefExtensions":::
 
@@ -143,7 +145,3 @@ For a class library that you implemented, you shouldn't use extension methods to
 - [Parallel Programming Samples (many examples demonstrate extension methods)](/samples/browse/?products=dotnet&term=parallel)
 - [Lambda Expressions](../../language-reference/operators/lambda-expressions.md)
 - [Standard Query Operators Overview](../../linq/standard-query-operators/index.md)
-- [Conversion rules for Instance parameters and their impact](/archive/blogs/sreekarc/conversion-rules-for-instance-parameters-and-their-impact)
-- [Extension methods Interoperability between languages](/archive/blogs/sreekarc/extension-methods-interoperability-between-languages)
-- [Extension methods and Curried Delegates](/archive/blogs/sreekarc/extension-methods-and-curried-delegates)
-- [Extension method Binding and Error reporting](/archive/blogs/sreekarc/extension-method-binding-and-error-reporting)

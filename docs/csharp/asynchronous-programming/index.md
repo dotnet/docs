@@ -249,7 +249,7 @@ while (breakfastTasks.Count > 0)
 }
 ```
 
-Near the end of the code snippet, notice the `await finishedTask;` expression. The `await Task.WhenAny` expression doesn't wait on the finished task, but rather waits on the `Task` object returned by the `Task.WhenAny` method. The result of the `Task.WhenAny` method is the completed (or faulted) task. The best practice is to wait on the task again, even when you know the task is complete. In this manner, you can retrieve the task result, or ensure any exception that causes the task to fault is thrown.
+Near the end of the code snippet, notice the `await finishedTask;` expression. This line is important because `Task.WhenAny` returns a `Task<Task>` - a wrapper task that contains the completed task. When you `await Task.WhenAny`, you're waiting for the wrapper task to complete, and the result is the actual task that finished first. However, to retrieve that task's result or ensure any exceptions are properly thrown, you must `await` the completed task itself (stored in `finishedTask`). Even though you know the task has finished, awaiting it again allows you to access its result or handle any exceptions that might have caused it to fault.
 
 ### Review final code
 

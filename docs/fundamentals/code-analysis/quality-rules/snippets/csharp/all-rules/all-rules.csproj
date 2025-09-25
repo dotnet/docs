@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
     <PackageReference Include="Microsoft.Extensions.Logging" Version="9.0.0" />
     <PackageReference Include="System.Data.OleDb" Version="10.0.0-rc.1.25451.107" />
     <PackageReference Include="System.Security.Permissions" Version="9.0.0" />

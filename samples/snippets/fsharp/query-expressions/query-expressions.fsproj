@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Library</OutputType>
+        <TargetFramework>net9.0</TargetFramework>
+        <LangVersion>preview</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="FSharp.Data" Version="6.4.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Compile Include="basic-query.fs" />
+        <Compile Include="modern-example.fs" />
+        <None Include="snippet1.fs" />
+        <None Include="snippet2.fs" />
+    </ItemGroup>
+
+</Project>

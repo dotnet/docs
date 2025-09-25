@@ -1,7 +1,8 @@
 ---
 title: Query Expressions
 description: Learn about query expression support for LINQ in the F# programming language.
-ms.date: 08/15/2020
+ms.date: 09/25/2024
+ai-usage: ai-assisted
 ---
 # Query expressions
 
@@ -53,6 +54,7 @@ The code in the tables that follow also assumes the following database connectio
 ```fsharp
 query {
     for student in studentsQueryable do
+    where student.Age.IsSome
     select student.Age.Value
     contains 11
 }
@@ -211,7 +213,7 @@ query {
 query {
     for student in studentsQueryable do
     where student.Age.HasValue
-    sortBy student.Age.Value
+    sortByNullable student.Age
     thenBy student.Name
     select student
 }
@@ -224,7 +226,7 @@ query {
 query {
     for student in studentsQueryable do
     where student.Age.HasValue
-    sortBy student.Age.Value
+    sortByNullable student.Age
     thenByDescending student.Name
     select student
 }

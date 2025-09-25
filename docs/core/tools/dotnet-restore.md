@@ -90,11 +90,11 @@ There are three specific settings that `dotnet restore` ignores:
 
 The project or solution or C# (file-based program) file to restore. If a file isn't specified, MSBuild searches the current directory for a project or solution.
 
-* `PROJECT` is the path and filename of a C#, F#, or Visual Basic project file, or the path to a directory that contains a C#, F#, or Visual Basic project file. If the directory is not specified, it defaults to the current directory.
+- `PROJECT` is the path and filename of a C#, F#, or Visual Basic project file, or the path to a directory that contains a C#, F#, or Visual Basic project file. If the directory is not specified, it defaults to the current directory.
 
-* `SOLUTION` is the path and filename of a solution file (*.sln* or *.slnx* extension), or the path to a directory that contains a solution file. If the directory is not specified, it defaults to the current directory.
+- `SOLUTION` is the path and filename of a solution file (*.sln* or *.slnx* extension), or the path to a directory that contains a solution file. If the directory is not specified, it defaults to the current directory.
 
-* `FILE` is the path and filename of a file-based program. File-based programs are contained within a single `*.cs` file that are built and run without a corresponding project (`*.csproj`) file. For more information, see [Build file-based C# programs](/dotnet/csharp/fundamentals/tutorials/file-based-programs).
+- `FILE` is an argument added in .NET 10. The path and filename of a file-based program. File-based programs are contained within a single `*.cs` file that are built and run without a corresponding project (`*.csproj`) file. For more information, see [Build file-based C# programs](/dotnet/csharp/fundamentals/tutorials/file-based-programs).
 
 ## Options
 
@@ -190,19 +190,19 @@ The project or solution or C# (file-based program) file to restore. If a file is
   dotnet restore ./projects/app1/app1.csproj
   ```
 
-- Restore the dependencies and tools for the project in the current   directory using the file path provided as the source:
+- Restore the dependencies and tools for the project in the current directory using the file path provided as the source:
 
   ```dotnetcli
   dotnet restore -s c:\packages\mypackages
   ```
 
-- Restore the dependencies and tools for the project in the current   directory using the two file paths provided as sources:
+- Restore the dependencies and tools for the project in the current directory using the two file paths provided as sources:
 
   ```dotnetcli
   dotnet restore -s c:\packages\mypackages -s c:\packages\myotherpackages
   ```
 
-- Restore dependencies and tools for the project in the current directory   showing detailed output:
+- Restore dependencies and tools for the project in the current directory showing detailed output:
 
   ```dotnetcli
   dotnet restore --verbosity detailed

@@ -79,11 +79,11 @@ Running `dotnet build` is equivalent to running `dotnet msbuild -restore`; howev
 
 The project or solution or C# (file-based program) file to publish. If a file isn't specified, MSBuild searches the current directory for a project or solution.
 
-* `PROJECT` is the path and filename of a C#, F#, or Visual Basic project file, or the path to a directory that contains a C#, F#, or Visual Basic project file.
+- `PROJECT` is the path and filename of a C#, F#, or Visual Basic project file, or the path to a directory that contains a C#, F#, or Visual Basic project file.
 
-* `SOLUTION` is the path and filename of a solution file (*.sln* or *.slnx* extension), or the path to a directory that contains a solution file.
+- `SOLUTION` is the path and filename of a solution file (*.sln* or *.slnx* extension), or the path to a directory that contains a solution file.
 
-* `FILE` is the path and filename of a file-based program. Files-based programs are contained within a single `*.cs` file that are built and run without a corresponding project (`*.csproj`) file. For more information, see [Build file-based C# programs](/dotnet/csharp/fundamentals/tutorials/file-based-programs).
+- `FILE` is an argument added in .NET 10. The path and filename of a file-based program. File-based programs are contained within a single `*.cs` file that are built and run without a corresponding project (`*.csproj`) file. For more information, see [Build file-based C# programs](/dotnet/csharp/fundamentals/tutorials/file-based-programs).
 
 ## Options
 
@@ -184,7 +184,9 @@ The project or solution or C# (file-based program) file to publish. If a file is
 
   ```dotnetcli
   dotnet build MyProject.cs
-  ```  
+  ```
+
+  File-based program support was added in .NET SDK 10.0.100.
 
 - Build a project and its dependencies using Release configuration:
 

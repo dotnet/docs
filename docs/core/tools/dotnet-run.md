@@ -85,6 +85,8 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 
   The path to the file-based program to run. This option can be passed as the first argument if there is no project in the current directory.  For more information, see [Build file-based C# programs](/dotnet/csharp/fundamentals/tutorials/file-based-programs).
 
+  Introduced in .NET SDK 10.0.100.
+
 - **`--force`**
 
   Forces all dependencies to be resolved even if the last restore was successful. Specifying this flag is the same as deleting the *project.assets.json* file.
@@ -170,6 +172,8 @@ The environment is constructed in the same order as this list, so the `-e|--envi
   ```dotnetcli
   dotnet run ConsoleApp.cs -- arg1 arg2
   ```
+
+  File-based program support was added in .NET SDK 10.0.100.
 
 - Run the specified project:
 

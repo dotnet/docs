@@ -34,11 +34,11 @@ The `dotnet clean` command cleans the output of the previous build. It's impleme
 
 The project or solution or C# (file-based program) file to publish. If a file isn't specified, MSBuild searches the current directory for a project or solution.
 
-* `PROJECT` is the path and filename of a C#, F#, or Visual Basic project file, or the path to a directory that contains a C#, F#, or Visual Basic project file.
+- `PROJECT` is the path and filename of a C#, F#, or Visual Basic project file, or the path to a directory that contains a C#, F#, or Visual Basic project file.
 
-* `SOLUTION` is the path and filename of a solution file (*.sln* or *.slnx* extension), or the path to a directory that contains a solution file.
+- `SOLUTION` is the path and filename of a solution file (*.sln* or *.slnx* extension), or the path to a directory that contains a solution file.
 
-* `FILE` is the path and filename of a file-based program. Files-based programs are contained within a single `*.cs` file that are built and run without a corresponding project (`*.csproj`) file. For more information, see [Build file-based C# programs](/dotnet/csharp/fundamentals/tutorials/file-based-programs).
+- `FILE` is an argument added in .NET 10. The path and filename of a file-based program. File-based programs are contained within a single `*.cs` file that are built and run without a corresponding project (`*.csproj`) file. For more information, see [Build file-based C# programs](/dotnet/csharp/fundamentals/tutorials/file-based-programs).
 
 ## Options
 
@@ -46,7 +46,7 @@ The project or solution or C# (file-based program) file to publish. If a file is
 
 [!INCLUDE [configuration](../../../includes/cli-configuration-clean.md)]
 
-* **`-f|--framework <FRAMEWORK>`**
+- **`-f|--framework <FRAMEWORK>`**
 
   The [framework](../../standard/frameworks.md) that was specified at build time. The framework must be defined in the [project file](../project-sdk/overview.md). If you specified the framework at build time, you must specify the framework when cleaning.
 
@@ -54,11 +54,11 @@ The project or solution or C# (file-based program) file to publish. If a file is
 
 [!INCLUDE [interactive](../../../includes/cli-interactive-3-0.md)]
 
-* **`--nologo`**
+- **`--nologo`**
 
   Doesn't display the startup banner or the copyright message.
 
-* **`-o|--output <OUTPUT_DIRECTORY>`**
+- **`-o|--output <OUTPUT_DIRECTORY>`**
 
   The directory that contains the build artifacts to clean. Specify the `-f|--framework <FRAMEWORK>` switch with the output directory switch if you specified the framework when the project was built.
 
@@ -66,7 +66,7 @@ The project or solution or C# (file-based program) file to publish. If a file is
 
     If you specify the `--output` option when running this command on a solution, the CLI will emit a warning (an error in 7.0.200) due to the unclear semantics of the output path. The `--output` option is disallowed because all outputs of all built projects would be copied into the specified directory, which isn't compatible with multi-targeted projects, as well as projects that have different versions of direct and transitive dependencies. For more information, see [Solution-level `--output` option no longer valid for build-related commands](../compatibility/sdk/7.0/solution-level-output-no-longer-valid.md).
 
-* **`-r|--runtime <RUNTIME_IDENTIFIER>`**
+- **`-r|--runtime <RUNTIME_IDENTIFIER>`**
 
   Cleans the output folder of the specified runtime. This is used when a [self-contained deployment](../deploying/index.md#self-contained-deployment) was created.
 
@@ -76,19 +76,21 @@ The project or solution or C# (file-based program) file to publish. If a file is
 
 ## Examples
 
-* Clean a default build of the project:
+- Clean a default build of the project:
 
   ```dotnetcli
   dotnet clean
   ```
 
-* Clean a file-based program:
+- Clean a file-based program:
 
   ```dotnetcli
   dotnet clean Program.cs.
   ```
 
-* Clean a project built using the Release configuration:
+  File-based program support was added in .NET SDK 10.0.100.
+
+- Clean a project built using the Release configuration:
 
   ```dotnetcli
   dotnet clean --configuration Release

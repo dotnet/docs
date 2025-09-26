@@ -395,26 +395,28 @@ let methods2 = System.AppDomain.CurrentDomain.GetAssemblies()
                |> Array.concat
 ```
 
-For reverse pipeline `<|` operators, place arguments on new lines and align them with the first argument:
+For reverse pipeline `<|` operators, keep short expressions on a single line. When line length requires wrapping, place arguments on new lines and align them consistently:
 
 ```fsharp
-// ✔️ OK
-failwith <| sprintf "foobar: %s - foobarbaz: %s"
-                    foobar
-                    foobarbaz
+// ✔️ OK - short expressions stay on one line
+let result = someFunction <| arg1 <| arg2 <| arg3
 
-// ✔️ OK  
-let message = sprintf "error: %s, details: %s"
-              <| errorMsg
-              <| details
+// ✔️ OK - longer expressions can wrap when necessary
+failwith
+<| sprintf "A very long error message that exceeds reasonable line length: %s - additional details: %s"
+    longVariableName
+    anotherLongVariableName
 
-// ✔️ OK
-let result = someFunction <| arg1
-                          <| arg2  
-                          <| arg3
+// ✔️ OK - align continuation lines with the operator
+let longResult =
+    someVeryLongFunctionName
+    <| firstVeryLongArgumentName
+    <| secondVeryLongArgumentName
+    <| thirdVeryLongArgumentName
 
-// ❌ Not OK
-failwith <| sprintf "foobar: %s - foobarbaz: %s" foobar foobarbaz
+// ❌ Not OK - unnecessary wrapping of short expressions
+failwith <| sprintf "short: %s"
+                    value
 ```
 
 ### Formatting lambda expressions

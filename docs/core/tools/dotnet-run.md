@@ -140,8 +140,7 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 
 - **`--no-self-contained`**
 
-  Publish your application as a framework dependent application. A compatible .NET runtime must be installed on 
-  the target machine to run your application.
+  Publish your application as a framework dependent application. A compatible .NET runtime must be installed on the target machine to run your application.
 
 [!INCLUDE [os](../../../includes/cli-os.md)]
 

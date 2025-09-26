@@ -59,3 +59,4 @@ The package reference to remove.
   ```dotnetcli
   dotnet package remove Newtonsoft.Json --file MyApp.cs
   ```
+  

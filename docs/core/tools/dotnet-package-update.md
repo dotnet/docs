@@ -42,7 +42,7 @@ The package reference to remove.
 
 - **`-v|--verbosity <LEVEL>`**
   
-  Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. The default is `normal`.      
+  Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. The default is `normal`.
 
 [!INCLUDE [help](../../../includes/cli-help.md)]
 

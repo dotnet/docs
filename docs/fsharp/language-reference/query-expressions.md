@@ -1,7 +1,7 @@
 ---
 title: Query Expressions
 description: Learn about query expression support for LINQ in the F# programming language.
-ms.date: 09/26/2024
+ms.date: 09/26/2025
 ai-usage: ai-assisted
 ---
 # Query expressions

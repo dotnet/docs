@@ -5,7 +5,7 @@ ms.date: 06/03/2024
 ---
 # dotnet watch
 
-**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
+**This article applies to:** ✔️ .NET 6 and later versions
 
 ## Name
 
@@ -15,9 +15,11 @@ ms.date: 06/03/2024
 
 ```dotnetcli
 dotnet watch [<command>]
-  [--list]
+  [--artifacts-path <ARTIFACTS_DIR>]
+  [--disable-build-servers] 
+  [--list] [--no-self-contained]
   [--no-hot-reload] [--non-interactive]
-  [--project <PROJECT>]
+  [--project <PROJECT>] [--sc, --self-contained]
   [-q|--quiet] [-v|--verbose]
   [--version]
   [--] <forwarded arguments> 
@@ -64,6 +66,10 @@ As an alternative to disabling response compression, manually add the browser re
 
 ## Options
 
+[!INCLUDE [artifacts-path](../../../includes/cli-artifacts-path.md)]
+
+[!INCLUDE [disable-build-servers](../../../includes/cli-disable-build-servers.md)]
+
 - **`--list`**
 
   Lists all discovered files without starting the watcher.
@@ -72,6 +78,10 @@ As an alternative to disabling response compression, manually add the browser re
 
   Suppress [hot reload](#hot-reload) for [supported apps](/visualstudio/debugger/hot-reload#supported-net-app-frameworks-and-scenarios).
 
+- **`--no-self-contained`**
+
+  Publishes the application as a framework dependent application. A compatible .NET runtime must be installed on the target machine to run the application. Available since .NET 6.
+
 - **`--non-interactive`**
 
   Runs `dotnet watch` in non-interactive mode. Use this option to prevent console input from being requested. When hot reload is enabled and a [rude edit](#rude-edits) is detected, dotnet watch restarts the app. Available since .NET 7 SDK.
@@ -79,6 +89,10 @@ As an alternative to disabling response compression, manually add the browser re
 - **`--project <PATH>`**
 
   Specifies the path of the project file to run (folder only or including the project file name). If not specified, it defaults to the current directory.
+
+- **`--self-contained [true|false]`**
+
+  Publishes the .NET runtime with the application so the runtime doesn't need to be installed on the target machine. The default is `true` if a runtime identifier is specified. Available since .NET 6.
 
 - **`-q|--quiet`**
 

@@ -116,8 +116,6 @@ items:
             href: ../../core/tools/dotnet-format.md
           - name: dotnet help
             href: ../../core/tools/dotnet-help.md
-          - name: dotnet migrate
-            href: ../../core/tools/dotnet-migrate.md
           - name: dotnet msbuild
             href: ../../core/tools/dotnet-msbuild.md
           - name: dotnet new
@@ -180,7 +178,7 @@ items:
                 href: ../../core/tools/dotnet-nuget-config-paths.md
           - name: dotnet pack
             href: ../../core/tools/dotnet-pack.md
-          - name: dotnet package add/list/remove/search
+          - name: dotnet package add/list/remove/search/update
             items:
               - name: dotnet package add
                 href: ../../core/tools/dotnet-package-add.md
@@ -190,6 +188,8 @@ items:
                 href: ../../core/tools/dotnet-package-remove.md
               - name: dotnet package search
                 href: ../../core/tools/dotnet-package-search.md
+              - name: dotnet package update
+                href: ../../core/tools/dotnet-package-update.md  
           - name: dotnet publish
             href: ../../core/tools/dotnet-publish.md
           - name: dotnet reference add/list/remove

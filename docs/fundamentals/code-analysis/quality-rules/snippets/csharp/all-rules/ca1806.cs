@@ -7,11 +7,8 @@
 
         public Book(string title)
         {
-            if (title != null)
-            {
-                // Violates this rule
-                title.Trim();
-            }
+            // Violates this rule
+            title?.Trim();
 
             _Title = title;
         }

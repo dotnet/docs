@@ -1,12 +1,12 @@
 ﻿using System;
-using System.Data.SqlClient;
+using System.IO;
 
 namespace ca1816
 {
     //<snippet1>
-    public class DatabaseConnector : IDisposable
+    public class MyStreamClass : IDisposable
     {
-        private SqlConnection? _Connection = new SqlConnection();
+        private MemoryStream? _stream = new();
 
         public void Dispose()
         {
@@ -18,11 +18,8 @@ namespace ca1816
         {
             if (disposing)
             {
-                if (_Connection != null)
-                {
-                    _Connection.Dispose();
-                    _Connection = null;
-                }
+                _stream?.Dispose();
+                _stream = null;
             }
         }
     }
@@ -32,9 +29,9 @@ namespace ca1816
 namespace ca1816_2
 {
     //<snippet2>
-    public class DatabaseConnector : IDisposable
+    public class MyStreamClass : IDisposable
     {
-        private SqlConnection? _Connection = new SqlConnection();
+        private MemoryStream? _stream = new();
 
         public void Dispose()
         {
@@ -46,11 +43,8 @@ namespace ca1816_2
         {
             if (disposing)
             {
-                if (_Connection != null)
-                {
-                    _Connection.Dispose();
-                    _Connection = null;
-                }
+                _stream?.Dispose();
+                _stream = null;
             }
         }
     }

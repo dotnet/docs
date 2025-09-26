@@ -17,3 +17,6 @@ dotnet_diagnostic.CA1822.severity = none
 
 # CA2200: Rethrow to preserve stack details
 dotnet_diagnostic.CA2200.severity = suggestion
+
+# CA2100
+dotnet_diagnostic.CA2100.severity = warning

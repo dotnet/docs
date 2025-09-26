@@ -1,13 +1,21 @@
-<Project Sdk="Microsoft.Net.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
         <OutputType>Exe</OutputType>
-        <TargetFramework>net8.0</TargetFramework>
+        <TargetFramework>net9.0</TargetFramework>
         <LangVersion>preview</LangVersion>
     </PropertyGroup>
 
     <ItemGroup>
         <Compile Include="tour.fs" />
+        <None Include="query-expressions/basic-query.fs" />
+        <None Include="query-expressions/modern-example.fs" />
+        <None Include="query-expressions/snippet1.fs" />
+        <None Include="query-expressions/snippet2.fs" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="FSharp.Data" Version="6.4.0" />
     </ItemGroup>
 
 </Project>

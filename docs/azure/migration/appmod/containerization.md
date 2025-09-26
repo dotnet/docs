@@ -32,7 +32,7 @@ The GitHub Copilot app modernization for .NET containerization feature helps you
 
 1. Enable **appModernizationDeploy** in the GitHub Copilot toolbox.
 
-    :::image type="content" source="../media/appmod/appmod-dotnet-containerization-tool-selection.png" alt-text="Screenshot that shows containerization tool selection.":::
+    :::image type="content" source="../../media/appmod-dotnet-containerization-tool-selection.png" alt-text="Screenshot that shows containerization tool selection.":::
 
 1. Start containerization by using one of these approaches:
 

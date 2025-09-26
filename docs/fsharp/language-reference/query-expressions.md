@@ -1,7 +1,7 @@
 ---
 title: Query Expressions
 description: Learn about query expression support for LINQ in the F# programming language.
-ms.date: 09/25/2024
+ms.date: 09/26/2024
 ai-usage: ai-assisted
 ---
 # Query expressions
@@ -18,7 +18,7 @@ query { expression }
 
 Query expressions are a type of computation expression similar to sequence expressions. Just as you specify a sequence by providing code in a sequence expression, you specify a set of data by providing code in a query expression. In a sequence expression, the `yield` keyword identifies data to be returned as part of the resulting sequence. In query expressions, the `select` keyword performs the same function. In addition to the `select` keyword, F# also supports a number of query operators that are much like the parts of a SQL SELECT statement. Here is an example of a simple query expression using in-memory data.
 
-[!code-fsharp[Main](~/samples/snippets/fsharp/query-expressions/snippet1.fs)]
+:::code language="fsharp" source="~/samples/snippets/fsharp/query-expressions/snippet1.fs":::
 
 In the previous code example, the query expression is in curly braces. The meaning of the code in the expression is, return every customer in the Customers table in the database in the query results. Query expressions return a type that implements <xref:System.Linq.IQueryable%601> and <xref:System.Collections.Generic.IEnumerable%601>, and so they can be iterated using the [Seq module](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-seqmodule.html) as the example shows.
 
@@ -38,7 +38,7 @@ This table assumes a database in the following form:
 
 The code in the tables that follow also assumes the following database connection code. Projects should add references to System.Linq. The code that creates this database is included at the end of this topic.
 
-[!code-fsharp[Main](~/samples/snippets/fsharp/query-expressions/snippet2.fs)]
+:::code language="fsharp" source="~/samples/snippets/fsharp/query-expressions/snippet2.fs":::
 
 ### Table 1. Query Operators
 

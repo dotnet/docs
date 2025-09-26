@@ -170,7 +170,6 @@ The following options are available only when `dotnet` runs an application by us
 | [dotnet clean](dotnet-clean.md)                    | Clean build outputs.                                                |
 | [dotnet exec](#options-for-running-an-application) | Runs a .NET application.                                            |
 | [dotnet help](dotnet-help.md)                      | Shows more detailed documentation online for the command.           |
-| [dotnet migrate](dotnet-migrate.md)                | Migrates a valid Preview 2 project to a .NET Core SDK 1.0 project.  |
 | [dotnet msbuild](dotnet-msbuild.md)                | Provides access to the MSBuild command line.                        |
 | [dotnet new](dotnet-new.md)                        | Initializes a C# or F# project for a given template.                |
 | [dotnet pack](dotnet-pack.md)                      | Creates a NuGet package of your code.                               |
@@ -198,6 +197,7 @@ The following options are available only when `dotnet` runs an application by us
 | [dotnet package list](dotnet-package-list.md)     | Lists NuGet packages.         |
 | [dotnet package remove](dotnet-package-remove.md) | Removes a NuGet package.      |
 | [dotnet package search](dotnet-package-search.md) | Searches for a NuGet package. |
+| [dotnet package update](dotnet-package-update.md) | Updates a NuGet package.      |
 
 ### NuGet commands
 

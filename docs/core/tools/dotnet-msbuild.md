@@ -1,11 +1,11 @@
 ---
 title: dotnet msbuild command
 description: The dotnet msbuild command provides access to the MSBuild command line.
-ms.date: 02/14/2020
+ms.date: 09/25/2025
 ---
 # dotnet msbuild
 
-**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
+**This article applies to:** ✔️ .NET 6 and later versions
 
 ## Name
 

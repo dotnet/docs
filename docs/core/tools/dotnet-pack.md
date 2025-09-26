@@ -1,11 +1,11 @@
 ---
 title: dotnet pack command
 description: The dotnet pack command creates NuGet packages for your .NET project.
-ms.date: 04/04/2024
+ms.date: 09/26/2025
 ---
 # dotnet pack
 
-**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
+**This article applies to:** ✔️ .NET 6 and later versions
 
 ## Name
 
@@ -15,7 +15,7 @@ ms.date: 04/04/2024
 
 ```dotnetcli
 dotnet pack [<PROJECT>|<SOLUTION>] [--artifacts-path <ARTIFACTS_DIR>]
-    [-c|--configuration <CONFIGURATION>] [--force]
+    [-c|--configuration <CONFIGURATION>] [--disable-build-servers] [--force]
     [--include-source] [--include-symbols] [--interactive]
     [--no-build] [--no-dependencies] [--no-restore] [--nologo]
     [-o|--output <OUTPUT_DIRECTORY>] [--runtime <RUNTIME_IDENTIFIER>]
@@ -64,6 +64,8 @@ You can provide MSBuild properties to the `dotnet pack` command for the packing 
 
 [!INCLUDE [configuration](../../../includes/cli-configuration-publish-pack.md)]
 
+[!INCLUDE [disable-build-servers](../../../includes/cli-disable-build-servers.md)]
+
 - **`--force`**
 
   Forces all dependencies to be resolved even if the last restore was successful. Specifying this flag is the same as deleting the *project.assets.json* file.
@@ -78,7 +80,7 @@ You can provide MSBuild properties to the `dotnet pack` command for the packing 
 
   Includes the debug symbols NuGet packages in addition to the regular NuGet packages in the output directory.
 
-[!INCLUDE [interactive](../../../includes/cli-interactive-3-0.md)]
+[!INCLUDE [interactive](../../../includes/cli-interactive.md)]
 
 - **`--no-build`**
 

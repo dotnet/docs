@@ -5,6 +5,8 @@ ms.date: 03/27/2024
 ---
 # dotnet test
 
+**This article applies to:** ✔️ .NET 6 and later versions
+
 ## Name
 
 `dotnet test` - .NET test driver used to execute unit tests.
@@ -35,8 +37,6 @@ Some examples of the `dotnet.config` file:
 
 ### [dotnet test with VSTest](#tab/dotnet-test-with-vstest)
 
-**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
-
 #### Synopsis
 
 ```dotnetcli
@@ -54,6 +54,7 @@ dotnet test [<PROJECT> | <SOLUTION> | <DIRECTORY> | <DLL> | <EXE>]
     [-c|--configuration <CONFIGURATION>]
     [--collect <DATA_COLLECTOR_NAME>]
     [-d|--diag <LOG_FILE>]
+    [--disable-build-servers]
     [-f|--framework <FRAMEWORK>]
     [-e|--environment <NAME="VALUE">]
     [--filter <EXPRESSION>]
@@ -185,6 +186,10 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 - **`-d|--diag <LOG_FILE>`**
 
   Enables diagnostic mode for the test platform and writes diagnostic messages to the specified file and to files next to it. The process that is logging the messages determines which files are created, such as `*.host_<date>.txt` for test host log, and `*.datacollector_<date>.txt` for data collector log.
+
+- **`--disable-build-servers`**
+
+  Disables the use of build servers when running the command. Build servers are enabled by default.
 
 - **`-e|--environment <NAME="VALUE">`**
 

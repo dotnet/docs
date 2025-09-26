@@ -3,7 +3,7 @@ title: dotnet package update command
 description: The dotnet package update command provides a convenient option to update a NuGet package reference to a project.
 ms.date: 09/26/2025
 ---
-# dotnet package remove
+# dotnet package update
 
 **This article applies to:** ✔️ .NET 6 and later versions
 
@@ -24,13 +24,13 @@ dotnet package update -h|--help
 
 ## Description
 
-The `dotnet package update` command provides a convenient option to update a NuGet package reference  in a project or solution.
+The `dotnet package update` command provides a convenient option to update a NuGet package reference in a project or solution.
 
 ## Arguments
 
 `PACKAGE_NAME`
 
-The package reference to remove.
+The package reference to update.
 
 ## Options
 

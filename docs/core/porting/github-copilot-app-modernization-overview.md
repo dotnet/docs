@@ -56,13 +56,17 @@ To start an upgrade or migration, interact with GitHub Copilot, following these 
 
 The modernization agent supports upgrading projects coded in C#. The following types of projects are supported:
 
-- ASP.NET and ASP.NET Core (including related technologies such as MVC, Razor Pages, and Web API)
 - Blazor
 - Azure Functions
 - Windows Presentation Foundation
 - Windows Forms
 - Class libraries
 - Console apps
+
+> [!NOTE]
+> ASP.NET and related technologies such as MVC, Razor Pages, Web API are still in preview. You may use the tool to attempt
+> upgrading these, but be aware it will only work for limited scenarios. Please see [ASP.NET Migration](/aspnet/core/migration/fx-to-core)
+> for details on recommendations for these kinds of migrations.
 
 To learn how to start an upgrade, see [How to upgrade a .NET app with GitHub Copilot app modernization](how-to-upgrade-with-github-copilot.md).
 
@@ -71,9 +75,11 @@ To learn how to start an upgrade, see [How to upgrade a .NET app with GitHub Cop
 The following upgrade paths are supported:
 
 - Upgrade projects from older .NET versions to the latest.
-- Upgrade projects from .NET Framework to the latest version of .NET.
 - Modernize your code base with new features.
 - Migrate components and services to Azure.
+
+> [!NOTE]
+> Upgrading projects from .NET Framework to the latest version of .NET is still in preview.
 
 ## Migrate .NET projects to Azure
 

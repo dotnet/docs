@@ -3,7 +3,6 @@ title: Quickstart - Generate images using AI with .NET
 description: Create a simple app using to generate images using .NET and the OpenAI or Azure OpenAI models.
 ms.date: 04/09/2025
 ms.topic: quickstart
-ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 zone_pivot_groups: openai-library
 # CustomerIntent: As a .NET developer new to OpenAI, I want deploy and use sample code to interact to learn from the sample code to generate images.
 ---
@@ -48,6 +47,7 @@ Complete the following steps to create a .NET console app to connect to an AI mo
 
     ```bash
     dotnet add package Azure.AI.OpenAI
+    dotnet add package Azure.Identity
     dotnet add package Microsoft.Extensions.Configuration
     dotnet add package Microsoft.Extensions.Configuration.UserSecrets
     ```

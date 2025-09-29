@@ -55,7 +55,7 @@ When you install with a package manager, these libraries are installed for you. 
 - ca-certificates
 - libc6
 - libgcc-s1
-- libicu74
+- libicu76
 - liblttng-ust1
 - libssl3
 - libstdc++6

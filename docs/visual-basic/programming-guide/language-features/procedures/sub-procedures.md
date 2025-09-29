@@ -90,4 +90,4 @@ The following example shows a typical call to `tellOperator`.
 - [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)
 - [Sub Statement](../../../language-reference/statements/sub-statement.md)
 - [How to: Call a Procedure that Does Not Return a Value](./how-to-call-a-procedure-that-does-not-return-a-value.md)
-- [How to: Call an Event Handler in Visual Basic](./how-to-call-an-event-handler.md)
+- [How to: Subscribe to Events and Handle Them in Visual Basic](./how-to-call-an-event-handler.md)

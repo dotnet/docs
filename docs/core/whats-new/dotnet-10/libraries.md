@@ -2,14 +2,14 @@
 title: What's new in .NET libraries for .NET 10
 description: Learn about the updates to the .NET libraries for .NET 10.
 titleSuffix: ""
-ms.date: 08/12/2025
+ms.date: 09/09/2025
 ms.topic: whats-new
 ai-usage: ai-assisted
 ---
 
 # What's new in .NET libraries for .NET 10
 
-This article describes new features in the .NET libraries for .NET 10. It's been updated for Preview 7.
+This article describes new features in the .NET libraries for .NET 10. It's been updated for RC 1.
 
 ## Cryptography
 
@@ -111,7 +111,7 @@ private static bool ValidateMLDsaSignature(ReadOnlySpan<byte> data, ReadOnlySpan
 }
 ```
 
-The PQC algorithms are available on systems where the system cryptographic libraries are OpenSSL 3.5 (or newer) or Windows CNG with PQC support. Also, the new classes are all marked as [`[Experimental]`](../../../fundamentals/syslib-diagnostics/experimental-overview.md) under diagnostic `SYSLIB5006` until development is complete.
+The PQC algorithms are available on systems where the system cryptographic libraries are OpenSSL 3.5 (or newer) or Windows CNG with PQC support. The <xref:System.Security.Cryptography.MLKem> type isn't marked as `[Experimental]`, but some of its methods are (and will be until the underlying standards are finalized). The <xref:System.Security.Cryptography.MLDsa>, <xref:System.Security.Cryptography.SlhDsa>, and <xref:System.Security.Cryptography.CompositeMLDsa> classes are marked as `[Experimental]` under diagnostic `SYSLIB5006` until development is complete.
 
 #### ML-DSA
 
@@ -137,6 +137,20 @@ private static byte[] SignPreHashSha3_256(MLDsa signingKey, ReadOnlySpan<byte> d
 {
     const string Sha3_256Oid = "2.16.840.1.101.3.4.2.8";
     return signingKey.SignPreHash(SHA3_256.HashData(data), Sha3_256Oid);
+}
+```
+
+Starting in RC 1, ML-DSA also supports signatures created and verified from an "external" mu value, which provides additional flexibility for advanced cryptographic scenarios:
+
+```csharp
+private static byte[] SignWithExternalMu(MLDsa signingKey, ReadOnlySpan<byte> externalMu)
+{
+    return signingKey.SignMu(externalMu);
+}
+
+private static bool VerifyWithExternalMu(MLDsa verifyingKey, ReadOnlySpan<byte> externalMu, ReadOnlySpan<byte> signature)
+{
+    return verifyingKey.VerifyMu(externalMu, signature);
 }
 ```
 
@@ -217,6 +231,7 @@ The issue arises because LINQ expressions can't handle optional parameters. To a
 ## Strings
 
 - [String normalization APIs to work with span of characters](#string-normalization-apis-to-work-with-span-of-characters)
+- [UTF-8 support for hex-string conversion](#utf-8-support-for-hex-string-conversion)
 
 ### String normalization APIs to work with span of characters
 
@@ -227,6 +242,17 @@ Unicode string normalization has been supported for a long time, but existing AP
 - <xref:System.StringNormalizationExtensions.GetNormalizedLength(System.ReadOnlySpan{System.Char},System.Text.NormalizationForm)?displayProperty=nameWithType>
 - <xref:System.StringNormalizationExtensions.IsNormalized(System.ReadOnlySpan{System.Char},System.Text.NormalizationForm)?displayProperty=nameWithType>
 - <xref:System.StringNormalizationExtensions.TryNormalize(System.ReadOnlySpan{System.Char},System.Span{System.Char},System.Int32@,System.Text.NormalizationForm)?displayProperty=nameWithType>
+
+### UTF-8 support for hex-string conversion
+
+.NET 10 adds UTF-8 support for hex-string conversion operations in the <xref:System.Convert> class. These new methods provide efficient ways to convert between UTF-8 byte sequences and hexadecimal representations without requiring intermediate string allocations:
+
+- <xref:System.Convert.FromHexString(System.ReadOnlySpan{System.Byte})?displayProperty=nameWithType>
+- <xref:System.Convert.FromHexString(System.ReadOnlySpan{System.Byte},System.Span{System.Byte},System.Int32@,System.Int32@)?displayProperty=nameWithType>
+- <xref:System.Convert.TryToHexString(System.ReadOnlySpan{System.Byte},System.Span{System.Byte},System.Int32@)?displayProperty=nameWithType>
+- <xref:System.Convert.TryToHexStringLower(System.ReadOnlySpan{System.Byte},System.Span{System.Byte},System.Int32@)?displayProperty=nameWithType>
+
+These methods mirror the existing overloads that work with `string` and `ReadOnlySpan<char>`, but operate directly on UTF-8 encoded bytes for improved performance in scenarios where you're already working with UTF-8 data.
 
 ## Collections
 
@@ -338,6 +364,8 @@ All of this is serialized as JSON in the <xref:System.IO.Pipelines.Pipe> (format
 ### Tensor enhancements
 
 The <xref:System.Numerics.Tensors> interface now includes a nongeneric interface, <xref:System.Numerics.Tensors.IReadOnlyTensor>, for operations like accessing <xref:System.Numerics.Tensors.IReadOnlyTensor.Lengths> and <xref:System.Numerics.Tensors.IReadOnlyTensor.Strides>. Slice operations no longer copy data, which improves performance. Additionally, you can access data nongenerically by boxing to `object` when performance isn't critical.
+
+The tensor APIs are now stable and no longer marked as experimental. While the APIs still require referencing the [System.Numerics.Tensors](https://www.nuget.org/packages/System.Numerics.Tensors) NuGet package, they have been thoroughly reviewed and finalized for the .NET 10 release. The types take advantage of C# 14 extension operators to provide arithmetic operations when the underlying type `T` supports the operation. If `T` implements the relevant [generic math](../../../standard/generics/math.md) interfaces, for example, `IAdditionOperators<TSelf, TOther, TResult>` or `INumber<TSelf>`, the operation is supported. For example, `tensor + tensor` is available for a `Tensor<int>`, but isn't available for a `Tensor<bool>`.
 
 ## Options validation
 

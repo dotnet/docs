@@ -26,6 +26,8 @@ items:
                 href: aspnet-core/10/apidescription-client-deprecated.md
               - name: Razor run-time compilation is obsolete
                 href: aspnet-core/10/razor-runtime-compilation-obsolete.md
+              - name: WebHostBuilder, IWebHost, and WebHost are obsolete
+                href: aspnet-core/10/webhostbuilder-deprecated.md
           - name: Containers
             items:
               - name: Default .NET images use Ubuntu
@@ -48,6 +50,10 @@ items:
                 href: core-libraries/10.0/driveinfo-driveformat-linux.md
               - name: DynamicallyAccessedMembers annotation removed from DefaultValueAttribute ctor
                 href: core-libraries/10.0/defaultvalueattribute-dynamically-accessed-members.md
+              - name: Explicit struct Size disallowed with InlineArray
+                href: core-libraries/10.0/inlinearray-explicit-size-disallowed.md
+              - name: FilePatternMatch.Stem changed to non-nullable
+                href: core-libraries/10.0/filepatternmatch-stem-nonnullable.md
               - name: GnuTarEntry and PaxTarEntry exclude atime and ctime by default
                 href: core-libraries/10.0/tar-atime-ctime-default.md
               - name: LDAP DirectoryControl parsing is now more stringent
@@ -56,8 +62,6 @@ items:
                 href: core-libraries/10.0/maccatalyst-version-normalization.md
               - name: No default termination signal handlers
                 href: core-libraries/10.0/sigterm-signal-handler.md
-              - name: Explicit struct Size disallowed with InlineArray
-                href: core-libraries/10.0/inlinearray-explicit-size-disallowed.md
               - name: System.Linq.AsyncEnumerable included in core libraries
                 href: core-libraries/10.0/asyncenumerable.md
               - name: YMM embedded rounding removed from AVX10.2
@@ -68,6 +72,8 @@ items:
                 href: cryptography/10.0/cosesigner-key-null.md
               - name: Environment variable renamed to DOTNET_OPENSSL_VERSION_OVERRIDE
                 href: cryptography/10.0/version-override.md
+              - name: MLDsa and SlhDsa 'SecretKey' members renamed
+                href: cryptography/10.0/mldsa-slhdsa-secretkey-to-privatekey.md
               - name: OpenSSL cryptographic primitives not supported on macOS
                 href: cryptography/10.0/openssl-macos-unsupported.md
               - name: X500DistinguishedName validation is stricter
@@ -100,8 +106,6 @@ items:
             items:
               - name: HTTP/3 support disabled by default with PublishTrimmed
                 href: networking/10.0/http3-disabled-with-publishtrimmed.md
-              - name: HttpClient/SslStream default certificate revocation check mode changed to Online
-                href: networking/10.0/ssl-certificate-revocation-check-default.md
               - name: Streaming HTTP responses enabled by default in browser HTTP clients
                 href: networking/10.0/default-http-streaming.md
               - name: "'Uri' length limits removed"
@@ -122,6 +126,8 @@ items:
                 href: sdk/10.0/dotnet-new-sln-slnx-default.md
               - name: "`dotnet package list` performs restore"
                 href: sdk/10.0/dotnet-package-list-restore.md
+              - name: "`dotnet tool install --local` creates manifest by default"
+                href: sdk/10.0/dotnet-tool-install-local-manifest.md
               - name: MSBUILDCUSTOMBUILDEVENTWARNING escape hatch removed
                 href: sdk/10.0/custom-build-event-warning.md
               - name: MSBuild custom culture resource handling
@@ -138,6 +144,8 @@ items:
                 href: sdk/10.0/http-warnings-to-errors.md
               - name: NUGET_ENABLE_ENHANCED_HTTP_RETRY environment variable removed
                 href: sdk/10.0/nuget-enhanced-http-retry-removed.md
+              - name: NuGet logs an error for invalid package IDs
+                href: sdk/10.0/nuget-packageid-validation.md
           - name: Windows Forms
             items:
               - name: API obsoletions

@@ -77,6 +77,8 @@
                     "csharp-8.0/readonly-instance-members.md",
                     "csharp-8.0/null-coalescing-assignment.md",
                     "csharp-8.0/async-streams.md",
+                    "csharp-8.0/ranges.md",
+                    "csharp-8.0/using.md",
                     "csharp-9.0/nullable-reference-types-specification.md",
                     "csharp-9.0/nullable-constructor-analysis.md",
                     "csharp-9.0/nullable-parameter-default-value-analysis.md",
@@ -88,7 +90,8 @@
                     "Compiler Breaking Changes - DotNet 7.md",
                     "Compiler Breaking Changes - DotNet 8.md",
                     "Compiler Breaking Changes - DotNet 9.md",
-                    "Compiler Breaking Changes - DotNet 10.md"
+                    "Compiler Breaking Changes - DotNet 10.md",
+                    "Deviations from Standard.md"
                 ],
                 "src": "_roslyn/docs/compilers/CSharp",
                 "dest": "csharp/whats-new/breaking-changes",
@@ -363,7 +366,7 @@
                 "docs/core/runtime-config/**/**.md": "gewarren",
                 "docs/core/testing/**/**.md": "IEvangelist",
                 "docs/core/tools/**/**.md": "adegeo",
-                "docs/core/tutorials/**/**.md": "billwagner",
+                "docs/core/tutorials/**/**.md": "meaghanlewis",
                 "docs/core/versions/**/**.md": "billwagner",
                 "docs/core/whats-new/**/**.md": "gewarren",
                 "docs/csharp/**/*.*": "billwagner",
@@ -456,7 +459,7 @@
                 "docs/core/runtime-config/**/**.md": "gewarren",
                 "docs/core/testing/**/**.md": "dapine",
                 "docs/core/tools/**/**.md": "adegeo",
-                "docs/core/tutorials/**/**.md": "wiwagn",
+                "docs/core/tutorials/**/**.md": "mosagie",
                 "docs/core/versions/**/**.md": "wiwagn",
                 "docs/core/whats-new/**/**.md": "gewarren",
                 "docs/csharp/**/*.*": "wiwagn",
@@ -519,7 +522,7 @@
                 "includes/**/**.md": "dapine"
             },
             "ms.date": {
-                "_csharpstandard/standard/*.md": "02/07/2024",
+                "_csharpstandard/standard/*.md": "09/12/2025",
                 "_csharplang/proposals/csharp-8.0/*.md": "09/10/2019",
                 "_csharplang/proposals/csharp-9.0/*.md": "07/29/2020",
                 "_csharplang/proposals/csharp-10.0/*.md": "08/07/2021",
@@ -532,6 +535,7 @@
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 8.md": "11/08/2023",
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 9.md": "11/09/2024",
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 10.md": "01/09/2024",
+                "_roslyn/docs/compilers/CSharp/Deviations from Standard.md": "04/24/2025",
                 "_vblang/spec/*.md": "07/21/2017"
             },
             "ms.subservice": {
@@ -622,6 +626,7 @@
                 "_csharpstandard/standard/classes.md": "Classes",
                 "_csharpstandard/standard/structs.md": "Structs",
                 "_csharpstandard/standard/arrays.md": "Arrays",
+                "_csharpstandard/standard/ranges.md": "Indexes and ranges",
                 "_csharpstandard/standard/interfaces.md": "Interfaces",
                 "_csharpstandard/standard/enums.md": "Enums",
                 "_csharpstandard/standard/delegates.md": "Delegates",
@@ -635,8 +640,6 @@
                 "_csharpstandard/standard/Bibliography.md": "Bibliography",
                 "_csharplang/proposals/csharp-8.0/patterns.md": "Recursive pattern matching",
                 "_csharplang/proposals/csharp-8.0/default-interface-methods.md": "Default interface methods",
-                "_csharplang/proposals/csharp-8.0/ranges.md": "Ranges and indices",
-                "_csharplang/proposals/csharp-8.0/using.md": "Pattern based using and using declarations",
                 "_csharplang/proposals/csharp-9.0/covariant-returns.md": "Covariant return types",
                 "_csharplang/proposals/csharp-9.0/extending-partial-methods.md": "Extending partial methods",
                 "_csharplang/proposals/csharp-9.0/extension-getenumerator.md": "Extension GetEnumerator support in foreach",
@@ -714,6 +717,7 @@
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 8.md": "C# compiler breaking changes since C# 11",
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 9.md": "C# compiler breaking changes since C# 12",
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 10.md": "C# compiler breaking changes since C# 13",
+                "_roslyn/docs/compilers/CSharp/Deviations from Standard.md": "Deviations from the C# standard",
                 "_vblang/spec/introduction.md": "Introduction",
                 "_vblang/spec/lexical-grammar.md": "Lexical grammar",
                 "_vblang/spec/preprocessing-directives.md": "Preprocessing directives",
@@ -749,7 +753,8 @@
                 "_csharpstandard/standard/namespaces.md": "This chapter defines namespaces, including how to declare them and how to use them.",
                 "_csharpstandard/standard/classes.md": "This chapter covers class declarations, including all member types that can be included in classes. This includes generic classes as well as non-generic classes.",
                 "_csharpstandard/standard/structs.md": "This chapter defines struct declarations. In many cases, the descriptions are defined using the differences between classes and structs.",
-                "_csharpstandard/standard/arrays.md": "This chapter defines arrays. It includes the rules for array variance, multi-dimensional arrays and jagged arrays.",
+                "_csharpstandard/standard/arrays.md": "This chapter defines arrays. It includes the rules for array variance, multi-dimensional arrays, and jagged arrays.",
+                "_csharpstandard/standard/ranges.md": "This chapter defines the index and range operators for indexing into arrays, strings, and spans.",
                 "_csharpstandard/standard/interfaces.md": "This chapter defines interfaces. This includes interface declarations, implementing interfaces, and explicit interface implementation.",
                 "_csharpstandard/standard/enums.md": "This chapter defines the enum types in C#. Enums create a set of named constants and are represented by an underlying integral set of values.",
                 "_csharpstandard/standard/delegates.md": "This chapter defines delegates, which are objects that hold type safe function pointers.",
@@ -763,8 +768,6 @@
                 "_csharpstandard/standard/Bibliography.md": "This appendix lists external standards referenced in this specification.",
                 "_csharplang/proposals/csharp-8.0/patterns.md": "This feature specification describes recursive pattern matching, where patterns can nest inside other patterns.",
                 "_csharplang/proposals/csharp-8.0/default-interface-methods.md": "This feature specification describe the syntax updates necessary to support default interface methods. This includes declaring bodies in interface declarations, and supporting modifiers on declarations.",
-                "_csharplang/proposals/csharp-8.0/ranges.md": "This feature specification describes the syntax for ranges and indices, which support indexing individual elements of a sequence or a range of a sequence from the start or end of that sequence.",
-                "_csharplang/proposals/csharp-8.0/using.md": "This feature specification supports pattern based using and using declarations to simplify resource cleanup.",
                 "_csharplang/proposals/csharp-9.0/covariant-returns.md": "This feature specification describes covariant return types, where overriding member declarations can return a type derived from the overridden member declaration.",
                 "_csharplang/proposals/csharp-9.0/extending-partial-methods.md": "This feature specification describes extensions to partial methods. These extensions enable source generators to create or call partial methods.",
                 "_csharplang/proposals/csharp-9.0/extension-getenumerator.md": "This feature specification describes the necessary pattern for an extension method to provide the GetEnumerator support in a foreach loop.",
@@ -837,12 +840,13 @@
                 "_csharplang/proposals/csharp-14.0/user-defined-compound-assignment.md": "This proposal introduces user-defined compound assignment operators. Developers can override compound assignment, increment, and decrement operators.",
                 "_csharplang/proposals/csharp-14.0/ignored-directives.md": "This proposal allows a source file to include ignored directives. In most cases, ignored directives are used for file-based apps, for example `#!`",
                 "_csharplang/proposals/csharp-14.0/extension-operators.md": "This proposal extends the proposal for extensions to include *extension operators*, where an operator can be an extension member.",
-                "_csharplang/proposals/csharp-14.0/named-and-optional-parameters-in-expression-trees.md": "This proposal allows an expression tree to include named and optional parameters. This enables expression trees to be more flexible in how they are constructed.",
+                "_csharplang/proposals/csharp-14.0/optional-and-named-parameters-in-expression-trees.md": "This proposal allows an expression tree to include named and optional parameters. This enables expression trees to be more flexible in how they are constructed.",
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 7.md": "Learn about any breaking changes since the initial release of C# 10 and included in C# 11",
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 8.md": "Learn about any breaking changes since the initial release of C# 11 and included in C# 12",
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 9.md": "Learn about any breaking changes since the initial release of C# 12 and included in C# 13",
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 10.md": "Learn about any breaking changes since the initial release of C# 13 and included in C# 14",
-                "_vblang/spec/introduction.md": "This chapter provides and introduction to the Visual Basic language.",
+                "_roslyn/docs/compilers/CSharp/Deviations from Standard.md": "Learn about any deviations from the C# standard",
+                "_vblang/spec/introduction.md": "This chapter provides an overview of the Visual Basic language and its design goals.",
                 "_vblang/spec/lexical-grammar.md": "This chapter defines the lexical grammar for Visual Basic.",
                 "_vblang/spec/preprocessing-directives.md": "This chapter defines the preprocessing directives allowed in Visual Basic",
                 "_vblang/spec/general-concepts.md": "This chapter describes the general concepts used in the Visual Basic language.",
@@ -900,10 +904,17 @@
                 "docs/visual-basic/**/*.md": "Visual Basic"
             },
             "open_to_public_contributors": {
-                "docs/standard/design-guidelines/**.md": false
+                "docs/standard/design-guidelines/**.md": false,
+                "_csharplang/**.md": false,
+                "_csharpstandard/**.md": false,
+                "_roslyn/**.md": false,
+                "_vblang/**.md": false
             },
             "ms.collection": {
                 "docs/ai/**/**.{md,yml}": "ce-skilling-ai-copilot"
+            },
+            "ms.custom": {
+                "docs/ai/**/**.{md,yml}": "devx-track-dotnet"
             },
             "ms.update-cycle": {
                 "docs/ai/**/**.{md,yml}": "180-days",

@@ -2,13 +2,13 @@
 title: What's new in .NET 10 runtime
 description: Learn about the new features introduced in the .NET 10 runtime.
 titleSuffix: ""
-ms.date: 08/12/2025
+ms.date: 09/09/2025
 ms.topic: whats-new
 ai-usage: ai-assisted
 ---
 # What's new in the .NET 10 runtime
 
-This article describes new features and performance improvements in the .NET runtime for .NET 10. It's been updated for Preview 7.
+This article describes new features and performance improvements in the .NET runtime for .NET 10. It's been updated for RC 1.
 
 ## JIT compiler improvements
 

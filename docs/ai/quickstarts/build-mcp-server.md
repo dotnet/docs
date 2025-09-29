@@ -3,7 +3,6 @@ title: Quickstart - Create a minimal MCP server and publish to NuGet
 description: Learn to create and connect to a minimal MCP server using C# and publish it to NuGet.
 ms.date: 07/02/2025
 ms.topic: quickstart
-ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 author: alexwolfmsft
 ms.author: alexwolf
 ---
@@ -13,7 +12,7 @@ ms.author: alexwolf
 In this quickstart, you create a minimal Model Context Protocol (MCP) server using the [C# SDK for MCP](https://github.com/modelcontextprotocol/csharp-sdk), connect to it using GitHub Copilot, and publish it to NuGet. MCP servers are services that expose capabilities to clients through the Model Context Protocol (MCP).
 
 > [!NOTE]
-> The `Microsoft.Extensions.AI.Templates` experience is currently in preview. The template uses the [ModelContextProtocol](https://www.nuget.org/packages/ModelContextProtocol/) library and the [MCP registry `server.json` schema](https://github.com/modelcontextprotocol/registry/blob/main/docs/server-json/README.md), which are both in preview.
+> The `Microsoft.Extensions.AI.Templates` experience is currently in preview. The template uses the [ModelContextProtocol](https://www.nuget.org/packages/ModelContextProtocol/) library and the [MCP registry `server.json` schema](https://github.com/modelcontextprotocol/registry/blob/main/docs/reference/server-json/generic-server-json.md), which are both in preview.
 
 ## Prerequisites
 
@@ -141,11 +140,11 @@ In this example, you enhance the MCP server to use a configuration value set in 
 
     VS Code should return a random weather description.
 
-1. Update the `.mcp/server.json` to declare your environment variable input. The `server.json` file schema is defined by the [MCP Registry project](https://github.com/modelcontextprotocol/registry/blob/main/docs/server-json/README.md) and is used by NuGet.org to generate VS Code MCP configuration.
+1. Update the `.mcp/server.json` to declare your environment variable input. The `server.json` file schema is defined by the [MCP Registry project](https://github.com/modelcontextprotocol/registry/blob/main/docs/reference/server-json/generic-server-json.md) and is used by NuGet.org to generate VS Code MCP configuration.
 
-   * Use the `environment_variables` property to declare environment variables used by your app that will be set by the client using the MCP server (for example, VS Code).
+   - Use the `environment_variables` property to declare environment variables used by your app that will be set by the client using the MCP server (for example, VS Code).
 
-   * Use the `package_arguments` property to define CLI arguments that will be passed to your app. For more examples, see the [MCP Registry project](https://github.com/modelcontextprotocol/registry/blob/main/docs/server-json/examples.md).
+   - Use the `package_arguments` property to define CLI arguments that will be passed to your app. For more examples, see the [MCP Registry project](https://github.com/modelcontextprotocol/registry/blob/main/docs/reference/server-json/generic-server-json.md#examples).
 
    :::code language="json" source="snippets/mcp-server/.mcp/server.json":::
 
@@ -232,15 +231,15 @@ For more information, see [Publish a package](/nuget/nuget-org/publish-a-package
 
 ## Common issues
 
-### The command "dnx" needed to run SampleMcpServer was not found.
+### The command "dnx" needed to run SampleMcpServer was not found
 
 If VS Code shows this error when starting the MCP server, you need to install a compatible version of the .NET SDK.
 
 :::image type="content" source="../media/mcp/missing-dnx.png" alt-text="A screenshot showing the missing dnx command in VS Code.":::
 
-The `dnx` command is shipped as part of the .NET SDK, starting with version 10 preview 6. [Install the .NET 10 SDK](https://dotnet.microsoft.com/download/dotnet) to resolve this issue.
+The `dnx` command is shipped as part of the .NET SDK, starting with version 10. [Install the .NET 10 SDK](https://dotnet.microsoft.com/download/dotnet) to resolve this issue.
 
-### GitHub Copilot does not use your tool (an answer is provided without invoking your tool).
+### GitHub Copilot doesn't use your tool (an answer is provided without invoking your tool)
 
 Generally speaking, an AI agent like GitHub Copilot is informed that it has some tools available by the client application, such as VS Code. Some tools, such as the sample random number tool, might not be leveraged by the AI agent because it has similar functionality built in.
 

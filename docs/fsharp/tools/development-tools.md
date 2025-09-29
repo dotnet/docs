@@ -3,15 +3,15 @@ title: F# Development Tools
 description: Learn about development tools for F#.
 ms.date: 11/03/2021
 ---
-# F# Development Tools
+# F# development tools
 
 This article describes some of the primary development tools used with F#.
 
-## .NET Command-line Tools
+## .NET command-line tools
 
 You can install command-line tools for F# in multiple ways, depending on your environment. See [Install F#](../get-started/install-fsharp.md).
 
-## Integrated Development Environments (IDEs)
+## Integrated development environments (IDEs)
 
 ### F# with Visual Studio
 
@@ -25,12 +25,12 @@ F# can be installed as part of [Visual Studio Code](https://code.visualstudio.co
 
 Other IDEs are available for F#. For more information, see [F# Tools](https://dotnet.microsoft.com/languages/fsharp/tools).
 
-## Community Tools
+## Community tools
 
 Many tools and libraries for F# are provided by the F# community. These include:
 
 * [Fantomas](https://github.com/fsprojects/fantomas#fantomas) - The F# code formatting tool
-* [FSharpLint](https://fsprojects.github.io/FSharpLint/) - An F# code checking tool
+* [FSharpLint](https://github.com/fsprojects/FSharpLint) - An F# code checking tool
 * [FAKE](https://fsprojects.github.io/FAKE/) - An F# build automation tool
 
 For more comprehensive lists, see the F# Software Foundation's [Guide to F# Community Projects](https://fsharp.org/community/projects/), or search on the web.

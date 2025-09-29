@@ -395,6 +395,30 @@ let methods2 = System.AppDomain.CurrentDomain.GetAssemblies()
                |> Array.concat
 ```
 
+For reverse pipeline `<|` operators, keep short expressions on a single line. When line length requires wrapping, place arguments on new lines and align them consistently:
+
+```fsharp
+// ✔️ OK - short expressions stay on one line
+let result = someFunction <| arg1 <| arg2 <| arg3
+
+// ✔️ OK - longer expressions can wrap when necessary
+failwith
+<| sprintf "A very long error message that exceeds reasonable line length: %s - additional details: %s"
+    longVariableName
+    anotherLongVariableName
+
+// ✔️ OK - align continuation lines with the operator
+let longResult =
+    someVeryLongFunctionName
+    <| firstVeryLongArgumentName
+    <| secondVeryLongArgumentName
+    <| thirdVeryLongArgumentName
+
+// ❌ Not OK - unnecessary wrapping of short expressions
+failwith <| sprintf "short: %s"
+                    value
+```
+
 ### Formatting lambda expressions
 
 When a lambda expression is used as an argument in a multi-line expression, and is followed by other arguments,
@@ -571,6 +595,7 @@ The following operators are defined in the F# standard library and should be use
 ```fsharp
 // ✔️ OK
 x |> f // Forward pipeline
+f <| x // Reverse pipeline
 f >> g // Forward composition
 x |> ignore // Discard away a value
 x + y // Overloaded addition (including string concatenation)

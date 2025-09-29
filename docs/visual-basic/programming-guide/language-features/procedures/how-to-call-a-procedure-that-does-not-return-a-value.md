@@ -34,4 +34,4 @@ A `Sub` procedure does not return a value to the calling code. You call it expli
 - [Sub Statement](../../../language-reference/statements/sub-statement.md)
 - [How to: Create a Procedure](./how-to-create-a-procedure.md)
 - [How to: Call a Procedure That Returns a Value](./how-to-call-a-procedure-that-returns-a-value.md)
-- [How to: Call an Event Handler in Visual Basic](./how-to-call-an-event-handler.md)
+- [How to: Subscribe to Events and Handle Them in Visual Basic](./how-to-call-an-event-handler.md)

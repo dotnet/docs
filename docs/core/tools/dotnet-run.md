@@ -1,7 +1,7 @@
 ---
 title: dotnet run command
 description: The dotnet run command provides a convenient option to run your application from the source code.
-ms.date: 09/24/2025
+ms.date: 09/29/2025
 ---
 # dotnet run
 
@@ -14,13 +14,10 @@ ms.date: 09/24/2025
 ## Synopsis
 
 ```dotnetcli
-dotnet run [<applicationArguments>] [-a|--arch <ARCHITECTURE>] [-c|--configuration <CONFIGURATION>]
-    [-e|--environment <KEY=VALUE>] [--file <FILE_PATH>]
-    [-f|--framework <FRAMEWORK>] [--force] [--interactive]
-    [--launch-profile <NAME>] [--no-build]
-    [--no-dependencies] [--no-launch-profile] [--no-restore]
-    [--os <OS>] [--project <PATH>] [-r|--runtime <RUNTIME_IDENTIFIER>]
-    [--tl:[auto|on|off]] [-v|--verbosity <LEVEL>]
+dotnet run [<applicationArguments>] [-a|--arch <ARCHITECTURE>] [--artifacts-path <ARTIFACTS_DIR>] [-c|--configuration <CONFIGURATION>]
+    [-e|--environment <KEY=VALUE>] [--file <FILE_PATH>] [-f|--framework <FRAMEWORK>] [--force] [--interactive]
+    [--launch-profile <NAME>] [--no-build] [--no-dependencies] [--no-launch-profile] [--no-restore]
+    [--os <OS>] [--project <PATH>] [-r|--runtime <RUNTIME_IDENTIFIER>] [--tl:[auto|on|off]] [-v|--verbosity <LEVEL>]
     [[--] [application arguments]]
 
 dotnet run -h|--help
@@ -69,7 +66,11 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 
 [!INCLUDE [arch](../../../includes/cli-arch.md)]
 
+[!INCLUDE [artifacts-path](../../../includes/cli-artifacts-path.md)]
+
 [!INCLUDE [configuration](../../../includes/cli-configuration.md)]
+
+[!INCLUDE [disable-build-servers](../../../includes/cli-disable-build-servers.md)]
 
 - **`-e|--environment <KEY=VALUE>`**
 
@@ -117,6 +118,10 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 
   Doesn't build the project before running. It also implicitly sets the `--no-restore` flag.
 
+- **`--no-cache`**
+
+  Skip up to date checks and always build the program before running.
+
 - **`--no-dependencies`**
 
   When restoring a project with project-to-project (P2P) references, restores the root project and not the references.
@@ -128,6 +133,10 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 - **`--no-restore`**
 
   Doesn't execute an implicit restore when running the command.
+
+- **`--no-self-contained`**
+
+  Publish your application as a framework dependent application. A compatible .NET runtime must be installed on the target machine to run your application.
 
 [!INCLUDE [os](../../../includes/cli-os.md)]
 
@@ -157,6 +166,10 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 - **`-r|--runtime <RUNTIME_IDENTIFIER>`**
 
   Specifies the target runtime to restore packages for. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md).
+
+- **`-sc|--self-contained`**
+
+  Publishes the .NET runtime with your application so the runtime doesn't need to be installed on the target system. The default is `false`.  However, when targeting .NET 7 or lower, the default is `true` if a runtime identifier is specified.
 
 [!INCLUDE [tl](../../../includes/cli-tl.md)]
 

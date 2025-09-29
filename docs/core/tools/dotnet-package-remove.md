@@ -1,15 +1,15 @@
 ---
 title: dotnet package remove command
 description: The dotnet package remove command provides a convenient option to remove NuGet package reference to a project.
-ms.date: 04/02/2025
+ms.date: 09/29/2025
 ---
 # dotnet package remove
 
-**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
+**This article applies to:** ✔️ .NET 6 and later versions
 
 ## Name
 
-`dotnet package remove` - Removes package reference from a project file.
+`dotnet package remove` - Removes a package reference from a project file.
 
 > [!NOTE]
 > If you're using .NET 9 SDK or earlier, use the "verb first" form (`dotnet remove package`) instead. The "noun first" form was introduced in .NET 10. For more information, see [More consistent command order](../whats-new/dotnet-10/sdk.md#more-consistent-command-order).
@@ -17,7 +17,7 @@ ms.date: 04/02/2025
 ## Synopsis
 
 ```dotnetcli
-dotnet package remove <PACKAGE_NAME> [--project <PROJECT>]
+dotnet package remove <PACKAGE_NAME> [--project <PROJECT>] [--interactive] [--file <FILE>]
 
 dotnet package remove -h|--help
 ```
@@ -28,15 +28,21 @@ The `dotnet package remove` command provides a convenient option to remove a NuG
 
 ## Arguments
 
-`PROJECT`
-
-Specifies the project file. If not specified, the command searches the current directory for one.
-
 `PACKAGE_NAME`
 
 The package reference to remove.
 
 ## Options
+
+- **`-p|--project <PROJECT>`**
+
+  The project file to operate on. If a solution file is specified, the command will update the package in all projects in the solution that reference it. If not specified, the command will search the current directory for a project file.
+
+[!INCLUDE [interactive](../../../includes/cli-interactive.md)]
+
+- **`--file <FILE>`**
+
+  The file-based app to operate on.
 
 [!INCLUDE [help](../../../includes/cli-help.md)]
 
@@ -46,4 +52,10 @@ The package reference to remove.
 
   ```dotnetcli
   dotnet package remove Newtonsoft.Json
+  ```
+
+- Remove `Newtonsoft.Json` NuGet package from a specific project file:
+
+  ```dotnetcli
+  dotnet package remove Newtonsoft.Json --file MyApp.cs
   ```

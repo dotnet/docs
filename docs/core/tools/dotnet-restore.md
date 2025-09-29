@@ -1,7 +1,7 @@
 ---
 title: dotnet restore command
 description: Learn how to restore dependencies and project-specific tools with the dotnet restore command.
-ms.date: 09/24/2025
+ms.date: 09/29/2025
 ---
 # dotnet restore
 
@@ -17,7 +17,7 @@ ms.date: 09/24/2025
 dotnet restore [<PROJECT>|<SOLUTION>|<FILE>] [--configfile <FILE>] [--disable-build-servers]
     [--disable-parallel]
     [-f|--force] [--force-evaluate] [--ignore-failed-sources]
-    [--interactive] [--lock-file-path <LOCK_FILE_PATH>] [--locked-mode]
+    [--interactive] [--lock-file-path <LOCK_FILE_PATH>] [--locked-mode] [--no-http-cache]
     [--no-cache] [--no-dependencies] [--packages <PACKAGES_DIRECTORY>]
     [-r|--runtime <RUNTIME_IDENTIFIER>] [-s|--source <SOURCE>]
     [--tl:[auto|on|off]] [--use-current-runtime, --ucr [true|false]]
@@ -123,6 +123,10 @@ There are three specific settings that `dotnet restore` ignores:
 - **`--locked-mode`**
 
   Don't allow updating project lock file.
+
+- **`--no-http-cache`**
+
+  Disable Http Caching for packages.
 
 - **`--no-cache`**
 

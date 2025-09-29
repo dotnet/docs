@@ -1,11 +1,11 @@
 ---
 title: dotnet store command
 description: The 'dotnet store' command stores the specified assemblies in the runtime package store.
-ms.date: 02/14/2020
+ms.date: 09/29/2025
 ---
 # dotnet store
 
-**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
+**This article applies to:** ✔️ .NET 6 and later versions
 
 ## Name
 
@@ -14,10 +14,10 @@ ms.date: 02/14/2020
 ## Synopsis
 
 ```dotnetcli
-dotnet store -m|--manifest <PATH_TO_MANIFEST_FILE>
-    -f|--framework <FRAMEWORK_VERSION> -r|--runtime <RUNTIME_IDENTIFIER>
+dotnet store [-m|--manifest <PATH_TO_MANIFEST_FILE>]
+    [-f|--framework <FRAMEWORK_VERSION>] [--disable-build-servers] [-r|--runtime <RUNTIME_IDENTIFIER>]
     [--framework-version <FRAMEWORK_VERSION>] [--output <OUTPUT_DIRECTORY>]
-    [--skip-optimization] [--skip-symbols] [-v|--verbosity <LEVEL>]
+    [--skip-optimization] [--skip-symbols] [--use-current-runtime, --ucr [true|false]] [-v|--verbosity <LEVEL>]
     [--working-dir <WORKING_DIRECTORY>]
 
 dotnet store -h|--help
@@ -32,6 +32,8 @@ dotnet store -h|--help
 - **`-f|--framework <FRAMEWORK>`**
 
   Specifies the [target framework](../../standard/frameworks.md). The target framework has to be specified in the project file.
+
+[!INCLUDE [disable-build-servers](../../../includes/cli-disable-build-servers.md)]
 
 - **`-m|--manifest <PATH_TO_MANIFEST_FILE>`**
 
@@ -60,6 +62,10 @@ dotnet store -h|--help
 - **`--skip-symbols`**
 
   Skips symbol generation. Currently, you can only generate symbols on Windows and Linux.
+
+- **`--use-current-runtime, --ucr [true|false]`**
+
+  Use current runtime as the target runtime. The default is `false`.
 
 [!INCLUDE [verbosity](../../../includes/cli-verbosity.md)]
 

@@ -68,4 +68,3 @@ FROM mcr.microsoft.com/dotnet/aspnet:9.0
 ```
 
 In a cloud service like [Azure App Service](/azure/app-service/quickstart-dotnetcore), a configuration change is needed.
-

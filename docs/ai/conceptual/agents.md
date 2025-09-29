@@ -36,7 +36,14 @@ Imagine you're launching a new feature on your business website. If it's a simpl
 - Testing
 - Deployment
 
-### Agents + Workflows
+A few important observations:
+
+- Each step may contain subtasks.
+- Different specialists may own different phases.
+- Progress isn’t always linear. Bugs found during testing may send you back to implementation.
+- Success depends on planning, orchestration, and communication across stakeholders.
+
+### Agents + Workflows = Agentic Workflows
 
 Workflows don’t require agents, but agents can supercharge them.
 

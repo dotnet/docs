@@ -34,9 +34,9 @@ The only required change to upgrade an app is updating the `TargetFramework` pro
 
 Here's how to do it:
 
-* Open the project file (the `*.csproj`, `*.vbproj`, or `*.fsproj` file).
-* Change the `<TargetFramework>` property value from, for example, `net6.0` to `net8.0`.
-* The same pattern applies for the `<TargetFrameworks>` property if it is being used.
+- Open the project file (the `*.csproj`, `*.vbproj`, or `*.fsproj` file).
+- Change the `<TargetFramework>` property value from, for example, `net6.0` to `net8.0`.
+- The same pattern applies for the `<TargetFrameworks>` property if it is being used.
 
 > [!TIP]
 > The [GitHub Copilot app modernization - upgrade](../porting/github-copilot-app-modernization-overview.md) capability can make these changes automatically.
@@ -47,9 +47,9 @@ You might need to run `dotnet workload restore` to restore workloads with the ne
 
 More resources:
 
-* [Breaking changes in .NET 9](../compatibility/9.0.md)
-* [Migrate from ASP.NET Core in .NET 7 to .NET 8](/aspnet/core/migration/70-80?tabs=visual-studio)
-* [Upgrade .NET MAUI from .NET 7 to .NET 8](https://github.com/dotnet/maui/wiki/Upgrading-.NET-MAUI-from-.NET-7-to-.NET-8)
+- [Breaking changes in .NET 9](../compatibility/9.0.md)
+- [Migrate an ASP.NET Core app](/aspnet/core/migration/)
+- [Upgrade .NET MAUI from .NET 7 to .NET 8](https://github.com/dotnet/maui/wiki/Upgrading-.NET-MAUI-from-.NET-7-to-.NET-8)
 
 ## Update continuous integration (CI)
 
@@ -68,3 +68,4 @@ FROM mcr.microsoft.com/dotnet/aspnet:9.0
 ```
 
 In a cloud service like [Azure App Service](/azure/app-service/quickstart-dotnetcore), a configuration change is needed.
+

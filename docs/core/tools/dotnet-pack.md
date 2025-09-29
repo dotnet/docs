@@ -14,7 +14,8 @@ ms.date: 09/29/2025
 ## Synopsis
 
 ```dotnetcli
-dotnet pack [<PROJECT>|<SOLUTION>] [--artifacts-path <ARTIFACTS_DIR>]
+dotnet pack [<PROJECT>|<SOLUTION>]
+    [--artifacts-path <ARTIFACTS_DIR>]
     [-c|--configuration <CONFIGURATION>] [--disable-build-servers][--force] [--include-source] [--include-symbols] [--interactive] [--no-build] [--no-dependencies] [--no-restore] [--nologo] [-o|--output <OUTPUT_DIRECTORY>] [--runtime <RUNTIME_IDENTIFIER>] [-s|--serviceable] [--tl:[auto|on|off]] [-v|--verbosity <LEVEL>]
     [--version-suffix <VERSION_SUFFIX>]
 

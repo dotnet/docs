@@ -17,7 +17,8 @@ ms.date: 09/29/2025
 ## Synopsis
 
 ```dotnetcli
-dotnet package remove <PACKAGE_NAME> [--project <PROJECT>] [--interactive] [--file <FILE>]
+dotnet package remove <PACKAGE_NAME> [--project <PROJECT>]  
+    [--interactive] [--file <FILE>]
 
 dotnet package remove -h|--help
 ```

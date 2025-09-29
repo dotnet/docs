@@ -17,7 +17,7 @@ ms.date: 09/29/2025
 dotnet store [-m|--manifest <PATH_TO_MANIFEST_FILE>]
     [-f|--framework <FRAMEWORK_VERSION>] [--disable-build-servers] [-r|--runtime <RUNTIME_IDENTIFIER>]
     [--framework-version <FRAMEWORK_VERSION>] [--output <OUTPUT_DIRECTORY>]
-    [--skip-optimization] [--skip-symbols] [--use-current-runtime, --ucr [true|false]] [-v|--verbosity <LEVEL>]
+    [--skip-optimization] [--skip-symbols] [-ucr|--use-current-runtime] [-v|--verbosity <LEVEL>]
     [--working-dir <WORKING_DIRECTORY>]
 
 dotnet store -h|--help
@@ -63,7 +63,7 @@ dotnet store -h|--help
 
   Skips symbol generation. Currently, you can only generate symbols on Windows and Linux.
 
-- **`--use-current-runtime, --ucr [true|false]`**
+- **`-ucr|--use-current-runtime`**
 
   Use current runtime as the target runtime. The default is `false`.
 

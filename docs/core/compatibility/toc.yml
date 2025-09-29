@@ -224,6 +224,8 @@ items:
                 href: aspnet-core/8.0/concurrencylimitermiddleware-obsolete.md
               - name: Custom converters for serialization removed
                 href: aspnet-core/8.0/problemdetails-custom-converters.md
+              - name: HTTP logging middleware requires AddHttpLogging
+                href: aspnet-core/8.0/httpLogging-addhttplogging-requirement.md
               - name: ISystemClock is obsolete
                 href: aspnet-core/8.0/isystemclock-obsolete.md
               - name: "Minimal APIs: IFormFile parameters require anti-forgery checks"

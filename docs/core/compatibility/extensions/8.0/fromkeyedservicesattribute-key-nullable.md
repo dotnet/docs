@@ -3,7 +3,6 @@ title: "Breaking change: FromKeyedServicesAttribute.Key can be null"
 description: "Learn about the breaking change in .NET 8 where FromKeyedServicesAttribute.Key is now nullable to support unkeyed services and inheritance."
 ms.date: 09/29/2025
 ai-usage: ai-assisted
-ms.custom: https://dev.azure.com/msft-skilling/Content/_workitems/edit/486863
 ---
 
 # FromKeyedServicesAttribute.Key can be null

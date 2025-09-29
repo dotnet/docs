@@ -99,30 +99,34 @@ When you are calling methods on COM objects in .NET, the .NET runtime changes th
 Another aspect of type marshalling is how to pass in a struct to an unmanaged method. For instance, some of the unmanaged methods require a struct as a parameter. In these cases, you need to create a corresponding struct or a class in managed part of the world to use it as a parameter. However, just defining the class isn't enough, you also need to instruct the marshaller how to map fields in the class to the unmanaged struct. Here the `StructLayout` attribute becomes useful.
 
 ```csharp
-[LibraryImport("kernel32.dll")]
-static partial void GetSystemTime(out SystemTime systemTime);
+using System;
+using System.Runtime.InteropServices;
 
-[StructLayout(LayoutKind.Sequential)]
-struct SystemTime
-{
-    public ushort Year;
-    public ushort Month;
-    public ushort DayOfWeek;
-    public ushort Day;
-    public ushort Hour;
-    public ushort Minute;
-    public ushort Second;
-    public ushort Millisecond;
-}
+Win32Interop.GetSystemTime(out Win32Interop.SystemTime systemTime);
 
-public static void Main()
+Console.WriteLine(systemTime.Year);
+
+internal static partial class Win32Interop
 {
-    GetSystemTime(out SystemTime systemTime);
-    Console.WriteLine(systemTime.Year);
+    [LibraryImport("kernel32.dll")]
+    internal static partial void GetSystemTime(out SystemTime systemTime);
+
+    [StructLayout(LayoutKind.Sequential)]
+    internal ref struct SystemTime
+    {
+        public ushort Year;
+        public ushort Month;
+        public ushort DayOfWeek;
+        public ushort Day;
+        public ushort Hour;
+        public ushort Minute;
+        public ushort Second;
+        public ushort Millisecond;
+    }
 }
 ```
 
-The previous code shows a simple example of calling into `GetSystemTime()` function. The interesting bit is on line 4. The attribute specifies that the fields of the class should be mapped sequentially to the struct on the other (unmanaged) side. This means that the naming of the fields isn't important, only their order is important, as it needs to correspond to the unmanaged struct, shown in the following example:
+The previous code shows a simple example of calling into `GetSystemTime()` function. The interesting bit is on line 13. The attribute specifies that the fields of the class should be mapped sequentially to the struct on the other (unmanaged) side. This means that the naming of the fields isn't important, only their order is important, as it needs to correspond to the unmanaged struct, shown in the following example:
 
 ```c
 typedef struct _SYSTEMTIME {
@@ -134,7 +138,7 @@ typedef struct _SYSTEMTIME {
   WORD wMinute;
   WORD wSecond;
   WORD wMilliseconds;
-} SYSTEMTIME, *PSYSTEMTIME;
+} SYSTEMTIME, *PSYSTEMTIME, *LPSYSTEMTIME;
 ```
 
 Sometimes the default marshalling for your structure doesn't do what you need. The [Customizing structure marshalling](customize-struct-marshalling.md) article teaches you how to customize how your structure is marshalled.

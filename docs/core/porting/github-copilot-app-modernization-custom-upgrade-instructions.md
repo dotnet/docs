@@ -14,11 +14,18 @@ ms.date: 09/29/2025
 # Custom Upgrade Instructions for GitHub Copilot app modernization: upgrade for .NET
 
 ## Overview
-GitHub Copilot App Modernization: upgrade for .NET has extensibility support in a few different ways and this article will focus on a feature called **Custom Upgrade Instructions**. While the upgrade tool will inspect, and follow, custom instructions in the `copilot-instructions.md` file we know those are sent to the LLM for every request. For upgrade specific scenarios, the upgrade can follow additional instructions from markdown files stored in the solution directory under the folder `.github\upgrades\prompts\<your_file_name>.md`. The upgrade experience supports these files in three ways.
+GitHub Copilot App Modernization: upgrade for .NET has extensibility support in a few different ways and this article will focus on a feature called **Custom Upgrade Instructions**. The upgrade tool will  follow custom instructions in the `copilot-instructions.md` file but those are sent to the LLM for every request and they are better suited for describing solution characteristics than upgrade details.
+
+For upgrade specific scenarios, the upgrade can follow additional instructions from markdown files stored in the solution directory under the folder `.github\upgrades\prompts\<your_file_name>.md`. The upgrade experience supports these files in three ways.
 
 1. Creating custom upgrade instructions
-2. Running the custom upgrade instruction as a one-time step
-3. Running custom upgrade instructions during upgrade
+2. Testing the custom upgrade instruction as a one-time step
+3. Running custom upgrade instructions during the upgrade
+
+ Custom upgrade instructions are different from chatmode or prompt files in that they focus on the reuse of upgrade-related expertise. While chatmodes and prompt files provide specific configurations or guidance for conversational agents, custom upgrade instructions are designed to be embedded within your upgrade plan and executed as part of automated upgrade procedures. This enables organizations to apply learned insights and best practices broadly across many applications, improving efficiency and consistency during upgrades.
+
+The following example shows how custom upgrade instructions can be created, tested, and applied during an upgrade to enhance automation and successful code changes.
+
 
 ## Creating custom upgrade instructions
 To demonstrate this capability we can show how to replace Newtonsoft.Json with System.Text.Json. Both packages are supported on modern .NET and this scenario is provided for learning.
@@ -30,15 +37,15 @@ To get started, follow these steps to create a new custom instructions file. Sta
 
 1. Right-click the solution file and choose **Modernize**
 
-    ![#Right click the solution file to run a custom upgrade instruction](./media/github-copilot-app-modernization-custom-upgrade-instructions/VS-RightClickSolution.png)
+    ![#Right click the solution file to run a custom upgrade instruction](./media/github-copilot-app-modernization-custom-upgrade-instructions/visualstudio-rightclick-solution.png)
 
 2. Type `I want to generate a custom upgrade instruction` into the chat
 
-    ![#Generate a custom upgrade instruction](./media/github-copilot-app-modernization-custom-upgrade-instructions/VS-Copilot-CustomPrompt1.png)
+    ![#Generate a custom upgrade instruction](./media/github-copilot-app-modernization-custom-upgrade-instructions/visualstudio-copilot-custom-upgrade-instructions1.png)
 
 3. The Copilot will produce a new file and ask you if you would like to refine the custom upgrade instruction further.
 
-    ![#New custom upgrade instruction created](./media/github-copilot-app-modernization-custom-upgrade-instructions/VS-Copilot-CustomPrompt2.png)
+    ![#New custom upgrade instruction created](./media/github-copilot-app-modernization-custom-upgrade-instructions/visualstudio-copilot-custom-upgrade-instructions2.png)
 
 Tips for best outcomes:
 1. Custom upgrade instructions work best when Copilot can follow specific instructions. A common pattern follows the "if this, then that" approach to replace or alter code in your solution.
@@ -50,10 +57,10 @@ Tips for best outcomes:
     2. Type `check my git changes and add diffs as examples to my prompt file`
     3. Copilot will update the instructions and add an example diff
 
-    ![#Custom upgrade instruction with diff](./media/github-copilot-app-modernization-custom-upgrade-instructions/VS-Copilot-CustomPrompt3.png)
+    ![#Custom upgrade instruction with diff](./media/github-copilot-app-modernization-custom-upgrade-instructions/visualstudio-copilot-custom-upgrade-instructions3.png)
     
 
-## Running the custom upgrade instruction as a one-time step
+## Testing the custom upgrade instruction as a one-time step
 
 Once the custom upgrade instruction is created you can run it directly. This is useful for testing and helping to refine the approach before sharing it with others, or applying it during the upgrade. This approach is also helpful for tasks that need to be completed prior to starting the upgrade as a way to address technical debt in the solution.
 
@@ -62,7 +69,7 @@ Once the custom upgrade instruction is created you can run it directly. This is 
 
 1. Right-click the solution file and choose **Modernize**
 
-    ![#Right click the solution file to run a custom upgrade instruction](./media/github-copilot-app-modernization-custom-upgrade-instructions/VS2026-RightClickSolution.png)
+    ![#Right click the solution file to run a custom upgrade instruction](./media/github-copilot-app-modernization-custom-upgrade-instructions/visualstudio-rightclick-solution.png)
 
 2. Type `Replace Newtonsoft with System.Text.Json` into the chat
 
@@ -79,7 +86,7 @@ Tips for best outcomes:
 
     ![#Shows that Copilot retrieved the custom instructions file for this task](./media/github-copilot-app-modernization-custom-upgrade-instructions/VS-Copilot-Newtonsoft3.png)
 
-## Running custom upgrade instructions during upgrade
+## Running custom upgrade instructions during the upgrade
 
 When you need to repeatedly run a custom upgrade instruction, or need to run it during the upgrade, you can tell Copilot to incorporate the instructions into the plan.
 
@@ -88,7 +95,7 @@ When you need to repeatedly run a custom upgrade instruction, or need to run it 
 
 1. Right-click the solution file and choose **Modernize**
 
-    ![#Right click the solution file to apply custom upgrade instructions while upgrading to a newer version of .NET](./media/github-copilot-app-modernization-custom-upgrade-instructions/VS2026-RightClickSolution.png)
+    ![#Right click the solution file to apply custom upgrade instructions while upgrading to a newer version of .NET](./media/github-copilot-app-modernization-custom-upgrade-instructions/visualstudio-rightclick-solution.png)
 
 2. Choose **Upgrade to a newer version of .NET** and generate a plan file
 

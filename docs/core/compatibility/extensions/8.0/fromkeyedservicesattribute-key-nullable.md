@@ -1,12 +1,12 @@
 ---
-title: "Breaking change: FromKeyedServicesAttribute.Key may be null"
+title: "Breaking change: FromKeyedServicesAttribute.Key can be null"
 description: "Learn about the breaking change in .NET 8 where FromKeyedServicesAttribute.Key is now nullable to support unkeyed services and inheritance."
-ms.date: 01/08/2025
+ms.date: 09/29/2025
 ai-usage: ai-assisted
 ms.custom: https://dev.azure.com/msft-skilling/Content/_workitems/edit/486863
 ---
 
-# FromKeyedServicesAttribute.Key may be null
+# FromKeyedServicesAttribute.Key can be null
 
 <xref:Microsoft.Extensions.DependencyInjection.FromKeyedServicesAttribute.Key?displayProperty=nameWithType> has been changed from a non-nullable `object` to a nullable `object?` to support null values for unkeyed services and inheritance scenarios.
 
@@ -16,7 +16,7 @@ ms.custom: https://dev.azure.com/msft-skilling/Content/_workitems/edit/486863
 
 ## Previous behavior
 
-<xref:Microsoft.Extensions.DependencyInjection.FromKeyedServicesAttribute.Key?displayProperty=nameWithType> was declared as a non-nullable `object`:
+Previously, <xref:Microsoft.Extensions.DependencyInjection.FromKeyedServicesAttribute.Key?displayProperty=nameWithType> was declared as a non-nullable `object`:
 
 ```csharp
 public object Key { get; }
@@ -24,7 +24,7 @@ public object Key { get; }
 
 ## New behavior
 
-<xref:Microsoft.Extensions.DependencyInjection.FromKeyedServicesAttribute.Key?displayProperty=nameWithType> is now declared as a nullable `object?`:
+Starting in .NET 8, <xref:Microsoft.Extensions.DependencyInjection.FromKeyedServicesAttribute.Key?displayProperty=nameWithType> is now declared as a nullable `object?`:
 
 ```csharp
 public object? Key { get; }
@@ -38,19 +38,11 @@ This change can affect [source compatibility](../../categories.md#source-compati
 
 ## Reason for change
 
-Support was added for keyed services to annotate parameters as unkeyed. This allows developers to explicitly indicate when a parameter should be resolved without a key, which is particularly useful in scenarios where both keyed and unkeyed services are registered for the same type.
+Support was added for keyed services to annotate parameters as unkeyed. This change allows developers to explicitly indicate when a parameter should be resolved without a key, which is particularly useful in scenarios where both keyed and unkeyed services are registered for the same type.
 
 ## Recommended action
 
-Adjust any code that uses <xref:Microsoft.Extensions.DependencyInjection.FromKeyedServicesAttribute.Key?displayProperty=nameWithType> to handle `null` values. For example:
-
-```csharp
-// Before - assuming Key is never null
-var keyValue = attribute.Key.ToString();
-
-// After - handling nullable Key
-var keyValue = attribute.Key?.ToString() ?? "unkeyed";
-```
+Adjust any code that uses <xref:Microsoft.Extensions.DependencyInjection.FromKeyedServicesAttribute.Key?displayProperty=nameWithType> to handle `null` values.
 
 ## Affected APIs
 

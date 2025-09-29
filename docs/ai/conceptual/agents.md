@@ -12,6 +12,8 @@ ms.date: 09/29/2025
 
 **Agents are systems that accomplish objectives.**
 
+![Components of an agent](../media/agents/agent-components.png)
+
 Agents become more capable when equipped with the following:
 
 - **Reasoning and decision-making**: Powered by LLMs, search algorithms, or planning and decision-making systems.

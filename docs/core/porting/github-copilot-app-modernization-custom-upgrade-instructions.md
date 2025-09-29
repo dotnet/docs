@@ -73,18 +73,18 @@ Once the custom upgrade instruction is created you can run it directly. This is 
 
 2. Type `Replace Newtonsoft with System.Text.Json` into the chat
 
-    ![#Run a one-time custom upgrade instruction](./media/github-copilot-app-modernization-custom-upgrade-instructions/VS-Copilot-Newtonsoft1.png)
+    ![#Run a one-time custom upgrade instruction](./media/github-copilot-app-modernization-custom-upgrade-instructions/visualstudio-copilot-newtonsoft1.png)
 
 3. The upgrade will read the custom upgrade instructions and apply the change
 
-    ![#Shows the result of running the custom upgrade instruction](./media/github-copilot-app-modernization-custom-upgrade-instructions/VS-Copilot-Newtonsoft2.png)
+    ![#Shows the result of running the custom upgrade instruction](./media/github-copilot-app-modernization-custom-upgrade-instructions/visualstudio-copilot-newtonsoft2.png)
 
 
 Tips for best outcomes:
 1. Try to use words similar to the file name when activating the custom upgrade instruction. In this scenario we used 'Replace Newtonsoft with System.Text.Json' because the file was named `replace_newtonsoft_with_system_text_json.md`. If your file name uses other wording like **update** or **modify** then follow that pattern.
 2. You can tell if Copilot understood your instructions by checking the chat to see if it retrieved the file. If this does not appear, then the custom upgrade instruction was not used during the code transformation.
 
-    ![#Shows that Copilot retrieved the custom instructions file for this task](./media/github-copilot-app-modernization-custom-upgrade-instructions/VS-Copilot-Newtonsoft3.png)
+    ![#Shows that Copilot retrieved the custom instructions file for this task](./media/github-copilot-app-modernization-custom-upgrade-instructions/visualstudio-copilot-newtonsoft3.png)
 
 ## Running custom upgrade instructions during the upgrade
 
@@ -99,29 +99,29 @@ When you need to repeatedly run a custom upgrade instruction, or need to run it 
 
 2. Choose **Upgrade to a newer version of .NET** and generate a plan file
 
-    ![#Use chat to start the upgrade](./media/github-copilot-app-modernization-custom-upgrade-instructions/VS-Copilot-UpgradeAction1.png)
+    ![#Use chat to start the upgrade](./media/github-copilot-app-modernization-custom-upgrade-instructions/visualstudio-copilot-upgrade1.png)
 
 3. Choose **Accept upgrade settings and continue**
 
-    ![#Use chat to create a plan](./media/github-copilot-app-modernization-custom-upgrade-instructions/VS-Copilot-UpgradeAction2.png)
+    ![#Use chat to create a plan](./media/github-copilot-app-modernization-custom-upgrade-instructions/visualstudio-copilot-upgrade2.png)
 
 4. Choose **Address security vulnerabilities issues during this upgrade**
 
-    ![#Address security vulnerabilities during the upgrade](./media/github-copilot-app-modernization-custom-upgrade-instructions/VS-Copilot-UpgradeAction3.png)
+    ![#Address security vulnerabilities during the upgrade](./media/github-copilot-app-modernization-custom-upgrade-instructions/visualstudio-copilot-upgrade3.png)
 
 5. Review the plan file to see if your instructions are added. In the following image, we see the custom upgrade instruction is not part of the plan because the plan says Newtonsoft would be upgraded, and not replaced.
 
-    ![#Review the plan file](./media/github-copilot-app-modernization-custom-upgrade-instructions/VS-Copilot-UpgradeAction4.png)
+    ![#Review the plan file](./media/github-copilot-app-modernization-custom-upgrade-instructions/visualstudio-copilot-upgrade4.png)
 
 6. To modify the plan type `modify the plan with custom instructions to replace Newtonsoft`
 
     You should be able to see the effect on the planned package upgrades.
 
-    ![#Plan updated with package details](./media/github-copilot-app-modernization-custom-upgrade-instructions/VS-Copilot-UpgradeAction5.png)
+    ![#Plan updated with package details](./media/github-copilot-app-modernization-custom-upgrade-instructions/visualstudio-copilot-upgrade5.png)
 
     You should be able to see the effect on the planned project upgrades.
 
-    ![#Plan updated with project details](./media/github-copilot-app-modernization-custom-upgrade-instructions/VS-Copilot-UpgradeAction6.png)
+    ![#Plan updated with project details](./media/github-copilot-app-modernization-custom-upgrade-instructions/visualstudio-copilot-upgrade6.png)
 
 
 Tips for best outcomes:

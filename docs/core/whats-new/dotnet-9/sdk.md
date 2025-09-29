@@ -22,7 +22,7 @@ In .NET 9, `dotnet test` is more fully integrated with MSBuild. Because MSBuild 
 
 Test result reporting for [`dotnet test`](../../tools/dotnet-test.md) is now supported directly in the MSBuild Terminal Logger. You get more fully featured test reporting both _while_ tests are running (displays the running test name) and _after_ tests are completed (any test errors are rendered in a better way).
 
-For more information about the Terminal Logger, see [dotnet build options](../../tools/dotnet-build.md#options).
+For more information about Terminal Logger, see [dotnet build options](../../tools/dotnet-build.md#options).
 
 ## .NET tool roll-forward
 
@@ -32,7 +32,7 @@ A new option for [`dotnet tool install`](../../tools/dotnet-tool-install.md) let
 
 ## Terminal Logger
 
-The Terminal Logger is now [enabled by default](#enabled-by-default) and also has [improved usability](#usability).
+Terminal Logger is now [enabled by default](#enabled-by-default) and also has [improved usability](#usability).
 
 ### Enabled by default
 
@@ -58,7 +58,7 @@ The set of commands that uses Terminal Logger by default is:
 
 ### Usability
 
-The Terminal Logger now summarizes the total count of failures and warnings at the end of a build. It also shows errors that contain newlines. (For more information about the Terminal Logger, see ['dotnet build' options](../../tools/dotnet-build.md#options), specifically the `--tl` option.)
+Terminal Logger now summarizes the total count of failures and warnings at the end of a build. It also shows errors that contain newlines. (For more information about Terminal Logger, see ['dotnet build' options](../../tools/dotnet-build.md#options), specifically the `--tl` option.)
 
 Consider the following project file that emits a warning when the project is built:
 
@@ -109,7 +109,7 @@ Build succeeded with 3 warning(s) in 0.8s
 
 The message lines of the warning no longer have the repeated project and location information that clutter the display. In addition, the build summary shows how many warnings (and errors, if there are any) were generated during the build.
 
-If you have feedback about the Terminal Logger, you can provide it in the [MSBuild repository](https://github.com/dotnet/msbuild/issues).
+If you have feedback about Terminal Logger, you can provide it in the [MSBuild repository](https://github.com/dotnet/msbuild/issues).
 
 ## Faster NuGet dependency resolution for large repos
 

@@ -1,6 +1,6 @@
 ---
 title: What's new in the SDK and tooling for .NET 9
-description: Learn about the new .NET SDK features introduced in .NET 9, including for unit testing, terminal logger, tool roll-forward, and build script analyzers.
+description: Learn about the new .NET SDK features introduced in .NET 9, including for unit testing, Terminal Logger, tool roll-forward, and build script analyzers.
 titleSuffix: ""
 ms.date: 11/11/2024
 ms.topic: whats-new
@@ -12,17 +12,17 @@ This article describes new features in the .NET SDK and tooling for .NET 9.
 
 ## Unit testing
 
-This section describes the updates to unit testing in .NET 9: running tests in parallel, and terminal logger test output.
+This section describes the updates to unit testing in .NET 9: running tests in parallel, and Terminal Logger test output.
 
 ### Run tests in parallel
 
 In .NET 9, `dotnet test` is more fully integrated with MSBuild. Because MSBuild supports [building in parallel](/visualstudio/msbuild/building-multiple-projects-in-parallel-with-msbuild), you can run tests for the same project across different target frameworks in parallel. By default, MSBuild limits the number of parallel processes to the number of processors on the computer. You can also set your own limit using the [-maxcpucount](/visualstudio/msbuild/building-multiple-projects-in-parallel-with-msbuild#-maxcpucount-switch) switch. If you want to opt out of the parallelism, set the `TestTfmsInParallel` MSBuild property to `false`.
 
-### Terminal logger test display
+### Terminal Logger test display
 
-Test result reporting for [`dotnet test`](../../tools/dotnet-test.md) is now supported directly in the MSBuild terminal logger. You get more fully featured test reporting both _while_ tests are running (displays the running test name) and _after_ tests are completed (any test errors are rendered in a better way).
+Test result reporting for [`dotnet test`](../../tools/dotnet-test.md) is now supported directly in MSBuild Terminal Logger. You get more fully featured test reporting both _while_ tests are running (displays the running test name) and _after_ tests are completed (any test errors are rendered in a better way).
 
-For more information about the terminal logger, see [dotnet build options](../../tools/dotnet-build.md#options).
+For more information about Terminal Logger, see [dotnet build options](../../tools/dotnet-build.md#options).
 
 ## .NET tool roll-forward
 
@@ -30,13 +30,13 @@ For more information about the terminal logger, see [dotnet build options](../..
 
 A new option for [`dotnet tool install`](../../tools/dotnet-tool-install.md) lets _users_ decide how .NET tools should be run. When you install a tool via `dotnet tool install`, or when you run tool via [`dotnet tool run <toolname>`](../../tools/dotnet-tool-run.md), you can specify a new flag called `--allow-roll-forward`. This option configures the tool with roll-forward mode `Major`. This mode allows the tool to run on a newer major version of .NET if the matching .NET version is not available. This feature helps early adopters use .NET tools without tool authors having to change any code.
 
-## Terminal logger
+## Terminal Logger
 
-The terminal logger is now [enabled by default](#enabled-by-default) and also has [improved usability](#usability).
+Terminal Logger is now [enabled by default](#enabled-by-default) and also has [improved usability](#usability).
 
 ### Enabled by default
 
-Starting in .NET 9, the default experience for all .NET CLI commands that use MSBuild is terminal logger, the enhanced logging experience that was released in .NET 8. This new output uses the capabilities of modern terminals to provide functionality like:
+Starting in .NET 9, the default experience for all .NET CLI commands that use MSBuild is Terminal Logger, the enhanced logging experience that was released in .NET 8. This new output uses the capabilities of modern terminals to provide functionality like:
 
 - Clickable links
 - Duration timers for MSBuild tasks
@@ -44,9 +44,9 @@ Starting in .NET 9, the default experience for all .NET CLI commands that use MS
 
 The output is more condensed and usable than the existing MSBuild console logger.
 
-The new logger attempts to auto-detect if it can be used, but you can also manually control whether terminal logger is used. Specify the `--tl:off` command-line option to disable terminal logger for a specific command. Or, to disable terminal logger more broadly, set the `MSBUILDTERMINALLOGGER` environment variable to `off`.
+The new logger attempts to auto-detect if it can be used, but you can also manually control whether Terminal Logger is used. Specify the `--tl:off` command-line option to disable Terminal Logger for a specific command. Or, to disable Terminal Logger more broadly, set the `MSBUILDTERMINALLOGGER` environment variable to `off`.
 
-The set of commands that uses terminal logger by default is:
+The set of commands that uses Terminal Logger by default is:
 
 - `build`
 - `clean`
@@ -58,7 +58,7 @@ The set of commands that uses terminal logger by default is:
 
 ### Usability
 
-The terminal logger now summarizes the total count of failures and warnings at the end of a build. It also shows errors that contain newlines. (For more information about the terminal logger, see ['dotnet build' options](../../tools/dotnet-build.md#options), specifically the `--tl` option.)
+Terminal Logger now summarizes the total count of failures and warnings at the end of a build. It also shows errors that contain newlines. (For more information about Terminal Logger, see ['dotnet build' options](../../tools/dotnet-build.md#options), specifically the `--tl` option.)
 
 Consider the following project file that emits a warning when the project is built:
 
@@ -109,7 +109,7 @@ Build succeeded with 3 warning(s) in 0.8s
 
 The message lines of the warning no longer have the repeated project and location information that clutter the display. In addition, the build summary shows how many warnings (and errors, if there are any) were generated during the build.
 
-If you have feedback about the terminal logger, you can provide it in the [MSBuild repository](https://github.com/dotnet/msbuild/issues).
+If you have feedback about Terminal Logger, you can provide it in the [MSBuild repository](https://github.com/dotnet/msbuild/issues).
 
 ## Faster NuGet dependency resolution for large repos
 

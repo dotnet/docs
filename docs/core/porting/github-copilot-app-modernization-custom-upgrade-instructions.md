@@ -37,7 +37,7 @@ To get started, follow these steps to create a new custom instructions file. Sta
 
 1. Right-click the solution file and choose **Modernize**
 
-    ![#Right click the solution file to run a custom upgrade instruction](./media/github-copilot-app-modernization-custom-upgrade-instructions/visualstudio-rightclick-solution.png)
+    ![#Right click the solution file to create a custom upgrade instruction](./media/github-copilot-app-modernization-custom-upgrade-instructions/visualstudio-rightclick-solution.png)
 
 2. Type `I want to generate a custom upgrade instruction` into the chat
 
@@ -69,7 +69,7 @@ Once the custom upgrade instruction is created you can run it directly. This is 
 
 1. Right-click the solution file and choose **Modernize**
 
-    ![#Right click the solution file to run a custom upgrade instruction](./media/github-copilot-app-modernization-custom-upgrade-instructions/visualstudio-rightclick-solution.png)
+    ![#Right click the solution file to test a custom upgrade instruction](./media/github-copilot-app-modernization-custom-upgrade-instructions/visualstudio-rightclick-solution.png)
 
 2. Type `Replace Newtonsoft with System.Text.Json` into the chat
 

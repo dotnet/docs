@@ -88,6 +88,7 @@ Summarize the breaking change. Include the major version (omit preview number).
 - **Create a pull request.**
   - In the description, include: `Fixes #<issue-number>` (replace with the correct number).
   - Request review on the pull request from the person who opened the issue.
+- Also check the relevant API docs, if applicable, and update them in the https://github.com/dotnet/dotnet-api-docs repo to reflect the breaking change.
 
 ---
 

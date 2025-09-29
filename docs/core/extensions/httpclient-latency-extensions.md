@@ -39,6 +39,7 @@ For more information, see [dotnet package add](../tools/dotnet-package-add.md) o
 ### Register HTTP client latency telemetry
 
 To add HTTP client latency telemetry to your application, call the `AddHttpClientLatencyTelemetry` extension method when configuring your services:
+
 ```csharp
 using Microsoft.Extensions.DependencyInjection;
 
@@ -50,11 +51,13 @@ builder.Services.AddHttpClient();
 // Add HTTP client latency telemetry
 builder.Services.AddHttpClientLatencyTelemetry();
 ```
+
 This registration adds a DelegatingHandler to all HTTP clients created through IHttpClientFactory, collecting detailed latency information for each request.
 
 ### Configure telemetry options
 
-You can customize how telemetry is collected by configuring the HttpClientLatencyTelemetryOptions:
+You can customize how telemetry is collected by configuring the `HttpClientLatencyTelemetryOptions`:
+
 ```csharp
 // Configure with delegate
 builder.Services.AddHttpClientLatencyTelemetry(options => 
@@ -66,6 +69,7 @@ builder.Services.AddHttpClientLatencyTelemetry(options =>
 builder.Services.AddHttpClientLatencyTelemetry(
 builder.Configuration.GetSection("HttpClientTelemetry"));
 ```
+
 ### Configuration options
 
 The `HttpClientLatencyTelemetryOptions` class offers the following settings:
@@ -145,6 +149,7 @@ public class ApiService
     }
 }
 ```
+
 ### Platform considerations
 
 HTTP client latency telemetry works across all supported .NET platforms with the following considerations:

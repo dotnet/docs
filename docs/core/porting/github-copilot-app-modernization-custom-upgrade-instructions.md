@@ -30,7 +30,7 @@ To get started, follow these steps to create a new custom instructions file. Sta
 
 1. Right-click the solution file and choose **Modernize**
 
-    ![#Right click the solution file](./media/github-copilot-app-modernization-custom-upgrade-instructions/VS-RightClickSolution.png)
+    ![#Right click the solution file to run a custom upgrade instruction](./media/github-copilot-app-modernization-custom-upgrade-instructions/VS-RightClickSolution.png)
 
 2. Type `I want to generate a custom upgrade instruction` into the chat
 
@@ -62,7 +62,7 @@ Once the custom upgrade instruction is created you can run it directly. This is 
 
 1. Right-click the solution file and choose **Modernize**
 
-    ![#Right click the solution file](./media/github-copilot-app-modernization-custom-upgrade-instructions/VS2026-RightClickSolution.png)
+    ![#Right click the solution file to run a custom upgrade instruction](./media/github-copilot-app-modernization-custom-upgrade-instructions/VS2026-RightClickSolution.png)
 
 2. Type `Replace Newtonsoft with System.Text.Json` into the chat
 
@@ -88,7 +88,7 @@ When you need to repeatedly run a custom upgrade instruction, or need to run it 
 
 1. Right-click the solution file and choose **Modernize**
 
-    ![#Right click the solution file](./media/github-copilot-app-modernization-custom-upgrade-instructions/VS2026-RightClickSolution.png)
+    ![#Right click the solution file to apply custom upgrade instructions while upgrading to a newer version of .NET](./media/github-copilot-app-modernization-custom-upgrade-instructions/VS2026-RightClickSolution.png)
 
 2. Choose **Upgrade to a newer version of .NET** and generate a plan file
 

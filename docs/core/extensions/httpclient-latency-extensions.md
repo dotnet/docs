@@ -1,21 +1,39 @@
 ---
 title: Use the HttpClientLatency
-description: Learn how to use the HttpClientLatency implementations with dependency injection in your .NET workloads.
+description: Learn how to use the HttpClientLatency with dependency injection in your .NET workloads.
 author: IEvangelist
 ms.author: dapine
-ms.date: 29/09/2025
+ms.date: 09/29/2025
 ---
 
 # HTTP client latency telemetry in .NET
 
+### Get started
+
 When building applications that communicate with other services over HTTP, understanding the performance characteristics
-of those HTTP operations is essential. The AddHttpClientLatencyTelemetry extension method provides a way to collect 
+of those HTTP operations is essential. The `AddHttpClientLatencyTelemetry` extension method provides a way to collect 
 detailed timing information about HTTP requests without requiring changes to your application code.
 HTTP client latency telemetry integrates with the existing IHttpClientFactory system to:
 * Collect timing data for different stages of HTTP requests
 * Track HTTP protocol information used for requests
 * Measure garbage collection impact during HTTP operations (on .NET platforms that support it)
 * Provide consistent telemetry data for performance analysis
+
+### [.NET CLI](#tab/dotnet-cli)
+
+```dotnetcli
+dotnet add package Microsoft.Extensions.Http.Diagnostics --version 10.0.0
+```
+
+### [PackageReference](#tab/package-reference)
+
+```xml
+<PackageReference Include="Microsoft.Extensions.Http.Diagnostics" Version="10.0.0" />
+```
+
+---
+
+For more information, see [dotnet package add](../tools/dotnet-package-add.md) or [Manage package dependencies in .NET applications](../tools/dependencies.md).
 
 ### Register HTTP client latency telemetry
 To add HTTP client latency telemetry to your application, call the `AddHttpClientLatencyTelemetry` extension method when configuring your services:
@@ -54,20 +72,19 @@ When HTTP client latency telemetry is enabled, the following information is coll
 #### Timing checkpoints
 
 Timestamps are recorded for key stages of the HTTP request lifecycle:
-• DNS resolution (Http.NameResolutionStart, Http.NameResolutionEnd)
-• Socket connection (Http.SocketConnectStart, Http.SocketConnectEnd)
-• Connection establishment (Http.ConnectionEstablished)
-• Request headers (Http.RequestHeadersStart, Http.RequestHeadersEnd)
-• Request content (Http.RequestContentStart, Http.RequestContentEnd)
-• Response headers (Http.ResponseHeadersStart, Http.ResponseHeadersEnd)
-• Response content (Http.ResponseContentStart, Http.ResponseContentEnd)
+* DNS resolution (Http.NameResolutionStart, Http.NameResolutionEnd)
+* Socket connection (Http.SocketConnectStart, Http.SocketConnectEnd)
+* Connection establishment (Http.ConnectionEstablished)
+* Request headers (Http.RequestHeadersStart, Http.RequestHeadersEnd)
+* Request content (Http.RequestContentStart, Http.RequestContentEnd)
+* Response headers (Http.ResponseHeadersStart, Http.ResponseHeadersEnd)
+* Response content (Http.ResponseContentStart, Http.ResponseContentEnd)
 #### Measures
 On supported platforms:
-• Http.GCPauseTime - Records garbage collection pause duration during HTTP operations
-• Http.ConnectionInitiated - Indicates when a new connection is established
+* Http.GCPauseTime - Records garbage collection pause duration during HTTP operations
+* Http.ConnectionInitiated - Indicates when a new connection is established
 #### Tags
-• Http.Version - Records the HTTP protocol version used for the request
-
+* Http.Version - Records the HTTP protocol version used for the request
 ### Accessing telemetry data
 
 The collected telemetry data can be accessed through the standard `ILatencyContextAccessor`:
@@ -119,6 +136,6 @@ public class ApiService
 ```
 ### Platform considerations
 HTTP client latency telemetry works across all supported .NET platforms with the following considerations:
-• Core timing metrics are available on all platforms (.NET 9, .NET 8, .NET Standard 2.0, .NET Framework 4.6.2)
-• Garbage collection metrics (Http.GCPauseTime) are only available on .NET 8 and .NET 9
-• The implementation automatically adapts to the capabilities of the target platform
+* Core timing metrics are available on all platforms (.NET 9, .NET 8, .NET Standard 2.0, .NET Framework 4.6.2)
+* Garbage collection metrics (Http.GCPauseTime) are only available on .NET 8 and .NET 9
+* The implementation automatically adapts to the capabilities of the target platform

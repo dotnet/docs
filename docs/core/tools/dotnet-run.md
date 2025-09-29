@@ -15,11 +15,10 @@ ms.date: 09/29/2025
 
 ```dotnetcli
 dotnet run [<applicationArguments>]
-    [-a|--arch <ARCHITECTURE>] [--artifacts-path <ARTIFACTS_DIR>] [-c|--configuration <CONFIGURATION>]
-    [-e|--environment <KEY=VALUE>] [--file <FILE_PATH>] [-f|--framework <FRAMEWORK>] [--force] [--interactive]
-    [--launch-profile <NAME>] [--no-build] [--no-dependencies] [--no-launch-profile] [--no-restore]
-    [--os <OS>] [--project <PATH>] [-r|--runtime <RUNTIME_IDENTIFIER>] [--tl:[auto|on|off]] [-v|--verbosity <LEVEL>]
-    [[--] [application arguments]]
+  [-a|--arch <ARCHITECTURE>] [--artifacts-path <ARTIFACTS_DIR>] [-c|--configuration <CONFIGURATION>]
+  [-e|--environment <KEY=VALUE>] [--file <FILE_PATH>] [-f|--framework <FRAMEWORK>] [--force] [--interactive]
+  [--launch-profile <NAME>] [--no-build] [--no-dependencies] [--no-launch-profile] [--no-restore]
+  [--os <OS>] [--project <PATH>] [-r|--runtime <RUNTIME_IDENTIFIER>] [--tl:[auto|on|off]] [-v|--verbosity <LEVEL>] [[--] [application arguments]]
 
 dotnet run -h|--help
 ```

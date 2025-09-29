@@ -14,14 +14,12 @@ ms.date: 09/29/2025
 ## Synopsis
 
 ```dotnetcli
-dotnet restore [<PROJECT>|<SOLUTION>|<FILE>] [--configfile <FILE>] [--disable-build-servers]
-    [--disable-parallel]
-    [-f|--force] [--force-evaluate] [--ignore-failed-sources]
-    [--interactive] [--lock-file-path <LOCK_FILE_PATH>] [--locked-mode] [--no-http-cache]
-    [--no-cache] [--no-dependencies] [--packages <PACKAGES_DIRECTORY>]
-    [-r|--runtime <RUNTIME_IDENTIFIER>] [-s|--source <SOURCE>]
-    [--tl:[auto|on|off]] [--use-current-runtime, --ucr [true|false]]
-    [--use-lock-file] [-a|--arch <ARCHITECTURE>] [--os <OS>] [-v|--verbosity <LEVEL>]
+dotnet restore [<PROJECT>|<SOLUTION>|<FILE>]
+  [--configfile <FILE>] [--disable-build-servers]
+  [--disable-parallel] [-f|--force] [--force-evaluate] [--ignore-failed-sources] [--interactive] [--lock-file-path <LOCK_FILE_PATH>] [--locked-mode] [--no-http-cache]
+  [--no-cache] [--no-dependencies] [--packages <PACKAGES_DIRECTORY>]
+  [-r|--runtime <RUNTIME_IDENTIFIER>] [-s|--source <SOURCE>]
+  [--tl:[auto|on|off]] [--use-current-runtime, --ucr [true|false]] [--use-lock-file] [-a|--arch <ARCHITECTURE>] [--os <OS>] [-v|--verbosity <LEVEL>]
 
 dotnet restore -h|--help
 ```

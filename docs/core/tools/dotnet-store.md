@@ -15,10 +15,10 @@ ms.date: 09/29/2025
 
 ```dotnetcli
 dotnet store [-m|--manifest <PATH_TO_MANIFEST_FILE>]
-    [-f|--framework <FRAMEWORK_VERSION>] [--disable-build-servers] [-r|--runtime <RUNTIME_IDENTIFIER>]
-    [--framework-version <FRAMEWORK_VERSION>] [--output <OUTPUT_DIRECTORY>]
-    [--skip-optimization] [--skip-symbols] [-ucr|--use-current-runtime] [-v|--verbosity <LEVEL>]
-    [--working-dir <WORKING_DIRECTORY>]
+  [-f|--framework <FRAMEWORK_VERSION>] [--disable-build-servers] [-r|--runtime <RUNTIME_IDENTIFIER>]
+  [--framework-version <FRAMEWORK_VERSION>] [--output <OUTPUT_DIRECTORY>]
+  [--skip-optimization] [--skip-symbols] [-ucr|--use-current-runtime] [-v|--verbosity <LEVEL>]
+  [--working-dir <WORKING_DIRECTORY>]
 
 dotnet store -h|--help
 ```

@@ -15,7 +15,7 @@ ms.date: 09/29/2025
 
 ```dotnetcli
 dotnet format [<PROJECT | SOLUTION>]
-    [--diagnostics <DIAGNOSTICS>] [--exclude-diagnostics <EXCLUDE-DIAGNOSTICS>] [--severity <SEVERITY>] [--no-restore] [--verify-no-changes] [--include <INCLUDE>] [--exclude <EXCLUDE>] [--include-generated] [-v|--verbosity <LEVEL>] [--binarylog <BINARY-LOG-PATH>] [--report <REPORT-PATH>] [--version]
+  [--diagnostics <DIAGNOSTICS>] [--exclude-diagnostics <EXCLUDE-DIAGNOSTICS>] [--severity <SEVERITY>] [--no-restore] [--verify-no-changes] [--include <INCLUDE>] [--exclude <EXCLUDE>] [--include-generated] [-v|--verbosity <LEVEL>] [--binarylog <BINARY-LOG-PATH>] [--report <REPORT-PATH>] [--version]
 
 dotnet format -h|--help
 ```

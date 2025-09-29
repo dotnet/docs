@@ -3,7 +3,7 @@ title: GitHub Copilot app modernization custom upgrade instructions
 description: "Learn more about GitHub Copilot app modernization custom upgrade instructions. Custom upgrade instructions allow you to give Copilot more context so that it can automate more changes."
 titleSuffix: ""
 author: kschlobohm
-ms.author: kschlobohm
+ms.author: adegeo
 ms.topic: overview
 ms.date: 09/29/2025
 

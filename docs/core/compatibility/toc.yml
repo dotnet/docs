@@ -484,6 +484,8 @@ items:
                 href: sdk/8.0/dotnet-publish-config.md
               - name: "'dotnet restore' produces security vulnerability warnings"
                 href: sdk/8.0/dotnet-restore-audit.md
+              - name: New warning introduced in dotnet list package command
+                href: sdk/8.0/dotnet-list-package-audit-source-warning.md
               - name: Duplicate output for -getItem, -getProperty, and -getTargetResult
                 href: sdk/8.0/getx-duplicate-output.md
               - name: Implicit `using` for System.Net.Http no longer added

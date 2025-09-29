@@ -115,11 +115,10 @@ struct SystemTime
     public ushort Millisecond;
 }
 
-public static void Main(string[] args)
+public static void Main()
 {
-    SystemTime st = new SystemTime();
-    GetSystemTime(st);
-    Console.WriteLine(st.Year);
+    GetSystemTime(out SystemTime systemTime);
+    Console.WriteLine(systemTime.Year);
 }
 ```
 

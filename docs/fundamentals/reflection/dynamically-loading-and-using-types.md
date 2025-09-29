@@ -5,14 +5,12 @@ ms.date: "03/30/2017"
 dev_langs:
   - "csharp"
   - "vb"
-  - "cpp"
 helpviewer_keywords:
   - "late binding, about late binding"
   - "early binding"
   - "dynamically loading and using types"
   - "implicit late binding"
   - "reflection, dynamically using types"
-ms.assetid: db985bec-5942-40ec-b13a-771ae98623dc
 ---
 # Dynamically load and use types
 
@@ -44,7 +42,6 @@ Using custom binding, you can load an assembly at run time, obtain information a
 
 The following example demonstrates a simple custom binder that provides no argument type conversion. Code for `Simple_Type.dll` precedes the main example. Be sure to build `Simple_Type.dll` and then include a reference to it in the project at build time.
 
-[!code-cpp[Conceptual.Types.Dynamic#1](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.types.dynamic/cpp/source1.cpp#1)]
 [!code-csharp[Conceptual.Types.Dynamic#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.types.dynamic/cs/source1.cs#1)]
 [!code-vb[Conceptual.Types.Dynamic#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.types.dynamic/vb/source1.vb#1)]
 
@@ -54,7 +51,6 @@ Use <xref:System.Type.InvokeMember%2A?displayProperty=nameWithType> to invoke a 
 
 The following example shows the three possible combinations of argument coercion (type conversion) and member selection. In Case 1, no argument coercion or member selection is needed. In Case 2, only member selection is needed. In Case 3, only argument coercion is needed.
 
-[!code-cpp[Conceptual.Types.Dynamic#2](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.types.dynamic/cpp/source2.cpp#2)]
 [!code-csharp[Conceptual.Types.Dynamic#2](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.types.dynamic/cs/source2.cs#2)]
 [!code-vb[Conceptual.Types.Dynamic#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.types.dynamic/vb/source2.vb#2)]
 

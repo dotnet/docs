@@ -1,18 +1,17 @@
 ---
 ms.date: 2/21/2025
 ms.topic: include
-ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 author: alexwolfmsft
 ms.author: alexwolf
 ---
 
 ## Prerequisites
 
-* .NET 9.0 SDK - [Install the .NET 9.0 SDK](https://dotnet.microsoft.com/download)
-* Visual Studio 2022 - [Install Visual Studio 2022](https://visualstudio.microsoft.com/) (optional), or
-* Visual Studio Code - [Install Visual Studio Code](https://code.visualstudio.com) (optional)
-  * With the C# DevKit - [Install C# Dev Kit extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit)
-* Access to an [OpenAI service](https://openai.com/api/) and the corresponding API key.
+* [.NET 9.0 SDK](https://dotnet.microsoft.com/download)
+* Access to an [OpenAI service](https://openai.com/api/) and the corresponding API key
+* One of the following IDEs (optional):
+  * [Visual Studio 2022](https://visualstudio.microsoft.com/)
+  * [Visual Studio Code](https://code.visualstudio.com) with [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit)
 
 ## Install the .NET AI app template
 
@@ -53,7 +52,7 @@ After you install the AI app templates, you can use them to create starter apps 
 1. Create a new app with the `dotnet new` command and the following parameters:
 
     ```dotnetcli
-    dotnet new aichatweb --framework "net9.0" --AiServiceProvider "openai" --VectorStore "local"
+    dotnet new aichatweb --Framework net9.0 --provider openai --vector-store local
     ```
 
     The .NET CLI creates a new .NET 9.0 app with the configurations you specified.
@@ -82,14 +81,14 @@ The **AI Chat Web App** app is almost ready to go as soon as it's created. Howev
 
     ```json
     {
-        "OpenAi:Key": "<your-openai-key>"
+        "OpenAi:Key": "<your-OpenAI-key>"
     }
     ```
 
 # [.NET CLI](#tab/configure-dotnet-cli)
 
 ```dotnetcli
-dotnet user-secrets set OpenAi:Key <your-openai-key>
+dotnet user-secrets set OpenAi:Key <your-OpenAI-key>
 ```
 
 ---

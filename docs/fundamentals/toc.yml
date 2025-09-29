@@ -13,6 +13,7 @@ items:
         items:
           - name: Overview
             href: ../core/install/index.yml
+            displayName: install
           - name: Install on Windows
             href: ../core/install/windows.md
           - name: Install on macOS
@@ -21,29 +22,40 @@ items:
             items:
               - name: Overview
                 href: ../core/install/linux.md
+                displayName: linux
               - name: Ubuntu
+                expanded: true
                 items:
-                  - name: Overview
-                    href: ../core/install/linux-ubuntu.md
                   - name: Install
                     href: ../core/install/linux-ubuntu-install.md
+                    displayName: ubuntu
+                  - name: Decision guide
+                    href: ../core/install/linux-ubuntu-decision.md
+                    displayName: ubuntu
               - name: Alpine
                 href: ../core/install/linux-alpine.md
+                displayName: linux
               - name: CentOS Stream
                 href: ../core/install/linux-rhel.md#supported-distributions
+                displayName: linux
               - name: Debian
                 href: ../core/install/linux-debian.md
+                displayName: linux
               - name: Fedora
                 href: ../core/install/linux-fedora.md
+                displayName: linux
               - name: OpenSUSE
                 href: ../core/install/linux-opensuse.md
+                displayName: linux
               - name: Red Hat Enterprise Linux
                 href: ../core/install/linux-rhel.md
               - name: SLES
                 href: ../core/install/linux-sles.md
+                displayName: linux
               - name: Installation script & binaries
                 href: ../core/install/linux-scripted-manual.md
               - name: Install with Snap
+                expanded: true
                 items:
                   - name: Runtime
                     href: ../core/install/linux-snap-runtime.md
@@ -61,8 +73,6 @@ items:
             href: ../core/install/linux-package-mixup.md
           - name: How to check .NET versions
             href: ../core/install/how-to-detect-installed-versions.md
-          - name: Install localized IntelliSense
-            href: ../core/install/localized-intellisense.md
   - name: Overview
     items:
       - name: Introduction to .NET
@@ -922,22 +932,25 @@ items:
             href: ../standard/commandline/index.md
           - name: Get started tutorial
             href: ../standard/commandline/get-started-tutorial.md
-          - name: Command-line syntax
+          - name: Command-line syntax overview
             href: ../standard/commandline/syntax.md
-          - name: Define commands
-            href: ../standard/commandline/define-commands.md
-          - name: Model binding
-            href: ../standard/commandline/model-binding.md
-          - name: Tab completion
-            href: ../standard/commandline/tab-completion.md
-          - name: Dependency injection
-            href: ../standard/commandline/dependency-injection.md
-          - name: Customize help
-            href: ../standard/commandline/customize-help.md
-          - name: Handle termination
-            href: ../standard/commandline/handle-termination.md
-          - name: Use middleware
-            href: ../standard/commandline/use-middleware.md
+          - name: How to
+            expanded: true
+            items:
+            - name: Parse and invoke the result
+              href: ../standard/commandline/how-to-parse-and-invoke.md
+            - name: Customize parsing and validation
+              href: ../standard/commandline/how-to-customize-parsing-and-validation.md
+            - name: Configure the parser
+              href: ../standard/commandline/how-to-configure-the-parser.md
+            - name: Enable and customize tab completion
+              href: ../standard/commandline/how-to-enable-tab-completion.md
+            - name: Customize help
+              href: ../standard/commandline/how-to-customize-help.md
+          - name: Design guidance
+            href: ../standard/commandline/design-guidance.md
+          - name: Migration guide to 2.0.0-beta5
+            href: ../standard/commandline/migration-guide-2.0.0-beta5.md
       - name: File and stream I/O
         items:
           - name: Overview
@@ -1027,7 +1040,7 @@ items:
         href: runtime-libraries/system-random.md
       - name: Artificial intelligence (AI)
         displayName: microsoft.extensions.ai,ollama,ai,openai,azure inference,ichatclient
-        href: ../core/extensions/artificial-intelligence.md
+        href: ../ai/microsoft-extensions-ai.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
       - name: Dependency injection
         items:
           - name: Overview
@@ -1084,6 +1097,10 @@ items:
           - name: High-performance logging
             href: ../core/extensions/high-performance-logging.md
             displayName: high-performance logging,high-performance log,high-performance logging provider,high-performance log provider
+          - name: Log Sampling
+            href: ../core/extensions/log-sampling.md
+          - name: Log Buffering
+            href: ../core/extensions/log-buffering.md
           - name: Console log formatting
             href: ../core/extensions/console-log-formatter.md
             displayName: console log formatting,console log formatter,console log formatting provider,console log formatter provider

@@ -8,7 +8,7 @@ ms.date: 08/26/2024
 
 # Output extensions
 
-This article list and explains all **Microsoft Testing Platform** extensions related to the terminal output.
+This article lists and explains all Microsoft.Testing.Platform extensions related to the terminal output.
 
 ## Terminal test reporter
 

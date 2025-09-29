@@ -31,7 +31,7 @@ namespace CustomConverterHandleNull
 
     public class Program
     {
-        public static void Main()
+        public static void Run()
         {
             string json = @"{""x"":1,""y"":2,""Description"":null}";
 

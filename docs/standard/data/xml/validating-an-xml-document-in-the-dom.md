@@ -5,10 +5,8 @@ ms.date: "03/30/2017"
 dev_langs:
   - "csharp"
   - "vb"
-  - "cpp"
-ms.assetid: 2c61c920-d0f8-4c72-bfcc-6524570f3060
 ---
-# Validating an XML Document in the DOM
+# Validate an XML document in the DOM
 
 The<xref:System.Xml.XmlDocument> class does not validate the XML in the Document Object Model (DOM) against an XML Schema definition language (XSD) schema or document type definition (DTD) by default; the XML is only verified to be well-formed.
 
@@ -37,8 +35,6 @@ To create an XML schema-validating <xref:System.Xml.XmlReader>, follow these ste
 ### Example
 
 In the code example that follows, a schema-validating <xref:System.Xml.XmlReader> validates the XML data loaded into the DOM. Invalid modifications are made to the XML document and the document is then revalidated, causing schema validation errors. Finally, one of the errors is corrected, and then part of the XML document is partially validated.
-
-[!code-cpp[XmlDocumentValidation.Load#1](../../../../samples/snippets/cpp/VS_Snippets_Data/XmlDocumentValidation.Load/CPP/XmlDocumentValidationExample.cpp#1)]
 [!code-csharp[XmlDocumentValidation.Load#1](../../../../samples/snippets/csharp/VS_Snippets_Data/XmlDocumentValidation.Load/CS/XmlDocumentValidationExample.cs#1)]
 [!code-vb[XmlDocumentValidation.Load#1](../../../../samples/snippets/visualbasic/VS_Snippets_Data/XmlDocumentValidation.Load/VB/XmlDocumentValidationExample.vb#1)]
 

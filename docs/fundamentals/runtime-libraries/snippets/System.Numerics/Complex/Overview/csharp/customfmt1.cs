@@ -15,17 +15,16 @@ public class ComplexFormatter : IFormatProvider, ICustomFormatter
     public string Format(string format, object arg,
                          IFormatProvider provider)
     {
-        if (arg is Complex)
+        if (arg is Complex c1)
         {
-            Complex c1 = (Complex)arg;
             // Check if the format string has a precision specifier.
             int precision;
-            string fmtString = String.Empty;
+            string fmtString = string.Empty;
             if (format.Length > 1)
             {
                 try
                 {
-                    precision = Int32.Parse(format.Substring(1));
+                    precision = int.Parse(format.Substring(1));
                 }
                 catch (FormatException)
                 {
@@ -34,20 +33,30 @@ public class ComplexFormatter : IFormatProvider, ICustomFormatter
                 fmtString = "N" + precision.ToString();
             }
             if (format.Substring(0, 1).Equals("I", StringComparison.OrdinalIgnoreCase))
-                return c1.Real.ToString(fmtString) + " + " + c1.Imaginary.ToString(fmtString) + "i";
+            {
+                // Determine the sign to display.
+                char sign = c1.Imaginary < 0 ? '-' : '+';
+                // Display the determined sign and the absolute value of the imaginary part.
+                return c1.Real.ToString(fmtString) + " " + sign + " " + Math.Abs(c1.Imaginary).ToString(fmtString) + "i";
+            }
             else if (format.Substring(0, 1).Equals("J", StringComparison.OrdinalIgnoreCase))
-                return c1.Real.ToString(fmtString) + " + " + c1.Imaginary.ToString(fmtString) + "j";
+            {
+                // Determine the sign to display.
+                char sign = c1.Imaginary < 0 ? '-' : '+';
+                // Display the determined sign and the absolute value of the imaginary part.
+                return c1.Real.ToString(fmtString) + " " + sign + " " + Math.Abs(c1.Imaginary).ToString(fmtString) + "j";
+            }
             else
                 return c1.ToString(format, provider);
         }
         else
         {
-            if (arg is IFormattable)
-                return ((IFormattable)arg).ToString(format, provider);
+            if (arg is IFormattable formattable)
+                return formattable.ToString(format, provider);
             else if (arg != null)
                 return arg.ToString();
             else
-                return String.Empty;
+                return string.Empty;
         }
     }
 }
@@ -56,22 +65,21 @@ public class ComplexFormatter : IFormatProvider, ICustomFormatter
 // <Snippet4>
 public class CustomFormatEx
 {
-    public static void Main()
+    public static void Run()
     {
-        Complex c1 = new Complex(12.1, 15.4);
-        Console.WriteLine("Formatting with ToString():       " +
-                          c1.ToString());
-        Console.WriteLine("Formatting with ToString(format): " +
-                          c1.ToString("N2"));
-        Console.WriteLine("Custom formatting with I0:        " +
-                          String.Format(new ComplexFormatter(), "{0:I0}", c1));
-        Console.WriteLine("Custom formatting with J3:        " +
-                          String.Format(new ComplexFormatter(), "{0:J3}", c1));
+        Complex c1 = new(12.1, 15.4);
+        Console.WriteLine($"Formatting with ToString:         {c1}");
+        Console.WriteLine($"Formatting with ToString(format): {c1:N2}");
+        Console.WriteLine($"Custom formatting with I0:\t" +
+            $"  {string.Format(new ComplexFormatter(), "{0:I0}", c1)}");
+        Console.WriteLine($"Custom formatting with J3:\t" +
+            $"  {string.Format(new ComplexFormatter(), "{0:J3}", c1)}");
     }
 }
+
 // The example displays the following output:
-//    Formatting with ToString():       (12.1, 15.4)
-//    Formatting with ToString(format): (12.10, 15.40)
+//    Formatting with ToString():       <12.1; 15.4>
+//    Formatting with ToString(format): <12.10; 15.40>
 //    Custom formatting with I0:        12 + 15i
 //    Custom formatting with J3:        12.100 + 15.400j
 // </Snippet4>

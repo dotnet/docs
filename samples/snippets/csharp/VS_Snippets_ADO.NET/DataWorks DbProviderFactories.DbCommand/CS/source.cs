@@ -32,7 +32,7 @@ static class Program
                 // Handle data errors.
                 catch (DbException exDb)
                 {
-                    Console.WriteLine("DbException.GetType: {0}", exDb.GetType());
+                    Console.WriteLine($"DbException.GetType: {exDb.GetType()}");
                     Console.WriteLine($"DbException.Source: {exDb.Source}");
                     Console.WriteLine($"DbException.ErrorCode: {exDb.ErrorCode}");
                     Console.WriteLine($"DbException.Message: {exDb.Message}");

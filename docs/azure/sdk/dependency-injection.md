@@ -3,7 +3,7 @@ title: Dependency injection with the Azure SDK for .NET
 description: Learn how to use dependency injection with the Azure SDK for .NET client libraries.
 ms.topic: how-to
 ms.custom: devx-track-dotnet, engagement-fy23
-ms.date: 07/21/2023
+ms.date: 04/25/2025
 ---
 
 # Dependency injection with the Azure SDK for .NET

@@ -1,4 +1,4 @@
-﻿// <snippet1>
+// <snippet1>
 using System;
 using System.IO;
 using System.Linq;
@@ -48,8 +48,7 @@ class DataflowExecutionBlocks
       // the number of bytes read.
       var printResult = new ActionBlock<int>(zeroBytesRead =>
       {
-         Console.WriteLine("{0} contains {1} zero bytes.",
-            Path.GetFileName(tempFile), zeroBytesRead);
+         Console.WriteLine($"{Path.GetFileName(tempFile)} contains {zeroBytesRead} zero bytes.");
       });
 
       // Create a TransformBlock<string, int> object that calls the

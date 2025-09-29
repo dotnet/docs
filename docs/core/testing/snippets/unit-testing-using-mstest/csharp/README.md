@@ -1,6 +1,6 @@
 # Unit testing using MSTest sample
 
-This sample is part of the [unit testing tutorial](https://learn.microsoft.com/dotnet/core/testing/unit-testing-with-mstest) for creating applications with unit tests included. See that topic for detailed steps on the code for this sample.
+This sample is part of the [unit testing tutorial](https://learn.microsoft.com/dotnet/core/testing/unit-testing-csharp-with-mstest) for creating applications with unit tests included. See that topic for detailed steps on the code for this sample.
 
 ## Key features
 

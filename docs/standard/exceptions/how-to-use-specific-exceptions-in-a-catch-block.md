@@ -2,15 +2,13 @@
 description: "Learn more about: How to use specific exceptions in a catch block"
 title: "How to: Use Specific Exceptions in a Catch Block"
 ms.date: "03/30/2017"
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-  - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "exceptions, try/catch blocks"
   - "try/catch blocks"
   - "catch blocks"
-ms.assetid: 12af9ff3-8587-4f31-90cf-6c2244e0fdae
 ---
 # How to use specific exceptions in a catch block
 
@@ -20,7 +18,6 @@ When an exception occurs, it is passed up the stack and each catch block is give
 
 The following code example uses a `try`/`catch` block to catch an <xref:System.InvalidCastException>. The sample creates a class called `Employee` with a single property, employee level (`Emlevel`). A method, `PromoteEmployee`, takes an object and increments the employee level. An <xref:System.InvalidCastException> occurs when a <xref:System.DateTime> instance is passed to the `PromoteEmployee` method.
 
-:::code language="cpp" source="./snippets/how-to-use-specific-exceptions-in-a-catch-block/cpp/catchexception.cpp" id="Snippet2":::
 :::code language="csharp" source="./snippets/how-to-use-specific-exceptions-in-a-catch-block/csharp/catchexception.cs" id="Snippet2":::
 :::code language="vb" source="./snippets/how-to-use-specific-exceptions-in-a-catch-block/vb/catchexception.vb" id="Snippet2":::
 

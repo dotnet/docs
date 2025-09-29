@@ -17,7 +17,11 @@ Use the `static` modifier to declare a static member, which belongs to the type 
 
 You can add the `static` modifier to a [local function](../../programming-guide/classes-and-structs/local-functions.md). A static local function can't capture local variables or instance state.
 
+[!code-csharp[csrefKeywordsModifiers#28](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsModifiers/CS/csrefKeywordsModifiers.cs#28)]
+
 You can add the `static` modifier to a [lambda expression](../operators/lambda-expressions.md) or [anonymous method](../operators/delegate-operator.md). A static lambda or anonymous method can't capture local variables or instance state.
+
+[!code-csharp[csrefKeywordsModifiers#29](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsModifiers/CS/csrefKeywordsModifiers.cs#29)]
 
 ## Example - static class
 
@@ -35,7 +39,7 @@ To refer to the `static` member `x`, use the fully qualified name, `MyBaseC.MySt
 Console.WriteLine(MyBaseC.MyStruct.x);
 ```
 
-While an instance of a class contains a separate copy of all instance fields of the class, there's only one copy of each `static` field.
+While an instance of a class contains a separate copy of all instance fields of the class, there's only one copy of each `static` field. For generic types, each closed generic type has its own copy of static fields. Static fields marked with <xref:System.ThreadStaticAttribute> have one copy per thread.
 
 It isn't possible to use [`this`](this.md) to reference `static` methods or property accessors.
 

@@ -3,7 +3,7 @@ title: Use the IHttpClientFactory
 description: Learn how to use the HttpClient and IHttpClientFactory implementations with dependency injection in your .NET workloads.
 author: IEvangelist
 ms.author: dapine
-ms.date: 08/13/2024
+ms.date: 05/06/2025
 ---
 
 # IHttpClientFactory with .NET
@@ -12,8 +12,9 @@ In this article, you'll learn how to use the `IHttpClientFactory` interface to c
 
 With modern application development principles driving best practices, the <xref:System.Net.Http.IHttpClientFactory> serves as a factory abstraction that can create `HttpClient` instances with custom configurations. <xref:System.Net.Http.IHttpClientFactory> was introduced in .NET Core 2.1. Common HTTP-based .NET workloads can take advantage of resilient and transient-fault-handling third-party middleware with ease.
 
-> [!NOTE]
-> If your app requires cookies, it might be better to avoid using <xref:System.Net.Http.IHttpClientFactory> in your app. For alternative ways of managing clients, see [Guidelines for using HTTP clients](../../fundamentals/networking/http/httpclient-guidelines.md).
+> [!WARNING]
+> If your app requires cookies, it's recommended to avoid using <xref:System.Net.Http.IHttpClientFactory>. Pooling the <xref:System.Net.Http.HttpMessageHandler> instances results in sharing of <xref:System.Net.CookieContainer> objects. Unanticipated <xref:System.Net.CookieContainer> sharing might leak cookies between unrelated parts of the application. Moreover, when <xref:Microsoft.Extensions.Http.HttpClientFactoryOptions.HandlerLifetime> expires, the handler is recycled, meaning that all cookies stored in its <xref:System.Net.CookieContainer> are lost.
+> For alternative ways of managing clients, see [Guidelines for using HTTP clients](../../fundamentals/networking/http/httpclient-guidelines.md).
 
 > [!IMPORTANT]
 > Lifetime management of `HttpClient` instances created by `IHttpClientFactory` is completely different from instances created manually. The strategies are to use either **short-lived** clients created by `IHttpClientFactory` or **long-lived** clients with `PooledConnectionLifetime` set up. For more information, see the [HttpClient lifetime management](#httpclient-lifetime-management) section and [Guidelines for using HTTP clients](../../fundamentals/networking/http/httpclient-guidelines.md).
@@ -184,7 +185,7 @@ The following example shows an HTTP `DELETE` request:
 
 :::code source="snippets/http/basic/ItemService.cs" id="Delete":::
 
-In the preceding code, the `DeleteItemAsync` method calls <xref:System.Net.Http.HttpClient.DeleteAsync%2A>. Because HTTP DELETE requests typically contain no body, the `DeleteAsync` method doesn't provide an overload that accepts an instance of `HttpContent`.
+In the preceding code, the `DeleteItemAsync` method calls <xref:System.Net.Http.HttpClient.DeleteAsync%2A>. Because HTTP `DELETE` requests typically contain no body, the `DeleteAsync` method doesn't provide an overload that accepts an instance of `HttpContent`.
 
 To learn more about using different HTTP verbs with `HttpClient`, see <xref:System.Net.Http.HttpClient>.
 
@@ -196,7 +197,7 @@ A new `HttpClient` instance is returned each time `CreateClient` is called on th
 
 Caching of handlers is desirable as each handler typically manages its own underlying HTTP connection pool. Creating more handlers than necessary can result in socket exhaustion and connection delays. Some handlers also keep connections open indefinitely, which can prevent the handler from reacting to DNS changes.
 
-The default handler lifetime is two minutes. To override the default value, call <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.SetHandlerLifetime%2A> for each client, on the `IServiceCollection`:
+The default handler lifetime is two minutes. To override the default value, call <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.SetHandlerLifetime%2A> for each client, on the `IHttpClientBuilder` when registering `IHttpClientFactory` in the `ServiceCollection`:
 
 ```csharp
 services.AddHttpClient("Named.Client")
@@ -206,7 +207,7 @@ services.AddHttpClient("Named.Client")
 > [!IMPORTANT]
 > `HttpClient` instances created by `IHttpClientFactory` are intended to be **short-lived**.
 >
-> - Recycling and recreating `HttpMessageHandler`'s when their lifetime expires is essential for `IHttpClientFactory` to ensure the handlers react to DNS changes. `HttpClient` is tied to a specific handler instance upon its creation, so new `HttpClient` instances should be requested in a timely manner to ensure the client will get the updated handler.
+> - Recycling and recreating `HttpMessageHandler`s when their lifetime expires is essential for `IHttpClientFactory` to ensure the handlers react to DNS changes. `HttpClient` is tied to a specific handler instance upon its creation, so new `HttpClient` instances should be requested in a timely manner to ensure the client will get the updated handler.
 >
 > - Disposing of such `HttpClient` instances **created by the factory** will not lead to socket exhaustion, as its disposal **will not** trigger disposal of the `HttpMessageHandler`. `IHttpClientFactory` tracks and disposes of resources used to create `HttpClient` instances, specifically the `HttpMessageHandler` instances, as soon their lifetime expires and there's no `HttpClient` using them anymore.
 
@@ -216,15 +217,15 @@ Keeping a single `HttpClient` instance alive for a long duration is a common pat
 
 It may be necessary to control the configuration of the inner <xref:System.Net.Http.HttpMessageHandler> used by a client.
 
-An <xref:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder> is returned when adding named or typed clients. The <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.ConfigurePrimaryHttpMessageHandler%2A> extension method can be used to define a delegate on the `IServiceCollection`. The delegate is used to create and configure the primary `HttpMessageHandler` used by that client:
+An <xref:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder> is returned when adding named or typed clients. The <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.ConfigurePrimaryHttpMessageHandler%2A> extension method can be called on the `IHttpClientBuilder` and passed in a delegate. The delegate is used to create and configure the primary `HttpMessageHandler` used by that client:
 
 :::code source="snippets/http/configurehandler/Program.cs" id="configurehandler":::
 
-Configuring the `HttClientHandler` lets you specify a proxy for the `HttpClient` instance among various other properties of the handler. For more information, see [Proxy per client](../../fundamentals/networking/http/httpclient.md#configure-an-http-proxy).
+Configuring the `HttpClientHandler` lets you specify a proxy for the `HttpClient` instance among various other properties of the handler. For more information, see [Proxy per client](../../fundamentals/networking/http/httpclient.md#configure-an-http-proxy).
 
 ### Additional configuration
 
-There are several additional configuration options for controlling the `IHttpClientHandler`:
+There are several additional configuration options for controlling the `IHttpClientBuilder`:
 
 | Method | Description |
 |--|--|
@@ -236,16 +237,16 @@ There are several additional configuration options for controlling the `IHttpCli
 | <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.SetHandlerLifetime%2A> | Sets the length of time that a `HttpMessageHandler` instance can be reused. Each named client can have its own configured handler lifetime value. |
 | <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.UseSocketsHttpHandler%2A> | Configures a new or a previously added `SocketsHttpHandler` instance from the dependency injection container to be used as a primary handler for a named `HttpClient`. (.NET 5+ only) |
 
-## Using IHttpClientFactory together with SocketsHttpHandler
+## Using `IHttpClientFactory` together with `SocketsHttpHandler`
 
 The `SocketsHttpHandler` implementation of `HttpMessageHandler` was added in .NET Core 2.1, which allows `PooledConnectionLifetime` to be configured. This setting is used to ensure that the handler reacts to DNS changes, so using `SocketsHttpHandler` is considered to be an alternative to using `IHttpClientFactory`. For more information, see [Guidelines for using HTTP clients](../../fundamentals/networking/http/httpclient-guidelines.md).
 
-However, `SocketsHttpHandler` and `IHttpClientFactory` can be used together improve configurability. By using both of these APIs, you benefit from configurability on both a low level (for example, using `LocalCertificateSelectionCallback` for dynamic certificate selection) and a high level (for example, leveraging DI integration and several client configurations).
+However, `SocketsHttpHandler` and `IHttpClientFactory` can be used together to improve configurability. By using both of these APIs, you benefit from configurability on both a low level (for example, using `LocalCertificateSelectionCallback` for dynamic certificate selection) and a high level (for example, leveraging DI integration and several client configurations).
 
 To use both APIs:
 
 1. Specify `SocketsHttpHandler` as `PrimaryHandler` via <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.ConfigurePrimaryHttpMessageHandler%2A>, or <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.UseSocketsHttpHandler%2A> (.NET 5+ only).
-1. Set up <xref:System.Net.Http.SocketsHttpHandler.PooledConnectionLifetime?displayProperty=nameWithType> based on the interval you expect DNS to be updated; for example, to a value that was previously in `HandlerLifetime`.
+1. Set up <xref:System.Net.Http.SocketsHttpHandler.PooledConnectionLifetime?displayProperty=nameWithType> based on the interval you expect DNS to be updated; for example, to a value that was previously set in the `SetHandlerLifetime` extension method.
 1. (Optional) Since `SocketsHttpHandler` will handle connection pooling and recycling, handler recycling at the `IHttpClientFactory` level is no longer needed. You can disable it by setting `HandlerLifetime` to `Timeout.InfiniteTimeSpan`.
 
 ```csharp
@@ -271,9 +272,9 @@ If you need to use `HttpClient` instances in a singleton service, consider the f
 - Use the _named client_ approach instead, injecting `IHttpClientFactory` in the singleton service and recreating `HttpClient` instances when necessary.
 - If you require the _typed client_ approach, use `SocketsHttpHandler` with configured `PooledConnectionLifetime` as a primary handler. For more information on using `SocketsHttpHandler` with `IHttpClientFactory`, see the section [Using IHttpClientFactory together with SocketsHttpHandler](#using-ihttpclientfactory-together-with-socketshttphandler).
 
-## Message Handler Scopes in IHttpClientFactory
+## Message Handler Scopes in `IHttpClientFactory`
 
-`IHttpClientFactory` creates a separate DI scope per each `HttpMessageHandler` instance. These DI scopes are separate from application DI scopes (for example, ASP.NET incoming request scope, or a user-created manual DI scope), so they will **not** share scoped service instances. Message Handler scopes are tied to handler lifetime and can outlive application scopes, which can lead to, for example, reusing the same `HttpMessageHandler` instance with same injected scoped dependencies between several incoming requests.
+`IHttpClientFactory` creates a separate DI scope per each `HttpMessageHandler` instance. These DI scopes are separate from application DI scopes (for example, ASP.NET incoming request scope, or a user-created manual DI scope), so they will **not** share scoped service instances. Message Handler scopes are tied to handler lifetime and can outlive application scopes, which can lead to, for example, reusing the same `HttpMessageHandler` instance with the same injected scoped dependencies between several incoming requests.
 
 :::image type="content" source="media/httpclientfactory-scopes.png" alt-text="Diagram showing two application DI scopes and a separate message handler scope":::
 

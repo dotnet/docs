@@ -115,7 +115,7 @@ context.RegisterSymbolAction(AnalyzeSymbol, SymbolKind.NamedType);
 
 Replace it with the following line:
 
-[!code-csharp[Register the node action](snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst/MakeConstAnalyzer.cs#RegisterNodeAction "Register a node action")]
+:::code language="csharp" source="snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst/MakeConstAnalyzer.cs" id="RegisterNodeAction":::
 
 After that change, you can delete the `AnalyzeSymbol` method. This analyzer examines <xref:Microsoft.CodeAnalysis.CSharp.SyntaxKind.LocalDeclarationStatement?displayProperty=nameWithType>, not <xref:Microsoft.CodeAnalysis.SymbolKind.NamedType?displayProperty=nameWithType> statements. Notice that `AnalyzeNode` has red squiggles under it. The code you just added references an `AnalyzeNode` method that hasn't been declared. Declare that method using the following code:
 
@@ -127,7 +127,7 @@ private void AnalyzeNode(SyntaxNodeAnalysisContext context)
 
 Change the `Category` to ":::no-loc text="Usage":::" in *MakeConstAnalyzer.cs* as shown in the following code:
 
-[!code-csharp[Category constant](snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst/MakeConstAnalyzer.cs#Category  "Change category to Usage")]
+:::code language="csharp" source="snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst/MakeConstAnalyzer.cs" id="Category":::
 
 ## Find local declarations that could be const
 
@@ -140,11 +140,11 @@ Console.WriteLine(x);
 
 The first step is to find local declarations. Add the following code to `AnalyzeNode` in *MakeConstAnalyzer.cs*:
 
-[!code-csharp[localDeclaration variable](snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst/MakeConstAnalyzer.cs#LocalDeclaration  "Add localDeclaration variable")]
+:::code language="csharp" source="snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst/MakeConstAnalyzer.cs" id="LocalDeclaration":::
 
 This cast always succeeds because your analyzer registered for changes to local declarations, and only local declarations. No other node type triggers a call to your `AnalyzeNode` method. Next, check the declaration for any `const` modifiers. If you find them, return immediately. The following code looks for any `const` modifiers on the local declaration:
 
-[!code-csharp[bail-out on const keyword](snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst/MakeConstAnalyzer.cs#BailOutOnConst  "bail-out on const keyword")]
+:::code language="csharp" source="snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst/MakeConstAnalyzer.cs" id="BailOutOnConst":::
 
 Finally, you need to check that the variable could be `const`. That means making sure it is never assigned after it is initialized.
 
@@ -166,7 +166,7 @@ if (dataFlowAnalysis.WrittenOutside.Contains(variableSymbol))
 
 The code just added ensures that the variable isn't modified, and can therefore be made `const`. It's time to raise the diagnostic. Add the following code as the last line in `AnalyzeNode`:
 
-[!code-csharp[Call ReportDiagnostic](snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst/MakeConstAnalyzer.cs#ReportDiagnostic  "Call ReportDiagnostic")]
+:::code language="csharp" source="snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst/MakeConstAnalyzer.cs" id="ReportDiagnostic":::
 
 You can check your progress by pressing <kbd>F5</kbd> to run your analyzer. You can load the console application you created earlier and then add the following test code:
 
@@ -202,11 +202,11 @@ Next, delete the `MakeUppercaseAsync` method. It no longer applies.
 
 All code fix providers derive from <xref:Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider>. They all override <xref:Microsoft.CodeAnalysis.CodeFixes.CodeFixProvider.RegisterCodeFixesAsync(Microsoft.CodeAnalysis.CodeFixes.CodeFixContext)?displayProperty=nameWithType> to report available code fixes. In `RegisterCodeFixesAsync`, change the ancestor node type you're searching for to a <xref:Microsoft.CodeAnalysis.CSharp.Syntax.LocalDeclarationStatementSyntax> to match the diagnostic:
 
-[!code-csharp[Find local declaration node](snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst.CodeFixes/MakeConstCodeFixProvider.cs#FindDeclarationNode  "Find the local declaration node that raised the diagnostic")]
+:::code language="csharp" source="snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst.CodeFixes/MakeConstCodeFixProvider.cs" id="FindDeclarationNode":::
 
 Next, change the last line to register a code fix. Your fix will create a new document that results from adding the `const` modifier to an existing declaration:
 
-[!code-csharp[Register the new code fix](snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst.CodeFixes/MakeConstCodeFixProvider.cs#RegisterCodeFix  "Register the new code fix")]
+:::code language="csharp" source="snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst.CodeFixes/MakeConstCodeFixProvider.cs" id="RegisterCodeFix":::
 
 You'll notice red squiggles in the code you just added on the symbol `MakeConstAsync`. Add a declaration for `MakeConstAsync` like the following code:
 
@@ -222,7 +222,7 @@ Your new `MakeConstAsync` method will transform the <xref:Microsoft.CodeAnalysis
 
 You create a new `const` keyword token to insert at the front of the declaration statement. Be careful to first remove any leading trivia from the first token of the declaration statement and attach it to the `const` token. Add the following code to the `MakeConstAsync` method:
 
-[!code-csharp[Create a new const keyword token](snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst.CodeFixes/MakeConstCodeFixProvider.cs#CreateConstToken  "Create the new const keyword token")]
+:::code language="csharp" source="snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst.CodeFixes/MakeConstCodeFixProvider.cs" id="CreateConstToken":::
 
 Next, add the `const` token to the declaration using the following code:
 
@@ -237,7 +237,7 @@ LocalDeclarationStatementSyntax newLocal = trimmedLocal
 
 Next, format the new declaration to match C# formatting rules. Formatting your changes to match existing code creates a better experience. Add the following statement immediately after the existing code:
 
-[!code-csharp[Format the new declaration](snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst.CodeFixes/MakeConstCodeFixProvider.cs#FormatLocal  "Format the new declaration")]
+:::code language="csharp" source="snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst.CodeFixes/MakeConstCodeFixProvider.cs" id="FormatLocal":::
 
 A new namespace is required for this code. Add the following `using` directive to the top of the file:
 
@@ -253,7 +253,7 @@ The final step is to make your edit. There are three steps to this process:
 
 Add the following code to the end of the `MakeConstAsync` method:
 
-[!code-csharp[replace the declaration](snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst.CodeFixes/MakeConstCodeFixProvider.cs#ReplaceDocument  "Generate a new document by replacing the declaration")]
+:::code language="csharp" source="snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst.CodeFixes/MakeConstCodeFixProvider.cs" id="ReplaceDocument":::
 
 Your code fix is ready to try.  Press <kbd>F5</kbd> to run the analyzer project in a second instance of Visual Studio. In the second Visual Studio instance, create a new C# Console Application project and add a few local variable declarations initialized with constant values to the Main method. You'll see that they are reported as warnings as below.
 
@@ -277,37 +277,39 @@ The template uses [Microsoft.CodeAnalysis.Testing](https://github.com/dotnet/ros
 
 Replace the template tests in the `MakeConstUnitTest` class with the following test method:
 
-[!code-csharp[test method for fix test](snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst.Test/MakeConstUnitTests.cs#FirstFixTest "test method for fix test")]
+:::code language="csharp" source="snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst.Test/MakeConstUnitTests.cs" id="FirstFixTest":::
 
 Run this test to make sure it passes. In Visual Studio, open the **Test Explorer** by selecting **Test** > **Windows** > **Test Explorer**. Then select **Run All**.
 
 ## Create tests for valid declarations
 
-As a general rule, analyzers should exit as quickly as possible, doing minimal work. Visual Studio calls registered analyzers as the user edits code. Responsiveness is a key requirement. There are several test cases for code that should not raise your diagnostic. Your analyzer already handles one of those tests, the case where a variable is assigned after being initialized. Add the following test method to represent that case:
+As a general rule, analyzers should exit as quickly as possible, doing minimal work. Visual Studio calls registered analyzers as the user edits code. Responsiveness is a key requirement. There are several test cases for code that should not raise your diagnostic. Your analyzer already handles several of those tests. Add the following test methods to represent those cases:
 
-[!code-csharp[variable assigned](snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst.Test/MakeConstUnitTests.cs#VariableAssigned "a variable that is assigned after being initialized won't raise the diagnostic")]
+:::code language="csharp" source="snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst.Test/MakeConstUnitTests.cs" id="VariableAssigned":::
 
-This test passes as well. Next, add test methods for conditions you haven't handled yet:
+:::code language="csharp" source="snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst.Test/MakeConstUnitTests.cs" id="AlreadyConst":::
 
-- Declarations that are already `const`, because they are already const:
+:::code language="csharp" source="snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst.Test/MakeConstUnitTests.cs" id="NoInitializer":::
 
-   [!code-csharp[already const declaration](snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst.Test/MakeConstUnitTests.cs#AlreadyConst "a declaration that is already const should not raise the diagnostic")]
+These tests pass because your analyzer already handles these conditions:
 
-- Declarations that have no initializer, because there is no value to use:
+- Variables assigned after initialization are detected by data flow analysis.
+- Declarations that are already `const` are filtered out by checking for the `const` keyword.
+- Declarations with no initializer are handled by the data flow analysis that detects assignments outside the declaration.
 
-   [!code-csharp[declarations that have no initializer](snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst.Test/MakeConstUnitTests.cs#NoInitializer "a declaration that has no initializer should not raise the diagnostic")]
+Next, add test methods for conditions you haven't handled yet:
 
 - Declarations where the initializer is not a constant, because they can't be compile-time constants:
 
-   [!code-csharp[declarations where the initializer isn't const](snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst.Test/MakeConstUnitTests.cs#InitializerNotConstant "a declaration where the initializer is not a compile-time constant should not raise the diagnostic")]
+   :::code language="csharp" source="snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst.Test/MakeConstUnitTests.cs" id="InitializerNotConstant":::
 
 It can be even more complicated because C# allows multiple declarations as one statement. Consider the following test case string constant:
 
-[!code-csharp[multiple initializers](snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst.Test/MakeConstUnitTests.cs#MultipleInitializers "A declaration can be made constant only if all variables in that statement can be made constant")]
+:::code language="csharp" source="snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst.Test/MakeConstUnitTests.cs" id="MultipleInitializers":::
 
 The variable `i` can be made constant, but the variable `j` cannot. Therefore, this statement cannot be made a const declaration.
 
-Run your tests again, and you'll see these new test cases fail.
+Run your tests again, and you'll see these last two test cases fail.
 
 ## Update your analyzer to ignore correct declarations
 
@@ -374,33 +376,33 @@ The first `foreach` loop examines each variable declaration using syntactic anal
 
 You're almost done. There are a few more conditions for your analyzer to handle. Visual Studio calls analyzers while the user is writing code. It's often the case that your analyzer will be called for code that doesn't compile. The diagnostic analyzer's `AnalyzeNode` method does not check to see if the constant value is convertible to the variable type. So, the current implementation will happily convert an incorrect declaration such as `int i = "abc"` to a local constant. Add a test method for this case:
 
-[!code-csharp[Mismatched types don't raise diagnostics](snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst.Test/MakeConstUnitTests.cs#DeclarationIsInvalid "When the variable type and the constant type don't match, there's no diagnostic")]
+:::code language="csharp" source="snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst.Test/MakeConstUnitTests.cs" id="DeclarationIsInvalid":::
 
 In addition, reference types are not handled properly. The only constant value allowed for a reference type is `null`, except in the case of <xref:System.String?displayProperty=nameWithType>, which allows string literals. In other words, `const string s = "abc"` is legal, but `const object s = "abc"` is not. This code snippet verifies that condition:
 
-[!code-csharp[Reference types don't raise diagnostics](snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst.Test/MakeConstUnitTests.cs#DeclarationIsntString "When the variable type is a reference type other than string, there's no diagnostic")]
+:::code language="csharp" source="snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst.Test/MakeConstUnitTests.cs" id="DeclarationIsntString":::
 
 To be thorough, you need to add another test to make sure that you can create a constant declaration for a string. The following snippet defines both the code that raises the diagnostic, and the code after the fix has been applied:
 
-[!code-csharp[string reference types raise diagnostics](snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst.Test/MakeConstUnitTests.cs#ConstantIsString "When the variable type is string, it can be constant")]
+:::code language="csharp" source="snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst.Test/MakeConstUnitTests.cs" id="ConstantIsString":::
 
 Finally, if a variable is declared with the `var` keyword, the code fix does the wrong thing and generates a `const var` declaration, which is not supported by the C# language. To fix this bug, the code fix must replace the `var` keyword with the inferred type's name:
 
-[!code-csharp[var references need to use the inferred types](snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst.Test/MakeConstUnitTests.cs#VarDeclarations "Declarations made using var must have the type replaced with the inferred type")]
+:::code language="csharp" source="snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst.Test/MakeConstUnitTests.cs" id="VarDeclarations":::
 
 Fortunately, all of the above bugs can be addressed using the same techniques that you just learned.
 
 To fix the first bug, first open *MakeConstAnalyzer.cs* and locate the foreach loop where each of the local declaration's initializers are checked to ensure that they're assigned with constant values. Immediately _before_ the first foreach loop, call `context.SemanticModel.GetTypeInfo()` to retrieve detailed information about the declared type of the local declaration:
 
-[!code-csharp[Retrieve type information](snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst/MakeConstAnalyzer.cs#VariableConvertedType "Retrieve type information")]
+:::code language="csharp" source="snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst/MakeConstAnalyzer.cs" id="VariableConvertedType":::
 
 Then, inside your `foreach` loop, check each initializer to make sure it's convertible to the variable type. Add the following check after ensuring that the initializer is a constant:
 
-[!code-csharp[Ensure non-user-defined conversion](snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst/MakeConstAnalyzer.cs#BailOutOnUserDefinedConversion "Bail-out on user-defined conversion")]
+:::code language="csharp" source="snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst/MakeConstAnalyzer.cs" id="BailOutOnUserDefinedConversion":::
 
 The next change builds upon the last one. Before the closing curly brace of the first foreach loop, add the following code to check the type of the local declaration when the constant is a string or null.
 
-[!code-csharp[Handle special cases](snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst/MakeConstAnalyzer.cs#HandleSpecialCases "Handle special cases")]
+:::code language="csharp" source="snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst/MakeConstAnalyzer.cs" id="HandleSpecialCases":::
 
 You must write a bit more code in your code fix provider to replace the `var` keyword with the correct type name. Return to *MakeConstCodeFixProvider.cs*. The code you'll add does the following steps:
 
@@ -412,7 +414,7 @@ You must write a bit more code in your code fix provider to replace the `var` ke
 
 That sounds like a lot of code. It's not. Replace the line that declares and initializes `newLocal` with the following code. It goes immediately after the initialization of `newModifiers`:
 
-[!code-csharp[Replace Var designations](snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst.CodeFixes/MakeConstCodeFixProvider.cs#ReplaceVar "Replace a var designation with the explicit type")]
+:::code language="csharp" source="snippets/how-to-write-csharp-analyzer-code-fix/MakeConst/MakeConst.CodeFixes/MakeConstCodeFixProvider.cs" id="ReplaceVar":::
 
 You'll need to add one `using` directive to use the <xref:Microsoft.CodeAnalysis.Simplification.Simplifier> type:
 

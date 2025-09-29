@@ -38,7 +38,7 @@ This section contains information about how to create and use your [!INCLUDE[vbt
  [Stored Procedures](stored-procedures.md)  
  Includes links to topics that illustrate how to use stored procedures.  
   
- [Introduction to LINQ (C#)](/dotnet/csharp/linq/)  
+ [Introduction to LINQ (C#)](../../../../../csharp/linq/index.md)  
  Provides resources to help you begin to learn about LINQ to SQL using C#.
 
  [Introduction to LINQ (Visual Basic)](../../../../../visual-basic/programming-guide/concepts/linq/introduction-to-linq.md)  

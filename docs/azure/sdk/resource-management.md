@@ -1,7 +1,7 @@
 ---
 title: Resource management
 description: Learn how to use the Azure SDK for .NET to manage Azure resources.
-ms.date: 01/26/2024
+ms.date: 04/25/2025
 ---
 
 # Resource management using the Azure SDK for .NET

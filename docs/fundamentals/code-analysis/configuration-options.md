@@ -64,6 +64,9 @@ By default, files with certain file extensions or auto-generated file headers ar
 generated_code = true
 ```
 
+> [!NOTE]
+> Generated code files are excluded only from code analysis diagnostics. Other diagnostics, such as those from the C# compiler, aren't affected by this setting.
+
 ## Rule-specific options
 
 Rule-specific options can be applied to a single rule, a set of rules, or all rules. The rule-specific options include:

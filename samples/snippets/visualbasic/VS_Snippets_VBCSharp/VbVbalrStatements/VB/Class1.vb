@@ -278,7 +278,7 @@ Public Class Class1
     Sub TestThrow()
         '<Snippet84>
         ' Throws a new exception.
-        Throw New System.Exception("An exception has occurred.")
+        Throw New InvalidOperationException("The operation is not valid for the current state.")
         '</Snippet84>
     End Sub
 
@@ -596,6 +596,48 @@ Public Class Class1
         End Property
     End Class
     '</Snippet51>
+
+
+    '********************************************************************
+    '<Snippet52>
+    Class SampleCollection
+        ' Define a local collection to store strings.
+        Private items As New List(Of String)
+        
+        ' Define a parameterized property (indexer) for the collection.
+        Default Public Property Item(ByVal index As Integer) As String
+            Get
+                ' Return the item at the specified index.
+                If index >= 0 AndAlso index < items.Count Then
+                    Return items(index)
+                Else
+                    Return Nothing
+                End If
+            End Get
+            Set(ByVal value As String)
+                ' Set the item at the specified index.
+                If index >= 0 AndAlso index < items.Count Then
+                    items(index) = value
+                ElseIf index = items.Count Then
+                    ' Allow adding new items at the end.
+                    items.Add(value)
+                End If
+            End Set
+        End Property
+        
+        ' Add a Count property for convenience.
+        Public ReadOnly Property Count As Integer
+            Get
+                Return items.Count
+            End Get
+        End Property
+        
+        ' Add method to add items.
+        Public Sub Add(ByVal item As String)
+            items.Add(item)
+        End Sub
+    End Class
+    '</Snippet52>
 
 
     '********************************************************************

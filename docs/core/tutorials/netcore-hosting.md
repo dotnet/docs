@@ -88,3 +88,7 @@ A different signature can be used by specifying the delegate type name when call
 The native host can now call the managed method and pass it the desired parameters.
 
 [!code-cpp[HostFxrHost#CallManaged](~/samples/snippets/core/tutorials/netcore-hosting/csharp/HostWithHostFxr/src/NativeHost/nativehost.cpp#CallManaged)]
+
+## Limitations
+
+Only one runtime can be loaded inside a single process. If the `hostfxr_initialize_for_runtime_config` API is called when a runtime is already loaded, it will check if the existing runtime is compatible with the specified initialization parameters. If compatible, the existing runtime will be used and if not compatible, the API will return a failure.

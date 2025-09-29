@@ -6,13 +6,13 @@ summary: Learn to build AI apps with .NET. Browse sample code, tutorials, quicks
 metadata:
   title: AI apps for .NET developers
   description: Samples, tutorials, and education for building AI apps with .NET
-  ms.topic: hub-page
+  ms.topic: landing-page
   ms.service: dotnet
-  ms.date: 12/19/2024
+  ms.date: 8/26/2025
   author: alexwolfmsft
   ms.author: alexwolf
 
-# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | tutorial | overview | quickstart | reference | sample | tutorial | video | whats-new
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | tutorial | overview | quickstart | reference | sample | training | tutorial | video | whats-new
 
 landingContent:
 # Cards and links should be based on top customer tasks or top subjects
@@ -21,18 +21,20 @@ landingContent:
   # Card
   - title: Get started
     linkLists:
+      - linkListType: overview
+        links:
+          - text: Develop .NET apps with AI features
+            url: overview.md
+          - text: Microsoft.Extensions.AI libraries
+            url: microsoft-extensions-ai.md
       - linkListType: get-started
         links:
-          - text: Develop .NET applications
-            url: get-started/dotnet-ai-overview.md
-          - text: Learning resources and samples
-            url: azure-ai-for-dotnet-developers.md
-          - text: Build an Azure AI chat app with .NET
-            url: quickstarts/get-started-openai.md
-          - text: Summarize text using an Azure OpenAI chat app
-            url: quickstarts/quickstart-openai-summarize-text.md
-          - text: Generate images using Azure AI with .NET
-            url: quickstarts/quickstart-openai-generate-images.md
+          - text: Connect to and prompt an AI model
+            url: quickstarts/prompt-model.md
+          - text: Build an Azure AI chat app
+            url: quickstarts/build-chat-app.md
+          - text: Generate images using Azure AI
+            url: quickstarts/generate-images.md
 
   # Card
   - title: Essential concepts
@@ -52,7 +54,7 @@ landingContent:
           - text: Evaluation libraries
             url: conceptual/evaluation-libraries.md
 
-  # Card (Optional; Remove if not applicable.)
+  # Card
   - title: Common tasks
     linkLists:
       - linkListType: how-to-guide
@@ -68,7 +70,21 @@ landingContent:
           - text: Work with content filtering
             url: how-to/work-with-local-models.md
 
-  # Card (Optional; Remove if not applicable.)
+  # Card
+  - title: Training
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: Fundamentals of Azure OpenAI Service
+            url: /training/modules/explore-azure-openai
+          - text: Generate conversations Azure OpenAI completions
+            url: /training/modules/open-ai-dotnet-text-completions
+          - text: .NET enterprise chat sample using RAG
+            url: get-started-app-chat-template.md
+          - text: Develop AI agents using Azure OpenAI
+            url: /training/paths/develop-ai-agents-azure-open-ai-semantic-kernel-sdk
+
+  # Card
   - title: Tutorials
     linkLists:
       - linkListType: tutorial
@@ -82,16 +98,14 @@ landingContent:
           - text: Evaluate a model's response
             url: tutorials/evaluate-with-reporting.md
 
-  # Card (Optional; Remove if not applicable.)
-  - title: Training
+  # Card
+  - title: External resources
     linkLists:
-      - linkListType: tutorial
+      - linkListType: sample
         links:
-          - text: Fundamentals of Azure OpenAI Service
-            url: /training/modules/explore-azure-openai
-          - text: Generate conversations Azure OpenAI completions
-            url: /training/modules/open-ai-dotnet-text-completions
-          - text: .NET enterprise chat sample using RAG
-            url: get-started-app-chat-template.md
-          - text: Develop AI agents using Azure OpenAI
-            url: /training/paths/develop-ai-agents-azure-open-ai-semantic-kernel-sdk
+          - text: Get started resources
+            url: resources/get-started.md
+          - text: Azure AI resources
+            url: resources/azure-ai.md
+          - text: MCP server resources
+            url: resources/mcp-servers.md

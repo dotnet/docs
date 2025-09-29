@@ -1,8 +1,27 @@
 {
     "redirections": [
         {
+            "source_path_from_root": "/docs/ai/azure-ai-for-dotnet-developers.md",
+            "redirect_url": "/dotnet/ai/resources/azure-ai"
+        },
+        {
+            "source_path_from_root": "/docs/ai/ai-extensions.md",
+            "redirect_url": "/dotnet/ai/microsoft-extensions-ai",
+            "redirect_document_id": true
+        },
+        {
             "source_path_from_root": "/docs/ai/conceptual/agents.md",
             "redirect_url": "/dotnet/ai"
+        },
+        {
+            "source_path_from_root": "/docs/ai/conceptual/evaluation-libraries.md",
+            "redirect_url": "/dotnet/ai/evaluation/libraries",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/ai/get-started/dotnet-ai-overview.md",
+            "redirect_url": "/dotnet/ai/overview",
+            "redirect_document_id": true
         },
         {
             "source_path_from_root": "/docs/ai/how-to/app-service-db-auth.md",
@@ -15,6 +34,11 @@
         {
             "source_path_from_root": "/docs/ai/how-to/work-with-local-models.md",
             "redirect_url": "/dotnet/ai"
+        },
+        {
+            "source_path_from_root": "/docs/ai/quickstarts/evaluate-ai-response.md",
+            "redirect_url": "/dotnet/ai/evaluation/evaluate-ai-response",
+            "redirect_document_id": true
         },
         {
             "source_path_from_root": "/docs/ai/quickstarts/get-started-azure-openai.md",
@@ -30,7 +54,8 @@
         },
         {
             "source_path_from_root": "/docs/ai/quickstarts/quickstart-assistants.md",
-            "redirect_url": "/dotnet/ai/quickstarts/create-assistant"
+            "redirect_url": "/dotnet/ai/quickstarts/create-assistant",
+            "redirect_document_id": true
         },
         {
             "source_path_from_root": "/docs/ai/quickstarts/quickstart-azure-openai-tool.md",
@@ -38,15 +63,32 @@
         },
         {
             "source_path_from_root": "/docs/ai/quickstarts/quickstart-local-ai.md",
-            "redirect_url": "/dotnet/ai/quickstarts/chat-local-model"
+            "redirect_url": "/dotnet/ai/quickstarts/chat-local-model",
+            "redirect_document_id": true
         },
         {
             "source_path_from_root": "/docs/ai/quickstarts/quickstart-openai-generate-images.md",
-            "redirect_url": "/dotnet/ai/quickstarts/generate-images"
+            "redirect_url": "/dotnet/ai/quickstarts/generate-images",
+            "redirect_document_id": true
         },
         {
             "source_path_from_root": "/docs/ai/quickstarts/quickstart-openai-summarize-text.md",
-            "redirect_url": "/dotnet/ai/quickstarts/prompt-model"
+            "redirect_url": "/dotnet/ai/quickstarts/prompt-model",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/ai/tutorials/llm-eval.md",
+            "redirect_url": "/dotnet/ai/evaluation/evaluate-ai-response"
+        },
+        {
+            "source_path_from_root": "/docs/ai/tutorials/evaluate-safety.md",
+            "redirect_url": "/dotnet/ai/evaluation/evaluate-safety",
+            "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/ai/tutorials/evaluate-with-reporting.md",
+            "redirect_url": "/dotnet/ai/evaluation/evaluate-with-reporting",
+            "redirect_document_id": true
         }
     ]
 }

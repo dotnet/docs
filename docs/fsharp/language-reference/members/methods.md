@@ -51,7 +51,7 @@ Methods can be marked `inline`. For information about `inline`, see [Inline Func
 
 Non-inline methods can be used recursively within the type; there is no need to explicitly use the `rec` keyword.
 
-## Instance Methods
+## Instance methods
 
 Instance methods are declared with the `member` keyword and a *self-identifier*, followed by a period (.) and the method name and parameters. As is the case for `let` bindings, the *parameter-list* can be a pattern. Typically, you enclose method parameters in parentheses in a tuple form, which is the way methods appear in F# when they are created in other .NET Framework languages. However, the curried form (parameters separated by spaces) is also common, and other patterns are supported also.
 
@@ -59,9 +59,9 @@ The following example illustrates the definition and use of a non-abstract insta
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet3401.fs)]
 
-Within instance methods, do not use the self identifier to access fields defined by using let bindings. Use the self identifier when accessing other members and properties.
+Within instance methods, do not use the self identifier to access fields defined by using `let` bindings. Use the self identifier when accessing other members and properties.
 
-## Static Methods
+## Static methods
 
 The keyword `static` is used to specify that a method can be called without an instance and is not associated with an object instance. Otherwise, methods are instance methods.
 
@@ -71,7 +71,7 @@ The following example illustrates the definition and use of static methods. Assu
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet3402.fs)]
 
-## Abstract and Virtual Methods
+## Abstract and virtual methods
 
 The keyword `abstract` indicates that a method has a virtual dispatch slot and might not have a definition in the class. A *virtual dispatch slot* is an entry in an internally maintained table of functions that is used at run time to look up virtual function calls in an object-oriented type. The virtual dispatch mechanism is the mechanism that implements *polymorphism*, an important feature of object-oriented programming. A class that has at least one abstract method without a definition is an *abstract class*, which means that no instances can be created of that class. For more information about abstract classes, see [Abstract Classes](../abstract-classes.md).
 
@@ -89,24 +89,26 @@ The following example illustrates a derived class that overrides a base class me
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet3404.fs)]
 
-## Overloaded Methods
+## Overloaded methods
 
-Overloaded methods are methods that have identical names in a given type but that have different arguments. In F#, optional arguments are usually used instead of overloaded methods. However, overloaded methods are permitted in the language, provided that the arguments are in tuple form, not curried form.
-
-## Optional Arguments
-
-Starting with F# 4.1, you can also have optional arguments with a default parameter value in methods.  This is to help facilitate interoperation with C# code.  The following example demonstrates the syntax:
+Overloaded methods are methods that have identical names in a given type but that have different arguments. In F#, optional arguments are usually used instead of overloaded methods. However, overloaded methods are permitted in the language, provided that the arguments are in tuple form, not curried form. The following example demonstrates it:
 
 ```fsharp
-open System.Runtime.InteropServices
-// A class with a method M, which takes in an optional integer argument.
-type C() =
-    member _.M([<Optional; DefaultParameterValue(12)>] i) = i + 1
+type MyType(dataIn: int) =
+    let data = dataIn
+    member this.DoSomething(a: int) = a + data
+    member this.DoSomething(a: string) = sprintf "Hello world, %s!" a
+
+let m = MyType(10)
+printfn "With int: %d" (m.DoSomething(2)) // With int: 12
+printfn "With string: %s" (m.DoSomething("Bill")) // With string: Hello world, Bill!
 ```
 
-Note that the value passed in for `DefaultParameterValue` must match the input type.  In the above sample, it is an `int`.  Attempting to pass a non-integer value into `DefaultParameterValue` would result in a compile error.
+## Optional arguments
 
-## Example: Properties and Methods
+F# supports optional arguments for methods. For detailed information about the different forms of optional arguments available in F#, see [Optional parameters](../parameters-and-arguments.md#optional-parameters).
+
+## Example: Properties and methods
 
 The following example contains a type that has examples of fields, private functions, properties, and a static method.
 

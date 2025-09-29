@@ -1,7 +1,7 @@
 ---
 title: dotnet sln command
 description: The dotnet-sln command provides a convenient option to add, remove, and list projects in a solution file.
-ms.date: 02/24/2025
+ms.date: 08/29/2025
 ---
 # dotnet sln
 
@@ -27,23 +27,26 @@ The `dotnet sln` command provides a convenient way to list and modify projects i
 
 To use the `dotnet sln` command, the solution file must already exist. If you need to create one, use the [dotnet new](dotnet-new.md) command with the `sln` template name.
 
-The following example creates a *.sln* file in the current folder, with the same name as the folder:
+The following example creates an *.slnx* file in the current folder, with the same name as the folder:
 
 ```dotnetcli
 dotnet new sln
 ```
 
-The following example creates a *.sln* file in the current folder, with the specified file name:
+The following example creates an *.slnx* file in the current folder, with the specified file name:
 
 ```dotnetcli
 dotnet new sln --name MySolution
 ```
 
-The following example creates a *.sln* file in the specified folder, with the same name as the folder:
+The following example creates an *.slnx* file in the specified folder, with the same name as the folder:
 
 ```dotnetcli
 dotnet new sln --output MySolution
 ```
+
+> [!NOTE]
+> In .NET 9 and earlier versions, `dotnet new sln` creates an *.sln* file instead of an *.slnx* file.
 
 ## Arguments
 
@@ -80,9 +83,11 @@ dotnet sln list [-h|--help]
 
 - **`SOLUTION_FILE`**
 
-  The solution file to use (either an *.sln* or *.slnx* file).
+  The solution file (*.sln* or *.slnx* file) or [solution filter](/visualstudio/msbuild/solution-filters) (*.slnf* file) to use.
 
-  If unspecified, the command searches the current directory for an *.sln* or *.slnx* file and, if it finds exactly one, uses that file. If multiple solution files are found, the user is prompted to specify a file explicitly. If none are found, the command fails.
+  If unspecified, the command searches the current directory for an *.sln*, *.slnx*, or *.slnf* file and, if it finds exactly one, uses that file. If multiple solution files or filters are found, the user is prompted to specify a file explicitly. If none are found, the command fails.
+
+  (Support for *.slnf* files was added in .NET SDK 9.0.3xx.)
 
 #### Options
 
@@ -140,7 +145,7 @@ Removes a project or multiple projects from the solution file.
 #### Synopsis
 
 ```dotnetcli
-dotnet sln [<SOLUTION_FILE>] remove <PROJECT_PATH> [<PROJECT_PATH>...]
+dotnet sln [<SOLUTION_FILE>] remove <PROJECT_PATH|PROJECT_NAME> [<PROJECT_PATH|PROJECT_NAME>...]
 dotnet sln [<SOLUTION_FILE>] remove [-h|--help]
 ```
 
@@ -152,9 +157,11 @@ dotnet sln [<SOLUTION_FILE>] remove [-h|--help]
 
   If unspecified, the command searches the current directory for an *.sln* or *.slnx* file and, if it finds exactly one, uses that file. If multiple solution files are found, the user is prompted to specify a file explicitly. If none are found, the command fails.
 
-- **`PROJECT_PATH`**
+- **`PROJECT_PATH` or `PROJECT_NAME`**
 
-  The path to the project or projects to remove from the solution. Unix/Linux shell [globbing pattern](https://en.wikipedia.org/wiki/Glob_(programming)) expansions are processed correctly by the `dotnet sln` command.
+  The path to, or name of, the project or projects to remove from the solution. Unix/Linux shell [globbing pattern](https://en.wikipedia.org/wiki/Glob_(programming)) expansions are processed correctly by the `dotnet sln` command.
+
+  If a project name is provided instead of a path, the project in the solution that matches the name, regardless of its path, is removed. If more than one matching project is found in the solution, the command errors out. Omit the project file extension in the name. (Support for removing projects by name was added in .NET 10.)
 
 #### Options
 

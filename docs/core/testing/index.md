@@ -54,7 +54,7 @@ The test framework is built on top of the test platform. It defines the set of a
 For more information, see the following resources:
 
 - [Microsoft.Testing.Platform support in MSTest (MSTest runner)](unit-testing-mstest-runner-intro.md)
-- [Unit testing with C#](unit-testing-with-mstest.md)
+- [Unit testing with C#](unit-testing-csharp-with-mstest.md)
 - [Unit testing with F#](unit-testing-fsharp-with-mstest.md)
 - [Unit testing with Visual Basic](unit-testing-visual-basic-with-mstest.md)
 
@@ -65,7 +65,7 @@ For more information, see the following resources:
 For more information, see the following resources:
 
 - [Microsoft.Testing.Platform support in NUnit (NUnit runner)](unit-testing-nunit-runner-intro.md)
-- [Unit testing with C#](unit-testing-with-nunit.md)
+- [Unit testing with C#](unit-testing-csharp-with-nunit.md)
 - [Unit testing with F#](unit-testing-fsharp-with-nunit.md)
 - [Unit testing with Visual Basic](unit-testing-visual-basic-with-nunit.md)
 
@@ -80,9 +80,9 @@ For more information, see the following resources:
 For more information, see the following resources:
 
 - [Microsoft.Testing.Platform support in xUnit.net v3](https://xunit.net/docs/getting-started/v3/microsoft-testing-platform)
-- [Unit testing with C#](unit-testing-with-dotnet-test.md)
-- [Unit testing with F#](unit-testing-fsharp-with-dotnet-test.md)
-- [Unit testing with Visual Basic](unit-testing-visual-basic-with-dotnet-test.md)
+- [Unit testing with C#](unit-testing-csharp-with-xunit.md)
+- [Unit testing with F#](unit-testing-fsharp-with-xunit.md)
+- [Unit testing with Visual Basic](unit-testing-visual-basic-with-xunit.md)
 
 ## Running tests
 

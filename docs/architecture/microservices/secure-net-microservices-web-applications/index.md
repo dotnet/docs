@@ -3,6 +3,7 @@ title: Securing .NET Microservices and Web Applications
 description: Security in .NET Microservices and Web Applications - Get to know the authentication options in ASP.NET Core web applications.
 author: mjrousos
 ms.date: 01/13/2021
+ms.custom: sfi-ropc-nochange
 ---
 # Make secure .NET Microservices and Web Applications
 
@@ -286,7 +287,7 @@ The JWT bearer authentication middleware can also support more advanced scenario
 - **Introduction to Identity** \
   [https://learn.microsoft.com/aspnet/core/security/authentication/identity](/aspnet/core/security/authentication/identity)
 
-- **Rick Anderson. Two-factor authentication with SMS** \
+- **Two-factor authentication with SMS** \
   [https://learn.microsoft.com/aspnet/core/security/authentication/2fa](/aspnet/core/security/authentication/2fa)
 
 - **Enabling authentication using Facebook, Google and other external providers** \

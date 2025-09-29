@@ -2,7 +2,7 @@
 title: Basic String Operations in .NET
 description: Learn about the basic operations that you can perform on strings.
 ms.date: "03/30/2017"
-ms.topic: conceptual
+ms.topic: article
 helpviewer_keywords:
   - "strings [.NET], basic string operations"
   - "custom strings"

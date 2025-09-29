@@ -2,11 +2,11 @@
 title: "Marshalling Classes, Structures, and Unions"
 description: Review how to marshal classes, structures, and unions. View samples of marshalling classes, structures with nested structures, arrays of structures, and unions.
 ms.date: "03/30/2017"
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "data marshalling, classes"
   - "marshaling, unions"
   - "marshaling, structures"
@@ -42,8 +42,8 @@ The following table lists marshalling options for classes, structures, and union
 
 ## Structures sample
 
-This sample demonstrates how to pass a structure that points to a second structure, pass a structure with an embedded structure, and pass a structure with an embedded array.  
-  
+This sample demonstrates how to pass a structure that points to a second structure, pass a structure with an embedded structure, and pass a structure with an embedded array.
+
 The Structs sample uses the following unmanaged functions, shown with their original function declaration:
 
 - **TestStructInStruct** exported from PinvokeLib.dll.
@@ -222,7 +222,7 @@ The `NativeMethods` class contains the prototypes for the `TestUnion` and `TestU
 
 In some scenarios, `struct` and `union` layouts can differ depending on the targeted platform. For example, consider the [`STRRET`](/windows/win32/api/shtypes/ns-shtypes-strret) type when defined in a COM scenario:
 
-```c++
+```cpp
 #include <pshpack8.h> /* Defines the packing of the struct */
 typedef struct _STRRET
     {

@@ -26,7 +26,8 @@ string deployment = builder.Configuration["AZURE_OPENAI_GPT_NAME"];
 
 builder.Services.AddChatClient(
     new AzureOpenAIClient(new Uri(endpoint), credential)
-    .AsChatClient(deployment));
+    .GetChatClient(deployment)
+    .AsIChatClient());
 
 var app = builder.Build();
 

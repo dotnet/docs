@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -345,8 +345,8 @@ namespace csrefKeywordsModifiers
             var a = new A();
             var b = new B();
 
-            // Error CS1540, because x can only be accessed by
-            // classes derived from A.
+            // Error CS1540, because x can only be accessed through
+            // the derived class type, not through the base class type.
             // a.x = 10;
 
             // OK, because this class derives from A.
@@ -687,9 +687,9 @@ namespace csrefKeywordsModifiers
             Shape s = new Sphere(r);
             Shape l = new Cylinder(r, h);
             // Display results.
-            Console.WriteLine("Area of Circle   = {0:F2}", c.Area());
-            Console.WriteLine("Area of Sphere   = {0:F2}", s.Area());
-            Console.WriteLine("Area of Cylinder = {0:F2}", l.Area());
+            Console.WriteLine($"Area of Circle   = {c.Area():F2}");
+            Console.WriteLine($"Area of Sphere   = {s.Area():F2}");
+            Console.WriteLine($"Area of Cylinder = {l.Area():F2}");
         }
     }
     /*
@@ -785,7 +785,7 @@ namespace csrefKeywordsModifiers
             protected Shape(string color)
             {
                 Color = color;
-                Console.WriteLine("Created a shape with color {color}.");
+                Console.WriteLine($"Created a shape with color {color}.");
             }
 
             // Abstract method that must be implemented by derived classes
@@ -813,9 +813,51 @@ namespace csrefKeywordsModifiers
             public static void Main(string[] args)
              {
                     Square square = new Square("red", 5);
-                    Console.WriteLine("Area of the square: {square.CalculateArea()}");            
+                    Console.WriteLine($"Area of the square: {square.CalculateArea()}");            
              }
         }
         //</snippet27>
     } 
+
+      //<snippet28>
+  class Calc1
+  {
+      public void CalculateSum()
+      {
+          int a = 3;
+          int b = 7;
+
+          // Static local function - cannot access 'a' or 'b' directly
+          static int Add(int x, int y)
+          {
+              return x + y;
+          }
+
+          int result = Add(a, b); 
+          Console.WriteLine($"Sum: {result}");
+      }
+  }
+    /*
+   Output:
+   Sum: 10
+   */
+  //</snippet28>
+
+
+  //<snippet29>
+  class Calc2
+  {
+      static void Main()
+      {
+          Func<int, int, int> add = static (a, b) => a + b;
+
+          int result = add(5, 10);
+          Console.WriteLine($"Sum: {result}");
+      }
+  }
+  /*
+  Output:
+  Sum: 15
+  */
+  //</snippet29>
 }

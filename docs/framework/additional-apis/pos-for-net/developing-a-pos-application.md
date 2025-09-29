@@ -3,7 +3,7 @@ title: Developing a POS Application
 description: Developing a POS Application (POS for .NET v1.14 SDK Documentation)
 ms.date: 03/03/2014
 ms.topic: how-to
-ms.custom: "pos-restored-from-archive,UpdateFrequency5"
+ms.custom: "pos-restored-from-archive"
 ---
 
 # Developing a POS Application (POS for .NET v1.14 SDK Documentation)

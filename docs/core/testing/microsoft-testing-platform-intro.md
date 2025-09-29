@@ -41,7 +41,7 @@ The main driving factors for the evolution of the new testing platform are detai
 * MSTest. In MSTest, the support of `Microsoft.Testing.Platform` is done via [MSTest runner](unit-testing-mstest-runner-intro.md).
 * NUnit. In NUnit, the support of `Microsoft.Testing.Platform` is done via [NUnit runner](unit-testing-nunit-runner-intro.md).
 * xUnit.net: In xUnit.net, the support of `Microsoft.Testing.Platform` is done via [xUnit.net runner](https://xunit.net/docs/getting-started/v3/microsoft-testing-platform).
-* TUnit: entirely constructed on top of the `Microsoft.Testing.Platform`, for more information, see [TUnit documentation](https://thomhurst.github.io/TUnit/).
+* TUnit: entirely constructed on top of the `Microsoft.Testing.Platform`, for more information, see [TUnit documentation](https://tunit.dev/).
 
 ## Run and debug tests
 
@@ -251,7 +251,7 @@ The list below described only the platform options. To see the specific options 
 
   Prints out a description of how to use the command.
 
-- **`-ignore-exit-code`**
+- **`--ignore-exit-code`**
 
   Allows some non-zero exit codes to be ignored, and instead returned as `0`. For more information, see [Ignore specific exit codes](./microsoft-testing-platform-exit-codes.md#ignore-specific-exit-codes).
 
@@ -293,7 +293,7 @@ The list below described only the platform options. To see the specific options 
 
 The NuGet package [Microsoft.Testing.Platform.MSBuild](https://www.nuget.org/packages/Microsoft.Testing.Platform.MSBuild) provides various integrations for `Microsoft.Testing.Platform` with MSBuild:
 
-- Support for `dotnet test`. For more information, see [dotnet test integration](./microsoft-testing-platform-integration-dotnet-test.md).
+- Support for `dotnet test`. For more information, see [Testing with dotnet test](./unit-testing-with-dotnet-test.md).
 - Support for `ProjectCapability` required by `Visual Studio` and `Visual Studio Code` Test Explorers.
 - Automatic generation of the entry point (`Main` method).
 - Automatic generation of the configuration file.

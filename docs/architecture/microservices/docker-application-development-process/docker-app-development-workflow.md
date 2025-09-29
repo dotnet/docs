@@ -2,6 +2,7 @@
 title: Development workflow for Docker apps
 description: Learn details of the workflow for developing Docker-based applications. Optimize Dockerfiles and use the simplified workflow available in Visual Studio.
 ms.date: 09/10/2024
+ms.custom: sfi-image-nochange
 ---
 # Development workflow for Docker apps
 

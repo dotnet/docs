@@ -15,7 +15,7 @@ The standard query operator methods that group data elements are listed in the f
 
 |Method Name|Description|C# Query Expression Syntax|More Information|
 |-----------------|-----------------|---------------------------------|----------------------|
-|GroupBy|Groups elements that share a common attribute. An <xref:System.Linq.IGrouping%602> object represents each group.|`group … by`<br /><br /> -or-<br /><br /> `group … by … into …`|<xref:System.Linq.Enumerable.GroupBy%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.GroupBy%2A?displayProperty=nameWithType>|
+|GroupBy|Groups elements that share a common attribute. An <xref:System.Linq.IGrouping%602> object represents each group.|`group … by …`<br /><br /> -or-<br /><br /> `group … by … into …`|<xref:System.Linq.Enumerable.GroupBy%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.GroupBy%2A?displayProperty=nameWithType>|
 |ToLookup|Inserts elements into a <xref:System.Linq.Lookup%602> (a one-to-many dictionary) based on a key selector function.|Not applicable.|<xref:System.Linq.Enumerable.ToLookup%2A?displayProperty=nameWithType>|
 
 The following code example uses the `group by` clause to group integers in a list according to whether they're even or odd.
@@ -27,6 +27,8 @@ The equivalent query using method syntax is shown in the following code:
 :::code language="csharp" source="./snippets/standard-query-operators/GroupOverview.cs" id="OverviewSampleMethodSyntax":::
 
 [!INCLUDE [Datasources](../includes/data-sources-definition.md)]
+
+[!INCLUDE [Common Datasources reference](../includes/common-data-sources-reference.md)]
 
 ## Group query results
 

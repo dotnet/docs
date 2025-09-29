@@ -1,7 +1,7 @@
 ---
 title: "Sorry, we don't have specifics on this error"
 description: "List of possible resources for compiler errors and warnings that haven't been documented yet."
-ms.date: 02/20/2025
+ms.date: 05/23/2025
 f1_keywords:
   - "CS0190"
   - "CS0224"
@@ -18,7 +18,6 @@ f1_keywords:
   - "CS1669"
   - "CS1734"
   - "CS1735"
-  - "CS1743"
   - "CS1745"
   - "CS1747"
   - "CS1748"
@@ -119,7 +118,7 @@ f1_keywords:
   - "CS7019"
   - "CS7020"
   - "CS7021"
-  - "CS7022"
+  - "CS7022" # build only diagnostic
   - "CS7024"
   - "CS7025"
   - "CS7026"
@@ -131,7 +130,7 @@ f1_keywords:
   - "CS7033"
   - "CS7034"
   - "CS7035"
-  - "CS7038"
+  - "CS7038" # build only diagnostic
   - "CS7041"
   - "CS7042"
   - "CS7043"
@@ -174,23 +173,23 @@ f1_keywords:
   - "CS7098"
   - "CS7099"
   - "CS7100"
-  - "CS7101"
+  - "CS7101" # build only diagnostic
   - "CS7102"
   - "CS7103"
   - "CS8001"
   - "CS8002"
   - "CS8003"
-  - "CS8004"
-  - "CS8005"
-  - "CS8006"
-  - "CS8007"
-  - "CS8008"
+  - "CS8004" # build only diagnostic
+  - "CS8005" # build only diagnostic
+  - "CS8006" # build only diagnostic
+  - "CS8007" # build only diagnostic
+  - "CS8008" # build only diagnostic
   - "CS8009"
-  - "CS8010"
-  - "CS8011"
+  - "CS8010" # build only diagnostic
+  - "CS8011" # build only diagnostic
   - "CS8012"
-  - "CS8013"
-  - "CS8014"
+  - "CS8013" # build only diagnostic
+  - "CS8014" # build only diagnostic
   - "CS8015"
   - "CS8016"
   - "CS8017"
@@ -205,7 +204,7 @@ f1_keywords:
   - "CS8032"
   - "CS8033"
   - "CS8034"
-  - "CS8035"
+  - "CS8035" # build only diagnostic
   - "CS8036"
   - "CS8040"
   - "CS8050"
@@ -217,7 +216,7 @@ f1_keywords:
   - "CS8070"
   - "CS8076"
   - "CS8077"
-  - "CS8078"
+  - "CS8078" # build only diagnostic
   - "CS8079"
   - "CS8080"
   - "CS8081"
@@ -550,7 +549,6 @@ f1_keywords:
   - "CS9033"
   - "CS9034"
   - "CS9035"
-  - "CS9036"
   - "CS9037"
   - "CS9038"
   - "CS9039"
@@ -621,14 +619,23 @@ f1_keywords:
   - "CS9234"
   - "CS9235"
   - "CS9236"
-# C# 13 errors begin here
-  - "CS9268"
-  - "CS9269"
-  - "CS9270"
-  - "CS9271"
 # C# 14 errors begin here
-  - "CS9273"
-  - "CS9274"
+## Shebang
+  - "CS9297"
+  - "CS9298"
+  - "CS9299"
+## using `extension` as type name. (valid identifiers).
+  - "CS9306"
+## User defined operators
+  - "CS9308"
+  - "CS9310"
+  - "CS9311"
+  - "CS9312"
+  - "CS9313"
+## Shebang
+  - "CS9314"
+## Strings in the data section:
+  - "CS9315"
 helpviewer_keywords:
   - "errors [C#], additional information"
 ---

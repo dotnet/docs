@@ -2,7 +2,7 @@
 title: Unit testing and mocking with the Azure SDK for .NET
 description: Learn techniques and tools for unit testing and mocking the Azure SDK for .NET
 ms.custom: devx-track-dotnet, engagement-fy23, devx-track-arm-template
-ms.date: 07/05/2023
+ms.date: 04/25/2025
 ---
 
 # Unit testing and mocking with the Azure SDK for .NET
@@ -265,4 +265,4 @@ Here's how it works:
 
 * [Dependency injection in .NET](../../core/extensions/dependency-injection.md)
 * [Unit testing best practices](../../core/testing/unit-testing-best-practices.md)
-* [Unit testing C# in .NET using dotnet test and xUnit](../../core/testing/unit-testing-with-dotnet-test.md)
+* [Unit testing C# in .NET using dotnet test and xUnit](../../core/testing/unit-testing-csharp-with-xunit.md)

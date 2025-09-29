@@ -42,6 +42,20 @@ You cannot define a method inside the definition of an enumeration type. To add 
 
 The default value of an enumeration type `E` is the value produced by expression `(E)0`, even if zero doesn't have the corresponding enum member.
 
+## Implicit conversions from zero
+
+C# allows implicit conversions from the literal value `0` to any enum type, and from `const` values equal to zero. This behavior can lead to unexpected results when an enum doesn't include a member with the value zero:
+
+:::code language="csharp" source="snippets/shared/EnumType.cs" id="SnippetZeroConversions":::
+
+In the preceding example, both `port1` and `port2` are assigned the value `0`, but `GpioPort` has no member with that value. The <xref:System.Enum.IsDefined%2A?displayProperty=nameWithType> method confirms these are invalid enum values.
+
+This implicit conversion exists because the 0 bit pattern is the default for all struct types, including all enum types. However, it can introduce bugs in your code. To avoid these issues:
+
+- You should almost always define a member with value `0` in your enums.
+- Use <xref:System.Enum.IsDefined%2A?displayProperty=nameWithType> to validate enum values when converting from numeric types.
+- Be cautious when using numeric parameters that might be implicitly converted to enum types.
+
 You use an enumeration type to represent a choice from a set of mutually exclusive values or a combination of choices. To represent a combination of choices, define an enumeration type as bit flags.
 
 ## Enumeration types as bit flags
@@ -50,7 +64,7 @@ If you want an enumeration type to represent a combination of choices, define en
 
 [!code-csharp[enum flags](snippets/shared/EnumType.cs#Flags)]
 
-For more information and examples, see the <xref:System.FlagsAttribute?displayProperty=nameWithType> API reference page and the [Non-exclusive members and the Flags attribute](/dotnet/api/system.enum#non-exclusive-members-and-the-flags-attribute) section of the <xref:System.Enum?displayProperty=nameWithType> API reference page.
+For more information and examples, see the <xref:System.FlagsAttribute?displayProperty=nameWithType> API reference page and the [Non-exclusive members and the Flags attribute](../../../fundamentals/runtime-libraries/system-enum.md#non-exclusive-members-and-the-flags-attribute) section of the <xref:System.Enum?displayProperty=nameWithType> API reference page.
 
 ## The System.Enum type and enum constraint
 
@@ -73,9 +87,9 @@ For any enumeration type, there exist [boxing and unboxing](../../programming-gu
 For more information, see the following sections of the [C# language specification](~/_csharpstandard/standard/README.md):
 
 - [Enums](~/_csharpstandard/standard/enums.md)
-- [Enum values and operations](~/_csharpstandard/standard/enums.md#196-enum-values-and-operations)
-- [Enumeration logical operators](~/_csharpstandard/standard/expressions.md#12133-enumeration-logical-operators)
-- [Enumeration comparison operators](~/_csharpstandard/standard/expressions.md#12126-enumeration-comparison-operators)
+- [Enum values and operations](~/_csharpstandard/standard/enums.md#206-enum-values-and-operations)
+- [Enumeration logical operators](~/_csharpstandard/standard/expressions.md#12143-enumeration-logical-operators)
+- [Enumeration comparison operators](~/_csharpstandard/standard/expressions.md#12136-enumeration-comparison-operators)
 - [Explicit enumeration conversions](~/_csharpstandard/standard/conversions.md#1033-explicit-enumeration-conversions)
 - [Implicit enumeration conversions](~/_csharpstandard/standard/conversions.md#1024-implicit-enumeration-conversions)
 

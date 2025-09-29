@@ -8,7 +8,7 @@ ms.date: 07/11/2024
 
 # Microsoft.Testing.Platform capabilities
 
-In the context of the testing platform, a *capability* refers to the *potential to perform a specific action or provide specific information*. It's a means for the testing framework and extensions to *declare* their *ability* to *operate* in a certain manner or provide specific information to the *requesters*.
+In the context of Microsoft.Testing.Platform, a *capability* refers to the *potential to perform a specific action or provide specific information*. It's a means for the testing framework and extensions to *declare* their *ability* to *operate* in a certain manner or provide specific information to the *requesters*.
 
 The *requesters* can be any component involved in a test session, such as the platform, an extension, or the testing framework itself.
 
@@ -19,7 +19,7 @@ The primary objective of the capability system is to facilitate effective commun
 Let's consider a hypothetical example to demonstrate the necessity of a capability system.
 
 > [!NOTE]
-> This example is purely for illustrative purposes and isn't currently implemented within the testing platform or any testing framework.
+> This example is purely for illustrative purposes and isn't currently implemented within Microsoft.Testing.Platform or any testing framework.
 
 Imagine a situation where you have an extension that requires the testing framework to execute no more than one test at a time. Furthermore, after each test, the extension needs to know the CPU usage for that specific test.
 
@@ -28,7 +28,7 @@ To accommodate the preceding scenario, you need to inquire from the testing fram
 1. It has the capability to execute only one test at a time.
 2. It can provide information regarding the amount of CPU consumed by each test.
 
-How can the extension determine if the testing framework has the ability to operate in this mode and provide CPU usage information for a test session? In the testing platform, this capability is represented by an implementation the `Microsoft.Testing.Platform.Capabilities.ICapability` interface:
+How can the extension determine if the testing framework has the ability to operate in this mode and provide CPU usage information for a test session? In Microsoft.Testing.Platform, this capability is represented by an implementation the `Microsoft.Testing.Platform.Capabilities.ICapability` interface:
 
 ```csharp
 // Base capabilities contracts
@@ -111,7 +111,7 @@ In conclusion, let's summarize the primary aspects of the capability system:
 * It's essential for facilitating clear and stable communication between components.
 * All capabilities should inherit from `ICapability` or an interface that inherits from it, and are exposed through a collection with the `ICapabilities` interface.
 * It aids in the evolution of features without causing breaking changes. If a certain capability isn't supported, appropriate action can be taken.
-* The responsibility of designing, shipping, and documenting the usage of a capability lies with the *capability owner*. The testing platform can also *own* a capability in the same way as any other extension.
+* The responsibility of designing, shipping, and documenting the usage of a capability lies with the *capability owner*. Microsoft.Testing.Platform can also *own* a capability in the same way as any other extension.
 
 ## Framework capabilities
 

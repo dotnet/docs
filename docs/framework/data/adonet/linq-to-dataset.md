@@ -30,7 +30,7 @@ LINQ to DataSet makes it easier and faster to query over data cached in a <xref:
   
 ## See also
 
-- [Language-Integrated Query (LINQ) - C#](/dotnet/csharp/linq/)
+- [Language-Integrated Query (LINQ) - C#](../../../csharp/linq/index.md)
 - [Language-Integrated Query (LINQ) - Visual Basic](../../../visual-basic/programming-guide/concepts/linq/index.md)
 - [LINQ and ADO.NET](linq-and-ado-net.md)
 - [ADO.NET](index.md)

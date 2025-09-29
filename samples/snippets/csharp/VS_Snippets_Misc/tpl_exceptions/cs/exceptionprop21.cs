@@ -1,4 +1,4 @@
-﻿// <Snippet27>
+// <Snippet27>
 
 public static partial class Program
 {
@@ -10,9 +10,7 @@ public static partial class Program
             {
                 if (_.Exception?.InnerException is { } inner)
                 {
-                    Console.WriteLine("{0}: {1}",
-                        inner.GetType().Name,
-                        inner.Message);
+                    Console.WriteLine($"{inner.GetType().Name}: {inner.Message}");
                 }
             }, 
             TaskContinuationOptions.OnlyOnFaulted);

@@ -17,7 +17,7 @@ namespace DictionaryHowTo
         public int[] RecentHighTemperatures { get; set; } = new int[] { 0 };
 
         public bool Equals(CityInfo x, CityInfo y)
-            => (x.Name, x.Longitude, x.Latitude) == 
+            => (x.Name, x.Longitude, x.Latitude) ==
                   (y.Name, y.Longitude, y.Latitude);
 
         public int GetHashCode(CityInfo cityInfo) =>

@@ -126,7 +126,7 @@ The following example tests whether a type is marked as <xref:System.Runtime.Ver
 :::code language="csharp" source="./snippets/System.Runtime.Versioning/ComponentGuaranteesAttribute/Overview/csharp/apply1.cs" id="Snippet2":::
 :::code language="vb" source="./snippets/System.Runtime.Versioning/ComponentGuaranteesAttribute/Overview/vb/apply1.vb" id="Snippet2":::
 
-The following example tests wither a type is marked as <xref:System.Runtime.Versioning.ComponentGuaranteesOptions.None> (that is, neither <xref:System.Runtime.Versioning.ComponentGuaranteesOptions.Stable> nor <xref:System.Runtime.Versioning.ComponentGuaranteesOptions.Exchange>).
+The following example tests whether a type is marked as <xref:System.Runtime.Versioning.ComponentGuaranteesOptions.None> (that is, neither <xref:System.Runtime.Versioning.ComponentGuaranteesOptions.Stable> nor <xref:System.Runtime.Versioning.ComponentGuaranteesOptions.Exchange>).
 
 :::code language="csharp" source="./snippets/System.Runtime.Versioning/ComponentGuaranteesAttribute/Overview/csharp/apply1.cs" id="Snippet3":::
 :::code language="vb" source="./snippets/System.Runtime.Versioning/ComponentGuaranteesAttribute/Overview/vb/apply1.vb" id="Snippet3":::

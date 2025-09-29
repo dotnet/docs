@@ -585,8 +585,7 @@ namespace csrefLINQExamples
 
             foreach (var student in students)
             {
-                Console.WriteLine("The average score of {0} {1} is {2}.",
-                    student.FirstName, student.LastName, student.ExamScores.Average());
+                Console.WriteLine($"The average score of {student.FirstName} {student.LastName} is {student.ExamScores.Average()}.");
             }
 
             //Keep console window open in debug mode
@@ -796,7 +795,7 @@ namespace csrefLINQExamples
             // Nested foreach required to iterate over groups and group items.
             foreach (var studentGroup in queryNumericRange)
             {
-                Console.WriteLine("Key: {0}", (studentGroup.Key * 10));
+                Console.WriteLine($"Key: {(studentGroup.Key * 10)}");
                 foreach (var item in studentGroup)
                 {
                     Console.WriteLine("\t{0}, {1}", item.LastName, item.FirstName);
@@ -1084,7 +1083,7 @@ namespace csrefLINQExamples
                 default:
                     break;
             }
-            Console.WriteLine("The following students are at level {0}", year.ToString());
+            Console.WriteLine($"The following students are at level {year.ToString()}");
             foreach (Student name in studentQuery)
             {
                 Console.WriteLine($"{name.LastName}: {name.Id}");

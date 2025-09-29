@@ -84,8 +84,6 @@ The Azure cloud embraces Istio and provides direct support for it within Azure K
 
 - [Resilience in Azure whitepaper](https://azure.microsoft.com/mediahandler/files/resourcefiles/resilience-in-azure-whitepaper/Resilience%20in%20Azure.pdf)
 
-- [network latency](https://www.techopedia.com/definition/8553/network-latency)
-
 - [Redundancy](/azure/architecture/guide/design-principles/redundancy)
 
 - [geo-replication](/azure/sql-database/sql-database-active-geo-replication)

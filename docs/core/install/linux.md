@@ -34,7 +34,7 @@ The following Linux distributions publish their own .NET packages:
 - [CentOS Stream](linux-rhel.md#centos-stream-9)
 - [Fedora](linux-fedora.md)
 - [Red Hat Enterprise Linux (RHEL)](linux-rhel.md)
-- [Ubuntu](linux-ubuntu.md)
+- [Ubuntu](linux-ubuntu-install.md)
 
 ## Snap
 
@@ -63,7 +63,6 @@ You might need to install [.NET dependencies](https://github.com/dotnet/core/blo
 
 ### Package managers
 
-- <https://formulae.brew.sh/cask/dotnet>
 - <https://formulae.brew.sh/cask/dotnet-sdk>
 - <https://ports.macports.org/port/dotnet-cli>
 - <https://search.nixos.org/packages?query=dotnet>

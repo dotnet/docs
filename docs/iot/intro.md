@@ -2,7 +2,6 @@
 title: Develop apps for IoT devices with the .NET IoT Libraries
 description: Learn how .NET can be used to build applications for IoT devices and scenarios.
 author: camsoper
-ms.author: casoper
 ms.date: 07/31/2024
 ms.topic: overview
 ---
@@ -46,6 +45,10 @@ Some commonly used device bindings include:
 - [BrickPi3](https://github.com/dotnet/iot/tree/main/src/devices/BrickPi3)
 - [Max7219 - LED Matrix driver](https://github.com/dotnet/iot/tree/main/src/devices/Max7219)
 - [RGBLedMatrix - RGB LED Matrix](https://github.com/dotnet/iot/tree/main/src/devices/RGBLedMatrix)
+
+## A word on threads
+
+By default, the objects in these libraries **aren't thread safe**. That means that access to an object must only be from one thread at a time. When using the libraries, you must be aware that they often run other threads internally for things like monitoring hardware and firing events. If you subscribe to an event, it's fired from a different thread. It's your responsibility to control thread access to the object.
 
 ## Supported operating systems
 

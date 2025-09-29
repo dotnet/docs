@@ -19,7 +19,7 @@ ms.assetid: 340d5fbb-4f43-48ec-a024-80843c137817
 ---
 # With...End With Statement (Visual Basic)
 
-Executes a series of statements that repeatedly refer to a single object or structure so that the statements can use a simplified syntax when accessing members of the object or structure.  When using a structure, you can only read the values of members or invoke methods, and you get an error if you try to assign values to members of a structure used in a `With...End With` statement.
+Executes a series of statements that repeatedly refer to a single object or structure so that the statements can use a simplified syntax when accessing members of the object or structure.
 
 ## Syntax
 
@@ -49,7 +49,7 @@ If your code accesses the same object in multiple statements, you gain the follo
 
 - You make your code more readable by eliminating repetitive qualifying expressions.
 
-The data type of `objectExpression` can be any class or structure type or even a Visual Basic elementary type such as `Integer`.  If `objectExpression` results in anything other than an object, you can only read the values of its members or invoke methods, and you get an error if you try to assign values to members of a structure used in a `With...End With` statement.  This is the same error you would get if you invoked a method that returned a structure and immediately accessed and assigned a value to a member of the function’s result, such as `GetAPoint().x = 1`.  The problem in both cases is that the structure exists only on the call stack, and there is no way a modified structure member in these situations can write to  a location such that any other code in the program can observe the change.
+The data type of `objectExpression` can be any class or structure type or even a Visual Basic elementary type such as `Integer`.  If `objectExpression` is a structure, the ability to assign to its members depends on whether the structure expression is referenceable. You can assign to members of structures that are directly referenceable (such as variables, array elements, or fields), but you get an error if you try to assign values to members of structures that are returned by value from functions, properties, or operators, or when parentheses are used to cut reference ties (for example, `With (structureVariable)`).  This is the same error you would get if you invoked a method that returned a structure and immediately accessed and assigned a value to a member of the function's result, such as `GetAPoint().x = 1`.  The problem in both cases is that the structure exists only on the call stack, and there is no way a modified structure member in these situations can write to a location such that any other code in the program can observe the change.
 
 The `objectExpression` is evaluated once, upon entry into the block. You can't reassign the `objectExpression` from within the `With` block.
 
@@ -77,6 +77,12 @@ In the following example, each `With` block executes a series of statements on a
 The following example nests `With…End With` statements. Within the nested `With` statement, the syntax refers to the inner object.
 
 [!code-vb[VbVbalrWithStatement#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/vbvbalrwithstatement/vb/mainwindow.xaml.vb#1)]
+
+## Example 3
+
+The following example demonstrates how `With...End With` statements work with structures. You can assign to members of referenceable structures (like array elements), but not to structures returned by value or when parentheses are used.
+
+[!code-vb[VbVbalrWithStatement#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/vbvbalrwithstatement/vb/mainwindow.xaml.vb#3)]
 
 ## See also
 

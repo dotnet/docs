@@ -186,11 +186,9 @@ namespace Overview
 
          // Print the sum of both batches.
 
-         Console.WriteLine("The sum of the elements in batch 1 is {0}.",
-            batchBlock.Receive().Sum());
+         Console.WriteLine($"The sum of the elements in batch 1 is {batchBlock.Receive().Sum()}.");
 
-         Console.WriteLine("The sum of the elements in batch 2 is {0}.",
-            batchBlock.Receive().Sum());
+         Console.WriteLine($"The sum of the elements in batch 2 is {batchBlock.Receive().Sum()}.");
 
          /* Output:
             The sum of the elements in batch 1 is 45.
@@ -339,8 +337,7 @@ namespace Overview
             // exceptions are propagated through an AggregateException object.
             ae.Handle(e =>
             {
-               Console.WriteLine("Encountered {0}: {1}",
-                  e.GetType().Name, e.Message);
+               Console.WriteLine($"Encountered {e.GetType().Name}: {e.Message}");
                return true;
             });
          }
@@ -394,8 +391,7 @@ namespace Overview
             // exceptions are propagated through an AggregateException object.
             ae.Handle(e =>
             {
-               Console.WriteLine("Encountered {0}: {1}",
-                  e.GetType().Name, e.Message);
+               Console.WriteLine($"Encountered {e.GetType().Name}: {e.Message}");
                return true;
             });
          }

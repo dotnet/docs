@@ -1,11 +1,8 @@
 ---
 title: Quickstart - Generate images using AI with .NET
 description: Create a simple app using to generate images using .NET and the OpenAI or Azure OpenAI models.
-ms.date: 07/17/2024
+ms.date: 04/09/2025
 ms.topic: quickstart
-ms.custom: devx-track-dotnet, devx-track-dotnet-ai
-author: fboucher
-ms.author: frbouche
 zone_pivot_groups: openai-library
 # CustomerIntent: As a .NET developer new to OpenAI, I want deploy and use sample code to interact to learn from the sample code to generate images.
 ---
@@ -27,8 +24,6 @@ In this quickstart, you learn how to create a .NET console app to generate image
 :::zone-end
 
 [!INCLUDE [semantic-kernel](includes/semantic-kernel.md)]
-
-[!INCLUDE [clone-sample-repo](includes/clone-sample-repo.md)]
 
 ## Create the app
 
@@ -52,6 +47,7 @@ Complete the following steps to create a .NET console app to connect to an AI mo
 
     ```bash
     dotnet add package Azure.AI.OpenAI
+    dotnet add package Azure.Identity
     dotnet add package Microsoft.Extensions.Configuration
     dotnet add package Microsoft.Extensions.Configuration.UserSecrets
     ```
@@ -90,22 +86,22 @@ Complete the following steps to create a .NET console app to connect to an AI mo
 
     ```bash
     dotnet user-secrets init
-    dotnet user-secrets set OpenAIKey <your-openai-key>
-    dotnet user-secrets set ModelName <your-openai-model-name>
+    dotnet user-secrets set OpenAIKey <your-OpenAI-key>
+    dotnet user-secrets set ModelName <your-OpenAI-model-name>
     ```
 
 :::zone-end
 
 ## Add the app code
 
-1. In the **Program.cs** file, add the following code to connect and authenticate to the AI model.
+1. In the `Program.cs` file, add the following code to connect and authenticate to the AI model.
 
     :::zone target="docs" pivot="azure-openai"
 
     :::code language="csharp" source="snippets/image-generation/azure-openai/program.cs" :::
 
     > [!NOTE]
-    > <xref:Azure.Identity.DefaultAzureCredential> searches for authentication credentials from your local tooling. If you aren't using the `azd` template to provision the Azure OpenAI resource, you'll need to assign the `Azure AI Developer` role to the account you used to sign-in to Visual Studio or the Azure CLI. For more information, see [Authenticate to Azure AI services with .NET](/dotnet/ai/azure-ai-services-authentication).
+    > <xref:Azure.Identity.DefaultAzureCredential> searches for authentication credentials from your local tooling. If you aren't using the `azd` template to provision the Azure OpenAI resource, you'll need to assign the `Azure AI Developer` role to the account you used to sign-in to Visual Studio or the Azure CLI. For more information, see [Authenticate to Azure AI services with .NET](../azure-ai-services-authentication.md).
 
     :::zone-end
 
@@ -117,12 +113,12 @@ Complete the following steps to create a .NET console app to connect to an AI mo
 
     The preceding code:
 
-    - Reads essential configuration values from the project user secrets to connect to the AI model
-    - Creates an `ImageClient` to connect to the AI model
-    - Sends a prompt to the model that describes the desired image
-    - Prints the URL of the generated image to the console output
+    - Reads essential configuration values from the project user secrets to connect to the AI model.
+    - Creates an `OpenAI.Images.ImageClient` to connect to the AI model.
+    - Sends a prompt to the model that describes the desired image.
+    - Prints the URL of the generated image to the console output.
 
-1. Use the `dotnet run` command to run the app:
+1. Run the app:
 
     ```dotnetcli
     dotnet run
@@ -134,15 +130,14 @@ Complete the following steps to create a .NET console app to connect to an AI mo
 
 ## Clean up resources
 
-When you no longer need the sample application or resources, remove the corresponding deployment and all resources.
+If you no longer need them, delete the Azure OpenAI resource and GPT-4 model deployment.
 
-```azdeveloper
-azd down
-```
+1. In the [Azure Portal](https://aka.ms/azureportal), navigate to the Azure OpenAI resource.
+1. Select the Azure OpenAI resource, and then select **Delete**.
 
 :::zone-end
 
 ## Next steps
 
-- [Quickstart - Build an AI chat app with .NET](/dotnet/ai/quickstarts/build-chat-app)
+- [Quickstart - Build an AI chat app with .NET](build-chat-app.md)
 - [Generate text and conversations with .NET and Azure OpenAI Completions](/training/modules/open-ai-dotnet-text-completions/)

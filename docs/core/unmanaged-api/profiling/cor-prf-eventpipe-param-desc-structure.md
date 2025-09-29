@@ -27,11 +27,11 @@ typedef struct
 
 ## Members
 
-|Member|Description|
+| Member | Description |
 |------------|-----------------|
-|`type`|The type of the parameter.|
-|`elementType`|The element type if this parameter is an array type.|
-|`name`|A wide character string containing the name of the parameter.|
+| `type` | The type of the parameter. |
+| `elementType` | The element type if this parameter is an array type. |
+| `name` | A wide character string containing the name of the parameter. |
 
 ## Remarks
 

@@ -106,9 +106,9 @@ A format string is a string whose contents are determined dynamically at run tim
 
 ### String interpolation
 
-You declare [*Interpolated strings*](../../language-reference/tokens/interpolated.md) with the `$` special character. An interpolated string includes interpolated expressions in braces. If you're new to string interpolation, see the [String interpolation - C# interactive tutorial](../../tutorials/exploration/interpolated-strings.yml) for a quick overview.
+You declare [*Interpolated strings*](../../language-reference/tokens/interpolated.md) with the `$` special character. An interpolated string includes interpolated expressions in braces. If you're new to string interpolation, see the [String interpolation - C# tutorial](../../tutorials/string-interpolation.md) for several examples.
 
-Use string interpolation to improve the readability and maintainability of your code. String interpolation achieves the same results as the `String.Format` method, but improves ease of use and inline clarity.
+Use string interpolation to improve the readability and maintainability of your code. String interpolation achieves the same results as the `String.Format` method, but is easier to use and improves inline clarity.
 
 :::code language="csharp" source="./snippets/StringInterpolation.cs" id="StringInterpolation":::
 
@@ -132,7 +132,7 @@ The <xref:System.String.Format%2A?displayProperty=nameWithType> utilizes placeho
 
 :::code language="csharp" source="./snippets/StringInterpolation.cs" id="StringFormat":::
 
-For more information on formatting .NET types, see [Formatting Types in .NET](../../../standard/base-types/formatting-types.md).
+For more information, see [Composite formatting in .NET](../../../standard/base-types/composite-formatting.md).
 
 ## Substrings
 
@@ -149,6 +149,8 @@ You can use array notation with an index value to acquire read-only access to in
 If the <xref:System.String> methods don't provide the functionality that you must have to modify individual characters in a string, you can use a <xref:System.Text.StringBuilder> object to modify the individual chars "in-place," and then create a new string to store the results by using the <xref:System.Text.StringBuilder> methods. In the following example, assume that you must modify the original string in a particular way and then store the results for future use:
 
 :::code language="csharp" source="./snippets/StringCharacters.cs" id="AccessChars":::
+
+For more information about indices, see the [Explore indexes and ranges](../../tutorials/ranges-indexes.md) article.
 
 ## Null strings and empty strings
 

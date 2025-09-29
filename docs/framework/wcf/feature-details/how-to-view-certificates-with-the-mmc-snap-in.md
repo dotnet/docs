@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "certificates [WCF], viewing with the MMC snap-in"
 ms.assetid: 2b8782aa-ebb4-4ee7-974b-90299e356dc5
 no-loc: [certlm.msc, certmgr.msc]
+ms.custom: sfi-image-nochange
 ---
 # How to: View certificates with the MMC snap-in
 

@@ -3,17 +3,21 @@ using Microsoft.Extensions.AI;
 using Azure.AI.OpenAI;
 using Azure.Identity;
 
-var config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
+// <SnippetGetChatClient>
+IConfigurationRoot config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
 string endpoint = config["AZURE_OPENAI_ENDPOINT"];
 string deployment = config["AZURE_OPENAI_GPT_NAME"];
 
 IChatClient chatClient =
     new AzureOpenAIClient(new Uri(endpoint), new DefaultAzureCredential())
-        .AsChatClient(deployment);
+    .GetChatClient(deployment)
+    .AsIChatClient();
+// </SnippetGetChatClient>
 
+// <SnippetFirstMessage>
 // Start the conversation with context for the AI model
-List<ChatMessage> chatHistory = new()
-    {
+List<ChatMessage> chatHistory =
+    [
         new ChatMessage(ChatRole.System, """
             You are a friendly hiking enthusiast who helps people discover fun hikes in their area.
             You introduce yourself when first saying hello.
@@ -28,19 +32,21 @@ List<ChatMessage> chatHistory = new()
             the local nature on the hikes when making a recommendation. At the end of your
             response, ask if there is anything else you can help with.
         """)
-    };
+    ];
+// </SnippetFirstMessage>
 
+// <SnippetChatLoop>
 while (true)
 {
     // Get user prompt and add to chat history
     Console.WriteLine("Your prompt:");
-    var userPrompt = Console.ReadLine();
+    string? userPrompt = Console.ReadLine();
     chatHistory.Add(new ChatMessage(ChatRole.User, userPrompt));
 
     // Stream the AI response and add to chat history
     Console.WriteLine("AI Response:");
-    var response = "";
-    await foreach (var item in
+    string response = "";
+    await foreach (ChatResponseUpdate item in
         chatClient.GetStreamingResponseAsync(chatHistory))
     {
         Console.Write(item.Text);
@@ -49,3 +55,4 @@ while (true)
     chatHistory.Add(new ChatMessage(ChatRole.Assistant, response));
     Console.WriteLine();
 }
+// </SnippetChatLoop>

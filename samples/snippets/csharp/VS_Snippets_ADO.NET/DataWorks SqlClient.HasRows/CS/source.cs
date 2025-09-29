@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Data.SqlClient;
 
 namespace NextResultCS;
@@ -28,8 +28,7 @@ static class Program
             {
                 while (reader.Read())
                 {
-                    Console.WriteLine("{0}\t{1}", reader.GetInt32(0),
-                        reader.GetString(1));
+                    Console.WriteLine($"{reader.GetInt32(0)}\t{reader.GetString(1)}");
                 }
             }
             else

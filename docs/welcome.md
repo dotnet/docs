@@ -15,15 +15,13 @@ You can build many types of apps with .NET, such as cloud, IoT, and games, using
 For news about .NET, check the following blogs:
 
 - [.NET Blog](https://devblogs.microsoft.com/dotnet/)
-- [ASP.NET Blog](https://devblogs.microsoft.com/aspnet/)
 - [The Visual Studio Blog](https://devblogs.microsoft.com/visualstudio/)
-- [The Visual Basic Team](https://devblogs.microsoft.com/vbteam/)
 
 Also follow the latest .NET events:
 
 - [.NET Conf](https://www.dotnetconf.net/)
-- [Microsoft Ignite](https://www.microsoft.com/ignite)
-- [Microsoft Build](https://www.microsoft.com/build)
+- [Microsoft Ignite](https://ignite.microsoft.com/)
+- [Microsoft Build](https://build.microsoft.com/)
 
 For information about the latest features added to the .NET implementations and supported languages, see the following articles:
 

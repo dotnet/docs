@@ -2,7 +2,7 @@
 title: .NET API changes that affect compatibility
 description: Learn how .NET attempts to maintain compatibility for developers across .NET versions, and what kind of change is considered a breaking change.
 ms.date: 05/12/2021
-ms.topic: conceptual
+ms.topic: article
 ---
 # Change rules for compatibility
 

@@ -1377,14 +1377,12 @@ namespace ObjectServicesConceptsCS
                     ObjectStateEntry stateEntry =
                         context.ObjectStateManager
                         .GetObjectStateEntry(order);
-                    Console.WriteLine("State before SaveChanges() is called: {0}",
-                        stateEntry.State.ToString());
+                    Console.WriteLine($"State before SaveChanges() is called: {stateEntry.State.ToString()}");
 
                     // Save changes in the object context to the database.
                     int changes = context.SaveChanges();
 
-                    Console.WriteLine("State after SaveChanges() is called: {0}",
-                        stateEntry.State.ToString());
+                    Console.WriteLine($"State after SaveChanges() is called: {stateEntry.State.ToString()}");
 
                     Console.WriteLine(changes.ToString() + " changes saved!");
                     Console.WriteLine("Updated item for order ID: "
@@ -1813,8 +1811,7 @@ namespace ObjectServicesConceptsCS
                     select order;
 
                 // Write the number of orders placed online.
-                Console.WriteLine("{0} orders placed online have been shipped.",
-                    shippedOrders.Count());
+                Console.WriteLine($"{shippedOrders.Count()} orders placed online have been shipped.");
             }
             //</snippetQueryEntityCollection>
         }
@@ -1843,8 +1840,7 @@ namespace ObjectServicesConceptsCS
                     select orders;
 
                 // Write the number of orders placed online.
-                Console.WriteLine("{0} orders placed online have been shipped.",
-                    shippedOrders.Count());
+                Console.WriteLine($"{shippedOrders.Count()} orders placed online have been shipped.");
 
                 // You do not have to call the Load method to load the orders for the customer,
                 // because  lazy loading is set to true

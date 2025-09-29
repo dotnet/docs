@@ -2,7 +2,8 @@
 title: "Example: Use OpenTelemetry with OTLP and the standalone Aspire Dashboard"
 description: An introduction to observing .NET apps with OTLP and the standalone Aspire Dashboard
 ms.date: 6/14/2023
-ms.topic: conceptual
+ms.topic: article
+ms.custom: sfi-image-nochange
 ---
 
 # Example: Use OpenTelemetry with OTLP and the standalone Aspire Dashboard
@@ -74,7 +75,7 @@ It then registers the OTLP exporter using env vars for its configuration.
 
 The OTLP exporter can be configured via APIs in code, but its more common to configure it via environment variables. Add the following to _AppSettings.Development.json_
 
-``` josn
+``` json
 "OTEL_EXPORTER_OTLP_ENDPOINT": "http://localhost:4317",
 "OTEL_SERVICE_NAME": "OTLP-Example"
 ```
@@ -98,7 +99,7 @@ mcr.microsoft.com/dotnet/aspire-dashboard:latest
 
 Data displayed in the dashboard can be sensitive. By default, the dashboard is secured with authentication that requires a token to login. The token is displayed in the resulting output when running the container.
 
-[![Aspire Dashboard](./media/aspire-dashboard-auth.png)]
+[![Aspire Dashboard](./media/aspire-dashboard-auth.png)](./media/aspire-dashboard-auth.png#lightbox)
 
 Copy the url shown, and replace `0.0.0.0` with `localhost`, eg `http://localhost:18888/login?t=123456780abcdef123456780` and open that in your browser, or you can also paste the key after `/login?t=` when the login dialog is shown. The token will change each time you start the container.
 

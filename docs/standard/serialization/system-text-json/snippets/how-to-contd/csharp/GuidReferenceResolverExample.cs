@@ -49,7 +49,7 @@ namespace GuidReferenceResolverExample
 
     static class Program
     {
-        public static void Main()
+        public static void Run()
         {
             Person tyler = new() { Id = Guid.NewGuid(), Name = "Tyler" };
             Person adrian = new() { Id = Guid.NewGuid(), Name = "Adrian" };

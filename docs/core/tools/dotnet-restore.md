@@ -1,11 +1,11 @@
 ---
 title: dotnet restore command
 description: Learn how to restore dependencies and project-specific tools with the dotnet restore command.
-ms.date: 07/19/2023
+ms.date: 09/24/2025
 ---
 # dotnet restore
 
-**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
+**This article applies to:** ✔️ .NET 6 and later versions
 
 ## Name
 
@@ -14,14 +14,14 @@ ms.date: 07/19/2023
 ## Synopsis
 
 ```dotnetcli
-dotnet restore [<ROOT>] [--configfile <FILE>] [--disable-build-servers]
+dotnet restore [<PROJECT>|<SOLUTION>|<FILE>] [--configfile <FILE>] [--disable-build-servers]
     [--disable-parallel]
     [-f|--force] [--force-evaluate] [--ignore-failed-sources]
     [--interactive] [--lock-file-path <LOCK_FILE_PATH>] [--locked-mode]
     [--no-cache] [--no-dependencies] [--packages <PACKAGES_DIRECTORY>]
     [-r|--runtime <RUNTIME_IDENTIFIER>] [-s|--source <SOURCE>]
     [--tl:[auto|on|off]] [--use-current-runtime, --ucr [true|false]]
-    [--use-lock-file] [-v|--verbosity <LEVEL>]
+    [--use-lock-file] [-a|--arch <ARCHITECTURE>] [--os <OS>] [-v|--verbosity <LEVEL>]
 
 dotnet restore -h|--help
 ```
@@ -86,9 +86,7 @@ There are three specific settings that `dotnet restore` ignores:
 
 ## Arguments
 
-- **`ROOT`**
-
-  Optional path to the project file to restore.
+[!INCLUDE [arguments-project-solution-file](../../../includes/cli-arguments-project-solution-file.md)]
 
 ## Options
 
@@ -156,6 +154,18 @@ There are three specific settings that `dotnet restore` ignores:
 
   Enables project lock file to be generated and used with restore.
 
+- **`-a|--arch`**
+
+  Specifies the target architecture.This is a shorthand syntax for setting the Runtime Identifier (RID), where the provided value is combined with the default RID. For example, on a `win-x64` machine, specifying `--arch arm64` sets the RID to `win-arm64`.
+
+  Introduced in .NET SDK 8.0.100
+
+- **`--os`**
+
+  Specifies the target operating system (OS).This is a shorthand syntax for setting the Runtime Identifier (RID), where the provided value is combined with the default RID. For example, on a `win-x64` machine, specifying `--os linux` sets the RID to `linux-x64`.
+
+  Introduced in .NET SDK 10.0.100
+
 [!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
 
 ## Examples
@@ -172,19 +182,19 @@ There are three specific settings that `dotnet restore` ignores:
   dotnet restore ./projects/app1/app1.csproj
   ```
 
-- Restore the dependencies and tools for the project in the current   directory using the file path provided as the source:
+- Restore the dependencies and tools for the project in the current directory using the file path provided as the source:
 
   ```dotnetcli
   dotnet restore -s c:\packages\mypackages
   ```
 
-- Restore the dependencies and tools for the project in the current   directory using the two file paths provided as sources:
+- Restore the dependencies and tools for the project in the current directory using the two file paths provided as sources:
 
   ```dotnetcli
   dotnet restore -s c:\packages\mypackages -s c:\packages\myotherpackages
   ```
 
-- Restore dependencies and tools for the project in the current directory   showing detailed output:
+- Restore dependencies and tools for the project in the current directory showing detailed output:
 
   ```dotnetcli
   dotnet restore --verbosity detailed
@@ -206,6 +216,6 @@ To retrieve the known vulnerability dataset, ensure that you have the NuGet.org 
 
 You can configure the level at which auditing will fail by setting the `<NuGetAuditLevel>` MSBuild property. Possible values are `low`, `moderate`, `high`, and `critical`. For example if you only want to see moderate, high, and critical advisories, you can set the property to `moderate`.
 
-Starting in .NET 9, NuGet audits both *direct* and *transitive* package references, by default. In .NET 8, only *direct* package references are audited. You can change the mode by setting the `<NuGetAuditMode>` MSBuild property to `direct` or `all`.
+In .NET 8 and .NET 9, only *direct* package references are audited by default. Starting in .NET 10, NuGet audits both *direct* and *transitive* package references by default. You can change the mode by setting the `<NuGetAuditMode>` MSBuild property to `direct` or `all`.
 
 For more information, see [Auditing package dependencies for security vulnerabilities](/nuget/concepts/auditing-packages).

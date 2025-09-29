@@ -1,4 +1,4 @@
-﻿// <snippet13>
+// <snippet13>
 public static partial class Program
 {
     public static void TaskExceptionTwo()
@@ -11,8 +11,7 @@ public static partial class Program
         {
             foreach (var e in ae.InnerExceptions)
             {
-                Console.WriteLine(
-                    "{0}:\n   {1}", e.GetType().Name, e.Message);
+                Console.WriteLine($"{e.GetType().Name}:\n   {e.Message}");
             }
         }
     }

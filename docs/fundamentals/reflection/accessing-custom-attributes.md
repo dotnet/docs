@@ -5,12 +5,10 @@ ms.date: 03/27/2024
 dev_langs:
   - "csharp"
   - "vb"
-  - "cpp"
 helpviewer_keywords:
   - "custom attributes, accessibility"
   - "attributes [.NET], accessing"
   - "reflection, custom attributes"
-ms.assetid: 1d8e3398-00d8-47d5-a084-214f9859d3d7
 ---
 # Access custom attributes
 
@@ -61,7 +59,6 @@ The custom attribute reflection model could leak instances of user-defined types
 
 The following example demonstrates the basic way of using reflection to get access to custom attributes.
 
-[!code-cpp[CustomAttributeData#2](../../../samples/snippets/cpp/VS_Snippets_CLR/CustomAttributeData/CPP/source2.cpp#2)]
 [!code-csharp[CustomAttributeData#2](../../../samples/snippets/csharp/VS_Snippets_CLR/CustomAttributeData/CS/source2.cs#2)]
 [!code-vb[CustomAttributeData#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/CustomAttributeData/VB/source2.vb#2)]
 

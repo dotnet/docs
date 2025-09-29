@@ -1,7 +1,7 @@
 ---
 title: Code-style language and unnecessary code rules
 description: Learn about the different code-style rules for using C# and Visual Basic language constructs and for finding unnecessary code.
-ms.date: 11/08/2024
+ms.date: 03/25/2025
 helpviewer_keywords:
 - language code style rules [EditorConfig]
 - language rules
@@ -141,6 +141,7 @@ C# style rules:
 - [Convert `typeof` to `nameof` (IDE0082)](ide0082.md)
 - [Remove unnecessary equality operator (IDE0100)](ide0100.md)
 - [Simplify LINQ expression (IDE0120)](ide0120.md)
+- [Simplify LINQ type check and cast (IDE0121)](ide0121.md)
 - [Namespace does not match folder structure (IDE0130)](ide0130.md)
 
 C# style rules:
@@ -166,8 +167,11 @@ C# style rules:
 - [Use collection expression for empty (IDE0301)](ide0301.md)
 - [Use collection expression for stack alloc (IDE0302)](ide0302.md)
 - [Use collection expression for `Create()` (IDE0303)](ide0303.md)
-- [Use collection expression for builder (IDE0304](ide0304.md)
+- [Use collection expression for builder (IDE0304)](ide0304.md)
 - [Use collection expression for fluent (IDE0305)](ide0305.md)
+- [Use collection expression for new (IDE0306)](ide0306.md)
+- [Use unbound generic type (IDE0340)](ide0340.md)
+- [Use implicitly typed lambda (IDE0350)](ide0350.md)
 
 Visual Basic style rules:
 
@@ -204,13 +208,20 @@ C# style rules:
 
 ### New-line preferences
 
-- Allow multiple blank lines (IDE2000)
-- Allow embedded statements on same line (IDE2001)
-- Allow blank lines between consecutive braces (IDE2002)
-- Allow statement immediately after block (IDE2003)
-- Allow blank line after colon in constructor initializer (IDE2004)
-- Allow blank line after token in conditional expression (IDE2005)
-- Allow blank line after token in arrow expression (IDE2006)
+.NET style rules (C# and Visual Basic):
+
+- [Avoid multiple blank lines (IDE2000)](ide2000.md)†
+- [Blank line required between block and subsequent statement (IDE2003)](ide2003.md)†
+
+C# style rules:
+
+- [Embedded statements must be on their own line (IDE2001)](ide2001.md)†
+- [Consecutive braces must not have blank line between them (IDE2002)](ide2002.md)†
+- [Blank line not allowed after constructor initializer colon (IDE2004)](ide2004.md)†
+- [Blank line not allowed after conditional expression token (IDE2005)](ide2005.md)†
+- [Blank line not allowed after arrow expression clause token (IDE2006)](ide2006.md)†
+
+†These rules are experimental and subject to change or removal.
 
 ### Null-checking preferences
 

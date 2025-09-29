@@ -10,7 +10,6 @@ helpviewer_keywords:
   - "objects, serializing"
 ms.topic: how-to
 zone_pivot_groups: dotnet-version
-ms.collection: ce-skilling-ai-copilot
 ms.custom: copilot-scenario-highlight
 ---
 
@@ -24,8 +23,8 @@ The `System.Text.Json` namespace provides functionality for serializing to and d
 * .NET Framework 4.6.2 and later versions
 * .NET Core 2.0, 2.1, and 2.2
 
->[!TIP]
-> You can use AI assistance to [migrate from `Newtonsoft.Json` with GitHub Copilot](#use-github-copilot-to-migrate).
+> [!TIP]
+> You can use AI assistance to [migrate from `Newtonsoft.Json`](#use-ai-to-migrate).
 
 `System.Text.Json` focuses primarily on performance, security, and standards compliance. It has some key differences in default behavior and doesn't aim to have feature parity with `Newtonsoft.Json`. For some scenarios, `System.Text.Json` currently has no built-in functionality, but there are recommended workarounds. For other scenarios, workarounds are impractical.
 
@@ -381,7 +380,7 @@ Starting in .NET 7, you can use the C# `required` modifier or the <xref:System.T
 * The `DateTimeZoneHandling` setting can be used to serialize all `DateTime` values as UTC dates.
 * The `DateFormatString` setting and `DateTime` converters can be used to customize the format of date strings.
 
-<xref:System.Text.Json?displayProperty=fullName> supports ISO 8601-1:2019, including the RFC 3339 profile. This format is widely adopted, unambiguous, and makes round trips precisely. To use any other format, create a custom converter. For example, the following converters serialize and deserialize JSON that uses Unix epoch format with or without a time zone offset (values such as `/Date(1590863400000-0700)/` or `/Date(1590863400000)/`):
+<xref:System.Text.Json> supports ISO 8601-1:2019, including the RFC 3339 profile. This format is widely adopted, unambiguous, and makes round trips precisely. To use any other format, create a custom converter. For example, the following converters serialize and deserialize JSON that uses Unix epoch format with or without a time zone offset (values such as `/Date(1590863400000-0700)/` or `/Date(1590863400000)/`):
 
 :::code language="csharp" source="snippets/how-to-contd/csharp/CustomConverterUnixEpochDate.cs" id="ConverterOnly":::
 
@@ -464,7 +463,7 @@ In .NET 8 and later versions, you can set your preference for whether to skip or
 
 ### JsonObjectAttribute
 
-`Newtonsoft.Json` has an attribute, `JsonObjectAttribute`, that can be applied at the *type level* to control which members are serialized, how `null` values are handled, and whether all members are required. System.Text.Json has no equivalent attribute that can be applied on a type. For some behaviors, such as `null` value handling, you can either configure the same behavior on the global <xref:System.Text.Json.JsonSerializerOptions> or individually on each property.
+`Newtonsoft.Json` has an attribute, `JsonObjectAttribute`, that can be applied at the *type level* to control which members are serialized, how `null` values are handled, and whether all members are required. System.Text.Json has no equivalent attribute that can be applied on a type. For some behaviors, such as `null` value handling, you can configure the same behavior either on the global <xref:System.Text.Json.JsonSerializerOptions> or individually on each property using <xref:System.Text.Json.Serialization.JsonIgnoreAttribute>.
 
 Consider the following example that uses `Newtonsoft.Json.JsonObjectAttribute` to specify that all `null` properties should be ignored:
 
@@ -515,6 +514,15 @@ public class Person
     public required int? Age { get; set; }
 }
 ```
+
+Finally, consider the following example that uses `Newtonsoft.Json.JsonObjectAttribute` to specify a title for JSON schema generation:
+
+```csharp
+[JsonObject(Title = "PersonTitle")]
+public class Person { ... }
+```
+
+The `Title` property is used for JSON schema metadata and doesn't have a direct equivalent in System.Text.Json. Starting in .NET 9, you can use the <xref:System.Text.Json.Schema.JsonSchemaExporter> to generate JSON schemas and customize the schema title using the <xref:System.Text.Json.Schema.JsonSchemaExporterOptions.TransformSchemaNode%2A> delegate. For an example, see [Transform the generated schema](extract-schema.md#transform-the-generated-schema).
 
 ### TraceWriter
 
@@ -631,9 +639,9 @@ System.Text.Json sets limits that can't be changed for some values, such as the 
 
 Newtonsoft parses `NaN`, `Infinity`, and `-Infinity` JSON string tokens. With System.Text.Json, use <xref:System.Text.Json.Serialization.JsonNumberHandling.AllowNamedFloatingPointLiterals?displayProperty=nameWithType>. For information about how to use this setting, see [Allow or write numbers in quotes](invalid-json.md#allow-or-write-numbers-in-quotes).
 
-## Use GitHub Copilot to migrate
+## Use AI to migrate
 
-You can get coding help from GitHub Copilot to migrate your code from `Newtonsoft.Json` to `System.Text.Json` within your IDE. You can customize the prompt per your requirements.
+You can use AI tools, such as GitHub Copilot, to migrate your code from `Newtonsoft.Json` to `System.Text.Json` within your IDE. You can customize the prompt per your requirements.
 
 **Example prompt for Copilot Chat**
 
@@ -652,9 +660,9 @@ Console.WriteLine(output);
 
 GitHub Copilot is powered by AI, so surprises and mistakes are possible. For more information, see [Copilot FAQs](https://aka.ms/copilot-general-use-faqs).
 
-Learn more about [GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states) and [GitHub Copilot in VS Code](https://code.visualstudio.com/docs/copilot/overview).
-
 ## Additional resources
 
 * [System.Text.Json overview](overview.md)
 * [How to serialize and deserialize JSON](how-to.md)
+* [GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states)
+* [GitHub Copilot in VS Code](https://code.visualstudio.com/docs/copilot/overview)

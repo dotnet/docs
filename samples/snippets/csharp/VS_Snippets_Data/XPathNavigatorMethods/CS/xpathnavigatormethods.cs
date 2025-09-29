@@ -242,7 +242,7 @@ class XPathNavigatorMethods
         XPathNavigator navigator = document.CreateNavigator();
 
         Double total = (double)navigator.Evaluate("sum(descendant::book/price)");
-        Console.WriteLine("Total price for all books: {0}", total.ToString());
+        Console.WriteLine($"Total price for all books: {total.ToString()}");
         //</snippet10>
     }
 
@@ -257,7 +257,7 @@ class XPathNavigatorMethods
         XPathExpression query = navigator.Compile("sum(descendant::book/price)");
 
         Double total = (double)navigator.Evaluate(query);
-        Console.WriteLine("Total price for all books: {0}", total.ToString());
+        Console.WriteLine($"Total price for all books: {total.ToString()}");
         //</snippet11>
     }
 
@@ -273,7 +273,7 @@ class XPathNavigatorMethods
         manager.AddNamespace("bk", "http://www.contoso.com/books");
 
         Double total = (double)navigator.Evaluate("sum(descendant::bk:book/bk:price)", manager);
-        Console.WriteLine("Total price for all books: {0}", total.ToString());
+        Console.WriteLine($"Total price for all books: {total.ToString()}");
         //</snippet12>
     }
 
@@ -289,7 +289,7 @@ class XPathNavigatorMethods
         XPathExpression query = nodes.Current.Compile("sum(descendant::price)");
 
         Double total = (double)navigator.Evaluate(query, nodes);
-        Console.WriteLine("Total price for all books: {0}", total.ToString());
+        Console.WriteLine($"Total price for all books: {total.ToString()}");
         //</snippet13>
     }
     #endregion
@@ -598,12 +598,12 @@ class XPathNavigatorMethods
 
         navigator.MoveToFollowing("price", "http://www.contoso.com/books", boundary);
 
-        Console.WriteLine("Position (after boundary): {0}", navigator.Name);
+        Console.WriteLine($"Position (after boundary): {navigator.Name}");
         Console.WriteLine(navigator.OuterXml);
 
         navigator.MoveToFollowing("title", "http://www.contoso.com/books", boundary);
 
-        Console.WriteLine("Position (before boundary): {0}", navigator.Name);
+        Console.WriteLine($"Position (before boundary): {navigator.Name}");
         Console.WriteLine(navigator.OuterXml);
         //</snippet28>
     }

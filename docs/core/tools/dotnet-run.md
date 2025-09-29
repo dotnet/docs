@@ -1,11 +1,11 @@
 ---
 title: dotnet run command
 description: The dotnet run command provides a convenient option to run your application from the source code.
-ms.date: 11/27/2023
+ms.date: 09/24/2025
 ---
 # dotnet run
 
-**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
+**This article applies to:** ✔️ .NET 6 and later versions
 
 ## Name
 
@@ -14,7 +14,8 @@ ms.date: 11/27/2023
 ## Synopsis
 
 ```dotnetcli
-dotnet run [-a|--arch <ARCHITECTURE>] [-c|--configuration <CONFIGURATION>]
+dotnet run [<applicationArguments>] [-a|--arch <ARCHITECTURE>] [-c|--configuration <CONFIGURATION>]
+    [-e|--environment <KEY=VALUE>] [--file <FILE_PATH>]
     [-f|--framework <FRAMEWORK>] [--force] [--interactive]
     [--launch-profile <NAME>] [--no-build]
     [--no-dependencies] [--no-launch-profile] [--no-restore]
@@ -42,7 +43,7 @@ The `dotnet run` command is used in the context of projects, not built assemblie
 dotnet myapp.dll
 ```
 
-For more information on the `dotnet` driver, see the [.NET Command Line Tools (CLI)](index.md) topic.
+For more information on the `dotnet` driver, see [.NET CLI overview](index.md).
 
 To run the application, the `dotnet run` command resolves the dependencies of the application that are outside of the shared runtime from the NuGet cache. Because it uses cached dependencies, it's not recommended to use `dotnet run` to run applications in production. Instead, [create a deployment](../deploying/index.md) using the [`dotnet publish`](dotnet-publish.md) command and deploy the published output.
 
@@ -51,6 +52,14 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 [!INCLUDE[dotnet restore note + options](~/includes/dotnet-restore-note-options.md)]
 
 [!INCLUDE [cli-advertising-manifests](../../../includes/cli-advertising-manifests.md)]
+
+## Arguments
+
+  `<applicationArguments>`
+  
+  Arguments passed to the application that is being run.
+  
+  Any arguments that aren't recognized by `dotnet run` are passed to the application. To separate arguments for `dotnet run` from arguments for the application, use the `--` option.
 
 ## Options
 
@@ -62,9 +71,35 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 
 [!INCLUDE [configuration](../../../includes/cli-configuration.md)]
 
+- **`-e|--environment <KEY=VALUE>`**
+
+  Sets the specified environment variable in the process that will be run by the command. The specified environment variable is *not* applied to the `dotnet run` process.
+
+  Environment variables passed through this option take precedence over ambient environment variables, System.CommandLine `env` directives, and `environmentVariables` from the chosen launch profile. For more information, see [Environment variables](#environment-variables).
+
+  (This option was added in .NET SDK 9.0.200.)
+
 - **`-f|--framework <FRAMEWORK>`**
 
   Builds and runs the app using the specified [framework](../../standard/frameworks.md). The framework must be specified in the project file.
+
+- **`--file <FILE_PATH>`**
+
+  The path to the file-based app to run. If a path isn't specified, the current directory is used to find and run the file. For more information on file-based apps, see [Build file-based C# apps](/dotnet/csharp/fundamentals/tutorials/file-based-programs).
+  
+  On Unix, you can run file-based apps directly, using the source file name on the command line instead of `dotnet run`. First, ensure the file has execute permissions. Then, add a shebang line `#!` as the first line of the file, for example:
+  
+  ```csharp
+  #!/usr/bin/env dotnet run
+  ```
+  
+  Then you can run the file directly from the command line:
+  
+  ```bash
+  ./ConsoleApp.cs
+  ```
+
+  Introduced in .NET SDK 10.0.100.
 
 - **`--force`**
 
@@ -127,6 +162,17 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 
 [!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
 
+## Environment variables
+
+There are four mechanisms by which environment variables can be applied to the launched application:
+
+1. Ambient environment variables from the operating system when the command is run.
+1. System.CommandLine `env` directives, like `[env:key=value]`. These apply to the entire `dotnet run` process, not just the project being run by `dotnet run`.
+1. `environmentVariables` from the chosen launch profile (`-lp`) in the project's [launchSettings.json file](/aspnet/core/fundamentals/environments#lsj), if any. These apply to the project being run by `dotnet run`.
+1. `-e|--environment` CLI option values (added in .NET SDK version 9.0.200). These apply to the project being run by `dotnet run`.
+
+The environment is constructed in the same order as this list, so the `-e|--environment` option has the highest precedence.
+
 ## Examples
 
 - Run the project in the current directory:
@@ -134,6 +180,14 @@ To run the application, the `dotnet run` command resolves the dependencies of th
   ```dotnetcli
   dotnet run
   ```
+
+- Run the specified file-based app in the current directory:
+
+  ```dotnetcli
+  dotnet run --file ConsoleApp.cs
+  ```
+
+  File-based app support was added in .NET SDK 10.0.100.
 
 - Run the specified project:
 
@@ -158,3 +212,16 @@ To run the application, the `dotnet run` command resolves the dependencies of th
   ```dotnetcli
   dotnet run --verbosity m
   ```
+
+- Run the project in the current directory using the specified framework and pass arguments to the application:
+
+  ```dotnetcli
+  dotnet run -f net6.0 -- arg1 arg2
+  ```
+
+  In the following example, three arguments are passed to the application. One argument is passed using `-`, and two arguments are passed after `--`:
+
+  ```dotnetcli
+  dotnet run -f net6.0 -arg1 -- arg2 arg3
+  ```
+  

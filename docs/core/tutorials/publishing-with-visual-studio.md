@@ -2,10 +2,9 @@
 title: Publish a .NET console application using Visual Studio
 description: Learn how to use Visual Studio to create the set of files that are needed to run a .NET application.
 ms.date: 08/22/2023
-dev_langs:
-  - "csharp"
-  - "vb"
-ms.custom: "vs-dotnet"
+ms.custom:
+  - "vs-dotnet"
+  - sfi-image-nochange
 ---
 # Tutorial: Publish a .NET console application using Visual Studio
 
@@ -55,7 +54,7 @@ In the following steps, you'll look at the files created by the publish process.
 
 1. In **Solution Explorer**, select **Show all files**.
 
-1. In the project folder, expand *bin/Release/net7.0/publish*.
+1. In the project folder, expand *bin/Release/{net}/publish*. (Where {net} is the target framework folder, such as _net8.0_.)
 
    :::image type="content" source="media/publishing-with-visual-studio/published-files-output-net8.png" alt-text="Solution Explorer showing published files":::
 
@@ -67,11 +66,11 @@ In the following steps, you'll look at the files created by the publish process.
 
    - *HelloWorld.dll*
 
-      This is the [framework-dependent deployment](../deploying/deploy-with-cli.md#framework-dependent-deployment) version of the application. To execute this dynamic link library, enter `dotnet HelloWorld.dll` at a command prompt. This method of running the app works on any platform that has the .NET runtime installed.
+      This is the [framework-dependent deployment](../deploying/index.md#cross-platform-dll-deployment) version of the application. To execute this dynamic link library, enter `dotnet HelloWorld.dll` at a command prompt. This method of running the app works on any platform that has the .NET runtime installed.
 
    - *HelloWorld.exe*
 
-      This is the [framework-dependent executable](../deploying/deploy-with-cli.md#framework-dependent-executable) version of the application. To run it, enter `HelloWorld.exe` at a command prompt. The file is operating-system-specific.
+      This is the [framework-dependent executable](../deploying/index.md#framework-dependent-deployment) version of the application. To run it, enter `HelloWorld.exe` at a command prompt. The file is operating-system-specific.
 
    - *HelloWorld.pdb* (optional for deployment)
 
@@ -105,8 +104,7 @@ In the following steps, you'll look at the files created by the publish process.
 
 ## Additional resources
 
-- [.NET application deployment](../deploying/index.md)
-- [Publish .NET apps with the .NET CLI](../deploying/deploy-with-cli.md)
+- [.NET application publishing overview](../deploying/index.md)
 - [`dotnet publish`](../tools/dotnet-publish.md)
 - [Tutorial: Publish a .NET console application using Visual Studio Code](publishing-with-visual-studio-code.md)
 - [Use the .NET SDK in continuous integration (CI) environments](../../devops/dotnet-cli-and-continuous-integration.md)

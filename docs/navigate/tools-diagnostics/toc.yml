@@ -104,22 +104,6 @@ items:
         items:
           - name: dotnet
             href: ../../core/tools/dotnet.md
-          - name: dotnet add/list/remove package
-            items:
-              - name: dotnet add package
-                href: ../../core/tools/dotnet-add-package.md
-              - name: dotnet list package
-                href: ../../core/tools/dotnet-list-package.md
-              - name: dotnet remove package
-                href: ../../core/tools/dotnet-remove-package.md
-          - name: dotnet add/list/remove reference
-            items:
-              - name: dotnet add reference
-                href: ../../core/tools/dotnet-add-reference.md
-              - name: dotnet list reference
-                href: ../../core/tools/dotnet-list-reference.md
-              - name: dotnet remove reference
-                href: ../../core/tools/dotnet-remove-reference.md
           - name: dotnet build
             href: ../../core/tools/dotnet-build.md
           - name: dotnet build-server
@@ -196,10 +180,26 @@ items:
                 href: ../../core/tools/dotnet-nuget-config-paths.md
           - name: dotnet pack
             href: ../../core/tools/dotnet-pack.md
-          - name: dotnet package search
-            href: ../../core/tools/dotnet-package-search.md
+          - name: dotnet package add/list/remove/search
+            items:
+              - name: dotnet package add
+                href: ../../core/tools/dotnet-package-add.md
+              - name: dotnet package list
+                href: ../../core/tools/dotnet-package-list.md
+              - name: dotnet package remove
+                href: ../../core/tools/dotnet-package-remove.md
+              - name: dotnet package search
+                href: ../../core/tools/dotnet-package-search.md
           - name: dotnet publish
             href: ../../core/tools/dotnet-publish.md
+          - name: dotnet reference add/list/remove
+            items:
+              - name: dotnet reference add
+                href: ../../core/tools/dotnet-reference-add.md
+              - name: dotnet reference list
+                href: ../../core/tools/dotnet-reference-list.md
+              - name: dotnet reference remove
+                href: ../../core/tools/dotnet-reference-remove.md
           - name: dotnet restore
             href: ../../core/tools/dotnet-restore.md
           - name: dotnet run
@@ -359,10 +359,16 @@ items:
         href: ../../core/diagnostics/index.md
       - name: Managed debuggers
         href: ../../core/diagnostics/managed-debuggers.md
+      - name: Profiling tools
+        href: ../../core/diagnostics/profilers.md
       - name: Logging & tracing options
         href: ../../core/diagnostics/logging-tracing.md
       - name: ILogger Logging
         href: ../../core/extensions/logging.md
+      - name: Log sampling
+        href: ../../core/extensions/log-sampling.md
+      - name: Log buffering
+        href: ../../core/extensions/log-buffering.md
       - name: Observability with OpenTelemetry
         items:
           - name: Overview
@@ -373,8 +379,6 @@ items:
             href: ../../core/diagnostics/observability-prgrja-example.md
           - name: "Example: Use OpenTelemetry with Azure Monitor and Application Insights"
             href: ../../core/diagnostics/observability-applicationinsights.md
-      - name: Resource monitoring
-        href: ../../core/diagnostics/diagnostic-resource-monitoring.md
         displayName: resource monitoring,
       - name: App health checks
         href: ../../core/diagnostics/diagnostic-health-checks.md
@@ -391,7 +395,9 @@ items:
             displayName: exception summarization,exception summary,exception summarizer,ExceptionSummary
           - name: Collection
             href: ../../core/diagnostics/metrics-collection.md
-          - name: Source-generated metrics
+          - name: Compile-time metric source generation
+            href: ../../core/diagnostics/metrics-generator.md
+          - name: Strongly typed source-generated metrics
             displayName: strongly-typed tags,dimensions
             href: ../../core/diagnostics/metrics-strongly-typed.md
           - name: Built-in metrics
@@ -403,7 +409,7 @@ items:
               - name: .NET extensions metrics
                 href: ../../core/diagnostics/built-in-metrics-diagnostics.md
               - name: ASP.NET Core metrics
-                href: ../../core/diagnostics/built-in-metrics-aspnetcore.md
+                href: /aspnet/core/log-mon/metrics/built-in?toc=/dotnet/navigate/tools-diagnostics/toc.json&bc=/dotnet/breadcrumb/toc.json
               - name: System.Net metrics
                 href: ../../core/diagnostics/built-in-metrics-system-net.md
           - name: EventCounters
@@ -417,6 +423,10 @@ items:
                 href: ../../core/diagnostics/event-counter-perf.md
           - name: Compare metric APIs
             href: ../../core/diagnostics/compare-metric-apis.md
+          - name: Resource monitoring
+            href: ../../core/diagnostics/diagnostic-resource-monitoring.md
+          - name: Migrate from Windows Performance Counters
+            href: ../../core/diagnostics/migrate-from-windows-performance-counters.md
       - name: Distributed tracing
         items:
           - name: Overview
@@ -471,6 +481,8 @@ items:
                     href: ../../fundamentals/diagnostics/runtime-type-events.md
                   - name: Tiered compilation events
                     href: ../../fundamentals/diagnostics/runtime-tiered-compilation-events.md
+                  - name: Wait-handle events
+                    href: ../../fundamentals/diagnostics/runtime-wait-handle-events.md
           - name: Collect diagnostics in containers
             href: ../../core/diagnostics/diagnostics-in-containers.md
           - name: Dumps
@@ -561,10 +573,90 @@ items:
             href: ../../core/diagnostics/debug-stackoverflow.md
       - name: Unmanaged API reference
         items:
+          - name: Overview
+            href: ../../core/unmanaged-api/index.md
           - name: Debugging
             items:
               - name: Overview
                 href: ../../core/unmanaged-api/debugging/index.md
+              - name: Enumerations
+                items:
+                  - name: COR_PUB_ENUMPROCESS enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/cor-pub-enumprocess-enumeration.md
+                  - name: CorDebugBlockingReason enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/cordebugblockingreason-enumeration.md
+                  - name: CorDebugChainReason enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/cordebugchainreason-enumeration.md
+                  - name: CorDebugCodeInvokeKind enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/cordebugcodeinvokekind-enumeration.md
+                  - name: CorDebugCodeInvokePurpose enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/cordebugcodeinvokepurpose-enumeration.md
+                  - name: CorDebugCreateProcessFlags enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/cordebugcreateprocessflags-enumeration.md
+                  - name: CorDebugDebugEventKind enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/cordebugdebugeventkind-enumeration.md
+                  - name: CorDebugDecodeEventFlagsWindows enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/cordebugdecodeeventflagswindows-enumeration.md
+                  - name: CorDebugExceptionCallbackType enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/cordebugexceptioncallbacktype-enumeration.md
+                  - name: CorDebugExceptionFlags enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/cordebugexceptionflags-enumeration.md
+                  - name: CorDebugExceptionUnwindCallbackType enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/cordebugexceptionunwindcallbacktype-enumeration.md
+                  - name: CorDebugGCType enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/cordebuggctype-enumeration.md
+                  - name: CorDebugGenerationTypes enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/cordebuggenerationtypes-enumeration.md
+                  - name: CorDebugHandleType enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/cordebughandletype-enumeration.md
+                  - name: CorDebugIlToNativeMappingTypes enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/cordebugiltonativemappingtypes-enumeration.md
+                  - name: CorDebugIntercept enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/cordebugintercept-enumeration.md
+                  - name: CorDebugInterfaceVersion enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/cordebuginterfaceversion-enumeration.md
+                  - name: CorDebugInternalFrameType enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/cordebuginternalframetype-enumeration.md
+                  - name: CorDebugJITCompilerFlags enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/cordebugjitcompilerflags-enumeration.md
+                  - name: CorDebugMappingResult enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/cordebugmappingresult-enumeration.md
+                  - name: CorDebugMDAFlags enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/cordebugmdaflags-enumeration.md
+                  - name: CorDebugNGenPolicy enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/cordebugngenpolicy-enumeration.md
+                  - name: CorDebugPlatform enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/cordebugplatform-enumeration.md
+                  - name: CorDebugRecordFormat enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/cordebugrecordformat-enumeration.md
+                  - name: CorDebugRegister enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/cordebugregister-enumeration.md
+                  - name: CorDebugSetContextFlag enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/cordebugsetcontextflag-enumeration.md
+                  - name: CorDebugStateChange enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/cordebugstatechange-enumeration.md
+                  - name: CorDebugStepReason enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/cordebugstepreason-enumeration.md
+                  - name: CorDebugThreadState enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/cordebugthreadstate-enumeration.md
+                  - name: CorDebugUnmappedStop enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/cordebugunmappedstop-enumeration.md
+                  - name: CorDebugUserState enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/cordebuguserstate-enumeration.md
+                  - name: CorGCReferenceType enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/corgcreferencetype-enumeration.md
+                  - name: ILCodeKind enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/ilcodekind-enumeration.md
+                  - name: LIBRARY_PROVIDER_INDEX_TYPE enumeration
+                    href: ../../core/unmanaged-api/debugging/libraryproviderindextype-enumeration.md
+                  - name: LoggingLevelEnum enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/logginglevelenum-enumeration.md
+                  - name: LogSwitchCallReason enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/logswitchcallreason-enumeration.md
+                  - name: VariableLocationType enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/variablelocationtype-enumeration.md
+                  - name: WriteableMetadataUpdateMode enumeration
+                    href: ../../core/unmanaged-api/debugging/icordebug/writeablemetadataupdatemode-enumeration.md
               - name: Functions
                 items:
                   - name: CLRCreateInstance function
@@ -599,6 +691,10 @@ items:
                     href: ../../core/unmanaged-api/debugging/resumeprocess-function.md
                   - name: UnregisterForRuntimeStartup function
                     href: ../../core/unmanaged-api/debugging/unregisterforruntimestartup-function.md
+              - name: Function pointers
+                items:
+                  - name: PSTARTUP_CALLBACK function pointer
+                    href: ../../core/unmanaged-api/debugging/pstartup_callback-function-pointer.md
               - name: Interfaces
                 items:
                   - name: ICLRDebuggingLibraryProvider2 interface
@@ -617,14 +713,2075 @@ items:
                         href: ../../core/unmanaged-api/debugging/iclrdebugginglibraryprovider3-providewindowslibrary-method.md
                       - name: ProvideUnixLibrary method
                         href: ../../core/unmanaged-api/debugging/iclrdebugginglibraryprovider3-provideunixlibrary-method.md
+                  - name: ICorDebug interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebug-interface.md
+                        displayName: ICorDebug
+                      - name: CanLaunchOrAttach method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebug-canlaunchorattach-method.md
+                      - name: CreateProcess method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebug-createprocess-method.md
+                      - name: DebugActiveProcess method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebug-debugactiveprocess-method.md
+                      - name: EnumerateProcesses method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebug-enumerateprocesses-method.md
+                      - name: GetProcess method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebug-getprocess-method.md
+                      - name: Initialize method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebug-initialize-method.md
+                      - name: SetManagedHandler method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebug-setmanagedhandler-method.md
+                      - name: SetUnmanagedHandler method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebug-setunmanagedhandler-method.md
+                      - name: Terminate method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebug-terminate-method.md
+                  - name: ICorDebugAppDomain interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugappdomain-interface.md
+                        displayName: ICorDebugAppDomain
+                      - name: Attach method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugappdomain-attach-method.md
+                      - name: EnumerateAssemblies method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugappdomain-enumerateassemblies-method.md
+                      - name: EnumerateBreakpoints method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugappdomain-enumeratebreakpoints-method.md
+                      - name: EnumerateSteppers method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugappdomain-enumeratesteppers-method.md
+                      - name: GetId method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugappdomain-getid-method.md
+                      - name: GetModuleFromMetaDataInterface method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugappdomain-getmodulefrommetadatainterface-method.md
+                      - name: GetName method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugappdomain-getname-method.md
+                      - name: GetObject method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugappdomain-getobject-method.md
+                      - name: GetProcess method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugappdomain-getprocess-method.md
+                      - name: IsAttached method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugappdomain-isattached-method.md
+                  - name: ICorDebugAppDomain2 interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugappdomain2-interface.md
+                      - name: GetArrayOrPointerType method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugappdomain2-getarrayorpointertype-method.md
+                      - name: GetFunctionPointerType
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugappdomain2-getfunctionpointertype-method.md
+                  - name: ICorDebugAppDomain3 interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugappdomain3-interface.md
+                        displayName: ICorDebugAppDomain3
+                      - name: GetCachedWinRTTypes method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugappdomain3-getcachedwinrttypes-method.md
+                      - name: GetCachedWinRTTypesForIIDs method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugappdomain3-getcachedwinrttypesforiids-method.md
+                  - name: ICorDebugAppDomain4 interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugappdomain4-interface.md
+                        displayName: ICorDebugAppDomain4
+                      - name: GetObjectForCCW method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugappdomain4-getobjectforccw-method.md
+                  - name: ICorDebugAppDomainEnum interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugappdomainenum-interface.md
+                        displayName: ICorDebugAppDomainEnum
+                      - name: Next method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugappdomainenum-next-method.md
+                  - name: ICorDebugArrayValue interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugarrayvalue-interface.md
+                        displayName: ICorDebugArrayValue
+                      - name: GetBaseIndicies method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugarrayvalue-getbaseindicies-method.md
+                      - name: GetCount method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugarrayvalue-getcount-method.md
+                      - name: GetDimensions method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugarrayvalue-getdimensions-method.md
+                      - name: GetElement method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugarrayvalue-getelement-method.md
+                      - name: GetElementAtPosition method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugarrayvalue-getelementatposition-method.md
+                      - name: GetElementType method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugarrayvalue-getelementtype-method.md
+                      - name: GetRank method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugarrayvalue-getrank-method.md
+                      - name: HasBaseIndicies method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugarrayvalue-hasbaseindicies-method.md
+                  - name: ICorDebugAssembly interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugassembly-interface.md
+                        displayName: ICorDebugAssembly
+                      - name: EnumerateModules method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugassembly-enumeratemodules-method.md
+                      - name: GetAppDomain method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugassembly-getappdomain-method.md
+                      - name: GetCodeBase method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugassembly-getcodebase-method.md
+                      - name: GetName method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugassembly-getname-method.md
+                      - name: GetProcess method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugassembly-getprocess-method.md
+                  - name: ICorDebugAssembly2 interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugassembly2-interface.md
+                        displayName: ICorDebugAssembly2
+                      - name: IsFullyTrusted method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugassembly2-isfullytrusted-method.md
+                  - name: ICorDebugAssembly3 interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugassembly3-interface.md
+                        displayName: ICorDebugAssembly3
+                      - name: EnumerateContainedAssemblies method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugassembly3-enumeratecontainedassemblies-method.md
+                      - name: GetContainerAssembly method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugassembly3-getcontainerassembly-method.md
+                  - name: ICorDebugAssemblyEnum interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugassemblyenum-interface.md
+                        displayName: ICorDebugAssemblyEnum
+                      - name: Next method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugassemblyenum-next-method.md
+                  - name: ICorDebugBlockingObjectEnum interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugblockingobjectenum-interface.md
+                        displayName: ICorDebugBlockingObjectEnum
+                      - name: Next method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugblockingobjectenum-next-method.md
+                  - name: ICorDebugBoxValue interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugboxvalue-interface.md
+                        displayName: ICorDebugBoxValue
+                      - name: GetObject method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugboxvalue-getobject-method.md
+                  - name: ICorDebugBreakpoint interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugbreakpoint-interface.md
+                        displayName: ICorDebugBreakpoint
+                      - name: Activate method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugbreakpoint-activate-method.md
+                      - name: IsActive method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugbreakpoint-isactive-method.md
+                  - name: ICorDebugBreakpointEnum interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugbreakpointenum-interface.md
+                        displayName: ICorDebugBreakpointEnum
+                      - name: Next method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugbreakpointenum-next-method.md
+                  - name: ICorDebugChain interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugchain-interface.md
+                        displayName: ICorDebugChain
+                      - name: EnumerateFrames method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugchain-enumerateframes-method.md
+                      - name: GetActiveFrame method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugchain-getactiveframe-method.md
+                      - name: GetCallee method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugchain-getcallee-method.md
+                      - name: GetCaller method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugchain-getcaller-method.md
+                      - name: GetContext method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugchain-getcontext-method.md
+                      - name: GetNext method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugchain-getnext-method.md
+                      - name: GetPrevious method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugchain-getprevious-method.md
+                      - name: GetReason method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugchain-getreason-method.md
+                      - name: GetRegisterSet method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugchain-getregisterset-method.md
+                      - name: GetStackRange method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugchain-getstackrange-method.md
+                      - name: GetThread method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugchain-getthread-method.md
+                      - name: IsManaged method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugchain-ismanaged-method.md
+                  - name: ICorDebugChainEnum interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugchainenum-interface.md
+                        displayName: ICorDebugChainEnum
+                      - name: Next method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugchainenum-next-method.md
+                  - name: ICorDebugClass interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugclass-interface.md
+                        displayName: ICorDebugClass
+                      - name: GetModule method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugclass-getmodule-method.md
+                      - name: GetStaticFieldValue method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugclass-getstaticfieldvalue-method.md
+                      - name: GetToken method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugclass-gettoken-method.md
+                  - name: ICorDebugClass2 interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugclass2-interface.md
+                        displayName: ICorDebugClass2
+                      - name: GetParameterizedType method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugclass2-getparameterizedtype-method.md
+                      - name: SetJMCStatus method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugclass2-setjmcstatus-method.md
+                  - name: ICorDebugCode interface
+                    href: ../../core/unmanaged-api/debugging/icordebug/icordebugcode-interface1.md
+                    items:
+                      - name: CreateBreakpoint method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugcode-createbreakpoint-method.md
+                      - name: GetAddress method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugcode-getaddress-method.md
+                      - name: GetCode method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugcode-getcode-method.md
+                      - name: GetEnCRemapSequencePoints method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugcode-getencremapsequencepoints-method.md
+                      - name: GetFunction method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugcode-getfunction-method.md
+                      - name: GetILToNativeMapping method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugcode-getiltonativemapping-method.md
+                      - name: GetSize method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugcode-getsize-method.md
+                      - name: GetVersionNumber method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugcode-getversionnumber-method.md
+                      - name: IsIL method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugcode-isil-method.md
+                  - name: ICorDebugCode2 interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugcode2-interface.md
+                        displayName: ICorDebugCode2
+                      - name: GetCodeChunks method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugcode2-getcodechunks-method.md
+                      - name: GetCompilerFlags method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugcode2-getcompilerflags-method.md
+                  - name: ICorDebugCode3 interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugcode3-interface.md
+                        displayName: ICorDebugCode3
+                      - name: GetReturnValueLiveOffset method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugcode3-getreturnvalueliveoffset-method.md
+                  - name: ICorDebugCode4 interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugcode4-interface.md
+                        displayName: ICorDebugCode4
+                      - name: EnumerateVariableHomes method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugcode4-enumeratevariablehomes-method.md
+                  - name: ICorDebugCodeEnum interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugcodeenum-interface.md
+                        displayName: ICorDebugCodeEnum
+                      - name: Next method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugcodeenum-next-method.md
+                  - name: ICorDebugComObjectValue interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugcomobjectvalue-interface.md
+                        displayName: ICorDebugComObjectValue
+                      - name: GetCachedInterfacePointers method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugcomobjectvalue-getcachedinterfacepointers-method.md
+                      - name: GetCachedInterfaceTypes method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugcomobjectvalue-getcachedinterfacetypes-method.md
+                  - name: ICorDebugContext interface
+                    href: ../../core/unmanaged-api/debugging/icordebug/icordebugcontext-interface.md
+                  - name: ICorDebugController interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugcontroller-interface.md
+                        displayName: ICorDebugController
+                      - name: CanCommitChanges method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugcontroller-cancommitchanges-method.md
+                      - name: CommitChanges method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugcontroller-commitchanges-method.md
+                      - name: Continue method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugcontroller-continue-method.md
+                      - name: Detach method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugcontroller-detach-method.md
+                      - name: EnumerateThreads method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugcontroller-enumeratethreads-method.md
+                      - name: HasQueuedCallbacks method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugcontroller-hasqueuedcallbacks-method.md
+                      - name: IsRunning method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugcontroller-isrunning-method.md
+                      - name: SetAllThreadsDebugState method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugcontroller-setallthreadsdebugstate-method.md
+                      - name: Stop method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugcontroller-stop-method.md
+                      - name: Terminate method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugcontroller-terminate-method.md
+                  - name: ICorDebugDataTarget interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugdatatarget-interface.md
+                        displayName: ICorDebugDataTarget
+                      - name: GetPlatform method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugdatatarget-getplatform-method.md
+                      - name: ReadVirtual method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugdatatarget-readvirtual-method.md
+                      - name: GetThreadContext method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugdatatarget-getthreadcontext-method.md
+                  - name: ICorDebugDataTarget2 interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugdatatarget2-interface.md
+                        displayName: ICorDebugDataTarget2
+                      - name: CreateVirtualUnwinder method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugdatatarget2-createvirtualunwinder-method.md
+                      - name: EnumerateThreadIDs method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugdatatarget2-enumeratethreadids-method.md
+                      - name: GetImageFromPointer method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugdatatarget2-getimagefrompointer-method.md
+                      - name: GetImageLocation method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugdatatarget2-getimagelocation-method.md
+                      - name: GetSymbolProviderForImage method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugdatatarget2-getsymbolproviderforimage-method.md
+                  - name: ICorDebugDataTarget3 interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugdatatarget3-interface.md
+                        displayName: ICorDebugDataTarget3
+                      - name: GetLoadedModules method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugdatatarget3-getloadedmodules-method.md
+                  - name: ICorDebugDebugEvent interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugdebugevent-interface.md
+                        displayName: ICorDebugDebugEvent
+                      - name: GetEventKind method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugdebugevent-geteventkind-method.md
+                      - name: GetThread method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugdebugevent-getthread-method.md
+                  - name: ICorDebugEditAndContinueErrorInfo interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugeditandcontinueerrorinfo-interface.md
+                        displayName: ICorDebugEditAndContinueErrorInfo
+                      - name: GetErrorCode method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugeditandcontinueerrorinfo-geterrorcode-method.md
+                      - name: GetModule method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugeditandcontinueerrorinfo-getmodule-method.md
+                      - name: GetString method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugeditandcontinueerrorinfo-getstring-method.md
+                      - name: GetToken method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugeditandcontinueerrorinfo-gettoken-method.md
+                  - name: ICorDebugEditAndContinueSnapshot interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugeditandcontinuesnapshot-interface.md
+                        displayName: ICorDebugEditAndContinueSnapshot
+                      - name: CopyMetaData method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugeditandcontinuesnapshot-copymetadata-method.md
+                      - name: GetMvid method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugeditandcontinuesnapshot-getmvid-method.md
+                      - name: GetRoDataRVA method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugeditandcontinuesnapshot-getrodatarva-method.md
+                      - name: GetRwDataRVA method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugeditandcontinuesnapshot-getrwdatarva-method.md
+                      - name: SetILMap method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugeditandcontinuesnapshot-setilmap-method.md
+                      - name: SetPEBytes method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugeditandcontinuesnapshot-setpebytes-method.md
+                      - name: SetPESymbolBytes method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugeditandcontinuesnapshot-setpesymbolbytes-method.md
+                  - name: ICorDebugEnum interface
+                    href: ../../core/unmanaged-api/debugging/icordebug/icordebugenum-interface1.md
+                    items:
+                      - name: Clone method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugenum-clone-method.md
+                      - name: GetCount method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugenum-getcount-method.md
+                      - name: Reset method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugenum-reset-method.md
+                      - name: Skip method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugenum-skip-method.md
+                  - name: ICorDebugErrorInfoEnum interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugerrorinfoenum-interface.md
+                        displayName: ICorDebugErrorInfoEnum
+                      - name: Next method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugerrorinfoenum-next-method.md
+                  - name: ICorDebugEval interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugeval-interface.md
+                        displayName: ICorDebugEval
+                      - name: Abort method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugeval-abort-method.md
+                      - name: CallFunction method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugeval-callfunction-method.md
+                      - name: CreateValue method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugeval-createvalue-method.md
+                      - name: GetResult method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugeval-getresult-method.md
+                      - name: GetThread method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugeval-getthread-method.md
+                      - name: IsActive method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugeval-isactive-method.md
+                      - name: NewArray method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugeval-newarray-method.md
+                      - name: NewObject method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugeval-newobject-method.md
+                      - name: NewObjectNoConstructor method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugeval-newobjectnoconstructor-method.md
+                      - name: NewString method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugeval-newstring-method.md
+                  - name: ICorDebugEval2 interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugeval2-interface.md
+                        displayName: ICorDebugEval2
+                      - name: CallParameterizedFunction method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugeval2-callparameterizedfunction-method.md
+                      - name: CreateValueForType method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugeval2-createvaluefortype-method.md
+                      - name: NewParameterizedArray method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugeval2-newparameterizedarray-method.md
+                      - name: NewParameterizedObject method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugeval2-newparameterizedobject-method.md
+                      - name: NewParameterizedObjectNoConstructor method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugeval2-newparameterizedobjectnoconstructor-method.md
+                      - name: NewStringWithLength method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugeval2-newstringwithlength-method.md
+                      - name: RudeAbort method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugeval2-rudeabort-method.md
+                  - name: ICorDebugExceptionDebugEvent interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugexceptiondebugevent-interface.md
+                        displayName: ICorDebugExceptionDebugEvent
+                      - name: GetFlags method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugexceptiondebugevent-getflags-method.md
+                      - name: GetNativeIP method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugexceptiondebugevent-getnativeip-method.md
+                      - name: GetStackPointer method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugexceptiondebugevent-getstackpointer-method.md
+                  - name: ICorDebugExceptionObjectCallStackEnum interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugexceptionobjectcallstackenum-interface.md
+                        displayName: ICorDebugExceptionObjectCallStackEnum
+                      - name: Next method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugexceptionobjectcallstackenum-next-method.md
+                  - name: ICorDebugExceptionObjectValue interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugexceptionobjectvalue-interface.md
+                        displayName: ICorDebugExceptionObjectValue
+                      - name: EnumerateExceptionCallStack method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugexceptionobjectvalue-enumerateexceptioncallstack-method.md
+                  - name: ICorDebugFrame interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugframe-interface.md
+                        displayName: ICorDebugFrame
+                      - name: CreateStepper method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugframe-createstepper-method.md
+                      - name: GetCallee method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugframe-getcallee-method.md
+                      - name: GetCaller method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugframe-getcaller-method.md
+                      - name: GetChain method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugframe-getchain-method.md
+                      - name: GetCode method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugframe-getcode-method.md
+                      - name: GetFunction method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugframe-getfunction-method.md
+                      - name: GetFunctionToken method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugframe-getfunctiontoken-method.md
+                      - name: GetStackRange method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugframe-getstackrange-method.md
+                  - name: ICorDebugFrameEnum interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugframeenum-interface.md
+                        displayName: ICorDebugFrameEnum
+                      - name: Next method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugframeenum-next-method.md
+                  - name: ICorDebugFunction interface
+                    href: ../../core/unmanaged-api/debugging/icordebug/icordebugfunction-interface1.md
+                    items:
+                      - name: CreateBreakpoint method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugfunction-createbreakpoint-method.md
+                      - name: GetClass method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugfunction-getclass-method.md
+                      - name: GetCurrentVersionNumber method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugfunction-getcurrentversionnumber-method.md
+                      - name: GetILCode method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugfunction-getilcode-method.md
+                      - name: GetLocalVarSigToken method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugfunction-getlocalvarsigtoken-method.md
+                      - name: GetModule method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugfunction-getmodule-method.md
+                      - name: GetNativeCode method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugfunction-getnativecode-method.md
+                      - name: GetToken method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugfunction-gettoken-method.md
+                  - name: ICorDebugFunction2 interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugfunction2-interface.md
+                        displayName: ICorDebugFunction2
+                      - name: EnumerateNativeCode method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugfunction2-enumeratenativecode-method.md
+                      - name: GetJMCStatus method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugfunction2-getjmcstatus-method.md
+                      - name: GetVersionNumber method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugfunction2-getversionnumber-method.md
+                      - name: SetJMCStatus method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugfunction2-setjmcstatus-method.md
+                  - name: ICorDebugFunction3 interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugfunction3-interface.md
+                        displayName: ICorDebugFunction3
+                      - name: GetActiveReJitRequestILCode method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugfunction3-getactiverejitrequestilcode-method.md
+                  - name: ICorDebugFunctionBreakpoint interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugfunctionbreakpoint-interface.md
+                        displayName: ICorDebugFunctionBreakpoint
+                      - name: GetFunction method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugfunctionbreakpoint-getfunction-method.md
+                      - name: GetOffset method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugfunctionbreakpoint-getoffset-method.md
+                  - name: ICorDebugGCReferenceEnum interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebuggcreferenceenum-interface.md
+                        displayName: ICorDebugGCReferenceEnum
+                      - name: Next method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebuggcreferenceenum-next-method.md
+                  - name: ICorDebugGenericValue interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebuggenericvalue-interface.md
+                        displayName: ICorDebugGenericValue
+                      - name: GetValue method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebuggenericvalue-getvalue-method.md
+                      - name: SetValue method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebuggenericvalue-setvalue-method.md
+                  - name: ICorDebugGuidToTypeEnum interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugguidtotypeenum-interface.md
+                        displayName: ICorDebugGuidToTypeEnum
+                      - name: Next method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugguidtotypeenum-next-method.md
+                  - name: ICorDebugHandleValue interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebughandlevalue-interface.md
+                        displayName: ICorDebugHandleValue
+                      - name: Dispose method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebughandlevalue-dispose-method.md
+                      - name: GetHandleType method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebughandlevalue-gethandletype-method.md
+                  - name: ICorDebugHeapEnum interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugheapenum-interface.md
+                        displayName: ICorDebugHeapEnum
+                      - name: Next method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugheapenum-next-method.md
+                  - name: ICorDebugHeapSegmentEnum interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugheapsegmentenum-interface.md
+                        displayName: ICorDebugHeapSegmentEnum
+                      - name: Next method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugheapsegmentenum-next-method.md
+                  - name: ICorDebugHeapValue interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugheapvalue-interface.md
+                        displayName: ICorDebugHeapValue
+                      - name: CreateRelocBreakpoint method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugheapvalue-createrelocbreakpoint-method.md
+                      - name: IsValid method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugheapvalue-isvalid-method.md
+                  - name: ICorDebugHeapValue2 interface
+                    href: ../../core/unmanaged-api/debugging/icordebug/icordebugheapvalue2-interface1.md
+                    items:
+                      - name: CreateHandle method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugheapvalue2-createhandle-method.md
+                  - name: ICorDebugHeapValue3 interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugheapvalue3-interface.md
+                        displayName: ICorDebugHeapValue3
+                      - name: GetThreadOwningMonitorLock method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugheapvalue3-getthreadowningmonitorlock-method.md
+                      - name: GetMonitorEventWaitList method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugheapvalue3-getmonitoreventwaitlist-method.md
+                  - name: ICorDebugILCode interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugilcode-interface.md
+                        displayName: ICorDebugILCode
+                      - name: GetEHClauses method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugilcode-getehclauses-method.md
+                  - name: ICorDebugILCode2 interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugilcode2-interface.md
+                        displayName: ICorDebugILCode2
+                      - name: GetInstrumentedILMap method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugilcode2-getinstrumentedilmap-method.md
+                      - name: GetLocalVarSigToken method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugilcode2-getlocalvarsigtoken-method.md
+                  - name: ICorDebugILFrame interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugilframe-interface.md
+                        displayName: ICorDebugILFrame
+                      - name: CanSetIP method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugilframe-cansetip-method.md
+                      - name: EnumerateArguments method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugilframe-enumeratearguments-method.md
+                      - name: EnumerateLocalVariables method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugilframe-enumeratelocalvariables-method.md
+                      - name: GetArgument method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugilframe-getargument-method.md
+                      - name: GetIP method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugilframe-getip-method.md
+                      - name: GetLocalVariable method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugilframe-getlocalvariable-method.md
+                      - name: GetStackDepth method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugilframe-getstackdepth-method.md
+                      - name: GetStackValue method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugilframe-getstackvalue-method.md
+                      - name: SetIP method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugilframe-setip-method.md
+                  - name: ICorDebugILFrame2 interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugilframe2-interface.md
+                        displayName: ICorDebugILFrame2
+                      - name: EnumerateTypeParameters method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugilframe2-enumeratetypeparameters-method.md
+                      - name: RemapFunction method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugilframe2-remapfunction-method.md
+                  - name: ICorDebugILFrame3 interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugilframe3-interface.md
+                        displayName: ICorDebugILFrame3
+                      - name: GetReturnValueForILOffset method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugilframe3-getreturnvalueforiloffset-method.md
+                  - name: ICorDebugILFrame4 interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugilframe4-interface.md
+                        displayName: ICorDebugILFrame4
+                      - name: EnumerateLocalVariablesEx method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugilframe4-enumeratelocalvariablesex-method.md
+                      - name: GetCodeEx method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugilframe4-getcodeex-method.md
+                      - name: GetLocalVariableEx method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugilframe4-getlocalvariableex-method.md
+                  - name: ICorDebugInstanceFieldSymbol interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebuginstancefieldsymbol-interface.md
+                        displayName: ICorDebugInstanceFieldSymbol
+                      - name: GetName method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebuginstancefieldsymbol-getname-method.md
+                      - name: GetOffset method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebuginstancefieldsymbol-getoffset-method.md
+                      - name: GetSize method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebuginstancefieldsymbol-getsize-method.md
+                  - name: ICorDebugInternalFrame interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebuginternalframe-interface.md
+                        displayName: ICorDebugInternalFrame
+                      - name: GetFrameType method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebuginternalframe-getframetype-method.md
+                  - name: ICorDebugInternalFrame2 interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebuginternalframe2-interface.md
+                        displayName: ICorDebugInternalFrame2
+                      - name: GetFrameAddress method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebuginternalframe2-getframeaddress-method.md
+                      - name: IsCloserToLeaf method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebuginternalframe2-isclosertoleaf-method.md
+                  - name: ICorDebugLoadedModule interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugloadedmodule-interface.md
+                        displayName: ICorDebugLoadedModule
+                      - name: GetBaseAddress method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugloadedmodule-getbaseaddress-method.md
+                      - name: GetName method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugloadedmodule-getname-method.md
+                      - name: GetSize method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugloadedmodule-getsize-method.md
+                  - name: ICorDebugManagedCallback interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback-interface.md
+                        displayName: ICorDebugManagedCallback
+                      - name: Break method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback-break-method.md
+                      - name: Breakpoint method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback-breakpoint-method.md
+                      - name: BreakpointSetError method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback-breakpointseterror-method.md
+                      - name: ControlCTrap method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback-controlctrap-method.md
+                      - name: CreateAppDomain method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback-createappdomain-method.md
+                      - name: CreateProcess method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback-createprocess-method.md
+                      - name: CreateThread method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback-createthread-method.md
+                      - name: DebuggerError method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback-debuggererror-method.md
+                      - name: EditAndContinueRemap method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback-editandcontinueremap-method.md
+                      - name: EvalComplete method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback-evalcomplete-method.md
+                      - name: EvalException method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback-evalexception-method.md
+                      - name: Exception method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback-exception-method.md
+                      - name: ExitAppDomain method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback-exitappdomain-method.md
+                      - name: ExitProcess method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback-exitprocess-method.md
+                      - name: ExitThread method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback-exitthread-method.md
+                      - name: LoadAssembly method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback-loadassembly-method.md
+                      - name: LoadClass method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback-loadclass-method.md
+                      - name: LoadModule method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback-loadmodule-method.md
+                      - name: LogMessage method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback-logmessage-method.md
+                      - name: LogSwitch method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback-logswitch-method.md
+                      - name: NameChange method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback-namechange-method.md
+                      - name: StepComplete method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback-stepcomplete-method.md
+                      - name: UnloadAssembly method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback-unloadassembly-method.md
+                      - name: UnloadClass method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback-unloadclass-method.md
+                      - name: UnloadModule method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback-unloadmodule-method.md
+                      - name: UpdateModuleSymbols method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback-updatemodulesymbols-method.md
+                  - name: ICorDebugManagedCallback2 interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback2-interface.md
+                        displayName: ICorDebugManagedCallback2
+                      - name: ChangeConnection method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback2-changeconnection-method.md
+                      - name: CreateConnection method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback2-createconnection-method.md
+                      - name: DestroyConnection method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback2-destroyconnection-method.md
+                      - name: Exception method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback2-exception-method.md
+                      - name: ExceptionUnwind method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback2-exceptionunwind-method.md
+                      - name: FunctionRemapComplete method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback2-functionremapcomplete-method.md
+                      - name: FunctionRemapOpportunity method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback2-functionremapopportunity-method.md
+                      - name: MDANotification method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback2-mdanotification-method.md
+                  - name: ICorDebugManagedCallback3 interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback3-interface.md
+                        displayName: ICorDebugManagedCallback3
+                      - name: CustomNotification method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmanagedcallback3-customnotification-method.md
+                  - name: ICorDebugMDA interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmda-interface.md
+                        displayName: ICorDebugMDA
+                      - name: GetDescription method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmda-getdescription-method.md
+                      - name: GetFlags method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmda-getflags-method.md
+                      - name: GetName method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmda-getname-method.md
+                      - name: GetOSThreadId method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmda-getosthreadid-method.md
+                      - name: GetXML method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmda-getxml-method.md
+                  - name: ICorDebugMemoryBuffer interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmemorybuffer-interface.md
+                        displayName: ICorDebugMemoryBuffer
+                      - name: GetSize method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmemorybuffer-getsize-method.md
+                      - name: GetStartAddress method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmemorybuffer-getstartaddress-method.md
+                  - name: ICorDebugMergedAssemblyRecord interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmergedassemblyrecord-interface.md
+                        displayName: ICorDebugMergedAssemblyRecord
+                      - name: GetCulture method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmergedassemblyrecord-getculture-method.md
+                      - name: GetIndex method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmergedassemblyrecord-getindex-method.md
+                      - name: GetPublicKey method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmergedassemblyrecord-getpublickey-method.md
+                      - name: GetPublicKeyToken method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmergedassemblyrecord-getpublickeytoken-method.md
+                      - name: GetSimpleName method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmergedassemblyrecord-getsimplename-method.md
+                      - name: GetVersion method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmergedassemblyrecord-getversion-method.md
+                  - name: ICorDebugMetaDataLocator interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmetadatalocator-interface.md
+                        displayName: ICorDebugMetaDataLocator
+                      - name: GetMetaData method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmetadatalocator-getmetadata-method.md
+                  - name: ICorDebugModule interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmodule-interface.md
+                        displayName: ICorDebugModule
+                      - name: CreateBreakpoint method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmodule-createbreakpoint-method.md
+                      - name: EnableClassLoadCallbacks method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmodule-enableclassloadcallbacks-method.md
+                      - name: EnableJITDebugging method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmodule-enablejitdebugging-method.md
+                      - name: GetAssembly method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmodule-getassembly-method.md
+                      - name: GetBaseAddress method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmodule-getbaseaddress-method.md
+                      - name: GetClassFromToken method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmodule-getclassfromtoken-method.md
+                      - name: GetEditAndContinueSnapshot method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmodule-geteditandcontinuesnapshot-method.md
+                      - name: GetFunctionFromRVA method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmodule-getfunctionfromrva-method.md
+                      - name: GetFunctionFromToken method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmodule-getfunctionfromtoken-method.md
+                      - name: GetGlobalVariableValue method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmodule-getglobalvariablevalue-method.md
+                      - name: GetMetaDataInterface method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmodule-getmetadatainterface-method.md
+                      - name: GetName method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmodule-getname-method.md
+                      - name: GetProcess method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmodule-getprocess-method.md
+                      - name: GetSize method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmodule-getsize-method.md
+                      - name: GetToken method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmodule-gettoken-method.md
+                      - name: IsDynamic method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmodule-isdynamic-method.md
+                      - name: IsInMemory method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmodule-isinmemory-method.md
+                  - name: ICorDebugModule2 interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmodule2-interface.md
+                        displayName: ICorDebugModule2
+                      - name: ApplyChanges method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmodule2-applychanges-method.md
+                      - name: GetJITCompilerFlags method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmodule2-getjitcompilerflags-method.md
+                      - name: ResolveAssembly method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmodule2-resolveassembly-method.md
+                      - name: SetJITCompilerFlags method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmodule2-setjitcompilerflags-method.md
+                      - name: SetJMCStatus method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmodule2-setjmcstatus-method.md
+                  - name: ICorDebugModule3 interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmodule3-interface.md
+                        displayName: ICorDebugModule3
+                      - name: "ICorDebugModule3::CreateReaderForInMemorySymbols method"
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmodule3-createreaderforinmemorysymbols-method.md
+                  - name: ICorDebugModule4 interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmodule4-interface.md
+                        displayName: ICorDebugModule4
+                      - name: "ICorDebugModule4::IsMappedLayout method"
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmodule4-ismappedlayout-method.md
+                  - name: ICorDebugModuleBreakpoint interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmodulebreakpoint-interface.md
+                        displayName: ICorDebugModuleBreakpoint
+                      - name: GetModule method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmodulebreakpoint-getmodule-method.md
+                  - name: ICorDebugModuleDebugEvent interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmoduledebugevent-interface.md
+                        displayName: ICorDebugModuleDebugEvent
+                      - name: GetModule method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmoduledebugevent-getmodule-method.md
+                  - name: ICorDebugModuleEnum interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmoduleenum-interface.md
+                        displayName: ICorDebugModuleEnum
+                      - name: Next method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmoduleenum-next-method.md
+                  - name: ICorDebugMutableDataTarget interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmutabledatatarget-interface.md
+                        displayName: ICorDebugMutableDataTarget
+                      - name: ContinueStatusChanged method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmutabledatatarget-continuestatuschanged-method.md
+                      - name: SetThreadContext method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmutabledatatarget-setthreadcontext-method.md
+                      - name: WriteVirtual method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugmutabledatatarget-writevirtual-method.md
+                  - name: ICorDebugNativeFrame interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugnativeframe-interface.md
+                        displayName: ICorDebugNativeFrame
+                      - name: CanSetIP method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugnativeframe-cansetip-method.md
+                      - name: GetIP method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugnativeframe-getip-method.md
+                      - name: GetLocalDoubleRegisterValue method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugnativeframe-getlocaldoubleregistervalue-method.md
+                      - name: GetLocalMemoryRegisterValue method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugnativeframe-getlocalmemoryregistervalue-method.md
+                      - name: GetLocalMemoryValue method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugnativeframe-getlocalmemoryvalue-method.md
+                      - name: GetLocalRegisterMemoryValue method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugnativeframe-getlocalregistermemoryvalue-method.md
+                      - name: GetLocalRegisterValue method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugnativeframe-getlocalregistervalue-method.md
+                      - name: GetRegisterSet method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugnativeframe-getregisterset-method.md
+                      - name: SetIP method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugnativeframe-setip-method.md
+                  - name: ICorDebugNativeFrame2 interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugnativeframe2-interface.md
+                        displayName: ICorDebugNativeFrame2
+                      - name: IsChild method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugnativeframe2-ischild-method.md
+                      - name: IsMatchingParentFrame method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugnativeframe2-ismatchingparentframe-method.md
+                      - name: GetStackParameterSize method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugnativeframe2-getstackparametersize-method.md
+                  - name: ICorDebugObjectEnum interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugobjectenum-interface.md
+                        displayName: ICorDebugObjectEnum
+                      - name: Next method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugobjectenum-next-method.md
+                  - name: ICorDebugObjectValue interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugobjectvalue-interface.md
+                        displayName: ICorDebugObjectValue
+                      - name: GetClass method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugobjectvalue-getclass-method.md
+                      - name: GetContext method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugobjectvalue-getcontext-method.md
+                      - name: GetFieldValue method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugobjectvalue-getfieldvalue-method.md
+                      - name: GetManagedCopy method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugobjectvalue-getmanagedcopy-method.md
+                      - name: GetVirtualMethod method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugobjectvalue-getvirtualmethod-method.md
+                      - name: IsValueClass method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugobjectvalue-isvalueclass-method.md
+                      - name: SetFromManagedCopy method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugobjectvalue-setfrommanagedcopy-method.md
+                  - name: ICorDebugObjectValue2 interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugobjectvalue2-interface.md
+                        displayName: ICorDebugObjectValue2
+                      - name: GetVirtualMethodAndType method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugobjectvalue2-getvirtualmethodandtype-method.md
+                  - name: ICorDebugProcess interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess-interface.md
+                        displayName: ICorDebugProcess
+                      - name: ClearCurrentException method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess-clearcurrentexception-method.md
+                      - name: EnableLogMessages method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess-enablelogmessages-method.md
+                      - name: EnumerateAppDomains method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess-enumerateappdomains-method.md
+                      - name: EnumerateObjects method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess-enumerateobjects-method.md
+                      - name: GetHandle method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess-gethandle-method.md
+                      - name: GetHelperThreadID method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess-gethelperthreadid-method.md
+                      - name: GetID method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess-getid-method.md
+                      - name: GetObject method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess-getobject-method.md
+                      - name: GetThread method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess-getthread-method.md
+                      - name: GetThreadContext method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess-getthreadcontext-method.md
+                      - name: IsOSSuspended method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess-isossuspended-method.md
+                      - name: IsTransitionStub method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess-istransitionstub-method.md
+                      - name: ModifyLogSwitch method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess-modifylogswitch-method.md
+                      - name: ReadMemory method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess-readmemory-method.md
+                      - name: SetThreadContext method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess-setthreadcontext-method.md
+                      - name: ThreadForFiberCookie method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess-threadforfibercookie-method.md
+                      - name: WriteMemory method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess-writememory-method.md
+                  - name: ICorDebugProcess2 interface
+                    href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess2-interface1.md
+                    items:
+                      - name: ClearUnmanagedBreakpoint method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess2-clearunmanagedbreakpoint-method.md
+                      - name: GetDesiredNGENCompilerFlags method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess2-getdesiredngencompilerflags-method.md
+                      - name: GetReferenceValueFromGCHandle method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess2-getreferencevaluefromgchandle-method.md
+                      - name: GetThreadForTaskID method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess2-getthreadfortaskid-method.md
+                      - name: GetVersion method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess2-getversion-method.md
+                      - name: SetDesiredNGENCompilerFlags method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess2-setdesiredngencompilerflags-method.md
+                      - name: SetUnmanagedBreakpoint method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess2-setunmanagedbreakpoint-method.md
+                  - name: ICorDebugProcess3 interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess3-interface.md
+                        displayName: ICorDebugProcess3
+                      - name: SetEnableCustomNotification method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess3-setenablecustomnotification-method.md
+                  - name: ICorDebugProcess4 interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess4-interface.md
+                        displayName: ICorDebugProcess4
+                      - name: ProcessStateChanged method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess4-processstatechanged-method.md
+                  - name: ICorDebugProcess5 interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess5-interface.md
+                        displayName: ICorDebugProcess5
+                      - name: EnableNGenPolicy method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess5-enablengenpolicy-method.md
+                      - name: EnumerateGCReferences method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess5-enumerategcreferences-method.md
+                      - name: EnumerateHandles method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess5-enumeratehandles-method.md
+                      - name: EnumerateHeap method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess5-enumerateheap-method.md
+                      - name: EnumerateHeapRegions method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess5-enumerateheapregions-method.md
+                      - name: GetArrayLayout method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess5-getarraylayout-method.md
+                      - name: GetGCHeapInformation method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess5-getgcheapinformation-method.md
+                      - name: GetObject method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess5-getobject-method.md
+                      - name: GetTypeFields method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess5-gettypefields-method.md
+                      - name: GetTypeForTypeID method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess5-gettypefortypeid-method.md
+                      - name: GetTypeID method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess5-gettypeid-method.md
+                      - name: GetTypeLayout method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess5-gettypelayout-method.md
+                  - name: ICorDebugProcess6 interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess6-interface.md
+                        displayName: ICorDebugProcess6
+                      - name: DecodeEvent method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess6-decodeevent-method.md
+                      - name: EnableVirtualModuleSplitting method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess6-enablevirtualmodulesplitting-method.md
+                      - name: GetCode method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess6-getcode-method.md
+                      - name: GetExportStepInfo method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess6-getexportstepinfo-method.md
+                      - name: MarkDebuggerAttached method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess6-markdebuggerattached-method.md
+                      - name: ProcessStateChanged method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess6-processstatechanged-method.md
+                  - name: ICorDebugProcess7 interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess7-interface.md
+                        displayName: ICorDebugProcess7
+                      - name: SetWriteableMetadataUpdateMode method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess7-setwriteablemetadataupdatemode-method.md
+                  - name: ICorDebugProcess8 interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess8-interface.md
+                        displayName: ICorDebugProcess8
+                      - name: EnableExceptionCallbacksOutsideOfMyCode method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess8-enableexceptioncallbacksoutsideofmycode-method.md
+                  - name: ICorDebugProcess11 interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess11-interface.md
+                        displayName: ICorDebugProcess11
+                      - name: EnumerateLoaderHeapMemoryRegions method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocess11-enumerateloaderheapmemoryregions-method.md
+                  - name: ICorDebugProcessEnum interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocessenum-interface.md
+                        displayName: ICorDebugProcessEnum
+                      - name: Next method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugprocessenum-next-method.md
+                  - name: ICorDebugReferenceValue interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugreferencevalue-interface.md
+                        displayName: ICorDebugReferenceValue
+                      - name: Dereference method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugreferencevalue-dereference-method.md
+                      - name: DereferenceStrong method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugreferencevalue-dereferencestrong-method.md
+                      - name: GetValue method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugreferencevalue-getvalue-method.md
+                      - name: IsNull method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugreferencevalue-isnull-method.md
+                      - name: SetValue method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugreferencevalue-setvalue-method.md
+                  - name: ICorDebugRegisterSet interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugregisterset-interface.md
+                        displayName: ICorDebugRegisterSet
+                      - name: GetRegisters method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugregisterset-getregisters-method.md
+                      - name: GetRegistersAvailable method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugregisterset-getregistersavailable-method.md
+                      - name: GetThreadContext method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugregisterset-getthreadcontext-method.md
+                      - name: SetRegisters method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugregisterset-setregisters-method.md
+                      - name: SetThreadContext method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugregisterset-setthreadcontext-method.md
+                  - name: ICorDebugRegisterSet2 interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugregisterset2-interface.md
+                        displayName: ICorDebugRegisterSet2
+                      - name: GetRegisters method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugregisterset2-getregisters-method.md
+                      - name: GetRegistersAvailable method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugregisterset2-getregistersavailable-method.md
+                      - name: SetRegisters method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugregisterset2-setregisters-method.md
+                  - name: ICorDebugRemote interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugremote-interface.md
+                        displayName: ICorDebugRemote
+                      - name: "ICorDebugRemote::CreateProcessEx method"
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugremote-createprocessex-method.md
+                      - name: "ICorDebugRemote::DebugActiveProcessEx method"
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugremote-debugactiveprocessex-method.md
+                  - name: ICorDebugRemoteTarget interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugremotetarget-interface.md
+                        displayName: ICorDebugRemoteTarget
+                      - name: "ICorDebugRemoteTarget::GetHostName method"
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugremotetarget-gethostname-method.md
+                  - name: ICorDebugRuntimeUnwindableFrame interface
+                    href: ../../core/unmanaged-api/debugging/icordebug/icordebugruntimeunwindableframe-interface.md
+                  - name: ICorDebugStackWalk interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugstackwalk-interface.md
+                        displayName: ICorDebugStackWalk
+                      - name: GetContext method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugstackwalk-getcontext-method.md
+                      - name: SetContext method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugstackwalk-setcontext-method.md
+                      - name: Next method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugstackwalk-next-method.md
+                      - name: GetFrame method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugstackwalk-getframe-method.md
+                  - name: ICorDebugStaticFieldSymbol interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugstaticfieldsymbol-interface.md
+                        displayName: ICorDebugStaticFieldSymbol
+                      - name: GetAddress method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugstaticfieldsymbol-getaddress-method.md
+                      - name: GetName method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugstaticfieldsymbol-getname-method.md
+                      - name: GetSize method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugstaticfieldsymbol-getsize-method.md
+                  - name: ICorDebugStepper interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugstepper-interface.md
+                        displayName: ICorDebugStepper
+                      - name: Deactivate method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugstepper-deactivate-method.md
+                      - name: IsActive method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugstepper-isactive-method.md
+                      - name: SetInterceptMask method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugstepper-setinterceptmask-method.md
+                      - name: SetRangeIL method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugstepper-setrangeil-method.md
+                      - name: SetUnmappedStopMask method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugstepper-setunmappedstopmask-method.md
+                      - name: Step method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugstepper-step-method.md
+                      - name: StepOut method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugstepper-stepout-method.md
+                      - name: StepRange method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugstepper-steprange-method.md
+                  - name: ICorDebugStepper2 interface
+                    href: ../../core/unmanaged-api/debugging/icordebug/icordebugstepper2-interface1.md
+                    items:
+                      - name: SetJMC method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugstepper2-setjmc-method.md
+                  - name: ICorDebugStepperEnum interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugstepperenum-interface.md
+                        displayName: ICorDebugStepperEnum
+                      - name: Next method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugstepperenum-next-method.md
+                  - name: ICorDebugStringValue interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugstringvalue-interface.md
+                        displayName: ICorDebugStringValue
+                      - name: GetLength method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugstringvalue-getlength-method.md
+                      - name: GetString method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugstringvalue-getstring-method.md
+                  - name: ICorDebugSymbolProvider interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugsymbolprovider-interface.md
+                        displayName: ICorDebugSymbolProvider
+                      - name: GetAssemblyImageBytes method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugsymbolprovider-getassemblyimagebytes-method.md
+                      - name: GetAssemblyImageMetadata method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugsymbolprovider-getassemblyimagemetadata-method.md
+                      - name: GetCodeRange method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugsymbolprovider-getcoderange-method.md
+                      - name: GetInstanceFieldSymbols method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugsymbolprovider-getinstancefieldsymbols-method.md
+                      - name: GetMergedAssemblyRecords method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugsymbolprovider-getmergedassemblyrecords-method.md
+                      - name: GetMethodLocalSymbols method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugsymbolprovider-getmethodlocalsymbols-method.md
+                      - name: GetMethodParameterSymbols method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugsymbolprovider-getmethodparametersymbols-method.md
+                      - name: GetMethodProps method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugsymbolprovider-getmethodprops-method.md
+                      - name: GetObjectSize method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugsymbolprovider-getobjectsize-method.md
+                      - name: GetStaticFieldSymbols method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugsymbolprovider-getstaticfieldsymbols-method.md
+                      - name: GetTypeProps method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugsymbolprovider-gettypeprops-method.md
+                  - name: ICorDebugSymbolProvider2 interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugsymbolprovider2-interface.md
+                        displayName: ICorDebugSymbolProvider2
+                      - name: GetFrameProps method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugsymbolprovider2-getframeprops-method.md
+                      - name: GetGenericDictionaryInfo method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugsymbolprovider2-getgenericdictionaryinfo-method.md
+                  - name: ICorDebugThread interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugthread-interface.md
+                        displayName: ICorDebugThread
+                      - name: ClearCurrentException method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugthread-clearcurrentexception-method.md
+                      - name: CreateEval method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugthread-createeval-method.md
+                      - name: CreateStepper method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugthread-createstepper-method.md
+                      - name: EnumerateChains method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugthread-enumeratechains-method.md
+                      - name: GetActiveChain method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugthread-getactivechain-method.md
+                      - name: GetActiveFrame method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugthread-getactiveframe-method.md
+                      - name: GetAppDomain method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugthread-getappdomain-method.md
+                      - name: GetCurrentException method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugthread-getcurrentexception-method.md
+                      - name: GetDebugState method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugthread-getdebugstate-method.md
+                      - name: GetHandle method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugthread-gethandle-method.md
+                      - name: GetID method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugthread-getid-method.md
+                      - name: GetObject method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugthread-getobject-method.md
+                      - name: GetProcess method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugthread-getprocess-method.md
+                      - name: GetRegisterSet method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugthread-getregisterset-method.md
+                      - name: GetUserState method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugthread-getuserstate-method.md
+                      - name: SetDebugState method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugthread-setdebugstate-method.md
+                  - name: ICorDebugThread2 interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugthread2-interface.md
+                        displayName: ICorDebugThread2
+                      - name: GetActiveFunctions method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugthread2-getactivefunctions-method.md
+                      - name: GetConnectionID method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugthread2-getconnectionid-method.md
+                      - name: GetTaskID method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugthread2-gettaskid-method.md
+                      - name: GetVolatileOSThreadID method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugthread2-getvolatileosthreadid-method.md
+                      - name: InterceptCurrentException method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugthread2-interceptcurrentexception-method.md
+                  - name: ICorDebugThread3 interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugthread3-interface.md
+                        displayName: ICorDebugThread3
+                      - name: CreateStackWalk method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugthread3-createstackwalk-method.md
+                      - name: GetActiveInternalFrames method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugthread3-getactiveinternalframes-method.md
+                  - name: ICorDebugThread4 interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugthread4-interface.md
+                        displayName: ICorDebugThread4
+                      - name: GetBlockingObjects method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugthread4-getblockingobjects-method.md
+                      - name: HadUnhandledException method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugthread4-hadunhandledexception-method.md
+                      - name: GetCurrentCustomDebuggerNotification method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugthread4-getcurrentcustomdebuggernotification-method.md
+                  - name: ICorDebugThreadEnum interface
+                    href: ../../core/unmanaged-api/debugging/icordebug/icordebugthreadenum-interface1.md
+                    items:
+                      - name: Next method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugthreadenum-next-method.md
+                  - name: ICorDebugType interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugtype-interface.md
+                        displayName: ICorDebugType
+                      - name: EnumerateTypeParameters method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugtype-enumeratetypeparameters-method.md
+                      - name: GetBase method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugtype-getbase-method.md
+                      - name: GetClass method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugtype-getclass-method.md
+                      - name: GetFirstTypeParameter method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugtype-getfirsttypeparameter-method.md
+                      - name: GetRank method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugtype-getrank-method.md
+                      - name: GetStaticFieldValue method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugtype-getstaticfieldvalue-method.md
+                      - name: GetType method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugtype-gettype-method.md
+                  - name: ICorDebugType2 interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugtype2-interface.md
+                        displayName: ICorDebugType2
+                      - name: GetTypeID method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugtype2-gettypeid-method.md
+                  - name: ICorDebugTypeEnum interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugtypeenum-interface.md
+                        displayName: ICorDebugTypeEnum
+                      - name: Next method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugtypeenum-next-method.md
+                  - name: ICorDebugUnmanagedCallback interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugunmanagedcallback-interface.md
+                        displayName: ICorDebugUnmanagedCallback
+                      - name: DebugEvent method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugunmanagedcallback-debugevent-method.md
+                  - name: ICorDebugValue interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugvalue-interface.md
+                        displayName: ICorDebugValue
+                      - name: CreateBreakpoint method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugvalue-createbreakpoint-method.md
+                      - name: GetAddress method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugvalue-getaddress-method.md
+                      - name: GetSize method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugvalue-getsize-method.md
+                      - name: GetType method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugvalue-gettype-method.md
+                  - name: ICorDebugValue2 interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugvalue2-interface.md
+                        displayName: ICorDebugValue2
+                      - name: GetExactType method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugvalue2-getexacttype-method.md
+                  - name: ICorDebugValue3 interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugvalue3-interface.md
+                        displayName: ICorDebugValue3
+                      - name: GetSize64 method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugvalue3-getsize64-method.md
+                  - name: ICorDebugValueBreakpoint interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugvaluebreakpoint-interface.md
+                        displayName: ICorDebugValueBreakpoint
+                      - name: GetValue method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugvaluebreakpoint-getvalue-method.md
+                  - name: ICorDebugValueEnum interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugvalueenum-interface.md
+                        displayName: ICorDebugValueEnum
+                      - name: Next method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugvalueenum-next-method.md
+                  - name: ICorDebugVariableHome interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugvariablehome-interface.md
+                        displayName: ICorDebugVariableHome
+                      - name: GetArgumentIndex method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugvariablehome-getargumentindex-method.md
+                      - name: GetCode method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugvariablehome-getcode-method.md
+                      - name: GetLiveRange method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugvariablehome-getliverange-method.md
+                      - name: GetLocationType method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugvariablehome-getlocationtype-method.md
+                      - name: GetOffset method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugvariablehome-getoffset-method.md
+                      - name: GetRegister method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugvariablehome-getregister-method.md
+                      - name: GetSlotIndex method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugvariablehome-getslotindex-method.md
+                  - name: ICorDebugVariableHomeEnum interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugvariablehomeenum-interface.md
+                        displayName: ICorDebugVariableHomeEnum
+                      - name: Next method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugvariablehomeenum-next-method.md
+                  - name: ICorDebugVariableSymbol interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugvariablesymbol-interface.md
+                        displayName: ICorDebugVariableSymbol
+                      - name: GetName method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugvariablesymbol-getname-method.md
+                      - name: GetSize method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugvariablesymbol-getsize-method.md
+                      - name: GetSlotIndex method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugvariablesymbol-getslotindex-method.md
+                      - name: GetValue method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugvariablesymbol-getvalue-method.md
+                      - name: SetValue method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugvariablesymbol-setvalue-method.md
+                  - name: ICorDebugVirtualUnwinder interface
+                    items:
+                      - name: Overview
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugvirtualunwinder-interface.md
+                        displayName: ICorDebugVirtualUnwinder
+                      - name: GetContext method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugvirtualunwinder-getcontext-method.md
+                      - name: Next method
+                        href: ../../core/unmanaged-api/debugging/icordebug/icordebugvirtualunwinder-next-method.md
+              - name: Structures
+                items:
+                  - name: CodeChunkInfo structure
+                    href: ../../core/unmanaged-api/debugging/icordebug/codechunkinfo-structure.md
+                  - name: COR_ACTIVE_FUNCTION structure
+                    href: ../../core/unmanaged-api/debugging/icordebug/cor-active-function-structure.md
+                  - name: COR_ARRAY_LAYOUT structure
+                    href: ../../core/unmanaged-api/debugging/icordebug/cor-array-layout-structure.md
+                  - name: COR_DEBUG_IL_TO_NATIVE_MAP structure
+                    href: ../../core/unmanaged-api/debugging/icordebug/cor-debug-il-to-native-map-structure.md
+                  - name: COR_DEBUG_STEP_RANGE structure
+                    href: ../../core/unmanaged-api/debugging/icordebug/cor-debug-step-range-structure.md
+                  - name: COR_FIELD structure
+                    href: ../../core/unmanaged-api/debugging/icordebug/cor-field-structure.md
+                  - name: COR_GC_REFERENCE structure
+                    href: ../../core/unmanaged-api/debugging/icordebug/cor-gc-reference-structure.md
+                  - name: COR_HEAPINFO structure
+                    href: ../../core/unmanaged-api/debugging/icordebug/cor-heapinfo-structure.md
+                  - name: COR_HEAPOBJECT structure
+                    href: ../../core/unmanaged-api/debugging/icordebug/cor-heapobject-structure.md
+                  - name: COR_IL_MAP structure
+                    href: ../../core/unmanaged-api/debugging/icordebug/cor-il-map-structure.md
+                  - name: COR_SEGMENT structure
+                    href: ../../core/unmanaged-api/debugging/icordebug/cor-segment-structure.md
+                  - name: COR_TYPEID structure
+                    href: ../../core/unmanaged-api/debugging/icordebug/cor-typeid-structure.md
+                  - name: COR_TYPE_LAYOUT structure
+                    href: ../../core/unmanaged-api/debugging/icordebug/cor-type-layout-structure.md
+                  - name: COR_VERSION structure
+                    href: ../../core/unmanaged-api/debugging/icordebug/cor-version-structure.md
+                  - name: CorDebugBlockingObject structure
+                    href: ../../core/unmanaged-api/debugging/icordebug/cordebugblockingobject-structure.md
+                  - name: CorDebugEHClause structure
+                    href: ../../core/unmanaged-api/debugging/icordebug/cordebugehclause-structure.md
+                  - name: CorDebugExceptionObjectStackFrame structure
+                    href: ../../core/unmanaged-api/debugging/icordebug/cordebugexceptionobjectstackframe-structure.md
+                  - name: CorDebugGuidToTypeMapping structure
+                    href: ../../core/unmanaged-api/debugging/icordebug/cordebugguidtotypemapping-structure.md
+          - name: Metadata
+            items:
+              - name: Overview
+                href: ../../core/unmanaged-api/metadata/index.md
               - name: Enumerations
                 items:
-                  - name: LIBRARY_PROVIDER_INDEX_TYPE enumeration
-                    href: ../../core/unmanaged-api/debugging/libraryproviderindextype-enumeration.md
-              - name: Function pointers
+                  - name: Overview
+                    href: ../../core/unmanaged-api/metadata/enumerations/metadata-enumerations.md
+                  - name: CorAssemblyFlags enumeration
+                    href: ../../core/unmanaged-api/metadata/enumerations/corassemblyflags-enumeration.md
+                  - name: CorCheckDuplicatesFor enumeration
+                    href: ../../core/unmanaged-api/metadata/enumerations/corcheckduplicatesfor-enumeration.md
+                  - name: CorDeclSecurity enumeration
+                    href: ../../core/unmanaged-api/metadata/enumerations/cordeclsecurity-enumeration.md
+                  - name: CorElementType enumeration
+                    href: ../../core/unmanaged-api/metadata/enumerations/corelementtype-enumeration.md
+                  - name: CorErrorIfEmitOutOfOrder enumeration
+                    href: ../../core/unmanaged-api/metadata/enumerations/corerrorifemitoutoforder-enumeration.md
+                  - name: CorFileFlags enumeration
+                    href: ../../core/unmanaged-api/metadata/enumerations/corfileflags-enumeration.md
+                  - name: CorFileMapping enumeration
+                    href: ../../core/unmanaged-api/metadata/enumerations/corfilemapping-enumeration.md
+                  - name: CorGenericParamAttr enumeration
+                    href: ../../core/unmanaged-api/metadata/enumerations/corgenericparamattr-enumeration.md
+                  - name: CorImportOptions enumeration
+                    href: ../../core/unmanaged-api/metadata/enumerations/corimportoptions-enumeration.md
+                  - name: CorLinkerOptions enumeration
+                    href: ../../core/unmanaged-api/metadata/enumerations/corlinkeroptions-enumeration.md
+                  - name: CorLocalRefPreservation enumeration
+                    href: ../../core/unmanaged-api/metadata/enumerations/corlocalrefpreservation-enumeration.md
+                  - name: CorManifestResourceFlags enumeration
+                    href: ../../core/unmanaged-api/metadata/enumerations/cormanifestresourceflags-enumeration.md
+                  - name: CorMethodAttr enumeration
+                    href: ../../core/unmanaged-api/metadata/enumerations/cormethodattr-enumeration.md
+                  - name: CorMethodImpl enumeration
+                    href: ../../core/unmanaged-api/metadata/enumerations/cormethodimpl-enumeration.md
+                  - name: CorMethodSemanticsAttr enumeration
+                    href: ../../core/unmanaged-api/metadata/enumerations/cormethodsemanticsattr-enumeration.md
+                  - name: CorNotificationForTokenMovement enumeration
+                    href: ../../core/unmanaged-api/metadata/enumerations/cornotificationfortokenmovement-enumeration.md
+                  - name: CorOpenFlags enumeration
+                    href: ../../core/unmanaged-api/metadata/enumerations/coropenflags-enumeration.md
+                  - name: CorPEKind enumeration
+                    href: ../../core/unmanaged-api/metadata/enumerations/corpekind-enumeration.md
+                  - name: CorPinvokeMap enumeration
+                    href: ../../core/unmanaged-api/metadata/enumerations/corpinvokemap-enumeration.md
+                  - name: CorPropertyAttr enumeration
+                    href: ../../core/unmanaged-api/metadata/enumerations/corpropertyattr-enumeration.md
+                  - name: CorRefToDefCheck enumeration
+                    href: ../../core/unmanaged-api/metadata/enumerations/correftodefcheck-enumeration.md
+                  - name: CorSaveSize enumeration
+                    href: ../../core/unmanaged-api/metadata/enumerations/corsavesize-enumeration.md
+                  - name: CorSetENC enumeration
+                    href: ../../core/unmanaged-api/metadata/enumerations/corsetenc-enumeration.md
+                  - name: CorThreadSafetyOptions enumeration
+                    href: ../../core/unmanaged-api/metadata/enumerations/corthreadsafetyoptions-enumeration.md
+                  - name: CorTypeAttr enumeration
+                    href: ../../core/unmanaged-api/metadata/enumerations/cortypeattr-enumeration.md
+                  - name: CorValidatorModuleType enumeration
+                    href: ../../core/unmanaged-api/metadata/enumerations/corvalidatormoduletype-enumeration.md
+              - name: Interfaces
                 items:
-                  - name: PSTARTUP_CALLBACK function pointer
-                    href: ../../core/unmanaged-api/debugging/pstartup_callback-function-pointer.md
+                  - name: Overview
+                    href: ../../core/unmanaged-api/metadata/interfaces/metadata-interfaces.md
+                  - name: IMapToken interface
+                    href: ../../core/unmanaged-api/metadata/interfaces/imaptoken-interface.md
+                    items:
+                      - name: Map method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imaptoken-map-method.md
+                  - name: IMetaDataAssemblyEmit interface
+                    href: ../../core/unmanaged-api/metadata/interfaces/imetadataassemblyemit-interface.md
+                    items:
+                      - name: DefineAssembly method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataassemblyemit-defineassembly-method.md
+                      - name: DefineAssemblyRef method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataassemblyemit-defineassemblyref-method.md
+                      - name: DefineExportedType method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataassemblyemit-defineexportedtype-method.md
+                      - name: DefineFile method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataassemblyemit-definefile-method.md
+                      - name: DefineManifestResource method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataassemblyemit-definemanifestresource-method.md
+                      - name: SetAssemblyProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataassemblyemit-setassemblyprops-method.md
+                      - name: SetAssemblyRefProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataassemblyemit-setassemblyrefprops-method.md
+                      - name: SetExportedTypeProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataassemblyemit-setexportedtypeprops-method.md
+                      - name: SetFileProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataassemblyemit-setfileprops-method.md
+                      - name: SetManifestResourceProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataassemblyemit-setmanifestresourceprops-method.md
+                  - name: IMetaDataAssemblyImport interface
+                    href: ../../core/unmanaged-api/metadata/interfaces/imetadataassemblyimport-interface.md
+                    items:
+                      - name: CloseEnum method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataassemblyimport-closeenum-method.md
+                      - name: EnumAssemblyRefs method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataassemblyimport-enumassemblyrefs-method.md
+                      - name: EnumExportedTypes method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataassemblyimport-enumexportedtypes-method.md
+                      - name: EnumFiles method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataassemblyimport-enumfiles-method.md
+                      - name: EnumManifestResources method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataassemblyimport-enummanifestresources-method.md
+                      - name: FindAssembliesByName method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataassemblyimport-findassembliesbyname-method.md
+                      - name: FindExportedTypeByName method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataassemblyimport-findexportedtypebyname-method.md
+                      - name: FindManifestResourceByName method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataassemblyimport-findmanifestresourcebyname-method.md
+                      - name: GetAssemblyFromScope method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataassemblyimport-getassemblyfromscope-method.md
+                      - name: GetAssemblyProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataassemblyimport-getassemblyprops-method.md
+                      - name: GetAssemblyRefProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataassemblyimport-getassemblyrefprops-method.md
+                      - name: GetExportedTypeProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataassemblyimport-getexportedtypeprops-method.md
+                      - name: GetFileProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataassemblyimport-getfileprops-method.md
+                      - name: GetManifestResourceProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataassemblyimport-getmanifestresourceprops-method.md
+                  - name: IMetaDataDispenser interface
+                    href: ../../core/unmanaged-api/metadata/interfaces/imetadatadispenser-interface.md
+                    items:
+                      - name: DefineScope method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatadispenser-definescope-method.md
+                      - name: OpenScope method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatadispenser-openscope-method.md
+                      - name: OpenScopeOnMemory method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatadispenser-openscopeonmemory-method.md
+                  - name: IMetaDataDispenserEx interface
+                    href: ../../core/unmanaged-api/metadata/interfaces/imetadatadispenserex-interface.md
+                    items:
+                      - name: FindAssembly method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatadispenserex-findassembly-method.md
+                      - name: FindAssemblyModule method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatadispenserex-findassemblymodule-method.md
+                      - name: GetCORSystemDirectory method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatadispenserex-getcorsystemdirectory-method.md
+                      - name: GetOption method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatadispenserex-getoption-method.md
+                      - name: OpenScopeOnITypeInfo method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatadispenserex-openscopeonitypeinfo-method.md
+                      - name: SetOption method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatadispenserex-setoption-method.md
+                  - name: IMetaDataEmit interface
+                    href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-interface.md
+                    items:
+                      - name: ApplyEditAndContinue method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-applyeditandcontinue-method.md
+                      - name: DefineCustomAttribute method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-definecustomattribute-method.md
+                      - name: DefineEvent method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-defineevent-method.md
+                      - name: DefineField method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-definefield-method.md
+                      - name: DefineImportMember method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-defineimportmember-method.md
+                      - name: DefineImportType method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-defineimporttype-method.md
+                      - name: DefineMemberRef method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-definememberref-method.md
+                      - name: DefineMethod method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-definemethod-method.md
+                      - name: DefineMethodImpl method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-definemethodimpl-method.md
+                      - name: DefineModuleRef method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-definemoduleref-method.md
+                      - name: DefineNestedType method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-definenestedtype-method.md
+                      - name: DefineParam method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-defineparam-method.md
+                      - name: DefinePermissionSet method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-definepermissionset-method.md
+                      - name: DefinePinvokeMap method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-definepinvokemap-method.md
+                      - name: DefineProperty method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-defineproperty-method.md
+                      - name: DefineSecurityAttributeSet method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-definesecurityattributeset-method.md
+                      - name: DefineTypeDef method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-definetypedef-method.md
+                      - name: DefineTypeRefByName method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-definetyperefbyname-method.md
+                      - name: DefineUserString method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-defineuserstring-method.md
+                      - name: DeleteClassLayout method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-deleteclasslayout-method.md
+                      - name: DeleteFieldMarshal method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-deletefieldmarshal-method.md
+                      - name: DeletePinvokeMap method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-deletepinvokemap-method.md
+                      - name: DeleteToken method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-deletetoken-method.md
+                      - name: GetSaveSize method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-getsavesize-method.md
+                      - name: GetTokenFromSig method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-gettokenfromsig-method.md
+                      - name: GetTokenFromTypeSpec method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-gettokenfromtypespec-method.md
+                      - name: Merge method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-merge-method.md
+                      - name: MergeEnd method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-mergeend-method.md
+                      - name: Save method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-save-method.md
+                      - name: SaveToMemory method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-savetomemory-method.md
+                      - name: SaveToStream method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-savetostream-method.md
+                      - name: SetClassLayout method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-setclasslayout-method.md
+                      - name: SetCustomAttributeValue method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-setcustomattributevalue-method.md
+                      - name: SetEventProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-seteventprops-method.md
+                      - name: SetFieldMarshal method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-setfieldmarshal-method.md
+                      - name: SetFieldProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-setfieldprops-method.md
+                      - name: SetFieldRVA method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-setfieldrva-method.md
+                      - name: SetHandler method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-sethandler-method.md
+                      - name: SetMethodImplFlags method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-setmethodimplflags-method.md
+                      - name: SetMethodProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-setmethodprops-method.md
+                      - name: SetModuleProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-setmoduleprops-method.md
+                      - name: SetParamProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-setparamprops-method.md
+                      - name: SetParent method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-setparent-method.md
+                      - name: SetPermissionSetProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-setpermissionsetprops-method.md
+                      - name: SetPinvokeMap method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-setpinvokemap-method.md
+                      - name: SetPropertyProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-setpropertyprops-method.md
+                      - name: SetRVA method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-setrva-method.md
+                      - name: SetTypeDefProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-settypedefprops-method.md
+                      - name: TranslateSigWithScope method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit-translatesigwithscope-method.md
+                  - name: IMetaDataEmit2 interface
+                    href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit2-interface.md
+                    items:
+                      - name: DefineGenericParam method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit2-definegenericparam-method.md
+                      - name: DefineMethodSpec method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit2-definemethodspec-method.md
+                      - name: GetDeltaSaveSize method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit2-getdeltasavesize-method.md
+                      - name: ResetENCLog method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit2-resetenclog-method.md
+                      - name: SaveDelta method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit2-savedelta-method.md
+                      - name: SaveDeltaToMemory method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit2-savedeltatomemory-method.md
+                      - name: SaveDeltaToStream method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit2-savedeltatostream-method.md
+                      - name: SetGenericParamProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataemit2-setgenericparamprops-method.md
+                  - name: IMetaDataError interface
+                    href: ../../core/unmanaged-api/metadata/interfaces/imetadataerror-interface.md
+                    items:
+                      - name: OnError method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataerror-onerror-method.md
+                  - name: IMetaDataFilter interface
+                    href: ../../core/unmanaged-api/metadata/interfaces/imetadatafilter-interface.md
+                    items:
+                      - name: IsTokenMarked method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatafilter-istokenmarked-method.md
+                      - name: MarkToken method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatafilter-marktoken-method.md
+                      - name: UnmarkAll method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatafilter-unmarkall-method.md
+                  - name: IMetaDataImport interface
+                    href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-interface.md
+                    items:
+                      - name: CloseEnum method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-closeenum-method.md
+                      - name: CountEnum method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-countenum-method.md
+                      - name: EnumCustomAttributes method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-enumcustomattributes-method.md
+                      - name: EnumEvents method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-enumevents-method.md
+                      - name: EnumFields method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-enumfields-method.md
+                      - name: EnumFieldsWithName method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-enumfieldswithname-method.md
+                      - name: EnumInterfaceImpls method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-enuminterfaceimpls-method.md
+                      - name: EnumMemberRefs method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-enummemberrefs-method.md
+                      - name: EnumMembers method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-enummembers-method.md
+                      - name: EnumMembersWithName method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-enummemberswithname-method.md
+                      - name: EnumMethodImpls method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-enummethodimpls-method.md
+                      - name: EnumMethods method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-enummethods-method.md
+                      - name: EnumMethodSemantics method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-enummethodsemantics-method.md
+                      - name: EnumMethodsWithName method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-enummethodswithname-method.md
+                      - name: EnumModuleRefs method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-enummodulerefs-method.md
+                      - name: EnumParams method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-enumparams-method.md
+                      - name: EnumPermissionSets method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-enumpermissionsets-method.md
+                      - name: EnumProperties method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-enumproperties-method.md
+                      - name: EnumSignatures method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-enumsignatures-method.md
+                      - name: EnumTypeDefs method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-enumtypedefs-method.md
+                      - name: EnumTypeRefs method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-enumtyperefs-method.md
+                      - name: EnumTypeSpecs method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-enumtypespecs-method.md
+                      - name: EnumUnresolvedMethods method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-enumunresolvedmethods-method.md
+                      - name: EnumUserStrings method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-enumuserstrings-method.md
+                      - name: FindField method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-findfield-method.md
+                      - name: FindMember method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-findmember-method.md
+                      - name: FindMemberRef method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-findmemberref-method.md
+                      - name: FindMethod method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-findmethod-method.md
+                      - name: FindTypeDefByName method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-findtypedefbyname-method.md
+                      - name: FindTypeRef method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-findtyperef-method.md
+                      - name: GetClassLayout method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-getclasslayout-method.md
+                      - name: GetCustomAttributeByName method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-getcustomattributebyname-method.md
+                      - name: GetCustomAttributeProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-getcustomattributeprops-method.md
+                      - name: GetEventProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-geteventprops-method.md
+                      - name: GetFieldMarshal method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-getfieldmarshal-method.md
+                      - name: GetFieldProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-getfieldprops-method.md
+                      - name: GetInterfaceImplProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-getinterfaceimplprops-method.md
+                      - name: GetMemberProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-getmemberprops-method.md
+                      - name: GetMemberRefProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-getmemberrefprops-method.md
+                      - name: GetMethodProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-getmethodprops-method.md
+                      - name: GetMethodSemantics method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-getmethodsemantics-method.md
+                      - name: GetModuleFromScope method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-getmodulefromscope-method.md
+                      - name: GetModuleRefProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-getmodulerefprops-method.md
+                      - name: GetNameFromToken method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-getnamefromtoken-method.md
+                      - name: GetNativeCallConvFromSig method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-getnativecallconvfromsig-method.md
+                      - name: GetNestedClassProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-getnestedclassprops-method.md
+                      - name: GetParamForMethodIndex method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-getparamformethodindex-method.md
+                      - name: GetParamProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-getparamprops-method.md
+                      - name: GetPermissionSetProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-getpermissionsetprops-method.md
+                      - name: GetPinvokeMap
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-getpinvokemap-method.md
+                      - name: GetPropertyProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-getpropertyprops-method.md
+                      - name: GetRVA method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-getrva-method.md
+                      - name: GetScopeProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-getscopeprops-method.md
+                      - name: GetSigFromToken method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-getsigfromtoken-method.md
+                      - name: GetTypeDefProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-gettypedefprops-method.md
+                      - name: GetTypeRefProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-gettyperefprops-method.md
+                      - name: GetTypeSpecFromToken method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-gettypespecfromtoken-method.md
+                      - name: GetUserString method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-getuserstring-method.md
+                      - name: IsGlobal method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-isglobal-method.md
+                      - name: IsValidToken method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-isvalidtoken-method.md
+                      - name: ResetEnum method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-resetenum-method.md
+                      - name: ResolveTypeRef method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport-resolvetyperef-method.md
+                  - name: IMetaDataImport2 interface
+                    href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport2-interface.md
+                    items:
+                      - name: EnumGenericParamConstraints method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport2-enumgenericparamconstraints-method.md
+                      - name: EnumGenericParams method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport2-enumgenericparams-method.md
+                      - name: EnumMethodSpecs method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport2-enummethodspecs-method.md
+                      - name: GetGenericParamConstraintProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport2-getgenericparamconstraintprops-method.md
+                      - name: GetGenericParamProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport2-getgenericparamprops-method.md
+                      - name: GetMethodSpecProps method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport2-getmethodspecprops-method.md
+                      - name: GetPEKind method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport2-getpekind-method.md
+                      - name: GetVersionString method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadataimport2-getversionstring-method.md
+                  - name: IMetaDataInfo interface
+                    href: ../../core/unmanaged-api/metadata/interfaces/imetadatainfo-interface.md
+                    items:
+                      - name: GetFileMapping method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatainfo-getfilemapping-method.md
+                  - name: IMetaDataTables interface
+                    href: ../../core/unmanaged-api/metadata/interfaces/imetadatatables-interface.md
+                    items:
+                      - name: GetBlob method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatatables-getblob-method.md
+                      - name: GetBlobHeapSize method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatatables-getblobheapsize-method.md
+                      - name: GetCodedTokenInfo method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatatables-getcodedtokeninfo-method.md
+                      - name: GetColumn method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatatables-getcolumn-method.md
+                      - name: GetColumnInfo method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatatables-getcolumninfo-method.md
+                      - name: GetGuid method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatatables-getguid-method.md
+                      - name: GetGuidHeapSize method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatatables-getguidheapsize-method.md
+                      - name: GetNextBlob method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatatables-getnextblob-method.md
+                      - name: GetNextGuid method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatatables-getnextguid-method.md
+                      - name: GetNextString method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatatables-getnextstring-method.md
+                      - name: GetNextUserString method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatatables-getnextuserstring-method.md
+                      - name: GetNumTables method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatatables-getnumtables-method.md
+                      - name: GetRow method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatatables-getrow-method.md
+                      - name: GetString method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatatables-getstring-method.md
+                      - name: GetStringHeapSize method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatatables-getstringheapsize-method.md
+                      - name: GetTableIndex method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatatables-gettableindex-method.md
+                      - name: GetTableInfo method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatatables-gettableinfo-method.md
+                      - name: GetUserString method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatatables-getuserstring-method.md
+                      - name: GetUserStringHeapSize method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatatables-getuserstringheapsize-method.md
+                  - name: IMetaDataTables2 interface
+                    href: ../../core/unmanaged-api/metadata/interfaces/imetadatatables2-interface.md
+                    items:
+                      - name: GetMetaDataStorage method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatatables2-getmetadatastorage-method.md
+                      - name: GetMetaDataStreamInfo method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatatables2-getmetadatastreaminfo-method.md
+                  - name: IMetaDataValidate interface
+                    href: ../../core/unmanaged-api/metadata/interfaces/imetadatavalidate-interface.md
+                    items:
+                      - name: ValidateMetaData method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatavalidate-validatemetadata-method.md
+                      - name: ValidatorInit method
+                        href: ../../core/unmanaged-api/metadata/interfaces/imetadatavalidate-validatorinit-method.md
+              - name: Structures
+                items:
+                  - name: Overview
+                    href: ../../core/unmanaged-api/metadata/structures/metadata-structures.md
+                  - name: ASSEMBLYMETADATA structure
+                    href: ../../core/unmanaged-api/metadata/structures/assemblymetadata-structure.md
+                  - name: COR_FIELD_OFFSET structure
+                    href: ../../core/unmanaged-api/metadata/structures/cor-field-offset-structure.md
+                  - name: OSINFO structure
+                    href: ../../core/unmanaged-api/metadata/structures/osinfo-structure.md
           - name: Profiling
             items:
               - name: Overview
@@ -941,6 +3098,8 @@ items:
                     href: ../../fundamentals/code-analysis/quality-rules/ca1514.md
                   - name: CA1515
                     href: ../../fundamentals/code-analysis/quality-rules/ca1515.md
+                  - name: CA1516
+                    href: ../../fundamentals/code-analysis/quality-rules/ca1516.md
               - name: Naming rules
                 items:
                   - name: Overview
@@ -1160,6 +3319,8 @@ items:
                     href: ../../fundamentals/code-analysis/quality-rules/ca2022.md
                   - name: CA2024
                     href: ../../fundamentals/code-analysis/quality-rules/ca2024.md
+                  - name: CA2025
+                    href: ../../fundamentals/code-analysis/quality-rules/ca2025.md
               - name: Security rules
                 items:
                   - name: Overview
@@ -1617,6 +3778,8 @@ items:
                     href: ../../fundamentals/code-analysis/style-rules/ide0110.md
                   - name: IDE0120
                     href: ../../fundamentals/code-analysis/style-rules/ide0120.md
+                  - name: IDE0121
+                    href: ../../fundamentals/code-analysis/style-rules/ide0121.md
                   - name: IDE0130
                     href: ../../fundamentals/code-analysis/style-rules/ide0130.md
                   - name: IDE0140
@@ -1669,12 +3832,32 @@ items:
                     href: ../../fundamentals/code-analysis/style-rules/ide0304.md
                   - name: IDE0305
                     href: ../../fundamentals/code-analysis/style-rules/ide0305.md
+                  - name: IDE0306
+                    href: ../../fundamentals/code-analysis/style-rules/ide0306.md
                   - name: IDE0320
                     href: ../../fundamentals/code-analysis/style-rules/ide0320.md
                   - name: IDE0330
                     href: ../../fundamentals/code-analysis/style-rules/ide0330.md
+                  - name: IDE0340
+                    href: ../../fundamentals/code-analysis/style-rules/ide0340.md
+                  - name: IDE0350
+                    href: ../../fundamentals/code-analysis/style-rules/ide0350.md
                   - name: IDE1005
                     href: ../../fundamentals/code-analysis/style-rules/ide1005.md
+                  - name: IDE2000
+                    href: ../../fundamentals/code-analysis/style-rules/ide2000.md
+                  - name: IDE2001
+                    href: ../../fundamentals/code-analysis/style-rules/ide2001.md
+                  - name: IDE2002
+                    href: ../../fundamentals/code-analysis/style-rules/ide2002.md
+                  - name: IDE2003
+                    href: ../../fundamentals/code-analysis/style-rules/ide2003.md
+                  - name: IDE2004
+                    href: ../../fundamentals/code-analysis/style-rules/ide2004.md
+                  - name: IDE2005
+                    href: ../../fundamentals/code-analysis/style-rules/ide2005.md
+                  - name: IDE2006
+                    href: ../../fundamentals/code-analysis/style-rules/ide2006.md
               - name: Miscellaneous rules
                 items:
                   - name: Overview
@@ -1683,6 +3866,8 @@ items:
                     href: ../../fundamentals/code-analysis/style-rules/ide0076.md
                   - name: IDE0077
                     href: ../../fundamentals/code-analysis/style-rules/ide0077.md
+                  - name: IDE3000
+                    href: ../../fundamentals/code-analysis/style-rules/ide3000.md
               - name: Formatting rules
                 items:
                   - name: IDE0055
@@ -1835,6 +4020,10 @@ items:
             href: ../../fundamentals/syslib-diagnostics/syslib0059.md
           - name: SYSLIB0060
             href: ../../fundamentals/syslib-diagnostics/syslib0060.md
+          - name: SYSLIB0061
+            href: ../../fundamentals/syslib-diagnostics/syslib0061.md
+          - name: SYSLIB0062
+            href: ../../fundamentals/syslib-diagnostics/syslib0062.md
       - name: Experimental features
         items:
           - name: Overview

@@ -231,7 +231,7 @@ It's important to be able to test across platforms. You can use either [xUnit](h
 
    ```dotnetcli
    cd MyProject.Test
-   dotnet add reference ../MyProject/MyProject.csproj
+   dotnet reference add ../MyProject/MyProject.csproj
    ```
 
 1. Restore packages and build projects:
@@ -307,7 +307,7 @@ This will add the three projects above and a solution file that links them toget
 The best way to reference a project is to use the .NET CLI to add a project reference. From the **AwesomeLibrary.CSharp** and **AwesomeLibrary.FSharp** project directories, you can run the following command:
 
 ```dotnetcli
-dotnet add reference ../AwesomeLibrary.Core/AwesomeLibrary.Core.csproj
+dotnet reference add ../AwesomeLibrary.Core/AwesomeLibrary.Core.csproj
 ```
 
 The project files for both **AwesomeLibrary.CSharp** and **AwesomeLibrary.FSharp** will now reference **AwesomeLibrary.Core** as a `ProjectReference` target.  You can verify this by inspecting the project files and seeing the following in them:

@@ -1,6 +1,6 @@
 ### Authentication: Google+ deprecated and replaced
 
-Google is starting to [shut down](https://developers.google.com/+/api-shutdown) Google+ Sign-in for apps as early as January 28, 2019.
+Google started to [shut down](https://developers.google.com/+/api-shutdown) Google+ Sign-in for apps as early as January 28, 2019.
 
 #### Change description
 
@@ -16,7 +16,7 @@ All versions. This change is external to ASP.NET Core.
 
 ##### Owin with ASP.NET Web Forms and MVC
 
-For `Microsoft.Owin` 3.1.0 and later, a temporary mitigation is outlined [here](https://github.com/aspnet/AspNetKatana/issues/251#issuecomment-449587635). Apps should complete testing with the mitigation to check for changes in the data format. There are plans to release `Microsoft.Owin` 4.0.1 with a fix. Apps using any prior version should update to version 4.0.1.
+For `Microsoft.Owin` 3.1.0 and later, a temporary mitigation is outlined in [Google+ shutdown impacts](https://github.com/aspnet/AspNetKatana/issues/251#issuecomment-449587635). Apps should complete testing with the mitigation to check for changes in the data format. There are plans to release `Microsoft.Owin` 4.0.1 with a fix. Apps using any prior version should update to version 4.0.1.
 
 ##### ASP.NET Core 1.x
 
@@ -68,11 +68,3 @@ ASP.NET Core
 #### Affected APIs
 
 <xref:Microsoft.AspNetCore.Authentication.Google?displayProperty=fullName>
-
-<!-- 
-
-#### Affected APIs
-
-`N:Microsoft.AspNetCore.Authentication.Google`
-
--->

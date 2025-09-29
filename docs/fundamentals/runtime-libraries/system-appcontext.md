@@ -109,7 +109,7 @@ You can set the value of a switch by calling the <xref:System.AppContext.SetSwit
 
   Using the registry to define an <xref:System.AppContext> switch has machine scope; that is, it affects every application running on the machine.
 
-For ASP.NET and ASP.NET Core applications, you set a switch by adding an [\<Add>](../../framework/configure-apps/file-schema/appsettings/add-element-for-appsettings.md) element to the [\<appSettings>](/dotnet/framework/configure-apps/file-schema/appsettings/) section of the web.config file. For example:
+For ASP.NET and ASP.NET Core applications, you set a switch by adding an [\<Add>](../../framework/configure-apps/file-schema/appsettings/add-element-for-appsettings.md) element to the [\<appSettings>](../../framework/configure-apps/file-schema/appsettings/index.md) section of the web.config file. For example:
 
 ```xml
 <appSettings>

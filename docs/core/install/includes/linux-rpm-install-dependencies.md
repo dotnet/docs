@@ -22,7 +22,3 @@ sudo yum install libicu
 ```
 
 For more information about the dependencies, see [Self-contained Linux apps](https://github.com/dotnet/core/blob/main/Documentation/self-contained-linux-apps.md).
-
-[!INCLUDE [linux-libgdiplus-general](linux-libgdiplus-general.md)]
-
-You can install a recent version of *libgdiplus* by [adding the Mono repository to your system](https://www.mono-project.com/download/stable/#download-lin).

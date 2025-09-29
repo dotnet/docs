@@ -1,16 +1,17 @@
 ---
 title: Orleans silo lifecycles
 description: Learn about .NET Orleans silo lifecycles.
-ms.date: 07/03/2024
+ms.date: 05/23/2025
+ms.topic: overview
 ---
 
 # Orleans silo lifecycle overview
 
-Orleans silos use an observable lifecycle for ordered startup and shutdown of Orleans systems, as well as application layer components. For more information on the implementation details, see [Orleans lifecycle](../implementation/orleans-lifecycle.md).
+Orleans silos use an observable lifecycle for the ordered startup and shutdown of Orleans systems and application layer components. For more information on the implementation details, see [Orleans lifecycle](../implementation/orleans-lifecycle.md).
 
 ## Stages
 
-Orleans silo and cluster clients use a common set of service lifecycle stages.
+Orleans silo and cluster clients use a common set of service lifecycle stages:
 
 ```csharp
 public static class ServiceLifecycleStage
@@ -28,18 +29,18 @@ public static class ServiceLifecycleStage
 ```
 
 - <xref:Orleans.ServiceLifecycleStage.First?displayProperty=nameWithType>: The first stage in the service's lifecycle.
-- <xref:Orleans.ServiceLifecycleStage.RuntimeInitialize?displayProperty=nameWithType>: The initialization of the runtime environment, where the silo initializes threading.
-- <xref:Orleans.ServiceLifecycleStage.RuntimeServices?displayProperty=nameWithType>: The start of runtime services, where the silo initializes networking and various agents.
-- <xref:Orleans.ServiceLifecycleStage.RuntimeStorageServices?displayProperty=nameWithType>: The initialization of runtime storage.
-- <xref:Orleans.ServiceLifecycleStage.RuntimeGrainServices?displayProperty=nameWithType>: The starting of runtime services for grains. This includes grain type management, membership service, and grain directory.
-- <xref:Orleans.ServiceLifecycleStage.ApplicationServices?displayProperty=nameWithType>: The application layer services.
+- <xref:Orleans.ServiceLifecycleStage.RuntimeInitialize?displayProperty=nameWithType>: Initialization of the runtime environment, where the silo initializes threading.
+- <xref:Orleans.ServiceLifecycleStage.RuntimeServices?displayProperty=nameWithType>: Start of runtime services, where the silo initializes networking and various agents.
+- <xref:Orleans.ServiceLifecycleStage.RuntimeStorageServices?displayProperty=nameWithType>: Initialization of runtime storage.
+- <xref:Orleans.ServiceLifecycleStage.RuntimeGrainServices?displayProperty=nameWithType>: Starting of runtime services for grains. This includes grain type management, membership service, and grain directory.
+- <xref:Orleans.ServiceLifecycleStage.ApplicationServices?displayProperty=nameWithType>: Application layer services.
 - <xref:Orleans.ServiceLifecycleStage.BecomeActive?displayProperty=nameWithType>: The silo joins the cluster.
 - <xref:Orleans.ServiceLifecycleStage.Active?displayProperty=nameWithType>: The silo is active in the cluster and ready to accept workload.
 - <xref:Orleans.ServiceLifecycleStage.Last?displayProperty=nameWithType>: The last stage in the service's lifecycle.
 
 ## Logging
 
-Due to the inversion of control, where participants join the lifecycle rather than the lifecycle having some centralized set of initialization steps, it's not always clear from the code what the startup/shutdown order is. To help address this, logging has been added before silo startup to report what components are participating at each stage. These logs are recorded at the _Information_ log level on the <xref:Orleans.Runtime.SiloLifecycleSubject?displayProperty=fullName> logger. For instance:
+Due to the inversion of control, where participants join the lifecycle rather than the lifecycle having a centralized set of initialization steps, it's not always clear from the code what the startup/shutdown order is. To help address this, Orleans adds logging before silo startup to report which components participate at each stage. These logs are recorded at the _Information_ log level on the <xref:Orleans.Runtime.SiloLifecycleSubject?displayProperty=fullName> logger. For instance:
 
 ```Output
 Information, Orleans.Runtime.SiloLifecycleSubject, "Stage 2000: Orleans.Statistics.PerfCounterEnvironmentStatistics, Orleans.Runtime.InsideRuntimeClient, Orleans.Runtime.Silo"
@@ -49,7 +50,7 @@ Information, Orleans.Runtime.SiloLifecycleSubject, "Stage 4000: Orleans.Runtime.
 Information, Orleans.Runtime.SiloLifecycleSubject, "Stage 10000: Orleans.Runtime.Versions.GrainVersionStore, Orleans.Storage.AzureTableGrainStorage-Default, Orleans.Storage.AzureTableGrainStorage-PubSubStore"
 ```
 
-Additionally, timing and error information are similarly logged for each component by stage. For instance:
+Additionally, Orleans similarly logs timing and error information for each component by stage. For instance:
 
 ```Output
 Information, Orleans.Runtime.SiloLifecycleSubject, "Lifecycle observer Orleans.Runtime.InsideRuntimeClient started in stage 2000 which took 33 Milliseconds."
@@ -59,7 +60,7 @@ Information, Orleans.Runtime.SiloLifecycleSubject, "Lifecycle observer Orleans.S
 
 ## Silo lifecycle participation
 
-Application logic can take part in the silo's lifecycle by registering a participating service in the silo's service container. The service must be registered as an <xref:Orleans.ILifecycleParticipant%601> where `T` is a <xref:Orleans.Runtime.ISiloLifecycle>.
+Your application logic can participate in the silo's lifecycle by registering a participating service in the silo's service container. Register the service as an <xref:Orleans.ILifecycleParticipant%601>, where `T` is <xref:Orleans.Runtime.ISiloLifecycle>.
 
 ```csharp
 public interface ISiloLifecycle : ILifecycleObservable
@@ -73,13 +74,13 @@ public interface ILifecycleParticipant<TLifecycleObservable>
 }
 ```
 
-When the silo starts, all participants (`ILifecycleParticipant<ISiloLifecycle>`) in the container will be allowed to participate by calling their <xref:Orleans.ILifecycleParticipant%601.Participate%2A?displayProperty=nameWithType> behavior. Once all have had the opportunity to participate, the silo's observable lifecycle will start all stages in order.
+When the silo starts, all participants (`ILifecycleParticipant<ISiloLifecycle>`) in the container can participate by having their <xref:Orleans.ILifecycleParticipant%601.Participate%2A?displayProperty=nameWithType> behavior called. Once all have had the opportunity to participate, the silo's observable lifecycle starts all stages in order.
 
 ### Example
 
-With the introduction of the silo lifecycle, bootstrap providers, which used to allow application developers to inject logic at the provider initialization phase, are no longer necessary, since application logic can now be injected at any stage of silo startup. Nonetheless, we added a 'startup task' facade to aid the transition for developers who had been using bootstrap providers. As an example of how components can be developed which take part in the silo's lifecycle, we'll look at the startup task facade.
+With the introduction of the silo lifecycle, bootstrap providers, which previously allowed you to inject logic at the provider initialization phase, are no longer necessary. You can now inject application logic at any stage of silo startup. Nonetheless, we added a 'startup task' facade to aid the transition for developers who used bootstrap providers. As an example of how you can develop components that participate in the silo's lifecycle, let's look at the startup task facade.
 
-The startup task needs only to inherit from `ILifecycleParticipant<ISiloLifecycle>` and subscribe the application logic to the silo lifecycle at the specified stage.
+The startup task only needs to inherit from `ILifecycleParticipant<ISiloLifecycle>` and subscribe the application logic to the silo lifecycle at the specified stage.
 
 ```csharp
 class StartupTask : ILifecycleParticipant<ISiloLifecycle>
@@ -107,9 +108,9 @@ class StartupTask : ILifecycleParticipant<ISiloLifecycle>
 }
 ```
 
-From the above implementation, we can see that in the `Participate(...)` call it subscribes to the silo lifecycle at the configured stage, passing the application callback rather than its initialization logic. Components that need to be initialized at a given stage would provide their callback, but the pattern is the same. Now that we have a `StartupTask` which will ensure that the application's hook is called at the configured stage, we need to ensure that the `StartupTask` participates in the silo lifecycle.
+From the preceding implementation, you can see that in the `Participate(...)` call, it subscribes to the silo lifecycle at the configured stage, passing the application callback rather than its initialization logic. Components needing initialization at a given stage would provide their callback, but the pattern remains the same. Now that you have a `StartupTask` ensuring the application's hook is called at the configured stage, you need to ensure the `StartupTask` participates in the silo lifecycle.
 
-For this, we need only register it in the container. We do this with an extension function on the <xref:Orleans.Hosting.ISiloHostBuilder>:
+For this, you only need to register it in the container. Do this using an extension function on <xref:Orleans.Hosting.ISiloHostBuilder>:
 
 ```csharp
 public static ISiloHostBuilder AddStartupTask(
@@ -127,4 +128,4 @@ public static ISiloHostBuilder AddStartupTask(
 }
 ```
 
-By registering the StartupTask in the silo's service container as the marker interface `ILifecycleParticipant<ISiloLifecycle>`, this signals to the silo that this component needs to take part in the silo lifecycle.
+By registering the `StartupTask` in the silo's service container as the marker interface `ILifecycleParticipant<ISiloLifecycle>`, you signal to the silo that this component needs to participate in the silo lifecycle.

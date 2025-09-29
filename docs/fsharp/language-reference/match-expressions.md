@@ -65,13 +65,13 @@ type Union =
     | B of int
 
 let foo() =
-    let test = A 42
+    let test = A 40
     match test with
     | A a
     | B a when a > 41 -> a // the guard applies to both patterns
     | _ -> 1
 
-foo() // returns 42
+foo() // returns 1
 ```
 
 ## See also

@@ -1,6 +1,6 @@
 ---
 title: "Breaking change - Change default workload configuration from 'loose manifests' to 'workload sets' mode"
-description: "Learn about the breaking change in .NET 10 Preview 2 where the default workload update mode changed."
+description: "Learn about the breaking change in .NET 10 where the default workload update mode changed."
 ms.date: 3/12/2025
 ai-usage: ai-assisted
 ms.custom: https://github.com/dotnet/docs/issues/45000

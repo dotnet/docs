@@ -1,7 +1,7 @@
 ---
 title: Pagination with the Azure SDK for .NET
 description: Learn how to use pagination with the Azure SDK for .NET.
-ms.date: 06/23/2023
+ms.date: 04/25/2025
 ms.custom: devx-track-dotnet
 ---
 
@@ -27,16 +27,16 @@ For the latest directory of Azure SDK for .NET packages, see [Azure SDK latest r
 
 Clients instantiated from the Azure SDK for .NET can return the following pageable types.
 
-| Type | Description |
-|--|--|
-| [`Pageable<T>`](xref:Azure.Pageable%601) | A collection of values retrieved in pages |
+| Type                                               | Description                                              |
+|----------------------------------------------------|----------------------------------------------------------|
+| [`Pageable<T>`](xref:Azure.Pageable%601)           | A collection of values retrieved in pages                |
 | [`AsyncPageable<T>`](xref:Azure.AsyncPageable%601) | A collection of values asynchronously retrieved in pages |
 
 Most of the samples in this article are asynchronous, using variations of the `AsyncPageable<T>` type. Using asynchronous programming for I/O-bound operations is ideal. A perfect use case is using the async APIs from the Azure SDK for .NET as these operations represent HTTP/S network calls.
 
 ## Iterate over `AsyncPageable` with `await foreach`
 
-To iterate over an `AsyncPageable<T>` using the [`await foreach`](/dotnet/csharp/language-reference/proposals/csharp-8.0/async-streams#foreach) syntax, consider the following example:
+To iterate over an `AsyncPageable<T>` using the [`await foreach`](/dotnet/csharp/language-reference/language-specification/statements#13953-await-foreach) syntax, consider the following example:
 
 :::code source="snippets/pagination/Program.cs" range="38-46":::
 

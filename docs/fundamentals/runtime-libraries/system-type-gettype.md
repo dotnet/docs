@@ -83,7 +83,7 @@ The combination of `assemblyResolver` and `typeResolver` that you provide must b
 "System.Collections.Generic.Dictionary`2[System.String,[MyNamespace.MyType, MyAssembly]]"
 ```
 
-Notice that `MyType` is the only assembly-qualified type argument. The names of the <xref:System.Collections.Generic.Dictionary%602> and <xref:System.String> classes are not assembly-qualified. Your `typeResolver` must be able handle either an assembly or `null`, because it will receive `null` for <xref:System.Collections.Generic.Dictionary%602> and <xref:System.String>. It can handle that case by calling an overload of the <xref:System.Type.GetType%2A> method that takes a string, because both of the unqualified type names are in mscorlib.dll/System.Private.CoreLib.dll:
+Notice that `MyType` is the only assembly-qualified type argument. The names of the <xref:System.Collections.Generic.Dictionary%602> and <xref:System.String> classes are not assembly-qualified. Your `typeResolver` must be able to handle either an assembly or `null`, because it will receive `null` for <xref:System.Collections.Generic.Dictionary%602> and <xref:System.String>. It can handle that case by calling an overload of the <xref:System.Type.GetType%2A> method that takes a string, because both of the unqualified type names are in mscorlib.dll/System.Private.CoreLib.dll:
 
 :::code language="csharp" source="./snippets/System/Type/GetType/csharp/source.cs" id="Snippet1":::
 :::code language="fsharp" source="./snippets/System/Type/GetType/fsharp/source.fs" id="Snippet1":::

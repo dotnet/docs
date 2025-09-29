@@ -25,7 +25,7 @@ To address the issues mentioned above and to make `HttpClient` instances managea
 
 The alternative is to use `SocketsHttpHandler` with configured `PooledConnectionLifetime`. This approach is applied to long-lived, `static` or singleton `HttpClient` instances. To learn more about different strategies, see [HttpClient guidelines for .NET](../../../fundamentals/networking/http/httpclient-guidelines.md).
 
-[Polly](https://thepollyproject.azurewebsites.net/) is a transient-fault-handling library that helps developers add resiliency to their applications, by using some pre-defined policies in a fluent and thread-safe manner.
+[Polly](https://www.pollydocs.org/) is a transient-fault-handling library that helps developers add resiliency to their applications, by using some pre-defined policies in a fluent and thread-safe manner.
 
 ## Benefits of using IHttpClientFactory
 
@@ -204,7 +204,7 @@ Up to this point, the above code snippet only shows the example of performing re
   <https://github.com/dotnet/runtime/tree/release/7.0/src/libraries/Microsoft.Extensions.Http/>
 
 - **Polly (.NET resilience and transient-fault-handling library)**
-  <https://thepollyproject.azurewebsites.net/>
+  <https://www.pollydocs.org/>
 
 >[!div class="step-by-step"]
 >[Previous](implement-resilient-entity-framework-core-sql-connections.md)

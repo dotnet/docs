@@ -12,18 +12,21 @@ NETSDK1206 indicates your project has assets for version-specific or distributio
 
 First, check for a newer version of any affected packages to see if they have moved to portable RIDs. Many packages have already moved to portable RIDs in their latest versions. If no such version exists, we recommend contacting the package authors to request switching the package to use only portable RIDs.
 
-If you know your application does not actually need the specified RID&mdash;for example, it is not intended to run on the platform specified by the RID&mdash;you can suppress the warning using the [`NoWarn` MSBuild property](/visualstudio/msbuild/common-msbuild-project-properties). For example:
+If you know your application does not actually need the specified RID&mdash;for example, it is not intended to run on the platform specified by the RID&mdash;you can switch to using a more general RID. For example, change `<RuntimeIdentifier>win10-x64</RuntimeIdentifier>` to `<RuntimeIdentifier>win-x64</RuntimeIdentifier>` in your project file:
 
 ```xml
 <PropertyGroup>
-  <NoWarn>$(NoWarn);NETSDK1206</NoWarn>
+  ...
+  <RuntimeIdentifier>win-x64</RuntimeIdentifier>
 </PropertyGroup>
 ```
 
-If your application does need the specified RID and the affected package doesn't have a version that uses portable RIDs, the runtime can be configured to perform asset resolution via the old RID graph with version-specific and distro-specific RIDs. Note that the old RID graph is no longer updated and exists only as a backwards compatibility option.
+If you specify the RID as a command-line argument, make a similar change. For example, instead of `dotnet publish --framework net8.0 --runtime win10-x64`, use the command `dotnet publish --framework net8.0 --runtime win-x64`.
+
+If you need to revert to the previous behavior of using the old, full RID graph, you can set the `UseRidGraph` MSBuild property to `true` in your project file. However, the old RID graph won't be updated in the future to attempt to handle any other distros or architectures.
 
 ```xml
-<ItemGroup>
-  <RuntimeHostConfigurationOption Include="System.Runtime.Loader.UseRidGraph" Value="true" />
-</ItemGroup>
+<PropertyGroup>
+  <UseRidGraph>true</UseRidGraph>
+</PropertyGroup>
 ```

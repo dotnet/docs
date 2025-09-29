@@ -16,6 +16,12 @@ In most cases, on all operating systems, installing ML.NET is as simple as refer
 dotnet add package Microsoft.ML
 ```
 
+Or, in .NET 10+:
+
+```dotnetcli
+dotnet package add Microsoft.ML
+```
+
 In some cases though, there are additional installation requirements, particularly when native components are required. This article describes the installation requirements for those cases. The sections are broken down by the specific `Microsoft.ML.*` NuGet package that has the additional dependency.
 
 ## Microsoft.ML.TimeSeries, Microsoft.ML.AutoML

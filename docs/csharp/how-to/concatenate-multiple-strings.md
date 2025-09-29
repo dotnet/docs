@@ -6,7 +6,6 @@ helpviewer_keywords:
   - "joining strings [C#]"
   - "concatenating strings [C#]"
   - "strings [C#], concatenation"
-ms.collection: ce-skilling-ai-copilot
 ms.custom: copilot-scenario-highlight
 ---
 # How to concatenate multiple strings (C# Guide)
@@ -16,7 +15,7 @@ ms.custom: copilot-scenario-highlight
 [!INCLUDE[interactive-note](~/includes/csharp-interactive-note.md)]
 
 > [!TIP]
-> You can use AI assistance to [concatenate strings with GitHub Copilot](#use-github-copilot-to-concatenate-strings).
+> You can use AI assistance to [concatenate strings](#use-ai-to-concatenate-strings).
 
 ## String literals
 
@@ -61,7 +60,7 @@ Another option to join strings from a collection is to use <xref:System.String.C
 
 ## LINQ and `Enumerable.Aggregate`
 
-At last, you can use [LINQ](/dotnet/csharp/linq/)
+At last, you can use [LINQ](../linq/index.md)
 and the <xref:System.Linq.Enumerable.Aggregate%2A?displayProperty=nameWithType> method to join strings from a collection. This method combines
 the source strings using a lambda expression. The lambda expression does the
 work to add each string to the existing accumulation. The following example
@@ -71,9 +70,9 @@ combines an array of words, adding a space between each word in the array:
 
 This option can cause more allocations than other methods for concatenating collections, as it creates an intermediate string for each iteration. If optimizing performance is critical, consider the [`StringBuilder`](#stringbuilder) class or the [`String.Concat` or `String.Join`](#stringconcat-or-stringjoin) method to concatenate a collection, instead of `Enumerable.Aggregate`.
 
-## Use GitHub Copilot to concatenate strings
+## Use AI to concatenate strings
 
-You can use GitHub Copilot in your IDE to generate C# code to concatenate multiple strings. You can customize the prompt to specify strings and the method to use per your requirements.
+You can use AI tools, such as GitHub Copilot, to generate C# code to concatenate multiple strings. You can customize the prompt to specify strings and the method to use per your requirements.
 
 The following text shows an example prompt for Copilot Chat:
 
@@ -83,10 +82,10 @@ Generate C# code to use String.Format to build an output string "Hi x, today's d
 
 GitHub Copilot is powered by AI, so surprises and mistakes are possible. For more information, see [Copilot FAQs](https://aka.ms/copilot-general-use-faqs).
 
-Learn more about [GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states) and [GitHub Copilot in VS Code](https://code.visualstudio.com/docs/copilot/overview).
-
 ## See also
 
 - <xref:System.String>
 - <xref:System.Text.StringBuilder>
 - [Strings](../programming-guide/strings/index.md)
+- [GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states)
+- [GitHub Copilot in VS Code](https://code.visualstudio.com/docs/copilot/overview)

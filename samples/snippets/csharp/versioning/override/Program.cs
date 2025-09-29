@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 class Program
 {
@@ -24,8 +24,8 @@ class Program
         MyBaseClass b = new MyBaseClass();
         MyDerivedClass d = new MyDerivedClass();
 
-        Console.WriteLine("Base Method One: {0}", b.MethodOne());
-        Console.WriteLine("Derived Method One: {0}", d.MethodOne());
+        Console.WriteLine($"Base Method One: {b.MethodOne()}");
+        Console.WriteLine($"Derived Method One: {d.MethodOne()}");
     }
 #endregion
 }

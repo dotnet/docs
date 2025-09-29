@@ -28,7 +28,7 @@ This section of articles provides information, including examples, about LINQ to
 
 ## See also
 
-- [Language-Integrated Query (LINQ) (C#)](/dotnet/csharp/linq/)
+- [Language-Integrated Query (LINQ) (C#)](../../csharp/linq/index.md)
 - [Introduction to LINQ Queries (C#)](../../csharp/linq/get-started/introduction-to-linq-queries.md)
 - [LINQ in Visual Basic](../../visual-basic/programming-guide/language-features/linq/index.md)
 - [Language-Integrated Query (LINQ) (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/index.md)

@@ -155,13 +155,11 @@ The install scripts do not update the registry on Windows. They just download th
 
 - **`-Quality|--quality <QUALITY>`**
 
-  Downloads the latest build of the specified quality in the channel. The possible values are: `daily`, `signed`, `validated`, `preview`, and `GA`. Most users should use `daily`, `preview`, or `GA` qualities.
+  Downloads the latest build of the specified quality in the channel. The possible values are: `daily`, `preview`, and `GA`.
 
   The different quality values signal different stages of the release process of the SDK or Runtime installed.
 
   * `daily`: The latest builds of the SDK or Runtime. They're built every day and aren't tested. They aren't recommended for production use but can often be used to test specific features or fixes immediately after they are merged into the product. These builds are from the `dotnet/installer` repo, and so if you're looking for fixes from `dotnet/sdk` you must wait for code to flow and be merged from SDK to Installer before it appears in a daily build.
-  * `signed`: Microsoft-signed builds that aren't validated or publicly released. Signed builds are candidates for validation, preview, and GA release. This quality level is not intended for public use.
-  * `validated`: Builds that have had some internal testing done on them but are not yet released as preview or GA. This quality level is not intended for public use.
   * `preview`: The monthly public releases of the next version of .NET, intended for public use. Not recommended for production use. Intended to allow users to experiment and test the new major version before release.
   * `GA`: The final stable releases of the .NET SDK and Runtime. Intended for public use as well as production support.
 
@@ -209,7 +207,7 @@ The install scripts do not update the registry on Windows. They just download th
 
 - **`-ZipPath|--zip-path <PATH>`**
 
- If set, the downloaded SDK archive is stored at the specified path.
+  If set, the downloaded SDK archive is stored at the specified path.
 
 - **`-Verbose|--verbose`**
 
@@ -289,6 +287,48 @@ The install scripts do not update the registry on Windows. They just download th
   ```bash
   curl -sSL https://dot.net/v1/dotnet-install.sh | bash /dev/stdin <additional install-script args>
   ```
+
+- Install multiple versions while not overwriting `dotnet` binaries from prior installs.
+
+  If you install .NET SDKs or the .NET runtime from an earlier version on top of a newer version, you need to use `--skip-non-versioned-files` so that
+  the 'unversioned' `dotnet` files from the earlier version don't overwrite the same files from the newer version.
+
+  ```shell
+  :~ $ ./dotnet-install.sh --channel 9.0 --install-dir local-dotnet  # installs the latest 9 SDK to the specified directory
+  dotnet-install: Attempting to download using aka.ms link https://builds.dotnet.microsoft.com/dotnet/Sdk/9.0.303/dotnet-sdk-9.0.303-linux-x64.tar.gz
+  dotnet-install: Remote file https://builds.dotnet.microsoft.com/dotnet/Sdk/9.0.303/dotnet-sdk-9.0.303-linux-x64.tar.gz size is 218004272 bytes.
+  dotnet-install: Extracting archive from https://builds.dotnet.microsoft.com/dotnet/Sdk/9.0.303/dotnet-sdk-9.0.303-linux-x64.tar.gz
+  dotnet-install: Downloaded file size is 218004272 bytes.
+  dotnet-install: The remote and local file sizes are equal.
+  dotnet-install: Installed version is 9.0.303
+  dotnet-install: Adding to current process PATH: `$HOME/local-dotnet`. Note: This change will be visible only when sourcing script.
+  dotnet-install: Note that the script does not resolve dependencies during installation.
+  dotnet-install: To check the list of dependencies, go to https://learn.microsoft.com/dotnet/core/install, select your operating system and check the "Dependencies" section.
+  dotnet-install: Installation finished successfully.
+  :~ $ ./local-dotnet/dotnet --list-runtimes # see what runtimes we have available
+  Microsoft.AspNetCore.App 9.0.7 [$HOME/local-dotnet/shared/Microsoft.AspNetCore.App]
+  Microsoft.NETCore.App 9.0.7 [$HOME/local-dotnet/shared/Microsoft.NETCore.App]
+  :~ $ ./local-dotnet/dotnet --list-sdks # see what SDKs we have available
+  9.0.303 [$HOME/local-dotnet/sdk]
+  :~ $ ./dotnet-install.sh --channel 8.0 --install-dir local-dotnet --skip-non-versioned-files # install the 8 SDK to the same place, but keep the 9 dotnet binaries
+  dotnet-install: Attempting to download using aka.ms link https://builds.dotnet.microsoft.com/dotnet/Sdk/8.0.412/dotnet-sdk-8.0.412-linux-x64.tar.gz
+  dotnet-install: Remote file https://builds.dotnet.microsoft.com/dotnet/Sdk/8.0.412/dotnet-sdk-8.0.412-linux-x64.tar.gz size is 216096947 bytes.
+  dotnet-install: Extracting archive from https://builds.dotnet.microsoft.com/dotnet/Sdk/8.0.412/dotnet-sdk-8.0.412-linux-x64.tar.gz
+  dotnet-install: Downloaded file size is 216096947 bytes.
+  dotnet-install: The remote and local file sizes are equal.
+  dotnet-install: Installed version is 8.0.412
+  dotnet-install: Adding to current process PATH: `$HOME/local-dotnet`. Note: This change will be visible only when sourcing script.
+  dotnet-install: Note that the script does not resolve dependencies during installation.
+  dotnet-install: To check the list of dependencies, go to https://learn.microsoft.com/dotnet/core/install, select your operating system and check the "Dependencies" section.
+  dotnet-install: Installation finished successfully.
+  :~ $ ./local-dotnet/dotnet --list-runtimes # we should have 8 and 9 Runtimes now
+  Microsoft.AspNetCore.App 8.0.18 [$HOME/local-dotnet/shared/Microsoft.AspNetCore.App]
+  Microsoft.AspNetCore.App 9.0.7 [$HOME/local-dotnet/shared/Microsoft.AspNetCore.App]
+  Microsoft.NETCore.App 8.0.18 [$HOME/local-dotnet/shared/Microsoft.NETCore.App]
+  Microsoft.NETCore.App 9.0.7 [$HOME/local-dotnet/shared/Microsoft.NETCore.App]
+  :~ $ ./local-dotnet/dotnet --list-sdks # we should have 2 SDKs now
+  8.0.412 [$HOME/local-dotnet/sdk]
+  9.0.303 [$HOME/local-dotnet/sdk]
 
 ## Set environment variables
 

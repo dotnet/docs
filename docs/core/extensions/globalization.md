@@ -128,15 +128,11 @@ How you handle date and time values depends on whether they are displayed in the
 
 Typically, when dates and times are displayed in the user interface, you should use the formatting conventions of the user's culture, which is defined by the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> property and by the <xref:System.Globalization.DateTimeFormatInfo> object returned by the `CultureInfo.CurrentCulture.DateTimeFormat` property. The formatting conventions of the current culture are automatically used when you format a date by using any of these methods:
 
-- The parameterless <xref:System.DateTime.ToString?displayProperty=nameWithType> method
-
-- The <xref:System.DateTime.ToString%28System.String%29?displayProperty=nameWithType> method, which includes a format string
-
-- The parameterless <xref:System.DateTimeOffset.ToString?displayProperty=nameWithType> method
-
-- The <xref:System.DateTimeOffset.ToString%28System.String%29?displayProperty=nameWithType>, which includes a format string
-
-- The [composite formatting](../../standard/base-types/composite-formatting.md) feature, when it is used with dates
+- The parameterless <xref:System.DateTime.ToString?displayProperty=nameWithType> method.
+- The <xref:System.DateTime.ToString%28System.String%29?displayProperty=nameWithType> method, which includes a format string.
+- The parameterless <xref:System.DateTimeOffset.ToString?displayProperty=nameWithType> method.
+- The <xref:System.DateTimeOffset.ToString%28System.String%29?displayProperty=nameWithType>, which includes a format string.
+- The [composite formatting](../../standard/base-types/composite-formatting.md) feature, when it is used with dates.
 
 The following example displays sunrise and sunset data twice for October 11, 2012. It first sets the current culture to Croatian (Croatia), and then to English (United Kingdom). In each case, the dates and times are displayed in the format that is appropriate for that culture.
 

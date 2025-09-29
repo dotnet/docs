@@ -3,7 +3,7 @@ title: Trimming options
 description: Learn how to control trimming of self-contained apps using MSBuild properties. For example, set trimming granularity or suppress trim analysis warnings.
 author: sbomer
 ms.author: svbomer
-ms.date: 08/29/2024
+ms.date: 05/01/2025
 ms.topic: reference
 ---
 
@@ -24,73 +24,7 @@ Trimming with `PublishTrimmed` was introduced in .NET Core 3.0. The other option
 
 Place this setting in the project file to ensure that the setting applies during `dotnet build`, not just `dotnet publish`.
 
-This setting enables trimming and trims all assemblies by default. In .NET 6, only assemblies that opted-in to trimming via `[AssemblyMetadata("IsTrimmable", "True")]` (added in projects that set `<IsTrimmable>true</IsTrimmable>`) were trimmed by default. You can return to the previous behavior by using `<TrimMode>partial</TrimMode>`.
-
 This setting also enables the trim-compatibility [Roslyn analyzer](#roslyn-analyzer) and disables [features that are incompatible with trimming](#framework-features-disabled-when-trimming).
-
-## Trimming granularity
-
-Use the `TrimMode` property to set the trimming granularity to either `partial` or `full`. The default setting for console apps (and, starting in .NET 8, Web SDK apps) is `full`:
-
-```xml
-<TrimMode>full</TrimMode>
-```
-
-To only trim assemblies that have opted-in to trimming, set the property to `partial`:
-
-```xml
-<TrimMode>partial</TrimMode>
-```
-
-If you change the trim mode to `partial`, you can opt-in individual assemblies to trimming by using a `<TrimmableAssembly>` MSBuild item.
-
-```xml
-<ItemGroup>
-  <TrimmableAssembly Include="MyAssembly" />
-</ItemGroup>
-```
-
-This is equivalent to setting `[AssemblyMetadata("IsTrimmable", "True")]` when building the assembly.
-
-## Root assemblies
-
-If an assembly is not trimmed, it's considered "rooted", which means that it and all of its statically understood dependencies will be kept. Additional assemblies can be "rooted" by name (without the `.dll` extension):
-
-```xml
-<ItemGroup>
-  <TrimmerRootAssembly Include="MyAssembly" />
-</ItemGroup>
-```
-
-## Root descriptors
-
-Another way to specify roots for analysis is using an XML file that uses the trimmer [descriptor format](https://github.com/dotnet/runtime/blob/main/docs/tools/illink/data-formats.md#descriptor-format). This lets you root specific members instead of a whole assembly.
-
-```xml
-<ItemGroup>
-  <TrimmerRootDescriptor Include="MyRoots.xml" />
-</ItemGroup>
-```
-
-For example, `MyRoots.xml` might root a specific method that's dynamically accessed by the application:
-
-```xml
-<linker>
-  <assembly fullname="MyAssembly">
-    <type fullname="MyAssembly.MyClass">
-      <method name="DynamicallyAccessedMethod" />
-    </type>
-  </assembly>
-</linker>
-```
-
-## Analysis warnings
-
-- `<SuppressTrimAnalysisWarnings>false</SuppressTrimAnalysisWarnings>`
-
-  Enable trim analysis warnings.
-
-Trimming removes IL that's not statically reachable. Apps that use reflection or other patterns that create dynamic dependencies might be broken by trimming. To warn about such patterns, set `<SuppressTrimAnalysisWarnings>` to `false`. This setting will surface warnings about the entire app, including your own code, library code, and framework code.
 
 ## Roslyn analyzer
 
@@ -130,19 +64,21 @@ The SDK also makes it possible to disable debugger support using the property `D
 
 Several feature areas of the framework libraries come with trimmer directives that make it possible to remove the code for disabled features.
 
-| MSBuild property | Description |
-| - | - |
+| MSBuild property         | Description |
+|--------------------------|-------------|
 | `AutoreleasePoolSupport` | When set to `false`, removes code that creates [autorelease pools](../../runtime-config/threading.md#autoreleasepool-for-managed-threads) on supported platforms. `false` is the default for the .NET SDK. |
-| `DebuggerSupport` | When set to `false`, removes code that enables better debugging experiences. This setting also [removes symbols](#remove-symbols). |
+| `DebuggerSupport`        | When set to `false`, removes code that enables better debugging experiences. This setting also [removes symbols](#remove-symbols). |
 | `EnableUnsafeBinaryFormatterSerialization` | When set to `false`, removes BinaryFormatter serialization support. For more information, see [BinaryFormatter serialization methods are obsolete](../../compatibility/serialization/5.0/binaryformatter-serialization-obsolete.md) and [In-box BinaryFormatter implementation removed and always throws](../../compatibility/serialization/9.0/binaryformatter-removal.md). |
 | `EnableUnsafeUTF7Encoding` | When set to `false`, removes insecure UTF-7 encoding code. For more information, see [UTF-7 code paths are obsolete](../../compatibility/core-libraries/5.0/utf-7-code-paths-obsolete.md). |
 | `EventSourceSupport` | When set to `false`, removes EventSource-related code and logic. |
+| `Http3Support` (.NET 10+) | When set to `false`, removes code related to support for HTTP/3 in <xref:System.Net.Http>. |
 | `HttpActivityPropagationSupport` | When set to `false`, removes code related to diagnostics support for <xref:System.Net.Http>. |
 | `InvariantGlobalization` | When set to `true`, removes globalization-specific code and data. For more information, see [Invariant mode](../../runtime-config/globalization.md#invariant-mode). |
 | `MetadataUpdaterSupport` | When set to `false`, removes metadata update&ndash;specific logic related to hot reload. |
 | `MetricsSupport` | When set to `false`, removes support for <xref:System.Diagnostics.Metrics> instrumentation. |
 | `StackTraceSupport` (.NET 8+) | When set to `false`, removes support for generating stack traces (for example, <xref:System.Environment.StackTrace?displayProperty=nameWithType> or <xref:System.Exception.ToString%2A?displayProperty=nameWithType>) by the runtime. The amount of information that is removed from stack trace strings might depend on other deployment options. This option does not affect stack traces generated by debuggers. |
 | `UseNativeHttpHandler` | When set to `true`, uses the default platform implementation of <xref:System.Net.Http.HttpMessageHandler> for Android and iOS and removes the managed implementation. |
+| `UseSizeOptimizedLinq` (.NET 10+) | When set to `true`, removes some of the throughput optimizations in LINQ that adversely affect the size of the application. Defaults to `true` with `PublishAot`; it might not be possible to natively compile some applications with this property set to `false`. |
 | `UseSystemResourceKeys` | When set to `true`, strips exception messages for `System.*` assemblies. When an exception is thrown from a `System.*` assembly, the message is a simplified resource ID instead of the full message. |
 | `XmlResolverIsNetworkingEnabledByDefault` (.NET 8+) | When set to `false`, removes support for resolving non-file URLs in <xref:System.Xml>. Only file-system resolving is supported. |
 

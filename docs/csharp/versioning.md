@@ -32,6 +32,138 @@ The most basic approach to SemVer is the 3 component format `MAJOR.MINOR.PATCH`,
 - `MINOR` is incremented when you add functionality in a backwards-compatible manner
 - `PATCH` is incremented when you make backwards-compatible bug fixes
 
+#### Understand version increments with examples
+
+To help clarify when to increment each version number, here are concrete examples:
+
+### MAJOR version increments (incompatible API changes)
+
+These changes require users to modify their code to work with the new version:
+
+- Removing a public method or property:
+
+  ```csharp
+  // Version 1.0.0
+  public class Calculator
+  {
+      public int Add(int a, int b) => a + b;
+      public int Subtract(int a, int b) => a - b; // This method exists
+  }
+
+  // Version 2.0.0 - MAJOR increment required
+  public class Calculator
+  {
+      public int Add(int a, int b) => a + b;
+      // Subtract method removed - breaking change!
+  }
+  ```
+
+- Changing method signatures:
+
+  ```csharp
+  // Version 1.0.0
+  public void SaveFile(string filename) { }
+
+  // Version 2.0.0 - MAJOR increment required
+  public void SaveFile(string filename, bool overwrite) { } // Added required parameter
+  ```
+
+- Changing the behavior of existing methods in ways that break expectations:
+
+  ```csharp
+  // Version 1.0.0 - returns null when file not found
+  public string ReadFile(string path) => File.Exists(path) ? File.ReadAllText(path) : null;
+
+  // Version 2.0.0 - MAJOR increment required
+  public string ReadFile(string path) => File.ReadAllText(path); // Now throws exception when file not found
+  ```
+
+### MINOR version increments (backwards-compatible functionality)
+
+These changes add new features without breaking existing code:
+
+- Adding new public methods or properties:
+
+  ```csharp
+  // Version 1.0.0
+  public class Calculator
+  {
+      public int Add(int a, int b) => a + b;
+  }
+
+  // Version 1.1.0 - MINOR increment
+  public class Calculator
+  {
+      public int Add(int a, int b) => a + b;
+      public int Multiply(int a, int b) => a * b; // New method added
+  }
+  ```
+
+- Adding new overloads:
+
+  ```csharp
+  // Version 1.0.0
+  public void Log(string message) { }
+
+  // Version 1.1.0 - MINOR increment
+  public void Log(string message) { } // Original method unchanged
+  public void Log(string message, LogLevel level) { } // New overload added
+  ```
+
+- Adding optional parameters to existing methods:
+
+  ```csharp
+  // Version 1.0.0
+  public void SaveFile(string filename) { }
+
+  // Version 1.1.0 - MINOR increment
+  public void SaveFile(string filename, bool overwrite = false) { } // Optional parameter
+  ```
+
+  > [!NOTE]
+  > This is a *source compatible change*, but a *binary breaking change*. Users of this library must recompile for it to work correctly. Many libraries would consider this only in *major* version changes, not *minor* version changes.
+
+### PATCH version increments (backwards-compatible bug fixes)
+
+These changes fix issues without adding new features or breaking existing functionality:
+
+- Fixing a bug in an existing method's implementation:
+
+  ```csharp
+  // Version 1.0.0 - has a bug
+  public int Divide(int a, int b)
+  {
+      return a / b; // Bug: doesn't handle division by zero
+  }
+
+  // Version 1.0.1 - PATCH increment
+  public int Divide(int a, int b)
+  {
+      if (b == 0) throw new ArgumentException("Cannot divide by zero");
+      return a / b; // Bug fixed, behavior improved but API unchanged
+  }
+  ```
+
+- Performance improvements that don't change the API:
+
+  ```csharp
+  // Version 1.0.0
+  public List<int> SortNumbers(List<int> numbers)
+  {
+      return numbers.OrderBy(x => x).ToList(); // Slower implementation
+  }
+
+  // Version 1.0.1 - PATCH increment
+  public List<int> SortNumbers(List<int> numbers)
+  {
+      var result = new List<int>(numbers);
+      result.Sort(); // Faster implementation, same API
+      return result;
+  }
+  ```
+
+The key principle is: if existing code can use your new version without any changes, it's a MINOR or PATCH update. If existing code needs to be modified to work with your new version, it's a MAJOR update.
+
 There are also ways to specify other scenarios, for example, pre-release versions, when applying version information to your .NET library.
 
 ### Backwards Compatibility

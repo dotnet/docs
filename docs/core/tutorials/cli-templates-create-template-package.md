@@ -127,7 +127,7 @@ These MSBuild tasks provide template validation and [localization of the templat
 
 ## Pack and install
 
-Save the project file. Before building the template package, verify that your folder structure is correct. Any template you want to pack should be placed in the _templates_ folder, in its own folder. The folder structure should look similar to the following hierarchy:
+Save the project file. Before building the template package, verify that your folder structure is correct. Any template you want to pack should be placed in the _content_ folder, in its own folder. The folder structure should look similar to the following hierarchy:
 
 ```console
 working

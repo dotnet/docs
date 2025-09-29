@@ -56,6 +56,10 @@ You can also define a static constructor with an expression body definition, as 
 
 For more information and examples, see [Static Constructors](./static-constructors.md).
 
+A class can also have **both** an Instance and Static constructor defined, and they can each be defined without parameters.
+
+:::code source="./snippets/constructors/Program.cs" id="DualConstructor":::
+
 ## Partial constructors
 
 Beginning with C# 14, you can declare *partial constructors* in a partial class or struct. Any partial constructor must have a *defining declaration* and an *implementing declaration*. The signatures of the declaring and implementing partial constructors must match according to the rules of [partial members](./partial-classes-and-methods.md#partial-members). The defining declaration of the partial constructor can't use the `: base()` or `: this()` constructor initializer. You add any constructor initializer must be added on the implementing declaration.

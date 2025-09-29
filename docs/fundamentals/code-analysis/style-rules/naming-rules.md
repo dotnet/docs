@@ -123,8 +123,6 @@ All naming rule properties are required for a rule to take effect.
 
 The order in which naming rules are defined in an EditorConfig file doesn't matter. The naming rules are automatically ordered according to the definitions of the rules themselves. More specific rules regarding accessibilities, modifiers, and symbols take precedence over less specific rules. If there's overlap between rules or if the rule ordering causes problems, you can break out the intersection of the two rules into a new rule that takes precedence over the broader rules from which it was derived. For examples, see [Example: Overlapping naming strategies](#example-overlapping-naming-strategies) and [Example: `const` modifier includes `static` and `readonly`](#example-const-modifier-includes-static-and-readonly).
 
-The [EditorConfig Language Service extension](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig) can analyze an EditorConfig file and report cases where the rule ordering in the file is different to what the compiler will use at run time.
-
 > [!NOTE]
 > If you're using a version of Visual Studio earlier than Visual Studio 2019, naming rules should be ordered from most-specific to least-specific in the EditorConfig file. The first rule encountered that can be applied is the only rule that is applied. However, if there are multiple rule *properties* with the same name, the most recently found property with that name takes precedence. For more information, see [File hierarchy and precedence](/visualstudio/ide/create-portable-custom-editor-options#file-hierarchy-and-precedence).
 

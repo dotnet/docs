@@ -1,17 +1,16 @@
 ---
 ms.date: 2/21/2025
 ms.topic: quickstart
-ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 author: alexwolfmsft
 ms.author: alexwolf
 ---
 
 ## Prerequisites
 
-* .NET 9.0 SDK - [Install the .NET 9.0 SDK](https://dotnet.microsoft.com/download)
-* Visual Studio 2022 - [Install Visual Studio 2022](https://visualstudio.microsoft.com/) (optional), or
-* Visual Studio Code - [Install Visual Studio Code](https://code.visualstudio.com) (optional)
-  * With the C# DevKit - [Install C# Dev Kit extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit)
+* [.NET 9.0 SDK](https://dotnet.microsoft.com/download)
+* One of the following IDEs (optional):
+  * [Visual Studio 2022](https://visualstudio.microsoft.com/)
+  * [Visual Studio Code](https://code.visualstudio.com) with [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit)
 
 ## Install the .NET AI app template
 
@@ -31,10 +30,10 @@ After you install the AI app templates, you can use them to create starter apps 
 1. On the **Create a new project** screen, search for **AI Chat Web App**. Select the matching result and then choose **Next**.
 1. On the **Configure your new project** screen, enter the desired name and location for your project and then choose **Next**.
 1. On the **Additional information** screen:
-    - For the **Framework** option, select **.NET 9.0**.
-    - For the **AI service provider** option, select **Azure OpenAI**.
-    - Make sure the **Use keyless authentication for Azure services** checkbox is checked.
-    - For the **Vector store** option, select **Local on-disc (for prototyping)**.
+    * For the **Framework** option, select **.NET 9.0**.
+    * For the **AI service provider** option, select **Azure OpenAI**.
+    * Make sure the **Use keyless authentication for Azure services** checkbox is checked.
+    * For the **Vector store** option, select **Local on-disc (for prototyping)**.
 1. Select **Create** to complete the process.
 
 # [Visual Studio Code](#tab/visual-studio-code)
@@ -53,7 +52,7 @@ After you install the AI app templates, you can use them to create starter apps 
 1. Create a new app with the `dotnet new` command and the following parameters:
 
     ```dotnetcli
-    dotnet new aichatweb --framework "net9.0" --AiServiceProvider "azureopenai" --VectorStore "local"
+    dotnet new aichatweb --Framework net9.0 --provider azureopenai --vector-store local
     ```
 
     The .NET CLI creates a new .NET 9.0 app with the configurations you specified.
@@ -70,19 +69,27 @@ After you install the AI app templates, you can use them to create starter apps 
 
 [!INCLUDE [ai-templates-explore-app](ai-templates-explore-app.md)]
 
-## Create and configure the Azure OpenAI resource
+## Create and authenticate to the Azure OpenAI service
 
-To use the .NET AI templates, you'll need to create and authenticate to an Azure OpenAI service:
+To use the .NET AI templates with Azure OpenAI, you'll need to create and authenticate to an Azure OpenAI service.
+
+### Create the Azure OpenAI service
 
 1. [Create an Azure OpenAI Service resource](/azure/ai-services/openai/how-to/create-resource?pivots=web-portal) if you don't already have one available.
 
-2. Deploy the `gpt-4o-mini` and `text-embedding-3-small` models to your Azure OpenAI Service resource. When creating those deployments, give them the same names as the models (`gpt-4o-mini` and `text-embedding-3-small`). To learn how to deploy a model, see [Create a resource](/azure/ai-services/openai/how-to/create-resource?pivots=web-portal#deploy-a-model) in the Azure OpenAI docs.
+1. Deploy the `gpt-4o-mini` and `text-embedding-3-small` models to your Azure OpenAI Service resource. When creating those deployments, give them the same names as the models (`gpt-4o-mini` and `text-embedding-3-small`) so that they match the default template values. To learn how to deploy a model, see [Create a resource](/azure/ai-services/openai/how-to/create-resource?pivots=web-portal#deploy-a-model) in the Azure OpenAI docs.
 
-3. The AI template is configured to use Microsoft Entra ID for keyless authentication. Configure the Azure OpenAI resource for keyless authentication:
+### Authenticate to the Azure OpenAI service
 
-- In the Azure Portal, navigate to the overview page of your Azure OpenAI resource.
-- Select **Access control (IAM)** from the left navigation.
-- [Add a role assignment](/azure/developer/ai/keyless-connections) for the `Azure AI Developer` role to your Azure account.
+The AI template uses Microsoft Entra ID for seamless, keyless authentication. It leverages [`DefaultAzureCredential`](/dotnet/api/azure.identity.defaultazurecredential) to automatically detect and utilize credentials from your development tools when running locally. To connect to the service, ensure your developer account has the appropriate roles assigned and is signed in to your local development tools.
+
+1. Assign a role to your developer account to access the Azure OpenAI resource:
+
+    * In the Azure Portal, navigate to the overview page of your Azure OpenAI resource.
+    * Select **Access control (IAM)** from the left navigation.
+    * [Add a role assignment](../../../azure/sdk/authentication/local-development-dev-accounts.md#assign-roles-to-the-group) for the `Azure AI Developer` role to your Azure account.
+
+1. [Sign-in to a local development tool](../../../azure/sdk/authentication/local-development-dev-accounts.md#sign-in-to-azure-using-developer-tooling) such as Visual Studio or the Azure CLI using the Azure account you assigned the `Azure AI Developer` role to.
 
 ## Configure the app
 
@@ -106,7 +113,7 @@ The **AI Chat Web App** app is almost ready to go as soon as it's created. Howev
 # [.NET CLI](#tab/configure-dotnet-cli)
 
 ```dotnetcli
-dotnet user-secrets set AzureOpenAi:Endpoint <your-azure-openai-endpoint>
+dotnet user-secrets set AzureOpenAi:Endpoint <your-Azure-OpenAI-endpoint>
 ```
 
 ---

@@ -1099,7 +1099,7 @@ namespace L2E_ExamplesCS
                 foreach (IGrouping<int, SalesOrderHeader> group in query)
                 {
                     Console.WriteLine($"Customer ID: {group.Key}");
-                    Console.WriteLine("Order count: {0}", group.Count());
+                    Console.WriteLine($"Order count: {group.Count()}");
 
                     foreach (SalesOrderHeader sale in group)
                     {
@@ -1344,9 +1344,9 @@ namespace L2E_ExamplesCS
                 // = doubledContacts.AsEnumerable().Distinct();
                 // = Enumerable.Distinct(doubledContacts.AsEnumerable());
 
-                Console.WriteLine("Initial number of contacts: {0}", contact.Count());
+                Console.WriteLine($"Initial number of contacts: {contact.Count()}");
                 Console.WriteLine("First 100, then doubled: {0}", doubledContacts.Count());
-                Console.WriteLine("Number of unique contacts: {0}", uniqueContact.Count());
+                Console.WriteLine($"Number of unique contacts: {uniqueContact.Count()}");
             }
             //</SnippetDistinctRows>
         }

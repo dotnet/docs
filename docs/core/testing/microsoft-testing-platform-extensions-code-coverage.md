@@ -8,7 +8,7 @@ ms.date: 04/10/2024
 
 # Code coverage extensions
 
-This article list and explains all `Microsoft Testing Platform` extensions related to the code coverage capability.
+This article lists and explains all Microsoft.Testing.Platform extensions related to the code coverage capability.
 
 You can use the code coverage feature to determine what proportion of your project's code is being tested by coded tests such as unit tests. To effectively guard against bugs, your tests should exercise or *cover* a large proportion of your code.
 
@@ -35,6 +35,9 @@ Microsoft Code Coverage provides the following options:
 | `--coverage-settings`      | [XML code coverage settings](../additional-tools/dotnet-coverage.md#settings). |
 
 For more information about the available options, see [settings](../additional-tools/dotnet-coverage.md#settings) and [samples](https://github.com/microsoft/codecoverage/tree/main/samples/Algorithms).
+
+> [!NOTE]
+> The default value of `IncludeTestAssembly` in Microsoft.Testing.Extensions.CodeCoverage is `false`, while it used to be `true` in VSTest. This means that test projects are excluded by default. For more information, see [Code Coverage configuration](https://github.com/microsoft/codecoverage/blob/main/docs/configuration.md).
 
 ## Coverlet
 

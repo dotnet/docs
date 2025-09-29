@@ -1,9 +1,8 @@
 ---
 title: Semantic Kernel overview for .NET
 description: Learn how to add the Semantic Kernel SDK to your .NET projects and explore fundamental concepts
-ms.date: 06/07/2024
+ms.date: 04/09/2025
 ms.topic: quickstart
-ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 author: alexwolfmsft
 ms.author: alexwolf
 ---
@@ -28,6 +27,12 @@ Install the [`Microsoft.SemanticKernel`](https://www.nuget.org/packages/Microsof
 
 ```dotnetcli
 dotnet add package Microsoft.SemanticKernel
+```
+
+Or, in .NET 10+:
+
+```dotnetcli
+dotnet package add Microsoft.SemanticKernel
 ```
 
 > [!NOTE]
@@ -213,5 +218,5 @@ foreach (var fact in facts) {
 The preceding code loads a set of facts into memory so that the data is available to use when interacting with AI models and orchestrating tasks.
 
 >[!div class="step-by-step"]
->[Quickstart - Summarize text with OpenAI](/dotnet/ai/quickstarts/prompt-model)
->[Quickstart - Chat with your data](/dotnet/ai/quickstarts/build-vector-search-app)
+>[Quickstart - Summarize text with OpenAI](quickstarts/prompt-model.md)
+>[Quickstart - Chat with your data](quickstarts/build-vector-search-app.md)

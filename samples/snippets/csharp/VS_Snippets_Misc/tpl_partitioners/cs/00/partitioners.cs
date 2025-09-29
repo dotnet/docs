@@ -115,7 +115,7 @@ namespace PartitionerTests
                     Console.WriteLine(item.Key);
                     foreach (var v in item)
                     {
-                        Console.WriteLine("    {0:##.###}", (double)(v * .075213));
+                        Console.WriteLine($"    {(double)(v * .075213):##.###}");
                     }
                 });
         }
@@ -255,7 +255,7 @@ namespace PartitionerTests
                 _list.Add(GetItemsForPartition(start, end));
 
                 // For demonstration.
-                Console.WriteLine("start = {0} b (end) = {1}", start, end);
+                Console.WriteLine($"start = {start} b (end) = {end}");
             }
             return (IList<IEnumerator<int>>)_list;
         }
@@ -400,7 +400,7 @@ namespace PartitionerTests
                 location = partitionSize * (i + 1);
             }
 
-            //  Console.WriteLine("len={0} height={1} area={2} hyp={3:###.##}", height, len, height * len, Math.Sqrt(height * height + len * len));
+            //  Console.WriteLine($"len={height} height={len} area={height * len} hyp={Math.Sqrt(height * height + len * len):###.##}");
 
             return boundaries;
         }
@@ -420,7 +420,7 @@ namespace PartitionerTests
                 Console.WriteLine($"area = {area}");
                 boundaries[i] = (int)Math.Floor(Math.Sqrt((2 * area) / slope));
             }
-            Console.WriteLine("len={0} height={1} area={2} hyp={3:###.##}", height, len, height * len, Math.Sqrt(height * height + len * len));
+            Console.WriteLine($"len={height} height={len} area={height * len} hyp={Math.Sqrt(height * height + len * len):###.##}");
 
             return boundaries;
         }

@@ -5,140 +5,140 @@ namespace scl;
 
 class Program
 {
-    static async Task<int> Main(string[] args)
+    static int Main(string[] args)
     {
         // <fileoption>
-        var fileOption = new Option<FileInfo?>(
-            name: "--file",
-            description: "An option whose argument is parsed as a FileInfo",
-            isDefault: true,
-            parseArgument: result =>
+        Option<FileInfo> fileOption = new("--file")
+        {
+            Description = "An option whose argument is parsed as a FileInfo",
+            Required = true,
+            DefaultValueFactory = result =>
             {
                 if (result.Tokens.Count == 0)
                 {
                     return new FileInfo("sampleQuotes.txt");
 
                 }
-                string? filePath = result.Tokens.Single().Value;
+                string filePath = result.Tokens.Single().Value;
                 if (!File.Exists(filePath))
                 {
-                    result.ErrorMessage = "File does not exist";
+                    result.AddError("File does not exist");
                     return null;
                 }
                 else
                 {
                     return new FileInfo(filePath);
                 }
-            });
+            }
+        };
         // </fileoption>
 
-        var delayOption = new Option<int>(
-            name: "--delay",
-            description: "Delay between lines, specified as milliseconds per character in a line.",
-            getDefaultValue: () => 42);
-
-        var fgcolorOption = new Option<ConsoleColor>(
-            name: "--fgcolor",
-            description: "Foreground color of text displayed on the console.",
-            getDefaultValue: () => ConsoleColor.White);
-
-        var lightModeOption = new Option<bool>(
-            name: "--light-mode",
-            description: "Background color of text displayed on the console: default is black, light mode is white.");
+        Option<int> delayOption = new("--delay")
+        {
+            Description = "Delay between lines, specified as milliseconds per character in a line.",
+            DefaultValueFactory = parseResult => 42
+        };
+        Option<ConsoleColor> fgcolorOption = new("--fgcolor")
+        {
+            Description = "Foreground color of text displayed on the console.",
+            DefaultValueFactory = parseResult => ConsoleColor.White
+        };
+        Option<bool> lightModeOption = new("--light-mode")
+        {
+            Description = "Background color of text displayed on the console: default is black, light mode is white."
+        };
 
         // <optionsandargs>
-        var searchTermsOption = new Option<string[]>(
-            name: "--search-terms",
-            description: "Strings to search for when deleting entries.")
-            { IsRequired = true, AllowMultipleArgumentsPerToken = true };
-
-        var quoteArgument = new Argument<string>(
-            name: "quote",
-            description: "Text of quote.");
-
-        var bylineArgument = new Argument<string>(
-            name: "byline",
-            description: "Byline of quote.");
+        Option<string[]> searchTermsOption = new("--search-terms")
+        {
+            Description = "Strings to search for when deleting entries.",
+            Required = true,
+            AllowMultipleArgumentsPerToken = true
+        };
+        Argument<string> quoteArgument = new("quote")
+        {
+            Description = "Text of quote."
+        };
+        Argument<string> bylineArgument = new("byline")
+        {
+            Description = "Byline of quote."
+        };
         // </optionsandargs>
 
         // <commands>
-        var rootCommand = new RootCommand("Sample app for System.CommandLine");
-        rootCommand.AddGlobalOption(fileOption);
+        RootCommand rootCommand = new("Sample app for System.CommandLine");
+        fileOption.Recursive = true;
+        rootCommand.Options.Add(fileOption);
 
-        var quotesCommand = new Command("quotes", "Work with a file that contains quotes.");
-        rootCommand.AddCommand(quotesCommand);
+        Command quotesCommand = new("quotes", "Work with a file that contains quotes.");
+        rootCommand.Subcommands.Add(quotesCommand);
 
-        var readCommand = new Command("read", "Read and display the file.")
-            {
-                delayOption,
-                fgcolorOption,
-                lightModeOption
-            };
-        quotesCommand.AddCommand(readCommand);
+        Command readCommand = new("read", "Read and display the file.")
+        {
+            delayOption,
+            fgcolorOption,
+            lightModeOption
+        };
+        quotesCommand.Subcommands.Add(readCommand);
 
-        var deleteCommand = new Command("delete", "Delete lines from the file.");
-        deleteCommand.AddOption(searchTermsOption);
-        quotesCommand.AddCommand(deleteCommand);
+        Command deleteCommand = new("delete", "Delete lines from the file.");
+        deleteCommand.Options.Add(searchTermsOption);
+        quotesCommand.Subcommands.Add(deleteCommand);
 
-        var addCommand = new Command("add", "Add an entry to the file.");
-        addCommand.AddArgument(quoteArgument);
-        addCommand.AddArgument(bylineArgument);
-        addCommand.AddAlias("insert");
-        quotesCommand.AddCommand(addCommand);
+        Command addCommand = new("add", "Add an entry to the file.");
+        addCommand.Arguments.Add(quoteArgument);
+        addCommand.Arguments.Add(bylineArgument);
+        addCommand.Aliases.Add("insert");
+        quotesCommand.Subcommands.Add(addCommand);
         // </commands>
 
-        readCommand.SetHandler(async (file, delay, fgcolor, lightMode) =>
-            {
-                await ReadFile(file!, delay, fgcolor, lightMode);
-            },
-            fileOption, delayOption, fgcolorOption, lightModeOption);
+        readCommand.SetAction(parseResult => ReadFile(
+            parseResult.GetValue(fileOption),
+            parseResult.GetValue(delayOption),
+            parseResult.GetValue(fgcolorOption),
+            parseResult.GetValue(lightModeOption)));
 
-        // <sethandlers>
-        deleteCommand.SetHandler((file, searchTerms) =>
-            {
-                DeleteFromFile(file!, searchTerms);
-            },
-            fileOption, searchTermsOption);
+        // <setactions>
+        deleteCommand.SetAction(parseResult => DeleteFromFile(
+            parseResult.GetValue(fileOption),
+            parseResult.GetValue(searchTermsOption)));
 
-        addCommand.SetHandler((file, quote, byline) =>
-            {
-                AddToFile(file!, quote, byline);
-            },
-            fileOption, quoteArgument, bylineArgument);
-        // </sethandlers>
+        addCommand.SetAction(parseResult => AddToFile(
+            parseResult.GetValue(fileOption),
+            parseResult.GetValue(quoteArgument),
+            parseResult.GetValue(bylineArgument))
+            );
+        // </setactions>
 
-        return await rootCommand.InvokeAsync(args);
+        return rootCommand.Parse(args).Invoke();
     }
 
-    internal static async Task ReadFile(
-                FileInfo file, int delay, ConsoleColor fgColor, bool lightMode)
+    internal static void ReadFile(FileInfo file, int delay, ConsoleColor fgColor, bool lightMode)
     {
         Console.BackgroundColor = lightMode ? ConsoleColor.White : ConsoleColor.Black;
         Console.ForegroundColor = fgColor;
-        var lines = File.ReadLines(file.FullName).ToList();
-        foreach (string line in lines)
+        foreach (string line in File.ReadLines(file.FullName))
         {
             Console.WriteLine(line);
-            await Task.Delay(delay * line.Length);
-        };
-
+            Thread.Sleep(TimeSpan.FromMilliseconds(delay * line.Length));
+        }
     }
-    // <handlers>
+    // <actions>
     internal static void DeleteFromFile(FileInfo file, string[] searchTerms)
     {
         Console.WriteLine("Deleting from file");
-        File.WriteAllLines(
-            file.FullName, File.ReadLines(file.FullName)
-                .Where(line => searchTerms.All(s => !line.Contains(s))).ToList());
+
+        var lines = File.ReadLines(file.FullName).Where(line => searchTerms.All(s => !line.Contains(s)));
+        File.WriteAllLines(file.FullName, lines);
     }
     internal static void AddToFile(FileInfo file, string quote, string byline)
     {
         Console.WriteLine("Adding to file");
-        using StreamWriter? writer = file.AppendText();
+
+        using StreamWriter writer = file.AppendText();
         writer.WriteLine($"{Environment.NewLine}{Environment.NewLine}{quote}");
         writer.WriteLine($"{Environment.NewLine}-{byline}");
-        writer.Flush();
     }
-    // </handlers>
+    // </actions>
 }
 // </all>

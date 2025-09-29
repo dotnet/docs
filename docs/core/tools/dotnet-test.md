@@ -11,19 +11,25 @@ ms.date: 03/27/2024
 
 ## Description
 
-The `dotnet test` command builds the solution and runs the tests with either VSTest or Microsoft Testing Platform (MTP). To enable MTP, you need to add a config file named `dotnet.config` with TOML format located at the root of the solution or repository.
+The `dotnet test` command builds the solution and runs the tests with either VSTest or Microsoft Testing Platform (MTP). To enable MTP, you need to add a config file named `dotnet.config` with an INI-like format located at the root of the solution or repository.
 
 Some examples of the `dotnet.config` file:
 
-  ```toml
-  [dotnet.test:runner]
+  ```ini
+  [dotnet.test.runner]
   name = "Microsoft.Testing.Platform"
   ```
 
-  ```toml
-  [dotnet.test:runner]
+  ```ini
+  [dotnet.test.runner]
   name = "VSTest"
   ```
+
+> [!IMPORTANT]
+> The `dotnet test` experience for MTP is only supported in `Microsoft.Testing.Platform` version 1.7 and later.
+
+> [!TIP]
+> For conceptual documentation about `dotnet test`, see [Testing with dotnet test](../testing/unit-testing-with-dotnet-test.md).
 
 ## VSTest and Microsoft.Testing.Platform (MTP)
 
@@ -416,7 +422,6 @@ For more information and examples on how to use selective unit test filtering, s
 dotnet test
     [--project <PROJECT_PATH>]
     [--solution <SOLUTION_PATH>]
-    [--directory <DIRECTORY_PATH>]
     [--test-modules <EXPRESSION>] 
     [--root-directory <ROOT_PATH>]
     [--max-parallel-test-modules <NUMBER>]
@@ -431,6 +436,8 @@ dotnet test
     [--no-ansi]
     [--no-progress]
     [--output <VERBOSITY_LEVEL>]
+    [--no-launch-profile]
+    [--no-launch-profile-arguments]
     [<args>...]
 
 dotnet test -h|--help
@@ -450,20 +457,16 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
 #### Options
 
 > [!NOTE]
-> You can use only one of the following options at a time: `--project`, `--solution`, `--directory`, or `--test-modules`. These options can't be combined.
+> You can use only one of the following options at a time: `--project`, `--solution`, or `--test-modules`. These options can't be combined.
 > In addition, when using `--test-modules`, you can't specify `--arch`, `--configuration`, `--framework`, `--os`, or `--runtime`. These options are not relevant for an already-built module.
 
 - **`--project <PROJECT_PATH>`**
 
-  Specifies the path to the test project.
+  Specifies the path of the project file to run (folder name or full path). If not specified, it defaults to the current directory.
 
 - **`--solution <SOLUTION_PATH>`**
 
-  Specifies the path to the solution.
-
-- **`--directory <DIRECTORY_PATH>`**
-
-  Specifies the path to a directory that contains a project or a solution.
+  Specifies the path of the solution file to run (folder name or full path). If not specified, it defaults to the current directory.
 
 - **`--test-modules <EXPRESSION>`**
 
@@ -493,6 +496,9 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
 
   Short form `-r` available starting in .NET SDK 7.
 
+  > [!NOTE]
+  > Running tests for a solution with a global `RuntimeIdentifier` property (explicitly or via `--arch`, `--runtime`, or `--os`) is not supported. Set `RuntimeIdentifier` on an individual project level instead.
+
 - **`-v|--verbosity <LEVEL>`**
   
   Sets the MSBuild verbosity level. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. For more information, see <xref:Microsoft.Build.Framework.LoggerVerbosity>.
@@ -516,6 +522,14 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
 - **`--output <VERBOSITY_LEVEL>`**
 
   Specifies the output verbosity when reporting tests. Valid values are `Normal` and `Detailed`. The default is `Normal`.
+
+- **`--no-launch-profile`**
+
+  Do not attempt to use launchSettings.json to configure the application. By default, `launchSettings.json` is used, which can apply environment variables and command-line arguments to the test executable.
+
+- **`--no-launch-profile-arguments`**
+
+  Do not use arguments specified by `commandLineArgs` in launch profile to run the application.
 
 - **`--property:<NAME>=<VALUE>`**
 
@@ -560,12 +574,6 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
 
   ```dotnetcli
   dotnet test --solution ./TestProjects/TestProjects.sln
-  ```
-
-- Run the tests in a solution or project that can be found in the `TestProjects` directory:
-
-  ```dotnetcli
-  dotnet test --directory ./TestProjects
   ```
 
 - Run the tests using `TestProject.dll` assembly:

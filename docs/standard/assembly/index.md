@@ -30,7 +30,7 @@ Assemblies have the following properties:
 
 - Assemblies are only loaded into memory if they're required. If they aren't used, they aren't loaded. Therefore, assemblies can be an efficient way to manage resources in larger projects.
 
-- You can programmatically obtain information about an assembly by using reflection. For more information, see [Reflection (C#)](/dotnet/csharp/advanced-topics/reflection-and-attributes/) or [Reflection (Visual Basic)](../../visual-basic/programming-guide/concepts/reflection.md).
+- You can programmatically obtain information about an assembly by using reflection. For more information, see [Reflection (C#)](../../csharp/advanced-topics/reflection-and-attributes/index.md) or [Reflection (Visual Basic)](../../visual-basic/programming-guide/concepts/reflection.md).
 
 - You can load an assembly just to inspect it by using the <xref:System.Reflection.MetadataLoadContext> class on .NET and .NET Framework. <xref:System.Reflection.MetadataLoadContext> replaces the <xref:System.Reflection.Assembly.ReflectionOnlyLoad%2A?displayProperty=nameWithType> methods.
 

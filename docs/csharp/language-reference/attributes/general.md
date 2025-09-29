@@ -147,8 +147,14 @@ The constructor to the `AsyncMethodBuilder` attribute specifies the type of the 
 * A `Start` method with the following API signature:
 
   ```csharp
-  void Start<TStateMachine>(ref TStateMachine stateMachine)
+  public void Start<TStateMachine>(ref TStateMachine stateMachine)
             where TStateMachine : System.Runtime.CompilerServices.IAsyncStateMachine
+  ```
+
+* A `SetStateMachine` method with the following API signature:
+
+  ```csharp
+  public void SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine stateMachine)
   ```
 
 * An `AwaitOnCompleted` method with the following signature:
@@ -274,4 +280,4 @@ The <xref:System.Runtime.CompilerServices.IUnknownConstantAttribute?displayPrope
 - <xref:System.Attribute>
 - <xref:System.Reflection>
 - [Attributes](../../../standard/attributes/index.md)
-- [Reflection](/dotnet/csharp/advanced-topics/reflection-and-attributes/)
+- [Reflection](../../advanced-topics/reflection-and-attributes/index.md)

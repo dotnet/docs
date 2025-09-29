@@ -48,7 +48,7 @@ public class LeftOuterJoins
                 {
                     student.student.FirstName,
                     student.student.LastName,
-                    Department = department.Name
+                    Department = department?.Name ?? string.Empty
                 });
 
         foreach (var v in query)

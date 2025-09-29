@@ -5,7 +5,7 @@ author: adegeo
 ms.author: adegeo
 ms.date: 11/11/2024
 ms.topic: install-set-up-deploy
-ms.custom: linux-related-content
+ms.custom: linux-related-content, updateeachrelease
 #customer intent: As a Linux user, I want to install .NET SDK through Snap.
 ---
 

@@ -4,6 +4,8 @@ await IteratorAsync();
 GetEnumeratorExample.Example();
 Console.WriteLine();
 IteratorExecution();
+Console.WriteLine();
+UsingInIterator();
 
 static void YieldReturn()
 {
@@ -115,4 +117,40 @@ static void IteratorExecution()
     // Iterator: end.
     // </IteratorExecution>
     Console.WriteLine();
+}
+
+static void UsingInIterator()
+{
+    // <UsingInIterator>
+    Console.WriteLine("=== Using in Iterator Example ===");
+    
+    // Demonstrate that using statements work correctly in iterators
+    foreach (string line in ReadLinesFromResource())
+    {
+        Console.WriteLine($"Read: {line}");
+        // Simulate processing only first two items
+        if (line == "Line 2") break;
+    }
+    
+    Console.WriteLine("Iteration stopped early - resource should still be disposed.");
+    
+    static IEnumerable<string> ReadLinesFromResource()
+    {
+        Console.WriteLine("Opening resource...");
+        using var resource = new StringWriter(); // Use StringWriter as a simple IDisposable
+        resource.WriteLine("Resource initialized");
+        
+        // These lines would typically come from the resource (e.g., file, database)
+        string[] lines = { "Line 1", "Line 2", "Line 3", "Line 4" };
+        
+        foreach (string line in lines)
+        {
+            Console.WriteLine($"About to yield: {line}");
+            yield return line;
+            Console.WriteLine($"Resumed after yielding: {line}");
+        }
+        
+        Console.WriteLine("Iterator completed - using block will dispose resource.");
+    }
+    // </UsingInIterator>
 }

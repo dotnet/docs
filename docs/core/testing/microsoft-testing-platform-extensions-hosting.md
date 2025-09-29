@@ -8,7 +8,7 @@ ms.date: 04/10/2024
 
 # Hosting extensions
 
-This article list and explains all `Microsoft Testing Platform` extensions related to the hosting capability.
+This article lists and explains all Microsoft.Testing.Platform extensions related to the hosting capability.
 
 ## Hot reload
 
@@ -20,7 +20,7 @@ Hot reload lets you modify your app's managed source code while the application 
 This extension is shipped as part of the [Microsoft.Testing.Extensions.HotReload](https://nuget.org/packages/Microsoft.Testing.Extensions.HotReload) package.
 
 > [!NOTE]
-> The package is shipped with the restrictive Microsoft Testing Platform Tools license.
+> The package is shipped with the restrictive Microsoft.Testing.Platform Tools license.
 > The full license is available at <https://www.nuget.org/packages/Microsoft.Testing.Extensions.HotReload/1.0.0/License>.
 
 You can easily enable hot reload support by setting the `TESTINGPLATFORM_HOTRELOAD_ENABLED` environment variable to `"1"`.

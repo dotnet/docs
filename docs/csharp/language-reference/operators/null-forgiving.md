@@ -20,7 +20,7 @@ One of the use cases of the null-forgiving operator is in testing the argument v
 
 [!code-csharp[Person class](snippets/shared/NullForgivingOperator.cs#PersonClass)]
 
-Using the [MSTest test framework](../../../core/testing/unit-testing-with-mstest.md), you can create the following test for the validation logic in the constructor:
+Using the [MSTest test framework](../../../core/testing/unit-testing-csharp-with-mstest.md), you can create the following test for the validation logic in the constructor:
 
 [!code-csharp[Person test](snippets/shared/NullForgivingOperator.cs#TestPerson)]
 

@@ -24,7 +24,7 @@ Addresses an issue with printing large number of pages due to an OutOfMemory exc
 
 ```
 <runtime>
-  <AppContextSwitchOverrides value="Switch.System.Windows.Controls.ReleaseDiscardableFontReasources=true"/>
+  <AppContextSwitchOverrides value="Switch.System.Windows.Controls.ReleaseDiscardableFontResources=true"/>
 </runtime>
 ```
 

@@ -1,4 +1,4 @@
-﻿// <snippet12>
+// <snippet12>
 public static partial class Program
 {
     public static void TaskException()
@@ -18,8 +18,7 @@ public static partial class Program
         {
             foreach (var ex in ae.InnerExceptions)
             {
-                Console.WriteLine(
-                    "{0}: {1}", ex.GetType().Name, ex.Message);
+                Console.WriteLine($"{ex.GetType().Name}: {ex.Message}");
             }
         }
         Console.WriteLine();
@@ -35,8 +34,7 @@ public static partial class Program
         catch (AggregateException ae)
         {
             foreach (var ex in ae.InnerExceptions)
-                Console.WriteLine(
-                    "{0}: {1}", ex.GetType().Name, ex.Message);
+                Console.WriteLine($"{ex.GetType().Name}: {ex.Message}");
         }
     }
 

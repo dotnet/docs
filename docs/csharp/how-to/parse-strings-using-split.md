@@ -8,7 +8,6 @@ helpviewer_keywords:
   - "strings [C#], splitting"
   - "parse strings"
 ms.custom: copilot-scenario-highlight
-ms.collection: ce-skilling-ai-copilot
 ---
 # How to separate strings using String.Split in C\#
 
@@ -17,7 +16,7 @@ The <xref:System.String.Split%2A?displayProperty=nameWithType> method creates an
 [!INCLUDE[interactive-note](~/includes/csharp-interactive-note.md)]
 
 > [!TIP]
-> You can use AI assistance to [split a string with GitHub Copilot](#use-github-copilot-to-split-a-string).
+> You can use AI assistance to [split a string](#use-ai-to-split-a-string).
 
 ## Split a string into words
 
@@ -38,6 +37,8 @@ The <xref:System.String.Split*?displayProperty=nameWithType> has many overloads.
 - You can specify if leading and trailing whitespace is removed from the returned substrings.
 
 The remaining examples use different overloads to show each of these behaviors.
+
+For more information about indices, see the [Explore indexes and ranges](../tutorials/ranges-indexes.md) article.
 
 ## Specify multiple separators
 
@@ -67,7 +68,7 @@ Consecutive separator characters produce the empty string as a value in the retu
 
 This behavior makes it easier for formats like comma-separated values (CSV) files representing tabular data. Consecutive commas represent a blank column.
 
-You can pass an optional <xref:System.StringSplitOptions.RemoveEmptyEntries?displayProperty=nameWithType> parameter to exclude any empty strings in the returned array. For more complicated processing of the returned collection, you can use [LINQ](/dotnet/csharp/linq/) to manipulate the result sequence.
+You can pass an optional <xref:System.StringSplitOptions.RemoveEmptyEntries?displayProperty=nameWithType> parameter to exclude any empty strings in the returned array. For more complicated processing of the returned collection, you can use [LINQ](../linq/index.md) to manipulate the result sequence.
 
 ## Trim whitespace
 
@@ -77,9 +78,9 @@ The following example shows the effect of trimming entries:
 
 The untrimmed entries have extra whitespace before the numerals.
 
-## Use GitHub Copilot to split a string
+## Use AI to split a string
 
-You can use GitHub Copilot in your IDE to generate code to split strings using `String.Split` in C#. You can customize the prompt to use strings and delimiters per your requirements.
+You can use AI tools, such as GitHub Copilot, to generate code to split strings using `String.Split` in C#. You can customize the prompt to use strings and delimiters per your requirements.
 
 The following text shows an example prompt for Copilot Chat:
 
@@ -91,10 +92,10 @@ Provide example output.
 
 GitHub Copilot is powered by AI, so surprises and mistakes are possible. For more information, see [Copilot FAQs](https://aka.ms/copilot-general-use-faqs).
 
-Learn more about [GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states) and [GitHub Copilot in VS Code](https://code.visualstudio.com/docs/copilot/overview).
-
 ## See also
 
 - [Extract elements from a string](../../standard/base-types/divide-up-strings.md)
 - [Strings](../programming-guide/strings/index.md)
 - [.NET regular expressions](../../standard/base-types/regular-expressions.md)
+- [GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states)
+- [GitHub Copilot in VS Code](https://code.visualstudio.com/docs/copilot/overview)

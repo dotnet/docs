@@ -62,7 +62,7 @@ A `join` clause performs an equijoin. In other words, you can only base matches 
 
 ## Non-equijoins
 
-You can perform non-equijoins, cross joins, and other custom join operations by using multiple `from` clauses to introduce new sequences independently into a query. For more information, see [Perform custom join operations](/dotnet/csharp/linq/).
+You can perform non-equijoins, cross joins, and other custom join operations by using multiple `from` clauses to introduce new sequences independently into a query. For more information, see [Perform custom join operations](../../linq/index.md).
 
 ## Joins on object collections vs. relational tables
 

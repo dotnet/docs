@@ -66,7 +66,7 @@ bin\Release\net8.0\
 
 ### Terminal build output
 
-`dotnet build` has a new option to produce more modernized build output. This *terminal logger* output groups errors with the project they came from, better differentiates the different target frameworks for multi-targeted projects, and provides real-time information about what the build is doing. To opt in to the new output, use the `--tl` option. For more information about this option, see [dotnet build options](../../tools/dotnet-build.md#options).
+`dotnet build` has a new option to produce more modernized build output. This *Terminal Logger* output groups errors with the project they came from, better differentiates the different target frameworks for multi-targeted projects, and provides real-time information about what the build is doing. To opt in to the new output, use the `--tl` option. For more information about this option, see [dotnet build options](../../tools/dotnet-build.md#options).
 
 ### Simplified output paths
 

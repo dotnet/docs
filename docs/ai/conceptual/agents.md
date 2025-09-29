@@ -44,7 +44,7 @@ This is the foundation of multi-agent systems, where agents collaborate within w
 
 ## How can I get started building agents in .NET?
 
-The building blocks in Microsoft.Extensions.AI as well as Microsoft.Extensions.VectorData provide you with the foundations for agents by providing modular components for AI models, tools, and data. 
+The building blocks in Microsoft.Extensions.AI as well as Microsoft.Extensions.VectorData provide you with the foundations for agents by providing modular components for AI models, tools, and data.
 
 Using those same foundations, you can leverage SDKs such as:
 

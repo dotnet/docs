@@ -3,20 +3,15 @@
     //<snippet1>
     public class Book
     {
-        private readonly string? _Title;
-
         public Book(string title)
         {
             // Violates this rule
             title?.Trim();
 
-            _Title = title;
+            Title = title;
         }
 
-        public string? Title
-        {
-            get { return _Title; }
-        }
+        public string? Title { get; }
     }
     //</snippet1>
 }
@@ -26,8 +21,6 @@ namespace ca1806_2
     //<snippet2>
     public class Book
     {
-        private readonly string? _Title;
-
         public Book(string title)
         {
             if (title != null)
@@ -35,13 +28,10 @@ namespace ca1806_2
                 title = title.Trim();
             }
 
-            _Title = title;
+            Title = title;
         }
 
-        public string? Title
-        {
-            get { return _Title; }
-        }
+        public string? Title { get; }
     }
     //</snippet2>
 }

@@ -30,10 +30,10 @@ namespace ca1050
     {
         public static void Main1050()
         {
-            Test t1 = new Test();
+            Test t1 = new();
             Console.WriteLine(t1.ToString());
 
-            ca1050.Test t2 = new ca1050.Test();
+            ca1050.Test t2 = new();
             Console.WriteLine(t2.ToString());
         }
     }

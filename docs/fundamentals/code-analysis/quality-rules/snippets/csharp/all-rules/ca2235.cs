@@ -5,23 +5,14 @@ namespace ca2235
     //<snippet1>
     public class Mouse
     {
-        int buttons;
-        string scanTypeValue;
+        public int NumberOfButtons { get; }
 
-        public int NumberOfButtons
-        {
-            get { return buttons; }
-        }
-
-        public string ScanType
-        {
-            get { return scanTypeValue; }
-        }
+        public string ScanType { get; }
 
         public Mouse(int numberOfButtons, string scanType)
         {
-            buttons = numberOfButtons;
-            scanTypeValue = scanType;
+            NumberOfButtons = numberOfButtons;
+            ScanType = scanType;
         }
     }
 

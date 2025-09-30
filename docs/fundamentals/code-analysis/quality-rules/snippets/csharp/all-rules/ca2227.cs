@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 
 namespace ca2227
 {
@@ -25,13 +24,14 @@ namespace ca2227
     {
         static void Main2227()
         {
-            ArrayList newCollection = new ArrayList(new string[] { "a", "new", "collection" });
+            ArrayList newCollection = new(new string[] { "a", "new", "collection" });
 
-            WritableCollection collection = new WritableCollection();
-
-            // This line of code demonstrates how the entire collection
-            // can be replaced by a property that's not read only.
-            collection.SomeStrings = newCollection;
+            WritableCollection collection = new()
+            {
+                // This line of code demonstrates how the entire collection
+                // can be replaced by a property that's not read only.
+                SomeStrings = newCollection
+            };
 
             // If the intent is to replace an entire collection,
             // implement and/or use the Clear() and AddRange() methods instead.

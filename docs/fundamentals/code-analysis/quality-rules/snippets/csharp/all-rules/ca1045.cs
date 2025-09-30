@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 
 namespace ca1045
 {
@@ -59,33 +59,31 @@ namespace ca1045
 
     public class ReplyData
     {
-        string reply;
-        Actions action;
         bool returnReply;
 
         // Constructors.
         public ReplyData()
         {
-            this.reply = String.Empty;
-            this.action = Actions.Discard;
+            this.Reply = String.Empty;
+            this.Action = Actions.Discard;
             this.returnReply = false;
         }
 
         public ReplyData(Actions action, string reply, bool returnReply)
         {
-            this.reply = reply;
-            this.action = action;
+            this.Reply = reply;
+            this.Action = action;
             this.returnReply = returnReply;
         }
 
         // Properties.
-        public string Reply { get { return reply; } }
-        public Actions Action { get { return action; } }
+        public string Reply { get; }
+        public Actions Action { get; }
 
         public override string ToString()
         {
             return String.Format("Reply: {0} Action: {1} return? {2}",
-               reply, action.ToString(), returnReply.ToString());
+               Reply, Action.ToString(), returnReply.ToString());
         }
     }
 

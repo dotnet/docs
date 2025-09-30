@@ -56,7 +56,7 @@ This article details the settings you can use to configure .NET debugging and pr
 - If you omit this setting, writing perf map and jit dump files are both disabled. This is equivalent to setting the value to `0`.
 - When perf maps are disabled, not all managed callsites will be properly resolved.
 - Depending on the Linux kernel version, both formats are supported by the `perf` tool.
-- Enabling perf maps or jit dumps may cause up to a 20% overhead though often it is much less. To minimize performance impact, it's recommended to selectively enable either perf maps or jit dumps, but not both. The impact only occurs while the application is JITing code. Often that occurs at startup but it may occur later if the application is running a new code path for the first time.
+- Enabling perf maps or jit dumps might cause up to a 20% overhead, though often it's much less. To minimize performance impact, it's recommended to selectively enable either perf maps or jit dumps, but not both. The impact only occurs while the application is JITing code. Often that occurs at startup, but it might occur later if the application is running a new code path for the first time.
 
 The following table compares perf maps and jit maps.
 

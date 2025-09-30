@@ -1,5 +1,5 @@
 ---
-title: Use the HttpClientLatency
+title: Monitor and analyze HTTP client performance
 description: Learn how to use the HttpClientLatency with dependency injection in your .NET workloads.
 author: IEvangelist
 ms.author: dapine
@@ -10,8 +10,8 @@ ms.date: 09/29/2025
 
 ### Get started
 
-When building applications that communicate with other services over HTTP, understanding the performance characteristics
-of those HTTP operations is essential. The `AddHttpClientLatencyTelemetry` extension method provides a way to collect
+When building applications that communicate over HTTP, it's essential to understand the performance characteristics.
+The `AddHttpClientLatencyTelemetry` extension method provides a way to collect
 detailed timing information about HTTP requests without requiring changes to your application code.
 HTTP client latency telemetry integrates with the existing IHttpClientFactory system to:
 

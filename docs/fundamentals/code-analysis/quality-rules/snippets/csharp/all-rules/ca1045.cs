@@ -26,11 +26,12 @@ namespace ca1045
         public static bool ReplyInformation(TypeOfFeedback input,
            out string reply, ref Actions action)
         {
-            bool returnReply = false;
-            string replyText = "Your feedback has been forwarded " +
-                               "to the product manager.";
+            string replyText = """
+                Your feedback has been forwarded to the product manager.
+                """;
 
-            reply = String.Empty;
+            reply = string.Empty;
+            bool returnReply;
             switch (input)
             {
                 case TypeOfFeedback.Complaint:
@@ -59,21 +60,21 @@ namespace ca1045
 
     public class ReplyData
     {
-        bool returnReply;
+        bool _returnReply;
 
         // Constructors.
         public ReplyData()
         {
-            this.Reply = String.Empty;
-            this.Action = Actions.Discard;
-            this.returnReply = false;
+            Reply = string.Empty;
+            Action = Actions.Discard;
+            _returnReply = false;
         }
 
         public ReplyData(Actions action, string reply, bool returnReply)
         {
-            this.Reply = reply;
-            this.Action = action;
-            this.returnReply = returnReply;
+            Reply = reply;
+            Action = action;
+            _returnReply = returnReply;
         }
 
         // Properties.
@@ -82,8 +83,8 @@ namespace ca1045
 
         public override string ToString()
         {
-            return String.Format("Reply: {0} Action: {1} return? {2}",
-               Reply, Action.ToString(), returnReply.ToString());
+            return string.Format("Reply: {0} Action: {1} return? {2}",
+               Reply, Action.ToString(), _returnReply.ToString());
         }
     }
 
@@ -91,30 +92,20 @@ namespace ca1045
     {
         public static ReplyData ReplyInformation(TypeOfFeedback input)
         {
-            ReplyData answer;
             string replyText = "Your feedback has been forwarded " +
                "to the product manager.";
-
-            switch (input)
+            ReplyData answer = input switch
             {
-                case TypeOfFeedback.Complaint:
-                case TypeOfFeedback.Praise:
-                    answer = new ReplyData(
-                       Actions.ForwardToManagement,
-                       "Thank you. " + replyText,
-                       true);
-                    break;
-                case TypeOfFeedback.Suggestion:
-                    answer = new ReplyData(
-                       Actions.ForwardToDeveloper,
-                       replyText,
-                       true);
-                    break;
-                case TypeOfFeedback.Incomprehensible:
-                default:
-                    answer = new ReplyData();
-                    break;
-            }
+                TypeOfFeedback.Complaint or TypeOfFeedback.Praise => new ReplyData(
+                                       Actions.ForwardToManagement,
+                                       "Thank you. " + replyText,
+                                       true),
+                TypeOfFeedback.Suggestion => new ReplyData(
+                                       Actions.ForwardToDeveloper,
+                                       replyText,
+                                       true),
+                _ => new ReplyData(),
+            };
             return answer;
         }
     }
@@ -137,7 +128,7 @@ namespace ca1045
             bool[] disposition = new bool[5];
             int i = 0;
 
-            foreach (TypeOfFeedback t in Enum.GetValues(typeof(TypeOfFeedback)))
+            foreach (TypeOfFeedback t in Enum.GetValues<TypeOfFeedback>())
             {
                 // The call to the library.
                 disposition[i] = BadRefAndOut.ReplyInformation(
@@ -151,7 +142,7 @@ namespace ca1045
         {
             ReplyData[] answer = new ReplyData[5];
             int i = 0;
-            foreach (TypeOfFeedback t in Enum.GetValues(typeof(TypeOfFeedback)))
+            foreach (TypeOfFeedback t in Enum.GetValues<TypeOfFeedback>())
             {
                 // The call to the library.
                 answer[i] = RedesignedRefAndOut.ReplyInformation(t);

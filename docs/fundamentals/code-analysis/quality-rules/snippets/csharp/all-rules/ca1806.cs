@@ -5,7 +5,7 @@
     {
         public Book(string title)
         {
-            // Violates this rule
+            // Violates this rule.
             title?.Trim();
 
             Title = title;
@@ -25,6 +25,7 @@ namespace ca1806_2
         {
             if (title != null)
             {
+                // Fixes the violation.
                 title = title.Trim();
             }
 
@@ -41,13 +42,11 @@ namespace ca1806_3
     //<snippet3>
     public class Book
     {
-        public Book()
-        {
-        }
+        public Book() { }
 
         public static Book CreateBook()
         {
-            // Violates this rule
+            // Violates this rule.
             new Book();
             return new Book();
         }
@@ -60,12 +59,11 @@ namespace ca1806_4
     //<snippet4>
     public class Book
     {
-        public Book()
-        {
-        }
+        public Book() { }
 
         public static Book CreateBook()
         {
+            // Fixes the violation.
             return new Book();
         }
     }

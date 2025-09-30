@@ -1,9 +1,10 @@
-﻿using System.Data;
-using System.Data.OleDb;
+﻿using System.Data.OleDb;
+using System.Runtime.Versioning;
 
 namespace ca2100
 {
     //<snippet1>
+    [SupportedOSPlatform("Windows")]
     public class OleDbQueries
     {
         public object UnsafeQuery(
@@ -31,9 +32,9 @@ namespace ca2100
             someCommand.Connection = someConnection;
 
             someCommand.Parameters.Add(
-               "@username", OleDbDbType.NChar).Value = name;
+               "@username", OleDbType.Char).Value = name;
             someCommand.Parameters.Add(
-               "@password", OleDbDbType.NChar).Value = password;
+               "@password", OleDbType.Char).Value = password;
             someCommand.CommandText = "SELECT AccountNumber FROM Users " +
                "WHERE Username=@username AND Password=@password";
 
@@ -44,11 +45,12 @@ namespace ca2100
         }
     }
 
+    [SupportedOSPlatform("Windows")]
     class MaliciousCode
     {
         static void Main2100(string[] args)
         {
-            OleDbQueries queries = new OleDbQueries();
+            OleDbQueries queries = new();
             queries.UnsafeQuery(args[0], "' OR 1=1 --", "[PLACEHOLDER]");
             // Resultant query (which is always true):
             // SELECT AccountNumber FROM Users WHERE Username='' OR 1=1

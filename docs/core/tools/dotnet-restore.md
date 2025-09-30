@@ -5,7 +5,7 @@ ms.date: 09/29/2025
 ---
 # dotnet restore
 
-**This article applies to:** ✔️ .NET 6 and later versions
+**This article applies to:** ✔️ .NET 6 SDK and later versions
 
 ## Name
 
@@ -15,11 +15,14 @@ ms.date: 09/29/2025
 
 ```dotnetcli
 dotnet restore [<PROJECT>|<SOLUTION>|<FILE>]
-  [--configfile <FILE>] [--disable-build-servers]
-  [--disable-parallel] [-f|--force] [--force-evaluate] [--ignore-failed-sources] [--interactive] [--lock-file-path <LOCK_FILE_PATH>] [--locked-mode] [--no-http-cache]
-  [--no-cache] [--no-dependencies] [--packages <PACKAGES_DIRECTORY>]
+  [-a|--arch <ARCHITECTURE>] [--configfile <FILE>] [--disable-build-servers]
+  [--disable-parallel] [-f|--force] [--force-evaluate]
+  [--ignore-failed-sources] [--interactive] [--lock-file-path <LOCK_FILE_PATH>]
+  [--locked-mode] [--no-cache] [--no-dependencies] [--no-http-cache]
+  [--os <OS>] [--packages <PACKAGES_DIRECTORY>]
   [-r|--runtime <RUNTIME_IDENTIFIER>] [-s|--source <SOURCE>]
-  [--tl:[auto|on|off]] [--use-current-runtime, --ucr [true|false]] [--use-lock-file] [-a|--arch <ARCHITECTURE>] [--os <OS>] [-v|--verbosity <LEVEL>]
+  [--tl:[auto|on|off]] [--ucr|--use-current-runtime] [--use-lock-file]
+  [-v|--verbosity <LEVEL>]
 
 dotnet restore -h|--help
 ```
@@ -106,8 +109,6 @@ There are three specific settings that `dotnet restore` ignores:
 
   Forces restore to reevaluate all dependencies even if a lock file already exists.
 
-[!INCLUDE [help](../../../includes/cli-help.md)]
-
 - **`--ignore-failed-sources`**
 
   Only warn about failed sources if there are packages meeting the version requirement.
@@ -122,10 +123,6 @@ There are three specific settings that `dotnet restore` ignores:
 
   Don't allow updating project lock file.
 
-- **`--no-http-cache`**
-
-  Disable Http Caching for packages.
-
 - **`--no-cache`**
 
   Specifies to not cache HTTP requests.
@@ -133,6 +130,16 @@ There are three specific settings that `dotnet restore` ignores:
 - **`--no-dependencies`**
 
   When restoring a project with project-to-project (P2P) references, restores the root project and not the references.
+
+- **`--no-http-cache`**
+
+  Disable Http Caching for packages.
+
+- **`--os`**
+
+  Specifies the target operating system (OS). This is a shorthand syntax for setting the Runtime Identifier (RID), where the provided value is combined with the default RID. For example, on a `win-x64` machine, specifying `--os linux` sets the RID to `linux-x64`.
+
+  Introduced in .NET SDK 10.0.100
 
 - **`--packages <PACKAGES_DIRECTORY>`**
 
@@ -146,29 +153,19 @@ There are three specific settings that `dotnet restore` ignores:
 
   Specifies the URI of the NuGet package source to use during the restore operation. This setting overrides all of the sources specified in the *nuget.config* files. Multiple sources can be provided by specifying this option multiple times.
 
-[!INCLUDE [tl](../../../includes/cli-tl.md)]
+- **`-ucr|--use-current-runtime`**
 
-- **`--use-current-runtime, --ucr [true|false]`**
-
-  Sets the `RuntimeIdentifier` to a platform portable `RuntimeIdentifier` based on the one of your machine. This happens implicitly with properties that require a `RuntimeIdentifier`, such as `SelfContained`, `PublishAot`, `PublishSelfContained`, `PublishSingleFile`, and `PublishReadyToRun`. If the property is set to false, that implicit resolution will no longer occur.
+  Use current runtime as the target runtime. The default is `false`.
 
 - **`--use-lock-file`**
 
   Enables project lock file to be generated and used with restore.
 
-- **`-a|--arch`**
-
-  Specifies the target architecture.This is a shorthand syntax for setting the Runtime Identifier (RID), where the provided value is combined with the default RID. For example, on a `win-x64` machine, specifying `--arch arm64` sets the RID to `win-arm64`.
-
-  Introduced in .NET SDK 8.0.100
-
-- **`--os`**
-
-  Specifies the target operating system (OS).This is a shorthand syntax for setting the Runtime Identifier (RID), where the provided value is combined with the default RID. For example, on a `win-x64` machine, specifying `--os linux` sets the RID to `linux-x64`.
-
-  Introduced in .NET SDK 10.0.100
+[!INCLUDE [tl](../../../includes/cli-tl.md)]
 
 [!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
+
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
 ## Examples
 

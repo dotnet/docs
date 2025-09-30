@@ -5,7 +5,7 @@ ms.date: 09/29/2025
 ---
 # dotnet msbuild
 
-**This article applies to:** ✔️ .NET 6 and later versions
+**This article applies to:** ✔️ .NET 6 SDK and later versions
 
 ## Name
 

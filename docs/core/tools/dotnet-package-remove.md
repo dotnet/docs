@@ -5,7 +5,7 @@ ms.date: 09/29/2025
 ---
 # dotnet package remove
 
-**This article applies to:** ✔️ .NET 6 and later versions
+**This article applies to:** ✔️ .NET 6 SDK and later versions
 
 ## Name
 
@@ -17,8 +17,8 @@ ms.date: 09/29/2025
 ## Synopsis
 
 ```dotnetcli
-dotnet package remove <PACKAGE_NAME> [--project <PROJECT>]  
-  [--interactive] [--file <FILE>]
+dotnet package remove <PACKAGE_NAME>  
+  [--file <FILE>] [--interactive] [--project <PROJECT>]
 
 dotnet package remove -h|--help
 ```
@@ -35,15 +35,15 @@ The package reference to remove.
 
 ## Options
 
-- **`-p|--project <PROJECT>`**
-
-  The project file to operate on. If a solution file is specified, the command will update the package in all projects in the solution that reference it. If not specified, the command will search the current directory for a project file.
-
-[!INCLUDE [interactive](../../../includes/cli-interactive.md)]
-
 - **`--file <FILE>`**
 
   The file-based app to operate on.
+
+[!INCLUDE [interactive](../../../includes/cli-interactive.md)]
+
+- **`-p|--project <PROJECT>`**
+
+  The project file to operate on. If a solution file is specified, the command will update the package in all projects in the solution that reference it. If not specified, the command will search the current directory for a project file.
 
 [!INCLUDE [help](../../../includes/cli-help.md)]
 

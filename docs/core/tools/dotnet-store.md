@@ -5,7 +5,7 @@ ms.date: 09/29/2025
 ---
 # dotnet store
 
-**This article applies to:** ✔️ .NET 6 and later versions
+**This article applies to:** ✔️ .NET 6 SDK and later versions
 
 ## Name
 
@@ -15,9 +15,11 @@ ms.date: 09/29/2025
 
 ```dotnetcli
 dotnet store [-m|--manifest <PATH_TO_MANIFEST_FILE>]
-  [-f|--framework <FRAMEWORK_VERSION>] [--disable-build-servers] [-r|--runtime <RUNTIME_IDENTIFIER>]
-  [--framework-version <FRAMEWORK_VERSION>] [--output <OUTPUT_DIRECTORY>]
-  [--skip-optimization] [--skip-symbols] [-ucr|--use-current-runtime] [-v|--verbosity <LEVEL>]
+  [-f|--framework <FRAMEWORK_VERSION>] [--disable-build-servers]
+  [--framework-version <FRAMEWORK_VERSION>]
+  [--output <OUTPUT_DIRECTORY>] [-r|--runtime <RUNTIME_IDENTIFIER>] 
+  [--skip-optimization] [--skip-symbols]
+  [--ucr|--use-current-runtime] [-v|--verbosity <LEVEL>]
   [--working-dir <WORKING_DIRECTORY>]
 
 dotnet store -h|--help
@@ -49,8 +51,6 @@ dotnet store -h|--help
 
   Specifies the .NET SDK version. This option enables you to select a specific framework version beyond the framework specified by the `-f|--framework` option.
 
-[!INCLUDE [help](../../../includes/cli-help.md)]
-
 - **`-o|--output <OUTPUT_DIRECTORY>`**
 
   Specifies the path to the runtime package store. If not specified, it defaults to the *store* subdirectory of the user profile .NET installation directory.
@@ -63,7 +63,7 @@ dotnet store -h|--help
 
   Skips symbol generation. Currently, you can only generate symbols on Windows and Linux.
 
-- **`-ucr|--use-current-runtime`**
+- **`--ucr|--use-current-runtime`**
 
   Use current runtime as the target runtime. The default is `false`.
 
@@ -72,6 +72,8 @@ dotnet store -h|--help
 - **`-w|--working-dir <WORKING_DIRECTORY>`**
 
   The working directory used by the command. If not specified, it uses the *obj* subdirectory of the current directory.
+
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
 ## Examples
 

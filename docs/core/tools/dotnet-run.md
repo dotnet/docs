@@ -5,7 +5,7 @@ ms.date: 09/29/2025
 ---
 # dotnet run
 
-**This article applies to:** ✔️ .NET 6 and later versions
+**This article applies to:** ✔️ .NET 6 SDK and later versions
 
 ## Name
 
@@ -15,10 +15,13 @@ ms.date: 09/29/2025
 
 ```dotnetcli
 dotnet run [<applicationArguments>]
-  [-a|--arch <ARCHITECTURE>] [--artifacts-path <ARTIFACTS_DIR>] [-c|--configuration <CONFIGURATION>]
-  [-e|--environment <KEY=VALUE>] [--file <FILE_PATH>] [-f|--framework <FRAMEWORK>] [--force] [--interactive]
-  [--launch-profile <NAME>] [--no-build] [--no-dependencies] [--no-launch-profile] [--no-restore]
-  [--os <OS>] [--project <PATH>] [-r|--runtime <RUNTIME_IDENTIFIER>] [--tl:[auto|on|off]] [-v|--verbosity <LEVEL>] [[--] [application arguments]]
+  [-a|--arch <ARCHITECTURE>] [--artifacts-path <ARTIFACTS_DIR>]
+  [-c|--configuration <CONFIGURATION>] [-e|--environment <KEY=VALUE>]
+  [--file <FILE_PATH>] [-f|--framework <FRAMEWORK>] [--force] [--interactive]
+  [--launch-profile <NAME>] [--no-build] [--no-dependencies]
+  [--no-launch-profile] [--no-restore] [--os <OS>] [--project <PATH>]
+  [-r|--runtime <RUNTIME_IDENTIFIER>] [--tl:[auto|on|off]]
+  [-v|--verbosity <LEVEL>] [[--] [application arguments]]
 
 dotnet run -h|--help
 ```
@@ -106,8 +109,6 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 
   Forces all dependencies to be resolved even if the last restore was successful. Specifying this flag is the same as deleting the *project.assets.json* file.
 
-[!INCLUDE [help](../../../includes/cli-help.md)]
-
 [!INCLUDE [interactive](../../../includes/cli-interactive-3-0.md)]
 
 - **`--launch-profile <NAME>`**
@@ -144,7 +145,7 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 
   Specifies the path of the project file to run (folder name or full path). If not specified, it defaults to the current directory.
 
-  The [`-p` abbreviation for `--project` is deprecated](../compatibility/sdk/6.0/deprecate-p-option-dotnet-run.md) starting in .NET 6 SDK. For a limited time starting in .NET 6 RC1 SDK, `-p` can still be used for `--project` despite the deprecation warning. If the argument provided for the option doesn't contain `=`, the command accepts `-p` as short for `--project`. Otherwise, the command assumes that `-p` is short for `--property`. This flexible use of `-p` for `--project` will be phased out in .NET 7.
+  The [`-p` abbreviation for `--project` is deprecated](../compatibility/sdk/6.0/deprecate-p-option-dotnet-run.md) starting in .NET 6 SDK SDK. For a limited time starting in .NET 6 SDK RC1 SDK, `-p` can still be used for `--project` despite the deprecation warning. If the argument provided for the option doesn't contain `=`, the command accepts `-p` as short for `--project`. Otherwise, the command assumes that `-p` is short for `--property`. This flexible use of `-p` for `--project` will be phased out in .NET 7.
 
 - **`--property:<NAME>=<VALUE>`**
 
@@ -174,6 +175,8 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 [!INCLUDE [tl](../../../includes/cli-tl.md)]
 
 [!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
+
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
 ## Environment variables
 

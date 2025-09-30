@@ -5,7 +5,7 @@ ms.date: 09/29/2025
 ---
 # dotnet dev-certs
 
-**This article applies to:** ✔️ .NET 6 and later versions
+**This article applies to:** ✔️ .NET 6 SDK and later versions
 
 ## Name
 
@@ -15,10 +15,11 @@ ms.date: 09/29/2025
 
 ```dotnetcli
 dotnet dev-certs https 
-  [-c|--check] [--clean] [-ep|--export-path <PATH>]
+  [-c|--check] [--check-trust-machine-readable] 
+  [--clean] [-ep|--export-path <PATH>]
   [--format] [-i|--import] [-np|--no-password]
   [-p|--password] [-q|--quiet] [-t|--trust]
-  [-v|--verbose] [--version] [--check-trust-machine-readable]
+  [-v|--verbose] [--version]
 
 dotnet dev-certs https -h|--help
 ```
@@ -60,6 +61,10 @@ The `dotnet dev-certs` command manages a self-signed certificate to enable HTTPS
 - **`-c|--check`**
 
   Checks for the existence of the development certificate but doesn't perform any action. Use this option with the `--trust` option to check if the certificate is not only valid but also trusted.
+
+- **`--check-trust-machine-readable`**
+
+  Same as running `--check --trust`, but outputs the results in json.
 
 - **`--clean`**
 
@@ -139,10 +144,6 @@ The `dotnet dev-certs` command manages a self-signed certificate to enable HTTPS
 - **`-v|--verbose`**
 
   Display debug information.
-
-- **`--check-trust-machine-readable`**
-
-  Same as running `--check --trust`, but outputs the results in json.
 
 ## Examples
 

@@ -5,6 +5,8 @@ ms.date: 09/29/2025
 ---
 # dotnet test
 
+**This article applies to:** ✔️ .NET 6 SDK and later versions
+
 ## Name
 
 `dotnet test` - .NET test driver used to execute unit tests.
@@ -34,8 +36,6 @@ Some examples of the `dotnet.config` file:
 ## VSTest and Microsoft.Testing.Platform (MTP)
 
 ### [dotnet test with VSTest](#tab/dotnet-test-with-vstest)
-
-**This article applies to:** ✔️ .NET 6 and later versions
 
 #### Synopsis
 

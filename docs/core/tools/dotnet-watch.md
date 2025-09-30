@@ -5,7 +5,7 @@ ms.date: 09/29/2025
 ---
 # dotnet watch
 
-**This article applies to:** ✔️ .NET 6 and later versions
+**This article applies to:** ✔️ .NET 6 SDK and later versions
 
 ## Name
 
@@ -15,13 +15,10 @@ ms.date: 09/29/2025
 
 ```dotnetcli
 dotnet watch [<command>]
-  [--artifacts-path <ARTIFACTS_DIR>]
-  [--disable-build-servers] 
-  [--list] [--no-self-contained]
-  [--no-hot-reload] [--non-interactive]
-  [--project <PROJECT>] [--sc, --self-contained]
-  [-q|--quiet] [-v|--verbose]
-  [--version]
+  [--artifacts-path <ARTIFACTS_DIR>] [--disable-build-servers]
+  [--list] [--no-hot-reload] [--no-self-contained]
+  [--non-interactive] [--project <PROJECT>] [--sc|--self-contained]
+  [-q|--quiet] [-v|--verbose] [--version]
   [--] <forwarded arguments> 
 
 dotnet watch -?|-h|--help
@@ -74,13 +71,13 @@ As an alternative to disabling response compression, manually add the browser re
 
   Lists all discovered files without starting the watcher.
 
+- **`--no-self-contained`**
+
+  Publishes the application as a framework dependent application. A compatible .NET runtime must be installed on the target machine to run the application. Available since .NET 6 SDK.
+
 - **`--no-hot-reload`**
 
   Suppress [hot reload](#hot-reload) for [supported apps](/visualstudio/debugger/hot-reload#supported-net-app-frameworks-and-scenarios).
-
-- **`--no-self-contained`**
-
-  Publishes the application as a framework dependent application. A compatible .NET runtime must be installed on the target machine to run the application. Available since .NET 6.
 
 - **`--non-interactive`**
 
@@ -90,9 +87,9 @@ As an alternative to disabling response compression, manually add the browser re
 
   Specifies the path of the project file to run (folder only or including the project file name). If not specified, it defaults to the current directory.
 
-- **`-sc|--self-contained`**
+- **`--sc|--self-contained`**
 
-  Publishes the .NET runtime with the application so the runtime doesn't need to be installed on the target machine. The default is `true` if a runtime identifier is specified. Available since .NET 6.
+  Publishes the .NET runtime with the application so the runtime doesn't need to be installed on the target machine. The default is `false`. However, when targeting .NET 7 or lower, the default is `true` if a runtime identifier is specified. Available since .NET 6 SDK.
 
 - **`-q|--quiet`**
 
@@ -109,6 +106,8 @@ As an alternative to disabling response compression, manually add the browser re
 - **`--`**
 
   The [double-dash option ('--')](../../standard/commandline/syntax.md#the----token) can be used to delimit `dotnet watch` options from arguments that will be passed to the child process. Its use is optional. When the double-dash option isn't used, `dotnet watch` considers the first unrecognized argument to be the beginning of arguments that it should pass into the child `dotnet` process.
+
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
 ## Environment variables
 
@@ -225,7 +224,7 @@ More files can be watched by adding items to the `Watch` group. For example, the
 
 ## Hot Reload
 
-Starting in .NET 6, `dotnet watch` includes support for *hot reload*. Hot reload is a feature that lets you apply changes to a running app without having to rebuild and restart it. The changes may be to code files or static assets, such as stylesheet files and JavaScript files. This feature streamlines the local development experience, as it gives immediate feedback when you modify your app.
+Starting in .NET 6 SDK, `dotnet watch` includes support for *hot reload*. Hot reload is a feature that lets you apply changes to a running app without having to rebuild and restart it. The changes may be to code files or static assets, such as stylesheet files and JavaScript files. This feature streamlines the local development experience, as it gives immediate feedback when you modify your app.
 
 For information about app types and .NET versions that support hot reload, see [Supported .NET app frameworks and scenarios](/visualstudio/debugger/hot-reload#supported-net-app-frameworks-and-scenarios).
 

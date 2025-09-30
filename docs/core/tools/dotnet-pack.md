@@ -5,7 +5,7 @@ ms.date: 09/29/2025
 ---
 # dotnet pack
 
-**This article applies to:** ✔️ .NET 6 and later versions
+**This article applies to:** ✔️ .NET 6 SDK and later versions
 
 ## Name
 
@@ -15,8 +15,11 @@ ms.date: 09/29/2025
 
 ```dotnetcli
 dotnet pack [<PROJECT>|<SOLUTION>]
-  [--artifacts-path <ARTIFACTS_DIR>]
-  [-c|--configuration <CONFIGURATION>] [--disable-build-servers][--force] [--include-source] [--include-symbols] [--interactive] [--no-build] [--no-dependencies] [--no-restore] [--nologo] [-o|--output <OUTPUT_DIRECTORY>] [--runtime <RUNTIME_IDENTIFIER>] [-s|--serviceable] [--tl:[auto|on|off]] [-v|--verbosity <LEVEL>]
+  [--artifacts-path <ARTIFACTS_DIR>] [-c|--configuration <CONFIGURATION>]
+  [--disable-build-servers] [--force] [--include-source] [--include-symbols]
+  [--interactive] [--no-build] [--no-dependencies] [--no-restore] [--nologo]
+  [-o|--output <OUTPUT_DIRECTORY>] [--runtime <RUNTIME_IDENTIFIER>]
+  [-s|--serviceable] [--tl:[auto|on|off]] [-v|--verbosity <LEVEL>]
   [--version-suffix <VERSION_SUFFIX>]
 
 dotnet pack -h|--help
@@ -66,8 +69,6 @@ You can provide MSBuild properties to the `dotnet pack` command for the packing 
 - **`--force`**
 
   Forces all dependencies to be resolved even if the last restore was successful. Specifying this flag is the same as deleting the *project.assets.json* file.
-
-[!INCLUDE [help](../../../includes/cli-help.md)]
 
 - **`--include-source`**
 
@@ -130,6 +131,8 @@ You can provide MSBuild properties to the `dotnet pack` command for the packing 
   If you want to use `--version-suffix`, specify `VersionPrefix` and not `Version` in the project file. For example, if `VersionPrefix` is `0.1.2` and you pass `--version-suffix rc.1` to `dotnet pack`, the package version will be `0.1.2-rc.1`.
 
   If `Version` has a value and you pass `--version-suffix` to `dotnet pack`, the value specified for `--version-suffix` is ignored.
+
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
 ## Examples
 

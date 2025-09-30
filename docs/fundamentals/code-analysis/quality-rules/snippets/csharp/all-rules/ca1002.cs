@@ -6,7 +6,7 @@ namespace ca1001
     // This class violates the rule.
     public class MutableItems
     {
-        // CA1002: Change 'List<string>' in 'ViolationItems.Members' to use 'Collection<T>', 'ReadOnlyCollection<T>' or 'KeyedCollection<K,V>'
+        // CA1002: Change 'List<string>' in 'MutableItems.Items' to use 'Collection<T>', 'ReadOnlyCollection<T>' or 'KeyedCollection<K,V>'
         public List<string> Items { get; } = new List<string>();
 
         public void Add(string item)

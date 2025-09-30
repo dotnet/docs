@@ -336,7 +336,7 @@ items:
                 href: aspnet-core/8.0/problemdetails-custom-converters.md
               - name: Forwarded Headers Middleware ignores X-Forwarded-* headers from unknown proxies
                 href: aspnet-core/8.0/forwarded-headers-unknown-proxies.md
-              - name: HTTP logging middleware requires AddHttpLogging
+              - name: HTTP logging middleware requires AddHttpLogging()
                 href: aspnet-core/8.0/httpLogging-addhttplogging-requirement.md
               - name: ISystemClock is obsolete
                 href: aspnet-core/8.0/isystemclock-obsolete.md

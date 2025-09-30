@@ -12,7 +12,7 @@ Marshalling is needed because the types in the managed and unmanaged code are di
 
 ```csharp
 [LibraryImport("somenativelibrary.dll")]
-static extern int MethodA([MarshalAs(UnmanagedType.LPStr)] string parameter);
+static extern int MethodA([MarshalAs(UnmanagedType.LPUTF8Str)] string parameter);
 
 // or
 

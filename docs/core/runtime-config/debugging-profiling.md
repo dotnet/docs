@@ -52,11 +52,11 @@ This article details the settings you can use to configure .NET debugging and pr
 
 ## Export perf maps and jit dumps
 
-- Enables or disables selective enablement of perf maps or jit dumps. These files allow third party tools, such as the Linux `perf` tool, to identify call sites for dynamically generated code and precompiled ReadyToRun (R2R) modules.
+- Enables or disables perf maps or jit dumps. These files allow third party tools, such as the Linux `perf` tool, to provide human readable names for dynamically generated code and precompiled ReadyToRun (R2R) modules.
 - If you omit this setting, writing perf map and jit dump files are both disabled. This is equivalent to setting the value to `0`.
 - When perf maps are disabled, not all managed callsites will be properly resolved.
 - Depending on the Linux kernel version, both formats are supported by the `perf` tool.
-- Enabling perf maps or jit dumps causes a 10-20% overhead. To minimize performance impact, it's recommended to selectively enable either perf maps or jit dumps, but not both.
+- Enabling perf maps or jit dumps may cause up to a 20% overhead though often it is much less. To minimize performance impact, it's recommended to selectively enable either perf maps or jit dumps, but not both. The impact only occurs while the application is JITing code. Often that occurs at startup but it may occur later if the application is running a new code path for the first time.
 
 The following table compares perf maps and jit maps.
 

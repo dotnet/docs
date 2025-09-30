@@ -20,6 +20,55 @@ If you don't want to move to the .NET 5+ SDK, have a non-SDK-style .NET Framewor
 
 If rule violations are found by an analyzer, they're reported as a suggestion, warning, or error, depending on how each rule is [configured](configuration-options.md). Code analysis violations appear with the prefix "CA" or "IDE" to differentiate them from compiler errors.
 
+## Configure analyzers in legacy projects
+
+If you're using the [Microsoft.CodeAnalysis.NetAnalyzers NuGet package](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers) in a legacy (non-SDK-style) .NET Framework project, the MSBuild properties like [AnalysisMode](../../core/project-sdk/msbuild-props.md#analysismode) and [AnalysisLevel](../../core/project-sdk/msbuild-props.md#analysislevel) don't work. Instead, you can configure the analyzers using the following methods:
+
+### EditorConfig files
+
+You can use [EditorConfig files](configuration-files.md#editorconfig) to configure rule severity and other options. EditorConfig files work with both SDK-style and legacy projects. To configure rules:
+
+1. Add an *.editorconfig* file to your project's root directory.
+2. Configure rule severity using the `dotnet_diagnostic.<rule ID>.severity` syntax. For example:
+
+   ```ini
+   [*.cs]
+   # CA1822: Mark members as static
+   dotnet_diagnostic.CA1822.severity = warning
+   
+   # Enable all rules in the Security category
+   dotnet_analyzer_diagnostic.category-Security.severity = warning
+   ```
+
+For more information about EditorConfig configuration, see [Configuration files for code analysis rules](configuration-files.md).
+
+### Predefined configurations
+
+The [Microsoft.CodeAnalysis.NetAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers) package includes predefined EditorConfig files and ruleset files that enable specific categories of rules. These files are located in the package's *editorconfig* and *rulesets* subdirectories after installation. For example:
+
+- To enable all security rules, copy the file from *editorconfig/SecurityRulesEnabled/.editorconfig* to your project's root directory.
+- To use a ruleset file, copy the file from *rulesets/SecurityRulesEnabled.ruleset* to your project directory and reference it in your project file.
+
+For more information, see [Predefined configuration files](predefined-configurations.md).
+
+### Ruleset files
+
+> [!NOTE]
+> Ruleset files are deprecated in favor of EditorConfig files. However, they remain supported for legacy projects.
+
+You can use [ruleset files](/visualstudio/code-quality/using-rule-sets-to-group-code-analysis-rules) to configure analyzer rules. To use a ruleset:
+
+1. Create or copy a *.ruleset* file to your project directory.
+2. Reference the ruleset in your project file:
+
+   ```xml
+   <PropertyGroup>
+     <CodeAnalysisRuleSet>MyRules.ruleset</CodeAnalysisRuleSet>
+   </PropertyGroup>
+   ```
+
+For more information about ruleset files, see [Use rule sets to group code analysis rules](/visualstudio/code-quality/using-rule-sets-to-group-code-analysis-rules).
+
 ## Code quality analysis
 
 *Code quality analysis* ("CAxxxx") rules inspect your C# or Visual Basic code for security, performance, design and other issues. Analysis is enabled, by default, for projects that target .NET 5 or later. You can enable code analysis on projects that target earlier .NET versions by setting the [EnableNETAnalyzers](../../core/project-sdk/msbuild-props.md#enablenetanalyzers) property to `true`. You can also disable code analysis for your project by setting `EnableNETAnalyzers` to `false`.

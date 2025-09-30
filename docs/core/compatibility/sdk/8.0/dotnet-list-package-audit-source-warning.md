@@ -23,7 +23,7 @@ Starting in .NET 8, the command emits a warning:
 
 > Audit source '{0}' did not provide any vulnerability data.
 
-This warning helps users understand why certain sources may not influence the reported vulnerabilities.
+This warning helps users understand why certain sources might not influence the reported vulnerabilities.
 
 ## Type of breaking change
 

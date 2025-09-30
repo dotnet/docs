@@ -7,7 +7,7 @@ ms.custom: https://github.com/dotnet/docs/issues/42608
 ---
 # 'dotnet list package' warns if source doesn't provide vulnerability data
 
-When using `dotnet list package --vulnerable`, if a configured `auditsources` does not support `VulnerabilityInfoResource`, a warning is now shown to inform the user that the source doesn't provide vulnerability data.
+When using `dotnet list package --vulnerable`, if a configured `auditsources` doesn't support `VulnerabilityInfoResource`, a warning is now shown to inform the user that the source doesn't provide vulnerability data.
 
 ## Version introduced
 

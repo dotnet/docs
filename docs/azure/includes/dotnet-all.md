@@ -116,7 +116,7 @@
 | Text Translation | NuGet [1.0.0](https://www.nuget.org/packages/Azure.AI.Translation.Text/1.0.0) | [docs](/dotnet/api/overview/azure/AI.Translation.Text-readme) | GitHub [1.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.Translation.Text_1.0.0/sdk/translation/Azure.AI.Translation.Text/) |
 | Time Series Insights | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.IoT.TimeSeriesInsights/1.0.0-beta.1) | [docs](/dotnet/api/overview/azure/IoT.TimeSeriesInsights-readme?view=azure-dotnet-preview&amp;preserve-view=true) | GitHub [1.0.0-beta.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.IoT.TimeSeriesInsights_1.0.0-beta.1/sdk/timeseriesinsights/Azure.IoT.TimeSeriesInsights/) |
 | TimeZone | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.Maps.TimeZones/1.0.0-beta.1) | [docs](/dotnet/api/overview/azure/Maps.TimeZones-readme?view=azure-dotnet-preview&amp;preserve-view=true) | GitHub [1.0.0-beta.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Maps.TimeZones_1.0.0-beta.1/sdk/maps/Azure.Maps.TimeZones/) |
-| unknown | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Azure.AI.VoiceLive/1.0.0-beta.3) | [docs](/dotnet/api/overview/azure/AI.VoiceLive-readme?view=azure-dotnet-preview&amp;preserve-view=true) | GitHub [1.0.0-beta.3](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.VoiceLive_1.0.0-beta.3/sdk/ai/Azure.AI.VoiceLive/) |
+| unknown | NuGet [1.0.0-beta.4](https://www.nuget.org/packages/Azure.AI.VoiceLive/1.0.0-beta.4) | [docs](/dotnet/api/overview/azure/AI.VoiceLive-readme?view=azure-dotnet-preview&amp;preserve-view=true) | GitHub [1.0.0-beta.4](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.VoiceLive_1.0.0-beta.4/sdk/ai/Azure.AI.VoiceLive/) |
 | unknown | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.Analytics.OnlineExperimentation/1.0.0-beta.1) | [docs](/dotnet/api/overview/azure/Analytics.OnlineExperimentation-readme?view=azure-dotnet-preview&amp;preserve-view=true) | GitHub [1.0.0-beta.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Analytics.OnlineExperimentation_1.0.0-beta.1/sdk/onlineexperimentation/Azure.Analytics.OnlineExperimentation/) |
 | unknown | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.Projects/1.0.0-beta.1) | [docs](/dotnet/api/overview/azure/Projects-readme?view=azure-dotnet-preview&amp;preserve-view=true) | GitHub [1.0.0-beta.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Projects_1.0.0-beta.1/sdk/cloudmachine/Azure.Projects/) |
 | unknown | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.Projects.AI/1.0.0-beta.1) | [docs](/dotnet/api/overview/azure/Projects.AI-readme?view=azure-dotnet-preview&amp;preserve-view=true) | GitHub [1.0.0-beta.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Projects.AI_1.0.0-beta.1/sdk/cloudmachine/Azure.Projects.AI/) |
@@ -419,13 +419,13 @@
 | Speech Extension Telemetry | NuGet [1.46.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Telemetry/1.46.0) |  |  |
 | System Net Client Model | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/System.Net.ClientModel/1.0.0-beta.1) |  |  |
 | Unknown Display Name | NuGet [0.13.0-preview](https://www.nuget.org/packages/Azure.Iot.Operations.Connector/0.13.0-preview) |  |  |
-| Unknown Display Name | NuGet [0.8.2](https://www.nuget.org/packages/Azure.Mcp/0.8.2) |  |  |
-| Unknown Display Name | NuGet [0.8.2](https://www.nuget.org/packages/Azure.Mcp.linux-arm64/0.8.2) |  |  |
-| Unknown Display Name | NuGet [0.8.2](https://www.nuget.org/packages/Azure.Mcp.linux-x64/0.8.2) |  |  |
-| Unknown Display Name | NuGet [0.8.2](https://www.nuget.org/packages/Azure.Mcp.osx-arm64/0.8.2) |  |  |
-| Unknown Display Name | NuGet [0.8.2](https://www.nuget.org/packages/Azure.Mcp.osx-x64/0.8.2) |  |  |
-| Unknown Display Name | NuGet [0.8.2](https://www.nuget.org/packages/Azure.Mcp.win-arm64/0.8.2) |  |  |
-| Unknown Display Name | NuGet [0.8.2](https://www.nuget.org/packages/Azure.Mcp.win-x64/0.8.2) |  |  |
+| Unknown Display Name | NuGet [0.8.3](https://www.nuget.org/packages/Azure.Mcp/0.8.3) |  |  |
+| Unknown Display Name | NuGet [0.8.3](https://www.nuget.org/packages/Azure.Mcp.linux-arm64/0.8.3) |  |  |
+| Unknown Display Name | NuGet [0.8.3](https://www.nuget.org/packages/Azure.Mcp.linux-x64/0.8.3) |  |  |
+| Unknown Display Name | NuGet [0.8.3](https://www.nuget.org/packages/Azure.Mcp.osx-arm64/0.8.3) |  |  |
+| Unknown Display Name | NuGet [0.8.3](https://www.nuget.org/packages/Azure.Mcp.osx-x64/0.8.3) |  |  |
+| Unknown Display Name | NuGet [0.8.3](https://www.nuget.org/packages/Azure.Mcp.win-arm64/0.8.3) |  |  |
+| Unknown Display Name | NuGet [0.8.3](https://www.nuget.org/packages/Azure.Mcp.win-x64/0.8.3) |  |  |
 | Unknown Display Name | NuGet [0.1.2-preview.2](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Aot/0.1.2-preview.2) |  |  |
 | Unknown Display Name | NuGet [0.2.802](https://www.nuget.org/packages/Microsoft.Azure.Mcp.AzTypes.Internal.Compact/0.2.802) |  |  |
 | Unknown Display Name | NuGet [1.1.2-preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.AzureCosmosDb.Mongo/1.1.2-preview) |  |  |
@@ -575,7 +575,7 @@
 | Microsoft.Azure.Functions.Worker.Extensions.EventGrid | NuGet [3.6.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.EventGrid/3.6.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.EventHubs | NuGet [6.5.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.EventHubs/6.5.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Http | NuGet [3.3.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Http/3.3.0) |  |  |
-| Microsoft.Azure.Functions.Worker.Extensions.Kafka | NuGet [4.1.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Kafka/4.1.2) |  |  |
+| Microsoft.Azure.Functions.Worker.Extensions.Kafka | NuGet [4.1.3](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Kafka/4.1.3) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Kusto | NuGet [1.0.13-Preview](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Kusto/1.0.13-Preview) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.OpenApi | NuGet [1.4.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.OpenApi/1.4.0)<br>NuGet [2.0.0-preview2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.OpenApi/2.0.0-preview2) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.RabbitMQ | NuGet [2.1.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.RabbitMQ/2.1.0) |  |  |

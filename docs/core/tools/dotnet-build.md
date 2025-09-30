@@ -1,20 +1,20 @@
 ---
 title: dotnet build command
 description: The dotnet build command builds a project and all of its dependencies.
-ms.date: 11/27/2023
+ms.date: 09/24/2025
 ---
 # dotnet build
 
-**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
+**This article applies to:** ✔️ .NET 6 and later versions
 
 ## Name
 
-`dotnet build` - Builds a project and all of its dependencies.
+`dotnet build` - Builds a project, solution, or file-based app and all of its dependencies.
 
 ## Synopsis
 
 ```dotnetcli
-dotnet build [<PROJECT>|<SOLUTION>] [-a|--arch <ARCHITECTURE>]
+dotnet build [<PROJECT>|<SOLUTION>|<FILE>] [-a|--arch <ARCHITECTURE>]
     [--artifacts-path <ARTIFACTS_DIR>]
     [-c|--configuration <CONFIGURATION>] [-f|--framework <FRAMEWORK>]
     [--disable-build-servers]
@@ -23,7 +23,7 @@ dotnet build [<PROJECT>|<SOLUTION>] [-a|--arch <ARCHITECTURE>]
     [-o|--output <OUTPUT_DIRECTORY>]
     [-p|--property:<PROPERTYNAME>=<VALUE>]
     [-r|--runtime <RUNTIME_IDENTIFIER>]
-    [--self-contained [true|false]] [--source <SOURCE>]
+    [-sc|--self-contained [true|false]] [--source <SOURCE>]
     [--tl:[auto|on|off]] [--use-current-runtime, --ucr [true|false]]
     [-v|--verbosity <LEVEL>] [--version-suffix <VERSION_SUFFIX>]
 
@@ -32,15 +32,13 @@ dotnet build -h|--help
 
 ## Description
 
-The `dotnet build` command builds the project and its dependencies into a set of binaries. The binaries include the project's code in Intermediate Language (IL) files with a *.dll* extension.  Depending on the project type and settings, other files may be included, such as:
+The `dotnet build` command builds the project, solution, or file-based app and its dependencies into a set of binaries. The binaries include the project's code in Intermediate Language (IL) files with a *.dll* extension. Depending on the project type and settings, other files may be included, such as:
 
-- An executable that can be used to run the application, if the project type is an executable targeting .NET Core 3.0 or later.
+- An executable that can be used to run the application.
 - Symbol files used for debugging with a *.pdb* extension.
 - A *.deps.json* file, which lists the dependencies of the application or library.
 - A *.runtimeconfig.json* file, which specifies the shared runtime and its version for an application.
 - Other libraries that the project depends on (via project references or NuGet package references).
-
-For executable projects targeting versions earlier than .NET Core 3.0, library dependencies from NuGet are typically NOT copied to the output folder.  They're resolved from the NuGet global packages folder at run time. With that in mind, the product of `dotnet build` isn't ready to be transferred to another machine to run. To create a version of the application that can be deployed, you need to publish it (for example, with the [dotnet publish](dotnet-publish.md) command). For more information, see [.NET Application Deployment](../deploying/index.md).
 
 For executable projects targeting .NET Core 3.0 and later, library dependencies are copied to the output folder. This means that if there isn't any other publish-specific logic (such as Web projects have), the build output should be deployable.
 
@@ -64,7 +62,7 @@ To produce a library, omit the `<OutputType>` property or change its value to `L
 
 ### MSBuild
 
-`dotnet build` uses MSBuild to build the project, so it supports both parallel and incremental builds. For more information, see [Incremental Builds](/visualstudio/msbuild/incremental-builds).
+`dotnet build` uses MSBuild to build the project, solution, or file-based app. It supports both parallel and incremental builds. For more information, see [Incremental Builds](/visualstudio/msbuild/incremental-builds).
 
 In addition to its options, the `dotnet build` command accepts MSBuild options, such as `-p` for setting properties or `-l` to define a logger. For more information about these options, see the [MSBuild Command-Line Reference](/visualstudio/msbuild/msbuild-command-line-reference). Or you can also use the [dotnet msbuild](dotnet-msbuild.md) command.
 
@@ -77,9 +75,7 @@ Running `dotnet build` is equivalent to running `dotnet msbuild -restore`; howev
 
 ## Arguments
 
-`PROJECT | SOLUTION`
-
-The project or solution file to build. If a project or solution file isn't specified, MSBuild searches the current working directory for a file that has a file extension that ends in either *proj* or *sln* and uses that file.
+[!INCLUDE [arguments-project-solution-file](../../../includes/cli-arguments-project-solution-file.md)]
 
 ## Options
 
@@ -175,6 +171,14 @@ The project or solution file to build. If a project or solution file isn't speci
   ```dotnetcli
   dotnet build
   ```
+
+- Build a file-based app:
+
+  ```dotnetcli
+  dotnet build MyProject.cs
+  ```
+
+  File-based app support was added in .NET SDK 10.0.100.
 
 - Build a project and its dependencies using Release configuration:
 

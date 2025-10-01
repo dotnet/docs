@@ -3,8 +3,8 @@ title: What's new in the SDK and tooling for .NET 8
 description: Learn about the new .NET SDK and tooling features introduced in .NET 8.
 titleSuffix: ""
 ms.date: 11/14/2023
-ms.topic: whats-new
 ms.custom: linux-related-content
+ms.update-cycle: 3650-days
 ---
 # What's new in the SDK and tooling for .NET 8
 

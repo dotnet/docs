@@ -3,8 +3,8 @@ title: What's new in .NET 10 runtime
 description: Learn about the new features introduced in the .NET 10 runtime.
 titleSuffix: ""
 ms.date: 09/09/2025
-ms.topic: whats-new
 ai-usage: ai-assisted
+ms.update-cycle: 3650-days
 ---
 # What's new in the .NET 10 runtime
 

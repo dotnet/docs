@@ -705,6 +705,10 @@ API Controller with or without read/write actions.
   The roll-forward policy to use when selecting an SDK version, either as a fallback when a specific SDK version is missing or as a directive to use a later version.
   For more information, see [global-json](global-json.md#rollforward).
 
+- **`--test-runner <TEST_RUNNER>`**
+
+  This option was introduced in .NET 10 SDK and specifies the test runner to use, either VSTest or Microsoft.Testing.Platform. The default is VSTest.
+
 ### `sln`
 
 Creates an empty solution file containing no projects.

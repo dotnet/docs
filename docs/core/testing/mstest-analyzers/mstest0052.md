@@ -1,29 +1,29 @@
 ---
-title: "MSTEST0052: Prefer DynamicDataSourceType.AutoDetect"
-description: "Learn about code analysis rule MSTEST0052: Prefer DynamicDataSourceType.AutoDetect"
-ms.date: 01/29/2025
+title: "MSTEST0052: Avoid passing an explicit 'DynamicDataSourceType' and use the default auto detect behavior"
+description: "Learn about code analysis rule MSTEST0052: Avoid passing an explicit 'DynamicDataSourceType' and use the default auto detect behavior"
+ms.date: 10/01/2025
 f1_keywords:
 - MSTEST0052
-- PreferDynamicDataSourceTypeAutoDetectAnalyzer
+- AvoidExplicitDynamicDataSourceTypeAnalyzer
 helpviewer_keywords:
-- PreferDynamicDataSourceTypeAutoDetectAnalyzer
+- AvoidExplicitDynamicDataSourceTypeAnalyzer
 - MSTEST0052
-author: Evangelink
-ms.author: amauryleve
+author: Youssef1313
+ms.author: ygerges
 ai-usage: ai-generated
 ---
-# MSTEST0052: Prefer DynamicDataSourceType.AutoDetect
+# MSTEST0052: Avoid passing an explicit 'DynamicDataSourceType' and use the default auto detect behavior
 
-| Property                            | Value                                                                                    |
-|-------------------------------------|------------------------------------------------------------------------------------------|
-| **Rule ID**                         | MSTEST0052                                                                               |
-| **Title**                           | Prefer DynamicDataSourceType.AutoDetect                                                  |
-| **Category**                        | Usage                                                                                    |
-| **Fix is breaking or non-breaking** | Non-breaking                                                                             |
-| **Enabled by default**              | Yes                                                                                      |
-| **Default severity**                | Warning                                                                                  |
-| **Introduced in version**           | 3.10.0                                                                                   |
-| **Is there a code fix**             | Yes                                                                                      |
+| Property                            | Value                                                                                      |
+|-------------------------------------|--------------------------------------------------------------------------------------------|
+| **Rule ID**                         | MSTEST0052                                                                                 |
+| **Title**                           | Avoid passing an explicit 'DynamicDataSourceType' and use the default auto detect behavior |
+| **Category**                        | Usage                                                                                      |
+| **Fix is breaking or non-breaking** | Non-breaking                                                                               |
+| **Enabled by default**              | Yes                                                                                        |
+| **Default severity**                | Warning                                                                                    |
+| **Introduced in version**           | 3.11.0                                                                                     |
+| **Is there a code fix**             | Yes                                                                                        |
 
 ## Cause
 
@@ -31,7 +31,7 @@ A <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DynamicDataAttribute> expli
 
 ## Rule description
 
-Starting with MSTest 3.8, `DynamicDataSourceType.AutoDetect` is the default value for the `DynamicDataSourceType` parameter in the `DynamicDataAttribute` constructor. This enhancement automatically detects whether the data source is a property or method, eliminating the need to explicitly specify the source type. Using `AutoDetect` makes the code more maintainable and reduces verbosity.
+Starting with MSTest 3.8, `DynamicDataSourceType.AutoDetect` is the default value for the `DynamicDataSourceType` parameter in the `DynamicDataAttribute` constructor. This enhancement automatically detects whether the data source is a property, method, or field, eliminating the need to explicitly specify the source type. Using `AutoDetect` makes the code more maintainable and reduces verbosity.
 
 ## How to fix violations
 
@@ -73,4 +73,4 @@ public void TestMethod(int a, int b, int expected)
 
 ## When to suppress warnings
 
-You can suppress warnings from this rule if you're using a version of MSTest earlier than 3.8, where `AutoDetect` isn't available. However, consider upgrading to MSTest 3.8 or later to take advantage of this feature.
+Don't suppress warnings from this rule. Following the analyzer suggestion leads to less noise in the test code.

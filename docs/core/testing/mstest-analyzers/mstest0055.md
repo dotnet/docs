@@ -1,43 +1,41 @@
 ---
-title: "MSTEST0055: String method return value should not be ignored"
-description: "Learn about code analysis rule MSTEST0055: String method return value should not be ignored"
-ms.date: 01/29/2025
+title: "MSTEST0055: Do not ignore the return value of string methods"
+description: "Learn about code analysis rule MSTEST0055: Do not ignore the return value of string methods"
+ms.date: 10/01/2025
 f1_keywords:
 - MSTEST0055
 - IgnoreStringMethodReturnValueAnalyzer
 helpviewer_keywords:
 - IgnoreStringMethodReturnValueAnalyzer
 - MSTEST0055
-author: Evangelink
-ms.author: amauryleve
+author: Youssef1313
+ms.author: ygerges
 ai-usage: ai-generated
 ---
-# MSTEST0055: String method return value should not be ignored
+# MSTEST0055: Do not ignore the return value of string methods
 
 | Property                            | Value                                                                                    |
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | **Rule ID**                         | MSTEST0055                                                                               |
-| **Title**                           | String method return value should not be ignored                                         |
+| **Title**                           | Do not ignore the return value of string methods                                         |
 | **Category**                        | Usage                                                                                    |
 | **Fix is breaking or non-breaking** | Non-breaking                                                                             |
 | **Enabled by default**              | Yes                                                                                      |
 | **Default severity**                | Warning                                                                                  |
-| **Introduced in version**           | 3.10.0                                                                                   |
+| **Introduced in version**           | 3.11.0                                                                                   |
 | **Is there a code fix**             | No                                                                                       |
 
 ## Cause
 
-A test method calls a string manipulation method (such as `ToUpper`, `ToLower`, `Trim`, `Replace`, `Substring`) but doesn't use the return value.
+A call to `string.Contains`, `string.StartsWith`, or `string.EndsWith` is made and its return value is ignored.
 
 ## Rule description
 
-Strings in .NET are immutable. Methods like `ToUpper()`, `ToLower()`, `Trim()`, `Replace()`, and `Substring()` don't modify the original string; instead, they return a new string with the modifications applied. Calling these methods without using the return value has no effect and is likely a programming error.
-
-This issue is particularly common in tests where developers might mistakenly believe they're modifying a string in place, leading to incorrect test expectations.
+Those methods don't have any side effects and ignoring the return result is always wrong. It's more likely that the original intent of those calls are to assert that they are true.
 
 ## How to fix violations
 
-Capture and use the return value from string methods.
+Capture and use the return value from string methods, or use a proper assertion method.
 
 For example, change this:
 
@@ -45,9 +43,8 @@ For example, change this:
 [TestMethod]
 public void TestMethod()
 {
-    string value = "  hello world  ";
-    value.Trim(); // Return value is ignored
-    Assert.AreEqual("hello world", value); // This will fail
+    string value = "Hello world";
+    value.StartsWith("Hello");
 }
 ```
 
@@ -57,23 +54,11 @@ To this:
 [TestMethod]
 public void TestMethod()
 {
-    string value = "  hello world  ";
-    value = value.Trim(); // Use the return value
-    Assert.AreEqual("hello world", value);
-}
-```
-
-Or use the return value directly:
-
-```csharp
-[TestMethod]
-public void TestMethod()
-{
-    string value = "  hello world  ";
-    Assert.AreEqual("hello world", value.Trim());
+    string value = "Hello world";
+    Assert.IsTrue(value.StartsWith("Hello")); // or, Assert.StartsWith("Hello", value);
 }
 ```
 
 ## When to suppress warnings
 
-Don't suppress warnings from this rule. Calling string methods without using their return value is always a bug because strings are immutable in .NET.
+Don't suppress warnings from this rule. Calling string methods without using their return value is always a bug or a dead code.

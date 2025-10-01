@@ -1,28 +1,28 @@
 ---
-title: "MSTEST0053: Avoid Assert method format parameters"
-description: "Learn about code analysis rule MSTEST0053: Avoid Assert method format parameters"
-ms.date: 01/29/2025
+title: "MSTEST0053: Avoid using Assert methods with format parameters"
+description: "Learn about code analysis rule MSTEST0053: Avoid using Assert methods with format parameters"
+ms.date: 10/01/2025
 f1_keywords:
 - MSTEST0053
 - AvoidAssertFormatParametersAnalyzer
 helpviewer_keywords:
 - AvoidAssertFormatParametersAnalyzer
 - MSTEST0053
-author: Evangelink
-ms.author: amauryleve
+author: Youssef1313
+ms.author: ygerges
 ai-usage: ai-generated
 ---
-# MSTEST0053: Avoid Assert method format parameters
+# MSTEST0053: Avoid using Assert methods with format parameters
 
 | Property                            | Value                                                                                    |
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | **Rule ID**                         | MSTEST0053                                                                               |
-| **Title**                           | Avoid Assert method format parameters                                                    |
+| **Title**                           | Avoid using Assert methods with format parameters                                        |
 | **Category**                        | Usage                                                                                    |
 | **Fix is breaking or non-breaking** | Non-breaking                                                                             |
 | **Enabled by default**              | Yes                                                                                      |
 | **Default severity**                | Warning                                                                                  |
-| **Introduced in version**           | 3.10.0                                                                                   |
+| **Introduced in version**           | 3.11.0                                                                                   |
 | **Is there a code fix**             | Yes                                                                                      |
 
 ## Cause
@@ -31,7 +31,7 @@ An assertion method call uses the `message` and `parameters` arguments for strin
 
 ## Rule description
 
-Older versions of MSTest assertion methods accepted a `message` parameter and a `params object[]` array for formatting the message. Modern C# supports string interpolation, which provides better compile-time checking, readability, and performance. The newer assertion method overloads support interpolated strings directly, making the format parameters obsolete.
+Using the assertion overloads that accept `message` and `parameters` are no longer recommended. These overloads are removed in MSTest v4. It's advised to use string interpolation instead.
 
 ## How to fix violations
 
@@ -63,4 +63,4 @@ public void TestMethod()
 
 ## When to suppress warnings
 
-Don't suppress warnings from this rule. String interpolation provides better compile-time safety and readability compared to format parameters.
+Don't suppress warnings from this rule. These overloads are removed in MSTest v4 and are not recommended.

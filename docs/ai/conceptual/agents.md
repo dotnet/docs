@@ -4,6 +4,7 @@ description: Introduction to agents
 author: luisquintanilla
 ms.author: luquinta
 ms.date: 09/29/2025
+ms.topic: concept-article
 ---
 
 # Agents

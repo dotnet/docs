@@ -120,12 +120,6 @@ sequenceDiagram
 
 The building blocks in Microsoft.Extensions.AI as well as Microsoft.Extensions.VectorData provide you with the foundations for agents by providing modular components for AI models, tools, and data.
 
-Using those same foundations, you can leverage SDKs such as:
+These components serve as the foundation for Microsoft Agent Framework. 
 
-### Agent SDKs
-
-- [Semantic Kernel Agent Framework](https://learn.microsoft.com/semantic-kernel/frameworks/agent/?pivots=programming-language-csharp)
-
-### Workflow SDKs
-
-- [Semantic Kernel Process Framework](https://learn.microsoft.com/semantic-kernel/frameworks/process/process-framework)
+See the [Microsoft Agent Framework documentation](/agent-framework/overview/agent-framework-overview) to learn more. 

@@ -39,7 +39,7 @@ Here's how to do it:
 - The same pattern applies for the `<TargetFrameworks>` property if it is being used.
 
 > [!TIP]
-> The [GitHub Copilot app modernization - upgrade](../porting/github-copilot-app-modernization-overview.md) capability can make these changes automatically.
+> The [GitHub Copilot app modernization - upgrade](../porting/github-copilot-app-modernization/overview.md) capability can make these changes automatically.
 
 The next step is to build the project (or solution) with the new SDK. If additional changes are needed, the SDK will provide warnings and errors that guide you.
 

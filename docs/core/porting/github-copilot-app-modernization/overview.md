@@ -170,5 +170,5 @@ The tool only collects data about project types, intent to upgrade, and upgrade 
 ## Related content
 
 - [How to upgrade a .NET app with GitHub Copilot app modernization](how-to-upgrade-with-github-copilot.md)
-- [Quickstart to migrate a .NET Project](../../azure/migration/appmod/quickstart.md)
+- [Quickstart to migrate a .NET Project](../../../azure/migration/appmod/quickstart.md)
 - [GitHub Copilot app modernization FAQ](faq.yml)

@@ -21,13 +21,13 @@ The modernization agent analyzes your projects and dependencies, creates an upgr
 
 Before you begin, ensure you have the following requirements:
 
-[!INCLUDE[github-copilot-app-mod-prereqs](../../includes/github-copilot-app-mod-prereqs.md)]
+[!INCLUDE[github-copilot-app-mod-prereqs](./includes/prereqs.md)]
 
 ## Start the upgrade process
 
 The first step to upgrading is generating a plan by interacting with GitHub Copilot. Follow these steps to initiate the upgrade:
 
-[!INCLUDE[github-copilot-how-to-initiate](./includes/github-copilot-how-to-initiate.md)]
+[!INCLUDE[github-copilot-how-to-initiate](./includes/how-to-initiate.md)]
 
 ## Generate an upgrade plan
 
@@ -153,4 +153,4 @@ After completing the upgrade process:
 
 ## Related content
 
-- [GitHub Copilot app modernization FAQ](faq.yml)
+- [GitHub Copilot app modernization FAQ](../faq.yml)

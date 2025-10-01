@@ -133,7 +133,7 @@ There are three specific settings that `dotnet restore` ignores:
 
 - **`--no-http-cache`**
 
-  Disable Http Caching for packages.
+  Disable HTTP caching for packages.
 
 - **`--os`**
 

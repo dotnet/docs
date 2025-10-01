@@ -182,7 +182,7 @@ For more information, see the following resources:
 
 - **`--sc|--self-contained`**
 
-  Publishes the .NET runtime with the application so the runtime doesn't need to be installed on the target machine. The default is `false`. However, when targeting .NET 7 or lower, the default is `true` if a runtime identifier is specified. Available since .NET 6 SDK.
+  Publish the .NET runtime with your application so the runtime doesn't need to be installed on the target machine. The default is `true`.
 
 - **`--no-self-contained`**
 

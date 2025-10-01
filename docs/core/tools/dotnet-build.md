@@ -111,9 +111,7 @@ Running `dotnet build` is equivalent to running `dotnet msbuild -restore`; howev
 
   Doesn't display the startup banner or the copyright message.
 
-- **`--no-self-contained`**
-
-  Equivalent to `--self-contained false`.
+[!INCLUDE [no-self-contained](../../../includes/cli-no-self-contained.md)]
 
 - **`-o|--output <OUTPUT_DIRECTORY>`**
 
@@ -138,9 +136,7 @@ Running `dotnet build` is equivalent to running `dotnet msbuild -restore`; howev
 
   Specifies the target runtime. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md). If you use this option with .NET 6 SDK, use `--self-contained` or `--no-self-contained` also. If not specified, the default is to build for the current OS and architecture.
 
-- **`--sc|--self-contained`**
-
-  Publish the .NET runtime with your application so the runtime doesn't need to be installed on the target machine. The default is `true`.
+[!INCLUDE [self-contained](../../../includes/cli-self-contained.md)]
 
 - **`--source <SOURCE>`**
 
@@ -148,13 +144,9 @@ Running `dotnet build` is equivalent to running `dotnet msbuild -restore`; howev
 
 [!INCLUDE [tl](../../../includes/cli-tl.md)]
 
-- **`--ucr|--use-current-runtime`**
+[!INCLUDE [use-current-runtime](../../../includes/cli-use-current-runtime.md)]
 
-  Use current runtime as the target runtime. The default is `false`.
-
-- **`-v|--verbosity <LEVEL>`**
-
-  Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. The default is `minimal`. By default, MSBuild displays warnings and errors at all verbosity levels. To exclude warnings, use `/property:WarningLevel=0`. For more information, see <xref:Microsoft.Build.Framework.LoggerVerbosity> and [WarningLevel](../../csharp/language-reference/compiler-options/errors-warnings.md#warninglevel).
+[!INCLUDE [verbosity](../../../includes/cli-verbosity.md)]
 
 - **`--version-suffix <VERSION_SUFFIX>`**
 

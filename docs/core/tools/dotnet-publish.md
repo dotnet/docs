@@ -180,13 +180,9 @@ For more information, see the following resources:
 
 [!INCLUDE [os](../../../includes/cli-os.md)]
 
-- **`--sc|--self-contained`**
+[!INCLUDE [self-contained](../../../includes/cli-self-contained.md)]
 
-  Publish the .NET runtime with your application so the runtime doesn't need to be installed on the target machine. The default is `true`.
-
-- **`--no-self-contained`**
-
-  Equivalent to `--self-contained false`.
+[!INCLUDE [no-self-contained](../../../includes/cli-no-self-contained.md)]
 
 - **`--source <SOURCE>`**
 
@@ -198,9 +194,7 @@ For more information, see the following resources:
 
 [!INCLUDE [tl](../../../includes/cli-tl.md)]
 
-- **`--ucr|--use-current-runtime`**
-
-  Use current runtime as the target runtime. The default is `false`.
+[!INCLUDE [use-current-runtime](../../../includes/cli-use-current-runtime.md)]
 
 [!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
 

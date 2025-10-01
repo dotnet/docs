@@ -82,9 +82,7 @@ None of the options below are required for the `dotnet format` command to succee
 
   Displays version information.
 
-- **`-v|--verbosity <LEVEL>`**
-
-  Sets the verbosity level. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. Default value is `m[inimal]`.
+[!INCLUDE [verbosity](../../../includes/cli-verbosity.md)]
 
 [!INCLUDE [help](../../../includes/cli-help.md)]
 

@@ -71,9 +71,7 @@ As an alternative to disabling response compression, manually add the browser re
 
   Lists all discovered files without starting the watcher.
 
-- **`--no-self-contained`**
-
-  Publishes the application as a framework dependent application. A compatible .NET runtime must be installed on the target machine to run the application. Available since .NET 6 SDK.
+[!INCLUDE [no-self-contained](../../../includes/cli-no-self-contained.md)]
 
 - **`--no-hot-reload`**
 
@@ -87,9 +85,7 @@ As an alternative to disabling response compression, manually add the browser re
 
   Specifies the path of the project file to run (folder only or including the project file name). If not specified, it defaults to the current directory.
 
-- **`--sc|--self-contained`**
-
-  Publishes the .NET runtime with the application so the runtime doesn't need to be installed on the target machine. The default is `false`. However, when targeting .NET 7 or lower, the default is `true` if a runtime identifier is specified. Available since .NET 6 SDK.
+[!INCLUDE [self-contained](../../../includes/cli-self-contained.md)]
 
 - **`-q|--quiet`**
 

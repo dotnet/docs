@@ -120,6 +120,6 @@ sequenceDiagram
 
 The building blocks in Microsoft.Extensions.AI as well as Microsoft.Extensions.VectorData provide you with the foundations for agents by providing modular components for AI models, tools, and data.
 
-These components serve as the foundation for Microsoft Agent Framework. 
+These components serve as the foundation for Microsoft Agent Framework.
 
-See the [Microsoft Agent Framework documentation](/agent-framework/overview/agent-framework-overview) to learn more. 
+See the [Microsoft Agent Framework documentation](/agent-framework/overview/agent-framework-overview) to learn more.

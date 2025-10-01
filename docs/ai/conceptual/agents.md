@@ -60,62 +60,25 @@ Agentic workflows can be orchestrated in a variety of ways. The following are a 
 
 Agents process tasks one after another, passing results forward.
 
-```mermaid
-graph TD
-    A[Agent A] --> B[Agent B]
-    B --> C[Agent C]
-    C --> D[Final Output]
-```
+![Sequential agent orchestration: Task Input → Agent A → Agent B → Agent C → Final Output](../media/agents/sequential-workflow.png)
 
 #### Concurrent
 
 Agents work in parallel, each handling different aspects of the task.
 
-```mermaid
-graph TD
-    A[Task Input] --> B1[Agent A]
-    A --> B2[Agent B]
-    A --> B3[Agent C]
-    B1 --> C[Aggregate Results]
-    B2 --> C
-    B3 --> C
-    C --> D[Final Output]
-```
+![Concurrent agent orchestration: Task Input → Agents A, B, C → Aggregate Results → Final Output](../media/agents/concurrent-workflow.png)
 
 #### Handoff
 
 Responsibility shifts from one agent to another based on conditions or outcomes.
 
-```mermaid
-graph TD
-    A[Start Task] --> B{Agent A Decision}
-    B -- Success --> C[Agent A Continues]
-    B -- Needs Help --> D[Agent B Takes Over]
-    D --> E{Agent B Decision}
-    E -- Escalate --> F[Agent C Takes Over]
-    E -- Complete --> G[Agent B Completes Task]
-    C --> H[Final Output]
-    F --> H
-    G --> H
-```
+![Handoff orchestration: Task Input → Agent A Decision → Agent B or Agent A → Agent B Decision → Agent C or Agent B → Final Output](../media/agents/handoff-workflow.png)
 
 #### Group Chat
 
 Agents collaborate in a shared conversation, exchanging insights in real-time.
 
-```mermaid
-sequenceDiagram
-    participant User
-    participant AgentA
-    participant AgentB
-    participant AgentC
-
-    User->>GroupChat: Start Task Discussion
-    AgentA->>GroupChat: Shares initial analysis
-    AgentB->>GroupChat: Adds additional context
-    AgentC->>GroupChat: Suggests strategy
-    GroupChat->>User: Final Collaborative Output
-```
+![Group chat orchestration: User and Agents A, B, C collaborate via GroupChat to produce final output](../media/agents/groupchat-workflow.png)
 
 ## How can I get started building agents in .NET?
 

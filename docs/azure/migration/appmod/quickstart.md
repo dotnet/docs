@@ -108,4 +108,4 @@ You can choose one of the predefined options and send it in the chat:
 ## Next Steps
 
 - [Predefined Tasks](predefined-tasks.md)
-- [Frequently Asked Questions](../../../core/porting/github-copilot-app-modernization-faq.yml)
+- [Frequently Asked Questions](../../../core/porting/github-copilot-app-modernization/faq.yml)

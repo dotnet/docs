@@ -16,30 +16,30 @@ landingContent:
       - linkListType: overview
         links:
           - text: Upgrade .NET apps
-            url: ../../core/porting/github-copilot-app-modernization/overview.md
+            url: overview.md
           - text: FAQ
-            url: ../../core/porting/github-copilot-app-modernization/faq.yml
+            url: faq.yml
       - linkListType: how-to-guide
         links:
           - text: How to upgrade a .NET app
-            url: ../../core/porting/github-copilot-app-modernization/how-to-upgrade-with-github-copilot.md
+            url: how-to-upgrade-with-github-copilot.md
 
   - title: Migrate .NET apps to Azure
     linkLists:
       - linkListType: overview
         links:
           - text: Migrate .NET apps to Azure (app modernization)
-            url: ../../azure/migration/appmod/overview.md?toc=/dotnet/navigate/github-copilot-modernize/toc.json&bc=/dotnet/breadcrumb/toc.json
+            url: ../../../azure/migration/appmod/overview.md?toc=/dotnet/navigate/github-copilot-modernize/toc.json&bc=/dotnet/breadcrumb/toc.json
           - text: Azure migration quickstart
-            url: ../../azure/migration/appmod/quickstart.md?toc=/dotnet/navigate/github-copilot-modernize/toc.json&bc=/dotnet/breadcrumb/toc.json
+            url: ../../../azure/migration/appmod/quickstart.md?toc=/dotnet/navigate/github-copilot-modernize/toc.json&bc=/dotnet/breadcrumb/toc.json
       - linkListType: sample
         links:
           - text: Migration sample
-            url: ../../azure/migration/appmod/sample.md?toc=/dotnet/navigate/github-copilot-modernize/toc.json&bc=/dotnet/breadcrumb/toc.json
+            url: ../../../azure/migration/appmod/sample.md?toc=/dotnet/navigate/github-copilot-modernize/toc.json&bc=/dotnet/breadcrumb/toc.json
       - linkListType: concept
         links:
           - text: Azure migration FAQ
-            url: ../../azure/migration/appmod/faq.md?toc=/dotnet/navigate/github-copilot-modernize/toc.json&bc=/dotnet/breadcrumb/toc.json
+            url: ../../../azure/migration/appmod/faq.md?toc=/dotnet/navigate/github-copilot-modernize/toc.json&bc=/dotnet/breadcrumb/toc.json
 
   - title: Get help and community
     linkLists:

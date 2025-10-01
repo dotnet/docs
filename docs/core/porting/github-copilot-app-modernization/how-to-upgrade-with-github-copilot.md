@@ -153,4 +153,4 @@ After completing the upgrade process:
 
 ## Related content
 
-- [GitHub Copilot app modernization FAQ](github-copilot-app-modernization-faq.yml)
+- [GitHub Copilot app modernization FAQ](github-copilot-app-modernization/faq.yml)

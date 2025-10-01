@@ -125,7 +125,7 @@ Even if you use a tool to help port your application, you should review the [Con
 
 ### GitHub Copilot app modernization assistant
 
-[GitHub Copilot app modernization](github-copilot-app-modernization-overview.md) is a GitHub Copilot chat assistant that helps you plan and upgrade projects to newer versions of .NET, migrate to Azure, update dependencies, and apply code fixes. Azure migration is powered by [Application and code assessment for .NET](../../azure/migration/appcat/app-code-assessment-toolkit.md)
+[GitHub Copilot app modernization](github-copilot-app-modernization/overview.md) is a GitHub Copilot chat assistant that helps you plan and upgrade projects to newer versions of .NET, migrate to Azure, update dependencies, and apply code fixes. Azure migration is powered by [Application and code assessment for .NET](../../azure/migration/appcat/app-code-assessment-toolkit.md)
 
 This chat assistant supports the following upgrade paths:
 
@@ -190,7 +190,7 @@ For more information, see [Platform compatibility analyzer](../../standard/analy
 
 When porting your application to .NET, consider the following suggestions in order:
 
-✔️ CONSIDER using the [GitHub Copilot app modernization](github-copilot-app-modernization-overview.md) to upgrade your projects. GitHub Copilot is powerful at identifying and fixing incompatibilities when porting. It automates most of the manual steps detailed in this article and gives you a great starting point for continuing your upgrade path.
+✔️ CONSIDER using the [GitHub Copilot app modernization](github-copilot-app-modernization/overview.md) to upgrade your projects. GitHub Copilot is powerful at identifying and fixing incompatibilities when porting. It automates most of the manual steps detailed in this article and gives you a great starting point for continuing your upgrade path.
 
 ✔️ CONSIDER examining your dependencies first. Your dependencies must target .NET, .NET Standard, or .NET Core.
 
@@ -210,7 +210,7 @@ When porting your application to .NET, consider the following suggestions in ord
 
 ## See also
 
-- [What is GitHub Copilot app modernization](github-copilot-app-modernization-overview.md)
+- [What is GitHub Copilot app modernization](github-copilot-app-modernization/overview.md)
 - [ASP.NET to ASP.NET Core migration](/aspnet/core/migration/proper-to-2x)
 - [Upgrade a WPF desktop app to .NET](/dotnet/desktop/wpf/migration/)
 - [Upgrade a Windows Forms app to .NET](/dotnet/desktop/winforms/migration/)

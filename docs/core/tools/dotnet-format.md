@@ -18,7 +18,7 @@ dotnet format [<PROJECT | SOLUTION>]
   [--binarylog <BINARY-LOG-PATH>] [--diagnostics <DIAGNOSTICS>]
   [--exclude <EXCLUDE>] [--exclude-diagnostics <EXCLUDE-DIAGNOSTICS>]
   [--include <INCLUDE>] [--include-generated]
-  [--no-restore] [--report <REPORT-PATH>] [--severity <SEVERITY>]
+  [--no-restore] [--report <REPORT-PATH>] [--severity <LEVEL>]
   [-v|--verbosity <LEVEL>] [--verify-no-changes] [--version]
 
 dotnet format -h|--help
@@ -70,7 +70,7 @@ None of the options below are required for the `dotnet format` command to succee
 
   Produces a JSON report in the directory specified by `<REPORT_PATH>`.
 
-- **`--severity`**
+- **`--severity <LEVEL>`**
 
   The minimum severity of diagnostics to fix. Allowed values are `info`, `warn`, and `error`. The default value is `warn`.
 
@@ -118,7 +118,7 @@ The `dotnet format style` subcommand only runs formatting rules associated with 
 
   A space-separated list of diagnostic IDs to use as a filter when fixing code style issues. Default value is whichever IDs are listed in the *.editorconfig* file. For a list of built-in code style analyzer rule IDs that you can specify, see the [list of IDs for code-analysis style rules](../../fundamentals/code-analysis/style-rules/index.md).
 
-- **`--severity`**
+- **`--severity <LEVEL>`**
 
   The minimum severity of diagnostics to fix. Allowed values are `info`, `warn`, and `error`. The default value is `warn`
 
@@ -136,7 +136,7 @@ The `dotnet format analyzers` subcommand only runs formatting rules associated w
 
   A space-separated list of diagnostic IDs to use as a filter when fixing non code style issues. Default value is whichever IDs are listed in the *.editorconfig* file. For a list of built-in analyzer rule IDs that you can specify, see the [list of IDs for quality rules](../../fundamentals/code-analysis/quality-rules/index.md). For third-party analyzers refer to their documentation.
 
-- **`--severity`**
+- **`--severity <LEVEL>`**
 
   The minimum severity of diagnostics to fix. Allowed values are `info`, `warn`, and `error`. The default value is `warn`.
 

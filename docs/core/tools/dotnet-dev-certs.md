@@ -64,7 +64,7 @@ The `dotnet dev-certs` command manages a self-signed certificate to enable HTTPS
 
 - **`--check-trust-machine-readable`**
 
-  Same as running `--check --trust`, but outputs the results in json.
+  Same as running `--check --trust`, but outputs the results in JSON.
 
 - **`--clean`**
 

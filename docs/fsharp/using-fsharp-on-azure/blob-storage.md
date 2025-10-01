@@ -10,12 +10,15 @@ ai-usage: ai-assisted
 
 Azure Blob Storage is a service that stores unstructured data in the cloud as objects/blobs. Blob storage can store any type of text or binary data, such as a document, media file, or application installer. Blob storage is also referred to as object storage.
 
-This article shows you how to perform common tasks using Blob storage. The samples are written using F# using the Azure Storage Client Library for .NET. The tasks covered include how to upload, list, download, and delete blobs.
+This article shows you how to perform common tasks using Blob storage. The samples are written using F# with the `Azure.Storage.Blobs` package. The tasks covered include how to upload, list, download, and delete blobs.
 
 For a conceptual overview of blob storage, see [the .NET guide for blob storage](/azure/storage/blobs/storage-quickstart-blobs-dotnet). For ease, these tutorials use [connection strings](/azure/storage/storage-configure-connection-string) to authenticate with Azure. For production applications, you should use Microsoft Entra ID with [managed identities](/entra/identity/managed-identities-azure-resources/) or the [Azure.Identity library](/dotnet/api/overview/azure/identity-readme) for enhanced security.
 
+> [!IMPORTANT]
+> This article uses the modern `Azure.Storage.Blobs` package. If you're updating from older code that used the deprecated `WindowsAzure.Storage` or `Microsoft.Azure.Storage.Blob` packages, you need to update your package references and namespace declarations. For migration guidance, see [Migrate to Azure.Storage.Blobs](/azure/storage/blobs/storage-quickstart-blobs-dotnet).
+
 > [!NOTE]
-> This article uses the standard Azure Storage Client Library for .NET. F# developers might consider the [FSharp.Azure.Blob](https://github.com/random82/FSharp.Azure.Blob) library, which provides a more idiomatic F# API for working with Azure Blob Storage. This community library offers idiomatic F# functions and patterns that make blob operations more natural in F#.
+> F# developers might consider the [FSharp.Azure.Blob](https://github.com/random82/FSharp.Azure.Blob) library, which provides a more idiomatic F# API for working with Azure Blob Storage. This community library offers idiomatic F# functions and patterns that make blob operations more natural in F#.
 
 ## Prerequisites
 
@@ -35,7 +38,7 @@ F# Interactive, `dotnet fsi`, can be launched interactively, or it can be launch
 
 ### Add packages in a script
 
-Next, use `#r` `nuget:package name` to install the `Azure.Storage.Blobs` package and `open` namespaces.Such as
+Use `#r` `nuget:package name` to install the `Azure.Storage.Blobs` package and `open` the required namespaces:
 
 ```fsharp
 > #r "nuget: Azure.Storage.Blobs"

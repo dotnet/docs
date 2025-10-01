@@ -9,6 +9,8 @@ ms.topic: concept-article
 
 # Agents
 
+This article introduces the core concepts behind agents, why they matter, and how they fit into workflows, setting you up to get started building agents in .NET.
+
 ## What are agents?
 
 **Agents are systems that accomplish objectives.**

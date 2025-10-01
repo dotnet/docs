@@ -40,7 +40,7 @@ When you run `dotnet tool exec`, the command:
 
 This command also exists in two other forms for easier use
 
-* `dotnet dnx` - A hidden alias for `dotnet tool exec` that is mostly used to as a point to easily implement the ???
+* `dotnet dnx` - A hidden alias for `dotnet tool exec` that is used as a way to easily implement the `dnx` script itself
 * `dnx` - A shell script that invokes `dotnet dnx` from the SDK. This script is provided by the installer and is available on `PATH`. It allows for very simple use of tools directly via `dnx <toolname>`.
 
 ## Arguments

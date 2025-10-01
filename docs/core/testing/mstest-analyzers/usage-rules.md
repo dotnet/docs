@@ -3,7 +3,7 @@ title: MSTest Usage rules (code analysis)
 description: Learn about MSTest code analysis usage rules.
 author: evangelink
 ms.author: amauryleve
-ms.date: 01/29/2025
+ms.date: 10/01/2025
 ---
 
 # MSTest usage rules

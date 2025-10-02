@@ -3,8 +3,8 @@ title: What's new in the SDK and tooling for .NET 10
 description: Learn about the new .NET SDK features introduced in .NET 10.
 titleSuffix: ""
 ms.date: 09/09/2025
-ms.topic: whats-new
 ai-usage: ai-assisted
+ms.update-cycle: 3650-days
 ---
 
 # What's new in the SDK and tooling for .NET 10

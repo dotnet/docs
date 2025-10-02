@@ -3,7 +3,7 @@ title: What's new in the SDK and tooling for .NET 9
 description: Learn about the new .NET SDK features introduced in .NET 9, including for unit testing, Terminal Logger, tool roll-forward, and build script analyzers.
 titleSuffix: ""
 ms.date: 11/11/2024
-ms.topic: whats-new
+ms.update-cycle: 3650-days
 ---
 
 # What's new in the SDK and tooling for .NET 9

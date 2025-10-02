@@ -1,7 +1,7 @@
 | Name | Package | Docs | Source |
 | ---- | ------- | ---- | ------ |
 | AI Agents Persistent | NuGet [1.1.0](https://www.nuget.org/packages/Azure.AI.Agents.Persistent/1.1.0)<br>NuGet [1.2.0-beta.5](https://www.nuget.org/packages/Azure.AI.Agents.Persistent/1.2.0-beta.5) | [docs](/dotnet/api/overview/azure/AI.Agents.Persistent-readme) | GitHub [1.1.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.Agents.Persistent_1.1.0/sdk/ai/Azure.AI.Agents.Persistent/)<br>GitHub [1.2.0-beta.5](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.Agents.Persistent_1.2.0-beta.5/sdk/ai/Azure.AI.Agents.Persistent/) |
-| AI Foundry | NuGet [1.0.0-beta.11](https://www.nuget.org/packages/Azure.AI.Projects/1.0.0-beta.11) | [docs](/dotnet/api/overview/azure/AI.Projects-readme?view=azure-dotnet-preview&amp;preserve-view=true) | GitHub [1.0.0-beta.11](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.Projects_1.0.0-beta.11/sdk/ai/Azure.AI.Projects/) |
+| AI Foundry | NuGet [1.0.0](https://www.nuget.org/packages/Azure.AI.Projects/1.0.0) | [docs](/dotnet/api/overview/azure/AI.Projects-readme) | GitHub [1.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.Projects_1.0.0/sdk/ai/Azure.AI.Projects/) |
 | AI Model Inference | NuGet [1.0.0-beta.5](https://www.nuget.org/packages/Azure.AI.Inference/1.0.0-beta.5) | [docs](/dotnet/api/overview/azure/AI.Inference-readme?view=azure-dotnet-preview&amp;preserve-view=true) | GitHub [1.0.0-beta.5](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.Inference_1.0.0-beta.5/sdk/ai/Azure.AI.Inference/) |
 | Anomaly Detector | NuGet [3.0.0-preview.7](https://www.nuget.org/packages/Azure.AI.AnomalyDetector/3.0.0-preview.7) | [docs](/dotnet/api/overview/azure/AI.AnomalyDetector-readme?view=azure-dotnet-preview&amp;preserve-view=true) | GitHub [3.0.0-preview.7](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.AnomalyDetector_3.0.0-preview.7/sdk/anomalydetector/Azure.AI.AnomalyDetector/) |
 | App Configuration | NuGet [1.6.1](https://www.nuget.org/packages/Azure.Data.AppConfiguration/1.6.1) | [docs](/dotnet/api/overview/azure/Data.AppConfiguration-readme) | GitHub [1.6.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Data.AppConfiguration_1.6.1/sdk/appconfiguration/Azure.Data.AppConfiguration/) |
@@ -411,7 +411,7 @@
 | Item Templates NetFx | NuGet [4.0.5267](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ItemTemplates.NetFx/4.0.5267) |  |  |
 | Microsoft.Azure.DataFactoryTestingFramework.Expressions | NuGet [0.2.7](https://www.nuget.org/packages/Microsoft.Azure.DataFactoryTestingFramework.Expressions/0.2.7) |  |  |
 | Microsoft.Azure.Functions.Worker.OpenTelemetry | NuGet [1.1.0-preview6](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.OpenTelemetry/1.1.0-preview6) |  |  |
-| OpenTelemetry Profiler | NuGet [1.0.0-beta5](https://www.nuget.org/packages/Azure.Monitor.OpenTelemetry.Profiler/1.0.0-beta5) |  |  |
+| OpenTelemetry Profiler | NuGet [1.0.0-beta6](https://www.nuget.org/packages/Azure.Monitor.OpenTelemetry.Profiler/1.0.0-beta6) |  |  |
 | Speech CLI | NuGet [1.46.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.CLI/1.46.0) |  |  |
 | Speech Extension Embedded SR | NuGet [1.46.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Embedded.SR/1.46.0) |  |  |
 | Speech Extension Embedded TTS | NuGet [1.46.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Embedded.TTS/1.46.0) |  |  |
@@ -426,7 +426,7 @@
 | Unknown Display Name | NuGet [0.8.3](https://www.nuget.org/packages/Azure.Mcp.osx-x64/0.8.3) |  |  |
 | Unknown Display Name | NuGet [0.8.3](https://www.nuget.org/packages/Azure.Mcp.win-arm64/0.8.3) |  |  |
 | Unknown Display Name | NuGet [0.8.3](https://www.nuget.org/packages/Azure.Mcp.win-x64/0.8.3) |  |  |
-| Unknown Display Name | NuGet [0.1.2-preview.2](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Aot/0.1.2-preview.2) |  |  |
+| Unknown Display Name | NuGet [0.1.3-preview.2](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Aot/0.1.3-preview.2) |  |  |
 | Unknown Display Name | NuGet [0.2.802](https://www.nuget.org/packages/Microsoft.Azure.Mcp.AzTypes.Internal.Compact/0.2.802) |  |  |
 | Unknown Display Name | NuGet [1.1.2-preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.AzureCosmosDb.Mongo/1.1.2-preview) |  |  |
 | Unknown Display Name | NuGet [1.46.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.MAS/1.46.0) |  |  |

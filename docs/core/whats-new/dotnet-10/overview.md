@@ -3,8 +3,8 @@ title: What's new in .NET 10
 description: Learn about the new features introduced in .NET 10 for the runtime, libraries, and SDK. Also find links to what's new in other areas, such as ASP.NET Core.
 titleSuffix: ""
 ms.date: 09/09/2025
-ms.topic: whats-new
 ai-usage: ai-assisted
+ms.update-cycle: 3650-days
 ---
 
 # What's new in .NET 10

@@ -85,7 +85,7 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 
 - **`--file <FILE_PATH>`**
 
-  The path to the file-based app to run. If a path isn't specified, the current directory is used to find and run the file. For more information on file-based apps, see [Build file-based C# apps](/dotnet/csharp/fundamentals/tutorials/file-based-programs).
+  The path to the file-based app to run. If a path isn't specified, the current directory is used to find and run the file. For more information on file-based apps, see [Build file-based C# apps](../../csharp/fundamentals/tutorials/file-based-programs.md).
   
   On Unix, you can run file-based apps directly, using the source file name on the command line instead of `dotnet run`. First, ensure the file has execute permissions. Then, add a shebang line `#!` as the first line of the file, for example:
   

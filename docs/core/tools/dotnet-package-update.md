@@ -5,7 +5,7 @@ ms.date: 09/29/2025
 ---
 # dotnet package update
 
-**This article applies to:** ✔️ .NET 6 and later versions
+**This article applies to:** ✔️ .NET 6 SDK and later versions
 
 ## Name
 
@@ -39,9 +39,7 @@ The package reference to update.
 
 [!INCLUDE [interactive](../../../includes/cli-interactive.md)]
 
-- **`-v|--verbosity <LEVEL>`**
-
-  Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. The default is `normal`.
+[!INCLUDE [verbosity](../../../includes/cli-verbosity-normal.md)]
 
 [!INCLUDE [help](../../../includes/cli-help.md)]
 

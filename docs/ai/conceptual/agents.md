@@ -27,7 +27,7 @@ These capabilities allow agents to operate more autonomously, adaptively, and in
 
 ## What are workflows?
 
-As objectives grow in complexity, they need to be broken down into manageable steps. That’s where workflows come in.
+As objectives grow in complexity, they need to be broken down into manageable steps. That's where workflows come in.
 
 **Workflows define the sequence of steps required to achieve an objective.**
 
@@ -41,14 +41,14 @@ Imagine you're launching a new feature on your business website. If it's a simpl
 
 A few important observations:
 
-- Each step may contain subtasks.
-- Different specialists may own different phases.
-- Progress isn’t always linear. Bugs found during testing may send you back to implementation.
+- Each step might contain subtasks.
+- Different specialists might own different phases.
+- Progress isn’t always linear. Bugs found during testing might send you back to implementation.
 - Success depends on planning, orchestration, and communication across stakeholders.
 
-### Agents + Workflows = Agentic Workflows
+### Agents + workflows = agentic workflows
 
-Workflows don’t require agents, but agents can supercharge them.
+Workflows don't require agents, but agents can supercharge them.
 
 When agents are equipped with reasoning, tools, and context, they can optimize workflows.
 
@@ -56,7 +56,12 @@ This is the foundation of multi-agent systems, where agents collaborate within w
 
 ### Workflow orchestration
 
-Agentic workflows can be orchestrated in a variety of ways. The following are a few of the most common.
+Agentic workflows can be orchestrated in a variety of ways. The following are a few of the most common:
+
+- [Sequential](#sequential)
+- [Concurrent](#concurrent)
+- [Handoff](#handoff)
+- [Group chat](#group-chat)
 
 #### Sequential
 
@@ -76,7 +81,7 @@ Responsibility shifts from one agent to another based on conditions or outcomes.
 
 ![Handoff orchestration: Task Input → Agent A Decision → Agent B or Agent A → Agent B Decision → Agent C or Agent B → Final Output](../media/agents/handoff-workflow.png)
 
-#### Group Chat
+#### Group chat
 
 Agents collaborate in a shared conversation, exchanging insights in real-time.
 
@@ -84,8 +89,9 @@ Agents collaborate in a shared conversation, exchanging insights in real-time.
 
 ## How can I get started building agents in .NET?
 
-The building blocks in Microsoft.Extensions.AI as well as Microsoft.Extensions.VectorData provide you with the foundations for agents by providing modular components for AI models, tools, and data.
+The building blocks in <xref:Microsoft.Extensions.AI> and <xref:Microsoft.Extensions.VectorData> supply the foundations for agents by providing modular components for AI models, tools, and data.
 
 These components serve as the foundation for Microsoft Agent Framework.
 
-See the [Microsoft Agent Framework documentation](/agent-framework/overview/agent-framework-overview) to learn more.
+For more information, see [Microsoft Agent Framework](/agent-framework/overview/agent-framework-overview).
+

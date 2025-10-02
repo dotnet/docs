@@ -1,6 +1,3 @@
-// This sample uses the modern Azure.Storage.Blobs package.
-// Do not use the deprecated WindowsAzure.Storage or Microsoft.Azure.Storage.Blob packages.
-
 open System
 open System.IO
 open Azure.Storage.Blobs // Namespace for Blob storage types

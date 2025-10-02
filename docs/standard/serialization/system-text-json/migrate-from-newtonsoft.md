@@ -24,7 +24,7 @@ The `System.Text.Json` namespace provides functionality for serializing to and d
 * .NET Core 2.0, 2.1, and 2.2
 
 > [!TIP]
-> You can use AI assistance to [migrate from `Newtonsoft.Json`](#use-ai-to-migrate).
+> You can use AI assistance to [migrate from `Newtonsoft.Json`](#use-ai-for-solution-wide-migration).
 
 `System.Text.Json` focuses primarily on performance, security, and standards compliance. It has some key differences in default behavior and doesn't aim to have feature parity with `Newtonsoft.Json`. For some scenarios, `System.Text.Json` currently has no built-in functionality, but there are recommended workarounds. For other scenarios, workarounds are impractical.
 
@@ -654,7 +654,7 @@ Convert all serialization code in this #solution from Newtonsoft.Json to System.
 - Generate a migration summary
 ```
 
-For more information, see [Copilot FAQs](https://aka.ms/copilot-general-use-faqs).
+Review Copilot’s suggestions before applying. For more information, see [Copilot FAQs](https://aka.ms/copilot-general-use-faqs).
 
 ## Additional resources
 

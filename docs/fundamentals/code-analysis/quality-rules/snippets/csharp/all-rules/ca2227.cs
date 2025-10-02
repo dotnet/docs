@@ -24,7 +24,7 @@ namespace ca2227
     {
         static void Main2227()
         {
-            ArrayList newCollection = new(new string[] { "a", "new", "collection" });
+            ArrayList newCollection = ["a", "new", "collection"];
 
             WritableCollection collection = new()
             {

@@ -23,13 +23,8 @@ namespace ca1806_2
     {
         public Book(string title)
         {
-            if (title != null)
-            {
-                // Fixes the violation.
-                title = title.Trim();
-            }
-
-            Title = title;
+            // Fixes the violation.
+            Title = title?.Trim();
         }
 
         public string? Title { get; }

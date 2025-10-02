@@ -3,11 +3,7 @@
 namespace ca2235
 {
     //<snippet1>
-    public class Mouse(int numberOfButtons, string scanType)
-    {
-        public int NumberOfButtons { get; } = numberOfButtons;
-        public string ScanType { get; } = scanType;
-    }
+    public record class Mouse(int NumberOfButtons, string ScanType);
 
     [Serializable]
     public class InputDevices1

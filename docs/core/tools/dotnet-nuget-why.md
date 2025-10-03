@@ -68,7 +68,7 @@ To use the command with projects that can't be restored with the .NET SDK, you c
 - Show the dependency graph for the package "System.Text.Json" for a specific project:
 
     ```dotnetcli
-    dotnet nuget why path\to\DotnetNuGetWhyPackage.csproj System.Text.Json
+    dotnet nuget why path/to/DotnetNuGetWhyPackage.csproj System.Text.Json
     ```
 
 - Show the dependency graph for a specific target framework:

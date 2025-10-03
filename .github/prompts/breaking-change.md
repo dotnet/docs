@@ -1,61 +1,98 @@
-When you're assigned an issue that's labeled "breaking-change", or when you're given a link to an issue with this prompt file as context and asked to create a new breaking change document, follow these guidelines:
+# Copilot-Optimized Instructions: Breaking Change Documentation
 
-The document should be in Markdown format.
+## When to use this prompt
 
-Ignore all breaking change documentation under https://github.com/dotnet/docs/tree/main/docs/framework/migration-guide - that's for legacy .NET Framework breaking changes. Modern .NET breaking changes live in the https://github.com/dotnet/docs/tree/main/docs/core/compatibility folder and its subfolders.
+- If assigned an issue labeled `breaking-change`  
+- If given a link to an issue referencing this prompt and asked to create a breaking change document
 
-Rephrase all content to be clear and concise, if necessary.
+## General rules
 
-Describe previous behavior in past tense and new behavior in present tense.
+- **Format:** Use Markdown
+- **Scope:**  
+  - Ignore docs under [`docs/framework/migration-guide`](https://github.com/dotnet/docs/tree/main/docs/framework/migration-guide) (for legacy .NET Framework)  
+  - Document ONLY modern .NET breaking changes
+- **Writing style:**  
+  - Make content clear and concise  
+  - Previous behavior: **past tense**  
+  - New behavior: **present tense**
 
-The document should start with the following header, including --- characters. Placeholder text is shown in angle brackets.
+## Document structure
 
-   ---
-   title: "Breaking change - <A concise descriptive title of the breaking change>"
-   description: "Learn about the breaking change in <product/version without the preview number> where <very brief description>."
-   ms.date: <Today's date>
-   ai-usage: ai-assisted
-   ms.custom: <URL of the issue>
-   ---
+Start with this header (replace placeholders):
 
-After the header, include the following sections in this order. Use the description in parentheses as a guide for the content of each section.
+```
+---
+title: "Breaking change - <Concise descriptive title>"
+description: "Learn about the breaking change in <product/version without preview> where <brief description>."
+ms.date: <Today's date in MM/DD/YYYY format>
+ai-usage: ai-assisted
+ms.custom: <URL of the issue>
+---
+```
+> **Note:** Use today's date in the format MM/DD/YYYY. This date cannot be earlier than 9/29/2025.
 
-h1: "(The same title used in the document header, sans 'Breaking Change - ')"
+Then include these sections in this order:
 
-   (An introductory paragraph summarizing the breaking change. Include the major version but not the preview number.)
+### 1. H1 Title
 
-h2: Version introduced
+- Use the header title, **removing "Breaking change - "**.
 
-   (The version in which the breaking change was introduced. Include the preview number here, if given.)
+**Intro paragraph:**  
+Summarize the breaking change. Include the major version (omit preview number).
 
-h2: Previous behavior
+### 2. Version introduced
 
-   (A brief description of the behavior before the change, including an example code snippet if applicable.)
+- Version where change was introduced (include preview number if applicable).
 
-h2: New behavior
+### 3. Previous behavior
 
-   (A brief description of the behavior after the change, including an example code snippet if applicable.)
+- Briefly describe past behavior.
+- Include example code snippets if relevant.
 
-h2: Type of breaking change
+### 4. New behavior
 
-   If the type of breaking change is "behavioral change", add the following sentence (without the backticks): `This is a [behavioral change](../../categories.md#behavioral-change).`
+- Briefly describe new behavior.
+- Include example code snippets if relevant.
 
-   If the type of breaking change is "source incompatible" or "binary incompatible", add the following sentence (without the backticks): `This change can affect [source compatibility](../../categories.md#source-compatibility).` or `This change can affect [binary compatibility](../../categories.md#binary-compatibility).`
+### 5. Type of breaking change
 
-   If the issue lists multiple types of breaking changes, create a single sentence that links to each applicable type, such as "This is both a []() and []() change.". If there is no type of breaking change selected in the issue, write "TODO: Add type of breaking change."
+- If **behavioral change**:  
+  `This is a [behavioral change](../../categories.md#behavioral-change).`
+- If **source or binary incompatible**:  
+  `This change can affect [source compatibility](../../categories.md#source-incompatible) and/or [binary compatibility](../../categories.md#binary-incompatible).`
+- If multiple types:  
+  Link to each type in a single sentence.
+- If none specified:  
+  State "No specific type listed."
 
-h2: Reason for change
+### 6. Reason for change
 
-   (The complete reasoning behind the change, including any relevant links.)
+- Explain why the change was made.
+- Include relevant links.
 
-h2: Recommended action
+### 7. Recommended action
 
-   (A brief description of the action or actions that users should take, including example code snippets if applicable.)
+- Describe what users should do to adapt.
+- Include code examples if helpful.
 
-h2: Affected APIs
+### 8. Affected APIs
 
-   (A bullet list of APIs that are affected by the change. If there are no affected APIs (or "No response") write "None.". Use xref-style links as described in the copilot-instructions.md file. At the end of each doc ID, add "?displayProperty=fullName", for example "<xref:System.String?displayProperty=fullName>".)
+- Bullet list of affected APIs.
+- Use **xref-style links** as described in `copilot-instructions.md`.
+- If none: Write "None."
 
-Then, add the new document to the TOC file located at https://github.com/dotnet/docs/blob/main/docs/core/compatibility/toc.yml. Also add an entry to the index file under the appropriate area H2 heading in the https://github.com/dotnet/docs/blob/main/docs/core/compatibility/10.0.md file by adding a row to the table (create a new heading/table if it doesn't exist yet).
+## Final steps
 
-Next, create a pull request. In the description, include the text "Fixes #\<issue-number>", where "issue-number" is the GitHub issue number.
+- **Add the new doc to the [TOC file](https://github.com/dotnet/docs/blob/main/docs/core/compatibility/toc.yml).**
+- **Add an entry to the index file under the appropriate area H2 heading.**
+- **Create a pull request.**
+  - In the description, include: `Fixes #<issue-number>` (replace with the correct number).
+  - Request review on the pull request from the person who opened the issue.
+- Also check the relevant API docs, if applicable, and update them in the https://github.com/dotnet/dotnet-api-docs repo to reflect the breaking change.
+
+---
+
+**Copilot optimization notes:**  
+- All steps and formatting are condensed and clarified for rapid, accurate document drafting.
+- Section ordering and linking instructions are explicit for automation.
+- Xref/linking and PR closing instructions are surfaced for easy action.

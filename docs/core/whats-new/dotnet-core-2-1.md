@@ -1,10 +1,11 @@
 ---
 title: What's new in .NET Core 2.1
 description: Learn about the new features found in .NET Core 2.1.
+ms.date: 10/10/2018
 dev_langs:
   - "csharp"
   - "vb"
-ms.date: 10/10/2018
+ms.update-cycle: 3650-days
 ---
 # What's new in .NET Core 2.1
 

@@ -189,7 +189,9 @@ items:
               - name: dotnet package remove
                 href: ../../core/tools/dotnet-package-remove.md
               - name: dotnet package search
-                href: ../../core/tools/dotnet-package-search.md  
+                href: ../../core/tools/dotnet-package-search.md
+              - name: dotnet package update
+                href: ../../core/tools/dotnet-package-update.md
           - name: dotnet publish
             href: ../../core/tools/dotnet-publish.md
           - name: dotnet reference add/list/remove
@@ -214,6 +216,8 @@ items:
             href: ../../core/tools/dotnet-test.md
           - name: dotnet tool
             items:
+              - name: dotnet tool exec
+                href: ../../core/tools/dotnet-tool-exec.md
               - name: dotnet tool install
                 href: ../../core/tools/dotnet-tool-install.md
               - name: dotnet tool list

@@ -34,9 +34,9 @@ Namespace ca2100
             }
 
             someCommand.Parameters.AddWithValue(
-            "@username", SqlDbType.NChar).Value = name
+            "@username", OleDbType.Char).Value = name
             someCommand.Parameters.AddWithValue(
-            "@password", SqlDbType.NChar).Value = password
+            "@password", OleDbType.Char).Value = password
             someCommand.CommandText = "SELECT AccountNumber FROM Users " &
             "WHERE Username=@username AND Password=@password"
 

@@ -177,7 +177,6 @@ The wildcard pattern is represented by the underscore (`_`) character and matche
 In addition to matching any input, the wildcard pattern can effectively match "nothing" in certain contexts:
 
 - When used in function parameters, it ignores the arguments entirely, treating them as if they were not there.
-- When matching the unit type `()`, which represents the absence of a meaningful value.
 - When destructuring data structures, it ignores specific elements that are not needed.
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet4818.fs)]

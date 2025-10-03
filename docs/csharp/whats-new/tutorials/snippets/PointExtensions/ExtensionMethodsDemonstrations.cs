@@ -32,6 +32,7 @@ public static class ExtensionMethodsDemonstrations
 
     static void ArithmeticWithPoints()
     {
+        // <PointArithmetic>
         Console.WriteLine("2. Perform arithmetic with points.");
         Console.WriteLine("-----------------------------------------------");
 
@@ -50,6 +51,7 @@ public static class ExtensionMethodsDemonstrations
         Console.WriteLine($"Subtraction (p1 - p2): {subtraction1}");
         Console.WriteLine($"Subtraction (p2 - p1): {subtraction2}");
         Console.WriteLine();
+        // </PointArithmetic>
     }
 
     static void DiscreteArithmeticWithPoints()

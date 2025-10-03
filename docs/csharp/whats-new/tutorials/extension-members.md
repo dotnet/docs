@@ -18,6 +18,7 @@ In this tutorial, you explore extension members by enhancing the `System.Drawing
 In this tutorial, you:
 
 > [!div class="checklist"]
+>
 > * Create extension members with static properties and operators.
 > * Implement coordinate transformations using extension members.
 > * Migrate traditional extension methods to extension member syntax.
@@ -80,7 +81,7 @@ public static class PointExtensions
 }
 ```
 
-The preceding code adds a static *extension property* to the `Point` struct. The `extension` keyword introduces an *extension block*. This extension block extends the `Point` struct. 
+The preceding code adds a static *extension property* to the `Point` struct. The `extension` keyword introduces an *extension block*. This extension block extends the `Point` struct.
 
 You can use this static property as though it were a member of the `Point` struct.
 
@@ -102,7 +103,7 @@ Extension members enable you to add operators directly to existing types. Now yo
 
 :::code language="csharp" source="snippets/PointExtensions/ExtensionMemberDemonstrations.cs" id="PointArithmeticWithOperators":::
 
-The extension operators make point arithmetic as natural as working with built-in numeric types. 
+The extension operators make point arithmetic as natural as working with built-in numeric types.
 
 ## Add More operators
 

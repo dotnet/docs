@@ -218,11 +218,14 @@ A new `<ContainerImageFormat>` property allows you to explicitly set the format 
 
 ## Support for Microsoft Testing Platform in `dotnet test`
 
-Starting in .NET 10, `dotnet test` natively supports [Microsoft.Testing.Platform](../../testing/microsoft-testing-platform-intro.md). To enable this feature, add the following configuration to your *dotnet.config* file:
+Starting in .NET 10, `dotnet test` natively supports [Microsoft.Testing.Platform](../../testing/microsoft-testing-platform-intro.md). To enable this feature, add the following configuration to your *global.json* file:
 
-```ini
-[dotnet.test.runner]
-name = "Microsoft.Testing.Platform"
+```json
+{
+    "test": {
+        "runner": "Microsoft.Testing.Platform"
+    }
+}
 ```
 
 For more details, see [Testing with `dotnet test`](../../testing/unit-testing-with-dotnet-test.md).

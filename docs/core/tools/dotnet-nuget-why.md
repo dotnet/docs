@@ -15,7 +15,7 @@ ms.date: 05/30/2024
 ## Synopsis
 
 ```dotnetcli
-dotnet nuget why <PROJECT|SOLUTION> <PACKAGE> [-f|--framework <FRAMEWORK>]
+dotnet nuget why [<PROJECT|SOLUTION>] <PACKAGE> [-f|--framework <FRAMEWORK>]
 
 dotnet nuget why -h|--help
 ```
@@ -38,7 +38,10 @@ To use the command with projects that can't be restored with the .NET SDK, you c
 
 - **`PROJECT|SOLUTION`**
 
-  The project or solution file to operate on. If a directory is specified, the command searches the directory for a project or solution file. If more than one project or solution is found, an error is thrown.
+  The project or solution file to operate on. 
+  If a directory is specified, the command searches the directory for a project or solution file.
+  If more than one project or solution is found, an error is thrown.
+  If no value is provided, the current working directory is used by default.
 
 - **`PACKAGE`**
 
@@ -54,22 +57,22 @@ To use the command with projects that can't be restored with the .NET SDK, you c
 
 ## Examples
 
-- Show the dependency graph for the package "System.Text.Json" for a given solution:
+- Show the dependency graph for the package "System.Text.Json":
 
     ```dotnetcli
-    dotnet nuget why .\DotnetNuGetWhyPackage.sln System.Text.Json
+    dotnet nuget why System.Text.Json
     ```
 
     ![Example: Solution with multiple projects](media/dotnet-nuget-why/dotnet-nuget-why-solution-with-multiple-projects.png)
 
-- Show the dependency graph for the package "System.Text.Json" for a single project:
+- Show the dependency graph for the package "System.Text.Json" for a specific project:
 
     ```dotnetcli
-    dotnet nuget why .\DotnetNuGetWhyPackage.csproj System.Text.Json
+    dotnet nuget why path\to\DotnetNuGetWhyPackage.csproj System.Text.Json
     ```
 
 - Show the dependency graph for a specific target framework:
 
     ```dotnetcli
-    dotnet nuget why .\DotnetNuGetWhyPackage.csproj System.Text.Json --framework net6.0
+    dotnet nuget why System.Text.Json --framework net6.0
     ```

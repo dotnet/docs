@@ -1,6 +1,6 @@
 ---
 title: dotnet workload clean command
-description: "The `dotnet workload clean` command removes workload components that may have been left behind from previous updates and uninstallations."
+description: "The `dotnet workload clean` command removes workload components that might have been left behind from previous updates and uninstallations."
 ms.date: 09/29/2025
 ---
 # dotnet workload clean

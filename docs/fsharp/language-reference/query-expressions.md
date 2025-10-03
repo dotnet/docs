@@ -16,7 +16,7 @@ query { expression }
 
 ## Remarks
 
-Query expressions are a type of computation expression similar to sequence expressions. Just as you specify a sequence by providing code in a sequence expression, you specify a set of data by providing code in a query expression. In a sequence expression, the `yield` keyword identifies data to be returned as part of the resulting sequence. In query expressions, the `select` keyword performs the same function. In addition to the `select` keyword, F# also supports a number of query operators that are much like the parts of a SQL SELECT statement. Here is an example of a simple query expression using in-memory data.
+Query expressions are a type of computation expression similar to sequence expressions. Just as you specify a sequence by providing code in a sequence expression, you specify a set of data by providing code in a query expression. In a sequence expression, the `yield` keyword identifies data to be returned as part of the resulting sequence. In query expressions, the `select` keyword performs the same function. In addition to the `select` keyword, F# also supports a number of query operators that are much like the parts of a SQL SELECT statement. Here is an example of a simple query expression using Entity Framework Core to query a database.
 
 :::code language="fsharp" source="~/samples/snippets/fsharp/query-expressions/snippet1.fs":::
 
@@ -36,7 +36,7 @@ This table assumes a database in the following form:
 
 ![Diagram that shows a sample database.](./media/query-expressions/student-course-database.png)
 
-The code in the tables that follow also assumes the following database connection code. Projects should add references to System.Linq. The code that creates this database is included at the end of this topic.
+The code in the tables that follow also assumes the following database connection code using Entity Framework Core. Projects should add package references to `Microsoft.EntityFrameworkCore` and `Microsoft.EntityFrameworkCore.InMemory` (or another EF Core provider for production scenarios). This example uses the in-memory database provider for demonstration purposes, but the same query syntax works with any EF Core provider (SQL Server, PostgreSQL, etc.).
 
 :::code language="fsharp" source="~/samples/snippets/fsharp/query-expressions/snippet2.fs":::
 

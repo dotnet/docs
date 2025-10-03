@@ -15,7 +15,8 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="FSharp.Data" Version="6.4.0" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="9.0.0" />
     </ItemGroup>
 
 </Project>

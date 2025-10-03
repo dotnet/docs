@@ -120,7 +120,7 @@ The object contains the following fields: FirstName (string), Lastname (string),
 Provide example output.
 ```
 
-GitHub Copilot is powered by AI, so surprises and mistakes are possible. For more information, see [Copilot FAQs](https://aka.ms/copilot-general-use-faqs).
+Review Copilot's suggestions before applying them. For more information GitHub Copilot, see GitHub's [FAQs](https://github.com/features/copilot#faq).
 
 ## See also
 

@@ -120,7 +120,9 @@ The object contains the following fields: FirstName (string), Lastname (string),
 Provide example output.
 ```
 
-Review Copilot's suggestions before applying them. For more information GitHub Copilot, see GitHub's [FAQs](https://github.com/features/copilot#faq).
+Review Copilot's suggestions before applying them.
+
+For more information about GitHub Copilot, see GitHub's [FAQs](https://github.com/features/copilot#faq).
 
 ## See also
 

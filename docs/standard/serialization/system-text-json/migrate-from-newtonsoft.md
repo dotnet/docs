@@ -647,14 +647,16 @@ Here's an example prompt you can use in Visual Studio Copilot Chat to migrate a 
 
 ```copilot-prompt
 Convert all serialization code in this #solution from Newtonsoft.Json to System.Text.Json, using the recommended approach for my current .NET version.
-- Update attributes and properties, including rules for skipping or renaming during serialization 
+- Update attributes and properties, including rules for skipping or renaming during serialization
 - Ensure polymorphic serialization continues to work correctly
 - Respect existing custom converters and project-level settings (for example, from the Utilities folder or appsettings.json)
 - Update related unit tests and highlight any potential breaking changes
 - Generate a migration summary
 ```
 
-Review Copilot's suggestions before applying them. For more information GitHub Copilot, see GitHub's [FAQs](https://github.com/features/copilot#faq).
+Review Copilot's suggestions before applying them.
+
+For more information about GitHub Copilot, see GitHub's [FAQs](https://github.com/features/copilot#faq).
 
 ## Additional resources
 

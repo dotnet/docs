@@ -259,7 +259,7 @@ Use built-in serialization attributes.
 Here's a more complete version of the example that includes a simple class.
 
 ```copilot-prompt
-Take this C# class: 
+Take this C# class:
 public class WeatherForecast
 {
     public DateTime Date { get; set; }
@@ -273,7 +273,9 @@ change the serialized property name to use underscores between words.
 Use built-in serialization attributes.
 ```
 
-Review Copilot's suggestions before applying them. For more information GitHub Copilot, see GitHub's [FAQs](https://github.com/features/copilot#faq).
+Review Copilot's suggestions before applying them.
+
+For more information about GitHub Copilot, see GitHub's [FAQs](https://github.com/features/copilot#faq).
 
 ## See also
 

@@ -419,13 +419,13 @@
 | Speech Extension Telemetry | NuGet [1.46.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Telemetry/1.46.0) |  |  |
 | System Net Client Model | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/System.Net.ClientModel/1.0.0-beta.1) |  |  |
 | Unknown Display Name | NuGet [0.13.0-preview](https://www.nuget.org/packages/Azure.Iot.Operations.Connector/0.13.0-preview) |  |  |
-| Unknown Display Name | NuGet [0.8.3](https://www.nuget.org/packages/Azure.Mcp/0.8.3) |  |  |
-| Unknown Display Name | NuGet [0.8.3](https://www.nuget.org/packages/Azure.Mcp.linux-arm64/0.8.3) |  |  |
-| Unknown Display Name | NuGet [0.8.3](https://www.nuget.org/packages/Azure.Mcp.linux-x64/0.8.3) |  |  |
-| Unknown Display Name | NuGet [0.8.3](https://www.nuget.org/packages/Azure.Mcp.osx-arm64/0.8.3) |  |  |
-| Unknown Display Name | NuGet [0.8.3](https://www.nuget.org/packages/Azure.Mcp.osx-x64/0.8.3) |  |  |
-| Unknown Display Name | NuGet [0.8.3](https://www.nuget.org/packages/Azure.Mcp.win-arm64/0.8.3) |  |  |
-| Unknown Display Name | NuGet [0.8.3](https://www.nuget.org/packages/Azure.Mcp.win-x64/0.8.3) |  |  |
+| Unknown Display Name | NuGet [0.8.4](https://www.nuget.org/packages/Azure.Mcp/0.8.4) |  |  |
+| Unknown Display Name | NuGet [0.8.4](https://www.nuget.org/packages/Azure.Mcp.linux-arm64/0.8.4) |  |  |
+| Unknown Display Name | NuGet [0.8.4](https://www.nuget.org/packages/Azure.Mcp.linux-x64/0.8.4) |  |  |
+| Unknown Display Name | NuGet [0.8.4](https://www.nuget.org/packages/Azure.Mcp.osx-arm64/0.8.4) |  |  |
+| Unknown Display Name | NuGet [0.8.4](https://www.nuget.org/packages/Azure.Mcp.osx-x64/0.8.4) |  |  |
+| Unknown Display Name | NuGet [0.8.4](https://www.nuget.org/packages/Azure.Mcp.win-arm64/0.8.4) |  |  |
+| Unknown Display Name | NuGet [0.8.4](https://www.nuget.org/packages/Azure.Mcp.win-x64/0.8.4) |  |  |
 | Unknown Display Name | NuGet [0.1.3-preview.2](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Aot/0.1.3-preview.2) |  |  |
 | Unknown Display Name | NuGet [0.2.802](https://www.nuget.org/packages/Microsoft.Azure.Mcp.AzTypes.Internal.Compact/0.2.802) |  |  |
 | Unknown Display Name | NuGet [1.1.2-preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.AzureCosmosDb.Mongo/1.1.2-preview) |  |  |

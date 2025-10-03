@@ -7,16 +7,16 @@ items:
     expanded: true
     items:
       - name: Overview
-        href: ../../core/porting/github-copilot-app-modernization-overview.md?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
+        href: ../../core/porting/github-copilot-app-modernization/overview.md?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
         displayName: copilot, upgrade
       - name: FAQ
-        href: ../../core/porting/github-copilot-app-modernization-faq.yml?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
+        href: ../../core/porting/github-copilot-app-modernization/faq.yml?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
         displayName: copilot, upgrade
       - name: Upgrade .NET apps
         expanded: false
         items:
           - name: How to upgrade with GitHub Copilot
-            href: ../../core/porting/how-to-upgrade-with-github-copilot.md?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
+            href: ../../core/porting/github-copilot-app-modernization/how-to-upgrade-with-github-copilot.md?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
             displayName: copilot, upgrade
       - name: Migrate .NET apps to Azure
         expanded: false
@@ -25,15 +25,13 @@ items:
             href: ../../azure/migration/appmod/quickstart.md?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
           - name: Migration sample
             href: ../../azure/migration/appmod/sample.md?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
-          - name: Troubleshooting
-            href: /dotnet/core/porting/github-copilot-app-modernization-faq?toc=/dotnet/azure/toc.json&bc=/dotnet/breadcrumb/toc.json?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
 
   - name: Plan an upgrade from .NET Framework
     items:
       - name: Overview
         href: ../../core/porting/framework-overview.md
       - name: Upgrade with GitHub Copilot
-        href: ../../core/porting/github-copilot-app-modernization-overview.md?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
+        href: ../../core/porting/github-copilot-app-modernization/overview.md?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
         displayName: copilot, upgrade, modernization
       - name: General information
         items:

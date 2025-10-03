@@ -21,13 +21,13 @@ The modernization agent analyzes your projects and dependencies, creates an upgr
 
 Before you begin, ensure you have the following requirements:
 
-[!INCLUDE[github-copilot-app-mod-prereqs](../../includes/github-copilot-app-mod-prereqs.md)]
+[!INCLUDE[github-copilot-app-mod-prereqs](./includes/prereqs.md)]
 
 ## Start the upgrade process
 
 The first step to upgrading is generating a plan by interacting with GitHub Copilot. Follow these steps to initiate the upgrade:
 
-[!INCLUDE[github-copilot-how-to-initiate](./includes/github-copilot-how-to-initiate.md)]
+[!INCLUDE[github-copilot-how-to-initiate](./includes/how-to-initiate.md)]
 
 ## Generate an upgrade plan
 
@@ -95,14 +95,14 @@ The following example shows the report of a completed upgrade that contained a t
 
 ## Project modifications
 
-| Project name                                   | Old Target Framework    | New Target Framework         | Commits                   |
-|:-----------------------------------------------|:-----------------------:|:----------------------------:|---------------------------|
-| RazorMovie                                     |   net6.0                | net9.0                       | af8cf633, aa61a18d        |
-| MvcMovie                                       |   net6.0                | net9.0                       | cc8c9015                  |
-| WpfMovie                                       |   net6.0-windows        | net9.0-windows               | 9c4b13f9                  |
-| RazorMovie.Tests                               |   net6.0                | net9.0                       | b8d85e97                  |
-| MvcMovie.Tests                                 |   net6.0                | net9.0                       | b8d85e97                  |
-| WpfMovie.Tests                                 |   net6.0-windows        | net9.0-windows7.0            | b8d85e97                  |
+| Project name     | Old Target Framework | New Target Framework | Commits            |
+|:-----------------|:--------------------:|:--------------------:|--------------------|
+| RazorMovie       | net6.0               | net9.0               | af8cf633, aa61a18d |
+| MvcMovie         | net6.0               | net9.0               | cc8c9015           |
+| WpfMovie         | net6.0-windows       | net9.0-windows       | 9c4b13f9           |
+| RazorMovie.Tests | net6.0               | net9.0               | b8d85e97           |
+| MvcMovie.Tests   | net6.0               | net9.0               | b8d85e97           |
+| WpfMovie.Tests   | net6.0-windows       | net9.0-windows7.0    | b8d85e97           |
 
 ## NuGet Packages
 
@@ -153,4 +153,4 @@ After completing the upgrade process:
 
 ## Related content
 
-- [GitHub Copilot app modernization FAQ](github-copilot-app-modernization-faq.yml)
+- [GitHub Copilot app modernization FAQ](faq.yml)

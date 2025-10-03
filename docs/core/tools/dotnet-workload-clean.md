@@ -9,7 +9,7 @@ ms.date: 09/29/2025
 
 ## Name
 
-`dotnet workload clean` - Removes workload components that may have been left behind from previous updates and uninstallations.
+`dotnet workload clean` - Removes workload components that might have been left behind from previous updates and uninstallations.
 
 ## Synopsis
 

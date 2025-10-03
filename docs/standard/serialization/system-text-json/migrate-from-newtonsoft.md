@@ -641,10 +641,9 @@ Newtonsoft parses `NaN`, `Infinity`, and `-Infinity` JSON string tokens. With Sy
 
 ## Use AI for solution-wide migration
 
-You can use AI tools, such as GitHub Copilot, to help with migrating your solution code from `Newtonsoft.Json` to `System.Text.Json` directly within your IDE. You can use a tailored prompt that reflects your project’s specific serialization patterns and requirements.
-Here's an example prompt you can use in Visual Studio Copilot Chat to migrate a solution. 
+You can use AI tools, such as GitHub Copilot, to help with migrating your solution code from `Newtonsoft.Json` to `System.Text.Json`.
 
-**Example prompt for Copilot Chat**
+Here's an example prompt you can use in Visual Studio Copilot Chat to migrate a solution.
 
 ```copilot-prompt
 Convert all serialization code in this #solution from Newtonsoft.Json to System.Text.Json, using the recommended approach for my current .NET version.
@@ -655,7 +654,7 @@ Convert all serialization code in this #solution from Newtonsoft.Json to System.
 - Generate a migration summary
 ```
 
-It's recommended that you review Copilot's suggestions before applying them. For more information, see [Copilot FAQs](https://aka.ms/copilot-general-use-faqs).
+Review Copilot's suggestions before applying. For more information, see [Copilot FAQs](https://aka.ms/copilot-general-use-faqs).
 
 ## Additional resources
 

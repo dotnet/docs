@@ -5,7 +5,7 @@ ms.date: 09/24/2025
 ---
 # dotnet build
 
-**This article applies to:** ✔️ .NET 6 and later versions
+**This article applies to:** ✔️ .NET 6 SDK and later versions
 
 ## Name
 
@@ -16,15 +16,13 @@ ms.date: 09/24/2025
 ```dotnetcli
 dotnet build [<PROJECT>|<SOLUTION>|<FILE>] [-a|--arch <ARCHITECTURE>]
     [--artifacts-path <ARTIFACTS_DIR>]
-    [-c|--configuration <CONFIGURATION>] [-f|--framework <FRAMEWORK>]
-    [--disable-build-servers]
-    [--force] [--interactive] [--no-dependencies] [--no-incremental]
-    [--no-restore] [--nologo] [--no-self-contained] [--os <OS>]
-    [-o|--output <OUTPUT_DIRECTORY>]
-    [-p|--property:<PROPERTYNAME>=<VALUE>]
-    [-r|--runtime <RUNTIME_IDENTIFIER>]
-    [-sc|--self-contained [true|false]] [--source <SOURCE>]
-    [--tl:[auto|on|off]] [--use-current-runtime, --ucr [true|false]]
+    [-c|--configuration <CONFIGURATION>] [--disable-build-servers]
+    [-f|--framework <FRAMEWORK>] [--force] [--interactive]
+    [--no-dependencies] [--no-incremental] [--no-restore] [--nologo]
+    [--no-self-contained] [-o|--output <OUTPUT_DIRECTORY>] [--os <OS>]
+    [-p|--property:<PROPERTYNAME>=<VALUE>] [-r|--runtime <RUNTIME_IDENTIFIER>]
+    [--sc|--self-contained] [--source <SOURCE>]
+    [--tl:[auto|on|off]] [ --ucr|--use-current-runtime]
     [-v|--verbosity <LEVEL>] [--version-suffix <VERSION_SUFFIX>]
 
 dotnet build -h|--help
@@ -95,8 +93,6 @@ Running `dotnet build` is equivalent to running `dotnet msbuild -restore`; howev
 
   Forces all dependencies to be resolved even if the last restore was successful. Specifying this flag is the same as deleting the *project.assets.json* file.
 
-[!INCLUDE [help](../../../includes/cli-help.md)]
-
 [!INCLUDE [interactive](../../../includes/cli-interactive-3-0.md)]
 
 - **`--no-dependencies`**
@@ -115,9 +111,7 @@ Running `dotnet build` is equivalent to running `dotnet msbuild -restore`; howev
 
   Doesn't display the startup banner or the copyright message.
 
-- **`--no-self-contained`**
-
-  Publishes the application as a framework dependent application. A compatible .NET runtime must be installed on the target machine to run the application. Available since .NET 6 SDK.
+[!INCLUDE [no-self-contained](../../../includes/cli-no-self-contained.md)]
 
 - **`-o|--output <OUTPUT_DIRECTORY>`**
 
@@ -142,9 +136,7 @@ Running `dotnet build` is equivalent to running `dotnet msbuild -restore`; howev
 
   Specifies the target runtime. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md). If you use this option with .NET 6 SDK, use `--self-contained` or `--no-self-contained` also. If not specified, the default is to build for the current OS and architecture.
 
-- **`--self-contained [true|false]`**
-
-  Publishes the .NET runtime with the application so the runtime doesn't need to be installed on the target machine. The default is `true` if a runtime identifier is specified. Available since .NET 6.
+[!INCLUDE [self-contained](../../../includes/cli-self-contained.md)]
 
 - **`--source <SOURCE>`**
 
@@ -152,17 +144,15 @@ Running `dotnet build` is equivalent to running `dotnet msbuild -restore`; howev
 
 [!INCLUDE [tl](../../../includes/cli-tl.md)]
 
-- **`-v|--verbosity <LEVEL>`**
+[!INCLUDE [use-current-runtime](../../../includes/cli-use-current-runtime.md)]
 
-  Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. The default is `minimal`. By default, MSBuild displays warnings and errors at all verbosity levels. To exclude warnings, use `/property:WarningLevel=0`. For more information, see <xref:Microsoft.Build.Framework.LoggerVerbosity> and [WarningLevel](../../csharp/language-reference/compiler-options/errors-warnings.md#warninglevel).
-
-- **`--use-current-runtime, --ucr [true|false]`**
-
-  Sets the `RuntimeIdentifier` to a platform portable `RuntimeIdentifier` based on the one of your machine. This happens implicitly with properties that require a `RuntimeIdentifier`, such as `SelfContained`, `PublishAot`, `PublishSelfContained`, `PublishSingleFile`, and `PublishReadyToRun`. If the property is set to false, that implicit resolution will no longer occur.
+[!INCLUDE [verbosity](../../../includes/cli-verbosity.md)]
 
 - **`--version-suffix <VERSION_SUFFIX>`**
 
   Sets the value of the `$(VersionSuffix)` property to use when building the project. This only works if the `$(Version)` property isn't set. Then, `$(Version)` is set to the `$(VersionPrefix)` combined with the `$(VersionSuffix)`, separated by a dash.
+
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
 ## Examples
 

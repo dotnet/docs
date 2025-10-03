@@ -60,10 +60,13 @@ let courseSelections = [
     { ID = 15; StudentID = 7; CourseID = 3 }
 ]
 
-// Convert to queryable collections for LINQ operations
-let studentsQueryable = students.AsQueryable()
-let coursesQueryable = courses.AsQueryable()
-let courseSelectionsQueryable = courseSelections.AsQueryable()
+// Create a db object that mimics a database context
+type DataContext() =
+    member _.Student = students.AsQueryable()
+    member _.Course = courses.AsQueryable()
+    member _.CourseSelection = courseSelections.AsQueryable()
+
+let db = DataContext()
 
 // Needed for some query operator examples:
 let data = [ 1; 5; 7; 11; 18; 21]

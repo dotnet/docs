@@ -53,7 +53,7 @@ The code in the tables that follow also assumes the following database connectio
 
 ```fsharp
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     where student.Age.IsSome
     select student.Age.Value
     contains 11
@@ -68,7 +68,7 @@ query {
 
 ```fsharp
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     select student
     count
 }
@@ -102,7 +102,7 @@ query {
 
 ```fsharp
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     where (student.StudentID = 1)
     select student
     exactlyOne
@@ -114,7 +114,7 @@ query {
 
 ```fsharp
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     where (student.StudentID = 1)
     select student
     exactlyOneOrDefault
@@ -126,7 +126,7 @@ query {
 
 ```fsharp
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     select student
     headOrDefault
 }
@@ -137,7 +137,7 @@ query {
 
 ```fsharp
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     select student
 }
 ```
@@ -147,7 +147,7 @@ query {
 
 ```fsharp
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     where (student.StudentID > 4)
     select student
 }
@@ -158,7 +158,7 @@ query {
 
 ```fsharp
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     minBy student.StudentID
 }
 ```
@@ -168,7 +168,7 @@ query {
 
 ```fsharp
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     maxBy student.StudentID
 }
 ```
@@ -178,7 +178,7 @@ query {
 
 ```fsharp
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     groupBy student.Age into g
     select (g.Key, g.Count())
 }
@@ -189,7 +189,7 @@ query {
 
 ```fsharp
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     sortBy student.Name
     select student
 }
@@ -200,7 +200,7 @@ query {
 
 ```fsharp
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     sortByDescending student.Name
     select student
 }
@@ -211,7 +211,7 @@ query {
 
 ```fsharp
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     where student.Age.HasValue
     sortByNullable student.Age
     thenBy student.Name
@@ -224,7 +224,7 @@ query {
 
 ```fsharp
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     where student.Age.HasValue
     sortByNullable student.Age
     thenByDescending student.Name
@@ -237,7 +237,7 @@ query {
 
 ```fsharp
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     groupValBy student.Name student.Age into g
     select (g, g.Key, g.Count())
 }
@@ -248,7 +248,7 @@ query {
 
 ```fsharp
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     join selection in db.CourseSelection
         on (student.StudentID = selection.StudentID)
     select (student, selection)
@@ -260,7 +260,7 @@ query {
 
 ```fsharp
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     groupJoin courseSelection in db.CourseSelection
         on (student.StudentID = courseSelection.StudentID) into g
     for courseSelection in g do
@@ -275,7 +275,7 @@ query {
 
 ```fsharp
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     leftOuterJoin selection in db.CourseSelection
         on (student.StudentID = selection.StudentID) into result
     for selection in result.DefaultIfEmpty() do
@@ -288,7 +288,7 @@ query {
 
 ```fsharp
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     sumByNullable student.Age
 }
 ```
@@ -298,7 +298,7 @@ query {
 
 ```fsharp
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     minByNullable student.Age
 }
 ```
@@ -308,7 +308,7 @@ query {
 
 ```fsharp
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     maxByNullable student.Age
 }
 ```
@@ -318,7 +318,7 @@ query {
 
 ```fsharp
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     averageByNullable (Nullable.float student.Age)
 }
 ```
@@ -328,7 +328,7 @@ query {
 
 ```fsharp
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     averageBy (float student.StudentID)
 }
 ```
@@ -338,7 +338,7 @@ query {
 
 ```fsharp
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     join selection in db.CourseSelection
         on (student.StudentID = selection.StudentID)
     distinct
@@ -350,7 +350,7 @@ query {
 
 ```fsharp
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     where
         (query {
             for courseSelection in db.CourseSelection do
@@ -364,7 +364,7 @@ query {
 
 ```fsharp
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     find (student.Name = "Abercrombie, Kim")
 }
 ```
@@ -374,7 +374,7 @@ query {
 
 ```fsharp
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     all (SqlMethods.Like(student.Name, "%,%"))
 }
 ```
@@ -384,7 +384,7 @@ query {
 
 ```fsharp
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     head
 }
 ```
@@ -404,7 +404,7 @@ query {
 
 ```fsharp
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     skip 1
 }
 ```
@@ -425,7 +425,7 @@ query {
 
 ```fsharp
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     sumBy student.StudentID
 }
 ```
@@ -435,7 +435,7 @@ query {
 
 ```fsharp
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     select student
     take 2
 }
@@ -456,7 +456,7 @@ query {
 
 ```fsharp
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     sortByNullable student.Age
     select student
 }
@@ -467,7 +467,7 @@ query {
 
 ```fsharp
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     sortByNullableDescending student.Age
     select student
 }
@@ -478,7 +478,7 @@ query {
 
 ```fsharp
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     sortBy student.Name
     thenByNullable student.Age
     select student
@@ -490,7 +490,7 @@ query {
 
 ```fsharp
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     sortBy student.Name
     thenByNullableDescending student.Age
     select student
@@ -523,7 +523,7 @@ SELECT * FROM Student
 ```fsharp
 // All students.
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     select student
 }
 ```
@@ -541,7 +541,7 @@ SELECT COUNT( * ) FROM Student
 ```fsharp
 // Count of students.
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     count
 }
 ```
@@ -568,7 +568,7 @@ WHERE EXISTS
 ```fsharp
 // Find students who have signed up at least one course.
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     where
         (query {
             for courseSelection in db.CourseSelection do
@@ -590,13 +590,13 @@ GROUP BY Student.Age
 ```fsharp
 // Group by age and count.
 query {
-    for n in studentsQueryable do
+    for n in db.Student do
     groupBy n.Age into g
     select (g.Key, g.Count())
 }
 // OR
 query {
-    for n in studentsQueryable do
+    for n in db.Student do
     groupValBy n.Age n.Age into g
     select (g.Key, g.Count())
 }
@@ -617,7 +617,7 @@ HAVING student.Age > 10
 ```fsharp
 // Group students by age where age > 10.
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     groupBy student.Age into g
     where (g.Key.HasValue && g.Key.Value > 10)
     select (g.Key, g.Count())
@@ -645,7 +645,7 @@ HAVING COUNT( * ) > 1
 // Group students by age and count number of students
 // at each age with more than 1 student.
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     groupBy student.Age into group
     where (group.Count() > 1)
     select (group.Key, group.Count())
@@ -666,7 +666,7 @@ GROUP BY Student.Age
 ```fsharp
 // Group students by age and sum ages.
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     groupBy student.Age into g
     let total =
         query {
@@ -700,7 +700,7 @@ ORDER BY COUNT( * ) DESC
 // at each age, and display all with count > 1
 // in descending order of count.
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     groupBy student.Age into g
     where (g.Count() > 1)
     sortByDescending (g.Count())
@@ -727,7 +727,7 @@ let idQuery =
         select id
     }
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     where (idQuery.Contains(student.StudentID))
     select student
 }
@@ -747,7 +747,7 @@ WHERE Student.Name LIKE '_e%'
 ```fsharp
 // Look for students with Name match _e% pattern and take first two.
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     where (SqlMethods.Like( student.Name, "_e%") )
     select student
     take 2
@@ -768,7 +768,7 @@ WHERE Student.Name LIKE '[abc]%'
 
 ```fsharp
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     where (SqlMethods.Like( student.Name, "[abc]%") )
     select student
 }
@@ -789,7 +789,7 @@ WHERE Student.Name LIKE '[^abc]%'
 ```fsharp
 // Look for students with name matching [^abc]%% pattern.
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     where (SqlMethods.Like( student.Name, "[^abc]%") )
     select student
 }
@@ -807,7 +807,7 @@ WHERE Student.Name LIKE '[^abc]%'
 
 ```fsharp
 query {
-    for n in studentsQueryable do
+    for n in db.Student do
     where (SqlMethods.Like( n.Name, "[^abc]%") )
     select n.StudentID
 }
@@ -825,7 +825,7 @@ WHERE Student.Name like '%A%'
 ```fsharp
 // Using Contains as a query filter.
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     where (student.Name.Contains("a"))
     select student
 }
@@ -845,7 +845,7 @@ ON Student.StudentID = CourseSelection.StudentID
 ```fsharp
 // Join Student and CourseSelection tables.
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     join selection in db.CourseSelection
         on (student.StudentID = selection.StudentID)
     select (student, selection)
@@ -865,7 +865,7 @@ ON Student.StudentID = CourseSelection.StudentID
 ```fsharp
 //Left Join Student and CourseSelection tables.
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     leftOuterJoin selection in db.CourseSelection
         on (student.StudentID = selection.StudentID) into result
     for selection in result.DefaultIfEmpty() do
@@ -886,7 +886,7 @@ ON Student.StudentID = CourseSelection.StudentID
 ```fsharp
 // Join with count.
 query {
-    for n in studentsQueryable do
+    for n in db.Student do
     join e in db.CourseSelection
         on (n.StudentID = e.StudentID)
     count
@@ -904,7 +904,7 @@ SELECT DISTINCT StudentID FROM CourseSelection
 ```fsharp
 // Join with distinct.
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     join selection in db.CourseSelection
         on (student.StudentID = selection.StudentID)
     distinct
@@ -922,7 +922,7 @@ SELECT DISTINCT COUNT(StudentID) FROM CourseSelection
 ```fsharp
 // Join with distinct and count.
 query {
-    for n in studentsQueryable do
+    for n in db.Student do
     join e in db.CourseSelection
         on (n.StudentID = e.StudentID)
     distinct
@@ -942,7 +942,7 @@ WHERE Student.Age BETWEEN 10 AND 15
 ```fsharp
 // Selecting students with ages between 10 and 15.
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     where (student.Age ?>= 10 && student.Age ?< 15)
     select student
 }
@@ -960,7 +960,7 @@ WHERE Student.Age = 11 OR Student.Age = 12
 ```fsharp
 // Selecting students with age that's either 11 or 12.
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     where (student.Age.Value = 11 &#124;&#124; student.Age.Value = 12)
     select student
 }
@@ -979,7 +979,7 @@ ORDER BY Student.Age DESC
 ```fsharp
 // Selecting students in a certain age range and sorting.
 query {
-    for n in studentsQueryable do
+    for n in db.Student do
     where (n.Age.Value = 12 &#124;&#124; n.Age.Value = 13)
     sortByNullableDescending n.Age
     select n
@@ -1000,7 +1000,7 @@ ORDER BY Student.Name DESC
 // Selecting students with certain ages,
 // taking account of the possibility of nulls.
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     where
         ((student.Age.HasValue && student.Age.Value = 11) &#124;&#124;
          (student.Age.HasValue && student.Age.Value = 12))
@@ -1028,7 +1028,7 @@ SELECT * FROM lastStudent
 ```fsharp
 let query1 =
     query {
-        for n in studentsQueryable do
+        for n in db.Student do
         select (n.Name, n.Age)
     }
 
@@ -1058,7 +1058,7 @@ SELECT * FROM LastStudent
 ```fsharp
 let query1 =
     query {
-        for n in studentsQueryable do
+        for n in db.Student do
         select (n.Name, n.Age)
     }
 
@@ -1088,7 +1088,7 @@ FROM Student
 ```fsharp
 // Using if statement to alter results for special value.
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     select
         (if student.Age.HasValue && student.Age.Value = -1 then
              (student.StudentID, System.Nullable<int>(100), student.Age)
@@ -1114,7 +1114,7 @@ FROM Student
 ```fsharp
 // Using if statement to alter results for special values.
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     select
         (if student.Age.HasValue && student.Age.Value = -1 then
              (student.StudentID, System.Nullable<int>(100), student.Age)
@@ -1135,7 +1135,7 @@ SELECT * FROM Student, Course
 ```fsharp
 // Multiple table select.
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     for course in db.Course do
     select (student, course)
 }
@@ -1157,7 +1157,7 @@ ON Course.CourseID = CourseSelection.CourseID
 ```fsharp
 // Multiple joins.
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     join courseSelection in db.CourseSelection
         on (student.StudentID = courseSelection.StudentID)
     join course in db.Course
@@ -1182,7 +1182,7 @@ ON Course.CourseID = CourseSelection.CourseID
 ```fsharp
 // Using leftOuterJoin with multiple joins.
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     leftOuterJoin courseSelection in db.CourseSelection
         on (student.StudentID = courseSelection.StudentID) into g1
     for courseSelection in g1.DefaultIfEmpty() do
@@ -1383,7 +1383,7 @@ let courseSelections = [
 ]
 
 // Convert to queryable collections for LINQ operations
-let studentsQueryable = students.AsQueryable()
+let db.Student = students.AsQueryable()
 let coursesQueryable = courses.AsQueryable()
 let courseSelectionsQueryable = courseSelections.AsQueryable()
 
@@ -1396,7 +1396,7 @@ type Nullable<'T when 'T : ( new : unit -> 'T) and 'T : struct and 'T :> ValueTy
 
 printfn "\ncontains query operator"
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     select student.Age.Value
     contains 11
 }
@@ -1404,7 +1404,7 @@ query {
 
 printfn "\ncount query operator"
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     select student
     count
 }
@@ -1432,7 +1432,7 @@ query {
 printfn "\nexactlyOne query operator."
 let student2 =
     query {
-        for student in studentsQueryable do
+        for student in db.Student do
         where (student.StudentID = 1)
         select student
         exactlyOne
@@ -1442,7 +1442,7 @@ printfn "Student with StudentID = 1 is %s" student2.Name
 printfn "\nexactlyOneOrDefault query operator."
 let student3 =
     query {
-        for student in studentsQueryable do
+        for student in db.Student do
         where (student.StudentID = 1)
         select student
         exactlyOneOrDefault
@@ -1452,7 +1452,7 @@ printfn "Student with StudentID = 1 is %s" student3.Name
 printfn "\nheadOrDefault query operator."
 let student4 =
     query {
-        for student in studentsQueryable do
+        for student in db.Student do
         select student
         headOrDefault
     }
@@ -1460,14 +1460,14 @@ printfn "head student is %s" student4.Name
 
 printfn "\nselect query operator."
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     select student
 }
 |> Seq.iter (fun student -> printfn "StudentID, Name: %d %s" student.StudentID student.Name)
 
 printfn "\nwhere query operator."
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     where (student.StudentID > 4)
     select student
 }
@@ -1476,20 +1476,20 @@ query {
 printfn "\nminBy query operator."
 let student5 =
     query {
-        for student in studentsQueryable do
+        for student in db.Student do
         minBy student.StudentID
     }
 
 printfn "\nmaxBy query operator."
 let student6 =
     query {
-        for student in studentsQueryable do
+        for student in db.Student do
         maxBy student.StudentID
     }
 
 printfn "\ngroupBy query operator."
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     groupBy student.Age into g
     select (g.Key, g.Count())
 }
@@ -1497,7 +1497,7 @@ query {
 
 printfn "\nsortBy query operator."
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     sortBy student.Name
     select student
 }
@@ -1505,7 +1505,7 @@ query {
 
 printfn "\nsortByDescending query operator."
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     sortByDescending student.Name
     select student
 }
@@ -1513,7 +1513,7 @@ query {
 
 printfn "\nthenBy query operator."
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     where student.Age.HasValue
     sortBy student.Age.Value
     thenBy student.Name
@@ -1523,7 +1523,7 @@ query {
 
 printfn "\nthenByDescending query operator."
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     where student.Age.HasValue
     sortBy student.Age.Value
     thenByDescending student.Name
@@ -1533,7 +1533,7 @@ query {
 
 printfn "\ngroupValBy query operator."
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     groupValBy student.Name student.Age into g
     select (g, g.Key, g.Count())
 }
@@ -1543,56 +1543,56 @@ query {
 
 printfn "\n sumByNullable query operator"
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     sumByNullable student.Age
 }
 |> (fun sum -> printfn "Sum of ages: %s" (sum.Print()))
 
 printfn "\n minByNullable"
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     minByNullable student.Age
 }
 |> (fun age -> printfn "Minimum age: %s" (age.Print()))
 
 printfn "\n maxByNullable"
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     maxByNullable student.Age
 }
 |> (fun age -> printfn "Maximum age: %s" (age.Print()))
 
 printfn "\n averageBy"
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     averageBy (float student.StudentID)
 }
 |> printfn "Average student ID: %f"
 
 printfn "\n averageByNullable"
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     averageByNullable (Nullable.float student.Age)
 }
 |> (fun avg -> printfn "Average age: %s" (avg.Print()))
 
 printfn "\n find query operator"
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     find (student.Name = "Abercrombie, Kim")
 }
 |> (fun student -> printfn "Found a match with StudentID = %d" student.StudentID)
 
 printfn "\n all query operator"
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     all (SqlMethods.Like(student.Name, "%,%"))
 }
 |> printfn "Do all students have a comma in the name? %b"
 
 printfn "\n head query operator"
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     head
 }
 |> (fun student -> printfn "Found the head student with StudentID = %d" student.StudentID)
@@ -1606,7 +1606,7 @@ query {
 
 printfn "\n skip query operator"
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     skip 1
 }
 |> Seq.iter (fun student -> printfn "StudentID = %d" student.StudentID)
@@ -1621,14 +1621,14 @@ query {
 
 printfn "\n sumBy query operator"
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     sumBy student.StudentID
 }
 |> printfn "Sum of student IDs: %d"
 
 printfn "\n take query operator"
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     select student
     take 2
 }
@@ -1643,7 +1643,7 @@ query {
 
 printfn "\n sortByNullable query operator"
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     sortByNullable student.Age
     select student
 }
@@ -1652,7 +1652,7 @@ query {
 
 printfn "\n sortByNullableDescending query operator"
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     sortByNullableDescending student.Age
     select student
 }
@@ -1661,7 +1661,7 @@ query {
 
 printfn "\n thenByNullable query operator"
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     sortBy student.Name
     thenByNullable student.Age
     select student
@@ -1671,7 +1671,7 @@ query {
 
 printfn "\n thenByNullableDescending query operator"
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     sortBy student.Name
     thenByNullableDescending student.Age
     select student
@@ -1681,21 +1681,21 @@ query {
 
 printfn "All students: "
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     select student
 }
 |> Seq.iter (fun student -> printfn "%s %d %s" student.Name student.StudentID (student.Age.Print()))
 
 printfn "\nCount of students: "
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     count
 }
 |> (fun count -> printfn "Student count: %d" count)
 
 printfn "\nExists."
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     where
         (query {
             for courseSelection in db.CourseSelection do
@@ -1706,7 +1706,7 @@ query {
 
 printfn "\n Group by age and count"
 query {
-    for n in studentsQueryable do
+    for n in db.Student do
     groupBy n.Age into g
     select (g.Key, g.Count())
 }
@@ -1714,7 +1714,7 @@ query {
 
 printfn "\n Group value by age."
 query {
-    for n in studentsQueryable do
+    for n in db.Student do
     groupValBy n.Age n.Age into g
     select (g.Key, g.Count())
 }
@@ -1722,7 +1722,7 @@ query {
 
 printfn "\nGroup students by age where age > 10."
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     groupBy student.Age into g
     where (g.Key.HasValue && g.Key.Value > 10)
     select (g, g.Key)
@@ -1734,7 +1734,7 @@ query {
 
 printfn "\nGroup students by age and print counts of number of students at each age with more than 1 student."
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     groupBy student.Age into group
     where (group.Count() > 1)
     select (group.Key, group.Count())
@@ -1744,7 +1744,7 @@ query {
 
 printfn "\nGroup students by age and sum ages."
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     groupBy student.Age into g
     let total = query { for student in g do sumByNullable student.Age }
     select (g.Key, g.Count(), total)
@@ -1756,7 +1756,7 @@ query {
 
 printfn "\nGroup students by age and count number of students at each age, and display all with count > 1 in descending order of count."
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     groupBy student.Age into g
     where (g.Count() > 1)
     sortByDescending (g.Count())
@@ -1771,7 +1771,7 @@ let idList = [1; 2; 5; 10]
 let idQuery =
     query { for id in idList do select id }
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     where (idQuery.Contains(student.StudentID))
     select student
 }
@@ -1780,7 +1780,7 @@ query {
 
 printfn "\nLook for students with Name match _e%% pattern and take first two."
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     where (SqlMethods.Like( student.Name, "_e%") )
     select student
     take 2
@@ -1789,7 +1789,7 @@ query {
 
 printfn "\nLook for students with Name matching [abc]%% pattern."
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     where (SqlMethods.Like( student.Name, "[abc]%") )
     select student
 }
@@ -1797,7 +1797,7 @@ query {
 
 printfn "\nLook for students with name matching [^abc]%% pattern."
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     where (SqlMethods.Like( student.Name, "[^abc]%") )
     select student
 }
@@ -1805,7 +1805,7 @@ query {
 
 printfn "\nLook for students with name matching [^abc]%% pattern and select ID."
 query {
-    for n in studentsQueryable do
+    for n in db.Student do
     where (SqlMethods.Like( n.Name, "[^abc]%") )
     select n.StudentID
 }
@@ -1813,7 +1813,7 @@ query {
 
 printfn "\n Using Contains as a query filter."
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     where (student.Name.Contains("a"))
     select student
 }
@@ -1822,14 +1822,14 @@ query {
 printfn "\nSearching for names from a list."
 let names = [|"a";"b";"c"|]
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     if names.Contains (student.Name) then select student
 }
 |> Seq.iter (fun student -> printfn "%s" student.Name)
 
 printfn "\nJoin Student and CourseSelection tables."
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     join selection in db.CourseSelection
         on (student.StudentID = selection.StudentID)
     select (student, selection)
@@ -1838,7 +1838,7 @@ query {
 
 printfn "\nLeft Join Student and CourseSelection tables."
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     leftOuterJoin selection in db.CourseSelection
         on (student.StudentID = selection.StudentID) into result
     for selection in result.DefaultIfEmpty() do
@@ -1853,7 +1853,7 @@ query {
 
 printfn "\nJoin with count"
 query {
-    for n in studentsQueryable do
+    for n in db.Student do
     join e in db.CourseSelection
         on (n.StudentID = e.StudentID)
     count
@@ -1862,7 +1862,7 @@ query {
 
 printfn "\n Join with distinct."
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     join selection in db.CourseSelection
         on (student.StudentID = selection.StudentID)
     distinct
@@ -1871,7 +1871,7 @@ query {
 
 printfn "\n Join with distinct and count."
 query {
-    for n in studentsQueryable do
+    for n in db.Student do
     join e in db.CourseSelection
         on (n.StudentID = e.StudentID)
     distinct
@@ -1881,7 +1881,7 @@ query {
 
 printfn "\n Selecting students with age between 10 and 15."
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     where (student.Age.Value >= 10 && student.Age.Value < 15)
     select student
 }
@@ -1889,7 +1889,7 @@ query {
 
 printfn "\n Selecting students with age either 11 or 12."
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     where (student.Age.Value = 11 || student.Age.Value = 12)
     select student
 }
@@ -1897,7 +1897,7 @@ query {
 
 printfn "\n Selecting students in a certain age range and sorting."
 query {
-    for n in studentsQueryable do
+    for n in db.Student do
     where (n.Age.Value = 12 || n.Age.Value = 13)
     sortByNullableDescending n.Age
     select n
@@ -1906,7 +1906,7 @@ query {
 
 printfn "\n Selecting students with certain ages, taking account of possibility of nulls."
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     where
         ((student.Age.HasValue && student.Age.Value = 11) ||
          (student.Age.HasValue && student.Age.Value = 12))
@@ -1919,7 +1919,7 @@ query {
 printfn "\n Union of two queries."
 module Queries =
     let query1 = query {
-        for n in studentsQueryable do
+        for n in db.Student do
         select (n.Name, n.Age)
     }
 
@@ -1934,7 +1934,7 @@ module Queries =
 printfn "\n Intersect of two queries."
 module Queries2 =
     let query1 = query {
-        for n in studentsQueryable do
+        for n in db.Student do
         select (n.Name, n.Age)
     }
 
@@ -1948,7 +1948,7 @@ module Queries2 =
 
 printfn "\n Using if statement to alter results for special value."
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     select
         (if student.Age.HasValue && student.Age.Value = -1 then
             (student.StudentID, System.Nullable<int>(100), student.Age)
@@ -1958,7 +1958,7 @@ query {
 
 printfn "\n Using if statement to alter results special values."
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     select
         (if student.Age.HasValue && student.Age.Value = -1 then
             (student.StudentID, System.Nullable<int>(100), student.Age)
@@ -1970,7 +1970,7 @@ query {
 
 printfn "\n Multiple table select."
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     for course in db.Course do
     select (student, course)
 }
@@ -1981,7 +1981,7 @@ query {
 
 printfn "\nMultiple Joins"
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     join courseSelection in db.CourseSelection
         on (student.StudentID = courseSelection.StudentID)
     join course in db.Course
@@ -1992,7 +1992,7 @@ query {
 
 printfn "\nMultiple Left Outer Joins"
 query {
-    for student in studentsQueryable do
+    for student in db.Student do
     leftOuterJoin courseSelection in db.CourseSelection
         on (student.StudentID = courseSelection.StudentID) into g1
     for courseSelection in g1.DefaultIfEmpty() do

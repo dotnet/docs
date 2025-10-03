@@ -97,7 +97,7 @@ Next, examine the following code that performs arithmetic with points:
 
 Traditional extension methods can't add operators to existing types. You must implement arithmetic operations manually, making the code verbose and harder to read. The algorithm gets duplicated whenever the operation is needed, which creates more opportunities for small mistakes to enter the code base. It's better to place that code in one location. Add the following operators to your extension block in `NewExtensionsMembers.cs`:
 
-:::code language="csharp" source="snippets/PointExtensions/NewExtensionMembers.cs" id="ArithmeticOperators":::
+:::code language="csharp" source="snippets/PointExtensions/NewExtensionsMembers.cs" id="ArithmeticOperators":::
 
 Extension members enable you to add operators directly to existing types. Now you can perform arithmetic operations using natural syntax:
 

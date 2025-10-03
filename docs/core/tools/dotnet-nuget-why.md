@@ -38,7 +38,7 @@ To use the command with projects that can't be restored with the .NET SDK, you c
 
 - **`PROJECT|SOLUTION`**
 
-  The project or solution file to operate on. 
+  The project or solution file to operate on.
   If a directory is specified, the command searches the directory for a project or solution file.
   If more than one project or solution is found, an error is thrown.
   If no value is provided, the current working directory is used by default.

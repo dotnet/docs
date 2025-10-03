@@ -217,9 +217,13 @@ The following options are available only when `dotnet` runs an application by us
 
 | Command                                                 | Function                                            |
 |---------------------------------------------------------|-----------------------------------------------------|
+| [dotnet workload clean](dotnet-workload-clean.md)       | Removes workload components.                        |
+| [dotnet workload config](dotnet-workload-config.md)     | Enables or disables workload-set update mode.       |
+| [dotnet workload history](dotnet-workload-history.md)   | Shows all workload installation actions.            |
 | [dotnet workload install](dotnet-workload-install.md)   | Installs an optional workload.                      |
 | [dotnet workload list](dotnet-workload-list.md)         | Lists all installed workloads.                      |
 | [dotnet workload repair](dotnet-workload-repair.md)     | Repairs all installed workloads.                    |
+| [dotnet workload restore](dotnet-workload-restore.md)   | Restore workloads required for a project.           |
 | [dotnet workload search](dotnet-workload-search.md)     | List selected workloads or all available workloads. |
 | [dotnet workload uninstall](dotnet-workload-install.md) | Uninstalls a workload.                              |
 | [dotnet workload update](dotnet-workload-update.md)     | Reinstalls all installed workloads.                 |

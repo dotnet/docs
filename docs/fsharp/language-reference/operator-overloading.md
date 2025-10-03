@@ -126,6 +126,9 @@ Other combinations of operator characters that are not listed here can be used a
 |`)`|`RParen`|
 |`[`|`LBrack`|
 |`]`|`RBrack`|
+|`:`|`Colon`|
+
+Use of `:` in custom operators is partially reserved. It may only be used in operators where the first character is `>` or `.` where the first character after any number of leading `.` is `>` e.g. `>:` or `.>:`.
 
 ## Prefix and Infix Operators
 

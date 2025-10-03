@@ -198,7 +198,6 @@ The following options are available only when `dotnet` runs an application by us
 | [dotnet package list](dotnet-package-list.md)     | Lists NuGet packages.         |
 | [dotnet package remove](dotnet-package-remove.md) | Removes a NuGet package.      |
 | [dotnet package search](dotnet-package-search.md) | Searches for a NuGet package. |
-| [dotnet package update](dotnet-package-update.md) | Updates a NuGet package.      |
 
 ### NuGet commands
 

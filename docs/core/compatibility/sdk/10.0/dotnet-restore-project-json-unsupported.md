@@ -38,7 +38,7 @@ The removal of `project.json` support completes this transition and allows the .
 
 Migrate your `project.json` projects to use PackageReference format instead.
 
-If you have .NET Core based `project.json` projects, you can use older versions of the .NET SDK that still include the [`dotnet migrate` command](/dotnet/core/tools/dotnet-migrate) to convert them to the modern project format.
+If you have .NET Core based `project.json` projects, you can use older versions of the .NET SDK that still include the [`dotnet migrate` command](/previous-versions/dotnet/fundamentals/tools/dotnet-migrate) to convert them to the modern project format.
 
 For more information about migrating from `project.json`, see [Migrating from project.json to .csproj](/nuget/archive/project-json#migrate-projectjson-to-packagereference).
 

@@ -125,7 +125,7 @@ Changes in this category modify the public surface area of a type. Most of the c
 
   While it's a breaking change in the sense that it raises your minimum .NET version to .NET 6, which is when [default interface members](../../csharp/language-reference/keywords/interface.md#default-interface-members) (DIMs) were introduced, adding a static, non-abstract, non-virtual member to an interface is allowed.
 
-  If you [provide an implementation](../../csharp/advanced-topics/interface-implementation/default-interface-methods-versions.md), adding a new member to an existing interface won't necessarily result in compile failures in downstream assemblies. However, not all languages support DIMs. Also, in some scenarios, the runtime can't decide which default interface member to invoke. For these reasons, use judgment when adding a member to an existing interface.
+  If you [provide an implementation](../../csharp/advanced-topics/interface-implementation/default-interface-methods-versions.md), adding a new member to an existing interface won't necessarily result in compile failures in downstream assemblies. However, not all languages support DIMs. Also, in some scenarios, the runtime can't decide which default interface member to invoke. In some scenarios, interfaces are implemented by `ref struct` types. Because `ref struct` types can't be boxed, they can't be converted to interface types. Therefore, `ref struct` types must provide an implicit implementation for every interface member. They can't make use of the default implementation provided by the interface. For these reasons, use judgment when adding a member to an existing interface.
 
 - ❌ **DISALLOWED: Changing the value of a public constant or enumeration member**
 

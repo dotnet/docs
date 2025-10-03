@@ -25,7 +25,7 @@ For more information and examples, see [Interfaces](../../fundamentals/types/int
 
 An interface can be a member of a namespace or a class. A top-level interface, one declared in a namespace but not nested inside another type, can be declared `public` or `internal`. The default is `internal`. Nested interface declarations, those declared inside another type, can be declared using any access modifier.
 
-Interface members without an implementation can't include an access modifier. Members with a default implementation can include any access modifier.
+Interface members without an implementation are `public` by default. Members with an implementation are `private` by default. Interface members can include any access modifier.
 
 ## Interface members
 
@@ -41,7 +41,7 @@ An interface declaration can contain the following members:
 - [Nested types](../../programming-guide/classes-and-structs/nested-types.md).
 - [Static fields, methods, properties, indexers, and events](static.md).
 - [Member declarations using the explicit interface implementation syntax](~/_csharplang/proposals/csharp-8.0/default-interface-methods.md#explicit-implementation-in-interfaces).
-- Explicit access modifiers (the default access is [`public`](access-modifiers.md)).
+- Explicit access modifiers (the default access for abstract methods is [`public`](access-modifiers.md)).
 
 ## Default interface members
 
@@ -61,7 +61,7 @@ You can try this feature by working with the tutorial on [static abstract member
 
 ## Interface inheritance
 
-Interfaces cannot contain instance state. While static fields are now permitted, instance fields aren't permitted in interfaces. [Instance auto-properties](../../programming-guide/classes-and-structs/auto-implemented-properties.md) aren't supported in interfaces, as they would implicitly declare a hidden field. This rule has a subtle effect on property declarations. In an interface declaration, the following code doesn't declare an automatically implemented property as it does in a `class` or `struct`. Instead, it declares a property that doesn't have a default implementation but must be implemented in any type that implements the interface:
+Interfaces can't contain instance state. While static fields are now permitted, instance fields aren't permitted in interfaces. [Instance auto-properties](../../programming-guide/classes-and-structs/auto-implemented-properties.md) aren't supported in interfaces, as they would implicitly declare a hidden field. This rule has a subtle effect on property declarations. In an interface declaration, the following code doesn't declare an automatically implemented property as it does in a `class` or `struct`. Instead, it declares a property that doesn't have a default implementation but must be implemented in any type that implements the interface:
 
 ```csharp
 public interface INamed

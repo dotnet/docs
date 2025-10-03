@@ -172,16 +172,11 @@ The record pattern is used to decompose records to extract the values of fields.
 
 ## Wildcard Pattern
 
-The wildcard pattern is represented by the underscore (`_`) character and matches any input, just like the variable pattern, except that the input is discarded instead of assigned to a variable. The wildcard pattern is often used within other patterns as a placeholder for values that are not needed in the expression to the right of the `->` symbol. The wildcard pattern is also frequently used at the end of a list of patterns to match any unmatched input.
+The wildcard pattern is represented by the underscore (`_`) character and matches any input, just like the variable pattern, except that the input is discarded instead of assigned to a variable. The wildcard pattern is often used within other patterns as a placeholder for values that are not needed in the expression to the right of the `->` symbol. The wildcard pattern is also frequently used at the end of a list of patterns to match any unmatched input. The wildcard pattern is demonstrated in many code examples in this topic. See the preceding code for one example.
 
-In addition to matching any input, the wildcard pattern can effectively match "nothing" in certain contexts:
-
-- When used in function parameters, it ignores the arguments entirely, treating them as if they were not there.
-- When destructuring data structures, it ignores specific elements that are not needed.
+The following code shows some additional uses of the wildcard pattern:
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet4818.fs)]
-
-The wildcard pattern is demonstrated in many code examples in this topic. See the preceding code for one example.
 
 ## Patterns That Have Type Annotations
 

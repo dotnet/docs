@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace ca1001
 {
@@ -8,7 +8,7 @@ namespace ca1001
     {
         // CA1002: Change 'List<string>' in 'MutableItems.Items' to
         // use 'Collection<T>', 'ReadOnlyCollection<T>' or 'KeyedCollection<K,V>'.
-        public List<string> Items { get; } = new List<string>();
+        public List<string> Items { get; } = [];
 
         public void Add(string item)
         {
@@ -19,7 +19,7 @@ namespace ca1001
     // This class satisfies the rule.
     public class ReadOnlyItems
     {
-        private readonly List<string> _items = new List<string>();
+        private readonly List<string> _items = [];
 
         public IReadOnlyCollection<string> Items => _items.AsReadOnly();
 

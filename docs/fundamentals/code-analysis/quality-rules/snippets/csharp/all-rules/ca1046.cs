@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 
 namespace ca1046
 {
@@ -24,8 +24,8 @@ namespace ca1046
     {
         public static void Main1046()
         {
-            MyReferenceType a = new MyReferenceType(2, 2);
-            MyReferenceType b = new MyReferenceType(2, 2);
+            MyReferenceType a = new(2, 2);
+            MyReferenceType b = new(2, 2);
             MyReferenceType c = a;
 
             Console.WriteLine($"a = new {a} and b = new {b} are equal? {(a.Equals(b) ? "Yes" : "No")}");

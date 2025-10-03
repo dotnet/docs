@@ -78,6 +78,7 @@ The following commands are installed by default:
 - [`package list`](dotnet-package-list.md)
 - [`package remove`](dotnet-package-remove.md)
 - [`package search`](dotnet-package-search.md)
+- [`package update`](dotnet-package-update.md)
 - [`reference add`](dotnet-reference-add.md)
 - [`reference list`](dotnet-reference-list.md)
 - [`reference remove`](dotnet-reference-remove.md)
@@ -96,14 +97,15 @@ The following commands are installed by default:
 - [`nuget verify`](dotnet-nuget-verify.md) (Available since .NET 5 SDK)
 - [`nuget trust`](dotnet-nuget-trust.md) (Available since .NET 5 SDK)
 - [`nuget sign`](dotnet-nuget-sign.md) (Available since .NET 6 SDK)
-- [`package search`](dotnet-package-search.md) (Available since .NET 8.0.2xx SDK)
 - [`nuget why`](dotnet-nuget-why.md) (Available since .NET 8.0.4xx SDK)
 
 ### Workload management commands
 
 - [`workload`](dotnet-workload.md) (Available since .NET 7 SDK)
+- [`workload clean`](dotnet-workload-clean.md) (Available since .NET 6 SDK)
 - [`workload config`](dotnet-workload-config.md) (Available since .NET 8.0.400 SDK)
 - [`workload install`](dotnet-workload-install.md) (Available since .NET 6 SDK)
+- [`workload history`](dotnet-workload-history.md) (Available since .NET 6 SDK)
 - [`workload list`](dotnet-workload-list.md) (Available since .NET 6 SDK)
 - [`workload update`](dotnet-workload-update.md) (Available since .NET 6 SDK)
 - [`workload restore`](dotnet-workload-restore.md) (Available since .NET 6 SDK)

@@ -3,23 +3,15 @@
     //<snippet1>
     public class Book
     {
-        private readonly string? _Title;
-
         public Book(string title)
         {
-            if (title != null)
-            {
-                // Violates this rule
-                title.Trim();
-            }
+            // Violates this rule.
+            title?.Trim();
 
-            _Title = title;
+            Title = title;
         }
 
-        public string? Title
-        {
-            get { return _Title; }
-        }
+        public string? Title { get; }
     }
     //</snippet1>
 }
@@ -29,22 +21,13 @@ namespace ca1806_2
     //<snippet2>
     public class Book
     {
-        private readonly string? _Title;
-
         public Book(string title)
         {
-            if (title != null)
-            {
-                title = title.Trim();
-            }
-
-            _Title = title;
+            // Fixes the violation.
+            Title = title?.Trim();
         }
 
-        public string? Title
-        {
-            get { return _Title; }
-        }
+        public string? Title { get; }
     }
     //</snippet2>
 }
@@ -54,13 +37,11 @@ namespace ca1806_3
     //<snippet3>
     public class Book
     {
-        public Book()
-        {
-        }
+        public Book() { }
 
         public static Book CreateBook()
         {
-            // Violates this rule
+            // Violates this rule.
             new Book();
             return new Book();
         }
@@ -73,12 +54,11 @@ namespace ca1806_4
     //<snippet4>
     public class Book
     {
-        public Book()
-        {
-        }
+        public Book() { }
 
         public static Book CreateBook()
         {
+            // Fixes the violation.
             return new Book();
         }
     }

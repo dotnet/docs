@@ -10,9 +10,9 @@ items:
   - name: Overview
     href: dotnet-ai-ecosystem.md
   - name: Microsoft.Extensions.AI
-    href: microsoft-extensions-ai.md
-  - name: Semantic Kernel
-    href: semantic-kernel-dotnet-overview.md
+    href: microsoft-extensions-ai.md    
+  - name: Microsoft Agent Framework
+    href: /agent-framework/overview/agent-framework-overview?toc=/dotnet/ai/toc.json&bc=/dotnet/ai/toc.json
   - name: C# SDK for MCP
     href: get-started-mcp.md
 - name: Quickstarts
@@ -41,6 +41,8 @@ items:
   items:
   - name: How generative AI and LLMs work
     href: conceptual/how-genai-and-llms-work.md
+  - name: Building agents in .NET
+    href: conceptual/agents.md
   - name: Tokens
     href: conceptual/understanding-tokens.md
   - name: Embeddings

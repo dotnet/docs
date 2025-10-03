@@ -1,7 +1,7 @@
 ---
 title: F# code formatting guidelines
 description: Learn guidelines for formatting F# code.
-ms.date: 11/01/2023
+ms.date: 10/02/2025
 ---
 # F# code formatting guidelines
 
@@ -538,6 +538,41 @@ let useAddEntry () =
         // foo
         bar ()
 ```
+
+### Formatting lazy expressions
+
+When writing single-line lazy expressions, keep everything on one line:
+
+```fsharp
+// ✔️ OK
+let x = lazy (computeValue())
+
+// ✔️ OK  
+let y = lazy (a + b)
+```
+
+For multiline lazy expressions, place the opening parenthesis on the same line as the `lazy` keyword, with the expression body indented one level and the closing parenthesis aligned with the opening:
+
+```fsharp
+// ✔️ OK
+let v =
+    lazy (
+        // some code
+        let x = computeExpensiveValue()
+        let y = computeAnotherValue()
+        x + y
+    )
+
+// ✔️ OK
+let handler =
+    lazy (
+        let connection = openConnection()
+        let data = fetchData connection
+        processData data
+    )
+```
+
+This follows the same pattern as other function applications with multiline arguments. The opening parenthesis stays with `lazy`, and the expression is indented one level.
 
 ### Formatting arithmetic and binary expressions
 

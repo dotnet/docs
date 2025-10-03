@@ -654,7 +654,7 @@ Convert all serialization code in this #solution from Newtonsoft.Json to System.
 - Generate a migration summary
 ```
 
-Review Copilot's suggestions before applying. For more information, see [Copilot FAQs](https://aka.ms/copilot-general-use-faqs).
+Review Copilot's suggestions before applying them. For more information GitHub Copilot, see GitHub's [FAQs](https://github.com/features/copilot#faq).
 
 ## Additional resources
 

@@ -25,7 +25,7 @@ For more information and examples, see [Interfaces](../../fundamentals/types/int
 
 An interface can be a member of a namespace or a class. A top-level interface, one declared in a namespace but not nested inside another type, can be declared `public` or `internal`. The default is `internal`. Nested interface declarations, those declared inside another type, can be declared using any access modifier.
 
-Interface members without an implementation are `public` by default. Members with an implementation are `private` by default. Interface members can include any access modifier.
+Interface members *without* an implementation (abstract members) are implicitly `public` and cannot have any other access modifier. Interface members *with* a default implementation are `private` by default if no access modifier is specified, but can be declared with any access modifier (`public`, `private`, `protected`, or `internal`).
 
 ## Interface members
 

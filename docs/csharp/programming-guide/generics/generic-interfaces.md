@@ -26,7 +26,7 @@ The rules of inheritance that apply to classes also apply to interfaces:
 
 :::code language="csharp" source="./snippets/GenericInterfaces.cs" id="Months":::
 
-Generic interfaces can inherit from non-generic interfaces if the generic interface is covariant, which means it only uses its type parameter as a return value. In the .NET class library, <xref:System.Collections.Generic.IEnumerable%601> inherits from <xref:System.Collections.IEnumerable> because <xref:System.Collections.Generic.IEnumerable%601> only uses `T` in the return value of <xref:System.Collections.Generic.IEnumerable%601.GetEnumerator%2A> and in the <xref:System.Collections.Generic.IEnumerator%601.Current%2A> property getter.
+Generic interfaces can inherit from non-generic interfaces. In the .NET class library, <xref:System.Collections.Generic.IEnumerable%601> inherits from <xref:System.Collections.IEnumerable>. When a generic interface inherits from a non-generic interface, the type parameter typically replaces `object` in the overridden members. For example, <xref:System.Collections.Generic.IEnumerable%601> uses `T` in place of `object` in the return value of <xref:System.Collections.Generic.IEnumerable%601.GetEnumerator%2A> and in the <xref:System.Collections.Generic.IEnumerator%601.Current%2A> property getter. Because `T` is used only in output positions in these members, <xref:System.Collections.Generic.IEnumerable%601> can be marked as covariant. If `T` were used in an input position in an overridden member, the interface couldn't be covariant, and the compiler would generate an error.
 
 Concrete classes can implement closed constructed interfaces, as follows:
 

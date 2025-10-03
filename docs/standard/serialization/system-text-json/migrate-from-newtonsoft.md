@@ -2,7 +2,7 @@
 title: "Migrate from Newtonsoft.Json to System.Text.Json - .NET"
 description: "Learn about the differences between Newtonsoft.Json and System.Text.Json and how to migrate to System.Text.Json."
 no-loc: [System.Text.Json, Newtonsoft.Json]
-ms.date: 10/02/2025
+ms.date: 10/03/2025
 helpviewer_keywords:
   - "JSON serialization"
   - "serializing objects"
@@ -641,7 +641,8 @@ Newtonsoft parses `NaN`, `Infinity`, and `-Infinity` JSON string tokens. With Sy
 
 ## Use AI for solution-wide migration
 
-You can use AI tools, such as GitHub Copilot, to help with migrating your solution from `Newtonsoft.Json` to `System.Text.Json` directly within your IDE, using a tailored prompt that reflects your project’s specific serialization patterns and requirements.
+You can use AI tools, such as GitHub Copilot, to help with migrating your solution code from `Newtonsoft.Json` to `System.Text.Json` directly within your IDE. You can use a tailored prompt that reflects your project’s specific serialization patterns and requirements.
+Here's an example prompt you can use in Visual Studio Copilot Chat to migrate a solution. 
 
 **Example prompt for Copilot Chat**
 
@@ -654,7 +655,7 @@ Convert all serialization code in this #solution from Newtonsoft.Json to System.
 - Generate a migration summary
 ```
 
-Review Copilot’s suggestions before applying. For more information, see [Copilot FAQs](https://aka.ms/copilot-general-use-faqs).
+It's recommended that you review Copilot's suggestions before applying them. For more information, see [Copilot FAQs](https://aka.ms/copilot-general-use-faqs).
 
 ## Additional resources
 

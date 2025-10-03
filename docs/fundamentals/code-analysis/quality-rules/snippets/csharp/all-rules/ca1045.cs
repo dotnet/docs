@@ -58,53 +58,32 @@ namespace ca1045
     // Redesigned version does not use out or ref parameters;
     // instead, it returns this container type.
 
-    public class ReplyData
+    public record class ReplyData(string Reply, Actions Action, bool ReturnReply = false)
     {
-        bool _returnReply;
-
-        // Constructors.
-        public ReplyData()
-        {
-            Reply = string.Empty;
-            Action = Actions.Discard;
-            _returnReply = false;
-        }
-
-        public ReplyData(Actions action, string reply, bool returnReply)
-        {
-            Reply = reply;
-            Action = action;
-            _returnReply = returnReply;
-        }
-
-        // Properties.
-        public string Reply { get; }
-        public Actions Action { get; }
-
         public override string ToString()
         {
             return string.Format("Reply: {0} Action: {1} return? {2}",
-               Reply, Action.ToString(), _returnReply.ToString());
+               Reply, Action.ToString(), ReturnReply.ToString());
         }
     }
 
     public class RedesignedRefAndOut
     {
-        public static ReplyData ReplyInformation(TypeOfFeedback input)
+        public static ReplyData? ReplyInformation(TypeOfFeedback input)
         {
             string replyText = "Your feedback has been forwarded " +
                "to the product manager.";
-            ReplyData answer = input switch
+            ReplyData? answer = input switch
             {
                 TypeOfFeedback.Complaint or TypeOfFeedback.Praise => new ReplyData(
-                                       Actions.ForwardToManagement,
                                        "Thank you. " + replyText,
+                                       Actions.ForwardToManagement,
                                        true),
                 TypeOfFeedback.Suggestion => new ReplyData(
-                                       Actions.ForwardToDeveloper,
                                        replyText,
+                                       Actions.ForwardToDeveloper,
                                        true),
-                _ => new ReplyData(),
+                _ => null,
             };
             return answer;
         }
@@ -122,9 +101,9 @@ namespace ca1045
             string[] reply = new string[5];
 
             // You must initialize a ref parameter.
-            Actions[] action = {Actions.Unknown,Actions.Unknown,
+            Actions[] action = [Actions.Unknown,Actions.Unknown,
                              Actions.Unknown,Actions.Unknown,
-                             Actions.Unknown,Actions.Unknown};
+                             Actions.Unknown,Actions.Unknown];
             bool[] disposition = new bool[5];
             int i = 0;
 

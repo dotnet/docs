@@ -14,7 +14,7 @@ namespace ca1810
         {
             someInteger = 3;
             ResourceManager stringManager =
-               new ResourceManager("strings", Assembly.GetExecutingAssembly());
+               new("strings", Assembly.GetExecutingAssembly());
             resourceString = stringManager.GetString("string");
         }
 
@@ -32,7 +32,7 @@ namespace ca1810
         static string? InitializeResourceString()
         {
             ResourceManager stringManager =
-               new ResourceManager("strings", Assembly.GetExecutingAssembly());
+               new("strings", Assembly.GetExecutingAssembly());
             return stringManager.GetString("string");
         }
 

@@ -64,7 +64,6 @@ The following commands are installed by default:
 - [`test`](dotnet-test.md)
 - [`vstest`](dotnet-vstest.md)
 - [`pack`](dotnet-pack.md)
-- [`migrate`](dotnet-migrate.md)
 - [`clean`](dotnet-clean.md)
 - [`sln`](dotnet-sln.md)
 - [`help`](dotnet-help.md)

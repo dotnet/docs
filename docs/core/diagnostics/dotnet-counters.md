@@ -1,7 +1,7 @@
 ---
 title: dotnet-counters diagnostic tool - .NET CLI
 description: Learn how to install and use the dotnet-counter CLI tool for ad-hoc health monitoring and first-level performance investigation.
-ms.date: 11/17/2020
+ms.date: 09/06/2025
 ms.topic: reference
 ---
 # Investigate performance counters (dotnet-counters)
@@ -12,15 +12,34 @@ Counters can be read from applications running .NET 5 or later.
 
 ## Install
 
-There are two ways to download and install `dotnet-counters`:
+There are three ways to download and use `dotnet-counters`:
+
+- **One-shot execution (recommended):**
+
+  Starting with .NET 10.0.100, you can run `dotnet-counters` without permanent installation using [`dnx`](../tools/dotnet-tool-exec.md):
+
+  ```dotnetcli
+  dnx dotnet-counters [options]
+  ```
+
+  For example:
+
+  ```dotnetcli
+  dnx dotnet-counters monitor --process-id 1234
+  ```
+
+  This approach automatically downloads and runs the latest version without permanently modifying your system.
 
 - **dotnet global tool:**
 
-  To install the latest release version of the `dotnet-counters` [NuGet package](https://www.nuget.org/packages/dotnet-counters), use the [dotnet tool install](../tools/dotnet-tool-install.md) command:
+  To install the latest release version of the `dotnet-counters` [NuGet package](https://www.nuget.org/packages/dotnet-counters) for frequent use, use the [dotnet tool install](../tools/dotnet-tool-install.md) command:
 
   ```dotnetcli
   dotnet tool install --global dotnet-counters
   ```
+
+  This command installs a `dotnet-counters` binary to your .NET SDK Tools path, which
+you can add to your PATH to easily invoke globally-installed tools.
 
 - **Direct download:**
 
@@ -182,7 +201,7 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
 
   A comma-separated list of counters. Counters can be specified `provider_name[:counter_name]`. If the `provider_name` is used without a qualifying list of counters, then all counters from the provider are shown. To discover provider and counter names, see [built-in metrics](built-in-metrics.md). For [EventCounters](event-counters.md), `provider_name` is the name of the EventSource and for [Meters](metrics.md), `provider_name` is the name of the Meter.
 
- **`-- <command>`**
+- **`-- <command>`**
 
   After the collection configuration parameters, you can append `--` followed by a command to start a .NET application. `dotnet-counters` will launch a process with the provided command and monitor the requested metrics. This is often useful to collect metrics for the application's startup path and can be used to diagnose or monitor issues that happen early before or shortly after the main entry point.
 

@@ -18,6 +18,12 @@ type [accessibility-modifier] type-name =
     [ member-list ]
 ```
 
+The first pipe character (`|`) is optional. For single-case discriminated unions, you can omit it:
+
+```fsharp
+type SingleCase = Case of string
+```
+
 ## Remarks
 
 Discriminated unions are similar to union types in other languages, but there are differences. As with a union type in C++ or a variant type in Visual Basic, the data stored in the value is not fixed; it can be one of several distinct options. Unlike unions in these other languages, however, each of the possible options is given a *case identifier*. The case identifiers are names for the various possible types of values that objects of this type could be; the values are optional. If values are not present, the case is equivalent to an enumeration case. If values are present, each value can either be a single value of a specified type, or a tuple that aggregates multiple fields of the same or different types. You can give an individual field a name, but the name is optional, even if other fields in the same case are named.

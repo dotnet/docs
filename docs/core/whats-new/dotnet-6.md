@@ -2,9 +2,7 @@
 title: What's new in .NET 6
 description: Learn about the new features introduced in .NET 6.
 ms.date: 11/08/2021
-ms.topic: whats-new
-ms.author: gewarren
-author: gewarren
+ms.update-cycle: 3650-days
 ---
 # What's new in .NET 6
 

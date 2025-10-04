@@ -2,6 +2,7 @@
 title: What's new in .NET Core 2.0
 description: Learn about the new features found in .NET Core.
 ms.date: 08/13/2017
+ms.update-cycle: 3650-days
 ---
 # What's new in .NET Core 2.0
 

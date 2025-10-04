@@ -1,11 +1,11 @@
 ---
 title: dotnet publish command
 description: The dotnet publish command publishes a .NET project or solution to a directory.
-ms.date: 01/07/2025
+ms.date: 09/24/2025
 ---
 # dotnet publish
 
-**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
+**This article applies to:** ✔️ .NET 6 and later versions
 
 ## Name
 
@@ -14,7 +14,7 @@ ms.date: 01/07/2025
 ## Synopsis
 
 ```dotnetcli
-dotnet publish [<PROJECT>|<SOLUTION>] [-a|--arch <ARCHITECTURE>]
+dotnet publish [<PROJECT>|<SOLUTION>|<FILE>] [-a|--arch <ARCHITECTURE>]
     [--artifacts-path <ARTIFACTS_DIR>]
     [-c|--configuration <CONFIGURATION>] [--disable-build-servers]
     [-f|--framework <FRAMEWORK>] [--force] [--interactive]
@@ -114,13 +114,7 @@ For more information, see the following resources:
 
 ## Arguments
 
-- **`PROJECT|SOLUTION`**
-
-  The project or solution to publish.
-
-  * `PROJECT` is the path and filename of a C#, F#, or Visual Basic project file, or the path to a directory that contains a C#, F#, or Visual Basic project file. If the directory is not specified, it defaults to the current directory.
-
-  * `SOLUTION` is the path and filename of a solution file (*.sln* or *.slnx* extension), or the path to a directory that contains a solution file. If the directory is not specified, it defaults to the current directory.
+[!INCLUDE [arguments-project-solution-file](../../../includes/cli-arguments-project-solution-file.md)]
 
 ## Options
 
@@ -185,12 +179,6 @@ For more information, see the following resources:
     If you specify a relative path when publishing a project, the generated output directory is relative to the current working directory, not to the project file location.
 
     If you specify a relative path when publishing a solution, all output for all projects goes into the specified folder relative to the current working directory. To make publish output go to separate folders for each project, specify a relative path by using the msbuild `PublishDir` property instead of the `--output` option. For example, `dotnet publish -p:PublishDir=.\publish` sends publish output for each project to a `publish` folder under the folder that contains the project file.
-
-  - .NET Core 2.x SDK
-
-    If you specify a relative path when publishing a project, the generated output directory is relative to the project file location, not to the current working directory.
-
-    If you specify a relative path when publishing a solution, each project's output goes into a separate folder relative to the project file location. If you specify an absolute path when publishing a solution, all publish output for all projects goes into the specified folder.
 
 [!INCLUDE [os](../../../includes/cli-os.md)]
 
@@ -267,6 +255,14 @@ For more information, see the following resources:
   ```dotnetcli
   dotnet publish --no-dependencies
   ```
+
+- Publish the file-based C# program *app.cs* in the current directory:
+
+  ```dotnetcli
+  dotnet publish app.cs
+  ```
+
+  File-based program support was added in .NET SDK 10.0.100.
 
 ## See also
 

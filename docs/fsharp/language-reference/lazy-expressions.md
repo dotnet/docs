@@ -1,7 +1,7 @@
 ---
 title: Lazy Expressions
 description: Learn how F# lazy expressions can improve the performance of your apps and libraries.
-ms.date: 08/15/2020
+ms.date: 10/02/2025
 ---
 # Lazy Expressions
 
@@ -26,6 +26,21 @@ The following code illustrates the use of lazy expressions and the use of `Force
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet73011.fs)]
 
 Lazy evaluation, but not the `Lazy` type, is also used for sequences. For more information, see [Sequences](sequences.md).
+
+## Formatting
+
+For multiline lazy expressions, place the opening parenthesis on the same line as the `lazy` keyword, with the expression body indented one level:
+
+```fsharp
+let expensiveCalculation =
+    lazy (
+        let step1 = performStep1()
+        let step2 = performStep2 step1
+        step2 * 2
+    )
+```
+
+For more information on formatting lazy expressions, see the [F# formatting guide](../style-guide/formatting.md#formatting-lazy-expressions).
 
 ## See also
 

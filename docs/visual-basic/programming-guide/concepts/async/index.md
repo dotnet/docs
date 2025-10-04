@@ -359,4 +359,4 @@ The benefit becomes even more apparent as the number of chained operations incre
 - [Async](../../../language-reference/modifiers/async.md)
 - [Walkthrough: Accessing the Web by Using Async and Await (Visual Basic)](walkthrough-accessing-the-web-by-using-async-and-await.md)
 - [Async Return Types (Visual Basic)](async-return-types.md)
-- [Task-based Asynchronous Pattern (TAP)](/dotnet/standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap)
+- [Task-based Asynchronous Pattern (TAP)](../../../../standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md)

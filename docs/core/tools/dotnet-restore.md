@@ -1,11 +1,11 @@
 ---
 title: dotnet restore command
 description: Learn how to restore dependencies and project-specific tools with the dotnet restore command.
-ms.date: 07/19/2023
+ms.date: 09/24/2025
 ---
 # dotnet restore
 
-**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
+**This article applies to:** ✔️ .NET 6 and later versions
 
 ## Name
 
@@ -14,7 +14,7 @@ ms.date: 07/19/2023
 ## Synopsis
 
 ```dotnetcli
-dotnet restore [<ROOT>] [--configfile <FILE>] [--disable-build-servers]
+dotnet restore [<PROJECT>|<SOLUTION>|<FILE>] [--configfile <FILE>] [--disable-build-servers]
     [--disable-parallel]
     [-f|--force] [--force-evaluate] [--ignore-failed-sources]
     [--interactive] [--lock-file-path <LOCK_FILE_PATH>] [--locked-mode]
@@ -86,9 +86,7 @@ There are three specific settings that `dotnet restore` ignores:
 
 ## Arguments
 
-- **`ROOT`**
-
-  Optional path to the project file to restore.
+[!INCLUDE [arguments-project-solution-file](../../../includes/cli-arguments-project-solution-file.md)]
 
 ## Options
 
@@ -184,19 +182,19 @@ There are three specific settings that `dotnet restore` ignores:
   dotnet restore ./projects/app1/app1.csproj
   ```
 
-- Restore the dependencies and tools for the project in the current   directory using the file path provided as the source:
+- Restore the dependencies and tools for the project in the current directory using the file path provided as the source:
 
   ```dotnetcli
   dotnet restore -s c:\packages\mypackages
   ```
 
-- Restore the dependencies and tools for the project in the current   directory using the two file paths provided as sources:
+- Restore the dependencies and tools for the project in the current directory using the two file paths provided as sources:
 
   ```dotnetcli
   dotnet restore -s c:\packages\mypackages -s c:\packages\myotherpackages
   ```
 
-- Restore dependencies and tools for the project in the current directory   showing detailed output:
+- Restore dependencies and tools for the project in the current directory showing detailed output:
 
   ```dotnetcli
   dotnet restore --verbosity detailed

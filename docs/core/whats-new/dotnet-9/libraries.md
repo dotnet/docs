@@ -3,7 +3,7 @@ title: What's new in .NET libraries for .NET 9
 description: Learn about the new .NET libraries features introduced in .NET 9.
 titleSuffix: ""
 ms.date: 11/11/2024
-ms.topic: whats-new
+ms.update-cycle: 3650-days
 ---
 
 # What's new in .NET libraries for .NET 9

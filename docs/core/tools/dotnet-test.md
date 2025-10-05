@@ -68,6 +68,7 @@ dotnet test [<PROJECT> | <SOLUTION> | <DIRECTORY> | <DLL> | <EXE>]
     [-r|--runtime <RUNTIME_IDENTIFIER>]
     [-s|--settings <SETTINGS_FILE>]
     [-t|--list-tests]
+    [--tl:[auto|on|off]]
     [-v|--verbosity <LEVEL>]
     [<args>...]
     [[--] <RunSettings arguments>]
@@ -498,6 +499,8 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
 
   > [!NOTE]
   > Running tests for a solution with a global `RuntimeIdentifier` property (explicitly or via `--arch`, `--runtime`, or `--os`) is not supported. Set `RuntimeIdentifier` on an individual project level instead.
+
+[!INCLUDE [tl](../../../includes/cli-tl.md)]
 
 - **`-v|--verbosity <LEVEL>`**
   

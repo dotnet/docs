@@ -80,7 +80,7 @@ If you bind the call to a computation expression with `let`, you will not get th
 
 ### `and!`
 
-The `and!` keyword allows you to bind the results of multiple computation expression calls in a performant manner.
+The `and!` keyword allows you to bind the results of multiple computation expression calls in a performant manner. This keyword enables **applicative computation expressions**, which provide a different computational model from the standard monadic approach.
 
 ```fsharp
 let doThingsAsync url =
@@ -92,11 +92,19 @@ let doThingsAsync url =
     }
 ```
 
-Using a series of `let! ... let! ...` forces re-execution of expensive binds, so using `let! ... and! ...` should be used when binding the results of numerous computation expressions.
+Using a series of `let! ... let! ...` forces sequential execution where each bind depends on the previous one. In contrast, `let! ... and! ...` indicates that the computations are independent of each other. This independence allows computation expression authors to:
+
+- Execute computations more efficiently
+- Potentially run computations in parallel
+- Accumulate results without forcing unnecessary sequential dependencies
+
+The restriction is that computations combined with `and!` cannot depend on the results of previously bound values within the same `let!`/`and!` chain. This trade-off enables the performance benefits.
 
 `and!` is defined primarily by the `MergeSources(x1, x2)` member on the builder type.
 
 Optionally, `MergeSourcesN(x1, x2 ..., xN)` can be defined to reduce the number of tupling nodes, and `BindN(x1, x2 ..., xN, f)`, or `BindNReturn(x1, x2, ..., xN, f)` can be defined to bind computation expression results efficiently without tupling nodes.
+
+For more information on applicative computation expressions, see [Applicative Computation Expressions in F# 5](../whats-new/fsharp-50.md#applicative-computation-expressions) and [F# RFC FS-1063](https://github.com/fsharp/fslang-design/blob/main/FSharp-5.0/FS-1063-support-letbang-andbang-for-applicative-functors.md).
 
 ### `do!`
 

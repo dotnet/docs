@@ -128,6 +128,8 @@ items:
                 href: sdk/10.0/dotnet-package-list-restore.md
               - name: "`dotnet tool install --local` creates manifest by default"
                 href: sdk/10.0/dotnet-tool-install-local-manifest.md
+              - name: "`dotnet watch` logs internal-facing messages to stderr instead of stdout"
+                href: sdk/10.0/dotnet-watch-stderr.md
               - name: MSBUILDCUSTOMBUILDEVENTWARNING escape hatch removed
                 href: sdk/10.0/custom-build-event-warning.md
               - name: MSBuild custom culture resource handling

@@ -62,7 +62,7 @@ First, examine this code in the sample:
 
 :::code language="csharp" source="snippets/PointExtensions/IncludedElements.cs" id="StaticPropertySubstitute":::
 
-Many apps that use 2D geometry will use the concept of an `Origin`, which is the same value as <xref:System.Drawing.Point.Empty?displayProperty=nameWithType>. This code uses that fact, but some developers might chose to create a `new Point(0,0)`, which incurs some extra work. In a given domain, you want to express these common values through static properties.
+Many apps that use 2D geometry use the concept of an `Origin`, which is the same value as <xref:System.Drawing.Point.Empty?displayProperty=nameWithType>. This code uses that fact, but some developers might create a `new Point(0,0)`, which incurs some extra work. In a given domain, you want to express these common values through static properties.
 
 Create `NewExtensionsMembers.cs` to create extension members that solve this problem:
 
@@ -115,7 +115,7 @@ The `+` and `-` operators are *binary operators* and require two operands, not t
 
 :::code language="csharp" source="snippets/PointExtensions/NewExtensionsMembers.cs" id="TupleBasedXYOperators":::
 
-This enables elegant tuple-based operations:
+The preceding operator enables elegant tuple-based operations:
 
 :::code language="csharp" source="snippets/PointExtensions/ExtensionMemberDemonstrations.cs" id="DiscreteXYOperators":::
 
@@ -135,7 +135,7 @@ Extension members use a different syntax but provide the same functionality. Add
 
 :::code language="csharp" source="snippets/PointExtensions/NewExtensionsMembers.cs" id="TransformationMethods":::
 
-This code doesn't compile yet. That's because this is the first extension you've written that extends an *instance* of the `Point` class, instead of the type itself. To support instance extensions, your extension block needs to name the receiver parameter. Edit the following line:
+The preceding code doesn't compile yet. It's the first extension you wrote that extends an *instance* of the `Point` class, instead of the type itself. To support instance extensions, your extension block needs to name the receiver parameter. Edit the following line:
 
 ```csharp
     extension (Point)

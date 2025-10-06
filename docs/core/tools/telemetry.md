@@ -45,6 +45,9 @@ Read more about .NET CLI Tools telemetry: https://aka.ms/dotnet-cli-telemetry
 
 To disable this message and the .NET welcome message, set the `DOTNET_NOLOGO` environment variable to `true`. Note that this variable has no effect on telemetry opt out.
 
+> [!NOTE]
+> Starting in .NET 10 RC 2, the first-run message emits to `stderr` instead of `stdout`. This change ensures that `stdout` remains clean for parsing and interpretation when using CLI commands in scripts or noninteractive scenarios. For more information, see [dotnet CLI commands log non-command-relevant data to stderr](../compatibility/sdk/10.0/dotnet-cli-stderr-output.md).
+
 ## Data points
 
 The telemetry feature doesn't collect personal data, such as usernames or email addresses. It doesn't scan your code and doesn't extract project-level data, such as name, repository, or author. It doesn't extract the contents of any data files accessed or created by your apps, dumps of any memory occupied by your apps' objects, or the contents of the clipboard. The data is sent securely to Microsoft servers using [Azure Monitor](https://azure.microsoft.com/services/monitor/) technology, held under restricted access, and published under strict security controls from secure [Azure Storage](https://azure.microsoft.com/services/storage/) systems.

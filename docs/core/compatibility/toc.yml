@@ -114,6 +114,8 @@ items:
             items:
               - name: .NET CLI `--interactive` defaults to `true` in user scenarios
                 href: sdk/10.0/dotnet-cli-interactive.md
+              - name: "`dotnet` CLI commands log non-command-relevant data to stderr"
+                href: sdk/10.0/dotnet-cli-stderr-output.md
               - name: .NET tool packaging creates RuntimeIdentifier-specific tool packages
                 href: sdk/10.0/dotnet-tool-pack-publish.md
               - name: "`dotnet restore` audits transitive packages"

@@ -91,7 +91,6 @@ The telemetry feature collects the following data:
 | >=6.0.104     | Hashed CompileListCount used for build (MSBuild property) |
 | >=6.0.104     | Hashed _ReadyToRunCompilationFailures used for build (MSBuild property) |
 | >=6.0.300     | If the CLI was invoked from a Continuous Integration environment. For more information, see [Continuous Integration Detection](#continuous-integration-detection).|
-| >=9.0.100     | If the CLI was invoked from an LLM agent environment and the detected agent type. For more information, see [LLM Detection](#llm-detection).|
 | >=7.0.100     | Hashed PublishAot used for build (MSBuild property) |
 | >=7.0.100     | Hashed PublishProtocol used for build (MSBuild property) |
 | >=8.0.100     | Hashed TargetPlatformIdentifier used for build (MSBuild property) |
@@ -107,6 +106,7 @@ The telemetry feature collects the following data:
 | >=8.0.100     | Whether library mode for mobile is used.  |
 | >=8.0.100     | Whether NativeAOT is used. |
 | >=8.0.100     | Used Mono runtime pack version. |
+| >=10.0.100    | If the CLI was invoked from an LLM agent, the detected LLM agent name is reported. For more information, see [LLM Detection](#llm-detection).|
 
 ### Collected options
 
@@ -193,13 +193,13 @@ The full list of environment variables, and what is done with their values, is s
 
 ## LLM Detection
 
-To detect if the .NET CLI is running in the context of an LLM agent environment, the .NET CLI probes for the presence and values of several environment variables that LLM agents and AI coding assistants set.
+To detect if the .NET CLI is running in the context of an LLM agent, the .NET CLI probes for the presence and values of several environment variables that LLM agents and AI coding assistants set.
 
-The following table shows the environment variables used for detection and the agent type that is reported. Similar to CI detection, the actual values of these environment variables are never collected—only used to identify the agent type.
+The following table shows the agent name, environment variables used for detection and the value of the agent type that is reported. The actual values of these environment variables are never collected—only used to identify the agent type.
 
-| Variable(s) | Agent Type | Action |
-| ----------- | ---------- | ------ |
-| COPILOT_AGENT_ACTION, COPILOT_CLOUD_ENVIRONMENT | GitHub Copilot | Check if all are present and non-null |
+| LLM agent | Variable | Value |
+| --------- | -------- | ----- |
+| Claude Code | CLAUDECODE | Return LLM tool name of "claude" |
 
 ## Avoid inadvertent disclosure of information
 

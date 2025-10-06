@@ -5,7 +5,6 @@ namespace ExtensionMethods;
 
 public static class PointExtensions
 {
-    // <ExtensionMethods>
     public static Vector2 ToVector(this Point point) =>
         new Vector2(point.X, point.Y);
 
@@ -31,5 +30,4 @@ public static class PointExtensions
         point.X = (int)newX;
         point.Y = (int)newY;
     }
-    // </ExtensionMethods>
 }

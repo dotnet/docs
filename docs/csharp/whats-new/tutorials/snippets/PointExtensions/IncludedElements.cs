@@ -1,6 +1,39 @@
 using System.Drawing;
 using System.Numerics;
-using ExtensionMethods;
+
+namespace IncludedElements;
+
+public static class PointExtensions
+{
+    // <ExtensionMethods>
+    public static Vector2 ToVector(this Point point) =>
+        new Vector2(point.X, point.Y);
+
+    public static void Translate(this Point point, int xDist, int yDist)
+    {
+        point.X += xDist;
+        point.Y += yDist;
+    }
+
+    public static void Scale(this Point point, int xScale, int yScale)
+    {
+        point.X *= xScale;
+        point.Y *= yScale;
+    }
+
+    public static void Rotate(this Point point, int angleInDegress)
+    {
+        double theta = ((double)angleInDegress * Math.PI) / 180.0;
+        double sinTheta = Math.Sin(theta);
+        double cosTheta = Math.Cos(theta);
+        double newX = (double)point.X * cosTheta - (double)point.Y * sinTheta;
+        double newY = (double)point.X * sinTheta + (double)point.Y * cosTheta;
+        point.X = (int)newX;
+        point.Y = (int)newY;
+    }
+    // </ExtensionMethods>
+}
+
 
 public static class ExtensionMethodsDemonstrations
 {
@@ -15,34 +48,39 @@ public static class ExtensionMethodsDemonstrations
 
     static void OriginAsADataElement()
     {
+        // <StaticPropertySubstitute>
         // Inline implementation since Point.Origin doesn't exist in ExtensionMethods
         Point origin = Point.Empty; // Equivalent to Point.Origin
         Console.WriteLine($"Point.Origin (inline): {origin}");
         Console.WriteLine($"Same as Point.Empty: {origin == Point.Empty}");
         Console.WriteLine();
+        // </StaticPropertySubstitute>
     }
 
     static void ArithmeticWithPoints()
     {
+        // <PointArithmetic>
         Point p1 = new Point(5, 3);
         Point p2 = new Point(2, 7);
 
         Console.WriteLine($"Point 1: {p1}");
         Console.WriteLine($"Point 2: {p2}");
-        
+
         // Inline implementation since + and - operators don't exist in ExtensionMethods
         Point addition = new Point(p1.X + p2.X, p1.Y + p2.Y);
         Point subtraction1 = new Point(p1.X - p2.X, p1.Y - p2.Y);
         Point subtraction2 = new Point(p2.X - p1.X, p2.Y - p1.Y);
-        
+
         Console.WriteLine($"Addition (p1 + p2): {addition}");
         Console.WriteLine($"Subtraction (p1 - p2): {subtraction1}");
         Console.WriteLine($"Subtraction (p2 - p1): {subtraction2}");
         Console.WriteLine();
+        // </PointArithmetic>
     }
 
     static void DiscreteArithmeticWithPoints()
     {
+        // <DiscreteXYOperators>
         Point point = new Point(10, 8);
         int offsetX = 3;
         int offsetY = -2;
@@ -68,6 +106,7 @@ public static class ExtensionMethodsDemonstrations
         Console.WriteLine($"point * scale: {scaledPoint}");
         Console.WriteLine($"point / divisor: {dividedPoint}");
         Console.WriteLine();
+        // </DiscreteXYOperators>
     }
 
     static void ExtensionMethodsThis()
@@ -112,6 +151,7 @@ public static class ExtensionMethodsDemonstrations
 
     static void MoreExamples()
     {
+        // <FinalScenarios>
         // Combining operators and methods
         Console.WriteLine("Scenario 1: Building a rectangle using inline operators");
         Point topLeft = Point.Empty; // Inline equivalent of Point.Origin
@@ -163,5 +203,6 @@ public static class ExtensionMethodsDemonstrations
         Console.WriteLine();
 
         Console.WriteLine("Traditional extension methods demonstration complete!");
+        // </FinalScenarios>
     }
 }

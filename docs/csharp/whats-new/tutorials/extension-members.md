@@ -60,7 +60,7 @@ Traditional extension methods can only add instance methods to existing types. E
 
 First, examine this code in the sample:
 
-:::code language="csharp" source="snippets/PointExtensions/ExtensionMethodsDemonstrations.cs" id="StaticPropertySubstitute":::
+:::code language="csharp" source="snippets/PointExtensions/IncludedElements.cs" id="StaticPropertySubstitute":::
 
 Many apps that use 2D geometry will use the concept of an `Origin`, which is the same value as <xref:System.Drawing.Point.Empty?displayProperty=nameWithType>. This code uses that fact, but some developers might chose to create a `new Point(0,0)`, which incurs some extra work. In a given domain, you want to express these common values through static properties.
 
@@ -93,7 +93,7 @@ The `Point.Origin` property now appears as if it were part of the original `Poin
 
 Next, examine the following code that performs arithmetic with points:
 
-:::code language="csharp" source="snippets/PointExtensions/ExtensionMethodsDemonstrations.cs" id="PointArithmetic":::
+:::code language="csharp" source="snippets/PointExtensions/IncludedElements.cs" id="PointArithmetic":::
 
 Traditional extension methods can't add operators to existing types. You must implement arithmetic operations manually, making the code verbose and harder to read. The algorithm gets duplicated whenever the operation is needed, which creates more opportunities for small mistakes to enter the code base. It's better to place that code in one location. Add the following operators to your extension block in `NewExtensionsMembers.cs`:
 
@@ -109,7 +109,7 @@ The extension operators make point arithmetic as natural as working with built-i
 
 You can also add extension operators for the discrete operations shown in the following code example:
 
-:::code language="csharp" source="snippets/PointExtensions/ExtensionMethodsDemonstrations.cs" id="DiscreteXYOperators":::
+:::code language="csharp" source="snippets/PointExtensions/IncludedElements.cs" id="DiscreteXYOperators":::
 
 The `+` and `-` operators are *binary operators* and require two operands, not three. Instead of two discrete integers, use a *tuple* to specify both the `X` and `Y` deltas:
 
@@ -129,7 +129,7 @@ Extension members also support instance methods. You don't have to change existi
 
 The traditional approach uses the `this` parameter syntax:
 
-:::code language="csharp" source="snippets/PointExtensions/ExtensionMethods.cs" id="ExtensionMethods":::
+:::code language="csharp" source="snippets/PointExtensions/IncludedElements.cs" id="ExtensionMethods":::
 
 Extension members use a different syntax but provide the same functionality. Add the following code to your new extension members class:
 
@@ -163,7 +163,7 @@ Compare the extension member version:
 
 With the previous version:
 
-:::code language="csharp" source="snippets/PointExtensions/ExtensionMethodsDemonstrations.cs" id="FinalScenarios":::
+:::code language="csharp" source="snippets/PointExtensions/IncludedElements.cs" id="FinalScenarios":::
 
 This example demonstrates how extension members create a cohesive API that feels like part of the original type. You can:
 

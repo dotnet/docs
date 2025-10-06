@@ -89,6 +89,7 @@ A the following policy dictates which versions of MSBuild and Visual Studio a gi
 | 9.0.100 | 17.12 | 17.11            | Net8.0 | Net9.0 |
 | 9.0.200 | 17.13 | 17.12            | Net9.0 | Net9.0 |
 | 9.0.300 | 17.14 | 17.12            | Net9.0 | Net9.0 |
+| 10.0.100 | 18.0 | 17.14            | Net9.0 | Net10.0 |
 
 > [!NOTE]
 > The table depicts how these versioning rules are applied, starting with .NET SDK 7.0.100 and .NET SDK 6.0.300. It also depicts how the policy would have applied to previously shipped versions of the .NET SDK, had it been in place then. However, the requirements for previous versions of the SDK don't change&mdash;that is, the minimum required version of Visual Studio for .NET SDK 6.0.100 or 6.0.200 remains 16.10.
@@ -96,6 +97,8 @@ A the following policy dictates which versions of MSBuild and Visual Studio a gi
 > Targeting `net8.0` is officially supported in Visual Studio 17.8+ only.
 >
 > Targeting `net9.0` is officially supported in Visual Studio 17.12+ only.
+>
+> Targeting `net10.0` is officially supported in Visual Studio 18.0+ only.
 
 To ensure consistent tooling, you should use `dotnet build` rather than `msbuild` to build your application when possible.
 
@@ -111,6 +114,7 @@ Major versions of the .NET SDK are typically released within a few days of a Vis
 | 10.0.100 Preview 1  | 17.14 Preview 1       |
 | 10.0.100 Preview 2  | 17.14 Preview 2       |
 | 10.0.100 Preview 3  | 17.14 Preview 3       |
+| 10.0.100 RC 2       | 17.14                 |
 
 ## Reference
 

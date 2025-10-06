@@ -49,7 +49,7 @@ You can also create `struct` tuples.  These also interoperate fully with C#7/Vis
 
 [!code-fsharp[Tuples](~/samples/snippets/fsharp/tour.fs#L205-L218)]
 
-The sample demonstrates using pattern matching to deconstruct tuples in function parameters, such as `(struct(a, b))`, which extracts the individual elements. For more information about pattern matching and deconstructing tuples, see [Tuples](language-reference/tuples.md).
+The preceding sample demonstrates using pattern matching to deconstruct tuples in function parameters, such as `(struct(a, b))`, which extracts the individual elements. For more information about pattern matching and deconstructing tuples, see [Tuples](language-reference/tuples.md).
 
 It's important to note that because `struct` tuples are value types, they cannot be implicitly converted to reference tuples, or vice versa.  You must explicitly convert between a reference and struct tuple.
 

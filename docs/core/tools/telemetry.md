@@ -199,13 +199,12 @@ The following table shows the agent name, environment variables used for detecti
 
 | LLM agent | Variable(s) | Value |
 | --------- | ----------- | ----- |
-| GitHub Copilot | COPILOT_CLOUD_ENVIRONMENT | "copilot" |
+| GitHub Copilot | GITHUB_COPILOT_CLI_MODE | "copilot" |
 | Claude Code | CLAUDECODE | "claude" |
-| Cursor | CURSOR_SESSION_ID | "cursor" |
-| Windsurf | CASCADE_SESSION_ID | "windsurf" |
-| Cline | CLINE | "cline" |
-| Roo Code | ROOCODE | "roo-code" |
-| Zed | ZED_TERM | "zed" |
+| Cursor | CURSOR_EDITOR| "cursor" |
+| Google Gemini | GEMINI_CLI | "gemini" |
+
+If multiple agents are detected, the different agent Values will be concatenated with a comma to produce the final value.
 
 ## Avoid inadvertent disclosure of information
 

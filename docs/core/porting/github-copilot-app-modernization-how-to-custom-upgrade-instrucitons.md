@@ -39,7 +39,7 @@ Structure your instruction files with:
 
 ## Create a custom upgrade instruction
 
-Follow these steps to generate and refine a new instruction file. The example focuses on replacing `Newtonsoft.Json` with `System.Text.Json`.
+Follow these steps to generate and refine a new instruction file. The following sections focus on replacing `Newtonsoft.Json` with `System.Text.Json` to explain this feature with an example.
 
 1. Right-click the solution node in **Solution Explorer** and select **Modernize**.
 1. In the chat, type: `I want to generate a custom upgrade instruction`.

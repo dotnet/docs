@@ -197,9 +197,15 @@ To detect if the .NET CLI is running in the context of an LLM agent, the .NET CL
 
 The following table shows the agent name, environment variables used for detection and the value of the agent type that is reported. The actual values of these environment variables are never collected—only used to identify the agent type.
 
-| LLM agent | Variable | Value |
-| --------- | -------- | ----- |
-| Claude Code | CLAUDECODE | Return LLM tool name of "claude" |
+| LLM agent | Variable(s) | Value |
+| --------- | ----------- | ----- |
+| GitHub Copilot | COPILOT_CLOUD_ENVIRONMENT | "copilot" |
+| Claude Code | CLAUDECODE | "claude" |
+| Cursor | CURSOR_SESSION_ID | "cursor" |
+| Windsurf | CASCADE_SESSION_ID | "windsurf" |
+| Cline | CLINE | "cline" |
+| Roo Code | ROOCODE | "roo-code" |
+| Zed | ZED_TERM | "zed" |
 
 ## Avoid inadvertent disclosure of information
 

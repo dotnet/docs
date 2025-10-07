@@ -17,7 +17,6 @@ namespace ca_1707
         {
             // ...
         }
-
     }
 
     public struct User_Model

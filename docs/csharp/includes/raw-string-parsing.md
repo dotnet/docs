@@ -9,7 +9,7 @@ ms.date: 10/07/2025
 >
 > The tools parse the text. If the tools have confidence that the text represents JSON or a regular expression, the editor provides syntax coloring.
 >
-> You can improve that experience by adding a comment above the declaration indicating the format
+> You can improve that experience by adding a comment above the declaration indicating the format:
 >
 > - `// lang=json` indicates the raw string literal represents JSON data.
 > - `// lang=regex` indicates the raw string literal represents a regular expression.

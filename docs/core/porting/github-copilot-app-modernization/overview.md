@@ -44,13 +44,13 @@ Feedback is important to Microsoft and the efficiency of this agent. Use the [Su
 
 The following items are required before you can use GitHub Copilot app modernization:
 
-[!INCLUDE[github-copilot-app-mod-prereqs](../../includes/github-copilot-app-mod-prereqs.md)]
+[!INCLUDE[github-copilot-app-mod-prereqs](./includes/prereqs.md)]
 
 ## How to start an upgrade or migration
 
 To start an upgrade or migration, interact with GitHub Copilot, following these steps:
 
-[!INCLUDE[github-copilot-how-to-initiate](./includes/github-copilot-how-to-initiate.md)]
+[!INCLUDE[github-copilot-how-to-initiate](./includes/how-to-initiate.md)]
 
 ## Upgrade .NET projects
 
@@ -170,5 +170,5 @@ The tool only collects data about project types, intent to upgrade, and upgrade 
 ## Related content
 
 - [How to upgrade a .NET app with GitHub Copilot app modernization](how-to-upgrade-with-github-copilot.md)
-- [Quickstart to migrate a .NET Project](../../azure/migration/appmod/quickstart.md)
-- [GitHub Copilot app modernization FAQ](github-copilot-app-modernization-faq.yml)
+- [Quickstart to migrate a .NET Project](../../../azure/migration/appmod/quickstart.md)
+- [GitHub Copilot app modernization FAQ](faq.yml)

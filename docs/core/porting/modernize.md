@@ -10,7 +10,7 @@ ms.custom: sfi-ropc-nochange
 
 # Modernize after upgrading to .NET from .NET Framework
 
-In this article, you'll learn about different ways you can modernize your app after it's been upgraded from .NET Framework to .NET. Use the [GitHub Copilot app modernization](github-copilot-app-modernization-overview.md) assistant to upgrade your app to .NET.
+In this article, you'll learn about different ways you can modernize your app after it's been upgraded from .NET Framework to .NET. Use the [GitHub Copilot app modernization](github-copilot-app-modernization/overview.md) assistant to upgrade your app to .NET.
 
 ## Missing APIs
 

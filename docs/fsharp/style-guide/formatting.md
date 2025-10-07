@@ -245,6 +245,17 @@ SomeClass.Invoke ()
 String.Format (x.IngredientName, x.Quantity)
 ```
 
+These same formatting conventions apply to pattern matching. Consistency between expressions and patterns is highly valued in F# style:
+
+```fsharp
+// ✔️ OK - Consistent formatting for expressions and patterns
+let result = Some(value)
+
+match result with
+| Some(x) -> x
+| None -> 0
+```
+
 You may need to pass arguments to a function on a new line as a matter of readability or because the list of arguments or the argument names are too long. In that case, indent one level:
 
 ```fsharp
@@ -1150,6 +1161,25 @@ match l with
     | { him = x; her = "Posh" } :: tail -> x
     | _ :: tail -> findDavid tail
     | [] -> failwith "Couldn't find David"
+```
+
+Pattern matching formatting should be consistent with expression formatting. Do not add a space before the opening parenthesis of pattern arguments:
+
+```fsharp
+// ✔️ OK
+match x with
+| Some(y) -> y
+| None -> 0
+
+// ✔️ OK
+match data with
+| Success(value) -> value
+| Error(msg) -> failwith msg
+
+// ❌ Not OK, pattern formatting should match expression formatting
+match x with
+| Some (y) -> y
+| None -> 0
 ```
 
 If the expression on the right of the pattern matching arrow is too large, move it to the following line, indented one step from the `match`/`|`.

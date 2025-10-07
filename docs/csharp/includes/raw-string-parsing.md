@@ -5,7 +5,7 @@ ms.topic: include
 ms.date: 10/07/2025
 ---
 > [!TIP]
-> Visual Studio and the C# Dev Kit provide some validation and syntax highlighting when raw string literals contain JSON data or regular expressions. 
+> Visual Studio and the C# Dev Kit provide some validation and syntax highlighting when raw string literals contain JSON data or regular expressions.
 >
 > The tools parse the text. If the tools have confidence that the text represents JSON or a regular expression, the editor provides syntax coloring.
 >

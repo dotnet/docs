@@ -74,136 +74,147 @@ helpviewer_keywords:
   - "CS9299"
   - "CS9314"
 ms.date: 10/07/2025
+ai-usage: ai-assisted
 ---
 # Preprocessor errors and warnings
 
 The compiler generates the following errors for incorrect use of preprocessor directives:
 
+- [**CS1024**](#invalid-preprocessor-directive-syntax): *Preprocessor directive expected*
+- [**CS1025**](#invalid-preprocessor-directive-syntax): *Single-line comment or end-of-line expected*
+- [**CS1027**](#invalid-preprocessor-directive-syntax): *#endif directive expected*
+- [**CS1028**](#invalid-preprocessor-directive-syntax): *Unexpected preprocessor directive*
+- [**CS1029**](#error-and-warning-directive-errors): *#error: 'text'*
+- [**CS1030**](#error-and-warning-directive-errors): *#warning: 'text'*
+- **CS1032**: *Cannot define/undefine preprocessor symbols after first token in file*
+- [**CS1038**](#invalid-preprocessor-directive-syntax): *#endregion directive expected*
+- [**CS1040**](#invalid-preprocessor-directive-syntax): *Preprocessor directives must appear as the first non-white-space character on a line*
+- [**CS1517**](#invalid-preprocessor-directive-syntax): *Invalid preprocessor expression*
+- [**CS1560**](#line-and-file-directive-errors): *Invalid filename specified for preprocessor directive. Filename is too long or not a valid filename*
+- [**CS1576**](#line-and-file-directive-errors): *The line number specified for #line directive is missing or invalid*
+- [**CS1578**](#line-and-file-directive-errors): *Filename, single-line comment or end-of-line expected*
+- [**CS1633**](#invalid-preprocessor-directive-syntax): *Unrecognized #pragma directive*
+- [**CS1634**](#error-and-warning-directive-errors): *Expected disable or restore*
+- [**CS1635**](#error-and-warning-directive-errors): *Cannot restore warning 'warning code' because it was disabled globally*
+- [**CS1691**](#error-and-warning-directive-errors): *'number' is not a valid warning number*
+- [**CS1692**](#error-and-warning-directive-errors): *Invalid number*
+- [**CS1694**](#line-and-file-directive-errors): *Invalid filename specified for preprocessor directive. Filename is too long or not a valid filename*
+- [**CS1695**](#line-and-file-directive-errors): *Invalid #pragma checksum syntax; should be #pragma checksum "filename" "{XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX}" "XXXX..."*
+- [**CS1696**](#invalid-preprocessor-directive-syntax): *Single-line comment or end-of-line expected*
+- [**CS1709**](#line-and-file-directive-errors): *Filename specified for preprocessor directive is empty*
+- [**CS7009**](#file-contains-scriptcs-directives): *Cannot use #r after first token in file*
+- [**CS7010**](#file-contains-scriptcs-directives): *Quoted file name expected*
+- [**CS7011**](#file-contains-scriptcs-directives): *#r is only allowed in scripts*
+- [**CS8097**](#file-contains-scriptcs-directives): *#load is only allowed in scripts*
+- [**CS8098**](#file-contains-scriptcs-directives): *Cannot use #load after first token in file*
+- [**CS8938**](#line-and-file-directive-errors): *The #line directive value is missing or out of range*
+- [**CS8939**](#line-and-file-directive-errors): *The #line directive end position must be greater than or equal to the start position*
+- [**CS8996**](#invalid-preprocessor-directive-syntax): *Raw string literals are not allowed in preprocessor directives*
+- [**CS9028**](#line-and-file-directive-errors): *The #line span directive requires space before the first parenthesis, before the character offset, and before the file name*
+- [**CS9297**](#incorrect-use-of-file-based-apps-directives): *`#:` directives cannot be after first token in file*
+- [**CS9298**](#incorrect-use-of-file-based-apps-directives): *`#:` directives can be only used in file-based programs (`-features:FileBasedProgram`)*
+- [**CS9299**](#incorrect-use-of-file-based-apps-directives): *`#:` directives cannot be after `#if` directive*
+- [**CS9314**](#incorrect-use-of-file-based-apps-directives): *`#!` directives can be only used in scripts or file-based programs*
+
+## Invalid preprocessor directive syntax
+
 - **CS1024**: *Preprocessor directive expected*
 - **CS1025**: *Single-line comment or end-of-line expected*
 - **CS1027**: *#endif directive expected*
 - **CS1028**: *Unexpected preprocessor directive*
-- **CS1029**: *#error: 'text'*
-- **CS1030**: *#warning: 'text'*
-- **CS1032**: *Cannot define/undefine preprocessor symbols after first token in file*
 - **CS1038**: *#endregion directive expected*
 - **CS1040**: *Preprocessor directives must appear as the first non-white-space character on a line*
 - **CS1517**: *Invalid preprocessor expression*
-- **CS1560**: *Invalid filename specified for preprocessor directive. Filename is too long or not a valid filename*
-- **CS1576**: *The line number specified for #line directive is missing or invalid*
-- **CS1578**: *Filename, single-line comment or end-of-line expected*
 - **CS1633**: *Unrecognized #pragma directive*
+- **CS1696**: *Single-line comment or end-of-line expected*
+- **CS8996**: *Raw string literals are not allowed in preprocessor directives*
+
+These errors indicate that you've used invalid syntax for [preprocessor directives](../preprocessor-directives.md). Common causes include:
+
+- Using an unrecognized directive after `#` (CS1024, CS1633).
+- Including multiline comments on directive lines (CS1025, CS1696).
+- Using directives in unexpected locations (CS1028).
+- Missing required matching directives (CS1027, CS1038).
+- Not placing the directive as the first token on a line (CS1040).
+- Using invalid expressions in conditional compilation (CS1517).
+- Using raw string literals in preprocessor directives (CS8996).
+
+**CS1024 example - Preprocessor directive expected:**
+```csharp
+#import System   // CS1024 - "import" is not a valid directive
+```
+
+**CS1025 example - Single-line comment or end-of-line expected:**
+```csharp
+#if true /* hello  
+*/   // CS1025 - multiline comment not allowed
+#endif
+```
+
+**CS1027 example - #endif directive expected:**
+```csharp
+#if true   // CS1027 - missing #endif
+class Test { }
+```
+
+**CS1028 example - Unexpected preprocessor directive:**
+```csharp
+#endif   // CS1028 - no matching #if
+```
+
+**CS1038 example - #endregion directive expected:**
+```csharp
+#region testing
+class Test { }
+// CS1038 - missing #endregion
+```
+
+**CS1040 example - Preprocessor directives must appear as the first non-white-space character:**
+```csharp
+/* Comment */ #define X   // CS1040 - directive not first on line
+```
+
+**CS1517 example - Invalid preprocessor expression:**
+```csharp
+#if 1           // CS1517 - numeric literals not allowed
+#endif
+#if ~symbol     // CS1517 - bitwise operators not allowed  
+#endif
+```
+
+**CS1633 example - Unrecognized #pragma directive:**
+```csharp
+#pragma unknown  // CS1633 - "unknown" is not a valid pragma
+```
+
+**CS8996 example - Raw string literals are not allowed in preprocessor directives:**
+```csharp
+// CS8996.cs
+#pragma checksum """raw_string""" "{406EA660-64CF-4C82-B6F0-42D48172A799}" "hash"  // CS8996
+class Test { }
+```
+
+To fix this error, use a regular string literal:
+
+```csharp
+#pragma checksum "filename.cs" "{406EA660-64CF-4C82-B6F0-42D48172A799}" "hash"  // OK
+class Test { }
+```
+
+To fix these errors, ensure your preprocessor directives follow the correct syntax rules described in the [preprocessor directives documentation](../preprocessor-directives.md).
+
+## #error and #warning directive errors
+
+- **CS1029**: *#error: 'text'*
+- **CS1030**: *#warning: 'text'*
 - **CS1634**: *Expected disable or restore*
 - **CS1635**: *Cannot restore warning 'warning code' because it was disabled globally*
 - **CS1691**: *'number' is not a valid warning number*
 - **CS1692**: *Invalid number*
-- **CS1694**: *Invalid filename specified for preprocessor directive. Filename is too long or not a valid filename*
-- **CS1695**: *Invalid #pragma checksum syntax; should be #pragma checksum "filename" "{XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX}" "XXXX..."*
-- **CS1696**: *Single-line comment or end-of-line expected*
-- **CS1709**: *Filename specified for preprocessor directive is empty*
-- **CS7009**: *Cannot use #r after first token in file*
-- **CS7010**: *Quoted file name expected*
-- **CS7011**: *#r is only allowed in scripts*
-- **CS8097**: *#load is only allowed in scripts*
-- **CS8098**: *Cannot use #load after first token in file*
-- **CS8938**: *The #line directive value is missing or out of range*
-- **CS8939**: *The #line directive end position must be greater than or equal to the start position*
-- **CS8996**: *Raw string literals are not allowed in preprocessor directives*
-- **CS9028**: *The #line span directive requires space before the first parenthesis, before the character offset, and before the file name*
-- **CS9297**: *`#:` directives cannot be after first token in file*
-- **CS9298**: *`#:`directives can be only used in file-based programs (`-features:FileBasedProgram`)*
-- **CS9299**: *`#:` directives cannot be after `#if` directive*
-- **CS9314**: *`#!` directives can be only used in scripts or file-based programs*
 
-## CS1024: Preprocessor directive expected
+These errors occur when the compiler processes [`#error`](../preprocessor-directives.md#error-and-warning-information), [`#warning`](../preprocessor-directives.md#error-and-warning-information), and [`#pragma warning`](../preprocessor-directives.md#pragma-warning) directives. These directives allow you to generate custom error and warning messages during compilation and control warning behavior.
 
-A line began with the pound symbol (#), but the subsequent string was not a valid [preprocessor directive](../preprocessor-directives.md).
-
-The following sample generates CS1024:
-
-```csharp
-// CS1024.cs
-#import System   // CS1024
-```
-
-## CS1025: Single-line comment or end-of-line expected
-
-A line with a [preprocessor directive](../preprocessor-directives.md) cannot have a multiline comment.
-
-The following sample generates CS1025:
-
-```csharp
-#if true /* hello  
-*/   // CS1025  
-#endif   // this is a good comment  
-```
-
-CS1025 could also occur if you attempt some invalid preprocessor directive, as follows:
-
-```csharp
-// CS1025.cs
-#define a  
-
-class Sample  
-{  
-   static void Main()  
-   {  
-      #if a 1   // CS1025, invalid syntax  
-         System.Console.WriteLine("Hello, World!");  
-      #endif  
-   }  
-}  
-```
-
-## CS1027: #endif directive expected
-
-A matching `#endif` [preprocessor directive](../preprocessor-directives.md#conditional-compilation) was not found for a specified `#if` directive. Or, the compiler may have found a `#endregion` directive when there was no matching `#region` directive inside a `#if` block.
-
-The following sample generates CS1027:
-
-```csharp
-// CS1027.cs
-#if true   // CS1027, uncomment next line to resolve
-// #endif
-
-namespace x
-{
-   public class clx
-   {
-      public static void Main()
-      {
-      }
-   }
-}
-```
-
-## CS1028: Unexpected preprocessor directive
-
-A [preprocessor directive](../preprocessor-directives.md) was found but not expected.
-
-For example, a `#endif` was found with no preceding `#if`.
-
-The following sample generates CS1028:
-
-```csharp
-// CS1028.cs
-#endif   // CS1028, no matching #if
-namespace x
-{
-   public class clx
-   {
-      public static void Main()
-      {
-      }
-   }
-}
-```
-
-## CS1029: #error: 'text'
-
-Displays the text of an error defined with the [#error](../preprocessor-directives.md#error-and-warning-information) directive.
-
-The following sample shows how to create a user-defined error:
+**CS1029** displays the text of an error defined with the `#error` directive:
 
 ```csharp
 // CS1029.cs
@@ -222,11 +233,7 @@ Compilation produces the following output:
 example.cs(9,8): error CS1029: #error: 'Let's give an error here   // CS1029  '
 ```
 
-## CS1030: #warning: 'text'
-
-Displays the text of a warning defined with the [#warning](../preprocessor-directives.md#error-and-warning-information) directive.
-
-The following sample shows how to create a user-defined warning:
+**CS1030** displays the text of a warning defined with the `#warning` directive:
 
 ```csharp
 // CS1030.cs
@@ -245,189 +252,7 @@ Compilation produces the following output:
 example.cs(6,16): warning CS1030: #warning: 'Let's give a warning here'
 ```
 
-## CS1032: Cannot define/undefine preprocessor symbols after first token in file
-
-The `#define` and `#undef` [preprocessor directives](../preprocessor-directives.md#defining-symbols) must be used at the beginning of a program, before any other keywords, such as those used in the namespace declaration.
-
-The following sample generates CS1032:
-
-```csharp
-// CS1032.cs
-namespace x
-{
-   public class clx
-   {
-      #define a   // CS1032, put before namespace
-      public static void Main()
-      {
-      }
-   }
-}
-```
-
-## CS1038: #endregion directive expected
-
-A [#region](../preprocessor-directives.md#defining-regions) directive did not have a matching [#endregion](../preprocessor-directives.md#defining-regions) directive.
-
-The following sample generates CS1038:
-
-```csharp
-// CS1038.cs
-#region testing
-
-public class clx
-{
-   public static void Main()
-   {
-   }
-}
-// CS1038
-// uncomment the next line to resolve
-// #endregion
-```
-
-## CS1040: Preprocessor directives must appear as the first non-white-space character on a line
-
-A [preprocessor directive](../preprocessor-directives.md) was found on a line and was not the first token on the line. A directive must be the first token on the line.
-
-The following sample generates CS1040:
-
-```csharp
-// CS1040.cs
-/* Define a symbol, X */ #define X   // CS1040
-
-// try the following two lines instead
-// /* Define a symbol, X */
-// #define X
-
-public class MyClass
-{
-   public static void Main()
-   {
-   }
-}
-```
-
-## CS1517: Invalid preprocessor expression
-
-The compiler encountered an invalid preprocessor expression.
-
-For more information, see [Preprocessor Directives](../preprocessor-directives.md).
-
-The following sample shows some valid and invalid preprocessor expressions:
-
-```csharp
-// CS1517.cs
-#if symbol      // OK
-#endif
-#if !symbol     // OK
-#endif
-#if (symbol)    // OK
-#endif
-#if true        // OK
-#endif
-#if false       // OK
-#endif
-#if 1           // CS1517
-#endif
-#if ~symbol     // CS1517
-#endif
-#if *           // CS1517
-#endif
-
-class x
-{
-   public static void Main()
-   {
-   }
-}
-```
-
-## CS1560: Invalid filename specified for preprocessor directive. Filename is too long or not a valid filename
-
-The file name that was specified with [#line](../preprocessor-directives.md#error-and-warning-information) exceeded _MAX_PATH (256 characters) or the line on which `#line` was found exceeded 2000 characters.
-
-## Example
-
-The following sample generates CS1560.
-
-```csharp
-// cs1560.cs
-using System;
-class MyClass
-{
-   public static void Main()
-   {
-      Console.WriteLine("Normal line #1.");
-      #line 21 "MyFile1234567890MyFile1234567890MyFile1234567890MyFile1234567890MyFile1234567890MyFile1234567890MyFile1234567890MyFile1234567890MyFile1234567890MyFile1234567890MyFile1234567890MyFile1234567890MyFile1234567890MyFile1234567890MyFile1234567890MyFile1234567890.txt"   // CS1560
-    }
-}
-```
-
-## CS1576: The line number specified for #line directive is missing or invalid
-
-The compiler detected an error with the value passed to the [#line](../preprocessor-directives.md#error-and-warning-information) directive.
-
-The following sample generates CS1576:
-
-```csharp
-// CS1576.cs
-public class MyClass
-{
-   static void Main()
-   {
-      #line "abc.sc"         // CS1576
-      // try the following line instead
-      //#line  101 "abc.sc"
-      intt i;  // error will be reported on line 101
-   }
-}
-```
-
-## CS1578: Filename, single-line comment or end-of-line expected
-
-After a [#line](../preprocessor-directives.md#error-and-warning-information) directive, only a file name (in double quotation marks) or a single-line comment is allowed.
-
-The following sample generates CS1578:
-
-```csharp
-// CS1578.cs
-class MyClass
-{
-   static void Main()
-   {
-      #line 101 abc.cs   // CS1578
-      // try the following line instead
-      //#line 101 "abc.cs"
-      intt i;          // error will be reported on line 101
-   }
-}
-```
-
-## CS1633: Unrecognized #pragma directive
-
-The pragma used was not one of the known pragmas supported by the C# compiler. To resolve this error, use only pragmas supported.
-
-The following sample generates CS1633:
-
-```csharp
-// CS1633.cs
-// compile with: /W:1
-#pragma unknown  // CS1633
-
-class C
-{
-   public static void Main()
-   {
-   }
-}
-```
-
-## CS1634: Expected disable or restore
-
-This error occurs if a [#pragma warning](../preprocessor-directives.md#pragma-warning) clause is badly formed, such as if disable or restore was omitted.
-
-The following sample generates CS1634:
+**CS1634** occurs when a `#pragma warning` clause is badly formed, such as when disable or restore is omitted:
 
 ```csharp
 // CS1634.cs
@@ -445,11 +270,7 @@ class MyClass
 }
 ```
 
-## CS1635: Cannot restore warning 'warning code' because it was disabled globally
-
-This warning occurs if you use the `/nowarn` command line option or project setting to disable a warning for the entire compilation unit, but you use `#pragma warning restore` to attempt to restore that warning. To resolve this error, remove the `/nowarn` command line option or project setting, or remove the `#pragma warning restore` for any warnings you are disabling via the command line or project settings. For more information, see [#pragma warning](../preprocessor-directives.md#pragma-warning).
-
-The following sample generates CS1635:
+**CS1635** occurs when you use the `/nowarn` command line option or project setting to disable a warning globally, but use `#pragma warning restore` to attempt to restore that warning:
 
 ```csharp
 // CS1635.cs
@@ -466,16 +287,12 @@ class MyClass
     if (MyEnum.three == MyEnum.two)
         System.Console.WriteLine("Duplicate");
 
-#pragma warning restore 162
+#pragma warning restore 162  // CS1635
     }
 }
 ```
 
-## CS1691: 'number' is not a valid warning number
-
-A number that was passed to the [#pragma warning](../preprocessor-directives.md#pragma-warning) preprocessor directive was not a valid warning number. Verify that the number represents a warning, not an error or another sequence of characters.
-
-The following example generates CS1691:
+**CS1691** occurs when a number passed to the `#pragma warning` directive is not a valid warning number:
 
 ```csharp
 // CS1691.cs
@@ -496,11 +313,7 @@ public class C
 }
 ```
 
-## CS1692: Invalid number
-
-A number of preprocessor directives, such as `#pragma` and `#line`, use numbers as parameters. One of these numbers is invalid because it is too big, in the wrong format, contains illegal characters, and so on. To correct this error, correct the number.
-
-The following example generates CS1692:
+**CS1692** occurs when a number in preprocessor directives like `#pragma` and `#line` is invalid because it's too big, in the wrong format, or contains illegal characters:
 
 ```csharp
 // CS1692.cs
@@ -517,222 +330,108 @@ class A
 }
 ```
 
-## CS1694: Invalid filename specified for preprocessor directive. Filename is too long or not a valid filename
+These directives are useful for conditional compilation scenarios where you want to alert developers about specific conditions in the code, or control which warnings are displayed during compilation. For more information about using these directives, see the [preprocessor directives documentation](../preprocessor-directives.md#error-and-warning-information) and [#pragma warning](../preprocessor-directives.md#pragma-warning).
 
-This warning occurs when using the `#pragma checksum` preprocessor directive. The file name specified is longer than 256 characters. To resolve this warning, use a shorter file name.
+## `#line` and file directive errors
 
-The following sample generates CS1694:
+- **CS1560**: *Invalid filename specified for preprocessor directive. Filename is too long or not a valid filename*
+- **CS1576**: *The line number specified for #line directive is missing or invalid*
+- **CS1578**: *Filename, single-line comment or end-of-line expected*
+- **CS1694**: *Invalid filename specified for preprocessor directive. Filename is too long or not a valid filename*
+- **CS1695**: *Invalid #pragma checksum syntax; should be #pragma checksum "filename" "{XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX}" "XXXX..."*
+- **CS1709**: *Filename specified for preprocessor directive is empty*
+- **CS8938**: *The #line directive value is missing or out of range*
+- **CS8939**: *The #line directive end position must be greater than or equal to the start position*
+- **CS9028**: *The #line span directive requires space before the first parenthesis, before the character offset, and before the file name*
 
+These errors indicate incorrect usage of the [`#line` directive](../preprocessor-directives.md#error-and-warning-information) or file-related preprocessor directives. Common causes include:
+
+- Invalid or missing filenames (CS1560, CS1694, CS1709).
+- Incorrect line number format or values (CS1576, CS8938, CS8939).
+- Missing proper syntax for filenames and comments (CS1578).
+- Malformed `#pragma checksum` syntax (CS1695).
+- Improper spacing in `#line` span directives (CS9028).
+
+**CS1560/CS1694 example - Invalid filename specified:**
 ```csharp
-// cs1694.cs
-#pragma checksum "MyFile1234567890MyFile1234567890MyFile1234567890MyFile1234567890MyFile1234567890MyFile1234567890MyFile1234567890MyFile1234567890MyFile1234567890MyFile1234567890MyFile1234567890MyFile1234567890MyFile1234567890MyFile1234567890MyFile1234567890MyFile1234567890.txt" {00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F}   // CS1694
-class MyClass {}
+#line 100 "MyFile1234567890MyFile1234567890MyFile1234567890MyFile1234567890MyFile1234567890MyFile1234567890MyFile1234567890MyFile1234567890MyFile1234567890MyFile1234567890MyFile1234567890MyFile1234567890MyFile1234567890MyFile1234567890MyFile1234567890MyFile1234567890.txt"   // CS1560/CS1694 - filename too long
 ```
 
-## CS1695: Invalid #pragma checksum syntax; should be #pragma checksum "filename" "{XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX}" "XXXX..."
-
-You should rarely encounter this error since the checksum is generally inserted at run time if you are generating code by means of the Code Dom API.
-
-However, if you were to type in this `#pragma` statement and mistype either the GUID or checksum, you would get this error. The syntax checking by the compiler does not validate that you typed in a correct GUID, but it does check for the right number of digits and delimiters, and that the digits are hexadecimal. Likewise, it verifies that the checksum contains an even number of digits, and that the digits are hexadecimal.
-
-The following example generates CS1695:
-
+**CS1576 example - Line number missing or invalid:**
 ```csharp
-// CS1695.cs
-
-#pragma checksum "12345"  // CS1695
-
-public class Test
-{
-    static void Main()
-    {
-    }
-}
+#line "abc.sc"         // CS1576 - missing line number
+#line abc "file.cs"    // CS1576 - invalid line number format
 ```
 
-## CS1696: Single-line comment or end-of-line expected
+**CS1578 example - Filename, comment or end-of-line expected:**
+```csharp
+#line 101 abc.cs   // CS1578 - filename not quoted
+```
 
-The compiler requires a preprocessor directive to be followed by an end-of-line terminator or by a single-line comment. The compiler has finished processing a valid preprocessor directive, and has encountered something that violates this syntax constraint.
+**CS1695 example - Invalid #pragma checksum syntax:**
+```csharp
+#pragma checksum "12345"  // CS1695 - missing GUID and checksum
+```
 
-The following sample generates CS1696:
+**CS1709 example - Empty filename:**
+```csharp
+#pragma checksum "" "{406EA660-64CF-4C82-B6F0-42D48172A799}" ""  // CS1709 - empty filename
+```
+
+**CS8938 example - #line directive value missing or out of range:**
+```csharp
+#line   // CS8938 - missing value
+#line 0  // CS8938 - out of range (must be 1-16,707,566)
+```
+
+**CS8939 example - #line end position error:**
+```csharp
+#line (1, 10) - (1, 5) "file.cs"  // CS8939 - end column < start column
+```
+
+**CS9028 example - #line span directive spacing:**
+```csharp
+#line(1, 1) - (1, 10)"file.cs"  // CS9028 - missing spaces
+```
+
+To fix these errors, ensure your `#line` directives and file-related preprocessor directives follow the correct syntax as described in the [preprocessor directives documentation](../preprocessor-directives.md).
+
+## File contains script.cs directives
+
+The following errors indicate [script.cs](https://scriptcs.net) syntax in a compiled C# file:
+
+- **CS7009**: *Cannot use #r after first token in file*
+- **CS7010**: *Quoted file name expected*
+- **CS7011**: *#r is only allowed in scripts*
+- **CS8097**: *#load is only allowed in scripts*
+
+These directives aren't supported in compiled C#. You must remove them, or use [script.cs](https://script.cs).
+
+## Incorrect use of file-based apps directives
+
+- **CS9297**: *`#:` directives cannot be after first token in file*
+- **CS9298**: *`#:` directives can be only used in file-based programs (`-features:FileBasedProgram`)*
+- **CS9299**: *`#:` directives cannot be after `#if` directive*
+- **CS9314**: *`#!` directives can be only used in scripts or file-based programs*
+
+These errors indicate that you've used the `#:` directives for a file-based app incorrectly. You can learn more about the syntax for these directives in the article on [preprocessor directives](../preprocessor-directives.md#file-based-apps) in the section on file-based apps. Or, you can explore file based apps by following the [tutorial](../../fundamentals/tutorials/file-based-programs.md) on file-based apps.
+
+## CS1032: Cannot define/undefine preprocessor symbols after first token in file
+
+The `#define` and `#undef` [preprocessor directives](../preprocessor-directives.md#defining-symbols) must be used at the beginning of a program, before any other keywords, such as those used in the namespace declaration.
+
+The following sample generates CS1032:
 
 ```csharp
-// CS1696.cs
-class Test
+// CS1032.cs
+namespace x
 {
-   public static void Main()
+   public class clx
    {
-      #pragma warning disable 1030;219   // CS1696
-      #pragma warning disable 1030   // OK
+      #define a   // CS1032, put before namespace
+      public static void Main()
+      {
+      }
    }
 }
-```
-
-## CS1709: Filename specified for preprocessor directive is empty
-
-You have specified a preprocessor directive that includes a file name, but that file is empty. To resolve this warning, put the needed content into the file.
-
-The following example generates CS1709:
-
-```csharp
-// CS1709.cs
-class Test
-{
-    static void Main()
-    {
-        #pragma checksum "" "{406EA660-64CF-4C82-B6F0-42D48172A799}" ""  // CS1709
-    }
-}
-```
-
-## CS7009: Cannot use #r after first token in file
-
-The [`#r` directive](../preprocessor-directives/preprocessor-r.md) can only be used before any tokens appear in a script file. After the first token, it's no longer allowed.
-
-The following example generates CS7009:
-
-```csharp
-// CS7009.cs
-using System;
-#r "System.Collections"  // CS7009
-```
-
-## CS7010: Quoted file name expected
-
-A filename was expected in a [preprocessor directive](../preprocessor-directives.md), but it was not properly quoted.
-
-The following example generates CS7010:
-
-```csharp
-// CS7010.cs
-#r System.Collections.dll  // CS7010 - missing quotes
-```
-
-To fix this error, enclose the filename in quotes:
-
-```csharp
-#r "System.Collections.dll"  // OK
-```
-
-## CS7011: #r is only allowed in scripts
-
-The [`#r` directive](../preprocessor-directives/preprocessor-r.md) can only be used in C# scripts (.csx files), not in regular C# source files.
-
-The following example generates CS7011:
-
-```csharp
-// CS7011.cs
-class Test
-{
-    static void Main()
-    {
-        #r "System.Collections"  // CS7011
-    }
-}
-```
-
-## CS8097: #load is only allowed in scripts
-
-The [`#load` directive](../preprocessor-directives/preprocessor-load.md) can only be used in C# scripts (.csx files), not in regular C# source files.
-
-The following example generates CS8097:
-
-```csharp
-// CS8097.cs
-class Test
-{
-    static void Main()
-    {
-        #load "helper.csx"  // CS8097
-    }
-}
-```
-
-## CS8098: Cannot use #load after first token in file
-
-The [`#load` directive](../preprocessor-directives/preprocessor-load.md) can only be used before any tokens appear in a script file. After the first token, it's no longer allowed.
-
-The following example generates CS8098:
-
-```csharp
-// CS8098.csx
-using System;
-#load "helper.csx"  // CS8098
-```
-
-## CS8938: The #line directive value is missing or out of range
-
-The [`#line` directive](../preprocessor-directives/preprocessor-line.md) requires a valid line number. Line numbers must be between 1 and 16,707,566.
-
-The following example generates CS8938:
-
-```csharp
-// CS8938.cs
-#line   // CS8938 - missing value
-#line 0  // CS8938 - out of range
-class Test { }
-```
-
-To fix this error, provide a valid line number:
-
-```csharp
-#line 100  // OK
-class Test { }
-```
-
-## CS8939: The #line directive end position must be greater than or equal to the start position
-
-When using the [`#line` directive](../preprocessor-directives/preprocessor-line.md) with span syntax, the end position must be greater than or equal to the start position.
-
-The following example generates CS8939:
-
-```csharp
-// CS8939.cs
-#line (1, 10) - (1, 5) "file.cs"  // CS8939 - end column < start column
-class Test { }
-```
-
-To fix this error, ensure the end position is not before the start position:
-
-```csharp
-#line (1, 5) - (1, 10) "file.cs"  // OK
-class Test { }
-```
-
-## CS8996: Raw string literals are not allowed in preprocessor directives
-
-[Raw string literals](../../misc/raw-string-literals.md) cannot be used in [preprocessor directives](../preprocessor-directives.md). Use regular string literals instead.
-
-The following example generates CS8996:
-
-```csharp
-// CS8996.cs
-#pragma checksum """raw_string""" "{406EA660-64CF-4C82-B6F0-42D48172A799}" "hash"  // CS8996
-class Test { }
-```
-
-To fix this error, use a regular string literal:
-
-```csharp
-#pragma checksum "filename.cs" "{406EA660-64CF-4C82-B6F0-42D48172A799}" "hash"  // OK
-class Test { }
-```
-
-## CS9028: The #line span directive requires space before the first parenthesis, before the character offset, and before the file name
-
-The [`#line` directive](../preprocessor-directives/preprocessor-line.md) with span syntax requires proper spacing between its components.
-
-The following example generates CS9028:
-
-```csharp
-// CS9028.cs
-#line(1, 1) - (1, 10)"file.cs"  // CS9028 - missing spaces
-class Test { }
-```
-
-To fix this error, add the required spaces:
-
-```csharp
-#line (1, 1) - (1, 10) "file.cs"  // OK
-class Test { }
 ```

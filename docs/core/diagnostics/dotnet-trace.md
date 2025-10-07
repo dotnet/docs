@@ -541,7 +541,7 @@ Output the parameters of each method in full. If not specified, parameters will 
 
 ## Collect a trace with dotnet-trace
 
-To collect traces using `dotnet-trace`:
+To collect traces using `dotnet-trace collect`:
 
 - Get the process identifier (PID) of the .NET Core application to collect traces from.
 
@@ -558,14 +558,22 @@ To collect traces using `dotnet-trace`:
   The preceding command generates output similar to the following:
 
   ```output
-  Press <Enter> to exit...
-  Connecting to process: <Full-Path-To-Process-Being-Profiled>/dotnet.exe
-  Collecting to file: <Full-Path-To-Trace>/trace.nettrace
-  Session Id: <SessionId>
-  Recording trace 721.025 (KB)
+  No profile or providers specified, defaulting to trace profiles 'dotnet-common' + 'dotnet-sampled-thread-time'.
+
+  Provider Name                           Keywords            Level               Enabled By
+  Microsoft-Windows-DotNETRuntime         0x000000100003801D  Informational(4)    --profile
+  Microsoft-DotNETCore-SampleProfiler     0x0000F00000000000  Informational(4)    --profile
+
+  Process        : <full-path-to-process-being-trace>
+  Output File    : <process>_20251007_154557.nettrace
+  [00:00:00:02]   Recording trace 178.172  (KB)
+  Press <Enter> or <Ctrl+C> to exit...
+  Stopping the trace. This may take several minutes depending on the application being traced.
+
+  Trace completed.
   ```
 
-- Stop collection by pressing the `<Enter>` key. `dotnet-trace` will finish logging events to the *trace.nettrace* file.
+- Stop collection by pressing the `<Enter>` key. `dotnet-trace` will finish logging events to the `.nettrace` file.
 
 ## Launch a child application and collect a trace from its startup using dotnet-trace
 
@@ -580,11 +588,11 @@ dotnet-trace collect -- hello.exe arg1 arg2
 The preceding command generates output similar to the following:
 
 ```output
-No profile or providers specified. Using default composition: dotnet-common + dotnet-thread-time
+No profile or providers specified, defaulting to trace profiles 'dotnet-common' + 'dotnet-sampled-thread-time'.
 
 Provider Name                           Keywords            Level               Enabled By
+Microsoft-Windows-DotNETRuntime         0x000000100003801D  Informational(4)    --profile
 Microsoft-DotNETCore-SampleProfiler     0x0000F00000000000  Informational(4)    --profile
-Microsoft-Windows-DotNETRuntime         0x00000014C14FCCBD  Informational(4)    --profile
 
 Process        : E:\temp\gcperfsim\bin\Debug\net5.0\gcperfsim.exe
 Output File    : E:\temp\gcperfsim\trace.nettrace
@@ -639,6 +647,29 @@ However, when you want to gain a finer control over the lifetime of the app bein
 
     > [!IMPORTANT]
     > Launching your app with `dotnet run` can be problematic because the dotnet CLI may spawn many child processes that are not your app and they can connect to `dotnet-trace` before your app, leaving your app to be suspended at run time. It is recommended you directly use a self-contained version of the app or use `dotnet exec` to launch the application.
+
+## (Linux-only) Collect a trace with Linux perf events using dotnet-trace
+
+To collect traces using `dotnet-trace collect-linux`:
+
+  ```output
+  $ sudo dotnet-trace collect-linux
+  No providers, profiles, ClrEvents, or PerfEvents were specified, defaulting to trace profiles 'dotnet-common' + 'cpu-sampling'.
+
+  Provider Name                           Keywords            Level               Enabled By
+  Microsoft-Windows-DotNETRuntime         0x000000100003801D  Informational(4)    --profile
+
+  Linux Events                                                                    Enabled By
+  cpu-sampling                                                                    --profile
+
+  [00:00:00:04]   Recording trace.
+  Press <Enter> or <Ctrl-C> to exit...
+
+  Recording stopped.
+  Resolving symbols.
+  Finished recording trace.
+  Trace written to trace_20251007_160232.nettrace
+  ```
 
 ## View the trace captured from dotnet-trace
 

@@ -1,6 +1,7 @@
 using System;
 
 // <Snippet1>
+// This code violates the rule.
 namespace ca_1707
 {
     public interface IUser_Service

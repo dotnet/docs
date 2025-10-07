@@ -80,7 +80,7 @@ If you bind the call to a computation expression with `let`, you will not get th
 
 ### `and!`
 
-The `and!` keyword allows you to bind the results of multiple computation expression calls in a performant manner. This keyword enables *applicative computation expressions*, which provide a different computational model from the standard monadic approach.
+The `and!` keyword allows you to bind the results of multiple computation expression calls more efficiently. This keyword enables *applicative computation expressions*, which provide a different computational model from the standard monadic approach.
 
 ```fsharp
 let doThingsAsync url =
@@ -92,11 +92,11 @@ let doThingsAsync url =
     }
 ```
 
-Using a series of `let! ... let! ...` forces sequential execution where each bind depends on the previous one. In contrast, `let! ... and! ...` indicates that the computations are independent of each other. This independence allows computation expression authors to:
+Using a series of `let! ... let! ...` executes the computations sequentially, even if they are independent. In contrast, `let! ... and! ...` indicates that the computations are independent, allowing applicative combination. This independence allows computation expression authors to:
 
-- Execute computations more efficiently
-- Potentially run computations in parallel
-- Accumulate results without forcing unnecessary sequential dependencies
+- Execute computations more efficiently.
+- Can run computations in parallel.
+- Accumulate results without unnecessary sequential dependencies.
 
 The restriction is that computations combined with `and!` cannot depend on the results of previously bound values within the same `let!`/`and!` chain. This trade-off enables the performance benefits.
 

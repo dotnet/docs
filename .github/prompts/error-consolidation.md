@@ -1,0 +1,1 @@
+Add the contents of cs1027.md to the preprocessor-errors.md file, sort that file by 'source_path_from_root'. Add a redirection for cs1027.md to point to preprocessor-errors.md, add "cs1027: to the list of display names in the TOC for preprocessor-errors.md. Finally, delete cs1027.md

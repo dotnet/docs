@@ -135,17 +135,17 @@ public static class ExtensionMethodsDemonstrations
         Point rotatePoint1 = new Point(10, 0);
         Console.WriteLine($"Before Rotate: {rotatePoint1}");
         rotatePoint1.Rotate(90);
-        Console.WriteLine($"After Rotate(90�): {rotatePoint1}");
+        Console.WriteLine($"After Rotate(90°): {rotatePoint1}");
 
         Point rotatePoint2 = new Point(5, 5);
         Console.WriteLine($"Before Rotate: {rotatePoint2}");
         rotatePoint2.Rotate(45);
-        Console.WriteLine($"After Rotate(45�): {rotatePoint2}");
+        Console.WriteLine($"After Rotate(45°): {rotatePoint2}");
 
         Point rotatePoint3 = new Point(3, 4);
         Console.WriteLine($"Before Rotate: {rotatePoint3}");
         rotatePoint3.Rotate(180);
-        Console.WriteLine($"After Rotate(180�): {rotatePoint3}");
+        Console.WriteLine($"After Rotate(180°): {rotatePoint3}");
         Console.WriteLine();
     }
 

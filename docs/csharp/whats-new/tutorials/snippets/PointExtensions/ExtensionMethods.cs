@@ -20,9 +20,9 @@ public static class PointExtensions
         point.Y *= yScale;
     }
 
-    public static void Rotate(this Point point, int angleInDegress)
+    public static void Rotate(this Point point, int angleInDegrees)
     {
-        double theta = ((double)angleInDegress * Math.PI) / 180.0;
+        double theta = ((double)angleInDegrees * Math.PI) / 180.0;
         double sinTheta = Math.Sin(theta);
         double cosTheta = Math.Cos(theta);
         double newX = (double)point.X * cosTheta - (double)point.Y * sinTheta;

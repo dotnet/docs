@@ -1,13 +1,13 @@
 ---
 title: Explore extension members in C# 14 to enhance existing types
-description: "C# 14 enables provides new syntax for extensions that support properties and operators, and enables extensions on a type as well as an instance. Learn to use them, and how to migrate existing extension methods to extension members"
+description: "C# 14 provides new syntax for extensions that support properties and operators, and enables extensions on a type as well as an instance. Learn to use them, and how to migrate existing extension methods to extension members"
 author: billwagner
 ms.author: wiwagn
 ms.service: dotnet-csharp
 ms.topic: tutorial
 ms.date: 10/06/2025
 ai-usage: ai-assisted
-#customer intent: As a C# developer, I reduce repeated code by introducting extension members for common tasks 
+#customer intent: As a C# developer, I reduce repeated code by introducing extension members for common tasks 
 ---
 # Tutorial: Explore extension members in C# 14
 
@@ -40,7 +40,7 @@ Start by creating a console application that demonstrates both traditional exten
    cd PointExtensions
    ```
 
-1. Copy the following code into a new filed named `ExtensionMethods.cs`:
+1. Copy the following code into a new file named `ExtensionMethods.cs`:
 
    :::code language="csharp" source="snippets/PointExtensions/ExtensionMethods.cs":::
 
@@ -105,7 +105,7 @@ Extension members enable you to add operators directly to existing types. Now yo
 
 The extension operators make point arithmetic as natural as working with built-in numeric types.
 
-## Add More operators
+## Add more operators
 
 You can also add extension operators for the discrete operations shown in the following code example:
 
@@ -123,7 +123,7 @@ Your extensions can include multiple overloaded operators, as long as the operan
 
 ## Migrate instance methods to extension members
 
-Extension members also support instance methods. You don't have to change existing extension methods. The old and new forms are binary and source compatible. If you want to keep all your extensions in one container, you can. Migrate traditional extension methods to the new syntax maintains the same functionality.
+Extension members also support instance methods. You don't have to change existing extension methods. The old and new forms are binary and source compatible. If you want to keep all your extensions in one container, you can. Migrating traditional extension methods to the new syntax maintains the same functionality.
 
 ### Traditional extension methods
 
@@ -176,15 +176,15 @@ This example demonstrates how extension members create a cohesive API that feels
 
 When migrating from traditional extension methods to extension members, you gain:
 
-1. **Static properties**: Add constants and computed values to types
-1. **Operators**: Enable natural mathematical and logical operations
-1. **Unified syntax**: All extension logic uses the same `extension` declaration
-1. **Type-level extensions**: Extend the type itself, not just instances
+1. **Static properties**: Add constants and computed values to types.
+1. **Operators**: Enable natural mathematical and logical operations.
+1. **Unified syntax**: All extension logic uses the same `extension` declaration.
+1. **Type-level extensions**: Extend the type itself, not just instances.
 
 Run the complete application to see both approaches side by side and observe how extension members provide a more integrated development experience.
 
 ## Related content
 
-* [Extension methods (C# Programming Guide)](/dotnet/csharp/programming-guide/classes-and-structs/extension-methods)
-* [What's new in C# 14](/dotnet/csharp/whats-new/csharp-14)
-* [Operator overloading (C# reference)](/dotnet/csharp/language-reference/operators/operator-overloading)
+- [Extension methods (C# Programming Guide)](/dotnet/csharp/programming-guide/classes-and-structs/extension-methods)
+- [What's new in C# 14](/dotnet/csharp/whats-new/csharp-14)
+- [Operator overloading (C# reference)](/dotnet/csharp/language-reference/operators/operator-overloading)

@@ -1,7 +1,7 @@
 namespace ca1700
 {
     //<snippet1>
-    // This class violates the rule.
+    // This enum violates the rule.
     public enum BadPaymentStatus
     {
         Pending = 0,
@@ -10,7 +10,7 @@ namespace ca1700
         Reserved = 3,
     }
 
-    // This class satisfies the rule.
+    // This enum satisfies the rule.
     public enum GoodPaymentStatus
     {
         Pending = 0,

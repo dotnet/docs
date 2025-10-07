@@ -261,6 +261,8 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
   List the discovered tests instead of running the tests.
 
+[!INCLUDE [tl](../../../includes/cli-tl.md)]
+
 [!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
 
 - **`args`**
@@ -499,8 +501,6 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
 
   > [!NOTE]
   > Running tests for a solution with a global `RuntimeIdentifier` property (explicitly or via `--arch`, `--runtime`, or `--os`) is not supported. Set `RuntimeIdentifier` on an individual project level instead.
-
-[!INCLUDE [tl](../../../includes/cli-tl.md)]
 
 - **`-v|--verbosity <LEVEL>`**
   

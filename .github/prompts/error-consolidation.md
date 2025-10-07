@@ -1,3 +1,6 @@
 Add the contents of cs1027.md to the preprocessor-errors.md file, sort that file by 'source_path_from_root'. Add a redirection for cs1027.md to point to preprocessor-errors.md, add "cs1027: to the list of display names in the TOC for preprocessor-errors.md. Finally, delete cs1027.md
 
-Search all files in the docs/csharp/language-reference/compiler-messages folder for any other errors and warnings that involve preprocessor tokens. Give me a list to review for possible additional consolidation
+Search all files in the docs/csharp/language-reference/compiler-messages folder for any other errors and warnings that involve preprocessor tokens. Give me a list to review for possible additional consolidation.
+
+To make sure you've found all related errors, we'll check the source.  Look in `CSharpResources.resx` for any elements where the `<value>` element is a message related to preprocessor tokens. The symbolic constant for that value is in the `name` attribute on the parent `data` element. Find that value in `ErrorCodes.cs`. It will map to the compiler error code, where the code is "CS" followed by the number as a four digit number. Build a list of any not already added to preprocessor-errors.md
+

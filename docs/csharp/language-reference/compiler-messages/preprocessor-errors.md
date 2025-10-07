@@ -24,6 +24,15 @@ f1_keywords:
   - "CS1695"
   - "CS1696"
   - "CS1709"
+  - "CS7009"
+  - "CS7010"
+  - "CS7011"
+  - "CS8097"
+  - "CS8098"
+  - "CS8938"
+  - "CS8939"
+  - "CS8996"
+  - "CS9028"
   - "CS9297"
   - "CS9298"
   - "CS9299"
@@ -51,6 +60,15 @@ helpviewer_keywords:
   - "CS1695"
   - "CS1696"
   - "CS1709"
+  - "CS7009"
+  - "CS7010"
+  - "CS7011"
+  - "CS8097"
+  - "CS8098"
+  - "CS8938"
+  - "CS8939"
+  - "CS8996"
+  - "CS9028"
   - "CS9297"
   - "CS9298"
   - "CS9299"
@@ -83,6 +101,15 @@ The compiler generates the following errors for incorrect use of preprocessor di
 - **CS1695**: *Invalid #pragma checksum syntax; should be #pragma checksum "filename" "{XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX}" "XXXX..."*
 - **CS1696**: *Single-line comment or end-of-line expected*
 - **CS1709**: *Filename specified for preprocessor directive is empty*
+- **CS7009**: *Cannot use #r after first token in file*
+- **CS7010**: *Quoted file name expected*
+- **CS7011**: *#r is only allowed in scripts*
+- **CS8097**: *#load is only allowed in scripts*
+- **CS8098**: *Cannot use #load after first token in file*
+- **CS8938**: *The #line directive value is missing or out of range*
+- **CS8939**: *The #line directive end position must be greater than or equal to the start position*
+- **CS8996**: *Raw string literals are not allowed in preprocessor directives*
+- **CS9028**: *The #line span directive requires space before the first parenthesis, before the character offset, and before the file name*
 - **CS9297**: *`#:` directives cannot be after first token in file*
 - **CS9298**: *`#:`directives can be only used in file-based programs (`-features:FileBasedProgram`)*
 - **CS9299**: *`#:` directives cannot be after `#if` directive*
@@ -556,4 +583,156 @@ class Test
         #pragma checksum "" "{406EA660-64CF-4C82-B6F0-42D48172A799}" ""  // CS1709
     }
 }
+```
+
+## CS7009: Cannot use #r after first token in file
+
+The [`#r` directive](../preprocessor-directives/preprocessor-r.md) can only be used before any tokens appear in a script file. After the first token, it's no longer allowed.
+
+The following example generates CS7009:
+
+```csharp
+// CS7009.cs
+using System;
+#r "System.Collections"  // CS7009
+```
+
+## CS7010: Quoted file name expected
+
+A filename was expected in a [preprocessor directive](../preprocessor-directives.md), but it was not properly quoted.
+
+The following example generates CS7010:
+
+```csharp
+// CS7010.cs
+#r System.Collections.dll  // CS7010 - missing quotes
+```
+
+To fix this error, enclose the filename in quotes:
+
+```csharp
+#r "System.Collections.dll"  // OK
+```
+
+## CS7011: #r is only allowed in scripts
+
+The [`#r` directive](../preprocessor-directives/preprocessor-r.md) can only be used in C# scripts (.csx files), not in regular C# source files.
+
+The following example generates CS7011:
+
+```csharp
+// CS7011.cs
+class Test
+{
+    static void Main()
+    {
+        #r "System.Collections"  // CS7011
+    }
+}
+```
+
+## CS8097: #load is only allowed in scripts
+
+The [`#load` directive](../preprocessor-directives/preprocessor-load.md) can only be used in C# scripts (.csx files), not in regular C# source files.
+
+The following example generates CS8097:
+
+```csharp
+// CS8097.cs
+class Test
+{
+    static void Main()
+    {
+        #load "helper.csx"  // CS8097
+    }
+}
+```
+
+## CS8098: Cannot use #load after first token in file
+
+The [`#load` directive](../preprocessor-directives/preprocessor-load.md) can only be used before any tokens appear in a script file. After the first token, it's no longer allowed.
+
+The following example generates CS8098:
+
+```csharp
+// CS8098.csx
+using System;
+#load "helper.csx"  // CS8098
+```
+
+## CS8938: The #line directive value is missing or out of range
+
+The [`#line` directive](../preprocessor-directives/preprocessor-line.md) requires a valid line number. Line numbers must be between 1 and 16,707,566.
+
+The following example generates CS8938:
+
+```csharp
+// CS8938.cs
+#line   // CS8938 - missing value
+#line 0  // CS8938 - out of range
+class Test { }
+```
+
+To fix this error, provide a valid line number:
+
+```csharp
+#line 100  // OK
+class Test { }
+```
+
+## CS8939: The #line directive end position must be greater than or equal to the start position
+
+When using the [`#line` directive](../preprocessor-directives/preprocessor-line.md) with span syntax, the end position must be greater than or equal to the start position.
+
+The following example generates CS8939:
+
+```csharp
+// CS8939.cs
+#line (1, 10) - (1, 5) "file.cs"  // CS8939 - end column < start column
+class Test { }
+```
+
+To fix this error, ensure the end position is not before the start position:
+
+```csharp
+#line (1, 5) - (1, 10) "file.cs"  // OK
+class Test { }
+```
+
+## CS8996: Raw string literals are not allowed in preprocessor directives
+
+[Raw string literals](../../misc/raw-string-literals.md) cannot be used in [preprocessor directives](../preprocessor-directives.md). Use regular string literals instead.
+
+The following example generates CS8996:
+
+```csharp
+// CS8996.cs
+#pragma checksum """raw_string""" "{406EA660-64CF-4C82-B6F0-42D48172A799}" "hash"  // CS8996
+class Test { }
+```
+
+To fix this error, use a regular string literal:
+
+```csharp
+#pragma checksum "filename.cs" "{406EA660-64CF-4C82-B6F0-42D48172A799}" "hash"  // OK
+class Test { }
+```
+
+## CS9028: The #line span directive requires space before the first parenthesis, before the character offset, and before the file name
+
+The [`#line` directive](../preprocessor-directives/preprocessor-line.md) with span syntax requires proper spacing between its components.
+
+The following example generates CS9028:
+
+```csharp
+// CS9028.cs
+#line(1, 1) - (1, 10)"file.cs"  // CS9028 - missing spaces
+class Test { }
+```
+
+To fix this error, add the required spaces:
+
+```csharp
+#line (1, 1) - (1, 10) "file.cs"  // OK
+class Test { }
 ```

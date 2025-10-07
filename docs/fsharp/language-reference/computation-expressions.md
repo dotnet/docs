@@ -80,7 +80,7 @@ If you bind the call to a computation expression with `let`, you will not get th
 
 ### `and!`
 
-The `and!` keyword allows you to bind the results of multiple computation expression calls in a performant manner. This keyword enables **applicative computation expressions**, which provide a different computational model from the standard monadic approach.
+The `and!` keyword allows you to bind the results of multiple computation expression calls in a performant manner. This keyword enables *applicative computation expressions*, which provide a different computational model from the standard monadic approach.
 
 ```fsharp
 let doThingsAsync url =

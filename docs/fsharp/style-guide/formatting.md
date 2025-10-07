@@ -1182,6 +1182,18 @@ match x with
 | None -> 0
 ```
 
+However, do use spaces between separate curried arguments in patterns, just as in expressions:
+
+```fsharp
+// ✔️ OK - space between curried arguments
+match x with
+| Pattern arg (a, b) -> processValues arg a b
+
+// ❌ Not OK - missing space between curried arguments
+match x with
+| Pattern arg(a, b) -> processValues arg a b
+```
+
 If the expression on the right of the pattern matching arrow is too large, move it to the following line, indented one step from the `match`/`|`.
 
 ```fsharp

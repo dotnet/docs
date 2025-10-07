@@ -167,11 +167,11 @@ class Test { }
 #endif   // CS1028 - no matching #if
 ```
 
-**CS1032 example - `#define` and `undef` preprocessor directives must appear before other tokens:**
+**CS1032 example - `#define` and `#undef` preprocessor directives must appear before other tokens:**
 
 ```csharp
 /* Comment */ 
-#define X   // CS1032 - directive not token in file
+#define X   // CS1032 - directive not first token in file
 ```
 
 **CS1038 example - #endregion directive expected:**

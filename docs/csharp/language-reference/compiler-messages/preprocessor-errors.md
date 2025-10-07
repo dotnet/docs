@@ -140,11 +140,13 @@ These errors indicate that you've used invalid syntax for [preprocessor directiv
 - Using raw string literals in preprocessor directives (CS8996).
 
 **CS1024 example - Preprocessor directive expected:**
+
 ```csharp
 #import System   // CS1024 - "import" is not a valid directive
 ```
 
 **CS1025 example - Single-line comment or end-of-line expected:**
+
 ```csharp
 #if true /* hello  
 */   // CS1025 - multiline comment not allowed
@@ -152,17 +154,20 @@ These errors indicate that you've used invalid syntax for [preprocessor directiv
 ```
 
 **CS1027 example - #endif directive expected:**
+
 ```csharp
 #if true   // CS1027 - missing #endif
 class Test { }
 ```
 
 **CS1028 example - Unexpected preprocessor directive:**
+
 ```csharp
 #endif   // CS1028 - no matching #if
 ```
 
 **CS1038 example - #endregion directive expected:**
+
 ```csharp
 #region testing
 class Test { }
@@ -170,11 +175,13 @@ class Test { }
 ```
 
 **CS1040 example - Preprocessor directives must appear as the first non-white-space character:**
+
 ```csharp
 /* Comment */ #define X   // CS1040 - directive not first on line
 ```
 
 **CS1517 example - Invalid preprocessor expression:**
+
 ```csharp
 #if 1           // CS1517 - numeric literals not allowed
 #endif
@@ -183,11 +190,13 @@ class Test { }
 ```
 
 **CS1633 example - Unrecognized #pragma directive:**
+
 ```csharp
 #pragma unknown  // CS1633 - "unknown" is not a valid pragma
 ```
 
 **CS8996 example - Raw string literals are not allowed in preprocessor directives:**
+
 ```csharp
 // CS8996.cs
 #pragma checksum """raw_string""" "{406EA660-64CF-4C82-B6F0-42D48172A799}" "hash"  // CS8996
@@ -353,43 +362,51 @@ These errors indicate incorrect usage of the [`#line` directive](../preprocessor
 - Improper spacing in `#line` span directives (CS9028).
 
 **CS1560/CS1694 example - Invalid filename specified:**
+
 ```csharp
 #line 100 "MyFile1234567890MyFile1234567890MyFile1234567890MyFile1234567890MyFile1234567890MyFile1234567890MyFile1234567890MyFile1234567890MyFile1234567890MyFile1234567890MyFile1234567890MyFile1234567890MyFile1234567890MyFile1234567890MyFile1234567890MyFile1234567890.txt"   // CS1560/CS1694 - filename too long
 ```
 
 **CS1576 example - Line number missing or invalid:**
+
 ```csharp
 #line "abc.sc"         // CS1576 - missing line number
 #line abc "file.cs"    // CS1576 - invalid line number format
 ```
 
 **CS1578 example - Filename, comment or end-of-line expected:**
+
 ```csharp
 #line 101 abc.cs   // CS1578 - filename not quoted
 ```
 
 **CS1695 example - Invalid #pragma checksum syntax:**
+
 ```csharp
 #pragma checksum "12345"  // CS1695 - missing GUID and checksum
 ```
 
 **CS1709 example - Empty filename:**
+
 ```csharp
 #pragma checksum "" "{406EA660-64CF-4C82-B6F0-42D48172A799}" ""  // CS1709 - empty filename
 ```
 
 **CS8938 example - #line directive value missing or out of range:**
+
 ```csharp
 #line   // CS8938 - missing value
 #line 0  // CS8938 - out of range (must be 1-16,707,566)
 ```
 
 **CS8939 example - #line end position error:**
+
 ```csharp
 #line (1, 10) - (1, 5) "file.cs"  // CS8939 - end column < start column
 ```
 
 **CS9028 example - #line span directive spacing:**
+
 ```csharp
 #line(1, 1) - (1, 10)"file.cs"  // CS9028 - missing spaces
 ```

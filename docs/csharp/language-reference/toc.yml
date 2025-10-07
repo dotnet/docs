@@ -460,6 +460,10 @@ items:
 - name: C# compiler messages
   href: ./compiler-messages/index.md
   items:
+  - name: Preprocessor errors
+    href: ./compiler-messages/preprocessor-errors.md
+    displayName: >
+      CS9297, CS9298, CS9299, CS9314
   - name: Feature or version missing
     href: ./compiler-messages/feature-version-errors.md
     displayName: >

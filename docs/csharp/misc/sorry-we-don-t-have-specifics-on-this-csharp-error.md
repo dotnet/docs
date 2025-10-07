@@ -620,10 +620,6 @@ f1_keywords:
   - "CS9235"
   - "CS9236"
 # C# 14 errors begin here
-## Shebang
-  - "CS9297"
-  - "CS9298"
-  - "CS9299"
 ## using `extension` as type name. (valid identifiers).
   - "CS9306"
 ## User defined operators
@@ -632,10 +628,22 @@ f1_keywords:
   - "CS9311"
   - "CS9312"
   - "CS9313"
-## Shebang
-  - "CS9314"
 ## Strings in the data section:
   - "CS9315"
+## More extension errors
+  - "CS9316"
+  - "CS9317"
+  - "CS9318"
+  - "CS9319"
+  - "CS9326"
+  - "CS9327"
+  - "CS9328"
+  - "CS9329"
+  - "CS9330"
+  - "CS9331"
+  - "CS9332"
+  - "CS9333"
+  - "CS9334"
 helpviewer_keywords:
   - "errors [C#], additional information"
 ---

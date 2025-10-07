@@ -2,7 +2,7 @@
 title: .NET SDK and .NET CLI telemetry
 description: The .NET SDK and the .NET CLI collect usage information and send it to Microsoft. Learn what data is collected and how to opt out.
 author: KathleenDollard
-ms.date: 02/24/2022
+ms.date: 10/07/2025
 ---
 # .NET SDK and .NET CLI telemetry
 
@@ -106,6 +106,16 @@ The telemetry feature collects the following data:
 | >=8.0.100     | Whether library mode for mobile is used.  |
 | >=8.0.100     | Whether NativeAOT is used. |
 | >=8.0.100     | Used Mono runtime pack version. |
+| >=10.0.100    | Hashed project identifier for `dotnet run` (file-based or project-based app). |
+| >=10.0.100    | Application type for `dotnet run` (file-based or project-based). |
+| >=10.0.100    | Number of SDKs used for `dotnet run`. |
+| >=10.0.100    | Number of PackageReferences for `dotnet run`. |
+| >=10.0.100    | Number of ProjectReferences for `dotnet run`. |
+| >=10.0.100    | Launch profile usage for `dotnet run` (none, explicit, default, or not used). |
+| >=10.0.100    | Whether launch profile is default for `dotnet run`. |
+| >=10.0.100    | Number of additional properties for file-based apps with `dotnet run`. |
+| >=10.0.100    | Whether MSBuild was used for file-based apps with `dotnet run`. |
+| >=10.0.100    | Whether Roslyn compiler was used for file-based apps with `dotnet run`. |
 
 ### Collected options
 
@@ -146,6 +156,28 @@ The `dotnet new` template instantiation command collects additional data for Mic
 
 * `--framework`
 * `--auth`
+
+### dotnet run telemetry
+
+The `dotnet run` command collects feature-based telemetry to help drive development and usage of file-based apps, starting with .NET SDK 10.0.100:
+
+**Common telemetry for all `dotnet run` executions:**
+
+* Application type (file-based or project-based)
+* Hashed project or file identifier
+* Number of SDKs used
+* Number of PackageReferences
+* Number of ProjectReferences
+* Launch profile usage (whether `--launch-profile` or `--no-launch-profile` was used)
+* Whether the launch profile is a default profile
+
+**Additional telemetry for file-based apps only:**
+
+* Number of additional properties (for example, `#:property` directives)
+* Whether MSBuild was used for building
+* Whether the Roslyn compiler was used directly
+
+All identifiers are hashed using SHA256. For file-based apps, the entry point file path is hashed. For project-based apps, the project file path (or relative path from repository root when available) is hashed.
 
 ## Crash exception telemetry
 

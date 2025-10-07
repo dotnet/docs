@@ -107,12 +107,14 @@ The telemetry feature collects the following data:
 | >=8.0.100     | Whether NativeAOT is used. |
 | >=8.0.100     | Used Mono runtime pack version. |
 | >=10.0.100    | Hashed project identifier for `dotnet run` (file-based or project-based app). |
-| >=10.0.100    | Application type for `dotnet run` (file-based or project-based). |
+| >=10.0.100    | Application type of either file-based app or project-based for `dotnet run`. |
+| >=10.0.100    | Obfuscated unique project identifier for `dotnet run`. |
+| >=10.0.100    | The launch profile name if specified for `dotnet run`. |
+| >=10.0.100    | Whether a launch profile was specified for `dotnet run`.|
+| >=10.0.100    | The applied launch settings model if any for `dotnet run`. |
 | >=10.0.100    | Number of SDKs used for `dotnet run`. |
 | >=10.0.100    | Number of PackageReferences for `dotnet run`. |
 | >=10.0.100    | Number of ProjectReferences for `dotnet run`. |
-| >=10.0.100    | Launch profile usage for `dotnet run` (none, explicit, default, or not used). |
-| >=10.0.100    | Whether launch profile is default for `dotnet run`. |
 | >=10.0.100    | Number of additional properties for file-based apps with `dotnet run`. |
 | >=10.0.100    | Whether MSBuild was used for file-based apps with `dotnet run`. |
 | >=10.0.100    | Whether Roslyn compiler was used for file-based apps with `dotnet run`. |
@@ -163,19 +165,20 @@ The `dotnet run` command collects feature-based telemetry to help drive developm
 
 **Common telemetry for all `dotnet run` executions:**
 
-* Application type (file-based or project-based)
-* Hashed project or file identifier
-* Number of SDKs used
-* Number of PackageReferences
-* Number of ProjectReferences
-* Launch profile usage (whether `--launch-profile` or `--no-launch-profile` was used)
-* Whether the launch profile is a default profile
+- Application type (file-based or project-based)
+- Hashed project or file identifier
+- Number of SDKs used
+- Number of PackageReferences
+- Number of ProjectReferences
+- Launch profile usage (whether `--launch-profile` or `--no-launch-profile` was used)
+- Whether the launch profile is a default profile
+- Launch settings model applied if any
 
-**Additional telemetry for file-based apps only:**
+**Telemetry for file-based apps only:**
 
-* Number of additional properties (for example, `#:property` directives)
-* Whether MSBuild was used for building
-* Whether the Roslyn compiler was used directly
+- Number of additional properties (for example, `#:property` directives)
+- Whether MSBuild was used for building
+- Whether the Roslyn compiler was used directly
 
 All identifiers are hashed using SHA256. For file-based apps, the entry point file path is hashed. For project-based apps, the project file path (or relative path from repository root when available) is hashed.
 

@@ -18,7 +18,7 @@ dotnet restore [<PROJECT>|<SOLUTION>|<FILE>]
   [-a|--arch <ARCHITECTURE>] [--configfile <FILE>] [--disable-build-servers]
   [--disable-parallel] [-f|--force] [--force-evaluate]
   [--ignore-failed-sources] [--interactive] [--lock-file-path <LOCK_FILE_PATH>]
-  [--locked-mode] [--no-cache] [--no-dependencies] [--no-http-cache]
+  [--locked-mode] [--no-dependencies] [--no-http-cache]
   [--os <OS>] [--packages <PACKAGES_DIRECTORY>]
   [-r|--runtime <RUNTIME_IDENTIFIER>] [-s|--source <SOURCE>]
   [--tl:[auto|on|off]] [--ucr|--use-current-runtime] [--use-lock-file]
@@ -122,10 +122,6 @@ There are three specific settings that `dotnet restore` ignores:
 - **`--locked-mode`**
 
   Don't allow updating project lock file.
-
-- **`--no-cache`**
-
-  Specifies to not cache HTTP requests.
 
 - **`--no-dependencies`**
 

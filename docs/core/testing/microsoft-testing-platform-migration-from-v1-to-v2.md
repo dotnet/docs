@@ -63,7 +63,7 @@ To opt-in the MTP-based implementation, create global.json in repository or solu
 
 Attempting to run the VSTest-based `dotnet test` with MTP v2 will produce the following error:
 
-> Testing with VSTest target is no longer supported by Microsoft.Testing.Platform on .NET 10 SDK and later. If you use dotnet test, you should opt-in to the new dotnet test experience. For more information, see https://aka.ms/dotnet-test-mtp-error
+> Testing with VSTest target is no longer supported by Microsoft.Testing.Platform on .NET 10 SDK and later. If you use dotnet test, you should opt-in to the new dotnet test experience. For more information, see <https://aka.ms/dotnet-test-mtp-error>
 
 ### Rename of command-line options
 

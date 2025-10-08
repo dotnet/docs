@@ -8,7 +8,7 @@ author: alexwolfmsft
 ms.author: alexwolf
 ---
 
-# Additional tools for Azure developers
+# Additional tools for Azure devs
 
 In addition to configuring your IDE and installing the Azure CLI, multiple other tools and utilities are available to help you be more productive with Azure.
 

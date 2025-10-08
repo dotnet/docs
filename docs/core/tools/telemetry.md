@@ -33,7 +33,7 @@ A single telemetry entry is also sent by the .NET SDK installer when a successfu
 
 ## Disclosure
 
-The .NET SDK displays text similar to the following when you first run one of the [.NET CLI commands](index.md) (for example, `dotnet build`). Text may vary slightly depending on the version of the SDK you're running. This "first run" experience is how Microsoft notifies you about data collection.
+The .NET SDK displays text similar to the following when you first run one of the [.NET CLI commands](index.md) (for example, `dotnet build`). Text might vary slightly depending on the version of the SDK you're running. This "first run" experience is how Microsoft notifies you about data collection.
 
 ```console
 Telemetry
@@ -44,9 +44,6 @@ Read more about .NET CLI Tools telemetry: https://aka.ms/dotnet-cli-telemetry
 ```
 
 To disable this message and the .NET welcome message, set the `DOTNET_NOLOGO` environment variable to `true`. Note that this variable has no effect on telemetry opt out.
-
-> [!NOTE]
-> Starting in .NET 10 RC 2, the first-run message emits to `stderr` instead of `stdout`. This change ensures that `stdout` remains clean for parsing and interpretation when using CLI commands in scripts or noninteractive scenarios. For more information, see [dotnet CLI commands log non-command-relevant data to stderr](../compatibility/sdk/10.0/dotnet-cli-stderr-output.md).
 
 ## Data points
 

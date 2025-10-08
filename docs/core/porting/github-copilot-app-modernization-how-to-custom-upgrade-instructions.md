@@ -47,7 +47,7 @@ Follow these steps to generate and refine a new instruction file. The following 
 1. (Optional) Add the file to the solution for visibility if it is not already included.
 1. When Copilot creates the new file (for example, `replace_newtonsoft_with_system_text_json.md`), review the content and refine it in chat. For example, ask Copilot to clarify detection criteria or add a prerequisite section.
 1. (Recommended) Strengthen the instruction with a real diff example:
-   1. Make the desired code changes manually in one project (e.g. remove the `Newtonsoft.Json` package, update using directives, and replace `JsonConvert` code with `JsonSerializer`).
+   1. Make the desired code changes manually in one project (for example, remove the `Newtonsoft.Json` package, update using directives, and replace `JsonConvert` code with `JsonSerializer`).
    1. In chat, with the instruction file open, type: `Check my git changes and add diffs as examples to my instruction file`.
    1. Confirm Copilot used a git diff and appended a fenced diff block or structured example to the markdown file.
 

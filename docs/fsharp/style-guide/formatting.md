@@ -245,7 +245,7 @@ SomeClass.Invoke ()
 String.Format (x.IngredientName, x.Quantity)
 ```
 
-These same formatting conventions apply to pattern matching. Consistency between expressions and patterns is highly valued in F# style:
+These same formatting conventions apply to pattern matching. F# style values consistent formatting:
 
 ```fsharp
 // ✔️ OK - Consistent formatting for expressions and patterns

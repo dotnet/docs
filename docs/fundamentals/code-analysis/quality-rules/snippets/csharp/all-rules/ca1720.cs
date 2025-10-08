@@ -1,6 +1,6 @@
 using System;
 
-namespace ca1715
+namespace ca1720
 {
     //<snippet1>
     // This code violates the rule.

@@ -86,12 +86,12 @@ Use these steps to incorporate an existing custom upgrade instruction into an up
    * Review package actions. When replacing Newtonsoft the plan should switch from a version bump to to now describing replacement/removal instead of a version upgrade.
    * Review execution steps. Any new execution steps referencing the transformation appear under the plan's step list.
    
-   ![#Plan updated with package details](./media/github-copilot-app-modernization-custom-upgrade-instructions/visualstudio-copilot-upgrade5.png)[^plan-package-details]
+   ![#Plan updated with package details](./media/github-copilot-app-modernization-how-to-custom-upgrade-instructions/visualstudio-copilot-upgrade5.png)[^plan-package-details]
 
     [^plan-package-details]: The screenshot shows the effect of applying a custom upgrade instruction to the upgrade plan. Instead of upgrading `Newtonsoft.Json`, the plan now removes it and incorporates `System.Text.Json` as the replacement, explicitly listing the package removal and corresponding additions/changes that will occur during execution.
 
 
-   ![#Plan updated with project details](./media/github-copilot-app-modernization-custom-upgrade-instructions/visualstudio-copilot-upgrade6.png)[^plan-project-details]
+   ![#Plan updated with project details](./media/github-copilot-app-modernization-how-to-custom-upgrade-instructions/visualstudio-copilot-upgrade6.png)[^plan-project-details]
 
    [^plan-project-details]: The screenshot shows the project-level (feature) actions added by the custom upgrade instruction. Projects that previously referenced `Newtonsoft.Json` are now slated for code refactoring to use `System.Text.Json` APIs.
 1. Tell Copilot to proceed with the upgrade once the plan reflects your custom instruction.

@@ -37,6 +37,8 @@ When you declare several instances in one `using` statement, they are disposed i
 
 You can also use the `using` statement and declaration with an instance of a [ref struct](../builtin-types/ref-struct.md) that fits the disposable pattern. That is, it has an instance `Dispose` method that's accessible, parameterless, and has a `void` return type.
 
+A `return` inside a `using` block still guarantees disposal, the compiler rewrites it into a `try/finally`, so the resource’s `Dispose` is always called before the method actually returns.
+
 The `using` statement can also be of the following form:
 
 ```csharp

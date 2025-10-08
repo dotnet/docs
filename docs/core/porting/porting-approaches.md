@@ -7,7 +7,7 @@ ms.date: 09/15/2025
 ---
 # Create a porting plan
 
-Before you jump straight into the code, take the time to go through the recommended pre-migration steps. This article gives you insight into the kinds of issues you may come across, and helps you decide on an approach that makes the most sense.
+Before you jump straight into the code, take the time to go through the recommended pre-migration steps. This article gives you insight into the kinds of issues you might come across, and helps you decide on an approach that makes the most sense.
 
 [!INCLUDE[](../../../includes/deprecating-api-port.md)]
 
@@ -27,7 +27,7 @@ This approach works well for small projects or projects that don't use many .NET
 
 Although it's unstructured, this code-focused approach often resolves issues quickly. A project that contains only data models might be an ideal candidate for this approach.
 
-### Stay on the .NET Framework until portability issues are resolved
+### Stay on .NET Framework until portability issues are resolved
 
 This approach might be the best if you prefer to have code that compiles during the entire process. The approach is as follows:
 
@@ -98,5 +98,5 @@ If you start with the base of your library and move outward from the base and te
 
 ## Next steps
 
-- [What is GitHub Copilot app modernization](github-copilot-app-modernization-overview.md)
+- [What is GitHub Copilot app modernization](github-copilot-app-modernization/overview.md)
 - [Organize your project to support both .NET Framework and .NET Core](project-structure.md)

@@ -16,6 +16,12 @@ like [fsdocs](http://fsprojects.github.io/FSharp.Formatting/) to generate API re
 
 By default, XML documentation comments are ignored by the compiler. To change this, set `--warnon:3390`. The compiler will then verify the syntax of the XML and the parameters referred to in `<param>` and `<paramref>` tags.
 
+You can enable this warning in your project file by adding a `<WarnOn>` element to the `<PropertyGroup>` section:
+
+```xml
+<WarnOn>3390</WarnOn>
+```
+
 You can generate the XML file at compile time by doing one of the following:
 
 - You can add a `GenerateDocumentationFile` element to the `<PropertyGroup>` section of your `.fsproj` project file,
@@ -49,7 +55,7 @@ The following example shows the alternative method, without XML tags. In this ex
 ## Comments with XML tags
 
 If a comment body begins with `<` (normally `<summary>`), then it is treated as an XML formatted comment
-body using XML tags. This second way enables you to specify separate notes
+body using XML tags. This second approach enables you to specify separate notes
 for a short summary, additional remarks, documentation for each parameter and type parameter and exceptions thrown, and a description of the return value.
 
 The following is a typical XML documentation comment in a signature file:

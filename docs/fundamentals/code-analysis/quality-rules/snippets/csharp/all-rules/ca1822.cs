@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 namespace ca1822
 {
+    //<snippet1>
     public class Printer
     {
         private readonly List<char> _items = [
@@ -33,4 +34,5 @@ namespace ca1822
             Console.WriteLine("Hello");
         }
     }
+    //</snippet1>
 }

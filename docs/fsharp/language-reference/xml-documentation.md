@@ -39,6 +39,9 @@ that immediately follows. Use this method when you want to write only a brief su
 The comment is encoded to XML during documentation preparation, so characters such as `<`, `>`, and `&` need not be escaped. If you don't specify a summary tag
 explicitly, you should not specify other tags, such as **param** or **returns** tags.
 
+> [!NOTE]
+> When you use comments without XML tags, any markup you include (such as HTML tags or XML-like syntax) will not be parsed or checked by the compiler or F# tooling. Some external tools like GitHub might attempt to parse the markup, but they can fail if the syntax contains errors. If you need to use XML tags in your documentation, wrap your comments with proper XML tags like `<summary>` to ensure they're validated by the compiler when `--warnon:3390` is enabled.
+
 The following example shows the alternative method, without XML tags. In this example, the entire text in the comment is considered a summary.
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet7102.fs)]

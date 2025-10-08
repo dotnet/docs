@@ -33,7 +33,7 @@ This breaking change doesn't affect typical users of test frameworks. It only af
 ### API signature changes
 
 - A `CancellationToken` parameter was added to <xref:Microsoft.Testing.Platform.OutputDevice.IOutputDevice.DisplayAsync(Microsoft.Testing.Platform.Extensions.OutputDevice.IOutputDeviceDataProducer,Microsoft.Testing.Platform.OutputDevice.IOutputDeviceData)?displayProperty=nameWithType>.
-- Methods in `ITestSessionLifetimeHandler` interface are changed to have a `ITestSessionContext` parameter instead of both `SessionUid` and `CancellationToken` parameters.
+- Methods in <xref:Microsoft.Testing.Platform.Extensions.TestHost.ITestSessionLifetimeHandler> interface are changed to have an `ITestSessionContext` parameter instead of both <xref:Microsoft.Testing.Platform.TestHost.SessionUid> and <xref:System.Threading.CancellationToken> parameters.
 - `IDataConsumer` is moved from `Microsoft.Testing.Platform.Extensions.TestHost` namespace to `Microsoft.Testing.Platform.Extensions`.
 
 This breaking change doesn't affect typical users of test frameworks. It only affects test framework authors and extension authors.

@@ -47,7 +47,7 @@ Based on the {path-to-file} you can determine if it's in the old system or not.
 
 ## Current code requirements (migrate TO these)
 
-**Location**: `./snippets/{doc-file}/[framework]/{code-language}/`
+**Location**: `./snippets/{doc-file}/{code-language}/`
 
 **Requirements for current code standards:**
 - ✅ MUST be complete and compilable

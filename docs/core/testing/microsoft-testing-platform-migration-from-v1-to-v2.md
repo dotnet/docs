@@ -16,7 +16,7 @@ These are breaking changes that might cause build errors after migration.
 
 ### Dropped unsupported target frameworks
 
-Support for target frameworks .NET Core 3.1 to .NET 7 is dropped. The minimum supported .NET version is .NET 8.
+Support for target frameworks from .NET Core 3.1 to .NET 7 is dropped. The minimum supported .NET version is .NET 8.
 This change doesn't affect .NET Framework. .NET Framework 4.6.2 continues to be the minimum supported .NET Framework target.
 
 ### Removed obsolete types

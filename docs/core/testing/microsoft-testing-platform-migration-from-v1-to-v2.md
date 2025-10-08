@@ -21,7 +21,7 @@ This change doesn't affect .NET Framework. .NET Framework 4.6.2 continues to be 
 
 ### Removed obsolete types
 
-The following types were marked obsolete in MTP v1. In MTP v2, they are now removed:
+The following types were marked obsolete in MTP v1. In MTP v2, they are removed completely:
 
 - `ITestApplicationLifecycleCallbacks`: use `ITestHostApplicationLifetime` instead.
 - `TestNodeFileArtifact`: use `FileArtifactProperty` instead.
@@ -46,8 +46,8 @@ These are breaking changes that might affect the behavior at run time.
 
 The `dotnet test` command has two implementations:
 
-1. VSTest-based implementation: this was the only implementation up to .NET 9 SDK.
-2. MTP-based implementation: this was added starting in .NET 10 SDK.
+- VSTest-based implementation: this was the only implementation up to .NET 9 SDK.
+- MTP-based implementation: this was added starting in .NET 10 SDK.
 
 Running MTP test projects with .NET 10 SDK now requires opting-in to the MTP-based `dotnet test` and can no longer be run with the VSTest-based implementation, which was previously enabled by `TestingPlatformDotnetTestSupport` MSBuild property in MTP v1.
 

@@ -2,7 +2,7 @@
 title: "Breaking change: 'dotnet watch' logs to stderr instead of stdout"
 description: "Learn about the breaking change in .NET 10 where 'dotnet watch' emits its internal-facing log messages to stderr instead of stdout."
 ms.date: 10/08/2025
-ai-usage: ai-assisted
+ai-usage: ai-generated
 ms.custom: https://github.com/dotnet/docs/issues/45871
 ---
 # 'dotnet watch' logs to stderr instead of stdout
@@ -31,7 +31,7 @@ This change is part of a general trend towards `dotnet` CLI commands not obscuri
 
 ## Recommended action
 
-Most users shouldn't need to take any action. If you need the `dotnet watch` messages on `stdout`, you can redirect the `stderr` stream to `stdout`. For example, use `2>&1` to redirect the `2` file descriptor for `stderr` to the `1` file descriptor for `stdout`
+Most users shouldn't need to take any action. If you need the `dotnet watch` messages on `stdout`, you can redirect the `stderr` stream to `stdout`. For example, use `2>&1` to redirect the `2` file descriptor for `stderr` to the `1` file descriptor for `stdout`.
 
 ## Affected APIs
 

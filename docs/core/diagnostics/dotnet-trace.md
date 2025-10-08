@@ -659,16 +659,18 @@ To collect traces using `dotnet-trace collect-linux`:
   Provider Name                           Keywords            Level               Enabled By
   Microsoft-Windows-DotNETRuntime         0x000000100003801D  Informational(4)    --profile
 
-  Linux Events                                                                    Enabled By
+  Linux Perf Events                                                               Enabled By
   cpu-sampling                                                                    --profile
 
-  [00:00:00:04]   Recording trace.
+  Output File    : <path-to-nettrace>trace_20251008_181939.nettrace
+
+  [00:00:00:03]   Recording trace.
   Press <Enter> or <Ctrl-C> to exit...
 
   Recording stopped.
   Resolving symbols.
   Finished recording trace.
-  Trace written to trace_20251007_160232.nettrace
+  Trace written to <path-to-nettrace>trace_20251008_181939.nettrace
   ```
 
 ## View the trace captured from dotnet-trace

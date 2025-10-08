@@ -4,7 +4,7 @@ description: Getting started with the .NET family of technologies.
 ms.date: 11/22/2024
 ms.custom: "updateeachrelease"
 ---
-# Welcome to .NET (Hi!)
+# Welcome to .NET (Hi!!)
 
 See [Get started with .NET](core/get-started.md) to learn how to create .NET apps.
 

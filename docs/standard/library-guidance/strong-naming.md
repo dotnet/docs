@@ -41,9 +41,10 @@ You should strong name your open-source .NET libraries if their targets include 
 > [!NOTE]
 > This guidance is specific to publicly distributed .NET libraries, such as .NET libraries published on NuGet.org. Strong naming is not required by most .NET applications and should not be done by default.
 
-✔️ CONSIDER strong naming your library's assemblies if you target .NET Framework or .NET Standard.
+✔️ CONSIDER strong naming your library's assemblies if you only target .NET Framework or .NET Standard.
 
-> Strong naming has no impact on modern .NET runtimes. If your library only targets .NET, then you don't need to strong name your assemblies.
+> Strong naming has no impact on modern .NET runtimes. If your library only targets modern .NET, then you don't need to strong name your assemblies.
+> If you multi-target across .NET Framework/.NET Standard _and_ modern .NET, then you should strong name across all of your Target Frameworks.
 
 ✔️ CONSIDER adding the strong naming key pair (public + private) to your source control system.
 

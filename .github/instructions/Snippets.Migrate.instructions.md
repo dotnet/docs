@@ -83,7 +83,7 @@ Based on the {path-to-file} you can determine if it's in the old system or not.
 
 ### 2. Create new folder structure
 - **Pattern**: `./snippets/{doc-file}/{code-language}/`
-- **Example**: For article `clipboard-operations.md` → create `./snippets/clipboard-operations/net/csharp/`
+- **Example**: For article `clipboard-operations.md` → create `./snippets/clipboard-operations/csharp/`
 
 ### 3. Migrate and update code
 - **Copy**: Copy only the snippet code (and any supporting code to compile the snippet) to the new location
@@ -98,7 +98,7 @@ Based on the {path-to-file} you can determine if it's in the old system or not.
 ### 5. Update article references
 - **Replace**: Change from legacy `[!code-...]` format to modern `:::code...:::` format
 - **Before**: `[!code-csharp[description](~/samples/snippets/path/file.cs#snippet1)]`
-- **After**: `:::code language="csharp" source="./snippets/doc-name/net/csharp/file.cs" id="BasicClipboardData":::`
+- **After**: `:::code language="csharp" source="./snippets/doc-name/csharp/file.cs" id="BasicClipboardData":::`
 - **Note**: Use meaningful CamelCase identifiers instead of simple numbers
 
 ### 6. Validate

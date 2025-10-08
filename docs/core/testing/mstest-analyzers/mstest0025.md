@@ -17,10 +17,10 @@ ms.author: amauryleve
 |-------------------------------------|-------------------------------------------------------|
 | **Rule ID**                         | MSTEST0025                                            |
 | **Title**                           | Use 'Assert.Fail' instead of an always-failing assert |
-| **Category**                        | Design                                                |
+| **Category**                        | Usage                                                 |
 | **Fix is breaking or non-breaking** | Non-breaking                                          |
 | **Enabled by default**              | Yes                                                   |
-| **Default severity**                | Info                                                  |
+| **Default severity**                | Info (Warning starting with 4.0.0)                    |
 | **Introduced in version**           | 3.4.0                                                 |
 | **Is there a code fix**             | Yes                                                   |
 

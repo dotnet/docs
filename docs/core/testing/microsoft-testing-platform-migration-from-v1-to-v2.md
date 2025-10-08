@@ -1,14 +1,14 @@
 ---
-title: Microsoft.Testing.Platform migration from v1 to v2
-description: Learn about migrating to Microsoft.Testing.Platform v2.
+title: Migrating from Microsoft.Testing.Platform v1 to v2
+description: Learn how to migrate to Microsoft.Testing.Platform v2 and understand the key changes.
 author: Youssef1313
 ms.author: ygerges
-ms.date: 09/23/2025
+ms.date: 10/08/2025
 ---
 
-# Migrate from Microsoft.Testing.Platform v1 to Microsoft.Testing.Platform v2
+# Mirate from Microsoft.Testing.Platform v1 to v2
 
-The preview version Microsoft.Testing.Platform v2 is now available. This migration guide explores what's changed in Microsoft.Testing.Platform v2 and how you can migrate to this version.
+The stable version Microsoft.Testing.Platform v2 is now available. This migration guide explores what's changed in Microsoft.Testing.Platform v2 and how you can migrate to this version.
 
 ## Source breaking changes
 

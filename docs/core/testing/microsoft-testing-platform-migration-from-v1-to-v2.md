@@ -51,6 +51,20 @@ The `dotnet test` command has two implementations:
 
 Running MTP test projects with .NET 10 SDK now requires opting-in to the MTP-based `dotnet test` and can no longer be run with the VSTest-based implementation, which was previously enabled by `TestingPlatformDotnetTestSupport` MSBuild property in MTP v1.
 
+To opt-in the MTP-based implementation, create global.json in repository or solution root (or update existing global.json if you have one already), to have test runner set as Microsoft.Testing.Platform, as shown in the following example:
+
+```json
+{
+  "test": {
+    "runner": "Microsoft.Testing.Platform"
+  }
+}
+```
+
+Attempting to run the VSTest-based `dotnet test` with MTP v2 will produce the following error:
+
+> Testing with VSTest target is no longer supported by Microsoft.Testing.Platform on .NET 10 SDK and later. If you use dotnet test, you should opt-in to the new dotnet test experience. For more information, see https://aka.ms/dotnet-test-mtp-error
+
 ### Rename of command-line options
 
 - The `--diagnostic-output-fileprefix` command-line option was renamed to `--diagnostic-file-prefix`.

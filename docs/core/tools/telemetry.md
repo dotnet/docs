@@ -110,7 +110,7 @@ The telemetry feature collects the following data:
 | >=10.0.100    | Application type of either file-based app or project-based for `dotnet run`. |
 | >=10.0.100    | The launch profile name if specified for `dotnet run`. |
 | >=10.0.100    | Whether a launch profile was specified for `dotnet run`.|
-| >=10.0.100    | The applied launch settings model if any for `dotnet run`. |
+| >=10.0.100    | The launch settings configuration model used (if any) for `dotnet run`. |
 | >=10.0.100    | Number of SDKs used for `dotnet run`. |
 | >=10.0.100    | Number of PackageReferences for `dotnet run`. |
 | >=10.0.100    | Number of ProjectReferences for `dotnet run`. |

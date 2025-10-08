@@ -83,7 +83,7 @@ Use these steps to incorporate an existing custom upgrade instruction into an up
 1. In chat, explicitly reference the instruction using language similar to the file name. For example: `Modify the plan using the custom instructions to replace Newtonsoft with System.Text.Json`.
 1. Wait for Copilot to confirm it retrieved the file. In chat you should see that it opened the markdown instruction file. If you do not see a reference, restate the request using the file's key verbs (replace, update, remove) and package names.
 1. Review the plan file and verify that the custom instruction's details are included:
-   * Review package actions. When replacing Newtonsoft the plan should switch from a version bump to to now describing replacement/removal instead of a version upgrade.
+   * Review package actions. When replacing Newtonsoft the plan should switch from a version bump to now describing replacement/removal instead of a version upgrade.
    * Review execution steps. Any new execution steps referencing the transformation appear under the plan's step list.
    
    ![#Plan updated with package details](./media/github-copilot-app-modernization-how-to-custom-upgrade-instructions/visualstudio-copilot-upgrade5.png)[^plan-package-details]

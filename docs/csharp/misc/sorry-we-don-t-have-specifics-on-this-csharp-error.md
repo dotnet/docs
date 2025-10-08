@@ -105,9 +105,6 @@ f1_keywords:
   - "CS4036"
   - "CS7002"
   - "CS7006"
-  - "CS7009"
-  - "CS7010"
-  - "CS7011"
   - "CS7012"
   - "CS7013"
   - "CS7014"
@@ -231,8 +228,6 @@ f1_keywords:
   - "CS8094"
   - "CS8095"
   - "CS8096"
-  - "CS8097"
-  - "CS8098"
   - "CS8099"
   - "CS8100"
   - "CS8101"
@@ -378,7 +373,6 @@ f1_keywords:
   - "CS8664"
   - "CS8665"
   - "CS8666"
-  - "CS8668"
   - "CS8669"
   - "CS8700"
   - "CS8701"
@@ -483,8 +477,6 @@ f1_keywords:
   - "CS8934"
   - "CS8935"
   - "CS8937"
-  - "CS8938"
-  - "CS8939"
   - "CS8940"
   - "CS8941"
   - "CS8942"
@@ -513,7 +505,6 @@ f1_keywords:
   - "CS8986"
   - "CS8987"
   - "CS8989"
-  - "CS8996"
   - "CS8997"
   - "CS8998"
   - "CS8999"
@@ -541,7 +532,6 @@ f1_keywords:
   - "CS9025"
   - "CS9026"
   - "CS9027"
-  - "CS9028"
   - "CS9029"
   - "CS9030"
   - "CS9031"
@@ -620,10 +610,6 @@ f1_keywords:
   - "CS9235"
   - "CS9236"
 # C# 14 errors begin here
-## Shebang
-  - "CS9297"
-  - "CS9298"
-  - "CS9299"
 ## using `extension` as type name. (valid identifiers).
   - "CS9306"
 ## User defined operators
@@ -632,10 +618,22 @@ f1_keywords:
   - "CS9311"
   - "CS9312"
   - "CS9313"
-## Shebang
-  - "CS9314"
 ## Strings in the data section:
   - "CS9315"
+## More extension errors
+  - "CS9316"
+  - "CS9317"
+  - "CS9318"
+  - "CS9319"
+  - "CS9326"
+  - "CS9327"
+  - "CS9328"
+  - "CS9329"
+  - "CS9330"
+  - "CS9331"
+  - "CS9332"
+  - "CS9333"
+  - "CS9334"
 helpviewer_keywords:
   - "errors [C#], additional information"
 ---

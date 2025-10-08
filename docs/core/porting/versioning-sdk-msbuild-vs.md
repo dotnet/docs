@@ -4,7 +4,7 @@ description: Learn about the versioning relationship between the .NET SDK and MS
 author: StephenBonikowsky
 ms.author: stebon
 ms.custom: updateeachrelease
-ms.date: 11/06/2024
+ms.date: 10/08/2025
 ---
 # .NET SDK, MSBuild, and Visual Studio versioning
 
@@ -19,7 +19,7 @@ For example, version 7.0.203 ships with .NET 7, is the second minor Visual Studi
 An installation of Visual Studio includes a single matching copy of the .NET SDK. If you update your Visual Studio instance, the .NET SDK installed by Visual Studio is also updated, including across .NET SDK feature bands and major bands. If you want to use a different .NET SDK than what's installed by Visual Studio, you can install it from the [.NET download page](https://aka.ms/dotnet/download), and Visual Studio upgrade won't touch that version. You're responsible for updating that copy of the .NET SDK from then on.
 
 > [!NOTE]
-The .NET SDK supports targeting down-level versions of .NET, so we recommend always updating your .NET SDK along with your Visual Studio version.
+> The .NET SDK supports targeting down-level versions of .NET, so we recommend always updating your .NET SDK along with your Visual Studio version.
 
 ## Lifecycle
 
@@ -74,7 +74,7 @@ The support timeframe for the SDK typically matches that of the Visual Studio ve
 
 ## Targeting and support rules
 
-A the following policy dictates which versions of MSBuild and Visual Studio a given version of the .NET SDK will run in:
+The following policy dictates which versions of MSBuild and Visual Studio a given version of the .NET SDK will run in:
 
 - Each new TargetFramework **requires** a new Visual Studio version or a new `dotnet` version.
 - The first version of Visual Studio that supports a new TargetFramework becomes a floor for the feature bands of that SDK for Roslyn API surface, MSBuild targets, source generators, analyzers, and so on.

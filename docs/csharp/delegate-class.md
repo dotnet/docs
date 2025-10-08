@@ -10,7 +10,7 @@ ms.assetid: f3742fda-13c2-4283-8966-9e21c2674393
 
 [Previous](delegates-overview.md)
 
-This article covers the classes in .NET that support delegates, and how those map to the `delegate` keyword.
+This article covers the classes in .NET that support delegates and how those map to the `delegate` keyword.
 
 ## What are delegates?
 

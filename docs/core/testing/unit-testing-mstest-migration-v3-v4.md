@@ -6,7 +6,7 @@ ms.author: ygerges
 ms.date: 07/22/2025
 ---
 
-# Migrate from MSTest v3 to MSTest v4
+# Migrate from MSTest v3 to v4
 
 The preview version MSTest v4 is now available. This migration guide explores what's changed in MSTest v4 and how you can migrate to this version.
 

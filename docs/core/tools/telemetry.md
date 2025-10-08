@@ -106,9 +106,8 @@ The telemetry feature collects the following data:
 | >=8.0.100     | Whether library mode for mobile is used.  |
 | >=8.0.100     | Whether NativeAOT is used. |
 | >=8.0.100     | Used Mono runtime pack version. |
-| >=10.0.100    | Hashed project identifier for `dotnet run` (file-based or project-based app). |
+| >=10.0.100    | Hashed project identifier for `dotnet run`. |
 | >=10.0.100    | Application type of either file-based app or project-based for `dotnet run`. |
-| >=10.0.100    | Obfuscated unique project identifier for `dotnet run`. |
 | >=10.0.100    | The launch profile name if specified for `dotnet run`. |
 | >=10.0.100    | Whether a launch profile was specified for `dotnet run`.|
 | >=10.0.100    | The applied launch settings model if any for `dotnet run`. |
@@ -163,7 +162,7 @@ The `dotnet new` template instantiation command collects additional data for Mic
 
 The `dotnet run` command collects feature-based telemetry to help drive development and usage of file-based apps, starting with .NET SDK 10.0.100:
 
-**Common telemetry for all `dotnet run` executions:**
+**Telemetry for all `dotnet run` executions:**
 
 - Application type (file-based or project-based)
 - Hashed project or file identifier
@@ -179,8 +178,6 @@ The `dotnet run` command collects feature-based telemetry to help drive developm
 - Number of additional properties (for example, `#:property` directives)
 - Whether MSBuild was used for building
 - Whether the Roslyn compiler was used directly
-
-All identifiers are hashed using SHA256. For file-based apps, the entry point file path is hashed. For project-based apps, the project file path (or relative path from repository root when available) is hashed.
 
 ## Crash exception telemetry
 

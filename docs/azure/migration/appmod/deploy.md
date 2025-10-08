@@ -14,7 +14,7 @@ In this quickstart, you learn how to deploy your project to Azure with GitHub Co
 
 ## Prerequisites
 
-[!INCLUDE[github-copilot-app-mod-prereqs](../../../includes/github-copilot-app-mod-prereqs.md)]
+[!INCLUDE[github-copilot-app-mod-prereqs](../../../core/porting/github-copilot-app-modernization/includes/prereqs.md)]
 
 ## Deploy your project
 

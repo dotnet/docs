@@ -20,7 +20,7 @@ ms.author: copoiena
 | **Category**                        | Usage                                    |
 | **Fix is breaking or non-breaking** | Non-breaking                             |
 | **Enabled by default**              | Yes                                      |
-| **Default severity**                | Warning starting with 4.0.0, Info before  |
+| **Default severity**                | Warning starting with 4.0.0, Info before |
 | **Introduced in version**           | 3.3.0                                    |
 | **Is there a code fix**             | Yes                                      |
 

@@ -9,6 +9,11 @@ for (int i = 0; i < 10; i++)
     Console.WriteLine(str++);
 // </TestRepeat>
 
+// <TestUniqueInstance>
+var instance = (UniqueInstance as ISingleton)?.Instance;
+instance.PrintMessage();
+// </TestUniqueInstance>
+
 // <TestAddition>
 var pt = new Point<int>(3, 4);
 

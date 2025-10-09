@@ -204,7 +204,7 @@ The following table shows the agent name, environment variable used for detectio
 | Cursor | CURSOR_EDITOR| "cursor" |
 | Google Gemini | GEMINI_CLI | "gemini" |
 
-If multiple agents are detected, the different agent Values will be concatenated with a comma to produce the final value.
+If multiple agents are detected, the different agent values are concatenated with a comma to produce the final value.
 
 ## Avoid inadvertent disclosure of information
 

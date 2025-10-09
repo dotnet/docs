@@ -1,8 +1,22 @@
 # Copilot prompts to consolidate error codes.
 
+We're going to edit this file, string-literal.md, to contain information about all errors and warnings related to string and character literal declarations. I'll write prompts for specific tasks. Don't make any edits yet. In future prompts, the destination for new error and warning content is always this file.
+
+
 ## Add a single existing file into the new consolidated article. 
 
-Add the contents of cs1027.md to the preprocessor-errors.md file, sort that file by 'source_path_from_root'. Add a redirection for cs1027.md to point to preprocessor-errors.md, add "cs1027: to the list of display names in the TOC for preprocessor-errors.md. Finally, delete cs1027.md
+Start with CS1009.md as the source file.
+For each source file:
+
+- Add the contents of the source file to the destination.md file.
+  - Include the source error code in the YML header for `f1_keywords` and `helpviewer_keywords`.
+  - Add an entry with an anchor for the error error code and its corresponding error message.
+  - Add the contents of the source file as a new H2 in the destination file.
+- Add a redirection for the source file in the file `.openpublishing.redirection.csharp.json`. Make the destination point to destination file. Place the new entry in sorted order based on 'source_path_from_root'.
+- Update the TOC file:
+  - Add the error code to the list of display names in the TOC for the destination file, sorted by numeric error code.
+  - Remove the TOC entry for the source file.
+- Finally, delete the source markdown file. 
 
 ## Search for other related articles that may be missed.
 

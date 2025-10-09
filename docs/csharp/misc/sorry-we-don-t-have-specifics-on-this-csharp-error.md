@@ -618,8 +618,6 @@ f1_keywords:
   - "CS9311"
   - "CS9312"
   - "CS9313"
-## Strings in the data section:
-  - "CS9315"
 ## More extension errors
   - "CS9316"
   - "CS9317"

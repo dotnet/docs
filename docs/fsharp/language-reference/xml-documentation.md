@@ -16,7 +16,7 @@ like [fsdocs](http://fsprojects.github.io/FSharp.Formatting/) to generate API re
 
 By default, XML documentation comments are ignored by the compiler. To change this, set `--warnon:3390`. The compiler will then verify the syntax of the XML and the parameters referred to in `<param>` and `<paramref>` tags.
 
-You can enable this warning in your project file by adding a `<WarnOn>` element to the `<PropertyGroup>` section:
+You can enable this warning in your project file by adding a `<WarnOn>` element to a `<PropertyGroup>` section:
 
 ```xml
 <WarnOn>3390</WarnOn>

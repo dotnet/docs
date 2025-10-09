@@ -10,15 +10,12 @@ ms.date: 09/29/2025
 
 ### Get started
 
-When building applications that communicate over HTTP, it's essential to understand the performance characteristics.
-The `AddHttpClientLatencyTelemetry` extension method provides a way to collect
-detailed timing information about HTTP requests without requiring changes to your application code.
-HTTP client latency telemetry integrates with the existing IHttpClientFactory system to:
-
-* Collect timing data for different stages of HTTP requests
-* Track HTTP protocol information used for requests
-* Measure garbage collection impact during HTTP operations (on .NET platforms that support it)
-* Provide consistent telemetry data for performance analysis
+When building applications that communicate over HTTP it is important to observe request performance characteristics. 
+The <xref:Microsoft.Extensions.DependencyInjection.HttpClientLatencyTelemetryExtensions.AddHttpClientLatencyTelemetry*>
+extension enables collection of detailed timing information for outgoing HTTP calls with no changes to calling code. 
+It plugs into the existing `HttpClientFactory` pipeline to capture stage timings across the request lifecycle, record 
+HTTP protocol details, measure garbage collection impact where the runtime exposes that data, and emit a uniform
+telemetry shape suitable for performance analysis and tuning.
 
 ### [.NET CLI](#tab/dotnet-cli)
 
@@ -38,7 +35,7 @@ For more information, see [dotnet package add](../tools/dotnet-package-add.md) o
 
 ### Register HTTP client latency telemetry
 
-To add HTTP client latency telemetry to your application, call the `AddHttpClientLatencyTelemetry` extension method when configuring your services:
+To add HTTP client latency telemetry to your application, call the <xref:Microsoft.Extensions.DependencyInjection.HttpClientLatencyTelemetryExtensions.AddHttpClientLatencyTelemetry*> extension method when configuring your services:
 
 ```csharp
 using Microsoft.Extensions.DependencyInjection;
@@ -52,7 +49,7 @@ builder.Services.AddHttpClient();
 builder.Services.AddHttpClientLatencyTelemetry();
 ```
 
-This registration adds a DelegatingHandler to all HTTP clients created through IHttpClientFactory, collecting detailed latency information for each request.
+This registration adds a `DelegatingHandler` to all HTTP clients created through <xref:System.Net.Http.IHttpClientFactory>, collecting detailed latency information for each request.
 
 ### Configure telemetry options
 
@@ -72,7 +69,11 @@ builder.Configuration.GetSection("HttpClientTelemetry"));
 
 ### Configuration options
 
-The `HttpClientLatencyTelemetryOptions` class offers the following settings:
+The <xref:Microsoft.Extensions.Http.Latency.HttpClientLatencyTelemetryOptions*> class offers the following settings:
+
+| Option                         | Type | Default | Description                                                                                                                                                                                                                                  | When to disable                                                                                                                |
+|--------------------------------|------|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
+| EnableDetailedLatencyBreakdown | bool | true    | Enables fine‑grained phase timing for each HttpClient request (e.g. connection establishment, headers sent, first byte, completion) to produce a breakdown of total latency. Adds a small extra CPU/time measurement cost, no wire overhead. | Set to false only in very high‑throughput scenarios where minimal overhead is required and total duration alone is sufficient. |
 
 ### Collected telemetry data
 

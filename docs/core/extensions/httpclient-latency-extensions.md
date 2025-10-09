@@ -10,10 +10,10 @@ ms.date: 09/29/2025
 
 ### Get started
 
-When building applications that communicate over HTTP it is important to observe request performance characteristics. 
+When building applications that communicate over HTTP it is important to observe request performance characteristics.
 The <xref:Microsoft.Extensions.DependencyInjection.HttpClientLatencyTelemetryExtensions.AddHttpClientLatencyTelemetry*>
-extension enables collection of detailed timing information for outgoing HTTP calls with no changes to calling code. 
-It plugs into the existing `HttpClientFactory` pipeline to capture stage timings across the request lifecycle, record 
+extension enables collection of detailed timing information for outgoing HTTP calls with no changes to calling code.
+It plugs into the existing `HttpClientFactory` pipeline to capture stage timings across the request lifecycle, record
 HTTP protocol details, measure garbage collection impact where the runtime exposes that data, and emit a uniform
 telemetry shape suitable for performance analysis and tuning.
 
@@ -104,10 +104,9 @@ Timestamps are recorded for key stages of the HTTP request lifecycle:
 
 #### Tags
 
-| Tag          | Description                                             | 
-|--------------|---------------------------------------------------------| 
+| Tag          | Description                                             |
+|--------------|---------------------------------------------------------|
 | Http.Version | HTTP protocol version negotiated/used (e.g. 1.1, 2, 3). |
-
 
 ## Usage Example
 
@@ -247,6 +246,6 @@ var host = builder.Build();
 
 ### Platform considerations
 
-HTTP client latency telemetry runs on all supported targets (.NET 9, .NET 8, .NET Standard 2.0, and .NET Framework 4.6.2). 
+HTTP client latency telemetry runs on all supported targets (.NET 9, .NET 8, .NET Standard 2.0, and .NET Framework 4.6.2).
 Core timing checkpoints are always collected. The GC pause metric (Http.GCPauseTime) is emitted only when running on .NET 8 or .NET 9.
 The implementation detects platform capabilities at runtime and enables what is supported without additional configuration.

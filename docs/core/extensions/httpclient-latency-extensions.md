@@ -75,7 +75,7 @@ The <xref:Microsoft.Extensions.Http.Latency.HttpClientLatencyTelemetryOptions*> 
 
 | Option                         | Type | Default | Description                                                                                                                                                                                                                                  | When to disable                                                                                                                |
 |--------------------------------|------|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| EnableDetailedLatencyBreakdown | bool | true    | Enables fine‑grained phase timing for each HttpClient request (e.g. connection establishment, headers sent, first byte, completion) to produce a breakdown of total latency. Adds a small extra CPU/time measurement cost, no wire overhead. | Set to false only in very high‑throughput scenarios where minimal overhead is required and total duration alone is sufficient. |
+| EnableDetailedLatencyBreakdown | bool | true    | Enables fine-grained phase timing for each HttpClient request (e.g. connection establishment, headers sent, first byte, completion) to produce a breakdown of total latency. Adds a small extra CPU/time measurement cost, no wire overhead. | Set to false only in very high-throughput scenarios where minimal overhead is required and total duration alone is sufficient. |
 
 ### Collected telemetry data
 
@@ -112,7 +112,7 @@ Timestamps are recorded for key stages of the HTTP request lifecycle:
 
 ### HTTP Client Logs Enrichment and Redaction
 
-These components enable enriching and redacting `HttpClient` request logs. They remove built-it HTTP Client logging.
+These components enable enriching and redacting `HttpClient` request logs. They remove built-in HTTP Client logging.
 
 When using this package, some of the log properties are redacted by default (like full routes), which means that you will need to make sure that a redactor provider is registered in the Dependency Injection container. You can do this by making sure that you call `builder.Services.AddRedaction()` which requires a reference to the `Microsoft.Extensions.Compliance.Redaction` package.
 

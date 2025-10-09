@@ -195,7 +195,7 @@ The full list of environment variables, and what is done with their values, is s
 
 To detect if the .NET CLI is running in the context of an LLM agent, the .NET CLI probes for the presence and values of several environment variables that LLM agents and AI coding assistants set.
 
-The following table shows the agent name, environment variables used for detection and the value of the agent type that is reported. The actual values of these environment variables are never collected—only used to identify the agent type.
+The following table shows the agent name, environment variable used for detection, and value of the agent type that's reported. The actual values of these environment variables are never collected—only used to identify the agent type.
 
 | LLM agent | Variable(s) | Value |
 | --------- | ----------- | ----- |

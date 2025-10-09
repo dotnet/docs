@@ -171,7 +171,7 @@ The `dotnet run` command collects feature-based telemetry to help drive developm
 - Number of ProjectReferences
 - Launch profile usage (whether `--launch-profile` or `--no-launch-profile` was used)
 - Whether the launch profile is a default profile
-- Launch settings model applied if any
+- Launch settings model applied, if any
 
 **Telemetry for file-based apps only:**
 

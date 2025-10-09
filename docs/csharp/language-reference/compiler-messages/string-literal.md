@@ -130,7 +130,7 @@ The following errors are related to raw string literal syntax and usage.
 - **CS9005** - *Not enough closing braces for interpolated raw string literal.*
 - **CS9006** - *Too many opening braces for interpolated raw string literal.*
 - **CS9007** - *Too many closing braces for interpolated raw string literal.*
-- **CS9008** - *Sequence of '`@`' characters is not allowed.*
+- **CS9008** - *Sequence of '@' characters is not allowed.*
 - **CS9009** - *String must start with quote character.*
 
 Check these common causes and fixes:

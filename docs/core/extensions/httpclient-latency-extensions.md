@@ -54,12 +54,12 @@ This registration adds a `DelegatingHandler` to all HTTP clients created through
 ### Configure telemetry options
 
 You configure telemetry collection through the `HttpClientLatencyTelemetryOptions` (standard options pattern).
-You can supply values either with a delegate or by binding configuration (e.g. appsettings.json). 
+You can supply values either with a delegate or by binding configuration (e.g. appsettings.json).
 The options instance is resolved once per handler pipeline so changes apply to new clients/handlers.
 
 ```csharp
 // Configure with delegate
-builder.Services.AddHttpClientLatencyTelemetry(options => 
+builder.Services.AddHttpClientLatencyTelemetry(options =>
 {
     options.EnableDetailedLatencyBreakdown = true;
 });
@@ -86,7 +86,7 @@ When HTTP client latency telemetry is enabled it captures phase timestamps, sele
 Timestamps are recorded for key stages of the HTTP request lifecycle:
 
 | Phase                   | Start Event                | End Event                  | Notes                                                   |
-|-------------------------|----------------------------|----------------------------|---------------------------------------------------------| 
+|-------------------------|----------------------------|----------------------------|---------------------------------------------------------|
 | DNS resolution          | Http.NameResolutionStart   | Http.NameResolutionEnd     | Host name lookup (may be cached and skipped).           |
 | Socket connection       | Http.SocketConnectStart    | Http.SocketConnectEnd      | CP (and TLS handshake if combined by handler).          |
 | Connection establishment|                            | Http.ConnectionEstablished | Marks usable connection after handshake.                |

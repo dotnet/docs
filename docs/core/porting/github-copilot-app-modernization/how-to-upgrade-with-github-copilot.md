@@ -21,7 +21,7 @@ The modernization agent analyzes your projects and dependencies, creates an upgr
 
 Before you begin, ensure you have the following requirements:
 
-[!INCLUDE[github-copilot-app-mod-prereqs](./includes/prereqs.md)]
+[!INCLUDE [github-copilot-app-modernization-prereqs](../../../includes/github-copilot-app-modernization-prereqs.md)]
 
 ## Start the upgrade process
 

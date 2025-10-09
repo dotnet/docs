@@ -22,13 +22,17 @@ In this quickstart, you learn how to containerize your project using GitHub Copi
 
 Before you begin, make sure you have:
 
-[!INCLUDE[github-copilot-app-mod-prereqs](../../../includes/github-copilot-app-mod-prereqs.md)]
+[!INCLUDE[github-copilot-app-mod-prereqs](../../../core/porting/github-copilot-app-modernization/includes/prereqs.md)]
 
 ## Containerize your project
 
 The GitHub Copilot app modernization for .NET containerization feature helps you containerize your project. To start the containerization process, complete the following steps:
 
 1. Open your project in Visual Studio.
+
+1. Enable **appModernizationDeploy** in the GitHub Copilot toolbox.
+
+    :::image type="content" source="../../media/appmod-dotnet-containerization-tool-selection.png" alt-text="Screenshot that shows containerization tool selection.":::
 
 1. Start containerization by using one of these approaches:
 

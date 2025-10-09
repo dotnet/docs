@@ -3,37 +3,21 @@
 namespace ca2235
 {
     //<snippet1>
-    public class Mouse
+    public class Mouse(int numberOfButtons, string scanType)
     {
-        int buttons;
-        string scanTypeValue;
-
-        public int NumberOfButtons
-        {
-            get { return buttons; }
-        }
-
-        public string ScanType
-        {
-            get { return scanTypeValue; }
-        }
-
-        public Mouse(int numberOfButtons, string scanType)
-        {
-            buttons = numberOfButtons;
-            scanTypeValue = scanType;
-        }
+        public int NumberOfButtons { get; } = numberOfButtons;
+        public string ScanType { get; } = scanType;
     }
 
     [Serializable]
     public class InputDevices1
     {
         // Violates MarkAllNonSerializableFields.
-        Mouse opticalMouse;
+        readonly Mouse _opticalMouse;
 
         public InputDevices1()
         {
-            opticalMouse = new Mouse(5, "optical");
+            _opticalMouse = new Mouse(5, "optical");
         }
     }
 
@@ -42,11 +26,11 @@ namespace ca2235
     {
         // Satisfies MarkAllNonSerializableFields.
         [NonSerialized]
-        Mouse opticalMouse;
+        readonly Mouse _opticalMouse;
 
         public InputDevices2()
         {
-            opticalMouse = new Mouse(5, "optical");
+            _opticalMouse = new Mouse(5, "optical");
         }
     }
     //</snippet1>

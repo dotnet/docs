@@ -2,7 +2,7 @@
 title: Code analysis in .NET
 titleSuffix: ""
 description: Learn about source code analysis in the .NET SDK.
-ms.date: 11/10/2024
+ms.date: 09/30/2025
 ms.topic: overview
 ms.custom: updateeachrelease
 helpviewer_keywords:
@@ -11,12 +11,7 @@ helpviewer_keywords:
 ---
 # Overview of .NET source code analysis
 
-.NET compiler platform (Roslyn) analyzers inspect your C# or Visual Basic code for code quality and style issues. Starting in .NET 5, these analyzers are included with the .NET SDK and you don't need to install them separately. If your project targets .NET 5 or later, code analysis is enabled by default. If your project targets a different .NET implementation, for example, .NET Core, .NET Standard, or .NET Framework, you must manually enable code analysis by setting the [EnableNETAnalyzers](../../core/project-sdk/msbuild-props.md#enablenetanalyzers) property to `true`.
-
-If you don't want to move to the .NET 5+ SDK, have a non-SDK-style .NET Framework project, or prefer a NuGet package-based model, the analyzers are also available in the [Microsoft.CodeAnalysis.NetAnalyzers NuGet package](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers). You might prefer a package-based model for on-demand version updates.
-
-> [!NOTE]
-> .NET analyzers are target-framework agnostic. That is, your project does not need to target a specific .NET implementation. The analyzers work for projects that target .NET 5+ as well as earlier .NET versions, such as .NET Core 3.1 and .NET Framework 4.7.2. However, to enable code analysis using the [EnableNETAnalyzers](../../core/project-sdk/msbuild-props.md#enablenetanalyzers) property, your project must reference a [project SDK](../../core/project-sdk/overview.md).
+.NET compiler platform (Roslyn) analyzers inspect your C# or Visual Basic code for code quality and style issues. These analyzers are included with the .NET SDK and you don't need to install them separately. If your project targets .NET 5 or later, code analysis is enabled by default. (For information about enabling code analysis in projects that target .NET Framework, see [Enable code analysis in legacy projects](#enable-code-analysis-in-legacy-projects).)
 
 If rule violations are found by an analyzer, they're reported as a suggestion, warning, or error, depending on how each rule is [configured](configuration-options.md). Code analysis violations appear with the prefix "CA" or "IDE" to differentiate them from compiler errors.
 
@@ -230,6 +225,20 @@ dotnet_diagnostic.CA1822.severity = none
 ```
 
 For more information and other ways to suppress warnings, see [How to suppress code analysis warnings](suppress-warnings.md).
+
+## Enable code analysis in legacy projects
+
+If your project targets .NET 5 or later, code analysis is enabled by default. If your project targets .NET Standard or .NET Framework, you must manually enable code analysis by setting the [EnableNETAnalyzers](../../core/project-sdk/msbuild-props.md#enablenetanalyzers) property to `true`.
+
+If your project uses the legacy project file format, that is, it doesn't reference a [project SDK](../../core/project-sdk/overview.md), there are some additional steps you must take to enable code analysis:
+
+1. Add a reference to the [📦 Microsoft.CodeAnalysis.NetAnalyzers NuGet package](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers).
+1. Instead of setting [`AnalysisLevel`](../../core/project-sdk/msbuild-props.md#analysislevel), which isn't understood by non-SDK-style projects, add the following properties to your project file:
+
+```xml
+  <EffectiveAnalysisLevel>9</EffectiveAnalysisLevel>
+  <AnalysisMode>Recommended</AnalysisMode>
+```
 
 ## Third-party analyzers
 

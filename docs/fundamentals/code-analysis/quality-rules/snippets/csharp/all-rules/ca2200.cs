@@ -7,7 +7,7 @@ namespace ca2200
     {
         static void Main2200()
         {
-            TestsRethrow testRethrow = new TestsRethrow();
+            TestsRethrow testRethrow = new();
             testRethrow.CatchException();
         }
 

@@ -1,11 +1,11 @@
 ---
 title: dotnet run command
 description: The dotnet run command provides a convenient option to run your application from the source code.
-ms.date: 09/24/2025
+ms.date: 09/29/2025
 ---
 # dotnet run
 
-**This article applies to:** ✔️ .NET 6 and later versions
+**This article applies to:** ✔️ .NET 6 SDK and later versions
 
 ## Name
 
@@ -14,14 +14,14 @@ ms.date: 09/24/2025
 ## Synopsis
 
 ```dotnetcli
-dotnet run [<applicationArguments>] [-a|--arch <ARCHITECTURE>] [-c|--configuration <CONFIGURATION>]
-    [-e|--environment <KEY=VALUE>] [--file <FILE_PATH>]
-    [-f|--framework <FRAMEWORK>] [--force] [--interactive]
-    [--launch-profile <NAME>] [--no-build]
-    [--no-dependencies] [--no-launch-profile] [--no-restore]
-    [--os <OS>] [--project <PATH>] [-r|--runtime <RUNTIME_IDENTIFIER>]
-    [--tl:[auto|on|off]] [-v|--verbosity <LEVEL>]
-    [[--] [application arguments]]
+dotnet run [<applicationArguments>]
+  [-a|--arch <ARCHITECTURE>] [--artifacts-path <ARTIFACTS_DIR>]
+  [-c|--configuration <CONFIGURATION>] [-e|--environment <KEY=VALUE>]
+  [--file <FILE_PATH>] [-f|--framework <FRAMEWORK>] [--force] [--interactive]
+  [--launch-profile <NAME>] [--no-build] [--no-dependencies]
+  [--no-launch-profile] [--no-restore] [--os <OS>] [--project <PATH>]
+  [-r|--runtime <RUNTIME_IDENTIFIER>] [--tl:[auto|on|off]]
+  [-v|--verbosity <LEVEL>] [[--] [application arguments]]
 
 dotnet run -h|--help
 ```
@@ -69,7 +69,11 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 
 [!INCLUDE [arch](../../../includes/cli-arch.md)]
 
+[!INCLUDE [artifacts-path](../../../includes/cli-artifacts-path.md)]
+
 [!INCLUDE [configuration](../../../includes/cli-configuration.md)]
+
+[!INCLUDE [disable-build-servers](../../../includes/cli-disable-build-servers.md)]
 
 - **`-e|--environment <KEY=VALUE>`**
 
@@ -85,7 +89,7 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 
 - **`--file <FILE_PATH>`**
 
-  The path to the file-based app to run. If a path isn't specified, the current directory is used to find and run the file. For more information on file-based apps, see [Build file-based C# apps](/dotnet/csharp/fundamentals/tutorials/file-based-programs).
+  The path to the file-based app to run. If a path isn't specified, the current directory is used to find and run the file. For more information on file-based apps, see [Build file-based C# apps](../../csharp/fundamentals/tutorials/file-based-programs.md).
   
   On Unix, you can run file-based apps directly, using the source file name on the command line instead of `dotnet run`. First, ensure the file has execute permissions. Then, add a shebang line `#!` as the first line of the file, for example:
   
@@ -105,8 +109,6 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 
   Forces all dependencies to be resolved even if the last restore was successful. Specifying this flag is the same as deleting the *project.assets.json* file.
 
-[!INCLUDE [help](../../../includes/cli-help.md)]
-
 [!INCLUDE [interactive](../../../includes/cli-interactive-3-0.md)]
 
 - **`--launch-profile <NAME>`**
@@ -116,6 +118,10 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 - **`--no-build`**
 
   Doesn't build the project before running. It also implicitly sets the `--no-restore` flag.
+
+- **`--no-cache`**
+
+  Skip up to date checks and always build the program before running.
 
 - **`--no-dependencies`**
 
@@ -129,13 +135,17 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 
   Doesn't execute an implicit restore when running the command.
 
+- **`--no-self-contained`**
+
+  Publish your application as a framework dependent application. A compatible .NET runtime must be installed on the target machine to run your application.
+
 [!INCLUDE [os](../../../includes/cli-os.md)]
 
 - **`--project <PATH>`**
 
   Specifies the path of the project file to run (folder name or full path). If not specified, it defaults to the current directory.
 
-  The [`-p` abbreviation for `--project` is deprecated](../compatibility/sdk/6.0/deprecate-p-option-dotnet-run.md) starting in .NET 6 SDK. For a limited time starting in .NET 6 RC1 SDK, `-p` can still be used for `--project` despite the deprecation warning. If the argument provided for the option doesn't contain `=`, the command accepts `-p` as short for `--project`. Otherwise, the command assumes that `-p` is short for `--property`. This flexible use of `-p` for `--project` will be phased out in .NET 7.
+  The [`-p` abbreviation for `--project` is deprecated](../compatibility/sdk/6.0/deprecate-p-option-dotnet-run.md) starting in .NET 6 SDK. For a limited time, `-p` can still be used for `--project` despite the deprecation warning. If the argument provided for the option doesn't contain `=`, the command accepts `-p` as short for `--project`. Otherwise, the command assumes that `-p` is short for `--property`. This flexible use of `-p` for `--project` will be phased out in .NET 7.
 
 - **`--property:<NAME>=<VALUE>`**
 
@@ -158,9 +168,15 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 
   Specifies the target runtime to restore packages for. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md).
 
+- **`-sc|--self-contained`**
+
+  Publishes the .NET runtime with your application so the runtime doesn't need to be installed on the target system. The default is `false`.  However, when targeting .NET 7 or lower, the default is `true` if a runtime identifier is specified.
+
 [!INCLUDE [tl](../../../includes/cli-tl.md)]
 
 [!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
+
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
 ## Environment variables
 

@@ -115,7 +115,7 @@ The `#:` directives that are used in file-based apps include:
   Instances of `#:project` are translated into `ProjectReference` elements to include the project with the specified path to the project. For example:
 
   ```csharp
-  #:project ../Path/To.Example.csproj
+  #:project ../Path/To.Example
   ```
 
   The preceding preprocessor token is translated into:
@@ -299,7 +299,7 @@ You instruct the compiler to generate user-defined compiler errors and warnings,
 - `#warning`: Generate a compiler warning, with a specific message.
 - `#line`: Change the line number printed with compiler messages.
 
-`#error` lets you generate a [CS1029](compiler-messages/cs1029.md) user-defined error from a specific location in your code. For example:
+`#error` lets you generate a [CS1029](compiler-messages/preprocessor-errors.md) user-defined error from a specific location in your code. For example:
 
 ```csharp
 #error Deprecated code in this method.
@@ -308,7 +308,7 @@ You instruct the compiler to generate user-defined compiler errors and warnings,
 > [!NOTE]
 > The compiler treats `#error version` in a special way and reports a compiler error, CS8304, with a message containing the used compiler and language versions.
 
-`#warning` lets you generate a [CS1030](../misc/cs1030.md) level one compiler warning from a specific location in your code. For example:
+`#warning` lets you generate a [CS1030](compiler-messages/preprocessor-errors.md) level one compiler warning from a specific location in your code. For example:
 
 ```csharp
 #warning Deprecated code in this method.

@@ -5,17 +5,12 @@ namespace ca1819
     //<snippet1>
     public class Book
     {
-        private string[] _Pages;
-
         public Book(string[] pages)
         {
-            _Pages = pages;
+            Pages = pages;
         }
 
-        public string[] Pages
-        {
-            get { return _Pages; }
-        }
+        public string[] Pages { get; }
     }
     //</snippet1>
 }
@@ -47,16 +42,12 @@ namespace ca1819_3
     //<snippet3>
     public class Book
     {
-        private ReadOnlyCollection<string> _Pages;
         public Book(string[] pages)
         {
-            _Pages = new ReadOnlyCollection<string>(pages);
+            Pages = new ReadOnlyCollection<string>(pages);
         }
 
-        public ReadOnlyCollection<string> Pages
-        {
-            get { return _Pages; }
-        }
+        public ReadOnlyCollection<string> Pages { get; }
     }
     //</snippet3>
 }
@@ -66,18 +57,12 @@ namespace ca1819_4
     //<snippet4>
     public class Book
     {
-        private string[] _Pages;
-
         public Book(string[] pages)
         {
-            _Pages = pages;
+            Pages = pages;
         }
 
-        public string[] Pages
-        {
-            get { return _Pages; }
-            set { _Pages = value; }
-        }
+        public string[] Pages { get; set; }
     }
     //</snippet4>
 }
@@ -87,17 +72,12 @@ namespace ca1819_5
     //<snippet5>
     public class Book
     {
-        private Collection<string> _Pages;
-
         public Book(string[] pages)
         {
-            _Pages = new Collection<string>(pages);
+            Pages = new Collection<string>(pages);
         }
 
-        public Collection<string> Pages
-        {
-            get { return _Pages; }
-        }
+        public Collection<string> Pages { get; }
     }
     //</snippet5>
 }

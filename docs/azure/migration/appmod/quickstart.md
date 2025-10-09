@@ -19,7 +19,7 @@ In this quickstart, you assess and migrate a .NET project by using GitHub Copilo
 
 ## Prerequisites
 
-[!INCLUDE[github-copilot-app-mod-prereqs](../../../includes/github-copilot-app-mod-prereqs.md)]
+[!INCLUDE[github-copilot-app-mod-prereqs](../../../core/porting/github-copilot-app-modernization/includes/prereqs.md)]
 
 ## Assess app readiness
 
@@ -108,4 +108,4 @@ You can choose one of the predefined options and send it in the chat:
 ## Next Steps
 
 - [Predefined Tasks](predefined-tasks.md)
-- [Frequently Asked Questions](../../../core/porting/github-copilot-app-modernization-faq.yml)
+- [Frequently Asked Questions](../../../core/porting/github-copilot-app-modernization/faq.yml)

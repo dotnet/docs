@@ -20,11 +20,20 @@ For each source file:
 
 ## Search for other related articles that may be missed.
 
-Search all files in the docs/csharp/language-reference/compiler-messages and the docs/csharp/misc folder for any other errors and warnings that involve preprocessor tokens. Give me a list to review for possible additional consolidation.
+Search all files in the docs/csharp/language-reference/compiler-messages and the docs/csharp/misc folder for any other errors and warnings that involve string literals or constants. Give me a list to review for possible additional consolidation.
 
 ## Final search in roslyn source
 
-To make sure you've found all related errors, we'll check the source.  Look in `CSharpResources.resx` for any elements where the `<value>` element is a message related to preprocessor tokens. The symbolic constant for that value is in the `name` attribute on the parent `data` element. Find that value in `ErrorCodes.cs`. It will map to the compiler error code, where the code is "CS" followed by the number as a four digit number. Build a list of any not already added to preprocessor-errors.md
+To make sure you've found all related errors, we'll check the source.  Look in `CSharpResources.resx` for any elements where the `<value>` element is a message related to preprocessor tokens. The symbolic constant for that value is in the `name` attribute on the parent `data` element. Find that value in `ErrorCodes.cs`. It will map to the compiler error code, where the code is "CS" followed by the number as a four digit number. Build a list of any related errors, but don't make any edits yet.
+
+For each new file:
+
+- Add the new error code to the front matter of the consolidated article, for both the `f1_keywords` and `helpview_keywords` table.
+- Add the new error code and error message to the table at the top of the destination article.
+- Add the new error code to the list of `displaName` elements in the TOC file.
+- Remove the new error code from the front matter in the file `csharp/misc/sorry-we-don-t-have-specifics-on-this-csharp-errors.md` file.
+
+Note that no redirections need to be added for these error codes.
 
 ## Build consolidated sections
 

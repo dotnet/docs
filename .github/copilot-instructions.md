@@ -63,7 +63,7 @@ Examples:
 - Include directions from `.github/prompts/breaking-change.md`.
 
 ### GitHub Issue Assignment (AI Workflow)
-When assigned an issue in GitHub:
+When assigned an issue or directly given a task in GitHub:
 1. Complete your work
 2. Wait for workflows (status checks) to run
 3. Check for build warnings in the OpenPublishing.Build status check

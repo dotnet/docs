@@ -191,7 +191,7 @@ The full list of environment variables, and what is done with their values, is s
 | TEAMCITY_VERSION | TeamCity | Check if present and non-null |
 | JB_SPACE_API_URL | JetBrains Space | Check if present and non-null |
 
-## LLM Detection
+## LLM detection
 
 To detect if the .NET CLI is running in the context of an LLM agent, the .NET CLI probes for the presence and values of several environment variables that LLM agents and AI coding assistants set.
 

@@ -37,9 +37,9 @@ Note that no redirections need to be added for these error codes.
 
 ## Build consolidated sections
 
-For all remaining work, all edits will be in the `string-literal.md` file. The final format should mirror the structure of the `preprocessor-errors.md` file.
+For all remaining work, all edits will be in the `string-literal.md` file. The final format should mirror the structure of the `preprocessor-errors.md` file. Every H2 is a theme, all anchors are for the theme, not an individual error code.
 
-To do that, make a new H2 section for the theme. Remove all the H2s for the individual error codes that are part of that theme. Where applicable, the new H2 can include text or examples from the H2s you remove.
+To do that, make a new H2 section for the theme. Remove all the H2s for the individual error codes that are part of that theme. Where applicable, the new H2 can include text or examples from the H2s you remove. The new section should include links to language reference articles that discuss the feature or theme.
 
 The list of errors at the top of the file should remain in numerical order, so it's easy for readers to scan. Each impacted error code should now have a link to the anchor tag for the new section. Repeat the list in the new section, but without the anchors, as shown in the highlighted text.
 

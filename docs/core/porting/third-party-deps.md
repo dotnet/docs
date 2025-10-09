@@ -95,7 +95,7 @@ The .NET Team would like to know which libraries are the most important to suppo
 
 ## Analyze non-NuGet dependencies
 
-You might have a dependency that isn't a NuGet package, such as a DLL in the file system. You can determine the portability of that dependency with the [GitHub Copilot app modernization agent](github-copilot-app-modernization-overview.md).
+You might have a dependency that isn't a NuGet package, such as a DLL in the file system. You can determine the portability of that dependency with the [GitHub Copilot app modernization agent](github-copilot-app-modernization/overview.md).
 
 ## Next steps
 

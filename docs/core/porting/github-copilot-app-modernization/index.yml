@@ -7,7 +7,7 @@ metadata:
   title: Use GitHub Copilot to upgrade and migrate .NET apps
   description: Learn about updating and migrating .NET apps with GitHub Copilot.
   ms.topic: landing-page
-  ms.date: 09/15/2025
+  ms.date: 10/09/2025
 
 landingContent:
 
@@ -23,6 +23,8 @@ landingContent:
         links:
           - text: How to upgrade a .NET app
             url: how-to-upgrade-with-github-copilot.md
+          - text: How to apply custom upgrade instructions
+            url: how-to-custom-upgrade-instructions.md
 
   - title: Migrate .NET apps to Azure
     linkLists:

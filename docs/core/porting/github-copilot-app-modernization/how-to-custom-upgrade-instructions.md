@@ -4,7 +4,7 @@ description: "Learn how to apply custom upgrade instructions with GitHub Copilot
 author: kschlobohm
 ms.author: adegeo
 ms.topic: how-to
-ms.date: 10/07/2025
+ms.date: 10/09/2025
 ai-usage: ai-assisted
 
 #customer intent: As a developer, I want to apply custom upgrade instructions during a .NET upgrade so that I can automate specific changes consistently.
@@ -21,7 +21,7 @@ This article shows how to create a custom upgrade instruction, test it with a fa
 
 Before you begin, ensure you have these requirements:
 
-[!INCLUDE[github-copilot-app-mod-prereqs](../../includes/github-copilot-app-mod-prereqs.md)]
+[!INCLUDE [github-copilot-app-modernization-prereqs](../../../includes/github-copilot-app-modernization-prereqs.md)]
 
 ## Understand custom upgrade instructions
 

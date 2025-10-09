@@ -11,7 +11,7 @@ ai-usage: ai-assisted
 
 ---
 
-# How to upgrade a .NET app with GitHub Copilot app modernization
+# Upgrade a .NET app with GitHub Copilot app modernization
 
 GitHub Copilot app modernization is an AI-powered agent in Visual Studio that helps you upgrade .NET projects to newer versions and migrate applications to Azure. This article guides you through the process of using this tool to modernize your .NET applications, from initial assessment to final validation.
 

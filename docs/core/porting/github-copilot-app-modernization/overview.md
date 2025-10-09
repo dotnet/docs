@@ -44,7 +44,7 @@ Feedback is important to Microsoft and the efficiency of this agent. Use the [Su
 
 The following items are required before you can use GitHub Copilot app modernization:
 
-[!INCLUDE[github-copilot-app-mod-prereqs](./includes/prereqs.md)]
+[!INCLUDE [github-copilot-app-modernization-prereqs](../../../includes/github-copilot-app-modernization-prereqs.md)]
 
 ## How to start an upgrade or migration
 

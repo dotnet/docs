@@ -6,6 +6,8 @@ description: Push inline code block snippets out of articles into standalone fil
 
 **IMPORTANT**: Unless otherwise asked to, **only** edit the article file in context. At the end of your operations you may ask for permission to edit other articles that might benefit from the same snippet extraction.
 
+**IMPORTANT**: Don't share code across multiple articles. Each article should have its own copy of the snippet in its own folder structure.
+
 ## Quick Reference
 
 **WHEN TO PUSH:** Code >6 lines, complete/compilable examples, or when specifically requested
@@ -20,7 +22,6 @@ description: Push inline code block snippets out of articles into standalone fil
 **PUSH SNIPPETS WHEN:**
 - Code blocks are longer than 6 lines or the rest of the article is using them
 - Code demonstrates complete, compilable examples
-- Code should not be reused across multiple articles
 - Code represents a complete application or significant functionality
 - User specifically requests snippet extraction
 

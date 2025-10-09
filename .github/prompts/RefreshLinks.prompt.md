@@ -8,6 +8,8 @@ description: "Updates link text to match target content headings"
 
 You are tasked with checking and updating all links in the current file to ensure their link text accurately reflects the target content's H1 heading or title.
 
+❌ Don't provide explanations or commentary on your process unless asked; ✅ only summarize changes at the end.
+
 ## ⚠️ CRITICAL CONSTRAINT ⚠️
 
 **NO OTHER EDITS OR ALTERATIONS** should be made to the file beyond updating link text. This means:
@@ -57,18 +59,21 @@ The file content must remain completely unchanged except for link text updates.
    - Compare with current link text
    - Update if different
 
-3. **H1 Extraction Rules**:
+3. **Check for bookmark**:
+   - If the link contains a bookmark (e.g., `file.md#section`), use the markdown heading instead of H1 as the link text
+
+4. **H1 Extraction Rules**:
    - Look for markdown H1 headers (`# Heading Text`)
    - For repository files, check within the first 30 lines
    - For web pages, extract the `<h1>` tag content or `<title>` tag as fallback
    - Clean up the extracted text (remove extra whitespace, HTML entities)
 
-4. **Preserve Link Functionality**:
+5. **Preserve Link Functionality**:
    - Keep the original URL intact
    - Only update the display text portion
    - Maintain any additional link attributes if present
 
-5. **Error Handling**:
+6. **Error Handling**:
    - If a target cannot be reached or read, leave the link unchanged
    - If no H1 is found, try alternative heading levels (H2, H3) or page title
    - Log any issues encountered during processing
@@ -78,6 +83,9 @@ The file content must remain completely unchanged except for link text updates.
 ```markdown
 Before: [Old Link Text](../core/install/windows.md)
 After:  [Install .NET on Windows](../core/install/windows.md)
+
+Before: [Old Link Text](../core/install/linux.md#system-requirements)
+After:  [System requirements](../core/install/linux.md#system-requirements)
 
 Before: [Click here](/dotnet/fundamentals/networking/overview)
 After:  [Networking in .NET](/dotnet/fundamentals/networking/overview)

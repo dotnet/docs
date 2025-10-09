@@ -8,6 +8,8 @@ description: "Performs comprehensive editing pass following Microsoft Style Guid
 
 You are performing an edit pass on a Microsoft documentation article. Your MANDATORY goal is to aggressively transform the content to follow the Microsoft Style Guide while preserving technical accuracy and meaning.
 
+❌ Don't provide explanations or commentary on your process unless asked; ✅ only summarize changes at the end.
+
 ## EDITING APPROACH - FOLLOW THIS METHODOLOGY
 
 1. **Read the entire document first**
@@ -39,13 +41,11 @@ You are performing an edit pass on a Microsoft documentation article. Your MANDA
 2. **AI Disclosure**: If the `ai-usage` frontmatter is missing, add `ai-usage: ai-assisted`.
 3. **Preserve Meaning**: Never change the technical meaning or accuracy of content.
 4. **Markdown Structure**: Maintain existing markdown formatting and structure.
+5. **Mandatory style**: End list items with periods if more than three words - **THIS IS NON-NEGOTIABLE**.
 
 ## MANDATORY TRANSFORMATIONS - Apply These Aggressively
 
-You MUST systematically scan the entire document and apply ALL of these transformations. Do not skip any that apply:
-
-## Primary Edit Targets
-
+You MUST systematically scan the entire document and apply ALL of these transformations.
 When editing, focus on these areas in order of priority:
 
 ### 1. VOICE AND TENSE - MANDATORY FIXES
@@ -115,6 +115,7 @@ When editing, focus on these areas in order of priority:
 - ❌ "establish connectivity" → ✅ "connect"
 - ❌ "implement functionality" → ✅ "implement features" or "add functionality"
 - ❌ "demonstrate how to" → ✅ "show how to"
+- ❌ "additional" → ✅ "other", "more", "another", or "extra"
 - Look for ANY unnecessarily complex or verbose phrasing
 
 **SCAN FOR AND REMOVE unnecessary words (these are examples - find ALL similar patterns):**
@@ -144,6 +145,10 @@ When editing, focus on these areas in order of priority:
 - Front-load keywords for scanning
 - ❌ "In the event that you need to configure the application, you should..." → ✅ "To configure the application..."
 - ❌ "Before you can use the feature, you must..." → ✅ "Configure X before using the feature."
+
+**ALWAYS add commas to introductory phrases**
+- ❌ "When replacing Newtonsoft the plan switches..." → ✅ "When replacing Newtonsoft, the plan switches..."
+- ❌ "In chat you see that it opened..." → ✅ "In chat, you see that it opened..."
 
 **ALWAYS make next steps obvious:**
 - Use clear transitions
@@ -186,6 +191,8 @@ When editing, focus on these areas in order of priority:
 | "You can" (in instructions) | Direct imperative | Instructions that could be commands |
 | "allows you to" | "lets you" | Any formal permission language |
 | "provides the ability to" | "lets you" | Any verbose capability descriptions |
+| "Note" | Use >[!NOTE] alert syntax | Any standalone phrase starting with "Note..." |
+| "The .NET Framework" | ".NET Framework" | Any instance of "The .NET Framework" |
 
 **PATTERN RECOGNITION INSTRUCTIONS:**
 - These examples represent PATTERNS, not exhaustive lists
@@ -198,6 +205,7 @@ When editing, focus on these areas in order of priority:
 ### Lists
 - ALWAYS use Oxford comma: "Android, iOS, and Windows"
 - ALWAYS number ordered lists as "1." for all items (not 1., 2., 3.)
+- ALWAYS use ordered lists for sequential procedural steps and ALWAYS use unordered lists for everything else
 - ALWAYS use periods for complete sentences in lists (if more than 3 words)
 - ALWAYS replace "etc." with "for example" or complete the list
 

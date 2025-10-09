@@ -53,7 +53,9 @@ This registration adds a `DelegatingHandler` to all HTTP clients created through
 
 ### Configure telemetry options
 
-You can customize how telemetry is collected by configuring the `HttpClientLatencyTelemetryOptions`:
+You configure telemetry collection through the `HttpClientLatencyTelemetryOptions` (standard options pattern).
+You can supply values either with a delegate or by binding configuration (e.g. appsettings.json). 
+The options instance is resolved once per handler pipeline so changes apply to new clients/handlers.
 
 ```csharp
 // Configure with delegate
@@ -77,84 +79,175 @@ The <xref:Microsoft.Extensions.Http.Latency.HttpClientLatencyTelemetryOptions*> 
 
 ### Collected telemetry data
 
-When HTTP client latency telemetry is enabled, the following information is collected:
+When HTTP client latency telemetry is enabled it captures phase timestamps, selected measures (where supported), and protocol attributes used for performance analysis.
 
 #### Timing checkpoints
-
 Timestamps are recorded for key stages of the HTTP request lifecycle:
 
-* DNS resolution (Http.NameResolutionStart, Http.NameResolutionEnd)
-* Socket connection (Http.SocketConnectStart, Http.SocketConnectEnd)
-* Connection establishment (Http.ConnectionEstablished)
-* Request headers (Http.RequestHeadersStart, Http.RequestHeadersEnd)
-* Request content (Http.RequestContentStart, Http.RequestContentEnd)
-* Response headers (Http.ResponseHeadersStart, Http.ResponseHeadersEnd)
-* Response content (Http.ResponseContentStart, Http.ResponseContentEnd)
+| Phase                   | Start Event                | End Event                  | Notes                                                   |
+|-------------------------|----------------------------|----------------------------|---------------------------------------------------------| 
+| DNS resolution          | Http.NameResolutionStart   | Http.NameResolutionEnd     | Host name lookup (may be cached and skipped).           |
+| Socket connection       | Http.SocketConnectStart    | Http.SocketConnectEnd      | CP (and TLS handshake if combined by handler).          |
+| Connection establishment|                            | Http.ConnectionEstablished | Marks usable connection after handshake.                |
+| Request headers         | Http.RequestHeadersStart   | Http.RequestHeadersEnd     | Writing request headers to the wire/buffer.             |
+| Request content         | Http.RequestContentStart   | Http.RequestContentEnd     | Streaming or buffering request body.                    |
+| Response headers        | Http.ResponseHeadersStart  | Http.ResponseHeadersEnd    | First byte to completion of header parsing.             |
+| Response content        | Http.ResponseContentStart  | Http.ResponseContentEnd    | Reading full response body (to completion or disposal). |
 
-#### Measures
+#### Measures (platform dependent)
 
-On supported platforms:
-
-* Http.GCPauseTime - Records garbage collection pause duration during HTTP operations
-* Http.ConnectionInitiated - Indicates when a new connection is established
+| Name                     | Description                                                             |
+|--------------------------|-------------------------------------------------------------------------|
+| Http.GCPauseTime         | Total GC pause duration overlapping the request.                        |
+| Http.ConnectionInitiated | Emitted when a new underlying connection (not pooled reuse) is created. |
 
 #### Tags
 
-* Http.Version - Records the HTTP protocol version used for the request
+| Tag          | Description                                             | 
+|--------------|---------------------------------------------------------| 
+| Http.Version | HTTP protocol version negotiated/used (e.g. 1.1, 2, 3). |
 
-### Accessing telemetry data
 
-The collected telemetry data can be accessed through the standard `ILatencyContextAccessor`:
+## Usage Example
+
+### HTTP Client Logs Enrichment and Redaction
+
+These components enable enriching and redacting `HttpClient` request logs. They remove built-it HTTP Client logging.
+
+When using this package, some of the log properties are redacted by default (like full routes), which means that you will need to make sure that a redactor provider is registered in the Dependency Injection container. You can do this by making sure that you call `builder.Services.AddRedaction()` which requires a reference to the `Microsoft.Extensions.Compliance.Redaction` package.
+
+The http client logging services can be registered using the following methods:
 
 ```csharp
-public class ApiService
+public static IServiceCollection AddExtendedHttpClientLogging(this IServiceCollection services)
+public static IServiceCollection AddExtendedHttpClientLogging(this IServiceCollection services, IConfigurationSection section)
+public static IServiceCollection AddExtendedHttpClientLogging(this IServiceCollection services, Action<LoggingOptions> configure)
+public static IServiceCollection AddHttpClientLogEnricher<T>(this IServiceCollection services) where T : class, IHttpClientLogEnricher
+```
+
+For example:
+
+```csharp
+var builder = Host.CreateApplicationBuilder(args);
+
+// Register IHttpClientFactory:
+builder.Services.AddHttpClient();
+
+// Register redaction services:
+builder.Services.AddRedaction();
+
+// Register HttpClient logging enrichment & redaction services:
+builder.Services.AddExtendedHttpClientLogging();
+
+// Register a logging enricher (the type should implement IHttpClientLogEnricher):
+builder.Services.AddHttpClientLogEnricher<MyHttpClientLogEnricher>();
+
+var host = builder.Build();
+```
+
+It is important to note that the `AddExtendedHttpClientLogging` method will add information to the logs using *enrichment*. This means that the information will be added as tags to the structured logs, but will not be visible in the log message that is printed by default in the console. To view the information, you will need to use a logging provider that supports structured logs. One quick and built-in way to do this, is to call `AddJsonConsole()` to your logging builder, which will print out the full structured logs to the console. Here is a quick sample that uses the `ExtendedHttpClientLogging()` method to automatically log all `HttpClient` request and response bodies, and then prints the full structured logs to the console:
+
+```csharp
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+
+var services = new ServiceCollection();
+
+services.AddLogging(o => o.SetMinimumLevel(LogLevel.Trace).AddJsonConsole()); // <-- Enable structured logging to the console
+
+// Adding default redactor provider to the DI container. This is required when using the AddExtendedHttpClientLogging() method.
+services.AddRedaction();
+
+services.AddHttpClient("foo")
+    .AddExtendedHttpClientLogging(o =>
+    {
+        // Enable logging of request and response bodies:
+        o.LogBody = true;
+
+        // We also need to specify the content types that we want to log:
+        o.ResponseBodyContentTypes.Add("application/json");
+    });
+
+var sp = services.BuildServiceProvider();
+
+var client = sp.GetRequiredService<IHttpClientFactory>().CreateClient("foo");
+
+var response = await client.GetAsync(new Uri("https://httpbin.org/json")).ConfigureAwait(false);
+```
+
+By default, request and response routes are redacted for privacy reasons. You can change this behavior by making use of the `RequestPathParameterRedactionMode` option like:
+
+```csharp
+  .AddExtendedHttpClientLogging(o =>
 {
-    private readonly IHttpClientFactory _httpClientFactory;
-    private readonly ILatencyContextAccessor _latencyContextAccessor;
-    
-    public ApiService(
-        IHttpClientFactory httpClientFactory,
-        ILatencyContextAccessor latencyContextAccessor)
-    {
-        _httpClientFactory = httpClientFactory;
-        _latencyContextAccessor = latencyContextAccessor;
-    }
-    
-    public async Task<object> GetDataAsync()
-    {
-        var client = _httpClientFactory.CreateClient();
-        var response = await client.GetAsync("https://api.example.com/data");
-        
-        // Access latency information
-        var context = _latencyContextAccessor.Current;
-        if (context != null)
-        {
-            // Calculate DNS resolution time
-            var dnsStart = context.GetCheckpoint(HttpCheckpoints.NameResolutionStart);
-            var dnsEnd = context.GetCheckpoint(HttpCheckpoints.NameResolutionEnd);
-            if (dnsStart != null && dnsEnd != null)
-            {
-                var dnsTime = dnsEnd.Value - dnsStart.Value;
-                Console.WriteLine($"DNS resolution took: {dnsTime.TotalMilliseconds}ms");
-            }
-            
-            // Get HTTP version used
-            var httpVersion = context.GetTag(HttpTags.HttpVersion);
-            if (httpVersion != null)
-            {
-                Console.WriteLine($"HTTP protocol version: {httpVersion}");
-            }
-        }
-        
-        return await response.Content.ReadFromJsonAsync<object>();
-    }
-}
+    //.. Other options
+
+    o.RequestPathParameterRedactionMode = HttpRouteParameterRedactionMode.None; // <-- Disable redaction of request/response routes
+});
+```
+
+You can also use the following extension methods to apply the logging to the specific `IHttpClientBuilder`:
+
+```csharp
+public static IHttpClientBuilder AddExtendedHttpClientLogging(this IHttpClientBuilder builder)
+public static IHttpClientBuilder AddExtendedHttpClientLogging(this IHttpClientBuilder builder, IConfigurationSection section)
+public static IHttpClientBuilder AddExtendedHttpClientLogging(this IHttpClientBuilder builder, Action<LoggingOptions> configure)
+```
+
+For example:
+
+```csharp
+var builder = Host.CreateApplicationBuilder(args);
+
+// Register redaction services:
+builder.Services.AddRedaction();
+
+// Register named HttpClient:
+var httpClientBuilder = builder.Services.AddHttpClient("MyNamedClient");
+
+// Configure named HttpClient to use logging enrichment & redaction:
+httpClientBuilder.AddExtendedHttpClientLogging();
+
+var host = builder.Build();
+```
+
+### Tracking HTTP Request Client Latency
+
+These components enable tracking and reporting the latency of HTTP Client request processing.
+
+The services can be registered using the following methods:
+
+```csharp
+public static IServiceCollection AddHttpClientLatencyTelemetry(this IServiceCollection services)
+public static IServiceCollection AddHttpClientLatencyTelemetry(this IServiceCollection services, IConfigurationSection section)
+public static IServiceCollection AddHttpClientLatencyTelemetry(this IServiceCollection services, Action<HttpClientLatencyTelemetryOptions> configure)
+```
+
+For example:
+
+```csharp
+var builder = Host.CreateApplicationBuilder(args);
+
+// Register IHttpClientFactory:
+builder.Services.AddHttpClient();
+
+// Register redaction services:
+builder.Services.AddRedaction();
+
+// Register latency context services:
+builder.Services.AddLatencyContext();
+
+// Register HttpClient logging enrichment & redaction services:
+builder.Services.AddExtendedHttpClientLogging();
+
+// Register HttpClient latency telemetry services:
+builder.Services.AddHttpClientLatencyTelemetry();
+
+var host = builder.Build();
 ```
 
 ### Platform considerations
 
-HTTP client latency telemetry works across all supported .NET platforms with the following considerations:
-
-* Core timing metrics are available on all platforms (.NET 9, .NET 8, .NET Standard 2.0, .NET Framework 4.6.2)
-* Garbage collection metrics (Http.GCPauseTime) are only available on .NET 8 and .NET 9
-* The implementation automatically adapts to the capabilities of the target platform
+HTTP client latency telemetry runs on all supported targets (.NET 9, .NET 8, .NET Standard 2.0, and .NET Framework 4.6.2). 
+Core timing checkpoints are always collected. The GC pause metric (Http.GCPauseTime) is emitted only when running on .NET 8 or .NET 9.
+The implementation detects platform capabilities at runtime and enables what is supported without additional configuration.

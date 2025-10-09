@@ -82,6 +82,7 @@ The <xref:Microsoft.Extensions.Http.Latency.HttpClientLatencyTelemetryOptions*> 
 When HTTP client latency telemetry is enabled it captures phase timestamps, selected measures (where supported), and protocol attributes used for performance analysis.
 
 #### Timing checkpoints
+
 Timestamps are recorded for key stages of the HTTP request lifecycle:
 
 | Phase                   | Start Event                | End Event                  | Notes                                                   |
@@ -115,8 +116,6 @@ Timestamps are recorded for key stages of the HTTP request lifecycle:
 These components enable enriching and redacting `HttpClient` request logs. They remove built-it HTTP Client logging.
 
 When using this package, some of the log properties are redacted by default (like full routes), which means that you will need to make sure that a redactor provider is registered in the Dependency Injection container. You can do this by making sure that you call `builder.Services.AddRedaction()` which requires a reference to the `Microsoft.Extensions.Compliance.Redaction` package.
-
-The http client logging services can be registered using the following methods:
 
 ```csharp
 public static IServiceCollection AddExtendedHttpClientLogging(this IServiceCollection services)

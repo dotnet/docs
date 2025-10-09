@@ -37,7 +37,6 @@ namespace ca1844
         public override void Write(byte[] buffer, int offset, int count) => _innerStream.Write(buffer, offset, count);
     }
 
-
     // This class satisfies the rule.
     public class GoodStream : Stream
     {

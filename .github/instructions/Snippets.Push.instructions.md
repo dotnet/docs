@@ -11,7 +11,7 @@ description: Push inline code block snippets out of articles into standalone fil
 **WHEN TO PUSH:** Code >6 lines, complete/compilable examples, or when specifically requested
 **FOLDER PATTERN:** `./snippets/{doc-file}/{csharp|vb}/`
 **PROJECT CREATION:** Always use the `dotnet new console` command to create a new project for the code language
-**LANGUAGES:** Create both C# and VB versions
+**LANGUAGES:** Create both C# and Visual Basic versions (if applicable).
 **SNIPPET IDs:** Use CamelCase region markers like `<ButtonClick>`
 **ARTICLE REFS:** Replace with `:::code language="csharp" source="./path" id="SnippetId":::`
 

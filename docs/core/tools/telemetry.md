@@ -105,7 +105,7 @@ The telemetry feature collects the following data:
 | >=8.0.100     | Whether Mono interpreter is used. |
 | >=8.0.100     | Whether library mode for mobile is used.  |
 | >=8.0.100     | Whether NativeAOT is used. |
-| >=8.0.100     | Used Mono runtime pack version. |
+| >=8.0.100     | The Mono runtime pack version that was used. |
 | >=10.0.100    | Hashed project identifier for `dotnet run`. |
 | >=10.0.100    | Application type of either file-based app or project-based for `dotnet run`. |
 | >=10.0.100    | The launch profile name if specified for `dotnet run`. |
@@ -117,6 +117,7 @@ The telemetry feature collects the following data:
 | >=10.0.100    | Number of additional properties for file-based apps with `dotnet run`. |
 | >=10.0.100    | Whether MSBuild was used for file-based apps with `dotnet run`. |
 | >=10.0.100    | Whether Roslyn compiler was used for file-based apps with `dotnet run`. |
+| >=10.0.100    | The detected LLM agent name if the CLI was invoked from an LLM agent. For more information, see [LLM detection](#llm-detection).|
 
 ### Collected options
 
@@ -221,6 +222,21 @@ The full list of environment variables, and what is done with their values, is s
 | BUILD_ID, PROJECT_ID | Google Cloud Build | Check if all are present and non-null |
 | TEAMCITY_VERSION | TeamCity | Check if present and non-null |
 | JB_SPACE_API_URL | JetBrains Space | Check if present and non-null |
+
+## LLM detection
+
+To detect if the .NET CLI is running in the context of an LLM agent, the .NET CLI probes for the presence and values of several environment variables that LLM agents and AI coding assistants set.
+
+The following table shows the agent name, environment variable used for detection, and value of the agent type that's reported. The actual values of these environment variables are never collected—only used to identify the agent type.
+
+| LLM agent | Variable | Value |
+| --------- | ----------- | ----- |
+| GitHub Copilot | GITHUB_COPILOT_CLI_MODE | "copilot" |
+| Claude Code | CLAUDECODE | "claude" |
+| Cursor | CURSOR_EDITOR| "cursor" |
+| Google Gemini | GEMINI_CLI | "gemini" |
+
+If multiple agents are detected, the different agent values are concatenated with a comma to produce the final value.
 
 ## Avoid inadvertent disclosure of information
 

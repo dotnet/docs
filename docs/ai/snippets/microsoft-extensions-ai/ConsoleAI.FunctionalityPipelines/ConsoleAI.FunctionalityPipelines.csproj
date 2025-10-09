@@ -9,8 +9,8 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="10.0.0-rc.1.25451.107" />
-    <PackageReference Include="OllamaSharp" Version="5.4.6" />
-    <PackageReference Include="OpenTelemetry.Exporter.Console" Version="1.12.0" />
+    <PackageReference Include="OllamaSharp" Version="5.4.7" />
+    <PackageReference Include="OpenTelemetry.Exporter.Console" Version="1.13.0" />
   </ItemGroup>
 
   <ItemGroup>

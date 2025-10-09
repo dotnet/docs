@@ -106,7 +106,7 @@ The telemetry feature collects the following data:
 | >=8.0.100     | Whether library mode for mobile is used.  |
 | >=8.0.100     | Whether NativeAOT is used. |
 | >=8.0.100     | The Mono runtime pack version that was used. |
-| >=10.0.100    | The detected LLM agent name (if the CLI was invoked from an LLM agent). For more information, see [LLM Detection](#llm-detection).|
+| >=10.0.100    | The detected LLM agent name if the CLI was invoked from an LLM agent. For more information, see [LLM detection](#llm-detection).|
 
 ### Collected options
 

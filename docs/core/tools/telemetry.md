@@ -197,7 +197,7 @@ To detect if the .NET CLI is running in the context of an LLM agent, the .NET CL
 
 The following table shows the agent name, environment variable used for detection, and value of the agent type that's reported. The actual values of these environment variables are never collected—only used to identify the agent type.
 
-| LLM agent | Variable(s) | Value |
+| LLM agent | Variable | Value |
 | --------- | ----------- | ----- |
 | GitHub Copilot | GITHUB_COPILOT_CLI_MODE | "copilot" |
 | Claude Code | CLAUDECODE | "claude" |

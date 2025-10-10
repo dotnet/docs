@@ -33,9 +33,9 @@ The .NET 10 SDK includes support for [Microsoft.Testing.Platform](../../testing/
 
 For more information, see [What's new in the SDK for .NET 10](sdk.md).
 
-## .NET Aspire
+## Aspire
 
-For information about what's new in .NET Aspire, see [.NET Aspire — what's new?](/dotnet/aspire/whats-new/).
+For information about what's new in Aspire, see [Aspire — what's new?](/dotnet/aspire/whats-new/).
 
 ## ASP.NET Core
 

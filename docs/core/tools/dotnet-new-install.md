@@ -11,6 +11,8 @@ ms.date: 04/15/2022
 
 `dotnet new install` - installs a template package.
 
+[!WARNING] Templates can run MSBuild code when triggered, do not install or run untrusted .NET templates.
+
 ## Synopsis
 
 ```dotnetcli

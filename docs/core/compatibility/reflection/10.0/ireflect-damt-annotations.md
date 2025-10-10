@@ -17,11 +17,11 @@ This change affects scenarios where developers implement the <xref:System.Reflec
 
 ## Previous behavior
 
-Previously, the <xref:System.Reflection.IReflect.InvokeMember%2A>, <xref:System.Type.FindMembers%2A?displayProperty=nameWithType>, and <xref:System.Reflection.TypeInfo.DeclaredMembers?displayProperty=nameWithType> APIs used the <xref:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.All?displayProperty=nameWithType> annotation, which was overly permissive. This could result in capturing additional members, such as interface methods implemented by a class, and potentially cause runtime warnings or unsafe reflection calls.
+Previously, the [affected APIs](#affected-apis) used the <xref:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMemberTypes.All?displayProperty=nameWithType> annotation, which was overly permissive. This could result in capturing additional members, such as interface methods implemented by a class, and potentially cause runtime warnings or unsafe reflection calls.
 
 ## New behavior
 
-The <xref:System.Reflection.IReflect.InvokeMember%2A>, <xref:System.Type.FindMembers%2A?displayProperty=nameWithType>, and <xref:System.Reflection.TypeInfo.DeclaredMembers?displayProperty=nameWithType> APIs now use more restricted annotations, which provide better control over the members captured during reflection.
+The [affected APIs](#affected-apis) now use more restricted annotations, which provide better control over the members captured during reflection.
 
 ## Type of breaking change
 

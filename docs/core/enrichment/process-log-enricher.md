@@ -15,7 +15,7 @@ You can register the enrichers in an IoC container. Then, all registered enriche
 To be able to use the process log enricher, first you need to enable enrichment like this:
 :::code language="csharp" source="snippets/enrichment/Program.cs" highlight="15":::
 
-then you can add the <xref:Microsoft.Extensions.DependencyInjection.AddProcessLogEnricher.AddProcessLogEnricher*> with default properties, like this:
+then you can add the <xref:Microsoft.Extensions.DependencyInjection.ProcessEnricherServiceCollectionExtensions.AddProcessLogEnricher*> with default properties, like this:
 
 :::code language="csharp" source="snippets/enrichment/Program.cs" highlight="16":::
 
@@ -26,7 +26,7 @@ var hostApplicationBuilder = WebApplication.CreateBuilder();
 hostApplicationBuilder.Services.AddProcessLogEnricher();
 ```
 
-Or, optionally, enable or disable individual options of the enricher:
+Or, optionally, enable or disable individual options of the enricher using <xref:Microsoft.Extensions.DependencyInjection.ProcessEnricherServiceCollectionExtensions.AddProcessLogEnricher(Microsoft.Extensions.Configuration.IConfigurationSection)>:
 
 ```cs
 serviceCollection.AddProcessLogEnricher(options =>
@@ -47,7 +47,7 @@ You may also disable or enable individual options using `appsettings.json` file 
 }
 ```
 
-and apply it accordingly:
+and apply it accordingly using <xref:Microsoft.Extensions.DependencyInjection.ProcessEnricherServiceCollectionExtensions.AddProcessLogEnricher(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Microsoft.Extensions.Diagnostics.Enrichment.ProcessLogEnricherOptions})>:
 
 ```cs
 serviceCollection.AddProcessLogEnricher(hostBuilder.Configuration.GetSection("ProcessLogEnricherOptions"));

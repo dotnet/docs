@@ -106,6 +106,17 @@ The telemetry feature collects the following data:
 | >=8.0.100     | Whether library mode for mobile is used.  |
 | >=8.0.100     | Whether NativeAOT is used. |
 | >=8.0.100     | The Mono runtime pack version that was used. |
+| >=10.0.100    | Hashed project identifier for `dotnet run`. |
+| >=10.0.100    | Application type of either file-based app or project-based for `dotnet run`. |
+| >=10.0.100    | The launch profile name if specified for `dotnet run`. |
+| >=10.0.100    | Whether a launch profile was specified for `dotnet run`.|
+| >=10.0.100    | The launch settings configuration model used (if any) for `dotnet run`. |
+| >=10.0.100    | Number of SDKs used for `dotnet run`. |
+| >=10.0.100    | Number of PackageReferences for `dotnet run`. |
+| >=10.0.100    | Number of ProjectReferences for `dotnet run`. |
+| >=10.0.100    | Number of additional properties for file-based apps with `dotnet run`. |
+| >=10.0.100    | Whether MSBuild was used for file-based apps with `dotnet run`. |
+| >=10.0.100    | Whether Roslyn compiler was used for file-based apps with `dotnet run`. |
 | >=10.0.100    | The detected LLM agent name if the CLI was invoked from an LLM agent. For more information, see [LLM detection](#llm-detection).|
 
 ### Collected options
@@ -147,6 +158,27 @@ The `dotnet new` template instantiation command collects additional data for Mic
 
 * `--framework`
 * `--auth`
+
+### dotnet run telemetry
+
+The `dotnet run` command collects feature-based telemetry to help drive development and usage of file-based apps, starting with .NET SDK 10.0.100:
+
+**Telemetry for all `dotnet run` executions:**
+
+- Application type (file-based or project-based)
+- Hashed project or file identifier
+- Number of SDKs used
+- Number of PackageReferences
+- Number of ProjectReferences
+- Launch profile usage (whether `--launch-profile` or `--no-launch-profile` was used)
+- Whether the launch profile is a default profile
+- Launch settings model applied, if any
+
+**Telemetry for file-based apps only:**
+
+- Number of additional properties (for example, `#:property` directives)
+- Whether MSBuild was used for building
+- Whether the Roslyn compiler was used directly
 
 ## Crash exception telemetry
 

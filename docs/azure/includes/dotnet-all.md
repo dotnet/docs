@@ -7,7 +7,7 @@
 | App Configuration | NuGet [1.6.1](https://www.nuget.org/packages/Azure.Data.AppConfiguration/1.6.1) | [docs](/dotnet/api/overview/azure/Data.AppConfiguration-readme) | GitHub [1.6.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Data.AppConfiguration_1.6.1/sdk/appconfiguration/Azure.Data.AppConfiguration/) |
 | App Configuration Provider | NuGet [8.4.0](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.AzureAppConfiguration/8.4.0) | [docs](/dotnet/api/overview/azure/Microsoft.Extensions.Configuration.AzureAppConfiguration-readme) | GitHub [8.4.0](https://github.com/Azure/AppConfiguration-DotnetProvider) |
 | Attestation | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Security.Attestation/1.0.0) | [docs](/dotnet/api/overview/azure/Security.Attestation-readme) | GitHub [1.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Security.Attestation_1.0.0/sdk/attestation/Azure.Security.Attestation/) |
-| Azure AI Search | NuGet [11.6.1](https://www.nuget.org/packages/Azure.Search.Documents/11.6.1)<br>NuGet [11.7.0-beta.7](https://www.nuget.org/packages/Azure.Search.Documents/11.7.0-beta.7) | [docs](/dotnet/api/overview/azure/Search.Documents-readme) | GitHub [11.6.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Search.Documents_11.6.1/sdk/search/Azure.Search.Documents/)<br>GitHub [11.7.0-beta.7](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Search.Documents_11.7.0-beta.7/sdk/search/Azure.Search.Documents/) |
+| Azure AI Search | NuGet [11.7.0](https://www.nuget.org/packages/Azure.Search.Documents/11.7.0) | [docs](/dotnet/api/overview/azure/Search.Documents-readme) | GitHub [11.7.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Search.Documents_11.7.0/sdk/search/Azure.Search.Documents/) |
 | Azure Object Anchors Conversion | NuGet [0.3.0-beta.6](https://www.nuget.org/packages/Azure.MixedReality.ObjectAnchors.Conversion/0.3.0-beta.6) | [docs](/dotnet/api/overview/azure/MixedReality.ObjectAnchors.Conversion-readme?view=azure-dotnet-preview&amp;preserve-view=true) | GitHub [0.3.0-beta.6](https://github.com/Azure/azure-sdk-for-net/tree/Azure.MixedReality.ObjectAnchors.Conversion_0.3.0-beta.6/sdk/objectanchors/Azure.MixedReality.ObjectAnchors.Conversion/) |
 | Azure Remote Rendering | NuGet [1.1.0](https://www.nuget.org/packages/Azure.MixedReality.RemoteRendering/1.1.0) | [docs](/dotnet/api/overview/azure/MixedReality.RemoteRendering-readme) | GitHub [1.1.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.MixedReality.RemoteRendering_1.1.0/sdk/remoterendering/Azure.MixedReality.RemoteRendering/) |
 | Code Transparency | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Azure.Security.CodeTransparency/1.0.0-beta.3) | [docs](/dotnet/api/overview/azure/Security.CodeTransparency-readme?view=azure-dotnet-preview&amp;preserve-view=true) | GitHub [1.0.0-beta.3](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Security.CodeTransparency_1.0.0-beta.3/sdk/confidentialledger/Azure.Security.CodeTransparency/) |
@@ -117,10 +117,6 @@
 | Time Series Insights | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.IoT.TimeSeriesInsights/1.0.0-beta.1) | [docs](/dotnet/api/overview/azure/IoT.TimeSeriesInsights-readme?view=azure-dotnet-preview&amp;preserve-view=true) | GitHub [1.0.0-beta.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.IoT.TimeSeriesInsights_1.0.0-beta.1/sdk/timeseriesinsights/Azure.IoT.TimeSeriesInsights/) |
 | TimeZone | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.Maps.TimeZones/1.0.0-beta.1) | [docs](/dotnet/api/overview/azure/Maps.TimeZones-readme?view=azure-dotnet-preview&amp;preserve-view=true) | GitHub [1.0.0-beta.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Maps.TimeZones_1.0.0-beta.1/sdk/maps/Azure.Maps.TimeZones/) |
 | unknown | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.Analytics.OnlineExperimentation/1.0.0-beta.1) | [docs](/dotnet/api/overview/azure/Analytics.OnlineExperimentation-readme?view=azure-dotnet-preview&amp;preserve-view=true) | GitHub [1.0.0-beta.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Analytics.OnlineExperimentation_1.0.0-beta.1/sdk/onlineexperimentation/Azure.Analytics.OnlineExperimentation/) |
-| unknown | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.Projects/1.0.0-beta.1) | [docs](/dotnet/api/overview/azure/Projects-readme?view=azure-dotnet-preview&amp;preserve-view=true) | GitHub [1.0.0-beta.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Projects_1.0.0-beta.1/sdk/cloudmachine/Azure.Projects/) |
-| unknown | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.Projects.AI/1.0.0-beta.1) | [docs](/dotnet/api/overview/azure/Projects.AI-readme?view=azure-dotnet-preview&amp;preserve-view=true) | GitHub [1.0.0-beta.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Projects.AI_1.0.0-beta.1/sdk/cloudmachine/Azure.Projects.AI/) |
-| unknown | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.Projects.Provisioning/1.0.0-beta.1) | [docs](/dotnet/api/overview/azure/Projects.Provisioning-readme?view=azure-dotnet-preview&amp;preserve-view=true) | GitHub [1.0.0-beta.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Projects.Provisioning_1.0.0-beta.1/sdk/cloudmachine/Azure.Projects.Provisioning/) |
-| unknown | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.Projects.Web/1.0.0-beta.1) | [docs](/dotnet/api/overview/azure/Projects.Web-readme?view=azure-dotnet-preview&amp;preserve-view=true) | GitHub [1.0.0-beta.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Projects.Web_1.0.0-beta.1/sdk/cloudmachine/Azure.Projects.Web/) |
 | Vision Common | NuGet [0.15.1-beta.1](https://www.nuget.org/packages/Azure.AI.Vision.Common/0.15.1-beta.1) |  | GitHub [0.15.1-beta.1](https://msasg.visualstudio.com/Skyman/_git/Carbon) |
 | Voice Live | NuGet [1.0.0](https://www.nuget.org/packages/Azure.AI.VoiceLive/1.0.0) | [docs](/dotnet/api/overview/azure/AI.VoiceLive-readme) | GitHub [1.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.VoiceLive_1.0.0/sdk/ai/Azure.AI.VoiceLive/) |
 | WCF Storage Queues | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Microsoft.WCF.Azure.StorageQueues/1.0.0-beta.1) | [docs](/dotnet/api/overview/azure/Microsoft.WCF.Azure.StorageQueues-readme?view=azure-dotnet-preview&amp;preserve-view=true) | GitHub [1.0.0-beta.1](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.WCF.Azure.StorageQueues_1.0.0-beta.1/sdk/extension-wcf/Microsoft.WCF.Azure.StorageQueues/) |
@@ -395,13 +391,13 @@
 | App Configuration Extension | NuGet [8.4.0](https://www.nuget.org/packages/Microsoft.Azure.AppConfiguration.Functions.Worker/8.4.0) |  |  |
 | App Configuration Provider | NuGet [8.4.0](https://www.nuget.org/packages/Microsoft.Azure.AppConfiguration.AspNetCore/8.4.0) |  |  |
 | Azure.Communication.Administration | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Azure.Communication.Administration/1.0.0-beta.3) |  |  |
-| Communication Calling Windows Client | NuGet [1.12.0](https://www.nuget.org/packages/Azure.Communication.Calling.WindowsClient/1.12.0)<br>NuGet [1.13.0-beta.2](https://www.nuget.org/packages/Azure.Communication.Calling.WindowsClient/1.13.0-beta.2) |  |  |
+| Communication Calling Windows Client | NuGet [1.13.0](https://www.nuget.org/packages/Azure.Communication.Calling.WindowsClient/1.13.0) |  |  |
 | Content Safety Extension Embedded Image | NuGet [1.0.1-beta.4](https://www.nuget.org/packages/Azure.AI.ContentSafety.Extension.Embedded.Image/1.0.1-beta.4) |  |  |
 | Content Safety Extension Embedded Text | NuGet [1.0.0](https://www.nuget.org/packages/Azure.AI.ContentSafety.Extension.Embedded.Text/1.0.0)<br>NuGet [1.0.1-beta.4](https://www.nuget.org/packages/Azure.AI.ContentSafety.Extension.Embedded.Text/1.0.1-beta.4) |  |  |
 | Cosmos DB Fault Injection | NuGet [1.0.0-beta.0](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.FaultInjection/1.0.0-beta.0) |  |  |
 | DotNetty | NuGet [0.7.6](https://www.nuget.org/packages/DotNetty.Common/0.7.6) |  |  |
-| Functions Extension MCP | NuGet [1.0.0-preview.7](https://www.nuget.org/packages/Microsoft.Azure.Functions.Extensions.Mcp/1.0.0-preview.7) |  |  |
-| Functions Worker Extension MCP | NuGet [1.0.0-preview.7](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Mcp/1.0.0-preview.7) |  |  |
+| Functions Extension MCP | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Extensions.Mcp/1.0.0) |  |  |
+| Functions Worker Extension MCP | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Mcp/1.0.0) |  |  |
 | Functions Worker Extension MySQL | NuGet [1.0.129](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.MySql/1.0.129) |  |  |
 | HTTP ASPNETCore Analyzers | NuGet [1.0.4](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Http.AspNetCore.Analyzers/1.0.4) |  |  |
 | IoT Operations MQTT | NuGet [0.11.0](https://www.nuget.org/packages/Azure.Iot.Operations.Mqtt/0.11.0) |  |  |
@@ -419,13 +415,13 @@
 | Speech Extension Telemetry | NuGet [1.46.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Telemetry/1.46.0) |  |  |
 | System Net Client Model | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/System.Net.ClientModel/1.0.0-beta.1) |  |  |
 | Unknown Display Name | NuGet [0.13.0-preview](https://www.nuget.org/packages/Azure.Iot.Operations.Connector/0.13.0-preview) |  |  |
-| Unknown Display Name | NuGet [0.8.5](https://www.nuget.org/packages/Azure.Mcp/0.8.5) |  |  |
-| Unknown Display Name | NuGet [0.8.5](https://www.nuget.org/packages/Azure.Mcp.linux-arm64/0.8.5) |  |  |
-| Unknown Display Name | NuGet [0.8.5](https://www.nuget.org/packages/Azure.Mcp.linux-x64/0.8.5) |  |  |
-| Unknown Display Name | NuGet [0.8.5](https://www.nuget.org/packages/Azure.Mcp.osx-arm64/0.8.5) |  |  |
-| Unknown Display Name | NuGet [0.8.5](https://www.nuget.org/packages/Azure.Mcp.osx-x64/0.8.5) |  |  |
-| Unknown Display Name | NuGet [0.8.5](https://www.nuget.org/packages/Azure.Mcp.win-arm64/0.8.5) |  |  |
-| Unknown Display Name | NuGet [0.8.5](https://www.nuget.org/packages/Azure.Mcp.win-x64/0.8.5) |  |  |
+| Unknown Display Name | NuGet [0.8.6](https://www.nuget.org/packages/Azure.Mcp/0.8.6) |  |  |
+| Unknown Display Name | NuGet [0.8.6](https://www.nuget.org/packages/Azure.Mcp.linux-arm64/0.8.6) |  |  |
+| Unknown Display Name | NuGet [0.8.6](https://www.nuget.org/packages/Azure.Mcp.linux-x64/0.8.6) |  |  |
+| Unknown Display Name | NuGet [0.8.6](https://www.nuget.org/packages/Azure.Mcp.osx-arm64/0.8.6) |  |  |
+| Unknown Display Name | NuGet [0.8.6](https://www.nuget.org/packages/Azure.Mcp.osx-x64/0.8.6) |  |  |
+| Unknown Display Name | NuGet [0.8.6](https://www.nuget.org/packages/Azure.Mcp.win-arm64/0.8.6) |  |  |
+| Unknown Display Name | NuGet [0.8.6](https://www.nuget.org/packages/Azure.Mcp.win-x64/0.8.6) |  |  |
 | Unknown Display Name | NuGet [0.1.4-preview.2](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Aot/0.1.4-preview.2) |  |  |
 | Unknown Display Name | NuGet [0.2.802](https://www.nuget.org/packages/Microsoft.Azure.Mcp.AzTypes.Internal.Compact/0.2.802) |  |  |
 | Unknown Display Name | NuGet [1.1.2-preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.AzureCosmosDb.Mongo/1.1.2-preview) |  |  |
@@ -533,7 +529,7 @@
 | Functions extension for Application Insights | NuGet [1.0.0-preview4](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.ApplicationInsights/1.0.0-preview4) |  |  |
 | Functions extension for Azure Mobile Apps | NuGet [3.0.0-beta8](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.MobileApps/3.0.0-beta8) |  | GitHub [3.0.0-beta8](https://github.com/Azure/azure-webjobs-sdk-extensions/tree/v3.0.0-beta8/src/WebJobs.Extensions.MobileApps) |
 | Functions extension for Azure SQL and SQL Server | NuGet [3.1.527](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Sql/3.1.527) |  |  |
-| Functions extension for Cosmos DB | NuGet [4.10.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.CosmosDB/4.10.0) |  | GitHub [4.10.0](https://github.com/Azure/azure-webjobs-sdk-extensions/tree/cosmos-v3.0.7/src/WebJobs.Extensions.CosmosDB) |
+| Functions extension for Cosmos DB | NuGet [4.11.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.CosmosDB/4.11.0) |  | GitHub [4.11.0](https://github.com/Azure/azure-webjobs-sdk-extensions/tree/cosmos-v3.0.7/src/WebJobs.Extensions.CosmosDB) |
 | Functions extension for DocumentDB | NuGet [1.3.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.DocumentDB/1.3.0) |  | GitHub [1.3.0](https://github.com/Azure/azure-webjobs-sdk-extensions) |
 | Functions extension for Durable Task Framework | NuGet [3.5.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.DurableTask/3.5.0) | [docs](/dotnet/api/overview/azure/functions) | GitHub [3.5.0](https://github.com/Azure/azure-functions-durable-extension/tree/v2.2.2/src/WebJobs.Extensions.DurableTask) |
 | Functions extension for Durable Task Framework - isolated worker | NuGet [1.8.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.DurableTask/1.8.0) |  |  |

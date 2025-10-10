@@ -136,7 +136,8 @@ The project or solution file to operate on. If not specified, the command search
 [!INCLUDE [interactive](../../../includes/cli-interactive-3-0.md)]
 
 - **`--no-restore`**
-  Do not restore before running the command.
+  
+  Don't restore before running the command.
 
 - **`--outdated`**
 

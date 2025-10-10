@@ -4,6 +4,7 @@ description: Learn about the various Microsoft.Testing.Platform Code Coverage ex
 author: evangelink
 ms.author: amauryleve
 ms.date: 04/10/2024
+ai-usage: ai-assisted
 ---
 
 # Code coverage extensions
@@ -38,6 +39,19 @@ For more information about the available options, see [settings](../additional-t
 
 > [!NOTE]
 > The default value of `IncludeTestAssembly` in Microsoft.Testing.Extensions.CodeCoverage is `false`, while it used to be `true` in VSTest. This means that test projects are excluded by default. For more information, see [Code Coverage configuration](https://github.com/microsoft/codecoverage/blob/main/docs/configuration.md).
+
+## Version compatibility
+
+The following table shows the compatibility between different versions of Microsoft.Testing.Extensions.CodeCoverage and Microsoft.Testing.Platform:
+
+| Microsoft.Testing.Extensions.CodeCoverage | Microsoft.Testing.Platform |
+|------------------------------------------|---------------------------|
+| 18.1.x                                  | 2.0.x                     |
+| 18.0.x                                  | 1.8.x                     |
+| 17.14.x                                  | 1.6.2                     |
+
+> [!NOTE]
+> For the best compatibility and latest features, it's recommended to use the latest versions of both packages together.
 
 ## Coverlet
 

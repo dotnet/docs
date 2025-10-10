@@ -72,7 +72,7 @@ You can implement one or more interfaces in a class type by using the `interface
 
 Interface implementations are inherited, so any derived classes do not need to reimplement them.
 
-## Implementing empty or marker interfaces
+## Define empty or marker interfaces
 
 Empty interfaces, also known as marker interfaces, can be used to identify a set of types without requiring any specific behavior. These interfaces have no members and serve as a way to mark or tag types for categorization purposes.
 

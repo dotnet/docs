@@ -15,11 +15,11 @@ The process enricher only affects telemetry logs.
 ## Usage
 
 To be able to use the process log enricher, first you need to enable enrichment like this:
-:::code language="json" source="snippets/enrichment/Program.cs" highlight="15":::
+:::code language="csharp" source="snippets/enrichment/Program.cs" highlight="15":::
 
-then you can add the the <xref:Microsoft.Extensions.DependencyInjection.AddProcessLogEnricher.AddProcessLogEnricher*> with default properties, like this:
+then you can add the <xref:Microsoft.Extensions.DependencyInjection.AddProcessLogEnricher.AddProcessLogEnricher*> with default properties, like this:
 
-:::code language="json" source="snippets/enrichment/Program.cs" highlight="16":::
+:::code language="csharp" source="snippets/enrichment/Program.cs" highlight="16":::
 
 or alternatively:
 

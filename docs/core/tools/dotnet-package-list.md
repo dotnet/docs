@@ -72,6 +72,7 @@ The following example shows the output of the `dotnet package list --outdated --
 Restore complete (0.6s)
 
 Build succeeded in 0.7s
+
 The following sources were used:
    https://api.nuget.org/v3/index.json
    C:\Program Files (x86)\Microsoft SDKs\NuGetPackages\

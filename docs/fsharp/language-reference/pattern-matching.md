@@ -138,6 +138,10 @@ The cons pattern is used to decompose a list into the first element, the *head*,
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet4809.fs)]
 
+You can also chain multiple cons patterns together to match lists that start with specific sequences of elements.
+
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet4819.fs)]
+
 ## List Pattern
 
 The list pattern enables lists to be decomposed into a number of elements. The list pattern itself can match only lists of a specific number of elements.

@@ -1,16 +1,14 @@
 ---
-title: Process enricher
+title: Process log enricher
 description: Learn how to use the process log enricher in .NET.
 ms.date: 10/10/2025
 ---
 
-# Process enricher
+# Process log enricher
 
-The process enricher augments telemetry logs or metrics with process-specific information.
+The process enricher augments telemetry logs with process-specific information.
 
 You can register the enrichers in an IoC container. Then, all registered enrichers are picked up automatically by the respective telemetry instances, such as logs or metrics, where they enrich the telemetry information.
-
-The process enricher only affects telemetry logs.
 
 ## Usage
 

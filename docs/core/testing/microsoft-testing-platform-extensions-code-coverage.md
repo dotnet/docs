@@ -4,6 +4,7 @@ description: Learn about the various Microsoft.Testing.Platform Code Coverage ex
 author: evangelink
 ms.author: amauryleve
 ms.date: 04/10/2024
+ai-usage: ai-assisted
 ---
 
 # Code coverage extensions

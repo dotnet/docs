@@ -6,6 +6,7 @@ ms.author: adegeo
 ms.topic: install-set-up-deploy #Don't change
 ms.date: 11/11/2024
 no-loc: ["Program Files", "dotnet"]
+ai-usage: ai-assisted
 #customer intent: As a developer or user, I want to decide the best way to install .NET on Windows.
 ---
 
@@ -22,6 +23,9 @@ This article teaches you about which versions of .NET are supported on Windows, 
 Unlike .NET Framework, .NET isn't tied to your version of Windows. You can only have a single version of .NET Framework installed on Windows. But .NET is standalone and can be installed anywhere on your computer. Some apps might include their own copy of .NET.
 
 By default, .NET is installed to the _Program Files\\dotnet_ directory on your computer, unless the installation method chooses a different directory.
+
+> [!IMPORTANT]
+> If you're installing .NET system-wide, install with administrative privileges.
 
 .NET is made up of the runtime and the SDK. The runtime runs .NET apps, and the SDK is used to create apps.
 
@@ -169,6 +173,9 @@ For more information about, see [.NET SDK, MSBuild, and Visual Studio versioning
 
 Visual Studio Code is a powerful and lightweight source code editor that runs on your desktop. Visual Studio Code can use the SDK already installed on your system.
 
+> [!IMPORTANT]
+> If you're installing .NET system-wide, install with administrative privileges.
+
 This [WinGet configuration file](https://builds.dotnet.microsoft.com/dotnet/install/dotnet_basic_config_docs.winget) installs the latest .NET SDK, Visual Studio Code and the C# DevKit. If you already have any of them installed, WinGet will skip that step.
 
 01. Download the file and double-click to run it.
@@ -182,6 +189,9 @@ For instructions on installing .NET through Visual Studio Code, see [Getting Sta
 ## .NET Installer
 
 The [download page](https://dotnet.microsoft.com/download/dotnet) for .NET provides Windows Installer executables.
+
+> [!IMPORTANT]
+> If you're installing .NET system-wide, install with administrative privileges.
 
 1. Open a web browser and navigate to <https://dotnet.microsoft.com/download/dotnet>.
 1. Select the version of .NET you want to download, such as 9.0.
@@ -264,7 +274,8 @@ When the removal is deferred, the installer writes a command to the [RunOnce](/w
 
 You can install and manage .NET through the Windows Package Manager service, using the `winget.exe` tool. For more information about how to install and use **WinGet**, see [Use the winget tool to install and manage applications](/windows/package-manager/winget/).
 
-If you're installing .NET system-wide, install with administrative privileges.
+> [!IMPORTANT]
+> If you're installing .NET system-wide, install with administrative privileges.
 
 The .NET WinGet packages are:
 

@@ -230,6 +230,8 @@ project_folder
 
 Use the [dotnet new install](dotnet-new-install.md) command to install a template package.
 
+[!WARNING] Templates can run msbuild code when triggering the template so do not install or run untrusted .NET templates.
+
 ### To install a template package from a NuGet package stored at nuget.org
 
 Use the NuGet package identifier to install a template package.

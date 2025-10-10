@@ -6,7 +6,7 @@ ai-usage: ai-assisted
 ---
 # Install .NET Framework 3.5 on Windows and Windows Server
 
-.NET Framework is software created by Microsoft that allows programs to run on your computer. Think of it as a toolkit that many apps need to work properly. Some older apps were built to use .NET Framework 3.5, and these apps won't run without it. If you see a message asking you to install .NET Framework 3.5, it means an app you're trying to use needs this version to work.
+.NET Framework is software that allows programs to run on your computer. Think of it as a toolkit that apps use to work properly—just like a car needs an engine to run, some apps need .NET Framework to function. This article helps you install version 3.5, which is an older version that some apps still require.
 
 You might need .NET Framework 3.5 to run an app on Windows or Windows Server. Windows and Windows Server come with .NET Framework 4, which doesn't support apps built with .NET Framework 1.1 through 3.5. To run these apps, install .NET Framework 3.5. If you're a developer that requires .NET Framework 3.5, see the section [Developers and .NET Framework 3.5](#developers-and-net-framework-35).
 

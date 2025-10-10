@@ -12,7 +12,7 @@ ai-usage: ai-assisted
 ### Get started
 
 When you build applications that communicate over HTTP, it's important to observe request performance characteristics.
-The <xref:Microsoft.Extensions.DependencyInjection.HttpClientLatencyTelemetryExtensions.AddHttpClientLatencyTelemetry>
+The <xref:Microsoft.Extensions.DependencyInjection.HttpClientLatencyTelemetryExtensions.AddHttpClientLatencyTelemetry*>
 extension enables collection of detailed timing information for outgoing HTTP calls with no changes to calling code.
 It plugs into the existing `HttpClientFactory` pipeline to capture stage timings across the request lifecycle, record
 HTTP protocol details, measure garbage collection impact where the runtime exposes that data, and emit a uniform
@@ -72,7 +72,7 @@ builder.Configuration.GetSection("HttpClientTelemetry"));
 
 ### Configuration options
 
-The <xref:Microsoft.Extensions.Http.Latency.HttpClientLatencyTelemetryOptions*> class offers the following settings:
+The <xref:Microsoft.Extensions.Http.Latency.HttpClientLatencyTelemetryOptions> class offers the following settings:
 
 | Option                         | Type    | Default | Description                                                                                                                                                                                                                                          | When to disable                                                                                                                  |
 |--------------------------------|---------|---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|

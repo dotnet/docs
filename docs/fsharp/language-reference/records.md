@@ -6,16 +6,18 @@ ms.date: 12/21/2021
 ---
 # Records (F#)
 
-Records represent simple aggregates of named values, optionally with members. They can either be structs or reference types.  They are reference types by default.
+Records represent simple aggregates of named values, optionally with members. They can either be structs or reference types. They are reference types by default.
 
 ## Syntax
 
 ```fsharp
 [ attributes ]
 type [accessibility-modifier] typename =
-    { [ mutable ] label1 : type1;
-      [ mutable ] label2 : type2;
-      ... }
+    [accessibility-modifier] { 
+        [ mutable ] label1 : type1;
+        [ mutable ] label2 : type2;
+        ... 
+    }
     [ member-list ]
 ```
 
@@ -96,15 +98,15 @@ For example, the following code defines a `Person` and `Address` type as mutuall
 ```fsharp
 // Create a Person type and use the Address type that is not defined
 type Person =
-  { Name: string
-    Age: int
-    Address: Address }
+    { Name: string
+      Age: int
+      Address: Address }
 // Define the Address type which is used in the Person record
 and Address =
-  { Line1: string
-    Line2: string
-    PostCode: string
-    Occupant: Person }
+    { Line1: string
+      Line2: string
+      PostCode: string
+      Occupant: Person }
 ```
 
 To create instances of both, you do the following:
@@ -112,17 +114,17 @@ To create instances of both, you do the following:
 ```fsharp
 // Create a Person type and use the Address type that is not defined
 let rec person =
-  {
-      Name = "Person name"
-      Age = 12
-      Address =
-          {
-              Line1 = "line 1"
-              Line2 = "line 2"
-              PostCode = "abc123"
-              Occupant = person
-          }
-  }
+    {
+        Name = "Person name"
+        Age = 12
+        Address =
+            {
+                Line1 = "line 1"
+                Line2 = "line 2"
+                PostCode = "abc123"
+                Occupant = person
+            }
+    }
 ```
 
 If you were to define the previous example without the `and` keyword, then it would not compile. The `and` keyword is required for mutually recursive definitions.
@@ -147,9 +149,9 @@ You can specify members on records much like you can with classes. There is no s
 
 ```fsharp
 type Person =
-  { Name: string
-    Age: int
-    Address: string }
+    { Name: string
+      Age: int
+      Address: string }
 
     static member Default =
         { Name = "Phillip"
@@ -163,9 +165,9 @@ If you use a self identifier, that identifier refers to the instance of the reco
 
 ```fsharp
 type Person =
-  { Name: string
-    Age: int
-    Address: string }
+    { Name: string
+      Age: int
+      Address: string }
 
     member this.WeirdToString() =
         this.Name + this.Address + string this.Age
@@ -173,6 +175,47 @@ type Person =
 let p = { Name = "a"; Age = 12; Address = "abc123" }
 let weirdString = p.WeirdToString()
 ```
+
+## Accessibility Modifiers on Constructors
+
+You can modify the accessibility of the respective properties of the record's constructor, which affects how they are accessed from outside the module. The following code example illustrates this.
+
+```fsharp
+module Person =
+
+    type Person =
+        private {
+            Name: string
+            Age: int
+            Address: string
+        }
+    
+    let createPerson name age address =
+        { Name = name; Age = age; Address = address }
+    
+    let getPersonInfo (person: Person) =
+        $"- Name: {person.Name}\n- Age: {person.Age}\n- Address: {person.Address}"
+
+module Main =
+    open Person
+
+    let person = createPerson "Phillip" 12 "123 happy fun street"
+
+    // Outside the 'Person' module, this line will cause a compiler error.
+    // let personName = person.Name 
+    
+    printfn "%s" (getPersonInfo person)
+```
+
+The output of this code is as follows:
+
+```console
+- Name: Phillip
+- Age: 12
+- Address: 123 happy fun street
+```
+
+For more information about accessibility modifiers, see the [Access Control](./access-control.md) article.
 
 ## Differences Between Records and Classes
 

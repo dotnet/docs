@@ -32,7 +32,7 @@ dotnet package list -h|--help
 ## Description
 
 The `dotnet package list` command provides a convenient option to list all NuGet package references for a specific project or a solution.
-Starting **.NET 10** the command automatically performs restore if necessary before generating the results.
+Starting with **.NET 10**, the command automatically performs restore if necessary before generating the results.
 In earlier versions, you first need to **build/restore the project** in order to have the assets needed for this command to process.
 The following example shows the output of the `dotnet package list` command for the [SentimentAnalysis](https://github.com/dotnet/samples/tree/main/machine-learning/tutorials/SentimentAnalysis) project:
 

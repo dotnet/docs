@@ -134,3 +134,6 @@ After you've released version 2.0.0 of the package, you can delete the *Compatib
 
 </Project>
 ```
+
+> [!TIP]
+> Instead of deleting the *CompatibilitySuppressions.xml* file, you can also consider setting properties such as [ApiCompatPreserveUnnecessarySuppressions](../../../core/project-sdk/msbuild-props.md#apicompatpreserveunnecessarysuppressions).

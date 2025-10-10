@@ -1,11 +1,15 @@
 ---
 title: Configure Visual Studio Code for Azure development with .NET
 description: This article helps you configure Visual Studio Code for Azure development including getting the right plugins installed and configured in VS Code
-ms.topic: conceptual
-ms.custom: devx-track-dotnet, vscode-azure-extension-update-completed, engagement-fy23
+ms.topic: concept-article
 ms.date: 8/15/2024
 author: alexwolfmsft
 ms.author: alexwolf
+ms.custom:
+  - devx-track-dotnet
+  - vscode-azure-extension-update-completed
+  - engagement-fy23
+  - sfi-image-nochange
 ---
 
 # Configure Visual Studio Code for Azure development

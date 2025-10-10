@@ -35,11 +35,11 @@ typedef enum
 
 ## Members
 
-|Member|Description|
+| Member | Description |
 |------------|-----------------|
-|`Unknown`|Invalid index type.|
-|`Identity`|The index information of the requested module.|
-|`Runtime`|The runtime module's index information.|
+| `Unknown` | Invalid index type. |
+| `Identity` | The index information of the requested module. |
+| `Runtime` | The runtime module's index information. |
 
 ## Remarks
 

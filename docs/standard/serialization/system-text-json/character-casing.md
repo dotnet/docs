@@ -34,7 +34,7 @@ Here's example JSON with camel case property names. It can be deserialized into 
 {
   "date": "2019-08-01T00:00:00-07:00",
   "temperatureCelsius": 25,
-  "summary": "Hot",
+  "summary": "Hot"
 }
 ```
 

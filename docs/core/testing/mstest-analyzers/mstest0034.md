@@ -24,6 +24,9 @@ ms.author: enjieid
 | **Introduced in version**           | 3.6.0                                                            |
 | **Is there a code fix**             | No                                                               |
 
+> [NOTE]
+> This analyzer is no longer relevant for MSTest 4 as `ClassCleanupBehavior` was removed.
+
 ## Cause
 
 This rule raises a diagnostic when `ClassCleanupBehavior.EndOfClass` isn't set with the `[ClassCleanup]`.
@@ -34,7 +37,7 @@ Without using  `ClassCleanupBehavior.EndOfClass`, the `[ClassCleanup]` will by d
 
 ## How to fix violations
 
-Use `ClassCleanupBehavior.EndOfClass` with the `[ClassCleanup]`.
+Use `[ClassCleanup(ClassCleanupBehavior.EndOfClass)]`.
 
 ## When to suppress warnings
 

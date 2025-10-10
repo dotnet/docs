@@ -61,7 +61,7 @@ When .NET code tries to call a method on a COM object through an interface with 
 
 Consider a COM interface with a few methods:
 
-```c++
+```cpp
 struct IComInterface : public IUnknown
 {
     STDMETHOD(Method)() = 0;
@@ -71,13 +71,13 @@ struct IComInterface : public IUnknown
 
 For this interface, the following table describes its virtual function table layout:
 
-| `IComInterface` virtual function table slot | Method name |
-|-----------------------------|-------------|
-| 0 | `IUnknown::QueryInterface` |
-| 1 | `IUnknown::AddRef` |
-| 2 | `IUnknown::Release` |
-| 3 | `IComInterface::Method` |
-| 4 | `IComInterface::Method2` |
+| `IComInterface` virtual function table slot | Method name                |
+|---------------------------------------------|----------------------------|
+| 0                                           | `IUnknown::QueryInterface` |
+| 1                                           | `IUnknown::AddRef`         |
+| 2                                           | `IUnknown::Release`        |
+| 3                                           | `IComInterface::Method`    |
+| 4                                           | `IComInterface::Method2`   |
 
 Each method is added to the virtual function table in the order it was declared. The particular order is defined by the C++ compiler, but for simple cases without overloads, declaration order defines the order in the table.
 
@@ -128,22 +128,22 @@ struct IComInterface2 : public IComInterface
 
 This declaration style is regularly used as a mechanism to add methods to COM objects without changing existing interfaces, which would be a breaking change. This inheritance mechanism results in the following virtual function table layouts:
 
-| `IComInterface` virtual function table slot | Method name |
-|-----------------------------|-------------|
-| 0 | `IUnknown::QueryInterface` |
-| 1 | `IUnknown::AddRef` |
-| 2 | `IUnknown::Release` |
-| 3 | `IComInterface::Method` |
-| 4 | `IComInterface::Method2` |
+| `IComInterface` virtual function table slot | Method name                |
+|---------------------------------------------|----------------------------|
+| 0                                           | `IUnknown::QueryInterface` |
+| 1                                           | `IUnknown::AddRef`         |
+| 2                                           | `IUnknown::Release`        |
+| 3                                           | `IComInterface::Method`    |
+| 4                                           | `IComInterface::Method2`   |
 
-| `IComInterface2` virtual function table slot | Method name |
-|-----------------------------|-------------|
-| 0 | `IUnknown::QueryInterface` |
-| 1 | `IUnknown::AddRef` |
-| 2 | `IUnknown::Release` |
-| 3 | `IComInterface::Method` |
-| 4 | `IComInterface::Method2` |
-| 5 | `IComInterface2::Method3` |
+| `IComInterface2` virtual function table slot | Method name                |
+|----------------------------------------------|----------------------------|
+| 0                                            | `IUnknown::QueryInterface` |
+| 1                                            | `IUnknown::AddRef`         |
+| 2                                            | `IUnknown::Release`        |
+| 3                                            | `IComInterface::Method`    |
+| 4                                            | `IComInterface::Method2`   |
+| 5                                            | `IComInterface2::Method3`  |
 
 As a result, it's easy to call a method defined on `IComInterface` from an `IComInterface2*`. Specifically, calling a method on a base interface does not require a call to `QueryInterface` to get a pointer to the base interface. Additionally, C++ allows an implicit conversion from `IComInterface2*` to `IComInterface*`, which is well defined and lets you avoid calling a `QueryInterface` again. As a result, in C or C++, you never have to call `QueryInterface` to get to the base type if you don't want to, which can allow some performance improvements.
 
@@ -190,20 +190,20 @@ interface IComInterface2 : IComInterface
 
 Virtual function table layouts:
 
-| `IComInterface` virtual function table slot | Method name |
-|-----------------------------|-------------|
-| 0 | `IUnknown::QueryInterface` |
-| 1 | `IUnknown::AddRef` |
-| 2 | `IUnknown::Release` |
-| 3 | `IComInterface::Method` |
-| 4 | `IComInterface::Method2` |
+| `IComInterface` virtual function table slot | Method name                |
+|---------------------------------------------|----------------------------|
+| 0                                           | `IUnknown::QueryInterface` |
+| 1                                           | `IUnknown::AddRef`         |
+| 2                                           | `IUnknown::Release`        |
+| 3                                           | `IComInterface::Method`    |
+| 4                                           | `IComInterface::Method2`   |
 
-| `IComInterface2` virtual function table slot | Method name |
-|-----------------------------|-------------|
-| 0 | `IUnknown::QueryInterface` |
-| 1 | `IUnknown::AddRef` |
-| 2 | `IUnknown::Release` |
-| 3 | `IComInterface2::Method3` |
+| `IComInterface2` virtual function table slot | Method name                |
+|----------------------------------------------|----------------------------|
+| 0                                            | `IUnknown::QueryInterface` |
+| 1                                            | `IUnknown::AddRef`         |
+| 2                                            | `IUnknown::Release`        |
+| 3                                            | `IComInterface2::Method3`  |
 
 As these virtual function tables differ from the C++ example, this will lead to serious problems at run time. The correct definition of these interfaces in .NET with <xref:System.Runtime.InteropServices.ComImportAttribute> is as follows:
 
@@ -251,22 +251,22 @@ interface IComInterface2 : IComInterface
 
 The methods of the base interfaces do not need to be redeclared and should not be redeclared. The following table describes the resulting virtual function tables:
 
-| `IComInterface` virtual function table slot | Method name |
-|-----------------------------|-------------|
-| 0 | `IUnknown::QueryInterface` |
-| 1 | `IUnknown::AddRef` |
-| 2 | `IUnknown::Release` |
-| 3 | `IComInterface::Method` |
-| 4 | `IComInterface::Method2` |
+| `IComInterface` virtual function table slot | Method name                |
+|---------------------------------------------|----------------------------|
+| 0                                           | `IUnknown::QueryInterface` |
+| 1                                           | `IUnknown::AddRef`         |
+| 2                                           | `IUnknown::Release`        |
+| 3                                           | `IComInterface::Method`    |
+| 4                                           | `IComInterface::Method2`   |
 
-| `IComInterface2` virtual function table slot | Method name |
-|-----------------------------|-------------|
-| 0 | `IUnknown::QueryInterface` |
-| 1 | `IUnknown::AddRef` |
-| 2 | `IUnknown::Release` |
-| 3 | `IComInterface::Method` |
-| 4 | `IComInterface::Method2` |
-| 5 | `IComInterface2::Method3` |
+| `IComInterface2` virtual function table slot | Method name                |
+|----------------------------------------------|----------------------------|
+| 0                                            | `IUnknown::QueryInterface` |
+| 1                                            | `IUnknown::AddRef`         |
+| 2                                            | `IUnknown::Release`        |
+| 3                                            | `IComInterface::Method`    |
+| 4                                            | `IComInterface::Method2`   |
+| 5                                            | `IComInterface2::Method3`  |
 
 As you can see, these tables match the C++ example, so these interfaces will function correctly.
 
@@ -274,7 +274,7 @@ As you can see, these tables match the C++ example, so these interfaces will fun
 
 - <xref:System.Runtime.InteropServices.ComVisibleAttribute>
 - <xref:System.Runtime.InteropServices.ComImportAttribute>
-- [Exposing .NET Framework Components to COM](../../framework/interop/exposing-dotnet-components-to-com.md)
+- [Expose .NET Framework components to COM](../../framework/interop/exposing-dotnet-components-to-com.md)
 - [Introducing the class interface](com-callable-wrapper.md#introducing-the-class-interface)
-- [Applying Interop Attributes](apply-interop-attributes.md)
-- [Packaging a .NET Framework Assembly for COM](../../framework/interop/packaging-an-assembly-for-com.md)
+- [Apply interop attributes](apply-interop-attributes.md)
+- [Package a .NET Framework assembly for COM](../../framework/interop/packaging-an-assembly-for-com.md)

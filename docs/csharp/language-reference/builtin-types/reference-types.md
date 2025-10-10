@@ -1,7 +1,7 @@
 ---
 title: "Built-in reference types"
 description: "Learn about reference types that have C# keywords you can use to declare them."
-ms.date: 08/16/2022
+ms.date: 10/07/2025
 f1_keywords: 
   - "object_CSharpKeyword"
   - "object"
@@ -28,7 +28,7 @@ C# has many built-in reference types. They have keywords or operators that are s
 
 ## The object type
 
-The `object` type is an alias for <xref:System.Object?displayProperty=nameWithType> in .NET. In the unified type system of C#, all types, predefined and user-defined, reference types and value types, inherit directly or indirectly from <xref:System.Object?displayProperty=nameWithType>. You can assign values of any type (except `ref struct`, see [ref struct](ref-struct.md)) to variables of type `object`. Any `object` variable can be assigned to its default value using the literal `null`. When a variable of a value type is converted to object, it's said to be *boxed*. When a variable of type `object` is converted to a value type, it's said to be *unboxed*. For more information, see [Boxing and Unboxing](../../programming-guide/types/boxing-and-unboxing.md).
+The `object` type is an alias for <xref:System.Object?displayProperty=nameWithType> in .NET. In the unified type system of C#, all types, predefined and user-defined, reference types and value types, inherit directly or indirectly from <xref:System.Object?displayProperty=nameWithType>. You can assign values of any type (except `ref struct`, see [ref struct](ref-struct.md)) to variables of type `object`. Any `object` variable can be assigned to its default value using the literal `null`. When a variable of a value type is converted to object, it's *boxed*. When a variable of type `object` is converted to a value type, it's *unboxed*. For more information, see [Boxing and Unboxing](../../programming-guide/types/boxing-and-unboxing.md).
 
 ## The string type
 
@@ -55,7 +55,7 @@ string a = "good " + "morning";
 
 The preceding code creates a string object that contains "good morning".
 
-Strings are *immutable*--the contents of a string object can't be changed after the object is created. For example, when you write this code, the compiler actually creates a new string object to hold the new sequence of characters, and that new object is assigned to `b`. The memory that had been allocated for `b` (when it contained the string "h") is then eligible for garbage collection.
+Strings are *immutable*--the contents of a string object can't be changed after the object is created. For example, when you write this code, the compiler actually creates a new string object to hold the new sequence of characters, and that new object is assigned to `b`. The memory allocated for `b` (when it contained the string "h") is then eligible for garbage collection.
 
 ```csharp
 string b = "h";
@@ -137,6 +137,8 @@ var json= """
     """;
 ```
 
+[!INCLUDE[raw-string-tip](../../includes/raw-string-parsing.md)]
+
 The compiler issues an error if any of the text lines extend to the left of the closing quote sequence. The opening and closing quote sequences can be on the same line, providing the string literal neither starts nor ends with a quote character:
 
 ```csharp
@@ -210,7 +212,7 @@ public delegate int AnotherDelegate(MyType m, long num);
 
 In .NET, `System.Action` and `System.Func` types provide generic definitions for many common delegates. You likely don't need to define new custom delegate types. Instead, you can create instantiations of the provided generic types.
 
-A `delegate` is a reference type that can be used to encapsulate a named or an anonymous method. Delegates are similar to function pointers in C++; however, delegates are type-safe and secure. For applications of delegates, see [Delegates](../../programming-guide/delegates/index.md) and [Generic Delegates](../../programming-guide/generics/generic-delegates.md). Delegates are the basis for [Events](../../programming-guide/events/index.md). A delegate can be instantiated by associating it either with a named or anonymous method.
+A `delegate` is a built-in reference type that can be used to encapsulate a named or an anonymous method. Delegates are similar to function pointers in C++; however, delegates are type-safe and secure. For applications of delegates, see [Delegates](../../programming-guide/delegates/index.md) and [Generic Delegates](../../programming-guide/generics/generic-delegates.md). Delegates are the basis for [Events](../../programming-guide/events/index.md). A delegate can be instantiated by associating it either with a named or anonymous method.
 
 The delegate must be instantiated with a method or lambda expression that has a compatible return type and input parameters. For more information on the degree of variance that is allowed in the method signature, see [Variance in Delegates](../../programming-guide/concepts/covariance-contravariance/using-variance-in-delegates.md). For use with anonymous methods, the delegate and the code to be associated with it are declared together.
 
@@ -221,12 +223,12 @@ Action<string> stringAction = str => {};
 Action<object> objectAction = obj => {};
   
 // Valid due to implicit reference conversion of
-// objectAction to Action<string>, but may fail
+// objectAction to Action<string>, but might fail
 // at run time.
 Action<string> combination = stringAction + objectAction;
 ```
 
-You can create a delegate with the correct runtime type by creating a new delegate object. The following example demonstrates how this workaround may be applied to the preceding example.
+You can create a delegate with the correct runtime type by creating a new delegate object. The following example demonstrates how this workaround might be applied to the preceding example.
 
 ```csharp
 Action<string> stringAction = str => {};

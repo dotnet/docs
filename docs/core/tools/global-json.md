@@ -28,13 +28,13 @@ For information about specifying the runtime version instead of the SDK version,
 
 ## global.json schema
 
-### sdk
+### `sdk`
 
 Type: `object`
 
 Specifies information about the .NET SDK to select.
 
-#### version
+#### `version`
 
 - Type: `string`
 
@@ -45,7 +45,7 @@ This field:
 - Doesn't have wildcard support; that is, you must specify the full version number.
 - Doesn't support version ranges.
 
-#### allowPrerelease
+#### `allowPrerelease`
 
 - Type: `boolean`
 - Available since: .NET Core 3.0 SDK.
@@ -57,7 +57,7 @@ If you don't set this value explicitly, the default value depends on whether you
 - If you're **not** in Visual Studio, the default value is `true`.
 - If you're in Visual Studio, it uses the prerelease status requested. That is, if you're using a Preview version of Visual Studio or you set the **Use previews of the .NET SDK** option (under **Tools** > **Options** > **Environment** > **Preview Features**), the default value is `true`. Otherwise, the default value is `false`.
 
-#### rollForward
+#### `rollForward`
 
 - Type: `string`
 - Available since: .NET Core 3.0 SDK.
@@ -86,7 +86,7 @@ The following table shows the possible values for the `rollForward` key:
 | `latestMajor` | Uses the highest installed .NET SDK with a version that's greater than or equal to the specified value. <br> If not found, fail. |
 | `disable`     | Doesn't roll forward. An exact match is required. |
 
-#### paths
+#### `paths`
 
 - Type: Array of `string`
 - Available since: .NET 10 Preview 3 SDK.
@@ -95,14 +95,18 @@ Specifies the locations that should be considered when searching for a compatibl
 
 These paths are searched in the order they're defined and the first [matching](#matching-rules) SDK is used.
 
-#### errorMessage
+This feature enables using local SDK installations (such as SDKs relative to a repository root or placed in a custom folder) that aren't installed globally on the system.
+
+> The "paths" feature only works when using commands that engage the .NET SDK, such as `dotnet run`. It does NOT affect scenarios such as running the native apphost launcher (`app.exe`), running with `dotnet app.dll`, or running with `dotnet exec app.dll`. To use the "paths" feature, you must use SDK commands like `dotnet run`.
+
+#### `errorMessage`
 
 - Type: `string`
 - Available since: .NET 10 Preview 3 SDK.
 
 Specifies a custom error message displayed when the SDK resolver can't find a compatible .NET SDK.
 
-### msbuild-sdks
+### `msbuild-sdks`
 
 Type: `object`
 

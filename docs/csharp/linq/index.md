@@ -1,8 +1,8 @@
 ---
 title: Language Integrated Query (LINQ)
 description: Introduces Language Integrated Query (LINQ) in C#.
-ms.topic: conceptual
-ms.date: 12/14/2023
+ms.topic: concept-article
+ms.date: 08/08/2025
 ---
 # Language Integrated Query (LINQ)
 
@@ -22,7 +22,7 @@ You might need to add a [`using`](../language-reference/keywords/using-directive
 - Query expressions use many familiar C# language constructs, which make them easy to read.
 - The variables in a query expression are all strongly typed.
 - A query isn't executed until you iterate over the query variable, for example in a `foreach` statement.
-- At compile time, query expressions are converted to standard query operator method calls according to the rules defined in the C# specification. Any query that can be expressed by using query syntax can also be expressed by using method syntax. In some cases, query syntax is more readable and concise. In others, method syntax is more readable. There's no semantic or performance difference between the two different forms. For more information, see [C# language specification](~/_csharpstandard/standard/expressions.md#1220-query-expressions) and [Standard query operators overview](standard-query-operators/index.md).
+- At compile time, query expressions are converted to standard query operator method calls according to the rules defined in the C# specification. Any query that can be expressed by using query syntax can also be expressed by using method syntax. In some cases, query syntax is more readable and concise. In others, method syntax is more readable. There's no semantic or performance difference between the two different forms. For more information, see [C# language specification](~/_csharpstandard/standard/expressions.md#1221-query-expressions) and [Standard query operators overview](standard-query-operators/index.md).
 - Some query operations, such as <xref:System.Linq.Enumerable.Count%2A> or <xref:System.Linq.Enumerable.Max%2A>, have no equivalent query expression clause and must therefore be expressed as a method call. Method syntax can be combined with query syntax in various ways.
 - Query expressions can be compiled to expression trees or to delegates, depending on the type that the query is applied to. <xref:System.Collections.Generic.IEnumerable%601> queries are compiled to delegates. <xref:System.Linq.IQueryable> and <xref:System.Linq.IQueryable%601> queries are compiled to expression trees. For more information, see [Expression trees](/dotnet/csharp/advanced-topics/expression-trees).
 
@@ -40,7 +40,7 @@ You might need to add a [`using`](../language-reference/keywords/using-directive
 
  LINQ providers that implement <xref:System.Linq.IQueryable%601> can vary widely in their complexity.
   
- A less complex `IQueryable` provider might access a single method from a Web service. This type of provider is very specific because it expects specific information in the queries that it handles. It has a closed type system, perhaps exposing a single result type. Most of the execution of the query occurs locally, for example by using the <xref:System.Linq.Enumerable> implementations of the standard query operators. A less complex provider might examine only one method call expression in the expression tree that represents the query, and let the remaining logic of the query be handled elsewhere.  
+ A less complex `IQueryable` provider might access a single method from a Web service. This type of provider is specific to the data source because it expects specific information in the queries that it handles. It has a closed type system, perhaps exposing a single result type. Most of the execution of the query occurs locally, for example by using the <xref:System.Linq.Enumerable> implementations of the standard query operators. A less complex provider might examine only one method call expression in the expression tree that represents the query, and let the remaining logic of the query be handled elsewhere.  
   
  An `IQueryable` provider of medium complexity might target a data source that has a partially expressive query language. If it targets a Web service, it might access more than one method of the Web service and select which method to call based on the information that the query seeks. A provider of medium complexity would have a richer type system than a simple provider, but it would still be a fixed type system. For example, the provider might expose types that have one-to-many relationships that can be traversed, but it wouldn't provide mapping technology for user-defined types.  
   

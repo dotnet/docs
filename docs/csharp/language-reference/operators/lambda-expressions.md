@@ -49,7 +49,7 @@ A lambda expression with an expression on the right side of the `=>` operator is
 (input-parameters) => expression
 ```
 
-The body of an expression lambda can consist of a method call. However, when creating [expression trees](../../advanced-topics/expression-trees/index.md) evaluated by a query provider, limit method calls to those methods recognized by the query provider. Otherwise, the query provider can't replicate the method's function.
+The body of an expression lambda can consist of a method call. However, when creating [expression trees](../../advanced-topics/expression-trees/index.md) evaluated by a query provider, you should limit method calls to those methods that the query provider translates to its format. Different query providers have varying capabilities—for example, many SQL-based providers can translate methods like <xref:System.String.StartsWith%2A?displayProperty=nameWithType> into appropriate SQL expressions such as `LIKE`. If a query provider doesn't recognize a method call, it can't translate or execute the expression.
 
 ## Statement lambdas
 
@@ -323,7 +323,7 @@ A static lambda can't capture local variables or instance state from enclosing s
 
 ## C# language specification
 
-For more information, see the [Anonymous function expressions](~/_csharpstandard/standard/expressions.md#1219-anonymous-function-expressions) section of the [C# language specification](~/_csharpstandard/standard/README.md).
+For more information, see the [Anonymous function expressions](~/_csharpstandard/standard/expressions.md#1220-anonymous-function-expressions) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 For more information about these features, see the following feature proposal notes:
 

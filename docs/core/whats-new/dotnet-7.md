@@ -2,13 +2,11 @@
 title: What's new in .NET 7
 description: Learn about the new features introduced in .NET 7.
 ms.date: 11/08/2022
-ms.topic: whats-new
-ms.author: gewarren
-author: gewarren
+ms.update-cycle: 3650-days
 ---
 # What's new in .NET 7
 
-.NET 7 is the successor to [.NET 6](dotnet-6.md) and focuses on being unified, modern, simple, and *fast*. .NET 7 will be [supported for 18 months](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) as a standard-term support (STS) release (previously known as a *current* release).
+.NET 7 was the successor to [.NET 6](dotnet-6.md) and focused on being unified, modern, simple, and *fast*. .NET 7 was a standard-term support (STS) release (previously known as a *current* release).
 
 This article lists the new features of .NET 7 and provides links to more detailed information on each.
 
@@ -166,10 +164,6 @@ WPF in .NET 7 includes numerous bug fixes as well as performance and accessibili
 ### Orleans
 
 Orleans is a cross-platform framework for building robust, scalable distributed applications. For information about the latest updates for Orleans, see [Migrate from Orleans 3.x to 7.0](../../orleans/migration-guide.md).
-
-### .NET Upgrade Assistant and CoreWCF
-
-The .NET Upgrade Assistant now supports upgrading server-side WCF apps to [CoreWCF](https://github.com/CoreWCF/CoreWCF), which is a community-created port of WCF to .NET (Core). For more information, see [Upgrade a WCF server-side project to use CoreWCF](../porting/upgrade-assistant-wcf.md).
 
 ### ML.NET
 

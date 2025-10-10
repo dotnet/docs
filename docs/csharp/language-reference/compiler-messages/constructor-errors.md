@@ -121,7 +121,6 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS8983**](#constructors-in-struct-types): *A 'struct' with field initializers must include an explicitly declared constructor.*
 - [**CS9105**](#primary-constructor-declaration): *Cannot use primary constructor parameter in this context.*
 - [**CS9106**](#primary-constructor-declaration): *Identifier is ambiguous between type and parameter in this context.*
-class as well.*
 - [**CS9108**](#primary-constructor-declaration): *Cannot use parameter that has ref-like type inside an anonymous method, lambda expression, query expression, or local function.*
 - [**CS9109**](#primary-constructor-declaration): *Cannot use `ref`, `out`, or `in` primary constructor parameter inside an instance member.*
 - [**CS9110**](#primary-constructor-declaration): *Cannot use primary constructor parameter that has ref-like type inside an instance member.*
@@ -257,6 +256,8 @@ The compiler emits the following errors when a primary constructor violates one 
 - **CS9122**: *Unexpected parameter list.*
 - **CS9124**: *Parameter is captured into the state of the enclosing type and its value is also used to initialize a field, property, or event.*
 - **CS9136**: *Cannot use primary constructor parameter of type inside an instance member.*
+
+When using a primary constructor in a class or struct, every explicitly declared constructor must call the primary constructor using `: this(...)` with an appropriate argument list. This ensures that the primary constructor is always invoked. For more information on primary constructors, see the article on [instance constructors](../../programming-guide/classes-and-structs/instance-constructors.md#primary-constructors) in the programming guide.
 
 Primary constructor parameters are in scope in the body of that type. The compiler can synthesize a field that stores the parameter for use in members or in field initializers. Because a primary constructor parameter may be copied to a field, the following restrictions apply:
 

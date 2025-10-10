@@ -2,17 +2,18 @@
 title: Encryption
 ms.date: 09/08/2020
 description: Learn how to encrypt your database file.
+ms.custom: sfi-ropc-nochange
 ---
 # Encryption
 
-SQLite doesn't support encrypting database files by default. Instead, you need to use a modified version of SQLite like [SEE](https://www.hwaci.com/sw/sqlite/see.html), [SQLCipher](https://www.zetetic.net/sqlcipher/), [SQLiteCrypt](http://www.sqlite-crypt.com/), or [wxSQLite3](https://utelle.github.io/wxsqlite3). This article demonstrates using an unsupported, open-source build of SQLCipher, but the information also applies to other solutions since they generally follow the same pattern.
+SQLite doesn't support encrypting database files by default. Instead, you need to use a modified version of SQLite like [SQLCipher](https://www.zetetic.net/sqlcipher/), [SQLiteCrypt](http://www.sqlite-crypt.com/), or [wxSQLite3](https://utelle.github.io/wxsqlite3). This article demonstrates using an unsupported, open-source build of SQLCipher, but the information also applies to other solutions since they generally follow the same pattern.
 
 ## Installation
 
 ### [.NET CLI](#tab/net-cli)
 
 ```dotnetcli
-dotnet package remove Microsoft.Data.Sqlite
+dotnet remove package Microsoft.Data.Sqlite
 dotnet add package Microsoft.Data.Sqlite.Core
 dotnet add package SQLitePCLRaw.bundle_e_sqlcipher
 ```

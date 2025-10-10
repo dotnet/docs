@@ -191,7 +191,7 @@ The <xref:System.Double> structure and related types provide methods to perform 
 
 - **Rounding**. Rounding is often used as a technique for reducing the impact of differences between values caused by problems of floating-point representation and precision. You can round a <xref:System.Double> value by calling the <xref:System.Math.Round%2A?displayProperty=nameWithType> method.
 
-- **Formatting**. You can convert a <xref:System.Double> value to its string representation by calling the <xref:System.Double.ToString%2A> method or by using the composite formatting feature. For information about how format strings control the string representation of floating-point values, see the [Standard Numeric Format Strings](../../standard/base-types/standard-numeric-format-strings.md) and [Custom Numeric Format Strings](../../standard/base-types/custom-numeric-format-strings.md) topics.
+- **Formatting**. You can convert a <xref:System.Double> value to its string representation by calling the <xref:System.Double.ToString%2A> method or by using the composite formatting feature. For information about how format strings control the string representation of floating-point values, see [Standard Numeric Format Strings](../../standard/base-types/standard-numeric-format-strings.md) and [Custom Numeric Format Strings](../../standard/base-types/custom-numeric-format-strings.md).
 
 - **Parsing strings**. You can convert the string representation of a floating-point value to a <xref:System.Double> value by calling either the <xref:System.Double.Parse%2A> or <xref:System.Double.TryParse%2A> method. If the parse operation fails, the <xref:System.Double.Parse%2A> method throws an exception, whereas the <xref:System.Double.TryParse%2A> method returns `false`.
 

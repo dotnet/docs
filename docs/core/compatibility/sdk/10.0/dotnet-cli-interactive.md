@@ -1,6 +1,6 @@
 ---
 title: "Breaking change - .NET CLI `--interactive` defaults to `true` in user scenarios"
-description: "Learn about the breaking change in .NET 10 Preview 3 where the --interactive flag defaults to true in user-centric scenarios."
+description: "Learn about the breaking change in .NET 10 where the --interactive flag defaults to true in user-centric scenarios."
 ms.date: 4/3/2025
 ai-usage: ai-assisted
 ms.custom: https://github.com/dotnet/docs/issues/45548

@@ -15,7 +15,6 @@ helpviewer_keywords:
 topic_type:
   - "apiref"
 author: "davmason"
-ms.author: "davmason"
 ---
 # COR_PRF_REJIT_FLAGS enumeration
 
@@ -33,10 +32,10 @@ typedef enum
 
 ## Members
 
-|Member|Description|
+| Member | Description |
 |------------|-----------------|
-|`COR_PRF_REJIT_BLOCK_INLINING`| ReJITted methods will be blocked from being inlined in other methods. |
-|`COR_PRF_REJIT_INLINING_CALLBACKS`| Receive `GetFunctionParameters` callbacks for any methods that inline the methods requested to be ReJITted. |
+| `COR_PRF_REJIT_BLOCK_INLINING` | ReJITted methods will be blocked from being inlined in other methods. |
+| `COR_PRF_REJIT_INLINING_CALLBACKS` | Receive `GetFunctionParameters` callbacks for any methods that inline the methods requested to be ReJITted. |
 
 ## Requirements
 
@@ -46,4 +45,4 @@ typedef enum
 
  **Library:** CorGuids.lib
 
- **.NET Framework Versions:** Available since .NET Core 3.0
+ **.NET versions:** Available since .NET Core 3.0

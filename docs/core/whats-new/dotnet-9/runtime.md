@@ -3,7 +3,7 @@ title: What's new in .NET 9 runtime
 description: Learn about the new .NET features introduced in the .NET 9 runtime.
 titleSuffix: ""
 ms.date: 11/11/2024
-ms.topic: whats-new
+ms.update-cycle: 3650-days
 ---
 # What's new in the .NET 9 runtime
 
@@ -74,7 +74,7 @@ CET imposes some limitations on CET-enabled processes and can result in a small 
 
 ## .NET install search behavior
 
-.NET apps can now be configured for how they should [search for the .NET runtime](../../deploying/deploy-with-cli.md#configure-net-install-search-behavior). This capability can be used with private runtime installations or to more strongly control the execution environment.
+.NET apps can now be configured for how they should [search for the .NET runtime](../../deploying/index.md#configure-net-install-search-behavior). This capability can be used with private runtime installations or to more strongly control the execution environment.
 
 ## Performance improvements
 

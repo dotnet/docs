@@ -1,12 +1,13 @@
 ---
 title: ADO.NET database configuration
 description: Learn about ADO.NET database configurations in .NET Orleans.
-ms.date: 07/03/2024
+ms.date: 05/23/2025
+ms.topic: how-to
 ---
 
 # ADO.NET database configuration
 
-The following sections contain links to SQL scripts to configure your database as well as the corresponding ADO.NET invariant used to configure ADO.NET providers in Orleans. These scripts are intended to be customized if needed for your deployment. Before executing scripts for Clustering, Persistence, or Reminders, one needs to create main tables with the Main scripts.
+The following sections contain links to SQL scripts for configuring your database and the corresponding ADO.NET invariant used to configure ADO.NET providers in Orleans. Customize these scripts as needed for your deployment. Before executing scripts for Clustering, Persistence, or Reminders, you need to create the main tables using the Main scripts.
 
 ## Main scripts
 

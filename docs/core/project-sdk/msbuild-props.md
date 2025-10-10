@@ -1,7 +1,7 @@
 ---
 title: MSBuild properties for Microsoft.NET.Sdk
 description: Reference for the MSBuild properties and items that are understood by the .NET SDK.
-ms.date: 11/07/2024
+ms.date: 09/30/2025
 ms.topic: reference
 ms.custom: updateeachrelease
 ---
@@ -395,9 +395,9 @@ For example, for a .NET 5 app, the output path changes from `bin\Debug\net5.0` t
 
 ### AppendRuntimeIdentifierToOutputPath
 
-The `AppendRuntimeIdentifierToOutputPath` property controls whether the [runtime identifier (RID)](../rid-catalog.md) is appended to the output path. The .NET SDK automatically appends the target framework and, if present, the runtime identifier to the output path. Setting `AppendRuntimeIdentifierToOutputPath` to `false` prevents the RID from being appended to the output path.
+The `AppendRuntimeIdentifierToOutputPath` property controls whether the [runtime identifier (RID)](../rid-catalog.md) is appended to the output path. The .NET SDK automatically appends the target framework and, if present, the runtime identifier (RID) to the output path. Setting `AppendRuntimeIdentifierToOutputPath` to `false` prevents the RID from being appended to the output path. (However, the RID **is** still appended to the publish path. For more information, see [dotnet/sdk#12114](https://github.com/dotnet/sdk/issues/12114).)
 
-For example, for a .NET 5 app and an RID of `win-x64`, the following setting changes the output path from `bin\Debug\net5.0\win-x64` to `bin\Debug\net5.0`:
+For example, for a .NET 9 app and an RID of `win-x64`, the following setting changes the output path from `bin\Debug\net9.0\win-x64` to `bin\Debug\net9.0`:
 
 ```xml
 <PropertyGroup>
@@ -546,7 +546,7 @@ The `PublishRelease` property informs `dotnet publish` to use the `Release` conf
 
 ### PublishSelfContained
 
-The `PublishSelfContained` property informs `dotnet publish` to publish an app as a [self-contained app](../deploying/index.md#publish-self-contained). This property is useful when you can't use the `--self-contained` argument for the [dotnet publish](../tools/dotnet-publish.md) command&mdash;for example, when you're publishing at the solution level. In that case, you can add the `PublishSelfContained` MSBuild property to a project or *Directory.Build.Props* file.
+The `PublishSelfContained` property informs `dotnet publish` to publish an app as a [self-contained app](../deploying/index.md#self-contained-deployment). This property is useful when you can't use the `--self-contained` argument for the [dotnet publish](../tools/dotnet-publish.md) command&mdash;for example, when you're publishing at the solution level. In that case, you can add the `PublishSelfContained` MSBuild property to a project or *Directory.Build.Props* file.
 
 This property was introduced in .NET 7. It's similar to the [SelfContained](#selfcontained) property, except that it's specific to the `publish` verb. It's recommended to use `PublishSelfContained` instead of `SelfContained`.
 
@@ -626,7 +626,7 @@ The `SatelliteResourceLanguages` property lets you specify which languages you w
 
 ### SelfContained
 
-The `SelfContained` property informs `dotnet build` and `dotnet publish` to build or publish an app as a [self-contained app](../deploying/index.md#publish-self-contained). This property is useful when you can't use the `--self-contained` argument with the [dotnet](../tools/dotnet.md) command&mdash;for example, when you're publishing at the solution level. In that case, you can add the `SelfContained` MSBuild property to a project or *Directory.Build.Props* file.
+The `SelfContained` property informs `dotnet build` and `dotnet publish` to build or publish an app as a [self-contained app](../deploying/index.md#self-contained-deployment). This property is useful when you can't use the `--self-contained` argument with the [dotnet](../tools/dotnet.md) command&mdash;for example, when you're publishing at the solution level. In that case, you can add the `SelfContained` MSBuild property to a project or *Directory.Build.Props* file.
 
 This property is similar to the [PublishSelfContained](#publishselfcontained) property. It's recommended to use `PublishSelfContained` instead of `SelfContained` when possible.
 
@@ -679,8 +679,7 @@ The following MSBuild properties are documented in this section:
 - [OptimizeImplicitlyTriggeredBuild](#optimizeimplicitlytriggeredbuild)
 - [DisableRuntimeMarshalling](#disableruntimemarshalling)
 - [BuildWithNetFrameworkHostedCompiler](#buildwithnetframeworkhostedcompiler)
-- [RoslynUseSdkCompiler](#roslynusesdkcompiler)
-- [RoslynUseMSBuildCompiler](#roslynusemsbuildcompiler)
+- [RoslynCompilerType](#roslyncompilertype)
 
 C# compiler options, such as `LangVersion` and `Nullable`, can also be specified as MSBuild properties in your project file. For more information, see [C# compiler options](../../csharp/language-reference/compiler-options/index.md).
 
@@ -847,24 +846,17 @@ The `DisableRuntimeMarshalling` property enables you to specify that you would l
 
 ### BuildWithNetFrameworkHostedCompiler
 
-When using .NET Framework MSBuild, `BuildWithNetFrameworkHostedCompiler=true` ensures that
-a C#/VB compiler corresponding to the current SDK version is used
-instead of the default version that ships with MSBuild.
-When this property is set to `true`, the .NET Framework version of the compiler is used, unlike `RoslynUseSdkCompiler`.
-In some cases, this behavior happens automatically when it is detected that MSBuild and SDK versions are different,
-and then you can set `BuildWithNetFrameworkHostedCompiler=false` to opt out of the behavior.
+Specifying `BuildWithNetFrameworkHostedCompiler=true` is the equivalent of specifying `RoslynCompilerType=FrameworkPackage`. For more information, see [RoslynCompilerType](#roslyncompilertype).
+Specifying `BuildWithNetFrameworkHostedCompiler=false` ensures the automatic opt in to `RoslynCompilerType=FrameworkPackage` does not happen.
+If `RoslynCompilerType` is specified explicitly, `BuildWithNetFrameworkHostedCompiler` has no effect.
 
-### RoslynUseSdkCompiler
+### RoslynCompilerType
 
-When using .NET Framework MSBuild, `RoslynUseSdkCompiler=true` ensures that
-a C#/VB compiler corresponding to the current SDK version is used
-instead of the default version that ships with MSBuild.
-When this property is set to `true`, the .NET Core version of the compiler is used, unlike `BuildWithNetFrameworkHostedCompiler`.
-In most cases, `RoslynUseSdkCompiler=true` is the default setting.
+The `RoslynCompilerType` property controls the version of the C# or Visual Basic compiler. The following values are recognized:
 
-### RoslynUseMSBuildCompiler
-
-`RoslynUseMSBuildCompiler=true` can be used to opt out of an implicit `RoslynUseSdkCompiler=true`.
+- `Core`: Use the compiler that comes with the .NET SDK. This is the default since .NET 10, even when using .NET Framework MSBuild.
+- `Framework`: Use the compiler that comes with .NET Framework MSBuild.
+- `FrameworkPackage`: When using .NET Framework MSBuild, download and use a package with the .NET Framework compiler that corresponds to the .NET SDK version.
 
 ## Default item inclusion properties
 
@@ -1002,7 +994,7 @@ The following table shows the values you can specify.
 >
 > - If you set [EnforceCodeStyleInBuild](#enforcecodestyleinbuild) to `true`, this property affects [code-style (IDEXXXX) rules](../../fundamentals/code-analysis/style-rules/index.md) (in addition to code-quality rules).
 > - If you set a compound value for `AnalysisLevel`, you don't need to specify an [AnalysisMode](#analysismode). However, if you do, `AnalysisLevel` takes precedence over `AnalysisMode`.
-> - This property has no effect on code analysis in projects that don't reference a [project SDK](overview.md), for example, legacy .NET Framework projects that reference the Microsoft.CodeAnalysis.NetAnalyzers NuGet package.
+> - This property has no effect on code analysis in projects that don't reference a [project SDK](overview.md), for example, legacy .NET Framework projects that reference the Microsoft.CodeAnalysis.NetAnalyzers NuGet package. For more information, see [Enable code analysis in legacy projects](../../fundamentals/code-analysis/overview.md#enable-code-analysis-in-legacy-projects).
 
 ### AnalysisLevel\<Category>
 
@@ -1055,7 +1047,6 @@ The following table shows the available option values. They're listed in increas
 >
 > - If you set [EnforceCodeStyleInBuild](#enforcecodestyleinbuild) to `true`, this property affects [code-style (IDEXXXX) rules](../../fundamentals/code-analysis/style-rules/index.md) (in addition to code-quality rules).
 > - If you use a compound value for [AnalysisLevel](#analysislevel), for example, `<AnalysisLevel>9-recommended</AnalysisLevel>`, you can omit this property entirely. However, if you specify both properties, `AnalysisLevel` takes precedence over `AnalysisMode`.
-> - This property has no effect on code analysis in projects that don't reference a [project SDK](overview.md), for example, legacy .NET Framework projects that reference the Microsoft.CodeAnalysis.NetAnalyzers NuGet package.
 
 ### AnalysisMode\<Category>
 
@@ -1453,7 +1444,7 @@ The following MSBuild properties are documented in this section:
 
 Introduced in .NET 9, the `SdkAnalysisLevel` property can be used to configure how *strict* SDK tooling is. It helps you manage SDK warning levels in situations where you might not be able to pin SDKs via *global.json* or other means. You can use this property to tell a newer SDK to behave as if it were an older SDK, with regards to a specific tool or feature, without having to install the older SDK.
 
-The allowed values of this property are SDK feature bands, for example, 8.0.100 and 8.0.400. The value defaults to the SDK feature band of the running SDK. For example, for SDK 9.0.102, the value would be 9.0.100. (For information about how the .NET SDK is versioned, see [How .NET is versioned](../versions/index.md).)
+The allowed values of this property are SDK feature bands, for example, 8.0.100 and 8.0.400. The value defaults to the SDK feature band of the running SDK. For example, for SDK 9.0.102, the value to use is 9.0.100. (For information about how the .NET SDK is versioned, see [How .NET is versioned](../versions/index.md).)
 
 ```xml
 <PropertyGroup>
@@ -1463,34 +1454,36 @@ The allowed values of this property are SDK feature bands, for example, 8.0.100 
 
 For more information, see [SDK Analysis Level Property and Usage](https://github.com/dotnet/designs/blob/main/proposed/sdk-analysis-level.md).
 
-## Test project&ndash;related properties
+The following table summarizes the diagnostics and behaviors affected by `SDKAnalysisLevel`.
+
+| SDKAnalysisLevel | Description                     | Updated behavior |
+|------------------|---------------------------------|------------------|
+| 9.0.100          | Restore HTTP sources diagnostic | Emits [NU1302](/nuget/reference/errors-and-warnings/nu1302) error instead of [NU1803](/nuget/reference/errors-and-warnings/nu1803) warning. |
+| 10.0.100         | 'Restore' package pruning       | [PrunePackageReference](/nuget/consume-packages/package-references-in-project-files#prunepackagereference) is enabled by default for projects that target .NET 8+ or .NET Standard 2.0+. |
+| 10.0.100         | 'Restore' resolver with lock files | Uses improved, [.NET 9 dependency graph resolver](/nuget/consume-packages/package-references-in-project-files#nuget-dependency-resolver) instead of legacy dependency graph resolver (.NET 8 SDK and earlier). |
+| 10.0.100         | 'Restore' behavior for PackageReference without a version | Emits [NU1015](/nuget/reference/errors-and-warnings/nu1015) error instead of [NU1603](/nuget/reference/errors-and-warnings/nu1603) warning. |
+
+> [!NOTE]
+> The behavior enabled by the `SdkAnalysisLevel` value ages out (expires) after three major releases. For example, version 11.0.100 only respects values down to 8.0.100. In version 12.0.100, features that could, in previous versions, be disabled by setting an `SdkAnalysisLevel` value of 8.0.100 would no longer be disabled.
+
+## Microsoft.Testing.Platform&ndash;related properties
 
 The following MSBuild properties are documented in this section:
 
-- [IsTestProject](#istestproject)
 - [IsTestingPlatformApplication](#istestingplatformapplication)
 - [Enable\[NugetPackageNameWithoutDots\]](#enablenugetpackagenamewithoutdots)
 - [EnableAspireTesting](#enableaspiretesting)
-- [EnablePlaywright](#enableplaywright)
 - [EnableMSTestRunner](#enablemstestrunner)
 - [EnableNUnitRunner](#enablenunitrunner)
+- [EnablePlaywright](#enableplaywright)
+- [GenerateTestingPlatformConfigurationFile](#generatetestingplatformconfigurationfile)
 - [GenerateTestingPlatformEntryPoint](#generatetestingplatformentrypoint)
+- [TestingExtensionsProfile](#testingextensionsprofile)
 - [TestingPlatformCaptureOutput](#testingplatformcaptureoutput)
 - [TestingPlatformCommandLineArguments](#testingplatformcommandlinearguments)
 - [TestingPlatformDotnetTestSupport](#testingplatformdotnettestsupport)
 - [TestingPlatformShowTestsFailure](#testingplatformshowtestsfailure)
-- [TestingExtensionsProfile](#testingextensionsprofile)
-- [UseVSTest](#usevstest)
-- [MSTestAnalysisMode](#mstestanalysismode)
-
-### IsTestProject
-
-The `IsTestProject` property signifies that a project is a test project. When this property is set to `true`, validation to check if the project references a self-contained executable is disabled. That's because test projects have an `OutputType` of `Exe` but usually call APIs in a referenced executable rather than trying to run. In addition, if a project references a project where `IsTestProject` is set to `true`, the test project isn't validated as an executable reference.
-
-This property is mainly needed for the `dotnet test` scenario and has no impact when using *vstest.console.exe*.
-
-> [!NOTE]
-> If your project specifies the [MSTest SDK](../testing/unit-testing-mstest-sdk.md), you don't need to set this property. It's set automatically. Similarly, this property is set automatically for projects that reference the Microsoft.NET.Test.Sdk NuGet package linked to VSTest.
+- [UseMicrosoftTestingPlatformRunner](#usemicrosofttestingplatformrunner)
 
 ### IsTestingPlatformApplication
 
@@ -1535,6 +1528,10 @@ The `EnableMSTestRunner` property enables or disables the use of the [MSTest run
 
 The `EnableNUnitRunner` property enables or disables the use of the [NUnit runner](../testing/unit-testing-nunit-runner-intro.md). The NUnit runner is a lightweight and portable alternative to VSTest. This property is available in [NUnit3TestAdapter](https://www.nuget.org/packages/NUnit3TestAdapter) in version 5.0 and later.
 
+## UseMicrosoftTestingPlatformRunner
+
+The `UseMicrosoftTestingPlatformRunner` property enables or disables the use of Microsoft.Testing.Platform runner in [xUnit.v3](https://xunit.net) test projects.
+
 ### GenerateTestingPlatformEntryPoint
 
 Setting the `GenerateTestingPlatformEntryPoint` property to `false` disables the automatic generation of the program entry point in test projects that use [Microsoft.Testing.Platform](../testing/microsoft-testing-platform-intro.md). You might want to set this property to `false` when you manually define an entry point, or when you reference a test project from an executable that also has an entry point.
@@ -1542,6 +1539,10 @@ Setting the `GenerateTestingPlatformEntryPoint` property to `false` disables the
 For more information, see [error CS8892](../testing/microsoft-testing-platform-faq.md#error-cs8892-method-testingplatformentrypointmainstring-will-not-be-used-as-an-entry-point-because-a-synchronous-entry-point-programmainstring-was-found).
 
 To control the generation of the entry point in a VSTest project, use the `GenerateProgramFile` property.
+
+### GenerateTestingPlatformConfigurationFile
+
+The `GenerateTestingPlatformConfigurationFile` property is only available when [IsTestingPlatformApplication](#istestingplatformapplication) is `true`. It's used to allow the copy and rename of the [config file](../testing/microsoft-testing-platform-config.md) in the output folder.
 
 ### TestingPlatformCaptureOutput
 
@@ -1562,9 +1563,12 @@ The `TestingPlatformCaptureOutput` property lets you specify command-line argume
 
 ### TestingPlatformDotnetTestSupport
 
-The `TestingPlatformDotnetTestSupport` property lets you specify whether VSTest is used when you use `dotnet test` to run tests. If you set this property to `true`, VSTest is disabled and all `Microsoft.Testing.Platform` tests are run directly.
+The `TestingPlatformDotnetTestSupport` property enables testing Microsoft.Testing.Platform apps when using the VSTest mode of `dotnet test`.
 
-If you have a solution that contains VSTest test projects as well as MSTest, NUnit, or XUnit projects, you should make one call per mode (that is, `dotnet test` won't run tests from both VSTest and the newer platforms in one call).
+> [!NOTE]
+> Don't call `dotnet test` on a solution that has both VSTest and Microsoft.Testing.Platform projects, as that scenario is not supported.
+
+For more information, see [Testing with 'dotnet test'](../testing/unit-testing-with-dotnet-test.md).
 
 ### TestingPlatformShowTestsFailure
 
@@ -1582,9 +1586,29 @@ When you use the [MSTest project SDK](../testing/unit-testing-mstest-sdk.md), th
 
 For more information, see [Microsoft.Testing.Platform profile](../testing/unit-testing-mstest-sdk.md#microsofttestingplatform-profile).
 
+## VSTest&ndash;related properties
+
+The following MSBuild properties are documented in this section:
+
+- [IsTestProject](#istestproject)
+- [UseVSTest](#usevstest)
+
+### IsTestProject
+
+The `IsTestProject` property is set to `true` by the [Microsoft.NET.Test.Sdk NuGet package](https://www.nuget.org/packages/Microsoft.NET.Test.Sdk). It signifies whether a project is a VSTest test project so that it's recognized by `dotnet test`.
+
+> [!NOTE]
+> If your project specifies the [MSTest SDK](../testing/unit-testing-mstest-sdk.md), you don't need to set this property, as MSTest.Sdk references the Microsoft.NET.Test.Sdk NuGet package.
+
 ### UseVSTest
 
 Set the `UseVSTest` property to `true` to switch from Microsoft.Testing.Platform to the [VSTest](/visualstudio/test/vstest-console-options) runner when using the [MSTest project SDK](../testing/unit-testing-mstest-sdk.md).
+
+## MSTest&ndash;related properties
+
+The following MSBuild properties are documented in this section:
+
+- [MSTestAnalysisMode](#mstestanalysismode)
 
 ### MSTestAnalysisMode
 
@@ -1601,7 +1625,7 @@ The following MSBuild properties are documented in this section:
 
 ### AppHostDotNetSearch
 
-The `AppHostDotNetSearch` property configures how [the native executable](../deploying/index.md#produce-an-executable) produced for an application will search for a .NET installation. This property only impacts the executable produced on publish, not build.
+The `AppHostDotNetSearch` property configures how [the native executable](../deploying/index.md#configure-net-install-search-behavior) produced for an application will search for a .NET installation. This property only impacts the executable produced on publish, not build.
 
 ```xml
 <PropertyGroup>
@@ -1615,7 +1639,7 @@ The following table lists valid values. You can specify multiple values, separat
 | --- | --- |
 | `AppLocal` | App executable's folder |
 | `AppRelative` | Path relative to the app executable as specified by [AppHostRelativeDotNet](#apphostrelativedotnet) |
-| `EnvironmentVariables` | Value of [`DOTNET_ROOT[_<arch>]`](../tools/dotnet-environment-variables.md#dotnet_root-dotnet_rootx86-dotnet_root_x86-dotnet_root_x64) environment variables |
+| `EnvironmentVariable` | Value of [`DOTNET_ROOT[_<arch>]`](../tools/dotnet-environment-variables.md#dotnet_root-dotnet_rootx86-dotnet_root_x86-dotnet_root_x64) environment variables |
 | `Global` | [Registered](https://github.com/dotnet/designs/blob/main/accepted/2020/install-locations.md#global-install-to-custom-location) and [default](https://github.com/dotnet/designs/blob/main/accepted/2020/install-locations.md#global-install-to-default-location) global install locations |
 
 This property was introduced in .NET 9.

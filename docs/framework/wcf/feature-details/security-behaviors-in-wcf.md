@@ -2,6 +2,7 @@
 description: "Learn more about: Security Behaviors in WCF"
 title: "Security Behaviors in WCF"
 ms.date: "03/30/2017"
+ms.custom: sfi-ropc-nochange
 ---
 # Security Behaviors in WCF
 
@@ -61,7 +62,7 @@ This article focuses on configuring the following behaviors related to security 
 
 ### \<issuedTokenAuthentication> Element
 
- The issued token scenario has three stages. In the first stage, a client trying to access a service is referred to a *secure token service* (STS). The STS then authenticates the client and subsequently issues the client a token, typically a Security Assertions Markup Language (SAML) token. The client then returns to the service with the token. The service examines the token for data that allows the service to authenticate the token and therefore the client. To authenticate the token, the certificate that the secure token service uses must be known to the service. The [\<issuedTokenAuthentication>](../../configure-apps/file-schema/wcf/issuedtokenauthentication-of-servicecredentials.md) element is the repository for any such secure token service certificates. To add certificates, use the [\<knownCertificates>](../../configure-apps/file-schema/wcf/knowncertificates.md). Insert an [\<add>](../../configure-apps/file-schema/wcf/add-of-knowncertificates.md) for each certificate, as shown in the following example.
+ The issued token scenario has three stages. In the first stage, a client trying to access a service is referred to a *security token service* (STS). The STS then authenticates the client and subsequently issues the client a token, typically a Security Assertions Markup Language (SAML) token. The client then returns to the service with the token. The service examines the token for data that allows the service to authenticate the token and therefore the client. To authenticate the token, the certificate that the secure token service uses must be known to the service. The [\<issuedTokenAuthentication>](../../configure-apps/file-schema/wcf/issuedtokenauthentication-of-servicecredentials.md) element is the repository for any such secure token service certificates. To add certificates, use the [\<knownCertificates>](../../configure-apps/file-schema/wcf/knowncertificates.md). Insert an [\<add>](../../configure-apps/file-schema/wcf/add-of-knowncertificates.md) for each certificate, as shown in the following example.
 
 ```xml
 <issuedTokenAuthentication>
@@ -75,7 +76,7 @@ This article focuses on configuring the following behaviors related to security 
 
  By default, the certificates must be obtained from a secure token service. These "known" certificates ensure that only legitimate clients can access a service.
 
- You should use the [\<allowedAudienceUris>](../../configure-apps/file-schema/wcf/allowedaudienceuris.md) collection in a federated application that utilizes a *secure token service* (STS) that issues `SamlSecurityToken` security tokens. When the STS issues the security token, it can specify the URI of the Web services for which the security token is intended by adding a `SamlAudienceRestrictionCondition` to the security token. That allows the `SamlSecurityTokenAuthenticator` for the recipient Web service to verify that the issued security token is intended for this Web service by specifying that this check should happen by doing the following:
+ You should use the [\<allowedAudienceUris>](../../configure-apps/file-schema/wcf/allowedaudienceuris.md) collection in a federated application that utilizes a *security token service* (STS) that issues `SamlSecurityToken` security tokens. When the STS issues the security token, it can specify the URI of the Web services for which the security token is intended by adding a `SamlAudienceRestrictionCondition` to the security token. That allows the `SamlSecurityTokenAuthenticator` for the recipient Web service to verify that the issued security token is intended for this Web service by specifying that this check should happen by doing the following:
 
 - Set the `audienceUriMode` attribute of [\<issuedTokenAuthentication>](../../configure-apps/file-schema/wcf/issuedtokenauthentication-of-servicecredentials.md) to `Always` or `BearerKeyOnly`.
 

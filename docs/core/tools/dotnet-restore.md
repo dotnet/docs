@@ -1,11 +1,11 @@
 ---
 title: dotnet restore command
 description: Learn how to restore dependencies and project-specific tools with the dotnet restore command.
-ms.date: 07/19/2023
+ms.date: 09/29/2025
 ---
 # dotnet restore
 
-**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
+**This article applies to:** ✔️ .NET 6 SDK and later versions
 
 ## Name
 
@@ -14,14 +14,15 @@ ms.date: 07/19/2023
 ## Synopsis
 
 ```dotnetcli
-dotnet restore [<ROOT>] [--configfile <FILE>] [--disable-build-servers]
-    [--disable-parallel]
-    [-f|--force] [--force-evaluate] [--ignore-failed-sources]
-    [--interactive] [--lock-file-path <LOCK_FILE_PATH>] [--locked-mode]
-    [--no-cache] [--no-dependencies] [--packages <PACKAGES_DIRECTORY>]
-    [-r|--runtime <RUNTIME_IDENTIFIER>] [-s|--source <SOURCE>]
-    [--tl:[auto|on|off]] [--use-current-runtime, --ucr [true|false]]
-    [--use-lock-file] [-v|--verbosity <LEVEL>]
+dotnet restore [<PROJECT>|<SOLUTION>|<FILE>]
+  [-a|--arch <ARCHITECTURE>] [--configfile <FILE>] [--disable-build-servers]
+  [--disable-parallel] [-f|--force] [--force-evaluate]
+  [--ignore-failed-sources] [--interactive] [--lock-file-path <LOCK_FILE_PATH>]
+  [--locked-mode] [--no-dependencies] [--no-http-cache]
+  [--os <OS>] [--packages <PACKAGES_DIRECTORY>]
+  [-r|--runtime <RUNTIME_IDENTIFIER>] [-s|--source <SOURCE>]
+  [--tl:[auto|on|off]] [--ucr|--use-current-runtime] [--use-lock-file]
+  [-v|--verbosity <LEVEL>]
 
 dotnet restore -h|--help
 ```
@@ -86,9 +87,7 @@ There are three specific settings that `dotnet restore` ignores:
 
 ## Arguments
 
-- **`ROOT`**
-
-  Optional path to the project file to restore.
+[!INCLUDE [arguments-project-solution-file](../../../includes/cli-arguments-project-solution-file.md)]
 
 ## Options
 
@@ -110,8 +109,6 @@ There are three specific settings that `dotnet restore` ignores:
 
   Forces restore to reevaluate all dependencies even if a lock file already exists.
 
-[!INCLUDE [help](../../../includes/cli-help.md)]
-
 - **`--ignore-failed-sources`**
 
   Only warn about failed sources if there are packages meeting the version requirement.
@@ -126,13 +123,19 @@ There are three specific settings that `dotnet restore` ignores:
 
   Don't allow updating project lock file.
 
-- **`--no-cache`**
-
-  Specifies to not cache HTTP requests.
-
 - **`--no-dependencies`**
 
   When restoring a project with project-to-project (P2P) references, restores the root project and not the references.
+
+- **`--no-http-cache`**
+
+  Disable HTTP caching for packages.
+
+- **`--os`**
+
+  Specifies the target operating system (OS). This is a shorthand syntax for setting the Runtime Identifier (RID), where the provided value is combined with the default RID. For example, on a `win-x64` machine, specifying `--os linux` sets the RID to `linux-x64`.
+
+  Introduced in .NET SDK 10.0.100
 
 - **`--packages <PACKAGES_DIRECTORY>`**
 
@@ -146,17 +149,17 @@ There are three specific settings that `dotnet restore` ignores:
 
   Specifies the URI of the NuGet package source to use during the restore operation. This setting overrides all of the sources specified in the *nuget.config* files. Multiple sources can be provided by specifying this option multiple times.
 
-[!INCLUDE [tl](../../../includes/cli-tl.md)]
-
-- **`--use-current-runtime, --ucr [true|false]`**
-
-  Sets the `RuntimeIdentifier` to a platform portable `RuntimeIdentifier` based on the one of your machine. This happens implicitly with properties that require a `RuntimeIdentifier`, such as `SelfContained`, `PublishAot`, `PublishSelfContained`, `PublishSingleFile`, and `PublishReadyToRun`. If the property is set to false, that implicit resolution will no longer occur.
+[!INCLUDE [use-current-runtime](../../../includes/cli-use-current-runtime.md)]
 
 - **`--use-lock-file`**
 
   Enables project lock file to be generated and used with restore.
 
+[!INCLUDE [tl](../../../includes/cli-tl.md)]
+
 [!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
+
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
 ## Examples
 
@@ -172,19 +175,19 @@ There are three specific settings that `dotnet restore` ignores:
   dotnet restore ./projects/app1/app1.csproj
   ```
 
-- Restore the dependencies and tools for the project in the current   directory using the file path provided as the source:
+- Restore the dependencies and tools for the project in the current directory using the file path provided as the source:
 
   ```dotnetcli
   dotnet restore -s c:\packages\mypackages
   ```
 
-- Restore the dependencies and tools for the project in the current   directory using the two file paths provided as sources:
+- Restore the dependencies and tools for the project in the current directory using the two file paths provided as sources:
 
   ```dotnetcli
   dotnet restore -s c:\packages\mypackages -s c:\packages\myotherpackages
   ```
 
-- Restore dependencies and tools for the project in the current directory   showing detailed output:
+- Restore dependencies and tools for the project in the current directory showing detailed output:
 
   ```dotnetcli
   dotnet restore --verbosity detailed
@@ -206,6 +209,6 @@ To retrieve the known vulnerability dataset, ensure that you have the NuGet.org 
 
 You can configure the level at which auditing will fail by setting the `<NuGetAuditLevel>` MSBuild property. Possible values are `low`, `moderate`, `high`, and `critical`. For example if you only want to see moderate, high, and critical advisories, you can set the property to `moderate`.
 
-Starting in .NET 9, NuGet audits both *direct* and *transitive* package references, by default. In .NET 8, only *direct* package references are audited. You can change the mode by setting the `<NuGetAuditMode>` MSBuild property to `direct` or `all`.
+In .NET 8 and .NET 9, only *direct* package references are audited by default. Starting in .NET 10, NuGet audits both *direct* and *transitive* package references by default. You can change the mode by setting the `<NuGetAuditMode>` MSBuild property to `direct` or `all`.
 
 For more information, see [Auditing package dependencies for security vulnerabilities](/nuget/concepts/auditing-packages).

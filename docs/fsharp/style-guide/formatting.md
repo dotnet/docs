@@ -1,7 +1,7 @@
 ---
 title: F# code formatting guidelines
 description: Learn guidelines for formatting F# code.
-ms.date: 11/01/2023
+ms.date: 10/02/2025
 ---
 # F# code formatting guidelines
 
@@ -395,6 +395,30 @@ let methods2 = System.AppDomain.CurrentDomain.GetAssemblies()
                |> Array.concat
 ```
 
+For reverse pipeline `<|` operators, keep short expressions on a single line. When line length requires wrapping, place arguments on new lines and align them consistently:
+
+```fsharp
+// ✔️ OK - short expressions stay on one line
+let result = someFunction <| arg1 <| arg2 <| arg3
+
+// ✔️ OK - longer expressions can wrap when necessary
+failwith
+<| sprintf "A very long error message that exceeds reasonable line length: %s - additional details: %s"
+    longVariableName
+    anotherLongVariableName
+
+// ✔️ OK - align continuation lines with the operator
+let longResult =
+    someVeryLongFunctionName
+    <| firstVeryLongArgumentName
+    <| secondVeryLongArgumentName
+    <| thirdVeryLongArgumentName
+
+// ❌ Not OK - unnecessary wrapping of short expressions
+failwith <| sprintf "short: %s"
+                    value
+```
+
 ### Formatting lambda expressions
 
 When a lambda expression is used as an argument in a multi-line expression, and is followed by other arguments,
@@ -515,6 +539,41 @@ let useAddEntry () =
         bar ()
 ```
 
+### Formatting lazy expressions
+
+When writing single-line lazy expressions, keep everything on one line:
+
+```fsharp
+// ✔️ OK
+let x = lazy (computeValue())
+
+// ✔️ OK  
+let y = lazy (a + b)
+```
+
+For multiline lazy expressions, place the opening parenthesis on the same line as the `lazy` keyword, with the expression body indented one level and the closing parenthesis aligned with the opening:
+
+```fsharp
+// ✔️ OK
+let v =
+    lazy (
+        // some code
+        let x = computeExpensiveValue()
+        let y = computeAnotherValue()
+        x + y
+    )
+
+// ✔️ OK
+let handler =
+    lazy (
+        let connection = openConnection()
+        let data = fetchData connection
+        processData data
+    )
+```
+
+This follows the same pattern as other function applications with multiline arguments. The opening parenthesis stays with `lazy`, and the expression is indented one level.
+
 ### Formatting arithmetic and binary expressions
 
 Always use white space around binary arithmetic expressions:
@@ -571,6 +630,7 @@ The following operators are defined in the F# standard library and should be use
 ```fsharp
 // ✔️ OK
 x |> f // Forward pipeline
+f <| x // Reverse pipeline
 f >> g // Forward composition
 x |> ignore // Discard away a value
 x + y // Overloaded addition (including string concatenation)

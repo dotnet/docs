@@ -27,11 +27,11 @@ typedef struct
 
 ## Members
 
-|Member|Description|
+| Member | Description |
 |------------|-----------------|
-|`ptr`|A pointer to the data.|
-|`size`|The size of the data pointed to by `ptr`.|
-|`reserved`|An reserved implementation specific field.|
+| `ptr` | A pointer to the data. |
+| `size` | The size of the data pointed to by `ptr`. |
+| `reserved` | An reserved implementation specific field. |
 
 ## Remarks
 

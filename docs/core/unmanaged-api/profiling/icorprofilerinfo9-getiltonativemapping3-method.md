@@ -11,7 +11,6 @@ api_location:
 api_type:
   - "COM"
 author: "davmason"
-ms.author: "davmason"
 ---
 # ICorProfilerInfo9::GetILToNativeMapping3 method
 
@@ -38,7 +37,7 @@ HRESULT GetILToNativeMapping3( [in]  UINT_PTR pNativeCodeStartAddress,
 [out] The total number of available COR_DEBUG_IL_TO_NATIVE_MAP structures.
 
 `map`\
-[out] An array of [COR_DEBUG_IL_TO_NATIVE_MAP](../../../framework/unmanaged-api/debugging/cor-debug-il-to-native-map-structure.md) structures, each of which specifies the offsets. After the `GetILToNativeMapping3` method returns, `map` will contain some or all of the `COR_DEBUG_IL_TO_NATIVE_MAP` structures.
+[out] An array of [COR_DEBUG_IL_TO_NATIVE_MAP](../debugging/icordebug/cor-debug-il-to-native-map-structure.md) structures, each of which specifies the offsets. After the `GetILToNativeMapping3` method returns, `map` will contain some or all of the `COR_DEBUG_IL_TO_NATIVE_MAP` structures.
 
 ## Remarks
 
@@ -52,7 +51,7 @@ When tiered compilation is enabled, a method may have more than one native code 
 
 **Library:** CorGuids.lib
 
-**.NET Framework Versions:** Available since .NET Core 2.1
+**.NET versions:** Available since .NET Core 2.1
 
 ## See also
 

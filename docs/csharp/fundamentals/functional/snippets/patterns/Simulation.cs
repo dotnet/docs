@@ -57,11 +57,11 @@ class Simulation
     string WaterState(int tempInFahrenheit) =>
         tempInFahrenheit switch
         {
-            (> 32) and (< 212) => "liquid",
             < 32 => "solid",
-            > 212 => "gas",
             32 => "solid/liquid transition",
+            (> 32) and (< 212) => "liquid",
             212 => "liquid / gas transition",
+            > 212 => "gas",
         };
     // </RelationalPattern>
 

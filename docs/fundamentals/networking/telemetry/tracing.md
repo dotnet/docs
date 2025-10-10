@@ -1,8 +1,7 @@
 ---
 title: Networking tracing
-description: Learn how to consume .NET networking Tracing.
+description: Learn how to consume .NET networking tracing.
 author: samsp-msft
-ms.author: samsp
 ms.date: 10/4/2024
 ---
 

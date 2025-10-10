@@ -22,10 +22,12 @@ C# supports an [`unsafe`](keywords/unsafe.md) context, in which you can write *u
 Unsafe code has the following properties:
 
 - Methods, types, and code blocks can be defined as unsafe.
-- In some cases, unsafe code can increase an application's performance by removing array bounds checks.
+- In some cases, unsafe code can increase an application's performance by enabling direct memory access through pointers to avoid array bounds checks.
 - Unsafe code is required when you call native functions that require pointers.
 - Using unsafe code introduces security and stability risks.
 - The code that contains unsafe blocks must be compiled with the [**AllowUnsafeBlocks**](compiler-options/language.md#allowunsafeblocks) compiler option.
+
+For information about best practices for unsafe code in C#, see [Unsafe code best practices](../../standard/unsafe-code/best-practices.md).
 
 ## Pointer types
 
@@ -148,8 +150,8 @@ internal struct Buffer
 
 Fixed-size buffers differ from regular arrays in the following ways:
 
-- May only be used in an `unsafe` context.
-- May only be instance fields of structs.
+- Can only be used in an `unsafe` context.
+- Can only be instance fields of structs.
 - They're always vectors, or one-dimensional arrays.
 - The declaration should include the length, such as `fixed char id[8]`. You can't use `fixed char id[]`.
 
@@ -179,7 +181,7 @@ The preceding code illustrates several of the rules on the function accessed as 
 
 - Function pointers can only be declared in an `unsafe` context.
 - Methods that take a `delegate*` (or return a `delegate*`) can only be called in an `unsafe` context.
-- The `&` operator to obtain the address of a function is allowed only on `static` functions. (This rule applies to both member functions and local functions).
+- The `&` operator to obtain the address of a function is allowed only on `static` functions. (This rule applies to both member functions and local functions.)
 
 The syntax has parallels with declaring `delegate` types and using pointers. The `*` suffix on `delegate` indicates the declaration is a *function pointer*. The `&` when assigning a method group to a function pointer indicates the operation takes the address of the method.
 
@@ -192,3 +194,7 @@ You can learn more about function pointers in the [Function pointer](~/_csharpla
 ## C# language specification
 
 For more information, see the [Unsafe code](~/_csharpstandard/standard/unsafe-code.md) chapter of the [C# language specification](~/_csharpstandard/standard/README.md).
+
+## See also
+
+- [Unsafe code best practices](../../standard/unsafe-code/best-practices.md)

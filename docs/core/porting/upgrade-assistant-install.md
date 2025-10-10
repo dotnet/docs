@@ -14,6 +14,8 @@ ms.date: 10/08/2024
 
 This article teaches you how to install .NET Upgrade Assistant using either the Visual Studio extension or the command-line interface (CLI) tool.
 
+[!INCLUDE [github-copilot-suggestion](includes/github-copilot-suggestion.md)]
+
 ## Prerequisites
 
 - Windows Operating System

@@ -19,6 +19,8 @@ items:
       href: tour-of-csharp/tutorials/branches-and-loops.md
     - name: List collections
       href: tour-of-csharp/tutorials/list-collection.md
+    - name: Pattern matching
+      href: tour-of-csharp/tutorials/pattern-matching.md
   - name: C# language strategy
     href: tour-of-csharp/strategy.md
   - name: Learn C# for Java developers
@@ -106,6 +108,8 @@ items:
       href: fundamentals/coding-style/coding-conventions.md
   - name: Tutorials
     items:
+    - name: Build file-based apps
+      href: fundamentals/tutorials/file-based-programs.md
     - name: "How to display command-line arguments"
       href: fundamentals/tutorials/how-to-display-command-line-arguments.md
       # TODO: Command line processing tutorials
@@ -170,6 +174,10 @@ items:
     href: whats-new/version-update-considerations.md
   - name: Tutorials
     items:
+    - name: Explore extension members
+      href: whats-new/tutorials/extension-members.md
+    - name: Explore compound assignment
+      href: whats-new/tutorials/compound-assignment-operators.md
     - name: Explore primary constructors
       href: whats-new/tutorials/primary-constructors.md
     - name: Explore static interface members
@@ -184,13 +192,9 @@ items:
     href: tutorials/ranges-indexes.md
   - name: Work with nullable reference types
     href: tutorials/nullable-reference-types.md
-  - name: Explore string interpolation - interactive
-    href: tutorials/exploration/interpolated-strings.yml
-  - name: Explore string interpolation - in your environment
-    href: tutorials/exploration/interpolated-strings-local.md
   - name: Explore patterns in objects
     href: tutorials/patterns-objects.md
-  - name: Advanced scenarios for string Interpolation
+  - name: String interpolation
     href: tutorials/string-interpolation.md
   - name: Console Application
     href: tutorials/console-teleprompter.md

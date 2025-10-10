@@ -123,7 +123,7 @@ Here, you create a file and copy it to a blob within the same storage account. Y
 
 You can copy a blob to a file in the same way. If the source object is a blob, then create a SAS to authenticate access to that blob during the copy operation.
 
-## Troubleshooting File storage using metrics
+## Troubleshoot File storage using metrics
 
 Azure Storage Analytics supports metrics for File storage. With metrics data, you can trace requests and diagnose issues.
 
@@ -137,7 +137,6 @@ For more information about Azure Files, see these links.
 
 ### Conceptual articles and videos
 
-- [Azure Files Storage: a frictionless cloud SMB file system for Windows and Linux](https://azure.microsoft.com/resources/videos/azurecon-2015-azure-files-storage-a-frictionless-cloud-smb-file-system-for-windows-and-linux/)
 - [How to use Azure Files with Linux](/azure/storage/storage-how-to-use-files-linux)
 
 ### Tooling support for File storage

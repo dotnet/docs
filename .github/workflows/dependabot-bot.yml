@@ -26,11 +26,11 @@ jobs:
     # Checkout the repo into the workspace within the VM
     steps:
       - name: Harden Runner
-        uses: step-security/harden-runner@c6295a65d1254861815972266d5933fd6e532bdf # v2.11.1
+        uses: step-security/harden-runner@f4a75cfd619ee5ce8d5b864b0d183aff3c69b55a # v2.13.1
         with:
           egress-policy: audit
 
-      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
       # - name: Setup .NET
       #   uses: actions/setup-dotnet@4d4a70f4a5b2a5a5329f13be4ac933f2c9206ac0
       #   with:

@@ -408,7 +408,7 @@ public abstract class BaseSpecification<T> : ISpecification<T>
     }
 
     // string-based includes allow for including children of children
-    // e.g. Basket.Items.Product
+    // for example, Basket.Items.Product
     protected virtual void AddInclude(string includeString)
     {
         IncludeStrings.Add(includeString);

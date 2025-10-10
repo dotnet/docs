@@ -14,7 +14,6 @@ ms.topic: how-to
 dev_langs:
   - "csharp"
   - "vb"
-  - "cpp"
 ---
 # How to: View assembly contents
 
@@ -31,24 +30,6 @@ To view assembly manifest information, double-click the **Manifest** icon in the
 ## Example
 
 The following example starts with a basic "Hello World" program. After compiling the program, use *Ildasm.exe* to disassemble the *Hello.exe* assembly and view the assembly manifest.
-
-```cpp
-using namespace System;
-
-class MainApp
-{
-public:
-    static void Main()
-    {
-        Console::WriteLine("Hello World using C++/CLI!");
-    }
-};
-
-int main()
-{
-    MainApp::Main();
-}
-```
 
 ```csharp
 using System;

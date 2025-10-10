@@ -5,7 +5,6 @@ ms.date: "03/30/2017"
 dev_langs:
   - "csharp"
   - "vb"
-  - "cpp"
 helpviewer_keywords:
   - "data stores, quotas"
   - "isolated storage, quotas"
@@ -21,7 +20,6 @@ helpviewer_keywords:
   - "quotas for isolated storage"
   - "isolated storage, out of space conditions"
   - "data storage using isolated storage, out of space conditions"
-ms.assetid: e35d4535-3732-421e-b1a3-37412e036145
 ---
 
 # How to: Anticipate Out-of-Space Conditions with Isolated Storage
@@ -35,8 +33,6 @@ The <xref:System.IO.IsolatedStorage.IsolatedStorage.Quota%2A> property depends o
 ## Example
 
 The following code example obtains an isolated store, creates a few files, and retrieves the <xref:System.IO.IsolatedStorage.IsolatedStorage.AvailableFreeSpace%2A> property. The remaining space is reported in bytes.
-
-[!code-cpp[Conceptual.IsolatedStorage#8](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.isolatedstorage/cpp/source7.cpp#8)]
 [!code-csharp[Conceptual.IsolatedStorage#8](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.isolatedstorage/cs/source7.cs#8)]
 [!code-vb[Conceptual.IsolatedStorage#8](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.isolatedstorage/vb/source7.vb#8)]
 

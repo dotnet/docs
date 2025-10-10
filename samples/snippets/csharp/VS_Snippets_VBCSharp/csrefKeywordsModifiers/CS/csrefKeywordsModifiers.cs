@@ -345,8 +345,8 @@ namespace csrefKeywordsModifiers
             var a = new A();
             var b = new B();
 
-            // Error CS1540, because x can only be accessed by
-            // classes derived from A.
+            // Error CS1540, because x can only be accessed through
+            // the derived class type, not through the base class type.
             // a.x = 10;
 
             // OK, because this class derives from A.
@@ -785,7 +785,7 @@ namespace csrefKeywordsModifiers
             protected Shape(string color)
             {
                 Color = color;
-                Console.WriteLine("Created a shape with color {color}.");
+                Console.WriteLine($"Created a shape with color {color}.");
             }
 
             // Abstract method that must be implemented by derived classes
@@ -813,7 +813,7 @@ namespace csrefKeywordsModifiers
             public static void Main(string[] args)
              {
                     Square square = new Square("red", 5);
-                    Console.WriteLine("Area of the square: {square.CalculateArea()}");            
+                    Console.WriteLine($"Area of the square: {square.CalculateArea()}");            
              }
         }
         //</snippet27>

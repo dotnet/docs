@@ -12,7 +12,7 @@ namespace QuotedNumbers
 
     public class Program
     {
-        public static void Main()
+        public static void Run()
         {
             Forecast forecast = new()
             {

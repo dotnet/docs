@@ -1,4 +1,7 @@
-﻿Class Class072b9cf6629846f1849e4edc1631564c
+﻿Imports System.Windows.Forms
+Imports System.Data
+
+Class Class072b9cf6629846f1849e4edc1631564c
     ' WithEvents and the Handles Clause
 
     ' <snippet1>
@@ -154,56 +157,46 @@ Class Class306ff8ed74dd4b6abd2fe91b17474042
     End Class
     ' </snippet13>
 
+    ' <snippet14>
+    Public Class TimerExample
+        Private WithEvents mTimer As TimerState
+        ' </snippet14>
+
+        ' <snippet15>
+        Public Sub StartCountdownExample()
+            mTimer = New TimerState()
+            mTimer.StartCountdown(10.0, 1.0)
+        End Sub
+
+        Private Sub mTimer_UpdateTime(ByVal Countdown As Double) Handles mTimer.UpdateTime
+            Console.WriteLine("Time remaining: " & Format(Countdown, "##0.0") & " seconds")
+        End Sub
+
+        Private Sub mTimer_Finished() Handles mTimer.Finished
+            Console.WriteLine("Done")
+        End Sub
+    End Class
+
+    Public Class TimerState
+        Public Event UpdateTime(ByVal Countdown As Double)
+        Public Event Finished()
+        Public Sub StartCountdown(ByVal Duration As Double,
+                                  ByVal Increment As Double)
+            Dim SoFar As Double = 0
+            Do While SoFar < Duration
+                System.Threading.Thread.Sleep(CInt(Increment * 1000))
+                SoFar += Increment
+                RaiseEvent UpdateTime(Duration - SoFar)
+            Loop
+            RaiseEvent Finished()
+        End Sub
+    End Class
+    ' </snippet15>
+
     Class Form1
         Inherits Form
         Private WithEvents Button1 As New Button
         Private WithEvents TextBox1 As New TextBox
-
-        ' <snippet14>
-        Private WithEvents mText As TimerState
-        ' </snippet14>
-
-        ' <snippet15>
-        Private Sub Form1_Load() Handles MyBase.Load
-            Button1.Text = "Start"
-            mText = New TimerState
-        End Sub
-        Private Sub Button1_Click() Handles Button1.Click
-            mText.StartCountdown(10.0, 0.1)
-        End Sub
-
-        Private Sub mText_ChangeText() Handles mText.Finished
-            TextBox1.Text = "Done"
-        End Sub
-
-        Private Sub mText_UpdateTime(ByVal Countdown As Double
-          ) Handles mText.UpdateTime
-
-            TextBox1.Text = Format(Countdown, "##0.0")
-            ' Use DoEvents to allow the display to refresh.
-            My.Application.DoEvents()
-        End Sub
-
-        Class TimerState
-            Public Event UpdateTime(ByVal Countdown As Double)
-            Public Event Finished()
-            Public Sub StartCountdown(ByVal Duration As Double,
-                                      ByVal Increment As Double)
-                Dim Start As Double = DateAndTime.Timer
-                Dim ElapsedTime As Double = 0
-
-                Dim SoFar As Double = 0
-                Do While ElapsedTime < Duration
-                    If ElapsedTime > SoFar + Increment Then
-                        SoFar += Increment
-                        RaiseEvent UpdateTime(Duration - SoFar)
-                    End If
-                    ElapsedTime = DateAndTime.Timer - Start
-                Loop
-                RaiseEvent Finished()
-            End Sub
-        End Class
-        ' </snippet15>
 
     End Class
 End Class
@@ -225,35 +218,72 @@ Class Class647cd825e8774910b4f18d168beebe6a
     ' AddHandler Statement
 
     ' <snippet17>
-    Sub TestEvents()
+    Public Class DataBindingExample
+        Private textBox1 As TextBox
+        Private ds As DataSet
+        
+        Public Sub New()
+            textBox1 = New TextBox()
+            ds = New DataSet()
+            SetupSampleData()
+            BindControlWithAddHandler()
+        End Sub
+        
+        Private Sub SetupSampleData()
+            Dim table As New DataTable("Orders")
+            table.Columns.Add("OrderAmount", GetType(Decimal))
+            table.Rows.Add(123.45D)
+            table.Rows.Add(67.89D)
+            ds.Tables.Add(table)
+        End Sub
+        
+        Private Sub BindControlWithAddHandler()
+            Dim binding As New Binding("Text", ds, "Orders.OrderAmount")
+            
+            ' Use AddHandler to associate ConvertEventHandler delegates
+            AddHandler binding.Format, AddressOf DecimalToCurrency
+            AddHandler binding.Parse, AddressOf CurrencyToDecimal
+            
+            textBox1.DataBindings.Add(binding)
+        End Sub
+        
+        Private Sub DecimalToCurrency(ByVal sender As Object, ByVal e As ConvertEventArgs)
+            If e.DesiredType IsNot GetType(String) Then
+                Return
+            End If
+            e.Value = CDec(e.Value).ToString("c")
+        End Sub
+        
+        Private Sub CurrencyToDecimal(ByVal sender As Object, ByVal e As ConvertEventArgs)
+            If e.DesiredType IsNot GetType(Decimal) Then
+                Return
+            End If
+            e.Value = Convert.ToDecimal(e.Value.ToString())
+        End Sub
+    End Class
+    
+    ' Simple example for basic AddHandler usage
+    Sub TestBasicEvents()
         Dim Obj As New Class1
-        ' Associate an event handler with an event.
         AddHandler Obj.Ev_Event, AddressOf EventHandler
-        ' Call the method to raise the event.
         Obj.CauseSomeEvent()
-        ' Stop handling events.
         RemoveHandler Obj.Ev_Event, AddressOf EventHandler
-        ' This event will not be handled.
         Obj.CauseSomeEvent()
-        ' Associate an event handler with an event, using a lambda.
-        ' This handler cannot be removed.
+        
+        ' Lambda expression example
         AddHandler Obj.Ev_Event, Sub ()
             MsgBox("Lambda caught event.")
         End Sub
-        ' This event will be handled by the lambda above.
         Obj.CauseSomeEvent()
     End Sub
 
     Sub EventHandler()
-        ' Handle the event.
         MsgBox("EventHandler caught event.")
     End Sub
 
     Public Class Class1
-        ' Declare an event.
         Public Event Ev_Event()
         Sub CauseSomeEvent()
-            ' Raise an event.
             RaiseEvent Ev_Event()
         End Sub
     End Class

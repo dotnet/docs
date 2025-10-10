@@ -271,7 +271,7 @@ Below is the example *coverage.cobertura.xml* file.
 > ```
 >
 > The resulting *coverage.cobertura.xml* file is output.
-> You can follow MSBuild integration guide [here](https://github.com/coverlet-coverage/coverlet/blob/master/Documentation/MSBuildIntegration.md)
+> For more information, see [Coverlet integration with MSBuild](https://github.com/coverlet-coverage/coverlet/blob/master/Documentation/MSBuildIntegration.md)
 
 ## Generate reports
 

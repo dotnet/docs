@@ -6,7 +6,7 @@ labels:
   - Pri1
   - doc-idea
 assignees:
- - camsoper
+ - gewarren
 body:
   - type: textarea
     id: description
@@ -23,12 +23,15 @@ body:
       options:
         - .NET 8
         - .NET 9
-        - .NET 10 Preview 1
-        - .NET 10 Preview 2
-        - .NET 10 Preview 3
         - .NET 10 Preview 4
         - .NET 10 Preview 5
         - .NET 10 Preview 6
+        - .NET 10 Preview 7
+        - .NET 10 RC 1
+        - .NET 10 RC 2
+        - .NET 10 GA
+        - .NET 11 Preview 1
+        - .NEt 11 Preview 2
         - Other (please put exact version in description textbox)
     validations:
       required: true

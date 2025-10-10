@@ -2,23 +2,24 @@
 description: "Learn more about: -langversion (Visual Basic)"
 title: "-langversion"
 ms.date: 03/10/2018
-helpviewer_keywords: 
+ms.update-cycle: 1825-days
+helpviewer_keywords:
   - "/langversion compiler option [Visual Basic]"
   - "langversion compiler option [Visual Basic]"
   - "-langversion compiler option [Visual Basic]"
-ms.custom: "updateeachrelease, UpdateFrequency1" 
+ms.custom: "updateeachrelease"
 ms.assetid: 59b7b0c8-2dde-4e9b-94e7-0237f7e0bafb
 ---
 # -langversion (Visual Basic)
 
-Causes the compiler to accept only syntax that is included in the specified Visual Basic language version.  
-  
-## Syntax  
-  
-```console  
--langversion:version  
-```  
-  
+Causes the compiler to accept only syntax that is included in the specified Visual Basic language version.
+
+## Syntax
+
+```console
+-langversion:version
+```
+
 ## Arguments
 
  `version`\

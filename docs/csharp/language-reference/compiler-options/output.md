@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "OutputAssembly compiler option [C#]"
   - "PlatformTarget compiler option [C#]"
   - "ProduceReferenceAssembly compiler option [C#]"
-  - "TargetType compiler option [C#]"
+  - "OutputType compiler option [C#]"
 ---
 # C# Compiler Options that control compiler output
 
@@ -21,7 +21,7 @@ The following options control compiler output generation.
 | **OutputAssembly** | `-out:` | Specify the output assembly file. |
 | **PlatformTarget** | `-platform:` | Specify the target platform CPU. |
 | **ProduceReferenceAssembly** | `-refout:` | Generate a reference assembly. |
-| **TargetType** | `-target:` | Specify the type of the output assembly. |
+| **OutputType** | `-target:` | Specify the type of the output assembly. |
 
 > [!NOTE]
 > Refer to [Compiler options](index.md#how-to-set-options) for more information on configuring these options for your project.
@@ -34,7 +34,7 @@ The **DocumentationFile** option allows you to place documentation comments in a
 <DocumentationFile>path/to/file.xml</DocumentationFile>
 ```
 
-The source code file that contains Main or top-level statements is output first into the XML. You'll often want to use the generated .xml file with [IntelliSense](/visualstudio/ide/using-intellisense). The *.xml* filename must be the same as the assembly name. The *.xml* file must be in the same directory as the assembly. When the assembly is referenced in a Visual Studio project, the *.xml* file is found as well. For more information about generating code comments, see [Supplying Code Comments](/visualstudio/ide/reference/generate-xml-documentation-comments). Unless you compile with [`<TargetType:Module>`](#targettype), `file` will contain `<assembly>` and `</assembly>` tags specifying the name of the file containing the assembly manifest for the output file. For examples, see [How to use the XML documentation features](../xmldoc/index.md).
+The source code file that contains Main or top-level statements is output first into the XML. You'll often want to use the generated .xml file with [IntelliSense](/visualstudio/ide/using-intellisense). The *.xml* filename must be the same as the assembly name. The *.xml* file must be in the same directory as the assembly. When the assembly is referenced in a Visual Studio project, the *.xml* file is found as well. For more information about generating code comments, see [Supplying Code Comments](/visualstudio/ide/reference/generate-xml-documentation-comments). Unless you compile with [`<OutputType:module>`](#outputtype), `file` will contain `<assembly>` and `</assembly>` tags specifying the name of the file containing the assembly manifest for the output file. For examples, see [How to use the XML documentation features](../xmldoc/index.md).
 
 > [!NOTE]
 > The **DocumentationFile** option applies to all files in the project. To disable warnings related to documentation comments for a specific file or section of code, use [#pragma warning](../preprocessor-directives.md#pragma-warning).
@@ -43,13 +43,14 @@ This option can be used in any .NET SDK-style project. For more information, see
 
 ## OutputAssembly
 
-The **OutputAssembly** option specifies the name of the output file. The output path specifies the folder where compiler output is placed.
+The **OutputAssembly** option specifies the name of the output file. This option corresponds to the combination of the `OutputPath` and `AssemblyName` MSBuild properties that control where the compiled assembly is placed and what it's named.
 
 ```xml
-<OutputAssembly>folder</OutputAssembly>
+<OutputPath>bin\Debug\</OutputPath>
+<AssemblyName>MyApplication</AssemblyName>
 ```
 
-Specify the full name and extension of the file you want to create. If you don't specify the name of the output file, MSBuild uses the name of the project to specify the name of the output assembly. Old style projects use the following rules:
+Specify the name and extension of the file you want to create. The path can be relative or absolute. If you don't specify the name of the output file, MSBuild uses the project name to specify the name of the output assembly. Old style projects use the following rules:
 
 - An .exe will take its name from the source code file that contains the `Main` method or top-level statements.  
 - A .dll or .netmodule will take its name from the first source code file.
@@ -103,9 +104,9 @@ You generally don't need to work directly with reference assembly files. By defa
 
 .NET SDK 6.0.200 made a [change](../../../core/compatibility/sdk/6.0/write-reference-assemblies-to-obj.md) that moved reference assemblies from the output directory to the intermediate directory by default.
 
-## TargetType
+## OutputType
 
-The **TargetType** compiler option can be specified in one of the following forms:  
+The **OutputType** compiler option can be specified in one of the following forms:  
   
 - **library**: to create a code library. **library** is the default value.
 - **exe**: to create an .exe file.  
@@ -118,7 +119,7 @@ The **TargetType** compiler option can be specified in one of the following form
 > For .NET Framework targets, unless you specify **module**, this option causes a .NET Framework assembly manifest to be placed in an output file. For more information, see [Assemblies in .NET](../../../standard/assembly/index.md) and [Common Attributes](../attributes/global.md).
 
 ```xml
-<TargetType>library</TargetType>
+<OutputType>library</OutputType>
 ```
 
 The compiler creates only one assembly manifest per compilation. Information about all files in a compilation is placed in the assembly manifest. When producing multiple output files at the command line, only one assembly manifest can be created and it must go into the first output file specified on the command line.
@@ -131,7 +132,7 @@ The **library** option causes the compiler to create a dynamic-link library (DLL
 
 ### exe
 
-The **exe** option causes the compiler to create an executable (EXE), console application. The executable file will be created with the .exe extension. Use **winexe** to create a Windows program executable. Unless otherwise specified with the [**OutputAssembly**](#outputassembly) option, the output file name takes the name of the input file that contains the entry point ([Main](../../fundamentals/program-structure/main-command-line.md) method or top-level statements). One and only one entry point is required in the source code files that are compiled into an .exe file. The [**StartupObject**](./advanced.md#mainentrypoint-or-startupobject) compiler option lets you specify which class contains the `Main` method, in cases where your code has more than one class with a `Main` method.  
+The **exe** option causes the compiler to create an executable (EXE), console application. The executable file will be created with the .exe extension. Use **winexe** to create a Windows program executable. Unless otherwise specified with the [**OutputAssembly**](#outputassembly) option, the output file name takes the name of the input file that contains the entry point ([Main](../../fundamentals/program-structure/main-command-line.md) method or top-level statements). One and only one entry point is required in the source code files that are compiled into an .exe file. The [**StartupObject**](./advanced.md#startupobject) compiler option lets you specify which class contains the `Main` method, in cases where your code has more than one class with a `Main` method.  
 
 ### module
 
@@ -139,7 +140,7 @@ This option causes the compiler to not generate an assembly manifest. By default
 
 ### winexe
 
-The **winexe** option causes the compiler to create an executable (EXE), Windows program. The executable file will be created with the .exe extension. A Windows program is one that provides a user interface from either the .NET library or with the Windows APIs. Use **exe** to create a console application. Unless otherwise specified with the [**OutputAssembly**](#outputassembly) option, the output file name takes the name of the input file that contains the [`Main`](../../fundamentals/program-structure/main-command-line.md) method. One and only one `Main` method is required in the source code files that are compiled into an .exe file. The [**StartupObject**](./advanced.md#mainentrypoint-or-startupobject) option lets you specify which class contains the `Main` method, in cases where your code has more than one class with a `Main` method.
+The **winexe** option causes the compiler to create an executable (EXE), Windows program. The executable file will be created with the .exe extension. A Windows program is one that provides a user interface from either the .NET library or with the Windows APIs. Use **exe** to create a console application. Unless otherwise specified with the [**OutputAssembly**](#outputassembly) option, the output file name takes the name of the input file that contains the [`Main`](../../fundamentals/program-structure/main-command-line.md) method. One and only one `Main` method is required in the source code files that are compiled into an .exe file. The [**StartupObject**](./advanced.md#startupobject) option lets you specify which class contains the `Main` method, in cases where your code has more than one class with a `Main` method.
 
 ### winmdobj
 

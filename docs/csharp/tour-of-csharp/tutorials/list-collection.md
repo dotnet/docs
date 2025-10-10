@@ -45,6 +45,8 @@ You're not allowed to access past the end of the list. You can check how long th
 
 Select **Run** again to see the results. In C#, indices start at 0, so the largest valid index is one less than the number of items in the list.
 
+For more information about indices, see the [Explore indexes and ranges](../../tutorials/ranges-indexes.md) article.
+
 ## Search and sort lists
 
 Our samples use relatively small lists, but your applications might often create lists with many more elements, sometimes numbering in the thousands. To find elements in these larger collections, you need to search the list for different items. The <xref:System.Collections.Generic.List%601.IndexOf%2A> method searches for an item and returns the index of the item. If the item isn't in the list, `IndexOf` returns `-1`. Try it to see how it works. Add the following code after what you wrote so far:
@@ -67,7 +69,7 @@ That creates a list of integers, and sets the first two integers to the value 1.
 
 :::code language="csharp" source="./snippets/ListCollection/Program.cs" id="Fibonacci":::
 
-Press **Run** to see the results;
+Press **Run** to see the results.
 
 ## Challenge
 
@@ -77,20 +79,17 @@ Did you come up with something like this?
 
 <!-- markdownlint-disable MD033 -->
 <details>
+
 :::code language="csharp" interactive="try-dotnet-method" source="./snippets/ListCollection/Program.cs" id="Answer":::
 
 With each iteration of the loop, you're taking the last two integers in the list, summing them, and adding that value to the list. The loop repeats until you added 20 items to the list.
 </details>
 <!-- markdownlint-disable MD033 -->
 
-You completed the list interactive tutorial, the final introduction to C# interactive tutorial. You can visit the [.NET site](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro) to download the .NET SDK, create a project on your machine, and keep coding. The "Next steps" section brings you back to these tutorials.
+You completed the list interactive tutorial, the final introduction to C# interactive tutorial. You can visit the [.NET site](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro) to download the .NET SDK, create a project on your machine, and keep coding. The "Next steps" section brings you back to these tutorials. Or, you can continue with the [Explore object oriented programming with classes and objects](../../fundamentals/tutorials/classes.md) tutorial.
 
 You can learn more about [.NET collections](../../../standard/collections/index.md) in the following articles:
 
 - [Selecting a collection type](../../../standard/collections/selecting-a-collection-class.md)
 - [Commonly used collection types](../../../standard/collections/commonly-used-collection-types.md)
 - [When to use generic collections](../../../standard/collections/when-to-use-generic-collections.md)
-
-Congratulations, you completed the list tutorial. You can continue with [more](../../fundamentals/tutorials/classes.md) tutorials in your own development environment.
-
-You can learn more about working with the `List` type in the .NET fundamentals article on [collections](../../../standard/collections/index.md). You also learn about many other collection types.

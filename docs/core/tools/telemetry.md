@@ -2,7 +2,7 @@
 title: .NET SDK and .NET CLI telemetry
 description: The .NET SDK and the .NET CLI collect usage information and send it to Microsoft. Learn what data is collected and how to opt out.
 author: KathleenDollard
-ms.date: 02/24/2022
+ms.date: 10/07/2025
 ---
 # .NET SDK and .NET CLI telemetry
 
@@ -105,7 +105,8 @@ The telemetry feature collects the following data:
 | >=8.0.100     | Whether Mono interpreter is used. |
 | >=8.0.100     | Whether library mode for mobile is used.  |
 | >=8.0.100     | Whether NativeAOT is used. |
-| >=8.0.100     | Used Mono runtime pack version. |
+| >=8.0.100     | The Mono runtime pack version that was used. |
+| >=10.0.100    | The detected LLM agent name if the CLI was invoked from an LLM agent. For more information, see [LLM detection](#llm-detection).|
 
 ### Collected options
 
@@ -189,6 +190,21 @@ The full list of environment variables, and what is done with their values, is s
 | BUILD_ID, PROJECT_ID | Google Cloud Build | Check if all are present and non-null |
 | TEAMCITY_VERSION | TeamCity | Check if present and non-null |
 | JB_SPACE_API_URL | JetBrains Space | Check if present and non-null |
+
+## LLM detection
+
+To detect if the .NET CLI is running in the context of an LLM agent, the .NET CLI probes for the presence and values of several environment variables that LLM agents and AI coding assistants set.
+
+The following table shows the agent name, environment variable used for detection, and value of the agent type that's reported. The actual values of these environment variables are never collected—only used to identify the agent type.
+
+| LLM agent | Variable | Value |
+| --------- | ----------- | ----- |
+| GitHub Copilot | GITHUB_COPILOT_CLI_MODE | "copilot" |
+| Claude Code | CLAUDECODE | "claude" |
+| Cursor | CURSOR_EDITOR| "cursor" |
+| Google Gemini | GEMINI_CLI | "gemini" |
+
+If multiple agents are detected, the different agent values are concatenated with a comma to produce the final value.
 
 ## Avoid inadvertent disclosure of information
 

@@ -1,11 +1,11 @@
 ---
 title: dotnet pack command
 description: The dotnet pack command creates NuGet packages for your .NET project.
-ms.date: 04/04/2024
+ms.date: 09/29/2025
 ---
 # dotnet pack
 
-**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
+**This article applies to:** ✔️ .NET 6 SDK and later versions
 
 ## Name
 
@@ -14,13 +14,13 @@ ms.date: 04/04/2024
 ## Synopsis
 
 ```dotnetcli
-dotnet pack [<PROJECT>|<SOLUTION>] [--artifacts-path <ARTIFACTS_DIR>]
-    [-c|--configuration <CONFIGURATION>] [--force]
-    [--include-source] [--include-symbols] [--interactive]
-    [--no-build] [--no-dependencies] [--no-restore] [--nologo]
-    [-o|--output <OUTPUT_DIRECTORY>] [--runtime <RUNTIME_IDENTIFIER>]
-    [-s|--serviceable] [--tl:[auto|on|off]] [-v|--verbosity <LEVEL>]
-    [--version-suffix <VERSION_SUFFIX>]
+dotnet pack [<PROJECT>|<SOLUTION>]
+  [--artifacts-path <ARTIFACTS_DIR>] [-c|--configuration <CONFIGURATION>]
+  [--disable-build-servers] [--force] [--include-source] [--include-symbols]
+  [--interactive] [--no-build] [--no-dependencies] [--no-restore] [--nologo]
+  [-o|--output <OUTPUT_DIRECTORY>] [--runtime <RUNTIME_IDENTIFIER>]
+  [-s|--serviceable] [--tl:[auto|on|off]] [-v|--verbosity <LEVEL>]
+  [--version-suffix <VERSION_SUFFIX>]
 
 dotnet pack -h|--help
 ```
@@ -64,11 +64,11 @@ You can provide MSBuild properties to the `dotnet pack` command for the packing 
 
 [!INCLUDE [configuration](../../../includes/cli-configuration-publish-pack.md)]
 
+[!INCLUDE [disable-build-servers](../../../includes/cli-disable-build-servers.md)]
+
 - **`--force`**
 
   Forces all dependencies to be resolved even if the last restore was successful. Specifying this flag is the same as deleting the *project.assets.json* file.
-
-[!INCLUDE [help](../../../includes/cli-help.md)]
 
 - **`--include-source`**
 
@@ -78,7 +78,7 @@ You can provide MSBuild properties to the `dotnet pack` command for the packing 
 
   Includes the debug symbols NuGet packages in addition to the regular NuGet packages in the output directory.
 
-[!INCLUDE [interactive](../../../includes/cli-interactive-3-0.md)]
+[!INCLUDE [interactive](../../../includes/cli-interactive.md)]
 
 - **`--no-build`**
 
@@ -131,6 +131,8 @@ You can provide MSBuild properties to the `dotnet pack` command for the packing 
   If you want to use `--version-suffix`, specify `VersionPrefix` and not `Version` in the project file. For example, if `VersionPrefix` is `0.1.2` and you pass `--version-suffix rc.1` to `dotnet pack`, the package version will be `0.1.2-rc.1`.
 
   If `Version` has a value and you pass `--version-suffix` to `dotnet pack`, the value specified for `--version-suffix` is ignored.
+
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
 ## Examples
 

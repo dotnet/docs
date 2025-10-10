@@ -1,7 +1,7 @@
 ---
 title: .NET releases, patches, and support
 description: Learn about releases, patches, and support for .NET.
-ms.date: 10/10/2023
+ms.date: 08/26/2025
 ms.topic: overview
 ---
 # Releases and support for .NET
@@ -59,12 +59,11 @@ There are two support tracks for releases:
 
 * *Standard Term Support* (STS) releases
 
-  These versions are supported until 6 months after the next major or minor release ships.
+  These versions are supported for two years (24 months).
 
   Example:
 
-  * .NET 5 is an STS release and was released in November 2020. It was supported for 18 months, until May 2022.
-  * .NET 7 is an STS release and was released in November 2022. It's supported for 18 months, until May 2024.
+  * .NET 9 is an STS release and was released in November 2024. It's supported for two years, until November 2026.
 
 * *Long Term Support* (LTS) releases
 
@@ -72,18 +71,17 @@ There are two support tracks for releases:
 
   Example:
 
-  * .NET Core 3.1 is an LTS release and was released in December 2019. It was supported for 3 years, until December 2022.
-  * .NET 6 is an LTS release and was released in November, 2021. It's supported for 3 years, until November 2024.
+  * .NET 8 is an LTS release and was released in November 2023. It's supported for three years, until November 2026.
 
-Releases alternate between LTS and STS, so it's possible for an earlier release to be supported longer than a later release. For example, .NET Core 3.1 was an LTS release with support through December 2022. The .NET 5 release shipped almost a year later but went out of support earlier, in May 2022.
+Releases alternate between LTS and STS.
 
 Servicing updates ship monthly and include both security and non-security (reliability, compatibility, and stability) fixes. Servicing updates are supported until the next servicing update is released. Servicing updates have runtime roll forward behavior. That means that applications default to running on the latest installed runtime servicing update.
 
 ## How to choose a release
 
-If you're building a service and expect to continue updating it on a regular basis, then an STS release like the .NET 7 runtime may be your best option to stay up to date with the latest features .NET has to offer.
+If you're building a service and expect to continue updating it on a regular basis, then use the latest release, whether LTS or STS, to stay up to date with the latest features .NET has to offer.
 
-If you're building a client application that will be distributed to consumers, stability might be more important than access to the latest features. Your application might need to be supported for a certain period before the consumer can upgrade to the next version of the application. In that case, an LTS release like the .NET 6 runtime could be the right option.
+If you're building a client application that will be distributed to consumers, stability might be more important than access to the latest features. Your application might need to be supported for a certain period before the consumer can upgrade to the next version of the application. In that case, an LTS release like the .NET 8 runtime could be the right option.
 
 > [!NOTE]
 > We recommend upgrading to the latest SDK version, even if it's an STS release, as it can target all available runtimes.
@@ -102,15 +100,15 @@ End of support refers to the date after which Microsoft no longer provides fixes
 
 ## Supported operating systems
 
-.NET can be run on a range of operating systems. Each of these operating systems has a lifecycle defined by its sponsor organization (for example, Microsoft, Red Hat, or Apple). We take these lifecycle schedules into account when adding and removing support for operating system versions.
+.NET can be run on a range of operating systems. Each of these operating systems has a lifecycle defined by its sponsor organization (for example, Microsoft, Red Hat, or Apple). These lifecycle schedules are taken into account when .NET adds and removes support for operating system versions.
 
-When an operating system version goes out of support, we stop testing that version and providing support for that version. Users need to move forward to a supported operating system version to get support.
+When an operating system version reaches end of support, Microsoft stops testing and providing support for that version. Users need to move forward to a supported operating system version to get support.
 
 For more information, see the [.NET OS Lifecycle Policy](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md).
 
 ## Get support
 
-You have a choice between Microsoft assisted support and Community support.
+You have a choice between Microsoft-assisted support and Community support.
 
 ### Microsoft support
 

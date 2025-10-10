@@ -23,9 +23,12 @@ dev_langs:
 | **Category**                        | Design                                             |
 | **Fix is breaking or non-breaking** | Non-breaking                                       |
 | **Enabled by default**              | Yes                                                |
-| **Default severity**                | Info                                               |
+| **Default severity**                | Warning starting with 3.10, Info before            |
 | **Introduced in version**           | 3.2.0                                              |
 | **Is there a code fix**             | Yes, starting with 3.7.0                           |
+
+> [NOTE]
+> This analyzer is no longer relevant for MSTest 4 as the attribute was removed.
 
 ## Cause
 

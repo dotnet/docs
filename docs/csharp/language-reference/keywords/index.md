@@ -1,7 +1,7 @@
 ---
 description: "C# Keywords: Find the reference material for the predefined keywords and contextual keywords defined in the C# language."
 title: "C# Keywords and contextual keywords"
-ms.date: 08/14/2024
+ms.date: 04/17/2025
 f1_keywords: 
   - "cs.keywords"
 helpviewer_keywords:
@@ -123,6 +123,7 @@ A contextual keyword is used to provide a specific meaning in the code, but it i
         [`descending`](descending.md)  
         [`dynamic`](../builtin-types/reference-types.md)  
         [`equals`](equals.md)  
+        [`extension`](extension.md)  
     :::column-end:::
     :::column:::
         [`field`](field.md)  
@@ -137,9 +138,9 @@ A contextual keyword is used to provide a specific meaning in the code, but it i
         [`let`](let-clause.md)  
         [`managed` (function pointer calling convention)](../unsafe-code.md#function-pointers)  
         [`nameof`](../operators/nameof.md)  
-        [`nint`](../builtin-types/integral-numeric-types.md)  
     :::column-end:::
     :::column:::
+        [`nint`](../builtin-types/integral-numeric-types.md)  
         [`not`](../operators/patterns.md#logical-patterns)  
         [`notnull`](../../programming-guide/generics/constraints-on-type-parameters.md#notnull-constraint)  
         [`nuint`](../builtin-types/integral-numeric-types.md)  
@@ -151,9 +152,9 @@ A contextual keyword is used to provide a specific meaning in the code, but it i
         [`record`](../../fundamentals/types/records.md)  
         [`remove`](remove.md)  
         [`required`](required.md)  
-        [`scoped`](../statements/declarations.md#scoped-ref)  
     :::column-end:::
     :::column:::
+        [`scoped`](../statements/declarations.md#scoped-ref)  
         [`select`](select-clause.md)  
         [`set`](set.md)  
         [`unmanaged` (function pointer calling convention)](../unsafe-code.md#function-pointers)  

@@ -36,6 +36,8 @@ The following example depicts the behavior of <xref:System.Linq.Enumerable.Excep
 
 [!INCLUDE [Datasources](../includes/data-sources-definition.md)]
 
+[!INCLUDE [Common Datasources reference](../includes/common-data-sources-reference.md)]
+
 :::code language="csharp" source="./snippets/standard-query-operators/SetOperations.cs" id="Except":::
 
 The <xref:System.Linq.Enumerable.ExceptBy%2A> method is an alternative approach to `Except` that takes two sequences of possibly heterogenous types and a `keySelector`. The `keySelector` is the same type as the first collection's type. Consider the following `Teacher` array and teacher IDs to exclude. To find teachers in the first collection that aren't in the second collection, you can project the teacher's ID onto the second collection:

@@ -1,18 +1,21 @@
 ---
 title: "Breaking change - NU1510 is raised for direct references pruned by NuGet"
-description: "Learn about the breaking change in .NET 10 where NU1510 is raised for unnecessary direct package references."
-ms.date: 3/25/2025
+description: "Learn about the breaking change in the .NET 10 SDK where NU1510 is raised for unnecessary direct package references."
+ms.date: 09/04/2025
 ai-usage: ai-assisted
 ms.custom: https://github.com/dotnet/docs/issues/45462
 ---
 
 # NU1510 is raised for direct references pruned by NuGet
 
-Starting in .NET 10, NuGet raises a [`NU1510` warning](/nuget/reference/errors-and-warnings/nu1510) when a project includes a direct package reference that overlaps with a framework-provided library and is not required.
+Starting in the .NET 10 SDK, when pruning is enabled, NuGet raises a [`NU1510` warning](/nuget/reference/errors-and-warnings/nu1510) for projects that:
+
+- Target or multi-target .NET 10 or a later version.
+- Include a direct package reference that overlaps with a framework-provided library (that is, the reference isn't necessary).
 
 ## Version introduced
 
-.NET 10 Preview 1
+.NET 10
 
 ## Previous behavior
 
@@ -20,11 +23,14 @@ Previously, the .NET SDK ignored the contents of a package if it overlapped with
 
 ## New behavior
 
-NuGet now removes unnecessary package references entirely and raises a `NU1510` warning to notify you of the issue.
+Starting with the .NET 10 SDK, if pruning is enabled and the project targets .NET 10 or a later version, NuGet notifies you of any unnecessary package references by raising a `NU1510` warning.
+
+> [!NOTE]
+> In a later .NET 10 preview, a related change was made such that [direct prunable package references](prune-packagereference-privateassets.md) are automatically excluded from the `.nuspec` file. However, you'll still get the `NU1510` warning to clean up your project.
 
 ## Type of breaking change
 
-This is a [source-incompatible change](../../categories.md#source-compatibility).
+This change can affect [source compatibility](../../categories.md#source-compatibility).
 
 ## Reason for change
 
@@ -50,3 +56,7 @@ If your project targets only frameworks where the package is pruned, remove the 
 ## Affected APIs
 
 None.
+
+## See also
+
+- [PrunePackageReference privatizes direct prunable references](prune-packagereference-privateassets.md)

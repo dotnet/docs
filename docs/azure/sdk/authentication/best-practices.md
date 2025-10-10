@@ -1,8 +1,8 @@
 ---
 title: Authentication best practices with the Azure Identity library for .NET
 description: This article describes authentication best practices to follow when using the Azure Identity library for .NET.
-ms.topic: conceptual
-ms.date: 02/14/2025
+ms.topic: concept-article
+ms.date: 09/17/2025
 ---
 
 # Authentication best practices with the Azure Identity library for .NET
@@ -71,13 +71,31 @@ To only call `GetToken` when necessary, observe the `RefreshOn` date and proacti
 
 ## Understand the managed identity retry strategy
 
-The Azure Identity library for .NET allows you to authenticate via managed identity with `ManagedIdentityCredential`. The way in which you use `ManagedIdentityCredential` impacts the applied retry strategy. When used via:
+The Azure Identity library for .NET allows you to authenticate via managed identity with `ManagedIdentityCredential`. The mode in which you use `ManagedIdentityCredential` impacts the applied retry strategy.
 
-- `DefaultAzureCredential`, no retries are attempted when the initial token acquisition attempt fails or times out after a short duration. This is the least resilient option because it's optimized to "fail fast" for an efficient development inner loop.
-- Any other approach, such as `ChainedTokenCredential` or `ManagedIdentityCredential` directly:
-  - The time interval between retries starts at 0.8 seconds, and a maximum of five retries are attempted, by default. This option is optimized for resilience but introduces potentially unwanted delays in the development inner loop.
-  - To change any of the default retry settings, use the `Retry` property on `ManagedIdentityCredentialOptions`. For example, retry a maximum of three times, with a starting interval of 0.5 seconds:
+### "Fail fast" mode
+
+- **When to use:** For local development scenarios where you want quick feedback
+- **How to activate:** Use `DefaultAzureCredential` in one of the following ways:
+  - Without setting environment variable `AZURE_TOKEN_CREDENTIALS`
+  - With environment variable `AZURE_TOKEN_CREDENTIALS` set to a string other than `ManagedIdentityCredential`
+- **How it works:** No retries are attempted when the initial token acquisition attempt fails or times out after a short duration. This is the least resilient mode because it's optimized to "fail fast" for an efficient development inner loop.
+
+### Resilient mode
+
+- **When to use:** For production scenarios where resilience is important
+- **How to activate:** Take one of the following approaches:
+  - Use `DefaultAzureCredential` with environment variable `AZURE_TOKEN_CREDENTIALS` set to `ManagedIdentityCredential`
+  
+    > [!IMPORTANT]
+    > This `DefaultAzureCredential` approach only operates in resilient mode when using `Azure.Identity` package version 1.16.0 or later. In earlier versions, this approach operates in "fail fast" mode.
+
+  - Use `ChainedTokenCredential` containing `ManagedIdentityCredential`
+  - Use `ManagedIdentityCredential` directly
+- **How it works:** The time interval between retries starts at 0.8 seconds, and a maximum of five retries are attempted with exponential backoff, by default. This mode is optimized for resilience but introduces potentially unwanted delays in the development inner loop.
+
+    To change the default retry settings, use the <xref:Azure.Core.ClientOptions.Retry%2A> property on `DefaultAzureCredentialOptions` or `ManagedIdentityCredentialOptions`. For example, retry a maximum of three times, with a starting interval of 0.5 seconds:
 
     :::code language="csharp" source="../snippets/authentication/best-practices/CCA/Program.cs" id="snippet_retries" highlight="5-9":::
 
-For more information on customizing retry policies, see [Setting a custom retry policy](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/Configuration.md#setting-a-custom-retry-policy).
+    For more information on customizing retry policies, see [Setting a custom retry policy](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/Configuration.md#setting-a-custom-retry-policy).

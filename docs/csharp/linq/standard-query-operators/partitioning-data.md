@@ -27,6 +27,8 @@ The standard query operator methods that partition sequences are listed in the f
 
 All the following examples use <xref:System.Linq.Enumerable.Range(System.Int32,System.Int32)?displayProperty=nameWithType> to generate a sequence of numbers from 0 through 7.
 
+[!INCLUDE [Common Datasources reference](../includes/common-data-sources-reference.md)]
+
 You use the `Take` method to take only the first elements in a sequence:
 
 :::code source="snippets/standard-query-operators/PartitionExamples.cs" id="Take":::

@@ -113,6 +113,7 @@ The Visual Basic command-line compiler is provided as an alternative to compilin
 |[-noconfig](noconfig.md)|Do not compile with Vbc.rsp|  
 |[-nostdlib](nostdlib.md)|Causes the compiler not to reference the standard libraries.|  
 |[-nowin32manifest](nowin32manifest.md)|Instructs the compiler not to embed any application manifest into the executable file.|  
+|[-pathmap](pathmap.md)|Specifies how to map physical paths to source path names output by the compiler.|
 |[-platform](platform.md)|Specifies the processor platform the compiler targets for the output file.|  
 |[-recurse](recurse.md)|Searches subdirectories for source files to compile.|  
 |[-rootnamespace](rootnamespace.md)|Specifies a namespace for all type declarations.|  

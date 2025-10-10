@@ -8,7 +8,7 @@ namespace anonymous_types
     class Product
     {
         public string? Color {get;set;}
-        public  decimal Price {get;set;}
+        public decimal Price {get;set;}
         public string? Name {get;set;}
         public string? Category {get;set;}
         public string? Size {get;set;}
@@ -18,9 +18,9 @@ namespace anonymous_types
     {
         static void Main()
         {
-            // don't show this unless you add a bunch more
-            // properties to the type. otherwise it obviates the
-            // need for the anonymous type
+            // Don't show this unless you add a bunch more
+            // properties to the type. Otherwise it obviates the
+            // need for the anonymous type.
             List<Product> products = new ()
             {
                 new Product() { Color="Orange", Price=2.00M},
@@ -50,6 +50,34 @@ namespace anonymous_types
             var shipment = new { address = "Nowhere St.", product };
             var shipmentWithBonus = new { address = "Somewhere St.", product, bonus };
             // </Snippet03>
+
+            // <ProjectionInitializers>
+            // Explicit member names.
+            var personExplicit = new { FirstName = "Kyle", LastName = "Mit" };
+            
+            // Projection initializers (inferred member names).
+            var firstName = "Kyle";
+            var lastName = "Mit";
+            var personInferred = new { firstName, lastName };
+            
+            // Both create equivalent anonymous types with the same property names.
+            Console.WriteLine($"Explicit: {personExplicit.FirstName} {personExplicit.LastName}");
+            Console.WriteLine($"Inferred: {personInferred.firstName} {personInferred.lastName}");
+            // </ProjectionInitializers>
+
+            // <ProjectionExample>
+            var title = "Software Engineer";
+            var department = "Engineering";
+            var salary = 75000;
+            
+            // Using projection initializers.
+            var employee = new { title, department, salary };
+            
+            // Equivalent to explicit syntax:
+            // var employee = new { title = title, department = department, salary = salary };
+            
+            Console.WriteLine($"Title: {employee.title}, Department: {employee.department}, Salary: {employee.salary}");
+            // </ProjectionExample>
         }
     }
 }

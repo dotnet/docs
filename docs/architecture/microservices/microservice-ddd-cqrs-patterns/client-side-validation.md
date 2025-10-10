@@ -23,7 +23,7 @@ The implementation of client-side validation depends on what kind of client appl
 
 ### Validation in ASP.NET Core apps
 
-- **Rick Anderson. Adding validation** \
+- **Add validation** \
   [https://learn.microsoft.com/aspnet/core/tutorials/first-mvc-app/validation](/aspnet/core/tutorials/first-mvc-app/validation)
 
 ### Validation in SPA Web apps (Angular 2, TypeScript, JavaScript, Blazor WebAssembly)

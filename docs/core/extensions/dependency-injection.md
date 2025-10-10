@@ -81,7 +81,7 @@ The host contains the dependency injection service provider. It also contains al
 
 By using the DI pattern, the worker service:
 
-- Doesn't use the concrete type `MessageWriter`, only the `IMessageWriter` interface that implements it. That makes it easy to change the implementation that the worker service uses without modifying the worker service.
+- Doesn't use the concrete type `MessageWriter`, only the `IMessageWriter` interface that it implements. That makes it easy to change the implementation that the worker service uses without modifying the worker service.
 - Doesn't create an instance of `MessageWriter`. The instance is created by the DI container.
 
 The implementation of the `IMessageWriter` interface can be improved by using the built-in logging API:
@@ -248,13 +248,19 @@ For web applications, a scoped lifetime indicates that services are created once
 
 In apps that process requests, scoped services are disposed at the end of the request.
 
-When using Entity Framework Core, the <xref:Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions.AddDbContext%2A> extension method registers `DbContext` types with a scoped lifetime by default.
-
 > [!NOTE]
-> Do ***not*** resolve a scoped service from a singleton and be careful not to do so indirectly, for example, through a transient service. It may cause the service to have incorrect state when processing subsequent requests. It's fine to:
->
-> - Resolve a singleton service from a scoped or transient service.
-> - Resolve a scoped service from another scoped or transient service.
+> When using Entity Framework Core, the <xref:Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions.AddDbContext%2A> extension method registers `DbContext` types with a scoped lifetime by default.
+
+A scoped service should always be used from within a scope—either an implicit scope (such as ASP.NET Core's per-request scope) or an explicit scope created with <xref:Microsoft.Extensions.DependencyInjection.IServiceScopeFactory.CreateScope?displayProperty=nameWithType>.
+
+Do ***not*** resolve a scoped service directly from a singleton using constructor injection or by requesting it from <xref:System.IServiceProvider> in the singleton. Doing so causes the scoped service to behave like a singleton, which can lead to incorrect state when processing subsequent requests.
+
+It's acceptable to resolve a scoped service within a singleton if you create and use an explicit scope with <xref:Microsoft.Extensions.DependencyInjection.IServiceScopeFactory>.
+
+It's also fine to:
+
+- Resolve a singleton service from a scoped or transient service.
+- Resolve a scoped service from another scoped or transient service.
 
 By default, in the development environment, resolving a service from another service with a longer lifetime throws an exception. For more information, see [Scope validation](#scope-validation).
 

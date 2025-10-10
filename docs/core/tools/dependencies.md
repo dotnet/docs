@@ -59,7 +59,7 @@ To add a dependency, run the [dotnet package add](dotnet-package-add.md) command
 dotnet package add Microsoft.EntityFrameworkCore
 ```
 
-To remove a dependency, run the [dotnet package remove](dotnet-package-remove.md) command, as shown in the following example:
+To remove a dependency, run the [dotnet package remove](dotnet-package-remove.md) command, as shown in the following example. (If you're using an SDK version of .NET 9 or earlier, use the `dotnet remove package` form instead.)
 
 ```dotnetcli
 dotnet package remove Microsoft.EntityFrameworkCore

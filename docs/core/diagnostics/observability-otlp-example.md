@@ -2,7 +2,8 @@
 title: "Example: Use OpenTelemetry with OTLP and the standalone Aspire Dashboard"
 description: An introduction to observing .NET apps with OTLP and the standalone Aspire Dashboard
 ms.date: 6/14/2023
-ms.topic: conceptual
+ms.topic: article
+ms.custom: sfi-image-nochange
 ---
 
 # Example: Use OpenTelemetry with OTLP and the standalone Aspire Dashboard
@@ -74,7 +75,7 @@ It then registers the OTLP exporter using env vars for its configuration.
 
 The OTLP exporter can be configured via APIs in code, but its more common to configure it via environment variables. Add the following to _AppSettings.Development.json_
 
-``` josn
+``` json
 "OTEL_EXPORTER_OTLP_ENDPOINT": "http://localhost:4317",
 "OTEL_SERVICE_NAME": "OTLP-Example"
 ```

@@ -7,7 +7,7 @@ ms.date: 12/31/2023
 
 [!INCLUDE [context](includes/context.md)]
 
-A URI is a compact representation of a resource available to your application on the intranet or internet. The <xref:System.Uri> class defines the properties and methods for handling URIs, including parsing, comparing, and combining. The <xref:System.Uri> class properties are read-only; to create a modifiable object, use the <xref:System.UriBuilder> class.
+A uniform resource identifier (URI) is a compact representation of a resource available to your application on the intranet or internet. The <xref:System.Uri> class defines the properties and methods for handling URIs, including parsing, comparing, and combining. The <xref:System.Uri> class properties are read-only; to create a modifiable object, use the <xref:System.UriBuilder> class.
 
 Relative URIs (for example, "/new/index.htm") must be expanded with respect to a base URI so that they are absolute. The <xref:System.Uri.MakeRelativeUri%2A> method is provided to convert absolute URIs to relative URIs when necessary.
 
@@ -16,24 +16,16 @@ The <xref:System.Uri> constructors do not escape URI strings if the string is a 
 The <xref:System.Uri> properties return a canonical data representation in escaped encoding, with all characters with Unicode values greater than 127 replaced with their hexadecimal equivalents. To put the URI in canonical form, the <xref:System.Uri> constructor performs the following steps:
 
 - Converts the URI scheme to lowercase.
-
 - Converts the host name to lowercase.
-
 - If the host name is an IPv6 address, the canonical IPv6 address is used. ScopeId and other optional IPv6 data are removed.
-
 - Removes default and empty port numbers.
-
 - Converts implicit file paths without the file:// scheme (for example, "C:\my\file") to explicit file paths with the file:// scheme.
-
 - Escaped characters (also known as percent-encoded octets) that don't have a reserved purpose are decoded (also known as being unescaped). These unreserved characters include uppercase and lowercase letters (%41-%5A and %61-%7A), decimal digits (%30-%39), hyphen (%2D), period (%2E), underscore (%5F), and tilde (%7E).
-
-- Canonicalizes the path for hierarchical URIs by compacting sequences such as /./, /../, and // (whether or not the sequence is escaped). Note that there are some schemes for which these sequences are not compacted.
-
+- Canonicalizes the path for hierarchical URIs by compacting sequences such as `/./` and `/../` (whether or not the sequence is escaped). Note that there are some schemes for which these sequences are not compacted.
 - For hierarchical URIs, if the host is not terminated with a forward slash (/), one is added.
-
 - By default, any reserved characters in the URI are escaped in accordance with RFC 2396. This behavior changes if International Resource Identifiers or International Domain Name parsing is enabled in which case reserved characters in the URI are escaped in accordance with RFC 3986 and RFC 3987.
 
-As part of canonicalization in the constructor for some schemes, dot-segments and empty segments (`/./`, `/../`, and `//`) are compacted (in other words, they are removed). The schemes for which <xref:System.Uri> compacts segments include http, https, tcp, net.pipe, and net.tcp. For some other schemes, these sequences are not compacted. The following code snippet shows how compacting looks in practice. The escaped sequences are unescaped, if necessary, and then compacted.
+As part of canonicalization in the constructor for some schemes, dot-segments (`/./` and `/../`) are compacted (in other words, they're removed). The schemes for which <xref:System.Uri> compacts segments include http, https, tcp, net.pipe, and net.tcp. For some other schemes, these sequences are not compacted. The following code snippet shows how compacting looks in practice. The escaped sequences are unescaped, if necessary, and then compacted.
 
 ```csharp
 var uri = new Uri("http://myUrl/../.."); // http scheme, unescaped
@@ -64,7 +56,7 @@ Some URIs include a fragment identifier or a query or both. A fragment identifie
 
 ## International resource identifier support
 
-Web addresses are typically expressed using uniform resource identifiers that consist of a very restricted set of characters:
+Web addresses are typically expressed using URIs that consist of a very restricted set of characters:
 
 - Upper and lower case ASCII letters from the English alphabet.
 - Digits from 0 to 9.
@@ -92,15 +84,15 @@ There are three possible values for IDN depending on the DNS servers that are us
 
 - idn enabled = All
 
-  This value will convert any Unicode domain names to their Punycode equivalents (IDN names).
+  Converts any Unicode domain names to their Punycode equivalents (IDN names).
 
 - idn enabled = AllExceptIntranet
 
-  This value will convert all Unicode domain names not on the local Intranet to use the Punycode equivalents (IDN names). In this case to handle international names on the local Intranet, the DNS servers that are used for the Intranet should support Unicode name resolution.
+  Converts all Unicode domain names not on the local Intranet to use the Punycode equivalents (IDN names). In this case, to handle international names on the local Intranet, the DNS servers that are used for the Intranet should support Unicode name resolution.
 
 - idn enabled = None
 
-  This value will not convert any Unicode domain names to use Punycode. This is the default value.
+  No Unicode domain names are converted to use Punycode. This is the default value.
 
 Normalization and character checking are done according to the latest IRI rules in RFC 3986 and RFC 3987.
 
@@ -121,7 +113,7 @@ Uri uri1 = new Uri("C:/test/path/file.txt") // Implicit file path.
 Uri uri2 = new Uri("file:///C:/test/path/file.txt") // Explicit file path.
 ```
 
-These implicit file paths are not compliant with the URI specification and so should be avoided when possible. When using .NET Core on Unix-based systems, implicit file paths can be especially problematic, because an absolute implicit file path is *indistinguishable* from a relative path. When such ambiguity is present, <xref:System.Uri> default to interpreting the path as an absolute URI.
+These implicit file paths are not compliant with the URI specification and should be avoided when possible. When using .NET Core on Unix-based systems, implicit file paths can be especially problematic, because an absolute implicit file path is *indistinguishable* from a relative path. When such ambiguity is present, <xref:System.Uri> default to interpreting the path as an absolute URI.
 
 ## Security considerations
 

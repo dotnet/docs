@@ -5,7 +5,6 @@ ms.date: 10/09/2023
 no-loc: [System.Text.Json]
 dev_langs:
   - "csharp"
-  - "vb"
 helpviewer_keywords:
   - "JSON serialization"
   - "serializing objects"
@@ -230,7 +229,7 @@ You can combine contracts from multiple source-generated contexts inside a singl
 ```csharp
 var options = new JsonSerializerOptions
 {
-    TypeInfoResolver = JsonTypeInfoResolver.Combine(ContextA.Default, ContextB.Default, ContextC.Default);
+    TypeInfoResolver = JsonTypeInfoResolver.Combine(ContextA.Default, ContextB.Default, ContextC.Default),
 };
 ```
 

@@ -1,42 +1,41 @@
 ---
 title: Orleans overview
 description: An introduction to .NET Orleans.
-ms.date: 07/03/2024
+ms.date: 03/30/2025
+ms.topic: overview
 ---
 
 # Microsoft Orleans
 
-Orleans:
+Orleans is a cross-platform framework designed to simplify building distributed apps. Whether scaling from a single server to thousands of cloud-based apps, Orleans provides tools to help manage the complexities of distributed systems. It extends familiar C# concepts to multi-server environments, allowing developers to focus on the app's logic.
 
-* Is a cross-platform framework for building robust, scalable distributed apps. Distributed apps are defined as apps that span more than a single process, often beyond hardware boundaries using peer-to-peer communication.
-* Scales from a single on-premises server to thousands of distributed, highly available apps in the cloud.
-* Extends familiar concepts and C# idioms to multi-server environments.
-* Is designed to scale elastically. When a host joins a cluster, it can accept new activations. When a host leaves the cluster, the previous activations on that host will be reactivated on the remaining hosts as needed. A host may leave a cluster because of scale down or a machine failure.  An Orleans cluster can be scaled down to a single host. The same properties that enable elastic scalability enable fault tolerance. The cluster automatically detects and quickly recovers from failures.
-* Simplifies the complexities of distributed app development by providing a common set of patterns and APIs.
-* Enables developers familiar with single-server app development to transition to building resilient, scalable cloud-native services and distributed apps.
-* Is sometimes called "Distributed .NET".
-* Is the framework of choice when building cloud-native apps.
-* Runs anywhere that .NET is supported. This includes hosting on Linux, Windows, and macOS.
-* Apps can be deployed to Kubernetes, virtual machines, and PaaS services such as [Azure App Service](/azure/app-service/overview) and [Azure Container Apps](/azure/container-apps/overview).
+Here’s what Orleans offers:
 
-## The "Actor Model"
+- It’s designed to scale elastically. Add or remove servers, and Orleans adjusts accordingly to maintain fault tolerance and scalability.
+- It simplifies distributed app development with a common set of patterns and APIs, making it accessible even for those new to distributed systems.
+- It’s cloud-native and runs on platforms where .NET is supported—Linux, Windows, macOS, and more.
+- It supports modern deployment options like Kubernetes, Azure App Service, and Azure Container Apps.
 
-Orleans is based on the "actor model". The actor model originated in the early 1970s and is now a core component of Orleans. The actor model is a programming model in which each _actor_ is a lightweight, concurrent, immutable object that encapsulates a piece of state and corresponding behavior. Actors communicate exclusively with each other using asynchronous messages. Orleans notably invented the _Virtual Actor_ abstraction, wherein actors exist perpetually.
+Orleans is often referred to as "Distributed .NET" because of its focus on building resilient, scalable cloud-native services. Let’s explore the actor model next.
+
+## The actor model
+
+Orleans is based on the actor model. Originating in the early 1970s, the actor model is now a core component of Orleans. In the actor model, each _actor_ is a lightweight, concurrent, immutable object encapsulating a piece of state and corresponding behavior. Actors communicate exclusively using asynchronous messages. Orleans notably invented the _Virtual Actor_ abstraction, where actors exist perpetually.
 
 > [!NOTE]
 > Actors are purely logical entities that _always_ exist, virtually. An actor cannot be explicitly created nor destroyed, and its virtual existence is unaffected by the failure of a server that executes it. Since actors always exist, they are always addressable.
 
-This is a novel approach to building a new generation of distributed apps for the Cloud era. The Orleans programming model tames the complexity inherent to highly parallel distributed apps _without_ restricting capabilities or imposing constraints on the developer.
+This novel approach helps build a new generation of distributed apps for the Cloud era. The Orleans programming model tames the complexity inherent in highly parallel distributed apps _without_ restricting capabilities or imposing constraints.
 
 For more information, see [Orleans: Virtual Actors](https://www.microsoft.com/research/project/orleans-virtual-actors) via Microsoft Research. A virtual actor is represented as an Orleans grain.
 
-## What are Grains?
+## What are grains?
 
 The grain is one of several Orleans primitives. In terms of the actor model, a grain is a virtual actor. The fundamental building block in any Orleans application is a *grain*. Grains are entities comprising user-defined identity, behavior, and state. Consider the following visual representation of a grain:
 
 :::image type="content" source="media/grain-formulation.svg" lightbox="media/grain-formulation.svg" alt-text="A grain is composed of a stable identity, behavior, and state.":::
 
-Grain identities are user-defined keys that make grains always available for invocation. Grains can be invoked by other grains or by any number of external clients. Each grain is an instance of a class that implements one or more of the following interfaces:
+Grain identities are user-defined keys, making grains always available for invocation. Other grains or any number of external clients can invoke grains. Each grain is an instance of a class implementing one or more of the following interfaces:
 
 - <xref:Orleans.IGrainWithGuidKey>: Marker interface for grains with `Guid` keys.
 - <xref:Orleans.IGrainWithIntegerKey>: Marker interface for grains with `Int64` keys.
@@ -44,93 +43,93 @@ Grain identities are user-defined keys that make grains always available for inv
 - <xref:Orleans.IGrainWithGuidCompoundKey>: Marker interface for grains with compound keys.
 - <xref:Orleans.IGrainWithIntegerCompoundKey>: Marker interface for grains with compound keys.
 
-Grains can have volatile or persistent state data that can be stored in any storage system. As such, grains implicitly partition application states, enabling automatic scalability and simplifying recovery from failures. The grain state is kept in memory while the grain is active, leading to lower latency and less load on data stores.
+Grains can have volatile or persistent state data stored in any storage system. As such, grains implicitly partition application states, enabling automatic scalability and simplifying recovery from failures. Orleans keeps the grain state in memory while the grain is active, leading to lower latency and less load on data stores.
 
 :::image type="content" source="media/grain-lifecycle.svg" lightbox="media/grain-lifecycle.svg" alt-text="The managed lifecycle of an Orleans grain.":::
 
-Instantiation of grains is automatically performed on demand by the Orleans runtime. Grains that aren't used for a while are automatically removed from memory to free up resources. This is possible because of their stable identity, which allows invoking grains whether they're already loaded into memory or not. This also allows for transparent recovery from failure because the caller doesn't need to know on which server a grain is instantiated at any point in time. Grains have a managed lifecycle, with the Orleans runtime responsible for activating/deactivating, and placing/locating grains as needed. This allows the developer to write code as if all grains are always in-memory.
+The Orleans runtime automatically instantiates grains on demand. Grains not used for a while are automatically removed from memory to free up resources. This removal is possible due to their stable identity, allowing invocation of grains whether they're loaded into memory or not. This also enables transparent recovery from failure because the caller doesn't need to know on which server a grain is instantiated at any point. Grains have a managed lifecycle, with the Orleans runtime responsible for activating/deactivating and placing/locating grains as needed. This allows writing code as if all grains are always in memory.
 
-## What are Silos?
+## What are silos?
 
-A silo is another example of an Orleans primitive. A silo hosts one or more grains. The Orleans runtime is what implements the programming model for applications.
+A silo is another example of an Orleans primitive. A silo hosts one or more grains. The Orleans runtime implements the programming model for applications.
 
-Typically, a group of silos runs as a cluster for scalability and fault tolerance. When run as a cluster, silos coordinate with each other to distribute work and detect and recover from failures. The runtime enables grains hosted in the cluster to communicate with each other as if they are within a single process. To help visualize the relationship between clusters, silos and grains, consider the following diagram:
+Typically, a group of silos runs as a cluster for scalability and fault tolerance. When run as a cluster, silos coordinate to distribute work and detect and recover from failures. The runtime enables grains hosted in the cluster to communicate as if they are within a single process. To help visualize the relationship between clusters, silos, and grains, consider the following diagram:
 
 :::image type="content" source="media/cluster-silo-grain-relationship.svg" lightbox="media/cluster-silo-grain-relationship.svg" alt-text="A cluster has one or more silos, and a silo has one or more grains.":::
 
-The preceding diagram shows the relationship between clusters, silos, and grains. You can have any number of clusters, each cluster has one or more silos, and each silo has one or more grains.
+The preceding diagram shows the relationship between clusters, silos, and grains. There can be any number of clusters, each cluster has one or more silos, and each silo has one or more grains.
 
-In addition to the core programming model, silos provide grains with a set of runtime services such as timers, reminders (persistent timers), persistence, transactions, streams, and more. For more information, see [What can I do with Orleans?](#what-can-i-do-with-orleans).
+In addition to the core programming model, silos provide grains with runtime services such as timers, reminders (persistent timers), persistence, transactions, streams, and more. For more information, see [What can be done with Orleans?](#what-can-be-done-with-orleans).
 
 Web apps and other external clients call grains in the cluster using the client library, which automatically manages network communication. Clients can also be co-hosted in the same process with silos for simplicity.
 
-## What can I do with Orleans?
+## What can be done with Orleans?
 
-Orleans is a framework for building cloud-native apps and should be considered whenever you're building .NET apps that would eventually need to scale. There are seemingly endless ways to use Orleans, but the following are some of the most common ways; Gaming, Banking, Chat apps, GPS tracking, Stock trading, Shopping carts, Voting apps, and more. Orleans is used by Microsoft in Azure, Xbox, Skype, Halo, PlayFab, Gears of War, and many other internal services. Orleans has many features that make it easy to use for a variety of applications.
+Orleans is a framework for building cloud-native apps and should be considered when building .NET apps that might eventually need to scale. There are seemingly endless ways to use Orleans, but the following are some of the most common: Gaming, Banking, Chat apps, GPS tracking, Stock trading, Shopping carts, Voting apps, and more. Microsoft uses Orleans in Azure, Xbox, Skype, Halo, PlayFab, Gears of War, and many other internal services. Orleans has many features making it easy to use for various applications.
 
 ### Persistence
 
-Orleans provides a simple persistence model that ensures the state is available before processing a request, and that its consistency is maintained. Grains can have multiple named persistent data objects. For example, there might be one called "profile" for a user's profile and one called "inventory" for their inventory. This state can be stored in any storage system.
+Orleans provides a simple persistence model ensuring state availability before processing a request and maintaining consistency. Grains can have multiple named persistent data objects. For example, one might be called "profile" for a user's profile and another "inventory" for their inventory. This state can be stored in any storage system.
 
-While a grain is running, the state is kept in memory so that read requests can be served without accessing storage. When the grain updates its state, calling <xref:Orleans.Core.IStorage.WriteStateAsync%2A?displayProperty=nameWithType> ensures that the backing store is updated for durability and consistency.
+While a grain runs, Orleans keeps the state in memory to serve read requests without accessing storage. When the grain updates its state, calling <xref:Orleans.Core.IStorage.WriteStateAsync%2A?displayProperty=nameWithType> ensures the backing store updates for durability and consistency.
 
 For more information, see [Grain persistence](grains/grain-persistence/index.md).
 
 ### Timers and reminders
 
-Reminders are a durable scheduling mechanism for grains. They can be used to ensure that some action is completed at a future point even if the grain isn't currently activated at that time. Timers are the non-durable counterpart to reminders and can be used for high-frequency events, which don't require reliability.
+Reminders are a durable scheduling mechanism for grains. Use them to ensure an action completes at a future point, even if the grain isn't currently activated. Timers are the non-durable counterpart to reminders and can be used for high-frequency events not requiring reliability.
 
 For more information, see [Timers and reminders](grains/timers-and-reminders.md).
 
 ### Flexible grain placement
 
-When a grain is activated in Orleans, the runtime decides which server (silo) to activate that grain on. This is called grain placement.
+When a grain activates in Orleans, the runtime decides which server (silo) to activate it on. This process is called grain placement.
 
-The placement process in Orleans is fully configurable. Developers can choose from a set of out-of-the-box placement policies such as random, prefer-local, and load-based, or custom logic can be configured. This allows for full flexibility in deciding where grains are created. For example, grains can be placed on a server close to resources that they need to operate against or other grains with which they communicate.
+The placement process in Orleans is fully configurable. Choose from out-of-the-box placement policies such as random, prefer-local, and load-based, or configure custom logic. This allows full flexibility in deciding where grains are created. For example, place grains on a server close to resources they need to operate against or other grains they communicate with.
 
 For more information, see [Grain placement](grains/grain-placement.md).
 
 ### Grain versioning and heterogeneous clusters
 
-Upgrading production systems in a manner that safely accounts for changes can be challenging, particularly in stateful systems. To account for this, grain interfaces in Orleans can be versioned.
+Upgrading production systems safely accounting for changes can be challenging, particularly in stateful systems. To account for this, grain interfaces can be versioned in Orleans.
 
-The cluster maintains a mapping of which grain implementations are available on which silos in the cluster and the versions of those implementations. This version of the information is used by the runtime in conjunction with placement strategies to make placement decisions when routing calls to grains. In addition, to safely update a versioned grain, this also enables heterogeneous clusters, where different silos have different sets of grain implementations available.
+The cluster maintains a mapping of which grain implementations are available on which silos and their versions. The runtime uses this version information with placement strategies to make placement decisions when routing calls to grains. Besides safely updating a versioned grain, this also enables heterogeneous clusters where different silos have different sets of available grain implementations.
 
 For more information, see [Grain Versioning](grains/grain-versioning/grain-versioning.md).
 
 ### Stateless workers
 
-Stateless workers are specially marked grains that don't have any associated state and can be activated on multiple silos simultaneously. This enables increased parallelism for stateless functions.
+Stateless workers are specially marked grains without associated state that can activate on multiple silos simultaneously. This enables increased parallelism for stateless functions.
 
 For more information, see [stateless worker grains](grains/stateless-worker-grains.md).
 
 ### Grain call filters
 
-A [grain call filter](grains/interceptors.md) is logic that's common to many grains. Orleans supports filters for both incoming and outgoing calls. Filters for authorization, logging and telemetry, and error handling are all considered common.
+A [grain call filter](grains/interceptors.md) is logic common to many grains. Orleans supports filters for both incoming and outgoing calls. Common uses include authorization, logging and telemetry, and error handling.
 
 ### Request context
 
-Metadata and other information can be passed with a series of requests using the [request context](grains/request-context.md). Request context can be used for holding distributed tracing information or any other user-defined values.
+Pass metadata and other information with a series of requests using the [request context](grains/request-context.md). Use the request context for holding distributed tracing information or any other defined values.
 
 ### Distributed ACID transactions
 
-In addition to the simple persistence model described above, grains can have a *transactional state*. Multiple grains can participate in [ACID](/windows/win32/cossdk/acid-properties) transactions together regardless of where their state is ultimately stored. Transactions in Orleans are distributed and decentralized (there is no central transaction manager or transaction coordinator) and have [serializable isolation](https://en.wikipedia.org/wiki/Isolation_(database_systems)#Isolation_levels).
+Besides the simple persistence model described above, grains can have *transactional state*. Multiple grains can participate in [ACID](/windows/win32/cossdk/acid-properties) transactions together, regardless of where their state is ultimately stored. Transactions in Orleans are distributed and decentralized (meaning no central transaction manager or coordinator) and have [serializable isolation](https://en.wikipedia.org/wiki/Isolation_(database_systems)#Isolation_levels).
 
 For more information on transactions, see [Transactions](grains/transactions.md).
 
 ### Streams
 
-Streams help developers to process a series of data items in near-real-time. Orleans streams are *managed*; streams don't need to be created or registered before a grain or client publishes, or subscribes to a stream. This allows for greater decoupling of stream producers and consumers from each other and the infrastructure.
+Streams help process a series of data items in near-real-time. Orleans streams are *managed*; streams don't need creating or registering before a grain or client publishes or subscribes. This allows greater decoupling of stream producers and consumers from each other and the infrastructure.
 
-Stream processing is reliable: grains can store checkpoints (cursors) and reset to a stored checkpoint during activation or at any subsequent time. Streams support batch delivery of messages to consumers to improve efficiency and recovery performance.
+Stream processing is reliable: grains can store checkpoints (cursors) and reset to a stored checkpoint during activation or any subsequent time. Streams support batch delivery of messages to consumers to improve efficiency and recovery performance.
 
 Streams are backed by queueing services such as Azure Event Hubs, Amazon Kinesis, and others.
 
-An arbitrary number of streams can be multiplexed onto a smaller number of queues and the responsibility for processing these queues is balanced evenly across the cluster.
+An arbitrary number of streams can be multiplexed onto a smaller number of queues, and the responsibility for processing these queues is balanced evenly across the cluster.
 
 ## Introduction to Orleans video
 
-If you're interested in a video introduction to Orleans, check out the following video:
+For a video introduction to Orleans, check out the following video:
 
 <!-- markdownlint-disable-next-line MD034 -->
 > [!VIDEO https://aka.ms/docs/player?show=reactor&ep=an-introduction-to-orleans]

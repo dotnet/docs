@@ -34,11 +34,12 @@ The only required change to upgrade an app is updating the `TargetFramework` pro
 
 Here's how to do it:
 
-* Open the project file (the `*.csproj`, `*.vbproj`, or `*.fsproj` file).
-* Change the `<TargetFramework>` property value from, for example, `net6.0` to `net8.0`.
-* The same pattern applies for the `<TargetFrameworks>` property if it is being used.
+- Open the project file (the `*.csproj`, `*.vbproj`, or `*.fsproj` file).
+- Change the `<TargetFramework>` property value from, for example, `net6.0` to `net8.0`.
+- The same pattern applies for the `<TargetFrameworks>` property if it is being used.
 
-The [Upgrade Assistant](../porting/upgrade-assistant-overview.md) can make these changes automatically.
+> [!TIP]
+> The [GitHub Copilot app modernization - upgrade](../porting/github-copilot-app-modernization/overview.md) capability can make these changes automatically.
 
 The next step is to build the project (or solution) with the new SDK. If additional changes are needed, the SDK will provide warnings and errors that guide you.
 
@@ -46,9 +47,9 @@ You might need to run `dotnet workload restore` to restore workloads with the ne
 
 More resources:
 
-* [Breaking changes in .NET 9](../compatibility/9.0.md)
-* [Migrate from ASP.NET Core in .NET 7 to .NET 8](/aspnet/core/migration/70-80?tabs=visual-studio)
-* [Upgrade .NET MAUI from .NET 7 to .NET 8](https://github.com/dotnet/maui/wiki/Upgrading-.NET-MAUI-from-.NET-7-to-.NET-8)
+- [Breaking changes in .NET 9](../compatibility/9.0.md)
+- [Migrate an ASP.NET Core app](/aspnet/core/migration/)
+- [Upgrade .NET MAUI from .NET 7 to .NET 8](https://github.com/dotnet/maui/wiki/Upgrading-.NET-MAUI-from-.NET-7-to-.NET-8)
 
 ## Update continuous integration (CI)
 

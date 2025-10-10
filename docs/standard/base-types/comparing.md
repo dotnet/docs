@@ -2,11 +2,10 @@
 title: "Comparing Strings in .NET"
 description: Read about methods to compare strings in .NET. Learn about the Compare, CompareOrdinal, CompareTo, StartsWith, EndsWith, Equals, IndexOf, & LastIndexOf methods.
 ms.date: "03/30/2017"
-ms.topic: conceptual
+ms.topic: article
 dev_langs:
   - "csharp"
   - "vb"
-  - "cpp"
 helpviewer_keywords:
   - "value comparisons of strings"
   - "LastIndexOf method"
@@ -18,7 +17,6 @@ helpviewer_keywords:
   - "EndsWith method"
   - "Equals method"
   - "StartsWith method"
-ms.assetid: 977dc094-fe19-4955-98ec-d2294d04a4ba
 ---
 
 # Compare strings in .NET
@@ -52,7 +50,6 @@ The static <xref:System.String.Compare%2A?displayProperty=nameWithType> method p
 
  The following example uses the <xref:System.String.Compare%2A?displayProperty=nameWithType> method to determine the relative values of two strings.
 
- [!code-cpp[Conceptual.String.BasicOps#6](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.string.basicops/cpp/compare.cpp#6)]
  [!code-csharp[Conceptual.String.BasicOps#6](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.string.basicops/cs/compare.cs#6)]
  [!code-vb[Conceptual.String.BasicOps#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.string.basicops/vb/compare.vb#6)]
 
@@ -69,7 +66,6 @@ The <xref:System.String.CompareOrdinal%2A?displayProperty=nameWithType> method c
 
  The following example uses the `CompareOrdinal` method to compare the values of two strings.
 
- [!code-cpp[Conceptual.String.BasicOps#7](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.string.basicops/cpp/compare.cpp#7)]
  [!code-csharp[Conceptual.String.BasicOps#7](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.string.basicops/cs/compare.cs#7)]
  [!code-vb[Conceptual.String.BasicOps#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.string.basicops/vb/compare.vb#7)]
 
@@ -84,7 +80,6 @@ The <xref:System.String.CompareTo%2A?displayProperty=nameWithType> method compar
 
  The following example uses the <xref:System.String.CompareTo%2A?displayProperty=nameWithType> method to compare the `string1` object to the `string2` object.
 
- [!code-cpp[Conceptual.String.BasicOps#8](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.string.basicops/cpp/compare.cpp#8)]
  [!code-csharp[Conceptual.String.BasicOps#8](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.string.basicops/cs/compare.cs#8)]
  [!code-vb[Conceptual.String.BasicOps#8](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.string.basicops/vb/compare.vb#8)]
 
@@ -96,7 +91,6 @@ The <xref:System.String.CompareTo%2A?displayProperty=nameWithType> method compar
 
 The <xref:System.String.Equals%2A?displayProperty=nameWithType> method can easily determine if two strings are the same. This case-sensitive method returns a `true` or `false` Boolean value. It can be used from an existing class, as illustrated in the next example. The following example uses the `Equals` method to determine whether a string object contains the phrase "Hello World".
 
- [!code-cpp[Conceptual.String.BasicOps#9](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.string.basicops/cpp/compare.cpp#9)]
  [!code-csharp[Conceptual.String.BasicOps#9](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.string.basicops/cs/compare.cs#9)]
  [!code-vb[Conceptual.String.BasicOps#9](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.string.basicops/vb/compare.vb#9)]
 
@@ -104,7 +98,6 @@ The <xref:System.String.Equals%2A?displayProperty=nameWithType> method can easil
 
  This method can also be used as a static method. The following example compares two string objects using a static method.
 
- [!code-cpp[Conceptual.String.BasicOps#10](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.string.basicops/cpp/compare.cpp#10)]
  [!code-csharp[Conceptual.String.BasicOps#10](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.string.basicops/cs/compare.cs#10)]
  [!code-vb[Conceptual.String.BasicOps#10](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.string.basicops/vb/compare.vb#10)]
 
@@ -114,7 +107,6 @@ The <xref:System.String.Equals%2A?displayProperty=nameWithType> method can easil
 
 You can use the <xref:System.String.StartsWith%2A?displayProperty=nameWithType> method to determine whether a string object begins with the same characters that encompass another string. This case-sensitive method returns `true` if the current string object begins with the passed string and `false` if it does not. The following example uses this method to determine if a string object begins with "Hello".
 
- [!code-cpp[Conceptual.String.BasicOps#11](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.string.basicops/cpp/compare.cpp#11)]
  [!code-csharp[Conceptual.String.BasicOps#11](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.string.basicops/cs/compare.cs#11)]
  [!code-vb[Conceptual.String.BasicOps#11](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.string.basicops/vb/compare.vb#11)]
 
@@ -122,7 +114,6 @@ You can use the <xref:System.String.StartsWith%2A?displayProperty=nameWithType> 
 
  The <xref:System.String.EndsWith%2A?displayProperty=nameWithType> method compares a passed string to the characters that exist at the end of the current string object. It also returns a Boolean value. The following example checks the end of a string using the `EndsWith` method.
 
- [!code-cpp[Conceptual.String.BasicOps#12](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.string.basicops/cpp/compare.cpp#12)]
  [!code-csharp[Conceptual.String.BasicOps#12](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.string.basicops/cs/compare.cs#12)]
  [!code-vb[Conceptual.String.BasicOps#12](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.string.basicops/vb/compare.vb#12)]
 
@@ -134,7 +125,6 @@ You can use the <xref:System.String.IndexOf%2A?displayProperty=nameWithType> met
 
 The following example uses the `IndexOf` method to search for the first occurrence of the '`l`' character in a string.
 
- [!code-cpp[Conceptual.String.BasicOps#13](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.string.basicops/cpp/compare.cpp#13)]
  [!code-csharp[Conceptual.String.BasicOps#13](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.string.basicops/cs/compare.cs#13)]
  [!code-vb[Conceptual.String.BasicOps#13](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.string.basicops/vb/compare.vb#13)]
 
@@ -144,7 +134,6 @@ The following example uses the `IndexOf` method to search for the first occurren
 
  The following example uses the `LastIndexOf` method to search for the last occurrence of the '`l`' character in a string.
 
- [!code-cpp[Conceptual.String.BasicOps#14](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.string.basicops/cpp/compare.cpp#14)]
  [!code-csharp[Conceptual.String.BasicOps#14](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.string.basicops/cs/compare.cs#14)]
  [!code-vb[Conceptual.String.BasicOps#14](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.string.basicops/vb/compare.vb#14)]
 

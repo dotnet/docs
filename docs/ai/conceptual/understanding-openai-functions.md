@@ -1,9 +1,8 @@
 ---
 title: "Understanding OpenAI Function Calling"
 description: "Understand how function calling enables you to integrate external tools with your OpenAI application."
-author: haywoodsloan
 ms.topic: concept-article
-ms.date: 12/19/2024
+ms.date: 05/29/2025
 
 #customer intent: As a .NET developer, I want to understand OpenAI function calling so that I can integrate external tools with AI completions in my .NET project.
 
@@ -52,7 +51,7 @@ The Kernel builds the `tools` parameter of a request based on your decorators, o
 
 ## Token counts
 
-Function descriptions are include in the system message of your request to a model. These function descriptions count against your model's [token limit](/azure/ai-services/openai/quotas-limits) and are [included in the cost of the request](https://azure.microsoft.com/pricing/details/cognitive-services/openai-service/).
+Function descriptions are included in the system message of your request to a model. These function descriptions count against your model's [token limit](/azure/ai-services/openai/quotas-limits) and are [included in the cost of the request](https://azure.microsoft.com/pricing/details/cognitive-services/openai-service/).
 
 If your request exceeds the model's token limit, try the following modifications:
 

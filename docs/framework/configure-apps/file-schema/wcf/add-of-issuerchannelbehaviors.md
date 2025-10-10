@@ -7,7 +7,7 @@ ms.assetid: 50710506-e28f-45dd-ab7e-bff6f44173db
 
 # \<add> of \<issuerChannelBehaviors>
 
-Adds an endpoint behavior to be used when communicating with an STS.
+Adds an endpoint behavior to be used when communicating with a security token service (STS).
 
 > [!NOTE]
 > If any endpoint behavior contains a [\<clientCredentials>](clientcredentials.md) element, an exception will be thrown.
@@ -20,7 +20,7 @@ Adds an endpoint behavior to be used when communicating with an STS.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<clientCredentials>**](clientcredentials.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<issuedToken>**](issuedtoken.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<issuerChannelBehaviors>**](issuerchannelbehaviors-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<add>**  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<add>**
 
 ## Syntax
 

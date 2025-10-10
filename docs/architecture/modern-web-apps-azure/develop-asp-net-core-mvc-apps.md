@@ -5,6 +5,7 @@ author: ardalis
 ms.author: wiwagn
 ms.date: 12/12/2021
 no-loc: [Blazor, WebAssembly]
+ms.custom: sfi-ropc-nochange
 ---
 # Develop ASP.NET Core MVC apps
 

@@ -98,6 +98,7 @@ helpviewer_keywords:
   - "CS8634"
   - "CS8636"
   - "CS8637"
+  - "CS8668"
   - "CS8639"
   - "CS8643"
   - "CS8644"
@@ -214,6 +215,33 @@ The following warnings indicate that you haven't set the nullable context correc
 - **CS8632** - *The annotation for nullable reference types should only be used in code within a `#nullable` annotations context.*
 - **CS8636** - *Invalid option for `/nullable`; must be `disable`, `enable`, `warnings` or `annotations`*
 - **CS8637** - *Expected `enable`, `disable`, or `restore`*
+- **CS8668** - *Expected `warnings`, `annotations`, or end of directive*
+
+To set the nullable context correctly, you have two options:
+
+1. **Project-level configuration**: Add the [`<Nullable>`](../compiler-options/language.md#nullable) element to your project file:
+
+      ```xml
+   <PropertyGroup>
+       <Nullable>enable</Nullable>
+   </PropertyGroup>
+   ```
+
+2. **File-level configuration**: Use [`#nullable`](../preprocessor-directives.md#nullable-context) preprocessor directives in your source code:
+
+   ```csharp
+   #nullable enable
+   ```
+
+The nullable context has two independent flags that control different aspects:
+
+- **Annotation flag**: Controls whether you can use `?` to declare nullable reference types and `!` to surpress individual warnings.
+- **Warning flag**: Controls whether the compiler emits nullability warnings
+
+For detailed information about nullable contexts and migration strategies, see:
+
+- [Nullable reference types overview](../../nullable-references.md#nullable-context)
+- [Update a codebase with nullable reference types](../../nullable-migration-strategies.md)
 
 ## Incorrect annotation syntax
 

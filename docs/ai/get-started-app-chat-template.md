@@ -1,9 +1,8 @@
 ---
 title: "Get started with the 'chat using your own data sample' for .NET"
 description: Get started with .NET and search across your own data using a chat app sample implemented using Azure OpenAI Service and Retrieval Augmented Generation (RAG) in Azure AI Search. Easily deploy with Azure Developer CLI. This article uses the Azure AI Reference Template sample.
-ms.date: 12/19/2024
+ms.date: 05/28/2025
 ms.topic: get-started
-ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 # CustomerIntent: As a .NET developer new to Azure OpenAI, I want deploy and use sample code to interact with app infused with my own business data so that learn from the sample code.
 ---
 
@@ -39,7 +38,7 @@ The architecture of the chat app is shown in the following diagram:
 
 - **User interface** - The application's chat interface is a [Blazor WebAssembly](/aspnet/core/blazor/) application. This interface is what accepts user queries, routes request to the application backend, and displays generated responses.
 - **Backend** - The application backend is an [ASP.NET Core Minimal API](/aspnet/core/fundamentals/minimal-apis/overview). The backend hosts the Blazor static web application and is what orchestrates the interactions among the different services. Services used in this application include:
-  - [**Azure Cognitive Search**](/azure/search/search-what-is-azure-search) – Indexes documents from the data stored in an Azure Storage Account. This makes the documents searchable using [vector search](/azure/search/search-get-started-vector) capabilities.
+  - [**Azure AI Search**](/azure/search/search-what-is-azure-search) – Indexes documents from the data stored in an Azure Storage Account. This makes the documents searchable using [vector search](/azure/search/search-get-started-vector) capabilities.
   - [**Azure OpenAI Service**](/azure/ai-services/openai/overview) – Provides the Large Language Models (LLM) to generate responses. [Semantic Kernel](/semantic-kernel/whatissk) is used in conjunction with the Azure OpenAI Service to orchestrate the more complex AI workflows.
 
 ## Cost
@@ -58,16 +57,12 @@ To follow along with this article, you need the following prerequisites:
 
 * An Azure subscription - [Create one for free](https://azure.microsoft.com/free/ai-services?azure-portal=true)
 * Azure account permissions - Your Azure account must have Microsoft.Authorization/roleAssignments/write permissions, such as [User Access Administrator](/azure/role-based-access-control/built-in-roles#user-access-administrator) or [Owner](/azure/role-based-access-control/built-in-roles#owner).
-* Access granted to Azure OpenAI in the desired Azure subscription.
-    Currently, access to this service is granted only by application. You can apply for access to Azure OpenAI by completing the form at [https://aka.ms/oai/access](https://aka.ms/oai/access). Open an issue on this repo to contact us if you have a problem.
 * GitHub account
 
 #### [Visual Studio Code](#tab/visual-studio-code)
 
 * An Azure subscription - [Create one for free](https://azure.microsoft.com/free/ai-services?azure-portal=true)
 * Azure account permissions - Your Azure account must have Microsoft.Authorization/roleAssignments/write permissions, such as [User Access Administrator](/azure/role-based-access-control/built-in-roles#user-access-administrator) or [Owner](/azure/role-based-access-control/built-in-roles#owner).
-* Access granted to Azure OpenAI in the desired Azure subscription.
-    Currently, access to this service is granted only by application. You can apply for access to Azure OpenAI by completing the form at [https://aka.ms/oai/access](https://aka.ms/oai/access). Open an issue on this repo to contact us if you have a problem.
 * [Azure Developer CLI](/azure/developer/azure-developer-cli)
 * [Docker Desktop](https://www.docker.com/products/docker-desktop/) - Start Docker Desktop if it's not already running
 * [Visual Studio Code](https://code.visualstudio.com/)

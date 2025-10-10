@@ -25,3 +25,31 @@ The following methods in the <xref:System.Xml.Linq.XElement> and <xref:System.Xm
 If the method doesn't take <xref:System.Xml.Linq.SaveOptions> as an argument, then the method will format (indent) the serialized XML. In this case, all insignificant white space in the XML tree is discarded.
 
 If the method does take <xref:System.Xml.Linq.SaveOptions> as an argument, then you can specify that the method not format (indent) the serialized XML. In this case, all white space in the XML tree is preserved.
+
+## Roundtripping XML with carriage return entities
+
+The whitespace preservation discussed in this article is different from XML roundtripping. When XML contains carriage return entities (`&#xD;`), LINQ to XML's standard serialization might not preserve them in a way that allows perfect roundtripping.
+
+Consider the following example XML that contains carriage return entities:
+
+```xml
+<x xml:space="preserve">a&#xD;
+b
+c&#xD;</x>
+```
+
+When you parse this XML with `XDocument.Parse()`, the root element's value becomes `"a\r\nb\nc\r"`. However, if you reserialize it using LINQ to XML methods, the carriage returns are not entitized:
+
+:::code language="csharp" source="snippets/preserve-white-space-serializing/RoundtrippingProblem.cs" Id="XmlRoundTrip":::
+
+The values are different: the original was `"a\r\nb\nc\r"` but after roundtripping it becomes `"a\nb\nc\n"`.
+
+### Solution: Use XmlWriter with NewLineHandling.Entitize
+
+To achieve true XML roundtripping that preserves carriage return entities, use <xref:System.Xml.XmlWriter> with <xref:System.Xml.XmlWriterSettings.NewLineHandling> set to <xref:System.Xml.NewLineHandling.Entitize>:
+
+:::code language="csharp" source="snippets/preserve-white-space-serializing/RoundtrippingSolution.cs" Id="XmlRoundTripFix":::
+
+When you need to preserve carriage return entities for XML roundtripping, use <xref:System.Xml.XmlWriter> with the appropriate <xref:System.Xml.XmlWriterSettings> instead of LINQ to XML's built-in serialization methods.
+
+For more information about <xref:System.Xml.XmlWriter> and its settings, see <xref:System.Xml.XmlWriter?displayProperty=fullName>.

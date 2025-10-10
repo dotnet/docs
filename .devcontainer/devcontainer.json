@@ -1,21 +1,57 @@
 {
 	"name": "C# (.NET)",
-	"image": "mcr.microsoft.com/devcontainers/dotnet:latest"
-
-	// Features to add to the dev container. More info: https://containers.dev/features.
-	// "features": {},
-
-	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [5000, 5001],
-	// "portsAttributes": {
-	//		"5001": {
-	//			"protocol": "https"
-	//		}
-	// }
-
-	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "dotnet restore",
-
-	// Configure tool-specific properties.
-	// "customizations": {},
+	"image": "mcr.microsoft.com/devcontainers/dotnet:latest",
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"githubIssues.queries": [
+					{
+						"label": "My dotnet/docs Issues",
+						"query": "is:open assignee:${user} repo:dotnet/docs"
+					},
+					{
+						"label": "My seQUESTered dotnet/docs Issues",
+						"query": "is:open assignee:${user} repo:dotnet/docs sort:updated-desc -label:needs-more-info label:\":pushpin: seQUESTered\""           
+					},
+					{
+						"label": "Created dotnet/docs Issues",
+						"query": "author:${user} state:open repo:dotnet/docs sort:created-desc"
+					},
+					{
+						"label": "Recent Issues",
+						"query": "state:open repo:dotnet/docs sort:updated-desc"
+					}
+				],
+				"githubPullRequests.queries": [
+					{
+						"label": "Waiting for dotnet/docs Review",
+						"query": "repo:dotnet/docs is:open team-review-requested:dotnet/docs"
+					},
+					{
+						"label": "Waiting For Just My Review (dotnet/docs)",
+						"query": "repo:dotnet/docs is:open review-requested:${user} -team-review-requested:dotnet/docs"
+					},
+					{
+						"label": "Assigned To Me (dotnet/docs)",
+						"query": "repo:dotnet/docs is:open assignee:${user}"
+					},
+					{
+						"label": "Created By Me (dotnet/docs)",
+						"query": "repo:dotnet/docs is:open author:${user}"
+					}
+				]
+			},
+			"extensions": [
+				"Acrolinx.vscode-sidebar",
+				"DotJoshJohnson.xml",
+				"GitHub.copilot",
+				"GitHub.copilot-chat",
+				"GitHub.vscode-pull-request-github",
+				"IEvangelist.xref-helper",
+				"docsmsft.docs-authoring-pack",
+				"ms-dotnettools.csdevkit",
+				"ms-dotnettools.csharp"
+			]
+		}
+	}
 }

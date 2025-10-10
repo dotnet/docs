@@ -14,18 +14,17 @@ ms.date: 05/16/2016
 // Property that has both get and set defined.
 [ attributes ]
 [ static ] member [accessibility-modifier] [self-identifier.]PropertyName
-with [accessibility-modifier] get() =
+with [ attributes-for-get ] [accessibility-modifier] get() =
     get-function-body
-and [accessibility-modifier] set parameter =
+and [ attributes-for-set ] [accessibility-modifier] set parameter =
     set-function-body
 
 // Alternative syntax for a property that has get and set.
-[ attributes-for-get ]
-[ static ] member [accessibility-modifier-for-get] [self-identifier.]PropertyName =
+[ static ] member [accessibility-modifier-for-get] [self-identifier.]PropertyName
+with [ attributes-for-get ] get() =
     get-function-body
-[ attributes-for-set ]
 [ static ] member [accessibility-modifier-for-set] [self-identifier.]PropertyName
-with set parameter =
+with [ attributes-for-set ] set parameter =
     set-function-body
 
 // Property that has get only.
@@ -34,15 +33,13 @@ with set parameter =
     get-function-body
 
 // Alternative syntax for property that has get only.
-[ attributes ]
 [ static ] member [accessibility-modifier] [self-identifier.]PropertyName
-with get() =
+with [ attributes ] get() =
     get-function-body
 
 // Property that has set only.
-[ attributes ]
 [ static ] member [accessibility-modifier] [self-identifier.]PropertyName
-with set parameter =
+with [ attributes ] set parameter =
     set-function-body
 
 // Automatically implemented properties.
@@ -66,8 +63,8 @@ Private values that hold the data for properties are called *backing stores*. To
 
 ```fsharp
 type MyClass(property1 : int) =
-member val Property1 = property1
-member val Property2 = "" with get, set
+    member val Property1 = property1
+    member val Property2 = "" with get, set
 ```
 
 Automatically implemented properties are part of the initialization of a type, so they must be included before any other member definitions, just like `let` bindings and `do` bindings in a type definition. Note that the expression that initializes an automatically implemented property is only evaluated upon initialization, and not every time the property is accessed. This behavior is in contrast to the behavior of an explicitly implemented property. What this effectively means is that the code to initialize these properties is added to the constructor of a class. Consider the following code that shows this difference:
@@ -93,7 +90,7 @@ class1.ExplicitProperty = 978922705
 class1.ExplicitProperty = 1131210765
 ```
 
-The output of the preceding code shows that the value of AutoProperty is unchanged when called repeatedly, whereas the ExplicitProperty changes each time it is called. This demonstrates that the expression for an automatically implemented property is not evaluated each time, as is the getter method for the explicit property.
+The output of the preceding code shows that the value of `AutoProperty` is unchanged when called repeatedly, whereas the `ExplicitProperty` changes each time it is called. This demonstrates that the expression for an automatically implemented property is not evaluated each time, as is the getter method for the explicit property.
 
 >[!WARNING]
 >There are some libraries, such as the Entity Framework (`System.Data.Entity`) that perform custom operations in base class constructors that don't work well with the initialization of automatically implemented properties. In those cases, try using explicit properties.

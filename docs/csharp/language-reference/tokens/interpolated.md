@@ -1,7 +1,7 @@
 ---
 title: "$ - string interpolation - format string output"
 description: String interpolation using the `$` token provides a more readable and convenient syntax to format string output than traditional string composite formatting.
-ms.date: 11/22/2024
+ms.date: 10/07/2025
 f1_keywords:
     - "$_CSharpKeyword"
     - "$"
@@ -29,16 +29,16 @@ To identify a string literal as an interpolated string, prepend it with the `$` 
 The structure of an item with an interpolation expression is as follows:
 
 ```csharp
-{<interpolationExpression>[,<alignment>][:<formatString>]}
+{<interpolationExpression>[,<width>][:<formatString>]}
 ```
 
 Elements in square brackets are optional. The following table describes each element:
 
-| Element | Description |
-|--|--|
+| Element                   | Description |
+|---------------------------|-------------|
 | `interpolationExpression` | The expression that produces a result to be formatted. When the expression is `null`, the output is the empty string (<xref:System.String.Empty?displayProperty=nameWithType>). |
-| `alignment` | The constant expression whose value defines the minimum number of characters in the string representation of the expression result. If positive, the string representation is right-aligned; if negative, left-aligned. For more information, see the [Alignment component](../../../standard/base-types/composite-formatting.md#alignment-component) section of the [Composite formatting](../../../standard/base-types/composite-formatting.md) article. |
-| `formatString` | A format string supported by the type of the expression result. For more information, see the [Format string component](../../../standard/base-types/composite-formatting.md#format-string-component) section of the [Composite formatting](../../../standard/base-types/composite-formatting.md) article. |
+| `width`               | The constant expression whose value defines the minimum number of characters in the string representation of the expression result. If positive, the string representation is right-aligned; if negative, left-aligned. For more information, see the [Width component](../../../standard/base-types/composite-formatting.md#width-component) section of the [Composite formatting](../../../standard/base-types/composite-formatting.md) article. |
+| `formatString`            | A format string supported by the type of the expression result. For more information, see the [Format string component](../../../standard/base-types/composite-formatting.md#format-string-component) section of the [Composite formatting](../../../standard/base-types/composite-formatting.md) article. |
 
 The following example uses optional formatting components described in the preceding table:
 
@@ -59,6 +59,8 @@ To embed `{` and `}` characters in the result string, start an interpolated raw 
 :::code language="csharp" source="./snippets/string-interpolation.cs" id="InterpolatedRawStringLiteralWithBraces":::
 
 In the preceding example, an interpolated raw string literal starts with two `$` characters. You need to put every interpolation expression between double braces (`{{` and `}}`). A single brace is embedded into a result string. If you need to embed repeated `{` or `}` characters into a result string, use an appropriately greater number of `$` characters to designate an interpolated raw string literal. If the string literal has more repeated braces than the number of `$` characters, the `{` and `}` characters are grouped from inside to outside. In the preceding example, the literal `The point {{{X}}, {{Y}}}` interprets `{{X}}` and `{{Y}}` as interpolated expressions. The outer `{` and `}` are included verbatim in the output string.
+
+[!INCLUDE[raw-string-tip](../../includes/raw-string-parsing.md)]
 
 ## Special characters
 
@@ -88,14 +90,14 @@ For more information about custom formatting, see the [Custom formatting with IC
 
 ## Other resources
 
-If you're new to string interpolation, see the [String interpolation in C#](../../tutorials/exploration/interpolated-strings.yml) interactive tutorial. You can also check another [String interpolation in C#](../../tutorials/string-interpolation.md) tutorial. That tutorial demonstrates how to use interpolated strings to produce formatted strings.
+If you're new to string interpolation, see the [String interpolation in C#](../../tutorials/string-interpolation.md) interactive tutorial. That tutorial demonstrates how to use interpolated strings to produce formatted strings.
 
 ## Compilation of interpolated strings
 
 The compiler checks if an interpolated string is assigned to a type that satisfies the [_interpolated string handler pattern_](~/_csharplang/proposals/csharp-10.0/improved-interpolated-strings.md#the-handler-pattern). An _interpolated string handler_ is a type that converts the interpolated string into a result string. When an interpolated string has the type `string`, it's processed by the <xref:System.Runtime.CompilerServices.DefaultInterpolatedStringHandler?displayProperty=fullName>. For the example of a custom interpolated string handler, see the [Write a custom string interpolation handler](../../advanced-topics/performance/interpolated-string-handler.md) tutorial. Use of an interpolated string handler is an advanced scenario, typically required for performance reasons.
 
 > [!NOTE]
-> One side effect of interpolated string handlers is that a custom handler, including <xref:System.Runtime.CompilerServices.DefaultInterpolatedStringHandler?displayProperty=nameWithType>, may not evaluate all the interpolation expressions within the interpolated string under all conditions. That means side effects of those expressions may not occur.
+> One side effect of interpolated string handlers is that a custom handler, including <xref:System.Runtime.CompilerServices.DefaultInterpolatedStringHandler?displayProperty=nameWithType>, might not evaluate all the interpolation expressions within the interpolated string under all conditions. That means side effects of those expressions might not occur.
 
 If an interpolated string has the type `string`, it's typically transformed into a <xref:System.String.Format%2A?displayProperty=nameWithType> method call. The compiler can replace <xref:System.String.Format%2A?displayProperty=nameWithType> with <xref:System.String.Concat%2A?displayProperty=nameWithType> if the analyzed behavior would be equivalent to concatenation.
 

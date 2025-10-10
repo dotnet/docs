@@ -35,8 +35,8 @@ However, as an application developer, you would likely prefer to rely on the ric
 
 - To get a fundamental understanding on trace collection with OTel, see our guide on [collecting traces using OpenTelemetry](../../../core/diagnostics/distributed-tracing-collection-walkthroughs.md#collect-traces-using-opentelemetry).
 - For **production-time** trace collection and monitoring, you can use OpenTelemetry with [Prometheus, Grafana, and Jaeger](../../../core/diagnostics/observability-prgrja-example.md) or with [Azure Monitor and Application Insights](../../../core/diagnostics/observability-applicationinsights.md). However, these tools are quite complex and might be inconvenient to use at development time.
-- For **development-time** trace collection and monitoring, we recommend using [Aspire](#collect-traces-with-net-aspire) which provides a simple but extensible way to kickstart distributed tracing in your application and to diagnose issues locally.
-- It's also possible to [reuse the Aspire Service Defaults](#reuse-service-defaults-project-without-net-aspire-orchestration) project without the Aspire orchestration. This is a handy way to introduce and configure OpenTelemetry tracing and metrics in your ASP.NET projects.
+- For **development-time** trace collection and monitoring, we recommend using [Aspire](#collect-traces-with-aspire) which provides a simple but extensible way to kickstart distributed tracing in your application and to diagnose issues locally.
+- It's also possible to [reuse the Aspire Service Defaults](#reuse-service-defaults-project-without-aspire-orchestration) project without the Aspire orchestration. This is a handy way to introduce and configure OpenTelemetry tracing and metrics in your ASP.NET projects.
 
 ### Collect traces with Aspire
 

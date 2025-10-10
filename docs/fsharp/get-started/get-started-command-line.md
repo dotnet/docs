@@ -62,7 +62,7 @@ let getJson value =
     value, json
 ```
 
-Add the `Library` project to the `FSharpSample` solution using the [dotnet sln add](../../core/tools/dotnet-sln.md) command. This command registers the project in the solution file so that the solution can track and build it:
+Add the `Library` project to the `FSharpSample` solution using the [dotnet sln add](../../core/tools/dotnet-sln.md) command. This command adds the project to the solution file so that the solution can track and build it:
 
 ```dotnetcli
 dotnet sln add src/Library/Library.fsproj
@@ -115,7 +115,7 @@ Add a reference to the `Library` project using [dotnet reference add](../../core
 dotnet add src/App/App.fsproj reference src/Library/Library.fsproj
 ```
 
-This adds the following XML to the App.fsproj file:
+The previous command adds the following XML to the App.fsproj file:
 
 ```xml
 <ItemGroup>

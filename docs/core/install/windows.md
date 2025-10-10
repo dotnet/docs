@@ -6,6 +6,7 @@ ms.author: adegeo
 ms.topic: install-set-up-deploy #Don't change
 ms.date: 11/11/2024
 no-loc: ["Program Files", "dotnet"]
+ai-usage: ai-assisted
 #customer intent: As a developer or user, I want to decide the best way to install .NET on Windows.
 ---
 

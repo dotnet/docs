@@ -24,6 +24,9 @@ Unlike .NET Framework, .NET isn't tied to your version of Windows. You can only 
 
 By default, .NET is installed to the _Program Files\\dotnet_ directory on your computer, unless the installation method chooses a different directory.
 
+> [!IMPORTANT]
+> If you're installing .NET system-wide, install with administrative privileges.
+
 .NET is made up of the runtime and the SDK. The runtime runs .NET apps, and the SDK is used to create apps.
 
 ## Choose the correct runtime

@@ -4,14 +4,15 @@ description: Learn how to use the HttpClientLatency with dependency injection in
 author: IEvangelist
 ms.author: dapine
 ms.date: 09/29/2025
+ai-usage: ai-assisted
 ---
 
 # HTTP client latency telemetry in .NET
 
 ### Get started
 
-When building applications that communicate over HTTP it is important to observe request performance characteristics.
-The <xref:Microsoft.Extensions.DependencyInjection.HttpClientLatencyTelemetryExtensions.AddHttpClientLatencyTelemetry*>
+When you build applications that communicate over HTTP, it's important to observe request performance characteristics.
+The <xref:Microsoft.Extensions.DependencyInjection.HttpClientLatencyTelemetryExtensions.AddHttpClientLatencyTelemetry>
 extension enables collection of detailed timing information for outgoing HTTP calls with no changes to calling code.
 It plugs into the existing `HttpClientFactory` pipeline to capture stage timings across the request lifecycle, record
 HTTP protocol details, measure garbage collection impact where the runtime exposes that data, and emit a uniform
@@ -54,7 +55,7 @@ This registration adds a `DelegatingHandler` to all HTTP clients created through
 ### Configure telemetry options
 
 You configure telemetry collection through the `HttpClientLatencyTelemetryOptions` (standard options pattern).
-You can supply values either with a delegate or by binding configuration (e.g. appsettings.json).
+You can supply values either with a delegate or by binding configuration (for example, appsettings.json).
 The options instance is resolved once per handler pipeline so changes apply to new clients/handlers.
 
 ```csharp
@@ -73,13 +74,13 @@ builder.Configuration.GetSection("HttpClientTelemetry"));
 
 The <xref:Microsoft.Extensions.Http.Latency.HttpClientLatencyTelemetryOptions*> class offers the following settings:
 
-| Option                         | Type | Default | Description                                                                                                                                                                                                                                  | When to disable                                                                                                                |
-|--------------------------------|------|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| EnableDetailedLatencyBreakdown | bool | true    | Enables fine-grained phase timing for each HttpClient request (e.g. connection establishment, headers sent, first byte, completion) to produce a breakdown of total latency. Adds a small extra CPU/time measurement cost, no wire overhead. | Set to false only in very high-throughput scenarios where minimal overhead is required and total duration alone is sufficient. |
+| Option                         | Type    | Default | Description                                                                                                                                                                                                                                          | When to disable                                                                                                                  |
+|--------------------------------|---------|---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
+| EnableDetailedLatencyBreakdown | Boolean | `true`  | Enables fine-grained phase timing for each HttpClient request (for example, connection establishment, headers sent, first byte, completion) to produce a breakdown of total latency. Adds a small extra CPU/time measurement cost, no wire overhead. | Set to `false` only in very high-throughput scenarios where minimal overhead is required and total duration alone is sufficient. |
 
 ### Collected telemetry data
 
-When HTTP client latency telemetry is enabled it captures phase timestamps, selected measures (where supported), and protocol attributes used for performance analysis.
+When HTTP client latency telemetry is enabled, it captures phase timestamps, selected measures (where supported), and protocol attributes used for performance analysis.
 
 #### Timing checkpoints
 
@@ -104,17 +105,17 @@ Timestamps are recorded for key stages of the HTTP request lifecycle:
 
 #### Tags
 
-| Tag          | Description                                             |
-|--------------|---------------------------------------------------------|
-| Http.Version | HTTP protocol version negotiated/used (e.g. 1.1, 2, 3). |
+| Tag          | Description                                                     |
+|--------------|-----------------------------------------------------------------|
+| Http.Version | HTTP protocol version negotiated/used (for example, 1.1, 2, 3). |
 
-## Usage Example
+## Usage example
 
-### HTTP Client Logs Enrichment and Redaction
+### HTTP client logs enrichment and redaction
 
-These components enable enriching and redacting `HttpClient` request logs. They remove built-in HTTP Client logging.
+These components enable enriching and redacting `HttpClient` request logs. They remove built-in HTTP client logging.
 
-When using this package, some of the log properties are redacted by default (like full routes), which means that you will need to make sure that a redactor provider is registered in the Dependency Injection container. You can do this by making sure that you call `builder.Services.AddRedaction()` which requires a reference to the `Microsoft.Extensions.Compliance.Redaction` package.
+When using this package, some of the log properties are redacted by default (like full routes), which means that you will need to make sure that a redactor provider is registered in the Dependency Injection container. You can do this by making sure that you call `builder.Services.AddRedaction()`, which requires a reference to the `Microsoft.Extensions.Compliance.Redaction` package.
 
 ```csharp
 public static IServiceCollection AddExtendedHttpClientLogging(this IServiceCollection services)
@@ -143,7 +144,7 @@ builder.Services.AddHttpClientLogEnricher<MyHttpClientLogEnricher>();
 var host = builder.Build();
 ```
 
-It is important to note that the `AddExtendedHttpClientLogging` method will add information to the logs using *enrichment*. This means that the information will be added as tags to the structured logs, but will not be visible in the log message that is printed by default in the console. To view the information, you will need to use a logging provider that supports structured logs. One quick and built-in way to do this, is to call `AddJsonConsole()` to your logging builder, which will print out the full structured logs to the console. Here is a quick sample that uses the `ExtendedHttpClientLogging()` method to automatically log all `HttpClient` request and response bodies, and then prints the full structured logs to the console:
+<xref:Microsoft.Extensions.DependencyInjection.HttpClientLoggingHttpClientBuilderExtensions.AddExtendedHttpClientLogging(Microsoft.Extensions.DependencyInjection.IHttpClientBuilder)> adds information to the logs using *enrichment*. This means that the information is added as tags to the structured logs but **isn't visible** in the log message that's printed by default in the console. To view the information, you need to use a logging provider that supports structured logs. One quick and built-in way to do this is to call `AddJsonConsole()` to your logging builder, which will print out the full structured logs to the console. Here's an example that uses the `ExtendedHttpClientLogging()` method to automatically log all `HttpClient` request and response bodies, and then prints the full structured logs to the console:
 
 ```csharp
 using Microsoft.Extensions.DependencyInjection;
@@ -173,7 +174,7 @@ var client = sp.GetRequiredService<IHttpClientFactory>().CreateClient("foo");
 var response = await client.GetAsync(new Uri("https://httpbin.org/json")).ConfigureAwait(false);
 ```
 
-By default, request and response routes are redacted for privacy reasons. You can change this behavior by making use of the `RequestPathParameterRedactionMode` option like:
+By default, request and response routes are redacted for privacy reasons. You can change this behavior by using the `RequestPathParameterRedactionMode` option like so:
 
 ```csharp
   .AddExtendedHttpClientLogging(o =>
@@ -209,11 +210,11 @@ httpClientBuilder.AddExtendedHttpClientLogging();
 var host = builder.Build();
 ```
 
-### Tracking HTTP Request Client Latency
+### Track HTTP request client latency
 
-These components enable tracking and reporting the latency of HTTP Client request processing.
+These components enable tracking and reporting the latency of HTTP client request processing.
 
-The services can be registered using the following methods:
+You can register the services using the following methods:
 
 ```csharp
 public static IServiceCollection AddHttpClientLatencyTelemetry(this IServiceCollection services)
@@ -248,4 +249,4 @@ var host = builder.Build();
 
 HTTP client latency telemetry runs on all supported targets (.NET 9, .NET 8, .NET Standard 2.0, and .NET Framework 4.6.2).
 Core timing checkpoints are always collected. The GC pause metric (Http.GCPauseTime) is emitted only when running on .NET 8 or .NET 9.
-The implementation detects platform capabilities at runtime and enables what is supported without additional configuration.
+The implementation detects platform capabilities at run time and enables what is supported without additional configuration.

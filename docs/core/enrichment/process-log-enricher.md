@@ -26,7 +26,7 @@ var hostApplicationBuilder = WebApplication.CreateBuilder();
 hostApplicationBuilder.Services.AddProcessLogEnricher();
 ```
 
-Or, optionally, enable or disable individual options of the enricher using <xref:Microsoft.Extensions.DependencyInjection.ProcessEnricherServiceCollectionExtensions.AddProcessLogEnricher(Microsoft.Extensions.Configuration.IConfigurationSection)>:
+Or, optionally, enable or disable individual options of the enricher using <xref:Microsoft.Extensions.DependencyInjection.ProcessEnricherServiceCollectionExtensions.AddProcessLogEnricher(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Microsoft.Extensions.Diagnostics.Enrichment.ProcessLogEnricherOptions})>:
 
 ```cs
 serviceCollection.AddProcessLogEnricher(options =>
@@ -47,7 +47,7 @@ You may also disable or enable individual options using `appsettings.json` file 
 }
 ```
 
-and apply it accordingly using <xref:Microsoft.Extensions.DependencyInjection.ProcessEnricherServiceCollectionExtensions.AddProcessLogEnricher(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Microsoft.Extensions.Diagnostics.Enrichment.ProcessLogEnricherOptions})>:
+and apply it accordingly using <xref:Microsoft.Extensions.DependencyInjection.ProcessEnricherServiceCollectionExtensions.AddProcessLogEnricher(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfigurationSection)>:
 
 ```cs
 serviceCollection.AddProcessLogEnricher(hostBuilder.Configuration.GetSection("ProcessLogEnricherOptions"));

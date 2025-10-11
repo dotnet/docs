@@ -2,16 +2,23 @@
 title: Get started with Azure Blob Storage using F#
 description: Store unstructured data in the cloud with Azure Blob Storage.
 author: sylvanc
-ms.date: 09/17/2024
+ms.date: 10/02/2025
 ms.custom: "devx-track-fsharp"
+ai-usage: ai-assisted
 ---
 # Get started with Azure Blob Storage using F\#
 
 Azure Blob Storage is a service that stores unstructured data in the cloud as objects/blobs. Blob storage can store any type of text or binary data, such as a document, media file, or application installer. Blob storage is also referred to as object storage.
 
-This article shows you how to perform common tasks using Blob storage. The samples are written using F# using the Azure Storage Client Library for .NET. The tasks covered include how to upload, list, download, and delete blobs.
+This article shows you how to perform common tasks using Blob storage. The samples are written using F# with the `Azure.Storage.Blobs` package. The tasks covered include how to upload, list, download, and delete blobs.
 
-For a conceptual overview of blob storage, see [the .NET guide for blob storage](/azure/storage/blobs/storage-quickstart-blobs-dotnet). For ease, these tutorials use [connection strings](/azure/storage/storage-configure-connection-string) to authenticate with Azure. For optimal security, you should use Microsoft Entra ID with [managed identities](/entra/identity/managed-identities-azure-resources/).
+For a conceptual overview of blob storage, see [the .NET guide for blob storage](/azure/storage/blobs/storage-quickstart-blobs-dotnet). For ease, these tutorials use [connection strings](/azure/storage/storage-configure-connection-string) to authenticate with Azure. For production applications, you should use Microsoft Entra ID with [managed identities](/entra/identity/managed-identities-azure-resources/) or the [Azure.Identity library](/dotnet/api/overview/azure/identity-readme) for enhanced security.
+
+> [!IMPORTANT]
+> This article uses the modern `Azure.Storage.Blobs` package. If you're updating from older code that used the deprecated `WindowsAzure.Storage` or `Microsoft.Azure.Storage.Blob` packages, you need to update your package references and namespace declarations. For migration guidance, see [Migrate to Azure.Storage.Blobs](/azure/storage/blobs/storage-quickstart-blobs-dotnet).
+
+> [!NOTE]
+> F# developers might consider the [FSharp.Azure.Blob](https://github.com/random82/FSharp.Azure.Blob) library, which provides a more idiomatic F# API for working with Azure Blob Storage. This community library offers idiomatic F# functions and patterns that make blob operations more natural in F#.
 
 ## Prerequisites
 
@@ -31,7 +38,7 @@ F# Interactive, `dotnet fsi`, can be launched interactively, or it can be launch
 
 ### Add packages in a script
 
-Next, use `#r` `nuget:package name` to install the `Azure.Storage.Blobs` package and `open` namespaces.Such as
+Use `#r` `nuget:package name` to install the `Azure.Storage.Blobs` package and `open` the required namespaces:
 
 ```fsharp
 > #r "nuget: Azure.Storage.Blobs"
@@ -90,7 +97,7 @@ To upload a file to a block blob, get a container client and use it to get a blo
 
 ## List the blobs in a container
 
-To list the blobs in a container, first get a container reference. You can then use the container's `GetBlobs` method to retrieve the blobs and/or directories within it. To access the rich set of properties and methods for a returned `BlobItem`.
+To list the blobs in a container, first get a container reference. You can then use the container's `GetBlobsByHierarchy` method to retrieve the blobs and/or directories within it. This method returns `BlobItem` objects that provide access to blob properties and metadata.
 
 [!code-fsharp[BlobStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L57-L58)]
 
@@ -134,7 +141,7 @@ To delete a blob, first get a blob reference and then call the
 
 If you are listing a large number of blobs, or you want to control the number of results you return in one listing operation, you can list blobs in pages of results. This example shows how to return results in pages.
 
-This example shows a hierarchical listing, by using the `GetBlobsByHierarchy` method of the `BlobClient` .
+This example shows a hierarchical listing, by using the `GetBlobsByHierarchy` method of the `BlobContainerClient`.
 
 [!code-fsharp[BlobStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L88-L100)]
 

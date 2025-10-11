@@ -3,8 +3,8 @@ title: Install .NET on Linux without using a package manager
 description: Demonstrates how to install the .NET SDK and the .NET Runtime on Linux without a package manager. Use the install script or manually extract the binaries.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/11/2024
-ms.custom: linux-related-content
+ms.date: 08/26/2025
+ms.custom: linux-related-content, updateeachrelease
 ---
 
 # Install .NET on Linux by using an install script or by extracting binaries
@@ -15,26 +15,26 @@ This article demonstrates how to install the .NET SDK or the .NET Runtime on Lin
 
 ## .NET releases
 
-There are two types of supported releases, Long Term Support (LTS) releases or Standard Term Support (STS). The quality of all releases is the same. The only difference is the length of support. LTS releases get free support and patches for 3 years. STS releases get free support and patches for 18 months. For more information, see [.NET Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
+There are two types of supported releases, Long Term Support (LTS) and Standard Term Support (STS). The quality of all releases is the same. The only difference is the length of support. LTS releases get free support and patches for three years. STS releases get free support and patches for two years. For more information, see [.NET Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
 
 The following table lists the support status of each version of .NET (and .NET Core):
 
-| ✔️ Supported | ❌ Unsupported |
-|-------------|---------------|
-| 9 (STS)     | 7             |
-| 8 (LTS)     | 6 (LTS)       |
-|             | 5             |
-|             | 3.1           |
-|             | 3.0           |
-|             | 2.2           |
-|             | 2.1           |
-|             | 2.0           |
-|             | 1.1           |
-|             | 1.0           |
+| ✔️ Supported | ❌ Out of support |
+|-------------|------------------|
+| 9 (STS)     | 7                |
+| 8 (LTS)     | 6 (LTS)          |
+|             | 5                |
+|             | 3.1              |
+|             | 3.0              |
+|             | 2.2              |
+|             | 2.1              |
+|             | 2.0              |
+|             | 1.1              |
+|             | 1.0              |
 
 ## Dependencies
 
-It's possible that when you install .NET, specific dependencies may not be installed, such as when [manually installing](#manual-install). The following list details Linux distributions that are supported by Microsoft and have dependencies you may need to install. Check the distribution page for more information:
+It's possible that when you install .NET, specific dependencies might not be installed, such as when you [manually install](#manual-install). The following list details Linux distributions that are supported by Microsoft and have dependencies you might need to install. Check the distribution page for more information:
 
 - [Alpine](linux-alpine.md#dependencies)
 - [Debian](linux-debian.md#dependencies)
@@ -47,7 +47,7 @@ For generic information about the dependencies, see [Self-contained Linux apps](
 
 ### RPM dependencies
 
-If your distribution wasn't previously listed, and is RPM-based, you may need the following dependencies:
+If your distribution wasn't previously listed, and is RPM-based, you might need the following dependencies:
 
 - krb5-libs
 - libicu
@@ -55,7 +55,7 @@ If your distribution wasn't previously listed, and is RPM-based, you may need th
 
 ### DEB dependencies
 
-If your distribution wasn't previously listed, and is debian-based, you may need the following dependencies:
+If your distribution wasn't previously listed, and is debian-based, you might need the following dependencies:
 
 - libc6
 - libgcc1
@@ -116,7 +116,7 @@ To learn how to use the .NET CLI, see [.NET CLI overview](../tools/index.md).
 
 ## Manual install
 
-<!-- Note, this content is copied in macos.md. Any fixes should be applied there too, though content may be different -->
+<!-- Note, this content is copied in macos.md. Any fixes should be applied there too, though content might be different -->
 
 As an alternative to the package managers, you can download and manually install the SDK and runtime. Manual installation is commonly used as part of continuous integration testing or on an unsupported Linux distribution. For a developer or user, it's better to use a package manager.
 
@@ -132,7 +132,7 @@ Different versions of .NET can be extracted to the same folder, which coexist si
 
 ### Example
 
-<!-- Note, this content is copied in macos.md. Any fixes should be applied there too, though content may be different -->
+<!-- Note, this content is copied in macos.md. Any fixes should be applied there too, though content might be different -->
 
 The following commands use Bash to set the environment variable `DOTNET_ROOT` to the current working directory followed by `.dotnet`. That directory is created if it doesn't exist. The `DOTNET_FILE` environment variable is the filename of the .NET binary release you want to install. This file is extracted to the `DOTNET_ROOT` directory. Both the `DOTNET_ROOT` directory and its `tools` subdirectory are added to the `PATH` environment variable.
 

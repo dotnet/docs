@@ -46,6 +46,6 @@ The following table outlines the updates in this release.
 | .NET Framework 3.5, 4.8.1 | [5041169](https://support.microsoft.com/kb/5041169) |
 | **Windows 10, version 22H2** | **[5041355](https://support.microsoft.com/kb/5041355)** |
 | .NET Framework 3.5, 4.8 | [5041167](https://support.microsoft.com/kb/5041167) |
-| .NET Framework 3.5, 4.8.1 | [5041168](https://support.microsoft.com/kb/5041168) |
+| .NET Framework 3.5, 4.8.1 | [5041168](https://support.microsoft.com/topic/july-23-2024-kb5041168-cumulative-update-preview-for-net-framework-3-5-and-4-8-1-for-windows-10-version-22h2-5a91fb88-60f3-4289-836f-454dfa42ade5) |
 
 The operating system row lists a KB that's used for update offering purposes. When the operating system KB is offered, the applicability logic determines the specific .NET Framework update(s) that will be installed. Updates for individual .NET Framework versions will be installed based on the version of .NET Framework that is already present on the device. Because of this, the operating system KB is not expected to be listed as installed updates on the device. The expected update to be installed are the .NET Framework&ndash;specific version updates listed in the previous table.

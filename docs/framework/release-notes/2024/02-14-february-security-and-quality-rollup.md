@@ -30,7 +30,7 @@ Addresses an issue where version of the OSS zlib library is out of date. (*Appli
 
 ## Known issues
 
-This release contains no known issues.  
+This release contains no known issues.
 
 ## Summary tables
 
@@ -74,7 +74,7 @@ The following table is for earlier Windows and Windows Server versions for Secur
 | .NET Framework 4.8 | [5034617](https://support.microsoft.com/kb/5034617) |
 | **Windows Server 2012** | **[5034688](https://support.microsoft.com/kb/5034688)** |
 | .NET Framework 3.5 | [55033897](https://support.microsoft.com/kb/5033897) |
-| .NET Framework 4.6.2, 4.7, 4.7.1, 4.7.2 | [5034621](https://support.microsoft.com/kb/5034621) |
+| .NET Framework 4.6.2, 4.7, 4.7.1, 4.7.2 | [5034621](https://support.microsoft.com/topic/february-13-2024-security-and-quality-rollup-for-net-framework-4-6-2-4-7-4-7-1-4-7-2-for-windows-server-2012-kb5034621-d00874ee-c468-41c8-a6a7-73779d1820c5) |
 | .NET Framework 4.8 | [5034616](https://support.microsoft.com/kb/5034616) |
 | **Windows Server 2008 R2** | **[5034687](https://support.microsoft.com/kb/5034687)** |
 | .NET Framework 3.5.1 | [5033899](https://support.microsoft.com/kb/5033899) |

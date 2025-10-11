@@ -12,7 +12,7 @@ metadata:
   author: alexwolfmsft
   ms.author: alexwolf
 
-# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | tutorial | overview | quickstart | reference | sample | tutorial | video | whats-new
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | tutorial | overview | quickstart | reference | sample | training | tutorial | video | whats-new
 
 landingContent:
 # Cards and links should be based on top customer tasks or top subjects
@@ -27,6 +27,8 @@ landingContent:
             url: overview.md
           - text: Microsoft.Extensions.AI libraries
             url: microsoft-extensions-ai.md
+          - text: Microsoft Agent Framework
+            url: /agent-framework/overview/agent-framework-overview?toc=/dotnet/ai/toc.json&bc=/dotnet/ai/toc.json
       - linkListType: get-started
         links:
           - text: Connect to and prompt an AI model
@@ -71,20 +73,6 @@ landingContent:
             url: how-to/work-with-local-models.md
 
   # Card
-  - title: Tutorials
-    linkLists:
-      - linkListType: tutorial
-        links:
-          - text: Scale Azure OpenAI with Azure Container Apps
-            url: get-started-app-chat-scaling-with-azure-container-apps.md
-          - text: .NET enterprise chat sample using RAG
-            url: get-started-app-chat-template.md
-          - text: Implement RAG using vector search
-            url: tutorials/tutorial-ai-vector-search.md
-          - text: Evaluate a model's response
-            url: tutorials/evaluate-with-reporting.md
-
-  # Card
   - title: Training
     linkLists:
       - linkListType: tutorial
@@ -99,13 +87,27 @@ landingContent:
             url: /training/paths/develop-ai-agents-azure-open-ai-semantic-kernel-sdk
 
   # Card
-  - title: API reference
+  - title: Tutorials
     linkLists:
-      - linkListType: reference
+      - linkListType: tutorial
         links:
-          - text: ChatClientBuilder
-            url: /dotnet/api/microsoft.extensions.ai.chatclientbuilder
-          - text: IChatClient
-            url: /dotnet/api/microsoft.extensions.ai.ichatclient
-          - text: IEmbeddingGenerator
-            url: /dotnet/api/microsoft.extensions.ai.iembeddinggenerator
+          - text: Scale Azure OpenAI with Azure Container Apps
+            url: get-started-app-chat-scaling-with-azure-container-apps.md
+          - text: .NET enterprise chat sample using RAG
+            url: get-started-app-chat-template.md
+          - text: Implement RAG using vector search
+            url: tutorials/tutorial-ai-vector-search.md
+          - text: Evaluate a model's response
+            url: tutorials/evaluate-with-reporting.md
+
+  # Card
+  - title: External resources
+    linkLists:
+      - linkListType: sample
+        links:
+          - text: Get started resources
+            url: resources/get-started.md
+          - text: Azure AI resources
+            url: resources/azure-ai.md
+          - text: MCP server resources
+            url: resources/mcp-servers.md

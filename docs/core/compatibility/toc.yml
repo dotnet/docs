@@ -26,6 +26,8 @@ items:
                 href: aspnet-core/10/apidescription-client-deprecated.md
               - name: Razor run-time compilation is obsolete
                 href: aspnet-core/10/razor-runtime-compilation-obsolete.md
+              - name: WebHostBuilder, IWebHost, and WebHost are obsolete
+                href: aspnet-core/10/webhostbuilder-deprecated.md
           - name: Containers
             items:
               - name: Default .NET images use Ubuntu
@@ -70,6 +72,8 @@ items:
                 href: cryptography/10.0/cosesigner-key-null.md
               - name: Environment variable renamed to DOTNET_OPENSSL_VERSION_OVERRIDE
                 href: cryptography/10.0/version-override.md
+              - name: MLDsa and SlhDsa 'SecretKey' members renamed
+                href: cryptography/10.0/mldsa-slhdsa-secretkey-to-privatekey.md
               - name: OpenSSL cryptographic primitives not supported on macOS
                 href: cryptography/10.0/openssl-macos-unsupported.md
               - name: X500DistinguishedName validation is stricter
@@ -102,8 +106,6 @@ items:
             items:
               - name: HTTP/3 support disabled by default with PublishTrimmed
                 href: networking/10.0/http3-disabled-with-publishtrimmed.md
-              - name: HttpClient/SslStream default certificate revocation check mode changed to Online
-                href: networking/10.0/ssl-certificate-revocation-check-default.md
               - name: Streaming HTTP responses enabled by default in browser HTTP clients
                 href: networking/10.0/default-http-streaming.md
               - name: "'Uri' length limits removed"
@@ -124,6 +126,8 @@ items:
                 href: sdk/10.0/dotnet-new-sln-slnx-default.md
               - name: "`dotnet package list` performs restore"
                 href: sdk/10.0/dotnet-package-list-restore.md
+              - name: "`dotnet tool install --local` creates manifest by default"
+                href: sdk/10.0/dotnet-tool-install-local-manifest.md
               - name: MSBUILDCUSTOMBUILDEVENTWARNING escape hatch removed
                 href: sdk/10.0/custom-build-event-warning.md
               - name: MSBuild custom culture resource handling
@@ -140,6 +144,8 @@ items:
                 href: sdk/10.0/http-warnings-to-errors.md
               - name: NUGET_ENABLE_ENHANCED_HTTP_RETRY environment variable removed
                 href: sdk/10.0/nuget-enhanced-http-retry-removed.md
+              - name: NuGet logs an error for invalid package IDs
+                href: sdk/10.0/nuget-packageid-validation.md
           - name: Windows Forms
             items:
               - name: API obsoletions
@@ -330,6 +336,8 @@ items:
                 href: aspnet-core/8.0/problemdetails-custom-converters.md
               - name: Forwarded Headers Middleware ignores X-Forwarded-* headers from unknown proxies
                 href: aspnet-core/8.0/forwarded-headers-unknown-proxies.md
+              - name: HTTP logging middleware requires AddHttpLogging()
+                href: aspnet-core/8.0/httplogging-addhttplogging-requirement.md
               - name: ISystemClock is obsolete
                 href: aspnet-core/8.0/isystemclock-obsolete.md
               - name: "Minimal APIs: IFormFile parameters require anti-forgery checks"
@@ -392,6 +400,8 @@ items:
                 href: core-libraries/8.0/console-readkey-legacy.md
               - name: Method builders generate parameters with HasDefaultValue=false
                 href: core-libraries/8.0/parameterinfo-hasdefaultvalue.md
+              - name: Package part URIs are now compared case-insensitively in System.IO.Packaging
+                href: core-libraries/8.0/system-io-packaging-case-insensitive-uri.md
               - name: ProcessStartInfo.WindowStyle honored when UseShellExecute is false
                 href: core-libraries/8.0/processstartinfo-windowstyle.md
               - name: RuntimeIdentifier returns platform for which runtime was built
@@ -428,6 +438,8 @@ items:
                 href: extensions/8.0/directoryservices-package.md
               - name: Empty keys added to dictionary by configuration binder
                 href: extensions/8.0/dictionary-configuration-binding.md
+              - name: FromKeyedServicesAttribute.Key can be null
+                href: extensions/8.0/fromkeyedservicesattribute-key-nullable.md
               - name: HostApplicationBuilderSettings.Args respected by constructor
                 href: extensions/8.0/hostapplicationbuilder-ctor.md
               - name: ManagementDateTimeConverter.ToDateTime returns a local time
@@ -478,6 +490,8 @@ items:
                 href: sdk/8.0/dotnet-publish-config.md
               - name: "'dotnet restore' produces security vulnerability warnings"
                 href: sdk/8.0/dotnet-restore-audit.md
+              - name: "'dotnet list package' warns if source doesn't provide vulnerability data"
+                href: sdk/8.0/dotnet-list-package-audit-source-warning.md
               - name: Duplicate output for -getItem, -getProperty, and -getTargetResult
                 href: sdk/8.0/getx-duplicate-output.md
               - name: Implicit `using` for System.Net.Http no longer added

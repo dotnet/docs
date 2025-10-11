@@ -180,6 +180,10 @@
             "redirect_url": "/dotnet/core/compatibility/3.0"
         },
         {
+            "source_path_from_root": "/docs/core/compatibility/networking/10.0/ssl-certificate-revocation-check-default.md",
+            "redirect_url": "/dotnet/core/compatibility/10.0"
+        },
+        {
             "source_path_from_root": "/docs/core/compatibility/networking/7.0/connectasync-argumentexception.md",
             "redirect_url": "/dotnet/core/compatibility/7.0"
         },
@@ -874,6 +878,18 @@
             "redirect_url": "/dotnet/core/deploying"
         },
         {
+            "source_path_from_root": "/docs/core/porting/github-copilot-app-modernization-faq.yml",
+            "redirect_url": "/dotnet/core/porting/github-copilot-app-modernization/faq"
+        },
+        {
+            "source_path_from_root": "/docs/core/porting/github-copilot-app-modernization-overview.md",
+            "redirect_url": "/dotnet/core/porting/github-copilot-app-modernization/overview"
+        },
+        {
+            "source_path_from_root": "/docs/core/porting/how-to-upgrade-with-github-copilot.md",
+            "redirect_url": "/dotnet/core/porting/github-copilot-app-modernization/how-to-upgrade-with-github-copilot"
+        },
+        {
             "source_path_from_root": "/docs/core/porting/libraries.md",
             "redirect_url": "/dotnet/core/porting/"
         },
@@ -921,6 +937,10 @@
             "source_path_from_root": "/docs/core/preview3/deploying/index.md",
             "redirect_url": "/dotnet/core/deploying/index",
             "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/porting/github-copilot-app-modernization-install.md",
+            "redirect_url": "/dotnet/core/porting/github-copilot-app-modernization-overview"
         },
         {
             "source_path_from_root": "/docs/core/preview3/tools/csproj.md",

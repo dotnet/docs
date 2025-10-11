@@ -17,6 +17,14 @@
             "redirect_url": "/dotnet/azure/migration/vm"
         },
         {
+            "source_path_from_root": "/docs/azure/migration/appmod/overview.md",
+            "redirect_url": "/dotnet/core/porting/github-copilot-app-modernization-overview?toc=/dotnet/azure/toc.json&bc=/dotnet/breadcrumb/toc.json"
+        },
+        {
+            "source_path_from_root": "/docs/azure/migration/appmod/faq.md",
+            "redirect_url": "/dotnet/core/porting/github-copilot-app-modernization-faq?toc=/dotnet/azure/toc.json&bc=/dotnet/breadcrumb/toc.json"
+        },
+        {
             "source_path_from_root": "/docs/azure/dotnet-quickstart-vs.md",
             "redirect_url": "/visualstudio/deployment/quickstart-deploy-aspnet-web-app"
         },

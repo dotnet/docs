@@ -2,7 +2,7 @@
 title: "Migrate from Newtonsoft.Json to System.Text.Json - .NET"
 description: "Learn about the differences between Newtonsoft.Json and System.Text.Json and how to migrate to System.Text.Json."
 no-loc: [System.Text.Json, Newtonsoft.Json]
-ms.date: 02/11/2025
+ms.date: 10/03/2025
 helpviewer_keywords:
   - "JSON serialization"
   - "serializing objects"
@@ -24,7 +24,7 @@ The `System.Text.Json` namespace provides functionality for serializing to and d
 * .NET Core 2.0, 2.1, and 2.2
 
 > [!TIP]
-> You can use AI assistance to [migrate from `Newtonsoft.Json`](#use-ai-to-migrate).
+> You can use AI assistance to [migrate from `Newtonsoft.Json`](#use-ai-for-solution-wide-migration).
 
 `System.Text.Json` focuses primarily on performance, security, and standards compliance. It has some key differences in default behavior and doesn't aim to have feature parity with `Newtonsoft.Json`. For some scenarios, `System.Text.Json` currently has no built-in functionality, but there are recommended workarounds. For other scenarios, workarounds are impractical.
 
@@ -463,7 +463,7 @@ In .NET 8 and later versions, you can set your preference for whether to skip or
 
 ### JsonObjectAttribute
 
-`Newtonsoft.Json` has an attribute, `JsonObjectAttribute`, that can be applied at the *type level* to control which members are serialized, how `null` values are handled, and whether all members are required. System.Text.Json has no equivalent attribute that can be applied on a type. For some behaviors, such as `null` value handling, you can either configure the same behavior on the global <xref:System.Text.Json.JsonSerializerOptions> or individually on each property.
+`Newtonsoft.Json` has an attribute, `JsonObjectAttribute`, that can be applied at the *type level* to control which members are serialized, how `null` values are handled, and whether all members are required. System.Text.Json has no equivalent attribute that can be applied on a type. For some behaviors, such as `null` value handling, you can configure the same behavior either on the global <xref:System.Text.Json.JsonSerializerOptions> or individually on each property using <xref:System.Text.Json.Serialization.JsonIgnoreAttribute>.
 
 Consider the following example that uses `Newtonsoft.Json.JsonObjectAttribute` to specify that all `null` properties should be ignored:
 
@@ -514,6 +514,15 @@ public class Person
     public required int? Age { get; set; }
 }
 ```
+
+Finally, consider the following example that uses `Newtonsoft.Json.JsonObjectAttribute` to specify a title for JSON schema generation:
+
+```csharp
+[JsonObject(Title = "PersonTitle")]
+public class Person { ... }
+```
+
+The `Title` property is used for JSON schema metadata and doesn't have a direct equivalent in System.Text.Json. Starting in .NET 9, you can use the <xref:System.Text.Json.Schema.JsonSchemaExporter> to generate JSON schemas and customize the schema title using the <xref:System.Text.Json.Schema.JsonSchemaExporterOptions.TransformSchemaNode%2A> delegate. For an example, see [Transform the generated schema](extract-schema.md#transform-the-generated-schema).
 
 ### TraceWriter
 
@@ -630,26 +639,24 @@ System.Text.Json sets limits that can't be changed for some values, such as the 
 
 Newtonsoft parses `NaN`, `Infinity`, and `-Infinity` JSON string tokens. With System.Text.Json, use <xref:System.Text.Json.Serialization.JsonNumberHandling.AllowNamedFloatingPointLiterals?displayProperty=nameWithType>. For information about how to use this setting, see [Allow or write numbers in quotes](invalid-json.md#allow-or-write-numbers-in-quotes).
 
-## Use AI to migrate
+## Use AI for solution-wide migration
 
-You can use AI tools, such as GitHub Copilot, to migrate your code from `Newtonsoft.Json` to `System.Text.Json` within your IDE. You can customize the prompt per your requirements.
+You can use AI tools, such as GitHub Copilot, to help with migrating your solution code from `Newtonsoft.Json` to `System.Text.Json`.
 
-**Example prompt for Copilot Chat**
+Here's an example prompt you can use in Visual Studio Copilot Chat to migrate a solution.
 
 ```copilot-prompt
-convert the following code to use System.Text.Json
-Product product = new Product();
-
-product.Name = "Apple";
-product.ExpiryDate = new DateTime(2024, 08, 08);
-product.Price = 3.99M;
-product.Sizes = new string[] { "Small", "Medium", "Large" };
-
-string output = JsonConvert.SerializeObject(product);
-Console.WriteLine(output);
+Convert all serialization code in this #solution from Newtonsoft.Json to System.Text.Json, using the recommended approach for my current .NET version.
+- Update attributes and properties, including rules for skipping or renaming during serialization
+- Ensure polymorphic serialization continues to work correctly
+- Respect existing custom converters and project-level settings (for example, from the Utilities folder or appsettings.json)
+- Update related unit tests and highlight any potential breaking changes
+- Generate a migration summary
 ```
 
-GitHub Copilot is powered by AI, so surprises and mistakes are possible. For more information, see [Copilot FAQs](https://aka.ms/copilot-general-use-faqs).
+Review Copilot's suggestions before applying them.
+
+For more information about GitHub Copilot, see GitHub's [FAQs](https://github.com/features/copilot#faq).
 
 ## Additional resources
 

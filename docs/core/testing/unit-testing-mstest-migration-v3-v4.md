@@ -8,7 +8,7 @@ ms.date: 07/22/2025
 
 # Migrate from MSTest v3 to MSTest v4
 
-The preview version MSTest v4 is now available. This migration guide explores what's changed in MSTest v4 and how you can migrate to this version.
+The stable version MSTest v4 is now available. This migration guide explores what's changed in MSTest v4 and how you can migrate to this version.
 
 > [!NOTE]
 > Generally speaking, MSTest v4 isn't binary compatible with MSTest v3. Any library compiled against v3 must be recompiled against v4.
@@ -171,6 +171,23 @@ The property was added on individual data sources like `DataRowAttribute` and `D
 ### `ConditionBaseAttribute.ShouldRun` API change
 
 The `ConditionBaseAttribute.ShouldRun` property was renamed to `IsConditionMet`. That makes it clearer that `ConditionMode` shouldn't be used in the implementation.
+
+### Multiple analyzers are updated to be warning by default
+
+The default severity of the following analyzers changed from Info to Warning:
+
+- [MSTEST0001](./mstest-analyzers/mstest0001.md)
+- [MSTEST0007](./mstest-analyzers/mstest0007.md)
+- [MSTEST0017](./mstest-analyzers/mstest0017.md)
+- [MSTEST0023](./mstest-analyzers/mstest0023.md)
+- [MSTEST0024](./mstest-analyzers/mstest0024.md)
+- [MSTEST0025](./mstest-analyzers/mstest0025.md)
+- [MSTEST0030](./mstest-analyzers/mstest0030.md)
+- [MSTEST0031](./mstest-analyzers/mstest0031.md)
+- [MSTEST0032](./mstest-analyzers/mstest0032.md)
+- [MSTEST0035](./mstest-analyzers/mstest0035.md)
+- [MSTEST0037](./mstest-analyzers/mstest0037.md)
+- [MSTEST0045](./mstest-analyzers/mstest0045.md)
 
 ## Behavior breaking changes
 

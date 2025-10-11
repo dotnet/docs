@@ -24,3 +24,26 @@ let printThenAdd i =
 // because `printThenAdd` has been inferred to have type `int -> int`, but a string was passed in as the `int` parameter
 printThenAdd "a number"
 |> ignore
+
+(* partial application type inference example *)
+// Define a function that takes two arguments and returns their sum
+let Sum x y = x + y
+
+// This works: RegisterFunction1 accepts a function with generic types 'A -> 'B
+// When passed Sum (which is int -> int -> int), type inference maps:
+// 'A to int (the first parameter type)
+// 'B to int -> int (the remaining function after partial application)
+let RegisterFunction1 (fn:'A->'B) = ()
+let Test1 = RegisterFunction1 Sum
+
+// This fails: RegisterFunction2 expects a function 'A -> int (returning int, not a function)
+// When passed Sum (which is int -> int -> int), type inference maps:
+// 'A to int (the first parameter type)
+// But then expects the return type to be int, not int -> int (the partially applied function)
+let RegisterFunction2 (fn:'A->int) = ()
+// Uncommenting the next line would trigger the error:
+// > This expression was expected to have type
+// >   'int -> int'
+// > but here has type
+// >   'int -> int -> int'
+// let Test2 = RegisterFunction2 Sum

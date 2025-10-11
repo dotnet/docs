@@ -25,8 +25,8 @@ There are several ways to collect networking metrics in .NET.
 
 - For a quick overview using a simple, self-contained example, see [Collect metrics with dotnet-counters](#collect-metrics-with-dotnet-counters).
 - For **production-time** metrics collection and monitoring, you can use [Grafana with OpenTelemetry and Prometheus](#view-metrics-in-grafana-with-opentelemetry-and-prometheus) or [Azure Monitor  Application Insights](../../../core/diagnostics/observability-applicationinsights.md). However, these tools might be inconvenient to use at development time because of their complexity.
-- For **development-time** metrics collection and troubleshooting, we recommend using [.NET Aspire](#collect-metrics-with-net-aspire), which provides a simple but extensible way to kickstart metrics and distributed tracing in your application and to diagnose issues locally.
-- It's also possible to [reuse the Aspire Service Defaults](#reuse-service-defaults-project-without-net-aspire-orchestration) project without the Aspire orchestration, which is a handy way to introduce the OpenTelemetry tracing and metrics configuration APIs into your ASP.NET project.
+- For **development-time** metrics collection and troubleshooting, we recommend using [Aspire](#collect-metrics-with-aspire), which provides a simple but extensible way to kickstart metrics and distributed tracing in your application and to diagnose issues locally.
+- It's also possible to [reuse the Aspire Service Defaults](#reuse-service-defaults-project-without-aspire-orchestration) project without the Aspire orchestration, which is a handy way to introduce the OpenTelemetry tracing and metrics configuration APIs into your ASP.NET project.
 
 ### Collect metrics with dotnet-counters
 
@@ -63,21 +63,21 @@ dotnet-counters monitor --counters System.Net.Http,System.Net.NameResolution -n 
 
 ![`dotnet-counters` output](media/dotnet-counters.png)
 
-### Collect metrics with .NET Aspire
+### Collect metrics with Aspire
 
 [!INCLUDE[Aspire Telemetry Overview](./includes/aspire-telemetry-overview.md)]
 
 #### Quick walkthrough
 
-1. Create a **.NET Aspire 9 Starter App** by using `dotnet new`:
+1. Create an **Aspire 9 Starter App** by using `dotnet new`:
 
     ```dotnetcli
     dotnet new aspire-starter-9 --output AspireDemo
     ```
 
-    Or in Visual Studio, create a new project and select the **.NET Aspire 9 Starter App** template:
+    Or in Visual Studio, create a new project and select the **Aspire 9 Starter App** template:
 
-    ![Create a .NET Aspire 9 Starter App in Visual Studio](media/aspire-starter.png)
+    ![Create an Aspire 9 Starter App in Visual Studio](media/aspire-starter.png)
 
 1. Open `Extensions.cs` in the `ServiceDefaults` project, and scroll to the `ConfigureOpenTelemetry` method. Notice the `AddHttpClientInstrumentation()` call subscribing to the networking meters.
 
@@ -103,13 +103,13 @@ dotnet-counters monitor --counters System.Net.Http,System.Net.NameResolution -n 
 
     [![Networking metrics in Aspire Dashboard](media/aspire-metrics-thumb.png)](media/aspire-metrics.png#lightbox)
 
-For more information on .NET Aspire, see:
+For more information on Aspire, see:
 
 - [Aspire Overview](/dotnet/aspire/get-started/aspire-overview)
 - [Telemetry in Aspire](/dotnet/aspire/fundamentals/telemetry)
 - [Aspire Dashboard](/dotnet/aspire/fundamentals/dashboard/explore)
 
-### Reuse Service Defaults project without .NET Aspire orchestration
+### Reuse Service Defaults project without Aspire orchestration
 
 [!INCLUDE[Aspire Service Defaults](./includes/aspire-service-defaults.md)]
 

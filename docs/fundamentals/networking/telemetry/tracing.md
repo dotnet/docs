@@ -35,22 +35,22 @@ However, as an application developer, you would likely prefer to rely on the ric
 
 - To get a fundamental understanding on trace collection with OTel, see our guide on [collecting traces using OpenTelemetry](../../../core/diagnostics/distributed-tracing-collection-walkthroughs.md#collect-traces-using-opentelemetry).
 - For **production-time** trace collection and monitoring, you can use OpenTelemetry with [Prometheus, Grafana, and Jaeger](../../../core/diagnostics/observability-prgrja-example.md) or with [Azure Monitor and Application Insights](../../../core/diagnostics/observability-applicationinsights.md). However, these tools are quite complex and might be inconvenient to use at development time.
-- For **development-time** trace collection and monitoring, we recommend using [.NET Aspire](#collect-traces-with-net-aspire) which provides a simple but extensible way to kickstart distributed tracing in your application and to diagnose issues locally.
-- It's also possible to [reuse the Aspire Service Defaults](#reuse-service-defaults-project-without-net-aspire-orchestration) project without the Aspire orchestration. This is a handy way to introduce and configure OpenTelemetry tracing and metrics in your ASP.NET projects.
+- For **development-time** trace collection and monitoring, we recommend using [Aspire](#collect-traces-with-aspire) which provides a simple but extensible way to kickstart distributed tracing in your application and to diagnose issues locally.
+- It's also possible to [reuse the Aspire Service Defaults](#reuse-service-defaults-project-without-aspire-orchestration) project without the Aspire orchestration. This is a handy way to introduce and configure OpenTelemetry tracing and metrics in your ASP.NET projects.
 
-### Collect traces with .NET Aspire
+### Collect traces with Aspire
 
 [!INCLUDE[Aspire Telemetry Overview](./includes/aspire-telemetry-overview.md)]
 
 [![Aspire Dashboard](../../../core/diagnostics/media/aspire-dashboard-thumb.png)](../../../core/diagnostics/media/aspire-dashboard.png#lightbox)
 
-For more information on .NET Aspire, see:
+For more information on Aspire, see:
 
 - [Aspire Overview](/dotnet/aspire/get-started/aspire-overview)
 - [Telemetry in Aspire](/dotnet/aspire/fundamentals/telemetry)
 - [Aspire Dashboard](/dotnet/aspire/fundamentals/dashboard/explore)
 
-### Reuse Service Defaults project without .NET Aspire Orchestration
+### Reuse Service Defaults project without Aspire Orchestration
 
 [!INCLUDE[Aspire Service Defaults](./includes/aspire-service-defaults.md)]
 
@@ -88,7 +88,7 @@ The following diagram illustrates the behavior of the spans and their relationsh
 
 This walkthrough uses a [.NET 9 Aspire Starter App](/dotnet/aspire/get-started/build-your-first-aspire-app) to demonstrate connection tracing, but it should be easy to set it up with [other monitoring tools](#collect-systemnet-traces) as well. The key step is to enable the ActivitySources.
 
-1. Create a **.NET Aspire 9 Starter App** by using `dotnet new`:
+1. Create an **Aspire 9 Starter App** by using `dotnet new`:
 
     ```dotnetcli
     dotnet new aspire-starter-9 --output ConnectionTracingDemo
@@ -96,13 +96,13 @@ This walkthrough uses a [.NET 9 Aspire Starter App](/dotnet/aspire/get-started/b
 
     Or in Visual Studio:
 
-    ![Create a .NET Aspire 9 Starter App in Visual Studio](media/aspire-starter.png)
+    ![Create an Aspire 9 Starter App in Visual Studio](media/aspire-starter.png)
 
 1. Open `Extensions.cs` in the `ServiceDefaults` project, and edit the `ConfigureOpenTelemetry` method adding the ActivitySources for connection in the tracing configuration callback:
 
     :::code language="csharp" source="snippets/tracing/ConnectionTracingDemo.ServiceDefaults/Extensions.cs" id="snippet_ConnectionTracing":::
 
-1. Start the solution. This should open the [.NET Aspire Dashboard](/dotnet/aspire/fundamentals/dashboard/overview).
+1. Start the solution. This should open the [Aspire Dashboard](/dotnet/aspire/fundamentals/dashboard/overview).
 
 1. Navigate to the Weather page of the `webfrontend` app to generate an `HttpClient` request towards `apiservice`.
 

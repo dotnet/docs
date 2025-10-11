@@ -71,7 +71,7 @@ The following table is for earlier Windows and Windows Server versions for Secur
 | .NET Framework 4.8 | [5065752](https://support.microsoft.com/kb/5065752) |
 | **Windows Server 2012** | **[5065959](https://support.microsoft.com/kb/5065959)** |
 | .NET Framework 3.5 | [5044009](https://support.microsoft.com/kb/5044009) |
-| .NET Framework 4.6.2, 4.7, 4.7.1, 4.7.2 | [5065746](https://support.microsoft.com/kb/5065747) |
+| .NET Framework 4.6.2, 4.7, 4.7.1, 4.7.2 | [5065746](https://support.microsoft.com/kb/5065746) |
 | .NET Framework 4.8 | [5065751](https://support.microsoft.com/kb/5065751) |
 | **Windows Server 2008 R2** | **[5065958](https://support.microsoft.com/kb/5065958)** |
 | .NET Framework 3.5.1 | [5044011](https://support.microsoft.com/kb/5044011) |
@@ -80,6 +80,6 @@ The following table is for earlier Windows and Windows Server versions for Secur
 | **Windows Server 2008** | **[5065961](https://support.microsoft.com/kb/5065961)** |
 | .NET Framework 2.0, 3.0 | [5044010](https://support.microsoft.com/kb/5044010) |
 | .NET Framework 3.5 SP1 | [5040673](https://support.microsoft.com/kb/5040673) |
-| .NET Framework 4.6.2 | [5065750](https://support.microsoft.com/kb/5065745) |
+| .NET Framework 4.6.2 | [5065745](https://support.microsoft.com/kb/5065745) |
 
 The operating system row lists a KB that is used for update offering purposes. When the operating system KB is offered, the applicability logic determines the specific .NET Framework updates to install. Updates for individual .NET Framework versions are installed based on the version of .NET Framework that's already present on the device. Because of this, the operating system KB isn't expected to be listed as **installed updates** on the device. The expected updates to be installed are the .NET Framework-specific version updates listed in the table above.

@@ -1,4 +1,4 @@
-// <complete>
+﻿// <complete>
 using System.Text.RegularExpressions;
 using System.Windows;
 using Microsoft.AspNetCore.Mvc;
@@ -139,7 +139,7 @@ public class Program
     // </GetUsersForDataset>
 
     // <GetUsersForDatasetByLINQ>
-    private static async Task<User[]> GetUsersAsyncByLINQ(IEnumerable<int> userIds)
+    private static async Task<User[]> GetUsersByLINQAsync(IEnumerable<int> userIds)
     {
         var getUserTasks = userIds.Select(id => GetUserAsync(id)).ToArray();
         return await Task.WhenAll(getUserTasks);
@@ -168,8 +168,11 @@ public class Program
     {
         // Suspends GetDotNetCountAsync() to allow the caller (the web server)
         // to accept another request, rather than blocking on this one.
-        var html = await s_httpClient.GetStringAsync(URL);
-        return Regex.Matches(html, @"\.NET").Count;
+        return await Task.Run(() =>
+        {
+            var html = s_httpClient.GetStringAsync(URL).Result;
+            return Regex.Matches(html, @"\.NET").Count;
+        });
     }
     // </ExtractDataFromNetwork>
 

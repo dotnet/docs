@@ -29,7 +29,7 @@ This tutorial shows how to write F# code to do some common tasks using Azure Tab
 
 ## Prerequisites
 
-To use this guide, you must first [create an Azure storage account](/azure/storage/storage-create-storage-account) or [Azure Cosmos DB account](https://azure.microsoft.com/free/cosmos-db/).
+To use this guide, you must first [create an Azure storage account](/azure/storage/storage-create-storage-account) or [Azure Cosmos DB account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 
 ## Create an F\# script and start F\# interactive
 

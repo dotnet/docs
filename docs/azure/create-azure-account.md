@@ -18,7 +18,7 @@ If you have a Visual Studio subscription, your subscription includes credits for
 
 ## Option 2: Sign up for a free Azure account
 
-You can create an [Azure account for free](https://azure.microsoft.com/free/dotnet/) and receive 12 months of popular services for free and a $200 credit to explore Azure for 30 days.
+You can create an [Azure account for free](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) and receive 12 months of popular services for free and a $200 credit to explore Azure for 30 days.
 
 ## Option 3: Sign up for a pay-as-you-go account
 

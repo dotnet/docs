@@ -15,7 +15,7 @@ This checklist is provided to help you make sure you have your development envir
 To access Azure services or run applications in Azure, you need an Azure account.
 
 * If you are a Visual Studio subscriber, you have monthly [free Azure credits](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/) available to you every month
-* [Create a free Azure account](https://azure.microsoft.com/free/dotnet/) and receive $200 in credits and select services free for 12 months
+* [Create a free Azure account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn) and receive $200 in credits and select services free for 12 months
 * Use an account assigned to you by your company's Azure administrator
 
 ## Configure your IDE

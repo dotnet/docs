@@ -12,7 +12,7 @@ ms.topic: get-started
 
 ## Prerequisites
 
-* Azure subscription. [Create one for free](https://azure.microsoft.com/free/ai-services?azure-portal=true).
+* Azure subscription. [Create one for free](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 
 [Dev containers](https://containers.dev/) are available for both samples, with all dependencies required to complete this article. You can run the dev containers in GitHub Codespaces (in a browser) or locally using Visual Studio Code.
 

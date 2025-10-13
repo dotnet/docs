@@ -69,7 +69,7 @@ The following characteristics summarize what makes the previous example an async
   - `void` if you're writing an async event handler.
   - Any other type that has a `GetAwaiter` method.
 
-  For more information, see the [Return types and parameters](#BKMK_ReturnTypesandParameters) section.
+  For more information, see the [Return types and parameters](#return-types-and-parameters) section.
 
 - The method usually includes at least one `await` expression, which marks a point where the method can't continue until the awaited asynchronous operation is complete. In the meantime, the method is suspended, and control returns to the method's caller. The next section of this article illustrates what happens at the suspension point.
 

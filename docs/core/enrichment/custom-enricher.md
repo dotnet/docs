@@ -1,13 +1,13 @@
 ---
 title: Custom log enricher
 description: Learn how to use the custom log enricher in .NET.
-ms.date: 13/10/2025
+ms.date: 10/13/2025
 ---
 
 # Custom log enricher
 
 You can easily create a custom enricher by creating a class that implements the <xref:Microsoft.Extensions.Diagnostics.Enrichment.ILogEnricher> interface.
-After the class is created, you register it with <xref:Microsoft.Extensions.DependencyInjection.AddLogEnricher*>.
+After the class is created, you register it with <xref:Microsoft.Extensions.DependencyInjection.EnrichmentServiceCollectionExtension.AddLogEnricher>.
 And after it's registered, the enricher is invoked any time enrichment is called for.
 
 Your custom enricher only needs to implement a single <xref:Microsoft.Extensions.Diagnostics.Enrichment.ILogEnricher.Enrich(Microsoft.Extensions.Diagnostics.Enrichment.IEnrichmentTagCollector)> method.

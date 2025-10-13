@@ -1,6 +1,6 @@
 ---
 title: .NET implementations
-description: Describes the various .NET implementations, including .NET 5+, .NET Framework and Mono.
+description: Describes the various .NET implementations, including .NET 5+, .NET Framework, and Mono.
 ms.date: 11/22/2024
 ms.custom: updateeachrelease
 ---

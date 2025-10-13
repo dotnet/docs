@@ -36,7 +36,6 @@ This release contains no known issues.
 | --- | --- |
 | **Windows 11, version 24H2** | |
 | .NET Framework 3.5, 4.8.1 | [5064401](https://support.microsoft.com/kb/5064401) |
-| .NET Framework 3.5, 4.8.1 | [5064401](https://support.microsoft.com/topic/august-28-2025-kb5064401-cumulative-update-for-net-framework-3-5-and-4-8-1-for-windows-11-version-24h2-and-microsoft-server-operating-system-version-24h2-71f4180b-3364-4d0e-8032-e8aca043b0fe) |
 | **Microsoft server operating system, version 24H2** | |
 | .NET Framework 3.5, 4.8.1 | [5064401](https://support.microsoft.com/kb/5064401) |
 | **Microsoft server operating system, version 23H2** | |

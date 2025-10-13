@@ -1,9 +1,10 @@
 ---
 title: F# Interactive (dotnet) Reference
 description: Learn how F# Interactive (dotnet fsi) is used to run F# code interactively at the console or to execute F# scripts.
-ms.date: 11/29/2020
+ms.date: 10/13/2025
 f1_keywords:
  - VS.ToolsOptionsPages.F#_Tools.F#_Interactive
+ai-usage: ai-assisted
 ---
 # Interactive programming with F\#
 

@@ -29,7 +29,7 @@ namespace Enrichment
                    .GetRequiredService<ILoggerFactory>()
                    .CreateLogger<Program>();
 
-            logger.LogSampleMessage();
+            logger.LogInformation("This is a sample log message");
 
             await hostBuilder.RunAsync();
 

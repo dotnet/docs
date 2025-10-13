@@ -12,21 +12,31 @@ You can register the enrichers in an IoC container. Then, all registered enriche
 
 ## Usage
 
-To be able to use the process log enricher, first you need to enable enrichment like this:
-:::code language="csharp" source="snippets/enrichment/Program.cs" highlight="15":::
+To be able to use the process log enricher, first you need to enable enrichment. Then you can add the <xref:Microsoft.Extensions.DependencyInjection.ProcessEnricherServiceCollectionExtensions.AddProcessLogEnricher*> with default properties, like this:
 
-then you can add the <xref:Microsoft.Extensions.DependencyInjection.ProcessEnricherServiceCollectionExtensions.AddProcessLogEnricher*> with default properties, like this:
+:::code language="csharp" source="snippets/enrichment/Program.cs" highlight="15,16":::
 
-:::code language="csharp" source="snippets/enrichment/Program.cs" highlight="16":::
+Given this code sample, the output should be like this:
 
-or alternatively:
-
-```cs
-var hostApplicationBuilder = WebApplication.CreateBuilder();
-hostApplicationBuilder.Services.AddProcessLogEnricher();
+```console
+{
+  "EventId": 0,
+  "LogLevel": "Information",
+  "Category": "Enrichment.Program",
+  "Message": "This is a sample log message",
+  "State": {
+    "Message": "This is a sample log message",
+    "process.pid": "10696",
+    "{OriginalFormat}": "This is a sample log message"
+  }
+}   
 ```
 
-Or, optionally, enable or disable individual options of the enricher using <xref:Microsoft.Extensions.DependencyInjection.ProcessEnricherServiceCollectionExtensions.AddProcessLogEnricher(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Microsoft.Extensions.Diagnostics.Enrichment.ProcessLogEnricherOptions})>:
+## `ProcessLogEnricherOptions`
+
+The <xref:Microsoft.Extensions.Diagnostics.Enrichment.ProcessLogEnricherOptions> class provides fine-grained control over which process-related properties are included in your log enrichment. This options class allows you to selectively enable or disable specific enrichment features such as process ID and thread ID information. Although default properties are supplied by the process enricher, you can customize them by initializing an instance of <xref:Microsoft.Extensions.Diagnostics.Enrichment.ProcessLogEnricherOptions> and providing it when registering the enricher.
+
+You can enable or disable individual options of the enricher using <xref:Microsoft.Extensions.DependencyInjection.ProcessEnricherServiceCollectionExtensions.AddProcessLogEnricher(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Microsoft.Extensions.Diagnostics.Enrichment.ProcessLogEnricherOptions})>:
 
 ```cs
 serviceCollection.AddProcessLogEnricher(options =>
@@ -53,13 +63,28 @@ and apply it accordingly using <xref:Microsoft.Extensions.DependencyInjection.Pr
 serviceCollection.AddProcessLogEnricher(hostBuilder.Configuration.GetSection("ProcessLogEnricherOptions"));
 ```
 
+The console output after enabling both options should look like this:
+
+```console
+{
+  "EventId": 0,
+  "LogLevel": "Information",
+  "Category": "Enrichment.Program",
+  "Message": "This is a sample log message",
+  "State": {
+    "Message": "This is a sample log message",
+    "process.pid": "12924",
+    "thread.id": "2",
+    "{OriginalFormat}": "This is a sample log message"
+  }
+}
+```
+
 ## Default configuration
 
-Although default properties are supplied by the process enricher, you can customize them by initializing an instance of <xref:Microsoft.Extensions.Diagnostics.Enrichment.ProcessLogEnricherOptions> and providing it when registering the enricher.
+The default configuration for process log enrichment is:
 
-The default configuration for log enrichment is:
-
-| Property   | Default Value   | Description                                          |
-| -----------| ----------------|------------------------------------------------------|
-| `ProcessId`     | true            | If true, logs are enriched with the current process ID.        |
-| `ThreadId`      | false           | If true, logs are enriched with the current thread ID          |
+| Property   | Default Value   | Description                                                  |
+| -----------| ----------------|--------------------------------------------------------------|
+| `ProcessId`     | true            | If true, logs are enriched with the current process ID. |
+| `ThreadId`      | false           | If true, logs are enriched with the current thread ID   |

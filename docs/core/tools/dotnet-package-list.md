@@ -21,7 +21,7 @@ dotnet package list [--config <SOURCE>]
     [--deprecated] [--project [<PROJECT>|<SOLUTION>]]
     [-f|--framework <FRAMEWORK>] [--highest-minor] [--highest-patch]
     [--include-prerelease] [--include-transitive] [--interactive]
-    [--outdated] [--source <SOURCE>] [-v|--verbosity <LEVEL>]
+    [--no-restore] [--outdated] [--source <SOURCE>] [-v|--verbosity <LEVEL>]
     [--vulnerable]
     [--format <console|json>]
     [--output-version <VERSION>]
@@ -31,9 +31,15 @@ dotnet package list -h|--help
 
 ## Description
 
-The `dotnet package list` command provides a convenient option to list all NuGet package references for a specific project or a solution. You first need to build the project in order to have the assets needed for this command to process. The following example shows the output of the `dotnet package list` command for the [SentimentAnalysis](https://github.com/dotnet/samples/tree/main/machine-learning/tutorials/SentimentAnalysis) project:
+The `dotnet package list` command provides a convenient option to list all NuGet package references for a specific project or a solution.
+Starting with **.NET 10**, the command automatically performs restore if necessary before generating the results.
+In earlier versions, you first need to **build/restore the project** in order to have the assets needed for this command to process.
+The following example shows the output of the `dotnet package list` command for the [SentimentAnalysis](https://github.com/dotnet/samples/tree/main/machine-learning/tutorials/SentimentAnalysis) project:
 
 ```output
+Restore complete (5.9s)
+
+Build succeeded in 6.0s
 Project 'SentimentAnalysis' has the following package references
    [netcoreapp2.1]:
    Top-level Package               Requested   Resolved
@@ -45,11 +51,28 @@ Project 'SentimentAnalysis' has the following package references
 
 The **Requested** column refers to the package version specified in the project file and can be a range. The **Resolved** column lists the version that the project is currently using and is always a single value. The packages displaying an `(A)` right next to their names represent implicit package references that are inferred from your project settings (`Sdk` type, or `<TargetFramework>` or `<TargetFrameworks>` property).
 
+If you want to skip the automatic restore, you can use the `--no-restore` option.
+Example `dotnet package list --no-restore`:
+
+```output
+Project 'SentimentAnalysis' has the following package references
+   [netcoreapp2.1]:
+   Top-level Package               Requested   Resolved
+   > Microsoft.ML                  1.4.0       1.4.0
+   > Microsoft.NETCore.App   (A)   [2.1.0, )   2.1.0
+
+(A) : Auto-referenced package.
+```
+
 Use the `--outdated` option to find out if there are newer versions available of the packages you're using in your projects. By default, `--outdated` lists the latest stable packages unless the resolved version is also a prerelease version. To include prerelease versions when listing newer versions, also specify the `--include-prerelease` option. To update a package to the latest version, use [dotnet package add](dotnet-package-add.md).
 
 The following example shows the output of the `dotnet package list --outdated --include-prerelease` command for the same project as the previous example:
 
 ```output
+Restore complete (0.6s)
+
+Build succeeded in 0.7s
+
 The following sources were used:
    https://api.nuget.org/v3/index.json
    C:\Program Files (x86)\Microsoft SDKs\NuGetPackages\
@@ -63,6 +86,9 @@ Project `SentimentAnalysis` has the following updates to its packages
 If you need to find out whether your project has transitive dependencies, use the `--include-transitive` option. Transitive dependencies occur when you add a package to your project that in turn relies on another package. The following example shows the output from running the `dotnet package list --include-transitive` command for the [HelloPlugin](https://github.com/dotnet/samples/tree/main/core/extensions/AppWithPlugin/HelloPlugin) project, which displays top-level packages and the packages they depend on:
 
 ```output
+Restore complete (0.6s)
+
+Build succeeded in 0.7s
 Project 'HelloPlugin' has the following package references
    [netcoreapp3.0]:
    Transitive Package      Resolved
@@ -108,6 +134,10 @@ The project or solution file to operate on. If not specified, the command search
   Lists transitive packages, in addition to the top-level packages. When specifying this option, you get a list of packages that the top-level packages depend on.
 
 [!INCLUDE [interactive](../../../includes/cli-interactive-3-0.md)]
+
+- **`--no-restore`**
+  
+  Don't restore before running the command.
 
 - **`--outdated`**
 

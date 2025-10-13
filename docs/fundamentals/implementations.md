@@ -23,7 +23,7 @@ There are three main .NET implementations:
 
 ## .NET (Core)
 
-.NET, previously referred to as .NET Core, is currently the primary implementation. .NET (9) is built on a single code base that supports multiple platforms and many workloads, such as Windows desktop apps and cross-platform console apps, cloud services, and websites. [Some workloads](../core/whats-new/dotnet-6.md#sdk-workloads), such as .NET WebAssembly build tools, are available as optional installations.
+.NET, previously referred to as .NET Core, is currently the primary implementation. .NET is built on a single code base that supports multiple platforms and many workloads, such as Windows desktop apps and cross-platform console apps, cloud services, and websites. [Some workloads](../core/whats-new/dotnet-6.md#sdk-workloads), such as .NET WebAssembly build tools, are available as optional installations.
 
 .NET 9 is the latest version of this .NET implementation. It implements .NET Standard, so code that targets .NET Standard can run on .NET. [ASP.NET Core](https://dotnet.microsoft.com/learn/aspnet/what-is-aspnet-core), [Windows Forms](/dotnet/desktop/winforms/windows-forms-overview), and [Windows Presentation Foundation (WPF)](/dotnet/desktop/wpf/) all run on .NET.
 

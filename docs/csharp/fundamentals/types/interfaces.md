@@ -1,14 +1,14 @@
 ---
 title: "Interfaces - define behavior for multiple types"
 description: An interface in C# contains definitions for a group of related functionalities that a non-abstract class or a struct must implement. It specifies the members and their signatures for a type that implements the interface.
-ms.date: 05/14/2021
+ms.date: 10/13/2025
 helpviewer_keywords: 
   - "interfaces [C#]"
   - "C# language, interfaces"
 ---
 # Interfaces - define behavior for multiple types
 
-An interface contains definitions for a group of related functionalities that a non-abstract [`class`](../../language-reference/keywords/class.md) or a [`struct`](../../language-reference/builtin-types/struct.md) must implement. An interface may define `static` methods, which must have an implementation. An interface may define a default implementation for members. An interface may not declare instance data such as fields, automatically implemented properties, or property-like events.
+An interface contains definitions for a group of related functionalities that a non-abstract [`class`](../../language-reference/keywords/class.md) or a [`struct`](../../language-reference/builtin-types/struct.md) must implement. An interface might define `static` methods, which must have an implementation. An interface might define a default implementation for members. An interface might not declare instance data such as fields, automatically implemented properties, or property-like events.
 
 By using interfaces, you can, for example, include behavior from multiple sources in a class. That capability is important in C# because the language doesn't support multiple inheritance of classes. In addition, you must use an interface if you want to simulate inheritance for structs, because they can't actually inherit from another struct or class.
 
@@ -24,14 +24,14 @@ The definition of `IEquatable<T>` doesn't provide an implementation for `Equals`
 
 For more information about abstract classes, see [Abstract and Sealed Classes and Class Members](../../programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members.md).
 
-Interfaces can contain instance methods, properties, events, indexers, or any combination of those four member types. Interfaces may contain static constructors, fields, constants, or operators. Beginning with C# 11, interface members that aren't fields may be `static abstract`. An interface can't contain instance fields, instance constructors, or finalizers. Interface members are public by default, and you can explicitly specify accessibility modifiers, such as `public`, `protected`, `internal`, `private`, `protected internal`, or `private protected`. A `private` member must have a default implementation.
+Interfaces can contain instance methods, properties, events, indexers, or any combination of those four member types. Interfaces might contain static constructors, fields, constants, or operators. Beginning with C# 11, interface members that aren't fields might be `static abstract`. An interface can't contain instance fields, instance constructors, or finalizers. Interface members are public by default, and you can explicitly specify accessibility modifiers, such as `public`, `protected`, `internal`, `private`, `protected internal`, or `private protected`. A `private` member must have a default implementation.
 
 To implement an interface member using implicit implementation, the corresponding member of the implementing class must be public, non-static, and have the same name and signature as the interface member. However, when an interface is meant to be internal only or uses internal types in its signature, you can use explicit interface implementation instead, which doesn't require the implementing member to be public.
 
 > [!NOTE]
-> When an interface declares static members, a type implementing that interface may also declare static members with the same signature. Those are distinct and uniquely identified by the type declaring the member. The static member declared in a type *doesn't* override the static member declared in the interface.
+> When an interface declares static members, a type implementing that interface might also declare static members with the same signature. Those are distinct and uniquely identified by the type declaring the member. The static member declared in a type *doesn't* override the static member declared in the interface.
 
-A class or struct that implements an interface must provide an implementation for all declared members without a default implementation provided by the interface. However, if a base class implements an interface, any class that's derived from the base class inherits that implementation.
+A class or struct that implements an interface must provide an implementation for all declared members without a default implementation provided by the interface. However, if a base class implements an interface, any class derived from the base class inherits that implementation.
 
 The following example shows an implementation of the <xref:System.IEquatable%601> interface. The implementing class, `Car`, must provide an implementation of the <xref:System.IEquatable%601.Equals%2A> method.
 
@@ -39,7 +39,7 @@ The following example shows an implementation of the <xref:System.IEquatable%601
 
 Properties and indexers of a class can define extra accessors for a property or indexer that's defined in an interface. For example, an interface might declare a property that has a [get](../../language-reference/keywords/get.md) accessor. The class that implements the interface can declare the same property with both a `get` and [set](../../language-reference/keywords/set.md) accessor. However, if the property or indexer uses explicit implementation, the accessors must match. For more information about explicit implementation, see [Explicit Interface Implementation](../../programming-guide/interfaces/explicit-interface-implementation.md) and [Interface Properties](../../programming-guide/classes-and-structs/interface-properties.md).
 
-Interfaces can inherit from one or more interfaces. The derived interface inherits the members from its base interfaces. A class that implements a derived interface must implement all members in the derived interface, including all members of the derived interface's base interfaces. That class may be implicitly converted to the derived interface or any of its base interfaces. A class might include an interface multiple times through base classes that it inherits or through interfaces that other interfaces inherit. However, the class can provide an implementation of an interface only one time and only if the class declares the interface as part of the definition of the class (`class ClassName : InterfaceName`). If the interface is inherited because you inherited a base class that implements the interface, the base class provides the implementation of the members of the interface. However, the derived class can reimplement any virtual interface members instead of using the inherited implementation. When interfaces declare a default implementation of a method, any class implementing that interface inherits that implementation (You need to cast the class instance to the interface type to access the default implementation on the Interface member).
+Interfaces can inherit from one or more interfaces. The derived interface inherits the members from its base interfaces. A class that implements a derived interface must implement all members in the derived interface, including all members of the derived interface's base interfaces. That class might be implicitly converted to the derived interface or any of its base interfaces. A class might include an interface multiple times through base classes that it inherits or through interfaces that other interfaces inherit. However, the class can provide an implementation of an interface only one time and only if the class declares the interface as part of the definition of the class (`class ClassName : InterfaceName`). If the interface is inherited because you inherited a base class that implements the interface, the base class provides the implementation of the members of the interface. However, the derived class can reimplement any virtual interface members instead of using the inherited implementation. When interfaces declare a default implementation of a method, any class implementing that interface inherits that implementation (You need to cast the class instance to the interface type to access the default implementation on the Interface member).
 
 A base class can also implement interface members by using virtual members. In that case, a derived class can change the interface behavior by overriding the virtual members. For more information about virtual members, see [Polymorphism](../object-oriented/polymorphism.md).
 
@@ -51,7 +51,7 @@ The following example shows both scenarios:
 
 :::code language="csharp" source="./snippets/interfaces/interfaces.cs" ID="InternalInterfaceExample":::
 
-In the preceding example, the `IConfigurable` interface uses an internal type `InternalConfiguration` in its method signature. The `ServiceImplementation` class cannot use implicit implementation because that would require making the `Configure` method public, which isn't allowed when the method signature contains internal types. Instead, explicit interface implementation is used, which doesn't have an access modifier and is only accessible through the interface type.
+In the preceding example, the `IConfigurable` interface uses an internal type `InternalConfiguration` in its method signature. The `ServiceImplementation` class can't use implicit implementation because that would require making the `Configure` method public, which isn't allowed when the method signature contains internal types. Instead, explicit interface implementation is used, which doesn't have an access modifier and is only accessible through the interface type.
 
 In contrast, the `ILoggable` interface can be implemented implicitly with public members because all types in its signature (`string`) are publicly accessible, even though the interface itself is internal.
 
@@ -62,6 +62,6 @@ For more information about explicit interface implementation, see [Explicit Inte
 An interface has the following properties:
 
 - In C# versions earlier than 8.0, an interface is like an abstract base class with only abstract members. A class or struct that implements the interface must implement all its members.
-- Beginning with C# 8.0, an interface may define default implementations for some or all of its members. A class or struct that implements the interface doesn't have to implement members that have default implementations. For more information, see [default interface methods](../../advanced-topics/interface-implementation/default-interface-methods-versions.md).
+- Beginning with C# 8.0, an interface might define default implementations for some or all of its members. A class or struct that implements the interface doesn't have to implement members that have default implementations. For more information, see [default interface methods](../../advanced-topics/interface-implementation/default-interface-methods-versions.md).
 - An interface can't be instantiated directly. Its members are implemented by any class or struct that implements the interface.
 - A class or struct can implement multiple interfaces. A class can inherit a base class and also implement one or more interfaces.

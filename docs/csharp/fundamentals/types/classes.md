@@ -1,7 +1,7 @@
 ---
 title: "Classes in the C# type system."
 description: Learn about class types, how to use classes, and how to create new class type declarations for your app.
-ms.date: 08/15/2024
+ms.date: 10/10/2025
 helpviewer_keywords: 
   - "classes [C#]"
   - "C# language, classes"
@@ -13,14 +13,14 @@ helpviewer_keywords:
 A type that is defined as a [`class`](../../language-reference/keywords/class.md) is a *reference type*. At run time, when you declare a variable of a reference type, the variable contains the value [`null`](../../language-reference/keywords/null.md) until you explicitly create an instance of the class by using the [`new`](../../language-reference/operators/new-operator.md) operator, or assign it an object of a compatible type created elsewhere, as shown in the following example:
 
 ```csharp
-//Declaring an object of type MyClass.
+// Declaring an object of type MyClass.
 MyClass mc = new MyClass();
 
-//Declaring another object of the same type, assigning it the value of the first object.
+// Declaring another object of the same type, assigning it the value of the first object.
 MyClass mc2 = mc;
 ```
 
-When the object is created, enough memory is allocated on the managed heap for that specific object, and the variable holds only a reference to the location of said object. The memory used by an object is reclaimed by the automatic memory management functionality of the CLR, which is known as *garbage collection*. For more information about garbage collection, see [Automatic memory management and garbage collection](../../../standard/garbage-collection/fundamentals.md).
+When the object is created, enough memory is allocated on the managed heap for that specific object, and the variable holds only a reference to the location of said object. The memory used by an object is reclaimed by the automatic memory management functionality of the Common Language Runtime (CLR), which is known as *garbage collection*. For more information about garbage collection, see [Automatic memory management and garbage collection](../../../standard/garbage-collection/fundamentals.md).
 
 ## Declaring classes
 

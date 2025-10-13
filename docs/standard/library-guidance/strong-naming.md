@@ -1,7 +1,7 @@
 ---
 title: Strong naming and .NET libraries
 description: Best practice recommendations for strong naming .NET libraries.
-ms.date: 10/16/2018
+ms.date: 10/13/2025
 ---
 # Strong naming
 
@@ -34,9 +34,9 @@ The benefits of strong naming on .NET Framework are:
 
 Strong naming has no benefits on .NET Core/5+. C# compiler produces CS8002 warning for strong-named assemblies referencing non-strong named assemblies. It is fine to suppress this warning for libraries that target .NET Core/5+ only.
 
-## Create strong named .NET libraries
+## When to strong name .NET libraries
 
-You should strong name your open-source .NET libraries if their targets include .NET Framework or .NET Standard. Strong naming is not required for libraries that target .NET Core/5+ only.
+Strong naming is not required for libraries that target .NET Core/5+ only. You should strong name your open-source .NET libraries if their targets include .NET Framework or .NET Standard.
 
 > [!NOTE]
 > This guidance is specific to publicly distributed .NET libraries, such as .NET libraries published on NuGet.org. Strong naming is not required by most .NET applications and should not be done by default.

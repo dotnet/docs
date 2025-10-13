@@ -1,6 +1,6 @@
 ---
 title: .NET implementations
-description: Describes the various .NET implementations, including .NET 5+, .NET Framework, Mono, and UWP.
+description: Describes the various .NET implementations, including .NET 5+, .NET Framework, and Mono.
 ms.date: 11/22/2024
 ms.custom: updateeachrelease
 ---
@@ -15,20 +15,17 @@ Each implementation of .NET includes the following components:
 - Optionally, one or more application frameworks&mdash;for example, [ASP.NET](https://www.asp.net/), [Windows Forms](/dotnet/desktop/winforms/windows-forms-overview), and [Windows Presentation Foundation (WPF)](/dotnet/desktop/wpf/) are included in .NET Framework and .NET 5+.
 - Optionally, development tools. Some development tools are shared among multiple implementations.
 
-There are four .NET implementations that Microsoft supports:
+There are three main .NET implementations:
 
-- .NET 5 and later versions
+- .NET (Core)
 - .NET Framework
 - Mono
-- UWP
 
-.NET, previously referred to as .NET Core, is currently the primary implementation. .NET (9) is built on a single code base that supports multiple platforms and many workloads, such as Windows desktop apps and cross-platform console apps, cloud services, and websites. [Some workloads](../core/whats-new/dotnet-6.md#sdk-workloads), such as .NET WebAssembly build tools, are available as optional installations.
+## .NET (Core)
 
-## .NET 5 and later versions
+.NET, previously referred to as .NET Core, is currently the primary implementation. .NET is built on a single code base that supports multiple platforms and many workloads, such as Windows desktop apps and cross-platform console apps, cloud services, and websites. [Some workloads](../core/whats-new/dotnet-6.md#sdk-workloads), such as .NET WebAssembly build tools, are available as optional installations.
 
-.NET, previously referred to as .NET Core, is a cross-platform implementation of .NET that's designed to handle server and cloud workloads at scale. It also supports other workloads, including desktop apps. It runs on Windows, macOS, and Linux. It implements .NET Standard, so code that targets .NET Standard can run on .NET. [ASP.NET Core](https://dotnet.microsoft.com/learn/aspnet/what-is-aspnet-core), [Windows Forms](/dotnet/desktop/winforms/windows-forms-overview), and [Windows Presentation Foundation (WPF)](/dotnet/desktop/wpf/) all run on .NET.
-
-.NET 9 is the latest version of this .NET implementation.
+.NET 9 is the latest version of this .NET implementation. It implements .NET Standard, so code that targets .NET Standard can run on .NET. [ASP.NET Core](https://dotnet.microsoft.com/learn/aspnet/what-is-aspnet-core), [Windows Forms](/dotnet/desktop/winforms/windows-forms-overview), and [Windows Presentation Foundation (WPF)](/dotnet/desktop/wpf/) all run on .NET.
 
 For more information, see the following resources:
 
@@ -44,18 +41,10 @@ For more information, see the [.NET Framework guide](../framework/index.yml).
 
 ## Mono
 
-Mono is a .NET implementation that is mainly used when a small runtime is required. It is the runtime that powered Xamarin applications (now unsupported) on Android, macOS, iOS, tvOS, and watchOS and is focused primarily on a small footprint. Mono also powers games built using the Unity engine.
+The original community and open source .NET. Mono is a cross-platform implementation of .NET Framework. It's the runtime that powered Xamarin applications (now unsupported) on Android, macOS, iOS, tvOS, and watchOS and is focused primarily on a small footprint. Mono also powers games built using the Unity engine.
 
 It supports all of the currently published .NET Standard versions.
 
 Historically, Mono implemented the larger API of .NET Framework and emulated some of the most popular capabilities on Unix. It is sometimes used to run .NET applications that rely on those capabilities on Unix.
 
-Mono is typically used with a just-in-time compiler, but it also features a full static compiler (ahead-of-time compilation) that is used on platforms like iOS.
-
-For more information, see the [Mono documentation](https://www.mono-project.com/docs/).
-
-## Universal Windows Platform (UWP)
-
-UWP is an implementation of .NET that is used for building modern, touch-enabled Windows applications and software for the Internet of Things (IoT). It's designed to unify the different types of devices that you may want to target, including PCs, tablets, phones, and even the Xbox. UWP provides many services, such as a centralized app store, an execution environment (AppContainer), and a set of Windows APIs to use instead of Win32 (WinRT). Apps can be written in C++, C#, Visual Basic, and JavaScript.
-
-For more information, see [Introduction to the Universal Windows Platform](/windows/uwp/get-started/universal-application-platform-guide).
+For more information, see the [Mono documentation](https://www.mono-project.com/).

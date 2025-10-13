@@ -98,6 +98,8 @@ items:
                 href: globalization/10.0/version-override.md
           - name: Interop
             items:
+              - name: Disallow loading non-Explicit types with explicit field offsets
+                href: interop/10.0/explicit-field-offset-validation.md
               - name: Single-file apps no longer look for native libraries in executable directory
                 href: interop/10.0/native-library-search.md
               - name: Specifying DllImportSearchPath.AssemblyDirectory only searches the assembly directory

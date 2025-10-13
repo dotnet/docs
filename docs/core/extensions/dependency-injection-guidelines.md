@@ -159,7 +159,7 @@ The factory method of a singleton service, such as the second argument to [AddSi
     - **Testing challenges**: Shared state and coupling can make unit testing more difficult.
     - **Memory impact**: A singleton may keep a large object graph alive in memory for the lifetime of the application.
     - **Fault tolerance**: If a singleton or any part of its dependency tree fails, it cannot easily recover.
-    - **Configuration reloading**: Singletons generally cannot support “hot reload” of configuration values.
+    - **Configuration reloading**: Singletons generally cannot support "hot reload" of configuration values.
     - **Scope leakage**: A singleton can inadvertently capture scoped or transient dependencies, effectively promoting them to singletons and causing unintended side effects.
     - **Initialization overhead**: When resolving a service, the IoC container needs to look up the singleton instance. If it doesn't already exist, it needs to create it in a thread-safe manner. In contrast, a stateless transient service is very cheap to create and destroy.
 

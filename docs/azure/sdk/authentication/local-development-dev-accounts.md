@@ -94,4 +94,4 @@ Connect-AzAccount -UseDeviceAuthentication
 
 ---
 
-[!INCLUDE [Implement DefaultAzureCredential](~/azure-dev-docs-pr/articles/includes/authentication/includes/implement-defaultazurecredential.md)]
+[!INCLUDE [Implement DefaultAzureCredential](../includes/implement-defaultazurecredential.md)]

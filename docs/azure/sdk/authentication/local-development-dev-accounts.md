@@ -32,9 +32,9 @@ The Azure Identity library can detect that the developer is signed-in from one o
 
 This approach takes advantage of the developer's existing Azure accounts to streamline the authentication process. However, a developer's account likely has more permissions than required by the app, therefore exceeding the permissions the app runs with in production. As an alternative, you can [create application service principals to use during local development](./local-development-service-principal.md), which can be scoped to have only the access needed by the app.
 
-[!INCLUDE [auth-create-entra-group](../includes/auth-create-entra-group.md)]
+[!INCLUDE [auth-create-entra-group](~/../azure-dev-docs-pr/articles/includes/authentication/auth-create-entra-group.md)]
 
-[!INCLUDE [auth-assign-group-roles](../includes/auth-assign-group-roles.md)]
+[!INCLUDE [auth-assign-group-roles](~/../azure-dev-docs-pr/articles/includes/authentication/auth-assign-group-roles.md)]
 
 ## Sign-in to Azure using developer tooling
 
@@ -94,4 +94,4 @@ Connect-AzAccount -UseDeviceAuthentication
 
 ---
 
-[!INCLUDE [Implement DefaultAzureCredential](<../includes/implement-defaultazurecredential.md>)]
+[!INCLUDE [Implement DefaultAzureCredential](~/../azure-dev-docs-pr/articles/includes/authentication/implement-defaultazurecredential.md)]

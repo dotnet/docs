@@ -34,7 +34,7 @@ The error can appear for multiple reasons:
 
 - [Using a .testsettings file](#using-a-testsettings-file)
 - [Setting ForcedLegacyMode](#setting-forcedlegacymode)
-- [Web and Load tests (WLT)](web-and-load-tests-wlt)
+- [Web and Load tests (WLT)](#web-and-load-tests-wlt)
 - [Coded UI tests (CUIT)](#coded-ui-tests-cuit)
 - [Manual tests](#manual-tests)
 - [Generic tests](#generic-tests)

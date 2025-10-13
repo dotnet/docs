@@ -9,8 +9,6 @@ ai-usage: ai-assisted
 
 # HTTP client latency telemetry in .NET
 
-### Get started
-
 When you build applications that communicate over HTTP, it's important to observe request performance characteristics.
 The <xref:Microsoft.Extensions.DependencyInjection.HttpClientLatencyTelemetryExtensions.AddHttpClientLatencyTelemetry*>
 extension enables collection of detailed timing information for outgoing HTTP calls with no changes to calling code.
@@ -118,10 +116,20 @@ These components enable enriching and redacting `HttpClient` request logs. They 
 When using this package, some of the log properties are redacted by default (like full routes), which means that you will need to make sure that a redactor provider is registered in the Dependency Injection container. You can do this by making sure that you call `builder.Services.AddRedaction()`, which requires a reference to the `Microsoft.Extensions.Compliance.Redaction` package.
 
 ```csharp
-public static IServiceCollection AddExtendedHttpClientLogging(this IServiceCollection services)
-public static IServiceCollection AddExtendedHttpClientLogging(this IServiceCollection services, IConfigurationSection section)
-public static IServiceCollection AddExtendedHttpClientLogging(this IServiceCollection services, Action<LoggingOptions> configure)
-public static IServiceCollection AddHttpClientLogEnricher<T>(this IServiceCollection services) where T : class, IHttpClientLogEnricher
+public static IServiceCollection AddExtendedHttpClientLogging(
+    this IServiceCollection services);
+
+public static IServiceCollection AddExtendedHttpClientLogging(
+    this IServiceCollection services,
+    IConfigurationSection section);
+
+public static IServiceCollection AddExtendedHttpClientLogging(
+    this IServiceCollection services,
+    Action<LoggingOptions> configure);
+
+public static IServiceCollection AddHttpClientLogEnricher<T>(
+    this IServiceCollection services)
+    where T : class, IHttpClientLogEnricher;
 ```
 
 For example:
@@ -152,9 +160,11 @@ using Microsoft.Extensions.Logging;
 
 var services = new ServiceCollection();
 
-services.AddLogging(o => o.SetMinimumLevel(LogLevel.Trace).AddJsonConsole()); // <-- Enable structured logging to the console
+// Enable structured logging to the console
+services.AddLogging(o => o.SetMinimumLevel(LogLevel.Trace).AddJsonConsole());
 
-// Adding default redactor provider to the DI container. This is required when using the AddExtendedHttpClientLogging() method.
+// Adding default redactor provider to the DI container. 
+// This is required when using the AddExtendedHttpClientLogging() method.
 services.AddRedaction();
 
 services.AddHttpClient("foo")
@@ -177,20 +187,28 @@ var response = await client.GetAsync(new Uri("https://httpbin.org/json")).Config
 By default, request and response routes are redacted for privacy reasons. You can change this behavior by using the `RequestPathParameterRedactionMode` option like so:
 
 ```csharp
-  .AddExtendedHttpClientLogging(o =>
+.AddExtendedHttpClientLogging(o =>
 {
     //.. Other options
 
-    o.RequestPathParameterRedactionMode = HttpRouteParameterRedactionMode.None; // <-- Disable redaction of request/response routes
+    // Disable redaction of request/response routes
+    o.RequestPathParameterRedactionMode = HttpRouteParameterRedactionMode.None;
 });
 ```
 
 You can also use the following extension methods to apply the logging to the specific `IHttpClientBuilder`:
 
 ```csharp
-public static IHttpClientBuilder AddExtendedHttpClientLogging(this IHttpClientBuilder builder)
-public static IHttpClientBuilder AddExtendedHttpClientLogging(this IHttpClientBuilder builder, IConfigurationSection section)
-public static IHttpClientBuilder AddExtendedHttpClientLogging(this IHttpClientBuilder builder, Action<LoggingOptions> configure)
+public static IHttpClientBuilder AddExtendedHttpClientLogging(
+    this IHttpClientBuilder builder);
+
+public static IHttpClientBuilder AddExtendedHttpClientLogging(
+    this IHttpClientBuilder builder,
+    IConfigurationSection section);
+
+public static IHttpClientBuilder AddExtendedHttpClientLogging(
+    this IHttpClientBuilder builder,
+    Action<LoggingOptions> configure);
 ```
 
 For example:
@@ -217,9 +235,16 @@ These components enable tracking and reporting the latency of HTTP client reques
 You can register the services using the following methods:
 
 ```csharp
-public static IServiceCollection AddHttpClientLatencyTelemetry(this IServiceCollection services)
-public static IServiceCollection AddHttpClientLatencyTelemetry(this IServiceCollection services, IConfigurationSection section)
-public static IServiceCollection AddHttpClientLatencyTelemetry(this IServiceCollection services, Action<HttpClientLatencyTelemetryOptions> configure)
+public static IServiceCollection AddHttpClientLatencyTelemetry(
+    this IServiceCollection services);
+
+public static IServiceCollection AddHttpClientLatencyTelemetry(
+    this IServiceCollection services,
+    IConfigurationSection section);
+
+public static IServiceCollection AddHttpClientLatencyTelemetry(
+    this IServiceCollection services,
+    Action<HttpClientLatencyTelemetryOptions> configure);
 ```
 
 For example:

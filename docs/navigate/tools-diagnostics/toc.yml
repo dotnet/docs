@@ -447,9 +447,12 @@ items:
           - name: Built-in activities
             href: ../../core/diagnostics/distributed-tracing-builtin-activities.md
       - name: Enrichment
+        href: ../../core/enrichment/overview.md
         items:
           - name: Process log enricher
             href: ../../core/enrichment/process-log-enricher.md
+          - name: Custom enricher
+            href: ../../core/enrichment/custom-enricher.md
       - name: Specialized diagnostics
         items:
           - name: Overview

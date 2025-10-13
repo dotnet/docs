@@ -20,7 +20,7 @@ This security update addresses a remote code execution vulnerability detailed in
 
 ### Quality and reliability improvements
 
-There are no new Quality and Reliability Improvements in this update.
+There are no new quality and reliability improvements in this update.
 
 ## Known issues in this release
 

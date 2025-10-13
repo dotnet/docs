@@ -41,7 +41,7 @@ For more information, see the [.NET Framework guide](../framework/index.yml).
 
 ## Mono
 
-The original community and open source .NET. A cross-platform implementation of .NET Framework. It is the runtime that powered Xamarin applications (now unsupported) on Android, macOS, iOS, tvOS, and watchOS and is focused primarily on a small footprint. Mono also powers games built using the Unity engine.
+The original community and open source .NET. Mono is a cross-platform implementation of .NET Framework. It's the runtime that powered Xamarin applications (now unsupported) on Android, macOS, iOS, tvOS, and watchOS and is focused primarily on a small footprint. Mono also powers games built using the Unity engine.
 
 It supports all of the currently published .NET Standard versions.
 

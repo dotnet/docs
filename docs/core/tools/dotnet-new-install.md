@@ -11,9 +11,6 @@ ms.date: 04/15/2022
 
 `dotnet new install` - installs a template package.
 
-> [!WARNING]
-> Templates can run MSBuild code when triggered, don't install or run untrusted .NET templates.
-
 ## Synopsis
 
 ```dotnetcli
@@ -44,6 +41,9 @@ Starting with .NET SDK 6.0.100, installed template packages are available in lat
 >   ```dotnetcli
 >   dotnet new --install Microsoft.Azure.WebJobs.ProjectTemplates
 >   ```
+
+> [!WARNING]
+> Templates can run MSBuild code when triggered, don't install or run untrusted .NET templates.
 
 ## Arguments
 

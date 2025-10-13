@@ -105,9 +105,6 @@ f1_keywords:
   - "CS4036"
   - "CS7002"
   - "CS7006"
-  - "CS7009"
-  - "CS7010"
-  - "CS7011"
   - "CS7012"
   - "CS7013"
   - "CS7014"
@@ -118,7 +115,7 @@ f1_keywords:
   - "CS7019"
   - "CS7020"
   - "CS7021"
-  - "CS7022"
+  - "CS7022" # build only diagnostic
   - "CS7024"
   - "CS7025"
   - "CS7026"
@@ -130,7 +127,7 @@ f1_keywords:
   - "CS7033"
   - "CS7034"
   - "CS7035"
-  - "CS7038"
+  - "CS7038" # build only diagnostic
   - "CS7041"
   - "CS7042"
   - "CS7043"
@@ -173,23 +170,23 @@ f1_keywords:
   - "CS7098"
   - "CS7099"
   - "CS7100"
-  - "CS7101"
+  - "CS7101" # build only diagnostic
   - "CS7102"
   - "CS7103"
   - "CS8001"
   - "CS8002"
   - "CS8003"
-  - "CS8004"
-  - "CS8005"
-  - "CS8006"
-  - "CS8007"
-  - "CS8008"
+  - "CS8004" # build only diagnostic
+  - "CS8005" # build only diagnostic
+  - "CS8006" # build only diagnostic
+  - "CS8007" # build only diagnostic
+  - "CS8008" # build only diagnostic
   - "CS8009"
-  - "CS8010"
-  - "CS8011"
+  - "CS8010" # build only diagnostic
+  - "CS8011" # build only diagnostic
   - "CS8012"
-  - "CS8013"
-  - "CS8014"
+  - "CS8013" # build only diagnostic
+  - "CS8014" # build only diagnostic
   - "CS8015"
   - "CS8016"
   - "CS8017"
@@ -204,7 +201,7 @@ f1_keywords:
   - "CS8032"
   - "CS8033"
   - "CS8034"
-  - "CS8035"
+  - "CS8035" # build only diagnostic
   - "CS8036"
   - "CS8040"
   - "CS8050"
@@ -216,7 +213,7 @@ f1_keywords:
   - "CS8070"
   - "CS8076"
   - "CS8077"
-  - "CS8078"
+  - "CS8078" # build only diagnostic
   - "CS8079"
   - "CS8080"
   - "CS8081"
@@ -231,8 +228,6 @@ f1_keywords:
   - "CS8094"
   - "CS8095"
   - "CS8096"
-  - "CS8097"
-  - "CS8098"
   - "CS8099"
   - "CS8100"
   - "CS8101"
@@ -378,7 +373,6 @@ f1_keywords:
   - "CS8664"
   - "CS8665"
   - "CS8666"
-  - "CS8668"
   - "CS8669"
   - "CS8700"
   - "CS8701"
@@ -483,8 +477,6 @@ f1_keywords:
   - "CS8934"
   - "CS8935"
   - "CS8937"
-  - "CS8938"
-  - "CS8939"
   - "CS8940"
   - "CS8941"
   - "CS8942"
@@ -513,21 +505,6 @@ f1_keywords:
   - "CS8986"
   - "CS8987"
   - "CS8989"
-  - "CS8996"
-  - "CS8997"
-  - "CS8998"
-  - "CS8999"
-  - "CS9000"
-  - "CS9001"
-  - "CS9002"
-  - "CS9003"
-  - "CS9004"
-  - "CS9005"
-  - "CS9006"
-  - "CS9007"
-  - "CS9008"
-  - "CS9009"
-  - "CS9010"
   - "CS9011"
   - "CS9012"
   - "CS9013"
@@ -541,7 +518,6 @@ f1_keywords:
   - "CS9025"
   - "CS9026"
   - "CS9027"
-  - "CS9028"
   - "CS9029"
   - "CS9030"
   - "CS9031"
@@ -620,10 +596,6 @@ f1_keywords:
   - "CS9235"
   - "CS9236"
 # C# 14 errors begin here
-## Shebang
-  - "CS9297"
-  - "CS9298"
-  - "CS9299"
 ## using `extension` as type name. (valid identifiers).
   - "CS9306"
 ## User defined operators
@@ -632,10 +604,20 @@ f1_keywords:
   - "CS9311"
   - "CS9312"
   - "CS9313"
-## Shebang
-  - "CS9314"
-## Strings in the data section:
-  - "CS9315"
+## More extension errors
+  - "CS9316"
+  - "CS9317"
+  - "CS9318"
+  - "CS9319"
+  - "CS9326"
+  - "CS9327"
+  - "CS9328"
+  - "CS9329"
+  - "CS9330"
+  - "CS9331"
+  - "CS9332"
+  - "CS9333"
+  - "CS9334"
 helpviewer_keywords:
   - "errors [C#], additional information"
 ---

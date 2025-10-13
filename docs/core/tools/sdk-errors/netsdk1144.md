@@ -1,7 +1,6 @@
 ---
 title: "NETSDK1144: Optimizing assemblies for size failed"
 description: How to resolve the 'optimizing for size failed' message.
-author: tdykstra
 ms.topic: error-reference
 ms.date: 01/14/2025
 ai-usage: ai-assisted

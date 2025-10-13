@@ -113,7 +113,7 @@ For example, the following code shows three equivalent `DllImport` attributes:
 [DllImport("user32.dll", ExactSpelling=false, SetLastError=false)]
 ```
 
-The first parameter, the DLL name, is positional and always comes first. The other instances are named parameters. In this scenario, both named parameters default to false, so they can be omitted. Refer to the individual attribute's documentation for information on default parameter values. For more information on allowed parameter types, see the [Attributes](~/_csharpstandard/standard/attributes.md#2224-attribute-parameter-types) section of the [C# language specification](~/_csharpstandard/standard/README.md).
+The first parameter, the DLL name, is positional and always comes first. The other instances are named parameters. In this scenario, both named parameters default to false, so they can be omitted. Refer to the individual attribute's documentation for information on default parameter values. For more information on allowed parameter types, see the [Attributes](~/_csharpstandard/standard/attributes.md#2324-attribute-parameter-types) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 ### Attribute targets
 

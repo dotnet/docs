@@ -3,17 +3,15 @@ title: Parameters and Arguments
 description: Learn about F# language support for defining parameters and passing arguments to functions, methods, and properties.
 ms.date: 08/15/2020
 ---
-# Parameters and Arguments
+# Parameters and arguments
 
-This topic describes language support for defining parameters and passing arguments to functions, methods, and properties. It includes information about how to pass by reference, and how to define and use methods that can take a variable number of arguments.
-
-## Parameters and Arguments
+This article describes language support for defining parameters and passing arguments to functions, methods, and properties. It includes information about how to pass by reference and how to define and use methods that can take a variable number of arguments.
 
 The term *parameter* is used to describe the names for values that are expected to be supplied. The term *argument* is used for the values provided for each parameter.
 
 Parameters can be specified in tuple or curried form, or in some combination of the two. You can pass arguments by using an explicit parameter name. Parameters of methods can be specified as optional and given a default value.
 
-## Parameter Patterns
+## Parameter patterns
 
 Parameters supplied to functions and methods are, in general, patterns separated by spaces. This means that, in principle, any of the patterns described in [Match Expressions](match-expressions.md) can be used in a parameter list for a function or member.
 
@@ -83,7 +81,7 @@ Occasionally, patterns that involve incomplete matches are useful, for example, 
 
 The use of patterns that have incomplete matches is best reserved for quick prototyping and other temporary uses. The compiler will issue a warning for such code. Such patterns cannot cover the general case of all possible inputs and therefore are not suitable for component APIs.
 
-## Named Arguments
+## Named arguments
 
 Arguments for methods can be specified by position in a comma-separated argument list, or they can be passed to a method explicitly by providing the name, followed by an equal sign and the value to be passed in. If specified by providing the name, they can appear in a different order from that used in the declaration.
 
@@ -122,13 +120,20 @@ w.Height // = 10
 
 Note that those members could perform any arbitrary work, the syntax is effectively a short hand to call property setters before returning the final value.
 
-## Optional Parameters
+## Optional parameters
+
+F# supports two distinct forms of optional parameters for methods, each serving different purposes:
+
+- [Optional parameters (F# native)](#optional-parameters-f-native)
+- [Optional parameters (C# interop)](#optional-parameters-c-interop)
+
+### Optional parameters (F# native)
 
 You can specify an optional parameter for a method by using a question mark in front of the parameter name. From the callee's perspective, optional parameters are interpreted as the F# option type, so you can query them in the regular way that option types are queried, by using a `match` expression with `Some` and `None`. Optional parameters are permitted only on members, not on functions created by using `let` bindings.
 
 You can pass existing optional values to method by parameter name, such as `?arg=None` or `?arg=Some(3)` or `?arg=arg`. This can be useful when building a method that passes optional arguments to another method.
 
-You can also use a function `defaultArg`, which sets a default value of an optional argument. The `defaultArg` function takes the optional parameter as the first argument and the default value as the second.
+You can also use a function `defaultArg`, which sets a default value of an optional argument using shadowing. The `defaultArg` function takes the optional parameter as the first argument and the default value as the second. Unlike C#-style extensions, this function allows the method author to tell if the caller passed in a value or not.
 
 The following example illustrates the use of optional parameters.
 
@@ -145,7 +150,9 @@ Baud Rate: 9600 Duplex: Full Parity: false
 Baud Rate: 4800 Duplex: Half Parity: false
 ```
 
-For the purposes of C# and Visual Basic interop you can use the attributes `[<Optional; DefaultParameterValue<(...)>]` in F#, so that callers will see an argument as optional. This is equivalent to defining the argument as optional in C# as in `MyMethod(int i = 3)`.
+### Optional parameters (C# interop)
+
+For the purposes of C# interop, you can use the attributes `[<Optional; DefaultParameterValue<(...)>]` in F#, so that callers will see an argument as optional. This is equivalent to defining the argument as optional in C# as in `MyMethod(int i = 3)`. This form was introduced in F# 4.1 to help facilitate interoperation with C# code.
 
 ```fsharp
 open System
@@ -172,9 +179,9 @@ type C =
     static member Wrong([<Optional; DefaultParameterValue("string")>] i:int) = ()
 ```
 
-In this case, the compiler generates a warning and will ignore both attributes altogether. Note that the default value `null` needs to be type-annotated, as otherwise the compiler infers the wrong type, i.e. `[<Optional; DefaultParameterValue(null:obj)>] o:obj`.
+In this case, the compiler generates a warning and will ignore both attributes altogether. Note that the default value `null` needs to be type-annotated; otherwise, the compiler infers the wrong type, that is, `[<Optional; DefaultParameterValue(null:obj)>] o:obj`.
 
-## Passing by Reference
+## Pass by reference
 
 Passing an F# value by reference involves [byrefs](byrefs.md), which are managed pointer types. Guidance for which type to use is as follows:
 
@@ -208,7 +215,7 @@ You can use a tuple as a return value to store any `out` parameters in .NET libr
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/parameters-and-arguments-1/snippet3810.fs)]
 
-## Parameter Arrays
+## Parameter arrays
 
 Occasionally it is necessary to define a function that takes an arbitrary number of parameters of heterogeneous type. It would not be practical to create all the possible overloaded methods to account for all the types that could be used. The .NET implementations provide support for such methods through the parameter array feature. A method that takes a parameter array in its signature can be provided with an arbitrary number of parameters. The parameters are put into an array. The type of the array elements determines the parameter types that can be passed to the function. If you define the parameter array with `System.Object` as the element type, then client code can pass values of any type.
 

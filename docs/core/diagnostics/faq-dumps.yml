@@ -5,11 +5,11 @@ metadata:
   ms.topic: faq
   ms.date: 10/07/2022
 title: FAQ for dumps
-summary: This article answers commonly asked questions about collecting dumps in .NET.
- 
-sections: 
-  - name: Collecting dumps on macOS and Linux 
-    questions: 
+summary: This article answers commonly asked questions about collecting dumps in .NET.
+
+sections:
+  - name: Collecting dumps on macOS and Linux
+    questions:
       - question: |
           Why is dump collection failing on Linux?
         answer: |
@@ -19,7 +19,7 @@ sections:
           [createdump] The process or container does not have permissions or access: open(/proc/1234/mem) FAILED Permission denied (13)
           ```
 
-          One reason that access can be denied is if a security sandbox intercepts the call using a [seccomp BPF filter](https://www.kernel.org/doc/html/v4.19/userspace-api/seccomp_filter.html). For applications running in a container using Open Container Initiative technology, the `seccomp` profile must allow for calls to `ptrace`. For example, `Docker` uses [containerd](https://github.com/moby/containerd) under the hood as a container runtime. When initializing, it specifies a default [seccomp profile](https://github.com/moby/moby/blob/master/profiles/seccomp/default.json) that allows `ptrace` only if the container host has a kernel version higher than 4.8 or if the `CAP_SYS_PTRACE` capability was specified on the container.
+          One reason that access can be denied is if a security sandbox intercepts the call using a [seccomp BPF filter](https://www.kernel.org/doc/html/v4.19/userspace-api/seccomp_filter.html). For applications running in a container using Open Container Initiative technology, the `seccomp` profile must allow for calls to `ptrace`. For example, `Docker` uses [containerd](https://github.com/moby/containerd) under the hood as a container runtime. When initializing, it specifies a default [seccomp profile](https://github.com/moby/moby/blob/master/vendor/github.com/moby/profiles/seccomp/default.json) that allows `ptrace` only if the container host has a kernel version higher than 4.8 or if the `CAP_SYS_PTRACE` capability was specified on the container.
 
           If the calls aren't intercepted, then the kernel does a variety of built-in access checks. The docs for [ptrace()](https://www.man7.org/linux/man-pages/man2/ptrace.2.html) include a detailed description near the end, titled "Ptrace access mode checking", that describes how these are done. Accessing the /proc filesystem also uses a variation of the same ptrace access mode checking. What follows is an abbreviated summary of the security checks performed and places where access might be denied:
 
@@ -50,22 +50,22 @@ sections:
       - question: |
           Why can't I collect dumps when running inside a container?
         answer: |
-          For applications running under any Open Container Initiative technology, the `seccomp` profile must allow for calls to [ptrace()](https://www.man7.org/linux/man-pages/man2/ptrace.2.html). For example, `Docker` uses [containerd](https://github.com/moby/containerd) under the hood as a container runtime. When initializing the runtime, it specifies a default [seccomp profile](https://github.com/moby/moby/blob/master/profiles/seccomp/default.json) that allows `ptrace` only if the container host has a kernel version higher than 4.8 or if the `CAP_SYS_PTRACE` capability was specified.
+          For applications running under any Open Container Initiative technology, the `seccomp` profile must allow for calls to [ptrace()](https://www.man7.org/linux/man-pages/man2/ptrace.2.html). For example, `Docker` uses [containerd](https://github.com/moby/containerd) under the hood as a container runtime. When initializing the runtime, it specifies a default [seccomp profile](https://github.com/moby/moby/blob/master/vendor/github.com/moby/profiles/seccomp/default.json) that allows `ptrace` only if the container host has a kernel version higher than 4.8 or if the `CAP_SYS_PTRACE` capability was specified.
 
           For a fuller description of how Linux security policies impact dump collection, see the question 'Why is dump collection failing on Linux?'.
       - question: |
            Why can't I collect dumps on macOS?
         answer: |
             On macOS the use of `ptrace` requires the host of the target process to be properly entitled. For information about the minimum required entitlements, see [Default entitlements](../install/macos-notarization-issues.md#default-entitlements).
-      
+
       - question: |
           Where can I learn more about how I can leverage dumps to help diagnose problems in my .NET application?
-        answer: | 
+        answer: |
           Here are some additional resources:
 
-          * [Debug Linux dumps](debug-linux-dumps.md) 
-          * [Debug a deadlock in a .NET app](debug-deadlock.md) 
-       
+          * [Debug Linux dumps](debug-linux-dumps.md)
+          * [Debug a deadlock in a .NET app](debug-deadlock.md)
+
       - question: |
            How can I solve "It was not possible to find any compatible framework version"
         answer: |

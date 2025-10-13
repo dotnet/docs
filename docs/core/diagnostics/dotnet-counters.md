@@ -1,7 +1,7 @@
 ---
 title: dotnet-counters diagnostic tool - .NET CLI
 description: Learn how to install and use the dotnet-counter CLI tool for ad-hoc health monitoring and first-level performance investigation.
-ms.date: 08/06/2025
+ms.date: 09/06/2025
 ms.topic: reference
 ---
 # Investigate performance counters (dotnet-counters)
@@ -12,15 +12,34 @@ Counters can be read from applications running .NET 5 or later.
 
 ## Install
 
-There are two ways to download and install `dotnet-counters`:
+There are three ways to download and use `dotnet-counters`:
+
+- **One-shot execution (recommended):**
+
+  Starting with .NET 10.0.100, you can run `dotnet-counters` without permanent installation using [`dnx`](../tools/dotnet-tool-exec.md):
+
+  ```dotnetcli
+  dnx dotnet-counters [options]
+  ```
+
+  For example:
+
+  ```dotnetcli
+  dnx dotnet-counters monitor --process-id 1234
+  ```
+
+  This approach automatically downloads and runs the latest version without permanently modifying your system.
 
 - **dotnet global tool:**
 
-  To install the latest release version of the `dotnet-counters` [NuGet package](https://www.nuget.org/packages/dotnet-counters), use the [dotnet tool install](../tools/dotnet-tool-install.md) command:
+  To install the latest release version of the `dotnet-counters` [NuGet package](https://www.nuget.org/packages/dotnet-counters) for frequent use, use the [dotnet tool install](../tools/dotnet-tool-install.md) command:
 
   ```dotnetcli
   dotnet tool install --global dotnet-counters
   ```
+
+  This command installs a `dotnet-counters` binary to your .NET SDK Tools path, which
+you can add to your PATH to easily invoke globally-installed tools.
 
 - **Direct download:**
 
@@ -48,7 +67,7 @@ dotnet-counters [-h|--help] [--version] <command>
 
 - **`--version`**
 
-  Displays the version of the dotnet-counters utility.
+  Displays the version of the `dotnet-counters` utility.
 
 - **`-h|--help`**
 
@@ -59,7 +78,6 @@ dotnet-counters [-h|--help] [--version] <command>
 | Command                                             |
 |-----------------------------------------------------|
 | [dotnet-counters collect](#dotnet-counters-collect) |
-| [dotnet-counters list](#dotnet-counters-list)       |
 | [dotnet-counters monitor](#dotnet-counters-monitor) |
 | [dotnet-counters ps](#dotnet-counters-ps)           |
 
@@ -91,15 +109,15 @@ dotnet-counters collect [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
 
 - **`--diagnostic-port <port-address[,(listen|connect)]>`**
 
-  Sets the [diagnostic port](diagnostic-port.md) used to communicate with the process to be monitored. dotnet-counters and the .NET runtime inside the target process must agree on the port-address, with one listening and the other connecting. dotnet-counters automatically determines the correct port when attaching using the `--process-id` or `--name` options, or when launching a process using the `-- <command>` option. It's usually only necessary to specify the port explicitly when waiting for a process that will start in the future or communicating to a process that is running inside a container that isn't part of the current process namespace.
+  Sets the [diagnostic port](diagnostic-port.md) used to communicate with the process to be monitored. `dotnet-counters` and the .NET runtime inside the target process must agree on the port-address, with one listening and the other connecting. `dotnet-counters` automatically determines the correct port when attaching using the `--process-id` or `--name` options, or when launching a process using the `-- <command>` option. It's usually only necessary to specify the port explicitly when waiting for a process that will start in the future or communicating to a process that's running inside a container that isn't part of the current process namespace.
 
   The `port-address` differs by OS:
 
   - Linux and macOS - a path to a Unix domain socket such as `/foo/tool1.socket`.
   - Windows - a path to a named pipe such as `\\.\pipe\my_diag_port1`.
   - Android, iOS, and tvOS - an IP:port such as `127.0.0.1:9000`.
-  
-  By default, dotnet-counters listens at the specified address. You can request dotnet-counters to connect instead by appending `,connect` after the address. For example, `--diagnostic-port /foo/tool1.socket,connect` will connect to a .NET runtime process that's listening to the `/foo/tool1.socket` Unix domain socket.
+
+  By default, `dotnet-counters` listens at the specified address. You can request `dotnet-counters` to connect instead by appending `,connect` after the address. For example, `--diagnostic-port /foo/tool1.socket,connect` will connect to a .NET runtime process that's listening to the `/foo/tool1.socket` Unix domain socket.
 
   For information about how to use this option to start monitoring counters from app startup, see [using diagnostic port](#using-diagnostic-port).
 
@@ -109,7 +127,7 @@ dotnet-counters collect [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
 
 - **`--counters <COUNTERS>`**
 
-  A comma-separated list of counters. Counters can be specified `provider_name[:counter_name]`. If the `provider_name` is used without a qualifying list of counters, then all counters from the provider are shown. To discover provider and counter names, use the [dotnet-counters list](#dotnet-counters-list) command. For [EventCounters](event-counters.md), `provider_name` is the name of the EventSource and for [Meters](metrics.md), `provider_name` is the name of the Meter.
+  A comma-separated list of counters. Counters can be specified `provider_name[:counter_name]`. If the `provider_name` is used without a qualifying list of counters, then all counters from the provider are shown. To discover provider and counter names, see [built-in metrics](built-in-metrics.md). For [EventCounters](event-counters.md), `provider_name` is the name of the EventSource and for [Meters](metrics.md), `provider_name` is the name of the Meter.
 
 - **`--format <csv|json>`**
 
@@ -121,13 +139,13 @@ dotnet-counters collect [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
 
 - **`-- <command>`**
 
-  After the collection configuration parameters, the user can append `--` followed by a command to start a .NET application. `dotnet-counters` will launch a process with the provided command and collect the requested metrics. This is often useful to collect metrics for the application's startup path and can be used to diagnose or monitor issues that happen early before or shortly after the main entrypoint.
+  After the collection configuration parameters, the user can append `--` followed by a command to start a .NET application. `dotnet-counters` launches a process with the provided command and collect the requested metrics. This is often useful to collect metrics for the application's startup path and can be used to diagnose or monitor issues that happen early before or shortly after the main entry point.
 
   > [!NOTE]
-  > Using this option monitors the first .NET process that communicates back to the tool, which means if your command launches multiple .NET applications, it will only collect the first app. Therefore, it is recommended you use this option on self-contained applications, or using the `dotnet exec <app.dll>` option.
+  > Using this option monitors the first .NET process that communicates back to the tool, which means if your command launches multiple .NET applications, it will only collect the first app. Therefore, it's recommended you use this option on self-contained applications, or using the `dotnet exec <app.dll>` option.
 
   > [!NOTE]
-  > Launching a .NET executable via dotnet-counters will redirect its input/output and you won't be able to interact with its stdin/stdout. Exiting the tool via CTRL+C or SIGTERM will safely end both the tool and the child process. If the child process exits before the tool, the tool will exit as well. If you need to use stdin/stdout, you can use the `--diagnostic-port` option. See [Using diagnostic port](#using-diagnostic-port) for more information.
+  > If you launch a .NET executable via `dotnet-counters`, its input/output will be redirected and you won't be able to interact with its stdin/stdout. You can exit the tool via <kbd>Ctrl+C</kbd> or SIGTERM to safely end both the tool and the child process. If the child process exits before the tool, the tool will exit as well. If you need to use stdin/stdout, you can use the `--diagnostic-port` option. For more information, see [Using diagnostic port](#using-diagnostic-port).
 
 > [!NOTE]
 > To collect metrics using `dotnet-counters`, it needs to be run as the same user as the user running target process or as root. Otherwise, the tool will fail to establish a connection with the target process.
@@ -150,53 +168,6 @@ dotnet-counters collect [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
   Starting a counter session. Press Q to quit.
   File saved to counter.json
   ```
-
-## dotnet-counters list
-
-Displays a list of counter names and descriptions, grouped by provider.
-
-### Synopsis
-
-```dotnetcli
-dotnet-counters list [-h|--help]
-```
-
-### Example
-
-```dotnetcli
-> dotnet-counters list
-Showing well-known counters only. Specific processes may support additional counters.
-
-System.Runtime
-    cpu-usage                                    Amount of time the process has utilized the CPU (ms)
-    working-set                                  Amount of working set used by the process (MB)
-    gc-heap-size                                 Total heap size reported by the GC (MB)
-    gen-0-gc-count                               Number of Gen 0 GCs per interval
-    gen-1-gc-count                               Number of Gen 1 GCs per interval
-    gen-2-gc-count                               Number of Gen 2 GCs per interval
-    time-in-gc                                   % time in GC since the last GC
-    gen-0-size                                   Gen 0 Heap Size
-    gen-1-size                                   Gen 1 Heap Size
-    gen-2-size                                   Gen 2 Heap Size
-    loh-size                                     LOH Heap Size
-    alloc-rate                                   Allocation Rate
-    assembly-count                               Number of Assemblies Loaded
-    exception-count                              Number of Exceptions per interval
-    threadpool-thread-count                      Number of ThreadPool Threads
-    monitor-lock-contention-count                Monitor Lock Contention Count
-    threadpool-queue-length                      ThreadPool Work Items Queue Length
-    threadpool-completed-items-count             ThreadPool Completed Work Items Count
-    active-timer-count                           Active Timers Count
-
-Microsoft.AspNetCore.Hosting
-    requests-per-second                  Request rate
-    total-requests                       Total number of requests
-    current-requests                     Current number of requests
-    failed-requests                      Failed number of requests
-```
-
-> [!NOTE]
-> The `Microsoft.AspNetCore.Hosting` counters are displayed when there are processes identified that support these counters, for example; when an ASP.NET Core application is running on the host machine.
 
 ## dotnet-counters monitor
 
@@ -228,21 +199,17 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
 
 - **`--counters <COUNTERS>`**
 
-  A comma-separated list of counters. Counters can be specified `provider_name[:counter_name]`. If the `provider_name` is used without a qualifying list of counters, then all counters from the provider are shown. To discover provider and counter names, use the [dotnet-counters list](#dotnet-counters-list) command. For [EventCounters](event-counters.md), `provider_name` is the name of the EventSource and for [Meters](metrics.md), `provider_name` is the name of the Meter.
+  A comma-separated list of counters. Counters can be specified `provider_name[:counter_name]`. If the `provider_name` is used without a qualifying list of counters, then all counters from the provider are shown. To discover provider and counter names, see [built-in metrics](built-in-metrics.md). For [EventCounters](event-counters.md), `provider_name` is the name of the EventSource and for [Meters](metrics.md), `provider_name` is the name of the Meter.
 
-- **`--dsrouter {ios|ios-sim|android|android-emu}`**
+- **`-- <command>`**
 
-  Starts [dotnet-dsrouter](dotnet-dsrouter.md) and connects to it. Requires [dotnet-dsrouter](dotnet-dsrouter.md) to be installed. Run `dotnet-dsrouter -h` for more information.
-
- **`-- <command>`**
-
-  After the collection configuration parameters, the user can append `--` followed by a command to start a .NET application. `dotnet-counters` will launch a process with the provided command and monitor the requested metrics. This is often useful to collect metrics for the application's startup path and can be used to diagnose or monitor issues that happen early before or shortly after the main entrypoint.
+  After the collection configuration parameters, you can append `--` followed by a command to start a .NET application. `dotnet-counters` will launch a process with the provided command and monitor the requested metrics. This is often useful to collect metrics for the application's startup path and can be used to diagnose or monitor issues that happen early before or shortly after the main entry point.
 
   > [!NOTE]
-  > Using this option monitors the first .NET process that communicates back to the tool, which means if your command launches multiple .NET applications, it will only collect the first app. Therefore, it is recommended you use this option on self-contained applications, or using the `dotnet exec <app.dll>` option.
+  > Using this option monitors the first .NET process that communicates back to the tool, which means if your command launches multiple .NET applications, it will only collect the first app. Therefore, it's recommended you use this option on self-contained applications, or using the `dotnet exec <app.dll>` option.
 
   > [!NOTE]
-  > Launching a .NET executable via dotnet-counters will redirect its input/output and you won't be able to interact with its stdin/stdout. Exiting the tool via CTRL+C or SIGTERM will safely end both the tool and the child process. If the child process exits before the tool, the tool will exit as well. If you need to use stdin/stdout, you can use the `--diagnostic-port` option. See [Using diagnostic port](#using-diagnostic-port) for more information.
+  > Launching a .NET executable via `dotnet-counters` will redirect its input/output and you won't be able to interact with its stdin/stdout. You can exit the tool via <kbd>Ctrl+C</kbd> or SIGTERM to safely end both the tool and the child process. If the child process exits before the tool, the tool will exit as well. If you need to use stdin/stdout, you can use the `--diagnostic-port` option. For more information, see [Using diagnostic port](#using-diagnostic-port).
 
 > [!NOTE]
 > On Linux and macOS, this command expects the target application and `dotnet-counters` to share the same `TMPDIR` environment variable.
@@ -251,7 +218,7 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
 > To monitor metrics using `dotnet-counters`, it needs to be run as the same user as the user running target process or as root.
 
 > [!NOTE]
-> If you see an error message similar to the following one: `[ERROR] System.ComponentModel.Win32Exception (299): A 32 bit processes cannot access modules of a 64 bit process.`, you are trying to use `dotnet-counters` that has mismatched bitness against the target process. Make sure to download the correct bitness of the tool in the [install](#install) link.
+> If you see an error message similar to the following one: `[ERROR] System.ComponentModel.Win32Exception (299): A 32 bit processes cannot access modules of a 64 bit process.`, you're trying to use `dotnet-counters` that has mismatched bitness against the target process. Make sure to download the correct bitness of the tool in the [install](#install) link.
 
 ### Examples
 
@@ -261,44 +228,99 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
   > dotnet-counters monitor --process-id 1902  --refresh-interval 3 --counters System.Runtime
   Press p to pause, r to resume, q to quit.
       Status: Running
-
+  Name                                              Current Value
   [System.Runtime]
-      % Time in GC since last GC (%)                                 0
-      Allocation Rate (B / 1 sec)                                5,376
-      CPU Usage (%)                                                  0
-      Exception Count (Count / 1 sec)                                0
-      GC Fragmentation (%)                                          48.467
-      GC Heap Size (MB)                                              0
-      Gen 0 GC Count (Count / 1 sec)                                 1
-      Gen 0 Size (B)                                                24
-      Gen 1 GC Count (Count / 1 sec)                                 1
-      Gen 1 Size (B)                                                24
-      Gen 2 GC Count (Count / 1 sec)                                 1
-      Gen 2 Size (B)                                           272,000
-      IL Bytes Jitted (B)                                       19,449
-      LOH Size (B)                                              19,640
-      Monitor Lock Contention Count (Count / 1 sec)                  0
-      Number of Active Timers                                        0
-      Number of Assemblies Loaded                                    7
-      Number of Methods Jitted                                     166
-      POH (Pinned Object Heap) Size (B)                             24
-      ThreadPool Completed Work Item Count (Count / 1 sec)           0
-      ThreadPool Queue Length                                        0
-      ThreadPool Thread Count                                        2
-      Working Set (MB)                                              19
+      dotnet.assembly.count ({assembly})                               115
+      dotnet.gc.collections ({collection})
+          gc.heap.generation
+          ------------------
+          gen0                                                           5
+          gen1                                                           1
+          gen2                                                           1
+      dotnet.gc.heap.total_allocated (By)                       1.6947e+08
+      dotnet.gc.last_collection.heap.fragmentation.size (By)
+          gc.heap.generation
+          ------------------
+          gen0                                                           0
+          gen1                                                     348,248
+          gen2                                                           0
+          loh                                                           32
+          poh                                                            0
+      dotnet.gc.last_collection.heap.size (By)
+          gc.heap.generation
+          ------------------
+          gen0                                                           0
+          gen1                                                  18,010,920
+          gen2                                                   5,065,600
+          loh                                                       98,384
+          poh                                                    3,407,048
+      dotnet.gc.last_collection.memory.committed_size (By)      66,842,624
+      dotnet.gc.pause.time (s)                                           0.05
+      dotnet.jit.compilation.time (s)                                    1.317
+      dotnet.jit.compiled_il.size (By)                             574,886
+      dotnet.jit.compiled_methods ({method})                         6,008
+      dotnet.monitor.lock_contentions ({contention})                   194
+      dotnet.process.cpu.count ({cpu})                                  16
+      dotnet.process.cpu.time (s)
+          cpu.mode
+          --------
+          system                                                         4.953
+          user                                                           6.266
+      dotnet.process.memory.working_set (By)                             1.3217e+08
+      dotnet.thread_pool.queue.length ({work_item})                      0
+      dotnet.thread_pool.thread.count ({thread})                       133
+      dotnet.thread_pool.work_item.count ({work_item})              71,188
+      dotnet.timer.count ({timer})                                     124
   ```
 
-- Monitor just CPU usage and GC heap size from `System.Runtime`:
+  > [!NOTE]
+  > If the app uses .NET version 8 or lower, the [System.Runtime Meter](built-in-metrics-runtime.md#systemruntime) doesn't exist in those versions and `dotnet-counters` will fall back to display the older [System.Runtime EventCounters](available-counters.md#systemruntime-counters) instead. The UI looks slightly different, as shown here.
+
+  ```output
+  [System.Runtime]
+        % Time in GC since last GC (%)                                 0
+        Allocation Rate (B / 1 sec)                                5,376
+        CPU Usage (%)                                                  0
+        Exception Count (Count / 1 sec)                                0
+        GC Fragmentation (%)                                          48.467
+        GC Heap Size (MB)                                              0
+        Gen 0 GC Count (Count / 1 sec)                                 1
+        Gen 0 Size (B)                                                24
+        Gen 1 GC Count (Count / 1 sec)                                 1
+        Gen 1 Size (B)                                                24
+        Gen 2 GC Count (Count / 1 sec)                                 1
+        Gen 2 Size (B)                                           272,000
+        IL Bytes Jitted (B)                                       19,449
+        LOH Size (B)                                              19,640
+        Monitor Lock Contention Count (Count / 1 sec)                  0
+        Number of Active Timers                                        0
+        Number of Assemblies Loaded                                    7
+        Number of Methods Jitted                                     166
+        POH (Pinned Object Heap) Size (B)                             24
+        ThreadPool Completed Work Item Count (Count / 1 sec)           0
+        ThreadPool Queue Length                                        0
+        ThreadPool Thread Count                                        2
+        Working Set (MB)                                              19
+  ```
+
+- Monitor just garbage collections and garbage collection heap allocation from `System.Runtime`:
 
   ```dotnetcli
-  > dotnet-counters monitor --process-id 1902 --counters System.Runtime[cpu-usage,gc-heap-size]
+  > dotnet-counters monitor --process-id 1902 --counters System.Runtime[dotnet.gc.collections,dotnet.gc.heap.total_allocated]
 
   Press p to pause, r to resume, q to quit.
-    Status: Running
+  Status: Running
 
+  Name                                  Current Value
   [System.Runtime]
-      CPU Usage (%)                                 24
-      GC Heap Size (MB)                            811
+      dotnet.gc.collections ({collection})
+          gc.heap.generation
+          ------------------
+          gen0                                0
+          gen1                                0
+          gen2                                0
+      dotnet.gc.heap.total_allocated (By)     9,943,384
+
   ```
 
 - Monitor `EventCounter` values from user-defined `EventSource`. For more information, see [Tutorial: Measure performance using EventCounters in .NET Core](event-counter-perf.md).
@@ -310,127 +332,43 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
       request                                      100
   ```
 
-- View all well-known counters that are available in `dotnet-counters`:
-
-  ```dotnetcli
-  > dotnet-counters list
-
-  Showing well-known counters for .NET (Core) version 3.1 only. Specific processes may support additional counters.
-  System.Runtime
-      cpu-usage                          The percent of process' CPU usage relative to all of the system CPU resources [0-100]
-      working-set                        Amount of working set used by the process (MB)
-      gc-heap-size                       Total heap size reported by the GC (MB)
-      gen-0-gc-count                     Number of Gen 0 GCs between update intervals
-      gen-1-gc-count                     Number of Gen 1 GCs between update intervals
-      gen-2-gc-count                     Number of Gen 2 GCs between update intervals
-      time-in-gc                         % time in GC since the last GC
-      gen-0-size                         Gen 0 Heap Size
-      gen-1-size                         Gen 1 Heap Size
-      gen-2-size                         Gen 2 Heap Size
-      loh-size                           LOH Size
-      alloc-rate                         Number of bytes allocated in the managed heap between update intervals
-      assembly-count                     Number of Assemblies Loaded
-      exception-count                    Number of Exceptions / sec
-      threadpool-thread-count            Number of ThreadPool Threads
-      monitor-lock-contention-count      Number of times there were contention when trying to take the monitor lock between update intervals
-      threadpool-queue-length            ThreadPool Work Items Queue Length
-      threadpool-completed-items-count   ThreadPool Completed Work Items Count
-      active-timer-count                 Number of timers that are currently active
-
-  Microsoft.AspNetCore.Hosting
-      requests-per-second                Number of requests between update intervals
-      total-requests                     Total number of requests
-      current-requests                   Current number of requests
-      failed-requests                    Failed number of requests
-  ```
-
-- View all well-known counters that are available in `dotnet-counters` for .NET 5 apps:
-
-  ```dotnetcli
-  > dotnet-counters list --runtime-version 5.0
-
-  Showing well-known counters for .NET (Core) version 5.0 only. Specific processes may support additional counters.
-  System.Runtime
-      cpu-usage                          The percent of process' CPU usage relative to all of the system CPU resources [0-100]
-      working-set                        Amount of working set used by the process (MB)
-      gc-heap-size                       Total heap size reported by the GC (MB)
-      gen-0-gc-count                     Number of Gen 0 GCs between update intervals
-      gen-1-gc-count                     Number of Gen 1 GCs between update intervals
-      gen-2-gc-count                     Number of Gen 2 GCs between update intervals
-      time-in-gc                         % time in GC since the last GC
-      gen-0-size                         Gen 0 Heap Size
-      gen-1-size                         Gen 1 Heap Size
-      gen-2-size                         Gen 2 Heap Size
-      loh-size                           LOH Size
-      poh-size                           POH (Pinned Object Heap) Size
-      alloc-rate                         Number of bytes allocated in the managed heap between update intervals
-      gc-fragmentation                   GC Heap Fragmentation
-      assembly-count                     Number of Assemblies Loaded
-      exception-count                    Number of Exceptions / sec
-      threadpool-thread-count            Number of ThreadPool Threads
-      monitor-lock-contention-count      Number of times there were contention when trying to take the monitor lock between update intervals
-      threadpool-queue-length            ThreadPool Work Items Queue Length
-      threadpool-completed-items-count   ThreadPool Completed Work Items Count
-      active-timer-count                 Number of timers that are currently active
-      il-bytes-jitted                    Total IL bytes jitted
-      methods-jitted-count               Number of methods jitted
-
-  Microsoft.AspNetCore.Hosting
-      requests-per-second   Number of requests between update intervals
-      total-requests        Total number of requests
-      current-requests      Current number of requests
-      failed-requests       Failed number of requests
-
-  Microsoft-AspNetCore-Server-Kestrel
-      connections-per-second      Number of connections between update intervals
-      total-connections           Total Connections
-      tls-handshakes-per-second   Number of TLS Handshakes made between update intervals
-      total-tls-handshakes        Total number of TLS handshakes made
-      current-tls-handshakes      Number of currently active TLS handshakes
-      failed-tls-handshakes       Total number of failed TLS handshakes
-      current-connections         Number of current connections
-      connection-queue-length     Length of Kestrel Connection Queue
-      request-queue-length        Length total HTTP request queue
-
-  System.Net.Http
-      requests-started        Total Requests Started
-      requests-started-rate   Number of Requests Started between update intervals
-      requests-aborted        Total Requests Aborted
-      requests-aborted-rate   Number of Requests Aborted between update intervals
-      current-requests        Current Requests
-  ```
-
 - Launch `my-aspnet-server.exe` and monitor the # of assemblies loaded from its startup:
 
   ```dotnetcli
-  > dotnet-counters monitor --counters System.Runtime[assembly-count] -- my-aspnet-server.exe
-
+  > dotnet-counters monitor --counters System.Runtime[dotnet.assembly.count] -- my-aspnet-server.exe
   Press p to pause, r to resume, q to quit.
-    Status: Running
+  Status: Running
 
+  Name                               Current Value
   [System.Runtime]
-      Number of Assemblies Loaded                   24
+  dotnet.assembly.count ({assembly})      11
   ```
-  
+
 - Launch `my-aspnet-server.exe` with `arg1` and `arg2` as command-line arguments and monitor its working set and GC heap size from its startup:
 
   ```dotnetcli
-  > dotnet-counters monitor --counters System.Runtime[working-set,gc-heap-size] -- my-aspnet-server.exe arg1 arg2
+  > dotnet-counters monitor --counters System.Runtime[dotnet.process.memory.working_set,dotnet.gc.last_collection.heap.size] -- my-aspnet-server.exe arg1 arg2
   ```
 
   ```output
-  Press p to pause, r to resume, q to quit.
-    Status: Running
-
+  Name                                             Current Value
   [System.Runtime]
-      GC Heap Size (MB)                                 39
-      Working Set (MB)                                  59
+      dotnet.gc.last_collection.heap.size (By)
+          gc.heap.generation
+          ------------------
+          gen0                                          560
+          gen1                                      462,720
+          gen2                                            0
+          loh                                             0
+          poh                                         8,184
+      dotnet.process.memory.working_set (By)     48,431,104
+
   ```
 
 ## dotnet-counters ps
 
- Lists the dotnet processes that can be monitored by `dotnet-counters`.
- `dotnet-counters` version 6.0.320703 and later, also display the command-line arguments that each process was started with, if available.
+Lists the dotnet processes that can be monitored by `dotnet-counters`.
+`dotnet-counters` version 6.0.320703 and later also displays the command-line arguments that each process was started with, if available.
 
 ### Synopsis
 
@@ -440,24 +378,24 @@ dotnet-counters ps [-h|--help]
 
 ### Example
 
-Suppose you start a long-running app using the command ```dotnet run --configuration Release```. In another window, you run the ```dotnet-counters ps``` command. The output you'll see is as follows. The command-line arguments, if any, are shown in `dotnet-counters` version 6.0.320703 and later.
+Suppose you start a long-running app using the command ```dotnet run --configuration Release```. In another window, you run the ```dotnet-counters ps``` command. The output you see is as follows. The command-line arguments, if any, are shown in `dotnet-counters` version 6.0.320703 and later.
 
 ```dotnetcli
 > dotnet-counters ps
-  
+
   21932 dotnet     C:\Program Files\dotnet\dotnet.exe   run --configuration Release
   36656 dotnet     C:\Program Files\dotnet\dotnet.exe
 ```
 
 ## Using diagnostic port
 
-[Diagnostic port](./diagnostic-port.md) is a runtime feature that allows you to start monitoring or collecting counters from app startup. To do this using `dotnet-counters`, you can either use `dotnet-counters <collect|monitor> -- <command>` as described in the examples above, or use the `--diagnostic-port` option.
+[Diagnostic port](./diagnostic-port.md) is a runtime feature that allows you to start monitoring or collecting counters from app startup. To do this using `dotnet-counters`, you can either use `dotnet-counters <collect|monitor> -- <command>` as described in the previous examples, or use the `--diagnostic-port` option.
 
 Using `dotnet-counters <collect|monitor> -- <command>` to launch the application as a child process is the simplest way to quickly monitor it from its startup.
 
 However, when you want to gain a finer control over the lifetime of the app being monitored (for example, monitor the app for the first 10 minutes only and continue executing) or if you need to interact with the app using the CLI, using `--diagnostic-port` option allows you to control both the target app being monitored and `dotnet-counters`.
 
-1. The command below makes dotnet-counters create a diagnostics socket named `myport.sock` and wait for a connection.
+1. The following command makes `dotnet-counters` create a diagnostics socket named `myport.sock` and wait for a connection.
 
     > ```dotnetcli
     > dotnet-counters collect --diagnostic-port myport.sock
@@ -477,7 +415,7 @@ However, when you want to gain a finer control over the lifetime of the app bein
     > ./my-dotnet-app arg1 arg2
     > ```
 
-    This should then enable `dotnet-counters` to start collecting counters on `my-dotnet-app`:
+    This enables `dotnet-counters` to start collecting counters on `my-dotnet-app`:
 
     > ```output
     > Waiting for connection on myport.sock
@@ -486,4 +424,4 @@ However, when you want to gain a finer control over the lifetime of the app bein
     > ```
 
     > [!IMPORTANT]
-    > Launching your app with `dotnet run` can be problematic because the dotnet CLI may spawn many child processes that are not your app and they can connect to `dotnet-counters` before your app, leaving your app to be suspended at run time. It is recommended you directly use a self-contained version of the app or use `dotnet exec` to launch the application.
+    > Launching your app with `dotnet run` can be problematic because the dotnet CLI might spawn many child processes that aren't your app and they can connect to `dotnet-counters` before your app, leaving your app to be suspended at run time. It's recommended you directly use a self-contained version of the app or use `dotnet exec` to launch the application.

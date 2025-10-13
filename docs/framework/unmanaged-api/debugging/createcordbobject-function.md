@@ -20,7 +20,7 @@ topic_type:
 ---
 # CreateCordbObject Function
 
-Creates a debugger interface ([ICorDebug](icordebug-interface.md)) that provides functionality for instantiating a managed debugging session on a remote process.
+Creates a debugger interface ([ICorDebug](../../../core/unmanaged-api/debugging/icordebug/icordebug-interface.md)) that provides functionality for instantiating a managed debugging session on a remote process.
 
 ## Syntax
 
@@ -37,7 +37,7 @@ HRESULT CordbCreateObject (
  [in] Debugger version of the target process. This parameter must be CorDebugVersion_2_0 for remote debugging.
 
  `ppCordb`
- [out] Pointer to a pointer to an object that will be cast to an [ICorDebug](icordebug-interface.md) interface and returned.
+ [out] Pointer to a pointer to an object that will be cast to an [ICorDebug](../../../core/unmanaged-api/debugging/icordebug/icordebug-interface.md) interface and returned.
 
 ## Return Value
 
@@ -55,7 +55,7 @@ HRESULT CordbCreateObject (
 
 ## Remarks
 
- The [ICorDebug](icordebug-interface.md) interface that is returned in `ppCordb` is the top-level debugging interface for all managed debugging services.
+ The [ICorDebug](../../../core/unmanaged-api/debugging/icordebug/icordebug-interface.md) interface that is returned in `ppCordb` is the top-level debugging interface for all managed debugging services.
 
 ## Requirements
 

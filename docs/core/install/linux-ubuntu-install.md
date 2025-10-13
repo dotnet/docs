@@ -17,19 +17,20 @@ This article discusses how to install .NET on Ubuntu.
 [!INCLUDE [linux-install-package-manager-x64-vs-arm-ubuntu](includes/linux-install-package-manager-x64-vs-arm-ubuntu.md)]
 
 <!--
-===== Ubuntu 24.10
+===== Ubuntu 25.04
 -->
 
-::: zone pivot="os-linux-ubuntu-2410"
+::: zone pivot="os-linux-ubuntu-2504"
 
-## Ubuntu 24.10
+## Ubuntu 25.04
 
 [!INCLUDE [linux-ubuntu-package-feed-only](includes/linux-ubuntu-package-feed-only.md)]
 
-The following versions of .NET are supported or available for Ubuntu 24.10:
+The following versions of .NET are supported or available for Ubuntu 25.04:
 
-- 9.0
-- 8.0
+| Supported .NET versions | Available in<br>built-in Ubuntu feed | [Available in<br>backports<br>Ubuntu feed](linux-ubuntu-decision.md#ubuntu-net-backports-package-repository) | [Available in<br>Microsoft feed](linux-ubuntu-decision.md#register-the-microsoft-package-repository) |
+|-------------------------|--------------------------------------|-----------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
+| 9.0, 8.0                | 9.0, 8.0                                  | None                                                                                       |None                                                                                         |
 
 When an [Ubuntu version](https://wiki.ubuntu.com/Releases) falls out of support, .NET is no longer supported with that version.
 
@@ -54,7 +55,7 @@ When you install with a package manager, these libraries are installed for you. 
 - ca-certificates
 - libc6
 - libgcc-s1
-- libicu74
+- libicu76
 - liblttng-ust1
 - libssl3
 - libstdc++6
@@ -181,7 +182,7 @@ When you install with a package manager, these libraries are installed for you. 
 ===== All versions
 -->
 
-::: zone pivot="os-linux-ubuntu-2410,os-linux-ubuntu-2404,os-linux-ubuntu-2204"
+::: zone pivot="os-linux-ubuntu-2504,os-linux-ubuntu-2404,os-linux-ubuntu-2204"
 
 ## Unsupported versions
 

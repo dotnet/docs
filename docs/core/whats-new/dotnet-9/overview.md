@@ -2,15 +2,15 @@
 title: What's new in .NET 9
 description: Learn about the new .NET features introduced in .NET 9 for the runtime, libraries, and SDK. Also find links to what's new in other areas, such as ASP.NET Core.
 titleSuffix: ""
-ms.date: 11/11/2024
-ms.topic: whats-new
+ms.date: 08/26/2025
+ms.update-cycle: 3650-days
 ---
 
 # What's new in .NET 9
 
 Learn about the new features in .NET 9 and find links to further documentation.
 
-.NET 9, the successor to [.NET 8](../dotnet-8/overview.md), has a special focus on cloud-native apps and performance. It will be [supported for 18 months](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) as a standard-term support (STS) release. You can [download .NET 9 here](https://dotnet.microsoft.com/download/dotnet/9.0).
+.NET 9, the successor to [.NET 8](../dotnet-8/overview.md), has a special focus on cloud-native apps and performance. It will be [supported for two years](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) as a standard-term support (STS) release. You can [download .NET 9 here](https://dotnet.microsoft.com/download/dotnet/9.0).
 
 New for .NET 9, the engineering team posts .NET 9 preview updates on [GitHub Discussions](https://github.com/dotnet/core/discussions/9234). That's a great place to ask questions and provide feedback about the release.
 
@@ -45,7 +45,7 @@ For more information, see [What's new in the .NET 9 libraries](libraries.md).
 The .NET 9 SDK introduces _workload sets_, where all of your workloads stay at a single, specific version until explicitly updated. For tools, a new option for [`dotnet tool install`](../../tools/dotnet-tool-install.md) lets users (instead of tool authors) decide whether a tool is allowed to run on a newer .NET runtime version than the version the tool targets. In addition:
 
 - Unit testing has better MSBuild integration that allows you to run tests in parallel.
-- The terminal logger is enabled by default and also has improved usability. For example, the total count of failures and warnings is now summarized at the end of a build.
+- Terminal Logger is enabled by default and also has improved usability. For example, the total count of failures and warnings is now summarized at the end of a build.
 - New MSBuild script analyzers ("build checks") are available.
 - The SDK can detect and adjust for version mismatches between the .NET SDK and MSBuild.
 - The `dotnet workload history` command shows you the history of workload installations and modifications for the current .NET SDK installation.
@@ -99,9 +99,9 @@ The latest release introduces significant new capabilities for tokenizers:
 - WordPiece
 - Bert (based on WordPiece) for Bert-supported models like optimum--all-MiniLM-L6-v2
 
-## .NET Aspire
+## Aspire
 
-.NET Aspire is a set of powerful tools, templates, and packages for building observable, production ready apps.​ .NET Aspire's latest release includes improvements to the dashboard and resource lifecycle management. It also adds new integrations and APIs for more flexibility during development. .NET Aspire 9 works with both .NET 9 and .NET 8 apps. For more information, see [What's new in .NET Aspire 9](/dotnet/aspire/whats-new/dotnet-aspire-9-release-candidate-1).
+Aspire is a set of powerful tools, templates, and packages for building observable, production ready apps.​ Aspire's latest release includes improvements to the dashboard and resource lifecycle management. It also adds new integrations and APIs for more flexibility during development. Aspire 9 works with both .NET 9 and .NET 8 apps. For more information, see [What's new in Aspire 9](/dotnet/aspire/whats-new/dotnet-aspire-9-release-candidate-1).
 
 ## ASP.NET Core
 

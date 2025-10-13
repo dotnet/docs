@@ -3,7 +3,7 @@ title: The history of C#
 description: Learn how the C# language has changed over its many releases. Learn when different features were introduced in the language.
 author: erikdietrich
 ms.date: 12/20/2024
-ms.custom: "updateeachrelease, UpdateFrequency1"
+ms.custom: "updateeachrelease"
 ---
 
 # The history of C\#
@@ -196,7 +196,7 @@ The C# 9 release continues the work to keep C# a modern, general-purpose program
 C# 8.0 is the first major C# release that specifically targets .NET Core. Some features rely on new Common Language Runtime (CLR) capabilities, others on library types added only in .NET Core. C# 8.0 adds the following features and enhancements to the C# language:
 
 - [Readonly members](../language-reference/builtin-types/struct.md#readonly-instance-members)
-- [Default interface methods](../language-reference/keywords/interface.md#default-interface-members)
+- [Default interface members](../language-reference/keywords/interface.md#default-interface-members)
 - [Pattern matching enhancements](../language-reference/operators/patterns.md):
   - Switch expressions
   - Property patterns
@@ -213,7 +213,7 @@ C# 8.0 is the first major C# release that specifically targets .NET Core. Some f
 - [Stackalloc in nested expressions](../language-reference/operators/stackalloc.md)
 - [Enhancement of interpolated verbatim strings](../language-reference/tokens/interpolated.md)
 
-Default interface members require enhancements in the CLR. Those features were added in the CLR for .NET Core 3.0. Ranges and indexes, and asynchronous streams require new types in the .NET Core 3.0 libraries. Nullable reference types, while implemented in the compiler, is much more useful when libraries are annotated to provide semantic information regarding the null state of arguments and return values. Those annotations are being added in the .NET Core libraries.
+Default interface members require enhancements in the CLR. Those features were added in the CLR for .NET Core 3.0. Ranges, indexes, and asynchronous streams require new types in the .NET Core 3.0 libraries. Nullable reference types, while implemented in the compiler, is much more useful when libraries are annotated to provide semantic information regarding the null state of arguments and return values. Those annotations are being added in the .NET Core libraries.
 
 ## C# version 7.3
 

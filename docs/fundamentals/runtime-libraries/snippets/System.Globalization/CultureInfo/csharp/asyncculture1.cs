@@ -14,7 +14,7 @@ public class AsyncCultureEx1
         string FormatDelegate()
         {
             string output = $"Formatting using the {CultureInfo.CurrentCulture.Name} " +
-            "culture on thread {Thread.CurrentThread.ManagedThreadId}.\n";
+                $"culture on thread {Thread.CurrentThread.ManagedThreadId}.\n";
             foreach (decimal value in values)
                 output += $"{value.ToString(formatString)}   ";
 

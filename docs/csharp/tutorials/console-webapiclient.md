@@ -121,35 +121,31 @@ Use the <xref:System.Net.Http.HttpClient> class to make HTTP requests. <xref:Sys
 
 ## Deserialize the JSON Result
 
-The following steps convert the JSON response into C# objects. You use the <xref:System.Text.Json.JsonSerializer?displayProperty=nameWithType> class to deserialize JSON into objects.
+The following steps simplify the approach to fetching the data and processing it. You will use the <xref:System.Net.Http.Json.HttpClientJsonExtensions.GetFromJsonAsync%2A> extension method that's part of the [📦 System.Net.Http.Json](https://www.nuget.org/packages/System.Net.Http.Json) NuGet package to fetch and deserialize the JSON results into objects.
 
 1. Create a file named *Repository.cs* and add the following code:
 
    ```csharp
-   public record class Repository(string name);
+   public record class Repository(string Name);
    ```
 
    The preceding code defines a class to represent the JSON object returned from the GitHub API. You'll use this class to display a list of repository names.
 
-   The JSON for a repository object contains dozens of properties, but only the `name` property will be deserialized. The serializer automatically ignores JSON properties for which there is no match in the target class. This feature makes it easier to create types that work with only a subset of fields in a large JSON packet.
+   The JSON for a repository object contains dozens of properties, but only the `Name` property will be deserialized. The serializer automatically ignores JSON properties for which there is no match in the target class. This feature makes it easier to create types that work with only a subset of fields in a large JSON packet.
 
-   The C# convention is to [capitalize the first letter of property names](../../standard/design-guidelines/capitalization-conventions.md), but the `name` property here starts with a lowercase letter because that matches exactly what's in the JSON. Later you'll see how to use C# property names that don't match the JSON property names.
+   Although the `GetFromJsonAsync` method you will use in the next point has a benefit of being case-insensitive when it comes to property names, the C# convention is to [capitalize the first letter of property names](../../standard/design-guidelines/capitalization-conventions.md).
 
-1. Use the serializer to convert JSON into C# objects. Replace the call to
-<xref:System.Net.Http.HttpClient.GetStringAsync(System.String)> in the `ProcessRepositoriesAsync` method with the following lines:
+1. Use the <xref:System.Net.Http.Json.HttpClientJsonExtensions.GetFromJsonAsync%2A?displayProperty=nameWithType> method to fetch and convert JSON into C# objects. Replace the call to <xref:System.Net.Http.HttpClient.GetStringAsync(System.String)> in the `ProcessRepositoriesAsync` method with the following lines:
 
     ```csharp
-    await using Stream stream =
-        await client.GetStreamAsync("https://api.github.com/orgs/dotnet/repos");
-    var repositories =
-        await JsonSerializer.DeserializeAsync<List<Repository>>(stream);
+    var repositories = await client.GetFromJsonAsync<List<Repository>>("https://api.github.com/orgs/dotnet/repos");
     ```
 
-   The updated code replaces <xref:System.Net.Http.HttpClient.GetStringAsync(System.String)> with <xref:System.Net.Http.HttpClient.GetStreamAsync(System.String)>. This serializer method uses a stream instead of a string as its source.
+   The updated code replaces <xref:System.Net.Http.HttpClient.GetStringAsync(System.String)> with <xref:System.Net.Http.Json.HttpClientJsonExtensions.GetFromJsonAsync%2A?displayProperty=nameWithType>.
 
-   The first argument to <xref:System.Text.Json.JsonSerializer.DeserializeAsync%60%601(System.IO.Stream,System.Text.Json.JsonSerializerOptions,System.Threading.CancellationToken)?displayProperty=nameWithType> is an `await` expression. `await` expressions can appear almost anywhere in your code, even though up to now, you've only seen them as part of an assignment statement. The other two parameters, `JsonSerializerOptions` and `CancellationToken`, are optional and are omitted in the code snippet.
+   The first argument to `GetFromJsonAsync` method is an `await` expression. `await` expressions can appear almost anywhere in your code, even though up to now, you've only seen them as part of an assignment statement. The next parameter, `requestUri` is optional and doesn't have to be provided if was already specified when creating the `client` object. You didn't provide the `client` object with the URI to send request to, so you specified the URI now. The last optional parameter, the `CancellationToken` is omitted in the code snippet.
 
-   The `DeserializeAsync` method is [*generic*](../fundamentals/types/generics.md), which means you supply type arguments for what kind of objects should be created from the JSON text. In this example, you're deserializing to a `List<Repository>`, which is another generic object, a <xref:System.Collections.Generic.List%601?displayProperty=nameWithType>. The `List<T>` class stores a collection of objects. The type argument declares the type of objects stored in the `List<T>`. The type argument is your `Repository` record, because the JSON text represents a collection of repository objects.
+   The `GetFromJsonAsync` method is [*generic*](../fundamentals/types/generics.md), which means you supply type arguments for what kind of objects should be created from the fetched JSON text. In this example, you're deserializing to a `List<Repository>`, which is another generic object, a <xref:System.Collections.Generic.List%601?displayProperty=nameWithType>. The `List<T>` class stores a collection of objects. The type argument declares the type of objects stored in the `List<T>`. The type argument is your `Repository` record, because the JSON text represents a collection of repository objects.
 
 1. Add code to display the name of each repository. Replace the lines that read:
 
@@ -161,14 +157,14 @@ The following steps convert the JSON response into C# objects. You use the <xref
 
     ```csharp
     foreach (var repo in repositories ?? Enumerable.Empty<Repository>())
-        Console.Write(repo.name);
+        Console.WriteLine(repo.Name);
     ```
 
 1. The following `using` directives should be present at the top of the file:
 
     ```csharp
     using System.Net.Http.Headers;
-    using System.Text.Json;
+    using System.Net.Http.Json;
     ```
 
 1. Run the app.
@@ -178,33 +174,6 @@ The following steps convert the JSON response into C# objects. You use the <xref
    ```
 
    The output is a list of the names of the repositories that are part of the .NET Foundation.
-
-## Configure deserialization
-
-1. In *Repository.cs*, replace the file contents with the following C#.
-
-    ```csharp
-    using System.Text.Json.Serialization;
-
-    public record class Repository(
-        [property: JsonPropertyName("name")] string Name);
-    ```
-
-    This code:
-
-    * Changes the name of the `name` property to `Name`.
-    * Adds the <xref:System.Text.Json.Serialization.JsonPropertyNameAttribute> to specify how this property appears in the JSON.
-
-1. In *Program.cs*, update the code to use the new capitalization of the `Name` property:
-
-   ```csharp
-   foreach (var repo in repositories)
-      Console.Write(repo.Name);
-   ```
-
-1. Run the app.
-
-   The output is the same.
 
 ## Refactor the code
 
@@ -219,10 +188,7 @@ The `ProcessRepositoriesAsync` method can do the async work and return a collect
 1. Return the repositories after processing the JSON response:
 
     ```csharp
-    await using Stream stream =
-        await client.GetStreamAsync("https://api.github.com/orgs/dotnet/repos");
-    var repositories =
-        await JsonSerializer.DeserializeAsync<List<Repository>>(stream);
+    var repositories = await client.GetFromJsonAsync<List<Repository>>("https://api.github.com/orgs/dotnet/repos");
     return repositories ?? new();
     ```
 
@@ -234,7 +200,7 @@ The `ProcessRepositoriesAsync` method can do the async work and return a collect
     var repositories = await ProcessRepositoriesAsync(client);
 
     foreach (var repo in repositories)
-        Console.Write(repo.Name);
+        Console.WriteLine(repo.Name);
     ```
 
 1. Run the app.
@@ -248,17 +214,19 @@ The following steps add code to process more of the properties in the received J
 1. Replace the contents of `Repository` class, with the following `record` definition:
 
     ```csharp
-    using System.Text.Json.Serialization;
-
     public record class Repository(
-        [property: JsonPropertyName("name")] string Name,
-        [property: JsonPropertyName("description")] string Description,
-        [property: JsonPropertyName("html_url")] Uri GitHubHomeUrl,
-        [property: JsonPropertyName("homepage")] Uri Homepage,
-        [property: JsonPropertyName("watchers")] int Watchers);
+        string Name,
+        string Description,
+        Uri GitHubHomeUrl,
+        Uri Homepage,
+        int Watchers,
+        DateTime LastPushUtc
+    );
     ```
 
    The <xref:System.Uri> and `int` types have built-in functionality to convert to and from string representation. No extra code is needed to deserialize from JSON string format to those target types. If the JSON packet contains data that doesn't convert to a target type, the serialization action throws an exception.
+
+   JSON most often uses lowercase for names of it's objects, however we don't need to make any conversion and can keep the uppercase of the fields names, because, like mentioned in one of previous points, the `GetFromJsonAsync` extension method is case-insensitive when it comes to property names.
 
 1. Update the `foreach` loop in the *Program.cs* file to display the property values:
 

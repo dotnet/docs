@@ -2,8 +2,6 @@
 title: .NET glossary
 description: Find out the meaning of selected terms used in the .NET documentation.
 ms.date: 09/25/2024
-author: tdykstra
-ms.author: tdykstra
 ms.topic: reference
 ---
 # .NET glossary
@@ -22,7 +20,7 @@ See [CoreRT](#corert) and [.NET Native](#net-native).
 
 A [workload](#workload)-specific API. Here are some examples:
 
-- .NET Aspire
+- Aspire
 - ASP.NET
 - ASP.NET Web API
 - Entity Framework (EF)
@@ -117,7 +115,7 @@ The word "framework" has a different meaning in the following terms:
 - [shared framework](#shared-framework)
 - [target framework](#target-framework)
 - [TFM (target framework moniker)](#tfm)
-- [framework-dependent app](../core/deploying/index.md#publish-framework-dependent)
+- [framework-dependent app](../core/deploying/index.md#framework-dependent-deployment)
 
 Sometimes "framework" refers to an [implementation of .NET](#implementation-of-net).
 
@@ -291,7 +289,7 @@ The word "runtime" has a different meaning in some contexts:
 
 - *.NET runtime* on the [.NET 5 download page](https://dotnet.microsoft.com/download/dotnet/5.0).
 
-  You can download the *.NET runtime* or other runtimes, such as the *ASP.NET Core runtime*. A *runtime* in this usage is the set of components that must be installed on a machine to run a [framework-dependent](../core/deploying/index.md#publish-framework-dependent) app on the machine. The .NET runtime includes the [CLR](#clr) and the .NET [shared framework](#shared-framework), which provides the [BCL](#bcl).
+  You can download the *.NET runtime* or other runtimes, such as the *ASP.NET Core runtime*. A *runtime* in this usage is the set of components that must be installed on a machine to run a [framework-dependent](../core/deploying/index.md#framework-dependent-deployment) app on the machine. The .NET runtime includes the [CLR](#clr) and the .NET [shared framework](#shared-framework), which provides the [BCL](#bcl).
 
 - *.NET runtime libraries*
 
@@ -312,7 +310,7 @@ Meaning depends on context. The *.NET shared framework* refers to the libraries 
 
 There are other shared frameworks. The *ASP.NET Core shared framework* refers to the libraries included in the [ASP.NET Core runtime](#runtime), which includes the BCL plus additional APIs for use by web apps.
 
-For [framework-dependent apps](../core/deploying/index.md#publish-framework-dependent), the shared framework consists of libraries that are contained in assemblies installed in a folder on the machine that runs the app. For [self-contained apps](../core/deploying/index.md#publish-self-contained), the shared framework assemblies are included with the app.
+For [framework-dependent apps](../core/deploying/index.md#framework-dependent-deployment), the shared framework consists of libraries that are contained in assemblies installed in a folder on the machine that runs the app. For [self-contained apps](../core/deploying/index.md#self-contained-deployment), the shared framework assemblies are included with the app.
 
 For more information, see [Deep-dive into .NET Core primitives, part 2: the shared framework](https://natemcmaster.com/blog/2018/08/29/netcore-primitives-2/).
 

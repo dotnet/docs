@@ -1,254 +1,362 @@
 ---
 description: "Learn more about: Asynchronous programming with Async and Await (Visual Basic)"
 title: "Asynchronous Programming with Async and Await"
-ms.date: 07/20/2015
-ms.assetid: bd7e462b-583b-4395-9c36-45aa9e61072c
+ms.date: 08/29/2025
+ai-usage: ai-generated
 ---
 # Asynchronous programming with Async and Await (Visual Basic)
 
-You can avoid performance bottlenecks and enhance the overall responsiveness of your application by using asynchronous programming. However, traditional techniques for writing asynchronous applications can be complicated, making them difficult to write, debug, and maintain.
+The [Task asynchronous programming (TAP) model](../../../../standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md) provides a layer of abstraction over typical asynchronous coding. In this model, you write code as a sequence of statements, the same as usual. The difference is you can read your task-based code as the compiler processes each statement and before it starts processing the next statement. To accomplish this model, the compiler performs many transformations to complete each task. Some statements can initiate work and return a <xref:System.Threading.Tasks.Task> object that represents the ongoing work and the compiler must resolve these transformations. The goal of task asynchronous programming is to enable code that reads like a sequence of statements, but executes in a more complicated order. Execution is based on external resource allocation and when tasks complete.
 
-Visual Studio 2012 introduced a simplified approach, async programming, that leverages asynchronous support in the .NET Framework 4.5 and higher as well as  in the Windows Runtime. The compiler does the difficult work that the developer used to do, and your application retains a logical structure that resembles synchronous code. As a result, you get all the advantages of asynchronous programming with a fraction of the effort.
+The task asynchronous programming model is analogous to how people give instructions for processes that include asynchronous tasks. This article uses an example with instructions for making breakfast to show how the `Async` and `Await` keywords make it easier to reason about code that includes a series of asynchronous instructions. The instructions for making a breakfast might be provided as a list:
 
-This topic provides an overview of when and how to use async programming and includes links to support topics that contain details and examples.
+1. Pour a cup of coffee.
+2. Heat a pan, then fry two eggs.
+3. Cook three hash brown patties.
+4. Toast two pieces of bread.
+5. Spread butter and jam on the toast.
+6. Pour a glass of orange juice.
 
-## <a name="BKMK_WhentoUseAsynchrony"></a> Async improves responsiveness
+If you have experience with cooking, you might complete these instructions **asynchronously**. You start warming the pan for eggs, then start cooking the hash browns. You put the bread in the toaster, then start cooking the eggs. At each step of the process, you start a task, and then transition to other tasks that are ready for your attention.
 
-Asynchrony is essential for activities that are potentially blocking, such as when your application accesses the web. Access to a web resource sometimes is slow or delayed. If such an activity is blocked within a synchronous process, the entire application must wait. In an asynchronous process, the application can continue with other work that doesn't depend on the web resource until the potentially blocking task finishes.
+Cooking breakfast is a good example of asynchronous work that isn't parallel. One person (or thread) can handle all the tasks. One person can make breakfast asynchronously by starting the next task before the previous task completes. Each cooking task progresses regardless of whether someone is actively watching the process. As soon as you start warming the pan for the eggs, you can begin cooking the hash browns. After the hash browns start to cook, you can put the bread in the toaster.
 
-The following table shows typical areas where asynchronous programming improves responsiveness. The listed APIs from the  .NET Framework 4.5 and the Windows Runtime contain methods that support async programming.
+For a parallel algorithm, you need multiple people who cook (or multiple threads). One person cooks the eggs, another cooks the hash browns, and so on. Each person focuses on their one specific task. Each person who is cooking (or each thread) is blocked synchronously waiting for the current task to complete: Hash browns ready to flip, bread ready to pop up in toaster, and so on.
 
-|Application area|Supporting APIs that contain async methods|
-|----------------------|------------------------------------------------|
-|Web access|<xref:System.Net.Http.HttpClient>, <xref:Windows.Web.Syndication.SyndicationClient>|
-|Working with files|<xref:Windows.Storage.StorageFile>, <xref:System.IO.StreamWriter>, <xref:System.IO.StreamReader>, <xref:System.Xml.XmlReader>|
-|Working with images|<xref:Windows.Media.Capture.MediaCapture>, <xref:Windows.Graphics.Imaging.BitmapEncoder>, <xref:Windows.Graphics.Imaging.BitmapDecoder>|
-|WCF programming|[Synchronous and Asynchronous Operations](../../../../framework/wcf/synchronous-and-asynchronous-operations.md)|
+:::image type="content" source="media/synchronous-breakfast.png" border="false" alt-text="Diagram that shows instructions for preparing breakfast as a list of seven sequential tasks completed in 30 minutes.":::
 
-Asynchrony proves especially valuable for applications that access the UI thread because all UI-related activity usually shares one thread. If any process is blocked in a synchronous application, all are blocked. Your application stops responding, and you might conclude that it has failed when instead it's just waiting.
+Consider the same list of synchronous instructions written as Visual Basic code statements:
 
-When you use asynchronous methods, the application continues to respond to the UI. You can resize or minimize a window, for example, or you can close the application if you don't want to wait for it to finish.
+:::code language="vb" source="snippets/breakfast/Program.vb" id="SynchronousBreakfast":::
 
-The async-based approach adds the equivalent of an automatic transmission to the list of options that you can choose from when designing asynchronous operations. That is, you get all the benefits of traditional asynchronous programming but with much less effort from the developer.
+If you interpret these instructions as a computer would, breakfast takes about 30 minutes to prepare. The duration is the sum of the individual task times. The computer blocks for each statement until all work completes, and then it proceeds to the next task statement. This approach can take significant time. In the breakfast example, the computer method creates an unsatisfying breakfast. Later tasks in the synchronous list, like toasting the bread, don't start until earlier tasks complete. Some food gets cold before the breakfast is ready to serve.
 
-## <a name="BKMK_HowtoWriteanAsyncMethod"></a> Async methods are easier to write
+If you want the computer to execute instructions asynchronously, you must write asynchronous code. When you write client programs, you want the UI to be responsive to user input. Your application shouldn't freeze all interaction while downloading data from the web. When you write server programs, you don't want to block threads that might be serving other requests. Using synchronous code when asynchronous alternatives exist hurts your ability to scale out less expensively. You pay for blocked threads.
 
-The [Async](../../../language-reference/modifiers/async.md) and [Await](../../../language-reference/operators/await-operator.md) keywords in Visual Basic are the heart of async programming. By using those two keywords, you can use resources in the .NET Framework or the Windows Runtime to create an asynchronous method almost as easily as you create a synchronous method. Asynchronous methods that you define by using `Async` and `Await` are referred to as async methods.
+Successful modern apps require asynchronous code. Without language support, writing asynchronous code requires callbacks, completion events, or other means that obscure the original intent of the code. The advantage of synchronous code is the step-by-step action that makes it easy to scan and understand. Traditional asynchronous models force you to focus on the asynchronous nature of the code, not on the fundamental actions of the code.
 
-The following example shows an async method. Almost everything in the code should look completely familiar to you. The comments call out the features that you add to create the asynchrony.
+## Don't block, await instead
 
-You can find a complete Windows Presentation Foundation (WPF) example file at the end of this topic, and you can download the sample from [Async Sample: Example from "Asynchronous Programming with Async and Await"](/samples/dotnet/samples/async-and-await-vb/).
+The previous code highlights an unfortunate programming practice: Writing synchronous code to perform asynchronous operations. The code blocks the current thread from doing any other work. The code doesn't interrupt the thread while there are running tasks. The outcome of this model is similar to staring at the toaster after you put in the bread. You ignore any interruptions and don't start other tasks until the bread pops up. You don't take the butter and jam out of the fridge. You might miss seeing a fire starting on the stove. You want to both toast the bread and handle other concerns at the same time. The same is true with your code.
+
+You can start by updating the code so the thread doesn't block while tasks are running. The `Await` keyword provides a nonblocking way to start a task, then continue execution when the task completes. A simple asynchronous version of the breakfast code looks like the following snippet:
+
+:::code language="vb" source="snippets/breakfast/AsyncBreakfast.vb" id="AsyncBreakfast":::
+
+The code updates the original method bodies of `FryEggs`, `FryHashBrowns`, and `ToastBread` to return `Task(Of Egg)`, `Task(Of HashBrown)`, and `Task(Of Toast)` objects, respectively. The updated method names include the "Async" suffix: `FryEggsAsync`, `FryHashBrownsAsync`, and `ToastBreadAsync`. The `Main` function returns the `Task` object, although it doesn't have a `Return` expression, which is by design.
+
+> [!NOTE]
+> The updated code doesn't yet take advantage of key features of asynchronous programming, which can result in shorter completion times. The code processes the tasks in roughly the same amount of time as the initial synchronous version. For the full method implementations, see the final version of the code later in this article.
+
+Let's apply the breakfast example to the updated code. The thread doesn't block while the eggs or hash browns are cooking, but the code also doesn't start other tasks until the current work completes. You still put the bread in the toaster and stare at the toaster until the bread pops up, but you can now respond to interruptions. In a restaurant where multiple orders are placed, the cook can start a new order while another is already cooking.
+
+In the updated code, the thread working on the breakfast isn't blocked while waiting for any started task that's unfinished. For some applications, this change is all you need. You can enable your app to support user interaction while data downloads from the web. In other scenarios, you might want to start other tasks while waiting for the previous task to complete.
+
+## Start tasks concurrently
+
+For most operations, you want to start several independent tasks immediately. As each task completes, you initiate other work that's ready to start. When you apply this methodology to the breakfast example, you can prepare breakfast more quickly. You also get everything ready close to the same time, so you can enjoy a hot breakfast.
+
+The <xref:System.Threading.Tasks.Task> class and related types are classes you can use to apply this style of reasoning to tasks that are in progress. This approach enables you to write code that more closely resembles the way you create breakfast in real life. You start cooking the eggs, hash browns, and toast at the same time. As each food item requires action, you turn your attention to that task, take care of the action, and then wait for something else that requires your attention.
+
+In your code, you start a task and hold on to the <xref:System.Threading.Tasks.Task> object that represents the work. You use the `Await` method on the task to delay acting on the work until the result is ready.
+
+Apply these changes to the breakfast code. The first step is to store the tasks for operations when they start, rather than using the `Await` expression:
 
 ```vb
-' Three things to note about writing an Async Function:
-'  - The function has an Async modifier.
-'  - Its return type is Task or Task(Of T). (See "Return Types" section.)
-'  - As a matter of convention, its name ends in "Async".
-Async Function AccessTheWebAsync() As Task(Of Integer)
-    Using client As New HttpClient()
-        ' Call and await separately.
-        '  - AccessTheWebAsync can do other things while GetStringAsync is also running.
-        '  - getStringTask stores the task we get from the call to GetStringAsync.
-        '  - Task(Of String) means it is a task which returns a String when it is done.
-        Dim getStringTask As Task(Of String) =
-            client.GetStringAsync("https://learn.microsoft.com/dotnet")
-        ' You can do other work here that doesn't rely on the string from GetStringAsync.
-        DoIndependentWork()
-        ' The Await operator suspends AccessTheWebAsync.
-        '  - AccessTheWebAsync does not continue until getStringTask is complete.
-        '  - Meanwhile, control returns to the caller of AccessTheWebAsync.
-        '  - Control resumes here when getStringTask is complete.
-        '  - The Await operator then retrieves the String result from getStringTask.
-        Dim urlContents As String = Await getStringTask
-        ' The Return statement specifies an Integer result.
-        ' A method which awaits AccessTheWebAsync receives the Length value.
-        Return urlContents.Length
+Dim cup As Coffee = PourCoffee()
+Console.WriteLine("Coffee is ready")
 
-    End Using
+Dim eggsTask As Task(Of Egg) = FryEggsAsync(2)
+Dim eggs As Egg = Await eggsTask
+Console.WriteLine("Eggs are ready")
 
+Dim hashBrownTask As Task(Of HashBrown) = FryHashBrownsAsync(3)
+Dim hashBrown As HashBrown = Await hashBrownTask
+Console.WriteLine("Hash browns are ready")
+
+Dim toastTask As Task(Of Toast) = ToastBreadAsync(2)
+Dim toast As Toast = Await toastTask
+ApplyButter(toast)
+ApplyJam(toast)
+Console.WriteLine("Toast is ready")
+
+Dim oj As Juice = PourOJ()
+Console.WriteLine("Oj is ready")
+Console.WriteLine("Breakfast is ready!")
+```
+
+These revisions don't help to get your breakfast ready any faster. The `Await` expression is applied to all tasks as soon as they start. The next step is to move the `Await` expressions for the hash browns and eggs to the end of the method, before you serve the breakfast:
+
+```vb
+Dim cup As Coffee = PourCoffee()
+Console.WriteLine("Coffee is ready")
+
+Dim eggsTask As Task(Of Egg) = FryEggsAsync(2)
+Dim hashBrownTask As Task(Of HashBrown) = FryHashBrownsAsync(3)
+Dim toastTask As Task(Of Toast) = ToastBreadAsync(2)
+
+Dim toast As Toast = Await toastTask
+ApplyButter(toast)
+ApplyJam(toast)
+Console.WriteLine("Toast is ready")
+Dim oj As Juice = PourOJ()
+Console.WriteLine("Oj is ready")
+
+Dim eggs As Egg = Await eggsTask
+Console.WriteLine("Eggs are ready")
+Dim hashBrown As HashBrown = Await hashBrownTask
+Console.WriteLine("Hash browns are ready")
+
+Console.WriteLine("Breakfast is ready!")
+```
+
+You now have an asynchronously prepared breakfast that takes about 20 minutes to prepare. The total cook time is reduced because some tasks run concurrently.
+
+:::image type="content" source="media/asynchronous-breakfast.png" border="false" alt-text="Diagram that shows instructions for preparing breakfast as eight asynchronous tasks that complete in about 20 minutes, where unfortunately, the eggs and hash browns burn.":::
+
+The code updates improve the preparation process by reducing the cook time, but they introduce a regression by burning the eggs and hash browns. You start all the asynchronous tasks at once. You wait on each task only when you need the results. The code might be similar to program in a web application that makes requests to different microservices and then combines the results into a single page. You make all the requests immediately, and then apply the `Await` expression on all those tasks and compose the web page.
+
+## Support composition with tasks
+
+The previous code revisions help get everything ready for breakfast at the same time, except the toast. The process of making the toast is a *composition* of an asynchronous operation (toast the bread) with synchronous operations (spread butter and jam on the toast). This example illustrates an important concept about asynchronous programming:
+
+> [!IMPORTANT]
+> The composition of an asynchronous operation followed by synchronous work is an asynchronous operation. Stated another way, if any portion of an operation is asynchronous, the entire operation is asynchronous.
+
+In the previous updates, you learned how to use <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601> objects to hold running tasks. You wait on each task before you use its result. The next step is to create methods that represent the combination of other work. Before you serve breakfast, you want to wait on the task that represents toasting the bread before you spread the butter and jam.
+
+You can represent this work with the following code:
+
+```vb
+Async Function MakeToastWithButterAndJamAsync(number As Integer) As Task(Of Toast)
+    Dim toast As Toast = Await ToastBreadAsync(number)
+    ApplyButter(toast)
+    ApplyJam(toast)
+
+    Return toast
 End Function
 ```
 
-If `AccessTheWebAsync` doesn't have any work that it can do between calling `GetStringAsync` and awaiting its completion, you can simplify your code by calling and awaiting in the following single statement.
+The `MakeToastWithButterAndJamAsync` method has the `Async` modifier in its signature that signals to the compiler that the method contains an `Await` expression and contains asynchronous operations. The method represents the task that toasts the bread, then spreads the butter and jam. The method returns a <xref:System.Threading.Tasks.Task%601> object that represents the composition of the three operations.
+
+The revised main block of code now looks like this:
 
 ```vb
-Dim urlContents As String = Await client.GetStringAsync()
+Async Function Main() As Task
+    Dim cup As Coffee = PourCoffee()
+    Console.WriteLine("coffee is ready")
+
+    Dim eggsTask = FryEggsAsync(2)
+    Dim hashBrownTask = FryHashBrownsAsync(3)
+    Dim toastTask = MakeToastWithButterAndJamAsync(2)
+
+    Dim eggs = Await eggsTask
+    Console.WriteLine("eggs are ready")
+
+    Dim hashBrown = Await hashBrownTask
+    Console.WriteLine("hash browns are ready")
+
+    Dim toast = Await toastTask
+    Console.WriteLine("toast is ready")
+
+    Dim oj As Juice = PourOJ()
+    Console.WriteLine("oj is ready")
+    Console.WriteLine("Breakfast is ready!")
+End Function
 ```
 
-The following characteristics summarize what makes the previous example an async method:
+This code change illustrates an important technique for working with asynchronous code. You compose tasks by separating the operations into a new method that returns a task. You can choose when to wait on that task. You can start other tasks concurrently.
 
-- The method signature includes an `Async` modifier.
-- The name of an async method, by convention, ends with an "Async" suffix.
-- The return type is one of the following types:
+## Handle asynchronous exceptions
 
-  - [Task(Of TResult)](xref:System.Threading.Tasks.Task%601) if your method has a return statement in which the operand has type TResult.
-  - <xref:System.Threading.Tasks.Task> if your method has no return statement or has a return statement with no operand.
-  - [Sub](../../language-features/procedures/sub-procedures.md) if you're writing an async event handler.
+Up to this point, your code implicitly assumes all tasks complete successfully. Asynchronous methods throw exceptions, just like their synchronous counterparts. The goals for asynchronous support for exceptions and error handling are the same as for asynchronous support in general. The best practice is to write code that reads like a series of synchronous statements. Tasks throw exceptions when they can't complete successfully. The client code can catch those exceptions when the `Await` expression is applied to a started task.
 
-  For more information, see "Return Types and Parameters" later in this topic.
-
-- The method usually includes at least one await expression, which marks a point where the method can't continue until the awaited asynchronous operation is complete. In the meantime, the method is suspended, and control returns to the method's caller. The next section of this topic illustrates what happens at the suspension point.
-
-In async methods, you use the provided keywords and types to indicate what you want to do, and the compiler does the rest, including keeping track of what must happen when control returns to an await point in a suspended method. Some routine processes, such as loops and exception handling, can be difficult to handle in traditional asynchronous code. In an async method, you write these elements much as you would in a synchronous solution, and the problem is solved.
-
-For more information about asynchrony in previous versions of the .NET Framework, see [TPL and Traditional .NET Framework Asynchronous Programming](../../../../standard/parallel-programming/tpl-and-traditional-async-programming.md).
-
-## <a name="BKMK_WhatHappensUnderstandinganAsyncMethod"></a> What happens in an Async method
-
-The most important thing to understand in asynchronous programming is how the control flow moves from method to method. The following diagram leads you through the process:
-
-![Diagram that shows tracing an async program.](./media/index/navigation-trace-async-program.png)
-
-The numbers in the diagram correspond to the following steps:
-
-1. An event handler calls and awaits the `AccessTheWebAsync` async method.
-
-2. `AccessTheWebAsync` creates an <xref:System.Net.Http.HttpClient> instance and calls the <xref:System.Net.Http.HttpClient.GetStringAsync%2A> asynchronous method to download the contents of a website as a string.
-
-3. Something happens in `GetStringAsync` that suspends its progress. Perhaps it must wait for a website to download or some other blocking activity. To avoid blocking resources, `GetStringAsync` yields control to its caller, `AccessTheWebAsync`.
-
-     `GetStringAsync` returns a [Task(Of TResult)](xref:System.Threading.Tasks.Task%601) where TResult is a string, and `AccessTheWebAsync` assigns the task to the `getStringTask` variable. The task represents the ongoing process for the call to `GetStringAsync`, with a commitment to produce an actual string value when the work is complete.
-
-4. Because `getStringTask` hasn't been awaited yet, `AccessTheWebAsync` can continue with other work that doesn't depend on the final result from `GetStringAsync`. That work is represented by a call to the synchronous method `DoIndependentWork`.
-
-5. `DoIndependentWork` is a synchronous method that does its work and returns to its caller.
-
-6. `AccessTheWebAsync` has run out of work that it can do without a result from `getStringTask`. `AccessTheWebAsync` next wants to calculate and return the length of the downloaded string, but the method can't calculate that value until the method has the string.
-
-     Therefore, `AccessTheWebAsync` uses an await operator to suspend its progress and to yield control to the method that called `AccessTheWebAsync`. `AccessTheWebAsync` returns a `Task(Of Integer)` to the caller. The task represents a promise to produce an integer result that's the length of the downloaded string.
-
-    > [!NOTE]
-    > If `GetStringAsync` (and therefore `getStringTask`) is complete before `AccessTheWebAsync` awaits it, control remains in `AccessTheWebAsync`. The expense of suspending and then returning to `AccessTheWebAsync` would be wasted if the called asynchronous process (`getStringTask`) has already completed and AccessTheWebSync doesn't have to wait for the final result.
-
-     Inside the caller (the event handler in this example), the processing pattern continues. The caller might do other work that doesn't depend on the result from `AccessTheWebAsync` before awaiting that result, or the caller might await immediately.   The event handler is waiting for `AccessTheWebAsync`, and `AccessTheWebAsync` is waiting for `GetStringAsync`.
-
-7. `GetStringAsync` completes and produces a string result. The string result isn't returned by the call to `GetStringAsync` in the way that you might expect. (Remember that the method already returned a task in step 3.) Instead, the string result is stored in the task that represents the completion of the method, `getStringTask`. The await operator retrieves the result from `getStringTask`. The assignment statement assigns the retrieved result to `urlContents`.
-
-8. When `AccessTheWebAsync` has the string result, the method can calculate the length of the string. Then the work of `AccessTheWebAsync` is also complete, and the waiting event handler can resume. In the full example at the end of the topic, you can confirm that the event handler retrieves and prints the value of the length result.
-
-If you are new to asynchronous programming, take a minute to consider the difference between synchronous and asynchronous behavior. A synchronous method returns when its work is complete (step 5), but an async method returns a task value when its work is suspended (steps 3 and 6). When the async method eventually completes its work, the task is marked as completed and the result, if any, is stored in the task.
-
-For more information about control flow, see [Control Flow in Async Programs (Visual Basic)](control-flow-in-async-programs.md).
-
-## <a name="BKMK_APIAsyncMethods"></a> API Async Methods
-
-You might be wondering where to find methods such as `GetStringAsync` that support async programming. The .NET Framework 4.5 or higher contains many members that work with `Async` and `Await`. You can recognize these members by the "Async" suffix that's attached to the member name and a return type of <xref:System.Threading.Tasks.Task> or [Task(Of TResult)](xref:System.Threading.Tasks.Task%601). For example, the `System.IO.Stream` class contains methods such as <xref:System.IO.Stream.CopyToAsync%2A>, <xref:System.IO.Stream.ReadAsync%2A>, and <xref:System.IO.Stream.WriteAsync%2A> alongside the synchronous methods <xref:System.IO.Stream.CopyTo%2A>, <xref:System.IO.Stream.Read%2A>, and <xref:System.IO.Stream.Write%2A>.
-
-The Windows Runtime also contains many methods that you can use with `Async` and `Await` in Windows apps. For more information and example methods, see [Call asynchronous APIs in C# or Visual Basic](/windows/uwp/threading-async/call-asynchronous-apis-in-csharp-or-visual-basic), [Asynchronous programming (Windows Runtime apps)](/previous-versions/windows/apps/hh464924(v=win.10)), and [WhenAny: Bridging between the .NET Framework and the Windows Runtime](/previous-versions/visualstudio/visual-studio-2013/jj635140(v=vs.120)).
-
-## <a name="BKMK_Threads"></a> Threads
-
-Async methods are intended to be non-blocking operations. An `Await` expression in an async method doesn't block the current thread while the awaited task is running. Instead, the expression signs up the rest of the method as a continuation and returns control to the caller of the async method.
-
-The `Async` and `Await` keywords don't cause additional threads to be created. Async methods don't require multi-threading because an async method doesn't run on its own thread. The method runs on the current synchronization context and uses time on the thread only when the method is active. You can use <xref:System.Threading.Tasks.Task.Run%2A?displayProperty=nameWithType> to move CPU-bound work to a background thread, but a background thread doesn't help with a process that's just waiting for results to become available.
-
-The async-based approach to asynchronous programming is preferable to existing approaches in almost every case. In particular, this approach is better than <xref:System.ComponentModel.BackgroundWorker> for I/O-bound operations because the code is simpler and you don't have to guard against race conditions. In combination with <xref:System.Threading.Tasks.Task.Run%2A?displayProperty=nameWithType>, async programming is better than <xref:System.ComponentModel.BackgroundWorker> for CPU-bound operations because async programming separates the coordination details of running your code from the work that `Task.Run` transfers to the threadpool.
-
-## <a name="BKMK_AsyncandAwait"></a> Async and Await
-
-If you specify that a method is an async method by using an [Async](../../../language-reference/modifiers/async.md) modifier, you enable the following two capabilities.
-
-- The marked async method can use [Await](../../../language-reference/operators/await-operator.md) to designate suspension points. The await operator tells the compiler that the async method can't continue past that point until the awaited asynchronous process is complete. In the meantime, control returns to the caller of the async method.
-
-  The suspension of an async method at an `Await` expression doesn't constitute an exit from the method, and `Finally` blocks don't run.
-
-- The marked async method can itself be awaited by methods that call it.
-
-An async method typically contains one or more occurrences of an `Await` operator, but the absence of `Await` expressions doesn't cause a compiler error. If an async method doesn't use an `Await` operator to mark a suspension point, the method executes as a synchronous method does, despite the `Async` modifier. The compiler issues a warning for such methods.
-
-`Async` and `Await` are contextual keywords. For more information and examples, see the following topics:
-
-- [Async](../../../language-reference/modifiers/async.md)
-- [Await Operator](../../../language-reference/operators/await-operator.md)
-
-## <a name="BKMK_ReturnTypesandParameters"></a> Return types and parameters
-
-In .NET Framework programming, an async method typically returns a <xref:System.Threading.Tasks.Task> or a [Task(Of TResult)](xref:System.Threading.Tasks.Task%601). Inside an async method, an `Await` operator is applied to a task that's returned from a call to another async method.
-
-You specify [Task(Of TResult)](xref:System.Threading.Tasks.Task%601) as the return type if the method contains a [Return](../../../language-reference/statements/return-statement.md) statement that specifies an operand of type `TResult`.
-
-You use `Task` as the return type if the method has no return statement or has a return statement that doesn't return an operand.
-
-The following example shows how you declare and call a method that returns a [Task(Of TResult)](xref:System.Threading.Tasks.Task%601) or a <xref:System.Threading.Tasks.Task>:
+In the breakfast example, suppose the toaster catches fire while toasting the bread. You can simulate that problem by modifying the `ToastBreadAsync` method to match the following code:
 
 ```vb
-' Signature specifies Task(Of Integer)
-Async Function TaskOfTResult_MethodAsync() As Task(Of Integer)
+Private Async Function ToastBreadAsync(slices As Integer) As Task(Of Toast)
+    For slice As Integer = 0 To slices - 1
+        Console.WriteLine("Putting a slice of bread in the toaster")
+    Next
+    Console.WriteLine("Start toasting...")
+    Await Task.Delay(2000)
+    Console.WriteLine("Fire! Toast is ruined!")
+    Throw New InvalidOperationException("The toaster is on fire")
+    Await Task.Delay(1000)
+    Console.WriteLine("Remove toast from toaster")
 
-    Dim hours As Integer
-    ' . . .
-    ' Return statement specifies an integer result.
-    Return hours
+    Return New Toast()
 End Function
-
-' Calls to TaskOfTResult_MethodAsync
-Dim returnedTaskTResult As Task(Of Integer) = TaskOfTResult_MethodAsync()
-Dim intResult As Integer = Await returnedTaskTResult
-' or, in a single statement
-Dim intResult As Integer = Await TaskOfTResult_MethodAsync()
-
-' Signature specifies Task
-Async Function Task_MethodAsync() As Task
-
-    ' . . .
-    ' The method has no return statement.
-End Function
-
-' Calls to Task_MethodAsync
-Task returnedTask = Task_MethodAsync()
-Await returnedTask
-' or, in a single statement
-Await Task_MethodAsync()
 ```
 
-Each returned task represents ongoing work. A task encapsulates information about the state of the asynchronous process and, eventually, either the final result from the process or the exception that the process raises if it doesn't succeed.
+> [!NOTE]
+> When you compile this code, you see a warning about unreachable code. This error is by design. After the toaster catches fire, operations don't proceed normally and the code returns an error.
 
-An async method can also be a `Sub` method. This return type is used primarily to define event handlers, where a return type is required. Async event handlers often serve as the starting point for async programs.
+After you make the code changes, run the application and check the output:
 
-An async method that's a `Sub` procedure can't be awaited, and the caller can't catch any exceptions that the method throws.
+```console
+Pouring coffee
+Coffee is ready
+Warming the egg pan...
+putting 3 hash brown patties in the pan
+Cooking first side of hash browns...
+Putting a slice of bread in the toaster
+Putting a slice of bread in the toaster
+Start toasting...
+Fire! Toast is ruined!
+Flipping a hash brown patty
+Flipping a hash brown patty
+Flipping a hash brown patty
+Cooking the second side of hash browns...
+Cracking 2 eggs
+Cooking the eggs ...
+Put hash browns on plate
+Put eggs on plate
+Eggs are ready
+Hash browns are ready
+Unhandled exception. System.InvalidOperationException: The toaster is on fire
+   at AsyncBreakfast.Program.ToastBreadAsync(Int32 slices) in Program.vb:line 65
+   at AsyncBreakfast.Program.MakeToastWithButterAndJamAsync(Int32 number) in Program.vb:line 36
+   at AsyncBreakfast.Program.Main(String[] args) in Program.vb:line 24
+   at AsyncBreakfast.Program.<Main>(String[] args)
+```
 
-An async method can't declare [ByRef](../../../language-reference/modifiers/byref.md) parameters, but the method can call methods that have such parameters.
+Notice that quite a few tasks finish between the time when the toaster catches fire and the system observes the exception. When a task that runs asynchronously throws an exception, that task is **faulted**. The <xref:System.Threading.Tasks.Task> object holds the exception that was thrown in the <xref:System.Threading.Tasks.Task.Exception?displayProperty=nameWithType> property. Faulted tasks *throw* the exception when the `Await` expression is applied to the task.
 
-For more information and examples, see [Async Return Types (Visual Basic)](async-return-types.md). For more information about how to catch exceptions in async methods, see [Try...Catch...Finally Statement](../../../language-reference/statements/try-catch-finally-statement.md).
+There are two important mechanisms to understand about this process:
 
-Asynchronous APIs in Windows Runtime programming have one of the following return types, which are similar to tasks:
+- How an exception is stored in a faulted task.
+- How an exception is unpackaged and rethrown when code waits (`Await`) on a faulted task.
 
-- [IAsyncOperation(Of TResult)](xref:Windows.Foundation.IAsyncOperation%601), which corresponds to [Task(Of TResult)](xref:System.Threading.Tasks.Task%601)
-- <xref:Windows.Foundation.IAsyncAction>, which corresponds to <xref:System.Threading.Tasks.Task>
-- [IAsyncActionWithProgress(Of TProgress)](xref:Windows.Foundation.IAsyncActionWithProgress%601)
-- [IAsyncOperationWithProgress(Of TResult, TProgress)](xref:Windows.Foundation.IAsyncOperationWithProgress%602)
+When code running asynchronously throws an exception, the exception is stored in the <xref:System.Threading.Tasks.Task> object. The <xref:System.Threading.Tasks.Task.Exception?displayProperty=nameWithType> property is an <xref:System.AggregateException> object because more than one exception might be thrown during asynchronous work. Any exception thrown is added to the <xref:System.AggregateException.InnerExceptions?displayProperty=nameWithType> collection. If the `Exception` property is null, a new `AggregateException` object is created and the thrown exception is the first item in the collection.
 
-For more information and an example, see [Call asynchronous APIs in C# or Visual Basic](/windows/uwp/threading-async/call-asynchronous-apis-in-csharp-or-visual-basic).
+The most common scenario for a faulted task is that the `Exception` property contains exactly one exception. When your code waits on a faulted task, it rethrows the first <xref:System.AggregateException.InnerExceptions?displayProperty=nameWithType> exception in the collection. This result is the reason why the output from the example shows an <xref:System.InvalidOperationException> object rather than an `AggregateException` object. Extracting the first inner exception makes working with asynchronous methods as similar as possible to working with their synchronous counterparts. You can examine the `Exception` property in your code when your scenario might generate multiple exceptions.
 
-## <a name="BKMK_NamingConvention"></a> Naming convention
+> [!TIP]
+> The recommended practice is for any argument validation exceptions to emerge *synchronously* from task-returning methods. For more information and examples, see [Exceptions in task-returning methods](../../../../standard/exceptions/best-practices-for-exceptions.md#catch-cancellation-and-asynchronous-exceptions).
 
-By convention, you append "Async" to the names of methods that have an `Async` modifier.
+Before you continue to the next section, comment out the following two statements in your `ToastBreadAsync` method. You don't want to start another fire:
 
-You can ignore the convention where an event, base class, or interface contract suggests a different name. For example, you shouldn't rename common event handlers, such as `Button1_Click`.
+```vb
+' Console.WriteLine("Fire! Toast is ruined!")
+' Throw New InvalidOperationException("The toaster is on fire")
+```
 
-## <a name="BKMK_RelatedTopics"></a> Related topics and samples (Visual Studio)
+## Apply await expressions to tasks efficiently
 
-|Title|Description|Sample|
-|-----------|-----------------|------------|
-|[Walkthrough: Accessing the Web by Using Async and Await (Visual Basic)](walkthrough-accessing-the-web-by-using-async-and-await.md)|Shows how to convert a synchronous WPF solution to an asynchronous WPF solution. The application downloads a series of websites.|[Async Sample: Asynchronous Programming with Async and Await (Visual Basic)](/samples/dotnet/samples/async-and-await-vb/)|
-|[How to: Extend the Async Walkthrough by Using Task.WhenAll (Visual Basic)](how-to-extend-the-async-walkthrough-by-using-task-whenall.md)|Adds <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=nameWithType> to the previous walkthrough. The use of `WhenAll` starts all the downloads at the same time.||
-|[How to: Make Multiple Web Requests in Parallel by Using Async and Await (Visual Basic)](how-to-make-multiple-web-requests-in-parallel-by-using-async-and-await.md)|Demonstrates how to start several tasks at the same time.|[Async Sample: Make Multiple Web Requests in Parallel](https://code.msdn.microsoft.com/Async-Make-Multiple-Web-49adb82e)|
-|[Async Return Types (Visual Basic)](async-return-types.md)|Illustrates the types that async methods can return and explains when each type is appropriate.||
-|[Control Flow in Async Programs (Visual Basic)](control-flow-in-async-programs.md)|Traces in detail the flow of control through a succession of await expressions in an asynchronous program.|[Async Sample: Control Flow in Async Programs](https://code.msdn.microsoft.com/Async-Sample-Control-Flow-5c804fc0)|
-|[Fine-Tuning Your Async Application (Visual Basic)](fine-tuning-your-async-application.md)|Shows how to add the following functionality to your async solution:<br /><br /> - [Cancel an Async Task or a List of Tasks (Visual Basic)](cancel-an-async-task-or-a-list-of-tasks.md)<br />- [Cancel Async Tasks after a Period of Time (Visual Basic)](cancel-async-tasks-after-a-period-of-time.md)<br />- [Cancel Remaining Async Tasks after One Is Complete (Visual Basic)](cancel-remaining-async-tasks-after-one-is-complete.md)<br />- [Start Multiple Async Tasks and Process Them As They Complete (Visual Basic)](start-multiple-async-tasks-and-process-them-as-they-complete.md)|[Async Sample: Fine Tuning Your Application](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea)|
-|[Handling Reentrancy in Async Apps (Visual Basic)](handling-reentrancy-in-async-apps.md)|Shows how to handle cases in which an active asynchronous operation is restarted while it's running.||
-|[WhenAny: Bridging between the .NET Framework and the Windows Runtime](/previous-versions/visualstudio/visual-studio-2013/jj635140(v=vs.120))|Shows how to bridge between Task types in the .NET Framework and IAsyncOperations in the Windows Runtime so that you can use <xref:System.Threading.Tasks.Task.WhenAny%2A> with a Windows Runtime method.|[Async Sample: Bridging between .NET and Windows Runtime (AsTask and WhenAny)](/previous-versions/visualstudio/visual-studio-2013/jj635140(v=vs.120))|
-|Async Cancellation: Bridging between the .NET Framework and the Windows Runtime|Shows how to bridge between Task types in the .NET Framework and IAsyncOperations in the Windows Runtime so that you can use <xref:System.Threading.CancellationTokenSource> with a Windows Runtime method.|[Async Sample: Bridging between .NET and Windows Runtime (AsTask & Cancellation)](https://code.msdn.microsoft.com/Async-Sample-Bridging-9479eca3)|
-|[Using Async for File Access (Visual Basic)](using-async-for-file-access.md)|Lists and demonstrates the benefits of using async and await to access files.||
-|[Task-based Asynchronous Pattern (TAP)](../../../../standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md)|Describes a new pattern for asynchrony in the .NET Framework. The pattern is based on the <xref:System.Threading.Tasks.Task> and [Task(Of TResult)](xref:System.Threading.Tasks.Task%601) types.||
+You can improve the series of `Await` expressions at the end of the previous code by using methods of the <xref:System.Threading.Tasks.Task> class. One API is the <xref:System.Threading.Tasks.Task.WhenAll%2A> method, which returns a <xref:System.Threading.Tasks.Task> object that completes when all the tasks in its argument list are complete. The following code demonstrates this method:
 
-## <a name="BKMK_CompleteExample"></a> Complete Example
+```vb
+Await Task.WhenAll(eggsTask, hashBrownTask, toastTask)
+Console.WriteLine("Eggs are ready")
+Console.WriteLine("Hash browns are ready")
+Console.WriteLine("Toast is ready")
+Console.WriteLine("Breakfast is ready!")
+```
 
-The following code is the MainWindow.xaml.vb file from the Windows Presentation Foundation (WPF) application that this topic discusses. You can download the sample from [Async Sample: Example from "Asynchronous Programming with Async and Await"](/samples/dotnet/samples/async-and-await-vb/).
+Another option is to use the <xref:System.Threading.Tasks.Task.WhenAny%2A> method, which returns a `Task(Of Task)` object that completes when any of its arguments complete. You can wait on the returned task because you know the task is done. The following code shows how you can use the <xref:System.Threading.Tasks.Task.WhenAny%2A> method to wait on the first task to finish and then process its result. After you process the result from the completed task, you remove the completed task from the list of tasks passed to the `WhenAny` method.
 
-[!code-vb[async](~/samples/snippets/standard/async/async-and-await/vb/MainWindow.xaml.vb)]
+:::code language="vb" source="snippets/breakfast/ConcurrentBreakfast.vb" id="ConcurrentBreakfast":::
+
+Near the end of the code snippet, notice the `Await finishedTask` expression. This line is important because `Task.WhenAny` returns a `Task(Of Task)` - a wrapper task that contains the completed task. When you `Await Task.WhenAny`, you're waiting for the wrapper task to complete, and the result is the actual task that finished first. However, to retrieve that task's result or ensure any exceptions are properly thrown, you must `Await` the completed task itself (stored in `finishedTask`). Even though you know the task has finished, awaiting it again allows you to access its result or handle any exceptions that might have caused it to fault.
+
+### Review final code
+
+Here's what the final version of the code looks like:
+
+:::code language="vb" source="snippets/breakfast/ConcurrentBreakfast.vb" id="ConcurrentBreakfast":::
+
+:::image type="content" source="media/whenany-async-breakfast.png" border="false" alt-text="Diagram that shows instructions for preparing breakfast as six asynchronous tasks that complete in about 15 minutes, and the code monitors for possible interruptions.":::
+
+The code completes the asynchronous breakfast tasks in about 15 minutes. The total time is reduced because some tasks run concurrently. The code simultaneously monitors multiple tasks and takes action only as needed.
+
+The final code is asynchronous. It more accurately reflects how a person might cook breakfast. Compare the final code with the first code sample in the article. The core actions are still clear by reading the code. You can read the final code the same way you read the list of instructions for making a breakfast, as shown at the beginning of the article. The language features for the `Async` and `Await` keywords provide the translation every person makes to follow the written instructions: Start tasks as you can and don't block while waiting for tasks to complete.
+
+## Async/await vs ContinueWith
+
+The `Async` and `Await` keywords provide syntactic simplification over using <xref:System.Threading.Tasks.Task.ContinueWith%2A> directly. While `Async`/`Await` and `ContinueWith` have similar semantics for handling asynchronous operations, the compiler doesn't necessarily translate `Await` expressions directly into `ContinueWith` method calls. Instead, the compiler generates optimized state machine code that provides the same logical behavior. This transformation provides significant readability and maintainability benefits, especially when chaining multiple asynchronous operations.
+
+Consider a scenario where you need to perform multiple sequential asynchronous operations. Here's how the same logic looks when implemented with `ContinueWith` compared to `Async`/`Await`:
+
+### Using ContinueWith
+
+With `ContinueWith`, each step in a sequence of asynchronous operations requires nested continuations:
+
+```vb
+' Using ContinueWith - demonstrates the complexity when chaining operations
+Function MakeBreakfastWithContinueWith() As Task
+    Return StartCookingEggsAsync() _
+        .ContinueWith(Function(eggsTask)
+                          Dim eggs = eggsTask.Result
+                          Console.WriteLine("Eggs ready, starting bacon...")
+                          Return StartCookingBaconAsync()
+                      End Function) _
+        .Unwrap() _
+        .ContinueWith(Function(baconTask)
+                          Dim bacon = baconTask.Result
+                          Console.WriteLine("Bacon ready, starting toast...")
+                          Return StartToastingBreadAsync()
+                      End Function) _
+        .Unwrap() _
+        .ContinueWith(Function(toastTask)
+                          Dim toast = toastTask.Result
+                          Console.WriteLine("Toast ready, applying butter...")
+                          Return ApplyButterAsync(toast)
+                      End Function) _
+        .Unwrap() _
+        .ContinueWith(Function(butteredToastTask)
+                          Dim butteredToast = butteredToastTask.Result
+                          Console.WriteLine("Butter applied, applying jam...")
+                          Return ApplyJamAsync(butteredToast)
+                      End Function) _
+        .Unwrap() _
+        .ContinueWith(Sub(finalToastTask)
+                          Dim finalToast = finalToastTask.Result
+                          Console.WriteLine("Breakfast completed with ContinueWith!")
+                      End Sub)
+End Function
+```
+
+### Using Async/Await
+
+The same sequence of operations using `Async`/`Await` reads much more naturally:
+
+```vb
+' Using Async/Await - much cleaner and easier to read
+Async Function MakeBreakfastWithAsyncAwait() As Task
+    Dim eggs = Await StartCookingEggsAsync()
+    Console.WriteLine("Eggs ready, starting bacon...")
+    
+    Dim bacon = Await StartCookingBaconAsync()
+    Console.WriteLine("Bacon ready, starting toast...")
+    
+    Dim toast = Await StartToastingBreadAsync()
+    Console.WriteLine("Toast ready, applying butter...")
+    
+    Dim butteredToast = Await ApplyButterAsync(toast)
+    Console.WriteLine("Butter applied, applying jam...")
+    
+    Dim finalToast = Await ApplyJamAsync(butteredToast)
+    Console.WriteLine("Breakfast completed with Async/Await!")
+End Function
+```
+
+### Why Async/Await is preferred
+
+The `Async`/`Await` approach offers several advantages:
+
+- **Readability**: The code reads like synchronous code, making it easier to understand the flow of operations.
+- **Maintainability**: Adding or removing steps in the sequence requires minimal code changes.
+- **Error handling**: Exception handling with `Try`/`Catch` blocks works naturally, whereas `ContinueWith` requires careful handling of faulted tasks.
+- **Debugging**: The call stack and debugger experience is much better with `Async`/`Await`.
+- **Performance**: The compiler optimizations for `Async`/`Await` are more sophisticated than manual `ContinueWith` chains.
+
+The benefit becomes even more apparent as the number of chained operations increases. While a single continuation might be manageable with `ContinueWith`, sequences of 3-4 or more asynchronous operations quickly become difficult to read and maintain. This pattern, known as "monadic do-notation" in functional programming, allows you to compose multiple asynchronous operations in a sequential, readable manner.
 
 ## See also
 
 - [Await Operator](../../../language-reference/operators/await-operator.md)
 - [Async](../../../language-reference/modifiers/async.md)
+- [Walkthrough: Accessing the Web by Using Async and Await (Visual Basic)](walkthrough-accessing-the-web-by-using-async-and-await.md)
+- [Async Return Types (Visual Basic)](async-return-types.md)
+- [Task-based Asynchronous Pattern (TAP)](../../../../standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md)

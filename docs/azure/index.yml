@@ -74,10 +74,10 @@ conceptualContent:
       links:
         - itemType: overview
           url: /dotnet/aspire/get-started/aspire-overview
-          text: Build cloud native apps using .NET Aspire
+          text: Build cloud native apps using Aspire
         - itemType: quickstart
           url: /dotnet/aspire/get-started/build-your-first-aspire-app?tabs=visual-studio
-          text: Build your first .NET Aspire app
+          text: Build your first Aspire app
         - itemType: quickstart
           text: Run and debug a microservice in Kubernetes
           url: /azure/dev-spaces/quickstart-netcore-visualstudio
@@ -118,7 +118,7 @@ conceptualContent:
           url: ../ai/get-started-app-chat-template.md
         - itemType: overview
           text: Learning resources and samples
-          url: ../ai/azure-ai-for-dotnet-developers.md
+          url: ../ai/resources/azure-ai.md
     - title: Create mobile apps
       links:
         - itemType: learn

@@ -2,7 +2,7 @@
 title: How to authenticate .NET applications with Azure services
 description: Learn how to authenticate a .NET app with Azure services by using classes in the Azure Identity library.
 ms.topic: concept-article
-ms.date: 08/02/2024
+ms.date: 08/26/2025
 ms.custom:
   - devx-track-dotnet
   - engagement-fy23
@@ -32,13 +32,13 @@ Use of connection strings should be limited to scenarios where token-based authe
 
 The specific type of token-based authentication an app should use to authenticate to Azure resources depends on where the app runs. The following diagram provides guidance for different scenarios and environments:
 
-:::image type="content" source="../media/dotnet-sdk-auth-strategy.png" alt-text="A diagram showing the recommended token-based authentication strategies for an app depending on where it's running." :::
+:::image type="content" source="../media/mermaidjs/authentication-environments.svg" alt-text="A diagram showing the recommended token-based authentication strategies for an app depending on where it's running." :::
 
 When an app is:
 
 - **Hosted on Azure**: The app should authenticate to Azure resources using a managed identity. This option is discussed in more detail at [authentication in server environments](#authentication-for-azure-hosted-apps).
-- **Running locally during development**: The app can authenticate to Azure using either an application service principal for local development or by using the developer's Azure credentials. Each option is discussed in more detail at [authentication during local development](#authentication-during-local-development).
-- **Hosted on-premises**: The app should authenticate to Azure resources using an application service principal, or a managed identity in the case of Azure Arc. On-premises workflows are discussed in more detail at [authentication in server environments](#authentication-for-apps-hosted-on-premises).
+- **Running locally during development**: The app can authenticate to Azure using a [developer account](local-development-dev-accounts.md), a [broker](local-development-broker.md), or a [service principal](local-development-service-principal.md). Each option is discussed in more detail at [authentication during local development](#authentication-during-local-development).
+- **Hosted on-premises**: The app should authenticate to Azure resources using an application service principal, or a managed identity in the case of Azure Arc. On-premises workflows are discussed in more detail at [Authentication for apps hosted on-premises](#authentication-for-apps-hosted-on-premises).
 
 ## Authentication for Azure-hosted apps
 
@@ -68,6 +68,13 @@ You can use your own Azure credentials to authenticate to Azure resources during
 
 > [!div class="nextstepaction"]
 > [Authenticate locally using developer credentials](local-development-dev-accounts.md)
+
+#### Use a broker
+
+Brokered authentication collects user credentials using the system authentication broker to authenticate an app. A system authentication broker runs on a user's machine and manages the authentication handshakes and token maintenance for all connected accounts.
+
+> [!div class="nextstepaction"]
+> [Authenticate locally using a broker](local-development-broker.md)
 
 #### Use a service principal
 

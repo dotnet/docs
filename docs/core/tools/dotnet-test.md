@@ -1,9 +1,11 @@
 ---
 title: dotnet test command
 description: The dotnet test command is used to execute unit tests in a given project.
-ms.date: 03/27/2024
+ms.date: 09/29/2025
 ---
 # dotnet test
+
+**This article applies to:** ✔️ .NET 6 SDK and later versions
 
 ## Name
 
@@ -35,8 +37,6 @@ Some examples of the `dotnet.config` file:
 
 ### [dotnet test with VSTest](#tab/dotnet-test-with-vstest)
 
-**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
-
 #### Synopsis
 
 ```dotnetcli
@@ -54,6 +54,7 @@ dotnet test [<PROJECT> | <SOLUTION> | <DIRECTORY> | <DLL> | <EXE>]
     [-c|--configuration <CONFIGURATION>]
     [--collect <DATA_COLLECTOR_NAME>]
     [-d|--diag <LOG_FILE>]
+    [--disable-build-servers]
     [-f|--framework <FRAMEWORK>]
     [-e|--environment <NAME="VALUE">]
     [--filter <EXPRESSION>]
@@ -68,6 +69,7 @@ dotnet test [<PROJECT> | <SOLUTION> | <DIRECTORY> | <DLL> | <EXE>]
     [-r|--runtime <RUNTIME_IDENTIFIER>]
     [-s|--settings <SETTINGS_FILE>]
     [-t|--list-tests]
+    [--tl:[auto|on|off]]
     [-v|--verbosity <LEVEL>]
     [<args>...]
     [[--] <RunSettings arguments>]
@@ -186,6 +188,8 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
   Enables diagnostic mode for the test platform and writes diagnostic messages to the specified file and to files next to it. The process that is logging the messages determines which files are created, such as `*.host_<date>.txt` for test host log, and `*.datacollector_<date>.txt` for data collector log.
 
+[!INCLUDE [disable-build-servers](../../../includes/cli-disable-build-servers.md)]
+
 - **`-e|--environment <NAME="VALUE">`**
 
   Sets the value of an environment variable. Creates the variable if it does not exist, overrides if it does exist. Use of this option will force the tests to be run in an isolated process. The option can be specified multiple times to provide multiple variables.
@@ -259,6 +263,8 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 - **`-t|--list-tests`**
 
   List the discovered tests instead of running the tests.
+
+[!INCLUDE [tl](../../../includes/cli-tl.md)]
 
 [!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
 
@@ -422,7 +428,6 @@ For more information and examples on how to use selective unit test filtering, s
 dotnet test
     [--project <PROJECT_PATH>]
     [--solution <SOLUTION_PATH>]
-    [--directory <DIRECTORY_PATH>]
     [--test-modules <EXPRESSION>] 
     [--root-directory <ROOT_PATH>]
     [--max-parallel-test-modules <NUMBER>]
@@ -458,20 +463,16 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
 #### Options
 
 > [!NOTE]
-> You can use only one of the following options at a time: `--project`, `--solution`, `--directory`, or `--test-modules`. These options can't be combined.
+> You can use only one of the following options at a time: `--project`, `--solution`, or `--test-modules`. These options can't be combined.
 > In addition, when using `--test-modules`, you can't specify `--arch`, `--configuration`, `--framework`, `--os`, or `--runtime`. These options are not relevant for an already-built module.
 
 - **`--project <PROJECT_PATH>`**
 
-  Specifies the path to the test project.
+  Specifies the path of the project file to run (folder name or full path). If not specified, it defaults to the current directory.
 
 - **`--solution <SOLUTION_PATH>`**
 
-  Specifies the path to the solution.
-
-- **`--directory <DIRECTORY_PATH>`**
-
-  Specifies the path to a directory that contains a project or a solution.
+  Specifies the path of the solution file to run (folder name or full path). If not specified, it defaults to the current directory.
 
 - **`--test-modules <EXPRESSION>`**
 
@@ -500,6 +501,9 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
   The target runtime to test for.
 
   Short form `-r` available starting in .NET SDK 7.
+
+  > [!NOTE]
+  > Running tests for a solution with a global `RuntimeIdentifier` property (explicitly or via `--arch`, `--runtime`, or `--os`) is not supported. Set `RuntimeIdentifier` on an individual project level instead.
 
 - **`-v|--verbosity <LEVEL>`**
   
@@ -576,12 +580,6 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
 
   ```dotnetcli
   dotnet test --solution ./TestProjects/TestProjects.sln
-  ```
-
-- Run the tests in a solution or project that can be found in the `TestProjects` directory:
-
-  ```dotnetcli
-  dotnet test --directory ./TestProjects
   ```
 
 - Run the tests using `TestProject.dll` assembly:

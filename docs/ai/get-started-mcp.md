@@ -3,7 +3,6 @@ title: Get started with .NET AI and MCP
 description: Learn about .NET AI and MCP key concepts and development resources to get started building MCP clients and servers
 ms.date: 04/29/2025
 ms.topic: overview
-ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 author: alexwolfmsft
 ms.author: alexwolf
 # CustomerIntent: As a .NET developer new to OpenAI, I want deploy and use sample code to interact to learn from the sample code to summarize text.
@@ -68,7 +67,7 @@ dotnet add package ModelContextProtocol --prerelease
 
 Instead of building unique connectors for each integration point, you can often leverage or reference prebuilt integrations from various providers such as GitHub and Docker:
 
-- [Available MPC clients](https://modelcontextprotocol.io/clients)
+- [Available MCP clients](https://modelcontextprotocol.io/clients)
 - [Available MCP servers](https://modelcontextprotocol.io/examples)
 
 ### Integration with Microsoft.Extensions.AI

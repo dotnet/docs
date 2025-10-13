@@ -67,7 +67,7 @@ landingContent:
       - linkListType: deploy
         links:
           - text: Publish apps
-            url: ../../core/deploying/deploy-with-cli.md
+            url: ../../core/deploying/index.md
 
   # Card
   - title: Global and local tools
@@ -98,8 +98,6 @@ landingContent:
             url: ../../core/diagnostics/diagnostic-health-checks.md
           - text: Exception summary
             url: ../../core/diagnostics/diagnostic-exception-summary.md
-          - text: Resource monitoring
-            url: ../../core/diagnostics/diagnostic-resource-monitoring.md
       - linkListType: reference
         links:
           - text: Unmanaged API for debugging

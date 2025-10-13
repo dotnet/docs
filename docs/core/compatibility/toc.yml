@@ -8,6 +8,26 @@ items:
         items:
           - name: Overview
             href: 10.0.md
+          - name: ASP.NET Core
+            items:
+              - name: Cookie login redirects disabled for known API endpoints
+                href: aspnet-core/10/cookie-authentication-api-endpoints.md
+              - name: Deprecation of WithOpenApi extension method
+                href: aspnet-core/10/withopenapi-deprecated.md
+              - name: Exception diagnostics suppressed when TryHandleAsync returns true
+                href: aspnet-core/10/exception-handler-diagnostics-suppressed.md
+              - name: IActionContextAccessor and ActionContextAccessor are obsolete
+                href: aspnet-core/10/iactioncontextaccessor-obsolete.md
+              - name: IncludeOpenAPIAnalyzers property and MVC API analyzers are deprecated
+                href: aspnet-core/10/openapi-analyzers-deprecated.md
+              - name: IPNetwork and ForwardedHeadersOptions.KnownNetworks are obsolete
+                href: aspnet-core/10/ipnetwork-knownnetworks-obsolete.md
+              - name: Microsoft.Extensions.ApiDescription.Client package deprecated
+                href: aspnet-core/10/apidescription-client-deprecated.md
+              - name: Razor run-time compilation is obsolete
+                href: aspnet-core/10/razor-runtime-compilation-obsolete.md
+              - name: WebHostBuilder, IWebHost, and WebHost are obsolete
+                href: aspnet-core/10/webhostbuilder-deprecated.md
           - name: Containers
             items:
               - name: Default .NET images use Ubuntu
@@ -18,6 +38,8 @@ items:
                 href: core-libraries/10.0/obsolete-apis.md
               - name: ActivitySource.CreateActivity and ActivitySource.StartActivity behavior change
                 href: core-libraries/10.0/activity-sampling.md
+              - name: Arm64 SVE nonfaulting loads require mask
+                href: core-libraries/10.0/sve-nonfaulting-loads-mask-parameter.md
               - name: C# 14 overload resolution with span parameters
                 href: core-libraries/10.0/csharp-overload-resolution.md
               - name: Consistent shift behavior in generic math
@@ -26,13 +48,19 @@ items:
                 href: core-libraries/10.0/default-trace-context-propagator.md
               - name: DriveInfo.DriveFormat returns Linux filesystem types
                 href: core-libraries/10.0/driveinfo-driveformat-linux.md
+              - name: DynamicallyAccessedMembers annotation removed from DefaultValueAttribute ctor
+                href: core-libraries/10.0/defaultvalueattribute-dynamically-accessed-members.md
+              - name: Explicit struct Size disallowed with InlineArray
+                href: core-libraries/10.0/inlinearray-explicit-size-disallowed.md
+              - name: FilePatternMatch.Stem changed to non-nullable
+                href: core-libraries/10.0/filepatternmatch-stem-nonnullable.md
               - name: GnuTarEntry and PaxTarEntry exclude atime and ctime by default
                 href: core-libraries/10.0/tar-atime-ctime-default.md
               - name: LDAP DirectoryControl parsing is now more stringent
                 href: core-libraries/10.0/ldap-directorycontrol-parsing.md
               - name: MacCatalyst version normalization
                 href: core-libraries/10.0/maccatalyst-version-normalization.md
-              - name: No default SIGTERM signal handler
+              - name: No default termination signal handlers
                 href: core-libraries/10.0/sigterm-signal-handler.md
               - name: System.Linq.AsyncEnumerable included in core libraries
                 href: core-libraries/10.0/asyncenumerable.md
@@ -40,19 +68,29 @@ items:
                 href: core-libraries/10.0/ymm-embedded-rounding.md
           - name: Cryptography
             items:
+              - name: CoseSigner.Key can be null
+                href: cryptography/10.0/cosesigner-key-null.md
               - name: Environment variable renamed to DOTNET_OPENSSL_VERSION_OVERRIDE
                 href: cryptography/10.0/version-override.md
+              - name: MLDsa and SlhDsa 'SecretKey' members renamed
+                href: cryptography/10.0/mldsa-slhdsa-secretkey-to-privatekey.md
               - name: OpenSSL cryptographic primitives not supported on macOS
                 href: cryptography/10.0/openssl-macos-unsupported.md
               - name: X500DistinguishedName validation is stricter
                 href: cryptography/10.0/x500distinguishedname-validation.md
               - name: X509Certificate and PublicKey key parameters can be null
                 href: cryptography/10.0/x509-publickey-null.md
+          - name: Entity Framework Core
+            href: /ef/core/what-is-new/ef-core-10.0/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
           - name: Extensions
             items:
-              - name: "ProviderAliasAttribute moved to Microsoft.Extensions.Logging.Abstractions assembly"
+              - name: Message no longer duplicated in Console log output
+                href: extensions/10.0/console-json-logging-duplicate-messages.md
+              - name: Null values preserved in configuration
+                href: extensions/10.0/configuration-null-values-preserved.md
+              - name: ProviderAliasAttribute moved to Microsoft.Extensions.Logging.Abstractions assembly
                 href: extensions/10.0/provideraliasattribute-moved-assembly.md
-              - name: "Removed DynamicallyAccessedMembers annotation from trim-unsafe Microsoft.Extensions.Configuration code"
+              - name: Removed DynamicallyAccessedMembers annotation from trim-unsafe Microsoft.Extensions.Configuration code
                 href: extensions/10.0/dynamically-accessed-members-configuration.md
           - name: Globalization
             items:
@@ -68,32 +106,46 @@ items:
             items:
               - name: HTTP/3 support disabled by default with PublishTrimmed
                 href: networking/10.0/http3-disabled-with-publishtrimmed.md
-              - name: HttpClient/SslStream default certificate revocation check mode changed to Online
-                href: networking/10.0/ssl-certificate-revocation-check-default.md
               - name: Streaming HTTP responses enabled by default in browser HTTP clients
                 href: networking/10.0/default-http-streaming.md
+              - name: "'Uri' length limits removed"
+                href: networking/10.0/uri-length-limits-removed.md
           - name: SDK and MSBuild
             items:
               - name: .NET CLI `--interactive` defaults to `true` in user scenarios
                 href: sdk/10.0/dotnet-cli-interactive.md
+              - name: .NET tool packaging creates RuntimeIdentifier-specific tool packages
+                href: sdk/10.0/dotnet-tool-pack-publish.md
               - name: "`dotnet restore` audits transitive packages"
                 href: sdk/10.0/nugetaudit-transitive-packages.md
+              - name: project.json not supported in `dotnet restore`
+                href: sdk/10.0/dotnet-restore-project-json-unsupported.md
               - name: Default workload configuration from 'loose manifests' to 'workload sets' mode
                 href: sdk/10.0/default-workload-config.md
+              - name: "`dotnet new sln` defaults to SLNX file format"
+                href: sdk/10.0/dotnet-new-sln-slnx-default.md
               - name: "`dotnet package list` performs restore"
                 href: sdk/10.0/dotnet-package-list-restore.md
+              - name: "`dotnet tool install --local` creates manifest by default"
+                href: sdk/10.0/dotnet-tool-install-local-manifest.md
               - name: MSBUILDCUSTOMBUILDEVENTWARNING escape hatch removed
                 href: sdk/10.0/custom-build-event-warning.md
               - name: MSBuild custom culture resource handling
                 href: sdk/10.0/msbuild-custom-culture.md
               - name: NU1510 is raised for direct references pruned by NuGet
                 href: sdk/10.0/nu1510-pruned-references.md
+              - name: NuGet packages with no runtime assets aren't included in deps.json
+                href: sdk/10.0/deps-json-trimmed-packages.md
               - name: PackageReference without a version raises error
                 href: sdk/10.0/nu1015-packagereference-version.md
+              - name: PrunePackageReference privatizes direct prunable references
+                href: sdk/10.0/prune-packagereference-privateassets.md
               - name: HTTP warnings promoted to errors in package list and search
                 href: sdk/10.0/http-warnings-to-errors.md
               - name: NUGET_ENABLE_ENHANCED_HTTP_RETRY environment variable removed
                 href: sdk/10.0/nuget-enhanced-http-retry-removed.md
+              - name: NuGet logs an error for invalid package IDs
+                href: sdk/10.0/nuget-packageid-validation.md
           - name: Windows Forms
             items:
               - name: API obsoletions
@@ -106,8 +158,12 @@ items:
                 href: windows-forms/10.0/treeview-text-location.md
               - name: StatusStrip uses System RenderMode by default
                 href: windows-forms/10.0/statusstrip-renderer.md
+              - name: System.Drawing OutOfMemoryException changed to ExternalException
+                href: windows-forms/10.0/system-drawing-outofmemory-externalexception.md
           - name: WPF
             items:
+              - name: Empty ColumnDefinitions and RowDefinitions are disallowed
+                href: wpf/10.0/empty-grid-definitions.md
               - name: Incorrect usage of DynamicResource causes application crash
                 href: wpf/10.0/dynamicresource-crash.md
       - name: .NET 9
@@ -120,6 +176,8 @@ items:
                 href: aspnet-core/9.0/key-resolution.md
               - name: Dev cert export no longer creates folder
                 href: aspnet-core/9.0/certificate-export.md
+              - name: Forwarded Headers Middleware ignores X-Forwarded-* headers from unknown proxies
+                href: aspnet-core/8.0/forwarded-headers-unknown-proxies.md
               - name: HostBuilder enables ValidateOnBuild/ValidateScopes in development environment
                 href: aspnet-core/9.0/hostbuilder-validation.md
               - name: Legacy Mono and Emscripten APIs not exported to global namespace
@@ -276,6 +334,10 @@ items:
                 href: aspnet-core/8.0/concurrencylimitermiddleware-obsolete.md
               - name: Custom converters for serialization removed
                 href: aspnet-core/8.0/problemdetails-custom-converters.md
+              - name: Forwarded Headers Middleware ignores X-Forwarded-* headers from unknown proxies
+                href: aspnet-core/8.0/forwarded-headers-unknown-proxies.md
+              - name: HTTP logging middleware requires AddHttpLogging()
+                href: aspnet-core/8.0/httplogging-addhttplogging-requirement.md
               - name: ISystemClock is obsolete
                 href: aspnet-core/8.0/isystemclock-obsolete.md
               - name: "Minimal APIs: IFormFile parameters require anti-forgery checks"
@@ -338,6 +400,8 @@ items:
                 href: core-libraries/8.0/console-readkey-legacy.md
               - name: Method builders generate parameters with HasDefaultValue=false
                 href: core-libraries/8.0/parameterinfo-hasdefaultvalue.md
+              - name: Package part URIs are now compared case-insensitively in System.IO.Packaging
+                href: core-libraries/8.0/system-io-packaging-case-insensitive-uri.md
               - name: ProcessStartInfo.WindowStyle honored when UseShellExecute is false
                 href: core-libraries/8.0/processstartinfo-windowstyle.md
               - name: RuntimeIdentifier returns platform for which runtime was built
@@ -374,6 +438,8 @@ items:
                 href: extensions/8.0/directoryservices-package.md
               - name: Empty keys added to dictionary by configuration binder
                 href: extensions/8.0/dictionary-configuration-binding.md
+              - name: FromKeyedServicesAttribute.Key can be null
+                href: extensions/8.0/fromkeyedservicesattribute-key-nullable.md
               - name: HostApplicationBuilderSettings.Args respected by constructor
                 href: extensions/8.0/hostapplicationbuilder-ctor.md
               - name: ManagementDateTimeConverter.ToDateTime returns a local time
@@ -424,6 +490,8 @@ items:
                 href: sdk/8.0/dotnet-publish-config.md
               - name: "'dotnet restore' produces security vulnerability warnings"
                 href: sdk/8.0/dotnet-restore-audit.md
+              - name: "'dotnet list package' warns if source doesn't provide vulnerability data"
+                href: sdk/8.0/dotnet-list-package-audit-source-warning.md
               - name: Duplicate output for -getItem, -getProperty, and -getTargetResult
                 href: sdk/8.0/getx-duplicate-output.md
               - name: Implicit `using` for System.Net.Http no longer added
@@ -440,6 +508,8 @@ items:
                 href: sdk/8.0/rid-graph.md
               - name: Setting DebugSymbols to false disables PDB generation
                 href: sdk/8.0/debugsymbols.md
+              - name: "SHA-1 fingerprint support deprecated in 'dotnet nuget sign'"
+                href: sdk/10.0/dotnet-nuget-sign-sha1-deprecated.md
               - name: Source Link included in the .NET SDK
                 href: sdk/8.0/source-link.md
               - name: Trimming can't be used with .NET Standard or .NET Framework
@@ -776,7 +846,7 @@ items:
                 href: core-libraries/6.0/system-drawing-common-windows-only.md
               - name: System.Security.SecurityContext is marked obsolete
                 href: core-libraries/6.0/securitycontext-obsolete.md
-              - name: Task.FromResult may return singleton
+              - name: Task.FromResult might return singleton
                 href: core-libraries/6.0/task-fromresult-returns-singleton.md
               - name: Unhandled exceptions from a BackgroundService
                 href: core-libraries/6.0/hosting-exception-handling.md

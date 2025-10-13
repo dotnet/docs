@@ -3,7 +3,6 @@ title: Quickstart - Build a minimal .NET AI RAG app
 description: Create an AI powered app to search and integrate with vector stores using embeddings and the Microsoft.Extensions.VectorData package for .NET
 ms.date: 05/29/2025
 ms.topic: quickstart
-ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 zone_pivot_groups: openai-library
 # CustomerIntent: As a .NET developer new to AI, I want deploy and use sample code to interact to learn from the sample code.
 ---
@@ -80,7 +79,7 @@ Complete the following steps to create a .NET console app that can:
 
     - [`Azure.Identity`](https://www.nuget.org/packages/Azure.Identity) provides [`Microsoft Entra ID`](/entra/fundamentals/whatis) token authentication support across the Azure SDK using classes such as `DefaultAzureCredential`.
     - [`Azure.AI.OpenAI`](https://www.nuget.org/packages/Azure.AI.OpenAI) is the official package for using OpenAI's .NET library with the Azure OpenAI Service.
-    - [`Microsoft.Extensions.VectorData.Abstractions`](https://www.nuget.org/packages/Microsoft.Extensions.AI) enables Create-Read-Update-Delete (CRUD) and search operations on vector stores.
+    - [`Microsoft.Extensions.VectorData.Abstractions`](https://www.nuget.org/packages/Microsoft.Extensions.VectorData.Abstractions) enables Create-Read-Update-Delete (CRUD) and search operations on vector stores.
     - [`Microsoft.SemanticKernel.Connectors.InMemory`](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.InMemory) provides an in-memory vector store class to hold queryable vector data records.
     - [Microsoft.Extensions.Configuration](https://www.nuget.org/packages/Microsoft.Extensions.Configuration) provides an implementation of key-value pair&mdash;based configuration.
     - [`Microsoft.Extensions.Configuration.UserSecrets`](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.UserSecrets) is a user secrets configuration provider implementation for `Microsoft.Extensions.Configuration`.
@@ -101,7 +100,7 @@ Complete the following steps to create a .NET console app that can:
     The following list describes each package in the `VectorDataAI` app:
 
     - [`Microsoft.Extensions.AI.OpenAI`](https://www.nuget.org/packages/Microsoft.Extensions.AI.OpenAI) provides AI abstractions for OpenAI-compatible models or endpoints. This library also includes the official [`OpenAI`](https://www.nuget.org/packages/OpenAI) library for the OpenAI service API as a dependency.
-    - [`Microsoft.Extensions.VectorData.Abstractions`](https://www.nuget.org/packages/Microsoft.Extensions.AI) enables Create-Read-Update-Delete (CRUD) and search operations on vector stores.
+    - [`Microsoft.Extensions.VectorData.Abstractions`](https://www.nuget.org/packages/Microsoft.Extensions.VectorData.Abstractions) enables Create-Read-Update-Delete (CRUD) and search operations on vector stores.
     - [`Microsoft.SemanticKernel.Connectors.InMemory`](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.InMemory) provides an in-memory vector store class to hold queryable vector data records.
     - [Microsoft.Extensions.Configuration](https://www.nuget.org/packages/Microsoft.Extensions.Configuration) provides an implementation of key-value pair&mdash;based configuration.
     - [`Microsoft.Extensions.Configuration.UserSecrets`](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.UserSecrets) is a user secrets configuration provider implementation for `Microsoft.Extensions.Configuration`.

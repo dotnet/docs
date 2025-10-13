@@ -120,12 +120,14 @@ groups:
   title: Ubuntu Version
   prompt: Choose the Ubuntu distribution version
   pivots:
-    - id: os-linux-ubuntu-2410
-      title: "24.10"
+  # order: lts versions (newest to oldest), interim versions (newest to oldest), other
+  # see: https://github.com/dotnet/docs/issues/47461
     - id: os-linux-ubuntu-2404
       title: "24.04"
     - id: os-linux-ubuntu-2204
       title: "22.04"
+    - id: os-linux-ubuntu-2504
+      title: "25.04"
     - id: os-linux-ubuntu-other
       title: "Other"
 - id: openai-library

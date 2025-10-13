@@ -53,7 +53,7 @@ This overload of `GetValue` gets the parsed or default value for the specified s
 
 The <xref:System.CommandLine.ParseResult.Errors?displayProperty=nameWithType> property contains a list of parse errors that occurred during the parsing process. Each error is represented by a <xref:System.CommandLine.Parsing.ParseError> object, which contains information about the error, such as the error message and the token that caused the error.
 
-When you call the <xref:System.CommandLine.ParseResult.Invoke?displayProperty=nameWithType> method, it returns an exit code that indicates whether the parsing was successful or not. If there were any parse errors, the exit code is non-zero, and all the parse errors are printed to the standard error.
+When you call the <xref:System.CommandLine.ParseResult.Invoke(System.CommandLine.InvocationConfiguration)?displayProperty=nameWithType> method, it returns an exit code that indicates whether the parsing was successful or not. If there were any parse errors, the exit code is non-zero, and all the parse errors are printed to the standard error.
 
 If you don't call the `ParseResult.Invoke` method, you need to handle the errors on your own, for example, by printing them:
 
@@ -85,7 +85,7 @@ You don't need to create a derived type to define an action. You can use the <xr
 
 Synchronous and asynchronous actions should not be mixed in the same application. If you want to use asynchronous actions, your application needs to be asynchronous throughout. This means that all actions should be asynchronous, and you should use the `System.CommandLine.Command.SetAction` method that accepts a delegate returning a `Task<int>` exit code. Moreover, the <xref:System.Threading.CancellationToken> that's passed to the action delegate needs to be passed further to all the methods that can be canceled, such as file I/O operations or network requests.
 
-You also need to ensure that the <xref:System.CommandLine.ParseResult.InvokeAsync(System.Threading.CancellationToken)?displayProperty=nameWithType> method is used instead of `Invoke`. This method is asynchronous and returns a `Task<int>` exit code. It also accepts an optional <xref:System.Threading.CancellationToken> parameter that can be used to cancel the action.
+You also need to ensure that the <xref:System.CommandLine.ParseResult.InvokeAsync(System.CommandLine.InvocationConfiguration,System.Threading.CancellationToken)?displayProperty=nameWithType> method is used instead of `Invoke`. This method is asynchronous and returns a `Task<int>` exit code. It also accepts an optional <xref:System.Threading.CancellationToken> parameter that can be used to cancel the action.
 
 The following code uses a `SetAction` overload that gets a [ParseResult](#parseresult) and a <xref:System.Threading.CancellationToken> rather than just `ParseResult`:
 
@@ -93,7 +93,7 @@ The following code uses a `SetAction` overload that gets a [ParseResult](#parser
 
 #### Process termination timeout
 
-<xref:System.CommandLine.CommandLineConfiguration.ProcessTerminationTimeout> enables signaling and handling of process termination (<kbd>Ctrl</kbd>+<kbd>C</kbd>, `SIGINT`, `SIGTERM`) via a <xref:System.Threading.CancellationToken> that's passed to every async action during invocation. It's enabled by default (2 seconds), but you can set it to `null` to disable it.
+<xref:System.CommandLine.InvocationConfiguration.ProcessTerminationTimeout> enables signaling and handling of process termination (<kbd>Ctrl</kbd>+<kbd>C</kbd>, `SIGINT`, `SIGTERM`) via a <xref:System.Threading.CancellationToken> that's passed to every async action during invocation. It's enabled by default (2 seconds), but you can set it to `null` to disable it.
 
 When enabled, if the action doesn't complete within the specified timeout, the process will be terminated. This is useful for handling the termination gracefully, for example, by saving the state before the process is terminated.
 

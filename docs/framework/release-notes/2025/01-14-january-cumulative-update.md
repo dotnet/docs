@@ -51,7 +51,7 @@ The following table outlines the updates in this release.
 | **Windows 10, version 22H2** | **[5050188](https://support.microsoft.com/kb/5050188)** |
 | .NET Framework 3.5, 4.8 | [5049613](https://support.microsoft.com/kb/5049613) |
 | .NET Framework 3.5, 4.8.1 | [5049621](https://support.microsoft.com/kb/5049621) |
-| **Windows 10, version 21H2** | **[5050416](https://support.microsoft.com/kb/5050416)** |
+| **Windows 10, version 21H2** | **[5050416](https://support.microsoft.com/topic/january-14-2025-kb5050416-cumulative-update-for-net-framework-3-5-4-8-and-4-8-1-for-windows-10-version-21h2-6312b2f7-6a46-4743-b309-d4a163ca9ead)** |
 | .NET Framework 3.5, 4.8 | [5049613](https://support.microsoft.com/kb/5049613) |
 | .NET Framework 3.5, 4.8.1 | [5049621](https://support.microsoft.com/kb/5049621) |
 | **Windows 10 1809 and Windows Server 2019** | **[5050182](https://support.microsoft.com/kb/5050182)** |
@@ -86,7 +86,7 @@ The following table is for earlier Windows and Windows Server versions for Secur
 | --- | --- |
 | **Windows Server 2008 R2** | **[5050180](https://support.microsoft.com/kb/5050180)** |
 | .NET Framework 4.6.2, 4.7, 4.7.1, 4.7.2 | [5049627](https://support.microsoft.com/kb/5049627)|
-| .NET Framework 4.8 |[5049628](https://support.microsoft.com/kb/5049628) |
+| .NET Framework 4.8 |[5049628](https://support.microsoft.com/topic/january-14-2025-security-only-update-for-net-framework-4-8-for-windows-server-2008-r2-sp1-kb5049628-b1a63ec4-1f96-4a6a-a79c-200a4610fdf4) |
 | **Windows Server 2008** | **[5050181](https://support.microsoft.com/kb/5050181)** |
 | .NET Framework 4.6.2 | [5049627](https://support.microsoft.com/kb/5049627) |
 

@@ -1,9 +1,10 @@
 ---
 title: What's new in .NET Core 2.2
 description: Learn about the new features found in .NET Core 2.2.
+ms.date: 12/04/2018
 dev_langs:
   - "csharp"
-ms.date: 12/04/2018
+ms.update-cycle: 3650-days
 ---
 
 # What's new in .NET Core 2.2
@@ -12,7 +13,7 @@ ms.date: 12/04/2018
 
 ## New deployment mode
 
-Starting with .NET Core 2.2, you can deploy [framework-dependent executables](../deploying/index.md#publish-framework-dependent), which are **.exe** files instead of **.dll** files. Functionally similar to framework-dependent deployments, framework-dependent executables (FDE) still rely on the presence of a shared system-wide version of .NET Core to run. Your app contains only your code and any third-party dependencies. Unlike framework-dependent deployments, FDEs are platform-specific.
+Starting with .NET Core 2.2, you can deploy [framework-dependent executables](../deploying/index.md#framework-dependent-deployment), which are **.exe** files instead of **.dll** files. Functionally similar to framework-dependent deployments, framework-dependent executables (FDE) still rely on the presence of a shared system-wide version of .NET Core to run. Your app contains only your code and any third-party dependencies. Unlike framework-dependent deployments, FDEs are platform-specific.
 
 This new deployment mode has the distinct advantage of building an executable instead of a library, which means you can run your app directly without invoking `dotnet` first.
 

@@ -4,7 +4,6 @@ description: Learn how to deploy .NET apps to ARM single-board computers (SBCs) 
 author: camsoper
 ms.date: 07/31/2024
 ms.topic: how-to
-ms.service: dotnet
 ---
 
 # Deploy .NET apps on ARM single-board computers

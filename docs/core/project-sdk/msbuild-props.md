@@ -1,7 +1,7 @@
 ---
 title: MSBuild properties for Microsoft.NET.Sdk
 description: Reference for the MSBuild properties and items that are understood by the .NET SDK.
-ms.date: 11/07/2024
+ms.date: 09/30/2025
 ms.topic: reference
 ms.custom: updateeachrelease
 ---
@@ -546,7 +546,7 @@ The `PublishRelease` property informs `dotnet publish` to use the `Release` conf
 
 ### PublishSelfContained
 
-The `PublishSelfContained` property informs `dotnet publish` to publish an app as a [self-contained app](../deploying/index.md#publish-self-contained). This property is useful when you can't use the `--self-contained` argument for the [dotnet publish](../tools/dotnet-publish.md) command&mdash;for example, when you're publishing at the solution level. In that case, you can add the `PublishSelfContained` MSBuild property to a project or *Directory.Build.Props* file.
+The `PublishSelfContained` property informs `dotnet publish` to publish an app as a [self-contained app](../deploying/index.md#self-contained-deployment). This property is useful when you can't use the `--self-contained` argument for the [dotnet publish](../tools/dotnet-publish.md) command&mdash;for example, when you're publishing at the solution level. In that case, you can add the `PublishSelfContained` MSBuild property to a project or *Directory.Build.Props* file.
 
 This property was introduced in .NET 7. It's similar to the [SelfContained](#selfcontained) property, except that it's specific to the `publish` verb. It's recommended to use `PublishSelfContained` instead of `SelfContained`.
 
@@ -626,7 +626,7 @@ The `SatelliteResourceLanguages` property lets you specify which languages you w
 
 ### SelfContained
 
-The `SelfContained` property informs `dotnet build` and `dotnet publish` to build or publish an app as a [self-contained app](../deploying/index.md#publish-self-contained). This property is useful when you can't use the `--self-contained` argument with the [dotnet](../tools/dotnet.md) command&mdash;for example, when you're publishing at the solution level. In that case, you can add the `SelfContained` MSBuild property to a project or *Directory.Build.Props* file.
+The `SelfContained` property informs `dotnet build` and `dotnet publish` to build or publish an app as a [self-contained app](../deploying/index.md#self-contained-deployment). This property is useful when you can't use the `--self-contained` argument with the [dotnet](../tools/dotnet.md) command&mdash;for example, when you're publishing at the solution level. In that case, you can add the `SelfContained` MSBuild property to a project or *Directory.Build.Props* file.
 
 This property is similar to the [PublishSelfContained](#publishselfcontained) property. It's recommended to use `PublishSelfContained` instead of `SelfContained` when possible.
 
@@ -994,7 +994,7 @@ The following table shows the values you can specify.
 >
 > - If you set [EnforceCodeStyleInBuild](#enforcecodestyleinbuild) to `true`, this property affects [code-style (IDEXXXX) rules](../../fundamentals/code-analysis/style-rules/index.md) (in addition to code-quality rules).
 > - If you set a compound value for `AnalysisLevel`, you don't need to specify an [AnalysisMode](#analysismode). However, if you do, `AnalysisLevel` takes precedence over `AnalysisMode`.
-> - This property has no effect on code analysis in projects that don't reference a [project SDK](overview.md), for example, legacy .NET Framework projects that reference the Microsoft.CodeAnalysis.NetAnalyzers NuGet package.
+> - This property has no effect on code analysis in projects that don't reference a [project SDK](overview.md), for example, legacy .NET Framework projects that reference the Microsoft.CodeAnalysis.NetAnalyzers NuGet package. For more information, see [Enable code analysis in legacy projects](../../fundamentals/code-analysis/overview.md#enable-code-analysis-in-legacy-projects).
 
 ### AnalysisLevel\<Category>
 
@@ -1047,7 +1047,6 @@ The following table shows the available option values. They're listed in increas
 >
 > - If you set [EnforceCodeStyleInBuild](#enforcecodestyleinbuild) to `true`, this property affects [code-style (IDEXXXX) rules](../../fundamentals/code-analysis/style-rules/index.md) (in addition to code-quality rules).
 > - If you use a compound value for [AnalysisLevel](#analysislevel), for example, `<AnalysisLevel>9-recommended</AnalysisLevel>`, you can omit this property entirely. However, if you specify both properties, `AnalysisLevel` takes precedence over `AnalysisMode`.
-> - This property has no effect on code analysis in projects that don't reference a [project SDK](overview.md), for example, legacy .NET Framework projects that reference the Microsoft.CodeAnalysis.NetAnalyzers NuGet package.
 
 ### AnalysisMode\<Category>
 
@@ -1445,7 +1444,7 @@ The following MSBuild properties are documented in this section:
 
 Introduced in .NET 9, the `SdkAnalysisLevel` property can be used to configure how *strict* SDK tooling is. It helps you manage SDK warning levels in situations where you might not be able to pin SDKs via *global.json* or other means. You can use this property to tell a newer SDK to behave as if it were an older SDK, with regards to a specific tool or feature, without having to install the older SDK.
 
-The allowed values of this property are SDK feature bands, for example, 8.0.100 and 8.0.400. The value defaults to the SDK feature band of the running SDK. For example, for SDK 9.0.102, the value would be 9.0.100. (For information about how the .NET SDK is versioned, see [How .NET is versioned](../versions/index.md).)
+The allowed values of this property are SDK feature bands, for example, 8.0.100 and 8.0.400. The value defaults to the SDK feature band of the running SDK. For example, for SDK 9.0.102, the value to use is 9.0.100. (For information about how the .NET SDK is versioned, see [How .NET is versioned](../versions/index.md).)
 
 ```xml
 <PropertyGroup>
@@ -1455,14 +1454,17 @@ The allowed values of this property are SDK feature bands, for example, 8.0.100 
 
 For more information, see [SDK Analysis Level Property and Usage](https://github.com/dotnet/designs/blob/main/proposed/sdk-analysis-level.md).
 
-The following table summarizes the diagnostics affected by `SDKAnalysisLevel`.
+The following table summarizes the diagnostics and behaviors affected by `SDKAnalysisLevel`.
 
-| SDKAnalysisLevel | Diagnostic | Previous | Current |
-|------------------------|-----------|--------|-------|
-| 9.0.100 | Restore HTTP sources diagnostic | [NU1803](/nuget/reference/errors-and-warnings/nu1803) warning | [NU1302](/nuget/reference/errors-and-warnings/nu1302) error. |  
-| 10.0.100 | Restore package pruning, [PrunePackageReference](/nuget/consume-packages/package-references-in-project-files#prunepackagereference), enabled by default | N/A | Enabled for projects that target .NET 8+ or .NET Standard 2.0+ |
-| 10.0.100 | Restore resolver with lock files | Uses legacy dependency graph resolver (.NET 8 SDK and earlier) | Uses improved, [.NET 9 dependency graph resolver](/nuget/consume-packages/package-references-in-project-files#nuget-dependency-resolver) |
-| 10.0.100 | Restore behavior for PackageReference without a version | [NU1603](/nuget/reference/errors-and-warnings/nu1603) warning | [NU1015](/nuget/reference/errors-and-warnings/nu1015) error |
+| SDKAnalysisLevel | Description                     | Updated behavior |
+|------------------|---------------------------------|------------------|
+| 9.0.100          | Restore HTTP sources diagnostic | Emits [NU1302](/nuget/reference/errors-and-warnings/nu1302) error instead of [NU1803](/nuget/reference/errors-and-warnings/nu1803) warning. |
+| 10.0.100         | 'Restore' package pruning       | [PrunePackageReference](/nuget/consume-packages/package-references-in-project-files#prunepackagereference) is enabled by default for projects that target .NET 8+ or .NET Standard 2.0+. |
+| 10.0.100         | 'Restore' resolver with lock files | Uses improved, [.NET 9 dependency graph resolver](/nuget/consume-packages/package-references-in-project-files#nuget-dependency-resolver) instead of legacy dependency graph resolver (.NET 8 SDK and earlier). |
+| 10.0.100         | 'Restore' behavior for PackageReference without a version | Emits [NU1015](/nuget/reference/errors-and-warnings/nu1015) error instead of [NU1603](/nuget/reference/errors-and-warnings/nu1603) warning. |
+
+> [!NOTE]
+> The behavior enabled by the `SdkAnalysisLevel` value ages out (expires) after three major releases. For example, version 11.0.100 only respects values down to 8.0.100. In version 12.0.100, features that could, in previous versions, be disabled by setting an `SdkAnalysisLevel` value of 8.0.100 would no longer be disabled.
 
 ## Microsoft.Testing.Platform&ndash;related properties
 
@@ -1507,7 +1509,7 @@ For more information, see [Enable or disable extensions](../testing/unit-testing
 
 When you use the [MSTest project SDK](../testing/unit-testing-mstest-sdk.md), you can use the `EnableAspireTesting` property to bring in all the dependencies and default `using` directives you need for testing with `Aspire` and `MSTest`. This property is available in MSTest 3.4 and later versions.
 
-For more information, see [Test with .NET Aspire](../testing/unit-testing-mstest-sdk.md#test-with-net-aspire).
+For more information, see [Test with Aspire](../testing/unit-testing-mstest-sdk.md#test-with-aspire).
 
 ### EnablePlaywright
 
@@ -1623,7 +1625,7 @@ The following MSBuild properties are documented in this section:
 
 ### AppHostDotNetSearch
 
-The `AppHostDotNetSearch` property configures how [the native executable](../deploying/index.md#produce-an-executable) produced for an application will search for a .NET installation. This property only impacts the executable produced on publish, not build.
+The `AppHostDotNetSearch` property configures how [the native executable](../deploying/index.md#configure-net-install-search-behavior) produced for an application will search for a .NET installation. This property only impacts the executable produced on publish, not build.
 
 ```xml
 <PropertyGroup>

@@ -192,7 +192,7 @@ items:
     - name: when (filter condition)
       href: ./keywords/when.md
     - name: field
-      href: ./keywords/field.md  
+      href: ./keywords/field.md
     - name: value (implicit parameter)
       href: ./keywords/value.md
   - name: Query Keywords
@@ -382,8 +382,8 @@ items:
 - name: Attributes read by the compiler
   items:
   - name: Global attributes
-    displayName: > 
-      AssemblyName, AssemblyVersion, AssemblyCulture, AssemblyFlags, AssemblyProduct, AssemblyTrademark, AssemblyInformationalVersion, 
+    displayName: >
+      AssemblyName, AssemblyVersion, AssemblyCulture, AssemblyFlags, AssemblyProduct, AssemblyTrademark, AssemblyInformationalVersion,
       AssemblyCompany, AssemblyCopyright, AssemblyFileVersion, CLSCompliant, AssemblyTitle, AssemblyDescription, AssemblyConfiguration,
       AssemblyDefaultAlias
     href: ./attributes/global.md
@@ -396,7 +396,7 @@ items:
       DoesNotReturn, DoesNotReturnIf
     href: ./attributes/nullable-analysis.md
   - name: Miscellaneous
-    displayName: > 
+    displayName: >
       Conditional, Obsolete, Deprecated, Experimental, SetsRequiredMembers, AttributeUsage, AsyncMethodBuilder, InterpolatedStringHandler,
       ModuleInitializer, SkipLocalsInit, UnscopedRef, OverloadResolutionPriority. EnumeratorCancellation, CollectionBuilder,
       IUnknownConstant, IDispatchConstant, module initializer
@@ -407,7 +407,7 @@ items:
       OptionalAttribute, OutAttribute, PreserveSigAttribute, SerializableAttribute, StructLayoutAttribute, IndexerNameAttribute,
       DefaultParameterValueAttribute, InAttribute, SpecialNameAttribute, UnmanagedCallersOnlyAttribute, CompilerFeatureRequiredAttribute,
       DecimalConstantAttribute, DefaultMemberAttribute, DynamicAttribute, ExtensionAttribute, FixedBufferAttribute, IsByRefLikeAttribute,
-      IsReadOnlyAttribute, RequiresLocationAttribute, IsUnmanagedAttribute, NullableAttribute, NullableContextAttribute, 
+      IsReadOnlyAttribute, RequiresLocationAttribute, IsUnmanagedAttribute, NullableAttribute, NullableContextAttribute,
       NullablePublicOnlyAttribute, ParamArrayAttribute, ParamCollectionAttribute, RefSafetyRulesAttribute, RequiredMemberAttribute,
       TupleElementNamesAttribute
     href: ./attributes/pseudo-attributes.md
@@ -460,6 +460,11 @@ items:
 - name: C# compiler messages
   href: ./compiler-messages/index.md
   items:
+  - name: Preprocessor errors
+    href: ./compiler-messages/preprocessor-errors.md
+    displayName: >
+      CS1024, CS1025, CS1027, CS1028, CS1029, CS1030, CS1032, CS1038, CS1040, CS1517, CS1560, CS1576, CS1578, CS1633, CS1634,
+      CS1635, CS1691, CS1692, CS1694, CS1695, CS1696, CS1709, CS9297, CS9298, CS9299, CS9314
   - name: Feature or version missing
     href: ./compiler-messages/feature-version-errors.md
     displayName: >
@@ -534,7 +539,9 @@ items:
     displayName: CS8509, CS9134, CS9135
   - name: String literal declarations
     href: ./compiler-messages/string-literal.md
-    displayName: CS9274
+    displayName: >
+      CS1009, CS1010, CS1011, CS1012, CS1039, CS8997, CS8998, CS8999, CS9000, CS9001, CS9002, CS9003, CS9004, CS9005, CS9006,
+      CS9007, CS9008, CS9009, CS9274, CS9315
   - name: Array declarations
     href: ./compiler-messages/array-declaration-errors.md
     displayName: >
@@ -1402,14 +1409,8 @@ items:
       href: ../misc/cs1004.md
     - name: CS1008
       href: ../misc/cs1008.md
-    - name: CS1009
-      href: ./compiler-messages/cs1009.md
     - name: CS1010
       href: ../misc/cs1010.md
-    - name: CS1011
-      href: ../misc/cs1011.md
-    - name: CS1012
-      href: ../misc/cs1012.md
     - name: CS1013
       href: ../misc/cs1013.md
     - name: CS1014
@@ -1454,8 +1455,6 @@ items:
       href: ../misc/cs1037.md
     - name: CS1038
       href: ../misc/cs1038.md
-    - name: CS1039
-      href: ../misc/cs1039.md
     - name: CS1040
       href: ../misc/cs1040.md
     - name: CS1041
@@ -1878,6 +1877,8 @@ items:
       href: ../misc/cs5001.md
     - name: CS7003
       href: ./compiler-messages/cs7003.md
+    - name: CS8070
+      href: ./compiler-messages/cs8070.md
     - name: CS8124
       href: ./compiler-messages/cs8124.md
     - name: CS8125

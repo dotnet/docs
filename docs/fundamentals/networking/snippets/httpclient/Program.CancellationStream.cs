@@ -5,8 +5,8 @@
         // <helpers>
         try
         {
-            // These extension methods will throw HttpRequestException
-            // with StatusCode set when the HTTP request status code isn't 2xx:
+            // These methods will throw HttpRequestException
+            // with StatusCode set when the HTTP response status code isn't 2xx:
             //
             //   GetByteArrayAsync
             //   GetStreamAsync

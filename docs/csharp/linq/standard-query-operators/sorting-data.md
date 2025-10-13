@@ -27,6 +27,8 @@ The standard query operator methods that sort data are listed in the following s
 
 [!INCLUDE [Datasources](../includes/data-sources-definition.md)]
 
+[!INCLUDE [Common Datasources reference](../includes/common-data-sources-reference.md)]
+
 ## Primary Ascending Sort
 
 The following example demonstrates how to use the `orderby` clause in a LINQ query to sort the array of teachers by family name, in ascending order.

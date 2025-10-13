@@ -42,7 +42,7 @@ Public class Simple
             + "starting the new InstanceCaller thread.")
 
         ' Create the thread object, passing in the
-        ' serverObject.SharedMethod method using a
+        ' ServerClass.SharedMethod method using a
         ' ThreadStart delegate.
         Dim SharedCaller As New Thread( _
             New ThreadStart(AddressOf ServerClass.SharedMethod))
@@ -56,9 +56,9 @@ Public class Simple
 End Class
 ' The example displays output like the following:
 '    The Main() thread calls this after starting the new InstanceCaller thread.
-'    The Main() thread calls this after starting the new StaticCaller thread.
-'    ServerClass.StaticMethod is running on another thread.
+'    The Main() thread calls this after starting the new SharedCaller thread.
+'    ServerClass.SharedMethod is running on another thread.
 '    ServerClass.InstanceMethod is running on another thread.
 '    The instance method called by the worker thread has ended.
-'    The static method called by the worker thread has ended.
+'    The shared method called by the worker thread has ended.
 '</snippet2>

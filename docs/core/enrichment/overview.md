@@ -63,7 +63,7 @@ With enrichment enabled, your log output will automatically include additional c
 
 The .NET enrichment framework provides some built-in enrichers, like:
 
-- **[Process enricher](process.log-enricher.md)**: Process and thread information
+- **[Process enricher](process-log-enricher.md)**: Process and thread information
 
 ## Custom enrichers
 

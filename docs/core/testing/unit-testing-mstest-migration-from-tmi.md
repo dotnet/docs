@@ -12,7 +12,7 @@ This guide assists you in upgrading your MSTest tests that rely on legacy test r
 
 ### Who is impacted?
 
-If you upgrade to VSTest 18.0.0 or later and encounter error the following error, you need to migrate:
+If you upgrade to VSTest 18.0.0 or later and encounter the following error, you need to migrate:
 
 ```plaintext
 MSTest v1 run was offloaded to legacy TestPlatform runner, this is typically caused by:

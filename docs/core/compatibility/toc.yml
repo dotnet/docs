@@ -110,10 +110,16 @@ items:
                 href: networking/10.0/default-http-streaming.md
               - name: "'Uri' length limits removed"
                 href: networking/10.0/uri-length-limits-removed.md
+          - name: Reflection
+            items:
+              - name: Type.MakeGenericSignatureType argument validation
+                href: reflection/10/makegeneric-signaturetype-validation.md
           - name: SDK and MSBuild
             items:
               - name: .NET CLI `--interactive` defaults to `true` in user scenarios
                 href: sdk/10.0/dotnet-cli-interactive.md
+              - name: "`dotnet` CLI commands log non-command-relevant data to stderr"
+                href: sdk/10.0/dotnet-cli-stderr-output.md
               - name: .NET tool packaging creates RuntimeIdentifier-specific tool packages
                 href: sdk/10.0/dotnet-tool-pack-publish.md
               - name: "`dotnet restore` audits transitive packages"
@@ -128,6 +134,10 @@ items:
                 href: sdk/10.0/dotnet-package-list-restore.md
               - name: "`dotnet tool install --local` creates manifest by default"
                 href: sdk/10.0/dotnet-tool-install-local-manifest.md
+              - name: "`dotnet watch` logs to stderr instead of stdout"
+                href: sdk/10.0/dotnet-watch-stderr.md
+              - name: HTTP warnings promoted to errors in package list and search
+                href: sdk/10.0/http-warnings-to-errors.md
               - name: MSBUILDCUSTOMBUILDEVENTWARNING escape hatch removed
                 href: sdk/10.0/custom-build-event-warning.md
               - name: MSBuild custom culture resource handling
@@ -136,16 +146,14 @@ items:
                 href: sdk/10.0/nu1510-pruned-references.md
               - name: NuGet packages with no runtime assets aren't included in deps.json
                 href: sdk/10.0/deps-json-trimmed-packages.md
-              - name: PackageReference without a version raises error
-                href: sdk/10.0/nu1015-packagereference-version.md
-              - name: PrunePackageReference privatizes direct prunable references
-                href: sdk/10.0/prune-packagereference-privateassets.md
-              - name: HTTP warnings promoted to errors in package list and search
-                href: sdk/10.0/http-warnings-to-errors.md
               - name: NUGET_ENABLE_ENHANCED_HTTP_RETRY environment variable removed
                 href: sdk/10.0/nuget-enhanced-http-retry-removed.md
               - name: NuGet logs an error for invalid package IDs
                 href: sdk/10.0/nuget-packageid-validation.md
+              - name: PackageReference without a version raises error
+                href: sdk/10.0/nu1015-packagereference-version.md
+              - name: PrunePackageReference privatizes direct prunable references
+                href: sdk/10.0/prune-packagereference-privateassets.md
           - name: Windows Forms
             items:
               - name: API obsoletions

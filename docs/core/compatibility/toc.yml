@@ -86,6 +86,8 @@ items:
             href: /ef/core/what-is-new/ef-core-10.0/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
           - name: Extensions
             items:
+              - name: BackgroundService runs all of ExecuteAsync as a Task
+                href: extensions/10.0/backgroundservice-executeasync-task.md
               - name: Message no longer duplicated in Console log output
                 href: extensions/10.0/console-json-logging-duplicate-messages.md
               - name: Null values preserved in configuration

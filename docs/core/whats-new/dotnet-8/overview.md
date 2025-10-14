@@ -21,6 +21,10 @@ For information about what's new in the .NET SDK, code analysis, and diagnostics
 
 C# 12 shipped with the .NET 8 SDK. For more information, see [What's new in C# 12](../../../csharp/whats-new/csharp-12.md).
 
+## F# 8
+
+F# 8 focuses on making the language simpler, more consistent, and more performant. For more information, see [What's new in F# 8](../../../fsharp/whats-new/fsharp-8.md).
+
 ## Aspire
 
 Aspire is an opinionated, cloud-ready stack for building observable, production ready, distributed applications.​ Aspire is delivered through a collection of NuGet packages that handle specific cloud-native concerns, and is available in preview for .NET 8. For more information, see [Aspire](/dotnet/aspire).

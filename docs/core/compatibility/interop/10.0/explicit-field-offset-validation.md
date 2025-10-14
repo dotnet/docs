@@ -15,7 +15,7 @@ The .NET runtime now enforces stricter validation for type layouts. Specifically
 
 ## Previous behavior
 
-In earlier versions of .NET, the runtime ignored explicit field offsets on types with `Auto` or `Sequential` layouts. For example, the following code executed without error, and the `[FieldOffset]` attributes were ignored.:
+In earlier versions of .NET, the runtime ignored explicit field offsets on types with `Auto` or `Sequential` layouts. For example, the following code executed without error, and the `[FieldOffset]` attributes were ignored:
 
 ```csharp
 using System;

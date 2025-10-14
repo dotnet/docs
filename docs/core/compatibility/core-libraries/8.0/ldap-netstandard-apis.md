@@ -28,7 +28,7 @@ System.DirectoryServices.Protocols NuGet package version 8.0.2
 
 ## Type of breaking change
 
-This change can affect [binary compatibility](../../categories.md#binary-incompatible).
+This change can affect [binary compatibility](../../categories.md#binary-compatibility).
 
 ## Reason for change
 

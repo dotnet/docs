@@ -2,6 +2,7 @@
 title: Interpolated strings
 description: Learn about interpolated strings, a special form of string that allows you to embed F# expressions directly inside them.
 ms.date: 10/01/2025
+ai-usage: ai-assisted
 ---
 
 # Interpolated strings

@@ -140,9 +140,7 @@ For more information, see [Copy and Update Record Expressions](../language-refer
 F# 7 includes several performance improvements:
 
 - **Parallel type checking**: The compiler now uses graph-based type checking, enabling parallel type checking of files using a dependency graph. This significantly speeds up compilation for large projects.
-
 - **Reduced memory consumption**: Various optimizations reduce memory usage during compilation and runtime.
-
 - **Better cancellation handling**: Improved handling of canceled user actions provides better responsiveness in development environments.
 
 ## Tooling improvements
@@ -150,9 +148,7 @@ F# 7 includes several performance improvements:
 F# 7 brings significant improvements to the development experience in Visual Studio and other editors:
 
 - **Enhanced code fixes**: Over 30 new code fixes for common development issues help streamline the coding process and reduce errors.
-
 - **Improved IntelliSense**: Better type inference information and more accurate completions make it easier to discover and use APIs.
-
 - **Performance improvements**: Faster response times for editor features like code completion, navigation, and refactoring.
 
 These tooling enhancements lower the barrier of entry for new F# developers and improve productivity for experienced developers.

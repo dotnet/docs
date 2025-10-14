@@ -3,7 +3,7 @@ title: "Breaking change: TrustedCertificatesDirectory and StartNewTlsSessionCont
 description: Learn about the .NET 8 breaking change in core .NET libraries where TrustedCertificatesDirectory and StartNewTlsSessionContext are not available when targeting .NET Standard 2.0.
 ms.date: 10/14/2025
 ai-usage: ai-assisted
-ms.custom: https://github.com/dotnet/docs/issues/44912
+ms.custom: https://github.com/dotnet/docs/issues/48879
 ---
 # TrustedCertificatesDirectory and StartNewTlsSessionContext are not available on .NET Standard / .NET Framework
 
@@ -32,11 +32,11 @@ This change can affect [binary compatibility](../../categories.md#binary-incompa
 
 ## Reason for change
 
-The APIs didn't work in all compatible frameworks. They weren't implemented on .NET Framework, so code that relied on them would fail at run time when running on .NET Framework, even though the code compiled successfully.
+The APIs didn't work on all compatible frameworks.
 
 ## Recommended action
 
-If you need to use these APIs, target a .NET version that supports them instead of `netstandard2.0`. These APIs are available when targeting .NET 8 or later.
+If you need to use these APIs, target .NET instead of `netstandard2.0`.
 
 ## Affected APIs
 

@@ -13,10 +13,10 @@ In this tutorial, you take an existing object‑oriented sample (from the preced
 In this tutorial, you:
 
 > [!div class="checklist"]
+>
 > * Enable XML documentation output in your C# project.
 > * Add and structure XML documentation comments to types and members.
 > * Build the project and inspect the generated XML documentation file.
-
 
 ## Prerequisites
 
@@ -81,7 +81,7 @@ When you're done, open the regenerated XML file and confirm that each member app
 > [!TIP]
 > Keep summaries to a single sentence. If you need more than one, move secondary context into `<remarks>`.
 
-## Use <inheritdoc/> in derived classes
+## Use `<inheritdoc/>` in derived classes
 
 If you derive from `BankAccount` (for example, a `SavingsAccount` that applies interest), you can inherit base documentation instead of copying it. Add a self-closing `<inheritdoc/>` element inside the derived member's documentation block. You can still append more elements (such as extra `<remarks>` details) after `<inheritdoc/>` to document the specialized behavior.
 

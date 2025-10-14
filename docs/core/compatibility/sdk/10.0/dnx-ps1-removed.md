@@ -24,7 +24,7 @@ The `dnx.ps1` script is no longer included. The `dnx.cmd` script remains availab
 
 ## Type of breaking change
 
-This change can affect [source compatibility](../../categories.md#source-compatibility).
+This change can affect <a>source compatibility</a>.
 
 ## Reason for change
 

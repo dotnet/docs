@@ -17,7 +17,7 @@ Per the [published support rules](../../../porting/versioning-sdk-msbuild-vs.md#
 
 ## Previous behavior
 
-The previous minimum Visual Studio version for .NET 10 previews was 17.13 to allow time for release and more adoption of Visual Studio version17.14.
+The previous minimum Visual Studio version for .NET 10 previews was 17.13 to allow time for release and more adoption of Visual Studio version 17.14.
 
 ## New behavior
 

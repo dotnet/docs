@@ -7,7 +7,7 @@ ai-usage: ai-assisted
 
 # Disallow loading non-Explicit types with explicit field offsets
 
-Starting in .NET 10 Preview 4, the .NET runtime enforces stricter validation for type layouts. Specifically, the runtime now throws a <xref:System.TypeLoadException> if a type with a non-explicit layout (for example, `Auto` or `Sequential`) specifies explicit field offsets using the <xref:System.Runtime.InteropServices.FieldOffsetAttribute>. This change aligns the runtime's behavior with the ECMA-335 specification, which only permits explicit field offsets for types with an `Explicit` layout.
+The .NET runtime now enforces stricter validation for type layouts. Specifically, the runtime throws a <xref:System.TypeLoadException> if a type with a non-explicit layout (for example, <xref:System.Runtime.InteropServices.LayoutKind.Auto> or <xref:System.Runtime.InteropServices.LayoutKind.Sequential>) specifies explicit field offsets using <xref:System.Runtime.InteropServices.FieldOffsetAttribute>. This change aligns the runtime's behavior with the ECMA-335 specification, which only permits explicit field offsets for types with an `Explicit` layout.
 
 ## Version introduced
 
@@ -15,7 +15,7 @@ Starting in .NET 10 Preview 4, the .NET runtime enforces stricter validation for
 
 ## Previous behavior
 
-In earlier versions of .NET, the runtime ignored explicit field offsets on types with `Auto` or `Sequential` layouts. For example:
+In earlier versions of .NET, the runtime ignored explicit field offsets on types with `Auto` or `Sequential` layouts. For example, the following code executed without error, and the `[FieldOffset]` attributes were ignored.:
 
 ```csharp
 using System;
@@ -24,10 +24,10 @@ using System.Runtime.InteropServices;
 [StructLayout(LayoutKind.Sequential)]
 public struct MyStruct
 {
-    [FieldOffset(0)] // Ignored in .NET versions prior to 10 Preview 4
+    [FieldOffset(0)] // Ignored prior to .NET 10.
     public int Field1;
 
-    [FieldOffset(4)] // Ignored in .NET versions prior to 10 Preview 4
+    [FieldOffset(4)] // Ignored prior to .NET 10.
     public int Field2;
 }
 
@@ -40,11 +40,9 @@ class Program
 }
 ```
 
-The above code would execute without error, and the `[FieldOffset]` attributes would be ignored.
-
 ## New behavior
 
-Starting in .NET 10 Preview 4, the runtime enforces the ECMA-335 specification and throws a <xref:System.TypeLoadException> if a type with `Auto` or `Sequential` layout specifies explicit field offsets. The following code now throws an exception:
+Starting in .NET 10, the runtime enforces the ECMA-335 specification and throws a <xref:System.TypeLoadException> if a type with `Auto` or `Sequential` layout specifies explicit field offsets. The following code now throws an exception:
 
 ```csharp
 using System;
@@ -53,10 +51,10 @@ using System.Runtime.InteropServices;
 [StructLayout(LayoutKind.Sequential)]
 public struct MyStruct
 {
-    [FieldOffset(0)] // Causes a TypeLoadException in .NET 10 Preview 4 and later
+    [FieldOffset(0)] // TypeLoadException.
     public int Field1;
 
-    [FieldOffset(4)] // Causes a TypeLoadException in .NET 10 Preview 4 and later
+    [FieldOffset(4)] // TypeLoadException.
     public int Field2;
 }
 
@@ -85,7 +83,7 @@ This change was introduced to align the .NET runtime with the ECMA-335 specifica
 
 ## Recommended action
 
-To resolve this issue, update your code to use `LayoutKind.Explicit` for types that specify explicit field offsets. For example:
+To resolve this issue, update your code to use <xref:System.Runtime.InteropServices.LayoutKind.Explicit?displayProperty=nameWithType> for types that specify explicit field offsets. For example:
 
 ```csharp
 using System;
@@ -114,8 +112,11 @@ Alternatively, if explicit field offsets aren't required, remove the <xref:Syste
 
 ## Affected APIs
 
-- <xref:System.Runtime.InteropServices.StructLayoutAttribute?displayProperty=fullName>
-- <xref:System.Runtime.InteropServices.FieldOffsetAttribute?displayProperty=fullName>
+This change does not directly affect specific APIs but impacts the run-time behavior of types defined with the following attributes:
+
+- `[StructLayout(LayoutKind.Sequential)]`
+- `[StructLayout(LayoutKind.Auto)]`
+- `[FieldOffset]`
 
 ## See also
 

@@ -3,7 +3,7 @@ title: "Breaking change: Type.MakeGenericSignatureType argument validation"
 description: Learn about the .NET 10 breaking change in core .NET libraries where Type.MakeGenericSignatureType validates that the genericTypeDefinition argument is a generic type definition.
 ms.date: 10/13/2025
 ai-usage: ai-assisted
-ms.custom: https://github.com/dotnet/docs/issues/496357
+ms.custom: https://github.com/dotnet/docs/issues/48902
 ---
 # Type.MakeGenericSignatureType argument validation
 
@@ -19,7 +19,7 @@ Previously, <xref:System.Type.MakeGenericSignatureType(System.Type,System.Type[]
 
 ## New behavior
 
-Starting in .NET 10 Preview 3, <xref:System.Type.MakeGenericSignatureType(System.Type,System.Type[])?displayProperty=nameWithType> requires the `genericTypeDefinition` argument to be a generic type definition. If the argument is not a generic type definition, the method throws an <xref:System.ArgumentException>.
+Starting in .NET 10, <xref:System.Type.MakeGenericSignatureType(System.Type,System.Type[])?displayProperty=nameWithType> requires the `genericTypeDefinition` argument to be a generic type definition. If the argument is not a generic type definition, the method throws an <xref:System.ArgumentException>.
 
 ## Type of breaking change
 

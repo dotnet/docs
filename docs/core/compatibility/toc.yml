@@ -40,6 +40,8 @@ items:
                 href: core-libraries/10.0/activity-sampling.md
               - name: Arm64 SVE nonfaulting loads require mask
                 href: core-libraries/10.0/sve-nonfaulting-loads-mask-parameter.md
+              - name: BufferedStream.WriteByte no longer performs implicit flush
+                href: core-libraries/10.0/bufferedstream-writebyte-flush.md
               - name: C# 14 overload resolution with span parameters
                 href: core-libraries/10.0/csharp-overload-resolution.md
               - name: Consistent shift behavior in generic math
@@ -84,6 +86,8 @@ items:
             href: /ef/core/what-is-new/ef-core-10.0/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
           - name: Extensions
             items:
+              - name: BackgroundService runs all of ExecuteAsync as a Task
+                href: extensions/10.0/backgroundservice-executeasync-task.md
               - name: Message no longer duplicated in Console log output
                 href: extensions/10.0/console-json-logging-duplicate-messages.md
               - name: Null values preserved in configuration
@@ -122,6 +126,8 @@ items:
                 href: sdk/10.0/dotnet-cli-stderr-output.md
               - name: .NET tool packaging creates RuntimeIdentifier-specific tool packages
                 href: sdk/10.0/dotnet-tool-pack-publish.md
+              - name: dnx.ps1 file is no longer included in .NET SDK
+                href: sdk/10.0/dnx-ps1-removed.md
               - name: "`dotnet restore` audits transitive packages"
                 href: sdk/10.0/nugetaudit-transitive-packages.md
               - name: project.json not supported in `dotnet restore`
@@ -154,6 +160,8 @@ items:
                 href: sdk/10.0/nu1015-packagereference-version.md
               - name: PrunePackageReference privatizes direct prunable references
                 href: sdk/10.0/prune-packagereference-privateassets.md
+              - name: Version requirements for .NET 10 SDK
+                href: sdk/10.0/version-requirements.md
           - name: Windows Forms
             items:
               - name: API obsoletions
@@ -406,6 +414,8 @@ items:
                 href: core-libraries/8.0/itypedescriptorcontext-props.md
               - name: Legacy Console.ReadKey removed
                 href: core-libraries/8.0/console-readkey-legacy.md
+              - name: LDAP APIs not available on .NET Standard / .NET Framework
+                href: core-libraries/8.0/ldap-netstandard-apis.md
               - name: Method builders generate parameters with HasDefaultValue=false
                 href: core-libraries/8.0/parameterinfo-hasdefaultvalue.md
               - name: Package part URIs are now compared case-insensitively in System.IO.Packaging

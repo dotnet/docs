@@ -33,7 +33,10 @@ A single telemetry entry is also sent by the .NET SDK installer when a successfu
 
 ## Disclosure
 
-The .NET SDK displays text similar to the following when you first run one of the [.NET CLI commands](index.md) (for example, `dotnet build`). Text may vary slightly depending on the version of the SDK you're running. This "first run" experience is how Microsoft notifies you about data collection.
+The .NET SDK displays text similar to the following when you first run one of the [.NET CLI commands](index.md) (for example, `dotnet build`). Text might vary slightly depending on the version of the SDK you're running. This "first run" experience is how Microsoft notifies you about data collection.
+
+> [!NOTE]
+> **Breaking change:** The behavior of telemetry messages written to `stderr` has changed in recent versions of the .NET SDK. For more information, see the [breaking change documentation](/dotnet/core/compatibility/sdk/8.0/telemetry-stderr-behavior).
 
 ```console
 Telemetry

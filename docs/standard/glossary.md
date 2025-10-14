@@ -20,7 +20,7 @@ See [CoreRT](#corert) and [.NET Native](#net-native).
 
 A [workload](#workload)-specific API. Here are some examples:
 
-- .NET Aspire
+- Aspire
 - ASP.NET
 - ASP.NET Web API
 - Entity Framework (EF)

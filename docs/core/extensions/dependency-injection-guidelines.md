@@ -108,7 +108,7 @@ Register the instance with a scoped lifetime. Use <xref:Microsoft.Extensions.Dep
 
 #### General `IDisposable` guidelines
 
-- Don't register <xref:System.IDisposable> instances with a transient lifetime. Use the factory pattern instead.
+- Don't register <xref:System.IDisposable> instances with a transient lifetime. Use the factory pattern instead so the solved service can be manually disposed after it is done being used.
 - Don't resolve <xref:System.IDisposable> instances with a transient or scoped lifetime in the root scope. The only exception to this is if the app creates/recreates and disposes <xref:System.IServiceProvider>, but this isn't an ideal pattern.
 - Receiving an <xref:System.IDisposable> dependency via DI doesn't require that the receiver implement <xref:System.IDisposable> itself. The receiver of the <xref:System.IDisposable> dependency shouldn't call <xref:System.IDisposable.Dispose%2A> on that dependency.
 - Use scopes to control the lifetimes of services. Scopes aren't hierarchical, and there's no special connection among scopes.
@@ -153,6 +153,15 @@ The factory method of a singleton service, such as the second argument to [AddSi
 - Avoid calls to <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider%2A> when configuring services. Calling `BuildServiceProvider` typically happens when the developer wants to resolve a service when registering another service. Instead, use an overload that includes the `IServiceProvider` for this reason.
 - [Disposable transient services are captured](#disposable-transient-services-captured-by-container) by the container for disposal. This can turn into a memory leak if resolved from the top-level container.
 - Enable scope validation to make sure the app doesn't have singletons that capture scoped services. For more information, see [Scope validation](dependency-injection.md#scope-validation).
+- Only use singleton lifetime for services with their own state that is expensive to create or globally shared. Avoid using singleton lifetime for services which themselves have no state. Most .NET IoC containers use "Transient" as the default scope. Considerations and drawbacks of singletons:
+  - **Thread safety**: A singleton must be implemented in a thread-safe way.
+  - **Coupling**: It can couple otherwise unrelated requests.
+  - **Testing challenges**: Shared state and coupling can make unit testing more difficult.
+  - **Memory impact**: A singleton may keep a large object graph alive in memory for the lifetime of the application.
+  - **Fault tolerance**: If a singleton or any part of its dependency tree fails, it cannot easily recover.
+  - **Configuration reloading**: Singletons generally cannot support "hot reload" of configuration values.
+  - **Scope leakage**: A singleton can inadvertently capture scoped or transient dependencies, effectively promoting them to singletons and causing unintended side effects.
+  - **Initialization overhead**: When resolving a service, the IoC container needs to look up the singleton instance. If it doesn't already exist, it needs to create it in a thread-safe manner. In contrast, a stateless transient service is very cheap to create and destroy.
 
 Like all sets of recommendations, you may encounter situations where ignoring a recommendation is required. Exceptions are rare, mostly special cases within the framework itself.
 

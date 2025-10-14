@@ -98,6 +98,7 @@ helpviewer_keywords:
   - "CS8634"
   - "CS8636"
   - "CS8637"
+  - "CS8668"
   - "CS8639"
   - "CS8643"
   - "CS8644"
@@ -214,6 +215,7 @@ The following warnings indicate that you haven't set the nullable context correc
 - **CS8632** - *The annotation for nullable reference types should only be used in code within a `#nullable` annotations context.*
 - **CS8636** - *Invalid option for `/nullable`; must be `disable`, `enable`, `warnings` or `annotations`*
 - **CS8637** - *Expected `enable`, `disable`, or `restore`*
+- **CS8668** - *Expected `warnings`, `annotations`, or end of directive*
 
 To set the nullable context correctly, you have two options:
 

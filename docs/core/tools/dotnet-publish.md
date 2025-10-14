@@ -5,7 +5,7 @@ ms.date: 09/24/2025
 ---
 # dotnet publish
 
-**This article applies to:** ✔️ .NET 6 and later versions
+**This article applies to:** ✔️ .NET 6 SDK and later versions
 
 ## Name
 
@@ -21,9 +21,9 @@ dotnet publish [<PROJECT>|<SOLUTION>|<FILE>] [-a|--arch <ARCHITECTURE>]
     [--manifest <PATH_TO_MANIFEST_FILE>] [--no-build] [--no-dependencies]
     [--no-restore] [--nologo] [-o|--output <OUTPUT_DIRECTORY>]
     [--os <OS>] [-r|--runtime <RUNTIME_IDENTIFIER>]
-    [--sc|--self-contained [true|false]] [--no-self-contained]
+    [--sc|--self-contained] [--no-self-contained]
     [-s|--source <SOURCE>] [--tl:[auto|on|off]]
-    [--use-current-runtime, --ucr [true|false]]
+    [--ucr|--use-current-runtime]
     [-v|--verbosity <LEVEL>] [--version-suffix <VERSION_SUFFIX>]
 
 dotnet publish -h|--help
@@ -134,9 +134,7 @@ For more information, see the following resources:
 
   Forces all dependencies to be resolved even if the last restore was successful. Specifying this flag is the same as deleting the *project.assets.json* file.
 
-[!INCLUDE [help](../../../includes/cli-help.md)]
-
-[!INCLUDE [interactive](../../../includes/cli-interactive-3-0.md)]
+[!INCLUDE [interactive](../../../includes/cli-interactive.md)]
 
 - **`--manifest <PATH_TO_MANIFEST_FILE>`**
 
@@ -182,15 +180,9 @@ For more information, see the following resources:
 
 [!INCLUDE [os](../../../includes/cli-os.md)]
 
-- **`--sc|--self-contained [true|false]`**
+[!INCLUDE [self-contained](../../../includes/cli-self-contained.md)]
 
-  Publishes the .NET runtime with your application so the runtime doesn't need to be installed on the target machine. Default is `true` if a runtime identifier is specified and the project is an executable project (not a library project). For more information, see [Self-contained deployment](../deploying/index.md#self-contained-deployment).
-
-  If this option is used without specifying `true` or `false`, the default is `true`. In that case, don't put the solution or project argument immediately after `--self-contained`, because `true` or `false` is expected in that position.
-
-- **`--no-self-contained`**
-
-  Equivalent to `--self-contained false`.
+[!INCLUDE [no-self-contained](../../../includes/cli-no-self-contained.md)]
 
 - **`--source <SOURCE>`**
 
@@ -202,15 +194,15 @@ For more information, see the following resources:
 
 [!INCLUDE [tl](../../../includes/cli-tl.md)]
 
-- **`--use-current-runtime, --ucr [true|false]`**
-
-  Sets the `RuntimeIdentifier` to a platform portable `RuntimeIdentifier` based on the one of your machine. This happens implicitly with properties that require a `RuntimeIdentifier`, such as `SelfContained`, `PublishAot`, `PublishSelfContained`, `PublishSingleFile`, and `PublishReadyToRun`. If the property is set to false, that implicit resolution will no longer occur.
+[!INCLUDE [use-current-runtime](../../../includes/cli-use-current-runtime.md)]
 
 [!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
 
 - **`--version-suffix <VERSION_SUFFIX>`**
 
   Defines the version suffix to replace the asterisk (`*`) in the version field of the project file.
+
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
 ## Examples
 

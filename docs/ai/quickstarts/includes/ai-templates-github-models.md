@@ -91,7 +91,7 @@ To authenticate to GitHub models from your code, you'll need to [create a GitHub
 The **AI Chat Web App** is almost ready to go as soon as it's created. However, you need to configure the app to use the personal access token you set up for GitHub Models. By default, the app template searches for this value in the project's local .NET user secrets. You can manage user secrets using either the Visual Studio UI or the .NET CLI.
 
 > [!NOTE]
-> If you enabled .NET Aspire for your app, skip to the [.NET Aspire configuration](#net-aspire-configuration) section.
+> If you enabled Aspire for your app, skip to the [Aspire configuration](#aspire-configuration) section.
 
 ## [Visual Studio](#tab/configure-visual-studio)
 
@@ -117,9 +117,9 @@ The **AI Chat Web App** is almost ready to go as soon as it's created. However, 
 
 ---
 
-### .NET Aspire configuration
+### Aspire configuration
 
-To use the **AI Chat Web App** template with .NET Aspire orchestration, add the following configurations:
+To use the **AI Chat Web App** template with Aspire orchestration, add the following configurations:
 
 #### [Visual Studio](#tab/configure-visual-studio-aspire)
 

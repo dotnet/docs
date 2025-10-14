@@ -460,6 +460,11 @@ items:
 - name: C# compiler messages
   href: ./compiler-messages/index.md
   items:
+  - name: Preprocessor errors
+    href: ./compiler-messages/preprocessor-errors.md
+    displayName: >
+      CS1024, CS1025, CS1027, CS1028, CS1029, CS1030, CS1032, CS1038, CS1040, CS1517, CS1560, CS1576, CS1578, CS1633, CS1634,
+      CS1635, CS1691, CS1692, CS1694, CS1695, CS1696, CS1709, CS9297, CS9298, CS9299, CS9314
   - name: Feature or version missing
     href: ./compiler-messages/feature-version-errors.md
     displayName: >
@@ -534,7 +539,9 @@ items:
     displayName: CS8509, CS9134, CS9135
   - name: String literal declarations
     href: ./compiler-messages/string-literal.md
-    displayName: CS9274
+    displayName: >
+      CS1009, CS1010, CS1011, CS1012, CS1039, CS8997, CS8998, CS8999, CS9000, CS9001, CS9002, CS9003, CS9004, CS9005, CS9006,
+      CS9007, CS9008, CS9009, CS9274, CS9315
   - name: Array declarations
     href: ./compiler-messages/array-declaration-errors.md
     displayName: >
@@ -1402,14 +1409,8 @@ items:
       href: ../misc/cs1004.md
     - name: CS1008
       href: ../misc/cs1008.md
-    - name: CS1009
-      href: ./compiler-messages/cs1009.md
     - name: CS1010
       href: ../misc/cs1010.md
-    - name: CS1011
-      href: ../misc/cs1011.md
-    - name: CS1012
-      href: ../misc/cs1012.md
     - name: CS1013
       href: ../misc/cs1013.md
     - name: CS1014
@@ -1454,8 +1455,6 @@ items:
       href: ../misc/cs1037.md
     - name: CS1038
       href: ../misc/cs1038.md
-    - name: CS1039
-      href: ../misc/cs1039.md
     - name: CS1040
       href: ../misc/cs1040.md
     - name: CS1041

@@ -111,9 +111,7 @@ items:
     href: resources/mcp-servers.md
   - name: API reference
     items:
-    - name: ChatClientBuilder
-      href: /dotnet/api/microsoft.extensions.ai.chatclientbuilder
-    - name: IChatClient
-      href: /dotnet/api/microsoft.extensions.ai.ichatclient
-    - name: IEmbeddingGenerator
-      href: /dotnet/api/microsoft.extensions.ai.iembeddinggenerator
+    - name: Microsoft.Extensions.AI
+      href: /dotnet/api/microsoft.extensions.ai
+    - name: Microsoft.Agents.AI
+      href: /dotnet/api/microsoft.agents.ai

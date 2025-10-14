@@ -25,6 +25,9 @@ ai-usage: ai-generated
 | **Introduced in version**           | 3.11.0                                                                                   |
 | **Is there a code fix**             | Yes                                                                                      |
 
+> [NOTE]
+> This analyzer is no longer relevant for MSTest 4 as the assertion APIs with format parameters were removed.
+
 ## Cause
 
 An assertion method call uses the `message` and `parameters` arguments for string formatting instead of using string interpolation.

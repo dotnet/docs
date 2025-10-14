@@ -4,7 +4,7 @@ description: "Learn to add `///` comments that generate XML documentation direct
 ms.topic: tutorial  #Don't change.
 ms.date: 10/14/2025
 ai-usage: ai-assisted
-#customer intent: As a developer, I want to generate XML dcoumentation comments so that other developers can use my code successfully.
+#customer intent: As a developer, I want to generate XML documentation comments so that other developers can use my code successfully.
 ---
 # Tutorial: Create XML documentation
 
@@ -13,9 +13,9 @@ In this tutorial, you take an existing object‑oriented sample (from the preced
 In this tutorial, you:
 
 > [!div class="checklist"]
-> * [Tell the user what they'll do in the tutorial]
-> * [Each of these bullet points align with a key H2]
-> * [Use these green checkmarks]
+> * Enable XML documentation output in your C# project.
+> * Add and structure XML documentation comments to types and members.
+> * Build the project and inspect the generated XML documentation file.
 
 
 ## Prerequisites

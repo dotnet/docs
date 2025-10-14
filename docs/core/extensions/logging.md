@@ -603,7 +603,7 @@ The following code enables scopes for the console provider:
 HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
 
 builder.Logging.ClearProviders();
-builder.Logging.AddConsole(options => options.IncludeScopes = true);
+builder.Logging.AddSimpleConsole(options => options.IncludeScopes = true);
 
 using IHost host = builder.Build();
 

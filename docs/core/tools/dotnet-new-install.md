@@ -42,6 +42,9 @@ Starting with .NET SDK 6.0.100, installed template packages are available in lat
 >   dotnet new --install Microsoft.Azure.WebJobs.ProjectTemplates
 >   ```
 
+> [!WARNING]
+> Templates can run MSBuild code when triggered, don't install or run untrusted .NET templates.
+
 ## Arguments
 
 - **`<PATH|NUGET_ID>`**

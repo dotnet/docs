@@ -8,7 +8,7 @@ ms.custom: https://github.com/dotnet/docs/issues/497988
 
 # dnx.ps1 file is no longer included in .NET SDK
 
-The `dnx.ps1` shim script is no longer included in Windows versions of the .NET SDK.
+The `dnx.ps1` shim script is no longer included in the .NET SDK.
 
 ## Version introduced
 
@@ -16,7 +16,7 @@ The `dnx.ps1` shim script is no longer included in Windows versions of the .NET 
 
 ## Previous behavior
 
-In Windows versions of the .NET SDK, a `dnx.ps1` script was included in the dotnet root folder, alongside `dotnet.exe` and `dnx.cmd`.
+Since .NET 10 Preview 7, on Windows versions of the .NET SDK, a `dnx.ps1` script was included in the dotnet root folder, alongside `dotnet.exe` and `dnx.cmd`.
 
 ## New behavior
 
@@ -28,7 +28,7 @@ This change can affect [source compatibility](../../categories.md#source-incompa
 
 ## Reason for change
 
-The `dnx.ps1` script was added to avoid an extra `Terminate Batch Job` prompt when cancelling tools run via `dnx` with `CTRL+C`. However, PowerShell has special handling for `--`, so if `--` was passed on the command line it would never make it through to `dnx`. This meant from PowerShell it was impossible to pass options to a tool using `dnx` if `dnx` itself has the same option. For example, `dnx dotnet-serve -- --help` would show the help for `dnx` instead of the help for `dotnet-serve`.
+The `dnx.ps1` script was added to avoid an extra `Terminate Batch Job` prompt when cancelling tools run via `dnx` with <kbd>Ctrl+C</kbd>. However, PowerShell has special handling for `--`, so if `--` was passed on the command line, it never made it through to `dnx`. This meant that in PowerShell, it was impossible to pass options to a tool using `dnx` if `dnx` itself has the same option. For example, `dnx dotnet-serve -- --help` showed the help for `dnx` instead of the help for `dotnet-serve`.
 
 ## Recommended action
 

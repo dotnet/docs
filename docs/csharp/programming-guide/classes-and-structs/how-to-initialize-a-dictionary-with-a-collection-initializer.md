@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "collection initializers [C#], with Dictionary"
 ms.topic: how-to
 ms.assetid: 25283922-f8ee-40dc-a639-fac30804ec71
+ms.custom: copilot-scenario-highlight
 ---
 # How to initialize a dictionary with a collection initializer (C# Programming Guide)
 

@@ -8,7 +8,7 @@ ms.date: 10/13/2025
 
 You can easily create a custom enricher by creating a class that implements the <xref:Microsoft.Extensions.Diagnostics.Enrichment.ILogEnricher> interface.
 After the class is created, you register it with <xref:Microsoft.Extensions.DependencyInjection.EnrichmentServiceCollectionExtensions.AddLogEnricher(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Diagnostics.Enrichment.ILogEnricher)>.
-And after it's registered, the enricher is invoked any time enrichment is called for.
+Once registered, the logging infrastructure automatically calls the `Enrich()` method on every registered enricher for each log message produced.
 
 ## Install the package
 

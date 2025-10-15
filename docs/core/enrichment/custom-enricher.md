@@ -10,6 +10,24 @@ You can easily create a custom enricher by creating a class that implements the 
 After the class is created, you register it with <xref:Microsoft.Extensions.DependencyInjection.EnrichmentServiceCollectionExtensions.AddLogEnricher(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Diagnostics.Enrichment.ILogEnricher)>.
 And after it's registered, the enricher is invoked any time enrichment is called for.
 
+## Install the package
+
+To get started, install the [📦 Microsoft.Extensions.Telemetry.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.Telemetry.Abstractions) NuGet package:
+
+### [.NET CLI](#tab/dotnet-cli)
+
+```dotnetcli
+dotnet add package Microsoft.Extensions.Telemetry.Abstractions
+```
+
+Or, if you're using .NET 10+ SDK:
+
+```dotnetcli
+dotnet package add Microsoft.Extensions.Telemetry.Abstractions 
+```
+
+## Implementation
+
 Your custom enricher only needs to implement a single <xref:Microsoft.Extensions.Diagnostics.Enrichment.ILogEnricher.Enrich(Microsoft.Extensions.Diagnostics.Enrichment.IEnrichmentTagCollector)> method.
 During enrichment, this method is called and given an <xref:Microsoft.Extensions.Diagnostics.Enrichment.IEnrichmentTagCollector> instance. The enricher then calls one of the overloads of
 the <xref:Microsoft.Extensions.Diagnostics.Enrichment.IEnrichmentTagCollector.Add(System.String,System.Object)> method to record any properties it wants.

@@ -32,13 +32,19 @@ Search all files in the docs/csharp/language-reference/compiler-messages and the
 
 ## Final search in roslyn source
 
+Let's check undocumented errors and the roslyn source for any missing errors.  For every error code listed in "sorry-we-don-t-have-specifics-on-this-csharp-error.md" under the `f1_keywords` front matter, do the following:
+1. Find that number as a constant in `ErrorCodes.cs`.
+2. Locate the corresponding `data` element in CSharpResources.resx. The `name` atttribute should match the number of the constant.
+3. Read the error message found in the `<value>` element that is a child of that `<data>` element.
+Give me a list of all error numbers and corresponding error messages that relate to operator overloading.
+
 To make sure you've found all related errors, we'll check the source.  Look in `CSharpResources.resx` for any elements where the `<value>` element is a message related to preprocessor tokens. The symbolic constant for that value is in the `name` attribute on the parent `data` element. Find that value in `ErrorCodes.cs`. It will map to the compiler error code, where the code is "CS" followed by the number as a four digit number. Build a list of any related errors, but don't make any edits yet.
 
-For each new file:
+I'll give you error codes one by one. For each, I want you to do the following:
 
-- Add the new error code to the front matter of the consolidated article, for both the `f1_keywords` and `helpview_keywords` table.
-- Add the new error code and error message to the table at the top of the destination article.
-- Add the new error code to the list of `displaName` elements in the TOC file.
+- Add the new error code to the front matter of operator-overloading-errors.md, for both the `f1_keywords` and `helpview_keywords` table.
+- Add the new error code and error message to the table at the top of operator-overloading-errors.md.
+- Add the new error code to the list of `displayName` elements in the TOC file for operator-overloading-errors.md.
 - Remove the new error code from the front matter in the file `csharp/misc/sorry-we-don-t-have-specifics-on-this-csharp-errors.md` file.
 
 Note that no redirections need to be added for these error codes.

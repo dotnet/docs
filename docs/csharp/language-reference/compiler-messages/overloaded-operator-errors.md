@@ -28,6 +28,11 @@ f1_keywords:
   - "CS1037"
   - "CS1553"
   - "CS1554"
+  - "CS8930"
+  - "CS8931"
+  - "CS9023"
+  - "CS9024"
+  - "CS9025"
   - "CS9308"
   - "CS9310"
   - "CS9311"
@@ -60,6 +65,11 @@ helpviewer_keywords:
   - "CS1037"
   - "CS1553"
   - "CS1554"
+  - "CS8930"
+  - "CS8931"
+  - "CS9023"
+  - "CS9024"
+  - "CS9025"
   - "CS9308"
   - "CS9310"
   - "CS9311"
@@ -101,6 +111,11 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS1037**](#cs1037): *Overloadable operator expected*
 - [**CS1553**](#cs1553): *Declaration is not valid; use 'modifier operator \<dest-type> (...' instead*
 - [**CS1554**](#cs1554): *Declaration is not valid; use '\<type> operator op (...' instead*
+- **CS8930**: *Explicit implementation of a user-defined operator must be static.*
+- **CS8931**: *Explicit implementation must be declared public to implement interface member in type.*
+- **CS9023**: *Operator cannot be made checked.*
+- **CS9024**: *Operator cannot be made unchecked.*
+- **CS9025**: *Operator requires a matching non-checked version to also be declared.*
 - **CS9308**: *User-defined operator must be declared public.*
 - **CS9310**: *The return type for this operator must be void.*
 - **CS9311**: *Type does not implement interface member. The type cannot implement member because one of them is not an operator.*

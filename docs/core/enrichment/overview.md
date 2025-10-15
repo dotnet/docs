@@ -4,7 +4,7 @@ description: Learn about log enrichment in .NET and how to enhance your logs wit
 ms.date: 10/13/2025
 ---
 
-# Log enrichment overview
+# Overview
 
 Log enrichment is a powerful feature that automatically attaches contextual information to your application's logs. Instead of manually adding metadata to each log, enrichment provides a systematic way to inject relevant context automatically across your entire application.
 

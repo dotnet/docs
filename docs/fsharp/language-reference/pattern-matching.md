@@ -238,7 +238,33 @@ let let str =       // str is inferred to be `string | null`
 
 ## Nameof pattern
 
-The `nameof` pattern matches against a string when its value is equal to the expression that follows the `nameof` keyword. for example:
+The `nameof` pattern matches against a string when its value is equal to the expression that follows the `nameof` keyword. This pattern is particularly useful when you need to match string values against the names of types, discriminated union cases, or other symbols in your code. Using `nameof` provides compile-time safety because if you rename a symbol, the pattern will automatically use the new name.
+
+A common use case is deserializing data where string values represent type or case names:
+
+```fsharp
+type EventType =
+    | OrderCreated
+    | OrderShipped
+    | OrderDelivered
+
+let handleEvent eventName data =
+    match eventName with
+    | nameof OrderCreated -> printfn "Processing order creation: %s" data
+    | nameof OrderShipped -> printfn "Processing order shipment: %s" data
+    | nameof OrderDelivered -> printfn "Processing order delivery: %s" data
+    | _ -> printfn "Unknown event type: %s" eventName
+
+handleEvent "OrderCreated" "Order #123" // matches first case
+handleEvent "OrderShipped" "Order #123" // matches second case
+```
+
+This approach is better than using string literals (like `"OrderCreated"`) because:
+- If you rename `OrderCreated` to `OrderPlaced`, the pattern automatically updates.
+- The compiler ensures that the symbol exists, preventing typos.
+- Your code remains consistent when refactoring.
+
+You can also use `nameof` with parameters:
 
 ```fsharp
 let f (str: string) =

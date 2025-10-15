@@ -1,26 +1,34 @@
 # Copilot prompts to consolidate error codes.
 
-We're going to edit this file, string-literal.md, to contain information about all errors and warnings related to string and character literal declarations. I'll write prompts for specific tasks. Don't make any edits yet. In future prompts, the destination for new error and warning content is always this file.
+Overall steps:
 
+1. Make a new template, by hand.
+1. Add any new errors that should be added here.
+1. Consolidate existing errors, as identified by person.
+1. Run Copilot search for other existing errors that person may have missed.
+1. Search for missing errors.
 
 ## Add a single existing file into the new consolidated article. 
 
-Start with CS1009.md as the source file.
-For each source file:
+We're going to work through a series of files consolidating errors and warnings related to declaring overloaded operators.
+
+The destination for all these edits is the overloaded-operator-errors.md file. It already contains a skeleton for the final output.
+
+For each source file I specify in this chat, you'll do the following tasks:
 
 - Add the contents of the source file to the destination.md file.
-  - Include the source error code in the YML header for `f1_keywords` and `helpviewer_keywords`.
+  - Include the source error code in the YML header for f1_keywords and helpviewer_keywords.
   - Add an entry with an anchor for the error error code and its corresponding error message.
   - Add the contents of the source file as a new H2 in the destination file.
-- Add a redirection for the source file in the file `.openpublishing.redirection.csharp.json`. Make the destination point to destination file. Place the new entry in sorted order based on 'source_path_from_root'.
+  - Add a redirection for the source file in the file .openpublishing.redirection.csharp.json. Make the destination point to destination file. Place the new entry in sorted order based on 'source_path_from_root'.
 - Update the TOC file:
   - Add the error code to the list of display names in the TOC for the destination file, sorted by numeric error code.
   - Remove the TOC entry for the source file.
-- Finally, delete the source markdown file. 
+  - Finally, delete the source markdown file.
 
 ## Search for other related articles that may be missed.
 
-Search all files in the docs/csharp/language-reference/compiler-messages and the docs/csharp/misc folder for any other errors and warnings that involve string literals or constants. Give me a list to review for possible additional consolidation.
+Search all files in the docs/csharp/language-reference/compiler-messages and the docs/csharp/misc folder for any other errors and warnings that involve operator overloading. Give me a list to review for possible additional consolidation. Don't make any edits until I approve.
 
 ## Final search in roslyn source
 

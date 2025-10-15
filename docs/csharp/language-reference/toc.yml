@@ -484,6 +484,11 @@ items:
       CS0514, CS0515, CS0516, CS0517, CS0522, CS0526, CS0568, CS0710, CS0768, CS0824, CS8054, CS8091, CS8358, CS8862, CS8867,
       CS8868, CS8878, CS8910, CS8958, CS8982, CS8983, CS9105, CS9106, CS9107, CS9108, CS9109, CS9110, CS9111, CS9112, CS9113,
       CS9114, CS9115, CS9116, CS9117, CS9118, CS9119, CS9120, CS9121, CS9122, CS9124, CS9136, CS9179
+  - name: Operator declarations
+    href: ./compiler-messages/overloaded-operator-errors.md
+    displayName: >
+      operator, overloaded operator, user defined operator,
+      CS9308, CS9310, CS9311, CS9312, CS9313
   - name: Parameter / argument mismatch
     href: ./compiler-messages/parameter-argument-mismatch.md
     displayName: >

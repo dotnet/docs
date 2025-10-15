@@ -598,12 +598,6 @@ f1_keywords:
 # C# 14 errors begin here
 ## using `extension` as type name. (valid identifiers).
   - "CS9306"
-## User defined operators
-  - "CS9308"
-  - "CS9310"
-  - "CS9311"
-  - "CS9312"
-  - "CS9313"
 ## More extension errors
   - "CS9316"
   - "CS9317"

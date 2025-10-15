@@ -27,7 +27,6 @@ f1_keywords:
   - "CS0715"
   - "CS1037"
   - "CS1553"
-  - "CS1554"
   - "CS8930"
   - "CS8931"
   - "CS9023"
@@ -64,7 +63,6 @@ helpviewer_keywords:
   - "CS0715"
   - "CS1037"
   - "CS1553"
-  - "CS1554"
   - "CS8930"
   - "CS8931"
   - "CS9023"
@@ -85,52 +83,52 @@ There are several errors related to declaring overloaded operators. Overloaded o
 <!-- The text in this list generates issues for Acrolinx, because they don't use contractions.
 That's by design. The text closely matches the text of the compiler error / warning for SEO purposes.
  -->
-- [**CS0056**](#cs0056): *Inconsistent accessibility: return type 'type' is less accessible than operator 'operator'*
-- [**CS0057**](#cs0057): *Inconsistent accessibility: parameter type 'type' is less accessible than operator 'operator'*
-- [**CS0215**](#cs0215): *The return type of operator True or False must be bool*
-- [**CS0216**](#cs0216): *The operator 'operator' requires a matching operator 'missing_operator' to also be defined*
-- [**CS0217**](#cs0217): *In order to be applicable as a short circuit operator a user-defined logical operator ('operator') must have the same return type as the type of its 2 parameters.*
-- [**CS0218**](#cs0218): *The type ('type') must contain declarations of operator true and operator false*
-- [**CS0448**](#cs0448): *The return type for ++ or -- operator must be the containing type or derived from the containing type*
-- [**CS0552**](#cs0552): *'conversion routine' : user defined conversion to/from interface*
-- [**CS0553**](#cs0553): *'conversion routine' : user defined conversion to/from base class*
-- [**CS0554**](#cs0554): *'conversion routine' : user defined conversion to/from derived class*
-- [**CS0555**](#cs0555): *User-defined operator cannot take an object of the enclosing type and convert to an object of the enclosing type*
-- [**CS0556**](#cs0556): *User-defined conversion must convert to or from the enclosing type*
-- [**CS0557**](#cs0557): *Duplicate user-defined conversion in type*
-- [**CS0558**](#cs0558): *User-defined operator must be declared static and public*
-- [**CS0559**](#cs0559): *The parameter type for ++ or -- operator must be the containing type*
-- [**CS0562**](#cs0562): *The parameter of a unary operator must be the containing type*
-- [**CS0563**](#cs0563): *One of the parameters of a binary operator must be the containing type*
-- [**CS0564**](#cs0564): *The first operand of an overloaded shift operator must have the same type as the containing type, and the type of the second operand must be int*
-- [**CS0567**](#cs0567): *Interfaces cannot contain operators*
-- [**CS0590**](#cs0590): *User-defined operators cannot return void*
-- [**CS0660**](#cs0660): *Type defines operator == or operator != but does not override Object.Equals(object o)*
-- [**CS0661**](#cs0661): *Type defines operator == or operator != but does not override Object.GetHashCode()*
-- [**CS0715**](#cs0715): *Static classes cannot contain user-defined operators*
-- [**CS1037**](#cs1037): *Overloadable operator expected*
-- [**CS1553**](#cs1553): *Declaration is not valid; use 'modifier operator \<dest-type> (...' instead*
-- [**CS1554**](#cs1554): *Declaration is not valid; use '\<type> operator op (...' instead*
-- **CS8930**: *Explicit implementation of a user-defined operator must be static.*
-- **CS8931**: *Explicit implementation must be declared public to implement interface member in type.*
-- **CS9023**: *Operator cannot be made checked.*
-- **CS9024**: *Operator cannot be made unchecked.*
-- **CS9025**: *Operator requires a matching non-checked version to also be declared.*
-- **CS9308**: *User-defined operator must be declared public.*
-- **CS9310**: *The return type for this operator must be void.*
-- **CS9311**: *Type does not implement interface member. The type cannot implement member because one of them is not an operator.*
-- **CS9312**: *Type cannot override inherited member because one of them is not an operator.*
-- **CS9313**: *Overloaded compound assignment operator takes one parameter.*
+- [**CS0056**](#inconsistent-accessibility): *Inconsistent accessibility: return type 'type' is less accessible than operator 'operator'*
+- [**CS0057**](#inconsistent-accessibility): *Inconsistent accessibility: parameter type 'type' is less accessible than operator 'operator'*
+- [**CS0215**](#boolean-and-short-circuit-operators): *The return type of operator True or False must be bool*
+- [**CS0216**](#boolean-and-short-circuit-operators): *The operator 'operator' requires a matching operator 'missing_operator' to also be defined*
+- [**CS0217**](#boolean-and-short-circuit-operators): *In order to be applicable as a short circuit operator a user-defined logical operator ('operator') must have the same return type as the type of its 2 parameters.*
+- [**CS0218**](#boolean-and-short-circuit-operators): *The type ('type') must contain declarations of operator true and operator false*
+- [**CS0448**](#operator-signature-requirements): *The return type for `++` or `--` operator must be the containing type or derived from the containing type*
+- [**CS0552**](#user-defined-conversion-restrictions): *'conversion routine' : user defined conversion to/from interface*
+- [**CS0553**](#user-defined-conversion-restrictions): *'conversion routine' : user defined conversion to/from base class*
+- [**CS0554**](#user-defined-conversion-restrictions): *'conversion routine' : user defined conversion to/from derived class*
+- [**CS0555**](#user-defined-conversion-restrictions): *User-defined operator cannot take an object of the enclosing type and convert to an object of the enclosing type*
+- [**CS0556**](#user-defined-conversion-restrictions): *User-defined conversion must convert to or from the enclosing type*
+- [**CS0557**](#user-defined-conversion-restrictions): *Duplicate user-defined conversion in type*
+- [**CS0558**](#operator-declaration-requirements): *User-defined operator must be declared static and public*
+- [**CS0559**](#operator-signature-requirements): *The parameter type for `++` or `--` operator must be the containing type*
+- [**CS0562**](#operator-signature-requirements): *The parameter of a unary operator must be the containing type*
+- [**CS0563**](#operator-signature-requirements): *One of the parameters of a binary operator must be the containing type*
+- [**CS0564**](#operator-signature-requirements): *The first operand of an overloaded shift operator must have the same type as the containing type, and the type of the second operand must be int*
+- [**CS0567**](#operator-signature-requirements): *Interfaces cannot contain operators*
+- [**CS0590**](#operator-signature-requirements): *User-defined operators cannot return void*
+- [**CS0660**](#equality-operators): *Type defines `operator ==` or `operator !=` but does not override `Object.Equals(object o)`*
+- [**CS0661**](#equality-operators): *Type defines `operator ==` or `operator !=` but does not override `Object.GetHashCode()`*
+- [**CS0715**](#operator-declaration-requirements): *Static classes cannot contain user-defined operators*
+- [**CS1037**](#operator-declaration-requirements): *Overloadable operator expected*
+- [**CS1553**](#operator-declaration-requirements): *Declaration is not valid; use 'modifier operator \<dest-type> (...' instead*
+- [**CS8930**](#operator-declaration-requirements): *Explicit implementation of a user-defined operator must be static.*
+- [**CS8931**](#operator-declaration-requirements): *Explicit implementation must be declared public to implement interface member in type.*
+- [**CS9023**](#checked-operators): *Operator cannot be made checked.*
+- [**CS9024**](#checked-operators): *Operator cannot be made unchecked.*
+- [**CS9025**](#checked-operators): *Operator requires a matching non-checked version to also be declared.*
+- [**CS9308**](#operator-declaration-requirements): *User-defined operator must be declared public.*
+- [**CS9310**](#operator-signature-requirements): *The return type for this operator must be void.*
+- [**CS9311**](#interface-and-inheritance-requirements): *Type does not implement interface member. The type cannot implement member because one of them is not an operator.*
+- [**CS9312**](#interface-and-inheritance-requirements): *Type cannot override inherited member because one of them is not an operator.*
+- [**CS9313**](#interface-and-inheritance-requirements): *Overloaded compound assignment operator takes one parameter.*
 
 The following sections provide examples of common issues and how to fix them.
 
-## CS0056
+## Inconsistent accessibility
 
-Inconsistent accessibility: return type 'type' is less accessible than operator 'operator'
+- **CS0056**: *Inconsistent accessibility: return type 'type' is less accessible than operator 'operator'*
+- **CS0057**: *Inconsistent accessibility: parameter type 'type' is less accessible than operator 'operator'*
 
-A public construct must return a publicly accessible object. For more information, see [Access Modifiers](../programming-guide/classes-and-structs/access-modifiers.md).
+These errors occur when you declare a public operator with return types or parameter types that have more restrictive accessibility than the operator itself. All public constructs must use publicly accessible types for their parameters and return values. For more information, see [Access Modifiers](../programming-guide/classes-and-structs/access-modifiers.md).
 
-The following sample generates CS0056:
+**CS0056 example - Return type less accessible:**
 
 ```csharp
 // CS0056.cs
@@ -153,13 +151,7 @@ public class A
 }
 ```
 
-## CS0057
-
-Inconsistent accessibility: parameter type 'type' is less accessible than operator 'operator'
-
-A public construct must return a publicly accessible object. For more information, see [Access Modifiers](../programming-guide/classes-and-structs/access-modifiers.md).
-
-The following sample generates CS0057:
+**CS0057 example - Parameter type less accessible:**
 
 ```csharp
 // CS0057.cs
@@ -182,13 +174,190 @@ public class MyClass2
 }
 ```
 
-## CS0215
+To fix these errors, make sure all types used in public operator declarations are also publicly accessible.
 
-The return type of operator True or False must be bool
+## Operator signature requirements
 
-User-defined [true and false](../language-reference/operators/true-false-operators.md) operators must have a return type of [bool](../language-reference/builtin-types/bool.md).
+- **CS0448**: *The return type for ++ or -- operator must be the containing type or derived from the containing type*
+- **CS0559**: *The parameter type for ++ or -- operator must be the containing type*
+- **CS0562**: *The parameter of a unary operator must be the containing type*
+- **CS0563**: *One of the parameters of a binary operator must be the containing type*
+- **CS0564**: *The first operand of an overloaded shift operator must have the same type as the containing type, and the type of the second operand must be int*
+- **CS0567**: *Interfaces can't contain operators*
+- **CS0590**: *User-defined operators can't return void*
+- **CS9310**: *The return type for this operator must be void*
 
-The following sample generates CS0215:
+These errors occur when operator declarations don't follow the required signature rules. Each operator type has specific requirements for parameter types and return types. For more information, see [Operator overloading](../operators/operator-overloading.md).
+
+**CS0448 example - Return type for ++ or -- must be containing type:**
+
+```csharp
+// CS0448.cs
+class C5
+{
+   public static int operator ++(C5 c) { return null; }   // CS0448
+   public static C5 operator --(C5 c) { return null; }   // OK
+   public static void Main() {}
+}
+```
+
+**CS0559 example - Parameter type for ++ or -- must be containing type:**
+
+```csharp
+// CS0559.cs
+// compile with: /target:library
+public class iii
+{
+   public static implicit operator int(iii x)
+   {
+      return 0;
+   }
+
+   public static implicit operator iii(int x)
+   {
+      return null;
+   }
+
+   public static int operator ++(int aa)   // CS0559
+   // try the following line instead
+   // public static iii operator ++(iii aa)
+   {
+      return (iii)0;
+   }
+}
+```
+
+**CS0562 example - Unary operator parameter must be containing type:**
+
+```csharp
+// CS0562.cs
+public class iii
+{
+    public static implicit operator int(iii x)
+    {
+        return 0;
+    }
+
+    public static implicit operator iii(int x)
+    {
+        return null;
+    }
+
+    public static iii operator +(int aa)   // CS0562
+    // try the following line instead
+    // public static iii operator +(iii aa)
+    {
+        return (iii)0;
+    }
+
+    public static void Main()
+    {
+    }
+}
+```
+
+**CS0563 example - Binary operator must have one parameter of containing type:**
+
+```csharp
+// CS0563.cs
+public class iii
+{
+    public static implicit operator int(iii x)
+    {
+        return 0;
+    }
+    public static implicit operator iii(int x)
+    {
+        return null;
+    }
+    public static int operator +(int aa, int bb)   // CS0563
+    // Use the following line instead:
+    // public static int operator +(int aa, iii bb)
+    {
+        return 0;
+    }
+    public static void Main()
+    {
+    }
+}
+```
+
+**CS0564 example - Shift operator requirements:**
+
+```csharp
+// CS0564.cs
+using System;
+class C
+{
+   public static int operator << (C c1, C c2) // CS0564
+// To correct, change second operand to int, like so:
+// public static int operator << (C c1, int c2)
+   {
+      return 0;
+   }
+   static void Main()
+   {
+   }
+}
+```
+
+**CS0567 example - Interfaces can't contain operators:**
+
+```csharp
+// CS0567.cs
+interface IA
+{
+   int operator +(int aa, int bb);   // CS0567
+}
+
+class Sample
+{
+   public static void Main()
+   {
+   }
+}
+```
+
+**CS0590 example - Operators can't return void:**
+
+```csharp
+// CS0590.cs
+namespace x
+{
+   public class a
+   {
+      public static void operator+(a A1, a A2)   // CS0590
+      {
+      }
+
+      // try the following user-defined operator
+      /*
+      public static a operator+(a A1, a A2)
+      {
+         return A2;
+      }
+      */
+
+      public static int Main()
+      {
+         return 1;
+      }
+   }
+}
+```
+
+To fix these errors, ensure your operator declarations follow the signature requirements for the specific operator type you're overloading.
+
+## Boolean and short-circuit operators
+
+- **CS0215**: *The return type of operator true or false must be bool*
+- **CS0216**: *The operator requires a matching operator to also be defined*
+- **CS0217**: *In order to be applicable as a short-circuit operator, a user-defined logical operator must have the same return type as the type of its 2 parameters*
+- **CS0218**: *The type must contain declarations of operator true and operator false*
+
+These errors occur when you define logical operators incorrectly. Certain operators must be defined in pairs, and short-circuit operators have specific signature requirements. For more information, see [true and false operators](../operators/true-false-operators.md), [Boolean logical operators](../operators/boolean-logical-operators.md), and [User-defined conditional logical operators](~/_csharpstandard/standard/expressions.md#12153-user-defined-conditional-logical-operators).
+
+**CS0215 example - operator true and false must return bool:**
 
 ```csharp
 // CS0215.cs
@@ -214,14 +383,7 @@ class MyClass
 }
 ```
 
-## CS0216
-
-The operator 'operator' requires a matching operator 'missing_operator' to also be defined
-
-A user-defined [==](../language-reference/operators/equality-operators.md#equality-operator-) operator requires a user-defined [!=](../language-reference/operators/equality-operators.md#inequality-operator-) operator, and vice versa.
-The same applies also to a user-defined [true](../language-reference/operators/true-false-operators.md) operator and a user-defined [false](../language-reference/operators/true-false-operators.md) operator.
-
-The following sample generates CS0216:
+**CS0216 example - Operator requires matching operator:**
 
 ```csharp
 // CS0216.cs
@@ -240,9 +402,9 @@ class MyClass
    }
    */
 
-   public override bool Equals (object obj)
+   public override bool Equals (object o)
    {
-      return base.Equals (obj);
+      return base.Equals (o);
    }
 
    public override int GetHashCode()
@@ -256,13 +418,7 @@ class MyClass
 }
 ```
 
-## CS0217
-
-In order to be applicable as a short circuit operator a user-defined logical operator ('operator') must have the same return type as the type of its 2 parameters.
-
-If you define an operator for a user-defined type, and then try to use the operator as a short-circuit operator, the user-defined operator must have parameters and return values of the same type. For more information about short-circuit operators, see [`&&` operator](../language-reference/operators/boolean-logical-operators.md#conditional-logical-and-operator-) and [`||` operator](../language-reference/operators/boolean-logical-operators.md#conditional-logical-or-operator-). For more information about user-defined short-circuit, or conditional, operators, see the [User-defined conditional logical operators](~/_csharpstandard/standard/expressions.md#12153-user-defined-conditional-logical-operators ) section of the [C# language specification](~/_csharpstandard/standard/README.md).
-
-The following sample generates CS0217:
+**CS0217 example - Short-circuit operator requires matching return type:**
 
 ```csharp
 // CS0217.cs
@@ -300,18 +456,7 @@ public class MyClass
 }
 ```
 
-### See also
-
-- [Operator overloading](../language-reference/operators/operator-overloading.md)
-- [true and false operators](../language-reference/operators/true-false-operators.md)
-
-## CS0218
-
-The type ('type') must contain declarations of operator true and operator false
-
-If a user-defined type overloads the [& operator](../language-reference/operators/boolean-logical-operators.md#logical-and-operator-) or [&#124; operator](../language-reference/operators/boolean-logical-operators.md#logical-or-operator-), it must also define [true and false](../language-reference/operators/true-false-operators.md) operators, in order to make short-circuiting [&& operator](../language-reference/operators/boolean-logical-operators.md#conditional-logical-and-operator-) or [&#124;&#124; operator](../language-reference/operators/boolean-logical-operators.md#conditional-logical-or-operator-) defined.
-
-The following sample generates CS0218:
+**CS0218 example - Must define operator true and false for short-circuit support:**
 
 ```csharp
 // CS0218.cs
@@ -349,60 +494,20 @@ public class MyClass
 }
 ```
 
-### See also
+To fix these errors, ensure you define required paired operators and follow the correct signature patterns for logical operators.
 
-- [Operator overloading](../language-reference/operators/operator-overloading.md)
+## User-defined conversion restrictions
 
-## CS0448
+- **CS0552**: *User-defined conversion to/from interface*
+- **CS0553**: *User-defined conversion to/from base class*
+- **CS0554**: *User-defined conversion to/from derived class*
+- **CS0555**: *User-defined operator can't take an object of the enclosing type and convert to an object of the enclosing type*
+- **CS0556**: *User-defined conversion must convert to or from the enclosing type*
+- **CS0557**: *Duplicate user-defined conversion in type*
 
-The return type for ++ or -- operator must be the containing type or derived from the containing type
+These errors occur when you attempt to create invalid user-defined conversion operators. Conversion operators have specific restrictions about which types they can convert between. For more information, see [User-defined conversion operators](../operators/user-defined-conversion-operators.md).
 
-When you override the `++` or `--` operators, they must return the same type as the containing type, or return a type that is derived from the containing type.
-
-### Example 1
-
-The following sample generates CS0448.
-
-```csharp
-// CS0448.cs
-class C5
-{
-   public static int operator ++(C5 c) { return null; }   // CS0448
-   public static C5 operator --(C5 c) { return null; }   // OK
-   public static void Main() {}
-}
-```
-
-### Example 2
-
-The following sample generates CS0448.
-
-```csharp
-// CS0448_b.cs
-public struct S
-{
-   public static S? operator ++(S s) { return new S(); }   // CS0448
-   public static S? operator --(S s) { return new S(); }   // CS0448
-}
-
-public struct T
-{
-// OK
-   public static T operator --(T t) { return new T(); }
-   public static T operator ++(T t) { return new T(); }
-
-   public static T? operator --(T? t) { return new T(); }
-   public static T? operator ++(T? t) { return new T(); }
-
-   public static void Main() {}
-}
-```
-
-## CS0552
-
-You can't create a user-defined conversion to or from an interface. If you need the conversion routine, resolve this error by making the interface a class or derive a class from the interface.
-
-The following sample generates CS0552:
+**CS0552 example - Can't convert to/from interface:**
 
 ```csharp
 // CS0552.cs
@@ -424,13 +529,7 @@ public class a
 }
 ```
 
-## CS0553
-
-'conversion routine' : user defined conversion to/from base class
-
-User-defined conversions to values of a base class are not allowed; you don't need such an operator.
-
-The following sample generates CS0553:
+**CS0553 example - Can't convert to/from base class:**
 
 ```csharp
 // CS0553.cs
@@ -455,15 +554,7 @@ namespace x
 }
 ```
 
-## CS0554
-
-'conversion routine' : user defined conversion to/from derived class
-
-User-defined conversions to values of a derived class are not allowed; you don't need such an operator.
-
-See chapter 6 in the C# language specification for more information on user-defined conversions.
-
-The following sample generates CS0554:
+**CS0554 example - Can't convert to/from derived class:**
 
 ```csharp
 // CS0554.cs
@@ -487,13 +578,7 @@ namespace x
 }
 ```
 
-## CS0555
-
-User-defined operator cannot take an object of the enclosing type and convert to an object of the enclosing type
-
-User-defined conversions to values of the enclosing class are not allowed; you don't need such an operator.
-
-The following sample generates CS0555:
+**CS0555 example - Can't convert from type to same type:**
 
 ```csharp
 // CS0555.cs
@@ -511,13 +596,7 @@ public class MyClass
 }
 ```
 
-## CS0556
-
-User-defined conversion must convert to or from the enclosing type
-
-A user-defined conversion routine must convert to or from the class that contains the routine.
-
-The following sample generates CS0556:
+**CS0556 example - Must convert to/from enclosing type:**
 
 ```csharp
 // CS0556.cs
@@ -542,13 +621,7 @@ namespace x
 }
 ```
 
-## CS0557
-
-Duplicate user-defined conversion in type
-
-Duplicate conversion routines are not allowed in a class.
-
-The following example generates CS0557:
+**CS0557 example - Duplicate conversion:**
 
 ```csharp
 // CS0557.cs
@@ -577,13 +650,31 @@ namespace x
 }
 ```
 
-## CS0558
+To fix these errors, remove invalid conversion operators or restructure your type hierarchy to avoid the restricted conversion patterns.
 
-User-defined operator must be declared static and public
+## Checked operators
 
-Both the **static** and **public** access [modifiers](../keywords/index.md) must be specified on user-defined operators.
+- **CS9023**: *Operator can't be made checked*
+- **CS9024**: *Operator can't be made unchecked*
+- **CS9025**: *Checked operator requires a matching non-checked version to also be declared*
 
-The following sample generates CS0558:
+These errors occur when you incorrectly use the `checked` or `unchecked` keywords with operator declarations. Not all operators support checked/unchecked variants, and when they do, certain requirements must be met. For more information, see [Arithmetic operators](../operators/arithmetic-operators.md#user-defined-checked-operators) and [User-defined checked operators](~/_csharpstandard/standard/expressions.md#1249-user-defined-checked-operators).
+
+To fix these errors, either remove the `checked` or `unchecked` keyword from operators that don't support it, or ensure you provide both checked and non-checked versions when required.
+
+## Operator declaration requirements
+
+- **CS0558**: *User-defined operator must be declared static and public*
+- **CS0715**: *Static classes can't contain user-defined operators*
+- **CS1037**: *Overloadable operator expected*
+- **CS1553**: *Declaration isn't valid; use 'modifier operator <dest-type> (...' instead*
+- **CS8930**: *Explicit implementation of a user-defined operator must be static*
+- **CS8931**: *Explicit implementation must be declared public to implement interface member in type*
+- **CS9308**: *User-defined operator must be declared public*
+
+These errors occur when operator declarations don't use the required modifiers or syntax. User-defined operators must be both `static` and `public`, and conversion operators require specific syntax. For more information, see [Operator overloading](../operators/operator-overloading.md) and [User-defined conversion operators](../operators/user-defined-conversion-operators.md).
+
+**CS0558 example - Operator must be static and public:**
 
 ```csharp
 // CS0558.cs
@@ -606,222 +697,51 @@ namespace x
 }
 ```
 
-## CS0559
-
-The parameter type for ++ or -- operator must be the containing type
-
-The method declaration for an operator overload must follow certain guidelines. For the ++ and -- operators, it is required that the parameter be of the same type as the type in which the operator is being overloaded.
-
-### Example 1
-
-The following sample generates CS0559:
+**CS0715 example - Static classes can't have operators:**
 
 ```csharp
-// CS0559.cs
-// compile with: /target:library
-public class iii
+// CS0715.cs
+public static class C
 {
-   public static implicit operator int(iii x)
-   {
-      return 0;
-   }
-
-   public static implicit operator iii(int x)
-   {
-      return null;
-   }
-
-   public static int operator ++(int aa)   // CS0559
-   // try the following line instead
-   // public static iii operator ++(iii aa)
-   {
-      return (iii)0;
-   }
-}
-```
-
-### Example 2
-
-The following sample generates CS0559.
-
-```csharp
-// CS0559_b.cs
-// compile with: /target:library
-public struct S
-{
-   public static S operator ++(S? s) { return new S(); }   // CS0559
-   public static S operator --(S? s) { return new S(); }   // CS0559
-}
-
-public struct T
-{
-// OK
-   public static T operator --(T t) { return new T(); }
-   public static T operator ++(T t) { return new T(); }
-
-   public static T? operator --(T? t) { return new T(); }
-   public static T? operator ++(T? t) { return new T(); }
-}
-```
-
-## CS0562
-
-The parameter of a unary operator must be the containing type
-
-The method declaration for an operator overload must follow certain guidelines. For more information, see [Operator overloading](../operators/operator-overloading.md).
-
-The following sample generates CS0562:
-
-```csharp
-// CS0562.cs
-public class iii
-{
-    public static implicit operator int(iii x)
-    {
-        return 0;
-    }
-
-    public static implicit operator iii(int x)
-    {
-        return null;
-    }
-
-    public static iii operator +(int aa)   // CS0562
-    // try the following line instead
-    // public static iii operator +(iii aa)
-    {
-        return (iii)0;
-    }
-
-    public static void Main()
-    {
-    }
-}
-```
-
-## CS0563
-
-One of the parameters of a binary operator must be the containing type
-
-The method declaration for an [operator overload](../operators/operator-overloading.md) must follow certain guidelines.
-
-### Example
-
-The following sample generates CS0563:
-
-```csharp
-// CS0563.cs
-public class iii
-{
-    public static implicit operator int(iii x)
-    {
-        return 0;
-    }
-    public static implicit operator iii(int x)
-    {
-        return null;
-    }
-    public static int operator +(int aa, int bb)   // CS0563
-    // Use the following line instead:
-    // public static int operator +(int aa, iii bb)
-    {
-        return 0;
-    }
-    public static void Main()
-    {
-    }
-}
-```
-
-## CS0564
-
-The first operand of an overloaded shift operator must have the same type as the containing type, and the type of the second operand must be int
-
-You attempted to overload a shift operator (<< or >>) with incorrectly typed operands. The first operand must be the type and the second operand must be of the type `int`.
-
-The following sample generates CS0564:
-
-```csharp
-// CS0564.cs
-using System;
-class C
-{
-   public static int operator << (C c1, C c2) // CS0564
-// To correct, change second operand to int, like so:
-// public static int operator << (C c1, int c2)
-   {
-      return 0;
-   }
-   static void Main()
+   public static C operator+(C c)  // CS0715
    {
    }
-}
-```
 
-## CS0567
-
-Interfaces cannot contain operators
-
-Operators are not permitted in [interface](../keywords/interface.md) definitions.
-
-The following sample generates CS0567:
-
-```csharp
-// CS0567.cs
-interface IA
-{
-   int operator +(int aa, int bb);   // CS0567
-}
-
-class Sample
-{
    public static void Main()
    {
    }
 }
 ```
 
-## CS0590
-
-User-defined operators cannot return void
-
-The purpose of a user-defined operator is to return an object.
-
-The following sample generates CS0590:
+**CS1553 example - Conversion operator syntax:**
 
 ```csharp
-// CS0590.cs
-namespace x
+// CS1553.cs
+class MyClass
 {
-   public class a
+   public static int implicit operator (MyClass f)   // CS1553
+   // try the following line instead
+   // public static implicit operator int (MyClass f)
    {
-      public static void operator+(a A1, a A2)   // CS0590
-      {
-      }
+      return 6;
+   }
 
-      // try the following user-defined operator
-      /*
-      public static a operator+(a A1, a A2)
-      {
-         return A2;
-      }
-      */
-
-      public static int Main()
-      {
-         return 1;
-      }
+   public static void Main()
+   {
    }
 }
 ```
 
-## CS0660
+To fix these errors, ensure your operator declarations include the required `static` and `public` modifiers, follow the correct syntax for conversion operators, and don't declare operators in static classes.
 
-Type defines operator == or operator != but does not override Object.Equals(object o)
+## Equality operators
 
-The compiler detected the user-defined equality or inequality operator, but no override for the <xref:System.Object.Equals%2A?displayProperty=nameWithType> method. A user-defined equality or inequality operator implies that you also want to override the <xref:System.Object.Equals%2A> method. For more information, see [How to define value equality for a type](../../fundamentals/coding-style/how-to-define-value-equality-for-a-type.md).
+- **CS0660**: *Type defines operator == or operator != but doesn't override Object.Equals(object o)*
+- **CS0661**: *Type defines operator == or operator != but doesn't override Object.GetHashCode()*
 
-The following sample generates CS0660:
+These warnings occur when you define equality or inequality operators without also overriding the corresponding methods from <xref:System.Object>. When you define custom equality comparison, you should also override <xref:System.Object.Equals%2A?displayProperty=nameWithType> and <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType> to ensure consistent behavior. For more information, see [How to define value equality for a type](../../fundamentals/coding-style/how-to-define-value-equality-for-a-type.md) and [Equality operators](../operators/equality-operators.md).
+
+**CS0660 example - Missing Equals override:**
 
 ```csharp
 // CS0660.cs
@@ -850,13 +770,7 @@ class Test   // CS0660
 }
 ```
 
-## CS0661
-
-Type defines operator == or operator != but does not override Object.GetHashCode()
-
-The compiler detected the user-defined equality or inequality operator, but no override for the **GetHashCode** function. A user-defined equality or inequality operator implies that you also want to override the **GetHashCode** function.
-
-The following sample generates CS0661:
+**CS0661 example - Missing GetHashCode override:**
 
 ```csharp
 // CS0661.cs
@@ -890,79 +804,16 @@ class Test   // CS0661
 }
 ```
 
-## CS0715
+To fix these warnings, override both `Equals` and `GetHashCode` when you define custom equality operators.
 
-Static classes cannot contain user-defined operators
+## Interface and inheritance requirements
 
-User defined operators operate on instances of classes. Static classes cannot be instantiated, so it is not possible to create instances for operators to act upon. Hence, user defined operators are not allowed for static classes.
+- **CS9311**: *Type doesn't implement interface member. The type can't implement member because one of them isn't an operator*
+- **CS9312**: *Type can't override inherited member because one of them isn't an operator*
+- **CS9313**: *Overloaded compound assignment operator takes one parameter*
 
-The following sample generates CS0715:
+These errors occur when there are mismatches between operator declarations and interface implementations or inheritance relationships. Operators have specific rules for interface implementation and overriding. For more information, see [Operator overloading](../operators/operator-overloading.md) and [Interfaces](../fundamentals/types/interfaces.md).
 
-```csharp
-// CS0715.cs
-public static class C
-{
-   public static C operator+(C c)  // CS0715
-   {
-   }
+To fix these errors, ensure that operator declarations correctly match interface requirements and follow the rules for operator overriding and compound assignment operators.
 
-   public static void Main()
-   {
-   }
-}
-```
-
-## CS1037
-
-Overloadable operator expected
-
-## CS1553
-
-Declaration is not valid; use 'modifier operator \<dest-type> (...' instead
-
-The return type for a [conversion operator](../operators/user-defined-conversion-operators.md) must immediately precede the parameter list, and *modifier* is either `implicit` or `explicit`.
-
-The following sample generates CS1553:
-
-```csharp
-// CS1553.cs
-class MyClass
-{
-   public static int implicit operator (MyClass f)   // CS1553
-   // try the following line instead
-   // public static implicit operator int (MyClass f)
-   {
-      return 6;
-   }
-
-   public static void Main()
-   {
-   }
-}
-```
-
-## CS1554
-
-Declaration is not valid; use '\<type> operator op (...' instead
-
-The return type of an [overloaded operator](../operators/operator-overloading.md) must appear before the `operator` keyword.
-
-The following sample generates CS1554:
-
-```csharp
-// CS1554.cs
-class MyClass
-{
-   public static operator ++ MyClass (MyClass f)    // CS1554
-   // try the following line instead
-   // public static MyClass operator ++ (MyClass f)
-   {
-      return new MyClass ();
-   }
-
-   public static void Main()
-   {
-   }
-}
-```
 

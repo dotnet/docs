@@ -22,7 +22,7 @@ type [accessibility-modifier] typename =
 ```
 
 > [!NOTE]
-> The `accessibility modifier` before the `typename` is `public` by default, and affects the entire type visibility. The second `accessibility modifier` only affects both constructor and fields.
+> The `accessibility modifier` before the `typename` affects the visibility of the entire type, and is `public` by default. The second `accessibility modifier` only affects the constructor and fields.
 
 ## Remarks
 
@@ -193,7 +193,7 @@ type internal internalRecd = { X: int }
 type recdWithInternalCtor = private { Y: int }
 ```
 
-In the `Test1.fs` file, the internal record must be initialized with the `internal` access modifier, that's because the protection level of the variable and the record must match, and both must belong to the same assembly.
+In the `Test1.fs` file, the internal record must be initialized with the `internal` access modifier, that's because the protection level of the value and the record must match, and both must belong to the same assembly.
 
 ```fsharp
 // Test1.fs

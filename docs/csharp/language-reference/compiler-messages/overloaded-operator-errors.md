@@ -215,7 +215,7 @@ To fix these errors, ensure your operator declarations include the required `sta
 - **CS0056**: *Inconsistent accessibility: return type 'type' is less accessible than operator 'operator'.*
 - **CS0057**: *Inconsistent accessibility: parameter type 'type' is less accessible than operator 'operator'.*
 
-These errors occur when you declare a public operator with return types or parameter types that have more restrictive accessibility than the operator itself. All public constructs must use publicly accessible types for their parameters and return values. For more information, see [Access Modifiers](../programming-guide/classes-and-structs/access-modifiers.md).
+These errors occur when you declare a public operator with return types or parameter types that have more restrictive accessibility than the operator itself. All public constructs must use publicly accessible types for their parameters and return values. For more information, see [Access Modifiers](../../programming-guide/classes-and-structs/access-modifiers.md).
 
 The following code snippets demonstrate these errors:
 
@@ -237,7 +237,7 @@ To fix these errors, make sure all types used in public operator declarations ar
 
 ## User-defined conversion restrictions
 
-- **CS0552**: *User-defined conversion to/from interface.* 
+- **CS0552**: *User-defined conversion to/from interface.*
 - **CS0553**: *User-defined conversion to/from base class.*
 - **CS0554**: *User-defined conversion to/from derived class.*
 - **CS0555**: *User-defined operator can't take an object of the enclosing type and convert to an object of the enclosing type.*
@@ -344,7 +344,7 @@ To fix these errors, ensure you define required paired operators and follow the 
 - **CS9024**: *Operator can't be made unchecked*
 - **CS9025**: *Checked operator requires a matching non-checked version to also be declared*
 
-These errors occur when you incorrectly use the `checked` or `unchecked` keywords with operator declarations. Not all operators support checked/unchecked variants, and when they do, certain requirements must be met. For more information, see [Arithmetic operators](../operators/arithmetic-operators.md#user-defined-checked-operators) and [User-defined checked operators](~/_csharpstandard/standard/expressions.md#1249-user-defined-checked-operators).
+These errors occur when you incorrectly use the `checked` or `unchecked` keywords with operator declarations. Not all operators support checked/unchecked variants, and when they do, certain requirements must be met. For more information, see [Arithmetic operators](../operators/arithmetic-operators.md#user-defined-checked-operators) and [User-defined checked operators](~/_csharplang/proposals/csharp-11.0/checked-user-defined-operators.md).
 
 To fix these errors, either remove the `checked` or `unchecked` keyword from operators that don't support it, or ensure you provide both checked and non-checked versions when required.
 
@@ -354,7 +354,7 @@ To fix these errors, either remove the `checked` or `unchecked` keyword from ope
 - **CS9312**: *Type can't override inherited member because one of them isn't an operator*
 - **CS9313**: *Overloaded compound assignment operator takes one parameter*
 
-These errors occur when there are mismatches between operator declarations and interface implementations or inheritance relationships. Operators have specific rules for interface implementation and overriding. For more information, see [Operator overloading](../operators/operator-overloading.md) and [Interfaces](../fundamentals/types/interfaces.md).
+These errors occur when there are mismatches between operator declarations and interface implementations or inheritance relationships. Operators have specific rules for interface implementation and overriding. For more information, see [Operator overloading](../operators/operator-overloading.md) and [Interfaces](../../fundamentals/types/interfaces.md).
 
 To fix these errors, ensure that operator declarations correctly match interface requirements and follow the rules for operator overriding and compound assignment operators.
 
@@ -363,6 +363,6 @@ To fix these errors, ensure that operator declarations correctly match interface
 - **CS0660**: *Type defines operator == or operator != but doesn't override Object.Equals(object o)*
 - **CS0661**: *Type defines operator == or operator != but doesn't override Object.GetHashCode()*
 
-These warnings occur when you define equality or inequality operators without also overriding the corresponding methods from <xref:System.Object>. When you define custom equality comparison, you should also override <xref:System.Object.Equals%2A?displayProperty=nameWithType> and <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType> to ensure consistent behavior. For more information, see [How to define value equality for a type](../../fundamentals/coding-style/how-to-define-value-equality-for-a-type.md) and [Equality operators](../operators/equality-operators.md).
+These warnings occur when you define equality or inequality operators without also overriding the corresponding methods from <xref:System.Object>. When you define custom equality comparison, you should also override <xref:System.Object.Equals%2A?displayProperty=nameWithType> and <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType> to ensure consistent behavior. For more information, see [How to define value equality for a type](../../programming-guide/statements-expressions-operators/how-to-define-value-equality-for-a-type.md) and [Equality operators](../operators/equality-operators.md).
 
 To fix these warnings, override both `Equals` and `GetHashCode` when you define custom equality operators.

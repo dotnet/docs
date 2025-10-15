@@ -142,13 +142,13 @@ For more information, see [Operator overloading](../operators/operator-overloadi
 ```csharp
 class C1
 {
-    public static int operator ++(C1 c) => null;   // CS0448
-    public static C1 operator --(C1 c) ==> null;   // OK
+    public static int operator ++(C1 c) => 0;   // CS0448
+    public static C1 operator --(C1 c) => null;   // OK
 }
 public class C2
 {
-    public static implicit operator int(C2 x)=> 0;
-    public static implicit operator C2(int x) => null;
+    public static implicit operator int(C2 x) => 0;
+    public static implicit operator C2(int x) => new C2();
     public static int operator ++(int aa) => 0;  // CS0559
 }
 public class C3
@@ -165,9 +165,9 @@ public class C4
 }
 class C5
 {
- // To correct, change second operand to int, like so:
- // public static int operator << (C c1, int c2)
-    public static int operator << (C5 c1, C5 c2) => 0; // CS0564
+    // To correct, change second operand to int, like so:
+    // public static int operator << (C c1, int c2)
+    public static int operator <<(C5 c1, C5 c2) => 0; // CS0564
 }
 interface IA
 {
@@ -175,7 +175,7 @@ interface IA
 }
 public class C6
 {
-    public static void operator+(C6 A1, C6 A2) {}  // CS0590
+    public static void operator +(C6 A1, C6 A2) { }  // CS0590
 }
 ```
 
@@ -196,14 +196,11 @@ These errors occur when operator declarations don't use the required modifiers o
 ```csharp
 public class C
 {
-    public class N
-    {
-        static implicit operator int(N aa) => 0;   // CS0558, add public
-    }
+    static implicit operator int(C aa) => 0;   // CS0558, add public
 }
 public static class C1
 {
-    public static C1 operator+(C1 c) {}  // CS0715
+    public static int operator +(C1 c) => 0;  // CS0715
 }
 class C2
 {
@@ -232,7 +229,7 @@ public class C2
 
 public class C3
 {
-    public static implicit operator C3(C c) => new B();   // CS0057
+    public static implicit operator C3(C c) => new C3();   // CS0057
 }
 ```
 
@@ -255,7 +252,7 @@ public interface I
 }
 public class C
 {
-    public static implicit operator I(a aa) => default;// CS0552
+    public static implicit operator I(C aa) => default;// CS0552
 }
 
 public class B
@@ -263,15 +260,15 @@ public class B
 }
 public class D : B
 {
-   public static implicit operator B(D aa) => new B();// CS0553
+    public static implicit operator B(D aa) => new B();// CS0553
 }
 
 public class B2
 {
-  // delete the conversion routine to resolve CS0554
-  public static implicit operator B2(D2 d) => new B2();// CS0554
+    // delete the conversion routine to resolve CS0554
+    public static implicit operator B2(D2 d) => new B2();// CS0554
 }
-public class D2 : B2 {}
+public class D2 : B2 { }
 
 public class C2
 {
@@ -285,10 +282,10 @@ public class C3
 
 public class C4
 {
-    public static implicit operator int(C3 aa) => 0;
+    public static implicit operator int(C4 aa) => 0;
 
     // CS0557, delete duplicate
-    public static explicit operator int(C3 aa) => 0;
+    public static explicit operator int(C4 aa) => 0;
 }
 ```
 
@@ -306,30 +303,30 @@ These errors occur when you define logical operators incorrectly. Certain operat
 ```csharp
 class C
 {
-   public static int operator true (C c) => true;   // CS0215
-   public static int operator false (C c) => false; // CS0215
+    public static int operator true(C c) => 0;   // CS0215
+    public static int operator false(C c) => 0; // CS0215
 }
 
 class C2
 {
-   public static bool operator == (C2 left, C2 right) => left.Equals(right);   // CS0216
+    public static bool operator ==(C2 left, C2 right) => left.Equals(right);   // CS0216
 
-   public override bool Equals (object o) => base.Equals(o);
-   public override int GetHashCode() => base.GetHashCode();
+    public override bool Equals(object? o) => base.Equals(o);
+    public override int GetHashCode() => base.GetHashCode();
 }
 
 public class C3
 {
-   public static bool operator true (C3 f) => false;
-   public static bool operator false (C3 f) => true;
-   public static implicit operator int(C3 x) => 0;
-   public static int operator & (C3 f1, C3 f2) => new C3();  // CS0217
+    public static bool operator true(C3 f) => false;
+    public static bool operator false(C3 f) => true;
+    public static implicit operator int(C3 x) => 0;
+    public static int operator &(C3 f1, C3 f2) => new C3();  // CS0217
 }
 
 public class C4
 {
     public static implicit operator int(C4 x) => 0;
-    public static C4 operator & (C4 f1, C4 f2) => new C4();
+    public static C4 operator &(C4 f1, C4 f2) => new C4();
 
     public static void Main()
     {

@@ -21,8 +21,7 @@ type [accessibility-modifier] typename =
     [ member-list ]
 ```
 
-> [!NOTE]
-> The `accessibility modifier` before the `typename` affects the visibility of the entire type, and is `public` by default. The second `accessibility modifier` only affects the constructor and fields.
+The `accessibility modifier` before the `typename` affects the visibility of the entire type, and is `public` by default. The second `accessibility modifier` only affects the constructor and fields.
 
 ## Remarks
 

@@ -190,7 +190,7 @@ module Module1
 
 type internal internalRecd = { X: int }
 
-type recdWithInternalCtor = private { Y: int; }
+type recdWithInternalCtor = private { Y: int }
 ```
 
 In the `Test1.fs` file, the internal record must be initialized with the `internal` access modifier, that's because the protection level of the variable and the record must match, and both must belong to the same assembly.

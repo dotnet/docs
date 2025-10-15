@@ -34,8 +34,9 @@ printfn $"I think {3.0 + 0.14} is close to {System.Math.PI}!"
 
 The contents in between each `{}` brace pair can be any F# expression.
 
-For non-typed interpolated strings (without format specifiers), the expression is converted to a string using the `ToString()` method. If the expression evaluates to `null`, an empty string is used. For typed interpolated strings with format specifiers (such as `%s{expr}` or `%d{expr}`), the conversion follows the rules defined for that specific format specifier.
+For non-typed interpolated strings (without format specifiers), the expression is converted to a string using the `ToString()` method. If the expression evaluates to `null`, an empty string is used.
 
+For typed interpolated strings with format specifiers (such as `%s{expr}` or `%d{expr}`), the conversion follows the rules defined for that specific format specifier.
 To escape a `{}` brace pair, write two of them like so:
 
 ```fsharp

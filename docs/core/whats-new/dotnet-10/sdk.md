@@ -115,13 +115,13 @@ The output provides a structured, machine-readable description of the command's 
 
 MSBuild is the underlying build system for .NET, driving both build of projects (as seen in commands like `dotnet build` and `dotnet pack`), as well as acting as a general provider of information about projects (as seen in commands like `dotnet list package`, and implicitly used by commands like `dotnet run` to discover how a project wants to be executed).
 
-When running `dotnet` CLI commands, the version of MSBuild that is used is the one that is shipped with the .NET SDK. However, when using Visual Studio or invoking MSBuild directly, the version of MSBuild that is used is the one that is installed with Visual Studio. This has a few important differences, the _most_ important of which is that MSBuild running in Visual Studio (or through `msbuild.exe`) is a .NET Framework application, while MSBuild running in the `dotnet` CLI is a .NET application. This means that any MSBuild tasks that are written to run on .NET cannot be used when building in Visual Studio or when using `msbuild.exe`.
+When running `dotnet` CLI commands, the version of MSBuild that is used is the one that is shipped with the .NET SDK. However, when using Visual Studio or invoking MSBuild directly, the version of MSBuild that is used is the one that is installed with Visual Studio. This environment difference has a few important consequences. The most important is that MSBuild running in Visual Studio (or through `msbuild.exe`) is a .NET Framework application, while MSBuild running in the `dotnet` CLI is a .NET application. This means that any MSBuild tasks that are written to run on .NET cannot be used when building in Visual Studio or when using `msbuild.exe`.
 
 Starting with .NET 10, `msbuild.exe` and Visual Studio 2026 can run MSBuild tasks that are built for .NET. This means that you can now use the same MSBuild tasks when building in Visual Studio or using `msbuild.exe` as you do when building with the `dotnet` CLI. For most .NET users, this won't change anything, but for authors of custom MSBuild tasks, this means that you can now write your tasks to target .NET and have them work everywhere. The goal with this change is to make it easier to write and share MSBuild tasks, and to allow task authors to take advantage of the latest features in .NET—in addition to reducing the difficulties around multi-targeting tasks to support both .NET Framework and .NET, and dealing with versions of .NET Framework dependencies that are implicitly available in the MSBuild .NET Framework execution space.
 
 ### Configure .NET Tasks
 
-For Task Authors, opting in to this new behavior should be pretty simple—all it should take is changing your `UsingTask` declaration to tell MSBuild about your Task.
+For task authors, opting in to this new behavior should be pretty simple—all it should take is changing your `UsingTask` declaration to tell MSBuild about your task.
 
 ```xml
 <UsingTask TaskName="MyTask"

@@ -10,6 +10,22 @@ The process enricher augments telemetry logs with process-specific information.
 
 You can register the enrichers in an IoC container. Then, all registered enrichers are picked up automatically by the respective telemetry instances, such as logs or metrics, where they enrich the telemetry information.
 
+## Install the package
+
+To get started, install the [📦 Microsoft.Extensions.Telemetry](https://www.nuget.org/packages/Microsoft.Extensions.Telemetry) NuGet package:
+
+### [.NET CLI](#tab/dotnet-cli)
+
+```dotnetcli
+dotnet add package Microsoft.Extensions.Telemetry
+```
+
+Or, if you're using .NET 10+ SDK:
+
+```dotnetcli
+dotnet package add Microsoft.Extensions.Telemetry
+```
+
 ## Usage
 
 To be able to use the process log enricher, first you need to enable enrichment. Then you can add the <xref:Microsoft.Extensions.DependencyInjection.ProcessEnricherServiceCollectionExtensions.AddProcessLogEnricher*> with default properties, like this:

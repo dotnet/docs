@@ -21,6 +21,9 @@ type [accessibility-modifier] typename =
     [ member-list ]
 ```
 
+> [!NOTE]
+> The `accessibility modifier` before the `typename` is `public` by default, and affects the entire type visibility. The second `accessibility modifier` only affects both constructor and fields.
+
 ## Remarks
 
 In the previous syntax, *typename* is the name of the record type, *label1* and *label2* are names of values, referred to as *labels*, and *type1* and *type2* are the types of these values. *member-list* is the optional list of members for the type.  You can use the `[<Struct>]` attribute to create a struct record rather than a record which is a reference type.
@@ -176,43 +179,44 @@ let p = { Name = "a"; Age = 12; Address = "abc123" }
 let weirdString = p.WeirdToString()
 ```
 
-## Accessibility Modifiers on Constructors
+## Accessibility Modifiers on Records
 
-You can modify the accessibility of the respective properties of the record's constructor, which affects how they are accessed from outside the module. The following code example illustrates this.
+The following code illustrates the use of accessibility modifiers. There are three files in the project: `Module1.fs`, `Test1.fs`, and `Test2.fs`. An internal record type and a record type with a private constructor are defined in Module1.
 
 ```fsharp
-module Person =
+// Module1.fs
 
-    type Person =
-        private {
-            Name: string
-            Age: int
-            Address: string
-        }
-    
-    let createPerson name age address =
-        { Name = name; Age = age; Address = address }
-    
-    let getPersonInfo (person: Person) =
-        $"- Name: {person.Name}\n- Age: {person.Age}\n- Address: {person.Address}"
+module Module1
 
-module Main =
-    open Person
+type internal internalRecd = { X: int }
 
-    let person = createPerson "Phillip" 12 "123 happy fun street"
-
-    // Outside the 'Person' module, this line will cause a compiler error.
-    // let personName = person.Name 
-    
-    printfn "%s" (getPersonInfo person)
+type recdWithInternalCtor = private { Y: int; }
 ```
 
-The output of this code is as follows:
+In the `Test1.fs` file, the internal record must be initialized with the `internal` access modifier, that's because the protection level of the variable and the record must match, and both must belong to the same assembly.
 
-```console
-- Name: Phillip
-- Age: 12
-- Address: 123 happy fun street
+```fsharp
+// Test1.fs
+
+module Test1
+
+open Module1
+
+let myInternalRecd1 = { X = 2 } // This line will cause a compiler error.
+
+let internal myInternalRecd2 = { X = 4 } // This is OK
+```
+
+In the `Test2.fs` file, the record with the private constructor cannot be initialized directly due the protection level of the constructor.
+
+```fsharp
+// Test2.fs
+
+module Test2
+
+open Module1
+
+let myRecdWithInternalCtor = { Y = 6 } // This line will cause a compiler error.
 ```
 
 For more information about accessibility modifiers, see the [Access Control](./access-control.md) article.

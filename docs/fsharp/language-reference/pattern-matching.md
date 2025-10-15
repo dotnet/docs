@@ -184,7 +184,7 @@ The following code shows some additional uses of the wildcard pattern:
 
 ## Patterns That Have Type Annotations
 
-Patterns can have type annotations. These behave like other type annotations and guide inference like other type annotations. Parentheses are required around type annotations in patterns. 
+Patterns can have type annotations. These behave like other type annotations and guide inference like other type annotations. Parentheses are required around type annotations in patterns.
 
 A pattern with a type annotation uses the syntax `pattern : type` and provides **compile-time type information** to the type checker. This is purely a static type annotation that helps with type inference - it doesn't perform any runtime type checking or conversion. The compiler uses this information during compilation to determine the type of the pattern variable.
 
@@ -195,10 +195,11 @@ The following code shows a pattern that has a type annotation:
 In this example, `(var1 : int)` tells the compiler that `var1` is of type `int`. This is resolved at compile time, and the generated code treats `var1` as an integer throughout the match expression. This pattern will match any integer value and bind it to `var1`.
 
 **Key characteristics:**
-- Uses the syntax `pattern : type` (with a single colon)
-- Resolved at **compile time** - provides type information to the type checker
-- Does not perform runtime type testing
-- Used for type inference and to guide the compiler
+
+- Uses the syntax `pattern : type` (with a single colon).
+- Resolved at **compile time** - provides type information to the type checker.
+- Does not perform runtime type testing.
+- Used for type inference and to guide the compiler.
 
 ## Type Test Pattern
 
@@ -225,11 +226,12 @@ let m (a: A) =
 ```
 
 **Key characteristics:**
-- Uses the syntax `:? type` or `:? type as identifier` (with a question mark)
-- Resolved at **runtime** - performs actual type checking during execution
-- Tests if a value is an instance of a specific type or its derived types
-- Commonly used with inheritance hierarchies and polymorphic types
-- Similar to C#'s `is` operator or `as` operator
+
+- Uses the syntax `:? type` or `:? type as identifier` (with a question mark).
+- Resolved at **runtime** - performs actual type checking during execution.
+- Tests if a value is an instance of a specific type or its derived types.
+- Commonly used with inheritance hierarchies and polymorphic types.
+- Similar to C#'s `is` operator or `as` operator.
 
 ### Contrasting Type Annotations and Type Test Patterns
 
@@ -243,7 +245,7 @@ While both patterns involve types, they serve very different purposes:
 | **Use case** | Helping the compiler understand types | Checking runtime types in inheritance hierarchies |
 | **Equivalent in C#** | Type annotations in switch patterns | `is` or `as` operators |
 
-**Example showing the difference:**
+The following example demonstrates the differences:
 
 ```fsharp
 // Type annotation pattern - compile time

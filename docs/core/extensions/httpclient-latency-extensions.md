@@ -111,105 +111,6 @@ Timestamps are recorded for key stages of the HTTP request lifecycle:
 
 ## Usage example
 
-### HTTP client logs enrichment and redaction
-
-These components enable enriching and redacting `HttpClient` request logs. They remove built-in HTTP client logging.
-
-When using this package, some of the log properties are redacted by default (like full routes), which means that you will need to make sure that a redactor provider is registered in the Dependency Injection container. You can do this by making sure that you call `builder.Services.AddRedaction()`, which requires a reference to the `Microsoft.Extensions.Compliance.Redaction` package.
-
-```csharp
-public static IServiceCollection AddExtendedHttpClientLogging(this IServiceCollection services)
-public static IServiceCollection AddExtendedHttpClientLogging(this IServiceCollection services, IConfigurationSection section)
-public static IServiceCollection AddExtendedHttpClientLogging(this IServiceCollection services, Action<LoggingOptions> configure)
-public static IServiceCollection AddHttpClientLogEnricher<T>(this IServiceCollection services) where T : class, IHttpClientLogEnricher
-```
-
-For example:
-
-```csharp
-var builder = Host.CreateApplicationBuilder(args);
-
-// Register IHttpClientFactory:
-builder.Services.AddHttpClient();
-
-// Register redaction services:
-builder.Services.AddRedaction();
-
-// Register HttpClient logging enrichment & redaction services:
-builder.Services.AddExtendedHttpClientLogging();
-
-// Register a logging enricher (the type should implement IHttpClientLogEnricher):
-builder.Services.AddHttpClientLogEnricher<MyHttpClientLogEnricher>();
-
-var host = builder.Build();
-```
-
-<xref:Microsoft.Extensions.DependencyInjection.HttpClientLoggingHttpClientBuilderExtensions.AddExtendedHttpClientLogging(Microsoft.Extensions.DependencyInjection.IHttpClientBuilder)> adds information to the logs using *enrichment*. This means that the information is added as tags to the structured logs but **isn't visible** in the log message that's printed by default in the console. To view the information, you need to use a logging provider that supports structured logs. One quick and built-in way to do this is to call `AddJsonConsole()` to your logging builder, which will print out the full structured logs to the console. Here's an example that uses the `ExtendedHttpClientLogging()` method to automatically log all `HttpClient` request and response bodies, and then prints the full structured logs to the console:
-
-```csharp
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-
-var services = new ServiceCollection();
-
-services.AddLogging(o => o.SetMinimumLevel(LogLevel.Trace).AddJsonConsole()); // <-- Enable structured logging to the console
-
-// Adding default redactor provider to the DI container. This is required when using the AddExtendedHttpClientLogging() method.
-services.AddRedaction();
-
-services.AddHttpClient("foo")
-    .AddExtendedHttpClientLogging(o =>
-    {
-        // Enable logging of request and response bodies:
-        o.LogBody = true;
-
-        // We also need to specify the content types that we want to log:
-        o.ResponseBodyContentTypes.Add("application/json");
-    });
-
-var sp = services.BuildServiceProvider();
-
-var client = sp.GetRequiredService<IHttpClientFactory>().CreateClient("foo");
-
-var response = await client.GetAsync(new Uri("https://httpbin.org/json")).ConfigureAwait(false);
-```
-
-By default, request and response routes are redacted for privacy reasons. You can change this behavior by using the `RequestPathParameterRedactionMode` option like so:
-
-```csharp
-  .AddExtendedHttpClientLogging(o =>
-{
-    //.. Other options
-
-    o.RequestPathParameterRedactionMode = HttpRouteParameterRedactionMode.None; // <-- Disable redaction of request/response routes
-});
-```
-
-You can also use the following extension methods to apply the logging to the specific `IHttpClientBuilder`:
-
-```csharp
-public static IHttpClientBuilder AddExtendedHttpClientLogging(this IHttpClientBuilder builder)
-public static IHttpClientBuilder AddExtendedHttpClientLogging(this IHttpClientBuilder builder, IConfigurationSection section)
-public static IHttpClientBuilder AddExtendedHttpClientLogging(this IHttpClientBuilder builder, Action<LoggingOptions> configure)
-```
-
-For example:
-
-```csharp
-var builder = Host.CreateApplicationBuilder(args);
-
-// Register redaction services:
-builder.Services.AddRedaction();
-
-// Register named HttpClient:
-var httpClientBuilder = builder.Services.AddHttpClient("MyNamedClient");
-
-// Configure named HttpClient to use logging enrichment & redaction:
-httpClientBuilder.AddExtendedHttpClientLogging();
-
-var host = builder.Build();
-```
-
 ### Track HTTP request client latency
 
 These components enable tracking and reporting the latency of HTTP client request processing.
@@ -236,11 +137,11 @@ builder.Services.AddRedaction();
 // Register latency context services:
 builder.Services.AddLatencyContext();
 
-// Register HttpClient logging enrichment & redaction services:
-builder.Services.AddExtendedHttpClientLogging();
-
 // Register HttpClient latency telemetry services:
 builder.Services.AddHttpClientLatencyTelemetry();
+
+// Register HttpClient logging enrichment & redaction services:
+builder.Services.AddExtendedHttpClientLogging();
 
 var host = builder.Build();
 ```

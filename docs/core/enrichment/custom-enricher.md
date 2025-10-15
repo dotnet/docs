@@ -26,18 +26,27 @@ Or, if you're using .NET 10+ SDK:
 dotnet package add Microsoft.Extensions.Telemetry.Abstractions 
 ```
 
+### [PackageReference](#tab/package-reference)
+
+```xml
+<PackageReference Include=" Microsoft.Extensions.Telemetry.Abstractions"
+			      Version="*" />" <!-- Adjust version -->
+```
+
+---
+
 ## Implementation
 
 Your custom enricher only needs to implement a single <xref:Microsoft.Extensions.Diagnostics.Enrichment.ILogEnricher.Enrich(Microsoft.Extensions.Diagnostics.Enrichment.IEnrichmentTagCollector)> method.
 During enrichment, this method is called and given an <xref:Microsoft.Extensions.Diagnostics.Enrichment.IEnrichmentTagCollector> instance. The enricher then calls one of the overloads of
 the <xref:Microsoft.Extensions.Diagnostics.Enrichment.IEnrichmentTagCollector.Add(System.String,System.Object)> method to record any properties it wants.
 
-> [!Note]
+> [!NOTE]
 > If your custom log enricher calls <xref:Microsoft.Extensions.Diagnostics.Enrichment.IEnrichmentTagCollector.Add(System.String,System.Object)>,
 > it is acceptable to send any type of argument to the `value` parameter as is, because it is parsed into the actual type and serialized internally
 > to be sent further down the logging pipeline.
 
-```cs
+```csharp
 public class CustomEnricher : ILogEnricher
 {
     // Your custom code
@@ -63,9 +72,8 @@ var hostBuilder = new HostBuilder()
 
 It's also possible to configure manual instantiation of custom enrichers:
 
-```cs
-public class AnotherEnricher : ILogEnricher() {}
-
+```csharp
+public class AnotherEnricher : ILogEnricher() { }
 ...
 
 var hostBuilder = new HostBuilder()
@@ -77,14 +85,14 @@ var hostBuilder = new HostBuilder()
 
 Alternatively:
 
-```cs
+```csharp
 var hostApplicationBuilder = WebApplication.CreateBuilder();
 hostApplicationBuilder.Services.AddLogEnricher<CustomEnricher>();
 ```
 
 and
 
-```cs
+```csharp
 var hostApplicationBuilder = WebApplication.CreateBuilder();
 hostApplicationBuilder.Services.AddLogEnricher(new AnotherEnricher()));
 ```

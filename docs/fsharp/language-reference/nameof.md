@@ -98,6 +98,7 @@ handleEvent "OrderCreated" "Order #123" // matches first case
 ```
 
 Using `nameof` instead of string literals like `"OrderCreated"` provides several benefits:
+
 - If you rename a discriminated union case, the pattern automatically updates.
 - The compiler prevents typos by ensuring the symbol exists.
 - Your code remains consistent during refactoring.

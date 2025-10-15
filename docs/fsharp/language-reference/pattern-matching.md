@@ -260,6 +260,7 @@ handleEvent "OrderShipped" "Order #123" // matches second case
 ```
 
 This approach is better than using string literals (like `"OrderCreated"`) because:
+
 - If you rename `OrderCreated` to `OrderPlaced`, the pattern automatically updates.
 - The compiler ensures that the symbol exists, preventing typos.
 - Your code remains consistent when refactoring.

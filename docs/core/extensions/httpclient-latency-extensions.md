@@ -96,12 +96,20 @@ Timestamps are recorded for key stages of the HTTP request lifecycle:
 
 #### Measures (platform dependent)
 
+Measures are numeric values captured during a request that quantify things your timestamp checkpoints alone
+don't show - like how long GC pauses stalled the thread or how often a brand-new connection had to be opened instead of
+reusing a pooled one. Use them when total latency is higher than the sum of visible phases, when investigating memory 
+pressure or connection churn, or when tuning pooling and allocation patterns.
+
 | Name                     | Description                                                             |
 |--------------------------|-------------------------------------------------------------------------|
 | Http.GCPauseTime         | Total GC pause duration overlapping the request.                        |
 | Http.ConnectionInitiated | Emitted when a new underlying connection (not pooled reuse) is created. |
 
 #### Tags
+
+Use tags to attach stable categorical dimensions to each request so you can segment, filter, and aggregate metrics and
+logs without reprocessing raw data. They carry classification (not duration) and remain low‑cardinality by design.
 
 | Tag          | Description                                                     |
 |--------------|-----------------------------------------------------------------|

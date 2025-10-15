@@ -132,7 +132,12 @@ The following sections provide examples of common issues and how to fix them.
 - **CS0590**: *User-defined operators can't return void.*
 - **CS9310**: *The return type for this operator must be void.*
 
-These errors occur when operator declarations don't follow the required signature rules. Each operator type has specific requirements for parameter types and return types. For more information, see [Operator overloading](../operators/operator-overloading.md). The following example demonstrates these errors:
+These errors occur when operator declarations don't follow the required signature rules. Each operator type has specific requirements for parameter types and return types.
+
+> [!IMPORTANT]
+> The signature requirements for static binary operators and the corresponding instance compound assignment operators are different. Make sure the signature matches the declaration you want.
+
+For more information, see [Operator overloading](../operators/operator-overloading.md). The following example demonstrates these errors:
 
 ```csharp
 class C1

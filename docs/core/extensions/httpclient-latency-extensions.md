@@ -98,7 +98,7 @@ Timestamps are recorded for key stages of the HTTP request lifecycle:
 
 Measures are numeric values captured during a request that quantify things your timestamp checkpoints alone
 don't show - like how long GC pauses stalled the thread or how often a brand-new connection had to be opened instead of
-reusing a pooled one. Use them when total latency is higher than the sum of visible phases, when investigating memory 
+reusing a pooled one. Use them when total latency is higher than the sum of visible phases, when investigating memory
 pressure or connection churn, or when tuning pooling and allocation patterns.
 
 | Name                     | Description                                                             |

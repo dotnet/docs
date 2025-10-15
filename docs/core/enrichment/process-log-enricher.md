@@ -34,19 +34,7 @@ To be able to use the process log enricher, first you need to enable enrichment.
 
 Given this code sample, the output should be like this:
 
-```console
-{
-  "EventId": 0,
-  "LogLevel": "Information",
-  "Category": "Enrichment.Program",
-  "Message": "This is a sample log message",
-  "State": {
-    "Message": "This is a sample log message",
-    "process.pid": "10696",
-    "{OriginalFormat}": "This is a sample log message"
-  }
-}   
-```
+:::code language="json" source="json-output.json" highlight="8":::
 
 ## `ProcessLogEnricherOptions`
 
@@ -81,20 +69,7 @@ serviceCollection.AddProcessLogEnricher(hostBuilder.Configuration.GetSection("Pr
 
 The console output after enabling both options should look like this:
 
-```console
-{
-  "EventId": 0,
-  "LogLevel": "Information",
-  "Category": "Enrichment.Program",
-  "Message": "This is a sample log message",
-  "State": {
-    "Message": "This is a sample log message",
-    "process.pid": "12924",
-    "thread.id": "2",
-    "{OriginalFormat}": "This is a sample log message"
-  }
-}
-```
+:::code language="json" source="json-output-all-enabled.json" highlight="8,9":::
 
 ## Default configuration
 

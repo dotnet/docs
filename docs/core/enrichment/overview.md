@@ -45,19 +45,7 @@ This configuration:
 
 With enrichment enabled, your log output will automatically include additional contextual information:
 
-```json
-{
-  "EventId": 0,
-  "LogLevel": "Information",
-  "Category": "Enrichment.Program",
-  "Message": "This is a sample log message",
-  "State": {
-    "Message": "This is a sample log message",
-    "process.pid": "10696",
-    "{OriginalFormat}": "This is a sample log message"
-  }
-}
-```
+:::code language="json" source="json-output.json" highlight="8":::
 
 ## Available enrichers
 

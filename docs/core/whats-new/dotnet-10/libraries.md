@@ -2,14 +2,14 @@
 title: What's new in .NET libraries for .NET 10
 description: Learn about the updates to the .NET libraries for .NET 10.
 titleSuffix: ""
-ms.date: 09/09/2025
+ms.date: 10/15/2025
 ai-usage: ai-assisted
 ms.update-cycle: 3650-days
 ---
 
 # What's new in .NET libraries for .NET 10
 
-This article describes new features in the .NET libraries for .NET 10. It's been updated for RC 1.
+This article describes new features in the .NET libraries for .NET 10. It's been updated for RC 2.
 
 ## Cryptography
 

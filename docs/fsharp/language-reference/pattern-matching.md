@@ -185,15 +185,30 @@ The following code shows some additional uses of the wildcard pattern:
 
 ## Patterns That Have Type Annotations
 
-Patterns can have type annotations. These behave like other type annotations and guide inference like other type annotations. Parentheses are required around type annotations in patterns. The following code shows a pattern that has a type annotation.
+Patterns can have type annotations. These behave like other type annotations and guide inference like other type annotations. Parentheses are required around type annotations in patterns.
+
+A pattern with a type annotation uses the syntax `pattern : type` and provides **compile-time type information** to the type checker. This is purely a static type annotation that helps with type inference - it doesn't perform any runtime type checking or conversion. The compiler uses this information during compilation to determine the type of the pattern variable.
+
+The following code shows a pattern that has a type annotation:
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet4815.fs)]
 
+In this example, `(var1 : int)` tells the compiler that `var1` is of type `int`. This is resolved at compile time, and the generated code treats `var1` as an integer throughout the match expression. This pattern will match any integer value and bind it to `var1`.
+
+**Key characteristics:**
+
+- Uses the syntax `pattern : type` (with a single colon).
+- Resolved at **compile time** - provides type information to the type checker.
+- Does not perform runtime type testing.
+- Used for type inference and to guide the compiler.
+
 ## Type Test Pattern
 
-The type test pattern is used to match the input against a type. If the input type is a match to (or a derived type of) the type specified in the pattern, the match succeeds.
+The type test pattern is used to match the input against a type **at runtime**. If the input type is a match to (or a derived type of) the type specified in the pattern, the match succeeds.
 
-The following example demonstrates the type test pattern.
+A type test pattern uses the syntax `:? type` and performs **runtime type checking**, similar to the `is` or `as` operators in C#. This pattern tests whether a value is of a specific type during program execution, making it useful when working with inheritance hierarchies or interface implementations.
+
+The following example demonstrates the type test pattern:
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet4816.fs)]
 
@@ -209,6 +224,49 @@ let m (a: A) =
     | :? B -> printfn "It's a B"
     | :? C -> printfn "It's a C"
     | _ -> ()
+```
+
+**Key characteristics:**
+
+- Uses the syntax `:? type` or `:? type as identifier` (with a question mark).
+- Resolved at **runtime** - performs actual type checking during execution.
+- Tests if a value is an instance of a specific type or its derived types.
+- Commonly used with inheritance hierarchies and polymorphic types.
+- Similar to C#'s `is` operator or `as` operator.
+
+### Contrasting Type Annotations and Type Test Patterns
+
+While both patterns involve types, they serve very different purposes:
+
+| Feature | Type Annotation Pattern (`pattern : type`) | Type Test Pattern (`:? type`) |
+|---------|-------------------------------------------|-------------------------------|
+| **Syntax** | Single colon: `a : int` | Colon with question mark: `:? Button` |
+| **When resolved** | Compile time | Runtime |
+| **Purpose** | Guides type inference | Tests actual type of value |
+| **Use case** | Helping the compiler understand types | Checking runtime types in inheritance hierarchies |
+| **Equivalent in C#** | Type annotations in switch patterns | `is` or `as` operators |
+
+The following example demonstrates the differences:
+
+```fsharp
+// Type annotation pattern - compile time
+let detect1 x =
+    match x with
+    | 1 -> printfn "Found a 1!"
+    | (var1 : int) -> printfn "%d" var1
+// The ': int' tells the compiler var1 is an int
+// Everything is resolved at compile time
+
+// Type test pattern - runtime
+type A() = class end
+type B() = inherit A()
+
+let test (a: A) =
+    match a with
+    | :? B -> printfn "Runtime check: it's a B"
+    | _ -> printfn "Runtime check: it's not a B"
+// The ':? B' performs a runtime type check
+// The actual type is tested during execution
 ```
 
 ## Null Pattern

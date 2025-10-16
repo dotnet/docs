@@ -18,8 +18,6 @@ There are no new security improvements in this release. This update is cumulativ
 
 ### Quality and reliability improvements
 
-This release contains the following quality and reliability improvements.
-
 #### ASP.NET
 
 Addressed an issue in ASP.NET where some error events fail to log properly in the Windows Event log. (*Applies to: .NET Framework 4.6.2, 4.7, 4.7.1, 4.7.2, 4.8, 4.8.1.*)
@@ -30,27 +28,27 @@ Addressed an update for GB18030 certificate for Chinese language changes. (*Appl
 
 ## Known issues
 
-This release contains no known issues.
+This release contains no known issues.  
 
 ## Summary tables
 
 | Product version | Cumulative update |
 | --- | --- |
 | **Windows 11, version 24H2** | |
-| .NET Framework 3.5, 4.8.1 | [5064401](https://support.microsoft.com/topic/august-28-2025-kb5064401-cumulative-update-for-net-framework-3-5-and-4-8-1-for-windows-11-version-24h2-and-microsoft-server-operating-system-version-24h2-71f4180b-3364-4d0e-8032-e8aca043b0fe) |
+| .NET Framework 3.5, 4.8.1 | [5064401](https://support.microsoft.com/kb/5064401) |
 | **Microsoft server operating system, version 24H2** | |
 | .NET Framework 3.5, 4.8.1 | [5064401](https://support.microsoft.com/kb/5064401) |
 | **Microsoft server operating system, version 23H2** | |
 | .NET Framework 3.5, 4.8.1 | [5065756](https://support.microsoft.com/kb/5065756) |
 | **Windows 11, version 22H2 and Windows 11, version 23H2** | |
 | .NET Framework 3.5, 4.8.1 | [5064403](https://support.microsoft.com/kb/5064403) |
-| **Microsoft server operating system, version 22H2** | **[5065962](https://support.microsoft.com/topic/september-9-2025-kb5065962-cumulative-update-for-net-framework-3-5-4-8-and-4-8-1-for-windows-server-2022-55389349-2511-4062-ba42-aa3434986582)** |
+| **Microsoft server operating system, version 22H2** | **[5065962](https://support.microsoft.com/kb/5065962)** |
 | .NET Framework 3.5, 4.8 | [5065748](https://support.microsoft.com/kb/5065748) |
 | .NET Framework 3.5, 4.8.1 | [5065753](https://support.microsoft.com/kb/5065753) |
 | **Microsoft server operating system, version 21H2** | **[5065962](https://support.microsoft.com/kb/5065962)** |
 | .NET Framework 3.5, 4.8 | [5065748](https://support.microsoft.com/kb/5065748) |
 | .NET Framework 3.5, 4.8.1 | [5065753](https://support.microsoft.com/kb/5065753) |
-| **Windows 10, version 22H2** | **[5065956](https://support.microsoft.com/kb/5065956)** |
+| **Windows 10, version 22H2** | **[5065957](https://support.microsoft.com/kb/5065957)** |
 | .NET Framework 3.5, 4.8 | [5064399](https://support.microsoft.com/kb/5064399) |
 | .NET Framework 3.5, 4.8.1 | [5064400](https://support.microsoft.com/kb/5064400) |
 | **Windows 10, version 21H2** | **[5065956](https://support.microsoft.com/kb/5065956)** |
@@ -59,6 +57,9 @@ This release contains no known issues.
 | **Windows 10 1809 and Windows Server 2019** | **[5065955](https://support.microsoft.com/kb/5065955)** |
 | .NET Framework 3.5, 4.7.2 | [5065744](https://support.microsoft.com/kb/5065744) |
 | .NET Framework 3.5, 4.8 | [5065755](https://support.microsoft.com/kb/5065755) |
+| **Windows 10 1607 and Windows Server 2016** | |
+| .NET Framework 3.5, 4.6.2, 4.7, 4.7.1, 4.7.2 | [5065427](https://support.microsoft.com/kb/5065427) |
+| .NET Framework 4.8 | [5065749](https://support.microsoft.com/kb/5065749) |
 
 The following table is for earlier Windows and Windows Server versions for Security and Quality Rollup updates.  
 
@@ -70,13 +71,13 @@ The following table is for earlier Windows and Windows Server versions for Secur
 | .NET Framework 4.8 | [5065752](https://support.microsoft.com/kb/5065752) |
 | **Windows Server 2012** | **[5065959](https://support.microsoft.com/kb/5065959)** |
 | .NET Framework 3.5 | [5044009](https://support.microsoft.com/kb/5044009) |
-| .NET Framework 4.6.2, 4.7, 4.7.1, 4.7.2 | [5065746](https://support.microsoft.com/kb/5065746)|
+| .NET Framework 4.6.2, 4.7, 4.7.1, 4.7.2 | [5065746](https://support.microsoft.com/kb/5065746) |
 | .NET Framework 4.8 | [5065751](https://support.microsoft.com/kb/5065751) |
 | **Windows Server 2008 R2** | **[5065958](https://support.microsoft.com/kb/5065958)** |
-| .NET Framework 3.5.1 | [5044011](https://support.microsoft/kb/5044011) |
+| .NET Framework 3.5.1 | [5044011](https://support.microsoft.com/kb/5044011) |
 | .NET Framework 4.6.2, 4.7, 4.7.1, 4.7.2 | [5065745](https://support.microsoft.com/kb/5065745) |
-| .NET Framework 4.8 | [5065750](https://support.microsoft.com/kb/5065750) |
-| **Windows Server 2008** | **[5065961](https://support.microsoft.com/kb/5065961)**|
+| .NET Framework 4.8 |[5065750](https://support.microsoft.com/kb/5065750) |
+| **Windows Server 2008** | **[5065961](https://support.microsoft.com/kb/5065961)** |
 | .NET Framework 2.0, 3.0 | [5044010](https://support.microsoft.com/kb/5044010) |
 | .NET Framework 3.5 SP1 | [5040673](https://support.microsoft.com/kb/5040673) |
 | .NET Framework 4.6.2 | [5065745](https://support.microsoft.com/kb/5065745) |

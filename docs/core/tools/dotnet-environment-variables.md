@@ -111,34 +111,6 @@ The same can be achieved via the environment variable `DOTNET_SYSTEM_NET_HTTP_US
 > [!NOTE]
 > Starting in .NET 5, this setting to use <xref:System.Net.Http.HttpClientHandler> is no longer available.
 
-### `DOTNET_Jit*` and `DOTNET_GC*`
-
-There are two stressing-related features for the JIT and JIT-generated GC information: JIT Stress and GC Hole Stress. These features provide a way during development to discover edge cases and more "real world" scenarios without having to develop complex applications. The following environment variables are available:
-
-- `DOTNET_JitStress`
-- `DOTNET_JitStressModeNamesOnly`
-- `DOTNET_GCStress`
-
-#### JIT stress
-
-Enabling JIT Stress can be done in several ways. Set `DOTNET_JitStress` to a non-zero integer value to generate varying levels of JIT optimizations based on a hash of the method's name. To apply all optimizations set `DOTNET_JitStress=2`, for example. Another way to enable JIT Stress is by setting `DOTNET_JitStressModeNamesOnly=1` and then requesting the stress modes, space-delimited, in the `DOTNET_JitStressModeNames` variable.
-
-As an example, consider:
-
-```
-DOTNET_JitStressModeNames=STRESS_USE_CMOV STRESS_64RSLT_MUL STRESS_LCL_FLDS
-```
-
-#### GC Hole stress
-
-Enabling GC Hole Stress causes GCs to always occur in specific locations and that helps to track down GC holes. GC Hole Stress can be enabled using the `DOTNET_GCStress` environment variable.
-
-For more information, see [Investigating JIT and GC Hole stress](https://github.com/dotnet/runtime/blob/main/docs/design/coreclr/jit/investigate-stress.md).
-
-#### JIT memory barriers
-
-The code generator for Arm64 allows all `MemoryBarriers` instructions to be removed by setting `DOTNET_JitNoMemoryBarriers` to `1`.
-
 ### `DOTNET_RUNNING_IN_CONTAINER` and `DOTNET_RUNNING_IN_CONTAINERS`
 
 The official .NET images (Windows and Linux) set the well-known environment variables:

@@ -50,7 +50,6 @@ This simplified syntax is useful when creating anonymous types with many propert
 
 The member name isn't inferred in the following cases:
 
-- The candidate name is a member name of an anonymous type, such as `ToString` or `GetHashCode`.
 - The candidate name is a duplicate of another property member in the same anonymous type, either explicit or implicit.
 - The candidate name isn't a valid identifier (for example, it contains spaces or special characters).
 

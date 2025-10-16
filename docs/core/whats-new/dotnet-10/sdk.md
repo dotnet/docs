@@ -2,14 +2,14 @@
 title: What's new in the SDK and tooling for .NET 10
 description: Learn about the new .NET SDK features introduced in .NET 10.
 titleSuffix: ""
-ms.date: 09/09/2025
+ms.date: 10/15/2025
 ai-usage: ai-assisted
 ms.update-cycle: 3650-days
 ---
 
 # What's new in the SDK and tooling for .NET 10
 
-This article describes new features and enhancements in the .NET SDK for .NET 10. It's been updated for RC 1.
+This article describes new features and enhancements in the .NET SDK for .NET 10. It's been updated for RC 2.
 
 ## .NET tools enhancements
 
@@ -110,6 +110,55 @@ The output provides a structured, machine-readable description of the command's 
   "subcommands": {}
 }
 ```
+
+## Use .NET MSBuild tasks with .NET Framework MSBuild
+
+MSBuild is the underlying build system for .NET, driving both build of projects (as seen in commands like `dotnet build` and `dotnet pack`), and acting as a general provider of information about projects (as seen in commands like `dotnet list package`, and implicitly used by commands like `dotnet run` to discover how a project wants to be executed).
+
+When running `dotnet` CLI commands, the version of MSBuild that is used is the one that is shipped with the .NET SDK. However, when using Visual Studio or invoking MSBuild directly, the version of MSBuild that is used is the one that is installed with Visual Studio. This environment difference has a few important consequences. The most important is that MSBuild running in Visual Studio (or through `msbuild.exe`) is a .NET Framework application, while MSBuild running in the `dotnet` CLI is a .NET application. This means that any MSBuild tasks that are written to run on .NET can't be used when building in Visual Studio or when using `msbuild.exe`.
+
+Starting with .NET 10, `msbuild.exe` and Visual Studio 2026 can run MSBuild tasks that are built for .NET. This means that you can now use the same MSBuild tasks when building in Visual Studio or using `msbuild.exe` as you do when building with the `dotnet` CLI. For most .NET users, this won't change anything. But for authors of custom MSBuild tasks, this means that you can now write your tasks to target .NET and have them work everywhere. The goal with this change is to make it easier to write and share MSBuild tasks, and to allow task authors to take advantage of the latest features in .NET. In addition, this change reduces the difficulties around multi-targeting tasks to support both .NET Framework and .NET, and dealing with versions of .NET Framework dependencies that are implicitly available in the MSBuild .NET Framework execution space.
+
+### Configure .NET tasks
+
+For task authors, it's easy to opt into this new behavior. Just change your `UsingTask` declaration to tell MSBuild about your task.
+
+```xml
+<UsingTask TaskName="MyTask"
+    AssemblyFile="path\to\MyTask.dll"
+    Runtime="NET"
+    TaskFactory="TaskHostFactory"
+/>
+```
+
+The `Runtime="NET"` and `TaskFactory="TaskHostFactory"` attributes tell the MSBuild engine how to run the Task:
+
+- `Runtime="NET"` tells MSBuild that the Task is built for .NET (as opposed to .NET Framework).
+- `TaskFactory="TaskHostFactory"` tells MSBuild to use the `TaskHostFactory` to run the Task, which is an existing capability of MSBuild that allows tasks to be run out-of-process.
+
+### Caveats and performance tuning
+
+The preceding example is the simplest way to get started using .NET tasks in MSBuild, but it has some limitations. Because the `TaskHostFactory` always runs tasks out-of-process, the new .NET task always runs in a separate process from MSBuild. This means that there is some minor overhead to running the task because the MSBuild engine and the task communicate over inter-process communication (IPC) instead of in-process communication. For most tasks, this overhead is negligible, but for tasks that are run many times in a build, or that do a lot of logging, this overhead might be more significant.
+
+With just a bit more work, you can configure the task to still run in-process when running via `dotnet`:
+
+```xml
+<UsingTask TaskName="MyTask"
+    AssemblyFile="path\to\MyTask.dll"
+    Runtime="NET"
+    TaskFactory="TaskHostFactory"
+    Condition="$(MSBuildRuntimeType) == 'Full'"
+/>
+<UsingTask TaskName="MyTask"
+    AssemblyFile="path\to\MyTask.dll"
+    Runtime="NET"
+    Condition="$(MSBuildRuntimeType) == 'Core'"
+/>
+```
+
+Thanks to the `Condition` feature of MSBuild, you can load a Task differently depending on whether MSBuild is running in .NET Framework (Visual Studio or `msbuild.exe`) or .NET (the `dotnet` CLI). In this example, the Task runs out-of-process when running in Visual Studio or `msbuild.exe`, but runs in-process when running in the `dotnet` CLI. This gives the best performance when running in the `dotnet` CLI, while still allowing the Task to be used in Visual Studio and `msbuild.exe`.
+
+There are also small technical limitations to be aware of when using .NET Tasks in MSBuild—the most notable of which is that the `Host Object` feature of MSBuild Tasks isn't yet supported for .NET Tasks running out-of-process. This means that if your Task relies on a Host Object, it won't work when running in Visual Studio or `msbuild.exe`. Additional support for Host Objects is planned in future releases.
 
 ## File-based apps enhancements
 
@@ -218,11 +267,14 @@ A new `<ContainerImageFormat>` property allows you to explicitly set the format 
 
 ## Support for Microsoft Testing Platform in `dotnet test`
 
-Starting in .NET 10, `dotnet test` natively supports [Microsoft.Testing.Platform](../../testing/microsoft-testing-platform-intro.md). To enable this feature, add the following configuration to your *dotnet.config* file:
+Starting in .NET 10, `dotnet test` natively supports [Microsoft.Testing.Platform](../../testing/microsoft-testing-platform-intro.md). To enable this feature, add the following configuration to your *global.json* file:
 
-```ini
-[dotnet.test.runner]
-name = "Microsoft.Testing.Platform"
+```json
+{
+    "test": {
+        "runner": "Microsoft.Testing.Platform"
+    }
+}
 ```
 
 For more details, see [Testing with `dotnet test`](../../testing/unit-testing-with-dotnet-test.md).

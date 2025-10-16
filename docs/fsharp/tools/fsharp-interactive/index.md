@@ -1,9 +1,10 @@
 ---
 title: F# Interactive (dotnet) Reference
 description: Learn how F# Interactive (dotnet fsi) is used to run F# code interactively at the console or to execute F# scripts.
-ms.date: 11/29/2020
+ms.date: 10/13/2025
 f1_keywords:
  - VS.ToolsOptionsPages.F#_Tools.F#_Interactive
+ai-usage: ai-assisted
 ---
 # Interactive programming with F\#
 
@@ -170,17 +171,29 @@ Examples:
 
 ### Specifying a package source
 
-You can also specify a package source with the `#i` command. The following example specifies a remote and a local source:
+You can also specify a package source with the `#i` command. The following examples specify remote and local sources:
 
 ```fsharp
 #i "nuget: https://my-remote-package-source/index.json"
 #i """nuget: C:\path\to\my\local\source"""
+#i "nuget: /Users/username/path/to/my/local/source"
+#i "nuget: /home/username/path/to/my/local/source"
 ```
 
-This will tell the resolution engine under the covers to also take into account the remote and/or local sources added to a script.
+This tells the resolution engine to take into account the remote and/or local sources added to a script.
 
-You can specify as many package references as you like in a script.
+You can specify as many package sources as you like in a script.
 
+> [!IMPORTANT]
+> Relative paths aren't currently supported with the `#i` directive. You must use absolute paths for local package sources. This limitation is tracked in [dotnet/fsharp#12969](https://github.com/dotnet/fsharp/issues/12969).
+>
+> **Workaround:** You can programmatically construct an absolute path using `__SOURCE_DIRECTORY__` and `System.IO.Path.Combine()`, then use string interpolation to pass it to the `#i` directive. For example:
+>
+> ```fsharp
+> let localSource = System.IO.Path.Combine(__SOURCE_DIRECTORY__, "relative/path/to/my/local/source")
+> #i $"""nuget: {localSource}"""
+> ```
+>
 > [!NOTE]
 > There's currently a limitation for scripts that use framework references (e.g.`Microsoft.NET.Sdk.Web` or  `Microsoft.NET.Sdk.WindowsDesktop`). Packages like Saturn, Giraffe, WinForms are not available. This is being tracked in issue [#9417](https://github.com/dotnet/fsharp/issues/9417).
 > WinForms, still works in the .NET Framework version of F# Interactive.

@@ -8,8 +8,7 @@
 
 using System;
 
-namespace NamedAndOptionalSnippets
-{
+namespace NamedAndOptionalSnippets;
     //<Snippet1>
     class NamedExample
     {
@@ -37,13 +36,9 @@ namespace NamedAndOptionalSnippets
 
         static void PrintOrderDetails(string sellerName, int orderNum, string productName)
         {
-            if (string.IsNullOrWhiteSpace(sellerName))
-            {
-                throw new ArgumentException(message: "Seller name cannot be null or empty.", paramName: nameof(sellerName));
-            }
+            ArgumentException.ThrowIfNullOrWhiteSpace(sellerName);
 
             Console.WriteLine($"Seller: {sellerName}, Order #: {orderNum}, Product: {productName}");
         }
     }
 //</Snippet1>
-}

@@ -1,5 +1,4 @@
-﻿
-namespace object_collection_initializers;
+﻿namespace object_collection_initializers;
 
 public class BasicObjectInitializers
 {
@@ -81,12 +80,12 @@ public class BasicObjectInitializers
         // </SnippetAnonymousUse>
 
         // <SnippetListInitializer>
-        List<Cat> cats = new List<Cat>
-        {
-            new Cat{ Name = "Sylvester", Age=8 },
-            new Cat{ Name = "Whiskers", Age=2 },
-            new Cat{ Name = "Sasha", Age=14 }
-        };
+        List<Cat> cats =
+        [
+            new Cat { Name = "Sylvester", Age = 8 },
+            new Cat { Name = "Whiskers", Age = 2 },
+            new Cat { Name = "Sasha", Age = 14 }
+        ];
         // </SnippetListInitializer>
 
         // <SnippetListInitializerWithNull>
@@ -176,12 +175,12 @@ public class InitializationSample
         Cat cat = new Cat { Age = 10, Name = "Fluffy" };
         Cat sameCat = new Cat("Fluffy"){ Age = 10 };
 
-        List<Cat> cats = new List<Cat>
-        {
+        List<Cat> cats =
+        [
             new Cat { Name = "Sylvester", Age = 8 },
             new Cat { Name = "Whiskers", Age = 2 },
             new Cat { Name = "Sasha", Age = 14 }
-        };
+        ];
 
         List<Cat?> moreCats = new List<Cat?>
         {
@@ -222,7 +221,7 @@ public class FullExample
 {
     class FormattedAddresses : IEnumerable<string>
     {
-        private List<string> internalList = new List<string>();
+        private List<string> internalList = new();
         public IEnumerator<string> GetEnumerator() => internalList.GetEnumerator();
 
         System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() => internalList.GetEnumerator();
@@ -274,7 +273,7 @@ public class DictionaryExample
 {
     class RudimentaryMultiValuedDictionary<TKey, TValue> : IEnumerable<KeyValuePair<TKey, List<TValue>>> where TKey : notnull
     {
-        private Dictionary<TKey, List<TValue>> internalDictionary = new Dictionary<TKey, List<TValue>>();
+        private Dictionary<TKey, List<TValue>> internalDictionary = new Dictionary();
 
         public IEnumerator<KeyValuePair<TKey, List<TValue>>> GetEnumerator() => internalDictionary.GetEnumerator();
 
@@ -292,7 +291,7 @@ public class DictionaryExample
         {
             if (!internalDictionary.TryGetValue(key, out List<TValue>? storedValues))
             {
-                internalDictionary.Add(key, storedValues = new List<TValue>());
+                internalDictionary.Add(key, storedValues = new());
             }
             storedValues.AddRange(values);
         }

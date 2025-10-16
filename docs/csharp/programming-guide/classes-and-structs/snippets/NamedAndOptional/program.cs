@@ -25,7 +25,7 @@ namespace NamedAndOptionalSnippets
             // Named arguments mixed with positional arguments are valid
             // as long as they are used in their correct position.
             PrintOrderDetails("Gift Shop", 31, productName: "Red Mug");
-            PrintOrderDetails(sellerName: "Gift Shop", 31, productName: "Red Mug");
+            PrintOrderDetails(sellerName: "Gift Shop", 31, productName: "Red Mug"); 
             PrintOrderDetails("Gift Shop", orderNum: 31, "Red Mug");
 
             // However, mixed arguments are invalid if used out-of-order.
@@ -37,10 +37,13 @@ namespace NamedAndOptionalSnippets
 
         static void PrintOrderDetails(string sellerName, int orderNum, string productName)
         {
-            ArgumentException.ThrowIfNullOrWhiteSpace(sellerName);
+            if (string.IsNullOrWhiteSpace(sellerName))
+            {
+                throw new ArgumentException(message: "Seller name cannot be null or empty.", paramName: nameof(sellerName));
+            }
 
             Console.WriteLine($"Seller: {sellerName}, Order #: {orderNum}, Product: {productName}");
         }
     }
-    //</Snippet1>
+//</Snippet1>
 }

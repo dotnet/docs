@@ -90,7 +90,7 @@ For more information, see [dotnet package add](../tools/dotnet-package-add.md) o
 ### Register HTTP client latency telemetry
 
 To add HTTP client latency telemetry to your application, call the <xref:Microsoft.Extensions.DependencyInjection.HttpClientLatencyTelemetryExtensions.AddHttpClientLatencyTelemetry*> extension method when configuring your services:
-<pre>
+
 ```csharp
 using Microsoft.Extensions.DependencyInjection;
 
@@ -100,15 +100,14 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddHttpClient();
 
 // Add HTTP client latency telemetry
-<span style="color: yellow">builder.Services.AddHttpClientLatencyTelemetry();</span>
+builder.Services.AddHttpClientLatencyTelemetry();
 ```
-</pre>
 
 This registration adds a `DelegatingHandler` to all HTTP clients created through <xref:System.Net.Http.IHttpClientFactory>, collecting detailed latency information for each request.
 
 ### Configure telemetry options
 
-You configure telemetry collection through the <xref:Microsoft.Extensions.Http.Latency.HttpClientLatencyTelemetryOptions> ([standard options pattern](https://learn.microsoft.com/en-us/dotnet/core/extensions/options)).
+You configure telemetry collection through the <xref:Microsoft.Extensions.Http.Latency.HttpClientLatencyTelemetryOptions> ([standard options pattern](https://learn.microsoft.com/dotnet/core/extensions/options)).
 You can supply values either with a delegate or by binding configuration (for example, `appsettings.json`).
 The options instance is resolved once per handler pipeline so changes apply to new clients/handlers.
 

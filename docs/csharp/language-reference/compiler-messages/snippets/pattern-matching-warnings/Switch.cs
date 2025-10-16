@@ -21,6 +21,15 @@
             };
         }
         // </SwitchNotAllPossibleValues>
+
+        public static void RedundantPattern()
+        {
+            object? o = null;
+            // <RedundantPattern>
+            _ = o is not null or 42; // warning: pattern "42" is redundant
+            _ = o is not int or string; // warning: pattern "string" is redundant
+            // </RedundantPattern>
+        }
     }
 }
 

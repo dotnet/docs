@@ -10,7 +10,7 @@ helpviewer_keywords:
 
 Polymorphism is often referred to as the third pillar of object-oriented programming, after encapsulation and inheritance. Polymorphism is a Greek word that means "many-shaped" and it has two distinct aspects:
 
-- At run time, objects of a derived class might be treated as objects of a base class in places such as method parameters and collections or arrays. When this polymorphism occurs, the object's declared type is no longer identical to its run-time type.
+- At run time, objects of a derived class can be treated as objects of a base class in places such as method parameters and collections or arrays. When this polymorphism occurs, the object's declared type is no longer identical to its run-time type.
 - Base classes might define and implement [virtual](../../language-reference/keywords/virtual.md) *methods*, and derived classes can [override](../../language-reference/keywords/override.md) them, which means they provide their own definition and implementation. At run-time, when client code calls the method, the CLR looks up the run-time type of the object, and invokes that override of the virtual method. In your source code you can call a method on a base class, and cause a derived class's version of the method to be executed.
 
 Virtual methods enable you to work with groups of related objects in a uniform way. For example, suppose you have a drawing application that enables a user to create various kinds of shapes on a drawing surface. You don't know at compile time which specific types of shapes the user will create. However, the application has to keep track of all the various types of shapes that are created, and it has to update them in response to user mouse actions. You can use polymorphism to solve this problem in two basic steps:
@@ -34,9 +34,9 @@ In C#, every type is polymorphic because all types, including user-defined types
 
 When a derived class inherits from a base class, it includes all the members of the base class. All the behavior declared in the base class is part of the derived class. That enables objects of the derived class to be treated as objects of the base class. Access modifiers (`public`, `protected`, `private`, and so on) determine if those members are accessible from the derived class implementation. Virtual methods give the designer different choices for the behavior of the derived class:
 
-- The derived class might override virtual members in the base class, defining new behavior.
-- The derived class might inherit the closest base class method without overriding it, preserving the existing behavior but enabling further derived classes to override the method.
-- The derived class might define new non-virtual implementation of those members that hide the base class implementations.
+- The derived class can override virtual members in the base class, defining new behavior.
+- The derived class can inherit the closest base class method without overriding it, preserving the existing behavior but enabling further derived classes to override the method.
+- The derived class can define new non-virtual implementation of those members that hide the base class implementations.
 
 A derived class can override a base class member only if the base class member is declared as [virtual](../../language-reference/keywords/virtual.md) or [abstract](../../language-reference/keywords/abstract.md). The derived member must use the [override](../../language-reference/keywords/override.md) keyword to explicitly indicate that the method is intended to participate in virtual invocation. The following code provides an example:
 

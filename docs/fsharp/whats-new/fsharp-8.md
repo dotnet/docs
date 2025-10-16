@@ -97,9 +97,16 @@ Starting with F# 8:
 ```fsharp
 let processStream (stream: Stream) = async {
     let buffer = Array.zeroCreate 1024
-    while! stream.AsyncRead(buffer, 0, buffer.Length) do
-        // Process buffer
-        processBuffer buffer bytesRead
+    let rec loop () = async {
+        let! bytesRead = stream.AsyncRead(buffer, 0, buffer.Length)
+        if bytesRead <> 0 then
+            // Process buffer
+            processBuffer buffer bytesRead
+            return! loop ()
+        else
+            return ()
+    }
+    do! loop ()
 }
 ```
 

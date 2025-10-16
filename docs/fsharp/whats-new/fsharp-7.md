@@ -90,7 +90,7 @@ Additionally, you can now use `'a.Zero()` instead of having to repeat the constr
 let inline sum (values: ^T list) : ^T
     when ^T : (static member (+) : ^T * ^T -> ^T)
     and ^T : (static member Zero : ^T) =
-    List.fold (+) (^T.Zero()) values
+    List.fold (+) ^T.Zero values
 ```
 
 This simplification makes SRTP constraints more approachable and reduces boilerplate code.

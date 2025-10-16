@@ -160,16 +160,6 @@ Thanks to the `Condition` feature of MSBuild, you can load a Task differently de
 
 There are also small technical limitations to be aware of when using .NET Tasks in MSBuild—the most notable of which is that the `Host Object` feature of MSBuild Tasks isn't yet supported for .NET Tasks running out-of-process. This means that if your Task relies on a Host Object, it won't work when running in Visual Studio or `msbuild.exe`. Additional support for Host Objects is planned in future releases.
 
-### Future work
-
-This is the first step in a longer journey to make MSBuild more flexible and capable. In future releases, additional capabilities will be added to MSBuild to make it easier to write and use .NET Tasks, including:
-
-- Automatically discovering and loading .NET Tasks without needing to specify `Runtime` or `TaskFactory` metadata
-- Reducing the performance overhead of IPC between the MSBuild Engine and the Tasks when running out-of-process
-- Supporting the `Host Object` feature for .NET Tasks running out-of-process
-
-Task Authors can try this and provide feedback at [dotnet/msbuild](https://github.com/dotnet/msbuild/issues/new).
-
 ## File-based apps enhancements
 
 .NET 10 brings significant updates to the file-based apps experience, including publish support and native AOT capabilities. For an introduction to file-based apps, see [File-based apps](../../../csharp/tour-of-csharp/overview.md#file-based-apps) and [Building and running C# programs](../../../csharp/fundamentals/program-structure/index.md#building-and-running-c-programs).

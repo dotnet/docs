@@ -171,7 +171,7 @@ Examples:
 
 ### Specifying a package source
 
-You can also specify a package source with the `#i` command. The following examples specify a remote source and local sources on different operating systems:
+You can also specify a package source with the `#i` command. The following examples specify remote and local sources:
 
 ```fsharp
 #i "nuget: https://my-remote-package-source/index.json"
@@ -185,8 +185,15 @@ This tells the resolution engine to take into account the remote and/or local so
 You can specify as many package sources as you like in a script.
 
 > [!IMPORTANT]
-> Relative paths aren't currently supported with the `#i` directive. You must use absolute paths for local package sources. This limitation is tracked in [dotnet/fsharp#12969](https://github.com/dotnet/fsharp/issues/12969). As a workaround, construct absolute paths programmatically using `__SOURCE_DIRECTORY__` combined with `System.IO.Path.Combine()`, and then manually specify the full absolute path in your script.
-
+> Relative paths aren't currently supported with the `#i` directive. You must use absolute paths for local package sources. This limitation is tracked in [dotnet/fsharp#12969](https://github.com/dotnet/fsharp/issues/12969).  
+>  
+> **Workaround:** You can programmatically construct an absolute path using `__SOURCE_DIRECTORY__` and `System.IO.Path.Combine()`, then use string interpolation to pass it to the `#i` directive. For example:
+> 
+> ```fsharp
+> let localSource = System.IO.Path.Combine(__SOURCE_DIRECTORY__, "relative/path/to/my/local/source")
+> #i $"""nuget: {localSource}"""
+> ```
+> 
 > [!NOTE]
 > There's currently a limitation for scripts that use framework references (e.g.`Microsoft.NET.Sdk.Web` or  `Microsoft.NET.Sdk.WindowsDesktop`). Packages like Saturn, Giraffe, WinForms are not available. This is being tracked in issue [#9417](https://github.com/dotnet/fsharp/issues/9417).
 > WinForms, still works in the .NET Framework version of F# Interactive.

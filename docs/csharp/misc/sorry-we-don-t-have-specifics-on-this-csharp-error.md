@@ -513,9 +513,6 @@ f1_keywords:
   - "CS9020"
   - "CS9021"
   - "CS9022"
-  - "CS9023"
-  - "CS9024"
-  - "CS9025"
   - "CS9026"
   - "CS9027"
   - "CS9029"
@@ -598,12 +595,6 @@ f1_keywords:
 # C# 14 errors begin here
 ## using `extension` as type name. (valid identifiers).
   - "CS9306"
-## User defined operators
-  - "CS9308"
-  - "CS9310"
-  - "CS9311"
-  - "CS9312"
-  - "CS9313"
 ## More extension errors
   - "CS9316"
   - "CS9317"

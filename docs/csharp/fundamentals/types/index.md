@@ -1,7 +1,7 @@
 ---
 title: "Learn the fundamentals of the C# type system"
 description: Learn about creating types in C#, such as tuples, records, value types, and reference types. Learn to choose between these options.
-ms.date: 08/15/2024
+ms.date: 10/10/2025
 helpviewer_keywords:
   - "value types [C#]"
   - "reference types [C#]"
@@ -30,7 +30,7 @@ The compiler uses type information to make sure all operations that are performe
 :::code language="csharp" source="../../programming-guide/types/snippets/index/Program.cs" ID="TypeSafeExample":::
 
 > [!NOTE]
-> C and C++ developers, notice that in C#, `bool` is not convertible to `int`.
+> C and C++ developers, notice that in C#, `bool` isn't convertible to `int`.
 
 The compiler embeds the type information into the executable file as metadata. The common language runtime (CLR) uses that metadata at run time to further guarantee type safety when it allocates and reclaims memory.
 
@@ -78,7 +78,7 @@ The following illustration shows the relationship between value types and refere
 ![Screenshot that shows CTS value types and reference types.](../../programming-guide/types/media/index/value-reference-types-common-type-system.png)
 
 > [!NOTE]
-> You can see that the most commonly used types are all organized in the <xref:System> namespace. However, the namespace in which a type is contained has no relation to whether it is a value type or reference type.
+> You can see that the most commonly used types are all organized in the <xref:System> namespace. However, the namespace in which a type is contained has no relation to whether it's a value type or reference type.
 
 Classes and structs are two of the basic constructs of the common type system in .NET. Each is essentially a data structure that encapsulates a set of data and behaviors that belong together as a logical unit. The data and behaviors are the *members* of the class, struct, or record. The members include its methods, properties, events, and so on, as listed later in this article.
 
@@ -90,7 +90,7 @@ A struct is a value type. When a struct is created, the variable to which the st
 
 Record types can be either reference types (`record class`) or value types (`record struct`). Record types contain methods that support value-equality.
   
-In general, classes are used to model more complex behavior. Classes typically store data that is intended to be modified after a class object is created. Structs are best suited for small data structures. Structs typically store data that isn't intended to be modified after the struct is created. Record types are data structures with additional compiler synthesized members. Records typically store data that isn't intended to be modified after the object is created.
+In general, classes are used to model more complex behavior. Classes typically store data that is intended to be modified after a class object is created. Structs are best suited for small data structures. Structs typically store data that isn't intended to be modified after the struct is created. Record types are data structures with extra compiler synthesized members. Records typically store data that isn't intended to be modified after the object is created.
 
 ### Value types
 

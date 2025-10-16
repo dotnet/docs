@@ -1,7 +1,7 @@
 ---
 title: "Access Modifiers"
 description: All types and type members in C# have an accessibility level that controls whether they can be used from other code. Review this list of access modifiers.
-ms.date: 08/20/2024
+ms.date: 10/10/2025
 helpviewer_keywords:
   - "C# Language, access modifiers"
   - "access modifiers [C#], about"
@@ -41,7 +41,7 @@ Multiple declarations of a [partial class or partial member](./partial-classes-a
 
 ## Class and struct accessibility
 
-Classes and structs declared directly within a namespace (aren't nested within other classes or structs) can have `public`, `internal` or `file` access. `internal` is the default if no access modifier is specified.
+Classes and structs declared directly within a namespace (aren't nested within other classes or structs) can have `public`, `internal`, or `file` access. `internal` is the default if no access modifier is specified.
 
 Struct members, including nested classes and structs, can be declared `public`, `internal`, or `private`. Class members, including nested classes and structs, can be `public`, `protected internal`, `protected`, `internal`, `private protected`, or `private`. Class and struct members,  including nested classes and structs, have `private` access by default.
 

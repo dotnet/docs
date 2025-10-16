@@ -1,7 +1,7 @@
 ---
 title: "Constraints on type parameters"
 description: Learn about constraints on type parameters. Constraints tell the compiler what capabilities a type argument must have.
-ms.date: 07/26/2024
+ms.date: 10/10/2025
 f1_keywords:
   - "defaultconstraint_CSharpKeyword"
   - "notnull_CSharpKeyword"
@@ -117,7 +117,7 @@ The `unmanaged` constraint implies the `struct` constraint and can't be combined
 
 ## Delegate constraints
 
-You can use <xref:System.Delegate?displayProperty=nameWithType> or <xref:System.MulticastDelegate?displayProperty=nameWithType> as a base class constraint. The CLR always allowed this constraint, but the C# language disallowed it. The `System.Delegate` constraint enables you to write code that works with delegates in a type-safe manner. The following code defines an extension method that combines two delegates provided they're the same type:
+You can use <xref:System.Delegate?displayProperty=nameWithType> or <xref:System.MulticastDelegate?displayProperty=nameWithType> as a base class constraint. The Common Language Runtime (CLR) always allowed this constraint, but the C# language disallowed it. The `System.Delegate` constraint enables you to write code that works with delegates in a type-safe manner. The following code defines an extension method that combines two delegates provided they're the same type:
 
 :::code language="csharp" source="./snippets/GenericWhereConstraints.cs" id="Snippet16":::
 

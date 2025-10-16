@@ -29,8 +29,8 @@ dotnet package add Microsoft.Extensions.Telemetry.Abstractions
 ### [PackageReference](#tab/package-reference)
 
 ```xml
-<PackageReference Include=" Microsoft.Extensions.Telemetry.Abstractions"
-			      Version="*" />" <!-- Adjust version -->
+<PackageReference Include="Microsoft.Extensions.Telemetry.Abstractions"
+                  Version="*" /> <!-- Adjust version -->
 ```
 
 ---

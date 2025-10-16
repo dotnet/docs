@@ -1,4 +1,6 @@
-﻿using System.Text.Json;
+﻿#define first
+#if first
+using System.Text.Json;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
@@ -9,25 +11,19 @@ namespace Enrichment
     {
         public static async Task Main()
         {
-            var host = new HostBuilder()
-               .ConfigureLogging((hostingContext, loggingBuilder) =>
-               {
-                   loggingBuilder.EnableEnrichment();
-                   loggingBuilder.Services.AddProcessLogEnricher();
-                   loggingBuilder.AddJsonConsole(op =>
-                   {
-                       op.JsonWriterOptions = new JsonWriterOptions
-                       {
-                           Indented = true
-                       };
-                   });
-               });
-
-            var hostBuilder = host.Build();
+            var builder = Host.CreateApplicationBuilder();
+            builder.Logging.EnableEnrichment();
+            builder.Logging.AddJsonConsole(op =>
+            {
+                op.JsonWriterOptions = new JsonWriterOptions
+                {
+                    Indented = true
+                };
+            });
+            builder.Services.AddProcessLogEnricher();
+            var hostBuilder = builder.Build();
             var logger =
-               hostBuilder.Services
-                   .GetRequiredService<ILoggerFactory>()
-                   .CreateLogger<Program>();
+               hostBuilder.Services.GetRequiredService<ILoggerFactory>().CreateLogger<Program>();
 
             logger.LogInformation("This is a sample log message");
 
@@ -36,3 +32,5 @@ namespace Enrichment
         }
     }
 }
+#endif
+

@@ -21,7 +21,7 @@ public class C : B
 // <SnippetNewDeclaration>
 public class D : C
 {
-    public static new void DoWork() { }
+    public new void DoWork() { }
 }
 // </SnippetNewDeclaration>
 

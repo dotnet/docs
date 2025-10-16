@@ -8,7 +8,8 @@
 
 using System;
 
-namespace NamedAndOptionalSnippets;
+namespace NamedAndOptionalSnippets
+{
     //<Snippet1>
     class NamedExample
     {
@@ -24,7 +25,7 @@ namespace NamedAndOptionalSnippets;
             // Named arguments mixed with positional arguments are valid
             // as long as they are used in their correct position.
             PrintOrderDetails("Gift Shop", 31, productName: "Red Mug");
-            PrintOrderDetails(sellerName: "Gift Shop", 31, productName: "Red Mug"); 
+            PrintOrderDetails(sellerName: "Gift Shop", 31, productName: "Red Mug");
             PrintOrderDetails("Gift Shop", orderNum: 31, "Red Mug");
 
             // However, mixed arguments are invalid if used out-of-order.
@@ -41,4 +42,5 @@ namespace NamedAndOptionalSnippets;
             Console.WriteLine($"Seller: {sellerName}, Order #: {orderNum}, Product: {productName}");
         }
     }
-//</Snippet1>
+    //</Snippet1>
+}

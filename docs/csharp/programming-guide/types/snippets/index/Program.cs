@@ -136,7 +136,7 @@ class Program
         IMyInterface myInterface = myClass;
 
         // Or create and assign a value in a single statement.
-        IMyInterface myInterface2 = new();
+        IMyInterface myInterface2 = new MyClass();
         // </InterfaceDeclaration>
     }
 

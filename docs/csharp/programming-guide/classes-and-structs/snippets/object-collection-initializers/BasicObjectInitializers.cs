@@ -273,7 +273,7 @@ public class DictionaryExample
 {
     class RudimentaryMultiValuedDictionary<TKey, TValue> : IEnumerable<KeyValuePair<TKey, List<TValue>>> where TKey : notnull
     {
-        private Dictionary<TKey, List<TValue>> internalDictionary = new Dictionary();
+        private Dictionary<TKey, List<TValue>> internalDictionary = new Dictionary<TKey, List<TValue>>();
 
         public IEnumerator<KeyValuePair<TKey, List<TValue>>> GetEnumerator() => internalDictionary.GetEnumerator();
 

@@ -28,7 +28,7 @@ For each source file I specify in this chat, you'll do the following tasks:
 
 ## Search for other related articles that may be missed.
 
-Search all files in the docs/csharp/language-reference/compiler-messages and the docs/csharp/misc folder for any other errors and warnings that involve operator overloading. Give me a list to review for possible additional consolidation. Don't make any edits until I approve.
+Search all files in the docs/csharp/language-reference/compiler-messages and the docs/csharp/misc folder for any other errors and warnings that involve operator overloading. Give me a list to review for possible additional consolidation. Don't make any edits until the originating user approves.
 
 ## Final search in roslyn source
 

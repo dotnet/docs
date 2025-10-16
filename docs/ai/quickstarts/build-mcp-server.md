@@ -66,12 +66,15 @@ Configure GitHub Copilot for Visual Studio Code to use your custom MCP server:
          "args": [
            "run",
            "--project",
-           "<RELATIVE PATH TO PROJECT DIRECTORY>"
+           "<relative-path-to-project-file>"
          ]
        }
      }
    }
    ```
+
+    > [!NOTE]
+    > VS Code executes MCP servers from the workspace root. The `<relative-path-to-project-file>` placeholder should point to your .NET project file. For example, the value for this **SampleMcpServer** app would be `SampleMcpServer.csproj`.
 
 1. Save the file.
 
@@ -79,7 +82,7 @@ Configure GitHub Copilot for Visual Studio Code to use your custom MCP server:
 
 The MCP server template includes a tool called `get_random_number` you can use for testing and as a starting point for development.
 
-1. Open GitHub Copilot in Visual Studio Code and switch to chat mode.
+1. Open GitHub Copilot in Visual Studio Code and switch to agent mode.
 
 1. Select the **Select tools** icon to verify your **SampleMcpServer** is available with the sample tool listed.
 

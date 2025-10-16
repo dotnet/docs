@@ -71,7 +71,7 @@ You can see that all three of these account types have an action that takes plac
 
 :::code language="csharp" source="./snippets/object-oriented-programming/BankAccount.cs" ID="DeclareMonthEndTransactions":::
 
-The preceding code shows how you use the `virtual` keyword to declare a method in the base class that a derived class might provide a different implementation for. A `virtual` method is a method where any derived class might choose to reimplement. The derived classes use the `override` keyword to define the new implementation. Typically you refer to this as "overriding the base class implementation". The `virtual` keyword specifies that derived classes might override the behavior. You can also declare `abstract` methods where derived classes must override the behavior. The base class doesn't provide an implementation for an `abstract` method. Next, you need to define the implementation for two of the new classes you created. Start with the `InterestEarningAccount`:
+The preceding code shows how you use the `virtual` keyword to declare a method in the base class that a derived class can provide a different implementation for. A `virtual` method is a method where any derived class can choose to reimplement. When a derived class defines a new implementation, it's called *overriding the base class implementation*. The derived classes use the `override` keyword to define the new implementation. The `virtual` keyword specifies that derived classes can override the behavior. You can also declare `abstract` methods where derived classes must override the behavior. The base class doesn't provide an implementation for an `abstract` method. Next, you need to define the implementation for two of the new classes you created. Start with the `InterestEarningAccount`:
 
 :::code language="csharp" source="./snippets/object-oriented-programming/InterestEarningAccount.cs" ID="ApplyMonthendInterest":::
 
@@ -87,7 +87,7 @@ The constructor provides a default value for the `monthlyDeposit` value so calle
 
 :::code language="csharp" source="./snippets/object-oriented-programming/GiftCardAccount.cs" ID="AddMonthlyDeposit":::
 
-The override applies the monthly deposit set in the constructor. Add the following code to the `Main` method to test these changes for the `GiftCardAccount` and the `InterestEarningAccount`:
+The override applies the monthly deposit set in the constructor. Add the following code to the `Main` method. This code tests these changes for the `GiftCardAccount` and the `InterestEarningAccount`:
 
 :::code language="csharp" source="./snippets/object-oriented-programming/Program.cs" ID="FirstTests":::
 
@@ -104,7 +104,7 @@ lineOfCredit.PerformMonthEndTransactions();
 Console.WriteLine(lineOfCredit.GetAccountHistory());
  ```
 
-When you add the preceding code and run the program, you see something like the following error:
+Add the preceding code and run the program. The output should be something like the following error:
 
 ```console
 Unhandled exception. System.ArgumentOutOfRangeException: Amount of deposit must be positive (Parameter 'amount')
@@ -119,7 +119,7 @@ Unhandled exception. System.ArgumentOutOfRangeException: Amount of deposit must 
 
 This code fails because the `BankAccount` assumes that the initial balance must be greater than 0. Another assumption baked into the `BankAccount` class is that the balance can't go negative. Instead, any withdrawal that overdraws the account is rejected. Both of those assumptions need to change. The line of credit account starts at 0, and generally has a negative balance. Also, if a customer borrows too much money, they incur a fee. The transaction is accepted, it just costs more. The first rule can be implemented by adding an optional argument to the `BankAccount` constructor that specifies the minimum balance. The default is `0`. The second rule requires a mechanism that enables derived classes to modify the default algorithm. In a sense, the base class "asks" the derived type what should happen when there's an overdraft. The default behavior is to reject the transaction by throwing an exception.
 
-Let's start by adding a second constructor that includes an optional `minimumBalance` parameter. This new constructor does all the actions done by the existing constructor. Also, it sets the minimum balance property. You could copy the body of the existing constructor, but that means two locations to change in the future. Instead, you can use *constructor chaining* to have one constructor call another. The following code shows the two constructors and the new extra field:
+Let's start by adding a second constructor that includes an optional `minimumBalance` parameter. This new constructor does all the actions done by the existing constructor. Also, it sets the minimum balance property. You could copy the body of the existing constructor, but that means two locations to change in the future. Instead, you can use *constructor chaining* to have one constructor call another. The following code shows the two constructors and the new field:
 
  :::code language="csharp" source="./snippets/object-oriented-programming/BankAccount.cs" ID="ConstructorModifications":::
 
@@ -165,7 +165,7 @@ Replace it with the following code:
 
 :::code language="csharp" source="./snippets/object-oriented-programming/BankAccount.cs" ID="RefactoredMakeWithdrawal":::
 
-The added method is `protected`, which means that it can be called only from derived classes. That declaration prevents other clients from calling the method. It's also `virtual` so that derived classes can change the behavior. The return type is a `Transaction?`. The `?` annotation indicates that the method might return `null`. To charge a fee when the withdrawal limit is exceeded, add the following implementation in the `LineOfCreditAccount`:
+The added method is `protected`, which means that it can be called only from derived classes. That declaration prevents other clients from calling the method. It's also `virtual` so that derived classes can change the behavior. The return type is a `Transaction?`. The `?` annotation indicates that the method can return `null`. Add the following implementation in the `LineOfCreditAccount`. This code charges a fee when the withdrawal limit is exceeded:
 
 :::code language="csharp" source="./snippets/object-oriented-programming/LineOfCreditAccount.cs" ID="AddOverdraftFee":::
 
@@ -183,5 +183,5 @@ This tutorial demonstrated many of the techniques used in Object-Oriented progra
 
 - You used *Abstraction* when you defined classes for each of the different account types. Those classes described the behavior for that type of account.
 - You used *Encapsulation* when you kept many details `private` in each class.
-- You used *Inheritance* when you leveraged the implementation already created in the `BankAccount` class to save code.
+- You used *Inheritance* when you used the implementation already created in the `BankAccount` class to save code.
 - You used *Polymorphism* when you created `virtual` methods that derived classes could override to create specific behavior for that account type.

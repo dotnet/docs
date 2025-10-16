@@ -13,6 +13,7 @@ namespace Enrichment
         {
             var builder = Host.CreateApplicationBuilder();
             builder.Logging.EnableEnrichment();
+            builder.Services.AddProcessLogEnricher();
             builder.Logging.AddJsonConsole(op =>
             {
                 op.JsonWriterOptions = new JsonWriterOptions
@@ -20,7 +21,6 @@ namespace Enrichment
                     Indented = true
                 };
             });
-            builder.Services.AddProcessLogEnricher();
             var hostBuilder = builder.Build();
             var logger =
                hostBuilder.Services.GetRequiredService<ILoggerFactory>().CreateLogger<Program>();
@@ -33,4 +33,3 @@ namespace Enrichment
     }
 }
 #endif
-

@@ -30,7 +30,7 @@ dotnet package add Microsoft.Extensions.Telemetry
 
 To be able to use the process log enricher, first you need to enable enrichment. Then you can add the <xref:Microsoft.Extensions.DependencyInjection.ProcessEnricherServiceCollectionExtensions.AddProcessLogEnricher*> with default properties, like this:
 
-:::code language="csharp" source="snippets/enrichment/Program.cs" highlight="14,15":::
+:::code language="csharp" source="snippets/enrichment/Program.cs" range="3-34" highlight="15,16":::
 
 Given this code sample, the output should be like this:
 

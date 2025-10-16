@@ -4,7 +4,7 @@
 /// Represents a bank account with basic banking operations including deposits, withdrawals, and transaction history.
 /// Supports minimum balance constraints and provides extensible month-end processing capabilities.
 /// </summary>
-public class  BankAccount
+public class BankAccount
 {
     /// <summary>
     /// Gets the unique account number for this bank account.
@@ -22,19 +22,7 @@ public class  BankAccount
     /// Gets the current balance of the account by calculating the sum of all transactions.
     /// </summary>
     /// <value>The current account balance as a decimal value.</value>
-    public decimal Balance
-    {
-        get
-        {
-            decimal balance = 0;
-            foreach (var item in _allTransactions)
-            {
-                balance += item.Amount;
-            }
-
-            return balance;
-        }
-    }
+    public decimal Balance => _allTransactions.Sum(i => i.Amount);
 
     private static int s_accountNumberSeed = 1234567890;
 
@@ -76,7 +64,7 @@ public class  BankAccount
             MakeDeposit(initialBalance, DateTime.Now, "Initial balance");
     }
 
-    private readonly List<Transaction> _allTransactions = new();
+    private readonly List<Transaction> _allTransactions = [];
 
     /// <summary>
     /// Makes a deposit to the account by adding a positive transaction.

@@ -59,7 +59,7 @@ public delegate void EventType();
 //<Snippet2>
 public class Automobile
 {
-    public static int NumberOfWheels { get; } = 4;
+    public static int NumberOfWheels = 4;
 
     public static int SizeOfGasTank => 15;
 

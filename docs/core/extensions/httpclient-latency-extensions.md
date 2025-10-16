@@ -45,6 +45,7 @@ builder.Services
 var host = builder.Build();
 await host.RunAsync();
 ```
+
 Access the context:
 
 ```csharp
@@ -159,7 +160,6 @@ the completed context is flattened into a single structured log field named `Lat
 That log field is the only built‑in output artifact; no metrics or traces are produced unless you add your own exporter.
 To surface them as metrics, read the context after the request pipeline returns and record (for example) GC pause overlap
 to a histogram and connection initiations to a counter, optionally dimensioned by protocol version.
-
 
 | Name                     | Description                                                             |
 |--------------------------|-------------------------------------------------------------------------|

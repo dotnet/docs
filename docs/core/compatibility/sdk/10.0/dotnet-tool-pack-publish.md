@@ -39,7 +39,7 @@ This change enables the creation of optimized, platform-specific .NET Tool packa
 
 If you want to create tools for only a subset of platforms, use `ToolPackageRuntimeIdentifiers`. If you want to disable RID-specific tool packages entirely, you should conditionally include or exclude the `RuntimeIdentifiers` property in your project file.
 
-Alternatively, if you're using the .NET 10.0.100 GA SDK or later and you want to maintain the old behavior (framework-dependent, platform-agnostic .NET Tools) even when a `RuntimeIdentifier` is specified, add the following properties to your project file:
+Alternatively, if you want to maintain the previous behavior (framework-dependent, platform-agnostic .NET Tools) even when a `RuntimeIdentifier` is specified, add the following properties to your project file:
 
 ```xml
 <PropertyGroup>

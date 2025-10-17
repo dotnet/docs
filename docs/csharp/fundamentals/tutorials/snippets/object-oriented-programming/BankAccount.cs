@@ -37,14 +37,11 @@ public class BankAccount
     }
     // </ConstructorModifications>
 
-    private readonly List<Transaction> _allTransactions = new();
+    private readonly List<Transaction> _allTransactions = [];
 
     public void MakeDeposit(decimal amount, DateTime date, string note)
     {
-        if (amount <= 0)
-        {
-            throw new ArgumentOutOfRangeException(nameof(amount), "Amount of deposit must be positive");
-        }
+        ArgumentOutOfRangeException.ThrowIfNegativeOrZero(amount);
         var deposit = new Transaction(amount, date, note);
         _allTransactions.Add(deposit);
     }
@@ -52,10 +49,7 @@ public class BankAccount
     // <RefactoredMakeWithdrawal>
     public void MakeWithdrawal(decimal amount, DateTime date, string note)
     {
-        if (amount <= 0)
-        {
-            throw new ArgumentOutOfRangeException(nameof(amount), "Amount of withdrawal must be positive");
-        }
+        ArgumentOutOfRangeException.ThrowIfNegativeOrZero(amount);
         Transaction? overdraftTransaction = CheckWithdrawalLimit(Balance - amount < _minimumBalance);
         Transaction? withdrawal = new(-amount, date, note);
         _allTransactions.Add(withdrawal);

@@ -1,6 +1,6 @@
 ﻿namespace GeneratedHttp.Example;
 
-// <latency-handler>
+
 public sealed class HttpLatencyExportHandler : DelegatingHandler
 {
     // ILatencyContextAccessor is just an example of some accessor that is able to read latency context
@@ -21,4 +21,3 @@ public sealed class HttpLatencyExportHandler : DelegatingHandler
         return rsp;
     }
 }
-// </latency-handler>

@@ -21,11 +21,11 @@ and export to your metrics backend. Example:
 
 Register extension method:
 
-:::code language="csharp" source="snippets/http/latency/RegisterHandler.cs" id="latency-handler":::
+:::code language="csharp" source="snippets/http/latency/RegisterHandler.cs" range="3-24":::
 
 Access the context:
 
-:::code language="csharp" source="snippets/http/latency/HttpLatencyExportHandler.cs" id="latency-handler":::
+:::code language="csharp" source="snippets/http/latency/HttpLatencyExportHandler.cs" range="4-23":::
 
 ### [.NET CLI](#tab/dotnet-cli)
 

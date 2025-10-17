@@ -3,7 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Http.Diagnostics;
 
 
-internal partial class Program
+internal class Program
 {
     private static void ConfigureHttpClientLatency(HostApplicationBuilder builder)
     {
@@ -20,7 +20,6 @@ internal partial class Program
 
     private static void ConfigureWithDelegate(HostApplicationBuilder builder)
     {
-        // <register-handler>
         // Configure with delegate
         builder.Services.AddHttpClientLatencyTelemetry(options =>
         {
@@ -30,7 +29,6 @@ internal partial class Program
         // Or configure from configuration
         builder.Services.AddHttpClientLatencyTelemetry(
         builder.Configuration.GetSection("HttpClientTelemetry"));
-        // </register-handler>
     }
 
     private static void EnableLatencyContext(HostApplicationBuilder builder)

@@ -17,4 +17,17 @@ internal partial class Program
 		builder.Services.AddHttpClientLatencyTelemetry();
         // </extensions>
     }
+
+    private static void RegisterHandlers(HostApplicationBuilder builder)
+    {
+        // <register>
+        var builder = WebApplication.CreateBuilder(args);
+
+        // Add HTTP client factory
+        builder.Services.AddHttpClient();
+
+        // Add HTTP client latency telemetry
+        builder.Services.AddHttpClientLatencyTelemetry();
+        // </register>
+    }
 }

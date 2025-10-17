@@ -21,58 +21,11 @@ and export to your metrics backend. Example:
 
 Register extension method:
 
-```csharp
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Http.Diagnostics;
-using Microsoft.Extensions.Hosting;
-
-var builder = Host.CreateApplicationBuilder(args);
-
-// An example of some accessor that is able to read latency context
-builder.Services.AddSingleton<ILatencyContextAccessor, LatencyContextAccessor>();
-
-// Register HTTP client latency telemetry first so its delegating handler runs earlier.
-builder.Services.AddHttpClientLatencyTelemetry();
-
-// Register export handler (runs after telemetry; sees finalized ILatencyContext).
-builder.Services.AddTransient<HttpLatencyExportHandler>();
-
-// Register an HttpClient that will emit and export latency measures.
-builder.Services
-    .AddHttpClient("observed")
-    .AddHttpMessageHandler<HttpLatencyExportHandler>();
-
-var host = builder.Build();
-await host.RunAsync();
-```
+:::code language="csharp" source="snippets/http/latency/RegisterHandler.cs" id="latency-handler":::
 
 Access the context:
 
-```csharp
-public sealed class HttpLatencyExportHandler : DelegatingHandler
-{
-    // ILatencyContextAccessor is just an example of some accessor that is able to read latency context
-    private readonly ILatencyContextAccessor _latency;
-
-    public HttpLatencyExportHandler(ILatencyContextAccessor latency) => _latency = latency;
-
-    protected override async Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken ct)
-    {
-        var rsp = await base.SendAsync(request, ct).ConfigureAwait(false);
-
-        var ctx = _latency.Current;
-        if (ctx != null)
-        {
-            var data = ctx.LatencyData;
-            // Record/export gc and conn with version as a dimension here.
-        }
-        return rsp;
-    }
-}
-```
-
-:::code language="csharp" source="snippets/http/latency/Program.Extensions.cs" id="extensions":::
-
+:::code language="csharp" source="snippets/http/latency/HttpLatencyExportHandler.cs" id="latency-handler":::
 
 ### [.NET CLI](#tab/dotnet-cli)
 

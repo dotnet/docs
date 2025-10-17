@@ -593,22 +593,14 @@ f1_keywords:
   - "CS9235"
   - "CS9236"
 # C# 14 errors begin here
-## using `extension` as type name. (valid identifiers).
-  - "CS9306"
-## More extension errors
-  - "CS9316"
-  - "CS9317"
-  - "CS9318"
-  - "CS9319"
-  - "CS9326"
   - "CS9327"
   - "CS9328"
-  - "CS9329"
   - "CS9330"
   - "CS9331"
   - "CS9332"
   - "CS9333"
   - "CS9334"
+  - "CS9338"
 helpviewer_keywords:
   - "errors [C#], additional information"
 ---

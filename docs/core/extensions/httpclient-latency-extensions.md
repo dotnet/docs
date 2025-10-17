@@ -91,17 +91,7 @@ For more information, see [dotnet package add](../tools/dotnet-package-add.md) o
 
 To add HTTP client latency telemetry to your application, call the <xref:Microsoft.Extensions.DependencyInjection.HttpClientLatencyTelemetryExtensions.AddHttpClientLatencyTelemetry*> extension method when configuring your services:
 
-```csharp
-using Microsoft.Extensions.DependencyInjection;
-
-var builder = WebApplication.CreateBuilder(args);
-
-// Add HTTP client factory
-builder.Services.AddHttpClient();
-
-// Add HTTP client latency telemetry
-builder.Services.AddHttpClientLatencyTelemetry();
-```
+:::code language="csharp" source="snippets/http/latency/Program.Extensions.cs" id="extensions":::
 
 This registration adds a `DelegatingHandler` to all HTTP clients created through <xref:System.Net.Http.IHttpClientFactory>, collecting detailed latency information for each request.
 

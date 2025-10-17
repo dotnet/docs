@@ -13,16 +13,16 @@ ms.author: amauryleve
 ---
 # MSTEST0023: Do not negate boolean assertions
 
-| Property                            | Value                            |
-|-------------------------------------|----------------------------------|
-| **Rule ID**                         | MSTEST0023                       |
-| **Title**                           | Do not negate boolean assertions |
-| **Category**                        | Usage                            |
-| **Fix is breaking or non-breaking** | Non-breaking                     |
-| **Enabled by default**              | Yes                              |
-| **Default severity**                | Info                             |
-| **Introduced in version**           | 3.4.0                            |
-| **Is there a code fix**             | No                               |
+| Property                            | Value                                    |
+|-------------------------------------|------------------------------------------|
+| **Rule ID**                         | MSTEST0023                               |
+| **Title**                           | Do not negate boolean assertions         |
+| **Category**                        | Usage                                    |
+| **Fix is breaking or non-breaking** | Non-breaking                             |
+| **Enabled by default**              | Yes                                      |
+| **Default severity**                | Warning starting with 4.0.0, Info before |
+| **Introduced in version**           | 3.4.0                                    |
+| **Is there a code fix**             | No                                       |
 
 ## Cause
 

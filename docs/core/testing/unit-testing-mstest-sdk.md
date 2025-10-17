@@ -178,9 +178,9 @@ You can also disable an extension that's coming from the selected profile. For e
 
 Outside of the selection of the runner and runner-specific extensions, `MSTest.Sdk` also provides additional features to simplify and enhance your testing experience.
 
-### Test with .NET Aspire
+### Test with Aspire
 
-.NET Aspire is an opinionated, cloud-ready stack for building observable, production ready, distributed applications. .NET Aspire is delivered through a collection of NuGet packages that handle specific cloud-native concerns. For more information, see the [.NET Aspire docs](/dotnet/aspire/get-started/aspire-overview).
+Aspire is an opinionated, cloud-ready stack for building observable, production ready, distributed applications. Aspire is delivered through a collection of NuGet packages that handle specific cloud-native concerns. For more information, see the [Aspire docs](/dotnet/aspire/get-started/aspire-overview).
 
 > [!NOTE]
 > This feature is available from MSTest.Sdk 3.4.0

@@ -1,7 +1,7 @@
 ---
 title: "Boxing and Unboxing"
-description: Learn about boxing and unboxing in C# programming. See code examples and view additional available resources.
-ms.date: 07/20/2015
+description: Learn about boxing and unboxing in C# programming. See code examples and view other available resources.
+ms.date: 10/13/2025
 f1_keywords: 
   - "cs.boxing"
 helpviewer_keywords: 
@@ -61,7 +61,7 @@ This example converts an integer variable `i` to an object `o` by using boxing. 
 
 Unboxing is an explicit conversion from the type `object` to a [value type](../../language-reference/builtin-types/value-types.md) or from an interface type to a value type that implements the interface. An unboxing operation consists of:
 
-- Checking the object instance to make sure that it is a boxed value of the given value type.
+- Checking the object instance to make sure that it's a boxed value of the given value type.
 
 - Copying the value from the instance into the value-type variable.
 
@@ -91,13 +91,13 @@ If you change the statement:
 int j = (short)o;
 ```
 
-to:
+To:
 
 ```csharp
 int j = (int)o;
 ```
 
-the conversion will be performed, and you will get the output:
+The conversion is performed, and you'll get the output:
 
 `Unboxing OK.`
 

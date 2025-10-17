@@ -15,7 +15,7 @@ In this quickstart, you will learn how to create a GitHub workflow to publish yo
 
 - A [GitHub account](https://github.com/join).
 - A .NET source code repository.
-- An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/dotnet).
+- An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 - An ASP.NET Core web app.
 - An Azure App Service resource.
 

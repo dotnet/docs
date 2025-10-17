@@ -1,9 +1,11 @@
 ---
 title: dotnet test command
 description: The dotnet test command is used to execute unit tests in a given project.
-ms.date: 03/27/2024
+ms.date: 09/29/2025
 ---
 # dotnet test
+
+**This article applies to:** ✔️ .NET 6 SDK and later versions
 
 ## Name
 
@@ -11,18 +13,24 @@ ms.date: 03/27/2024
 
 ## Description
 
-The `dotnet test` command builds the solution and runs the tests with either VSTest or Microsoft Testing Platform (MTP). To enable MTP, you need to add a config file named `dotnet.config` with an INI-like format located at the root of the solution or repository.
+The `dotnet test` command builds the solution and runs the tests with either VSTest or Microsoft Testing Platform (MTP). To enable MTP, you need to specify the test runner in the `global.json` file.
 
-Some examples of the `dotnet.config` file:
+Some examples of how to specify the test runner in the [`global.json`](global-json.md) file:
 
-  ```ini
-  [dotnet.test.runner]
-  name = "Microsoft.Testing.Platform"
+  ```json
+  {
+      "test": {
+          "runner": "Microsoft.Testing.Platform"
+      }
+  }
   ```
 
-  ```ini
-  [dotnet.test.runner]
-  name = "VSTest"
+  ```json
+  {
+      "test": {
+          "runner": "VSTest"
+      }
+  }
   ```
 
 > [!IMPORTANT]
@@ -34,8 +42,6 @@ Some examples of the `dotnet.config` file:
 ## VSTest and Microsoft.Testing.Platform (MTP)
 
 ### [dotnet test with VSTest](#tab/dotnet-test-with-vstest)
-
-**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
 #### Synopsis
 
@@ -54,6 +60,7 @@ dotnet test [<PROJECT> | <SOLUTION> | <DIRECTORY> | <DLL> | <EXE>]
     [-c|--configuration <CONFIGURATION>]
     [--collect <DATA_COLLECTOR_NAME>]
     [-d|--diag <LOG_FILE>]
+    [--disable-build-servers]
     [-f|--framework <FRAMEWORK>]
     [-e|--environment <NAME="VALUE">]
     [--filter <EXPRESSION>]
@@ -68,6 +75,7 @@ dotnet test [<PROJECT> | <SOLUTION> | <DIRECTORY> | <DLL> | <EXE>]
     [-r|--runtime <RUNTIME_IDENTIFIER>]
     [-s|--settings <SETTINGS_FILE>]
     [-t|--list-tests]
+    [--tl:[auto|on|off]]
     [-v|--verbosity <LEVEL>]
     [<args>...]
     [[--] <RunSettings arguments>]
@@ -186,6 +194,8 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
   Enables diagnostic mode for the test platform and writes diagnostic messages to the specified file and to files next to it. The process that is logging the messages determines which files are created, such as `*.host_<date>.txt` for test host log, and `*.datacollector_<date>.txt` for data collector log.
 
+[!INCLUDE [disable-build-servers](../../../includes/cli-disable-build-servers.md)]
+
 - **`-e|--environment <NAME="VALUE">`**
 
   Sets the value of an environment variable. Creates the variable if it does not exist, overrides if it does exist. Use of this option will force the tests to be run in an isolated process. The option can be specified multiple times to provide multiple variables.
@@ -259,6 +269,8 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 - **`-t|--list-tests`**
 
   List the discovered tests instead of running the tests.
+
+[!INCLUDE [tl](../../../includes/cli-tl.md)]
 
 [!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
 
@@ -448,7 +460,7 @@ dotnet test -h|--help
 With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest. The test-related arguments are no longer fixed, as they are tied to the registered extensions in the test project(s). Moreover, MTP supports a globbing filter when running tests. For more information, see [Microsoft.Testing.Platform](../testing/microsoft-testing-platform-intro.md).
 
 > [!WARNING]
-> When Microsoft.Testing.Platform is opted in via `dotnet.config`, `dotnet test` expects all test projects to use Microsoft.Testing.Platform. It is an error if any of the test projects use VSTest.
+> When Microsoft.Testing.Platform is opted in via `global.json`, `dotnet test` expects all test projects to use Microsoft.Testing.Platform. It is an error if any of the test projects use VSTest.
 
 #### Implicit restore
 

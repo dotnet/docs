@@ -2,7 +2,7 @@
 title: .NET SDK and .NET CLI telemetry
 description: The .NET SDK and the .NET CLI collect usage information and send it to Microsoft. Learn what data is collected and how to opt out.
 author: KathleenDollard
-ms.date: 02/24/2022
+ms.date: 10/07/2025
 ---
 # .NET SDK and .NET CLI telemetry
 
@@ -33,7 +33,10 @@ A single telemetry entry is also sent by the .NET SDK installer when a successfu
 
 ## Disclosure
 
-The .NET SDK displays text similar to the following when you first run one of the [.NET CLI commands](index.md) (for example, `dotnet build`). Text may vary slightly depending on the version of the SDK you're running. This "first run" experience is how Microsoft notifies you about data collection.
+The .NET SDK displays text similar to the following when you first run one of the [.NET CLI commands](index.md) (for example, `dotnet build`). Text might vary slightly depending on the version of the SDK you're running. This "first run" experience is how Microsoft notifies you about data collection.
+
+> [!NOTE]
+> **Breaking change:** The behavior of telemetry messages written to `stderr` has changed in recent versions of the .NET SDK. For more information, see the [breaking change documentation](/dotnet/core/compatibility/sdk/8.0/telemetry-stderr-behavior).
 
 ```console
 Telemetry
@@ -105,7 +108,19 @@ The telemetry feature collects the following data:
 | >=8.0.100     | Whether Mono interpreter is used. |
 | >=8.0.100     | Whether library mode for mobile is used.  |
 | >=8.0.100     | Whether NativeAOT is used. |
-| >=8.0.100     | Used Mono runtime pack version. |
+| >=8.0.100     | The Mono runtime pack version that was used. |
+| >=10.0.100    | Hashed project identifier for `dotnet run`. |
+| >=10.0.100    | Application type of either file-based app or project-based for `dotnet run`. |
+| >=10.0.100    | The launch profile name if specified for `dotnet run`. |
+| >=10.0.100    | Whether a launch profile was specified for `dotnet run`.|
+| >=10.0.100    | The launch settings configuration model used (if any) for `dotnet run`. |
+| >=10.0.100    | Number of SDKs used for `dotnet run`. |
+| >=10.0.100    | Number of PackageReferences for `dotnet run`. |
+| >=10.0.100    | Number of ProjectReferences for `dotnet run`. |
+| >=10.0.100    | Number of additional properties for file-based apps with `dotnet run`. |
+| >=10.0.100    | Whether MSBuild was used for file-based apps with `dotnet run`. |
+| >=10.0.100    | Whether Roslyn compiler was used for file-based apps with `dotnet run`. |
+| >=10.0.100    | The detected LLM agent name if the CLI was invoked from an LLM agent. For more information, see [LLM detection](#llm-detection).|
 
 ### Collected options
 
@@ -146,6 +161,27 @@ The `dotnet new` template instantiation command collects additional data for Mic
 
 * `--framework`
 * `--auth`
+
+### dotnet run telemetry
+
+The `dotnet run` command collects feature-based telemetry to help drive development and usage of file-based apps, starting with .NET SDK 10.0.100:
+
+**Telemetry for all `dotnet run` executions:**
+
+- Application type (file-based or project-based)
+- Hashed project or file identifier
+- Number of SDKs used
+- Number of PackageReferences
+- Number of ProjectReferences
+- Launch profile usage (whether `--launch-profile` or `--no-launch-profile` was used)
+- Whether the launch profile is a default profile
+- Launch settings model applied, if any
+
+**Telemetry for file-based apps only:**
+
+- Number of additional properties (for example, `#:property` directives)
+- Whether MSBuild was used for building
+- Whether the Roslyn compiler was used directly
 
 ## Crash exception telemetry
 
@@ -189,6 +225,21 @@ The full list of environment variables, and what is done with their values, is s
 | BUILD_ID, PROJECT_ID | Google Cloud Build | Check if all are present and non-null |
 | TEAMCITY_VERSION | TeamCity | Check if present and non-null |
 | JB_SPACE_API_URL | JetBrains Space | Check if present and non-null |
+
+## LLM detection
+
+To detect if the .NET CLI is running in the context of an LLM agent, the .NET CLI probes for the presence and values of several environment variables that LLM agents and AI coding assistants set.
+
+The following table shows the agent name, environment variable used for detection, and value of the agent type that's reported. The actual values of these environment variables are never collected—only used to identify the agent type.
+
+| LLM agent | Variable | Value |
+| --------- | ----------- | ----- |
+| GitHub Copilot | GITHUB_COPILOT_CLI_MODE | "copilot" |
+| Claude Code | CLAUDECODE | "claude" |
+| Cursor | CURSOR_EDITOR| "cursor" |
+| Google Gemini | GEMINI_CLI | "gemini" |
+
+If multiple agents are detected, the different agent values are concatenated with a comma to produce the final value.
 
 ## Avoid inadvertent disclosure of information
 

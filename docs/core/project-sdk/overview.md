@@ -42,7 +42,7 @@ You can also author your own SDK that can be distributed via NuGet.
 </Project>
 ```
 
-The `Project/Sdk` attribute and `Sdk` element enable additive SDKs. Consider the following example, where the .NET Aspire SDK (`Aspire.AppHost.Sdk`) is added to the project atop the `Microsoft.NET.Sdk`:
+The `Project/Sdk` attribute and `Sdk` element enable additive SDKs. Consider the following example, where the Aspire SDK (`Aspire.AppHost.Sdk`) is added to the project atop the `Microsoft.NET.Sdk`:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -53,7 +53,7 @@ The `Project/Sdk` attribute and `Sdk` element enable additive SDKs. Consider the
 </Project>
 ```
 
-In the preceding project file, both SDKs are used to resolve dependencies in an additive nature. For more information, see [.NET Aspire SDK](/dotnet/aspire/fundamentals/dotnet-aspire-sdk).
+In the preceding project file, both SDKs are used to resolve dependencies in an additive nature. For more information, see [Aspire SDK](/dotnet/aspire/fundamentals/dotnet-aspire-sdk).
 
 To specify an SDK that comes from NuGet, include the version at the end of the name, or specify the name and version in the *global.json* file.
 

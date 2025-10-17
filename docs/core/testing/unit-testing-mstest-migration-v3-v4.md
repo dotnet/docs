@@ -213,3 +213,9 @@ To address long outstanding bugs that many users filed, the generation of `TestC
 ### TreatDiscoveryWarningsAsErrors now defaults to true
 
 v4 uses stricter defaults. As such, the default value of `TreatDiscoveryWarningsAsErrors` is now `true`. This should be a transparent change for most users and should help other users to uncover hidden bugs.
+
+### MSTest.Sdk no longer adds `Microsoft.NET.Test.Sdk` reference when using Microsoft.Testing.Platform
+
+By default, MSTest.Sdk uses Microsoft.Testing.Platform. If the `UseVSTest` MSBuild property is set to true, it will use VSTest instead. In MSTest 3.x, the SDK added a reference to Microsoft.NET.Test.Sdk (which brings VSTest support) even when using Microsoft.Testing.Platform. This package reference is unnecessary when running with Microsoft.Testing.Platform and has been removed in MSTest v4.
+
+If you still want to have VSTest supported (for example, if you want to run with vstest.console), you need to manually add a package reference to `Microsoft.NET.Test.Sdk` NuGet package to your project.

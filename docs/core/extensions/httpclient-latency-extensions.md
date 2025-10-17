@@ -25,7 +25,7 @@ Register extension method:
 
 Access the context:
 
-:::code language="csharp" source="snippets/http/latency/HttpLatencyExportHandler.cs" range="4-23" highlight="13,16":::
+:::code language="csharp" source="snippets/http/latency/HttpLatencyExportHandler.cs" range="4-23" highlight="12,15":::
 
 ### [.NET CLI](#tab/dotnet-cli)
 
@@ -57,7 +57,7 @@ You configure telemetry collection through the <xref:Microsoft.Extensions.Http.L
 You can supply values either with a delegate or by binding configuration (for example, `appsettings.json`).
 The options instance is resolved once per handler pipeline so changes apply to new clients/handlers.
 
-:::code language="csharp" source="snippets/http/latency/Program.cs" range="23-31" highlight="1-4,7":::
+:::code language="csharp" source="snippets/http/latency/Program.cs" range="23-31" highlight="1-5,8,9":::
 
 ### Configuration options
 

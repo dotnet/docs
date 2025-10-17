@@ -130,7 +130,7 @@ You can register the services using the following methods:
 
 For example:
 
-:::code language="csharp" source="snippets/http/latency/Program.cs" range="58-75" highlight="10,13,16:::
+:::code language="csharp" source="snippets/http/latency/Program.cs" range="58-75" highlight="10,13,16":::
 
 ### Platform considerations
 

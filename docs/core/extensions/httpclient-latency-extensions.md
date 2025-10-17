@@ -110,7 +110,7 @@ in the latency context and, if HTTP client log enrichment is enabled, serialized
 Enable enrichment at application startup by adding the logging extension (for all clients or per client) along with
 latency telemetry, for example:
 
-:::code language="csharp" source="snippets/http/latency/Program.Extensions.cs" id="enable-context":::
+:::code language="csharp" source="snippets/http/latency/Program.Extensions.cs" range="38-41":::
 
 After this, outbound requests logged through the structured logging pipeline will include the `LatencyInfo` property
 containing the flattened tags, checkpoints, and measures. No metrics or traces are emitted automatically for tags;
@@ -126,13 +126,11 @@ These components enable tracking and reporting the latency of HTTP client reques
 
 You can register the services using the following methods:
 
-:::code language="csharp" source="snippets/http/latency/Program.Extensions.cs" id="enable-context":::
-
-:::code language="csharp" source="snippets/http/latency/Program.Extensions.cs" id="registration-options":::
+:::code language="csharp" source="snippets/http/latency/Program.Extensions.cs" range="46-55":::
 
 For example:
 
-:::code language="csharp" source="snippets/http/latency/Program.Extensions.cs" id="http-client":::
+:::code language="csharp" source="snippets/http/latency/Program.Extensions.cs" range="60-77":::
 
 ### Platform considerations
 

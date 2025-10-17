@@ -35,17 +35,14 @@ internal partial class Program
 
     private static void EnableLatencyContext(HostApplicationBuilder builder)
     {
-        // <enable-context>
         var builder = Host.CreateApplicationBuilder(args);
         builder.Services.AddHttpClientLatencyTelemetry(); // enables latency context + measures/tags
         builder.Services.AddExtendedHttpClientLogging();
         var app = builder.Build();
-        // </enable-context>
     }
 
     private static void RegistrationOptions(HostApplicationBuilder builder)
     {
-        // <registration-options>
         public static IServiceCollection AddHttpClientLatencyTelemetry(
             this IServiceCollection services);
 
@@ -56,12 +53,10 @@ internal partial class Program
         public static IServiceCollection AddHttpClientLatencyTelemetry(
             this IServiceCollection services,
             Action<HttpClientLatencyTelemetryOptions> configure);
-        // </registration-options>
     }
 
     private static void HttpClientLatency(HostApplicationBuilder builder)
     {
-        // <http-client>
         var builder = Host.CreateApplicationBuilder(args);
 
         // Register IHttpClientFactory:
@@ -80,6 +75,5 @@ internal partial class Program
         builder.Services.AddHttpClientLatencyTelemetry();
 
         var host = builder.Build();
-        // </http-client>
     }
 }

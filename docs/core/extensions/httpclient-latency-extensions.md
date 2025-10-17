@@ -21,7 +21,7 @@ and export to your metrics backend. Example:
 
 Register extension method:
 
-:::code language="csharp" source="snippets/http/latency/RegisterHandler.cs" range="3-24":::
+:::code language="csharp" source="snippets/http/latency/RegisterHandler.cs" range="3-24" highlight="8,11":::
 
 Access the context:
 

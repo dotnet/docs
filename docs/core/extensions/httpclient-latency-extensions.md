@@ -71,6 +71,9 @@ public sealed class HttpLatencyExportHandler : DelegatingHandler
 }
 ```
 
+:::code language="csharp" source="snippets/http/latency/Program.Extensions.cs" id="extensions":::
+
+
 ### [.NET CLI](#tab/dotnet-cli)
 
 ```dotnetcli

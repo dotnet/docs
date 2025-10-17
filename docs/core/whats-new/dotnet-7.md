@@ -133,7 +133,7 @@ C# 11 includes support for [generic math](../../standard/generics/math.md), raw 
 
 ### F# 7
 
-F# 7 continues the journey to make the language simpler and improve performance and interop with new C# features. For more information, see [Announcing F# 7](https://devblogs.microsoft.com/dotnet/announcing-fsharp-7/).
+F# 7 continues the journey to make the language simpler and improve performance and interop with new C# features. For more information, see [What's new in F# 7](../../fsharp/whats-new/fsharp-7.md).
 
 ### .NET MAUI
 

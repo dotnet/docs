@@ -18,16 +18,68 @@ internal partial class Program
         // </extensions>
     }
 
-    private static void RegisterHandlers(HostApplicationBuilder builder)
+    private static void ConfigureWithDelegate(HostApplicationBuilder builder)
     {
-        // <register>
-        var builder = WebApplication.CreateBuilder(args);
+        // <register-handler>
+        // Configure with delegate
+        builder.Services.AddHttpClientLatencyTelemetry(options =>
+        {
+            options.EnableDetailedLatencyBreakdown = true;
+        });
 
-        // Add HTTP client factory
+        // Or configure from configuration
+        builder.Services.AddHttpClientLatencyTelemetry(
+        builder.Configuration.GetSection("HttpClientTelemetry"));
+        // </register-handler>
+    }
+
+    private static void EnableLatencyContext(HostApplicationBuilder builder)
+    {
+        // <enable-context>
+        var builder = Host.CreateApplicationBuilder(args);
+        builder.Services.AddHttpClientLatencyTelemetry(); // enables latency context + measures/tags
+        builder.Services.AddExtendedHttpClientLogging();
+        var app = builder.Build();
+        // </enable-context>
+    }
+
+    private static void RegistrationOptions(HostApplicationBuilder builder)
+    {
+        // <registration-options>
+        public static IServiceCollection AddHttpClientLatencyTelemetry(
+            this IServiceCollection services);
+
+        public static IServiceCollection AddHttpClientLatencyTelemetry(
+            this IServiceCollection services,
+            IConfigurationSection section);
+
+        public static IServiceCollection AddHttpClientLatencyTelemetry(
+            this IServiceCollection services,
+            Action<HttpClientLatencyTelemetryOptions> configure);
+        // </registration-options>
+    }
+
+    private static void HttpClientLatency(HostApplicationBuilder builder)
+    {
+        // <http-client>
+        var builder = Host.CreateApplicationBuilder(args);
+
+        // Register IHttpClientFactory:
         builder.Services.AddHttpClient();
 
-        // Add HTTP client latency telemetry
+        // Register redaction services:
+        builder.Services.AddRedaction();
+
+        // Register latency context services:
+        builder.Services.AddLatencyContext();
+
+        // Register HttpClient logging enrichment & redaction services:
+        builder.Services.AddExtendedHttpClientLogging();
+
+        // Register HttpClient latency telemetry services:
         builder.Services.AddHttpClientLatencyTelemetry();
-        // </register>
+
+        var host = builder.Build();
+        // </http-client>
     }
 }

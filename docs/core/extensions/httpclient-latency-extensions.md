@@ -30,13 +30,13 @@ Access the context:
 ### [.NET CLI](#tab/dotnet-cli)
 
 ```dotnetcli
-dotnet add package Microsoft.Extensions.Http.Diagnostics --version 10.0.0
+dotnet add package Microsoft.Extensions.Http.Diagnostics --version 9.10.0
 ```
 
 ### [PackageReference](#tab/package-reference)
 
 ```xml
-<PackageReference Include="Microsoft.Extensions.Http.Diagnostics" Version="10.0.0" />
+<PackageReference Include="Microsoft.Extensions.Http.Diagnostics" Version="9.10.0" />
 ```
 
 ---
@@ -57,17 +57,7 @@ You configure telemetry collection through the <xref:Microsoft.Extensions.Http.L
 You can supply values either with a delegate or by binding configuration (for example, `appsettings.json`).
 The options instance is resolved once per handler pipeline so changes apply to new clients/handlers.
 
-```csharp
-// Configure with delegate
-builder.Services.AddHttpClientLatencyTelemetry(options =>
-{
-    options.EnableDetailedLatencyBreakdown = true;
-});
-
-// Or configure from configuration
-builder.Services.AddHttpClientLatencyTelemetry(
-builder.Configuration.GetSection("HttpClientTelemetry"));
-```
+:::code language="csharp" source="snippets/http/latency/Program.Extensions.cs" id="register-handler":::
 
 ### Configuration options
 
@@ -120,12 +110,7 @@ in the latency context and, if HTTP client log enrichment is enabled, serialized
 Enable enrichment at application startup by adding the logging extension (for all clients or per client) along with
 latency telemetry, for example:
 
-```csharp
-var builder = Host.CreateApplicationBuilder(args);
-builder.Services.AddHttpClientLatencyTelemetry(); // enables latency context + measures/tags
-builder.Services.AddExtendedHttpClientLogging();
-var app = builder.Build();
-```
+:::code language="csharp" source="snippets/http/latency/Program.Extensions.cs" id="enable-context":::
 
 After this, outbound requests logged through the structured logging pipeline will include the `LatencyInfo` property
 containing the flattened tags, checkpoints, and measures. No metrics or traces are emitted automatically for tags;
@@ -141,41 +126,13 @@ These components enable tracking and reporting the latency of HTTP client reques
 
 You can register the services using the following methods:
 
-```csharp
-public static IServiceCollection AddHttpClientLatencyTelemetry(
-    this IServiceCollection services);
+:::code language="csharp" source="snippets/http/latency/Program.Extensions.cs" id="enable-context":::
 
-public static IServiceCollection AddHttpClientLatencyTelemetry(
-    this IServiceCollection services,
-    IConfigurationSection section);
-
-public static IServiceCollection AddHttpClientLatencyTelemetry(
-    this IServiceCollection services,
-    Action<HttpClientLatencyTelemetryOptions> configure);
-```
+:::code language="csharp" source="snippets/http/latency/Program.Extensions.cs" id="registration-options":::
 
 For example:
 
-```csharp
-var builder = Host.CreateApplicationBuilder(args);
-
-// Register IHttpClientFactory:
-builder.Services.AddHttpClient();
-
-// Register redaction services:
-builder.Services.AddRedaction();
-
-// Register latency context services:
-builder.Services.AddLatencyContext();
-
-// Register HttpClient logging enrichment & redaction services:
-builder.Services.AddExtendedHttpClientLogging();
-
-// Register HttpClient latency telemetry services:
-builder.Services.AddHttpClientLatencyTelemetry();
-
-var host = builder.Build();
-```
+:::code language="csharp" source="snippets/http/latency/Program.Extensions.cs" id="http-client":::
 
 ### Platform considerations
 

@@ -21,11 +21,11 @@ and export to your metrics backend. Example:
 
 Register extension method:
 
-:::code language="csharp" source="snippets/http/latency/RegisterHandler.cs" range="3-24" highlight="8,11":::
+:::code language="csharp" source="snippets/http/latency/RegisterHandler.cs" range="3-24" highlight="11":::
 
 Access the context:
 
-:::code language="csharp" source="snippets/http/latency/HttpLatencyExportHandler.cs" range="4-23":::
+:::code language="csharp" source="snippets/http/latency/HttpLatencyExportHandler.cs" range="4-23" highlight="13,16":::
 
 ### [.NET CLI](#tab/dotnet-cli)
 
@@ -47,7 +47,7 @@ For more information, see [dotnet package add](../tools/dotnet-package-add.md) o
 
 To add HTTP client latency telemetry to your application, call the <xref:Microsoft.Extensions.DependencyInjection.HttpClientLatencyTelemetryExtensions.AddHttpClientLatencyTelemetry*> extension method when configuring your services:
 
-:::code language="csharp" source="snippets/http/latency/Program.cs" id="extensions":::
+:::code language="csharp" source="snippets/http/latency/Program.cs" id="extensions" highlight="7":::
 
 This registration adds a `DelegatingHandler` to all HTTP clients created through <xref:System.Net.Http.IHttpClientFactory>, collecting detailed latency information for each request.
 
@@ -57,7 +57,7 @@ You configure telemetry collection through the <xref:Microsoft.Extensions.Http.L
 You can supply values either with a delegate or by binding configuration (for example, `appsettings.json`).
 The options instance is resolved once per handler pipeline so changes apply to new clients/handlers.
 
-:::code language="csharp" source="snippets/http/latency/Program.cs" range="23-31":::
+:::code language="csharp" source="snippets/http/latency/Program.cs" range="23-31" highlight="1-4,7":::
 
 ### Configuration options
 
@@ -110,7 +110,7 @@ in the latency context and, if HTTP client log enrichment is enabled, serialized
 Enable enrichment at application startup by adding the logging extension (for all clients or per client) along with
 latency telemetry, for example:
 
-:::code language="csharp" source="snippets/http/latency/Program.cs" range="36-39":::
+:::code language="csharp" source="snippets/http/latency/Program.cs" range="36-39" highlight="2,3":::
 
 After this, outbound requests logged through the structured logging pipeline will include the `LatencyInfo` property
 containing the flattened tags, checkpoints, and measures. No metrics or traces are emitted automatically for tags;
@@ -126,11 +126,11 @@ These components enable tracking and reporting the latency of HTTP client reques
 
 You can register the services using the following methods:
 
-:::code language="csharp" source="snippets/http/latency/Program.cs" range="44-53":::
+:::code language="csharp" source="snippets/http/latency/Program.cs" range="44-53" highlight="1,2,4-6, 8-10":::
 
 For example:
 
-:::code language="csharp" source="snippets/http/latency/Program.cs" range="58-75":::
+:::code language="csharp" source="snippets/http/latency/Program.cs" range="58-75" highlight="10,13,16:::
 
 ### Platform considerations
 

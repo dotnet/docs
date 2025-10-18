@@ -41,7 +41,7 @@ Consider the following <xref:System.String.Format%2A> code fragment:
 :::code language="vb" source="./snippets/composite-formatting/net/vb/Program.vb" id="basic":::
 
 <!-- markdownlint-disable-next-line no-space-in-code -->
-The fixed text is `Name = `&nbsp;and `, hours = `. The format items are `{0}`, whose index of 0 corresponds to the object `name`, and `{1:hh}`, whose index of 1 corresponds to the object `DateTime.Now`.
+The fixed text is `Name = `&nbsp;and `, hours = `. The format items are `{0}`, whose index of 0 corresponds to the string `"Fred"`, and `{1:hh}`, whose index of 1 corresponds to the object `DateTime.Now`.
 
 ## Format item syntax
 

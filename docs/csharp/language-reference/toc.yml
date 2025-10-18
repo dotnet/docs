@@ -520,7 +520,8 @@ items:
     displayName: >
       CS1100, CS1101, CS1102, CS1103, CS1105, CS1106, CS1109, CS1110, CS1113, CS1112, CS1100, CS1101, CS1102, CS1103,
       CS1105, CS1106, CS1109, CS1110, CS1112, CS1113, CS1754, CS9281, CS9282, CS9283, CS9284, CS9285, CS9287, CS9288,
-      CS9289, CS9290, CS9292, CS9293, CS9295, CS9300, CS9301, CS9302, CS9303, CS9304, CS9305
+      CS9289, CS9290, CS9292, CS9293, CS9295, CS9300, CS9301, CS9302, CS9303, CS9304, CS9305, CS9306, CS9309, CS9316,
+      CS9317, CS9318, CS9319, CS9320, CS9321, CS9322, CS9323, CS9326, CS9329
   - name: Partial declarations
     href: ./compiler-messages/partial-declarations.md
     displayName: >
@@ -543,7 +544,7 @@ items:
       CS8768, CS8670, CS8714, CS8767, CS8769, CS8770, CS8774, CS8776, CS8775, CS8777, CS8819, CS8824, CS8825, CS8847
   - name: Pattern matching warnings
     href: ./compiler-messages/pattern-matching-warnings.md
-    displayName: CS8509, CS9134, CS9135
+    displayName: CS8509, CS9134, CS9135, CS9335, CS9337
   - name: String literal declarations
     href: ./compiler-messages/string-literal.md
     displayName: >
@@ -574,7 +575,7 @@ items:
     displayName: >
       CS0765, CS0831, CS0832, CS0834, CS0835, CS0838, CS0845, CS0853, CS0854, CS0855, CS1944, CS1945, CS1946, CS1951, CS1952,
       CS1963, CS2037, CS7053, CS8072, CS8074, CS8075, CS8110, CS8122, CS8143, CS8144, CS8153, CS8155, CS8198, CS8207, CS8382,
-      CS8514, CS8640, CS8642, CS8790, CS8791, CS8792, CS8810, CS8849, CS8927, CS8952, CS9170, CS9175
+      CS8514, CS8640, CS8642, CS8790, CS8791, CS8792, CS8810, CS8849, CS8927, CS8952, CS9170, CS9175, CS9307
   - name: Using directive and aliases
     href: ./compiler-messages/using-directive-errors.md
     displayName: >

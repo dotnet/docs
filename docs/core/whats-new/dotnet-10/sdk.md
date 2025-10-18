@@ -43,7 +43,7 @@ Proceed? [y/n] (y): y
                                 |/
 ```
 
-This downloads and runs the specified tool package in one command. By default, users are prompted to confirm the download if the tool doesn't already exist locally. The latest version of the chosen tool package is used unless an explicit version is specified (for example, `dotnetsay @0.1.0`).
+This downloads and runs the specified tool package in one command. By default, users are prompted to confirm the download if the tool doesn't already exist locally. The latest version of the chosen tool package is used unless an explicit version is specified (for example, `dotnetsay@0.1.0`).
 
 One-shot tool execution works seamlessly with local tool manifests. If you run a tool from a location containing a `.config/dotnet-tools.json` nearby, the version of the tool in that configuration will be used instead of the latest version available.
 
@@ -52,7 +52,7 @@ One-shot tool execution works seamlessly with local tool manifests. If you run a
 The `dnx` script provides a streamlined way to execute tools. It forwards all arguments to the `dotnet` CLI for processing, making tool usage as simple as possible:
 
 ```bash
-dnx dotnetsay  "Hello, World!"
+dnx dotnetsay "Hello, World!"
 ```
 
 The actual implementation of the `dnx` command is in the `dotnet` CLI itself, allowing its behavior to evolve over time.

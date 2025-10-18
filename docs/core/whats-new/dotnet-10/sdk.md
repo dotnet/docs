@@ -33,7 +33,7 @@ You can now use the `dotnet tool exec` command to execute a .NET tool without in
 
 ```bash
 dotnet tool exec --source ./artifacts/package/ dotnetsay  "Hello, World!"
-Tool package dotnetsay @1.0.0 will be downloaded from source <source>.
+Tool package dotnetsay@1.0.0 will be downloaded from source <source>.
 Proceed? [y/n] (y): y
   _   _          _   _                __        __                 _       _   _
  | | | |   ___  | | | |   ___         \ \      / /   ___    _ __  | |   __| | | |

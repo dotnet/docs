@@ -6,7 +6,7 @@ ms.topic: reference
 ---
 # Investigate performance counters (dotnet-counters)
 
-**This article applies to:** ✔️ `dotnet-counters` version 3.0.47001 and later versions.
+**This article applies to:** ✔️ `dotnet-counters` version 10.0 and later versions.
 
 Counters can be read from applications running .NET 5 or later.
 
@@ -88,7 +88,7 @@ Periodically collect selected counter values and export them into a specified fi
 ### Synopsis
 
 ```dotnetcli
-dotnet-counters collect [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-port] [--refresh-interval] [--counters <COUNTERS>] [--format] [-o|--output] [-- <command>]
+dotnet-counters collect [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-port] [--refresh-interval] [--counters <COUNTERS>] [--format] [-o|--output] [--dsrouter <ios|ios-sim|android|android-emu>] [-- <command>]
 ```
 
 ### Options

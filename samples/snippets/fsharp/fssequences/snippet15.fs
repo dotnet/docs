@@ -23,14 +23,11 @@ let squaresSeries = generateInfiniteSequence (fun index -> float (index * index)
 
 // This function sums a sequence, up to the specified number of terms.
 let sumSeq length sequence =
-    (0, 0.0)
-    |>
-    Seq.unfold (fun state ->
-        let subtotal = snd state + Seq.item (fst state + 1) sequence
-        if (fst state >= length) then
-            None
-        else
-            Some(subtotal, (fst state + 1, subtotal)))
+    sequence
+    |> Seq.skip 1                      // skip first item (matching the original behavior)
+    |> Seq.truncate length             // don't take more than length items
+    |> Seq.scan (+) 0.0                // generate running sums
+    |> Seq.skip 1                      // skip the initial 0.0 from sequence of running sums
 
 // This function sums an infinite sequence up to a given value
 // for the difference (epsilon) between subsequent terms,

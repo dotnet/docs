@@ -63,6 +63,7 @@ Jump to:
 
 To determine the installed .NET version, use the following `Release` DWORD:
 
+- 533509 (Windows 11 September 2025 Release)
 - 533320 (Windows 11 September 2022 Release and Windows 11 October 2023 Release)
 - 533325 (all other OS versions)
 

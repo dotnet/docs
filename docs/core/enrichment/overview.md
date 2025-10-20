@@ -14,8 +14,7 @@ Enrichment augments telemetry objects with additional information that provides 
 
 ## How enrichment works
 
-The enrichment framework operates through a collection of enrichers that are registered with the dependency injection container. When telemetry is generated, all registered enrichers automatically contribute their contextual information to the telemetry payload. You just register the specific set of enrichers you want into
-an <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection> instance. The enrichers run automatically without requiring changes to your application code. You simply configure which enrichers you want to use during application startup.
+The enrichment framework operates through a collection of enrichers that are registered with the dependency injection container. When telemetry is generated, all registered enrichers automatically contribute their contextual information to the telemetry payload. You just register the specific set of enrichers you want into an <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection> instance. The enrichers run automatically without requiring changes to your application code. You simply configure which enrichers you want to use during application startup.
 
 ## Dimension names and tags
 
@@ -25,21 +24,21 @@ Enrichers add information to telemetry using standardized dimension names (also 
 
 To use log enrichment in your application, you need to:
 
-1. **Enable enrichment** for logging
-2. **Register specific enrichers** you want to use
-3. **Configure options** for each enricher (optional)
+1. **Enable enrichment** for logging.
+2. **Register specific enrichers** you want to use.
+3. **Configure options** for each enricher (optional).
 
 ### Basic setup example
 
 Here's a simple example showing how to set up log enrichment with process information:
 
-:::code language="csharp" source="snippets/enrichment/Program.cs" range="3-34" highlight="13,14":::
+:::code language="csharp" source="snippets/enrichment/Program.cs" highlight="13,14":::
 
 This configuration:
 
-- Enables enrichment for logging via `EnableEnrichment()`
-- Registers the process log enricher via `AddProcessLogEnricher()`
-- Configures JSON console output to display the enriched data
+- Enables enrichment for logging via `EnableEnrichment()`.
+- Registers the process log enricher via `AddProcessLogEnricher()`.
+- Configures JSON console output to display the enriched data.
 
 ### Output example
 

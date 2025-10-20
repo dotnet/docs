@@ -37,11 +37,11 @@ dotnet package add Microsoft.Extensions.Telemetry
 
 ## Usage
 
-To be able to use the process log enricher, first you need to enable enrichment. Then you can add the <xref:Microsoft.Extensions.DependencyInjection.ProcessEnricherServiceCollectionExtensions.AddProcessLogEnricher*> with default properties, like this:
+To use the process log enricher, first you enable enrichment. Then you can add the <xref:Microsoft.Extensions.DependencyInjection.ProcessEnricherServiceCollectionExtensions.AddProcessLogEnricher*> with default properties, as shown in the following code:
 
-:::code language="csharp" source="snippets/enrichment/Program.cs" range="3-34" highlight="13,14":::
+:::code language="csharp" source="snippets/enrichment/Program.cs" highlight="13,14":::
 
-Given this code sample, the output should be like this:
+Given this code sample, the output should be similar to the following JSON:
 
 :::code language="json" source="json-output.json" highlight="8":::
 

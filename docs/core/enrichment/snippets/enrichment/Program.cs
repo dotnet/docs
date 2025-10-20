@@ -3,30 +3,21 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace Enrichment
+var builder = Host.CreateApplicationBuilder(args);
+
+builder.Logging.EnableEnrichment();
+builder.Services.AddProcessLogEnricher();
+
+builder.Logging.AddJsonConsole(op =>
 {
-    internal class Program
+    op.JsonWriterOptions = new JsonWriterOptions
     {
-        public static async Task Main()
-        {
-            var builder = Host.CreateApplicationBuilder();
-            builder.Logging.EnableEnrichment();
-            builder.Services.AddProcessLogEnricher();
-            builder.Logging.AddJsonConsole(op =>
-            {
-                op.JsonWriterOptions = new JsonWriterOptions
-                {
-                    Indented = true
-                };
-            });
-            var hostBuilder = builder.Build();
-            var logger =
-               hostBuilder.Services.GetRequiredService<ILoggerFactory>().CreateLogger<Program>();
+        Indented = true
+    };
+});
 
-            logger.LogInformation("This is a sample log message");
+var host = builder.Build();
+var logger = host.Services.GetRequiredService<ILogger<Program>>();
 
-            await hostBuilder.RunAsync();
-
-        }
-    }
-}
+logger.LogInformation("This is a sample log message");
+await host.RunAsync();

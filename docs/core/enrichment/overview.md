@@ -32,7 +32,7 @@ To use log enrichment in your application, you need to:
 
 Here's a simple example showing how to set up log enrichment with process information:
 
-:::code language="csharp" source="snippets/enrichment/Program.cs" highlight="13,14":::
+:::code language="csharp" source="snippets/enrichment/Program.cs" highlight="8,9":::
 
 This configuration:
 

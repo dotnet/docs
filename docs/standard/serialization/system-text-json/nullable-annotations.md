@@ -1,8 +1,9 @@
 ---
 title: Respect nullable annotations
 description: "Learn how to configure serialization and deserialization to respect nullable annotations."
-ms.date: 10/22/2024
+ms.date: 10/20/2025
 no-loc: [System.Text.Json, Newtonsoft.Json]
+ai-usage: ai-assisted
 ---
 # Respect nullable annotations
 

@@ -1,7 +1,7 @@
 ---
 title: Thread-Safe collections
 description: Get started with thread-safe collections using the System.Collections.Concurrent namespace in .NET, which includes thread-safe and scalable collection classes.
-ms.date: 01/23/2023
+ms.date: 10/20/2025
 ms.custom: devdivchpfy22
 helpviewer_keywords:
   - "thread-safe collections, overview"

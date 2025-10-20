@@ -101,6 +101,7 @@ Certain expressions cause the compiler to emit the following informational warni
 - **CS9236**: *Compiling requires binding the lambda expression at least count times. Consider declaring the lambda expression with explicit parameter types, or if the containing method call is generic, consider using explicit type arguments.*
 
 The complexity of the lambda expressions and how they invoke other lambda expressions is negatively impacting compiler performance. The reason is that the compiler must infer parameter and argument types through the lambda expressions and the potential types takes time.
+
 ## Lambda expression parameters and returns
 
 These errors indicate a problem with a parameter declaration:

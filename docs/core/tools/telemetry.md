@@ -121,7 +121,7 @@ The telemetry feature collects the following data:
 | >=10.0.100    | Whether MSBuild was used for file-based apps with `dotnet run`. |
 | >=10.0.100    | Whether Roslyn compiler was used for file-based apps with `dotnet run`. |
 | >=10.0.100    | The detected LLM agent name if the CLI was invoked from an LLM agent. For more information, see [LLM detection](#llm-detection).|
-| >=10.0.100    | Capture the `global json` state at the time a command is invoked. The state is one of the following values: not_found, valid, invalid_json, invalid_data. |
+| >=10.0.100    | Capture the `global.json` state at the time a command is invoked. The state is one of the following values: **not_found**, **valid**, **invalid_json**, or **invalid_data**. |
 
 ### Collected options
 

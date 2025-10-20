@@ -165,7 +165,7 @@ You can [test your MCP server again](#test-the-mcp-server) before moving forward
     dotnet pack -c Release
     ```
 
-    This will produce one tool package and several platform-specific packages based on the `<RuntimeIdentifiers>` list in `SampleMcpServer.csproj`.
+    This command produces one tool package and several platform-specific packages based on the `<RuntimeIdentifiers>` list in `SampleMcpServer.csproj`.
 
 1. Publish the packages to NuGet:
 

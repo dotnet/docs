@@ -26,6 +26,15 @@ Or, if you're using .NET 10+ SDK:
 dotnet package add Microsoft.Extensions.Telemetry
 ```
 
+### [PackageReference](#tab/package-reference)
+
+```xml
+<PackageReference Include="Microsoft.Extensions.Telemetry"
+                  Version="*" /> <!-- Adjust version -->
+```
+
+---
+
 ## Usage
 
 To be able to use the process log enricher, first you need to enable enrichment. Then you can add the <xref:Microsoft.Extensions.DependencyInjection.ProcessEnricherServiceCollectionExtensions.AddProcessLogEnricher*> with default properties, like this:
@@ -42,7 +51,7 @@ The <xref:Microsoft.Extensions.Diagnostics.Enrichment.ProcessLogEnricherOptions>
 
 You can enable or disable individual options of the enricher using <xref:Microsoft.Extensions.DependencyInjection.ProcessEnricherServiceCollectionExtensions.AddProcessLogEnricher(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Microsoft.Extensions.Diagnostics.Enrichment.ProcessLogEnricherOptions})>:
 
-```cs
+```csharp
 serviceCollection.AddProcessLogEnricher(options =>
 {
     options.ThreadId = true;
@@ -50,7 +59,7 @@ serviceCollection.AddProcessLogEnricher(options =>
 });
 ```
 
-You may also disable or enable individual options using `appsettings.json` file configuration, for example:
+You may also disable or enable individual options using _appsettings.json_ file configuration, for example:
 
 ```json
 {
@@ -63,8 +72,9 @@ You may also disable or enable individual options using `appsettings.json` file 
 
 and apply it accordingly using <xref:Microsoft.Extensions.DependencyInjection.ProcessEnricherServiceCollectionExtensions.AddProcessLogEnricher(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfigurationSection)>:
 
-```cs
-serviceCollection.AddProcessLogEnricher(hostBuilder.Configuration.GetSection("ProcessLogEnricherOptions"));
+```csharp
+serviceCollection.AddProcessLogEnricher(
+    hostBuilder.Configuration.GetSection("ProcessLogEnricherOptions"));
 ```
 
 The console output after enabling both options should look like this:
@@ -75,7 +85,8 @@ The console output after enabling both options should look like this:
 
 The default configuration for process log enrichment is:
 
-| Property   | Default Value   | Description                                                  |
-| -----------| ----------------|--------------------------------------------------------------|
-| `ProcessId`     | true            | If true, logs are enriched with the current process ID. |
-| `ThreadId`      | false           | If true, logs are enriched with the current thread ID   |
+| Property    | Default Value | Description                                             |
+|-------------|---------------|---------------------------------------------------------|
+| `ProcessId` | `true`        | If true, logs are enriched with the current process ID. |
+| `ThreadId`  | `false`       | If true, logs are enriched with the current thread ID   |
+

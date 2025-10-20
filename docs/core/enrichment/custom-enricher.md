@@ -57,7 +57,7 @@ public class CustomEnricher : ILogEnricher
 
 ```
 
-And you register it as shown in the following code using <xref:Microsoft.Extensions.DependencyInjection.EnrichmentServiceCollectionExtensions.AddLogEnricher(Microsoft.Extensions.DependencyInjection.IServiceCollection)>:
+And you register it as shown in the following code using <xref:Microsoft.Extensions.DependencyInjection.EnrichmentServiceCollectionExtensions.AddLogEnricher``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)>:
 
 ```csharp
 var builder = Host.CreateApplicationBuilder(args);

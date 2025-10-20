@@ -1,7 +1,7 @@
 ---
 title: .NET Framework & Windows OS versions
 description: Learn about key features in each version of .NET Framework, including underlying CLR versions and versions installed by the Windows operating system.
-ms.date: 07/10/2025
+ms.date: 20/10/2025
 helpviewer_keywords:
   - "versions, .NET Framework"
 ---

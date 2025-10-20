@@ -73,17 +73,6 @@ public static class Nullable4
         string jsonMissing = """{}""";
         var resultMissing = JsonSerializer.Deserialize<Person>(jsonMissing, options);
         Console.WriteLine(resultMissing.Name is null); // True.
-
-        // Explicit null value - DOES throw an exception.
-        string jsonNull = """{"Name":null}""";
-        try
-        {
-            JsonSerializer.Deserialize<Person>(jsonNull, options);
-        }
-        catch (JsonException ex)
-        {
-            Console.WriteLine(ex.Message); // The constructor parameter 'Name' on type 'Person' doesn't allow null values.
-        }
     }
 
     record Person(string Name);

@@ -3,7 +3,7 @@ title: Service discovery in .NET
 description: Learn how to use the Microsoft.Extensions.ServiceDiscovery library to simplify the integration of service discovery patterns in .NET applications.
 author: IEvangelist
 ms.author: dapine
-ms.date: 04/10/2024
+ms.date: 10/20/2025
 ms.topic: overview
 ---
 
@@ -18,20 +18,13 @@ To get started with service discovery in .NET, install the [Microsoft.Extensions
 ### [.NET CLI](#tab/dotnet-cli)
 
 ```dotnetcli
-dotnet add package Microsoft.Extensions.ServiceDiscovery --prerelease
-```
-
-Or, if you're using .NET 10+ SDK:
-
-```dotnetcli
-dotnet package add Microsoft.Extensions.ServiceDiscovery --prerelease
+dotnet add package Microsoft.Extensions.ServiceDiscovery
 ```
 
 ### [PackageReference](#tab/package-reference)
 
 ```xml
-<PackageReference Include="Microsoft.Extensions.ServiceDiscovery"
-                  Version="[SelectVersion]" />
+<PackageReference Include="Microsoft.Extensions.ServiceDiscovery" />
 ```
 
 ---

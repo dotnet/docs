@@ -1,7 +1,7 @@
 ---
 title: "Working with .resx Files Programmatically"
 description: Create or retrieve data from XML resource (.resx) files programmatically using types and members in the System.Resources namespace of the .NET Class Library.
-ms.date: 03/13/2023
+ms.date: 10/20/2025
 dev_langs:
   - "csharp"
   - "vb"

@@ -3,7 +3,7 @@ title: Implement the IHostedService interface
 description: Learn how to implement a custom IHostedService interface in C#, much like the inbuilt .NET BackgroundService.
 author: IEvangelist
 ms.author: dapine
-ms.date: 12/13/2023
+ms.date: 10/20/2025
 ms.topic: tutorial
 ---
 

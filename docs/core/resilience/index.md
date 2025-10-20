@@ -3,7 +3,7 @@ title: Introduction to resilient app development
 description: Learn about resiliency as it relates to .NET and how to build a resilience pipeline.
 author: IEvangelist
 ms.author: dapine
-ms.date: 11/29/2023
+ms.date: 10/20/2025
 ---
 
 # Introduction to resilient app development
@@ -27,13 +27,13 @@ To get started with resilience in .NET, install the [Microsoft.Extensions.Resili
 ### [.NET CLI](#tab/dotnet-cli)
 
 ```dotnetcli
-dotnet add package Microsoft.Extensions.Resilience --version 8.0.0
+dotnet add package Microsoft.Extensions.Resilience
 ```
 
 ### [PackageReference](#tab/package-reference)
 
 ```xml
-<PackageReference Include="Microsoft.Extensions.Resilience" Version="8.0.0" />
+<PackageReference Include="Microsoft.Extensions.Resilience" />
 ```
 
 ---

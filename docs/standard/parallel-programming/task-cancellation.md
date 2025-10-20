@@ -1,7 +1,7 @@
 ---
 title: "Task Cancellation"
 description: Understand task cancellation, which is supported in the Task and Task<TResult> classes through the use of cancellation tokens in .NET.
-ms.date: "08/10/2022"
+ms.date: 10/20/2025
 ms.custom: devdivchpfy22
 dev_langs: 
   - "csharp"

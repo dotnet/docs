@@ -1,7 +1,7 @@
 ---
 title: "Parallel Programming in .NET: A guide to the documentation"
 description: A list of articles about parallel programming in .NET.
-ms.date: 03/03/2022
+ms.date: 10/20/2025
 helpviewer_keywords:
   - "parallel programming"
 ---

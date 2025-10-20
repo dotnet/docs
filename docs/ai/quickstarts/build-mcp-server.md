@@ -35,7 +35,7 @@ In this quickstart, you create a minimal Model Context Protocol (MCP) server usi
    dotnet new mcpserver -n SampleMcpServer
    ```
 
-   By default, this will create a self-contained tool package targetting all of the most common platforms that run .NET. Use `dotnet new mcpserver --help` to see more options.
+   By default, this command creates a self-contained tool package targeting all of the most common platforms that .NET is supported on. To see more options, use `dotnet new mcpserver --help`.
 
 1. Navigate to the `SampleMcpServer` directory:
 

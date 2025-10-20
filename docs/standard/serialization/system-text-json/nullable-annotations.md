@@ -84,6 +84,21 @@ record MyPoco(
     );
 ```
 
+## Missing values vs. null values
+
+It's important to understand the distinction between missing JSON properties and properties with explicit `null` values when using <xref:System.Text.Json.JsonSerializerOptions.RespectNullableAnnotations>. JavaScript distinguishes between `undefined` (missing property) and `null` (explicit null value). However, .NET doesn't have an `undefined` concept, so both cases deserialize to `null` in .NET.
+
+When `RespectNullableAnnotations` is `true`:
+
+- **Explicit null value**: Throws an exception for non-nullable properties. For example, `{"Name":null}` throws an exception when deserializing to a non-nullable `string Name` property.
+- **Missing property**: Does NOT throw an exception, even for non-nullable properties. For example, `{}` does not throw an exception when deserializing to a non-nullable `string Name` property. The property is set to `null`.
+
+The following code demonstrates this difference:
+
+:::code language="csharp" source="snippets/nullable-annotations/Nullable.cs" id="MissingVsNull":::
+
+This behavior occurs because missing properties are treated as optional (not provided), while explicit `null` values are treated as provided values that violate the non-nullable constraint. If you need to enforce that a property must be present in the JSON, use the `required` modifier or configure the property as required using <xref:System.Text.Json.Serialization.JsonRequiredAttribute> or the contracts model.
+
 ## See also
 
 - [Non-optional constructor parameters](required-properties.md#non-optional-constructor-parameters)

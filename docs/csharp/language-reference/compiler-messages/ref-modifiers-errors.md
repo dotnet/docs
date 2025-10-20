@@ -66,6 +66,7 @@ f1_keywords:
   - "CS9199"
   - "CS9200"
   - "CS9201"
+  - "CS9205"
   - "CS9265"
 helpviewer_keywords:
   - "CS0192"
@@ -132,6 +133,7 @@ helpviewer_keywords:
   - "CS9199"
   - "CS9200"
   - "CS9201"
+  - "CS9205"
   - "CS9265"
 ms.date: 11/06/2024
 ---
@@ -209,6 +211,7 @@ The following warnings are generated when reference variables are used incorrect
 - [**CS9198**](#reference-variable-restrictions): *Reference kind modifier of parameter doesn't match the corresponding parameter in target.*
 - [**CS9200**](#reference-variable-restrictions): *A default value is specified for `ref readonly` parameter, but `ref readonly` should be used only for references. Consider declaring the parameter as `in`.*
 - [**CS9201**](#reference-variable-restrictions): *Ref field should be ref-assigned before use.*
+- [**CS9205**](#incorrect-syntax): *Expected interpolated string*
 - [**CS9265**](#reference-variable-restrictions): *Field is never ref-assigned to, and will always have its default value (null reference)*
 
 These errors and warnings follow these themes:
@@ -228,12 +231,14 @@ These errors indicate that you're using incorrect syntax regarding reference var
 - **CS8373**:  *The left-hand side of a `ref` assignment must be a ref variable.*
 - **CS8388**:  *An `out` variable cannot be declared as a ref local.*
 - **CS9190**:  *`readonly` modifier must be specified after `ref`.*
+- **CS9205**: *Expected interpolated string*
 
 You can correct the error with one of these changes:
 
 - The left operand of an `= ref` operator must be a reference variable. For more information on the correct syntax, see [reference variables](../statements/declarations.md#reference-variables).
 - The parameter modifier `ref readonly` must be in that order. `readonly ref` is not a legal parameter modifier. Switch the order of the words.
 - A local variable can't be declared as `out`. To declare a local reference variable, use `ref`.
+- An `out` argument can't be an interpolated string.
 
 ## Reference variable restrictions
 

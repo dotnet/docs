@@ -31,6 +31,11 @@ f1_keywords:
   - "CS9178"
   - "CS9206"
   - "CS9207"
+  - "CS9231"
+  - "CS9232"
+  - "CS9233"
+  - "CS9234"
+  - "CS9235"
   - "CS9270"
 helpviewer_keywords:
   - "CS9137"
@@ -62,6 +67,11 @@ helpviewer_keywords:
   - "CS9178"
   - "CS9206"
   - "CS9207"
+  - "CS9231"
+  - "CS9232"
+  - "CS9233"
+  - "CS9234"
+  - "CS9235"
   - "CS9270"
 ms.date: 05/23/2025
 ---
@@ -95,6 +105,11 @@ The following errors are generated when source generators or interceptors are lo
 - [**CS9178**](#signature-mismatch): *Method must be non-generic to match*
 - [**CS9206**](#other-failures): *An interceptor cannot be declared in the global namespace.*
 - [**CS9207**](#other-failures): *Cannot intercept because method is not an invocation of an ordinary member method.*
+- [**CS9231**](#interceptslocationattribute-errors): *The data argument to InterceptsLocationAttribute is not in the correct format.*
+- [**CS9232**](#interceptslocationattribute-errors): *Version 'version' of the interceptors format is not supported. The latest supported version is '1'.*
+- [**CS9233**](#interceptslocationattribute-errors): *Cannot intercept a call in file 'file' because it is duplicated elsewhere in the compilation.*
+- [**CS9234**](#interceptslocationattribute-errors): *Cannot intercept a call in file 'file' because a matching file was not found in the compilation.*
+- [**CS9235**](#interceptslocationattribute-errors): *The data argument to InterceptsLocationAttribute refers to an invalid position in file 'file'.*
 
 The following warnings are generated when source generators or interceptors are loaded during a compilation:
 
@@ -159,6 +174,24 @@ Interceptors require a source mapping that maps the interceptable method and the
 - **CS9157**: *Line and character numbers provided to `InterceptsLocationAttribute` must be positive.*
 
 An interceptor specifies the location in the source code of the interceptable method. You specify the location by applying an `[InterceptsLocation]` attribute. You specify the line and column numbers in a remapped source file where the interceptor should be injected.  These errors indicate that something in the attribute or the location doesn't match a location for a valid interceptable method. For details on the format and values for this attribute, see the [feature specification](https://github.com/dotnet/roslyn/blob/main/docs/features/interceptors.md#interceptslocationattribute).
+
+## InterceptsLocationAttribute errors
+
+The following errors indicate issues with the `InterceptsLocationAttribute` format or the data provided to it:
+
+- **CS9231**: *The data argument to InterceptsLocationAttribute is not in the correct format.*
+- **CS9232**: *Version 'version' of the interceptors format is not supported. The latest supported version is '1'.*
+- **CS9233**: *Cannot intercept a call in file 'file' because it is duplicated elsewhere in the compilation.*
+- **CS9234**: *Cannot intercept a call in file 'file' because a matching file was not found in the compilation.*
+- **CS9235**: *The data argument to InterceptsLocationAttribute refers to an invalid position in file 'file'.*
+
+These errors occur when the `InterceptsLocationAttribute` contains invalid data:
+
+- **CS9231** is generated when the data format doesn't match the expected structure. The attribute requires specifically formatted data that encodes the file path and position information.
+- **CS9232** indicates you're using a version number that isn't supported. The interceptors feature uses version '1' format. Update your source generator to use the supported version.
+- **CS9233** happens when the compilation contains multiple files with the same path, making it ambiguous which file to intercept in. Ensure each file in your compilation has a unique path.
+- **CS9234** is emitted when the file path specified in the attribute doesn't match any file in the current compilation. Verify the file path is correct and the file is included in the compilation.
+- **CS9235** occurs when the position data (line and character numbers) points to an invalid location in the specified file. This can happen if the position is outside the file's bounds or doesn't correspond to a valid interception point.
 
 ## Other failures
 

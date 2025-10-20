@@ -173,7 +173,7 @@ You can [test your MCP server again](#test-the-mcp-server) before moving forward
     dotnet nuget push bin/Release/*.nupkg --api-key <your-api-key> --source https://api.nuget.org/v3/index.json
     ```
 
-    May sure to publish all .nupkg files (`*.nupkg`) to ensure every supported platform can run the MCP server.
+    Be sure to publish all `.nupkg` files to ensure every supported platform can run the MCP server.
 
     If you want to test the publishing flow before publishing to NuGet.org, you can register an account on the NuGet Gallery integration environment: [https://int.nugettest.org](https://int.nugettest.org). The `push` command would be modified to:
 

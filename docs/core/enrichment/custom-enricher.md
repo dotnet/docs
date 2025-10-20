@@ -49,50 +49,45 @@ the <xref:Microsoft.Extensions.Diagnostics.Enrichment.IEnrichmentTagCollector.Ad
 ```csharp
 public class CustomEnricher : ILogEnricher
 {
-    // Your custom code
-
     public void Enrich(IEnrichmentTagCollector collector)
     {
-        // Call Add to add all required key/value pair to enrich logs with.
-        foreach(var property in propertiesToEnrichWith)
-        {
-            collector.Add(propertyName, propertyValue);
-        }
+        collector.Add("customKey", "customValue");
     }
 }
 
-...
+```
 
-var hostBuilder = new HostBuilder()
-    .ConfigureServices((_, serviceCollection) =>
-    {
-        _ = serviceCollection.AddLogEnricher<CustomEnricher>());
-    });
+And you register it as shown in the following code using <xref:Microsoft.Extensions.DependencyInjection.EnrichmentServiceCollectionExtensions.AddLogEnricher(Microsoft.Extensions.DependencyInjection.IServiceCollection)>:
+
+```csharp
+var builder = Host.CreateApplicationBuilder(args);
+builder.Logging.EnableEnrichment();
+builder.Services.AddLogEnricher<CustomEnricher>();
 ```
 
 It's also possible to configure manual instantiation of custom enrichers:
 
 ```csharp
-public class AnotherEnricher : ILogEnricher() { }
-...
-
-var hostBuilder = new HostBuilder()
-    .ConfigureServices((_, serviceCollection) =>
+public class AnotherEnricher : ILogEnricher
+{
+    private readonly string _key;
+    private readonly object _value;
+    public CustomEnricher(string key, object value)
     {
-        _ = serviceCollection.AddLogEnricher(new AnotherEnricher()));
-    });
+        _key = key;
+        _value = value;
+    }
+    public void Enrich(IEnrichmentTagCollector collector)
+    {
+        collector.Add(_key, _value);
+    }
+}
 ```
 
-Alternatively:
+And you register it as shown in the following code <xref:Microsoft.Extensions.DependencyInjection.EnrichmentServiceCollectionExtensions.AddLogEnricher(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Diagnostics.Enrichment.ILogEnricher)>:
 
 ```csharp
-var hostApplicationBuilder = WebApplication.CreateBuilder();
-hostApplicationBuilder.Services.AddLogEnricher<CustomEnricher>();
-```
-
-and
-
-```csharp
-var hostApplicationBuilder = WebApplication.CreateBuilder();
-hostApplicationBuilder.Services.AddLogEnricher(new AnotherEnricher()));
+var builder = Host.CreateApplicationBuilder();
+builder.Logging.EnableEnrichment();
+builder.Services.AddLogEnricher(new AnotherEnricher("anotherKey", "anotherValue"));
 ```

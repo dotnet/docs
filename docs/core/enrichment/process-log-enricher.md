@@ -89,4 +89,3 @@ The default configuration for process log enrichment is:
 |-------------|---------------|---------------------------------------------------------|
 | `ProcessId` | `true`        | If true, logs are enriched with the current process ID. |
 | `ThreadId`  | `false`       | If true, logs are enriched with the current thread ID   |
-

@@ -12,6 +12,10 @@ Log enrichment is a powerful feature that automatically attaches contextual info
 
 Enrichment augments telemetry objects with additional information that provides valuable context about the environment, application state, and execution context when the telemetry was generated. This contextual data helps with debugging, monitoring, performance analysis, and understanding application behavior in production environments.
 
+## Why is enrichment important?
+
+Enrichment plays a critical role in enhancing observability and diagnostics by adding standardized contextual information—such as process details, environment tags, or user identifiers—to telemetry data. This additional metadata transforms raw logs into structured, meaningful insights, making it easier to trace issues, correlate events, and improve application reliability. By enabling enrichment and configuring specific enrichers, teams can streamline troubleshooting, optimize performance monitoring, and ensure compliance with operational standards. Ultimately, enrichment is not just a technical add-on; it’s a foundational practice for building resilient, transparent systems that support informed decision-making and faster incident resolution.
+
 ## How enrichment works
 
 The enrichment framework operates through a collection of enrichers that are registered with the dependency injection container. When telemetry is generated, all registered enrichers automatically contribute their contextual information to the telemetry payload. You just register the specific set of enrichers you want into an <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection> instance. The enrichers run automatically without requiring changes to your application code. You simply configure which enrichers you want to use during application startup.

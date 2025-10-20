@@ -1,7 +1,7 @@
 ---
 title: Create resource files
 description: Make resource files for .NET apps. Build text files with string resources, XML or binary files programmatically, or XML files with string, image, or object data.
-ms.date: 03/13/2023
+ms.date: 10/20/2025
 dev_langs:
   - "csharp"
   - "vb"

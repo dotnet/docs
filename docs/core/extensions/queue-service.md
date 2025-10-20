@@ -3,7 +3,7 @@ title: Create a Queue Service
 description: Learn how to create a queue service subclass of BackgroundService in .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 12/13/2023
+ms.date: 10/20/2025
 ms.topic: tutorial
 ---
 

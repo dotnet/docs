@@ -60,7 +60,7 @@ services.AddAsyncState();
 var provider = services.BuildServiceProvider();
 ```
 
-This registration makes the <xref:Microsoft.Extensions.AsyncState.IAsyncContext%601> and <xref:Microsoft.Extensions.AsyncState.IAsyncState%601> interfaces available for dependency injection.
+This registration makes the <xref:Microsoft.Extensions.AsyncState.IAsyncContext%601> and <xref:Microsoft.Extensions.AsyncState.IAsyncState> interfaces available for dependency injection.
 
 ## Use IAsyncContext
 
@@ -97,7 +97,7 @@ The value set in the context flows through asynchronous operations, making it av
 
 ## Use IAsyncState
 
-The <xref:Microsoft.Extensions.AsyncState.IAsyncState%601> interface provides a simpler property-based API for accessing async state:
+The <xref:Microsoft.Extensions.AsyncState.IAsyncState> interface provides a simpler property-based API for accessing async state:
 
 ```csharp
 using Microsoft.Extensions.AsyncState;
@@ -107,7 +107,7 @@ var services = new ServiceCollection();
 services.AddAsyncState();
 
 var provider = services.BuildServiceProvider();
-var asyncState = provider.GetRequiredService<IAsyncState<RequestInfo>>();
+var asyncState = provider.GetRequiredService<IAsyncState>();
 
 // Initialize the state
 asyncState.Initialize();
@@ -280,7 +280,7 @@ When using async state, consider the following best practices:
 - **Limit state size**: Keep async state objects small to minimize memory overhead and serialization costs in scenarios where async state might need to be serialized.
 - **Initialize state early**: Set async state values as early as possible in your async operation to ensure they're available throughout the execution flow.
 - **Clean up state**: Reset or clear async state when it's no longer needed to avoid memory leaks in long-running applications.
-- **Use appropriate interfaces**: Use `IAsyncContext<T>` when you need explicit control over state initialization and reset. Use `IAsyncState<T>` for simpler property-based access.
+- **Use appropriate interfaces**: Use `IAsyncContext<T>` when you need explicit control over state initialization and reset. Use `IAsyncState` for simpler property-based access.
 - **Type safety**: Create specific context types rather than using generic dictionaries to maintain type safety and improve code clarity.
 
 ## See also

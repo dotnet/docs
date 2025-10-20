@@ -9,7 +9,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.0-rc.2.25502.107" />
-    <PackageReference Include="OllamaSharp" Version="5.4.7" />
+    <PackageReference Include="OllamaSharp" Version="5.4.8" />
     <ProjectReference Include="..\AI.Shared\AI.Shared.csproj" />
   </ItemGroup>
 

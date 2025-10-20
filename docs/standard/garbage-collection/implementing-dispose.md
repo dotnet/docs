@@ -91,7 +91,7 @@ All non-sealed classes (or Visual Basic classes not modified as `NotInheritable`
 
 ### Base class with managed resources
 
-Here's a general example of implementing the dispose pattern for a base class that only owns managed resources.
+Here's a general example of implementing the dispose pattern for a base class that only owns managed resources. The example uses <xref:System.Threading.Interlocked.CompareExchange%2A?displayProperty=nameWithType> to ensure thread-safe disposal.
 
 :::code language="csharp" source="../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.idisposable/cs/base1.cs":::
 :::code language="vb" source="../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.idisposable/vb/base1.vb":::
@@ -153,7 +153,7 @@ The following code demonstrates how to handle unmanaged resources by implementin
 > The behavior of the `DisposableBaseWithSafeHandle` class is equivalent to the behavior of the [`DisposableBaseWithFinalizer` class in a previous example](#base-class-with-unmanaged-resources), however the approach demonstrated here is safer:
 >
 > - There is no need to implement a finalizer, because <xref:System.Runtime.InteropServices.SafeHandle> will take care of finalization.
-> - There is no need for synchronization to guarantee thread safety. Even though there is a race condition in the `Dispose` implementation of `DisposableBaseWithSafeHandle`, <xref:System.Runtime.InteropServices.SafeHandle> guarantees that <xref:System.Runtime.InteropServices.SafeHandle.ReleaseHandle%2A?displayProperty=nameWithType> will be called only once.
+> - <xref:System.Runtime.InteropServices.SafeHandle> guarantees that <xref:System.Runtime.InteropServices.SafeHandle.ReleaseHandle%2A?displayProperty=nameWithType> will be called only once, even in multi-threaded scenarios.
 
 ### Built-in safe handles in .NET
 

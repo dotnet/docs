@@ -1,8 +1,13 @@
 ﻿using System;
+using System.Threading;
 
 public class Disposable : IDisposable
 {
-    private bool _disposed;
+    // Detect redundant Dispose() calls in a thread-safe manner.
+    // _disposed == 0 means Dispose(bool) has not been called yet.
+    // _disposed == 1 means Dispose(bool) has been already called.
+    private int _disposed;
+
     // <SnippetDispose>
     public void Dispose()
     {
@@ -16,21 +21,19 @@ public class Disposable : IDisposable
     // <SnippetDisposeBool>
     protected virtual void Dispose(bool disposing)
     {
-        if (_disposed)
+        // In case _disposed is 0, atomically set it to 1.
+        // Enter the branch only if the original value is 0.
+        if (Interlocked.CompareExchange(ref _disposed, 1, 0) == 0)
         {
-            return;
-        }
+            if (disposing)
+            {
+                // Dispose managed state (managed objects).
+                // ...
+            }
 
-        if (disposing)
-        {
-            // Dispose managed state (managed objects).
+            // Free unmanaged resources.
             // ...
         }
-
-        // Free unmanaged resources.
-        // ...
-
-        _disposed = true;
     }
     // </SnippetDisposeBool>
 }

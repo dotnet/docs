@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Runtime.InteropServices;
+using System.Threading;
 using Microsoft.Win32.SafeHandles;
 
 // Wraps the IntPtr allocated by Marshal.AllocHGlobal() into a SafeHandle.
@@ -27,8 +28,10 @@ class LocalAllocHandle : SafeHandleZeroOrMinusOneIsInvalid
 
 public class DisposableBaseWithSafeHandle : IDisposable
 {
-    // Detect redundant Dispose() calls.
-    private bool _isDisposed;
+    // Detect redundant Dispose() calls in a thread-safe manner.
+    // _isDisposed == 0 means Dispose(bool) has not been called yet.
+    // _isDisposed == 1 means Dispose(bool) has been already called.
+    private int _isDisposed;
 
     // Managed disposable objects owned by this class
     private LocalAllocHandle? _safeHandle = LocalAllocHandle.Allocate(10);
@@ -44,10 +47,10 @@ public class DisposableBaseWithSafeHandle : IDisposable
     // Protected implementation of Dispose pattern.
     protected virtual void Dispose(bool disposing)
     {
-        if (!_isDisposed)
+        // In case _isDisposed is 0, atomically set it to 1.
+        // Enter the branch only if the original value is 0.
+        if (Interlocked.CompareExchange(ref _isDisposed, 1, 0) == 0)
         {
-            _isDisposed = true;
-
             if (disposing)
             {
                 // Dispose managed state.

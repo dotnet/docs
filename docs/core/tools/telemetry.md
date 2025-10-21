@@ -121,8 +121,8 @@ The telemetry feature collects the following data:
 | >=10.0.100    | Whether MSBuild was used for file-based apps with `dotnet run`. |
 | >=10.0.100    | Whether Roslyn compiler was used for file-based apps with `dotnet run`. |
 | >=10.0.100    | The detected LLM agent name if the CLI was invoked from an LLM agent. For more information, see [LLM detection](#llm-detection).|
-| >=10.0.100    | Usage counts of MSBuild Task Factories (for example, inline C# tasks, multithreaded-aware tasks, out-of-process tasks). |
-| >=10.0.100    | Number of MSBuild tasks executed in TaskHosts versus not in TaskHosts. |
+| >=10.0.100    | Which MSBuild Task Factories are used to load and run tasks, (including inline C# tasks, Multithreaded-aware tasks, and out-of-process tasks) and how many tasks they execute. |
+| >=10.0.100    | Number of MSBuild tasks executed in TaskHosts versus tasks not executed in TaskHosts. |
 
 ### Collected options
 

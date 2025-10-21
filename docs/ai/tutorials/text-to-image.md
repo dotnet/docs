@@ -154,9 +154,11 @@ You can customize image generation by providing options such as size, quality, a
 
 The `ImageGenerationOptions` class allows you to specify:
 
-- **Size**: The dimensions of the generated image (for example, 1024x1024, 1792x1024).
-- **ImageCount**: The number of images to generate (1-10).
+- **ImageSize**: The dimensions of the generated image as a `System.Drawing.Size`.
+- **Count**: The number of images to generate (1-10).
 - **ResponseFormat**: Whether to return a URL or base64-encoded data.
+- **MediaType**: The media type (MIME type) of the generated image.
+- **ModelId**: Override the model ID for specific requests.
 - **AdditionalProperties**: Provider-specific options.
 
 ## Add telemetry and logging

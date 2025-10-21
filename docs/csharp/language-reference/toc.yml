@@ -595,7 +595,7 @@ items:
     displayName: CS0185, CS9216, CS9217
   - name: Unsafe code
     href: ./compiler-messages/unsafe-code-errors.md
-    displayName: CS0193, CS0196, CS0208, CS0209, CS0210, CS0211, CS0212, CS0213, CS0214, CS0227, CS0233, CS0242, CS0244, CS0254, CS0459, CS0821, CS1641, CS1642, CS1656, CS1663, CS1665, CS1666, CS1708, CS1716, CS1919, CS8812, CS9123
+    displayName: CS0193, CS0196, CS0208, CS0209, CS0210, CS0211, CS0212, CS0213, CS0214, CS0227, CS0233, CS0242, CS0244, CS0254, CS0459, CS0821, CS1641, CS1642, CS1656, CS1663, CS1665, CS1666, CS1708, CS1716, CS1919, CS4004, CS8812, CS9123
   - name: Warning waves
     href: ./compiler-messages/warning-waves.md
     displayName: >
@@ -1777,8 +1777,6 @@ items:
       href: ../misc/cs2035.md
     - name: CS2036
       href: ../misc/cs2036.md
-    - name: CS4004
-      href: ./compiler-messages/cs4004.md
     - name: CS4008
       href: ./compiler-messages/cs4008.md
     - name: CS4009

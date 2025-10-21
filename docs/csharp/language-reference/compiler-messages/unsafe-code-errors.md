@@ -25,10 +25,11 @@ f1_keywords:
  - "CS1665"
  - "CS1666"
  - "CS1708"
+ - "CS4004"
  - "CS1716"
  - "CS1919"
  - "CS8812"
- - "CS9123" # The '&' operator should not be used on parameters or local variables in async methods. (new unsafe file)
+ - "CS9123"
 helpviewer_keywords:
  - "CS0193"
  - "CS0196"
@@ -54,9 +55,10 @@ helpviewer_keywords:
  - "CS1666"
  - "CS1708"
  - "CS1716"
+ - "CS4004"
  - "CS1919"
  - "CS8812"
- - "CS9123" # The '&' operator should not be used on parameters or local variables in async methods. (new unsafe file)
+ - "CS9123"
 ms.date: 10/21/2025
 ---
 # Resolve errors and warnings in unsafe code constructs
@@ -91,6 +93,7 @@ That's by design. The text closely matches the text of the compiler error / warn
  - [**CS1708**](#cs1708): *Fixed size buffers can only be accessed through locals or fields*
  - [**CS1716**](#cs1716): *Do not use 'System.Runtime.CompilerServices.FixedBuffer' attribute. Use the 'fixed' field modifier instead.*
  - [**CS1919**](#cs1919): *Unsafe type 'type name' cannot be used in object creation.*
+ - [**CS4004**](#cs4004): *Cannot await in an unsafe context*
  - [**CS8812**](#cs8812): *Cannot convert `&Method` group to non-function pointer type.*
  - **CS9123**: *The '`&`' operator should not be used on parameters or local variables in async methods.
 
@@ -1061,6 +1064,84 @@ unsafe public class C
 ## See also
 
 - [Interoperability](../../advanced-topics/interop/index.md)
+
+## CS4004
+
+Cannot await in an unsafe context
+
+This error occurs when you use the `await` keyword in an [`unsafe` context](../keywords/unsafe.md). The compiler can't allow await operations in unsafe contexts.
+
+### Example
+
+The following sample generates CS4004:
+
+```csharp
+using System.Threading.Tasks;
+
+public static class C
+{
+    public static unsafe async Task<string> ReverseTextAsync(string text)
+    {
+        return await Task.Run(() =>
+        {
+            if (string.IsNullOrEmpty(text))
+            {
+                return text;
+            }
+
+            fixed (char* pText = text)
+            {
+                char* pStart = pText;
+                char* pEnd = pText + text.Length - 1;
+                for (int i = text.Length / 2; i >= 0; i--)
+                {
+                    char temp = *pStart;
+                    *pStart++ = *pEnd;
+                    *pEnd-- = temp;
+                }
+
+                return text;
+            }
+        });
+    }
+}
+```
+
+### To correct this error
+
+Separate the unsafe code from the awaitable code. One technique is creating a new method for the unsafe code and then calling it from the awaitable code. For example:
+
+```csharp
+public static class C
+{
+    public static async Task<string> ReverseTextAsync(string text)
+    {
+        return await Task.Run(() => ReverseTextUnsafe(text));
+    }
+
+    private static unsafe string ReverseTextUnsafe(string text)
+    {
+        if (string.IsNullOrEmpty(text))
+        {
+            return text;
+        }
+
+        fixed (char* pText = text)
+        {
+            char* pStart = pText;
+            char* pEnd = pText + text.Length - 1;
+            for (int i = text.Length / 2; i >= 0; i--)
+            {
+                char temp = *pStart;
+                *pStart++ = *pEnd;
+                *pEnd-- = temp;
+            }
+
+            return text;
+        }
+    }
+}
+```
 
 ## CS8812
 

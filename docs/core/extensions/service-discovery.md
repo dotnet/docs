@@ -21,6 +21,12 @@ To get started with service discovery in .NET, install the [Microsoft.Extensions
 dotnet add package Microsoft.Extensions.ServiceDiscovery
 ```
 
+Or, if you're using .NET 10+ SDK:
+
+```dotnetcli
+dotnet package add Microsoft.Extensions.ServiceDiscovery
+```
+
 ### [PackageReference](#tab/package-reference)
 
 ```xml

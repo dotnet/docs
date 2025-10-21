@@ -231,7 +231,7 @@ These errors indicate that you're using incorrect syntax regarding reference var
 - **CS8373**:  *The left-hand side of a `ref` assignment must be a ref variable.*
 - **CS8388**:  *An `out` variable cannot be declared as a ref local.*
 - **CS9190**:  *`readonly` modifier must be specified after `ref`.*
-- **CS9205**: *Expected interpolated string*
+- **CS9205**: *Expected interpolated string.*
 
 You can correct the error with one of these changes:
 

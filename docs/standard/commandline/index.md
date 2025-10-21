@@ -1,13 +1,14 @@
 ---
 title: System.CommandLine overview
 description: "Learn how to develop and use command-line apps that are based on the System.CommandLine library."
-ms.date: 04/07/2022
+ms.date: 10/21/2025
 no-loc: [System.CommandLine]
 helpviewer_keywords:
   - "command line interface"
   - "command line"
   - "System.CommandLine"
 ms.topic: overview
+ai-usage: ai-assisted
 ---
 
 # System.CommandLine overview
@@ -35,12 +36,12 @@ The library is available as a NuGet package: [System.CommandLine](https://www.nu
 
 ## Next steps
 
-To get started with System.CommandLine, see the following resources:
+To get started with System.CommandLine, see these resources:
 
 - [Tutorial: Get started with System.CommandLine](get-started-tutorial.md)
 - [Syntax overview: commands, options, and arguments](syntax.md)
 
-To learn more, see the following resources:
+To learn more, see these resources:
 
 - [How to parse and invoke the result](how-to-parse-and-invoke.md)
 - [How to customize parsing and validation](how-to-customize-parsing-and-validation.md)

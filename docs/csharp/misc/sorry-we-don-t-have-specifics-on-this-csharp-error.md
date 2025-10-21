@@ -575,23 +575,10 @@ f1_keywords:
   - "CS9095"
   - "CS9096"
   - "CS9097"
-  # C# 12 errors begin here
-  - "CS9123"
-  - "CS9125"
-  - "CS9205"
-  - "CS9212"
-  - "CS9213"
-  - "CS9214"
-  - "CS9215"
-  - "CS9222"
-  - "CS9229"
-  - "CS9230"
-  - "CS9231"
-  - "CS9232"
-  - "CS9233"
-  - "CS9234"
-  - "CS9235"
-  - "CS9236"
+# C# 12 errors begin here
+  - "CS9123" # The '&' operator should not be used on parameters or local variables in async methods. (new unsafe file)
+  - "CS9229" # Modifiers cannot be placed on using declarations (using declarations)
+  - "CS9230" # Cannot perform a dynamic invocation on an expression with type 'type'. (dynamic binding)
 # C# 14 errors begin here
   - "CS9327"
   - "CS9328"

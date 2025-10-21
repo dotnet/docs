@@ -176,7 +176,7 @@ To use unsafe code correctly:
 - **CS1708**: *Fixed size buffers can only be accessed through locals or fields*
 - **CS1716**: *Do not use 'System.Runtime.CompilerServices.FixedBuffer' attribute. Use the 'fixed' field modifier instead*
 
-These errors occur when you work with fixed-size buffers. Fixed-size buffers are arrays embedded directly in structs and are primarily used for interop scenarios. For more information, see [Fixed-size buffers](../../language-reference/unsafe-code.md#fixed-size-buffers).
+These errors occur when you work with fixed-size buffers. Fixed-size buffers are arrays embedded directly in structs and are primarily used for interop scenarios. For more information, see [Fixed-size buffers](../unsafe-code.md#fixed-size-buffers).
 
 To declare and use fixed-size buffers correctly:
 

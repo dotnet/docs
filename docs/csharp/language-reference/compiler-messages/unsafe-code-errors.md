@@ -68,36 +68,34 @@ This article covers the following compiler errors:
 <!-- The text in this list generates issues for Acrolinx, because they don't use contractions.
 That's by design. The text closely matches the text of the compiler error / warning for SEO purposes.
  -->
- - [**CS0193**](#pointer-operations-and-dereferencing): *The \* or -> operator must be applied to a data pointer*
- - [**CS0196**](#pointer-operations-and-dereferencing): *A pointer must be indexed by only one value*
- - [**CS0208**](#pointer-types-and-managed-types): *Cannot take the address of, get the size of, or declare a pointer to a managed type ('type')*
- - [**CS0209**](#fixed-buffers): *The type of local declared in a fixed statement must be a pointer type*
- - [**CS0210**](#fixed-buffers): *You must provide an initializer in a fixed or `using` statement declaration*
- - [**CS0211**](#fixed-buffers): *Cannot take the address of the given expression*
- - [**CS0212**](#fixed-buffers): *You can only take the address of an unfixed expression inside of a fixed statement initializer*
- - [**CS0213**](#fixed-buffers): *You cannot use the fixed statement to take the address of an already fixed expression*
- - [**CS0214**](#unsafe-context-restrictions): *Pointers and fixed size buffers may only be used in an unsafe context*
- - [**CS0227**](#unsafe-context-restrictions): *Unsafe code may only appear if compiling with /unsafe*
- - [**CS0233**](#pointer-types-and-managed-types): *'identifier' does not have a predefined size, therefore sizeof can only be used in an unsafe context*
- - [**CS0242**](#pointer-operations-and-dereferencing): *The operation in question is undefined on void pointers*
- - [**CS0244**](#unsafe-context-restrictions): *Neither 'is' nor 'as' is valid on pointer types*
- - [**CS0254**](#fixed-buffers): *The right hand side of a fixed statement assignment may not be a cast expression*
- - [**CS0459**](#fixed-buffers): *Cannot take the address of a read-only local variable*
- - [**CS0821**](#fixed-buffers): *Implicitly typed locals cannot be fixed*
- - [**CS1641**](#fixed-size-buffers): *A fixed size buffer field must have the array size specifier after the field name*
- - [**CS1642**](#fixed-size-buffers): *Fixed size buffer fields may only be members of structs.*
- - [**CS1656**](#fixed-buffers): *Cannot assign to 'variable' because it is a 'read-only variable type'*
- - [**CS1663**](#fixed-size-buffers): *Fixed size buffer type must be one of the following: bool, byte, short, int, long, char, sbyte, ushort, uint, ulong, float or double*
- - [**CS1665**](#fixed-size-buffers): *Fixed size buffers must have a length greater than zero*
- - [**CS1666**](#fixed-size-buffers): *You cannot use fixed size buffers contained in unfixed expressions. Try using the fixed statement.*
- - [**CS1708**](#fixed-size-buffers): *Fixed size buffers can only be accessed through locals or fields*
- - [**CS1716**](#fixed-size-buffers): *Do not use 'System.Runtime.CompilerServices.FixedBuffer' attribute. Use the 'fixed' field modifier instead.*
- - [**CS1919**](#unsafe-context-requirements): *Unsafe type 'type name' cannot be used in object creation.*
- - [**CS4004**](#unsafe-context-requirements): *Cannot await in an unsafe context*
- - [**CS8812**](#function-pointers): *Cannot convert `&Method` group to non-function pointer type.*
- - [**CS9123**](#unsafe-context-requirements): *The '`&`' operator should not be used on parameters or local variables in async methods.
-
-In addition, the following warnings are covered in this article:
+- [**CS0193**](#pointer-operations-and-dereferencing): *The \* or -> operator must be applied to a data pointer*
+- [**CS0196**](#pointer-operations-and-dereferencing): *A pointer must be indexed by only one value*
+- [**CS0208**](#pointer-types-and-managed-types): *Cannot take the address of, get the size of, or declare a pointer to a managed type ('type')*
+- [**CS0209**](#fixed-buffers): *The type of local declared in a fixed statement must be a pointer type*
+- [**CS0210**](#fixed-buffers): *You must provide an initializer in a fixed or `using` statement declaration*
+- [**CS0211**](#fixed-buffers): *Cannot take the address of the given expression*
+- [**CS0212**](#fixed-buffers): *You can only take the address of an unfixed expression inside of a fixed statement initializer*
+- [**CS0213**](#fixed-buffers): *You cannot use the fixed statement to take the address of an already fixed expression*
+- [**CS0214**](#unsafe-context-restrictions): *Pointers and fixed size buffers may only be used in an unsafe context*
+- [**CS0227**](#unsafe-context-restrictions): *Unsafe code may only appear if compiling with /unsafe*
+- [**CS0233**](#pointer-types-and-managed-types): *'identifier' does not have a predefined size, therefore sizeof can only be used in an unsafe context*
+- [**CS0242**](#pointer-operations-and-dereferencing): *The operation in question is undefined on void pointers*
+- [**CS0244**](#unsafe-context-restrictions): *Neither 'is' nor 'as' is valid on pointer types*
+- [**CS0254**](#fixed-buffers): *The right hand side of a fixed statement assignment may not be a cast expression*
+- [**CS0459**](#fixed-buffers): *Cannot take the address of a read-only local variable*
+- [**CS0821**](#fixed-buffers): *Implicitly typed locals cannot be fixed*
+- [**CS1641**](#fixed-size-buffers): *A fixed size buffer field must have the array size specifier after the field name*
+- [**CS1642**](#fixed-size-buffers): *Fixed size buffer fields may only be members of structs.*
+- [**CS1656**](#fixed-buffers): *Cannot assign to 'variable' because it is a 'read-only variable type'*
+- [**CS1663**](#fixed-size-buffers): *Fixed size buffer type must be one of the following: bool, byte, short, int, long, char, sbyte, ushort, uint, ulong, float or double*
+- [**CS1665**](#fixed-size-buffers): *Fixed size buffers must have a length greater than zero*
+- [**CS1666**](#fixed-size-buffers): *You cannot use fixed size buffers contained in unfixed expressions. Try using the fixed statement.*
+- [**CS1708**](#fixed-size-buffers): *Fixed size buffers can only be accessed through locals or fields*
+- [**CS1716**](#fixed-size-buffers): *Do not use 'System.Runtime.CompilerServices.FixedBuffer' attribute. Use the 'fixed' field modifier instead.*
+- [**CS1919**](#unsafe-context-restrictions): *Unsafe type 'type name' cannot be used in object creation.*
+- [**CS4004**](#unsafe-context-restrictions): *Cannot await in an unsafe context*
+- [**CS8812**](#function-pointers): *Cannot convert `&Method` group to non-function pointer type.*
+- [**CS9123**](#unsafe-context-restrictions): *The '`&`' operator should not be used on parameters or local variables in async methods.*
 
 ## Pointer operations and dereferencing
 

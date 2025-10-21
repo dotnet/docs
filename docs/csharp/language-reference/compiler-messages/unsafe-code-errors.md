@@ -13,7 +13,17 @@ f1_keywords:
  - "CS0214"
  - "CS0227"
  - "CS0233"
+ - "CS0242"
+ - "CS0244"
+ - "CS0254"
+ - "CS0459"
+ - "CS0821"
+ - "CS1641"
+ - "CS1642"
  - "CS1656"
+ - "CS1663"
+ - "CS1665"
+ - "CS1666"
  - "CS1708"
  - "CS1716"
  - "CS1919"
@@ -31,7 +41,17 @@ helpviewer_keywords:
  - "CS0214"
  - "CS0227"
  - "CS0233"
+ - "CS0242"
+ - "CS0244"
+ - "CS0254"
+ - "CS0459"
+ - "CS0821"
+ - "CS1641"
+ - "CS1642"
  - "CS1656"
+ - "CS1663"
+ - "CS1665"
+ - "CS1666"
  - "CS1708"
  - "CS1716"
  - "CS1919"
@@ -57,7 +77,17 @@ That's by design. The text closely matches the text of the compiler error / warn
  - [**CS0214**](#cs0214): *Pointers and fixed size buffers may only be used in an unsafe context*
  - [**CS0227**](#cs0227): *Unsafe code may only appear if compiling with /unsafe*
  - [**CS0233**](#cs0233): *'identifier' does not have a predefined size, therefore sizeof can only be used in an unsafe context*
+ - [**CS0242**](#cs0242): *The operation in question is undefined on void pointers*
+ - [**CS0244**](#cs0244): *Neither 'is' nor 'as' is valid on pointer types*
+ - [**CS0254**](#cs0254): *The right hand side of a fixed statement assignment may not be a cast expression*
+ - [**CS0459**](#cs0459): *Cannot take the address of a read-only local variable*
+ - [**CS0821**](#cs0821): *Implicitly typed locals cannot be fixed*
+ - [**CS1641**](#cs1641): *A fixed size buffer field must have the array size specifier after the field name*
+ - [**CS1642**](#cs1642): *Fixed size buffer fields may only be members of structs.*
  - [**CS1656**](#cs1656): *Cannot assign to 'variable' because it is a 'read-only variable type'*
+ - [**CS1663**](#cs1663): *Fixed size buffer type must be one of the following: bool, byte, short, int, long, char, sbyte, ushort, uint, ulong, float or double*
+ - [**CS1665**](#cs1665): *Fixed size buffers must have a length greater than zero*
+ - [**CS1666**](#cs1666): *You cannot use fixed size buffers contained in unfixed expressions. Try using the fixed statement.*
  - [**CS1708**](#cs1708): *Fixed size buffers can only be accessed through locals or fields*
  - [**CS1716**](#cs1716): *Do not use 'System.Runtime.CompilerServices.FixedBuffer' attribute. Use the 'fixed' field modifier instead.*
  - [**CS1919**](#cs1919): *Unsafe type 'type name' cannot be used in object creation.*
@@ -496,6 +526,226 @@ public class MyClass
 }
 ```
 
+## CS0242
+
+The operation in question is undefined on void pointers
+
+Incrementing a void pointer is not allowed. For more information, see [Unsafe Code and Pointers](../unsafe-code.md).
+
+### Example
+
+The following sample generates CS0242:
+
+```csharp
+// CS0242.cs
+// compile with: /unsafe
+class TestClass
+{
+   public unsafe void Test()
+   {
+      void * p = null;
+      p++;   // CS0242, incrementing a void pointer not allowed
+   }
+
+   public static void Main()
+   {
+   }
+}
+```
+
+## CS0244
+
+Neither 'is' nor 'as' is valid on pointer types
+
+The [is](../operators/type-testing-and-cast.md#the-is-operator) and [as](../operators/type-testing-and-cast.md#the-as-operator) operators are not valid for use on pointer types. For more information, see [Unsafe Code and Pointers](../unsafe-code.md).
+
+### Example
+
+The following sample generates CS0244:
+
+```csharp
+// CS0244.cs
+// compile with: /unsafe
+
+class UnsafeTest
+{
+   unsafe static void SquarePtrParam (int* p)
+   {
+      bool b = p is object;   // CS0244 p is pointer
+   }
+
+   unsafe public static void Main()
+   {
+      int i = 5;
+      SquarePtrParam (&i);
+   }
+}
+```
+
+## CS0254
+
+The right hand side of a fixed statement assignment may not be a cast expression
+
+The right side of a [fixed](../statements/fixed.md) expression may not use a cast. For more information, see [Unsafe Code and Pointers](../unsafe-code.md).
+
+### Example
+
+The following sample generates CS0254:
+
+```csharp
+// CS0254.cs
+// compile with: /unsafe
+class Point
+{
+   public uint x, y;
+}
+
+class FixedTest
+{
+   unsafe static void SquarePtrParam (int* p)
+   {
+      *p *= *p;
+   }
+
+   unsafe public static void Main()
+   {
+      Point pt = new Point();
+      pt.x = 5;
+      pt.y = 6;
+
+      fixed (int* p = (int*)&pt.x)   // CS0254
+      // try the following line instead
+      // fixed (uint* p = &pt.x)
+      {
+         SquarePtrParam ((int*)p);
+      }
+   }
+}
+```
+
+## CS0459
+
+Cannot take the address of a read-only local variable
+
+There are three common scenarios in the C# language that generate read-only local variables: `foreach`, `using`, and `fixed`. In each of these cases, you are not allowed to write to the read-only local variable, or to take its address. This error is generated when the compiler realizes you are trying to take the address of a read-only local variable.
+
+### Example
+
+The following example generates CS0459 when an attempt is made to take the address of a read-only local variable in a `foreach` loop and in a `fixed` statement block:
+
+```csharp
+// CS0459.cs
+// compile with: /unsafe
+
+class Program
+{
+    public unsafe void M1()
+    {
+        int[] ints = new int[] { 1, 2, 3 };
+        foreach (int i in ints)
+        {
+            int *j = &i;  // CS0459
+        }
+
+        fixed (int *i = &_i)
+        {
+            int **j = &i;  // CS0459
+        }
+    }
+
+    private int _i = 0;
+}
+```
+
+> [!NOTE]
+> Roslyn compiler was updated and this compiler error was removed starting with Visual Studio 2017 version 15.5, so the previous code would compile successfully with this version and later.
+
+## CS0821
+
+Implicitly typed locals cannot be fixed
+
+Implicitly typed local variables and anonymous types are not supported in the `fixed` context.
+
+### To correct this error
+
+1. Either remove the `fixed` modifier from the variable or else give the variable an explicit type.
+
+### Example
+
+The following code generates CS0821:
+
+```csharp
+class A
+{
+    static int x;
+
+    public static int Main()
+    {
+        unsafe
+        {
+            fixed (var p = &x) { }  
+        }
+        return -1;
+    }
+}
+```
+
+### See also
+
+- [Implicitly Typed Local Variables](../../programming-guide/classes-and-structs/implicitly-typed-local-variables.md)
+
+## CS1641
+
+A fixed size buffer field must have the array size specifier after the field name
+
+Unlike regular arrays, fixed size buffers require a constant size to be specified at the declaration point. To resolve this error, add a positive integer literal or a constant positive integer and put the square brackets after the identifier.
+
+### Example
+
+The following sample generates CS1641:
+
+```csharp
+// CS1641.cs
+// compile with: /unsafe /target:library
+unsafe struct S {
+   fixed int [] a;  // CS1641
+
+   // OK
+   fixed int b [10];
+   const int c = 10;
+   fixed int d [c];
+}
+```
+
+## CS1642
+
+Fixed size buffer fields may only be members of structs.
+
+This error occurs if you use a fixed size buffer field in a `class`, instead of a `struct`. To resolve this error, change the `class` to a `struct` or declare the field as an ordinary array.
+
+### Example
+
+The following sample generates CS1642.
+
+```csharp
+// CS1642.cs
+// compile with: /unsafe /target:library
+unsafe class C
+{
+   fixed int a[10];   // CS1642
+}
+
+unsafe struct D
+{
+    fixed int a[10];
+}
+
+unsafe class E
+{
+   public int[] a = null;
+}
+```
+
 ## CS1656
 
 Cannot assign to 'variable' because it is a 'read-only variable type'
@@ -601,6 +851,90 @@ class CMain
             p = null; // CS1656
         }
     }
+}
+```
+
+## CS1663
+
+Fixed size buffer type must be one of the following: bool, byte, short, int, long, char, sbyte, ushort, uint, ulong, float or double
+
+This error occurs when you try to declare a [fixed-size buffer](../unsafe-code.md#fixed-size-buffers) with a type other than the supported primitive types. Fixed-size buffers can only use specific value types that are safe for pointer arithmetic and have predictable memory layouts.
+
+### Example
+
+The following sample generates CS1663:
+
+```csharp
+// CS1663.cs
+// compile with: /unsafe /target:library
+public struct MyStruct
+{
+    unsafe public fixed string a[10];  // CS1663 - string is not allowed
+}
+```
+
+To fix the error, use one of the allowed primitive types, such as `char` for text data or `int` for numeric data.
+
+## CS1665
+
+Fixed size buffers must have a length greater than zero
+
+This error occurs if a [fixed-size buffer](../unsafe-code.md#fixed-size-buffers) is declared with a zero or negative size. The length of a fixed-size buffer must be a positive integer.
+
+### Example
+
+The following sample generates CS1665:
+
+```csharp
+// CS1665.cs
+// compile with: /unsafe /target:library
+struct S
+{
+   public unsafe fixed int A[0];   // CS1665
+}
+```
+
+## CS1666
+
+You cannot use fixed size buffers contained in unfixed expressions. Try using the fixed statement.
+
+This error occurs if you use the [fixed-size buffer](../unsafe-code.md#fixed-size-buffers) in an expression involving an instance that is not itself fixed. The runtime is free to move the unfixed instance around to optimize memory access, which could lead to errors when using the fixed-size buffer. To avoid this error, use the [`fixed` statement](../statements/fixed.md).
+
+### Example
+
+The following sample generates CS1666.
+
+```csharp
+// CS1666.cs
+// compile with: /unsafe /target:library
+unsafe struct S
+{
+   public fixed int buffer[1];
+}
+
+unsafe class Test
+{
+   S field = new S();
+
+   private bool example1()
+   {
+      return (field.buffer[0] == 0);   // CS1666 error
+   }
+
+   private bool example2()
+   {
+      // OK
+      fixed (S* p = &field)
+      {
+         return (p->buffer[0] == 0);
+      }
+   }
+
+   private bool example3()
+   {
+      S local = new S();
+      return (local.buffer[0] == 0);
+   }
 }
 ```
 

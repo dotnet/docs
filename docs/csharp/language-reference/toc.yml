@@ -595,7 +595,7 @@ items:
     displayName: CS0185, CS9216, CS9217
   - name: Unsafe code
     href: ./compiler-messages/unsafe-code-errors.md
-    displayName: CS0193, CS0196, CS0208, CS0209, CS0210, CS0211, CS0212, CS0213, CS0214, CS0227, CS0233, CS1656, CS1708, CS1716, CS1919, CS8812, CS9123
+    displayName: CS0193, CS0196, CS0208, CS0209, CS0210, CS0211, CS0212, CS0213, CS0214, CS0227, CS0233, CS0242, CS0244, CS0254, CS0459, CS0821, CS1641, CS1642, CS1656, CS1663, CS1665, CS1666, CS1708, CS1716, CS1919, CS8812, CS9123
   - name: Warning waves
     href: ./compiler-messages/warning-waves.md
     displayName: >
@@ -877,12 +877,8 @@ items:
       href: ../misc/cs0239.md
     - name: CS0241
       href: ../misc/cs0241.md
-    - name: CS0242
-      href: ../misc/cs0242.md
     - name: CS0243
       href: ../misc/cs0243.md
-    - name: CS0244
-      href: ../misc/cs0244.md
     - name: CS0245
       href: ../misc/cs0245.md
     - name: CS0247
@@ -891,8 +887,6 @@ items:
       href: ../misc/cs0249.md
     - name: CS0250
       href: ../misc/cs0250.md
-    - name: CS0254
-      href: ../misc/cs0254.md
     - name: CS0255
       href: ../misc/cs0255.md
     - name: CS0266
@@ -1021,8 +1015,6 @@ items:
       href: ../misc/cs0455.md
     - name: CS0456
       href: ../misc/cs0456.md
-    - name: CS0459
-      href: ../misc/cs0459.md
     - name: CS0460
       href: ../misc/cs0460.md
     - name: CS0462
@@ -1325,8 +1317,6 @@ items:
       href: ../misc/cs0818.md
     - name: CS0819
       href: ../misc/cs0819.md
-    - name: CS0821
-      href: ../misc/cs0821.md
     - name: CS0822
       href: ../misc/cs0822.md
     - name: CS0825
@@ -1577,10 +1567,6 @@ items:
       href: ../misc/cs1639.md
     - name: CS1640
       href: ./compiler-messages/cs1640.md
-    - name: CS1641
-      href: ../misc/cs1641.md
-    - name: CS1642
-      href: ../misc/cs1642.md
     - name: CS1643
       href: ../misc/cs1643.md
     - name: CS1644
@@ -1601,14 +1587,8 @@ items:
       href: ../misc/cs1661.md
     - name: CS1662
       href: ../misc/cs1662.md
-    - name: CS1663
-      href: ../misc/cs1663.md
     - name: CS1664
       href: ../misc/cs1664.md
-    - name: CS1665
-      href: ../misc/cs1665.md
-    - name: CS1666
-      href: ../misc/cs1666.md
     - name: CS1667
       href: ../misc/cs1667.md
     - name: CS1671

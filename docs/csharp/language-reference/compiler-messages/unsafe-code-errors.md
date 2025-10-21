@@ -60,6 +60,7 @@ helpviewer_keywords:
  - "CS8812"
  - "CS9123"
 ms.date: 10/21/2025
+ai-usage: ai-assisted
 ---
 # Resolve errors and warnings in unsafe code constructs
 

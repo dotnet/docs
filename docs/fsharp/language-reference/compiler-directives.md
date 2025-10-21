@@ -1,9 +1,10 @@
 ---
 title: Compiler Directives
 description: Learn about F# language conditional compilation directives, line directives, and warn directives.
-ms.date: 12/10/2018
+ms.date: 10/21/2025
 f1_keywords:
  - "#endif_FS"
+ai-usage: ai-assisted
 ---
 # Compiler Directives
 

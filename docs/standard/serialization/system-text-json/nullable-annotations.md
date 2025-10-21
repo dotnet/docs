@@ -92,7 +92,7 @@ It's important to understand the distinction between *missing JSON properties* a
 During deserialization, when `RespectNullableAnnotations` is `true`:
 
 - An **explicit null value** throws an exception for non-nullable properties. For example, `{"Name":null}` throws an exception when deserializing to a non-nullable `string Name` property.
-- A **missing property** doesn't throw an exception, even for non-nullable properties. For example, `{}` doesn't throw an exception when deserializing to a non-nullable `string Name` property. The property is set to `null`.
+- A **missing property** doesn't throw an exception, even for non-nullable properties. For example, `{}` doesn't throw an exception when deserializing to a non-nullable `string Name` property. The serializer doesn't set the property, leaving it at its default value from the constructor. For an uninitialized non-nullable reference type, this results in `null`, which triggers a compiler warning.
 
   The following code shows how a missing property does NOT throw an exception during deserialization:
 

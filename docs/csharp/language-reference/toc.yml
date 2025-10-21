@@ -593,6 +593,9 @@ items:
   - name: Thread synchronization
     href: ./compiler-messages/lock-semantics.md
     displayName: CS0185, CS9216, CS9217
+  - name: Unsafe code
+    href: ./compiler-messages/unsafe-code-errors.md
+    displayName: CS0193, CS0196, CS0208, CS0209, CS0210, CS0211, CS0212, CS0213, CS0214, CS0227, CS0233, CS1656, CS1708, CS1716, CS1919, CS8812, CS9123
   - name: Warning waves
     href: ./compiler-messages/warning-waves.md
     displayName: >
@@ -842,10 +845,6 @@ items:
       href: ../misc/cs0186.md
     - name: CS0191
       href: ../misc/cs0191.md
-    - name: CS0193
-      href: ../misc/cs0193.md
-    - name: CS0196
-      href: ../misc/cs0196.md
     - name: CS0198
       href: ../misc/cs0198.md
     - name: CS0200
@@ -858,36 +857,18 @@ items:
       href: ../misc/cs0204.md
     - name: CS0205
       href: ../misc/cs0205.md
-    - name: CS0208
-      href: ../misc/cs0208.md
-    - name: CS0209
-      href: ../misc/cs0209.md
-    - name: CS0210
-      href: ../misc/cs0210.md
-    - name: CS0211
-      href: ../misc/cs0211.md
-    - name: CS0212
-      href: ../misc/cs0212.md
-    - name: CS0213
-      href: ../misc/cs0213.md
-    - name: CS0214
-      href: ../misc/cs0214.md
     - name: CS0220
       href: ../misc/cs0220.md
     - name: CS0221
       href: ../misc/cs0221.md
     - name: CS0226
       href: ../misc/cs0226.md
-    - name: CS0227
-      href: ../misc/cs0227.md
     - name: CS0228
       href: ../misc/cs0228.md
     - name: CS0229
       href: ./compiler-messages/cs0229.md
     - name: CS0230
       href: ../misc/cs0230.md
-    - name: CS0233
-      href: ./compiler-messages/cs0233.md
     - name: CS0236
       href: ../misc/cs0236.md
     - name: CS0238
@@ -1614,8 +1595,6 @@ items:
       href: ../misc/cs1650.md
     - name: CS1654
       href: ../misc/cs1654.md
-    - name: CS1656
-      href: ./compiler-messages/cs1656.md
     - name: CS1660
       href: ../misc/cs1660.md
     - name: CS1661
@@ -1660,14 +1639,10 @@ items:
       href: ./compiler-messages/cs1703.md
     - name: CS1705
       href: ./compiler-messages/cs1705.md
-    - name: CS1708
-      href: ./compiler-messages/cs1708.md
     - name: CS1713
       href: ../misc/cs1713.md
     - name: CS1715
       href: ../misc/cs1715.md
-    - name: CS1716
-      href: ./compiler-messages/cs1716.md
     - name: CS1719
       href: ../misc/cs1719.md
     - name: CS1721
@@ -1724,8 +1699,6 @@ items:
       href: ../misc/cs1917.md
     - name: CS1918
       href: ../misc/cs1918.md
-    - name: CS1919
-      href: ./compiler-messages/cs1919.md
     - name: CS1922
       href: ../misc/cs1922.md
     - name: CS1926
@@ -1932,8 +1905,6 @@ items:
       href: ./compiler-messages/cs8802.md
     - name: CS8803
       href: ./compiler-messages/cs8803.md
-    - name: CS8812
-      href: ./compiler-messages/cs8812.md
     - name: CS8515
       href: ./compiler-messages/cs8515.md
     - name: CS9036

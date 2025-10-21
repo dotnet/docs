@@ -211,7 +211,7 @@ The following warnings are generated when reference variables are used incorrect
 - [**CS9198**](#reference-variable-restrictions): *Reference kind modifier of parameter doesn't match the corresponding parameter in target.*
 - [**CS9200**](#reference-variable-restrictions): *A default value is specified for `ref readonly` parameter, but `ref readonly` should be used only for references. Consider declaring the parameter as `in`.*
 - [**CS9201**](#reference-variable-restrictions): *Ref field should be ref-assigned before use.*
-- [**CS9205**](#incorrect-syntax): *Expected interpolated string*
+- [**CS9205**](#incorrect-syntax): *Expected interpolated string.*
 - [**CS9265**](#reference-variable-restrictions): *Field is never ref-assigned to, and will always have its default value (null reference)*
 
 These errors and warnings follow these themes:

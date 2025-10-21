@@ -53,6 +53,58 @@ There is no `#define` compiler directive in F#. You must use the compiler option
 
 Conditional compilation directives can be nested. Indentation is not significant for compiler directives.
 
+## Predefined symbols
+
+The F# compiler and build system automatically define several symbols that can be used for conditional compilation.
+
+### Build configuration symbols
+
+The following symbols are defined based on your build configuration:
+
+- `DEBUG`: Defined when compiling in Debug mode. In the project system, the `DEBUG` symbol is automatically defined in the Debug configuration, but not in the Release configuration. This symbol is commonly used with assertions and diagnostic code. For more information, see [Assertions](assertions.md).
+- `TRACE`: Defined for builds that enable tracing. Like `DEBUG`, this symbol is typically defined in Debug configurations but can also be enabled in Release configurations.
+
+You can override these values using the [`-define` compiler option](compiler-options.md) or project settings.
+
+### Compilation mode symbols
+
+The following symbols distinguish between different compilation modes:
+
+- `COMPILED`: Defined when compiling code with the F# compiler. This symbol is useful when you need code to behave differently in compiled assemblies versus F# Interactive sessions.
+- `INTERACTIVE`: Defined when compiling or executing code in F# Interactive (`dotnet fsi`), including both interactive sessions and script execution. This allows you to write code that works differently when running interactively.
+
+For more information about using these symbols in scripts, see [Interactive Programming with F#](../tools/fsharp-interactive/index.md).
+
+Example:
+
+```fsharp
+#if INTERACTIVE
+// Code specific to F# Interactive
+#r "nuget: Newtonsoft.Json"
+#endif
+
+#if COMPILED
+// Code specific to compiled assemblies
+open System.Configuration
+#endif
+```
+
+### Target framework symbols
+
+The build system also defines preprocessor symbols for different target frameworks in SDK-style projects. These symbols are useful when creating libraries or applications that target multiple .NET versions.
+
+[!INCLUDE [Preprocessor symbols](~/includes/preprocessor-symbols.md)]
+
+For example, you can use these symbols to conditionally compile code based on the target framework:
+
+```fsharp
+#if NET6_0_OR_GREATER
+// Use .NET 6+ specific APIs
+#else
+// Use alternative implementation for older frameworks
+#endif
+```
+
 ## NULLABLE directive
 
 Starting with F# 9, you can enable nullable reference types in the project:

@@ -42,33 +42,18 @@ The following shows the information made available by the provider via <xref:Mic
 
 ## Example
 
-To use this provider, you need to use the <xref:Microsoft.Extensions.Hosting.ApplicationMetadataHostBuilderExtensions.UseApplicationMetadata> method,
+To use this provider, you need to use the <xref:Microsoft.Extensions.Hosting.ApplicationMetadataHostBuilderExtensions.UseApplicationMetadata(Microsoft.Extensions.Hosting.IHostBuilder,System.String)> method,
 which populates `ApplicationName` and `EnvironmentName` values automatically from `IHostEnvironment`.
 Optionally, you can provide values for `BuildVersion` and `DeploymentRing` via the `appsettings.json` file.
-The complete example is as follows:
 
-`appsettings.json`:
+Your `appsettings.json` should have a section as follows :
 
-```json
-{
-  "ambientmetadata": {
-    "application": {
-      "buildversion": "1.0.0.0", // provide a build version.
-      "deploymentring": "deploymentRing" // provide a deployment ring value.
-    }
-  }
-}
-```
+:::code language="json" source="snippets/servicelogenricher/appsettings.json" range="2-7":::
 
 ```cs
-using var host = await new HostBuilder()
-    // ApplicationName and EnvironmentName will be imported from `IHostEnvironment` after calling the method below:
+var host = Host.CreateDefaultBuilder()
+    // ApplicationName and EnvironmentName will be imported from `IHostEnvironment` and BuildVersion and DeploymentRing will be imported from the "appsettings.json" file.:
     .UseApplicationMetadata()
-    .ConfigureAppConfiguration(builder =>
-    {
-      // BuildVersion and DeploymentRing will be imported from the "appsettings.json" file.
-        _ = builder.AddJsonFile("appsettings.json");
-    })
     .Build()
     .StartAsync();
 
@@ -80,10 +65,9 @@ var buildVersion = metadataOptions.Value.BuildVersion;
 Alternatively, you can achieve the same result as above by doing this:
 
 ```cs
-using var hostBuilder = new HostBuilder()
+var hostBuilder = Host.CreateDefaultBuilder()
     .ConfigureAppConfiguration((hostBuilderContext, configurationBuilder) => configurationBuilder
-      .AddApplicationMetadata(hostBuilderContext.HostingEnvironment)
-      .AddJsonFile("appsettings.json"))
+      .AddApplicationMetadata(hostBuilderContext.HostingEnvironment))
     .ConfigureServices((hostBuilderContext, serviceCollection) => serviceCollection
       .AddApplicationMetadata(hostBuilderContext.Configuration.GetSection("ambientmetadata:application")))
     .Build();

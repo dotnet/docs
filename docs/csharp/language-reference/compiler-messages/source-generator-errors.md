@@ -31,6 +31,11 @@ f1_keywords:
   - "CS9178"
   - "CS9206"
   - "CS9207"
+  - "CS9231"
+  - "CS9232"
+  - "CS9233"
+  - "CS9234"
+  - "CS9235"
   - "CS9270"
 helpviewer_keywords:
   - "CS9137"
@@ -62,6 +67,11 @@ helpviewer_keywords:
   - "CS9178"
   - "CS9206"
   - "CS9207"
+  - "CS9231"
+  - "CS9232"
+  - "CS9233"
+  - "CS9234"
+  - "CS9235"
   - "CS9270"
 ms.date: 05/23/2025
 ---
@@ -70,7 +80,7 @@ ms.date: 05/23/2025
 The following errors are generated when source generators or interceptors are loaded during a compilation:
 
 - [**CS9137**](#interceptors-are-experimental): *The 'interceptors' experimental feature is not enabled. Add `<Features>InterceptorsPreview<Features>` to your project.*
-- [**CS9138**](#other-failures): *Method cannot be used as an interceptor because it or its containing type has type parameters.*
+- [**CS9138**](#incorrect-interceptor-declaration): *Method cannot be used as an interceptor because it or its containing type has type parameters.*
 - [**CS9139**](#incorrect-mapping): *Cannot intercept: compilation does not contain a file with path.*
 - [**CS9140**](#incorrect-mapping): *Cannot intercept: compilation does not contain a file with path. Did you mean to use a different path?*
 - [**CS9141**](#incorrect-mapping): *The provided line and character number does not refer to an interceptable method name, but rather to a token.*
@@ -78,28 +88,33 @@ The following errors are generated when source generators or interceptors are lo
 - [**CS9143**](#incorrect-mapping): *The given line is `c` characters long, which is fewer than the provided character number `n`.*
 - [**CS9144**](#signature-mismatch): *Cannot intercept method `M` with interceptor `V` because the signatures do not match.*
 - [**CS9145**](#incorrect-mapping): *Cannot intercept: Path is unmapped. Expected mapped path.*
-- [**CS9146**](#other-failures): *An interceptor method must be an ordinary member method.*
+- [**CS9146**](#incorrect-interceptor-declaration): *An interceptor method must be an ordinary member method.*
 - [**CS9147**](#incorrect-mapping): *The provided line and character number does not refer to the start of a token. Did you mean to use line `n` and character `c`?*
 - [**CS9148**](#signature-mismatch): *Interceptor must have a `this` parameter matching parameter.*
 - [**CS9149**](#signature-mismatch): *Interceptor must not have a `this` parameter because method does not have a `this` parameter.*
 - [**CS9150**](#incorrect-mapping): *Interceptor cannot have a `null` file path.*
-- [**CS9151**](#other-failures): *Possible method name `M` cannot be intercepted because it is not being invoked.*
-- [**CS9152**](#other-failures): *Cannot intercept a call in file with this path because multiple files in the compilation have this path.*
-- [**CS9153**](#other-failures): *The indicated call is intercepted multiple times.*
+- [**CS9151**](#incorrect-interceptor-declaration): *Possible method name `M` cannot be intercepted because it is not being invoked.*
+- [**CS9152**](#incorrect-interceptor-declaration): *Cannot intercept a call in file with this path because multiple files in the compilation have this path.*
+- [**CS9153**](#incorrect-interceptor-declaration): *The indicated call is intercepted multiple times.*
 - [**CS9155**](#signature-mismatch): *Cannot intercept call with `M` because it is not accessible within `V`.*
 - [**CS9156**](#signature-mismatch): *Cannot intercept call to `M` with `V` because of a difference in 'scoped' modifiers or `[UnscopedRef]` attributes.*
 - [**CS9157**](#incorrect-mapping): *Line and character numbers provided to `InterceptsLocationAttribute` must be positive.*
-- [**CS9160**](#other-failures): *A nameof operator cannot be intercepted.*
-- [**CS9161**](#other-failures): *An interceptor cannot be marked with `UnmanagedCallersOnlyAttribute`.*
+- [**CS9160**](#incorrect-interceptor-declaration): *A nameof operator cannot be intercepted.*
+- [**CS9161**](#incorrect-interceptor-declaration): *An interceptor cannot be marked with `UnmanagedCallersOnlyAttribute`.*
 - [**CS9177**](#signature-mismatch): *Interceptor must be non-generic or have matching arity.*
 - [**CS9178**](#signature-mismatch): *Method must be non-generic to match*
-- [**CS9206**](#other-failures): *An interceptor cannot be declared in the global namespace.*
-- [**CS9207**](#other-failures): *Cannot intercept because method is not an invocation of an ordinary member method.*
+- [**CS9206**](#incorrect-interceptor-declaration): *An interceptor cannot be declared in the global namespace.*
+- [**CS9207**](#incorrect-interceptor-declaration): *Cannot intercept because method is not an invocation of an ordinary member method.*
+- [**CS9231**](#incorrect-interceptor-declaration): *The data argument to InterceptsLocationAttribute is not in the correct format.*
+- [**CS9232**](#incorrect-interceptor-declaration): *Version 'version' of the interceptors format is not supported. The latest supported version is '1'.*
+- [**CS9233**](#incorrect-interceptor-declaration): *Cannot intercept a call in file 'file' because it is duplicated elsewhere in the compilation.*
+- [**CS9234**](#incorrect-interceptor-declaration): *Cannot intercept a call in file 'file' because a matching file was not found in the compilation.*
+- [**CS9235**](#incorrect-interceptor-declaration): *The data argument to InterceptsLocationAttribute refers to an invalid position in file 'file'.*
 
 The following warnings are generated when source generators or interceptors are loaded during a compilation:
 
-- [**CS8784**](#other-failures): *Generator '`YourSourceGeneratorName`' failed to initialize. It will not contribute to the output and compilation errors may occur as a result.*
-- [**CS8785**](#other-failures): *Generator '`YourSourceGeneratorName`' failed to generate source. It will not contribute to the output and compilation errors may occur as a result.*
+- [**CS8784**](#incorrect-interceptor-declaration): *Generator '`YourSourceGeneratorName`' failed to initialize. It will not contribute to the output and compilation errors may occur as a result.*
+- [**CS8785**](#incorrect-interceptor-declaration): *Generator '`YourSourceGeneratorName`' failed to generate source. It will not contribute to the output and compilation errors may occur as a result.*
 - [**CS9154**](#signature-mismatch): *Intercepting a call to `M` with interceptor `V`, but the signatures do not match.*
 - [**CS9158**](#signature-mismatch): *Nullability of reference types in return type doesn't match interceptable method.*
 - [**CS9159**](#signature-mismatch): *Nullability of reference types in type of parameter doesn't match interceptable method.*
@@ -158,12 +173,15 @@ Interceptors require a source mapping that maps the interceptable method and the
 - **CS9150**: *Interceptor cannot have a `null` file path.*
 - **CS9157**: *Line and character numbers provided to `InterceptsLocationAttribute` must be positive.*
 
-An interceptor specifies the location in the source code of the interceptable method. You specify the location by applying an `[InterceptsLocation]` attribute. You specify the line and column numbers in a remapped source file where the interceptor should be injected.  These errors indicate that something in the attribute or the location doesn't match a location for a valid interceptable method. For details on the format and values for this attribute, see the [feature specification](https://github.com/dotnet/roslyn/blob/main/docs/features/interceptors.md#interceptslocationattribute).
+## Incorrect interceptor declaration
 
-## Other failures
+The following errors indicate issues with interceptor declarations, including problems with the `InterceptsLocationAttribute` format or violations of interceptor rules:
 
-These errors indicate other limitations for interceptors:
-
+- **CS9231**: *The data argument to InterceptsLocationAttribute is not in the correct format.*
+- **CS9232**: *Version 'version' of the interceptors format is not supported. The latest supported version is '1'.*
+- **CS9233**: *Cannot intercept a call in file 'file' because it is duplicated elsewhere in the compilation.*
+- **CS9234**: *Cannot intercept a call in file 'file' because a matching file was not found in the compilation.*
+- **CS9235**: *The data argument to InterceptsLocationAttribute refers to an invalid position in file 'file'.*
 - **CS9138**: *Method cannot be used as an interceptor because it or its containing type has type parameters.*
 - **CS9146**: *An interceptor method must be an ordinary member method.*
 - **CS9151**: *Possible method name `M` cannot be intercepted because it is not being invoked.*
@@ -174,12 +192,19 @@ These errors indicate other limitations for interceptors:
 - **CS9206**: *An interceptor cannot be declared in the global namespace.*
 - **CS9207**: *Cannot intercept because method is not an invocation of an ordinary member method.*
 
-These errors indicate that your interceptor method violates one of the rules for interceptors:
+These errors occur when interceptor declarations violate the rules for interceptors or when the `InterceptsLocationAttribute` contains invalid data:
 
-- Interceptors can't be generic methods, or members of generic classes.
-- Interceptors must be ordinary members. They can't be operators, instance or static constructors, or finalizers.
-- Interceptable methods must be ordinary members. They can't be operators, instance or static constructors, or finalizers, nor delegate invocations.
-- Interceptable methods that are never invoked can't be intercepted.
-- Interceptable methods can be intercepted at most once.
-- Interceptors can't be methods limited to unmanaged callers.
-- Interceptors must be contained in a namespace.
+- **CS9231** is generated when the data format doesn't match the expected structure. The attribute requires specifically formatted data that encodes the file path and position information.
+- **CS9232** indicates you're using a version number that isn't supported. The interceptors feature uses version '1' format. Update your source generator to use the supported version.
+- **CS9233** happens when the compilation contains multiple files with the same path, making it ambiguous which file to intercept in. Ensure each file in your compilation has a unique path.
+- **CS9234** is emitted when the file path specified in the attribute doesn't match any file in the current compilation. Verify the file path is correct and the file is included in the compilation.
+- **CS9235** occurs when the position data (line and character numbers) points to an invalid location in the specified file. This can happen if the position is outside the file's bounds or doesn't correspond to a valid interception point.
+- **CS9138** prevents generic methods or members of generic classes from being interceptors.
+- **CS9146** requires interceptors to be ordinary members (not operators, constructors, or finalizers).
+- **CS9151** prevents intercepting methods that are never invoked.
+- **CS9152** detects duplicate file paths in the compilation.
+- **CS9153** prevents multiple interceptions of the same call.
+- **CS9160** prevents intercepting `nameof` operators.
+- **CS9161** prevents interceptors from being marked with `UnmanagedCallersOnlyAttribute`.
+- **CS9206** requires interceptors to be contained in a namespace (not global).
+- **CS9207** requires interceptable methods to be ordinary member invocations.

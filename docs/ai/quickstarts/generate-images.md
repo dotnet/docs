@@ -1,5 +1,5 @@
 ---
-title: Quickstart - Generate images using AI with .NET
+title: Quickstart - Generate images using DALLe
 description: Create a simple app using to generate images using .NET and the OpenAI or Azure OpenAI models.
 ms.date: 04/09/2025
 ms.topic: quickstart
@@ -7,7 +7,7 @@ zone_pivot_groups: openai-library
 # CustomerIntent: As a .NET developer new to OpenAI, I want deploy and use sample code to interact to learn from the sample code to generate images.
 ---
 
-# Generate images using AI with .NET
+# Generate images using DALLe
 
 In this quickstart, you learn how to create a .NET console app to generate images using an OpenAI or Azure OpenAI DALLe AI model, which are specifically designed to generate images based on text prompts.
 

@@ -3,7 +3,8 @@ title: Unit testing C# with MSTest and .NET
 description: Learn unit test concepts in C# and .NET through an interactive experience building a sample solution step-by-step using dotnet test and MSTest.
 author: ncarandini
 ms.author: wiwagn
-ms.date: 03/09/2022
+ms.date: 10/22/2025
+ai-usage: ai-assisted
 ---
 # Unit testing C# with MSTest and .NET
 

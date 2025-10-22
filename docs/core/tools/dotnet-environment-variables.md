@@ -185,7 +185,7 @@ These environment variables are used only when running apps via generated execut
 
 Specifies the absolute path to a `dotnet` host (`dotnet.exe` on Windows, `dotnet` on Linux and macOS). This path represents either the host used to launch the currently-running `dotnet` process, or the host that would be used when running `dotnet` commands for the currently-building project when executing under MSBuild. The .NET SDK uses this variable to help tools that run during .NET SDK commands ensure they use the same `dotnet` host configuration for any child `dotnet` processes they create for the duration of the command. Tools and any MSBuild logic that run within a build and invoke binaries via the `dotnet` host are expected to honor this environment variable to ensure a consistent experience.
 
-Starting in Visual Studio 2026, MSBuild in Visual Studio will _also_ ensure that `DOTNET_HOST_PATH` is set for all builds of .NET SDK projects. For greatest consistency, all MSBuild tools and logic that want to use _the same dotnet binary_ as the one that spawned the build should rely on 
+Starting in Visual Studio 2026, MSBuild in Visual Studio will _also_ ensure that `DOTNET_HOST_PATH` is set for all builds of .NET SDK projects. For greatest consistency, all MSBuild tools and logic that want to use _the same dotnet binary_ as the one that spawned the build should rely on
 `DOTNET_HOST_PATH` and should consider emitting a diagnostic (warning or error) when the variable is not present.
 
 ### `DOTNET_LAUNCH_PROFILE`

@@ -12,7 +12,7 @@ You can register the enrichers in an IoC container, and all registered enrichers
 
 ## Prerequisites
 
-To function properly, this enricher requires that [application metadata](xref:application-metadata.md) is configured and available. The application metadata provides the foundational information that the enricher uses to populate telemetry dimensions.
+To function properly, this enricher requires that [application metadata](application-metadata.md) is configured and available. The application metadata provides the foundational information that the enricher uses to populate telemetry dimensions.
 
 ## Install the package
 
@@ -40,7 +40,7 @@ Follow these steps to configure the application log enricher in your application
 
 #### 1. Configure Application Metadata
 
-First, configure the [Application Metadata](xref:application-metadata.md) by calling the <xref:Microsoft.Extensions.Hosting.ApplicationMetadataHostBuilderExtensions.UseApplicationMetadata(Microsoft.Extensions.Hosting.IHostBuilder,System.String)> method:
+First, configure the [Application Metadata](application-metadata.md) by calling the <xref:Microsoft.Extensions.Hosting.ApplicationMetadataHostBuilderExtensions.UseApplicationMetadata(Microsoft.Extensions.Hosting.IHostBuilder,System.String)> method:
 
 ```csharp
 var builder = Host.CreateDefaultBuilder();
@@ -61,7 +61,7 @@ var hostBuilder = Host.CreateDefaultBuilder()
 
 #### 2. Provide additional configuration (optional)
 
-You can provide additional configuration via `appsettings.json`. There are two properties in the [Application Metadata](xref:application-metadata.md) that don't get values automatically: `BuildVersion` and `DeploymentRing`. If you want to use them, provide values manually:
+You can provide additional configuration via `appsettings.json`. There are two properties in the [Application Metadata](application-metadata.md) that don't get values automatically: `BuildVersion` and `DeploymentRing`. If you want to use them, provide values manually:
 
 :::code language="json" source="snippets/servicelogenricher/appsettings.json" range="2-7":::
 
@@ -130,4 +130,4 @@ With the service log enricher configured, your log output will include service-s
 
 ## Next steps
 
-- Learn about [application metadata configuration](xref:application-metadata.md)
+- Learn about [application metadata configuration](application-metadata.md)

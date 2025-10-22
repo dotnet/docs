@@ -116,6 +116,8 @@ items:
                 href: networking/10.0/uri-length-limits-removed.md
           - name: Reflection
             items:
+              - name: Replace DAMT.All with more restricted annotation on InvokeMember/FindMembers/DeclaredMembers
+                href: reflection/10/damt-all-restricted-annotations.md
               - name: Type.MakeGenericSignatureType argument validation
                 href: reflection/10/makegeneric-signaturetype-validation.md
           - name: SDK and MSBuild

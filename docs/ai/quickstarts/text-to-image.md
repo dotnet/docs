@@ -80,7 +80,7 @@ Complete the following steps to create a .NET console application that generates
 
 1. Run the application, either through the IDE or using `dotnet run`.
 
-   The application generates an image and outputs the file path to the image. You can open the file to view the generated image. The following image shows one example of a generated image.
+   The application generates an image and outputs the file path to the image. Open the file to view the generated image. The following image shows one example of a generated image.
 
    :::image type="content" source="media/text-to-image/jungle-tennis.png" alt-text="AI-generated image of a tennis court in a jungle.":::
 
@@ -88,12 +88,13 @@ Complete the following steps to create a .NET console application that generates
 
 You can customize image generation by providing options such as size, response format, and number of images to generate. The <xref:Microsoft.Extensions.AI.ImageGenerationOptions> class allows you to specify:
 
+- <xref:Microsoft.Extensions.AI.ImageGenerationOptions.AdditionalProperties>: Provider-specific options.
+- <xref:Microsoft.Extensions.AI.ImageGenerationOptions.Count>: The number of images to generate.
 - <xref:Microsoft.Extensions.AI.ImageGenerationOptions.ImageSize>: The dimensions of the generated image as a `System.Drawing.Size`.
-- <xref:Microsoft.Extensions.AI.ImageGenerationOptions.Count>: The number of images to generate (1-10).
-- <xref:Microsoft.Extensions.AI.ImageGenerationOptions.ResponseFormat>: Whether to return a URL or base64-encoded data.
 - <xref:Microsoft.Extensions.AI.ImageGenerationOptions.MediaType>: The media type (MIME type) of the generated image.
 - <xref:Microsoft.Extensions.AI.ImageGenerationOptions.ModelId>: The model ID.
-- <xref:Microsoft.Extensions.AI.ImageGenerationOptions.AdditionalProperties>: Provider-specific options.
+- <xref:Microsoft.Extensions.AI.ImageGenerationOptions.RawRepresentationFactory>: Creates the raw representation of the image generation options from an underlying implementation.
+- <xref:Microsoft.Extensions.AI.ImageGenerationOptions.ResponseFormat>: Options are <xref:Microsoft.Extensions.AI.ImageGenerationResponseFormat.Uri>, <xref:Microsoft.Extensions.AI.ImageGenerationResponseFormat.Data>, and <xref:Microsoft.Extensions.AI.ImageGenerationResponseFormat.Hosted>.
 
 Update your code to include configuration options:
 
@@ -121,7 +122,6 @@ When implementing text-to-image generation in your applications, consider these 
 - **Content safety**: Always review generated images for appropriate content, especially in production applications. Consider implementing content filtering and moderation.
 - **User experience**: Image generation can take several seconds. Provide progress indicators and handle timeouts gracefully.
 - **Legal considerations**: Be aware of licensing and usage rights for generated images. Review the terms of service for your AI provider.
-- **Quality validation**: Not all generated images meet quality standards. Consider implementing validation logic or allowing users to regenerate images.
 
 ## Clean up resources
 

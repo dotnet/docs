@@ -3,13 +3,13 @@ title: "Breaking change: XmlSerializer no longer ignores properties marked with 
 description: "Learn about the breaking change in .NET 10 where properties marked with ObsoleteAttribute are now serialized by XmlSerializer instead of being ignored."
 ms.date: 10/21/2025
 ai-usage: ai-assisted
-ms.custom: https://github.com/dotnet/runtime/issues/100453
+ms.custom: https://github.com/dotnet/docs/issues/49054
 ---
 # XmlSerializer no longer ignores properties marked with ObsoleteAttribute
 
-Starting in .NET 10, the behavior of <xref:System.Xml.Serialization.XmlSerializer> has changed with respect to how it handles properties marked with the `[Obsolete]` attribute. Previously, properties marked with `[Obsolete]` were treated as if they were also marked with `[XmlIgnore]`, causing them to be excluded from XML serialization. This behavior was unintended and has been corrected.
+Starting in .NET 10, the behavior of <xref:System.Xml.Serialization.XmlSerializer> has changed with respect to how it handles properties marked with the <xref:System.ObsoleteAttribute> attribute. Previously, properties marked with `[Obsolete]` were treated as if they were also marked with `[XmlIgnore]`, causing them to be excluded from XML serialization. This behavior was unintended and has been corrected.
 
-With this change, properties marked with `[Obsolete]` are now serialized by default unless the `IsError` property of the `[Obsolete]` attribute is set to `true`. If `IsError` is `true`, the serializer throws an <xref:System.InvalidOperationException> during creation. Additionally, an AppContext switch, `Switch.System.Xml.IgnoreObsoleteMembers`, has been introduced to allow developers to revert to the previous behavior if necessary.
+With this change, properties marked with `[Obsolete]` are now serialized by default unless the <xref:System.ObsoleteAttribute.IsError> property is set to `true`. If `IsError` is `true`, the serializer throws an <xref:System.InvalidOperationException> during creation. Additionally, an AppContext switch, `Switch.System.Xml.IgnoreObsoleteMembers`, has been introduced to allow developers to revert to the previous behavior, if necessary.
 
 ## Version introduced
 
@@ -50,14 +50,10 @@ Console.WriteLine(writer.ToString());
 
 Starting in .NET 10, properties marked with `[Obsolete]` are no longer excluded from XML serialization by default. Instead:
 
-1. If the `[Obsolete]` attribute is applied with `IsError = false` (default), the property is serialized normally.
-2. If the `[Obsolete]` attribute is applied with `IsError = true`, the <xref:System.Xml.Serialization.XmlSerializer> throws an <xref:System.InvalidOperationException> during serializer creation.
+- If the `[Obsolete]` attribute is applied with `IsError = false` (default), the property is serialized normally.
+- If the `[Obsolete]` attribute is applied with `IsError = true`, the <xref:System.Xml.Serialization.XmlSerializer> throws an <xref:System.InvalidOperationException> during serializer creation.
 
-An AppContext switch, `Switch.System.Xml.IgnoreObsoleteMembers`, has been introduced to allow developers to restore the previous behavior where `[Obsolete]` properties are ignored during serialization. This switch is off by default.
-
-Using the same code as above, the output after the change is:
-
-**Output after the change (default behavior):**
+Using the same code as shown in the previous behavior section, the output after the change is:
 
 ```xml
 <Example>
@@ -93,7 +89,7 @@ System.InvalidOperationException: Cannot serialize member 'ObsoleteProperty' bec
 ```
 
 > [!NOTE]
-> Properties that are marked as Obsolete have always successfully deserialized when data is present in the XML. While this change allows `[Obsolete]` properties to "round trip" from object to XML and back to object, the new behavior only affects the serialization half (object to XML) of the "round trip."
+> Properties that are marked as `[Obsolete]` have always successfully deserialized when data is present in the XML. While this change allows `[Obsolete]` properties to "round trip" from object to XML and back to object, the new behavior affects only the serialization half (object to XML) of the "round trip."
 
 ## Type of breaking change
 
@@ -116,8 +112,3 @@ If any properties are marked with `[Obsolete(IsError = true)]` and are being ser
 ## Affected APIs
 
 - <xref:System.Xml.Serialization.XmlSerializer?displayProperty=fullName>
-
-## See also
-
-- [Pull Request dotnet/runtime#119865](https://github.com/dotnet/runtime/pull/119865)
-- [Related Issue dotnet/runtime#100453](https://github.com/dotnet/runtime/issues/100453)

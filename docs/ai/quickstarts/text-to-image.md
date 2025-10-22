@@ -8,7 +8,7 @@ ai-usage: ai-assisted
 
 # Generate images from text using AI
 
-In this quickstart, you learn how to use the <xref:Microsoft.Extensions.AI> library to generate images from text prompts using AI models.
+In this quickstart, you learn how to use the <xref:Microsoft.Extensions.AI> (MEAI) library to generate images from text prompts using AI models. The MEAI text-to-image capabilities are designed to empower you to generate images from natural language prompts or existing images using a consistent and extensible API surface.
 
 The <xref:Microsoft.Extensions.AI.IImageGenerator> interface provides a unified, extensible API for working with various image generation services, making it easy to integrate text-to-image capabilities into your .NET apps. The interface supports:
 
@@ -90,10 +90,10 @@ You can customize image generation by providing options such as size, response f
 
 - <xref:Microsoft.Extensions.AI.ImageGenerationOptions.AdditionalProperties>: Provider-specific options.
 - <xref:Microsoft.Extensions.AI.ImageGenerationOptions.Count>: The number of images to generate.
-- <xref:Microsoft.Extensions.AI.ImageGenerationOptions.ImageSize>: The dimensions of the generated image as a `System.Drawing.Size`.
+- <xref:Microsoft.Extensions.AI.ImageGenerationOptions.ImageSize>: The dimensions of the generated image as a <xref:System.Drawing.Size?displayProperty=fullName>. Supported sizes are 1024 x 1024, 1024 x 1536, and 1536 x 1024.
 - <xref:Microsoft.Extensions.AI.ImageGenerationOptions.MediaType>: The media type (MIME type) of the generated image.
 - <xref:Microsoft.Extensions.AI.ImageGenerationOptions.ModelId>: The model ID.
-- <xref:Microsoft.Extensions.AI.ImageGenerationOptions.RawRepresentationFactory>: Creates the raw representation of the image generation options from an underlying implementation.
+- <xref:Microsoft.Extensions.AI.ImageGenerationOptions.RawRepresentationFactory>: The callback that creates the raw representation of the image generation options from an underlying implementation.
 - <xref:Microsoft.Extensions.AI.ImageGenerationOptions.ResponseFormat>: Options are <xref:Microsoft.Extensions.AI.ImageGenerationResponseFormat.Uri>, <xref:Microsoft.Extensions.AI.ImageGenerationResponseFormat.Data>, and <xref:Microsoft.Extensions.AI.ImageGenerationResponseFormat.Hosted>.
 
 Update your code to include configuration options:
@@ -102,16 +102,9 @@ Update your code to include configuration options:
 
 ## Handle errors and edge cases
 
-When working with image generation, it's important to handle potential errors such as content filtering, rate limiting, or invalid prompts. Add error handling to your application:
+It's important to handle potential errors such as content filtering, rate limiting, or invalid sizes when you generate images. Add error handling to your application:
 
 :::code language="csharp" source="snippets/text-to-image/azure-openai/Program.cs" id="WithErrorHandling":::
-
-Common errors to handle include:
-
-- **Content filtering**: The prompt might be rejected due to content safety policies.
-- **Rate limiting**: Too many requests in a short time period.
-- **Invalid parameters**: Unsupported image sizes or formats.
-- **Service availability**: Temporary service outages or maintenance.
 
 ## Best practices
 
@@ -131,6 +124,15 @@ When you no longer need the Azure OpenAI resource, delete it to avoid incurring 
 1. Select the resource and then select **Delete**.
 
 ## Next steps
+
+You've successfully generated some different images using the <xref:Microsoft.Extensions.AI.IImageGenerator> interface in <xref:Microsoft.Extensions.AI>. Next, you can explore some of the additional functionality, including:
+
+- Refining the generated image iteratively.
+- Editing an existing image.
+- Personalizing an image, diagram, or theme.
+- Merging multiple images into one, such as putting a character into a scene.
+
+## See also
 
 - [Quickstart: Generate images using AI with .NET](../quickstarts/generate-images.md)
 - [Explore text-to-image capabilities in .NET (blog post)](https://devblogs.microsoft.com/dotnet/explore-text-to-image-dotnet/)

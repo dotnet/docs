@@ -44,10 +44,9 @@ static string SaveImage(DataContent content, string name)
 // </SnippetGenerateImage>
 
 // <SnippetWithOptions>
-// Configure image generation options.
 var options = new ImageGenerationOptions
 {
-    ImageSize = new System.Drawing.Size(1024, 1536),
+    ImageSize = new Size(1024, 1536),
     Count = 2
 };
 
@@ -61,7 +60,7 @@ try
 {
     response = await generator.GenerateImagesAsync(
         "An abstract representation of technology and nature in harmony",
-        new ImageGenerationOptions { ImageSize = new System.Drawing.Size(512, 512) });
+        new ImageGenerationOptions { ImageSize = new Size(512, 512) });
 
     if (response.Contents.Count == 0)
     {

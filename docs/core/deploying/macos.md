@@ -41,4 +41,4 @@ For Native AOT apps, no entitlements are required.
 Use Apple's developer documentation to sign and notarize the binary.
 
 > [!WARNING]
-> Failing to sign and notarize your app might result in users seeing security warnings or being unable to launch your application.
+> Failing to sign and notarize your app might result in the application crashing while executing a restricted operation.

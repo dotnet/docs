@@ -54,12 +54,12 @@ Your `appsettings.json` should have a section as follows :
 
 ```cs
 var host = Host.CreateDefaultBuilder()
-    // ApplicationName and EnvironmentName will be imported from `IHostEnvironment` and BuildVersion and DeploymentRing will be imported from the "appsettings.json" file.:
+    // ApplicationName and EnvironmentName will be imported from `IHostEnvironment` 
+    // BuildVersion and DeploymentRing will be imported from the "appsettings.json" file.
     .UseApplicationMetadata()
     .Build()
     .StartAsync();
 
-// work with metadata options
 var metadataOptions = host.Services.GetRequiredService<IOptions<ApplicationMetadata>>();
 var buildVersion = metadataOptions.Value.BuildVersion;
 ```
@@ -74,7 +74,6 @@ var hostBuilder = Host.CreateDefaultBuilder()
       .AddApplicationMetadata(hostBuilderContext.Configuration.GetSection("ambientmetadata:application")))
     .Build();
 
-// work with metadata options
 var metadataOptions = host.Services.GetRequiredService<IOptions<ApplicationMetadata>>();
 var buildVersion = metadataOptions.Value.BuildVersion;
 ```

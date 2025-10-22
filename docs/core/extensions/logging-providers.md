@@ -199,7 +199,7 @@ If you plan to develop your own implementation of the <xref:Microsoft.Extensions
 - The <xref:Microsoft.Extensions.Logging.ILogger.Log%2A?displayProperty=nameWithType> method is synchronous.
 - The lifetime of log state and objects should *not* be assumed.
 
-An implementation of `ILoggerProvider` will create an `ILogger` via its <xref:Microsoft.Extensions.Logging.ILoggerProvider.CreateLogger%2A?displayProperty=nameWithType> method. If your implementation strives to queue logging messages in a non-blocking manner, the messages should first be materialized or the object state that's used to materialize a log entry should be serialized. Doing so avoids potential exceptions from disposed objects.
+An implementation of `ILoggerProvider` creates an `ILogger` via its <xref:Microsoft.Extensions.Logging.ILoggerProvider.CreateLogger%2A?displayProperty=nameWithType> method. If your implementation strives to queue logging messages in a non-blocking manner, the messages should first be materialized or the object state that's used to materialize a log entry should be serialized. Doing so avoids potential exceptions from disposed objects.
 
 For more information, see [Implement a custom logging provider in .NET](custom-logging-provider.md).
 

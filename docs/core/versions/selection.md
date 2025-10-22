@@ -98,7 +98,7 @@ A few usage examples demonstrate the behavior, if you target 5.0:
 Minor version roll-forward has one side-effect that may affect end users. Consider the following scenario:
 
 01. The application specifies that 5.0 is required.
-02. When run, version 5.0.* isn't installed, however, 5.1.0 is. Version 5.1.0 will be used.
+02. When run, version 5.0.* isn't installed, however, 5.1.0 is. Version 5.1.0 is used.
 03. Later, the user installs 5.0.3 and runs the application again, 5.0.3 will now be used.
 
 It's possible that 5.0.3 and 5.1.0 behave differently, particularly for scenarios like serializing binary data.

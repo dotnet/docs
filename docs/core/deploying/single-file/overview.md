@@ -210,11 +210,11 @@ We have some recommendations for fixing common scenarios:
 
 Some workflows require post-processing of binaries before bundling. A common example is signing. The dotnet SDK provides MSBuild extension points to allow processing binaries just before single-file bundling. The available APIs are:
 
-- A target `PrepareForBundle` that will be called before `GenerateSingleFileBundle`
-- An `<ItemGroup><FilesToBundle /></ItemGroup>` containing all files that will be bundled
+- A target `PrepareForBundle` that is called before `GenerateSingleFileBundle`
+- An `<ItemGroup><FilesToBundle /></ItemGroup>` containing all files that is bundled
 - A Property `AppHostFile` that will specify the apphost template. Post-processing might want to exclude the apphost from processing.
 
-To plug into this involves creating a target that will be executed between `PrepareForBundle` and `GenerateSingleFileBundle`.
+To plug into this involves creating a target that is executed between `PrepareForBundle` and `GenerateSingleFileBundle`.
 
 Consider the following .NET project `Target` node example:
 
@@ -226,7 +226,7 @@ It's possible that tooling will need to copy files in the process of signing. Th
 
 ### Compress assemblies in single-file apps
 
-Single-file apps can be created with compression enabled on the embedded assemblies. Set the `EnableCompressionInSingleFile` property to `true`. The single file that's produced will have all of the embedded assemblies compressed, which can significantly reduce the size of the executable.
+Single-file apps can be created with compression enabled on the embedded assemblies. Set the `EnableCompressionInSingleFile` property to `true`. The single file that's produced has all of the embedded assemblies compressed, which can significantly reduce the size of the executable.
 
 Compression comes with a performance cost. On application start, the assemblies must be decompressed into memory, which takes some time. We recommend that you measure both the size change and startup cost of enabling compression before using it. The impact can vary significantly between different applications.
 

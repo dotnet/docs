@@ -125,7 +125,7 @@ namespace Prime.UnitTests.Services
         {
             bool result = _primeService.IsPrime(1);
 
-            Assert.IsFalse(result, "1 should not be prime");
+            Assert.IsFalse(result, "1 shouldn't be prime");
         }
     }
 }

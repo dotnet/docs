@@ -87,7 +87,7 @@ The `Enum` type is similar to an open generic type: a converter for `Enum` has t
 
 ## The use of `Utf8JsonReader` in the `Read` method
 
-If your converter is converting a JSON object, the `Utf8JsonReader` will be positioned on the begin object token when the `Read` method begins. You must then read through all the tokens in that object and exit the method with the reader positioned on **the corresponding end object token**.  If you read beyond the end of the object, or if you stop before reaching the corresponding end token, you get a `JsonException` exception indicating that:
+If your converter is converting a JSON object, the `Utf8JsonReader` is positioned on the begin object token when the `Read` method begins. You must then read through all the tokens in that object and exit the method with the reader positioned on **the corresponding end object token**.  If you read beyond the end of the object, or if you stop before reaching the corresponding end token, you get a `JsonException` exception indicating that:
 
 > The converter 'ConverterName' read too much or not enough.
 
@@ -103,7 +103,7 @@ If you throw a `JsonException` without a message, the serializer creates a messa
 
 ```output
 Unhandled exception. System.Text.Json.JsonException:
-The JSON value could not be converted to System.Object.
+The JSON value couldn't be converted to System.Object.
 Path: $.Date | LineNumber: 1 | BytePositionInLine: 37.
 ```
 
@@ -121,9 +121,9 @@ Path: $.TemperatureRanges | LineNumber: 4 | BytePositionInLine: 24
 
 ### When to throw which exception type
 
-When the JSON payload contains tokens that are not valid for the type being deserialized, throw a `JsonException`.
+When the JSON payload contains tokens that aren't valid for the type being deserialized, throw a `JsonException`.
 
-When you want to disallow certain types, throw a `NotSupportedException`. This exception is what the serializer automatically throws for types that are not supported. For example, `System.Type` is not supported for security reasons, so an attempt to deserialize it results in a `NotSupportedException`.
+When you want to disallow certain types, throw a `NotSupportedException`. This exception is what the serializer automatically throws for types that aren't supported. For example, `System.Type` isn't supported for security reasons, so an attempt to deserialize it results in a `NotSupportedException`.
 
 You can throw other exceptions as needed, but they don't automatically include JSON path information.
 
@@ -239,7 +239,7 @@ Suppose, for example, you have a `Person` abstract base class, with `Employee` a
 The following code shows a base class, two derived classes, and a custom converter for them. The converter uses a discriminator property to do polymorphic deserialization. The type discriminator isn't in the class definitions but is created during serialization and is read during deserialization.
 
 > [!IMPORTANT]
-> The example code requires JSON object name/value pairs to stay in order, which is not a standard requirement of JSON.
+> The example code requires JSON object name/value pairs to stay in order, which isn't a standard requirement of JSON.
 
 :::code language="csharp" source="snippets/how-to/csharp/Person.cs" id="Person":::
 
@@ -312,8 +312,8 @@ By default, the serializer handles null values as follows:
 
 * For reference types and <xref:System.Nullable%601> types:
 
-  * It does not pass `null` to custom converters on serialization.
-  * It does not pass `JsonTokenType.Null` to custom converters on deserialization.
+  * It doesn't pass `null` to custom converters on serialization.
+  * It doesn't pass `JsonTokenType.Null` to custom converters on deserialization.
   * It returns a `null` instance on deserialization.
   * It writes `null` directly with the writer on serialization.
 

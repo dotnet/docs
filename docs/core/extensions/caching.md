@@ -96,7 +96,7 @@ Now that the cache is populated, another call to `IterateAlphabetAsync` is await
 
 :::code source="snippets/caching/memory-apis/Program.cs" range="56-66":::
 
-If the `cache` contains the `letter` key, and the `value` is an instance of an `AlphabetLetter` it's written to the console. When the `letter` key is not in the cache, it was evicted and its post eviction callback was invoked.
+If the `cache` contains the `letter` key, and the `value` is an instance of an `AlphabetLetter` it's written to the console. When the `letter` key isn't in the cache, it was evicted and its post eviction callback was invoked.
 
 #### Additional extension methods
 
@@ -262,7 +262,7 @@ Consider any of the available implementations of the `IDistributedCache` from th
 
 ### Distributed caching API
 
-The distributed caching APIs are a bit more primitive than their in-memory caching API counterparts. The key-value pairs are a bit more basic. In-memory caching keys are based on an `object`, whereas the distributed keys are a `string`. With in-memory caching, the value can be any strongly-typed generic, whereas values in distributed caching are persisted as `byte[]`. That's not to say that various implementations don't expose strongly-typed generic values but that would be an implementation detail.
+The distributed caching APIs are a bit more primitive than their in-memory caching API counterparts. The key-value pairs are a bit more basic. In-memory caching keys are based on an `object`, whereas the distributed keys are a `string`. With in-memory caching, the value can be any strongly-typed generic, whereas values in distributed caching are persisted as `byte[]`. That's not to say that various implementations don't expose strongly-typed generic values but that is an implementation detail.
 
 #### Create values
 

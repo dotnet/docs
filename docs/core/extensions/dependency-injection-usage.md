@@ -81,7 +81,7 @@ The example implementations all initialize their `Id` property with the result o
 
 :::code source="snippets/configuration/console-di/ExampleSingletonService.cs":::
 
-Each implementation is defined as `internal sealed` and implements its corresponding interface. They're not required to be `internal` or `sealed`, however, it's common to treat implementations as `internal` to avoid leaking implementation types to external consumers. Furthermore, since each type will not be extended, it's marked as `sealed`.  For example, `ExampleSingletonService` implements `IExampleSingletonService`.
+Each implementation is defined as `internal sealed` and implements its corresponding interface. They're not required to be `internal` or `sealed`, however, it's common to treat implementations as `internal` to avoid leaking implementation types to external consumers. Furthermore, since each type won't be extended, it's marked as `sealed`.  For example, `ExampleSingletonService` implements `IExampleSingletonService`.
 
 ## Add a service that requires DI
 

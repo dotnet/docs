@@ -143,7 +143,7 @@ namespace Prime.UnitTests.Services
         {
             var result = _primeService.IsPrime(1);
 
-            Assert.That(result, Is.False, "1 should not be prime");
+            Assert.That(result, Is.False, "1 shouldn't be prime");
         }
     }
 }

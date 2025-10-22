@@ -22,7 +22,7 @@ This article is based on the [sample source code project](/samples/dotnet/sample
 
 ## System under test
 
-The "system under test" refers to the code that you're writing unit tests against, this could be an object, service, or anything else that exposes testable functionality. For this article, you'll create a class library that will be the system under test, and two corresponding unit test projects.
+The "system under test" refers to the code that you're writing unit tests against, this could be an object, service, or anything else that exposes testable functionality. For this article, you'll create a class library that is the system under test, and two corresponding unit test projects.
 
 ### Create a class library
 
@@ -109,7 +109,7 @@ namespace XUnit.Coverlet
         [Theory]
         [InlineData(-1), InlineData(0), InlineData(1)]
         public void IsPrime_ValuesLessThan2_ReturnFalse(int value) =>
-            Assert.False(_primeService.IsPrime(value), $"{value} should not be prime");
+            Assert.False(_primeService.IsPrime(value), $"{value} shouldn't be prime");
 
         [Theory]
         [InlineData(2), InlineData(3), InlineData(5), InlineData(7)]
@@ -119,7 +119,7 @@ namespace XUnit.Coverlet
         [Theory]
         [InlineData(4), InlineData(6), InlineData(8), InlineData(9)]
         public void IsPrime_NonPrimesLessThan10_ReturnFalse(int value) =>
-            Assert.False(_primeService.IsPrime(value), $"{value} should not be prime");
+            Assert.False(_primeService.IsPrime(value), $"{value} shouldn't be prime");
     }
 }
 ```
@@ -132,7 +132,7 @@ From the command prompt, create a new solution to encapsulate the class library 
 dotnet new sln -n XUnit.Coverage
 ```
 
-This will create a new solution file name `XUnit.Coverage` in the *UnitTestingCodeCoverage* directory. Add the projects to the root of the solution.
+This creates a new solution file name `XUnit.Coverage` in the *UnitTestingCodeCoverage* directory. Add the projects to the root of the solution.
 
 ## [Linux](#tab/linux)
 
@@ -165,7 +165,7 @@ There are two types of code coverage tools:
 
 In this section, the focus is on data collector tools.
 
-.NET includes a built-in code coverage data collector, which is also available in Visual Studio. This data collector generates a binary *.coverage* file that can be used to generate reports in Visual Studio. The binary file is not human-readable, and it must be converted to a human-readable format before it can be used to generate reports outside of Visual Studio.
+.NET includes a built-in code coverage data collector, which is also available in Visual Studio. This data collector generates a binary *.coverage* file that can be used to generate reports in Visual Studio. The binary file isn't human-readable, and it must be converted to a human-readable format before it can be used to generate reports outside of Visual Studio.
 
 > [!TIP]
 > The `dotnet-coverage` tool is a cross-platform tool that can be used to convert the binary coverage test results file to a human-readable format. For more information, see [dotnet-coverage](../additional-tools/dotnet-coverage.md).
@@ -184,7 +184,7 @@ cd XUnit.Coverlet.Collector && dotnet test --collect:"XPlat Code Coverage"
 > [!NOTE]
 > The `"XPlat Code Coverage"` argument is a friendly name that corresponds to the data collectors from Coverlet. This name is required but is case insensitive. To use .NET's built-in Code Coverage data collector, use `"Code Coverage"`.
 
-As part of the `dotnet test` run, a resulting *coverage.cobertura.xml* file is output to the *TestResults* directory. The XML file contains the results. This is a cross-platform option that relies on the .NET CLI, and it is great for build systems where MSBuild is not available.
+As part of the `dotnet test` run, a resulting *coverage.cobertura.xml* file is output to the *TestResults* directory. The XML file contains the results. This is a cross-platform option that relies on the .NET CLI, and it is great for build systems where MSBuild isn't available.
 
 Below is the example *coverage.cobertura.xml* file.
 

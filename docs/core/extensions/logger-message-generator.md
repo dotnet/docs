@@ -91,7 +91,7 @@ public static partial class Log
 }
 ```
 
-You can omit the logging message and <xref:System.String.Empty?displayProperty=nameWithType> will be provided for the message. The state will contain the arguments, formatted as key-value pairs.
+You can omit the logging message and <xref:System.String.Empty?displayProperty=nameWithType> is provided for the message. The state will contain the arguments, formatted as key-value pairs.
 
 :::code source="snippets/logging/logger-message-generator/Program.cs":::
 
@@ -440,7 +440,7 @@ Additionally, there are benefits over manually using <xref:Microsoft.Extensions.
 - Shorter and simpler syntax: Declarative attribute usage rather than coding boilerplate.
 - Guided developer experience: The generator gives warnings to help developers do the right thing.
 - Support for an arbitrary number of logging parameters. `LoggerMessage.Define` supports a maximum of six.
-- Support for dynamic log level. This is not possible with `LoggerMessage.Define` alone.
+- Support for dynamic log level. This isn't possible with `LoggerMessage.Define` alone.
 
 ## See also
 

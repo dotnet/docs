@@ -92,7 +92,7 @@ In the preceding code, changes to the JSON configuration file after the app has 
 <xref:Microsoft.Extensions.Options.IOptionsSnapshot%601>:
 
 - Is useful in scenarios where options should be recomputed on every injection resolution, in [scoped or transient lifetimes](dependency-injection.md#service-lifetimes). For more information, see [Use IOptionsSnapshot to read updated data](#use-ioptionssnapshot-to-read-updated-data).
-- Is registered as [Scoped](dependency-injection.md#scoped) and therefore cannot be injected into a Singleton service.
+- Is registered as [Scoped](dependency-injection.md#scoped) and therefore can't be injected into a Singleton service.
 - Supports [named options](#named-options-support-using-iconfigurenamedoptions).
 
 <xref:Microsoft.Extensions.Options.IOptionsMonitor%601>:
@@ -116,7 +116,7 @@ In the preceding code, changes to the JSON configuration file after the app has 
 Using a generic wrapper type gives you the ability to decouple the lifetime of the option from the dependency injection (DI) container. The <xref:Microsoft.Extensions.Options.IOptions%601.Value?displayProperty=nameWithType> interface provides a layer of abstraction, including generic constraints, on your options type. This provides the following benefits:
 
 - The evaluation of the `T` configuration instance is deferred to the accessing of <xref:Microsoft.Extensions.Options.IOptions%601.Value?displayProperty=nameWithType>, rather than when it is injected. This is important because you can consume the `T` option from various places and choose the lifetime semantics without changing anything about `T`.
-- When registering options of type `T`, you do not need to explicitly register the `T` type. This is a convenience when you're [authoring a library](options-library-authors.md) with simple defaults, and you don't want to force the caller to register options into the DI container with a specific lifetime.
+- When registering options of type `T`, you don't need to explicitly register the `T` type. This is a convenience when you're [authoring a library](options-library-authors.md) with simple defaults, and you don't want to force the caller to register options into the DI container with a specific lifetime.
 - From the perspective of the API, it allows for constraints on the type `T` (in this case, `T` is constrained to a reference type).
 
 ## Use IOptionsSnapshot to read updated data
@@ -169,7 +169,7 @@ The following example uses <xref:Microsoft.Extensions.Options.IOptionsMonitor%60
 In the preceding code, changes to the JSON configuration file after the app has started are read.
 
 > [!TIP]
-> Some file systems, such as Docker containers and network shares, may not reliably send change notifications. When using the <xref:Microsoft.Extensions.Options.IOptionsMonitor%601> interface in these environments, set the `DOTNET_USE_POLLING_FILE_WATCHER` environment variable to `1` or `true` to poll the file system for changes. The interval at which changes are polled is every four seconds and is not configurable.
+> Some file systems, such as Docker containers and network shares, may not reliably send change notifications. When using the <xref:Microsoft.Extensions.Options.IOptionsMonitor%601> interface in these environments, set the `DOTNET_USE_POLLING_FILE_WATCHER` environment variable to `1` or `true` to poll the file system for changes. The interval at which changes are polled is every four seconds and isn't configurable.
 >
 > For more information on Docker containers, see [Containerize a .NET app](../docker/build-container.md).
 

@@ -62,31 +62,9 @@ Using the same code as shown in the previous behavior section, the output after 
 </Example>
 ```
 
-If the AppContext switch `Switch.System.Xml.IgnoreObsoleteMembers` is enabled, the previous behavior is restored:
-
-```csharp
-AppContext.SetSwitch("Switch.System.Xml.IgnoreObsoleteMembers", true);
-
-var obj = new Example();
-var serializer = new XmlSerializer(typeof(Example));
-using var writer = new StringWriter();
-serializer.Serialize(writer, obj);
-Console.WriteLine(writer.ToString());
-```
-
-**Output with AppContext switch enabled:**
-
-```xml
-<Example>
-  <NormalProperty>normal</NormalProperty>
-</Example>
-```
-
 If `[Obsolete(IsError = true)]` is applied to a property, the following exception is thrown during serializer creation:
 
-```
-System.InvalidOperationException: Cannot serialize member 'ObsoleteProperty' because it is marked with ObsoleteAttribute and IsError is set to true.
-```
+> System.InvalidOperationException: Cannot serialize member 'ObsoleteProperty' because it is marked with ObsoleteAttribute and IsError is set to true.
 
 > [!NOTE]
 > Properties that are marked as `[Obsolete]` have always successfully deserialized when data is present in the XML. While this change allows `[Obsolete]` properties to "round trip" from object to XML and back to object, the new behavior affects only the serialization half (object to XML) of the "round trip."

@@ -183,15 +183,10 @@ These environment variables are used only when running apps via generated execut
 
 ### `DOTNET_HOST_PATH`
 
-Specifies the absolute path to a `dotnet` host (`dotnet.exe` on Windows, `dotnet` on Linux and macOS) that was used to launch the currently-running `dotnet` process. This is used by the .NET SDK to help tools that run during .NET SDK commands ensure they use the same `dotnet` runtime for any child `dotnet` processes they create for the duration of the command. Tools and MSBuild Tasks within the SDK that invoke binaries via the `dotnet` host are expected to honor this environment variable to ensure a consistent experience.
+Specifies the absolute path to a `dotnet` host (`dotnet.exe` on Windows, `dotnet` on Linux and macOS) that was used to launch the currently-running `dotnet` process, or that would be used when running `dotnet` commands for the currently-building project when executing under MSBuild. This is used by the .NET SDK to help tools that run during .NET SDK commands ensure they use the same `dotnet` host configuration for any child `dotnet` processes they create for the duration of the command. Tools and any MSBuild logic that runs within a build that invoke binaries via the `dotnet` host are expected to honor this environment variable to ensure a consistent experience. 
 
-Tools that invoke `dotnet` during an SDK command should use the following algorithm to locate it:
-
-- if `DOTNET_HOST_PATH` is set, use that value directly
-- otherwise, rely on `dotnet` via the system's `PATH`
-
-> [!NOTE]
-> `DOTNET_HOST_PATH` is not a general solution for locating the `dotnet` host. It is only intended to be used by tools that are invoked by the .NET SDK.
+Starting in Visual Studio 2026, MSBuild in Visual Studio will _also_ ensure that `DOTNET_HOST_PATH` is set for all builds of .NET SDK projects. For greatest consistency, all MSBuild tools and logic that want to use _the same dotnet binary_ as the one that spawned the build should rely on 
+`DOTNET_HOST_PATH` - up to and including firing a diagnostic (warning or error) when the variable is not present.
 
 ### `DOTNET_LAUNCH_PROFILE`
 

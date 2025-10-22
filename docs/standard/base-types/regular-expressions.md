@@ -2,7 +2,7 @@
 title: ".NET Regular Expressions"
 description: Use regular expressions to find specific character patterns, validate text, work with text substrings, & add extracted strings to a collection in .NET.
 ms.topic: concept-article
-ms.date: "07/26/2022"
+ms.date: "10/22/2025"
 ms.custom: devdivchpfy22
 dev_langs: 
   - "csharp"
@@ -22,6 +22,7 @@ helpviewer_keywords:
   - ".NET regular expressions"
   - "strings [.NET], regular expressions"
 ms.assetid: 521b3f6d-f869-42e1-93e5-158c54a6895d
+ai-usage: ai-assisted
 ---
 
 # .NET regular expressions

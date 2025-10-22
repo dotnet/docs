@@ -1,7 +1,8 @@
 ---
 title: Compile-time logging source generation
 description: Learn how to use the LoggerMessageAttribute and compile-time source generation for logging in .NET.
-ms.date: 06/21/2024
+ms.date: 10/22/2025
+ai-usage: ai-assisted
 ---
 
 # Compile-time logging source generation

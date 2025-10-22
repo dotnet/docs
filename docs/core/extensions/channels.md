@@ -3,7 +3,8 @@ title: Channels
 description: Learn the official synchronization data structures in System.Threading.Channels for producers and consumers with .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 06/26/2023
+ms.date: 10/22/2025
+ai-usage: ai-assisted
 ---
 
 # System.Threading.Channels library

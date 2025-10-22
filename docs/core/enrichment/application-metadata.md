@@ -1,5 +1,5 @@
 ---
-title: Application metada
+title: Application metadata
 description: Learn how to use the application metadata to add service-specific information to your service in .NET.
 ms.date: 10/14/2025
 ---
@@ -33,12 +33,12 @@ dotnet package add Microsoft.Extensions.AmbientMetadata.Application
 
 The following shows the information made available by the provider via <xref:Microsoft.Extensions.Configuration.IConfiguration>:
 
-| Key | Required? | Where the value comes from| Value Example | Description
-|-|-|-|-|
-| `ambientmetadata:application:applicationname` | yes | automatically from `IHostEnvironment` |`myApp` | The application name.
-| `ambientmetadata:application:environmentname` | yes | automatically from `IHostEnvironment` | `Production`, `Staging`, `Development` | The environment the application is deployed to.
-| `ambientmetadata:application:buildversion` | no | configure it in `IConfiguration` | `1.0.0-rc1` | The application's build version.
-| `ambientmetadata:application:deploymentring` | no | configure it in `IConfiguration` | `r0`, `public` | The deployment ring from where the application is running.
+| Key | Required? | Where the value comes from| Value Example | Description|
+|-|-|-|-|-|
+| `ambientmetadata:application:applicationname` | yes | automatically from `IHostEnvironment` |`myApp` | The application name.|
+| `ambientmetadata:application:environmentname` | yes | automatically from `IHostEnvironment` | `Production`, `Staging`, `Development` | The environment the application is deployed to.|
+| `ambientmetadata:application:buildversion` | no | configure it in `IConfiguration` | `1.0.0-rc1` | The application's build version.|
+| `ambientmetadata:application:deploymentring` | no | configure it in `IConfiguration` | `r0`, `public` | The deployment ring from where the application is running.|
 
 ## Example
 

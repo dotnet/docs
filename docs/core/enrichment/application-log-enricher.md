@@ -1,10 +1,10 @@
 ---
-title: Application enricher
+title: Application log enricher
 description: Learn how to use the application log enricher to add application-specific information to your telemetry in .NET.
 ms.date: 10/14/2025
 ---
 
-# Application enricher
+# Application log enricher
 
 The application log enricher augments telemetry logs with application-specific information such as service host details and application metadata. This enricher provides essential context about your application's deployment environment, version information, and service identity that helps with monitoring, debugging, and operational visibility.
 
@@ -73,7 +73,7 @@ Register the log enricher into the dependency injection container using <xref:Mi
 serviceCollection.AddServiceLogEnricher();
 ```
 
-You can enable or disable individual options of the enricher using <xref:Microsoft.Extensions.DependencyInjection.ApplicationEnricherServiceCollectionExtensions.AddServiceLogEnricher(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action(Microsoft.Extensions.Diagnostics.Enrichment.ApplicationLogEnricherOptions))>:
+You can enable or disable individual options of the enricher using <xref:Microsoft.Extensions.DependencyInjection.ApplicationEnricherServiceCollectionExtensions.AddServiceLogEnricher(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Microsoft.Extensions.Diagnostics.Enrichment.ApplicationLogEnricherOptions})>:
 
 ```csharp
 serviceCollection.AddServiceLogEnricher(options =>
@@ -93,7 +93,7 @@ And apply the configuration using <xref:Microsoft.Extensions.DependencyInjection
 var builder = Host.CreateDefaultBuilder(args);
 builder.ConfigureServices((context, services) =>
 {
-    services.AddServiceLogEnricher(context.Configuration.GetSection("applicationlogenricheroptions"));
+    services.AddServiceLogEnricher(context.Configuration.GetSection("ApplicationLogEnricherOptions"));
 });
 ```
 
@@ -126,7 +126,7 @@ Here's a complete example showing how to set up the service log enricher:
 
 With the service log enricher configured, your log output will include service-specific dimensions:
 
-:::code language="csharp" source="snippets/servicelogenricher/output-full.json" highlight="9-11" :::
+:::code language="json" source="snippets/servicelogenricher/output-full.json" highlight="9-11" :::
 
 ## Next steps
 

@@ -18,7 +18,7 @@ builder.ConfigureLogging(builder =>
 });
 builder.ConfigureServices((context, services) =>
 {
-    services.AddServiceLogEnricher(context.Configuration.GetSection("applicationlogenricheroptions"));
+    services.AddServiceLogEnricher(context.Configuration.GetSection("ApplicationLogEnricherOptions"));
 });
 
 var host = builder.Build();

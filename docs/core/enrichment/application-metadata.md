@@ -31,6 +31,8 @@ dotnet package add Microsoft.Extensions.AmbientMetadata.Application
                   Version="*" /> <!-- Adjust version -->
 ```
 
+---
+
 The following shows the information made available by the provider via <xref:Microsoft.Extensions.Configuration.IConfiguration>:
 
 | Key | Required? | Where the value comes from| Value Example | Description|

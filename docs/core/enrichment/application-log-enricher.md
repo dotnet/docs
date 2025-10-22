@@ -30,6 +30,15 @@ Or, if you're using .NET 10+ SDK:
 dotnet package add Microsoft.Extensions.Telemetry
 ```
 
+### [PackageReference](#tab/package-reference)
+
+```xml
+<PackageReference Include="Microsoft.Extensions.Telemetry"
+                  Version="*" /> <!-- Adjust version -->
+```
+
+---
+
 ## Application log enricher
 
 The application log enricher provides application-specific enrichment. The log enricher specifically targets log telemetry and adds standardized dimensions that help identify and categorize log entries by service characteristics.
@@ -85,7 +94,7 @@ serviceCollection.AddServiceLogEnricher(options =>
 
 Alternatively, configure options using `appsettings.json`:
 
-:::code language="json" source="snippets/servicelogenricher/appsettings.json" range="9-12":::
+:::code language="json" source="snippets/servicelogenricher/appsettings.json" range="8-11":::
 
 And apply the configuration using <xref:Microsoft.Extensions.DependencyInjection.ApplicationEnricherServiceCollectionExtensions.AddServiceLogEnricher(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfigurationSection)>:
 
@@ -126,7 +135,7 @@ Here's a complete example showing how to set up the service log enricher:
 
 With the service log enricher configured, your log output will include service-specific dimensions:
 
-:::code language="json" source="snippets/servicelogenricher/output-full.json" highlight="9-11" :::
+:::code language="json" source="snippets/servicelogenricher/output-full.json" highlight="8-11" :::
 
 ## Next steps
 

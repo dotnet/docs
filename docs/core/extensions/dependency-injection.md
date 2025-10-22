@@ -174,7 +174,7 @@ public class ExampleService
 ```
 
 > [!WARNING]
-> The `ExampleService` code with ambiguous DI-resolvable type parameters would throw an exception. Do **not** do this&mdash;it's intended to show what is meant by "ambiguous DI-resolvable types".
+> The `ExampleService` code with ambiguous DI-resolvable type parameters throws an exception. **Don't** do this&mdash;it's intended to show what is meant by "ambiguous DI-resolvable types".
 
 In the preceding example, there are three constructors. The first constructor is parameterless and requires no services from the service provider. Assume that both logging and options have been added to the DI container and are DI-resolvable services. When the DI container attempts to resolve the `ExampleService` type, it throws an exception, as the two constructors are ambiguous.
 
@@ -325,7 +325,7 @@ services.AddSingleton<IMessageWriter, ConsoleMessageWriter>();
 services.TryAddSingleton<IMessageWriter, LoggingMessageWriter>();
 ```
 
-The `TryAddSingleton` has no effect, as it was already added and the "try" fails. The `ExampleService` would assert this:
+The `TryAddSingleton` has no effect, as it was already added and the "try" fails. The `ExampleService` asserts this:
 
 ```csharp
 public class ExampleService

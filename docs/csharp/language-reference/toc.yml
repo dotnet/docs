@@ -619,6 +619,10 @@ items:
   - name: Thread synchronization
     href: ./compiler-messages/lock-semantics.md
     displayName: CS0185, CS9216, CS9217
+  - name Dynamic expressions
+    href: ./compiler-messages/dynamic-type-and-binding-errors.md
+    displayName: >
+      CS9230
   - name: Unsafe code
     href: ./compiler-messages/unsafe-code-errors.md
     displayName: >

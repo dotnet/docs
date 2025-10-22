@@ -1,7 +1,7 @@
 ---
 title: "Dataflow (Task Parallel Library)"
 description: Learn how to use dataflow components in the Task Parallel Library (TPL) to improve the robustness of concurrency-enabled applications.
-ms.date: "03/30/2017"
+ms.date: "10/22/2025"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "Task Parallel Library, dataflows"
   - "TPL dataflow library"
 ms.assetid: 643575d0-d26d-4c35-8de7-a9c403e97dd6
+ai-usage: ai-assisted
 ---
 # Dataflow (Task Parallel Library)
 

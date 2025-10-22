@@ -1,7 +1,7 @@
 ---
 title: "Task-based Asynchronous Pattern (TAP): Introduction and overview"
 description: "Learn about the Task-based Asynchronous Pattern (TAP), and compare it to the legacy patterns: Asynchronous Programming Model (APM) and Event-based Asynchronous Pattern (EAP)."
-ms.date: 03/03/2022
+ms.date: 10/22/2025
 dev_langs: 
   - "csharp"
   - "vb"
@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "TAP, .NET support for"
   - "Task-based Asynchronous Pattern, .NET support for"
   - ".NET, asynchronous design patterns"
+ai-usage: ai-assisted
 ---
 # Task-based asynchronous pattern (TAP) in .NET: Introduction and overview
 

@@ -1,7 +1,7 @@
 ---
 title: "How to write custom converters for JSON serialization - .NET"
 description: "Learn how to create custom converters for the JSON serialization classes that are provided in the System.Text.Json namespace."
-ms.date: 05/12/2022
+ms.date: 10/22/2025
 no-loc: [System.Text.Json, Newtonsoft.Json]
 helpviewer_keywords:
   - "JSON serialization"
@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "objects, serializing"
   - "converters"
 ms.topic: how-to
+ai-usage: ai-assisted
 ---
 
 # How to write custom converters for JSON serialization (marshalling) in .NET

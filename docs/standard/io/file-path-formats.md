@@ -1,7 +1,7 @@
 ---
 title: "File path formats on Windows systems"
 description: In this article, learn about file path formats on Windows systems, such as traditional DOS paths, DOS device paths, and universal naming convention (UNC) paths.
-ms.date: "06/06/2019"
+ms.date: "10/22/2025"
 dev_langs:
   - "csharp"
   - "vb"
@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "I/O, long paths"
   - "long paths"
   - "path formats, Windows"
+ai-usage: ai-assisted
 ---
 # File path formats on Windows systems
 

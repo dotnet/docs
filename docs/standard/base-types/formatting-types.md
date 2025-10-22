@@ -1,7 +1,7 @@
 ---
 title: "Overview: How to format numbers, dates, enums, and other types in .NET"
 description: "Learn how to convert instances of .NET types to formatted strings. Override the ToString method, make formatting culture-sensitive, and use ICustomFormatter."
-ms.date: 02/25/2022
+ms.date: 10/22/2025
 dev_langs:
   - "csharp"
   - "vb"
@@ -24,6 +24,7 @@ helpviewer_keywords:
   - "base types [.NET], formatting"
   - "custom formatting [.NET]"
   - "strings [.NET], formatting"
+ai-usage: ai-assisted
 ---
 # Overview: How to format numbers, dates, enums, and other types in .NET
 

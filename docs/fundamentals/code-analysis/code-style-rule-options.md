@@ -1,9 +1,10 @@
 ---
 title: .NET code style rule options
 description: Learn how to specify .NET code style options.
-ms.date: 04/26/2024
+ms.date: 10/22/2025
 author: gewarren
 ms.author: gewarren
+ai-usage: ai-assisted
 ---
 # Code-style rule options
 

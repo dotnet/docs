@@ -2,8 +2,9 @@
 title: Create a single file for application deployment
 description: Learn what single file application is and why you should consider using this application deployment model.
 author: lakshanf
-ms.date: 06/21/2022
+ms.date: 10/22/2025
 ms.custom: kr2b-contr-experiment
+ai-usage: ai-assisted
 ---
 
 # Single-file deployment

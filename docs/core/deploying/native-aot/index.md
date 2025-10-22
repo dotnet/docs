@@ -2,7 +2,8 @@
 title: Native AOT deployment overview
 description: Learn what Native AOT deployments are and why you should consider using it as part of the publishing your app with .NET 7 and later.
 author: lakshanf
-ms.date: 06/12/2023
+ms.date: 10/22/2025
+ai-usage: ai-assisted
 ---
 
 # Native AOT deployment

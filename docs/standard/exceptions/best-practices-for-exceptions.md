@@ -286,7 +286,7 @@ The following best practices concern custom exception types:
 
 - [End exception class names with `Exception`](#end-exception-class-names-with-exception)
 - [Include three constructors](#include-three-constructors)
-- [Provide more properties as needed](#provide-additional-properties-as-needed)
+- [Provide more properties as needed](#provide-more-properties-as-needed)
 
 ### End exception class names with `Exception`
 

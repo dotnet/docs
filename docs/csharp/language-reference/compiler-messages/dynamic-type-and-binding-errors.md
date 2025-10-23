@@ -102,7 +102,7 @@ The [`dynamic` type](../builtin-types/reference-types.md#the-dynamic-type) provi
 - Use concrete type constraints. Specify concrete type constraints on generic parameters instead of `dynamic` (CS1967, CS1968):
 - Use the `dynamic` keyword for variables. Always use the `dynamic` keyword to declare dynamic variables. Don't apply the `DynamicAttribute` directly (CS1970):
 
-For more information about the `dynamic` type and its proper usage, see [Using type dynamic](../../../advanced-topics/interop/using-type-dynamic.md).
+For more information about the `dynamic` type and its proper usage, see [Using type dynamic](../../advanced-topics/interop/using-type-dynamic.md).
 
 ## Dynamic operation restrictions
 
@@ -208,7 +208,7 @@ While [dynamic binding](../operators/member-access-operators.md#member-access-ex
   var name = nameof(typedValue.Property);  // Use concrete type
   ```
 
-For more information about dynamic binding and its limitations, see [Using type dynamic](../../../advanced-topics/interop/using-type-dynamic.md).
+For more information about dynamic binding and its limitations, see [Using type dynamic](../../advanced-topics/interop/using-type-dynamic.md).
 
 ## Missing runtime support for dynamic
 
@@ -218,7 +218,7 @@ For more information about dynamic binding and its limitations, see [Using type 
 
 The compiler needs types from the `System.Runtime` namespace and the Dynamic Language Runtime (DLR) to generate code for dynamic operations (CS1969, CS1980, CS7083). Ensure your project includes the necessary references. The required types are included in all modern .NET (.NET 5 and later) projects. For .NET Framework projects, add a reference to `Microsoft.CSharp.dll` in your project file.
 
-For more information about dynamic type requirements, see [Using type dynamic](../../../advanced-topics/interop/using-type-dynamic.md).
+For more information about dynamic type requirements, see [Using type dynamic](../../advanced-topics/interop/using-type-dynamic.md).
 
 ## Dynamic dispatch warnings
 
@@ -254,4 +254,4 @@ if (someValue is object) // Correctly checks if non-null
 }
 ```
 
-For more information about dynamic dispatch and runtime behavior, see [Using type dynamic](../../../advanced-topics/interop/using-type-dynamic.md).
+For more information about dynamic dispatch and runtime behavior, see [Using type dynamic](../../advanced-topics/interop/using-type-dynamic.md).

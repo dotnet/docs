@@ -1,23 +1,24 @@
 ---
 title: Write a custom .NET runtime host
-description: Learn to host the .NET runtime from native code to support advanced scenarios that require controlling how the .NET  runtime works.
+description: Learn to host the .NET runtime from native code to support advanced scenarios that require controlling how the .NET runtime works.
 author: mjrousos
 ms.topic: how-to
-ms.date: 12/21/2018
+ms.date: 10/23/2025
+ai-usage: ai-assisted
 ---
 # Write a custom .NET host to control the .NET runtime from your native code
 
 Like all managed code, .NET applications are executed by a host. The host is responsible for starting the runtime (including components like the JIT and garbage collector) and invoking managed entry points.
 
-Hosting the .NET runtime is an advanced scenario and, in most cases, .NET developers don't need to worry about hosting because .NET build processes provide a default host to run .NET applications. In some specialized circumstances, though, it can be useful to explicitly host the .NET runtime, either as a means of invoking managed code in a native process or in order to gain more control over how the runtime works.
+Hosting the .NET runtime is an advanced scenario and, in most cases, .NET developers don't need to worry about hosting because .NET build processes provide a default host to run .NET applications. In some specialized circumstances, though, it can be useful to explicitly host the .NET runtime, either as a means of invoking managed code in a native process or to gain more control over how the runtime works.
 
 This article gives an overview of the steps necessary to start the .NET runtime from native code and execute managed code in it.
 
 ## Prerequisites
 
-Because hosts are native applications, this tutorial covers constructing a C++ application to host .NET. You will need a C++ development environment (such as that provided by [Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)).
+Because hosts are native applications, this tutorial covers constructing a C++ application to host .NET. You need a C++ development environment (such as that provided by [Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)).
 
-You will also need to build a .NET component to test the host with, so you should install the [.NET SDK](https://dotnet.microsoft.com/download). It includes the necessary headers and libraries to link with. As an example, on Windows with the .NET 8 SDK the files can be found in `C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Host.win-x64\8.0.4\runtimes\win-x64\native`.
+You also need to build a .NET component to test the host with, so you should install the [.NET SDK](https://dotnet.microsoft.com/download). It includes the necessary headers and libraries to link with. As an example, on Windows with the .NET 8 SDK the files can be found in `C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Host.win-x64\8.0.4\runtimes\win-x64\native`.
 
 ## Hosting APIs
 

@@ -3,7 +3,8 @@ title: Create an item template for dotnet new - .NET CLI
 titleSuffix: ""
 description: Learn how to create an item template for the dotnet new command. Item templates can contain any number of files.
 author: adegeo
-ms.date: 09/08/2023
+ms.date: 10/23/2025
+ai-usage: ai-assisted
 ms.topic: tutorial
 ms.author: adegeo
 ---
@@ -17,7 +18,7 @@ You can view the completed template in the [.NET Samples GitHub repository](http
 > [!TIP]
 > **Item** templates aren't shown in the **Add** > **New Item** dialog of Visual Studio.
 
-In this part of the series, you'll learn how to:
+In this part of the series, you learn how to:
 
 > [!div class="checklist"]
 >
@@ -29,11 +30,11 @@ In this part of the series, you'll learn how to:
 
 ## Prerequisites
 
-* [.NET SDK 7.0.100](https://dotnet.microsoft.com/download) or a later version.
+- [.NET SDK 7.0.100](https://dotnet.microsoft.com/download) or a later version.
 
-  The reference article explains the basics about templates and how they're put together. Some of this information is reiterated here.
+- The reference article explains the basics about templates and how they're put together. Some of this information is reiterated here.
 
-* Open a terminal and navigate to a folder where you'll store and test the templates.
+- Open a terminal and navigate to a folder where you'll store and test the templates.
 
 [!INCLUDE [dotnet6-syntax-note](includes/dotnet6-syntax-note.md)]
 
@@ -54,7 +55,7 @@ parent_folder
 
 ## Create an item template
 
-An item template is a specific type of template that contains one or more files. These types of templates are useful when you already have a project and you want to generate another file, like a config file or code file. In this example, you'll create a class that adds an extension method to the string type.
+An item template is a specific type of template that contains one or more files. These types of templates are useful when you already have a project and you want to generate another file, like a config file or code file. In this example, you create a class that adds an extension method to the string type.
 
 In your terminal, navigate to the _working\content_ folder and create a new subfolder named _extensions_.
 
@@ -64,7 +65,7 @@ working
     └───extensions
 ```
 
-Navigate to the _extensions_ folder and create a new file named _StringExtensions.cs_. Open the file in a text editor. This class will provide an extension method named `Reverse` that reverses the contents of a string. Paste in the following code and save the file:
+Navigate to the _extensions_ folder and create a new file named _StringExtensions.cs_. Open the file in a text editor. This class provides an extension method named `Reverse` that reverses the contents of a string. Paste in the following code and save the file:
 
 ```csharp
 namespace System;
@@ -80,7 +81,7 @@ public static class StringExtensions
 }
 ```
 
-Now that the content of the template is finished, the next step is to create the template config.
+Now that the content of the template is finished, create the template config.
 
 ## Create the template config
 
@@ -171,7 +172,7 @@ Template options:
                                Default: StringExtensions
 ```
 
-Now that you have a valid _.template.config/template.json_ file, your template is ready to be installed. In your terminal, navigate to the  _extensions_ folder and run the following command to install the template located at the current folder:
+Now that you have a valid _.template.config/template.json_ file, your template is ready to be installed. In your terminal, navigate to the _extensions_ folder and run the following command to install the template located at the current folder:
 
 * **On Windows**: `dotnet new install .\`
 * **On Linux or macOS**: `dotnet new install ./`
@@ -192,8 +193,9 @@ Example templates: string extensions              stringext                [C#] 
 
 Now that you have an item template installed, test it.
 
-01. Navigate to the _test_ folder.
-01. Create a new console application with `dotnet new console`, which generates a working project you can easily test with the `dotnet run` command.
+1. Navigate to the _test_ folder.
+
+1. Create a new console application with `dotnet new console`, which generates a working project you can easily test with the `dotnet run` command.
 
     ```dotnetcli
     dotnet new console
@@ -211,7 +213,7 @@ Now that you have an item template installed, test it.
     Restore succeeded.
     ```
 
-01. Run the project using the following command.
+1. Run the project using the following command.
 
     ```dotnetcli
     dotnet run
@@ -223,7 +225,7 @@ Now that you have an item template installed, test it.
     Hello, World!
     ```
 
-01. Run `dotnet new stringext` to generate the _StringExtensions.cs_ file from the template.
+1. Run `dotnet new stringext` to generate the _StringExtensions.cs_ file from the template.
 
     ```dotnetcli
     dotnet new stringext
@@ -235,7 +237,7 @@ Now that you have an item template installed, test it.
     The template "Example templates: string extensions" was created successfully.
     ```
 
-01. Change the code in _Program.cs_ to reverse the `"Hello, World!"` string with the extension method provided by the template.
+1. Change the code in _Program.cs_ to reverse the `"Hello, World!"` string with the extension method provided by the template.
 
     ```csharp
     Console.WriteLine("Hello, World!".Reverse());
@@ -257,7 +259,7 @@ Congratulations! You created and deployed an item template with .NET. In prepara
 
 ## Uninstall the template
 
-In your terminal, navigate to the  _extensions_ folder and run the following command to uninstall the templates located at the current folder:
+In your terminal, navigate to the _extensions_ folder and run the following command to uninstall the templates located at the current folder:
 
 * **On Windows**: `dotnet new uninstall .\`
 * **On Linux or macOS**: `dotnet new uninstall ./`

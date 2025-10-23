@@ -61,11 +61,11 @@ This article covers the following compiler errors:
 <!-- The text in this list generates issues for Acrolinx, because they don't use contractions.
 That's be design. The text closely matches the text of the compiler error / warning for SEO purposes.
  -->
-  - [**CS1962**](#using-dynamic-in-type-declarations-and-constraints): *The typeof operator cannot be used on the dynamic type.*
+  - [**CS1962**](#using-dynamic-in-type-declarations-and-constraints): *The `typeof` operator cannot be used on the `dynamic` type.*
   - [**CS1964**](#dynamic-operation-restrictions): *Cannot apply dynamic conversion to an expression.*
-  - [**CS1965**](#using-dynamic-in-type-declarations-and-constraints): *Cannot derive from the dynamic type.*
+  - [**CS1965**](#using-dynamic-in-type-declarations-and-constraints): *Cannot derive from the `dynamic` type.*
   - [**CS1966**](#using-dynamic-in-type-declarations-and-constraints): *Cannot derive from a constructed dynamic type.*
-  - [**CS1967**](#using-dynamic-in-type-declarations-and-constraints): *Cannot use the dynamic type as a type constraint.*
+  - [**CS1967**](#using-dynamic-in-type-declarations-and-constraints): *Cannot use the `dynamic` type as a type constraint.*
   - [**CS1968**](#using-dynamic-in-type-declarations-and-constraints): *Cannot use a constructed dynamic type as a type constraint.*
   - [**CS1969**](#missing-runtime-support-for-dynamic): *One or more types required to compile a dynamic expression cannot be found.*
   - [**CS1970**](#using-dynamic-in-type-declarations-and-constraints): *Do not use '`System.Runtime.CompilerServices.DynamicAttribute`'. Use the '`dynamic`' keyword instead.*
@@ -79,10 +79,10 @@ That's be design. The text closely matches the text of the compiler error / warn
   - [**CS1978**](#dynamic-operation-restrictions): *Cannot use an expression as an argument to a dynamically dispatched operation.*
   - [**CS1979**](#dynamic-operation-restrictions): *Query expressions with a source or join sequence of type dynamic are not allowed.*
   - [**CS1980**](#missing-runtime-support-for-dynamic): *Cannot define a class or member that uses 'dynamic' because the compiler required type is missing.*
-  - [**CS1981**](#dynamic-dispatch-warnings): *The 'is dynamic' pattern is misleading. Use 'is object' instead.*
-  - [**CS7083**](#missing-runtime-support-for-dynamic): *Expression must be implicitly convertible to 'System.Object', or the type 'dynamic' is not available.*
+  - [**CS1981**](#dynamic-dispatch-warnings): *The '`is dynamic`' pattern is misleading. Use '`is object`' instead.*
+  - [**CS7083**](#missing-runtime-support-for-dynamic): *Expression must be implicitly convertible to '`System.Object`', or the type '`dynamic`' is not available.*
   - [**CS8133**](#dynamic-operation-restrictions): *Cannot deconstruct dynamic objects.*
-  - [**CS8364**](#dynamic-operation-restrictions): *An argument to 'nameof' cannot use any dynamic operation.*
+  - [**CS8364**](#dynamic-operation-restrictions): *An argument to '`nameof`' cannot use any dynamic operation.*
   - [**CS8416**](#dynamic-operation-restrictions): *The async modifier cannot be used in the expression of a dynamic attribute.*
   - [**CS9230**](#dynamic-operation-restrictions): *Cannot perform a dynamic invocation on an expression with type.*
 
@@ -116,7 +116,7 @@ For more information about the `dynamic` type and its proper usage, see [Using t
 - **CS1978**: *Cannot use an expression as an argument to a dynamically dispatched operation.*
 - **CS1979**: *Query expressions with a source or join sequence of type dynamic are not allowed.*
 - **CS8133**: *Cannot deconstruct dynamic objects.*
-- **CS8364**: *An argument to 'nameof' cannot use any dynamic operation.*
+- **CS8364**: *An argument to '`nameof`' cannot use any dynamic operation.*
 - **CS8416**: *The async modifier cannot be used in the expression of a dynamic attribute.*
 - **CS9230**: *Cannot perform a dynamic invocation on an expression with type.*
 
@@ -213,8 +213,8 @@ For more information about dynamic binding and its limitations, see [Using type 
 ## Missing runtime support for dynamic
 
 - **CS1969**: *One or more types required to compile a dynamic expression cannot be found. Are you missing a reference to 'Microsoft.CSharp.dll'?*
-- **CS1980**: *Cannot define a class or member that uses 'dynamic' because the compiler required type '*type*' cannot be found. Are you missing a reference?*
-- **CS7083**: *Expression must be implicitly convertible to 'System.Object', or the type 'dynamic' is not available.*
+- **CS1980**: *Cannot define a class or member that uses 'dynamic' because the compiler required type cannot be found. Are you missing a reference?*
+- **CS7083**: *Expression must be implicitly convertible to '`System.Object`', or the type '`dynamic`' is not available.*
 
 The compiler needs types from the `System.Runtime` namespace and the Dynamic Language Runtime (DLR) to generate code for dynamic operations (CS1969, CS1980, CS7083). Ensure your project includes the necessary references:
 
@@ -245,8 +245,6 @@ d.ConditionalMethod(); // CS1974 - can fail at runtime
 MyClass obj = (MyClass)d;
 obj.ConditionalMethod(); // Compile-time checks ensure correctness
 ```
-
-**Check for `object` instead of `dynamic` in pattern matching:**
 
 When you check whether a value is non-null, use `is object` instead of `is dynamic`. The `dynamic` keyword is a compile-time construct, and no object's runtime type is ever `dynamic` (CS1981):
 

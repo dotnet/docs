@@ -49,10 +49,10 @@ Follow these steps to configure the application log enricher in your application
 
 #### 1. Configure Application Metadata
 
-First, configure the [Application Metadata](application-metadata.md) by calling the <xref:Microsoft.Extensions.Hosting.ApplicationMetadataHostBuilderExtensions.UseApplicationMetadata(Microsoft.Extensions.Hosting.IHostBuilder,System.String)> method:
+First, configure the [Application Metadata](application-metadata.md) by calling the <xref:Microsoft.Extensions.Hosting.ApplicationMetadataHostBuilderExtensions.UseApplicationMetadata%2A> methods:
 
 ```csharp
-var builder = Host.CreateDefaultBuilder();
+var builder = Host.CreateApplicationBuilder();
 builder.UseApplicationMetadata()
 ```
 
@@ -61,7 +61,7 @@ This method automatically picks up values from the <xref:Microsoft.Extensions.Ho
 Alternatively, you can use this method <xref:Microsoft.Extensions.Configuration.ApplicationMetadataConfigurationBuilderExtensions.AddApplicationMetadata(Microsoft.Extensions.Configuration.IConfigurationBuilder,Microsoft.Extensions.Hosting.IHostEnvironment,System.String)>, which registers a configuration provider for application metadata by picking up the values from the <xref:Microsoft.Extensions.Hosting.IHostEnvironment> and adds it to the given configuration section name. Then you use <xref:Microsoft.Extensions.DependencyInjection.ApplicationMetadataServiceCollectionExtensions.AddApplicationMetadata(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfigurationSection)> method to register the metadata in the dependency injection container, which allow you to pass <xref:Microsoft.Extensions.Configuration.IConfigurationSection> separately:
 
 ```csharp
-var hostBuilder = Host.CreateDefaultBuilder()
+var hostBuilder = Host.CreateApplicationBuilder()
     .ConfigureAppConfiguration((context, builder) =>
         builder.AddApplicationMetadata(context.HostingEnvironment))
     .ConfigureServices((context, services) =>
@@ -99,11 +99,9 @@ Alternatively, configure options using `appsettings.json`:
 And apply the configuration using <xref:Microsoft.Extensions.DependencyInjection.ApplicationEnricherServiceCollectionExtensions.AddServiceLogEnricher(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfigurationSection)>:
 
 ```csharp
-var builder = Host.CreateDefaultBuilder(args);
-builder.ConfigureServices((context, services) =>
-{
-    services.AddServiceLogEnricher(context.Configuration.GetSection("ApplicationLogEnricherOptions"));
-});
+var builder = Host.CreateApplicationBuilder(args);
+builder.Services.AddServiceLogEnricher(builder.Configuration.GetSection("ApplicationLogEnricherOptions"));
+
 ```
 
 ### `ApplicationLogEnricherOptions` Configuration options

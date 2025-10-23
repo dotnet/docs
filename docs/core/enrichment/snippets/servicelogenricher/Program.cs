@@ -3,23 +3,17 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-var builder = Host.CreateDefaultBuilder(args);
+var builder = Host.CreateApplicationBuilder(args);
 builder.UseApplicationMetadata();
-builder.ConfigureLogging(builder =>
+builder.Logging.EnableEnrichment();
+builder.Logging.AddJsonConsole(op =>
 {
-    builder.EnableEnrichment();
-    builder.AddJsonConsole(op =>
+    op.JsonWriterOptions = new JsonWriterOptions
     {
-        op.JsonWriterOptions = new JsonWriterOptions
-        {
-            Indented = true
-        };
-    });
+        Indented = true
+    };
 });
-builder.ConfigureServices((context, services) =>
-{
-    services.AddServiceLogEnricher(context.Configuration.GetSection("ApplicationLogEnricherOptions"));
-});
+builder.Services.AddServiceLogEnricher(builder.Configuration.GetSection("ApplicationLogEnricherOptions"));
 
 var host = builder.Build();
 var logger = host.Services.GetRequiredService<ILogger<Program>>();
@@ -27,5 +21,3 @@ var logger = host.Services.GetRequiredService<ILogger<Program>>();
 logger.LogInformation("This is a sample log message");
 
 await host.RunAsync();
-
-

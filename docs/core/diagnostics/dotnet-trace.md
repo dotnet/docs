@@ -221,7 +221,7 @@ dotnet-trace collect
 
   | Profile | Description |
   |---------|-------------|
-  |`dotnet-common`|Lightweight .NET runtime diagnostics designed to stay low overhead. Includes:<br/><ul><li>GC</li><li>AssemblyLoader</li><li>Loader</li><li>Jit</li><li>Exception</li><li>Threading</li><li>JittedMethodILToNativeMap</li><li>Compilation</li></ul>Equivalent to `--providers "Microsoft-Windows-DotNETRuntime:0x100003801D:4"`.|
+  |`dotnet-common`|Lightweight .NET runtime diagnostics designed to stay low overhead.<br>Includes GC, AssemblyLoader, Loader, JIT, Exceptions, Threading, JittedMethodILToNativeMap, and Compilation events<br>Equivalent to `--providers "Microsoft-Windows-DotNETRuntime:0x100003801D:4"`.|
   |`dotnet-sampled-thread-time`|Samples .NET thread stacks (~100 Hz) to identify hotspots over time. Uses the runtime sample profiler with managed stacks.|
   |`gc-verbose`|Tracks GC collections and samples object allocations.|
   |`gc-collect`|Tracks GC collections only at very low overhead.|
@@ -280,6 +280,10 @@ dotnet-trace collect
 > - When specifying a stopping event through the `--stopping-event-*` options, as the EventStream is being parsed asynchronously, there will be some events that pass through between the time a trace event matching the specified stopping event options is parsed and the EventPipeSession is stopped.
 
 ## dotnet-trace collect-linux
+
+> [!NOTE] The collect-linux verb is a new preview feature and relies on an updated version of the .nettrace file format. The latest PerfView release supports these trace files but other ways of using the trace file may not work yet.
+
+> [!NOTE] The generated NetTrace is not fully compatible with [`convert`](#dotnet-trace-convert) and [`report`](#dotnet-trace-report).
 
 Collects diagnostic traces using perf_events, a Linux OS technology. `collect-linux` requires admin privileges to capture kernel- and user-mode events, and by default, captures events from all processes.
 
@@ -412,7 +416,7 @@ dotnet-trace collect-linux
 
   | Profile | Description |
   |---------|-------------|
-  |`dotnet-common`|Lightweight .NET runtime diagnostics designed to stay low overhead. Includes:<br/><ul><li>GC</li><li>AssemblyLoader</li><li>Loader</li><li>Jit</li><li>Exception</li><li>Threading</li><li>JittedMethodILToNativeMap</li><li>Compilation</li></ul>Equivalent to `--providers "Microsoft-Windows-DotNETRuntime:0x100003801D:4"`.|
+  |`dotnet-common`|Lightweight .NET runtime diagnostics designed to stay low overhead.<br>Includes GC, AssemblyLoader, Loader, JIT, Exceptions, Threading, JittedMethodILToNativeMap, and Compilation events<br>Equivalent to `--providers "Microsoft-Windows-DotNETRuntime:0x100003801D:4"`.|
   |`cpu-sampling`|Kernel CPU sampling (perf-based), emitted as `Universal.Events/cpu`, for precise on-CPU attribution.|
   |`thread-time`|Kernel thread context switches, emitted as `Universal.Events/cswitch`, for on/off-CPU and scheduler analysis.|
   |`gc-verbose`|Tracks GC collections and samples object allocations.|
@@ -654,6 +658,12 @@ To collect traces using `dotnet-trace collect-linux`:
 
   ```output
   $ sudo dotnet-trace collect-linux
+  ==========================================================================================
+  The collect-linux verb is a new preview feature and relies on an updated version of the
+  .nettrace file format. The latest PerfView release supports these trace files but other
+  ways of using the trace file may not work yet. For more details, see the docs at
+  https://learn.microsoft.com/dotnet/core/diagnostics/dotnet-trace.
+  ==========================================================================================
   No providers, profiles, ClrEvents, or PerfEvents were specified, defaulting to trace profiles 'dotnet-common' + 'cpu-sampling'.
 
   Provider Name                           Keywords            Level               Enabled By

@@ -52,6 +52,7 @@ helpviewer_keywords:
   - "CS8416"
   - "CS9230"
 ms.date: 10/23/2025
+ai-usage: ai-assisted
 ---
 # Resolve warnings related to the dynamic type and dynamic binding
 
@@ -67,12 +68,12 @@ That's be design. The text closely matches the text of the compiler error / warn
   - [**CS1967**](#using-dynamic-in-type-declarations-and-constraints): *Cannot use the dynamic type as a type constraint.*
   - [**CS1968**](#using-dynamic-in-type-declarations-and-constraints): *Cannot use a constructed dynamic type as a type constraint.*
   - [**CS1969**](#missing-runtime-support-for-dynamic): *One or more types required to compile a dynamic expression cannot be found.*
-  - [**CS1970**](#using-dynamic-in-type-declarations-and-constraints): *Do not use 'System.Runtime.CompilerServices.DynamicAttribute'. Use the 'dynamic' keyword instead.*
-  - [**CS1971**](#using-dynamic-in-type-declarations-and-constraints): *Base clause cannot specify a dynamic type.*
-  - [**CS1972**](#using-dynamic-in-type-declarations-and-constraints): *Cannot specify base type when indexer has no this accessor.*
+  - [**CS1970**](#using-dynamic-in-type-declarations-and-constraints): *Do not use '`System.Runtime.CompilerServices.DynamicAttribute`'. Use the '`dynamic`' keyword instead.*
+  - [**CS1971**](#dynamic-operation-restrictions): *The call to member needs to be dynamically dispatched, but cannot be because it is part of a base access expression. Consider casting the dynamic arguments or eliminating the base access.*
+  - [**CS1972**](#dynamic-operation-restrictions): *The indexer access needs to be dynamically dispatched, but cannot be because it is part of a base access expression. Consider casting the dynamic arguments or eliminating the base access.*
   - [**CS1973**](#dynamic-operation-restrictions): *The dynamic argument type does not match the target parameter type for extension method.*
   - [**CS1974**](#dynamic-dispatch-warnings): *Dynamic dispatch to a conditional method will fail at runtime.*
-  - [**CS1975**](#using-dynamic-in-type-declarations-and-constraints): *Cannot specify base type when constructor has no this or base initializer.*
+  - [**CS1975**](#dynamic-operation-restrictions): *The constructor call needs to be dynamically dispatched, but cannot be because it is part of a constructor initializer. Consider casting the dynamic arguments.*
   - [**CS1976**](#dynamic-operation-restrictions): *Cannot use a method group as an argument to a dynamically dispatched operation.*
   - [**CS1977**](#dynamic-operation-restrictions): *Cannot use a lambda expression as an argument to a dynamically dispatched operation.*
   - [**CS1978**](#dynamic-operation-restrictions): *Cannot use an expression as an argument to a dynamically dispatched operation.*
@@ -93,9 +94,6 @@ That's be design. The text closely matches the text of the compiler error / warn
 - **CS1967**: *Cannot use the dynamic type as a type constraint.*
 - **CS1968**: *Cannot use a constructed dynamic type as a type constraint.*
 - **CS1970**: *Do not use 'System.Runtime.CompilerServices.DynamicAttribute'. Use the 'dynamic' keyword instead.*
-- **CS1971**: *Base clause cannot specify a dynamic type.*
-- **CS1972**: *Cannot specify base type when indexer has no this accessor.*
-- **CS1975**: *Cannot specify base type when constructor has no this or base initializer.*
 
 The [`dynamic` type](../builtin-types/reference-types.md#the-dynamic-type) provides late binding for operations at runtime. However, you can't use `dynamic` in contexts where the compiler needs concrete type information at compile time. These errors occur when you try to use `dynamic` in type declarations, constraints, inheritance, or reflection operations.
 
@@ -131,16 +129,15 @@ dynamic value = GetValue();
 [Dynamic] object value = GetValue();  // CS1970
 ```
 
-**Base type specifications in special members:**
-
-You can't specify base types in certain contexts like indexers without `this` accessors (CS1972) or constructors without `this` or `base` initializers (CS1975). These restrictions apply to all types, including `dynamic`.
-
 For more information about the `dynamic` type and its proper usage, see [Using type dynamic](../../../advanced-topics/interop/using-type-dynamic.md).
 
 ## Dynamic operation restrictions
 
 - **CS1964**: *Cannot apply dynamic conversion to an expression.*
+- **CS1971**: *The call to member needs to be dynamically dispatched, but cannot be because it is part of a base access expression. Consider casting the dynamic arguments or eliminating the base access.*
+- **CS1972**: *The indexer access needs to be dynamically dispatched, but cannot be because it is part of a base access expression. Consider casting the dynamic arguments or eliminating the base access.*
 - **CS1973**: *The dynamic argument type does not match the target parameter type for extension method.*
+- **CS1975**: *The constructor call needs to be dynamically dispatched, but cannot be because it is part of a constructor initializer. Consider casting the dynamic arguments.*
 - **CS1976**: *Cannot use a method group as an argument to a dynamically dispatched operation.*
 - **CS1977**: *Cannot use a lambda expression as an argument to a dynamically dispatched operation.*
 - **CS1978**: *Cannot use an expression as an argument to a dynamically dispatched operation.*
@@ -151,6 +148,47 @@ For more information about the `dynamic` type and its proper usage, see [Using t
 - **CS9230**: *Cannot perform a dynamic invocation on an expression with type.*
 
 While [dynamic binding](../operators/member-access-operators.md#member-access-expression-) provides flexibility at runtime, certain operations can't be resolved dynamically. These restrictions exist because the compiler needs to generate specific code at compile time or because the operation fundamentally requires compile-time type information.
+
+**Dynamic dispatch with base access:**
+
+You can't use dynamic dispatch when accessing members through a base access expression (CS1971, CS1972, CS1975):
+
+```csharp
+class Base
+{
+    public virtual void Method(dynamic d) { }
+    public virtual int this[dynamic index] => 0;
+}
+
+class Derived : Base
+{
+    public Derived() : base() { }
+    
+    public override void Method(dynamic d)
+    {
+        base.Method(d);  // CS1971 - can't dynamically dispatch through base
+    }
+    
+    public override int this[dynamic index]
+    {
+        get
+        {
+            return base[index];  // CS1972 - can't dynamically dispatch base indexer
+        }
+    }
+}
+```
+
+When you call a base member or constructor with dynamic arguments, the call must be resolved at compile time. Cast the dynamic arguments to their specific types before making the call:
+
+```csharp
+public override void Method(dynamic d)
+{
+    base.Method((object)d);  // Cast to specific type
+}
+
+public Derived(dynamic value) : base((int)value) { }  // CS1975 - cast required
+```
 
 **Method groups, lambda expressions, and anonymous methods:**
 

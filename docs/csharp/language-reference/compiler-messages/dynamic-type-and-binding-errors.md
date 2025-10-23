@@ -61,30 +61,30 @@ This article covers the following compiler errors:
 <!-- The text in this list generates issues for Acrolinx, because they don't use contractions.
 That's be design. The text closely matches the text of the compiler error / warning for SEO purposes.
  -->
-  - [**CS1962**](#using-dynamic-in-type-declarations-and-constraints): *The `typeof` operator cannot be used on the `dynamic` type.*
-  - [**CS1964**](#dynamic-operation-restrictions): *Cannot apply dynamic conversion to an expression.*
-  - [**CS1965**](#using-dynamic-in-type-declarations-and-constraints): *Cannot derive from the `dynamic` type.*
-  - [**CS1966**](#using-dynamic-in-type-declarations-and-constraints): *Cannot derive from a constructed dynamic type.*
-  - [**CS1967**](#using-dynamic-in-type-declarations-and-constraints): *Cannot use the `dynamic` type as a type constraint.*
-  - [**CS1968**](#using-dynamic-in-type-declarations-and-constraints): *Cannot use a constructed dynamic type as a type constraint.*
-  - [**CS1969**](#missing-runtime-support-for-dynamic): *One or more types required to compile a dynamic expression cannot be found.*
-  - [**CS1970**](#using-dynamic-in-type-declarations-and-constraints): *Do not use '`System.Runtime.CompilerServices.DynamicAttribute`'. Use the '`dynamic`' keyword instead.*
-  - [**CS1971**](#dynamic-operation-restrictions): *The call to member needs to be dynamically dispatched, but cannot be because it is part of a base access expression. Consider casting the dynamic arguments or eliminating the base access.*
-  - [**CS1972**](#dynamic-operation-restrictions): *The indexer access needs to be dynamically dispatched, but cannot be because it is part of a base access expression. Consider casting the dynamic arguments or eliminating the base access.*
-  - [**CS1973**](#dynamic-operation-restrictions): *The dynamic argument type does not match the target parameter type for extension method.*
-  - [**CS1974**](#dynamic-dispatch-warnings): *Dynamic dispatch to a conditional method will fail at runtime.*
-  - [**CS1975**](#dynamic-operation-restrictions): *The constructor call needs to be dynamically dispatched, but cannot be because it is part of a constructor initializer. Consider casting the dynamic arguments.*
-  - [**CS1976**](#dynamic-operation-restrictions): *Cannot use a method group as an argument to a dynamically dispatched operation.*
-  - [**CS1977**](#dynamic-operation-restrictions): *Cannot use a lambda expression as an argument to a dynamically dispatched operation.*
-  - [**CS1978**](#dynamic-operation-restrictions): *Cannot use an expression as an argument to a dynamically dispatched operation.*
-  - [**CS1979**](#dynamic-operation-restrictions): *Query expressions with a source or join sequence of type dynamic are not allowed.*
-  - [**CS1980**](#missing-runtime-support-for-dynamic): *Cannot define a class or member that uses 'dynamic' because the compiler required type is missing.*
-  - [**CS1981**](#dynamic-dispatch-warnings): *The '`is dynamic`' pattern is misleading. Use '`is object`' instead.*
-  - [**CS7083**](#missing-runtime-support-for-dynamic): *Expression must be implicitly convertible to '`System.Object`', or the type '`dynamic`' is not available.*
-  - [**CS8133**](#dynamic-operation-restrictions): *Cannot deconstruct dynamic objects.*
-  - [**CS8364**](#dynamic-operation-restrictions): *An argument to '`nameof`' cannot use any dynamic operation.*
-  - [**CS8416**](#dynamic-operation-restrictions): *The async modifier cannot be used in the expression of a dynamic attribute.*
-  - [**CS9230**](#dynamic-operation-restrictions): *Cannot perform a dynamic invocation on an expression with type.*
+- [**CS1962**](#using-dynamic-in-type-declarations-and-constraints): *The `typeof` operator cannot be used on the `dynamic` type.*
+- [**CS1964**](#dynamic-operation-restrictions): *Cannot apply dynamic conversion to an expression.*
+- [**CS1965**](#using-dynamic-in-type-declarations-and-constraints): *Cannot derive from the `dynamic` type.*
+- [**CS1966**](#using-dynamic-in-type-declarations-and-constraints): *Cannot derive from a constructed dynamic type.*
+- [**CS1967**](#using-dynamic-in-type-declarations-and-constraints): *Cannot use the `dynamic` type as a type constraint.*
+- [**CS1968**](#using-dynamic-in-type-declarations-and-constraints): *Cannot use a constructed dynamic type as a type constraint.*
+- [**CS1969**](#missing-runtime-support-for-dynamic): *One or more types required to compile a dynamic expression cannot be found.*
+- [**CS1970**](#using-dynamic-in-type-declarations-and-constraints): *Do not use '`System.Runtime.CompilerServices.DynamicAttribute`'. Use the '`dynamic`' keyword instead.*
+- [**CS1971**](#dynamic-operation-restrictions): *The call to member needs to be dynamically dispatched, but cannot be because it is part of a base access expression. Consider casting the dynamic arguments or eliminating the base access.*
+- [**CS1972**](#dynamic-operation-restrictions): *The indexer access needs to be dynamically dispatched, but cannot be because it is part of a base access expression. Consider casting the dynamic arguments or eliminating the base access.*
+- [**CS1973**](#dynamic-operation-restrictions): *The dynamic argument type does not match the target parameter type for extension method.*
+- [**CS1974**](#dynamic-dispatch-warnings): *Dynamic dispatch to a conditional method will fail at runtime.*
+- [**CS1975**](#dynamic-operation-restrictions): *The constructor call needs to be dynamically dispatched, but cannot be because it is part of a constructor initializer. Consider casting the dynamic arguments.*
+- [**CS1976**](#dynamic-operation-restrictions): *Cannot use a method group as an argument to a dynamically dispatched operation.*
+- [**CS1977**](#dynamic-operation-restrictions): *Cannot use a lambda expression as an argument to a dynamically dispatched operation.*
+- [**CS1978**](#dynamic-operation-restrictions): *Cannot use an expression as an argument to a dynamically dispatched operation.*
+- [**CS1979**](#dynamic-operation-restrictions): *Query expressions with a source or join sequence of type dynamic are not allowed.*
+- [**CS1980**](#missing-runtime-support-for-dynamic): *Cannot define a class or member that uses 'dynamic' because the compiler required type is missing.*
+- [**CS1981**](#dynamic-dispatch-warnings): *The '`is dynamic`' pattern is misleading. Use '`is object`' instead.*
+- [**CS7083**](#missing-runtime-support-for-dynamic): *Expression must be implicitly convertible to '`System.Object`', or the type '`dynamic`' is not available.*
+- [**CS8133**](#dynamic-operation-restrictions): *Cannot deconstruct dynamic objects.*
+- [**CS8364**](#dynamic-operation-restrictions): *An argument to '`nameof`' cannot use any dynamic operation.*
+- [**CS8416**](#dynamic-operation-restrictions): *The async modifier cannot be used in the expression of a dynamic attribute.*
+- [**CS9230**](#dynamic-operation-restrictions): *Cannot perform a dynamic invocation on an expression with type.*
 
 ## Using `dynamic` in type declarations and constraints
 

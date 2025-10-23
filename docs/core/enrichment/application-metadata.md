@@ -216,7 +216,7 @@ public class LoggingService
 
 ## Custom configuration section
 
-If you prefer to use a different configuration section name, specify it when calling <xref:Microsoft.Extensions.Hosting.applicationmetadatahostbuilderextensions.UseApplicationMetadata``1(System.String)>:
+If you prefer to use a different configuration section name, specify it when calling <xref:Microsoft.Extensions.Hosting.ApplicationMetadataHostBuilderExtensions.UseApplicationMetadata``1(System.String)>:
 
 ```csharp
 using Microsoft.Extensions.Hosting;

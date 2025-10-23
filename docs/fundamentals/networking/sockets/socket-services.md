@@ -21,7 +21,7 @@ ai-usage: ai-assisted
 
 # Use Sockets to send and receive data over TCP
 
-Before you can use a socket to communicate with remote devices, the socket must be initialized with protocol and network address information. The constructor for the <xref:System.Net.Sockets.Socket> class has parameters that specify the address family, socket type, and protocol type that the socket uses to make connections. When connecting a client socket to a server socket, the client will use an `IPEndPoint` object to specify the network address of the server.
+Before you can use a socket to communicate with remote devices, the socket must be initialized with protocol and network address information. The constructor for the <xref:System.Net.Sockets.Socket> class has parameters that specify the address family, socket type, and protocol type that the socket uses to make connections. When connecting a client socket to a server socket, the client uses an `IPEndPoint` object to specify the network address of the server.
 
 [!INCLUDE [ip-endpoint](../includes/ip-endpoint.md)]
 
@@ -40,7 +40,7 @@ The preceding C# code:
   - Encodes and sends a message to the server using <xref:System.Net.Sockets.Socket.SendAsync%2A?displayProperty=nameWithType>.
   - Writes the sent message to the console.
   - Initializes a buffer to receive data from the server using <xref:System.Net.Sockets.Socket.ReceiveAsync%2A?displayProperty=nameWithType>.
-  - When the `response` is an acknowledgment, it is written to the console and the loop is exited.
+  - When the `response` is an acknowledgment, it's written to the console and the loop is exited.
 
 - Finally, the `client` socket calls <xref:System.Net.Sockets.Socket.Shutdown%2A?displayProperty=nameWithType> given <xref:System.Net.Sockets.SocketShutdown.Both?displayProperty=nameWithType>, which shuts down both send and receive operations.
 
@@ -75,7 +75,7 @@ Socket server sent acknowledgment: "<|ACK|>"
 Press ENTER to continue...
 ```
 
-The client application will send a message to the server, and the server will respond with an acknowledgment.
+The client application sends a message to the server, and the server will respond with an acknowledgment.
 
 ```dotnetcli
 dotnet run --project socket-client

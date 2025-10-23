@@ -32,7 +32,7 @@ SDK commands include `dotnet new` and `dotnet run`. The .NET CLI must choose an 
 
 You can take advantage of the latest SDK features and improvements while targeting earlier .NET runtime versions. You can target different runtime versions of .NET using the same SDK tools.
 
-In some circumstances, you may need to use a specific version of the SDK. You specify that version in a [*global.json* file](../tools/global-json.md).
+In some circumstances, you might need to use a specific version of the SDK. You specify that version in a [*global.json* file](../tools/global-json.md).
 
 *global.json* can be placed anywhere in the file hierarchy. You control which projects a given *global.json* applies to by its place in the file system. The .NET CLI searches for a *global.json* file iteratively navigating the path upward from the current working directory (which isn't necessarily the same as the project directory). The first *global.json* file found specifies the version used. If that SDK version is installed, that version is used. If the SDK specified in the *global.json* isn't found, the .NET CLI uses [matching rules](../tools/global-json.md#matching-rules) to select a compatible SDK, or fails if none is found.
 
@@ -56,7 +56,7 @@ For more information about SDK version selection, see the [Matching rules](../to
 
 ### Updating the SDK version
 
-It is important to update to the latest version of the SDK regularly to adopt the latest features, performance improvements, and bug fixes. To easily check for updates to the SDK, use the `dotnet sdk check` [command](../tools/dotnet-sdk-check.md). Additionally, if you select a specific version using *global.json*, consider a tool such as Dependabot to automatically update the pinned SDK version as new versions become available.
+It's important to update to the latest version of the SDK regularly to adopt the latest features, performance improvements, and bug fixes. To easily check for updates to the SDK, use the `dotnet sdk check` [command](../tools/dotnet-sdk-check.md). Additionally, if you select a specific version using *global.json*, consider a tool such as Dependabot to automatically update the pinned SDK version as new versions become available.
 
 ## Target framework monikers define build time APIs
 
@@ -86,7 +86,7 @@ When you run an application from source with [`dotnet run`](../tools/dotnet-run.
 
 The host chooses the latest patch version installed on the machine. For example, if you specified `net5.0` in your project file, and `5.0.2` is the latest .NET runtime installed, the `5.0.2` runtime is used.
 
-If no acceptable `5.0.*` version is found, a new `5.*` version is used. For example, if you specified `net5.0` and only `5.1.0` is installed, the application runs using the `5.1.0` runtime. This behavior is referred to as "minor version roll-forward." Lower versions also won't be considered. When no acceptable runtime is installed, the application won't run.
+If no acceptable `5.0.*` version is found, a new `5.*` version is used. For example, if you specified `net5.0` and only `5.1.0` is installed, the application runs using the `5.1.0` runtime. This behavior is referred to as "minor version roll-forward." Lower versions also won't be considered. When no acceptable runtime is installed, the application doesn't run.
 
 A few usage examples demonstrate the behavior, if you target 5.0:
 
@@ -95,11 +95,11 @@ A few usage examples demonstrate the behavior, if you target 5.0:
 - ✔️ 5.0 is specified. No 5.0.* versions are installed. 5.1.0 is the highest runtime version installed. 5.1.0 is used.
 - ❌ 3.0 is specified. No 3.x versions are installed. 5.0.0 is the highest runtime installed. An error message is displayed.
 
-Minor version roll-forward has one side-effect that may affect end users. Consider the following scenario:
+Minor version roll-forward has one side-effect that can affect end users. Consider the following scenario:
 
 01. The application specifies that 5.0 is required.
 02. When run, version 5.0.* isn't installed, however, 5.1.0 is. Version 5.1.0 is used.
-03. Later, the user installs 5.0.3 and runs the application again, 5.0.3 will now be used.
+03. Later, the user installs 5.0.3 and runs the application again, 5.0.3 is now used.
 
 It's possible that 5.0.3 and 5.1.0 behave differently, particularly for scenarios like serializing binary data.
 
@@ -176,11 +176,11 @@ Then the resolved version is as follows in each case:
 
 You can publish an application as a [**self-contained distribution**](../deploying/index.md#self-contained-deployment). This approach bundles the .NET runtime and libraries with your application. Self-contained deployments don't have a dependency on runtime environments. Runtime version selection occurs at publishing time, not run time.
 
-The *restore* event that occurs when publishing selects the latest patch version of the given runtime family. For example, `dotnet publish` will select .NET 5.0.3 if it's the latest patch version in the .NET 5 runtime family. The target framework (including the latest installed security patches) is packaged with the application.
+The *restore* event that occurs when publishing selects the latest patch version of the given runtime family. For example, `dotnet publish` selects .NET 5.0.3 if it's the latest patch version in the .NET 5 runtime family. The target framework (including the latest installed security patches) is packaged with the application.
 
 An error occurs if the minimum version specified for an application isn't satisfied. `dotnet publish` binds to the latest runtime patch version (within a given major.minor version family). `dotnet publish` doesn't support the roll-forward semantics of `dotnet run`. For more information about patches and self-contained deployments, see the article on [runtime patch selection](../deploying/runtime-patch-selection.md) in deploying .NET applications.
 
-Self-contained deployments may require a specific patch version. You can override the minimum runtime patch version (to higher or lower versions) in the project file, as shown in the following example:
+Self-contained deployments might require a specific patch version. You can override the minimum runtime patch version (to higher or lower versions) in the project file, as shown in the following example:
 
 ``` xml
 <PropertyGroup>

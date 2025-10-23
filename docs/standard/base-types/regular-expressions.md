@@ -42,7 +42,7 @@ For many applications that deal with strings or that parse large blocks of text,
   
 - The regular expression pattern to identify in the text.  
   
-     In .NET, regular expression patterns are defined by a special syntax or language, which is compatible with Perl 5 regular expressions and adds some additional features such as right-to-left matching. For more information, see [Regular Expression Language - Quick Reference](regular-expression-language-quick-reference.md).  
+     In .NET, regular expression patterns are defined by a special syntax or language, which is compatible with Perl 5 regular expressions and adds some other features such as right-to-left matching. For more information, see [Regular Expression Language - Quick Reference](regular-expression-language-quick-reference.md).  
   
 - The text to parse for the regular expression pattern.  
   
@@ -68,7 +68,7 @@ The <xref:System.String> class includes string search and replacement methods th
 [!INCLUDE [regex](../../../includes/regex.md)]
 
 > [!TIP]
-> The <xref:System.Web.RegularExpressions> namespace contains a number of regular expression objects that implement predefined regular expression patterns for parsing strings from HTML, XML, and ASP.NET documents. For example, the <xref:System.Web.RegularExpressions.TagRegex> class identifies start tags in a string, and the <xref:System.Web.RegularExpressions.CommentRegex> class identifies ASP.NET comments in a string.
+> The <xref:System.Web.RegularExpressions> namespace contains many regular expression objects that implement predefined regular expression patterns for parsing strings from HTML, XML, and ASP.NET documents. For example, the <xref:System.Web.RegularExpressions.TagRegex> class identifies start tags in a string, and the <xref:System.Web.RegularExpressions.CommentRegex> class identifies ASP.NET comments in a string.
 
 ### Example 1: Replace substrings  
 

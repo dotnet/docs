@@ -18,7 +18,7 @@ First, download and install the [.NET SDK](https://dotnet.microsoft.com/download
 
 Next, open a terminal such as **PowerShell**, **Command Prompt**, or **bash**.
 
-Type these commands:
+Type the following commands:
 
 ```dotnetcli
 dotnet new console -o sample1
@@ -26,13 +26,13 @@ cd sample1
 dotnet run
 ```
 
-You should see this output:
+You should see the following output:
 
 ```output
 Hello World!
 ```
 
-Congratulations! You've created a simple .NET application.
+Congratulations! You created a simple .NET application.
 
 ## Next steps
 

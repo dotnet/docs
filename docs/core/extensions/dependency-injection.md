@@ -150,7 +150,7 @@ public class ExampleService
 }
 ```
 
-In the preceding code, assume that logging has been added and is resolvable from the service provider but the `FooService` and `BarService` types aren't. The constructor with the `ILogger<ExampleService>` parameter resolves the `ExampleService` instance. Even though there's a constructor that defines more parameters, the `FooService` and `BarService` types aren't DI-resolvable.
+In the preceding code, assume that logging is added and is resolvable from the service provider but the `FooService` and `BarService` types aren't. The constructor with the `ILogger<ExampleService>` parameter resolves the `ExampleService` instance. Even though there's a constructor that defines more parameters, the `FooService` and `BarService` types aren't DI-resolvable.
 
 If there's ambiguity when discovering constructors, an exception is thrown. Consider this C# example service:
 
@@ -306,7 +306,7 @@ services.AddSingleton<ExampleService, ExampleService>();
 
 This equivalency is why multiple implementations of a service can't be registered using the methods that don't take an explicit service type. These methods can register multiple *instances* of a service, but they all have the same *implementation* type.
 
-Any of the above service registration methods can be used to register multiple service instances of the same service type. In the following example, `AddSingleton` is called twice with `IMessageWriter` as the service type. The second call to `AddSingleton` overrides the previous one when resolved as `IMessageWriter` and adds to the previous one when multiple services are resolved via `IEnumerable<IMessageWriter>`. Services appear in the order they were registered when resolved via `IEnumerable<{SERVICE}>`.
+Any of the service registration methods can be used to register multiple service instances of the same service type. In the following example, `AddSingleton` is called twice with `IMessageWriter` as the service type. The second call to `AddSingleton` overrides the previous one when resolved as `IMessageWriter` and adds to the previous one when multiple services are resolved via `IEnumerable<IMessageWriter>`. Services appear in the order they were registered when resolved via `IEnumerable<{SERVICE}>`.
 
 :::code language="csharp" source="snippets/configuration/console-di-ienumerable/Program.cs" highlight="11-16":::
 
@@ -314,7 +314,7 @@ The preceding sample source code registers two implementations of the `IMessageW
 
 :::code language="csharp" source="snippets/configuration/console-di-ienumerable/ExampleService.cs" highlight="7-16":::
 
-The `ExampleService` defines two constructor parameters; a single `IMessageWriter`, and an `IEnumerable<IMessageWriter>`. The single `IMessageWriter` is the last implementation to have been registered, whereas the `IEnumerable<IMessageWriter>` represents all registered implementations.
+The `ExampleService` defines two constructor parameters; a single `IMessageWriter`, and an `IEnumerable<IMessageWriter>`. The single `IMessageWriter` is the last implementation to be registered, whereas the `IEnumerable<IMessageWriter>` represents all registered implementations.
 
 The framework also provides `TryAdd{LIFETIME}` extension methods, which register the service only if there isn't already an implementation registered.
 
@@ -347,7 +347,7 @@ For more information, see:
 - <xref:Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions.TryAddScoped%2A>
 - <xref:Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions.TryAddSingleton%2A>
 
-The [TryAddEnumerable(ServiceDescriptor)](xref:Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions.TryAddEnumerable%2A) methods register the service only if there isn't already an implementation *of the same type*. Multiple services are resolved via `IEnumerable<{SERVICE}>`. When registering services, add an instance if one of the same types hasn't already been added. Library authors use `TryAddEnumerable` to avoid registering multiple copies of an implementation in the container.
+The [TryAddEnumerable(ServiceDescriptor)](xref:Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions.TryAddEnumerable%2A) methods register the service only if there isn't already an implementation *of the same type*. Multiple services are resolved via `IEnumerable<{SERVICE}>`. When registering services, add an instance if one of the same types wasn't already added. Library authors use `TryAddEnumerable` to avoid registering multiple copies of an implementation in the container.
 
 In this example, the first call to `TryAddEnumerable` registers `MessageWriter` as an implementation for `IMessageWriter1`. The second call registers `MessageWriter` for `IMessageWriter2`. The third call has no effect because `IMessageWriter1` already has a registered implementation of `MessageWriter`:
 
@@ -364,7 +364,7 @@ services.TryAddEnumerable(ServiceDescriptor.Singleton<IMessageWriter2, MessageWr
 services.TryAddEnumerable(ServiceDescriptor.Singleton<IMessageWriter1, MessageWriter>());
 ```
 
-Service registration is generally order-independent except when registering multiple implementations of the same type.
+Service registration is order-independent except when registering multiple implementations of the same type.
 
 `IServiceCollection` is a collection of <xref:Microsoft.Extensions.DependencyInjection.ServiceDescriptor> objects. This example shows how to register a service by creating and adding a `ServiceDescriptor`:
 
@@ -391,9 +391,9 @@ Services can be resolved using:
 
 Constructors can accept arguments that aren't provided by dependency injection, but the arguments must assign default values.
 
-When services are resolved by `IServiceProvider` or `ActivatorUtilities`, constructor injection requires a *public* constructor.
+When `IServiceProvider` or `ActivatorUtilities` resolve services, constructor injection requires a *public* constructor.
 
-When services are resolved by `ActivatorUtilities`, constructor injection requires that only one applicable constructor exists. Constructor overloads are supported, but only one overload can exist whose arguments can all be fulfilled by dependency injection.
+When `ActivatorUtilities` resolves services, constructor injection requires that only one applicable constructor exists. Constructor overloads are supported, but only one overload can exist whose arguments can all be fulfilled by dependency injection.
 
 ## Scope validation
 
@@ -408,7 +408,7 @@ Scoped services are disposed by the container that created them. If a scoped ser
 
 ## Scope scenarios
 
-The <xref:Microsoft.Extensions.DependencyInjection.IServiceScopeFactory> is always registered as a singleton, but the <xref:System.IServiceProvider> can vary based on the lifetime of the containing class. For example, if you resolve services from a scope, and any of those services take an <xref:System.IServiceProvider>, it'll be a scoped instance.
+The <xref:Microsoft.Extensions.DependencyInjection.IServiceScopeFactory> is always registered as a singleton, but the <xref:System.IServiceProvider> can vary based on the lifetime of the containing class. For example, if you resolve services from a scope, and any of those services take an <xref:System.IServiceProvider>, it is a scoped instance.
 
 To achieve scoping services within implementations of <xref:Microsoft.Extensions.Hosting.IHostedService>, such as the <xref:Microsoft.Extensions.Hosting.BackgroundService>, *don't* inject the service dependencies via constructor injection. Instead, inject <xref:Microsoft.Extensions.DependencyInjection.IServiceScopeFactory>, create a scope, then resolve dependencies from the scope to use the appropriate service lifetime.
 
@@ -417,7 +417,7 @@ To achieve scoping services within implementations of <xref:Microsoft.Extensions
 In the preceding code, while the app is running, the background service:
 
 - Depends on the <xref:Microsoft.Extensions.DependencyInjection.IServiceScopeFactory>.
-- Creates an <xref:Microsoft.Extensions.DependencyInjection.IServiceScope> for resolving additional services.
+- Creates an <xref:Microsoft.Extensions.DependencyInjection.IServiceScope> for resolving other services.
 - Resolves scoped services for consumption.
 - Works on processing objects and then relaying them, and finally marks them as processed.
 
@@ -436,7 +436,7 @@ services.AddKeyedSingleton<IMessageWriter, MemoryMessageWriter>("memory");
 services.AddKeyedSingleton<IMessageWriter, QueueMessageWriter>("queue");
 ```
 
-The `key` isn't limited to `string`, it can be any `object` you want, as long as the type correctly implements `Equals`.
+The `key` isn't limited to `string`. The `key` can be any `object` you want, as long as the type correctly implements `Equals`.
 
 In the constructor of the class that uses `IMessageWriter`, you add the <xref:Microsoft.Extensions.DependencyInjection.FromKeyedServicesAttribute> to specify the key of the service to resolve:
 

@@ -2,8 +2,7 @@
 title: .NET SDK and .NET CLI telemetry
 description: The .NET SDK and the .NET CLI collect usage information and send it to Microsoft. Learn what data is collected and how to opt out.
 author: KathleenDollard
-ms.date: 10/22/2025
-ai-usage: ai-assisted
+ms.date: 10/07/2025
 ---
 # .NET SDK and .NET CLI telemetry
 

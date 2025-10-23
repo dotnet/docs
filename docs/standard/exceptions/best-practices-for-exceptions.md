@@ -35,7 +35,7 @@ Clean up resources that are allocated with either `using` statements or `finally
 
 ### Handle common conditions to avoid exceptions
 
-For conditions that are likely to occur but might trigger an exception, consider handling them in a way that avoids the exception. For example, if you try to close a connection that's already closed, you'll get an `InvalidOperationException`. You can avoid that by using an `if` statement to check the connection state before trying to close it.
+For conditions that are likely to occur but might trigger an exception, consider handling them in a way that avoids the exception. For example, if you try to close a connection that's already closed, you get an `InvalidOperationException`. You can avoid that by using an `if` statement to check the connection state before trying to close it.
 
 [!code-csharp[Conceptual.Exception.Handling#2](./snippets/best-practices/csharp/source.cs#2)]
 [!code-vb[Conceptual.Exception.Handling#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.exception.handling/vb/source.vb#2)]
@@ -178,7 +178,7 @@ catch (FileNotFoundException e)
 
 Console.WriteLine("I was here.");
 
-if (edi isn't null)
+if (edi is not null)
     edi.Throw();
 ```
 
@@ -220,7 +220,7 @@ Introduce a new exception class only when a predefined one doesn't apply. For ex
 - If invalid parameters are passed, throw an <xref:System.ArgumentException> exception or one of the predefined classes that derive from <xref:System.ArgumentException>.
 
 > [!NOTE]
-> While it's best to use predefined exception types when possible, you shouldn't raise some *reserved* exception types, such as <xref:System.AccessViolationException>, <xref:System.IndexOutOfRangeException>, <xref:System.NullReferenceException> and <xref:System.StackOverflowException>. For more information, see [CA2201: Do not raise reserved exception types](../../fundamentals/code-analysis/quality-rules/ca2201.md).
+> While it's best to use predefined exception types when possible, you shouldn't raise some *reserved* exception types, such as <xref:System.AccessViolationException>, <xref:System.IndexOutOfRangeException>, <xref:System.NullReferenceException> and <xref:System.StackOverflowException>. For more information, see [CA2201: Don't raise reserved exception types](../../fundamentals/code-analysis/quality-rules/ca2201.md).
 
 ### Use exception builder methods
 
@@ -286,7 +286,7 @@ The following best practices concern custom exception types:
 
 - [End exception class names with `Exception`](#end-exception-class-names-with-exception)
 - [Include three constructors](#include-three-constructors)
-- [Provide additional properties as needed](#provide-additional-properties-as-needed)
+- [Provide more properties as needed](#provide-additional-properties-as-needed)
 
 ### End exception class names with `Exception`
 
@@ -305,9 +305,9 @@ Use at least the three common constructors when creating your own exception clas
 
 For an example, see [How to: Create user-defined exceptions](how-to-create-user-defined-exceptions.md).
 
-### Provide additional properties as needed
+### Provide more properties as needed
 
-Provide additional properties for an exception (in addition to the custom message string) only when there's a programmatic scenario where the additional information is useful. For example, the <xref:System.IO.FileNotFoundException> provides the <xref:System.IO.FileNotFoundException.FileName> property.
+Provide more properties for an exception (in addition to the custom message string) only when there's a programmatic scenario where the additional information is useful. For example, the <xref:System.IO.FileNotFoundException> provides the <xref:System.IO.FileNotFoundException.FileName> property.
 
 ### See also
 

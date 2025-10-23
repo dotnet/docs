@@ -27,7 +27,7 @@ Assemblies have the following properties:
 
 - Assemblies are implemented as *.exe* or *.dll* files.
 
-- For libraries that target .NET Framework, you can share assemblies between applications by putting them in the [global assembly cache (GAC)](../../framework/app-domains/gac.md). Strong-name assemblies before you can include them in the GAC. For more information, see [Strong-named assemblies](strong-named.md).
+- For libraries that target .NET Framework, you can share assemblies between applications by putting them in the [global assembly cache (GAC)](../../framework/app-domains/gac.md). You must strong-name assemblies before you can include them in the GAC. For more information, see [Strong-named assemblies](strong-named.md).
 
 - Assemblies are only loaded into memory if they're required. If they aren't used, they aren't loaded. Therefore, assemblies can be an efficient way to manage resources in larger projects.
 

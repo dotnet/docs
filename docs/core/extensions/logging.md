@@ -18,7 +18,7 @@ This first example shows the basics, but it's only suitable for a trivial consol
 - [Microsoft.Extensions.Logging](https://www.nuget.org/packages/Microsoft.Extensions.Logging)
 - [Microsoft.Extensions.Logging.Console](https://www.nuget.org/packages/Microsoft.Extensions.Logging.Console)
 
-In the next section you see how to improve the code considering scale, performance, configuration and typical programming patterns.
+In the next section you see how to improve the code considering scale, performance, configuration, and typical programming patterns.
 
 :::code language="csharp" source="snippets/logging/getting-started/Program.cs":::
 
@@ -44,7 +44,7 @@ Consider making these changes to the previous example when logging in a less tri
 
 :::code language="csharp" source="snippets/logging/getting-started-logger-message/Program.cs" highlight="9,12-13":::
 
-- The recommended practice for log category names is to use the fully qualified name of the class that's creating the log message. This helps relate log messages back to the code which produced them and offers a good level of control when filtering logs. <xref:Microsoft.Extensions.Logging.LoggerFactoryExtensions.CreateLogger%2A> accepts a `Type` to make this naming easy to do.
+- The recommended practice for log category names is to use the fully qualified name of the class that's creating the log message. This helps relate log messages back to the code that produced them and offers a good level of control when filtering logs. <xref:Microsoft.Extensions.Logging.LoggerFactoryExtensions.CreateLogger%2A> accepts a `Type` to make this naming easy to do.
 
 :::code language="csharp" source="snippets/logging/getting-started-type-category-name/Program.cs" highlight="8":::
 
@@ -320,9 +320,9 @@ The following table lists the <xref:Microsoft.Extensions.Logging.LogLevel> value
 
 | LogLevel | Value | Method | Description |
 |--|--|--|--|
-| [Trace](xref:Microsoft.Extensions.Logging.LogLevel) | 0 | <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogTrace%2A> | Contain the most detailed messages. These messages may contain sensitive app data. These messages are disabled by default and should ***not*** be enabled in production. |
+| [Trace](xref:Microsoft.Extensions.Logging.LogLevel) | 0 | <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogTrace%2A> | Contain the most detailed messages. These messages might contain sensitive app data. These messages are disabled by default and should ***not*** be enabled in production. |
 | [Debug](xref:Microsoft.Extensions.Logging.LogLevel) | 1 | <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogDebug%2A> | For debugging and development. Use with caution in production due to the high volume. |
-| [Information](xref:Microsoft.Extensions.Logging.LogLevel) | 2 | <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogInformation%2A> | Tracks the general flow of the app. May have long-term value. |
+| [Information](xref:Microsoft.Extensions.Logging.LogLevel) | 2 | <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogInformation%2A> | Tracks the general flow of the app. Can have long-term value. |
 | [Warning](xref:Microsoft.Extensions.Logging.LogLevel) | 3 | <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogWarning%2A> | For abnormal or unexpected events. Typically includes errors or conditions that don't cause the app to fail. |
 | [Error](xref:Microsoft.Extensions.Logging.LogLevel) | 4 | <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogError%2A> | For errors and exceptions that can't be handled. These messages indicate a failure in the current operation or request, not an app-wide failure. |
 | [Critical](xref:Microsoft.Extensions.Logging.LogLevel) | 5 | <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogCritical%2A> | For failures that require immediate attention. Examples: data loss scenarios, out of disk space. |
@@ -437,7 +437,7 @@ Parameter values: param1, param2
 ```
 
 > [!NOTE]
-> Be mindful when using multiple placeholders within a single message template, as they're ordinal-based. The names are _not_ used to align the arguments to the placeholders.
+> Be mindful when using multiple placeholders within a single message template, as they're ordinal-based. The names aren't_ used to align the arguments to the placeholders.
 
 This approach lets logging providers implement [semantic or structured logging](https://github.com/NLog/NLog/wiki/How-to-use-structured-logging). The arguments themselves are passed to the logging system, not just the formatted message template. This enables logging providers to store the parameter values as fields. Consider this logger method:
 

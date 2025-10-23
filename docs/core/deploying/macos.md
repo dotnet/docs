@@ -22,7 +22,7 @@ Before you publish your .NET application for macOS, ensure you have the followin
 
 ## Publish your app
 
-Use one of the methods described in the [.NET application publishing overview](index.md) to produce an application. You can create either a framework-dependent or self-contained application.
+Use one of the methods described in the [.NET application publishing overview](/dotnet/core/deploying/) to produce an application. You can create either a framework-dependent or self-contained application.
 
 ## Apphost and entry point
 
@@ -45,7 +45,7 @@ The following entitlements enable additional debugging and diagnostic capabiliti
 
 ## Sign and notarize
 
-Use Apple's developer documentation to sign and notarize the binary.
+Use [Apple's developer documentation](https://developer.apple.com/documentation/security/notarizing_macos_software_before_distribution) to sign and notarize the binary.
 
 > [!WARNING]
 > Failing to sign and notarize your app might result in the application crashing while executing a restricted operation.

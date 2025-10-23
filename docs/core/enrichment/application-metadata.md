@@ -154,6 +154,7 @@ Console.WriteLine($"Environment: {_metadata.EnvironmentName}");
 Console.WriteLine($"Deployment Ring: {_metadata.DeploymentRing}");
 await host.RunAsync();
 ```
+
 ## ApplicationMetadata properties
 
 The <xref:Microsoft.Extensions.AmbientMetadata.ApplicationMetadata> class includes the following properties:

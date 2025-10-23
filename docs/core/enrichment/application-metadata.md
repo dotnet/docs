@@ -78,7 +78,7 @@ The following table shows the metadata made available by the provider via <xref:
 | `ambientmetadata:application:buildversion`    | no  | configure it in `IConfiguration`      | `1.0.0-rc1`                | The application's build version.|
 | `ambientmetadata:application:deploymentring`  | no  | configure it in `IConfiguration`      | `r0`, `public`             | The deployment ring from where the application is running.|
 
-```cs
+```csharp
 var builder = Host.CreateDefaultBuilder()
     // ApplicationName and EnvironmentName will be imported from `IHostEnvironment` 
     // BuildVersion and DeploymentRing will be imported from the "appsettings.json" file.
@@ -93,7 +93,7 @@ var buildVersion = metadataOptions.Value.BuildVersion;
 
 Alternatively, you can achieve the same result as above by doing this:
 
-```cs
+```csharp
 var host = Host.CreateDefaultBuilder()
     .ConfigureAppConfiguration((hostBuilderContext, configurationBuilder) => configurationBuilder
       .AddApplicationMetadata(hostBuilderContext.HostingEnvironment))
@@ -114,7 +114,6 @@ Your `appsettings.json` can have a section as follows :
 For applications using <xref:Microsoft.Extensions.Hosting.IHostApplicationBuilder>:
 
 ```csharp
-```cs
 var builder = Host.CreateApplicationBuilder()
     // ApplicationName and EnvironmentName will be imported from `IHostEnvironment` 
     // BuildVersion and DeploymentRing will be imported from the "appsettings.json" file.

@@ -216,15 +216,7 @@ For more information about dynamic binding and its limitations, see [Using type 
 - **CS1980**: *Cannot define a class or member that uses 'dynamic' because the compiler required type cannot be found. Are you missing a reference?*
 - **CS7083**: *Expression must be implicitly convertible to '`System.Object`', or the type '`dynamic`' is not available.*
 
-The compiler needs types from the `System.Runtime` namespace and the Dynamic Language Runtime (DLR) to generate code for dynamic operations (CS1969, CS1980, CS7083). Ensure your project includes the necessary references:
-
-For modern .NET projects (.NET Core, .NET 5 or later), add the `Microsoft.CSharp` package reference:
-
-```xml
-<PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
-```
-
-For .NET Framework projects, add a reference to `Microsoft.CSharp.dll` in your project file.
+The compiler needs types from the `System.Runtime` namespace and the Dynamic Language Runtime (DLR) to generate code for dynamic operations (CS1969, CS1980, CS7083). Ensure your project includes the necessary references. The required types are included in all modern .NET (.NET 5 and later) projects. For .NET Framework projects, add a reference to `Microsoft.CSharp.dll` in your project file.
 
 For more information about dynamic type requirements, see [Using type dynamic](../../../advanced-topics/interop/using-type-dynamic.md).
 

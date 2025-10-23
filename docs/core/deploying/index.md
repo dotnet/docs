@@ -127,7 +127,7 @@ The following table provides quick examples of how to publish your app.
 
 ## Framework-dependent deployment
 
-Framework-dependent deployment is the default mode when you publish from either the CLI or Visual Studio. In this mode, a platform-specific executable host is created to host your cross-platform app. The host executable filename varies per platform and is named something similar to `<PROJECT-FILE>.exe`. You can run this executable directly instead of calling `dotnet <PROJECT-FILE>.dll`, which is still an acceptable way to run the app.
+Framework-dependent deployment is the default mode when you publish from either the CLI or Visual Studio. In this mode, a platform-specific executable host is created to host your cross-platform app. The host executable filename varies per platform and is named something similar to `<PROJECT-FILE>.exe`. You can run this executable directly instead of calling `dotnet <PROJECT-FILE>.dll`, which is still an acceptable way to run the app. For more information about launching apps and the advantages of using the apphost, see [Launch .NET apps](net-app-launch.md).
 
 Your app is configured to target a specific version of .NET. That targeted .NET runtime is required to be on the environment where your app runs. For example, if your app targets .NET 9, any environment that your app runs on must have the .NET 9 runtime installed.
 
@@ -514,5 +514,6 @@ For more information about container deployment, see [.NET SDK container creatio
 
 ## See also
 
+- [Launch .NET apps](net-app-launch.md)
 - [.NET Runtime Identifier (RID) catalog](../rid-catalog.md)
 - [Select the .NET version to use](../versions/selection.md)

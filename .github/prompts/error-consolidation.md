@@ -8,7 +8,7 @@ Overall steps:
 1. Run Copilot search for other existing errors that person may have missed.
 1. Search for missing errors.
 
-## Add a single existing file into the new consolidated article. 
+## Add a single existing file into the new consolidated article.
 
 We're going to work through a series of files consolidating errors and warnings related to declaring the `dynamic` type and dynamic binding.
 
@@ -51,7 +51,7 @@ Note that no redirections need to be added for these error codes.
 
 ## Build consolidated sections
 
-For all remaining work, all edits will be in the `overloaded-operator-errors.md` file. The final format should mirror the structure of the `preprocessor-errors.md` file. Every H2 is a theme, all anchors are for the theme, not an individual error code.
+For all remaining work, all edits will be in the `dynamic-type-and-binding-errors.md` file. The final format should mirror the structure of the `preprocessor-errors.md` file. Every H2 is a theme, all anchors are for the theme, not an individual error code.
 
 To do that, make a new H2 section for the theme. Remove all the H2s for the individual error codes that are part of that theme. Where applicable, the new H2 can include text or examples from the H2s you remove. The new section should include links to language reference articles that discuss the feature or theme.
 

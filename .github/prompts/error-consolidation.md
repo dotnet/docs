@@ -10,9 +10,9 @@ Overall steps:
 
 ## Add a single existing file into the new consolidated article. 
 
-We're going to work through a series of files consolidating errors and warnings related to declaring overloaded operators.
+We're going to work through a series of files consolidating errors and warnings related to declaring the `dynamic` type and dynamic binding.
 
-The destination for all these edits is the overloaded-operator-errors.md file. It already contains a skeleton for the final output.
+The destination for all these edits is the dynamic-type-and-binding-errors.md file. It already contains a skeleton for the final output.
 
 For each source file I specify in this chat, you'll do the following tasks:
 
@@ -28,7 +28,7 @@ For each source file I specify in this chat, you'll do the following tasks:
 
 ## Search for other related articles that may be missed.
 
-Search all files in the docs/csharp/language-reference/compiler-messages and the docs/csharp/misc folder for any other errors and warnings that involve operator overloading. Give me a list to review for possible additional consolidation. Don't make any edits until the originating user approves.
+Search all files in the docs/csharp/language-reference/compiler-messages and the docs/csharp/misc folder for any other errors and warnings that involve the `dynamic` type or dynamic binding. Give me a list to review for possible additional consolidation. Don't make any edits until the originating user approves.
 
 ## Final search in roslyn source
 

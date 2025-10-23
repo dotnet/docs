@@ -437,7 +437,7 @@ Parameter values: param1, param2
 ```
 
 > [!NOTE]
-> Be mindful when using multiple placeholders within a single message template, as they're ordinal-based. The names aren't_ used to align the arguments to the placeholders.
+> Be mindful when using multiple placeholders within a single message template, as they're ordinal-based. The names aren't used to align the arguments to the placeholders.
 
 This approach lets logging providers implement [semantic or structured logging](https://github.com/NLog/NLog/wiki/How-to-use-structured-logging). The arguments themselves are passed to the logging system, not just the formatted message template. This enables logging providers to store the parameter values as fields. Consider this logger method:
 

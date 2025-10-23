@@ -88,46 +88,19 @@ That's be design. The text closely matches the text of the compiler error / warn
 
 ## Using `dynamic` in type declarations and constraints
 
-- **CS1962**: *The typeof operator cannot be used on the dynamic type.*
-- **CS1965**: *Cannot derive from the dynamic type.*
+- **CS1962**: *The typeof operator cannot be used on the `dynamic` type.*
+- **CS1965**: *Cannot derive from the `dynamic` type.*
 - **CS1966**: *Cannot derive from a constructed dynamic type.*
-- **CS1967**: *Cannot use the dynamic type as a type constraint.*
+- **CS1967**: *Cannot use the `dynamic` type as a type constraint.*
 - **CS1968**: *Cannot use a constructed dynamic type as a type constraint.*
-- **CS1970**: *Do not use 'System.Runtime.CompilerServices.DynamicAttribute'. Use the 'dynamic' keyword instead.*
+- **CS1970**: *Do not use '`System.Runtime.CompilerServices.DynamicAttribute`'. Use the '`dynamic`' keyword instead.*
 
-The [`dynamic` type](../builtin-types/reference-types.md#the-dynamic-type) provides late binding for operations at runtime. However, you can't use `dynamic` in contexts where the compiler needs concrete type information at compile time. These errors occur when you try to use `dynamic` in type declarations, constraints, inheritance, or reflection operations.
+The [`dynamic` type](../builtin-types/reference-types.md#the-dynamic-type) provides late binding for operations at runtime. Use concrete types in contexts where the compiler needs type information at compile time, such as type declarations, constraints, inheritance, or reflection operations:
 
-**Restrictions on using `dynamic`:**
-
-You can't use `dynamic` with the `typeof` operator because the compiler needs to resolve types at compile time for reflection (CS1962):
-
-```csharp
-Type t = typeof(dynamic);  // CS1962
-```
-
-You can't use `dynamic` in base class declarations (CS1965, CS1966, CS1971):
-
-```csharp
-class MyClass : dynamic { }  // CS1965
-```
-
-You can't use `dynamic` as a type constraint on generic parameters (CS1967, CS1968):
-
-```csharp
-class MyClass<T> where T : dynamic { }  // CS1967
-```
-
-**Use the `dynamic` keyword:**
-
-Always use the `dynamic` keyword to declare dynamic types. Don't use the `DynamicAttribute` directly (CS1970):
-
-```csharp
-// Correct:
-dynamic value = GetValue();
-
-// Incorrect:
-[Dynamic] object value = GetValue();  // CS1970
-```
+- Use concrete types for reflection operations.  Use specific types instead of `dynamic` with the `typeof` operator (CS1962)
+- Use concrete types for inheritance. Specify a concrete base class instead of `dynamic` (CS1965, CS1966):
+- Use concrete type constraints. Specify concrete type constraints on generic parameters instead of `dynamic` (CS1967, CS1968):
+- Use the `dynamic` keyword for variables. Always use the `dynamic` keyword to declare dynamic variables. Don't apply the `DynamicAttribute` directly (CS1970):
 
 For more information about the `dynamic` type and its proper usage, see [Using type dynamic](../../../advanced-topics/interop/using-type-dynamic.md).
 
@@ -147,108 +120,93 @@ For more information about the `dynamic` type and its proper usage, see [Using t
 - **CS8416**: *The async modifier cannot be used in the expression of a dynamic attribute.*
 - **CS9230**: *Cannot perform a dynamic invocation on an expression with type.*
 
-While [dynamic binding](../operators/member-access-operators.md#member-access-expression-) provides flexibility at runtime, certain operations can't be resolved dynamically. These restrictions exist because the compiler needs to generate specific code at compile time or because the operation fundamentally requires compile-time type information.
+While [dynamic binding](../operators/member-access-operators.md#member-access-expression-) provides flexibility at runtime, cast dynamic values to specific types when you need compile-time type information for certain operations.
 
-**Dynamic dispatch with base access:**
+- **Cast dynamic arguments before calling base members:** Cast dynamic arguments to their specific types before calling base members, indexers, or constructors (CS1971, CS1972, CS1975):
 
-You can't use dynamic dispatch when accessing members through a base access expression (CS1971, CS1972, CS1975):
+  ```csharp
+  class Base
+  {
+      public virtual void Method(object obj) { }
+      public virtual int this[int index] => 0;
+      public Base(int value) { }
+  }
 
-```csharp
-class Base
-{
-    public virtual void Method(dynamic d) { }
-    public virtual int this[dynamic index] => 0;
-}
+  class Derived : Base
+  {
+      public Derived(dynamic value) : base((int)value) { }  // Cast before calling base constructor
+      
+      public override void Method(object obj)
+      {
+          dynamic d = obj;
+          base.Method((object)d);  // Cast before calling base method
+      }
+      
+      public override int this[int index]
+      {
+          get
+          {
+              dynamic d = index;
+              return base[(int)d];  // Cast before accessing base indexer
+          }
+      }
+  }
+  ```
 
-class Derived : Base
-{
-    public Derived() : base() { }
-    
-    public override void Method(dynamic d)
-    {
-        base.Method(d);  // CS1971 - can't dynamically dispatch through base
-    }
-    
-    public override int this[dynamic index]
-    {
-        get
-        {
-            return base[index];  // CS1972 - can't dynamically dispatch base indexer
-        }
-    }
-}
-```
+- **Cast to specific types before passing delegates or lambdas:** Cast the dynamic object to its concrete type before passing method groups, lambda expressions, or delegates (CS1976, CS1977, CS1978):
 
-When you call a base member or constructor with dynamic arguments, the call must be resolved at compile time. Cast the dynamic arguments to their specific types before making the call:
+  ```csharp
+  dynamic d = GetDynamicObject();
 
-```csharp
-public override void Method(dynamic d)
-{
-    base.Method((object)d);  // Cast to specific type
-}
+  // Avoid:
+  d.ProcessData(Console.WriteLine);  // CS1976
+  d.ProcessData(x => x * 2);         // CS1977
 
-public Derived(dynamic value) : base((int)value) { }  // CS1975 - cast required
-```
+  // Recommended:
+  ((IProcessor)d).ProcessData(Console.WriteLine);  // Cast first
+  ((IProcessor)d).ProcessData(x => x * 2);         // Cast first
+  ```
 
-**Method groups, lambda expressions, and anonymous methods:**
+- **Use concrete types for LINQ queries:** Use a concrete type instead of `dynamic` for LINQ query sources and join sequences (CS1979):
 
-You can't pass method groups (CS1976), lambda expressions (CS1977), or other expressions that require compile-time resolution (CS1978) as arguments to dynamically dispatched operations:
+  ```csharp
+  dynamic data = GetData();
 
-```csharp
-dynamic d = GetDynamicObject();
+  // Avoid:
+  var query = from item in data  // CS1979
+              select item;
 
-// CS1976 - method group requires compile-time resolution
-d.ProcessData(Console.WriteLine);
+  // Recommended:
+  IEnumerable<MyType> typedData = data;
+  var query = from item in typedData
+              select item;
+  ```
 
-// CS1977 - lambda expression requires compile-time resolution  
-d.ProcessData(x => x * 2);
-```
+- **Access tuple elements individually:** Access tuple elements individually instead of using deconstruction with dynamic tuples (CS8133):
 
-**LINQ query expressions:**
+  ```csharp
+  dynamic tuple = (1, 2);
 
-You can't use `dynamic` as the source or join sequence in LINQ query expressions (CS1979):
+  // Avoid:
+  var (a, b) = tuple;  // CS8133
 
-```csharp
-dynamic data = GetData();
-var query = from item in data  // CS1979
-            select item;
-```
+  // Recommended:
+  var a = tuple.Item1;
+  var b = tuple.Item2;
+  ```
 
-**Deconstruction:**
+- **Use compile-time expressions for operations requiring type information:** Use concrete types for operations that need compile-time type information (CS1964, CS1973, CS8364, CS8416, CS9230):
 
-You can't deconstruct dynamic objects (CS8133):
+  ```csharp
+  dynamic value = GetValue();
 
-```csharp
-dynamic tuple = (1, 2);
-var (a, b) = tuple;  // CS8133
-```
+  // Avoid:
+  var name = nameof(value.Property);  // CS8364
 
-**Compile-time operations:**
-
-Some operations require compile-time information and can't work with dynamic operations:
-
-- The `nameof` operator requires compile-time symbol resolution (CS8364)
-- Attributes with `async` modifiers can't use dynamic expressions (CS8416)
-- Certain type conversions can't be applied dynamically (CS1964)
-- Extension methods require compile-time type checking for the first parameter (CS1973)
-- Some invocations can't be resolved dynamically depending on the expression type (CS9230)
-
-**Workarounds:**
-
-When you encounter these restrictions, cast the dynamic value to a specific type before performing the operation:
-
-```csharp
-dynamic d = GetDynamicObject();
-
-// Instead of: d.ProcessData(x => x * 2);  // CS1977
-// Use:
-((IProcessor)d).ProcessData(x => x * 2);
-
-// Instead of: var (a, b) = tuple;  // CS8133  
-// Use:
-var a = tuple.Item1;
-var b = tuple.Item2;
-```
+  // Recommended:
+  MyType typedValue = value;
+  var name = nameof(typedValue.Property);  // Use concrete type
+  ```
 
 For more information about dynamic binding and its limitations, see [Using type dynamic](../../../advanced-topics/interop/using-type-dynamic.md).
 
@@ -258,27 +216,7 @@ For more information about dynamic binding and its limitations, see [Using type 
 - **CS1980**: *Cannot define a class or member that uses 'dynamic' because the compiler required type '*type*' cannot be found. Are you missing a reference?*
 - **CS7083**: *Expression must be implicitly convertible to 'System.Object', or the type 'dynamic' is not available.*
 
-These errors occur when the compiler can't find the types it needs to support dynamic binding at runtime.
-
-**CS1969** and **CS1980** indicate that types from `Microsoft.CSharp.dll` or other required assemblies are missing. The compiler needs types from the `System.Runtime` namespace and the Dynamic Language Runtime (DLR) to generate code for dynamic operations. Ensure your project references the correct assemblies:
-
-```csharp
-// Triggers CS1969:
-dynamic d = GetValue();
-d.Method(); // Can't compile without runtime support
-
-// Fix: Add reference to Microsoft.CSharp.dll
-// Or for .NET Core/.NET 5+, ensure the project targets the correct framework
-```
-
-**CS7083** occurs when the compiler can't locate the `System.Object` type or can't resolve the `dynamic` type because required assemblies are missing. This error typically appears when core libraries aren't properly referenced:
-
-```csharp
-// Triggers CS7083:
-var result = someValue as dynamic; // Missing core type support
-
-// Fix: Ensure project references include System.Runtime and Microsoft.CSharp
-```
+The compiler needs types from the `System.Runtime` namespace and the Dynamic Language Runtime (DLR) to generate code for dynamic operations (CS1969, CS1980, CS7083). Ensure your project includes the necessary references:
 
 For modern .NET projects (.NET Core, .NET 5 or later), add the `Microsoft.CSharp` package reference:
 
@@ -292,38 +230,38 @@ For more information about dynamic type requirements, see [Using type dynamic](.
 
 ## Dynamic dispatch warnings
 
-- **CS1974**: *The dynamically dispatched call to method '*method*' can fail at run-time because one or more applicable overloads are conditional methods.*
-- **CS1981**: *The 'is dynamic' pattern is misleading. The runtime type of the subexpression is never 'dynamic'. Consider using 'object' instead.*
+- **CS1974**: *The dynamically dispatched call to method can fail at run-time because one or more applicable overloads are conditional methods.*
+- **CS1981**: *The '`is dynamic`' pattern is misleading. The runtime type of the subexpression is never '`dynamic`'. Consider using '`object`' instead.*
 
-These warnings alert you to potential issues when dispatching calls dynamically at runtime.
-
-**CS1974** warns that calling a conditional method through a dynamic expression can fail at runtime. The compiler can't check conditional method attributes at compile time when you use dynamic dispatch. Consider casting the dynamic expression to its actual type before calling the method:
+When you call methods that have the `[Conditional]` attribute, avoid using dynamic dispatch. The compiler can't verify conditional method attributes with dynamic binding, which can cause runtime failures (CS1974). Cast the dynamic expression to its actual type first:
 
 ```csharp
-// Triggers CS1974:
 dynamic d = GetObject();
-d.ConditionalMethod(); // Warning: can fail at runtime
 
-// Use:
+// Avoid:
+d.ConditionalMethod(); // CS1974 - can fail at runtime
+
+// Recommended:
 MyClass obj = (MyClass)d;
-obj.ConditionalMethod(); // Compile-time checks apply
+obj.ConditionalMethod(); // Compile-time checks ensure correctness
 ```
 
-**CS1981** warns that the `is dynamic` pattern check is misleading because no object's runtime type is ever `dynamic`. The `dynamic` keyword is a compile-time construct that determines how expressions are bound. At runtime, all dynamic objects have concrete types. Use `is object` instead:
+**Check for `object` instead of `dynamic` in pattern matching:**
+
+When you check whether a value is non-null, use `is object` instead of `is dynamic`. The `dynamic` keyword is a compile-time construct, and no object's runtime type is ever `dynamic` (CS1981):
 
 ```csharp
-// Triggers CS1981:
-if (someValue is dynamic) // Misleading - always false
+// Avoid:
+if (someValue is dynamic) // CS1981 - always evaluates to false
 {
     // This code never executes
 }
 
-// Use:
-if (someValue is object) // Checks if non-null
+// Recommended:
+if (someValue is object) // Correctly checks if non-null
 {
     // This code executes for non-null values
 }
 ```
 
 For more information about dynamic dispatch and runtime behavior, see [Using type dynamic](../../../advanced-topics/interop/using-type-dynamic.md).
-

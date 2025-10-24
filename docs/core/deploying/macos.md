@@ -20,7 +20,7 @@ Before you publish your .NET application for macOS, ensure you have the followin
 - **Xcode Command Line Tools**: Provides `codesign`, `altool`, and other utilities.
 - **.NET SDK**: Ensure you have the latest .NET SDK installed.
 
-## Publish your app
+## Produce your app using .NET SDK
 
 Use one of the methods described in the [.NET application publishing overview](/dotnet/core/deploying/) to produce an application. You can create either a framework-dependent or self-contained application.
 

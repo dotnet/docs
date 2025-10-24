@@ -229,7 +229,7 @@ In the following steps, we extend the code to process more properties from the J
 
    JSON often uses `lowercase` or `snake_case` for property names. Fields like `html_url` and `pushed_at` do not follow C# PascalCase naming conventions. Using `[JsonPropertyName]` ensures that these JSON keys are correctly bound to their corresponding C# properties, even when their names differ in case or contain underscores. This approach guarantees predictable and stable deserialization while allowing PascalCase property names in C#.
 Additionally, the `GetFromJsonAsync` method is `case-insensitive` when matching property names, so no further conversion is necessary.
-1. Update the `foreach` loop in the *Program.cs* file to display the property values:
+2. Update the `foreach` loop in the *Program.cs* file to display the property values:
 
     ```csharp
     foreach (var repo in repositories)
@@ -243,7 +243,7 @@ Additionally, the `GetFromJsonAsync` method is `case-insensitive` when matching 
     }
     ```
 
-1. Run the app.
+3. Run the app.
 
    The list now includes the additional properties.
 

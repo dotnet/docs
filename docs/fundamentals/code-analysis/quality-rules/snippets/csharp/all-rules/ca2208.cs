@@ -38,23 +38,23 @@ namespace ca2208_3
 {
 #pragma warning disable CA2208 // Instantiate argument exceptions correctly
     //<snippet3>
-    public class Foo
+    public class Product
     {
-        public string? Bar { get; set; }
+        public string? Description { get; set; }
         public string Name { get; set; } = string.Empty;
     }
 
     public class Example
     {
-        // Violates CA2208: 'bar' is not a parameter of this method.
-        public void ProcessFoo(Foo foo)
+        // Violates CA2208: 'description' is not a parameter of this method.
+        public void ProcessProduct(Product product)
         {
-            string? bar = foo.Bar;
-            if (bar is null)
+            string? description = product.Description;
+            if (description is null)
             {
-                throw new ArgumentNullException(nameof(bar), $"Foo named {foo.Name} had no Bar!");
+                throw new ArgumentNullException(nameof(description), $"Product named {product.Name} had no description!");
             }
-            // Process bar...
+            // Process description...
         }
     }
     //</snippet3>
@@ -64,23 +64,23 @@ namespace ca2208_3
 namespace ca2208_4
 {
     //<snippet4>
-    public class Foo
+    public class Product
     {
-        public string? Bar { get; set; }
+        public string? Description { get; set; }
         public string Name { get; set; } = string.Empty;
     }
 
     public class Example
     {
         // Fixed: Use InvalidOperationException for invalid object state.
-        public void ProcessFoo(Foo foo)
+        public void ProcessProduct(Product product)
         {
-            string? bar = foo.Bar;
-            if (bar is null)
+            string? description = product.Description;
+            if (description is null)
             {
-                throw new InvalidOperationException($"Foo named {foo.Name} had no Bar!");
+                throw new InvalidOperationException($"Product named {product.Name} had no description!");
             }
-            // Process bar...
+            // Process description...
         }
     }
     //</snippet4>

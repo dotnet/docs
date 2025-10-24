@@ -127,7 +127,7 @@ The following table provides quick examples of how to publish your app.
 
 ## Framework-dependent deployment
 
-Framework-dependent deployment is the default mode when you publish from either the CLI or Visual Studio. In this mode, a platform-specific executable host is created to host your cross-platform app. The host executable filename varies per platform and is named `<PROJECT-FILE>.exe` on Windows or just `<PROJECT-FILE>` on Unix.
+Framework-dependent deployment is the default mode when you publish from either the CLI or Visual Studio. In this mode, a platform-specific executable is created to host your cross-platform app. The platform-specific executable filename varies per platform and is named `<PROJECT-FILE>.exe` on Windows or just `<PROJECT-FILE>` on Unix.
 
 Your app is configured to target a specific version of .NET. That targeted .NET runtime is required to be on the environment where your app runs. For example, if your app targets .NET 9, any environment that your app runs on must have the .NET 9 runtime installed.
 
@@ -146,7 +146,7 @@ Publishing a framework-dependent deployment creates an app that automatically ro
 
 ### Launch framework-dependent apps
 
-There are two ways to run framework-dependent apps: through the host executable ("apphost") and via `dotnet <PROJECT-FILE>.dll`. You can run the apphost executable directly instead of calling `dotnet <PROJECT-FILE>.dll`, which is still an acceptable way to run the app. Whenever possible, it's recommended to use the apphost. There are a number of advantages to using the apphost:
+There are two ways to run framework-dependent apps: through the platform-specific executable (apphost) and via `dotnet <PROJECT-FILE>.dll`. You can run the apphost executable directly instead of calling `dotnet <PROJECT-FILE>.dll`, which is still an acceptable way to run the app. Whenever possible, it's recommended to use the apphost. There are a number of advantages to using the apphost:
 
 - Executables appear like standard native platform executables.
 - Executable names are preserved in the process names, meaning apps can be easily recognized based on their names.

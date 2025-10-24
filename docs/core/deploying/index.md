@@ -135,7 +135,7 @@ Publishing a framework-dependent deployment creates an app that automatically ro
 
 ### Launch framework-dependent apps
 
-There are two ways to run framework-dependent apps: through the apphost launcher and via `dotnet <PROJECT-FILE>.dll`. Whenever possible, it's recommended to use the apphost. There are a number of advantages to using the apphost:
+There are two ways to run framework-dependent apps: through the host executable ("apphost") and via `dotnet <PROJECT-FILE>.dll`. Whenever possible, it's recommended to use the apphost. There are a number of advantages to using the apphost:
 
 - Executables appear like standard native platform executables.
 - Executable names are preserved in the process names, meaning apps can be easily recognized based on their names.
@@ -146,7 +146,7 @@ The apphost generally uses a global install of the .NET runtime, where install l
 
 The .NET runtime path can also be customized on a per-execution basis. The `DOTNET_ROOT` environment variable can be used to point to the custom location. For more information about all `DOTNET_ROOT` configuration options, see [.NET environment variables](../tools/dotnet-environment-variables.md).
 
-In general, the best practice for using `DOTNET_ROOT` to set the runtime location for an app is to:
+In general, the best practice for using `DOTNET_ROOT` is to:
 
 1. Clear `DOTNET_ROOT` environment variables first, meaning all environment variables that start with the text `DOTNET_ROOT`.
 1. Set `DOTNET_ROOT`, and only `DOTNET_ROOT`, to the target path.

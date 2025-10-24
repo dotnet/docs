@@ -179,10 +179,7 @@ using Microsoft.Extensions.Options;
 var builder = Host.CreateApplicationBuilder(args);
 
 builder.UseApplicationMetadata();
-builder.ConfigureServices(services =>
-{
-    services.AddSingleton<LoggingService>();
-});
+builder.Services.AddSingleton<LoggingService>();
 
 var host = builder.Build();
 

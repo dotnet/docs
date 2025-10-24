@@ -153,16 +153,6 @@ There are two ways to run framework-dependent apps: through the platform-specifi
 - Because the apphost is a native binary, native assets like manifests can be attached to them.
 - Apphost has available low-level security mitigations applied by default that makes it more secure. For example, Control-flow Enforcement Technology (CET) shadow stack is enabled by default starting with .NET 9. Mitigations applied to `dotnet` are the lowest common denominator of all supported runtimes.
 
-By default, the apphost discovers and uses a globally installed .NET runtime, with install locations varying by platform. For more information about runtime discovery and install locations, see [Troubleshoot app launch failures](../runtime-discovery/troubleshoot-app-launch.md).
-
-The .NET runtime path can also be customized on a per-execution basis. The `DOTNET_ROOT` environment variable can be used to point to the custom location. For more information about all `DOTNET_ROOT` configuration options, see [.NET environment variables](../tools/dotnet-environment-variables.md).
-
-In general, the best practice for using `DOTNET_ROOT` is to:
-
-1. Clear `DOTNET_ROOT` environment variables first, meaning all environment variables that start with the text `DOTNET_ROOT`.
-1. Set `DOTNET_ROOT`, and only `DOTNET_ROOT`, to the target path.
-1. Execute the target apphost.
-
 ### Publish
 
 ::: zone pivot="cli,vscode"
@@ -200,6 +190,16 @@ dotnet publish -c Release [-r <RID>] --self-contained false
 ::: zone-end
 
 ### Configure .NET install search behavior
+
+By default, the apphost discovers and uses a globally installed .NET runtime, with install locations varying by platform. For more information about runtime discovery and install locations, see [Troubleshoot app launch failures](../runtime-discovery/troubleshoot-app-launch.md).
+
+The .NET runtime path can also be customized on a per-execution basis. The `DOTNET_ROOT` environment variable can be used to point to the custom location. For more information about all `DOTNET_ROOT` configuration options, see [.NET environment variables](../tools/dotnet-environment-variables.md).
+
+In general, the best practice for using `DOTNET_ROOT` is to:
+
+1. Clear `DOTNET_ROOT` environment variables first, meaning all environment variables that start with the text `DOTNET_ROOT`.
+1. Set `DOTNET_ROOT`, and only `DOTNET_ROOT`, to the target path.
+1. Execute the target apphost.
 
 In .NET 9 and later versions, you can configure the .NET installation search paths of the published executable via the [`AppHostDotNetSearch`](../project-sdk//msbuild-props.md#apphostdotnetsearch) and [`AppHostRelativeDotNet`](../project-sdk//msbuild-props.md#apphostrelativedotnet) properties.
 

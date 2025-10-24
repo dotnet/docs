@@ -223,7 +223,7 @@ The following steps add code to process more of the properties in the received J
     Uri Homepage,
     int Watchers,
     [property: JsonPropertyName("pushed_at")] DateTime LastPushUtc
-   )
+   );
 
  ```
 

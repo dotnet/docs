@@ -213,7 +213,7 @@ The following steps add code to process more of the properties in the received J
 
 1. Replace the contents of `Repository` class, with the following `record` definition:
 
-    ```csharp
+ ```csharp
   using System.Text.Json.Serialization;
 
   public record class Repository(
@@ -226,7 +226,7 @@ The following steps add code to process more of the properties in the received J
  {
     public DateTime LastPush => LastPushUtc.ToLocalTime();
  }
-    ```
+ ```
 
    The <xref:System.Uri> and `int` types have built-in functionality to convert to and from string representation. No extra code is needed to deserialize from JSON string format to those target types. If the JSON packet contains data that doesn't convert to a target type, the serialization action throws an exception.
 

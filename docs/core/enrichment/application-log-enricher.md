@@ -52,7 +52,7 @@ Follow these steps to configure the application log enricher in your application
 First, configure the [Application Metadata](application-metadata.md) by calling the <xref:Microsoft.Extensions.Hosting.ApplicationMetadataHostBuilderExtensions.UseApplicationMetadata%2A> methods:
 
 ```csharp
-var builder = Host.CreateApplicationBuilder();
+var builder = Host.CreateApplicationBuilder(args);
 builder.UseApplicationMetadata()
 ```
 
@@ -61,11 +61,12 @@ This method automatically picks up values from the <xref:Microsoft.Extensions.Ho
 Alternatively, you can use this method <xref:Microsoft.Extensions.Configuration.ApplicationMetadataConfigurationBuilderExtensions.AddApplicationMetadata(Microsoft.Extensions.Configuration.IConfigurationBuilder,Microsoft.Extensions.Hosting.IHostEnvironment,System.String)>, which registers a configuration provider for application metadata by picking up the values from the <xref:Microsoft.Extensions.Hosting.IHostEnvironment> and adds it to the given configuration section name. Then you use <xref:Microsoft.Extensions.DependencyInjection.ApplicationMetadataServiceCollectionExtensions.AddApplicationMetadata(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfigurationSection)> method to register the metadata in the dependency injection container, which allow you to pass <xref:Microsoft.Extensions.Configuration.IConfigurationSection> separately:
 
 ```csharp
-var hostBuilder = Host.CreateApplicationBuilder()
-    .ConfigureAppConfiguration((context, builder) =>
-        builder.AddApplicationMetadata(context.HostingEnvironment))
-    .ConfigureServices((context, services) =>
-        services.AddApplicationMetadata(context.Configuration.GetSection("ambientmetadata:application")));
+var builder = Host.CreateApplicationBuilder(args)
+    .ConfigureAppConfiguration(static (context, builder) =>
+        builder.AddApplicationMetadata(context.HostingEnvironment));
+
+builder.Services.AddApplicationMetadata(
+    builder.Configuration.GetSection("ambientmetadata:application")));
 ```
 
 #### 2. Provide additional configuration (optional)

@@ -79,7 +79,7 @@ The following table shows the metadata made available by the provider via <xref:
 | `ambientmetadata:application:deploymentring`  | no  | configure it in `IConfiguration`      | `r0`, `public`             | The deployment ring from where the application is running.|
 
 ```csharp
-var builder = Host.CreateDefaultBuilder()
+var builder = Host.CreateDefaultBuilder(args)
     // ApplicationName and EnvironmentName will be imported from `IHostEnvironment` 
     // BuildVersion and DeploymentRing will be imported from the "appsettings.json" file.
 builder.UseApplicationMetadata();
@@ -94,12 +94,12 @@ var buildVersion = metadataOptions.Value.BuildVersion;
 Alternatively, you can achieve the same result as above by doing this:
 
 ```csharp
-var host = Host.CreateDefaultBuilder()
-    .ConfigureAppConfiguration((hostBuilderContext, configurationBuilder) => configurationBuilder
-      .AddApplicationMetadata(hostBuilderContext.HostingEnvironment))
-    .ConfigureServices((hostBuilderContext, serviceCollection) => serviceCollection
-      .AddApplicationMetadata(hostBuilderContext.Configuration.GetSection("ambientmetadata:application")))
-    .Build();
+var builder = Host.CreateApplicationBuilder()
+    .ConfigureAppConfiguration(static (context, builder) =>
+        builder.AddApplicationMetadata(context.HostingEnvironment));
+builder.Services.AddApplicationMetadata(
+    builder.Configuration.GetSection("ambientmetadata:application")));
+var host = builder.Build();
 
 var metadataOptions = host.Services.GetRequiredService<IOptions<ApplicationMetadata>>();
 var buildVersion = metadataOptions.Value.BuildVersion;
@@ -114,7 +114,7 @@ Your `appsettings.json` can have a section as follows :
 For applications using <xref:Microsoft.Extensions.Hosting.IHostApplicationBuilder>:
 
 ```csharp
-var builder = Host.CreateApplicationBuilder()
+var builder = Host.CreateApplicationBuilder(args)
     // ApplicationName and EnvironmentName will be imported from `IHostEnvironment` 
     // BuildVersion and DeploymentRing will be imported from the "appsettings.json" file.
 builder.UseApplicationMetadata();
@@ -146,11 +146,11 @@ builder.UseApplicationMetadata();
 
 var host = builder.Build();
 
-var _metadata = host.Services.GetRequiredService<IOptions<ApplicationMetadata>>().Value;
-Console.WriteLine($"Application: {_metadata.ApplicationName}");
-Console.WriteLine($"Version: {_metadata.BuildVersion}");
-Console.WriteLine($"Environment: {_metadata.EnvironmentName}");
-Console.WriteLine($"Deployment Ring: {_metadata.DeploymentRing}");
+var metadata = host.Services.GetRequiredService<IOptions<ApplicationMetadata>>().Value;
+Console.WriteLine($"Application: {metadata.ApplicationName}");
+Console.WriteLine($"Version: {metadata.BuildVersion}");
+Console.WriteLine($"Environment: {metadata.EnvironmentName}");
+Console.WriteLine($"Deployment Ring: {metadata.DeploymentRing}");
 await host.RunAsync();
 ```
 
@@ -176,7 +176,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 
-var builder = Host.CreateApplicationBuilder();
+var builder = Host.CreateApplicationBuilder(args);
 
 builder.UseApplicationMetadata();
 builder.ConfigureServices(services =>
@@ -191,16 +191,12 @@ loggingService.LogWithMetadata();
 
 await host.RunAsync();
 
-public class LoggingService
+public class LoggingService(
+    ILogger<LoggingService> logger,
+    IOptions<ApplicationMetadata> metadata)
 {
-    private readonly ILogger<LoggingService> _logger;
-    private readonly ApplicationMetadata _metadata;
-
-    public LoggingService(ILogger<LoggingService> logger, IOptions<ApplicationMetadata> metadata)
-    {
-        _logger = logger;
-        _metadata = metadata.Value;
-    }
+    private readonly ILogger<LoggingService> _logger = logger;
+    private readonly ApplicationMetadata _metadata = metadata.Value;
 
     public void LogWithMetadata()
     {

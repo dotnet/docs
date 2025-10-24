@@ -28,13 +28,13 @@ Use one of the methods described in the [.NET application publishing overview](/
 
 .NET creates a native *apphost* executable as the entry point for your app. This apphost must be signed and, if your app uses special capabilities, it must be assigned the appropriate **entitlements**.
 
-### Entitlements for CoreCLR apps
+### Entitlements for apps not published as Native AOT
 
-For CoreCLR apps, the `com.apple.security.cs.allow-jit` entitlement is required.
+For apps not published as [Native AOT](native-aot/index.md), the `com.apple.security.cs.allow-jit` entitlement is required.
 
-### Entitlements for Native AOT apps
+### Entitlements for apps published as Native AOT
 
-For Native AOT apps, no entitlements are required.
+For apps published as [Native AOT](native-aot/index.md), no entitlements are required.
 
 ### Optional entitlements for debugging and diagnostics
 

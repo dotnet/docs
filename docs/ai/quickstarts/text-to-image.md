@@ -8,7 +8,7 @@ ai-usage: ai-assisted
 
 # Generate images from text using AI
 
-In this quickstart, you learn how to use the <xref:Microsoft.Extensions.AI> (MEAI) library to generate images from text prompts using AI models. The MEAI text-to-image capabilities are designed to empower you to generate images from natural language prompts or existing images using a consistent and extensible API surface.
+In this quickstart, you use the <xref:Microsoft.Extensions.AI> (MEAI) library to generate images from text prompts using an AI model. The MEAI text-to-image capabilities let you generate images from natural language prompts or existing images using a consistent and extensible API surface.
 
 The <xref:Microsoft.Extensions.AI.IImageGenerator> interface provides a unified, extensible API for working with various image generation services, making it easy to integrate text-to-image capabilities into your .NET apps. The interface supports:
 
@@ -26,6 +26,9 @@ The <xref:Microsoft.Extensions.AI.IImageGenerator> interface provides a unified,
 ## Configure the AI service
 
 To provision an Azure OpenAI service and model using the Azure portal, complete the steps in the [Create and deploy an Azure OpenAI Service resource](/azure/ai-services/openai/how-to/create-resource?pivots=web-portal) article. In the "Deploy a model" step, select the `gpt-image-1` model.
+
+> [!NOTE]
+> `gpt-image-1` is a newer model that offers several improvements over DALL-E 3. It's available from OpenAI on a limited basis; apply for access with [this form](https://aka.ms/oai/gptimage1access).
 
 ## Create the application
 
@@ -75,6 +78,7 @@ Complete the following steps to create a .NET console application that generates
 
    The preceding code:
 
+   - Sets the requested image file type by setting <xref:Microsoft.Extensions.AI.ImageGenerationOptions.MediaType?displayProperty=nameWithType>.
    - Generates an image using the <xref:Microsoft.Extensions.AI.ImageGeneratorExtensions.GenerateImagesAsync(Microsoft.Extensions.AI.IImageGenerator,System.String,Microsoft.Extensions.AI.ImageGenerationOptions,System.Threading.CancellationToken)> method with a text prompt.
    - Saves the generated image to a file in the local user directory.
 
@@ -86,25 +90,15 @@ Complete the following steps to create a .NET console application that generates
 
 ## Configure image generation options
 
-You can customize image generation by providing options such as size, response format, and number of images to generate. The <xref:Microsoft.Extensions.AI.ImageGenerationOptions> class allows you to specify:
+You can customize image generation by providing other options such as size, response format, and number of images to generate. The <xref:Microsoft.Extensions.AI.ImageGenerationOptions> class allows you to specify:
 
 - <xref:Microsoft.Extensions.AI.ImageGenerationOptions.AdditionalProperties>: Provider-specific options.
 - <xref:Microsoft.Extensions.AI.ImageGenerationOptions.Count>: The number of images to generate.
-- <xref:Microsoft.Extensions.AI.ImageGenerationOptions.ImageSize>: The dimensions of the generated image as a <xref:System.Drawing.Size?displayProperty=fullName>. Supported sizes are 1024 x 1024, 1024 x 1536, and 1536 x 1024.
+- <xref:Microsoft.Extensions.AI.ImageGenerationOptions.ImageSize>: The dimensions of the generated image as a <xref:System.Drawing.Size?displayProperty=fullName>. For supported sizes, see the [OpenAI API reference](https://platform.openai.com/docs/api-reference/images/create).
 - <xref:Microsoft.Extensions.AI.ImageGenerationOptions.MediaType>: The media type (MIME type) of the generated image.
 - <xref:Microsoft.Extensions.AI.ImageGenerationOptions.ModelId>: The model ID.
 - <xref:Microsoft.Extensions.AI.ImageGenerationOptions.RawRepresentationFactory>: The callback that creates the raw representation of the image generation options from an underlying implementation.
 - <xref:Microsoft.Extensions.AI.ImageGenerationOptions.ResponseFormat>: Options are <xref:Microsoft.Extensions.AI.ImageGenerationResponseFormat.Uri>, <xref:Microsoft.Extensions.AI.ImageGenerationResponseFormat.Data>, and <xref:Microsoft.Extensions.AI.ImageGenerationResponseFormat.Hosted>.
-
-Update your code to include configuration options:
-
-:::code language="csharp" source="snippets/text-to-image/azure-openai/Program.cs" id="WithOptions":::
-
-## Handle errors and edge cases
-
-It's important to handle potential errors such as content filtering, rate limiting, or invalid sizes when you generate images. Add error handling to your application:
-
-:::code language="csharp" source="snippets/text-to-image/azure-openai/Program.cs" id="WithErrorHandling":::
 
 ## Best practices
 
@@ -130,11 +124,9 @@ You've successfully generated some different images using the <xref:Microsoft.Ex
 - Refining the generated image iteratively.
 - Editing an existing image.
 - Personalizing an image, diagram, or theme.
-- Merging multiple images into one, such as putting a character into a scene.
 
 ## See also
 
-- [Quickstart: Generate images using AI with .NET](../quickstarts/generate-images.md)
 - [Explore text-to-image capabilities in .NET (blog post)](https://devblogs.microsoft.com/dotnet/explore-text-to-image-dotnet/)
 - [Microsoft.Extensions.AI library overview](../microsoft-extensions-ai.md)
 - [Quickstart: Build an AI chat app with .NET](../quickstarts/build-chat-app.md)

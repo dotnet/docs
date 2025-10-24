@@ -26,7 +26,7 @@ Use one of the methods described in the [.NET application publishing overview](/
 
 ## Sign and notarize your app
 
-.NET creates a native *apphost* executable as the entry point for your app. This apphost must be signed and, if your app uses special capabilities, it must be assigned the appropriate **entitlements**.
+.NET creates a native *apphost* executable as the entry point for your app. This apphost must be signed and, if your app uses special capabilities, it must be assigned the appropriate **entitlements**. Use [Apple's developer documentation](https://developer.apple.com/documentation/security/notarizing_macos_software_before_distribution) to sign and notarize the binary.
 
 ### Entitlements for apps not published as Native AOT
 
@@ -42,10 +42,6 @@ The following entitlements enable additional debugging and diagnostic capabiliti
 
 - **`com.apple.security.get-task-allow`**: Needed for dump collection with `createdump` and `dotnet dump`.
 - **`com.apple.security.cs.debugger`**: Needed to attach a debugger to the process.
-
-### Sign and notarize the binary
-
-Use [Apple's developer documentation](https://developer.apple.com/documentation/security/notarizing_macos_software_before_distribution) to sign and notarize the binary.
 
 > [!WARNING]
 > Failing to sign and notarize your app might result in the application crashing while executing a restricted operation.

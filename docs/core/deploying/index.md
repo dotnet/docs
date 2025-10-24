@@ -133,25 +133,6 @@ Your app is configured to target a specific version of .NET. That targeted .NET 
 
 Publishing a framework-dependent deployment creates an app that automatically rolls forward to the latest .NET security patch available on the environment that runs the app. For more information on version binding at compile time, see [Select the .NET version to use](../versions/selection.md#framework-dependent-apps-roll-forward).
 
-### Launch framework-dependent apps
-
-There are two ways to run framework-dependent apps: through the host executable ("apphost") and via `dotnet <PROJECT-FILE>.dll`. Whenever possible, it's recommended to use the apphost. There are a number of advantages to using the apphost:
-
-- Executables appear like standard native platform executables.
-- Executable names are preserved in the process names, meaning apps can be easily recognized based on their names.
-- Because the apphost is a native binary, native assets like manifests can be attached to them.
-- Apphost has available low-level security mitigations applied by default that makes it more secure. For example, Control Flow Guard is enabled on Windows, and Control-flow Enforcement Technology (CET) shadow stack is enabled by default starting with .NET 9. Mitigations applied to `dotnet` are the lowest common denominator of all supported runtimes.
-
-The apphost generally uses a global install of the .NET runtime, where install locations vary by platform. For more information about runtime discovery and install locations, see [Troubleshoot app launch failures](../runtime-discovery/troubleshoot-app-launch.md).
-
-The .NET runtime path can also be customized on a per-execution basis. The `DOTNET_ROOT` environment variable can be used to point to the custom location. For more information about all `DOTNET_ROOT` configuration options, see [.NET environment variables](../tools/dotnet-environment-variables.md).
-
-In general, the best practice for using `DOTNET_ROOT` is to:
-
-1. Clear `DOTNET_ROOT` environment variables first, meaning all environment variables that start with the text `DOTNET_ROOT`.
-1. Set `DOTNET_ROOT`, and only `DOTNET_ROOT`, to the target path.
-1. Execute the target apphost.
-
 **Advantages**
 
 - **Small deployment**: Only the app and its dependencies are distributed. The environment where the app is run must already have the .NET runtime installed.
@@ -162,6 +143,25 @@ In general, the best practice for using `DOTNET_ROOT` is to:
 
 - **Requires pre-installing the runtime**: The app can run only if the version of .NET it targets is already installed in the environment.
 - **.NET might change**: The environment where the app is run might use a newer .NET runtime, which could change app behavior.
+
+### Launch framework-dependent apps
+
+There are two ways to run framework-dependent apps: through the host executable ("apphost") and via `dotnet <PROJECT-FILE>.dll`. You can run the apphost executable directly instead of calling `dotnet <PROJECT-FILE>.dll`, which is still an acceptable way to run the app. Whenever possible, it's recommended to use the apphost. There are a number of advantages to using the apphost:
+
+- Executables appear like standard native platform executables.
+- Executable names are preserved in the process names, meaning apps can be easily recognized based on their names.
+- Because the apphost is a native binary, native assets like manifests can be attached to them.
+- Apphost has available low-level security mitigations applied by default that makes it more secure. For example, Control Flow Guard is enabled on Windows, and Control-flow Enforcement Technology (CET) shadow stack is enabled by default starting with .NET 9. Mitigations applied to `dotnet` are the lowest common denominator of all supported runtimes.
+
+By default, the apphost discovers and uses a globally installed .NET runtime, with install locations varying by platform. For more information about runtime discovery and install locations, see [Troubleshoot app launch failures](../runtime-discovery/troubleshoot-app-launch.md).
+
+The .NET runtime path can also be customized on a per-execution basis. The `DOTNET_ROOT` environment variable can be used to point to the custom location. For more information about all `DOTNET_ROOT` configuration options, see [.NET environment variables](../tools/dotnet-environment-variables.md).
+
+In general, the best practice for using `DOTNET_ROOT` is to:
+
+1. Clear `DOTNET_ROOT` environment variables first, meaning all environment variables that start with the text `DOTNET_ROOT`.
+1. Set `DOTNET_ROOT`, and only `DOTNET_ROOT`, to the target path.
+1. Execute the target apphost.
 
 ### Publish
 

@@ -127,11 +127,30 @@ The following table provides quick examples of how to publish your app.
 
 ## Framework-dependent deployment
 
-Framework-dependent deployment is the default mode when you publish from either the CLI or Visual Studio. In this mode, a platform-specific executable host is created to host your cross-platform app. The host executable filename varies per platform and is named something similar to `<PROJECT-FILE>.exe`. You can run this executable directly instead of calling `dotnet <PROJECT-FILE>.dll`, which is still an acceptable way to run the app. For more information about launching apps and the advantages of using the apphost, see [Launch .NET apps](net-app-launch.md).
+Framework-dependent deployment is the default mode when you publish from either the CLI or Visual Studio. In this mode, a platform-specific executable host is created to host your cross-platform app. The host executable filename varies per platform and is named something similar to `<PROJECT-FILE>.exe`.
 
 Your app is configured to target a specific version of .NET. That targeted .NET runtime is required to be on the environment where your app runs. For example, if your app targets .NET 9, any environment that your app runs on must have the .NET 9 runtime installed.
 
 Publishing a framework-dependent deployment creates an app that automatically rolls forward to the latest .NET security patch available on the environment that runs the app. For more information on version binding at compile time, see [Select the .NET version to use](../versions/selection.md#framework-dependent-apps-roll-forward).
+
+### Launch framework-dependent apps
+
+There are two ways to run framework-dependent apps: through the apphost launcher and via `dotnet <PROJECT-FILE>.dll`. Whenever possible, it's recommended to use the apphost. There are a number of advantages to using the apphost:
+
+- Executables appear like standard native platform executables.
+- Executable names are preserved in the process names, meaning apps can be easily recognized based on their names.
+- Because the apphost is a native binary, native assets like manifests can be attached to them.
+- Apphost has available low-level security mitigations applied by default that makes it more secure. For example, Control Flow Guard is enabled on Windows, and Control-flow Enforcement Technology (CET) shadow stack is enabled by default starting with .NET 9. Mitigations applied to `dotnet` are the lowest common denominator of all supported runtimes.
+
+The apphost generally uses a global install of the .NET runtime, where install locations vary by platform. For more information about runtime discovery and install locations, see [Troubleshoot app launch failures](../runtime-discovery/troubleshoot-app-launch.md).
+
+The .NET runtime path can also be customized on a per-execution basis. The `DOTNET_ROOT` environment variable can be used to point to the custom location. For more information about all `DOTNET_ROOT` configuration options, see [.NET environment variables](../tools/dotnet-environment-variables.md).
+
+In general, the best practice for using `DOTNET_ROOT` to set the runtime location for an app is to:
+
+1. Clear `DOTNET_ROOT` environment variables first, meaning all environment variables that start with the text `DOTNET_ROOT`.
+1. Set `DOTNET_ROOT`, and only `DOTNET_ROOT`, to the target path.
+1. Execute the target apphost.
 
 **Advantages**
 
@@ -514,6 +533,5 @@ For more information about container deployment, see [.NET SDK container creatio
 
 ## See also
 
-- [Launch .NET apps](net-app-launch.md)
 - [.NET Runtime Identifier (RID) catalog](../rid-catalog.md)
 - [Select the .NET version to use](../versions/selection.md)

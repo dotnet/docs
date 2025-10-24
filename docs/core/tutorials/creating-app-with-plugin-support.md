@@ -157,16 +157,12 @@ static IEnumerable<ICommand> CreateCommands(Assembly assembly)
 {
     int count = 0;
 
-    foreach (Type type in assembly.GetTypes())
+    foreach (var type in assembly.GetTypes().Where(t => typeof(ICommand).IsAssignableFrom(t)))
     {
-        if (typeof(ICommand).IsAssignableFrom(type))
+        if (Activator.CreateInstance(type) is ICommand result)
         {
-            ICommand result = Activator.CreateInstance(type) as ICommand;
-            if (result != null)
-            {
-                count++;
-                yield return result;
-            }
+            count++;
+            yield return result;
         }
     }
 
@@ -194,17 +190,13 @@ Now that the `AppWithPlugin` project has the `PluginLoadContext` type, update th
 static Assembly LoadPlugin(string relativePath)
 {
     // Navigate up to the solution root
-    string root = Path.GetFullPath(Path.Combine(
-        Path.GetDirectoryName(
-            Path.GetDirectoryName(
-                Path.GetDirectoryName(
-                    Path.GetDirectoryName(
-                        Path.GetDirectoryName(typeof(Program).Assembly.Location)))))));
+    string root = Path.GetFullPath(
+        Path.Combine(typeof(Program).Assembly.Location, "..", "..", "..", "..", ".."));
 
     string pluginLocation = Path.GetFullPath(Path.Combine(root, relativePath.Replace('\\', Path.DirectorySeparatorChar)));
     Console.WriteLine($"Loading commands from: {pluginLocation}");
-    PluginLoadContext loadContext = new PluginLoadContext(pluginLocation);
-    return loadContext.LoadFromAssemblyName(new AssemblyName(Path.GetFileNameWithoutExtension(pluginLocation)));
+    PluginLoadContext loadContext = new(pluginLocation);
+    return loadContext.LoadFromAssemblyName(new(Path.GetFileNameWithoutExtension(pluginLocation)));
 }
 ```
 

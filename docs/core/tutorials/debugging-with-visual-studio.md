@@ -1,7 +1,8 @@
 ---
 title: Debug a .NET console application using Visual Studio
 description: Learn how to debug a .NET console app using Visual Studio.
-ms.date: 08/21/2023
+ms.date: 10/23/2025
+ai-usage: ai-assisted
 dev_langs:
   - "csharp"
   - "vb"
@@ -16,7 +17,7 @@ This tutorial introduces the debugging tools available in Visual Studio.
 
 ## Prerequisites
 
-- This tutorial works with the console app that you create in [Create a .NET console application using Visual Studio](with-visual-studio.md).
+This tutorial works with the console app that you create in [Create a .NET console application using Visual Studio](with-visual-studio.md).
 
 ## Use Debug build configuration
 
@@ -24,7 +25,7 @@ This tutorial introduces the debugging tools available in Visual Studio.
 
 In the Debug configuration, a program compiles with full symbolic debug information and no optimization. Optimization complicates debugging, because the relationship between source code and generated instructions is more complex. The release configuration of a program has no symbolic debug information and is fully optimized.
 
- By default, Visual Studio uses the Debug build configuration, so you don't need to change it before debugging.
+By default, Visual Studio uses the Debug build configuration, so you don't need to change it before debugging.
 
 1. Start Visual Studio.
 

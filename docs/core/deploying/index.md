@@ -127,7 +127,7 @@ The following table provides quick examples of how to publish your app.
 
 ## Framework-dependent deployment
 
-Framework-dependent deployment is the default mode when you publish from either the CLI or Visual Studio. In this mode, a platform-specific executable is created to host your cross-platform app. The platform-specific executable is named `<PROJECT-FILE>.exe` on Windows or just `<PROJECT-FILE>` on other platforms.
+Framework-dependent deployment is the default mode when you publish from either the CLI or Visual Studio. In this mode, a platform-specific executable is created that can be used to start your app. The platform-specific executable is named `<PROJECT-FILE>.exe` on Windows or just `<PROJECT-FILE>` on other platforms.
 
 Your app is configured to target a specific version of .NET. That targeted .NET runtime is required to be on the environment where your app runs. For example, if your app targets .NET 9, any environment that your app runs on must have the .NET 9 runtime installed.
 

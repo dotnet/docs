@@ -30,7 +30,7 @@ In this part of the series, you learn how to:
 
 ## Prerequisites
 
-- [.NET SDK 7.0.100](https://dotnet.microsoft.com/download) or a later version.
+- [.NET 9](https://dotnet.microsoft.com/download) or a later version.
 
 - The reference article explains the basics about templates and how they're put together. Some of this information is reiterated here.
 

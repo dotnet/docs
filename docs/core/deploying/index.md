@@ -151,7 +151,7 @@ There are two ways to run framework-dependent apps: through the platform-specifi
 - Executables appear like standard native platform executables.
 - Executable names are preserved in the process names, meaning apps can be easily recognized based on their names.
 - Because the apphost is a native binary, native assets like manifests can be attached to them.
-- Apphost has available low-level security mitigations applied by default that makes it more secure. For example, Control Flow Guard is enabled on Windows, and Control-flow Enforcement Technology (CET) shadow stack is enabled by default starting with .NET 9. Mitigations applied to `dotnet` are the lowest common denominator of all supported runtimes.
+- Apphost has available low-level security mitigations applied by default that makes it more secure. For example, Control-flow Enforcement Technology (CET) shadow stack is enabled by default starting with .NET 9. Mitigations applied to `dotnet` are the lowest common denominator of all supported runtimes.
 
 By default, the apphost discovers and uses a globally installed .NET runtime, with install locations varying by platform. For more information about runtime discovery and install locations, see [Troubleshoot app launch failures](../runtime-discovery/troubleshoot-app-launch.md).
 

@@ -146,7 +146,7 @@ Publishing a framework-dependent deployment creates an app that automatically ro
 
 ### Launch framework-dependent apps
 
-There are two ways to run framework-dependent apps: through the platform-specific executable (apphost) and via `dotnet myapp.dll`. You can run the apphost executable directly instead of calling `dotnet myapp.dll`, which is still an acceptable way to run the app. Whenever possible, it's recommended to use the apphost. There are a number of advantages to using the apphost:
+There are two ways to run framework-dependent apps: through the platform-specific executable ("apphost") and via `dotnet myapp.dll`. You can run the apphost executable directly instead of calling `dotnet myapp.dll`, which is still an acceptable way to run the app. Whenever possible, it's recommended to use the apphost. There are a number of advantages to using the apphost:
 
 - Executables appear like standard native platform executables.
 - Executable names are preserved in the process names, meaning apps can be easily recognized based on their names.

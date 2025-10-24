@@ -36,8 +36,6 @@ In this part of the series, you learn how to:
 
 - Open a terminal and navigate to a folder where you'll store and test the templates.
 
-[!INCLUDE [dotnet6-syntax-note](includes/dotnet6-syntax-note.md)]
-
 ## Create the required folders
 
 This series uses a "working folder" where your template source is contained and a "testing folder" used to test your templates. The working folder and testing folder should be under the same parent folder.

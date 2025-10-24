@@ -39,11 +39,11 @@ In this part of the series, you learn how to:
 
 ## Prerequisites
 
+- [.NET 9](https://dotnet.microsoft.com/download) or a later version.
+
 - Complete [part 1](cli-templates-create-item-template.md) of this tutorial series.
 
 - Open a terminal and navigate to the _working\content_ folder.
-
-[!INCLUDE [dotnet6-syntax-note](includes/dotnet6-syntax-note.md)]
 
 ## Create a project template
 

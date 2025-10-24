@@ -18,13 +18,11 @@ This article gives an overview of the steps necessary to start the .NET runtime 
 
 Because hosts are native applications, this tutorial covers constructing a C++ application to host .NET. You need a C++ development environment (such as that provided by [Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)).
 
-You also need to build a .NET component to test the host with, so you should install the [.NET SDK](https://dotnet.microsoft.com/download). It includes the necessary headers and libraries to link with. As an example, on Windows with the .NET 8 SDK the files can be found in `C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Host.win-x64\8.0.4\runtimes\win-x64\native`.
+You also need to build a .NET component to test the host with, so you should install the [latests .NET SDK](https://dotnet.microsoft.com/download). It includes the necessary headers and libraries to link with.
 
 ## Hosting APIs
 
-Hosting the .NET runtime in .NET Core 3.0 and above is done with the `nethost` and `hostfxr` libraries' APIs. These entry points handle the complexity of finding and setting up the runtime for initialization and allow both launching a managed application and calling into a static managed method.
-
-Prior to .NET Core 3.0, the only option for hosting the runtime was through the [`coreclrhost.h`](https://github.com/dotnet/runtime/blob/main/src/coreclr/hosts/inc/coreclrhost.h) API. This hosting API is obsolete now and should not be used for hosting .NET Core 3.0 and higher runtimes.
+Hosting the .NET runtime is done with the `nethost` and `hostfxr` libraries' APIs. These entry points handle the complexity of finding and setting up the runtime for initialization and allow both launching a managed application and calling into a static managed method.
 
 ## Create a host using `nethost.h` and `hostfxr.h`
 
@@ -56,13 +54,9 @@ The sample uses the following includes:
 
 These files can be found at the following locations:
 
-* <https://github.com/dotnet/runtime/blob/main/src/native/corehost/nethost/nethost.h>
-* <https://github.com/dotnet/runtime/blob/main/src/native/corehost/coreclr_delegates.h>
-* <https://github.com/dotnet/runtime/blob/main/src/native/corehost/hostfxr.h>
-
-Or, if you have installed the .NET 8 SDK on Windows:
-
-* `C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Host.win-x64\8.0.4\runtimes\win-x64\native`
+- <https://github.com/dotnet/runtime/blob/main/src/native/corehost/nethost/nethost.h>
+- <https://github.com/dotnet/runtime/blob/main/src/native/corehost/coreclr_delegates.h>
+- <https://github.com/dotnet/runtime/blob/main/src/native/corehost/hostfxr.h>
 
 ### Step 2 - Initialize and start the .NET runtime
 

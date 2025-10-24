@@ -24,13 +24,13 @@ In this part of the series, you learn how to:
 
 ## Prerequisites
 
+- [.NET 9](https://dotnet.microsoft.com/download) or a later version.
+
 - Complete [part 1](cli-templates-create-item-template.md) and [part 2](cli-templates-create-project-template.md) of this tutorial series.
 
   This tutorial uses the two templates created in the first two parts of this tutorial series. You can use a different template as long as you copy the template, as a folder, into the _working\content_ folder.
 
 - Open a terminal and navigate to the _working_ folder.
-
-- Install .NET 8 or .NET 9.
 
 - Install the `Microsoft.TemplateEngine.Authoring.Templates` template from the NuGet package feed.
   - Run the `dotnet new install Microsoft.TemplateEngine.Authoring.Templates` command from your terminal.

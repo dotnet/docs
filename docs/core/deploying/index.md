@@ -68,7 +68,7 @@ In Visual Studio, create separate publishing profiles for each target framework.
 
 ### Portable binaries
 
-When you publish a .NET app, you can target a specific platform or create a portable binary. By default, even when creating a portable binary, .NET publishes a platform-specific executable alongside the portable DLL unless you explicitly disable this behavior.
+When you publish a .NET app, you can target a specific platform or create a portable binary. By default, even when creating a portable binary, .NET publishes a platform-specific executable ("apphost") alongside the portable DLL unless you explicitly disable this behavior.
 
 The platform-specific executable is created because of the `UseAppHost` property, which defaults to `true`. To publish only the portable DLL without the platform-specific executable, set `UseAppHost` to `false` either on the command line (`-p:UseAppHost=false`) or as a [project property](../project-sdk/msbuild-props.md#useapphost).
 

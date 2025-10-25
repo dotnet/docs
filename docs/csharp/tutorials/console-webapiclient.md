@@ -213,18 +213,18 @@ In the following steps, we extend the code to process more properties from the J
 
 1. Replace the contents of the `Repository` class with the following `record` definition. Make sure to import the `System.Text.Json.Serialization` namespace and apply the `[JsonPropertyName]` attribute to map JSON fields to C# properties explicitly.
 
- ```csharp
-  using System.Text.Json.Serialization;
+   ```csharp
+    using System.Text.Json.Serialization;
 
-  public record class Repository(
-    string Name,
-    string Description,
-    [property: JsonPropertyName("html_url")] Uri GitHubHomeUrl,
-    Uri Homepage,
-    int Watchers,
-    [property: JsonPropertyName("pushed_at")] DateTime LastPushUtc
-   );
- ```
+    public record class Repository(
+      string Name,
+      string Description,
+      [property: JsonPropertyName("html_url")] Uri GitHubHomeUrl,
+      Uri Homepage,
+      int Watchers,
+      [property: JsonPropertyName("pushed_at")] DateTime LastPushUtc
+     );
+   ```
 
    The <xref:System.Uri> and `int` types have built-in functionality to convert to and from string representation. No extra code is needed to deserialize from JSON string format to those target types. If the JSON packet contains data that doesn't convert to a target type, the serialization action throws an exception.
 

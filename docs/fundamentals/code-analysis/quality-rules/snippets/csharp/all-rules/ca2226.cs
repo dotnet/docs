@@ -1,5 +1,6 @@
 using System;
 
+#if false
 namespace ca2226
 {
     //<snippet1>
@@ -33,6 +34,7 @@ namespace ca2226
     }
     //</snippet1>
 }
+#endif
 
 namespace ca2226_2
 {

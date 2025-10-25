@@ -212,6 +212,7 @@ The `ProcessRepositoriesAsync` method can do the async work and return a collect
 In the following steps, we extend the code to process more properties from the JSON payload returned by the GitHub API. You probably won't need to process every property, but adding a few demonstrates additional C# features.
 
 1. Replace the contents of the `Repository` class with the following `record` definition. Make sure to import the `System.Text.Json.Serialization` namespace and apply the `[JsonPropertyName]` attribute to map JSON fields to C# properties explicitly.
+
  ```csharp
   using System.Text.Json.Serialization;
 

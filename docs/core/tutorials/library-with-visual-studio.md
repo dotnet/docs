@@ -1,7 +1,8 @@
 ---
 title: Create a .NET class library using Visual Studio
 description: Learn how to create a .NET class library using Visual Studio.
-ms.date: 03/21/2024
+ms.date: 10/23/2025
+ai-usage: ai-assisted
 dev_langs:
   - "csharp"
   - "vb"
@@ -23,7 +24,7 @@ When you create a class library, you can distribute it as a NuGet package or as 
 
 ## Create a solution
 
-Start by creating a blank solution to put the class library project in. A Visual Studio solution serves as a container for one or more projects. You'll add additional, related projects to the same solution.
+Start by creating a blank solution to put the class library project in. A Visual Studio solution serves as a container for one or more projects. You'll add related projects to the same solution.
 
 To create the blank solution:
 

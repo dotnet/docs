@@ -1,7 +1,7 @@
 ---
 title: Debug a .NET console application using Visual Studio Code
 description: Learn how to debug a .NET console app using Visual Studio Code.
-ms.date: 09/12/2024
+ms.date: 10/23/2025
 ---
 # Tutorial: Debug a .NET console application using Visual Studio Code
 
@@ -9,7 +9,7 @@ This tutorial introduces the debugging tools available in Visual Studio Code for
 
 ## Prerequisites
 
-- This tutorial works with the console app that you create in [Create a .NET console application using Visual Studio Code](with-visual-studio-code.md).
+This tutorial works with the console app that you create in [Create a .NET console application using Visual Studio Code](with-visual-studio-code.md).
 
 ## Use Debug build configuration
 

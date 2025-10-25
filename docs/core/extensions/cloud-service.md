@@ -29,7 +29,7 @@ In this tutorial, you learn how to:
 
 - The [.NET 5.0 SDK or later](https://dotnet.microsoft.com/download/dotnet).
 - Docker Desktop ([Windows](https://docs.docker.com/docker-for-windows/install) or [Mac](https://docs.docker.com/docker-for-mac/install)).
-- An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/dotnet).
+- An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 - Depending on your developer environment of choice:
   - [Visual Studio or Visual Studio Code](https://visualstudio.microsoft.com).
   - [.NET CLI](../tools/index.md)

@@ -1,7 +1,7 @@
 ---
 title: "Object and Collection Initializers"
 description: Object initializers in C# assign values to accessible fields or properties of an object at creation after invoking a constructor.
-ms.date: 05/17/2024
+ms.date: 10/13/2025
 helpviewer_keywords: 
   - "object initializers [C#]"
   - "collection initializers [C#]"
@@ -19,7 +19,7 @@ Object initializers let you assign values to any accessible fields or properties
 
 The object initializers syntax allows you to create an instance, and after that it assigns the newly created object, with its assigned properties, to the variable in the assignment.
 
-Starting with nested object properties, you can use object initializer syntax without the `new` keyword. This syntax, `Property = { ... }`, allows you to initialize members of existing nested objects, which is particularly useful with read-only properties. For more details, see [Object Initializers with class-typed properties](#object-initializers-with-class-typed-properties).
+Starting with nested object properties, you can use object initializer syntax without the `new` keyword. This syntax, `Property = { ... }`, allows you to initialize members of existing nested objects, which is useful with read-only properties. For more information, see [Object Initializers with class-typed properties](#object-initializers-with-class-typed-properties).
 
 Object initializers can set indexers, in addition to assigning fields and properties. Consider this basic `Matrix` class:
 
@@ -54,7 +54,7 @@ public string this[char c, int i] { set { ... }; }
 
 ## Object Initializers with anonymous types
 
-Although object initializers can be used in any context, they're especially useful in LINQ query expressions. Query expressions make frequent use of [anonymous types](../../fundamentals/types/anonymous-types.md), which can only be initialized by using an object initializer, as shown in the following declaration.
+Although object initializers can be used in any context, they're especially useful in Language-Integrated Query (LINQ) expressions. Query expressions make frequent use of [anonymous types](../../fundamentals/types/anonymous-types.md), which can only be initialized by using an object initializer, as shown in the following declaration.
 
 ```csharp
 var pet = new { Age = 10, Name = "Fluffy" };
@@ -139,13 +139,13 @@ These syntaxes behave differently. The following example demonstrates both appro
 
 - **Without `new` keyword** (`ClassB = { BI = 100003 }`): This syntax modifies the existing instance of the property that was created during object construction. It calls member initializers on the existing object.
 
-- **With `new` keyword** (`ClassB = new() { BI = 100003 }`): This syntax creates a completely new instance and assigns it to the property, replacing any existing instance.
+- **With `new` keyword** (`ClassB = new() { BI = 100003 }`): This syntax creates a new instance and assigns it to the property, replacing any existing instance.
 
-The initializer without `new` reuses the current instance. In the example above, ClassB's values are: `100003` (new value assigned), `true` (kept from EmbeddedClassTypeA's initialization), `BBBabc` (unchanged default from EmbeddedClassTypeB).
+The initializer without `new` reuses the current instance. In the previous example, ClassB's values are: `100003` (new value assigned), `true` (kept from EmbeddedClassTypeA's initialization), `BBBabc` (unchanged default from EmbeddedClassTypeB).
 
 ### Object initializers without `new` for read-only properties
 
-The syntax without `new` is particularly useful with read-only properties, where you can't assign a new instance but can still initialize the existing instance's members:
+The syntax without `new` is useful with read-only properties, where you can't assign a new instance but can still initialize the existing instance's members:
 
 :::code language="csharp" source="./snippets/object-collection-initializers/ObjectInitializerWithoutNew.cs" id="ReadOnlyPropertyExample":::
 

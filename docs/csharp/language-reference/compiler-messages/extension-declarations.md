@@ -1,7 +1,7 @@
 ---
 title: "Errors and warnings related to extension declarations"
 description: "These errors and warnings indicate that you need to modify the declaration of an extension method using the `this` modifier on the first parameter, or an extension declaration"
-ms.date: 05/23/2025
+ms.date: 10/16/2025
 f1_keywords:
   - "CS1100"
   - "CS1101"
@@ -32,6 +32,18 @@ f1_keywords:
   - "CS9303"
   - "CS9304"
   - "CS9305"
+  - "CS9306"
+  - "CS9309"
+  - "CS9316"
+  - "CS9317"
+  - "CS9318"
+  - "CS9319"
+  - "CS9320"
+  - "CS9321"
+  - "CS9322"
+  - "CS9323"
+  - "CS9326"
+  - "CS9329"
 helpviewer_keywords: 
   - "CS1100"
   - "CS1101"
@@ -64,6 +76,18 @@ helpviewer_keywords:
   - "CS9303"
   - "CS9304"
   - "CS9305"
+  - "CS9306"
+  - "CS9309"
+  - "CS9316"
+  - "CS9317"
+  - "CS9318"
+  - "CS9319"
+  - "CS9320"
+  - "CS9321"
+  - "CS9322"
+  - "CS9323"
+  - "CS9326"
+  - "CS9329"
 ---
 # Errors and warnings related to extension methods declared with `this` parameters or `extension` blocks
 
@@ -98,6 +122,18 @@ helpviewer_keywords:
 - [**CS9303**](#errors-related-to-extension-block-declarations): *Cannot declare instance members in an extension block with an unnamed receiver parameter.*
 - [**CS9304**](#errors-related-to-extension-block-declarations): *Cannot declare init-only accessors in an extension block.*
 - [**CS9305**](#errors-related-to-extension-block-declarations): *Cannot use modifiers on the unnamed receiver parameter of extension block.*
+- [**CS9306**](#errors-related-to-extension-block-declarations): *Types and aliases cannot be named 'extension'.*
+- [**CS9309**](#errors-related-to-extension-block-declarations): *An extension member syntax is disallowed in nested position within an extension member syntax.*
+- [**CS9316**](#errors-related-to-extension-block-declarations): *Extension members are not allowed as an argument to '`nameof`'.*
+- [**CS9317**](#errors-related-to-extension-block-declarations): *The parameter of a unary operator must be the extended type.*
+- [**CS9318**](#errors-related-to-extension-block-declarations): *The parameter type for ++ or -- operator must be the extended type.*
+- [**CS9319**](#errors-related-to-extension-block-declarations): *One of the parameters of a binary operator must be the extended type.*
+- [**CS9320**](#errors-related-to-extension-block-declarations): *The first operand of an overloaded shift operator must have the same type as the extended type.*
+- [**CS9321**](#errors-related-to-extension-block-declarations): *An extension block extending a static class cannot contain user-defined operators.*
+- [**CS9322**](#errors-related-to-extension-block-declarations): *Cannot declare instance operator for a struct unless containing extension block receiver parameter is a '`ref`' parameter.*
+- [**CS9323**](#errors-related-to-extension-block-declarations): *Cannot declare instance extension operator for a type that is not known to be a struct and is not known to be a class.*
+- [**CS9326**](#errors-related-to-extension-block-declarations): *'`name`': extension member names cannot be the same as their extended type.*
+- [**CS9329**](#errors-related-to-extension-block-declarations): *This extension block collides with another extension block. They result in conflicting content-based type names in metadata.*
 
 ## Common errors on extension declarations
 
@@ -143,6 +179,20 @@ These errors are specific to extension blocks, a C# 14 feature. Extension blocks
 - **CS9303**: *Cannot declare instance members in an extension block with an unnamed receiver parameter.*
 - **CS9304**: *Cannot declare init-only accessors in an extension block.*
 - **CS9305**: *Cannot use modifiers on the unnamed receiver parameter of extension block.*
+- **CS9306**: *Types and aliases cannot be named 'extension'.*
+- **CS9309**: *An extension member syntax is disallowed in nested position within an extension member syntax.*
+- **CS9316**: *Extension members are not allowed as an argument to '`nameof`'.*
+- **CS9317**: *The parameter of a unary operator must be the extended type.*
+- **CS9318**: *The parameter type for ++ or -- operator must be the extended type.*
+- **CS9319**: *One of the parameters of a binary operator must be the extended type.*
+- **CS9320**: *The first operand of an overloaded shift operator must have the same type as the extended type.*
+- **CS9321**: *An extension block extending a static class cannot contain user-defined operators.*
+- **CS9322**: *Cannot declare instance operator for a struct unless containing extension block receiver parameter is a '`ref`' parameter.*
+- **CS9323**: *Cannot declare instance extension operator for a type that is not known to be a struct and is not known to be a class.*
+- **CS9326**: *'`name`': extension member names cannot be the same as their extended type.*
+- **CS9329**: *This extension block collides with another extension block. They result in conflicting content-based type names in metadata.*
+
+The contextual keyword [`extension`](../keywords/extension.md) declares an extension block. It can't be used for a type.
 
 Extension declarations must follow these rules:
 
@@ -155,6 +205,23 @@ Extension members declared in an extension block must follow these rules, in add
 - The extension must provide a parameter name for the receiver in order to contain members that extend an instance.
 - The receiver parameter name must be unique in that extension block.
 - All extension members must use all type parameters declared on the extension. They can add more type parameters.
+- Extension blocks can't be nested within another extension block.
+
+**CS9316** is emitted when you attempt to use an extension member as an argument to the `nameof` operator. Extension members aren't allowed in this context.
+
+**CS9317**, **CS9318**, **CS9319**, **CS9320**, **CS9321**, **CS9322**, and **CS9323** are operator-related errors in extension blocks:
+
+- **CS9317**: Unary operators must have the extended type as their parameter.
+- **CS9318**: Increment (`++`) and decrement (`--`) operators must have the extended type as their parameter.
+- **CS9319**: Binary operators must have at least one parameter that is the extended type.
+- **CS9320**: Shift operators must have the extended type as their first operand.
+- **CS9321**: You can't declare user-defined operators in extension blocks that extend static classes.
+- **CS9322**: When extending a struct with instance operators, the receiver parameter must use the `ref` modifier.
+- **CS9323**: You can't declare instance operators for types that aren't constrained to be either a struct or a class.
+
+**CS9326** is emitted when an extension member has the same name as the extended type. Choose a different name for the member.
+
+**CS9329** occurs when two extension blocks result in conflicting content-based type names in the compiled metadata. This typically happens when multiple extension blocks with the same receiver type and similar characteristics are declared. Consolidate the extension blocks or differentiate them in a way that produces unique metadata names.
 
 ## Errors related to `this` parameter extension methods
 

@@ -71,12 +71,14 @@ items:
             items:
               - name: Overview
                 href: ../../core/testing/unit-testing-mstest-intro.md
-              - name: Migrate MSTest from v1 to v3
+              - name: Migrate from MSTest v1 to v3
                 href: ../../core/testing/unit-testing-mstest-migration-from-v1-to-v3.md
-              - name: Migrate from MSTest v3 to MSTest v4
+              - name: Migrate from MSTest v3 to v4
                 href: ../../core/testing/unit-testing-mstest-migration-v3-v4.md
               - name: Microsoft.Testing.Platform support (MSTest runner)
                 href: ../../core/testing/unit-testing-mstest-runner-intro.md
+              - name: Migrate from Microsoft.Testing.Platform v1 to v2
+                href: ../../core/testing/microsoft-testing-platform-migration-from-v1-to-v2.md
               - name: Getting started
                 items:
                   - name: Overview
@@ -247,6 +249,8 @@ items:
                 href: ../../core/testing/microsoft-testing-platform-faq.md
               - name: Comparison with VSTest
                 href: ../../core/testing/microsoft-testing-platform-vs-vstest.md
+              - name: Migrate from VSTest to Microsoft.Testing.Platform
+                href: ../../core/testing/migrating-vstest-microsoft-testing-platform.md
               - name: Configure the test platform
                 href: ../../core/testing/microsoft-testing-platform-config.md
               - name: Extensions

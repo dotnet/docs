@@ -12,6 +12,8 @@ The latest version of .NET Framework is 4.8.1. This version of .NET Framework su
 > [!NOTE]
 > .NET Framework is a Windows-only technology, and is separate from .NET (formerly called .NET Core). For more information, see [Introduction to .NET](../../core/introduction.md).
 
+If you need to check which .NET Framework versions are already installed on your computer, see [How to: Determine which .NET Framework versions are installed](how-to-determine-which-versions-are-installed.md).
+
 ## Supported versions of .NET Framework
 
 The following versions of .NET Framework are still supported:

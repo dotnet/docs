@@ -112,6 +112,19 @@ Type: `object`
 
 Lets you control the project SDK version in one place rather than in each individual project. For more information, see [How project SDKs are resolved](/visualstudio/msbuild/how-to-use-project-sdk#how-project-sdks-are-resolved).
 
+### `test`
+
+- Type: `object`
+
+Specifies information about tests.
+
+#### `runner`
+
+- Type: `string`
+- Available since: .NET 10.0 SDK.
+
+The test runner to discover/run tests with.
+
 ### Comments in global.json
 
 Comments in *global.json* files are supported using JavaScript or C# style comments. For example:
@@ -192,6 +205,16 @@ The following example shows how to specify additional SDK search paths and a cus
     "paths": [ ".dotnet", "$host$" ],
     "errorMessage": "The required .NET SDK wasn't found. Please run ./install.sh to install it."
   }
+}
+```
+
+The following example shows how to specify `Microsoft.Testing.Platform` as the test runner:
+
+```json
+{
+    "test": {
+        "runner": "Microsoft.Testing.Platform"
+    }
 }
 ```
 

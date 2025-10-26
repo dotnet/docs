@@ -1,7 +1,7 @@
 ---
 title: Observer design pattern
 description: Learn about the observer design pattern in .NET. This pattern lets a subscriber register with and receive notifications from a provider.
-ms.date: 05/23/2023
+ms.date: 10/20/2025
 dev_langs:
   - "csharp"
   - "vb"

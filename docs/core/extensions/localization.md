@@ -3,7 +3,7 @@ title: Localization
 description: Learn the concepts of localization while learning how to use the IStringLocalizer and IStringLocalizerFactory implementations in your .NET workloads.
 author: IEvangelist
 ms.author: dapine
-ms.date: 02/02/2024
+ms.date: 10/20/2025
 helpviewer_keywords:
   - "culture, localization"
   - "application development [.NET], localization"

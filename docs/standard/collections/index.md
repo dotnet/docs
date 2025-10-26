@@ -1,7 +1,7 @@
 ---
 title: "Collections and Data Structures"
 description: Learn how to use collections and data structures in .NET. Use generic and non-generic collections in thread-safe operations.
-ms.date: 08/10/2022
+ms.date: 10/20/2025
 ms.custom: devdivchpfy22
 helpviewer_keywords: 
   - "grouping data in collections"

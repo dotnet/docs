@@ -1,7 +1,7 @@
 ---
 title: "Strong-named assemblies"
 description: Learn about strong-names for .NET assemblies, which creates a unique identity for an assembly and can prevent assembly conflicts.
-ms.date: "08/20/2019"
+ms.date: 10/20/2025
 helpviewer_keywords:
   - "strong-named assemblies, about strong-named assemblies"
   - "assemblies [.NET Framework], strong-named"

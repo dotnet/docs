@@ -3,7 +3,7 @@ title: Use code coverage for unit testing
 description: Learn how to use the code coverage capabilities for .NET unit tests.
 author: IEvangelist
 ms.author: dapine
-ms.date: 11/11/2021
+ms.date: 10/20/2025
 ---
 
 # Use code coverage for unit testing

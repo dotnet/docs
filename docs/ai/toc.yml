@@ -67,6 +67,10 @@ items:
       href: tutorials/tutorial-ai-vector-search.md
     - name: Scale Azure OpenAI with Azure Container Apps
       href: get-started-app-chat-scaling-with-azure-container-apps.md
+- name: How-to guides
+  items:
+  - name: Switch model providers
+    href: how-to/switch-model-providers.md
 - name: Security and content safety
   items:
   - name: Authentication for Azure-hosted apps and services

@@ -607,7 +607,7 @@ items:
   - name: Using statements and declarations
     href: ./compiler-messages/using-statement-declaration-errors.md
     displayName: >
-      CS9229
+      CS1674, CS8410, CS8417, CS8418, CS8647, CS8648, CS8649, CS9229
   - name: Source generators
     href: ./compiler-messages/source-generator-errors.md
     displayName: >
@@ -1635,8 +1635,6 @@ items:
       href: ../misc/cs1671.md
     - name: CS1672
       href: ../misc/cs1672.md
-    - name: CS1674
-      href: ./compiler-messages/cs1674.md
     - name: CS1675
       href: ../misc/cs1675.md
     - name: CS1676
@@ -1911,8 +1909,6 @@ items:
       href: ./compiler-messages/cs8355.md
     - name: CS8403
       href: ./compiler-messages/cs8403.md
-    - name: CS8410
-      href: ./compiler-messages/cs8410.md
     - name: CS8411
       href: ./compiler-messages/cs8411.md
     - name: CS8422

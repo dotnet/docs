@@ -564,6 +564,30 @@
             "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/feature-version-errors"
         },
         {
+            "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs8410.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/using-statement-declaration-errors#type-must-be-async-disposable"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs8417.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/using-statement-declaration-errors#async-disposable-type-used-with-using"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs8418.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/using-statement-declaration-errors#disposable-type-used-with-await-using"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs8647.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/using-statement-declaration-errors#using-variable-in-switch-section"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs8648.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/using-statement-declaration-errors#goto-forward-jump-over-using-declaration"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs8649.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/using-statement-declaration-errors#goto-backward-jump-over-using-declaration"
+        },
+        {
             "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs8795.md",
             "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/partial-types"
         },
@@ -2284,6 +2308,10 @@
         {
             "source_path_from_root": "/docs/csharp/misc/cs1673.md",
             "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/lambda-expression-errors#syntax-limitations-in-lambda-expressions"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs1674.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/using-statement-declaration-errors#type-must-be-disposable"
         },
         {
             "source_path_from_root": "/docs/csharp/misc/cs1686.md",

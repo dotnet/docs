@@ -39,7 +39,7 @@ When a delegate is constructed to wrap an instance method, the delegate referenc
 
 :::code language="csharp" source="./snippets/UsingDelegates.cs" id="InstanceMethods":::
 
-Along with the static `DelegateMethod` shown previously, we now have three methods that you can wrap in a `Del` instance.
+Along with the static `DelegateMethod` shown previously, we now have three methods that you can wrap in a `Callback` instance.
 
 A delegate can call more than one method when invoked, referred to as multicasting. To add an extra method to the delegate's list of methods—the invocation list—simply requires adding two delegates using the addition or addition assignment operators ('+' or '+='). For example:
 

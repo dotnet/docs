@@ -1,11 +1,13 @@
-﻿public record class Repository(
+using System.Text.Json.Serialization;
+
+public record class Repository(
     string Name,
     string Description,
-    Uri GitHubHomeUrl,
+    [property: JsonPropertyName("html_url")] Uri GitHubHomeUrl,
     Uri Homepage,
     int Watchers,
-    DateTime LastPushUtc
-)
+    [property: JsonPropertyName("pushed_at")] DateTime LastPushUtc
+    )
 {
     public DateTime LastPush => LastPushUtc.ToLocalTime();
 }

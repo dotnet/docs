@@ -162,6 +162,10 @@ items:
                 href: sdk/10.0/prune-packagereference-privateassets.md
               - name: Version requirements for .NET 10 SDK
                 href: sdk/10.0/version-requirements.md
+          - name: Serialization
+            items:
+              - name: XmlSerializer no longer ignores properties marked with ObsoleteAttribute
+                href: serialization/10/xmlserializer-obsolete-properties.md
           - name: Windows Forms
             items:
               - name: API obsoletions

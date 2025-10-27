@@ -37,7 +37,7 @@ There are two primary ways to publish an app. Some factors that influence this d
 This mode produces a publishing folder that includes a platform-specific executable used to start the app, a compiled binary containing app code, any app dependencies, and the .NET runtime required to run the app. The environment that runs the app doesn't need to have the .NET runtime preinstalled.
 
 - **Publish framework-dependent**\
-This mode produces a publishing folder that includes a platform-specific executable used to start the app, a compiled binary containing app code, and any app dependencies. The environment that runs the app must have a version of the .NET runtime installed that the app can use. An optional platform-specific executable can be produced.
+This mode produces a publishing folder that includes an optional platform-specific executable used to start the app, a compiled binary containing app code, and any app dependencies. The environment that runs the app must have a version of the .NET runtime installed that the app can use.
 
 > [!IMPORTANT]
 > You specify the target platform with a runtime identifier (RID). For more information about RIDs, see [.NET RID Catalog](../rid-catalog.md).
@@ -68,7 +68,7 @@ In Visual Studio, create separate publishing profiles for each target framework.
 
 ### Portable binaries
 
-When you publish a .NET app, you can target a specific platform or create a portable binary. By default, even when creating a portable binary, .NET publishes a platform-specific executable alongside the portable DLL unless you explicitly disable this behavior.
+When you publish a .NET app, you can target a specific platform or create a portable binary. By default, even when creating a portable binary, .NET publishes a platform-specific executable ("apphost") alongside the portable DLL unless you explicitly disable this behavior.
 
 The platform-specific executable is created because of the `UseAppHost` property, which defaults to `true`. To publish only the portable DLL without the platform-specific executable, set `UseAppHost` to `false` either on the command line (`-p:UseAppHost=false`) or as a [project property](../project-sdk/msbuild-props.md#useapphost).
 
@@ -127,7 +127,7 @@ The following table provides quick examples of how to publish your app.
 
 ## Framework-dependent deployment
 
-Framework-dependent deployment is the default mode when you publish from either the CLI or Visual Studio. In this mode, a platform-specific executable host is created to host your cross-platform app. The host executable filename varies per platform and is named something similar to `<PROJECT-FILE>.exe`. You can run this executable directly instead of calling `dotnet <PROJECT-FILE>.dll`, which is still an acceptable way to run the app.
+Framework-dependent deployment is the default mode when you publish from either the CLI or Visual Studio. In this mode, a platform-specific executable is created that can be used to start your app. The platform-specific executable is named something similar to `myapp.exe` on Windows or just `myapp` on other platforms.
 
 Your app is configured to target a specific version of .NET. That targeted .NET runtime is required to be on the environment where your app runs. For example, if your app targets .NET 9, any environment that your app runs on must have the .NET 9 runtime installed.
 
@@ -143,6 +143,15 @@ Publishing a framework-dependent deployment creates an app that automatically ro
 
 - **Requires pre-installing the runtime**: The app can run only if the version of .NET it targets is already installed in the environment.
 - **.NET might change**: The environment where the app is run might use a newer .NET runtime, which could change app behavior.
+
+### Launch framework-dependent apps
+
+There are two ways to run framework-dependent apps: through the platform-specific executable ("apphost") and via `dotnet myapp.dll`. You can run the apphost executable directly instead of calling `dotnet myapp.dll`, which is still an acceptable way to run the app. Whenever possible, it's recommended to use the apphost. There are a number of advantages to using the apphost:
+
+- Executables appear like standard native platform executables.
+- Executable names are preserved in the process names, meaning apps can be easily recognized based on their names.
+- Because the apphost is a native binary, native assets like manifests can be attached to them.
+- Apphost has available low-level security mitigations applied by default that makes it more secure. For example, Control-flow Enforcement Technology (CET) shadow stack is enabled by default starting with .NET 9. Mitigations applied to `dotnet` are the lowest common denominator of all supported runtimes.
 
 ### Publish
 
@@ -182,6 +191,16 @@ dotnet publish -c Release [-r <RID>] --self-contained false
 
 ### Configure .NET install search behavior
 
+By default, the apphost discovers and uses a globally installed .NET runtime, with install locations varying by platform. For more information about runtime discovery and install locations, see [Troubleshoot app launch failures](../runtime-discovery/troubleshoot-app-launch.md).
+
+The .NET runtime path can also be customized on a per-execution basis. The `DOTNET_ROOT` environment variable can be used to point to the custom location. For more information about all `DOTNET_ROOT` configuration options, see [.NET environment variables](../tools/dotnet-environment-variables.md).
+
+In general, the best practice for using `DOTNET_ROOT` is to:
+
+1. Clear `DOTNET_ROOT` environment variables first, meaning all environment variables that start with the text `DOTNET_ROOT`.
+1. Set `DOTNET_ROOT`, and only `DOTNET_ROOT`, to the target path.
+1. Execute the target apphost.
+
 In .NET 9 and later versions, you can configure the .NET installation search paths of the published executable via the [`AppHostDotNetSearch`](../project-sdk//msbuild-props.md#apphostdotnetsearch) and [`AppHostRelativeDotNet`](../project-sdk//msbuild-props.md#apphostrelativedotnet) properties.
 
 `AppHostDotNetSearch` allows specifying one or more locations where the executable will look for a .NET installation:
@@ -197,7 +216,7 @@ For more information, see [`AppHostDotNetSearch`](../project-sdk//msbuild-props.
 
 ### Cross-platform DLL deployment
 
-Alternatively, you can publish your app as a cross-platform DLL without a platform-specific executable. In this mode, a `<PROJECT-NAME>.dll` file is created in the publish output folder. To run your app, navigate to the output folder and use the `dotnet <PROJECT-NAME>.dll` command.
+Alternatively, you can publish your app as a cross-platform DLL without a platform-specific executable. In this mode, a `myapp.dll` file is created in the publish output folder. To run your app, navigate to the output folder and use the `dotnet myapp.dll` command.
 
 To publish as a cross-platform DLL:
 

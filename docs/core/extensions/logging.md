@@ -239,7 +239,7 @@ For more information on setting .NET configuration values using environment vari
 
 ### Configure logging with code
 
-To configure logging in code, use the <xref:Microsoft.Extensions.Logging.ILoggingBuilder> API. Access it from different places:
+To configure logging in code, use the <xref:Microsoft.Extensions.Logging.ILoggingBuilder> API. You can access it from different places:
 
 - When creating the `ILoggerFactory` directly, configure in <xref:Microsoft.Extensions.Logging.LoggerFactory.Create%2A?displayProperty=nameWithType>.
 - When using DI without a host, configure in <xref:Microsoft.Extensions.DependencyInjection.LoggingServiceCollectionExtensions.AddLogging%2A?displayProperty=nameWithType>.

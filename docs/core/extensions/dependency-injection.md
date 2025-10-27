@@ -12,7 +12,7 @@ ai-usage: ai-assisted
 
 .NET supports the dependency injection (DI) software design pattern, which is a technique for achieving [Inversion of Control (IoC)](../../architecture/modern-web-apps-azure/architectural-principles.md#dependency-inversion) between classes and their dependencies. Dependency injection in .NET is a built-in part of the framework, along with configuration, logging, and the options pattern.
 
-A *dependency* is an object that another object depends on. Examine this `MessageWriter` class with a `Write` method that other classes depend on:
+A *dependency* is an object that another object depends on. Examine the following `MessageWriter` class with a `Write` method that other classes depend on:
 
 ```csharp
 public class MessageWriter
@@ -24,7 +24,7 @@ public class MessageWriter
 }
 ```
 
-A class can create an instance of the `MessageWriter` class to use its `Write` method. In this example, the `MessageWriter` class is a dependency of the `Worker` class:
+A class can create an instance of the `MessageWriter` class to use its `Write` method. In the following example, the `MessageWriter` class is a dependency of the `Worker` class:
 
 ```csharp
 public class Worker : BackgroundService
@@ -42,13 +42,13 @@ public class Worker : BackgroundService
 }
 ```
 
-The class creates and directly depends on the `MessageWriter` class. Hard-coded dependencies, such as in the previous example, are problematic and should be avoided for these reasons:
+The class creates and directly depends on the `MessageWriter` class. Hard-coded dependencies, such as in the previous example, are problematic and should be avoided for the following reasons:
 
 - To replace `MessageWriter` with a different implementation, you must modify the `Worker` class.
 - If `MessageWriter` has dependencies, the `Worker` class must also configure them. In a large project with multiple classes depending on `MessageWriter`, the configuration code becomes scattered across the app.
 - This implementation is difficult to unit test. The app should use a mock or stub `MessageWriter` class, which isn't possible with this approach.
 
-Dependency injection addresses these problems through:
+Dependency injection addresses the following problems through:
 
 - The use of an interface or base class to abstract the dependency implementation.
 - Registration of the dependency in a service container. .NET provides a built-in service container, <xref:System.IServiceProvider>. Services are typically registered at the app's start-up and appended to an <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>. Once all services are added, use <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider%2A> to create the service container.
@@ -150,9 +150,9 @@ public class ExampleService
 }
 ```
 
-In the preceding code, assume that logging is added and is resolvable from the service provider but the `FooService` and `BarService` types aren't. The constructor with the `ILogger<ExampleService>` parameter resolves the `ExampleService` instance. Even though there's a constructor that defines more parameters, the `FooService` and `BarService` types aren't DI-resolvable.
+In the preceding code, assume that logging has been added and is resolvable from the service provider but the `FooService` and `BarService` types aren't. The constructor with the `ILogger<ExampleService>` parameter resolves the `ExampleService` instance. Even though there's a constructor that defines more parameters, the `FooService` and `BarService` types aren't DI-resolvable.
 
-If there's ambiguity when discovering constructors, an exception is thrown. Consider this C# example service:
+If there's ambiguity when discovering constructors, an exception is thrown. Consider the following C# example service:
 
 ```csharp
 public class ExampleService
@@ -325,7 +325,7 @@ services.AddSingleton<IMessageWriter, ConsoleMessageWriter>();
 services.TryAddSingleton<IMessageWriter, LoggingMessageWriter>();
 ```
 
-The `TryAddSingleton` has no effect, as it was already added and the "try" fails. The `ExampleService` asserts this:
+The `TryAddSingleton` has no effect, as it was already added and the "try" fails. The `ExampleService` asserts the following:
 
 ```csharp
 public class ExampleService
@@ -349,7 +349,7 @@ For more information, see:
 
 The [TryAddEnumerable(ServiceDescriptor)](xref:Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions.TryAddEnumerable%2A) methods register the service only if there isn't already an implementation *of the same type*. Multiple services are resolved via `IEnumerable<{SERVICE}>`. When registering services, add an instance if one of the same types wasn't already added. Library authors use `TryAddEnumerable` to avoid registering multiple copies of an implementation in the container.
 
-In this example, the first call to `TryAddEnumerable` registers `MessageWriter` as an implementation for `IMessageWriter1`. The second call registers `MessageWriter` for `IMessageWriter2`. The third call has no effect because `IMessageWriter1` already has a registered implementation of `MessageWriter`:
+In the following example, the first call to `TryAddEnumerable` registers `MessageWriter` as an implementation for `IMessageWriter1`. The second call registers `MessageWriter` for `IMessageWriter2`. The third call has no effect because `IMessageWriter1` already has a registered implementation of `MessageWriter`:
 
 ```csharp
 public interface IMessageWriter1 { }
@@ -366,7 +366,7 @@ services.TryAddEnumerable(ServiceDescriptor.Singleton<IMessageWriter1, MessageWr
 
 Service registration is order-independent except when registering multiple implementations of the same type.
 
-`IServiceCollection` is a collection of <xref:Microsoft.Extensions.DependencyInjection.ServiceDescriptor> objects. This example shows how to register a service by creating and adding a `ServiceDescriptor`:
+`IServiceCollection` is a collection of <xref:Microsoft.Extensions.DependencyInjection.ServiceDescriptor> objects. The following example shows how to register a service by creating and adding a `ServiceDescriptor`:
 
 ```csharp
 string secretKey = Configuration["SecretKey"];

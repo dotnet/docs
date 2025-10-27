@@ -36,12 +36,12 @@ The library is available as a NuGet package: [System.CommandLine](https://www.nu
 
 ## Next steps
 
-To get started with System.CommandLine, see these resources:
+To get started with System.CommandLine, see the following resources:
 
 - [Tutorial: Get started with System.CommandLine](get-started-tutorial.md)
 - [Syntax overview: commands, options, and arguments](syntax.md)
 
-To learn more, see these resources:
+To learn more, see the following resources:
 
 - [How to parse and invoke the result](how-to-parse-and-invoke.md)
 - [How to customize parsing and validation](how-to-customize-parsing-and-validation.md)

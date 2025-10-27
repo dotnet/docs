@@ -5,11 +5,10 @@ ms.date: 10/23/2025
 ai-usage: ai-assisted
 ms.custom: devdivchpfy22
 titleSuffix: ""
-ai-usage: ai-assisted
 ---
 # Learn .NET and the .NET SDK tools by exploring these tutorials
 
-These tutorials show how to develop console apps and libraries for .NET Core, .NET 5, and later versions. For other types of applications, see [Tutorials for getting started with .NET](../../standard/get-started.md).
+The following tutorials show how to develop console apps and libraries for .NET Core, .NET 5, and later versions. For other types of applications, see [Tutorials for getting started with .NET](../../standard/get-started.md).
 
 ## Use Visual Studio
 

@@ -51,7 +51,7 @@ The following list summarizes important CLR memory concepts:
   | Reserved | The block of memory is available for your use and can't be used for any other allocation request. However, you can't store data to this memory block until it's committed. |
   | Committed | The block of memory is assigned to physical storage. |
 
-- Virtual address space can get fragmented, which means that there are free blocks known as holes in the address space. When a virtual memory allocation is requested, the virtual memory manager has to find a single free block that is large enough to satisfy the allocation request. Even if you have 2 GB of free space, an allocation that requires 2 GB is unsuccessful unless all of that free space is in a single address block.
+- Virtual address space can get fragmented, which means that there are free blocks known as holes in the address space. When a virtual memory allocation is requested, the virtual memory manager has to find a single free block that is large enough to satisfy the allocation request. Even if you have 2 GB of free space, an allocation that requires 2 GB will be unsuccessful unless all of that free space is in a single address block.
 
 - You can run out of memory if there isn't enough virtual address space to reserve or physical space to commit.
 
@@ -59,7 +59,7 @@ The following list summarizes important CLR memory concepts:
 
 ### Memory allocation
 
-When you initialize a new process, the runtime reserves a contiguous region of address space for the process. This reserved address space is called the managed heap. The managed heap maintains a pointer to the address where the next object in the heap is allocated. Initially, this pointer is set to the managed heap's base address. All reference types are allocated on the managed heap. When an application creates the first reference type, memory is allocated for the type at the base address of the managed heap. When the application creates the next object, the runtime allocates memory for it in the address space immediately following the first object. As long as address space is available, the runtime continues to allocate space for new objects in this manner.
+When you initialize a new process, the runtime reserves a contiguous region of address space for the process. This reserved address space is called the managed heap. The managed heap maintains a pointer to the address where the next object in the heap will be allocated. Initially, this pointer is set to the managed heap's base address. All reference types are allocated on the managed heap. When an application creates the first reference type, memory is allocated for the type at the base address of the managed heap. When the application creates the next object, the runtime allocates memory for it in the address space immediately following the first object. As long as address space is available, the runtime continues to allocate space for new objects in this manner.
 
 Allocating memory from the managed heap is faster than unmanaged memory allocation. Because the runtime allocates memory for an object by adding a value to a pointer, it's almost as fast as allocating memory from the stack. In addition, because new objects that are allocated consecutively are stored contiguously in the managed heap, an application can access the objects quickly.
 

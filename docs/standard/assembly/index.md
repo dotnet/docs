@@ -83,7 +83,7 @@ Assemblies contain information about content, versioning, and dependencies. So t
 To use an assembly in an application, you must add a reference to it. When an assembly is referenced, all the accessible types, properties, methods, and other members of its namespaces are available to your application as if their code were part of your source file.
 
 > [!NOTE]
-> Most assemblies from the .NET Class Library are referenced automatically. If a system assembly isn't automatically referenced, add a reference in one of these ways:
+> Most assemblies from the .NET Class Library are referenced automatically. If a system assembly isn't automatically referenced, add a reference in one of the following ways:
 >
 > - For .NET and .NET Core, add a reference to the NuGet package that contains the assembly. Either use the NuGet Package Manager in Visual Studio or add a [\<PackageReference>](../../core/tools/dependencies.md#the-packagereference-element) element for the assembly to the *.csproj* or *.vbproj* project.
 > - For .NET Framework, add a reference to the assembly using the **Add Reference** dialog in Visual Studio or the `-reference` command line option for the [C#](../../csharp/language-reference/compiler-options/inputs.md#references) or [Visual Basic](../../visual-basic/reference/command-line-compiler/reference.md) compilers.

@@ -66,7 +66,7 @@ Microsoft Extensions include the following logging providers as part of the runt
 - [EventSource](#event-source)
 - [EventLog](#windows-eventlog)
 
-The following logging providers are shipped by Microsoft, but not as part of the runtime libraries. They must be installed like NuGet packages.
+The following logging providers are shipped by Microsoft, but not as part of the runtime libraries. They must be installed from NuGet packages.
 
 - [AzureAppServicesFile and AzureAppServicesBlob](#azure-app-service)
 - [ApplicationInsights](#azure-application-insights)
@@ -83,7 +83,7 @@ The `Debug` provider writes log output by using the <xref:System.Diagnostics.Deb
 
 The `EventSource` provider writes to a cross-platform event source with the name `Microsoft-Extensions-Logging`. On Windows, the provider uses [ETW](/windows/win32/etw/event-tracing-portal).
 
-#### Dotnet trace tooling
+#### dotnet trace tooling
 
 The [dotnet-trace](../diagnostics/dotnet-trace.md) tool is a cross-platform CLI global tool that enables the collection of .NET Core traces of a running process. The tool collects <xref:Microsoft.Extensions.Logging.EventSource> provider data using a <xref:Microsoft.Extensions.Logging.EventSource.LoggingEventSource>.
 

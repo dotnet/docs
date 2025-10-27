@@ -103,7 +103,7 @@ If you throw a `JsonException` without a message, the serializer creates a messa
 
 ```output
 Unhandled exception. System.Text.Json.JsonException:
-The JSON value couldn't be converted to System.Object.
+The JSON value could not be converted to System.Object.
 Path: $.Date | LineNumber: 1 | BytePositionInLine: 37.
 ```
 

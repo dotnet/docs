@@ -13,7 +13,7 @@ ai-usage: ai-assisted
 
 ## Get started
 
-This first example shows the basics, but it's only suitable for a trivial console app. This sample console app relies on these NuGet packages:
+This first example shows the basics, but it's only suitable for a trivial console app. This sample console app relies on the following NuGet packages:
 
 - [Microsoft.Extensions.Logging](https://www.nuget.org/packages/Microsoft.Extensions.Logging)
 - [Microsoft.Extensions.Logging.Console](https://www.nuget.org/packages/Microsoft.Extensions.Logging.Console)
@@ -276,7 +276,7 @@ The following algorithm is used for each provider when an `ILogger` is created f
 
 ## Log category
 
-When an `ILogger` object is created, a *category* is specified. That category is included with each log message created by that instance of `ILogger`. The category string is arbitrary, but the convention is to use the fully qualified class name. For example, in an application with a service defined like this object, the category might be `"Example.DefaultService"`:
+When an `ILogger` object is created, a *category* is specified. That category is included with each log message created by that instance of `ILogger`. The category string is arbitrary, but the convention is to use the fully qualified class name. For example, in an application with a service defined like the following object, the category might be `"Example.DefaultService"`:
 
 ```csharp
 namespace Example
@@ -439,7 +439,7 @@ Parameter values: param1, param2
 > [!NOTE]
 > Be mindful when using multiple placeholders within a single message template, as they're ordinal-based. The names aren't used to align the arguments to the placeholders.
 
-This approach lets logging providers implement [semantic or structured logging](https://github.com/NLog/NLog/wiki/How-to-use-structured-logging). The arguments themselves are passed to the logging system, not just the formatted message template. This enables logging providers to store the parameter values as fields. Consider this logger method:
+This approach lets logging providers implement [semantic or structured logging](https://github.com/NLog/NLog/wiki/How-to-use-structured-logging). The arguments themselves are passed to the logging system, not just the formatted message template. This enables logging providers to store the parameter values as fields. Consider the following logger method:
 
 ```csharp
 _logger.LogInformation("Getting item {Id} at {RunTime}", id, DateTime.Now);
@@ -452,7 +452,7 @@ For example, when logging to Azure Table Storage:
 
 ### Log message template formatting
 
-Log message templates support placeholder formatting. Templates can specify [any valid format](../../standard/base-types/formatting-types.md) for the given type argument. For example, consider this `Information` logger message template:
+Log message templates support placeholder formatting. Templates can specify [any valid format](../../standard/base-types/formatting-types.md) for the given type argument. For example, consider the following `Information` logger message template:
 
 ```csharp
 _logger.LogInformation("Logged on {PlaceHolderName:MMMM dd, yyyy}", DateTimeOffset.UtcNow);
@@ -465,7 +465,7 @@ For more information on `DateTime` and `DateTimeOffset` formatting, see [Custom 
 
 #### Examples
 
-These examples show how to format a message template using the `{}` placeholder syntax. Additionally, an example of escaping the `{}` placeholder syntax is shown with its output. Finally, string interpolation with templating placeholders is also shown:
+The following examples show how to format a message template using the `{}` placeholder syntax. Additionally, an example of escaping the `{}` placeholder syntax is shown with its output. Finally, string interpolation with templating placeholders is also shown:
 
 ```csharp
 logger.LogInformation("Number: {Number}", 1);               // Number: 1
@@ -507,7 +507,7 @@ Exception logging is provider-specific.
 
 If the default log level isn't set, the default log level value is `Information`.
 
-For example, consider this worker service app:
+For example, consider the following worker service app:
 
 - Created with the .NET Worker templates.
 - *appsettings.json* and *appsettings.Development.json* deleted or renamed.
@@ -629,7 +629,7 @@ The preceding code relies on two NuGet packages:
 - [Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting)
 - [Microsoft.Extensions.Logging](https://www.nuget.org/packages/Microsoft.Extensions.Logging)
 
-Its project file looks similar to this:
+Its project file looks similar to the following:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">

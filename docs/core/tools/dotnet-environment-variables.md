@@ -188,6 +188,9 @@ Specifies the absolute path to a `dotnet` host (`dotnet.exe` on Windows, `dotnet
 Starting in Visual Studio 2026, MSBuild in Visual Studio _also_ ensures that `DOTNET_HOST_PATH` is set for all builds of .NET SDK projects. For greatest consistency, all MSBuild tools and logic that want to use _the same dotnet binary_ as the one that spawned the build should rely on
 `DOTNET_HOST_PATH` and should consider emitting a diagnostic (warning or error) when the variable is not present.
 
+> [!NOTE]
+> `DOTNET_HOST_PATH` is not a general solution for locating the `dotnet` host. It is only intended to be used by binaries and tools that are invoked by the .NET SDK or MSBuild.
+
 ### `DOTNET_LAUNCH_PROFILE`
 
 The [dotnet run](dotnet-run.md) command sets this variable to the selected launch profile.

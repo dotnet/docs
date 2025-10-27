@@ -1,7 +1,7 @@
 ---
 title: Quickstart - Create a minimal MCP server and publish to NuGet
 description: Learn to create and connect to a minimal MCP server using C# and publish it to NuGet.
-ms.date: 07/02/2025
+ms.date: 10/20/2025
 ms.topic: quickstart
 author: alexwolfmsft
 ms.author: alexwolf
@@ -23,7 +23,7 @@ In this quickstart, you create a minimal Model Context Protocol (MCP) server usi
 
 ## Create the project
 
-1. In a terminal window, install the MCP Server template (version 9.7.0-preview.2.25356.2 or newer):
+1. In a terminal window, install the MCP Server template (version 9.10.0-preview.3.25513.3 or newer):
 
    ```bash
    dotnet new install Microsoft.Extensions.AI.Templates
@@ -34,6 +34,8 @@ In this quickstart, you create a minimal Model Context Protocol (MCP) server usi
    ```bash
    dotnet new mcpserver -n SampleMcpServer
    ```
+
+   By default, this command creates a self-contained tool package targeting all of the most common platforms that .NET is supported on. To see more options, use `dotnet new mcpserver --help`.
 
 1. Navigate to the `SampleMcpServer` directory:
 
@@ -125,7 +127,7 @@ In this example, you enhance the MCP server to use a configuration value set in 
           "args": [
             "run",
             "--project",
-            "<RELATIVE PATH TO PROJECT DIRECTORY>"
+            "<relative-path-to-project-file>"
           ],
           "env": {
              "WEATHER_CHOICES": "sunny,humid,freezing"
@@ -145,13 +147,13 @@ In this example, you enhance the MCP server to use a configuration value set in 
 
 1. Update the `.mcp/server.json` to declare your environment variable input. The `server.json` file schema is defined by the [MCP Registry project](https://github.com/modelcontextprotocol/registry/blob/main/docs/reference/server-json/generic-server-json.md) and is used by NuGet.org to generate VS Code MCP configuration.
 
-   - Use the `environment_variables` property to declare environment variables used by your app that will be set by the client using the MCP server (for example, VS Code).
+   - Use the `environmentVariables` property to declare environment variables used by your app that will be set by the client using the MCP server (for example, VS Code).
 
-   - Use the `package_arguments` property to define CLI arguments that will be passed to your app. For more examples, see the [MCP Registry project](https://github.com/modelcontextprotocol/registry/blob/main/docs/reference/server-json/generic-server-json.md#examples).
+   - Use the `packageArguments` property to define CLI arguments that will be passed to your app. For more examples, see the [MCP Registry project](https://github.com/modelcontextprotocol/registry/blob/main/docs/reference/server-json/generic-server-json.md#examples).
 
    :::code language="json" source="snippets/mcp-server/.mcp/server.json":::
 
-   The only information used by NuGet.org in the `server.json` is the first `packages` array item with the `registry_name` value matching `nuget`. The other top-level properties aside from the `packages` property are currently unused and are intended for the upcoming central MCP Registry. You can leave the placeholder values until the MCP Registry is live and ready to accept MCP server entries.
+   The only information used by NuGet.org in the `server.json` is the first `packages` array item with the `registryType` value matching `nuget`. The other top-level properties aside from the `packages` property are currently unused and are intended for the upcoming central MCP Registry. You can leave the placeholder values until the MCP Registry is live and ready to accept MCP server entries.
 
 You can [test your MCP server again](#test-the-mcp-server) before moving forward.
 
@@ -163,11 +165,15 @@ You can [test your MCP server again](#test-the-mcp-server) before moving forward
     dotnet pack -c Release
     ```
 
-1. Publish the package to NuGet:
+    This command produces one tool package and several platform-specific packages based on the `<RuntimeIdentifiers>` list in `SampleMcpServer.csproj`.
+
+1. Publish the packages to NuGet:
 
     ```bash
     dotnet nuget push bin/Release/*.nupkg --api-key <your-api-key> --source https://api.nuget.org/v3/index.json
     ```
+
+    Be sure to publish all `.nupkg` files to ensure every supported platform can run the MCP server.
 
     If you want to test the publishing flow before publishing to NuGet.org, you can register an account on the NuGet Gallery integration environment: [https://int.nugettest.org](https://int.nugettest.org). The `push` command would be modified to:
 

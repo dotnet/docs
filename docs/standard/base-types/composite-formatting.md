@@ -1,7 +1,7 @@
 ---
 title: Composite formatting
 description: Learn about .NET composite formatting, which takes as input a list of objects and a composite format string, containing fixed text with indexed placeholders.
-ms.date: 08/07/2023
+ms.date: 10/22/2025
 ms.topic: concept-article
 dev_langs:
   - "csharp"
@@ -13,6 +13,7 @@ helpviewer_keywords:
   - "strings [.NET], composite"
   - "composite formatting"
   - "objects [.NET], formatting multiple objects"
+ai-usage: ai-assisted
 ---
 # Composite formatting
 
@@ -124,7 +125,7 @@ The way escaped braces are interpreted can lead to unexpected results. For examp
 
 1. The first two opening braces (`{{`) are escaped and yield one opening brace.
 1. The next three characters (`{0:`) are interpreted as the start of a format item.
-1. The next character (`D`) would be interpreted as the Decimal standard numeric format specifier, but the next two escaped braces (`}}`) yield a single brace. Because the resulting string (`D}`) isn't a standard numeric format specifier, the resulting string is interpreted as a custom format string that means display the literal string `D}`.
+1. The next character (`D`) is interpreted as the Decimal standard numeric format specifier, but the next two escaped braces (`}}`) yield a single brace. Because the resulting string (`D}`) isn't a standard numeric format specifier, the resulting string is interpreted as a custom format string that means display the literal string `D}`.
 1. The last brace (`}`) is interpreted as the end of the format item.
 1. The final result that's displayed is the literal string, `{D}`. The numeric value that was to be formatted isn't displayed.
 

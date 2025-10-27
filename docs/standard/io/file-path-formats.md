@@ -1,7 +1,7 @@
 ---
 title: "File path formats on Windows systems"
 description: In this article, learn about file path formats on Windows systems, such as traditional DOS paths, DOS device paths, and universal naming convention (UNC) paths.
-ms.date: "06/06/2019"
+ms.date: "10/22/2025"
 dev_langs:
   - "csharp"
   - "vb"
@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "I/O, long paths"
   - "long paths"
   - "path formats, Windows"
+ai-usage: ai-assisted
 ---
 # File path formats on Windows systems
 
@@ -36,7 +37,7 @@ If all three components are present, the path is absolute. If no volume or drive
 > [!IMPORTANT]
 > Note the difference between the last two paths. Both specify the optional volume specifier (`C:` in both cases), but the first begins with the root of the specified volume, whereas the second does not. As result, the first is an absolute path from the root directory of drive `C:`, whereas the second is a relative path from the current directory of drive `C:`. Use of the second form when the first is intended is a common source of bugs that involve Windows file paths.
 
-You can determine whether a file path is fully qualified (that is, if the path is independent of the current directory and does not change when the current directory changes) by calling the <xref:System.IO.Path.IsPathFullyQualified%2A?displayProperty=nameWithType> method. Note that such a path can include relative directory segments (`.` and `..`) and still be fully qualified if the resolved path always points to the same location.
+You can determine whether a file path is fully qualified (that is, if the path is independent of the current directory and doesn't change when the current directory changes) by calling the <xref:System.IO.Path.IsPathFullyQualified%2A?displayProperty=nameWithType> method. Note that such a path can include relative directory segments (`.` and `..`) and still be fully qualified if the resolved path always points to the same location.
 
 The following example illustrates the difference between absolute and relative paths. It assumes that the directory `D:\FY2018\` exists, and that you haven't set any current directory for `D:\` from the command prompt before running the example.
 
@@ -94,7 +95,7 @@ The DOS device path consists of the following components:
 
     For device UNCs, the server/share portion forms the volume. For example, in `\\?\server1\utilities\\filecomparer\`, the server/share portion is `server1\utilities`. This is significant when calling a method such as <xref:System.IO.Path.GetFullPath(System.String,System.String)?displayProperty=nameWithType> with relative directory segments; it is never possible to navigate past the volume.
 
-DOS device paths are fully qualified by definition and cannot begin with a relative directory segment (`.` or `..`). Current directories never enter into their usage.
+DOS device paths are fully qualified by definition and can't begin with a relative directory segment (`.` or `..`). Current directories never enter into their usage.
 
 ## Example: Ways to refer to the same file
 
@@ -137,11 +138,11 @@ Prior to Windows 11, a path that begins with a legacy device name is always inte
 
 ### Apply the current directory
 
-If a path isn't fully qualified, Windows applies the current directory to it. UNCs and device paths do not have the current directory applied. Neither does a full drive with separator `C:\`.
+If a path isn't fully qualified, Windows applies the current directory to it. UNCs and device paths don't have the current directory applied. Neither does a full drive with separator `C:\`.
 
 If the path starts with a single component separator, the drive from the current directory is applied. For example, if the file path is `\utilities` and the current directory is `C:\temp\`, normalization produces `C:\utilities`.
 
-If the path starts with a drive letter, volume separator, and no component separator, the last current directory set from the command shell for the specified drive is applied. If the last current directory was not set, the drive alone is applied. For example, if the file path is `D:sources`, the current directory is `C:\Documents\`, and the last current directory on drive D: was `D:\sources\`, the result is `D:\sources\sources`. These "drive relative" paths are a common source of program and script logic errors. Assuming that a path beginning with a letter and a colon isn't relative is obviously not correct.
+If the path starts with a drive letter, volume separator, and no component separator, the last current directory set from the command shell for the specified drive is applied. If the last current directory wasn't set, the drive alone is applied. For example, if the file path is `D:sources`, the current directory is `C:\Documents\`, and the last current directory on drive D: was `D:\sources\`, the result is `D:\sources\sources`. These "drive relative" paths are a common source of program and script logic errors. Assuming that a path beginning with a letter and a colon isn't relative is obviously not correct.
 
 If the path starts with something other than a separator, the current drive and current directory are applied. For example, if the path is `filecompare` and the current directory is `C:\utilities\`, the result is `C:\utilities\filecompare\`.
 
@@ -169,7 +170,7 @@ As the path is processed, any components or segments that are composed of a sing
 
 Along with the runs of separators and relative segments removed earlier, some additional characters are removed during normalization:
 
-- If a segment ends in a single period, that period is removed. (A segment of a single or double period is normalized in the previous step. A segment of three or more periods is not normalized and is actually a valid file/directory name.)
+- If a segment ends in a single period, that period is removed. (A segment of a single or double period is normalized in the previous step. A segment of three or more periods isn't normalized and is actually a valid file/directory name.)
 
 - If the path doesn't end in a separator, all trailing periods and spaces (U+0020) are removed. If the last segment is simply a single or double period, it falls under the relative components rule above.
 
@@ -191,7 +192,7 @@ Why would you want to skip normalization? There are three major reasons:
 1. On .NET Framework only, to skip the `MAX_PATH` check for path length to allow for paths that are greater than 259 characters. Most APIs allow this, with some exceptions.
 
 > [!NOTE]
-> .NET Core and .NET 5+ handles long paths implicitly and does not perform a `MAX_PATH` check. The `MAX_PATH` check applies only to .NET Framework.
+> .NET Core and .NET 5+ handles long paths implicitly and doesn't perform a `MAX_PATH` check. The `MAX_PATH` check applies only to .NET Framework.
 
 Skipping normalization and max path checks is the only difference between the two device path syntaxes; they are otherwise identical. Be careful with skipping normalization, since you can easily create paths that are difficult for "normal" applications to deal with.
 

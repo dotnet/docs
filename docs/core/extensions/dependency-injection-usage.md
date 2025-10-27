@@ -3,9 +3,10 @@ title: Use dependency injection
 description: Learn how to use dependency injection in your .NET apps with this comprehensive tutorial. Follow along with this pragmatic guide to understand DI in C#.
 author: IEvangelist
 ms.author: dapine
-ms.date: 07/18/2024
+ms.date: 10/22/2025
 ms.topic: tutorial
 no-loc: [Transient, Scoped, Singleton, Example]
+ai-usage: ai-assisted
 ---
 
 # Tutorial: Use dependency injection in .NET
@@ -39,7 +40,7 @@ Your new console app project file should resemble the following:
 
 ## Add interfaces
 
-In this sample app, you'll learn how dependency injection handles service lifetime. You'll create several interfaces that represent different service lifetimes. Add the following interfaces to the project root directory:
+In this sample app, you learn how dependency injection handles service lifetime. You create several interfaces that represent different service lifetimes. Add the following interfaces to the project root directory:
 
 *IReportServiceLifetime.cs*
 
@@ -80,7 +81,7 @@ The example implementations all initialize their `Id` property with the result o
 
 :::code source="snippets/configuration/console-di/ExampleSingletonService.cs":::
 
-Each implementation is defined as `internal sealed` and implements its corresponding interface. They're not required to be `internal` or `sealed`, however, it's common to treat implementations as `internal` to avoid leaking implementation types to external consumers. Furthermore, since each type will not be extended, it's marked as `sealed`.  For example, `ExampleSingletonService` implements `IExampleSingletonService`.
+Each implementation is defined as `internal sealed` and implements its corresponding interface. They're not required to be `internal` or `sealed`, however, it's common to treat implementations as `internal` to avoid leaking implementation types to external consumers. Furthermore, since each type isn't extended, it's marked as `sealed`. For example, `ExampleSingletonService` implements `IExampleSingletonService`.
 
 ## Add a service that requires DI
 
@@ -100,7 +101,7 @@ Update *Program.cs* with the following code:
 
 Each `services.Add{LIFETIME}<{SERVICE}>` extension method adds (and potentially configures) services. We recommend that apps follow this convention. Don't place extension methods in the <xref:Microsoft.Extensions.DependencyInjection?displayProperty=fullName> namespace unless you're authoring an official Microsoft package. Extension methods that are defined within the `Microsoft.Extensions.DependencyInjection` namespace:
 
-- Are displayed in [IntelliSense](/visualstudio/ide/using-intellisense) without requiring additional `using` directives.
+- Are displayed in [IntelliSense](/visualstudio/ide/using-intellisense) without requiring more `using` directives.
 - Reduce the number of required `using` directives in the `Program` or `Startup` classes where these extension methods are typically called.
 
 The app:
@@ -120,9 +121,9 @@ When you run the app, it displays output similar to the following:
 
 From the app output, you can see that:
 
-- Transient services are always different, a new instance is created with every retrieval of the service.
+- Transient services are always different. A new instance is created with every retrieval of the service.
 - Scoped services change only with a new scope, but are the same instance within a scope.
-- Singleton services are always the same, a new instance is only created once.
+- Singleton services are always the same. A new instance is only created once.
 
 ## See also
 

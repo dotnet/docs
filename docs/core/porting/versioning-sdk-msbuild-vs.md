@@ -4,7 +4,7 @@ description: Learn about the versioning relationship between the .NET SDK and MS
 author: StephenBonikowsky
 ms.author: stebon
 ms.custom: updateeachrelease
-ms.date: 10/08/2025
+ms.date: 10/23/2025
 ---
 # .NET SDK, MSBuild, and Visual Studio versioning
 
@@ -62,15 +62,16 @@ The support timeframe for the SDK typically matches that of the Visual Studio ve
 | 9.0.1xx     | 17.12                         | Nov '24   | May '26             |
 | 9.0.2xx     | 17.13                         | Feb '25   | May '25             |
 | 9.0.3xx     | 17.14                         | May '25   | May '26             |
+| 10.0.1xx    | 18.0                          | Nov '25   | Nov '28             |
 
 > [!NOTE]
 > <sup>1</sup> .1xx .NET SDK feature bands are supported throughout the lifecycle of major .NET versions. During the extended support period, support is limited to security fixes and minimal high-priority non-security fixes for Linux only. To learn more about the reasoning for this extended support, see [Source-build support](https://github.com/dotnet/source-build#support).
 >
 > <sup>2</sup> .4xx .NET SDK feature bands are supported for the life of the matching runtime as stand-alone installs.
 >
-> [Visual Studio 2019 Lifecycle](/lifecycle/products/visual-studio-2019)
+> [Visual Studio 2019 Lifecycle](https://learn.microsoft.com/lifecycle/products/visual-studio-2019)
 >
-> [Visual Studio 2022 Lifecycle](/lifecycle/products/visual-studio-2022)
+> [Visual Studio 2022 Lifecycle](https://learn.microsoft.com/lifecycle/products/visual-studio-2022)
 
 ## Targeting and support rules
 
@@ -114,7 +115,8 @@ Major versions of the .NET SDK are typically released within a few days of a Vis
 | 10.0.100 Preview 1  | 17.14 Preview 1       |
 | 10.0.100 Preview 2  | 17.14 Preview 2       |
 | 10.0.100 Preview 3  | 17.14 Preview 3       |
-| 10.0.100 RC 2       | 17.14                 |
+| 10.0.100 RC 1       | 18.0.0 Insiders (11010.61)|
+| 10.0.100 RC 2       | 18.0.0 Insiders (11111.16)|
 
 ## Reference
 

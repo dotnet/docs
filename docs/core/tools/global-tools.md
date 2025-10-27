@@ -3,8 +3,9 @@ title: .NET tools
 description: How to install, use, update, and remove .NET tools. Covers global tools, tool-path tools, and local tools. 
 author: KathleenDollard
 ms.topic: how-to
-ms.date: 07/25/2023
+ms.date: 10/22/2025
 ms.custom: devdivchpfy22
+ai-usage: ai-assisted
 ---
 # How to manage .NET tools
 

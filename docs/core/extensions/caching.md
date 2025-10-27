@@ -262,7 +262,7 @@ Consider any of the available implementations of the `IDistributedCache` from th
 
 ### Distributed caching API
 
-The distributed caching APIs are a bit more primitive than their in-memory caching API counterparts. The key-value pairs are a bit more basic. In-memory caching keys are based on an `object`, whereas the distributed keys are a `string`. With in-memory caching, the value can be any strongly-typed generic, whereas values in distributed caching are persisted as `byte[]`. That's not to say that various implementations don't expose strongly-typed generic values but that is an implementation detail.
+The distributed caching APIs are a bit more primitive than their in-memory caching API counterparts. The key-value pairs are a bit more basic. In-memory caching keys are based on an `object`, whereas the distributed keys are a `string`. With in-memory caching, the value can be any strongly typed generic, whereas values in distributed caching are persisted as `byte[]`. That's not to say that various implementations don't expose strongly typed generic values, but that's an implementation detail.
 
 #### Create values
 

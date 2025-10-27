@@ -552,8 +552,6 @@ f1_keywords:
   - "CS9095"
   - "CS9096"
   - "CS9097"
-# C# 12 errors begin here
-  - "CS9229" # Modifiers cannot be placed on using declarations (using declarations)
 # C# 14 errors begin here
   - "CS9327"
   - "CS9328"

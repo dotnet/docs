@@ -604,6 +604,10 @@ items:
       CS0105, CS0138, CS0431, CS0432, CS0440, CS0576, CS0687, CS1529, CS1537, CS7000,
       CS7007, CS8019, CS8083, CS8085, CS8914, CS8915, CS8933, CS9055, CS9130, CS9131,
       CS9132, CS9133, CS9162, CS9163
+  - name: Using statements and declarations
+    href: ./compiler-messages/using-statement-declaration-errors.md
+    displayName: >
+      CS9229
   - name: Source generators
     href: ./compiler-messages/source-generator-errors.md
     displayName: >

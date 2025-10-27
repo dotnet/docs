@@ -172,7 +172,7 @@ A garbage collection has the following phases:
 
 - A marking phase that finds and creates a list of all live objects.
 
-- A relocating phase that updates the references to the objects that is compacted.
+- A relocating phase that updates the references to the objects that are compacted.
 
 - A compacting phase that reclaims the space occupied by the dead objects and compacts the surviving objects. The compacting phase moves objects that have survived a garbage collection towards the older end of the segment.
 

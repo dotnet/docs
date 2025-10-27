@@ -217,7 +217,7 @@ The <xref:System.IFormatProvider> interface includes one method, <xref:System.IF
 
 <xref:System.IFormatProvider.GetFormat%2A?displayProperty=nameWithType> is a callback method. When you call a `ToString` method overload that includes an <xref:System.IFormatProvider> parameter, it calls the <xref:System.IFormatProvider.GetFormat%2A> method of that <xref:System.IFormatProvider> object. The <xref:System.IFormatProvider.GetFormat%2A> method is responsible for returning an object that provides the necessary formatting information, as specified by its `formatType` parameter, to the `ToString` method.
 
-Many formatting or string conversion methods include a parameter of type <xref:System.IFormatProvider>, but in many cases the value of the parameter is ignored when the method is called. The following table lists some of the formatting methods that use the parameter and the type of the <xref:System.Type> object that they pass to the <xref:System.IFormatProvider.GetFormat%2A?displayProperty=nameWithType> method.
+Several formatting or string conversion methods include a parameter of type <xref:System.IFormatProvider>, but in many cases the value of the parameter is ignored when the method is called. The following table lists some of the formatting methods that use the parameter and the type of the <xref:System.Type> object that they pass to the <xref:System.IFormatProvider.GetFormat%2A?displayProperty=nameWithType> method.
 
 |Method|Type of `formatType` parameter|
 |------------|------------------------------------|

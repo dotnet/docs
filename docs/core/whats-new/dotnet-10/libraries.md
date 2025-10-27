@@ -269,7 +269,7 @@ This index can then be used with <xref:System.Collections.Generic.OrderedDiction
 
 :::code language="csharp" source="../snippets/dotnet-10/csharp/snippets.cs" id="snippet_getAtSetAt":::
 
-This new API is already used in <xref:System.Json.JsonObject> and improves the performance of updating properties by 10-20%.
+This new API is already used in <xref:System.Text.Json.Nodes.JsonObject> and improves the performance of updating properties by 10-20%.
 
 ## Serialization
 

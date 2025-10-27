@@ -2,6 +2,8 @@
 title: Resolve errors related to `using` statements and `using` declarations.
 description: These errors indicate an incorrect use of the `using` statement or `using` declarations. Learn about the errors and how to fix them.
 f1_keywords:
+  - "CS0245"
+  - "CS0728"
   - "CS1674"
   - "CS8410"
   - "CS8417"
@@ -11,6 +13,8 @@ f1_keywords:
   - "CS8649"
   - "CS9229"
 helpviewer_keywords:
+  - "CS0245"
+  - "CS0728"
   - "CS1674"
   - "CS8410"
   - "CS8417"
@@ -29,6 +33,8 @@ This article covers the following compiler errors:
 <!-- The text in this list generates issues for Acrolinx, because they don't use contractions.
 That's be design. The text closely matches the text of the compiler error / warning for SEO purposes.
  -->
+- [**CS0245**](#cannot-call-finalize-directly): *Destructors and object.Finalize cannot be called directly. Consider calling IDisposable.Dispose if available.*
+- [**CS0728**](#assignment-to-using-variable): *Possibly incorrect assignment to local 'variable' which is the argument to a using or lock statement. The Dispose call or unlocking will happen on the original value of the local.*
 - [**CS1674**](#type-must-be-disposable): *'T': type used in a using statement must be implicitly convertible to 'System.IDisposable'*
 - [**CS8410**](#type-must-be-async-disposable): *'type': type used in an asynchronous `using` statement must be implicitly convertible to 'System.IAsyncDisposable' or implement a suitable 'DisposeAsync' method.*
 - [**CS8417**](#async-disposable-type-used-with-using): *'type': type used in an asynchronous using statement must implement 'System.IAsyncDisposable' or implement a suitable 'DisposeAsync' method. Did you mean 'using' rather than 'await using'?*
@@ -37,6 +43,100 @@ That's be design. The text closely matches the text of the compiler error / warn
 - [**CS8648**](#goto-forward-jump-over-using-declaration): *A goto cannot jump to a location after a using declaration.*
 - [**CS8649**](#goto-backward-jump-over-using-declaration): *A goto cannot jump to a location before a using declaration within the same block.*
 - [**CS9229**](#incorrect-using-declaration): *Modifiers cannot be placed on using declarations.*
+
+## Cannot call Finalize directly
+
+- **CS0245**: *Destructors and object.Finalize cannot be called directly. Consider calling IDisposable.Dispose if available.*
+
+You cannot directly call a destructor (finalizer) or the <xref:System.Object.Finalize%2A?displayProperty=nameWithType> method. The garbage collector automatically calls finalizers when an object is no longer referenced. If you need deterministic cleanup, implement the <xref:System.IDisposable> interface and call the `Dispose` method.
+
+The following example generates CS0245:
+
+```csharp
+using System;
+
+class MyClass
+{
+    void Method()
+    {
+        this.Finalize();  // CS0245: cannot call Finalize directly
+    }
+
+    public static void Main() { }
+}
+```
+
+To correct this error, implement <xref:System.IDisposable> and call `Dispose`:
+
+```csharp
+using System;
+
+class MyClass : IDisposable
+{
+    public void Dispose()
+    {
+        // Cleanup code goes here
+        GC.SuppressFinalize(this);
+    }
+
+    void Method()
+    {
+        this.Dispose();  // Correct: call Dispose instead
+    }
+
+    public static void Main() { }
+}
+```
+
+For more information, see [Finalizers](../../programming-guide/classes-and-structs/finalizers.md) and [Implement a Dispose method](../../../standard/garbage-collection/implementing-dispose.md).
+
+## Assignment to using variable
+
+- **CS0728**: *Possibly incorrect assignment to local 'variable' which is the argument to a using or lock statement. The Dispose call or unlocking will happen on the original value of the local.*
+
+This warning indicates that you assigned a new value to a variable that is the resource in a `using` statement. The dispose call will occur on the original value, not the newly assigned value, which can lead to resource leaks.
+
+The following example generates CS0728:
+
+```csharp
+using System;
+
+public class ValidBase : IDisposable
+{
+    public void Dispose() { }
+}
+
+public class Program
+{
+    public static void Main()
+    {
+        ValidBase vb = null;
+        using (vb)
+        {
+            vb = new ValidBase();  // CS0728: assignment to using variable
+        }
+        // The Dispose call happens on null, not on the newly created ValidBase object
+    }
+}
+```
+
+To correct this error, initialize the resource in the `using` statement declaration:
+
+```csharp
+using (ValidBase vb = new ValidBase())
+{
+    // Use vb
+}
+```
+
+Or with a `using` declaration:
+
+```csharp
+using ValidBase vb = new ValidBase();
+// Use vb
+```
+
+For more information, see [using statement](../statements/using.md).
 
 ## Type must be disposable
 

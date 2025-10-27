@@ -1,22 +1,20 @@
 ---
 title: Reliability rules (code analysis)
 description: "Learn about code analysis reliability rules."
-ms.date: 11/16/2023
+ms.date: 10/27/2025
 f1_keywords:
 - vs.codeanalysis.reliabilityrules
 helpviewer_keywords:
 - rules, reliability
 - reliability rules
 - managed code analysis rules, reliability rules
-author: gewarren
-ms.author: gewarren
 ---
 # Reliability rules
 
 Reliability rules support library and application reliability, such as correct memory and thread usage. The reliability rules include:
 
-|Rule|Description|
-|----------|-----------------|
+| Rule | Description |
+|------|-------------|
 | [CA2000: Dispose objects before losing scope](ca2000.md) | Because an exceptional event might occur that will prevent the finalizer of an object from running, the object should be explicitly disposed before all references to it are out of scope. |
 | [CA2002: Do not lock on objects with weak identity](ca2002.md) | An object is said to have a weak identity when it can be directly accessed across application domain boundaries. A thread that tries to acquire a lock on an object that has a weak identity can be blocked by a second thread in a different application domain that has a lock on the same object. |
 | [CA2007: Do not directly await a Task](ca2007.md) | An asynchronous method [awaits](../../../csharp/language-reference/operators/await.md) a <xref:System.Threading.Tasks.Task> directly. |
@@ -34,5 +32,6 @@ Reliability rules support library and application reliability, such as correct m
 | [CA2020: Prevent behavioral change caused by built-in operators of IntPtr/UIntPtr](ca2020.md) | Some built-in operators added in .NET 7 behave differently than the user-defined operators in .NET 6 and earlier versions. Some operators that used to throw in unchecked context while overflowing don't throw anymore unless wrapped within checked context. Some operators that previously didn't throw in checked context now throw unless wrapped within unchecked context. |
 | [CA2021: Don't call Enumerable.Cast\<T> or Enumerable.OfType\<T> with incompatible types](ca2021.md) | A call to <xref:System.Linq.Enumerable.Cast%60%601(System.Collections.IEnumerable)?displayProperty=nameWithType> or <xref:System.Linq.Enumerable.OfType%60%601(System.Collections.IEnumerable)?displayProperty=nameWithType> specifies a type parameter that's incompatible with the type of the input collection. |
 | [CA2022: Avoid inexact read with Stream.Read](ca2022.md) | A call to `Stream.Read` might return fewer bytes than requested, resulting in unreliable code if the return value isn't checked. |
+| [CA2023: Invalid braces in message template](ca2023.md) | Logging message templates use curly braces `{` and `}` to denote named placeholders for values. Invalid brace usage in message templates can result in runtime exceptions or unexpected logging behavior. |
 | [CA2024: Do not use StreamReader.EndOfStream in async methods](ca2024.md) | The property <xref:System.IO.StreamReader.EndOfStream?displayProperty=nameWithType> can cause unintended synchronous blocking when no data is buffered. Instead, use <xref:System.IO.StreamReader.ReadLineAsync?displayProperty=nameWithType> directly, which returns `null` when reaching the end of the stream. |
 | [CA2025: Do not pass `IDisposable` instances into unawaited tasks](ca2025.md) | Unawaited tasks that use `IDisposable` instances might use those instances long after they have been disposed. Ensure tasks using those instances are completed before the instances are disposed. |

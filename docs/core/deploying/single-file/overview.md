@@ -211,7 +211,7 @@ We have some recommendations for fixing common scenarios:
 Some workflows require post-processing of binaries before bundling. A common example is signing. The dotnet SDK provides MSBuild extension points to allow processing binaries just before single-file bundling. The available APIs are:
 
 - A target `PrepareForBundle` that is called before `GenerateSingleFileBundle`
-- An `<ItemGroup><FilesToBundle /></ItemGroup>` containing all files that is bundled
+- An `<ItemGroup><FilesToBundle /></ItemGroup>` containing all files that are to be bundled
 - A Property `AppHostFile` that will specify the apphost template. Post-processing might want to exclude the apphost from processing.
 
 To plug into this involves creating a target that is executed between `PrepareForBundle` and `GenerateSingleFileBundle`.

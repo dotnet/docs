@@ -214,7 +214,9 @@ echo $Logging__LogLevel__Microsoft
 
 # Or use printenv:
 # printenv Logging__LogLevel__Microsoft
-```> [!NOTE]
+```
+
+> [!NOTE]
 > When configuring environment variables with names that contain `.` (periods), see the "Exporting a variable with a dot (.) in it" question on **Stack Exchange** and its corresponding [accepted answer](https://unix.stackexchange.com/a/93533).
 
 ---

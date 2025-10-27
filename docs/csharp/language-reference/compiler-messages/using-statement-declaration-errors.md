@@ -1,5 +1,5 @@
 ---
-title: Resolve errors related to `using` statements and `using` declarations.
+title: Resolve errors related to `using` statements and `using` declarations
 description: These errors indicate an incorrect use of the `using` statement or `using` declarations. Learn about the errors and how to fix them.
 f1_keywords:
   - "CS0245"

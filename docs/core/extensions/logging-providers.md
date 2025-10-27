@@ -3,7 +3,8 @@ title: Logging providers
 description: Learn how the logging provider API is used in .NET applications.
 author: IEvangelist
 ms.author: dapine
-ms.date: 06/23/2023
+ms.date: 10/22/2025
+ai-usage: ai-assisted
 ---
 
 # Logging providers in .NET
@@ -35,7 +36,7 @@ builder.Logging.ClearProviders();
 builder.Logging.AddConsole();
 ```
 
-For additional providers, see:
+For other providers, see:
 
 - [Built-in logging providers](#built-in-logging-providers).
 - [Third-party logging providers](#third-party-logging-providers).
@@ -65,7 +66,7 @@ Microsoft Extensions include the following logging providers as part of the runt
 - [EventSource](#event-source)
 - [EventLog](#windows-eventlog)
 
-The following logging providers are shipped by Microsoft, but not as part of the runtime libraries. They must be installed as additional NuGet packages.
+The following logging providers are shipped by Microsoft, but not as part of the runtime libraries. They must be installed from NuGet packages.
 
 - [AzureAppServicesFile and AzureAppServicesBlob](#azure-app-service)
 - [ApplicationInsights](#azure-application-insights)
@@ -157,7 +158,7 @@ await host.RunAsync();
 
 When deployed to Azure App Service, the app uses the settings in the [App Service logs](/azure/app-service/web-sites-enable-diagnostic-log/#enable-application-logging-windows) section of the **App Service** page of the Azure portal. When the following settings are updated, the changes take effect immediately without requiring a restart or redeployment of the app.
 
-The default location for log files is in the *D:\\home\\LogFiles\\Application* folder. Additional defaults vary by provider:
+The default location for log files is in the *D:\\home\\LogFiles\\Application* folder. Other defaults vary by provider:
 
 - **Application Logging (Filesystem)**: The default filesystem file name is *diagnostics-yyyymmdd.txt*. The default file size limit is 10 MB, and the default maximum number of files retained is 2.
 - **Application Logging (Blob)**: The default blob name is *{app-name}/yyyy/mm/dd/hh/{guid}_applicationLog.txt*.
@@ -196,9 +197,9 @@ For more information, see the following resources:
 If you plan to develop your own implementation of the <xref:Microsoft.Extensions.Logging.ILoggerProvider> interface and corresponding custom implementation of <xref:Microsoft.Extensions.Logging.ILogger>, consider the following points:
 
 - The <xref:Microsoft.Extensions.Logging.ILogger.Log%2A?displayProperty=nameWithType> method is synchronous.
-- The lifetime of log state and objects should *not* be assumed.
+- The lifetime of log state and objects shouldn't be assumed.
 
-An implementation of `ILoggerProvider` will create an `ILogger` via its <xref:Microsoft.Extensions.Logging.ILoggerProvider.CreateLogger%2A?displayProperty=nameWithType> method. If your implementation strives to queue logging messages in a non-blocking manner, the messages should first be materialized or the object state that's used to materialize a log entry should be serialized. Doing so avoids potential exceptions from disposed objects.
+An implementation of `ILoggerProvider` creates an `ILogger` via its <xref:Microsoft.Extensions.Logging.ILoggerProvider.CreateLogger%2A?displayProperty=nameWithType> method. If your implementation strives to queue logging messages in a non-blocking manner, the messages should first be materialized or the object state that's used to materialize a log entry should be serialized. Doing so avoids potential exceptions from disposed objects.
 
 For more information, see [Implement a custom logging provider in .NET](custom-logging-provider.md).
 

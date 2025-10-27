@@ -1,7 +1,7 @@
 ---
 title: "Assemblies in .NET"
 description: Assemblies are fundamental units of deployment, version control, reuse, activation scoping, and security permissions for .NET-based applications.
-ms.date: 07/27/2022
+ms.date: 10/21/2025
 ms.custom: devdivchpfy22
 ms.assetid: 149f5ca5-5b34-4746-9542-1ae43b2d0256
 helpviewer_keywords:
@@ -14,6 +14,7 @@ helpviewer_keywords:
   - "assemblies [.NET Framework]"
   - "version boundaries"
   - "type boundaries"
+ai-usage: ai-assisted
 ---
 
 # Assemblies in .NET
@@ -30,9 +31,9 @@ Assemblies have the following properties:
 
 - Assemblies are only loaded into memory if they're required. If they aren't used, they aren't loaded. Therefore, assemblies can be an efficient way to manage resources in larger projects.
 
-- You can programmatically obtain information about an assembly by using reflection. For more information, see [Reflection (C#)](../../csharp/advanced-topics/reflection-and-attributes/index.md) or [Reflection (Visual Basic)](../../visual-basic/programming-guide/concepts/reflection.md).
+- You can programmatically obtain information about an assembly using reflection. For more information, see [Reflection (C#)](../../csharp/advanced-topics/reflection-and-attributes/index.md) or [Reflection (Visual Basic)](../../visual-basic/programming-guide/concepts/reflection.md).
 
-- You can load an assembly just to inspect it by using the <xref:System.Reflection.MetadataLoadContext> class on .NET and .NET Framework. <xref:System.Reflection.MetadataLoadContext> replaces the <xref:System.Reflection.Assembly.ReflectionOnlyLoad%2A?displayProperty=nameWithType> methods.
+- You can load an assembly just to inspect it using the <xref:System.Reflection.MetadataLoadContext> class on .NET and .NET Framework. <xref:System.Reflection.MetadataLoadContext> replaces the <xref:System.Reflection.Assembly.ReflectionOnlyLoad%2A?displayProperty=nameWithType> methods.
 
 ## Assemblies in the common language runtime
 
@@ -56,7 +57,7 @@ An assembly defines the following information:
 
 ## Create an assembly
 
-Assemblies can be static or dynamic. Static assemblies are stored on a disk in portable executable (PE) files. Static assemblies can include interfaces, classes, and resources like bitmaps, JPEG files, and other resource files. You can also create dynamic assemblies, which are run directly from memory and aren't saved to disk before execution. You can save dynamic assemblies to disk after they've been executed.
+Assemblies can be static or dynamic. Static assemblies are stored on a disk in portable executable (PE) files. Static assemblies can include interfaces, classes, and resources like bitmaps, JPEG files, and other resource files. You can also create dynamic assemblies, which run directly from memory and aren't saved to disk before execution. You can save dynamic assemblies to disk after they've been executed.
 
 There are several ways to create assemblies. You can use development tools, such as Visual Studio that can create *.dll* or *.exe* files. You can use tools in the Windows SDK to create assemblies with modules from other development environments. You can also use common language runtime APIs, such as <xref:System.Reflection.Emit?displayProperty=nameWithType>, to create dynamic assemblies.
 
@@ -85,7 +86,7 @@ To use an assembly in an application, you must add a reference to it. When an as
 > Most assemblies from the .NET Class Library are referenced automatically. If a system assembly isn't automatically referenced, add a reference in one of the following ways:
 >
 > - For .NET and .NET Core, add a reference to the NuGet package that contains the assembly. Either use the NuGet Package Manager in Visual Studio or add a [\<PackageReference>](../../core/tools/dependencies.md#the-packagereference-element) element for the assembly to the *.csproj* or *.vbproj* project.
-> - For .NET Framework, add a reference to the assembly by using the **Add Reference** dialog in Visual Studio or the `-reference` command line option for the [C#](../../csharp/language-reference/compiler-options/inputs.md#references) or [Visual Basic](../../visual-basic/reference/command-line-compiler/reference.md) compilers.
+> - For .NET Framework, add a reference to the assembly using the **Add Reference** dialog in Visual Studio or the `-reference` command line option for the [C#](../../csharp/language-reference/compiler-options/inputs.md#references) or [Visual Basic](../../visual-basic/reference/command-line-compiler/reference.md) compilers.
 
 In C#, you can use two versions of the same assembly in a single application. For more information, see [extern alias](../../csharp/language-reference/keywords/extern-alias.md).
 

@@ -3,7 +3,8 @@ title: Channels
 description: Learn the official synchronization data structures in System.Threading.Channels for producers and consumers with .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 06/26/2023
+ms.date: 10/22/2025
+ai-usage: ai-assisted
 ---
 
 # System.Threading.Channels library
@@ -14,7 +15,7 @@ This library is available in the [System.Threading.Channels](https://www.nuget.o
 
 ## Producer/consumer conceptual programming model
 
-Channels are an implementation of the producer/consumer conceptual programming model. In this programming model, producers asynchronously produce data, and consumers asynchronously consume that data. In other words, this model passes data from one party to another through a first-in first-out ("FIFO") queue. Try to think of channels as you would any other common generic collection type, such as a `List<T>`. The primary difference is that this collection manages synchronization and provides various consumption models through factory creation options. These options control the behavior of the channels, such as how many elements they're allowed to store and what happens if that limit is reached, or whether the channel is accessed by multiple producers or multiple consumers concurrently.
+Channels are an implementation of the producer/consumer conceptual programming model. In this programming model, producers asynchronously produce data, and consumers asynchronously consume that data. In other words, this model passes data from one party to another through a first-in first-out ("FIFO") queue. Think of channels as any other common generic collection type, such as a `List<T>`. The primary difference is that this collection manages synchronization and provides various consumption models through factory creation options. These options control the behavior of the channels, such as how many elements they're allowed to store and what happens if that limit is reached, or whether the channel is accessed by multiple producers or multiple consumers concurrently.
 
 ## Bounding strategies
 
@@ -23,7 +24,7 @@ Depending on how a `Channel<T>` is created, its reader and writer behave differe
 To create a channel that specifies a maximum capacity, call <xref:System.Threading.Channels.Channel.CreateBounded%2A?displayProperty=nameWithType>. To create a channel that is used by any number of readers and writers concurrently, call <xref:System.Threading.Channels.Channel.CreateUnbounded%2A?displayProperty=nameWithType>. Each bounding strategy exposes various creator-defined options, either <xref:System.Threading.Channels.BoundedChannelOptions> or <xref:System.Threading.Channels.UnboundedChannelOptions> respectively.
 
 > [!NOTE]
-> Regardless of the bounding strategy, a channel will always throw a <xref:System.Threading.Channels.ChannelClosedException> when it's used after it's been closed.
+> Regardless of the bounding strategy, a channel always throws a <xref:System.Threading.Channels.ChannelClosedException> when it's used after it's been closed.
 
 ### Unbounded channels
 
@@ -140,7 +141,7 @@ An alternative producer might use the `WriteAsync` method:
 
 :::code language="csharp" source="snippets/channels/Program.Producer.cs" id="whilewrite":::
 
-Again, the `Channel<Coordinates>.Writer` is used within a `while` loop. But this time, the <xref:System.Threading.Channels.ChannelWriter%601.WriteAsync%2A> method is called. The method will continue only after the coordinates have been written. When the `while` loop exits, a call to <xref:System.Threading.Channels.ChannelWriter%601.Complete%2A> is made, which signals that no more data is written to the channel.
+Again, the `Channel<Coordinates>.Writer` is used within a `while` loop. But this time, the <xref:System.Threading.Channels.ChannelWriter%601.WriteAsync%2A> method is called. The method continues only after the coordinates have been written. When the `while` loop exits, a call to <xref:System.Threading.Channels.ChannelWriter%601.Complete%2A> is made, which signals that no more data is written to the channel.
 
 Another producer pattern is to use the <xref:System.Threading.Channels.ChannelWriter%601.WaitToWriteAsync%2A> method, consider the following code:
 
@@ -155,7 +156,7 @@ There are several common channel consumer patterns. When a channel is never endi
 :::code language="csharp" source="snippets/channels/Program.Consumer.cs" id="whiletrue":::
 
 > [!NOTE]
-> This code will throw an exception if the channel is closed.
+> This code throws an exception if the channel is closed.
 
 An alternative consumer could avoid this concern by using a nested while loop, as shown in the following code:
 

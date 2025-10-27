@@ -3,8 +3,9 @@ title: Create Windows Service using BackgroundService
 description: Learn how to create a Windows Service using the BackgroundService in .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 03/25/2024
+ms.date: 10/22/2025
 ms.topic: tutorial
+ai-usage: ai-assisted
 ---
 
 # Create Windows Service using `BackgroundService`
@@ -156,7 +157,7 @@ dotnet publish --output "C:\custom\publish\directory"
 For more information, see [`dotnet publish`](../tools/dotnet-publish.md).
 
 > [!IMPORTANT]
-> With .NET 6, if you attempt to debug the app with the `<PublishSingleFile>true</PublishSingleFile>` setting, you will not be able to debug the app. For more information, see [Unable to attach to CoreCLR when debugging a 'PublishSingleFile' .NET 6 app](https://developercommunity.visualstudio.com/t/unable-to-attach-to-coreclr-when-debugging-a-publi/1523427).
+> With .NET 6, if you attempt to debug the app with the `<PublishSingleFile>true</PublishSingleFile>` setting, you won't be able to debug the app. For more information, see [Unable to attach to CoreCLR when debugging a 'PublishSingleFile' .NET 6 app](https://developercommunity.visualstudio.com/t/unable-to-attach-to-coreclr-when-debugging-a-publi/1523427).
 
 ## Create the Windows Service
 
@@ -237,9 +238,9 @@ With .NET 6, [new hosting exception-handling behaviors](../compatibility/core-li
 | Option | Description |
 |--|--|
 | <xref:Microsoft.Extensions.Hosting.BackgroundServiceExceptionBehavior.Ignore> | Ignore exceptions thrown in `BackgroundService`. |
-| <xref:Microsoft.Extensions.Hosting.BackgroundServiceExceptionBehavior.StopHost> | The `IHost` will be stopped when an unhandled exception is thrown. |
+| <xref:Microsoft.Extensions.Hosting.BackgroundServiceExceptionBehavior.StopHost> | The `IHost` is stopped when an unhandled exception is thrown. |
 
-The default behavior before .NET 6 is `Ignore`, which resulted in *zombie processes* (a running process that didn't do anything). With .NET 6, the default behavior is `StopHost`, which results in the host being stopped when an exception is thrown. But it stops cleanly, meaning that the Windows Service management system will not restart the service. To correctly allow the service to be restarted, you can call <xref:System.Environment.Exit%2A?displayProperty=nameWithType> with a non-zero exit code. Consider the following highlighted `catch` block:
+The default behavior before .NET 6 is `Ignore`, which resulted in *zombie processes* (a running process that didn't do anything). With .NET 6, the default behavior is `StopHost`, which results in the host being stopped when an exception is thrown. But it stops cleanly, meaning that the Windows Service management system won't restart the service. To correctly allow the service to be restarted, you can call <xref:System.Environment.Exit%2A?displayProperty=nameWithType> with a non-zero exit code. Consider the following highlighted `catch` block:
 
 :::code source="snippets/workers/windows-service/WindowsBackgroundService.cs" highlight="24-37":::
 
@@ -248,7 +249,7 @@ The default behavior before .NET 6 is `Ignore`, which resulted in *zombie proces
 To see the app created as a Windows Service, open **Services**. Select the Windows key (or <kbd>Ctrl</kbd> + <kbd>Esc</kbd>), and search from "Services". From the **Services** app, you should be able to find your service by its name.
 
 > [!IMPORTANT]
-> By default, regular (non-admin) users cannot manage Windows services. To verify that this app functions as expected, you'll need to use an Admin account.
+> By default, regular (non-admin) users can't manage Windows services. To verify that this app functions as expected, you'll need to use an Admin account.
 
 :::image type="content" source="media/windows-service.png" lightbox="media/windows-service.png" alt-text="The Services user interface.":::
 
@@ -324,7 +325,7 @@ The service **Status** will transition from `STOP_PENDING` to **Stopped**.
 To delete the Windows Service, use the native Windows Service Control Manager's (sc.exe) delete command. Run PowerShell as an Administrator.
 
 > [!IMPORTANT]
-> If the service is not in the **Stopped** state, it will not be immediately deleted. Ensure that the service is stopped before issuing the delete command.
+> If the service isn't in the **Stopped** state, it won't be immediately deleted. Ensure that the service is stopped before issuing the delete command.
 
 ```powershell
 sc.exe delete ".NET Joke Service"

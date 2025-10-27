@@ -2,8 +2,9 @@
 title: global.json overview
 description: Learn how to use the global.json file to set the .NET SDK version when running .NET CLI commands.
 ms.topic: how-to
-ms.date: 07/05/2024
+ms.date: 10/22/2025
 ms.custom: "updateeachrelease"
+ai-usage: ai-assisted
 ---
 # global.json overview
 

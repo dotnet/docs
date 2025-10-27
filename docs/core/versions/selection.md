@@ -95,7 +95,7 @@ A few usage examples demonstrate the behavior, if you target 5.0:
 - ✔️ 5.0 is specified. No 5.0.* versions are installed. 5.1.0 is the highest runtime version installed. 5.1.0 is used.
 - ❌ 3.0 is specified. No 3.x versions are installed. 5.0.0 is the highest runtime installed. An error message is displayed.
 
-Minor version roll-forward has one side-effect that can affect end users. Consider the following scenario:
+Minor version roll-forward has one side-effect that might affect end users. Consider the following scenario:
 
 01. The application specifies that 5.0 is required.
 02. When run, version 5.0.* isn't installed, however, 5.1.0 is. Version 5.1.0 is used.

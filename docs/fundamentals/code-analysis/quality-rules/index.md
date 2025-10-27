@@ -152,7 +152,7 @@ The following table lists code quality analysis rules.
 > | [CA1847: Use char literal for a single character lookup](ca1847.md) | Use `String.Contains(char)` instead of `String.Contains(string)` when searching for a single character. |
 > | [CA1848: Use the LoggerMessage delegates](ca1848.md) | For improved performance, use the `LoggerMessage` delegates. |
 > | [CA1849: Call async methods when in an async method](ca1849.md) | In a method which is already asynchronous, calls to other methods should be to their async versions, where they exist. |
-> | [CA1850: Prefer static `HashData` method over `ComputeHash`](ca1850.md) | It`s more efficient to use the static `HashData` method over creating and managing a `HashAlgorithm` instance to call `ComputeHash`. |
+> | [CA1850: Prefer static `HashData` method over `ComputeHash`](ca1850.md) | It's more efficient to use the static `HashData` method over creating and managing a `HashAlgorithm` instance to call `ComputeHash`. |
 > | [CA1851: Possible multiple enumerations of `IEnumerable` collection](ca1851.md) | Possible multiple enumerations of `IEnumerable` collection. Consider using an implementation that avoids multiple enumerations. |
 > | [CA1852: Seal internal types](ca1852.md) | A type that's not accessible outside its assembly and has no subtypes within its containing assembly is not sealed. |
 > | [CA1853: Unnecessary call to `Dictionary.ContainsKey(key)`](ca1853.md) | There's no need to guard `Dictionary.Remove(key)` with `Dictionary.ContainsKey(key)`. <xref:System.Collections.Generic.Dictionary%602.Remove(%600)?displayProperty=nameWithType> already checks whether the key exists and doesn't throw if it doesn't exist. |

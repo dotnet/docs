@@ -535,4 +535,4 @@ For more information about container deployment, see [.NET SDK container creatio
 
 - [.NET Runtime Identifier (RID) catalog](../rid-catalog.md)
 - [Select the .NET version to use](../versions/selection.md)
-- [Publish .NET apps for macOS](macos.md)
+- [Publishing for macOS](macos.md)

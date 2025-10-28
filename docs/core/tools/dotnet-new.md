@@ -4,7 +4,7 @@ description: The dotnet new command creates new .NET projects based on the speci
 no-loc: [Blazor, WebAssembly]
 ms.date: 10/28/2025
 ---
-# dotnet new <&lt;>TEMPLATE&gt;
+# dotnet new &lt;TEMPLATE&gt;
 
 **This article applies to:** ✔️ .NET 6 SDK and later versions
 

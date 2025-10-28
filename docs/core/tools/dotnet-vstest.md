@@ -50,7 +50,7 @@ The `dotnet vstest` command runs the `VSTest.Console` command-line application t
 
 - **`--Framework <FRAMEWORK>`**
 
-  Target .NET Framework version used for test execution. An example of a valid values is `.NETFramework,Version=v7.0`. Other supported values are `Framework40`, `Framework45`, `FrameworkCore10`, and `FrameworkUap10`.
+  Target .NET Framework version used for test execution. An example of a valid value is `.NETFramework,Version=v7.0`. Other supported values are `Framework40`, `Framework45`, `FrameworkCore10`, and `FrameworkUap10`.
 
 - **`--InIsolation`**
 

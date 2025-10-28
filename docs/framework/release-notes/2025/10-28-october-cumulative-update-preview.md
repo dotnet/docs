@@ -16,7 +16,7 @@ _Released October 28, 2025_
 
 #### CVE-2025-21176 – Remote Code Execution vulnerability
 
-This security update addresses a remote code execution vulnerability detailed in [CVE 2025-21176](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-21176).
+This security update addresses a remote code execution vulnerability detailed in [CVE-2025-21176](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-21176).
 
 ### Quality and reliability improvements
 

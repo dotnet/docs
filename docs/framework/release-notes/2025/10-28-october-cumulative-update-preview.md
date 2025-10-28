@@ -1,7 +1,7 @@
 ---
-title: October 2025 cumulative update
-description: Learn about the improvements in the .NET Framework October 2025 cumulative update.
-ms.date: 10/14/2025
+title: October 2025 cumulative update preview
+description: Learn about the improvements in the .NET Framework October 2025 cumulative update preview.
+ms.date: 10/28/2025
 ---
 # October 2025 cumulative update preview
 
@@ -14,9 +14,7 @@ _Released October 28, 2025_
 
 ### Security improvements
 
-#### CVE-2025-21176 – Remote Code Execution vulnerability
-
-This security update addresses a remote code execution vulnerability detailed in [CVE 2025-21176](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-21176).
+There are no new security improvements in this release. This update is cumulative and contains all previously released security improvements.
 
 ### Quality and reliability improvements
 

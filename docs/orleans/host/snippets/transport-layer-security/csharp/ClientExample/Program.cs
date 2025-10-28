@@ -30,11 +30,13 @@ class ClientDevelopmentExample
     public static async Task ConfigureDevelopmentTls()
     {
         // <ClientDevelopmentTlsConfiguration>
-        var isDevelopment = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") == "Development";
-
-        using IHost host = Host.CreateDefaultBuilder()
-            .UseOrleansClient(builder =>
+        var hostBuilder = Host.CreateDefaultBuilder();
+        
+        using IHost host = hostBuilder
+            .UseOrleansClient((context, builder) =>
             {
+                var isDevelopment = context.HostingEnvironment.IsDevelopment();
+                
                 builder
                     .UseLocalhostClustering()
                     .UseTls(StoreName.My, "localhost", allowInvalid: isDevelopment, StoreLocation.CurrentUser, options =>

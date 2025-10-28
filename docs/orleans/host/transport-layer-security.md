@@ -1,14 +1,14 @@
 ---
-title: Transport Layer Security (TLS)
-description: Learn how to configure Transport Layer Security (TLS) in .NET Orleans to secure network communication between hosts.
+title: Orleans Transport Layer Security (TLS)
+description: Learn how to configure Transport Layer Security (TLS) and mutual TLS (mTLS) in .NET Orleans to secure network communication between hosts.
 ms.date: 10/28/2025
 ms.topic: how-to
 ai-usage: ai-assisted
 ---
 
-# Transport Layer Security (TLS)
+# Orleans Transport Layer Security (TLS)
 
-Transport Layer Security (TLS) is a cryptographic protocol that secures network communication between Orleans silos and clients. Configure TLS to implement mutual authentication and encrypt data in transit, protecting your Orleans deployment from unauthorized access and eavesdropping.
+Transport Layer Security (TLS) is a cryptographic protocol that secures network communication between Orleans silos and clients. Configure TLS to implement mutual authentication (mTLS) and encrypt data in transit, protecting your Orleans deployment from unauthorized access and eavesdropping.
 
 ## Prerequisites
 
@@ -28,7 +28,6 @@ To enable TLS on an Orleans silo, use the <xref:Orleans.Hosting.OrleansConnectio
 The following example shows how to configure TLS using a certificate from the Windows certificate store:
 
 :::code language="csharp" source="./snippets/transport-layer-security/csharp/SiloExample/Program.cs" id="BasicTlsConfiguration":::
-:::code language="vb" source="./snippets/transport-layer-security/vb/SiloExample/Program.vb" id="BasicTlsConfiguration":::
 
 In the preceding code:
 
@@ -43,11 +42,10 @@ In the preceding code:
 For development and testing, you might need to use self-signed certificates. The following example shows how to configure TLS with relaxed validation for development:
 
 :::code language="csharp" source="./snippets/transport-layer-security/csharp/SiloExample/Program.cs" id="DevelopmentTlsConfiguration":::
-:::code language="vb" source="./snippets/transport-layer-security/vb/SiloExample/Program.vb" id="DevelopmentTlsConfiguration":::
 
 In the preceding code:
 
-- The `isDevelopment` flag determines whether to use relaxed certificate validation.
+- The `context.HostingEnvironment.IsDevelopment()` method checks if the application is running in a development environment.
 - The <xref:Orleans.Connections.Security.TlsOptions.AllowAnyRemoteCertificate%2A> method disables certificate validation in development.
 
 > [!WARNING]
@@ -58,7 +56,6 @@ In the preceding code:
 If you have a certificate file instead of using the certificate store, configure TLS as shown in the following example:
 
 :::code language="csharp" source="./snippets/transport-layer-security/csharp/SiloExample/Program.cs" id="CertificateTlsConfiguration":::
-:::code language="vb" source="./snippets/transport-layer-security/vb/SiloExample/Program.vb" id="CertificateTlsConfiguration":::
 
 In the preceding code:
 
@@ -70,7 +67,6 @@ In the preceding code:
 For production deployments, you might need more control over certificate validation and protocol selection. The following example demonstrates advanced TLS configuration:
 
 :::code language="csharp" source="./snippets/transport-layer-security/csharp/SiloExample/Program.cs" id="AdvancedTlsConfiguration":::
-:::code language="vb" source="./snippets/transport-layer-security/vb/SiloExample/Program.vb" id="AdvancedTlsConfiguration":::
 
 In the preceding code:
 
@@ -87,7 +83,6 @@ Orleans clients require similar TLS configuration to securely connect to TLS-ena
 The following example shows how to configure TLS on an Orleans client:
 
 :::code language="csharp" source="./snippets/transport-layer-security/csharp/ClientExample/Program.cs" id="BasicClientTlsConfiguration":::
-:::code language="vb" source="./snippets/transport-layer-security/vb/ClientExample/Program.vb" id="BasicClientTlsConfiguration":::
 
 In the preceding code:
 
@@ -100,14 +95,12 @@ In the preceding code:
 For development environments, configure the client with relaxed validation as shown in the following example:
 
 :::code language="csharp" source="./snippets/transport-layer-security/csharp/ClientExample/Program.cs" id="ClientDevelopmentTlsConfiguration":::
-:::code language="vb" source="./snippets/transport-layer-security/vb/ClientExample/Program.vb" id="ClientDevelopmentTlsConfiguration":::
 
 ### Certificate file client configuration
 
 Configure a client using a certificate file as shown in the following example:
 
 :::code language="csharp" source="./snippets/transport-layer-security/csharp/ClientExample/Program.cs" id="ClientCertificateTlsConfiguration":::
-:::code language="vb" source="./snippets/transport-layer-security/vb/ClientExample/Program.vb" id="ClientCertificateTlsConfiguration":::
 
 ## Best practices
 

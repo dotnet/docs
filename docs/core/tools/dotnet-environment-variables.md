@@ -6,7 +6,7 @@ ms.date: 11/08/2023
 
 # .NET environment variables
 
-**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
+**This article applies to:** ✔️ .NET 6 SDK and later versions
 
 In this article, you'll learn about the environment variables used by .NET. Some environment variables are used by the .NET runtime, while others are only used by the .NET SDK and .NET CLI. Some environment variables are used by all three components.
 
@@ -303,10 +303,6 @@ Determines roll forward behavior. For more information, see [the `--roll-forward
 If set to `1` (enabled), enables rolling forward to a pre-release version from a release version. By default (`0` - disabled), when a release version of .NET runtime is requested, roll-forward will only consider installed release versions.
 
 For more information, see [the `--roll-forward` option for the `dotnet` command](dotnet.md#rollforward).
-
-### `DOTNET_ROLL_FORWARD_ON_NO_CANDIDATE_FX`
-
-Disables minor version roll forward, if set to `0`. This setting is superseded in .NET Core 3.0 by `DOTNET_ROLL_FORWARD`. The new settings should be used instead.
 
 ### `DOTNET_CLI_FORCE_UTF8_ENCODING`
 

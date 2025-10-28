@@ -1,11 +1,11 @@
 ---
 title: dotnet vstest command
 description: The dotnet vstest command builds a project and all of its dependencies.
-ms.date: 02/27/2020
+ms.date: 10/28/2025
 ---
 # dotnet vstest
 
-**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
+**This article applies to:** ✔️ .NET 6 SDK and later versions
 
 > [!IMPORTANT]
 > The `dotnet vstest` command is superseded by `dotnet test`, which can now be used to run assemblies. See [dotnet test](dotnet-test.md).
@@ -23,7 +23,7 @@ dotnet vstest [<TEST_FILE_NAMES>] [--Blame] [--Diag <PATH_TO_LOG_FILE>]
     [--ParentProcessId <PROCESS_ID>] [--Platform] <PLATFORM_TYPE>
     [--Port <PORT>] [--ResultsDirectory<PATH>] [--Settings <SETTINGS_FILE>]
     [--TestAdapterPath <PATH>] [--TestCaseFilter <EXPRESSION>]
-    [--Tests <TEST_NAMES>] [[--] <args>...]]
+    [--Tests <TEST_NAMES>] [[--] <args>...]
 
 dotnet vstest -?|--Help
 ```
@@ -50,7 +50,7 @@ The `dotnet vstest` command runs the `VSTest.Console` command-line application t
 
 - **`--Framework <FRAMEWORK>`**
 
-  Target .NET Framework version used for test execution. Examples of valid values are `.NETFramework,Version=v4.6` or `.NETCoreApp,Version=v1.0`. Other supported values are `Framework40`, `Framework45`, `FrameworkCore10`, and `FrameworkUap10`.
+  Target .NET Framework version used for test execution. An example of a valid values is `.NETFramework,Version=v7.0`. Other supported values are `Framework40`, `Framework45`, `FrameworkCore10`, and `FrameworkUap10`.
 
 - **`--InIsolation`**
 

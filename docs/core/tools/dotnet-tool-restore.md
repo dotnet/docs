@@ -1,11 +1,11 @@
 ---
 title: dotnet tool restore command
 description: The dotnet tool restore command installs on your machine the .NET local tools that are in scope for the current directory.
-ms.date: 02/14/2020
+ms.date: 10/28/2025
 ---
 # dotnet tool restore
 
-**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
+**This article applies to:** ✔️ .NET 6 SDK and later versions
 
 ## Name
 

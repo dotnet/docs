@@ -2,11 +2,11 @@
 title: dotnet nuget push command
 description: The dotnet nuget push command pushes a package to the server and publishes it.
 author: karann-msft
-ms.date: 02/14/2020
+ms.date: 10/28/2025
 ---
 # dotnet nuget push
 
-**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
+**This article applies to:** ✔️ .NET 6 SDK and later versions
 
 ## Name
 
@@ -146,14 +146,6 @@ Alternatively, use the NuGet CLI for the first package, then you can use `dotnet
   ```dotnetcli
   dotnet nuget push "*.nupkg"
   ```
-
-  > [!NOTE]
-  > If this command doesn't work, it might be due to a bug that existed in older versions of the SDK (.NET Core 2.1 SDK and earlier versions).
-  > To fix this, upgrade your SDK version or run the following command instead:
-  > `dotnet nuget push "**/*.nupkg"`
-  
-  > [!NOTE]
-  > The enclosing quotes are required for shells such as bash that perform file globbing. For more information, see [NuGet/Home#4393](https://github.com/NuGet/Home/issues/4393#issuecomment-667618120).
 
 - Push all *.nupkg* files to the default push source specified in the NuGet config file, even if a 409 Conflict response is returned by an HTTP(S) server:
 

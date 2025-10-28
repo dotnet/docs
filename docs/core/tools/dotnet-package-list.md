@@ -1,11 +1,11 @@
 ---
 title: dotnet package list command
 description: The 'dotnet package list' command provides a convenient option to list the package references for a project or solution.
-ms.date: 04/02/2025
+ms.date: 10/28/2025
 ---
 # dotnet package list
 
-**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
+**This article applies to:** ✔️ .NET 6 SDK and later versions
 
 ## Name
 

@@ -1,7 +1,7 @@
 ---
 title: Performance rules (code analysis)
 description: "Learn about code analysis performance rules."
-ms.date: 11/15/2023
+ms.date: 10/27/2025
 f1_keywords:
 - vs.codeanalysis.performancerules
 helpviewer_keywords:
@@ -19,7 +19,7 @@ Performance rules support high-performance libraries and applications.
 ## In this section
 
 | Rule | Description |
-| - | - |
+|------|-------------|
 | [CA1802: Use Literals Where Appropriate](ca1802.md) | A field is declared static and read-only (Shared and ReadOnly in Visual Basic), and is initialized with a value that is computable at compile time. Because the value that is assigned to the targeted field is computable at compile time, change the declaration to a const (Const in Visual Basic) field so that the value is computed at compile time instead of at run time. |
 | [CA1805: Do not initialize unnecessarily](ca1805.md) | The .NET runtime initializes all fields of reference types to their default values before running the constructor. In most cases, explicitly initializing a field to its default value is redundant, which adds to maintenance costs and may degrade performance (such as with increased assembly size). |
 | [CA1806: Do not ignore method results](ca1806.md) | A new object is created but never used, or a method that creates and returns a new string is called and the new string is never used, or a Component Object Model (COM) or P/Invoke method returns an HRESULT or error code that is never used. |
@@ -80,3 +80,6 @@ Performance rules support high-performance libraries and applications.
 | [CA1870: Use a cached 'SearchValues' instance](ca1870.md) | Using a cached  <xref:System.Buffers.SearchValues%601> instance is more efficient than passing values to 'IndexOfAny' or 'ContainsAny' directly. |
 | [CA1871: Do not pass a nullable struct to 'ArgumentNullException.ThrowIfNull'](ca1871.md) | 'ArgumentNullException.ThrowIfNull' accepts an 'object', so passing a nullable struct might cause the value to be boxed. |
 | [CA1872: Prefer 'Convert.ToHexString' and 'Convert.ToHexStringLower' over call chains based on 'BitConverter.ToString'](ca1872.md) | Use <xref:System.Convert.ToHexString%2A?displayProperty=nameWithType> or <xref:System.Convert.ToHexStringLower%2A?displayProperty=nameWithType> when encoding bytes to a hexadecimal string representation. These methods are more efficient and allocation-friendly than using <xref:System.BitConverter.ToString%2A?displayProperty=nameWithType> in combination with <xref:System.String.Replace%2A?displayProperty=nameWithType> to replace dashes and <xref:System.String.ToLower%2A?displayProperty=nameWithType>. |
+| [CA1873: Avoid potentially expensive logging](ca1873.md) | When logging methods are called, their arguments are evaluated regardless of whether the logging level is enabled. This can result in expensive operations being executed even when the log message won't be written. For better performance, guard expensive logging calls with a check to <xref:Microsoft.Extensions.Logging.ILogger.IsEnabled%2A> or use the `LoggerMessage` pattern. |
+| [CA1874: Use 'Regex.IsMatch'](ca1874.md) | <xref:System.Text.RegularExpressions.Regex.IsMatch*?displayProperty=nameWithType> is simpler and faster than `Regex.Match(...).Success`. |
+| [CA1875: Use 'Regex.Count'](ca1875.md) | <xref:System.Text.RegularExpressions.Regex.Count*?displayProperty=nameWithType> is simpler and faster than `Regex.Matches(...).Count`. |

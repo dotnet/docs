@@ -302,8 +302,6 @@ f1_keywords:
   - "CS8413"
   - "CS8414"
   - "CS8415"
-  - "CS8417"
-  - "CS8418"
   - "CS8419"
   - "CS8420"
   - "CS8421"
@@ -335,9 +333,6 @@ f1_keywords:
   - "CS8635"
   - "CS8641"
   - "CS8646"
-  - "CS8647"
-  - "CS8648"
-  - "CS8649"
   - "CS8650"
   - "CS8651"
   - "CS8656"
@@ -552,8 +547,6 @@ f1_keywords:
   - "CS9095"
   - "CS9096"
   - "CS9097"
-# C# 12 errors begin here
-  - "CS9229" # Modifiers cannot be placed on using declarations (using declarations)
 # C# 14 errors begin here
   - "CS9327"
   - "CS9328"

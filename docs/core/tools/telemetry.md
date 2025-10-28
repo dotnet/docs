@@ -36,7 +36,7 @@ A single telemetry entry is also sent by the .NET SDK installer when a successfu
 The .NET SDK displays text similar to the following when you first run one of the [.NET CLI commands](index.md) (for example, `dotnet build`). Text might vary slightly depending on the version of the SDK you're running. This "first run" experience is how Microsoft notifies you about data collection.
 
 > [!NOTE]
-> **Breaking change:** The behavior of telemetry messages written to `stderr` has changed in recent versions of the .NET SDK. For more information, see the [breaking change documentation](/dotnet/core/compatibility/sdk/8.0/telemetry-stderr-behavior).
+> **Breaking change:** The behavior of telemetry messages written to `stderr` has changed in recent versions of the .NET SDK. For more information, see [dotnet CLI commands log non-command-relevant data to stderr](../compatibility/sdk/10.0/dotnet-cli-stderr-output.md).
 
 ```console
 Telemetry
@@ -121,6 +121,8 @@ The telemetry feature collects the following data:
 | >=10.0.100    | Whether MSBuild was used for file-based apps with `dotnet run`. |
 | >=10.0.100    | Whether Roslyn compiler was used for file-based apps with `dotnet run`. |
 | >=10.0.100    | The detected LLM agent name if the CLI was invoked from an LLM agent. For more information, see [LLM detection](#llm-detection).|
+| >=10.0.100    | Which MSBuild task factories are used to load and run tasks (including inline C# tasks, multithreaded-aware tasks, and out-of-process tasks), and how many tasks they execute. |
+| >=10.0.100    | Number of MSBuild tasks executed in TaskHosts versus tasks not executed in TaskHosts. |
 
 ### Collected options
 

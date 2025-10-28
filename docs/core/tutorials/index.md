@@ -23,7 +23,7 @@ The following tutorials show how to develop console apps and libraries for .NET 
 
 ## Use Visual Studio Code
 
-Choose these tutorials if you want to use Visual Studio Code or some other code editor. All of them use the CLI for .NET Core development tasks, so all except the debugging tutorial can be used with any code editor.
+Choose these tutorials if you want to use Visual Studio Code or another code editor. All of them use the CLI for .NET Core development tasks, so all except the debugging tutorial can be used with any code editor.
 
 - [Create a console app](with-visual-studio-code.md)
 - [Debug an app](debugging-with-visual-studio-code.md)

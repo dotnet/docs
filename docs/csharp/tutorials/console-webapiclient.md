@@ -209,26 +209,29 @@ The `ProcessRepositoriesAsync` method can do the async work and return a collect
 
 ## Deserialize more properties
 
-The following steps add code to process more of the properties in the received JSON packet. You probably won't want to process every property, but adding a few more demonstrates other features of C#.
+In the following steps, we extend the code to process more properties from the JSON payload returned by the GitHub API. You probably won't need to process every property, but adding a few demonstrates additional C# features.
 
-1. Replace the contents of `Repository` class, with the following `record` definition:
+1. Replace the contents of the `Repository` class with the following `record` definition. Make sure to import the `System.Text.Json.Serialization` namespace and apply the `[JsonPropertyName]` attribute to map JSON fields to C# properties explicitly.
 
-    ```csharp
+   ```csharp
+    using System.Text.Json.Serialization;
+
     public record class Repository(
-        string Name,
-        string Description,
-        Uri GitHubHomeUrl,
-        Uri Homepage,
-        int Watchers,
-        DateTime LastPushUtc
-    );
-    ```
+      string Name,
+      string Description,
+      [property: JsonPropertyName("html_url")] Uri GitHubHomeUrl,
+      Uri Homepage,
+      int Watchers,
+      [property: JsonPropertyName("pushed_at")] DateTime LastPushUtc
+     );
+   ```
 
    The <xref:System.Uri> and `int` types have built-in functionality to convert to and from string representation. No extra code is needed to deserialize from JSON string format to those target types. If the JSON packet contains data that doesn't convert to a target type, the serialization action throws an exception.
 
-   JSON most often uses lowercase for names of it's objects, however we don't need to make any conversion and can keep the uppercase of the fields names, because, like mentioned in one of previous points, the `GetFromJsonAsync` extension method is case-insensitive when it comes to property names.
+   JSON often uses `lowercase` or `snake_case` for property names. Fields like `html_url` and `pushed_at` do not follow C# PascalCase naming conventions. Using `[JsonPropertyName]` ensures that these JSON keys are correctly bound to their corresponding C# properties, even when their names differ in case or contain underscores. This approach guarantees predictable and stable deserialization while allowing PascalCase property names in C#.
+Additionally, the `GetFromJsonAsync` method is `case-insensitive` when matching property names, so no further conversion is necessary.
 
-1. Update the `foreach` loop in the *Program.cs* file to display the property values:
+2. Update the `foreach` loop in the *Program.cs* file to display the property values:
 
     ```csharp
     foreach (var repo in repositories)
@@ -242,7 +245,7 @@ The following steps add code to process more of the properties in the received J
     }
     ```
 
-1. Run the app.
+3. Run the app.
 
    The list now includes the additional properties.
 

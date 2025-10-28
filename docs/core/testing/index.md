@@ -3,8 +3,9 @@ title: Testing in .NET
 description: This article gives a brief overview of testing concepts, terminology, and tools for testing in .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 12/15/2023
+ms.date: 10/22/2025
 ms.custom: devdivchpfy22
+ai-usage: ai-assisted
 ---
 
 # Testing in .NET

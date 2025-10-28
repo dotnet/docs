@@ -113,7 +113,6 @@ Class AdvancedExample
 
                                                options.OnAuthenticateAsClient = Sub(connection, sslOptions)
                                                                                     sslOptions.TargetHost = "my-certificate-subject"
-                                                                                    sslOptions.EnabledSslProtocols = SslProtocols.Tls12 Or SslProtocols.Tls13
                                                                                 End Sub
 
                                                options.CheckCertificateRevocation = True

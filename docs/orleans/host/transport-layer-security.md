@@ -76,7 +76,6 @@ In the preceding code:
 
 - The <xref:Orleans.Connections.Security.TlsOptions.LocalServerCertificateSelector%2A> callback dynamically selects the appropriate server certificate.
 - The <xref:Orleans.Connections.Security.TlsOptions.RemoteCertificateValidation%2A> callback provides custom validation logic for remote certificates.
-- The <xref:Orleans.Connections.Security.TlsOptions.OnAuthenticateAsClient%2A> callback configures SSL protocol versions using <xref:System.Security.Authentication.SslProtocols.Tls12> and <xref:System.Security.Authentication.SslProtocols.Tls13>.
 - The <xref:Orleans.Connections.Security.TlsOptions.CheckCertificateRevocation%2A> property enables certificate revocation checking.
 
 ## Configure TLS on clients
@@ -115,7 +114,7 @@ Configure a client using a certificate file as shown in the following example:
 Follow these best practices when configuring TLS in Orleans:
 
 - **Use the latest TLS protocol**: Always prefer TLS 1.2 or TLS 1.3 for the strongest security. Avoid TLS 1.0 and TLS 1.1, which have known vulnerabilities.
-- **Let the OS choose the protocol version**: Avoid explicitly setting TLS protocol versions in production code. Instead, defer to operating system defaults by using <xref:System.Security.Authentication.SslProtocols.None>, which allows the OS to automatically select the best protocol.
+- **Let the OS choose the protocol version**: Don't explicitly set TLS protocol versions in production code. Instead, defer to operating system defaults to automatically select the best protocol. Only explicitly set protocol versions if you have a specific compatibility requirement with legacy systems. When you explicitly set protocol versions, your application can't automatically benefit from newer protocols added in future OS updates.
 - **Validate certificates**: Always validate certificate chains, expiration dates, and hostname matches in production. Never use `AllowAnyRemoteCertificate()` or disable certificate validation outside of development environments.
 - **Enable certificate revocation checking**: Use <xref:Orleans.Connections.Security.TlsOptions.CheckCertificateRevocation%2A> to verify that certificates haven't been revoked.
 - **Use strong certificates**: Ensure your X.509 certificates use strong key lengths (at least 2048 bits for RSA) and are signed by a trusted Certificate Authority (CA).

@@ -121,7 +121,6 @@ class AdvancedExample
                         options.OnAuthenticateAsClient = (connection, sslOptions) =>
                         {
                             sslOptions.TargetHost = "my-certificate-subject";
-                            sslOptions.EnabledSslProtocols = SslProtocols.Tls12 | SslProtocols.Tls13;
                         };
 
                         options.CheckCertificateRevocation = true;

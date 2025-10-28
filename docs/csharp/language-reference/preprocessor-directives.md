@@ -121,7 +121,7 @@ The `#:` directives that are used in file-based apps include:
   The preceding preprocessor token is translated into:
 
   ```xml
-  <ProjectReference Include="../Path/To.Example.csproj" />
+  <ProjectReference Include="../Path/To.Example/To.Example.csproj" />
   ```
   
 Tools can add new tokens following the `#:` convention.

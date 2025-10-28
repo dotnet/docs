@@ -69,9 +69,9 @@ The support timeframe for the SDK typically matches that of the Visual Studio ve
 >
 > <sup>2</sup> .4xx .NET SDK feature bands are supported for the life of the matching runtime as stand-alone installs.
 >
-> [Visual Studio 2019 Lifecycle](https://learn.microsoft.com/lifecycle/products/visual-studio-2019)
+> [Visual Studio 2019 Lifecycle](/lifecycle/products/visual-studio-2019)
 >
-> [Visual Studio 2022 Lifecycle](https://learn.microsoft.com/lifecycle/products/visual-studio-2022)
+> [Visual Studio 2022 Lifecycle](/lifecycle/products/visual-studio-2022)
 
 ## Targeting and support rules
 

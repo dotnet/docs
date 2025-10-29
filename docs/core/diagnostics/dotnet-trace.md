@@ -296,7 +296,9 @@ When `--providers`, `--profile`, `--clrevents`, and `--perf-events` aren’t spe
 - `dotnet-common` — lightweight .NET runtime diagnostics.
 - `cpu-sampling` — kernel CPU sampling (perf-based) via `Universal.Events/cpu`.
 
-A machine-wide trace will be collected. .NET Processes are discovered through their diagnostics ports, which are located under the `TMPDIR` environment variable when set and otherwise under `/tmp`.
+By default, a machine-wide trace will be collected. .NET Processes are discovered through their diagnostics ports, which are located under the `TMPDIR` environment variable when set and otherwise under `/tmp`.
+
+If collecting events from all .NET Processes is undesired, `-n, --name <name>` or `-p|--process-id <PID>` can be used to specify a particular process.
 
 ### Prerequisites
 
@@ -320,6 +322,10 @@ dotnet-trace collect-linux
     # Trace Collection
     [-o|--output <trace-file-path>]
     [--duration dd:hh:mm:ss]
+
+    # .NET Process Target (Optional)
+    [-n, --name <name>]
+    [-p|--process-id <pid>]
 ```
 
 ### Options
@@ -432,6 +438,18 @@ dotnet-trace collect-linux
 - **`--duration <time-to-run>`**
 
   The time for the trace to run. Use the `dd:hh:mm:ss` format. For example `00:00:00:05` will run it for 5 seconds.
+
+#### .NET Process Target Options
+
+See [Default collection behavior](#default-collection-behavior)
+
+- **`-n, --name <name>`**
+
+  The name of the process to collect the trace from.
+
+- **`-p|--process-id <PID>`**
+
+  The process ID to collect the trace from.
 
 > [!NOTE]
 

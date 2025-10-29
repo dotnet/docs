@@ -55,9 +55,8 @@ The `vbc.exe` command-line compiler is only used for older .NET Framework projec
 2. At the command line, type `vbc.exe <sourceFileName>` and then press **Enter**.
 
 For example:
-```bash
-cd SourceFiles
-vbc.exe HelloWorld.vb```
+
+    vbc.exe HelloWorld.vb
 
 ## See also
 

@@ -65,4 +65,3 @@ vbc.exe HelloWorld.vb
 - [Visual Basic Command-Line Compiler](index.md)
 - [Conditional Compilation](../../programming-guide/program-structure/conditional-compilation.md)
 - For modern .NET SDK usage, see [dotnet build](../../../core/tools/dotnet-build.md)
-

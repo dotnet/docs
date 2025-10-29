@@ -78,6 +78,20 @@ namespace anonymous_types
 
             Console.WriteLine($"Title: {employee.title}, Department: {employee.department}, Salary: {employee.salary}");
             // </ProjectionExample>
+
+            // <TupleExample>
+            // Anonymous type example.
+            var anonymousProduct = new { Name = "Widget", Price = 19.99M };
+            Console.WriteLine($"Anonymous: {anonymousProduct.Name} costs ${anonymousProduct.Price}");
+
+            // Equivalent using a tuple with named elements.
+            var tupleProduct = (Name: "Widget", Price: 19.99M);
+            Console.WriteLine($"Tuple: {tupleProduct.Name} costs ${tupleProduct.Price}");
+
+            // Tuples support deconstruction.
+            var (productName, productPrice) = tupleProduct;
+            Console.WriteLine($"Deconstructed: {productName} costs ${productPrice}");
+            // </TupleExample>
         }
     }
 }

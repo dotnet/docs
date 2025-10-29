@@ -2,11 +2,11 @@
 title: dotnet nuget trust command
 description: The dotnet nuget trust command gets or sets trusted signers to the NuGet configuration.
 author: erdembayar
-ms.date: 06/02/2021
+ms.date: 10/28/2025
 ---
 # dotnet nuget trust
 
-**This article applies to:** ✔️ .NET 5.0.300 SDK and later versions
+**This article applies to:** ✔️ .NET 6 SDK and later versions
 
 ## Name
 

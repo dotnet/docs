@@ -1,11 +1,11 @@
 ---
 title: dotnet new update
 description: The dotnet new update command updates installed template packages.
-ms.date: 04/29/2021
+ms.date: 10/28/2025
 ---
 # dotnet new update
 
-**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
+**This article applies to:** ✔️ .NET 6 SDK and later versions
 
 ## Name
 

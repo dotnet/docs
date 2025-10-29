@@ -91,7 +91,7 @@ Creates a *Directory.Build.targets* file for customizing MSBuild targets and tas
 
 - **`-f|--framework <FRAMEWORK>`**
 
-  Specifies the [framework](../../standard/frameworks.md) to target. Available since .NET Core 3.0 SDK.
+  Specifies the [framework](../../standard/frameworks.md) to target.
 
   The following table lists the default values according to the SDK version you're using:
 
@@ -413,7 +413,7 @@ The ability to create a project for an earlier TFM depends on having that versio
 
 - **`-f|--framework <FRAMEWORK>`**
 
-  Specifies the [framework](../../standard/frameworks.md) to target. Option not available in .NET Core 2.2 SDK.
+  Specifies the [framework](../../standard/frameworks.md) to target.
 
   The following table lists the default values according to the SDK version number you're using:
 
@@ -514,7 +514,7 @@ The ability to create a project for an earlier TFM depends on having that versio
 
 - **`-f|--framework <FRAMEWORK>`**
 
-  Specifies the [framework](../../standard/frameworks.md) to target. Option available since .NET Core 3.0 SDK.
+  Specifies the [framework](../../standard/frameworks.md) to target.
 
   The following table lists the default values according to the SDK version number you're using:
 
@@ -658,7 +658,7 @@ Creates a web API project with AOT publish enabled. For more information, see [N
 
 - **`-f|--framework <FRAMEWORK>`**
 
-  Specifies the [framework](../../standard/frameworks.md) to target. Option not available in .NET Core 2.2 SDK.
+  Specifies the [framework](../../standard/frameworks.md) to target.
 
   The following table lists the default values according to the SDK version number you're using:
 
@@ -765,7 +765,7 @@ The following table shows templates that have been discontinued and no longer co
 
 - **`-uld|--use-local-db`**
 
-  Specifies LocalDB should be used instead of SQLite. Only applies to `Individual` or `IndividualB2C` authentication. Available since .NET Core 3.0 SDK.
+  Specifies LocalDB should be used instead of SQLite. Only applies to `Individual` or `IndividualB2C` authentication.
 
 - **`-f|--framework <FRAMEWORK>`**
 

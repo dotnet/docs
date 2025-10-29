@@ -1,11 +1,11 @@
 ---
 title: dotnet new search
 description: The dotnet new search command searches for templates on NuGet.org.
-ms.date: 04/29/2021
+ms.date: 10/28/2025
 ---
 # dotnet new search
 
-**This article applies to:** ✔️ .NET Core 5.0.300 SDK and later versions
+**This article applies to:** ✔️ .NET 6 SDK and later versions
 
 ## Name
 

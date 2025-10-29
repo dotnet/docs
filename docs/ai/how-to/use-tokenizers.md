@@ -24,6 +24,12 @@ Install the Microsoft.ML.Tokenizers NuGet package:
 dotnet add package Microsoft.ML.Tokenizers
 ```
 
+For Tiktoken models (like GPT-4), you also need to install the corresponding data package:
+
+```dotnetcli
+dotnet add package Microsoft.ML.Tokenizers.Data.O200kBase
+```
+
 ## Key features
 
 The Microsoft.ML.Tokenizers library provides:

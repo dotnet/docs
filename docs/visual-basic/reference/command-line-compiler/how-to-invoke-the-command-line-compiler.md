@@ -25,7 +25,8 @@ You can invoke the command-line compiler by typing the name of its executable fi
 
 4. At the command line, type `vbc.exe <sourceFileName>` and then press **Enter**.
 
-**Tip:** For modern .NET projects, use the `dotnet build` command to compile Visual Basic source files.
+**Tip:** For modern .NET projects, use the `dotnet build` command to compile Visual Basic source files.  
+
 The `vbc.exe` command-line compiler is only used for older .NET Framework projects.
 
 ```markdown

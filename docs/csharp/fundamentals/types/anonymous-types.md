@@ -15,22 +15,6 @@ Anonymous types provide a convenient way to encapsulate a set of read-only prope
 > [!TIP]
 > In most scenarios, [tuples](../../language-reference/builtin-types/value-tuples.md) are the preferred choice over anonymous types. Tuples provide better performance, support deconstruction, and offer more flexible syntax. Use anonymous types primarily when you need expression tree support or when working with code that requires reference types.
 
-You create anonymous types by using the [`new`](../../language-reference/operators/new-operator.md) operator together with an object initializer. For more information about object initializers, see [Object and Collection Initializers](../../programming-guide/classes-and-structs/object-and-collection-initializers.md).
-
-The following example shows an anonymous type that is initialized with two properties named `Amount` and `Message`.
-
-```csharp
-var v = new { Amount = 108, Message = "Hello" };
-
-// Rest the mouse pointer over v.Amount and v.Message in the following
-// statement to verify that their inferred types are int and string.
-Console.WriteLine(v.Amount + v.Message);
-```
-
-Anonymous types are typically used in the [`select`](../../language-reference/keywords/select-clause.md) clause of a query expression to return a subset of the properties from each object in the source sequence. For more information about queries, see [LINQ in C#](../../linq/index.md).
-
-Anonymous types contain one or more public read-only properties. No other kinds of class members, such as methods or events, are valid. The expression that is used to initialize a property can't be `null`, an anonymous function, or a pointer type.
-
 ## Anonymous types vs tuples
 
 Both anonymous types and tuples let you group multiple values without defining a named type. However, tuples are the preferred choice in most scenarios because they provide better performance and more flexibility. The following table summarizes the key differences:
@@ -45,7 +29,7 @@ Both anonymous types and tuples let you group multiple values without defining a
 | Access modifier | `internal` | `public` |
 | Member names | Required or inferred | Optional (with default names like `Item1`, `Item2`) |
 
-### When to use tuples
+## When to use tuples
 
 Use tuples when:
 
@@ -58,7 +42,7 @@ The following example shows how tuples provide similar functionality to anonymou
 
 :::code language="csharp" source="snippets/anonymous-types/Program.cs" ID="TupleExample":::
 
-### When to use anonymous types
+## When to use anonymous types
 
 Use anonymous types when:
 
@@ -72,13 +56,15 @@ The most common scenario is to initialize an anonymous type with properties from
 
 :::code language="csharp" source="snippets/anonymous-types/Program.cs" ID="ProductDefinition":::
 
-The anonymous type declaration starts with the `new` keyword. The declaration initializes a new type that uses only two properties from `Product`. Using anonymous types causes a smaller amount of data to be returned in the query.
+The anonymous type declaration starts with the [`new`](../../language-reference/operators/new-operator.md) operator together with an [object initializer](../../programming-guide/classes-and-structs/object-and-collection-initializers.md). The declaration initializes a new type that uses only two properties from `Product`. Anonymous types are typically used in the [`select`](../../language-reference/keywords/select-clause.md) clause of a query expression to return a smaller amount of data. For more information about queries, see [LINQ in C#](../../linq/index.md).
 
 If you don't specify member names in the anonymous type, the compiler gives the anonymous type members the same name as the property being used to initialize them. You provide a name for a property that's being initialized with an expression, as shown in the previous example. In the following example, the names of the properties of the anonymous type are `Color` and `Price`. The instances are item from the `products` collection of `Product` types:
 
 :::code language="csharp" source="snippets/anonymous-types/Program.cs" ID="snippet81":::
 
-## Projection initializers
+Anonymous types contain one or more public read-only properties. No other kinds of class members, such as methods or events, are valid. The expression that is used to initialize a property can't be `null`, an anonymous function, or a pointer type.
+
+## Projection initializers with anonymous types
 
 Anonymous types support *projection initializers*, which allow you to use local variables or parameters directly without explicitly specifying the member name. The compiler infers the member names from the variable names. The following example demonstrates this simplified syntax:
 

@@ -28,7 +28,7 @@ You can invoke the command-line compiler by typing the name of its executable fi
 **Tip:** For modern .NET projects, use the `dotnet build` command to compile Visual Basic source files.
 The `vbc.exe` command-line compiler is only used for older .NET Framework projects.
 
-    For example, if you stored your source code in a directory called `SourceFiles`, you would open the Command Prompt and type:
+For example, if you stored your source code in a directory called `SourceFiles`, you would open the Command Prompt and type:
 
 ```bash
 cd SourceFiles

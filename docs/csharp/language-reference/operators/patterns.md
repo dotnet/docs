@@ -182,7 +182,7 @@ You can also add a run-time type check and a variable declaration to a property 
 
 :::code language="csharp" source="snippets/patterns/PropertyPattern.cs" id="WithTypeCheck":::
 
-This specifially means that the *empty* property pattern `is { }` matches everything non-null, and can be used instead of the `is not null` to create a variable: `somethingPossiblyNull is { } somethingDefinitelyNotNull`.
+This specifically means that the *empty* property pattern `is { }` matches everything non-null, and can be used instead of the `is not null` to create a variable: `somethingPossiblyNull is { } somethingDefinitelyNotNull`.
 
 :::code language="csharp" source="snippets/patterns/PropertyPattern.cs" id="EmptyPropertyPattern":::
 

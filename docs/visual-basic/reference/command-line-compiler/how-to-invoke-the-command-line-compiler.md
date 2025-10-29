@@ -28,6 +28,8 @@ You can invoke the command-line compiler by typing the name of its executable fi
 **Tip:** For modern .NET projects, use the `dotnet build` command to compile Visual Basic source files.
 The `vbc.exe` command-line compiler is only used for older .NET Framework projects.
 
+```markdown
+```
 For example, if you stored your source code in a directory called `SourceFiles`, you would open the Command Prompt and type:
 
 ```bash
@@ -50,7 +52,7 @@ vbc.exe Source.vb
 
 6. Click **OK** to confirm your edits and close the dialog boxes.
 
-     After you change the PATH environment variable, you can run the Visual Basic compiler at the Windows Command Prompt from any directory on the computer.
+ After you change the PATH environment variable, you can run the Visual Basic compiler at the Windows Command Prompt from any directory on the computer.
 
 ## To invoke the compiler using the Windows Command Prompt
 
@@ -58,7 +60,8 @@ vbc.exe Source.vb
 
 2. At the command line, type `vbc.exe <sourceFileName>` and then press **Enter**.
 
-
+```markdown
+```
 For example, if you stored your source code in a directory called `SourceFiles`, you would open the Command Prompt and type:
 
 ```bash

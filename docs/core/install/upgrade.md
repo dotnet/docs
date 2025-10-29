@@ -15,10 +15,6 @@ Common reasons to upgrade to a new .NET version:
 - The new version supports a new operating system
 - The new version has an important API, performance, or security feature
 
-## Controlled upgrades and version pinning
-
-When you upgrade development tools like the .NET SDK, Visual Studio, or other components, you might encounter new behaviors, analyzer warnings, or breaking changes that affect your build process. By [pinning to a version](#version-pinning), you can upgrade your development environment while maintaining control over when specific components are updated in your projects.
-
 ## Upgrade development environment
 
 To upgrade to a new .NET version, the .NET SDK is the primary component to install. It includes an updated .NET CLI, build system, and runtime version.
@@ -57,6 +53,8 @@ More resources:
 - [Upgrade .NET MAUI from .NET 7 to .NET 8](https://github.com/dotnet/maui/wiki/Upgrading-.NET-MAUI-from-.NET-7-to-.NET-8)
 
 ## Version pinning
+
+When you upgrade development tools like the .NET SDK, Visual Studio, or other components, you might encounter new behaviors, analyzer warnings, or breaking changes that affect your build process. By pinning to a version, you can upgrade your development environment while maintaining control over when specific components are updated in your projects.
 
 Version pinning provides several benefits:
 
@@ -116,6 +114,10 @@ For more information, see [AnalysisLevel](../project-sdk/msbuild-props.md#analys
 
 By managing package versions consistently across projects, you can prevent unexpected updates and maintain reliable builds.
 
+- [Package lock files](#package-lock-files)
+- [Central package management](#central-package-management)
+- [Package source mapping](#package-source-mapping)
+
 #### Package lock files
 
 Package lock files ensure that package restore operations use the exact same package versions across different environments. The lock file (`packages.lock.json`) records the exact versions of all packages and their dependencies.
@@ -158,7 +160,7 @@ Create a *Directory.Packages.props* file in your solution root:
 </Project>
 ```
 
-In your project files, reference packages without specifying versions:
+In your project files, reference packages without specifying a version:
 
 ```xml
 <ItemGroup>

@@ -57,8 +57,7 @@ The `vbc.exe` command-line compiler is only used for older .NET Framework projec
 For example:
 ```bash
 cd SourceFiles
-vbc.exe HelloWorld.vb
-```
+vbc.exe HelloWorld.vb```
 
 ## See also
 

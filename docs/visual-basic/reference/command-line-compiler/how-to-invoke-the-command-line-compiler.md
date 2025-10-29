@@ -11,6 +11,10 @@ ms.assetid: 0fd9a8f6-f34e-4c35-a49d-9b9bbd8da4a9
 ---
 # How to Invoke the Command-Line Compiler
 
+[!TIP]
+> For modern .NET projects, use the [`dotnet build`](../../core/tools/dotnet-build.md) command to compile Visual Basic source files.  
+> The `vbc.exe` command-line compiler is only used for older .NET Framework projects.
+
 You can invoke the command-line compiler by typing the name of its executable file into the command line, also known as the MS-DOS prompt. If you compile from the default Windows Command Prompt, you must type the fully qualified path to the executable file. To override this default behavior, you can either use the Developer Command Prompt for Visual Studio, or modify the PATH environment variable. Both allow you to compile from any directory by simply typing the compiler name.
 
 [!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]
@@ -25,18 +29,13 @@ You can invoke the command-line compiler by typing the name of its executable fi
 
 4. At the command line, type `vbc.exe <sourceFileName>` and then press **Enter**.
 
-**Tip:** For modern .NET projects, use the `dotnet build` command to compile Visual Basic source files.  
-
-The `vbc.exe` command-line compiler is only used for older .NET Framework projects.
-
-```markdown
-```
 For example, if you stored your source code in a directory called `SourceFiles`, you would open the Command Prompt and type:
 
 ```bash
 cd SourceFiles
 vbc.exe Source.vb
 ```
+
 ## To set the PATH environment variable to the compiler for the Windows Command Prompt
 
 1. Use the Windows Search feature to find Vbc.exe on your local disk.
@@ -61,16 +60,16 @@ vbc.exe Source.vb
 
 2. At the command line, type `vbc.exe <sourceFileName>` and then press **Enter**.
 
-```markdown
-```
 For example, if you stored your source code in a directory called `SourceFiles`, you would open the Command Prompt and type:
 
 ```bash
 cd SourceFiles
 vbc.exe Source.vb
 ```
+
 ## See also
 
 - [Visual Basic Command-Line Compiler](index.md)
 - [Conditional Compilation](../../programming-guide/program-structure/conditional-compilation.md)
-- For modern .NET SDK usage, see [dotnet build](../../../core/tools/dotnet-build.md)
+- [dotnet build](../../../core/tools/dotnet-build.md) — for modern .NET SDK usage
+

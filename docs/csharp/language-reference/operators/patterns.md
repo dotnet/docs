@@ -183,19 +183,9 @@ You can also add a run-time type check and a variable declaration to a property 
 :::code language="csharp" source="snippets/patterns/PropertyPattern.cs" id="WithTypeCheck":::
 
 This specifially means that the *empty* property pattern `is { }` matches everything non-null, and can be used instead of the `is not null` to create a variable: `somethingPossiblyNull is { } somethingDefinitelyNotNull`.
---------- @BillWagner here's a code example to be put into a `:::code:::` block:
-```cs
-if (GetSomeNullableStringValue() is { } nonNullValue) // Empty property pattern with variable creation
-{
-    Console.WriteLine("NotNull:" + nonNullValue)
-}
-else
-{
-    nonNullValue = "NullFallback"; // we can access the variable here.
-    Console.WriteLine("it was null, here's the fallback: " + nonNullValue)
-}
-```
----------end of the example
+
+:::code language="csharp" source="snippets/patterns/PropertyPattern.cs" id="EmptyPropertyPattern":::
+
 A property pattern is a recursive pattern. You can use any pattern as a nested pattern. Use a property pattern to match parts of data against nested patterns, as the following example shows:
 
 :::code language="csharp" source="snippets/patterns/PropertyPattern.cs" id="RecursivePropertyPattern":::

@@ -12,8 +12,8 @@ ms.assetid: 0fd9a8f6-f34e-4c35-a49d-9b9bbd8da4a9
 # How to Invoke the Command-Line Compiler
 
 [!TIP]
-> For modern .NET projects, use the [`dotnet build`](../../core/tools/dotnet-build.md) command to compile Visual Basic source files.  
-> The `vbc.exe` command-line compiler is only used for older .NET Framework projects.
+For modern .NET projects, use the [`dotnet build`](../../../core/tools/dotnet-build.md) command to compile Visual Basic source files.
+The `vbc.exe` command-line compiler is only used for older .NET Framework projects.
 
 You can invoke the command-line compiler by typing the name of its executable file into the command line, also known as the MS-DOS prompt. If you compile from the default Windows Command Prompt, you must type the fully qualified path to the executable file. To override this default behavior, you can either use the Developer Command Prompt for Visual Studio, or modify the PATH environment variable. Both allow you to compile from any directory by simply typing the compiler name.
 

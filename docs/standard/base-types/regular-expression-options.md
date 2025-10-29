@@ -333,7 +333,7 @@ By default, the regular expression engine uses canonical behavior when matching 
 > [!NOTE]
 > ECMAScript-compliant behavior is available only by supplying the <xref:System.Text.RegularExpressions.RegexOptions.ECMAScript?displayProperty=nameWithType> value to the `options` parameter of a <xref:System.Text.RegularExpressions.Regex> class constructor or static pattern-matching method. It is not available as an inline option.
 
-The <xref:System.Text.RegularExpressions.RegexOptions.ECMAScript?displayProperty=nameWithType> option can be combined only with the <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=nameWithType> and <xref:System.Text.RegularExpressions.RegexOptions.Multiline?displayProperty=nameWithType> options. The use of any other option in a regular expression results in an <xref:System.ArgumentOutOfRangeException>.
+The <xref:System.Text.RegularExpressions.RegexOptions.ECMAScript?displayProperty=nameWithType> option can be combined only with the <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=nameWithType>, <xref:System.Text.RegularExpressions.RegexOptions.Multiline?displayProperty=nameWithType>, and <xref:System.Text.RegularExpressions.RegexOptions.Compiled?displayProperty=nameWithType> options. The use of any other option in a regular expression results in an <xref:System.ArgumentOutOfRangeException>.
 
 The behavior of ECMAScript and canonical regular expressions differs in three areas: character class syntax, self-referencing capturing groups, and octal versus backreference interpretation.
 

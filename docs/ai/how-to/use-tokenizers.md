@@ -4,17 +4,16 @@ description: Learn how to use the Microsoft.ML.Tokenizers library to tokenize te
 ms.topic: how-to
 ms.date: 10/29/2025
 ai-usage: ai-assisted
-#customer intent: As a .NET developer, I want to use the Microsoft.ML.Tokenizers library to tokenize text so I can work with AI models, manage costs, and handle token limits effectively.
 ---
 # Use Microsoft.ML.Tokenizers for text tokenization
 
-The [Microsoft.ML.Tokenizers](https://www.nuget.org/packages/Microsoft.ML.Tokenizers) library provides a comprehensive set of tools for tokenizing text in .NET applications. Tokenization is essential when working with large language models (LLMs), as it allows you to manage token counts, estimate costs, and preprocess text for AI models.
+The [Microsoft.ML.Tokenizers](https://www.nuget.org/packages/Microsoft.ML.Tokenizers) library provides a comprehensive set of tools for tokenizing text in .NET applications. Tokenization is essential when you work with large language models (LLMs), as it allows you to manage token counts, estimate costs, and preprocess text for AI models.
 
 This article shows you how to use the library's key features and work with different tokenizer models.
 
 ## Prerequisites
 
-- [.NET 8.0 SDK](https://dotnet.microsoft.com/download/dotnet/8.0) or later
+- [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0) or later
 
 ## Install the package
 
@@ -35,7 +34,7 @@ dotnet add package Microsoft.ML.Tokenizers.Data.O200kBase
 The Microsoft.ML.Tokenizers library provides:
 
 - **Extensible tokenizer architecture**: Allows specialization of Normalizer, PreTokenizer, Model/Encoder, and Decoder components.
-- **Multiple tokenization algorithms**: Supports BPE (Byte Pair Encoding), Tiktoken, Llama, CodeGen, and more.
+- **Multiple tokenization algorithms**: Supports BPE (byte-pair encoding), Tiktoken, Llama, CodeGen, and more.
 - **Token counting and estimation**: Helps manage costs and context limits when working with AI services.
 - **Flexible encoding options**: Provides methods to encode text to token IDs, count tokens, and decode tokens back to text.
 
@@ -45,11 +44,9 @@ The Tiktoken tokenizer is commonly used with OpenAI models like GPT-4. The follo
 
 :::code language="csharp" source="./snippets/use-tokenizers/csharp/TokenizersExamples/TiktokenExample.cs" id="TiktokenBasic":::
 
-The tokenizer instance should be cached and reused throughout your application for better performance.
+For better performance, you should cache and reuse the tokenizer instance throughout your app.
 
-### Manage token limits
-
-When working with LLMs, you often need to manage text within token limits. The following example shows how to trim text to a specific token count:
+When you work with LLMs, you often need to manage text within token limits. The following example shows how to trim text to a specific token count:
 
 :::code language="csharp" source="./snippets/use-tokenizers/csharp/TokenizersExamples/TiktokenExample.cs" id="TiktokenTrim":::
 
@@ -59,30 +56,30 @@ The Llama tokenizer is designed for the Llama family of models. It requires a to
 
 :::code language="csharp" source="./snippets/use-tokenizers/csharp/TokenizersExamples/LlamaExample.cs" id="LlamaBasic":::
 
-### Advanced encoding options
-
 The tokenizer supports advanced encoding options, such as controlling normalization and pretokenization:
 
 :::code language="csharp" source="./snippets/use-tokenizers/csharp/TokenizersExamples/LlamaExample.cs" id="LlamaAdvanced":::
 
 ## Use BPE tokenizer
 
-Byte Pair Encoding (BPE) is the underlying algorithm used by many tokenizers, including Tiktoken. The following example demonstrates BPE tokenization:
+Byte-pair encoding (BPE) is the underlying algorithm used by many tokenizers, including Tiktoken. The following example demonstrates BPE tokenization:
 
 :::code language="csharp" source="./snippets/use-tokenizers/csharp/TokenizersExamples/BpeExample.cs" id="BpeBasic":::
 
-The library also provides specialized tokenizers like `BpeTokenizer` and `EnglishRobertaTokenizer` that you can configure with custom vocabularies for specific models.
+The library also provides specialized tokenizers like <xref:Microsoft.ML.Tokenizers.BpeTokenizer> and <xref:Microsoft.ML.Tokenizers.EnglishRobertaTokenizer> that you can configure with custom vocabularies for specific models.
 
 ## Common tokenizer operations
 
-All tokenizers in the library implement the `Tokenizer` base class, which provides a consistent API:
+All tokenizers in the library implement the <xref:Microsoft.ML.Tokenizers.Tokenizer> base class. The following table shows the available methods.
 
-- **`EncodeToIds`**: Converts text to a list of token IDs
-- **`Decode`**: Converts token IDs back to text
-- **`CountTokens`**: Returns the number of tokens in a text string
-- **`EncodeToTokens`**: Returns detailed token information including values and IDs
-- **`GetIndexByTokenCount`**: Finds the character index for a specific token count from the start
-- **`GetIndexByTokenCountFromEnd`**: Finds the character index for a specific token count from the end
+| Method                                                | Description                          |
+|-------------------------------------------------------|--------------------------------------|
+| <xref:Microsoft.ML.Tokenizers.Tokenizer.EncodeToIds*> | Converts text to a list of token IDs |
+| <xref:Microsoft.ML.Tokenizers.Tokenizer.Decode*>      | Converts token IDs back to text      |
+| <xref:Microsoft.ML.Tokenizers.Tokenizer.CountTokens*> | Returns the number of tokens in a text string |
+| <xref:Microsoft.ML.Tokenizers.Tokenizer.EncodeToTokens*> | Returns detailed token information including values and IDs |
+| <xref:Microsoft.ML.Tokenizers.Tokenizer.GetIndexByTokenCount*> | Finds the character index for a specific token count from the start |
+| <xref:Microsoft.ML.Tokenizers.Tokenizer.GetIndexByTokenCountFromEnd*> | Finds the character index for a specific token count from the end |
 
 ## Migration from other libraries
 

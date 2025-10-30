@@ -1,11 +1,11 @@
 ---
 title: dotnet sln command
 description: The dotnet-sln command provides a convenient option to add, remove, and list projects in a solution file.
-ms.date: 08/29/2025
+ms.date: 10/28/2025
 ---
 # dotnet sln
 
-**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
+**This article applies to:** ✔️ .NET 6 SDK and later versions
 
 ## Name
 

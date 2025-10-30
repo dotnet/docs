@@ -1,11 +1,11 @@
 ---
 title: dotnet package add command
 description: The 'dotnet package add' command provides a convenient option to add a NuGet package reference to a project.
-ms.date: 04/02/2025
+ms.date: 10/28/2025
 ---
 # dotnet package add
 
-**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
+**This article applies to:** ✔️ .NET 6 SDK and later versions
 
 ## Name
 
@@ -156,7 +156,7 @@ Scenario 4: `<PackageReference>` does not exist in the project file, `<PackageVe
 
 - **`--prerelease`**
 
-  Allows prerelease packages to be installed. Available since .NET Core 5 SDK
+  Allows prerelease packages to be installed.
 
 - **`-s|--source <SOURCE>`**
 

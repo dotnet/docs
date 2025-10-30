@@ -1,11 +1,11 @@
 ---
 title: dotnet command
 description: Learn about the dotnet command (the generic driver for the .NET CLI) and its usage.
-ms.date: 04/01/2025
+ms.date: 10/28/2025
 ---
 # dotnet command
 
-**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
+**This article applies to:** ✔️ .NET 6 SDK and later versions
 
 ## Name
 

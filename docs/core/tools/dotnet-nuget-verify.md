@@ -2,11 +2,11 @@
 title: dotnet nuget verify command
 description: The dotnet nuget verify command verifies a signed package.
 author: kartheekp-ms
-ms.date: 10/08/2020
+ms.date: 10/28/2025
 ---
 # dotnet nuget verify
 
-**This article applies to:** ✔️ .NET 5.0.100-rc.2.x SDK and later versions
+**This article applies to:** ✔️ .NET 6 SDK and later versions
 
 ## Name
 

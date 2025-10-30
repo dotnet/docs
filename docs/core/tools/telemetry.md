@@ -121,6 +121,7 @@ The telemetry feature collects the following data:
 | >=10.0.100    | Whether MSBuild was used for file-based apps with `dotnet run`. |
 | >=10.0.100    | Whether Roslyn compiler was used for file-based apps with `dotnet run`. |
 | >=10.0.100    | The detected LLM agent name if the CLI was invoked from an LLM agent. For more information, see [LLM detection](#llm-detection).|
+| >=10.0.100    | Captures the `global.json` state at the time a command is invoked. The state is one of the following values: **not_found**, **valid**, **invalid_json**, or **invalid_data**. |
 | >=10.0.100    | Which MSBuild task factories are used to load and run tasks (including inline C# tasks, multithreaded-aware tasks, and out-of-process tasks), and how many tasks they execute. |
 | >=10.0.100    | Number of MSBuild tasks executed in TaskHosts versus tasks not executed in TaskHosts. |
 

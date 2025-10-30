@@ -1,11 +1,11 @@
 ---
 title: dotnet reference add command
 description: The dotnet reference add command provides a convenient option to add project-to-project references.
-ms.date: 04/02/2025
+ms.date: 10/28/2025
 ---
 # dotnet reference add
 
-**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
+**This article applies to:** ✔️ .NET 6 SDK and later versions
 
 ## Name
 

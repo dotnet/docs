@@ -31,7 +31,7 @@ You can invoke the command-line compiler by typing the name of its executable fi
 
 For example, if you stored your source code in a directory called `SourceFiles`, you would open the Command Prompt and type:
 
-```bash
+```cmd
 cd SourceFiles
 vbc.exe Source.vb
 ```
@@ -62,7 +62,7 @@ vbc.exe Source.vb
 
 For example, if you stored your source code in a directory called `SourceFiles`, you would open the Command Prompt and type:
 
-```bash
+```cmd
 cd SourceFiles
 vbc.exe Source.vb
 ```
@@ -72,4 +72,3 @@ vbc.exe Source.vb
 - [Visual Basic Command-Line Compiler](index.md)
 - [Conditional Compilation](../../programming-guide/program-structure/conditional-compilation.md)
 - [dotnet build](../../../core/tools/dotnet-build.md) — for modern .NET SDK usage
-

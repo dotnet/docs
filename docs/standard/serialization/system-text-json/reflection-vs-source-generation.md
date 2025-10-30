@@ -60,3 +60,5 @@ Choose reflection or source-generation modes based on the following benefits tha
 
 \* The source generator supports *some* non-public members, for example, internal types in the same assembly.
 † Source-generated contracts can be modified using the contract customization API.
+
+Source generation-based deserialization does not support reference preservation when using constructor parameters. Constructor parameters are used for explicit constructor-based deserialization or when any of the object's properties are required or init-only. For more information, see [dotnet/runtime issue 73302](https://github.com/dotnet/runtime/issues/73302).

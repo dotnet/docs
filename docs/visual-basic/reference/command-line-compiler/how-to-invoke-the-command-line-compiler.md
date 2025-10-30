@@ -9,7 +9,11 @@ helpviewer_keywords:
   - "command line [Visual Basic], arguments"
 ms.assetid: 0fd9a8f6-f34e-4c35-a49d-9b9bbd8da4a9
 ---
-# How to: Invoke the Command-Line Compiler (Visual Basic)
+# How to Invoke the Command-Line Compiler
+
+[!TIP]
+For modern .NET projects, use the [`dotnet build`](../../../core/tools/dotnet-build.md) command to compile Visual Basic source files.
+The `vbc.exe` command-line compiler is only used for older .NET Framework projects.
 
 You can invoke the command-line compiler by typing the name of its executable file into the command line, also known as the MS-DOS prompt. If you compile from the default Windows Command Prompt, you must type the fully qualified path to the executable file. To override this default behavior, you can either use the Developer Command Prompt for Visual Studio, or modify the PATH environment variable. Both allow you to compile from any directory by simply typing the compiler name.
 
@@ -19,13 +23,18 @@ You can invoke the command-line compiler by typing the name of its executable fi
 
 1. Open the Visual Studio Tools program folder within the Microsoft Visual Studio program group.
 
-2. You can use the Developer Command Prompt for Visual Studio to access the compiler from any directory on your machine, if Visual Studio is installed.
+2. You can use the **Developer Command Prompt for Visual Studio** to access the compiler from any directory on your machine, if Visual Studio is installed.
 
-3. Invoke the Developer Command Prompt for Visual Studio.
+3. Open the **Developer Command Prompt for Visual Studio**.
 
-4. At the command line, type `vbc.exe` *sourceFileName* and then press ENTER.
+4. At the command line, type `vbc.exe <sourceFileName>` and then press **Enter**.
 
-    For example, if you stored your source code in a directory called `SourceFiles`, you would open the Command Prompt and type `cd SourceFiles` to change to that directory. If the directory contained a source file named `Source.vb`, you could compile it by typing `vbc.exe Source.vb`.
+For example, if you stored your source code in a directory called `SourceFiles`, you would open the Command Prompt and type:
+
+```cmd
+cd SourceFiles
+vbc.exe Source.vb
+```
 
 ## To set the PATH environment variable to the compiler for the Windows Command Prompt
 
@@ -43,17 +52,23 @@ You can invoke the command-line compiler by typing the name of its executable fi
 
 6. Click **OK** to confirm your edits and close the dialog boxes.
 
-     After you change the PATH environment variable, you can run the Visual Basic compiler at the Windows Command Prompt from any directory on the computer.
+ After you change the PATH environment variable, you can run the Visual Basic compiler at the Windows Command Prompt from any directory on the computer.
 
 ## To invoke the compiler using the Windows Command Prompt
 
 1. From the **Start** menu, click on the **Accessories** folder, and then open the **Windows Command Prompt**.
 
-2. At the command line, type `vbc.exe`*sourceFileName* and then press ENTER.
+2. At the command line, type `vbc.exe <sourceFileName>` and then press **Enter**.
 
-     For example, if you stored your source code in a directory called `SourceFiles`, you would open the Command Prompt and type `cd SourceFiles` to change to that directory. If the directory contained a source file named `Source.vb`, you could compile it by typing `vbc.exe Source.vb`.
+For example, if you stored your source code in a directory called `SourceFiles`, you would open the Command Prompt and type:
+
+```cmd
+cd SourceFiles
+vbc.exe Source.vb
+```
 
 ## See also
 
 - [Visual Basic Command-Line Compiler](index.md)
 - [Conditional Compilation](../../programming-guide/program-structure/conditional-compilation.md)
+- [dotnet build](../../../core/tools/dotnet-build.md) — for modern .NET SDK usage

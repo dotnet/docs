@@ -62,11 +62,13 @@ The tokenizer supports advanced encoding options, such as controlling normalizat
 
 ## Use BPE tokenizer
 
-Byte-pair encoding (BPE) is the underlying algorithm used by many tokenizers, including Tiktoken. The following example demonstrates BPE tokenization:
+*Byte-pair encoding* (BPE) is the underlying algorithm used by many tokenizers, including Tiktoken. BPE was initially developed as an algorithm to compress texts, and then used by OpenAI for tokenization when it pretrained the GPT model. The following example demonstrates BPE tokenization:
 
 :::code language="csharp" source="./snippets/use-tokenizers/csharp/TokenizersExamples/BpeExample.cs" id="BpeBasic":::
 
 The library also provides specialized tokenizers like <xref:Microsoft.ML.Tokenizers.BpeTokenizer> and <xref:Microsoft.ML.Tokenizers.EnglishRobertaTokenizer> that you can configure with custom vocabularies for specific models.
+
+For more information about BPE, see [Byte-pair encoding tokenization](https://huggingface.co/learn/llm-course/chapter6/5).
 
 ## Common tokenizer operations
 
@@ -81,7 +83,7 @@ All tokenizers in the library implement the <xref:Microsoft.ML.Tokenizers.Tokeni
 | <xref:Microsoft.ML.Tokenizers.Tokenizer.GetIndexByTokenCount*> | Finds the character index for a specific token count from the start |
 | <xref:Microsoft.ML.Tokenizers.Tokenizer.GetIndexByTokenCountFromEnd*> | Finds the character index for a specific token count from the end |
 
-## Migration from other libraries
+## Migrate from other libraries
 
 If you're currently using `DeepDev.TokenizerLib` or `SharpToken`, consider migrating to Microsoft.ML.Tokenizers. The library has been enhanced to cover scenarios from those libraries and provides better performance and support. For migration guidance, see the [migration guide](https://github.com/dotnet/machinelearning/blob/main/docs/code/microsoft-ml-tokenizers-migration-guide.md).
 

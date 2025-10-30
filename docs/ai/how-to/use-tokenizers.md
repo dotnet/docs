@@ -76,12 +76,12 @@ All tokenizers in the library implement the <xref:Microsoft.ML.Tokenizers.Tokeni
 
 | Method                                                | Description                          |
 |-------------------------------------------------------|--------------------------------------|
-| <xref:Microsoft.ML.Tokenizers.Tokenizer.EncodeToIds*> | Converts text to a list of token IDs |
-| <xref:Microsoft.ML.Tokenizers.Tokenizer.Decode*>      | Converts token IDs back to text      |
-| <xref:Microsoft.ML.Tokenizers.Tokenizer.CountTokens*> | Returns the number of tokens in a text string |
-| <xref:Microsoft.ML.Tokenizers.Tokenizer.EncodeToTokens*> | Returns detailed token information including values and IDs |
-| <xref:Microsoft.ML.Tokenizers.Tokenizer.GetIndexByTokenCount*> | Finds the character index for a specific token count from the start |
-| <xref:Microsoft.ML.Tokenizers.Tokenizer.GetIndexByTokenCountFromEnd*> | Finds the character index for a specific token count from the end |
+| <xref:Microsoft.ML.Tokenizers.Tokenizer.EncodeToIds*> | Converts text to a list of token IDs. |
+| <xref:Microsoft.ML.Tokenizers.Tokenizer.Decode*>      | Converts token IDs back to text.      |
+| <xref:Microsoft.ML.Tokenizers.Tokenizer.CountTokens*> | Returns the number of tokens in a text string. |
+| <xref:Microsoft.ML.Tokenizers.Tokenizer.EncodeToTokens*> | Returns detailed token information including values and IDs. |
+| <xref:Microsoft.ML.Tokenizers.Tokenizer.GetIndexByTokenCount*> | Finds the character index for a specific token count from the start. |
+| <xref:Microsoft.ML.Tokenizers.Tokenizer.GetIndexByTokenCountFromEnd*> | Finds the character index for a specific token count from the end. |
 
 ## Migrate from other libraries
 

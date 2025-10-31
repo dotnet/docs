@@ -31,7 +31,7 @@ For operands of the same [delegate](../builtin-types/reference-types.md#the-dele
 
   :::code interactive="try-dotnet-method" language="csharp" source="snippets/shared/SubtractionOperator.cs" id="DelegateRemovalNoChange":::
 
-  The preceding example also demonstrates that during delegate removal delegate instances are compared. For example, delegates that are produced from evaluation of identical [lambda expressions](lambda-expressions.md) aren't equal. For more information about delegate equality, see the [Delegate equality operators](~/_csharpstandard/standard/expressions.md#12139-delegate-equality-operators) section of the [C# language specification](~/_csharpstandard/standard/README.md).
+  The preceding example also demonstrates that during delegate removal delegate instances are compared. For example, delegates that are produced from evaluation of identical [lambda expressions](lambda-expressions.md) aren't equal. For more information about delegate equality, see the [Delegate equality operators](~/_csharpstandard/standard/expressions.md#12149-delegate-equality-operators) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 - If the left-hand operand is `null`, the result of the operation is `null`. If the right-hand operand is `null`, the result of the operation is the left-hand operand.
 
@@ -69,7 +69,7 @@ A user-defined type can [overload](operator-overloading.md) the `-` operator. Wh
 
 ## C# language specification
 
-For more information, see the [Unary minus operator](~/_csharpstandard/standard/expressions.md#1293-unary-minus-operator) and [Subtraction operator](~/_csharpstandard/standard/expressions.md#12116-subtraction-operator) sections of the [C# language specification](~/_csharpstandard/standard/README.md). For more information on overloading the compound assignment operators in C# 14 and later, see the [user defined compound assignment](~/_csharplang/proposals/csharp-14.0/user-defined-compound-assignment.md) feature specification.
+For more information, see the [Unary minus operator](~/_csharpstandard/standard/expressions.md#1293-unary-minus-operator) and [Subtraction operator](~/_csharpstandard/standard/expressions.md#12126-subtraction-operator) sections of the [C# language specification](~/_csharpstandard/standard/README.md). For more information on overloading the compound assignment operators in C# 14 and later, see the [user defined compound assignment](~/_csharplang/proposals/csharp-14.0/user-defined-compound-assignment.md) feature specification.
 
 ## See also
 

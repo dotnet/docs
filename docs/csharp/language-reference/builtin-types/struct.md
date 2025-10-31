@@ -172,8 +172,8 @@ For more information, see the [Structs](~/_csharpstandard/standard/structs.md) s
 
 For more information about `struct` features, see the following feature proposal notes:
 
-- [Readonly structs](~/_csharplang/proposals/csharp-7.2/readonly-ref.md#readonly-structs)
-- [Readonly instance members](~/_csharplang/proposals/csharp-8.0/readonly-instance-members.md)
+- [Readonly structs](~/_csharpstandard/standard/structs.md#1622-struct-modifiers)
+- [Readonly instance members](~/_csharpstandard/standard/structs.md#163-struct-members)
 - [Parameterless struct constructors](~/_csharplang/proposals/csharp-10.0/parameterless-struct-constructors.md)
 - [Allow `with` expression on structs](~/_csharplang/proposals/csharp-10.0/record-structs.md#allow-with-expression-on-structs)
 - [Record structs](~/_csharplang/proposals/csharp-10.0/record-structs.md)

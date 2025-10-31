@@ -40,7 +40,6 @@ An interface declaration can contain the following members:
 - [A static constructor](../../programming-guide/classes-and-structs/constructors.md#static-constructors).
 - [Nested types](../../programming-guide/classes-and-structs/nested-types.md).
 - [Static fields, methods, properties, indexers, and events](static.md).
-- [Member declarations using the explicit interface implementation syntax](~/_csharplang/proposals/csharp-8.0/default-interface-methods.md#explicit-implementation-in-interfaces).
 - Explicit access modifiers (the default access for abstract methods is [`public`](access-modifiers.md)).
 
 ## Default interface members
@@ -90,7 +89,7 @@ The following example demonstrates interface implementation. In this example, th
 
 ## C# language specification
 
-For more information, see the [Interfaces](~/_csharpstandard/standard/interfaces.md) section of the [C# language specification](~/_csharpstandard/standard/README.md), the feature specification for [C# 8 - Default interface members](~/_csharplang/proposals/csharp-8.0/default-interface-methods.md), and the feature spec for [C# 11 - static abstract members in interfaces](~/_csharplang/proposals/csharp-11.0/static-abstracts-in-interfaces.md).
+For more information, see the [Interfaces](~/_csharpstandard/standard/interfaces.md) section of the [C# language specification](~/_csharpstandard/standard/README.md) and the feature spec for [C# 11 - static abstract members in interfaces](~/_csharplang/proposals/csharp-11.0/static-abstracts-in-interfaces.md).
 
 ## See also
 

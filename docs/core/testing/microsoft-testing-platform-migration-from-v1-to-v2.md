@@ -6,7 +6,7 @@ ms.author: ygerges
 ms.date: 10/08/2025
 ---
 
-# Mirate from Microsoft.Testing.Platform v1 to v2
+# Migrate from Microsoft.Testing.Platform v1 to v2
 
 The stable version Microsoft.Testing.Platform v2 is now available. This migration guide explores what's changed in Microsoft.Testing.Platform v2 and how you can migrate to this version.
 

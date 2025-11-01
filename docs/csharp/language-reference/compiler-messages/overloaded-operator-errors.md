@@ -298,7 +298,7 @@ To fix these errors, remove invalid conversion operators or restructure your typ
 - **CS0217**: *In order to be applicable as a short-circuit operator, a user-defined logical operator must have the same return type as the type of its 2 parameters.*
 - **CS0218**: *The type must contain declarations of operator true and operator false.*
 
-These errors occur when you define logical operators incorrectly. Certain operators must be defined in pairs, and short-circuit operators have specific signature requirements. For more information, see [true and false operators](../operators/true-false-operators.md), [Boolean logical operators](../operators/boolean-logical-operators.md), and [User-defined conditional logical operators](~/_csharpstandard/standard/expressions.md#12153-user-defined-conditional-logical-operators). The following code demonstrates these errors:
+These errors occur when you define logical operators incorrectly. Certain operators must be defined in pairs, and short-circuit operators have specific signature requirements. For more information, see [true and false operators](../operators/true-false-operators.md), [Boolean logical operators](../operators/boolean-logical-operators.md), and [User-defined conditional logical operators](~/_csharpstandard/standard/expressions.md#12163-user-defined-conditional-logical-operators). The following code demonstrates these errors:
 
 ```csharp
 class C

@@ -75,7 +75,7 @@ To check for non-null, you can use a [negated](#logical-patterns) `null` [consta
 
 :::code language="csharp" source="snippets/patterns/DeclarationAndTypePatterns.cs" id="NonNullCheck":::
 
-For more information, see the [Declaration pattern](~/_csharplang/proposals/csharp-8.0/patterns.md#declaration-pattern) and [Type pattern](~/_csharplang/proposals/csharp-9.0/patterns3.md#type-patterns) sections of the feature proposal notes.
+For more information, see the [Declaration pattern](~/_csharpstandard/standard/patterns.md#1122-declaration-pattern) and [Type pattern](~/_csharplang/proposals/csharp-9.0/patterns3.md#type-patterns) sections of the feature proposal notes.
 
 ## Constant pattern
 
@@ -105,7 +105,7 @@ You can use a [negated](#logical-patterns) `null` constant pattern to check for 
 
 :::code language="csharp" source="snippets/patterns/ConstantPattern.cs" id="NonNullCheck":::
 
-For more information, see the [Constant pattern](~/_csharplang/proposals/csharp-8.0/patterns.md#constant-pattern) section of the feature proposal note.
+For more information, see the [Constant pattern](~/_csharpstandard/standard/patterns.md#1123-constant-pattern) section of the feature proposal note.
 
 ## Relational patterns
 
@@ -196,7 +196,7 @@ You can reference nested properties or fields within a property pattern. This ca
 
 :::code language="csharp" source="snippets/patterns/PropertyPattern.cs" id="ExtendedPropertyPattern":::
 
-For more information, see the [Property pattern](~/_csharplang/proposals/csharp-8.0/patterns.md#property-pattern) section of the feature proposal note and the [Extended property patterns](~/_csharplang/proposals/csharp-10.0/extended-property-patterns.md) feature proposal note.
+For more information, see the [Property pattern](~/_csharpstandard/standard/patterns.md#1126-property-pattern) section of the feature proposal note and the [Extended property patterns](~/_csharplang/proposals/csharp-10.0/extended-property-patterns.md) feature proposal note.
 
 > [!TIP]
 > You can use the [Simplify property pattern (IDE0170)](../../../fundamentals/code-analysis/style-rules/ide0170.md) style rule to improve code readability by suggesting places to use extended property patterns.
@@ -240,7 +240,7 @@ You can also extend a positional pattern in any of the following ways:
 
 A positional pattern is a recursive pattern. That is, you can use any pattern as a nested pattern.
 
-For more information, see the [Positional pattern](~/_csharplang/proposals/csharp-8.0/patterns.md#positional-pattern) section of the feature proposal note.
+For more information, see the [Positional pattern](~/_csharpstandard/standard/patterns.md#1125-positional-pattern) section of the feature proposal note.
 
 ## `var` pattern
 
@@ -256,7 +256,7 @@ In the preceding example, pattern `var (x, y)` is equivalent to a [positional pa
 
 In a `var` pattern, the type of a declared variable is the compile-time type of the expression that is matched against the pattern.
 
-For more information, see the [Var pattern](~/_csharplang/proposals/csharp-8.0/patterns.md#var-pattern) section of the feature proposal note.
+For more information, see the [Var pattern](~/_csharpstandard/standard/patterns.md#1124-var-pattern) section of the feature proposal note.
 
 ## Discard pattern
 
@@ -268,7 +268,7 @@ In the preceding example, a discard pattern is used to handle `null` and any int
 
 A discard pattern can't be a pattern in an `is` expression or a `switch` statement. In those cases, to match any expression, use a [`var` pattern](#var-pattern) with a discard: `var _`. A discard pattern can be a pattern in a `switch` expression.
 
-For more information, see the [Discard pattern](~/_csharplang/proposals/csharp-8.0/patterns.md#discard-pattern) section of the feature proposal note.
+For more information, see the [Discard pattern](~/_csharpstandard/standard/patterns.md#1127-discard-pattern) section of the feature proposal note.
 
 ## Parenthesized pattern
 
@@ -304,7 +304,6 @@ For more information, see the [Patterns and pattern matching](~/_csharpstandard/
 
 For information about features added in C# 8 and later, see the following feature proposal notes:
 
-- [Recursive pattern matching](~/_csharplang/proposals/csharp-8.0/patterns.md)
 - [Pattern-matching updates](~/_csharplang/proposals/csharp-9.0/patterns3.md)
 - [Extended property patterns](~/_csharplang/proposals/csharp-10.0/extended-property-patterns.md)
 - [C# 11 - List patterns](~/_csharplang/proposals/csharp-11.0/list-patterns.md)

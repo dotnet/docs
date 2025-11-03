@@ -6,7 +6,7 @@ ms.topic: reference
 ---
 # Investigate performance counters (dotnet-counters)
 
-**This article applies to:** ✔️ `dotnet-counters` version 10.0 and later versions.
+**This article applies to:** ✔️ `dotnet-counters` version 3.0.47001 and later versions.
 
 Counters can be read from applications running .NET 5 or later.
 

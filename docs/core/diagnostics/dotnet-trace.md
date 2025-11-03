@@ -285,6 +285,9 @@ dotnet-trace collect
 > The collect-linux verb is a new preview feature and relies on an updated version of the .nettrace file format. The latest PerfView release supports these trace files but other ways of using the trace file may not work yet.
 
 > [!NOTE]
+> Currently supported Linux RIDs are linux-x64 and linux-arm64.
+
+> [!NOTE]
 > The generated NetTrace is not fully compatible with [`convert`](#dotnet-trace-convert) and [`report`](#dotnet-trace-report).
 
 Collects diagnostic traces using perf_events, a Linux OS technology. `collect-linux` requires admin privileges to capture kernel- and user-mode events, and by default, captures events from all processes.

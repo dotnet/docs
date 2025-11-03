@@ -446,6 +446,18 @@ items:
             href: ../../core/diagnostics/distributed-tracing-collection-walkthroughs.md
           - name: Built-in activities
             href: ../../core/diagnostics/distributed-tracing-builtin-activities.md
+      - name: Enrichment
+        items:
+          - name: Overview
+            href: ../../core/enrichment/overview.md
+          - name: Application metadata
+            href: ../../core/enrichment/application-metadata.md
+          - name: Application log enricher
+            href: ../../core/enrichment/application-log-enricher.md
+          - name: Process log enricher
+            href: ../../core/enrichment/process-log-enricher.md
+          - name: Custom enricher
+            href: ../../core/enrichment/custom-enricher.md
       - name: Specialized diagnostics
         items:
           - name: Overview
@@ -3269,6 +3281,12 @@ items:
                     href: ../../fundamentals/code-analysis/quality-rules/ca1871.md
                   - name: CA1872
                     href: ../../fundamentals/code-analysis/quality-rules/ca1872.md
+                  - name: CA1873
+                    href: ../../fundamentals/code-analysis/quality-rules/ca1873.md
+                  - name: CA1874
+                    href: ../../fundamentals/code-analysis/quality-rules/ca1874.md
+                  - name: CA1875
+                    href: ../../fundamentals/code-analysis/quality-rules/ca1875.md
               - name: SingleFile rules
                 items:
                   - name: Overview
@@ -3323,6 +3341,8 @@ items:
                     href: ../../fundamentals/code-analysis/quality-rules/ca2021.md
                   - name: CA2022
                     href: ../../fundamentals/code-analysis/quality-rules/ca2022.md
+                  - name: CA2023
+                    href: ../../fundamentals/code-analysis/quality-rules/ca2023.md
                   - name: CA2024
                     href: ../../fundamentals/code-analysis/quality-rules/ca2024.md
                   - name: CA2025

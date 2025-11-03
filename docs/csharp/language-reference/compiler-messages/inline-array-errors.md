@@ -2,6 +2,7 @@
 title: Resolve errors related to inline arrays
 description: These compiler errors and warnings are generated when you create an inline array struct that is invalid. This article helps you diagnose and fix those issues.
 f1_keywords:
+  - "CS9125"
   - "CS9164"
   - "CS9165"
   - "CS9166"
@@ -18,6 +19,7 @@ f1_keywords:
   - "CS9189"
   - "CS9259"
 helpviewer_keywords:
+  - "CS9125"
   - "CS9164"
   - "CS9165"
   - "CS9166"
@@ -42,6 +44,7 @@ This article covers the following compiler errors and warnings:
 <!-- The text in this list generates issues for Acrolinx, because they don't use contractions.
 That's by design. The text closely matches the text of the compiler error / warning for SEO purposes.
  -->
+- [**CS9125**](#inline-array-declaration): *Attribute parameter 'SizeConst' must be specified.*
 - [**CS9164**](#conversions-to-span): *Cannot convert expression to `Span<T>` because it is not an assignable variable*
 - [**CS9165**](#conversions-to-span): *Cannot convert expression to `ReadOnlySpan<T>` because it may not be passed or returned by reference*
 - [**CS9166**](#element-access): *Index is outside the bounds of the inline array*
@@ -62,6 +65,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 
 You declare inline arrays as a `struct` type with a single field, and an attribute that specifies the length of the array. The compiler generates the following errors for invalid inline array declarations:
 
+- **CS9125**: *Attribute parameter 'SizeConst' must be specified.*
 - **CS9167**: *Inline array length must be greater than 0.*
 - **CS9168**: *Inline array struct must not have explicit layout.*
 - **CS9169**: *Inline array struct must declare one and only one instance field which must not be a ref field.*

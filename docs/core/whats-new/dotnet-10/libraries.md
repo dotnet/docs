@@ -2,14 +2,14 @@
 title: What's new in .NET libraries for .NET 10
 description: Learn about the updates to the .NET libraries for .NET 10.
 titleSuffix: ""
-ms.date: 09/09/2025
+ms.date: 10/15/2025
 ai-usage: ai-assisted
 ms.update-cycle: 3650-days
 ---
 
 # What's new in .NET libraries for .NET 10
 
-This article describes new features in the .NET libraries for .NET 10. It's been updated for RC 1.
+This article describes new features in the .NET libraries for .NET 10. It's been updated for RC 2.
 
 ## Cryptography
 
@@ -269,7 +269,7 @@ This index can then be used with <xref:System.Collections.Generic.OrderedDiction
 
 :::code language="csharp" source="../snippets/dotnet-10/csharp/snippets.cs" id="snippet_getAtSetAt":::
 
-This new API is already used in <xref:System.Json.JsonObject> and improves the performance of updating properties by 10-20%.
+This new API is already used in <xref:System.Text.Json.Nodes.JsonObject> and improves the performance of updating properties by 10-20%.
 
 ## Serialization
 

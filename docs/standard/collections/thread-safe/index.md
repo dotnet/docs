@@ -1,14 +1,15 @@
 ---
 title: Thread-Safe collections
 description: Get started with thread-safe collections using the System.Collections.Concurrent namespace in .NET, which includes thread-safe and scalable collection classes.
-ms.date: 01/23/2023
+ms.date: 10/21/2025
 ms.custom: devdivchpfy22
 helpviewer_keywords:
   - "thread-safe collections, overview"
+ai-usage: ai-assisted
 ---
 # Thread-safe collections
 
-The <xref:System.Collections.Concurrent?displayProperty=nameWithType> namespace includes several collection classes that are both thread-safe and scalable. Multiple threads can safely and efficiently add or remove items from these collections, without requiring additional synchronization in user code. When you write new code, use the concurrent collection classes to write multiple threads to the collection concurrently. If you're only reading from a shared collection, then you can use the classes in the <xref:System.Collections.Generic?displayProperty=nameWithType> namespace.
+The <xref:System.Collections.Concurrent?displayProperty=nameWithType> namespace includes several collection classes that are both thread-safe and scalable. Multiple threads can safely and efficiently add or remove items from these collections, without requiring additional synchronization in user code. When you write new code, use the concurrent collection classes to write multiple threads to the collection concurrently. If you're only reading from a shared collection, use the classes in the <xref:System.Collections.Generic?displayProperty=nameWithType> namespace.
 
 ## System.Collections and System.Collections.Generic
 
@@ -27,7 +28,7 @@ The <xref:System.Collections.Concurrent?displayProperty=nameWithType> namespace 
 > [!NOTE]
 > Because the concurrent collections classes support <xref:System.Collections.ICollection>, they provide implementations for the <xref:System.Collections.ICollection.IsSynchronized%2A> and <xref:System.Collections.ICollection.SyncRoot%2A> properties, even though these properties are irrelevant. `IsSynchronized` always returns `false` and, `SyncRoot` is always `null` (`Nothing` in Visual Basic).
 
- The following table lists the collection types in the <xref:System.Collections.Concurrent?displayProperty=nameWithType> namespace:
+The following table lists the collection types in the <xref:System.Collections.Concurrent?displayProperty=nameWithType> namespace:
 
 |Type|Description|
 |----------|-----------------|

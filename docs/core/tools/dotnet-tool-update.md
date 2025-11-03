@@ -1,11 +1,11 @@
 ---
 title: dotnet tool update command
 description: The dotnet tool update command updates the specified .NET tool on your machine.
-ms.date: 03/15/2024
+ms.date: 10/28/2025
 ---
 # dotnet tool update
 
-**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
+**This article applies to:** ✔️ .NET 6 SDK and later versions
 
 ## Name
 

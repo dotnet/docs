@@ -18,6 +18,7 @@ f1_keywords:
   - "CS9098" # ERR_ImplicitlyTypedDefaultParameter: Implicitly typed lambda parameter '{0}' cannot have a default value.
   - "CS9099" # WRN_OptionalParamValueMismatch: The default parameter value does not match in the target delegate type.
   - "CS9100" # WRN_ParamsArrayInLambdaOnly: Parameter has params modifier in lambda but not in target delegate type.
+  - "CS9236" # INF_TooManyBoundLambdas: Compiling requires binding the lambda expression at least {0} times.
 helpviewer_keywords:
   - "CS0748"
   - "CS0835"
@@ -35,6 +36,7 @@ helpviewer_keywords:
   - "CS9098"
   - "CS9099"
   - "CS9100"
+  - "CS9236"
 ms.date: 05/04/2023
 ---
 # Errors and warnings when using lambda expressions and anonymous functions
@@ -64,6 +66,10 @@ In addition, there are several *warnings* related to declaring and using lambda 
 - [**CS9099**](#lambda-expression-delegate-type): *The default parameter value does not match in the target delegate type.*
 - [**CS9100**](#lambda-expression-delegate-type): *Parameter has params modifier in lambda but not in target delegate type.*
 
+The compiler also produces the following *informational* message:
+
+- [**CS9236**](#syntax-limitations-in-lambda-expressions): *Compiling requires binding the lambda expression at least count times. Consider declaring the lambda expression with explicit parameter types, or if the containing method call is generic, consider using explicit type arguments.*
+
 ## Syntax limitations in lambda expressions
 
 Some C# syntax is prohibited in lambda expressions and anonymous methods. Using invalid constructs in a lambda expression causes the following errors:
@@ -89,6 +95,12 @@ You can't use any of these constructs in a lambda expression or an anonymous met
 In addition, interpolated string handler types are ignored when applied to a lambda parameter. If you use one, you see the following warning:
 
 - **CS8971**:  *InterpolatedStringHandlerArgument has no effect when applied to lambda parameters and will be ignored at the call site.*
+
+Certain expressions cause the compiler to emit the following informational warning:
+
+- **CS9236**: *Compiling requires binding the lambda expression at least count times. Consider declaring the lambda expression with explicit parameter types, or if the containing method call is generic, consider using explicit type arguments.*
+
+The complexity of the lambda expressions and how they invoke other lambda expressions is negatively impacting compiler performance. The reason is that the compiler must infer parameter and argument types through the lambda expressions and the potential types takes time.
 
 ## Lambda expression parameters and returns
 

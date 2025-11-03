@@ -1,7 +1,7 @@
 ---
 title: "Named and Optional Arguments"
 description: Named arguments in C# specify arguments by name, not position. Optional arguments can be omitted.
-ms.date: 03/14/2024
+ms.date: 10/10/2025
 f1_keywords:
   - "namedParameter_CSharpKeyword"
   - "optionalParameter_CSharpKeyword"
@@ -26,7 +26,7 @@ Named and optional parameters enable you to supply arguments for selected parame
 
 ## Named arguments
 
-Named arguments free you from matching the order of arguments to the order of parameters in the parameter lists of called methods. The argument for each parameter can be specified by parameter name. For example, a function that prints order details (such as seller name, order number, and product name) can be called by sending arguments by position, in the order defined by the function.
+Named arguments free you from matching the order of arguments to the order of parameters in the parameter lists of called methods. The argument for each parameter is specified by parameter name. For example, a function that prints order details (such as seller name, order number, and product name) is called by sending arguments by position, in the order defined by the function.
 
 ```csharp
 PrintOrderDetails("Gift Shop", 31, "Red Mug");
@@ -39,7 +39,7 @@ PrintOrderDetails(orderNum: 31, productName: "Red Mug", sellerName: "Gift Shop")
 PrintOrderDetails(productName: "Red Mug", sellerName: "Gift Shop", orderNum: 31);
 ```
 
-Named arguments also improve the readability of your code by identifying what each argument represents. In the example method below, the `sellerName` can't be null or white space. As both `sellerName` and `productName` are string types, instead of sending arguments by position, it makes sense to use named arguments to disambiguate the two and reduce confusion for anyone reading the code.
+Named arguments also improve the readability of your code by identifying what each argument represents. In the following example method, the `sellerName` can't be null or white space. As both `sellerName` and `productName` are string types, instead of sending arguments by position, it makes sense to use named arguments to disambiguate the two and reduce confusion for anyone reading the code.
 
 Named arguments, when used with positional arguments, are valid as long as
 
@@ -49,7 +49,7 @@ Named arguments, when used with positional arguments, are valid as long as
     PrintOrderDetails("Gift Shop", 31, productName: "Red Mug");
     ```
 
-- they're used in the correct position. In the example below, the parameter `orderNum` is in the correct position but isn't explicitly named.
+- they're used in the correct position. In the following example, the parameter `orderNum` is in the correct position but isn't explicitly named.
 
     ```csharp
     PrintOrderDetails(sellerName: "Gift Shop", 31, productName: "Red Mug");
@@ -64,13 +64,13 @@ PrintOrderDetails(productName: "Red Mug", 31, "Gift Shop");
 
 ### Example
 
-The following code implements the examples from this section along with some additional ones.
+The following code implements the examples from this section along with some extra ones.
 
 :::code language="csharp" source="./snippets/NamedAndOptional/program.cs" id="Snippet1":::
 
 ## Optional arguments
 
-The definition of a method, constructor, indexer, or delegate can specify its parameters are required or optional. Any call must provide arguments for all required parameters, but can omit arguments for optional parameters. A nullable reference type (`T?`) allows arguments to be explicitly `null` but does not inherently make a parameter optional.
+The definition of a method, constructor, indexer, or delegate can specify its parameters are required or optional. Any call must provide arguments for all required parameters, but can omit arguments for optional parameters. A nullable reference type (`T?`) allows arguments to be explicitly `null` but doesn't inherently make a parameter optional.
 
 Each optional parameter has a default value as part of its definition. If no argument is sent for that parameter, the default value is used. A default value must be one of the following types of expressions:
 
@@ -78,7 +78,7 @@ Each optional parameter has a default value as part of its definition. If no arg
 - an expression of the form `new ValType()`, where `ValType` is a value type, such as an [enum](../../language-reference/builtin-types/enum.md) or a [struct](../../language-reference/builtin-types/struct.md);
 - an expression of the form [default(ValType)](../../language-reference/operators/default.md),  where `ValType` is a value type.
 
-Optional parameters are defined at the end of the parameter list, after any required parameters. The caller must provide arguments for all required parameters and any optional parameters preceding those it specifies. Comma-separated gaps in the argument list aren't supported.For example, in the following code, instance method `ExampleMethod` is defined with one required and two optional parameters.
+Optional parameters are defined at the end of the parameter list, after any required parameters. The caller must provide arguments for all required parameters and any optional parameters preceding those it specifies. Comma-separated gaps in the argument list aren't supported. For example, in the following code, instance method `ExampleMethod` is defined with one required and two optional parameters.
 
 :::code language="csharp" source="./snippets/NamedAndOptional/optional.cs" id="Snippet15":::
 
@@ -99,7 +99,7 @@ IntelliSense uses brackets to indicate optional parameters, as shown in the foll
 ![Screenshot showing IntelliSense quick info for the ExampleMethod method.](./media/named-and-optional-arguments/optional-examplemethod-parameters.png)
 
 > [!NOTE]
-> You can also declare optional parameters by using the .NET <xref:System.Runtime.InteropServices.OptionalAttribute> class. `OptionalAttribute` parameters do not require a default value. However, if a default value is desired, take a look at <xref:System.Runtime.InteropServices.DefaultParameterValueAttribute> class.
+> You can also declare optional parameters by using the .NET <xref:System.Runtime.InteropServices.OptionalAttribute> class. `OptionalAttribute` parameters don't require a default value. However, if a default value is desired, take a look at <xref:System.Runtime.InteropServices.DefaultParameterValueAttribute> class.
 
 ### Example
 
@@ -113,7 +113,7 @@ The preceding code illustrates several cases where optional parameters are used 
 
 [Caller information attributes](../../language-reference/attributes/caller-information.md), such as <xref:System.Runtime.CompilerServices.CallerFilePathAttribute>, <xref:System.Runtime.CompilerServices.CallerLineNumberAttribute>, <xref:System.Runtime.CompilerServices.CallerMemberNameAttribute>, and <xref:System.Runtime.CompilerServices.CallerArgumentExpressionAttribute>, are used to obtain information about the caller to a method. These attributes are especially useful when you're debugging or when you need to log information about method calls.
 
-These attributes are optional parameters with default values provided by the compiler. The caller should not explicitly provide a value for these parameters.
+These attributes are optional parameters with default values provided by the compiler. The caller shouldn't explicitly provide a value for these parameters.
 
 ## COM interfaces
 

@@ -46,7 +46,7 @@ The output is as follows.
 788
 ```
 
-The following example shows how to loop over a sequence, and how to use a tuple pattern instead of a simple variable.
+The following example shows how to loop over a sequence, and how to use a tuple pattern instead of a simple variable. In this example, the sequence expression uses the `->` operator, which is a shorthand for `do yield` in sequence expressions and other computation expressions. The `->` operator allows you to specify an expression whose value becomes part of the sequence. For more information, see [Sequences](sequences.md) and [Computation Expressions](computation-expressions.md).
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet5202.fs)]
 

@@ -1,11 +1,11 @@
 ---
 title: dotnet new list
 description: The dotnet new list command lists available templates.
-ms.date: 04/29/2021
+ms.date: 10/28/2025
 ---
 # dotnet new list
 
-**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
+**This article applies to:** ✔️ .NET 6 SDK and later versions
 
 ## Name
 

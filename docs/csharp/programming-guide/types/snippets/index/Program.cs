@@ -22,15 +22,10 @@ class MyClass : IMyInterface
 }
 
 //<Coords>
-public struct Coords
+public struct Coords(int x, int y)
 {
-    public int x, y;
-
-    public Coords(int p1, int p2)
-    {
-        x = p1;
-        y = p2;
-    }
+    public int X { get; init; } = x;
+    public int Y { get; init; } = y;
 }
 //</Coords>
 
@@ -127,7 +122,7 @@ class Program
     static void DeclarationAndAssignment()
     {
         // <DeclarationAndAssignment>
-        MyClass myClass = new MyClass();
+        MyClass myClass = new();
         MyClass myClass2 = myClass;
         // </DeclarationAndAssignment>
     }
@@ -135,7 +130,7 @@ class Program
     static void InterfaceAssignment()
     {
         // <InterfaceDeclaration>
-        MyClass myClass = new MyClass();
+        MyClass myClass = new();
 
         // Declare and assign using an existing value.
         IMyInterface myInterface = myClass;

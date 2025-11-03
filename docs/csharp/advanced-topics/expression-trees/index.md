@@ -1,7 +1,7 @@
 ---
 title: "Expression Trees"
 description: Learn about expression trees. See how to compile and run code represented by these data structures, where each node is an expression.
-ms.date: 05/29/2024
+ms.date: 10/13/2025
 ms.custom: updateeachrelease
 ---
 # Expression Trees
@@ -42,7 +42,7 @@ The C# compiler generates expression trees only from expression lambdas (or sing
 
 There are some newer C# language elements that don't translate well into expression trees. Expression trees can't contain `await` expressions, or `async` lambda expressions. Many of the features added in C# 6 and later don't appear exactly as written in expression trees. Instead, newer features are exposed in expression trees in the equivalent, earlier syntax, where possible. Other constructs aren't available. It means that code that interprets expression trees works the same when new language features are introduced. However, even with these limitations, expression trees do enable you to create dynamic algorithms that rely on interpreting and modifying code that is represented as a data structure. It enables rich libraries such as Entity Framework to accomplish what they do.
 
-Expression trees won't support new expression node types. It would be a breaking change for all libraries interpreting expression trees to introduce new node types. The following list includes most C# language elements that can't be used:
+Expression trees don't support new expression node types. It would be a breaking change for all libraries interpreting expression trees to introduce new node types. The following list includes most C# language elements that can't be used:
 
 - [Conditional methods](../../language-reference/preprocessor-directives.md#conditional-compilation) removed from the output
 - [`base` access](../../language-reference/keywords/base.md)

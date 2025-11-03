@@ -17,7 +17,7 @@ A managed identity from Microsoft Entra ID allows your app to easily access othe
 
 ## Prerequisites
 
-* An Azure account that has an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
+* An Azure account that has an active subscription. [Create an account for free](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 * [.NET SDK](https://dotnet.microsoft.com/download/visual-studio-sdks)
 * [Create and deploy an Azure OpenAI Service resource](/azure/ai-services/openai/how-to/create-resource)
 * [Create and deploy a .NET application to App Service](/azure/app-service/quickstart-dotnetcore)

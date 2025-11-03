@@ -5,11 +5,14 @@ f1_keywords:
   - "CS8509" # WRN_SwitchNotAllPossibleValues: The switch expression does not handle all possible values of its input type (it is not exhaustive). For example, the pattern '...' is not covered.
   - "CS9134"
   - "CS9135"
+  - "CS9335"
+  - "CS9337"
 helpviewer_keywords:
   - "CS8509"
   - "CS9134"
-  - "CS9135"
-ms.date: 11/02/2022
+  - "CS9335"
+  - "CS9337"
+ms.date: 10/16/2025
 ---
 # Pattern matching errors and warnings
 
@@ -17,6 +20,8 @@ The compiler generates the following errors for invalid pattern match expression
 
 - **CS9134**: *A switch expression arm does not begin with a 'case' keyword.*
 - **CS9135**: *A constant value of type is expected*
+- **CS9335**: *The pattern is redundant.*
+- **CS9337**: *The pattern is too complex to analyze for redundancy.*
 
 The compiler generates the following warnings for incomplete pattern matching expressions:
 
@@ -44,5 +49,13 @@ To address this warning, add switch arms that cover all possible input values. F
 :::code language="csharp" source="./snippets/pattern-matching-warnings/Switch.cs" id="SwitchAllPossibleValues":::
 
 The `_` pattern matches all remaining values. One scenario for the `_` pattern is matching invalid values, as shown in the preceding example.
+
+The compiler generates CS9335 when you wrote a pattern where an `or` is redundant:
+
+:::code language="csharp" source="./snippets/pattern-matching-warnings/Switch.cs" id="RedundantPattern":::
+
+This warning indicates you likely meant `is not (null or 42)` or `is not (int or string)` instead.
+
+You can construct patterns that are too complex to analyze for redundancy. If you do that, the compiler warns you with CS9337.
 
 For more information, see [Switch](../statements/selection-statements.md#the-switch-statement).

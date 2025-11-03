@@ -25,7 +25,7 @@ You also need to build a .NET component to test the host with, so you should ins
 Hosting the .NET runtime is done with the `nethost` and `hostfxr` libraries' APIs. These entry points handle the complexity of finding and setting up the runtime for initialization and allow both launching a managed application and calling into a static managed method.
 
 > [!IMPORTANT]
-> The `nethost` and `hostfxr` hosting APIs only support framework-dependent deployments. These APIs don't work with single-file deployments because the required runtime files must be available separately on the target system. If you're evaluating deployment models for your application, use a framework-dependent deployment to ensure compatibility with these native hosting APIs.
+> The `nethost` and `hostfxr` hosting APIs only support framework-dependent deployments. Self-contained deployments are only supported with the built-in hosts. If you're evaluating deployment models for your application, use a framework-dependent deployment to ensure compatibility with these native hosting APIs.
 
 ## Create a host using `nethost.h` and `hostfxr.h`
 

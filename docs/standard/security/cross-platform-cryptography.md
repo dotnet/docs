@@ -312,8 +312,8 @@ The native interop types for post-quantum algorithms do not support key generati
 
 #### Native interop ML-KEM
 
-* <xref:System.Security.Cryptography.X509Certificates.MLKemOpenSsl>: OpenSSL 3.5.0+
-* <xref:System.Security.Cryptography.X509Certificates.MLKemCng>: Windows 11 Insiders (Latest)
+* <xref:System.Security.Cryptography.MLKemOpenSsl>: OpenSSL 3.5.0+
+* <xref:System.Security.Cryptography.MLKemCng>: Windows 11 Insiders (Latest)
 
 ### ML-DSA
 
@@ -332,8 +332,8 @@ ML-DSA has a pure and prehash variant (HashML-DSA). The following table reflects
 
 #### Native interop ML-DSA
 
-* <xref:System.Security.Cryptography.X509Certificates.MLDsaOpenSsl>: OpenSSL 3.5.0+
-* <xref:System.Security.Cryptography.X509Certificates.MLDsaCng>: Windows 11 Insiders (Latest)
+* <xref:System.Security.Cryptography.MLDsaOpenSsl>: OpenSSL 3.5.0+
+* <xref:System.Security.Cryptography.MLDsaCng>: Windows 11 Insiders (latest)
 
 ### SLH-DSA
 
@@ -356,8 +356,8 @@ SLH-DSA has a pure and prehash variant (HashSLH-DSA). The following table reflec
 
 #### Native interop SLH-DSA
 
-* <xref:System.Security.Cryptography.X509Certificates.SlhDsaOpenSsl>: OpenSSL 3.5.0+
-* <xref:System.Security.Cryptography.X509Certificates.SlhDsaCng>: Not supported
+* <xref:System.Security.Cryptography.SlhDsaOpenSsl>: OpenSSL 3.5.0+
+* <xref:System.Security.Cryptography.SlhDsaCng>: Not supported
 
 ### Composite ML-DSA
 
@@ -384,7 +384,7 @@ SLH-DSA has a pure and prehash variant (HashSLH-DSA). The following table reflec
 
 #### Native interop composite ML-DSA
 
-* <xref:System.Security.Cryptography.X509Certificates.CompositeMLDsaCng>: Not supported
+* <xref:System.Security.Cryptography.CompositeMLDsaCng>: Not supported
 
 ## X.509 Certificates
 

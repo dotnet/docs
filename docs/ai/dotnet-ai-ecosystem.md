@@ -78,7 +78,7 @@ Azure offers many other AI services to build specific application capabilities a
 
 ## Develop with local AI models
 
-.NET apps can also connect to local AI models for many different development scenarios. <a href="https://github.com/microsoft/agent-framework">Microsoft Agent Framework</a> is the recommended tool to connect to local models using .NET. This framework can connect to many different models hosted across a variety of platforms and abstracts away lower-level implementation details.
+.NET apps can also connect to local AI models for many different development scenarios. [Microsoft Agent Framework](https://github.com/microsoft/agent-framework) is the recommended tool to connect to local models using .NET. This framework can connect to many different models hosted across a variety of platforms and abstracts away lower-level implementation details.
 
 For example, you can use [Ollama](https://ollama.com/) to [connect to local AI models with .NET](quickstarts/chat-local-model.md), including several small language models (SLMs) developed by Microsoft:
 

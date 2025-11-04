@@ -18,17 +18,34 @@ The .NET ecosystem provides many powerful tools, libraries, and services to deve
 
 `Microsoft.Extensions.AI` provides abstractions that can be implemented by various services, all adhering to the same core concepts. This library is not intended to provide APIs tailored to any specific provider's services. The goal of `Microsoft.Extensions.AI` is to act as a unifying layer within the .NET ecosystem, enabling developers to choose their preferred frameworks and libraries while ensuring seamless integration and collaboration across the ecosystem.
 
+## Microsoft Agent Framework
+
+If you just want to use the low-level services, such as <xref:Microsoft.Extensions.AI.IChatClient> and <xref:Microsoft.Extensions.AI.IEmbeddingGenerator`2>, you can reference the `Microsoft.Extensions.AI.Abstractions` package directly from your app. However, if you want to build agentic AI applications with higher-level orchestration capabilities, you should use [Microsoft Agent Framework](/agent-framework/overview/agent-framework-overview).
+
+Microsoft Agent Framework is a production-ready, open-source framework that brings together the best capabilities of Semantic Kernel and Microsoft Research's AutoGen. The Agent Framework provides:
+
+- **Multi-agent orchestration**: Support for sequential, concurrent, group chat, handoff, and magnetic orchestration patterns.
+- **Cloud and provider flexibility**: Cloud-agnostic (containers, on-premises, or multi-cloud) and provider-agnostic (OpenAI, Azure AI Foundry, and more) using plugin and connector models.
+- **Enterprise-grade features**: Built-in observability (OpenTelemetry), Microsoft Entra security integration, and responsible AI features including prompt injection protection and task adherence monitoring.
+- **Standards-based interoperability**: Integration with open standards like Agent-to-Agent (A2A) protocol and Model Context Protocol (MCP) for agent discovery and tool interaction.
+
+The Agent Framework builds on the `Microsoft.Extensions.AI.Abstractions` package and provides concrete implementations of <xref:Microsoft.Extensions.AI.IChatClient> for different services, including OpenAI, Azure OpenAI, Azure AI Foundry, and more.
+
+Microsoft Agent Framework is the recommended approach for .NET apps that need to build agentic AI systems with advanced orchestration, multi-agent collaboration, and enterprise-grade security and observability.
+
+For more information, see the [Microsoft Agent Framework documentation](/agent-framework/overview/agent-framework-overview).
+
 ## Semantic Kernel for .NET
 
-If you just want to use the low-level services, such as <xref:Microsoft.Extensions.AI.IChatClient> and <xref:Microsoft.Extensions.AI.IEmbeddingGenerator`2>, you can reference the `Microsoft.Extensions.AI.Abstractions` package directly from your app. However, if you want to use higher-level, more opinionated approaches to AI, then you should use [Semantic Kernel](/semantic-kernel/overview/).
+[Semantic Kernel](/semantic-kernel/overview/) is an open-source library that enables AI integration and orchestration capabilities in your .NET apps. Semantic Kernel has a dependency on the `Microsoft.Extensions.AI.Abstractions` package and provides connectors with concrete implementations of <xref:Microsoft.Extensions.AI.IChatClient> and <xref:Microsoft.Extensions.AI.IEmbeddingGenerator`2> for different services, including OpenAI, Amazon Bedrock, and Google Gemini.
 
-Semantic Kernel, which has a dependency on the `Microsoft.Extensions.AI.Abstractions` package, is an open-source library that enables AI integration and orchestration capabilities in your .NET apps. Its connectors provides concrete implementations of <xref:Microsoft.Extensions.AI.IChatClient> and <xref:Microsoft.Extensions.AI.IEmbeddingGenerator`2> for different services, including OpenAI, Amazon Bedrock, and Google Gemini.
+Semantic Kernel continues to be actively maintained and is suitable for AI integration scenarios, especially for applications that:
 
-The Semantic Kernel SDK is generally the recommended AI orchestration tool for .NET apps that use one or more AI services in combination with other APIs or web services, data stores, and custom code. Semantic Kernel benefits enterprise developers in the following ways:
+- Need AI integration without complex multi-agent orchestration.
+- Are already built on Semantic Kernel and don't require advanced agentic features.
+- Benefit from Semantic Kernel's extensive connector ecosystem and community support.
 
-- Streamlines integration of AI capabilities into existing applications to enable a cohesive solution for enterprise products.
-- Minimizes the learning curve of working with different AI models or services by providing abstractions that reduce complexity.
-- Improves reliability by reducing the unpredictable behavior of prompts and responses from AI models. You can fine-tune prompts and plan tasks to create a controlled and predictable user experience.
+For new applications that require advanced agentic capabilities, multi-agent orchestration, or enterprise-grade observability and security, consider using [Microsoft Agent Framework](/agent-framework/overview/agent-framework-overview).
 
 For more information, see the [Semantic Kernel documentation](/semantic-kernel/overview/).
 
@@ -40,6 +57,7 @@ Many different SDKs are available to build .NET apps with AI capabilities depend
 
 | NuGet package | Supported models | Maintainer or vendor | Documentation |
 |---------------|------------------|----------------------|--------------|
+| [Microsoft.Agents.AI.OpenAI](https://www.nuget.org/packages/Microsoft.Agents.AI.OpenAI/) | [OpenAI models](https://platform.openai.com/docs/models/overview)<br/>[Azure OpenAI supported models](/azure/ai-services/openai/concepts/models) | [Microsoft Agent Framework](https://github.com/microsoft/agent-framework) (Microsoft) | [Agent Framework documentation](/agent-framework/overview/agent-framework-overview) |
 | [Microsoft.SemanticKernel](https://www.nuget.org/packages/Microsoft.SemanticKernel/) | [OpenAI models](https://platform.openai.com/docs/models/overview)<br/>[Azure OpenAI supported models](/azure/ai-services/openai/concepts/models) | [Semantic Kernel](https://github.com/microsoft/semantic-kernel) (Microsoft) | [Semantic Kernel documentation](/semantic-kernel/) |
 | [Azure OpenAI SDK](https://www.nuget.org/packages/Azure.AI.OpenAI/) | [Azure OpenAI supported models](/azure/ai-services/openai/concepts/models) | [Azure SDK for .NET](https://github.com/Azure/azure-sdk-for-net) (Microsoft) | [Azure OpenAI services documentation](/azure/ai-services/openai/) |
 | [OpenAI SDK](https://www.nuget.org/packages/OpenAI/) | [OpenAI supported models](https://platform.openai.com/docs/models) | [OpenAI SDK for .NET](https://github.com/openai/openai-dotnet) (OpenAI) | [OpenAI services documentation](https://platform.openai.com/docs/overview) |
@@ -60,7 +78,7 @@ Azure offers many other AI services to build specific application capabilities a
 
 ## Develop with local AI models
 
-.NET apps can also connect to local AI models for many different development scenarios. [Semantic Kernel](https://github.com/microsoft/semantic-kernel) is the recommended tool to connect to local models using .NET. Semantic Kernel can connect to many different models hosted across a variety of platforms and abstracts away lower-level implementation details.
+.NET apps can also connect to local AI models for many different development scenarios. [Microsoft Agent Framework](https://github.com/microsoft/agent-framework) and [Semantic Kernel](https://github.com/microsoft/semantic-kernel) are recommended tools to connect to local models using .NET. These frameworks can connect to many different models hosted across a variety of platforms and abstract away lower-level implementation details.
 
 For example, you can use [Ollama](https://ollama.com/) to [connect to local AI models with .NET](quickstarts/chat-local-model.md), including several small language models (SLMs) developed by Microsoft:
 
@@ -78,6 +96,7 @@ For example, you can use [Ollama](https://ollama.com/) to [connect to local AI m
 
 ## Next steps
 
+- [What is Microsoft Agent Framework?](/agent-framework/overview/agent-framework-overview)
 - [What is Semantic Kernel?](/semantic-kernel/overview/)
 - [Quickstart - Summarize text using Azure AI chat app with .NET](quickstarts/prompt-model.md)
 

@@ -24,7 +24,7 @@ If you just want to use the low-level services, such as <xref:Microsoft.Extensio
 
 Microsoft Agent Framework is a production-ready, open-source framework that brings together the best capabilities of Semantic Kernel and Microsoft Research's AutoGen. Agent Framework provides:
 
-- **Multi-agent orchestration**: Support for sequential, concurrent, group chat, handoff, and magnetic orchestration patterns.
+- **Multi-agent orchestration**: Support for sequential, concurrent, group chat, handoff, and magnetic orchestration patterns (where agents are dynamically attracted to tasks or conversations based on context or expertise).
 - **Cloud and provider flexibility**: Cloud-agnostic (containers, on-premises, or multi-cloud) and provider-agnostic (for example, OpenAI or Azure AI Foundry) using plugin and connector models.
 - **Enterprise-grade features**: Built-in observability (OpenTelemetry), Microsoft Entra security integration, and responsible AI features including prompt injection protection and task adherence monitoring.
 - **Standards-based interoperability**: Integration with open standards like Agent-to-Agent (A2A) protocol and Model Context Protocol (MCP) for agent discovery and tool interaction.

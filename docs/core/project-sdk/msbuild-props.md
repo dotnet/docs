@@ -114,7 +114,7 @@ For more information, see [Target frameworks in SDK-style projects](../../standa
 Use the `TargetFrameworks` property when you want your app to target multiple platforms. For a list of valid target framework monikers, see [Target frameworks in SDK-style projects](../../standard/frameworks.md#supported-target-frameworks).
 
 > [!NOTE]
-> This property is ignored if `TargetFramework` (singular) is specified.
+> If `TargetFrameworks` (plural) is specified, `TargetFramework` (singular) is ignored.
 
 ```xml
 <PropertyGroup>

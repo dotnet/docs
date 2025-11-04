@@ -128,6 +128,8 @@ items:
                 href: sdk/10.0/dotnet-tool-pack-publish.md
               - name: dnx.ps1 file is no longer included in .NET SDK
                 href: sdk/10.0/dnx-ps1-removed.md
+              - name: Double quotes in file-level directives are disallowed
+                href: sdk/10.0/file-level-directive-double-quotes.md
               - name: "`dotnet restore` audits transitive packages"
                 href: sdk/10.0/nugetaudit-transitive-packages.md
               - name: project.json not supported in `dotnet restore`

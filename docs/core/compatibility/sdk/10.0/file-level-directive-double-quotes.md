@@ -16,7 +16,7 @@ Usage of double quotes `"` inside `#:` file-level directives is now a build-time
 
 ## Previous behavior
 
-In .NET 10 RC2 and older .NET 10 previews, quotes in directives weren't blocked but they didn't work as expected. They were only escaped as any other special character and passed to MSBuild. For example, `#:property Prop="my test"` resulted in `<Prop>&quot;my test&quot</Prop>`.
+In .NET 10 RC2 and older .NET 10 previews, quotes in directives weren't blocked but they didn't work as expected. They were only escaped as any other special character and passed to MSBuild. For example, `#:property Prop="my test"` resulted in `<Prop>&quot;my test&quot;</Prop>`.
 
 ## New behavior
 

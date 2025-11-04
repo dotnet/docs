@@ -78,6 +78,8 @@ items:
                 href: cryptography/10.0/mldsa-slhdsa-secretkey-to-privatekey.md
               - name: OpenSSL cryptographic primitives not supported on macOS
                 href: cryptography/10.0/openssl-macos-unsupported.md
+              - name: OpenSSL 1.1.1 or later required on Unix
+                href: cryptography/10.0/openssl-version-requirement.md
               - name: X500DistinguishedName validation is stricter
                 href: cryptography/10.0/x500distinguishedname-validation.md
               - name: X509Certificate and PublicKey key parameters can be null

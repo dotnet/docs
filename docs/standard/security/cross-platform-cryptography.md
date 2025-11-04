@@ -175,7 +175,7 @@ Padding and digest support vary by platform:
 
 <sup>1</sup> On non-Windows, <xref:System.Security.Cryptography.RSACryptoServiceProvider> can be used for compatibility with existing programs. In that case, any method that requires OS interop, such as opening a named key, throws a <xref:System.PlatformNotSupportedException>.
 
-<sup>2</sup> On macOS, <xref:System.Security.Cryptography.RSAOpenSsl> worked if OpenSSL was installed and an appropriate libcrypto dylib could be found via dynamic library loading. This support was removed in .NET 10.
+<sup>2</sup> On macOS, prior to .NET 10, <xref:System.Security.Cryptography.RSAOpenSsl> worked if OpenSSL was installed and an appropriate libcrypto dylib could be found via dynamic library loading. This support was removed in .NET 10.
 
 ### ECDSA
 
@@ -210,7 +210,7 @@ ECDSA key curves are defined by the OS libraries and are subject to their limita
 | <xref:System.Security.Cryptography.ECDsaCng>     | ✔️      | ❌   | ❌    | ❌                     | ❌      |
 | <xref:System.Security.Cryptography.ECDsaOpenSsl> | ❌      | ✔️   | ❌\*  | ❌                     | ❌      |
 
-\* On macOS, <xref:System.Security.Cryptography.ECDsaOpenSsl> worked if OpenSSL was installed and an appropriate libcrypto dylib could be found via dynamic library loading. This support was removed in .NET 10.
+\* On macOS, prior to .NET 10, <xref:System.Security.Cryptography.ECDsaOpenSsl> worked if OpenSSL was installed and an appropriate libcrypto dylib could be found via dynamic library loading. This support was removed in .NET 10.
 
 ### ECDH
 
@@ -292,11 +292,11 @@ DSA (Digital Signature Algorithm) key generation is performed by the system libr
 
 <sup>1</sup> On non-Windows, <xref:System.Security.Cryptography.DSACryptoServiceProvider> can be used for compatibility with existing programs. In that case, any method that requires system interop, such as opening a named key, throws a <xref:System.PlatformNotSupportedException>.
 
-<sup>2</sup> On macOS, <xref:System.Security.Cryptography.DSAOpenSsl> worked if OpenSSL was installed and an appropriate libcrypto dylib could be found via dynamic library loading. This support was removed in .NET 10.
+<sup>2</sup> On macOS, prior to .NET 10, <xref:System.Security.Cryptography.DSAOpenSsl> worked if OpenSSL was installed and an appropriate libcrypto dylib could be found via dynamic library loading. This support was removed in .NET 10.
 
-## Post-quantum Cryptography
+## Post-quantum cryptography
 
-Post-quantum algorithms are available starting in .NET 10, and are available for .NET Framework using the Microsoft.Bcl.Cryptography NuGet package. The following support table indicates the platform support for the built-in operating system cryptographic components, such as those created from `Generate` or `ImportFromPem`. Implementations that derive from the base class may have different support behaviors.
+Post-quantum algorithms are available starting in .NET 10. They're also available for .NET Framework using the Microsoft.Bcl.Cryptography NuGet package. The following support table indicates the platform support for the built-in operating system cryptographic components, such as those created from `Generate` or `ImportFromPem`. Implementations that derive from the base class might have different support behaviors.
 
 For the built-in algorithms, an `IsSupported` static property is available to determine if the platform supports any of the parameter sets.
 
@@ -310,14 +310,14 @@ The native interop types for post-quantum algorithms do not support key generati
 | ML-KEM-768   | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
 | ML-KEM-1024  | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
 
-#### Native Interop ML-KEM
+#### Native interop ML-KEM
 
 * <xref:System.Security.Cryptography.X509Certificates.MLKemOpenSsl>: OpenSSL 3.5.0+
 * <xref:System.Security.Cryptography.X509Certificates.MLKemCng>: Windows 11 Insiders (Latest)
 
 ### ML-DSA
 
-ML-DSA has a pure and prehash variant (HashML-DSA). The table below reflects both the pure and prehash variants.
+ML-DSA has a pure and prehash variant (HashML-DSA). The following table reflects both the pure and prehash variants.
 
 | Algorithm                                   | Windows                       | Linux          | Apple | Android | Browser |
 |---------------------------------------------|-------------------------------|----------------|-------|---------|---------|
@@ -330,14 +330,14 @@ ML-DSA has a pure and prehash variant (HashML-DSA). The table below reflects bot
 
 <sup>1</sup> External Mu support is for signing and verifying Mu only. Computation of Mu isn't supported.
 
-#### Native Interop ML-DSA
+#### Native interop ML-DSA
 
 * <xref:System.Security.Cryptography.X509Certificates.MLDsaOpenSsl>: OpenSSL 3.5.0+
 * <xref:System.Security.Cryptography.X509Certificates.MLDsaCng>: Windows 11 Insiders (Latest)
 
 ### SLH-DSA
 
-SLH-DSA has a pure and prehash variant (HashSLH-DSA). The table below reflects both the pure and prehash variants.
+SLH-DSA has a pure and prehash variant (HashSLH-DSA). The following table reflects both the pure and prehash variants.
 
 | Algorithm           | Windows | Linux          | Apple | Android | Browser |
 |---------------------|---------|----------------|-------|---------|---------|
@@ -354,10 +354,10 @@ SLH-DSA has a pure and prehash variant (HashSLH-DSA). The table below reflects b
 | SLH-DSA-SHAKE-256f  | ❌      | OpenSSL 3.5.0+ | ❌    | ❌      | ❌       |
 | SLH-DSA-SHAKE-256s  | ❌      | OpenSSL 3.5.0+ | ❌    | ❌      | ❌       |
 
-#### Native Interop SLH-DSA
+#### Native interop SLH-DSA
 
 * <xref:System.Security.Cryptography.X509Certificates.SlhDsaOpenSsl>: OpenSSL 3.5.0+
-* <xref:System.Security.Cryptography.X509Certificates.SlhDsaCng>: Not Supported
+* <xref:System.Security.Cryptography.X509Certificates.SlhDsaCng>: Not supported
 
 ### Composite ML-DSA
 
@@ -382,9 +382,9 @@ SLH-DSA has a pure and prehash variant (HashSLH-DSA). The table below reflects b
 | MLDSA87-RSA4096-PSS-SHA512             | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
 | MLDSA87-ECDSA-P521-SHA512              | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
 
-#### Native Interop Composite ML-DSA
+#### Native interop composite ML-DSA
 
-* <xref:System.Security.Cryptography.X509Certificates.CompositeMLDsaCng>: Not Supported
+* <xref:System.Security.Cryptography.X509Certificates.CompositeMLDsaCng>: Not supported
 
 ## X.509 Certificates
 
@@ -501,7 +501,7 @@ macOS doesn't support Offline CRL utilization, so `X509RevocationMode.Offline` i
 
 macOS doesn't support a user-initiated timeout on CRL (Certificate Revocation List) / OCSP (Online Certificate Status Protocol) / AIA (Authority Information Access) downloading, so `X509ChainPolicy.UrlRetrievalTimeout` is ignored.
 
-### Post-quantum Cryptography Certificates and PKCS12/PFX
+### Post-quantum cryptography certificates and PKCS12/PFX
 
 Post-quantum certificate support also requires support from the primitive algorithm.
 

@@ -1,7 +1,7 @@
 ---
 title: .NET + AI ecosystem tools and SDKs
 description: This article provides an overview of the ecosystem of SDKs and tools available to .NET developers integrating AI into their applications.
-ms.date: 05/29/2025
+ms.date: 11/04/2025
 ms.topic: overview
 ---
 
@@ -22,14 +22,14 @@ The .NET ecosystem provides many powerful tools, libraries, and services to deve
 
 If you just want to use the low-level services, such as <xref:Microsoft.Extensions.AI.IChatClient> and <xref:Microsoft.Extensions.AI.IEmbeddingGenerator`2>, you can reference the `Microsoft.Extensions.AI.Abstractions` package directly from your app. However, if you want to build agentic AI applications with higher-level orchestration capabilities, you should use [Microsoft Agent Framework](/agent-framework/overview/agent-framework-overview).
 
-Microsoft Agent Framework is a production-ready, open-source framework that brings together the best capabilities of Semantic Kernel and Microsoft Research's AutoGen. The Agent Framework provides:
+Microsoft Agent Framework is a production-ready, open-source framework that brings together the best capabilities of Semantic Kernel and Microsoft Research's AutoGen. Agent Framework provides:
 
 - **Multi-agent orchestration**: Support for sequential, concurrent, group chat, handoff, and magnetic orchestration patterns.
-- **Cloud and provider flexibility**: Cloud-agnostic (containers, on-premises, or multi-cloud) and provider-agnostic (OpenAI, Azure AI Foundry, and more) using plugin and connector models.
+- **Cloud and provider flexibility**: Cloud-agnostic (containers, on-premises, or multi-cloud) and provider-agnostic (for example, OpenAI or Azure AI Foundry) using plugin and connector models.
 - **Enterprise-grade features**: Built-in observability (OpenTelemetry), Microsoft Entra security integration, and responsible AI features including prompt injection protection and task adherence monitoring.
 - **Standards-based interoperability**: Integration with open standards like Agent-to-Agent (A2A) protocol and Model Context Protocol (MCP) for agent discovery and tool interaction.
 
-The Agent Framework builds on the `Microsoft.Extensions.AI.Abstractions` package and provides concrete implementations of <xref:Microsoft.Extensions.AI.IChatClient> for different services, including OpenAI, Azure OpenAI, Azure AI Foundry, and more.
+Agent Framework builds on the `Microsoft.Extensions.AI.Abstractions` package and provides concrete implementations of <xref:Microsoft.Extensions.AI.IChatClient> for different services, including OpenAI, Azure OpenAI, Azure AI Foundry, and more.
 
 Microsoft Agent Framework is the recommended approach for .NET apps that need to build agentic AI systems with advanced orchestration, multi-agent collaboration, and enterprise-grade security and observability.
 
@@ -78,7 +78,7 @@ Azure offers many other AI services to build specific application capabilities a
 
 ## Develop with local AI models
 
-.NET apps can also connect to local AI models for many different development scenarios. [Microsoft Agent Framework](https://github.com/microsoft/agent-framework) and [Semantic Kernel](https://github.com/microsoft/semantic-kernel) are recommended tools to connect to local models using .NET. These frameworks can connect to many different models hosted across a variety of platforms and abstract away lower-level implementation details.
+.NET apps can also connect to local AI models for many different development scenarios. <a href="https://github.com/microsoft/agent-framework">Microsoft Agent Framework</a> is the recommended tool to connect to local models using .NET. This framework can connect to many different models hosted across a variety of platforms and abstracts away lower-level implementation details.
 
 For example, you can use [Ollama](https://ollama.com/) to [connect to local AI models with .NET](quickstarts/chat-local-model.md), including several small language models (SLMs) developed by Microsoft:
 

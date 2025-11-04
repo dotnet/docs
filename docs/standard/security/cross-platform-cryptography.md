@@ -230,7 +230,7 @@ The <xref:System.Security.Cryptography.ECDiffieHellman> class supports the "raw"
 
 ECDH key curves are defined by the OS libraries and are subject to their limitations.
 
-| Elliptic Curve                     | Windows 10     | Windows 7 - 8.1 | Linux          | macOS           | iOS, tvOS, MacCatalyst | Android        |
+| Elliptic Curve                     | Windows 10+    | Windows 7 - 8.1 | Linux          | macOS           | iOS, tvOS, MacCatalyst | Android        |
 |------------------------------------|----------------|-----------------|----------------|-----------------|------------------------|----------------|
 | NIST P-256 (secp256r1)             | ✔️             | ✔️              | ✔️             | ✔️             | ✔️                     | ✔️             |
 | NIST P-384 (secp384r1)             | ✔️             | ✔️              | ✔️             | ✔️             | ✔️                     | ✔️             |
@@ -295,6 +295,99 @@ DSA (Digital Signature Algorithm) key generation is performed by the system libr
 <sup>1</sup> On non-Windows, <xref:System.Security.Cryptography.DSACryptoServiceProvider> can be used for compatibility with existing programs. In that case, any method that requires system interop, such as opening a named key, throws a <xref:System.PlatformNotSupportedException>.
 
 <sup>2</sup> On macOS, <xref:System.Security.Cryptography.DSAOpenSsl> works if OpenSSL is installed and an appropriate libcrypto dylib can be found via dynamic library loading. If an appropriate library can't be found, exceptions will be thrown.
+
+## Post-quantum Cryptography
+
+Post-quantum algorithms are available starting in .NET 10, and are available for .NET Framework using the Microsoft.Bcl.Cryptography NuGet package. The following support table indicates the platform support for the built-in operating system cryptographic components, such as those created from `Generate` or `ImportFromPem`. Implementations that derive from from the base class may have different support behaviors.
+
+For the built-in algorithms, an `IsSupported` static property is available to determine if the platform supports any of the parameter sets.
+
+The native interop types for post-quantum algorithms do not support key generation or importing. They exist specifically for interop scenarios with the native platform types, such as an `EVP_PKEY` on OpenSSL or `CngKey` on Windows.
+
+### ML-KEM
+
+| Algorithm    | Windows                       | Linux          | Apple | Android | Browser |
+|--------------|-------------------------------|----------------|-------|---------|---------|
+| ML-KEM-512   | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+| ML-KEM-768   | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+| ML-KEM-1024  | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+
+#### Native Interop ML-KEM
+
+* <xref:System.Security.Cryptography.X509Certificates.MLKemOpenSsl>: OpenSSL 3.5.0+
+* <xref:System.Security.Cryptography.X509Certificates.MLKemCng>: Windows 11 Insiders (Latest)
+
+### ML-DSA
+
+ML-DSA has a pure and prehash variant (HashML-DSA). The table below reflects both the pure and prehash variants.
+
+| Algorithm                                   | Windows                       | Linux          | Apple | Android | Browser |
+|---------------------------------------------|-------------------------------|----------------|-------|---------|---------|
+| ML-DSA-44                                   | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+| ML-DSA-65                                   | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+| ML-DSA-87                                   | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+| ML-DSA-44 External Mu (&#x3BC;)<sup>1</sup> | ❌                            | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+| ML-DSA-65 External Mu (&#x3BC;)<sup>1</sup> | ❌                            | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+| ML-DSA-87 External Mu (&#x3BC;)<sup>1</sup> | ❌                            | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+
+<sup>1</sup> External Mu support is for signing and verifying Mu only. Computation of Mu is not supported.
+
+#### Native Interop ML-DSA
+
+* <xref:System.Security.Cryptography.X509Certificates.MLDsaOpenSsl>: OpenSSL 3.5.0+
+* <xref:System.Security.Cryptography.X509Certificates.MLDsaCng>: Windows 11 Insiders (Latest)
+
+### SLH-DSA
+
+SLH-DSA has a pure and prehash variant (HashSLH-DSA). The table below reflects both the pure and prehash variants.
+
+| Algorithm           | Windows | Linux          | Apple | Android | Browser |
+|---------------------|---------|----------------|-------|---------|---------|
+| SLH-DSA-SHA2-128f   | ❌      | OpenSSL 3.5.0+ | ❌    | ❌      | ❌       |
+| SLH-DSA-SHA2-128s   | ❌      | OpenSSL 3.5.0+ | ❌    | ❌      | ❌       |
+| SLH-DSA-SHA2-192f   | ❌      | OpenSSL 3.5.0+ | ❌    | ❌      | ❌       |
+| SLH-DSA-SHA2-192s   | ❌      | OpenSSL 3.5.0+ | ❌    | ❌      | ❌       |
+| SLH-DSA-SHA2-256f   | ❌      | OpenSSL 3.5.0+ | ❌    | ❌      | ❌       |
+| SLH-DSA-SHA2-256s   | ❌      | OpenSSL 3.5.0+ | ❌    | ❌      | ❌       |
+| SLH-DSA-SHAKE-128f  | ❌      | OpenSSL 3.5.0+ | ❌    | ❌      | ❌       |
+| SLH-DSA-SHAKE-128s  | ❌      | OpenSSL 3.5.0+ | ❌    | ❌      | ❌       |
+| SLH-DSA-SHAKE-192f  | ❌      | OpenSSL 3.5.0+ | ❌    | ❌      | ❌       |
+| SLH-DSA-SHAKE-192s  | ❌      | OpenSSL 3.5.0+ | ❌    | ❌      | ❌       |
+| SLH-DSA-SHAKE-256f  | ❌      | OpenSSL 3.5.0+ | ❌    | ❌      | ❌       |
+| SLH-DSA-SHAKE-256s  | ❌      | OpenSSL 3.5.0+ | ❌    | ❌      | ❌       |
+
+#### Native Interop SLH-DSA
+
+* <xref:System.Security.Cryptography.X509Certificates.SlhDsaOpenSsl>: OpenSSL 3.5.0+
+* <xref:System.Security.Cryptography.X509Certificates.SlhDsaCng>: Not Supported
+
+### Composite ML-DSA
+
+| Algorithm                              | Windows                       | Linux          | Apple | Android | Browser |
+|----------------------------------------|-------------------------------|----------------|-------|---------|---------|
+| MLDSA44-RSA2048-PSS-SHA256             | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+| MLDSA44-RSA2048-PKCS15-SHA256          | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+| MLDSA44-Ed25519-SHA512                 | ❌                            | ❌             | ❌    | ❌      | ❌      |
+| MLDSA44-ECDSA-P256-SHA256              | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+| MLDSA65-RSA3072-PSS-SHA512             | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+| MLDSA65-RSA3072-PKCS15-SHA512          | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+| MLDSA65-RSA4096-PSS-SHA512             | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+| MLDSA65-RSA4096-PKCS15-SHA512          | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+| MLDSA65-RSA4096-PKCS15-SHA512          | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+| MLDSA65-ECDSA-P256-SHA512              | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+| MLDSA65-ECDSA-P384-SHA512              | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+| MLDSA65-ECDSA-brainpoolP256r1-SHA512   | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+| MLDSA65-Ed25519-SHA512                 | ❌                            | ❌             | ❌    | ❌      | ❌      |
+| MLDSA87-ECDSA-P384-SHA512              | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+| MLDSA87-ECDSA-brainpoolP384r1-SHA512   | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+| MLDSA87-Ed448-SHAKE256                 | ❌                            | ❌             | ❌    | ❌      | ❌      |
+| MLDSA87-RSA3072-PSS-SHA512             | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+| MLDSA87-RSA4096-PSS-SHA512             | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+| MLDSA87-ECDSA-P521-SHA512              | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
+
+#### Native Interop Composite ML-DSA
+
+* <xref:System.Security.Cryptography.X509Certificates.CompositeMLDsaCng>: Not Supported
 
 ## X.509 Certificates
 
@@ -410,6 +503,24 @@ On macOS, custom store creation with the X509Store API is supported only for `Cu
 macOS doesn't support Offline CRL utilization, so `X509RevocationMode.Offline` is treated as `X509RevocationMode.Online`.
 
 macOS doesn't support a user-initiated timeout on CRL (Certificate Revocation List) / OCSP (Online Certificate Status Protocol) / AIA (Authority Information Access) downloading, so `X509ChainPolicy.UrlRetrievalTimeout` is ignored.
+
+### Post-quantum Cryptography Certificates and PKCS12/PFX
+
+Post-quantum certificate support also requires support from the primitive algorithm.
+
+| Operation               | Algorithm | Windows | Linux | Apple | Android | Browser |
+|-------------------------|-----------|---------|-------|-------|---------|---------|
+| PKCS#12 Import          | ML-DSA    | ✔️      | ✔️    | ❌     | ❌      | ❌      |
+| PKCS#12 Export          | ML-DSA    | ✔️      | ✔️    | ❌     | ❌      | ❌      |
+| Private Key Association | ML-DSA    | ✔️      | ✔️    | ❌     | ❌      | ❌      |
+| &nbsp;                  |           |         |       |       |         |         |
+| PKCS#12 Import          | ML-KEM    | ❌      | ✔️    | ❌     | ❌      | ❌      |
+| PKCS#12 Export          | ML-KEM    | ❌      | ✔️    | ❌     | ❌      | ❌      |
+| Private Key Association | ML-KEM    | ❌      | ✔️    | ❌     | ❌      | ❌      |
+| &nbsp;                  |           |         |       |       |         |         |
+| PKCS#12 Import          | SLH-DSA   | ❌      | ✔️    | ❌     | ❌      | ❌      |
+| PKCS#12 Export          | SLH-DSA   | ❌      | ✔️    | ❌     | ❌      | ❌      |
+| Private Key Association | SLH-DSA   | ❌      | ✔️    | ❌     | ❌      | ❌      |
 
 ## Additional resources
 

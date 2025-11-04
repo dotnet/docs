@@ -81,14 +81,12 @@ Since authenticated encryption requires newer platform APIs to support the algor
 | Cipher + Mode     | Windows                 | Linux          | macOS   | iOS, tvOS, MacCatalyst | Android       | Browser |
 |-------------------|-------------------------|----------------|---------|------------------------|---------------|---------|
 | AES-GCM           | ✔️                      | ✔️            | ✔️      | ⚠️                     | ✔️            | ❌      |
-| AES-CCM           | ✔️                      | ✔️            | ⚠️      | ❌                     | ✔️            | ❌      |
+| AES-CCM           | ✔️                      | ✔️            | ❌      | ❌                     | ✔️            | ❌      |
 | ChaCha20Poly1305  | Windows 10 Build 20142+ | OpenSSL 1.1.0+ | ✔️      | ⚠️                     | API Level 28+ | ❌      |
 
 ### AES-CCM on macOS
 
-On macOS, the system libraries don't support AES-CCM for third-party code, so the <xref:System.Security.Cryptography.AesCcm> class uses OpenSSL for support. Users on macOS need to obtain an appropriate copy of OpenSSL (libcrypto) for this type to function, and it must be in a path that the system would load a library from by default. We recommend that you install OpenSSL from a package manager such as Homebrew.
-
-The `libcrypto.0.9.7.dylib` and `libcrypto.0.9.8.dylib` libraries included in macOS are from earlier versions of OpenSSL and will not be used. The `libcrypto.35.dylib`, `libcrypto.41.dylib`, and `libcrypto.42.dylib` libraries are from LibreSSL and will not be used.
+Prior to .NET 10, AES-CCM would work if a supported version of OpenSSL was present and the dynamic library loader could locate it. OpenSSL support on macOS was removed in .NET 10.
 
 ### AES-GCM and ChaCha20Poly1305 on iOS, tvOS, and MacCatalyst
 
@@ -173,11 +171,11 @@ Padding and digest support vary by platform:
 |--------------------------------------------------------------|---------|---------------|-----------------|-------------------------|-----------------|
 | <xref:System.Security.Cryptography.RSACryptoServiceProvider> | ✔️     | ⚠️<sup>1</sup> | ⚠️<sup>1</sup> | ⚠️<sup>1</sup>          | ⚠️<sup>1</sup>  |
 | <xref:System.Security.Cryptography.RSACng>                   | ✔️     | ❌             | ❌             | ❌                      | ❌              |
-| <xref:System.Security.Cryptography.RSAOpenSsl>               | ❌     | ✔️             | ⚠️<sup>2</sup> | ❌                      | ❌              |
+| <xref:System.Security.Cryptography.RSAOpenSsl>               | ❌     | ✔️             | ❌<sup>2</sup> | ❌                      | ❌              |
 
 <sup>1</sup> On non-Windows, <xref:System.Security.Cryptography.RSACryptoServiceProvider> can be used for compatibility with existing programs. In that case, any method that requires OS interop, such as opening a named key, throws a <xref:System.PlatformNotSupportedException>.
 
-<sup>2</sup> On macOS, <xref:System.Security.Cryptography.RSAOpenSsl> works if OpenSSL is installed and an appropriate libcrypto dylib can be found via dynamic library loading. If an appropriate library can't be found, exceptions will be thrown.
+<sup>2</sup> On macOS, <xref:System.Security.Cryptography.RSAOpenSsl> worked if OpenSSL is installed and an appropriate libcrypto dylib can be found via dynamic library loading. This support was removed in .NET 10.
 
 ### ECDSA
 
@@ -210,9 +208,9 @@ ECDSA key curves are defined by the OS libraries and are subject to their limita
 | Type                                             | Windows | Linux | macOS | iOS, tvOS, MacCatalyst | Android |
 |--------------------------------------------------|---------|-------|-------|------------------------|---------|
 | <xref:System.Security.Cryptography.ECDsaCng>     | ✔️      | ❌   | ❌    | ❌                     | ❌      |
-| <xref:System.Security.Cryptography.ECDsaOpenSsl> | ❌      | ✔️   | ⚠️\*  | ❌                     | ❌      |
+| <xref:System.Security.Cryptography.ECDsaOpenSsl> | ❌      | ✔️   | ❌\*  | ❌                     | ❌      |
 
-\* On macOS, <xref:System.Security.Cryptography.ECDsaOpenSsl> works if OpenSSL is installed in the system and an appropriate libcrypto dylib can be found via dynamic library loading. If an appropriate library can't be found, exceptions will be thrown.
+\* On macOS, <xref:System.Security.Cryptography.ECDsaOpenSsl> worked if OpenSSL is installed and an appropriate libcrypto dylib can be found via dynamic library loading. This support was removed in .NET 10.
 
 ### ECDH
 
@@ -255,9 +253,9 @@ ECDH key curves are defined by the OS libraries and are subject to their limitat
 | Type                                                       | Windows | Linux | macOS | iOS, tvOS, MacCatalyst | Android  |
 |------------------------------------------------------------|---------|-------|-------|------------------------|----------|
 | <xref:System.Security.Cryptography.ECDiffieHellmanCng>     | ✔️     | ❌    | ❌    | ❌                     | ❌       |
-| <xref:System.Security.Cryptography.ECDiffieHellmanOpenSsl> | ❌     | ✔️    | ⚠️\*  | ❌                     | ❌       |
+| <xref:System.Security.Cryptography.ECDiffieHellmanOpenSsl> | ❌     | ✔️    | ❌\*  | ❌                     | ❌       |
 
-\* On macOS, <xref:System.Security.Cryptography.ECDiffieHellmanOpenSsl> works if OpenSSL is installed and an appropriate libcrypto dylib can be found via dynamic library loading. If an appropriate library can't be found, exceptions will be thrown.
+\* On macOS, prior to .NET 10, <xref:System.Security.Cryptography.ECDiffieHellmanOpenSsl> worked if OpenSSL is installed and an appropriate libcrypto dylib can be found via dynamic library loading. This support was removed in .NET 10.
 
 ### DSA
 
@@ -290,11 +288,11 @@ DSA (Digital Signature Algorithm) key generation is performed by the system libr
 |--------------------------------------------------------------|---------|----------------|-----------------|------------------------|----------------|
 | <xref:System.Security.Cryptography.DSACryptoServiceProvider> | ✔️      | ⚠️<sup>1</sup> | ⚠️<sup>1</sup>  | ❌                    | ⚠️<sup>1</sup> |
 | <xref:System.Security.Cryptography.DSACng>                   | ✔️      | ❌             | ❌              | ❌                    | ❌             |
-| <xref:System.Security.Cryptography.DSAOpenSsl>               | ❌      | ✔️             | ⚠️<sup>2</sup>  | ❌                    | ❌             |
+| <xref:System.Security.Cryptography.DSAOpenSsl>               | ❌      | ✔️             | ❌<sup>2</sup>  | ❌                    | ❌             |
 
 <sup>1</sup> On non-Windows, <xref:System.Security.Cryptography.DSACryptoServiceProvider> can be used for compatibility with existing programs. In that case, any method that requires system interop, such as opening a named key, throws a <xref:System.PlatformNotSupportedException>.
 
-<sup>2</sup> On macOS, <xref:System.Security.Cryptography.DSAOpenSsl> works if OpenSSL is installed and an appropriate libcrypto dylib can be found via dynamic library loading. If an appropriate library can't be found, exceptions will be thrown.
+<sup>2</sup> On macOS, <xref:System.Security.Cryptography.DSAOpenSsl> worked if OpenSSL is installed and an appropriate libcrypto dylib can be found via dynamic library loading. This support was removed in .NET 10.
 
 ## Post-quantum Cryptography
 

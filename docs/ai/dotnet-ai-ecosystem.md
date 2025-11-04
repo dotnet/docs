@@ -20,7 +20,7 @@ The .NET ecosystem provides many powerful tools, libraries, and services to deve
 
 ## Semantic Kernel for .NET
 
-If you just want to use the low-level services, such as <xref:Microsoft.Extensions.AI.IChatClient> and <xref:Microsoft.Extensions.AI.IEmbeddingGenerator`2>, you can reference the `Microsoft.Extensions.AI.Abstractions` package directly from your app. However, if you want to use higher-level, more opinionated approaches to AI, then you should use [Semantic Kernel](semantic-kernel-dotnet-overview.md).
+If you just want to use the low-level services, such as <xref:Microsoft.Extensions.AI.IChatClient> and <xref:Microsoft.Extensions.AI.IEmbeddingGenerator`2>, you can reference the `Microsoft.Extensions.AI.Abstractions` package directly from your app. However, if you want to use higher-level, more opinionated approaches to AI, then you should use [Semantic Kernel](/semantic-kernel/overview/).
 
 Semantic Kernel, which has a dependency on the `Microsoft.Extensions.AI.Abstractions` package, is an open-source library that enables AI integration and orchestration capabilities in your .NET apps. Its connectors provides concrete implementations of <xref:Microsoft.Extensions.AI.IChatClient> and <xref:Microsoft.Extensions.AI.IEmbeddingGenerator`2> for different services, including OpenAI, Amazon Bedrock, and Google Gemini.
 

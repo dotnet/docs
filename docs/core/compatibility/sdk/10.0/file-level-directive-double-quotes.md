@@ -26,11 +26,11 @@ An error is reported if a double quote `"` is encountered in any file-level dire
 
 ## Type of breaking change
 
-This change can affect [source compatibility](../../categories.md#source-incompatible).
+This change can affect [source compatibility](../../categories.md#source-compatibility).
 
 ## Reason for change
 
-This change was made so support can be added later for quoted directives (https://github.com/dotnet/sdk/issues/49367) without introducing a breaking change. This also improves the error recovery experience if users try to use quotes now, thinking that's supported syntax.
+This change was made so support can be added later for quoted directives without introducing a breaking change. This also improves the error recovery experience if users try to use quotes now, thinking that's supported syntax.
 
 ## Recommended action
 
@@ -39,7 +39,3 @@ Don't use quotes in `#:` directives. If you really need to use a double quote (o
 ## Affected APIs
 
 None.
-
-## See also
-
-- [Preprocessor directives - File-based apps](../../../csharp/language-reference/preprocessor-directives.md)

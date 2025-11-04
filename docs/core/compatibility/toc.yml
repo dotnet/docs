@@ -70,6 +70,8 @@ items:
                 href: core-libraries/10.0/ymm-embedded-rounding.md
           - name: Cryptography
             items:
+              - name: CompositeMLDsa updated to draft-08
+                href: cryptography/10.0/composite-mldsa-draft-08.md
               - name: CoseSigner.Key can be null
                 href: cryptography/10.0/cosesigner-key-null.md
               - name: Environment variable renamed to DOTNET_OPENSSL_VERSION_OVERRIDE

@@ -1,7 +1,7 @@
 ---
 title: "Cross-platform cryptography in .NET"
 description: Learn about cryptographic capabilities on platforms supported by .NET.
-ms.date: "06/19/2020"
+ms.date: "11/04/2025"
 ms.subservice: standard-library
 helpviewer_keywords:
   - "cryptography, cross-platform"

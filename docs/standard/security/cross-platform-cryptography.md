@@ -86,7 +86,7 @@ Since authenticated encryption requires newer platform APIs to support the algor
 
 ### AES-CCM on macOS
 
-Prior to .NET 10, AES-CCM would work if a supported version of OpenSSL was present and the dynamic library loader could locate it. OpenSSL support on macOS was removed in .NET 10.
+Prior to .NET 10, AES-CCM worked if a supported version of OpenSSL was present and the dynamic library loader could locate it. OpenSSL support on macOS was removed in .NET 10.
 
 ### AES-GCM and ChaCha20Poly1305 on iOS, tvOS, and MacCatalyst
 
@@ -175,7 +175,7 @@ Padding and digest support vary by platform:
 
 <sup>1</sup> On non-Windows, <xref:System.Security.Cryptography.RSACryptoServiceProvider> can be used for compatibility with existing programs. In that case, any method that requires OS interop, such as opening a named key, throws a <xref:System.PlatformNotSupportedException>.
 
-<sup>2</sup> On macOS, <xref:System.Security.Cryptography.RSAOpenSsl> worked if OpenSSL is installed and an appropriate libcrypto dylib can be found via dynamic library loading. This support was removed in .NET 10.
+<sup>2</sup> On macOS, <xref:System.Security.Cryptography.RSAOpenSsl> worked if OpenSSL was installed and an appropriate libcrypto dylib could be found via dynamic library loading. This support was removed in .NET 10.
 
 ### ECDSA
 
@@ -210,7 +210,7 @@ ECDSA key curves are defined by the OS libraries and are subject to their limita
 | <xref:System.Security.Cryptography.ECDsaCng>     | ✔️      | ❌   | ❌    | ❌                     | ❌      |
 | <xref:System.Security.Cryptography.ECDsaOpenSsl> | ❌      | ✔️   | ❌\*  | ❌                     | ❌      |
 
-\* On macOS, <xref:System.Security.Cryptography.ECDsaOpenSsl> worked if OpenSSL is installed and an appropriate libcrypto dylib can be found via dynamic library loading. This support was removed in .NET 10.
+\* On macOS, <xref:System.Security.Cryptography.ECDsaOpenSsl> worked if OpenSSL was installed and an appropriate libcrypto dylib could be found via dynamic library loading. This support was removed in .NET 10.
 
 ### ECDH
 
@@ -255,7 +255,7 @@ ECDH key curves are defined by the OS libraries and are subject to their limitat
 | <xref:System.Security.Cryptography.ECDiffieHellmanCng>     | ✔️     | ❌    | ❌    | ❌                     | ❌       |
 | <xref:System.Security.Cryptography.ECDiffieHellmanOpenSsl> | ❌     | ✔️    | ❌\*  | ❌                     | ❌       |
 
-\* On macOS, prior to .NET 10, <xref:System.Security.Cryptography.ECDiffieHellmanOpenSsl> worked if OpenSSL is installed and an appropriate libcrypto dylib can be found via dynamic library loading. This support was removed in .NET 10.
+\* On macOS, prior to .NET 10, <xref:System.Security.Cryptography.ECDiffieHellmanOpenSsl> worked if OpenSSL was installed and an appropriate libcrypto dylib could be found via dynamic library loading. This support was removed in .NET 10.
 
 ### DSA
 
@@ -292,11 +292,11 @@ DSA (Digital Signature Algorithm) key generation is performed by the system libr
 
 <sup>1</sup> On non-Windows, <xref:System.Security.Cryptography.DSACryptoServiceProvider> can be used for compatibility with existing programs. In that case, any method that requires system interop, such as opening a named key, throws a <xref:System.PlatformNotSupportedException>.
 
-<sup>2</sup> On macOS, <xref:System.Security.Cryptography.DSAOpenSsl> worked if OpenSSL is installed and an appropriate libcrypto dylib can be found via dynamic library loading. This support was removed in .NET 10.
+<sup>2</sup> On macOS, <xref:System.Security.Cryptography.DSAOpenSsl> worked if OpenSSL was installed and an appropriate libcrypto dylib could be found via dynamic library loading. This support was removed in .NET 10.
 
 ## Post-quantum Cryptography
 
-Post-quantum algorithms are available starting in .NET 10, and are available for .NET Framework using the Microsoft.Bcl.Cryptography NuGet package. The following support table indicates the platform support for the built-in operating system cryptographic components, such as those created from `Generate` or `ImportFromPem`. Implementations that derive from from the base class may have different support behaviors.
+Post-quantum algorithms are available starting in .NET 10, and are available for .NET Framework using the Microsoft.Bcl.Cryptography NuGet package. The following support table indicates the platform support for the built-in operating system cryptographic components, such as those created from `Generate` or `ImportFromPem`. Implementations that derive from the base class may have different support behaviors.
 
 For the built-in algorithms, an `IsSupported` static property is available to determine if the platform supports any of the parameter sets.
 
@@ -328,7 +328,7 @@ ML-DSA has a pure and prehash variant (HashML-DSA). The table below reflects bot
 | ML-DSA-65 External Mu (&#x3BC;)<sup>1</sup> | ❌                            | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
 | ML-DSA-87 External Mu (&#x3BC;)<sup>1</sup> | ❌                            | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
 
-<sup>1</sup> External Mu support is for signing and verifying Mu only. Computation of Mu is not supported.
+<sup>1</sup> External Mu support is for signing and verifying Mu only. Computation of Mu isn't supported.
 
 #### Native Interop ML-DSA
 
@@ -370,7 +370,6 @@ SLH-DSA has a pure and prehash variant (HashSLH-DSA). The table below reflects b
 | MLDSA65-RSA3072-PSS-SHA512             | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
 | MLDSA65-RSA3072-PKCS15-SHA512          | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
 | MLDSA65-RSA4096-PSS-SHA512             | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
-| MLDSA65-RSA4096-PKCS15-SHA512          | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
 | MLDSA65-RSA4096-PKCS15-SHA512          | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
 | MLDSA65-ECDSA-P256-SHA512              | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |
 | MLDSA65-ECDSA-P384-SHA512              | Windows 11 Insiders (Latest)  | OpenSSL 3.5.0+ | ❌    | ❌      | ❌      |

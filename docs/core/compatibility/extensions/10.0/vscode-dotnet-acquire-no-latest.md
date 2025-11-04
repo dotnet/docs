@@ -31,7 +31,7 @@ Starting in .NET Install Tool 3.0.0, `dotnet.acquire` no longer always checks fo
 
 'In-use' means that the executable path to that .NET runtime install was:
 
-- Returned by a command through the .NET Install Tool in any session of VS Code, VS Code Insiders, or otherwise that has a currently live, running process. This includes but is not limited to: `dotnet.acquire`, `dotnet.acquireStatus`, `dotnet.availableInstalls`, and `dotnet.findPath`.
+- Returned by a command through the .NET Install Tool in any session of VS Code, VS Code Insiders, or otherwise that has a currently live, running process. Commands include `dotnet.acquire`, `dotnet.acquireStatus`, `dotnet.availableInstalls`, and `dotnet.findPath`.
 - Part of the PATH or DOTNET_ROOT environment variable in which VS Code is operating within.
 
 Additionally, the `dotnet.uninstall` command no longer allows uninstalling an install that is 'in-use'.
@@ -46,7 +46,7 @@ This change speeds up the developer loop by deferring the network call and insta
 
 ## Recommended action
 
-Developers who rely on `dotnet.acquire` and want to enforce that a new runtime is used every single time should consider using `forceUpdate: true` in their call to `dotnet.acquire`. We generally recommend against this unless a runtime security patch, feature, or bug is dramatic enough to warrant downloading the latest runtime.
+Developers who rely on `dotnet.acquire` and want to enforce that a new runtime is used every single time should use `forceUpdate: true` in their call to `dotnet.acquire`. This is generally not recommended unless a runtime security patch, feature, or bug is dramatic enough to warrant downloading the latest runtime.
 
 Example:
 

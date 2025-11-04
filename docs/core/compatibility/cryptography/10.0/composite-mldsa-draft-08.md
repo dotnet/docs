@@ -22,7 +22,7 @@ Public key and private key export and import used the format from draft-07 of Co
 
 ## New behavior
 
-Starting in .NET 10 GA release, signatures are generated and validated according to draft-08 of Composite ML-DSA for use in X.509 Public Key Infrastructure.
+Starting in the .NET 10 GA release, signatures are generated and validated according to draft-08 of Composite ML-DSA for use in X.509 Public Key Infrastructure.
 
 Public key and private key export and import use the format from draft-08 of Composite ML-DSA for use in X.509 Public Key Infrastructure.
 
@@ -36,7 +36,7 @@ This change was made to stay current with the underlying specification.
 
 ## Recommended action
 
-The <xref:System.Security.Cryptography.CompositeMLDsa> class is marked as `[Experimental]`, partly because the specification is not yet complete. Do not depend on this class in production.
+The <xref:System.Security.Cryptography.CompositeMLDsa> class is marked as `[Experimental]`, partly because the specification isn't yet complete. Do not depend on this class in production.
 
 Discard any previously generated keys and signatures.
 

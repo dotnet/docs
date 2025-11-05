@@ -43,8 +43,17 @@ The `dotnet-trace` tool:
 * Is a cross-platform .NET Core tool.
 * Enables the collection of .NET Core traces of a running process without a native profiler.
 * Is built on [`EventPipe`](./eventpipe.md) of the .NET Core runtime.
-* Delivers the same experience on Windows, Linux, and macOS.
-* Offers an additional command on Linux to collect Linux perf events.
+* Supports two different ways of collecting traces:
+  - The [`collect` verb](#dotnet-trace-collect) offers consistent functionality on any OS
+  - The [`collect-linux` verb](#dotnet-trace-collect-linux) uses Linux-specific OS capabilities to provide additional features
+
+|                                          | collect  | collect-linux                     |
+|------------------------------------------|----------|-----------------------------------|
+| Supported OS                             | Any      | Linux only, kernel version >= 6.4 |
+| Requires Admin/Root Privilege            | No       | Yes                               |
+| Trace all processes simultaneously       | No       | Supported                         |
+| Capture native library and kernel events | No       | Supported                         |
+| Event callstacks include native frames   | No       | Yes                               |
 
 ## Options
 
@@ -213,9 +222,9 @@ dotnet-trace collect
 
 - **`--profile <list-of-comma-separated-profile-names>`**
 
-  A comma-separated list of named, pre-defined set of provider configurations for common tracing scenarios. Providers configured through `--providers` will override the profile's configuration. Similarly, if any profile configures the CLR runtime provider, it will override any configurations prescribed through `--clrevents`.
+  In this context, a profile is a pre-defined set of provider configurations for common tracing scenarios. Multiple profiles can be specified at a time, delimited by commas. Providers configured through `--providers` will override the profile's configuration. Similarly, if any profile configures the CLR runtime provider, it will override any configurations prescribed through `--clrevents`.
 
-  Default behavior (when `--profile`, `--providers`, and `--clrevents` are omitted): dotnet-trace enables a useful, low-overhead composition: `dotnet-common` + `dotnet-sampled-thread-time`.
+  When `--profile`, `--providers`, and `--clrevents` are all omitted, `dotnet-trace collect` enables profiles `dotnet-common` and `dotnet-sampled-thread-time` by default.
 
   Available profiles:
 
@@ -228,7 +237,7 @@ dotnet-trace collect
   |`database`|Captures ADO.NET and Entity Framework database commands.|
 
   > [!NOTE]
-  > The former default `cpu-sampling` profile is now `--profile dotnet-sampled-thread-time` + `--providers "Microsoft-Windows-DotNETRuntime:0x14C14FCCBD:4"`.
+  > In past versions of the dotnet-trace tool, the collect verb supported a profile called `cpu-sampling`. This profile was removed because the name was misleading. It sampled all threads regardless of their CPU usage. You can achieve a similar result now using `--profile dotnet-sampled-thread-time,dotnet-common`. If you need to match the former `cpu-sampling` behavior exactly use `--profile dotnet-sampled-thread-time --providers "Microsoft-Windows-DotNETRuntime:0x14C14FCCBD:4"`.
 
 - **`--providers <list-of-comma-separated-providers>`**
 
@@ -237,7 +246,7 @@ dotnet-trace collect
   This list of providers is in the form:
 
   - `Provider[,Provider]`
-  - `Provider` is in the form: `KnownProviderName[:Flags[:Level][:KeyValueArgs]]`.
+  - `Provider` is in the form: `KnownProviderName[:Flags[:Level[:KeyValueArgs]]]`.
   - `KeyValueArgs` is in the form: `[key1=value1][;key2=value2]`.
 
   To learn more about some of the well-known providers in .NET, refer to [Well-known Event Providers](./well-known-event-providers.md).
@@ -282,34 +291,27 @@ dotnet-trace collect
 ## dotnet-trace collect-linux
 
 > [!NOTE]
-> The collect-linux verb is a new preview feature and relies on an updated version of the .nettrace file format. The latest PerfView release supports these trace files but other ways of using the trace file may not work yet.
+> The collect-linux verb is a new preview feature and relies on an updated version of the .nettrace file format. The latest PerfView release supports these trace files but other ways of using the trace file such as [`convert`](#dotnet-trace-convert) and [`report`](#dotnet-trace-report) may not work yet.
 
-> [!NOTE]
-> Currently supported Linux RIDs are linux-x64 and linux-arm64.
+Collects diagnostic traces using perf_events, a Linux OS technology. `collect-linux` enables the following additional features over [`collect`](#dotnet-trace-collect).
 
-> [!NOTE]
-> The generated NetTrace is not fully compatible with [`convert`](#dotnet-trace-convert) and [`report`](#dotnet-trace-report).
-
-Collects diagnostic traces using perf_events, a Linux OS technology. `collect-linux` requires admin privileges to capture kernel- and user-mode events, and by default, captures events from all processes.
-
-This Linux-only command includes the same .NET events as [`dotnet-trace collect`](#dotnet-trace-collect), and it uses the kernel’s user_events mechanism to emit .NET events as perf events, enabling unification of user-space .NET events with kernel-space system events.
-
-### Default collection behavior
-
-When `--providers`, `--profile`, `--clrevents`, and `--perf-events` aren’t specified, `collect-linux` enables the default `profile` providing the comprehensive composition:
-
-- `dotnet-common` — lightweight .NET runtime diagnostics.
-- `cpu-sampling` — kernel CPU sampling (perf-based) via `Universal.Events/cpu`.
-
-By default, a machine-wide trace will be collected. .NET Processes are discovered through their diagnostics ports, which are located under the `TMPDIR` environment variable when set and otherwise under `/tmp`.
-
-If collecting events from all .NET Processes is undesired, `-n, --name <name>` or `-p|--process-id <PID>` can be used to specify a particular process.
+|                                          | collect  | collect-linux                     |
+|------------------------------------------|----------|-----------------------------------|
+| Supported OS                             | Any      | Linux only, kernel version >= 6.4 |
+| Requires Admin/Root Privilege            | No       | Yes                               |
+| Trace all processes simultaneously       | No       | Supported                         |
+| Capture native library and kernel events | No       | Supported                         |
+| Event callstacks include native frames   | No       | Yes                               |
 
 ### Prerequisites
 
 - Linux kernel with `CONFIG_USER_EVENTS=y` support (kernel 6.4+)
 - Root permissions
 - .NET 10+
+
+> [!NOTE]
+> The current set of supported Linux RIDs is { linux-x64, linux-arm64 }.
+> The underlying trace recording library currently requires glibc 2.35+.
 
 ### Synopsis
 
@@ -333,6 +335,15 @@ dotnet-trace collect-linux
     [-p|--process-id <pid>]
 ```
 
+### Default collection behavior
+
+When `--providers`, `--profile`, `--clrevents`, and `--perf-events` aren’t specified, `collect-linux` enables these profiles by default:
+
+- `dotnet-common` — lightweight .NET runtime diagnostics.
+- `cpu-sampling` — kernel CPU sampling.
+
+By default all processes on the machine will be traced. Use `-n, --name <name>` or `-p|--process-id <PID>` to trace only one process.
+
 ### Options
 
 #### Provider/Event Specification Options
@@ -344,7 +355,7 @@ dotnet-trace collect-linux
   This list of providers is in the form:
 
   - `Provider[,Provider]`
-  - `Provider` is in the form: `KnownProviderName[:Flags[:Level][:KeyValueArgs]]`.
+  - `Provider` is in the form: `KnownProviderName[:Flags[:Level[:KeyValueArgs]]]`.
   - `KeyValueArgs` is in the form: `[key1=value1][;key2=value2]`.
 
   To learn more about some of the well-known providers in .NET, refer to [Well-known Event Providers](./well-known-event-providers.md).
@@ -413,15 +424,15 @@ dotnet-trace collect-linux
 
 - **`--perf-events <list-of-perf-events>`**
 
-  A comma-separated list of perf events to include in the trace. Available events can be found under tracefs, which is typically mounted at `/sys/kernel/tracing`, through `available_events` for all available events or through the `events/` subdirectory for categorized events.
+  A comma-separated list of perf events to include in the trace. Available events can be found under [tracefs](https://lwn.net/Articles/630526/), which is typically mounted at `/sys/kernel/tracing`, through `available_events` for all available events or through the `events/` subdirectory for categorized events.
 
   Example: `--perf-events syscalls:sys_enter_execve,sched:sched_switch,sched:sched_wakeup`
 
 - **`--profile <list-of-comma-separated-profile-names>`**
 
-  A comma-separated list of named, pre-defined set of provider configurations for common tracing scenarios. Providers configured through `--providers` will override the profile's configuration. Similarly, if any profile configures the CLR runtime provider, it will override any configurations prescribed through `--clrevents`.
+  In this context, a profile is a pre-defined set of provider configurations for common tracing scenarios. Multiple profiles can be specified at a time, delimited by commas. Providers configured through `--providers` will override the profile's configuration. Similarly, if any profile configures the CLR runtime provider, it will override any configurations prescribed through `--clrevents`.
 
-  Default behavior (when `--profile`, `--providers`, `--clrevents`, and `--perf-events` are omitted): dotnet-trace enables a useful, low-overhead composition: `dotnet-common` + `cpu-sampling`.
+  When `--profile`, `--providers`, `--clrevents`, and `--perf-events` are all omitted, `dotnet-trace collect-linux` enables profiles `dotnet-common` and `cpu-sampling` by default.
 
   Available profiles:
 
@@ -675,9 +686,9 @@ However, when you want to gain a finer control over the lifetime of the app bein
     > [!IMPORTANT]
     > Launching your app with `dotnet run` can be problematic because the dotnet CLI may spawn many child processes that are not your app and they can connect to `dotnet-trace` before your app, leaving your app to be suspended at run time. It is recommended you directly use a self-contained version of the app or use `dotnet exec` to launch the application.
 
-## (Linux-only) Collect a trace with Linux perf events using dotnet-trace
+## (Linux-only) Collect a machine-wide trace using dotnet-trace
 
-To collect traces using `dotnet-trace collect-linux`:
+This example captures CPU samples for all processes on the machine. Any processes running .NET 10+ will also include some additional lightweight events describing GC, JIT, and Assembly loading behavior.
 
   ```output
   $ sudo dotnet-trace collect-linux

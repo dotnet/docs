@@ -1055,6 +1055,9 @@ items:
           - name: Dependency injection guidelines
             href: ../core/extensions/dependency-injection-guidelines.md
             displayName: dependency injection best practices,guidelines,di,ioc,ioc container,dependency container,inversion of control
+          - name: Dependency injection auto-activation
+            href: ../core/extensions/dependency-injection-auto-activation.md
+            displayName: auto-activation,singleton activation,startup activation,di auto-activation
       - name: Configuration
         items:
           - name: Overview
@@ -1106,6 +1109,18 @@ items:
             displayName: console log formatting,console log formatter,console log formatting provider,console log formatter provider
       - name: HostBuilder (generic host)
         href: ../core/extensions/generic-host.md
+      - name: Asynchronous state management
+        href: ../core/extensions/async-state.md
+        displayName: async state,asynclocal,ambient data,async context,asynchronous context
+      - name: Application ambient metadata
+        href: ../core/extensions/ambient-metadata-application.md
+        displayName: application metadata,ambient metadata,telemetry enrichment,application version
+      - name: Testing with FakeTimeProvider
+        href: ../core/extensions/timeprovider-testing.md
+        displayName: fake time provider,time testing,testing time,test timers,mock time
+      - name: Audit reports for privacy and compliance
+        href: ../core/extensions/audit-reports.md
+        displayName: audit reports,compliance reports,privacy audit,data classification,telemetry audit
       - name: Resilience
         href: ../core/resilience/index.md
         displayName: resilience,transient fault handling,recovery,polly

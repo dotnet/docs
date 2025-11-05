@@ -16,11 +16,11 @@ The .NET Install Tool Extension for VS Code provides the `dotnet.acquire` comman
 
 ## Previous behavior
 
-Up until version 3.0.0 of the .NET Install Tool, or prerelease version 2.4.1, calling `dotnet.acquire` always triggered a check to see what the latest runtime version was, given the user was online and did not specify any settings to do otherwise. If that latest runtime wasn't available on the machine, it was installed, and the path to it was returned.
+Up until version 3.0.0 of the .NET Install Tool, or prerelease version 2.4.1, calling `dotnet.acquire` always triggered a check to see what the latest runtime version was, given the VS Code client was online and didn't specify an existing path to `dotnet`. If that latest runtime wasn't available on the machine, it was installed, and the path to it was returned.
 
-This runtime is used for [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit), C#, and other VS Code extensions, both first and third party, to run internal C# code and processes, such as the language server host. This runtime is generally not used to run user projects, and is a private, user-folder copy on disk. It can be the runtime or aspnetcore runtime.
+This runtime is used by [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit), C#, and other VS Code extensions, both first and third party, to run internal .NET code and processes, such as the language server host. This runtime is generally not used to run user projects, and is a private, user-folder copy on disk. It can be the runtime or aspnetcore runtime.
 
-A similar command, `dotnet.uninstall` exists. Previously, that command uninstalled any .NET runtime or SDK that an extension had requested if no other extensions depended upon that installation. An extension depended on the installation if the extension had requested that version of .NET in the past. A reference count-based mechanism allowed uninstallation when no further dependent extensions of an install remained.
+A similar command, `dotnet.uninstall` exists. Previously, that command uninstalled any .NET runtime or SDK that an extension had requested, if no other extensions depended upon that installation, and decremented the reference count. An extension depended on the installation if the extension had requested that version of .NET in the past. A reference count-based mechanism allowed uninstallation when no further dependent extensions of an install remained.
 
 ## New behavior
 
@@ -58,7 +58,7 @@ Make sure you don't cache or reuse any path from the .NET Install Tool without c
 
 Continue to use `dotnet.uninstall` as you did previously to decrement the reference counts of the installs you own. However, this is less vital since uninstallation happens when the older version is replaced with the newer version.
 
-Avoid relying on hard-coded private runtime installations managed by the .NET Install Tool as that isn't the intended purpose of these runtimes. If you must, set the `PATH` or `DOTNET_ROOT` for your VS Code instances such that the install doesn't get cleaned up automatically.
+Customers should avoid relying on hard-coded private runtime installations managed by the .NET Install Tool as that isn't the intended purpose of these runtimes. If you must, set the `PATH` or `DOTNET_ROOT` for your VS Code instances such that the install doesn't get cleaned up automatically.
 
 ## Affected APIs
 

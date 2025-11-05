@@ -7,7 +7,7 @@ ms.custom: https://github.com/dotnet/docs/issues/49487
 ---
 # .NET 10 requires OpenSSL 1.1.1 or later on Unix
 
-Starting in .NET 10, OpenSSL 1.1.1 or later is required on Unix platforms where .NET uses OpenSSL for cryptography, such as Linux. If OpenSSL 1.1.1 is not available on a platform that requires it, the application will fail to start. .NET 10 on macOS does not use OpenSSL and isn't impacted by this change.
+Starting in .NET 10, OpenSSL 1.1.1 or later is required on Unix platforms where .NET uses OpenSSL for cryptography, such as Linux. If OpenSSL 1.1.1 isn't available on a platform that requires it, the application will fail to start. .NET 10 on macOS doesn't use OpenSSL and isn't impacted by this change.
 
 ## Version introduced
 
@@ -27,11 +27,11 @@ This change is a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 
-OpenSSL prior to OpenSSL 1.1.1 is outdated and not supported by mainstream Linux or Unix distributions. Supporting these out-of-date OpenSSL versions increases complexity of maintenance, and that effort is better spent on supporting modern versions of OpenSSL.
+OpenSSL prior to OpenSSL 1.1.1 is outdated and isn't supported by mainstream Linux or Unix distributions. Supporting these out-of-date OpenSSL versions increases complexity of maintenance, and that effort is better spent on supporting modern versions of OpenSSL.
 
 ## Recommended action
 
-Use a distribution of Unix or Linux that includes OpenSSL 1.1.1 or later.
+Use a distribution of Linux or Unix that includes OpenSSL 1.1.1 or later.
 
 ## Affected APIs
 

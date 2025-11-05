@@ -40,11 +40,9 @@ This change is a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 
-Dynamic native instrumentation was enabled by default to maintain backwards compatibility in `dotnet test`. However, its way of injecting DLLs into the process isn't standard. With [security hardening changes](https://github.com/dotnet/runtime/pull/112359) in the .NET 10 runtime, it fails to find the linked DLL, causing the process to [crash with error](https://github.com/dotnet/sdk/issues/50950).
+Dynamic native instrumentation was enabled by default to maintain backwards compatibility in `dotnet test`. However, its way of injecting DLLs into the process isn't standard. With [security hardening changes](https://github.com/dotnet/runtime/pull/112359) in the .NET 10 runtime, it fails to find the linked DLL, causing the process to [crash with error](https://github.com/dotnet/sdk/issues/50950). The error might not be visible in non-interactive sessions or in the command line, but the process does crash.
 
-The error might not be visible in non-interactive sessions or in the command line, but the process crash happens.
-
-Dynamic native instrumentation is already disabled by default by `dotnet-coverage`, an alternative way to collect code coverage using the same underlying tools. It's also disabled by default for solutions in Visual Studio that don't have native projects.
+Dynamic native instrumentation is already disabled by default by `dotnet-coverage`, which is an alternative way to collect code coverage using the same underlying tools. It's also disabled by default for solutions in Visual Studio that don't have native projects.
 
 ## Recommended action
 
@@ -54,14 +52,14 @@ If you collect coverage on solutions that include native components, such as C++
 
 - Configure your projects to use [static native instrumentation](/visualstudio/test/customizing-code-coverage-analysis#static-and-dynamic-native-instrumentation)
 
-OR
+  OR
 
 - Update to Microsoft.CodeCoverage 18.0.1 and enable dynamic native instrumentation:
 
-  - Add the MSBuild property `<EnableDynamicNativeInstrumentation>true</EnableDynamicNativeInstrumentation>` to your project file.
+  - Add the setting `<EnableDynamicNativeInstrumentation>true</EnableDynamicNativeInstrumentation>` to your *runsettings* file.
   - Globally opt out from this new default by setting the `VSTEST_DISABLE_DYNAMICNATIVE_CODECOVERAGE_DEFAULT_SETTING=1` environment variable.
 
-Similarly, when collecting code coverage with `vstest.console`, VSTest version 18.0.1 and newer is required to successfully collect dynamic native coverage on systems that have the .NET 10 SDK installed.
+  Similarly, when collecting code coverage with `vstest.console`, VSTest version 18.0.1 and newer is required to successfully collect dynamic native coverage on systems that have the .NET 10 SDK installed.
 
 ## Affected APIs
 

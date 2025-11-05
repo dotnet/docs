@@ -36,7 +36,7 @@ Many of these types correspond to the primitive data types that a programming la
 
 - [Built-in types (C# reference)](../csharp/language-reference/builtin-types/built-in-types.md)
 - [Primitive types (Visual Basic)](/dotnet/visual-basic/reference/language-specification/types#primitive-types)
--[Basic types (F#)](../fsharp/language-reference/basic-types.md)
+- [Basic types (F#)](../fsharp/language-reference/basic-types.md)
 
 In addition to the base data types, the <xref:System> namespace contains over 100 classes, ranging from classes that handle exceptions to classes that deal with core runtime concepts, such as garbage collection. The <xref:System> namespace also contains many second-level namespaces.
 

@@ -32,6 +32,20 @@ builder.Services.AddAzureClients(clientBuilder =>
 });
 #endregion snippet_Dac
 
+#region snippet_DacEnvVar
+builder.Services.AddAzureClients(clientBuilder =>
+{
+    clientBuilder.AddSecretClient(
+        new Uri($"https://{keyVaultName}.vault.azure.net"));
+    clientBuilder.AddBlobServiceClient(
+        new Uri($"https://{storageAccountName}.blob.core.windows.net"));
+
+    DefaultAzureCredential credential = new(
+        DefaultAzureCredential.DefaultEnvironmentVariableName);
+    clientBuilder.UseCredential(credential);
+});
+#endregion snippet_DacEnvVar
+
 #region snippet_DacExcludes
 builder.Services.AddAzureClients(clientBuilder =>
 {

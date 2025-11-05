@@ -3,7 +3,7 @@ title: "Breaking change - Code coverage EnableDynamicNativeInstrumentation defau
 description: "Learn about the breaking change in .NET 10 where dynamic native instrumentation is disabled by default when collecting code coverage."
 ms.date: 11/05/2025
 ai-usage: ai-assisted
-ms.custom: https://github.com/dotnet/docs/issues/50950
+ms.custom: https://github.com/dotnet/docs/issues/49376
 ---
 
 # Code coverage EnableDynamicNativeInstrumentation defaults to false
@@ -16,7 +16,7 @@ Running `dotnet test --collect:"Code Coverage"` now disables dynamic native inst
 
 ## Previous behavior
 
-Dynamic native instrumentation was enabled by default, and used a fallback for native modules when static native instrumentation couldn't be used. As described in [Static and dynamic native instrumentation](/visualstudio/test/customizing-code-coverage-analysis?view=vs-2022#static-and-dynamic-native-instrumentation).
+Previously, dynamic native instrumentation was enabled by default and used a fallback for native modules when static native instrumentation couldn't be used. This behavior is described in [Static and dynamic native instrumentation](/visualstudio/test/customizing-code-coverage-analysis?view=vs-2022#static-and-dynamic-native-instrumentation).
 
 ```bash
 dotnet test --collect:"Code Coverage"
@@ -25,18 +25,18 @@ dotnet test --collect:"Code Coverage"
 
 ## New behavior
 
-Dynamic native instrumentation is disabled by default. The `<EnableDynamicNativeInstrumentation>false</EnableDynamicNativeInstrumentation>` option is set by default from `dotnet test` and `vstest`. If you explicitly set the option in a runsettings file, it won't be overridden.
+Starting in .NET 10, dynamic native instrumentation is disabled by default. The `<EnableDynamicNativeInstrumentation>false</EnableDynamicNativeInstrumentation>` option is set by default from `dotnet test` and `vstest`. If you explicitly set the option in a *runsettings* file, it isn't overridden.
 
 ```bash
 dotnet test --collect:"Code Coverage"
 # Dynamic native instrumentation is now disabled by default
 ```
 
-You can re-enable dynamic native instrumentation by setting `<EnableDynamicNativeInstrumentation>true</EnableDynamicNativeInstrumentation>` in your runsettings file. However, when you do so, it might fail with "The code execution cannot proceed because covrun64.dll was not found." This error can also happen for `covrun32.dll` in a 32-bit process.
+You can re-enable dynamic native instrumentation by setting `<EnableDynamicNativeInstrumentation>true</EnableDynamicNativeInstrumentation>` in your *runsettings* file. However, when you do so, it might fail with "The code execution cannot proceed because covrun64.dll was not found." This error can also happen for `covrun32.dll` in a 32-bit process.
 
 ## Type of breaking change
 
-This is a [behavioral change](../../categories.md#behavioral-change).
+This change is a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 
@@ -48,9 +48,9 @@ Dynamic native instrumentation is already disabled by default by `dotnet-coverag
 
 ## Recommended action
 
-Users who collect coverage on solutions that don't have any native components shouldn't be affected. They might observe increased performance when collecting coverage.
+If you collect coverage on solutions that don't have any native components, you shouldn't be affected. However, you might observe increased performance when collecting coverage.
 
-Users who collect coverage on solutions that include native components, such as C++ projects, have the following options:
+If you collect coverage on solutions that include native components, such as C++ projects, you have the following options:
 
 - **Globally opt out from this new default** by setting the `VSTEST_DISABLE_DYNAMICNATIVE_CODECOVERAGE_DEFAULT_SETTING=1` environment variable.
 - **Remain on .NET 9** until the problem with dynamic native instrumentation is resolved.

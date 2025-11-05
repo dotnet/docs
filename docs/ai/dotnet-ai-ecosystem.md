@@ -20,18 +20,16 @@ The .NET ecosystem provides many powerful tools, libraries, and services to deve
 
 ## Microsoft Agent Framework
 
-If you just want to use the low-level services, such as <xref:Microsoft.Extensions.AI.IChatClient> and <xref:Microsoft.Extensions.AI.IEmbeddingGenerator`2>, you can reference the `Microsoft.Extensions.AI.Abstractions` package directly from your app. However, if you want to build agentic AI applications with higher-level orchestration capabilities, you should use [Microsoft Agent Framework](/agent-framework/overview/agent-framework-overview).
+If you want to use low-level services, such as <xref:Microsoft.Extensions.AI.IChatClient> and <xref:Microsoft.Extensions.AI.IEmbeddingGenerator`2>, you can reference the `Microsoft.Extensions.AI.Abstractions` package directly from your app. However, if you want to build agentic AI applications with higher-level orchestration capabilities, you should use [Microsoft Agent Framework](/agent-framework/overview/agent-framework-overview). Agent Framework builds on the `Microsoft.Extensions.AI.Abstractions` package and provides concrete implementations of <xref:Microsoft.Extensions.AI.IChatClient> for different services, including OpenAI, Azure OpenAI, Azure AI Foundry, and more.
 
-Microsoft Agent Framework is a production-ready, open-source framework that brings together the best capabilities of Semantic Kernel and Microsoft Research's AutoGen. Agent Framework provides:
+This framework is the recommended approach for .NET apps that need to build agentic AI systems with advanced orchestration, multi-agent collaboration, and enterprise-grade security and observability.
 
-- **Multi-agent orchestration**: Support for sequential, concurrent, group chat, handoff, and magnetic orchestration patterns (where agents are dynamically attracted to tasks or conversations based on context or expertise).
+Agent Framework is a production-ready, open-source framework that brings together the best capabilities of Semantic Kernel and Microsoft Research's AutoGen. Agent Framework provides:
+
+- **Multi-agent orchestration**: Support for sequential, concurrent, group chat, handoff, and *magentic* (where a lead agent directs other agents) orchestration patterns.
 - **Cloud and provider flexibility**: Cloud-agnostic (containers, on-premises, or multi-cloud) and provider-agnostic (for example, OpenAI or Azure AI Foundry) using plugin and connector models.
 - **Enterprise-grade features**: Built-in observability (OpenTelemetry), Microsoft Entra security integration, and responsible AI features including prompt injection protection and task adherence monitoring.
 - **Standards-based interoperability**: Integration with open standards like Agent-to-Agent (A2A) protocol and Model Context Protocol (MCP) for agent discovery and tool interaction.
-
-Agent Framework builds on the `Microsoft.Extensions.AI.Abstractions` package and provides concrete implementations of <xref:Microsoft.Extensions.AI.IChatClient> for different services, including OpenAI, Azure OpenAI, Azure AI Foundry, and more.
-
-Microsoft Agent Framework is the recommended approach for .NET apps that need to build agentic AI systems with advanced orchestration, multi-agent collaboration, and enterprise-grade security and observability.
 
 For more information, see the [Microsoft Agent Framework documentation](/agent-framework/overview/agent-framework-overview).
 
@@ -39,15 +37,7 @@ For more information, see the [Microsoft Agent Framework documentation](/agent-f
 
 [Semantic Kernel](/semantic-kernel/overview/) is an open-source library that enables AI integration and orchestration capabilities in your .NET apps. Semantic Kernel has a dependency on the `Microsoft.Extensions.AI.Abstractions` package and provides connectors with concrete implementations of <xref:Microsoft.Extensions.AI.IChatClient> and <xref:Microsoft.Extensions.AI.IEmbeddingGenerator`2> for different services, including OpenAI, Amazon Bedrock, and Google Gemini.
 
-Semantic Kernel continues to be actively maintained and is suitable for AI integration scenarios, especially for applications that:
-
-- Need AI integration without complex multi-agent orchestration.
-- Are already built on Semantic Kernel and don't require advanced agentic features.
-- Benefit from Semantic Kernel's extensive connector ecosystem and community support.
-
-For new applications that require advanced agentic capabilities, multi-agent orchestration, or enterprise-grade observability and security, consider using [Microsoft Agent Framework](/agent-framework/overview/agent-framework-overview).
-
-For more information, see the [Semantic Kernel documentation](/semantic-kernel/overview/).
+However, for new applications that require agentic capabilities, multi-agent orchestration, or enterprise-grade observability and security, the recommended framework is [Microsoft Agent Framework](/agent-framework/overview/agent-framework-overview).
 
 ## .NET SDKs for building AI apps
 

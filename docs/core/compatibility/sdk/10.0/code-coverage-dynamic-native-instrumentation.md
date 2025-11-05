@@ -32,7 +32,7 @@ dotnet test --collect:"Code Coverage"
 # Dynamic native instrumentation is now disabled by default
 ```
 
-When you re-enable dynamic native instrumentation, it might fail with "The code execution cannot proceed because covrun64.dll was not found." This error can also happen for `covrun32.dll` in a 32-bit process.
+You can re-enable dynamic native instrumentation by setting `<EnableDynamicNativeInstrumentation>true</EnableDynamicNativeInstrumentation>` in your runsettings file. However, when you do so, it might fail with "The code execution cannot proceed because covrun64.dll was not found." This error can also happen for `covrun32.dll` in a 32-bit process.
 
 ## Type of breaking change
 
@@ -50,9 +50,11 @@ Dynamic native instrumentation is already disabled by default by `dotnet-coverag
 
 Users who collect coverage on solutions that don't have any native components shouldn't be affected. They might observe increased performance when collecting coverage.
 
-Users who collect coverage on solutions that include native components, such as C++ projects, and wish to re-enable dynamic native instrumentation should remain on .NET 9, or disable collecting code coverage until the problem is resolved.
+Users who collect coverage on solutions that include native components, such as C++ projects, have the following options:
 
-Users who wish to globally opt out from this new default can set the `VSTEST_DISABLE_DYNAMICNATIVE_CODECOVERAGE_DEFAULT_SETTING=1` environment variable.
+- **Globally opt out from this new default** by setting the `VSTEST_DISABLE_DYNAMICNATIVE_CODECOVERAGE_DEFAULT_SETTING=1` environment variable.
+- **Remain on .NET 9** until the problem with dynamic native instrumentation is resolved.
+- **Disable code coverage collection** temporarily until a solution is available.
 
 ## Affected APIs
 

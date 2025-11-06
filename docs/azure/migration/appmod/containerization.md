@@ -67,4 +67,4 @@ The GitHub Copilot app modernization for .NET containerization feature helps you
 
 ## Additional resources
 
-- [Containerization Assist](https://aka.ms/aks/containerization-assist)
+- We leverage certain tools in Containerization Assist. [Learn more](https://aka.ms/aks/containerization-assist)

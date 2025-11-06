@@ -30,7 +30,7 @@ The App Modernization for .NET deployment feature helps you deploy your migrated
 
     - **Use a deployment prompt to provision new Azure infrastructure and deploy your project**: You can enter the following prompt in Copilot chat to deploy your project to Azure:
 
-        *Scan my project to identify all Azure-relevant resources, programming languages, frameworks, dependencies, and configuration files needed for deployment, and develop an architecture diagram for me using #appmod-generate-architecture-diagram. Based on that diagram, help me develop and execute a plan using #appmod-get-plan to deploy my project to Azure. deployTool: azcli, hosting service: non-aks.*
+        *Scan my project carefully to identify all Azure-relevant resources, programming languages, frameworks, dependencies, and configuration files needed for deployment. Develop an architecture diagram for me using #appmod-generate-architecture-diagram. Based on that diagram along with all info you get from project scan, help me develop a deploy-and-provision plan WITH TOOL #appmod-get-plan and execute it to deploy my project to Azure. deployTool: azd, IacType: Bicep, hosting service: non-aks.*
 
         :::image type="content" source="media/start-deploy-prompt.png" alt-text="Screenshot that shows how to start the deployment process in GitHub Copilot by using a prompt.":::
 

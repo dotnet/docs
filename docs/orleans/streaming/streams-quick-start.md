@@ -18,6 +18,8 @@ This guide shows you a quick way to set up and use Orleans Streams. To learn mor
 
 In this guide, you use a memory-based stream that uses grain messaging to send stream data to subscribers. You use the in-memory storage provider to store lists of subscriptions. Using memory-based mechanisms for streaming and storage is intended only for local development and testing, not for production environments.
 
+Orleans streaming requires the [Microsoft.Orleans.Streaming](https://www.nuget.org/packages/Microsoft.Orleans.Streaming) NuGet package. This package provides the streaming functionality for both the client and server, including the `AddMemoryStreams` extension method used in this guide.
+
 On the silo, where `silo` is an <xref:Orleans.Hosting.ISiloBuilder>, call <xref:Orleans.Hosting.SiloBuilderExtensions.AddMemoryStreams%2A>:
 
 ```csharp

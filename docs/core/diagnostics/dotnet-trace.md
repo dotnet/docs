@@ -310,8 +310,41 @@ Collects diagnostic traces using perf_events, a Linux OS technology. `collect-li
 - .NET 10+
 
 > [!NOTE]
-> The current set of supported Linux RIDs is { linux-x64, linux-arm64 }.
-> The underlying trace recording library currently requires glibc 2.35+.
+> The `collect-linux` verb depends on assets currently available only on linux x64 and linux arm64 environments that have glibc 2.35+.
+> A quick way to check the version of a system's libc is with the command `ldd --version` or by executing the libc library directly.
+> From the [official .NET 10 Linux support document](https://github.com/dotnet/core/blob/main/release-notes/10.0/supported-os.md#linux), the tables below depict each distros support in addition to the minimum distro version that we have found to contain glibc 2.35+. (These values were obtained by using official Docker images.)
+
+| **Distro / Image**           | **libc type** | **Version** | **Compatible** |
+|------------------------------|---------------|-------------|----------------|
+| Alpine 3.22                  | musl          | 1.2.5       | **No**         |
+| Azure Linux 3.0              | glibc         | 2.38        | Yes            |
+| CentOS Stream 9              | glibc         | 2.34        | **No**         |
+| CentOS Stream 10             | glibc         | 2.39        | Yes            |
+| Debian 12                    | glibc         | 2.36        | Yes            |
+| Debian 13                    | glibc         | 2.41        | Yes            |
+| Fedora 42                    | glibc         | 2.41        | Yes            |
+| openSUSE Leap 15.6           | glibc         | 2.38        | Yes            |
+| openSUSE Leap 16.0           | glibc         | 2.40        | Yes            |
+| RHEL UBI 9                   | glibc         | 2.34        | **No**         |
+| RHEL UBI 10                  | glibc         | 2.39        | Yes            |
+| SUSE Enterprise Linux 15.6   | glibc         | 2.38        | Yes            |
+| SUSE Enterprise Linux 15.7   | glibc         | 2.38        | Yes            |
+| SUSE Enterprise Linux 16.0   | glibc         | 2.40        | Yes            |
+| Ubuntu 22.04                 | glibc         | 2.35        | Yes            |
+| Ubuntu 24.04                 | glibc         | 2.39        | Yes            |
+| Ubuntu 25.10                 | glibc         | 2.42        | Yes            |
+
+| **Distro / Image** | ** Min Version with glibc 2.35+ ** |
+|--------------------|------------------------------------|
+| Alpine             | No glibc                           |
+| AzureLinux         | 2.0                                |
+| CentOS             | stream10                           |
+| Debian             | 11                                 |
+| Fedora             | 36                                 |
+| openSUSE           | 15.6                               |
+| RHEL UBI           | 10                                 |
+| SUSE SLE           | 15.6                               |
+| Ubuntu             | 22.04                              |
 
 ### Synopsis
 

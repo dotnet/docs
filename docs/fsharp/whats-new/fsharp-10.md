@@ -3,6 +3,7 @@ title: What's new in F# 10 - F# Guide
 description: Get an overview of the new features available in F# 10.
 ms.date: 11/11/2025
 ms.topic: whats-new
+ai-usage: ai-assisted
 ---
 # What's new in F# 10
 

@@ -56,7 +56,7 @@ The following sections are both required to enable the .NET Upgrade Assistant.
 
 When completed successfully. You can open a .NET solution in Visual Studio and will be able to see the Modernize menu option when you right-click a solution in the Solution Explorer.
 
-![Visual Studio solution explorer shows upgrade menu after right-click](./media/upgrade-assistant-install/visual-studio-solution-explorer-modernize-menu.png)
+![Visual Studio solution explorer shows modernize menu after right-click](./media/upgrade-assistant-install/visual-studio-solution-explorer-modernize-menu.png)
 
 ### Enable the .NET Upgrade Assistant in Visual Studio
 

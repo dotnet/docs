@@ -416,7 +416,7 @@
 | Speech Extension Telemetry | NuGet [1.46.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Telemetry/1.46.0) |  |  |
 | System Net Client Model | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/System.Net.ClientModel/1.0.0-beta.1) |  |  |
 | Unknown Display Name | NuGet [0.13.0](https://www.nuget.org/packages/Azure.Iot.Operations.Connector/0.13.0) |  |  |
-| Unknown Display Name | NuGet [0.1.0](https://www.nuget.org/packages/Azure.Iot.Operations.Templates/0.1.0) |  |  |
+| IoT Operations Templates | NuGet [0.1.0](https://www.nuget.org/packages/Azure.Iot.Operations.Templates/0.1.0) |  |  |
 | Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp/1.0.0)<br>NuGet [2.0.0-beta.1](https://www.nuget.org/packages/Azure.Mcp/2.0.0-beta.1) |  |  |
 | Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.linux-arm64/1.0.0)<br>NuGet [2.0.0-beta.1](https://www.nuget.org/packages/Azure.Mcp.linux-arm64/2.0.0-beta.1) |  |  |
 | Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.linux-x64/1.0.0)<br>NuGet [2.0.0-beta.1](https://www.nuget.org/packages/Azure.Mcp.linux-x64/2.0.0-beta.1) |  |  |

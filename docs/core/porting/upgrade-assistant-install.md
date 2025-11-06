@@ -4,7 +4,7 @@ description: "Learn how to install .NET Upgrade Assistant as a Visual Studio ext
 author: adegeo
 ms.author: adegeo
 ms.topic: install-set-up-deploy
-ms.date: 10/08/2024
+ms.date: 11/06/2025
 
 #customer intent: As a developer, I want to install .NET Upgrade Assistant so that I can upgrade my projects.
 
@@ -12,47 +12,66 @@ ms.date: 10/08/2024
 
 # Install .NET Upgrade Assistant
 
-This article teaches you how to install .NET Upgrade Assistant using either the Visual Studio extension or the command-line interface (CLI) tool.
+This article teaches you how to enable .NET Upgrade Assistant in Visual Studio or install the tool using the command-line interface (CLI).
 
 [!INCLUDE [github-copilot-suggestion](includes/github-copilot-suggestion.md)]
 
 ## Prerequisites
 
 - Windows Operating System
-- [Visual Studio 2022 version 17.1 or newer](https://visualstudio.microsoft.com/downloads/).
+- [Visual Studio 2022 version 17.14.6 or newer](https://visualstudio.microsoft.com/downloads/).
 - [.NET SDK 8 or later](https://dotnet.microsoft.com/download/dotnet/).
+
+> [!IMPORTANT]
+> Starting with Visual Studio 2022 17.14.16, the GitHub Copilot app modernization agent is included with Visual Studio. And, the .NET Upgrade Assistant is installed along with that feature. If you're using an older version of Visual Studio 2022, upgrade to the latest release.
+>
+> If you installed any of the following extensions published by Microsoft, uninstall them before using the version now included in Visual Studio:
+>
+> - .NET Upgrade Assistant
+> - GitHub Copilot App Modernization – Upgrade for .NET
+> - Azure Migrate Application and Code Assessment for .NET
 
 ## Methods
 
-.NET Upgrade Assistant can be installed as a Visual Studio extension or as a .NET Global Tool.
+.NET Upgrade Assistant is available as a feature in Visual Studio and it can be installed as a .NET Global Tool.
 
-The Visual Studio extension runs inside Visual Studio, on the solution or project you have open. The .NET Global Tool is an interactive console application that runs on a solution or project file at or below the current directory.
+The .NET Global Tool is an interactive console application that runs on a solution or project file at or below the current directory.
 
-If you want the streamlined experience of opening a project in Visual Studio and upgrading it, install the extension.
+If you want the streamlined experience of opening a project in Visual Studio and upgrading it, then enable the feature.
 
-## Visual Studio Extension
+## Enable the Visual Studio Feature
 
-The following steps install the Visual Studio extension.
+The following sections are both required to enable the .NET Upgrade Assistant.
 
-> [!TIP]
-> As an alternative to using the **Manage Extensions** feature of Visual Studio, you can download and run the extensions installer from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.upgradeassistant).
+### Enable the GitHub Copilot app modernization for .NET
 
-01. Open Visual Studio.
+1.	Open the Visual Studio installer
+2.	Click the Modify button next to your Visual Studio instance
+3.	On the Workloads tab
+  1.	Find the Installation details outline on the right side of the window
+  2.	Click the arrow to expand the ASP.NET and web development section
+  3.	Click the checkbox to install GitHub Copilot app modernization for .NET
 
-    If the **Open Recent \ Get Started** window opens, select the **Continue without code** link.
+![Visual Studio installation details shows GitHub Copilot app modernization for .NET as a feature under the ASP.NET and web development workload](./media/upgrade-assistant-install/visual-studio-modify-workloads.png)
 
-01. Select the **Extensions** > **Manage Extensions** menu to open the **Extension Manager** window.
-01. Select the **Browse** tab.
-01. Type **.NET upgrade assistant** into the search box.
-01. Select the **.NET Upgrade Assistant** item, and then select **Install**.
+When completed successfully. You can open a .NET solution in Visual Studio and will be able to see the Modernize menu option when you right-click a solution in the Solution Explorer.
 
-    :::image type="content" source="media/upgrade-assistant-install/visual-studio-manage-extensions.png" alt-text="The manage extensions window in Visual Studio, showing the .NET Upgrade Assistant.":::
+![Visual Studio solution explorer shows upgrade menu after right-click](./media/upgrade-assistant-install/visual-studio-solution-explorer-modernize-menu.png)
 
-01. Once the extension finishes downloading, close Visual Studio to automatically start the installation.
+### Enable the .NET Upgrade Assistant in Visual Studio
 
-    :::image type="content" source="media/upgrade-assistant-install/install-prompt.png" alt-text="A prompt to install the .NET Upgrade Assistant extension.":::
+1.	Click on the Tools -> Options menu item to open the Options window
+2.	Use the left-side to select Projects and Solutions -> Modernization
+3.	Select True to Enable legacy Upgrade Assistant
 
-01. Select **Modify** and follow the instructions to install the extension.
+![Visual Studio tools options dialog shows how to enable the .NET Upgrade Assistant](./media/upgrade-assistant-install/visual-studio-tools-options-enable-legacy-upgrade-assistant.png)
+
+> [!IMPORTANT]
+> You will need to restart Visual Studio for this change to take effect.
+
+When completed successfully. You can open a .NET solution in Visual Studio and will be able to see the Modernize menu option when you right-click a solution in the Solution Explorer.
+
+![Visual Studio solution explorer shows upgrade menu after right-click](./media/upgrade-assistant-install/visual-studio-solution-explorer-upgrade-menu.png)
 
 ## .NET Global Tool
 

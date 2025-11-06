@@ -102,6 +102,10 @@ items:
             items:
               - name: Environment variable renamed to DOTNET_ICU_VERSION_OVERRIDE
                 href: globalization/10.0/version-override.md
+          - name: Install tool
+            items:
+              - name: dotnet.acquire API for VS Code no longer always downloads latest
+                href: install-tool/3.0.0/vscode-dotnet-acquire-no-latest.md
           - name: Interop
             items:
               - name: Single-file apps no longer look for native libraries in executable directory

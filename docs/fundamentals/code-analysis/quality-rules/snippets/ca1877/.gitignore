@@ -1,0 +1,7 @@
+# Build outputs
+**/bin/
+**/obj/
+
+# Project files - we only need the source code files
+**/*.csproj
+**/*.vbproj

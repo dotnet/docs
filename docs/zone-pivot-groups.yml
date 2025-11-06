@@ -60,8 +60,10 @@ groups:
   title: .NET preview version
   prompt: Choose a .NET version
   pivots:
+    - id: dotnet-11-0
+      title: .NET 11 Preview
     - id: dotnet-10-0
-      title: .NET 10 Preview
+      title: .NET 10
     - id: dotnet-9-0
       title: .NET 9
     - id: dotnet-8-0
@@ -70,6 +72,8 @@ groups:
   title: .NET version
   prompt: Choose a .NET version
   pivots:
+    - id: dotnet-10-0
+      title: .NET 10
     - id: dotnet-9-0
       title: .NET 9
     - id: dotnet-8-0

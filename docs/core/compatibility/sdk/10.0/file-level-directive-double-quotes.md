@@ -30,7 +30,7 @@ This change can affect [source compatibility](../../categories.md#source-compati
 
 ## Reason for change
 
-This change was made so support can be added later for quoted directives without introducing a breaking change. This also improves the error recovery experience if users try to use quotes now, thinking that's supported syntax.
+This change enables future support for quoted directives without introducing a breaking change. This also improves the error recovery experience if users try to use quotes now, thinking that's supported syntax.
 
 ## Recommended action
 

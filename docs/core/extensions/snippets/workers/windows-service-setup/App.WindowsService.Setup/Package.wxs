@@ -52,6 +52,7 @@
                                 DisplayName="$(Name)"
                                 Description="A joke service that periodically logs nerdy humor."
                                 Start="auto"
+                                Account="LocalService"
                                 ErrorControl="normal" />
 
                 <!-- Tell WiX to start the Service -->

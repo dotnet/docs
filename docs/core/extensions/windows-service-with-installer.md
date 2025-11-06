@@ -186,15 +186,17 @@ After the project reference has been added, configure the _Package.wxs_ file. Op
         <MajorUpgrade DowngradeErrorMessage="A later version of [ProductName] is already installed. Setup will now exit." />
 
         <!-- Define the directory structure -->
-        <StandardDirectory Id="ProgramFiles64Folder">
+        <Directory Id="TARGETDIR" Name="SourceDir">
+            <Directory Id="ProgramFilesFolder">
 
-            <!-- Create a folder inside program files -->
-            <Directory Id="ROOTDIRECTORY" Name="$(var.Manufacturer)">
+                <!-- Create a folder inside program files -->
+                <Directory Id="ROOTDIRECTORY" Name="$(var.Manufacturer)">
 
-                <!-- Create a folder within the parent folder given the name -->
-                <Directory Id="INSTALLFOLDER" Name="$(Name)" />
+                    <!-- Create a folder within the parent folder given the name -->
+                    <Directory Id="INSTALLFOLDER" Name="$(Name)" />
+                </Directory>
             </Directory>
-        </StandardDirectory>
+        </Directory>
 
         <!-- The files inside this DirectoryRef are linked to
              the App.WindowsService directory via INSTALLFOLDER -->
@@ -219,6 +221,7 @@ After the project reference has been added, configure the _Package.wxs_ file. Op
                                 DisplayName="$(Name)"
                                 Description="A joke service that periodically logs nerdy humor."
                                 Start="auto"
+                                Account="LocalService"
                                 ErrorControl="normal" />
 
                 <!-- Tell WiX to start the Service -->
@@ -239,6 +242,12 @@ After the project reference has been added, configure the _Package.wxs_ file. Op
     </Package>
 </Wix>
 ```
+
+The `ServiceInstall` element's `Account` attribute specifies the account under which the service runs. The `LocalService` account is a built-in account with reduced privileges that's appropriate for most services. Other common values include:
+
+- `LocalService`: A built-in account with reduced privileges and no network credentials.
+- `NetworkService`: Similar to LocalService but has network credentials.
+- `LocalSystem`: The highest privilege level (use with caution).
 
 When you build the project, the output is an MSI file that can be used to install and uninstall the service.
 

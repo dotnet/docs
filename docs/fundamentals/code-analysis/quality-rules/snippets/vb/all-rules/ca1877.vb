@@ -1,3 +1,5 @@
+Imports System.IO
+
 Class ViolationExample
     ' <Violation>
     Public Function GetFilePath(folder As String, subfolder As String, filename As String) As String

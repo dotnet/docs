@@ -75,7 +75,7 @@ The F# updates in .NET 10 include several new features and improvements across t
 
   General improvements and bug fixes in the compiler implementation.
 
-For more information, see the [F# release notes](https://fsharp.github.io/fsharp-compiler-docs/release-notes/About.html).
+For more information, see [What's new in F# 10](../../../fsharp/whats-new/fsharp-10.md) or the [F# release notes](https://fsharp.github.io/fsharp-compiler-docs/release-notes/About.html).
 
 ## Visual Basic
 

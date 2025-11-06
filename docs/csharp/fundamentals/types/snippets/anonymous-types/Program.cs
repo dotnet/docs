@@ -87,10 +87,6 @@ namespace anonymous_types
             // Equivalent using a tuple with named elements.
             var tupleProduct = (Name: "Widget", Price: 19.99M);
             Console.WriteLine($"Tuple: {tupleProduct.Name} costs ${tupleProduct.Price}");
-
-            // Tuples support deconstruction.
-            var (productName, productPrice) = tupleProduct;
-            Console.WriteLine($"Deconstructed: {productName} costs ${productPrice}");
             // </TupleExample>
         }
     }

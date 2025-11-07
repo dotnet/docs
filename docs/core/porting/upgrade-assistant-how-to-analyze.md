@@ -14,6 +14,8 @@ ms.date: 10/08/2024
 
 This article teaches you how to perform code analysis on your projects with .NET Upgrade Assistant, using Visual Studio or the terminal. The analysis generates a report that you can browse to get more information about the upgrade.
 
+[!INCLUDE [github-copilot-suggestion](includes/github-copilot-suggestion.md)]
+
 ## Prerequisites
 
 - For Visual Studio, see [Install .NET Upgrade Assistant - Visual Studio extension](upgrade-assistant-install.md#visual-studio-extension).

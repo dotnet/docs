@@ -281,10 +281,20 @@ Project file:
 
 Set the stack size to 2 MB for all new threads:
 
-#### On Windows, Linux, or macOS:
+```shell
+# Windows
+set DOTNET_Thread_DefaultStackSize=2097152
+
+# PowerShell
+$env:DOTNET_Thread_DefaultStackSize="2097152"
+
+# Unix
+export DOTNET_Thread_DefaultStackSize=2097152
+```
+
+Then run your application:
 
 ```shell
-export DOTNET_Thread_DefaultStackSize=2097152
 dotnet myapp.dll
 ```
 

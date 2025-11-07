@@ -2,13 +2,13 @@
 title: What's new in .NET 10 runtime
 description: Learn about the new features introduced in the .NET 10 runtime.
 titleSuffix: ""
-ms.date: 10/15/2025
+ms.date: 11/07/2025
 ai-usage: ai-assisted
 ms.update-cycle: 3650-days
 ---
 # What's new in the .NET 10 runtime
 
-This article describes new features and performance improvements in the .NET runtime for .NET 10. It's been updated for RC 2.
+This article describes new features and performance improvements in the .NET runtime for .NET 10.
 
 ## JIT compiler improvements
 

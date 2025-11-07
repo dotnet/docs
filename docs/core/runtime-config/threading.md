@@ -274,9 +274,33 @@ Project file:
 
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
-| **runtimeconfig.json** | N/A | N/A | N/A |
+| **runtimeconfig.json** | `System.Threading.DefaultStackSize` | A hexadecimal integer value representing stack size in bytes. | .NET 9 |
 | **MSBuild property** | N/A | N/A | N/A |
 | **Environment variable** | `DOTNET_Thread_DefaultStackSize` | A hexadecimal integer value representing stack size in bytes. | .NET 9 |
+
+### Examples
+
+*runtimeconfig.json* file:
+
+```json
+{
+   "runtimeOptions": {
+      "configProperties": {
+         "System.Threading.DefaultStackSize": "0x100000"
+      }
+   }
+}
+```
+
+*runtimeconfig.template.json* file:
+
+```json
+{
+   "configProperties": {
+      "System.Threading.DefaultStackSize": "0x100000"
+   }
+}
+```
 
 > [!NOTE]
 > This setting doesn't affect threads that explicitly specify a stack size at creation.

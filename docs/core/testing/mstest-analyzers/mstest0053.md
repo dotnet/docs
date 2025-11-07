@@ -25,7 +25,7 @@ ai-usage: ai-generated
 | **Introduced in version**           | 3.11.0                                                                                   |
 | **Is there a code fix**             | Yes                                                                                      |
 
-> [NOTE]
+> [!NOTE]
 > This analyzer is no longer relevant for MSTest 4 as the assertion APIs with format parameters were removed.
 
 ## Cause

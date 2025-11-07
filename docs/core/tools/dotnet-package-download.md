@@ -1,6 +1,6 @@
 ---
 title: dotnet package download command
-description: Download a NuGet package.
+description: Learn about the 'dotnet package download' command that downloads a NuGet package.
 author: Nigusu-Allehu
 ms.date: 11/06/2025
 ai-usage: ai-assisted

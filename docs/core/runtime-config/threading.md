@@ -269,41 +269,14 @@ Project file:
 
 ## Default stack size for new threads
 
-- Specifies the stack size (in bytes) for new VM threads that are created with the default stack size.
-- This setting allows configuration of the stack size for threads created by <xref:System.Threading.Thread> and other APIs that do not manually specify a stack size.
-- If not set, the stack size is determined by the system or runtime default.
+- Configures the default stack size (in bytes) for threads created by <xref:System.Threading.Thread> and other APIs that don't specify an explicit stack size.
+- If not specified, the default stack size is determined by the operating system.
 
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
-| **Environment variable** | `DOTNET_Thread_DefaultStackSize` | An integer value (bytes). Example: `1048576` for 1 MB | .NET 9 |
+| **runtimeconfig.json** | N/A | N/A | N/A |
+| **MSBuild property** | N/A | N/A | N/A |
+| **Environment variable** | `DOTNET_Thread_DefaultStackSize` | An integer value representing stack size in bytes | .NET 9 |
 
-### Examples
-
-Set the stack size to 2 MB for all new threads:
-
-```shell
-# Windows
-set DOTNET_Thread_DefaultStackSize=2097152
-
-# PowerShell
-$env:DOTNET_Thread_DefaultStackSize="2097152"
-
-# Unix
-export DOTNET_Thread_DefaultStackSize=2097152
-```
-
-Then run your application:
-
-```shell
-dotnet myapp.dll
-```
-
-#### In C# code (for reference, no runtimeconfig property):
-
-```csharp
-// Stack size is determined by the DOTNET_Thread_DefaultStackSize environment variable
-var thread = new Thread(() => { /* thread logic */ }); 
-thread.Start();
-```
-
-**Note:** This setting does not affect threads for which a non-default stack size is specified at creation.
+> [!NOTE]
+> This setting does not affect threads created with an explicitly specified stack size.

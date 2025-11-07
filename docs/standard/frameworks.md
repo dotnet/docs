@@ -1,7 +1,7 @@
 ---
 title: Target frameworks in SDK-style projects - .NET
 description: Learn about target frameworks for .NET apps and libraries.
-ms.date: 11/07/2025
+ms.date: 04/07/2025
 ms.service: dotnet
 ms.custom: updateeachrelease
 ms.subservice: standard-library
@@ -26,7 +26,6 @@ The following table defines the most common target frameworks, how they're refer
 
 | Target framework | Latest <br/> stable version | Target framework moniker (TFM) | Implemented <br/> .NET Standard version |
 |:----------------:|:---------------------------:|:------------------------------:|:---------------------------------------:|
-| .NET 10          | 10                          | net10.0                        | 2.1                                     |
 | .NET 9           | 9                           | net9.0                         | 2.1                                     |
 | .NET 8           | 8                           | net8.0                         | 2.1                                     |
 | .NET Standard    | 2.1                         | netstandard2.1                 | N/A                                     |
@@ -96,15 +95,6 @@ The following table shows the compatibility of the .NET 5+ TFMs.
 | `net9.0-tizen`       | (Subsequent version of `net8.0-tizen`)                           |
 | `net9.0-tvos`        | (Subsequent version of `net8.0-tvos`)                            |
 | `net9.0-windows`     | (Subsequent version of `net8.0-windows`)                         |
-| `net10.0`            | (Subsequent version of `net9.0`)                                 |
-| `net10.0-android`    | (Subsequent version of `net9.0-android`)                         |
-| `net10.0-browser`    | (Subsequent version of `net9.0-browser`)                         |
-| `net10.0-ios`        | (Subsequent version of `net9.0-ios`)                             |
-| `net10.0-maccatalyst`| (Subsequent version of `net9.0-maccatalyst`)                     |
-| `net10.0-macos`      | (Subsequent version of `net9.0-macos`)                           |
-| `net10.0-tizen`      | (Subsequent version of `net9.0-tizen`)                           |
-| `net10.0-tvos`       | (Subsequent version of `net9.0-tvos`)                            |
-| `net10.0-windows`    | (Subsequent version of `net9.0-windows`)                         |
 
 To make your app portable across different platforms but still have access to OS-specific APIs, you can target multiple OS-specific TFMs and add platform guards around OS-specific API calls using `#if` preprocessor directives. For a list of the available symbols, see [Preprocessor symbols](#preprocessor-symbols).
 
@@ -130,7 +120,6 @@ The following table shows the *default* target platform version (TPV) for each .
 |--------------|--------:|-----:|-------------:|------:|-----:|------:|--------:|
 | .NET 8       |    34.0 | 17.2 |         17.2 | 14.2  | 17.1 |  10.0 |     7.0 |
 | .NET 9       |    35.0 | 18.0 |         18.0 | 15.0  |      |  10.0 |     7.0 |
-| .NET 10      |    36.0 | 18.0 |         18.0 | 26.0  |      |  10.0 |     7.0 |
 
 Starting in .NET 9, when service releases introduce support for a later TPV (which will always have the same *major* version number as when the .NET version was initially released), the earliest supported TPV for that .NET version will remain supported. For example, for .NET 9, the earliest supported iOS version, 18.0, will remain supported, even when a service release adds support for the latest iOS 18.x version. **If you need to use the earliest bindings for a .NET release, use a specific OS version number in your TFM.**
 

@@ -417,13 +417,13 @@
 | System Net Client Model | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/System.Net.ClientModel/1.0.0-beta.1) |  |  |
 | Unknown Display Name | NuGet [0.13.0](https://www.nuget.org/packages/Azure.Iot.Operations.Connector/0.13.0) |  |  |
 | Unknown Display Name | NuGet [0.1.0](https://www.nuget.org/packages/Azure.Iot.Operations.Templates/0.1.0) |  |  |
-| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp/1.0.0)<br>NuGet [2.0.0-beta.1](https://www.nuget.org/packages/Azure.Mcp/2.0.0-beta.1) |  |  |
-| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.linux-arm64/1.0.0)<br>NuGet [2.0.0-beta.1](https://www.nuget.org/packages/Azure.Mcp.linux-arm64/2.0.0-beta.1) |  |  |
-| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.linux-x64/1.0.0)<br>NuGet [2.0.0-beta.1](https://www.nuget.org/packages/Azure.Mcp.linux-x64/2.0.0-beta.1) |  |  |
-| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.osx-arm64/1.0.0)<br>NuGet [2.0.0-beta.1](https://www.nuget.org/packages/Azure.Mcp.osx-arm64/2.0.0-beta.1) |  |  |
-| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.osx-x64/1.0.0)<br>NuGet [2.0.0-beta.1](https://www.nuget.org/packages/Azure.Mcp.osx-x64/2.0.0-beta.1) |  |  |
-| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.win-arm64/1.0.0)<br>NuGet [2.0.0-beta.1](https://www.nuget.org/packages/Azure.Mcp.win-arm64/2.0.0-beta.1) |  |  |
-| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.win-x64/1.0.0)<br>NuGet [2.0.0-beta.1](https://www.nuget.org/packages/Azure.Mcp.win-x64/2.0.0-beta.1) |  |  |
+| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp/1.0.0)<br>NuGet [2.0.0-beta.2](https://www.nuget.org/packages/Azure.Mcp/2.0.0-beta.2) |  |  |
+| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.linux-arm64/1.0.0)<br>NuGet [2.0.0-beta.2](https://www.nuget.org/packages/Azure.Mcp.linux-arm64/2.0.0-beta.2) |  |  |
+| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.linux-x64/1.0.0)<br>NuGet [2.0.0-beta.2](https://www.nuget.org/packages/Azure.Mcp.linux-x64/2.0.0-beta.2) |  |  |
+| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.osx-arm64/1.0.0)<br>NuGet [2.0.0-beta.2](https://www.nuget.org/packages/Azure.Mcp.osx-arm64/2.0.0-beta.2) |  |  |
+| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.osx-x64/1.0.0)<br>NuGet [2.0.0-beta.2](https://www.nuget.org/packages/Azure.Mcp.osx-x64/2.0.0-beta.2) |  |  |
+| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.win-arm64/1.0.0)<br>NuGet [2.0.0-beta.2](https://www.nuget.org/packages/Azure.Mcp.win-arm64/2.0.0-beta.2) |  |  |
+| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.win-x64/1.0.0)<br>NuGet [2.0.0-beta.2](https://www.nuget.org/packages/Azure.Mcp.win-x64/2.0.0-beta.2) |  |  |
 | Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Monitor.Query.Logs/1.0.0) |  |  |
 | Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Monitor.Query.Metrics/1.0.0) |  |  |
 | Unknown Display Name | NuGet [0.1.4-preview.2](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Aot/0.1.4-preview.2) |  |  |

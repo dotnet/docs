@@ -7,8 +7,6 @@ ai-usage: ai-assisted
 
 # Runtime configuration options for threading
 
-...
-
 ## Default stack size for new threads
 
 - Specifies the stack size (in bytes) for new VM threads that are created with the default stack size.
@@ -39,5 +37,3 @@ thread.Start();
 ```
 
 **Note:** This setting does not affect threads for which a non-default stack size is specified at creation.
-
-...

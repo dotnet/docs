@@ -1,7 +1,7 @@
 ---
 title: Target frameworks in SDK-style projects - .NET
 description: Learn about target frameworks for .NET apps and libraries.
-ms.date: 04/07/2025
+ms.date: 11/06/2025
 ms.service: dotnet
 ms.custom: updateeachrelease
 ms.subservice: standard-library
@@ -26,6 +26,7 @@ The following table defines the most common target frameworks, how they're refer
 
 | Target framework | Latest <br/> stable version | Target framework moniker (TFM) | Implemented <br/> .NET Standard version |
 |:----------------:|:---------------------------:|:------------------------------:|:---------------------------------------:|
+| .NET 10          | 10                          | net10.0                        | 2.1                                     |
 | .NET 9           | 9                           | net9.0                         | 2.1                                     |
 | .NET 8           | 8                           | net8.0                         | 2.1                                     |
 | .NET Standard    | 2.1                         | netstandard2.1                 | N/A                                     |
@@ -38,7 +39,7 @@ A target framework is typically referenced by a TFM. The following table shows t
 
 | Target Framework           | TFM |
 | -------------------------- | --- |
-| .NET 5+ (and .NET Core)    | netcoreapp1.0<br>netcoreapp1.1<br>netcoreapp2.0<br>netcoreapp2.1<br>netcoreapp2.2<br>netcoreapp3.0<br>netcoreapp3.1<br>net5.0*<br>net6.0*<br>net7.0*<br>net8.0*<br>net9.0* |
+| .NET 5+ (and .NET Core)    | netcoreapp1.0<br>netcoreapp1.1<br>netcoreapp2.0<br>netcoreapp2.1<br>netcoreapp2.2<br>netcoreapp3.0<br>netcoreapp3.1<br>net5.0*<br>net6.0*<br>net7.0*<br>net8.0*<br>net9.0*<br>net10.0* |
 | .NET Standard              | netstandard1.0<br>netstandard1.1<br>netstandard1.2<br>netstandard1.3<br>netstandard1.4<br>netstandard1.5<br>netstandard1.6<br>netstandard2.0<br>netstandard2.1 |
 | .NET Framework             | net11<br>net20<br>net35<br>net40<br>net403<br>net45<br>net451<br>net452<br>net46<br>net461<br>net462<br>net47<br>net471<br>net472<br>net48<br>net481 |
 | Windows Store              | netcore [netcore45]<br>netcore45 [win] [win8]<br>netcore451 [win81] |
@@ -48,35 +49,16 @@ A target framework is typically referenced by a TFM. The following table shows t
 | Windows Phone              | wp [wp7]<br>wp7<br>wp75<br>wp8<br>wp81<br>wpa81 |
 | Universal Windows Platform | uap [uap10.0]<br>uap10.0 [win10] [netcore50] |
 
-\* .NET 5 and later TFMs include some operating system-specific variations. For more information, see the following section, [.NET 5+ OS-specific TFMs](#net-5-os-specific-tfms).
+\* .NET 5 and later TFMs include some operating system-specific variations. For more information, see the following section, [.OS-specific TFMs](#os-specific-tfms).
 
-### .NET 5+ OS-specific TFMs
+### OS-specific TFMs
 
-The `net5.0`, `net6.0`, `net7.0`, `net8.0`, and `net9.0` TFMs include technologies that work across different platforms. Specifying an *OS-specific TFM* makes APIs that are specific to an operating system available to your app, for example, Windows Forms or iOS bindings. OS-specific TFMs also inherit every API available to their base TFM, for example, the `net9.0` TFM.
+The `net8.0`, `net9.0`, and `net10.0` TFMs include technologies that work across different platforms. Specifying an *OS-specific TFM* makes APIs that are specific to an operating system available to your app, for example, Windows Forms or iOS bindings. OS-specific TFMs also inherit every API available to their base TFM, for example, the `net10.0` TFM.
 
-.NET 5 introduced the `net5.0-windows` OS-specific TFM, which includes Windows-specific bindings for WinForms, WPF, and UWP APIs. .NET 6 and later versions have additional OS-specific TFMs, for example, `net6.0-ios`.
-
-The following table shows the compatibility of the .NET 5+ TFMs.
+The following table shows the compatibility of the .NET 8+ TFMs.
 
 | TFM                  | Compatible with                                                  |
 |----------------------|------------------------------------------------------------------|
-| `net5.0`             | net1..4 (with NU1701 warning)<br />netcoreapp1..3.1 (warning when WinForms or WPF is referenced)<br />netstandard1..2.1 |
-| `net5.0-windows`     | netcoreapp1..3.1 (plus everything else inherited from `net5.0`)  |
-| `net6.0`             | (Subsequent version of `net5.0`)                                 |
-| `net6.0-android`     | `xamarin.android` (plus everything else inherited from `net6.0`) |
-| `net6.0-ios`         | Everything inherited from `net6.0`                               |
-| `net6.0-maccatalyst` | Everything inherited from `net6.0`                               |
-| `net6.0-macos`       | Everything inherited from `net6.0`                               |
-| `net6.0-tvos`        | Everything inherited from `net6.0`                               |
-| `net6.0-windows`     | (Subsequent version of `net5.0-windows`)                         |
-| `net7.0`             | (Subsequent version of `net6.0`)                                 |
-| `net7.0-android`     | (Subsequent version of `net6.0-android`)                         |
-| `net7.0-ios`         | (Subsequent version of `net6.0-ios`)                             |
-| `net7.0-maccatalyst` | (Subsequent version of `net6.0-maccatalyst`)                     |
-| `net7.0-macos`       | (Subsequent version of `net6.0-macos`)                           |
-| `net7.0-tizen`       | `tizen40` (plus everything else inherited from `net7.0`)         |
-| `net7.0-tvos`        | (Subsequent version of `net6.0-tvos`)                            |
-| `net7.0-windows`     | (Subsequent version of `net6.0-windows`)                         |
 | `net8.0`             | (Subsequent version of `net7.0`)                                 |
 | `net8.0-android`     | (Subsequent version of `net7.0-android`)                         |
 | `net8.0-browser`     | Everything inherited from `net8.0`                               |
@@ -95,6 +77,15 @@ The following table shows the compatibility of the .NET 5+ TFMs.
 | `net9.0-tizen`       | (Subsequent version of `net8.0-tizen`)                           |
 | `net9.0-tvos`        | (Subsequent version of `net8.0-tvos`)                            |
 | `net9.0-windows`     | (Subsequent version of `net8.0-windows`)                         |
+| `net10.0`             | (Subsequent version of `net9.0`)                                |
+| `net10.0-android`     | (Subsequent version of `net9.0-android`)                        |
+| `net10.0-browser`     | (Subsequent version of `net9.0-browser`)                        |
+| `net10.0-ios`         | (Subsequent version of `net9.0-ios`)                            |
+| `net10.0-maccatalyst` | (Subsequent version of `net9.0-maccatalyst`)                    |
+| `net10.0-macos`       | (Subsequent version of `net9.0-macos`)                          |
+| `net10.0-tizen`       | (Subsequent version of `net9.0-tizen`)                          |
+| `net10.0-tvos`        | (Subsequent version of `net9.0-tvos`)                           |
+| `net10.0-windows`     | (Subsequent version of `net9.0-windows`)                        |
 
 To make your app portable across different platforms but still have access to OS-specific APIs, you can target multiple OS-specific TFMs and add platform guards around OS-specific API calls using `#if` preprocessor directives. For a list of the available symbols, see [Preprocessor symbols](#preprocessor-symbols).
 
@@ -102,24 +93,25 @@ To make your app portable across different platforms but still have access to OS
 
 Use these guidelines to determine which TFM to use in your app:
 
-- Apps that are portable to multiple platforms should target a base TFM, for example, `net9.0`. This includes most libraries but also ASP.NET Core and Entity Framework.
-- Platform-specific libraries should target platform-specific flavors. For example, WinForms and WPF projects should target `net9.0-windows`.
-- Cross-platform application models (for example, ASP.NET Core) should at least target the base TFM, for example, `net9.0`, but might also target additional platform-specific flavors to light-up more APIs or features.
+- Apps that are portable to multiple platforms should target a base TFM, for example, `net10.0`. This includes most libraries but also ASP.NET Core and Entity Framework.
+- Platform-specific libraries should target platform-specific flavors. For example, WinForms and WPF projects should target `net10.0-windows`.
+- Cross-platform application models (for example, ASP.NET Core) should at least target the base TFM, for example, `net10.0`, but might also target additional platform-specific flavors to light-up more APIs or features.
 
 #### OS version in TFMs
 
-You can also specify an optional OS version at the end of an OS-specific TFM, for example, `net6.0-ios15.0`. The version indicates which APIs are available to your app or library. It doesn't control the OS version that your app or library supports at run time. It's used to select the reference assemblies that your project compiles against, and to select assets from NuGet packages. Think of this version as the "platform version" or "OS API version" to disambiguate it from the run-time OS version.
+You can also specify an optional OS version at the end of an OS-specific TFM, for example, `net8.0-ios17.2`. The version indicates which APIs are available to your app or library. It doesn't control the OS version that your app or library supports at run time. It's used to select the reference assemblies that your project compiles against, and to select assets from NuGet packages. Think of this version as the "platform version" or "OS API version" to disambiguate it from the run-time OS version.
 
-The .NET SDK is designed to be able to support newly released APIs for an individual platform without a new version of the base TFM. This enables you to access platform-specific functionality without waiting for a major release of .NET. You can gain access to these newly released APIs by incrementing the platform version in the TFM. For example, if the Android platform added API level 32 APIs in a .NET 6.0.x SDK update, you could access them by using the TFM `net6.0-android32.0`.
+The .NET SDK is designed to be able to support newly released APIs for an individual platform without a new version of the base TFM. This enables you to access platform-specific functionality without waiting for a major release of .NET. You can gain access to these newly released APIs by incrementing the platform version in the TFM. For example, if the Android platform added API level 34 APIs in a .NET 8.0.x SDK update, you could access them by using the TFM `net8.0-android34.0`.
 
 When an OS-specific TFM doesn't specify the platform version explicitly, it has an implied value that can be inferred from the base TFM and platform name. For example, the default platform version for Android in .NET 9 is `35.0`, which means that `net9.0-android` is shorthand for the canonical `netp.0-android35.0` TFM. The shorthand form is intended for use in project files only, and is expanded to the canonical form by the .NET SDK's MSBuild targets before being passed to other tools, such as NuGet.
 
-The following table shows the *default* target platform version (TPV) for each .NET release. **If you want to use the latest bindings, use the default (that is, don't specify an OS version).**
+The following table shows the *default* target platform version (TPV) for Android and iOS for each .NET release. **If you want to use the latest bindings, use the default (that is, don't specify an OS version).**
 
-| .NET version | Android | iOS  | Mac Catalyst | macOS | tvOS | Tizen | Windows |
-|--------------|--------:|-----:|-------------:|------:|-----:|------:|--------:|
-| .NET 8       |    34.0 | 17.2 |         17.2 | 14.2  | 17.1 |  10.0 |     7.0 |
-| .NET 9       |    35.0 | 18.0 |         18.0 | 15.0  |      |  10.0 |     7.0 |
+| .NET version | Android | iOS  |
+|--------------|--------:|-----:|
+| .NET 8       |    34.0 | 17.2 |
+| .NET 9       |    35.0 | 18.0 |
+| .NET 10      |    36.0 | 18.7 |
 
 Starting in .NET 9, when service releases introduce support for a later TPV (which will always have the same *major* version number as when the .NET version was initially released), the earliest supported TPV for that .NET version will remain supported. For example, for .NET 9, the earliest supported iOS version, 18.0, will remain supported, even when a service release adds support for the latest iOS 18.x version. **If you need to use the earliest bindings for a .NET release, use a specific OS version number in your TFM.**
 
@@ -134,7 +126,7 @@ Starting in .NET 9, when service releases introduce support for a later TPV (whi
 
 #### Precedence
 
-If your app references a package that has multiple assets for different TFMs, the assets that are closer in version number are preferred. For example, if your app targets `net6.0-ios` and the package offers assets for `net6.0` and `net5.0-ios`, the `net6.0` assets are used. For more information, see [Precedences](https://github.com/dotnet/designs/blob/main/accepted/2020/net5/net5.md#precedences).
+If your app references a package that has multiple assets for different TFMs, the assets that are closer in version number are preferred. For example, if your app targets `net9.0-ios` and the package offers assets for `net9.0` and `net8.0-ios`, the `net9.0` assets are used. For more information, see [Precedences](https://github.com/dotnet/designs/blob/main/accepted/2020/net5/net5.md#precedences).
 
 #### Support older OS versions
 
@@ -144,7 +136,7 @@ For your app to run correctly on an older OS version, it can't call APIs that do
 
 The `SupportedOSPlatformVersion` value (whether explicit or default) is used by the [platform compatibility analyzer](analyzers/platform-compat-analyzer.md), which detects and warns about unguarded calls to newer APIs. It's burned into the project's compiled assembly as an <xref:System.Runtime.Versioning.UnsupportedOSPlatformAttribute> assembly attribute, so that the platform compatibility analyzer can detect unguarded calls to that assembly's APIs from projects with a lower `SupportedOSPlatformVersion` value. On some platforms, the `SupportedOSPlatformVersion` value affects platform-specific app packaging and build processes, which is covered in the documentation for those platforms.
 
-Here is an example excerpt of a project file that uses the `TargetFramework` and `SupportedOSPlatformVersion` MSBuild properties to specify that the app or library has access to iOS 15.0 APIs but supports running on iOS 13.0 and above:
+The following example is an excerpt of a project file that uses the `TargetFramework` and `SupportedOSPlatformVersion` MSBuild properties to specify that the app or library has access to iOS 15.0 APIs but supports running on iOS 13.0 and higher:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -160,20 +152,20 @@ Here is an example excerpt of a project file that uses the `TargetFramework` and
 
 ## How to specify a target framework
 
-Target frameworks are specified in a project file. When a single target framework is specified, use the [TargetFramework element](../core/project-sdk/msbuild-props.md#targetframework). The following console app project file demonstrates how to target .NET 9:
+Target frameworks are specified in a project file. When a single target framework is specified, use the [TargetFramework element](../core/project-sdk/msbuild-props.md#targetframework). The following console app project file demonstrates how to target .NET 10:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net9.0</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
   </PropertyGroup>
 
 </Project>
 ```
 
-When you specify multiple target frameworks, you may conditionally reference assemblies for each target framework. In your code, you can conditionally compile against those assemblies by using [preprocessor symbols](#preprocessor-symbols) with *if-then-else* logic.
+When you specify multiple target frameworks, you can conditionally reference assemblies for each target framework. In your code, you can conditionally compile against those assemblies by using [preprocessor symbols](#preprocessor-symbols) with *if-then-else* logic.
 
 The following library project targets APIs of .NET Standard (`netstandard1.4`) and .NET Framework (`net40` and `net45`). Use the plural [TargetFrameworks element](../core/project-sdk/msbuild-props.md#targetframeworks) with multiple target frameworks. The `Condition` attributes include implementation-specific packages when the library is compiled for the two .NET Framework TFMs:
 
@@ -218,7 +210,7 @@ public class MyClass
 
 ## Preprocessor symbols
 
-The build system is aware of preprocessor symbols representing the target frameworks shown in the [Supported target framework versions](#supported-target-frameworks) table when you're using SDK-style projects. To convert a .NET Standard, .NET Core, or .NET 5+ TFM to a preprocessor symbol, replace dots and hyphens with an underscore, and change lowercase letters to uppercase (for example, the symbol for `netstandard1.4` is `NETSTANDARD1_4`).
+The build system is aware of preprocessor symbols representing the target frameworks shown in the [Supported target framework versions](#supported-target-frameworks) table when you're using SDK-style projects. To convert a .NET Standard, .NET Core, or .NET 5+ TFM to a preprocessor symbol, replace dots and hyphens with an underscore, and change lowercase letters to uppercase (for example, the symbol for `netstandard2.0` is `NETSTANDARD2_0`).
 
 You can disable generation of these symbols via the `DisableImplicitFrameworkDefines` property. For more information about this property, see [DisableImplicitFrameworkDefines](../core/project-sdk/msbuild-props.md#disableimplicitframeworkdefines).
 

@@ -732,7 +732,7 @@ Additionally, if you specify an operating system-specific target framework in th
 - Platform with version (`IOS15_1`)
 - Platform with version minimum bound (`IOS15_1_OR_GREATER`)
 
-For more information on operating system-specific target framework monikers, see [OS-specific TFMs](../../standard/frameworks.md#net-5-os-specific-tfms).
+For more information on operating system-specific target framework monikers, see [OS-specific TFMs](../../standard/frameworks.md#os-specific-tfms).
 
 Finally, if your target framework implies support for older target frameworks, preprocessor symbols for those older frameworks are emitted. For example, `net6.0` **implies** support for `net5.0` and so on all the way back to `.netcoreapp1.0`. So for each of these target frameworks, the *Framework with version minimum bound* symbol will be defined.
 

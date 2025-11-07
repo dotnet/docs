@@ -3,7 +3,7 @@ ms.topic: include
 ms.date: 04/25/2025
 ---
 
-Brokered authentication collects user credentials using the system authentication broker to authenticate an app with `InteractiveBrowserCredential`. A system authentication broker is an app running on a user's machine that manages the authentication handshakes and token maintenance for all connected accounts.
+Brokered authentication collects user credentials using the system authentication broker to authenticate an app. A system authentication broker is an app running on a user's machine that manages the authentication handshakes and token maintenance for all connected accounts.
 
 Brokered authentication offers the following benefits:
 

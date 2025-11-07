@@ -67,7 +67,7 @@ By default, the command downloads only the packages you specify (no transitive d
 
      Specifies the NuGet package source to use.
 
-* **`-v --verbosity <level>`**
+* **`-v, --verbosity <level>`**
 
      Set the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.
   

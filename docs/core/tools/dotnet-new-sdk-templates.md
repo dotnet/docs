@@ -27,7 +27,7 @@ The following table shows the templates that come preinstalled with the .NET SDK
 |-----------------------------|-----------------------------------|----------|-------------------------|------------|
 | ASP.NET Core API            | [`webapiaot`](#webapiaot)         | [C#]     | Web/Web API/API/Service | 8.0       |
 | ASP.NET Core API controller | [`apicontroller`](#apicontroller) | [C#]     | Web/ASP.NET             | 8.0       |
-| ASP.NET Core Empty          | [`web`](#web)                     | [C#], F# | Web/Empty               | 8.0        |
+| ASP.NET Core Empty          | [`web`](#web)                     | [C#], F# | Web/Empty               | 1.0        |
 | ASP.NET Core Web API | [`webapi`](#webapi) | [C#], F# | Web/Web API/API/Service/WebAPI | 1.0 |
 | ASP.NET Core Web App (Model-View-Controller) | [`mvc`](#web-options) | [C#], F# | Web/MVC | 1.0 |
 | ASP.NET Core Web App | [`webapp, razor`](#web-options) | [C#] | Web/MVC/Razor Pages | 2.2, 2.0 |

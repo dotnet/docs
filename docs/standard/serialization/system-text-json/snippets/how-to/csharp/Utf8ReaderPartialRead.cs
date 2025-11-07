@@ -52,29 +52,38 @@ namespace SystemTextJsonSamples
             Console.WriteLine($"Got property value: {reader.GetString()}");
         }
 
-        private static void GetMoreBytesFromStream(
+        private static bool GetMoreBytesFromStream(
             MemoryStream stream, ref byte[] buffer, ref Utf8JsonReader reader)
         {
+            // If we've reached the end of the JSON data, return false.
+            if (reader.IsFinalBlock)
+                return false;
             int bytesRead;
             if (reader.BytesConsumed < buffer.Length)
             {
                 ReadOnlySpan<byte> leftover = buffer.AsSpan((int)reader.BytesConsumed);
-
+        
                 if (leftover.Length == buffer.Length)
                 {
                     Array.Resize(ref buffer, buffer.Length * 2);
                     Console.WriteLine($"Increased buffer size to {buffer.Length}");
                 }
-
+        
+                // Move any leftover bytes to the beginning of the buffer.
                 leftover.CopyTo(buffer);
+                // Read more data from the stream to fill the rest of the buffer.
                 bytesRead = stream.Read(buffer.AsSpan(leftover.Length));
             }
             else
             {
                 bytesRead = stream.Read(buffer);
             }
+            // If we've reached the end of the stream, set isFinalBlock to true.
+            if (stream.Position == stream.Length)
+                Array.Resize(ref buffer, buffer.Length - (int)reader.BytesConsumed + bytesRead);
             Console.WriteLine($"String in buffer is: {Encoding.UTF8.GetString(buffer)}");
-            reader = new Utf8JsonReader(buffer, isFinalBlock: bytesRead == 0, reader.CurrentState);
+            reader = new Utf8JsonReader(buffer, isFinalBlock: stream.Position == stream.Length, reader.CurrentState);
+            return bytesRead > 0;
         }
     }
 }

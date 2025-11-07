@@ -78,6 +78,7 @@ The following commands are installed by default:
 - [`package remove`](dotnet-package-remove.md)
 - [`package search`](dotnet-package-search.md)
 - [`package update`](dotnet-package-update.md)
+- [`package download`](dotnet-package-download.md)
 - [`reference add`](dotnet-reference-add.md)
 - [`reference list`](dotnet-reference-list.md)
 - [`reference remove`](dotnet-reference-remove.md)

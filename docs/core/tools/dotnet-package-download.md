@@ -19,7 +19,6 @@ ai-usage: ai-assisted
 dotnet package download [<packages>...]
     [--output <path>]
     [--configfile <path> ]
-    [--include-transitive]
     [--prerelease]
     [--source <package source>]
     [--allow-insecure-connections]
@@ -52,10 +51,6 @@ By default, the command downloads only the packages you specify (no transitive d
 
      Path to a NuGet.config to use.
 
-* **`--include-transitive`**
-
-     Downloads transitive dependencies in addition to the specified packages.
-
 * **`--interactive`**
 
      Enables interactive authentication if required.
@@ -74,7 +69,7 @@ By default, the command downloads only the packages you specify (no transitive d
 
 * **`-v --verbosity <level>`**
 
-     Set the verbosity level of the command. Allowed values are q[uiet], m[inimal], n[ormal], d[etailed], and diag[nostic].
+     Set the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.
   
 [!INCLUDE [help](../../../includes/cli-help.md)]
 

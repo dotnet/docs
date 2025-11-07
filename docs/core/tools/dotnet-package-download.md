@@ -1,8 +1,9 @@
 ---
 title: dotnet package download command
-description: Download a nuget package.
+description: Download a NuGet package.
 author: Nigusu-Allehu
 ms.date: 11/06/2025
+ai-usage: ai-assisted
 ---
 # dotnet package download
 
@@ -18,7 +19,7 @@ ms.date: 11/06/2025
 dotnet package download [<packages>...]
     [--output <path>]
     [--configfile <path> ]
-    [--include-transitive]
+    [--prerelease]
     [--source <package source>]
     [--allow-insecure-connections]
     [--interactive]
@@ -29,7 +30,7 @@ dotnet package download -h|--help
 
 ## Description
 
-`dotnet package download` donwloads NuGet packages to a local directory. It **does not** add or update `PackageReference` entries in project files and **does not** build or restore a project. 
+`dotnet package download` downloads NuGet packages to a local directory. It **does not** add or update `PackageReference` entries in project files and **does not** build or restore a project. 
 By default, the command downloads only the packages you specify (no transitive dependencies) to the current working directory.
 
 ## Arguments
@@ -37,8 +38,8 @@ By default, the command downloads only the packages you specify (no transitive d
 * **`packages`**
   One or more package IDs to download.
   Each package can optionally include a version with `@`.
-  If a package version is not specified the latest version of the package is downloaded.
-  For example, dotnet package update Contoso.Utilities or dotnet package update Contoso.Utilities@3.2.1.
+  If a package version isn't specified, the latest version of the package is downloaded.
+  For example, `dotnet package download Contoso.Utilities` or `dotnet package download Contoso.Utilities@3.2.1`.
   
 ## Options
 
@@ -68,7 +69,7 @@ By default, the command downloads only the packages you specify (no transitive d
 
 * **`-v --verbosity <level>`**
 
-     Set the verbosity level of the command Allowed values are q[uiet], m[inimal], n[ormal], d[etailed], and diag[nostic].
+     Set the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.
   
 [!INCLUDE [help](../../../includes/cli-help.md)]
 

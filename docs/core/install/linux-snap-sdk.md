@@ -58,7 +58,7 @@ The following table lists the package channels you can install:
 
 | .NET version | Snap package channel            |
 |--------------|---------------------------------|
-| 10 (STS)     | *Not yet available              |
+| 10 (LTS)     | *Not yet available              |
 | 9 (STS)      | *Not yet available              |
 | 8 (LTS)      | `8.0/stable` (out of support)   |
 | 7            | `7.0/stable` (out of support)   |

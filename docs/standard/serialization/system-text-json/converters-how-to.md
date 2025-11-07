@@ -228,7 +228,7 @@ For scenarios that require type inference, the following code shows a custom con
 
 The example shows the converter code and a `WeatherForecast` class with `object` properties. The `Main` method deserializes a JSON string into a `WeatherForecast` instance, first without using the converter, and then using the converter. The console output shows that without the converter, the run-time type for the `Date` property is `JsonElement`; with the converter, the run-time type is `DateTime`.
 
-The [unit tests folder](https://github.com/dotnet/runtime/tree/main/src/libraries/System.Text.Json/tests/System.Text.Json.Tests/Serialization/) in the `System.Text.Json.Serialization` namespace has more examples of custom converters that handle deserialization to `object` properties.
+The [unit tests folder](https://github.com/dotnet/runtime/tree/main/src/libraries/System.Text.Json/tests/System.Text.Json.Tests/Serialization/CustomConverterTests) in the `System.Text.Json.Serialization` namespace has more examples of custom converters that handle deserialization to `object` properties.
 
 ### Support polymorphic deserialization
 
@@ -364,7 +364,7 @@ When you use <xref:System.Text.Json.Serialization.ReferenceHandler.Preserve%2A>,
 
 The [Migrate from Newtonsoft.Json to System.Text.Json](migrate-from-newtonsoft.md) article contains additional samples of custom converters.
 
-The [unit tests folder](https://github.com/dotnet/runtime/blob/main/src/libraries/System.Text.Json/tests/System.Text.Json.Tests/Serialization/) in the `System.Text.Json.Serialization` source code includes other custom converter samples, such as:
+The [unit tests folder](https://github.com/dotnet/runtime/tree/main/src/libraries/System.Text.Json/tests/System.Text.Json.Tests/Serialization/CustomConverterTests) in the `System.Text.Json.Serialization` source code includes other custom converter samples, such as:
 
 * [Int32 converter that converts null to 0 on deserialize](https://github.com/dotnet/runtime/blob/main/src/libraries/System.Text.Json/tests/System.Text.Json.Tests/Serialization/CustomConverterTests/CustomConverterTests.NullValueType.cs)
 * [Int32 converter that allows both string and number values on deserialize](https://github.com/dotnet/runtime/blob/main/src/libraries/System.Text.Json/tests/System.Text.Json.Tests/Serialization/CustomConverterTests/CustomConverterTests.Int32.cs)

@@ -24,12 +24,14 @@ ai-usage: ai-assisted
 Set the stack size to 2 MB for all new threads:
 
 #### On Windows, Linux, or macOS:
+
 ```shell
 export DOTNET_Thread_DefaultStackSize=2097152
 dotnet myapp.dll
 ```
 
 #### In C# code (for reference, no runtimeconfig property):
+
 ```csharp
 // Stack size is determined by the DOTNET_Thread_DefaultStackSize environment variable
 var thread = new Thread(() => { /* thread logic */ }); 

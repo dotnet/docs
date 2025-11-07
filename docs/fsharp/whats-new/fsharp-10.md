@@ -21,7 +21,7 @@ For more information, see [Get started with F#](../get-started/index.md).
 ## Scoped warning suppression
 
 You can now suppress warnings in specific sections of your code using the new `#warnon` directive.
-This pairs with the existing `#nowarn` directive to give you precise control over which warnings apply where.
+This pairs with the [existing `#nowarn` directive](../language-reference/compiler-directives.md#warn-directives) to give you precise control over which warnings apply where.
 
 Previously, when you used `#nowarn`, it would disable a warning for the remainder of the file, which could suppress legitimate issues elsewhere.
 Let's look at a motivating example:
@@ -64,7 +64,7 @@ This feature implements [RFC FS-1146](https://github.com/fsharp/fslang-design/bl
 ## Access modifiers on auto property accessors
 
 A common pattern in object-oriented programming is to create publicly readable but privately mutable state.
-Before F# 10, you needed explicit property syntax with backing fields (hidden variables that store the actual property values) to achieve this, which added repetitive code:
+Before F# 10, you needed explicit [property syntax](../language-reference/members/properties.md) with backing fields (hidden variables that store the actual property values) to achieve this, which added repetitive code:
 
 ```fsharp
 type Ledger() =
@@ -95,7 +95,7 @@ This feature implements [RFC FS-1141](https://github.com/fsharp/fslang-design/bl
 
 ## ValueOption optional parameters
 
-You can now use a struct-based `ValueOption<'T>` representation for optional parameters.
+You can now use a struct-based [`ValueOption<'T>`](../language-reference/value-options.md) representation for [optional parameters](../language-reference/parameters-and-arguments.md#optional-parameters-f-native).
 When you apply the `[<Struct>]` attribute to an optional parameter, the compiler uses `ValueOption<'T>` instead of the reference-based `option` type.
 This avoids heap allocations (memory allocated on the managed heap that requires garbage collection) for the option wrapper, which is beneficial in performance-critical code.
 
@@ -128,7 +128,7 @@ This feature strengthens parity with other F# language constructs that already s
 
 ## Tail-call support in computation expressions
 
-F# 10 adds tail-call optimizations for computation expressions.
+F# 10 adds [tail-call](../language-reference/functions/recursive-functions-the-rec-keyword.md#tail-recursion) optimizations for [computation expressions](../language-reference/computation-expressions.md).
 Computation-expression builders can now opt into these optimizations by implementing special methods.
 
 When the compiler translates computation expressions into regular F# code (a process called desugaring), it recognizes when an expression like `return!`, `yield!`, or `do!` appears in a tail position.
@@ -297,7 +297,7 @@ The early errors prevent test discovery problems and ensure that attributes like
 
 ## Support for `and!` in task expressions
 
-You can now await multiple tasks concurrently using `and!` in task expressions.
+You can now await multiple tasks concurrently using [`and!`](../language-reference/computation-expressions.md#and) in [task expressions](../language-reference/task-expressions.md).
 Using `task` is a popular way to work with asynchronous workflows in F#, especially when you need interoperability with C#.
 However, until now there was no concise way to await multiple tasks concurrently in a computation expression.
 

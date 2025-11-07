@@ -86,9 +86,3 @@ dotnet package download Contoso@13.0.3 --output My/Destination/For/packages
 ```ps1
 dotnet package download Contoso@3.1.2 Contoso.Utility@6.12.0 --output My/Destination/For/packages
 ```
-
-### Download including transitive dependencies
-
-```ps1
-dotnet package download Azure.Storage.Blobs --include-transitive --output ./cache
-```

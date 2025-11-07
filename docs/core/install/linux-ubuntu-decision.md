@@ -240,8 +240,8 @@ The following sections describe how to manage .NET through the package manager.
 
 Install .NET through the package manager with the `sudo apt install <package-name>` command. Replace `<package-name>` with the name of the .NET package you want to install. For example, to install .NET SDK 10.0, use the command `sudo apt install dotnet-sdk-10.0`. The following table lists the currently supported .NET packages (which [might vary by your Ubuntu version](#supported-distributions)):
 
-|  Product   |     Type     |           Package                  |
-|------------|--------------|---------|--------------------------|
+| Product    | Type         | Package                  |
+|------------|--------------|--------------------------|
 | **10.0**   | ASP.NET Core | Runtime | `aspnetcore-runtime-10.0`|
 | **10.0**   | .NET         | Runtime | `dotnet-runtime-10.0`    |
 | **10.0**   | .NET         | SDK     | `dotnet-sdk-10.0`        |

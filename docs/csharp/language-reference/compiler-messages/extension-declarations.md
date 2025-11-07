@@ -44,6 +44,7 @@ f1_keywords:
   - "CS9323"
   - "CS9326"
   - "CS9329"
+  - "CS9339"
 helpviewer_keywords: 
   - "CS1100"
   - "CS1101"
@@ -88,6 +89,7 @@ helpviewer_keywords:
   - "CS9323"
   - "CS9326"
   - "CS9329"
+  - "CS9339"
 ---
 # Errors and warnings related to extension methods declared with `this` parameters or `extension` blocks
 
@@ -134,6 +136,7 @@ helpviewer_keywords:
 - [**CS9323**](#errors-related-to-extension-block-declarations): *Cannot declare instance extension operator for a type that is not known to be a struct and is not known to be a class.*
 - [**CS9326**](#errors-related-to-extension-block-declarations): *'`name`': extension member names cannot be the same as their extended type.*
 - [**CS9329**](#errors-related-to-extension-block-declarations): *This extension block collides with another extension block. They result in conflicting content-based type names in metadata.*
+- [**CS9339**](#errors-related-to-extension-block-declarations): *The extension resolution is ambiguous between the following members.*
 
 ## Common errors on extension declarations
 

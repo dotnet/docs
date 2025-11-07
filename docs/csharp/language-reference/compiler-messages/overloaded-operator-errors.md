@@ -37,6 +37,9 @@ f1_keywords:
   - "CS9311"
   - "CS9312"
   - "CS9313"
+  - "CS9340"
+  - "CS9341"
+  - "CS9342"
 helpviewer_keywords:
   - "CS0056"
   - "CS0057"
@@ -73,6 +76,9 @@ helpviewer_keywords:
   - "CS9311"
   - "CS9312"
   - "CS9313"
+  - "CS9340"
+  - "CS9341"
+  - "CS9342"
 ms.date: 10/15/2025
 ai-usage: ai-assisted
 ---
@@ -118,6 +124,9 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS9311**](#interface-and-inheritance-requirements): *Type does not implement interface member. The type cannot implement member because one of them is not an operator.*
 - [**CS9312**](#interface-and-inheritance-requirements): *Type cannot override inherited member because one of them is not an operator.*
 - [**CS9313**](#interface-and-inheritance-requirements): *Overloaded compound assignment operator takes one parameter.*
+- [**CS9340**](#operator-signature-requirements): *Operator cannot be applied to operands. The closest inapplicable candidate is shown.*
+- [**CS9341**](#operator-signature-requirements): *Operator cannot be applied to operand. The closest inapplicable candidate is shown.*
+- [**CS9342**](#operator-signature-requirements): *Operator resolution is ambiguous between the following members.*
 
 The following sections provide examples of common issues and how to fix them.
 

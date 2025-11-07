@@ -6,11 +6,13 @@ f1_keywords:
   - "CS9134"
   - "CS9135"
   - "CS9335"
+  - "CS9336"
   - "CS9337"
 helpviewer_keywords:
   - "CS8509"
   - "CS9134"
   - "CS9335"
+  - "CS9336"
   - "CS9337"
 ms.date: 10/16/2025
 ---
@@ -20,7 +22,7 @@ The compiler generates the following errors for invalid pattern match expression
 
 - **CS9134**: *A switch expression arm does not begin with a 'case' keyword.*
 - **CS9135**: *A constant value of type is expected*
-- **CS9335**: *The pattern is redundant.*
+- **CS9335, CS9336**: *The pattern is redundant.*
 - **CS9337**: *The pattern is too complex to analyze for redundancy.*
 
 The compiler generates the following warnings for incomplete pattern matching expressions:

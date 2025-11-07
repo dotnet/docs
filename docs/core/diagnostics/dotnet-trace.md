@@ -425,7 +425,7 @@ By default all processes on the machine will be traced. Use `-n, --name <name>` 
 
 - **`--perf-events <list-of-perf-events>`**
 
-  A comma-separated list of perf events to include in the trace. Available events can be found under [tracefs](https://lwn.net/Articles/630526/), which is typically mounted at `/sys/kernel/tracing`, through `available_events` for all available events or through the `events/` subdirectory for categorized events.
+  A comma-separated list of perf events to include in the trace. Available events can be found under [tracefs](https://www.kernel.org/doc/html/latest/trace/ftrace.html#the-file-system), which is typically mounted at `/sys/kernel/tracing`, through `available_events` for all available events or through the `events/` subdirectory for categorized events.
 
   Example: `--perf-events syscalls:sys_enter_execve,sched:sched_switch,sched:sched_wakeup`
 

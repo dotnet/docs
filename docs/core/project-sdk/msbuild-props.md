@@ -1,7 +1,7 @@
 ---
 title: MSBuild properties for Microsoft.NET.Sdk
 description: Reference for the MSBuild properties and items that are understood by the .NET SDK.
-ms.date: 09/30/2025
+ms.date: 11/07/2025
 ms.topic: reference
 ms.custom: updateeachrelease
 ---
@@ -977,6 +977,10 @@ The following table shows the values you can specify.
 | `latest-<mode>` | The latest code analyzers that have been released are used. The `<mode>` value determines which rules are enabled. |
 | `preview` | The latest code analyzers are used, even if they are in preview. |
 | `preview-<mode>` | The latest code analyzers are used, even if they are in preview. The `<mode>` value determines which rules are enabled. |
+| `10.0` | The set of rules that was available for the .NET 10 release is used, even if newer rules are available. |
+| `10.0-<mode>` | The set of rules that was available for the .NET 10 release is used, even if newer rules are available. The `<mode>` value determines which rules are enabled. |
+| `10` | The set of rules that was available for the .NET 10 release is used, even if newer rules are available. |
+| `10-<mode>` | The set of rules that was available for the .NET 10 release is used, even if newer rules are available. The `<mode>` value determines which rules are enabled. |
 | `9.0` | The set of rules that was available for the .NET 9 release is used, even if newer rules are available. |
 | `9.0-<mode>` | The set of rules that was available for the .NET 9 release is used, even if newer rules are available. The `<mode>` value determines which rules are enabled. |
 | `9` | The set of rules that was available for the .NET 9 release is used, even if newer rules are available. |

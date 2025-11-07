@@ -3,7 +3,7 @@ title: Install .NET on Linux without using a package manager
 description: Demonstrates how to install the .NET SDK and the .NET Runtime on Linux without a package manager. Use the install script or manually extract the binaries.
 author: adegeo
 ms.author: adegeo
-ms.date: 08/26/2025
+ms.date: 11/07/2025
 ms.custom: linux-related-content, updateeachrelease
 ---
 
@@ -20,17 +20,17 @@ There are two types of supported releases, Long Term Support (LTS) and Standard 
 The following table lists the support status of each version of .NET (and .NET Core):
 
 | ✔️ Supported | ❌ Out of support |
-|-------------|------------------|
-| 9 (STS)     | 7                |
-| 8 (LTS)     | 6 (LTS)          |
-|             | 5                |
-|             | 3.1              |
-|             | 3.0              |
-|             | 2.2              |
-|             | 2.1              |
-|             | 2.0              |
-|             | 1.1              |
-|             | 1.0              |
+|---------------|-------------------|
+|   10 (STS)    | 7                |
+|   9 (STS)     | 6 (LTS)          |
+|   8 (LTS)     | 5                |
+|               | 3.1              |
+|               | 3.0              |
+|               | 2.2              |
+|               | 2.1              |
+|               | 2.0              |
+|               | 1.1              |
+|               | 1.0              |
 
 ## Dependencies
 
@@ -122,6 +122,7 @@ As an alternative to the package managers, you can download and manually install
 
 Download a **binary** release for either the SDK or the runtime from one of the following sites. The .NET SDK includes the corresponding runtime:
 
+- ✔️ [.NET 10 downloads](https://dotnet.microsoft.com/download/dotnet/10.0)
 - ✔️ [.NET 9 downloads](https://dotnet.microsoft.com/download/dotnet/9.0)
 - ✔️ [.NET 8 downloads](https://dotnet.microsoft.com/download/dotnet/8.0)
 - [All .NET Core downloads](https://dotnet.microsoft.com/download/dotnet)

@@ -2,7 +2,7 @@
 title: How the .NET Runtime and SDK are versioned
 description: This article explains how the .NET SDK and Runtime are versioned (similar to semantic versioning).
 ms.custom: updateeachrelease
-ms.date: 08/26/2025
+ms.date: 11/07/2025
 ---
 
 # How .NET is versioned
@@ -60,7 +60,7 @@ The optional `PRERELEASE` and `BUILDNUMBER` parts are never part of supported re
   - API introduced breaking changes. There's a high bar to accepting breaking changes.
   - A newer `MAJOR` version of an existing dependency is adopted.
 
-  Major releases happen once a year, even-numbered versions are long-term supported (LTS) releases. The first LTS release using this versioning scheme is .NET 6. The latest non-LTS version is .NET 9.
+  Major releases happen once a year, even-numbered versions are long-term supported (LTS) releases. The first LTS release using this versioning scheme is .NET 6. The latest non-LTS version is .NET 10.
 
 - `MINOR` is incremented when:
 

@@ -3,7 +3,7 @@ title: Install .NET SDK on Linux with Snap
 description: Learn about how to install the .NET SDK snap package. Canonical maintains and supports .NET-related snap packages.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/11/2024
+ms.date: 11/07/2025
 ms.topic: install-set-up-deploy
 ms.custom: linux-related-content, updateeachrelease
 #customer intent: As a Linux user, I want to install .NET SDK through Snap.
@@ -58,6 +58,7 @@ The following table lists the package channels you can install:
 
 | .NET version | Snap package channel            |
 |--------------|---------------------------------|
+| 10 (STS)     | *Not yet available              |
 | 9 (STS)      | *Not yet available              |
 | 8 (LTS)      | `8.0/stable`<br>`lts/stable`    |
 | 7 (STS)      | `7.0/stable` (out of support)   |

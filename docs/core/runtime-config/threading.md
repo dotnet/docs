@@ -274,9 +274,9 @@ Project file:
 
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
-| **runtimeconfig.json** | `System.Threading.DefaultStackSize` | A hexadecimal integer value representing stack size in bytes. | .NET 9 |
+| **runtimeconfig.json** | `System.Threading.DefaultStackSize` | A hexadecimal integer value representing stack size in bytes. | .NET 10 |
 | **MSBuild property** | N/A | N/A | N/A |
-| **Environment variable** | `DOTNET_Thread_DefaultStackSize` | A hexadecimal integer value representing stack size in bytes. | .NET 9 |
+| **Environment variable** | `DOTNET_Thread_DefaultStackSize` | A hexadecimal integer value representing stack size in bytes. | .NET 10 |
 
 ### Examples
 

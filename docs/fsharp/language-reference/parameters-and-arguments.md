@@ -150,6 +150,18 @@ Baud Rate: 9600 Duplex: Full Parity: false
 Baud Rate: 4800 Duplex: Half Parity: false
 ```
 
+You can also specify an optional parameter to be a [value option](./value-options.md) type by applying a `[<Struct>]` attribute to it.
+
+```fsharp
+type T() =
+    static member M([<Struct>] ?p : string) =
+        match p with
+        | ValueSome s -> printfn "%s" s
+        | ValueNone -> printfn "None"
+```
+
+When using struct-backed optional parameter, as seen above, you would use `defaultValueArg` instead of `defaultArg` to set the default value of the parameter.
+
 ### Optional parameters (C# interop)
 
 For the purposes of C# interop, you can use the attributes `[<Optional; DefaultParameterValue<(...)>]` in F#, so that callers will see an argument as optional. This is equivalent to defining the argument as optional in C# as in `MyMethod(int i = 3)`. This form was introduced in F# 4.1 to help facilitate interoperation with C# code.

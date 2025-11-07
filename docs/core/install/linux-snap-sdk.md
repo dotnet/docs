@@ -60,9 +60,9 @@ The following table lists the package channels you can install:
 |--------------|---------------------------------|
 | 10 (STS)     | *Not yet available              |
 | 9 (STS)      | *Not yet available              |
-| 8 (LTS)      | `8.0/stable`<br>`lts/stable`    |
-| 7 (STS)      | `7.0/stable` (out of support)   |
-| 6 (LTS)      | `6.0/stable` (out of support)   |
+| 8 (LTS)      | `8.0/stable` (out of support)   |
+| 7            | `7.0/stable` (out of support)   |
+| 6            | `6.0/stable` (out of support)   |
 | 5            | `5.0/stable` (out of support)   |
 | 3.1          | `3.1/stable` (out of support)   |
 | 2.1          | `2.1/stable` (out of support)   |

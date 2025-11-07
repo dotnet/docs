@@ -9,33 +9,23 @@ zone_pivot_groups: operating-systems-set-one
 
 # Authenticate .NET apps to Azure services during local development using brokered authentication
 
-Brokered authentication collects user credentials using the system authentication broker to authenticate an app with <xref:Azure.Identity.InteractiveBrowserCredential>. A system authentication broker is an app running on a user's machine that manages the authentication handshakes and token maintenance for all connected accounts.
-
-Brokered authentication offers the following benefits:
-
-- **Enables Single Sign-On (SSO):** Enables apps to simplify how users authenticate with Microsoft Entra ID and protects Microsoft Entra ID refresh tokens from exfiltration and misuse.
-- **Enhanced security:** Many security enhancements are delivered with the broker, without needing to update the app logic.
-- **Enhanced feature support:** With the help of the broker, developers can access rich OS and service capabilities.
-- **System integration:** Applications that use the broker plug-and-play with the built-in account picker, allowing the user to quickly pick an existing account instead of reentering the same credentials over and over.
-- **Token Protection:** Ensures that the refresh tokens are device bound and enables apps to acquire device bound access tokens. See [Token Protection](/azure/active-directory/conditional-access/concept-token-protection).
+[!INCLUDE [broker-intro](../includes/broker-intro.md)]
 
 :::zone target="docs" pivot="os-windows"
 
-Windows provides an authentication broker called [Web Account Manager (WAM)](/entra/msal/dotnet/acquiring-tokens/desktop-mobile/wam). WAM enables identity providers such as Microsoft Entra ID to natively plug into the OS and provide secure login services to apps. Brokered authentication enables the app for all operations allowed by the interactive login credentials.
-
-Personal Microsoft accounts and work or school accounts are supported. On supported Windows versions, the default browser-based UI is replaced with a smoother authentication experience, similar to built-in Windows apps.
+[!INCLUDE [broker-windows](../includes/broker-windows.md)]
 
 :::zone-end
 
 :::zone target="docs" pivot="os-macos"
 
-macOS doesn't natively include a built-in authentication broker. Brokered authentication is supported via the `Azure.Identity.Broker` library, which uses platform-specific mechanisms and may integrate with apps like Microsoft Company Portal when devices are managed. For more information, see [Microsoft Enterprise SSO plug-in for Apple devices](/entra/identity-platform/apple-sso-plugin).
+[!INCLUDE [broker-mac](../includes/broker-mac.md)]
 
 :::zone-end
 
 :::zone target="docs" pivot="os-linux"
 
-Linux uses [Microsoft single sign-on for Linux](/entra/identity/devices/sso-linux) as its authentication broker.
+[!INCLUDE [broker-linux](../includes/broker-linux.md)]
 
 :::zone-end
 

@@ -30,7 +30,7 @@ dotnet package download -h|--help
 
 ## Description
 
-`dotnet package download` downloads NuGet packages to a local directory. It **does not** add or update `PackageReference` entries in project files and **does not** build or restore a project. 
+`dotnet package download` downloads NuGet packages to a local directory. It **does not** add or update `PackageReference` entries in project files and **does not** build or restore a project.
 By default, the command downloads only the packages you specify (no transitive dependencies) to the current working directory.
 
 ## Arguments

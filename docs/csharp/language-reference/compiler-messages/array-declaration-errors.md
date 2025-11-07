@@ -148,7 +148,7 @@ In addition, the following warnings are covered in this article:
 
 To access array elements correctly, follow these indexing rules. For more information, see [Arrays](../builtin-types/arrays.md).
 
-- Specify the same number of indices as declared dimensions (**CS0022**). A one-dimensional array needs one index, a three-dimensional array needs three indices.
+- Specify the same number of indices as declared dimensions (**CS0022**). A one-dimensional array needs one index; a three-dimensional array needs three indices.
 - Use only non-negative integers for array indices (**CS0251**). Array indices always start at zero.
 
 ## Invalid collection initializer
@@ -206,9 +206,9 @@ To declare arrays correctly, follow the proper syntax order. For more informatio
 
 An array declaration consists of these tokens in order:
 
-1. The type of array elements (for example, `int`, `string`, or `SomeClassType`)
-2. The array brackets, optionally including commas for multiple dimensions
-3. The variable name
+1. The type of array elements (for example, `int`, `string`, or `SomeClassType`).
+2. The array brackets, optionally including commas for multiple dimensions.
+3. The variable name.
 
 When specifying array dimensions, you can use:
 

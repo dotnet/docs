@@ -9,7 +9,7 @@ ai-usage: ai-assisted
 
 F# 10 brings you several improvements to the F# language, FSharp.Core library, and tooling.
 This version is a refinement release focused on clarity, consistency, and performance, with small but meaningful improvements that make your everyday code more legible and robust.
-F# 10 ships with **.NET 10** and **Visual Studio 2022**.
+F# 10 ships with **.NET 10** and **Visual Studio 2026**.
 
 You can download the latest .NET SDK from the [.NET downloads page](https://dotnet.microsoft.com/download).
 

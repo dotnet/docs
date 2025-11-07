@@ -127,7 +127,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS9214**](#invalid-collection-initializer): *Collection expression type must have an applicable constructor that can be called with no arguments.*
 - [**CS9215**](#invalid-collection-initializer): *Collection expression type 'type' must have an instance or extension method 'Add' that can be called with a single argument.*
 - [**CS9222**](#invalid-collection-initializer): *Collection initializer results in an infinite chain of instantiations of collection 'type'.*
-- [**CS9332**](#invalid-collection-initializer): *Cannot use '..' spread operator in the filter expression of a catch clause*
+- [**CS9332**](#invalid-collection-initializer): *Cannot use '..' spread operator in the filter expression of a catch clause.*
 
 In addition, the following warnings are covered in this article:
 

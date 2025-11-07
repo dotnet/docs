@@ -222,7 +222,7 @@ dotnet-trace collect
 
 - **`--profile <list-of-comma-separated-profile-names>`**
 
-  In this context, a profile is a pre-defined set of provider configurations for common tracing scenarios. Multiple profiles can be specified at a time, delimited by commas. Providers configured through `--providers` will override the profile's configuration. Similarly, if any profile configures the CLR runtime provider, it will override any configurations prescribed through `--clrevents`.
+  A profile is a pre-defined set of provider configurations for common tracing scenarios. Multiple profiles can be specified at a time, delimited by commas. Providers configured through `--providers` will override the profile's configuration. Similarly, if any profile configures the CLR runtime provider, it will override any configurations prescribed through `--clrevents`.
 
   When `--profile`, `--providers`, and `--clrevents` are all omitted, `dotnet-trace collect` enables profiles `dotnet-common` and `dotnet-sampled-thread-time` by default.
 
@@ -310,8 +310,8 @@ Collects diagnostic traces using perf_events, a Linux OS technology. `collect-li
 - .NET 10+
 
 > [!NOTE]
-> The `collect-linux` verb depends on assets currently available only on linux x64 and linux arm64 environments that have glibc 2.35+.
-> Based on the [official .NET 10 Linux support document](https://github.com/dotnet/core/blob/main/release-notes/10.0/supported-os.md#linux), we've found (via Docker official images) that Alpine 3.22, CentOS Stream 9, and Red Hat Enterprise Linux 9 do not satisfy this requirement.
+> The `collect-linux` verb only runs on linux x64 and linux arm64 environments that have glibc version 2.35 or above.
+> All of the [.NET 10 officially supported Linux distros](https://github.com/dotnet/core/blob/main/release-notes/10.0/supported-os.md#linux) support this requirement except Alpine 3.22, CentOS Stream 9, and any distros based off Red Hat Enterprise Linux 9.
 > A quick way to check the version of a system's libc is with the command `ldd --version` or by executing the libc library directly.
 
 ### Synopsis
@@ -431,7 +431,7 @@ By default all processes on the machine will be traced. Use `-n, --name <name>` 
 
 - **`--profile <list-of-comma-separated-profile-names>`**
 
-  In this context, a profile is a pre-defined set of provider configurations for common tracing scenarios. Multiple profiles can be specified at a time, delimited by commas. Providers configured through `--providers` will override the profile's configuration. Similarly, if any profile configures the CLR runtime provider, it will override any configurations prescribed through `--clrevents`.
+  A profile is a pre-defined set of provider configurations for common tracing scenarios. Multiple profiles can be specified at a time, delimited by commas. Providers configured through `--providers` will override the profile's configuration. Similarly, if any profile configures the CLR runtime provider, it will override any configurations prescribed through `--clrevents`.
 
   When `--profile`, `--providers`, `--clrevents`, and `--perf-events` are all omitted, `dotnet-trace collect-linux` enables profiles `dotnet-common` and `cpu-sampling` by default.
 

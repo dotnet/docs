@@ -27,15 +27,6 @@ With this assistant, you can:
 - Fix issues and apply best practices for cloud migration.
 - Validate that your app builds and tests successfully.
 
-> [!IMPORTANT]
-> Starting with Visual Studio 2022 17.14.16, the GitHub Copilot app modernization agent is included with Visual Studio. If you're using an older version of Visual Studio 2022, upgrade to the latest release.
->
-> If you installed any of the following extensions published by Microsoft, uninstall them before using the version now included in Visual Studio:
->
-> - .NET Upgrade Assistant
-> - GitHub Copilot App Modernization – Upgrade for .NET
-> - Azure Migrate Application and Code Assessment for .NET
-
 ## Provide feedback
 
 Feedback is important to Microsoft and the efficiency of this agent. Use the [Suggest a feature](/visualstudio/ide/suggest-a-feature) and [Report a problem](/visualstudio/ide/report-a-problem) features of Visual Studio to provide feedback.

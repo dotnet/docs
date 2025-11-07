@@ -36,6 +36,7 @@ By default, the command downloads only the packages you specify (no transitive d
 ## Arguments
 
 * **`packages`**
+
   One or more package IDs to download.
   Each package can optionally include a version with `@`.
   If a package version isn't specified, the latest version of the package is downloaded.

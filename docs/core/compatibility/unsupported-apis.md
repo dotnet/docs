@@ -4,9 +4,9 @@ titleSuffix: ""
 description: Learn which .NET APIs always throw an exception on .NET Core and .NET 5 and later versions.
 ms.date: 11/07/2025
 ---
-# APIs that always throw exceptions on .NET Core and .NET 5+
+# APIs that always throw exceptions on .NET (Core)
 
-The following APIs will always throw an exception on .NET (Core) on all or a subset of platforms. In most cases, the exception that's thrown is <xref:System.PlatformNotSupportedException>.
+The following APIs always throw an exception on .NET (Core) on all or a subset of platforms. In most cases, the exception that's thrown is <xref:System.PlatformNotSupportedException>.
 
 This article organizes the affected APIs by namespace.
 

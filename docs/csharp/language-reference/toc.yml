@@ -474,7 +474,7 @@ items:
       CS8320, CS8370, CS8371, CS8400, CS8401, CS8511, CS8627, CS8630, CS8652, CS8703,
       CS8704, CS8706, CS8773, CS8912, CS8919, CS8929, CS8936, CS8957, CS8967, CS9014,
       CS9015, CS9016, CS9017, CS9058, CS9064, CS9103, CS9171, CS9194, CS9202, CS9204,
-      CS9240, CS9260, CS9268, CS9269, CS9271
+      CS9240, CS9260, CS9268, CS9269, CS9271, CS9327, CS9328
   - name: Assembly references
     href: ./compiler-messages/assembly-references.md
     displayName: >
@@ -496,7 +496,7 @@ items:
       CS0056, CS0057, CS0215, CS0216, CS0217, CS0218, CS0448, CS0552, CS0553, CS0554,
       CS0555, CS0556, CS0557, CS0558, CS0559, CS0562, CS0563, CS0564, CS0567, CS0590,
       CS0660, CS0661, CS0715, CS1037, CS1553, CS1554, CS8930, CS8931, CS9023, CS9024,
-      CS9025, CS9308, CS9310, CS9311, CS9312, CS9313
+      CS9025, CS9308, CS9310, CS9311, CS9312, CS9313, CS9340, CS9341, CS9342
   - name: Parameter / argument mismatch
     href: ./compiler-messages/parameter-argument-mismatch.md
     displayName: >
@@ -533,7 +533,7 @@ items:
       CS1743, CS9281, CS9282, CS9283, CS9284, CS9285, CS9287, CS9288, CS9289, CS9290,
       CS9292, CS9293, CS9295, CS9300, CS9301, CS9302, CS9303, CS9304, CS9305, CS9306,
       CS9309, CS9316, CS9317, CS9318, CS9319, CS9320, CS9321, CS9322, CS9323, CS9326,
-      CS9329
+      CS9329, CS9339
   - name: Partial declarations
     href: ./compiler-messages/partial-declarations.md
     displayName: >
@@ -560,7 +560,7 @@ items:
       CS8770, CS8774, CS8776, CS8775, CS8777, CS8819, CS8824, CS8825, CS8847
   - name: Pattern matching warnings
     href: ./compiler-messages/pattern-matching-warnings.md
-    displayName: CS8509, CS9134, CS9135, CS9335, CS9337
+    displayName: CS8509, CS9134, CS9135, CS9335, CS9336, CS9337
   - name: String literal declarations
     href: ./compiler-messages/string-literal.md
     displayName: >
@@ -573,7 +573,8 @@ items:
       CS0022, CS0178, CS0248, CS0251, CS0270, CS0611, CS0623, CS0650, CS0719, CS0747,
       CS0820, CS0826, CS0846, CS1062, CS1063, CS1064, CS1552, CS1586, CS1920, CS1921,
       CS1925, CS1950, CS1954, CS3007, CS3016, CS9174, CS9176, CS9185, CS9186, CS9187,
-      CS9188, CS9203, CS9208, CS9209, CS9210, CS9212, CS9213, CS9214, CS9215, CS9222
+      CS9188, CS9203, CS9208, CS9209, CS9210, CS9212, CS9213, CS9214, CS9215, CS9222,
+      CS9332
   - name: Inline arrays
     href: ./compiler-messages/inline-array-errors.md
     displayName: >

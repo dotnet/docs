@@ -2,7 +2,7 @@
 title: Unsupported APIs on .NET Core and .NET 5+
 titleSuffix: ""
 description: Learn which .NET APIs always throw an exception on .NET Core and .NET 5 and later versions.
-ms.date: 09/08/2025
+ms.date: 11/07/2025
 ---
 # APIs that always throw exceptions on .NET Core and .NET 5+
 
@@ -242,6 +242,7 @@ This article organizes the affected APIs by namespace.
 
 | Member | Platforms that throw |
 |--------|----------------------|
+| <xref:System.Security.Cryptography.AesCcm.%23ctor*> | macOS |
 | <xref:System.Security.Cryptography.AsymmetricAlgorithm.Create(System.String)?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.CngAlgorithm?displayProperty=nameWithType> | Linux and macOS |
 | <xref:System.Security.Cryptography.CngAlgorithmGroup?displayProperty=nameWithType> | Linux and macOS |
@@ -264,14 +265,17 @@ This article organizes the affected APIs by namespace.
 | <xref:System.Security.Cryptography.CspKeyContainerInfo.RandomlyGenerated?displayProperty=nameWithType> | Linux and macOS |
 | <xref:System.Security.Cryptography.CspKeyContainerInfo.Removable?displayProperty=nameWithType> | Linux and macOS |
 | <xref:System.Security.Cryptography.CspKeyContainerInfo.UniqueKeyContainerName?displayProperty=nameWithType> | Linux and macOS |
+| <xref:System.Security.Cryptography.DSAOpenSsl.%23ctor*> | macOS |
 | <xref:System.Security.Cryptography.ECDiffieHellmanCng.FromXmlString(System.String,System.Security.Cryptography.ECKeyXmlFormat)?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.ECDiffieHellmanCng.ToXmlString(System.Security.Cryptography.ECKeyXmlFormat)?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.ECDiffieHellmanCngPublicKey.FromXmlString(System.String)?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.ECDiffieHellmanCngPublicKey.ToXmlString?displayProperty=nameWithType> | All |
+| <xref:System.Security.Cryptography.ECDiffieHellmanOpenSsl.%23ctor*> | macOS |
 | <xref:System.Security.Cryptography.ECDiffieHellmanPublicKey.ToByteArray?displayProperty=nameWithType> | Linux and macOS |
 | <xref:System.Security.Cryptography.ECDiffieHellmanPublicKey.ToXmlString?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.ECDsaCng.FromXmlString(System.String,System.Security.Cryptography.ECKeyXmlFormat)?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.ECDsaCng.ToXmlString(System.Security.Cryptography.ECKeyXmlFormat)?displayProperty=nameWithType> | All |
+| <xref:System.Security.Cryptography.ECDsaOpenSsl.%23ctor*> | macOS |
 | <xref:System.Security.Cryptography.HashAlgorithm.Create?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.HMAC.Create?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.HMAC.Create(System.String)?displayProperty=nameWithType> | All |
@@ -284,10 +288,12 @@ This article organizes the affected APIs by namespace.
 | <xref:System.Security.Cryptography.ProtectedData.Unprotect%2A?displayProperty=nameWithType> | Linux and macOS |
 | <xref:System.Security.Cryptography.RSACryptoServiceProvider.DecryptValue(System.Byte[])?displayProperty=fullName> | All |
 | <xref:System.Security.Cryptography.RSACryptoServiceProvider.EncryptValue(System.Byte[])?displayProperty=fullName> | All |
+| <xref:System.Security.Cryptography.RSAOpenSsl.%23ctor*> | macOS |
 | <xref:System.Security.Cryptography.RSA.DecryptValue(System.Byte[])?displayProperty=fullName> | All |
 | <xref:System.Security.Cryptography.RSA.EncryptValue(System.Byte[])?displayProperty=fullName> | All |
 | <xref:System.Security.Cryptography.RSA.FromXmlString%2A?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.RSA.ToXmlString%2A?displayProperty=nameWithType> | All |
+| <xref:System.Security.Cryptography.SafeEvpPKeyHandle?displayProperty=nameWithType> | macOS |
 | <xref:System.Security.Cryptography.SymmetricAlgorithm.Create?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.SymmetricAlgorithm.Create(System.String)?displayProperty=nameWithType> | All |
 

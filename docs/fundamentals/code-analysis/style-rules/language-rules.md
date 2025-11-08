@@ -1,7 +1,7 @@
 ---
 title: Code-style language and unnecessary code rules
 description: Learn about the different code-style rules for using C# and Visual Basic language constructs and for finding unnecessary code.
-ms.date: 03/25/2025
+ms.date: 11/07/2025
 helpviewer_keywords:
 - language code style rules [EditorConfig]
 - language rules
@@ -172,6 +172,7 @@ C# style rules:
 - [Use collection expression for new (IDE0306)](ide0306.md)
 - [Use unbound generic type (IDE0340)](ide0340.md)
 - [Use implicitly typed lambda (IDE0350)](ide0350.md)
+- [Simplify property accessor (IDE0360)](ide0360.md)
 
 Visual Basic style rules:
 
@@ -205,6 +206,7 @@ C# style rules:
 - [Struct can be made 'readonly' (IDE0250)](ide0250.md)
 - [Member can be made 'readonly' (IDE0251)](ide0251.md)
 - [Make anonymous function static (IDE0320)](ide0320.md)
+- [Remove unnecessary `unsafe` modifier (IDE0380)](ide0380.md)
 
 ### New-line preferences
 
@@ -258,6 +260,10 @@ C# style rules:
 .NET style rules (C# and Visual Basic):
 
 - [Remove unnecessary suppression (IDE0079)](ide0079.md)
+
+C# style rules:
+
+- [Remove unnecessary suppression (IDE0370)](ide0370.md)
 
 ### `This.` and `me.` preferences
 

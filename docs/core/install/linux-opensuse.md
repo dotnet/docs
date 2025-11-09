@@ -46,7 +46,7 @@ sudo mv prod.repo /etc/zypp/repos.d/microsoft-prod.repo
 sudo chown root:root /etc/zypp/repos.d/microsoft-prod.repo
 ```
 
-# [.NET 10](#tab/dotnet9)
+# [.NET 10](#tab/dotnet10)
 
 [!INCLUDE [linux-zyp-install-100](includes/linux-install-100-zyp.md)]
 
@@ -72,7 +72,7 @@ sudo mv prod.repo /etc/zypp/repos.d/microsoft-prod.repo
 sudo chown root:root /etc/zypp/repos.d/microsoft-prod.repo
 ```
 
-# [.NET 10](#tab/dotnet9)
+# [.NET 10](#tab/dotnet10)
 
 [!INCLUDE [linux-zyp-install-100](includes/linux-install-100-zyp.md)]
 

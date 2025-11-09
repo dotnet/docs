@@ -196,7 +196,7 @@ The .NET templates are available on NuGet, and you can install them like any oth
 | ASP.NET Core 7.0 | [`Microsoft.DotNet.Web.ProjectTemplates.7.0`](https://www.nuget.org/packages/Microsoft.DotNet.Web.ProjectTemplates.7.0)       |
 | ASP.NET Core 8.0 | [`Microsoft.DotNet.Web.ProjectTemplates.8.0`](https://www.nuget.org/packages/Microsoft.DotNet.Web.ProjectTemplates.8.0)       |
 | ASP.NET Core 9.0 | [`Microsoft.DotNet.Web.ProjectTemplates.8.0`](https://www.nuget.org/packages/Microsoft.DotNet.Web.ProjectTemplates.9.0)       |
-| ASP.NET Core 10.0 | [`Microsoft.DotNet.Web.ProjectTemplates108.0`](https://www.nuget.org/packages/Microsoft.DotNet.Web.ProjectTemplates.10.0)       |
+| ASP.NET Core 10.0 | [`Microsoft.DotNet.Web.ProjectTemplates.10.0`](https://www.nuget.org/packages/Microsoft.DotNet.Web.ProjectTemplates.10.0)       |
 
 For example, the .NET 9 SDK includes templates for a console app targeting .NET 9. If you wanted to target .NET Core 3.1, you would need to install the 3.1 template package.
 
@@ -206,7 +206,7 @@ For example, the .NET 9 SDK includes templates for a console app targeting .NET 
     dotnet new console --framework netcoreapp3.1
     ```
 
-    If you see an error message, you need to install the templates, as detailed in the next step.
+    If you see an error message, install the templates in the next step.
 
 01. Install the .NET Core 3.1 project templates.
 

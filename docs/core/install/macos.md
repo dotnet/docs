@@ -4,8 +4,8 @@ description: Learn about which versions of .NET SDK and .NET Runtime are support
 author: adegeo
 ms.author: adegeo
 ms.topic: install-set-up-deploy
-ms.date: 11/11/2024
-ms.custom: linux-related-content
+ms.date: 11/08/2025
+ms.custom: updateeachrelease, linux-related-content
 
 #customer intent: As a user or developer, I want to know which versions of .NET are supported on macOS. I also need to know how to install .NET on macOS.
 
@@ -21,7 +21,7 @@ ms.custom: linux-related-content
 
 This article teaches you about which versions of .NET are supported on macOS, how to install .NET, and what the difference is between the SDK and runtime.
 
-The latest version of .NET is 9.
+The latest version of .NET is 10.
 
 > [!div class="button"]
 > [Download .NET](https://dotnet.microsoft.com/download/dotnet)
@@ -30,11 +30,11 @@ The latest version of .NET is 9.
 
 The following table lists the supported .NET releases, and which macOS they're supported on. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of macOS is no longer supported.
 
-| macOS Version          | .NET     |
-|------------------------|----------|
-| macOS 15 "Sequoia"     | 9.0, 8.0 |
-| macOS 14 "Sonoma"      | 9.0, 8.0 |
-| macOS 13 "Ventura"     | 9.0, 8.0 |
+| macOS Version          | .NET           |
+|------------------------|----------------|
+| macOS 26 "Tahoe"       | 10.0, 9.0, 8.0 |
+| macOS 15 "Sequoia"     | 10.0, 9.0, 8.0 |
+| macOS 14 "Sonoma"      | 9.0, 8.0       |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
@@ -85,7 +85,7 @@ If you're unsure which method you should choose after reviewing the lists in the
 Installer packages are available for macOS, an easy way of installing .NET.
 
 01. Open a browser and navigate to <https://dotnet.microsoft.com/download/dotnet>.
-01. Select the link to the .NET version you want to install, such as **.NET 8.0**.
+01. Select the link to the .NET version you want to install, such as **.NET 10.0**.
 
     :::image type="content" source="media/macos/download-page.png" alt-text="The .NET download website. Versions 6.0 through 9.0 are listed. A red box highlights those download links.":::
 
@@ -243,11 +243,11 @@ For more information about how enforced-notarization affects .NET (and your .NET
 
 [!INCLUDE [verify-download-intro](includes/verify-download-intro.md)]
 
-Use the `shasum -a 512` command to print the checksum of the file you've downloaded. For example, the following command reports the checksum of the _dotnet-sdk-8.0.100-osx-x64.tar.gz_ file:
+Use the `shasum -a 512` command to print the checksum of the file you've downloaded. For example, the following command reports the checksum of the _dotnet-sdk-9.0.306-osx-x64.tar.gz_ file:
 
 ```bash
-$ shasum -a 512 dotnet-sdk-8.0.100-osx-x64.tar.gz
-13905ea20191e70baeba50b0e9bbe5f752a7c34587878ee104744f9fb453bfe439994d38969722bdae7f60ee047d75dda8636f3ab62659450e9cd4024f38b2a5  dotnet-sdk-8.0.100-osx-x64.tar.gz
+$ shasum -a 512 dotnet-sdk-9.0.306-osx-x64.tar.gz
+a9700f98e5aa4f70b2a08ddba2b1c6085106b0d17828bd719fdcef460b06c890b32d752fbff8e4659cd1ca4174b4b211b301fe682439ea9a24b6521ca5a64c69  dotnet-sdk-9.0.306-osx-x64.tar.gz
 ```
 
 Compare the checksum with the value provided by the download site.
@@ -256,15 +256,15 @@ Compare the checksum with the value provided by the download site.
 
 The .NET release notes contain a link to a checksum file you can use to validate your downloaded file. The following steps describe how to download the checksum file and validate a .NET install binary:
 
-01. The release notes page for .NET 8 on GitHub at <https://github.com/dotnet/core/tree/main/release-notes/8.0#releases> contains a section named **Releases**. The table in that section links to the downloads and checksum files for each .NET 8 release:
+01. The release notes page for .NET 9 on GitHub at <https://github.com/dotnet/core/tree/main/release-notes/9.0#releases> contains a section named **Releases**. The table in that section links to the downloads and checksum files for each .NET 9 release. The following image shows the .NET 8 release table as a reference:
 
     :::image type="content" source="media/install-sdk/release-notes-root.png" alt-text="The github release notes version table for .NET":::
 
 01. Select the link for the version of .NET that you downloaded.
 
-    The previous section used .NET SDK 8.0.100, which is in the .NET 8.0.0 release.
+    The previous section used .NET SDK 9.0.306, which is in the .NET 9.0.10 release.
 
-01. In the release page, you can see the .NET Runtime and .NET SDK version, and a link to the checksum file:
+01. In the release page, you can see the .NET Runtime and .NET SDK version, and a link to the checksum file. The following image shows the .NET 8 release table as a reference:
 
     :::image type="content" source="media/install-sdk/release-notes-version.png" alt-text="The download table with checksums for .NET":::
 
@@ -277,7 +277,7 @@ The .NET release notes contain a link to a checksum file you can use to validate
     Replace the link in the following command with the link you copied.
 
     ```bash
-    curl -O https://builds.dotnet.microsoft.com/dotnet/checksums/8.0.0-sha.txt
+    curl -O https://builds.dotnet.microsoft.com/dotnet/checksums/9.0.10-sha.txt
     ```
 
 01. With both the checksum file and the .NET release file downloaded to the same directory, use the `shasum -a 512 -c {file}` command to validate the downloaded file.
@@ -285,15 +285,15 @@ The .NET release notes contain a link to a checksum file you can use to validate
     When validation passes, you see the file printed with the **OK** status:
 
     ```bash
-    $ shasum -a 512 -c 8.0.0-sha.txt
-    dotnet-sdk-8.0.100-osx-x64.tar.gz: OK
+    $ shasum -a 512 -c 9.0.10-sha.txt
+    dotnet-sdk-9.0.306-osx-x64.tar.gz: OK
     ```
 
     If you see the file marked as **FAILED**, the file you downloaded isn't valid and shouldn't be used.
 
     ```bash
-    $ shasum -a 512 -c 8.0.0-sha.txt
-    dotnet-sdk-8.0.100-osx-x64.tar.gz: FAILED
+    $ shasum -a 512 -c 9.0.10-sha.txt
+    dotnet-sdk-9.0.306-osx-x64.tar.gz: FAILED
     shasum: WARNING: 1 computed checksum did NOT match
     ```
 

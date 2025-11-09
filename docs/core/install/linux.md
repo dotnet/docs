@@ -4,7 +4,7 @@ description: Learn about how .NET is available on Linux. .NET can be installed t
 author: adegeo
 ms.author: adegeo
 ms.custom: updateeachrelease, linux-related-content
-ms.date: 11/04/2024
+ms.date: 11/08/2025
 ---
 
 # Install .NET on Linux
@@ -26,7 +26,7 @@ Packages are available for the following Linux distributions:
 - [openSUSE Leap](linux-opensuse.md)
 - [SUSE Enterprise Linux](linux-sles.md)
 
-Packages are published in the Microsoft package repository at <https://packages.microsoft.com/>. Distributions are selected per the policy defined at [dotnet/core #9556](https://github.com/dotnet/core/discussions/9556).
+Packages are published in the Microsoft package repository at <https://packages.microsoft.com/>. Distributions are selected per the policy defined at [dotnet/core \#9556](https://github.com/dotnet/core/discussions/9556).
 
 The following Linux distributions publish their own .NET packages:
 

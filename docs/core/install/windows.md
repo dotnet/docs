@@ -423,7 +423,7 @@ The .NET release notes contain a link to a checksum file you can use to validate
 
 01. The release notes page for .NET 9 on GitHub at <https://github.com/dotnet/core/tree/main/release-notes/9.0> contains a section named **Releases**. The table in that section links to the downloads and checksum files for each .NET 9 release.  The following image shows the .NET 8 release table as a reference:
 
-    :::image type="content" source="../media/install-sdk/release-notes-root.png" alt-text="The github release notes version table for .NET":::
+    :::image type="content" source="media/install-sdk/release-notes-root.png" alt-text="The github release notes version table for .NET":::
 
 01. Select the link for the version of .NET that you downloaded. The previous section used .NET SDK 9.0.306, which is in the .NET 9.0.10 release.
 
@@ -432,7 +432,7 @@ The .NET release notes contain a link to a checksum file you can use to validate
 
 01. In the release page, you can see the .NET Runtime and .NET SDK version, and a link to the checksum file.  The following image shows the .NET 8 release table as a reference:
 
-    :::image type="content" source="../media/install-sdk/release-notes-version.png" alt-text="The download table with checksums for .NET":::
+    :::image type="content" source="media/install-sdk/release-notes-version.png" alt-text="The download table with checksums for .NET":::
 
 01. Copy the link to the checksum file.
 

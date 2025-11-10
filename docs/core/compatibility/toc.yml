@@ -70,6 +70,8 @@ items:
                 href: core-libraries/10.0/ymm-embedded-rounding.md
           - name: Cryptography
             items:
+              - name: CompositeMLDsa updated to draft-08
+                href: cryptography/10.0/composite-mldsa-draft-08.md
               - name: CoseSigner.Key can be null
                 href: cryptography/10.0/cosesigner-key-null.md
               - name: Environment variable renamed to DOTNET_OPENSSL_VERSION_OVERRIDE
@@ -78,6 +80,8 @@ items:
                 href: cryptography/10.0/mldsa-slhdsa-secretkey-to-privatekey.md
               - name: OpenSSL cryptographic primitives not supported on macOS
                 href: cryptography/10.0/openssl-macos-unsupported.md
+              - name: OpenSSL 1.1.1 or later required on Unix
+                href: cryptography/10.0/openssl-version-requirement.md
               - name: X500DistinguishedName validation is stricter
                 href: cryptography/10.0/x500distinguishedname-validation.md
               - name: X509Certificate and PublicKey key parameters can be null
@@ -100,6 +104,10 @@ items:
             items:
               - name: Environment variable renamed to DOTNET_ICU_VERSION_OVERRIDE
                 href: globalization/10.0/version-override.md
+          - name: Install tool
+            items:
+              - name: dotnet.acquire API for VS Code no longer always downloads latest
+                href: install-tool/3.0.0/vscode-dotnet-acquire-no-latest.md
           - name: Interop
             items:
               - name: Single-file apps no longer look for native libraries in executable directory
@@ -120,6 +128,8 @@ items:
                 href: reflection/10/makegeneric-signaturetype-validation.md
           - name: SDK and MSBuild
             items:
+              - name: Code coverage EnableDynamicNativeInstrumentation defaults to false
+                href: sdk/10.0/code-coverage-dynamic-native-instrumentation.md
               - name: .NET CLI `--interactive` defaults to `true` in user scenarios
                 href: sdk/10.0/dotnet-cli-interactive.md
               - name: "`dotnet` CLI commands log non-command-relevant data to stderr"
@@ -128,6 +138,8 @@ items:
                 href: sdk/10.0/dotnet-tool-pack-publish.md
               - name: dnx.ps1 file is no longer included in .NET SDK
                 href: sdk/10.0/dnx-ps1-removed.md
+              - name: Double quotes in file-level directives are disallowed
+                href: sdk/10.0/file-level-directive-double-quotes.md
               - name: "`dotnet restore` audits transitive packages"
                 href: sdk/10.0/nugetaudit-transitive-packages.md
               - name: project.json not supported in `dotnet restore`

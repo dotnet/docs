@@ -548,11 +548,8 @@ f1_keywords:
   - "CS9096"
   - "CS9097"
 # C# 14 errors begin here
-  - "CS9327"
-  - "CS9328"
   - "CS9330"
   - "CS9331"
-  - "CS9332"
   - "CS9333"
   - "CS9334"
   - "CS9338"

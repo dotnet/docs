@@ -182,6 +182,8 @@ items:
             items:
               - name: dotnet package add
                 href: ../../core/tools/dotnet-package-add.md
+              - name: dotnet package download
+                href: ../../core/tools/dotnet-package-download.md
               - name: dotnet package list
                 href: ../../core/tools/dotnet-package-list.md
               - name: dotnet package remove
@@ -3287,6 +3289,8 @@ items:
                     href: ../../fundamentals/code-analysis/quality-rules/ca1874.md
                   - name: CA1875
                     href: ../../fundamentals/code-analysis/quality-rules/ca1875.md
+                  - name: CA1877
+                    href: ../../fundamentals/code-analysis/quality-rules/ca1877.md
               - name: SingleFile rules
                 items:
                   - name: Overview
@@ -3347,6 +3351,8 @@ items:
                     href: ../../fundamentals/code-analysis/quality-rules/ca2024.md
                   - name: CA2025
                     href: ../../fundamentals/code-analysis/quality-rules/ca2025.md
+                  - name: CA2026
+                    href: ../../fundamentals/code-analysis/quality-rules/ca2026.md
               - name: Security rules
                 items:
                   - name: Overview
@@ -4106,6 +4112,14 @@ items:
             href: ../../fundamentals/syslib-diagnostics/syslib1022.md
           - name: SYSLIB1023
             href: ../../fundamentals/syslib-diagnostics/syslib1023.md
+          - name: SYSLIB1024
+            href: ../../fundamentals/syslib-diagnostics/syslib1024.md
+          - name: SYSLIB1025
+            href: ../../fundamentals/syslib-diagnostics/syslib1025.md
+          - name: SYSLIB1026
+            href: ../../fundamentals/syslib-diagnostics/syslib1026.md
+          - name: SYSLIB1027
+            href: ../../fundamentals/syslib-diagnostics/syslib1027.md
           - name: SYSLIB1030
             href: ../../fundamentals/syslib-diagnostics/syslib1030.md
           - name: SYSLIB1031

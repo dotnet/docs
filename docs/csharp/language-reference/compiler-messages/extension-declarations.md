@@ -1,7 +1,8 @@
 ---
-title: "Errors and warnings related to extension declarations"
+title: "Resolve errors and warnings related to extension declarations"
 description: "These errors and warnings indicate that you need to modify the declaration of an extension method using the `this` modifier on the first parameter, or an extension declaration"
-ms.date: 10/16/2025
+ms.date: 11/07/2025
+ai-usage: ai-assisted
 f1_keywords:
   - "CS1100"
   - "CS1101"
@@ -44,6 +45,7 @@ f1_keywords:
   - "CS9323"
   - "CS9326"
   - "CS9329"
+  - "CS9339"
 helpviewer_keywords: 
   - "CS1100"
   - "CS1101"
@@ -88,9 +90,15 @@ helpviewer_keywords:
   - "CS9323"
   - "CS9326"
   - "CS9329"
+  - "CS9339"
 ---
-# Errors and warnings related to extension methods declared with `this` parameters or `extension` blocks
+# Resolve errors and warnings in extension member declarations
 
+This article covers the following compiler errors:
+
+<!-- The text in this list generates issues for Acrolinx, because they don't use contractions.
+That's by design. The text closely matches the text of the compiler error / warning for SEO purposes.
+ -->
 - [**CS1100**](#errors-related-to-this-parameter-extension-methods): *Method has a parameter modifier '`this`' which is not on the first parameter*
 - [**CS1101**](#errors-related-to-this-parameter-extension-methods): *The parameter modifier '`ref`' cannot be used with '`this`'.*
 - [**CS1102**](#common-errors-on-extension-declarations): *The parameter modifier '`out`' cannot be used with '`this`'.*
@@ -134,14 +142,13 @@ helpviewer_keywords:
 - [**CS9323**](#errors-related-to-extension-block-declarations): *Cannot declare instance extension operator for a type that is not known to be a struct and is not known to be a class.*
 - [**CS9326**](#errors-related-to-extension-block-declarations): *'`name`': extension member names cannot be the same as their extended type.*
 - [**CS9329**](#errors-related-to-extension-block-declarations): *This extension block collides with another extension block. They result in conflicting content-based type names in metadata.*
+- [**CS9339**](#errors-related-to-extension-block-declarations): *The extension resolution is ambiguous between the following members.*
 
 ## Common errors on extension declarations
 
-The compiler emits these errors when you violate rules that apply to all extension member declarations, regardless of the syntax chosen:
-
 - **CS1102**: *The parameter modifier '`out`' cannot be used with '`this`'.*
-- **CS1106**: *Extension methods must be defined in a non generic static class.*
 - **CS1103**: *The first parameter of an extension method cannot be of a pointer type.*
+- **CS1106**: *Extension methods must be defined in a non generic static class.*
 - **CS1109**: *Extension Methods must be defined on top level static classes, 'name' is a nested class.*
 - **CS1113**: *Extension method defined on a value type cannot be used to create delegates.*
 - **CS1743**: *Cannot specify a default value for the 'this' parameter.*
@@ -149,18 +156,19 @@ The compiler emits these errors when you violate rules that apply to all extensi
 - **CS9284**: *The receiver parameter of an extension cannot have a default value.*
 - **CS9285**: *An extension container can have only one receiver parameter.*
 
-Any extension declaration must follow these rules:
+The compiler emits these errors when you violate rules that apply to all extension member declarations, regardless of the syntax chosen. For more information, see [Extension methods](../../programming-guide/classes-and-structs/extension-methods.md).
 
-- Its containing type (`class` or `struct`) must be non-generic and `static`.
-- Its containing type must be a top-level type. It can't be nested in another type.
-- Members that extend an instance of a value type can't be converted to delegates.
-- The receiver parameter can't include the `out` parameter modifier.
-- The receiver parameter can't have a default argument value.
-- Pointer types can't be extended. In other words, the parameter you apply the `this` modifier to can't be a pointer type.
+To declare extension members correctly, follow these requirements:
+
+- Declare the containing type as a non-generic `static` class or struct (**CS1106**, **CS9283**).
+- Declare the containing type at the top level, not nested within another type (**CS1109**, **CS9283**).
+- Don't convert extension methods on value types to delegates (**CS1113**). Create a regular method instead.
+- Don't use the `out` parameter modifier on the receiver parameter (**CS1102**).
+- Don't provide default values for the receiver parameter (**CS1743**, **CS9284**).
+- Don't extend pointer types (**CS1103**). The parameter you apply the `this` modifier to can't be a pointer type.
+- Declare only one receiver parameter per extension container (**CS9285**).
 
 ## Errors related to extension block declarations
-
-These errors are specific to extension blocks, a C# 14 feature. Extension blocks are declared using the `extension` keyword in a static class. The `extension` declares the type and name of the receiver. All members inside the block declared with `extension` are extension members for that receiver:
 
 - **CS9281**: *Extension declarations may not have a name.*
 - **CS9282**: *Extension declarations can include only methods or properties.*
@@ -191,41 +199,46 @@ These errors are specific to extension blocks, a C# 14 feature. Extension blocks
 - **CS9323**: *Cannot declare instance extension operator for a type that is not known to be a struct and is not known to be a class.*
 - **CS9326**: *'`name`': extension member names cannot be the same as their extended type.*
 - **CS9329**: *This extension block collides with another extension block. They result in conflicting content-based type names in metadata.*
+- **CS9339**: *The extension resolution is ambiguous between the following members.*
 
-The contextual keyword [`extension`](../keywords/extension.md) declares an extension block. It can't be used for a type.
+These errors are specific to extension blocks, a C# 14 feature. Extension blocks are declared using the [`extension`](../keywords/extension.md) contextual keyword in a static class. For more information, see [Extension methods](../../programming-guide/classes-and-structs/extension-methods.md).
 
-Extension declarations must follow these rules:
+To declare extension blocks correctly, follow these requirements:
 
-- The extension can't include a name token. The extension declares the receiver only.
-- The receiver parameter can't have a default value.
+- Don't include a name token in the extension declaration (**CS9281**). The extension declares the receiver only.
+- Don't provide default values for the receiver parameter (**CS9284**, covered in [common errors](#common-errors-on-extension-declarations)).
+- Don't use the `extension` keyword for types or aliases (**CS9306**). It's a contextual keyword for extension blocks only.
 
-Extension members declared in an extension block must follow these rules, in addition to the [common rules](#common-errors-on-extension-declarations):
+To declare extension members in extension blocks correctly, follow these requirements in addition to the [common rules](#common-errors-on-extension-declarations):
 
-- Only methods and properties are valid extension member types. Extension members can extend an instance, or a type.
-- The extension must provide a parameter name for the receiver in order to contain members that extend an instance.
-- The receiver parameter name must be unique in that extension block.
-- All extension members must use all type parameters declared on the extension. They can add more type parameters.
-- Extension blocks can't be nested within another extension block.
+- Include only methods or properties as extension members (**CS9282**). Other member types aren't supported.
+- Provide a parameter name for the receiver to contain instance extension members (**CS9303**).
+- Ensure the receiver parameter name is unique within the extension block and doesn't conflict with type parameters (**CS9287**, **CS9288**, **CS9289**, **CS9290**, **CS9291**, **CS9292**, **CS9294**).
+- Reference all type parameters declared on the extension in the extended type (**CS9295**). Additional type parameters can be added on individual members.
+- Don't nest extension blocks within other extension blocks (**CS9309**).
+- Use the `ref` modifier on the receiver parameter only with value types or generic types constrained to struct (**CS9300**).
+- Use the `in` or `ref readonly` modifier on the receiver parameter only with concrete (non-generic) value types (**CS9301**).
+- Don't use modifiers on unnamed receiver parameters (**CS9305**).
+- Don't declare `protected` members in extension blocks (**CS9302**). Extension members must be accessible where the extension is in scope.
+- Don't declare `init`-only accessors in extension blocks (**CS9304**). Use regular property setters instead.
+- Don't use extension members as arguments to the `nameof` operator (**CS9316**).
+- Choose member names that differ from the extended type name (**CS9326**).
+- Ensure extension blocks have unique content-based type names in metadata (**CS9329**). Consolidate or differentiate extension blocks to avoid conflicts.
+- Resolve ambiguous extension member calls by providing more specific type information or using qualified names (**CS9339**).
 
-**CS9316** is emitted when you attempt to use an extension member as an argument to the `nameof` operator. Extension members aren't allowed in this context.
+### Extension block operator requirements
 
-**CS9317**, **CS9318**, **CS9319**, **CS9320**, **CS9321**, **CS9322**, and **CS9323** are operator-related errors in extension blocks:
+Extension blocks support user-defined operators with specific requirements:
 
-- **CS9317**: Unary operators must have the extended type as their parameter.
-- **CS9318**: Increment (`++`) and decrement (`--`) operators must have the extended type as their parameter.
-- **CS9319**: Binary operators must have at least one parameter that is the extended type.
-- **CS9320**: Shift operators must have the extended type as their first operand.
-- **CS9321**: You can't declare user-defined operators in extension blocks that extend static classes.
-- **CS9322**: When extending a struct with instance operators, the receiver parameter must use the `ref` modifier.
-- **CS9323**: You can't declare instance operators for types that aren't constrained to be either a struct or a class.
-
-**CS9326** is emitted when an extension member has the same name as the extended type. Choose a different name for the member.
-
-**CS9329** occurs when two extension blocks result in conflicting content-based type names in the compiled metadata. This typically happens when multiple extension blocks with the same receiver type and similar characteristics are declared. Consolidate the extension blocks or differentiate them in a way that produces unique metadata names.
+- Unary operators must have the extended type as their parameter (**CS9317**).
+- Increment (`++`) and decrement (`--`) operators must have the extended type as their parameter (**CS9318**).
+- Binary operators must have at least one parameter that is the extended type (**CS9319**).
+- Shift operators must have the extended type as their first operand (**CS9320**).
+- Don't declare user-defined operators in extension blocks that extend static classes (**CS9321**).
+- When extending a struct with instance operators, use the `ref` modifier on the receiver parameter (**CS9322**).
+- Don't declare instance operators for types that aren't constrained to be either a struct or a class (**CS9323**).
 
 ## Errors related to `this` parameter extension methods
-
-These errors are specific to extension methods where you declare the receiver by adding the `this` modifier to the first parameter of the method:
 
 - **CS1100**: *Method has a parameter modifier '`this`' which is not on the first parameter*
 - **CS1101**: *The parameter modifier '`ref`' cannot be used with '`this`'.*
@@ -233,10 +246,12 @@ These errors are specific to extension methods where you declare the receiver by
 - **CS1110**: *Cannot define a new extension because the compiler required type <xref:System.Runtime.CompilerServices.ExtensionAttribute> cannot be found. Are you missing a reference to System.Core.dll?*
 - **CS1112**: *Do not use '<xref:System.Runtime.CompilerServices.ExtensionAttribute>'. Use the '`this`' keyword instead.*
 
-An extension method where the receiver instance includes the `this` modifier must follow these rules, in addition to the [common rules](#common-errors-on-extension-declarations):
+These errors are specific to extension methods where you declare the receiver by adding the `this` modifier to the first parameter. For more information, see [Extension methods](../../programming-guide/classes-and-structs/extension-methods.md).
 
-- The method must have the `static` modifier.
-- The `this` parameter modifier must be applied to the first parameter. It can't be applied to any other parameters on the method.
-- The `ref` `out` parameter modifier can't be applied to the first parameter. To apply `ref`, you need to convert to an extension block.
-- In .NET Framework apps, `System.Core.dll` must be added as a reference.
-- You must specify the `this` modifier on the first parameter. You can't directly use the <xref:System.Runtime.CompilerServices.ExtensionAttribute> attribute instead.
+To declare `this` parameter extension methods correctly, follow these requirements in addition to the [common rules](#common-errors-on-extension-declarations):
+
+- Add the `static` modifier to the method (**CS1105**).
+- Apply the `this` parameter modifier only to the first parameter (**CS1100**).
+- Don't combine the `ref` modifier with the `this` modifier (**CS1101**). To use `ref`, convert to an extension block.
+- Add a reference to `System.Core.dll` in .NET Framework apps (**CS1110**).
+- Use the `this` modifier on the first parameter instead of directly applying the <xref:System.Runtime.CompilerServices.ExtensionAttribute> attribute (**CS1112**).

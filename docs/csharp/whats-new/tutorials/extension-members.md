@@ -185,6 +185,6 @@ Run the complete application to see both approaches side by side and observe how
 
 ## Related content
 
-- [Extension methods (C# Programming Guide)](/dotnet/csharp/programming-guide/classes-and-structs/extension-methods)
-- [What's new in C# 14](/dotnet/csharp/whats-new/csharp-14)
-- [Operator overloading (C# reference)](/dotnet/csharp/language-reference/operators/operator-overloading)
+- [Extension methods (C# Programming Guide)](../../programming-guide/classes-and-structs/extension-methods.md)
+- [What's new in C# 14](../csharp-14.md)
+- [Operator overloading (C# reference)](../../language-reference/operators/operator-overloading.md)

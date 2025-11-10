@@ -1,7 +1,7 @@
 ---
 title: Welcome to .NET
 description: Getting started with the .NET family of technologies.
-ms.date: 11/22/2024
+ms.date: 11/07/2025
 ms.custom: "updateeachrelease"
 ---
 # Welcome to .NET
@@ -25,8 +25,8 @@ Also follow the latest .NET events:
 
 For information about the latest features added to the .NET implementations and supported languages, see the following articles:
 
-- [What's new in .NET 9](core/whats-new/dotnet-9/overview.md)
-- [What's new in C# 13](./csharp/whats-new/csharp-13.md)
+- [What's new in .NET 10](core/whats-new/dotnet-10/overview.md)
+- [What's new in C# 14](./csharp/whats-new/csharp-14.md)
 - [What's new for Visual Basic](visual-basic/whats-new/index.md)
 - [What's new in .NET Framework](framework/whats-new/index.md)
 

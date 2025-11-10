@@ -34,12 +34,12 @@ By default, .NET is installed to the _Program Files\\dotnet_ directory on your c
 
 There are three different runtimes for Windows, which enable different types of apps to run. The SDK includes all three runtimes, and an installer for a runtime might include an additional runtime. The following table describes which runtime is included with a particular .NET installer:
 
-| Installer                | Includes .NET Runtime         | Includes .NET Desktop Runtime | Includes ASP.NET Core Runtime |
-| ------------------------ | ----------------------------- | ----------------------------- | ----------------------------- |
-| **.NET Runtime**         | Yes                           | No                            | No                            |
-| **.NET Desktop Runtime** | Yes                           | Yes                           | No                            |
-| **ASP.NET Core Runtime** | No                            | No                            | Yes                           |
-| **.NET SDK**             | Yes                           | Yes                           | Yes                           |
+| Installer                | Includes .NET Runtime | Includes .NET Desktop Runtime | Includes ASP.NET Core Runtime |
+|--------------------------|-----------------------|-------------------------------|-------------------------------|
+| **.NET Runtime**         | Yes                   | No                            | No                            |
+| **.NET Desktop Runtime** | Yes                   | Yes                           | No                            |
+| **ASP.NET Core Runtime** | No                    | No                            | Yes                           |
+| **.NET SDK**             | Yes                   | Yes                           | Yes                           |
 
 To ensure that you can run all .NET apps on Windows, install both the ASP.NET Core Runtime and the .NET Desktop Runtime. The ASP.NET Core Runtime runs web-based apps, and the .NET Desktop Runtime runs desktop apps, such as a Windows Presentation Foundation (WPF) or Windows Forms app.
 
@@ -59,7 +59,7 @@ If you're unsure which method you should choose after reviewing the lists in the
 
   Install the **C# Dev Kit** extension for Visual Studio Code to develop .NET apps. The extension can use an SDK that's already installed or install one for you.
 
-### Users and Developers
+### Users and developers
 
 - [.NET Installer](#net-installer)
 
@@ -78,7 +78,7 @@ If you're unsure which method you should choose after reviewing the lists in the
 The following table is a list of currently supported .NET releases and the versions of Windows they're supported on. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of [Windows reaches end-of-life](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).
 
 > [!TIP]
-> As a reminder, this table applies to modern .NET (as opposed to .NET Framework). To install .NET Framework, see the [.NET Framework Installation guide](../../framework/install/index.md).
+> As a reminder, this table applies to modern .NET (as opposed to .NET Framework). To install .NET Framework, see the [.NET Framework installation guide](../../framework/install/index.md).
 
 Windows 10 versions end-of-service dates are segmented by edition. Only **Home**, **Pro**, **Pro Education**, and **Pro for Workstations** editions are considered in the following table. Check the [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet) for specific details.
 
@@ -146,22 +146,22 @@ The Visual Studio documentation provides instructions on how to:
 
 :::image type="content" source="media/windows/vs-workloads.png" alt-text="A screenshot that shows Visual Studio Installer with the .NET Desktop workload highlighted with a red box.":::
 
-### .NET Versions and Visual Studio
+### .NET versions and Visual Studio
 
 If you're using Visual Studio to develop .NET apps, the following table describes the minimum required version of Visual Studio based on the target .NET SDK version.
 
-| .NET SDK version      | Minimum Visual Studio version    |
-| --------------------- | ---------------------------------|
-| 10                    | Visual Studio 2026               |
-| 9                     | Visual Studio 2022 version 17.12 |
-| 8                     | Visual Studio 2022 version 17.8  |
-| 7                     | Visual Studio 2022 version 17.4  |
-| 6                     | Visual Studio 2022 version 17.0  |
-| 5                     | Visual Studio 2019 version 16.8  |
-| 3.1                   | Visual Studio 2019 version 16.4  |
-| 3.0                   | Visual Studio 2019 version 16.3  |
-| 2.2                   | Visual Studio 2017 version 15.9  |
-| 2.1                   | Visual Studio 2017 version 15.7  |
+| .NET SDK version      | Visual Studio version                       |
+| --------------------- | ------------------------------------------- |
+| 10                    | Visual Studio 2026 version 18.0 or higher.  |
+| 9                     | Visual Studio 2022 version 17.12 or higher. |
+| 8                     | Visual Studio 2022 version 17.8 or higher.  |
+| 7                     | Visual Studio 2022 version 17.4 or higher.  |
+| 6                     | Visual Studio 2022 version 17.0 or higher.  |
+| 5                     | Visual Studio 2019 version 16.8 or higher.  |
+| 3.1                   | Visual Studio 2019 version 16.4 or higher.  |
+| 3.0                   | Visual Studio 2019 version 16.3 or higher.  |
+| 2.2                   | Visual Studio 2017 version 15.9 or higher.  |
+| 2.1                   | Visual Studio 2017 version 15.7 or higher.  |
 
 If you already have Visual Studio installed, you can check your version with the following steps.
 
@@ -188,7 +188,7 @@ Additionally, the [C# Dev Kit](https://marketplace.visualstudio.com/items?itemNa
 
 For instructions on installing .NET through Visual Studio Code, see [Getting Started with C# in VS Code](https://code.visualstudio.com/docs/csharp/get-started).
 
-## .NET Installer
+## .NET installer
 
 The [download page](https://dotnet.microsoft.com/download/dotnet) for .NET provides Windows Installer executables.
 

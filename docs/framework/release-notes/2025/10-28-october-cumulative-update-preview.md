@@ -20,7 +20,7 @@ There are no new security improvements in this release. This update is cumulativ
 
 #### .NET Runtime
 
-Addresses an issue to update operating systeam calls for compliance with current standards. (*Applies to: .NET Framework 4.8.1*)
+Addresses an issue to update operating system calls for compliance with current standards. (*Applies to: .NET Framework 4.8.1*)
 
 ## Known issues in this release
 

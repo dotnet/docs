@@ -44,16 +44,17 @@ The `dotnet-trace` tool:
 * Enables the collection of .NET Core traces of a running process without a native profiler.
 * Is built on [`EventPipe`](./eventpipe.md) of the .NET Core runtime.
 * Supports two different ways of collecting traces:
-  - The [`collect` verb](#dotnet-trace-collect) offers consistent functionality on any OS
-  - The [`collect-linux` verb](#dotnet-trace-collect-linux) uses Linux-specific OS capabilities to provide additional features
 
-|                                          | collect  | collect-linux                     |
-|------------------------------------------|----------|-----------------------------------|
-| Supported OS                             | Any      | Linux only, kernel version >= 6.4 |
-| Requires Admin/Root Privilege            | No       | Yes                               |
-| Trace all processes simultaneously       | No       | Supported                         |
-| Capture native library and kernel events | No       | Supported                         |
-| Event callstacks include native frames   | No       | Yes                               |
+  - The [`collect` verb](#dotnet-trace-collect) offers consistent functionality on any OS.
+  - The [`collect-linux` verb](#dotnet-trace-collect-linux) uses Linux-specific OS capabilities to provide additional features.
+
+  | Characteristic                           | `collect` | `collect-linux`                  |
+  |------------------------------------------|----------|-----------------------------------|
+  | Supported OS                             | Any      | Linux only, kernel version >= 6.4 |
+  | Requires Admin/Root Privilege            | No       | Yes                               |
+  | Trace all processes simultaneously       | No       | Supported                         |
+  | Capture native library and kernel events | No       | Supported                         |
+  | Event callstacks include native frames   | No       | Yes                               |
 
 ## Options
 
@@ -130,7 +131,7 @@ dotnet-trace collect
 
 - **`--clrevents <clrevents>`**
 
-  A list of CLR runtime provider keywords to enable separated by `+` signs. This is a simple mapping that lets you specify event keywords via string aliases rather than their hex values. For example, `dotnet-trace collect --providers Microsoft-Windows-DotNETRuntime:3:4` requests the same set of events as `dotnet-trace collect --clrevents gc+gchandle --clreventlevel informational`. If the CLR runtime provider `Microsoft-Windows-DotNETRuntime` is also enabled through `--providers` or `--profile`, this option will be ignored. The table below shows the list of available keywords:
+  A list of CLR runtime provider keywords to enable separated by `+` signs. This is a simple mapping that lets you specify event keywords via string aliases rather than their hex values. For example, `dotnet-trace collect --providers Microsoft-Windows-DotNETRuntime:3:4` requests the same set of events as `dotnet-trace collect --clrevents gc+gchandle --clreventlevel informational`. If the CLR runtime provider `Microsoft-Windows-DotNETRuntime` is also enabled through `--providers` or `--profile`, this option is ignored. The following table shows the list of available keywords:
 
   | Keyword String Alias | Keyword Hex Value |
   | ------------ | ------------------- |
@@ -174,7 +175,7 @@ dotnet-trace collect
   | `waithandle` | `0x40000000000` |
   | `allocationsampling` | `0x80000000000` |
 
-  You can read about the CLR provider more in detail on the [.NET runtime provider reference documentation](../../fundamentals/diagnostics/runtime-events.md).
+  You can read about the CLR provider in more detail on the [.NET runtime provider reference documentation](../../fundamentals/diagnostics/runtime-events.md).
 
 - **`--dsrouter {ios|ios-sim|android|android-emu}**
 
@@ -222,7 +223,7 @@ dotnet-trace collect
 
 - **`--profile <list-of-comma-separated-profile-names>`**
 
-  A profile is a pre-defined set of provider configurations for common tracing scenarios. Multiple profiles can be specified at a time, delimited by commas. Providers configured through `--providers` will override the profile's configuration. Similarly, if any profile configures the CLR runtime provider, it will override any configurations prescribed through `--clrevents`.
+  A profile is a predefined set of provider configurations for common tracing scenarios. Multiple profiles can be specified at a time, delimited by commas. Providers configured through `--providers` override the profile's configuration. Similarly, if any profile configures the CLR runtime provider, it will override any configurations prescribed through `--clrevents`.
 
   When `--profile`, `--providers`, and `--clrevents` are all omitted, `dotnet-trace collect` enables profiles `dotnet-common` and `dotnet-sampled-thread-time` by default.
 
@@ -237,17 +238,16 @@ dotnet-trace collect
   |`database`|Captures ADO.NET and Entity Framework database commands.|
 
   > [!NOTE]
-  > In past versions of the dotnet-trace tool, the collect verb supported a profile called `cpu-sampling`. This profile was removed because the name was misleading. It sampled all threads regardless of their CPU usage. You can achieve a similar result now using `--profile dotnet-sampled-thread-time,dotnet-common`. If you need to match the former `cpu-sampling` behavior exactly use `--profile dotnet-sampled-thread-time --providers "Microsoft-Windows-DotNETRuntime:0x14C14FCCBD:4"`.
+  > In past versions of the dotnet-trace tool, the collect verb supported a profile called `cpu-sampling`. This profile was removed because the name was misleading. It sampled all threads regardless of their CPU usage. You can achieve a similar result now using `--profile dotnet-sampled-thread-time,dotnet-common`. If you need to match the former `cpu-sampling` behavior exactly, use `--profile dotnet-sampled-thread-time --providers "Microsoft-Windows-DotNETRuntime:0x14C14FCCBD:4"`.
 
 - **`--providers <list-of-comma-separated-providers>`**
 
   A comma-separated list of `EventPipe` providers to be enabled. These providers supplement any providers implied by `--profile <list-of-comma-separated-profile-names>`. If there's any inconsistency for a particular provider, this configuration takes precedence over the implicit configuration from `--profile` and `--clrevents`.
 
-  This list of providers is in the form:
+  This list of providers is in the form `Provider[,Provider]`:
 
-  - `Provider[,Provider]`
-  - `Provider` is in the form: `KnownProviderName[:Flags[:Level[:KeyValueArgs]]]`.
-  - `KeyValueArgs` is in the form: `[key1=value1][;key2=value2]`.
+  - `Provider` is in the form: `KnownProviderName[:Flags[:Level[:KeyValueArgs]]]`
+  - `KeyValueArgs` is in the form: `[key1=value1][;key2=value2]`
 
   To learn more about some of the well-known providers in .NET, refer to [Well-known Event Providers](./well-known-event-providers.md).
 
@@ -291,14 +291,14 @@ dotnet-trace collect
 ## dotnet-trace collect-linux
 
 > [!NOTE]
-> The collect-linux verb is a new preview feature and relies on an updated version of the .nettrace file format. The latest PerfView release supports these trace files but other ways of using the trace file such as [`convert`](#dotnet-trace-convert) and [`report`](#dotnet-trace-report) may not work yet.
+> The `collect-linux` verb is a new preview feature and relies on an updated version of the .nettrace file format. The latest PerfView release supports these trace files, but other ways of using the trace file, such as [`convert`](#dotnet-trace-convert) and [`report`](#dotnet-trace-report), might not work yet.
 
 Collects diagnostic traces using perf_events, a Linux OS technology. `collect-linux` enables the following additional features over [`collect`](#dotnet-trace-collect).
 
 |                                          | collect  | collect-linux                     |
 |------------------------------------------|----------|-----------------------------------|
 | Supported OS                             | Any      | Linux only, kernel version >= 6.4 |
-| Requires Admin/Root Privilege            | No       | Yes                               |
+| Requires Admin/Root privilege            | No       | Yes                               |
 | Trace all processes simultaneously       | No       | Supported                         |
 | Capture native library and kernel events | No       | Supported                         |
 | Event callstacks include native frames   | No       | Yes                               |
@@ -343,7 +343,7 @@ When `--providers`, `--profile`, `--clrevents`, and `--perf-events` aren’t spe
 - `dotnet-common` — lightweight .NET runtime diagnostics.
 - `cpu-sampling` — kernel CPU sampling.
 
-By default all processes on the machine will be traced. Use `-n, --name <name>` or `-p|--process-id <PID>` to trace only one process.
+By default, all processes on the machine are traced. To trace only one process, use `-n, --name <name>` or `-p|--process-id <PID>`.
 
 ### Options
 
@@ -353,13 +353,12 @@ By default all processes on the machine will be traced. Use `-n, --name <name>` 
 
   A comma-separated list of `EventPipe` providers to be enabled. These providers supplement any providers implied by `--profile <list-of-comma-separated-profile-names>`. If there's any inconsistency for a particular provider, this configuration takes precedence over the implicit configuration from `--profile` and `--clrevents`.
 
-  This list of providers is in the form:
+  This list of providers is in the form `Provider[,Provider]`:
 
-  - `Provider[,Provider]`
-  - `Provider` is in the form: `KnownProviderName[:Flags[:Level[:KeyValueArgs]]]`.
-  - `KeyValueArgs` is in the form: `[key1=value1][;key2=value2]`.
+  - `Provider` is in the form: `KnownProviderName[:Flags[:Level[:KeyValueArgs]]]`
+  - `KeyValueArgs` is in the form: `[key1=value1][;key2=value2]`
 
-  To learn more about some of the well-known providers in .NET, refer to [Well-known Event Providers](./well-known-event-providers.md).
+  To learn more about some of the well-known providers in .NET, see [Well-known Event Providers](./well-known-event-providers.md).
 
 - **`--clreventlevel <clreventlevel>`**
 
@@ -377,7 +376,7 @@ By default all processes on the machine will be traced. Use `-n, --name <name>` 
 
 - **`--clrevents <clrevents>`**
 
-    A list of CLR runtime provider keywords to enable separated by `+` signs. This is a simple mapping that lets you specify event keywords via string aliases rather than their hex values. For example, `dotnet-trace collect-linux --providers Microsoft-Windows-DotNETRuntime:3:4` requests the same set of events as `dotnet-trace collect-linux --clrevents gc+gchandle --clreventlevel informational`. If the CLR runtime provider `Microsoft-Windows-DotNETRuntime` is also enabled through `--providers` or `--profile`, this option will be ignored. The table below shows the list of available keywords:
+    A list of CLR runtime provider keywords to enable separated by `+` signs. This is a simple mapping that lets you specify event keywords via string aliases rather than their hex values. For example, `dotnet-trace collect-linux --providers Microsoft-Windows-DotNETRuntime:3:4` requests the same set of events as `dotnet-trace collect-linux --clrevents gc+gchandle --clreventlevel informational`. If the CLR runtime provider `Microsoft-Windows-DotNETRuntime` is also enabled through `--providers` or `--profile`, this option is ignored. The following table shows the list of available keywords:
 
   | Keyword String Alias | Keyword Hex Value |
   | ------------ | ------------------- |
@@ -421,7 +420,7 @@ By default all processes on the machine will be traced. Use `-n, --name <name>` 
   | `waithandle` | `0x40000000000` |
   | `allocationsampling` | `0x80000000000` |
 
-  You can read about the CLR provider more in detail on the [.NET runtime provider reference documentation](../../fundamentals/diagnostics/runtime-events.md).
+  You can read about the CLR provider in more detail on the [.NET runtime provider reference documentation](../../fundamentals/diagnostics/runtime-events.md).
 
 - **`--perf-events <list-of-perf-events>`**
 
@@ -431,7 +430,7 @@ By default all processes on the machine will be traced. Use `-n, --name <name>` 
 
 - **`--profile <list-of-comma-separated-profile-names>`**
 
-  A profile is a pre-defined set of provider configurations for common tracing scenarios. Multiple profiles can be specified at a time, delimited by commas. Providers configured through `--providers` will override the profile's configuration. Similarly, if any profile configures the CLR runtime provider, it will override any configurations prescribed through `--clrevents`.
+  A profile is a predefined set of provider configurations for common tracing scenarios. Multiple profiles can be specified at a time, delimited by commas. Providers configured through `--providers` override the profile's configuration. Similarly, if any profile configures the CLR runtime provider, it will override any configurations prescribed through `--clrevents`.
 
   When `--profile`, `--providers`, `--clrevents`, and `--perf-events` are all omitted, `dotnet-trace collect-linux` enables profiles `dotnet-common` and `cpu-sampling` by default.
 
@@ -470,7 +469,7 @@ See [Default collection behavior](#default-collection-behavior)
 
 > [!NOTE]
 
-> - To collect a trace using `dotnet-trace collect-linux`, it needs to be run with root permissions (`CAP_PERFMON`/`CAP_SYS_ADMIN`). Otherwise, the tool will fail to collect events.
+> To collect a trace using `dotnet-trace collect-linux`, it needs to be run with root permissions (`CAP_PERFMON`/`CAP_SYS_ADMIN`). Otherwise, the tool will fail to collect events.
 
 ## dotnet-trace convert
 
@@ -612,7 +611,7 @@ To collect traces using `dotnet-trace collect`:
   Trace completed.
   ```
 
-- Stop collection by pressing the `<Enter>` key. `dotnet-trace` will finish logging events to the `.nettrace` file.
+- Stop collection by pressing the <kbd>Enter</kbd> key. `dotnet-trace` will finish logging events to the `.nettrace` file.
 
 ## Launch a child application and collect a trace from its startup using dotnet-trace
 

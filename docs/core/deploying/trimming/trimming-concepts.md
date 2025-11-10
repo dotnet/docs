@@ -305,28 +305,6 @@ void ProcessTypeByName(string typeName)
 
 ## Common patterns and solutions
 
-### Pattern: Serialization
-
-```csharp
-// Problem: Serializer needs to access properties dynamically
-void SerializeObject(object obj)
-{
-    foreach (var prop in obj.GetType().GetProperties())
-    {
-        // Serialize...
-    }
-}
-
-// Solution: Use generic parameter with annotation
-void SerializeObject<[DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicProperties)] T>(T obj)
-{
-    foreach (var prop in typeof(T).GetProperties())
-    {
-        // Serialize...
-    }
-}
-```
-
 ### Pattern: Factory methods
 
 ```csharp
@@ -341,29 +319,6 @@ object CreateInstance(
     [DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicParameterlessConstructor)] Type type)
 {
     return Activator.CreateInstance(type);
-}
-```
-
-### Pattern: Dependency injection containers
-
-```csharp
-// Problem: DI containers resolve types dynamically
-class ServiceContainer
-{
-    public object Resolve(Type serviceType)
-    {
-        // Complex reflection to instantiate and inject dependencies
-    }
-}
-
-// Solution: Often too complex - mark as incompatible
-class ServiceContainer
-{
-    [RequiresUnreferencedCode("Service resolution uses reflection and is not trim-compatible. Register services explicitly or use source-generated DI.")]
-    public object Resolve(Type serviceType)
-    {
-        // Complex reflection to instantiate and inject dependencies
-    }
 }
 ```
 

@@ -5,27 +5,41 @@ f1_keywords:
  - "CS1983"
  - "CS1985"
  - "CS1986"
+ - "CS1989"
+ - "CS1991"
+ - "CS1992"
  - "CS1994"
+ - "CS1995"
  - "CS1996"
  - "CS1997"
+ - "CS1998"
  - "CS4008"
  - "CS4009"
  - "CS4014"
  - "CS4032"
  - "CS4033"
+ - "CS8892"
+ - "CS9123"
  - "CS9330"
 helpviewer_keywords:
  - "CS1983"
  - "CS1985"
  - "CS1986"
+ - "CS1989"
+ - "CS1991"
+ - "CS1992"
  - "CS1994"
+ - "CS1995"
  - "CS1996"
  - "CS1997"
+ - "CS1998"
  - "CS4008"
  - "CS4009"
  - "CS4014"
  - "CS4032"
  - "CS4033"
+ - "CS8892"
+ - "CS9123"
  - "CS9330"
 ms.date: 11/10/2025
 ai-usage: ai-assisted
@@ -40,14 +54,21 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS1983**](#invalid-return-type): *The return type of an async method must be void, Task, Task\<T\>, a task-like type (A task-like type is one that adheres to the pattern, [described here](~/_csharpstandard/standard/classes.md#15151-general), required by the C# specification), IAsyncEnumerable\<T\>, or IAsyncEnumerator\<T\>*
 - [**CS1985**](#await-in-catch): *Cannot await in a catch clause*
 - [**CS1986**](#missing-getawaiter): *'await' requires that the type have a suitable 'GetAwaiter' method*
+- [**CS1989**](#async-expression-tree): *Async methods cannot be used in expression trees*
+- [**CS1991**](#winrt-event): *Cannot have an add or remove accessor in an interface or a WinRT event*
+- [**CS1992**](#await-without-async): *The 'await' operator can only be used when contained within a method or lambda expression marked with the 'async' modifier*
 - [**CS1994**](#async-requires-body): *The 'async' modifier can only be used in methods that have a body.*
+- [**CS1995**](#await-in-query): *The 'await' operator may only be used in a query expression within the first collection expression of the initial 'from' clause or within the collection expression of a 'join' clause*
 - [**CS1996**](#await-in-lock): *Cannot await in the body of a lock statement*
 - [**CS1997**](#return-value-from-task): *Since `method` is an async method that returns `Task`, a return keyword must not be followed by an object expression. Did you intend to return `Task<T>`?*
+- [**CS1998**](#async-lacks-awaits): *This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.*
 - [**CS4008**](#await-void): *Cannot await 'void'*
 - [**CS4009**](#async-entry-point): *'Type.Method': an entry point cannot be marked with the `async` modifier.*
 - [**CS4014**](#call-not-awaited): *Because this call is not awaited, execution of the current method continues before the call is completed. Consider applying the `await` operator to the result of the call.*
 - [**CS4032**](#await-requires-async-taskt): *The 'await' operator can only be used within an async method. Consider marking this method with the 'async' modifier and changing its return type to 'Task\<T\>'.*
 - [**CS4033**](#await-requires-async-task): *The 'await' operator can only be used within an async method. Consider marking this method with the 'async' modifier and changing its return type to 'Task'.*
+- [**CS8892**](#sync-and-async-entry-points): *Method 'method' will not be used as an entry point because a synchronous entry point 'method' was found.*
+- [**CS9123**](#address-of-in-async): *Using the address-of operator on certain expressions inside an async method may not work as expected, as the target may be moved between the point where the address-of is performed and the point where it is referenced.*
 - [**CS9330**](#use-keywords): *'`MethodImplAttribute.Async`' cannot be manually applied to methods. Mark the method '`async`'.*
 
 ## Invalid return type

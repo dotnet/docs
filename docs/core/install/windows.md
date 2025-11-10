@@ -4,8 +4,9 @@ description: "Learn about which versions of .NET SDK and .NET Runtime are suppor
 author: adegeo
 ms.author: adegeo
 ms.topic: install-set-up-deploy #Don't change
-ms.date: 11/11/2024
+ms.date: 11/08/2025
 no-loc: ["Program Files", "dotnet"]
+ms.custom: linux-related-content
 ai-usage: ai-assisted
 #customer intent: As a developer or user, I want to decide the best way to install .NET on Windows.
 ---
@@ -82,14 +83,14 @@ The following table is a list of currently supported .NET releases and the versi
 Windows 10 versions end-of-service dates are segmented by edition. Only **Home**, **Pro**, **Pro Education**, and **Pro for Workstations** editions are considered in the following table. Check the [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet) for specific details.
 
 | Operating System                      | .NET 10 (Architectures) | .NET 9 (Architectures) | .NET 8 (Architectures) |
-|---------------------------------------|--------------------------|------------------------|------------------------|
-| Windows 11<br>(25H2, 24H2, 23H2, 22H2 Ent/Edu) | ✔️ x64, x86, Arm64      | ✔️ x64, x86, Arm64    | ✔️ x64, x86, Arm64    |
-| Windows 10 (22H2+)                    | ✔️ x64, x86, Arm64      | ✔️ x64, x86, Arm64    | ✔️ x64, x86, Arm64    |
-| Windows Server 2025<br>Windows Server 2022<br>Windows Server 2019<br>Windows Server, Version 1903 or later<br>Windows Server 2016<br>Windows Server 2012 R2<br>Windows Server 2012 | ✔️ x64, x86             | ✔️ x64, x86           | ✔️ x64, x86           |
-| Windows Server Core 2012 (and R2)     | ✔️ x64, x86             | ✔️ x64, x86           | ✔️ x64, x86           |
-| Nano Server (2022, 2019)              | ✔️ x64                  | ✔️ x64                | ✔️ x64                |
-| Windows 8.1                           | ❌                      | ❌                    | ❌                    |
-| Windows 7 SP1 [ESU][esu]              | ❌                      | ❌                    | ❌                    |
+|---------------------------------------|-------------------------|------------------------|------------------------|
+| Windows 11 (24H2, 23H2, 22H2 Ent/Edu) | ✔️ x64, Arm64          | ✔️ x64, Arm64         | ✔️ x64, Arm64    |
+| Windows 10 (22H2)                     | ✔️ x64, Arm64          | ✔️ x64, Arm64         | ✔️ x64, Arm64    |
+| Windows Server 2025<br>Windows Server 2022<br>Windows Server 2019<br>Windows Server, Version 1903 or later<br>Windows Server 2016<br>Windows Server 2012 R2<br>Windows Server 2012 | ✔️ x64, x86 | ✔️ x64, x86 | ✔️ x64, x86 |
+| Windows Server Core 2012 (and R2)     | ✔️ x64, x86            | ✔️ x64, x86           | ✔️ x64, x86           |
+| Nano Server (2025, 2022, 2019)        | ✔️ x64                 | ✔️ x64                | ✔️ x64                |
+| Windows 8.1                           | ❌                     | ❌                    | ❌                    |
+| Windows 7 SP1 [ESU][esu]              | ❌                     | ❌                    | ❌                    |
 
 > [!TIP]
 > A `+` symbol represents the minimum version.
@@ -134,7 +135,7 @@ Environment variables that add .NET to system path, such as the `PATH` variable,
 Visual Studio installs its own copy of .NET separate from other copies of .NET. Different versions of Visual Studio support different versions of .NET. The latest version of Visual Studio always supports the latest version of .NET.
 
 > [!div class="button"]
-> [Download Visual Studio Installer](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2022)
+> [Download Visual Studio Installer](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2026)
 
 Visual Studio Installer installs and configures Visual Studio. Some Visual Studio workloads include .NET, such as **ASP.NET and web development** and **.NET Multi-platform App UI development**. Specific versions of .NET can be installed through the **Individual Components** tab.
 
@@ -195,7 +196,7 @@ The [download page](https://dotnet.microsoft.com/download/dotnet) for .NET provi
 > If you're installing .NET system-wide, install with administrative privileges.
 
 1. Open a web browser and navigate to <https://dotnet.microsoft.com/download/dotnet>.
-1. Select the version of .NET you want to download, such as 9.0.
+1. Select the version of .NET you want to download, such as 10.0.
 1. Find the SDK or Runtime box that contains the links for downloading .NET.
 1. Under the **Installers** column, find the **Windows** row and select the link for your CPU architecture. If you're unsure, select **x64** as it's the most common.
 
@@ -255,11 +256,12 @@ Check if the installations key files or components are damaged and restore them.
 
 The installer executables always install new content before removing the previous installation. Applications that are running might be interrupted or crash when older runtimes are removed. To minimize the impact of updating .NET, you can specify when a previous .NET installation should be removed using a registry key.
 
-| .NET version | Registry key                      | Name                  | Type   | Value                               |
-|--------------|:----------------------------------|:----------------------|:-------|:------------------------------------|
-| All          | HKLM\SOFTWARE\Microsoft\\.NET     | RemovePreviousVersion | REG_SZ | `always`, `never`, or `nextSession` |
-| .NET 9       | HKLM\SOFTWARE\Microsoft\\.NET\9.0 | RemovePreviousVersion | REG_SZ | `always`, `never`, or `nextSession` |
-| .NET 8       | HKLM\SOFTWARE\Microsoft\\.NET\8.0 | RemovePreviousVersion | REG_SZ | `always`, `never`, or `nextSession` |
+| .NET version | Registry key | Name | Type | Value |
+| -------------- | :--------- | :---------- | :---------- | :---------- |
+| All | HKLM\SOFTWARE\Microsoft\\.NET | RemovePreviousVersion | REG_SZ | `always`, `never`, or `nextSession` |
+| .NET 10 | HKLM\SOFTWARE\Microsoft\\.NET\10.0 | RemovePreviousVersion | REG_SZ | `always`, `never`, or `nextSession` |
+| .NET 9 | HKLM\SOFTWARE\Microsoft\\.NET\9.0 | RemovePreviousVersion | REG_SZ | `always`, `never`, or `nextSession` |
+| .NET 8 | HKLM\SOFTWARE\Microsoft\\.NET\8.0 | RemovePreviousVersion | REG_SZ | `always`, `never`, or `nextSession` |
 
 - `never` retains previous installations and requires manual intervention to remove previous .NET installations.
 - `always` removes previous installations after the new version is installed. This is the default behavior in .NET.
@@ -269,7 +271,7 @@ The installer executables always install new content before removing the previou
 When the removal is deferred, the installer writes a command to the [RunOnce](/windows/win32/setupapi/run-and-runonce-registry-keys) registry key to uninstall the previous version. The command only executes if a user in the Administrators group logs on to the machine.
 
 > [!NOTE]
-> This feature is only available in .NET 8 (8.0.11), 9, and later versions of .NET. It only applies to the standalone installer executables and impacts distributions like WinGet that use them.
+> This feature is only available starting with .NET 8 (8.0.11). It only applies to the standalone installer executables and impacts distributions like WinGet that use them.
 
 ## Install with Windows Package Manager (WinGet)
 
@@ -280,6 +282,10 @@ You can install and manage .NET through the Windows Package Manager service, usi
 
 The .NET WinGet packages are:
 
+- `Microsoft.DotNet.Runtime.10`&mdash;.NET Runtime 10.0
+- `Microsoft.DotNet.AspNetCore.10`&mdash;ASP.NET Core Runtime 10.0
+- `Microsoft.DotNet.DesktopRuntime.10`&mdash;.NET Desktop Runtime 10.0
+- `Microsoft.DotNet.SDK.10`&mdash;.NET SDK 10.0
 - `Microsoft.DotNet.Runtime.9`&mdash;.NET Runtime 9.0
 - `Microsoft.DotNet.AspNetCore.9`&mdash;ASP.NET Core Runtime 9.0
 - `Microsoft.DotNet.DesktopRuntime.9`&mdash;.NET Desktop Runtime 9.0
@@ -298,7 +304,7 @@ If you install the SDK, you don't need to install the corresponding runtime.
 01. Run the `winget install` command and pass the name of the SDK package:
 
     ```cmd
-    winget install Microsoft.DotNet.SDK.9
+    winget install Microsoft.DotNet.SDK.10
     ```
 
 To learn how to use the .NET CLI, see [.NET CLI overview](../tools/index.md).
@@ -312,8 +318,8 @@ There are different runtimes you can install. Refer to the [Choose the correct r
 01. Run the `winget install` command and pass the name of the SDK package:
 
     ```cmd
-    winget install Microsoft.DotNet.DesktopRuntime.9
-    winget install Microsoft.DotNet.AspNetCore.9
+    winget install Microsoft.DotNet.DesktopRuntime.10
+    winget install Microsoft.DotNet.AspNetCore.10
     ```
 
 To learn how to use the .NET CLI, see [.NET CLI overview](../tools/index.md).
@@ -329,14 +335,15 @@ winget search Microsoft.DotNet.SDK
 The search results are printed in a table with each package identifier.
 
 ```output
-Name                           Id                           Version                    Source
-----------------------------------------------------------------------------------------------
-Microsoft .NET SDK 9.0         Microsoft.DotNet.SDK.9       9.0.100                    winget
-Microsoft .NET SDK 8.0         Microsoft.DotNet.SDK.8       8.0.300                    winget
-Microsoft .NET SDK 7.0         Microsoft.DotNet.SDK.7       7.0.409                    winget
-Microsoft .NET SDK 6.0         Microsoft.DotNet.SDK.6       6.0.422                    winget
-Microsoft .NET SDK 5.0         Microsoft.DotNet.SDK.5       5.0.408                    winget
-Microsoft .NET SDK 3.1         Microsoft.DotNet.SDK.3_1     3.1.426                    winget
+Name                            Id                           Version                 Source
+--------------------------------------------------------------------------------------------
+Microsoft .NET SDK 3.1          Microsoft.DotNet.SDK.3_1     3.1.426                 winget
+Microsoft .NET SDK 5.0          Microsoft.DotNet.SDK.5       5.0.408                 winget
+Microsoft .NET SDK 6.0          Microsoft.DotNet.SDK.6       6.0.428                 winget
+Microsoft .NET SDK 7.0          Microsoft.DotNet.SDK.7       7.0.410                 winget
+Microsoft .NET SDK 8.0          Microsoft.DotNet.SDK.8       8.0.415                 winget
+Microsoft .NET SDK 9.0          Microsoft.DotNet.SDK.9       9.0.306                 winget
+Microsoft .NET SDK 10.0         Microsoft.DotNet.SDK.10      10.0.100                winget
 ```
 
 ### Install preview versions
@@ -351,7 +358,7 @@ winget install Microsoft.DotNet.DesktopRuntime.Preview
 
 Installing .NET through the `dotnet-install` PowerShell script is recommended for continuous integration and nonadmin installs. If you're installing .NET for normal use on your system, use either the [.NET Installer](#net-installer) or [Windows Package Manager](#install-with-windows-package-manager-winget) installation methods.
 
-The script defaults to installing the latest [long term support (LTS)](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) version, which is .NET 8. You can choose a specific release by specifying the `-Channel` switch. Include the `-Runtime` switch to install a runtime. Otherwise, the script installs the SDK. The script is available at <https://dot.net/v1/dotnet-install.ps1> and the source code is hosted on [GitHub](https://github.com/dotnet/install-scripts).
+The script defaults to installing the latest [long term support (LTS)](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) version, which is .NET 10. You can choose a specific release by specifying the `-Channel` switch. Include the `-Runtime` switch to install a runtime. Otherwise, the script installs the SDK. The script is available at <https://dot.net/v1/dotnet-install.ps1> and the source code is hosted on [GitHub](https://github.com/dotnet/install-scripts).
 
 > [!div class="button"]
 > [Download the script](https://dot.net/v1/dotnet-install.ps1)
@@ -394,7 +401,57 @@ To learn how to use the .NET CLI, see [.NET CLI overview](../tools/index.md).
 
 [!INCLUDE [verify-download-intro](includes/verify-download-intro.md)]
 
-[!INCLUDE [verify-download-windows](includes/verify-download-windows.md)]
+You can use **PowerShell** or **Command Prompt** to validate the checksum of the file you've downloaded. For example, the following command reports the checksum of the _dotnet-sdk-9.0.306-win-x64.exe_ file:
+
+```cmd
+> certutil -hashfile dotnet-sdk-9.0.306-win-x64.exe SHA512
+SHA512 hash of dotnet-sdk-9.0.306-win-x64.exe:
+f048ddf80c0aa88e713070e66a0009435ad9a5f444adbde6edf2b17f8da562d494a5c37cbabaf63ee3125fe1d2da735a397de9a38dd6ca638b8dc085adc01d4f
+CertUtil: -hashfile command completed successfully.
+```
+
+```powershell
+> (Get-FileHash .\dotnet-sdk-9.0.306-win-x64.exe -Algorithm SHA512).Hash
+f048ddf80c0aa88e713070e66a0009435ad9a5f444adbde6edf2b17f8da562d494a5c37cbabaf63ee3125fe1d2da735a397de9a38dd6ca638b8dc085adc01d4f
+```
+
+Compare the checksum with the value provided by the download site.
+
+### Use PowerShell and a checksum file to validate
+
+The .NET release notes contain a link to a checksum file you can use to validate your downloaded file. The following steps describe how to download the checksum file and validate a .NET install binary:
+
+01. The release notes page for .NET 9 on GitHub at <https://github.com/dotnet/core/tree/main/release-notes/9.0> contains a section named **Releases**. The table in that section links to the downloads and checksum files for each .NET 9 release.  The following image shows the .NET 8 release table as a reference:
+
+    :::image type="content" source="media/install-sdk/release-notes-root.png" alt-text="The github release notes version table for .NET":::
+
+01. Select the link for the version of .NET that you downloaded. The previous section used .NET SDK 9.0.306, which is in the .NET 9.0.10 release.
+
+    > [!TIP]
+    > If you're not sure which .NET release contains your checksum file, explore the links until you find it.
+
+01. In the release page, you can see the .NET Runtime and .NET SDK version, and a link to the checksum file.  The following image shows the .NET 8 release table as a reference:
+
+    :::image type="content" source="media/install-sdk/release-notes-version.png" alt-text="The download table with checksums for .NET":::
+
+01. Copy the link to the checksum file.
+
+01. Use the following script, but replace the link to download the appropriate checksum file:
+
+    ```powershell
+    Invoke-WebRequest https://builds.dotnet.microsoft.com/dotnet/checksums/9.0.10-sha.txt -OutFile 9.0.10-sha.txt
+    ```
+
+01. With both the checksum file and the .NET release file downloaded to the same directory, search the checksum file for the checksum of the .NET download:
+
+    When validation passes, you see **True** printed:
+
+    ```powershell
+    > (Get-Content .\9.0.10-sha.txt | Select-String "dotnet-sdk-9.0.306-win-x64.exe").Line -like (Get-FileHash .\dotnet-sdk-9.0.306-win-x64.exe -Algorithm SHA512).Hash + "*"
+    True
+    ```
+
+    If you see **False** printed, the file you downloaded isn't valid and shouldn't be used.
 
 ## Troubleshooting
 

@@ -3,7 +3,7 @@ title: Install .NET on RHEL and CentOS Stream
 description: Learn about which versions of .NET are supported, and how to install .NET on Red Hat Enterprise Linux and CentOS Stream.
 author: adegeo
 ms.author: adegeo
-ms.date: 12/13/2024
+ms.date: 11/07/2025
 ms.custom: linux-related-content
 ---
 
@@ -24,13 +24,13 @@ To install .NET from Red Hat on RHEL, you first need to register using the Red H
 
 The following table is a list of currently supported .NET releases on both RHEL and CentOS Stream. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the Linux distribution is no longer supported.
 
-| Distribution                                                  | .NET     |
-|---------------------------------------------------------------|----------|
-| [RHEL 9](#rhel-9)                                             | 9.0, 8.0 |
-| [RHEL 8](#rhel-8)                                             | 9.0, 8.0 |
-| [CentOS Stream 9](#centos-stream-9)                           | 9.0, 8.0 |
-| [CentOS Stream 8](#centos-stream-8)                           | 8.0,     |
-| [CentOS Linux is no longer supported](#where-is-centos-linux) |          |
+| Distribution                          | .NET           |
+|---------------------------------------|----------------|
+| [RHEL 10](#rhel-10)                   | 10.0, 9.0, 8.0 |
+| [RHEL 9](#rhel-9)                     | 10.0, 9.0, 8.0 |
+| [RHEL 8](#rhel-8)                     | 9.0, 8.0       |
+| [CentOS Stream 10](#centos-stream-10) | 10.0, 9.0, 8.0 |
+| [CentOS Stream 9](#centos-stream-9)   | 10.0, 9.0, 8.0 |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
@@ -42,11 +42,17 @@ The following table is a list of currently supported .NET releases on both RHEL 
 
 [!INCLUDE [package-manager uninstall notice](./includes/linux-uninstall-preview-info.md)]
 
+## RHEL 10
+
+.NET is included in the [AppStream repositories](https://access.redhat.com/support/policy/updates/rhel-app-streams-life-cycle) for RHEL 10.
+
+[!INCLUDE [linux-dnf-install-100](includes/linux-install-100-dnf.md)]
+
 ## RHEL 9
 
 .NET is included in the [AppStream repositories](https://access.redhat.com/support/policy/updates/rhel-app-streams-life-cycle) for RHEL 9.
 
-[!INCLUDE [linux-dnf-install-90](includes/linux-install-90-dnf.md)]
+[!INCLUDE [linux-dnf-install-100](includes/linux-install-100-dnf.md)]
 
 ## RHEL 8
 
@@ -54,22 +60,17 @@ The following table is a list of currently supported .NET releases on both RHEL 
 
 [!INCLUDE [linux-dnf-install-90](includes/linux-install-90-dnf.md)]
 
+## CentOS Stream 10
+
+.NET is included in the AppStream repositories for CentOS Stream 10.
+
+[!INCLUDE [linux-dnf-install-100](includes/linux-install-100-dnf.md)]
+
 ## CentOS Stream 9
 
 .NET is included in the AppStream repositories for CentOS Stream 9.
 
-[!INCLUDE [linux-dnf-install-90](includes/linux-install-90-dnf.md)]
-
-## CentOS Stream 8
-
-Use the Microsoft repository to install .NET:
-
-```bash
-sudo rpm -Uvh https://packages.microsoft.com/config/centos/8/packages-microsoft-prod.rpm
-sudo yum install dotnet-sdk-8.0
-```
-
-To learn how to use the .NET CLI, see [.NET CLI overview](../tools/index.md).
+[!INCLUDE [linux-dnf-install-100](includes/linux-install-100-dnf.md)]
 
 ## Where is CentOS Linux
 
@@ -77,11 +78,33 @@ To learn how to use the .NET CLI, see [.NET CLI overview](../tools/index.md).
 
 ## Dependencies
 
-[!INCLUDE [linux-rpm-install-dependencies](includes/linux-rpm-install-dependencies.md)]
+The following libraries are required for .NET to run on RHEL and CentOS Stream. Install them using the `dnf` package manager:
+
+- glibc
+- libgcc
+- ca-certificates
+- openssl-libs
+- libstdc++
+- libicu
+- tzdata
+- krb5-libs
+- zlib (required for .NET 8 only)
+
+For example, to install all dependencies:
+
+```bash
+sudo dnf install glibc libgcc ca-certificates openssl-libs libstdc++ libicu tzdata krb5-libs
+```
+
+For .NET 8, also install:
+
+```bash
+sudo dnf install zlib
+```
 
 ## How to install other versions
 
-Consult the [Red Hat documentation for .NET](https://access.redhat.com/documentation/en-us/net/5.0) on the steps required to install other releases of .NET.
+Consult the [Red Hat documentation for .NET](https://docs.redhat.com/documentation/net/) on the steps required to install other releases of .NET.
 
 ## Troubleshoot the package manager
 

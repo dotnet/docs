@@ -3,7 +3,7 @@ title: Install .NET on Linux without using a package manager
 description: Demonstrates how to install the .NET SDK and the .NET Runtime on Linux without a package manager. Use the install script or manually extract the binaries.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/07/2025
+ms.date: 11/08/2025
 ms.custom: linux-related-content, updateeachrelease
 ---
 
@@ -49,9 +49,14 @@ For generic information about the dependencies, see [Self-contained Linux apps](
 
 If your distribution wasn't previously listed, and is RPM-based, you might need the following dependencies:
 
-- krb5-libs
-- libicu
+- glibc
+- libgcc
+- ca-certificates
 - openssl-libs
+- libstdc++
+- libicu
+- tzdata
+- krb5-libs
 
 ### DEB dependencies
 
@@ -90,7 +95,7 @@ Before running this script, make sure you grant permission for this script to ru
 chmod +x ./dotnet-install.sh
 ```
 
-The script defaults to installing the latest [long term support (LTS)](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) SDK version, which is .NET 8. To install the latest release, which might not be an (LTS) version, use the `--version latest` parameter.
+The script defaults to installing the latest [long term support (LTS)](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) SDK version, which is .NET 10. To install the latest release, which might not be an (LTS) version, use the `--version latest` parameter.
 
 ```bash
 ./dotnet-install.sh --version latest
@@ -141,7 +146,7 @@ The following commands use Bash to set the environment variable `DOTNET_ROOT` to
 > If you run these commands, remember to change the `DOTNET_FILE` value to the name of the .NET binary you downloaded.
 
 ```bash
-DOTNET_FILE=dotnet-sdk-9.0.100-linux-x64.tar.gz
+DOTNET_FILE=dotnet-sdk-9.0.306-linux-x64.tar.gz
 export DOTNET_ROOT=$(pwd)/.dotnet
 
 mkdir -p "$DOTNET_ROOT" && tar zxf "$DOTNET_FILE" -C "$DOTNET_ROOT"
@@ -163,11 +168,11 @@ To learn how to use the .NET CLI, see [.NET CLI overview](../tools/index.md).
 
 [!INCLUDE [verify-download-intro](includes/verify-download-intro.md)]
 
-Use the `sha512sum` command to print the checksum of the file you've downloaded. For example, the following command reports the checksum of the _dotnet-sdk-8.0.100-linux-x64.tar.gz_ file:
+Use the `sha512sum` command to print the checksum of the file you've downloaded. For example, the following command reports the checksum of the _dotnet-sdk-9.0.306-linux-x64.tar.gz_ file:
 
 ```bash
-$ sha512sum dotnet-sdk-8.0.100-linux-x64.tar.gz
-13905ea20191e70baeba50b0e9bbe5f752a7c34587878ee104744f9fb453bfe439994d38969722bdae7f60ee047d75dda8636f3ab62659450e9cd4024f38b2a5  dotnet-sdk-8.0.100-linux-x64.tar.gz
+$ sha512sum dotnet-sdk-9.0.306-linux-x64.tar.gz
+bbb6bdc3c8048e7cc189759b406257839e7d4bd6b8b1ba4bcdaeea8f92340e6855231043dd73f902130ca5357af72b810bb51a4da4d1315a2927ff85f831f1d5  dotnet-sdk-9.0.306-linux-x64.tar.gz
 ```
 
 Compare the checksum with the value provided by the download site.
@@ -176,15 +181,15 @@ Compare the checksum with the value provided by the download site.
 
 The .NET release notes contain a link to a checksum file you can use to validate your downloaded file. The following steps describe how to download the checksum file and validate a .NET install binary:
 
-01. The release notes page for .NET 8 on GitHub at <https://github.com/dotnet/core/tree/main/release-notes/8.0#releases> contains a section named **Releases**. The table in that section links to the downloads and checksum files for each .NET 8 release:
+01. The release notes page for .NET 9 on GitHub at <https://github.com/dotnet/core/tree/main/release-notes/9.0#releases> contains a section named **Releases**. The table in that section links to the downloads and checksum files for each .NET 9 release. The following image shows the .NET 8 release table as a reference:
 
     :::image type="content" source="media/install-sdk/release-notes-root.png" alt-text="The github release notes version table for .NET":::
 
 01. Select the link for the version of .NET that you downloaded.
 
-    The previous section used .NET SDK 8.0.100, which is in the .NET 8.0.0 release.
+    The previous section used .NET SDK 9.0.306, which is in the .NET 9.0.10 release.
 
-01. In the release page, you can see the .NET Runtime and .NET SDK version, and a link to the checksum file:
+01. In the release page, you can see the .NET Runtime and .NET SDK version, and a link to the checksum file. The following image shows the .NET 8 release table as a reference:
 
     :::image type="content" source="media/install-sdk/release-notes-version.png" alt-text="The download table with checksums for .NET":::
 
@@ -197,7 +202,7 @@ The .NET release notes contain a link to a checksum file you can use to validate
     Replace the link in the following command with the link you copied.
 
     ```bash
-    curl -O https://builds.dotnet.microsoft.com/dotnet/checksums/8.0.0-sha.txt
+    curl -O https://builds.dotnet.microsoft.com/dotnet/checksums/9.0.10-sha.txt
     ```
 
 01. With both the checksum file and the .NET release file downloaded to the same directory, use the `sha512sum -c {file} --ignore-missing` command to validate the downloaded file.
@@ -205,17 +210,17 @@ The .NET release notes contain a link to a checksum file you can use to validate
     When validation passes, you see the file printed with the **OK** status:
 
     ```bash
-    $ sha512sum -c 8.0.0-sha.txt --ignore-missing
-    dotnet-sdk-8.0.100-linux-x64.tar.gz: OK
+    $ sha512sum -c 9.0.10-sha.txt --ignore-missing
+    dotnet-sdk-9.0.306-linux-x64.tar.gz: OK
     ```
 
     If you see the file marked as **FAILED**, the file you downloaded isn't valid and shouldn't be used.
 
     ```bash
-    $ sha512sum -c 8.0.0-sha.txt --ignore-missing
-    dotnet-sdk-8.0.100-linux-x64.tar.gz: FAILED
+    $ sha512sum -c 9.0.10-sha.txt --ignore-missing
+    dotnet-sdk-9.0.306-linux-x64.tar.gz: FAILED
     sha512sum: WARNING: 1 computed checksum did NOT match
-    sha512sum: 8.0.0-sha.txt: no file was verified
+    sha512sum: 9.0.10-sha.txt: no file was verified
     ```
 
 ## Set environment variables system-wide

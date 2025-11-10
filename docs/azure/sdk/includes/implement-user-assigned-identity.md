@@ -1,6 +1,6 @@
 ---
 ms.topic: include
-ms.date: 02/12/2025
+ms.date: 11/10/2025
 ---
 
 [!INCLUDE [implement-managed-identity-concepts](implement-managed-identity-concepts.md)]
@@ -30,9 +30,9 @@ Azure services are accessed using specialized client classes from the various Az
 
 1. Include the `Azure.Identity` and `Microsoft.Extensions.Azure` namespaces via `using` directives.
 1. Register the Azure service client using the corresponding `Add`-prefixed extension method.
-1. Pass an appropriate `TokenCredential` instance to the `UseCredential` method:
-    - Use `DefaultAzureCredential` when your app is running locally
-    - Use `ManagedIdentityCredential` when your app is running in Azure and configure either the client ID, resource ID, or object ID.
+1. Pass an appropriate `TokenCredential` instance to the `UseCredential` method. When your app is running:
+    - In Azure, use `ManagedIdentityCredential` and configure either the client ID, resource ID, or object ID.
+    - On your local development machine, an instance of `DefaultAzureCredential` is created on your behalf. Call `UseCredential` only if you want to [customize `DefaultAzureCredential`](../authentication/credential-chains.md#how-to-customize-defaultazurecredential) or use a different credential.
 
 ## [Client ID](#tab/client-id)
 
@@ -50,10 +50,6 @@ The client ID is used to identify a managed identity when configuring applicatio
 1. Configure `ManagedIdentityCredential` with the client ID:
 
     :::code language="csharp" source="../snippets/authentication/user-assigned-managed-identity/Program.cs" id="snippet_MIC_ClientId_UseCredential":::
-
-    An alternative to the `UseCredential` method is to provide the credential to the service client directly:
-
-    :::code language="csharp" source="../snippets/authentication/user-assigned-managed-identity/Program.cs" id="snippet_MIC_ClientId":::
 
 ## [Resource ID](#tab/resource-id)
 
@@ -76,10 +72,6 @@ Resource IDs can be built by convention, which makes them more convenient when w
 
     :::code language="csharp" source="../snippets/authentication/user-assigned-managed-identity/Program.cs" id="snippet_MIC_ResourceId_UseCredential":::
 
-    An alternative to the `UseCredential` method is to provide the credential to the service client directly:
-
-    :::code language="csharp" source="../snippets/authentication/user-assigned-managed-identity/Program.cs" id="snippet_MIC_ResourceId":::
-
 ## [Object ID](#tab/object-id)
 
 A principal ID is another name for an object ID.
@@ -96,10 +88,6 @@ A principal ID is another name for an object ID.
 1. Configure `ManagedIdentityCredential` with the object ID:
 
     :::code language="csharp" source="../snippets/authentication/user-assigned-managed-identity/Program.cs" id="snippet_MIC_ObjectId_UseCredential":::
-
-    An alternative to the `UseCredential` method is to provide the credential to the service client directly:
-
-    :::code language="csharp" source="../snippets/authentication/user-assigned-managed-identity/Program.cs" id="snippet_MIC_ObjectId":::
 
 ---
 

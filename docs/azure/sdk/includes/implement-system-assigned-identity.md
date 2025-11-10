@@ -1,6 +1,6 @@
 ---
 ms.topic: include
-ms.date: 02/12/2025
+ms.date: 11/10/2025
 ---
 
 [!INCLUDE [implement-managed-identity-concepts](implement-managed-identity-concepts.md)]
@@ -30,19 +30,15 @@ Azure services are accessed using specialized client classes from the various Az
 
 1. Include the `Azure.Identity` and `Microsoft.Extensions.Azure` namespaces via `using` directives.
 1. Register the Azure service client using the corresponding `Add`-prefixed extension method.
-1. Pass an appropriate `TokenCredential` instance to the `UseCredential` method:
-    - Use `DefaultAzureCredential` when your app is running locally.
-    - Use `ManagedIdentityCredential` when your app is running in Azure.
+1. Pass an appropriate `TokenCredential` instance to the `UseCredential` method. When your app is running:
+    - In Azure, use `ManagedIdentityCredential`.
+    - On your local development machine, an instance of `DefaultAzureCredential` is created on your behalf. Call `UseCredential` only if you want to [customize `DefaultAzureCredential`](../authentication/credential-chains.md#how-to-customize-defaultazurecredential) or use a different credential.
 
 :::code language="csharp" source="../snippets/authentication/system-assigned-managed-identity/Program.cs" id="snippet_MIC_UseCredential":::
-
-An alternative to the `UseCredential` method is to provide the credential to the service client directly:
-
-:::code language="csharp" source="../snippets/authentication/system-assigned-managed-identity/Program.cs" id="snippet_MIC":::
 
 ---
 
 The preceding code behaves differently depending on the environment where it's running:
 
-- On your local development workstation, `DefaultAzureCredential` looks in the environment variables for an application service principal or at locally installed developer tools, such as Visual Studio, for a set of developer credentials.
+- On your local development workstation, `DefaultAzureCredential` is used. `DefaultAzureCredential` looks in the environment variables for an application service principal or at locally installed developer tools, such as Visual Studio, for a set of developer credentials.
 - When deployed to Azure, `ManagedIdentityCredential` discovers your managed identity configurations to authenticate to other services automatically.

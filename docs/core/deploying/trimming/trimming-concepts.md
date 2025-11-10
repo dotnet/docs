@@ -117,7 +117,51 @@ The attribute creates a **requirement** that flows backward from the reflection 
 
 ### It's a contract, not a hint
 
-This is crucial to understand: `DynamicallyAccessedMembers` isn't just documentation. The trimmer enforces this contract:
+This is crucial to understand: `DynamicallyAccessedMembers` isn't just documentation. The trimmer enforces this contract.
+
+#### Analogy with generic type constraints
+
+If you're familiar with generic type constraints, `DynamicallyAccessedMembers` works similarly. Just as generic constraints flow through your code:
+
+```csharp
+void Process<T>(T value) where T : IDisposable
+{
+    value.Dispose();  // OK because constraint guarantees IDisposable
+}
+
+void CallProcess<T>(T value) where T : IDisposable
+{
+    Process(value);  // OK - constraint satisfied
+}
+
+void CallProcessBroken<T>(T value)
+{
+    Process(value);  // ERROR - T doesn't have IDisposable constraint
+}
+```
+
+`DynamicallyAccessedMembers` creates similar requirements that flow through your code:
+
+```csharp
+void UseReflection([DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicMethods)] Type type)
+{
+    type.GetMethods();  // OK because annotation guarantees methods are preserved
+}
+
+void PassType([DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicMethods)] Type type)
+{
+    UseReflection(type);  // OK - requirement satisfied
+}
+
+void PassTypeBroken(Type type)
+{
+    UseReflection(type);  // WARNING - type doesn't have required annotation
+}
+```
+
+Both create contracts that must be fulfilled, and both produce errors or warnings when the contract can't be satisfied.
+
+#### How the contract is enforced
 
 ```csharp
 [DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicMethods)]

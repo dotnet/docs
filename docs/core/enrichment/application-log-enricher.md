@@ -77,13 +77,38 @@ You can provide additional configuration via `appsettings.json`. There are two p
 
 #### 3. Register the service log enricher
 
-Register the log enricher into the dependency injection container using <xref:Microsoft.Extensions.DependencyInjection.ApplicationEnricherServiceCollectionExtensions.AddServiceLogEnricher(Microsoft.Extensions.DependencyInjection.IServiceCollection)>:
+Register the log enricher into the dependency injection container:
+
+### [.NET 10+](#tab/net10-plus)
+
+Starting with .NET 10, use the <xref:Microsoft.Extensions.DependencyInjection.ApplicationEnricherServiceCollectionExtensions.AddApplicationLogEnricher(Microsoft.Extensions.DependencyInjection.IServiceCollection)> method:
+
+```csharp
+serviceCollection.AddApplicationLogEnricher();
+```
+
+You can enable or disable individual options of the enricher:
+
+```csharp
+serviceCollection.AddApplicationLogEnricher(options =>
+{
+    options.BuildVersion = true;
+    options.DeploymentRing = true;
+});
+```
+
+### [.NET 9 and earlier](#tab/net9-earlier)
+
+For .NET 9 and earlier versions, use the <xref:Microsoft.Extensions.DependencyInjection.ApplicationEnricherServiceCollectionExtensions.AddServiceLogEnricher(Microsoft.Extensions.DependencyInjection.IServiceCollection)> method:
+
+> [!WARNING]
+> The `AddServiceLogEnricher` method is obsolete starting with .NET 10. Use `AddApplicationLogEnricher` instead.
 
 ```csharp
 serviceCollection.AddServiceLogEnricher();
 ```
 
-You can enable or disable individual options of the enricher using <xref:Microsoft.Extensions.DependencyInjection.ApplicationEnricherServiceCollectionExtensions.AddServiceLogEnricher(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Microsoft.Extensions.Diagnostics.Enrichment.ApplicationLogEnricherOptions})>:
+You can enable or disable individual options of the enricher:
 
 ```csharp
 serviceCollection.AddServiceLogEnricher(options =>
@@ -93,17 +118,29 @@ serviceCollection.AddServiceLogEnricher(options =>
 });
 ```
 
+---
+
 Alternatively, configure options using `appsettings.json`:
 
 :::code language="json" source="snippets/servicelogenricher/appsettings.json" range="8-11":::
 
-And apply the configuration using <xref:Microsoft.Extensions.DependencyInjection.ApplicationEnricherServiceCollectionExtensions.AddServiceLogEnricher(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfigurationSection)>:
+And apply the configuration:
+
+### [.NET 10+](#tab/net10-plus-config)
+
+```csharp
+var builder = Host.CreateApplicationBuilder(args);
+builder.Services.AddApplicationLogEnricher(builder.Configuration.GetSection("ApplicationLogEnricherOptions"));
+```
+
+### [.NET 9 and earlier](#tab/net9-earlier-config)
 
 ```csharp
 var builder = Host.CreateApplicationBuilder(args);
 builder.Services.AddServiceLogEnricher(builder.Configuration.GetSection("ApplicationLogEnricherOptions"));
-
 ```
+
+---
 
 ### `ApplicationLogEnricherOptions` Configuration options
 

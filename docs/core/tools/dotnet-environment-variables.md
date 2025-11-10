@@ -359,7 +359,7 @@ Specifies the minimum number of hours between background downloads of advertisin
 
 ### `DOTNET_SKIP_WORKLOAD_INTEGRITY_CHECK`
 
-Controls whether the .NET CLI validates and performs an integrity check on installed workloads on first-run. The integrity check ensures that workloads from previous feature bands are accessible to the currently installed SDK. Set to `true`, `1`, or `yes` to skip the integrity check. The default is `false`, which means the integrity check is performed.
+Specifies whether to skip the workload integrity check on first-run. The integrity check ensures that workloads from previous feature bands are accessible to the currently installed SDK. Set the value to `true`, `1`, or `yes` to skip the check. The default is `false`, meaning the integrity check is performed.
 
 ### `DOTNET_TOOLS_ALLOW_MANIFEST_IN_ROOT`
 

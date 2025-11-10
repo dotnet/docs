@@ -263,7 +263,7 @@ C# style rules:
 
 C# style rules:
 
-- [Remove unnecessary suppression (IDE0370)](ide0370.md)
+- [Remove unnecessary suppression (null-forgiving operator) (IDE0370)](ide0370.md)
 
 ### `This.` and `me.` preferences
 

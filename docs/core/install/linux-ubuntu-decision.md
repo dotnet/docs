@@ -303,7 +303,7 @@ This section provides information on common errors you might get while using APT
 
 #### Unable to find package
 
-[!INCLUDE [linux-install-package-manager-x64-vs-arm](includes/linux-install-package-manager-x64-vs-arm.md)]
+[!INCLUDE [linux-install-package-manager-x64-vs-arm-ubuntu](includes/linux-install-package-manager-x64-vs-arm-ubuntu.md)]
 
 #### Unable to locate \\ Some packages could not be installed
 

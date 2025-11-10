@@ -33,6 +33,34 @@ The following table is a list of currently supported .NET releases on SLES. Thes
 
 [!INCLUDE [package-manager uninstall notice](./includes/linux-uninstall-preview-info.md)]
 
+## SLES 16
+
+[!INCLUDE [linux-prep-intro-generic](includes/linux-prep-intro-generic.md)]
+
+```bash
+sudo rpm -Uvh https://packages.microsoft.com/config/sles/15/packages-microsoft-prod.rpm
+```
+
+# [.NET 10](#tab/dotnet10)
+
+[!INCLUDE [linux-install-package-manager-x64-arm64](includes/linux-install-package-manager-x64-arm64.md)]
+
+[!INCLUDE [linux-zyp-install-100](includes/linux-install-100-zyp.md)]
+
+# [.NET 9](#tab/dotnet9)
+
+[!INCLUDE [linux-install-package-manager-x64-only](includes/linux-install-package-manager-x64-only.md)]
+
+[!INCLUDE [linux-zyp-install-90](includes/linux-install-90-zyp.md)]
+
+# [.NET 8](#tab/dotnet8)
+
+[!INCLUDE [linux-install-package-manager-x64-only](includes/linux-install-package-manager-x64-only.md)]
+
+[!INCLUDE [linux-zyp-install-80](includes/linux-install-80-zyp.md)]
+
+---
+
 ## SLES 15
 
 [!INCLUDE [linux-prep-intro-generic](includes/linux-prep-intro-generic.md)]
@@ -47,7 +75,25 @@ Currently, the SLES 15 Microsoft repository setup package installs the *microsof
 sudo ln -s /etc/yum.repos.d/microsoft-prod.repo /etc/zypp/repos.d/microsoft-prod.repo
 ```
 
+# [.NET 10](#tab/dotnet10)
+
+[!INCLUDE [linux-install-package-manager-x64-arm64](includes/linux-install-package-manager-x64-arm64.md)]
+
+[!INCLUDE [linux-zyp-install-100](includes/linux-install-100-zyp.md)]
+
+# [.NET 9](#tab/dotnet9)
+
+[!INCLUDE [linux-install-package-manager-x64-only](includes/linux-install-package-manager-x64-only.md)]
+
 [!INCLUDE [linux-zyp-install-90](includes/linux-install-90-zyp.md)]
+
+# [.NET 8](#tab/dotnet8)
+
+[!INCLUDE [linux-install-package-manager-x64-only](includes/linux-install-package-manager-x64-only.md)]
+
+[!INCLUDE [linux-zyp-install-80](includes/linux-install-80-zyp.md)]
+
+---
 
 ## How to install other versions
 
@@ -56,6 +102,10 @@ sudo ln -s /etc/yum.repos.d/microsoft-prod.repo /etc/zypp/repos.d/microsoft-prod
 ## Troubleshoot the package manager
 
 This section provides information on common errors you may get while using the package manager to install .NET.
+
+### Unable to find package
+
+[!INCLUDE [linux-install-package-manager-unsupported-architectures](includes/linux-install-package-manager-unsupported-architectures.md)]
 
 ### Failed to fetch
 

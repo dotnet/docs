@@ -13,8 +13,6 @@ ms.custom: linux-related-content
 
 [!INCLUDE [linux-intro-sdk-vs-runtime](includes/linux-intro-sdk-vs-runtime.md)]
 
-[!INCLUDE [linux-install-package-manager-x64-vs-arm](includes/linux-install-package-manager-x64-vs-arm.md)]
-
 ## Supported distributions
 
 The following table is a list of currently supported .NET releases on openSUSE Leap 15. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of openSUSE Leap is no longer supported.
@@ -48,13 +46,19 @@ sudo chown root:root /etc/zypp/repos.d/microsoft-prod.repo
 
 # [.NET 10](#tab/dotnet10)
 
+[!INCLUDE [linux-install-package-manager-x64-arm64](includes/linux-install-package-manager-x64-arm64.md)]
+
 [!INCLUDE [linux-zyp-install-100](includes/linux-install-100-zyp.md)]
 
 # [.NET 9](#tab/dotnet9)
 
+[!INCLUDE [linux-install-package-manager-x64-only](includes/linux-install-package-manager-x64-only.md)]
+
 [!INCLUDE [linux-zyp-install-90](includes/linux-install-90-zyp.md)]
 
 # [.NET 8](#tab/dotnet8)
+
+[!INCLUDE [linux-install-package-manager-x64-only](includes/linux-install-package-manager-x64-only.md)]
 
 [!INCLUDE [linux-zyp-install-80](includes/linux-install-80-zyp.md)]
 
@@ -74,13 +78,19 @@ sudo chown root:root /etc/zypp/repos.d/microsoft-prod.repo
 
 # [.NET 10](#tab/dotnet10)
 
+[!INCLUDE [linux-install-package-manager-x64-arm64](includes/linux-install-package-manager-x64-arm64.md)]
+
 [!INCLUDE [linux-zyp-install-100](includes/linux-install-100-zyp.md)]
 
 # [.NET 9](#tab/dotnet9)
 
+[!INCLUDE [linux-install-package-manager-x64-only](includes/linux-install-package-manager-x64-only.md)]
+
 [!INCLUDE [linux-zyp-install-90](includes/linux-install-90-zyp.md)]
 
 # [.NET 8](#tab/dotnet8)
+
+[!INCLUDE [linux-install-package-manager-x64-only](includes/linux-install-package-manager-x64-only.md)]
 
 [!INCLUDE [linux-zyp-install-80](includes/linux-install-80-zyp.md)]
 
@@ -96,7 +106,7 @@ This section provides information on common errors you may get while using the p
 
 ### Unable to find package
 
-[!INCLUDE [linux-install-package-manager-x64-vs-arm](includes/linux-install-package-manager-x64-vs-arm.md)]
+[!INCLUDE [linux-install-package-manager-unsupported-architectures](includes/linux-install-package-manager-unsupported-architectures.md)]
 
 ### Failed to fetch
 

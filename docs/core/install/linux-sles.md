@@ -38,7 +38,7 @@ The following table is a list of currently supported .NET releases on SLES. Thes
 [!INCLUDE [linux-prep-intro-generic](includes/linux-prep-intro-generic.md)]
 
 ```bash
-sudo rpm -Uvh https://packages.microsoft.com/config/sles/15/packages-microsoft-prod.rpm
+sudo rpm -Uvh https://packages.microsoft.com/config/sles/16/packages-microsoft-prod.rpm
 ```
 
 # [.NET 10](#tab/dotnet10)

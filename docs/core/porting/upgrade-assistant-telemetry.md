@@ -8,6 +8,8 @@ ms.date: 05/22/2023
 
 The [Upgrade Assistant](./upgrade-assistant-overview.md) includes a telemetry feature that collects usage data. The telemetry data is used to help understand how to make improvements to the tool.
 
+[!INCLUDE [github-copilot-suggestion](includes/github-copilot-suggestion.md)]
+
 ## How to opt out
 
 The Upgrade Assistant telemetry feature is enabled by default. To opt out of the telemetry feature, set the `DOTNET_UPGRADEASSISTANT_TELEMETRY_OPTOUT` environment variable to `1` or `true`.

@@ -503,6 +503,11 @@ items:
       CS0182, CS0591, CS0599, CS0617, CS0633, CS0643, CS0655, CS0839, CS1016, CS1739,
       CS1740, CS1742, CS1744, CS1746, CS7036, CS7067, CS8196, CS8324, CS8861, CS8905,
       CS8943, CS8944, CS8945, CS8948, CS8949, CS8950, CS8951, CS8964, CS8965, CS8966
+  - name: asynchronous methods
+    href: ./compiler-messages/async-await-errors.md
+    displayName: >
+      async, await,
+      CS1983, CS1985, CS1986, CS1994, CS1996, CS1997, CS4008, CS4009, CS4014, CS4032, CS4033, CS9330
   - name: Reference parameters
     href: ./compiler-messages/ref-modifiers-errors.md
     displayName: >
@@ -1734,16 +1739,6 @@ items:
       href: ../misc/cs1958.md
     - name: CS1959
       href: ../misc/cs1959.md
-    - name: CS1983
-      href: ./compiler-messages/cs1983.md
-    - name: CS1986
-      href: ./compiler-messages/cs1986.md
-    - name: CS1994
-      href: ./compiler-messages/cs1994.md
-    - name: CS1996
-      href: ./compiler-messages/cs1996.md
-    - name: CS1997
-      href: ./compiler-messages/cs1997.md
     - name: CS2001
       href: ../misc/cs2001.md
     - name: CS2003
@@ -1790,14 +1785,6 @@ items:
       href: ../misc/cs2035.md
     - name: CS2036
       href: ../misc/cs2036.md
-    - name: CS4008
-      href: ./compiler-messages/cs4008.md
-    - name: CS4009
-      href: ../misc/CS4009.md
-    - name: CS4032
-      href: ./compiler-messages/cs4032.md
-    - name: CS4033
-      href: ./compiler-messages/cs4033.md
     - name: CS5001
       href: ../misc/cs5001.md
     - name: CS7003
@@ -2048,8 +2035,6 @@ items:
       href: ../misc/cs3026.md
     - name: CS3027
       href: ../misc/cs3027.md
-    - name: CS4014
-      href: ./compiler-messages/cs4014.md
     - name: CS5000
       href: ../misc/cs5000.md
   - name: Level 2 warning messages

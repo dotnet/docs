@@ -39,7 +39,6 @@ f1_keywords:
   - "CS1960"
   - "CS1961"
   - "CS1982"
-  - "CS1985"
   - "CS1989"
   - "CS1991"
   - "CS1992"
@@ -548,7 +547,7 @@ f1_keywords:
   - "CS9096"
   - "CS9097"
 # C# 14 errors begin here
-  - "CS9330"
+
   - "CS9331"
   - "CS9333"
   - "CS9334"

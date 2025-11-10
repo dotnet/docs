@@ -319,19 +319,27 @@ items:
         href: ../../core/deploying/macos.md
       - name: Trim self-contained deployments
         items:
-          - name: Overview and how-to
+          - name: Overview
             href: ../../core/deploying/trimming/trim-self-contained.md
-          - name: Intro to trim warnings
-            href: ../../core/deploying/trimming/fixing-warnings.md
-          - name: Trim incompatibilities
-            href: ../../core/deploying/trimming/incompatibilities.md
-          - name: Options
-            href: ../../core/deploying/trimming/trimming-options.md
-          - name: Trimming libraries
-            href: ../../core/deploying/trimming/prepare-libraries-for-trimming.md
-          - name: Intrinsic APIs marked RequiresUnreferencedCode
-            href: ../../core/deploying/trimming/intrinsic-requiresunreferencedcode-apis.md
-          - name: Trim warnings
+          - name: Concepts
+            items:
+              - name: Understanding trim analysis
+                href: ../../core/deploying/trimming/trimming-concepts.md
+          - name: How-to guides
+            items:
+              - name: Fix trim warnings
+                href: ../../core/deploying/trimming/fixing-warnings.md
+              - name: Prepare libraries for trimming
+                href: ../../core/deploying/trimming/prepare-libraries-for-trimming.md
+          - name: Reference
+            items:
+              - name: Trimming options
+                href: ../../core/deploying/trimming/trimming-options.md
+              - name: Known incompatibilities
+                href: ../../core/deploying/trimming/incompatibilities.md
+              - name: Intrinsic RequiresUnreferencedCode APIs
+                href: ../../core/deploying/trimming/intrinsic-requiresunreferencedcode-apis.md
+          - name: Trim warning reference
             items:
               - name: IL2001
                 href: ../../core/deploying/trimming/trim-warnings/il2001.md

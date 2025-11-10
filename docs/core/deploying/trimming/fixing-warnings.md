@@ -1,276 +1,428 @@
 ---
-title: Introduction to trim warnings
-description: Learn about why warnings might be produced when publishing a trimmed application, how to address them, and how to make the application "trim compatible."
+title: Fixing trim warnings
+description: Learn practical workflows for addressing trim warnings in your application, including step-by-step instructions for making code trim-compatible.
 author: agocke
 ms.author: angocke
-ms.date: 10/30/2023
+ms.date: 11/04/2025
 ---
-# Introduction to trim warnings
+# Fixing trim warnings
 
-Conceptually, [trimming](trim-self-contained.md) is simple: when you publish an application, the .NET SDK analyzes the entire application and removes all unused code. However, it can be difficult to determine what is unused, or more precisely, what is used.
+When you enable trimming in your application, the .NET SDK performs static analysis to detect code patterns that might not be compatible with trimming. Trim warnings indicate potential issues that could cause behavior changes or crashes after trimming.
 
-To prevent changes in behavior when trimming applications, the .NET SDK provides static analysis of trim compatibility through **trim warnings**. The trimmer produces trim warnings when it finds code that might not be compatible with trimming. Code that's not trim-compatible can produce behavioral changes, or even crashes, in an application after it has been trimmed. An app that uses trimming shouldn't produce any trim warnings. If there are any trim warnings, the app should be thoroughly tested after trimming to ensure that there are no behavior changes.
+**An app that uses trimming shouldn't produce any trim warnings.** If there are any trim warnings, thoroughly test the app after trimming to ensure there are no behavior changes.
 
-This article helps you understand why some patterns produce trim warnings, and how these warnings can be addressed.
+This article provides practical workflows for addressing trim warnings. For a deeper understanding of why these warnings occur and how trimming works, see [Understanding trim analysis](trimming-concepts.md).
 
-## Examples of trim warnings
+## Understanding warning categories
 
-For most C# code, it's straightforward to determine what code is used and what code is unused&mdash;the trimmer can walk method calls, field and property references, and so on, and determine what code is accessed. Unfortunately, some features, like reflection, present a significant problem. Consider the following code:
+Trim warnings fall into two main categories:
+
+- **Code incompatible with trimming** - Marked with <xref:System.Diagnostics.CodeAnalysis.RequiresUnreferencedCodeAttribute>. The code fundamentally can't be made analyzable (for example, dynamic assembly loading or complex reflection patterns). The method is marked as incompatible, and callers receive warnings.
+
+- **Code with requirements** - Annotated with <xref:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMembersAttribute>. Reflection is used, but types are known at compile time. When requirements are satisfied, the code becomes fully trim-compatible.
+
+## Workflow: Determine the right approach
+
+When you encounter a trim warning, follow these steps in order:
+
+1. **Try to eliminate reflection** - This is always the best option if possible
+2. **Use DynamicallyAccessedMembers** - If types are known, make the code trim-compatible
+3. **Use RequiresUnreferencedCode** - If truly dynamic, document the incompatibility
+4. **Suppress warnings as last resort** - Only if you're certain the code is safe
+
+## Approach 1: Eliminate reflection
+
+The best solution is to avoid reflection entirely when possible. This makes your code faster and fully trim-compatible.
+
+### Use compile-time generics
+
+Replace runtime type operations with compile-time generic parameters:
 
 ```csharp
-string s = Console.ReadLine();
-Type type = Type.GetType(s);
-foreach (var m in type.GetMethods())
+// ❌ Before: Uses reflection
+void CreateAndProcess(Type type)
 {
-    Console.WriteLine(m.Name);
+    var instance = Activator.CreateInstance(type);
+    // Process instance...
+}
+
+// ✅ After: Uses generics
+void CreateAndProcess<T>() where T : new()
+{
+    var instance = new T();
+    // Process instance...
 }
 ```
 
-In this example, <xref:System.Type.GetType> dynamically requests a type with an unknown name, and then prints the names of all of its methods. Because there's no way to know at publish-time what type name is going to be used, there's no way for the trimmer to know which type to preserve in the output. It's likely that this code could have worked before trimming (as long as the input is something known to exist in the target framework), but would probably produce a null reference exception after trimming, as `Type.GetType` returns null when the type isn't found.
+### Use source generators
 
-In this case, the trimmer issues a warning on the call to `Type.GetType`, indicating that it can't determine which type is going to be used by the application.
+Modern .NET provides source generators for common reflection scenarios:
 
-## Reacting to trim warnings
+- **Serialization**: Use [System.Text.Json source generation](../../../standard/serialization/system-text-json/source-generation.md) instead of reflection-based serializers
+- **Configuration**: Use the [configuration binding source generator](../../whats-new/dotnet-8/runtime.md#configuration-binding-source-generator)
 
-Trim warnings are meant to bring predictability to trimming. There are two large categories of warnings that you'll likely see:
+For more information, see [Known trimming incompatibilities](incompatibilities.md).
 
-1. Functionality isn't compatible with trimming
-2. Functionality has certain requirements on the input to be trim compatible
+## Approach 2: Make code trim-compatible with DynamicallyAccessedMembers
 
-### Functionality incompatible with trimming
+When reflection is necessary but types are known at compile time, use <xref:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMembersAttribute> to make your code trim-compatible.
 
-These are typically methods that either don't work at all, or might be broken in some cases if they're used in a trimmed application. A good example is the `Type.GetType` method from the previous example. In a trimmed app it might work, but there's no guarantee. Such APIs are marked with <xref:System.Diagnostics.CodeAnalysis.RequiresUnreferencedCodeAttribute>.
+### Step-by-step: Annotate reflection usage
 
-<xref:System.Diagnostics.CodeAnalysis.RequiresUnreferencedCodeAttribute> is simple and broad: it's an attribute that means the member has been annotated incompatible with trimming. This attribute is used when code is fundamentally not trim compatible, or the trim dependency is too complex to explain to the trimmer. This would often be true for methods that dynamically load code for example via <xref:System.Reflection.Assembly.LoadFrom(System.String)>, enumerate or search through all types in an application or assembly for example via <xref:System.Type.GetType>, use the C# [`dynamic`](../../../csharp/language-reference/builtin-types/reference-types.md#the-dynamic-type) keyword, or use other runtime code generation technologies. An example would be:
-
-```csharp
-[RequiresUnreferencedCode("This functionality is not compatible with trimming. Use 'MethodFriendlyToTrimming' instead")]
-void MethodWithAssemblyLoad()
-{
-    ...
-    Assembly.LoadFrom(...);
-    ...
-}
-
-void TestMethod()
-{
-    // IL2026: Using method 'MethodWithAssemblyLoad' which has 'RequiresUnreferencedCodeAttribute'
-    // can break functionality when trimming application code. This functionality is not compatible with trimming. Use 'MethodFriendlyToTrimming' instead.
-    MethodWithAssemblyLoad();
-}
-```
-
-There aren't many workarounds for `RequiresUnreferencedCode`. The best fix is to avoid calling the method at all when trimming and use something else that's trim-compatible.
-
-#### Mark functionality as incompatible with trimming
-
-If you're writing a library and it's not in your control whether or not to use incompatible functionality, you can mark it with `RequiresUnreferencedCode`. This annotates your method as incompatible with trimming. Using `RequiresUnreferencedCode` silences all trim warnings in the given method, but produces a warning whenever someone else calls it.
-
-The <xref:System.Diagnostics.CodeAnalysis.RequiresUnreferencedCodeAttribute> requires you to specify a `Message`. The message is shown as part of a warning reported to the developer who calls the marked method. For example:
-
-```console
-IL2026: Using member <incompatible method> which has 'RequiresUnreferencedCodeAttribute' can break functionality when trimming application code. <The message value>
-```
-
-With the example above, a warning for a specific method might look like this:
-
-```console
-IL2026: Using member 'MethodWithAssemblyLoad()' which has 'RequiresUnreferencedCodeAttribute' can break functionality when trimming application code. This functionality is not compatible with trimming. Use 'MethodFriendlyToTrimming' instead.
-```
-
-Developers calling such APIs are generally not going to be interested in the particulars of the affected API or specifics as it relates to trimming.
-
-A good message should state what functionality isn't compatible with trimming and then guide the developer what are their potential next steps. It might suggest to use a different functionality or change how the functionality is used. It might also simply state that the functionality isn't yet compatible with trimming without a clear replacement.
-
-If the guidance to the developer becomes too long to be included in a warning message, you can add an optional `Url` to the <xref:System.Diagnostics.CodeAnalysis.RequiresUnreferencedCodeAttribute> to point the developer to a web page describing the problem and possible solutions in greater detail.
-
-For example:
+Consider this example that produces a warning:
 
 ```csharp
-[RequiresUnreferencedCode("This functionality is not compatible with trimming. Use 'MethodFriendlyToTrimming' instead", Url = "https://site/trimming-and-method")]
-void MethodWithAssemblyLoad() { ... }
-```
-
-This produces a warning:
-
-```console
-IL2026: Using member 'MethodWithAssemblyLoad()' which has 'RequiresUnreferencedCodeAttribute' can break functionality when trimming application code. This functionality is not compatible with trimming. Use 'MethodFriendlyToTrimming' instead. https://site/trimming-and-method
-```
-
-Using `RequiresUnreferencedCode` often leads to marking more methods with it, due to the same reason. This is common when a high-level method becomes incompatible with trimming because it calls a low-level method that isn't trim-compatible. You "bubble up" the warning to a public API. Each usage of `RequiresUnreferencedCode` needs a message, and in these cases the messages are likely the same. To avoid duplicating strings and making it easier to maintain, use a constant string field to store the message:
-
-```csharp
-class Functionality
+void PrintMethodNames(Type type)
 {
-    const string IncompatibleWithTrimmingMessage = "This functionality is not compatible with trimming. Use 'FunctionalityFriendlyToTrimming' instead";
-
-    [RequiresUnreferencedCode(IncompatibleWithTrimmingMessage)]
-    private void ImplementationOfAssemblyLoading()
+    // ⚠️ IL2070: 'this' argument does not satisfy 'DynamicallyAccessedMemberTypes.PublicMethods'
+    foreach (var method in type.GetMethods())
     {
-        ...
-    }
-
-    [RequiresUnreferencedCode(IncompatibleWithTrimmingMessage)]
-    public void MethodWithAssemblyLoad()
-    {
-        ImplementationOfAssemblyLoading();
+        Console.WriteLine(method.Name);
     }
 }
 ```
 
-### Functionality with requirements on its input
+**Step 1: Identify what reflection operation is performed**
 
-Trimming provides APIs to specify more requirements on input to methods and other members that lead to trim-compatible code. These requirements are usually about reflection and the ability to access certain members or operations on a type. Such requirements are specified using the <xref:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMembersAttribute>.
+The code calls `GetMethods()`, which requires `PublicMethods` to be preserved.
 
-Unlike `RequiresUnreferencedCode`, reflection can sometimes be understood by the trimmer as long as it's annotated correctly. Let's take another look at the original example:
+**Step 2: Annotate the parameter**
+
+Add `DynamicallyAccessedMembers` to tell the trimmer what's needed:
 
 ```csharp
-string s = Console.ReadLine();
-Type type = Type.GetType(s);
-foreach (var m in type.GetMethods())
+void PrintMethodNames(
+    [DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicMethods)] Type type)
 {
-    Console.WriteLine(m.Name);
+    // ✅ No warning - trimmer knows to preserve public methods
+    foreach (var method in type.GetMethods())
+    {
+        Console.WriteLine(method.Name);
+    }
 }
 ```
 
-In the previous example, the real problem is `Console.ReadLine()`. Because *any* type could be read, the trimmer has no way to know if you need methods on `System.DateTime` or `System.Guid` or any other type. On the other hand, the following code would be fine:
+**Step 3: Ensure callers satisfy the requirement**
+
+When calling this method with a known type (`typeof`), the requirement is automatically satisfied:
 
 ```csharp
-Type type = typeof(System.DateTime);
-foreach (var m in type.GetMethods())
-{
-    Console.WriteLine(m.Name);
-}
+// ✅ OK - DateTime's public methods will be preserved
+PrintMethodNames(typeof(DateTime));
 ```
 
-Here the trimmer can see the exact type being referenced: `System.DateTime`. Now it can use flow analysis to determine that it needs to keep all public methods on `System.DateTime`. So where does `DynamicallyAccessMembers` come in? When reflection is split across multiple methods. In the following code, we can see that the type `System.DateTime` flows to `Method3` where reflection is used to access `System.DateTime`'s methods,
+### Step-by-step: Propagate requirements through call chains
+
+When types flow through multiple methods, you need to propagate requirements:
 
 ```csharp
 void Method1()
 {
-    Method2<System.DateTime>();
+    Method2<DateTime>();  // ⚠️ Warning: Generic parameter needs annotation
 }
+
 void Method2<T>()
 {
     Type t = typeof(T);
-    Method3(t);
+    Method3(t);  // ⚠️ Warning: Argument doesn't satisfy requirements
 }
+
 void Method3(Type type)
 {
-    var methods = type.GetMethods();
-    ...
+    var methods = type.GetMethods();  // ⚠️ Warning: Reflection usage
 }
 ```
 
-If you compile the previous code, the following warning is produced:
+**Step 1: Start at the reflection usage**
 
-> IL2070: Program.Method3(Type): 'this' argument does not satisfy
-> 'DynamicallyAccessedMemberTypes.PublicMethods' in call to 'System.Type.GetMethods()'. The
-> parameter 'type' of method 'Program.Method3(Type)' does not have matching annotations. The
-> source value must declare at least the same requirements as those declared on the target
-> location it is assigned to.
-
-For performance and stability, flow analysis isn't performed between methods, so an annotation is needed to pass information between methods, from the reflection call (`GetMethods`) to the source of the `Type`. In the previous example, the trimmer warning is saying that `GetMethods` requires the `Type` object instance it's called on to have the `PublicMethods` annotation, but the `type` variable doesn't have the same requirement. In other words, we need to pass the requirements from `GetMethods` up to the caller:
+Annotate where reflection is actually used:
 
 ```csharp
-void Method1()
-{
-    Method2<System.DateTime>();
-}
-void Method2<T>()
-{
-    Type t = typeof(T);
-    Method3(t);
-}
 void Method3(
     [DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicMethods)] Type type)
 {
-    var methods = type.GetMethods();
-  ...
+    var methods = type.GetMethods();  // ✅ Fixed
 }
 ```
 
-After annotating the parameter `type`, the original warning disappears, but another appears:
+**Step 2: Propagate up the call chain**
 
-> IL2087: 'type' argument does not satisfy 'DynamicallyAccessedMemberTypes.PublicMethods'
-> in call to 'Program.Method3(Type)'. The generic parameter 'T' of 'Program.Method2\<T\>()' does not
-> have matching annotations.
-
-We propagated annotations up to the parameter `type` of `Method3`, in `Method2` we have a similar issue. The trimmer is able to track the value `T` as it flows through the call to `typeof`, is assigned to the local variable `t`, and passed to `Method3`. At that point it sees that the parameter `type` requires `PublicMethods` but there are no requirements on `T`, and produces a new warning. To fix this, we must "annotate and propagate" by applying annotations all the way up the call chain until we reach a statically known type (like `System.DateTime` or `System.Tuple`), or another annotated value. In this case, we need to annotate the type parameter `T` of `Method2`.
+Work backward through the call chain:
 
 ```csharp
-void Method1()
-{
-    Method2<System.DateTime>();
-}
 void Method2<[DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicMethods)] T>()
 {
     Type t = typeof(T);
-    Method3(t);
-}
-void Method3(
-    [DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicMethods)] Type type)
-{
-    var methods = type.GetMethods();
-  ...
+    Method3(t);  // ✅ Fixed - T is annotated
 }
 ```
 
-Now there are no warnings because the trimmer knows which members might be accessed via runtime reflection (public methods) and on which types (`System.DateTime`), and it preserves them. It's best practice to add annotations so the trimmer knows what to preserve.
-
-Warnings produced by these extra requirements are automatically suppressed if the affected code is in a method with `RequiresUnreferencedCode`.
-
-Unlike `RequiresUnreferencedCode`, which simply reports the incompatibility, adding `DynamicallyAccessedMembers` makes the code compatible with trimming.
-
-> [!NOTE]
-> Using `DynamicallyAccessedMembersAttribute` will root all the specified `DynamicallyAccessedMemberTypes` members of the type. This means it will keep the members, as well as any metadata referenced by those members. This can lead to much larger apps than expected. Be careful to use the minimum `DynamicallyAccessedMemberTypes` required.
-
-### Suppressing trimmer warnings
-
-If you can somehow determine that the call is safe, and all the code that's needed won't be trimmed away, you can also suppress the warning using <xref:System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute>. For example:
+**Step 3: Verify at the call site**
 
 ```csharp
-[RequiresUnreferencedCode("Use 'MethodFriendlyToTrimming' instead")]
-void MethodWithAssemblyLoad() { ... }
-
-[UnconditionalSuppressMessage("AssemblyLoadTrimming", "IL2026:RequiresUnreferencedCode",
-    Justification = "Everything referenced in the loaded assembly is manually preserved, so it's safe")]
-void TestMethod()
+void Method1()
 {
-    InitializeEverything();
-
-    MethodWithAssemblyLoad(); // Warning suppressed
-
-    ReportResults();
+    Method2<DateTime>();  // ✅ Fixed - DateTime's public methods preserved
 }
 ```
+
+For more details on how requirements flow through code, see [Understanding trim analysis](trimming-concepts.md).
+
+### Common DynamicallyAccessedMemberTypes values
+
+Choose the minimum access level needed:
+
+| Member Type | When to use |
+|-------------|-------------|
+| `PublicConstructors` | Using `Activator.CreateInstance()` or `GetConstructor()` |
+| `PublicMethods` | Using `GetMethod()` or `GetMethods()` |
+| `PublicFields` | Using `GetField()` or `GetFields()` |
+| `PublicProperties` | Using `GetProperty()` or `GetProperties()` (serialization) |
+| `PublicEvents` | Using `GetEvent()` or `GetEvents()` |
 
 > [!WARNING]
-> Be very careful when suppressing trim warnings. It's possible that the call may be trim-compatible now, but as you change your code that may change, and you may forget to review all the suppressions.
+> Using `DynamicallyAccessedMemberTypes.All` preserves all members on the target type and all members on its nested types (but not transitive dependencies like members on a property's return type). This significantly increases app size. More importantly, preserved members become reachable, which means they may contain their own problematic code. For example, if a preserved member calls a method marked with `RequiresUnreferencedCode`, that warning cannot be resolved since the member is being kept through reflection annotation rather than an explicit call. Use the minimum required member types to avoid these cascading issues.
 
-`UnconditionalSuppressMessage` is like `SuppressMessage` but it can be seen by `publish` and other post-build tools.
+## Approach 3: Mark code as incompatible with RequiresUnreferencedCode
 
-> [!IMPORTANT]
-> Do not use `SuppressMessage` or `#pragma warning disable` to suppress trimmer warnings. These only work for the compiler, but are not preserved in the compiled assembly. Trimmer operates on compiled assemblies and would not see the suppression.
+When code fundamentally cannot be made analyzable, use <xref:System.Diagnostics.CodeAnalysis.RequiresUnreferencedCodeAttribute> to document the incompatibility.
 
-The suppression applies to the entire method body. So in our sample above it suppresses all `IL2026` warnings from the method. This makes it harder to understand, as it's not clear which method is the problematic one, unless you add a comment. More importantly, if the code changes in the future, such as if `ReportResults` becomes trim-incompatible as well, no warning is reported for this method call.
+### When to use RequiresUnreferencedCode
 
-You can resolve this by refactoring the problematic method call into a separate method or local function and then applying the suppression to just that method:
+Use this attribute when:
+
+- **Types are loaded dynamically**: Using <xref:System.Type.GetType> with runtime-determined strings
+- **Assemblies are loaded at runtime**: Using <xref:System.Reflection.Assembly.LoadFrom(System.String)>
+- **Complex reflection patterns**: Reflection usage too complex to annotate
+- **Runtime code generation**: Using <xref:System.Reflection.Emit> or the `dynamic` keyword
+
+### Step-by-step: Mark incompatible methods
+
+**Step 1: Identify truly incompatible code**
+
+Example of code that cannot be made trim-compatible:
 
 ```csharp
-void TestMethod()
+void LoadPluginByName(string pluginName)
 {
-    InitializeEverything();
+    // Type name comes from runtime input - trimmer cannot know what types are needed
+    Type pluginType = Type.GetType(pluginName);
+    var plugin = Activator.CreateInstance(pluginType);
+    // Use plugin...
+}
+```
 
-    CallMethodWithAssemblyLoad();
+**Step 2: Add RequiresUnreferencedCode attribute**
 
-    ReportResults();
+```csharp
+[RequiresUnreferencedCode("Plugin loading by name is not compatible with trimming. Consider using compile-time plugin registration instead.")]
+void LoadPluginByName(string pluginName)
+{
+    Type pluginType = Type.GetType(pluginName);
+    var plugin = Activator.CreateInstance(pluginType);
+    // ✅ No warnings inside this method - it's marked as incompatible
+}
+```
 
-    [UnconditionalSuppressMessage("AssemblyLoadTrimming", "IL2026:RequiresUnreferencedCode",
-        Justification = "Everything referenced in the loaded assembly is manually preserved, so it's safe")]
-    void CallMethodWithAssemblyLoad()
+**Step 3: Callers receive warnings**
+
+```csharp
+void InitializePlugins()
+{
+    // ⚠️ IL2026: Using member 'LoadPluginByName' which has 'RequiresUnreferencedCodeAttribute'
+    // can break functionality when trimming application code. Plugin loading by name is not
+    // compatible with trimming. Consider using compile-time plugin registration instead.
+    LoadPluginByName("MyPlugin");
+}
+```
+
+### Writing effective warning messages
+
+A good `RequiresUnreferencedCode` message should:
+
+1. **State what functionality is incompatible**: Be specific about what doesn't work with trimming
+2. **Suggest alternatives**: Guide developers toward trim-compatible solutions
+3. **Be concise**: Keep messages short and actionable
+
+```csharp
+// ❌ Not helpful
+[RequiresUnreferencedCode("Uses reflection")]
+
+// ✅ Helpful - explains problem and suggests alternative
+[RequiresUnreferencedCode("Dynamic type loading is not compatible with trimming. Use generic type parameters or source generators instead.")]
+```
+
+For longer guidance, add a `Url` parameter:
+
+```csharp
+[RequiresUnreferencedCode(
+    "Plugin system is not compatible with trimming. See documentation for alternatives.",
+    Url = "https://docs.example.com/plugin-trimming")]
+```
+
+### Propagating RequiresUnreferencedCode
+
+When a method calls another method marked with `RequiresUnreferencedCode`, you typically need to propagate the attribute:
+
+```csharp
+class PluginSystem
+{
+    // Use a constant for consistent messaging
+    const string PluginMessage = "Plugin system is not compatible with trimming. Use compile-time registration instead.";
+
+    [RequiresUnreferencedCode(PluginMessage)]
+    private void LoadPluginImplementation(string name)
     {
-        MethodWIthAssemblyLoad(); // Warning suppressed
+        // Low-level plugin loading
+    }
+
+    [RequiresUnreferencedCode(PluginMessage)]
+    public void LoadPlugin(string name)
+    {
+        LoadPluginImplementation(name);  // ✅ No warning - method is also marked
     }
 }
 ```
+
+## Common patterns and solutions
+
+### Pattern: Factory methods with Activator.CreateInstance
+
+```csharp
+// ❌ Before: Produces warning
+object CreateInstance(Type type)
+{
+    return Activator.CreateInstance(type);
+}
+
+// ✅ After: Trim-compatible
+object CreateInstance(
+    [DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicParameterlessConstructor)] Type type)
+{
+    return Activator.CreateInstance(type);
+}
+```
+
+### Pattern: Plugin systems loading assemblies
+
+```csharp
+// This pattern is fundamentally incompatible with trimming
+[RequiresUnreferencedCode("Plugin loading is not compatible with trimming. Consider compile-time plugin registration using source generators.")]
+void LoadPluginsFromDirectory(string directory)
+{
+    foreach (var dll in Directory.GetFiles(directory, "*.dll"))
+    {
+        Assembly.LoadFrom(dll);
+    }
+}
+```
+
+### Pattern: Dependency injection containers
+
+```csharp
+// Complex DI containers are often incompatible
+class Container
+{
+    [RequiresUnreferencedCode("Service resolution uses complex reflection. Consider using source-generated DI or registering services explicitly.")]
+    public object Resolve(Type serviceType)
+    {
+        // Complex reflection to resolve dependencies
+    }
+}
+```
+
+## Approach 4: Suppress warnings as last resort
+
+> [!WARNING]
+> Only suppress trim warnings if you're absolutely certain the code is safe. Incorrect suppressions can lead to runtime failures after trimming.
+
+Use <xref:System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute> when you've verified that code is trim-safe but the trimmer cannot prove it statically.
+
+### When suppression is appropriate
+
+Suppress warnings only when:
+
+1. You've manually ensured all required code is preserved (via `DynamicDependency` or other mechanisms)
+2. The code path is never executed in trimmed scenarios
+3. You've thoroughly tested the trimmed application
+
+### How to suppress warnings
+
+```csharp
+[RequiresUnreferencedCode("Uses reflection")]
+void MethodWithReflection() { /* ... */ }
+
+[UnconditionalSuppressMessage("Trimming", "IL2026:RequiresUnreferencedCode",
+    Justification = "All referenced types are manually preserved via DynamicDependency attributes")]
+void CallerMethod()
+{
+    MethodWithReflection();  // Warning suppressed
+}
+```
+
+> [!IMPORTANT]
+> Do not use `SuppressMessage` or `#pragma warning disable` for trim warnings. These only work for the compiler but aren't preserved in the compiled assembly. The trimmer operates on compiled assemblies and won't see these suppressions. Always use `UnconditionalSuppressMessage`.
+
+### Minimize suppression scope
+
+Apply suppressions to the smallest scope possible. Extract the problematic call into a local function:
+
+```csharp
+void ProcessData()
+{
+    InitializeData();
+
+    CallReflectionMethod();  // Only this call is suppressed
+
+    ProcessResults();
+
+    [UnconditionalSuppressMessage("Trimming", "IL2026:RequiresUnreferencedCode",
+        Justification = "Types are preserved via DynamicDependency on ProcessData method")]
+    void CallReflectionMethod()
+    {
+        MethodWithReflection();
+    }
+}
+```
+
+This approach:
+- Makes it clear which specific call is suppressed
+- Prevents accidentally suppressing other warnings if the code changes
+- Keeps the justification close to the suppressed call
+
+## Troubleshooting tips
+
+### Warning persists after adding DynamicallyAccessedMembers
+
+Ensure you've annotated the entire call chain from the reflection usage back to the source of the `Type`:
+
+1. Find where reflection is used (like `GetMethods()`)
+2. Annotate that method's parameter
+3. Follow the `Type` value backward through all method calls
+4. Annotate each parameter, field, or generic type parameter in the chain
+
+### Too many warnings to address
+
+1. Start with your own code - fix warnings in code you control first
+2. Use `TrimmerSingleWarn` to see individual warnings from packages
+3. Consider if trimming is appropriate for your application
+4. Check [Known trimming incompatibilities](incompatibilities.md) for framework-level issues
+
+### Unsure which DynamicallyAccessedMemberTypes to use
+
+Look at the reflection API being called:
+
+- `GetMethod()` / `GetMethods()` → `PublicMethods`
+- `GetProperty()` / `GetProperties()` → `PublicProperties`
+- `GetField()` / `GetFields()` → `PublicFields`
+- `GetConstructor()` / `Activator.CreateInstance()` → `PublicParameterlessConstructor` or `PublicConstructors`
+- `GetEvent()` / `GetEvents()` → `PublicEvents`
+
+Use the narrowest type possible to minimize app size.
+
+## Next steps
+
+- [Understanding trim analysis](trimming-concepts.md) - Learn the fundamental concepts behind trim warnings
+- [Prepare libraries for trimming](prepare-libraries-for-trimming.md) - Make your libraries trim-compatible
+- [Trim warning reference](trim-warnings/il2026.md) - Detailed information about specific warning codes
+- [Known incompatibilities](incompatibilities.md) - Patterns that cannot be made trim-compatible

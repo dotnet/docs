@@ -11,7 +11,7 @@ The [framework-dependent deployment model](../index.md#framework-dependent-deplo
 
 The trim-self-contained deployment model is a specialized version of the self-contained deployment model that is optimized to reduce deployment size. Minimizing deployment size is a critical requirement for some client-side scenarios like Blazor applications. Depending on the complexity of the application, only a subset of the framework assemblies are referenced, and a subset of the code within each assembly is required to run the application. The unused parts of the libraries are unnecessary and can be trimmed from the packaged application.
 
-However, there is a risk that the build-time analysis of the application can cause failures at run time, due to not being able to reliably analyze various problematic code patterns (largely centered on reflection use). To mitigate these problems, warnings are produced whenever the trimmer cannot fully analyze a code pattern. For information on what the trim warnings mean and how to resolve them, see [Introduction to trim warnings](fixing-warnings.md).
+However, there is a risk that the build-time analysis of the application can cause failures at run time, due to not being able to reliably analyze various problematic code patterns (largely centered on reflection use). To mitigate these problems, warnings are produced whenever the trimmer cannot fully analyze a code pattern. For information on what the trim warnings mean and how to resolve them, see [Fix trim warnings](fixing-warnings.md). To understand how trimming works and why certain patterns cause warnings, see [Understanding trim analysis](trimming-concepts.md).
 
 > [!NOTE]
 >
@@ -23,7 +23,7 @@ However, there is a risk that the build-time analysis of the application can cau
 > [!WARNING]
 > Not all project types can be trimmed. For more information, see [Known trimming incompatibilities](incompatibilities.md).
 
-Any code that causes build time analysis challenges isn't suitable for trimming. Some common coding patterns that are problematic when used by an application originate from unbounded reflection usage and external dependencies that aren't visible at build time. An example of unbounded reflection is a legacy serializer, such as [XML serialization](../../../standard/serialization/introducing-xml-serialization.md), and an example of invisible external dependencies is [built-in COM](../../../standard/native-interop/cominterop.md). To address trim warnings in your application, see [Introduction to trim warnings](fixing-warnings.md), and to make your library compatible with trimming, see [Prepare .NET libraries for trimming](prepare-libraries-for-trimming.md).
+Any code that causes build time analysis challenges isn't suitable for trimming. Some common coding patterns that are problematic when used by an application originate from unbounded reflection usage and external dependencies that aren't visible at build time. An example of unbounded reflection is a legacy serializer, such as [XML serialization](../../../standard/serialization/introducing-xml-serialization.md), and an example of invisible external dependencies is [built-in COM](../../../standard/native-interop/cominterop.md). To address trim warnings in your application, see [Fix trim warnings](fixing-warnings.md), and to make your library compatible with trimming, see [Prepare .NET libraries for trimming](prepare-libraries-for-trimming.md).
 
 ## Enable trimming
 
@@ -69,7 +69,17 @@ For more information, see [.NET application publishing overview](../../deploying
 
 For more information, see [.NET application publishing overview](../../deploying/index.md).
 
+## Next steps
+
+After enabling trimming, you may encounter trim warnings during build. Follow these guides to understand and resolve them:
+
+- **[Understanding trim analysis](trimming-concepts.md)** - Learn how the trimmer works and why certain code patterns produce warnings. This conceptual guide explains the fundamental principles of trim analysis.
+- **[Fix trim warnings](fixing-warnings.md)** - Step-by-step workflows for resolving trim warnings in your code.
+- **[Prepare libraries for trimming](prepare-libraries-for-trimming.md)** - Make your libraries compatible with trimming.
+- **[Trimming options](trimming-options.md)** - Reference for MSBuild properties that control trimming behavior.
+
 ## See also
 
-- [.NET application publishing overview](../../deploying/index.md).
-- [dotnet publish command](../../tools/dotnet-publish.md).
+- [.NET application publishing overview](../../deploying/index.md)
+- [dotnet publish command](../../tools/dotnet-publish.md)
+- [Known trimming incompatibilities](incompatibilities.md)

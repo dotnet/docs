@@ -49,7 +49,7 @@ A target framework is typically referenced by a TFM. The following table shows t
 | Windows Phone              | wp [wp7]<br>wp7<br>wp75<br>wp8<br>wp81<br>wpa81 |
 | Universal Windows Platform | uap [uap10.0]<br>uap10.0 [win10] [netcore50] |
 
-\* .NET 5 and later TFMs include some operating system-specific variations. For more information, see the following section, [.OS-specific TFMs](#os-specific-tfms).
+\* .NET 5 and later TFMs include some operating system-specific variations. For more information, see the following section, [OS-specific TFMs](#os-specific-tfms).
 
 ### OS-specific TFMs
 
@@ -103,7 +103,7 @@ You can also specify an optional OS version at the end of an OS-specific TFM, fo
 
 The .NET SDK is designed to be able to support newly released APIs for an individual platform without a new version of the base TFM. This enables you to access platform-specific functionality without waiting for a major release of .NET. You can gain access to these newly released APIs by incrementing the platform version in the TFM. For example, if the Android platform added API level 34 APIs in a .NET 8.0.x SDK update, you could access them by using the TFM `net8.0-android34.0`.
 
-When an OS-specific TFM doesn't specify the platform version explicitly, it has an implied value that can be inferred from the base TFM and platform name. For example, the default platform version for Android in .NET 9 is `35.0`, which means that `net9.0-android` is shorthand for the canonical `netp.0-android35.0` TFM. The shorthand form is intended for use in project files only, and is expanded to the canonical form by the .NET SDK's MSBuild targets before being passed to other tools, such as NuGet.
+When an OS-specific TFM doesn't specify the platform version explicitly, it has an implied value that can be inferred from the base TFM and platform name. For example, the default platform version for Android in .NET 9 is `35.0`, which means that `net9.0-android` is shorthand for the canonical `net9.0-android35.0` TFM. The shorthand form is intended for use in project files only, and is expanded to the canonical form by the .NET SDK's MSBuild targets before being passed to other tools, such as NuGet.
 
 The following table shows the *default* target platform version (TPV) for Android and iOS for each .NET release. **If you want to use the latest bindings, use the default (that is, don't specify an OS version).**
 

@@ -357,6 +357,10 @@ Disables background download of advertising manifests for workloads. Default is 
 
 Specifies the minimum number of hours between background downloads of advertising manifests for workloads. The default is `24`, which is no more frequently than once a day. For more information, see [Advertising manifests](dotnet-workload-install.md#advertising-manifests).
 
+### `DOTNET_SKIP_WORKLOAD_INTEGRITY_CHECK`
+
+Controls whether the .NET CLI validates and performs an integrity check on installed workloads on first-run. The integrity check ensures that workloads from previous feature bands are accessible to the currently installed SDK. Set to `true`, `1`, or `yes` to skip the integrity check. The default is `false`, which means the integrity check is performed.
+
 ### `DOTNET_TOOLS_ALLOW_MANIFEST_IN_ROOT`
 
 Specifies whether .NET SDK local tools search for tool manifest files in the root folder on Windows. The default is `false`.

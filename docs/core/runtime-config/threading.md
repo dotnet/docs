@@ -269,7 +269,7 @@ Project file:
 
 ## Default stack size for new threads
 
-- Configures the default stack size for threads created by <xref:System.Threading.Thread> and other APIs that don't specify an explicit stack size. The value is specified as a hexadecimal number representing bytes. This setting doesn't affect the main application thread.
+- Configures the default stack size for threads created by <xref:System.Threading.Thread> and other APIs that don't specify an explicit stack size. The value is interpreted as a hexadecimal number representing bytes. This setting doesn't affect the main application thread.
 - If not specified, the default stack size is determined by the operating system.
 
 | | Setting name | Values | Version introduced |

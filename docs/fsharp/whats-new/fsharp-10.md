@@ -386,3 +386,16 @@ If you want to opt out while still enjoying other preview features, set `Paralle
 ```
 
 Parallel compilation can significantly reduce compilation times for projects with multiple files and dependencies.
+
+## Type subsumption cache
+
+The compiler now caches type relationship checks to speed up type inference and improve IDE performance, particularly when working with complex type hierarchies.
+By storing and reusing results from previous subsumption checks, the compiler avoids redundant computations that previously slowed down compilation and IntelliSense.
+
+**Managing the cache:**
+
+In most cases, the type subsumption cache improves performance without any configuration.
+However, if you experience increased memory footprint or increased CPU usage (due to cache maintenance workers), you can adjust the cache behavior:
+
+* To disable the cache entirely, set `<LangVersion>9</LangVersion>` in your project file to fall back to F# 9 behavior.
+* To turn off asynchronous cache eviction (which increases thread pressure) and use synchronous eviction instead, set the `FSharp_CacheEvictionImmediate=1` environment variable.

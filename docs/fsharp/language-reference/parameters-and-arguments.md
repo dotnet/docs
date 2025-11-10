@@ -150,7 +150,7 @@ Baud Rate: 9600 Duplex: Full Parity: false
 Baud Rate: 4800 Duplex: Half Parity: false
 ```
 
-You can also specify an optional parameter to be a [value option](./value-options.md) type by applying a `[<Struct>]` attribute to it.
+You can also specify an optional parameter to be a [Value Option](./value-options.md) type by applying a `[<Struct>]` attribute to it.
 
 ```fsharp
 type T() =

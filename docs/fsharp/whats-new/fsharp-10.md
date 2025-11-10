@@ -27,7 +27,7 @@ Previously, when you used `#nowarn`, it would disable a warning for the remainde
 Let's look at a motivating example:
 
 ```fsharp
-// We know f is never called with a None.
+// We know f is never called with None.
 let f (Some a) =    // creates warning 25, which we want to suppress
     // 2000 loc, where the incomplete match warning is beneficial
 ```
@@ -253,7 +253,7 @@ When you use bare range braces like `{ 1..10 }`, you'll see a deprecation warnin
 Historically, F# allowed a special-case "sequence comprehension lite" syntax where you could omit the `seq` keyword:
 
 ```fsharp
-{ 1..10 } |> List.ofSeq  // implicit sequence
+{ 1..10 } |> List.ofSeq  // implicit sequence, warning FS3873 in F# 10
 ```
 
 In F# 10, the compiler warns about this pattern and encourages the explicit form:
@@ -263,6 +263,8 @@ seq { 1..10 } |> List.ofSeq
 ```
 
 This is currently a warning, not an error, giving you time to update your codebase.
+If you want to suppress this warning, use the `NoWarn` property in your project file or `#nowarn` directive locally and pass it the warning number: 3873.
+
 The explicit `seq` form improves code clarity and consistency with other computation expressions.
 Future versions of F# may make this an error, so we recommend adopting the explicit syntax when you update your code.
 
@@ -278,16 +280,17 @@ This caused subtle bugs, such as test attributes being ignored when you forgot `
 
 ```fsharp
 [<Fact>]
-let ``this is not a function`` = // Silently ignored, not a test!
+let ``this is not a function`` = // Silently ignored in F# 9, not a test!
     Assert.True(false)
 ```
 
-In F# 10, the compiler enforces attribute targets and raises an error when attributes are misapplied:
+In F# 10, the compiler enforces attribute targets and raises a warning when attributes are misapplied:
 
 ```fsharp
 [<Fact>]
-let ``works correctly`` () =  // Correct: function with unit parameter
-    Assert.True(true)
+//^^^^ - warning FS0842: This attribute cannot be applied to property, field, return value. Valid targets are: method
+let ``this is not a function`` =
+    Assert.True(false)
 ```
 
 **Important compatibility note:**
@@ -299,7 +302,7 @@ The early errors prevent test discovery problems and ensure that attributes like
 
 You can now await multiple tasks concurrently using [`and!`](../language-reference/computation-expressions.md#and) in [task expressions](../language-reference/task-expressions.md).
 Using `task` is a popular way to work with asynchronous workflows in F#, especially when you need interoperability with C#.
-However, until now there was no concise way to await multiple tasks concurrently in a computation expression.
+However, until now, there was no concise way to await multiple tasks concurrently in a computation expression.
 
 Perhaps you started with code that awaited computations sequentially:
 
@@ -336,7 +339,9 @@ task {
 
 This combines the semantics of the concurrent version with the simplicity of the sequential version.
 
-This feature implements F# language suggestion [#1363](https://github.com/fsharp/fslang-suggestions/issues/1363).
+This feature implements F# language suggestion [#1363](https://github.com/fsharp/fslang-suggestions/issues/1363), and it's implemented as an addition to the `FSharp.Core` library.
+Most projects get the latest version of `FSharp.Core` automatically from the compiler, unless they explicitly pin a version.
+In that case, you'll need to update it to use this feature.
 
 ## Better trimming by default
 
@@ -344,7 +349,7 @@ F# 10 removes a long-standing bit of friction with trimming F# assemblies.
 Trimming is the process of removing unused code from your published application to reduce its size.
 You no longer have to manually maintain an `ILLink.Substitutions.xml` file just to strip large F# metadata resource blobs (signature and optimization data that the compiler uses but your application doesn't need at runtime).
 
-When you publish with trimming enabled (`PublishTrimmed=true`), the F# build now automatically generates a substitutions file that targets these tooling-only F# resources.
+When you publish with trimming enabled (`PublishTrimmed=true`), the F# build now automatically generates an embedded substitutions file that targets these tooling-only F# resources.
 
 Previously, you had to manually maintain this file to strip the metadata.
 This added maintenance burden and was easy to forget.
@@ -356,7 +361,7 @@ You can turn off the auto-generation with the `<DisableILLinkSubstitutions>false
 ## Parallel compilation in preview
 
 An exciting update for F# users looking to reduce compilation times: the parallel compilation features are stabilizing.
-Starting with .NET 10, three features—graph-based type checking, parallel IL code generation, and parallel optimization—are grouped together under the `ParallelCompilation` project property.
+Starting with .NET 10, three features: graph-based type checking, parallel IL code generation, and parallel optimization, are grouped together under the `ParallelCompilation` project property.
 
 F# 10 enables this setting by default for projects using `LangVersion=Preview`.
 We plan to enable it for all projects in .NET 11.
@@ -367,6 +372,7 @@ To enable parallel compilation in F# 10:
 ```xml
 <PropertyGroup>
     <ParallelCompilation>true</ParallelCompilation>
+    <Deterministic>false</Deterministic> <!-- Note: deterministic builds don't get the benefits of parallel compilation -->
 </PropertyGroup>
 ```
 

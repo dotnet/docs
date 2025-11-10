@@ -16,7 +16,7 @@ _Released October 14, 2025_
 
 #### CVE-2025-55248 – Information Disclosure vulnerability
 
-This security update addresses a information disclosure vulnerability detailed in [CVE 2025-55248](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55248).
+This security update addresses an information disclosure vulnerability detailed in [CVE 2025-55248](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-55248).
 
 ### Quality and reliability improvements
 

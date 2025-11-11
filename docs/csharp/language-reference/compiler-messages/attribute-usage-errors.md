@@ -86,7 +86,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS7067**](#attribute-arguments-parameters): *Attribute constructor parameter is optional, but no default parameter value was specified.*
 - [**CS9331**](#predefined-attributes): *Attribute cannot be applied manually.*
 
-## Attribute arguments parameters
+## Attribute arguments and parameters
 
 The following errors occur when you use attribute arguments or parameters incorrectly:
 

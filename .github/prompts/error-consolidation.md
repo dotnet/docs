@@ -31,7 +31,7 @@ For each source file I specify in this chat, you'll do the following tasks:
 
 ## Search for other related articles that may be missed.
 
-First, let's find candidate source filees. Search all files in the docs/csharp/language-reference/compiler-messages and the docs/csharp/misc folder for any other errors and warnings that involve the target theme. Give me a list to review for possible additional consolidation. Don't make any edits until the originating user approves.
+First, let's find candidate source files. Search all files in the docs/csharp/language-reference/compiler-messages and the docs/csharp/misc folder for any other errors and warnings that involve the target theme. Give me a list to review for possible additional consolidation. Don't make any edits until the originating user approves.
 
 ## Final search in roslyn source
 
@@ -64,5 +64,5 @@ Understand these instructions, then suggest a list of themes and the included er
 
 ## Move from description to resolution
 
-Rework the highlighted section so the focus is on how to correct each error. This article doesn't need to explain the the associated language feature. Instead, in each section, provide links to language reference or language specification material that explains the rules violated when these diagnostics appear. Add explanatory context after each correction (in parentheses with the error code). Provided brief reasons why each correction is needed. Use detailed, sentence-style explanations rather than brief imperative statements. For each recommendation put the affectived error codes in parentheses, and in **bold** style. Remove extensive examples.
+Rework the highlighted section so the focus is on how to correct each error. This article doesn't need to explain the associated language feature. Instead, in each section, provide links to language reference or language specification material that explains the rules violated when these diagnostics appear. Add explanatory context after each correction (in parentheses with the error code). Provided brief reasons why each correction is needed. Use detailed, sentence-style explanations rather than brief imperative statements. For each recommendation put the affectived error codes in parentheses, and in **bold** style. Remove extensive examples.
 

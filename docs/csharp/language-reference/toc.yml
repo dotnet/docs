@@ -469,7 +469,8 @@ items:
   - name: Attribute declaration and usage
     href: ./compiler-messages/attribute-usage-errors.md
     displayName: >
-    CS9331
+      CS0243, CS0404, CS0415, CS0416, CS0447, CS0577, CS0578, CS0582, CS0609, CS0625,
+      CS0629, CS0636, CS0637, CS0641, CS0646, CS0653, CS0657, CS0658, CS0685, CS9331
   - name: Feature or version missing
     href: ./compiler-messages/feature-version-errors.md
     displayName: >
@@ -511,7 +512,8 @@ items:
     href: ./compiler-messages/async-await-errors.md
     displayName: >
       async, await,
-      CS1983, CS1985, CS1986, CS1989, CS1991, CS1992, CS1994, CS1995, CS1996, CS1997, CS1998, CS4008, CS4009, CS4014, CS4032, CS4033, CS8892, CS9123, CS9330
+      CS1983, CS1985, CS1986, CS1989, CS1991, CS1992, CS1994, CS1995, CS1996, CS1997,
+      CS1998, CS4008, CS4009, CS4014, CS4032, CS4033, CS8892, CS9123, CS9330
   - name: Reference parameters
     href: ./compiler-messages/ref-modifiers-errors.md
     displayName: >
@@ -927,8 +929,6 @@ items:
       href: ../misc/cs0239.md
     - name: CS0241
       href: ../misc/cs0241.md
-    - name: CS0243
-      href: ../misc/cs0243.md
     - name: CS0247
       href: ../misc/cs0247.md
     - name: CS0249
@@ -989,8 +989,6 @@ items:
       href: ../misc/cs0401.md
     - name: CS0403
       href: ../misc/cs0403.md
-    - name: CS0404
-      href: ../misc/cs0404.md
     - name: CS0405
       href: ../misc/cs0405.md
     - name: CS0406
@@ -1007,10 +1005,6 @@ items:
       href: ../misc/cs0412.md
     - name: CS0413
       href: ./compiler-messages/cs0413.md
-    - name: CS0415
-      href: ../misc/cs0415.md
-    - name: CS0416
-      href: ../misc/cs0416.md
     - name: CS0417
       href: ./compiler-messages/cs0417.md
     - name: CS0418
@@ -1045,8 +1039,6 @@ items:
       href: ./compiler-messages/cs0445.md
     - name: CS0446
       href: ./compiler-messages/cs0446.md
-    - name: CS0447
-      href: ../misc/cs0447.md
     - name: CS0449
       href: ../misc/cs0449.md
     - name: CS0450
@@ -1165,14 +1157,8 @@ items:
       href: ../misc/cs0574.md
     - name: CS0575
       href: ../misc/cs0575.md
-    - name: CS0577
-      href: ../misc/cs0577.md
-    - name: CS0578
-      href: ../misc/cs0578.md
     - name: CS0579
       href: ./compiler-messages/cs0579.md
-    - name: CS0582
-      href: ../misc/cs0582.md
     - name: CS0583
       href: ../misc/cs0583.md
     - name: CS0584
@@ -1195,8 +1181,6 @@ items:
       href: ../misc/cs0596.md
     - name: CS0601
       href: ../misc/cs0601.md
-    - name: CS0609
-      href: ../misc/cs0609.md
     - name: CS0610
       href: ../misc/cs0610.md
     - name: CS0616
@@ -1209,30 +1193,16 @@ items:
       href: ../misc/cs0621.md
     - name: CS0622
       href: ../misc/cs0622.md
-    - name: CS0625
-      href: ../misc/cs0625.md
-    - name: CS0629
-      href: ../misc/cs0629.md
     - name: CS0635
       href: ../misc/cs0635.md
-    - name: CS0636
-      href: ../misc/cs0636.md
-    - name: CS0637
-      href: ../misc/cs0637.md
-    - name: CS0641
-      href: ../misc/cs0641.md
     - name: CS0644
       href: ../misc/cs0644.md
     - name: CS0645
       href: ../misc/cs0645.md
-    - name: CS0646
-      href: ../misc/cs0646.md
     - name: CS0647
       href: ../misc/cs0647.md
     - name: CS0648
       href: ../misc/cs0648.md
-    - name: CS0653
-      href: ../misc/cs0653.md
     - name: CS0656
       href: ../misc/cs0656.md
     - name: CS0662
@@ -1261,8 +1231,6 @@ items:
       href: ../misc/cs0682.md
     - name: CS0683
       href: ../misc/cs0683.md
-    - name: CS0685
-      href: ../misc/cs0685.md
     - name: CS0686
       href: ./compiler-messages/cs0686.md
     - name: CS0689
@@ -1909,10 +1877,6 @@ items:
       href: ../misc/cs0612.md
     - name: CS0626
       href: ../misc/cs0626.md
-    - name: CS0657
-      href: ../misc/cs0657.md
-    - name: CS0658
-      href: ../misc/cs0658.md
     - name: CS0672
       href: ../misc/cs0672.md
     - name: CS0684

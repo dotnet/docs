@@ -45,68 +45,19 @@ The following example shows how tuples provide similar functionality to anonymou
 
 You can deconstruct a tuple into separate variables, which provides a convenient way to work with individual tuple elements. C# supports several ways to deconstruct tuples:
 
-```csharp
-// Define a method that returns a tuple
-(string Name, int Age, string City) GetPersonInfo()
-{
-    return ("Alice", 30, "Seattle");
-}
+:::code language="csharp" source="snippets/anonymous-types/Program.cs" ID="TupleDeconstructionMethod":::
 
-// Deconstruct using var for all variables
-var (name, age, city) = GetPersonInfo();
-Console.WriteLine($"{name} is {age} years old and lives in {city}");
-// Output: Alice is 30 years old and lives in Seattle
-
-// Deconstruct with explicit types
-(string personName, int personAge, string personCity) = GetPersonInfo();
-Console.WriteLine($"{personName}, {personAge}, {personCity}");
-
-// Deconstruct into existing variables
-string existingName;
-int existingAge;
-string existingCity;
-(existingName, existingAge, existingCity) = GetPersonInfo();
-
-// Deconstruct and discard unwanted values using the discard pattern (_)
-var (name2, _, city2) = GetPersonInfo();
-Console.WriteLine($"{name2} lives in {city2}");
-// Output: Alice lives in Seattle
-```
+:::code language="csharp" source="snippets/anonymous-types/Program.cs" ID="TupleDeconstruction":::
 
 Deconstruction is useful in loops and pattern matching scenarios:
 
-```csharp
-var people = new List<(string Name, int Age)>
-{
-    ("Bob", 25),
-    ("Carol", 35),
-    ("Dave", 40)
-};
-
-foreach (var (name, age) in people)
-{
-    Console.WriteLine($"{name} is {age} years old");
-}
-```
+:::code language="csharp" source="snippets/anonymous-types/Program.cs" ID="TupleDeconstructionLoop":::
 
 ### Tuples as a method return type
 
 A common use case for tuples is as a method return type. Instead of defining `out` parameters, you can group method results in a tuple. The following example demonstrates using tuples with dictionary lookups to return configuration ranges:
 
-```csharp
-var configLookup = new Dictionary<int, (int Min, int Max)>()
-{
-    [2] = (4, 10),
-    [4] = (10, 20),
-    [6] = (0, 23)
-};
-
-if (configLookup.TryGetValue(4, out (int Min, int Max) range))
-{
-    Console.WriteLine($"Found range: min is {range.Min}, max is {range.Max}");
-}
-// Output: Found range: min is 10, max is 20
-```
+:::code language="csharp" source="snippets/anonymous-types/Program.cs" ID="DictionaryTupleExample":::
 
 This pattern is useful when working with methods that need to return both a success indicator and multiple result values. The tuple allows you to use named fields (`Min` and `Max`) instead of generic names like `Item1` and `Item2`, making the code more readable and self-documenting.
 
@@ -158,9 +109,7 @@ Typically, when you use an anonymous type to initialize a variable, you declare 
 
 You can create an array of anonymously typed elements by combining an implicitly typed local variable and an implicitly typed array, as shown in the following example.
 
-```csharp
-var anonArray = new[] { new { name = "apple", diam = 4 }, new { name = "grape", diam = 1 }};
-```
+:::code language="csharp" source="snippets/anonymous-types/Program.cs" ID="AnonymousArray":::
 
 Anonymous types are [`class`](../../language-reference/keywords/class.md) types that derive directly from [`object`](../../language-reference/builtin-types/reference-types.md), and you can't cast them to any type except [`object`](../../language-reference/builtin-types/reference-types.md). The compiler provides a name for each anonymous type, although your application can't access it. From the perspective of the common language runtime, an anonymous type is no different from any other reference type.
 
@@ -180,11 +129,7 @@ Because the <xref:System.Object.Equals%2A> and <xref:System.Object.GetHashCode%2
 
 Anonymous types do override the <xref:System.Object.ToString%2A> method, concatenating the name and `ToString` output of every property surrounded by curly braces.
 
-```
-var v = new { Title = "Hello", Age = 24 };
-
-Console.WriteLine(v.ToString()); // "{ Title = Hello, Age = 24 }"
-```
+:::code language="csharp" source="snippets/anonymous-types/Program.cs" ID="ToStringExample":::
 
 ## See also
 

@@ -1,12 +1,12 @@
 ---
 title: Choose between .NET and .NET Framework for server apps
 description: A guide to help you decide which implementation of .NET to use when building a server app.
-ms.date: 11/22/2024
+ms.date: 11/07/2025
 ms.custom: updateeachrelease
 ---
 # .NET vs. .NET Framework for server apps
 
-There are two supported [.NET implementations](glossary.md#implementation-of-net) for building server-side apps: .NET and .NET Framework. **The latest .NET version (currently .NET 9) is the preferred version of .NET to use for server development.** The reasons to continue using .NET Framework are specific and limited.
+There are two supported [.NET implementations](glossary.md#implementation-of-net) for building server-side apps: .NET and .NET Framework. **The latest .NET version (currently .NET 10) is the preferred version of .NET to use for server development.** The reasons to continue using .NET Framework are specific and limited.
 
 | Implementation | Included versions                                   |
 |----------------|-----------------------------------------------------|

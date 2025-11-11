@@ -16,15 +16,15 @@ For more information about the container image platforms available at .NET 10's 
 
 ## Version introduced
 
-.NET 10 Preview 1
+.NET 10
 
 ## Previous behavior
 
-.NET 9 and earlier default tags reference images based on Debian.
+In .NET 9 and earlier versions, default tags referenced images based on Debian.
 
 ## New behavior
 
-Default tags reference images based on Ubuntu.
+Starting in .NET 10, default tags reference images based on Ubuntu.
 
 ## Type of breaking change
 

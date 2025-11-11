@@ -13,7 +13,7 @@ With this change, properties marked with `[Obsolete]` are now serialized by defa
 
 ## Version introduced
 
-.NET 10 Preview 1
+.NET 10
 
 ## Previous behavior
 
@@ -23,10 +23,10 @@ In previous versions of .NET, properties marked with the `[Obsolete]` attribute 
 public class Example
 {
     public string NormalProperty { get; set; } = "normal";
-    
+
     [Obsolete("This property is deprecated")]
     public string ObsoleteProperty { get; set; } = "obsolete";
-    
+
     [XmlIgnore]
     public string IgnoredProperty { get; set; } = "ignored";
 }

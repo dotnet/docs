@@ -3,7 +3,7 @@ title: Install .NET on Debian
 description: Learn about which versions of .NET SDK and .NET Runtime are supported, and how to install .NET on Debian.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/01/2024
+ms.date: 11/07/2025
 ms.custom: linux-related-content
 ---
 
@@ -13,15 +13,14 @@ This article describes how to install .NET on Debian. When a Debian version fall
 
 [!INCLUDE [linux-intro-sdk-vs-runtime](includes/linux-intro-sdk-vs-runtime.md)]
 
-[!INCLUDE [linux-install-package-manager-x64-vs-arm](includes/linux-install-package-manager-x64-vs-arm.md)]
-
 ## Supported distributions
 
 The following table is a list of currently supported .NET releases and the versions of Debian they're supported on. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of [Debian reaches end-of-life](https://wiki.debian.org/DebianReleases).
 
-| Debian | .NET    |
-|--------|---------|
-| 12     | 9, 8    |
+| Debian | .NET     |
+|--------|----------|
+| 13     | 10, 9, 8 |
+| 12     | 10, 9, 8 |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
@@ -33,6 +32,38 @@ The following table is a list of currently supported .NET releases and the versi
 
 [!INCLUDE [package-manager uninstall notice](./includes/linux-uninstall-preview-info.md)]
 
+## Debian 13
+
+[!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
+
+```bash
+wget https://packages.microsoft.com/config/debian/13/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
+rm packages-microsoft-prod.deb
+```
+
+[!INCLUDE [linux-release-wait](includes/linux-release-wait.md)]
+
+# [.NET 10](#tab/dotnet10)
+
+[!INCLUDE [linux-install-package-manager-x64-arm64](includes/linux-install-package-manager-x64-arm64.md)]
+
+[!INCLUDE [linux-apt-install-100](includes/linux-install-100-apt.md)]
+
+# [.NET 9](#tab/dotnet9)
+
+[!INCLUDE [linux-install-package-manager-x64-only](includes/linux-install-package-manager-x64-only.md)]
+
+[!INCLUDE [linux-apt-install-90](includes/linux-install-90-apt.md)]
+
+# [.NET 8](#tab/dotnet8)
+
+[!INCLUDE [linux-install-package-manager-x64-only](includes/linux-install-package-manager-x64-only.md)]
+
+[!INCLUDE [linux-apt-install-80](includes/linux-install-80-apt.md)]
+
+---
+
 ## Debian 12
 
 [!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
@@ -43,11 +74,23 @@ sudo dpkg -i packages-microsoft-prod.deb
 rm packages-microsoft-prod.deb
 ```
 
+# [.NET 10](#tab/dotnet10)
+
+[!INCLUDE [linux-release-wait](includes/linux-release-wait.md)]
+
+[!INCLUDE [linux-install-package-manager-x64-arm64](includes/linux-install-package-manager-x64-arm64.md)]
+
+[!INCLUDE [linux-apt-install-100](includes/linux-install-100-apt.md)]
+
 # [.NET 9](#tab/dotnet9)
+
+[!INCLUDE [linux-install-package-manager-x64-only](includes/linux-install-package-manager-x64-only.md)]
 
 [!INCLUDE [linux-apt-install-90](includes/linux-install-90-apt.md)]
 
 # [.NET 8](#tab/dotnet8)
+
+[!INCLUDE [linux-install-package-manager-x64-only](includes/linux-install-package-manager-x64-only.md)]
 
 [!INCLUDE [linux-apt-install-80](includes/linux-install-80-apt.md)]
 
@@ -70,7 +113,7 @@ This section provides information on common errors you may get while using APT t
 
 ### Unable to find package
 
-[!INCLUDE [linux-install-package-manager-x64-vs-arm](includes/linux-install-package-manager-x64-vs-arm.md)]
+[!INCLUDE [linux-install-package-manager-unsupported-architectures](includes/linux-install-package-manager-unsupported-architectures.md)]
 
 ### Unable to locate \\ Some packages could not be installed
 
@@ -92,7 +135,7 @@ If you're using a Debian version prior to 12, try the following commands:
 
 When you install with a package manager, these libraries are installed for you. But, if you manually install .NET or you publish a self-contained app, you'll need to make sure these libraries are installed:
 
-### 12.x
+### 13.x
 
 - libc6
 - libgcc-s1
@@ -102,23 +145,13 @@ When you install with a package manager, these libraries are installed for you. 
 - libstdc++6
 - zlib1g
 
-### 11.x
+### 12.x
 
 - libc6
 - libgcc-s1
 - libgssapi-krb5-2
-- libicu67
-- libssl1.1
-- libstdc++6
-- zlib1g
-
-### 10.x
-
-- libc6
-- libgcc1
-- libgssapi-krb5-2
-- libicu63
-- libssl1.1
+- libicu72
+- libssl3
 - libstdc++6
 - zlib1g
 

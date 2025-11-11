@@ -12,11 +12,11 @@ The `--interactive` flag for the .NET CLI now defaults to `true` in user-centric
 
 ## Version introduced
 
-.NET 10 Preview 3
+.NET 10
 
 ## Previous behavior
 
-The `--interactive` flag always defaulted to `false` unless explicitly specified by the user.
+Previously, the `--interactive` flag always defaulted to `false` unless explicitly specified by the user.
 
 ```bash
 dotnet restore --interactive

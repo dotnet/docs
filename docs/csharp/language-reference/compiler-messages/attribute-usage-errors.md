@@ -100,8 +100,8 @@ To correct these errors, follow these rules.
 
 - Use compile-time constant values for attribute arguments instead of type parameters (**CS0416**). Attribute arguments must be evaluated at compile time.
 - Don't use type arguments with attributes (**CS0447**). Type arguments aren't allowed in attribute usage.
-- Provide all required attribute parameters when applying the attribute (**CS7046**, **CS7047**). Check the attribute's constructor to see which parameters are mandatory.
-- Specify default values for optional constructor parameters when defining custom attributes (**CS7067**). Use the syntax `parameterType parameterName = defaultValue` in the attribute constructor.
+- Provide all required attribute parameters when you apply the attribute (**CS7046**, **CS7047**). Check the attribute's constructor to see which parameters are mandatory.
+- Specify default values for optional constructor parameters when you define custom attributes (**CS7067**). Use the syntax `parameterType parameterName = defaultValue` in the attribute constructor.
 
 For more information, see [Attributes](../../advanced-topics/reflection-and-attributes/index.md) and [Generics](../../fundamentals/types/generics.md).
 
@@ -119,7 +119,6 @@ The following errors occur when you define attribute classes that don't meet the
 To correct these errors, follow these rules.
 
 - Apply attributes only to valid declaration types (**CS0404**). Check the attribute's `AttributeUsage` to see which targets are allowed.
-- Don't apply attributes to property or event accessors unless they're valid on accessors (**CS0641**). Apply them to the property or event declaration instead.
 - Remove the `abstract` modifier from attribute classes, or derive from a non-abstract attribute class (**CS0653**). Attributes must be instantiable.
 - Apply <xref:System.AttributeUsageAttribute> only to classes that derive from `Attribute` (**CS0641**). This attribute controls how other attributes are used.
 

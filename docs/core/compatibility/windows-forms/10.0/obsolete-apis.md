@@ -18,11 +18,11 @@ In .NET 10 and later versions, use of these APIs produces a compile-time warning
 
 The following table lists the custom diagnostic IDs and their corresponding warning messages.
 
-| Diagnostic ID | Description | Severity | Version introduced |
-|---------------|-------------|----------|--------------------|
-| [WFDEV004](/dotnet/desktop/winforms/wfdev-diagnostics/wfdev004) | <xref:System.Windows.Forms.Form.OnClosing(System.ComponentModel.CancelEventArgs)?displayProperty=nameWithType>, <xref:System.Windows.Forms.Form.OnClosed(System.EventArgs)?displayProperty=nameWithType> and the corresponding events are obsolete. Use <xref:System.Windows.Forms.Form.OnFormClosing(System.Windows.Forms.FormClosingEventArgs)?displayProperty=nameWithType>, <xref:System.Windows.Forms.Form.OnFormClosed(System.Windows.Forms.FormClosedEventArgs)?displayProperty=nameWithType>, <xref:System.Windows.Forms.Form.FormClosing?displayProperty=nameWithType> and <xref:System.Windows.Forms.Form.FormClosed?displayProperty=nameWithType> instead. | Warning | Preview 1 |
-| [WFDEV005](/dotnet/desktop/winforms/wfdev-diagnostics/wfdev005) | <xref:System.Windows.Clipboard.GetData(System.String)?displayProperty=nameWithType> method is obsolete. Use <xref:System.Windows.Forms.Clipboard.TryGetData*?displayProperty=nameWithType> methods instead. | Warning | Preview 1 |
-| [WFDEV006](/dotnet/desktop/winforms/wfdev-diagnostics/wfdev006) | <xref:System.Windows.Forms.ContextMenu>, <xref:System.Windows.Forms.DataGrid>, <xref:System.Windows.Forms.MainMenu>, <xref:System.Windows.Forms.Menu>, <xref:System.Windows.Forms.StatusBar>, <xref:System.Windows.Forms.ToolBar> are obsolete. They're provided for binary compatibility with .NET Framework. | Warning | Preview 1 |
+| Diagnostic ID | Description | Severity |
+|---------------|-------------|----------|
+| [WFDEV004](/dotnet/desktop/winforms/wfdev-diagnostics/wfdev004) | <xref:System.Windows.Forms.Form.OnClosing(System.ComponentModel.CancelEventArgs)?displayProperty=nameWithType>, <xref:System.Windows.Forms.Form.OnClosed(System.EventArgs)?displayProperty=nameWithType> and the corresponding events are obsolete. Use <xref:System.Windows.Forms.Form.OnFormClosing(System.Windows.Forms.FormClosingEventArgs)?displayProperty=nameWithType>, <xref:System.Windows.Forms.Form.OnFormClosed(System.Windows.Forms.FormClosedEventArgs)?displayProperty=nameWithType>, <xref:System.Windows.Forms.Form.FormClosing?displayProperty=nameWithType> and <xref:System.Windows.Forms.Form.FormClosed?displayProperty=nameWithType> instead. | Warning |
+| [WFDEV005](/dotnet/desktop/winforms/wfdev-diagnostics/wfdev005) | <xref:System.Windows.Clipboard.GetData(System.String)?displayProperty=nameWithType> method is obsolete. Use <xref:System.Windows.Forms.Clipboard.TryGetData*?displayProperty=nameWithType> methods instead. | Warning |
+| [WFDEV006](/dotnet/desktop/winforms/wfdev-diagnostics/wfdev006) | <xref:System.Windows.Forms.ContextMenu>, <xref:System.Windows.Forms.DataGrid>, <xref:System.Windows.Forms.MainMenu>, <xref:System.Windows.Forms.Menu>, <xref:System.Windows.Forms.StatusBar>, <xref:System.Windows.Forms.ToolBar> are obsolete. They're provided for binary compatibility with .NET Framework. | Warning |
 
 ## Version introduced
 

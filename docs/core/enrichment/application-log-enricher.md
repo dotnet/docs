@@ -165,7 +165,7 @@ Here's a complete example showing how to set up the service log enricher:
 
 **Program.cs:**
 
-### [.NET 10+](#tab/net10-plus-config)
+### [.NET 10+](#tab/net10-plus-full-example)
 
 ```csharp
 using System.Text.Json;
@@ -193,7 +193,7 @@ logger.LogInformation("This is a sample log message");
 await host.RunAsync();
 ```
 
-### [.NET 9 and earlier](#tab/net9-earlier-config)
+### [.NET 9 and earlier](#tab/net9-earlier-full-example)
 
 :::code language="csharp" source="snippets/servicelogenricher/Program.cs" :::
 

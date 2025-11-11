@@ -218,7 +218,7 @@ public class Program
         public int[] arr;
     }
 
-    public static void Main()
+    public static int Main()
     {
         int[] x = new int[10];
         GCStruct y = new GCStruct() { arr = x };

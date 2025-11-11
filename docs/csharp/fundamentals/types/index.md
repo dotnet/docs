@@ -54,7 +54,7 @@ C# provides a standard set of built-in types. These represent integers, floating
 
 ## Custom types
 
-You use the [`struct`](../../language-reference/builtin-types/struct.md), [`class`](../../language-reference/keywords/class.md), [`interface`](../../language-reference/keywords/interface.md), [`enum`](../../language-reference/builtin-types/enum.md), and [`record`](../../language-reference/builtin-types/record.md) constructs to create your own custom types. The .NET class library itself is a collection of custom types that you can use in your own applications. By default, the most frequently used types in the class library are available in any C# program. Others become available only when you explicitly add a project reference to the assembly that defines them. After the compiler has a reference to the assembly, you can declare variables (and constants) of the types declared in that assembly in source code. For more information, see [.NET Class Library](../../../standard/class-library-overview.md).
+You use the [`struct`](../../language-reference/builtin-types/struct.md), [`class`](../../language-reference/keywords/class.md), [`interface`](../../language-reference/keywords/interface.md), [`enum`](../../language-reference/builtin-types/enum.md), and [`record`](../../language-reference/builtin-types/record.md) constructs to create your own custom types. The .NET class library itself is a collection of custom types that you can use in your own applications. By default, the most frequently used types in the class library are available in any C# program. Others become available only when you explicitly add a project reference to the assembly that defines them. After the compiler has a reference to the assembly, you can declare variables (and constants) of the types declared in that assembly in source code.
 
 One of the first decisions you make when defining a type is deciding which construct to use for your type. The following list helps make that initial decision. There's overlap in the choices. In most scenarios, more than one option is a reasonable choice.
 
@@ -82,14 +82,14 @@ The following illustration shows the relationship between value types and refere
 
 Classes and structs are two of the basic constructs of the common type system in .NET. Each is essentially a data structure that encapsulates a set of data and behaviors that belong together as a logical unit. The data and behaviors are the *members* of the class, struct, or record. The members include its methods, properties, events, and so on, as listed later in this article.
 
-A class, struct, or record declaration is like a blueprint that is used to create instances or objects at run time. If you define a class, struct, or record named `Person`, `Person` is the name of the type. If you declare and initialize a variable `p` of type `Person`, `p` is said to be an object or instance of `Person`. Multiple instances of the same `Person` type can be created, and each instance can have different values in its properties and fields.  
-  
+A class, struct, or record declaration is like a blueprint that is used to create instances or objects at run time. If you define a class, struct, or record named `Person`, `Person` is the name of the type. If you declare and initialize a variable `p` of type `Person`, `p` is said to be an object or instance of `Person`. Multiple instances of the same `Person` type can be created, and each instance can have different values in its properties and fields.
+
 A class is a reference type. When an object of the type is created, the variable to which the object is assigned holds only a reference to that memory. When the object reference is assigned to a new variable, the new variable refers to the original object. Changes made through one variable are reflected in the other variable because they both refer to the same data.
-  
+
 A struct is a value type. When a struct is created, the variable to which the struct is assigned holds the struct's actual data. When the struct is assigned to a new variable, it's copied. The new variable and the original variable therefore contain two separate copies of the same data. Changes made to one copy don't affect the other copy.
 
 Record types can be either reference types (`record class`) or value types (`record struct`). Record types contain methods that support value-equality.
-  
+
 In general, classes are used to model more complex behavior. Classes typically store data that is intended to be modified after a class object is created. Structs are best suited for small data structures. Structs typically store data that isn't intended to be modified after the struct is created. Record types are data structures with extra compiler synthesized members. Records typically store data that isn't intended to be modified after the object is created.
 
 ### Value types

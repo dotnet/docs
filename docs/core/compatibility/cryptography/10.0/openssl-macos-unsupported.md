@@ -1,11 +1,11 @@
 ---
-title: "Breaking change: OpenSSL cryptographic primitives aren't supported on macOS"
+title: "Breaking change: OpenSSL cryptographic primitives not supported on macOS"
 description: "Learn about the breaking change in .NET 10 where OpenSSL cryptographic primitives are no longer supported on macOS."
 ms.date: 06/23/2025
 ai-usage: ai-assisted
 ms.custom: https://github.com/dotnet/docs/issues/46789
 ---
-# OpenSSL cryptographic primitives are not supported on macOS
+# OpenSSL cryptographic primitives not supported on macOS
 
 Starting in .NET 10, OpenSSL-backed cryptographic primitives are no longer supported on macOS. <xref:System.Security.Cryptography.AesCcm?displayProperty=fullName> and classes that are specific to OpenSSL, such as <xref:System.Security.Cryptography.RSAOpenSsl?displayProperty=fullName>, now throw a <xref:System.PlatformNotSupportedException> on macOS.
 

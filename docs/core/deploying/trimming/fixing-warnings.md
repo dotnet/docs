@@ -386,6 +386,7 @@ void ProcessData()
 ```
 
 This approach:
+
 - Makes it clear which specific call is suppressed
 - Prevents accidentally suppressing other warnings if the code changes
 - Keeps the justification close to the suppressed call

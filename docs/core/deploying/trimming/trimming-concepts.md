@@ -47,6 +47,7 @@ Assembly asm = Assembly.LoadFrom(pluginPath);  // What's in this assembly?
 ```
 
 In these examples, the trimmer has no way to know:
+
 - Which type the user will enter
 - What type `GetSomeObject()` returns
 - What code exists in the dynamically loaded assembly
@@ -75,6 +76,7 @@ PrintMethodNames(typeof(DateTime));
 ```
 
 From the trimmer's perspective:
+
 1. It sees `type.GetMethods()` is called
 2. It doesn't know what `type` will be (it's a parameter)
 3. It can't determine which types' methods need to be preserved
@@ -109,6 +111,7 @@ PrintMethodNames(typeof(DateTime));
 ```
 
 Now the trimmer understands:
+
 1. `PrintMethodNames` requires its parameter to have `PublicMethods` preserved
 2. The call site passes `typeof(DateTime)`
 3. Therefore, `DateTime`'s public methods must be kept

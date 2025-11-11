@@ -22,15 +22,17 @@ For more information on installing .NET without a package manager, see one of th
 
 The following table is a list of currently supported .NET releases and the versions of Fedora they're supported on. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of [Fedora reaches end-of-life](https://fedoraproject.org/wiki/End_of_life).
 
-| Fedora | .NET           |
-|--------|----------------|
-| 43     | 10.0, 9.0, 8.0 |
-| 42     | 10.0, 9.0, 8.0 |
-| 41     | 9.0, 8.0       |
+| Fedora | .NET     |
+|--------|----------|
+| 43     | 10, 9, 8 |
+| 42     | 10, 9, 8 |
+| 41     | 9, 8     |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
 # [.NET 10](#tab/dotnet10)
+
+[!INCLUDE [linux-release-wait](includes/linux-release-wait.md)]
 
 [!INCLUDE [linux-dnf-install-100](includes/linux-install-100-dnf.md)]
 

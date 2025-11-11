@@ -19,7 +19,7 @@ The following table is a list of currently supported .NET releases and the versi
 
 | Debian | .NET     |
 |--------|----------|
-| 13     | 10, 9    |
+| 13     | 10, 9, 8 |
 | 12     | 10, 9, 8 |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
@@ -41,6 +41,8 @@ wget https://packages.microsoft.com/config/debian/13/packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
 rm packages-microsoft-prod.deb
 ```
+
+[!INCLUDE [linux-release-wait](includes/linux-release-wait.md)]
 
 # [.NET 10](#tab/dotnet10)
 
@@ -73,6 +75,8 @@ rm packages-microsoft-prod.deb
 ```
 
 # [.NET 10](#tab/dotnet10)
+
+[!INCLUDE [linux-release-wait](includes/linux-release-wait.md)]
 
 [!INCLUDE [linux-install-package-manager-x64-arm64](includes/linux-install-package-manager-x64-arm64.md)]
 

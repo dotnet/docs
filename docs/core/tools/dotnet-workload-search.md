@@ -33,6 +33,8 @@ For more information about the `dotnet workload` commands, see the [dotnet workl
 
 ## Options
 
+[!INCLUDE [response-file](../../../includes/cli-response-file.md)]
+
 [!INCLUDE [help](../../../includes/cli-help.md)]
 
 [!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]

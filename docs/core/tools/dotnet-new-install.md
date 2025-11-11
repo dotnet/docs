@@ -54,6 +54,8 @@ Starting with .NET SDK 6.0.100, installed template packages are available in lat
 
 ## Options
 
+[!INCLUDE [response-file](../../../includes/cli-response-file.md)]
+
 - **`--add-source|--nuget-source <SOURCE>`**
 
   By default, `dotnet new install` uses the hierarchy of NuGet configuration files from the current directory to determine the NuGet source the package can be installed from. If `--nuget-source` is specified, the source will be added to the list of sources to be checked.

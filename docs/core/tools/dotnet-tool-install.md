@@ -96,6 +96,8 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 
 ## Options
 
+[!INCLUDE [response-file](../../../includes/cli-response-file.md)]
+
 [!INCLUDE [allow-downgrade](../../../includes/cli-allow-downgrade.md)]
 
 - **`--allow-roll-forward`**

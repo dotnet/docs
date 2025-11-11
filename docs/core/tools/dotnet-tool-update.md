@@ -58,6 +58,8 @@ The `dotnet tool update` command provides a way for you to update .NET tools on 
 
 ## Options
 
+[!INCLUDE [response-file](../../../includes/cli-response-file.md)]
+
 [!INCLUDE [add-source](../../../includes/cli-add-source.md)]
 
 - **`--all`**

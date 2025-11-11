@@ -74,6 +74,8 @@ The `dotnet workload update` command also downloads advertising manifests. The d
 
 ## Options
 
+[!INCLUDE [response-file](../../../includes/cli-response-file.md)]
+
 [!INCLUDE [config-file](../../../includes/cli-configfile.md)]
 
 [!INCLUDE [disable-parallel](../../../includes/cli-disable-parallel.md)]

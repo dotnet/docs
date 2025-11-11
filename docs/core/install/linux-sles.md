@@ -3,7 +3,7 @@ title: Install .NET on SUSE Enterprise Linux
 description: Learn about which versions of .NET SDK and .NET Runtime are supported, and how to install .NET on SUSE Enterprise Linux (SLES).
 author: adegeo
 ms.author: adegeo
-ms.date: 11/11/2024
+ms.date: 11/07/2025
 ms.custom: linux-related-content
 ---
 
@@ -15,12 +15,13 @@ ms.custom: linux-related-content
 
 ## Supported distributions
 
-The following table is a list of currently supported .NET releases on SLES 15. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of SLES is no longer supported.
+The following table is a list of currently supported .NET releases on SLES. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of SLES is no longer supported.
 
-| SLES   | .NET     |
-|--------|----------|
-| 15.6   | 9.0, 8.0 |
-| 15.5   | 9.0, 8.0 |
+| SLES   | .NET      |
+|--------|-----------|
+| 16.0   | 10, 9, 8  |
+| 15.7   | 10, 9, 8  |
+| 15.6   | 10, 9, 8  |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
@@ -31,6 +32,36 @@ The following table is a list of currently supported .NET releases on SLES 15. T
 ## Remove preview versions
 
 [!INCLUDE [package-manager uninstall notice](./includes/linux-uninstall-preview-info.md)]
+
+## SLES 16
+
+[!INCLUDE [linux-prep-intro-generic](includes/linux-prep-intro-generic.md)]
+
+```bash
+sudo rpm -Uvh https://packages.microsoft.com/config/sles/16/packages-microsoft-prod.rpm
+```
+
+# [.NET 10](#tab/dotnet10)
+
+[!INCLUDE [linux-release-wait](includes/linux-release-wait.md)]
+
+[!INCLUDE [linux-install-package-manager-x64-arm64](includes/linux-install-package-manager-x64-arm64.md)]
+
+[!INCLUDE [linux-zyp-install-100](includes/linux-install-100-zyp.md)]
+
+# [.NET 9](#tab/dotnet9)
+
+[!INCLUDE [linux-install-package-manager-x64-only](includes/linux-install-package-manager-x64-only.md)]
+
+[!INCLUDE [linux-zyp-install-90](includes/linux-install-90-zyp.md)]
+
+# [.NET 8](#tab/dotnet8)
+
+[!INCLUDE [linux-install-package-manager-x64-only](includes/linux-install-package-manager-x64-only.md)]
+
+[!INCLUDE [linux-zyp-install-80](includes/linux-install-80-zyp.md)]
+
+---
 
 ## SLES 15
 
@@ -46,7 +77,25 @@ Currently, the SLES 15 Microsoft repository setup package installs the *microsof
 sudo ln -s /etc/yum.repos.d/microsoft-prod.repo /etc/zypp/repos.d/microsoft-prod.repo
 ```
 
+# [.NET 10](#tab/dotnet10)
+
+[!INCLUDE [linux-install-package-manager-x64-arm64](includes/linux-install-package-manager-x64-arm64.md)]
+
+[!INCLUDE [linux-zyp-install-100](includes/linux-install-100-zyp.md)]
+
+# [.NET 9](#tab/dotnet9)
+
+[!INCLUDE [linux-install-package-manager-x64-only](includes/linux-install-package-manager-x64-only.md)]
+
 [!INCLUDE [linux-zyp-install-90](includes/linux-install-90-zyp.md)]
+
+# [.NET 8](#tab/dotnet8)
+
+[!INCLUDE [linux-install-package-manager-x64-only](includes/linux-install-package-manager-x64-only.md)]
+
+[!INCLUDE [linux-zyp-install-80](includes/linux-install-80-zyp.md)]
+
+---
 
 ## How to install other versions
 
@@ -55,6 +104,10 @@ sudo ln -s /etc/yum.repos.d/microsoft-prod.repo /etc/zypp/repos.d/microsoft-prod
 ## Troubleshoot the package manager
 
 This section provides information on common errors you may get while using the package manager to install .NET.
+
+### Unable to find package
+
+[!INCLUDE [linux-install-package-manager-unsupported-architectures](includes/linux-install-package-manager-unsupported-architectures.md)]
 
 ### Failed to fetch
 

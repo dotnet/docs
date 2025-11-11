@@ -12,7 +12,7 @@ In .NET 10 Preview 2, the default workload update mode changed from "manifests" 
 
 ## Version introduced
 
-.NET 10 Preview 2
+.NET 10
 
 ## Previous behavior
 
@@ -20,7 +20,7 @@ Previously, workloads operated in 'loose manifest' mode by default. Errant `dotn
 
 ## New behavior
 
-Workloads will never float unless you:
+Starting in .NET 10, workloads will never float unless you:
 
 * Update your SDK.
 * Perform an explicit update command.
@@ -29,7 +29,7 @@ When you perform an update, all workloads will use known-matching versions from 
 
 ## Type of breaking change
 
-This is a [behavioral change](../../categories.md#behavioral-change).
+This change is a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 

@@ -13,7 +13,7 @@ This change reverts the termination signal handling behavior to what it used to 
 
 ## Version introduced
 
-.NET 10 Preview 5
+.NET 10
 
 ## Previous behavior
 

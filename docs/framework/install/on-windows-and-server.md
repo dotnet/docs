@@ -1,7 +1,7 @@
 ---
 title: Install .NET Framework on Windows
 description: Learn how to install .NET Framework on Windows 11, Windows 10, and Windows Server. This article also includes information about .NET Framework and unsupported versions of Windows, such as Windows 8, Windows Vista, and Windows XP.
-ms.date: 07/10/2025
+ms.date: 11/06/2025
 ---
 # Install .NET Framework on Windows and Windows Server
 
@@ -52,6 +52,7 @@ In the following table, ❌ represents an unsupported version of Windows 11 and 
 
 | Windows 11 version    | .NET Framework included | Latest .NET Framework supported |
 |-----------------------|-------------------------|---------------------------------|
+| ✔️ 25H2 (September 2025) | 4.8.1                   | 4.8.1                           |
 | ✔️ 24H2 (October 2024)   | 4.8.1                   | 4.8.1                           |
 | ✔️ 23H2 (October 2023)   | 4.8.1                   | 4.8.1                           |
 | ❌ 22H2 (September 2022) | 4.8.1                   | 4.8.1                           |

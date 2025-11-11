@@ -52,7 +52,7 @@ C# 14 introduces several new features and enhancements to improve developer prod
 - First-class support for implicit conversions of `Span<T>` and `ReadOnlySpan<T>`.
 - Parameter modifiers like `ref`, `in`, or `out` are allowed in lambda expressions without specifying parameter types.
 - Support for partial instance constructors and partial events, complementing partial methods and properties introduced in C# 13.
-- New `extension` blocks add support for static extension methods, and static and instance extension properties.
+- New `extension` blocks add support for static extension methods and instance extension properties.
 - Null-conditional assignment using the `?.` operator.
 - User-defined compound assignment operators like `+=` and `-=`.
 - User-defined increment (`++`) and decrement (`--`) operators.

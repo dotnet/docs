@@ -32,24 +32,27 @@ namespace SystemTextJsonSamples
             Console.WriteLine($"String in buffer is: {Encoding.UTF8.GetString(buffer)}");
 
             // Search for "Summary" property name
-            while (reader.TokenType != JsonTokenType.PropertyName || !reader.ValueTextEquals("Summary"))
+            var foundSummary = false;
+            while (reader.Read() || GetMoreBytesFromStream(stream, ref buffer, ref reader))
             {
-                if (!reader.Read())
+                if (reader.TokenType == JsonTokenType.PropertyName && 
+                    reader.ValueTextEquals("Summary"))
                 {
-                    // Not enough of the JSON is in the buffer to complete a read.
-                    GetMoreBytesFromStream(stream, ref buffer, ref reader);
+                    foundSummary = true;
+                    break;
                 }
             }
 
-            // Found the "Summary" property name.
-            Console.WriteLine($"String in buffer is: {Encoding.UTF8.GetString(buffer)}");
-            while (!reader.Read())
+            if (foundSummary)
             {
-                // Not enough of the JSON is in the buffer to complete a read.
-                GetMoreBytesFromStream(stream, ref buffer, ref reader);
+                // Found the "Summary" property name.
+                Console.WriteLine($"String in buffer is: {Encoding.UTF8.GetString(buffer)}");
+                if (!reader.Read() && (!GetMoreBytesFromStream(stream, ref buffer, ref reader) || !reader.Read()))
+                    throw new Exception("Invalid JSON");
+                
+                // Display value of Summary property, that is, "Hot".
+                Console.WriteLine($"Got property value: {reader.GetString()}");
             }
-            // Display value of Summary property, that is, "Hot".
-            Console.WriteLine($"Got property value: {reader.GetString()}");
         }
 
         private static bool GetMoreBytesFromStream(

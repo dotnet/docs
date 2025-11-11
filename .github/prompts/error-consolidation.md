@@ -21,7 +21,7 @@ For each source file I specify in this chat, you'll do the following tasks:
 
 - Add the contents of the source file to the destination.md file.
   - Include the source error code in the YML header for f1_keywords and helpviewer_keywords.
-  - Add an entry with an anchor for the error error code and its corresponding error message.
+  - Add an entry with an anchor for the error error code and its corresponding error message. The error message should be the verbatim compiler error message.
   - Add the contents of the source file as a new H2 in the destination file.
   - Add a redirection for the source file in the file .openpublishing.redirection.csharp.json. Make the destination point to destination file. Place the new entry in sorted order based on 'source_path_from_root'.
 - Update the TOC file:
@@ -46,7 +46,7 @@ To make sure you've found all related errors, we'll check the source.  Look in `
 I'll give you error codes one by one. For each, I want you to do the following:
 
 - Add the new error code to the front matter of the destination file, for both the `f1_keywords` and `helpview_keywords` table.
-- Add the new error code and error message to the table at the top of the destination file.
+- Add the new error code and error message to the table at the top of the destination file. The error message should be the verbatim text from the compiler
 - Add the new error code to the list of `displayName` elements in the TOC file entry for the destination file.
 - Remove the new error code from the front matter in the file `csharp/misc/sorry-we-don-t-have-specifics-on-this-csharp-errors.md` file.
 

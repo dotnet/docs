@@ -11,7 +11,7 @@ Applying explicit `Size` to a struct decorated with <xref:System.Runtime.Compile
 
 ## Version introduced
 
-.NET 10 Preview 7
+.NET 10
 
 ## Previous behavior
 

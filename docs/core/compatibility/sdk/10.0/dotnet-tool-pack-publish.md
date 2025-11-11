@@ -13,7 +13,7 @@ Since the SDK now supports creating [platform-specific tools](https://github.com
 
 ## Version introduced
 
-.NET 10 Preview 6
+.NET 10
 
 ## Previous behavior
 

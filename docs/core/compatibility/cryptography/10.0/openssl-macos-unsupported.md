@@ -11,7 +11,7 @@ Starting in .NET 10, OpenSSL-backed cryptographic primitives are no longer suppo
 
 ## Version introduced
 
-.NET 10 Preview 6
+.NET 10
 
 ## Previous behavior
 
@@ -21,7 +21,7 @@ Previously, classes that are specific to OpenSSL, such as <xref:System.Security.
 
 ## New behavior
 
-Classes that are specific to OpenSSL, such as <xref:System.Security.Cryptography.RSAOpenSsl>, don't work on macOS even if OpenSSL is available, and a <xref:System.PlatformNotSupportedException> exception is thrown.
+Starting in .NET 10, classes that are specific to OpenSSL, such as <xref:System.Security.Cryptography.RSAOpenSsl>, don't work on macOS even if OpenSSL is available, and a <xref:System.PlatformNotSupportedException> exception is thrown.
 
 <xref:System.Security.Cryptography.AesCcm> throws a <xref:System.PlatformNotSupportedException> exception.
 

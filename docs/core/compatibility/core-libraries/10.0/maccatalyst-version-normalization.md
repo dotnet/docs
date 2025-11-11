@@ -11,15 +11,15 @@ This update ensures that MacCatalyst version components retrieved from the OS ar
 
 ## Previous behavior
 
-The build component in `Version` was not previously normalized, which led to incorrect version checks on MacCatalyst when only two components (major and minor) were provided. This resulted in invalid version checks.
+Previously, the build component in `Version` was not previously normalized, which led to incorrect version checks on MacCatalyst when only two components (major and minor) were provided. This resulted in invalid version checks.
 
 ## New behavior
 
-The MacCatalyst build component is now normalized to `0`, ensuring consistent version checks. The revision component is always set to `-1`, as it is not specified on MacCatalyst or iOS.
+Starting in .NET 10, the MacCatalyst build component is now normalized to `0`, ensuring consistent version checks. The revision component is always set to `-1`, as it is not specified on MacCatalyst or iOS.
 
 ## Version introduced
 
-.NET 10 Preview 1
+.NET 10
 
 ## Type of breaking change
 

@@ -12,11 +12,11 @@ ms.custom: https://github.com/dotnet/docs/issues/44886
 
 ## Version introduced
 
-.NET 10 Preview 1
+.NET 10
 
 ## Previous behavior
 
-The `AsyncEnumerable` class in the [community-maintained `System.Linq.Async` package](https://www.nuget.org/packages/System.Linq.Async) provided LINQ support for <xref:System.Collections.Generic.IAsyncEnumerable`1>.
+Previously, the `AsyncEnumerable` class in the [community-maintained `System.Linq.Async` package](https://www.nuget.org/packages/System.Linq.Async) provided LINQ support for <xref:System.Collections.Generic.IAsyncEnumerable`1>.
 
 ## New behavior
 
@@ -40,7 +40,7 @@ If `System.Linq.Async` is consumed indirectly via another package, avoid ambigui
 
   ```xml
   <PackageReference Include="System.Linq.Async" Version="6.0.1">
-    <ExcludeAssets>compile</ExcludeAssets> 
+    <ExcludeAssets>compile</ExcludeAssets>
   </PackageReference>
   ```
 

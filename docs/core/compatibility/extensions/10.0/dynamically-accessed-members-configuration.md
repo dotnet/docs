@@ -12,7 +12,7 @@ ms.custom: https://github.com/dotnet/docs/issues/47433
 
 ## Version introduced
 
-.NET 10 Preview 6
+.NET 10
 
 ## Previous behavior
 

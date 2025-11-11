@@ -18,7 +18,7 @@ In C# 14 and later, methods with `ReadOnlySpan<T>` or `Span<T>` parameters can p
 
 ## Version introduced
 
-.NET 10 Preview 1
+.NET 10
 
 ## Type of breaking change
 

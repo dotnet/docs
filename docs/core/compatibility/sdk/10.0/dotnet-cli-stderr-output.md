@@ -3,7 +3,6 @@ title: "Breaking change - dotnet CLI commands log non-command-relevant data to s
 description: "Learn about the breaking change in .NET 10 where some dotnet CLI commands log verbose and non-command-relevant data to stderr instead of stdout."
 ms.date: 10/08/2025
 ai-usage: ai-generated
-ms.custom: https://dev.azure.com/msft-skilling/Content/_workitems/edit/494515
 ---
 
 # dotnet CLI commands log non-command-relevant data to stderr
@@ -12,7 +11,7 @@ Starting in .NET 10, some `dotnet` CLI command output that isn't core to the com
 
 ## Version introduced
 
-.NET 10 RC 2
+.NET 10
 
 ## Previous behavior
 

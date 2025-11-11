@@ -14,7 +14,7 @@ To accurately reflect nullability, the `[MemberNotNullWhen()]` attribute is appl
 
 ## Version introduced
 
-.NET 10 RC 1
+.NET 10
 
 ## Previous behavior
 

@@ -152,7 +152,7 @@ The following errors occur when you use specific predefined .NET attributes inco
 - **CS0646**: *Cannot specify the DefaultMember attribute on a type containing an indexer*
 - **CS9331**: *Attribute cannot be applied manually.*
 
-To correct these errors, follow these rules. For more information, see [Indexers](../../programming-guide/indexers/index.md) and [Platform Invoke (P/Invoke)](../../standard/native-interop/pinvoke.md).
+To correct these errors, follow these rules. For more information, see [Indexers](../../programming-guide/indexers/index.md) and [Platform Invoke (P/Invoke)](../../../standard/native-interop/pinvoke.md).
 
 - Remove <xref:System.Runtime.CompilerServices.IndexerNameAttribute> from explicit interface implementations (**CS0415**). Apply it only to public indexers.
 - Remove `IndexerName` from indexers marked with `override` (**CS0609**). Override indexers inherit the name from the base class.

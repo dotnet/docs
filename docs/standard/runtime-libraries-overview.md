@@ -1,7 +1,7 @@
 ---
 title: Runtime libraries overview
 description: Learn what is included in the Runtime libraries section of the table of contents.
-ms.date: 05/30/2024
+ms.date: 11/05/2025
 ---
 # Runtime libraries overview
 
@@ -19,16 +19,18 @@ Some libraries are provided in NuGet packages rather than as part of the runtime
 
 The following table shows some examples of package-provided libraries.
 
-| NuGet package                                         | Conceptual content                                                 |
-|-------------------------------------------------------|--------------------------------------------------------------------|
-| [`Microsoft.Extensions.Configuration`][configuration] | [Configuration](../core/extensions/configuration.md)               |
-| [`Microsoft.Extensions.DependencyInjection`][di]      | [Dependency injection](../core/extensions/dependency-injection.md) |
-| [`Microsoft.Extensions.FileSystemGlobbing`][fsg]      | [File globbing](../core/extensions/file-globbing.md)               |
-| [`Microsoft.Extensions.Hosting`][host]                | [Generic Host](../core/extensions/generic-host.md)                 |
-| [`Microsoft.Extensions.Http`][http]                   | [HTTP](../core/extensions/httpclient-factory.md)                   |
-| [`Microsoft.Extensions.Localization`][loc]            | [Localization](../core/extensions/localization.md)                 |
-| [`Microsoft.Extensions.Logging`][log]                 | [Logging](../core/extensions/logging.md)                           |
+| NuGet package                   | Conceptual content                     |
+|---------------------------------|----------------------------------------|
+| [`Microsoft.Extensions.AI`][ai] | [AI](../ai/microsoft-extensions-ai.md) |
+| [`Microsoft.Extensions.Configuration`][configuration] | [Configuration](../core/extensions/configuration.md) |
+| [`Microsoft.Extensions.DependencyInjection`][di] | [Dependency injection](../core/extensions/dependency-injection.md) |
+| [`Microsoft.Extensions.FileSystemGlobbing`][fsg] | [File globbing](../core/extensions/file-globbing.md) |
+| [`Microsoft.Extensions.Hosting`][host] | [Generic Host](../core/extensions/generic-host.md) |
+| [`Microsoft.Extensions.Http`][http] | [HTTP](../core/extensions/httpclient-factory.md) |
+| [`Microsoft.Extensions.Localization`][loc] | [Localization](../core/extensions/localization.md) |
+| [`Microsoft.Extensions.Logging`][log] | [Logging](../core/extensions/logging.md) |
 
+[ai]: https://www.nuget.org/packages/Microsoft.Extensions.AI
 [configuration]: https://www.nuget.org/packages/Microsoft.Extensions.Configuration
 [di]: https://www.nuget.org/packages/Microsoft.Extensions.DependencyInjection
 [fsg]: https://www.nuget.org/packages/Microsoft.Extensions.FileSystemGlobbing

@@ -12,8 +12,8 @@ Overall steps:
 
 We're going to work through a series of files consolidating errors and warnings.
 
-- For the duration of this chat, all references to "destination file" refer to `using-statement-declaration-errors.md.
-- For the duration of this chat, all references to "the target theme" refer to errors and warnings related to `using` statements and `using` variable declarations. Note that the `using` keyword can also be used for a `using` directive. Don't include those error messages.
+- For the duration of this chat, all references to "destination file" refer to `async-await-errors.md.
+- For the duration of this chat, all references to "the target theme" refer to errors and warnings related to `async` function declarations and `await` expressions.
 
 The destination file already contains a skeleton for the final output.
 

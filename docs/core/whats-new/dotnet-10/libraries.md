@@ -156,7 +156,7 @@ private static bool VerifyWithExternalMu(MLDsa verifyingKey, ReadOnlySpan<byte> 
 
 #### Composite ML-DSA
 
-.NET 10 introduces new types to support [ietf-lamps-pq-composite-sigs](https://datatracker.ietf.org/doc/draft-ietf-lamps-pq-composite-sigs/) (currently at draft 7), including the <xref:System.Security.Cryptography.CompositeMLDsa> and <xref:System.Security.Cryptography.CompositeMLDsaAlgorithm> types, with implementation of the primitive methods for RSA variants.
+.NET 10 introduces new types to support [ietf-lamps-pq-composite-sigs](https://datatracker.ietf.org/doc/draft-ietf-lamps-pq-composite-sigs/) (at draft 8 as of .NET 10 GA), including the <xref:System.Security.Cryptography.CompositeMLDsa> and <xref:System.Security.Cryptography.CompositeMLDsaAlgorithm> types, with implementation of the primitive methods for RSA variants.
 
 ```csharp
 var algorithm = CompositeMLDsaAlgorithm.MLDsa65WithRSA4096Pss;

@@ -78,14 +78,14 @@ Rule-specific options can be applied to a single rule, a set of rules, or all ru
 
 The following table shows the different rule severities that you can configure for all analyzer rules, including [code quality](quality-rules/index.md) and [code style](style-rules/index.md) rules.
 
-| Severity configuration value | Build-time behavior |
-|-|-|
-| `error` | Violations appear as build *errors* and cause builds to fail.|
-| `warning` | Violations appear as build *warnings* but do not cause builds to fail (unless you have an option set to treat warnings as errors). |
-| `suggestion` | Violations appear as build *messages* and as suggestions in the Visual Studio IDE. (In Visual Studio, suggestions appear as three gray dots under the first two characters.) |
-| `silent` | Violations aren't visible to the user.<br/><br/>However, for code-style rules, Visual Studio code-generation features still generate code in this style. These rules also participate in cleanup and appear in the **Quick Actions and Refactorings** menu in Visual Studio. |
-| `none` | Rule is suppressed completely.<br/><br/>However, for code-style rules, Visual Studio code-generation features still generate code in this style. |
-| `default` | The default severity of the rule is used. The default severities for each .NET release are listed in the [roslyn-analyzers repo](https://github.com/dotnet/roslyn-analyzers/blob/main/src/NetAnalyzers/Core/AnalyzerReleases.Shipped.md). In that table, "Disabled" corresponds to `none`, "Hidden" corresponds to `silent`, and "Info" corresponds to `suggestion`. |
+| Severity configuration value | Build-time behavior                                           |
+|------------------------------|---------------------------------------------------------------|
+| `error`                      | Violations appear as build *errors* and cause builds to fail. |
+| `warning`                    | Violations appear as build *warnings* but do not cause builds to fail (unless you have an option set to treat warnings as errors). |
+| `suggestion`                 | Violations appear as build *messages* and as suggestions in the Visual Studio IDE. (In Visual Studio, suggestions appear as three gray dots under the first two characters.) |
+| `silent`                     | Violations aren't visible to the user.<br/><br/>However, for code-style rules, Visual Studio code-generation features still generate code in this style. These rules also participate in cleanup and appear in the **Quick Actions and Refactorings** menu in Visual Studio. |
+| `none`                       | Rule is suppressed completely.<br/><br/>However, for code-style rules, Visual Studio code-generation features still generate code in this style. |
+| `default`                    | The default severity of the rule is used. The default severities for each .NET release are listed in the [roslyn-analyzers repo](https://github.com/dotnet/roslyn-analyzers/blob/main/src/NetAnalyzers/Core/AnalyzerReleases.Shipped.md). In that table, "Disabled" corresponds to `none`, "Hidden" corresponds to `silent`, and "Info" corresponds to `suggestion`. |
 
 #### Scope
 

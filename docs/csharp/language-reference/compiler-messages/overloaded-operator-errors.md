@@ -1,6 +1,6 @@
 ---
-title: Errors and warnings related to user defined operator declarations
-description: This article helps you diagnose and correct compiler errors and warnings when you declare user defined operators in your types
+title: Resolve errors and warnings related to user-defined operator declarations
+description: This article helps you diagnose and correct compiler errors and warnings when you declare user-defined operators in your types
 f1_keywords:
   - "CS0056"
   - "CS0057"
@@ -37,6 +37,9 @@ f1_keywords:
   - "CS9311"
   - "CS9312"
   - "CS9313"
+  - "CS9340"
+  - "CS9341"
+  - "CS9342"
 helpviewer_keywords:
   - "CS0056"
   - "CS0057"
@@ -73,12 +76,15 @@ helpviewer_keywords:
   - "CS9311"
   - "CS9312"
   - "CS9313"
-ms.date: 10/15/2025
+  - "CS9340"
+  - "CS9341"
+  - "CS9342"
+ms.date: 11/07/2025
 ai-usage: ai-assisted
 ---
-# Errors and warnings for overloaded, or user-defined operator declarations
+# Resolve errors and warnings in user-defined operator declarations
 
-There are several errors related to declaring overloaded operators. Overloaded operators are also referred to as user-defined operators
+This article covers the following compiler errors:
 
 <!-- The text in this list generates issues for Acrolinx, because they don't use contractions.
 That's by design. The text closely matches the text of the compiler error / warning for SEO purposes.
@@ -118,8 +124,9 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS9311**](#interface-and-inheritance-requirements): *Type does not implement interface member. The type cannot implement member because one of them is not an operator.*
 - [**CS9312**](#interface-and-inheritance-requirements): *Type cannot override inherited member because one of them is not an operator.*
 - [**CS9313**](#interface-and-inheritance-requirements): *Overloaded compound assignment operator takes one parameter.*
-
-The following sections provide examples of common issues and how to fix them.
+- [**CS9340**](#operator-signature-requirements): *Operator cannot be applied to operands. The closest inapplicable candidate is shown.*
+- [**CS9341**](#operator-signature-requirements): *Operator cannot be applied to operand. The closest inapplicable candidate is shown.*
+- [**CS9342**](#operator-signature-requirements): *Operator resolution is ambiguous between the following members.*
 
 ## Operator signature requirements
 
@@ -131,13 +138,26 @@ The following sections provide examples of common issues and how to fix them.
 - **CS0567**: *Interfaces can't contain operators.*
 - **CS0590**: *User-defined operators can't return void.*
 - **CS9310**: *The return type for this operator must be void.*
+- **CS9340**: *Operator cannot be applied to operands. The closest inapplicable candidate is shown.*
+- **CS9341**: *Operator cannot be applied to operand. The closest inapplicable candidate is shown.*
+- **CS9342**: *Operator resolution is ambiguous between the following members.*
 
-These errors occur when operator declarations don't follow the required signature rules. Each operator type has specific requirements for parameter types and return types.
+To declare operators with correct signatures, follow these requirements for the specific operator type. For more information, see [Operator overloading](../operators/operator-overloading.md).
+
+- Return the containing type (or a derived type) from `++` and `--` operators (**CS0448**).
+- Use the containing type as the parameter for `++` and `--` operators (**CS0559**).
+- Use the containing type as the parameter for unary operators (**CS0562**).
+- Include the containing type as at least one parameter in binary operators (**CS0563**).
+- Use the containing type as the first parameter and `int` as the second parameter for shift operators (**CS0564**).
+- Don't declare operators in interfaces (**CS0567**). Interfaces can't contain operator implementations.
+- Return a non-void type from most operators (**CS0590**), except for specific operators that require `void` returns (**CS9310**).
+- Provide operator overloads that accept the correct parameter types to avoid resolution failures (**CS9340**, **CS9341**).
+- Disambiguate operator calls by using explicit casts or providing more specific overloads (**CS9342**).
 
 > [!IMPORTANT]
 > The signature requirements for static binary operators and the corresponding instance compound assignment operators are different. Make sure the signature matches the declaration you want.
 
-For more information, see [Operator overloading](../operators/operator-overloading.md). The following example demonstrates these errors:
+The following example demonstrates signature errors:
 
 ```csharp
 class C1
@@ -179,8 +199,6 @@ public class C6
 }
 ```
 
-To fix these errors, ensure your operator declarations follow the signature requirements for the specific operator type you're overloading.
-
 ## Operator declaration requirements
 
 - **CS0558**: *User-defined operator must be declared static and public.*
@@ -191,7 +209,15 @@ To fix these errors, ensure your operator declarations follow the signature requ
 - **CS8931**: *Explicit implementation must be declared public to implement interface member in type.*
 - **CS9308**: *User-defined operator must be declared public.*
 
-These errors occur when operator declarations don't use the required modifiers or syntax. Most user-defined operators must be both `static` and `public`, and conversion operators require specific syntax. For more information, see [Operator overloading](../operators/operator-overloading.md) and [User-defined conversion operators](../operators/user-defined-conversion-operators.md). The following code demonstrates these errors:
+To declare operators correctly, follow these requirements for modifiers and containing types. For more information, see [Operator overloading](../operators/operator-overloading.md) and [User-defined conversion operators](../operators/user-defined-conversion-operators.md).
+
+- Declare operators with both `static` and `public` modifiers (**CS0558**, **CS9308**).
+- Don't declare operators in static classes (**CS0715**). Use regular classes or structs.
+- Use valid, overloadable operator symbols (**CS1037**).
+- Follow the correct syntax for conversion operators: `public static implicit/explicit operator <dest-type>(<source-type> parameter)` (**CS1553**).
+- Ensure explicit interface implementations of operators are `static` (**CS8930**) and `public` (**CS8931**).
+
+The following example demonstrates declaration errors:
 
 ```csharp
 public class C
@@ -208,16 +234,19 @@ class C2
 }
 ```
 
-To fix these errors, ensure your operator declarations include the required `static` and `public` modifiers, follow the correct syntax for conversion operators, and don't declare operators in static classes.
-
 ## Inconsistent accessibility
 
 - **CS0056**: *Inconsistent accessibility: return type 'type' is less accessible than operator 'operator'.*
 - **CS0057**: *Inconsistent accessibility: parameter type 'type' is less accessible than operator 'operator'.*
 
-These errors occur when you declare a public operator with return types or parameter types that have more restrictive accessibility than the operator itself. All public constructs must use publicly accessible types for their parameters and return values. For more information, see [Access Modifiers](../../programming-guide/classes-and-structs/access-modifiers.md).
+To ensure consistent accessibility in operator declarations, make all types used in public operators publicly accessible. For more information, see [Access Modifiers](../../programming-guide/classes-and-structs/access-modifiers.md).
 
-The following code snippets demonstrate these errors:
+- Ensure return types have at least the same accessibility as the operator (**CS0056**).
+- Ensure parameter types have at least the same accessibility as the operator (**CS0057**).
+
+When you declare a `public` operator, all types used as parameters or return values must also be publicly accessible.
+
+The following example demonstrates accessibility errors:
 
 ```csharp
 class C { }
@@ -233,8 +262,6 @@ public class C3
 }
 ```
 
-To fix these errors, make sure all types used in public operator declarations are also publicly accessible.
-
 ## User-defined conversion restrictions
 
 - **CS0552**: *User-defined conversion to/from interface.*
@@ -244,7 +271,16 @@ To fix these errors, make sure all types used in public operator declarations ar
 - **CS0556**: *User-defined conversion must convert to or from the enclosing type.*
 - **CS0557**: *Duplicate user-defined conversion in type.*
 
-These errors occur when you attempt to create invalid user-defined conversion operators. Conversion operators have specific restrictions about which types they can convert between. For more information, see [User-defined conversion operators](../operators/user-defined-conversion-operators.md). The following code demonstrates the preceding errors:
+To create valid user-defined conversion operators, follow these restrictions. For more information, see [User-defined conversion operators](../operators/user-defined-conversion-operators.md).
+
+- Don't define conversions to or from interfaces (**CS0552**). Use explicit interface implementations instead.
+- Don't define conversions to or from base classes (**CS0553**). The conversion already exists through inheritance.
+- Don't define conversions to or from derived classes (**CS0554**). The conversion already exists through inheritance.
+- Don't define conversions from the enclosing type to itself (**CS0555**). This conversion is implicit.
+- Ensure at least one type in the conversion is the enclosing type (**CS0556**). You can't define conversions between two external types.
+- Don't define duplicate conversions (**CS0557**). Each conversion operator must be unique.
+
+The following example demonstrates conversion restriction errors:
 
 ```csharp
 public interface I
@@ -289,8 +325,6 @@ public class C4
 }
 ```
 
-To fix these errors, remove invalid conversion operators or restructure your type hierarchy to avoid the restricted conversion patterns.
-
 ## Boolean and short-circuit operators
 
 - **CS0215**: *The return type of operator true or false must be bool.*
@@ -298,7 +332,18 @@ To fix these errors, remove invalid conversion operators or restructure your typ
 - **CS0217**: *In order to be applicable as a short-circuit operator, a user-defined logical operator must have the same return type as the type of its 2 parameters.*
 - **CS0218**: *The type must contain declarations of operator true and operator false.*
 
-These errors occur when you define logical operators incorrectly. Certain operators must be defined in pairs, and short-circuit operators have specific signature requirements. For more information, see [true and false operators](../operators/true-false-operators.md), [Boolean logical operators](../operators/boolean-logical-operators.md), and [User-defined conditional logical operators](~/_csharpstandard/standard/expressions.md#12163-user-defined-conditional-logical-operators). The following code demonstrates these errors:
+To define logical operators correctly, follow these pairing and signature requirements. For more information, see [true and false operators](../operators/true-false-operators.md), [Boolean logical operators](../operators/boolean-logical-operators.md), and [User-defined conditional logical operators](~/_csharpstandard/standard/expressions.md#12163-user-defined-conditional-logical-operators).
+
+- Return `bool` from `operator true` and `operator false` (**CS0215**).
+- Define required paired operators (**CS0216**):
+  - `operator ==` requires `operator !=`
+  - `operator <` requires `operator >`
+  - `operator <=` requires `operator >=`
+  - `operator true` requires `operator false`
+- Match the return type with the parameter types for short-circuit operators (`&` and `|`) that work with custom types (**CS0217**).
+- Implement both `operator true` and `operator false` when using custom types in boolean contexts like `&&` and `||` (**CS0218**).
+
+The following example demonstrates logical operator errors:
 
 ```csharp
 class C
@@ -336,17 +381,16 @@ public class C4
 }
 ```
 
-To fix these errors, ensure you define required paired operators and follow the correct signature patterns for logical operators.
-
 ## Checked operators
 
 - **CS9023**: *Operator can't be made checked*
 - **CS9024**: *Operator can't be made unchecked*
 - **CS9025**: *Checked operator requires a matching non-checked version to also be declared*
 
-These errors occur when you incorrectly use the `checked` or `unchecked` keywords with operator declarations. Not all operators support checked/unchecked variants, and when they do, certain requirements must be met. For more information, see [Arithmetic operators](../operators/arithmetic-operators.md#user-defined-checked-operators) and [User-defined checked operators](~/_csharplang/proposals/csharp-11.0/checked-user-defined-operators.md).
+To use checked operators correctly, follow these requirements. For more information, see [Arithmetic operators](../operators/arithmetic-operators.md#user-defined-checked-operators) and [User-defined checked operators](~/_csharplang/proposals/csharp-11.0/checked-user-defined-operators.md).
 
-To fix these errors, either remove the `checked` or `unchecked` keyword from operators that don't support it, or ensure you provide both checked and non-checked versions when required.
+- Apply `checked` or `unchecked` keywords only to supported arithmetic operators: `+`, `-`, `*`, `/`, `++`, `--`, and explicit conversions (**CS9023**, **CS9024**).
+- Provide both checked and unchecked versions when declaring a checked operator (**CS9025**). The compiler needs both to handle different contexts.
 
 ## Interface and inheritance requirements
 
@@ -354,15 +398,20 @@ To fix these errors, either remove the `checked` or `unchecked` keyword from ope
 - **CS9312**: *Type can't override inherited member because one of them isn't an operator*
 - **CS9313**: *Overloaded compound assignment operator takes one parameter*
 
-These errors occur when there are mismatches between operator declarations and interface implementations or inheritance relationships. Operators have specific rules for interface implementation and overriding. For more information, see [Operator overloading](../operators/operator-overloading.md) and [Interfaces](../../fundamentals/types/interfaces.md).
+To implement and override operators correctly, follow these requirements. For more information, see [Operator overloading](../operators/operator-overloading.md) and [Interfaces](../../fundamentals/types/interfaces.md).
 
-To fix these errors, ensure that operator declarations correctly match interface requirements and follow the rules for operator overriding and compound assignment operators.
+- Ensure operator declarations match the signature and type of interface members (**CS9311**). An operator can't implement a non-operator member.
+- Verify that inherited members being overridden are also operators (**CS9312**). An operator can't override a non-operator member.
+- Declare compound assignment operators with one parameter (**CS9313**). The left operand is implicitly `this`.
 
 ## Equality operators
 
 - **CS0660**: *Type defines operator == or operator != but doesn't override Object.Equals(object o)*
 - **CS0661**: *Type defines operator == or operator != but doesn't override Object.GetHashCode()*
 
-These warnings occur when you define equality or inequality operators without also overriding the corresponding methods from <xref:System.Object>. When you define custom equality comparison, you should also override <xref:System.Object.Equals%2A?displayProperty=nameWithType> and <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType> to ensure consistent behavior. For more information, see [How to define value equality for a type](../../programming-guide/statements-expressions-operators/how-to-define-value-equality-for-a-type.md) and [Equality operators](../operators/equality-operators.md).
+To implement equality correctly, override the corresponding `Object` methods when defining custom equality operators. For more information, see [How to define value equality for a type](../../programming-guide/statements-expressions-operators/how-to-define-value-equality-for-a-type.md) and [Equality operators](../operators/equality-operators.md).
 
-To fix these warnings, override both `Equals` and `GetHashCode` when you define custom equality operators.
+- Override <xref:System.Object.Equals%2A?displayProperty=nameWithType> when you define `operator ==` or `operator !=` (**CS0660**).
+- Override <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType> when you define `operator ==` or `operator !=` (**CS0661**).
+
+Overriding these methods ensures consistent equality behavior across different APIs and collection types.

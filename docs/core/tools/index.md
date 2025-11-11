@@ -74,6 +74,7 @@ The following commands are installed by default:
 ### Project modification commands
 
 - [`package add`](dotnet-package-add.md)
+- [`package download`](dotnet-package-download.md)
 - [`package list`](dotnet-package-list.md)
 - [`package remove`](dotnet-package-remove.md)
 - [`package search`](dotnet-package-search.md)

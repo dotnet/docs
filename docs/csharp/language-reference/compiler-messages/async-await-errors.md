@@ -1,5 +1,5 @@
 ---
-title: Resolve errors and warnings `async`, `await` and the Task-asynchronous protocol
+title: Resolve errors and warnings that involve `async`, `await` and the Task-asynchronous protocol
 description: These compiler errors and warnings indicate errors in the syntax for declaring and implementing `async` methods that use the `await` expression.
 f1_keywords:
  - "CS1983"
@@ -90,7 +90,6 @@ To use the `await` operator correctly, follow these rules. For more information,
 - Mark methods or lambda expressions with the `async` modifier before using `await` (**CS1992**, **CS4032**, **CS4033**).
 - Ensure awaited types have an accessible `GetAwaiter` method that returns an awaiter type (**CS1986**).
 - Don't apply `await` to expressions of type `void` (**CS4008**).
-- Add the `async` modifier to methods or lambda expressions before using `await` (**CS1992**, **CS4032**, **CS4033**).
 - Change the return type to `Task` for methods that don't return a value, or `Task<T>` for methods that return a value.
 
 ## Async method signature requirements
@@ -113,7 +112,7 @@ To declare async methods correctly, follow these signature requirements. For mor
 
 - **CS1989**: *Async lambda expressions cannot be converted to expression trees.*
 - **CS1991**: *'Type' cannot implement 'event' because it is a Windows Runtime event and 'event' is a regular .NET event.*
-- **CS1997**: *Since function is an async method that returns an expression, a return keyword must not be followed by an object expression.*
+- **CS1997**: *Since function is an async method that returns a value, a return keyword must not be followed by an object expression.*
 - **CS1998**: *This async method lacks '`await`' operators and will run synchronously. Consider using the '`await`' operator to await non-blocking API calls, or '`await Task.Run(...)`' to do CPU-bound work on a background thread.*
 - **CS4014**: *Because this call is not awaited, execution of the current method continues before the call is completed. Consider applying the `await` operator to the result of the call.*
 - **CS9123**: *The '`&`' operator should not be used on parameters or local variables in async methods.*

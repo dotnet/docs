@@ -21,6 +21,10 @@ f1_keywords:
   - "CS0657"
   - "CS0658"
   - "CS0685"
+  - "CS7014"
+  - "CS7046"
+  - "CS7047"
+  - "CS7067"
   - "CS9331"
 helpviewer_keywords:
   - "CS0243"
@@ -42,6 +46,10 @@ helpviewer_keywords:
   - "CS0657"
   - "CS0658"
   - "CS0685"
+  - "CS7014"
+  - "CS7046"
+  - "CS7047"
+  - "CS7067"
   - "CS9331"
 ms.date: 11/11/2025
 ai-usage: ai-assisted
@@ -72,6 +80,10 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS0657**](#invalid-attribute-location): *'attribute modifier' is not a valid attribute location for this declaration. Valid attribute locations for this declaration are 'locations'. All attributes in this block will be ignored.*
 - [**CS0658**](#unrecognized-attribute-location): *'attribute modifier' is not a recognized attribute location. All attributes in this block will be ignored.*
 - [**CS0685**](#conditional-with-out-parameter): *Conditional member 'member' cannot have an out parameter*
+- [**CS7014**](#attributes-not-allowed): *Attributes are not valid in this context.*
+- [**CS7046**](#attribute-parameter-required): *Attribute parameter '{0}' must be specified.*
+- [**CS7047**](#attribute-parameters-required): *Attribute parameter '{0}' or '{1}' must be specified.*
+- [**CS7067**](#attribute-parameter-default-argument): *Attribute constructor parameter '{0}' is optional, but no default parameter value was specified.*
 - [**CS9331**](#reserved-attributes): *Attribute cannot be applied manually.*
 
 ## Conditional attribute on override
@@ -623,6 +635,30 @@ class C
     }
 }
 ```
+
+## Attributes not allowed
+
+- **CS7014**: *Attributes are not valid in this context.*
+
+Attributes can only be applied to specific declaration contexts. This error occurs when you attempt to apply an attribute in a location where attributes are not syntactically valid.
+
+## Attribute parameter required
+
+- **CS7046**: *Attribute parameter '{0}' must be specified.*
+
+Some attributes require specific parameters to be provided. This error occurs when you apply an attribute but fail to specify a required parameter value.
+
+## Attribute parameters required
+
+- **CS7047**: *Attribute parameter '{0}' or '{1}' must be specified.*
+
+Some attributes require that at least one of multiple possible parameters must be provided. This error occurs when you apply an attribute but fail to specify any of the required parameter values.
+
+## Attribute parameter default argument
+
+- **CS7067**: *Attribute constructor parameter '{0}' is optional, but no default parameter value was specified.*
+
+When an attribute constructor parameter is marked as optional, it must have a default value specified. This error occurs when you declare an optional parameter in an attribute constructor without providing a default value.
 
 ## Reserved attribute
 

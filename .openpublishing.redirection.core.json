@@ -74,7 +74,7 @@
             "redirect_url": "/dotnet/core/compatibility/code-analysis/5.0/ca1416-platform-compatibility-analyzer"
         },
         {
-            "source_path_from_root": "/docs/core/compatibility/core-libraries/6.0/jsonserializer-source-generator-overloads.md",
+            "source_path_from_root": "/docs/core/compatibility/core-libraries/6.0/jsonserializer-source-generator-overloads.md"
             "redirect_url": "/dotnet/core/compatibility/serialization/6.0/jsonserializer-source-generator-overloads",
             "redirect_document_id": true
         },
@@ -112,6 +112,10 @@
         {
             "source_path_from_root": "/docs/core/compatibility/core-libraries/8.0/optimizeforreading-arg.md",
             "redirect_url": "/dotnet/core/compatibility/8.0"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/core-libraries/10.0/ymm-embedded-rounding.md",
+            "redirect_url": "/dotnet/core/compatibility/10.0"
         },
         {
             "source_path_from_root": "/docs/core/compatibility/corefx.md",
@@ -198,6 +202,10 @@
         {
             "source_path_from_root": "/docs/core/compatibility/sdk/8.0/tool-rollforward.md",
             "redirect_url": "/dotnet/core/compatibility/8.0"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/sdk/10.0/version-requirements.md",
+            "redirect_url": "/dotnet/core/compatibility/10.0"
         },
         {
             "source_path_from_root": "/docs/core/compatibility/serialization.md",

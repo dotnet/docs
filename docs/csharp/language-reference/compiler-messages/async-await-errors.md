@@ -122,9 +122,9 @@ To write async code correctly and avoid common pitfalls, follow these best pract
 - Always [await](../operators/await.md) calls to async methods that return <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601> (**CS4014**). Unawaited calls can lead to lost exceptions and unexpected behavior.
 - Don't return a value from async methods that return `Task` (non-generic); use `Task<T>` instead (**CS1997**).
 - Include at least one `await` operator in async methods, or remove the `async` modifier (**CS1998**).
-- Remove the `return` statement if the method should return `Task`.
-- Change the method's return type to `Task<T>` to return a value.
-- Remove the `async` modifier and return the task directly if you don't need the async state machine.
+- Remove the `return` statement if the method should return `Task` (**CS1997**, **CS1998**).
+- Change the method's return type to `Task<T>` to return a value (**CS1997**, **CS1998**).
+- Remove the `async` modifier and return the task directly if you don't need the async state machine (**CS1997**, **CS1998**).
 - Don't use async methods in expression trees (**CS1989**). Expression trees represent code as data and don't support the complex state machine transformations required by async methods.
 - Don't mark add or remove accessors in an interface or WinRT event as async (**CS1991**). This is a platform-specific restriction for Windows Runtime interoperability.
 - Avoid using the address-of operator (`&`) on expressions inside async methods (**CS9123**). The target may be relocated in memory during suspension, making the pointer invalid.

@@ -64,8 +64,8 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS0243**](#conditional-attribute-usage): *The Conditional attribute is not valid on 'method' because it is an override method.*
 - [**CS0404**](#attribute-class-requirements): *Attribute is not valid on this declaration type.*
 - [**CS0415**](#predefined-attributes): *This attribute is valid only on an indexer that is not an explicit interface member declaration.*
-- [**CS0416**](#attribute-arguments-parameters): *'type parameter': an attribute argument cannot use type parameters.*
-- [**CS0447**](#attribute-arguments-parameters): *Attribute cannot be used with type arguments.*
+- [**CS0416**](#attribute-arguments-and-parameters): *'type parameter': an attribute argument cannot use type parameters.*
+- [**CS0447**](#attribute-arguments-and-parameters): *Attribute cannot be used with type arguments.*
 - [**CS0577**](#conditional-attribute-usage): *The Conditional attribute is not valid because it is a constructor, destructor, operator, lambda expression, or explicit interface implementation.*
 - [**CS0578**](#conditional-attribute-usage): *The Conditional attribute is not valid on 'function' because its return type is not void.*
 - [**CS0582**](#conditional-attribute-usage): *The Conditional attribute is not valid on interface members.*
@@ -81,9 +81,9 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS0658**](#attribute-location-context): *Location is not a recognized attribute location. Valid attribute locations for this declaration are listed. All attributes in this block will be ignored.*
 - [**CS0685**](#conditional-attribute-usage): *Conditional member 'member' cannot have an out parameter.*
 - [**CS7014**](#attribute-location-context): *Attributes are not valid in this context.*
-- [**CS7046**](#attribute-arguments-parameters): *Attribute parameter must be specified.*
-- [**CS7047**](#attribute-arguments-parameters): *Attribute parameter 'parameter1' or 'parameter2' must be specified.*
-- [**CS7067**](#attribute-arguments-parameters): *Attribute constructor parameter is optional, but no default parameter value was specified.*
+- [**CS7046**](#attribute-arguments-and-parameters): *Attribute parameter must be specified.*
+- [**CS7047**](#attribute-arguments-and-parameters): *Attribute parameter 'parameter1' or 'parameter2' must be specified.*
+- [**CS7067**](#attribute-arguments-and-parameters): *Attribute constructor parameter is optional, but no default parameter value was specified.*
 - [**CS9331**](#predefined-attributes): *Attribute cannot be applied manually.*
 
 ## Attribute arguments and parameters

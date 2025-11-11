@@ -74,15 +74,15 @@ namespace anonymous_types
 
             // <TupleDeconstructionLoop>
             var people = new List<(string Name, int Age)>
-            [
+            {
                 ("Bob", 25),
                 ("Carol", 35),
                 ("Dave", 40)
-            ];
+            };
 
-            foreach (var (name, age) in people)
+            foreach (var (personName2, personAge2) in people)
             {
-                Console.WriteLine($"{name} is {age} years old");
+                Console.WriteLine($"{personName2} is {personAge2} years old");
             }
             // </TupleDeconstructionLoop>
         }

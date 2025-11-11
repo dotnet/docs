@@ -1,6 +1,5 @@
 ﻿using Azure.Identity;
 using Microsoft.Extensions.Azure;
-using Azure.Storage.Blobs;
 using Azure.Core;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -50,43 +49,15 @@ void registerUsingClientId(WebApplicationBuilder builder)
         clientBuilder.AddBlobServiceClient(
             new Uri("https://<account-name>.blob.core.windows.net"));
 
-        TokenCredential credential = null;
-
         if (builder.Environment.IsProduction() || builder.Environment.IsStaging())
         {
             // Managed identity token credential discovered when running in Azure environments
-            credential = new ManagedIdentityCredential(
+            ManagedIdentityCredential credential = new(
                 ManagedIdentityId.FromUserAssignedClientId("<client-id>"));
+            clientBuilder.UseCredential(credential);
         } 
-        else 
-        {
-            // Running locally on dev machine - DO NOT use in production or outside of local dev
-            credential = new DefaultAzureCredential();
-        }
-
-        clientBuilder.UseCredential(credential);
     });
     #endregion snippet_MIC_ClientId_UseCredential
-
-    #region snippet_MIC_ClientId
-    TokenCredential credential = null;
-
-    if (builder.Environment.IsProduction() || builder.Environment.IsStaging())
-    {
-        // Managed identity token credential discovered when running in Azure environments
-        credential = new ManagedIdentityCredential(
-            ManagedIdentityId.FromUserAssignedClientId("<client-id>"));
-    }
-    else
-    {
-        // Running locally on dev machine - DO NOT use in production or outside of local dev
-        credential = new DefaultAzureCredential();
-    }
-
-    builder.Services.AddSingleton<BlobServiceClient>(_ =>
-        new BlobServiceClient(
-            new Uri("https://<account-name>.blob.core.windows.net"), credential));
-    #endregion snippet_MIC_ClientId
 }
 
 void registerUsingObjectId(WebApplicationBuilder builder)
@@ -97,43 +68,15 @@ void registerUsingObjectId(WebApplicationBuilder builder)
         clientBuilder.AddBlobServiceClient(
             new Uri("https://<account-name>.blob.core.windows.net"));
             
-        TokenCredential credential = null;
-
         if (builder.Environment.IsProduction() || builder.Environment.IsStaging())
         {
             // Managed identity token credential discovered when running in Azure environments
-            credential = new ManagedIdentityCredential(
+            ManagedIdentityCredential credential = new(
                 ManagedIdentityId.FromUserAssignedObjectId("<object-id>"));
+            clientBuilder.UseCredential(credential);
         }
-        else
-        {
-            // Running locally on dev machine - DO NOT use in production or outside of local dev
-            credential = new DefaultAzureCredential();
-        }
-
-        clientBuilder.UseCredential(credential);
     });
     #endregion snippet_MIC_ObjectId_UseCredential
-
-    #region snippet_MIC_ObjectId
-    TokenCredential credential = null;
-
-    if (builder.Environment.IsProduction() || builder.Environment.IsStaging())
-    {
-        // Managed identity token credential discovered when running in Azure environments
-        credential = new ManagedIdentityCredential(
-            ManagedIdentityId.FromUserAssignedObjectId("<object-id>"));
-    }
-    else
-    {
-        // Running locally on dev machine - DO NOT use in production or outside of local dev
-        credential = new DefaultAzureCredential();
-    }
-
-    builder.Services.AddSingleton<BlobServiceClient>(_ =>
-        new BlobServiceClient(
-            new Uri("https://<account-name>.blob.core.windows.net"), credential));
-    #endregion snippet_MIC_ObjectId
 }
 
 
@@ -145,43 +88,15 @@ void registerUsingResourceId(WebApplicationBuilder builder)
         clientBuilder.AddBlobServiceClient(
             new Uri("https://<account-name>.blob.core.windows.net"));
 
-        TokenCredential credential = null;
-
         if (builder.Environment.IsProduction() || builder.Environment.IsStaging())
         {
             // Managed identity token credential discovered when running in Azure environments
-            credential = new ManagedIdentityCredential(
+            ManagedIdentityCredential credential = new(
                 ManagedIdentityId.FromUserAssignedResourceId(new ResourceIdentifier("<resource-id>")));
+            clientBuilder.UseCredential(credential);
         }
-        else
-        {
-            // Running locally on dev machine - DO NOT use in production or outside of local dev
-            credential = new DefaultAzureCredential();
-        }
-
-        clientBuilder.UseCredential(credential);
     });
     #endregion snippet_MIC_ResourceId_UseCredential
-
-    #region snippet_MIC_ResourceId
-    TokenCredential credential = null;
-
-    if (builder.Environment.IsProduction() || builder.Environment.IsStaging())
-    {
-        // Managed identity token credential discovered when running in Azure environments
-        credential = new ManagedIdentityCredential(
-            ManagedIdentityId.FromUserAssignedResourceId(new ResourceIdentifier("<resource-id>")));
-    }
-    else
-    {
-        // Running locally on dev machine - DO NOT use in production or outside of local dev
-        credential = new DefaultAzureCredential();
-    }
-
-    builder.Services.AddSingleton<BlobServiceClient>(_ =>
-        new BlobServiceClient(
-            new Uri("https://<account-name>.blob.core.windows.net"), credential));
-    #endregion snippet_MIC_ResourceId
 }
 
 internal record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)

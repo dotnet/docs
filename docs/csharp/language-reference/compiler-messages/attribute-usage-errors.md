@@ -62,64 +62,44 @@ This article covers the following compiler errors:
 That's by design. The text closely matches the text of the compiler error / warning for SEO purposes.
  -->
 - [**CS0243**](#conditional-attribute-usage): *The Conditional attribute is not valid on 'method' because it is an override method*
-- [**CS0404**](#attribute-class-requirements): *'<' unexpected : attributes cannot be generic*
-- [**CS0415**](#predefined-attributes): *The 'IndexerName' attribute is valid only on an indexer that is not an explicit interface member declaration*
+- [**CS0404**](#attribute-class-requirements): *Attribute is not valid on this declaration type.*
+- [**CS0415**](#predefined-attributes): *This attribute is valid only on an indexer that is not an explicit interface member declaration*
 - [**CS0416**](#attribute-arguments-parameters): *'type parameter': an attribute argument cannot use type parameters*
-- [**CS0447**](#attribute-arguments-parameters): *Attributes cannot be used on type arguments, only on type parameters*
-- [**CS0577**](#conditional-attribute-usage): *The Conditional attribute is not valid on 'function' because it is a constructor, destructor, operator, or explicit interface implementation*
+- [**CS0447**](#attribute-arguments-parameters): *Attribute cannot be used with type arguments*
+- [**CS0577**](#conditional-attribute-usage): *The Conditional attribute is not valid because it is a constructor, destructor, operator, lambda expression, or explicit interface implementation*
 - [**CS0578**](#conditional-attribute-usage): *The Conditional attribute is not valid on 'function' because its return type is not void*
-- [**CS0582**](#conditional-attribute-usage): *The Conditional not valid on interface members*
-- [**CS0609**](#predefined-attributes): *Cannot set the IndexerName attribute on an indexer marked override*
-- [**CS0625**](#predefined-attributes): *'field': instance field types marked with StructLayout(LayoutKind.Explicit) must have a FieldOffset attribute.*
+- [**CS0582**](#conditional-attribute-usage): *The Conditional attribute is not valid on interface members*
+- [**CS0609**](#predefined-attributes): *Cannot set the attribute on an indexer marked override*
+- [**CS0625**](#predefined-attributes): *Instance field in types marked with StructLayout(LayoutKind.Explicit) must have a FieldOffset attribute*
 - [**CS0629**](#conditional-attribute-usage): *Conditional member 'member' cannot implement interface member 'base class member' in type 'Type Name'*
 - [**CS0636**](#predefined-attributes): *The FieldOffset attribute can only be placed on members of types marked with the StructLayout(LayoutKind.Explicit)*
 - [**CS0637**](#predefined-attributes): *The FieldOffset attribute is not allowed on static or const fields.*
-- [**CS0641**](#attribute-class-requirements): *'attribute' : attribute is only valid on classes derived from System.Attribute*
+- [**CS0641**](#attribute-class-requirements): *This attribute is only valid on classes derived from System.Attribute`*
 - [**CS0646**](#predefined-attributes): *Cannot specify the DefaultMember attribute on a type containing an indexer*
 - [**CS0653**](#attribute-class-requirements): *Cannot apply attribute class 'class' because it is abstract*
-- [**CS0657**](#attribute-location-context): *'attribute modifier' is not a valid attribute location for this declaration. Valid attribute locations for this declaration are 'locations'. All attributes in this block will be ignored.*
-- [**CS0658**](#attribute-location-context): *'attribute modifier' is not a recognized attribute location. All attributes in this block will be ignored.*
+- [**CS0657**](#attribute-location-context): *Location is not a valid attribute location for this declaration. Valid attribute locations for this declaration are listed. All attributes in this block will be ignored.*
+- [**CS0658**](#attribute-location-context): *Location is not a recognized attribute location. Valid attribute locations for this declaration are listed. All attributes in this block will be ignored.*
 - [**CS0685**](#conditional-attribute-usage): *Conditional member 'member' cannot have an out parameter*
 - [**CS7014**](#attribute-location-context): *Attributes are not valid in this context.*
-- [**CS7046**](#attribute-arguments-parameters): *Attribute parameter '{0}' must be specified.*
-- [**CS7047**](#attribute-arguments-parameters): *Attribute parameter '{0}' or '{1}' must be specified.*
-- [**CS7067**](#attribute-arguments-parameters): *Attribute constructor parameter '{0}' is optional, but no default parameter value was specified.*
+- [**CS7046**](#attribute-arguments-parameters): *Attribute parameter must be specified.*
+- [**CS7047**](#attribute-arguments-parameters): *Attribute parameter 'parameter1' or 'parameter2' must be specified.*
+- [**CS7067**](#attribute-arguments-parameters): *Attribute constructor parameter is optional, but no default parameter value was specified.*
 - [**CS9331**](#predefined-attributes): *Attribute cannot be applied manually.*
-
-## Conditional attribute usage
-
-The following errors occur when you apply the <xref:System.Diagnostics.ConditionalAttribute> in ways that violate its usage restrictions:
-
-- **CS0243**: *The Conditional attribute is not valid on 'method' because it is an override method*
-- **CS0577**: *The Conditional attribute is not valid on 'function' because it is a constructor, destructor, operator, or explicit interface implementation*
-- **CS0578**: *The Conditional attribute is not valid on 'function' because its return type is not void*
-- **CS0582**: *The Conditional not valid on interface members*
-- **CS0629**: *Conditional member 'member' cannot implement interface member 'base class member' in type 'Type Name'*
-- **CS0685**: *Conditional member 'member' cannot have an out parameter*
-
-To correct these errors, follow these rules. For more information, see <xref:System.Diagnostics.ConditionalAttribute> and [Attributes](../../advanced-topics/reflection-and-attributes/index.md).
-
-- Remove the `Conditional` attribute from [override](../keywords/override.md) methods, or remove the `override` keyword (**CS0243**). The compiler binds to the base method, not the override.
-- Don't apply `Conditional` to constructors, [finalizers](../../programming-guide/classes-and-structs/finalizers.md), operators, or explicit interface implementations (**CS0577**). These member types don't support conditional compilation.
-- Change the method's return type to `void`, or remove the `Conditional` attribute (**CS0578**). Conditional methods must return `void` because calls may be compiled out.
-- Remove the `Conditional` attribute from interface member declarations (**CS0582**). Interface members can't be conditional.
-- Remove the `Conditional` attribute from interface member implementations (**CS0629**). Methods implementing interface members can't be conditional.
-- Remove `out` parameters from conditional methods, or remove the `Conditional` attribute (**CS0685**). The `out` variable value would be undefined when the method call is compiled out.
 
 ## Attribute arguments parameters
 
 The following errors occur when you use attribute arguments or parameters incorrectly:
 
 - **CS0416**: *'type parameter': an attribute argument cannot use type parameters*
-- **CS0447**: *Attributes cannot be used on type arguments, only on type parameters*
-- **CS7046**: *Attribute parameter '{0}' must be specified.*
-- **CS7047**: *Attribute parameter '{0}' or '{1}' must be specified.*
-- **CS7067**: *Attribute constructor parameter '{0}' is optional, but no default parameter value was specified.*
+- **CS0447**: *Attribute cannot be used with type arguments*
+- **CS7046**: *Attribute parameter must be specified.*
+- **CS7047**: *Attribute parameter 'parameter1' or 'parameter2' must be specified.*
+- **CS7067**: *Attribute constructor parameter is optional, but no default parameter value was specified.*
 
 To correct these errors, follow these rules.
 
 - Use compile-time constant values for attribute arguments instead of type parameters (**CS0416**). Attribute arguments must be evaluated at compile time.
-- Apply attributes to type parameter declarations, not to type arguments in generic type uses (**CS0447**). For example, apply attributes to `<T>` in a class declaration, not to `<int>` when using the class.
+- Don't use type arguments with attributes (**CS0447**). Type arguments aren't allowed in attribute usage.
 - Provide all required attribute parameters when applying the attribute (**CS7046**, **CS7047**). Check the attribute's constructor to see which parameters are mandatory.
 - Specify default values for optional constructor parameters when defining custom attributes (**CS7067**). Use the syntax `parameterType parameterName = defaultValue` in the attribute constructor.
 
@@ -132,14 +112,14 @@ For more information, see [Attributes](../../advanced-topics/reflection-and-attr
 
 The following errors occur when you define attribute classes that don't meet the required constraints:
 
-- **CS0404**: *'<' unexpected : attributes cannot be generic*
-- **CS0641**: *'attribute' : attribute is only valid on classes derived from System.Attribute*
+- **CS0404**: *Attribute is not valid on this declaration type.*
+- **CS0641**: *This attribute is only valid on classes derived from System.Attribute`*
 - **CS0653**: *Cannot apply attribute class 'class' because it is abstract*
 
 To correct these errors, follow these rules.
 
-- Make the attribute class derive from <xref:System.Attribute> (**CS0641**). All custom attributes must inherit from the `Attribute` base class.
-- Remove generic type parameters from attribute class declarations (**CS0404**). Attributes can't be generic types.
+- Apply attributes only to valid declaration types (**CS0404**). Check the attribute's `AttributeUsage` to see which targets are allowed.
+- Don't apply attributes to property or event accessors unless they're valid on accessors (**CS0641**). Apply them to the property or event declaration instead.
 - Remove the `abstract` modifier from attribute classes, or derive from a non-abstract attribute class (**CS0653**). Attributes must be instantiable.
 - Apply <xref:System.AttributeUsageAttribute> only to classes that derive from `Attribute` (**CS0641**). This attribute controls how other attributes are used.
 
@@ -149,8 +129,8 @@ To correct these errors, follow these rules.
 
 The following errors occur when you apply attributes in invalid locations or with incorrect target specifiers:
 
-- **CS0657**: *'attribute modifier' is not a valid attribute location for this declaration. Valid attribute locations for this declaration are 'locations'. All attributes in this block will be ignored.*
-- **CS0658**: *'attribute modifier' is not a recognized attribute location. All attributes in this block will be ignored.*
+- **CS0657**: *Location is not a valid attribute location for this declaration. Valid attribute locations for this declaration are listed. All attributes in this block will be ignored.*
+- **CS0658**: *Location is not a recognized attribute location. Valid attribute locations for this declaration are listed. All attributes in this block will be ignored.*
 - **CS7014**: *Attributes are not valid in this context.*
 
 To correct these errors, follow these rules. For more information, see [Attribute Targets](../../advanced-topics/reflection-and-attributes/index.md#attribute-targets).
@@ -164,9 +144,9 @@ To correct these errors, follow these rules. For more information, see [Attribut
 
 The following errors occur when you use specific predefined .NET attributes incorrectly:
 
-- **CS0415**: *The 'IndexerName' attribute is valid only on an indexer that is not an explicit interface member declaration*
-- **CS0609**: *Cannot set the IndexerName attribute on an indexer marked override*
-- **CS0625**: *'field': instance field types marked with StructLayout(LayoutKind.Explicit) must have a FieldOffset attribute.*
+- **CS0415**: *This attribute is valid only on an indexer that is not an explicit interface member declaration*
+- **CS0609**: *Cannot set the attribute on an indexer marked override*
+- **CS0625**: *Instance field in types marked with StructLayout(LayoutKind.Explicit) must have a FieldOffset attribute*
 - **CS0636**: *The FieldOffset attribute can only be placed on members of types marked with the StructLayout(LayoutKind.Explicit)*
 - **CS0637**: *The FieldOffset attribute is not allowed on static or const fields.*
 - **CS0646**: *Cannot specify the DefaultMember attribute on a type containing an indexer*
@@ -181,3 +161,23 @@ To correct these errors, follow these rules. For more information, see [Indexers
 - Remove `FieldOffset` from `static` or `const` fields (**CS0637**). Explicit layout applies only to instance fields.
 - Remove <xref:System.Reflection.DefaultMemberAttribute> from types that contain indexers (**CS0646**). Indexers automatically define the default member.
 - Replace compiler-generated attributes with the equivalent C# syntax (**CS9331**). Use language keywords instead of manually applying reserved attributes.
+
+## Conditional attribute usage
+
+The following errors occur when you apply the <xref:System.Diagnostics.ConditionalAttribute> in ways that violate its usage restrictions:
+
+- **CS0243**: *The Conditional attribute is not valid on 'method' because it is an override method*
+- **CS0577**: *The Conditional attribute is not valid because it is a constructor, destructor, operator, lambda expression, or explicit interface implementation*
+- **CS0578**: *The Conditional attribute is not valid on 'function' because its return type is not void*
+- **CS0582**: *The Conditional attribute is not valid on interface members*
+- **CS0629**: *Conditional member 'member' cannot implement interface member 'base class member' in type 'Type Name'*
+- **CS0685**: *Conditional member 'member' cannot have an out parameter*
+
+To correct these errors, follow these rules. For more information, see <xref:System.Diagnostics.ConditionalAttribute> and [Attributes](../../advanced-topics/reflection-and-attributes/index.md).
+
+- Remove the `Conditional` attribute from [override](../keywords/override.md) methods, or remove the `override` keyword (**CS0243**). The compiler binds to the base method, not the override.
+- Don't apply `Conditional` to constructors, [finalizers](../../programming-guide/classes-and-structs/finalizers.md), operators, lambda expressions, or explicit interface implementations (**CS0577**). These member types don't support conditional compilation.
+- Change the method's return type to `void`, or remove the `Conditional` attribute (**CS0578**). Conditional methods must return `void` because calls may be compiled out.
+- Remove the `Conditional` attribute from interface member declarations (**CS0582**). Interface members can't be conditional.
+- Remove the `Conditional` attribute from interface member implementations (**CS0629**). Methods implementing interface members can't be conditional.
+- Remove `out` parameters from conditional methods, or remove the `Conditional` attribute (**CS0685**). The `out` variable value would be undefined when the method call is compiled out.

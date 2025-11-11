@@ -215,6 +215,10 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 
   Installs [dotnetsay](https://www.nuget.org/packages/dotnetsay/) as a global tool and allows it to run on newer .NET versions if the target runtime isn't available.
 
+- **`dotnet tool install @tools.rsp`**
+
+  Installs tools specified in the `tools.rsp` response file. The response file might contain options like `--global` and package names.
+
 ## See also
 
 - [.NET tools](global-tools.md)

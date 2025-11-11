@@ -113,3 +113,18 @@ The `dotnet workload update` command also downloads advertising manifests. The d
   ```dotnetcli
   dotnet workload install maui-android maui-ios
   ```
+
+- Install workloads using a response file:
+
+  Create a file named `workloads.rsp` with the following content:
+
+  ```rsp
+  maui
+  wasm-tools
+  ```
+
+  Then install the workloads:
+
+  ```dotnetcli
+  dotnet workload install @workloads.rsp
+  ```

@@ -12,7 +12,7 @@ The `dnx.ps1` shim script is no longer included in the .NET SDK.
 
 ## Version introduced
 
-.NET 10 GA
+.NET 10
 
 ## Previous behavior
 
@@ -20,7 +20,7 @@ Since .NET 10 Preview 7, on Windows versions of the .NET SDK, a `dnx.ps1` script
 
 ## New behavior
 
-The `dnx.ps1` script is no longer included. The `dnx.cmd` script remains available for executing tools.
+Starting in .NET 10 GA, the `dnx.ps1` script is no longer included. The `dnx.cmd` script remains available for executing tools.
 
 ## Type of breaking change
 

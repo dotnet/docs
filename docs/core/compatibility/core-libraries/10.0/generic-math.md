@@ -10,7 +10,7 @@ Shift operations in generic math now have consistent behavior across all built-i
 
 ## Previous behavior
 
-The behavior when utilizing generic math to perform a shift on a `T` could differ based on the type. In some cases, it appropriately masked the shift amount by `sizeof(T) - 1`. And in other cases, there was no masking. This meant that "overshifting" (such as shifting a `byte` by 8) could result in different answers than expected.
+Previously, the behavior when utilizing generic math to perform a shift on a `T` could differ based on the type. In some cases, it appropriately masked the shift amount by `sizeof(T) - 1`. And in other cases, there was no masking. This meant that "overshifting" (such as shifting a `byte` by 8) could result in different answers than expected.
 
 ## New behavior
 
@@ -18,7 +18,7 @@ The implementations were updated to mask the shift amount, as appropriate, to en
 
 ## Version introduced
 
-.NET 10 Preview 1
+.NET 10
 
 ## Type of breaking change
 

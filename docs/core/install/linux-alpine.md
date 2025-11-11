@@ -23,9 +23,9 @@ The following table is a list of currently supported .NET releases and the versi
 
 | Alpine | Supported Version | Available in Package Manager |
 |--------|-------------------|------------------------------|
-| 3.22   | 10.0, 9.0, 8.0    | 9.0, 8.0                     |
-| 3.21   | 9.0, 8.0          | 9.0, 8.0                     |
-| 3.20   | 9.0, 8.0          | 8.0, 6.0                     |
+| 3.22   | 10, 9, 8          | 9, 8                         |
+| 3.21   | 9, 8              | 9, 8                         |
+| 3.20   | 9, 8              | 8, 6                         |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 

@@ -17,10 +17,10 @@ ms.custom: linux-related-content
 
 The following table is a list of currently supported .NET releases on openSUSE Leap 15. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of openSUSE Leap is no longer supported.
 
-| openSUSE Leap | .NET           |
-|---------------|----------------|
-| 16            | 10.0, 9.0, 8.0 |
-| 15.6          | 10.0, 9.0, 8.0 |
+| openSUSE Leap | .NET     |
+|---------------|----------|
+| 16            | 10, 9, 8 |
+| 15.6          | 10, 9, 8 |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
@@ -45,6 +45,8 @@ sudo chown root:root /etc/zypp/repos.d/microsoft-prod.repo
 ```
 
 # [.NET 10](#tab/dotnet10)
+
+[!INCLUDE [linux-release-wait](includes/linux-release-wait.md)]
 
 [!INCLUDE [linux-install-package-manager-x64-arm64](includes/linux-install-package-manager-x64-arm64.md)]
 

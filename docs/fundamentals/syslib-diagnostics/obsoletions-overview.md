@@ -14,11 +14,12 @@ Starting in .NET 5, some APIs that are newly marked as obsolete make use of two 
 
 If you encounter build warnings or errors due to usage of an obsolete API, follow the specific guidance provided for the diagnostic ID listed in the [Reference](#reference) section. Warnings or errors for these obsoletions *can't* be suppressed using the [standard diagnostic ID (CS0618)](../../csharp/language-reference/compiler-messages/cs0618.md) for obsolete types or members; use the custom `SYSLIB0XXX` or `EXTOBS0XXX` diagnostic ID values instead. For more information, see [Suppress warnings](#suppress-warnings).
 
-## Reference
+The following tables provide an index to obsolete APIs with custom diagnostic IDs in .NET 5 and later versions:
 
-The following tables provide an index to obsolete APIs with custom diagnostic IDs in .NET 5 and later versions.
+- [SYSLIB obsoletions](#syslib-obsoletions)
+- [EXTOBS obsoletions](#extobs-obsoletions)
 
-### SYSLIB obsoletions
+## SYSLIB obsoletions
 
 The following table lists the `SYSLIB0XXX` obsoletions in .NET 5+.
 
@@ -87,7 +88,7 @@ The following table lists the `SYSLIB0XXX` obsoletions in .NET 5+.
 | [SYSLIB0061](syslib0061.md) | Warning | The `Queryable` <xref:System.Linq.Queryable.MaxBy``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Collections.Generic.IComparer{``0})?displayProperty=nameWithType> and <xref:System.Linq.Queryable.MinBy``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Collections.Generic.IComparer{``0})?displayProperty=nameWithType> taking an `IComparer<TSource>` are obsolete. Use the new ones that take an `IComparer<TKey>`. |
 | [SYSLIB0062](syslib0062.md) | Warning | <xref:System.Xml.Xsl.XsltSettings.EnableScript?displayProperty=nameWithType> is obsolete. |
 
-### EXTOBS obsoletions
+## EXTOBS obsoletions
 
 The following table lists the `EXTOBS0XXX` obsoletions from the `Microsoft.Extensions` libraries.
 

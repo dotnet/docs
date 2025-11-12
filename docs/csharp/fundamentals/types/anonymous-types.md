@@ -7,6 +7,7 @@ f1_keywords:
 helpviewer_keywords:
   - "anonymous types [C#]"
   - "C# Language, anonymous types"
+ai-usage: ai-assisted
 ---
 # Anonymous types and tuples
 

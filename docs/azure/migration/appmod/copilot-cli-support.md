@@ -13,7 +13,7 @@ ms.reviewer: jessiehuang
 
 ## Overview
 
-This article provides an overview of how .NET developers can modernize their applications using **GitHub Copilot App Modernization** within the [**Copilot CLI**](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli), enabling them to modernize applications wherever they code. It’s currently in public preview — give it a try and let us know if any [feedback](https://aka.ms/ghcp-appmod/feedback).
+This article provides an overview of how .NET developers can migrate their applications to Azure using **GitHub Copilot App Modernization** within the [**Copilot CLI**](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli), enabling them to modernize applications wherever they code. It’s currently in public preview — give it a try and let us know if any [feedback](https://aka.ms/ghcp-appmod/feedback).
 :::image type="content" source="./media/copilot-cli-entrance.png" lightbox="./media/copilot-cli-entrance.png" alt-text="Screenshot of app mod entrance in Copilot CLI":::
 
 >[!NOTE]
@@ -77,6 +77,9 @@ Migrate this app from local file IO to Azure Blob Storage
 
 Then the migration task will be executed and showing progress in Copilot CLI
 :::image type="content" source="./media/migrate-details.png" lightbox="./media/migrate-details.png" alt-text="Screenshot of migrating .NET in Copilot CLI":::
+
+The project has been successfully migrated to Azure, with below summary:
+:::image type="content" source="./media/migrate-summary.png" lightbox="./media/migrate-summary.png" alt-text="Screenshot of migrating .NET summary in Copilot CLI":::
 
 ## Provide Feedback
 If you have any feedback about GitHub Copilot CLI, please let us know your [feedback](https://aka.ms/AM4DFeedback).

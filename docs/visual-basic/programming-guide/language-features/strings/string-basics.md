@@ -10,7 +10,7 @@ ms.assetid: 5674418d-f00d-4f72-9f98-d15897793350
 ---
 # String Basics in Visual Basic
 
-The `String` data type represents a series of characters (each representing in turn an instance of the `Char` data type). This topic introduces the basic concepts of strings in Visual Basic.
+The `String` data type represents a series of characters. Each character represents an instance of the `Char` data type. This topic introduces the basic concepts of strings in Visual Basic.
 
 ## String Variables
 

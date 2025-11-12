@@ -188,7 +188,7 @@ Because the <xref:System.String> type implements <xref:System.Collections.Generi
 - [How to search strings](../../how-to/search-strings.md): Explains how to use search for specific text or patterns in strings.
 - [How to determine whether a string represents a numeric value](./how-to-determine-whether-a-string-represents-a-numeric-value.md): Shows how to safely parse a string to see whether it has a valid numeric value.
 - [String interpolation](../../language-reference/tokens/interpolated.md): Describes the string interpolation feature that provides a convenient syntax to format strings.
-- [Basic String Operations](../../../standard/base-types/basic-string-operations.md): Provides links to articles that use <xref:System.String?displayProperty=nameWithType> and <xref:System.Text.StringBuilder?displayProperty=nameWithType> methods to perform basic string operations.
+- [Using the StringBuilder class in .NET](../../../standard/base-types/stringbuilder.md)
 - [Parsing Strings](../../../standard/base-types/parsing-strings.md): Describes how to convert string representations of .NET base types to instances of the corresponding types.
 - [Parsing Date and Time Strings in .NET](../../../standard/base-types/parsing-datetime.md): Shows how to convert a string such as "01/24/2008" to a <xref:System.DateTime?displayProperty=nameWithType> object.
 - [Comparing Strings](../../../standard/base-types/comparing.md): Includes information about how to compare strings and provides examples in C# and Visual Basic.

@@ -59,7 +59,7 @@ services.AddOpenTelemetry()
     });
 ```
 
-The resource monitoring metrics are automatically published and can be consumed by any OpenTelemetry-compatible metrics pipeline. For more information, see [Resource Monitoring observable instruments](../../core/diagnostics/built-in-metrics-diagnostics.md#microsoftextensionsdiagnosticsresourcemonitoring).
+The resource monitoring metrics are automatically published and can be consumed by any OpenTelemetry-compatible metrics pipeline. For more information, see [`Microsoft.Extensions.Diagnostics.ResourceMonitoring` metrics](../../core/diagnostics/built-in-metrics-diagnostics.md#microsoftextensionsdiagnosticsresourcemonitoring).
 
 ## Suppress a warning
 
@@ -93,5 +93,5 @@ For more information, see [Suppress warnings](obsoletions-overview.md#suppress-w
 
 ## See also
 
-- [Diagnostic resource monitoring](../../../core/diagnostics/diagnostic-resource-monitoring.md)
-- [Built-in metrics - Resource Monitoring](../../../core/diagnostics/built-in-metrics-diagnostics.md#microsoftextensionsdiagnosticsresourcemonitoring)
+- [Diagnostic resource monitoring](../../core/diagnostics/diagnostic-resource-monitoring.md)
+- [`Microsoft.Extensions.Diagnostics.ResourceMonitoring` metrics](../../core/diagnostics/built-in-metrics-diagnostics.md#microsoftextensionsdiagnosticsresourcemonitoring)

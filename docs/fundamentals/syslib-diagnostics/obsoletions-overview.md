@@ -136,4 +136,4 @@ To suppress the warnings in a project file:
 
 - [API obsoletions with non-default diagnostic IDs (.NET 8)](../../core/compatibility/core-libraries/8.0/obsolete-apis-with-custom-diagnostics.md)
 - [API obsoletions with non-default diagnostic IDs (.NET 9)](../../core/compatibility/core-libraries/9.0/obsolete-apis-with-custom-diagnostics.md)
-- [API obsoletions with non-default diagnostic IDs (.NET 10)](../../core/compatibility/core-libraries/10.0/obsolete-apis-with-custom-diagnostics.md)
+- [API obsoletions with non-default diagnostic IDs (.NET 10)](../../core/compatibility/core-libraries/10.0/obsolete-apis.md)

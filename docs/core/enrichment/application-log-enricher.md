@@ -1,7 +1,7 @@
 ---
 title: Application log enricher
 description: Learn how to use the application log enricher to add application-specific information to your telemetry in .NET.
-ms.date: 10/14/2025
+ms.date: 11/12/2025
 ---
 
 # Application log enricher
@@ -39,15 +39,11 @@ dotnet package add Microsoft.Extensions.Telemetry
 
 ---
 
-## Application log enricher
-
-The application log enricher provides application-specific enrichment. The log enricher specifically targets log telemetry and adds standardized dimensions that help identify and categorize log entries by service characteristics.
-
-### Step-by-step configuration
+## Step-by-step configuration
 
 Follow these steps to configure the application log enricher in your application:
 
-#### 1. Configure Application Metadata
+### 1. Configure Application Metadata
 
 First, configure the [Application Metadata](application-metadata.md) by calling the <xref:Microsoft.Extensions.Hosting.ApplicationMetadataHostBuilderExtensions.UseApplicationMetadata%2A> methods:
 
@@ -69,24 +65,24 @@ builder.Services.AddApplicationMetadata(
     builder.Configuration.GetSection("ambientmetadata:application")));
 ```
 
-#### 2. Provide additional configuration (optional)
+### 2. Provide additional configuration (optional)
 
 You can provide additional configuration via `appsettings.json`. There are two properties in the [Application Metadata](application-metadata.md) that don't get values automatically: `BuildVersion` and `DeploymentRing`. If you want to use them, provide values manually:
 
-:::code language="json" source="snippets/servicelogenricher/appsettings.json" range="2-7":::
+:::code language="json" source="snippets/applicationlogenricher/appsettings.json" range="2-7":::
 
-#### 3. Register the service log enricher
+### 3. Register the application log enricher
 
-Register the log enricher into the dependency injection container using <xref:Microsoft.Extensions.DependencyInjection.ApplicationEnricherServiceCollectionExtensions.AddServiceLogEnricher(Microsoft.Extensions.DependencyInjection.IServiceCollection)>:
+Register the log enricher into the dependency injection container using <xref:Microsoft.Extensions.DependencyInjection.ApplicationEnricherServiceCollectionExtensions.AppApplicationLogEnricher(Microsoft.Extensions.DependencyInjection.IServiceCollection)>:
 
 ```csharp
-serviceCollection.AddServiceLogEnricher();
+serviceCollection.AppApplicationLogEnricher();
 ```
 
-You can enable or disable individual options of the enricher using <xref:Microsoft.Extensions.DependencyInjection.ApplicationEnricherServiceCollectionExtensions.AddServiceLogEnricher(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Microsoft.Extensions.Diagnostics.Enrichment.ApplicationLogEnricherOptions})>:
+You can enable or disable individual options of the enricher using <xref:Microsoft.Extensions.DependencyInjection.ApplicationEnricherServiceCollectionExtensions.AppApplicationLogEnricher(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Microsoft.Extensions.Diagnostics.Enrichment.ApplicationLogEnricherOptions})>:
 
 ```csharp
-serviceCollection.AddServiceLogEnricher(options =>
+serviceCollection.AppApplicationLogEnricher(options =>
 {
     options.BuildVersion = true;
     options.DeploymentRing = true;
@@ -95,19 +91,19 @@ serviceCollection.AddServiceLogEnricher(options =>
 
 Alternatively, configure options using `appsettings.json`:
 
-:::code language="json" source="snippets/servicelogenricher/appsettings.json" range="8-11":::
+:::code language="json" source="snippets/applicationlogenricher/appsettings.json" range="8-11":::
 
-And apply the configuration using <xref:Microsoft.Extensions.DependencyInjection.ApplicationEnricherServiceCollectionExtensions.AddServiceLogEnricher(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfigurationSection)>:
+And apply the configuration using <xref:Microsoft.Extensions.DependencyInjection.ApplicationEnricherServiceCollectionExtensions.AppApplicationLogEnricher(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfigurationSection)>:
 
 ```csharp
 var builder = Host.CreateApplicationBuilder(args);
-builder.Services.AddServiceLogEnricher(builder.Configuration.GetSection("ApplicationLogEnricherOptions"));
+builder.Services.AppApplicationLogEnricher(builder.Configuration.GetSection("ApplicationLogEnricherOptions"));
 
 ```
 
-### `ApplicationLogEnricherOptions` Configuration options
+## `ApplicationLogEnricherOptions` configuration options
 
-The service log enricher supports several configuration options through the <xref:Microsoft.Extensions.Diagnostics.Enrichment.ApplicationLogEnricherOptions> class:
+The application log enricher supports several configuration options through the <xref:Microsoft.Extensions.Diagnostics.Enrichment.ApplicationLogEnricherOptions> class:
 
 | Property | Default Value | Dimension Name | Description |
 |----------|---------------|----------------|-------------|
@@ -120,21 +116,21 @@ By default, the enricher includes `EnvironmentName` and `ApplicationName` in log
 
 ### Complete example
 
-Here's a complete example showing how to set up the service log enricher:
+Here's a complete example showing how to set up the application log enricher:
 
 **appsettings.json:**
 
-:::code language="json" source="snippets/servicelogenricher/appsettings.json":::
+:::code language="json" source="snippets/applicationlogenricher/appsettings.json":::
 
 **Program.cs:**
 
-:::code language="csharp" source="snippets/servicelogenricher/Program.cs" :::
+:::code language="csharp" source="snippets/applicationlogenricher/Program.cs" :::
 
 ### Enriched log output
 
-With the service log enricher configured, your log output will include service-specific dimensions:
+With the application log enricher configured, your log output will include service-specific dimensions:
 
-:::code language="json" source="snippets/servicelogenricher/output-full.json" highlight="8-11" :::
+:::code language="json" source="snippets/applicationlogenricher/output-full.json" highlight="8-11" :::
 
 ## Next steps
 

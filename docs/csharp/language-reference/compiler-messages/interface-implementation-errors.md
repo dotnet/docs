@@ -98,7 +98,7 @@ The following errors relate to proper syntax and structure when declaring explic
 
 You can correct these errors using the following techniques:
 
-- Manually provide `add` and `remove` event accessors when explicitly implementing an interface event (**CS0071**). The compiler doesn't automatically generate these accessors for explicit interface implementations, so you must define them explicitly to specify how the event is stored and managed.
+- You must manually provide `add` and `remove` event accessors when explicitly implementing an interface event (**CS0071**). The compiler doesn't automatically generate these accessors for explicit interface implementations, so you must define them explicitly to specify how the event is stored and managed.
 - Remove the `public` modifier from explicit interface implementations (**CS0106**). Explicit interface implementations are implicitly public when accessed through the interface type, making the `public` keyword redundant and not allowed in this context.
 - Remove the `abstract` modifier from explicit interface implementations (**CS0106**). Explicit interface implementations provide the actual implementation and can't be marked as abstract because they can't be overridden in derived classes.
 - Remove the method body from interface member declarations, or move the implementation to a class or struct that implements the interface (**CS0531**). Before C# 8.0, interface members can't contain implementations; starting with C# 8.0, you can provide [default interface methods](../keywords/interface.md#default-interface-members) using specific syntax.
@@ -194,7 +194,7 @@ The following errors occur when implementing interface properties or events with
 
 You can correct these errors using the following techniques:
 
-- Remove any access modifiers from property accessors that restrict visibility less visible than `public`, or add the `public` modifier if it's missing (**CS0277**). All interface members are implicitly `public`, so the implementing accessor must also have public accessibility to satisfy the interface contract and be accessible through the interface type.
+- Remove any access modifiers from property accessors that restrict visibility to less visible than `public`, or add the `public` modifier if it's missing (**CS0277**). All interface members are implicitly `public`, so the implementing accessor must also have public accessibility to satisfy the interface contract and be accessible through the interface type.
 - Replace methods with accessor-like names (such as `get_PropertyName`) with proper property syntax using explicit interface implementation (**CS0470**). The compiler generates accessor methods internally for properties, and attempting to manually create methods with these reserved names conflicts with the property implementation mechanism.
 - Use explicit interface implementation syntax to resolve naming conflicts when the interface contains method names that match the auto-generated accessor methods (**CS0686**). The compiler automatically generates methods like `get_Property` and `set_Property` for properties, and `add_Event` and `remove_Event` for events, so if an interface declares methods with these exact names, explicit implementation is required to disambiguate between the interface method and the compiler-generated accessor.
 
@@ -206,12 +206,11 @@ The following errors occur when the compiler can't determine which interface imp
 
 - **CS0473**: *Explicit interface implementation 'method name' matches more than one interface member. Which interface member is actually chosen is implementation-dependent. Consider using a non-explicit implementation instead.*
 - **CS8705**: *Interface member 'member' does not have a most specific implementation. Neither is most specific.*
-interface.*
 
 You can correct these errors using the following techniques:
 
 - Eliminate the explicit interface implementation and instead use a single implicit public implementation for both interface methods (**CS0473**). When a generic method acquires the same signature as a non-generic method (such as when implementing `ITest<int>` where both `TestMethod(int)` and `TestMethod(T)` become identical), the common language infrastructure metadata system can't unambiguously determine which interface member binds to which implementation slot, so using implicit implementation allows the single method to satisfy both interface requirements.
-- Provide an explicit implementation in the implementing class or struct that resolves the ambiguity between multiple default implementations (**CS8705**). This error typically occurs with diamond inheritance patterns where a class implements multiple interfaces that each provide default implementations for the same member. The compiler needs you to explicitly specify which implementation to use or provide your own implementation.
+- Provide an explicit implementation in the implementing class or struct that resolves the ambiguity between multiple default implementations (**CS8705**). This error typically occurs with diamond inheritance patterns where a class implements multiple interfaces that each provide default implementations for the same member. The compiler needs you to explicitly specify which implementation to use, or provide your own implementation.
 - Restructure the interface hierarchy to avoid diamond inheritance conflicts where multiple interfaces provide default implementations for the same member (**CS8705**). By redesigning the interface relationships or consolidating the default implementations into a single interface, you can eliminate the ambiguity that prevents the compiler from determining the most specific implementation.
 
 For more information, see [Interfaces](../../fundamentals/types/interfaces.md) and [Default Interface Methods](../keywords/interface.md#default-interface-members).

@@ -518,8 +518,8 @@ items:
   - name: Explicit interface implementation
     href: ./compiler-messages/explicit-interface-errors.md
     displayName: >
-    interface,
-    CS9333, CS9334
+      interface,
+      CS0071, CS0106, CS0425, CS0460, CS0470, CS0473, CS0538, CS0539, CS0541, CS0551, CS0686, CS0736, CS9333, CS9334
   - name: Reference parameters
     href: ./compiler-messages/ref-modifiers-errors.md
     displayName: >
@@ -757,8 +757,6 @@ items:
       href: ../misc/cs0069.md
     - name: CS0070
       href: ../misc/cs0070.md
-    - name: CS0071
-      href: ./compiler-messages/cs0071.md
     - name: CS0072
       href: ../misc/cs0072.md
     - name: CS0073
@@ -789,8 +787,6 @@ items:
       href: ./compiler-messages/cs0103.md
     - name: CS0104
       href: ../misc/cs0104.md
-    - name: CS0106
-      href: ./compiler-messages/cs0106.md
     - name: CS0107
       href: ../misc/cs0107.md
     - name: CS0110
@@ -1019,8 +1015,6 @@ items:
       href: ../misc/cs0423.md
     - name: CS0424
       href: ../misc/cs0424.md
-    - name: CS0425
-      href: ../misc/cs0425.md
     - name: CS0426
       href: ../misc/cs0426.md
     - name: CS0428
@@ -1061,8 +1055,6 @@ items:
       href: ../misc/cs0455.md
     - name: CS0456
       href: ../misc/cs0456.md
-    - name: CS0460
-      href: ../misc/cs0460.md
     - name: CS0462
       href: ../misc/cs0462.md
     - name: CS0463
@@ -1073,8 +1065,6 @@ items:
       href: ../misc/cs0470.md
     - name: CS0471
       href: ../misc/cs0471.md
-    - name: CS0473
-      href: ../misc/cs0473.md
     - name: CS0500
       href: ../misc/cs0500.md
     - name: CS0502
@@ -1237,8 +1227,6 @@ items:
       href: ../misc/cs0682.md
     - name: CS0683
       href: ../misc/cs0683.md
-    - name: CS0686
-      href: ./compiler-messages/cs0686.md
     - name: CS0689
       href: ../misc/cs0689.md
     - name: CS0690
@@ -1307,8 +1295,6 @@ items:
       href: ../misc/cs0734.md
     - name: CS0735
       href: ../misc/cs0735.md
-    - name: CS0736
-      href: ../misc/cs0736.md
     - name: CS0737
       href: ../misc/cs0737.md
     - name: CS0738

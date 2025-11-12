@@ -1,7 +1,7 @@
 ---
 title: dotnet tool update command
 description: The dotnet tool update command updates the specified .NET tool on your machine.
-ms.date: 10/28/2025
+ms.date: 11/12/2025
 ---
 # dotnet tool update
 
@@ -54,7 +54,11 @@ The `dotnet tool update` command provides a way for you to update .NET tools on 
 
 - **`PACKAGE_ID`**
 
-  Name/ID of the NuGet package that contains the .NET global tool to update. You can find the package name using the [dotnet tool list](dotnet-tool-list.md) command.
+  Name/ID of the NuGet package that contains the .NET global tool to update.
+
+  Starting in .NET 10.0.100 SDK, use the name/ID, and version seperated by `@` to update a .NET tool.
+
+  You can find the package name using the [dotnet tool list](dotnet-tool-list.md) command.
 
 ## Options
 
@@ -138,9 +142,13 @@ The `dotnet tool update` command provides a way for you to update .NET tools on 
 
   Updates the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) global tool to the latest patch version, with a major version of `2`, and a minor version of `0`.
 
-- **`dotnet tool update -g dotnetsay --version (2.0.*,2.1.4)`**
+- **`dotnet tool update -g dotnetsay@2.1.7*`**
 
-  Updates the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) global tool to the lowest version within the specified range `(> 2.0.0 && < 2.1.4)`, version `2.1.0` would be installed. For more information on semantic versioning ranges, see [NuGet packaging version ranges](/nuget/concepts/package-versioning#version-ranges).
+  Updates the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) global tool to the latest patch version, 2.1.7.
+
+- **`dotnet tool update -g dotnetsay --version (2.0.0,2.1.7)`**
+
+  Updates the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) global tool to the lowest version within the specified range `(> 2.0.0 && < 2.1.7)`, version `2.1.0` would be installed. For more information on semantic versioning ranges, see [NuGet packaging version ranges](/nuget/concepts/package-versioning#version-ranges).
 
 ## See also
 

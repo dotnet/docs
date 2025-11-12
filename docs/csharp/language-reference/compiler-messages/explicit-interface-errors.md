@@ -22,11 +22,7 @@ f1_keywords:
   - "CS0736"
   - "CS0737"
   - "CS0738"
-  - "CS8701"
-  - "CS8702"
   - "CS8705"
-  - "CS8707"
-  - "CS8711"
   - "CS8854"
   - "CS9333"
   - "CS9334"
@@ -52,8 +48,6 @@ helpviewer_keywords:
   - "CS0737"
   - "CS0738"
   - "CS8705"
-  - "CS8707"
-  - "CS8711"
   - "CS8854"
   - "CS9333"
   - "CS9334"
@@ -67,32 +61,66 @@ This article covers the following compiler errors:
 <!-- The text in this list generates issues for Acrolinx, because they don't use contractions.
 That's by design. The text closely matches the text of the compiler error / warning for SEO purposes.
  -->
-- [**CS0071**](#event-accessor-syntax): *An explicit interface implementation of an event must use event accessor syntax*
-- [**CS0106**](#invalid-modifiers): *The modifier 'modifier' is not valid for this item*
+- [**CS0071**](#interface-declaration-and-syntax): *An explicit interface implementation of an event must use event accessor syntax*
+- [**CS0106**](#interface-declaration-and-syntax): *The modifier 'modifier' is not valid for this item*
 - [**CS0277**](#accessor-not-public): *'class' does not implement interface member 'accessor'. 'class accessor' is not public*
 - [**CS0425**](#constraint-mismatch): *The constraints for type parameter 'type parameter' of method 'method' must match the constraints for type parameter 'type parameter' of interface method 'method'. Consider using an explicit interface implementation instead.*
 - [**CS0460**](#inherited-constraints): *Constraints for override and explicit interface implementation methods are inherited from the base method, so they cannot be specified directly*
 - [**CS0470**](#accessor-implementation): *Method 'method' cannot implement interface accessor 'accessor' for type 'type'. Use an explicit interface implementation.*
 - [**CS0473**](#ambiguous-match): *Explicit interface implementation 'method name' matches more than one interface member. Which interface member is actually chosen is implementation-dependent. Consider using a non-explicit implementation instead.*
-- [**CS0531**](#interface-member-with-body): *'member' : interface members cannot have a definition*
-- [**CS0535**](#missing-implementation): *'class' does not implement interface member 'member'*
-- [**CS0538**](#not-an-interface): *'name' in explicit interface declaration is not an interface*
+- [**CS0531**](#interface-declaration-and-syntax): *'member' : interface members cannot have a definition*
+- [**CS0535**](#missing-or-incomplete-implementations): *'class' does not implement interface member 'member'*
+- [**CS0538**](#interface-declaration-and-syntax): *'name' in explicit interface declaration is not an interface*
 - [**CS0539**](#member-not-in-interface): *'member' in explicit interface declaration is not a member of interface*
 - [**CS0540**](#type-not-implementing-interface): *'interface member' : containing type does not implement interface 'interface'*
-- [**CS0541**](#wrong-location): *'declaration' : explicit interface declaration can only be declared in a class or struct*
-- [**CS0550**](#extra-accessor): *'accessor' adds an accessor not found in interface member 'property'*
-- [**CS0551**](#missing-accessor): *Explicit interface implementation 'implementation' is missing accessor 'accessor'*
+- [**CS0541**](#interface-declaration-and-syntax): *'declaration' : explicit interface declaration can only be declared in a class or struct*
+- [**CS0550**](#missing-or-incomplete-implementations): *'accessor' adds an accessor not found in interface member 'property'*
+- [**CS0551**](#missing-or-incomplete-implementations): *Explicit interface implementation 'implementation' is missing accessor 'accessor'*
 - [**CS0630**](#variadic-implementation): *'method' cannot implement interface member 'member' in type 'type' because it has an __arglist parameter*
 - [**CS0686**](#accessor-name-conflict): *Accessor 'accessor' cannot implement interface member 'member' for type 'type'. Use an explicit interface implementation.*
 - [**CS0736**](#static-implementation): *'type name' does not implement interface member 'member name'. 'method name' cannot implement an interface member because it is static.*
 - [**CS0737**](#method-not-public): *'type name' does not implement interface member 'member name'. 'method name' cannot implement an interface member because it is not public.*
 - [**CS0738**](#wrong-return-type): *'type name' does not implement interface member 'member name'. 'method name' cannot implement 'interface member' because it does not have the matching return type of 'type name'.*
 - [**CS8705**](#no-most-specific-implementation): *Interface member 'member' does not have a most specific implementation. Neither 'implementation1', nor 'implementation2' are most specific.*
-- [**CS8707**](#runtime-no-support-protected-access): *Target runtime does not support 'protected', 'protected internal', or 'private protected' accessibility for a member of an interface.*
-- [**CS8711**](#default-implementation-in-nopia): *Type 'type' cannot be embedded because it has a non-abstract member. Consider setting the 'Embed Interop Types' property to false.*
 - [**CS8854**](#wrong-init-only): *'type' does not implement interface member 'member'. 'implementation' cannot implement 'member' because it does not have the matching 'init' setter of 'property'.*
 - [**CS9333**](#incorrect-member-signature): *Parameter type must match implemented member declaration.*
 - [**CS9334**](#incorrect-member-signature): *Return type must match implemented member declaration.*
+
+## Interface declaration and syntax
+
+The following errors relate to proper syntax and structure when declaring explicit interface implementations:
+
+- **CS0071**: *An explicit interface implementation of an event must use event accessor syntax*
+- **CS0106**: *The modifier 'modifier' is not valid for this item*
+- **CS0531**: *'member' : interface members cannot have a definition*
+- **CS0538**: *'name' in explicit interface declaration is not an interface*
+- **CS0541**: *'declaration' : explicit interface declaration can only be declared in a class or struct*
+
+When explicitly implementing an [interface](../../fundamentals/types/interfaces.md) member, you must follow specific syntax rules. Understanding these rules helps avoid common declaration errors.
+
+For events (**CS0071**), you must manually provide `add` and `remove` event accessors when explicitly implementing an interface event. The compiler doesn't automatically generate these accessors for explicit implementations. For more information, see [How to implement interface events](../../programming-guide/events/how-to-implement-interface-events.md).
+
+Certain modifiers are not valid for explicit interface implementations (**CS0106**). The `public` keyword is redundant and not allowed because explicit interface implementations are implicitly public when accessed through the interface type. The `abstract` keyword is also not allowed because explicit interface implementations cannot be overridden.
+
+Prior to C# 8.0, interface members could not contain method bodies (**CS0531**). Starting with C# 8.0, interfaces can include [default implementations](../../whats-new/csharp-8.md#default-interface-methods) for members, allowing you to provide concrete implementations in the interface itself.
+
+The type specified in an explicit interface declaration must be an actual interface (**CS0538**). Attempting to use a class or other non-interface type in an explicit interface implementation syntax results in this error.
+
+Explicit interface declarations can only appear in classes or structs (**CS0541**). They cannot be declared at the namespace level or in other contexts. The implementing type must be a class or struct that declares the interface in its base list.
+
+## Missing or incomplete implementations
+
+The following errors occur when a class fails to fully implement an interface or implements members that don't match the interface contract:
+
+- **CS0535**: *'class' does not implement interface member 'member'*
+- **CS0550**: *'accessor' adds an accessor not found in interface member 'property'*
+- **CS0551**: *Explicit interface implementation 'implementation' is missing accessor 'accessor'*
+
+When a class or struct implements an [interface](../../fundamentals/types/interfaces.md), it must provide implementations for all members declared in that interface (**CS0535**). If any interface member is missing an implementation, the type must be declared as `abstract`. A class must implement all members of interfaces from which it derives unless it's marked abstract. For more information, see [Using Properties](../../programming-guide/classes-and-structs/using-properties.md).
+
+For property implementations, the accessors must match exactly what the interface defines. Adding an accessor that doesn't exist in the interface declaration causes **CS0550**. For example, if an interface property only declares a `get` accessor, the implementing property cannot add a `set` accessor. The implementation can only include accessors that are explicitly declared in the interface.
+
+Conversely, omitting an accessor that the interface requires causes **CS0551**. If an interface property declares both `get` and `set` accessors, the explicit interface implementation must provide both. Each accessor declared in the interface must have a corresponding accessor in the implementation with matching signatures.
 
 ## Event accessor syntax
 
@@ -844,22 +872,6 @@ public class Test: ITest
 This error occurs when multiple interface implementations provide a default implementation for the same member, and the compiler cannot determine which one should be used. This typically happens with diamond inheritance patterns in interfaces with default implementations.
 
 To resolve this error, provide an explicit implementation in the implementing class or struct to resolve the ambiguity, or restructure the interface hierarchy to avoid the conflict.
-
-## Runtime no support protected access
-
-- **CS8707**: *Target runtime does not support 'protected', 'protected internal', or 'private protected' accessibility for a member of an interface.*
-
-This error occurs when you use protected access modifiers on interface members (a C# 8.0 feature for default interface implementation), but the target runtime doesn't support it.
-
-To resolve this error, either target a runtime that supports this feature (.NET Core 3.0+, .NET 5+) or change the accessibility of the interface member to `public` or remove the implementation.
-
-## Default implementation in nopia
-
-- **CS8711**: *Type 'type' cannot be embedded because it has a non-abstract member. Consider setting the 'Embed Interop Types' property to false.*
-
-This error occurs when you try to embed interop types (NoPIA - No Primary Interop Assembly) that contain interfaces with default implementations. Embedded interop types cannot include non-abstract interface members.
-
-To resolve this error, set the 'Embed Interop Types' property to `false` for the assembly reference, or remove the default implementation from the interface.
 
 ## Wrong init only
 

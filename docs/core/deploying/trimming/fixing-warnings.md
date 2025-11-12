@@ -404,10 +404,10 @@ Ensure you've annotated the entire call chain from the reflection usage back to 
 
 ### Too many warnings to address
 
-1. Start with your own code - fix warnings in code you control first
-2. Use `TrimmerSingleWarn` to see individual warnings from packages
-3. Consider if trimming is appropriate for your application
-4. Check [Known trimming incompatibilities](incompatibilities.md) for framework-level issues
+1. Start with your own code - fix warnings in code you control first.
+2. Use `TrimmerSingleWarn` to see individual warnings from packages.
+3. Consider if trimming is appropriate for your application.
+4. Check [Known trimming incompatibilities](incompatibilities.md) for framework-level issues.
 
 ### Unsure which DynamicallyAccessedMemberTypes to use
 

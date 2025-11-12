@@ -114,7 +114,7 @@ The application log enricher supports several configuration options through the 
 
 By default, the enricher includes `EnvironmentName` and `ApplicationName` in log entries. The `BuildVersion` and `DeploymentRing` properties are disabled by default and must be explicitly enabled if needed.
 
-### Complete example
+## Complete example
 
 Here's a complete example showing how to set up the application log enricher:
 
@@ -126,7 +126,7 @@ Here's a complete example showing how to set up the application log enricher:
 
 :::code language="csharp" source="snippets/applicationlogenricher/Program.cs" :::
 
-### Enriched log output
+## Enriched log output
 
 With the application log enricher configured, your log output will include service-specific dimensions:
 

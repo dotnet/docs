@@ -47,7 +47,7 @@ Summarize the breaking change.
 ### 4. New behavior
 
 - Briefly describe new behavior using present tense.
-- Start the first sentence with "Starting in \<major version>, ..."
+- Start the first sentence with "Starting in <major version>, ..."
 - Include example code snippets if relevant.
 
 ### 5. Type of breaking change

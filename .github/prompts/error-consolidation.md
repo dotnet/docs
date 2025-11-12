@@ -12,8 +12,8 @@ Overall steps:
 
 We're going to work through a series of files consolidating errors and warnings.
 
-- For the duration of this chat, all references to "destination file" refer to `attribute-usage-errors.md`.
-- For the duration of this chat, all references to "the target theme" refer to errors and warnings related to declaring and using *attributes*.
+- For the duration of this chat, all references to "destination file" refer to `explicit-interface-errors.md`.
+- For the duration of this chat, all references to "the target theme" refer to errors and warnings related to members that explicitly implement an interface member.
 
 The destination file already contains a skeleton for the final output.
 

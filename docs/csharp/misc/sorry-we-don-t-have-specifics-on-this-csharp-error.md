@@ -538,8 +538,6 @@ f1_keywords:
   - "CS9096"
   - "CS9097"
 # C# 14 errors begin here
-  - "CS9333"
-  - "CS9334"
   - "CS9338"
 helpviewer_keywords:
   - "errors [C#], additional information"

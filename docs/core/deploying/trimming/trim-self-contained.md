@@ -71,7 +71,7 @@ For more information, see [.NET application publishing overview](../../deploying
 
 ## Next steps
 
-After enabling trimming, you may encounter trim warnings during build. Follow these guides to understand and resolve them:
+After enabling trimming, you might encounter trim warnings during build. Follow these guides to understand and resolve them:
 
 - **[Understanding trim analysis](trimming-concepts.md)** - Learn how the trimmer works and why certain code patterns produce warnings. This conceptual guide explains the fundamental principles of trim analysis.
 - **[Fix trim warnings](fixing-warnings.md)** - Step-by-step workflows for resolving trim warnings in your code.

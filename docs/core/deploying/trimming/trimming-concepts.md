@@ -77,12 +77,12 @@ PrintMethodNames(typeof(DateTime));
 
 From the trimmer's perspective:
 
-1. It sees `type.GetMethods()` is called
-2. It doesn't know what `type` will be (it's a parameter)
-3. It can't determine which types' methods need to be preserved
-4. Without guidance, it might remove methods from `DateTime`, breaking the code
+- It sees `type.GetMethods()` is called.
+- It doesn't know what `type` will be (it's a parameter).
+- It can't determine which types' methods need to be preserved.
+- Without guidance, it might remove methods from `DateTime`, breaking the code.
 
-This is why the trimmer produces a warning on this code.
+Consequently, the trimmer produces a warning on this code.
 
 ## Understanding DynamicallyAccessedMembers
 
@@ -190,11 +190,11 @@ Some code patterns simply cannot be made statically analyzable. For these cases,
 
 ### When to use RequiresUnreferencedCode
 
-Use this attribute when:
+Use the <xref:System.Diagnostics.CodeAnalysis.RequiresUnreferencedCodeAttribute> attribute when:
 
-1. **The reflection pattern is fundamentally dynamic**: Loading assemblies or types by string names from external sources
-2. **The complexity is too high to annotate**: Code that uses reflection in complex, data-driven ways
-3. **You're using runtime code generation**: Technologies like <xref:System.Reflection.Emit> or the `dynamic` keyword
+- **The reflection pattern is fundamentally dynamic**: Loading assemblies or types by string names from external sources.
+- **The complexity is too high to annotate**: Code that uses reflection in complex, data-driven ways.
+- **You're using runtime code generation**: Technologies like <xref:System.Reflection.Emit> or the `dynamic` keyword.
 
 Example:
 
@@ -212,8 +212,8 @@ void LoadPlugin(string pluginPath)
 
 `RequiresUnreferencedCode` serves two purposes:
 
-1. **Suppresses warnings inside the method**: The trimmer won't analyze or warn about the reflection usage
-2. **Creates warnings at call sites**: Any code calling this method gets a warning
+1. **Suppresses warnings inside the method**: The trimmer won't analyze or warn about the reflection usage.
+2. **Creates warnings at call sites**: Any code calling this method gets a warning.
 
 This "bubbles up" the warning to give developers visibility into trim-incompatible code paths.
 
@@ -388,12 +388,12 @@ void LoadPlugins(string pluginDirectory)
 
 ## Key takeaways
 
-1. **The trimmer uses static analysis** - it can only understand code paths visible at compile time
-2. **Reflection breaks static analysis** - the trimmer can't see what reflection will access at runtime
-3. **DynamicallyAccessedMembers creates contracts** - it tells the trimmer what needs to be preserved
-4. **Requirements flow backward** - from reflection usage back to the source of the `Type` value
-5. **RequiresUnreferencedCode documents incompatibility** - use it when code can't be made analyzable
-6. **Attributes aren't just hints** - the trimmer enforces contracts and produces warnings when they can't be met
+- **The trimmer uses static analysis** - it can only understand code paths visible at compile time.
+- **Reflection breaks static analysis** - the trimmer can't see what reflection will access at runtime.
+- **DynamicallyAccessedMembers creates contracts** - it tells the trimmer what needs to be preserved.
+- **Requirements flow backward** - from reflection usage back to the source of the `Type` value.
+- **RequiresUnreferencedCode documents incompatibility** - use it when code can't be made analyzable.
+- **Attributes aren't just hints** - the trimmer enforces contracts and produces warnings when they can't be met.
 
 ## Next steps
 

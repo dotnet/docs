@@ -10,7 +10,7 @@ ai-usage: ai-assisted
 
 The <xref:Microsoft.Extensions.Diagnostics.ResourceMonitoring.IResourceMonitor> interface and related APIs have been marked as obsolete starting in .NET 9. These APIs will be removed in a future version. The resource monitoring functionality has been replaced with a more efficient metrics-based approach using observable instruments.
 
-The following APIs are marked obsolete, starting in .NET 9. Use of these APIs generates warning `EXTOBS0001` at compile time.
+The following APIs are marked obsolete. Use of these APIs generates warning `EXTOBS0001` at compile time.
 
 - <xref:Microsoft.Extensions.Diagnostics.ResourceMonitoring.IResourceMonitor?displayProperty=nameWithType>
 - <xref:Microsoft.Extensions.Diagnostics.ResourceMonitoring.IResourceMonitor.GetUtilization(System.TimeSpan)?displayProperty=nameWithType>
@@ -21,7 +21,7 @@ Instead of using `IResourceMonitor`, switch to using resource monitoring metrics
 
 ### Migration example
 
-**Old approach using IResourceMonitor:**
+Old approach using `IResourceMonitor`:
 
 ```csharp
 services.AddResourceMonitoring();
@@ -45,21 +45,21 @@ public class MyService
 }
 ```
 
-**New approach using metrics:**
+New approach using metrics:
 
 ```csharp
 services.AddResourceMonitoring();
 
-// Configure metrics collection
+// Configure metrics collection.
 services.AddOpenTelemetry()
     .WithMetrics(builder =>
     {
         builder.AddMeter("Microsoft.Extensions.Diagnostics.ResourceMonitoring");
-        builder.AddConsoleExporter(); // Or use any other exporter
+        builder.AddConsoleExporter(); // Or use any other exporter.
     });
 ```
 
-The resource monitoring metrics are automatically published and can be consumed by any OpenTelemetry-compatible metrics pipeline. For more information, see [Resource Monitoring observable instruments](https://learn.microsoft.com/dotnet/core/diagnostics/built-in-metrics-diagnostics#microsoftextensionsdiagnosticsresourcemonitoring).
+The resource monitoring metrics are automatically published and can be consumed by any OpenTelemetry-compatible metrics pipeline. For more information, see [Resource Monitoring observable instruments](../../core/diagnostics/built-in-metrics-diagnostics.md#microsoftextensionsdiagnosticsresourcemonitoring).
 
 ## Suppress a warning
 

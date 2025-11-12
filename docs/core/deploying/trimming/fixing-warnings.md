@@ -63,7 +63,7 @@ Modern .NET provides source generators for common reflection scenarios:
 
 For more information, see [Known trimming incompatibilities](incompatibilities.md).
 
-## Approach 2: Make code trim-compatible with DynamicallyAccessedMembers
+## Approach 2: Make code trim-compatible with DynamicallyAccessedMembers {#functionality-with-requirements-on-its-input}
 
 When reflection is necessary but types are known at compile time, use <xref:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMembersAttribute> to make your code trim-compatible.
 

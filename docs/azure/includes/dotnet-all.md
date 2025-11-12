@@ -342,7 +342,7 @@
 | Resource Management - Recovery Services Data Replication | NuGet [1.0.0](https://www.nuget.org/packages/Azure.ResourceManager.RecoveryServicesDataReplication/1.0.0) | [docs](/dotnet/api/overview/azure/ResourceManager.RecoveryServicesDataReplication-readme) | GitHub [1.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.RecoveryServicesDataReplication_1.0.0/sdk/recoveryservices-datareplication/Azure.ResourceManager.RecoveryServicesDataReplication/) |
 | Resource Management - Recovery Services Site Recovery | NuGet [1.3.0](https://www.nuget.org/packages/Azure.ResourceManager.RecoveryServicesSiteRecovery/1.3.0) | [docs](/dotnet/api/overview/azure/ResourceManager.RecoveryServicesSiteRecovery-readme) | GitHub [1.3.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.RecoveryServicesSiteRecovery_1.3.0/sdk/recoveryservices-siterecovery/Azure.ResourceManager.RecoveryServicesSiteRecovery/) |
 | Resource Management - Redis | NuGet [1.5.1](https://www.nuget.org/packages/Azure.ResourceManager.Redis/1.5.1) | [docs](/dotnet/api/overview/azure/ResourceManager.Redis-readme) | GitHub [1.5.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.Redis_1.5.1/sdk/redis/Azure.ResourceManager.Redis/) |
-| Resource Management - Redis Enterprise | NuGet [1.2.1](https://www.nuget.org/packages/Azure.ResourceManager.RedisEnterprise/1.2.1) | [docs](/dotnet/api/overview/azure/ResourceManager.RedisEnterprise-readme) | GitHub [1.2.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.RedisEnterprise_1.2.1/sdk/redisenterprise/Azure.ResourceManager.RedisEnterprise/) |
+| Resource Management - Redis Enterprise | NuGet [1.3.0](https://www.nuget.org/packages/Azure.ResourceManager.RedisEnterprise/1.3.0) | [docs](/dotnet/api/overview/azure/ResourceManager.RedisEnterprise-readme) | GitHub [1.3.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.RedisEnterprise_1.3.0/sdk/redisenterprise/Azure.ResourceManager.RedisEnterprise/) |
 | Resource Management - Redis Enterprise Cache | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.RedisEnterpriseCache/1.0.0-beta.1) | [docs](/dotnet/api/overview/azure/ResourceManager.RedisEnterpriseCache-readme?view=azure-dotnet-preview&amp;preserve-view=true) | GitHub [1.0.0-beta.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.RedisEnterpriseCache_1.0.0-beta.1/sdk/redisenterprise/Azure.ResourceManager.RedisEnterpriseCache/) |
 | Resource Management - Relay | NuGet [1.2.1](https://www.nuget.org/packages/Azure.ResourceManager.Relay/1.2.1) | [docs](/dotnet/api/overview/azure/ResourceManager.Relay-readme) | GitHub [1.2.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.Relay_1.2.1/sdk/relay/Azure.ResourceManager.Relay/) |
 | Resource Management - Reservations | NuGet [1.4.1](https://www.nuget.org/packages/Azure.ResourceManager.Reservations/1.4.1) | [docs](/dotnet/api/overview/azure/ResourceManager.Reservations-readme) | GitHub [1.4.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.Reservations_1.4.1/sdk/reservations/Azure.ResourceManager.Reservations/) |
@@ -412,11 +412,11 @@
 | Microsoft.Azure.DataFactoryTestingFramework.Expressions | NuGet [0.2.7](https://www.nuget.org/packages/Microsoft.Azure.DataFactoryTestingFramework.Expressions/0.2.7) |  |  |
 | Microsoft.Azure.Functions.Worker.OpenTelemetry | NuGet [1.1.0-preview6](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.OpenTelemetry/1.1.0-preview6) |  |  |
 | OpenTelemetry Profiler | NuGet [1.0.0-beta6](https://www.nuget.org/packages/Azure.Monitor.OpenTelemetry.Profiler/1.0.0-beta6) |  |  |
-| Speech CLI | NuGet [1.46.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.CLI/1.46.0) |  |  |
-| Speech Extension Embedded SR | NuGet [1.46.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Embedded.SR/1.46.0) |  |  |
-| Speech Extension Embedded TTS | NuGet [1.46.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Embedded.TTS/1.46.0) |  |  |
-| Speech Extension ONNX Runtime | NuGet [1.46.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.ONNX.Runtime/1.46.0) |  |  |
-| Speech Extension Telemetry | NuGet [1.46.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Telemetry/1.46.0) |  |  |
+| Speech CLI | NuGet [1.47.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.CLI/1.47.0) |  |  |
+| Speech Extension Embedded SR | NuGet [1.47.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Embedded.SR/1.47.0) |  |  |
+| Speech Extension Embedded TTS | NuGet [1.47.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Embedded.TTS/1.47.0) |  |  |
+| Speech Extension ONNX Runtime | NuGet [1.47.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.ONNX.Runtime/1.47.0) |  |  |
+| Speech Extension Telemetry | NuGet [1.47.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Telemetry/1.47.0) |  |  |
 | System Net Client Model | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/System.Net.ClientModel/1.0.0-beta.1) |  |  |
 | Unknown Display Name | NuGet [0.13.0](https://www.nuget.org/packages/Azure.Iot.Operations.Connector/0.13.0) |  |  |
 | Unknown Display Name | NuGet [0.1.0](https://www.nuget.org/packages/Azure.Iot.Operations.Templates/0.1.0) |  |  |
@@ -432,7 +432,7 @@
 | Unknown Display Name | NuGet [0.1.4-preview.2](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Aot/0.1.4-preview.2) |  |  |
 | Unknown Display Name | NuGet [0.2.802](https://www.nuget.org/packages/Microsoft.Azure.Mcp.AzTypes.Internal.Compact/0.2.802) |  |  |
 | Unknown Display Name | NuGet [1.1.2-preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.AzureCosmosDb.Mongo/1.1.2-preview) |  |  |
-| Unknown Display Name | NuGet [1.46.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.MAS/1.46.0) |  |  |
+| Unknown Display Name | NuGet [1.47.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.MAS/1.47.0) |  |  |
 | Unknown Display Name | NuGet [1.1.0](https://www.nuget.org/packages/Microsoft.Extensions.Caching.Postgres/1.1.0) |  |  |
 | Unknown Display Name | NuGet [0.0.12](https://www.nuget.org/packages/Microsoft.Template.Mcp/0.0.12) |  |  |
 | Unknown Display Name | NuGet [0.0.12](https://www.nuget.org/packages/Microsoft.Template.Mcp.linux-arm64/0.0.12) |  |  |
@@ -514,8 +514,8 @@
 | Search - Common | NuGet [10.1.0](https://www.nuget.org/packages/Microsoft.Azure.Search.Common/10.1.0) |  | GitHub [10.1.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Search.Common_10.1.0/sdk/search/Microsoft.Azure.Search.Common/) |
 | Search - Data | NuGet [10.1.0](https://www.nuget.org/packages/Microsoft.Azure.Search.Data/10.1.0) |  | GitHub [10.1.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Search.Data_10.1.0/sdk/search/Microsoft.Azure.Search.Data/) |
 | Search - Service | NuGet [10.1.0](https://www.nuget.org/packages/Microsoft.Azure.Search.Service/10.1.0) |  | GitHub [10.1.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Search.Service_10.1.0/sdk/search/Microsoft.Azure.Search.Service/) |
-| Speech | NuGet [1.46.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech/1.46.0)<br>NuGet [1.47.0-beta.0.357883](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech/1.47.0-beta.0.357883) |  |  |
-| Speech Remote Conversation | NuGet [1.46.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Remoteconversation/1.46.0) |  |  |
+| Speech | NuGet [1.47.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech/1.47.0)<br>NuGet [1.47.0-beta.0.357883](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech/1.47.0-beta.0.357883) |  |  |
+| Speech Remote Conversation | NuGet [1.47.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Remoteconversation/1.47.0) |  |  |
 | Speech Xamarin iOS | NuGet [1.25.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Xamarin.iOS/1.25.0) |  |  |
 | Spell Check | NuGet [4.1.0-preview.1](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Language.SpellCheck/4.1.0-preview.1) |  | GitHub [4.1.0-preview.1](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.Language.SpellCheck_4.1.0-preview.1/sdk/cognitiveservices/Language.SpellCheck) |
 | Spring Cloud Client | NuGet [2.0.0-preview.3](https://www.nuget.org/packages/Microsoft.Azure.SpringCloud.Client/2.0.0-preview.3) |  |  |

@@ -519,7 +519,8 @@ items:
     href: ./compiler-messages/explicit-interface-errors.md
     displayName: >
       interface,
-      CS0071, CS0106, CS0425, CS0460, CS0470, CS0473, CS0538, CS0539, CS0541, CS0551, CS0686, CS0736, CS9333, CS9334
+      CS0071, CS0106, CS0277, CS0425, CS0460, CS0470, CS0473, CS0535, CS0538, CS0539, CS0540, CS0541,
+      CS0550, CS0551, CS0686, CS0736, CS0737, CS0738, CS9333, CS9334
   - name: Reference parameters
     href: ./compiler-messages/ref-modifiers-errors.md
     displayName: >
@@ -957,8 +958,6 @@ items:
       href: ../misc/cs0275.md
     - name: CS0276
       href: ../misc/cs0276.md
-    - name: CS0277
-      href: ../misc/cs0277.md
     - name: CS0281
       href: ../misc/cs0281.md
     - name: CS0283
@@ -1107,16 +1106,12 @@ items:
       href: ../misc/cs0533.md
     - name: CS0534
       href: ../misc/cs0534.md
-    - name: CS0535
-      href: ../misc/cs0535.md
     - name: CS0537
       href: ../misc/cs0537.md
     - name: CS0538
       href: ../misc/cs0538.md
     - name: CS0539
       href: ../misc/cs0539.md
-    - name: CS0540
-      href: ../misc/cs0540.md
     - name: CS0541
       href: ../misc/cs0541.md
     - name: CS0542
@@ -1135,8 +1130,6 @@ items:
       href: ../misc/cs0548.md
     - name: CS0549
       href: ../misc/cs0549.md
-    - name: CS0550
-      href: ../misc/cs0550.md
     - name: CS0551
       href: ../misc/cs0551.md
     - name: CS0569
@@ -1295,10 +1288,6 @@ items:
       href: ../misc/cs0734.md
     - name: CS0735
       href: ../misc/cs0735.md
-    - name: CS0737
-      href: ../misc/cs0737.md
-    - name: CS0738
-      href: ../misc/cs0738.md
     - name: CS0739
       href: ../misc/cs0739.md
     - name: CS0742

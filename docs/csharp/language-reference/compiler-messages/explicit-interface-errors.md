@@ -4,31 +4,43 @@ description: These compiler errors and warnings indicate errors in declaring met
 f1_keywords:
   - "CS0071"
   - "CS0106"
+  - "CS0277"
   - "CS0425"
   - "CS0460"
   - "CS0470"
   - "CS0473"
+  - "CS0535"
   - "CS0538"
   - "CS0539"
+  - "CS0540"
   - "CS0541"
+  - "CS0550"
   - "CS0551"
   - "CS0686"
   - "CS0736"
+  - "CS0737"
+  - "CS0738"
   - "CS9333"
   - "CS9334"
 helpviewer_keywords:
   - "CS0071"
   - "CS0106"
+  - "CS0277"
   - "CS0425"
   - "CS0460"
   - "CS0470"
   - "CS0473"
+  - "CS0535"
   - "CS0538"
   - "CS0539"
+  - "CS0540"
   - "CS0541"
+  - "CS0550"
   - "CS0551"
   - "CS0686"
   - "CS0736"
+  - "CS0737"
+  - "CS0738"
   - "CS9333"
   - "CS9334"
 ms.date: 11/12/2025
@@ -43,16 +55,22 @@ That's by design. The text closely matches the text of the compiler error / warn
  -->
 - [**CS0071**](#event-accessor-syntax): *An explicit interface implementation of an event must use event accessor syntax*
 - [**CS0106**](#invalid-modifiers): *The modifier 'modifier' is not valid for this item*
+- [**CS0277**](#accessor-not-public): *'class' does not implement interface member 'accessor'. 'class accessor' is not public*
 - [**CS0425**](#constraint-mismatch): *The constraints for type parameter 'type parameter' of method 'method' must match the constraints for type parameter 'type parameter' of interface method 'method'. Consider using an explicit interface implementation instead.*
 - [**CS0460**](#inherited-constraints): *Constraints for override and explicit interface implementation methods are inherited from the base method, so they cannot be specified directly*
 - [**CS0470**](#accessor-implementation): *Method 'method' cannot implement interface accessor 'accessor' for type 'type'. Use an explicit interface implementation.*
 - [**CS0473**](#ambiguous-match): *Explicit interface implementation 'method name' matches more than one interface member. Which interface member is actually chosen is implementation-dependent. Consider using a non-explicit implementation instead.*
+- [**CS0535**](#missing-implementation): *'class' does not implement interface member 'member'*
 - [**CS0538**](#not-an-interface): *'name' in explicit interface declaration is not an interface*
 - [**CS0539**](#member-not-in-interface): *'member' in explicit interface declaration is not a member of interface*
+- [**CS0540**](#type-not-implementing-interface): *'interface member' : containing type does not implement interface 'interface'*
 - [**CS0541**](#wrong-location): *'declaration' : explicit interface declaration can only be declared in a class or struct*
+- [**CS0550**](#extra-accessor): *'accessor' adds an accessor not found in interface member 'property'*
 - [**CS0551**](#missing-accessor): *Explicit interface implementation 'implementation' is missing accessor 'accessor'*
 - [**CS0686**](#accessor-name-conflict): *Accessor 'accessor' cannot implement interface member 'member' for type 'type'. Use an explicit interface implementation.*
 - [**CS0736**](#static-implementation): *'type name' does not implement interface member 'member name'. 'method name' cannot implement an interface member because it is static.*
+- [**CS0737**](#method-not-public): *'type name' does not implement interface member 'member name'. 'method name' cannot implement an interface member because it is not public.*
+- [**CS0738**](#wrong-return-type): *'type name' does not implement interface member 'member name'. 'method name' cannot implement 'interface member' because it does not have the matching return type of 'type name'.*
 - [**CS9333**](#incorrect-member-signature): *Parameter type must match implemented member declaration.*
 - [**CS9334**](#incorrect-member-signature): *Return type must match implemented member declaration.*
 
@@ -127,6 +145,37 @@ namespace MyNamespace
 
       public static void Main() {}
    }
+}
+```
+
+## Accessor not public
+
+- **CS0277**: *'class' does not implement interface member 'accessor'. 'class accessor' is not public*
+
+This error occurs when you try to implement a property of an interface, but the implementation of the property accessor in the class is not public. Methods that implement interface members need to have public accessibility. To resolve, remove the access modifier on the property accessor.
+
+The following example generates CS0277:
+
+```csharp
+// CS0277.cs
+public interface MyInterface
+{
+    int Property
+    {
+        get;
+        set;
+    }
+}
+
+public class MyClass : MyInterface   // CS0277
+{
+    public int Property
+    {
+        get { return 0; }
+        // Try the following accessor instead:
+        //set { }
+        protected set { }
+    }
 }
 ```
 
@@ -288,6 +337,48 @@ class T
 }
 ```
 
+## Missing implementation
+
+- **CS0535**: *'class' does not implement interface member 'member'*
+
+A [class](../keywords/class.md) derived from an [interface](../keywords/interface.md), but the class did not implement one or more of the interface's members. A class must implement all members of interfaces from which it derives or else be declared `abstract`.
+
+The following sample generates CS0535:
+
+```csharp
+// CS0535.cs
+public interface A
+{
+   void F();
+}
+
+public class B : A {}   // CS0535 A::F is not implemented
+
+// OK
+public class C : A {
+   public void F() {}
+   public static void Main() {}
+}
+```
+
+The following sample generates CS0535:
+
+```csharp
+// CS0535_b.cs
+using System;
+class C : IDisposable {}   // CS0535
+
+// OK
+class D : IDisposable {
+   void IDisposable.Dispose() {}
+   public void Dispose() {}
+
+   static void Main() {
+      using (D d = new D()) {}
+   }
+}
+```
+
 ## Accessor implementation
 
 - **CS0470**: *Method 'method' cannot implement interface accessor 'accessor' for type 'type'. Use an explicit interface implementation.*
@@ -377,6 +468,53 @@ namespace x
 }
 ```
 
+## Type not implementing interface
+
+- **CS0540**: *'interface member' : containing type does not implement interface 'interface'*
+
+You attempted to implement an interface member in a [class](../keywords/class.md) that does not derive from the [interface](../keywords/interface.md). You should either delete the implementation of the interface member or add the interface to the base-class list of the class.
+
+The following sample generates CS0540:
+
+```csharp
+// CS0540.cs
+interface I
+{
+   void m();
+}
+
+public class Clx
+{
+   void I.m() {}   // CS0540
+}
+
+// OK
+public class Cly : I
+{
+   void I.m() {}
+   public static void Main() {}
+}
+```
+
+The following sample generates CS0540:
+
+```csharp
+// CS0540_b.cs
+using System;
+class C {
+   void IDisposable.Dispose() {}   // CS0540
+}
+
+class D : IDisposable {
+   void IDisposable.Dispose() {}
+   public void Dispose() {}
+
+   static void Main() {
+      using (D d = new D()) {}
+   }
+}
+```
+
 ## Wrong location
 
 - **CS0541**: *'declaration' : explicit interface declaration can only be declared in a class or struct*
@@ -397,6 +535,46 @@ namespace x
    interface IFace2 : IFace
    {
       void IFace.F();   // CS0541
+   }
+}
+```
+
+## Extra accessor
+
+- **CS0550**: *'accessor' adds an accessor not found in interface member 'property'*
+
+The implementation of a property in a derived class contains an accessor that was not specified in the base interface.
+
+For more information, see [Using Properties](../../programming-guide/classes-and-structs/using-properties.md).
+
+The following sample generates CS0550:
+
+```csharp
+// CS0550.cs
+namespace x
+{
+   interface ii
+   {
+      int i
+      {
+         get;
+         // add the following accessor to resolve this CS0550
+         // set;
+      }
+   }
+
+   public class a : ii
+   {
+      int ii.i
+      {
+         get
+         {
+            return 0;
+         }
+         set {}   // CS0550  no set in interface
+      }
+
+      public static void Main() {}
    }
 }
 ```
@@ -535,6 +713,68 @@ namespace CS0736
         // public int testMethod(int x) { return 0; }
         public static void Main() { }
     }
+}
+```
+
+## Method not public
+
+- **CS0737**: *'type name' does not implement interface member 'member name'. 'method name' cannot implement an interface member because it is not public.*
+
+A method that implements an interface member must have public accessibility. All interface members are `public`.
+
+To correct this error, add the [public](../language-reference/keywords/public.md) access modifier to the method.
+
+The following code generates CS0737:
+
+```csharp
+// cs0737.cs
+interface ITest
+{
+    // Default access of private with no modifier.
+    int Return42();
+    // Try the following line instead.
+    // public int Return42();
+}
+
+struct Struct1 : ITest // CS0737
+{
+    int Return42() { return (42); }
+}
+
+public class Test
+{
+    public static int Main(string[] args)
+    {
+        Struct1 s1 = new Struct1();
+
+        return (1);
+    }
+
+}
+```
+
+## Wrong return type
+
+- **CS0738**: *'type name' does not implement interface member 'member name'. 'method name' cannot implement 'interface member' because it does not have the matching return type of 'type name'.*
+
+The return value of an implementing method in a class must match the return value of the interface member that it implements.
+
+To correct this error, change the return type of the method to match that of the interface member.
+
+The following code generates CS0738 because the class method returns `void` and the interface member of the same name returns `int`:
+
+```csharp
+using System;
+
+interface ITest
+{
+    int TestMethod();
+}
+public class Test: ITest
+{
+    public void TestMethod() { } // CS0738
+    // Try the following line instead.
+    // public int TestMethod();
 }
 ```
 

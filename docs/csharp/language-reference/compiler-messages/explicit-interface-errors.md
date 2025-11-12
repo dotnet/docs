@@ -9,6 +9,7 @@ f1_keywords:
   - "CS0460"
   - "CS0470"
   - "CS0473"
+  - "CS0531"
   - "CS0535"
   - "CS0538"
   - "CS0539"
@@ -16,10 +17,17 @@ f1_keywords:
   - "CS0541"
   - "CS0550"
   - "CS0551"
+  - "CS0630"
   - "CS0686"
   - "CS0736"
   - "CS0737"
   - "CS0738"
+  - "CS8701"
+  - "CS8702"
+  - "CS8705"
+  - "CS8707"
+  - "CS8711"
+  - "CS8854"
   - "CS9333"
   - "CS9334"
 helpviewer_keywords:
@@ -30,6 +38,7 @@ helpviewer_keywords:
   - "CS0460"
   - "CS0470"
   - "CS0473"
+  - "CS0531"
   - "CS0535"
   - "CS0538"
   - "CS0539"
@@ -37,10 +46,15 @@ helpviewer_keywords:
   - "CS0541"
   - "CS0550"
   - "CS0551"
+  - "CS0630"
   - "CS0686"
   - "CS0736"
   - "CS0737"
   - "CS0738"
+  - "CS8705"
+  - "CS8707"
+  - "CS8711"
+  - "CS8854"
   - "CS9333"
   - "CS9334"
 ms.date: 11/12/2025
@@ -60,6 +74,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS0460**](#inherited-constraints): *Constraints for override and explicit interface implementation methods are inherited from the base method, so they cannot be specified directly*
 - [**CS0470**](#accessor-implementation): *Method 'method' cannot implement interface accessor 'accessor' for type 'type'. Use an explicit interface implementation.*
 - [**CS0473**](#ambiguous-match): *Explicit interface implementation 'method name' matches more than one interface member. Which interface member is actually chosen is implementation-dependent. Consider using a non-explicit implementation instead.*
+- [**CS0531**](#interface-member-with-body): *'member' : interface members cannot have a definition*
 - [**CS0535**](#missing-implementation): *'class' does not implement interface member 'member'*
 - [**CS0538**](#not-an-interface): *'name' in explicit interface declaration is not an interface*
 - [**CS0539**](#member-not-in-interface): *'member' in explicit interface declaration is not a member of interface*
@@ -67,10 +82,15 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS0541**](#wrong-location): *'declaration' : explicit interface declaration can only be declared in a class or struct*
 - [**CS0550**](#extra-accessor): *'accessor' adds an accessor not found in interface member 'property'*
 - [**CS0551**](#missing-accessor): *Explicit interface implementation 'implementation' is missing accessor 'accessor'*
+- [**CS0630**](#variadic-implementation): *'method' cannot implement interface member 'member' in type 'type' because it has an __arglist parameter*
 - [**CS0686**](#accessor-name-conflict): *Accessor 'accessor' cannot implement interface member 'member' for type 'type'. Use an explicit interface implementation.*
 - [**CS0736**](#static-implementation): *'type name' does not implement interface member 'member name'. 'method name' cannot implement an interface member because it is static.*
 - [**CS0737**](#method-not-public): *'type name' does not implement interface member 'member name'. 'method name' cannot implement an interface member because it is not public.*
 - [**CS0738**](#wrong-return-type): *'type name' does not implement interface member 'member name'. 'method name' cannot implement 'interface member' because it does not have the matching return type of 'type name'.*
+- [**CS8705**](#no-most-specific-implementation): *Interface member 'member' does not have a most specific implementation. Neither 'implementation1', nor 'implementation2' are most specific.*
+- [**CS8707**](#runtime-no-support-protected-access): *Target runtime does not support 'protected', 'protected internal', or 'private protected' accessibility for a member of an interface.*
+- [**CS8711**](#default-implementation-in-nopia): *Type 'type' cannot be embedded because it has a non-abstract member. Consider setting the 'Embed Interop Types' property to false.*
+- [**CS8854**](#wrong-init-only): *'type' does not implement interface member 'member'. 'implementation' cannot implement 'member' because it does not have the matching 'init' setter of 'property'.*
 - [**CS9333**](#incorrect-member-signature): *Parameter type must match implemented member declaration.*
 - [**CS9334**](#incorrect-member-signature): *Return type must match implemented member declaration.*
 
@@ -334,6 +354,37 @@ class T
 
         return 0;
     }
+}
+```
+
+## Interface member with body
+
+- **CS0531**: *'member' : interface members cannot have a definition*
+
+Methods that are declared in an [interface](../language-reference/keywords/interface.md) must be implemented in a class that inherits from it and not in the interface itself.
+
+The following sample generates CS0531:
+
+```csharp
+// CS0531.cs
+namespace x
+{
+   public interface clx
+   {
+      int xclx()   // CS0531, cannot define xclx
+      // Try the following declaration instead:
+      // int xclx();
+      {
+         return 0;
+      }
+   }
+
+   public class cly
+   {
+      public static void Main()
+      {
+      }
+   }
 }
 ```
 
@@ -614,6 +665,14 @@ public class a : ii
 }
 ```
 
+## Variadic implementation
+
+- **CS0630**: *'method' cannot implement interface member 'member' in type 'type' because it has an __arglist parameter*
+
+Methods that use `__arglist` (variadic parameters) cannot implement interface members. The `__arglist` keyword allows a method to accept a variable number of arguments in an unmanaged way, but this feature is not compatible with interface implementation.
+
+To resolve this error, remove the `__arglist` parameter from the implementing method or use a different approach such as using `params` arrays for variable-length argument lists.
+
 ## Accessor name conflict
 
 - **CS0686**: *Accessor 'accessor' cannot implement interface member 'member' for type 'type'. Use an explicit interface implementation.*
@@ -775,6 +834,50 @@ public class Test: ITest
     public void TestMethod() { } // CS0738
     // Try the following line instead.
     // public int TestMethod();
+}
+```
+
+## No most specific implementation
+
+- **CS8705**: *Interface member 'member' does not have a most specific implementation. Neither 'implementation1', nor 'implementation2' are most specific.*
+
+This error occurs when multiple interface implementations provide a default implementation for the same member, and the compiler cannot determine which one should be used. This typically happens with diamond inheritance patterns in interfaces with default implementations.
+
+To resolve this error, provide an explicit implementation in the implementing class or struct to resolve the ambiguity, or restructure the interface hierarchy to avoid the conflict.
+
+## Runtime no support protected access
+
+- **CS8707**: *Target runtime does not support 'protected', 'protected internal', or 'private protected' accessibility for a member of an interface.*
+
+This error occurs when you use protected access modifiers on interface members (a C# 8.0 feature for default interface implementation), but the target runtime doesn't support it.
+
+To resolve this error, either target a runtime that supports this feature (.NET Core 3.0+, .NET 5+) or change the accessibility of the interface member to `public` or remove the implementation.
+
+## Default implementation in nopia
+
+- **CS8711**: *Type 'type' cannot be embedded because it has a non-abstract member. Consider setting the 'Embed Interop Types' property to false.*
+
+This error occurs when you try to embed interop types (NoPIA - No Primary Interop Assembly) that contain interfaces with default implementations. Embedded interop types cannot include non-abstract interface members.
+
+To resolve this error, set the 'Embed Interop Types' property to `false` for the assembly reference, or remove the default implementation from the interface.
+
+## Wrong init only
+
+- **CS8854**: *'type' does not implement interface member 'member'. 'implementation' cannot implement 'member' because it does not have the matching 'init' setter of 'property'.*
+
+This error occurs when an interface property defines an `init` accessor, but the implementing property doesn't provide a matching `init` accessor. The `init` keyword allows property initialization during object construction but prevents modification afterward.
+
+To resolve this error, add an `init` accessor to the implementing property to match the interface declaration:
+
+```csharp
+interface IExample
+{
+    int Value { get; init; }
+}
+
+class Example : IExample
+{
+    public int Value { get; init; } // Must have init accessor
 }
 ```
 

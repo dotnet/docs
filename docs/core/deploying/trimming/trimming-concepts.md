@@ -112,9 +112,9 @@ PrintMethodNames(typeof(DateTime));
 
 Now the trimmer understands:
 
-1. `PrintMethodNames` requires its parameter to have `PublicMethods` preserved
-2. The call site passes `typeof(DateTime)`
-3. Therefore, `DateTime`'s public methods must be kept
+- `PrintMethodNames` requires its parameter to have `PublicMethods` preserved.
+- The call site passes `typeof(DateTime)`.
+- Therefore, `DateTime`'s public methods must be kept.
 
 The attribute creates a **requirement** that flows backward from the reflection usage to the source of the `Type` value.
 

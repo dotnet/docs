@@ -20,7 +20,7 @@ The following APIs are marked obsolete. Use of these APIs generates warning `EXT
 
 Replace calls to `AddServiceLogEnricher` with the equivalent `AddApplicationLogEnricher` methods. The functionality remains the same, only the method names have been corrected to accurately reflect that they enrich application logs.
 
-For more information, see [Application log enricher](../../../core/enrichment/application-log-enricher.md).
+For more information, see [Application log enricher](../../core/enrichment/application-log-enricher.md).
 
 ## Suppress a warning
 
@@ -54,4 +54,4 @@ For more information, see [Suppress warnings](obsoletions-overview.md#suppress-w
 
 ## See also
 
-- [Application log enricher](../../../core/enrichment/application-log-enricher.md)
+- [Application log enricher](../../core/enrichment/application-log-enricher.md)

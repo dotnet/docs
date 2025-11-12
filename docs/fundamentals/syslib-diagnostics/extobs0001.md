@@ -13,7 +13,16 @@ The <xref:Microsoft.Extensions.Diagnostics.ResourceMonitoring.IResourceMonitor> 
 The following APIs are marked obsolete. Use of these APIs generates warning `EXTOBS0001` at compile time.
 
 - <xref:Microsoft.Extensions.Diagnostics.ResourceMonitoring.IResourceMonitor?displayProperty=nameWithType>
-- <xref:Microsoft.Extensions.Diagnostics.ResourceMonitoring.IResourceMonitor.GetUtilization(System.TimeSpan)?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Diagnostics.ResourceMonitoring.ResourceMonitoringOptions.CollectionWindow?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Diagnostics.ResourceMonitoring.ResourceMonitoringOptions.SamplingInterval?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Diagnostics.ResourceMonitoring.ResourceMonitoringBuilderExtensions>
+- <xref:Microsoft.Extensions.Diagnostics.ResourceMonitoring.ResourceUtilization>
+- <xref:Microsoft.Extensions.Diagnostics.ResourceMonitoring.IResourceMonitorBuilder>
+- <xref:Microsoft.Extensions.Diagnostics.ResourceMonitoring.IResourceUtilizationPublisher>
+- <xref:Microsoft.Extensions.Diagnostics.ResourceMonitoring.ISnapshotProvider>
+- <xref:Microsoft.Extensions.Diagnostics.ResourceMonitoring.Snapshot>
+- <xref:Microsoft.Extensions.Diagnostics.ResourceMonitoring.SystemResources>
+- <xref:Microsoft.Extensions.DependencyInjection.ResourceMonitoringServiceCollectionExtensions.AddResourceMonitoring(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Microsoft.Extensions.Diagnostics.ResourceMonitoring.IResourceMonitorBuilder})?displayProperty=nameWithType>
 
 ## Workarounds
 
@@ -55,7 +64,7 @@ services.AddOpenTelemetry()
     .WithMetrics(builder =>
     {
         builder.AddMeter("Microsoft.Extensions.Diagnostics.ResourceMonitoring");
-        builder.AddConsoleExporter(); // Or use any other exporter.
+        builder.AddConsoleExporter();
     });
 ```
 

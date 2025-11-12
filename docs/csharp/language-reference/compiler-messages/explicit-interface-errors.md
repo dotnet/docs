@@ -62,29 +62,29 @@ This article covers the following compiler errors:
 That's by design. The text closely matches the text of the compiler error / warning for SEO purposes.
  -->
 - [**CS0071**](#interface-declaration-and-syntax): *An explicit interface implementation of an event must use event accessor syntax*
-- [**CS0106**](#interface-declaration-and-syntax): *The modifier 'modifier' is not valid for this item*
-- [**CS0277**](#accessor-implementation-and-conflicts): *'class' does not implement interface member 'accessor'. 'class accessor' is not public*
-- [**CS0425**](#generic-type-constraints): *The constraints for type parameter 'type parameter' of method 'method' must match the constraints for type parameter 'type parameter' of interface method 'method'. Consider using an explicit interface implementation instead.*
-- [**CS0460**](#generic-type-constraints): *Constraints for override and explicit interface implementation methods are inherited from the base method, so they cannot be specified directly*
-- [**CS0470**](#accessor-implementation-and-conflicts): *Method 'method' cannot implement interface accessor 'accessor' for type 'type'. Use an explicit interface implementation.*
+- [**CS0106**](#interface-declaration-and-syntax): *The modifier '{0}' is not valid for this item*
+- [**CS0277**](#accessor-implementation-and-conflicts): *'{0}' does not implement interface member '{1}'. '{2}' is not public.*
+- [**CS0425**](#generic-type-constraints): *The constraints for type parameter '{0}' of method '{1}' must match the constraints for type parameter '{2}' of interface method '{3}'. Consider using an explicit interface implementation instead.*
+- [**CS0460**](#generic-type-constraints): *Constraints for override and explicit interface implementation methods are inherited from the base method, so they cannot be specified directly, except for either a 'class', or a 'struct' constraint.*
+- [**CS0470**](#accessor-implementation-and-conflicts): *Method '{0}' cannot implement interface accessor '{1}' for type '{2}'. Use an explicit interface implementation.*
 - [**CS0473**](#ambiguous-and-conflicting-implementations): *Explicit interface implementation 'method name' matches more than one interface member. Which interface member is actually chosen is implementation-dependent. Consider using a non-explicit implementation instead.*
-- [**CS0531**](#interface-declaration-and-syntax): *'member' : interface members cannot have a definition*
-- [**CS0535**](#missing-or-incomplete-implementations): *'class' does not implement interface member 'member'*
-- [**CS0538**](#interface-declaration-and-syntax): *'name' in explicit interface declaration is not an interface*
-- [**CS0539**](#member-matching-and-resolution): *'member' in explicit interface declaration is not a member of interface*
-- [**CS0540**](#member-matching-and-resolution): *'interface member' : containing type does not implement interface 'interface'*
-- [**CS0541**](#interface-declaration-and-syntax): *'declaration' : explicit interface declaration can only be declared in a class or struct*
-- [**CS0550**](#missing-or-incomplete-implementations): *'accessor' adds an accessor not found in interface member 'property'*
-- [**CS0551**](#missing-or-incomplete-implementations): *Explicit interface implementation 'implementation' is missing accessor 'accessor'*
-- [**CS0630**](#special-implementation-restrictions): *'method' cannot implement interface member 'member' in type 'type' because it has an __arglist parameter*
-- [**CS0686**](#accessor-implementation-and-conflicts): *Accessor 'accessor' cannot implement interface member 'member' for type 'type'. Use an explicit interface implementation.*
-- [**CS0736**](#method-visibility-and-modifiers): *'type name' does not implement interface member 'member name'. 'method name' cannot implement an interface member because it is static.*
-- [**CS0737**](#method-visibility-and-modifiers): *'type name' does not implement interface member 'member name'. 'method name' cannot implement an interface member because it is not public.*
-- [**CS0738**](#return-types-and-signatures): *'type name' does not implement interface member 'member name'. 'method name' cannot implement 'interface member' because it does not have the matching return type of 'type name'.*
-- [**CS8705**](#ambiguous-and-conflicting-implementations): *Interface member 'member' does not have a most specific implementation. Neither 'implementation1', nor 'implementation2' are most specific.*
-- [**CS8854**](#return-types-and-signatures): *'type' does not implement interface member 'member'. 'implementation' cannot implement 'member' because it does not have the matching 'init' setter of 'property'.*
-- [**CS9333**](#return-types-and-signatures): *Parameter type must match implemented member declaration.*
-- [**CS9334**](#return-types-and-signatures): *Return type must match implemented member declaration.*
+- [**CS0531**](#interface-declaration-and-syntax): *'{0}': interface members cannot have a definition*
+- [**CS0535**](#missing-or-incomplete-implementations): *'{0}' does not implement interface member '{1}'*
+- [**CS0538**](#interface-declaration-and-syntax): *'{0}' in explicit interface declaration is not an interface*
+- [**CS0539**](#member-matching-and-resolution): *'{0}' in explicit interface declaration is not found among members of the interface that can be implemented*
+- [**CS0540**](#member-matching-and-resolution): *'{0}': containing type does not implement interface '{1}'*
+- [**CS0541**](#interface-declaration-and-syntax): *'{0}': explicit interface declaration can only be declared in a class, record, struct or interface*
+- [**CS0550**](#missing-or-incomplete-implementations): *'{0}' adds an accessor not found in interface member '{1}'*
+- [**CS0551**](#missing-or-incomplete-implementations): *Explicit interface implementation 'implementation' is missing accessor 'accessor'.*
+- [**CS0630**](#special-implementation-restrictions): *'{0}' cannot implement interface member '{1}' in type '{2}' because it has an __arglist parameter*
+- [**CS0686**](#accessor-implementation-and-conflicts): *Accessor '{0}' cannot implement interface member '{1}' for type '{2}'. Use an explicit interface implementation.*
+- [**CS0736**](#method-visibility-and-modifiers): *'{0}' does not implement instance interface member '{1}'. '{2}' cannot implement the interface member because it is static.*
+- [**CS0737**](#method-visibility-and-modifiers): *'{0}' does not implement interface member '{1}'. '{2}' cannot implement an interface member because it is not public.*
+- [**CS0738**](#return-types-and-signatures): *'{0}' does not implement interface member '{1}'. '{2}' cannot implement '{1}' because it does not have the matching return type of '{3}'.*
+- [**CS8705**](#ambiguous-and-conflicting-implementations): *Interface member '{0}' does not have a most specific implementation. Neither '{1}', nor '{2}' are most specific.*
+- [**CS8854**](#return-types-and-signatures): *'{0}' does not implement interface member '{1}'. '{2}' cannot implement '{1}'.*
+- [**CS9333**](#return-types-and-signatures): *'{0}': type must be '{1}' to match implemented member '{2}'*
+- [**CS9334**](#return-types-and-signatures): *'{0}': return type must be '{1}' to match implemented member '{2}'*
 
 ## Interface declaration and syntax
 
@@ -92,9 +92,9 @@ The following errors relate to proper syntax and structure when declaring explic
 
 - **CS0071**: *An explicit interface implementation of an event must use event accessor syntax*
 - **CS0106**: *The modifier 'modifier' is not valid for this item*
-- **CS0531**: *'member' : interface members cannot have a definition*
+- **CS0531**: *'{0}': interface members cannot have a definition*
 - **CS0538**: *'name' in explicit interface declaration is not an interface*
-- **CS0541**: *'declaration' : explicit interface declaration can only be declared in a class or struct*
+- **CS0541**: *'{0}': explicit interface declaration can only be declared in a class, record, struct or interface*
 
 You can correct these errors using the following techniques:
 
@@ -111,7 +111,7 @@ For more information, see [Interfaces](../../fundamentals/types/interfaces.md), 
 
 The following errors occur when a class fails to fully implement an interface or implements members that don't match the interface contract:
 
-- **CS0535**: *'class' does not implement interface member 'member'*
+- **CS0535**: *'{0}' does not implement interface member '{1}'*
 - **CS0550**: *'accessor' adds an accessor not found in interface member 'property'*
 - **CS0551**: *Explicit interface implementation 'implementation' is missing accessor 'accessor'*
 
@@ -143,8 +143,8 @@ For more information, see [Interfaces](../../fundamentals/types/interfaces.md), 
 
 The following errors occur when attempting to implement interface members that don't exist in the interface or when the containing type doesn't declare the interface:
 
-- **CS0539**: *'member' in explicit interface declaration is not a member of interface*
-- **CS0540**: *'interface member' : containing type does not implement interface 'interface'*
+- **CS0539**: *'{0}' in explicit interface declaration is not found among members of the interface that can be implemented*
+- **CS0540**: *'{0}': containing type does not implement interface '{1}'*
 
 You can correct these errors using the following techniques:
 
@@ -173,8 +173,8 @@ For more information, see [Constraints on type parameters](../../programming-gui
 
 The following errors occur when implementing interface methods with incorrect accessibility or modifiers:
 
-- **CS0736**: *'type name' does not implement interface member 'member name'. 'method name' cannot implement an interface member because it is static.*
-- **CS0737**: *'type name' does not implement interface member 'member name'. 'method name' cannot implement an interface member because it is not public.*
+- **CS0736**: *'{0}' does not implement instance interface member '{1}'. '{2}' cannot implement the interface member because it is static.*
+- **CS0737**: *'{0}' does not implement interface member '{1}'. '{2}' cannot implement an interface member because it is not public.*
 
 You can correct these errors using the following techniques:
 

@@ -25,7 +25,7 @@ Trim warnings fall into two main categories:
 
 When you encounter a trim warning, follow these steps in order:
 
-1. **Try to eliminate reflection** - This is always the best option if possible.
+1. **Eliminate reflection** - This is always the best option if possible.
 2. **Use DynamicallyAccessedMembers** - If types are known, make the code trim-compatible.
 3. **Use RequiresUnreferencedCode** - If truly dynamic, document the incompatibility.
 4. **Suppress warnings as last resort** - Only if you're certain the code is safe.
@@ -194,7 +194,7 @@ Use this attribute when:
 - **Types are loaded dynamically**: Using <xref:System.Type.GetType> with runtime-determined strings.
 - **Assemblies are loaded at runtime**: Using <xref:System.Reflection.Assembly.LoadFrom(System.String)>.
 - **Complex reflection patterns**: Reflection usage too complex to annotate.
-- **Runtime code generation**: Using <xref:System.Reflection.Emit> or the `dynamic` keyword
+- **Runtime code generation**: Using <xref:System.Reflection.Emit> or the `dynamic` keyword.
 
 ### Step-by-step: Mark incompatible methods
 

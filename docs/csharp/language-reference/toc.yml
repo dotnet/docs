@@ -515,13 +515,13 @@ items:
       async, await,
       CS1983, CS1985, CS1986, CS1989, CS1991, CS1992, CS1994, CS1995, CS1996, CS1997,
       CS1998, CS4008, CS4009, CS4014, CS4032, CS4033, CS8892, CS9123, CS9330
-  - name: Explicit interface implementation
-    href: ./compiler-messages/explicit-interface-errors.md
+  - name: Interface implementation
+    href: ./compiler-messages/interface-implementation-errors.md
     displayName: >
       interface,
       CS0071, CS0106, CS0277, CS0425, CS0460, CS0470, CS0473, CS0531, CS0535, CS0538, CS0539, CS0540,
       CS0541, CS0550, CS0551, CS0630, CS0686, CS0736, CS0737, CS0738, CS8705, CS8707, CS8711, CS8854,
-     CS9333, CS9334
+      CS9333, CS9334
   - name: Reference parameters
     href: ./compiler-messages/ref-modifiers-errors.md
     displayName: >

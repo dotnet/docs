@@ -76,4 +76,4 @@ For every line in this table, verify that the error message associated with this
 
 <make your own hand edits>
 
-Now, ensure every error instance of the same message matches exactly.
+Now, ensure every instance of an error message matches the text in the highlighted table.

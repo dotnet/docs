@@ -64,6 +64,5 @@ Avoid using property names that conflict with System.Text.Json-specific metadata
 
 ## Affected APIs
 
-- <xref:>
 - <xref:System.Text.Json.JsonSerializer.Deserialize*?displayProperty=fullName>
 - <xref:System.Text.Json.JsonSerializer.DeserializeAsync*?displayProperty=fullName>

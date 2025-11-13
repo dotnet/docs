@@ -276,7 +276,9 @@ If you're using the VSTest mode of `dotnet test`, here's an example update when 
 
 ## Known limitations
 
-The NuGet-provided MSBuild SDKs (including MSTest.Sdk) have limited tooling support when it comes to updating their version, meaning that the usual NuGet update and Visual Studio UI for managing NuGet packages doesn't work as expected. For more information, see [NuGet#13127](https://github.com/NuGet/Home/issues/13127). If you use Dependabot, you'll need to manually update the version in the `global.json` file and in the project file until [dependabot-core#12824](https://github.com/dependabot/dependabot-core/issues/12824) and [dependabot-core#8615](https://github.com/dependabot/dependabot-core/issues/8615) are fixed.
+The NuGet-provided MSBuild SDKs (including MSTest.Sdk) have limited tooling support when it comes to updating their version, meaning that the usual NuGet update and Visual Studio UI for managing NuGet packages doesn't work as expected. For more information, see [NuGet#13127](https://github.com/NuGet/Home/issues/13127).
+
+If you use Dependabot, you'll need to manually update the version in the `global.json` file and in the project file until [dependabot-core#12824](https://github.com/dependabot/dependabot-core/issues/12824) and [dependabot-core#8615](https://github.com/dependabot/dependabot-core/issues/8615) are fixed.
 
 ## See also
 

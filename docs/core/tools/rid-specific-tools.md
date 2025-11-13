@@ -1,20 +1,20 @@
 ---
-title: Create RID-specific and AOT .NET tools
-description: Learn how to create and package RID-specific and AOT-enabled .NET tools for platform-specific distribution.
+title: Create RID-specific, self-contained, and AOT .NET tools
+description: Learn how to create and package RID-specific, self-contained and AOT .NET tools for platform-specific distribution.
 ms.topic: how-to
 ms.date: 11/12/2025
 ai-usage: ai-assisted
 ---
 
-# Create RID-specific and AOT .NET tools
+# Create RID-specific, self-contained, and AOT .NET tools
 
-**This article applies to:** ✔️ .NET SDK 10.0.100-preview.6 and later versions
+**This article applies to:** ✔️ .NET SDK 10 and later versions
 
-.NET tools can be packaged for specific platforms and architectures, enabling distribution of native, fast, and trimmed applications. This capability is useful for creating high-performance command-line tools like MCP servers or other platform-specific utilities.
+.NET tools can be packaged for specific platforms and architectures, enabling distribution of native, fast, and trimmed applications. This capability makes it easier to distribute native, fast, trimmed .NET applications for command-line tools like MCP servers or other platform-specific utilities.
 
 ## Overview
 
-Starting with .NET SDK 10.0.100-preview.6, you can create .NET tools that target specific Runtime Identifiers (RIDs). These tools can be:
+Starting with .NET SDK 10, you can create .NET tools that target specific Runtime Identifiers (RIDs). These tools can be:
 
 - **RID-specific**: Compiled for particular operating systems and architectures.
 - **Self-contained**: Include the .NET runtime and don't require a separate .NET installation.
@@ -26,9 +26,9 @@ When users install a RID-specific tool, the .NET CLI automatically selects and i
 
 To create a RID-specific tool, configure your project with one of the following MSBuild properties:
 
-### RuntimeIdentifiers property
+### RuntimeIdentifier property
 
-Use `RuntimeIdentifiers` to specify the platforms your tool supports:
+Use `RuntimeIdentifier` to specify the platforms your tool supports:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -37,14 +37,14 @@ Use `RuntimeIdentifiers` to specify the platforms your tool supports:
     <TargetFramework>net9.0</TargetFramework>
     <PackAsTool>true</PackAsTool>
     <ToolCommandName>mytool</ToolCommandName>
-    <RuntimeIdentifiers>win-x64;linux-x64;osx-arm64</RuntimeIdentifiers>
+    <RuntimeIdentifier>win-x64;linux-x64;osx-arm64</RuntimeIdentifier>
   </PropertyGroup>
 </Project>
 ```
 
-### ToolPackageRuntimeIdentifiers property
+### ToolPackageRuntimeIdentifier property
 
-Alternatively, use `ToolPackageRuntimeIdentifiers` for tool-specific RID configuration:
+Alternatively, use `ToolPackageRuntimeIdentifier` for tool-specific RID configuration:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -53,7 +53,7 @@ Alternatively, use `ToolPackageRuntimeIdentifiers` for tool-specific RID configu
     <TargetFramework>net9.0</TargetFramework>
     <PackAsTool>true</PackAsTool>
     <ToolCommandName>mytool</ToolCommandName>
-    <ToolPackageRuntimeIdentifiers>win-x64;linux-x64;osx-arm64</ToolPackageRuntimeIdentifiers>
+    <ToolPackageRuntimeIdentifier>win-x64;linux-x64;osx-arm64</ToolPackageRuntimeIdentifier>
   </PropertyGroup>
 </Project>
 ```
@@ -112,7 +112,7 @@ RID-specific tool packages use two package types:
 
 ### Package metadata
 
-The top-level package includes metadata that signals it's a RID-specific tool and lists the available RID-specific packages. When you run `dotnet tool install`, the CLI reads this metadata to determine which RID-specific package to install for the current platform.
+The top-level package includes metadata that signals it's a RID-specific tool and lists the RID-specific packages. When you run `dotnet tool install`, the CLI reads this metadata to determine which RID-specific package to install for the current platform.
 
 ## Publish your tool
 
@@ -135,10 +135,10 @@ dotnet tool install -g mytool
 
 The CLI automatically:
 
-1. Downloads the top-level package
-2. Reads the RID-specific metadata
-3. Identifies the most appropriate package for the current platform
-4. Downloads and installs the RID-specific package
+1. Downloads the top-level package.
+1. Reads the RID-specific metadata.
+1. Identifies the most appropriate package for the current platform.
+1. Downloads and installs the RID-specific package.
 
 ## Example: Create an AOT tool
 

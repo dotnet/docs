@@ -89,7 +89,7 @@ Migrate this app from file based logging to OpenTelemetry
 Then the migration task will be executed and showing progress in Copilot CLI
 :::image type="content" source="./media/migrate-details.png" lightbox="./media/migrate-details.png" alt-text="Screenshot of migrating .NET in Copilot CLI":::
 
-The project has been successfully migrated to Azure, with below summary:
+The project has been successfully migrated, with below summary:
 :::image type="content" source="./media/migrate-summary.png" lightbox="./media/migrate-summary.png" alt-text="Screenshot of migrating .NET summary in Copilot CLI":::
 
 ## Provide Feedback

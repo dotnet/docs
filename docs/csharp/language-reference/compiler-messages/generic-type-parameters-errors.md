@@ -93,7 +93,7 @@ To correct these errors, ensure that type parameters are declared with valid ide
 - Replace actual type names with identifiers in type parameter declarations (**CS0081**). Type parameters must be declared using identifiers (like `T`, `TKey`, or `TValue`) rather than concrete types (like `int` or `string`), because the purpose of a type parameter is to serve as a placeholder that is substituted with actual types when the generic type or method is used. For example, change `public void F<int>()` to `public void F<T>()`.
 - Rename type parameters, local variables, or parameters to avoid naming conflicts (**CS0412**, **CS0694**). Type parameter names can't shadow identifiers in the same scope. They can't match the name of the containing type or method. Such conflicts create ambiguity about which identifier is being referenced. For example, if you have a method `public void F<T>()`, you can't declare a local variable `double T` inside that method, and you can't name a type parameter the same as its containing type (`class C<C>`).
 
-For more information, see [Generic Type Parameters](../programming-guide/generics/generic-type-parameters.md) and [Generics](../fundamentals/types/generics.md).
+For more information, see [Generic Type Parameters](../../programming-guide/generics/generic-type-parameters.md) and [Generics](../../fundamentals/types/generics.md).
 
 ## Type argument count and usage
 
@@ -112,7 +112,7 @@ To correct these errors, ensure that you provide the exact number of type argume
 - Use only valid types as type arguments (**CS0306**). Pointer types, such as `int*` or `char*`, can't be used as type arguments because generic types require managed types that the garbage collector can track, and pointer types are unmanaged. If you need to work with pointers in a generic context, consider using `IntPtr` or restructuring your code to avoid mixing generics with unsafe code.
 - Remove type argument syntax from non-generic constructs (**CS0307**, **CS0308**). Type arguments enclosed in angle brackets (like `<int>`) can only be applied to generic types and methods that declare type parameters. You must either remove the type arguments entirely or ensure you imported the namespace that contains the generic version of the type. For example, `IEnumerator<T>` requires the `using System.Collections.Generic;` directive, whereas `IEnumerator` is in `System.Collections`.
 
-For more information, see [Generic Type Parameters](../programming-guide/generics/generic-type-parameters.md) and [Generics](../fundamentals/types/generics.md).
+For more information, see [Generic Type Parameters](../../programming-guide/generics/generic-type-parameters.md) and [Generics](../../fundamentals/types/generics.md).
 
 ## Constructor constraints
 
@@ -128,7 +128,7 @@ To correct these errors, add the `new()` constraint to type parameters that need
 - Ensure that type arguments used with `new()` constrained type parameters have public parameterless constructors (**CS0310**). When a generic type or method declares a `new()` constraint on a type parameter, any concrete type used as a type argument must be non-abstract and must provide a public parameterless constructor. If a type only has non-public constructors (such as `private` or `protected`) or only has constructors with parameters, it can't satisfy the `new()` constraint. To fix this error, either add a public parameterless constructor to the type, or use a different type argument that already has one.
 - Remove constructor arguments when instantiating type parameters (**CS0417**). The `new()` constraint only guarantees the existence of a parameterless constructor, so attempting to pass arguments to `new T(arguments)` isn't allowed because the compiler can't verify that a constructor with those specific parameter types exists on the type that are substituted for `T`. If you need to construct instances with specific arguments, consider using factory methods, abstract factory patterns, or specific base class/interface constraints that define the construction behavior you need.
 
-For more information, see [Constraints on type parameters](../programming-guide/generics/constraints-on-type-parameters.md) and the [new() constraint](../keywords/new-constraint.md).
+For more information, see [Constraints on type parameters](../../programming-guide/generics/constraints-on-type-parameters.md) and the [new() constraint](../keywords/new-constraint.md).
 
 ## Constraint satisfaction and conversions
 
@@ -147,7 +147,7 @@ To correct these errors, use type arguments that satisfy all constraints through
 - Use non-nullable value types or change the constraint type (**CS0312**, **CS0313**). Nullable value types (such as `int?`) are distinct from their underlying value types and don't satisfy the same constraints. There's no implicit conversion between `int?` and `int`, and nullable value types can't satisfy interface constraints because the nullable wrapper itself doesn't implement the interface, even though the underlying value type does. To fix these errors, either use the non-nullable form of the value type as the type argument, or adjust your constraint to accept `object` or a nullable reference type if appropriate.
 - Ensure type arguments satisfy reference type or class constraints (**CS0315**). When a type parameter is constrained to a class type (such as `where T : SomeClass`), you can't use a value type (struct) as the type argument because there's no boxing conversion that satisfies the constraint relationship. The constraint requires a reference type that has an inheritance or implementation relationship with the constraint type. To resolve this error, either change the struct to a class if semantically appropriate, or remove the class constraint if the generic type can work with value types.
 
-For more information, see [Constraints on type parameters](../programming-guide/generics/constraints-on-type-parameters.md) and [Implicit conversions](../../standard/base-types/conversion-tables.md).
+For more information, see [Constraints on type parameters](../../programming-guide/generics/constraints-on-type-parameters.md) and [Implicit conversions](../../../standard/base-types/conversion-tables.md).
 
 ## Generic type usage restrictions
 
@@ -165,8 +165,8 @@ To correct these errors, use `default` instead of `null` for unconstrained type 
 - Add a `class` or specific type constraint when using the `as` operator (**CS0413**). The `as` operator performs a safe type cast that returns `null` if the conversion fails, but this behavior is incompatible with value types because value types can't be `null`. When you use `as` with an unconstrained type parameter, the compiler can't guarantee the type argument isn't a value type, so it rejects the code. To fix this error, add a `class` constraint or a specific reference type constraint (like `where T : SomeClass`) to ensure the type parameter is always a reference type that can properly handle the `null` result of a failed cast.
 - Avoid implementing the same generic interface multiple times with type parameters that could unify (**CS0695**). When a class implements a generic interface multiple times with different type parameters (such as `class G<T1, T2> : I<T1>, I<T2>`), there's a risk that someone could instantiate it with the same type for both parameters (`G<int, int>`), which would create a conflict because the class would effectively be implementing `I<int>` twice. To resolve this error, either implement the interface only once, restructure your type parameters to prevent unification, or use separate non-generic classes for different specializations.
 - Remove generic type parameters from attribute classes (**CS0698**).
-> [!NOTE]
-> This error is no longer produced in current versions of C#, as generic attributes are now supported.
+  > [!NOTE]
+  > This error is no longer produced in current versions of C#, as generic attributes are now supported.
 - Ensure type arguments used in public or protected signatures are at least as accessible as the member using them (**CS9338**). A public or protected generic member must use type arguments that are be publicly accessible. Otherwise external code couldn't properly reference or use the member's signature. For example, if you have `public class Container<T>` where `T` is an internal type, external assemblies can see the `Container` but can't properly work with it because they can't see `T`. To fix this error, either make the type argument public, or reduce the accessibility of the member using it to match the type argument's accessibility.
 
-For more information, see [Constraints on type parameters](../programming-guide/generics/constraints-on-type-parameters.md), [default value expressions](../operators/default.md), and [Attributes](../programming-guide/concepts/attributes/index.md).
+For more information, see [Constraints on type parameters](../../programming-guide/generics/constraints-on-type-parameters.md), [default value expressions](../operators/default.md), and [Attributes](../../programming-guide/concepts/attributes/index.md).

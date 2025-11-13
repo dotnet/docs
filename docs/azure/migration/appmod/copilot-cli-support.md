@@ -27,8 +27,7 @@ This article provides an overview of how .NET developers can migrate their appli
 ## Prerequisites
 - [Install Copilot CLI](https://docs.github.com/en/copilot/how-tos/set-up/install-copilot-cli)
 - A GitHub Copilot subscription, See [Copilot plans](https://github.com/features/copilot/plans?ref_product=copilot)
-- Node.js version 22 or later
-- npm version 10 or later
+- .NET 10 SDK installed (for dnx command to run), [download .NET 10 here](https://dotnet.microsoft.com/download/dotnet/10.0)
 
 ## Getting Started
 1. In your terminal, navigate to the .NET project folder containing the code you want to work on.
@@ -43,21 +42,30 @@ Choose one of the options:
 - No, exit (Esc): End your Copilot CLI session.
 3. You can add MCP servers by running `/mcp add` in Copilot CLI according to the configuration below, here is an example of adding .NET migration MCP:
 ```
-/mcp add net-migrate
+/mcp add DotNetAppModMcpServer-migrate
 ```
+And fill the columns with:
+- Server Type: Local
+- Command: dnx Microsoft.AppModernization.McpServer.DotNet.Migration --yes --source https://api.nuget.org/v3/index.json  
+- Environment Variables: keep empty
+- Tools: use the default value "*"
+
+
 Or by manually updating the `~/.config/mcp-config.json` file with the following info. Refer to [Add an MCP server](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli#add-an-mcp-server)
 ```
 {
   "mcpServers": {
-    "dotnet-migrate": {
+    "DotNetAppModMcpServer-migrate": {
       "type": "local",
+      "command": "dnx",
       "tools": [
         "*"
       ],
-      "command": "npx",
       "args": [
-        "-y",
-        "net-migrate" // TODO: update to actual package name
+        "Microsoft.AppModernization.McpServer.DotNet.Migration",
+        "--yes",
+        "--source",
+        "https://api.nuget.org/v3/index.json"
       ]
     }
   }
@@ -69,10 +77,13 @@ You can run `/mcp show` to verify the MCP servers are correctly configured.
 ```
 4. Execute the migration task in Copilot CLI
 To migrate your .NET application to Azure, describe your migration scenario in Copilot CLI.
+Basically, you can instruct the Copilot CLI to do any migration task for you via "migrate from X to Y" for you. And we provide some predefined migration scenarios with Microsoft best practices.
 For details on predefined migration tasks, see [migration tasks](predefined-tasks.md)
-For example:
+Some examples you can start with:
 ```
 Migrate this app from local file IO to Azure Blob Storage
+Migrate this app from local sql server to Azure SQL DB with managed identity
+Migrate this app from file based logging to OpenTelemetry
 ```
 
 Then the migration task will be executed and showing progress in Copilot CLI

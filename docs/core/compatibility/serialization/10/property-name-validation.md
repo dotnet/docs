@@ -6,7 +6,7 @@ ai-usage: ai-assisted
 ---
 # System.Text.Json checks for property name conflicts
 
-Under certain contexts, such as polymorphism and reference preservation, <xref:System.Text.Json> reserves specific property names (for example, `$type`, `$id`, and `$ref`) for emitting metadata. Previously, the serializer didn't perform validation on whether these property names conflicted with user-defined contracts, which could result in duplicate properties and produce JSON that was ambiguous or failed to round-trip. Starting with .NET 10, System.Text.Json enables validation to prevent such configurations and provides early warning to users.
+Under certain contexts, such as polymorphism and reference preservation, <xref:System.Text.Json> reserves specific property names (for example, `$type`, `$id`, and `$ref`) for emitting metadata. Some property names such as the `TypeDiscriminatorPropertyName` can also be configured with custom names. Previously, the serializer didn't perform validation on whether these property names conflicted with user-defined contracts, which could result in duplicate properties and produce JSON that was ambiguous or failed to round-trip. Starting with .NET 10, System.Text.Json enables validation to prevent such configurations and provides early warning to users.
 
 ## Version introduced
 

@@ -55,37 +55,37 @@ This article covers the following compiler errors:
 <!-- The text in this list generates issues for Acrolinx, because they don't use contractions.
 That's by design. The text closely matches the text of the compiler error / warning for SEO purposes.
  -->
-- [**CS0080**](#type-parameter-declaration-and-naming): *Constraints are not allowed on non-generic declarations*
-- [**CS0081**](#type-parameter-declaration-and-naming): *Type parameter declaration must be an identifier not a type*
-- [**CS0224**](#type-argument-count-and-usage): *A method with vararg cannot be generic, be in a generic type, or have a params parameter*
-- [**CS0304**](#constructor-constraints): *Cannot create an instance of the variable type 'type' because it does not have the new() constraint*
-- [**CS0305**](#type-argument-count-and-usage): *Using the generic type 'generic type' requires 'number' type arguments*
-- [**CS0306**](#type-argument-count-and-usage): *The type 'type' may not be used as a type argument*
+- [**CS0080**](#type-parameter-declaration-and-naming): *Constraints are not allowed on non-generic declarations.*
+- [**CS0081**](#type-parameter-declaration-and-naming): *Type parameter declaration must be an identifier not a type.*
+- [**CS0224**](#type-argument-count-and-usage): *A method with vararg cannot be generic, be in a generic type, or have a params parameter.*
+- [**CS0304**](#constructor-constraints): *Cannot create an instance of the variable type 'type' because it does not have the new() constraint.*
+- [**CS0305**](#type-argument-count-and-usage): *Using the generic type 'generic type' requires 'number' type arguments.*
+- [**CS0306**](#type-argument-count-and-usage): *The type 'type' may not be used as a type argument.*
 - [**CS0307**](#type-argument-count-and-usage): *The 'construct' 'identifier' is not a generic method. If you intended an expression list, use parentheses around the < expression.*
 - [**CS0308**](#type-argument-count-and-usage): *The non-generic type-or-method 'identifier' cannot be used with type arguments.*
-- [**CS0310**](#constructor-constraints): *The type 'typename' must be a non-abstract type with a public parameterless constructor in order to use it as parameter 'parameter' in the generic type or method 'generic'*
+- [**CS0310**](#constructor-constraints): *The type 'typename' must be a non-abstract type with a public parameterless constructor in order to use it as parameter 'parameter' in the generic type or method 'generic'.*
 - [**CS0311**](#constraint-satisfaction-and-conversions): *The type 'type1' cannot be used as type parameter 'T' in the generic type or method '\<name>'. There is no implicit reference conversion from 'type1' to 'type2'.*
 - [**CS0312**](#constraint-satisfaction-and-conversions): *The type 'type1' cannot be used as type parameter 'name' in the generic type or method 'name'. The nullable type 'type1' does not satisfy the constraint of 'type2'.*
-- [**CS0313**](#constraint-satisfaction-and-conversions): *The type 'type1' cannot be used as type parameter 'parameter name' in the generic type or method 'type2'. The nullable type 'type1' does not satisfy the constraint of 'type2'. Nullable types cannot satisfy any interface constraints.*
+- [**CS0313**](#constraint-satisfaction-and-conversions): *The type 'type1' cannot be used as type parameter 'parameter name' in the generic type or method 'type2'. The nullable type 'type1' does not satisfy the constraint of 'type2'. Nullable types can not satisfy any interface constraints.*
 - [**CS0314**](#constraint-satisfaction-and-conversions): *The type 'type1' cannot be used as type parameter 'name' in the generic type or method 'name'. There is no boxing conversion or type parameter conversion from 'type1' to 'type2'.*
-- [**CS0315**](#constraint-satisfaction-and-conversions): *The type 'valueType' cannot be used as type parameter 'T' in the generic type or method 'TypeorMethod\\<T>'. There is no boxing conversion from 'valueType' to 'referenceType'.*
-- [**CS0403**](#generic-type-usage-restrictions): *Cannot use null as type argument for 'type parameter' because it may not be a reference type. Consider using 'default' instead.*
-- [**CS0412**](#type-parameter-declaration-and-naming): *'parameter': a parameter, local variable, or local function cannot have the same name as a method type parameter*
-- [**CS0413**](#generic-type-usage-restrictions): *The type parameter 'type parameter' cannot be used with the 'as' operator because it does not have a class type constraint nor a 'class' constraint*
-- [**CS0417**](#constructor-constraints): *'identifier': cannot provide arguments when creating an instance of a variable type*
-- [**CS0694**](#type-parameter-declaration-and-naming): *Type parameter 'identifier' has the same name as the containing type, or method*
-- [**CS0695**](#generic-type-usage-restrictions): *Generic class cannot implement both 'generic interface' and 'generic interface' because they may unify for some type parameter substitutions*
-- [**CS0698**](#generic-type-usage-restrictions): *A generic type cannot derive from 'type' because it is an attribute class*
-- [**CS9338**](#generic-type-usage-restrictions): *Type argument 'type' must be public because it is used in a public signature.*
+- [**CS0315**](#constraint-satisfaction-and-conversions): *The type 'valueType' cannot be used as type parameter 'T' in the generic type or method 'TypeorMethod\<T>'. There is no boxing conversion from 'valueType' to 'referenceType'.*
+- [**CS0403**](#generic-type-usage-restrictions): *Cannot convert null to type parameter 'name' because it could be a non-nullable value type. Consider using 'default('T')' instead.*
+- [**CS0412**](#type-parameter-declaration-and-naming): *'parameter': a parameter, local variable, or local function cannot have the same name as a method type parameter.*
+- [**CS0413**](#generic-type-usage-restrictions): *The type parameter 'type parameter' cannot be used with the 'as' operator because it does not have a class type constraint nor a 'class' constraint.*
+- [**CS0417**](#constructor-constraints): *'identifier': cannot provide arguments when creating an instance of a variable type.*
+- [**CS0694**](#type-parameter-declaration-and-naming): *Type parameter 'identifier' has the same name as the containing type, or method.*
+- [**CS0695**](#generic-type-usage-restrictions): *'type' cannot implement both 'interface1' and 'interface2' because they may unify for some type parameter substitutions.*
+- [**CS0698**](#generic-type-usage-restrictions): *A generic type cannot derive from 'type' because it is an attribute class.*
+- [**CS9338**](#generic-type-usage-restrictions): *Inconsistent accessibility: type 'type1' is less accessible than class 'type2'.*
 
 ## Type parameter declaration and naming
 
 The following errors relate to how type parameters are declared and named in generic types and methods:
 
-- **CS0080**: *Constraints are not allowed on non-generic declarations*
-- **CS0081**: *Type parameter declaration must be an identifier not a type*
-- **CS0412**: *'generic': a parameter or local variable cannot have the same name as a method type parameter*
-- **CS0694**: *Type parameter 'identifier' has the same name as the containing type, or method*
+- **CS0080**: *Constraints are not allowed on non-generic declarations.*
+- **CS0081**: *Type parameter declaration must be an identifier not a type.*
+- **CS0412**: *'parameter': a parameter, local variable, or local function cannot have the same name as a method type parameter.*
+- **CS0694**: *Type parameter 'identifier' has the same name as the containing type, or method.*
 
 To correct these errors, ensure that type parameters are declared with valid identifiers, constraint clauses are only applied to generic declarations, and type parameter names don't conflict with other identifiers in scope:
 
@@ -136,7 +136,7 @@ The following errors relate to type arguments not satisfying the constraints of 
 
 - **CS0311**: *The type 'type1' cannot be used as type parameter 'T' in the generic type or method '\<name>'. There is no implicit reference conversion from 'type1' to 'type2'.*
 - **CS0312**: *The type 'type1' cannot be used as type parameter 'name' in the generic type or method 'name'. The nullable type 'type1' does not satisfy the constraint of 'type2'.*
-- **CS0313**: *The type 'type1' cannot be used as type parameter 'parameter name' in the generic type or method 'type2'. The nullable type 'type1' does not satisfy the constraint of 'type2'. Nullable types cannot satisfy any interface constraints.*
+- **CS0313**: *The type 'type1' cannot be used as type parameter 'parameter name' in the generic type or method 'type2'. The nullable type 'type1' does not satisfy the constraint of 'type2'. Nullable types can not satisfy any interface constraints.*
 - **CS0314**: *The type 'type1' cannot be used as type parameter 'name' in the generic type or method 'name'. There is no boxing conversion or type parameter conversion from 'type1' to 'type2'.*
 - **CS0315**: *The type 'valueType' cannot be used as type parameter 'T' in the generic type or method 'TypeorMethod\\<T>'. There is no boxing conversion from 'valueType' to 'referenceType'.*
 
@@ -153,18 +153,20 @@ For more information, see [Constraints on type parameters](../programming-guide/
 
 The following errors relate to restrictions on how generic types can be used:
 
-- **CS0403**: *Cannot use null as type argument for 'type parameter' because it may not be a reference type. Consider using 'default' instead.*
-- **CS0413**: *The type parameter 'type parameter' cannot be used with the 'as' operator because it does not have a class type constraint nor a 'class' constraint*
-- **CS0695**: *Generic class cannot implement both 'generic interface' and 'generic interface' because they may unify for some type parameter substitutions*
-- **CS0698**: *A generic type cannot derive from 'type' because it is an attribute class*
-- **CS9338**: *Type argument 'type' must be public because it is used in a public signature.*
+- **CS0403**: *Cannot convert null to type parameter 'name' because it could be a non-nullable value type. Consider using 'default('T')' instead.*
+- **CS0413**: *The type parameter 'type parameter' cannot be used with the 'as' operator because it does not have a class type constraint nor a 'class' constraint.*
+- **CS0695**: *'type' cannot implement both 'interface1' and 'interface2' because they may unify for some type parameter substitutions.*
+- **CS0698**: *A generic type cannot derive from 'type' because it is an attribute class.*
+- **CS9338**: *Inconsistent accessibility: type 'type1' is less accessible than class 'type2'.*
 
 To correct these errors, use `default` instead of `null` for unconstrained type parameters, add class constraints when using the `as` operator, avoid interface unification conflicts, don't create generic attribute classes, and ensure type arguments match the visibility of their containing members:
 
 - Replace `null` assignments with `default(T)` or add a class constraint (**CS0403**). When you assign `null` to an unconstrained type parameter, the compiler cannot guarantee that the type argument will be a reference type that accepts `null` values, because it might be a value type like `int` or `struct`, which cannot be `null`. To resolve this error, either use `default(T)` which provides the appropriate default value for any type (null for reference types, zero or empty for value types), or add a `class` constraint to the type parameter if you specifically need reference type semantics and want to allow `null` assignments.
 - Add a `class` or specific type constraint when using the `as` operator (**CS0413**). The `as` operator performs a safe type cast that returns `null` if the conversion fails, but this behavior is incompatible with value types because value types cannot be `null`. When you use `as` with an unconstrained type parameter, the compiler cannot guarantee the type argument won't be a value type, so it rejects the code. To fix this error, add a `class` constraint or a specific reference type constraint (like `where T : SomeClass`) to ensure the type parameter will always be a reference type that can properly handle the `null` result of a failed cast.
 - Avoid implementing the same generic interface multiple times with type parameters that could unify (**CS0695**). When a class implements a generic interface multiple times with different type parameters (such as `class G<T1, T2> : I<T1>, I<T2>`), there's a risk that someone could instantiate it with the same type for both parameters (`G<int, int>`), which would create a conflict because the class would effectively be implementing `I<int>` twice. To resolve this error, either implement the interface only once, restructure your type parameters to prevent unification, or use separate non-generic classes for different specializations.
-- Remove generic type parameters from attribute classes (**CS0698**). Attributes are metadata annotations that are stored in compiled assemblies and must be instantiated by the runtime's reflection system, which doesn't support generic attributes because of the complexity this would introduce in attribute resolution and application. If you need attribute-like behavior with type parameters, consider using factory patterns, creating separate non-generic attribute classes for each needed type, or redesigning your solution to avoid generic attributes entirely.
+- Remove generic type parameters from attribute classes (**CS0698**).
+> [!NOTE]
+> This error is no longer produced in current versions of C#, as generic attributes are now supported. In earlier versions of C#, attributes were metadata annotations that were stored in compiled assemblies and had to be instantiated by the runtime's reflection system, which didn't support generic attributes because of the complexity this would introduce in attribute resolution and application.
 - Ensure type arguments used in public or protected signatures are at least as accessible as the member using them (**CS9338**). When you declare a public or protected member that uses a generic type with specific type arguments, those type arguments must themselves be publicly accessible, because otherwise external code couldn't properly reference or use the member's signature. For example, if you have `public class Container<T>` where `T` is an internal type, external assemblies can see the `Container` but cannot properly work with it because they cannot see `T`. To fix this error, either make the type argument public, or reduce the accessibility of the member using it to match the type argument's accessibility.
 
 For more information, see [Constraints on type parameters](../programming-guide/generics/constraints-on-type-parameters.md), [default value expressions](../operators/default.md), and [Attributes](../programming-guide/concepts/attributes/index.md).

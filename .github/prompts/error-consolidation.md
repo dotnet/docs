@@ -12,8 +12,8 @@ Overall steps:
 
 We're going to work through a series of files consolidating errors and warnings.
 
-- For the duration of this chat, all references to "destination file" refer to `explicit-interface-errors.md`.
-- For the duration of this chat, all references to "the target theme" refer to errors and warnings related to members that explicitly implement an interface member.
+- For the duration of this chat, all references to "destination file" refer to `generic-type-parameters-errors.md`.
+- For the duration of this chat, all references to "the target theme" refer to errors and warnings related to generic type parameters and generic type arguments.
 
 The destination file already contains a skeleton for the final output.
 
@@ -64,7 +64,7 @@ Understand these instructions, then suggest a list of themes and the included er
 
 ## Move from description to resolution
 
-Rework the highlighted section so the focus is on how to correct each error. This article doesn't need to explain the associated language feature. Instead, in each section, provide links to language reference or language specification material that explains the rules violated when these diagnostics appear. Add explanatory context after each correction (in parentheses with the error code). Provided brief reasons why each correction is needed. Use detailed, sentence-style explanations rather than brief imperative statements. For each recommendation put the affectived error codes in parentheses, and in **bold** style. Remove extensive examples.
+Rework the highlighted section so the focus is on how to correct each error. This article doesn't need to explain the associated language feature. Instead, in each section, provide links to language reference or language specification material that explains the rules violated when these diagnostics appear. Add explanatory context after each correction (in parentheses with the error code). Provided brief reasons why each correction is needed. Use detailed, sentence-style explanations rather than brief imperative statements. For each recommendation put the affectived error codes in parentheses, and in **bold** style. Remove extensive examples. Remove all H3 headings in this section. If any errors are no longer produced in the latest version of C#, make a note of that.
 
 ## Verify error messages
 

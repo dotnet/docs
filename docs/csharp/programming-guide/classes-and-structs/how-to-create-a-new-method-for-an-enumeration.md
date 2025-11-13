@@ -24,7 +24,7 @@ Beginning with C# 14, you can declare *extension members* in an extension block.
 
 You call these new extension properties as though they're declared on the extended type:
 
-:::code language="csharp" source="./snippets/ExtensionMembers/CustomExtensionMembers.cs" id="EnumExtensionMembers":::
+:::code language="csharp" source="./snippets/ExtensionMembers/CustomExtensionMembers.cs" id="ExampleExtendEnum":::
 
 You can learn more about the new extension members in the article on [extension members](./extension-methods.md) and in the language reference article on the ['extension` keyword](../../language-reference/keywords/extension.md).
 

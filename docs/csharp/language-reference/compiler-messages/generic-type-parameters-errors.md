@@ -4,6 +4,7 @@ description: These compiler errors and warnings indicate errors in generic type 
 f1_keywords:
   - "CS0080"
   - "CS0081"
+  - "CS0224"
   - "CS0304"
   - "CS0305"
   - "CS0306"
@@ -26,6 +27,7 @@ f1_keywords:
 helpviewer_keywords:
   - "CS0080"
   - "CS0081"
+  - "CS0224"
   - "CS0304"
   - "CS0305"
   - "CS0306"
@@ -99,9 +101,9 @@ For more information, see [Generic Type Parameters](../../programming-guide/gene
 
 The following errors relate to providing the correct number and type of type arguments to generic types and methods:
 
-- **CS0224**: *A method with vararg cannot be generic, be in a generic type, or have a params parameter*
-- **CS0305**: *Using the generic type 'generic type' requires 'number' type arguments*
-- **CS0306**: *The type 'type' may not be used as a type argument*
+- **CS0224**: *A method with vararg cannot be generic, be in a generic type, or have a params parameter.*
+- **CS0305**: *Using the generic type 'generic type' requires 'number' type arguments.*
+- **CS0306**: *The type 'type' may not be used as a type argument.*
 - **CS0307**: *The 'construct' 'identifier' is not a generic method. If you intended an expression list, use parentheses around the < expression.*
 - **CS0308**: *The non-generic type-or-method 'identifier' cannot be used with type arguments.*
 
@@ -118,9 +120,9 @@ For more information, see [Generic Type Parameters](../../programming-guide/gene
 
 The following errors relate to the `new()` constraint on generic type parameters:
 
-- **CS0304**: *Cannot create an instance of the variable type 'type' because it does not have the new() constraint*
-- **CS0310**: *The type 'typename' must be a non-abstract type with a public parameterless constructor in order to use it as parameter 'parameter' in the generic type or method 'generic'*
-- **CS0417**: *'identifier': cannot provide arguments when creating an instance of a variable type*
+- **CS0304**: *Cannot create an instance of the variable type 'type' because it does not have the new() constraint.*
+- **CS0310**: *The type 'typename' must be a non-abstract type with a public parameterless constructor in order to use it as parameter 'parameter' in the generic type or method 'generic'.*
+- **CS0417**: *'identifier': cannot provide arguments when creating an instance of a variable type.*
 
 To correct these errors, add the `new()` constraint to type parameters that need to be instantiated, ensure type arguments have public parameterless constructors, and avoid passing arguments when constructing instances of type parameters:
 

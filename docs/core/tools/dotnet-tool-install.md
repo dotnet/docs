@@ -94,7 +94,7 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 
   Name/ID of the NuGet package that contains the .NET tool to install.
 
-  Starting in .NET 10.0.100 SDK, use the name/ID, and version seperated by `@` to install a .NET tool.
+  Starting in .NET 10.0.100 SDK, use the name/ID, and version separated by `@` to install a .NET tool.
 
 ## Options
 

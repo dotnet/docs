@@ -56,7 +56,7 @@ The `dotnet tool update` command provides a way for you to update .NET tools on 
 
   Name/ID of the NuGet package that contains the .NET global tool to update.
 
-  Starting in .NET 10.0.100 SDK, use the name/ID, and version seperated by `@` to update a .NET tool.
+  Starting in .NET 10.0.100 SDK, use the name/ID and version separated by `@` to update a .NET tool.
 
   You can find the package name using the [dotnet tool list](dotnet-tool-list.md) command.
 

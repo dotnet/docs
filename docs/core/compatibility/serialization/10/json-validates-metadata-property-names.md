@@ -57,6 +57,11 @@ This change is a [behavioral change](../../categories.md#behavioral-change).
 
 This change provides early prevention of invalid serialization contracts. By validating property names upfront, the serializer prevents scenarios where duplicate properties would be emitted, resulting in invalid JSON that cannot round-trip correctly. This helps developers identify and fix configuration issues during development rather than discovering them at runtime during deserialization.
 
+For more information, see:
+
+- [[STJ] Disallow property names that conflict with metadata property names (dotnet/runtime#106390)](https://github.com/dotnet/runtime/issues/106390)
+- [Disallow types with property names conflicting with metadata (dotnet/runtime#106460)](https://github.com/dotnet/runtime/pull/106460)
+
 ## Recommended action
 
 Users should avoid using property names that conflict with System.Text.Json-specific metadata properties (`$type`, `$id`, `$ref`, and others). If it's absolutely necessary to keep such a property in the class, apply a <xref:System.Text.Json.Serialization.JsonIgnoreAttribute> annotation on the conflicting property:

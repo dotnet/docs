@@ -8,7 +8,7 @@ ai-usage: ai-assisted
 ---
 # EXTOBS0001: IResourceMonitor is obsolete
 
-The <xref:Microsoft.Extensions.Diagnostics.ResourceMonitoring.IResourceMonitor?displayProperty=fullName> interface and related APIs have been marked as obsolete starting in .NET 9. These APIs will be removed in a future version. The resource monitoring functionality has been replaced with a more efficient metrics-based approach using observable instruments.
+The <xref:Microsoft.Extensions.Diagnostics.ResourceMonitoring.IResourceMonitor?displayProperty=fullName> interface and related APIs are obsolete starting in .NET 9. These APIs will be removed in a future version. The resource monitoring functionality has been replaced with a more efficient metrics-based approach using observable instruments.
 
 The following APIs are marked obsolete. Use of these APIs generates warning `EXTOBS0001` at compile time.
 

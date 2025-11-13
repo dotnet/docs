@@ -532,6 +532,8 @@ f1_keywords:
   - "CS9095"
   - "CS9096"
   - "CS9097"
+helpviewer_keywords:
+  - "errors [C#], additional information"
 ---
 # Sorry, we don't have specifics on this C# error
 

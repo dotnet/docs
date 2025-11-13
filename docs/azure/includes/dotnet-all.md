@@ -116,7 +116,7 @@
 | Text Translation | NuGet [1.0.0](https://www.nuget.org/packages/Azure.AI.Translation.Text/1.0.0) | [docs](/dotnet/api/overview/azure/AI.Translation.Text-readme) | GitHub [1.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.Translation.Text_1.0.0/sdk/translation/Azure.AI.Translation.Text/) |
 | Time Series Insights | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.IoT.TimeSeriesInsights/1.0.0-beta.1) | [docs](/dotnet/api/overview/azure/IoT.TimeSeriesInsights-readme?view=azure-dotnet-preview&amp;preserve-view=true) | GitHub [1.0.0-beta.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.IoT.TimeSeriesInsights_1.0.0-beta.1/sdk/timeseriesinsights/Azure.IoT.TimeSeriesInsights/) |
 | TimeZone | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.Maps.TimeZones/1.0.0-beta.1) | [docs](/dotnet/api/overview/azure/Maps.TimeZones-readme?view=azure-dotnet-preview&amp;preserve-view=true) | GitHub [1.0.0-beta.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Maps.TimeZones_1.0.0-beta.1/sdk/maps/Azure.Maps.TimeZones/) |
-| unknown | NuGet [1.0.0-beta.4](https://www.nuget.org/packages/Azure.AI.AgentServer.AgentFramework/1.0.0-beta.4) |  | GitHub [1.0.0-beta.4](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.AgentServer.AgentFramework_1.0.0-beta.4/sdk/agentserver/Azure.AI.AgentServer.AgentFramework/) |
+| unknown | NuGet [1.0.0-beta.4](https://www.nuget.org/packages/Azure.AI.AgentServer.AgentFramework/1.0.0-beta.4) | [docs](/dotnet/api/overview/azure/AI.AgentServer.AgentFramework-readme?view=azure-dotnet-preview&amp;preserve-view=true) | GitHub [1.0.0-beta.4](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.AgentServer.AgentFramework_1.0.0-beta.4/sdk/agentserver/Azure.AI.AgentServer.AgentFramework/) |
 | unknown | NuGet [1.0.0-beta.4](https://www.nuget.org/packages/Azure.AI.AgentServer.Contracts/1.0.0-beta.4) |  | GitHub [1.0.0-beta.4](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.AgentServer.Contracts_1.0.0-beta.4/sdk/agentserver/Azure.AI.AgentServer.Contracts/) |
 | unknown | NuGet [1.0.0-beta.4](https://www.nuget.org/packages/Azure.AI.AgentServer.Core/1.0.0-beta.4) |  | GitHub [1.0.0-beta.4](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.AgentServer.Core_1.0.0-beta.4/sdk/agentserver/Azure.AI.AgentServer.Core/) |
 | Vision Common | NuGet [0.15.1-beta.1](https://www.nuget.org/packages/Azure.AI.Vision.Common/0.15.1-beta.1) |  | GitHub [0.15.1-beta.1](https://msasg.visualstudio.com/Skyman/_git/Carbon) |
@@ -342,7 +342,7 @@
 | Resource Management - Recovery Services Data Replication | NuGet [1.0.0](https://www.nuget.org/packages/Azure.ResourceManager.RecoveryServicesDataReplication/1.0.0) | [docs](/dotnet/api/overview/azure/ResourceManager.RecoveryServicesDataReplication-readme) | GitHub [1.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.RecoveryServicesDataReplication_1.0.0/sdk/recoveryservices-datareplication/Azure.ResourceManager.RecoveryServicesDataReplication/) |
 | Resource Management - Recovery Services Site Recovery | NuGet [1.3.0](https://www.nuget.org/packages/Azure.ResourceManager.RecoveryServicesSiteRecovery/1.3.0) | [docs](/dotnet/api/overview/azure/ResourceManager.RecoveryServicesSiteRecovery-readme) | GitHub [1.3.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.RecoveryServicesSiteRecovery_1.3.0/sdk/recoveryservices-siterecovery/Azure.ResourceManager.RecoveryServicesSiteRecovery/) |
 | Resource Management - Redis | NuGet [1.5.1](https://www.nuget.org/packages/Azure.ResourceManager.Redis/1.5.1) | [docs](/dotnet/api/overview/azure/ResourceManager.Redis-readme) | GitHub [1.5.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.Redis_1.5.1/sdk/redis/Azure.ResourceManager.Redis/) |
-| Resource Management - Redis Enterprise | NuGet [1.2.1](https://www.nuget.org/packages/Azure.ResourceManager.RedisEnterprise/1.2.1) | [docs](/dotnet/api/overview/azure/ResourceManager.RedisEnterprise-readme) | GitHub [1.2.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.RedisEnterprise_1.2.1/sdk/redisenterprise/Azure.ResourceManager.RedisEnterprise/) |
+| Resource Management - Redis Enterprise | NuGet [1.3.0](https://www.nuget.org/packages/Azure.ResourceManager.RedisEnterprise/1.3.0) | [docs](/dotnet/api/overview/azure/ResourceManager.RedisEnterprise-readme) | GitHub [1.3.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.RedisEnterprise_1.3.0/sdk/redisenterprise/Azure.ResourceManager.RedisEnterprise/) |
 | Resource Management - Redis Enterprise Cache | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.ResourceManager.RedisEnterpriseCache/1.0.0-beta.1) | [docs](/dotnet/api/overview/azure/ResourceManager.RedisEnterpriseCache-readme?view=azure-dotnet-preview&amp;preserve-view=true) | GitHub [1.0.0-beta.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.RedisEnterpriseCache_1.0.0-beta.1/sdk/redisenterprise/Azure.ResourceManager.RedisEnterpriseCache/) |
 | Resource Management - Relay | NuGet [1.2.1](https://www.nuget.org/packages/Azure.ResourceManager.Relay/1.2.1) | [docs](/dotnet/api/overview/azure/ResourceManager.Relay-readme) | GitHub [1.2.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.Relay_1.2.1/sdk/relay/Azure.ResourceManager.Relay/) |
 | Resource Management - Reservations | NuGet [1.4.1](https://www.nuget.org/packages/Azure.ResourceManager.Reservations/1.4.1) | [docs](/dotnet/api/overview/azure/ResourceManager.Reservations-readme) | GitHub [1.4.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.ResourceManager.Reservations_1.4.1/sdk/reservations/Azure.ResourceManager.Reservations/) |
@@ -407,32 +407,32 @@
 | IoT Operations MQTT | NuGet [0.11.0](https://www.nuget.org/packages/Azure.Iot.Operations.Mqtt/0.11.0) |  |  |
 | IoT Operations Protocol | NuGet [0.12.1](https://www.nuget.org/packages/Azure.Iot.Operations.Protocol/0.12.1) |  |  |
 | IoT Operations Services | NuGet [0.15.1](https://www.nuget.org/packages/Azure.Iot.Operations.Services/0.15.1) |  |  |
-| Item Templates NetCore | NuGet [4.0.5303](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ItemTemplates.NetCore/4.0.5303) |  |  |
-| Item Templates NetFx | NuGet [4.0.5303](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ItemTemplates.NetFx/4.0.5303) |  |  |
+| Item Templates NetCore | NuGet [4.0.5331](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ItemTemplates.NetCore/4.0.5331) |  |  |
+| Item Templates NetFx | NuGet [4.0.5331](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ItemTemplates.NetFx/4.0.5331) |  |  |
 | Microsoft.Azure.DataFactoryTestingFramework.Expressions | NuGet [0.2.7](https://www.nuget.org/packages/Microsoft.Azure.DataFactoryTestingFramework.Expressions/0.2.7) |  |  |
 | Microsoft.Azure.Functions.Worker.OpenTelemetry | NuGet [1.1.0-preview6](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.OpenTelemetry/1.1.0-preview6) |  |  |
 | OpenTelemetry Profiler | NuGet [1.0.0-beta6](https://www.nuget.org/packages/Azure.Monitor.OpenTelemetry.Profiler/1.0.0-beta6) |  |  |
-| Speech CLI | NuGet [1.46.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.CLI/1.46.0) |  |  |
-| Speech Extension Embedded SR | NuGet [1.46.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Embedded.SR/1.46.0) |  |  |
-| Speech Extension Embedded TTS | NuGet [1.46.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Embedded.TTS/1.46.0) |  |  |
-| Speech Extension ONNX Runtime | NuGet [1.46.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.ONNX.Runtime/1.46.0) |  |  |
-| Speech Extension Telemetry | NuGet [1.46.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Telemetry/1.46.0) |  |  |
+| Speech CLI | NuGet [1.47.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.CLI/1.47.0) |  |  |
+| Speech Extension Embedded SR | NuGet [1.47.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Embedded.SR/1.47.0) |  |  |
+| Speech Extension Embedded TTS | NuGet [1.47.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Embedded.TTS/1.47.0) |  |  |
+| Speech Extension ONNX Runtime | NuGet [1.47.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.ONNX.Runtime/1.47.0) |  |  |
+| Speech Extension Telemetry | NuGet [1.47.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Telemetry/1.47.0) |  |  |
 | System Net Client Model | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/System.Net.ClientModel/1.0.0-beta.1) |  |  |
 | Unknown Display Name | NuGet [0.13.0](https://www.nuget.org/packages/Azure.Iot.Operations.Connector/0.13.0) |  |  |
 | Unknown Display Name | NuGet [0.1.0](https://www.nuget.org/packages/Azure.Iot.Operations.Templates/0.1.0) |  |  |
-| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp/1.0.0)<br>NuGet [2.0.0-beta.2](https://www.nuget.org/packages/Azure.Mcp/2.0.0-beta.2) |  |  |
-| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.linux-arm64/1.0.0)<br>NuGet [2.0.0-beta.2](https://www.nuget.org/packages/Azure.Mcp.linux-arm64/2.0.0-beta.2) |  |  |
-| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.linux-x64/1.0.0)<br>NuGet [2.0.0-beta.2](https://www.nuget.org/packages/Azure.Mcp.linux-x64/2.0.0-beta.2) |  |  |
-| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.osx-arm64/1.0.0)<br>NuGet [2.0.0-beta.2](https://www.nuget.org/packages/Azure.Mcp.osx-arm64/2.0.0-beta.2) |  |  |
-| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.osx-x64/1.0.0)<br>NuGet [2.0.0-beta.2](https://www.nuget.org/packages/Azure.Mcp.osx-x64/2.0.0-beta.2) |  |  |
-| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.win-arm64/1.0.0)<br>NuGet [2.0.0-beta.2](https://www.nuget.org/packages/Azure.Mcp.win-arm64/2.0.0-beta.2) |  |  |
-| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.win-x64/1.0.0)<br>NuGet [2.0.0-beta.2](https://www.nuget.org/packages/Azure.Mcp.win-x64/2.0.0-beta.2) |  |  |
+| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp/1.0.0)<br>NuGet [2.0.0-beta.3](https://www.nuget.org/packages/Azure.Mcp/2.0.0-beta.3) |  |  |
+| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.linux-arm64/1.0.0)<br>NuGet [2.0.0-beta.3](https://www.nuget.org/packages/Azure.Mcp.linux-arm64/2.0.0-beta.3) |  |  |
+| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.linux-x64/1.0.0)<br>NuGet [2.0.0-beta.3](https://www.nuget.org/packages/Azure.Mcp.linux-x64/2.0.0-beta.3) |  |  |
+| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.osx-arm64/1.0.0)<br>NuGet [2.0.0-beta.3](https://www.nuget.org/packages/Azure.Mcp.osx-arm64/2.0.0-beta.3) |  |  |
+| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.osx-x64/1.0.0)<br>NuGet [2.0.0-beta.3](https://www.nuget.org/packages/Azure.Mcp.osx-x64/2.0.0-beta.3) |  |  |
+| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.win-arm64/1.0.0)<br>NuGet [2.0.0-beta.3](https://www.nuget.org/packages/Azure.Mcp.win-arm64/2.0.0-beta.3) |  |  |
+| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.win-x64/1.0.0)<br>NuGet [2.0.0-beta.3](https://www.nuget.org/packages/Azure.Mcp.win-x64/2.0.0-beta.3) |  |  |
 | Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Monitor.Query.Logs/1.0.0) |  |  |
 | Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Monitor.Query.Metrics/1.0.0) |  |  |
 | Unknown Display Name | NuGet [0.1.4-preview.2](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Aot/0.1.4-preview.2) |  |  |
 | Unknown Display Name | NuGet [0.2.802](https://www.nuget.org/packages/Microsoft.Azure.Mcp.AzTypes.Internal.Compact/0.2.802) |  |  |
 | Unknown Display Name | NuGet [1.1.2-preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.AzureCosmosDb.Mongo/1.1.2-preview) |  |  |
-| Unknown Display Name | NuGet [1.46.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.MAS/1.46.0) |  |  |
+| Unknown Display Name | NuGet [1.47.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.MAS/1.47.0) |  |  |
 | Unknown Display Name | NuGet [1.1.0](https://www.nuget.org/packages/Microsoft.Extensions.Caching.Postgres/1.1.0) |  |  |
 | Unknown Display Name | NuGet [0.0.12](https://www.nuget.org/packages/Microsoft.Template.Mcp/0.0.12) |  |  |
 | Unknown Display Name | NuGet [0.0.12](https://www.nuget.org/packages/Microsoft.Template.Mcp.linux-arm64/0.0.12) |  |  |
@@ -514,8 +514,8 @@
 | Search - Common | NuGet [10.1.0](https://www.nuget.org/packages/Microsoft.Azure.Search.Common/10.1.0) |  | GitHub [10.1.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Search.Common_10.1.0/sdk/search/Microsoft.Azure.Search.Common/) |
 | Search - Data | NuGet [10.1.0](https://www.nuget.org/packages/Microsoft.Azure.Search.Data/10.1.0) |  | GitHub [10.1.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Search.Data_10.1.0/sdk/search/Microsoft.Azure.Search.Data/) |
 | Search - Service | NuGet [10.1.0](https://www.nuget.org/packages/Microsoft.Azure.Search.Service/10.1.0) |  | GitHub [10.1.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Search.Service_10.1.0/sdk/search/Microsoft.Azure.Search.Service/) |
-| Speech | NuGet [1.46.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech/1.46.0)<br>NuGet [1.47.0-beta.0.357883](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech/1.47.0-beta.0.357883) |  |  |
-| Speech Remote Conversation | NuGet [1.46.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Remoteconversation/1.46.0) |  |  |
+| Speech | NuGet [1.47.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech/1.47.0)<br>NuGet [1.47.0-beta.0.357883](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech/1.47.0-beta.0.357883) |  |  |
+| Speech Remote Conversation | NuGet [1.47.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Remoteconversation/1.47.0) |  |  |
 | Speech Xamarin iOS | NuGet [1.25.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Xamarin.iOS/1.25.0) |  |  |
 | Spell Check | NuGet [4.1.0-preview.1](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Language.SpellCheck/4.1.0-preview.1) |  | GitHub [4.1.0-preview.1](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.Language.SpellCheck_4.1.0-preview.1/sdk/cognitiveservices/Language.SpellCheck) |
 | Spring Cloud Client | NuGet [2.0.0-preview.3](https://www.nuget.org/packages/Microsoft.Azure.SpringCloud.Client/2.0.0-preview.3) |  |  |
@@ -528,7 +528,7 @@
 | App Service - API Apps Service | NuGet [0.9.64](https://www.nuget.org/packages/Microsoft.Azure.AppService.ApiApps.Service/0.9.64) |  |  |
 | Code Analyzers for Durable Functions | NuGet [0.5.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.DurableTask.Analyzers/0.5.0) |  | GitHub [0.5.0](https://github.com/Azure/azure-functions-durable-extension/tree/Analyzer-v0.3.0/src/WebJobs.Extensions.DurableTask.Analyzers) |
 | Cosmos DB - BulkExecutor | NuGet [2.5.1-preview](https://www.nuget.org/packages/Microsoft.Azure.CosmosDB.BulkExecutor/2.5.1-preview) |  | GitHub [2.5.1-preview](https://github.com/Azure/azure-cosmosdb-bulkexecutor-dotnet-getting-started) |
-| Cosmos DB - Direct | NuGet [3.41.2](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Direct/3.41.2) |  | GitHub [3.41.2](https://github.com/Azure/azure-cosmos-dotnet-v3) |
+| Cosmos DB - Direct | NuGet [3.41.3](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Direct/3.41.3) |  | GitHub [3.41.3](https://github.com/Azure/azure-cosmos-dotnet-v3) |
 | Cosmos DB - Encryption | NuGet [2.0.3](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Encryption/2.0.3)<br>NuGet [2.1.0-preview4](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Encryption/2.1.0-preview4) |  | GitHub [2.0.3](https://github.com/Azure/azure-cosmos-dotnet-v3/tree/releases/encryption/1.0.0-preview4/Microsoft.Azure.Cosmos.Encryption) |
 | Cosmos DB - Encryption | NuGet [1.0.0-preview07](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Encryption.Custom/1.0.0-preview07) |  |  |
 | Extensions - Caching Cosmos | NuGet [1.8.0](https://www.nuget.org/packages/Microsoft.Extensions.Caching.Cosmos/1.8.0) |  | GitHub [1.8.0](https://github.com/Azure/Microsoft.Extensions.Caching.Cosmos/tree/v1.0.0-preview4) |
@@ -558,10 +558,10 @@
 | Functions Extensions - Redis | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Redis/1.0.0) |  |  |
 | Functions Extensions - Redis | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Redis/1.0.0) |  |  |
 | Functions Extensions - Worker Extentions | NuGet [1.0.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Dapr/1.0.1) |  |  |
-| Functions item template pack for Microsoft Template Engine | NuGet [4.0.5303](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.ItemTemplates/4.0.5303) |  | GitHub [4.0.5303](https://github.com/Azure/azure-functions-templates/tree/3.1.1582) |
+| Functions item template pack for Microsoft Template Engine | NuGet [4.0.5331](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.ItemTemplates/4.0.5331) |  | GitHub [4.0.5331](https://github.com/Azure/azure-functions-templates/tree/3.1.1582) |
 | Functions OpenAPI app settings deserialization library | NuGet [1.4.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.OpenApi.Configuration.AppSettings/1.4.0)<br>NuGet [2.0.0-preview2](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.OpenApi.Configuration.AppSettings/2.0.0-preview2) |  |  |
 | Functions OpenAPI document and Swagger UI renderer library | NuGet [1.4.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.OpenApi/1.4.0)<br>NuGet [2.0.0-preview2](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.OpenApi/2.0.0-preview2) |  |  |
-| Functions project template pack for Microsoft Template Engine | NuGet [4.0.5303](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.ProjectTemplates/4.0.5303) |  | GitHub [4.0.5303](https://github.com/Azure/azure-functions-templates/tree/3.1.1582) |
+| Functions project template pack for Microsoft Template Engine | NuGet [4.0.5331](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.ProjectTemplates/4.0.5331) |  | GitHub [4.0.5331](https://github.com/Azure/azure-functions-templates/tree/3.1.1582) |
 | Functions runtime assemblies for App Insights logging | NuGet [3.0.41](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Logging.ApplicationInsights/3.0.41) |  | GitHub [3.0.41](https://github.com/Azure/azure-webjobs-sdk/tree/v3.0.18/src/Microsoft.Azure.WebJobs.Logging.ApplicationInsights) |
 | Functions runtime assemblies for logging | NuGet [4.0.3](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Logging/4.0.3) |  |  |
 | Functions runtime assemblies for Microsoft.Azure.WebJobs.Host | NuGet [3.0.42](https://www.nuget.org/packages/Microsoft.Azure.WebJobs/3.0.42) |  | GitHub [3.0.42](https://github.com/Azure/azure-webjobs-sdk/tree/v3.0.18/src/Microsoft.Azure.WebJobs) |
@@ -570,7 +570,7 @@
 | Microsoft.Azure.Functions.Analyzers | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Analyzers/1.0.0) |  |  |
 | Microsoft.Azure.Functions.Authentication.WebAssembly | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Authentication.WebAssembly/1.0.0)<br>NuGet [1.0.1-preview](https://www.nuget.org/packages/Microsoft.Azure.Functions.Authentication.WebAssembly/1.0.1-preview) |  |  |
 | Microsoft.Azure.Functions.Worker | NuGet [2.50.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker/2.50.0) |  |  |
-| Microsoft.Azure.Functions.Worker.ApplicationInsights | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ApplicationInsights/2.0.0) |  |  |
+| Microsoft.Azure.Functions.Worker.ApplicationInsights | NuGet [2.50.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ApplicationInsights/2.50.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Core | NuGet [2.50.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Core/2.50.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Abstractions | NuGet [1.3.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Abstractions/1.3.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.ApplicationInsights | NuGet [1.0.0-preview4](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.ApplicationInsights/1.0.0-preview4) |  |  |
@@ -595,8 +595,8 @@
 | Microsoft.Azure.Functions.Worker.Extensions.Timer | NuGet [4.3.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Timer/4.3.1) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Warmup | NuGet [4.0.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Warmup/4.0.2) |  |  |
 | Microsoft.Azure.Functions.Worker.Grpc | NuGet [2.50.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Grpc/2.50.0) |  |  |
-| Microsoft.Azure.Functions.Worker.ItemTemplates | NuGet [4.0.5303](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ItemTemplates/4.0.5303) |  |  |
-| Microsoft.Azure.Functions.Worker.ProjectTemplates | NuGet [4.0.5303](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ProjectTemplates/4.0.5303) |  |  |
+| Microsoft.Azure.Functions.Worker.ItemTemplates | NuGet [4.0.5331](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ItemTemplates/4.0.5331) |  |  |
+| Microsoft.Azure.Functions.Worker.ProjectTemplates | NuGet [4.0.5331](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ProjectTemplates/4.0.5331) |  |  |
 | Microsoft.Azure.Functions.Worker.Sdk | NuGet [2.0.6](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk/2.0.6) |  |  |
 | Microsoft.Azure.Functions.Worker.Sdk.Analyzers | NuGet [1.2.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk.Analyzers/1.2.2) |  |  |
 | Microsoft.Azure.Functions.Worker.Sdk.Generators | NuGet [1.3.6](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk.Generators/1.3.6) |  |  |

@@ -2,7 +2,7 @@
 title: "Built-in reference types"
 description: "Learn about reference types that have C# keywords you can use to declare them."
 ms.date: 10/07/2025
-f1_keywords: 
+f1_keywords:
   - "object_CSharpKeyword"
   - "object"
   - "delegate_CSharpKeyword"
@@ -11,7 +11,7 @@ f1_keywords:
   - "string"
   - "string_CSharpKeyword"
   - "Utf8StringLiteral_CSharpKeyword"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "object keyword [C#]"
   - "delegate keyword [C#]"
   - "function pointers [C#]"
@@ -221,7 +221,7 @@ Delegate combination or removal fails with a runtime exception when the delegate
 ```csharp
 Action<string> stringAction = str => {};
 Action<object> objectAction = obj => {};
-  
+
 // Valid due to implicit reference conversion of
 // objectAction to Action<string>, but might fail
 // at run time.
@@ -233,7 +233,7 @@ You can create a delegate with the correct runtime type by creating a new delega
 ```csharp
 Action<string> stringAction = str => {};
 Action<object> objectAction = obj => {};
-  
+
 // Creates a new delegate instance with a runtime type of Action<string>.
 Action<string> wrappedObjectAction = new Action<string>(objectAction);
 
@@ -290,7 +290,6 @@ For more information, see the following sections of the [C# language specificati
 - [Events](../../programming-guide/events/index.md)
 - [Using Type dynamic](../../advanced-topics/interop/using-type-dynamic.md)
 - [Best Practices for Using Strings](../../../standard/base-types/best-practices-strings.md)
-- [Basic String Operations](../../../standard/base-types/basic-string-operations.md)
 - [Creating New Strings](../../../standard/base-types/creating-new.md)
 - [Type-testing and cast operators](../operators/type-testing-and-cast.md)
 - [How to safely cast using pattern matching and the as and is operators](../../fundamentals/tutorials/safely-cast-using-pattern-matching-is-and-as-operators.md)

@@ -2,6 +2,7 @@
 title: Threading config settings
 description: Learn about the settings that configure threading for .NET apps.
 ms.date: 11/04/2021
+ai-usage: ai-assisted
 ---
 # Runtime configuration options for threading
 
@@ -265,3 +266,41 @@ Project file:
 
 </Project>
 ```
+
+## Default stack size for new threads
+
+- Configures the default stack size for threads created by <xref:System.Threading.Thread> and other APIs that don't specify an explicit stack size. The value is interpreted as a hexadecimal number representing bytes. This setting doesn't affect the main application thread.
+- If not specified, the default stack size is determined by the operating system.
+
+| | Setting name | Values | Version introduced |
+| - | - | - | - |
+| **runtimeconfig.json** | `System.Threading.DefaultStackSize` | A hexadecimal integer value representing stack size in bytes. | .NET 10 |
+| **MSBuild property** | N/A | N/A | N/A |
+| **Environment variable** | `DOTNET_Thread_DefaultStackSize` | A hexadecimal integer value representing stack size in bytes. | .NET 10 |
+
+### Examples
+
+*runtimeconfig.json* file:
+
+```json
+{
+   "runtimeOptions": {
+      "configProperties": {
+         "System.Threading.DefaultStackSize": "0x100000"
+      }
+   }
+}
+```
+
+*runtimeconfig.template.json* file:
+
+```json
+{
+   "configProperties": {
+      "System.Threading.DefaultStackSize": "0x100000"
+   }
+}
+```
+
+> [!NOTE]
+> This setting doesn't affect threads that explicitly specify a stack size at creation.

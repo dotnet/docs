@@ -27,7 +27,9 @@ namespace SerializeOnlyWithOptions
         {
             string jsonString;
             WeatherForecast weatherForecast = new()
-                { Date = DateTime.Parse("2019-08-01"), TemperatureCelsius = 25, Summary = "Hot" };
+                { Date = DateTime.Parse("2019-08-01"),
+                  TemperatureCelsius = 25,
+                  Summary = "Hot" };
 
             // Serialize using TypeInfo<TValue> provided by the context
             // and options specified by [JsonSourceGenerationOptions].

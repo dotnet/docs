@@ -509,6 +509,11 @@ items:
       CS0182, CS0591, CS0599, CS0617, CS0633, CS0643, CS0655, CS0839, CS1016, CS1739,
       CS1740, CS1742, CS1744, CS1746, CS7036, CS7067, CS8196, CS8324, CS8861, CS8905,
       CS8943, CS8944, CS8945, CS8948, CS8949, CS8950, CS8951, CS8964, CS8965, CS8966
+  - name: Generic type parameters and type arguments
+    href: ./compiler-messages/generic-type-parameters-errors.md
+    displayName: >
+    generic, type parameter, type argument, constraint,
+    CS0304, CS9338
   - name: asynchronous methods
     href: ./compiler-messages/async-await-errors.md
     displayName: >
@@ -963,8 +968,6 @@ items:
       href: ../misc/cs0281.md
     - name: CS0283
       href: ../misc/cs0283.md
-    - name: CS0304
-      href: ./compiler-messages/cs0304.md
     - name: CS0305
       href: ../misc/cs0305.md
     - name: CS0306

@@ -143,6 +143,82 @@ If you no longer need them, delete the Azure OpenAI resource and GPT-4 model dep
 
 :::zone-end
 
+## Pass data to AI functions
+
+When creating AI functions, you often need to access contextual data beyond the parameters provided by the AI model. The `Microsoft.Extensions.AI` library provides several mechanisms to pass data to function delegates.
+
+### Access function arguments
+
+You can access all function arguments, including additional context data, by adding an <xref:Microsoft.Extensions.AI.AIFunctionArguments> parameter to your function delegate.
+
+The `AIFunctionArguments` type provides:
+
+- A dictionary of named arguments supplied by the AI model.
+- A `Context` property for passing loosely-typed additional data.
+- A `Services` property for accessing dependency injection services.
+
+The following example shows how to use `AIFunctionArguments`:
+
+:::code language="csharp" source="snippets/function-calling/openai/AdvancedDataPassing.cs" id="UsingAIFunctionArguments":::
+
+Parameters of type `AIFunctionArguments` aren't included in the JSON schema sent to the AI model because they're supplied by your code, not by the AI.
+
+### Access dependency injection services
+
+Functions can access services from a dependency injection container by adding an <xref:System.IServiceProvider> parameter. This is useful for accessing databases, HTTP clients, logging, or other services registered in your application's service collection.
+
+The following example shows how to use `IServiceProvider` in a function:
+
+:::code language="csharp" source="snippets/function-calling/openai/AdvancedDataPassing.cs" id="UsingIServiceProvider":::
+
+When invoking the function, provide the service provider via the `Services` property of `AIFunctionArguments`:
+
+```csharp
+var args = new AIFunctionArguments
+{
+    ["location"] = "Seattle",
+    Services = serviceProvider
+};
+```
+
+Parameters of type `IServiceProvider` aren't included in the JSON schema sent to the AI model. If the parameter is optional (has a default value), the `Services` property is allowed to be `null`. Otherwise, it must be non-`null`, or the invocation fails with an exception.
+
+### Access invocation context
+
+During function execution, you can access the current invocation context using the <xref:Microsoft.Extensions.AI.FunctionInvokingChatClient.CurrentContext> static property. This property provides access to:
+
+- Function metadata
+- Call ID
+- Chat history
+- Other contextual information about the current invocation
+
+The following example shows how to use `CurrentContext`:
+
+:::code language="csharp" source="snippets/function-calling/openai/AdvancedDataPassing.cs" id="UsingCurrentContext":::
+
+The `CurrentContext` value flows across async calls and is only available during function invocation.
+
+### Custom parameter binding
+
+For advanced scenarios, you can customize how function parameters are bound using <xref:Microsoft.Extensions.AI.AIFunctionFactoryOptions.ConfigureParameterBinding>. This allows you to:
+
+- Source parameter values from the `Context` dictionary instead of function arguments.
+- Exclude parameters from the JSON schema.
+- Implement custom binding logic.
+
+The following example shows how to bind a `userId` parameter from the `Context` dictionary:
+
+:::code language="csharp" source="snippets/function-calling/openai/AdvancedDataPassing.cs" id="CustomParameterBinding":::
+
+Custom parameter binding is useful when you need to pass trusted or validated data that shouldn't be supplied by the AI model.
+
+### Best practices
+
+- Use `IServiceProvider` for accessing application services like databases, logging, and HTTP clients.
+- Use the `Context` dictionary in `AIFunctionArguments` for passing loosely-typed contextual data.
+- Use custom parameter binding to exclude sensitive or trusted parameters from the AI model's JSON schema.
+- Data supplied via the arguments dictionary from an AI service should be considered unvalidated and untrusted. Use service provider or custom binding for trusted data.
+
 ## Next steps
 
 - [Quickstart - Build an AI chat app with .NET](build-chat-app.md)

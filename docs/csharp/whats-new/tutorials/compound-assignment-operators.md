@@ -7,7 +7,7 @@ ms.service: dotnet-csharp
 ms.topic: tutorial
 ms.date: 11/14/2025
 ai-usage: ai-assisted
-#customer intent: As a C# developer, I want implement user-defined instance compound assignment operators so that my algorithms are more efficient.
+#customer intent: As a C# developer, I want to implement user-defined instance compound assignment operators so that my algorithms are more efficient.
 ---
 # Tutorial: Create compound assignment operators
 
@@ -20,7 +20,7 @@ a += b;
 Was expanded to the following code:
 
 ```csharp
-// compiler generated code prior to C# 13:
+// compiler-generated code prior to C# 13:
 var tmp = a + b;
 a = tmp;
 ```
@@ -35,8 +35,8 @@ In this tutorial, you:
 >
 > * Run the starting sample.
 > * Identify bottlenecks in the code.
-> * Implement compound assignment operators
-> * Analyze completed sample
+> * Implement new compound assignment operators.
+> * Analyze the completed sample.
 
 ## Prerequisites
 
@@ -133,7 +133,7 @@ The new compound assignment operators are shown in the following code:
 :::code language="csharp" source="./snippets/CompoundAssignment/GateAttendance.cs" id="CompoundAssignmentOperators":::
 
 > [!NOTE]
-> Developers familiar with C++ might wonder why only one `++` or `--` operator is required. The compiler generates the code to use either the expression before or after modification as the return value. The compiler generated code performs the assignment using either the original value or the modified value based on whether pre-increment (`++x`) or post-increment (`x++`) was called.
+> Developers familiar with C++ might wonder why only one `++` or `--` operator is required. The compiler generates the code to use either the expression before or after modification as the return value. The compiler-generated code performs the assignment using either the original value or the modified value based on whether pre-increment (`++x`) or post-increment (`x++`) was called.
 
 ## Analyze finished sample
 
@@ -152,7 +152,7 @@ This allocation reduction translates to real performance benefits:
 
 The performance improvement becomes even more significant in production applications where similar patterns occur at much larger scales—imagine tracking millions of transactions, updating thousands of counters, or processing high-frequency data streams.
 
-Try identifying other opportunities for compound assignment operators in the codebase. Look for patterns where you have traditional assignment operations like `gates.MainFloorGates[1] = gates.MainFloorGates[1] + 4` and consider whether they could benefit from compound assignment syntax. While some of these operations are already using `+=` in the simulation code, the principle applies to any scenario where you repeatedly modify objects rather than creating new instances.
+Try identifying other opportunities for compound assignment operators in the codebase. Look for patterns where you use traditional assignment operations like `gates.MainFloorGates[1] = gates.MainFloorGates[1] + 4` and consider whether they could benefit from compound assignment syntax. While some of these operations are already using `+=` in the simulation code, the principle applies to any scenario where you repeatedly modify objects rather than creating new instances.
 
 As a final experiment, change the `GateAttendance` type from a `record class` to a `record struct`. It's a different optimization, and it works in this simulation because the struct has a small memory footprint. Copying a `GateAttendance` struct isn't an expensive operation. Even so, you achieve small improvements.
 

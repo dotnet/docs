@@ -4,10 +4,8 @@ description: "List of possible resources for compiler errors and warnings that h
 ms.date: 05/23/2025
 f1_keywords:
   - "CS0190"
-  - "CS0224"
   - "CS0257"
   - "CS0595"
-  - "CS0630"
   - "CS0847"
   - "CS0856"
   - "CS0857"
@@ -339,9 +337,7 @@ f1_keywords:
   - "CS8700"
   - "CS8701"
   - "CS8702"
-  - "CS8705"
   - "CS8707"
-  - "CS8711"
   - "CS8712"
   - "CS8715"
   - "CS8716"
@@ -394,7 +390,6 @@ f1_keywords:
   - "CS8851"
   - "CS8852"
   - "CS8853"
-  - "CS8854"
   - "CS8855"
   - "CS8856"
   - "CS8857"
@@ -537,10 +532,6 @@ f1_keywords:
   - "CS9095"
   - "CS9096"
   - "CS9097"
-# C# 14 errors begin here
-  - "CS9333"
-  - "CS9334"
-  - "CS9338"
 helpviewer_keywords:
   - "errors [C#], additional information"
 ---

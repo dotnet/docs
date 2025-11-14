@@ -100,6 +100,56 @@ You can customize image generation by providing other options such as size, resp
 - <xref:Microsoft.Extensions.AI.ImageGenerationOptions.RawRepresentationFactory>: The callback that creates the raw representation of the image generation options from an underlying implementation.
 - <xref:Microsoft.Extensions.AI.ImageGenerationOptions.ResponseFormat>: Options are <xref:Microsoft.Extensions.AI.ImageGenerationResponseFormat.Uri>, <xref:Microsoft.Extensions.AI.ImageGenerationResponseFormat.Data>, and <xref:Microsoft.Extensions.AI.ImageGenerationResponseFormat.Hosted>.
 
+## Use hosting integration
+
+When building web applications or hosted services, you can integrate image generation using dependency injection and hosting patterns. This approach provides better lifecycle management, configuration integration, and testability.
+
+### Configure hosting services
+
+The `Aspire.Azure.AI.OpenAI` package provides extension methods to register Azure OpenAI services with your application's dependency injection container:
+
+1. Add the necessary packages to your web application:
+
+   ```dotnetcli
+   dotnet add package Aspire.Azure.AI.OpenAI --prerelease
+   dotnet add package Azure.AI.OpenAI
+   dotnet add package Microsoft.Extensions.AI.OpenAI --prerelease
+   ```
+
+1. Configure the Azure OpenAI client and image generator in your `Program.cs` file:
+
+   :::code language="csharp" source="snippets/text-to-image/hosting/TextToImageHosting/Program.cs" id="SnippetSetup":::
+
+   The `AddAzureOpenAIClient` method registers the Azure OpenAI client with dependency injection. The connection string (named `"openai"`) is retrieved from configuration, typically from `appsettings.json` or environment variables:
+
+   ```json
+   {
+     "ConnectionStrings": {
+       "openai": "Endpoint=https://your-resource-name.openai.azure.com/;Key=your-api-key"
+     }
+   }
+   ```
+
+1. Register the `IImageGenerator` service with dependency injection:
+
+   :::code language="csharp" source="snippets/text-to-image/hosting/TextToImageHosting/Program.cs" id="SnippetAddImageGenerator":::
+
+   The `AddImageGenerator` method registers the image generator as a singleton service that can be injected into controllers, services, or minimal API endpoints.
+
+### Use the image generator in endpoints
+
+Once registered, you can inject `IImageGenerator` into your endpoints or services:
+
+:::code language="csharp" source="snippets/text-to-image/hosting/TextToImageHosting/Program.cs" id="SnippetUseImageGenerator":::
+
+This hosting approach provides several benefits:
+
+- **Configuration management**: Connection strings and settings are managed through the .NET configuration system.
+- **Dependency injection**: The image generator is available throughout your application via DI.
+- **Lifecycle management**: Services are properly initialized and disposed of by the hosting infrastructure.
+- **Testability**: Mock implementations can be easily substituted for testing.
+- **Integration with .NET Aspire**: When using .NET Aspire, the `AddAzureOpenAIClient` method integrates with service discovery and telemetry.
+
 ## Best practices
 
 When implementing text-to-image generation in your applications, consider these best practices:

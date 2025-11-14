@@ -26,7 +26,7 @@ The following table is a list of currently supported .NET releases and the versi
 |--------|----------|
 | 43     | 10, 9, 8 |
 | 42     | 10, 9, 8 |
-| 41     | 9, 8     |
+| 41     | 10, 9, 8 |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 

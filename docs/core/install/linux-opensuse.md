@@ -46,19 +46,21 @@ sudo chown root:root /etc/zypp/repos.d/microsoft-prod.repo
 
 # [.NET 10](#tab/dotnet10)
 
-[!INCLUDE [linux-release-wait](includes/linux-release-wait.md)]
-
 [!INCLUDE [linux-install-package-manager-x64-arm64](includes/linux-install-package-manager-x64-arm64.md)]
 
 [!INCLUDE [linux-zyp-install-100](includes/linux-install-100-zyp.md)]
 
 # [.NET 9](#tab/dotnet9)
 
+openSUSE Leap 16 is newly supported with .NET. The packages for .NET 9 aren't published yet.
+
 [!INCLUDE [linux-install-package-manager-x64-only](includes/linux-install-package-manager-x64-only.md)]
 
 [!INCLUDE [linux-zyp-install-90](includes/linux-install-90-zyp.md)]
 
 # [.NET 8](#tab/dotnet8)
+
+openSUSE Leap 16 is newly supported with .NET. The packages for .NET 8 aren't published yet.
 
 [!INCLUDE [linux-install-package-manager-x64-only](includes/linux-install-package-manager-x64-only.md)]
 

@@ -27,7 +27,7 @@ In this tutorial, you:
 ## Prerequisites
 
 - The .NET 10 SDK. Download it from the [.NET download site](https://dotnet.microsoft.com/download/dotnet/10.0).
-- Visual Studio 2026 (preview). Download it from the [Visual Studio insiders page](https://visualstudio.microsoft.com/insiders/).
+- Visual Studio 2026. Download it from the [Visual Studio insiders page](https://visualstudio.microsoft.com).
 
 ## Create the sample application
 

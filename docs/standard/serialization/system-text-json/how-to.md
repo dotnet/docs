@@ -116,10 +116,8 @@ Here's an example prompt you can use in Visual Studio Code Copilot Chat to gener
 
 ```copilot-prompt
 I have a variable named weatherForecast of type WeatherForecast.
-Before serializing, generate C# code that adds a new property "FeelsLikeFahrenheit" to this object, calculated from TemperatureCelsius.
-Then serialize the updated object to an indented JSON string using System.Text.Json and write the result to a file named "output.json".
+Serialize the variable using System.Text.Json and write the result directly to a file stream called "output.json" with the JSON indented for pretty formatting.
 Ensure the code includes all necessary using directives and compiles without errors.
-Show example output.
 ```
 
 Review Copilot's suggestions before applying them.

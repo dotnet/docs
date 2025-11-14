@@ -21,7 +21,7 @@ adobe-target: true
 This article shows how to use the <xref:System.Text.Json?displayProperty=fullName> namespace to serialize to JavaScript Object Notation (JSON). If you're porting existing code from `Newtonsoft.Json`, see [How to migrate to `System.Text.Json`](migrate-from-newtonsoft.md).
 
 > [!TIP]
-> You can use AI assistance to [serialize to JSON](#use-ai-to-serialize-nested-and-polymorphic-types).
+> You can use AI assistance to [serialize to JSON](#use-ai-to-serialize-to-json).
 
 To write JSON to a string or to a file, call the <xref:System.Text.Json.JsonSerializer.Serialize%2A?displayProperty=nameWithType> method.
 
@@ -49,7 +49,7 @@ The preceding examples use type inference for the type being serialized. An over
 :::code language="csharp" source="snippets/how-to/csharp/SerializeWithGenericParameter.cs" highlight="23":::
 :::code language="vb" source="snippets/how-to/vb/RoundtripToString.vb" id="SerializeWithGenericParameter":::
 
-You can also use AI to generate serialization code for you. For instructions, see the [Use AI](#use-ai-to-serialize-nested-and-polymorphic-types) section in this article.
+You can also use AI to generate serialization code for you. For instructions, see the [Use AI](#use-ai-to-serialize-to-json) section in this article.
 
 ## Serialization behavior
 
@@ -108,20 +108,17 @@ Starting in .NET 9, you can also customize the indent character and size using <
 > [!TIP]
 > If you use `JsonSerializerOptions` repeatedly with the same options, don't create a new `JsonSerializerOptions` instance each time you use it. Reuse the same instance for every call. For more information, see [Reuse JsonSerializerOptions instances](configure-options.md#reuse-jsonserializeroptions-instances).
 
-## Use AI to serialize nested and polymorphic types
+## Use AI to serialize to JSON
 
-You can use AI tools, such as GitHub Copilot, to generate code that serializes objects to JSON using `System.Text.Json`.
-For example, you can prompt Copilot to generate code that handles nested and polymorphic types, which is useful for creating examples or test data for hierarchical object structures.
+You can use AI tools, such as GitHub Copilot, to generate code that uses `System.Text.Json` to serialize to JSON. You can customize the prompt to fit your object fields and serialization needs.
 
 Here's an example prompt you can use in Visual Studio Code Copilot Chat to generate serialization code.
 
 ```copilot-prompt
-Generate C# code using System.Text.Json to serialize a collection of Employee objects
-1. Define classes: Employee (with Id, Name, Department, Vehicle), Department (Name, Code), Vehicle (base), Car (Doors), Motorcycle (HasSidecar), Bicycle (IsElectric).
-2. Use a custom JsonConverter with a $type discriminator in the output. The custom converter must implement the correct method signatures for JsonConverter<T>.
-3. Create a List<Employee> with sample data (one Car, one Motorcycle, one Bicycle).
-4. Serialize the list to a JSON string.
-5. Provide the complete, compiling code including all using directives, class definitions, converter implementations, and serialization logic.
+I have a variable named weatherForecast of type WeatherForecast.
+Before serializing, generate C# code that adds a new property "FeelsLikeFahrenheit" to this object, calculated from TemperatureCelsius.
+Then serialize the updated object to an indented JSON string using System.Text.Json and write the result to a file named "output.json".
+Ensure the code includes all necessary using directives and compiles without errors.
 Show example output.
 ```
 

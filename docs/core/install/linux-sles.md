@@ -3,7 +3,7 @@ title: Install .NET on SUSE Enterprise Linux
 description: Learn about which versions of .NET SDK and .NET Runtime are supported, and how to install .NET on SUSE Enterprise Linux (SLES).
 author: adegeo
 ms.author: adegeo
-ms.date: 11/07/2025
+ms.date: 11/14/2025
 ms.custom: linux-related-content
 ---
 
@@ -43,19 +43,21 @@ sudo rpm -Uvh https://packages.microsoft.com/config/sles/16/packages-microsoft-p
 
 # [.NET 10](#tab/dotnet10)
 
-[!INCLUDE [linux-release-wait](includes/linux-release-wait.md)]
-
 [!INCLUDE [linux-install-package-manager-x64-arm64](includes/linux-install-package-manager-x64-arm64.md)]
 
 [!INCLUDE [linux-zyp-install-100](includes/linux-install-100-zyp.md)]
 
 # [.NET 9](#tab/dotnet9)
 
+SUSE Enterprise Linux 16 is newly supported with .NET. The packages for .NET 9 aren't published yet.
+
 [!INCLUDE [linux-install-package-manager-x64-only](includes/linux-install-package-manager-x64-only.md)]
 
 [!INCLUDE [linux-zyp-install-90](includes/linux-install-90-zyp.md)]
 
 # [.NET 8](#tab/dotnet8)
+
+SUSE Enterprise Linux 16 is newly supported with .NET. The packages for .NET 8 aren't published yet.
 
 [!INCLUDE [linux-install-package-manager-x64-only](includes/linux-install-package-manager-x64-only.md)]
 
@@ -71,7 +73,7 @@ sudo rpm -Uvh https://packages.microsoft.com/config/sles/16/packages-microsoft-p
 sudo rpm -Uvh https://packages.microsoft.com/config/sles/15/packages-microsoft-prod.rpm
 ```
 
-Currently, the SLES 15 Microsoft repository setup package installs the *microsoft-prod.repo* file to the wrong directory, preventing zypper from finding the .NET packages. To fix this problem, create a symlink in the correct directory.
+Currently, the SLES 15 Microsoft repository setup package installs the `microsoft-prod.repo` file to the wrong directory, preventing zypper from finding the .NET packages. To fix this problem, create a symlink in the correct directory.
 
 ```bash
 sudo ln -s /etc/yum.repos.d/microsoft-prod.repo /etc/zypp/repos.d/microsoft-prod.repo
@@ -103,7 +105,7 @@ sudo ln -s /etc/yum.repos.d/microsoft-prod.repo /etc/zypp/repos.d/microsoft-prod
 
 ## Troubleshoot the package manager
 
-This section provides information on common errors you may get while using the package manager to install .NET.
+This section provides information on common errors you might get while using the package manager to install .NET.
 
 ### Unable to find package
 
@@ -115,13 +117,13 @@ This section provides information on common errors you may get while using the p
 
 ## Dependencies
 
-When you install with a package manager, these libraries are installed for you. But, if you manually install .NET or you publish a self-contained app, you'll need to make sure these libraries are installed:
+When you install with a package manager, these libraries are installed for you. But, if you manually install .NET or you publish a self-contained app, you must make sure these libraries are installed:
 
 - krb5
 - libicu
 - libopenssl1_1
 
-If the target runtime environment's OpenSSL version is 1.1 or newer, you'll need to install `compat-openssl10`.
+If the target runtime environment's OpenSSL version is 1.1 or newer, install the `compat-openssl10` package.
 
 Dependencies can be installed with the `zypper install` command. The following snippet demonstrates installing the `krb5` library:
 

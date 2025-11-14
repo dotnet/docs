@@ -1,7 +1,7 @@
 ---
 title: "How to serialize JSON in C#"
 description: "Learn how to use the System.Text.Json namespace to serialize to JSON in .NET. Includes sample code."
-ms.date: 02/11/2025
+ms.date: 11/20/2025
 no-loc: [System.Text.Json, Newtonsoft.Json]
 dev_langs:
   - "csharp"
@@ -108,16 +108,21 @@ Starting in .NET 9, you can also customize the indent character and size using <
 > [!TIP]
 > If you use `JsonSerializerOptions` repeatedly with the same options, don't create a new `JsonSerializerOptions` instance each time you use it. Reuse the same instance for every call. For more information, see [Reuse JsonSerializerOptions instances](configure-options.md#reuse-jsonserializeroptions-instances).
 
-## Use AI to serialize to JSON
+## Use AI to serialize nested and polymorphic types
 
-You can use AI tools, such as GitHub Copilot, to generate code that uses `System.Text.Json` to serialize to JSON. You can customize the prompt to use object fields that suit your requirements.
+You can use AI tools, such as GitHub Copilot, to generate code that serializes objects to JSON `System.Text.Json`. You can use it for nested and polymorphic objects.
+For example, you can prompt Copilot to generate code that handles nested and polymorphic types, which is useful for creating examples or test data for hierarchical object structures.
 
-The following text shows an example prompt for Copilot Chat:
+Here's an example prompt you can use in Visual Studio Code Copilot Chat to migrate a solution.
 
 ```copilot-prompt
-Generate code to use System.Text.Json to serialize an object to a JSON string.
-The object contains the following fields: FirstName (string), Lastname (string), Age (int).
-Provide example output.
+Generate C# code using System.Text.Json to serialize a collection of Employee objects.
+1. Define classes: Employee (with Id, Name, Department, Vehicle), Department (Name, Code), Vehicle (base), Car (Doors), Motorcycle (HasSidecar), Bicycle (IsElectric).
+2. Use a custom JsonConverter with a $type discriminator in the output. The custom converter must implement the correct method signatures for JsonConverter<T>.
+3. Create a List<Employee> with sample data (one Car, one Motorcycle, one Bicycle).
+4. Serialize the list to a JSON string.
+5. Provide the complete, compiling code including all using directives, class definitions, converter implementations, and serialization logic. 
+Show example output.
 ```
 
 Review Copilot's suggestions before applying them.
@@ -127,4 +132,4 @@ For more information about GitHub Copilot, see GitHub's [FAQs](https://github.co
 ## See also
 
 - [GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states)
-- [GitHub Copilot in VS Code](https://code.visualstudio.com/docs/copilot/overview)
+- [GitHub Copilot in Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview)

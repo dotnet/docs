@@ -127,7 +127,7 @@ dotnet-gcdump collect [-h|--help] [-p|--process-id <pid>] [-o|--output <gcdump-f
   
   By default, dotnet-gcdump listens at the specified address. You can request dotnet-gcdump to connect instead by appending `,connect` after the address. For example, `--diagnostic-port /foo/tool1.socket,connect` will connect to a .NET runtime process that's listening to the `/foo/tool1.socket` Unix domain socket.
 
-- **`--dsrouter {ios|ios-sim|android|android-emu}**
+- **`--dsrouter {ios|ios-sim|android|android-emu}`**
 
   Starts [dotnet-dsrouter](dotnet-dsrouter.md) and connects to it. Requires [dotnet-dsrouter](dotnet-dsrouter.md) to be installed. Run `dotnet-dsrouter -h` for more information.
 

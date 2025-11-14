@@ -49,7 +49,7 @@ sudo rpm -Uvh https://packages.microsoft.com/config/sles/16/packages-microsoft-p
 
 # [.NET 9](#tab/dotnet9)
 
-SUSE Enterprise Linux 16 is newly supported with .NET. The packages for .NET 9 haven't been published yet.
+SUSE Enterprise Linux 16 is newly supported with .NET. The packages for .NET 9 aren't published yet.
 
 [!INCLUDE [linux-install-package-manager-x64-only](includes/linux-install-package-manager-x64-only.md)]
 
@@ -57,7 +57,7 @@ SUSE Enterprise Linux 16 is newly supported with .NET. The packages for .NET 9 h
 
 # [.NET 8](#tab/dotnet8)
 
-SUSE Enterprise Linux 16 is newly supported with .NET. The packages for .NET 8 haven't been published yet.
+SUSE Enterprise Linux 16 is newly supported with .NET. The packages for .NET 8 aren't published yet.
 
 [!INCLUDE [linux-install-package-manager-x64-only](includes/linux-install-package-manager-x64-only.md)]
 

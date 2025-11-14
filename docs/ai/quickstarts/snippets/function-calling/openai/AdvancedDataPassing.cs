@@ -1,20 +1,22 @@
-// <SnippetUsingAIFunctionArguments>
 using Microsoft.Extensions.AI;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using OpenAI;
 
-// Function that accepts AIFunctionArguments to access all arguments
+// <SnippetUsingAIFunctionArguments>
 AIFunction functionWithArgs = AIFunctionFactory.Create(
     (AIFunctionArguments args) =>
     {
-        // Access named parameters from the arguments dictionary
+        // Access named parameters from the arguments dictionary.
         string location = args["location"]?.ToString() ?? "Unknown";
         string unit = args["unit"]?.ToString() ?? "celsius";
-        
-        // Access the Context dictionary for additional data
+
+        // Access the Context dictionary for additional data.
         if (args.Context.TryGetValue("userId", out var userId))
         {
             Console.WriteLine($"Getting weather for user: {userId}");
         }
-        
+
         return $"Weather in {location}: 22°{unit}";
     },
     name: "get_weather",
@@ -22,15 +24,12 @@ AIFunction functionWithArgs = AIFunctionFactory.Create(
 // </SnippetUsingAIFunctionArguments>
 
 // <SnippetUsingIServiceProvider>
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.AI;
-
-// Setup dependency injection
+// Set up dependency injection.
 var services = new ServiceCollection();
 services.AddSingleton<IWeatherService, WeatherService>();
 IServiceProvider serviceProvider = services.BuildServiceProvider();
 
-// Function that accepts IServiceProvider to resolve dependencies
+// Function that accepts IServiceProvider to resolve dependencies.
 AIFunction functionWithDI = AIFunctionFactory.Create(
     (string location, IServiceProvider services) =>
     {
@@ -40,7 +39,7 @@ AIFunction functionWithDI = AIFunctionFactory.Create(
     name: "get_weather",
     description: "Get the current weather");
 
-// When invoking, provide the service provider
+// When invoking, provide the service provider.
 var args = new AIFunctionArguments
 {
     ["location"] = "Seattle",
@@ -49,27 +48,25 @@ var args = new AIFunctionArguments
 // </SnippetUsingIServiceProvider>
 
 // <SnippetUsingCurrentContext>
-using Microsoft.Extensions.AI;
-
-// Function that uses CurrentContext to access invocation metadata
+// Function that uses CurrentContext to access invocation metadata.
 AIFunction functionWithContext = AIFunctionFactory.Create(
     (string location) =>
     {
-        // Access the current function invocation context
+        // Access the current function invocation context.
         var context = FunctionInvokingChatClient.CurrentContext;
-        
+
         if (context != null)
         {
             Console.WriteLine($"Function: {context.Function.Metadata.Name}");
             Console.WriteLine($"Call ID: {context.CallId}");
-            
-            // Access chat history or other context data
+
+            // Access chat history or other context data.
             foreach (var message in context.ChatHistory)
             {
                 Console.WriteLine($"Previous message: {message.Text}");
             }
         }
-        
+
         return $"Weather in {location}: Sunny, 75°F";
     },
     name: "get_weather",
@@ -77,40 +74,37 @@ AIFunction functionWithContext = AIFunctionFactory.Create(
 // </SnippetUsingCurrentContext>
 
 // <SnippetCustomParameterBinding>
-using System.Reflection;
-using Microsoft.Extensions.AI;
-
-// Custom parameter binding to source data from Context dictionary
+// Custom parameter binding to source data from Context dictionary.
 var options = new AIFunctionFactoryOptions
 {
     ConfigureParameterBinding = (ParameterInfo parameter) =>
     {
-        // Bind 'userId' parameter from Context instead of arguments
+        // Bind 'userId' parameter from Context instead of arguments.
         if (parameter.Name == "userId")
         {
             return new AIFunctionFactoryOptions.ParameterBindingOptions
             {
-                // Custom binding logic
+                // Custom binding logic.
                 BindParameter = (paramInfo, args) =>
                 {
-                    // Get value from Context dictionary
+                    // Get value from Context dictionary.
                     if (args.Context.TryGetValue("userId", out var value))
                     {
                         return value;
                     }
-                    
-                    // Return default if not found
+
+                    // Return default if not found.
                     return paramInfo.HasDefaultValue ? paramInfo.DefaultValue : null;
                 }
             };
         }
-        
-        // Use default binding for other parameters
+
+        // Use default binding for other parameters.
         return default;
     }
 };
 
-// Create function with custom parameter binding
+// Create function with custom parameter binding.
 AIFunction functionWithCustomBinding = AIFunctionFactory.Create(
     method: (string location, string userId) =>
     {
@@ -119,7 +113,7 @@ AIFunction functionWithCustomBinding = AIFunctionFactory.Create(
     },
     options: options);
 
-// When invoking, pass userId via Context
+// When invoking, pass userId via Context.
 var customArgs = new AIFunctionArguments
 {
     ["location"] = "Portland",
@@ -127,26 +121,12 @@ var customArgs = new AIFunctionArguments
 };
 // </SnippetCustomParameterBinding>
 
-// When invoking, pass userId via Context
-var customArgs = new AIFunctionArguments
-{
-    ["location"] = "Portland",
-    Context = { ["userId"] = "user123" }
-};
-// </SnippetCustomParameterBinding>
-
-// <SnippetCompleteExample>
-using Microsoft.Extensions.AI;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using OpenAI;
-
-// Setup services
+// Set up services.
 var services = new ServiceCollection();
 services.AddSingleton<IUserContext, UserContext>();
 IServiceProvider provider = services.BuildServiceProvider();
 
-// Configure AI client
+// Configure AI client.
 IConfigurationRoot config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
 string? model = config["ModelName"];
 string? key = config["OpenAIKey"];
@@ -156,7 +136,7 @@ IChatClient client =
     .UseFunctionInvocation()
     .Build();
 
-// Create function with dependency injection
+// Create function with dependency injection.
 var chatOptions = new ChatOptions
 {
     Tools = [AIFunctionFactory.Create(
@@ -170,13 +150,13 @@ var chatOptions = new ChatOptions
         "Get the current weather in a given location")]
 };
 
-// Prepare chat with service provider
+// Prepare chat with service provider.
 List<ChatMessage> chatHistory = [
     new(ChatRole.System, "You are a helpful weather assistant.")
 ];
 chatHistory.Add(new ChatMessage(ChatRole.User, "What's the weather in Boston?"));
 
-// Pass service provider when making the request
+// Pass service provider when making the request.
 var functionArgs = new AIFunctionArguments
 {
     Services = provider
@@ -184,10 +164,8 @@ var functionArgs = new AIFunctionArguments
 
 ChatResponse response = await client.GetResponseAsync(chatHistory, chatOptions);
 Console.WriteLine($"Response: {response.Text}");
-// </SnippetCompleteExample>
 
-// <SnippetSupportingTypes>
-// Supporting types for examples
+// Supporting types for examples.
 public interface IWeatherService
 {
     string GetWeather(string location);
@@ -210,4 +188,3 @@ public class UserContext : IUserContext
 {
     public string UserId { get; set; } = "default-user";
 }
-// </SnippetSupportingTypes>

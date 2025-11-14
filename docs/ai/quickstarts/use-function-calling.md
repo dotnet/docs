@@ -1,7 +1,7 @@
 ---
 title: Quickstart - Extend OpenAI using Tools and execute a local Function with .NET
 description: Create a simple chat app using OpenAI and extend the model to execute a local function.
-ms.date: 03/13/2025
+ms.date: 11/13/2025
 ms.topic: quickstart
 zone_pivot_groups: openai-library
 # CustomerIntent: As a .NET developer new to OpenAI, I want deploy and use sample code to interact to learn from the sample code how to extend the model using Tools.
@@ -132,17 +132,6 @@ The app uses the [`Microsoft.Extensions.AI`](https://www.nuget.org/packages/Micr
 
     The app prints the completion response from the AI model, which includes data provided by the .NET function. The AI model understood that the registered function was available and called it automatically to generate a proper response.
 
-:::zone target="docs" pivot="azure-openai"
-
-## Clean up resources
-
-If you no longer need them, delete the Azure OpenAI resource and GPT-4 model deployment.
-
-1. In the [Azure Portal](https://aka.ms/azureportal), navigate to the Azure OpenAI resource.
-1. Select the Azure OpenAI resource, and then select **Delete**.
-
-:::zone-end
-
 ## Pass data to AI functions
 
 When creating AI functions, you often need to access contextual data beyond the parameters provided by the AI model. The `Microsoft.Extensions.AI` library provides several mechanisms to pass data to function delegates.
@@ -154,7 +143,7 @@ You can access all function arguments, including additional context data, by add
 The `AIFunctionArguments` type provides:
 
 - A dictionary of named arguments supplied by the AI model.
-- A `Context` property for passing loosely-typed additional data.
+- A `Context` property for passing loosely typed additional data.
 - A `Services` property for accessing dependency injection services.
 
 The following example shows how to use `AIFunctionArguments`:
@@ -170,16 +159,6 @@ Functions can access services from a dependency injection container by adding an
 The following example shows how to use `IServiceProvider` in a function:
 
 :::code language="csharp" source="snippets/function-calling/openai/AdvancedDataPassing.cs" id="UsingIServiceProvider":::
-
-When invoking the function, provide the service provider via the `Services` property of `AIFunctionArguments`:
-
-```csharp
-var args = new AIFunctionArguments
-{
-    ["location"] = "Seattle",
-    Services = serviceProvider
-};
-```
 
 Parameters of type `IServiceProvider` aren't included in the JSON schema sent to the AI model. If the parameter is optional (has a default value), the `Services` property is allowed to be `null`. Otherwise, it must be non-`null`, or the invocation fails with an exception.
 
@@ -212,12 +191,16 @@ The following example shows how to bind a `userId` parameter from the `Context` 
 
 Custom parameter binding is useful when you need to pass trusted or validated data that shouldn't be supplied by the AI model.
 
-### Best practices
+:::zone target="docs" pivot="azure-openai"
 
-- Use `IServiceProvider` for accessing application services like databases, logging, and HTTP clients.
-- Use the `Context` dictionary in `AIFunctionArguments` for passing loosely-typed contextual data.
-- Use custom parameter binding to exclude sensitive or trusted parameters from the AI model's JSON schema.
-- Data supplied via the arguments dictionary from an AI service should be considered unvalidated and untrusted. Use service provider or custom binding for trusted data.
+## Clean up resources
+
+If you no longer need them, delete the Azure OpenAI resource and GPT-4 model deployment.
+
+1. In the [Azure Portal](https://aka.ms/azureportal), navigate to the Azure OpenAI resource.
+1. Select the Azure OpenAI resource, and then select **Delete**.
+
+:::zone-end
 
 ## Next steps
 

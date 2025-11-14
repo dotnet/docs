@@ -3,7 +3,7 @@ title: Install .NET on SUSE Enterprise Linux
 description: Learn about which versions of .NET SDK and .NET Runtime are supported, and how to install .NET on SUSE Enterprise Linux (SLES).
 author: adegeo
 ms.author: adegeo
-ms.date: 11/07/2025
+ms.date: 11/14/2025
 ms.custom: linux-related-content
 ---
 

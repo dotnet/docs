@@ -77,7 +77,3 @@ If you're parsing a sentence into individual words, you might end up with words 
 
  [!code-csharp[Conceptual.String.BasicOps#23](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.string.basicops/cs/replace1.cs#23)]
  [!code-vb[Conceptual.String.BasicOps#23](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.string.basicops/vb/replace1.vb#23)]
-
-## See also
-
-- [Basic String Operations](basic-string-operations.md)

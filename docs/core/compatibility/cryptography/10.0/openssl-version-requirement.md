@@ -11,7 +11,7 @@ Starting in .NET 10, OpenSSL 1.1.1 or later is required on Unix platforms where 
 
 ## Version introduced
 
-.NET 10 GA
+.NET 10
 
 ## Previous behavior
 

@@ -12,7 +12,7 @@ Setting `PublishTrimmed` or `PublishAot` to `true` in the project disables HTTP/
 
 ## Version introduced
 
-.NET 10 Preview 6
+.NET 10
 
 ## Previous behavior
 

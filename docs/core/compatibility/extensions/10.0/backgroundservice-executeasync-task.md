@@ -3,7 +3,6 @@ title: "Breaking change: BackgroundService runs all of ExecuteAsync as a Task"
 description: "Learn about the breaking change in .NET 10 where BackgroundService now runs the entirety of ExecuteAsync on a background thread instead of running the synchronous portion on the main thread."
 ms.date: 10/13/2025
 ai-usage: ai-assisted
-ms.custom: https://github.com/dotnet/runtime/issues/116181
 ---
 
 # BackgroundService runs all of ExecuteAsync as a Task

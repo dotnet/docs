@@ -12,7 +12,7 @@ All Arm64 SVE nonfaulting load APIs have been updated to include a `mask` parame
 
 ## Version introduced
 
-.NET 10 Preview 7
+.NET 10
 
 ## Previous behavior
 

@@ -2,7 +2,6 @@
 title: .NET SDK, MSBuild, and Visual Studio versioning
 description: Learn about the versioning relationship between the .NET SDK and MSBuild/VS.
 author: StephenBonikowsky
-ms.author: stebon
 ms.custom: updateeachrelease
 ms.date: 10/23/2025
 ---
@@ -61,7 +60,7 @@ The support timeframe for the SDK typically matches that of the Visual Studio ve
 | 8.0.4xx     | 17.11                         | Aug '24   | Nov '26<sup>2</sup> |
 | 9.0.1xx     | 17.12                         | Nov '24   | May '26             |
 | 9.0.2xx     | 17.13                         | Feb '25   | May '25             |
-| 9.0.3xx     | 17.14                         | May '25   | May '26             |
+| 9.0.3xx     | 17.14                         | May '25   | Nov '26             |
 | 10.0.1xx    | 18.0                          | Nov '25   | Nov '28             |
 
 > [!NOTE]

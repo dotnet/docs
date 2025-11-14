@@ -66,8 +66,6 @@ items:
                 href: core-libraries/10.0/sigterm-signal-handler.md
               - name: System.Linq.AsyncEnumerable included in core libraries
                 href: core-libraries/10.0/asyncenumerable.md
-              - name: YMM embedded rounding removed from AVX10.2
-                href: core-libraries/10.0/ymm-embedded-rounding.md
           - name: Cryptography
             items:
               - name: CompositeMLDsa updated to draft-08
@@ -124,6 +122,8 @@ items:
                 href: networking/10.0/uri-length-limits-removed.md
           - name: Reflection
             items:
+              - name: More restricted annotations on InvokeMember/FindMembers/DeclaredMembers
+                href: reflection/10/ireflect-damt-annotations.md
               - name: Type.MakeGenericSignatureType argument validation
                 href: reflection/10/makegeneric-signaturetype-validation.md
           - name: SDK and MSBuild
@@ -172,8 +172,6 @@ items:
                 href: sdk/10.0/nu1015-packagereference-version.md
               - name: PrunePackageReference privatizes direct prunable references
                 href: sdk/10.0/prune-packagereference-privateassets.md
-              - name: Version requirements for .NET 10 SDK
-                href: sdk/10.0/version-requirements.md
           - name: Serialization
             items:
               - name: XmlSerializer no longer ignores properties marked with ObsoleteAttribute

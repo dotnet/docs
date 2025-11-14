@@ -2,14 +2,14 @@
 title: What's new in .NET libraries for .NET 10
 description: Learn about the updates to the .NET libraries for .NET 10.
 titleSuffix: ""
-ms.date: 10/15/2025
+ms.date: 11/07/2025
 ai-usage: ai-assisted
 ms.update-cycle: 3650-days
 ---
 
 # What's new in .NET libraries for .NET 10
 
-This article describes new features in the .NET libraries for .NET 10. It's been updated for RC 2.
+This article describes new features in the .NET libraries for .NET 10.
 
 ## Cryptography
 
@@ -363,7 +363,7 @@ All of this is serialized as JSON in the <xref:System.IO.Pipelines.Pipe> (format
 
 ### Tensor enhancements
 
-The <xref:System.Numerics.Tensors> interface now includes a nongeneric interface, <xref:System.Numerics.Tensors.IReadOnlyTensor>, for operations like accessing <xref:System.Numerics.Tensors.IReadOnlyTensor.Lengths> and <xref:System.Numerics.Tensors.IReadOnlyTensor.Strides>. Slice operations no longer copy data, which improves performance. Additionally, you can access data nongenerically by boxing to `object` when performance isn't critical.
+The <xref:System.Numerics.Tensors> namespace now includes a nongeneric interface, <xref:System.Numerics.Tensors.IReadOnlyTensor>, for operations like accessing <xref:System.Numerics.Tensors.IReadOnlyTensor.Lengths> and <xref:System.Numerics.Tensors.IReadOnlyTensor.Strides>. Slice operations no longer copy data, which improves performance. Additionally, you can access data nongenerically by boxing to `object` when performance isn't critical.
 
 The tensor APIs are now stable and no longer marked as experimental. While the APIs still require referencing the [System.Numerics.Tensors](https://www.nuget.org/packages/System.Numerics.Tensors) NuGet package, they have been thoroughly reviewed and finalized for the .NET 10 release. The types take advantage of C# 14 extension operators to provide arithmetic operations when the underlying type `T` supports the operation. If `T` implements the relevant [generic math](../../../standard/generics/math.md) interfaces, for example, `IAdditionOperators<TSelf, TOther, TResult>` or `INumber<TSelf>`, the operation is supported. For example, `tensor + tensor` is available for a `Tensor<int>`, but isn't available for a `Tensor<bool>`.
 

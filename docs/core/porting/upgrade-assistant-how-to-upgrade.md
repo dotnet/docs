@@ -14,6 +14,8 @@ ms.date: 10/08/2024
 
 The focus of this article is to provide the basic steps to upgrade a project with .NET Upgrade Assistant. This involves initiating the upgrade and reviewing the results. Based on how complex your project is, you might be required to perform manual updates to your code.
 
+[!INCLUDE [github-copilot-suggestion](includes/github-copilot-suggestion.md)]
+
 Some project types have specific guidance on upgrading. For more information, see [Supported project types](upgrade-assistant-overview.md#supported-project-types).
 
 ## Prerequisites

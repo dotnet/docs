@@ -7,7 +7,7 @@ ai-usage: ai-assisted
 ---
 # dotnet package download
 
-> Applies to: ✔️ .NET 10 SDK and later versions.
+> Applies to: ✔️ .NET 10.0.2xx SDK and later versions.
 
 ## Name
 

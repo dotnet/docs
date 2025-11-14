@@ -12,7 +12,7 @@ The `dotnet package list` command now automatically performs a restore operation
 
 ## Version introduced
 
-.NET 10 Preview 4
+.NET 10
 
 ## Previous behavior
 

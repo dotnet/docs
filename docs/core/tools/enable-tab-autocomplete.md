@@ -5,6 +5,7 @@ author: adegeo
 ms.author: adegeo
 ms.topic: how-to
 ms.date: 01/14/2025
+ai-usage: ai-assisted
 ---
 
 # How to enable tab completion for the .NET CLI

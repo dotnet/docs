@@ -101,7 +101,7 @@ sudo apt-get update
 sudo apt-get upgrade
 ```
 
-If you upgrade your Linux distribution since installing .NET, you might need to reconfigure the Microsoft package repository. Run the installation instructions for your current distribution version to upgrade to the appropriate package repository for .NET updates.
+If you upgraded your Linux distribution since installing .NET, you might need to reconfigure the Microsoft package repository. Run the installation instructions for your current distribution version to upgrade to the appropriate package repository for .NET updates.
 
 ## Troubleshooting
 

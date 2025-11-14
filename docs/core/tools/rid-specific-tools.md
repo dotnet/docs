@@ -1,6 +1,6 @@
 ---
 title: Create RID-specific, self-contained, and AOT .NET tools
-description: Learn how to create and package RID-specific, self-contained and AOT .NET tools for platform-specific distribution.
+description: Learn how to create and package RID-specific, self-contained, and AOT .NET tools for platform-specific distribution.
 ms.topic: how-to
 ms.date: 11/12/2025
 ai-usage: ai-assisted
@@ -10,7 +10,7 @@ ai-usage: ai-assisted
 
 **This article applies to:** ✔️ .NET SDK 10 and later versions
 
-.NET tools can be packaged for specific platforms and architectures, enabling distribution of native, fast, and trimmed applications. This capability makes it easier to distribute native, fast, trimmed .NET applications for command-line tools like MCP servers or other platform-specific utilities.
+Package .NET tools for specific platforms and architectures so you can distribute native, fast, and trimmed applications. This capability makes it easier to distribute native, fast, trimmed .NET applications for command-line tools like MCP servers or other platform-specific utilities.
 
 ## Overview
 
@@ -18,7 +18,7 @@ Starting with .NET SDK 10, you can create .NET tools that target specific Runtim
 
 - **RID-specific**: Compiled for particular operating systems and architectures.
 - **Self-contained**: Include the .NET runtime and don't require a separate .NET installation.
-- **AOT-compiled**: Use Ahead-of-Time compilation for faster startup and smaller memory footprint.
+- **Native AOT**: Use Ahead-of-Time compilation for faster startup and smaller memory footprint.
 
 When users install a RID-specific tool, the .NET CLI automatically selects and installs the appropriate package for their platform.
 
@@ -26,34 +26,34 @@ When users install a RID-specific tool, the .NET CLI automatically selects and i
 
 To create a RID-specific tool, configure your project with one of the following MSBuild properties:
 
-### RuntimeIdentifier property
+### RuntimeIdentifiers property
 
-Use `RuntimeIdentifier` to specify the platforms your tool supports:
+Use `RuntimeIdentifiers` to specify the platforms your tool supports:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net9.0</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
     <PackAsTool>true</PackAsTool>
     <ToolCommandName>mytool</ToolCommandName>
-    <RuntimeIdentifier>win-x64;linux-x64;osx-arm64</RuntimeIdentifier>
+    <RuntimeIdentifiers>win-x64;linux-x64;osx-arm64</RuntimeIdentifiers>
   </PropertyGroup>
 </Project>
 ```
 
-### ToolPackageRuntimeIdentifier property
+### ToolPackageRuntimeIdentifiers property
 
-Alternatively, use `ToolPackageRuntimeIdentifier` for tool-specific RID configuration:
+Alternatively, use `ToolPackageRuntimeIdentifiers` for tool-specific RID configuration:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net9.0</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
     <PackAsTool>true</PackAsTool>
     <ToolCommandName>mytool</ToolCommandName>
-    <ToolPackageRuntimeIdentifier>win-x64;linux-x64;osx-arm64</ToolPackageRuntimeIdentifier>
+    <ToolPackageRuntimeIdentifiers>win-x64;linux-x64;osx-arm64</ToolPackageRuntimeIdentifiers>
   </PropertyGroup>
 </Project>
 ```
@@ -62,9 +62,9 @@ Use a semicolon-delimited list of RID values. For a list of Runtime Identifiers,
 
 ## Package your tool
 
-The packaging process differs depending on whether you're using AOT compilation.
+The packaging process differs depending on whether you're using AOT compilation. To build a NuGet package, or *.nupkg* file from the project, run the [dotnet pack](dotnet/core/tools/dotnet-pack) command.
 
-### Non-AOT tools
+### RID-specific and self-contained tools
 
 For tools without AOT compilation, run `dotnet pack` once:
 
@@ -85,13 +85,13 @@ This command creates multiple NuGet packages:
 
 For tools with AOT compilation (`<PublishAot>true</PublishAot>`), you must pack separately for each platform:
 
-1. Pack the top-level package once (on any platform):
+- Pack the top-level package once (on any platform):
 
    ```dotnetcli
    dotnet pack
    ```
 
-2. Pack for each specific RID on the corresponding platform:
+- Pack for each specific RID on the corresponding platform:
 
    ```dotnetcli
    dotnet pack -r win-x64
@@ -107,8 +107,8 @@ For tools with AOT compilation (`<PublishAot>true</PublishAot>`), you must pack 
 
 RID-specific tool packages use two package types:
 
-- **DotnetTool**: The top-level package that contains metadata
-- **DotnetToolRidPackage**: The RID-specific packages that contain the actual tool binaries
+- **DotnetTool**: The top-level package that contains metadata.
+- **DotnetToolRidPackage**: The RID-specific packages that contain the actual tool binaries.
 
 ### Package metadata
 
@@ -116,7 +116,7 @@ The top-level package includes metadata that signals it's a RID-specific tool an
 
 ## Publish your tool
 
-Publish all packages to NuGet.org or your package feed:
+Publish all packages to NuGet.org or your package feed by using [dotnet nuget push](/dotnet/core/tools/dotnet-nuget-push):
 
 ```dotnetcli
 dotnet nuget push mytool.1.0.0.nupkg
@@ -151,13 +151,13 @@ Here's a complete example of creating an AOT-compiled RID-specific tool:
    cd MyFastTool
    ```
 
-2. Update the project file to enable AOT and RID-specific packaging:
+1. Update the project file to enable AOT and RID-specific packaging:
 
    ```xml
    <Project Sdk="Microsoft.NET.Sdk">
      <PropertyGroup>
        <OutputType>Exe</OutputType>
-       <TargetFramework>net9.0</TargetFramework>
+       <TargetFramework>net10.0</TargetFramework>
        <PackAsTool>true</PackAsTool>
        <ToolCommandName>myfasttool</ToolCommandName>
        <RuntimeIdentifiers>win-x64;linux-x64;osx-arm64</RuntimeIdentifiers>
@@ -170,20 +170,20 @@ Here's a complete example of creating an AOT-compiled RID-specific tool:
    </Project>
    ```
 
-3. Add your application code in `Program.cs`:
+1. Add your application code in `Program.cs`:
 
    ```csharp
    Console.WriteLine("Hello from MyFastTool!");
    Console.WriteLine($"Running on {Environment.OSVersion}");
    ```
 
-4. Pack the top-level package:
+1. Pack the top-level package:
 
    ```dotnetcli
    dotnet pack
    ```
 
-5. Pack for each specific RID (on the corresponding platform):
+1. Pack for each specific RID (on the corresponding platform):
 
    On Windows:
 
@@ -203,7 +203,7 @@ Here's a complete example of creating an AOT-compiled RID-specific tool:
    dotnet pack -r osx-arm64
    ```
 
-6. Publish all packages to NuGet.org.
+1. Publish all packages to NuGet.org by using the [dotnet nuget push](/dotnet/core/tools/dotnet-nuget-push) command.
 
 ## See also
 

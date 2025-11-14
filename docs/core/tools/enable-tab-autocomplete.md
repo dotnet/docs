@@ -1,22 +1,22 @@
 ---
 title: Enable tab completion
-description: This article teaches you how to enable tab completion for the .NET CLI for PowerShell, Bash, zsh, fish, and nushell.
+description: This article teaches you how to enable tab completion for the .NET CLI for PowerShell (pwsh), Bash, zsh, fish, and nushell.
 author: adegeo
 ms.author: adegeo
 ms.topic: how-to
-ms.date: 01/14/2025
+ms.date: 11/14/2025
 ai-usage: ai-assisted
 ---
 
 # How to enable tab completion for the .NET CLI
 
-**This article applies to:** ✔️ .NET Core 2.1 SDK and later versions
+**This article applies to:** ✔️ .NET 6 SDK and later versions
 
-This article describes how to configure tab completion for five shells: PowerShell, Bash, zsh, fish, and nushell. For other shells, refer to their documentation on how to configure tab completion.
+This article describes how to configure tab completion for five shells: PowerShell (pwsh), Bash, zsh, fish, and nushell. For other shells, refer to their documentation on how to configure tab completion.
 
 ## Native shell completion scripts (.NET 10+)
 
-Starting with .NET 10 Preview 3, the .NET CLI includes native shell completion scripts that are much faster than the dynamic completions available in earlier versions. Native completions generate shell-specific scripts that handle the static parts of the CLI grammar directly in the shell, providing a significant performance improvement.
+Starting with .NET 10, the .NET CLI includes native shell completion scripts that are much faster than the dynamic completions available in earlier versions. Native completions generate shell-specific scripts that handle the static parts of the CLI grammar directly in the shell, providing a significant performance improvement.
 
 ### Generate completion scripts
 
@@ -34,7 +34,7 @@ The `[SHELL]` parameter accepts one of the following values:
 - `pwsh`
 - `zsh`
 
-If you don't specify a shell, the command infers the correct shell from your environment. On Windows, it defaults to PowerShell (`pwsh`). On other systems, it checks the `SHELL` environment variable.
+If you don't specify a shell, the command infers the correct shell from your environment. On Windows, it defaults to PowerShell (`pwsh`). On other systems, it checks if the file name of the `SHELL` environment variable matches any of the previously specified shell values.
 
 ### Completion capabilities
 

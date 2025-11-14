@@ -660,7 +660,7 @@ x ^^^ y // Bitwise xor, also for working with “flags” enumeration
 
 ### Formatting range operator expressions
 
-Only add spaces around the `..` when all expressions are non-atomic.
+Only add spaces around the `..` if any expression is non-atomic.
 Integers and single word identifiers are considered atomic.
 
 ```fsharp

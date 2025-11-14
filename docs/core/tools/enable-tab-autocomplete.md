@@ -40,12 +40,12 @@ If you don't specify a shell, the command infers the correct shell from your env
 Native completions provide different levels of support depending on the shell:
 
 | Shell      | Completion type | Descriptions in tab completions |
-|------------|-----------------|----------------------------------|
-| bash       | hybrid          | No                               |
-| fish       | dynamic         | No                               |
-| nushell    | dynamic         | No                               |
-| PowerShell | hybrid          | Yes                              |
-| zsh        | hybrid          | Yes                              |
+|------------|-----------------|-------------------------------------|
+| bash       | hybrid          | No                                  |
+| fish       | dynamic         | No                                  |
+| nushell    | dynamic         | No                                  |
+| PowerShell | hybrid          | Yes                                 |
+| zsh        | hybrid          | Yes                                 |
 
 **Completion types:**
 
@@ -118,13 +118,13 @@ If that command doesn't work, make sure that .NET Core 2.0 SDK or later is insta
 
 Here are some examples of what tab completion provides:
 
-| Input           | Becomes             | Because                                        |
-|:----------------|:--------------------|:-----------------------------------------------|
-| `dotnet a⇥`    | `dotnet add`        | `add` is the first subcommand, alphabetically. |
-| `dotnet add p⇥` | `dotnet add --help` | Tab completion matches substrings, and `--help` comes first alphabetically. |
-| `dotnet add p⇥⇥` | `dotnet add package` | Pressing tab a second time brings up the next suggestion. |
-| `dotnet package add Microsoft⇥` | `dotnet package add Microsoft.ApplicationInsights.Web` | Results are returned alphabetically. |
-| `dotnet reference remove ⇥` | `dotnet reference remove ..\..\src\OmniSharp.DotNet\OmniSharp.DotNet.csproj` | Tab completion is project file aware. |
+| Input                           | Becomes                                                                      | Because                                                                      |
+|---------------------------------|------------------------------------------------------------------------------|------------------------------------------------------------------------------|
+| `dotnet a⇥`                     | `dotnet add`                                                                 | `add` is the first subcommand, alphabetically.                               |
+| `dotnet add p⇥`                 | `dotnet add --help`                                                          | Tab completion matches substrings, and `--help` comes first alphabetically. |
+| `dotnet add p⇥⇥`                | `dotnet add package`                                                         | Pressing tab a second time brings up the next suggestion.                    |
+| `dotnet package add Microsoft⇥` | `dotnet package add Microsoft.ApplicationInsights.Web`                       | Results are returned alphabetically.                                         |
+| `dotnet reference remove ⇥`     | `dotnet reference remove ..\..\src\OmniSharp.DotNet\OmniSharp.DotNet.csproj` | Tab completion is project file aware.                                        |
 
 ### PowerShell
 

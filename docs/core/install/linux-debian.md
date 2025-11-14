@@ -50,15 +50,11 @@ rm packages-microsoft-prod.deb
 
 # [.NET 9](#tab/dotnet9)
 
-Debian 13 is newly supported with .NET. The packages for .NET 9 haven't been published yet.
-
 [!INCLUDE [linux-install-package-manager-x64-only](includes/linux-install-package-manager-x64-only.md)]
 
 [!INCLUDE [linux-apt-install-90](includes/linux-install-90-apt.md)]
 
 # [.NET 8](#tab/dotnet8)
-
-Debian 13 is newly supported with .NET. The packages for .NET 8 haven't been published yet.
 
 [!INCLUDE [linux-install-package-manager-x64-only](includes/linux-install-package-manager-x64-only.md)]
 

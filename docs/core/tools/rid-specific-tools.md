@@ -62,7 +62,7 @@ Use a semicolon-delimited list of RID values. For a list of Runtime Identifiers,
 
 ## Package your tool
 
-The packaging process differs depending on whether you're using AOT compilation. To build a NuGet package, or *.nupkg* file from the project, run the [dotnet pack](dotnet/core/tools/dotnet-pack) command.
+The packaging process differs depending on whether you're using AOT compilation. To build a NuGet package, or *.nupkg* file from the project, run the [dotnet pack](dotnet-pack.md) command.
 
 ### RID-specific and self-contained tools
 
@@ -116,7 +116,7 @@ The top-level package includes metadata that signals it's a RID-specific tool an
 
 ## Publish your tool
 
-Publish all packages to NuGet.org or your package feed by using [dotnet nuget push](/dotnet/core/tools/dotnet-nuget-push):
+Publish all packages to NuGet.org or your package feed by using [dotnet nuget push](dotnet-nuget-push.md):
 
 ```dotnetcli
 dotnet nuget push mytool.1.0.0.nupkg
@@ -203,7 +203,7 @@ Here's a complete example of creating an AOT-compiled RID-specific tool:
    dotnet pack -r osx-arm64
    ```
 
-1. Publish all packages to NuGet.org by using the [dotnet nuget push](/dotnet/core/tools/dotnet-nuget-push) command.
+1. Publish all packages to NuGet.org by using the [dotnet nuget push](dotnet-nuget-push.md) command.
 
 ## See also
 

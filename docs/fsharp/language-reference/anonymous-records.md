@@ -2,6 +2,7 @@
 title: Anonymous Records
 description: Learn how to construct and use anonymous records, a language feature that helps with the manipulation of data.
 ms.date: 11/04/2021
+ai-usage: ai-assisted
 ---
 # Anonymous Records
 

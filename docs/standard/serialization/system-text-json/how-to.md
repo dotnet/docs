@@ -21,7 +21,7 @@ adobe-target: true
 This article shows how to use the <xref:System.Text.Json?displayProperty=fullName> namespace to serialize to JavaScript Object Notation (JSON). If you're porting existing code from `Newtonsoft.Json`, see [How to migrate to `System.Text.Json`](migrate-from-newtonsoft.md).
 
 > [!TIP]
-> You can use AI assistance to [serialize to JSON](#use-ai-to-serialize-to-json).
+> You can use AI assistance to [serialize to JSON](#use-ai-to-serialize-nested-and-polymorphic-types).
 
 To write JSON to a string or to a file, call the <xref:System.Text.Json.JsonSerializer.Serialize%2A?displayProperty=nameWithType> method.
 
@@ -49,7 +49,7 @@ The preceding examples use type inference for the type being serialized. An over
 :::code language="csharp" source="snippets/how-to/csharp/SerializeWithGenericParameter.cs" highlight="23":::
 :::code language="vb" source="snippets/how-to/vb/RoundtripToString.vb" id="SerializeWithGenericParameter":::
 
-You can also use AI to generate serialization code for you. For instructions, see the [Use AI](#use-ai-to-serialize-to-json) section in this article.
+You can also use AI to generate serialization code for you. For instructions, see the [Use AI](#use-ai-to-serialize-nested-and-polymorphic-types) section in this article.
 
 ## Serialization behavior
 

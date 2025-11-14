@@ -110,19 +110,19 @@ Starting in .NET 9, you can also customize the indent character and size using <
 
 ## Use AI to serialize nested and polymorphic types
 
-You can use AI tools, such as GitHub Copilot, to generate code that serializes objects to JSON `System.Text.Json`. You can use it for nested and polymorphic objects.
+You can use AI tools, such as GitHub Copilot, to generate code that serializes objects to JSON using `System.Text.Json`. You can use it for nested and polymorphic objects.
 For example, you can prompt Copilot to generate code that handles nested and polymorphic types, which is useful for creating examples or test data for hierarchical object structures.
 
-Here's an example prompt you can use in Visual Studio Code Copilot Chat to migrate a solution.
+Here's an example prompt you can use in Visual Studio Code Copilot Chat to generate serialization code.
 
 ```copilot-prompt
-Generate C# code using System.Text.Json to serialize a collection of Employee objects.
-1. Define classes: Employee (with Id, Name, Department, Vehicle), Department (Name, Code), Vehicle (base), Car (Doors), Motorcycle (HasSidecar), Bicycle (IsElectric).
-2. Use a custom JsonConverter with a $type discriminator in the output. The custom converter must implement the correct method signatures for JsonConverter<T>.
-3. Create a List<Employee> with sample data (one Car, one Motorcycle, one Bicycle).
-4. Serialize the list to a JSON string.
-5. Provide the complete, compiling code including all using directives, class definitions, converter implementations, and serialization logic. 
-Show example output.
+Generate C# code using System.Text.Json to serialize a collection of Employee objects
+1. Define classes: Employee (with Id, Name, Department, Vehicle), Department (Name, Code), Vehicle (base), Car (Doors), Motorcycle (HasSidecar), Bicycle (IsElectric)
+2. Use a custom JsonConverter with a $type discriminator in the output. The custom converter must implement the correct method signatures for JsonConverter<T>
+3. Create a List<Employee> with sample data (one Car, one Motorcycle, one Bicycle)
+4. Serialize the list to a JSON string
+5. Provide the complete, compiling code including all using directives, class definitions, converter implementations, and serialization logic
+Show example output
 ```
 
 Review Copilot's suggestions before applying them.

@@ -102,7 +102,7 @@ You can customize image generation by providing other options such as size, resp
 
 ## Use hosting integration
 
-When building web applications or hosted services, you can integrate image generation using dependency injection and hosting patterns. This approach provides better lifecycle management, configuration integration, and testability.
+When you build web apps or hosted services, you can integrate image generation using dependency injection and hosting patterns. This approach provides better lifecycle management, configuration integration, and testability.
 
 ### Configure hosting services
 

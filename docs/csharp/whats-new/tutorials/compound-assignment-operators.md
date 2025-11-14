@@ -11,7 +11,7 @@ ai-usage: ai-assisted
 ---
 # Tutorial: Create compound assignment operators
 
-C#14.0 adds [*user-defined compound assignment operators*](~/_csharplang/proposals/csharp-14.0/user-defined-compound-assignment.md) that enable mutating a data structure in place, rather than creating a new instance. In previous versions of C#, the expression:
+C#14 adds [*user-defined compound assignment operators*](~/_csharplang/proposals/csharp-14.0/user-defined-compound-assignment.md) that enable mutating a data structure in place, rather than creating a new instance. In previous versions of C#, the expression:
 
 ```csharp
 a += b;
@@ -95,7 +95,7 @@ Examine the starter `GateAttendance` record class:
 
 The `InitialImplementation.GateAttendance` record demonstrates the traditional approach to operator overloading in C#. Notice how both the increment operator (`++`) and addition operator (`+`) create entirely new instances of `GateAttendance` using the `with` expression. Each time you write `gate++` or `gate += partySize`, the operators allocate a new record instance with the updated `Count` value, then return that new instance. While this approach maintains immutability and thread safety, it comes at the cost of frequent memory allocations. In scenarios with many operations—like the concert simulation with hundreds of attendance updates—these allocations accumulate quickly, potentially impacting performance and increasing garbage collection pressure.
 
-To measure this allocation behavior in action, try running the [.NET Object Allocation tracking tool](/visualstudio/profiling/dotnet-alloc-tool) in Visual Studio. When you profile the current implementation during the concert simulation, you discover that it allocates 134 `GateAttendance` objects to complete the relatively small simulation. Each operator call creates a new instance, demonstrating how quickly allocations can accumulate in real-world scenarios. This measurement provides a concrete baseline for comparing the performance improvements you achieve with compound assignment operators.
+To measure this allocation behavior, try running the [.NET Object Allocation tracking tool](/visualstudio/profiling/dotnet-alloc-tool) in Visual Studio. When you profile the current implementation during the concert simulation, you discover that it allocates 134 `GateAttendance` objects to complete the relatively small simulation. Each operator call creates a new instance, demonstrating how quickly allocations can accumulate in real-world scenarios. This measurement provides a concrete baseline for comparing the performance improvements you achieve with compound assignment operators.
 
 ## Implement compound assignment operators
 

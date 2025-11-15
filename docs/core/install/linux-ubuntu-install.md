@@ -57,6 +57,7 @@ When an [Ubuntu version](https://wiki.ubuntu.com/Releases) falls out of support,
 When you install with a package manager, these libraries are installed for you. But, if you manually install .NET or you publish a self-contained app, you'll need to make sure these libraries are installed:
 
 - ca-certificates
+- libatomic1
 - libc6
 - libgcc-s1
 - libgssapi-krb5-2

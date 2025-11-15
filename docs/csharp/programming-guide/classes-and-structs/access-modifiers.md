@@ -22,14 +22,14 @@ The [`record`](../../language-reference/builtin-types/record.md) modifier on a t
 
 ## Summary table
 
-| Caller's location | `public` | `protected internal` | `protected` | `internal` | `private protected` | `private` | `file` |
-|--|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| Within the file | ✔️️ | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |
-| Within the class | ✔️️ | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | ❌ |
-| Derived class (same assembly) | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | ❌ | ❌ |
-| Non-derived class (same assembly) | ✔️ | ✔️ | ❌ | ✔️ | ❌ | ❌ | ❌ |
-| Derived class (different assembly) | ✔️ | ✔️ | ✔️ | ❌ | ❌ | ❌ | ❌ |
-| Non-derived class (different assembly) | ✔️ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| Caller's location | `public` | `protected internal` | `protected` | `internal` | `private protected` | `private` |
+|--|:-:|:-:|:-:|:-:|:-:|:-:|
+| Within the file | ✔️️ | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |
+| Within the class | ✔️️ | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |
+| Derived class (same assembly) | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | ❌ |
+| Non-derived class (same assembly) | ✔️ | ✔️ | ❌ | ✔️ | ❌ | ❌ |
+| Derived class (different assembly) | ✔️ | ✔️ | ✔️ | ❌ | ❌ | ❌ |
+| Non-derived class (different assembly) | ✔️ | ❌ | ❌ | ❌ | ❌ | ❌ |
 
 The following examples demonstrate how to specify access modifiers on a type and member:
 

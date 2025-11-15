@@ -300,3 +300,4 @@ dotnet <command> --help
 * [Tutorial: Create a .NET tool using the .NET CLI](global-tools-how-to-create.md)
 * [Tutorial: Install and use a .NET global tool using the .NET CLI](global-tools-how-to-use.md)
 * [Tutorial: Install and use a .NET local tool using the .NET CLI](local-tools-how-to-use.md)
+* [Create RID-specific and AOT .NET tools](rid-specific-tools.md)

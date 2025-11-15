@@ -226,3 +226,7 @@ If you prefer, you can skip the global tools tutorial and go directly to the loc
 
 > [!div class="nextstepaction"]
 > [Install and use a local tool](local-tools-how-to-use.md)
+
+## See also
+
+- [Create RID-specific and AOT .NET tools](rid-specific-tools.md)

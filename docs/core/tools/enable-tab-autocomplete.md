@@ -34,7 +34,7 @@ The `[SHELL]` parameter accepts one of the following values:
 - `pwsh`
 - `zsh`
 
-If you don't specify a shell, the command infers the correct shell from your environment. On Windows, it defaults to PowerShell (`pwsh`). On other systems, it checks if the file name of the `SHELL` environment variable matches any of the previously specified shell values.
+If you don't specify a shell, the command infers the correct shell from your environment. On Windows, it defaults to PowerShell (`pwsh`). On other systems, it checks if the file name of the `SHELL` environment variable matches any of the supported shell values.
 
 ### Completion capabilities
 

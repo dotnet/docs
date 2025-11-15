@@ -3,7 +3,7 @@ title: Install .NET on openSUSE Leap
 description: Learn about which versions of .NET SDK and .NET Runtime are supported, and how to install .NET on openSUSE Leap.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/07/2025
+ms.date: 11/14/2025
 ms.custom: linux-related-content
 ---
 
@@ -46,19 +46,21 @@ sudo chown root:root /etc/zypp/repos.d/microsoft-prod.repo
 
 # [.NET 10](#tab/dotnet10)
 
-[!INCLUDE [linux-release-wait](includes/linux-release-wait.md)]
-
 [!INCLUDE [linux-install-package-manager-x64-arm64](includes/linux-install-package-manager-x64-arm64.md)]
 
 [!INCLUDE [linux-zyp-install-100](includes/linux-install-100-zyp.md)]
 
 # [.NET 9](#tab/dotnet9)
 
+openSUSE Leap 16 is newly supported with .NET. The packages for .NET 9 aren't published yet.
+
 [!INCLUDE [linux-install-package-manager-x64-only](includes/linux-install-package-manager-x64-only.md)]
 
 [!INCLUDE [linux-zyp-install-90](includes/linux-install-90-zyp.md)]
 
 # [.NET 8](#tab/dotnet8)
+
+openSUSE Leap 16 is newly supported with .NET. The packages for .NET 8 aren't published yet.
 
 [!INCLUDE [linux-install-package-manager-x64-only](includes/linux-install-package-manager-x64-only.md)]
 

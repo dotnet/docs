@@ -3936,7 +3936,7 @@ items:
       - name: Obsoletions
         items:
           - name: Overview
-            displayName: syslib, obsolete, obsoletion
+            displayName: syslib, extobs, obsolete, obsoletion
             href: ../../fundamentals/syslib-diagnostics/obsoletions-overview.md
           - name: SYSLIB0001
             href: ../../fundamentals/syslib-diagnostics/syslib0001.md
@@ -4170,6 +4170,10 @@ items:
           - name: SYSLIB1230
             href: ../../fundamentals/syslib-diagnostics/syslib1230.md
             displayProperty: syslib1230, syslib1231, syslib1232, syslib1233, syslib1234, syslib1235, syslib1236, syslib1237, syslib1238, syslib1239
+  - name: EXTOBS diagnostics
+    items:
+      - name: EXTOBS0001
+        href: ../../fundamentals/syslib-diagnostics/extobs0001.md
   - name: API compatibility
     items:
       - name: Overview

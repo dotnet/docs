@@ -74,7 +74,7 @@ Next, create the *PrimeService.Tests* directory. The following outline shows the
     /PrimeService.Tests
 ```
 
-Make the *PrimeService.Tests* directory the current directory and create a new project using the following command:
+Change the directory to the *PrimeService.Tests* directory and create a new project using the following command:
 
 ```dotnetcli
 dotnet new nunit

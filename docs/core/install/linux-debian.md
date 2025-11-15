@@ -9,7 +9,7 @@ ms.custom: linux-related-content
 
 # Install the .NET SDK or the .NET Runtime on Debian
 
-This article describes how to install .NET on Debian. When a Debian version falls out of support, .NET is no longer supported with that version. However, these instructions may help you to get .NET running on those versions, even though it isn't supported.
+This article describes how to install .NET on Debian. When a Debian version falls out of support, .NET is no longer supported with that version. However, these instructions might help you to get .NET running on those versions, even though it isn't supported.
 
 [!INCLUDE [linux-intro-sdk-vs-runtime](includes/linux-intro-sdk-vs-runtime.md)]
 
@@ -41,8 +41,6 @@ wget https://packages.microsoft.com/config/debian/13/packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
 rm packages-microsoft-prod.deb
 ```
-
-[!INCLUDE [linux-release-wait](includes/linux-release-wait.md)]
 
 # [.NET 10](#tab/dotnet10)
 
@@ -76,8 +74,6 @@ rm packages-microsoft-prod.deb
 
 # [.NET 10](#tab/dotnet10)
 
-[!INCLUDE [linux-release-wait](includes/linux-release-wait.md)]
-
 [!INCLUDE [linux-install-package-manager-x64-arm64](includes/linux-install-package-manager-x64-arm64.md)]
 
 [!INCLUDE [linux-apt-install-100](includes/linux-install-100-apt.md)]
@@ -98,18 +94,18 @@ rm packages-microsoft-prod.deb
 
 ## Use APT to update .NET
 
-When a new patch release is available for .NET, you can simply upgrade it through APT with the following commands:
+When a new patch release is available for .NET, you can upgrade it through APT with the following commands:
 
 ```bash
 sudo apt-get update
 sudo apt-get upgrade
 ```
 
-If you've upgraded your Linux distribution since installing .NET, you may need to reconfigure the Microsoft package repository. Run the installation instructions for your current distribution version to upgrade to the appropriate package repository for .NET updates.
+If you upgraded your Linux distribution since installing .NET, you might need to reconfigure the Microsoft package repository. Run the installation instructions for your current distribution version to upgrade to the appropriate package repository for .NET updates.
 
 ## Troubleshooting
 
-This section provides information on common errors you may get while using APT to install .NET.
+This section provides information on common errors you might get while using APT to install .NET.
 
 ### Unable to find package
 
@@ -123,7 +119,7 @@ If you're using Debian 12 or later, try the following commands:
 
 [!INCLUDE [package-manager-failed-to-find-deb-new](includes/package-manager-failed-to-find-deb-new.md)]
 
-If you're using a Debian version prior to 12, try the following commands:
+If you're using a Debian version older than 12, try the following commands:
 
 [!INCLUDE [package-manager-failed-to-find-deb-classic](includes/package-manager-failed-to-find-deb-classic.md)]
 

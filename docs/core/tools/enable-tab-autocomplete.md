@@ -16,7 +16,7 @@ This article describes how to configure tab completion for five shells: PowerShe
 
 ## Native shell completion scripts (.NET 10+)
 
-Starting with .NET 10, the .NET CLI includes native shell completion scripts that are much faster than the dynamic completions available in earlier versions. Native completions generate shell-specific scripts that handle the static parts of the CLI grammar directly in the shell, providing a significant performance improvement.
+Starting with .NET 10, the .NET CLI includes native shell completion scripts that run much faster than the dynamic completions available in earlier versions. Native completions generate shell-specific scripts that handle the static parts of the CLI grammar directly in the shell, providing a significant performance improvement.
 
 ### Generate completion scripts
 

@@ -116,7 +116,7 @@ Here's an example prompt you can use in Visual Studio Code Copilot Chat to gener
 
 ```copilot-prompt
 I have a variable named weatherForecast of type WeatherForecast.
-Serialize the variable using System.Text.Json and write the result directly to a file stream called "output.json" with the JSON indented for pretty formatting.
+Serialize the variable using System.Text.Json and write the result directly to a file named "output.json" with the JSON indented for pretty formatting.
 Ensure the code includes all necessary using directives and compiles without errors.
 ```
 

@@ -16,10 +16,11 @@ One important aspect of Orleans is its support for customization of serializatio
 :::zone target="docs" pivot="orleans-7-0"
 <!-- markdownlint-enable MD044 -->
 
-Orleans provides two serializer implementations:
+Orleans provides three serializer implementations:
 
 - [Microsoft.Orleans.Serialization.SystemTextJson](https://nuget.org/packages/Microsoft.Orleans.Serialization.SystemTextJson)
 - [Microsoft.Orleans.Serialization.NewtonsoftJson](https://nuget.org/packages/Microsoft.Orleans.Serialization.NewtonsoftJson)
+- [Microsoft.Orleans.Serialization.Protobuf](https://nuget.org/packages/Microsoft.Orleans.Serialization.Protobuf)
 
 To configure either of these packages, see [Serialization configuration in Orleans](serialization-configuration.md?pivots=orleans-7-0).
 

@@ -74,6 +74,10 @@ items:
       href: quickstarts/text-to-image.md
     - name: Generate images using OpenAI.Images.ImageClient
       href: quickstarts/generate-images.md
+- name: Tokenization
+  items:
+    - name: Use Microsoft.ML.Tokenizers
+      href: how-to/use-tokenizers.md
 - name: Security and content safety
   items:
   - name: Authentication for Azure-hosted apps and services

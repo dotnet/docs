@@ -54,7 +54,7 @@ Complete the following steps to register the services you need:
     <!-- markdownlint-disable MD023 -->
     ## [Minimal API](#tab/api)
 
-    :::code language="csharp" source="snippets/aspnetcore-guidance/MinApiSample/Program.cs" range="52-73" highlight="1-3,6,8,11-12":::
+    :::code language="csharp" source="snippets/aspnetcore-guidance/MinApiSample/Program.cs" range="50-71" highlight="1-3,6,8,11-12":::
 
     <!-- markdownlint-disable MD023 -->
     ## [Blazor](#tab/blazor)
@@ -80,9 +80,9 @@ Use the [Azure Identity](/dotnet/api/overview/azure/identity-readme) library for
     dotnet add package Azure.Identity
     ```
 
-1. In the `Program.cs` file of your app, invoke the <xref:Microsoft.Extensions.Azure.AzureClientFactoryBuilder.UseCredential%2A> extension method from the `Microsoft.Extensions.Azure` library to set a shared `DefaultAzureCredential` instance for all registered Azure service clients:
+1. In the `Program.cs` file of your app, invoke the <xref:Microsoft.Extensions.Azure.AzureClientServiceCollectionExtensions.AddAzureClients%2A> extension method from the `Microsoft.Extensions.Azure` library to set a shared `DefaultAzureCredential` instance for all registered Azure service clients:
 
-    :::code language="csharp" source="snippets/aspnetcore-guidance/BlazorSample/Program.cs" range="11-30" highlight="19":::
+    :::code language="csharp" source="snippets/aspnetcore-guidance/BlazorSample/Program.cs" range="11-30" :::
 
     `DefaultAzureCredential` discovers available credentials in the current environment and uses them to authenticate to Azure services. For the order and locations in which `DefaultAzureCredential` scans for credentials, see [DefaultAzureCredential overview](/dotnet/azure/sdk/authentication/credential-chains?tabs=dac#defaultazurecredential-overview). Using a shared `DefaultAzureCredential` instance ensures the underlying token cache is used, which improves application resilience and performance due to fewer requests for a new token.
 
@@ -122,7 +122,7 @@ You may want to change default Azure client configurations globally or for a spe
 
 2. In the `Program.cs` file, call the `ConfigureDefaults` extension method to retrieve the default settings and apply them to your service clients:
 
-    :::code language="csharp" source="snippets/aspnetcore-guidance/MinApiSample/Program.cs" range="14-41" highlight="26-27":::
+    :::code language="csharp" source="snippets/aspnetcore-guidance/MinApiSample/Program.cs" range="14-41" highlight="24-25":::
 
 ## Configure logging
 

@@ -86,7 +86,7 @@ On unix, you can run file-based apps directly, typing the source file name on th
 
 The location of `dotnet` can be different on different unix installations. Use the command `where dotnet` to local the `dotnet` host in your environment.
 
-Or you can use to resolve dotnet path by the PATH environment automatically
+Or you can use the following way to resolve the dotnet path by the PATH environment automatically
 
 ```csharp
 #!/usr/bin/env dotnet

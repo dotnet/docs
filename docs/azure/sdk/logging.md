@@ -139,7 +139,6 @@ Using the Azure Service Bus library as an example, complete the following steps:
     {
         azureBuilder.AddServiceBusClient(
             builder.Configuration.GetConnectionString("ServiceBus"));
-        // DefaultAzureCredential is applied automatically.
     });
     ```
 

@@ -45,6 +45,7 @@ This field:
 
 - Doesn't have wildcard support; that is, you must specify the full version number.
 - Doesn't support version ranges.
+- Doesn't support versions such as 9, 9.0, or 9.0.x,
 
 #### `allowPrerelease`
 
@@ -90,7 +91,7 @@ The following table shows the possible values for the `rollForward` key:
 #### `paths`
 
 - Type: Array of `string`
-- Available since: .NET 10 Preview 3 SDK.
+- Available since: .NET 10 SDK.
 
 Specifies the locations that should be considered when searching for a compatible .NET SDK. Paths can be absolute or relative to the location of the *global.json* file. The special value `$host$` represents the location corresponding to the running `dotnet` executable.
 
@@ -103,7 +104,7 @@ This feature enables using local SDK installations (such as SDKs relative to a r
 #### `errorMessage`
 
 - Type: `string`
-- Available since: .NET 10 Preview 3 SDK.
+- Available since: .NET 10 SDK.
 
 Specifies a custom error message displayed when the SDK resolver can't find a compatible .NET SDK.
 
@@ -205,6 +206,17 @@ The following example shows how to specify additional SDK search paths and a cus
     "version": "10.0.100",
     "paths": [ ".dotnet", "$host$" ],
     "errorMessage": "The required .NET SDK wasn't found. Please run ./install.sh to install it."
+  }
+}
+```
+
+The following example shows that when an invalid version is specified, the output  of `dotnet --info` shows: "Version '9.0' is not valid for the 'sdk/version' value."
+
+```json
+{
+  "sdk": {
+    "version": "9.0",
+    "rollForward": "latestFeature"
   }
 }
 ```

@@ -10,7 +10,7 @@ Because LINQ to SQL queries translate to Transact-SQL before they are executed o
   
 ## Casting  
 
- Implicit or explicit casts are enabled from a source CLR type to a target CLR type if there is a similar valid conversion within SQL Server. For more information about CLR casting, see [CType Function](../../../../../visual-basic/language-reference/functions/ctype-function.md) (Visual Basic) and [Type-testing and cast operators](../../../../../csharp/language-reference/operators/type-testing-and-cast.md). After conversion, casts change the behavior of operations performed on a CLR expression to match the behavior of other CLR expressions that naturally map to the destination type. Casts are also translatable in the context of inheritance mapping. Objects can be cast to more specific entity subtypes so that their subtype-specific data can be accessed.  
+ Implicit or explicit casts are enabled from a source CLR type to a target CLR type if there is a similar valid conversion within SQL Server. For more information about CLR casting, see [CType Function](../../../../../visual-basic/language-reference/operators/ctype-operator.md) (Visual Basic) and [Type-testing and cast operators](../../../../../csharp/language-reference/operators/type-testing-and-cast.md). After conversion, casts change the behavior of operations performed on a CLR expression to match the behavior of other CLR expressions that naturally map to the destination type. Casts are also translatable in the context of inheritance mapping. Objects can be cast to more specific entity subtypes so that their subtype-specific data can be accessed.  
   
 ## Equality Operators  
 

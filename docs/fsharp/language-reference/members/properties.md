@@ -14,18 +14,17 @@ ms.date: 05/16/2016
 // Property that has both get and set defined.
 [ attributes ]
 [ static ] member [accessibility-modifier] [self-identifier.]PropertyName
-with [accessibility-modifier] get() =
+with [ attributes-for-get ] [accessibility-modifier] get() =
     get-function-body
-and [accessibility-modifier] set parameter =
+and [ attributes-for-set ] [accessibility-modifier] set parameter =
     set-function-body
 
 // Alternative syntax for a property that has get and set.
-[ attributes-for-get ]
-[ static ] member [accessibility-modifier-for-get] [self-identifier.]PropertyName =
+[ static ] member [accessibility-modifier-for-get] [self-identifier.]PropertyName
+with [ attributes-for-get ] get() =
     get-function-body
-[ attributes-for-set ]
 [ static ] member [accessibility-modifier-for-set] [self-identifier.]PropertyName
-with set parameter =
+with [ attributes-for-set ] set parameter =
     set-function-body
 
 // Property that has get only.
@@ -34,15 +33,13 @@ with set parameter =
     get-function-body
 
 // Alternative syntax for property that has get only.
-[ attributes ]
 [ static ] member [accessibility-modifier] [self-identifier.]PropertyName
-with get() =
+with [ attributes ] get() =
     get-function-body
 
 // Property that has set only.
-[ attributes ]
 [ static ] member [accessibility-modifier] [self-identifier.]PropertyName
-with set parameter =
+with [ attributes ] set parameter =
     set-function-body
 
 // Automatically implemented properties.

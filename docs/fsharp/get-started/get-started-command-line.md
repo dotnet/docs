@@ -62,7 +62,7 @@ let getJson value =
     value, json
 ```
 
-Add the `Library` project to the `FSharpSample` solution using the [dotnet sln add](../../core/tools/dotnet-sln.md) command:
+Add the `Library` project to the `FSharpSample` solution using the [dotnet sln add](../../core/tools/dotnet-sln.md) command. This command adds the project to the solution file so that the solution can track and build it:
 
 ```dotnetcli
 dotnet sln add src/Library/Library.fsproj
@@ -109,11 +109,22 @@ let main args =
     0 // return an integer exit code
 ```
 
-Add a reference to the `Library` project using [dotnet reference add](../../core/tools/dotnet-reference-add.md).
+Add a reference to the `Library` project using [dotnet reference add](../../core/tools/dotnet-reference-add.md). This command adds a `<ProjectReference>` element to the App.fsproj file, which tells the compiler that the App project depends on the Library project:
 
 ```dotnetcli
 dotnet add src/App/App.fsproj reference src/Library/Library.fsproj
 ```
+
+The previous command adds the following XML to the App.fsproj file:
+
+```xml
+<ItemGroup>
+  <ProjectReference Include="..\Library\Library.fsproj" />
+</ItemGroup>
+```
+
+> [!TIP]
+> If you skip this step and try to build the App project, you'll get a compilation error because the `Library` module won't be found. If this happens, you can either run the `dotnet add reference` command or manually add the `<ProjectReference>` element shown above to your App.fsproj file.
 
 Add the `App` project to the `FSharpSample` solution using the `dotnet sln add` command:
 

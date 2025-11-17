@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Globalization;
 
 //<snippet1>
@@ -99,11 +99,11 @@ public class RatingInformation : IComparable, IComparable<RatingInformation>
     }
     public static bool operator <(RatingInformation left, RatingInformation right)
     {
-        return (Compare(left, right) < 0);
+        return Compare(left, right) < 0;
     }
     public static bool operator >(RatingInformation left, RatingInformation right)
     {
-        return (Compare(left, right) > 0);
+        return Compare(left, right) > 0;
     }
 }
 //</snippet1>

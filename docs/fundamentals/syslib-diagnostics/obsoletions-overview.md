@@ -1,7 +1,7 @@
 ---
 title: Obsolete features in .NET 5+
 description: Learn about APIs that are marked as obsolete in .NET 5 and later versions that produce SYSLIB compiler warnings.
-ms.date: 01/14/2025
+ms.date: 11/12/2025
 ai-usage: ai-assisted
 ---
 
@@ -9,15 +9,19 @@ ai-usage: ai-assisted
 
 Starting in .NET 5, some APIs that are newly marked as obsolete make use of two new properties on <xref:System.ObsoleteAttribute>.
 
-- The <xref:System.ObsoleteAttribute.DiagnosticId?displayProperty=nameWithType> property tells the compiler to generate build warnings using a custom diagnostic ID. The custom ID allows for obsoletion warning to be suppressed specifically and separately from one another. In the case of the .NET 5+ obsoletions, the format for the custom diagnostic ID is `SYSLIB0XXX`.
-
+- The <xref:System.ObsoleteAttribute.DiagnosticId?displayProperty=nameWithType> property tells the compiler to generate build warnings using a custom diagnostic ID. The custom ID allows for obsoletion warning to be suppressed specifically and separately from one another. In the case of the `System*` namespace obsoletions, the format for the custom diagnostic ID is `SYSLIB0XXX`. In the case of the `Microsoft.Extensions` obsoletions, the format for the custom diagnostic ID is `EXTOBS0XXX`.
 - The <xref:System.ObsoleteAttribute.UrlFormat?displayProperty=nameWithType> property tells the compiler to include a URL link to learn more about the obsoletion.
 
-If you encounter build warnings or errors due to usage of an obsolete API, follow the specific guidance provided for the diagnostic ID listed in the [Reference](#reference) section. Warnings or errors for these obsoletions *can't* be suppressed using the [standard diagnostic ID (CS0618)](../../csharp/language-reference/compiler-messages/cs0618.md) for obsolete types or members; use the custom `SYSLIB0XXX` diagnostic ID values instead. For more information, see [Suppress warnings](#suppress-warnings).
+If you encounter build warnings or errors due to usage of an obsolete API, follow the specific guidance provided for the diagnostic ID listed in the reference tables that follow. Warnings or errors for these obsoletions *can't* be suppressed using the [standard diagnostic ID (CS0618)](../../csharp/language-reference/compiler-messages/cs0618.md) for obsolete types or members; use the custom `SYSLIB0XXX` or `EXTOBS0XXX` diagnostic ID values instead. For more information, see [Suppress warnings](#suppress-warnings).
 
-## Reference
+The following tables provide an index to obsolete APIs with custom diagnostic IDs in .NET 5 and later versions:
 
-The following table provides an index to the `SYSLIB0XXX` obsoletions in .NET 5+.
+- [SYSLIB obsoletions](#syslib-obsoletions)
+- [EXTOBS obsoletions](#extobs-obsoletions)
+
+## SYSLIB obsoletions
+
+The following table lists the `SYSLIB0XXX` obsoletions in .NET 5+.
 
 | Diagnostic ID | Warning or error | Description |
 |---------------|------------------|-------------|
@@ -82,10 +86,19 @@ The following table provides an index to the `SYSLIB0XXX` obsoletions in .NET 5+
 | [SYSLIB0059](syslib0059.md) | Warning | <xref:Microsoft.Win32.SystemEvents.EventsThreadShutdown?displayProperty=nameWithType> callbacks aren't run before the process exits. Use <xref:System.AppDomain.ProcessExit?displayProperty=nameWithType> instead. |
 | [SYSLIB0060](syslib0060.md) | Warning | Constructors on <xref:System.Security.Cryptography.Rfc2898DeriveBytes?displayProperty=nameWithType> are obsolete. Use <xref:System.Security.Cryptography.Rfc2898DeriveBytes.Pbkdf2%2A?displayProperty=nameWithType> instead. |
 | [SYSLIB0061](syslib0061.md) | Warning | The `Queryable` <xref:System.Linq.Queryable.MaxBy``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Collections.Generic.IComparer{``0})?displayProperty=nameWithType> and <xref:System.Linq.Queryable.MinBy``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Collections.Generic.IComparer{``0})?displayProperty=nameWithType> taking an `IComparer<TSource>` are obsolete. Use the new ones that take an `IComparer<TKey>`. |
+| [SYSLIB0062](syslib0062.md) | Warning | <xref:System.Xml.Xsl.XsltSettings.EnableScript?displayProperty=nameWithType> is obsolete. |
+
+## EXTOBS obsoletions
+
+The following table lists the `EXTOBS0XXX` obsoletions from the `Microsoft.Extensions` libraries.
+
+| Diagnostic ID | Warning or error | Description |
+|---------------|------------------|-------------|
+| [EXTOBS0001](extobs0001.md) | Warning | <xref:Microsoft.Extensions.Diagnostics.ResourceMonitoring.IResourceMonitor> is obsolete and will be removed in a future version. Consider using [Resource Monitoring observable instruments](../../core/diagnostics/built-in-metrics-diagnostics.md#microsoftextensionsdiagnosticsresourcemonitoring). |
 
 ## Suppress warnings
 
-It's recommended that you use an available workaround whenever possible. However, if you cannot change your code, you can suppress warnings through a `#pragma` directive or a `<NoWarn>` project setting. If you must use the obsolete APIs and the `SYSLIB0XXX` diagnostic does not surface as an error, you can suppress the warning in code or in your project file.
+It's recommended that you use an available workaround whenever possible. However, if you can't change your code, you can suppress warnings through a `#pragma` directive or a `<NoWarn>` project setting. If you must use the obsolete APIs, and the `SYSLIB0XXX` or `EXTOBS0XXX` diagnostic doesn't surface as an error, you can suppress the warning in code or in your project file.
 
 To suppress the warnings in code:
 
@@ -122,7 +135,6 @@ To suppress the warnings in a project file:
 
 ## See also
 
-- [API obsoletions with non-default diagnostic IDs (.NET 5)](../../core/compatibility/core-libraries/5.0/obsolete-apis-with-custom-diagnostics.md)
-- [API obsoletions with non-default diagnostic IDs (.NET 6)](../../core/compatibility/core-libraries/6.0/obsolete-apis-with-custom-diagnostics.md)
-- [API obsoletions with non-default diagnostic IDs (.NET 7)](../../core/compatibility/core-libraries/7.0/obsolete-apis-with-custom-diagnostics.md)
 - [API obsoletions with non-default diagnostic IDs (.NET 8)](../../core/compatibility/core-libraries/8.0/obsolete-apis-with-custom-diagnostics.md)
+- [API obsoletions with non-default diagnostic IDs (.NET 9)](../../core/compatibility/core-libraries/9.0/obsolete-apis-with-custom-diagnostics.md)
+- [API obsoletions with non-default diagnostic IDs (.NET 10)](../../core/compatibility/core-libraries/10.0/obsolete-apis.md)

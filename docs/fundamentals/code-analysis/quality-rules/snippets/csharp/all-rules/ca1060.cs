@@ -1,7 +1,6 @@
 ﻿using System.ComponentModel;
 using System.Runtime.InteropServices;
 using System.Security;
-using System.Security.Permissions;
 
 namespace ca1060
 {

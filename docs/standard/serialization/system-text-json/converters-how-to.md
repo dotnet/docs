@@ -1,7 +1,7 @@
 ---
 title: "How to write custom converters for JSON serialization - .NET"
 description: "Learn how to create custom converters for the JSON serialization classes that are provided in the System.Text.Json namespace."
-ms.date: 05/12/2022
+ms.date: 10/22/2025
 no-loc: [System.Text.Json, Newtonsoft.Json]
 helpviewer_keywords:
   - "JSON serialization"
@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "objects, serializing"
   - "converters"
 ms.topic: how-to
+ai-usage: ai-assisted
 ---
 
 # How to write custom converters for JSON serialization (marshalling) in .NET
@@ -69,7 +70,7 @@ The following steps explain how to create a converter by following the basic pat
 * Override the `Write` method to serialize the incoming object of type `T`. Use the <xref:System.Text.Json.Utf8JsonWriter> that is passed to the method to write the JSON.
 * Override the `CanConvert` method only if necessary. The default implementation returns `true` when the type to convert is of type `T`. Therefore, converters that support only type `T` don't need to override this method. For an example of a converter that does need to override this method, see the [polymorphic deserialization](#support-polymorphic-deserialization) section later in this article.
 
-You can refer to the [built-in converters source code](https://github.com/dotnet/runtime/tree/81bf79fd9aa75305e55abe2f7e9ef3f60624a3a1/src/libraries/System.Text.Json/src/System/Text/Json/Serialization/Converters/) as reference implementations for writing custom converters.
+You can refer to the [built-in converters source code](https://github.com/dotnet/runtime/tree/main/src/libraries/System.Text.Json/src/System/Text/Json/Serialization/Converters/) as reference implementations for writing custom converters.
 
 ## Steps to follow the factory pattern
 
@@ -86,7 +87,7 @@ The `Enum` type is similar to an open generic type: a converter for `Enum` has t
 
 ## The use of `Utf8JsonReader` in the `Read` method
 
-If your converter is converting a JSON object, the `Utf8JsonReader` will be positioned on the begin object token when the `Read` method begins. You must then read through all the tokens in that object and exit the method with the reader positioned on **the corresponding end object token**.  If you read beyond the end of the object, or if you stop before reaching the corresponding end token, you get a `JsonException` exception indicating that:
+If your converter is converting a JSON object, the `Utf8JsonReader` is positioned on the begin object token when the `Read` method begins. You must then read through all the tokens in that object and exit the method with the reader positioned on **the corresponding end object token**.  If you read beyond the end of the object, or if you stop before reaching the corresponding end token, you get a `JsonException` exception indicating that:
 
 > The converter 'ConverterName' read too much or not enough.
 
@@ -120,9 +121,9 @@ Path: $.TemperatureRanges | LineNumber: 4 | BytePositionInLine: 24
 
 ### When to throw which exception type
 
-When the JSON payload contains tokens that are not valid for the type being deserialized, throw a `JsonException`.
+When the JSON payload contains tokens that aren't valid for the type being deserialized, throw a `JsonException`.
 
-When you want to disallow certain types, throw a `NotSupportedException`. This exception is what the serializer automatically throws for types that are not supported. For example, `System.Type` is not supported for security reasons, so an attempt to deserialize it results in a `NotSupportedException`.
+When you want to disallow certain types, throw a `NotSupportedException`. This exception is what the serializer automatically throws for types that aren't supported. For example, `System.Type` isn't supported for security reasons, so an attempt to deserialize it results in a `NotSupportedException`.
 
 You can throw other exceptions as needed, but they don't automatically include JSON path information.
 
@@ -227,7 +228,7 @@ For scenarios that require type inference, the following code shows a custom con
 
 The example shows the converter code and a `WeatherForecast` class with `object` properties. The `Main` method deserializes a JSON string into a `WeatherForecast` instance, first without using the converter, and then using the converter. The console output shows that without the converter, the run-time type for the `Date` property is `JsonElement`; with the converter, the run-time type is `DateTime`.
 
-The [unit tests folder](https://github.com/dotnet/runtime/tree/c72b54243ade2e1118ab24476220a2eba6057466/src/libraries/System.Text.Json/tests/Serialization/) in the `System.Text.Json.Serialization` namespace has more examples of custom converters that handle deserialization to `object` properties.
+The [unit tests folder](https://github.com/dotnet/runtime/tree/main/src/libraries/System.Text.Json/tests/System.Text.Json.Tests/Serialization/CustomConverterTests) in the `System.Text.Json.Serialization` namespace has more examples of custom converters that handle deserialization to `object` properties.
 
 ### Support polymorphic deserialization
 
@@ -238,7 +239,7 @@ Suppose, for example, you have a `Person` abstract base class, with `Employee` a
 The following code shows a base class, two derived classes, and a custom converter for them. The converter uses a discriminator property to do polymorphic deserialization. The type discriminator isn't in the class definitions but is created during serialization and is read during deserialization.
 
 > [!IMPORTANT]
-> The example code requires JSON object name/value pairs to stay in order, which is not a standard requirement of JSON.
+> The example code requires JSON object name/value pairs to stay in order, which isn't a standard requirement of JSON.
 
 :::code language="csharp" source="snippets/how-to/csharp/Person.cs" id="Person":::
 
@@ -311,8 +312,8 @@ By default, the serializer handles null values as follows:
 
 * For reference types and <xref:System.Nullable%601> types:
 
-  * It does not pass `null` to custom converters on serialization.
-  * It does not pass `JsonTokenType.Null` to custom converters on deserialization.
+  * It doesn't pass `null` to custom converters on serialization.
+  * It doesn't pass `JsonTokenType.Null` to custom converters on deserialization.
   * It returns a `null` instance on deserialization.
   * It writes `null` directly with the writer on serialization.
 
@@ -363,18 +364,18 @@ When you use <xref:System.Text.Json.Serialization.ReferenceHandler.Preserve%2A>,
 
 The [Migrate from Newtonsoft.Json to System.Text.Json](migrate-from-newtonsoft.md) article contains additional samples of custom converters.
 
-The [unit tests folder](https://github.com/dotnet/runtime/blob/81bf79fd9aa75305e55abe2f7e9ef3f60624a3a1/src/libraries/System.Text.Json/tests/Serialization/) in the `System.Text.Json.Serialization` source code includes other custom converter samples, such as:
+The [unit tests folder](https://github.com/dotnet/runtime/tree/main/src/libraries/System.Text.Json/tests/System.Text.Json.Tests/Serialization/CustomConverterTests) in the `System.Text.Json.Serialization` source code includes other custom converter samples, such as:
 
-* [Int32 converter that converts null to 0 on deserialize](https://github.com/dotnet/runtime/blob/81bf79fd9aa75305e55abe2f7e9ef3f60624a3a1/src/libraries/System.Text.Json/tests/Serialization/CustomConverterTests.NullValueType.cs)
-* [Int32 converter that allows both string and number values on deserialize](https://github.com/dotnet/runtime/blob/81bf79fd9aa75305e55abe2f7e9ef3f60624a3a1/src/libraries/System.Text.Json/tests/Serialization/CustomConverterTests.Int32.cs)
-* [Enum converter](https://github.com/dotnet/runtime/blob/81bf79fd9aa75305e55abe2f7e9ef3f60624a3a1/src/libraries/System.Text.Json/tests/Serialization/CustomConverterTests.Enum.cs)
-* [List\<T> converter that accepts external data](https://github.com/dotnet/runtime/blob/81bf79fd9aa75305e55abe2f7e9ef3f60624a3a1/src/libraries/System.Text.Json/tests/Serialization/CustomConverterTests.List.cs)
-* [Long[] converter that works with a comma-delimited list of numbers](https://github.com/dotnet/runtime/blob/81bf79fd9aa75305e55abe2f7e9ef3f60624a3a1/src/libraries/System.Text.Json/tests/Serialization/CustomConverterTests.Array.cs)
+* [Int32 converter that converts null to 0 on deserialize](https://github.com/dotnet/runtime/blob/main/src/libraries/System.Text.Json/tests/System.Text.Json.Tests/Serialization/CustomConverterTests/CustomConverterTests.NullValueType.cs)
+* [Int32 converter that allows both string and number values on deserialize](https://github.com/dotnet/runtime/blob/main/src/libraries/System.Text.Json/tests/System.Text.Json.Tests/Serialization/CustomConverterTests/CustomConverterTests.Int32.cs)
+* [Enum converter](https://github.com/dotnet/runtime/blob/main/src/libraries/System.Text.Json/tests/System.Text.Json.Tests/Serialization/CustomConverterTests/CustomConverterTests.Enum.cs)
+* [List\<T> converter that accepts external data](https://github.com/dotnet/runtime/blob/main/src/libraries/System.Text.Json/tests/System.Text.Json.Tests/Serialization/CustomConverterTests/CustomConverterTests.List.cs)
+* [Long[] converter that works with a comma-delimited list of numbers](https://github.com/dotnet/runtime/blob/main/src/libraries/System.Text.Json/tests/System.Text.Json.Tests/Serialization/CustomConverterTests/CustomConverterTests.Array.cs)
 
-If you need to make a converter that modifies the behavior of an existing built-in converter, you can get [the source code of the existing converter](https://github.com/dotnet/runtime/tree/81bf79fd9aa75305e55abe2f7e9ef3f60624a3a1/src/libraries/System.Text.Json/src/System/Text/Json/Serialization/Converters) to serve as a starting point for customization.
+If you need to make a converter that modifies the behavior of an existing built-in converter, you can get [the source code of the existing converter](https://github.com/dotnet/runtime/tree/main/src/libraries/System.Text.Json/src/System/Text/Json/Serialization/Converters) to serve as a starting point for customization.
 
 ## Additional resources
 
-* [Source code for built-in converters](https://github.com/dotnet/runtime/tree/81bf79fd9aa75305e55abe2f7e9ef3f60624a3a1/src/libraries/System.Text.Json/src/System/Text/Json/Serialization/Converters)
+* [Source code for built-in converters](https://github.com/dotnet/runtime/tree/main/src/libraries/System.Text.Json/src/System/Text/Json/Serialization/Converters)
 * [System.Text.Json overview](overview.md)
 * [How to serialize and deserialize JSON](how-to.md)

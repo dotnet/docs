@@ -1,7 +1,7 @@
 ---
 title: "Generic classes and methods"
 description: Learn about generics. Generic types maximize code reuse, type safety, and performance, and are commonly used to create collection classes.
-ms.date: 03/14/2024
+ms.date: 10/10/2025
 f1_keywords:
   - "generics_CSharpKeyword"
 helpviewer_keywords:

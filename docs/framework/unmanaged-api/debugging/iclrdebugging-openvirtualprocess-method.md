@@ -38,10 +38,10 @@ HRESULT OpenVirtualProcess(
 ## Parameters
 
  `moduleBaseAddress`
- [in] The base address of a module in the target process. COR_E_NOT_CLR will be returned if the specified module is not a CLR module.
+ [in] The base address of a module in the target process. `COR_E_NOT_CLR` is returned if the specified module is not a CLR module.
 
  `pDataTarget`
- [in] A data target abstraction that allows the managed debugger to inspect process state. The debugger must implement the [ICorDebugDataTarget](icordebugdatatarget-interface.md) interface. You should implement the [ICLRDebuggingLibraryProvider](iclrdebugginglibraryprovider-interface.md) interface to support scenarios where the CLR that is being debugged is not installed locally on the computer.
+ [in] A data target abstraction that allows the managed debugger to inspect process state. The debugger must implement the [ICorDebugDataTarget](../../../core/unmanaged-api/debugging/icordebug/icordebugdatatarget-interface.md) interface. You should implement the [ICLRDebuggingLibraryProvider](iclrdebugginglibraryprovider-interface.md) interface to support scenarios where the CLR that is being debugged is not installed locally on the computer.
 
  `pLibraryProvider`
  [in] A library provider callback interface that allows version-specific debugging libraries to be located and loaded on demand. This parameter is required only if `ppProcess` or `pFlags` is not `null`.
@@ -50,7 +50,7 @@ HRESULT OpenVirtualProcess(
  [in] The highest version of the CLR that this debugger can debug. You should specify the major, minor, and build versions from the latest CLR version this debugger supports, and set the revision number to 65535 to accommodate future in-place CLR servicing releases.
 
  `riidProcess`
- [in] The ID of the ICorDebugProcess interface to retrieve. Currently, the only accepted values are IID_CORDEBUGPROCESS3, IID_CORDEBUGPROCESS2, and IID_CORDEBUGPROCESS.
+ [in] The ID of the ICorDebugProcess interface to retrieve. Currently, the only accepted values are `IID_CORDEBUGPROCESS3`, `IID_CORDEBUGPROCESS2`, and `IID_CORDEBUGPROCESS`.
 
  `ppProcess`
  [out] A pointer to the COM interface that is identified by `riidProcess`.
@@ -61,16 +61,16 @@ HRESULT OpenVirtualProcess(
  On output, the returned `CLR_DEBUGGING_VERSION` structure will be filled in with the version information for the CLR.
 
  `pdwFlags`
- [out] Informational flags about the specified runtime. See the [CLR_DEBUGGING_PROCESS_FLAGS](clr-debugging-process-flags-enumeration.md) topic for a description of the flags.
+ [out] Informational flags about the specified runtime. For a description of the flags, see [CLR_DEBUGGING_PROCESS_FLAGS](clr-debugging-process-flags-enumeration.md).
 
 ## Return Value
 
  This method returns the following specific HRESULTs as well as HRESULT errors that indicate method failure.
 
-|HRESULT|Description|
-|-------------|-----------------|
-|S_OK|The method completed successfully.|
-|E_POINTER|`pDataTarget` is `null`.|
+| HRESULT   | Description                        |
+|-----------|------------------------------------|
+| S_OK      | The method completed successfully. |
+| E_POINTER | `pDataTarget` is `null`.           |
 |CORDBG_E_LIBRARY_PROVIDER_ERROR|The [ICLRDebuggingLibraryProvider](iclrdebugginglibraryprovider-interface.md) callback returns an error or does not provide a valid handle.|
 |CORDBG_E_MISSING_DATA_TARGET_INTERFACE|`pDataTarget` does not implement the required data target interfaces for this version of the runtime.|
 |CORDBG_E_NOT_CLR|The indicated module is not a CLR module. This HRESULT is also returned when a CLR module cannot be detected because memory has been corrupted, the module is not available, or the CLR version is later than the shim version.|

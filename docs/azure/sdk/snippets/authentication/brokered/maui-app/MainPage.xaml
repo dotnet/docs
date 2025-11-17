@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SecretVaultApp.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="dotnet-bot.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="dot net bot in a hovercraft number nine" />
+
+            <Label
+                Text="Azure Key Vault Secret Retrieval"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Label
+                Text="Click the button below to authenticate and retrieve a secret from Azure Key Vault"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level2"
+                TextColor="Gray"
+                HorizontalTextAlignment="Center" />
+
+            <Button
+                x:Name="RetrieveSecretBtn"
+                Text="Retrieve Secret" 
+                SemanticProperties.Hint="Authenticates and retrieves secret from Azure Key Vault"
+                Clicked="OnRetrieveSecretClicked"
+                HorizontalOptions="Fill"
+                BackgroundColor="DodgerBlue"
+                TextColor="White" />
+
+            <ActivityIndicator
+                x:Name="LoadingIndicator"
+                IsVisible="False"
+                IsRunning="False"
+                Color="DodgerBlue" />
+
+            <Label
+                x:Name="ResultLabel"
+                Text=""
+                FontSize="14"
+                TextColor="Green"
+                HorizontalTextAlignment="Center"
+                IsVisible="False" />
+
+            <Label
+                x:Name="ErrorLabel"
+                Text=""
+                FontSize="14"
+                TextColor="Red"
+                HorizontalTextAlignment="Center"
+                IsVisible="False" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

@@ -155,7 +155,7 @@ Beginning in C# 14, assignment is permissible with a null conditional access exp
 
 The preceding example shows assignment to a property and an indexed element on a reference type that might be null. An important behavior for this assignment is that the expression on the right-hand side of the `=` is evaluated only when the left-hand side is known to be non-null. For example, in the following code, the function `GenerateNextIndex` is called only when the `values` array isn't null. If the `values` array is null, `GenerateNextIndex` isn't called:
 
-:::code language="csharp" source="snippets/shared/NullCoalescingOperator.cs" id="NullForgivingAssignment":::
+:::code language="csharp" source="snippets/shared/NullCoalescingOperator.cs" id="ConditionalRHS":::
 
 In other words, the preceding code is equivalent to the following code using an `if` statement for the null check:
 
@@ -271,7 +271,7 @@ For more information, see the following sections of the [C# language specificati
 - [Null-conditional member access](~/_csharpstandard/standard/expressions.md#1288-null-conditional-member-access)
 - [Invocation expressions](~/_csharpstandard/standard/expressions.md#12810-invocation-expressions)
 
-For more information about indices and ranges, see the [feature proposal note](~/_csharplang/proposals/csharp-8.0/ranges.md).
+For more information about indices and ranges, see the [feature proposal note](~/_csharpstandard/standard/ranges.md).
 
 ## See also
 

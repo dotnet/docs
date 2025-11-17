@@ -153,4 +153,4 @@ If service discovery was added to the host using the `AddServiceDiscoveryCore` e
 
 ## See also
 
-- [Service discovery in .NET Aspire](/dotnet/aspire/service-discovery/overview)
+- [Service discovery in Aspire](/dotnet/aspire/service-discovery/overview)

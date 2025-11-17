@@ -20,7 +20,7 @@ class Program
 
         // <parse>
         ParseResult parseResult = rootCommand.Parse(args);
-        if (parseResult.GetValue(fileOption) is FileInfo parsedFile)
+        if (parseResult.Errors.Count == 0 && parseResult.GetValue(fileOption) is FileInfo parsedFile)
         {
             ReadFile(parsedFile);
             return 0;

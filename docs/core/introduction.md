@@ -14,7 +14,7 @@ The .NET platform has been designed to deliver productivity, performance, securi
 
 .NET has the following [design points](https://devblogs.microsoft.com/dotnet/why-dotnet/):
 
-* **Productivity is full-stack** with runtime, libraries, language, and tools all contributing to developer user experience.
+* **Productivity is full-stack** with runtime, libraries, languages, and tools all contributing to developer user experience.
 * **Safe code** is the primary compute model, while [unsafe code](../csharp/language-reference/unsafe-code.md) enables additional manual optimizations.
 * **Static and dynamic code** are both supported, enabling a broad set of distinct scenarios.
 * **Native code interop and hardware intrinsics** are low cost and high-fidelity (raw API and instruction access).
@@ -76,9 +76,9 @@ There are multiple variants of .NET, each supporting a different type of app. Th
 
 .NET implementations:
 
+* **.NET (Core)** -- Modern .NET. A cross-platform and open source implementation of .NET, rethought for the cloud age while remaining significantly compatible. It is evolving and actively supported.
 * **.NET Framework** -- The original .NET. It provides access to the broad capabilities of Windows and Windows Server. It is actively supported, in maintenance.
-* **Mono** -- The original community and open source .NET. A cross-platform implementation of .NET Framework. Actively supported for Android, iOS, and WebAssembly.
-* **.NET (Core)** -- Modern .NET. A cross-platform and open source implementation of .NET, rethought for the cloud age while remaining significantly compatible with .NET Framework. Actively supported for Linux, macOS, and Windows.
+* **Mono** -- The original community and open source .NET. A cross-platform implementation of .NET Framework.
 
 ## Next steps
 

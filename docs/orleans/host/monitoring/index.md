@@ -356,6 +356,8 @@ Regardless of the distributed tracing exporter you choose, call:
 - <xref:Orleans.Hosting.CoreHostingExtensions.AddActivityPropagation(Orleans.Hosting.ISiloBuilder)>: which enables distributed tracing for the silo.
 - <xref:Orleans.Hosting.ClientBuilderExtensions.AddActivityPropagation(Orleans.Hosting.IClientBuilder)>: which enables distributed tracing for the client.
 
+Or set the `EnableDistributedTracing` config option to `true`.
+
 Referring back to the [Orleans GPS Tracker sample app](/samples/dotnet/samples/orleans-gps-device-tracker-sample), you can use the [Zipkin](https://zipkin.io) distributed tracing system to monitor the app by updating _Program.cs_. To use OpenTelemetry and Zipkin with Orleans, call the following `IServiceCollection` extension method:
 
 ```csharp

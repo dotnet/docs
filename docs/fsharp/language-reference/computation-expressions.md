@@ -80,7 +80,7 @@ If you bind the call to a computation expression with `let`, you will not get th
 
 ### `and!`
 
-The `and!` keyword allows you to bind the results of multiple computation expression calls in a performant manner.
+The `and!` keyword allows you to bind the results of multiple computation expression calls more efficiently. This keyword enables *applicative computation expressions*, which provide a different computational model from the standard monadic approach.
 
 ```fsharp
 let doThingsAsync url =
@@ -92,11 +92,19 @@ let doThingsAsync url =
     }
 ```
 
-Using a series of `let! ... let! ...` forces re-execution of expensive binds, so using `let! ... and! ...` should be used when binding the results of numerous computation expressions.
+Using a series of `let! ... let! ...` executes the computations sequentially, even if they are independent. In contrast, `let! ... and! ...` indicates that the computations are independent, allowing applicative combination. This independence allows computation expression authors to:
+
+- Execute computations more efficiently.
+- Can run computations in parallel.
+- Accumulate results without unnecessary sequential dependencies.
+
+The restriction is that computations combined with `and!` cannot depend on the results of previously bound values within the same `let!`/`and!` chain. This trade-off enables the performance benefits.
 
 `and!` is defined primarily by the `MergeSources(x1, x2)` member on the builder type.
 
 Optionally, `MergeSourcesN(x1, x2 ..., xN)` can be defined to reduce the number of tupling nodes, and `BindN(x1, x2 ..., xN, f)`, or `BindNReturn(x1, x2, ..., xN, f)` can be defined to bind computation expression results efficiently without tupling nodes.
+
+For more information on applicative computation expressions, see [Applicative Computation Expressions in F# 5](../whats-new/fsharp-50.md#applicative-computation-expressions) and [F# RFC FS-1063](https://github.com/fsharp/fslang-design/blob/main/FSharp-5.0/FS-1063-support-letbang-andbang-for-applicative-functors.md).
 
 ### `do!`
 
@@ -256,6 +264,7 @@ The following table describes methods that can be used in a workflow builder cla
 |`Delay`|`(unit -> M<'T>) -> Delayed<'T>`|Wraps a computation expression as a function. `Delayed<'T>` can be any type, commonly `M<'T>` or `unit -> M<'T>` are used. The default implementation returns a `M<'T>`.|
 |`Return`|`'T -> M<'T>`|Called for `return` in computation expressions.|
 |`ReturnFrom`|`M<'T> -> M<'T>`|Called for `return!` in computation expressions.|
+|`ReturnFromFinal`|`M<'T> -> M<'T>`|If present, called for `return!` and `do!` when in tail-call position.|
 |`BindReturn`|`(M<'T1> * ('T1 -> 'T2)) -> M<'T2>`|Called for an efficient `let! ... return` in computation expressions.|
 |`BindNReturn`|`(M<'T1> * M<'T2> * ... * M<'TN> * ('T1 * 'T2 ... * 'TN -> M<'U>)) -> M<'U>`|Called for efficient `let! ... and! ... return` in computation expressions without merging inputs.<br /><br />for example, `Bind3Return`, `Bind4Return`.|
 |`MergeSources`|`(M<'T1> * M<'T2>) -> M<'T1 * 'T2>`|Called for `and!` in computation expressions.|
@@ -269,6 +278,7 @@ The following table describes methods that can be used in a workflow builder cla
 |`While`|`(unit -> bool) * Delayed<'T> -> M<'T>`or<br /><br />`(unit -> bool) * Delayed<unit> -> M<unit>`|Called for `while...do` expressions in computation expressions.|
 |`Yield`|`'T -> M<'T>`|Called for `yield` expressions in computation expressions.|
 |`YieldFrom`|`M<'T> -> M<'T>`|Called for `yield!` expressions in computation expressions.|
+|`YieldFromFinal`|`M<'T> -> M<'T>`|If present, called for `yield!` when in tail-call position and in case of `do!` in tail-call position as a fallback for `ReturnFromFinal`|
 |`Zero`|`unit -> M<'T>`|Called for empty `else` branches of `if...then` expressions in computation expressions.|
 |`Quote`|`Quotations.Expr<'T> -> Quotations.Expr<'T>`|Indicates that the computation expression is passed to the `Run` member as a quotation. It translates all instances of a computation into a quotation.|
 

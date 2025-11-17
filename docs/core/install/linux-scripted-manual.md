@@ -3,8 +3,8 @@ title: Install .NET on Linux without using a package manager
 description: Demonstrates how to install the .NET SDK and the .NET Runtime on Linux without a package manager. Use the install script or manually extract the binaries.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/11/2024
-ms.custom: linux-related-content
+ms.date: 11/08/2025
+ms.custom: linux-related-content, updateeachrelease
 ---
 
 # Install .NET on Linux by using an install script or by extracting binaries
@@ -15,26 +15,26 @@ This article demonstrates how to install the .NET SDK or the .NET Runtime on Lin
 
 ## .NET releases
 
-There are two types of supported releases, Long Term Support (LTS) releases or Standard Term Support (STS). The quality of all releases is the same. The only difference is the length of support. LTS releases get free support and patches for 3 years. STS releases get free support and patches for 18 months. For more information, see [.NET Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
+There are two types of supported releases, Long Term Support (LTS) and Standard Term Support (STS). The quality of all releases is the same. The only difference is the length of support. LTS releases get free support and patches for three years. STS releases get free support and patches for two years. For more information, see [.NET Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
 
 The following table lists the support status of each version of .NET (and .NET Core):
 
-| ✔️ Supported | ❌ Unsupported |
-|-------------|---------------|
-| 9 (STS)     | 7             |
-| 8 (LTS)     | 6 (LTS)       |
-|             | 5             |
-|             | 3.1           |
-|             | 3.0           |
-|             | 2.2           |
-|             | 2.1           |
-|             | 2.0           |
-|             | 1.1           |
-|             | 1.0           |
+| ✔️ Supported | ❌ Out of support |
+|---------------|-------------------|
+|   10 (LTS)    | 7                 |
+|   9 (STS)     | 6                 |
+|   8 (LTS)     | 5                 |
+|               | 3.1               |
+|               | 3.0               |
+|               | 2.2               |
+|               | 2.1               |
+|               | 2.0               |
+|               | 1.1               |
+|               | 1.0               |
 
 ## Dependencies
 
-It's possible that when you install .NET, specific dependencies may not be installed, such as when [manually installing](#manual-install). The following list details Linux distributions that are supported by Microsoft and have dependencies you may need to install. Check the distribution page for more information:
+It's possible that when you install .NET, specific dependencies might not be installed, such as when you [manually install](#manual-install). The following list details Linux distributions that are supported by Microsoft and have dependencies you might need to install. Check the distribution page for more information:
 
 - [Alpine](linux-alpine.md#dependencies)
 - [Debian](linux-debian.md#dependencies)
@@ -47,15 +47,20 @@ For generic information about the dependencies, see [Self-contained Linux apps](
 
 ### RPM dependencies
 
-If your distribution wasn't previously listed, and is RPM-based, you may need the following dependencies:
+If your distribution wasn't previously listed, and is RPM-based, you might need the following dependencies:
 
-- krb5-libs
-- libicu
+- glibc
+- libgcc
+- ca-certificates
 - openssl-libs
+- libstdc++
+- libicu
+- tzdata
+- krb5-libs
 
 ### DEB dependencies
 
-If your distribution wasn't previously listed, and is debian-based, you may need the following dependencies:
+If your distribution wasn't previously listed, and is debian-based, you might need the following dependencies:
 
 - libc6
 - libgcc1
@@ -90,7 +95,7 @@ Before running this script, make sure you grant permission for this script to ru
 chmod +x ./dotnet-install.sh
 ```
 
-The script defaults to installing the latest [long term support (LTS)](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) SDK version, which is .NET 8. To install the latest release, which might not be an (LTS) version, use the `--version latest` parameter.
+The script defaults to installing the latest [long term support (LTS)](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) SDK version, which is .NET 10. To install the latest release, which might not be an (LTS) version, use the `--version latest` parameter.
 
 ```bash
 ./dotnet-install.sh --version latest
@@ -116,12 +121,13 @@ To learn how to use the .NET CLI, see [.NET CLI overview](../tools/index.md).
 
 ## Manual install
 
-<!-- Note, this content is copied in macos.md. Any fixes should be applied there too, though content may be different -->
+<!-- Note, this content is copied in macos.md. Any fixes should be applied there too, though content might be different -->
 
 As an alternative to the package managers, you can download and manually install the SDK and runtime. Manual installation is commonly used as part of continuous integration testing or on an unsupported Linux distribution. For a developer or user, it's better to use a package manager.
 
 Download a **binary** release for either the SDK or the runtime from one of the following sites. The .NET SDK includes the corresponding runtime:
 
+- ✔️ [.NET 10 downloads](https://dotnet.microsoft.com/download/dotnet/10.0)
 - ✔️ [.NET 9 downloads](https://dotnet.microsoft.com/download/dotnet/9.0)
 - ✔️ [.NET 8 downloads](https://dotnet.microsoft.com/download/dotnet/8.0)
 - [All .NET Core downloads](https://dotnet.microsoft.com/download/dotnet)
@@ -132,7 +138,7 @@ Different versions of .NET can be extracted to the same folder, which coexist si
 
 ### Example
 
-<!-- Note, this content is copied in macos.md. Any fixes should be applied there too, though content may be different -->
+<!-- Note, this content is copied in macos.md. Any fixes should be applied there too, though content might be different -->
 
 The following commands use Bash to set the environment variable `DOTNET_ROOT` to the current working directory followed by `.dotnet`. That directory is created if it doesn't exist. The `DOTNET_FILE` environment variable is the filename of the .NET binary release you want to install. This file is extracted to the `DOTNET_ROOT` directory. Both the `DOTNET_ROOT` directory and its `tools` subdirectory are added to the `PATH` environment variable.
 
@@ -140,7 +146,7 @@ The following commands use Bash to set the environment variable `DOTNET_ROOT` to
 > If you run these commands, remember to change the `DOTNET_FILE` value to the name of the .NET binary you downloaded.
 
 ```bash
-DOTNET_FILE=dotnet-sdk-9.0.100-linux-x64.tar.gz
+DOTNET_FILE=dotnet-sdk-9.0.306-linux-x64.tar.gz
 export DOTNET_ROOT=$(pwd)/.dotnet
 
 mkdir -p "$DOTNET_ROOT" && tar zxf "$DOTNET_FILE" -C "$DOTNET_ROOT"
@@ -162,11 +168,11 @@ To learn how to use the .NET CLI, see [.NET CLI overview](../tools/index.md).
 
 [!INCLUDE [verify-download-intro](includes/verify-download-intro.md)]
 
-Use the `sha512sum` command to print the checksum of the file you've downloaded. For example, the following command reports the checksum of the _dotnet-sdk-8.0.100-linux-x64.tar.gz_ file:
+Use the `sha512sum` command to print the checksum of the file you've downloaded. For example, the following command reports the checksum of the _dotnet-sdk-9.0.306-linux-x64.tar.gz_ file:
 
 ```bash
-$ sha512sum dotnet-sdk-8.0.100-linux-x64.tar.gz
-13905ea20191e70baeba50b0e9bbe5f752a7c34587878ee104744f9fb453bfe439994d38969722bdae7f60ee047d75dda8636f3ab62659450e9cd4024f38b2a5  dotnet-sdk-8.0.100-linux-x64.tar.gz
+$ sha512sum dotnet-sdk-9.0.306-linux-x64.tar.gz
+bbb6bdc3c8048e7cc189759b406257839e7d4bd6b8b1ba4bcdaeea8f92340e6855231043dd73f902130ca5357af72b810bb51a4da4d1315a2927ff85f831f1d5  dotnet-sdk-9.0.306-linux-x64.tar.gz
 ```
 
 Compare the checksum with the value provided by the download site.
@@ -175,15 +181,15 @@ Compare the checksum with the value provided by the download site.
 
 The .NET release notes contain a link to a checksum file you can use to validate your downloaded file. The following steps describe how to download the checksum file and validate a .NET install binary:
 
-01. The release notes page for .NET 8 on GitHub at <https://github.com/dotnet/core/tree/main/release-notes/8.0#releases> contains a section named **Releases**. The table in that section links to the downloads and checksum files for each .NET 8 release:
+01. The release notes page for .NET 9 on GitHub at <https://github.com/dotnet/core/tree/main/release-notes/9.0#releases> contains a section named **Releases**. The table in that section links to the downloads and checksum files for each .NET 9 release. The following image shows the .NET 8 release table as a reference:
 
     :::image type="content" source="media/install-sdk/release-notes-root.png" alt-text="The github release notes version table for .NET":::
 
 01. Select the link for the version of .NET that you downloaded.
 
-    The previous section used .NET SDK 8.0.100, which is in the .NET 8.0.0 release.
+    The previous section used .NET SDK 9.0.306, which is in the .NET 9.0.10 release.
 
-01. In the release page, you can see the .NET Runtime and .NET SDK version, and a link to the checksum file:
+01. In the release page, you can see the .NET Runtime and .NET SDK version, and a link to the checksum file. The following image shows the .NET 8 release table as a reference:
 
     :::image type="content" source="media/install-sdk/release-notes-version.png" alt-text="The download table with checksums for .NET":::
 
@@ -196,7 +202,7 @@ The .NET release notes contain a link to a checksum file you can use to validate
     Replace the link in the following command with the link you copied.
 
     ```bash
-    curl -O https://builds.dotnet.microsoft.com/dotnet/checksums/8.0.0-sha.txt
+    curl -O https://builds.dotnet.microsoft.com/dotnet/checksums/9.0.10-sha.txt
     ```
 
 01. With both the checksum file and the .NET release file downloaded to the same directory, use the `sha512sum -c {file} --ignore-missing` command to validate the downloaded file.
@@ -204,17 +210,17 @@ The .NET release notes contain a link to a checksum file you can use to validate
     When validation passes, you see the file printed with the **OK** status:
 
     ```bash
-    $ sha512sum -c 8.0.0-sha.txt --ignore-missing
-    dotnet-sdk-8.0.100-linux-x64.tar.gz: OK
+    $ sha512sum -c 9.0.10-sha.txt --ignore-missing
+    dotnet-sdk-9.0.306-linux-x64.tar.gz: OK
     ```
 
     If you see the file marked as **FAILED**, the file you downloaded isn't valid and shouldn't be used.
 
     ```bash
-    $ sha512sum -c 8.0.0-sha.txt --ignore-missing
-    dotnet-sdk-8.0.100-linux-x64.tar.gz: FAILED
+    $ sha512sum -c 9.0.10-sha.txt --ignore-missing
+    dotnet-sdk-9.0.306-linux-x64.tar.gz: FAILED
     sha512sum: WARNING: 1 computed checksum did NOT match
-    sha512sum: 8.0.0-sha.txt: no file was verified
+    sha512sum: 9.0.10-sha.txt: no file was verified
     ```
 
 ## Set environment variables system-wide

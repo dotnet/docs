@@ -1,7 +1,8 @@
 ---
 title: Test a .NET class library using Visual Studio Code
 description: Learn how to use Visual Studio Code and run a unit test project for a .NET class library.
-ms.date: 06/14/2024
+ms.date: 10/23/2025
+ai-usage: ai-assisted
 ---
 # Tutorial: Test a .NET class library using Visual Studio Code
 
@@ -9,7 +10,7 @@ This tutorial shows how to automate unit testing by adding a test project to a s
 
 ## Prerequisites
 
-- This tutorial works with the solution that you create in [Create a .NET class library using Visual Studio Code](library-with-visual-studio-code.md).
+This tutorial works with the solution that you create in [Create a .NET class library using Visual Studio Code](library-with-visual-studio-code.md).
 
 ## Create a unit test project
 

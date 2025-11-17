@@ -6,9 +6,9 @@ ms.author: ygerges
 ms.date: 07/22/2025
 ---
 
-# Migrate from MSTest v3 to MSTest v4
+# Migrate from MSTest v3 to v4
 
-The preview version MSTest v4 is now available. This migration guide explores what's changed in MSTest v4 and how you can migrate to this version.
+The stable version MSTest v4 is now available. This migration guide explores what's changed in MSTest v4 and how you can migrate to this version.
 
 > [!NOTE]
 > Generally speaking, MSTest v4 isn't binary compatible with MSTest v3. Any library compiled against v3 must be recompiled against v4.
@@ -172,6 +172,23 @@ The property was added on individual data sources like `DataRowAttribute` and `D
 
 The `ConditionBaseAttribute.ShouldRun` property was renamed to `IsConditionMet`. That makes it clearer that `ConditionMode` shouldn't be used in the implementation.
 
+### Multiple analyzers are updated to be warning by default
+
+The default severity of the following analyzers changed from Info to Warning:
+
+- [MSTEST0001](./mstest-analyzers/mstest0001.md)
+- [MSTEST0007](./mstest-analyzers/mstest0007.md)
+- [MSTEST0017](./mstest-analyzers/mstest0017.md)
+- [MSTEST0023](./mstest-analyzers/mstest0023.md)
+- [MSTEST0024](./mstest-analyzers/mstest0024.md)
+- [MSTEST0025](./mstest-analyzers/mstest0025.md)
+- [MSTEST0030](./mstest-analyzers/mstest0030.md)
+- [MSTEST0031](./mstest-analyzers/mstest0031.md)
+- [MSTEST0032](./mstest-analyzers/mstest0032.md)
+- [MSTEST0035](./mstest-analyzers/mstest0035.md)
+- [MSTEST0037](./mstest-analyzers/mstest0037.md)
+- [MSTEST0045](./mstest-analyzers/mstest0045.md)
+
 ## Behavior breaking changes
 
 These are breaking changes that might affect the behavior at run time.
@@ -196,3 +213,9 @@ To address long outstanding bugs that many users filed, the generation of `TestC
 ### TreatDiscoveryWarningsAsErrors now defaults to true
 
 v4 uses stricter defaults. As such, the default value of `TreatDiscoveryWarningsAsErrors` is now `true`. This should be a transparent change for most users and should help other users to uncover hidden bugs.
+
+### MSTest.Sdk no longer adds `Microsoft.NET.Test.Sdk` reference when using Microsoft.Testing.Platform
+
+By default, MSTest.Sdk uses Microsoft.Testing.Platform. If the `UseVSTest` MSBuild property is set to true, it will use VSTest instead. In MSTest 3.x, the SDK added a reference to Microsoft.NET.Test.Sdk (which brings VSTest support) even when using Microsoft.Testing.Platform. This package reference is unnecessary when running with Microsoft.Testing.Platform and has been removed in MSTest v4.
+
+If you still want to have VSTest supported (for example, if you want to run with vstest.console), you need to manually add a package reference to `Microsoft.NET.Test.Sdk` NuGet package to your project.

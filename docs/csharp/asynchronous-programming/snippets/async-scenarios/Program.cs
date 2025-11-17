@@ -139,7 +139,7 @@ public class Program
     // </GetUsersForDataset>
 
     // <GetUsersForDatasetByLINQ>
-    private static async Task<User[]> GetUsersAsyncByLINQ(IEnumerable<int> userIds)
+    private static async Task<User[]> GetUsersByLINQAsync(IEnumerable<int> userIds)
     {
         var getUserTasks = userIds.Select(id => GetUserAsync(id)).ToArray();
         return await Task.WhenAll(getUserTasks);

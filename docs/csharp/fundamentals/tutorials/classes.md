@@ -1,11 +1,11 @@
 ---
 title: Classes and objects tutorial
 description: Create your first C# program and explore object oriented concepts
-ms.date: 02/25/2022
+ms.date: 10/10/2025
 ---
 # Explore object oriented programming with classes and objects
 
-In this tutorial, you'll build a console application and see the basic object-oriented features that are part of the C# language.
+In this tutorial, you build a console application and see the basic object-oriented features that are part of the C# language.
 
 ## Prerequisites
 
@@ -13,7 +13,7 @@ In this tutorial, you'll build a console application and see the basic object-or
 
 ## Create your application
 
-Using a terminal window, create a directory named *Classes*. You'll build your application there. Change to that directory and type `dotnet new console` in the console window. This command creates your application. Open *Program.cs*. It should look like this:
+Using a terminal window, create a directory named *Classes*. You build your application there. Change to that directory and type `dotnet new console` in the console window. This command creates your application. Open *Program.cs*. It should look like this:
 
 ```csharp
 // See https://aka.ms/new-console-template for more information
@@ -22,7 +22,7 @@ Console.WriteLine("Hello, World!");
 
 In this tutorial, you're going to create new types that represent a bank account. Typically developers define each class in a different text file. That makes it easier to manage as a program grows in size. Create a new file named *BankAccount.cs* in the *Classes* directory.
 
-This file will contain the definition of a ***bank account***. Object Oriented programming organizes code by creating types in the form of ***classes***. These classes contain the code that represents a specific entity. The `BankAccount` class represents a bank account. The code implements specific operations through methods and properties. In this tutorial, the bank account supports this behavior:
+This file contains the definition of a ***bank account***. Object Oriented programming organizes code by creating types in the form of ***classes***. These classes contain the code that represents a specific entity. The `BankAccount` class represents a bank account. The code implements specific operations through methods and properties. In this tutorial, the bank account supports this behavior:
 
 1. It has a 10-digit number that uniquely identifies the bank account.
 1. It has a string that stores the name or names of the owners.
@@ -55,7 +55,7 @@ public class BankAccount
 }
 ```
 
-Before going on, let's take a look at what you've built.  The `namespace` declaration provides a way to logically organize your code. This tutorial is relatively small, so you'll put all the code in one namespace.
+Before going on, let's take a look at what you built. The `namespace` declaration provides a way to logically organize your code. This tutorial is relatively small, so you put all the code in one namespace.
 
 `public class BankAccount` defines the class, or type, you're creating. Everything inside the `{` and `}` that follows the class declaration defines the state and behavior of the class. There are five ***members*** of the `BankAccount` class. The first three are ***properties***. Properties are data elements and can have code that enforces validation or other rules. The last two are ***methods***. Methods are blocks of code that perform a single function. Reading the names of each of the members should provide enough information for you or another developer to understand what the class does.
 
@@ -63,7 +63,7 @@ Before going on, let's take a look at what you've built.  The `namespace` declar
 
 The first feature to implement is to open a bank account. When a customer opens an account, they must supply an initial balance, and information about the owner or owners of that account.
 
-Creating a new object of the `BankAccount` type means defining a ***constructor*** that assigns those values. A ***constructor*** is a member that has the same name as the class. It's used to initialize objects of that class type. Add the following constructor to the `BankAccount` type. Place the following code above the declaration of `MakeDeposit`:
+Creating a new object of the `BankAccount` type requires defining a ***constructor*** that assigns those values. A ***constructor*** is a member that has the same name as the class. It's used to initialize objects of that class type. Add the following constructor to the `BankAccount` type. Place the following code above the declaration of `MakeDeposit`:
 
 ```csharp
 public BankAccount(string name, decimal initialBalance)
@@ -73,7 +73,7 @@ public BankAccount(string name, decimal initialBalance)
 }
 ```
 
-The preceding code identifies the properties of the object being constructed by including the `this` qualifier. That qualifier is usually optional and omitted. You could also have written:
+The preceding code identifies the properties of the object being constructed by including the `this` qualifier. That qualifier is usually optional and omitted. You could also write:
 
 ```csharp
 public BankAccount(string name, decimal initialBalance)
@@ -94,9 +94,9 @@ var account = new BankAccount("<name>", 1000);
 Console.WriteLine($"Account {account.Number} was created for {account.Owner} with {account.Balance} initial balance.");
 ```
 
-Let's run what you've built so far. If you're using Visual Studio, Select **Start without debugging** from the **Debug** menu. If you're using a command line, type `dotnet run` in the directory where you've created your project.
+Let's run what you built so far. If you're using Visual Studio, Select **Start without debugging** from the **Debug** menu. If you're using a command line, type `dotnet run` in the directory where you created your project.
 
-Did you notice that the account number is blank? It's time to fix that. The account number should be assigned when the object is constructed. But it shouldn't be the responsibility of the caller to create it. The `BankAccount` class code should know how to assign new account numbers.  A simple way is to start with a 10-digit number. Increment it when each new account is created. Finally, store the current account number when an object is constructed.
+Did you notice that the account number is blank? It's time to fix that. The account number should be assigned when the object is constructed. But it shouldn't be the responsibility of the caller to create it. The `BankAccount` class code should know how to assign new account numbers. A simple way is to start with a 10-digit number. Increment it when each new account is created. Finally, store the current account number when an object is constructed.
 
 Add a member declaration to the `BankAccount` class. Place the following line of code after the opening brace `{` at the beginning of the `BankAccount` class:
 
@@ -104,7 +104,7 @@ Add a member declaration to the `BankAccount` class. Place the following line of
 private static int s_accountNumberSeed = 1234567890;
 ```
 
-The `accountNumberSeed` is a data member. It's `private`, which means it can only be accessed by code inside the `BankAccount` class. It's a way of separating the public responsibilities (like having an account number) from the private implementation (how account numbers are generated). It's also `static`, which means it's shared by all of the `BankAccount` objects. The value of a non-static variable is unique to each instance of the `BankAccount` object. The `accountNumberSeed` is a `private static` field and thus has the `s_` prefix as per C# naming conventions. The `s` denoting `static` and `_` denoting `private` field. Add the following two lines to the constructor to assign the account number. Place them after the line that says `this.Balance = initialBalance`:
+The `accountNumberSeed` is a data member. It's `private`, which means it can only be accessed by code inside the `BankAccount` class. It's a way of separating the public responsibilities (like having an account number) from the private implementation (how account numbers are generated). It's also `static`, which means all `BankAccount` objects share the same single instance of this variable. The value of a non-static variable is unique to each instance of the `BankAccount` object. The `accountNumberSeed` is a `private static` field and thus has the `s_` prefix as per C# naming conventions. The `s` denoting `static` and `_` denoting `private` field. To initialize each account number, add the following two lines to the constructor. Place them after the line that says `this.Balance = initialBalance`:
 
 ```csharp
 Number = s_accountNumberSeed.ToString();
@@ -117,7 +117,7 @@ Type `dotnet run` to see the results.
 
 Your bank account class needs to accept deposits and withdrawals to work correctly. Let's implement deposits and withdrawals by creating a journal of every transaction for the account. Tracking every transaction has a few advantages over simply updating the balance on each transaction. The history can be used to audit all transactions and manage daily balances. Computing the balance from the history of all transactions when needed ensures any errors in a single transaction that are fixed will be correctly reflected in the balance on the next computation.
 
-Let's start by creating a new type to represent a transaction. The transaction is a simple type that doesn't have any responsibilities. It needs a few properties. Create a new file named *Transaction.cs*. Add the following code to it:
+Start by creating a new type that represents a transaction. The transaction is a `record` type that doesn't have any responsibilities. It needs a few properties. Create a new file named *Transaction.cs*. Add the following code to it:
 
 :::code language="csharp" source="./snippets/introduction-to-classes/Transaction.cs":::
 
@@ -125,19 +125,19 @@ Now, let's add a <xref:System.Collections.Generic.List%601> of `Transaction` obj
 
 :::code language="csharp" source="./snippets/introduction-to-classes/BankAccount.cs" id="TransactionDeclaration":::
 
-Now, let's correctly compute the `Balance`. The current balance can be found by summing the values of all transactions. As the code is currently, you can only get the initial balance of the account, so you'll have to update the `Balance` property. Replace the line `public decimal Balance { get; }` in *BankAccount.cs* with the following code:
+Now, let's correctly compute the `Balance`. The current balance can be found by summing the values of all transactions. As the code is currently, you can only get the initial balance of the account, so you have to update the `Balance` property. Replace the line `public decimal Balance { get; }` in *BankAccount.cs* with the following code:
 
 :::code language="csharp" source="./snippets/introduction-to-classes/BankAccount.cs" id="BalanceComputation":::
 
 This example shows an important aspect of ***properties***. You're now computing the balance when another programmer asks for the value. Your computation enumerates all transactions, and provides the sum as the current balance.
 
-Next, implement the `MakeDeposit` and `MakeWithdrawal` methods. These methods will enforce the final two rules: the initial balance must be positive, and any withdrawal must not create a negative balance.
+Next, implement the `MakeDeposit` and `MakeWithdrawal` methods. These methods enforce the final two rules: the initial balance must be positive, and any withdrawal must not create a negative balance.
 
 These rules introduce the concept of ***exceptions***. The standard way of indicating that a method can't complete its work successfully is to throw an exception. The type of exception and the message associated with it describe the error. Here, the `MakeDeposit` method throws an exception if the amount of the deposit isn't greater than 0. The `MakeWithdrawal` method throws an exception if the withdrawal amount isn't greater than 0, or if applying the withdrawal results in a negative balance. Add the following code after the declaration of the `_allTransactions` list:
 
 :::code language="csharp" source="./snippets/introduction-to-classes/BankAccount.cs" id="DepositAndWithdrawal":::
 
-The [`throw` statement](../../language-reference/statements/exception-handling-statements.md#the-throw-statement) **throws** an exception. Execution of the current block ends, and control transfers to the first matching `catch` block found in the call stack. You'll add a `catch` block to test this code a little later on.
+The [`throw` statement](../../language-reference/statements/exception-handling-statements.md#the-throw-statement) **throws** an exception. Execution of the current block ends, and control transfers to the first matching `catch` block found in the call stack. You add a `catch` block to test this code a little later on.
 
 The constructor should get one change so that it adds an initial transaction, rather than updating the balance directly. Since you already wrote the `MakeDeposit` method, call it from your constructor. The finished constructor should look like this:
 
@@ -169,7 +169,7 @@ catch (ArgumentOutOfRangeException e)
 }
 ```
 
-You use the [`try-catch` statement](../../language-reference/statements/exception-handling-statements.md#the-try-catch-statement) to mark a block of code that may throw exceptions and to catch those errors that you expect. You can use the same technique to test the code that throws an exception for a negative balance. Add the following code before the declaration of `invalidAccount` in your `Main` method:
+You use the [`try-catch` statement](../../language-reference/statements/exception-handling-statements.md#the-try-catch-statement) to mark a block of code that might throw exceptions and to catch those errors that you expect. You can use the same technique to test the code that throws an exception for a negative balance. Add the following code before the declaration of `invalidAccount` in your `Main` method:
 
 ```csharp
 // Test for a negative balance.
@@ -192,7 +192,7 @@ To finish this tutorial, you can write the `GetAccountHistory` method that creat
 
 :::code language="csharp" source="./snippets/introduction-to-classes/BankAccount.cs" id="History":::
 
-The history uses the <xref:System.Text.StringBuilder> class to format a string that contains one line for each transaction. You've seen the string formatting code earlier in these tutorials. One new character is `\t`. That inserts a tab to format the output.
+The history uses the <xref:System.Text.StringBuilder> class to format a string that contains one line for each transaction. You used string formatting earlier in these tutorials. One new character is `\t`. That inserts a tab to format the output.
 
 Add this line to test it in *Program.cs*:
 
@@ -200,7 +200,7 @@ Add this line to test it in *Program.cs*:
 Console.WriteLine(account.GetAccountHistory());
 ```
 
-Run your program to see the results.
+Run your program and check the results.
 
 ## Next steps
 

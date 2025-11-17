@@ -16,7 +16,7 @@ ms.assetid: 35c7a18f-133a-4584-bd25-bb338568b0c6
 ---
 # CreateDebuggingInterfaceFromVersion function
 
-Accepts a common language runtime (CLR) version string that is returned from the [CreateVersionStringFromModule function](createversionstringfrommodule-function.md), and returns a corresponding debugger interface (typically, [ICorDebug](../../../framework/unmanaged-api/debugging/icordebug-interface.md)).
+Accepts a common language runtime (CLR) version string that is returned from the [CreateVersionStringFromModule function](createversionstringfrommodule-function.md), and returns a corresponding debugger interface (typically, [ICorDebug](./icordebug/icordebug-interface.md)).
 
 ## Syntax
 
@@ -33,12 +33,12 @@ HRESULT CreateDebuggingInterfaceFromVersion (
  [in] Version string of the CLR in the target debuggee, which is returned by the [CreateVersionStringFromModule function](createversionstringfrommodule-function.md).
 
  `ppCordb`\
- [out] Pointer to a pointer to a COM object (`IUnknown`). This object will be cast to an [ICorDebug](../../../framework/unmanaged-api/debugging/icordebug-interface.md) object before it is returned.
+ [out] Pointer to a pointer to a COM object (`IUnknown`). This object will be cast to an [ICorDebug](./icordebug/icordebug-interface.md) object before it is returned.
 
 ## Return value
 
  `S_OK`\
- `ppCordb` references a valid object that implements the [ICorDebug interface](../../../framework/unmanaged-api/debugging/icordebug-interface.md) interface.
+ `ppCordb` references a valid object that implements the [ICorDebug interface](./icordebug/icordebug-interface.md) interface.
 
  `E_INVALIDARG`\
  Either `szDebuggeeVersion` or `ppCordb` is null.
@@ -50,7 +50,7 @@ HRESULT CreateDebuggingInterfaceFromVersion (
  Either mscordbi.dll or mscordaccore.dll is not the same version as the target CoreCLR.dll.
 
  `E_FAIL` (or other `E_` return codes)\
- Unable to return an [ICorDebug interface](../../../framework/unmanaged-api/debugging/icordebug-interface.md).
+ Unable to return an [ICorDebug interface](./icordebug/icordebug-interface.md).
 
 ## Remarks
 

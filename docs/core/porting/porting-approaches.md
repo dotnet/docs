@@ -3,19 +3,19 @@ title: Porting approaches
 description: Create a porting plan that best reflects your project and context.
 author: StephenBonikowsky
 ms.author: stebon
-ms.date: 06/10/2021
+ms.date: 09/15/2025
 ---
 # Create a porting plan
 
-We recommend using the Visual Studio [.NET Upgrade Assistant](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.upgradeassistant) to update .NET Framework code to the latest .NET versions. For more information see the blog [Upgrading your .NET projects with Visual Studio](https://devblogs.microsoft.com/dotnet/upgrade-assistant-now-in-visual-studio/).
+Before you jump straight into the code, take the time to go through the recommended pre-migration steps. This article gives you insight into the kinds of issues you might come across, and helps you decide on an approach that makes the most sense.
 
-[!INCLUDE[](~/includes/deprecating-api-port.md)]
-
-Before you jump straight into the code, take the time to go through the recommended pre-migration steps. This article gives you insight into the kinds of issues you may come across, and helps you decide on an approach that makes the most sense.
+[!INCLUDE[](../../../includes/deprecating-api-port.md)]
 
 ## Port your code
 
 Make sure that you follow the [prerequisites to porting code](premigration-needed-changes.md) before you continue any further. Be ready to decide on the best approach for you and begin porting code.
+
+[!INCLUDE [github-copilot-suggestion](includes/github-copilot-suggestion.md)]
 
 ### Deal primarily with the compiler
 
@@ -27,7 +27,7 @@ This approach works well for small projects or projects that don't use many .NET
 
 Although it's unstructured, this code-focused approach often resolves issues quickly. A project that contains only data models might be an ideal candidate for this approach.
 
-### Stay on the .NET Framework until portability issues are resolved
+### Stay on .NET Framework until portability issues are resolved
 
 This approach might be the best if you prefer to have code that compiles during the entire process. The approach is as follows:
 
@@ -98,5 +98,5 @@ If you start with the base of your library and move outward from the base and te
 
 ## Next steps
 
-- [Overview of the .NET Upgrade Assistant](upgrade-assistant-overview.md)
+- [What is GitHub Copilot app modernization](github-copilot-app-modernization/overview.md)
 - [Organize your project to support both .NET Framework and .NET Core](project-structure.md)

@@ -1,0 +1,36 @@
+---
+description: "Learn more about: ICorDebugFunction2::EnumerateNativeCode Method"
+title: "ICorDebugFunction2::EnumerateNativeCode Method"
+ms.date: "03/30/2017"
+api_name:
+  - "ICorDebugFunction2.EnumerateNativeCode"
+api_location:
+  - "mscordbi.dll"
+api_type:
+  - "COM"
+f1_keywords:
+  - "ICorDebugFunction2::EnumerateNativeCode"
+helpviewer_keywords:
+  - "ICorDebugFunction2::EnumerateNativeCode method [.NET debugging]"
+  - "EnumerateNativeCode method [.NET debugging]"
+topic_type:
+  - "apiref"
+---
+# ICorDebugFunction2::EnumerateNativeCode Method
+
+Gets an interface pointer to an ICorDebugCodeEnum object that contains the native code statements in the function referenced by this ICorDebugFunction2 object.
+
+> [!NOTE]
+> `EnumerateNativeCode` is not implemented in the current version of the .NET Framework.
+
+## Syntax
+
+```cpp
+HRESULT EnumerateNativeCode (
+    [out] ICorDebugCodeEnum   **ppCodeEnum
+);
+```
+
+## Requirements
+
+ **Header:** CorDebug.idl, CorDebug.h

@@ -33,7 +33,7 @@ namespace ca2213
     public class TypeB : IDisposable
     {
         // Assume this type has some unmanaged resources.
-        TypeA aFieldOfADisposableType = new TypeA();
+        TypeA aFieldOfADisposableType = new();
         private bool disposed = false;
 
         protected virtual void Dispose(bool disposing)

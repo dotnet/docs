@@ -3,7 +3,6 @@ title: Get started with .NET AI and MCP
 description: Learn about .NET AI and MCP key concepts and development resources to get started building MCP clients and servers
 ms.date: 04/29/2025
 ms.topic: overview
-ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 author: alexwolfmsft
 ms.author: alexwolf
 # CustomerIntent: As a .NET developer new to OpenAI, I want deploy and use sample code to interact to learn from the sample code to summarize text.
@@ -97,4 +96,3 @@ Learn more about .NET and MCP using these resources:
 
 - [Overview of the .NET + AI ecosystem](dotnet-ai-ecosystem.md)
 - [Microsoft.Extensions.AI](/dotnet/ai/ai-extensions)
-- [Semantic Kernel overview for .NET](semantic-kernel-dotnet-overview.md)

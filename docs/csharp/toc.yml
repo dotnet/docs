@@ -126,6 +126,8 @@ items:
     - name: Inheritance in C# and .NET
       href: fundamentals/tutorials/inheritance.md
     # programming to interfaces
+    - name: Generate API documentation with XML comments
+      href: fundamentals/tutorials/xml-documentation.md
     - name: Converting types
       displayName: cast, is, as
       href: fundamentals/tutorials/safely-cast-using-pattern-matching-is-and-as-operators.md
@@ -174,6 +176,10 @@ items:
     href: whats-new/version-update-considerations.md
   - name: Tutorials
     items:
+    - name: Explore extension members
+      href: whats-new/tutorials/extension-members.md
+    - name: Explore compound assignment
+      href: whats-new/tutorials/compound-assignment-operators.md
     - name: Explore primary constructors
       href: whats-new/tutorials/primary-constructors.md
     - name: Explore static interface members

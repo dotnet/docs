@@ -18,6 +18,10 @@ Consider carefully how your app will handle these errors.
 
 ## Locking, retries, and timeouts
 
+> [!WARNING]
+> Although SQLite supports concurrent access to the same database from multiple threads, the .NET APIs objects are not thread-safe. This means that `SqliteConnection`, `SqliteCommand` and `SqliteDataReader` cannot be shared and used concurrently from multiple threads.
+> When using Microsoft.Data.Sqlite from a concurrent application, simply create and open a new instance of `SqliteConnection` whenever you need to access the database (pooling ensures that this is a fast operation).
+
 SQLite is aggressive when it comes to locking tables and database files. If your app enables any concurrent database access, you'll likely encounter busy and locked errors. You can mitigate many errors by using [write-ahead logging](async.md).
 
 Whenever Microsoft.Data.Sqlite encounters a busy or locked error, it will automatically retry until it succeeds or the command timeout is reached.

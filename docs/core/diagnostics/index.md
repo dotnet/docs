@@ -5,9 +5,9 @@ ms.date: 10/20/2023
 ms.topic: overview
 #Customer intent: As a .NET Core developer I want to find the best tools to help me diagnose problems so that I can be productive.
 ---
-# What diagnostic tools are available in .NET Core?
+# Diagnostics in .NET
 
-Software doesn't always behave as you would expect, but .NET Core has tools and APIs that will help you diagnose these issues quickly and effectively.
+Software doesn't always behave as you would expect, but .NET has tools and APIs that will help you diagnose these issues quickly and effectively.
 
 [Native AOT deployment](../../core/deploying/native-aot/index.md) is an application model that's been available since .NET 7. For information about .NET 8 diagnostic support for Native AOT apps, see [Native AOT diagnostics](../../core/deploying/native-aot/diagnostics.md).
 
@@ -17,9 +17,9 @@ This article helps you find the various tools you need.
 
 [Debuggers](managed-debuggers.md) allow you to interact with your program. Pausing, incrementally executing, examining,  and resuming gives you insight into the behavior of your code. A debugger is a good choice for diagnosing functional problems that can be easily reproduced.
 
-## Unit testing
+## Profilers
 
-[Unit testing](../testing/index.md) is a key component of continuous integration and deployment of high-quality software. Unit tests are designed to give you an early warning when you break something.
+[Profilers](profilers.md) allow you to analyze your program's performance. You can collect data on memory usage, CPU usage, and other metrics to diagnose and understand performance issues.
 
 ## Instrumentation for observability
 
@@ -50,10 +50,6 @@ There are multiple ways that the instrumentation data can be egressed from the a
 - [dotnet-monitor](./dotnet-monitor.md) - an agent for collecting traces and telemetry
 - Third-party libraries or app code can read the information from the <xref:System.Diagnostics.Metrics?displayProperty=nameWithType>, <xref:Microsoft.Extensions.Logging.ILogger%601>, and <xref:System.Diagnostics.Activity?displayProperty=nameWithType> APIs.
 
-## Resource monitoring
-
-[Resource monitoring](diagnostic-resource-monitoring.md) is the process of continuously observing and tracking the utilization, performance, and availability of various computing resources within a system. These resources can include hardware components (such as CPUs, memory, disk storage, and network interfaces) as well as software components (like applications and services). Resource monitoring is often used to detect and diagnose performance issues, and to ensure that the system is operating within expected parameters.
-
 ## Specialized diagnostics
 
 If debugging or observability is not sufficient, .NET supports additional diagnostic mechanisms such as EventSource, Dumps, DiagnosticSource. For more information, see the [specialized diagnostics](./specialized-diagnostics-overview.md) article.
@@ -63,10 +59,6 @@ If debugging or observability is not sufficient, .NET supports additional diagno
 .NET supports a number of [CLI tools](./tools-overview.md) that can be used to diagnose your applications.
 
 ## .NET Core diagnostics tutorials
-
-### Write your own diagnostic tool
-
-[The diagnostics client library](diagnostics-client-library.md) lets you write your own custom diagnostic tool best suited for your diagnostic scenario. Look up information in the [Microsoft.Diagnostics.NETCore.Client API reference](microsoft-diagnostics-netcore-client.md).
 
 ### Debug a memory leak
 
@@ -95,3 +87,7 @@ If debugging or observability is not sufficient, .NET supports additional diagno
 ### Measure performance using EventCounters
 
 [Tutorial: Measure performance using EventCounters in .NET](event-counter-perf.md) shows you how to use the <xref:System.Diagnostics.Tracing.EventCounter> API to measure performance in your .NET app.
+
+### Write your own diagnostic tool
+
+[The diagnostics client library](diagnostics-client-library.md) lets you write your own custom diagnostic tool best suited for your diagnostic scenario. For more information, see the [Microsoft.Diagnostics.NETCore.Client API reference](microsoft-diagnostics-netcore-client.md).

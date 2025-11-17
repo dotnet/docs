@@ -43,6 +43,8 @@ A token can contain spaces if it's enclosed in quotation marks (`"`). Here's an 
 dotnet tool search "ef migrations add"
 ```
 
+The symbol hierarchy (commands, options, arguments) is considered to be trusted input; the token values are not.
+
 ## Commands
 
 A *command* in command-line input is a token that specifies an action or defines a group of related actions. For example:

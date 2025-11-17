@@ -46,7 +46,7 @@ In unsafe code, when the argument is a managed type, the `sizeof` operator retur
 
 ## C# language specification
 
-For more information, see [The sizeof operator](~/_csharpstandard/standard/unsafe-code.md#2369-the-sizeof-operator) section of the [C# language specification](~/_csharpstandard/standard/README.md).
+For more information, see [The sizeof operator](~/_csharpstandard/standard/unsafe-code.md#2469-the-sizeof-operator) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 ## See also
 

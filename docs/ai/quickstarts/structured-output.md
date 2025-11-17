@@ -3,7 +3,6 @@ title: Quickstart - Request a response with structured output
 description: Learn how to create a chat app that responds with structured output, that is, output that conforms to a type that you specify.
 ms.date: 04/30/2025
 ms.topic: quickstart
-ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 ---
 
 # Request a response with structured output
@@ -93,9 +92,11 @@ Complete the following steps to create a console app that connects to the `gpt-4
 
 1. And instead of requesting just the analyzed enumeration value, you can request the text response along with the analyzed value.
 
-   Define a record type to contain the text response and analyzed sentiment:
+   Define a [record type](../../csharp/language-reference/builtin-types/record.md) to contain the text response and analyzed sentiment:
 
    :::code language="csharp" source="./snippets/structured-output/Program.cs" id="InputOutputRecord":::
+
+   (This record type is defined using [primary constructor](../../csharp/programming-guide/classes-and-structs/instance-constructors.md#primary-constructors) syntax. Primary constructors combine the type definition with the parameters necessary to instantiate any instance of the class. The C# compiler generates public properties for the primary constructor parameters.)
 
    Send the request using the record type as the type argument to `GetResponseAsync<T>`:
 

@@ -1,7 +1,7 @@
 ---
 title: How to ignore properties with System.Text.Json
 description: "Learn how to ignore properties when serializing with System.Text.Json in .NET."
-ms.date: 07/22/2022
+ms.date: 10/22/2025
 ms.custom: devdivchpfy22
 no-loc: [System.Text.Json, Newtonsoft.Json]
 dev_langs:
@@ -13,6 +13,7 @@ helpviewer_keywords:
   - "serialization"
   - "objects, serializing"
 ms.topic: how-to
+ai-usage: ai-assisted
 ---
 
 # How to ignore properties with System.Text.Json

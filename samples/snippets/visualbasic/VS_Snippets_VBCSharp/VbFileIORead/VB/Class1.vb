@@ -20,7 +20,7 @@ Class Class735fe9d70f7a4185ba02f35e580ec4b8
     Public Sub Method2()
         ' <snippet2>
         Dim fileReader As String
-        fileReader = My.Computer.FileSystem.ReadAllText("C:\test.txt")
+        fileReader = My.Computer.FileSystem.ReadAllText("test.txt")
         MsgBox(fileReader)
         ' </snippet2>
     End Sub
@@ -28,10 +28,35 @@ Class Class735fe9d70f7a4185ba02f35e580ec4b8
     Public Sub Method3()
         ' <snippet3>
         Dim fileReader As String
-        fileReader = My.Computer.FileSystem.ReadAllText("C:\test.txt",
+        fileReader = My.Computer.FileSystem.ReadAllText("test.txt",
            System.Text.Encoding.UTF32)
         MsgBox(fileReader)
         ' </snippet3>
+    End Sub
+
+    Public Sub LoadTextIntoRichTextBox()
+        ' <snippet21>
+        ' Load text file into a RichTextBox control
+        ' Note: This assumes RichTextBox1 is a control on your form
+        Dim fileText As String
+        fileText = My.Computer.FileSystem.ReadAllText("test.txt")
+        ' RichTextBox1.Text = fileText
+        ' </snippet21>
+    End Sub
+
+    Public Sub LoadTextIntoRichTextBoxWithPath()
+        ' <snippet22>
+        ' Load text file into a RichTextBox control using a specific path
+        Try
+            Dim filePath As String = System.IO.Path.Combine(System.AppDomain.CurrentDomain.BaseDirectory, "test.txt")
+            Dim fileText As String = My.Computer.FileSystem.ReadAllText(filePath)
+            ' RichTextBox1.Text = fileText
+        Catch ex As System.IO.FileNotFoundException
+            MsgBox("File not found: " & ex.Message)
+        Catch ex As Exception
+            MsgBox("Error reading file: " & ex.Message)
+        End Try
+        ' </snippet22>
     End Sub
 
 End Class

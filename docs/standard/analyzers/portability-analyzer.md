@@ -6,7 +6,7 @@ ms.date: 01/19/2025
 
 # The .NET Portability Analyzer
 
-[!INCLUDE[](~/includes/deprecating-api-port.md)]
+[!INCLUDE [deprecating-api-port](../../../includes/deprecating-api-port.md)]
 
 Want to make your libraries support multi-platform? Want to see how much work is required to make your .NET Framework application run on .NET Core? The [.NET Portability Analyzer](https://github.com/microsoft/dotnet-apiport) is a tool that analyzes assemblies and provides a detailed report on .NET APIs that are missing for the applications or libraries to be portable on your specified targeted .NET platforms. The Portability Analyzer is a [console app](https://aka.ms/apiportdownload) that analyzes assemblies by specified files or directory.
 

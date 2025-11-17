@@ -1,7 +1,7 @@
 ---
 description: "Learn the different C# preprocessor directives that control conditional compilation, warnings, nullable analysis, and more"
 title: "Preprocessor directives"
-ms.date: 06/19/2025
+ms.date: 09/24/2025
 f1_keywords:
   - "cs.preprocessor"
   - "#nullable"
@@ -56,11 +56,11 @@ The C# compiler ignores any preprocessor directive that starts with `#:` or `#!`
 The `#!` preprocessor directive enables unix shells to directly execute a C# file using `dotnet run`. For example:
 
 ```csharp
-#!/usr/local/share/dotnet/dotnet run
+#!/usr/bin/env dotnet run
 Console.WriteLine("Hello");
 ```
 
-The preceding code snippet informs a Unix shell to execute the file using `/usr/local/share/dotnet/dotnet run`. (Your installation directory for the `dotnet` CLI can be different on different Unix or macOS distributions). The `#!` line must be the first line in the file, and the following tokens are the program to run. You need to enable the *execute* (`x`) permission on the C# file for that feature.
+The preceding code snippet informs a Unix shell to execute the file using `dotnet run`. The `/usr/bin/env` command locates the `dotnet` executable in your PATH, making this approach portable across different Unix and macOS distributions. The `#!` line must be the first line in the file, and the following tokens are the program to run. You need to enable the *execute* (`x`) permission on the C# file for that feature.
 
 The `#:` directives that are used in file-based apps include:
 
@@ -108,6 +108,20 @@ The `#:` directives that are used in file-based apps include:
 
   ```xml
   <PackageReference Include="System.CommandLine" Version="2.0.0-*">
+  ```
+
+- `#:project`:
+
+  Instances of `#:project` are translated into `ProjectReference` elements to include the project with the specified path to the project. For example:
+
+  ```csharp
+  #:project ../Path/To.Example
+  ```
+
+  The preceding preprocessor token is translated into:
+
+  ```xml
+  <ProjectReference Include="../Path/To.Example/To.Example.csproj" />
   ```
   
 Tools can add new tokens following the `#:` convention.
@@ -285,7 +299,7 @@ You instruct the compiler to generate user-defined compiler errors and warnings,
 - `#warning`: Generate a compiler warning, with a specific message.
 - `#line`: Change the line number printed with compiler messages.
 
-`#error` lets you generate a [CS1029](compiler-messages/cs1029.md) user-defined error from a specific location in your code. For example:
+`#error` lets you generate a [CS1029](compiler-messages/preprocessor-errors.md) user-defined error from a specific location in your code. For example:
 
 ```csharp
 #error Deprecated code in this method.
@@ -294,7 +308,7 @@ You instruct the compiler to generate user-defined compiler errors and warnings,
 > [!NOTE]
 > The compiler treats `#error version` in a special way and reports a compiler error, CS8304, with a message containing the used compiler and language versions.
 
-`#warning` lets you generate a [CS1030](../misc/cs1030.md) level one compiler warning from a specific location in your code. For example:
+`#warning` lets you generate a [CS1030](compiler-messages/preprocessor-errors.md) level one compiler warning from a specific location in your code. For example:
 
 ```csharp
 #warning Deprecated code in this method.

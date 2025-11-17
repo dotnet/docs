@@ -92,7 +92,7 @@ namespace ca1024
         // Time-consuming method that is called by GetCustomerHistory.
         Appointment[] LoadHistoryFromDB(long customerID)
         {
-            ArrayList records = new ArrayList();
+            ArrayList records = [];
             // Load from database.
             return (Appointment[])records.ToArray();
         }

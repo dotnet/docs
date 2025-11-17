@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 
 namespace ca2214
 {
@@ -37,7 +37,7 @@ namespace ca2214
     {
         public static void Main2214()
         {
-            DerivedType derivedInstance = new DerivedType();
+            DerivedType derivedInstance = new();
         }
     }
     //</snippet1>

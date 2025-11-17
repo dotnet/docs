@@ -12,6 +12,8 @@ ms.assetid: 14c68e84-657e-49c2-aa8b-4978dbaf4454
 
 The profiling API enables a profiler to monitor a program's execution by the common language runtime (CLR).
 
+These articles describe APIs for .NET Framework. For unmanaged APIs that are supported on .NET (Core), see [.NET profiling (unmanaged API reference)](../../../core/unmanaged-api/profiling/index.md).
+
 ## In This Section
 
  [Profiling Overview](profiling-overview.md)

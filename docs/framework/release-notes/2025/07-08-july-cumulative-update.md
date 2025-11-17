@@ -30,7 +30,7 @@ Addresses an issue where interactions between .NET Framework DLL loads and OS co
 
 ## Known issues
 
-This release contains no known issues.  
+This release contains no known issues.
 
 ## Summary tables
 
@@ -44,7 +44,7 @@ This release contains no known issues.
 | .NET Framework 3.5, 4.8.1 | [5062062](https://support.microsoft.com/kb/5062062) |
 | **Windows 11, version 22H2 and Windows 11, version 23H2** | |
 | .NET Framework 3.5, 4.8.1 | [5056580](https://support.microsoft.com/kb/5056580) |
-| **Microsoft server operating system, version 22H2** | **[5062159](https://support.microsoft.com/kb/5062159)** |
+| **Microsoft server operating system, version 22H2** | **[5062159](https://support.microsoft.com/topic/july-8-2025-kb5062159-cumulative-update-for-net-framework-3-5-4-8-and-4-8-1-for-windows-server-2022-b088c07f-6f7d-424c-8b2f-819ab05091ef)** |
 | .NET Framework 3.5, 4.8 | [5062063](https://support.microsoft.com/kb/5062063) |
 | .NET Framework 3.5, 4.8.1 | [5062061](https://support.microsoft.com/kb/5062061) |
 | **Microsoft server operating system, version 21H2** | **[5062159](https://support.microsoft.com/kb/5062159)** |
@@ -79,7 +79,7 @@ The following table is for earlier Windows and Windows Server versions for Secur
 | .NET Framework 3.5.1 | [5044011](https://support.microsoft.com/kb/5044011) |
 | .NET Framework 4.6.2, 4.7, 4.7.1, 4.7.2 | [5062071](https://support.microsoft.com/kb/5062071) |
 | .NET Framework 4.8 |[5062065](https://support.microsoft.com/kb/5062065) |
-| **Windows Server 2008** | **[5055687](https://support.microsoft.com/kb/5055687)** |
+| **Windows Server 2008** | **[5055687](https://support.microsoft.com/topic/april-8-2025-security-and-quality-rollup-for-net-framework-2-0-3-0-3-5-sp1-4-6-2-for-windows-server-2008-sp2-kb5055687-9c7cd4f4-b30e-4e9d-a183-d241b7a72440)** |
 | .NET Framework 2.0, 3.0 | [5044010](https://support.microsoft.com/kb/5044010) |
 | .NET Framework 3.5 SP1 | [5040673](https://support.microsoft.com/kb/5040673) |
 | .NET Framework 4.6.2 | [5062071](https://support.microsoft.com/kb/5062071) |

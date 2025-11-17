@@ -5,8 +5,27 @@ public static class PropertyPattern
     public static void Examples()
     {
         WithTypeCheck();
+
+        // <EmptyPropertyPattern>
+        if (GetSomeNullableStringValue() is { } nonNullValue) // Empty property pattern with variable creation
+        {
+            Console.WriteLine("NotNull:" + nonNullValue);
+        }
+        else
+        {
+            nonNullValue = "NullFallback"; // we can access the variable here.
+            Console.WriteLine("it was null, here's the fallback: " + nonNullValue);
+        }
+        // </EmptyPropertyPattern>
+
     }
 
+    private static string? GetSomeNullableStringValue()
+    {
+        // Simulate getting a nullable string value.
+        return DateTime.Now.Ticks % 2 == 0 ? "Hello, World!" : null;
+    }
+    
     // <BasicExample>
     static bool IsConferenceDay(DateTime date) => date is { Year: 2020, Month: 5, Day: 19 or 20 or 21 };
     // </BasicExample>

@@ -20,10 +20,10 @@ public class Example9
          Console.WriteLine($"Size of BoolStruct: {sizeof(BoolStruct)}");
          Console.WriteLine("Field offsets:");
          Console.WriteLine($"   flag1: {(bool*) &b.flag1 - addr}");
-         Console.WriteLine($"   flag1: {(bool*) &b.flag2 - addr}");
-         Console.WriteLine($"   flag1: {(bool*) &b.flag3 - addr}");
-         Console.WriteLine($"   flag1: {(bool*) &b.flag4 - addr}");
-         Console.WriteLine($"   flag1: {(bool*) &b.flag5 - addr}");
+         Console.WriteLine($"   flag2: {(bool*) &b.flag2 - addr}");
+         Console.WriteLine($"   flag3: {(bool*) &b.flag3 - addr}");
+         Console.WriteLine($"   flag4: {(bool*) &b.flag4 - addr}");
+         Console.WriteLine($"   flag5: {(bool*) &b.flag5 - addr}");
       }
    }
 }
@@ -31,8 +31,8 @@ public class Example9
 //       Size of BoolStruct: 5
 //       Field offsets:
 //          flag1: 0
-//          flag1: 1
-//          flag1: 2
-//          flag1: 3
-//          flag1: 4
+//          flag2: 1
+//          flag3: 2
+//          flag4: 3
+//          flag5: 4
 // </Snippet14>

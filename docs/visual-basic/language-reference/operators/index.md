@@ -13,6 +13,7 @@ ms.assetid: 3d3421df-fcc5-4888-9249-d78f16774ce6
 - [Operator precedence in Visual Basic](operator-precedence.md)
 - [Operators listed by functionality](operators-listed-by-functionality.md)
 - [Data types of operator results](data-types-of-operator-results.md)
+- [CType operator](ctype-operator.md)
 - [DirectCast operator](directcast-operator.md)
 - [TryCast operator](trycast-operator.md)
 - [NameOf operator](nameof.md)

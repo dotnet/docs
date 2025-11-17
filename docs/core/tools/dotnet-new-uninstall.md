@@ -5,7 +5,7 @@ ms.date: 04/29/2021
 ---
 # dotnet new uninstall
 
-**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
+**This article applies to:** ✔️ .NET 6 SDK and later versions
 
 ## Name
 

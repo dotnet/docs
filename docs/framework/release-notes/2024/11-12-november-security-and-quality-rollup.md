@@ -42,7 +42,7 @@ Addresses an issue with .NET API UserPrincipal.GetAuthorizationGroups to retriev
 
 ## Known issues
 
-This release contains no known issues.  
+This release contains no known issues.
 
 ## Summary tables
 
@@ -72,7 +72,7 @@ The following table outlines the updates in this release.
 | .NET Framework 3.5, 4.8.1 | [5045933](https://support.microsoft.com/kb/5045933) |
 | **Windows 10 1809 and Windows Server 2019** | **[5046540](https://support.microsoft.com/kb/5046540)** |
 | .NET Framework 3.5, 4.7.2 | [5046268](https://support.microsoft.com/kb/5046268) |
-| .NET Framework 3.5, 4.8 | [5046269](https://support.microsoft.com/kb/5046269) |
+| .NET Framework 3.5, 4.8 | [5046269](https://support.microsoft.com/topic/november-12-2024-kb5046269-cumulative-update-for-net-framework-3-5-and-4-8-for-windows-10-version-1809-and-windows-server-2019-b914c843-c35a-4c94-a81f-1c8b0e7117ff) |
 | **Windows 10 1607 and Windows Server 2016** | |
 | .NET Framework 3.5, 4.6.2, 4.7, 4.7.1, 4.7.2 | [5046612](https://support.microsoft.com/kb/5046612) |
 | .NET Framework 4.8 | [5046266](https://support.microsoft.com/kb/5046266) |
@@ -91,9 +91,9 @@ The following table is for earlier Windows and Windows Server versions for Secur
 | .NET Framework 4.8 | [5046259](https://support.microsoft.com/kb/5046259) |
 | **Windows Server 2008 R2** | **[5046543](https://support.microsoft.com/kb/5046543)** |
 | .NET Framework 3.5.1 | [5044011](https://support.microsoft.com/kb/5044011) |
-| .NET Framework 4.6.2, 4.7, 4.7.1, 4.7.2 | [5046261](https://support.microsoft.com/kb/5046261)|
+| .NET Framework 4.6.2, 4.7, 4.7.1, 4.7.2 | [5046261](https://support.microsoft.com/topic/november-12-2024-security-and-quality-rollup-for-net-framework-4-6-2-4-7-4-7-1-4-7-2-for-windows-server-2008-r2-sp1-and-windows-server-2008-sp2-kb5046261-8cc3ca40-5c95-4ae9-bf2b-9c73e7b35a3f)|
 | .NET Framework 4.8 |[5046258](https://support.microsoft.com/kb/5046258) |
-| **Windows Server 2008** | **[5046546](https://support.microsoft.com/kb/5046546)** |
+| **Windows Server 2008** | **[5046546](https://support.microsoft.com/topic/november-12-2024-security-and-quality-rollup-for-net-framework-2-0-3-0-3-5-sp1-4-6-2-for-windows-server-2008-sp2-kb5046546-c7038822-4378-4a24-8f5e-95ba77cf2a89)** |
 | .NET Framework 2.0, 3.0 | [5044010](https://support.microsoft.com/kb/5044010) |
 | .NET Framework 3.5 SP1 | [5040673](https://support.microsoft.com/kb/5040673) |
 | .NET Framework 4.6.2 | [5046261](https://support.microsoft.com/kb/5046261) |

@@ -11,7 +11,7 @@ namespace ca2234
 
     public class Browser
     {
-        History uriHistory = new History();
+        History uriHistory = new();
 
         public void ErrorProne()
         {
@@ -22,7 +22,7 @@ namespace ca2234
         {
             try
             {
-                Uri newUri = new Uri("http://www.adventure-works.com");
+                Uri newUri = new("http://www.adventure-works.com");
                 uriHistory.AddToHistory(newUri);
             }
             catch (UriFormatException) { }

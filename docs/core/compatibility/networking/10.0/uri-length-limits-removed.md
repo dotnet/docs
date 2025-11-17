@@ -11,7 +11,7 @@ Methods that create <xref:System.Uri> instances (constructors and <xref:System.U
 
 ## Version introduced
 
-.NET 10 Preview 7
+.NET 10
 
 ## Previous behavior
 

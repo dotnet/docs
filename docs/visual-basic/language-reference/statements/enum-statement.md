@@ -66,7 +66,7 @@ End Enum
 
   Required. List of member constants being declared in this statement. Multiple members appear on individual source code lines.
 
-  Each `member` has the following syntax and parts: `[<attribute list>] member name [ = initializer ]`
+  Each `member` has the following syntax and parts: `[<attribute list>] membername [ = initializer ]`
 
   |Part|Description|
   |---|---|

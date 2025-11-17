@@ -1,0 +1,55 @@
+---
+description: "Learn more about: ICorDebugModuleEnum::Next Method"
+title: "ICorDebugModuleEnum::Next Method"
+ms.date: "03/30/2017"
+api_name:
+  - "ICorDebugModuleEnum.Next"
+api_location:
+  - "mscordbi.dll"
+api_type:
+  - "COM"
+f1_keywords:
+  - "ICorDebugModuleEnum::Next"
+helpviewer_keywords:
+  - "ICorDebugModuleEnum::Next method [.NET debugging]"
+  - "Next method, ICorDebugModuleEnum interface [.NET debugging]"
+topic_type:
+  - "apiref"
+---
+# ICorDebugModuleEnum::Next Method
+
+Gets the number of "ICorDebugModule" instances specified by `celt` from the enumeration, starting at the current position.
+
+## Syntax
+
+```cpp
+HRESULT Next (
+    [in]  ULONG celt,
+    [out, size_is(celt), length_is(*pceltFetched)]
+        ICorDebugModule *modules[],
+    [out] ULONG *pceltFetched
+);
+```
+
+## Parameters
+
+ `celt`
+ [in] The number of `ICorDebugModule` instances to be retrieved.
+
+ `modules`
+ [out] An array of pointers, each of which points to an `ICorDebugModule` object.
+
+ `pceltFetched`
+ [out] Pointer to the number of `ICorDebugModule` instances actually returned. This value may be null if `celt` is one.
+
+## Requirements
+
+ **Platforms:** See [.NET supported operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md).
+
+ **Header:** CorDebug.idl, CorDebug.h
+
+ **Library:** CorGuids.lib
+
+ **.NET versions:** Available since .NET Framework 2.0
+
+## See also

@@ -1,6 +1,6 @@
-The Aspire Service Defaults project provides an easy way to configure OTel for ASP.NET projects, *even if not using the rest of .NET Aspire* such as the AppHost for orchestration. The Service Defaults project is available as a project template via Visual Studio or `dotnet new`. It configures OTel and sets up the OTLP exporter. You can then use the [OTel environment variables](https://github.com/open-telemetry/opentelemetry-dotnet/tree/c94c422e31b2a5181a97b2dcf4bdc984f37ac1ff/src/OpenTelemetry.Exporter.OpenTelemetryProtocol#exporter-configuration) to configure the OTLP endpoint to send telemetry to, and provide the resource properties for the application.
+The Aspire Service Defaults project provides an easy way to configure OTel for ASP.NET projects, *even if not using the rest of Aspire* such as the AppHost for orchestration. The Service Defaults project is available as a project template via Visual Studio or `dotnet new`. It configures OTel and sets up the OTLP exporter. You can then use the [OTel environment variables](https://github.com/open-telemetry/opentelemetry-dotnet/tree/c94c422e31b2a5181a97b2dcf4bdc984f37ac1ff/src/OpenTelemetry.Exporter.OpenTelemetryProtocol#exporter-configuration) to configure the OTLP endpoint to send telemetry to, and provide the resource properties for the application.
 
-The steps to use *ServiceDefaults* outside .NET Aspire are:
+The steps to use *ServiceDefaults* outside of Aspire are:
 
 1. Add the *ServiceDefaults* project to the solution using Add New Project in Visual Studio, or use `dotnet new`:
 

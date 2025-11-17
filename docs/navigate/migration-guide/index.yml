@@ -1,26 +1,69 @@
 ### YamlMime:Landing
 
-title: .NET migration documentation
-summary: Learn about migrating apps from .NET Framework to .NET.
+title: Upgrade .NET apps documentation
+summary: Learn about upgrading apps from .NET Framework to .NET.
 
 metadata:
-  title: .NET migration documentation
-  description: Learn about migrating apps from .NET Framework to .NET.
+  title: Upgrade .NET apps documentation
+  description: Learn about upgrading apps from .NET Framework to .NET.
   ms.topic: landing-page
-  ms.date: 01/17/2023
+  ms.date: 09/15/2025
 
 landingContent:
 
-  # Card
-  - title: Migrate from .NET Framework
+  - title: .NET upgrade guide
     linkLists:
       - linkListType: overview
         links:
-          - text: Port from .NET Framework to .NET Core
+          - text: Upgrade apps to the latest version of .NET
             url: ../../core/porting/index.md
-          - text: Upgrade Assistant
-            url: ../../core/porting/upgrade-assistant-overview.md
-      - linkListType: reference
+          - text: Use GitHub Copilot to assist in upgrading
+            url: ../../core/porting/github-copilot-app-modernization/overview.md?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
+          - text: Plan your .NET Framework upgrade
+            url: ../../core/porting/framework-overview.md
+      - linkListType: concept
         links:
-          - text: Versioning info
-            url: ../../core/porting/versioning-sdk-msbuild-vs.md
+          - text: Breaking changes and app compatibility
+            url: ../../core/porting/breaking-changes.md
+          - text: Unsupported APIs
+            url: ../../core/compatibility/unsupported-apis.md
+
+
+  - title: GitHub Copilot app modernization
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: GitHub Copilot app modernization overview
+            url: ../../core/porting/github-copilot-app-modernization/overview.md?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
+          - text: GitHub Copilot app modernization FAQ
+            url: ../../core/porting/github-copilot-app-modernization/faq.yml?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
+      - linkListType: concept
+        links:
+          - text: Using Copilot to speed up porting and modernization
+            url: ../../core/porting/github-copilot-app-modernization/overview.md?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json#how-does-it-work
+
+  - title: Migrate .NET apps to Azure
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Migrate .NET apps to Azure (app modernization)
+            url: ../../azure/migration/appmod/overview.md?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
+          - text: Azure migration quickstart
+            url: ../../azure/migration/appmod/quickstart.md?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
+      - linkListType: sample
+        links:
+          - text: Migration sample
+            url: ../../azure/migration/appmod/sample.md?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
+      - linkListType: concept
+        links:
+          - text: Azure migration FAQ
+            url: ../../core/porting/github-copilot-app-modernization/faq.yml?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
+
+  - title: Get help and community
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: .NET on Q&A
+            url: /answers/products/dotnet
+          - text: .NET tech community forums
+            url: https://techcommunity.microsoft.com/category/dotnet

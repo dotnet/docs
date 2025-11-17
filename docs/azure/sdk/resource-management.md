@@ -24,7 +24,7 @@ Those packages follow the [new Azure SDK guidelines](https://azure.github.io/azu
 
 ### Prerequisites
 
-- An [Azure subscription](https://azure.microsoft.com/free/dotnet/).
+- An [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 - A [TokenCredential](/dotnet/api/azure.core.tokencredential?view=azure-dotnet&preserve-view=false) implementation, such as an [Azure Identity library credential type](/dotnet/api/overview/azure/Identity-readme#credential-classes).
 
 ### Install the package

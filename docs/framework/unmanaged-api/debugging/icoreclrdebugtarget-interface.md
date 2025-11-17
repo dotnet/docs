@@ -67,7 +67,4 @@ class ICoreClrDebugTarget {
 
 ## See also
 
-- [ICorDebugRemoteTarget Interface](icordebugremotetarget-interface.md)
-- [ICorDebug Interface](icordebug-interface.md)
-
 - [Debugging Interfaces](debugging-interfaces.md)

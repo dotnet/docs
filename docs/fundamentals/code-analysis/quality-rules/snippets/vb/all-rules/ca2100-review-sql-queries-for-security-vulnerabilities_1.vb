@@ -1,20 +1,21 @@
-﻿Imports System
-Imports System.Data
-Imports System.Data.SqlClient
+﻿Imports System.Data
+Imports System.Data.OleDb
+Imports System.Runtime.Versioning
 
 Namespace ca2100
 
     Public Class SqlQueries
 
+        <SupportedOSPlatform("windows")>
         Function UnsafeQuery(connection As String,
          name As String, password As String) As Object
 
-            Dim someConnection As New SqlConnection(connection)
-            Dim someCommand As New SqlCommand()
-            someCommand.Connection = someConnection
-
-            someCommand.CommandText = "SELECT AccountNumber FROM Users " &
-            "WHERE Username='" & name & "' AND Password='" & password & "'"
+            Dim someConnection As New OleDbConnection(connection)
+            Dim someCommand As New OleDbCommand With {
+                .Connection = someConnection,
+                .CommandText = "SELECT AccountNumber FROM Users " &
+                "WHERE Username='" & name & "' AND Password='" & password & "'"
+            }
 
             someConnection.Open()
             Dim accountNumber As Object = someCommand.ExecuteScalar()
@@ -23,17 +24,19 @@ Namespace ca2100
 
         End Function
 
+        <SupportedOSPlatform("windows")>
         Function SaferQuery(connection As String,
          name As String, password As String) As Object
 
-            Dim someConnection As New SqlConnection(connection)
-            Dim someCommand As New SqlCommand()
-            someCommand.Connection = someConnection
+            Dim someConnection As New OleDbConnection(connection)
+            Dim someCommand As New OleDbCommand With {
+                .Connection = someConnection
+            }
 
-            someCommand.Parameters.Add(
-            "@username", SqlDbType.NChar).Value = name
-            someCommand.Parameters.Add(
-            "@password", SqlDbType.NChar).Value = password
+            someCommand.Parameters.AddWithValue(
+            "@username", OleDbType.Char).Value = name
+            someCommand.Parameters.AddWithValue(
+            "@password", OleDbType.Char).Value = password
             someCommand.CommandText = "SELECT AccountNumber FROM Users " &
             "WHERE Username=@username AND Password=@password"
 
@@ -48,6 +51,7 @@ Namespace ca2100
 
     Class MaliciousCode
 
+        <SupportedOSPlatform("windows")>
         Shared Sub Main2100(args As String())
 
             Dim queries As New SqlQueries()

@@ -39,9 +39,6 @@ Contains values that describe the run-time features of an assembly.
  Contains values that describe the types of calling conventions that are made in managed code.
  Contains values used during checks for duplications.
 
- [CorElementType](corelementtype-enumeration.md)\
- Contains values that describe the underlying native type of a common language runtime <xref:System.Type>.
-
  [CorEventAttr Enumeration](coreventattr-enumeration.md)\
  Contains values that describe the metadata of an event.
 

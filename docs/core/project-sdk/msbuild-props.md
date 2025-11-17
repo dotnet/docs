@@ -1,7 +1,7 @@
 ---
 title: MSBuild properties for Microsoft.NET.Sdk
 description: Reference for the MSBuild properties and items that are understood by the .NET SDK.
-ms.date: 11/07/2024
+ms.date: 11/07/2025
 ms.topic: reference
 ms.custom: updateeachrelease
 ---
@@ -114,7 +114,7 @@ For more information, see [Target frameworks in SDK-style projects](../../standa
 Use the `TargetFrameworks` property when you want your app to target multiple platforms. For a list of valid target framework monikers, see [Target frameworks in SDK-style projects](../../standard/frameworks.md#supported-target-frameworks).
 
 > [!NOTE]
-> This property is ignored if `TargetFramework` (singular) is specified.
+> If `TargetFrameworks` (plural) is specified, `TargetFramework` (singular) is ignored.
 
 ```xml
 <PropertyGroup>
@@ -169,8 +169,7 @@ The `PackRelease` property is similar to the [PublishRelease](#publishrelease) p
 
 > [!NOTE]
 >
-> - Starting in the .NET 8 SDK, `PackRelease` defaults to `true`. For more information, see ['dotnet pack' uses Release configuration](../compatibility/sdk/8.0/dotnet-pack-config.md).
-> - .NET 7 SDK only: To use `PackRelease` in a project that's part of a Visual Studio solution, you must set the environment variable `DOTNET_CLI_ENABLE_PACK_RELEASE_FOR_SOLUTIONS` to `true` (or any other value). For solutions that have many projects, setting this variable increases the time required to pack.
+> Starting in the .NET 8 SDK, `PackRelease` defaults to `true`. For more information, see ['dotnet pack' uses Release configuration](../compatibility/sdk/8.0/dotnet-pack-config.md).
 
 ## Package validation properties
 
@@ -345,7 +344,7 @@ The `PackageValidationReferencePath` item specifies the directory path where the
 
 ```xml
 <ItemGroup>
-  <PackageValidationReferencePath Include="path/to/reference-assembly" TargetFramework="net7.0" />
+  <PackageValidationReferencePath Include="path/to/reference-assembly" TargetFramework="net9.0" />
 </ItemGroup>
 ```
 
@@ -541,8 +540,7 @@ The `PublishRelease` property informs `dotnet publish` to use the `Release` conf
 > [!NOTE]
 >
 > - Starting in the .NET 8 SDK, `PublishRelease` defaults to `true` for projects that target .NET 8 or later. For more information, see ['dotnet publish' uses Release configuration](../compatibility/sdk/8.0/dotnet-publish-config.md).
-> - This property does not affect the behavior of `dotnet build /t:Publish`, and it only changes the configuration only when publishing via the .NET CLI.
-> - .NET 7 SDK only: To use `PublishRelease` in a project that's part of a Visual Studio solution, you must set the environment variable `DOTNET_CLI_ENABLE_PUBLISH_RELEASE_FOR_SOLUTIONS` to `true` (or any other value). When publishing a solution with this variable enabled, the executable project's `PublishRelease` value takes precedence and flows the new default configuration to any other projects in the solution. If a solution contains multiple executable or top-level projects with differing values of `PublishRelease`, the solution won't successfully publish. For solutions that have many projects, use of this setting increases the time required to publish.
+> - This property does not affect the behavior of `dotnet build /t:Publish`, and it changes the configuration only when publishing via the .NET CLI.
 
 ### PublishSelfContained
 
@@ -734,7 +732,7 @@ Additionally, if you specify an operating system-specific target framework in th
 - Platform with version (`IOS15_1`)
 - Platform with version minimum bound (`IOS15_1_OR_GREATER`)
 
-For more information on operating system-specific target framework monikers, see [OS-specific TFMs](../../standard/frameworks.md#net-5-os-specific-tfms).
+For more information on operating system-specific target framework monikers, see [OS-specific TFMs](../../standard/frameworks.md#os-specific-tfms).
 
 Finally, if your target framework implies support for older target frameworks, preprocessor symbols for those older frameworks are emitted. For example, `net6.0` **implies** support for `net5.0` and so on all the way back to `.netcoreapp1.0`. So for each of these target frameworks, the *Framework with version minimum bound* symbol will be defined.
 
@@ -977,6 +975,10 @@ The following table shows the values you can specify.
 | `latest-<mode>` | The latest code analyzers that have been released are used. The `<mode>` value determines which rules are enabled. |
 | `preview` | The latest code analyzers are used, even if they are in preview. |
 | `preview-<mode>` | The latest code analyzers are used, even if they are in preview. The `<mode>` value determines which rules are enabled. |
+| `10.0` | The set of rules that was available for the .NET 10 release is used, even if newer rules are available. |
+| `10.0-<mode>` | The set of rules that was available for the .NET 10 release is used, even if newer rules are available. The `<mode>` value determines which rules are enabled. |
+| `10` | The set of rules that was available for the .NET 10 release is used, even if newer rules are available. |
+| `10-<mode>` | The set of rules that was available for the .NET 10 release is used, even if newer rules are available. The `<mode>` value determines which rules are enabled. |
 | `9.0` | The set of rules that was available for the .NET 9 release is used, even if newer rules are available. |
 | `9.0-<mode>` | The set of rules that was available for the .NET 9 release is used, even if newer rules are available. The `<mode>` value determines which rules are enabled. |
 | `9` | The set of rules that was available for the .NET 9 release is used, even if newer rules are available. |
@@ -985,16 +987,12 @@ The following table shows the values you can specify.
 | `8.0-<mode>` | The set of rules that was available for the .NET 8 release is used, even if newer rules are available. The `<mode>` value determines which rules are enabled. |
 | `8` | The set of rules that was available for the .NET 8 release is used, even if newer rules are available. |
 | `8-<mode>` | The set of rules that was available for the .NET 8 release is used, even if newer rules are available. The `<mode>` value determines which rules are enabled. |
-| `7.0` | The set of rules that was available for the .NET 7 release is used, even if newer rules are available. |
-| `7.0-<mode>` | The set of rules that was available for the .NET 7 release is used, even if newer rules are available. The `<mode>` value determines which rules are enabled. |
-| `7` | The set of rules that was available for the .NET 7 release is used, even if newer rules are available. |
-| `7-<mode>` | The set of rules that was available for the .NET 7 release is used, even if newer rules are available. The `<mode>` value determines which rules are enabled. |
 
 > [!NOTE]
 >
 > - If you set [EnforceCodeStyleInBuild](#enforcecodestyleinbuild) to `true`, this property affects [code-style (IDEXXXX) rules](../../fundamentals/code-analysis/style-rules/index.md) (in addition to code-quality rules).
 > - If you set a compound value for `AnalysisLevel`, you don't need to specify an [AnalysisMode](#analysismode). However, if you do, `AnalysisLevel` takes precedence over `AnalysisMode`.
-> - This property has no effect on code analysis in projects that don't reference a [project SDK](overview.md), for example, legacy .NET Framework projects that reference the Microsoft.CodeAnalysis.NetAnalyzers NuGet package.
+> - This property has no effect on code analysis in projects that don't reference a [project SDK](overview.md), for example, legacy .NET Framework projects that reference the Microsoft.CodeAnalysis.NetAnalyzers NuGet package. For more information, see [Enable code analysis in legacy projects](../../fundamentals/code-analysis/overview.md#enable-code-analysis-in-legacy-projects).
 
 ### AnalysisLevel\<Category>
 
@@ -1047,7 +1045,6 @@ The following table shows the available option values. They're listed in increas
 >
 > - If you set [EnforceCodeStyleInBuild](#enforcecodestyleinbuild) to `true`, this property affects [code-style (IDEXXXX) rules](../../fundamentals/code-analysis/style-rules/index.md) (in addition to code-quality rules).
 > - If you use a compound value for [AnalysisLevel](#analysislevel), for example, `<AnalysisLevel>9-recommended</AnalysisLevel>`, you can omit this property entirely. However, if you specify both properties, `AnalysisLevel` takes precedence over `AnalysisMode`.
-> - This property has no effect on code analysis in projects that don't reference a [project SDK](overview.md), for example, legacy .NET Framework projects that reference the Microsoft.CodeAnalysis.NetAnalyzers NuGet package.
 
 ### AnalysisMode\<Category>
 
@@ -1348,7 +1345,7 @@ Example *Directory.Packages.props* file:
 </PropertyGroup>
 ...
 <ItemGroup>
-  <PackageVersion Include="Microsoft.Extensions.Configuration" Version="7.0.0" />
+  <PackageVersion Include="Microsoft.Extensions.Configuration" Version="9.0.0" />
 </ItemGroup>
 ```
 
@@ -1445,7 +1442,7 @@ The following MSBuild properties are documented in this section:
 
 Introduced in .NET 9, the `SdkAnalysisLevel` property can be used to configure how *strict* SDK tooling is. It helps you manage SDK warning levels in situations where you might not be able to pin SDKs via *global.json* or other means. You can use this property to tell a newer SDK to behave as if it were an older SDK, with regards to a specific tool or feature, without having to install the older SDK.
 
-The allowed values of this property are SDK feature bands, for example, 8.0.100 and 8.0.400. The value defaults to the SDK feature band of the running SDK. For example, for SDK 9.0.102, the value would be 9.0.100. (For information about how the .NET SDK is versioned, see [How .NET is versioned](../versions/index.md).)
+The allowed values of this property are SDK feature bands, for example, 8.0.100 and 8.0.400. The value defaults to the SDK feature band of the running SDK. For example, for SDK 9.0.102, the value to use is 9.0.100. (For information about how the .NET SDK is versioned, see [How .NET is versioned](../versions/index.md).)
 
 ```xml
 <PropertyGroup>
@@ -1455,14 +1452,17 @@ The allowed values of this property are SDK feature bands, for example, 8.0.100 
 
 For more information, see [SDK Analysis Level Property and Usage](https://github.com/dotnet/designs/blob/main/proposed/sdk-analysis-level.md).
 
-The following table summarizes the diagnostics affected by `SDKAnalysisLevel`.
+The following table summarizes the diagnostics and behaviors affected by `SDKAnalysisLevel`.
 
-| SDKAnalysisLevel | Diagnostic | Previous | Current |
-|------------------------|-----------|--------|-------|
-| 9.0.100 | Restore HTTP sources diagnostic | [NU1803](/nuget/reference/errors-and-warnings/nu1803) warning | [NU1302](/nuget/reference/errors-and-warnings/nu1302) error. |  
-| 10.0.100 | Restore package pruning, [PrunePackageReference](/nuget/consume-packages/package-references-in-project-files#prunepackagereference), enabled by default | N/A | Enabled for projects that target .NET 8+ or .NET Standard 2.0+ |
-| 10.0.100 | Restore resolver with lock files | Uses legacy dependency graph resolver (.NET 8 SDK and earlier) | Uses improved, [.NET 9 dependency graph resolver](/nuget/consume-packages/package-references-in-project-files#nuget-dependency-resolver) |
-| 10.0.100 | Restore behavior for PackageReference without a version | [NU1603](/nuget/reference/errors-and-warnings/nu1603) warning | [NU1015](/nuget/reference/errors-and-warnings/nu1015) error |
+| SDKAnalysisLevel | Description                     | Updated behavior |
+|------------------|---------------------------------|------------------|
+| 9.0.100          | Restore HTTP sources diagnostic | Emits [NU1302](/nuget/reference/errors-and-warnings/nu1302) error instead of [NU1803](/nuget/reference/errors-and-warnings/nu1803) warning. |
+| 10.0.100         | 'Restore' package pruning       | [PrunePackageReference](/nuget/consume-packages/package-references-in-project-files#prunepackagereference) is enabled by default for projects that target .NET 8+ or .NET Standard 2.0+. |
+| 10.0.100         | 'Restore' resolver with lock files | Uses improved, [.NET 9 dependency graph resolver](/nuget/consume-packages/package-references-in-project-files#nuget-dependency-resolver) instead of legacy dependency graph resolver (.NET 8 SDK and earlier). |
+| 10.0.100         | 'Restore' behavior for PackageReference without a version | Emits [NU1015](/nuget/reference/errors-and-warnings/nu1015) error instead of [NU1603](/nuget/reference/errors-and-warnings/nu1603) warning. |
+
+> [!NOTE]
+> The behavior enabled by the `SdkAnalysisLevel` value ages out (expires) after three major releases. For example, version 11.0.100 only respects values down to 8.0.100. In version 12.0.100, features that could, in previous versions, be disabled by setting an `SdkAnalysisLevel` value of 8.0.100 would no longer be disabled.
 
 ## Microsoft.Testing.Platform&ndash;related properties
 
@@ -1507,7 +1507,7 @@ For more information, see [Enable or disable extensions](../testing/unit-testing
 
 When you use the [MSTest project SDK](../testing/unit-testing-mstest-sdk.md), you can use the `EnableAspireTesting` property to bring in all the dependencies and default `using` directives you need for testing with `Aspire` and `MSTest`. This property is available in MSTest 3.4 and later versions.
 
-For more information, see [Test with .NET Aspire](../testing/unit-testing-mstest-sdk.md#test-with-net-aspire).
+For more information, see [Test with Aspire](../testing/unit-testing-mstest-sdk.md#test-with-aspire).
 
 ### EnablePlaywright
 

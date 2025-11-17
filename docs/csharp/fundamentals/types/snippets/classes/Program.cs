@@ -1,6 +1,5 @@
-﻿
-// <InstantiateClass>
-Customer object1 = new Customer();
+﻿// <InstantiateClass>
+Customer object1 = new();
 // </InstantiateClass>
 
 // <DeclareVariable>
@@ -9,14 +8,14 @@ Customer object2;
 
 
 // <AssignReference>
-Customer object3 = new Customer();
+Customer object3 = new();
 Customer object4 = object3;
 // </AssignReference>
 
 /* 
 var p1 = new Person(); // Error! Required properties not set
 */
-var p2 = new Person() {FirstName = "Grace", LastName = "Hopper" };
+var p2 = new Person { FirstName = "Grace", LastName = "Hopper" };
 
 // <ClassDeclaration>
 //[access modifier] - [class] - [identifier]

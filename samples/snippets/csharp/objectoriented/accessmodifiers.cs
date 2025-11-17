@@ -18,10 +18,7 @@
         private int _wheels = 3;
 
         // protected internal property:
-        protected internal int Wheels
-        {
-            get { return _wheels; }
-        }
+        protected internal int Wheels => _wheels;
     }
     //</SnippetMethodAccess>
 }

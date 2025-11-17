@@ -1,7 +1,8 @@
 ---
 title: Query Expressions
 description: Learn about query expression support for LINQ in the F# programming language.
-ms.date: 08/15/2020
+ms.date: 09/26/2025
+ai-usage: ai-assisted
 ---
 # Query expressions
 
@@ -15,27 +16,9 @@ query { expression }
 
 ## Remarks
 
-Query expressions are a type of computation expression similar to sequence expressions. Just as you specify a sequence by providing code in a sequence expression, you specify a set of data by providing code in a query expression. In a sequence expression, the `yield` keyword identifies data to be returned as part of the resulting sequence. In query expressions, the `select` keyword performs the same function. In addition to the `select` keyword, F# also supports a number of query operators that are much like the parts of a SQL SELECT statement. Here is an example of a simple query expression, along with code that connects to the Northwind OData source.
+Query expressions are a type of computation expression similar to sequence expressions. Just as you specify a sequence by providing code in a sequence expression, you specify a set of data by providing code in a query expression. In a sequence expression, the `yield` keyword identifies data to be returned as part of the resulting sequence. In query expressions, the `select` keyword performs the same function. In addition to the `select` keyword, F# also supports a number of query operators that are much like the parts of a SQL SELECT statement. Here is an example of a simple query expression using Entity Framework Core to query a database.
 
-```fsharp
-// Use the OData type provider to create types that can be used to access the Northwind database.
-// Add References to FSharp.Data.TypeProviders and System.Data.Services.Client
-open Microsoft.FSharp.Data.TypeProviders
-
-type Northwind = ODataService<"http://services.odata.org/Northwind/Northwind.svc">
-let db = Northwind.GetDataContext()
-
-// A query expression.
-let query1 =
-    query {
-        for customer in db.Customers do
-            select customer
-    }
-
-// Print results
-query1
-|> Seq.iter (fun customer -> printfn "Company: %s Contact: %s" customer.CompanyName customer.ContactName)
-```
+:::code language="fsharp" source="~/samples/snippets/fsharp/query-expressions/snippet1.fs":::
 
 In the previous code example, the query expression is in curly braces. The meaning of the code in the expression is, return every customer in the Customers table in the database in the query results. Query expressions return a type that implements <xref:System.Linq.IQueryable%601> and <xref:System.Collections.Generic.IEnumerable%601>, and so they can be iterated using the [Seq module](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-seqmodule.html) as the example shows.
 
@@ -53,22 +36,9 @@ This table assumes a database in the following form:
 
 ![Diagram that shows a sample database.](./media/query-expressions/student-course-database.png)
 
-The code in the tables that follow also assumes the following database connection code. Projects should add references to System.Data,  System.Data.Linq, and FSharp.Data.TypeProviders assemblies. The code that creates this database is included at the end of this topic.
+The code in the tables that follow also assumes the following database connection code using Entity Framework Core. Projects should add package references to `Microsoft.EntityFrameworkCore` and `Microsoft.EntityFrameworkCore.InMemory` (or another EF Core provider for production scenarios). This example uses the in-memory database provider for demonstration purposes, but the same query syntax works with any EF Core provider (SQL Server, PostgreSQL, etc.).
 
-```fsharp
-open System
-open Microsoft.FSharp.Data.TypeProviders
-open System.Data.Linq.SqlClient
-open System.Linq
-open Microsoft.FSharp.Linq
-
-type schema = SqlDataConnection< @"Data Source=SERVER\INSTANCE;Initial Catalog=MyDatabase;Integrated Security=SSPI;" >
-
-let db = schema.GetDataContext()
-
-// Needed for some query operator examples:
-let data = [ 1; 5; 7; 11; 18; 21]
-```
+:::code language="fsharp" source="~/samples/snippets/fsharp/query-expressions/snippet2.fs":::
 
 ### Table 1. Query Operators
 
@@ -84,6 +54,7 @@ let data = [ 1; 5; 7; 11; 18; 21]
 ```fsharp
 query {
     for student in db.Student do
+    where student.Age.IsSome
     select student.Age.Value
     contains 11
 }
@@ -242,7 +213,7 @@ query {
 query {
     for student in db.Student do
     where student.Age.HasValue
-    sortBy student.Age.Value
+    sortByNullable student.Age
     thenBy student.Name
     select student
 }
@@ -255,7 +226,7 @@ query {
 query {
     for student in db.Student do
     where student.Age.HasValue
-    sortBy student.Age.Value
+    sortByNullable student.Age
     thenByDescending student.Name
     select student
 }
@@ -1350,19 +1321,71 @@ VALUES(15, 7, 3);
 The following code contains  the sample code that appears in this topic.
 
 ```fsharp
-#if INTERACTIVE
-#r "FSharp.Data.TypeProviders.dll"
-#r "System.Data.dll"
-#r "System.Data.Linq.dll"
-#endif
 open System
-open Microsoft.FSharp.Data.TypeProviders
-open System.Data.Linq.SqlClient
 open System.Linq
 
-type schema = SqlDataConnection<"Data Source=SERVER\INSTANCE;Initial Catalog=MyDatabase;Integrated Security=SSPI;">
+// Define simple data types to represent our sample database
+type Student = {
+    StudentID: int
+    Name: string
+    Age: int option
+}
 
-let db = schema.GetDataContext()
+type Course = {
+    CourseID: int
+    CourseName: string
+}
+
+type CourseSelection = {
+    ID: int
+    StudentID: int
+    CourseID: int
+}
+
+// Sample data
+let students = [
+    { StudentID = 1; Name = "Abercrombie, Kim"; Age = Some 10 }
+    { StudentID = 2; Name = "Abolrous, Hazen"; Age = Some 14 }
+    { StudentID = 3; Name = "Hance, Jim"; Age = Some 12 }
+    { StudentID = 4; Name = "Adams, Terry"; Age = Some 12 }
+    { StudentID = 5; Name = "Hansen, Claus"; Age = Some 11 }
+    { StudentID = 6; Name = "Penor, Lori"; Age = Some 13 }
+    { StudentID = 7; Name = "Perham, Tom"; Age = Some 12 }
+    { StudentID = 8; Name = "Peng, Yun-Feng"; Age = None }
+]
+
+let courses = [
+    { CourseID = 1; CourseName = "Algebra I" }
+    { CourseID = 2; CourseName = "Trigonometry" }
+    { CourseID = 3; CourseName = "Algebra II" }
+    { CourseID = 4; CourseName = "History" }
+    { CourseID = 5; CourseName = "English" }
+    { CourseID = 6; CourseName = "French" }
+    { CourseID = 7; CourseName = "Chinese" }
+]
+
+let courseSelections = [
+    { ID = 1; StudentID = 1; CourseID = 2 }
+    { ID = 2; StudentID = 1; CourseID = 3 }
+    { ID = 3; StudentID = 1; CourseID = 5 }
+    { ID = 4; StudentID = 2; CourseID = 2 }
+    { ID = 5; StudentID = 2; CourseID = 5 }
+    { ID = 6; StudentID = 2; CourseID = 6 }
+    { ID = 7; StudentID = 2; CourseID = 3 }
+    { ID = 8; StudentID = 3; CourseID = 2 }
+    { ID = 9; StudentID = 3; CourseID = 1 }
+    { ID = 10; StudentID = 4; CourseID = 2 }
+    { ID = 11; StudentID = 4; CourseID = 5 }
+    { ID = 12; StudentID = 4; CourseID = 2 }
+    { ID = 13; StudentID = 5; CourseID = 3 }
+    { ID = 14; StudentID = 5; CourseID = 2 }
+    { ID = 15; StudentID = 7; CourseID = 3 }
+]
+
+// Convert to queryable collections for LINQ operations
+let db.Student = students.AsQueryable()
+let coursesQueryable = courses.AsQueryable()
+let courseSelectionsQueryable = courseSelections.AsQueryable()
 
 let data = [1; 5; 7; 11; 18; 21]
 
@@ -1984,15 +2007,7 @@ query {
 And here is the full output when this code is run in F# Interactive.
 
 ```console
---> Referenced 'C:\Program Files (x86)\Reference Assemblies\Microsoft\FSharp\3.0\Runtime\v4.0\Type Providers\FSharp.Data.TypeProviders.dll'
-
---> Referenced 'C:\Windows\Microsoft.NET\Framework\v4.0.30319\System.Data.dll'
-
---> Referenced 'C:\Windows\Microsoft.NET\Framework\v4.0.30319\System.Data.Linq.dll'
-
 contains query operator
-Binding session to 'C:\Users\ghogen\AppData\Local\Temp\tmp5E3C.dll'...
-Binding session to 'C:\Users\ghogen\AppData\Local\Temp\tmp611A.dll'...
 Is at least one student age 11? true
 
 count query operator

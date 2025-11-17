@@ -91,7 +91,6 @@ You can set the profile using the property `TestingExtensionsProfile` with one o
   Enables the following extensions:
 
   * [Code Coverage](./microsoft-testing-platform-extensions-code-coverage.md#microsoft-code-coverage)
-
   * [Trx Report](./microsoft-testing-platform-extensions-test-reports.md#visual-studio-test-reports)
 
 * `AllMicrosoft` - Enable all extensions shipped by Microsoft (including extensions with a restrictive license).
@@ -99,17 +98,11 @@ You can set the profile using the property `TestingExtensionsProfile` with one o
   Enables the following extensions:
 
   * [Code Coverage](./microsoft-testing-platform-extensions-code-coverage.md#microsoft-code-coverage)
-
   * [Crash Dump](./microsoft-testing-platform-extensions-diagnostics.md#crash-dump)
-
   * [Fakes](./microsoft-testing-platform-extensions-fakes.md#fakes-extension) (MSTest.Sdk 3.7.0+)
-
   * [Hang Dump](./microsoft-testing-platform-extensions-diagnostics.md#hang-dump)
-
   * [Hot Reload](./microsoft-testing-platform-extensions-hosting.md#hot-reload)
-
   * [Retry](./microsoft-testing-platform-extensions-policy.md#retry)
-
   * [Trx Report](./microsoft-testing-platform-extensions-test-reports.md#visual-studio-test-reports)
 
 Here's a full example, using the `None` profile:
@@ -129,11 +122,13 @@ Here's a full example, using the `None` profile:
 |-------------------------------------------------------------------------------------------|:----:|:------------------:|:--------------------------------------:|
 | [Code Coverage](https://www.nuget.org/packages/Microsoft.Testing.Extensions.CodeCoverage) |      | :heavy_check_mark: | :heavy_check_mark:                     |
 | [Crash Dump](https://www.nuget.org/packages/Microsoft.Testing.Extensions.CrashDump)       |      |                    | :heavy_check_mark:                     |
-| [Fakes](https://www.nuget.org/packages/Microsoft.Testing.Extensions.Fakes)                |      |                    | :heavy_check_mark: (MSTest.Sdk 3.7.0+) |
+| [Fakes](https://www.nuget.org/packages/Microsoft.Testing.Extensions.Fakes)                |      |                    | :heavy_check_mark:† |
 | [Hang Dump](https://www.nuget.org/packages/Microsoft.Testing.Extensions.HangDump)         |      |                    | :heavy_check_mark:                     |
 | [Hot Reload](https://www.nuget.org/packages/Microsoft.Testing.Extensions.HotReload)       |      |                    | :heavy_check_mark:                     |
 | [Retry](https://www.nuget.org/packages/Microsoft.Testing.Extensions.Retry)                |      |                    | :heavy_check_mark:                     |
 | [Trx](https://www.nuget.org/packages/Microsoft.Testing.Extensions.TrxReport)              |      | :heavy_check_mark: | :heavy_check_mark:                     |
+
+† MSTest.Sdk 3.7.0+
 
 ### Enable or disable extensions
 
@@ -178,12 +173,12 @@ You can also disable an extension that's coming from the selected profile. For e
 
 Outside of the selection of the runner and runner-specific extensions, `MSTest.Sdk` also provides additional features to simplify and enhance your testing experience.
 
-### Test with .NET Aspire
+### Test with Aspire
 
-.NET Aspire is an opinionated, cloud-ready stack for building observable, production ready, distributed applications. .NET Aspire is delivered through a collection of NuGet packages that handle specific cloud-native concerns. For more information, see the [.NET Aspire docs](/dotnet/aspire/get-started/aspire-overview).
+Aspire is an opinionated, cloud-ready stack for building observable, production ready, distributed applications. Aspire is delivered through a collection of NuGet packages that handle specific cloud-native concerns. For more information, see the [Aspire docs](/dotnet/aspire/get-started/aspire-overview).
 
 > [!NOTE]
-> This feature is available from MSTest.Sdk 3.4.0
+> This feature is available from MSTest.Sdk 3.4.0.
 
 By setting the property `EnableAspireTesting` to `true`, you can bring all dependencies and default `using` directives you need for testing with `Aspire` and `MSTest`.
 
@@ -203,7 +198,7 @@ By setting the property `EnableAspireTesting` to `true`, you can bring all depen
 Playwright enables reliable end-to-end testing for modern web apps. For more information, see the official [Playwright docs](https://playwright.dev/dotnet/docs/intro).
 
 > [!NOTE]
-> This feature is available from MSTest.Sdk 3.4.0
+> This feature is available from MSTest.Sdk 3.4.0.
 
 By setting the property `EnablePlaywright` to `true` you can bring in all the dependencies and default `using` directives you need for testing with `Playwright` and `MSTest`.
 
@@ -268,7 +263,7 @@ Finally, based on the extensions profile you're using, you can also remove some 
 
 Once you've updated your projects, if you're using `Microsoft.Testing.Platform` (default) and if you rely on `dotnet test` to run your tests, you must update your CI configuration. For more information and to guide your understanding of all the required changes, see [dotnet test integration](./unit-testing-with-dotnet-test.md).
 
-If you are using the VSTest mode of `dotnet test`, here's an example update when using the `DotNetCoreCLI` task in Azure DevOps:
+If you're using the VSTest mode of `dotnet test`, here's an example update when using the `DotNetCoreCLI` task in Azure DevOps:
 
 ```diff
 \- task: DotNetCoreCLI@2
@@ -281,11 +276,7 @@ If you are using the VSTest mode of `dotnet test`, here's an example update when
 
 ## Known limitations
 
-The NuGet-provided MSBuild SDKs (including MSTest.Sdk) have limited tooling support when it comes to updating its version, meaning that the usual NuGet update and Visual Studio UI for managing NuGet packages does not work as expected. See this issue for more details: [NuGet#13127](https://github.com/NuGet/Home/issues/13127).
-
-> [!NOTE]
-> This limitation is not specific to MSTest SDK but to any NuGet-provided MSBuild SDK.
-> Dependabot will handle updating the version in the `global.json` file, but you will need to [manually update the version in the project file](https://github.com/dependabot/dependabot-core/issues/8615).
+The NuGet-provided MSBuild SDKs (including MSTest.Sdk) have [limited tooling support](https://github.com/NuGet/Home/issues/13127) when it comes to updating their version, meaning that the usual NuGet update and Visual Studio UI for managing NuGet packages doesn't work as expected. You'll need to manually update the version in the `global.json` file and in the project file. (This applies even if you use Dependabot due to issues [dependabot-core#12824](https://github.com/dependabot/dependabot-core/issues/12824) and [dependabot-core#8615](https://github.com/dependabot/dependabot-core/issues/8615).)
 
 ## See also
 

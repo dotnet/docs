@@ -1,0 +1,44 @@
+---
+description: "Learn more about: ICorDebugFunction2 Interface"
+title: "ICorDebugFunction2 Interface"
+ms.date: "03/30/2017"
+api_name:
+  - "ICorDebugFunction2"
+api_location:
+  - "mscordbi.dll"
+api_type:
+  - "COM"
+f1_keywords:
+  - "ICorDebugFunction2"
+helpviewer_keywords:
+  - "ICorDebugFunction2 interface [.NET debugging]"
+topic_type:
+  - "apiref"
+---
+# ICorDebugFunction2 Interface
+
+Logically extends the ICorDebugFunction interface to provide support for Just My Code step-through debugging, which skips non-user code.
+
+## Methods
+
+|Method|Description|
+|------------|-----------------|
+|[EnumerateNativeCode Method](icordebugfunction2-enumeratenativecode-method.md)|(Not yet implemented.) Gets an interface pointer to an ICorDebugCodeEnum that contains the native code statements in the function referenced by this ICorDebugFunction2 object.|
+|[GetJMCStatus Method](icordebugfunction2-getjmcstatus-method.md)|Gets a value that indicates whether this function is marked as user code.|
+|[GetVersionNumber Method](icordebugfunction2-getversionnumber-method.md)|Gets the Edit and Continue version of this function.|
+|[SetJMCStatus Method](icordebugfunction2-setjmcstatus-method.md)|Marks this function for Just My Code stepping.|
+
+## Remarks
+
+> [!NOTE]
+> This interface does not support being called remotely, either cross-machine or cross-process.
+
+## Requirements
+
+ **Platforms:** See [.NET supported operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md).
+
+ **Header:** CorDebug.idl, CorDebug.h
+
+ **Library:** CorGuids.lib
+
+ **.NET versions:** Available since .NET Framework 1.0

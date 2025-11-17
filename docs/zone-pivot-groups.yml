@@ -60,8 +60,10 @@ groups:
   title: .NET preview version
   prompt: Choose a .NET version
   pivots:
+    - id: dotnet-11-0
+      title: .NET 11 Preview
     - id: dotnet-10-0
-      title: .NET 10 Preview
+      title: .NET 10
     - id: dotnet-9-0
       title: .NET 9
     - id: dotnet-8-0
@@ -70,6 +72,8 @@ groups:
   title: .NET version
   prompt: Choose a .NET version
   pivots:
+    - id: dotnet-10-0
+      title: .NET 10
     - id: dotnet-9-0
       title: .NET 9
     - id: dotnet-8-0
@@ -120,14 +124,16 @@ groups:
   title: Ubuntu Version
   prompt: Choose the Ubuntu distribution version
   pivots:
-    - id: os-linux-ubuntu-2504
-      title: "25.04"
+  # order: lts versions (newest to oldest), interim versions (newest to oldest), other
+  # see: https://github.com/dotnet/docs/issues/47461
     - id: os-linux-ubuntu-2404
       title: "24.04"
     - id: os-linux-ubuntu-2204
       title: "22.04"
-    - id: os-linux-ubuntu-other
-      title: "Other"
+    - id: os-linux-ubuntu-2510
+      title: "25.10"
+    - id: os-linux-ubuntu-2504
+      title: "25.04"
 - id: openai-library
   title: OpenAI Library
   prompt: Choose a host service for OpenAI

@@ -36,6 +36,6 @@ Indicates that a conversion operator (`CType`) converts a class or structure to 
 - [Narrowing](narrowing.md)
 - [Widening and Narrowing Conversions](../../programming-guide/language-features/data-types/widening-and-narrowing-conversions.md)
 - [How to: Define an Operator](../../programming-guide/language-features/procedures/how-to-define-an-operator.md)
-- [CType Function](../functions/ctype-function.md)
+- [CType Operator](../operators/ctype-operator.md)
 - [Option Strict Statement](../statements/option-strict-statement.md)
 - [How to: Define a Conversion Operator](../../programming-guide/language-features/procedures/how-to-define-a-conversion-operator.md)

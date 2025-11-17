@@ -2,7 +2,7 @@
 title: "Tutorial: Install and use .NET local tools"
 description: Learn how to install and use a .NET tool as a local tool.
 ms.topic: tutorial
-ms.date: 05/06/2022
+ms.date: 09/06/2022
 ---
 
 # Tutorial: Install and use a .NET local tool using the .NET CLI
@@ -15,6 +15,7 @@ This tutorial teaches you how to install and use a local tool. You use a tool th
 
 * Complete the [first tutorial of this series](global-tools-how-to-create.md).
 * Install the .NET Core 2.1 runtime.
+* .NET 10.0.100 SDK or later (for `dnx`) - optional but recommended.
 
   For this tutorial you install and use a tool that targets .NET Core 2.1, so you need to have that runtime installed on your machine. To install the 2.1 runtime, go to the [.NET Core 2.1 download page](https://dotnet.microsoft.com/download/dotnet/2.1) and find the runtime installation link in the **Run apps - Runtime** column.
 
@@ -54,7 +55,7 @@ The tools listed in a manifest file are available to the current directory and s
 
 When you use a CLI command that refers to a local tool, the SDK searches for a manifest file in the current directory and parent directories. If it finds a manifest file, but the file doesn't include the referenced tool, it continues the search up through parent directories. The search ends when it finds the referenced tool or it finds a manifest file with `isRoot` set to `true`.
 
-## Install botsay as a local tool
+## Install botsay as a local tool (traditional approach)
 
 Install the tool from the package that you created in the first tutorial:
 
@@ -88,13 +89,30 @@ The *.config/dotnet-tools.json* file now has one tool:
 }
 ```
 
-## Use the tool
+## Use the installed local tool
 
-Invoke the tool by running the `dotnet tool run` command from the *repository* folder:
+Once installed as a local tool, you can invoke it in multiple ways:
 
-```dotnetcli
-dotnet tool run botsay hello from the bot
-```
+- Run the tool directly using `dnx`:
+
+   ```dotnetcli
+   dnx microsoft.botsay --add-source ./nupkg hello from the bot
+   ```
+
+   > [!NOTE]
+   > When using dnx with a local tool manifest, it automatically uses the version specified in the manifest.
+
+- Using `dotnet botsay`:
+
+   ```dotnetcli
+   dotnet botsay hello from the bot
+   ```
+
+- Using `dotnet tool run`
+
+   ```dotnetcli
+   dotnet tool run botsay hello from the bot
+   ```
 
 ## Restore a local tool installed by others
 

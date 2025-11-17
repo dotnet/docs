@@ -20,7 +20,7 @@ At the end of this quickstart, you have a scalable app running in Azure to provi
 
 ## Prerequisites
 
-- An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
+- An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 - [Azure Developer CLI](/azure/developer/azure-developer-cli/install-azd)
 - [.NET 8](https://dotnet.microsoft.com/download)
 - [Docker](https://www.docker.com/)

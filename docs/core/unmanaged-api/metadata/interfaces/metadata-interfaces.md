@@ -3,11 +3,9 @@ description: "Learn more about: Metadata interfaces (.NET)"
 title: "Metadata interfaces (.NET)"
 ms.date: 07/22/2025
 ---
-# Metadata interfaces
+# Metadata interfaces (.NET)
 
-This section describes the unmanaged metadata interfaces that provide access to the metadata exposed by .NET types, methods, fields, and other APIs. For unmanaged API metadata interfaces that are specific to .NET Framework, see [Metadata interfaces](../../../../framework/unmanaged-api/metadata/metadata-interfaces.md).
-
-## In this section
+These articles describe the unmanaged metadata interfaces that provide access to the metadata exposed by .NET types, methods, fields, and other APIs. For unmanaged API metadata interfaces that are specific to .NET Framework, see [Metadata interfaces](../../../../framework/unmanaged-api/metadata/metadata-interfaces.md).
 
 [IMapToken interface](imaptoken-interface.md)\
 Provides mapping capabilities between imported and emitted metadata signatures.

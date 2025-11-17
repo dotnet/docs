@@ -1,8 +1,8 @@
 ---
 title: "Built-in reference types"
 description: "Learn about reference types that have C# keywords you can use to declare them."
-ms.date: 08/16/2022
-f1_keywords: 
+ms.date: 10/07/2025
+f1_keywords:
   - "object_CSharpKeyword"
   - "object"
   - "delegate_CSharpKeyword"
@@ -11,7 +11,7 @@ f1_keywords:
   - "string"
   - "string_CSharpKeyword"
   - "Utf8StringLiteral_CSharpKeyword"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "object keyword [C#]"
   - "delegate keyword [C#]"
   - "function pointers [C#]"
@@ -28,7 +28,7 @@ C# has many built-in reference types. They have keywords or operators that are s
 
 ## The object type
 
-The `object` type is an alias for <xref:System.Object?displayProperty=nameWithType> in .NET. In the unified type system of C#, all types, predefined and user-defined, reference types and value types, inherit directly or indirectly from <xref:System.Object?displayProperty=nameWithType>. You can assign values of any type (except `ref struct`, see [ref struct](ref-struct.md)) to variables of type `object`. Any `object` variable can be assigned to its default value using the literal `null`. When a variable of a value type is converted to object, it's said to be *boxed*. When a variable of type `object` is converted to a value type, it's said to be *unboxed*. For more information, see [Boxing and Unboxing](../../programming-guide/types/boxing-and-unboxing.md).
+The `object` type is an alias for <xref:System.Object?displayProperty=nameWithType> in .NET. In the unified type system of C#, all types, predefined and user-defined, reference types and value types, inherit directly or indirectly from <xref:System.Object?displayProperty=nameWithType>. You can assign values of any type (except `ref struct`, see [ref struct](ref-struct.md)) to variables of type `object`. Any `object` variable can be assigned to its default value using the literal `null`. When a variable of a value type is converted to object, it's *boxed*. When a variable of type `object` is converted to a value type, it's *unboxed*. For more information, see [Boxing and Unboxing](../../programming-guide/types/boxing-and-unboxing.md).
 
 ## The string type
 
@@ -55,7 +55,7 @@ string a = "good " + "morning";
 
 The preceding code creates a string object that contains "good morning".
 
-Strings are *immutable*--the contents of a string object can't be changed after the object is created. For example, when you write this code, the compiler actually creates a new string object to hold the new sequence of characters, and that new object is assigned to `b`. The memory that had been allocated for `b` (when it contained the string "h") is then eligible for garbage collection.
+Strings are *immutable*--the contents of a string object can't be changed after the object is created. For example, when you write this code, the compiler actually creates a new string object to hold the new sequence of characters, and that new object is assigned to `b`. The memory allocated for `b` (when it contained the string "h") is then eligible for garbage collection.
 
 ```csharp
 string b = "h";
@@ -136,6 +136,8 @@ var json= """
     }
     """;
 ```
+
+[!INCLUDE[raw-string-tip](../../includes/raw-string-parsing.md)]
 
 The compiler issues an error if any of the text lines extend to the left of the closing quote sequence. The opening and closing quote sequences can be on the same line, providing the string literal neither starts nor ends with a quote character:
 
@@ -219,19 +221,19 @@ Delegate combination or removal fails with a runtime exception when the delegate
 ```csharp
 Action<string> stringAction = str => {};
 Action<object> objectAction = obj => {};
-  
+
 // Valid due to implicit reference conversion of
-// objectAction to Action<string>, but may fail
+// objectAction to Action<string>, but might fail
 // at run time.
 Action<string> combination = stringAction + objectAction;
 ```
 
-You can create a delegate with the correct runtime type by creating a new delegate object. The following example demonstrates how this workaround may be applied to the preceding example.
+You can create a delegate with the correct runtime type by creating a new delegate object. The following example demonstrates how this workaround might be applied to the preceding example.
 
 ```csharp
 Action<string> stringAction = str => {};
 Action<object> objectAction = obj => {};
-  
+
 // Creates a new delegate instance with a runtime type of Action<string>.
 Action<string> wrappedObjectAction = new Action<string>(objectAction);
 
@@ -288,7 +290,6 @@ For more information, see the following sections of the [C# language specificati
 - [Events](../../programming-guide/events/index.md)
 - [Using Type dynamic](../../advanced-topics/interop/using-type-dynamic.md)
 - [Best Practices for Using Strings](../../../standard/base-types/best-practices-strings.md)
-- [Basic String Operations](../../../standard/base-types/basic-string-operations.md)
 - [Creating New Strings](../../../standard/base-types/creating-new.md)
 - [Type-testing and cast operators](../operators/type-testing-and-cast.md)
 - [How to safely cast using pattern matching and the as and is operators](../../fundamentals/tutorials/safely-cast-using-pattern-matching-is-and-as-operators.md)

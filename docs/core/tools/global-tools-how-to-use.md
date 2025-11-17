@@ -2,7 +2,7 @@
 title: "Tutorial: Install and use a .NET global tool"
 description: Learn how to install and use a .NET tool as a global tool.
 ms.topic: tutorial
-ms.date: 07/25/2023
+ms.date: 09/06/2025
 ---
 
 # Tutorial: Install and use a .NET global tool using the .NET CLI
@@ -14,8 +14,23 @@ This tutorial teaches you how to install and use a global tool. You use a tool t
 ## Prerequisites
 
 * Complete the [first tutorial of this series](global-tools-how-to-create.md).
+* .NET 10.0.100 SDK or later (for `dnx`) - optional but recommended.
 
-## Use the tool as a global tool
+## Run the tool without installation (recommended)
+
+Starting with .NET 10.0.100, you can run .NET tools without permanent installation using [`dnx`](dotnet-tool-exec.md):
+
+1. Run the tool directly using dnx (simplified syntax):
+
+   ```dotnetcli
+   dnx microsoft.botsay --add-source ./nupkg microsoft.botsay hello from the bot
+   ```
+
+   The `--add-source` parameter tells the .NET CLI to use the *./nupkg* directory as an additional source feed for NuGet packages when the tool is not available on NuGet.org.
+
+## Use the tool as a global tool (traditional installation)
+
+If you prefer permanent installation for frequent use:
 
 1. Install the tool from the package by running the [dotnet tool install](dotnet-tool-install.md) command in the *microsoft.botsay* project folder:
 

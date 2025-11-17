@@ -24,12 +24,12 @@ namespace InteractiveBrokeredAuthSample
                 });
 
             // To authenticate and authorize with an app, substitute the
-            // <app_id> and <tenant_id> placeholders with the values for your app and tenant.
+            // <your-tenant-id> and <your-client-id> placeholders with the values for your app and tenant.
             // var credential = new InteractiveBrowserCredential(
             //    new InteractiveBrowserCredentialBrokerOptions(windowHandle)
             //        { 
-            //            TenantId = "your-tenant-id",
-            //            ClientId = "your-client-id"
+            //            TenantId = "<your-tenant-id>",
+            //            ClientId = "<your-client-id>"
             //        }
             // );
 

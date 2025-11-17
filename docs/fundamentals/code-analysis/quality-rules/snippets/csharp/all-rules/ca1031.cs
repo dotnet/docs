@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.IO;
 
 namespace ca1031
@@ -7,14 +7,14 @@ namespace ca1031
     // Creates two violations of the rule.
     public class GenericExceptionsCaught
     {
-        FileStream? inStream;
-        FileStream? outStream;
+        private readonly FileStream? _inStream;
+        private readonly FileStream? _outStream;
 
         public GenericExceptionsCaught(string inFile, string outFile)
         {
             try
             {
-                inStream = File.Open(inFile, FileMode.Open);
+                _inStream = File.Open(inFile, FileMode.Open);
             }
             catch (SystemException)
             {
@@ -23,7 +23,7 @@ namespace ca1031
 
             try
             {
-                outStream = File.Open(outFile, FileMode.Open);
+                _outStream = File.Open(outFile, FileMode.Open);
             }
             catch
             {
@@ -34,28 +34,28 @@ namespace ca1031
 
     public class GenericExceptionsCaughtFixed
     {
-        FileStream? inStream;
-        FileStream outStream;
+        private readonly FileStream? _inStream;
+        private readonly FileStream _outStream;
 
         public GenericExceptionsCaughtFixed(string inFile, string outFile)
         {
             try
             {
-                inStream = File.Open(inFile, FileMode.Open);
+                _inStream = File.Open(inFile, FileMode.Open);
             }
 
             // Fix the first violation by catching a specific exception.
             catch (FileNotFoundException)
             {
                 Console.WriteLine($"Unable to open {inFile}.");
-            };
+            }
 
             // For functionally equivalent code, also catch 
             // remaining exceptions that may be thrown by File.Open
 
             try
             {
-                outStream = File.Open(outFile, FileMode.Open);
+                _outStream = File.Open(outFile, FileMode.Open);
             }
 
             // Fix the second violation by rethrowing the generic 

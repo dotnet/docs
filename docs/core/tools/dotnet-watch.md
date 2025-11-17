@@ -1,11 +1,11 @@
 ---
 title: dotnet watch command
 description: The dotnet watch command is a file watcher that runs a dotnet command when changes in source code are detected.
-ms.date: 06/03/2024
+ms.date: 09/29/2025
 ---
 # dotnet watch
 
-**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
+**This article applies to:** ✔️ .NET 6 SDK and later versions
 
 ## Name
 
@@ -15,11 +15,10 @@ ms.date: 06/03/2024
 
 ```dotnetcli
 dotnet watch [<command>]
-  [--list]
-  [--no-hot-reload] [--non-interactive]
-  [--project <PROJECT>]
-  [-q|--quiet] [-v|--verbose]
-  [--version]
+  [--artifacts-path <ARTIFACTS_DIR>] [--disable-build-servers]
+  [--list] [--no-hot-reload] [--no-self-contained]
+  [--non-interactive] [--project <PROJECT>] [--sc|--self-contained]
+  [-q|--quiet] [-v|--verbose] [--version]
   [--] <forwarded arguments> 
 
 dotnet watch -?|-h|--help
@@ -64,9 +63,15 @@ As an alternative to disabling response compression, manually add the browser re
 
 ## Options
 
+[!INCLUDE [artifacts-path](../../../includes/cli-artifacts-path.md)]
+
+[!INCLUDE [disable-build-servers](../../../includes/cli-disable-build-servers.md)]
+
 - **`--list`**
 
   Lists all discovered files without starting the watcher.
+
+[!INCLUDE [no-self-contained](../../../includes/cli-no-self-contained.md)]
 
 - **`--no-hot-reload`**
 
@@ -79,6 +84,8 @@ As an alternative to disabling response compression, manually add the browser re
 - **`--project <PATH>`**
 
   Specifies the path of the project file to run (folder only or including the project file name). If not specified, it defaults to the current directory.
+
+[!INCLUDE [self-contained](../../../includes/cli-self-contained.md)]
 
 - **`-q|--quiet`**
 
@@ -95,6 +102,8 @@ As an alternative to disabling response compression, manually add the browser re
 - **`--`**
 
   The [double-dash option ('--')](../../standard/commandline/syntax.md#the----token) can be used to delimit `dotnet watch` options from arguments that will be passed to the child process. Its use is optional. When the double-dash option isn't used, `dotnet watch` considers the first unrecognized argument to be the beginning of arguments that it should pass into the child `dotnet` process.
+
+[!INCLUDE [help](../../../includes/cli-help.md)]
 
 ## Environment variables
 
@@ -211,7 +220,7 @@ More files can be watched by adding items to the `Watch` group. For example, the
 
 ## Hot Reload
 
-Starting in .NET 6, `dotnet watch` includes support for *hot reload*. Hot reload is a feature that lets you apply changes to a running app without having to rebuild and restart it. The changes may be to code files or static assets, such as stylesheet files and JavaScript files. This feature streamlines the local development experience, as it gives immediate feedback when you modify your app.
+Starting in .NET 6 SDK, `dotnet watch` includes support for *hot reload*. Hot reload is a feature that lets you apply changes to a running app without having to rebuild and restart it. The changes may be to code files or static assets, such as stylesheet files and JavaScript files. This feature streamlines the local development experience, as it gives immediate feedback when you modify your app.
 
 For information about app types and .NET versions that support hot reload, see [Supported .NET app frameworks and scenarios](/visualstudio/debugger/hot-reload#supported-net-app-frameworks-and-scenarios).
 

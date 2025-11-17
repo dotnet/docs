@@ -93,7 +93,7 @@ An important consideration with a type conversion is whether the result of the c
   
 - <xref:System.OverflowException> — (integral types only) if the converted value is too large for the target type  
   
- If a class or structure defines a [CType Function](../../../language-reference/functions/ctype-function.md) to serve as a conversion operator to or from that class or structure, that `CType` can throw any exception it deems appropriate. In addition, that `CType` might call Visual Basic functions or .NET Framework methods, which in turn could throw a variety of exceptions.  
+ If a class or structure defines a [CType Function](../../../language-reference/operators/ctype-operator.md) to serve as a conversion operator to or from that class or structure, that `CType` can throw any exception it deems appropriate. In addition, that `CType` might call Visual Basic functions or .NET Framework methods, which in turn could throw a variety of exceptions.  
   
 ## Changes During Reference Type Conversions  
 

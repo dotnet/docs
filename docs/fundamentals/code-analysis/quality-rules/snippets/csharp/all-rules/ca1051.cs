@@ -9,13 +9,7 @@
 
     public class GoodPublicInstanceFields
     {
-        private int instanceData = 32;
-
-        public int InstanceData
-        {
-            get { return instanceData; }
-            set { instanceData = value; }
-        }
+        public int InstanceData { get; set; } = 32;
     }
     //</snippet1>
 }

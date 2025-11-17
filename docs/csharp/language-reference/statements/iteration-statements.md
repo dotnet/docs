@@ -154,10 +154,6 @@ For more information, see the following sections of the [C# language specificati
 - [The `foreach` statement](~/_csharpstandard/standard/statements.md#1395-the-foreach-statement)
 - [The `do` statement](~/_csharpstandard/standard/statements.md#1393-the-do-statement)
 - [The `while` statement](~/_csharpstandard/standard/statements.md#1392-the-while-statement)
-
-For more information about these features, see the following feature proposal notes:
-
-- [Async streams](~/_csharplang/proposals/csharp-8.0/async-streams.md)
 - [Extension `GetEnumerator` support for `foreach` loops](~/_csharplang/proposals/csharp-9.0/extension-getenumerator.md)
 
 ## See also

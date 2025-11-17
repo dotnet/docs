@@ -32,7 +32,7 @@ namespace CsProgGuideTypes
             // List example.
             // Create a list of objects to hold a heterogeneous collection
             // of elements.
-            List<object> mixedList = new List<object>();
+            List<object> mixedList = [];
 
             // Add a string element to the list.
             mixedList.Add("First Group:");
@@ -79,8 +79,7 @@ namespace CsProgGuideTypes
                 sum += (int)mixedList[j] * (int)mixedList[j];
             }
 
-            // The sum displayed is 30, the sum of 1 + 4 + 9 + 16.
-            Console.WriteLine("Sum: " + sum);
+            Console.WriteLine($"Sum: {sum}");
 
             // Output:
             // Answer42True
@@ -186,11 +185,11 @@ namespace CsProgGuideTypes
             {
                 int j = (short)o;  // attempt to unbox
 
-                System.Console.WriteLine("Unboxing OK.");
+                Console.WriteLine("Unboxing OK.");
             }
-            catch (System.InvalidCastException e)
+            catch (InvalidCastException e)
             {
-                System.Console.WriteLine($"{e.Message} Error: Incorrect unboxing.");
+                Console.WriteLine($"{e.Message} Error: Incorrect unboxing.");
             }
         }
     }
@@ -223,7 +222,7 @@ namespace CsProgGuideTypes
         {
             //<Snippet23>
             byte[] bytes = BitConverter.GetBytes(201805978);
-            Console.WriteLine("byte array: " + BitConverter.ToString(bytes));
+            Console.WriteLine($"byte array: {BitConverter.ToString(bytes)}");
             // Output: byte array: 9A-50-07-0C
             //</Snippet23>
         }
@@ -268,7 +267,7 @@ namespace CsProgGuideTypes
                 // Convert the number expressed in base-16 to an integer.
                 int value = Convert.ToInt32(hex, 16);
                 // Get the character corresponding to the integral value.
-                string stringValue = Char.ConvertFromUtf32(value);
+                string stringValue = char.ConvertFromUtf32(value);
                 char charValue = (char)value;
                 Console.WriteLine("hexadecimal value = {0}, int value = {1}, char value = {2} or {3}",
                                     hex, value, stringValue, charValue);
@@ -291,7 +290,7 @@ namespace CsProgGuideTypes
 
             //<Snippet32>
             string hexString = "8E2";
-            int num = Int32.Parse(hexString, System.Globalization.NumberStyles.HexNumber);
+            int num = int.Parse(hexString, System.Globalization.NumberStyles.HexNumber);
             Console.WriteLine(num);
             //Output: 2274
             //</Snippet32>

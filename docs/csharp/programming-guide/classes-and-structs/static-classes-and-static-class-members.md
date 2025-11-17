@@ -1,7 +1,7 @@
 ---
 title: "Static Classes and Static Class Members"
 description: Static classes can't be instantiated in C#. You access the members of a static class by using the class name itself.
-ms.date: 03/15/2024
+ms.date: 10/13/2025
 helpviewer_keywords:
   - "C# language, static members"
   - "static members [C#]"
@@ -18,7 +18,7 @@ A [static](../../language-reference/keywords/static.md) class is basically the s
 UtilityClass.MethodA();
 ```
 
- A static class can be used as a convenient container for sets of methods that just operate on input parameters and don't have to get or set any internal instance fields. For example, in the .NET Class Library, the static <xref:System.Math?displayProperty=nameWithType> class contains methods that perform mathematical operations, without any requirement to store or retrieve data that is unique to a particular instance of the <xref:System.Math> class. That is, you apply the members of the class by specifying the class name and the method name, as shown in the following example.
+ A static class can be used as a convenient container for sets of methods that just operate on input parameters and don't have to get or set any internal instance fields. For example, in the .NET Class Library, the static <xref:System.Math?displayProperty=nameWithType> class contains methods that perform mathematical operations, without any requirement to store or retrieve data that's unique to a particular instance of the <xref:System.Math> class. That is, you apply the members of the class by specifying the class name and the method name, as shown in the following example.
 
 ```csharp
 double dub = -3.14;

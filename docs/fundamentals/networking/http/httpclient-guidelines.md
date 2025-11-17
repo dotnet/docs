@@ -3,7 +3,8 @@ title: HttpClient guidelines for .NET
 description: Learn about using HttpClient instances to send HTTP requests and how you can manage clients using IHttpClientFactory in your .NET apps.
 author: gewarren
 ms.author: gewarren
-ms.date: 03/08/2024
+ms.date: 10/22/2025
+ai-usage: ai-assisted
 ---
 
 # Guidelines for using HttpClient
@@ -12,7 +13,7 @@ The <xref:System.Net.Http.HttpClient?displayProperty=fullName> class sends HTTP 
 
 ## DNS behavior
 
-<xref:System.Net.Http.HttpClient> only resolves DNS entries when a connection is created. It does not track any time to live (TTL) durations specified by the DNS server. If DNS entries change regularly, which can happen in some scenarios, the client won't respect those updates. To solve this issue, you can limit the lifetime of the connection by setting the <xref:System.Net.Http.SocketsHttpHandler.PooledConnectionLifetime> property, so that DNS lookup is repeated when the connection is replaced. Consider the following example:
+<xref:System.Net.Http.HttpClient> only resolves DNS entries when a connection is created. It doesn't track any time to live (TTL) durations specified by the DNS server. If DNS entries change regularly, which can happen in some scenarios, the client won't respect those updates. To solve this issue, limit the lifetime of the connection by setting the <xref:System.Net.Http.SocketsHttpHandler.PooledConnectionLifetime> property, so that DNS lookup is repeated when the connection is replaced. Consider this example:
 
 ```csharp
 var handler = new SocketsHttpHandler
@@ -22,13 +23,13 @@ var handler = new SocketsHttpHandler
 var sharedClient = new HttpClient(handler);
 ```
 
-The preceding `HttpClient` is configured to reuse connections for 15 minutes. After the timespan specified by <xref:System.Net.Http.SocketsHttpHandler.PooledConnectionLifetime> has elapsed and the connection has completed its last associated request (if any), this connection is closed. If there are any requests waiting in the queue, a new connection is created as needed.
+The preceding `HttpClient` is configured to reuse connections for 15 minutes. After the timespan specified by <xref:System.Net.Http.SocketsHttpHandler.PooledConnectionLifetime> has elapsed and the connection has completed its last associated request (if any), the connection is closed. If there are any requests waiting in the queue, a new connection is created as needed.
 
 The 15-minute interval was chosen arbitrarily for illustration purposes. You should choose the value based on the expected frequency of DNS or other network changes.
 
 ## Pooled connections
 
-The connection pool for an <xref:System.Net.Http.HttpClient> is linked to the underlying <xref:System.Net.Http.SocketsHttpHandler>. When the <xref:System.Net.Http.HttpClient> instance is disposed, it disposes all existing connections inside the pool. If you later send a request to the same server, a new connection must be recreated. As a result, there's a performance penalty for unnecessary connection creation. Moreover, TCP ports are not released immediately after connection closure. (For more information on that, see TCP `TIME-WAIT` in [RFC 9293](https://www.rfc-editor.org/rfc/rfc9293.html#section-3.3.2).) If the rate of requests is high, the operating system limit of available ports might be exhausted. To avoid port exhaustion problems, we [recommend](#recommended-use) reusing <xref:System.Net.Http.HttpClient> instances for as many HTTP requests as possible.
+The connection pool for an <xref:System.Net.Http.HttpClient> is linked to the underlying <xref:System.Net.Http.SocketsHttpHandler>. When the <xref:System.Net.Http.HttpClient> instance is disposed, it disposes all existing connections inside the pool. If you later send a request to the same server, a new connection must be recreated. As a result, there's a performance penalty for unnecessary connection creation. Moreover, TCP ports aren't released immediately after connection closure. (For more information on that, see TCP `TIME-WAIT` in [RFC 9293](https://www.rfc-editor.org/rfc/rfc9293.html#section-3.3.2).) If the rate of requests is high, the operating system limit of available ports might be exhausted. To avoid port exhaustion problems, we [recommend](#recommended-use) reusing <xref:System.Net.Http.HttpClient> instances for as many HTTP requests as possible.
 
 ## Recommended use
 

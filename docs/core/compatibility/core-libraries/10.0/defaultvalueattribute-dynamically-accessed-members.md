@@ -11,7 +11,7 @@ The <xref:System.ComponentModel.DefaultValueAttribute.%23ctor(System.Type,System
 
 ## Version introduced
 
-.NET 10 Preview 7
+.NET 10
 
 ## Previous behavior
 

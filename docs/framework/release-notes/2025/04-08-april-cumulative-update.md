@@ -30,7 +30,7 @@ Addresses an issue with printing large number of pages due to an OutOfMemory exc
 
 ## Known issues
 
-This release contains no known issues.  
+This release contains no known issues.
 
 ## Summary tables
 
@@ -78,8 +78,8 @@ The following table is for earlier Windows and Windows Server versions for Secur
 | **Windows Server 2008 R2** | **[5055684](https://support.microsoft.com/kb/5055684)** |
 | .NET Framework 3.5.1 | [5044011](https://support.microsoft.com/kb/5044011) |
 | .NET Framework 4.6.2, 4.7, 4.7.1, 4.7.2 | [5054696](https://support.microsoft.com/kb/5054696) |
-| .NET Framework 4.8 |[5055171](https://support.microsoft.com/kb/5055171) |
-| **Windows Server 2008** | **[5055687](https://support.microsoft.com/kb/5055687)** |
+| .NET Framework 4.8 |[5055171](https://support.microsoft.com/topic/april-8-2025-security-and-quality-rollup-for-net-framework-4-8-for-windows-server-2008-r2-sp1-kb5055171-e9d77437-8093-4f86-a5d4-815c8a30aa4c) |
+| **Windows Server 2008** | **[5055687](https://support.microsoft.com/topic/april-8-2025-security-and-quality-rollup-for-net-framework-2-0-3-0-3-5-sp1-4-6-2-for-windows-server-2008-sp2-kb5055687-9c7cd4f4-b30e-4e9d-a183-d241b7a72440)** |
 | .NET Framework 2.0, 3.0 | [5044010](https://support.microsoft.com/kb/5044010) |
 | .NET Framework 3.5 SP1 | [5040673](https://support.microsoft.com/kb/5040673) |
 | .NET Framework 4.6.2 | [5054696](https://support.microsoft.com/kb/5054696) |

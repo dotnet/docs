@@ -73,8 +73,6 @@ items:
             href: ../core/install/linux-package-mixup.md
           - name: How to check .NET versions
             href: ../core/install/how-to-detect-installed-versions.md
-          - name: Install localized IntelliSense
-            href: ../core/install/localized-intellisense.md
   - name: Overview
     items:
       - name: Introduction to .NET
@@ -257,7 +255,7 @@ items:
                     href: runtime-libraries/system-convert.md
           - name: Choose between anonymous and tuple types
             href: ../standard/base-types/choosing-between-anonymous-and-tuple.md
-          - name: Class library overview
+          - name: Core .NET libraries overview
             href: ../standard/class-library-overview.md
           - name: Supplemental API remarks
             items:
@@ -619,10 +617,8 @@ items:
             href: ../standard/base-types/string-comparison-net-5-plus.md
           - name: Basic string operations
             items:
-              - name: Overview
-                href: ../standard/base-types/basic-string-operations.md
-                displayName: string operations
               - name: Create new strings
+                displayName: string operations
                 href: ../standard/base-types/creating-new.md
               - name: Trim and remove characters
                 href: ../standard/base-types/trimming.md
@@ -1141,6 +1137,9 @@ items:
               - name: HTTP client factory
                 href: ../core/extensions/httpclient-factory.md
                 displayName: networking,httpclient,http,dependency injection,client,factory,named client,named httpclient,typed client,typed httpclient
+              - name: Monitor and analyze HTTP client performance
+                href: ../core/extensions/httpclient-latency-extensions.md
+                displayName: httpclient,http,client,factory,dependency injection,keyed,keyed di,keyed services
               - name: HTTP client factory troubleshooting
                 href: ../core/extensions/httpclient-factory-troubleshooting.md
                 displayName: httpclient,http,client,factory,named client,named httpclient,typed client,typed httpclient

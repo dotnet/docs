@@ -1,27 +1,11 @@
 //<Snippet1>
 public static class TemperatureConverter
 {
-    public static double CelsiusToFahrenheit(string temperatureCelsius)
-    {
-        // Convert argument to double for calculations.
-        double celsius = Double.Parse(temperatureCelsius);
+    public static double CelsiusToFahrenheit(string temperatureCelsius) =>
+        double.Parse(temperatureCelsius) * 9 / 5 + 32;
 
-        // Convert Celsius to Fahrenheit.
-        double fahrenheit = (celsius * 9 / 5) + 32;
-
-        return fahrenheit;
-    }
-
-    public static double FahrenheitToCelsius(string temperatureFahrenheit)
-    {
-        // Convert argument to double for calculations.
-        double fahrenheit = Double.Parse(temperatureFahrenheit);
-
-        // Convert Fahrenheit to Celsius.
-        double celsius = (fahrenheit - 32) * 5 / 9;
-
-        return celsius;
-    }
+    public static double FahrenheitToCelsius(string temperatureFahrenheit) =>
+        (double.Parse(temperatureFahrenheit) - 32) * 5 / 9;
 }
 
 class TestTemperatureConverter
@@ -34,20 +18,19 @@ class TestTemperatureConverter
         Console.Write(":");
 
         string? selection = Console.ReadLine();
-        double F, C = 0;
 
         switch (selection)
         {
             case "1":
                 Console.Write("Please enter the Celsius temperature: ");
-                F = TemperatureConverter.CelsiusToFahrenheit(Console.ReadLine() ?? "0");
-                Console.WriteLine($"Temperature in Fahrenheit: {F:F2}");
+                var f = TemperatureConverter.CelsiusToFahrenheit(Console.ReadLine() ?? "0");
+                Console.WriteLine($"Temperature in Fahrenheit: {f:F2}");
                 break;
 
             case "2":
                 Console.Write("Please enter the Fahrenheit temperature: ");
-                C = TemperatureConverter.FahrenheitToCelsius(Console.ReadLine() ?? "0");
-                Console.WriteLine($"Temperature in Celsius: {C:F2}");
+                var c = TemperatureConverter.FahrenheitToCelsius(Console.ReadLine() ?? "0");
+                Console.WriteLine($"Temperature in Celsius: {c:F2}");
                 break;
 
             default:
@@ -78,13 +61,7 @@ public class Automobile
 {
     public static int NumberOfWheels = 4;
 
-    public static int SizeOfGasTank
-    {
-        get
-        {
-            return 15;
-        }
-    }
+    public static int SizeOfGasTank => 15;
 
     public static void Drive() { }
 
@@ -100,7 +77,7 @@ class TestAutomobile
     {
         //<Snippet3>
         Automobile.Drive();
-        int i = Automobile.NumberOfWheels;
+        var i = Automobile.NumberOfWheels;
         //</Snippet3>
     }
 }

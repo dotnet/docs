@@ -35,7 +35,9 @@ You can declare several instances of the same type in one `using` statement, as 
 
 When you declare several instances in one `using` statement, they are disposed in reverse order of declaration.
 
-You can also use the `using` statement and declaration with an instance of a [ref struct](../builtin-types/ref-struct.md) that fits the disposable pattern. That is, it has an instance `Dispose` method, which is accessible, parameterless and has a `void` return type.
+You can also use the `using` statement and declaration with an instance of a [ref struct](../builtin-types/ref-struct.md) that fits the disposable pattern. That is, it has an instance `Dispose` method that's accessible, parameterless, and has a `void` return type.
+
+A `return` inside a `using` block still guarantees disposal, the compiler rewrites it into a `try/finally`, so the resource’s `Dispose` is always called before the method actually returns.
 
 The `using` statement can also be of the following form:
 
@@ -55,7 +57,7 @@ where `expression` produces a disposable instance. The following example demonst
 
 ## C# language specification
 
-For more information, see [The using statement](~/_csharpstandard/standard/statements.md#1314-the-using-statement) section of the [C# language specification](~/_csharpstandard/standard/README.md) and the proposal note about ["pattern-based using" and "using declarations"](~/_csharplang/proposals/csharp-8.0/using.md).
+For more information, see [The using statement](~/_csharpstandard/standard/statements.md#1314-the-using-statement) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 ## See also
 

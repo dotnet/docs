@@ -1,7 +1,7 @@
 ---
 title: dotnet workload install command
 description: The 'dotnet workload install' command installs optional workloads.
-ms.date: 09/10/2021
+ms.date: 11/12/2025
 no-loc: [dotnet workload install]
 ---
 # dotnet workload install
@@ -96,7 +96,7 @@ The `dotnet workload update` command also downloads advertising manifests. The d
 
 [!INCLUDE [verbosity](../../../includes/cli-verbosity-packages.md)]
 
-[!INCLUDE [version](../../../includes/cli-version.md)]
+[!INCLUDE [workload-version](../../../includes/cli-workload-version.md)]
 
 ## Examples
 
@@ -110,4 +110,10 @@ The `dotnet workload update` command also downloads advertising manifests. The d
   
   ```dotnetcli
   dotnet workload install maui-android maui-ios
+  ```
+
+- Install the workload version specified by the `@` character:
+
+  ```dotnetcli
+  dotnet workload install maui@10.0.100
   ```

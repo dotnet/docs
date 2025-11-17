@@ -24,8 +24,12 @@ items:
         href: grains/grain-references.md
       - name: Grain identity
         href: grains/grain-identity.md
-      - name: Grain placement
-        href: grains/grain-placement.md
+      - name: Grain placement  
+        items:  
+          - name: Overview  
+            href: grains/grain-placement.md  
+          - name: Grain placement filtering  
+            href: grains/grain-placement-filtering.md 
       - name: Grain extensions
         href: grains/grain-extensions.md
       - name: Timers and reminders
@@ -138,6 +142,8 @@ items:
             href: host/configuration-guide/typical-configurations.md
           - name: Options classes
             href: host/configuration-guide/list-of-options-classes.md
+          - name: Silo metadata
+            href: host/configuration-guide/silo-metadata.md
           - name: Activation collection
             href: host/configuration-guide/activation-collection.md
           - name: Configure .NET garbage collection
@@ -191,18 +197,6 @@ items:
         href: deployment/docker-deployment.md
       - name: Troubleshoot deployments
         href: deployment/troubleshooting-deployments.md
-      - name: Multi-cluster support
-        items:
-          - name: Overview
-            href: deployment/multi-cluster-support/overview.md
-          - name: Multi-cluster configuration
-            href: deployment/multi-cluster-support/multi-cluster-configuration.md
-          - name: Gossip channels
-            href: deployment/multi-cluster-support/gossip-channels.md
-          - name: Silo configuration
-            href: deployment/multi-cluster-support/silo-configuration.md
-          - name: Global-single-instance grains
-            href: deployment/multi-cluster-support/global-single-instance.md
   - name: Code samples
     items:
       - name: Overview

@@ -4,7 +4,7 @@
 #:package Colorful.Console@1.2.15
 // </ColorfulPackage>
 // <CommandLinePackage>
-#:package System.CommandLine@2.0.0-beta6
+#:package System.CommandLine@2.0.0
 // </CommandLinePackage>
 
 // <Usings>

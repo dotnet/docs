@@ -42,7 +42,7 @@ Inside a [`catch` block](#the-try-catch-statement), you can use a `throw;` state
 > [!NOTE]
 > `throw;` preserves the original stack trace of the exception, which is stored in the <xref:System.Exception.StackTrace?displayProperty=nameWithType> property. Opposite to that, `throw e;` updates the <xref:System.Exception.StackTrace> property of `e`.
 
-When an exception is thrown, the common language runtime (CLR) looks for the [`catch` block](#the-try-catch-statement) that can handle this exception. If the currently executed method doesn't contain such a `catch` block, the CLR looks at the method that called the current method, and so on up the call stack. If no `catch` block is found, the CLR terminates the executing thread. For more information, see the [How exceptions are handled](~/_csharpstandard/standard/exceptions.md#214-how-exceptions-are-handled) section of the [C# language specification](~/_csharpstandard/standard/README.md).
+When an exception is thrown, the common language runtime (CLR) looks for the [`catch` block](#the-try-catch-statement) that can handle this exception. If the currently executed method doesn't contain such a `catch` block, the CLR looks at the method that called the current method, and so on up the call stack. If no `catch` block is found, the CLR terminates the executing thread. For more information, see the [How exceptions are handled](~/_csharpstandard/standard/exceptions.md#224-how-exceptions-are-handled) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 ### The `throw` expression
 

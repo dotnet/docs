@@ -3,8 +3,9 @@ title: .NET tools
 description: How to install, use, update, and remove .NET tools. Covers global tools, tool-path tools, and local tools. 
 author: KathleenDollard
 ms.topic: how-to
-ms.date: 07/25/2023
+ms.date: 10/22/2025
 ms.custom: devdivchpfy22
+ai-usage: ai-assisted
 ---
 # How to manage .NET tools
 
@@ -299,3 +300,4 @@ dotnet <command> --help
 * [Tutorial: Create a .NET tool using the .NET CLI](global-tools-how-to-create.md)
 * [Tutorial: Install and use a .NET global tool using the .NET CLI](global-tools-how-to-use.md)
 * [Tutorial: Install and use a .NET local tool using the .NET CLI](local-tools-how-to-use.md)
+* [Create RID-specific and AOT .NET tools](rid-specific-tools.md)

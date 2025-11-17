@@ -1,11 +1,11 @@
 ---
 title: dotnet dev-certs command
 description: The dotnet dev-certs command generates a self-signed certificate to enable HTTPS use in development.
-ms.date: 07/14/2022
+ms.date: 09/29/2025
 ---
 # dotnet dev-certs
 
-**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
+**This article applies to:** ✔️ .NET 6 SDK and later versions
 
 ## Name
 
@@ -15,7 +15,8 @@ ms.date: 07/14/2022
 
 ```dotnetcli
 dotnet dev-certs https 
-  [-c|--check] [--clean] [-ep|--export-path <PATH>]
+  [-c|--check] [--check-trust-machine-readable] 
+  [--clean] [-ep|--export-path <PATH>]
   [--format] [-i|--import] [-np|--no-password]
   [-p|--password] [-q|--quiet] [-t|--trust]
   [-v|--verbose] [--version]
@@ -60,6 +61,10 @@ The `dotnet dev-certs` command manages a self-signed certificate to enable HTTPS
 - **`-c|--check`**
 
   Checks for the existence of the development certificate but doesn't perform any action. Use this option with the `--trust` option to check if the certificate is not only valid but also trusted.
+
+- **`--check-trust-machine-readable`**
+
+  Same as running `--check --trust`, but outputs the results in JSON.
 
 - **`--clean`**
 
@@ -188,8 +193,8 @@ The `dotnet dev-certs` command manages a self-signed certificate to enable HTTPS
 
 ## See also
 
-* [Generate self-signed certificates with the .NET CLI](../additional-tools/self-signed-certificates-guide.md)
-* [Enforce HTTPS in ASP.NET Core](/aspnet/core/security/enforcing-ssl)
-* [Troubleshoot certificate problems such as certificate not trusted](/aspnet/core/security/enforcing-ssl#troubleshoot-certificate-problems-such-as-certificate-not-trusted)
-* [Hosting ASP.NET Core images with Docker over HTTPS](/aspnet/core/security/docker-https)
-* [Hosting ASP.NET Core images with Docker Compose over HTTPS](/aspnet/core/security/docker-compose-https)
+- [Generate self-signed certificates with the .NET CLI](../additional-tools/self-signed-certificates-guide.md)
+- [Enforce HTTPS in ASP.NET Core](/aspnet/core/security/enforcing-ssl)
+- [Troubleshoot certificate problems such as certificate not trusted](/aspnet/core/security/enforcing-ssl#troubleshoot-certificate-problems-such-as-certificate-not-trusted)
+- [Hosting ASP.NET Core images with Docker over HTTPS](/aspnet/core/security/docker-https)
+- [Hosting ASP.NET Core images with Docker Compose over HTTPS](/aspnet/core/security/docker-compose-https)

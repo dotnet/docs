@@ -1,0 +1,57 @@
+---
+description: "Learn more about: ICorDebugArrayValue::GetElement Method"
+title: "ICorDebugArrayValue::GetElement Method"
+ms.date: "03/30/2017"
+api_name:
+  - "ICorDebugArrayValue.GetElement"
+api_location:
+  - "mscordbi.dll"
+api_type:
+  - "COM"
+f1_keywords:
+  - "ICorDebugArrayValue::GetElement"
+helpviewer_keywords:
+  - "GetElement method [.NET debugging]"
+  - "ICorDebugArrayValue::GetElement method [.NET debugging]"
+topic_type:
+  - "apiref"
+---
+# ICorDebugArrayValue::GetElement Method
+
+Gets the value of the given array element.
+
+## Syntax
+
+```cpp
+HRESULT GetElement (
+    [in]  ULONG32          cdim,
+    [in, size_is(cdim), length_is(cdim)]
+         ULONG32           indices[],
+    [out] ICorDebugValue   **ppValue
+);
+```
+
+## Parameters
+
+ `cdim`
+ [in] The number of dimensions of this `ICorDebugArrayValue` object.
+
+This value is also the size of the `indices` array because its size is equal to the number of dimensions of the `ICorDebugArrayValue` object.
+
+ `indices`
+ [in] An array of index values, each of which specifies a position within a dimension of the `ICorDebugArrayValue` object.
+
+This value must not be null.
+
+ `ppValue`
+ [out] A pointer to the address of an ICorDebugValue object that represents the value of the specified element.
+
+## Requirements
+
+ **Platforms:** See [.NET supported operating systems](https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md).
+
+ **Header:** CorDebug.idl, CorDebug.h
+
+ **Library:** CorGuids.lib
+
+ **.NET versions:** Available since .NET Framework 1.0

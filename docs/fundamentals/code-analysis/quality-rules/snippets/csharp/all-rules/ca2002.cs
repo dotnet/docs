@@ -14,7 +14,7 @@ namespace ca2002
 
         void LockOnWeakId2()
         {
-            MemoryStream stream = new MemoryStream();
+            MemoryStream stream = new();
             lock (stream) { }
         }
 
@@ -30,7 +30,7 @@ namespace ca2002
         }
         void LockOnWeakId5()
         {
-            OutOfMemoryException outOfMemory = new OutOfMemoryException();
+            OutOfMemoryException outOfMemory = new();
             lock (outOfMemory) { }
         }
     }

@@ -53,7 +53,7 @@ The following table outlines the updates in this release.
 | **Microsoft server operating system, version 22H2** | **[5044087](https://support.microsoft.com/kb/5044087)** |
 | .NET Framework 3.5, 4.8 | [5044025](https://support.microsoft.com/kb/5044025) |
 | .NET Framework 3.5, 4.8.1 | [5044035](https://support.microsoft.com/kb/5044035) |
-| **Windows 11, version 21H2** |**[5044092](https://support.microsoft.com/kb/5044092)** |
+| **Windows 11, version 21H2** |**[5044092](https://support.microsoft.com/topic/october-8-2024-kb5044092-cumulative-update-for-net-framework-3-5-4-8-and-4-8-1-for-windows-11-version-21h2-a1c3dbfb-d769-4327-b692-aff2ba1b977a)** |
 | .NET Framework 3.5, 4.8 | [5044023](https://support.microsoft.com/kb/5044023) |
 | .NET Framework 3.5, 4.8.1 | [5044032](https://support.microsoft.com/kb/5044032) |
 | **Microsoft server operating system, version 21H2** | **[5044099](https://support.microsoft.com/kb/5044099)** |
@@ -84,7 +84,7 @@ The following table is for earlier Windows and Windows Server versions for Secur
 | .NET Framework 4.8 | [5044026](https://support.microsoft.com/kb/5044026) |
 | **Windows Server 2012** | **[5044096](https://support.microsoft.com/kb/5044096)** |
 | .NET Framework 3.5 | [5044009](https://support.microsoft.com/kb/5044009) |
-| .NET Framework 4.6.2, 4.7, 4.7.1, 4.7.2 | [5044017](https://support.microsoft.com/kb/5044017) |
+| .NET Framework 4.6.2, 4.7, 4.7.1, 4.7.2 | [5044017](https://support.microsoft.com/topic/october-8-2024-security-and-quality-rollup-for-net-framework-4-6-2-4-7-4-7-1-4-7-2-for-windows-server-2012-kb5044017-4a4ff56b-a0c9-42e1-9eef-84f8d1d06337) |
 | .NET Framework 4.8 | [5044024](https://support.microsoft.com/kb/5044024) |
 | **Windows Server 2008 R2** | **[5044095](https://support.microsoft.com/kb/5044095)** |
 | .NET Framework 3.5.1 | [5044011](https://support.microsoft.com/kb/5044011) |

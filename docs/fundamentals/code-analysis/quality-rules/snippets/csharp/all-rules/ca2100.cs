@@ -1,16 +1,17 @@
-﻿using System.Data;
-using System.Data.SqlClient;
+﻿using System.Data.OleDb;
+using System.Runtime.Versioning;
 
 namespace ca2100
 {
     //<snippet1>
-    public class SqlQueries
+    [SupportedOSPlatform("Windows")]
+    public class OleDbQueries
     {
         public object UnsafeQuery(
            string connection, string name, string password)
         {
-            SqlConnection someConnection = new SqlConnection(connection);
-            SqlCommand someCommand = new SqlCommand();
+            using OleDbConnection someConnection = new(connection);
+            using OleDbCommand someCommand = new();
             someCommand.Connection = someConnection;
 
             someCommand.CommandText = "SELECT AccountNumber FROM Users " +
@@ -26,14 +27,14 @@ namespace ca2100
         public object SaferQuery(
            string connection, string name, string password)
         {
-            SqlConnection someConnection = new SqlConnection(connection);
-            SqlCommand someCommand = new SqlCommand();
+            using OleDbConnection someConnection = new(connection);
+            using OleDbCommand someCommand = new();
             someCommand.Connection = someConnection;
 
             someCommand.Parameters.Add(
-               "@username", SqlDbType.NChar).Value = name;
+               "@username", OleDbType.Char).Value = name;
             someCommand.Parameters.Add(
-               "@password", SqlDbType.NChar).Value = password;
+               "@password", OleDbType.Char).Value = password;
             someCommand.CommandText = "SELECT AccountNumber FROM Users " +
                "WHERE Username=@username AND Password=@password";
 
@@ -44,11 +45,12 @@ namespace ca2100
         }
     }
 
+    [SupportedOSPlatform("Windows")]
     class MaliciousCode
     {
         static void Main2100(string[] args)
         {
-            SqlQueries queries = new SqlQueries();
+            OleDbQueries queries = new();
             queries.UnsafeQuery(args[0], "' OR 1=1 --", "[PLACEHOLDER]");
             // Resultant query (which is always true):
             // SELECT AccountNumber FROM Users WHERE Username='' OR 1=1

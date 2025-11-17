@@ -19,7 +19,7 @@ topic_type:
 ---
 # CreateDebuggingInterfaceFromVersion Function (.NET Framework)
 
-Creates an [ICorDebug](../debugging/icordebug-interface.md) object based on the specified version information.
+Creates an [ICorDebug](../../../core/unmanaged-api/debugging/icordebug/icordebug-interface.md) object based on the specified version information.
 
  This function is obsolete in the .NET Framework 4. Instead, to get an interface for the common language runtime (CLR) 2.0, use the [ICLRRuntimeInfo::GetInterface](iclrruntimeinfo-getinterface-method.md) method and specify the class identifier CLSID_CLRDebuggingLegacy and the interface identifier IID_ICorDebug. To get an interface for CLR 4 or later, call the [CLRCreateInstance](clrcreateinstance-function.md) function and specify the class identifier CLSID_CLRDebugging and the interface identifier IID_ICLRDebugging.
 
@@ -36,7 +36,7 @@ HRESULT CreateDebuggingInterfaceFromVersion (
 ## Parameters
 
  `iDebuggerVersion`\
- [in] The version of `ICorDebug` that is expected by the debugger. See the [CorDebugInterfaceVersion](../debugging/cordebuginterfaceversion-enumeration.md) enumeration for valid values.
+ [in] The version of `ICorDebug` that's expected by the debugger. See the [CorDebugInterfaceVersion](../../../core/unmanaged-api/debugging/icordebug/cordebuginterfaceversion-enumeration.md) enumeration for valid values.
 
  `szDebuggeeVersion`\
  [in] The common language runtime version associated with the application or process to be debugged. See the [GetVersionFromProcess](getversionfromprocess-function.md) or [GetRequestedRuntimeVersion](getrequestedruntimeversion-function.md) method for information on retrieving this value.
@@ -48,10 +48,10 @@ HRESULT CreateDebuggingInterfaceFromVersion (
 
  This method returns standard COM error codes as defined in the WinError.h file in addition to the following values.
 
-|Return code|Description|
-|-----------------|-----------------|
-|S_OK|The method completed successfully.|
-|E_INVALIDARG|`szDebuggeeVersion` or `ppCordb` is null, or the version string is incorrect.|
+| Return code  | Description                                                                   |
+|--------------|-------------------------------------------------------------------------------|
+| S_OK         | The method completed successfully.                                            |
+| E_INVALIDARG | `szDebuggeeVersion` or `ppCordb` is null, or the version string is incorrect. |
 
 ## Remarks
 

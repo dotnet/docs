@@ -1,7 +1,7 @@
 ---
 title: "$ - string interpolation - format string output"
 description: String interpolation using the `$` token provides a more readable and convenient syntax to format string output than traditional string composite formatting.
-ms.date: 11/22/2024
+ms.date: 10/07/2025
 f1_keywords:
     - "$_CSharpKeyword"
     - "$"
@@ -60,11 +60,13 @@ To embed `{` and `}` characters in the result string, start an interpolated raw 
 
 In the preceding example, an interpolated raw string literal starts with two `$` characters. You need to put every interpolation expression between double braces (`{{` and `}}`). A single brace is embedded into a result string. If you need to embed repeated `{` or `}` characters into a result string, use an appropriately greater number of `$` characters to designate an interpolated raw string literal. If the string literal has more repeated braces than the number of `$` characters, the `{` and `}` characters are grouped from inside to outside. In the preceding example, the literal `The point {{{X}}, {{Y}}}` interprets `{{X}}` and `{{Y}}` as interpolated expressions. The outer `{` and `}` are included verbatim in the output string.
 
+[!INCLUDE[raw-string-tip](../../includes/raw-string-parsing.md)]
+
 ## Special characters
 
 To include a brace, "{" or "}", in the text produced by an interpolated string, use two braces, "{{" or "}}". For more information, see the [Escaping braces](../../../standard/base-types/composite-formatting.md#escaping-braces) section of the [Composite formatting](../../../standard/base-types/composite-formatting.md) article.
 
-As the colon (":") has special meaning in an interpolation expression item, to use a [conditional operator](../operators/conditional-operator.md) in an interpolation expression. Enclose that expression in parentheses.
+As the colon (":") has special meaning in an interpolation expression item, to use a [conditional operator](../operators/conditional-operator.md) in an interpolation expression, enclose that expression in parentheses.
 
 The following example shows how to include a brace in a result string. It also shows how to use a conditional operator:
 

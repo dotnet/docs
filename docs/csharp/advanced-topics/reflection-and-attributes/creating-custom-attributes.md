@@ -16,12 +16,12 @@ You can create your own custom attributes by defining an attribute class, a clas
 public class AuthorAttribute : System.Attribute
 {
     private string Name;
-    public double Version;
+    public string Version;
 
     public AuthorAttribute(string name)
     {
         Name = name;
-        Version = 1.0;
+        Version = "1.0";
     }
 }
 ```

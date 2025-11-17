@@ -69,9 +69,9 @@ The following table shows the available conversion keywords.
 |`CULng`|[ULong Data Type](../../../language-reference/data-types/ulong-data-type.md)|Any numeric type (including `Byte`, `SByte`, and enumerated types), `Boolean`, `String`, `Object`|
 |`CUShort`|[UShort Data Type](../../../language-reference/data-types/ushort-data-type.md)|Any numeric type (including `Byte`, `SByte`, and enumerated types), `Boolean`, `String`, `Object`|
 
-## The CType Function
+## The CType Operator
 
-The [CType Function](../../../language-reference/functions/ctype-function.md) operates on two arguments. The first is the expression to be converted, and the second is the destination data type or object class. Note that the first argument must be an expression, not a type.
+The [CType Operator](../../../language-reference/operators/ctype-operator.md) operates on two arguments. The first is the expression to be converted, and the second is the destination data type or object class. Note that the first argument must be an expression, not a type.
 
 `CType` is an *inline function*, meaning the compiled code makes the conversion, often without generating a function call. This improves performance.
 

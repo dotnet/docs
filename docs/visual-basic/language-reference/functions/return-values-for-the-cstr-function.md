@@ -21,7 +21,8 @@ The following table describes the return values for `CStr` for different data ty
 |-----------------------------|--------------------|  
 |[Boolean Data Type](../data-types/boolean-data-type.md)|A string containing "True" or "False".|  
 |[Date Data Type](../data-types/date-data-type.md)|A string containing a `Date` value (date and time) in the short date format of your system.|  
-|[Numeric Data Types](../../programming-guide/language-features/data-types/numeric-data-types.md)|A string representing the number.|  
+|[Numeric Data Types](../../programming-guide/language-features/data-types/numeric-data-types.md)|A string representing the number.|
+|[Nothing](../../language-reference/nothing.md) | `Nothing`|
   
 ## CStr and Date  
 

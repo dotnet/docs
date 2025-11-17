@@ -13,16 +13,16 @@ ms.author: amauryleve
 ---
 # MSTEST0045: Use cooperative cancellation for timeout
 
-| Property                            | Value                                                                                    |
-|-------------------------------------|------------------------------------------------------------------------------------------|
-| **Rule ID**                         | MSTEST0045                                                                               |
-| **Title**                           | Use cooperative cancellation for timeout                                                 |
-| **Category**                        | Design                                                                                   |
-| **Fix is breaking or non-breaking** | Non-breaking                                                                             |
-| **Enabled by default**              | Yes                                                                                      |
-| **Default severity**                | Info                                                                                     |
-| **Introduced in version**           | 3.10.0                                                                                   |
-| **Is there a code fix**             | Yes                                                                                       |
+| Property                            | Value                                    |
+|-------------------------------------|------------------------------------------|
+| **Rule ID**                         | MSTEST0045                               |
+| **Title**                           | Use cooperative cancellation for timeout |
+| **Category**                        | Usage                                    |
+| **Fix is breaking or non-breaking** | Non-breaking                             |
+| **Enabled by default**              | Yes                                      |
+| **Default severity**                | Warning starting with 4.0.0, Info before |
+| **Introduced in version**           | 3.10.0                                   |
+| **Is there a code fix**             | Yes                                      |
 
 ## Cause
 
@@ -58,7 +58,7 @@ public class TestClass1
 }
 ```
 
-Alternatively, you can configure cooperative cancellation globally in your [runsettings](/dotnet/core/testing/unit-testing-mstest-configure#mstest-element) or [testconfig.json](/dotnet/core/testing/unit-testing-mstest-configure#timeout-settings) file to apply this setting to all timeout attributes in your test project.
+Alternatively, you can configure cooperative cancellation globally in your [runsettings](../unit-testing-mstest-configure.md#mstest-element) or [testconfig.json](../unit-testing-mstest-configure.md#timeout-settings) file to apply this setting to all timeout attributes in your test project.
 
 ## When to suppress warnings
 

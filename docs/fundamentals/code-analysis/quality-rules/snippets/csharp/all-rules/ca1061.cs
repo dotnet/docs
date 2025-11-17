@@ -34,7 +34,7 @@ namespace ca1061
     {
         static void Main1061()
         {
-            DerivedType derived = new DerivedType();
+            DerivedType derived = new();
 
             // Calls DerivedType.MethodOne.
             derived.MethodOne("string1", "string2");

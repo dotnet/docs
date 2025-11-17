@@ -34,15 +34,15 @@ namespace DeserializeExtra
                     "2019-08-02T00:00:00-07:00"
                   ],
                   "TemperatureRanges": {
-                                "Cold": {
-                                    "High": 20,
+                    "Cold": {
+                      "High": 20,
                       "Low": -10
-                                },
+                    },
                     "Hot": {
-                                    "High": 60,
+                      "High": 60,
                       "Low": 20
                     }
-                            },
+                  },
                   "SummaryWords": [
                     "Cool",
                     "Windy",

@@ -7,19 +7,12 @@ namespace ca1813
     [AttributeUsage(AttributeTargets.Class | AttributeTargets.Struct)]
     public sealed class DeveloperAttribute : Attribute
     {
-        private string nameValue;
         public DeveloperAttribute(string name)
         {
-            nameValue = name;
+            Name = name;
         }
 
-        public string Name
-        {
-            get
-            {
-                return nameValue;
-            }
-        }
+        public string Name { get; }
     }
     //</snippet1>
 }

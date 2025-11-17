@@ -224,9 +224,9 @@ additionalContent:
             - url: ../azure/index.yml
               text: Azure for .NET developers
             - url: /dotnet/aspire
-              text: .NET Aspire
+              text: Aspire
             - url: /dotnet/aspire/get-started/quickstart-build-your-first-aspire-app
-              text: Build cloud-native apps with .NET Aspire
+              text: Build cloud-native apps with Aspire
             - url: ../azure/migration/app-service.md?preserve-view=true&view=azure-dotnet
               text: Migrate on-premises .NET web apps or services
             - url: ../azure/key-azure-services.md
@@ -304,14 +304,6 @@ additionalContent:
         # Card
         - title: "ASP.NET Core API reference"
           summary: API reference documentation for ASP.NET Core
-          url: ../../api/index.md
-        # Card
-        - title: ".NET Aspire API reference"
-          summary: Reference documentation for .NET Aspire
-          url: ../../api/index.md?view=dotnet-aspire-9.0&preserve-view=true
-        # Card
-        - title: "ML.NET API reference"
-          summary: API reference documentation for ML.NET
           url: ../../api/index.md
         # Card
         - title: ".NET Framework API reference"

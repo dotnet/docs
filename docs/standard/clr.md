@@ -2,7 +2,7 @@
 title: "Common Language Runtime (CLR) overview - .NET"
 titleSuffix: ""
 description: Get started with common language runtime (CLR), .NET's run-time environment. The CLR runs code and provides services to make the development process easier.
-ms.date: 07/26/2022
+ms.date: 10/21/2025
 ms.custom: devdivchpfy22
 helpviewer_keywords: 
   - "compiling source code, runtime functionality"
@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "source code execution"
   - "code, runtime functionality"
 ms.assetid: 059a624e-f7db-4134-ba9f-08b676050482
+ai-usage: ai-assisted
 ---
 # Common Language Runtime (CLR) overview
 
@@ -29,7 +30,7 @@ Compilers and tools expose the common language runtime's functionality and enabl
 
 To enable the runtime to provide services to managed code, language compilers must emit metadata that describes the types, members, and references in your code. Metadata is stored with the code; every loadable common language runtime portable executable (PE) file contains metadata. The runtime uses metadata to locate and load classes, lay out instances in memory, resolve method invocations, generate native code, enforce security, and set run-time context boundaries.
 
-The runtime automatically handles object layout and manages references to objects, releasing them when they're no longer being used. Objects whose lifetimes are managed in this way are called managed data. Garbage collection eliminates memory leaks and some other common programming errors. If your code is managed, you can use managed, unmanaged, or both managed and unmanaged data in your .NET application. Because language compilers supply their own types, such as primitive types, you might not always know or need to know whether your data is being managed.
+The runtime automatically handles object layout and manages references to objects, releasing them when they're no longer being used. Objects whose lifetimes are managed this way are called managed data. Garbage collection eliminates memory leaks and some other common programming errors. If your code is managed, you can use managed data, unmanaged data, or both in your .NET application. Because language compilers supply their own types, such as primitive types, you might not always know or need to know whether your data is being managed.
 
 The common language runtime makes it easy to design components and applications whose objects interact across languages. Objects written in different languages can communicate with each other, and their behaviors can be tightly integrated. For example, you can define a class and then use a different language to derive a class from your original class or call a method on the original class. You can also pass an instance of a class to a method of a class written in a different language. This cross-language integration is possible because language compilers and tools that target the runtime use a common type system defined by the runtime. They follow the runtime's rules for defining new types and for creating, using, persisting, and binding to types.
 

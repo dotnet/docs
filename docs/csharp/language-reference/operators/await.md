@@ -16,7 +16,7 @@ In the following example, the <xref:System.Net.Http.HttpClient.GetByteArrayAsync
 
 [!code-csharp[await example](snippets/shared/AwaitOperator.cs)]
 
-The operand of an `await` expression must provide for notification when a task completes. In general, a delegate is invoked when the task completes, either successfully or unsuccessfully. The [`await`](~/_csharpstandard/standard/expressions.md#1298-await-expressions) section of the C# language spec provides the details on how these notifications are implemented.
+The operand of an `await` expression must provide for notification when a task completes. In general, a delegate is invoked when the task completes, either successfully or unsuccessfully. The [`await`](~/_csharpstandard/standard/expressions.md#1299-await-expressions) section of the C# language spec provides the details on how these notifications are implemented.
 
 The preceding example uses the [async `Main` method](../../fundamentals/program-structure/main-command-line.md). For more information, see the [await operator in the Main method](#await-operator-in-the-main-method) section.
 
@@ -25,7 +25,7 @@ The preceding example uses the [async `Main` method](../../fundamentals/program-
 
 You can use the `await` operator only in a method, [lambda expression](lambda-expressions.md), or [anonymous method](delegate-operator.md) that is modified by the [async](../keywords/async.md) keyword. Within an async method, you can't use the `await` operator in the body of a synchronous local function, inside the block of a [lock statement](../statements/lock.md), and in an [unsafe](../keywords/unsafe.md) context.
 
-The operand of the `await` operator is usually of one of the following .NET types: <xref:System.Threading.Tasks.Task>, <xref:System.Threading.Tasks.Task%601>, <xref:System.Threading.Tasks.ValueTask>, or <xref:System.Threading.Tasks.ValueTask%601>. However, any awaitable expression can be the operand of the `await` operator. For more information, see the [Awaitable expressions](~/_csharpstandard/standard/expressions.md#12982-awaitable-expressions) section of the [C# language specification](~/_csharpstandard/standard/README.md).
+The operand of the `await` operator is usually of one of the following .NET types: <xref:System.Threading.Tasks.Task>, <xref:System.Threading.Tasks.Task%601>, <xref:System.Threading.Tasks.ValueTask>, or <xref:System.Threading.Tasks.ValueTask%601>. However, any awaitable expression can be the operand of the `await` operator. For more information, see the [Awaitable expressions](~/_csharpstandard/standard/expressions.md#12992-awaitable-expressions) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 The type of expression `await t` is `TResult` if the type of expression `t` is <xref:System.Threading.Tasks.Task%601> or <xref:System.Threading.Tasks.ValueTask%601>. If the type of `t` is <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.ValueTask>, the type of `await t` is `void`. In both cases, if `t` throws an exception, `await t` rethrows the exception.
 
@@ -41,7 +41,7 @@ The [`Main` method](../../fundamentals/program-structure/main-command-line.md), 
 
 ## C# language specification
 
-For more information, see the [Await expressions](~/_csharpstandard/standard/expressions.md#1298-await-expressions) section of the [C# language specification](~/_csharpstandard/standard/README.md).
+For more information, see the [Await expressions](~/_csharpstandard/standard/expressions.md#1299-await-expressions) section of the [C# language specification](~/_csharpstandard/standard/README.md).
 
 ## See also
 

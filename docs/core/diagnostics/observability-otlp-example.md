@@ -10,7 +10,7 @@ ms.custom: sfi-image-nochange
 
 This is one of a series of examples to illustrate [.NET observability with OpenTelemetry](./observability-with-otel.md).
 
-In addition to being a standard part of .NET Aspire, the Aspire Dashboard is available as a [standalone docker container](/dotnet/aspire/fundamentals/dashboard/standalone?tabs=powershell), which provides an OTLP endpoint telemetry can be sent to, and it will visualize the logs, metrics and traces. Using the dashboard in this way has no dependency on .NET Aspire, it will visualize telemetry from any application sending it telemetry via OTLP. It works equally well for applications written in Java, GoLang, Python etc. provided that they can send their telemetry to an OTLP endpoint.
+In addition to being a standard part of Aspire, the Aspire Dashboard is available as a [standalone docker container](/dotnet/aspire/fundamentals/dashboard/standalone?tabs=powershell), which provides an OTLP endpoint telemetry can be sent to, and it will visualize the logs, metrics and traces. Using the dashboard in this way has no dependency on Aspire, it will visualize telemetry from any application sending it telemetry via OTLP. It works equally well for applications written in Java, GoLang, Python etc. provided that they can send their telemetry to an OTLP endpoint.
 
 Using the Aspire Dashboard has less configuration and setup steps than using Open Source solutions such as [Prometheus, Grafana and Jaeger](./observability-prgrja-example.md), but unlike those tools, the Aspire Dashboard is intended as a developer visualization tool, and not for production monitoring.
 

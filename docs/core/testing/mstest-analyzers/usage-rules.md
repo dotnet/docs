@@ -3,7 +3,7 @@ title: MSTest Usage rules (code analysis)
 description: Learn about MSTest code analysis usage rules.
 author: evangelink
 ms.author: amauryleve
-ms.date: 01/03/2024
+ms.date: 10/01/2025
 ---
 
 # MSTest usage rules
@@ -44,3 +44,8 @@ Identifier | Name | Description
 [MSTEST0048](mstest0048.md) | TestContextPropertyUsageAnalyzer | A fixture method (methods with <xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssemblyInitializeAttribute>, <xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssemblyCleanupAttribute>, <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ClassInitializeAttribute>, or <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ClassCleanupAttribute>) accesses restricted <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> properties.
 [MSTEST0049](mstest0049.md) | FlowTestContextCancellationTokenAnalyzer | A method call within a test context doesn't use the <xref:System.Threading.CancellationToken> available from <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> when the called method has a parameter or overload that accepts a <xref:System.Threading.CancellationToken>.
 [MSTEST0050](mstest0050.md) | GlobalTestFixtureShouldBeValidAnalyzer | A global test fixture method (marked with `GlobalTestInitializeAttribute` or `GlobalTestCleanupAttribute`) doesn't follow the required layout or has invalid configuration.
+[MSTEST0051](mstest0051.md) | AssertThrowsShouldContainSingleStatementAnalyzer | A call to <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Throws%2A>, <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsAsync%2A>, <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsExactly%2A>, or <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsExactlyAsync%2A> contains multiple statements in the action delegate.
+[MSTEST0052](mstest0052.md) | AvoidExplicitDynamicDataSourceTypeAnalyzer | A <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DynamicDataAttribute> explicitly specifies <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DynamicDataSourceType.Property> or <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DynamicDataSourceType.Method> instead of using the default <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DynamicDataSourceType.AutoDetect>.
+[MSTEST0053](mstest0053.md) | AvoidAssertFormatParametersAnalyzer | An assertion method call uses the `message` and `parameters` arguments for string formatting instead of using string interpolation.
+[MSTEST0054](mstest0054.md) | UseCancellationTokenPropertyAnalyzer | Accessing `CancellationToken` via `TestContext.CancellationTokenSource.Token` instead of using the `TestContext.CancellationToken` property.
+[MSTEST0055](mstest0055.md) | IgnoreStringMethodReturnValueAnalyzer | A call to `string.Contains`, `string.StartsWith`, or `string.EndsWith` is made and its return value is ignored.

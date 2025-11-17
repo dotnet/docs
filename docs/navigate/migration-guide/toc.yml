@@ -1,28 +1,96 @@
 items:
-  - name: .NET migration guide
+  - name: .NET upgrade guide
     href: index.yml
   - name: Overview
     href: ../../core/porting/index.md
-  - name: General information
+  - name: Use GitHub Copilot to upgrade
     expanded: true
     items:
-      - name: About .NET
+      - name: Overview
+        href: ../../core/porting/github-copilot-app-modernization/overview.md?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
+        displayName: copilot, upgrade
+      - name: FAQ
+        href: ../../core/porting/github-copilot-app-modernization/faq.yml?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
+        displayName: copilot, upgrade
+      - name: Upgrade .NET apps
+        expanded: false
         items:
-          - name: Versioning info for .NET SDK, MSBuild, and Visual Studio
-            href: ../../core/porting/versioning-sdk-msbuild-vs.md
-          - name: Choose between .NET and .NET Framework for server apps
-            href: ../../standard/choosing-core-framework-server.md
-      - name: GitHub Copilot app modernization
+          - name: How to upgrade with GitHub Copilot
+            href: ../../core/porting/github-copilot-app-modernization/how-to-upgrade-with-github-copilot.md?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
+            displayName: copilot, upgrade
+      - name: Migrate .NET apps to Azure
+        expanded: false
         items:
-          - name: Overview
-            href: ../../core/porting/github-copilot-app-modernization-overview.md
-            displayName: copilot, upgrade
-          - name: Install
-            href: ../../core/porting/github-copilot-app-modernization-install.md
-            displayName: copilot, upgrade
-          - name: FAQ
-            href: ../../core/porting/github-copilot-app-modernization-faq.yml
-            displayName: copilot, upgrade, faq
+          - name: Migrate a .NET project
+            href: ../../azure/migration/appmod/quickstart.md?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
+          - name: Migration sample
+            href: ../../azure/migration/appmod/sample.md?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
+
+  - name: Plan an upgrade from .NET Framework
+    items:
+      - name: Overview
+        href: ../../core/porting/framework-overview.md
+      - name: Upgrade with GitHub Copilot
+        href: ../../core/porting/github-copilot-app-modernization/overview.md?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
+        displayName: copilot, upgrade, modernization
+      - name: General information
+        items:
+          - name: About .NET
+            items:
+              - name: Versioning info for .NET SDK, MSBuild, and Visual Studio
+                href: ../../core/porting/versioning-sdk-msbuild-vs.md
+              - name: Choose between .NET and .NET Framework for server apps
+                href: ../../standard/choosing-core-framework-server.md
+          - name: Breaking changes
+            items:
+              - name: Overview
+                displayName: app compatibility
+                href: ../../core/porting/breaking-changes.md
+              - name: Breaking changes
+                href: ../../core/compatibility/fx-core.md
+      - name: Pre-upgrade
+        expanded: false
+        items:
+          - name: Assess the portability of your project
+            items:
+              - name: Unsupported dependencies
+                href: ../../core/porting/third-party-deps.md
+              - name: Use the Windows Compatibility Pack
+                href: ../../core/porting/windows-compat-pack.md
+              - name: Unavailable technologies
+                href: ../../core/porting/net-framework-tech-unavailable.md
+              - name: Unsupported APIs
+                items:
+                - name: Tools to find unsupported APIs
+                  href: ../../core/porting/unsupported-apis.md
+                - name: Unsupported API list
+                  href: ../../core/compatibility/unsupported-apis.md
+          - name: Needed changes before porting code
+            href: ../../core/porting/premigration-needed-changes.md
+      - name: Upgrade
+        expanded: false
+        items:
+          - name: Create a porting plan
+            items:
+              - name: Approaches
+                href: ../../core/porting/porting-approaches.md
+              - name: Project structure
+                href: ../../core/porting/project-structure.md
+          - name: Application porting guides
+            items:
+              - name: Windows Forms
+                href: /dotnet/desktop/winforms/migration/?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
+              - name: Windows Presentation Foundation
+                href: /dotnet/desktop/wpf/migration/?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
+              - name: C++/CLI projects
+                href: ../../core/porting/cpp-cli.md
+      - name: Post-upgrade
+        expanded: false
+        items:
+          - name: Modernize
+            href: ../../core/porting/modernize.md
+  - name: Other tools
+    items:
       - name: .NET Upgrade Assistant tool
         items:
           - name: Overview
@@ -35,7 +103,6 @@ items:
             href: ../../core/porting/upgrade-assistant-how-to-upgrade.md
             displayName: upgrade assistant
           - name: Analyze
-            expanded: true
             items:
               - name: Overview
                 href: ../../core/porting/upgrade-assistant-analyze-overview.md
@@ -44,7 +111,6 @@ items:
                 href: ../../core/porting/upgrade-assistant-how-to-analyze.md
                 displayName: upgrade assistant
           - name: Project upgrade guide
-            expanded: true
             items:
               - name: ASP.NET
                 href: /aspnet/core/migration/fx-to-core/tooling
@@ -58,51 +124,3 @@ items:
                 href: ../../core/porting/upgrade-assistant-wcf.md
           - name: Telemetry
             href: ../../core/porting/upgrade-assistant-telemetry.md
-      - name: Breaking changes
-        items:
-          - name: Overview
-            displayName: app compatibility
-            href: ../../core/porting/breaking-changes.md
-          - name: Breaking changes
-            href: ../../core/compatibility/fx-core.md
-  - name: Pre-migration
-    expanded: true
-    items:
-      - name: Assess the portability of your project
-        items:
-          - name: Unsupported dependencies
-            href: ../../core/porting/third-party-deps.md
-          - name: Use the Windows Compatibility Pack
-            href: ../../core/porting/windows-compat-pack.md
-          - name: Unavailable technologies
-            href: ../../core/porting/net-framework-tech-unavailable.md
-          - name: Unsupported APIs
-            items:
-            - name: Tools to find unsupported APIs
-              href: ../../core/porting/unsupported-apis.md
-            - name: Unsupported API list
-              href: ../../core/compatibility/unsupported-apis.md
-      - name: Needed changes before porting code
-        href: ../../core/porting/premigration-needed-changes.md
-  - name: Migration
-    expanded: true
-    items:
-      - name: Create a porting plan
-        items:
-          - name: Approaches
-            href: ../../core/porting/porting-approaches.md
-          - name: Project structure
-            href: ../../core/porting/project-structure.md
-      - name: Application porting guides
-        items:
-          - name: Windows Forms
-            href: /dotnet/desktop/winforms/migration/?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
-          - name: Windows Presentation Foundation
-            href: /dotnet/desktop/wpf/migration/?toc=/dotnet/navigate/migration-guide/toc.json&bc=/dotnet/breadcrumb/toc.json
-          - name: C++/CLI projects
-            href: ../../core/porting/cpp-cli.md
-  - name: Post-migration
-    expanded: true
-    items:
-      - name: Modernize
-        href: ../../core/porting/modernize.md

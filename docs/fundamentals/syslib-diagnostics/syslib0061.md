@@ -5,7 +5,7 @@ ms.date: 03/31/2025
 f1_keywords:
   - SYSLIB0061
 ---
-# SYSLIB0061: System.Linq.Queryable.MaxBy and System.Linq.Queryable.MinBy taking an IComparer\<TSource\> are obsolete.
+# SYSLIB0061: System.Linq.Queryable.MaxBy and System.Linq.Queryable.MinBy taking an IComparer\<TSource\> are obsolete
 
 Starting in .NET 10, the two extension methods <xref:System.Linq.Queryable.MaxBy``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Collections.Generic.IComparer{``0})?displayProperty=fullName> and <xref:System.Linq.Queryable.MinBy``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Collections.Generic.IComparer{``0})?displayProperty=fullName> that accept an `IComparer<TSource>` are obsolete. Please use the newly added overloads that accept an `IComparer<TKey>` instead.
 

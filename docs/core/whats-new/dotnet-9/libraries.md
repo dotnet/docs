@@ -3,7 +3,7 @@ title: What's new in .NET libraries for .NET 9
 description: Learn about the new .NET libraries features introduced in .NET 9.
 titleSuffix: ""
 ms.date: 11/11/2024
-ms.topic: whats-new
+ms.update-cycle: 3650-days
 ---
 
 # What's new in .NET libraries for .NET 9
@@ -520,7 +520,7 @@ For more information, see [Non-optional constructor parameters](../../../standar
 
 ### Order JsonObject properties
 
-The <xref:System.Json.JsonObject> type now exposes ordered dictionary&ndash;like APIs that enable explicit property order manipulation.
+The <xref:System.Text.Json.Nodes.JsonObject> type now exposes ordered dictionary&ndash;like APIs that enable explicit property order manipulation.
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/Serialization.cs" id="PropertyOrder":::
 

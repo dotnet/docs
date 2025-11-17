@@ -2,8 +2,9 @@
 title: global.json overview
 description: Learn how to use the global.json file to set the .NET SDK version when running .NET CLI commands.
 ms.topic: how-to
-ms.date: 07/05/2024
+ms.date: 10/22/2025
 ms.custom: "updateeachrelease"
+ai-usage: ai-assisted
 ---
 # global.json overview
 
@@ -28,13 +29,13 @@ For information about specifying the runtime version instead of the SDK version,
 
 ## global.json schema
 
-### sdk
+### `sdk`
 
 Type: `object`
 
 Specifies information about the .NET SDK to select.
 
-#### version
+#### `version`
 
 - Type: `string`
 
@@ -45,7 +46,7 @@ This field:
 - Doesn't have wildcard support; that is, you must specify the full version number.
 - Doesn't support version ranges.
 
-#### allowPrerelease
+#### `allowPrerelease`
 
 - Type: `boolean`
 - Available since: .NET Core 3.0 SDK.
@@ -57,7 +58,7 @@ If you don't set this value explicitly, the default value depends on whether you
 - If you're **not** in Visual Studio, the default value is `true`.
 - If you're in Visual Studio, it uses the prerelease status requested. That is, if you're using a Preview version of Visual Studio or you set the **Use previews of the .NET SDK** option (under **Tools** > **Options** > **Environment** > **Preview Features**), the default value is `true`. Otherwise, the default value is `false`.
 
-#### rollForward
+#### `rollForward`
 
 - Type: `string`
 - Available since: .NET Core 3.0 SDK.
@@ -86,7 +87,7 @@ The following table shows the possible values for the `rollForward` key:
 | `latestMajor` | Uses the highest installed .NET SDK with a version that's greater than or equal to the specified value. <br> If not found, fail. |
 | `disable`     | Doesn't roll forward. An exact match is required. |
 
-#### paths
+#### `paths`
 
 - Type: Array of `string`
 - Available since: .NET 10 Preview 3 SDK.
@@ -99,18 +100,31 @@ This feature enables using local SDK installations (such as SDKs relative to a r
 
 > The "paths" feature only works when using commands that engage the .NET SDK, such as `dotnet run`. It does NOT affect scenarios such as running the native apphost launcher (`app.exe`), running with `dotnet app.dll`, or running with `dotnet exec app.dll`. To use the "paths" feature, you must use SDK commands like `dotnet run`.
 
-#### errorMessage
+#### `errorMessage`
 
 - Type: `string`
 - Available since: .NET 10 Preview 3 SDK.
 
 Specifies a custom error message displayed when the SDK resolver can't find a compatible .NET SDK.
 
-### msbuild-sdks
+### `msbuild-sdks`
 
 Type: `object`
 
 Lets you control the project SDK version in one place rather than in each individual project. For more information, see [How project SDKs are resolved](/visualstudio/msbuild/how-to-use-project-sdk#how-project-sdks-are-resolved).
+
+### `test`
+
+- Type: `object`
+
+Specifies information about tests.
+
+#### `runner`
+
+- Type: `string`
+- Available since: .NET 10.0 SDK.
+
+The test runner to discover/run tests with.
 
 ### Comments in global.json
 
@@ -192,6 +206,16 @@ The following example shows how to specify additional SDK search paths and a cus
     "paths": [ ".dotnet", "$host$" ],
     "errorMessage": "The required .NET SDK wasn't found. Please run ./install.sh to install it."
   }
+}
+```
+
+The following example shows how to specify `Microsoft.Testing.Platform` as the test runner:
+
+```json
+{
+    "test": {
+        "runner": "Microsoft.Testing.Platform"
+    }
 }
 ```
 

@@ -1,7 +1,7 @@
 ---
 title: What's new in C# 14
 description: Get an overview of the new features in C# 14. C# 14 ships with .NET 10.
-ms.date: 04/17/2025
+ms.date: 09/17/2025
 ms.topic: whats-new
 ms.update-cycle: 180-days
 ---
@@ -22,7 +22,7 @@ C# 14 is supported on **.NET 10**. For more information, see [C# language versio
 
 You can download the latest .NET 10 SDK from the [.NET downloads page](https://dotnet.microsoft.com/download). You can also download [Visual Studio 2022](https://visualstudio.microsoft.com/vs/), which includes the .NET 10 SDK.
 
-New features are added to the "What's new in C#" page when they're available in public preview releases. The [working set](https://github.com/dotnet/roslyn/blob/main/docs/Language%20Feature%20Status.md#working-set) section of the [roslyn feature status page](https://github.com/dotnet/roslyn/blob/main/docs/Language%20Feature%20Status.md) tracks when upcoming features are merged into the main branch. This article was last updated for .NET 10 Preview 1.
+New features are added to the "What's new in C#" page when they're available in public preview releases. The [working set](https://github.com/dotnet/roslyn/blob/main/docs/Language%20Feature%20Status.md#working-set) section of the [roslyn feature status page](https://github.com/dotnet/roslyn/blob/main/docs/Language%20Feature%20Status.md) tracks when upcoming features are merged into the main branch.
 
 You can find any breaking changes introduced in C# 14 in our article on [breaking changes](~/_roslyn/docs/compilers/CSharp/Compiler%20Breaking%20Changes%20-%20DotNet%2010.md).
 
@@ -30,7 +30,7 @@ You can find any breaking changes introduced in C# 14 in our article on [breakin
 
 ## Extension members
 
-C# 14 adds new syntax to define *extension members*. The new syntax enables you to declare *extension properties* in addition to extension methods. You can also declare extension members that extend the type, rather than an instance of the type. In other words, these new extension members can appear as static members of the type you extend. The following code example shows an example of the different kinds of extension members you can declare:
+C# 14 adds new syntax to define *extension members*. The new syntax enables you to declare *extension properties* in addition to extension methods. You can also declare extension members that extend the type, rather than an instance of the type. In other words, these new extension members can appear as static members of the type you extend. These extensions can include user defined operators implemented as static extension methods. The following code example shows an example of the different kinds of extension members you can declare:
 
 ```csharp
 public static class Enumerable
@@ -40,8 +40,6 @@ public static class Enumerable
     {
         // Extension property:
         public bool IsEmpty => !source.Any();
-        // Extension indexer:
-        public TSource this[int index] => source.Skip(index).First();
 
         // Extension method:
         public IEnumerable<TSource> Where(Func<TSource, bool> predicate) { ... }
@@ -55,6 +53,9 @@ public static class Enumerable
 
         // static extension property:
         public static IEnumerable<TSource> Identity => Enumerable.Empty<TSource>();
+
+        // static user defined operator:
+        public static IEnumerable<TSource> operator + (IEnumerable<TSource> left, IEnumerable<TSource> right) => left.Concat(right);
     }
 }
 ```

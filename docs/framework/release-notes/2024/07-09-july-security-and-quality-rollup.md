@@ -32,7 +32,7 @@ Addresses an issue with the size of memory leaks associated with AccessibleObjec
 
 ## Known issues
 
-This release contains no known issues.  
+This release contains no known issues.
 
 ## Summary tables
 
@@ -75,7 +75,7 @@ The following table is for earlier Windows and Windows Server versions for Secur
 | **Windows Server 2012 R2** | **[5041023](https://support.microsoft.com/kb/5041023)** |
 | .NET Framework 3.5 | [5039910](https://support.microsoft.com/kb/5039910) |
 | .NET Framework 4.6.2, 4.7, 4.7.1, 4.7.2 | [5039881](https://support.microsoft.com/kb/5039881) |
-| .NET Framework 4.8 | [5039890](https://support.microsoft.com/kb/5039890) |
+| .NET Framework 4.8 | [5039890](https://support.microsoft.com/topic/july-9-2024-security-and-quality-rollup-for-net-framework-4-8-for-windows-server-2012-r2-kb5039890-bdb019dc-5181-4770-97a2-4443c97d5b89) |
 | **Windows Server 2012** | **[5041022](https://support.microsoft.com/kb/5041022)** |
 | .NET Framework 3.5 | [5039908](https://support.microsoft.com/kb/5039908) |
 | .NET Framework 4.6.2, 4.7, 4.7.1, 4.7.2 | [5039880](https://support.microsoft.com/kb/5039880) |
@@ -94,7 +94,7 @@ The following table is for earlier Windows and Windows Server versions for Secur
 | Product version | Security only update |
 | --- | --- |
 | **Windows Server 2008 R2** | **[5041026](https://support.microsoft.com/kb/5041027)** |
-| .NET Framework 3.5.1 | [5040119](https://support.microsoft.com/kb/5040119) |
+| .NET Framework 3.5.1 | [5040119](https://support.microsoft.com/topic/july-9-2024-security-only-update-for-net-framework-3-5-1-for-windows-server-2008-r2-sp1-kb5040119-de499122-b8e3-4583-9d55-1546959d3161) |
 | .NET Framework 4.6.2, 4.7, 4.7.1, 4.7.2 | [5040122](https://support.microsoft.com/kb/5040122) |
 | .NET Framework 4.8 |[5040123](https://support.microsoft.com/kb/5040123) |
 | **Windows Server 2008** | **[5041027](https://support.microsoft.com/kb/5041027)** |

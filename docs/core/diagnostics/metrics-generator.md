@@ -87,7 +87,6 @@ Metric methods are constrained to the following:
 - Their names must not start with an underscore.
 - Their parameter names must not start with an underscore.
 - Their first parameter must be <xref:System.Diagnostics.Metrics.Meter> type.
-Metric methods are constrained to the following:
 
 ## See also
 

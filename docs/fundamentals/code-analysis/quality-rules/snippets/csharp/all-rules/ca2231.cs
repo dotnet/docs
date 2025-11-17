@@ -30,7 +30,7 @@ namespace ca2231
                 return false;
 
             PointWithoutHash p = (PointWithoutHash)obj;
-            return ((this.x == p.x) && (this.y == p.y));
+            return (this.x == p.x) && (this.y == p.y);
         }
     }
     //</snippet1>

@@ -72,6 +72,16 @@ You can implement one or more interfaces in a class type by using the `interface
 
 Interface implementations are inherited, so any derived classes do not need to reimplement them.
 
+## Define empty or marker interfaces
+
+Empty interfaces, also known as marker interfaces, can be used to identify a set of types without requiring any specific behavior. These interfaces have no members and serve as a way to mark or tag types for categorization purposes.
+
+You define an empty interface using the `interface end` syntax:
+
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet2806.fs)]
+
+In the example above, `IMarker` is defined as an empty interface. Both `MyRecord` and `MyClass` implement this interface without needing to provide any method implementations, since the interface has no members. This allows you to use the interface type to identify and work with these types in a common way.
+
 ## Calling Interface Methods
 
 Interface methods can be called only through the interface, not through any object of the type that implements the interface. Thus, you might have to upcast to the interface type by using the `:>` operator or the `upcast` operator in order to call these methods.

@@ -1,11 +1,11 @@
 ---
 title: dotnet nuget update source command
 description: The dotnet nuget update source command updates an existing source in your NuGet configuration files. 
-ms.date: 03/20/2020
+ms.date: 10/28/2025
 ---
 # dotnet nuget update source
 
-**This article applies to:** ✔️ .NET Core 3.1.200 SDK and later versions
+**This article applies to:** ✔️ .NET 6 SDK and later versions
 
 ## Name
 

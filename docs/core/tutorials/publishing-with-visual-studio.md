@@ -1,7 +1,8 @@
 ---
 title: Publish a .NET console application using Visual Studio
 description: Learn how to use Visual Studio to create the set of files that are needed to run a .NET application.
-ms.date: 08/22/2023
+ms.date: 10/23/2025
+ai-usage: ai-assisted
 ms.custom:
   - "vs-dotnet"
   - sfi-image-nochange
@@ -12,7 +13,7 @@ This tutorial shows how to publish a console app so that other users can run it.
 
 ## Prerequisites
 
-- This tutorial works with the console app that you create in [Create a .NET console application using Visual Studio](with-visual-studio.md).
+This tutorial works with the console app that you create in [Create a .NET console application using Visual Studio](with-visual-studio.md).
 
 ## Publish the app
 

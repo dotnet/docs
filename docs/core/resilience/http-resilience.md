@@ -3,7 +3,8 @@ title: "Build resilient HTTP apps: Key development patterns"
 description: Learn how to build resilient HTTP apps using the Microsoft.Extensions.Http.Resilience NuGet package.
 author: IEvangelist
 ms.author: dapine
-ms.date: 07/01/2024
+ms.date: 10/22/2025
+ai-usage: ai-assisted
 ---
 
 # Build resilient HTTP apps: Key development patterns
@@ -124,7 +125,7 @@ By default, the standard resilience handler is configured to make retries for al
 
 :::code language="csharp" source="snippets/http-resilience/Program.RetryOptions.cs" id="disable_for":::
 
-Alternatively, you can use the <xref:Microsoft.Extensions.Http.Resilience.HttpRetryStrategyOptionsExtensions.DisableForUnsafeHttpMethods(Microsoft.Extensions.Http.Resilience.HttpRetryStrategyOptions)> method, which disables retries for `POST`, `PATCH`, `PUT`, `DELETE`, and `CONNECT` requests. According to [RFC](https://www.rfc-editor.org/rfc/rfc7231#section-4.2.1), these methods are considered unsafe; meaning their semantics are not read-only:
+Alternatively, you can use the <xref:Microsoft.Extensions.Http.Resilience.HttpRetryStrategyOptionsExtensions.DisableForUnsafeHttpMethods(Microsoft.Extensions.Http.Resilience.HttpRetryStrategyOptions)> method, which disables retries for `POST`, `PATCH`, `PUT`, `DELETE`, and `CONNECT` requests. According to [RFC](https://www.rfc-editor.org/rfc/rfc7231#section-4.2.1), these methods are considered unsafe; meaning their semantics aren't read-only:
 
 :::code language="csharp" source="snippets/http-resilience/Program.RetryOptions.cs" id="disable_for_unsafe_http_methods":::
 
@@ -281,7 +282,7 @@ services
 The preceding code results in the following exception:
 
 ```Output
-System.InvalidOperationException: The ConfigureHttpClient method is not supported when creating gRPC clients. Unable to create client with name 'GreeterClient'.
+System.InvalidOperationException: The ConfigureHttpClient method isn't supported when creating gRPC clients. Unable to create client with name 'GreeterClient'.
 ```
 
 To resolve this issue, we recommend upgrading to `Grpc.Net.ClientFactory` version `2.64.0` or later.
@@ -306,10 +307,10 @@ services.AddHttpClient().AddStandardResilienceHandler();
 services.AddApplicationInsightsTelemetry();
 ```
 
-The issue can be fixed by updating .NET Application Insights to version **2.23.0** or higher. If you cannot update it, then registering Application Insights services before resilience functionality, as shown below, will fix the issue:
+The issue can be fixed by updating .NET Application Insights to version **2.23.0** or higher. If you can't update it, then registering Application Insights services before resilience functionality, as shown below, will fix the issue:
 
 ```csharp
-// We register Application Insights first, and now it will be working correctly.
+// We register Application Insights first, and now it is working correctly.
 services.AddApplicationInsightsTelemetry();
 services.AddHttpClient().AddStandardResilienceHandler();
 ```

@@ -1,5 +1,4 @@
 ﻿using System.IO;
-using System.Threading;
 
 namespace ca2022;
 

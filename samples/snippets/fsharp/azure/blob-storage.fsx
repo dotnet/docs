@@ -102,8 +102,7 @@ let ListBlobsSegmentedInHierarchicalListing(container:BlobContainerClient) =
 
 // Create some dummy data by uploading the same file over and over again
 for i in 1 .. 100 do
-    let blob  = container.GetBlobClient($"myblob{i}.txt")
-    use fileStream = System.IO.File.OpenRead(localFile)
+    let blob = container.GetBlobClient($"myblob{i}.txt")
     blob.Upload(localFile)
 
 ListBlobsSegmentedInHierarchicalListing container
@@ -122,8 +121,8 @@ appendContainer.CreateIfNotExists() |> ignore
 let appendBlob = appendContainer.GetAppendBlobClient("append-blob.log")
 
 // Create the append blob. Note that if the blob already exists, the 
-// CreateOrReplace() method will overwrite it. You can check whether the 
-// blob exists to avoid overwriting it by using CloudAppendBlob.Exists().
+// CreateIfNotExists() method will overwrite it. You can check whether the 
+// blob exists to avoid overwriting it by using appendBlob.Exists().
 appendBlob.CreateIfNotExists()
 
 let numBlocks = 10
@@ -142,5 +141,5 @@ for i in 0 .. numBlocks - 1 do
     appendBlob.AppendBlock(stream)
 
 // Read the append blob to the console window.
-let downloadedText = appendBlob.DownloadContent().ToString()
+let downloadedText = appendBlob.DownloadContent().Value.Content.ToString()
 printfn $"{downloadedText}"

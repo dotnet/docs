@@ -2,9 +2,7 @@
 title: What's new in .NET 6
 description: Learn about the new features introduced in .NET 6.
 ms.date: 11/08/2021
-ms.topic: whats-new
-ms.author: gewarren
-author: gewarren
+ms.update-cycle: 3650-days
 ---
 # What's new in .NET 6
 
@@ -207,7 +205,7 @@ The *source tarball*, which contains all the source for the .NET SDK, is now a p
 
 ## Target framework monikers
 
-Additional OS-specific target framework monikers (TFMs) have been added for .NET 6, for example, `net6.0-android`, `net6.0-ios`, and `net6.0-macos`. For more information, see [.NET 5+ OS-specific TFMs](../../standard/frameworks.md#net-5-os-specific-tfms).
+Additional OS-specific target framework monikers (TFMs) have been added for .NET 6, for example, `net6.0-android`, `net6.0-ios`, and `net6.0-macos`. For more information, see [OS-specific TFMs](../../standard/frameworks.md#os-specific-tfms).
 
 ## Generic math
 

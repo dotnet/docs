@@ -169,6 +169,31 @@ Run the program several times to verify that the downloaded lengths don't always
 > [!CAUTION]
 > You can use `WhenAny` in a loop, as described in the example, to solve problems that involve a small number of tasks. However, other approaches are more efficient if you have a large number of tasks to process. For more information and examples, see [Processing tasks as they complete](https://devblogs.microsoft.com/pfxteam/processing-tasks-as-they-complete).
 
+## Simplify the approach using `Task.WhenEach`
+
+The `while` loop implemented in `SumPageSizesAsync` method can be simplified using the new <xref:System.Threading.Tasks.Task.WhenEach%2A?displayProperty=nameWithType> method introduced in .NET 9, by calling it in `await foreach` loop.
+<br/>Replace the previously implemented `while` loop:
+
+```csharp
+    while (downloadTasks.Any())
+    {
+        Task<int> finishedTask = await Task.WhenAny(downloadTasks);
+        downloadTasks.Remove(finishedTask);
+        total += await finishedTask;
+    }
+```
+
+with the simplified `await foreach`:
+
+```csharp
+    await foreach (Task<int> t in Task.WhenEach(downloadTasks))
+    {
+        total += await t;
+    }
+```
+
+This new approach allows to no longer repeatedly call `Task.WhenAny` to manually call a task and remove the one that finishes, because `Task.WhenEach` iterates through task *in an order of their completion*.
+
 ## Complete example
 
 The following code is the complete text of the *Program.cs* file for the example.
@@ -178,4 +203,5 @@ The following code is the complete text of the *Program.cs* file for the example
 ## See also
 
 - <xref:System.Threading.Tasks.Task.WhenAny%2A>
+- <xref:System.Threading.Tasks.Task.WhenEach%2A>
 - [Asynchronous programming with async and await (C#)](index.md)

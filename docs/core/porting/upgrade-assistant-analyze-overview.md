@@ -14,6 +14,8 @@ ms.date: 10/08/2024
 
 This article provides an overview of the code analysis function of .NET Upgrade Assistant. Code analysis generates a report based on your project configuration, dependencies, and code. The report contains information about potential issues and problems you might encounter during the upgrade, and what steps you could take to remediate those problems.
 
+[!INCLUDE [github-copilot-suggestion](includes/github-copilot-suggestion.md)]
+
 ## Types of analysis
 
 There are two types of analysis you can perform on your code:

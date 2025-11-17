@@ -63,7 +63,9 @@ Modern .NET provides source generators for common reflection scenarios:
 
 For more information, see [Known trimming incompatibilities](incompatibilities.md).
 
-## Approach 2: Make code trim-compatible with DynamicallyAccessedMembers {#functionality-with-requirements-on-its-input}
+<a name="functionality-with-requirements-on-its-input"></a>
+
+## Approach 2: Make code trim-compatible with DynamicallyAccessedMembers
 
 When reflection is necessary but types are known at compile time, use <xref:System.Diagnostics.CodeAnalysis.DynamicallyAccessedMembersAttribute> to make your code trim-compatible.
 
@@ -173,7 +175,7 @@ For more details on how requirements flow through code, see [Understanding trim 
 Choose the minimum access level needed:
 
 | Member Type | When to use |
-|-------------|-------------|
+| ----------- | ----------- |
 | `PublicConstructors` | Using `Activator.CreateInstance()` or `GetConstructor()` |
 | `PublicMethods` | Using `GetMethod()` or `GetMethods()` |
 | `PublicFields` | Using `GetField()` or `GetFields()` |

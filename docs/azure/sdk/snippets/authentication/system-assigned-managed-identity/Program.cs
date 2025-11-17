@@ -23,8 +23,6 @@ builder.Services.AddAzureClients(clientBuilder =>
         // Running locally on dev machine - DO NOT use in production or outside of local dev
         credential = new DefaultAzureCredential();
     }
-
-    clientBuilder.UseCredential(credential);
 });
 #endregion snippet_MIC_UseCredential
 

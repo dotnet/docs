@@ -14,10 +14,6 @@ IHost host = Host.CreateDefaultBuilder(args)
             clientBuilder.AddSecretClient(new Uri("<key_vault_url>"));
             clientBuilder.AddBlobServiceClient(new Uri("<storage_url>"));
             clientBuilder.AddServiceBusClientWithNamespace("<your_namespace>.servicebus.windows.net");
-            
-            // Set a credential for all clients to use by default
-            DefaultAzureCredential credential = new();
-            clientBuilder.UseCredential(credential);
 
             // Register subclients for Service Bus
             List<string> queueNames = await GetQueueNames(credential);

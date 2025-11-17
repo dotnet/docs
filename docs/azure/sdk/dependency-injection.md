@@ -58,7 +58,7 @@ In the *Program.cs* file, invoke the <xref:Microsoft.Extensions.Azure.AzureClien
 In the preceding code:
 
 * Key Vault Secrets, Blob Storage, and Service Bus clients are registered using the <xref:Microsoft.Extensions.Azure.SecretClientBuilderExtensions.AddSecretClient%2A>, <xref:Microsoft.Extensions.Azure.BlobClientBuilderExtensions.AddBlobServiceClient%2A> and <xref:Microsoft.Extensions.Azure.ServiceBusClientBuilderExtensions.AddServiceBusClientWithNamespace%2A>, respectively. The `Uri`- and `string`-typed arguments are passed. To avoid specifying these URLs explicitly, see the [Store configuration separately from code](#store-configuration-separately-from-code) section.
-* <xref:Azure.Identity.DefaultAzureCredential> is used to satisfy the `TokenCredential` argument requirement for each registered client. When one of the clients is created, `DefaultAzureCredential` is used to authenticate.
+* Each registered client automatically uses <xref:Azure.Identity.DefaultAzureCredential> for `TokenCredential` unless you explicitly override it (for example, with `WithCredential`).
 * Service Bus subclients are registered for each queue on the service using the subclient and corresponding options types. The queue names for the subclients are retrieved using a separate method outside of the service registration because the `GetQueuesAsync` method must be run asynchronously.
 * An Azure OpenAI client is registered using a custom client factory via the <xref:Microsoft.Extensions.Azure.AzureClientFactoryBuilder.AddClient%2A> method, which provides control over how a client instance is created. Custom client factories are useful in the following cases:
   * You need to use other dependencies during the client construction.
@@ -145,8 +145,6 @@ builder.Services.AddAzureClients(clientBuilder =>
     clientBuilder.AddServiceBusClientWithNamespace(
         builder.Configuration["ServiceBus:Namespace"]);
 
-    clientBuilder.UseCredential(new DefaultAzureCredential());
-
     // Set up any default settings
     clientBuilder.ConfigureDefaults(
         builder.Configuration.GetSection("AzureDefaults"));
@@ -166,8 +164,6 @@ builder.Services.AddAzureClients(clientBuilder =>
 
     clientBuilder.AddServiceBusClientWithNamespace(
         builder.Configuration["ServiceBus:Namespace"]);
-
-    clientBuilder.UseCredential(new DefaultAzureCredential());
 
     // Set up any default settings
     clientBuilder.ConfigureDefaults(
@@ -193,8 +189,6 @@ IHost host = Host.CreateDefaultBuilder(args)
             clientBuilder.AddServiceBusClientWithNamespace(
                 hostContext.Configuration["ServiceBus:Namespace"]);
 
-            clientBuilder.UseCredential(new DefaultAzureCredential());
-
             // Set up any default settings
             clientBuilder.ConfigureDefaults(
                 hostContext.Configuration.GetSection("AzureDefaults"));
@@ -211,7 +205,7 @@ In the preceding JSON sample:
 * The `AzureDefaults.Retry` object literal:
   * Represents the [retry policy configuration settings](#configure-a-new-retry-policy).
   * Corresponds to the <xref:Azure.Core.ClientOptions.Retry> property. Within that object literal, you find the `MaxRetries` key, which corresponds to the <xref:Azure.Core.RetryOptions.MaxRetries> property.
-* The `KeyVault:VaultUri`, `ServiceBus:Namespace`, and `Storage:ServiceUri` key values map to the `Uri`- and `string`-typed arguments of the <xref:Azure.Security.KeyVault.Secrets.SecretClient.%23ctor(System.Uri,Azure.Core.TokenCredential,Azure.Security.KeyVault.Secrets.SecretClientOptions)?displayProperty=fullName>, <xref:Azure.Messaging.ServiceBus.ServiceBusClient.%23ctor(System.String)?displayProperty=fullName>, and <xref:Azure.Storage.Blobs.BlobServiceClient.%23ctor(System.Uri,Azure.Core.TokenCredential,Azure.Storage.Blobs.BlobClientOptions)?displayProperty=fullName> constructor overloads, respectively. The `TokenCredential` variants of the constructors are used because a default `TokenCredential` is set via the <xref:Microsoft.Extensions.Azure.AzureClientFactoryBuilder.UseCredential(Azure.Core.TokenCredential)?displayProperty=fullName> method call.
+* The `KeyVault:VaultUri`, `ServiceBus:Namespace`, and `Storage:ServiceUri` key values map to the `Uri`- and `string`-typed arguments of the <xref:Azure.Security.KeyVault.Secrets.SecretClient.%23ctor(System.Uri,Azure.Core.TokenCredential,Azure.Security.KeyVault.Secrets.SecretClientOptions)?displayProperty=fullName>, <xref:Azure.Messaging.ServiceBus.ServiceBusClient.%23ctor(System.String)?displayProperty=fullName>, and <xref:Azure.Storage.Blobs.BlobServiceClient.%23ctor(System.Uri,Azure.Core.TokenCredential,Azure.Storage.Blobs.BlobClientOptions)?displayProperty=fullName> constructor overloads, respectively.
 
 ## Configure multiple service clients with different names
 
@@ -283,7 +277,6 @@ builder.Services.AddAzureClients(clientBuilder =>
     // Establish the global defaults
     clientBuilder.ConfigureDefaults(
         builder.Configuration.GetSection("AzureDefaults"));
-    clientBuilder.UseCredential(new DefaultAzureCredential());
 
     // A Key Vault Secrets client using the global defaults
     clientBuilder.AddSecretClient(

@@ -24,9 +24,6 @@ builder.Services.AddAzureClients(clientBuilder =>
             (_, _, provider) => provider.GetService<ServiceBusClient>()
                     .CreateSender(queue)).WithName(queue);
     }
-
-    // Register a shared credential for Microsoft Entra ID authentication
-    clientBuilder.UseCredential(new DefaultAzureCredential());
 });
 
 var app = builder.Build();

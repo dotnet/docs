@@ -139,7 +139,7 @@ Using the Azure Service Bus library as an example, complete the following steps:
     {
         azureBuilder.AddServiceBusClient(
             builder.Configuration.GetConnectionString("ServiceBus"));
-        azureBuilder.UseCredential(new DefaultAzureCredential());
+        // DefaultAzureCredential is applied automatically.
     });
     ```
 
@@ -148,7 +148,7 @@ Using the Azure Service Bus library as an example, complete the following steps:
     - Registers the following objects with the dependency injection (DI) container:
       - Log forwarder service
       - Azure Service Bus client
-    - Sets the default token credential to be used for all registered clients.
+    - Applies <xref:Azure.Identity.DefaultAzureCredential> automatically for authentication unless a different credential is explicitly configured.
 
 1. In *appsettings.json*, change the Service Bus library's default log level. For example, toggle it to `Debug` by setting the `Logging:LogLevel:Azure.Messaging.ServiceBus` key as follows:
 

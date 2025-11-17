@@ -31,8 +31,6 @@ builder.Services.AddAzureClients(clientBuilder =>
             new AzureCliCredential(),
             new AzurePowerShellCredential());
     }
-
-    clientBuilder.UseCredential(credential);
 });
 #endregion snippet_credential_reuse_AspNetCore
 

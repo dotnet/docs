@@ -63,8 +63,6 @@ void registerUsingClientId(WebApplicationBuilder builder)
             // Running locally on dev machine - DO NOT use in production or outside of local dev
             credential = new DefaultAzureCredential();
         }
-
-        clientBuilder.UseCredential(credential);
     });
     #endregion snippet_MIC_ClientId_UseCredential
 
@@ -110,8 +108,6 @@ void registerUsingObjectId(WebApplicationBuilder builder)
             // Running locally on dev machine - DO NOT use in production or outside of local dev
             credential = new DefaultAzureCredential();
         }
-
-        clientBuilder.UseCredential(credential);
     });
     #endregion snippet_MIC_ObjectId_UseCredential
 
@@ -158,8 +154,6 @@ void registerUsingResourceId(WebApplicationBuilder builder)
             // Running locally on dev machine - DO NOT use in production or outside of local dev
             credential = new DefaultAzureCredential();
         }
-
-        clientBuilder.UseCredential(credential);
     });
     #endregion snippet_MIC_ResourceId_UseCredential
 

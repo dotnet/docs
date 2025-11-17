@@ -24,7 +24,6 @@ The [`record`](../../language-reference/builtin-types/record.md) modifier on a t
 
 | Caller's location | `public` | `protected internal` | `protected` | `internal` | `private protected` | `private` |
 |--|:-:|:-:|:-:|:-:|:-:|:-:|
-| Within the file | ✔️️ | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |
 | Within the class | ✔️️ | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |
 | Derived class (same assembly) | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | ❌ |
 | Non-derived class (same assembly) | ✔️ | ✔️ | ❌ | ✔️ | ❌ | ❌ |

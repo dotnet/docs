@@ -7,7 +7,7 @@ ms.topic: include
 ---
 
 - Windows Operating System
-- [Visual Studio 2022 version 17.14.16 or newer](https://visualstudio.microsoft.com/downloads/).
+- Visual Studio 2026 (or [Visual Studio 2022 version 17.14.17 or newer](https://visualstudio.microsoft.com/downloads/)).
 - [.NET desktop development workload](/visualstudio/install/modify-visual-studio?view=vs-2022&preserve-view=true#change-workloads-or-individual-components) with the following optional components enabled:
 
   - GitHub Copilot

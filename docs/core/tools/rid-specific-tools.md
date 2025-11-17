@@ -99,7 +99,7 @@ For tools with AOT compilation (`<PublishAot>true</PublishAot>`), you must pack 
    dotnet pack -r osx-arm64
    ```
 
-   You must run each RID-specific pack command on the matching platform because AOT compilation produces native binaries.
+   You must run each RID-specific pack command on the matching platform because AOT compilation produces native binaries. For more information about the prerequisites for Native AOT compilation, see [Native AOT deployment](../deploying/native-aot/index.md).
 
 ## Package structure
 
@@ -119,18 +119,15 @@ The top-level package includes metadata that signals it's a RID-specific tool an
 Publish all packages to NuGet.org or your package feed by using [dotnet nuget push](dotnet-nuget-push.md):
 
 ```dotnetcli
-dotnet nuget push mytool.1.0.0.nupkg
-dotnet nuget push mytool.win-x64.1.0.0.nupkg
-dotnet nuget push mytool.linux-x64.1.0.0.nupkg
-dotnet nuget push mytool.osx-arm64.1.0.0.nupkg
+dotnet nuget push path/to/package/root/*.nupkg
 ```
 
-## Install a RID-specific tool
+## Run a RID-specific tool
 
-Users install RID-specific tools the same way as regular tools:
+Users run RID-specific tools the same way as platform-agnostic tools:
 
 ```dotnetcli
-dotnet tool install -g mytool
+dnx mytool
 ```
 
 The CLI automatically:
@@ -138,7 +135,7 @@ The CLI automatically:
 1. Downloads the top-level package.
 1. Reads the RID-specific metadata.
 1. Identifies the most appropriate package for the current platform.
-1. Downloads and installs the RID-specific package.
+1. Downloads and runs the RID-specific package.
 
 ## Example: Create an AOT tool
 

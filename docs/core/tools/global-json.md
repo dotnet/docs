@@ -43,9 +43,9 @@ The version of the .NET SDK to use.
 
 This field:
 
+- Specify the full version number, such as 9.0.100. Doesn't support version numbers like 9, 9.0, or 9.0.x.
 - Doesn't have wildcard support; that is, you must specify the full version number.
 - Doesn't support version ranges.
-- Doesn't support versions such as 9, 9.0, or 9.0.x,
 
 #### `allowPrerelease`
 
@@ -210,12 +210,12 @@ The following example shows how to specify additional SDK search paths and a cus
 }
 ```
 
-The following example shows that when an invalid version is specified, the output  of `dotnet --info` shows: "Version '9.0' is not valid for the 'sdk/version' value."
+The following example shows an invalid version specified. The output of the command `dotnet --info` shows the error message: "Version '10.0' is not valid for the 'sdk/version' value."
 
 ```json
 {
   "sdk": {
-    "version": "9.0",
+    "version": "10.0",
     "rollForward": "latestFeature"
   }
 }

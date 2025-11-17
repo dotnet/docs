@@ -10,7 +10,7 @@ ms.custom: devx-track-dotnet
 ai-usage: ai-assisted
 ---
 
-# Working with Assessment: Comprehensive guide to application assessment
+# Application assessment with GitHub Copilot app modernization
 
 This article shows you how to use assessment capabilities in GitHub Copilot app modernization to maximize the value of your application modernization process.
 
@@ -28,11 +28,9 @@ You can open the `.appmod/.appcat/assessment-config.json` file in your project t
 
 You can edit this file to configure the application assessment. Any changes saved to this file will be applied the next time you run the assessment.
 
-The configurable AppCAT arguments:
+The configurable arguments:
 
-- Target:
-
-Target means the Azure compute service to run the apps on. Choose "Any" if you haven't decided which one to use and later you can choose and compare on the assessment report. By default, it's set as `Any`.
+**Target**: The Azure compute service to run the apps on. Select **Any** if you haven't decided which one to use and later you can choose and compare on the assessment report. By default, it's set as **Any**.
 
 | Target                            | Description                                                        |
 |-----------------------------------|--------------------------------------------------------------------|
@@ -48,7 +46,7 @@ Target means the Azure compute service to run the apps on. Choose "Any" if you h
 
 ### Examples
 
-The following are two examples of how to configure properly.
+The following provide two examples of proper configurations:
 
 - Example one: You'd like to migrate your apps to Azure but haven't decided on the target compute service yet
 
@@ -60,7 +58,7 @@ The following are two examples of how to configure properly.
 }
 ```
 
-- Example two: You'd like to migrate your apps to App Service Linux and want to understand what issues need to be fixed.' Also, 'what are the issues' is awkward phrasing
+- Example two: You'd like to migrate your apps to App Service Linux and want to understand what issues need to be fixed.
 
 ```json
 {
@@ -70,7 +68,7 @@ The following are two examples of how to configure properly.
 }
 ```
 
-After running an assessment, the interactive dashboard opens automatically, providing comprehensive analysis results. When you configure the AppCAT target Azure service as `Any`, you can switch between them to compare migration approaches and view service-specific recommendations. If you configure the target Azure service as a specific one, you can only see one Azure service in the dropdown list.
+After the assessment runs, the interactive dashboard opens automatically to provide comprehensive analysis results. When you configure the target Azure service as `Any`, you can switch between them to compare migration approaches and view service-specific recommendations. If you configure a specific target Azure service, you can only see one Azure service in the dropdown list.
 
 :::image type="content" source="./media/list-azure-service-target-for-assessment-report.png" lightbox="./media/list-azure-service-target-for-assessment-report.png" alt-text="Screenshot of Visual Studio showing the GitHub Copilot app modernization assessment dashboard with Azure service target selection options.":::
 

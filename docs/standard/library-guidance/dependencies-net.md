@@ -39,21 +39,25 @@ Reference the latest supported version of the dependency across all target frame
 - Encourages modernization and access to new features.
 
 **Cons**
-- Older TFMs may require app-local deployments, increasing app size.
+
+- Users targeting older TFMs will get the latest version's behavior, including any potential breaking changes.
 - Larger number of packages to update in comparison to relying on framework provided API.
 - May create friction for customers who are not on the latest supported runtime.
 - May prevent consumption in enviroments where dependencies are managed by a host application - eg: MSBuild, Visual Studio, Azure Functions V1.
 
 ---
 
-### **Option 2: TFM-Specific Versions**
+### **Option 2: TFM-specific versions**
+
 Reference different dependency versions per Target Framework Moniker (TFM).  Don't reference packages when the framework provides the API.  For example: 8.0 packages on `net8.0`, 9.0 packages on `net9.0`, and so on.
 
 **Pros**
+
 - Minimizes change for apps running on older runtimes.
 - Minimizes app-local libraries app size on older runtimes.  Uses runtime optimized library on older runtimes.
 
 **Cons**
+
 - Reduced API available to library which may lead to more complex implementations (polyfills).  Polyfills increase the total cost of engineering and servicing.
 - Slows innovation in libraries.
 - Greater complexity of infrastructure to maintain seperate dependency sets per target framework.  Central packagge management and dependabot can be be configured to work with this, but it's challenging to get it right.
@@ -61,21 +65,24 @@ Reference different dependency versions per Target Framework Moniker (TFM).  Don
 ---
 
 ### **Option 3: Branching**
+
 Reference the latest supported version of the dependency across all target frameworks, but branch your library in sync with target frameworks.  This is the same as Option 1, but each time a new framework is added, a new major version / branch is created to allow for updating the major version of dependencies and adding the new target framework.
 
 **Pros**
+
 - Balances compatibility with flexibility for fast-moving areas.
 - Encourages modernization and access to new features.
 - Simplifies decision-making and aligns with stability expectations.
 - Reduces complexity in dependency management.
 
 **Cons**
+
 - Increased infrastructure cost to maintain concurrent branches.
 - No new features for folks who want to stay on older dependencies.
 
 ---
 
-## **Decision Matrix**
+## **Decision matrix**
 
 | Strategy                              | Update Friction  | Engineering Cost |  Servicing Cost  |
 |---------------------------------------|------------------|------------------|------------------|
@@ -85,7 +92,7 @@ Reference the latest supported version of the dependency across all target frame
 
 ---
 
-## **Key Tradeoffs**
+## **Key tradeoffs**
 
 - **Friction vs. Innovation:** Latest versions offer new features but have more friction for existing applications on older runtimes.
 - **Engineering cost:** Configuring multiple dependency groups, dependency updates for those, and managing API gaps can all accumulate to slow down innovation in a fast moving library.
@@ -93,17 +100,17 @@ Reference the latest supported version of the dependency across all target frame
 
 ---
 
-## **Recommended Guidance**
+## **Recommended guidance**
 
 - Option 1: Recommended for libraries moving fast and undergoing lots of innovation and feature development.  Consumers are more likely to be on the latest framework.
-- Option 2: Recommended for libraries that are stable and do not require new features.  Could be a transition strategy when a library reaches maturity and stops taking large features/
+- Option 2: Recommended for libraries that are stable and do not require new features.  Could be a transition strategy when a library reaches maturity and stops taking large features.
 - Option 3: Recommended for libraries that are part of .NET or receive strong customer feedback that option 1 is limiting consumption or blocking adoption.  Could be a transition strategy when Option 1 has too much friction.
 
 ---
 
 ## **Examples**
 
-### Example 1: Latest Supported Version
+### Example 1: Latest supported version
 ```xml
 <PropertyGroup>
   <TargetFrameworks>net8.0;net9.0;net10.0</TargetFrameworks>
@@ -113,7 +120,7 @@ Reference the latest supported version of the dependency across all target frame
 </ItemGroup>
 ```
 
-### Example 2: TFM-Specific Versions
+### Example 2: TFM-specific versions
 ```xml
 <PropertyGroup>
   <TargetFrameworks>net8.0;net9.0;net10.0</TargetFrameworks>

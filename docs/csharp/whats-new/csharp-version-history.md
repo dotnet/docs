@@ -19,14 +19,14 @@ This article provides a history of each major release of the C# language. The C#
 
 C# 14 includes the following new features:
 
-- [Extension members](./csharp14.md#extension-members)
-- [Null-conditional assignment](./csharp14.md#null-conditional-assignment)
-- [`nameof` supports unbound generic types](./csharp14.md#unbound-generic-types-and-nameof)
-- [More implicit conversions for `Span<T>` and `ReadOnlySpan<T>`](./csharp14.md#implicit-span-conversions)
-- [Modifiers on simple lambda parameters](./csharp14.md#simple-lambda-parameters-with-modifiers)
-- [`field` backed properties](./csharp14.md#the-field-keyword)
-- [`partial` events and constructors](./csharp14.md#more-partial-members)
-- [user-defined compound assignment operators](./csharp14.md#user-defined-compound-assignment)
+- [Extension members](./csharp-14.md#extension-members)
+- [Null-conditional assignment](./csharp-14.md#null-conditional-assignment)
+- [`nameof` supports unbound generic types](./csharp-14.md#unbound-generic-types-and-nameof)
+- [More implicit conversions for `Span<T>` and `ReadOnlySpan<T>`](./csharp-14.md#implicit-span-conversions)
+- [Modifiers on simple lambda parameters](./csharp-14.md#simple-lambda-parameters-with-modifiers)
+- [`field` backed properties](./csharp-14.md#the-field-keyword)
+- [`partial` events and constructors](./csharp-14.md#more-partial-members)
+- [user-defined compound assignment operators](./csharp-14.md#user-defined-compound-assignment)
 
 ## C# version 13
 

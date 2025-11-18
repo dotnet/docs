@@ -36,9 +36,6 @@ Azure DevOps report plugin enhances test running for developers that host their 
 
 The extension is shipped in [Microsoft.Testing.Extensions.AzureDevOpsReport](https://nuget.org/packages/Microsoft.Testing.Extensions.AzureDevOpsReport) package.
 
-> [!IMPORTANT]
-> The package is shipped with Microsoft .NET library closed-source free to use licensing model.
-
 The available options as follows:
 
 | Option | Description |

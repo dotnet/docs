@@ -20,7 +20,8 @@ dotnet publish [<PROJECT>|<SOLUTION>|<FILE>] [-a|--arch <ARCHITECTURE>]
     [-f|--framework <FRAMEWORK>] [--force] [--interactive]
     [--manifest <PATH_TO_MANIFEST_FILE>] [--no-build] [--no-dependencies]
     [--no-restore] [--nologo] [-o|--output <OUTPUT_DIRECTORY>]
-    [--os <OS>] [-r|--runtime <RUNTIME_IDENTIFIER>]
+    [--os <OS>] [-p|--property:<PROPERTYNAME>=<VALUE>]
+    [-r|--runtime <RUNTIME_IDENTIFIER>]
     [--sc|--self-contained] [--no-self-contained]
     [-s|--source <SOURCE>] [--tl:[auto|on|off]]
     [--ucr|--use-current-runtime]
@@ -179,6 +180,15 @@ For more information, see the following resources:
     If you specify a relative path when publishing a solution, all output for all projects goes into the specified folder relative to the current working directory. To make publish output go to separate folders for each project, specify a relative path by using the msbuild `PublishDir` property instead of the `--output` option. For example, `dotnet publish -p:PublishDir=.\publish` sends publish output for each project to a `publish` folder under the folder that contains the project file.
 
 [!INCLUDE [os](../../../includes/cli-os.md)]
+
+- **`-p|--property:<PROPERTYNAME>=<VALUE>`**
+
+  Sets one or more MSBuild properties. Specify multiple properties delimited by semicolons or by repeating the option:
+
+  ```dotnetcli
+  --property:<NAME1>=<VALUE1>;<NAME2>=<VALUE2>
+  --property:<NAME1>=<VALUE1> --property:<NAME2>=<VALUE2>
+  ```
 
 [!INCLUDE [self-contained](../../../includes/cli-self-contained.md)]
 

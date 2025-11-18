@@ -58,7 +58,7 @@ In the *Program.cs* file, invoke the <xref:Microsoft.Extensions.Azure.AzureClien
 In the preceding code:
 
 * Key Vault Secrets, Blob Storage, and Service Bus clients are registered using the <xref:Microsoft.Extensions.Azure.SecretClientBuilderExtensions.AddSecretClient%2A>, <xref:Microsoft.Extensions.Azure.BlobClientBuilderExtensions.AddBlobServiceClient%2A> and <xref:Microsoft.Extensions.Azure.ServiceBusClientBuilderExtensions.AddServiceBusClientWithNamespace%2A>, respectively. The `Uri`- and `string`-typed arguments are passed. To avoid specifying these URLs explicitly, see the [Store configuration separately from code](#store-configuration-separately-from-code) section.
-* Each registered client automatically uses <xref:Azure.Identity.DefaultAzureCredential> for `TokenCredential` unless you explicitly override it (for example, with `WithCredential`).
+* Each registered client automatically uses <xref:Azure.Identity.DefaultAzureCredential> for `TokenCredential` unless you configure a different type of credential (for example, using `WithCredential`).
 * Service Bus subclients are registered for each queue on the service using the subclient and corresponding options types. The queue names for the subclients are retrieved using a separate method outside of the service registration because the `GetQueuesAsync` method must be run asynchronously.
 * An Azure OpenAI client is registered using a custom client factory via the <xref:Microsoft.Extensions.Azure.AzureClientFactoryBuilder.AddClient%2A> method, which provides control over how a client instance is created. Custom client factories are useful in the following cases:
   * You need to use other dependencies during the client construction.

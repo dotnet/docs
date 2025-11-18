@@ -47,6 +47,7 @@ Complete the following steps to create a .NET console app to connect to an AI mo
     dotnet add package Azure.Identity
     dotnet add package Azure.AI.OpenAI
     dotnet add package Microsoft.Extensions.AI
+    dotnet add package Microsoft.Extensions.AI.OpenAI --prerelease
     dotnet add package Microsoft.Extensions.Configuration
     dotnet add package Microsoft.Extensions.Configuration.UserSecrets
     ```
@@ -100,7 +101,7 @@ The app uses the [`Microsoft.Extensions.AI`](https://www.nuget.org/packages/Micr
 
     :::zone target="docs" pivot="azure-openai"
 
-    :::code language="csharp" source="snippets/function-calling/azure-openai/BasicExample.cs" id="GetChatClient":::
+    :::code language="csharp" source="snippets/function-calling/azure-openai/Program.cs" id="GetChatClient":::
 
     :::zone-end
 

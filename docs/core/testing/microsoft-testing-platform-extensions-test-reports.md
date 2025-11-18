@@ -32,7 +32,7 @@ The report is saved inside the default _TestResults_ folder that can be specifie
 
 Azure DevOps report plugin enhances test running for developers that host their code on GitHub, but build on Azure DevOps build agents. It adds additional information to failures to show failure directly in GitHub PR.
 
-![](./media/test-azdoreport-failure.png)
+![Error annotation in GitHub PR files view](./media/test-azdoreport-failure.png)
 
 The extension is shipped in [Microsoft.Testing.Extensions.AzureDevOpsReport](https://nuget.org/packages/Microsoft.Testing.Extensions.AzureDevOpsReport) package.
 
@@ -46,11 +46,11 @@ The available options as follows:
 | `--report-azdo` | Enable outputting errors / warnings in CI builds. |
 | `--report-azdo-severity` | Severity to use for the reported event. Options are: `error` (default) and `warning`. |
 
-The extension automatically detects that it is running in continuous integration (CI) environment by checking the `TF_BIULD` environment variable.
+The extension automatically detects that it is running in continuous integration (CI) environment by checking the `TF_BUILD` environment variable.
 
 ### Determining the line to report
 
-To highlight the correct line in code where failure occured, AzureDevOps report plugin searches the error stacktrace for a file that exists in the current repository.
+To highlight the correct line in code where failure occurred, AzureDevOps report plugin searches the error stacktrace for a file that exists in the current repository.
 
 To determine this it:
 
@@ -58,4 +58,3 @@ To determine this it:
 - finds the first line in stack trace that has file location and line (the library needs to have debug symbols)
 - excludes all files that end with `Assert.cs` to avoid showing details of your assertion implementations or wrappers
 - excludes all files that don't exist on disk (typically those are lines from external libraries that ship debug symbols e.g. MSTest)
-

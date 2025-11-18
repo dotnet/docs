@@ -123,8 +123,6 @@ Beginning with C# 13, the implementing declaration for a partial property can us
 
 You can use `field` in either the `get` or `set` accessor, or both.
 
-[!INCLUDE[field-preview](../../includes/field-preview.md)]
-
 Partial members enable the implementer of one part of a class to declare a member. The implementer of another part of the class can define that member. There are two scenarios where this separation is useful: templates that generate boilerplate code, and source generators.
 
 - **Template code**: The template reserves a method name and signature so that generated code can call the method. These methods follow the restrictions that enable a developer to decide whether to implement the method. If the method isn't implemented, then the compiler removes the method signature and all calls to the method. The calls to the method, including any results that would occur from evaluation of arguments in the calls, have no effect at run time. Therefore, any code in the partial class can freely use a partial method, even if the implementation isn't supplied. No compile-time or run-time errors result if the method is called but not implemented.

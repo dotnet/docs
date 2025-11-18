@@ -23,11 +23,9 @@ Often, the `get` accessor consists of a single statement that returns a value, a
 
 :::code language="csharp" source="./snippets/PropertyAccessors.cs" id="GetSetExpressions":::
 
-You might find that you need to implement one of the accessor bodies. You can use a field backed property to let the compiler generate one accessor while you write the other by hand. You use the `field` keyword, added as a preview feature in C# 13, to access the compiler synthesized backing field:
+You might find that you need to implement one of the accessor bodies. You can use a field backed property to let the compiler generate one accessor while you write the other by hand. You use the `field` keyword, added in C# 14, to access the compiler synthesized backing field:
 
 :::code language="csharp" source="./snippets/PropertyAccessors.cs" id="FieldBackedProperty":::
-
-[!INCLUDE[field-preview](../../includes/field-preview.md)]
 
 The following example defines both a `get` and a `set` accessor for a property named `Seconds`. It uses a private field named `_seconds` to back the property value.
 

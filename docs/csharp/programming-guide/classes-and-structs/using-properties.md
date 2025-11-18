@@ -25,11 +25,9 @@ Properties are declared in the class block by specifying the access level of the
 
 In this example, `Month` is declared as a property so that the `set` accessor can make sure that the `Month` value is set between 1 and 12. The `Month` property uses a private field to track the actual value. The real location of a property's data is often referred to as the property's "backing store." It's common for properties to use private fields as a backing store. The field is marked private in order to make sure that it can only be changed by calling the property. For more information about public and private access restrictions, see [Access Modifiers](./access-modifiers.md). Automatically implemented properties provide simplified syntax for simple property declarations. For more information, see [Automatically implemented properties](auto-implemented-properties.md).
 
-Beginning with C# 13, you can use [field backed properties](../../language-reference/keywords/field.md) to add validation to the `set` accessor of an automatically implemented property, as shown in the following example:
+Beginning with C# 14, you can use [field backed properties](../../language-reference/keywords/field.md) to add validation to the `set` accessor of an automatically implemented property, as shown in the following example:
 
 :::code language="csharp" source="./snippets/properties/TimePeriod.cs" id="FieldExample":::
-
-[!INCLUDE[field-preview](../../includes/field-preview.md)]
 
 ## The get accessor
 

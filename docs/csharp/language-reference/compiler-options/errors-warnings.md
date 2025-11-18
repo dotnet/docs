@@ -78,7 +78,7 @@ Before the .NET 7 SDK, the **AnalysisLevel** overwrote the **WarningLevel**.
 | 6                | Displays all optional [warning wave 6 warnings](../compiler-messages/warning-waves.md#cs8826---partial-method-declarations-have-signature-differences). |
 | 7                | Displays all optional [warning wave 7 warnings](../compiler-messages/warning-waves.md#cs8981---the-type-name-only-contains-lower-cased-ascii-characters). |
 | latest (default) | Displays all informational warnings up to and including the current release. |
-| preview          | Displays all informational warnings up to and including the latest preview release. |
+|           | Displays all informational warnings up to and including the latest preview release. |
 | none             | Turns off all informational warnings. |
 
 For more information on optional warnings, see [Warning waves](../compiler-messages/warning-waves.md).

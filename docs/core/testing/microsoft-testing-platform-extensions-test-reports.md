@@ -55,3 +55,6 @@ To determine this it:
 - finds the first line in stack trace that has file location and line (the library needs to have debug symbols)
 - excludes all files that end with `Assert.cs` to avoid showing details of your assertion implementations or wrappers
 - excludes all files that don't exist on disk (typically those are lines from external libraries that ship debug symbols e.g. MSTest)
+ 
+
+(These are internal details that serve to aid debugging the behavior and might change in the future.)

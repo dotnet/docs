@@ -8,7 +8,7 @@ class ArgumentsExample
 {
     public static async Task RunManual()
     {
-        // <UseAIFunctionArguments>
+        // <SnippetUseAIFunctionArguments>
         Delegate getWeatherDelegate = (AIFunctionArguments args) =>
         {
             // Access named parameters from the arguments dictionary.
@@ -28,7 +28,7 @@ class ArgumentsExample
             { "units", "F" }
         });
         Console.WriteLine($"Function result: {result}");
-        // </UseAIFunctionArguments>
+        // </SnippetUseAIFunctionArguments>
     }
     public static async Task UseFICC()
     {
@@ -40,6 +40,7 @@ class ArgumentsExample
         string apiKey = config["AZURE_OPENAI_API_KEY"];
         string model = config["AZURE_OPENAI_GPT_NAME"];
 
+        // <SnippetUseAdditionalProperties>
         FunctionInvokingChatClient client = new FunctionInvokingChatClient(
             new AzureOpenAIClient(new Uri(endpoint), new AzureKeyCredential(apiKey))
             .GetChatClient(model).AsIChatClient());
@@ -80,6 +81,7 @@ class ArgumentsExample
 
         ChatResponse response = await client.GetResponseAsync(chatHistory, chatOptions);
         Console.WriteLine($"Response: {response.Text}");
+        // </SnippetUseAdditionalProperties>
 
 
         //IChatClient client =

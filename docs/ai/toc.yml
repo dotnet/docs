@@ -54,6 +54,18 @@ items:
     href: conceptual/rag.md
   - name: OpenAI function calling
     href: conceptual/understanding-openai-functions.md
+- name: Call functions
+  items:
+    - name: "Quickstart: Execute a local function"
+      href: quickstarts/use-function-calling.md
+    - name: Access data in AI functions
+      href: quickstarts/access-data-in-functions.md
+- name: Text to image
+  items:
+    - name: Generate images using MEAI
+      href: quickstarts/text-to-image.md
+    - name: Generate images using OpenAI.Images.ImageClient
+      href: quickstarts/generate-images.md
 - name: Chat with your data (RAG)
   items:
     - name: Get started with the RAG sample
@@ -68,12 +80,6 @@ items:
       href: quickstarts/build-mcp-server.md
     - name: Build a minimal MCP client
       href: quickstarts/build-mcp-client.md
-- name: Text to image
-  items:
-    - name: Generate images using MEAI
-      href: quickstarts/text-to-image.md
-    - name: Generate images using OpenAI.Images.ImageClient
-      href: quickstarts/generate-images.md
 - name: Security and content safety
   items:
   - name: Authentication for Azure-hosted apps and services

@@ -13,9 +13,7 @@ ms.reviewer: jessiehuang
 
 ## Overview
 
-Learn how .NET developers can migrate applications to Azure with **GitHub Copilot app modernization** in the [**Copilot CLI**](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli).
-
-:::image type="content" source="./media/copilot-cli-entrance.png" lightbox="./media/copilot-cli-entrance.png" alt-text="Screenshot of app modernization entrance in Copilot CLI.":::
+Learn how to migrate .NET applications to Azure with **GitHub Copilot app modernization** in the [**Copilot CLI**](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli).
 
 >[!NOTE]
 > GitHub Copilot CLI is available in the GitHub Copilot Pro, GitHub Copilot Pro+, GitHub Copilot Business, and GitHub Copilot Enterprise plans.
@@ -23,7 +21,7 @@ Learn how .NET developers can migrate applications to Azure with **GitHub Copilo
 
 ## Why use Copilot CLI with app modernization
 
-- Run modernization tasks from the terminal—no need to switch to an IDE.
+- Run modernization tasks from the terminal - no need to switch to an IDE.
 - Use interactive (human-in-the-loop) and batch workflows.
 
 ## Prerequisites
@@ -41,13 +39,15 @@ Learn how .NET developers can migrate applications to Azure with **GitHub Copilo
     copilot
     ```
 
+    :::image type="content" source="./media/copilot-cli-entrance.png" lightbox="./media/copilot-cli-entrance.png" alt-text="Screenshot of app modernization entrance in Copilot CLI.":::
+
     Copilot asks you to confirm that you trust the files in this folder. For details, see [Using Copilot CLI](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli#trusted-directories).
 
     Choose one of the options:
 
-    - Yes, proceed: Copilot can work with the files in this location for this session only.
-    - Yes, and remember this folder for future sessions: Trust the files in this folder for this and future sessions. You won't be asked again when you start Copilot CLI here. Only choose this option if you are sure it will always be safe for Copilot to work with files in this location.
-    - No, exit (Esc): End the Copilot CLI session.
+    - **Yes, proceed**: Copilot can work with the files in this location for this session only.
+    - **Yes, and remember this folder for future sessions**: Trust the files in this folder for this and future sessions. You won't be asked again when you start Copilot CLI here. Only choose this option if you are sure it will always be safe for Copilot to work with files in this location.
+    - **No, exit (Esc)**: End the Copilot CLI session.
 
 1. Add MCP servers. Run `/mcp add` in Copilot CLI using the configuration below. For example, to add the .NET migration MCP server:
 
@@ -93,7 +93,7 @@ Learn how .NET developers can migrate applications to Azure with **GitHub Copilo
 1. Run the migration task in Copilot CLI.
 
     Describe your migration scenario in Copilot CLI to migrate your .NET app to Azure.
-    Use a prompt like "migrate from X to Y" for any migration task.
+    Use a prompt like *migrate from X to Y* for any migration task.
     Copilot CLI supports predefined migration scenarios that follow Microsoft best practices. For details, see [migration tasks](predefined-tasks.md).
 
     Example prompts:

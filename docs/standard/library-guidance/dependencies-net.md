@@ -116,6 +116,7 @@ Reference the latest supported version of the dependency across all target frame
   <TargetFrameworks>net8.0;net9.0;net10.0</TargetFrameworks>
 </PropertyGroup>
 <ItemGroup>
+  <PackageReference Include="System.IO.Packaging" Version="10.0.0" />
   <PackageReference Include="System.Text.Json" Version="10.0.0" />
 </ItemGroup>
 ```
@@ -126,9 +127,10 @@ Reference the latest supported version of the dependency across all target frame
   <TargetFrameworks>net8.0;net9.0;net10.0</TargetFrameworks>
 </PropertyGroup>
 <ItemGroup>
-  <PackageReference Condition="'$(TargetFramework)' == 'net8.0'" Include="System.Text.Json" Version="8.0.0" />
-  <PackageReference Condition="'$(TargetFramework)' == 'net9.0'" Include="System.Text.Json" Version="9.0.0" />
-  <PackageReference Condition="'$(TargetFramework)' == 'net10.0'" Include="System.Text.Json" Version="10.0.0" />
+  <PackageReference Condition="'$(TargetFramework)' == 'net8.0'" Include="System.IO.Packaging" Version="8.0.0" />
+  <PackageReference Condition="'$(TargetFramework)' == 'net9.0'" Include="System.IO.Packaging" Version="9.0.0" />
+  <PackageReference Condition="'$(TargetFramework)' == 'net10.0'" Include="System.IO.Packaging" Version="10.0.0" />
+  <!-- Note that System.Text.Json is absent as it is provided by the framework -->
 </ItemGroup>
 ```
 
@@ -139,6 +141,7 @@ Branch: release/8.0
   <TargetFrameworks>net6.0;net7.0;net8.0</TargetFrameworks>
 </PropertyGroup>
 <ItemGroup>
+  <PackageReference Include="System.IO.Packaging" Version="8.0.0" />
   <PackageReference Include="System.Text.Json" Version="8.0.0" />
 </ItemGroup>
 ```
@@ -149,6 +152,7 @@ Branch: release/9.0
   <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
 </PropertyGroup>
 <ItemGroup>
+  <PackageReference Include="System.IO.Packaging" Version="9.0.0" />
   <PackageReference Include="System.Text.Json" Version="9.0.0" />
 </ItemGroup>
 ```
@@ -159,6 +163,7 @@ Branch: release/10.0
   <TargetFrameworks>net8.0;net9.0;net10.0</TargetFrameworks>
 </PropertyGroup>
 <ItemGroup>
+  <PackageReference Include="System.IO.Packaging" Version="10.0.0" />
   <PackageReference Include="System.Text.Json" Version="10.0.0" />
 </ItemGroup>
 ```

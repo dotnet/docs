@@ -105,9 +105,11 @@ Learn how .NET developers can migrate applications to Azure with **GitHub Copilo
     ```
 
     The migration task runs and shows progress in Copilot CLI.
+
     :::image type="content" source="./media/migrate-details.png" lightbox="./media/migrate-details.png" alt-text="Screenshot of a .NET migration task progress details in Copilot CLI.":::
 
     After migration, view the summary:
+
     :::image type="content" source="./media/migrate-summary.png" lightbox="./media/migrate-summary.png" alt-text="Screenshot of the .NET migration summary in Copilot CLI.":::
 
 ## Provide feedback

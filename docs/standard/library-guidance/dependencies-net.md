@@ -1,4 +1,7 @@
-# Guidance for Selecting .NET Library Dependency Versions
+---
+ai-usage: ai-assisted
+---
+# Guidance for .NET library dependency versions
 
 When building libraries that target multiple .NET versions, choosing dependency versions has implications for compatibility, servicing, and ecosystem health. This document outlines the main strategies, their tradeoffs, and recommendations.
 
@@ -23,12 +26,14 @@ This guidance provides options, tradeoffs, and a decision matrix to help you cho
 
 ## **Strategies for Dependency Version Selection**
 
-### **Option 1: Latest Supported Versions**
+### **Option 1: Latest supported versions**
+
 Reference the latest supported version of the dependency across all target frameworks.  For example: reference 10.0 packages on `netstandard2.0`, `net8.0`, `net9.0`, and `net10.0`
 > **Note:** The lifetime of the latest Short-Term Support (STS) release now aligns with the latest LTS release, so choosing “latest” effectively means choosing the latest supported version regardless of STS or LTS designation.
 > **Note:** Not all packages support targeting older frameworks in their latest version. For example: `Microsoft.AspNetCore.Authorization`.  These packages must be excluded from this policy and must always follow option 2 when used.
 
 **Pros**
+
 - Simplifies decision-making and aligns with stability expectations.
 - Reduces complexity in dependency management.
 - Encourages modernization and access to new features.

@@ -59,7 +59,8 @@ class ArgumentsExample
         AIFunction getWeather = AIFunctionFactory.Create(() =>
             {
                 // Access named parameters from the arguments dictionary.
-                AdditionalPropertiesDictionary props = FunctionInvokingChatClient.CurrentContext.Options.AdditionalProperties;
+                AdditionalPropertiesDictionary props =
+                    FunctionInvokingChatClient.CurrentContext.Options.AdditionalProperties;
 
                 string location = props["location"].ToString();
                 string units = props["units"].ToString();
@@ -70,10 +71,12 @@ class ArgumentsExample
         var chatOptions = new ChatOptions
         {
             Tools = [getWeather],
-            AdditionalProperties = new AdditionalPropertiesDictionary { ["location"] = "Seattle", ["units"] = "F" },
+            AdditionalProperties = new AdditionalPropertiesDictionary {
+                ["location"] = "Seattle",
+                ["units"] = "F"
+            },
         };
 
-        // Prepare chat with service provider.
         List<ChatMessage> chatHistory = [
             new(ChatRole.System, "You're a helpful weather assistant.")
         ];
@@ -82,13 +85,5 @@ class ArgumentsExample
         ChatResponse response = await client.GetResponseAsync(chatHistory, chatOptions);
         Console.WriteLine($"Response: {response.Text}");
         // </SnippetUseAdditionalProperties>
-
-
-        //IChatClient client =
-        //    new ChatClientBuilder(
-        //        new AzureOpenAIClient(new Uri(endpoint), new AzureKeyCredential(apiKey))
-        //        .GetChatClient(model).AsIChatClient())
-        //    .UseFunctionInvocation()
-        //    .Build();
     }
 }

@@ -8,9 +8,15 @@ ms.date: 11/17/2025
 
 When you create AI functions, you might need to access contextual data beyond the parameters provided by the AI model. The `Microsoft.Extensions.AI` library provides several mechanisms to pass data to function delegates.
 
+## Pass data
+
 You can associate data with the function at the time it's created, either via closure or via <xref:Microsoft.Extensions.AI.ChatOptions.AdditionalProperties>. If you're creating your own function, you can populate `AdditionalProperties` however you want. If you use <xref:Microsoft.Extensions.AI.AIFunctionFactory> to create the function, you can populate data using <xref:Microsoft.Extensions.AI.AIFunctionFactoryOptions.AdditionalProperties?displayProperty=nameWithType>.
 
-## Manual function invocation
+## Access data in function delegates
+
+You might call your `AIFunction` directly, or you might call it indirectly by using <xref:Microsoft.Extensions.AI.FunctionInvokingChatClient>. The following sections describe how to access argument data using either approach.
+
+### Manual function invocation
 
 If you manually invoke an <xref:Microsoft.Extensions.AI.AIFunction> by calling <xref:Microsoft.Extensions.AI.AIFunction.InvokeAsync(Microsoft.Extensions.AI.AIFunctionArguments,System.Threading.CancellationToken)?displayProperty=nameWithType>, you pass in <xref:Microsoft.Extensions.AI.AIFunctionArguments>. The <xref:Microsoft.Extensions.AI.AIFunctionArguments> type includes:
 
@@ -24,15 +30,17 @@ The following code shows an example:
 
 :::code language="csharp" source="snippets/access-data/ArgumentsExample.cs" id="UseAIFunctionArguments":::
 
-## Invocation through `FunctionInvokingChatClient`
+### Invocation through `FunctionInvokingChatClient`
 
-If you use <xref:Microsoft.Extensions.AI.FunctionInvokingChatClient> to invoke functions automatically, that client configures an <xref:Microsoft.Extensions.AI.AIFunctionArguments> object that it passes into the `AIFunction`. Because `AIFunctionArguments` includes the `IServiceProvider` that the `FunctionInvokingChatClient` was itself provided with, if you construct your client using standard DI means, that `IServiceProvider` is passed all the way into your `AIFunction`. At that point, you can query it for anything you want from DI.
-
-`FunctionInvokingChatClient` also publishes state about the current invocation to <xref:Microsoft.Extensions.AI.FunctionInvokingChatClient.CurrentContext?displayProperty=nameWithType>, including not only the arguments, but all of the input `ChatMessage` objects, the <xref:Microsoft.Extensions.AI.ChatOptions>, and details on which function is being invoked (out of how many). You can add any data you want into <xref:Microsoft.Extensions.AI.ChatOptions.AdditionalProperties?displayProperty=nameWithType> and extract that inside of your `AIFunction` from `FunctionInvokingChatClient.CurrentContext.Options.AdditionalProperties`.
+<xref:Microsoft.Extensions.AI.FunctionInvokingChatClient> publishes state about the current invocation to <xref:Microsoft.Extensions.AI.FunctionInvokingChatClient.CurrentContext?displayProperty=nameWithType>, including not only the arguments, but all of the input `ChatMessage` objects, the <xref:Microsoft.Extensions.AI.ChatOptions>, and details on which function is being invoked (out of how many). You can add any data you want into <xref:Microsoft.Extensions.AI.ChatOptions.AdditionalProperties?displayProperty=nameWithType> and extract that inside of your `AIFunction` from `FunctionInvokingChatClient.CurrentContext.Options.AdditionalProperties`.
 
 The following code shows an example:
 
 :::code language="csharp" source="snippets/access-data/ArgumentsExample.cs" id="UseAdditionalProperties":::
+
+#### Dependency injection
+
+If you use <xref:Microsoft.Extensions.AI.FunctionInvokingChatClient> to invoke functions automatically, that client configures an <xref:Microsoft.Extensions.AI.AIFunctionArguments> object that it passes into the `AIFunction`. Because `AIFunctionArguments` includes the `IServiceProvider` that the `FunctionInvokingChatClient` was itself provided with, if you construct your client using standard DI means, that `IServiceProvider` is passed all the way into your `AIFunction`. At that point, you can query it for anything you want from DI.
 
 ## Advanced techniques
 

@@ -43,7 +43,8 @@ The version of the .NET SDK to use.
 
 This field:
 
-- Specify the full version number, such as 9.0.100. Doesn't support version numbers like 9, 9.0, or 9.0.x.
+- Requires the full version number, such as 9.0.100.
+- Doesn't support version numbers like 9, 9.0, or 9.0.x.
 - Doesn't have wildcard support; that is, you must specify the full version number.
 - Doesn't support version ranges.
 

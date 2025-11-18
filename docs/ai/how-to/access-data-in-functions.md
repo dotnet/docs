@@ -8,15 +8,15 @@ ms.date: 11/17/2025
 
 When you create AI functions, you might need to access contextual data beyond the parameters provided by the AI model. The `Microsoft.Extensions.AI` library provides several mechanisms to pass data to function delegates.
 
+## `AIFunction` class
+
+The <xref:Microsoft.Extensions.AI.AIFunction> type represents a function that can be described to an AI service and invoked. You can create `AIFunction` objects by calling one of the <xref:Microsoft.Extensions.AI.AIFunctionFactory.Create*?displayProperty=nameWithType> overloads. But <xref:Microsoft.Extensions.AI.AIFunction> is also a base class, and you can derive from it and implement your own AI function type. <xref:Microsoft.Extensions.AI.DelegatingAIFunction> provides an easy way to wrap an existing `AIFunction` and layer in additional functionality, including capturing additional data to be used.
+
 ## Pass data
 
 You can associate data with the function at the time it's created, either via closure or via <xref:Microsoft.Extensions.AI.ChatOptions.AdditionalProperties>. If you're creating your own function, you can populate `AdditionalProperties` however you want. If you use <xref:Microsoft.Extensions.AI.AIFunctionFactory> to create the function, you can populate data using <xref:Microsoft.Extensions.AI.AIFunctionFactoryOptions.AdditionalProperties?displayProperty=nameWithType>.
 
 You can also capture any references to data as part of the delegate provided to `AIFunctionFactory`. That is, you can bake in whatever you want to reference as part of the `AIFunction` itself.
-
-## `AIFunction` class
-
-<xref:Microsoft.Extensions.AI.AIFunction> is a base class. <xref:Microsoft.Extensions.AI.AIFunctionFactory.Create*?displayProperty=nameWithType> is one producer of `AIFunction` objects, but you can derive from the base class and implement your own AI function type. <xref:Microsoft.Extensions.AI.DelegatingAIFunction> provides an easy way to wrap an existing `AIFunction` and layer in additional functionality, including capturing additional data to be used.
 
 ## Access data in function delegates
 

@@ -1,7 +1,7 @@
 ---
 title: .NET releases, patches, and support
 description: Learn about releases, patches, and support for .NET.
-ms.date: 08/26/2025
+ms.date: 11/18/2025
 ms.topic: overview
 ---
 # Releases and support for .NET

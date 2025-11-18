@@ -2,7 +2,7 @@
 title: The history of C#
 description: Learn how the C# language has changed over its many releases. Learn when different features were introduced in the language.
 author: erikdietrich
-ms.date: 12/20/2024
+ms.date: 11/18/2025
 ms.custom: "updateeachrelease"
 ---
 
@@ -12,6 +12,21 @@ This article provides a history of each major release of the C# language. The C#
 
 > [!IMPORTANT]
 > The C# language relies on types and methods in what the C# specification defines as a *standard library* for some of the features. The .NET platform delivers those types and methods in a number of packages. One example is exception processing. Every `throw` statement or expression is checked to ensure the object being thrown is derived from <xref:System.Exception>. Similarly, every `catch` is checked to ensure that the type being caught is derived from <xref:System.Exception>. Each version may add new requirements. To use the latest language features in older environments, you may need to install specific libraries. These dependencies are documented in the page for each specific version. You can learn more about the [relationships between language and library](relationships-between-language-and-library.md) for background on this dependency.
+
+## C# version 14
+
+*Released November 2025*
+
+C# 14 includes the following new features:
+
+- [Extension members](./csharp14.md#extension-members)
+- [Null-conditional assignment](./csharp14.md#null-conditional-assignment)
+- [`nameof` supports unbound generic types](./csharp14.md#unbound-generic-types-and-nameof)
+- [More implicit conversions for `Span<T>` and `ReadOnlySpan<T>`](./csharp14.md#implicit-span-conversions)
+- [Modifiers on simple lambda parameters](./csharp14.md#simple-lambda-parameters-with-modifiers)
+- [`field` backed properties](./csharp14.md#the-field-keyword)
+- [`partial` events and constructors](./csharp14.md#more-partial-members)
+- [user-defined compound assignment operators](./csharp14.md#user-defined-compound-assignment)
 
 ## C# version 13
 
@@ -29,8 +44,6 @@ C# 13 includes the following new features:
 - You can allow `ref struct` types as arguments for type parameters in generics.
 - Partial properties and indexers are now allowed in `partial` types.
 - Overload resolution priority allows library authors to designate one overload as better than others.
-
-And, the `field` contextual keyword to access the compiler generated backing field in an automatically implemented property was released as a preview feature.
 
 ## C# version 12
 
@@ -56,20 +69,20 @@ Overall, C# 12 provides new features that make you more productive writing C# co
 
 The following features were added in C# 11:
 
-- [Raw string literals](./csharp-11.md#raw-string-literals)
-- [Generic math support](./csharp-11.md#generic-math-support)
-- [Generic attributes](./csharp-11.md#generic-attributes)
-- [UTF-8 string literals](./csharp-11.md#utf-8-string-literals)
-- [Newlines in string interpolation expressions](./csharp-11.md#newlines-in-string-interpolations)
-- [List patterns](./csharp-11.md#list-patterns)
-- [File-local types](./csharp-11.md#file-local-types)
-- [Required members](./csharp-11.md#required-members)
-- [Auto-default structs](./csharp-11.md#auto-default-struct)
-- [Pattern match `Span<char>` on a constant `string`](./csharp-11.md#pattern-match-spanchar-or-readonlyspanchar-on-a-constant-string)
-- [Extended `nameof` scope](./csharp-11.md#extended-nameof-scope)
-- [Numeric IntPtr](./csharp-11.md#numeric-intptr-and-uintptr)
-- [`ref` fields and `scoped ref`](./csharp-11.md#ref-fields-and-ref-scoped-variables)
-- [Improved method group conversion to delegate](./csharp-11.md#improved-method-group-conversion-to-delegate)
+- [Raw string literals](../language-reference/builtin-types/reference-types.md#string-literals).
+- [Generic math support](../language-reference/keywords/interface.md#static-abstract-and-virtual-members).
+- [Generic attributes](../advanced-topics/reflection-and-attributes/creating-custom-attributes.md).
+- [UTF-8 string literals](../language-reference/builtin-types/reference-types.md#utf-8-string-literals).
+- [Newlines in string interpolation expressions](../language-reference/tokens/interpolated.md).
+- [List patterns](../language-reference/operators/patterns.md#list-patterns).
+- [File-local types](../language-reference/keywords/file.md).
+- [Required members](../programming-guide/classes-and-structs/properties.md#required-properties).
+- [Auto-default structs](../language-reference/builtin-types/struct.md#struct-initialization-and-default-values).
+- Pattern match `Span<char>` on a constant `string`.
+- Extended `nameof` scope.
+- The `nint` and `uint` keywords alias <xref:System.IntPtr?displayProperty=nameWithType> and <xref:System.UIntPtr?displayProperty=nameWithType><xref:System.UIntPtr?displayProperty=nameWithType>, respectively.
+- [`ref` fields and `scoped ref`](../language-reference/builtin-types/ref-struct.md#ref-fields)
+- Improved method group conversion to delegate.
 - [Warning wave 7](../language-reference/compiler-messages/warning-waves.md#cs8981---the-type-name-only-contains-lower-cased-ascii-characters)
 
 C# 11 introduces *generic math* and several features that support that goal. You can write numeric algorithms once for all number types. There's more features to make working with `struct` types easier, like required members and auto-default structs. Working with strings gets easier with Raw string literals, newline in string interpolations, and UTF-8 string literals. Features like file local types enable source generators to be simpler. Finally, list patterns add more support for pattern matching.

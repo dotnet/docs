@@ -11,9 +11,9 @@ When building libraries that target multiple .NET versions, choosing dependency 
 
 Library authors face challenges when deciding which version of a .NET dependency to reference. Newer versions have more API and features, but may require a local redistribution increasing servicing responsibilities of the library and size of the application.  The decision impacts:
 
-- **Friction of updates** on older runtimes
-- **Engineering complexity** in maintaing the solution
-- **Servicing complexity** in managing supported releases
+- **Friction of updates** on older runtimes.  Friction might be more changes than are desired by the library directly referenced.  This could be the set of changes introduced between major versions of a dependency, the application size due to more app-local dependencies, the application startup performance due to using app-local dependencies without pre-generated native images, etc.
+- **Engineering cost** in maintaining the solution.  Here engineering cost is the cost of doing work in the latest codebase.  This might be managing more complex projects with conditions, the total number of dependencies that need to be updated regularly, the cost of maintaining local source to account for missing features in older dependencies, dealing with ifdefs around inconsistent API/features across versions, etc. 
+- **Servicing cost** in managing supported releases.  Here servicing cost is the ongoing cost in keeping release branches building, up to date, and compliant with all supported build tools.
 
 This guidance provides options, tradeoffs, and a decision matrix to help you choose the best approach.
 ✔️ DO be deliberate in choosing a dependency policy for your library
@@ -28,7 +28,7 @@ This guidance provides options, tradeoffs, and a decision matrix to help you cho
 
 ### **Option 1: Latest supported versions**
 
-Reference the latest supported version of the dependency across all target frameworks.  For example: reference 10.0 packages on `netstandard2.0`, `net8.0`, `net9.0`, and `net10.0`
+Reference the latest supported version of the dependency across all target frameworks.  For example at the time this document was written when .NET 10.0 is the latest current release a project would reference reference 10.0 packages on `netstandard2.0`, `net8.0`, `net9.0`, and `net10.0`.
 > **Note:** The lifetime of the latest Short-Term Support (STS) release now aligns with the latest LTS release, so choosing “latest” effectively means choosing the latest supported version regardless of STS or LTS designation.
 > **Note:** Not all packages support targeting older frameworks in their latest version. For example: `Microsoft.AspNetCore.Authorization`.  These packages must be excluded from this policy and must always follow option 2 when used.
 

@@ -11,43 +11,52 @@ Microsoft ships major releases, minor releases, and servicing updates (patches) 
 > [!NOTE]
 > For information about versioning and support for .NET Framework, see [.NET Framework Lifecycle](/lifecycle/products/microsoft-net-framework).
 
+## Currently supported versions
+
+The following versions of .NET are currently supported:
+
+- .NET 9 (Standard Term Support) - supported until November 2026. See [Release tracks](#release-tracks).
+- .NET 8 (Long Term Support) - supported until November 2026. See [Release tracks](#release-tracks).
+- .NET 6 (Long Term Support) - supported until November 2027. See [Release tracks](#release-tracks).
+
+For the complete list of supported versions and their end-of-support dates, see the [.NET Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
+
 ## Release types
 
 Information about the type of each release is encoded in the version number in the form *major.minor.patch*.
 
 For example:
 
-* .NET 6 and .NET 7 are major releases.
-* .NET Core 3.1 is the first minor release after the .NET Core 3.0 major release.
-* .NET Core 5.0.15 is the fifteenth patch for .NET 5.
+* .NET 8 and .NET 9 are major releases.
+* .NET 9.0.1 is the first patch for .NET 9.
 
 For a list of released versions of .NET and information about how often .NET ships, see the [Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core#lifecycle).
 
 ### Major releases
 
-Major releases include new features, new public API surface area, and bug fixes. Examples include .NET 6 and .NET 7.  Due to the nature of the changes, these releases are expected to have breaking changes. Major releases install side by side with previous major releases.
+Major releases include new features, new public API surface area, and bug fixes. Examples include .NET 8 and .NET 9.  Due to the nature of the changes, these releases are expected to have breaking changes. Major releases install side by side with previous major releases.
 
 ### Minor releases
 
-Minor releases also include new features, public API surface area, and bug fixes, and may also have breaking changes. An example is .NET Core 3.1. The difference between these and major releases is that the magnitude of the changes is smaller. An application upgrading from .NET Core 3.0 to 3.1 has a smaller jump to move forward. Minor releases install side by side with previous minor releases.
+Minor releases also include new features, public API surface area, and bug fixes, and may also have breaking changes. The difference between these and major releases is that the magnitude of the changes is smaller. Minor releases install side by side with previous minor releases.
 
 ### Servicing updates
 
-Servicing updates (patches) ship almost every month, and these updates carry both security and non-security bug fixes. For example, .NET 5.0.8 was the eighth update for .NET 5. When these updates include security fixes, they're released on "patch Tuesday", which is always the second Tuesday of the month. Servicing updates are expected to maintain compatibility. Starting with .NET Core 3.1, servicing updates are upgrades that remove the preceding update. For example, the latest servicing update for 3.1 removes the previous 3.1 update upon successful installation.
+Servicing updates (patches) ship almost every month, and these updates carry both security and non-security bug fixes. For example, .NET 9.0.1 is the first update for .NET 9. When these updates include security fixes, they're released on "patch Tuesday", which is always the second Tuesday of the month. Servicing updates are expected to maintain compatibility. Servicing updates are upgrades that remove the preceding update. For example, the latest servicing update for .NET 9 removes the previous .NET 9 update upon successful installation.
 
 ### Feature bands (SDK only)
 
 Versioning for the .NET SDK works slightly differently from the .NET runtime. To align with new Visual Studio releases, .NET SDK updates sometimes include new features or new versions of components like MSBuild and NuGet. These new features or components may be incompatible with the versions that shipped in previous SDK updates for the same major or minor version.
 
-To differentiate such updates, the .NET SDK uses the concept of feature bands. For example, the first .NET 5 SDK was 5.0.100. This release corresponds to the 5.0.1xx *feature band*. Feature bands are defined in the hundreds groups in the third section of the version number. For example, 5.0.101 and 5.0.201 are versions in two different feature bands while 5.0.101 and 5.0.199 are in the same feature band. When .NET SDK 5.0.101 is installed, .NET SDK 5.1.100 is removed from the machine if it exists. When .NET SDK 5.0.200 is installed on the same machine, .NET SDK 5.0.101 isn't removed.
+To differentiate such updates, the .NET SDK uses the concept of feature bands. For example, the first .NET 9 SDK was 9.0.100. This release corresponds to the 9.0.1xx *feature band*. Feature bands are defined in the hundreds groups in the third section of the version number. For example, 9.0.101 and 9.0.201 are versions in two different feature bands while 9.0.101 and 9.0.199 are in the same feature band. When .NET SDK 9.0.101 is installed, .NET SDK 9.0.100 is removed from the machine if it exists. When .NET SDK 9.0.200 is installed on the same machine, .NET SDK 9.0.101 isn't removed.
 
 For more information about the relationship between .NET SDK and Visual Studio versions, see [.NET SDK, MSBuild, and Visual Studio versioning](porting/versioning-sdk-msbuild-vs.md).
 
 ### Runtime roll forward and compatibility
 
-Major and minor updates install side by side with previous versions. An application built to target a specific *major.minor* version continues to use that targeted runtime even if a newer version is installed. The app doesn't automatically roll forward to use a newer *major.minor* version of the runtime unless you opt in for this behavior. An application that was built to target .NET Core 3.0 doesn't automatically start running on .NET Core 3.1. We recommend rebuilding the app and testing against a newer major or minor runtime version before deploying to production. For more information, see [Framework-dependent apps roll forward](versions/selection.md#framework-dependent-apps-roll-forward) and [Self-contained deployment runtime roll forward](deploying/runtime-patch-selection.md).
+Major and minor updates install side by side with previous versions. An application built to target a specific *major.minor* version continues to use that targeted runtime even if a newer version is installed. The app doesn't automatically roll forward to use a newer *major.minor* version of the runtime unless you opt in for this behavior. An application that was built to target .NET 8 doesn't automatically start running on .NET 9. We recommend rebuilding the app and testing against a newer major or minor runtime version before deploying to production. For more information, see [Framework-dependent apps roll forward](versions/selection.md#framework-dependent-apps-roll-forward) and [Self-contained deployment runtime roll forward](deploying/runtime-patch-selection.md).
 
-Servicing updates are treated differently from major and minor releases. An application built to target .NET 7 runs on the 7.0.0 runtime by default. It automatically rolls forward to use a newer 7.0.1 runtime when that servicing update is installed. This behavior is the default because we want security fixes to be used as soon as they're installed without any other action needed. You can opt out from this default roll forward behavior.
+Servicing updates are treated differently from major and minor releases. An application built to target .NET 9 runs on the 9.0.0 runtime by default. It automatically rolls forward to use a newer 9.0.1 runtime when that servicing update is installed. This behavior is the default because we want security fixes to be used as soon as they're installed without any other action needed. You can opt out from this default roll forward behavior.
 
 ## .NET version lifecycles
 

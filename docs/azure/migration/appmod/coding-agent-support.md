@@ -11,8 +11,6 @@ ms.subservice: migration-copilot
 
 # Migrate .NET Apps Using GitHub Copilot App Modernization in Coding Agent
 
-## Overview
-
 This article provides an overview of how .NET developers can migrate their applications using **GitHub Copilot app modernization** within the [**Copilot Coding Agent**](https://docs.github.com/en/copilot/concepts/agents/coding-agent/about-coding-agent). The agent can work independently in the background to complete modernization tasks—just like a human developer. Developers can delegate tasks via issues or pull requests, and the agent executes them in the cloud, helping teams complete the entire modernization journey efficiently.  
 
 >[!NOTE]

@@ -12,7 +12,9 @@ The default Linux distro for .NET tags has been changed from Debian to Ubuntu. T
 - `docker pull mcr.microsoft.com/dotnet/sdk:10.0` - Refers to Ubuntu 24.04 "Noble Numbat"
 - `docker pull mcr.microsoft.com/dotnet/sdk:10.0-noble` - Refers to Ubuntu 24.04 "Noble Numbat"
 
-For more information about the container image platforms available at .NET 10's launch, see [dotnet-docker #6539](https://github.com/dotnet/dotnet-docker/discussions/6539). This change was proposed in [dotnet-docker #6526](https://github.com/dotnet/dotnet-docker/issues/6526).
+**Important**: Debian-based container images will not be shipped for .NET 10. Only Ubuntu, Alpine, Azure Linux, and Windows platforms are officially supported. If you require Debian-based images, you must build and maintain custom container images based on Debian.
+
+For more information about the container image platforms available at .NET 10's launch, see [dotnet-docker #6539](https://github.com/dotnet/dotnet-docker/discussions/6539). This change was proposed in [dotnet-docker #6526](https://github.com/dotnet/dotnet-docker/issues/6526). Community feedback regarding Debian support can be found in [dotnet-docker #6734](https://github.com/dotnet/dotnet-docker/issues/6734).
 
 ## Version introduced
 
@@ -24,7 +26,7 @@ In .NET 9 and earlier versions, default tags referenced images based on Debian.
 
 ## New behavior
 
-Starting in .NET 10, default tags reference images based on Ubuntu.
+Starting in .NET 10, default tags reference images based on Ubuntu. Additionally, Debian-based images are no longer provided as an official option.
 
 ## Type of breaking change
 
@@ -36,7 +38,9 @@ Debian and .NET release cycles (for mainline support) are the same length, while
 
 ## Recommended action
 
-Test your application. This change is unlikely to affect users.
+Test your application with Ubuntu-based images. This change is unlikely to affect most users.
+
+If you specifically require Debian-based images for .NET 10, you'll need to create and maintain custom container images. Microsoft will not provide official Debian-based images for .NET 10 or later versions.
 
 ## Affected APIs
 

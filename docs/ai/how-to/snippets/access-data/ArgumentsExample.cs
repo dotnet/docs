@@ -45,17 +45,6 @@ class ArgumentsExample
             new AzureOpenAIClient(new Uri(endpoint), new AzureKeyCredential(apiKey))
             .GetChatClient(model).AsIChatClient());
 
-        AIFunctionFactoryOptions functionFactoryOptions = new()
-        {
-            Name = "get_weather",
-            Description = "Gets the current weather",
-            AdditionalProperties = new Dictionary<string, object?>
-            {
-                { "location", "Seattle" },
-                { "units", "F" }
-            }
-        };
-
         AIFunction getWeather = AIFunctionFactory.Create(() =>
             {
                 // Access named parameters from the arguments dictionary.

@@ -1,7 +1,7 @@
 ---
-title:
-description:
-ms.date: 11/13/2025
+title: Access data in AI functions
+description: Learn how to pass data to AIFunction objects and how to access the data within the function delegate.
+ms.date: 11/17/2025
 ---
 
 # Access data in AI functions

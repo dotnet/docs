@@ -104,6 +104,7 @@ You can set the profile using the property `TestingExtensionsProfile` with one o
   * [Hot Reload](./microsoft-testing-platform-extensions-hosting.md#hot-reload)
   * [Retry](./microsoft-testing-platform-extensions-policy.md#retry)
   * [Trx Report](./microsoft-testing-platform-extensions-test-reports.md#visual-studio-test-reports)
+  * [AzureDevOpsReport](./microsoft-testing-platform-extensions-test-reports.md#azure-devops-reports)
 
 Here's a full example, using the `None` profile:
 

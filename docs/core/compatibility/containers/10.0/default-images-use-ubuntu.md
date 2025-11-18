@@ -12,9 +12,7 @@ The default Linux distro for .NET tags has been changed from Debian to Ubuntu. T
 - `docker pull mcr.microsoft.com/dotnet/sdk:10.0` - Refers to Ubuntu 24.04 "Noble Numbat"
 - `docker pull mcr.microsoft.com/dotnet/sdk:10.0-noble` - Refers to Ubuntu 24.04 "Noble Numbat"
 
-**Important**: Debian-based container images will not be shipped for .NET 10. Only Ubuntu, Alpine, Azure Linux, and Windows platforms are officially supported. If you require Debian-based images, you must build and maintain custom container images based on Debian.
-
-For more information about the container image platforms available at .NET 10's launch, see [dotnet-docker #6539](https://github.com/dotnet/dotnet-docker/discussions/6539). This change was proposed in [dotnet-docker #6526](https://github.com/dotnet/dotnet-docker/issues/6526). Community feedback regarding Debian support can be found in [dotnet-docker #6734](https://github.com/dotnet/dotnet-docker/issues/6734).
+Debian container images will not be shipped for .NET 10. For more information about the container image platforms available at .NET 10's launch, see [dotnet-docker #6539](https://github.com/dotnet/dotnet-docker/discussions/6539). This change was proposed in [dotnet-docker #6526](https://github.com/dotnet/dotnet-docker/issues/6526).
 
 ## Version introduced
 
@@ -26,7 +24,7 @@ In .NET 9 and earlier versions, default tags referenced images based on Debian.
 
 ## New behavior
 
-Starting in .NET 10, default tags reference images based on Ubuntu. Additionally, Debian-based images are no longer provided as an official option.
+Starting in .NET 10, the default container image tags reference Ubuntu images. Additionally, Debian-based images are no longer provided.
 
 ## Type of breaking change
 
@@ -40,7 +38,7 @@ Debian and .NET release cycles (for mainline support) are the same length, while
 
 Test your application with Ubuntu-based images. This change is unlikely to affect most users.
 
-If you specifically require Debian-based images for .NET 10, you'll need to create and maintain custom container images. Microsoft will not provide official Debian-based images for .NET 10 or later versions.
+If you specifically require Debian-based images for .NET 10, you may need to create and maintain custom container images. Please see [installing .NET in a Dockerfile](https://github.com/dotnet/dotnet-docker/blob/main/documentation/scenarios/installing-dotnet.md) for details on how to create your own .NET container images.
 
 ## Affected APIs
 

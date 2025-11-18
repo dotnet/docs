@@ -56,7 +56,7 @@ An interface can declare `static abstract` and `static virtual` members for all 
 > [!IMPORTANT]
 > Method dispatch for `static abstract` and `static virtual` methods declared in interfaces is resolved using the compile time type of an expression. If the runtime type of an expression is derived from a different compile time type, the static methods on the base (compile time) type are called.
 
-You can try this feature by working with the tutorial on [static abstract members in interfaces](../../whats-new/tutorials/static-virtual-interface-members.md).
+You can try this feature by working with the tutorial on [static abstract members in interfaces](../../advanced-topics/interface-implementation/static-virtual-interface-members.md).
 
 ## Interface inheritance
 

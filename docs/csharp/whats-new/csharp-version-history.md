@@ -110,11 +110,6 @@ C# 10 adds the following features and enhancements to the C# language:
 - [CallerArgumentExpression attribute](../language-reference/attributes/caller-information.md#argument-expressions)
 - C# 10 supports a new format for the `#line` pragma.
 
-More features were available in *preview* mode. In order to use these features, you must [set `<LangVersion>` to `Preview`](../language-reference/compiler-options/language.md#langversion) in your project:
-
-- [Generic attributes](./csharp-11.md#generic-attributes) later in this article.
-- [static abstract members in interfaces](./csharp-11.md#generic-math-support).
-
 C# 10 continues work on themes of removing ceremony, separating data from algorithms, and improved performance for the .NET Runtime.
 
 Many of the features mean you type less code to express the same concepts. *Record structs* synthesize many of the same methods that *record classes* do. Structs and anonymous types support *with expressions*. *Global using directives* and *file scoped namespace declarations* mean you express dependencies and namespace organization more clearly. *Lambda improvements* make it easier to declare lambda expressions where they're used. New property patterns and deconstruction improvements create more concise code.

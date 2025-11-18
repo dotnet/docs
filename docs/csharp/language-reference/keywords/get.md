@@ -1,7 +1,7 @@
 ---
 description: "The C# get keyword declares a get accessor in a property or indexer. It defines the code to retrieve the value of the property or indexed property."
 title: "The get keyword: property accessor"
-ms.date: 10/30/2024
+ms.date: 11/18/2025
 f1_keywords: 
   - "get_CSharpKeyword"
   - "get"

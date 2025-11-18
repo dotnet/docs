@@ -1,7 +1,7 @@
 ---
 description: "The `field` contextual keyword - access the compiler synthesized backing field for a property"
 title: "The `field` contextual keyword"
-ms.date: 10/30/2024
+ms.date: 11/18/2025
 f1_keywords: 
   - "field_CSharpKeyword"
 helpviewer_keywords: 

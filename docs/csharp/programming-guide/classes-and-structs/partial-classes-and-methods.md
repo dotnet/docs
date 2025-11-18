@@ -1,7 +1,7 @@
 ---
 title: "Partial Classes and Members"
 description: Partial classes and members in C# split the definition of a class, a struct, an interface, or a member over two or more source files.
-ms.date: 03/11/2025
+ms.date: 11/18/2025
 helpviewer_keywords:
   - "partial methods [C#]"
   - "partial members [C#]"

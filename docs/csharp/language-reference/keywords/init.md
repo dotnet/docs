@@ -1,7 +1,7 @@
 ---
 description: "The `init` keyword is used to declare a `set` accessor that can only be called during an object's initialization: either by a constructor or as part of an object initializer."
 title: "The init keyword - init only properties"
-ms.date: 12/06/2023
+ms.date: 11/18/2025
 f1_keywords: 
   - "init"
   - "init_CSharpKeyword"

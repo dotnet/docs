@@ -1,7 +1,7 @@
 ---
 title: "Automatically Implemented Properties"
 description: For an automatically implemented property in C#, the compiler creates a private, anonymous backing field accessed only through get and set accessors of the property.
-ms.date: 10/30/2024
+ms.date: 11/18/2025
 f1_keywords:
   - "propertyInitializer_CSharpKeyword"
 helpviewer_keywords:

@@ -110,7 +110,7 @@ helpviewer_keywords:
   - "CS9278"
   - "CS9279"
   - "CS9280"
-ms.date: 05/23/2025
+ms.date: 11/18/2025
 ---
 # Errors and warnings related to `partial` type and `partial` member declarations
 
@@ -293,7 +293,7 @@ public partial int ImplementingDeclaration { get => field; set; }
 - **CS9279**: *Partial event cannot have initializer.*
 - **CS9280**: *Only the implementing declaration of a partial constructor can have an initializer.*
 
-You've declared an initializer on the defining declaration of a partial constructor or on a partial event declaration. You must remove it.
+You declared an initializer on the defining declaration of a partial constructor or on a partial event declaration. You must remove it.
 
 ## field backed properties
 
@@ -305,4 +305,4 @@ You've declared an initializer on the defining declaration of a partial construc
 
 Beginning with C# 14, `field` backed properties allow you to access the compiler synthesized backing field for a property. **CS9258** or **CS9273** indicate that you have a variable named `field`, which can be hidden by the contextual keyword `field`.
 
-**CS9263** indicates that your declaring declaration includes an implementation. That implementation might be accessing the compiler synthesized backing field for that property. **CS9264** indicates that the your use of `field` assumes a non-nullable backing field while the property declaration is nullable. The compiler assumes both the backing field and the property have the same nullability. You need to add the `[field:MaybeNull, AllowNull]` attribute to the property declaration to indicate that the `field` value should be considered nullable. **CS9266** indicates that one of a properties accessors uses the `field` keyword, but the other uses a hand-declared backing field. The warning indicates you may have done that by accident.
+**CS9263** indicates that your declaring declaration includes an implementation. That implementation might be accessing the compiler synthesized backing field for that property. **CS9264** indicates that your use of `field` assumes a non-nullable backing field while the property declaration is nullable. The compiler assumes both the backing field and the property have the same nullability. You need to add the `[field:MaybeNull, AllowNull]` attribute to the property declaration to indicate that the `field` value should be considered nullable. **CS9266** indicates that one of a property's accessors uses the `field` keyword, but the other uses a hand-declared backing field. The warning indicates that might be a mistake.

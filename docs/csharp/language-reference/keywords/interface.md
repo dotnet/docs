@@ -1,7 +1,7 @@
 ---
 description: "Use the `interface` keyword to define contracts that any implementing type must support. Interfaces provide the means to create common behavior among a set of unrelated types."
 title: "interface keyword"
-ms.date: 07/26/2024
+ms.date: 11/18/2024
 f1_keywords:
   - "interface_CSharpKeyword"
 helpviewer_keywords:
@@ -9,11 +9,11 @@ helpviewer_keywords:
 ---
 # :::no-loc text="interface"::: (C# Reference)
 
-An interface defines a contract. Any [`class`](class.md), [`record`](../builtin-types/record.md) or [`struct`](../builtin-types/struct.md) that implements that contract must provide an implementation of the members defined in the interface.
+An interface defines a contract. Any [`class`](class.md), [`record`](../builtin-types/record.md), or [`struct`](../builtin-types/struct.md) that implements that contract must provide an implementation of the members defined in the interface.
 
 An interface can define a [default implementation](#default-interface-members) for a member. It can also define [`static`](static.md) members to provide a single implementation for common functionality.
 
-Beginning with C# 11, an interface can define `static abstract` or `static virtual` members to declare that an implementing type must provide the declared members. Typically, `static virtual` methods declare that an implementation must define a set of [overloaded operators](../operators/operator-overloading.md).
+An interface can define `static abstract` or `static virtual` members to declare that an implementing type must provide the declared members. Typically, `static virtual` methods declare that an implementation must define a set of [overloaded operators](../operators/operator-overloading.md).
 
 In the following example, class `ImplementationClass` must implement a method named `SampleMethod` that has no parameters and returns `void`.
 
@@ -23,9 +23,9 @@ For more information and examples, see [Interfaces](../../fundamentals/types/int
 
 ## Access modifiers
 
-An interface can be a member of a namespace or a class. A top-level interface, one declared in a namespace but not nested inside another type, can be declared `public` or `internal`. The default is `internal`. Nested interface declarations, those declared inside another type, can be declared using any access modifier.
+An interface can be a member of a namespace or a class. A top-level interface, one declared in a namespace but not nested inside another type, can be declared `public` or `internal`. The default is `internal`. Nested interface declarations, declared inside another type, can be declared using any access modifier.
 
-Interface members *without* an implementation (abstract members) are implicitly `public` and cannot have any other access modifier. Interface members *with* a default implementation are `private` by default if no access modifier is specified, but can be declared with any access modifier (`public`, `private`, `protected`, or `internal`).
+Interface members *without* an implementation (abstract members) are implicitly `public` and can't have any other access modifier. Interface members *with* a default implementation are `private` by default if no access modifier is specified, but can be declared with any access modifier (`public`, `private`, `protected`, or `internal`).
 
 ## Interface members
 
@@ -51,10 +51,10 @@ Member declarations typically don't contain a body, however, an interface member
 
 ## Static abstract and virtual members
 
-Beginning with C# 11, an interface can declare `static abstract` and `static virtual` members for all member types except fields. Interfaces can declare that implementing types must define operators or other static members. This feature enables generic algorithms to specify number-like behavior. You can see examples in the numeric types in the .NET runtime, such as <xref:System.Numerics.INumber%601?displayProperty=nameWithType>. These interfaces define common mathematical operators that are implemented by many numeric types. The compiler must resolve calls to `static virtual` and `static abstract` methods at compile time. The `static virtual` and `static abstract` methods declared in interfaces don't have a runtime dispatch mechanism analogous to `virtual` or `abstract` methods declared in classes. Instead, the compiler uses type information available at compile time. Therefore, `static virtual` methods are almost exclusively declared in [generic interfaces](../../programming-guide/generics/generic-interfaces.md). Furthermore, most interfaces that declare `static virtual` or `static abstract` methods declare that one of the type parameters must [implement the declared interface](../../programming-guide/generics/constraints-on-type-parameters.md#type-arguments-implement-declared-interface). For example, the `INumber<T>` interface declares that `T` must implement `INumber<T>`. The compiler uses the type argument to resolve calls to the methods and operators declared in the interface declaration. For example, the `int` type implements `INumber<int>`. When the type parameter `T` denotes the type argument `int`, the `static` members declared on `int` are invoked. Alternatively, when `double` is the type argument, the `static` members declared on the `double` type are invoked.
+An interface can declare `static abstract` and `static virtual` members for all member types except fields. Interfaces can declare that implementing types must define operators or other static members. This feature enables generic algorithms to specify number-like behavior. You can see examples in the numeric types in the .NET runtime, such as <xref:System.Numerics.INumber%601?displayProperty=nameWithType>. These interfaces define common mathematical operators implemented by many numeric types. The compiler must resolve calls to `static virtual` and `static abstract` methods at compile time. The `static virtual` and `static abstract` methods declared in interfaces don't have a runtime dispatch mechanism analogous to `virtual` or `abstract` methods declared in classes. Instead, the compiler uses type information available at compile time. Therefore, `static virtual` methods are almost exclusively declared in [generic interfaces](../../programming-guide/generics/generic-interfaces.md). Furthermore, most interfaces that declare `static virtual` or `static abstract` methods declare that one of the type parameters must [implement the declared interface](../../programming-guide/generics/constraints-on-type-parameters.md#type-arguments-implement-declared-interface). For example, the `INumber<T>` interface declares that `T` must implement `INumber<T>`. The compiler uses the type argument to resolve calls to the methods and operators declared in the interface declaration. For example, the `int` type implements `INumber<int>`. When the type parameter `T` denotes the type argument `int`, the `static` members declared on `int` are invoked. Alternatively, when `double` is the type argument, the `static` members declared on the `double` type are invoked.
 
 > [!IMPORTANT]
-> Method dispatch for `static abstract` and `static virtual` methods declared in interfaces is resolved using the compile time type of an expression. If the runtime type of an expression is derived from a different compile time type, the static methods on the base (compile time) type will be called.
+> Method dispatch for `static abstract` and `static virtual` methods declared in interfaces is resolved using the compile time type of an expression. If the runtime type of an expression is derived from a different compile time type, the static methods on the base (compile time) type are called.
 
 You can try this feature by working with the tutorial on [static abstract members in interfaces](../../whats-new/tutorials/static-virtual-interface-members.md).
 
@@ -69,7 +69,7 @@ public interface INamed
 }
 ```
 
-An interface can inherit from one or more base interfaces. When an interface inherits from another interface, a type implementing the derived interface must implement all the members in the base interfaces as well as those declared in the derived interface, as shown in the following code:
+An interface can inherit from one or more base interfaces. When an interface inherits from another interface, a type implementing the derived interface must implement all the members in the base interfaces in addition to those members declared in the derived interface, as shown in the following code:
 
 :::code language="csharp" source="./snippets/DefineTypes.cs" id="SnippetDerivedInterfaces":::
 
@@ -89,7 +89,7 @@ The following example demonstrates interface implementation. In this example, th
 
 ## C# language specification
 
-For more information, see the [Interfaces](~/_csharpstandard/standard/interfaces.md) section of the [C# language specification](~/_csharpstandard/standard/README.md) and the feature spec for [C# 11 - static abstract members in interfaces](~/_csharplang/proposals/csharp-11.0/static-abstracts-in-interfaces.md).
+For more information, see the [Interfaces](~/_csharpstandard/standard/interfaces.md) section of the [C# language specification](~/_csharpstandard/standard/README.md) and the feature spec for [static abstract members in interfaces](~/_csharplang/proposals/csharp-11.0/static-abstracts-in-interfaces.md).
 
 ## See also
 

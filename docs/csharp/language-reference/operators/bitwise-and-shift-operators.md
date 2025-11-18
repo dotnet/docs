@@ -1,7 +1,7 @@
 ---
 title: "Bitwise and shift operators - perform boolean (AND, NOT, OR, XOR) and shift operations on individual bits in integral types"
 description: "Learn about C# operators that perform bitwise logical (AND - `&`, NOT - `~`, OR - `|`, XOR - `^`) or shift operations(`<<`, and `>>`) with operands of integral types. "
-ms.date: 06/11/2025
+ms.date: 11/18/2025
 author: pkulikov
 f1_keywords: 
   - "~_CSharpKeyword"
@@ -89,11 +89,11 @@ The high-order empty bit positions are set based on the type of the left-hand op
   :::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/BitwiseAndShiftOperators.cs" id="LogicalRightShift":::
 
 > [!NOTE]
-> Use the [unsigned right-shift operator](#unsigned-right-shift-operator-) to perform a *logical* shift on operands of signed integer types. The logical shift is preferred to casting a left-hand operand to an unsigned type and then casting the result of a shift operation back to a signed type.
+> Use the [unsigned right-shift operator](#unsigned-right-shift-operator-) to perform a *logical* shift on operands of signed integer types. The logical shift is preferred. Avoid casting the left-hand operand to an unsigned type and then casting the result of a shift operation back to a signed type.
 
 ## Unsigned right-shift operator >>>
 
-Available in C# 11 and later, the `>>>` operator shifts its left-hand operand right by the number of bits defined by its right-hand operand. For information about how the right-hand operand defines the shift count, see the [Shift count of the shift operators](#shift-count-of-the-shift-operators) section.
+The `>>>` operator shifts its left-hand operand right by the number of bits defined by its right-hand operand. For information about how the right-hand operand defines the shift count, see the [Shift count of the shift operators](#shift-count-of-the-shift-operators) section.
 
 The `>>>` operator always performs a *logical* shift. That is, the high-order empty bit positions are always set to zero, regardless of the type of the left-hand operand. The [`>>` operator](#right-shift-operator-) performs an *arithmetic* shift (that is, the value of the most significant bit is propagated to the high-order empty bit positions) if the left-hand operand is of a signed type. The following example demonstrates the difference between `>>` and `>>>` operators for a negative left-hand operand:
 
@@ -188,7 +188,7 @@ You typically use bitwise logical operators with an enumeration type that is def
 
 A user-defined type can [overload](operator-overloading.md) the `~`, `<<`, `>>`, `>>>`, `&`, `|`, and `^` operators. When a binary operator is overloaded, the corresponding compound assignment operator is also implicitly overloaded. Beginning with C# 14, a user-defined type can explicitly overload the compound assignment operators to provide a more efficient implementation. Typically, a type overloads these operators because the value can be updated in place, rather than allocating a new instance to store the result of the binary operation. If a type doesn't provide an explicit overload, the compiler generates the implicit overload.
 
-If a user-defined type `T` overloads the `<<`, `>>`, or `>>>` operator, the type of the left-hand operand must be `T`. In C# 10 and earlier, the type of the right-hand operand must be `int`; beginning with C# 11, the type of the right-hand operand of an overloaded shift operator can be any.
+If a user-defined type `T` overloads the `<<`, `>>`, or `>>>` operator, the type of the left-hand operand must be `T`. In C# 10 and earlier, the type of the right-hand operand must be `int`; the type of the right-hand operand of an overloaded shift operator can be any.
 
 ## C# language specification
 
@@ -199,8 +199,8 @@ For more information, see the following sections of the [C# language specificati
 - [Logical operators](~/_csharpstandard/standard/expressions.md#1215-logical-operators)
 - [Compound assignment](~/_csharpstandard/standard/expressions.md#12234-compound-assignment)
 - [Numeric promotions](~/_csharpstandard/standard/expressions.md#1247-numeric-promotions)
-- [C# 11 - Relaxed shift requirements](~/_csharplang/proposals/csharp-11.0/relaxing_shift_operator_requirements.md)
-- [C# 11 - Logical right-shift operator](~/_csharplang/proposals/csharp-11.0/unsigned-right-shift-operator.md)
+- [Relaxed shift requirements](~/_csharplang/proposals/csharp-11.0/relaxing_shift_operator_requirements.md)
+- [Logical right-shift operator](~/_csharplang/proposals/csharp-11.0/unsigned-right-shift-operator.md)
 - [User defined compound assignment](~/_csharplang/proposals/csharp-14.0/user-defined-compound-assignment.md)
 
 ## See also

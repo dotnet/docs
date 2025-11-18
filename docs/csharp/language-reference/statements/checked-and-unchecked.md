@@ -1,7 +1,7 @@
 ---
 title: "The checked and unchecked statements - overflow-checking"
 description: "Control the overflow-checking context. In a checked context, overflow causes an exception to be thrown. In an unchecked context, the result is truncated."
-ms.date: 10/29/2022
+ms.date: 11/18/2025
 f1_keywords: 
   - "checked_CSharpKeyword"
   - "unchecked_CSharpKeyword"
@@ -52,7 +52,7 @@ The overflow-checking context affects the following operations:
   > [!NOTE]
   > When you convert a `decimal` value to an integral type and the result is outside the range of the destination type, an <xref:System.OverflowException> is always thrown, regardless of the overflow-checking context.
 
-- Beginning with C# 11, user-defined checked operators and conversions. For more information, see the [User-defined checked operators](../operators/arithmetic-operators.md#user-defined-checked-operators) section of the [Arithmetic operators](../operators/arithmetic-operators.md) article.
+- User-defined checked operators and conversions. For more information, see the [User-defined checked operators](../operators/arithmetic-operators.md#user-defined-checked-operators) section of the [Arithmetic operators](../operators/arithmetic-operators.md) article.
 
 ## Default overflow-checking context
 
@@ -66,7 +66,7 @@ For more information, see the following sections of the [C# language specificati
 
 - [The checked and unchecked statements](~/_csharpstandard/standard/statements.md#1312-the-checked-and-unchecked-statements)
 - [The checked and unchecked operators](~/_csharpstandard/standard/expressions.md#12820-the-checked-and-unchecked-operators)
-- [User-defined checked and unchecked operators - C# 11](~/_csharplang/proposals/csharp-11.0/checked-user-defined-operators.md)
+- [User-defined checked and unchecked operators](~/_csharplang/proposals/csharp-11.0/checked-user-defined-operators.md)
 
 ## See also
 

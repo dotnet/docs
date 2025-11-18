@@ -1,7 +1,7 @@
 ---
 title: "Properties"
 description: A property in C# is a member that uses accessor methods to read, write, or compute the value of a private field as if it were a public data member.
-ms.date: 10/30/2024
+ms.date: 11/18/2025
 f1_keywords:
   - "cs.properties"
 helpviewer_keywords:
@@ -36,7 +36,7 @@ In C# 13, you can add validation or other logic in the accessor for a property u
 
 ## Required properties
 
-The preceding example allows a caller to create a `Person` using the default constructor, without setting the `FirstName` property. The property changed type to a *nullable* string. Beginning in C# 11, you can *require* callers to set a property:
+The preceding example allows a caller to create a `Person` using the default constructor, without setting the `FirstName` property. The property changed type to a *nullable* string. You can *require* callers to set a property:
 
 :::code language="csharp" source="./snippets/properties/Person.cs" id="Required":::
 

@@ -1,7 +1,7 @@
 ---
 title: "Arithmetic operators"
 description: "Learn about C# operators that perform multiplication, division, remainder, addition, and subtraction operations with numeric types."
-ms.date: 06/11/2025
+ms.date: 11/18/2025
 author: pkulikov
 f1_keywords: 
   - "++_CSharpKeyword"
@@ -133,7 +133,7 @@ Use the <xref:System.Math.DivRem%2A?displayProperty=nameWithType> method to comp
 For the `float` and `double` operands, the result of `x % y` for the finite `x` and `y` is the value `z` such that
 
 - The sign of `z`, if non-zero, is the same as the sign of `x`.
-- The absolute value of `z` is the value produced by `|x| - n * |y|` where `n` is the largest possible integer that is less than or equal to `|x| / |y|` and `|x|` and `|y|` are the absolute values of `x` and `y`, respectively.
+- The absolute value of `z` is the value produced by `|x| - n * |y|` where `n` is the largest possible integer that's less than or equal to `|x| / |y|` and `|x|` and `|y|` are the absolute values of `x` and `y`, respectively.
 
 > [!NOTE]
 > This method of computing the remainder is analogous to the method used for integer operands, but different from the IEEE 754 specification. If you need the remainder operation that complies with the IEEE 754 specification, use the <xref:System.Math.IEEERemainder%2A?displayProperty=nameWithType> method.
@@ -251,13 +251,13 @@ A user-defined type can [overload](operator-overloading.md) the unary (`++`, `--
 
 ### User-defined checked operators
 
-Beginning with C# 11, when you overload an arithmetic operator, you can use the `checked` keyword to define the *checked* version of that operator. The following example shows how to do that:
+When you overload an arithmetic operator, you can use the `checked` keyword to define the *checked* version of that operator. The following example shows how to do that:
 
 :::code language="csharp" source="snippets/shared/ArithmeticOperators.cs" id="CheckedOperator":::
 
-When you define a checked operator, you must also define the corresponding operator without the `checked` modifier. The checked operator is called in a [checked context](../statements/checked-and-unchecked.md); the operator without the `checked` modifier is called in an [unchecked context](../statements/checked-and-unchecked.md). If you only provide the operator without the `checked` modifier, it's called in both a `checked` and `unchecked` context.
+When you define a checked operator, you must also define the corresponding operator without the `checked` modifier. The checked operator is called in a [checked context](../statements/checked-and-unchecked.md); the operator without the `checked` modifier is called in an [unchecked context](../statements/checked-and-unchecked.md).
 
-When you define both versions of an operator, it's expected that their behavior differs only when the result of an operation is too large to represent in the result type as follows:
+When you define both versions of an operator, their behavior differs only when the result of an operation is too large to represent in the result type as follows:
 
 - A checked operator throws an <xref:System.OverflowException>.
 - An operator without the `checked` modifier returns an instance representing a *truncated* result.
@@ -272,7 +272,7 @@ You can use the `checked` modifier only when you overload any of the following o
 - [Explicit conversion operators](user-defined-conversion-operators.md)
 
 > [!NOTE]
-> The overflow-checking context within the body of a checked operator isn't affected by the presence of the `checked` modifier. The default context is defined by the value of the [**CheckForOverflowUnderflow**](../compiler-options/language.md#checkforoverflowunderflow) compiler option. Use the [`checked` and `unchecked` statements](../statements/checked-and-unchecked.md) to explicitly specify the overflow-checking context, as the example at the beginning of this section demonstrates.
+> The presence of the `checked` modifier doesn't affect the overflow-checking context within its body. The default context is defined by the value of the [**CheckForOverflowUnderflow**](../compiler-options/language.md#checkforoverflowunderflow) compiler option. Use the [`checked` and `unchecked` statements](../statements/checked-and-unchecked.md) to explicitly specify the overflow-checking context, as the example at the beginning of this section demonstrates.
 
 ## C# language specification
 

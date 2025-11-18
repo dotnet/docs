@@ -1,2 +1,2 @@
-﻿//await ArgumentsExample.RunManual();
+﻿await ArgumentsExample.RunManual();
 await ArgumentsExample.UseFICC();

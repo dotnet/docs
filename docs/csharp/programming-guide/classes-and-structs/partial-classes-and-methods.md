@@ -1,7 +1,7 @@
 ---
 title: "Partial Classes and Members"
 description: Partial classes and members in C# split the definition of a class, a struct, an interface, or a member over two or more source files.
-ms.date: 03/11/2025
+ms.date: 11/18/2025
 helpviewer_keywords:
   - "partial methods [C#]"
   - "partial members [C#]"
@@ -122,8 +122,6 @@ Beginning with C# 13, the implementing declaration for a partial property can us
 :::code language="csharp" source="snippets/partial-classes-and-methods/Program.cs" id="FieldProperty":::
 
 You can use `field` in either the `get` or `set` accessor, or both.
-
-[!INCLUDE[field-preview](../../includes/field-preview.md)]
 
 Partial members enable the implementer of one part of a class to declare a member. The implementer of another part of the class can define that member. There are two scenarios where this separation is useful: templates that generate boilerplate code, and source generators.
 

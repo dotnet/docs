@@ -1,7 +1,7 @@
 ---
 title: "Properties"
 description: A property in C# is a member that uses accessor methods to read, write, or compute the value of a private field as if it were a public data member.
-ms.date: 10/30/2024
+ms.date: 11/18/2025
 f1_keywords:
   - "cs.properties"
 helpviewer_keywords:
@@ -28,11 +28,9 @@ You can initialize a property to a value other than the default by setting a val
 
 ## Field backed properties
 
-In C# 13, you can add validation or other logic in the accessor for a property using the [`field`](../../language-reference/keywords/field.md) keyword preview feature. The `field` keyword accesses the compiler synthesized backing field for a property. It enables you to write a property accessor without explicitly declaring a separate backing field.
+In C# 14, you can add validation or other logic in the accessor for a property using the [`field`](../../language-reference/keywords/field.md) keyword. The `field` keyword accesses the compiler synthesized backing field for a property. It enables you to write a property accessor without explicitly declaring a separate backing field.
 
 :::code language="csharp" source="./snippets/properties/Person.cs" id="FieldBackedProperty":::
-
-[!INCLUDE[field-preview](../../includes/field-preview.md)]
 
 ## Required properties
 

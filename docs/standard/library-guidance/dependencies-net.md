@@ -36,7 +36,7 @@ Reference the latest supported version of the dependency across all target frame
 
 - Simplifies decision-making and aligns with stability expectations.
 - Reduces complexity in dependency management.
-- Encourages modernization and access to new features.
+- Encourages modernization and enables access to new features.
 
 **Cons**
 

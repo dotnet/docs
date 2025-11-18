@@ -128,7 +128,7 @@ Here's a full example, using the `None` profile:
 | [Hot Reload](https://www.nuget.org/packages/Microsoft.Testing.Extensions.HotReload)               |       |                    | :heavy_check_mark:  |
 | [Retry](https://www.nuget.org/packages/Microsoft.Testing.Extensions.Retry)                        |       |                    | :heavy_check_mark:  |
 | [Trx](https://www.nuget.org/packages/Microsoft.Testing.Extensions.TrxReport)                      |       | :heavy_check_mark: | :heavy_check_mark:  |
-| [AzureDevOpsReport](./microsoft-testing-platform-extensions-test-reports.md#azure-devops-reports) |       | :heavy_check_mark: | :heavy_check_mark:  |
+| [AzureDevOpsReport](./microsoft-testing-platform-extensions-test-reports.md#azure-devops-reports) |       |                    | :heavy_check_mark:  |
 
 † MSTest.Sdk 3.7.0+
 

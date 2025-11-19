@@ -31,7 +31,7 @@ The code you write for this sample expresses that intent, and the compiler enfor
 
 ## Create the application and enable nullable reference types
 
-Create a new console application either in Visual Studio or from the command line using `dotnet new console`. Name the application `NullableIntroduction`. Once you created the application, you need to specify that the entire project compiles in an enabled **nullable annotation context**. Open the *.csproj* file and add a `Nullable` element to the `PropertyGroup` element. Set its value to `enable`. You must opt in to the **nullable reference types** feature in projects created before C# 11 / .NET 7. Once the feature is turned on, existing reference variable declarations become **non-nullable reference types**. While that decision helps find issues where existing code might not have proper null-checks, it might not accurately reflect your original design intent:
+Create a new console application either in Visual Studio or from the command line using `dotnet new console`. Name the application `NullableIntroduction`. Once you create the application, you need to specify that the entire project compiles in an enabled **nullable annotation context**. Open the *.csproj* file and add a `Nullable` element to the `PropertyGroup` element. Set its value to `enable`. You must opt in to the **nullable reference types** feature in projects created before C# 11 / .NET 7. Once the feature is turned on, existing reference variable declarations become **non-nullable reference types**. While that decision helps find issues where existing code might not have proper null-checks, it might not accurately reflect your original design intent:
 
 ```xml
 <Nullable>enable</Nullable>

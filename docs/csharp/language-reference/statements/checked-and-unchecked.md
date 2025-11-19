@@ -52,7 +52,7 @@ The overflow-checking context affects the following operations:
   > [!NOTE]
   > When you convert a `decimal` value to an integral type and the result is outside the range of the destination type, an <xref:System.OverflowException> is always thrown, regardless of the overflow-checking context.
 
-- User-defined checked operators and conversions. For more information, see the [User-defined checked operators](../operators/arithmetic-operators.md#user-defined-checked-operators) section of the [Arithmetic operators](../operators/arithmetic-operators.md) article.
+- You can use user-defined checked operators and conversions. For more information, see the [User-defined checked operators](../operators/arithmetic-operators.md#user-defined-checked-operators) section of the [Arithmetic operators](../operators/arithmetic-operators.md) article.
 
 ## Default overflow-checking context
 

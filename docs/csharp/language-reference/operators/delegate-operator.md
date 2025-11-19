@@ -1,7 +1,7 @@
 ---
 title: "delegate operator - Create an anonymous method that can be converted to a delegate type."
 description: "The C# delegate operator that is used to create anonymous methods. These types can be used for `Func<>` and `Action<>` parameters in many .NET APIs."
-ms.date: 11/18/2022
+ms.date: 11/18/2025
 helpviewer_keywords:
   - "delegate [C#]"
   - "anonymous method [C#]"

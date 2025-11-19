@@ -55,8 +55,6 @@ items:
                 displayName: tutorials, cli
               - name: Generate unit tests with GitHub Copilot
                 href: ../../core/testing/unit-testing-with-copilot.md
-              - name: Mutation testing
-                href: ../../core/testing/mutation-testing.md
           - name: NUnit
             items:
               - name: C# unit testing
@@ -301,6 +299,8 @@ items:
         href: ../../core/testing/order-unit-tests.md
       - name: Unit test code coverage
         href: ../../core/testing/unit-testing-code-coverage.md
+      - name: Mutation testing
+        href: ../../core/testing/mutation-testing.md
       - name: Live unit test with Visual Studio
         href: /visualstudio/test/live-unit-testing-start?toc=/dotnet/navigate/devops-testing/toc.json&bc=/dotnet/breadcrumb/toc.json
   - name: Publishing

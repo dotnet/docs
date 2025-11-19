@@ -66,6 +66,24 @@ AAAAAAAAAA
 
 This small example demonstrates the motivation for this feature. You can use natural syntax for operators, constant values, and other static operations. You can explore these techniques when you create multiple types that rely on static members, including overloaded operators. Define the interfaces that match your types' capabilities and then declare those types' support for the new interface.
 
+## Static virtual interface methods
+
+You can also provide a default implementation for static methods defined in an interface. This is done with the syntax of `static` and `virtual` modifiers added to any member that should be implemented in the type implementing that interface. The following example defines the `ISingleton<T>` interface, providing any type with a constraint that a type will implement the unique `Instance` field:
+
+:::code language="csharp" source="./snippets/staticinterfaces/Singleton.cs":::
+
+Because virtual methods aren't abstract, they must declare their body. In this case the body is the implementation of `get` and `set` of the unique `Instance` that a singleton will share.
+
+The next snippet creates a class that implements the `ISingleton<T>` interface. This `UniqueInstance` class does not override the behavior of `PrintMessage()` method, but relies on it's original definition:
+
+:::code language="csharp" source="./snippets/staticinterfaces/UniqueInstance.cs":::
+
+You can use this `UniqueInstance` type by calling the `PrintMessage()` method:
+
+:::code language="csharp" source="./snippets/staticinterfaces/Program.cs" id="TestUniqueInstance":::
+
+which will print the message defined in the `ISingleton` interface.
+
 ## Generic math
 
 The motivating scenario for allowing static methods, including operators, in interfaces is to support [generic math](../../../standard/generics/math.md) algorithms. The .NET 7 base class library contains interface definitions for many arithmetic operators, and derived interfaces that combine many arithmetic operators in an `INumber<T>` interface. Let's apply those types to build a `Point<T>` record that can use any numeric type for `T`. The point can be moved by some `XOffset` and `YOffset` using the `+` operator.

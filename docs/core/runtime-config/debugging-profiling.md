@@ -9,6 +9,8 @@ This article details the settings you can use to configure .NET debugging and pr
 
 [!INCLUDE [complus-prefix](../../../includes/complus-prefix.md)]
 
+[!INCLUDE [coreclr-prefix](../../../includes/coreclr-prefix.md)]
+
 ## Enable diagnostics
 
 - Configures whether the debugger, the profiler, and EventPipe diagnostics are enabled or disabled.
@@ -27,7 +29,7 @@ This article details the settings you can use to configure .NET debugging and pr
 | | Setting name | Values |
 | - | - | - |
 | **runtimeconfig.json** | N/A | N/A |
-| **Environment variable** | `CORECLR_ENABLE_PROFILING` | `0` - disabled<br/>`1` - enabled |
+| **Environment variable** | `CORECLR_ENABLE_PROFILING` or `DOTNET_ENABLE_PROFILING` | `0` - disabled<br/>`1` - enabled |
 
 ## Profiler GUID
 
@@ -36,19 +38,29 @@ This article details the settings you can use to configure .NET debugging and pr
 | | Setting name | Values |
 | - | - | - |
 | **runtimeconfig.json** | N/A | N/A |
-| **Environment variable** | `CORECLR_PROFILER` | *string-guid* |
+| **Environment variable** | `CORECLR_PROFILER` or `DOTNET_PROFILER` | *string-guid* |
 
 ## Profiler location
+Once profiling is enabled, the profiler can be loaded in two ways, with environment variables (cross-plat) or through the registry (Windows only).
 
+### Environment Variable (cross-plat)
 - Specifies the path to the profiler DLL to load into the currently running process (or 32-bit or 64-bit process).
 - If more than one variable is set, the bitness-specific variables take precedence. They specify which bitness of profiler to load.
-- For more information, see [Finding the profiler library](https://github.com/dotnet/runtime/blob/main/docs/design/coreclr/profiling/Profiler%20Loading.md).
+- If any of these environment variables are present, the registry look up is skipped altogether, and the path from `DOTNET_PROFILER_PATH` is used to load the DLL.
+- When `DOTNET_PROFILER_PATH` is specified _and_ the profiler is registered, `DOTNET_PROFILER_PATH` always takes precedence. Even if `DOTNET_PROFILER_PATH` points to an invalid path, the runtime still uses `DOTNET_PROFILER_PATH`, and fails to load the profiler.
+- `DOTNET_PROFILER` is _always required_. When `DOTNET_PROFILER_PATH` is specified, the registry look up is skipped. The runtime still needs the profiler's CLSID (GUID) to pass it to the class factory's CreateInstance call.
+
 
 | | Setting name | Values |
 | - | - | - |
-| **Environment variable** | `CORECLR_PROFILER_PATH` | *string-path* |
-| **Environment variable** | `CORECLR_PROFILER_PATH_32` | *string-path* |
-| **Environment variable** | `CORECLR_PROFILER_PATH_64` | *string-path* |
+| **Environment variable** | `CORECLR_PROFILER_PATH`       or `DOTNET_PROFILER_PATH`       | *string-path* |
+| **Environment variable** | `CORECLR_PROFILER_PATH_32`    or `DOTNET_PROFILER_PATH_32`    | *string-path* |
+| **Environment variable** | `CORECLR_PROFILER_PATH_64`    or `DOTNET_PROFILER_PATH_64`    | *string-path* |
+| **Environment variable** | `CORECLR_PROFILER_PATH_ARM32` or `DOTNET_PROFILER_PATH_ARM32` | *string-path* |
+| **Environment variable** | `CORECLR_PROFILER_PATH_ARM64` or `DOTNET_PROFILER_PATH_ARM64` | *string-path* |
+
+### Through the registry (Windows Only)
+When the `DOTNET_PROFILER_PATH*` environment variables above are not set while running on Windows, coreclr looks up the CLSID from `DOTNET_PROFILER` in the registry to find the full path to the profiler's DLL. Just like with any COM server DLL, the profiler's CLSID is looked up under HKEY_CLASSES_ROOT, which merges the classes from HKLM and HKCU.
 
 ## Export perf maps and jit dumps
 

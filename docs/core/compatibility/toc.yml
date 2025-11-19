@@ -108,6 +108,8 @@ items:
                 href: install-tool/3.0.0/vscode-dotnet-acquire-no-latest.md
           - name: Interop
             items:
+              - name: Casting IDispatchEx COM object to IReflect fails
+                href: interop/10.0/idispatchex-ireflect-cast.md
               - name: Single-file apps no longer look for native libraries in executable directory
                 href: interop/10.0/native-library-search.md
               - name: Specifying DllImportSearchPath.AssemblyDirectory only searches the assembly directory

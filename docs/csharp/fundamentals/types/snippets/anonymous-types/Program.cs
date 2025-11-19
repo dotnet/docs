@@ -38,13 +38,13 @@ namespace anonymous_types
         static void TupleExamples()
         {
             // <TupleExample>
-            // Anonymous type example.
-            var anonymousProduct = new { Name = "Widget", Price = 19.99M };
-            Console.WriteLine($"Anonymous: {anonymousProduct.Name} costs ${anonymousProduct.Price}");
-
-            // Equivalent using a tuple with named elements.
+            // Tuple with named elements.
             var tupleProduct = (Name: "Widget", Price: 19.99M);
             Console.WriteLine($"Tuple: {tupleProduct.Name} costs ${tupleProduct.Price}");
+
+            // Equivalent example using anonymous types.
+            var anonymousProduct = new { Name = "Widget", Price = 19.99M };
+            Console.WriteLine($"Anonymous: {anonymousProduct.Name} costs ${anonymousProduct.Price}");
             // </TupleExample>
         }
 

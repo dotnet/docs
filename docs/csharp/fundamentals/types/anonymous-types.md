@@ -1,7 +1,7 @@
 ---
-title: "Anonymous Types and Tuples"
-description: Anonymous types in C# encapsulate a set of read-only properties in an object without having to explicitly define a type. The compiler generates a name.
-ms.date: 11/06/2025
+title: "Tuples and Anonymous Types"
+description: Tuples in C# provide a lightweight data structure for multiple members in a single structure. Tuples don't have names, but provide structure for multiple members. Anonymous types in C# encapsulate a set of read-only properties in an object without having to explicitly define a type. The compiler generates a name.
+ms.date: 11/19/2025
 f1_keywords:
   - "anonymousObject_CSharpKeyword"
 helpviewer_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
   - "C# Language, anonymous types"
 ai-usage: ai-assisted
 ---
-# Anonymous types and tuples
+# Tuples and anonymous types
 
-Anonymous types provide a convenient way to encapsulate a set of read-only properties into a single object without having to explicitly define a type first. The compiler generates the type name, and it's not available at the source code level. The compiler infers the type of each property.
+[Tuples](../../language-reference/builtin-types/value-tuples.md) provide a lightweight data structure for multiple members in a single structure. They are the preferred choice over anonymous types. Tuples provide better performance, support deconstruction, and offer more flexible syntax.
 
-In most scenarios, [tuples](../../language-reference/builtin-types/value-tuples.md) are the preferred choice over anonymous types. Tuples provide better performance, support deconstruction, and offer more flexible syntax. Use anonymous types primarily when you need expression tree support or when working with code that requires reference types.
+Anonymous types provide a convenient way to encapsulate a set of read-only properties into a single object without having to explicitly define a type first. The compiler generates the type name, and it's not available at the source code level. The compiler infers the type of each property. Use anonymous types primarily when you need expression tree support or when working with code that requires reference types.
 
-## Anonymous types vs tuples
+## Tuples vs anonymous types
 
-Both anonymous types and tuples let you group multiple values without defining a named type. However, tuples have better language support and compile to a more efficient data structure. The following table summarizes the key differences:
+Both tuples and anonymous types let you group multiple values without defining a named type. However, tuples have better language support and compile to a more efficient data structure. The following table summarizes the key differences:
 
 | Feature | Anonymous types | Tuples |
 |---------|----------------|--------|
@@ -56,7 +56,9 @@ Deconstruction is useful in loops and pattern matching scenarios:
 
 ### Tuples as a method return type
 
-A common use case for tuples is as a method return type. Instead of defining `out` parameters, you can group method results in a tuple. The following example demonstrates using tuples with dictionary lookups to return configuration ranges:
+A common use case for tuples is as a method return type. Instead of defining `out` parameters, you can group method results in a tuple. You can't return an anonymous type from a method, because it doesn't have a name, and the return type can't be declared.
+
+The following example demonstrates using tuples with dictionary lookups to return configuration ranges:
 
 :::code language="csharp" source="snippets/anonymous-types/Program.cs" ID="DictionaryTupleExample":::
 
@@ -68,7 +70,6 @@ Use anonymous types when:
 
 - You're working with expression trees (for example, in some Microsoft Language-Integrated Query (LINQ) providers).
 - You need the object to be a reference type.
-- You're projecting query results in LINQ and want named properties without defining a class.
 
 The most common scenario is to initialize an anonymous type with properties from another type. In the following example, assume that a class exists that is named `Product`. Class `Product` includes `Color` and `Price` properties, together with other properties that you aren't interested in:
 

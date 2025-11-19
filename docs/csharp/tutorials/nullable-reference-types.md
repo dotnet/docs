@@ -98,7 +98,7 @@ namespace NullableIntroduction
 }
 ```
 
-Because you didn't initialized `QuestionText`, the compiler issues a warning that a non-nullable property wasn't initialized. Your design requires the question text to be non-null, so you add a constructor to initialize it and the `QuestionType` value as well. The finished class definition looks like the following code:
+Because you didn't initialize `QuestionText`, the compiler issues a warning that a non-nullable property wasn't initialized. Your design requires the question text to be non-null, so you add a constructor to initialize it and the `QuestionType` value as well. The finished class definition looks like the following code:
 
 :::code language="csharp" source="./snippets/NullableIntroduction/SurveyQuestion.cs":::
 

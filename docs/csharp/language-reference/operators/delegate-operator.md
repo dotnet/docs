@@ -49,12 +49,6 @@ When you assign the method group to a delegate, the compiler caches the delegate
 Action a = StaticFunction;
 ```
 
-You'd need to use a lambda expression to reuse a single delegate object:
-
-```csharp
-Action a = () => StaticFunction();
-```
-
 ## C# language specification
 
 For more information, see the [Anonymous function expressions](~/_csharpstandard/standard/expressions.md#1221-anonymous-function-expressions) section of the [C# language specification](~/_csharpstandard/standard/README.md).

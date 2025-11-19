@@ -118,9 +118,9 @@ The `Aspire.Azure.AI.OpenAI` package provides extension methods to register Azur
 
 1. Configure the Azure OpenAI client and image generator in your `Program.cs` file:
 
-   :::code language="csharp" source="snippets/text-to-image/hosting/TextToImageHosting/Program.cs" id="SnippetSetup":::
+   :::code language="csharp" source="snippets/text-to-image/hosting/Program.cs" id="SnippetSetup":::
 
-   The `AddAzureOpenAIClient` method registers the Azure OpenAI client with dependency injection. The connection string (named `"openai"`) is retrieved from configuration, typically from `appsettings.json` or environment variables:
+   The <xref:Microsoft.Extensions.Hosting.AspireAzureOpenAIExtensions.AddAzureOpenAIClient(Microsoft.Extensions.Hosting.IHostApplicationBuilder,System.String,System.Action{Aspire.Azure.AI.OpenAI.AzureOpenAISettings},System.Action{Azure.Core.Extensions.IAzureClientBuilder{Azure.AI.OpenAI.AzureOpenAIClient,Azure.AI.OpenAI.AzureOpenAIClientOptions}})> method registers the Azure OpenAI client with dependency injection. The connection string (named `"openai"`) is retrieved from configuration, typically from `appsettings.json` or environment variables:
 
    ```json
    {
@@ -130,17 +130,17 @@ The `Aspire.Azure.AI.OpenAI` package provides extension methods to register Azur
    }
    ```
 
-1. Register the `IImageGenerator` service with dependency injection:
+1. Register the <xref:Microsoft.Extensions.AI.IImageGenerator> service with dependency injection:
 
-   :::code language="csharp" source="snippets/text-to-image/hosting/TextToImageHosting/Program.cs" id="SnippetAddImageGenerator":::
+   :::code language="csharp" source="snippets/text-to-image/hosting/Program.cs" id="SnippetAddImageGenerator":::
 
-   The `AddImageGenerator` method registers the image generator as a singleton service that can be injected into controllers, services, or minimal API endpoints.
+   The <xref:Microsoft.Extensions.DependencyInjection.ImageGeneratorBuilderServiceCollectionExtensions.AddImageGenerator*> method registers the image generator as a singleton service that can be injected into controllers, services, or minimal API endpoints.
 
 ### Use the image generator in endpoints
 
 Once registered, you can inject `IImageGenerator` into your endpoints or services:
 
-:::code language="csharp" source="snippets/text-to-image/hosting/TextToImageHosting/Program.cs" id="SnippetUseImageGenerator":::
+:::code language="csharp" source="snippets/text-to-image/hosting/Program.cs" id="SnippetUseImageGenerator":::
 
 This hosting approach provides several benefits:
 

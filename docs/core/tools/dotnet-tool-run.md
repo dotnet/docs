@@ -1,11 +1,11 @@
 ---
 title: dotnet tool run command
 description: The dotnet tool run command invokes a local tool.
-ms.date: 02/14/2020
+ms.date: 10/28/2025
 ---
 # dotnet tool run
 
-**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
+**This article applies to:** ✔️ .NET 6 SDK and later versions
 
 ## Name
 

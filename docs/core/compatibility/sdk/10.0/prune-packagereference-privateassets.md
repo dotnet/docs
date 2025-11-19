@@ -11,11 +11,11 @@ The [PrunePackageReference](/nuget/consume-packages/package-references-in-projec
 
 ## Version introduced
 
-.NET 10 Preview 7
+.NET 10
 
 ## Previous behavior
 
-Starting in .NET 10 Preview 1, if pruning was enabled, directly prunable `PackageReference` items might have generated an [`NU1510` warning](/nuget/reference/errors-and-warnings/nu1510) but still appeared in the generated *.nuspec* dependencies list, even if the package was provided by the platform.
+Previously, if pruning was enabled, directly prunable `PackageReference` items still appeared in the generated *.nuspec* dependencies list, even if the package was provided by the platform. (And if your project targeted .NET 10, they might have generated a [`NU1510` warning](/nuget/reference/errors-and-warnings/nu1510).)
 
 For example, consider a multi-targeting project with the following configuration:
 
@@ -44,7 +44,7 @@ Such a project file generated a *.nuspec* file with dependencies for both target
 
 ## New behavior
 
-Starting in .NET 10 Preview 7, when pruning is enabled, directly prunable `PackageReference` items are automatically marked with `PrivateAssets=all` and `IncludeAssets=none`, which excludes them from the generated dependencies for target frameworks where they're provided by the platform. (However, if your project targets .NET 10 or later, you'll still get the `NU1510` warning until you remove the reference from your project.)
+Starting in .NET 10, when pruning is enabled, directly prunable `PackageReference` items are automatically marked with `PrivateAssets=all` and `IncludeAssets=none`, which excludes them from the generated dependencies for target frameworks where they're provided by the platform. (However, if your project targets .NET 10 or later, you'll still get a [`NU1510` warning](/nuget/reference/errors-and-warnings/nu1510) until you remove the reference from your project.)
 
 The same project configuration now generates a *.nuspec* file with the prunable dependency removed from the target framework that provides it (.NET 10):
 
@@ -60,7 +60,7 @@ The same project configuration now generates a *.nuspec* file with the prunable 
 
 ## Type of breaking change
 
-This is a [behavioral change](../../categories.md#behavioral-change).
+This change is a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 

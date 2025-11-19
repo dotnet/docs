@@ -37,7 +37,6 @@ All options classes used to configure Orleans are found in the `Orleans.Configur
 | <xref:Orleans.Configuration.GrainCollectionOptions> | Options for grain garbage collection |
 | <xref:Orleans.Configuration.GrainVersioningOptions> | Governs grain implementation selection in heterogeneous deployments |
 | <xref:Orleans.Configuration.LoadSheddingOptions> | Settings for load shedding configuration. Must have a registered implementation of <xref:Orleans.Statistics.IHostEnvironmentStatistics> such as through <xref:Orleans.Statistics.ClientBuilderExtensions.UsePerfCounterEnvironmentStatistics%2A?displayProperty=nameWithType> or <xref:Orleans.Statistics.SiloHostBuilderExtensions.UsePerfCounterEnvironmentStatistics%2A?displayProperty=nameWithType> (Windows only) for `LoadShedding` to function. |
-| <xref:Orleans.Configuration.MultiClusterOptions> | Options for configuring multi-cluster support |
 | <xref:Orleans.Configuration.PerformanceTuningOptions> | Performance tuning options (networking, number of threads) |
 | <xref:Orleans.Configuration.ProcessExitHandlingOptions> | Configure silo behavior on process exit |
 | <xref:Orleans.Configuration.SchedulingOptions> | Configuring scheduler behavior |

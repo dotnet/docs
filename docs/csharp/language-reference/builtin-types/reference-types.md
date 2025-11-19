@@ -1,8 +1,8 @@
 ---
 title: "Built-in reference types"
 description: "Learn about reference types that have C# keywords you can use to declare them."
-ms.date: 10/07/2025
-f1_keywords: 
+ms.date: 11/18/2025
+f1_keywords:
   - "object_CSharpKeyword"
   - "object"
   - "delegate_CSharpKeyword"
@@ -11,7 +11,7 @@ f1_keywords:
   - "string"
   - "string_CSharpKeyword"
   - "Utf8StringLiteral_CSharpKeyword"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "object keyword [C#]"
   - "delegate keyword [C#]"
   - "function pointers [C#]"
@@ -85,7 +85,7 @@ for (int i = 0; i < str.Length; i++)
 
 String literals are of type `string` and can be written in three forms, raw, quoted, and verbatim.
 
-*Raw string literals* are available beginning in C# 11. Raw string literals can contain arbitrary text without requiring escape sequences. Raw string literals can include whitespace and new lines, embedded quotes, and other special characters. Raw string literals are enclosed in a minimum of three double quotation marks ("""):
+*Raw string literals* contain arbitrary text without requiring escape sequences. Raw string literals can include whitespace and new lines, embedded quotes, and other special characters. Raw string literals are enclosed in a minimum of three double quotation marks ("""):
 
 ```csharp
 """
@@ -186,7 +186,7 @@ To include a double quotation mark in an @-quoted string, double it:
 
 ### UTF-8 string literals
 
-Strings in .NET are stored using UTF-16 encoding. UTF-8 is the standard for Web protocols and other important libraries. Beginning in C# 11, you can add the `u8` suffix to a string literal to specify UTF-8 encoding. UTF-8 literals are stored as `ReadOnlySpan<byte>` objects. The natural type of a UTF-8 string literal is `ReadOnlySpan<byte>`. Using a UTF-8 string literal creates a more clear declaration than declaring the equivalent <xref:System.ReadOnlySpan%601?displayProperty=nameWithType>, as shown in the following code:
+Strings in .NET are stored using UTF-16 encoding. UTF-8 is the standard for Web protocols and other important libraries. You can add the `u8` suffix to a string literal to specify UTF-8 encoding. UTF-8 literals are stored as `ReadOnlySpan<byte>` objects. The natural type of a UTF-8 string literal is `ReadOnlySpan<byte>`. Using a UTF-8 string literal creates a more clear declaration than declaring the equivalent <xref:System.ReadOnlySpan%601?displayProperty=nameWithType>, as shown in the following code:
 
 ```csharp
 ReadOnlySpan<byte> AuthWithTrailingSpace = new byte[] { 0x41, 0x55, 0x54, 0x48, 0x20 };
@@ -221,7 +221,7 @@ Delegate combination or removal fails with a runtime exception when the delegate
 ```csharp
 Action<string> stringAction = str => {};
 Action<object> objectAction = obj => {};
-  
+
 // Valid due to implicit reference conversion of
 // objectAction to Action<string>, but might fail
 // at run time.
@@ -233,7 +233,7 @@ You can create a delegate with the correct runtime type by creating a new delega
 ```csharp
 Action<string> stringAction = str => {};
 Action<object> objectAction = obj => {};
-  
+
 // Creates a new delegate instance with a runtime type of Action<string>.
 Action<string> wrappedObjectAction = new Action<string>(objectAction);
 
@@ -281,8 +281,8 @@ For more information, see the following sections of the [C# language specificati
 - [§8.2.4 The dynamic type](~/_csharpstandard/standard/types.md#824-the-dynamic-type)
 - [§8.2.5 The string type](~/_csharpstandard/standard/types.md#825-the-string-type)
 - [§8.2.8 Delegate types](~/_csharpstandard/standard/types.md#828-delegate-types)
-- [C# 11 - Raw string literals](~/_csharplang/proposals/csharp-11.0/raw-string-literal.md)
-- [C# 11 - Raw string literals](~/_csharplang/proposals/csharp-11.0/utf8-string-literals.md)
+- [Raw string literals](~/_csharplang/proposals/csharp-11.0/raw-string-literal.md)
+- [UTF-8 string literals](~/_csharplang/proposals/csharp-11.0/utf8-string-literals.md)
 
 ### See also
 
@@ -290,7 +290,6 @@ For more information, see the following sections of the [C# language specificati
 - [Events](../../programming-guide/events/index.md)
 - [Using Type dynamic](../../advanced-topics/interop/using-type-dynamic.md)
 - [Best Practices for Using Strings](../../../standard/base-types/best-practices-strings.md)
-- [Basic String Operations](../../../standard/base-types/basic-string-operations.md)
 - [Creating New Strings](../../../standard/base-types/creating-new.md)
 - [Type-testing and cast operators](../operators/type-testing-and-cast.md)
 - [How to safely cast using pattern matching and the as and is operators](../../fundamentals/tutorials/safely-cast-using-pattern-matching-is-and-as-operators.md)

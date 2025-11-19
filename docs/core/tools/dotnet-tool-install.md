@@ -1,11 +1,11 @@
 ---
 title: dotnet tool install command
 description: The dotnet tool install command installs the specified .NET tool on your machine.
-ms.date: 08/27/2025
+ms.date: 11/12/2025
 ---
 # dotnet tool install
 
-**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
+**This article applies to:** ✔️ .NET 6 SDK and later versions
 
 ## Name
 
@@ -93,6 +93,8 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 - **`PACKAGE_NAME`**
 
   Name/ID of the NuGet package that contains the .NET tool to install.
+
+  Starting in .NET 10.0.100 SDK, use the name/ID, and version separated by `@` to install a .NET tool.
 
 ## Options
 
@@ -201,9 +203,17 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 
   Installs version 2.0.0 of [dotnetsay](https://www.nuget.org/packages/dotnetsay/) as a global tool.
 
+- **`dotnet tool install -g dotnetsay@2.1.7`**
+
+  Installs version 2.1.7 of [dotnetsay](https://www.nuget.org/packages/dotnetsay/) as a global tool.
+
 - **`dotnet tool install dotnetsay`**
 
   Installs [dotnetsay](https://www.nuget.org/packages/dotnetsay/) as a local tool for the current directory.
+
+- **`dotnet tool install dotnetsay@2.1.7`**
+
+  Installs version 2.1.7 of [dotnetsay](https://www.nuget.org/packages/dotnetsay/) as a local tool for the current directory.
 
 - **`dotnet tool install -g dotnetsay --verbosity minimal`**
 

@@ -3,7 +3,7 @@ title: String interpolation
 description: Learn how to include formatted expression results in a result string in C# with string interpolation.
 author: pkulikov
 ms.subservice: fundamentals
-ms.date: 05/05/2025
+ms.date: 11/18/2025
 ---
 # String interpolation in C\#
 
@@ -85,7 +85,7 @@ The following example shows how to include braces in a result string and constru
 
 :::code language="csharp" interactive="try-dotnet-method" source="./snippets/StringInterpolation/Program.cs" id="Escapes":::
 
-Beginning with C# 11, you can use [interpolated raw string literals](../language-reference/tokens/interpolated.md#interpolated-raw-string-literals).
+You can use [interpolated raw string literals](../language-reference/tokens/interpolated.md#interpolated-raw-string-literals).
 
 ## How to use a ternary conditional operator `?:` in an interpolation expression
 

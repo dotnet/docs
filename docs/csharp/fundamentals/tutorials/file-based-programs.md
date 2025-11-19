@@ -9,10 +9,6 @@ ai-usage: ai-assisted
 
 # Tutorial: Build file-based C# programs
 
-> [!IMPORTANT]
-> File-based apps are a feature of .NET 10, which is in preview.
-> Some information relates to prerelease product that might be modified before release. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-
 *File-based apps* are programs contained within a single `*.cs` file that are built and run without a corresponding project (`*.csproj`) file. File-based apps are ideal for learning C# because they have less complexity: The entire program is stored in a single file. File-based apps are also useful for building command line utilities. On Unix platforms, file-based apps can be run using `#!` (shebang) directives.
 
 In this tutorial, you:
@@ -32,7 +28,7 @@ You build a file-based program that writes text as ASCII art. The app is contain
 
 ## Prerequisites
 
-- The .NET 10 preview SDK. Download it from the [.NET download site](https://dotnet.microsoft.com/download/dotnet/10.0).
+- The .NET 10 SDK. Download it from the [.NET download site](https://dotnet.microsoft.com/download/dotnet/10.0).
 - Visual Studio Code. Download it from the [Visual Studio Code homepage](https://code.visualstudio.com/Download).
 - (Optional) The C# DevKit extension for Visual Studio Code. Download it from the [Visual Studio Code marketplace](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit).
 
@@ -88,7 +84,13 @@ On unix, you can run file-based apps directly, typing the source file name on th
    #!/usr/local/share/dotnet/dotnet run
    ```
 
-The location of `dotnet` can be different on different unix installations. Use the command `whence dotnet` to local the `dotnet` host in your environment.
+The location of `dotnet` can be different on different unix installations. Use the command `which dotnet` to locate the `dotnet` host in your environment.
+
+Alternatively, you can use `#!/usr/bin/env dotnet` to resolve the dotnet path from the PATH environment variable automatically:
+
+```csharp
+#!/usr/bin/env dotnet
+```
 
 After making these two changes, you can run the program from the command line directly:
 
@@ -215,7 +217,7 @@ The `System.CommandLine` library offers several key benefits:
    :::code language="csharp" source="./snippets/file-based-programs/AsciiArt.cs" id="CommandLinePackage":::
 
    > [!IMPORTANT]
-   > The version `2.0.0-beta6` was the latest version when this tutorial was last updated. If there's a newer version available, use the latest version to ensure you have the latest security packages. Check the package's [NuGet page](https://www.nuget.org/packages/System.CommandLine) for the latest version to ensure you use a package version with the latest security fixes.
+   > The version `2.0.0` was the latest version when this tutorial was last updated. If there's a newer version available, use the latest version to ensure you have the latest security packages. Check the package's [NuGet page](https://www.nuget.org/packages/System.CommandLine) for the latest version to ensure you use a package version with the latest security fixes.
 
 1. Add the necessary using statements at the top of your file (after the `#!` and `#:package` directives):
 

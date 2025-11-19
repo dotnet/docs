@@ -11,8 +11,9 @@ The .NET Framework updates include cumulative security and reliability improveme
 
 .NET Framework cumulative update releases are discussed in detail in the following individual release notes:
 
-* October 14, 2025 - [cumulative update preview](./2025/10-14-october-cumulative-update.md) **New Release**
-* September 9, 2025 - [cumulative update preview](./2025/09-09-september-cumulative-update.md)
+* October 28, 2025 - [cumulative update preview](./2025/10-28-october-cumulative-update-preview.md) **New Release**
+* October 14, 2025 - [cumulative update](./2025/10-14-october-cumulative-update.md)
+* September 9, 2025 - [cumulative update](./2025/09-09-september-cumulative-update.md)
 * August 26, 2025 - [cumulative update preview](./2025/08-26-august-cumulative-update-preview.md)
 * July 8, 2025 - [cumulative update](./2025/07-08-july-cumulative-update.md)
 * April 22, 2025 - [cumulative update preview](./2025/04-22-april-cumulative-update-preview.md)

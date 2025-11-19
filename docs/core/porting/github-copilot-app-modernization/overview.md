@@ -15,9 +15,9 @@ ms.date: 09/23/2025
 
 GitHub Copilot app modernization is a GitHub Copilot agent that helps upgrade projects to newer versions of .NET and migrate .NET applications to Azure quickly and confidently by guiding you through assessment, solution recommendations, code fixes, and validation - all within Visual Studio.
 
-This process streamlines modernization and boosts developer productivity and confidence. GitHub Copilot app modernization is an all-in-one upgrade and migration assistant that uses AI to improve developer velocity, quality, and results.
+This process streamlines modernization and boosts developer productivity and confidence. GitHub Copilot app modernization is an all-in-one upgrade and migration agent that uses AI to improve developer velocity, quality, and results.
 
-With this assistant, you can:
+With this agent, you can:
 
 - Upgrade to a newer version of .NET.
 - Migrate technologies and deploy to Azure.
@@ -26,15 +26,6 @@ With this assistant, you can:
 - Plan and set up the right Azure resource.
 - Fix issues and apply best practices for cloud migration.
 - Validate that your app builds and tests successfully.
-
-> [!IMPORTANT]
-> Starting with Visual Studio 2022 17.14.16, the GitHub Copilot app modernization agent is included with Visual Studio. If you're using an older version of Visual Studio 2022, upgrade to the latest release.
->
-> If you installed any of the following extensions published by Microsoft, uninstall them before using the version now included in Visual Studio:
->
-> - .NET Upgrade Assistant
-> - GitHub Copilot App Modernization – Upgrade for .NET
-> - Azure Migrate Application and Code Assessment for .NET
 
 ## Provide feedback
 
@@ -64,9 +55,6 @@ The modernization agent supports upgrading projects coded in C#. The following t
 - Class libraries
 - Console apps
 
-> [!IMPORTANT]
-> .NET Framework upgrade scenarios are currently in preview, which includes technologies such as Windows Forms for .NET Framework and ASP.NET. Using the modernization agent to design an upgrade plan might work in limited scenarios. If upgrading an ASP.NET project (or related technologies such as MVC, Razor Pages, Web API) see [ASP.NET Migration](/aspnet/core/migration/fx-to-core) for recommendations.
-
 To learn how to start an upgrade, see [How to upgrade a .NET app with GitHub Copilot app modernization](how-to-upgrade-with-github-copilot.md).
 
 ### Upgrade paths
@@ -74,11 +62,9 @@ To learn how to start an upgrade, see [How to upgrade a .NET app with GitHub Cop
 The following upgrade paths are supported:
 
 - Upgrade projects from older .NET versions to the latest.
+- Upgrade .NET Framework projects to .NET.
 - Modernize your code base with new features.
 - Migrate components and services to Azure.
-
-> [!IMPORTANT]
-> Upgrading projects from .NET Framework to the latest version of .NET is still in preview.
 
 ## Migrate .NET projects to Azure
 
@@ -165,7 +151,7 @@ The report also provides a _Next steps_ section that describes the steps you sho
 
 ## Telemetry
 
-The tool only collects data about project types, intent to upgrade, and upgrade duration. The data is collected and aggregated through Visual Studio itself and doesn't contain any user-identifiable information. For more information about Microsoft's privacy policy, see [Visual Studio Customer Experience Improvement Program](/visualstudio/ide/visual-studio-experience-improvement-program?view=vs-2022&preserve-view=true).
+The tool only collects data about project types, intent to upgrade, and upgrade duration. The data is collected and aggregated through Visual Studio itself and doesn't contain any user-identifiable information. For more information about Microsoft's privacy policy, see [Visual Studio Customer Experience Improvement Program](/visualstudio/ide/visual-studio-experience-improvement-program?view=visualstudio&preserve-view=true).
 
 ## Related content
 

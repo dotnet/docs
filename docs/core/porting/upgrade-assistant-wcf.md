@@ -14,6 +14,8 @@ The .NET Upgrade Assistant is a command-line tool that can assist with upgrading
 - A demonstration of how to run the tool against a WCF Server-side project on .NET Framework.
 - Troubleshooting tips.
 
+[!INCLUDE [github-copilot-suggestion](includes/github-copilot-suggestion.md)]
+
 ## Things to know before starting
 
 This tool currently supports C# projects and uses [CoreWCF](https://github.com/corewcf/corewcf) to port self-hosted WCF Server-side projects to .NET 6.

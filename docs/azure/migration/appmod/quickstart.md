@@ -107,5 +107,6 @@ You can choose one of the predefined options and send it in the chat:
 
 ## Next Steps
 
+- [Working with assessment](working-with-assessment.md)
 - [Predefined Tasks](predefined-tasks.md)
 - [Frequently Asked Questions](../../../core/porting/github-copilot-app-modernization/faq.yml)

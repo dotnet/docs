@@ -1,7 +1,7 @@
 ---
 title: "$ - string interpolation - format string output"
 description: String interpolation using the `$` token provides a more readable and convenient syntax to format string output than traditional string composite formatting.
-ms.date: 10/07/2025
+ms.date: 11/18/2025
 f1_keywords:
     - "$_CSharpKeyword"
     - "$"
@@ -44,13 +44,13 @@ The following example uses optional formatting components described in the prece
 
 :::code language="csharp" interactive="try-dotnet-method" source="./snippets/string-interpolation.cs" id="AlignAndSpecifyFormat":::
 
-Beginning with C# 11, you can use new-lines within an interpolation expression to make the expression's code more readable. The following example shows how new-lines can improve the readability of an expression involving [pattern matching](../operators/patterns.md):
+You can use new-lines within an interpolation expression to make the expression's code more readable. The following example shows how new-lines can improve the readability of an expression involving [pattern matching](../operators/patterns.md):
 
 :::code language="csharp" source="./snippets/string-interpolation.cs" id="MultiLineExpression":::
 
 ## Interpolated raw string literals
 
-Beginning with C# 11, you can use an interpolated [raw string literal](../builtin-types/reference-types.md#string-literals), as the following example shows:
+You can use an interpolated [raw string literal](../builtin-types/reference-types.md#string-literals), as the following example shows:
 
 :::code language="csharp" source="./snippets/string-interpolation.cs" id="InterpolatedRawStringLiteral":::
 
@@ -66,7 +66,7 @@ In the preceding example, an interpolated raw string literal starts with two `$`
 
 To include a brace, "{" or "}", in the text produced by an interpolated string, use two braces, "{{" or "}}". For more information, see the [Escaping braces](../../../standard/base-types/composite-formatting.md#escaping-braces) section of the [Composite formatting](../../../standard/base-types/composite-formatting.md) article.
 
-As the colon (":") has special meaning in an interpolation expression item, to use a [conditional operator](../operators/conditional-operator.md) in an interpolation expression, enclose that expression in parentheses.
+The colon (":") has special meaning in an interpolation expression item. To use a [conditional operator](../operators/conditional-operator.md) in an interpolation expression, enclose that expression in parentheses.
 
 The following example shows how to include a brace in a result string. It also shows how to use a conditional operator:
 
@@ -108,8 +108,8 @@ If an interpolated string has the type <xref:System.IFormattable> or <xref:Syste
 For more information, see the [Interpolated string expressions](~/_csharpstandard/standard/expressions.md#1283-interpolated-string-expressions) section of the [C# language specification](~/_csharpstandard/standard/README.md) and the following new feature specifications:
 
 - [Improved interpolated strings](~/_csharplang/proposals/csharp-10.0/improved-interpolated-strings.md)
-- [C# 11 - Raw string literals](~/_csharplang/proposals/csharp-11.0/raw-string-literal.md)
-- [C# 11 - New-lines in string interpolations](~/_csharplang/proposals/csharp-11.0/new-line-in-interpolation.md)
+- [Raw string literals](~/_csharplang/proposals/csharp-11.0/raw-string-literal.md)
+- [New-lines in string interpolations](~/_csharplang/proposals/csharp-11.0/new-line-in-interpolation.md)
 
 ## See also
 

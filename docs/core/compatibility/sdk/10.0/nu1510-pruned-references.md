@@ -26,7 +26,7 @@ Previously, the .NET SDK ignored the contents of a package if it overlapped with
 Starting with the .NET 10 SDK, if pruning is enabled and the project targets .NET 10 or a later version, NuGet notifies you of any unnecessary package references by raising a `NU1510` warning.
 
 > [!NOTE]
-> In a later .NET 10 preview, a related change was made such that [direct prunable package references](prune-packagereference-privateassets.md) are automatically excluded from the `.nuspec` file. However, you'll still get the `NU1510` warning to clean up your project.
+> Later in .NET 10, a related change was made such that [direct prunable package references](prune-packagereference-privateassets.md) are automatically excluded from the `.nuspec` file. However, you'll still get the `NU1510` warning to clean up your project.
 
 ## Type of breaking change
 
@@ -46,7 +46,7 @@ If your project targets only frameworks where the package is pruned, remove the 
     <PackageReference Include="System.Text.Json"  Version="8.0.5" Condition="!$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net8.0'))" />
 
     <!-- reference 10.0 System.Linq.AsyncEnumerable when targeting things older than .NET 10 -->
-    <PackageReference Include="System.Linq.AsyncEnumerable"  Version="10.0.0-preview.2.25163.2" Condition="!$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net.10'))" />
+    <PackageReference Include="System.Linq.AsyncEnumerable"  Version="10.0.0-preview.2.25163.2" Condition="!$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net10.0'))" />
 
     <!-- Reference System.Memory on frameworks not compatible with .NET Core 2.1 nor .NETStandard 2.1 -->
     <PackageReference Include="System.Memory" Condition="!$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'netcoreapp2.1')) and !$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'netstandard2.1'))" />

@@ -67,7 +67,7 @@ All these rules are extensions of the rules for declaring overloaded operators. 
 
 For example, `INumber<T>` can declare an `T operator++(T)` because `T` is constrained to implement `INumber<T>`.
 
-To fix these errors, ensure that the parameters of any operators defined in the interface obey these rules. You can learn more in the language reference article on [static abstract members in interfaces](../keywords/interface.md#static-abstract-and-virtual-members) or in the tutorial to [explore static abstract interface members](../../whats-new/tutorials/static-virtual-interface-members.md).
+To fix these errors, ensure that the parameters of any operators defined in the interface obey these rules. You can learn more in the language reference article on [static abstract members in interfaces](../keywords/interface.md#static-abstract-and-virtual-members) or in the tutorial to [explore static abstract interface members](../../advanced-topics/interface-implementation/static-virtual-interface-members.md).
 
 ## Errors in type implementing interface declaration
 

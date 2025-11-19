@@ -114,6 +114,5 @@ The following example uses the <xref:System.String.IndexOf%2A> method to find th
 
 ## See also
 
-- [Basic string operations in .NET](basic-string-operations.md)
 - [.NET regular expressions](regular-expressions.md)
 - [How to parse strings using String.Split in C#](../../csharp/how-to/parse-strings-using-split.md)

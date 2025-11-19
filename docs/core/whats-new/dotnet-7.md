@@ -129,7 +129,7 @@ For more information, see [What's new in Visual Studio 2022](/visualstudio/ide/w
 
 ### C# 11
 
-C# 11 includes support for [generic math](../../standard/generics/math.md), raw string literals, file-scoped types, and other new features. For more information, see [What's new in C# 11](../../csharp/whats-new/csharp-11.md).
+C# 11 includes support for [generic math](../../standard/generics/math.md), raw string literals, file-scoped types, and other new features. For more information, see [What's new in C# 11](../../csharp/whats-new/csharp-version-history.md#c-version-11).
 
 ### F# 7
 

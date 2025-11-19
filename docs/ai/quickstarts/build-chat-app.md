@@ -145,4 +145,4 @@ If you no longer need them, delete the Azure OpenAI resource and GPT-4 model dep
 ## Next steps
 
 - [Quickstart - Chat with a local AI model](chat-local-model.md)
-- [Generate images using AI with .NET](generate-images.md)
+- [Generate images from text using AI](text-to-image.md)

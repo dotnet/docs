@@ -3,9 +3,10 @@ title: Get started with .NET
 description: Create a Hello World .NET app.
 author: adegeo
 ms.author: adegeo
-ms.date: 07/19/2022
+ms.date: 10/21/2025
 ms.custom: vs-dotnet, devdivchpfy22
 ms.topic: tutorial
+ai-usage: ai-assisted
 ---
 # Get started with .NET
 
@@ -31,8 +32,8 @@ You should see the following output:
 Hello World!
 ```
 
-Congratulations! You've created a simple .NET application.
+Congratulations! You created a simple .NET application.
 
 ## Next steps
 
-Get started on developing .NET applications by following a [step-by-step tutorial](../standard/get-started.md) or by watching [.NET 101 videos](https://www.youtube.com/playlist?list=PLdo4fOcmZ0oWoazjhXQzBKMrFuArxpW80) on YouTube.
+Get started developing .NET applications by following a [step-by-step tutorial](../standard/get-started.md) or by watching [.NET 101 videos](https://www.youtube.com/playlist?list=PLdo4fOcmZ0oWoazjhXQzBKMrFuArxpW80) on YouTube.

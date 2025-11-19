@@ -16,9 +16,7 @@ namespace BothModesNoOptions
     // <DefineContext>
     [JsonSourceGenerationOptions(WriteIndented = true)]
     [JsonSerializable(typeof(WeatherForecast))]
-    internal partial class SourceGenerationContext : JsonSerializerContext
-    {
-    }
+    internal partial class SourceGenerationContext : JsonSerializerContext { }
     // </DefineContext>
 
     public class Program
@@ -35,7 +33,7 @@ namespace BothModesNoOptions
             WeatherForecast? weatherForecast;
 
             // <DeserializeWithTypeInfo>
-            weatherForecast = JsonSerializer.Deserialize<WeatherForecast>(
+            weatherForecast = JsonSerializer.Deserialize(
                 jsonString, SourceGenerationContext.Default.WeatherForecast);
             // </DeserializeWithTypeInfo>
             Console.WriteLine($"Date={weatherForecast?.Date}");
@@ -56,9 +54,7 @@ namespace BothModesNoOptions
             {
                 TypeInfoResolver = SourceGenerationContext.Default
             };
-            weatherForecast = JsonSerializer.Deserialize(
-                jsonString, typeof(WeatherForecast), sourceGenOptions)
-                as WeatherForecast;
+            weatherForecast = JsonSerializer.Deserialize<WeatherForecast>(jsonString, sourceGenOptions);
             // </DeserializeWithOptions>
             Console.WriteLine($"Date={weatherForecast?.Date}");
             // output:
@@ -86,8 +82,7 @@ namespace BothModesNoOptions
                 TypeInfoResolver = SourceGenerationContext.Default
             };
 
-            jsonString = JsonSerializer.Serialize(
-                weatherForecast, typeof(WeatherForecast), sourceGenOptions);
+            jsonString = JsonSerializer.Serialize<WeatherForecast>(weatherForecast, sourceGenOptions);
             // </SerializeWithOptions>
             Console.WriteLine(jsonString);
             // output:

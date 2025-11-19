@@ -14,7 +14,7 @@ The .NET platform has been designed to deliver productivity, performance, securi
 
 .NET has the following [design points](https://devblogs.microsoft.com/dotnet/why-dotnet/):
 
-* **Productivity is full-stack** with runtime, libraries, language, and tools all contributing to developer user experience.
+* **Productivity is full-stack** with runtime, libraries, languages, and tools all contributing to developer user experience.
 * **Safe code** is the primary compute model, while [unsafe code](../csharp/language-reference/unsafe-code.md) enables additional manual optimizations.
 * **Static and dynamic code** are both supported, enabling a broad set of distinct scenarios.
 * **Native code interop and hardware intrinsics** are low cost and high-fidelity (raw API and instruction access).

@@ -1,7 +1,7 @@
 ---
 title: Quickstart - Extend OpenAI using Tools and execute a local Function with .NET
 description: Create a simple chat app using OpenAI and extend the model to execute a local function.
-ms.date: 03/13/2025
+ms.date: 11/13/2025
 ms.topic: quickstart
 zone_pivot_groups: openai-library
 # CustomerIntent: As a .NET developer new to OpenAI, I want deploy and use sample code to interact to learn from the sample code how to extend the model using Tools.
@@ -9,7 +9,7 @@ zone_pivot_groups: openai-library
 
 # Invoke .NET functions using an AI model
 
-In this quickstart, you create a .NET console AI chat app to connect to an AI model with local function calling enabled. The app uses the <xref:Microsoft.Extensions.AI> library so you can write code using AI abstractions rather than a specific SDK. AI abstractions enable you to change the underlying AI model with minimal code changes.
+In this quickstart, you create a .NET console AI chat app that connects to an AI model with local function calling enabled. The app uses the <xref:Microsoft.Extensions.AI> library so you can write code using AI abstractions rather than a specific SDK. AI abstractions enable you to change the underlying AI model with minimal code changes.
 
 :::zone target="docs" pivot="openai"
 
@@ -22,8 +22,6 @@ In this quickstart, you create a .NET console AI chat app to connect to an AI mo
 [!INCLUDE [azure-openai-prereqs](includes/prerequisites-azure-openai.md)]
 
 :::zone-end
-
-[!INCLUDE [semantic-kernel](includes/semantic-kernel.md)]
 
 ## Create the app
 
@@ -103,10 +101,7 @@ The app uses the [`Microsoft.Extensions.AI`](https://www.nuget.org/packages/Micr
 
     :::zone target="docs" pivot="azure-openai"
 
-    :::code language="csharp" source="snippets/function-calling/azure-openai/program.cs" id="GetChatClient":::
-
-    > [!NOTE]
-    > <xref:Azure.Identity.DefaultAzureCredential> searches for authentication credentials from your local tooling. If you aren't using the `azd` template to provision the Azure OpenAI resource, you'll need to assign the `Azure AI Developer` role to the account you used to sign in to Visual Studio or the Azure CLI. For more information, see [Authenticate to Azure AI services with .NET](../azure-ai-services-authentication.md).
+    :::code language="csharp" source="snippets/function-calling/azure-openai/Program.cs" id="GetChatClient":::
 
     :::zone-end
 
@@ -145,5 +140,6 @@ If you no longer need them, delete the Azure OpenAI resource and GPT-4 model dep
 
 ## Next steps
 
+- [Access data in AI functions](../how-to/access-data-in-functions.md)
 - [Quickstart - Build an AI chat app with .NET](build-chat-app.md)
 - [Generate text and conversations with .NET and Azure OpenAI Completions](/training/modules/open-ai-dotnet-text-completions/)

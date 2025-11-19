@@ -13,7 +13,7 @@ Module Example1
                            GetBinaryString(value))
             ' Restore the flag from its binary representation.
             Dim newFlag As Boolean = BitConverter.ToBoolean({value}, 0)
-            Console.WriteLine("Restored value: {0}", flag)
+            Console.WriteLine("Restored value: {0}", newFlag)
             Console.WriteLine()
         Next
     End Sub

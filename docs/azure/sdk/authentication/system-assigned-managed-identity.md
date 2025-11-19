@@ -3,7 +3,7 @@ title: Authenticate Azure-hosted .NET apps to Azure resources using a system-ass
 description: Learn how to authenticate Azure-hosted .NET apps to other Azure services using a system-assigned managed identity.
 ms.topic: how-to
 ms.custom: devx-track-dotnet, engagement-fy23, devx-track-azurecli
-ms.date: 02/06/2025
+ms.date: 11/10/2025
 ---
 
 # Authenticate Azure-hosted .NET apps to Azure resources using a system-assigned managed identity

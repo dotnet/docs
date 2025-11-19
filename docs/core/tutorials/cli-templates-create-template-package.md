@@ -2,18 +2,19 @@
 title: Create a template package for dotnet new
 description: Learn how to create a csproj file that builds a template package for the dotnet new command.
 author: adegeo
-ms.date: 09/11/2023
+ms.date: 10/23/2025
+ai-usage: ai-assisted
 ms.topic: tutorial
 ms.author: adegeo
 ---
 
 # Tutorial: Create a template package
 
-With .NET, you can create and deploy templates that generate projects, files, and even resources. This tutorial is part three of a series that teaches you how to create, install, and uninstall templates for use with the `dotnet new` command.
+With .NET, you can create and deploy templates that generate projects, files, and resources. This tutorial is part three of a series that teaches you how to create, install, and uninstall templates for use with the `dotnet new` command.
 
 You can view the completed template in the [.NET Samples GitHub repository](https://github.com/dotnet/samples/tree/main/core/tutorials/cli-templates-create-item-template).
 
-In this part of the series you'll learn how to:
+In this part of the series, you learn how to:
 
 > [!div class="checklist"]
 >
@@ -23,16 +24,16 @@ In this part of the series you'll learn how to:
 
 ## Prerequisites
 
-* Complete [part 1](cli-templates-create-item-template.md) and [part 2](cli-templates-create-project-template.md) of this tutorial series.
+- [.NET 9](https://dotnet.microsoft.com/download) or a later version.
+
+- Complete [part 1](cli-templates-create-item-template.md) and [part 2](cli-templates-create-project-template.md) of this tutorial series.
 
   This tutorial uses the two templates created in the first two parts of this tutorial series. You can use a different template as long as you copy the template, as a folder, into the _working\content_ folder.
 
-* Open a terminal and navigate to the _working_ folder.
+- Open a terminal and navigate to the _working_ folder.
 
-* Install .NET 8 or .NET 9.
-* Install the `Microsoft.TemplateEngine.Authoring.Templates` template from the NuGet package feed.
-
-  * Run the `dotnet new install Microsoft.TemplateEngine.Authoring.Templates` command from your terminal.
+- Install the `Microsoft.TemplateEngine.Authoring.Templates` template from the NuGet package feed.
+  - Run the `dotnet new install Microsoft.TemplateEngine.Authoring.Templates` command from your terminal.
 
 ## Create a template package project
 
@@ -42,11 +43,11 @@ Template packages are represented by a NuGet package (_.nupkg_) file. And, like 
 
 Normally you use a C# project file to compile code and produce a binary. However, the project can also be used to generate a template package. By changing the settings of the _.csproj_, you can prevent it from compiling any code and instead include all the assets of your templates as resources. When this project is built, it produces a template package NuGet package.
 
-The package you're going to generate will include the [item](cli-templates-create-item-template.md) and [project](cli-templates-create-project-template.md) templates previously created.
+The package you're going to generate includes the [item](cli-templates-create-item-template.md) and [project](cli-templates-create-project-template.md) templates previously created.
 
 The [Microsoft.TemplateEngine.Authoring.Templates](https://www.nuget.org/packages/Microsoft.TemplateEngine.Authoring.Templates) package contains templates useful for template authoring. To install this package, nuget.org should be available as NuGet feed in the working directory.
 
-01. In the _working_ folder, run the following command to create the template package:
+1. In the _working_ folder, run the following command to create the template package:
 
     ```dotnetcli
     dotnet new templatepack -n "AdatumCorporation.Utility.Templates"

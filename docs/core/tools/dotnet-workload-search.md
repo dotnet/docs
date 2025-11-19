@@ -1,7 +1,7 @@
 ---
 title: dotnet workload search command
 description: The 'dotnet workload search' command searches for optional workloads.
-ms.date: 08/31/2021
+ms.date: 11/12/2025
 ---
 # dotnet workload search
 
@@ -14,7 +14,7 @@ ms.date: 08/31/2021
 ## Synopsis
 
 ```dotnetcli
-dotnet workload search [<SEARCH_STRING>] [-v|--verbosity <LEVEL>]
+dotnet workload search [<SEARCH_STRING>] [-v|--verbosity <LEVEL>] [version <WORKLOAD_VERSION>]
 
 dotnet workload search -?|-h|--help
 ```
@@ -37,6 +37,8 @@ For more information about the `dotnet workload` commands, see the [dotnet workl
 
 [!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
 
+[!INCLUDE [workload-version](../../../includes/cli-workload-version.md)]
+
 ## Examples
 
 - List all available workloads:
@@ -49,4 +51,10 @@ For more information about the `dotnet workload` commands, see the [dotnet workl
 
   ```dotnetcli
   dotnet workload search maui
+  ```
+
+- Search for a workload that matches the provided version:
+
+  ```dotnetcli
+  dotnet workload search version maui@10.0.100
   ```

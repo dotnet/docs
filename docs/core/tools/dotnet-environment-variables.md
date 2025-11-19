@@ -6,7 +6,7 @@ ms.date: 11/08/2023
 
 # .NET environment variables
 
-**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
+**This article applies to:** ✔️ .NET 6 SDK and later versions
 
 In this article, you'll learn about the environment variables used by .NET. Some environment variables are used by the .NET runtime, while others are only used by the .NET SDK and .NET CLI. Some environment variables are used by all three components.
 
@@ -183,15 +183,13 @@ These environment variables are used only when running apps via generated execut
 
 ### `DOTNET_HOST_PATH`
 
-Specifies the absolute path to a `dotnet` host (`dotnet.exe` on Windows, `dotnet` on Linux and macOS) that was used to launch the currently-running `dotnet` process. This is used by the .NET SDK to help tools that run during .NET SDK commands ensure they use the same `dotnet` runtime for any child `dotnet` processes they create for the duration of the command. Tools and MSBuild Tasks within the SDK that invoke binaries via the `dotnet` host are expected to honor this environment variable to ensure a consistent experience.
+Specifies the absolute path to a `dotnet` host (`dotnet.exe` on Windows, `dotnet` on Linux and macOS). This path represents either the host used to launch the currently running `dotnet` process, or the host that would be used when running `dotnet` commands for the currently building project when executing under MSBuild. The .NET SDK uses this variable to help tools that run during .NET SDK commands ensure they use the same `dotnet` host configuration for any child `dotnet` processes they create for the duration of the command. Tools and any MSBuild logic that run within a build and invoke binaries via the `dotnet` host are expected to honor this environment variable to ensure a consistent experience.
 
-Tools that invoke `dotnet` during an SDK command should use the following algorithm to locate it:
-
-- if `DOTNET_HOST_PATH` is set, use that value directly
-- otherwise, rely on `dotnet` via the system's `PATH`
+Starting in Visual Studio 2026, MSBuild in Visual Studio _also_ ensures that `DOTNET_HOST_PATH` is set for all builds of .NET SDK projects. For greatest consistency, all MSBuild tools and logic that want to use _the same dotnet binary_ as the one that spawned the build should rely on
+`DOTNET_HOST_PATH` and should consider emitting a diagnostic (warning or error) when the variable is not present.
 
 > [!NOTE]
-> `DOTNET_HOST_PATH` is not a general solution for locating the `dotnet` host. It is only intended to be used by tools that are invoked by the .NET SDK.
+> `DOTNET_HOST_PATH` is not a general solution for locating the `dotnet` host. It is only intended to be used by binaries and tools that are invoked by the .NET SDK or MSBuild.
 
 ### `DOTNET_LAUNCH_PROFILE`
 
@@ -304,10 +302,6 @@ If set to `1` (enabled), enables rolling forward to a pre-release version from a
 
 For more information, see [the `--roll-forward` option for the `dotnet` command](dotnet.md#rollforward).
 
-### `DOTNET_ROLL_FORWARD_ON_NO_CANDIDATE_FX`
-
-Disables minor version roll forward, if set to `0`. This setting is superseded in .NET Core 3.0 by `DOTNET_ROLL_FORWARD`. The new settings should be used instead.
-
 ### `DOTNET_CLI_FORCE_UTF8_ENCODING`
 
 Forces the use of UTF-8 encoding in the console, even for older versions of Windows 10 that don't fully support UTF-8. For more information, see [SDK no longer changes console encoding when finished](../compatibility/sdk/8.0/console-encoding-fix.md).
@@ -362,6 +356,10 @@ Disables background download of advertising manifests for workloads. Default is 
 ### `DOTNET_CLI_WORKLOAD_UPDATE_NOTIFY_INTERVAL_HOURS`
 
 Specifies the minimum number of hours between background downloads of advertising manifests for workloads. The default is `24`, which is no more frequently than once a day. For more information, see [Advertising manifests](dotnet-workload-install.md#advertising-manifests).
+
+### `DOTNET_SKIP_WORKLOAD_INTEGRITY_CHECK`
+
+Specifies whether to skip the workload integrity check on first-run. The integrity check ensures that workloads from previous feature bands are accessible to the currently installed SDK. Set the value to `true`, `1`, or `yes` to skip the check. The default is `false`, meaning the integrity check is performed.
 
 ### `DOTNET_TOOLS_ALLOW_MANIFEST_IN_ROOT`
 

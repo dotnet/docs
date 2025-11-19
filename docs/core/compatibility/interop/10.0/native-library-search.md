@@ -13,7 +13,7 @@ The application directory is no longer added to `NATIVE_DLL_SEARCH_DIRECTORIES` 
 
 ## Version introduced
 
-.NET 10 Preview 6
+.NET 10
 
 ## Previous behavior
 

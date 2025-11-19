@@ -7,9 +7,9 @@ ms.date: 09/20/2021
 
 # Platform compatibility analyzer
 
-You've probably heard the motto of "One .NET": a single, unified platform for building any type of application. The .NET SDK includes ASP.NET Core, Entity Framework Core, Windows Forms, WPF, and ML.NET, and will add support for more platforms over time. .NET 5+ strives to provide an experience where you don't have to reason about the different flavors of .NET, but doesn't attempt to fully abstract away the underlying operating system (OS). You'll continue to be able to call platform-specific APIs, for example, P/Invokes and WinRT.
+.NET is a single, unified platform for building any type of application. It strives to provide an experience where you don't have to reason about the different flavors of .NET, but doesn't attempt to fully abstract away the underlying operating system (OS). You can continue to call platform-specific APIs, for example, P/Invokes and WinRT.
 
-But using platform-specific APIs on a component means the code no longer works across all platforms. We needed a way to detect this at design time so developers get diagnostics when they inadvertently use platform-specific APIs. To achieve this goal, .NET 5 introduced the [platform compatibility analyzer](../../fundamentals/code-analysis/quality-rules/ca1416.md) and complementary APIs to help developers identify and use platform-specific APIs where appropriate.
+But using platform-specific APIs on a component means the code no longer works across all platforms. The [platform compatibility analyzer](../../fundamentals/code-analysis/quality-rules/ca1416.md) and complementary APIs provide diagnostics to help you identify and use platform-specific APIs where appropriate.
 
 The complementary APIs include:
 

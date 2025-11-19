@@ -1,7 +1,7 @@
 ---
 title: "Addition operators - + and +="
 description: "The C# addition operators (`+`, and `+=`) work with operands of numeric, string, or delegate types."
-ms.date: 06/11/2025
+ms.date: 11/18/2025
 f1_keywords: 
   - "+_CSharpKeyword"
   - "+=_CSharpKeyword"
@@ -32,7 +32,7 @@ When one or both operands are of type [string](../builtin-types/reference-types.
 
 You can use string interpolation to initialize a constant string when all the expressions used for placeholders are also constant strings.
 
-Beginning with C# 11, the `+` operator performs string concatenation for UTF-8 literal strings. This operator concatenates two `ReadOnlySpan<byte>` objects.
+The `+` operator performs string concatenation for UTF-8 literal strings. This operator concatenates two `ReadOnlySpan<byte>` objects.
 
 ## Delegate combination
 
@@ -72,7 +72,7 @@ A user-defined type can [overload](operator-overloading.md) the `+` operator. Wh
 
 ## C# language specification
 
-For more information, see the [Unary plus operator](~/_csharpstandard/standard/expressions.md#1292-unary-plus-operator) and [Addition operator](~/_csharpstandard/standard/expressions.md#12115-addition-operator) sections of the [C# language specification](~/_csharpstandard/standard/README.md). For more information on overloading the compound assignment operators in C# 14 and later, see the [user defined compound assignment](~/_csharplang/proposals/csharp-14.0/user-defined-compound-assignment.md) feature specification.
+For more information, see the [Unary plus operator](~/_csharpstandard/standard/expressions.md#1292-unary-plus-operator) and [Addition operator](~/_csharpstandard/standard/expressions.md#12125-addition-operator) sections of the [C# language specification](~/_csharpstandard/standard/README.md). For more information on overloading the compound assignment operators in C# 14 and later, see the [user defined compound assignment](~/_csharplang/proposals/csharp-14.0/user-defined-compound-assignment.md) feature specification.
 
 ## See also
 

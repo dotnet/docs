@@ -1,7 +1,7 @@
 ---
 title: Pattern matching overview
 description: "Learn about pattern matching expressions in C#"
-ms.date: 01/27/2025
+ms.date: 11/18/2025
 ---
 
 # Pattern matching overview
@@ -40,7 +40,7 @@ The previous example demonstrates a method dispatch based on the value of an enu
 
 :::code language="csharp" source="snippets/patterns/Simulation.cs" ID="PerformStringOperation":::
 
-The preceding example shows the same algorithm, but uses string values instead of an enum. You would use this scenario if your application responds to text commands instead of a regular data format. Starting with C# 11, you can also use a `Span<char>` or a `ReadOnlySpan<char>`to test for constant string values, as shown in the following sample:
+The preceding example shows the same algorithm, but uses string values instead of an enum. You would use this scenario if your application responds to text commands instead of a regular data format. You can also use a `Span<char>` or a `ReadOnlySpan<char>`to test for constant string values, as shown in the following sample:
 
 :::code language="csharp" source="snippets/patterns/Simulation.cs" ID="PerformSpanOperation":::
 

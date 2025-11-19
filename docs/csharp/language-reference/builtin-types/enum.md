@@ -88,8 +88,8 @@ For more information, see the following sections of the [C# language specificati
 
 - [Enums](~/_csharpstandard/standard/enums.md)
 - [Enum values and operations](~/_csharpstandard/standard/enums.md#206-enum-values-and-operations)
-- [Enumeration logical operators](~/_csharpstandard/standard/expressions.md#12143-enumeration-logical-operators)
-- [Enumeration comparison operators](~/_csharpstandard/standard/expressions.md#12136-enumeration-comparison-operators)
+- [Enumeration logical operators](~/_csharpstandard/standard/expressions.md#12153-enumeration-logical-operators)
+- [Enumeration comparison operators](~/_csharpstandard/standard/expressions.md#12146-enumeration-comparison-operators)
 - [Explicit enumeration conversions](~/_csharpstandard/standard/conversions.md#1033-explicit-enumeration-conversions)
 - [Implicit enumeration conversions](~/_csharpstandard/standard/conversions.md#1024-implicit-enumeration-conversions)
 

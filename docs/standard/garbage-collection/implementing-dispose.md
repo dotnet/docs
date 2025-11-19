@@ -1,7 +1,7 @@
 ---
 title: "Implement a Dispose method"
 description: In this article, learn to implement the Dispose method, which releases unmanaged resources used by your code in .NET.
-ms.date: 07/20/2023
+ms.date: 10/22/2025
 dev_langs:
   - "csharp"
   - "vb"
@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "Dispose method"
   - "garbage collection, Dispose method"
 ms.topic: how-to
+ai-usage: ai-assisted
 ---
 
 # Implement a Dispose method
@@ -127,7 +128,7 @@ Here's an example of the general pattern for implementing the dispose pattern fo
 :::code language="vb" source="../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.idisposable/vb/derived1.vb":::
 
 > [!NOTE]
-> The previous example uses a <xref:Microsoft.Win32.SafeHandles.SafeFileHandle> object to illustrate the pattern; any object derived from <xref:System.Runtime.InteropServices.SafeHandle> could be used instead. Note that the example does not properly instantiate its <xref:Microsoft.Win32.SafeHandles.SafeFileHandle> object.
+> The previous example uses a <xref:Microsoft.Win32.SafeHandles.SafeFileHandle> object to illustrate the pattern; any object derived from <xref:System.Runtime.InteropServices.SafeHandle> could be used instead. Note that the example doesn't properly instantiate its <xref:Microsoft.Win32.SafeHandles.SafeFileHandle> object.
 
 Here's the general pattern for implementing the dispose pattern for a derived class that overrides <xref:System.Object.Finalize%2A?displayProperty=nameWithType>:
 
@@ -153,7 +154,7 @@ The following code demonstrates how to handle unmanaged resources by implementin
 > The behavior of the `DisposableBaseWithSafeHandle` class is equivalent to the behavior of the [`DisposableBaseWithFinalizer` class in a previous example](#base-class-with-unmanaged-resources), however the approach demonstrated here is safer:
 >
 > - There is no need to implement a finalizer, because <xref:System.Runtime.InteropServices.SafeHandle> will take care of finalization.
-> - There is no need for synchronization to guarantee thread safety. Even though there is a race condition in the `Dispose` implementation of `DisposableBaseWithSafeHandle`, <xref:System.Runtime.InteropServices.SafeHandle> guarantees that <xref:System.Runtime.InteropServices.SafeHandle.ReleaseHandle%2A?displayProperty=nameWithType> will be called only once.
+> - There is no need for synchronization to guarantee thread safety. Even though there is a race condition in the `Dispose` implementation of `DisposableBaseWithSafeHandle`, <xref:System.Runtime.InteropServices.SafeHandle> guarantees that <xref:System.Runtime.InteropServices.SafeHandle.ReleaseHandle%2A?displayProperty=nameWithType> is called only once.
 
 ### Built-in safe handles in .NET
 

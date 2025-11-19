@@ -63,7 +63,7 @@ The following example demonstrates how to declare a local constant:
 For more information, see the following sections of the [C# language specification](~/_csharpstandard/standard/README.md):
 
 - [Constants](~/_csharpstandard/standard/classes.md#154-constants)
-- [Constant expressions](~/_csharpstandard/standard/expressions.md#1224-constant-expressions)
+- [Constant expressions](~/_csharpstandard/standard/expressions.md#1225-constant-expressions)
 
 ## See also
 

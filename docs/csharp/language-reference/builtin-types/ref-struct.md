@@ -1,7 +1,7 @@
 ---
 title: "ref struct types"
 description: Learn about the ref struct type in C#
-ms.date: 01/27/2025
+ms.date: 11/18/2025
 ---
 # `ref` structure types (C# reference)
 
@@ -28,7 +28,7 @@ In .NET, examples of a `ref struct` are <xref:System.Span%601?displayProperty=na
 
 ## `ref` fields
 
-Beginning with C# 11, you can declare a `ref` field in a `ref struct`, as the following example shows:
+You can declare a `ref` field in a `ref struct`, as the following example shows:
 
 :::code language="csharp" source="snippets/shared/StructType.cs" id="SnippetRefField":::
 
@@ -69,10 +69,10 @@ These restrictions ensure that a `ref struct` type that implements an interface 
 - A `ref struct` can't be converted to an instance of an interface it implements. This restriction includes the implicit conversion when you use a `ref struct` type as an argument when the parameter is an interface type. The conversion results in a boxing conversion, which violates ref safety. A `ref struct` can declare methods as explicit interface declarations. However, those methods can be accessed only from generic methods where the type parameter [`allows ref struct`](../../programming-guide/generics/constraints-on-type-parameters.md#allows-ref-struct) types.
 - A `ref struct` that implements an interface *must* implement all instance interface members. The `ref struct` must implement instance members even when the interface includes a default implementation.
 
-The compiler enforces these restrictions. If you write `ref struct` types that implement interfaces, each new update might include new [default interface members](../keywords/interface.md#default-interface-members). Until you provide an implementation for any new instance methods, your application won't compile. You can't provide a specific implementation for a `static` interface method with a default implementation.
+The compiler enforces these restrictions. If you write `ref struct` types that implement interfaces, each new update might include new [default interface members](../keywords/interface.md#default-interface-members). Until you provide an implementation for any new instance methods, your application doesn't compile. You can't provide a specific implementation for a `static` interface method with a default implementation.
 
 > [!IMPORTANT]
-> A `ref struct` that implements an interface includes the potential for later source-breaking and binary-breaking changes. The break occurs if a `ref struct` implements an interface defined in another assembly, and that assembly provides an update which adds default members to that interface.
+> A `ref struct` that implements an interface includes the potential for later source-breaking and binary-breaking changes. The break occurs if a `ref struct` implements an interface defined in another assembly, and that assembly provides an update that adds default members to that interface.
 >
 > The source-break happens when you recompile the `ref struct`: It must implement the new member, even though there's a default implementation.
 >

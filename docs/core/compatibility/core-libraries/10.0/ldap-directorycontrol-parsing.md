@@ -11,7 +11,7 @@ Previously, .NET used <xref:System.DirectoryServices.Protocols.BerConverter?disp
 
 ## Previous behavior
 
-As a result of using <xref:System.DirectoryServices.Protocols.BerConverter?displayProperty=nameWithType>, the parsing of <xref:System.DirectoryServices.Protocols.DirectoryControl?displayProperty=nameWithType> objects was fairly loose:
+Previously, as a result of using <xref:System.DirectoryServices.Protocols.BerConverter?displayProperty=nameWithType>, the parsing of <xref:System.DirectoryServices.Protocols.DirectoryControl?displayProperty=nameWithType> objects was fairly loose:
 
 - The ASN.1 tags of each value weren't checked.
 - Trailing data after the end of the parsed DirectoryControl was ignored, as was trailing data within an ASN.1 SEQUENCE.
@@ -24,7 +24,7 @@ While not a breaking change, Windows always encoded ASN.1 tags with a four-byte 
 
 ## New behavior
 
-The DirectoryControl parsing is much more stringent, and is now consistent across platforms and versions:
+Starting in .NET 10, the DirectoryControl parsing is much more stringent, and is now consistent across platforms and versions:
 
 - ASN.1 tags are now checked.
 - Trailing data is no longer permitted.

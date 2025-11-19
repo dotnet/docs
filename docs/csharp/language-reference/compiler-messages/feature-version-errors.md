@@ -58,6 +58,8 @@ f1_keywords:
   - "CS9268"
   - "CS9269"
   - "CS9271"
+  - "CS9327"
+  - "CS9328"
 helpviewer_keywords:
   - "CS0171"
   - "CS0188"
@@ -115,6 +117,8 @@ helpviewer_keywords:
   - "CS9268"
   - "CS9269"
   - "CS9271"
+  - "CS9327"
+  - "CS9328"
 ms.date: 05/23/2025
 ---
 # Resolve warnings related to language features and versions
@@ -161,6 +165,8 @@ That's be design. The text closely matches the text of the compiler error / warn
 - **CS9268**: *Type is for evaluation purposes only and is subject to change or removal in future updates. Suppress this diagnostic to proceed.*
 - **CS9269**: *UnscopedRefAttribute is only valid in C# 11 or later or when targeting net7.0 or later.*
 - [**CS9271**](#implementation-specific-attributes): *The type '`Microsoft.CodeAnalysis.EmbeddedAttribute`' must be non-generic, internal, sealed, non-static, have a parameterless constructor, inherit from System.Attribute, and be able to be applied to any type.*
+- **CS9327**: *Feature is not available in C# 14.0. Use newer language version.*
+- **CS9328**: *Method uses a feature that is not supported by runtime async currently.*
 
 In addition, the following errors and warnings relate to struct initialization changes in recent versions:
 

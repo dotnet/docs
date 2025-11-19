@@ -53,7 +53,7 @@ This registration adds a `DelegatingHandler` to all HTTP clients created through
 
 ### Configure telemetry options
 
-You configure telemetry collection through the <xref:Microsoft.Extensions.Http.Latency.HttpClientLatencyTelemetryOptions> ([standard options pattern](https://learn.microsoft.com/dotnet/core/extensions/options)).
+You configure telemetry collection through the <xref:Microsoft.Extensions.Http.Latency.HttpClientLatencyTelemetryOptions> ([standard options pattern](options.md)).
 You can supply values either with a delegate or by binding configuration (for example, `appsettings.json`).
 The options instance is resolved once per handler pipeline so changes apply to new clients/handlers.
 

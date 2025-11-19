@@ -2,8 +2,9 @@
 title: global.json overview
 description: Learn how to use the global.json file to set the .NET SDK version when running .NET CLI commands.
 ms.topic: how-to
-ms.date: 07/05/2024
+ms.date: 10/22/2025
 ms.custom: "updateeachrelease"
+ai-usage: ai-assisted
 ---
 # global.json overview
 
@@ -42,7 +43,9 @@ The version of the .NET SDK to use.
 
 This field:
 
-- Doesn't have wildcard support; that is, you must specify the full version number.
+- Requires the full version number, such as 9.0.100.
+- Doesn't support version numbers like 9, 9.0, or 9.0.x.
+- Doesn't have wildcard support.
 - Doesn't support version ranges.
 
 #### `allowPrerelease`
@@ -89,7 +92,7 @@ The following table shows the possible values for the `rollForward` key:
 #### `paths`
 
 - Type: Array of `string`
-- Available since: .NET 10 Preview 3 SDK.
+- Available since: .NET 10 SDK.
 
 Specifies the locations that should be considered when searching for a compatible .NET SDK. Paths can be absolute or relative to the location of the *global.json* file. The special value `$host$` represents the location corresponding to the running `dotnet` executable.
 
@@ -102,7 +105,7 @@ This feature enables using local SDK installations (such as SDKs relative to a r
 #### `errorMessage`
 
 - Type: `string`
-- Available since: .NET 10 Preview 3 SDK.
+- Available since: .NET 10 SDK.
 
 Specifies a custom error message displayed when the SDK resolver can't find a compatible .NET SDK.
 
@@ -204,6 +207,17 @@ The following example shows how to specify additional SDK search paths and a cus
     "version": "10.0.100",
     "paths": [ ".dotnet", "$host$" ],
     "errorMessage": "The required .NET SDK wasn't found. Please run ./install.sh to install it."
+  }
+}
+```
+
+The following example shows an invalid version specified. The output of the command `dotnet --info` shows the error message: "Version '10.0' is not valid for the 'sdk/version' value."
+
+```json
+{
+  "sdk": {
+    "version": "10.0",
+    "rollForward": "latestFeature"
   }
 }
 ```

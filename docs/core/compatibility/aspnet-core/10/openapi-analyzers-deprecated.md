@@ -16,7 +16,7 @@ The `IncludeOpenAPIAnalyzers` MSBuild property and its associated MVC API analyz
 
 ## Previous behavior
 
-Previously, developers could set `<IncludeOpenAPIAnalyzers>true</IncludeOpenAPIAnalyzers>` in their Web SDK projects to enable MVC API analyzers without any warnings or deprecation notices.
+Previously, you could set `<IncludeOpenAPIAnalyzers>true</IncludeOpenAPIAnalyzers>` in your Web SDK projects to enable MVC API analyzers without any warnings or deprecation notices.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk.Web">

@@ -1,7 +1,8 @@
 ---
 title: Organizing and testing projects with the .NET CLI
 description: This tutorial explains how to organize and test .NET projects from the command line.
-ms.date: 04/15/2022
+ms.date: 10/23/2025
+ai-usage: ai-assisted
 ---
 
 # Organizing and testing projects with the .NET CLI
@@ -23,7 +24,7 @@ If you want to introduce new types into a console app, you can do so by adding f
 |__Program.cs
 ```
 
-However, this flat structure only works well when the size of your project is relatively small. Can you imagine what will happen if you add 20 types to the project? The project definitely wouldn't be easy to navigate and maintain with that many files littering the project's root directory.
+However, this flat structure only works well when the size of your project is relatively small. Can you imagine what happens if you add 20 types to the project? The project definitely wouldn't be easy to navigate and maintain with that many files littering the project's root directory.
 
 To organize the project, create a new folder and name it *Models* to hold the type files. Place the type files into the *Models* folder:
 

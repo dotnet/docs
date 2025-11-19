@@ -1,8 +1,9 @@
 ---
 title: Respect nullable annotations
 description: "Learn how to configure serialization and deserialization to respect nullable annotations."
-ms.date: 10/22/2024
+ms.date: 10/20/2025
 no-loc: [System.Text.Json, Newtonsoft.Json]
+ai-usage: ai-assisted
 ---
 # Respect nullable annotations
 
@@ -83,6 +84,21 @@ record MyPoco(
     string? OptionalNullable = "default"
     );
 ```
+
+## Missing values versus null values
+
+It's important to understand the distinction between *missing JSON properties* and *properties with explicit `null` values* when you set <xref:System.Text.Json.JsonSerializerOptions.RespectNullableAnnotations>. JavaScript distinguishes between `undefined` (missing property) and `null` (explicit null value). However, .NET doesn't have an `undefined` concept, so both cases deserialize to `null` in .NET.
+
+During deserialization, when `RespectNullableAnnotations` is `true`:
+
+- An **explicit null value** throws an exception for non-nullable properties. For example, `{"Name":null}` throws an exception when deserializing to a non-nullable `string Name` property.
+- A **missing property** doesn't throw an exception, even for non-nullable properties. For example, `{}` doesn't throw an exception when deserializing to a non-nullable `string Name` property. The serializer doesn't set the property, leaving it at its default value from the constructor. For an uninitialized non-nullable reference type, this results in `null`, which triggers a compiler warning.
+
+  The following code shows how a missing property does NOT throw an exception during deserialization:
+
+  :::code language="csharp" source="snippets/nullable-annotations/Nullable.cs" id="MissingVsNull":::
+
+This behavior difference occurs because missing properties are treated as optional (not provided), while explicit `null` values are treated as provided values that violate the non-nullable constraint. If you need to enforce that a property must be present in the JSON, use the `required` modifier or configure the property as required using <xref:System.Text.Json.Serialization.JsonRequiredAttribute> or the contracts model.
 
 ## See also
 

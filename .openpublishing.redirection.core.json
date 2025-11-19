@@ -114,6 +114,10 @@
             "redirect_url": "/dotnet/core/compatibility/8.0"
         },
         {
+            "source_path_from_root": "/docs/core/compatibility/core-libraries/10.0/ymm-embedded-rounding.md",
+            "redirect_url": "/dotnet/core/compatibility/10.0"
+        },
+        {
             "source_path_from_root": "/docs/core/compatibility/corefx.md",
             "redirect_url": "/dotnet/core/compatibility/3.0"
         },
@@ -198,6 +202,10 @@
         {
             "source_path_from_root": "/docs/core/compatibility/sdk/8.0/tool-rollforward.md",
             "redirect_url": "/dotnet/core/compatibility/8.0"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/sdk/10.0/version-requirements.md",
+            "redirect_url": "/dotnet/core/compatibility/10.0"
         },
         {
             "source_path_from_root": "/docs/core/compatibility/serialization.md",
@@ -940,7 +948,7 @@
         },
         {
             "source_path_from_root": "/docs/core/porting/github-copilot-app-modernization-install.md",
-            "redirect_url": "/dotnet/core/porting/github-copilot-app-modernization-overview"
+            "redirect_url": "/dotnet/core/porting/github-copilot-app-modernization/overview"
         },
         {
             "source_path_from_root": "/docs/core/preview3/tools/csproj.md",

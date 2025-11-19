@@ -56,11 +56,11 @@ The C# compiler ignores any preprocessor directive that starts with `#:` or `#!`
 The `#!` preprocessor directive enables unix shells to directly execute a C# file using `dotnet run`. For example:
 
 ```csharp
-#!/usr/local/share/dotnet/dotnet run
+#!/usr/bin/env dotnet run
 Console.WriteLine("Hello");
 ```
 
-The preceding code snippet informs a Unix shell to execute the file using `/usr/local/share/dotnet/dotnet run`. (Your installation directory for the `dotnet` CLI can be different on different Unix or macOS distributions). The `#!` line must be the first line in the file, and the following tokens are the program to run. You need to enable the *execute* (`x`) permission on the C# file for that feature.
+The preceding code snippet informs a Unix shell to execute the file using `dotnet run`. The `/usr/bin/env` command locates the `dotnet` executable in your PATH, making this approach portable across different Unix and macOS distributions. The `#!` line must be the first line in the file, and the following tokens are the program to run. You need to enable the *execute* (`x`) permission on the C# file for that feature.
 
 The `#:` directives that are used in file-based apps include:
 
@@ -121,7 +121,7 @@ The `#:` directives that are used in file-based apps include:
   The preceding preprocessor token is translated into:
 
   ```xml
-  <ProjectReference Include="../Path/To.Example.csproj" />
+  <ProjectReference Include="../Path/To.Example/To.Example.csproj" />
   ```
   
 Tools can add new tokens following the `#:` convention.

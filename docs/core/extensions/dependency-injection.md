@@ -3,8 +3,9 @@ title: Dependency injection
 description: Learn how to use dependency injection within your .NET apps. Discover how to registration services, define service lifetimes, and express dependencies in C#.
 author: IEvangelist
 ms.author: dapine
-ms.date: 07/18/2024
+ms.date: 10/21/2025
 ms.topic: overview
+ai-usage: ai-assisted
 ---
 
 # .NET dependency injection
@@ -23,7 +24,7 @@ public class MessageWriter
 }
 ```
 
-A class can create an instance of the `MessageWriter` class to make use of its `Write` method. In the following example, the `MessageWriter` class is a dependency of the `Worker` class:
+A class can create an instance of the `MessageWriter` class to use its `Write` method. In the following example, the `MessageWriter` class is a dependency of the `Worker` class:
 
 ```csharp
 public class Worker : BackgroundService
@@ -43,14 +44,14 @@ public class Worker : BackgroundService
 
 The class creates and directly depends on the `MessageWriter` class. Hard-coded dependencies, such as in the previous example, are problematic and should be avoided for the following reasons:
 
-- To replace `MessageWriter` with a different implementation, the `Worker` class must be modified.
-- If `MessageWriter` has dependencies, they must also be configured by the `Worker` class. In a large project with multiple classes depending on `MessageWriter`, the configuration code becomes scattered across the app.
+- To replace `MessageWriter` with a different implementation, you must modify the `Worker` class.
+- If `MessageWriter` has dependencies, the `Worker` class must also configure them. In a large project with multiple classes depending on `MessageWriter`, the configuration code becomes scattered across the app.
 - This implementation is difficult to unit test. The app should use a mock or stub `MessageWriter` class, which isn't possible with this approach.
 
-Dependency injection addresses these problems through:
+Dependency injection addresses the following problems through:
 
 - The use of an interface or base class to abstract the dependency implementation.
-- Registration of the dependency in a service container. .NET provides a built-in service container, <xref:System.IServiceProvider>. Services are typically registered at the app's start-up and appended to an <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>. Once all services are added, you use <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider%2A> to create the service container.
+- Registration of the dependency in a service container. .NET provides a built-in service container, <xref:System.IServiceProvider>. Services are typically registered at the app's start-up and appended to an <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>. Once all services are added, use <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider%2A> to create the service container.
 - *Injection* of the service into the constructor of the class where it's used. The framework takes on the responsibility of creating an instance of the dependency and disposing of it when it's no longer needed.
 
 As an example, the `IMessageWriter` interface defines the `Write` method:
@@ -81,10 +82,10 @@ The host contains the dependency injection service provider. It also contains al
 
 By using the DI pattern, the worker service:
 
-- Doesn't use the concrete type `MessageWriter`, only the `IMessageWriter` interface that it implements. That makes it easy to change the implementation that the worker service uses without modifying the worker service.
-- Doesn't create an instance of `MessageWriter`. The instance is created by the DI container.
+- Doesn't use the concrete type `MessageWriter`, only the `IMessageWriter` interface that it implements. This makes it easy to change the implementation that the worker service uses without modifying the worker service.
+- Doesn't create an instance of `MessageWriter`. The DI container creates the instance.
 
-The implementation of the `IMessageWriter` interface can be improved by using the built-in logging API:
+The implementation of the `IMessageWriter` interface can be improved using the built-in logging API:
 
 :::code language="csharp" source="snippets/configuration/dependency-injection/LoggingMessageWriter.cs":::
 
@@ -98,16 +99,16 @@ The <xref:Microsoft.Extensions.Hosting.HostApplicationBuilder> (`builder`) type 
 
 `LoggingMessageWriter` depends on <xref:Microsoft.Extensions.Logging.ILogger%601>, which it requests in the constructor. `ILogger<TCategoryName>` is a [framework-provided service](#framework-provided-services).
 
-It's not unusual to use dependency injection in a chained fashion. Each requested dependency in turn requests its own dependencies. The container resolves the dependencies in the graph and returns the fully resolved service. The collective set of dependencies that must be resolved is typically referred to as a *dependency tree*, *dependency graph*, or *object graph*.
+It's not unusual to use dependency injection in a chained fashion. Each requested dependency in turn requests its own dependencies. The container resolves the dependencies in the graph and returns the fully resolved service. The collective set of dependencies that must be resolved is typically called a *dependency tree*, *dependency graph*, or *object graph*.
 
 The container resolves `ILogger<TCategoryName>` by taking advantage of [(generic) open types](/dotnet/csharp/language-reference/language-specification/types#843-open-and-closed-types), eliminating the need to register every [(generic) constructed type](/dotnet/csharp/language-reference/language-specification/types#84-constructed-types).
 
 With dependency injection terminology, a service:
 
 - Is typically an object that provides a service to other objects, such as the `IMessageWriter` service.
-- Is not related to a web service, although the service may use a web service.
+- Isn't related to a web service, although the service might use a web service.
 
-The framework provides a robust logging system. The `IMessageWriter` implementations shown in the preceding examples were written to demonstrate basic DI, not to implement logging. Most apps shouldn't need to write loggers. The following code demonstrates using the default logging, which only requires the `Worker` to be registered as a hosted service <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionHostedServiceExtensions.AddHostedService%2A>:
+The framework provides a robust logging system. The `IMessageWriter` implementations shown in the preceding examples demonstrate basic DI, not logging. Most apps shouldn't need to write loggers. The following code demonstrates using the default logging, which only requires the `Worker` to be registered as a hosted service <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionHostedServiceExtensions.AddHostedService%2A>:
 
 ```csharp
 public sealed class Worker(ILogger<Worker> logger) : BackgroundService
@@ -124,7 +125,7 @@ public sealed class Worker(ILogger<Worker> logger) : BackgroundService
 }
 ```
 
-Using the preceding code, there is no need to update _Program.cs_, because logging is provided by the framework.
+Using the preceding code, there's no need to update _Program.cs_, because the framework provides logging.
 
 ## Multiple constructor discovery rules
 
@@ -149,7 +150,7 @@ public class ExampleService
 }
 ```
 
-In the preceding code, assume that logging has been added and is resolvable from the service provider but the `FooService` and `BarService` types are not. The constructor with the `ILogger<ExampleService>` parameter is used to resolve the `ExampleService` instance. Even though there's a constructor that defines more parameters, the `FooService` and `BarService` types are not DI-resolvable.
+In the preceding code, assume that logging has been added and is resolvable from the service provider but the `FooService` and `BarService` types aren't. The constructor with the `ILogger<ExampleService>` parameter resolves the `ExampleService` instance. Even though there's a constructor that defines more parameters, the `FooService` and `BarService` types aren't DI-resolvable.
 
 If there's ambiguity when discovering constructors, an exception is thrown. Consider the following C# example service:
 
@@ -173,11 +174,11 @@ public class ExampleService
 ```
 
 > [!WARNING]
-> The `ExampleService` code with ambiguous DI-resolvable type parameters would throw an exception. Do **not** do this&mdash;it's intended to show what is meant by "ambiguous DI-resolvable types".
+> The `ExampleService` code with ambiguous DI-resolvable type parameters throws an exception. **Don't** do this&mdash;it's intended to show what is meant by "ambiguous DI-resolvable types".
 
-In the preceding example, there are three constructors. The first constructor is parameterless and requires no services from the service provider. Assume that both logging and options have been added to the DI container and are DI-resolvable services. When the DI container attempts to resolve the `ExampleService` type, it will throw an exception, as the two constructors are ambiguous.
+In the preceding example, there are three constructors. The first constructor is parameterless and requires no services from the service provider. Assume that both logging and options have been added to the DI container and are DI-resolvable services. When the DI container attempts to resolve the `ExampleService` type, it throws an exception, as the two constructors are ambiguous.
 
-You can avoid ambiguity by defining a constructor that accepts both DI-resolvable types instead:
+Avoid ambiguity by defining a constructor that accepts both DI-resolvable types instead:
 
 ```csharp
 public class ExampleService
@@ -210,7 +211,7 @@ When using any of the available host or app builder patterns, defaults are appli
 - <xref:Microsoft.AspNetCore.Components.WebAssembly.Hosting.WebAssemblyHostBuilder.CreateDefault%2A?displayProperty=nameWithType>
 - <xref:Microsoft.Maui.Hosting.MauiApp.CreateBuilder%2A?displayProperty=nameWithType>
 
-After creating a builder from any of these APIs, the `IServiceCollection` has services defined by the framework, depending on [how the host was configured](generic-host.md#host-configuration). For apps based on the .NET templates, the framework could register hundreds of services.
+After creating a builder from any of these APIs, the `IServiceCollection` has services defined by the framework, depending on [how you configured the host](generic-host.md#host-configuration). For apps based on the .NET templates, the framework could register hundreds of services.
 
 The following table lists a small sample of these framework-registered services:
 
@@ -275,7 +276,7 @@ Every subsequent request of the service implementation from the dependency injec
 
 Register singleton services with <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton%2A>. Singleton services must be thread safe and are often used in stateless services.
 
-In apps that process requests, singleton services are disposed when the <xref:Microsoft.Extensions.DependencyInjection.ServiceProvider> is disposed on application shutdown. Because memory is not released until the app is shut down, consider memory use with a singleton service.
+In apps that process requests, singleton services are disposed when the <xref:Microsoft.Extensions.DependencyInjection.ServiceProvider> is disposed on application shutdown. Because memory isn't released until the app shuts down, consider memory use with a singleton service.
 
 ## Service registration methods
 
@@ -303,9 +304,9 @@ This is equivalent to registering the service with both the service and implemen
 services.AddSingleton<ExampleService, ExampleService>();
 ```
 
-This equivalency is why multiple implementations of a service can't be registered using the methods that don't take an explicit service type. These methods can register multiple *instances* of a service, but they will all have the same *implementation* type.
+This equivalency is why multiple implementations of a service can't be registered using the methods that don't take an explicit service type. These methods can register multiple *instances* of a service, but they all have the same *implementation* type.
 
-Any of the above service registration methods can be used to register multiple service instances of the same service type. In the following example, `AddSingleton` is called twice with `IMessageWriter` as the service type. The second call to `AddSingleton` overrides the previous one when resolved as `IMessageWriter` and adds to the previous one when multiple services are resolved via `IEnumerable<IMessageWriter>`. Services appear in the order they were registered when resolved via `IEnumerable<{SERVICE}>`.
+Any of the service registration methods can be used to register multiple service instances of the same service type. In the following example, `AddSingleton` is called twice with `IMessageWriter` as the service type. The second call to `AddSingleton` overrides the previous one when resolved as `IMessageWriter` and adds to the previous one when multiple services are resolved via `IEnumerable<IMessageWriter>`. Services appear in the order they were registered when resolved via `IEnumerable<{SERVICE}>`.
 
 :::code language="csharp" source="snippets/configuration/console-di-ienumerable/Program.cs" highlight="11-16":::
 
@@ -313,7 +314,7 @@ The preceding sample source code registers two implementations of the `IMessageW
 
 :::code language="csharp" source="snippets/configuration/console-di-ienumerable/ExampleService.cs" highlight="7-16":::
 
-The `ExampleService` defines two constructor parameters; a single `IMessageWriter`, and an `IEnumerable<IMessageWriter>`. The single `IMessageWriter` is the last implementation to have been registered, whereas the `IEnumerable<IMessageWriter>` represents all registered implementations.
+The `ExampleService` defines two constructor parameters; a single `IMessageWriter`, and an `IEnumerable<IMessageWriter>`. The single `IMessageWriter` is the last implementation to be registered, whereas the `IEnumerable<IMessageWriter>` represents all registered implementations.
 
 The framework also provides `TryAdd{LIFETIME}` extension methods, which register the service only if there isn't already an implementation registered.
 
@@ -324,7 +325,7 @@ services.AddSingleton<IMessageWriter, ConsoleMessageWriter>();
 services.TryAddSingleton<IMessageWriter, LoggingMessageWriter>();
 ```
 
-The `TryAddSingleton` has no effect, as it was already added and the "try" will fail. The `ExampleService` would assert the following:
+The `TryAddSingleton` has no effect, as it was already added and the "try" fails. The `ExampleService` asserts the following:
 
 ```csharp
 public class ExampleService
@@ -346,7 +347,7 @@ For more information, see:
 - <xref:Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions.TryAddScoped%2A>
 - <xref:Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions.TryAddSingleton%2A>
 
-The [TryAddEnumerable(ServiceDescriptor)](xref:Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions.TryAddEnumerable%2A) methods register the service only if there isn't already an implementation *of the same type*. Multiple services are resolved via `IEnumerable<{SERVICE}>`. When registering services, add an instance if one of the same types hasn't already been added. Library authors use `TryAddEnumerable` to avoid registering multiple copies of an implementation in the container.
+The [TryAddEnumerable(ServiceDescriptor)](xref:Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions.TryAddEnumerable%2A) methods register the service only if there isn't already an implementation *of the same type*. Multiple services are resolved via `IEnumerable<{SERVICE}>`. When registering services, add an instance if one of the same types wasn't already added. Library authors use `TryAddEnumerable` to avoid registering multiple copies of an implementation in the container.
 
 In the following example, the first call to `TryAddEnumerable` registers `MessageWriter` as an implementation for `IMessageWriter1`. The second call registers `MessageWriter` for `IMessageWriter2`. The third call has no effect because `IMessageWriter1` already has a registered implementation of `MessageWriter`:
 
@@ -363,7 +364,7 @@ services.TryAddEnumerable(ServiceDescriptor.Singleton<IMessageWriter2, MessageWr
 services.TryAddEnumerable(ServiceDescriptor.Singleton<IMessageWriter1, MessageWriter>());
 ```
 
-Service registration is generally order-independent except when registering multiple implementations of the same type.
+Service registration is order-independent except when registering multiple implementations of the same type.
 
 `IServiceCollection` is a collection of <xref:Microsoft.Extensions.DependencyInjection.ServiceDescriptor> objects. The following example shows how to register a service by creating and adding a `ServiceDescriptor`:
 
@@ -381,7 +382,7 @@ The built-in `Add{LIFETIME}` methods use the same approach. For example, see the
 
 ### Constructor injection behavior
 
-Services can be resolved by using:
+Services can be resolved using:
 
 - <xref:System.IServiceProvider>
 - <xref:Microsoft.Extensions.DependencyInjection.ActivatorUtilities>:
@@ -390,9 +391,9 @@ Services can be resolved by using:
 
 Constructors can accept arguments that aren't provided by dependency injection, but the arguments must assign default values.
 
-When services are resolved by `IServiceProvider` or `ActivatorUtilities`, constructor injection requires a *public* constructor.
+When `IServiceProvider` or `ActivatorUtilities` resolve services, constructor injection requires a *public* constructor.
 
-When services are resolved by `ActivatorUtilities`, constructor injection requires that only one applicable constructor exists. Constructor overloads are supported, but only one overload can exist whose arguments can all be fulfilled by dependency injection.
+When `ActivatorUtilities` resolves services, constructor injection requires that only one applicable constructor exists. Constructor overloads are supported, but only one overload can exist whose arguments can all be fulfilled by dependency injection.
 
 ## Scope validation
 
@@ -407,16 +408,16 @@ Scoped services are disposed by the container that created them. If a scoped ser
 
 ## Scope scenarios
 
-The <xref:Microsoft.Extensions.DependencyInjection.IServiceScopeFactory> is always registered as a singleton, but the <xref:System.IServiceProvider> can vary based on the lifetime of the containing class. For example, if you resolve services from a scope, and any of those services take an <xref:System.IServiceProvider>, it'll be a scoped instance.
+The <xref:Microsoft.Extensions.DependencyInjection.IServiceScopeFactory> is always registered as a singleton, but the <xref:System.IServiceProvider> can vary based on the lifetime of the containing class. For example, if you resolve services from a scope, and any of those services take an <xref:System.IServiceProvider>, it is a scoped instance.
 
-To achieve scoping services within implementations of <xref:Microsoft.Extensions.Hosting.IHostedService>, such as the <xref:Microsoft.Extensions.Hosting.BackgroundService>, do *not* inject the service dependencies via constructor injection. Instead, inject <xref:Microsoft.Extensions.DependencyInjection.IServiceScopeFactory>, create a scope, then resolve dependencies from the scope to use the appropriate service lifetime.
+To achieve scoping services within implementations of <xref:Microsoft.Extensions.Hosting.IHostedService>, such as the <xref:Microsoft.Extensions.Hosting.BackgroundService>, *don't* inject the service dependencies via constructor injection. Instead, inject <xref:Microsoft.Extensions.DependencyInjection.IServiceScopeFactory>, create a scope, then resolve dependencies from the scope to use the appropriate service lifetime.
 
 :::code language="csharp" source="snippets/configuration/worker-scope/Worker.cs":::
 
 In the preceding code, while the app is running, the background service:
 
 - Depends on the <xref:Microsoft.Extensions.DependencyInjection.IServiceScopeFactory>.
-- Creates an <xref:Microsoft.Extensions.DependencyInjection.IServiceScope> for resolving additional services.
+- Creates an <xref:Microsoft.Extensions.DependencyInjection.IServiceScope> for resolving other services.
 - Resolves scoped services for consumption.
 - Works on processing objects and then relaying them, and finally marks them as processed.
 
@@ -424,7 +425,7 @@ From the sample source code, you can see how implementations of <xref:Microsoft.
 
 ## Keyed services
 
-Starting with .NET 8, there is support for service registrations and lookups based on a key, meaning it's possible to register multiple services with a different key, and use this key for the lookup.
+Starting with .NET 8, there's support for service registrations and lookups based on a key, meaning it's possible to register multiple services with a different key, and use this key for the lookup.
 
 For example, consider the case where you have different implementations of the interface `IMessageWriter`: `MemoryMessageWriter` and `QueueMessageWriter`.
 
@@ -435,7 +436,7 @@ services.AddKeyedSingleton<IMessageWriter, MemoryMessageWriter>("memory");
 services.AddKeyedSingleton<IMessageWriter, QueueMessageWriter>("queue");
 ```
 
-The `key` isn't limited to `string`, it can be any `object` you want, as long as the type correctly implements `Equals`.
+The `key` isn't limited to `string`. The `key` can be any `object` you want, as long as the type correctly implements `Equals`.
 
 In the constructor of the class that uses `IMessageWriter`, you add the <xref:Microsoft.Extensions.DependencyInjection.FromKeyedServicesAttribute> to specify the key of the service to resolve:
 

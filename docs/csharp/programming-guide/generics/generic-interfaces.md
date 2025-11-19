@@ -1,7 +1,7 @@
 ---
 title: "Generic Interfaces"
 description: Learn about using generic interfaces in C#. See code examples and view other available resources.
-ms.date: 07/08/2022
+ms.date: 11/18/2025
 helpviewer_keywords: 
   - "C# language, generic interfaces"
   - "generics [C#], interfaces"
@@ -38,7 +38,7 @@ Generic classes can implement generic interfaces or closed constructed interface
 
 The rules that control method overloading are the same for methods within generic classes, generic structs, or generic interfaces. For more information, see [Generic Methods](./generic-methods.md).
 
-Beginning with C# 11, interfaces may declare `static abstract` or `static virtual` members. Interfaces that declare either `static abstract` or `static virtual` members are almost always generic interfaces. The compiler must resolve calls to `static virtual` and `static abstract` methods at compile time. `static virtual` and `static abstract` methods declared in interfaces don't have a runtime dispatch mechanism analogous to `virtual` or `abstract` methods declared in classes. Instead, the compiler uses type information available at compile time. These members are typically declared in generic interfaces. Furthermore, most interfaces that declare `static virtual` or `static abstract` methods declare that one of the type parameters must [implement the declared interface](../../programming-guide/generics/constraints-on-type-parameters.md#type-arguments-implement-declared-interface). The compiler then uses the supplied type arguments to resolve the type of the declared member.
+Interfaces can declare `static abstract` or `static virtual` members. Interfaces that declare either `static abstract` or `static virtual` members are almost always generic interfaces. The compiler must resolve calls to `static virtual` and `static abstract` methods at compile time. `static virtual` and `static abstract` methods declared in interfaces don't have a runtime dispatch mechanism analogous to `virtual` or `abstract` methods declared in classes. Instead, the compiler uses type information available at compile time. These members are typically declared in generic interfaces. Furthermore, most interfaces that declare `static virtual` or `static abstract` methods declare that one of the type parameters must [implement the declared interface](../../programming-guide/generics/constraints-on-type-parameters.md#type-arguments-implement-declared-interface). The compiler then uses the supplied type arguments to resolve the type of the declared member.
 
 ## See also
 

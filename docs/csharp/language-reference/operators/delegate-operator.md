@@ -1,7 +1,7 @@
 ---
 title: "delegate operator - Create an anonymous method that can be converted to a delegate type."
 description: "The C# delegate operator that is used to create anonymous methods. These types can be used for `Func<>` and `Action<>` parameters in many .NET APIs."
-ms.date: 11/29/2022
+ms.date: 11/18/2025
 helpviewer_keywords:
   - "delegate [C#]"
   - "anonymous method [C#]"
@@ -23,7 +23,7 @@ When you use the `delegate` operator, you might omit the parameter list. If you 
 
 [!code-csharp-interactive[no parameter list](snippets/shared/DelegateOperator.cs#WithoutParameterList)]
 
-That's the only functionality of anonymous methods that isn't supported by lambda expressions. In all other cases, a lambda expression is a preferred way to write inline code. You can use [discards](../../fundamentals/functional/discards.md) to specify two or more input parameters of an anonymous method that aren't used by the method:
+That's the only functionality of anonymous methods not supported by lambda expressions. In all other cases, a lambda expression is a preferred way to write inline code. You can use [discards](../../fundamentals/functional/discards.md) to specify two or more input parameters of an anonymous method that aren't used by the method:
 
 :::code language="csharp" source="snippets/shared/DelegateOperator.cs" id="SnippetDiscards" :::
 
@@ -37,22 +37,16 @@ A static anonymous method can't capture local variables or instance state from e
 
 You also use the `delegate` keyword to declare a [delegate type](../builtin-types/reference-types.md#the-delegate-type).
 
-Beginning with C# 11, the compiler may cache the delegate object created from a method group. Consider the following method:
+The compiler can cache the delegate object created from a method group. Consider the following method:
 
 ```csharp
 static void StaticFunction() { }
 ```
 
-When you assign the method group to a delegate, the compiler will cache the delegate:
+When you assign the method group to a delegate, the compiler caches the delegate:
 
 ```csharp
 Action a = StaticFunction;
-```
-
-Before C# 11, you'd need to use a lambda expression to reuse a single delegate object:
-
-```csharp
-Action a = () => StaticFunction();
 ```
 
 ## C# language specification

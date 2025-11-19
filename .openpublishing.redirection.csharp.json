@@ -350,10 +350,6 @@
             "redirect_url": "/dotnet/core/tutorials/testing-library-with-visual-studio"
         },
         {
-            "source_path_from_root": "/docs/csharp/getting-started/whats-new.md",
-            "redirect_url": "/dotnet/csharp/whats-new/csharp-11"
-        },
-        {
             "source_path_from_root": "/docs/csharp/getting-started/with-visual-studio-2017.md",
             "redirect_url": "/dotnet/core/tutorials/with-visual-studio",
             "redirect_document_id": true
@@ -4753,7 +4749,11 @@
         },
         {
             "source_path_from_root": "/docs/csharp/whats-new/tutorials/static-abstract-interface-methods.md",
-            "redirect_url": "/dotnet/csharp/whats-new/tutorials/static-virtual-interface-members"
+            "redirect_url": "/dotnet/advanced-topics/interface-implementation/static-virtual-interface-members"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/whats-new/tutorials/static-virtual-interface-members.md",
+            "redirect_url": "/dotnet/advanced-topics/interface-implementation/static-virtual-interface-members"
         },
         {
             "source_path_from_root": "/docs/csharp/whats-new/tutorials/top-level-statements.md",
@@ -5005,8 +5005,12 @@
             "redirect_url": "/dotnet/csharp/whats-new/csharp-version-history#c-version-10"
         },
         {
+            "source_path_from_root": "/docs/csharp/whats-new/csharp-11.md",
+            "redirect_url": "/dotnet/csharp/whats-new/csharp-version-history#c-version-11"
+        },
+        {
             "source_path_from_root": "/docs/csharp/whats-new/index.md",
-            "redirect_url": "/dotnet/csharp/whats-new/csharp-13",
+            "redirect_url": "/dotnet/csharp/whats-new/csharp-14",
             "ms.custom": "updateeachrelease"
         },
         {

@@ -1,7 +1,7 @@
 ---
 title: "Addition operators - + and +="
 description: "The C# addition operators (`+`, and `+=`) work with operands of numeric, string, or delegate types."
-ms.date: 06/11/2025
+ms.date: 11/18/2025
 f1_keywords: 
   - "+_CSharpKeyword"
   - "+=_CSharpKeyword"
@@ -32,7 +32,7 @@ When one or both operands are of type [string](../builtin-types/reference-types.
 
 You can use string interpolation to initialize a constant string when all the expressions used for placeholders are also constant strings.
 
-Beginning with C# 11, the `+` operator performs string concatenation for UTF-8 literal strings. This operator concatenates two `ReadOnlySpan<byte>` objects.
+The `+` operator performs string concatenation for UTF-8 literal strings. This operator concatenates two `ReadOnlySpan<byte>` objects.
 
 ## Delegate combination
 

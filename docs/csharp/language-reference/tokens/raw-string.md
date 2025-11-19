@@ -3,7 +3,7 @@ description: "Raw string literals can contain any arbitrary text without the nee
 title: "Raw string literals - \"\"\""
 f1_keywords:
   - "RawStringLiteral_CSharpKeyword"
-ms.date: 10/07/2025
+ms.date: 11/18/2025
 ---
 # Raw string literal text - `"""` in string literals
 
@@ -37,8 +37,6 @@ If you need to start or end a raw string literal with quote characters, use the 
 Raw string literals can also be combined with [interpolated strings](./interpolated.md#interpolated-raw-string-literals) to embed the `{` and `}` characters in the output string. You use multiple `$` characters in an interpolated raw string literal to embed `{` and `}` characters in the output string without escaping them.
 
 The raw string literal's content must not contain a set of contiguous `"` characters whose length is equal to or greater than the raw string literal delimiter length. For example, the strings `"""" """ """"` and `""""""" """""" """"" """" """ """""""` are well-formed. However, the strings `""" """ """` and `""" """" """` are ill-formed
-
-Raw string literals were introduced in C# 11.
 
 ## See also
 

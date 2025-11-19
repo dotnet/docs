@@ -34,7 +34,7 @@ In C# 14, you can add validation or other logic in the accessor for a property u
 
 ## Required properties
 
-The preceding example allows a caller to create a `Person` using the default constructor, without setting the `FirstName` property. The property changed type to a *nullable* string. Beginning in C# 11, you can *require* callers to set a property:
+The preceding example allows a caller to create a `Person` using the default constructor, without setting the `FirstName` property. The property changed type to a *nullable* string. You can *require* callers to set a property:
 
 :::code language="csharp" source="./snippets/properties/Person.cs" id="Required":::
 

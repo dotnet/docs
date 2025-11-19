@@ -1,6 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-Console.WriteLine(Utilities.MidPoint(12, 24));
+﻿Console.WriteLine(Utilities.MidPoint(12, 24));
 
 // <TestRepeat>
 var str = new RepeatSequence();

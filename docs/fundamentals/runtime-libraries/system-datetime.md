@@ -27,8 +27,6 @@ Time values are measured in 100-nanosecond units called ticks. A particular date
 
 ## Quick links to example code
 
-[!INCLUDE[interactive-note](./includes/csharp-interactive-with-utc-note.md)]
-
 This article includes several examples that use the `DateTime` type:
 
 ### Initialization examples

@@ -67,8 +67,6 @@ The following table describes the standard numeric format specifiers and display
 
 ## Use standard numeric format strings
 
-[!INCLUDE[interactive-note](~/includes/csharp-interactive-note.md)]
-
 A standard numeric format string can be used to define the formatting of a numeric value in one of the following ways:
 
 - It can be passed to the `TryFormat` method or an overload of the `ToString` method that has a `format` parameter. The following example formats a numeric value as a currency string in the current culture (in this case, the en-US culture).

@@ -3,7 +3,7 @@ title: Prepare .NET libraries for trimming
 description: Learn how to prepare .NET libraries for trimming.
 author: sbomer
 ms.author: svbomer
-ms.date: 06/12/2023
+ms.date: 11/20/2025
 ---
 
 # Prepare .NET libraries for trimming

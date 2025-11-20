@@ -60,7 +60,9 @@
             "style": "asterisk"
         },
         "MD051": false,
-        "MD060": "any"
+        "MD060": {
+            "style": "any"
+        }
     },
     "ignores": [
         ".github/",

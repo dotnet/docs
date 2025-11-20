@@ -25,7 +25,7 @@ This article details the settings you can use to configure .NET debugging and pr
 
 - Configures whether profiling is enabled for the currently running process.
 - If you omit this setting, profiling is disabled. This is equivalent to setting the value to `0`.
-- In addition to enabling profiling, the profiler GUID and profiler location also need to be configured using the settings below in order to load a profiler.
+- To load a profiler, in addition to enabling profiling, the profiler GUID and profiler location also need to be configured using these settings.
 
 | | Setting name | Values |
 | - | - | - |
@@ -43,7 +43,7 @@ This article details the settings you can use to configure .NET debugging and pr
 
 ## Profiler location
 
-Once profiling is enabled, the profiler can be loaded in two ways, with environment variables (cross-plat) or through the registry (Windows only). The profiler path environment variables take precedence over any COM library path in the registry if both are specified.
+Once profiling is enabled, the profiler can be loaded in two ways: with environment variables (cross-plat) or through the registry (Windows only). The profiler path environment variables take precedence over any COM library path in the registry if both are specified.
 
 ### Environment variable (cross-plat)
 
@@ -60,7 +60,7 @@ Once profiling is enabled, the profiler can be loaded in two ways, with environm
 
 ### Through the registry (Windows only)
 
-When the `DOTNET_PROFILER_PATH*` environment variables above are not set while running on Windows, coreclr looks up the CLSID from `DOTNET_PROFILER` in the registry to find the full path to the profiler's DLL. Just like with any COM server DLL, the profiler's CLSID is looked up under HKEY_CLASSES_ROOT, which merges the classes from HKLM and HKCU.
+When the `DOTNET_PROFILER_PATH*` [environment variables](#environment-variable--cross-plat-) aren't set while running on Windows, coreclr looks up the CLSID from `DOTNET_PROFILER` in the registry to find the full path to the profiler's DLL. Just like with any COM server DLL, the profiler's CLSID is looked up under HKEY_CLASSES_ROOT, which merges the classes from HKLM and HKCU.
 
 ## Export perf maps and jit dumps
 

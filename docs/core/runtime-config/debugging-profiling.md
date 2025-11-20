@@ -48,8 +48,6 @@ Once profiling is enabled, the profiler can be loaded in two ways, with environm
 
 - Specifies the path to the profiler DLL to load into the currently running process (or 32-bit or 64-bit process).
 - If more than one variable is set, the bitness-specific variables take precedence. They specify which bitness of profiler to load.
-- If any of these environment variables are present, the registry look up is skipped altogether, and the path from `DOTNET_PROFILER_PATH` is used to load the DLL.
-- When `DOTNET_PROFILER_PATH` is specified _and_ the profiler is registered, `DOTNET_PROFILER_PATH` always takes precedence. Even if `DOTNET_PROFILER_PATH` points to an invalid path, the runtime still uses `DOTNET_PROFILER_PATH`, and fails to load the profiler.
 - `DOTNET_PROFILER` is _always required_. When `DOTNET_PROFILER_PATH` is specified, the registry look up is skipped. The runtime still needs the profiler's CLSID (GUID) to pass it to the class factory's CreateInstance call.
 
 | | Setting name | Values |

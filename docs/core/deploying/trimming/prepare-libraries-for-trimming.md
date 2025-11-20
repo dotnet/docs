@@ -90,6 +90,58 @@ Follow the preceding pattern for multiple libraries. To see trim analysis warnin
 * Even if there were no API changes.
 * Introducing trim analysis warnings is a breaking change when the library is used with `PublishTrimmed`.
 
+## Multi-targeting for trimming
+
+When preparing libraries for trimming, multi-targeting is essential because trimming is only supported in .NET 6 and later. Most libraries need to support earlier target frameworks like .NET Standard 2.0 or .NET Framework 4.7.2, which don't support trimming.
+
+### Common multi-targeting scenarios
+
+Libraries typically use one of these multi-targeting patterns:
+
+* Target only .NET Standard 2.0 or .NET Framework—these frameworks don't support trimming.
+* Multi-target .NET Standard 2.0 and a modern .NET version (net6.0 or later).
+* Multi-target .NET Framework 4.7.2, .NET Standard 2.0, and a modern .NET version.
+
+For example, a library might use:
+
+```xml
+<TargetFrameworks>netstandard2.0;net8.0</TargetFrameworks>
+```
+
+Or:
+
+```xml
+<TargetFrameworks>net472;netstandard2.0;net8.0</TargetFrameworks>
+```
+
+### Enable IsTrimmable conditionally
+
+When multi-targeting, set `<IsTrimmable>true</IsTrimmable>` only for target frameworks that support trimming. Attempting to use `IsTrimmable` with .NET Standard or .NET Framework produces a warning because these frameworks don't have trim-compatibility annotations.
+
+Use the `IsTargetFrameworkCompatible` MSBuild function to conditionally enable `IsTrimmable`:
+
+```xml
+<PropertyGroup>
+  <TargetFrameworks>netstandard2.0;net8.0</TargetFrameworks>
+  <IsTrimmable Condition="$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net6.0'))">true</IsTrimmable>
+</PropertyGroup>
+```
+
+This approach:
+
+* Enables `IsTrimmable` for `net8.0` and any future .NET versions compatible with `net6.0` or later.
+* Doesn't require updating the condition when you add new target frameworks.
+* Avoids warnings about using `IsTrimmable` with unsupported frameworks.
+
+### Recommendations for multi-targeting
+
+* Always multi-target to include a modern .NET version (net6.0 or later) when you prepare libraries for trimming.
+* Use conditional `IsTrimmable` to enable trimming analysis only for supported frameworks.
+* Create separate trimming test apps for each target framework that supports trimming if your library has framework-specific behavior.
+* Be aware that trim-compatibility work done for modern .NET versions doesn't apply to .NET Standard or .NET Framework builds of your library.
+
+For more information about the requirement to multi-target when using trimming, see [Trimming may not be used with .NET Standard or .NET Framework](../../compatibility/sdk/8.0/trimming-unsupported-targetframework.md).
+
 ## Resolve trim warnings
 
 The preceding steps produce warnings about code that might cause problems when used in a trimmed app. The following examples show the most common warnings with recommendations for fixing them.

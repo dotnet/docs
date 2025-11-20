@@ -39,7 +39,7 @@ Typically, you use tuples to group loosely related data elements. In public APIs
 
 You explicitly specify tuple fields names in a tuple initialization expression or in the definition of a tuple type, as the following example shows:
 
-[!code-csharp-interactive[explicit field names](snippets/shared/ValueTuples.cs#ExplicitFieldNames)]
+[!code-csharp[explicit field names](snippets/shared/ValueTuples.cs#ExplicitFieldNames)]
 
 If you don't specify a field name, it may be inferred from the name of the corresponding variable in a tuple initialization expression, as the following example shows:
 

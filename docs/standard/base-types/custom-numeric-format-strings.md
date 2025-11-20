@@ -43,8 +43,6 @@ Custom numeric format strings are supported by some overloads of the `ToString` 
 
 The following sections provide detailed information about each of the custom numeric format specifiers.
 
-[!INCLUDE[C# interactive-note](~/includes/csharp-interactive-partial-note.md)]
-
 <a name="Specifier0"></a>
 
 ## The "0" custom specifier
@@ -177,7 +175,7 @@ To include a backslash in a result string, you must escape it with another backs
 
 The following example uses the escape character to prevent the formatting operation from interpreting the "#", "0", and "\\" characters as either escape characters or format specifiers. The C# examples uses an additional backslash to ensure that a backslash is interpreted as a literal character.
 
-[!code-csharp-interactive[Formatting.Numeric.Custom#11](../../../samples/snippets/csharp/VS_Snippets_CLR/formatting.numeric.custom/cs/escape1.cs#11)]
+[!code-csharp[Formatting.Numeric.Custom#11](../../../samples/snippets/csharp/VS_Snippets_CLR/formatting.numeric.custom/cs/escape1.cs#11)]
 [!code-vb[Formatting.Numeric.Custom#11](../../../samples/snippets/visualbasic/VS_Snippets_CLR/formatting.numeric.custom/vb/escape1.vb#11)]
 
 [Back to table](#table)
@@ -198,7 +196,7 @@ Section separators ignore any preexisting formatting associated with a number wh
 
 The following example uses the ";" format specifier to format positive, negative, and zero numbers differently.
 
-[!code-csharp-interactive[Formatting.Numeric.Custom#8](../../../samples/snippets/csharp/VS_Snippets_CLR/formatting.numeric.custom/cs/custom.cs#8)]
+[!code-csharp[Formatting.Numeric.Custom#8](../../../samples/snippets/csharp/VS_Snippets_CLR/formatting.numeric.custom/cs/custom.cs#8)]
 [!code-vb[Formatting.Numeric.Custom#8](../../../samples/snippets/visualbasic/VS_Snippets_CLR/formatting.numeric.custom/vb/Custom.vb#8)]
 
 [Back to table](#table)
@@ -221,7 +219,7 @@ All other characters are always interpreted as character literals and, in a form
 
 The following example illustrates one common use of literal character units (in this case, thousands):
 
-[!code-csharp-interactive[literal characters](~/samples/snippets/csharp/VS_Snippets_CLR/formatting.numeric.custom/literal2.cs#1)]
+[!code-csharp[literal characters](~/samples/snippets/csharp/VS_Snippets_CLR/formatting.numeric.custom/literal2.cs#1)]
 [!code-vb[literal characters](~/samples/snippets/visualbasic/VS_Snippets_CLR/formatting.numeric.custom/literal2.vb#1)]
 
 There are two ways to indicate that characters are to be interpreted as literal characters and not as formatting characters, so that they can be included in a result string or successfully parsed in an input string:
@@ -232,7 +230,7 @@ There are two ways to indicate that characters are to be interpreted as literal 
 
 The following example uses both approaches to include reserved characters in a custom numeric format string.
 
-[!code-csharp-interactive[including reserved characters](~/samples/snippets/csharp/VS_Snippets_CLR/formatting.numeric.custom/literal1.cs#1)]
+[!code-csharp[including reserved characters](~/samples/snippets/csharp/VS_Snippets_CLR/formatting.numeric.custom/literal1.cs#1)]
 [!code-vb[including reserved characters](~/samples/snippets/visualbasic/VS_Snippets_CLR/formatting.numeric.custom/literal1.vb#1)]
 
 <a name="NotesCustomFormatting"></a>
@@ -261,7 +259,7 @@ For fixed-point format strings (that is, format strings that do not contain scie
 
 The following example demonstrates two custom numeric format strings. In both cases, the digit placeholder (`#`) displays the numeric data, and all other characters are copied to the result string.
 
-[!code-csharp-interactive[Formatting.Numeric.Custom#10](../../../samples/snippets/csharp/VS_Snippets_CLR/formatting.numeric.custom/cs/example1.cs#10)]
+[!code-csharp[Formatting.Numeric.Custom#10](../../../samples/snippets/csharp/VS_Snippets_CLR/formatting.numeric.custom/cs/example1.cs#10)]
 [!code-vb[Formatting.Numeric.Custom#10](../../../samples/snippets/visualbasic/VS_Snippets_CLR/formatting.numeric.custom/vb/example1.vb#10)]
 
 [Back to table](#table)

@@ -22,19 +22,19 @@ This article covers some different techniques for extracting parts of a string.
 
 The following examples show three different overloads of `String.Split()`. The first example calls the <xref:System.String.Split(System.Char[])> overload without passing any separator characters. When you don't specify any delimiting characters, `String.Split()` uses default delimiters, which are white-space characters, to split up the string.
 
-[!code-csharp-interactive[Intro#1](snippets/parse-strings/csharp/intro.cs#1)]
+[!code-csharp[Intro#1](snippets/parse-strings/csharp/intro.cs#1)]
 :::code language="vb" source="snippets/parse-strings/vb/intro.vb" id="1":::
 
 As you can see, the period characters (`.`) are included in two of the substrings. If you want to exclude the period characters, you can add the period character as an additional delimiting character. The next example shows how to do this.
 
-[!code-csharp-interactive[Intro#1](snippets/parse-strings/csharp/intro.cs#2)]
+[!code-csharp[Intro#1](snippets/parse-strings/csharp/intro.cs#2)]
 :::code language="vb" source="snippets/parse-strings/vb/intro.vb" id="2":::
 
 The periods are gone from the substrings, but now two extra empty substrings have been included. These empty substring represent the substring between the word and the period that follows it. To omit empty substrings from the resulting array, you can call the
 <xref:System.String.Split(System.Char[],System.StringSplitOptions)> overload and specify
 <xref:System.StringSplitOptions.RemoveEmptyEntries?displayProperty=nameWithType> for the `options` parameter.
 
-[!code-csharp-interactive[Intro#1](snippets/parse-strings/csharp/intro.cs#3)]
+[!code-csharp[Intro#1](snippets/parse-strings/csharp/intro.cs#3)]
 :::code language="vb" source="snippets/parse-strings/vb/intro.vb" id="3":::
 
 ## Regular expressions

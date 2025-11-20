@@ -2,6 +2,7 @@
 title: .NET releases, patches, and support
 description: Learn about releases, patches, and support for .NET.
 ms.date: 11/18/2025
+ms.custom: updateeachrelease
 ms.topic: overview
 ai-usage: ai-assisted
 ---
@@ -57,11 +58,11 @@ For more information about the relationship between .NET SDK and Visual Studio v
 
 Major and minor updates install side by side with previous versions. An application built to target a specific *major.minor* version continues to use that targeted runtime even if you install a newer version. By default, an app targeting .NET 8 doesn't automatically roll forward to .NET 9 (a major version change), but it can roll forward to a newer minor version like .NET 8.1 if .NET 8.0 isn't available. For more information about controlling this behavior, see [Framework-dependent apps roll forward](versions/selection.md#framework-dependent-apps-roll-forward) and [Self-contained deployment runtime roll forward](deploying/runtime-patch-selection.md).
 
-Patch version roll-forward happens automatically. An application built to target .NET 9 uses the latest installed patch version. For example, if you specify .NET 9.0 in your project and .NET 9.0.3 is installed, the app uses .NET 9.0.3. This automatic patch roll-forward is the default because you should use security fixes as soon as they're installed. You can opt out of this default roll-forward behavior.
+Patch version roll-forward happens automatically. An application built to target .NET 9 uses the latest installed patch version. For example, if you specify .NET 9.0 in your project and .NET 9.0.3 is installed, the app uses .NET 9.0.3. This automatic patch roll-forward is the default because you should use security fixes as soon as they're available. You can opt out of this default roll-forward behavior.
 
 ## .NET version lifecycles
 
-.NET versions use the [modern lifecycle](/lifecycle/policies/modern) rather than the [fixed lifecycle](/lifecycle/policies/fixed) used for .NET Framework releases. Products that use a modern lifecycle have a service-like support model, with shorter support periods and more frequent releases.
+.NET versions use the [modern lifecycle](/lifecycle/policies/modern) rather than the [fixed lifecycle](/lifecycle/policies/fixed) that .NET Framework releases use. Products that use a modern lifecycle have a service-like support model, with shorter support periods and more frequent releases.
 
 ### Release tracks
 
@@ -73,7 +74,7 @@ Two support tracks exist for releases:
 
   Example:
 
-  * .NET 9 is an STS release was released in November 2024. It's supported for two years, until November 2026.
+  * .NET 9 is an STS release that was released in November 2024. It's supported for two years, until November 2026.
 
 * *Long Term Support* (LTS) releases
 
@@ -81,7 +82,7 @@ Two support tracks exist for releases:
 
   Example:
 
-  * .NET 8 is an LTS release was released in November 2023. It's supported for three years, until November 2026.
+  * .NET 8 is an LTS release that was released in November 2023. It's supported for three years, until November 2026.
 
 Releases alternate between LTS and STS.
 

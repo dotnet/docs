@@ -61,7 +61,7 @@ Once profiling is enabled, the profiler can be loaded in two ways: with environm
 
 ### Through the registry (Windows only)
 
-When the `DOTNET_PROFILER_PATH*` [environment variables](#environment-variable--cross-plat-) aren't set while running on Windows, coreclr looks up the CLSID from `DOTNET_PROFILER` in the registry to find the full path to the profiler's DLL. Just like with any COM server DLL, the profiler's CLSID is looked up under HKEY_CLASSES_ROOT, which merges the classes from HKLM and HKCU.
+When the `DOTNET_PROFILER_PATH*` [environment variables](#environment-variable-cross-plat-) aren't set while running on Windows, coreclr looks up the CLSID from `DOTNET_PROFILER` in the registry to find the full path to the profiler's DLL. Just like with any COM server DLL, the profiler's CLSID is looked up under HKEY_CLASSES_ROOT, which merges the classes from HKLM and HKCU.
 
 ## Export perf maps and jit dumps
 

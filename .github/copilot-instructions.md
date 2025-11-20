@@ -44,7 +44,7 @@ For snippets >6 lines:
 1. All code should use the latest stable versions/features.
 1. Create examples in both C# and Visual Basic unless the article referencing the snippet resides in the in the `csharp`, `fsharp`, and `visual-basic` language folders.
 1. When you add code, use code comments sparingly because they don't get localized. You can use them to briefly clarify code-specific details (such as logic, parameters, or edge cases). Put any critical information and context in the markdown text of the referencing article.
-1. IMPORTANT: For created code, always try to encapsulate it in an standalone executable (e.g. `dotnet fsi myFile.fsx` or `dotnet rune myFile.cs`, add the necessary boilerplate/imports/usings where needed, and execute it.). Run it, and for every code snippet, include a PR commentary checking each code samples and proving what it has produced - can be diagnostics, standard output or a result value. That standalone file is just for the purpose of verification within copilots execution environment, the published docs snippet should remain a subset as you would normally write to maximize clarity.
+1. IMPORTANT: For created code, always try to encapsulate it in an standalone executable (e.g. `dotnet fsi myFile.fsx` or `dotnet run myFile.cs`, add the necessary boilerplate/imports/usings where needed, and execute it.). Run it, and for every code snippet, include a PR commentary checking each code samples and proving what it has produced - can be diagnostics, standard output or a result value. That standalone file is just for the purpose of verification within copilots execution environment, the published docs snippet should remain a subset as you would normally write to maximize clarity.
 
 ## File Naming
 

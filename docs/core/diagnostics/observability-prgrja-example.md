@@ -36,15 +36,15 @@ The following code defines a new metric (`greetings.count`) for the number of ti
 
 Use the NuGet Package Manager or command line to add the following NuGet packages:
 
-    ```dotnetcli
-    dotnet add package OpenTelemetry.Exporter.Console
-    dotnet add package OpenTelemetry.Exporter.OpenTelemetryProtocol
-    dotnet add package OpenTelemetry.Exporter.Prometheus.AspNetCore
-    dotnet add package OpenTelemetry.Exporter.Zipkin
-    dotnet add package OpenTelemetry.Extensions.Hosting
-    dotnet add package OpenTelemetry.Instrumentation.AspNetCore
-    dotnet add package OpenTelemetry.Instrumentation.Http
-    ```
+```dotnetcli
+dotnet add package OpenTelemetry.Exporter.Console
+dotnet add package OpenTelemetry.Exporter.OpenTelemetryProtocol
+dotnet add package OpenTelemetry.Exporter.Prometheus.AspNetCore
+dotnet add package OpenTelemetry.Exporter.Zipkin
+dotnet add package OpenTelemetry.Extensions.Hosting
+dotnet add package OpenTelemetry.Instrumentation.AspNetCore
+dotnet add package OpenTelemetry.Instrumentation.Http
+```
 
 ## 5. Configure OpenTelemetry with the correct providers
 

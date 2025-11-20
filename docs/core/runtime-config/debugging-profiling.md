@@ -52,9 +52,9 @@ Once profiling is enabled, the profiler can be loaded in two ways, with environm
 
 | | Setting name | Values |
 | - | - | - |
-| **Environment variable** | `CORECLR_PROFILER_PATH`       or `DOTNET_PROFILER_PATH`       | *string-path* |
-| **Environment variable** | `CORECLR_PROFILER_PATH_32`    or `DOTNET_PROFILER_PATH_32`    | *string-path* |
-| **Environment variable** | `CORECLR_PROFILER_PATH_64`    or `DOTNET_PROFILER_PATH_64`    | *string-path* |
+| **Environment variable** | `CORECLR_PROFILER_PATH` or `DOTNET_PROFILER_PATH` | *string-path* |
+| **Environment variable** | `CORECLR_PROFILER_PATH_32` or `DOTNET_PROFILER_PATH_32` | *string-path* |
+| **Environment variable** | `CORECLR_PROFILER_PATH_64` or `DOTNET_PROFILER_PATH_64` | *string-path* |
 | **Environment variable** | `CORECLR_PROFILER_PATH_ARM32` or `DOTNET_PROFILER_PATH_ARM32` | *string-path* |
 | **Environment variable** | `CORECLR_PROFILER_PATH_ARM64` or `DOTNET_PROFILER_PATH_ARM64` | *string-path* |
 

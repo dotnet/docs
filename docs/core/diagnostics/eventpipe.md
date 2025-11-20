@@ -93,10 +93,8 @@ However, you can use the following environment variables to set up an EventPipe 
 
   If this environment variable is not set but EventPipe is enabled by `DOTNET_EnableEventPipe`, it will start tracing by enabling the following providers with the following keywords and levels:
 
-  - `Microsoft-Windows-DotNETRuntime:4c14fccbd:5`
-  - `Microsoft-Windows-DotNETRuntimePrivate:4002000b:5`
-  - `Microsoft-DotNETCore-SampleProfiler:0:5`
+  * `Microsoft-Windows-DotNETRuntime:4c14fccbd:5`
+  * `Microsoft-Windows-DotNETRuntimePrivate:4002000b:5`
+  * `Microsoft-DotNETCore-SampleProfiler:0:5`
 
   To learn more about some of the well-known providers in .NET, refer to [Well-known Event Providers](./well-known-event-providers.md).
-
-[!INCLUDE [complus-prefix](../../../includes/complus-prefix.md)]

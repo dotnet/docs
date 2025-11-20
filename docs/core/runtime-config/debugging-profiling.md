@@ -9,7 +9,8 @@ This article details the settings you can use to configure .NET debugging and pr
 
 [!INCLUDE [complus-prefix](../../../includes/complus-prefix.md)]
 
-[!INCLUDE [coreclr-prefix](../../../includes/coreclr-prefix.md)]
+> [!NOTE]
+> Starting in .NET 11, profiler environment variables now support both `DOTNET` and `CORECLR` prefixes. The `DOTNET` prefix is the new standard, while `CORECLR` is maintained for backwards compatibility and might be removed in the future.
 
 ## Enable diagnostics
 

@@ -7,6 +7,7 @@ ms.service: dotnet-csharp
 ms.topic: tutorial
 ms.date: 11/14/2025
 ai-usage: ai-assisted
+ms.custom: peer-review-program 
 #customer intent: As a C# developer, I want to implement user-defined instance compound assignment operators so that my algorithms are more efficient.
 ---
 # Tutorial: Create compound assignment operators

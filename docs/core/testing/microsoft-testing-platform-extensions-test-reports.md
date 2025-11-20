@@ -51,9 +51,9 @@ To highlight the correct line in code where failure occurred, AzureDevOps report
 
 To determine this it:
 
-- finds the repository root, this is done by searching the `.git` directory closest to the location from where the test application is started (as determined by `AppContext.BaseDirectory`)
-- finds the first line in stack trace that has file location and line (the library needs to have debug symbols)
-- excludes all files that end with `Assert.cs` to avoid showing details of your assertion implementations or wrappers
-- excludes all files that don't exist on disk (typically those are lines from external libraries that ship debug symbols e.g. MSTest)
+- finds the repository root, this is done by searching the `.git` directory closest to the location from where the test application is started (as determined by `AppContext.BaseDirectory`).
+- finds the first line in stack trace that has file location and line (the library needs to have debug symbols).
+- excludes all files that end with `Assert.cs` to avoid showing details of your assertion implementations or wrappers.
+- excludes all files that don't exist on disk (typically those are lines from external libraries that ship debug symbols e.g. MSTest).
 
 (These are internal details that serve to aid debugging the behavior and might change in the future.)

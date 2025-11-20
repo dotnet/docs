@@ -19,11 +19,11 @@ Because classes are reference types, a variable of a class object holds a refere
 
 Instances of classes are created by using the [`new` operator](../../language-reference/operators/new-operator.md). In the following example, `Person` is the type and `person1` and `person2` are instances, or objects, of that type.
 
-:::code language="csharp" source="./snippets/objects/Program.cs" interactive="try-dotnet":::
+:::code language="csharp" source="./snippets/objects/Program.cs":::
 
 Because structs are value types, a variable of a struct object holds a copy of the entire object. Instances of structs can also be created by using the `new` operator, but this isn't required, as shown in the following example:
 
-:::code language="csharp" source="./snippets/objects/Application.cs" interactive="try-dotnet":::
+:::code language="csharp" source="./snippets/objects/Application.cs":::
 
 The memory for both `p1` and `p2` is allocated on the thread stack. That memory is reclaimed along with the type or method in which it's declared. This is one reason why structs are copied on assignment. By contrast, the memory that is allocated for a class instance is automatically reclaimed (garbage collected) by the common language runtime when all references to the object are out of scope. It isn't possible to deterministically destroy a class object like you can in C++. For more information about garbage collection in .NET, see [Garbage Collection](../../../standard/garbage-collection/index.md).
 

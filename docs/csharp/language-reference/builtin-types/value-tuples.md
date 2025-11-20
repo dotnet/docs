@@ -9,11 +9,11 @@ helpviewer_keywords:
 
 The *tuples* feature provides concise syntax to group multiple data elements in a lightweight data structure. The following example shows how you can declare a tuple variable, initialize it, and access its data members:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/ValueTuples.cs" id="Introduction":::
+:::code language="csharp" source="snippets/shared/ValueTuples.cs" id="Introduction":::
 
 As the preceding example shows, to define a tuple type, you specify types of all its data members and, optionally, the [field names](#tuple-field-names). You can't define methods in a tuple type, but you can use the methods provided by .NET, as the following example shows:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/ValueTuples.cs" id="MethodOnTuples":::
+:::code language="csharp" source="snippets/shared/ValueTuples.cs" id="MethodOnTuples":::
 
 Tuple types support [equality operators](../operators/equality-operators.md) `==` and `!=`. For more information, see the [Tuple equality](#tuple-equality) section.
 
@@ -21,13 +21,13 @@ Tuple types are [value types](value-types.md); tuple elements are public fields.
 
 You can define tuples with an arbitrary large number of elements:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/ValueTuples.cs" id="LargeTuple":::
+:::code language="csharp" source="snippets/shared/ValueTuples.cs" id="LargeTuple":::
 
 ## Use cases of tuples
 
 One of the most common use cases of tuples is as a method return type. That is, instead of defining [`out` method parameters](../keywords/method-parameters.md#out-parameter-modifier), you can group method results in a tuple return type, as the following example shows:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/ValueTuples.cs" id="MultipleReturns":::
+:::code language="csharp" source="snippets/shared/ValueTuples.cs" id="MultipleReturns":::
 
 As the preceding example shows, you can work with the returned tuple instance directly or [deconstruct](#tuple-assignment-and-deconstruction) it in separate variables.
 
@@ -43,7 +43,7 @@ You explicitly specify tuple fields names in a tuple initialization expression o
 
 If you don't specify a field name, it may be inferred from the name of the corresponding variable in a tuple initialization expression, as the following example shows:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/ValueTuples.cs" id="InferFieldNames":::
+:::code language="csharp" source="snippets/shared/ValueTuples.cs" id="InferFieldNames":::
 
 That's called tuple projection initializers. The name of a variable isn't projected onto a tuple field name in the following cases:
 
@@ -54,7 +54,7 @@ In the preceding cases, you either explicitly specify the name of a field or acc
 
 The default names of tuple fields are `Item1`, `Item2`, `Item3` and so on. You can always use the default name of a field, even when a field name is specified explicitly or inferred, as the following example shows:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/ValueTuples.cs" id="DefaultFieldNames":::
+:::code language="csharp" source="snippets/shared/ValueTuples.cs" id="DefaultFieldNames":::
 
 [Tuple assignment](#tuple-assignment-and-deconstruction) and [tuple equality comparisons](#tuple-equality) don't take field names into account.
 
@@ -96,31 +96,31 @@ C# supports assignment between tuple types that satisfy both of the following co
 
 Tuple element values are assigned following the order of tuple elements. The names of tuple fields are ignored and not assigned, as the following example shows:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/ValueTuples.cs" id="Assignment":::
+:::code language="csharp" source="snippets/shared/ValueTuples.cs" id="Assignment":::
 
 You can also use the assignment operator `=` to *deconstruct* a tuple instance in separate variables. You can do that in many ways:
 
 - Use the `var` keyword outside the parentheses to declare implicitly typed variables and let the compiler infer their types:
 
-  :::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/ValueTuples.cs" id="DeconstructVar":::
+  :::code language="csharp" source="snippets/shared/ValueTuples.cs" id="DeconstructVar":::
 
 - Explicitly declare the type of each variable inside parentheses:
 
-  :::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/ValueTuples.cs" id="DeconstructExplicit":::
+  :::code language="csharp" source="snippets/shared/ValueTuples.cs" id="DeconstructExplicit":::
 
 - Declare some types explicitly and other types implicitly (with `var`) inside the parentheses:
 
-  :::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/ValueTuples.cs" id="DeconstructMixed":::
+  :::code language="csharp" source="snippets/shared/ValueTuples.cs" id="DeconstructMixed":::
 
 - Use existing variables:
 
-  :::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/ValueTuples.cs" id="DeconstructExisting":::
+  :::code language="csharp" source="snippets/shared/ValueTuples.cs" id="DeconstructExisting":::
 
 The destination of a deconstruct expression can include both existing variables and variables declared in the deconstruction declaration.
 
 You can also combine deconstruction with [pattern matching](../../fundamentals/functional/pattern-matching.md) to inspect the characteristics of fields in a tuple. The following example loops through several integers and prints those that are divisible by 3. It deconstructs the tuple result of <xref:System.Int32.DivRem%2A?displayProperty=nameWithType> and matches against a `Remainder` of 0:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/ValueTuples.cs" id="DeconstructToPattern":::
+:::code language="csharp" source="snippets/shared/ValueTuples.cs" id="DeconstructToPattern":::
 
 For more information about deconstruction of tuples and other types, see [Deconstructing tuples and other types](../../fundamentals/functional/deconstruct.md).
 
@@ -128,7 +128,7 @@ For more information about deconstruction of tuples and other types, see [Decons
 
 Tuple types support the `==` and `!=` operators. These operators compare members of the left-hand operand with the corresponding members of the right-hand operand following the order of tuple elements.
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/ValueTuples.cs" id="TupleEquality":::
+:::code language="csharp" source="snippets/shared/ValueTuples.cs" id="TupleEquality":::
 
 As the preceding example shows, the `==` and `!=` operations don't take into account tuple field names.
 
@@ -139,13 +139,13 @@ Two tuples are comparable when both of the following conditions are satisfied:
 
 The `==` and `!=` operators compare tuples in short-circuiting way. That is, an operation stops as soon as it meets a pair of non equal elements or reaches the ends of tuples. However, before any comparison, *all* tuple elements are evaluated, as the following example shows:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/ValueTuples.cs" id="TupleEvaluationForEquality":::
+:::code language="csharp" source="snippets/shared/ValueTuples.cs" id="TupleEvaluationForEquality":::
 
 ## Tuples as out parameters
 
 Typically, you refactor a method that has [`out` parameters](../keywords/method-parameters.md#out-parameter-modifier) into a method that returns a tuple. However, there are cases in which an `out` parameter can be of a tuple type. The following example shows how to work with tuples as `out` parameters:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/ValueTuples.cs" id="TupleAsOutParameter":::
+:::code language="csharp" source="snippets/shared/ValueTuples.cs" id="TupleAsOutParameter":::
 
 ## Tuples vs `System.Tuple`
 

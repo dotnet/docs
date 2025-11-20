@@ -97,7 +97,7 @@ You invoke the `DateTime` structure's implicit parameterless constructor when yo
 
 <a name="initialization-02"></a>
 :::code language="vb" source="./snippets/System/DateTime/Overview/vb/Instantiation.vb" id="Snippet5":::
-:::code language="csharp" source="./snippets/System/DateTime/Overview/csharp/Instantiation.cs" interactive="try-dotnet-method" id="Snippet5":::
+:::code language="csharp" source="./snippets/System/DateTime/Overview/csharp/Instantiation.cs" id="Snippet5":::
 :::code language="fsharp" source="./snippets/System/DateTime/Overview/fsharp/Instantiation.fs" id="Snippet5":::
 
 ### Assign a computed value
@@ -141,7 +141,7 @@ The appearance of date and time values is dependent on culture, international st
 You may need to format dates in a specific culture to support web scenarios where the server may be in a different culture from the client. You specify the culture using the <xref:System.DateTime.ToString%28System.IFormatProvider%29?displayProperty=nameWithType> method to create the short date and long time representation in a specific culture. The following example uses the <xref:System.DateTime.ToString%28System.IFormatProvider%29?displayProperty=nameWithType> method to display the date and time using the short date and long time pattern for the fr-FR culture.
 
 <a name="formatting-02"></a>
-:::code language="csharp" source="./snippets/System/DateTime/Overview/csharp/StringFormat.cs" interactive="try-dotnet-method" id="Snippet2":::
+:::code language="csharp" source="./snippets/System/DateTime/Overview/csharp/StringFormat.cs" id="Snippet2":::
 :::code language="fsharp" source="./snippets/System/DateTime/Overview/fsharp/StringFormat.fs" id="Snippet2":::
 :::code language="vb" source="./snippets/System/DateTime/Overview/vb/StringFormat.vb" id="Snippet2":::
 
@@ -155,14 +155,14 @@ Other applications may require different string representations of a date. The <
 Finally, you can specify both the culture and the format using the <xref:System.DateTime.ToString%28System.String%2CSystem.IFormatProvider%29?displayProperty=nameWithType> method. The following example uses the <xref:System.DateTime.ToString%28System.String%2CSystem.IFormatProvider%29?displayProperty=nameWithType> method to display the full date and time pattern for the fr-FR culture.
 
 <a name="formatting-04"></a>
-:::code language="csharp" source="./snippets/System/DateTime/Overview/csharp/StringFormat.cs" interactive="try-dotnet-method" id="Snippet4":::
+:::code language="csharp" source="./snippets/System/DateTime/Overview/csharp/StringFormat.cs" id="Snippet4":::
 :::code language="fsharp" source="./snippets/System/DateTime/Overview/fsharp/StringFormat.fs" id="Snippet4":::
 :::code language="vb" source="./snippets/System/DateTime/Overview/vb/StringFormat.vb" id="Snippet4":::
 
 The <xref:System.DateTime.ToString%28System.String%29?displayProperty=nameWithType> overload can also be used with a custom format string to specify other formats. The following example shows how to format a string using the [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) standard format often used for web services. The Iso 8601 format does not have a corresponding standard format string.
 
 <a name="formatting-05"></a>
-:::code language="csharp" source="./snippets/System/DateTime/Overview/csharp/StringFormat.cs" interactive="try-dotnet-method" id="Snippet5":::
+:::code language="csharp" source="./snippets/System/DateTime/Overview/csharp/StringFormat.cs" id="Snippet5":::
 :::code language="fsharp" source="./snippets/System/DateTime/Overview/fsharp/StringFormat.fs" id="Snippet5":::
 :::code language="vb" source="./snippets/System/DateTime/Overview/vb/StringFormat.vb" id="Snippet5":::
 
@@ -179,7 +179,7 @@ Parsing converts the string representation of a date and time to a <xref:System.
 You use the <xref:System.DateTime.Parse%2A> or <xref:System.DateTime.TryParse%2A> method to convert a string from one of the common date and time formats used by a culture to a <xref:System.DateTime> value. The following example shows how you can use <xref:System.DateTime.TryParse%2A> to convert date strings in different culture-specific formats to a <xref:System.DateTime> value. It changes the current culture to English (United Kingdom) and calls the <xref:System.DateTime.GetDateTimeFormats> method to generate an array of date and time strings. It then passes each element in the array to the <xref:System.DateTime.TryParse%2A> method. The output from the example shows the parsing method was able to successfully convert each of the culture-specific date and time strings.
 
 <a name="parsing-01"></a>
-:::code language="csharp" source="./snippets/System/DateTime/Overview/csharp/Parsing.cs" interactive="try-dotnet-method" id="Snippet1":::
+:::code language="csharp" source="./snippets/System/DateTime/Overview/csharp/Parsing.cs" id="Snippet1":::
 :::code language="fsharp" source="./snippets/System/DateTime/Overview/fsharp/Parsing.fs" id="Snippet1":::
 :::code language="vb" source="./snippets/System/DateTime/Overview/vb/Parsing.vb" id="Snippet1":::
 
@@ -193,7 +193,7 @@ You use the <xref:System.DateTime.ParseExact%2A> and <xref:System.DateTime.TryPa
 One common use for <xref:System.DateTime.ParseExact%2A> is to convert a string representation from a web service, usually in [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) standard format. The following code shows the correct format string to use:
 
 <a name="parsing-03"></a>
-:::code language="csharp" source="./snippets/System/DateTime/Overview/csharp/Parsing.cs" interactive="try-dotnet-method" id="Snippet3":::
+:::code language="csharp" source="./snippets/System/DateTime/Overview/csharp/Parsing.cs" id="Snippet3":::
 :::code language="fsharp" source="./snippets/System/DateTime/Overview/fsharp/Parsing.fs" id="Snippet3":::
 :::code language="vb" source="./snippets/System/DateTime/Overview/vb/Parsing.vb" id="Snippet3":::
 
@@ -221,7 +221,7 @@ The <xref:System.DateTime.Ticks> property expresses date and time values in unit
 The following example illustrates the dependence of current date and time values on the resolution of the system clock. In the example, an outer loop repeats 20 times, and an inner loop serves to delay the outer loop. If the value of the outer loop counter is 10, a call to the <xref:System.Threading.Thread.Sleep%2A?displayProperty=nameWithType> method introduces a five-millisecond delay. The following example shows the number of milliseconds returned by the `DateTime.Now.Milliseconds` property changes only after the call to <xref:System.Threading.Thread.Sleep%2A?displayProperty=nameWithType>.
 
 <a name="resolution-01"></a>
-:::code language="csharp" source="./snippets/System/DateTime/Overview/csharp/Resolution.cs" interactive="try-dotnet-method" id="Snippet1":::
+:::code language="csharp" source="./snippets/System/DateTime/Overview/csharp/Resolution.cs" id="Snippet1":::
 :::code language="fsharp" source="./snippets/System/DateTime/Overview/fsharp/Resolution.fs" id="Snippet1":::
 :::code language="vb" source="./snippets/System/DateTime/Overview/vb/Resolution.vb" id="Snippet1":::
 

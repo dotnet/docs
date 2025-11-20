@@ -27,15 +27,15 @@ An `if` statement can be any of the following two forms:
 
 - An `if` statement with an `else` part selects one of the two statements to execute based on the value of a Boolean expression, as the following example shows:
 
-  :::code language="csharp" interactive="try-dotnet-method" source="snippets/selection-statements/IfStatement.cs" id="IfElse":::
+  :::code language="csharp" source="snippets/selection-statements/IfStatement.cs" id="IfElse":::
 
 - An `if` statement without an `else` part executes its body only if a Boolean expression evaluates to `true`, as the following example shows:
 
-  :::code language="csharp" interactive="try-dotnet-method" source="snippets/selection-statements/IfStatement.cs" id="OnlyIf":::
+  :::code language="csharp" source="snippets/selection-statements/IfStatement.cs" id="OnlyIf":::
 
 You can nest `if` statements to check multiple conditions, as the following example shows:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/selection-statements/IfStatement.cs" id="NestedIf":::
+:::code language="csharp" source="snippets/selection-statements/IfStatement.cs" id="NestedIf":::
 
 In an expression context, you can use the [conditional operator `?:`](../operators/conditional-operator.md) to evaluate one of the two expressions based on the value of a Boolean expression.
 

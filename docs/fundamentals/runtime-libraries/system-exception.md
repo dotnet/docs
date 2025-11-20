@@ -25,7 +25,7 @@ Run-time errors can occur for a variety of reasons. However, not all errors shou
 
   The <xref:System.NullReferenceException> exception that results when `obj` is `null` can be eliminated by modifying the source code to explicitly test for null before calling the <xref:System.Object.Equals%2A?displayProperty=nameWithType> override and then re-compiling. The following example contains the corrected source code that handles a `null` argument.
 
-  :::code language="csharp" source="./snippets/System/Exception/Overview/csharp/usageerrors2.cs" interactive="try-dotnet" id="Snippet5":::
+  :::code language="csharp" source="./snippets/System/Exception/Overview/csharp/usageerrors2.cs" id="Snippet5":::
   :::code language="fsharp" source="./snippets/System/Exception/Overview/fsharp/usageerrors2.fs" id="Snippet5":::
   :::code language="vb" source="./snippets/System/Exception/Overview/vb/usageerrors2.vb" id="Snippet5":::
 
@@ -225,6 +225,6 @@ The following example makes two calls to the `GetPrimesFrom` method with non-pri
 
 The following example demonstrates a `catch` (`with` in F#) block that is defined to handle <xref:System.ArithmeticException> errors. This `catch` block also catches <xref:System.DivideByZeroException> errors, because <xref:System.DivideByZeroException> derives from <xref:System.ArithmeticException> and there is no `catch` block explicitly defined for <xref:System.DivideByZeroException> errors.
 
-:::code language="csharp" source="./snippets/System/Exception/Overview/csharp/catchexception.cs" interactive="try-dotnet" id="Snippet1":::
+:::code language="csharp" source="./snippets/System/Exception/Overview/csharp/catchexception.cs" id="Snippet1":::
 :::code language="fsharp" source="./snippets/System/Exception/Overview/fsharp/catchexception.fs" id="Snippet1":::
 :::code language="vb" source="./snippets/System/Exception/Overview/vb/catchexception.vb" id="Snippet1":::

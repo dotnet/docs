@@ -7,20 +7,106 @@ namespace anonymous_types
     // <ProductDefinition>
     class Product
     {
-        public string? Color { get; set; }
-        public decimal Price { get; set; }
-        public string? Name { get; set; }
-        public string? Category { get; set; }
-        public string? Size { get; set; }
+        public string? Color { get; init; }
+        public decimal Price { get; init; }
+        public string? Name { get; init; }
+        public string? Category { get; init; }
+        public string? Size { get; init; }
     }
     // </ProductDefinition>
+
     class Anonymous
     {
+        // <TupleDeconstructionMethod>
+        static (string Name, int Age, string City) GetPersonInfo()
+        {
+            return ("Alice", 30, "Seattle");
+        }
+        // </TupleDeconstructionMethod>
+
         static void Main()
         {
-            // Don't show this unless you add a bunch more
-            // properties to the type. Otherwise it obviates the
-            // need for the anonymous type.
+            TupleExamples();
+            TupleDeconstructionExamples();
+            TupleMethodReturnExample();
+            AnonymousTypeExamples();
+            ProjectionInitializerExamples();
+            AnonymousArrayExample();
+            ToStringExample();
+        }
+
+        static void TupleExamples()
+        {
+            // <TupleExample>
+            // Tuple with named elements.
+            var tupleProduct = (Name: "Widget", Price: 19.99M);
+            Console.WriteLine($"Tuple: {tupleProduct.Name} costs ${tupleProduct.Price}");
+
+            // Equivalent example using anonymous types.
+            var anonymousProduct = new { Name = "Widget", Price = 19.99M };
+            Console.WriteLine($"Anonymous: {anonymousProduct.Name} costs ${anonymousProduct.Price}");
+            // </TupleExample>
+        }
+
+        static void TupleDeconstructionExamples()
+        {
+            // <TupleDeconstruction>
+            // Deconstruct using var for all variables
+            var (name, age, city) = GetPersonInfo();
+            Console.WriteLine($"{name} is {age} years old and lives in {city}");
+            // Output: Alice is 30 years old and lives in Seattle
+
+            // Deconstruct with explicit types
+            (string personName, int personAge, string personCity) = GetPersonInfo();
+            Console.WriteLine($"{personName}, {personAge}, {personCity}");
+
+            // Deconstruct into existing variables
+            string existingName;
+            int existingAge;
+            string existingCity;
+            (existingName, existingAge, existingCity) = GetPersonInfo();
+
+            // Deconstruct and discard unwanted values using the discard pattern (_)
+            var (name2, _, city2) = GetPersonInfo();
+            Console.WriteLine($"{name2} lives in {city2}");
+            // Output: Alice lives in Seattle
+            // </TupleDeconstruction>
+
+            // <TupleDeconstructionLoop>
+            var people = new List<(string Name, int Age)>
+            {
+                ("Bob", 25),
+                ("Carol", 35),
+                ("Dave", 40)
+            };
+
+            foreach (var (personName2, personAge2) in people)
+            {
+                Console.WriteLine($"{personName2} is {personAge2} years old");
+            }
+            // </TupleDeconstructionLoop>
+        }
+
+        static void TupleMethodReturnExample()
+        {
+            // <DictionaryTupleExample>
+            var configLookup = new Dictionary<int, (int Min, int Max)>()
+            {
+                [2] = (4, 10),
+                [4] = (10, 20),
+                [6] = (0, 23)
+            };
+
+            if (configLookup.TryGetValue(4, out (int Min, int Max) range))
+            {
+                Console.WriteLine($"Found range: min is {range.Min}, max is {range.Max}");
+            }
+            // Output: Found range: min is 10, max is 20
+            // </DictionaryTupleExample>
+        }
+
+        static void AnonymousTypeExamples()
+        {
             List<Product> products =
             [
                 new Product { Color = "Orange", Price = 2.00M }
@@ -50,7 +136,10 @@ namespace anonymous_types
             var shipment = new { address = "Nowhere St.", product };
             var shipmentWithBonus = new { address = "Somewhere St.", product, bonus };
             // </Snippet03>
+        }
 
+        static void ProjectionInitializerExamples()
+        {
             // <ProjectionInitializers>
             // Explicit member names.
             var personExplicit = new { FirstName = "Kyle", LastName = "Mit" };
@@ -78,6 +167,22 @@ namespace anonymous_types
 
             Console.WriteLine($"Title: {employee.title}, Department: {employee.department}, Salary: {employee.salary}");
             // </ProjectionExample>
+        }
+
+        static void AnonymousArrayExample()
+        {
+            // <AnonymousArray>
+            var anonArray = new[] { new { name = "apple", diam = 4 }, new { name = "grape", diam = 1 }};
+            // </AnonymousArray>
+        }
+
+        static void ToStringExample()
+        {
+            // <ToStringExample>
+            var v = new { Title = "Hello", Age = 24 };
+
+            Console.WriteLine(v.ToString()); // "{ Title = Hello, Age = 24 }"
+            // </ToStringExample>
         }
     }
 }

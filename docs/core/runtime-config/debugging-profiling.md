@@ -45,7 +45,7 @@ This article details the settings you can use to configure .NET debugging and pr
 
 Once profiling is enabled, the profiler can be loaded in two ways, with environment variables (cross-plat) or through the registry (Windows only). The profiler path environment variables take precedence over any COM library path in the registry if both are specified.
 
-### Environment Variable (cross-plat)
+### Environment variable (cross-plat)
 
 - Specifies the path to the profiler DLL to load into the currently running process (or 32-bit or 64-bit process).
 - If more than one variable is set, the bitness-specific variables take precedence. They specify which bitness of profiler to load.
@@ -58,7 +58,7 @@ Once profiling is enabled, the profiler can be loaded in two ways, with environm
 | **Environment variable** | `CORECLR_PROFILER_PATH_ARM32` or `DOTNET_PROFILER_PATH_ARM32` | *string-path* |
 | **Environment variable** | `CORECLR_PROFILER_PATH_ARM64` or `DOTNET_PROFILER_PATH_ARM64` | *string-path* |
 
-### Through the registry (Windows Only)
+### Through the registry (Windows only)
 
 When the `DOTNET_PROFILER_PATH*` environment variables above are not set while running on Windows, coreclr looks up the CLSID from `DOTNET_PROFILER` in the registry to find the full path to the profiler's DLL. Just like with any COM server DLL, the profiler's CLSID is looked up under HKEY_CLASSES_ROOT, which merges the classes from HKLM and HKCU.
 

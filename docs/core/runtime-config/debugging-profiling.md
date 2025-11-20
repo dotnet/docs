@@ -42,7 +42,7 @@ This article details the settings you can use to configure .NET debugging and pr
 
 ## Profiler location
 
-Once profiling is enabled, the profiler can be loaded in two ways, with environment variables (cross-plat) or through the registry (Windows only).
+Once profiling is enabled, the profiler can be loaded in two ways, with environment variables (cross-plat) or through the registry (Windows only). The profiler path environment variables take precedence over any COM library path in the registry if both are specified.
 
 ### Environment Variable (cross-plat)
 

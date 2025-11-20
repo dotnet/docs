@@ -30,5 +30,5 @@ class ClassC { }
 //</ClosedGeneric>
 
 //<GenericAttribute>
-public class CustomGenericAttribute<T> : Attribute { }  //Requires C# 11
+public class CustomGenericAttribute<T> : Attribute { }
 //</GenericAttribute>

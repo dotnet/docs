@@ -2,7 +2,7 @@
 title: "Integral numeric types"
 titleSuffix: ""
 description: "Learn the range, storage size, and uses for each of the integral numeric types."
-ms.date: 06/17/2022
+ms.date: 11/18/2025
 f1_keywords:
   - "byte_CSharpKeyword"
   - "sbyte_CSharpKeyword"
@@ -32,7 +32,7 @@ helpviewer_keywords:
 ---
 # Integral numeric types  (C# reference)
 
-The *integral numeric types* represent integer numbers. All integral numeric types are [value types](value-types.md). They're also [simple types](value-types.md#built-in-value-types) and can be initialized with [literals](#integer-literals). All integral numeric types support [arithmetic](../operators/arithmetic-operators.md), [bitwise logical](../operators/bitwise-and-shift-operators.md), [comparison](../operators/comparison-operators.md), and [equality](../operators/equality-operators.md) operators.
+The *integral numeric types* represent integer numbers. All integral numeric types are [value types](value-types.md). The integral types are [simple types](value-types.md#built-in-value-types) and can be initialized with [literals](#integer-literals). All integral numeric types support [arithmetic](../operators/arithmetic-operators.md), [bitwise logical](../operators/bitwise-and-shift-operators.md), [comparison](../operators/comparison-operators.md), and [equality](../operators/equality-operators.md) operators.
 
 ## Characteristics of the integral types
 
@@ -58,9 +58,9 @@ int a = 123;
 System.Int32 b = 123;
 ```
 
-The `nint` and `nuint` types in the last two rows of the table are native-sized integers. You can use the `nint` and `nuint` contextual keywords to define *native-sized integers*. These are 32-bit integers when running in a 32-bit process, or 64-bit integers when running in a 64-bit process. They can be used for interop scenarios, low-level libraries, and to optimize performance in scenarios where integer math is used extensively.
+The `nint` and `nuint` types in the last two rows of the table are native-sized integers. You can use the `nint` and `nuint` contextual keywords to define *native-sized integers*. Native-sized integers are 32-bit integers when running in a 32-bit process, or 64-bit integers when running in a 64-bit process. They can be used for interop scenarios, low-level libraries, and to optimize performance in scenarios where integer math is used extensively.
 
-The native-sized integer types are represented internally as the .NET types <xref:System.IntPtr?displayProperty=nameWithType> and <xref:System.UIntPtr?displayProperty=nameWithType>. Starting in C# 11, the `nint` and `nuint` types are aliases for the underlying types.
+The native-sized integer types are represented internally as the .NET types <xref:System.IntPtr?displayProperty=nameWithType> and <xref:System.UIntPtr?displayProperty=nameWithType>. The `nint` and `nuint` types are aliases for the underlying types.
 
 The default value of each integral type is zero, `0`.
 
@@ -86,24 +86,24 @@ var binaryLiteral = 0b_0010_1010;
 
 The preceding example also shows the use of `_` as a *digit separator*. You can use the digit separator with all kinds of numeric literals.
 
-The type of an integer literal is determined by its suffix as follows:
+The suffix determines the type of an integer literal as follows:
 
 - If the literal has no suffix, its type is the first of the following types in which its value can be represented: `int`, `uint`, `long`, `ulong`.
 
   > [!NOTE]
-  > Literals are interpreted as positive values. For example, the literal `0xFF_FF_FF_FF` represents the number `4294967295` of the `uint` type, though it has the same bit representation as the number `-1` of the `int` type. If you need a value of a certain type, cast a literal to that type. Use the `unchecked` operator, if a literal value cannot be represented in the target type. For example, `unchecked((int)0xFF_FF_FF_FF)` produces `-1`.
+  > Literals are interpreted as positive values. For example, the literal `0xFF_FF_FF_FF` represents the number `4294967295` of the `uint` type, though it has the same bit representation as the number `-1` of the `int` type. If you need a value of a certain type, cast a literal to that type. Use the `unchecked` operator, if a literal value can't be represented in the target type. For example, `unchecked((int)0xFF_FF_FF_FF)` produces `-1`.
 
-- If the literal is suffixed by `U` or `u`, its type is the first of the following types in which its value can be represented: `uint`, `ulong`.
-- If the literal is suffixed by `L` or `l`, its type is the first of the following types in which its value can be represented: `long`, `ulong`.
+- If the literal includes the `U` or `u` suffix, its type is the first of the following types in which its value can be represented: `uint`, `ulong`.
+- If the literal includes the `L` or `l` suffix, its type is the first of the following types in which its value can be represented: `long`, `ulong`.
 
   > [!NOTE]
-  > You can use the lowercase letter `l` as a suffix. However, this generates a compiler warning because the letter `l` can be confused with the digit `1`. Use `L` for clarity.
+  > You can use the lowercase letter `l` as a suffix. However, `l` generates a compiler warning because the letter `l` can be confused with the digit `1`. Use `L` for clarity.
 
-- If the literal is suffixed by `UL`, `Ul`, `uL`, `ul`, `LU`, `Lu`, `lU`, or `lu`, its type is `ulong`.
+- If the literal includes one of the `UL`, `Ul`, `uL`, `ul`, `LU`, `Lu`, `lU`, or `lu` suffixes, its type is `ulong`.
 
 If the value represented by an integer literal exceeds <xref:System.UInt64.MaxValue?displayProperty=nameWithType>, a compiler error [CS1021](../../misc/cs1021.md) occurs.
 
-If the determined type of an integer literal is `int` and the value represented by the literal is within the range of the destination type, the value can be implicitly converted to `sbyte`, `byte`, `short`, `ushort`, `uint`, `ulong`, `nint` or `nuint`:
+If the determined type of an integer literal is `int` and the value represented by the literal is within the range of the destination type, the value can be implicitly converted to `sbyte`, `byte`, `short`, `ushort`, `uint`, `ulong`, `nint`, or `nuint`:
 
 ```csharp
 byte a = 17;
@@ -125,7 +125,7 @@ You can convert any integral numeric type to any other integral numeric type. If
 
 ## Native sized integers
 
-Native sized integer types have special behavior because the storage is determined by the natural integer size on the target machine.
+Native sized integer types have special behavior because the storage matches the natural integer size on the target machine.
 
 - To get the size of a native-sized integer at run time, you can use `sizeof()`. However, the code must be compiled in an unsafe context. For example:
 
@@ -136,7 +136,7 @@ Native sized integer types have special behavior because the storage is determin
 
   :::code language="csharp" source="snippets/shared/NativeIntegerTypes.cs" id="MinMax":::
 
-- While the full range of `nint` and `nuint` may be larger, compile-time constants are restricted to a 32-bit range:
+- While the full range of `nint` and `nuint` can be larger, compile-time constants are restricted to a 32-bit range:
   - For `nint`: <xref:System.Int32.MinValue?displayProperty=nameWithType> to <xref:System.Int32.MaxValue?displayProperty=nameWithType>.
   - For `nuint`: <xref:System.UInt32.MinValue?displayProperty=nameWithType> to <xref:System.UInt32.MaxValue?displayProperty=nameWithType>.
 - The compiler provides implicit and explicit conversions to other numeric types. For more information, see [Built-in numeric conversions](numeric-conversions.md).
@@ -154,7 +154,7 @@ For more information, see the following sections of the [C# language specificati
 - [Integral types](~/_csharpstandard/standard/types.md#836-integral-types)
 - [Integer literals](~/_csharpstandard/standard/lexical-structure.md#6453-integer-literals)
 - [Native sized integral types](~/_csharplang/proposals/csharp-9.0/native-integers.md)
-- [C# 11 - Numeric `IntPtr` and `UIntPtr`](~/_csharplang/proposals/csharp-11.0/numeric-intptr.md)
+- [Numeric `IntPtr` and `UIntPtr`](~/_csharplang/proposals/csharp-11.0/numeric-intptr.md)
 
 ## See also
 

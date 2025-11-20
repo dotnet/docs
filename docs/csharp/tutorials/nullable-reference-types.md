@@ -1,14 +1,14 @@
 ---
 title: Design with nullable reference types
-description: This advanced tutorial provides an introduction to nullable reference types. You'll learn to express your design intent on when reference values may be null, and have the compiler enforce when they cannot be null.
-ms.date: 11/01/2022
+description: This advanced tutorial provides an introduction to nullable reference types. You learn to express your design intent on when reference values might be null, and have the compiler enforce when they can't be null.
+ms.date: 11/18/2025
 ms.subservice: null-safety
 ---
 # Tutorial: Express your design intent more clearly with nullable and non-nullable reference types
 
-[Nullable reference types](../nullable-references.md) complement reference types the same way nullable value types complement value types. You declare a variable to be a **nullable reference type** by appending a `?` to the type. For example, `string?` represents a nullable `string`. You can use these new types to more clearly express your design intent: some variables *must always have a value*, others *may be missing a value*.
+[Nullable reference types](../nullable-references.md) complement reference types the same way nullable value types complement value types. You declare a variable to be a **nullable reference type** by appending a `?` to the type. For example, `string?` represents a nullable `string`. You can use these new types to more clearly express your design intent: some variables *must always have a value* while others *might be missing a value*.
 
-In this tutorial, you'll learn how to:
+In this tutorial, you learn how to:
 
 > [!div class="checklist"]
 >
@@ -27,40 +27,38 @@ This tutorial assumes you're familiar with C# and .NET, including either Visual 
 
 In this tutorial, you'll build a library that models running a survey. The code uses both nullable reference types and non-nullable reference types to represent the real-world concepts. The survey questions can never be null. A respondent might prefer not to answer a question. The responses might be `null` in this case.
 
-The code you'll write for this sample expresses that intent, and the compiler enforces that intent.
+The code you write for this sample expresses that intent, and the compiler enforces that intent.
 
 ## Create the application and enable nullable reference types
 
-Create a new console application either in Visual Studio or from the command line using `dotnet new console`. Name the application `NullableIntroduction`. Once you've created the application, you'll need to specify that the entire project compiles in an enabled **nullable annotation context**. Open the *.csproj* file and add a `Nullable` element to the `PropertyGroup` element. Set its value to `enable`. You must opt in to the **nullable reference types** feature in projects earlier than C# 11. That's because once the feature is turned on, existing reference variable declarations become **non-nullable reference types**. While that decision will help find issues where existing code may not have proper null-checks, it may not accurately reflect your original design intent:
+Create a new console application either in Visual Studio or from the command line using `dotnet new console`. Name the application `NullableIntroduction`. Once you create the application, you need to specify that the entire project compiles in an enabled **nullable annotation context**. Open the *.csproj* file and add a `Nullable` element to the `PropertyGroup` element. Set its value to `enable`. You must opt in to the **nullable reference types** feature in projects created before C# 11 / .NET 7. Once the feature is turned on, existing reference variable declarations become **non-nullable reference types**. While that decision helps find issues where existing code might not have proper null-checks, it might not accurately reflect your original design intent:
 
 ```xml
 <Nullable>enable</Nullable>
 ```
 
-Prior to .NET 6, new projects do not include the `Nullable` element. Beginning with .NET 6, new projects include the `<Nullable>enable</Nullable>` element in the project file.
-
 ### Design the types for the application
 
-This survey application requires creating a number of classes:
+This survey application requires creating these classes:
 
 - A class that models the list of questions.
 - A class that models a list of people contacted for the survey.
 - A class that models the answers from a person that took the survey.
 
-These types will make use of both nullable and non-nullable reference types to express which members are required and which members are optional. Nullable reference types communicate that design intent clearly:
+These types make use of both nullable and non-nullable reference types to express which members are required and which members are optional. Nullable reference types communicate that design intent clearly:
 
 - The questions that are part of the survey can never be null: It makes no sense to ask an empty question.
-- The respondents can never be null. You'll want to track people you contacted, even respondents that declined to participate.
-- Any response to a question may be null. Respondents can decline to answer some or all questions.
+- The respondents can never be null. You want to track people you contacted, even respondents that declined to participate.
+- Any response to a question might be null. Respondents can decline to answer some or all questions.
 
-If you've programmed in C#, you may be so accustomed to reference types that allow `null` values that you may have missed other opportunities to declare non-nullable instances:
+You might be so accustomed to reference types that allow `null` values that you might miss other opportunities to declare non-nullable instances:
 
 - The collection of questions should be non-nullable.
 - The collection of respondents should be non-nullable.
 
-As you write the code, you'll see that a non-nullable reference type as the default for references avoids common mistakes that could lead to <xref:System.NullReferenceException>s. One lesson from this tutorial is that you made decisions about which variables could or could not be `null`. The language didn't provide syntax to express those decisions. Now it does.
+As you write the code, you see that a non-nullable reference type as the default for references avoids common mistakes that could lead to <xref:System.NullReferenceException>s. One lesson from this tutorial is that you made decisions about which variables could or couldn't be `null`. The language didn't provide syntax to express those decisions. Now it does.
 
-The app you'll build does the following steps:
+The app you build does the following steps:
 
 1. Creates a survey and adds questions to it.
 1. Creates a pseudo-random set of respondents for the survey.
@@ -69,7 +67,7 @@ The app you'll build does the following steps:
 
 ## Build the survey with nullable and non-nullable reference types
 
-The first code you'll write creates the survey. You'll write classes to model a survey question and a survey run. Your survey has three types of questions, distinguished by the format of the answer: Yes/No answers, number answers, and text answers. Create a `public SurveyQuestion` class:
+The first code you write creates the survey. You write classes to model a survey question and a survey run. Your survey has three types of questions, distinguished by the format of the answer: Yes/No answers, number answers, and text answers. Create a `public SurveyQuestion` class:
 
 ```csharp
 namespace NullableIntroduction
@@ -100,7 +98,7 @@ namespace NullableIntroduction
 }
 ```
 
-Because you haven't initialized `QuestionText`, the compiler issues a warning that a non-nullable property hasn't been initialized. Your design requires the question text to be non-null, so you add a constructor to initialize it and the `QuestionType` value as well. The finished class definition looks like the following code:
+Because you didn't initialize `QuestionText`, the compiler issues a warning that a non-nullable property wasn't initialized. Your design requires the question text to be non-null, so you add a constructor to initialize it and the `QuestionType` value as well. The finished class definition looks like the following code:
 
 :::code language="csharp" source="./snippets/NullableIntroduction/SurveyQuestion.cs":::
 
@@ -124,13 +122,13 @@ namespace NullableIntroduction
 }
 ```
 
-As before, you must initialize the list object to a non-null value or the compiler issues a warning. There are no null checks in the second overload of `AddQuestion` because the compiler helps enforce the non-nullable contract: You've declared that variable to be non-nullable. While the compiler warns about potential null assignments, runtime null values are still possible. For public APIs, consider adding argument validation even for non-nullable reference types, since client code might not have nullable reference types enabled or could intentionally pass null.
+As before, you must initialize the list object to a non-null value or the compiler issues a warning. There are no null checks in the second overload of `AddQuestion` because the compiler helps enforce the non-nullable contract: You declared that variable to be non-nullable. While the compiler warns about potential null assignments, runtime null values are still possible. For public APIs, consider adding argument validation even for non-nullable reference types, since client code might not have nullable reference types enabled or could intentionally pass null.
 
 Switch to *Program.cs* in your editor and replace the contents of `Main` with the following lines of code:
 
 :::code language="csharp" source="./snippets/NullableIntroduction/Program.cs" id="AddQuestions":::
 
-Because the entire project is in an enabled nullable annotation context, you'll get warnings when you pass `null` to any method expecting a non-nullable reference type. Try it by adding the following line to `Main`:
+Because the entire project is in an enabled nullable annotation context, you get warnings when you pass `null` to any method expecting a non-nullable reference type. Try it by adding the following line to `Main`:
 
 ```csharp
 surveyRun.AddQuestion(QuestionType.Text, default);
@@ -140,11 +138,11 @@ surveyRun.AddQuestion(QuestionType.Text, default);
 
 Next, write the code that generates answers to the survey. This process involves several small tasks:
 
-1. Build a method that generates respondent objects. These represent people asked to fill out the survey.
+1. Build a method that generates respondent objects. These objects represent people asked to fill out the survey.
 1. Build logic to simulate asking the questions to a respondent and collecting answers or noting that a respondent didn't answer.
-1. Repeat until enough respondents have answered the survey.
+1. Repeat until enough respondents answer the survey.
 
-You'll need a class to represent a survey response, so add that now. Enable nullable support. Add an `Id` property and a constructor that initializes it, as shown in the following code:
+You need a class to represent a survey response, so add that now. Enable nullable support. Add an `Id` property and a constructor that initializes it, as shown in the following code:
 
 ```csharp
 namespace NullableIntroduction
@@ -165,21 +163,21 @@ Next, add a `static` method to create new participants by generating a random ID
 The main responsibility of this class is to generate the responses for a participant to the questions in the survey. This responsibility has a few steps:
 
 1. Ask for participation in the survey. If the person doesn't consent, return a missing (or null) response.
-1. Ask each question and record the answer. Each answer may also be missing (or null).
+1. Ask each question and record the answer. Each answer might also be missing (or null).
 
 Add the following code to your `SurveyResponse` class:
 
 :::code language="csharp" source="./snippets/NullableIntroduction/SurveyResponse.cs" id="AnswerSurvey":::
 
-The storage for the survey answers is a `Dictionary<int, string>?`, indicating that it may be null. You're using the new language feature to declare your design intent, both to the compiler and to anyone reading your code later. If you ever dereference `surveyResponses` without checking for the `null` value first, you'll get a compiler warning. You don't get a warning in the `AnswerSurvey` method because the compiler can determine the `surveyResponses` variable was set to a non-null value above.
+The storage for the survey answers is a `Dictionary<int, string>?`, indicating that it might be null. You're using the new language feature to declare your design intent, both to the compiler and to anyone reading your code later. If you ever dereference `surveyResponses` without checking for the `null` value first, you get a compiler warning. You don't get a warning in the `AnswerSurvey` method because the compiler can determine the `surveyResponses` variable was set to a non-null value in the preceding code.
 
-Using `null` for missing answers highlights a key point for working with nullable reference types: your goal isn't to remove all `null` values from your program. Rather, your goal is to ensure that the code you write expresses the intent of your design. Missing values are a necessary concept to express in your code. The `null` value is a clear way to express those missing values. Trying to remove all `null` values only leads to defining some other way to express those missing values without `null`.
+Using `null` for missing answers highlights a key point for working with nullable reference types: your goal isn't to remove all `null` values from your program. Rather, your goal is to ensure that the code you write expresses the intent of your design. Missing values are a necessary concept to express in your code. The `null` value is a clear way to express those missing values. Trying to remove all `null` values leads to defining some other way to express those missing values without `null`.
 
 Next, you need to write the `PerformSurvey` method in the `SurveyRun` class. Add the following code in the `SurveyRun` class:
 
 :::code language="csharp" source="./snippets/NullableIntroduction/SurveyRun.cs" id="PerformSurvey":::
 
-Here again, your choice of a nullable `List<SurveyResponse>?` indicates the response may be null. That indicates the survey hasn't been given to any respondents yet. Notice that respondents are added until enough have consented.
+Here again, your choice of a nullable `List<SurveyResponse>?` indicates the response might be null. That indicates the survey hasn't been given to any respondents yet. Notice that respondents are added until enough consent.
 
 The last step to run the survey is to add a call to perform the survey at the end of the `Main` method:
 
@@ -187,7 +185,7 @@ The last step to run the survey is to add a call to perform the survey at the en
 
 ## Examine survey responses
 
-The last step is to display survey results. You'll add code to many of the classes you've written. This code demonstrates the value of distinguishing nullable and non-nullable reference types. Start by adding the following two expression-bodied members to the `SurveyResponse` class:
+The last step is to display survey results. You add code to many of the classes you wrote. This code demonstrates the value of distinguishing nullable and non-nullable reference types. Start by adding the following two expression-bodied members to the `SurveyResponse` class:
 
 :::code language="csharp" source="./snippets/NullableIntroduction/SurveyResponse.cs" id="SurveyStatus":::
 
@@ -203,7 +201,7 @@ Finally, add the following loop at the bottom of the `Main` method:
 
 :::code language="csharp" source="./snippets/NullableIntroduction/Program.cs" id="WriteAnswers":::
 
-You don't need any `null` checks in this code because you've designed the underlying interfaces so that they all return non-nullable reference types. The compiler's static analysis helps ensure these design contracts are followed.
+You don't need any `null` checks in this code because you designed the underlying interfaces so that they all return non-nullable reference types. The compiler's static analysis helps ensure these design contracts are followed.
 
 ## Get the code
 

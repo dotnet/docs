@@ -11,7 +11,7 @@ ms.date: 01/31/2024
 
 The following table lists code quality analysis rules.
 
-> [!div class="mx-tdCol2BreakAll"]
+> [!div class="mx-tdBreakAll"]
 >
 > | Rule ID and warning | Description |
 > | ------------------- | ----------- |

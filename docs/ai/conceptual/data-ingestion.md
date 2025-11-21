@@ -5,6 +5,7 @@ author: luisquintanilla
 ms.author: luquinta
 ms.date: 11/11/2025
 ms.topic: concept-article
+ai-usage: ai-assisted
 ---
 
 # Data Ingestion
@@ -21,7 +22,7 @@ For AI and machine learning scenarios, especially Retrieval-Augmented Generation
 
 ## Why data ingestion matters for AI applications
 
-Imagine you're building a RAG-powered chatbot to help employees find information across your company's vast collection of documents. These documents might include PDFs, Word files, PowerPoint presentations, and web pages scattered across different systems. 
+Imagine you're building a RAG-powered chatbot to help employees find information across your company's vast collection of documents. These documents might include PDFs, Word files, PowerPoint presentations, and web pages scattered across different systems.
 
 Your chatbot needs to understand and search through thousands of documents to provide accurate, contextual answers. But raw documents aren't suitable for AI systems. You need to transform them into a format that preserves meaning while making them searchable and retrievable.
 
@@ -35,7 +36,7 @@ With these building blocks, developers can create robust, flexible, and intellig
 
 - **Unified document representation:** Represent any file type (PDF, Image, Microsoft Word, etc.) in a consistent format that works well with large language models.
 - **Flexible data ingestion:** Read documents from both cloud services and local sources using multiple built-in readers, making it easy to bring in data from wherever it lives.
-- **Built-in AI enhancements:** Automatically enrich content with summaries, sentiment analysis, keyword extraction and classification, preparing your data for intelligent workflows.
+- **Built-in AI enhancements:** Automatically enrich content with summaries, sentiment analysis, keyword extraction, and classification, preparing your data for intelligent workflows.
 - **Customizable chunking strategies:** Split documents into chunks using token-based, section-based, or semantic-aware approaches, so you can optimize for your retrieval and analysis needs.
 - **Production-ready storage:** Store processed chunks in popular vector databases and document stores, with support for embedding generation, making your pipelines ready for real-world scenarios.
 - **End-to-end pipeline composition:** Chain together readers, processors, chunkers, and writers with the `IngestionPipeline` API, reducing boilerplate and making it easy to build, customize, and extend complete workflows.
@@ -63,12 +64,12 @@ The [Microsoft.Extensions.DataIngestion](https://www.nuget.org/packages/Microsof
 
 At the foundation of the library is the `IngestionDocument` type, which provides a unified way to represent any file format without losing important information. The `IngestionDocument` is Markdown-centric because large language models work best with Markdown formatting.
 
-The `IngestionDocumentReader` abstraction handles loading documents from various sources, whether local files or streams. There are few readers available:
+The `IngestionDocumentReader` abstraction handles loading documents from various sources, whether local files or streams. A few readers are available:
 
 - **[MarkItDown](https://www.nuget.org/packages/Microsoft.Extensions.DataIngestion.MarkItDown)**
 - **[Markdown](https://www.nuget.org/packages/Microsoft.Extensions.DataIngestion.Markdig/)**
 
-And we are actively working on adding more readers (including **LlamaParse** and **Azure Document Intelligence**).
+We're actively working on adding more readers (including **LlamaParse** and **Azure Document Intelligence**).
 
 This design means you can work with documents from different sources using the same consistent API, making your code more maintainable and flexible.
 
@@ -137,10 +138,10 @@ using VectorStoreWriter<string> writer = new(vectorStore, dimensionCount: 1536);
 
 The `IngestionPipeline<T>` API allows you to chain together the various data ingestion components into a complete workflow. You can combine:
 
-- **Readers** to load documents from various sources
-- **Processors** to transform and enrich document content  
-- **Chunkers** to break documents into manageable pieces
-- **Writers** to store the final results in your chosen data store
+- **Readers** to load documents from various sources.
+- **Processors** to transform and enrich document content.
+- **Chunkers** to break documents into manageable pieces.
+- **Writers** to store the final results in your chosen data store.
 
 This pipeline approach reduces boilerplate code and makes it easy to build, test, and maintain complex data ingestion workflows.
 

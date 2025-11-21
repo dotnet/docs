@@ -48,7 +48,7 @@ helpviewer_keywords:
   - "CS9096"
   - "CS9097"
 ai-usage: ai-assisted
-ms.date: 11/21/2024
+ms.date: 11/21/2025
 ---
 # Errors and warnings related to ref safety
 
@@ -76,7 +76,7 @@ The following warnings are generated when reference variable safety rules are vi
 - [**CS9080**](#escape-scope-violations-and-conditional-operators): *Use of variable in this context may expose referenced variables outside of their declaration scope*
 - [**CS9081**](#escape-scope-violations-and-conditional-operators): *A result of a stackalloc expression of type in this context may be exposed outside of the containing method*
 - [**CS9082**](#struct-member-and-field-restrictions): *Local is returned by reference but was initialized to a value that cannot be returned by reference*
-- [**CS9083**](#struct-member-and-field-restrictions): *A member of is returned by reference but was initialized to a value that cannot be returned by reference*
+- [**CS9083**](#struct-member-and-field-restrictions): *A member is returned by reference but was initialized to a value that cannot be returned by reference*
 - [**CS9084**](#struct-member-and-field-restrictions): *Struct member returns 'this' or other instance members by reference*
 - [**CS9085**](#ref-assignments-with-incompatible-scopes): *This ref-assigns source to destination but source has a narrower escape scope than destination.*
 - [**CS9086**](#escape-scope-violations-and-conditional-operators): *The branches of the ref conditional operator refer to variables with incompatible declaration scopes*
@@ -145,7 +145,7 @@ Warnings:
 To resolve these errors:
 
 - Restructure your code so that the source variable in a ref assignment has an escape scope at least as wide as the destination variable, which ensures the destination reference remains valid for its entire lifetime and prevents dangling references (**CS8374**, **CS9085**).
-- When working with variables that can only escape the method through a return statement, avoid assigning them to ref variables that might be accessed through other means such as being stored in fields or returned through ref parameters, because this would violate the restriction that the source can only be used in return statements (**CS9079**, **CS9093**).
+- When a variable can only escape the method through a return statement, don't assign it to a `ref` variables accessed through other means. Examples include storing in fields or returning through ref parameters. Those actions violate the restriction that the source can only be used in return statements (**CS9079**, **CS9093**).
 - For ref assignments involving value escape scopes, ensure the source's value escape scope isn't wider than the destination's, because a mismatch would allow you to assign narrower-scoped values through the destination reference, potentially creating references to short-lived values (**CS9096**, **CS9097**).
 
 For more information about ref safety rules, see the article on [ref returns and locals](../../programming-guide/classes-and-structs/ref-returns.md) and the C# standard section on [ref safe contexts](~/_csharpstandard/standard/variables.md#972-ref-safe-contexts).
@@ -183,13 +183,13 @@ Errors:
 Warnings:
 
 - **CS9082**: *Local is returned by reference but was initialized to a value that cannot be returned by reference*
-- **CS9083**: *A member of is returned by reference but was initialized to a value that cannot be returned by reference*
+- **CS9083**: *A member is returned by reference but was initialized to a value that cannot be returned by reference*
 - **CS9084**: *Struct member returns 'this' or other instance members by reference*
 
 To resolve these errors:
 
 - Ensure that fields and auto-implemented properties with ref-like types (such as `Span<T>` or `ref struct` types) are only declared as instance members within a ref struct rather than in regular structs or classes, because ref-like types can only safely exist on the stack and ref structs provide the necessary lifetime guarantees (**CS8345**).
 - When returning a local variable by reference from a method, verify that the local was initialized from a source that has a sufficient escape scope such as a ref parameter or ref-returning method call, rather than from a value-typed expression or local-scoped variable that would create a reference to short-lived storage (**CS9082**, **CS9083**).
-- In struct instance methods or properties, avoid returning `this` or any instance fields by reference, because structs are value types that are often copied, and returning a reference to an instance member could create a reference to a temporary copy that's immediately destroyed after the method returns (**CS9084**).
+- In struct instance methods or properties, avoid returning `this` or any instance fields by reference, because structs are value types that are often copied, and returning a reference to an instance member could create a reference to a temporary copy destroyed after the method returns (**CS9084**).
 
 For more information, see the article on [ref struct types](../../language-reference/builtin-types/ref-struct.md) and the C# standard section on [ref safe contexts](~/_csharpstandard/standard/variables.md#972-ref-safe-contexts).

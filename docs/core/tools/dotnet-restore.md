@@ -87,7 +87,7 @@ There are three specific settings that `dotnet restore` ignores:
 
 ## Arguments
 
-- [!INCLUDE [arguments-project-solution-file](../../../includes/cli-arguments-project-solution-file.md)]
+[!INCLUDE [arguments-project-solution-file](../../../includes/cli-arguments-project-solution-file.md)]
 
 ## Options
 

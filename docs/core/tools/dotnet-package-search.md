@@ -34,11 +34,7 @@ The `dotnet package search` command searches for a NuGet package.
 
 ## Options
 
-- **`--configfile`**
-
-    The NuGet configuration file. If specified, only the settings from this file will be used. If not
-    specified, the hierarchy of configuration files from the current directory will be used. For more
-    information, see [Common NuGet configurations](/nuget/consume-packages/configuring-nuget-behavior).
+- [!INCLUDE [configfile](../../../includes/cli-configfile.md)]
 
 - **`--exact-match`**
 
@@ -49,9 +45,7 @@ The `dotnet package search` command searches for a NuGet package.
 
     The format options are `table` and `json`. The default is `table`.
 
-- **`--interactive`**
-
-    Allows the command to stop and wait for user input or action (for example to complete authentication).
+- [!INCLUDE [interactive](../../../includes/cli-interactive.md)]
 
 - **`--prerelease`**
 
@@ -69,9 +63,7 @@ The `dotnet package search` command searches for a NuGet package.
 
     The number of results to return. The default value is 20.
 
-- **`--verbosity`**
-
-    Display this amount of details in the output: `normal`, `minimal`, or `detailed`. The default is `normal`.
+- [!INCLUDE [verbosity](../../../includes/cli-verbosity.md)]
 
 - [!INCLUDE [help](../../../includes/cli-help.md)]
 

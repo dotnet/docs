@@ -52,9 +52,7 @@ By default, the command downloads only the packages you specify (no transitive d
 
      Path to a NuGet.config to use.
 
-* **`--interactive`**
-
-     Enables interactive authentication if required.
+* [!INCLUDE [interactive](../../../includes/cli-interactive.md)]
 
 * **`-o, --output <path>`**
 
@@ -68,11 +66,9 @@ By default, the command downloads only the packages you specify (no transitive d
 
      Specifies the NuGet package source to use.
 
-* **`-v, --verbosity <level>`**
-
-     Set the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.
+* [!INCLUDE [verbosity](../../../includes/cli-verbosity.md)]
   
-- [!INCLUDE [help](../../../includes/cli-help.md)]
+* [!INCLUDE [help](../../../includes/cli-help.md)]
 
 ## Examples
 

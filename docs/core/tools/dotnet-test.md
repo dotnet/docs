@@ -511,9 +511,7 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
   > [!NOTE]
   > Running tests for a solution with a global `RuntimeIdentifier` property (explicitly or via `--arch`, `--runtime`, or `--os`) is not supported. Set `RuntimeIdentifier` on an individual project level instead.
 
-- **`-v|--verbosity <LEVEL>`**
-  
-  Sets the MSBuild verbosity level. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. For more information, see <xref:Microsoft.Build.Framework.LoggerVerbosity>.
+- [!INCLUDE [verbosity](../../../includes/cli-verbosity.md)]
 
 - **`--no-build`**
 
@@ -554,9 +552,7 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
   The short form `-p` can be used for `--property`. The same applies for `/property:property=value` and its short form is `/p`.
   More informatiom about the available arguments can be found in [the dotnet msbuild documentation](dotnet-msbuild.md).
 
-- **`-?|-h|--help`**
-
-  Prints out a description of how to use the command. Some options are static while others, namely platform and extension options, are dynamic. These dynamic options might differ from one test application to another, as they are based on the registered extensions in the test project.
+- [!INCLUDE [help](../../../includes/cli-help.md)]
 
 - **`args`**
 

@@ -62,13 +62,9 @@ The `dotnet new update` command with `--check-only` option checks for available 
 
   Enables diagnostic output. Available since .NET SDK 7.0.100.
 
-- **`-h|--help`**
+- [!INCLUDE [help](../../../includes/cli-help.md)]
 
-  Prints out help for the update command. Available since .NET SDK 7.0.100.
-
-- **`-v|--verbosity <LEVEL>`**
-
-  Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, and `diag[nostic]`. Available since .NET SDK 7.0.100.
+- [!INCLUDE [verbosity](../../../includes/cli-verbosity.md)]
 
 ## Examples
 

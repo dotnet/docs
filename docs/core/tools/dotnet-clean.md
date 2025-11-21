@@ -30,7 +30,7 @@ The `dotnet clean` command cleans the output of the previous build. It's impleme
 
 ## Arguments
 
-- [!INCLUDE [arguments-project-solution-file](../../../includes/cli-arguments-project-solution-file.md)]
+[!INCLUDE [arguments-project-solution-file](../../../includes/cli-arguments-project-solution-file.md)]
 
 ## Options
 

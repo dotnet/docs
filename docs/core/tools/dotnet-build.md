@@ -73,7 +73,7 @@ Running `dotnet build` is equivalent to running `dotnet msbuild -restore`; howev
 
 ## Arguments
 
-- [!INCLUDE [arguments-project-solution-file](../../../includes/cli-arguments-project-solution-file.md)]
+[!INCLUDE [arguments-project-solution-file](../../../includes/cli-arguments-project-solution-file.md)]
 
 ## Options
 

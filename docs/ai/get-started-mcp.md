@@ -44,13 +44,13 @@ MCP client and server can exchange a set of standard messages:
 | `InitializeRequest` | This request is sent by the client to the server when it first connects, asking it to begin initialization. |
 | `ListToolsRequest`  | Sent by the client to request a list of tools the server has. |
 | `CallToolRequest`   | Used by the client to invoke a tool provided by the server.   |
-|`ListResourcesRequest` | Sent by the client to request a list of available server resources. |
-|`ReadResourceRequest` |  Sent by the client to the server to read a specific resource URI. |
-|`ListPromptsRequest` | Sent by the client to request a list of available prompts and prompt templates from the server.       |
-|`GetPromptRequest` |  Used by the client to get a prompt provided by the server.     |
-|`PingRequest` |   A ping, issued by either the server or the client, to check that the other party is still alive. |
-|`CreateMessageRequest` |  A request by the server to sample an LLM via the client. The client has full discretion over which model to select. The client should also inform the user before beginning sampling, to allow them to inspect the request (human in the loop) and decide whether to approve it. |
-|`SetLevelRequest`    | A request by the client to the server, to enable or adjust logging. |
+| `ListResourcesRequest` | Sent by the client to request a list of available server resources. |
+| `ReadResourceRequest` |  Sent by the client to the server to read a specific resource URI. |
+| `ListPromptsRequest` | Sent by the client to request a list of available prompts and prompt templates from the server.       |
+| `GetPromptRequest` |  Used by the client to get a prompt provided by the server.     |
+| `PingRequest` |   A ping, issued by either the server or the client, to check that the other party is still alive. |
+| `CreateMessageRequest` |  A request by the server to sample an LLM via the client. The client has full discretion over which model to select. The client should also inform the user before beginning sampling, to allow them to inspect the request (human in the loop) and decide whether to approve it. |
+| `SetLevelRequest`  | A request by the client to the server, to enable or adjust logging. |
 
 ## Develop with the MCP C# SDK
 

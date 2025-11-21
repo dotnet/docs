@@ -28,7 +28,7 @@ For information about how to install NuGet packages, see [dotnet package add](..
 
 ## APIs and examples
 
-The following subsections show specific [IChatClient](#the-ichatclient-interface) usage examples:
+The following subsections show specific [`IChatClient`](#the-ichatclient-interface) usage examples:
 
 - [Request a chat response](#request-a-chat-response)
 - [Request a streaming chat response](#request-a-streaming-chat-response)
@@ -41,15 +41,12 @@ The following subsections show specific [IChatClient](#the-ichatclient-interface
 - [Dependency injection](#dependency-injection)
 - [Stateless vs. stateful clients](#stateless-vs-stateful-clients)
 
-The following sections show specific [IEmbeddingGenerator](#the-iembeddinggenerator-interface) usage examples:
+The following sections show specific [`IEmbeddingGenerator`](#the-iembeddinggenerator-interface) usage examples:
 
 - [Create embeddings](#create-embeddings)
 - [Pipelines of functionality](#pipelines-of-functionality)
 
-The following sections describe [IImageGenerator](#the-iimagegenerator-interface) capabilities:
-
-- [Generate images](#generate-images)
-- [Image generation pipelines](#image-generation-pipelines)
+- [`IImageGenerator`](#the-iimagegenerator-interface)
 
 ### The `IChatClient` interface
 
@@ -241,28 +238,9 @@ In this way, the `RateLimitingEmbeddingGenerator` can be composed with other `IE
 
 ### The `IImageGenerator` interface
 
-The <xref:Microsoft.Extensions.AI.IImageGenerator> interface represents a generator for creating images from text prompts or other input. This interface enables applications to integrate image generation capabilities from various AI services through a consistent API. The interface supports text-to-image generation and configuration options for image size and format, and can be composed with middleware for caching, telemetry, and other cross-cutting concerns.
-
-.NET libraries that provide image generation services can implement the `IImageGenerator` interface to enable seamless integration with consuming code. The interface is designed to work with various AI image generation services and models.
-
-#### Generate images
-
-The primary operation performed with an <xref:Microsoft.Extensions.AI.IImageGenerator> is image generation, which is accomplished with its <xref:Microsoft.Extensions.AI.IImageGenerator.GenerateImagesAsync*> method. You can generate images from text prompts with optional configuration for image size, format, and other parameters.
-
-The <xref:Microsoft.Extensions.AI.ImageGenerationOptions> class allows you to specify various parameters:
-
-- **Size**: Set the dimensions of the generated image using <xref:Microsoft.Extensions.AI.ImageGenerationOptions.ImageSize>
-- **Count**: Specify how many images to generate with <xref:Microsoft.Extensions.AI.ImageGenerationOptions.Count>
-- **Format**: Control the response format (URI, data, or hosted) with <xref:Microsoft.Extensions.AI.ImageGenerationOptions.ResponseFormat>
-- **Media Type**: Set the MIME type for the generated image with <xref:Microsoft.Extensions.AI.ImageGenerationOptions.MediaType>
+The <xref:Microsoft.Extensions.AI.IImageGenerator> interface represents a generator for creating images from text prompts or other input. This interface enables applications to integrate image generation capabilities from various AI services through a consistent API. The interface supports text-to-image generation (by calling <xref:Microsoft.Extensions.AI.IImageGenerator.GenerateAsync(Microsoft.Extensions.AI.ImageGenerationRequest,Microsoft.Extensions.AI.ImageGenerationOptions,System.Threading.CancellationToken)>) and [configuration options](xref:Microsoft.Extensions.AI.ImageGenerationOptions) for image size and format. Like other interfaces in the library, it can be composed with middleware for caching, telemetry, and other cross-cutting concerns.
 
 For more information, see [Generate images from text using AI](quickstarts/text-to-image.md).
-
-#### Image generation pipelines
-
-Like other interfaces in `Microsoft.Extensions.AI`, `IImageGenerator` implementations can be layered to create pipelines of functionality. You can add caching, telemetry, rate limiting, and other cross-cutting concerns:
-
-:::code language="csharp" source="snippets/microsoft-extensions-ai/ConsoleAI.ImageGenerationPipeline/Program.cs" id="Snippet1":::
 
 ## Build with Microsoft.Extensions.AI
 

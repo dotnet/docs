@@ -14,27 +14,29 @@ IHost host = Host.CreateDefaultBuilder(args)
             clientBuilder.AddSecretClient(new Uri("<key_vault_url>"));
             clientBuilder.AddBlobServiceClient(new Uri("<storage_url>"));
             clientBuilder.AddServiceBusClientWithNamespace("<your_namespace>.servicebus.windows.net");
-
-            // Set a credential for all clients to use by default
+            
+            // AddAzureClients implicitly creates a DefaultAzureCredential instance
+            // Create a credential manually to override the type or access it explicitly for DI registrations
+            // This example shows credential reuse for GetQueueNames and AddClient calls downstream
             DefaultAzureCredential credential = new();
             clientBuilder.UseCredential(credential);
 
-            // Register subclients for Service Bus
+            // Register a subclient for each Service Bus Queue
             List<string> queueNames = await GetQueueNames(credential);
             foreach (string queueName in queueNames)
             {
                 clientBuilder.AddClient<ServiceBusSender, ServiceBusClientOptions>((_, _, provider) =>
-                provider.GetService(typeof(ServiceBusClient)) switch
-                {
-                    ServiceBusClient client => client.CreateSender(queueName),
-                    _ => throw new InvalidOperationException("Unable to create ServiceBusClient")
-                }).WithName(queueName);
+                    provider.GetService(typeof(ServiceBusClient)) switch
+                    {
+                        ServiceBusClient client => client.CreateSender(queueName),
+                        _ => throw new InvalidOperationException("Unable to create ServiceBusClient")
+                    }).WithName(queueName);
             }
 
             // Register a custom client factory
             clientBuilder.AddClient<AzureOpenAIClient, AzureOpenAIClientOptions>(
-                (options, _, _) => new AzureOpenAIClient(
-                    new Uri("<url_here>"), credential, options)); 
+                (options, credential, _) => new AzureOpenAIClient(
+                    new Uri("<url_here>"), credential, options));
         });
     }).Build();
 

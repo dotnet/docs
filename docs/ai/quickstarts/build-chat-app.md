@@ -1,10 +1,9 @@
 ---
 title: Quickstart - Build an AI chat app with .NET
 description: Create a simple AI powered chat app using Microsoft.Extensions.AI and the OpenAI or Azure OpenAI SDKs
-ms.date: 04/09/2025
+ms.date: 11/20/2025
 ms.topic: quickstart
 zone_pivot_groups: openai-library
-# CustomerIntent: As a .NET developer new to AI, I want deploy and use sample code to interact to learn from the sample code.
 ---
 
 # Build an AI chat app with .NET

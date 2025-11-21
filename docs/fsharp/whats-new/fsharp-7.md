@@ -97,44 +97,6 @@ This simplification makes SRTP constraints more approachable and reduces boilerp
 
 For more information, see [Statically Resolved Type Parameters](../language-reference/generics/statically-resolved-type-parameters.md).
 
-## Nested record updates with copy-and-update expressions
-
-F# 7 enhances copy-and-update expressions to support updating nested record fields directly. This feature allows for more concise syntax when working with deeply nested records.
-
-Before F# 7, updating a nested field required multiple `with` expressions:
-
-```fsharp
-type SteeringWheel = { Type: string }
-type CarInterior = { Steering: SteeringWheel; Seats: int }
-type Car = { Interior: CarInterior; ExteriorColor: string option }
-
-let updateCar car =
-    { car with 
-        Interior = { car.Interior with
-                       Steering = { car.Interior.Steering with Type = "sport" }
-                       Seats = 4 } }
-```
-
-Starting with F# 7, you can use dot notation to reach nested fields and update them directly:
-
-```fsharp
-let updateCar car =
-    { car with 
-        Interior.Steering.Type = "sport"
-        Interior.Seats = 4 }
-```
-
-This syntax eliminates the need for multiple nested `with` expressions while still allowing multiple fields at different levels of nesting to be updated in the same expression. The feature also works with anonymous records:
-
-```fsharp
-let updatedRecord =
-    {| car with
-        Interior.Seats = 4
-        Price = 35000 |}
-```
-
-For more information, see [Copy and Update Record Expressions](../language-reference/copy-and-update-record-expressions.md).
-
 ## Performance improvements
 
 F# 7 includes several performance improvements:

@@ -39,6 +39,7 @@ With these building blocks, developers can create robust, flexible, and intellig
 - **Customizable chunking strategies:** Split documents into chunks using token-based, section-based, or semantic-aware approaches, so you can optimize for your retrieval and analysis needs.
 - **Production-ready storage:** Store processed chunks in popular vector databases and document stores, with support for embedding generation, making your pipelines ready for real-world scenarios.
 - **End-to-end pipeline composition:** Chain together readers, processors, chunkers, and writers with the `IngestionPipeline` API, reducing boilerplate and making it easy to build, customize, and extend complete workflows.
+- **Performance and scalability:** Designed for scalable data processing, these components can handle large volumes of data efficiently, making them suitable for enterprise-grade applications.
 
 All of these components are open and extensible by design. You can add custom logic, new connectors, and extend the system to support emerging AI scenarios. By standardizing how documents are represented, processed, and stored, .NET developers can build reliable, scalable, and maintainable data pipelines without reinventing the wheel for every project.
 
@@ -64,23 +65,16 @@ At the foundation of the library is the `IngestionDocument` type, which provides
 
 The `IngestionDocumentReader` abstraction handles loading documents from various sources, whether local files or streams. There are few readers available:
 
-- **Azure Document Intelligence**
-- **LlamaParse**
 - **[MarkItDown](https://www.nuget.org/packages/Microsoft.Extensions.DataIngestion.MarkItDown)**
 - **[Markdown](https://www.nuget.org/packages/Microsoft.Extensions.DataIngestion.Markdig/)**
 
-This design means you can work with documents from different sources using the same consistent API, making your code more maintainable and flexible.
+And we are actively working on adding more readers (including **LlamaParse** and **Azure Document Intelligence**).
 
-```csharp
-// TODO: Add code snippet
-```
+This design means you can work with documents from different sources using the same consistent API, making your code more maintainable and flexible.
 
 ### Document Processing
 
-Document processors apply transformations at the document level to enhance and prepare content. The library currently supports:
-
-- **Image processing** to extract text and descriptions from images within documents
-- **Table processing** to preserve tabular data structure and make it searchable
+Document processors apply transformations at the document level to enhance and prepare content. The library currently provides `ImageAlternativeTextEnricher` class as a built-in processor that uses large language models to generate descriptive alternative text for images within documents.
 
 ### Chunks and Chunking Strategies
 
@@ -88,35 +82,60 @@ Once you have a document loaded, you typically need to break it down into smalle
 
 The library provides several chunking strategies to fit different use cases:
 
-- **Token-based chunking** splits text based on token counts, ensuring chunks fit within model limits
-- **Section-based chunking** splits on headers and natural document boundaries  
-- **Semantic-aware chunking** preserves complete thoughts and ideas across chunk boundaries
+- **Header-based chunking** to split on headers.
+- **Section-based chunking** to split on sections (example: pages).
+- **Semantic-aware chunking** to preserve complete thoughts.
 
 These chunking strategies build on the Microsoft.ML.Tokenizers library to intelligently split text into appropriately sized pieces that work well with large language models. The right chunking strategy depends on your document types and how you plan to retrieve information.
 
 ```csharp
-// TODO: Add code snippet
+Tokenizer tokenizer = TiktokenTokenizer.CreateForModel("gpt-4");
+IngestionChunkerOptions options = new(tokenizer)
+{
+    MaxTokensPerChunk = 2000,
+    OverlapTokens = 0
+};
+IngestionChunker<string> chunker = new HeaderChunker(options);
 ```
 
 ### Chunk Processing and Enrichment
 
 After documents are split into chunks, you can apply processors to enhance and enrich the content. Chunk processors work on individual pieces and can perform:
 
-- **Content enrichment** including automatic summaries, sentiment analysis, and keyword extraction
-- **PII removal** for privacy-focused content sanitization using large language models  
-- **Classification** for automated content categorization based on predefined categories
+- **Content enrichment** including automatic summaries (`SummaryEnricher`), sentiment analysis (`SentimentEnricher`), and keyword extraction (`KeywordEnricher`).
+- **Classification** for automated content categorization based on predefined categories (`ClassificationEnricher`).
 
-These processors use Microsoft.Extensions.AI to leverage large language models for intelligent content transformation, making your chunks more useful for downstream AI applications.
+These processors use [Microsoft.Extensions.AI.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.AI.Abstractions) to leverage large language models for intelligent content transformation, making your chunks more useful for downstream AI applications.
 
 ### Document Writer and Storage
 
-The `DocumentWriter` stores processed chunks into a data store for later retrieval. Using Microsoft.Extensions.AI and Microsoft.Extensions.VectorData, the library provides abstractions and implementations that support storing chunks in any vector store supported by Microsoft.Extensions.VectorData.
+The `IngestionChunkWriter<T>` stores processed chunks into a data store for later retrieval. Using Microsoft.Extensions.AI and [Microsoft.Extensions.VectorData.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.VectorData.Abstractions), the library provides the `VectorStoreWriter<T>` class that supports storing chunks in any vector store supported by Microsoft.Extensions.VectorData.
 
-This includes popular options like Azure SQL Server, CosmosDB, PostgreSQL, MongoDB, and many others. The writer can also automatically generate embeddings for your chunks using Microsoft.Extensions.AI, making them ready for semantic search and retrieval scenarios.
+This includes popular options like [Qdrant](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.Qdrant), [SQL Server](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.SqlServer), [CosmosDB](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.CosmosNoSQL), [MongoDB](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.MongoDB), [ElasticSearch](https://www.nuget.org/packages/Elastic.SemanticKernel.Connectors.Elasticsearch), and many more. The writer can also automatically generate embeddings for your chunks using Microsoft.Extensions.AI, making them ready for semantic search and retrieval scenarios.
+
+```csharp
+OpenAIClient openAIClient = new(
+    new ApiKeyCredential(Environment.GetEnvironmentVariable("GITHUB_TOKEN")!),
+    new OpenAIClientOptions { Endpoint = new Uri("https://models.github.ai/inference") });
+
+IEmbeddingGenerator<string, Embedding<float>> embeddingGenerator =
+    openAIClient.GetEmbeddingClient("text-embedding-3-small").AsIEmbeddingGenerator();
+
+using SqliteVectorStore vectorStore = new(
+    "Data Source=vectors.db;Pooling=false",
+    new()
+    {
+        EmbeddingGenerator = embeddingGenerator
+    });
+
+// The writer requires the embedding dimension count to be specified.
+// For OpenAI's `text-embedding-3-small`, the dimension count is 1536.
+using VectorStoreWriter<string> writer = new(vectorStore, dimensionCount: 1536);
+```
 
 ### Document Processing Pipeline
 
-The `DocumentPipeline` API allows you to chain together the various data ingestion components into a complete workflow. You can combine:
+The `IngestionPipeline<T>` API allows you to chain together the various data ingestion components into a complete workflow. You can combine:
 
 - **Readers** to load documents from various sources
 - **Processors** to transform and enrich document content  
@@ -126,5 +145,16 @@ The `DocumentPipeline` API allows you to chain together the various data ingesti
 This pipeline approach reduces boilerplate code and makes it easy to build, test, and maintain complex data ingestion workflows.
 
 ```csharp
-//TODO: Add code snippet
+using IngestionPipeline<string> pipeline = new(reader, chunker, writer, loggerFactory: loggerFactory)
+{
+    DocumentProcessors = { imageAlternativeTextEnricher },
+    ChunkProcessors = { summaryEnricher }
+};
+
+await foreach (var result in pipeline.ProcessAsync(new DirectoryInfo("."), searchPattern: "*.md"))
+{
+    Console.WriteLine($"Completed processing '{result.DocumentId}'. Succeeded: '{result.Succeeded}'.");
+}
 ```
+
+A single document ingestion failure should not fail the whole pipeline, that is why the `IngestionPipeline.ProcessAsync` implements partial success by returning `IAsyncEnumerable<IngestionResult>`. The caller is responsible for handling any failures (for example, by re-trying failed documents or stopping on first error).

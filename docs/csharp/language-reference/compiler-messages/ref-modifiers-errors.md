@@ -203,7 +203,7 @@ To correct these errors:
 - Use the `ref` keyword instead of `out` when declaring local reference variables. `out` is exclusively a parameter modifier that indicates a method must assign a value before returning, whereas `ref` is the appropriate keyword for creating local variables that alias other storage locations (**CS8388**).
 - Pass a regular variable or value expression instead of an interpolated string when calling a method with an `out` parameter. Interpolated strings are immutable temporary values that can't be used as output parameters since they don't represent assignable storage locations (**CS9205**).
 
-For more information about reference variables and their syntax requirements, see [reference variables](../statements/declarations.md#reference-variables) and the [C# Language Specification](~/_csharpstandard/standard/variables.md#96-reference-variables-and-returns).
+For more information about reference variables and their syntax requirements, see [reference variables](../statements/declarations.md#reference-variables) and the [C# Language Specification](~/_csharpstandard/standard/variables.md#97-reference-variables-and-returns).
 
 ## Reference variable restrictions
 
@@ -256,7 +256,7 @@ To correct these errors:
 - Match the reference kind modifiers (`ref`, `in`, `out`, `ref readonly`) between a method and its overridden base method or implemented interface method. The reference modifier is part of the method signature contract that derived types must honor to maintain substitutability and caller expectations (**CS9196**, **CS9197**, **CS9198**).
 - Declare parameters as `in` rather than `ref readonly` when providing default values. `ref readonly` is designed for scenarios where the caller passes a reference to an existing variable, whereas `in` parameters can accept both references and temporary copies of values, making default values meaningful (**CS9200**).
 
-For more information about where reference variables are allowed, see [Method parameters](../keywords/method-parameters.md), [Iterators](../../iterators.md), [Asynchronous programming patterns](../../asynchronous-programming/index.md), and the [C# Language Specification](~/_csharpstandard/standard/variables.md#96-reference-variables-and-returns).
+For more information about where reference variables are allowed, see [Method parameters](../keywords/method-parameters.md), [Iterators](../../iterators.md), [Asynchronous programming patterns](../../asynchronous-programming/index.md), and the [C# Language Specification](~/_csharpstandard/standard/variables.md#97-reference-variables-and-returns).
 
 ## `unscoped ref` restrictions
 
@@ -292,7 +292,7 @@ To correct these errors:
 - Use the `in` modifier instead of `ref` when passing arguments to `in` parameters. While `ref` technically works due to backward compatibility, the `in` modifier more clearly expresses the intent that the argument is read-only and may be passed more efficiently as a reference without copying (**CS9191**, **CS9195**).
 - Add the appropriate reference modifier (`ref`, `in`, or `ref readonly`) when passing arguments to parameters that expect references. Omitting the modifier may cause the compiler to create a temporary copy of the value, which is inefficient and can lead to unexpected behavior if the calling code expects modifications to be reflected in the original variable (**CS9192**, **CS9193**).
 
-For more information about reference parameters and passing variables by reference, see [Method parameters](../keywords/method-parameters.md), [ref keyword](../keywords/ref.md), and the [C# Language Specification](~/_csharpstandard/standard/variables.md#96-reference-variables-and-returns).
+For more information about reference parameters and passing variables by reference, see [Method parameters](../keywords/method-parameters.md), [ref keyword](../keywords/ref.md), and the [C# Language Specification](~/_csharpstandard/standard/variables.md#97-reference-variables-and-returns).
 
 ## Writable reference variables require a writable referent
 
@@ -317,4 +317,4 @@ To correct these errors:
 - Copy members of readonly variables to local variables before passing them as writable references. Even though the member itself might not be declared as readonly, it's accessed through a readonly path (via a readonly field, `in` parameter, or `ref readonly` local), and the compiler enforces transitivity of readonly-ness to prevent indirect mutation of readonly data (**CS8330**, **CS8332**).
 - Avoid writable ref assignments to readonly variables, [foreach iteration variables](../statements/iteration-statements.md#the-foreach-statement), [using statement resources](../statements/using.md), or [fixed statement variables](../statements/fixed.md). These variables have special lifetime semantics managed by the compiler. The variable is automatically finalized or disposed at the end of its scope. External references create dangling references after disposal (**CS8331**).
 
-For more information about readonly semantics and reference parameters, see [readonly keyword](../keywords/readonly.md), [in parameter modifier](../keywords/method-parameters.md#in-parameter-modifier), [ref readonly](../statements/declarations.md#reference-variables), and the [C# Language Specification](~/_csharpstandard/standard/variables.md#96-reference-variables-and-returns).
+For more information about readonly semantics and reference parameters, see [readonly keyword](../keywords/readonly.md), [in parameter modifier](../keywords/method-parameters.md#in-parameter-modifier), [ref readonly](../statements/declarations.md#reference-variables), and the [C# Language Specification](~/_csharpstandard/standard/variables.md#97-reference-variables-and-returns).

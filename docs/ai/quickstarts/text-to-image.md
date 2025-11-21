@@ -136,6 +136,15 @@ The `Aspire.Azure.AI.OpenAI` package provides extension methods to register Azur
 
    The <xref:Microsoft.Extensions.DependencyInjection.ImageGeneratorBuilderServiceCollectionExtensions.AddImageGenerator*> method registers the image generator as a singleton service that can be injected into controllers, services, or minimal API endpoints.
 
+1. Add options and logging::
+
+   :::code language="csharp" source="snippets/text-to-image/hosting/Program.cs" id="SnippetConfigureOptions":::
+
+   The preceding code:
+
+   - Configures options by calling the <xref:Microsoft.Extensions.AI.ConfigureOptionsImageGeneratorBuilderExtensions.ConfigureOptions(Microsoft.Extensions.AI.ImageGeneratorBuilder,System.Action{Microsoft.Extensions.AI.ImageGenerationOptions})> extension method on the <xref:Microsoft.Extensions.AI.ImageGeneratorBuilder>. This method configures the <xref:Microsoft.Extensions.AI.ImageGenerationOptions> to be passed to the next generator in the pipeline.
+   - Adds logging to the image generator pipeline by calling the <xref:Microsoft.Extensions.AI.LoggingImageGeneratorBuilderExtensions.UseLogging(Microsoft.Extensions.AI.ImageGeneratorBuilder,Microsoft.Extensions.Logging.ILoggerFactory,System.Action{Microsoft.Extensions.AI.LoggingImageGenerator})> extension method.
+
 ### Use the image generator in endpoints
 
 Once registered, you can inject `IImageGenerator` into your endpoints or services:

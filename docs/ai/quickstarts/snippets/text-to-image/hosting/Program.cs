@@ -11,7 +11,7 @@ AspireAzureOpenAIClientBuilder openai = builder.AddAzureOpenAIClient("openai");
 
 // <SnippetAddImageGenerator>
 // Register the image generator with dependency injection.
-builder.Services.AddImageGenerator(services =>
+ImageGeneratorBuilder imageBuilder = builder.Services.AddImageGenerator(services =>
 {
     OpenAIClient openAiClient = services.GetRequiredService<OpenAIClient>();
     OpenAI.Images.ImageClient imageClient = openAiClient.GetImageClient("gpt-image-1");
@@ -21,18 +21,20 @@ builder.Services.AddImageGenerator(services =>
 });
 // </SnippetAddImageGenerator>
 
+// <SnippetConfigureOptions>
+imageBuilder.ConfigureOptions(options =>
+{
+    options.MediaType = "image/png";
+}).UseLogging();
+// </SnippetConfigureOptions>
+
 WebApplication app = builder.Build();
 
 // <SnippetUseImageGenerator>
 // Use the image generator in an endpoint.
 app.MapPost("/generate-image", async (IImageGenerator generator, string prompt) =>
 {
-    var options = new ImageGenerationOptions
-    {
-        MediaType = "image/png"
-    };
-
-    ImageGenerationResponse response = await generator.GenerateImagesAsync(prompt, options);
+    ImageGenerationResponse response = await generator.GenerateImagesAsync(prompt);
     DataContent dataContent = response.Contents.OfType<DataContent>().First();
 
     return Results.File(dataContent.Data.ToArray(), "image/png");

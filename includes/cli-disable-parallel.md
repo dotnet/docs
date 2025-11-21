@@ -4,4 +4,4 @@ ms.topic: include
 ---
 - **`--disable-parallel`**
 
-  Prevents restoring multiple projects in parallel.
+Prevents restoring multiple projects in parallel.

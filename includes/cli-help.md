@@ -4,4 +4,4 @@ ms.topic: include
 ---
 - **`-?|-h|--help`**
 
-  Prints out a description of how to use the command.
+Prints out a description of how to use the command.

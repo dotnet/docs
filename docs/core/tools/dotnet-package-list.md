@@ -133,7 +133,7 @@ The project or solution file to operate on. If not specified, the command search
 
   Lists transitive packages, in addition to the top-level packages. When specifying this option, you get a list of packages that the top-level packages depend on.
 
-[!INCLUDE [interactive](../../../includes/cli-interactive-3-0.md)]
+[!INCLUDE [interactive](../../../includes/cli-interactive.md)]
 
 - **`--no-restore`**
   

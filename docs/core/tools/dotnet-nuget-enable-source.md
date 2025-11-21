@@ -31,7 +31,7 @@ The `dotnet nuget enable source` command enables an existing source in your NuGe
 
 ## Options
 
-[!INCLUDE [configfile](../../../includes/cli-configfile.md)]
+- [!INCLUDE [configfile](../../../includes/cli-configfile.md)]
 
 ## Examples
 

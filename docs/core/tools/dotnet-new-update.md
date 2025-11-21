@@ -47,7 +47,7 @@ The `dotnet new update` command with `--check-only` option checks for available 
 
 ## Options
 
-[!INCLUDE [interactive](../../../includes/cli-interactive-5-0.md)]
+[!INCLUDE [interactive](../../../includes/cli-interactive.md)]
 
 - **`--add-source|nuget-source <SOURCE>`**
   

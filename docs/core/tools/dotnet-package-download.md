@@ -72,7 +72,7 @@ By default, the command downloads only the packages you specify (no transitive d
 
      Set the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.
   
-[!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](../../../includes/cli-help.md)]
 
 ## Examples
 

@@ -4,4 +4,4 @@ ms.topic: include
 ---
 - **`--ignore-failed-sources`**
 
-  Treats package source failures as warnings.
+Treats package source failures as warnings.

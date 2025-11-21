@@ -109,7 +109,7 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 
   Forces all dependencies to be resolved even if the last restore was successful. Specifying this flag is the same as deleting the *project.assets.json* file.
 
-[!INCLUDE [interactive](../../../includes/cli-interactive-3-0.md)]
+[!INCLUDE [interactive](../../../includes/cli-interactive.md)]
 
 - **`--launch-profile <NAME>`**
 

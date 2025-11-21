@@ -44,7 +44,7 @@ The command uses the [NuGet Search API](/nuget/api/search-query-service-resource
 
   Specifies the number of query results to show. Used for pagination.
 
-[!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](../../../includes/cli-help.md)]
 
 ## Examples
 

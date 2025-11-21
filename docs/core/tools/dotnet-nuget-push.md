@@ -64,7 +64,7 @@ Alternatively, use the NuGet CLI for the first package, then you can use `dotnet
 
 [!INCLUDE [help](../../../includes/cli-help.md)]
 
-[!INCLUDE [interactive](../../../includes/cli-interactive-3-0.md)]
+[!INCLUDE [interactive](../../../includes/cli-interactive.md)]
 
 - **`-k|--api-key <API_KEY>`**
 

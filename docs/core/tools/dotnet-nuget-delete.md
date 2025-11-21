@@ -42,9 +42,9 @@ The `dotnet nuget delete` command deletes or unlists a package from the server. 
 
   Forces the application to run using an invariant, English-based culture.
 
-[!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](../../../includes/cli-help.md)]
 
-[!INCLUDE [interactive](../../../includes/cli-interactive-3-0.md)]
+- [!INCLUDE [interactive](../../../includes/cli-interactive.md)]
 
 * **`-k|--api-key <API_KEY>`**
 

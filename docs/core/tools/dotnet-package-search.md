@@ -73,7 +73,7 @@ The `dotnet package search` command searches for a NuGet package.
 
     Display this amount of details in the output: `normal`, `minimal`, or `detailed`. The default is `normal`.
 
-[!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](../../../includes/cli-help.md)]
 
 ## Examples
 

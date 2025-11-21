@@ -68,7 +68,7 @@ On Windows Command Prompt and PowerShell, you will need to set the environment v
     If restore reports any packages as having known vulnerabilities, this command will upgrade those packages.
     Using this option will upgrade packages to the lowest version that is higher than the currently referenced version, that does not have any known vulnerabilities.
 
-[!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](../../../includes/cli-help.md)]
 
 ## Examples
 

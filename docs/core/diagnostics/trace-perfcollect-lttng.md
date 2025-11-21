@@ -81,8 +81,6 @@ For resolving method names of native runtime DLLs (such as libcoreclr.so), `perf
     > ```
     >
 
-    [!INCLUDE [complus-prefix](../../../includes/complus-prefix.md)]
-
 1. **[App]** Run the app - let it run as long as you need to in order to capture the performance problem. The exact length can be as short as you need as long as it sufficiently captures the window of time where the performance problem you want to investigate occurs.
 
     ```bash

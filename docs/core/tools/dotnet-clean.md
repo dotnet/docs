@@ -34,17 +34,17 @@ The `dotnet clean` command cleans the output of the previous build. It's impleme
 
 ## Options
 
-[!INCLUDE [artifacts-path](../../../includes/cli-artifacts-path.md)]
+- [!INCLUDE [artifacts-path](../../../includes/cli-artifacts-path.md)]
 
-[!INCLUDE [configuration](../../../includes/cli-configuration-clean.md)]
+- [!INCLUDE [configuration](../../../includes/cli-configuration-clean.md)]
 
 - **`-f|--framework <FRAMEWORK>`**
 
   The [framework](../../standard/frameworks.md) that was specified at build time. The framework must be defined in the [project file](../project-sdk/overview.md). If you specified the framework at build time, you must specify the framework when cleaning.
 
-[!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](../../../includes/cli-help.md)]
 
-[!INCLUDE [interactive](../../../includes/cli-interactive-3-0.md)]
+- [!INCLUDE [interactive](../../../includes/cli-interactive.md)]
 
 - **`--nologo`**
 
@@ -62,9 +62,9 @@ The `dotnet clean` command cleans the output of the previous build. It's impleme
 
   Cleans the output folder of the specified runtime. This is used when a [self-contained deployment](../deploying/index.md#self-contained-deployment) was created.
 
-[!INCLUDE [tl](../../../includes/cli-tl.md)]
+- [!INCLUDE [tl](../../../includes/cli-tl.md)]
 
-[!INCLUDE [verbosity](../../../includes/cli-verbosity-normal.md)]
+- [!INCLUDE [verbosity](../../../includes/cli-verbosity-normal.md)]
 
 ## Examples
 

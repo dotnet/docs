@@ -31,7 +31,7 @@ The `dotnet nuget disable source` command disables an existing source in your Nu
 
 ## Options
 
-[!INCLUDE [configfile](../../../includes/cli-configfile.md)]
+- [!INCLUDE [configfile](../../../includes/cli-configfile.md)]
 
 ## Examples
 

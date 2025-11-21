@@ -91,11 +91,11 @@ There are three specific settings that `dotnet restore` ignores:
 
 ## Options
 
-[!INCLUDE [arch](../../../includes/cli-arch.md)]
+- [!INCLUDE [arch](../../../includes/cli-arch.md)]
 
-[!INCLUDE [configfile](../../../includes/cli-configfile.md)]
+- [!INCLUDE [configfile](../../../includes/cli-configfile.md)]
 
-[!INCLUDE [disable-build-servers](../../../includes/cli-disable-build-servers.md)]
+- [!INCLUDE [disable-build-servers](../../../includes/cli-disable-build-servers.md)]
 
 - **`--disable-parallel`**
 
@@ -113,7 +113,7 @@ There are three specific settings that `dotnet restore` ignores:
 
   Only warn about failed sources if there are packages meeting the version requirement.
 
-[!INCLUDE [interactive](../../../includes/cli-interactive.md)]
+- [!INCLUDE [interactive](../../../includes/cli-interactive.md)]
 
 - **`--lock-file-path <LOCK_FILE_PATH>`**
 
@@ -149,17 +149,17 @@ There are three specific settings that `dotnet restore` ignores:
 
   Specifies the URI of the NuGet package source to use during the restore operation. This setting overrides all of the sources specified in the *nuget.config* files. Multiple sources can be provided by specifying this option multiple times.
 
-[!INCLUDE [use-current-runtime](../../../includes/cli-use-current-runtime.md)]
+- [!INCLUDE [use-current-runtime](../../../includes/cli-use-current-runtime.md)]
 
 - **`--use-lock-file`**
 
   Enables project lock file to be generated and used with restore.
 
-[!INCLUDE [tl](../../../includes/cli-tl.md)]
+- [!INCLUDE [tl](../../../includes/cli-tl.md)]
 
-[!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
+- [!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
 
-[!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](../../../includes/cli-help.md)]
 
 ## Examples
 

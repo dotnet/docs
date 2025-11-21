@@ -44,7 +44,7 @@ The `dotnet nuget config get` Gets the NuGet configuration settings that will be
 
   Specifies the directory to start from when listing configuration files. If not specified, the current directory is used.
 
-[!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](../../../includes/cli-help.md)]
 
 ## Examples
 

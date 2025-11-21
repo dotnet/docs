@@ -251,10 +251,10 @@ The `--interactive` flag is now enabled by default for CLI commands in interacti
 
 ## Native shell tab-completion scripts
 
-The `dotnet` CLI now supports generating native tab-completion scripts for popular shells using the `dotnet completions generate [SHELL]` command. Supported shells include `bash`, `fish`, `nushell`, `powershell`, and `zsh`. These scripts improve usability by providing faster and more integrated tab-completion features. For example, in PowerShell, you can enable completions by adding the following to your `$PROFILE`:
+The `dotnet` CLI now supports generating native tab-completion scripts for popular shells using the `dotnet completions script [SHELL]` command. Supported shells include `bash`, `fish`, `nushell`, `powershell`, and `zsh`. These scripts improve usability by providing faster and more integrated tab-completion features. For example, in PowerShell, you can enable completions by adding the following to your `$PROFILE`:
 
 ```powershell
-dotnet completions script pwsh | out-String | Invoke-Expression -ErrorAction SilentlyContinue
+dotnet completions script pwsh | Out-String | Invoke-Expression
 ```
 
 ## Console apps can natively create container images

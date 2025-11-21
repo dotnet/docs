@@ -12,18 +12,18 @@ ai-usage: ai-assisted
 
 The *global.json* file allows you to define which .NET SDK version is used when you run .NET CLI commands. Selecting the .NET SDK version is independent from specifying the runtime version a project targets. The .NET SDK version indicates which version of the .NET CLI is used. This article explains how to select the SDK version by using *global.json*.
 
-If you always want to use the latest SDK version that is installed on your machine, no *global.json* file is needed. In CI (continuous integration) scenarios, however, you typically want to specify an acceptable range for the SDK version that is used. The *global.json* file has a `rollForward` feature that provides flexible ways to specify an acceptable range of versions. For example, the following *global.json* file selects 8.0.300 or any later [feature band or patch](../releases-and-support.md) for 8.0 that is installed on the machine:
+If you always want to use the latest SDK version that is installed on your machine, no *global.json* file is needed. In CI (continuous integration) scenarios, however, you typically want to specify an acceptable range for the SDK version that is used. The *global.json* file has a `rollForward` feature that provides flexible ways to specify an acceptable range of versions. For example, the following *global.json* file selects 10.0.100 or any later [feature band or patch](../releases-and-support.md) for 10.0 that is installed on the machine:
 
 ```json
 {
   "sdk": {
-    "version": "8.0.300",
+    "version": "10.0.100",
     "rollForward": "latestFeature"
   }
 }
 ```
 
-The .NET SDK looks for a *global.json* file in the current working directory (which isn't necessarily the same as the project directory) or one of its parent directories.
+The .NET SDK looks for a *global.json* file in the current working directory (which isn't necessarily the same as the project directory) or one of its ancestor directories.
 
 For information about specifying the runtime version instead of the SDK version, see [Target frameworks](../../standard/frameworks.md).
 
@@ -43,8 +43,8 @@ The version of the .NET SDK to use.
 
 This field:
 
-- Requires the full version number, such as 9.0.100.
-- Doesn't support version numbers like 9, 9.0, or 9.0.x.
+- Requires the full version number, such as 10.0.100.
+- Doesn't support version numbers like 10, 10.0, or 10.0.x.
 - Doesn't have wildcard support.
 - Doesn't support version ranges.
 

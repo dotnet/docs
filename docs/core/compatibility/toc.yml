@@ -90,6 +90,8 @@ items:
             items:
               - name: BackgroundService runs all of ExecuteAsync as a Task
                 href: extensions/10.0/backgroundservice-executeasync-task.md
+              - name: Fix issues in GetKeyedService() and GetKeyedServices() with AnyKey
+                href: extensions/10.0/getkeyedservice-anykey.md
               - name: Message no longer duplicated in Console log output
                 href: extensions/10.0/console-json-logging-duplicate-messages.md
               - name: Null values preserved in configuration

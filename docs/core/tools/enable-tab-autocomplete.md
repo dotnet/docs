@@ -20,10 +20,10 @@ Starting with .NET 10, the .NET CLI includes native shell completion scripts tha
 
 ### Generate completion scripts
 
-Use the `dotnet completions generate` command to generate a completion script for your shell:
+Use the `dotnet completions script` command to generate a completion script for your shell:
 
 ```console
-dotnet completions generate [SHELL]
+dotnet completions script [SHELL]
 ```
 
 The `[SHELL]` parameter accepts one of the following values:
@@ -62,7 +62,7 @@ Add the appropriate command to your shell's profile to enable native completions
 Add the following line to your PowerShell profile (`$PROFILE`):
 
 ```powershell
-dotnet completions generate pwsh | Out-String | Invoke-Expression
+dotnet completions script pwsh | Out-String | Invoke-Expression
 ```
 
 #### Bash
@@ -70,7 +70,7 @@ dotnet completions generate pwsh | Out-String | Invoke-Expression
 Add the following line to your `.bashrc` file:
 
 ```bash
-eval "$(dotnet completions generate bash)"
+eval "$(dotnet completions script bash)"
 ```
 
 #### Zsh
@@ -78,7 +78,7 @@ eval "$(dotnet completions generate bash)"
 Add the following line to your `.zshrc` file:
 
 ```zsh
-eval "$(dotnet completions generate zsh)"
+eval "$(dotnet completions script zsh)"
 ```
 
 #### Fish
@@ -86,7 +86,7 @@ eval "$(dotnet completions generate zsh)"
 Add the following line to your `config.fish` file:
 
 ```fish
-dotnet completions generate fish | source
+dotnet completions script fish | source
 ```
 
 #### Nushell
@@ -94,7 +94,7 @@ dotnet completions generate fish | source
 Add the following to the beginning of your `config.nu` file:
 
 ```nu
-dotnet completions generate nushell | save -f ~/.local/share/nushell/completions/dotnet.nu
+dotnet completions script nushell | save -f ~/.local/share/nushell/completions/dotnet.nu
 use ~/.local/share/nushell/completions/dotnet.nu *
 ```
 

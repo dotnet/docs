@@ -3,7 +3,7 @@ title: Microsoft.Extensions.AI libraries
 description: Learn how to use the Microsoft.Extensions.AI libraries to integrate and interact with various AI services in your .NET applications.
 author: IEvangelist
 ms.author: dapine
-ms.date: 04/29/2025
+ms.date: 11/20/2025
 ---
 
 # Microsoft.Extensions.AI libraries
@@ -18,15 +18,15 @@ The [📦 Microsoft.Extensions.AI](https://www.nuget.org/packages/Microsoft.Exte
 
 ### Which package to reference
 
-Libraries that provide implementations of the abstractions typically reference only `Microsoft.Extensions.AI.Abstractions`.
+To have access to higher-level utilities for working with generative AI components, reference the `Microsoft.Extensions.AI` package instead (which itself references `Microsoft.Extensions.AI.Abstractions`). Most consuming applications and services should reference the `Microsoft.Extensions.AI` package along with one or more libraries that provide concrete implementations of the abstractions.
 
-To also have access to higher-level utilities for working with generative AI components, reference the `Microsoft.Extensions.AI` package instead (which itself references `Microsoft.Extensions.AI.Abstractions`). Most consuming applications and services should reference the `Microsoft.Extensions.AI` package along with one or more libraries that provide concrete implementations of the abstractions.
+Libraries that provide implementations of the abstractions typically reference only `Microsoft.Extensions.AI.Abstractions`.
 
 ### Install the packages
 
 For information about how to install NuGet packages, see [dotnet package add](../core/tools/dotnet-package-add.md) or [Manage package dependencies in .NET applications](../core/tools/dependencies.md).
 
-## API usage examples
+## APIs and examples
 
 The following subsections show specific [IChatClient](#the-ichatclient-interface) usage examples:
 
@@ -45,6 +45,11 @@ The following sections show specific [IEmbeddingGenerator](#the-iembeddinggenera
 
 - [Create embeddings](#create-embeddings)
 - [Pipelines of functionality](#pipelines-of-functionality)
+
+The following sections describe [IImageGenerator](#the-iimagegenerator-interface) capabilities:
+
+- [Generate images](#generate-images)
+- [Image generation pipelines](#image-generation-pipelines)
 
 ### The `IChatClient` interface
 
@@ -100,11 +105,13 @@ The preceding code:
 - Calls `GetStreamingResponseAsync` on the client, passing a prompt and a list of tools that includes a function created with <xref:Microsoft.Extensions.AI.AIFunctionFactory.Create*>.
 - Iterates over the response, printing each update to the console.
 
+For more information about creating AI functions, see [Access data in AI functions](how-to/access-data-in-functions.md).
+
 You can also use Model Context Protocol (MCP) tools with your `IChatClient`. For more information, see [Build a minimal MCP client](./quickstarts/build-mcp-client.md).
 
 #### Cache responses
 
-If you're familiar with [Caching in .NET](../core/extensions/caching.md), it's good to know that <xref:Microsoft.Extensions.AI> provides other such delegating `IChatClient` implementations. The <xref:Microsoft.Extensions.AI.DistributedCachingChatClient> is an `IChatClient` that layers caching around another arbitrary `IChatClient` instance. When a novel chat history is submitted to the `DistributedCachingChatClient`, it forwards it to the underlying client and then caches the response before sending it back to the consumer. The next time the same history is submitted, such that a cached response can be found in the cache, the `DistributedCachingChatClient` returns the cached response rather than forwarding the request along the pipeline.
+If you're familiar with [caching in .NET](../core/extensions/caching.md), it's good to know that <xref:Microsoft.Extensions.AI> provides delegating `IChatClient` implementations for caching. The <xref:Microsoft.Extensions.AI.DistributedCachingChatClient> is an `IChatClient` that layers caching around another arbitrary `IChatClient` instance. When a novel chat history is submitted to the `DistributedCachingChatClient`, it forwards it to the underlying client and then caches the response before sending it back to the consumer. The next time the same history is submitted, such that a cached response can be found in the cache, the `DistributedCachingChatClient` returns the cached response rather than forwarding the request along the pipeline.
 
 :::code language="csharp" source="snippets/microsoft-extensions-ai/ConsoleAI.CacheResponses/Program.cs":::
 
@@ -122,7 +129,7 @@ Alternatively, the <xref:Microsoft.Extensions.AI.LoggingChatClient> and correspo
 
 #### Provide options
 
-Every call to <xref:Microsoft.Extensions.AI.IChatClient.GetResponseAsync*> or <xref:Microsoft.Extensions.AI.IChatClient.GetStreamingResponseAsync*> can optionally supply a <xref:Microsoft.Extensions.AI.ChatOptions> instance containing additional parameters for the operation. The most common parameters among AI models and services show up as strongly typed properties on the type, such as <xref:Microsoft.Extensions.AI.ChatOptions.Temperature?displayProperty=nameWithType>. Other parameters can be supplied by name in a weakly typed manner, via the <xref:Microsoft.Extensions.AI.ChatOptions.AdditionalProperties?displayProperty=nameWithType> dictionary, or via an options instance that the underlying provider understands, via the <xref:Microsoft.Extensions.AI.ChatOptions.RawRepresentationFactory?displayProperty=nameWithType> property.
+Every call to <xref:Microsoft.Extensions.AI.IChatClient.GetResponseAsync*> or <xref:Microsoft.Extensions.AI.IChatClient.GetStreamingResponseAsync*> can optionally supply a <xref:Microsoft.Extensions.AI.ChatOptions> instance containing additional parameters for the operation. The most common parameters among AI models and services show up as strongly typed properties on the type, such as <xref:Microsoft.Extensions.AI.ChatOptions.Temperature?displayProperty=nameWithType>. Other parameters can be supplied by name in a weakly typed manner, via the <xref:Microsoft.Extensions.AI.ChatOptions.AdditionalProperties?displayProperty=nameWithType> dictionary, or via an options instance that the underlying provider understands, using the <xref:Microsoft.Extensions.AI.ChatOptions.RawRepresentationFactory?displayProperty=nameWithType> property.
 
 You can also specify options when building an `IChatClient` with the fluent <xref:Microsoft.Extensions.AI.ChatClientBuilder> API by chaining a call to the <xref:Microsoft.Extensions.AI.ConfigureOptionsChatClientBuilderExtensions.ConfigureOptions(Microsoft.Extensions.AI.ChatClientBuilder,System.Action{Microsoft.Extensions.AI.ChatOptions})> extension method. This delegating client wraps another client and invokes the supplied delegate to populate a `ChatOptions` instance for every call. For example, to ensure that the <xref:Microsoft.Extensions.AI.ChatOptions.ModelId?displayProperty=nameWithType> property defaults to a particular model name, you can use code like the following:
 
@@ -136,7 +143,7 @@ You can also specify options when building an `IChatClient` with the fluent <xre
 
 #### Custom `IChatClient` middleware
 
-To add additional functionality, you can implement `IChatClient` directly or use the <xref:Microsoft.Extensions.AI.DelegatingChatClient> class. This class serves as a base for creating chat clients that delegate operations to another `IChatClient` instance. It simplifies chaining multiple clients, allowing calls to pass through to an underlying client.
+To add additional functionality, you can implement `IChatClient` directly or use the <xref:Microsoft.Extensions.AI.DelegatingChatClient> class. This class serves as a base for creating chat clients that delegate operations to another `IChatClient` instance. It simplifies chaining multiple clients, which allows calls to pass through to an underlying client.
 
 The `DelegatingChatClient` class provides default implementations for methods like `GetResponseAsync`, `GetStreamingResponseAsync`, and `Dispose`, which forward calls to the inner client. A derived class can then override only the methods it needs to augment the behavior, while delegating other calls to the base implementation. This approach is useful for creating flexible and modular chat clients that are easy to extend and compose.
 
@@ -164,11 +171,11 @@ The previous extension methods demonstrate using a `Use` method on <xref:Microso
 
 :::code language="csharp" source="snippets/microsoft-extensions-ai/ConsoleAI.UseExample/Program.cs":::
 
-For scenarios where you need a different implementation for `GetResponseAsync` and `GetStreamingResponseAsync` in order to handle their unique return types, you can use the <xref:Microsoft.Extensions.AI.ChatClientBuilder.Use(System.Func{System.Collections.Generic.IEnumerable{Microsoft.Extensions.AI.ChatMessage},Microsoft.Extensions.AI.ChatOptions,Microsoft.Extensions.AI.IChatClient,System.Threading.CancellationToken,System.Threading.Tasks.Task{Microsoft.Extensions.AI.ChatResponse}},System.Func{System.Collections.Generic.IEnumerable{Microsoft.Extensions.AI.ChatMessage},Microsoft.Extensions.AI.ChatOptions,Microsoft.Extensions.AI.IChatClient,System.Threading.CancellationToken,System.Collections.Generic.IAsyncEnumerable{Microsoft.Extensions.AI.ChatResponseUpdate}})> overload that accepts a delegate for each.
+For scenarios where you need a different implementation for `GetResponseAsync` and `GetStreamingResponseAsync` to handle their unique return types, you can use the <xref:Microsoft.Extensions.AI.ChatClientBuilder.Use(System.Func{System.Collections.Generic.IEnumerable{Microsoft.Extensions.AI.ChatMessage},Microsoft.Extensions.AI.ChatOptions,Microsoft.Extensions.AI.IChatClient,System.Threading.CancellationToken,System.Threading.Tasks.Task{Microsoft.Extensions.AI.ChatResponse}},System.Func{System.Collections.Generic.IEnumerable{Microsoft.Extensions.AI.ChatMessage},Microsoft.Extensions.AI.ChatOptions,Microsoft.Extensions.AI.IChatClient,System.Threading.CancellationToken,System.Collections.Generic.IAsyncEnumerable{Microsoft.Extensions.AI.ChatResponseUpdate}})> overload that accepts a delegate for each.
 
 #### Dependency injection
 
-<xref:Microsoft.Extensions.AI.IChatClient> implementations are often provided to an application via [dependency injection (DI)](../core/extensions/dependency-injection.md). In this example, an <xref:Microsoft.Extensions.Caching.Distributed.IDistributedCache> is added into the DI container, as is an `IChatClient`. The registration for the `IChatClient` uses a builder that creates a pipeline containing a caching client (which then uses an `IDistributedCache` retrieved from DI) and the sample client. The injected `IChatClient` can be retrieved and used elsewhere in the app.
+<xref:Microsoft.Extensions.AI.IChatClient> implementations are often provided to an application via [dependency injection (DI)](../core/extensions/dependency-injection.md). In the following example, an <xref:Microsoft.Extensions.Caching.Distributed.IDistributedCache> is added into the DI container, as is an `IChatClient`. The registration for the `IChatClient` uses a builder that creates a pipeline containing a caching client (which then uses an `IDistributedCache` retrieved from DI) and the sample client. The injected `IChatClient` can be retrieved and used elsewhere in the app.
 
 :::code language="csharp" source="snippets/microsoft-extensions-ai/ConsoleAI.DependencyInjection/Program.cs":::
 
@@ -231,6 +238,31 @@ This can then be layered around an arbitrary `IEmbeddingGenerator<string, Embedd
 :::code language="csharp" source="snippets/microsoft-extensions-ai/ConsoleAI.ConsumeRateLimitingEmbedding/Program.cs":::
 
 In this way, the `RateLimitingEmbeddingGenerator` can be composed with other `IEmbeddingGenerator<string, Embedding<float>>` instances to provide rate-limiting functionality.
+
+### The `IImageGenerator` interface
+
+The <xref:Microsoft.Extensions.AI.IImageGenerator> interface represents a generator for creating images from text prompts or other input. This interface enables applications to integrate image generation capabilities from various AI services through a consistent API. The interface supports text-to-image generation and configuration options for image size and format, and can be composed with middleware for caching, telemetry, and other cross-cutting concerns.
+
+.NET libraries that provide image generation services can implement the `IImageGenerator` interface to enable seamless integration with consuming code. The interface is designed to work with various AI image generation services and models.
+
+#### Generate images
+
+The primary operation performed with an <xref:Microsoft.Extensions.AI.IImageGenerator> is image generation, which is accomplished with its <xref:Microsoft.Extensions.AI.IImageGenerator.GenerateImagesAsync*> method. You can generate images from text prompts with optional configuration for image size, format, and other parameters.
+
+The <xref:Microsoft.Extensions.AI.ImageGenerationOptions> class allows you to specify various parameters:
+
+- **Size**: Set the dimensions of the generated image using <xref:Microsoft.Extensions.AI.ImageGenerationOptions.ImageSize>
+- **Count**: Specify how many images to generate with <xref:Microsoft.Extensions.AI.ImageGenerationOptions.Count>
+- **Format**: Control the response format (URI, data, or hosted) with <xref:Microsoft.Extensions.AI.ImageGenerationOptions.ResponseFormat>
+- **Media Type**: Set the MIME type for the generated image with <xref:Microsoft.Extensions.AI.ImageGenerationOptions.MediaType>
+
+For more information, see [Generate images from text using AI](quickstarts/text-to-image.md).
+
+#### Image generation pipelines
+
+Like other interfaces in `Microsoft.Extensions.AI`, `IImageGenerator` implementations can be layered to create pipelines of functionality. You can add caching, telemetry, rate limiting, and other cross-cutting concerns:
+
+:::code language="csharp" source="snippets/microsoft-extensions-ai/ConsoleAI.ImageGenerationPipeline/Program.cs" id="Snippet1":::
 
 ## Build with Microsoft.Extensions.AI
 

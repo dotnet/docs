@@ -18,10 +18,6 @@ f1_keywords:
   - "CS1939"
   - "CS1988"
   - "CS7084"
-  - "CS8166"
-  - "CS8167"
-  - "CS8168"
-  - "CS8169"
   - "CS8196"
   - "CS8325"
   - "CS8326"
@@ -32,28 +28,25 @@ f1_keywords:
   - "CS8332"
   - "CS8337"
   - "CS8338"
-  - "CS8351"
   - "CS8373"
-  - "CS8374"
   - "CS8388"
-  - "CS8977"
+  - "CS8987"
+  - "CS9061"
+  - "CS9062"
+  - "CS9063"
+  - "CS9065"
+  - "CS9066"
   - "CS9072"
-  - "CS9077"
-  - "CS9078"
-  - "CS9079"
-  - "CS9085"
-  - "CS9086"
-  - "CS9087"
-  - "CS9089"
-  - "CS9091"
-  - "CS9092"
-  - "CS9093"
-  - "CS9094"
-  - "CS9095"
-  - "CS9096"
-  - "CS9097"
+  - "CS9073"
+  - "CS9074"
   - "CS9101"
   - "CS9102"
+  - "CS9104"
+  - "CS9104"
+  - "CS9104"
+  - "CS9104"
+  - "CS9104"
+  - "CS9104"
   - "CS9104"
   - "CS9190"
   - "CS9191"
@@ -85,10 +78,6 @@ helpviewer_keywords:
   - "CS1939"
   - "CS1988"
   - "CS7084"
-  - "CS8166"
-  - "CS8167"
-  - "CS8168"
-  - "CS8169"
   - "CS8196"
   - "CS8325"
   - "CS8326"
@@ -99,26 +88,11 @@ helpviewer_keywords:
   - "CS8332"
   - "CS8337"
   - "CS8338"
-  - "CS8351"
   - "CS8373"
-  - "CS8374"
   - "CS8388"
   - "CS8977"
-  - "CS9072"
-  - "CS9077"
-  - "CS9078"
-  - "CS9079"
-  - "CS9085"
-  - "CS9086"
-  - "CS9087"
-  - "CS9089"
-  - "CS9091"
-  - "CS9092"
-  - "CS9093"
-  - "CS9094"
-  - "CS9095"
-  - "CS9096"
-  - "CS9097"
+  - "CS9073"
+  - "CS9074"
   - "CS9101"
   - "CS9102"
   - "CS9104"
@@ -135,7 +109,8 @@ helpviewer_keywords:
   - "CS9201"
   - "CS9205"
   - "CS9265"
-ms.date: 11/06/2024
+ai-usage: ai-assisted
+ms.date: 11/21/2024
 ---
 # Errors and warnings associated with reference parameters, variables, and returns
 
@@ -160,10 +135,6 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS1939**](#reference-variable-restrictions): *Cannot pass the range variable as an `out` or `ref` parameter*
 - [**CS1988**](#reference-variable-restrictions): *Async methods cannot have `ref`, `in` or `out` parameters*
 - [**CS7084**](#reference-variable-restrictions): *A Windows Runtime event may not be passed as an `out` or `ref` parameter.*
-- [**CS8166**](#ref-safety-violations): *Cannot return a parameter by reference because it is not a `ref` parameter*
-- [**CS8167**](#ref-safety-violations): *Cannot return by reference a member of parameter because it is not a `ref` or `out` parameter*
-- [**CS8168**](#ref-safety-violations): *Cannot return local by reference because it is not a ref local*
-- [**CS8169**](#ref-safety-violations): *Cannot return a member of local variable by reference because it is not a ref local*
 - [**CS8196**](#reference-variable-restrictions): *Reference to an implicitly-typed out variable is not permitted in the same argument list.*
 - [**CS8325**](#reference-variable-restrictions): *'`await`' cannot be used in an expression containing a `ref` conditional operator*
 - [**CS8326**](#reference-variable-restrictions): *Both conditional operator values must be ref values or neither may be a ref value*
@@ -174,16 +145,17 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS8332**](#writable-reference-variables-require-a-writable-referent): *Cannot assign to a member of variable or use it as the right hand side of a `ref` assignment because it is a readonly variable*
 - [**CS8337**](#reference-variable-restrictions): *The first parameter of a '`ref`' extension method must be a value type or a generic type constrained to struct.*
 - [**CS8338**](#reference-variable-restrictions): *The first '`in`' or '`ref readonly`' parameter of the extension method must be a concrete (non-generic) value type.*
-- [**CS8351**](#ref-safety-violations): *Branches of a `ref` conditional operator cannot refer to variables with incompatible declaration scopes*
 - [**CS8373**](#incorrect-syntax): *The left-hand side of a `ref` assignment must be a ref variable.*
-- [**CS8374**](#ref-safety-violations): *Cannot ref-assign source has a narrower escape scope than destination.*
 - [**CS8388**](#incorrect-syntax): *An `out` variable cannot be declared as a ref local*
 - [**CS8977**](#reference-variable-restrictions): *Cannot use '`ref`', '`in`', or '`out`' in the signature of a method attributed with 'UnmanagedCallersOnly'.*
+- [**CS8986**](#reference-variable-restrictions): *The 'scoped' modifier of parameter doesn't match target.*
+- [**CS8987**](#reference-variable-restrictions): *The 'scoped' modifier of parameter doesn't match overridden or implemented member.*
+- [**CS9061**](#incorrect-syntax): *The 'scoped' modifier cannot be used with discard.*
+- [**CS9062**](#incorrect-syntax): *Types and aliases cannot be named 'scoped'.*
+- [**CS9063**](#unscoped-ref-restrictions): *UnscopedRefAttribute cannot be applied to this parameter because it is unscoped by default.*
+- [**CS9065**](#incorrect-syntax): *Do not use 'System.Runtime.CompilerServices.ScopedRefAttribute'. Use the 'scoped' keyword instead.*
+- [**CS9066**](#unscoped-ref-restrictions): *UnscopedRefAttribute cannot be applied to parameters that have a 'scoped' modifier.*
 - [**CS9072**](#reference-variable-restrictions): *A deconstruction variable cannot be declared as a ref local*
-- [**CS9077**](#ref-safety-violations): *Cannot return a parameter by reference through a `ref` parameter; it can only be returned in a return statement*
-- [**CS9078**](#ref-safety-violations): *Cannot return by reference a member of parameter through a `ref` parameter; it can only be returned in a return statement*
-- [**CS9079**](#ref-safety-violations): *Cannot ref-assign because source can only escape the current method through a return statement.*
-- [**CS9096**](#ref-safety-violations): *Cannot ref-assign because source has a wider value escape scope than destination allowing assignment through source of values with narrower escapes scopes than destination.*
 - [**CS9101**](#unscoped-ref-restrictions): *UnscopedRefAttribute can only be applied to struct or virtual interface instance methods and properties, and cannot be applied to constructors or init-only members.*
 - [**CS9102**](#unscoped-ref-restrictions): *UnscopedRefAttribute cannot be applied to an interface implementation  because implemented member doesn't have this attribute.*
 - [**CS9104**](#reference-variable-restrictions): *A `using` statement resource of type cannot be used in async methods or async lambda expressions.*
@@ -192,16 +164,8 @@ That's by design. The text closely matches the text of the compiler error / warn
 
 The following warnings are generated when reference variables are used incorrectly:
 
-- [**CS9085**](#ref-safety-violations): *This ref-assigns variable but destination has a narrower escape scope than source.*
-- [**CS9086**](#ref-safety-violations): *The branches of the `ref` conditional operator refer to variables with incompatible declaration scopes*
-- [**CS9087**](#ref-safety-violations): *This returns a parameter by reference but it is not a `ref` parameter*
-- [**CS9089**](#ref-safety-violations): *This returns by reference a member of parameter that is not a `ref` or `out` parameter*
-- [**CS9091**](#ref-safety-violations): *This returns local by reference but it is not a ref local*
-- [**CS9092**](#ref-safety-violations): *This returns a member of local by reference but it is not a ref local*
-- [**CS9093**](#ref-safety-violations): *This ref-assigns but source can only escape the current method through a return statement.*
-- [**CS9094**](#ref-safety-violations): *This returns a parameter by reference through a `ref` parameter; but it can only safely be returned in a return statement*
-- [**CS9095**](#ref-safety-violations): *This returns by reference a member of parameter through a `ref` parameter; but it can only safely be returned in a return statement*
-- [**CS9097**](#ref-safety-violations): *This ref-assigns  but source has a wider value escape scope than destination allowing assignment through destination of values with narrower escapes scopes than source.*
+- [**CS9073**](#reference-variable-restrictions): *The 'scoped' modifier of parameter doesn't match target.*
+- [**CS9074**](#reference-variable-restrictions): *The 'scoped' modifier of parameter doesn't match overridden or implemented member.*
 - [**CS9191**](#reference-variables-require-a-referent): *The `ref` modifier for argument corresponding to `in` parameter is equivalent to `in`. Consider using `in` instead.*
 - [**CS9192**](#reference-variables-require-a-referent): *Argument should be passed with `ref` or `in` keyword.*
 - [**CS9193**](#reference-variables-require-a-referent): *Argument should be a variable because it is passed to a `ref readonly` parameter*
@@ -220,7 +184,6 @@ These errors and warnings follow these themes:
 - ***[Language constructs where `ref` variables aren't valid](#reference-variable-restrictions)***:  Some C# idioms don't allow variables. Usually this is because ref safety analysis can't be performed reliably.
 - ***[Value expression used where a reference variable is needed](#reference-variables-require-a-referent)***:  The expression used as a reference variable must be a variable, not a value expression.
 - ***[Writable reference variables referring to readonly variables](#writable-reference-variables-require-a-writable-referent)***:  A reference to a readonly variable can't be passed by writable reference.
-- ***[violations of ref safety](#ref-safety-violations)***:  A reference variable can't refer to a variable that has a narrower context. That would mean the reference variable could refer to invalid memory.
 
 This article uses the term *reference variable* as a general term for a parameter declared with one of the `in`, `ref readonly`, `ref`, or `out` modifiers, or a `ref` local variable, a `ref` field in a `ref struct`, or a `ref` return. A reference variable refers to another variable, called the *referent*.
 
@@ -338,34 +301,3 @@ Examples of variables that aren't writable include:
 - A [using](../../language-reference/statements/using.md) variable, or a [fixed](../../language-reference/statements/fixed.md) variable.
 
 You must copy the value and pass a reference to the copy.
-
-## Ref safety violations
-
-The compiler tracks the safe context of referents and reference variables. The compiler issues errors, or warnings in unsafe code, when a reference variable refers to a referent variable that's no longer valid. The referent must have a safe context that is at least as wide as the ref safe context of The reference variable. Violating these safety checks means the reference variable accesses random memory instead of the referent variable.
-
-- **CS8166**:  *Cannot return a parameter by reference because it is not a `ref` parameter*
-- **CS8167**:  *Cannot return by reference a member of parameter because it is not a `ref` or `out` parameter*
-- **CS8168**:  *Cannot return local by reference because it is not a ref local*
-- **CS8169**:  *Cannot return a member of local variable by reference because it is not a ref local*
-- **CS8345**:  *Field or auto-implemented property cannot be of type unless it is an instance member of a `ref struct`.*
-- **CS8351**:  *Branches of a `ref` conditional operator cannot refer to variables with incompatible declaration scopes*
-- **CS8374**:  *Cannot ref-assign source has a narrower escape scope than destination.*
-- **CS9077**:  *Cannot return a parameter by reference through a `ref` parameter; it can only be returned in a return statement*
-- **CS9078**:  *Cannot return by reference a member of parameter through a `ref` parameter; it can only be returned in a return statement*
-- **CS9079**:  *Cannot ref-assign source to destination because source can only escape the current method through a return statement.*
-- **CS9096**:  *Cannot ref-assign source to destination because source has a wider value escape scope than destination allowing assignment through destination of values with narrower escapes scopes than source.*
-
-Warnings:
-
-- **CS9085**:  *This ref-assigns source to destination but source has a narrower escape scope than destination.*
-- **CS9086**:  *The branches of the ref conditional operator refer to variables with incompatible declaration scopes*
-- **CS9087**:  *This returns a parameter by reference but it is not a `ref` parameter*
-- **CS9089**:  *This returns by reference a member of parameter that is not a `ref` or `out` parameter*
-- **CS9091**:  *This returns local by reference but it is not a ref local*
-- **CS9092**:  *This returns a member of local by reference but it is not a ref local*
-- **CS9093**:  *This ref-assigns source to destination but source can only escape the current method through a return statement.*
-- **CS9094**:  *This returns a parameter by reference through a `ref` parameter; but it can only safely be returned in a return statement*
-- **CS9095**:  *This returns by reference a member of parameter through a `ref` parameter; but it can only safely be returned in a return statement*
-- **CS9097**:  *This ref-assigns source to destination but source has a wider value escape scope than destination allowing assignment through destination of values with narrower escapes scopes than source.*
-
-The compiler uses static analysis to determine if the referent is valid at all points where the reference variable can be used. You need to refactor code so that the referent remains valid at all locations where the reference variable might refer to it. For details on the rules for ref safety, see the C# standard on [ref safe contexts](~/_csharpstandard/standard/variables.md#972-ref-safe-contexts).

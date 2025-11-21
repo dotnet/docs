@@ -34,7 +34,7 @@ Beginning with C# 14, you can declare *extension blocks*. An extension block is 
 
 :::code language="csharp" source="./snippets/ExtensionMembers/CustomExtensionMembers.cs" id="ExtensionBlock":::
 
-In an extension block, extension members can have open or concrete generics, with or without constraints:
+Extension members in an extension block can use open or closed generics. The type parameters can include constraints:
 
 :::code language="csharp" source="./snippets/ExtensionMembers/CustomExtensionMembers.cs" id="GenericExtensionBlock":::
 

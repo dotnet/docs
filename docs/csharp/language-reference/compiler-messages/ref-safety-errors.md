@@ -124,7 +124,7 @@ To resolve these errors:
 - When a parameter is declared with the `scoped` modifier, avoid returning it by reference because the `scoped` modifier explicitly restricts the parameter's reference from escaping the method, preventing potential dangling references (**CS9075**, **CS9076**, **CS9088**, **CS9090**).
 - If you need to return a reference that comes from a `ref` parameter, use a direct `return ref` statement rather than assigning the reference to another `ref` parameter and returning that, because the compiler can only track the escape scope through direct return statements (**CS9077**, **CS9078**, **CS9094**, **CS9095**).
 
-For more information about ref safety rules, see the article on [ref returns and locals](../../programming-guide/classes-and-structs/ref-returns.md) and the C# standard section on [ref safe contexts](~/_csharpstandard/standard/variables.md#972-ref-safe-contexts).
+For more information about ref safety rules, see the article on [ref returns](../statements/jump-statements.md#ref-returns) and the C# standard section on [ref safe contexts](~/_csharpstandard/standard/variables.md#972-ref-safe-contexts).
 
 ## Ref assignments with incompatible scopes
 
@@ -148,7 +148,7 @@ To resolve these errors:
 - When a variable can only escape the method through a return statement, don't assign it to a `ref` variables accessed through other means. Examples include storing in fields or returning through ref parameters. Those actions violate the restriction that the source can only be used in return statements (**CS9079**, **CS9093**).
 - For ref assignments involving value escape scopes, ensure the source's value escape scope isn't wider than the destination's, because a mismatch would allow you to assign narrower-scoped values through the destination reference, potentially creating references to short-lived values (**CS9096**, **CS9097**).
 
-For more information about ref safety rules, see the article on [ref returns and locals](../../programming-guide/classes-and-structs/ref-returns.md) and the C# standard section on [ref safe contexts](~/_csharpstandard/standard/variables.md#972-ref-safe-contexts).
+For more information about ref safety rules, see the article on [ref returns](../statements/jump-statements.md#ref-returns) and the C# standard section on [ref safe contexts](~/_csharpstandard/standard/variables.md#972-ref-safe-contexts).
 
 ## Escape scope violations and conditional operators
 
@@ -170,7 +170,7 @@ To resolve these errors:
 - When using variables in expressions or method calls, ensure the context doesn't allow referenced variables to escape beyond their declaration scope, which typically means avoiding passing scoped variables to methods or expressions where they might be captured or stored beyond their intended lifetime (**CS9080**).
 - For stackalloc expressions, avoid assigning the result to variables or using it in contexts where the stack-allocated memory could be accessed outside the containing method, because stack-allocated memory is automatically freed when the method returns and accessing it afterward results in undefined behavior (**CS9081**).
 
-For more information, see the article on [ref returns and locals](../../programming-guide/classes-and-structs/ref-returns.md), the article on [stack allocation](../../../standard/memory-and-spans/memory-t-usage-guidelines.md#stack-allocated-memory), and the C# standard section on [ref safe contexts](~/_csharpstandard/standard/variables.md#972-ref-safe-contexts).
+For more information, see the article on [ref returns](../statements/jump-statements.md#ref-returns), the article on [memory usage](../../../standard/memory-and-spans/memory-t-usage-guidelines.md), and the C# standard section on [ref safe contexts](~/_csharpstandard/standard/variables.md#972-ref-safe-contexts).
 
 ## Struct member and field restrictions
 

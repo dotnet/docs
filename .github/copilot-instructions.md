@@ -63,7 +63,7 @@ Examples:
 When adapting content from external sources like blog posts into documentation:
 
 **DO:**
-- Work on one version/topic at a time - never combine multiple versions in a single PR.
+- Work on one version, or topic at a time - never combine multiple versions in a single PR. Some blog posts or source material may include many versions or preview builds. The issue or task should specify which one to focus on.
 - Copy working code samples directly from source when available. Follow the rules under ["Code Snippets"](#code-snippets) above.
 - Create a checklist TODO for each section of the source document before writing.
 - Map each documentation section 1:1 to source content.

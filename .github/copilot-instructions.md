@@ -64,12 +64,11 @@ When adapting content from external sources like blog posts into documentation:
 
 **DO:**
 - Work on one version/topic at a time - never combine multiple versions in a single PR.
-- Copy working code samples directly from source when available.
-- Execute and validate all code examples with appropriate tools (`dotnet fsi` for F#, simple console apps for C#).
-- Provide execution proofs in PR comments for any generated code.
+- Copy working code samples directly from source when available. Follow the rules under ["Code Snippets"](#code-snippets) above.
 - Create a checklist TODO for each section of the source document before writing.
 - Map each documentation section 1:1 to source content.
 - Explicitly state what is copied vs. generated in PR description.
+- Add disclaimers about AI usage when applicable.
 
 **DON'T:**
 - Invent or elaborate on features not explicitly mentioned in source.
@@ -79,9 +78,8 @@ When adapting content from external sources like blog posts into documentation:
 - Add examples without verifying they demonstrate the stated feature.
 
 **PR Description Must Include:**
-- Content source breakdown (% copied vs. generated).
-- List of fabricated/generated sections requiring expert review.
-- Execution proof for all code samples.
+- Content source breakdown. In the description, list each section of the source document and indicate whether it was copied verbatim, adapted, or newly generated.
+- Note all generated sections requiring expert review.
 - Clear warnings about any uncertainties.
 
 ## Special Cases

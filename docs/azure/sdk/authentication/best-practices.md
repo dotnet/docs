@@ -24,7 +24,7 @@ For example, consider the following hypothetical sequence of events:
 
 To prevent these types of subtle issues or silent failures in production apps, replace `DefaultAzureCredential` with a specific `TokenCredential` implementation, such as `ManagedIdentityCredential`. See the [**Derived** list](/dotnet/api/azure.core.tokencredential?view=azure-dotnet&preserve-view=true#definition) for options.
 
-For example, consider the following configuration in an ASP.NET Core project, which uses `DefaultAzureCredential` for all registered services:
+For example, consider the following configuration in an ASP.NET Core project. An instance of `DefaultAzureCredential` is implicitly created and used for all registered services:
 
 :::code language="csharp" source="../snippets/authentication/credential-chains/Program.cs" id="snippet_Dac" :::
 

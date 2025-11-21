@@ -20,7 +20,8 @@ dotnet publish [<PROJECT>|<SOLUTION>|<FILE>] [-a|--arch <ARCHITECTURE>]
     [-f|--framework <FRAMEWORK>] [--force] [--interactive]
     [--manifest <PATH_TO_MANIFEST_FILE>] [--no-build] [--no-dependencies]
     [--no-restore] [--nologo] [-o|--output <OUTPUT_DIRECTORY>]
-    [--os <OS>] [-r|--runtime <RUNTIME_IDENTIFIER>]
+    [--os <OS>] [-p|--property:<PROPERTYNAME>=<VALUE>]
+    [-r|--runtime <RUNTIME_IDENTIFIER>]
     [--sc|--self-contained] [--no-self-contained]
     [-s|--source <SOURCE>] [--tl:[auto|on|off]]
     [--ucr|--use-current-runtime]
@@ -181,6 +182,15 @@ For more information, see the following resources:
 - [!INCLUDE [os](../../../includes/cli-os.md)]
 
 - [!INCLUDE [self-contained](../../../includes/cli-self-contained.md)]
+
+- **`-p|--property:<PROPERTYNAME>=<VALUE>`**
+
+  Sets one or more MSBuild properties. Specify multiple properties delimited by semicolons or by repeating the option:
+
+  ```dotnetcli
+  --property:<NAME1>=<VALUE1>;<NAME2>=<VALUE2>
+  --property:<NAME1>=<VALUE1> --property:<NAME2>=<VALUE2>
+  ```
 
 - [!INCLUDE [no-self-contained](../../../includes/cli-no-self-contained.md)]
 

@@ -71,7 +71,7 @@ One of the first decisions you make when defining a type is deciding which const
 It's important to understand two fundamental points about the type system in .NET:
 
 - It supports the principle of inheritance. Types can derive from other types, called *base types*. The derived type inherits (with some restrictions) the methods, properties, and other members of the base type. The base type can in turn derive from some other type, in which case the derived type inherits the members of both base types in its inheritance hierarchy. All types, including built-in numeric types such as <xref:System.Int32?displayProperty=nameWithType> (C# keyword: `int`), derive ultimately from a single base type, which is <xref:System.Object?displayProperty=nameWithType> (C# keyword: [`object`](../../language-reference/builtin-types/reference-types.md)). This unified type hierarchy is called the [Common Type System](../../../standard/base-types/common-type-system.md) (CTS). For more information about inheritance in C#, see [Inheritance](../object-oriented/inheritance.md).
-- Each type in the CTS is defined as either a *value type* or a *reference type*. These types include all custom types in the .NET class library and also your own user-defined types. Types that you define by using the `struct` keyword are value types; all the built-in numeric types are `structs`. Types that you define by using the `class` or `record` keyword are reference types. Reference types and value types have different compile-time rules, and different run-time behavior.
+- Each type in the CTS is defined as either a *value type* or a *reference type*. These types include all custom types in the .NET class library and also your own user-defined types. Types that you define by using the `struct` or `record struct` keywords are value types; all the built-in numeric types are `structs`. Types that you define by using the `class`, `record class`, or `record` keywords are reference types. Reference types and value types have different compile-time rules, and different run-time behavior.
 
 The following illustration shows the relationship between value types and reference types in the CTS.
 
@@ -124,7 +124,7 @@ All enums inherit from <xref:System.Enum?displayProperty=nameWithType>, which in
 
 ### Reference types
 
-A type that is defined as a `class`, `record`, [`delegate`](../../language-reference/builtin-types/reference-types.md), array, or [`interface`](../../language-reference/keywords/interface.md) is a [`reference type`](../../language-reference/keywords/reference-types.md).
+A type that is defined as a `class`, `record class`, `record`,  [`delegate`](../../language-reference/builtin-types/reference-types.md), array, or [`interface`](../../language-reference/keywords/interface.md) is a [`reference type`](../../language-reference/keywords/reference-types.md).
 
 When you declare a variable of a [`reference type`](../../language-reference/keywords/reference-types.md), it contains the value [`null`](../../language-reference/keywords/null.md) until you assign it with an instance of that type or create one using the [`new`](../../language-reference/operators/new-operator.md) operator. Creation and assignment of a class are demonstrated in the following example:
 

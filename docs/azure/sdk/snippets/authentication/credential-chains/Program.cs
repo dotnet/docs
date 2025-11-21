@@ -26,9 +26,6 @@ builder.Services.AddAzureClients(clientBuilder =>
         new Uri($"https://{keyVaultName}.vault.azure.net"));
     clientBuilder.AddBlobServiceClient(
         new Uri($"https://{storageAccountName}.blob.core.windows.net"));
-
-    DefaultAzureCredential credential = new();
-    clientBuilder.UseCredential(credential);
 });
 #endregion snippet_Dac
 

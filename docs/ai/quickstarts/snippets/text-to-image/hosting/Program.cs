@@ -37,7 +37,7 @@ app.MapPost("/generate-image", async (IImageGenerator generator, string prompt) 
     ImageGenerationResponse response = await generator.GenerateImagesAsync(prompt);
     DataContent dataContent = response.Contents.OfType<DataContent>().First();
 
-    return Results.File(dataContent.Data.ToArray(), "image/png");
+    return Results.File(dataContent.Data.ToArray(), dataContent.MediaType);
 });
 // </SnippetUseImageGenerator>
 

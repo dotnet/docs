@@ -46,7 +46,7 @@ async Task<List<string>> GetQueueNames(DefaultAzureCredential credential)
 {
     // Query the available queues for the Service Bus namespace.
     var adminClient = new ServiceBusAdministrationClient
-        ("<your_namespace>.servicebus.windows.net");
+        ("<your_namespace>.servicebus.windows.net", credential);
     var queueNames = new List<string>();
 
     // Because the result is async, the queue names need to be captured

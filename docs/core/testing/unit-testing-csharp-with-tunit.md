@@ -46,7 +46,7 @@ The following instructions provide the steps to create the test solution. See [C
   dotnet new classlib -o PrimeService
   ```
 
-   The [`dotnet new classlib`](../tools/dotnet-new.md) command creates a new class library project  in the *PrimeService* folder. The new class library will contain the code to be tested.
+   The [`dotnet new classlib`](../tools/dotnet-new.md) command creates a new class library project in the *PrimeService* folder. The new class library will contain the code to be tested.
 * Rename *Class1.cs* to *PrimeService.cs*.
 * Replace the code in *PrimeService.cs* with the following code:
 

@@ -57,7 +57,7 @@ Install the TUnit project template:
 dotnet new install TUnit.Templates
 ```
 
-Make the *MathService.Tests* directory the current directory and create a new project using `dotnet new tunit -lang "F#"`. This creates a test project that uses TUnit as the test library. TUnit uses source generation for test discovery. The generated template configures the test runner by adding the `TUnit` package to the *MathServiceTests.fsproj* file.
+Make the *MathService.Tests* directory the current directory and create a new project using `dotnet new tunit -lang "F#"`. This creates a test project that uses TUnit as the test library. The generated template configures the test runner by adding the `TUnit` package to the *MathServiceTests.fsproj* file.
 
 The test project requires other packages to create and run unit tests. `dotnet new` in the previous step added TUnit. Now, add the `MathService` class library as another dependency to the project. Use the `dotnet reference add` command:
 
@@ -121,7 +121,7 @@ let ``Fail every time`` () =
     }
 ```
 
-The `[<Test>]` attribute marks a method as a test that's run by the test runner. TUnit uses source generation to discover tests at compile time.
+The `[<Test>]` attribute marks a method as a test that's run by the test runner.
 
 From the *unit-testing-with-fsharp* directory, execute `dotnet test` to build the tests and the class library and then run the tests. The TUnit test runner uses Microsoft.Testing.Platform to execute the tests.
 

@@ -295,32 +295,30 @@ After running this command, an HTML file represents the generated report.
 
 ## Using code coverage with TUnit
 
-Code coverage tools like Coverlet and ReportGenerator work with TUnit projects. TUnit is built on Microsoft.Testing.Platform and supports the same code coverage workflows as other .NET testing frameworks.
+TUnit is built on Microsoft.Testing.Platform and uses Microsoft.Testing.Extensions.CodeCoverage for code coverage.
 
 ### Creating a TUnit test project with code coverage
 
-To create a TUnit test project with code coverage support, use the TUnit project template:
+To create a TUnit test project with code coverage support:
 
 ```dotnetcli
 dotnet new install TUnit.Templates
-dotnet new tunit -n TUnit.Coverlet.Test
+dotnet new tunit -n TUnit.CodeCoverage.Test
 ```
 
 Add the project reference to your class library:
 
 ```dotnetcli
-dotnet add TUnit.Coverlet.Test\TUnit.Coverlet.Test.csproj reference Numbers\Numbers.csproj
+dotnet add TUnit.CodeCoverage.Test\TUnit.CodeCoverage.Test.csproj reference Numbers\Numbers.csproj
 ```
 
-Add the Coverlet NuGet package (if using .NET 9 SDK or earlier, use `dotnet add package` instead):
+Add the Microsoft.Testing.Extensions.CodeCoverage package:
 
 ```dotnetcli
-cd TUnit.Coverlet.Test && dotnet package add coverlet.msbuild && cd ..
+dotnet add TUnit.CodeCoverage.Test package Microsoft.Testing.Extensions.CodeCoverage
 ```
 
 ### TUnit test example
-
-TUnit tests use async/await syntax:
 
 ```csharp
 using TUnit.Assertions;
@@ -358,7 +356,7 @@ public class PrimeServiceTests
 
 ### Running code coverage with TUnit
 
-Code coverage works the same way with TUnit as with other frameworks. Since TUnit requires Microsoft.Testing.Platform mode, ensure your `global.json` includes:
+Since TUnit requires Microsoft.Testing.Platform mode, ensure your `global.json` includes:
 
 ```json
 {
@@ -368,19 +366,19 @@ Code coverage works the same way with TUnit as with other frameworks. Since TUni
 }
 ```
 
-Run tests with code coverage using the same commands:
+Run tests with code coverage:
 
 ```dotnetcli
-dotnet test --collect:"XPlat Code Coverage"
+dotnet test --coverage
 ```
 
-Or with MSBuild integration:
+This generates a `.coverage` file in the `TestResults` directory. To generate reports in other formats:
 
 ```dotnetcli
-dotnet test /p:CollectCoverage=true
+dotnet test --coverage --coverage-output-format cobertura
 ```
 
-The generated coverage reports work with ReportGenerator just like xUnit, MSTest, or NUnit projects. For more information about TUnit, see [Unit testing C# with TUnit](unit-testing-csharp-with-tunit.md).
+For more information about TUnit, see [Unit testing C# with TUnit](unit-testing-csharp-with-tunit.md).
 
 ## See also
 

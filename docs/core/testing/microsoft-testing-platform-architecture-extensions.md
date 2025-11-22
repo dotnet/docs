@@ -10,9 +10,6 @@ ms.date: 07/11/2024
 
 Microsoft.Testing.Platform consists of a [testing framework](#test-framework-extension) and any number of [extensions](#other-extensibility-points) that can operate *in-process* or *out-of-process*.
 
-> [!NOTE]
-> The extensibility features described in this article work with all testing frameworks built on Microsoft.Testing.Platform, including MSTest, NUnit, xUnit, and TUnit.
-
 As outlined in the [architecture](./microsoft-testing-platform-architecture.md) section, Microsoft.Testing.Platform is designed to accommodate a variety of scenarios and extensibility points. The primary and essential extension is undoubtedly the [testing framework](#test-framework-extension) that your tests will utilize. Failing to register this results in startup error. **The [testing framework](#test-framework-extension) is the sole mandatory extension required to execute a testing session.**
 
 To support scenarios such as generating test reports, code coverage, retrying failed tests, and other potential features, you need to provide a mechanism that allows other extensions to work in conjunction with the [testing framework](#test-framework-extension) to deliver these features not inherently provided by the [testing framework](#test-framework-extension) itself.

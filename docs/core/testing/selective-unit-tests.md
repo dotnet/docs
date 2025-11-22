@@ -287,9 +287,6 @@ To run tests that have either a <xref:System.Reflection.Module.FullyQualifiedNam
 dotnet test --filter "(FullyQualifiedName~UnitTest1&Category=CategoryA)|Priority=2"
 ```
 
-> [!NOTE]
-> When running TUnit tests with Microsoft.Testing.Platform mode, the standard `dotnet test --filter` syntax is supported. Make sure you have the Microsoft.Testing.Platform mode enabled in your `global.json` file. For more information, see [Testing with dotnet test](unit-testing-with-dotnet-test.md).
-
 :::zone-end
 
 ## See also

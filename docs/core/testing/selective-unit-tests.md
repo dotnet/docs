@@ -256,35 +256,36 @@ namespace TUnitNamespace
 }
 ```
 
+TUnit uses the `--treenode-filter` flag with a path-based syntax:
+
 | Expression | Result |
 |--|--|
-| `dotnet test --filter Method` | Runs tests whose <xref:System.Reflection.Module.FullyQualifiedName> contains `Method`. |
-| `dotnet test --filter Name~TestMethod1` | Runs tests whose name contains `TestMethod1`. |
-| `dotnet test --filter FullyQualifiedName~TUnitNamespace.UnitTest1` | Runs tests that are in class `TUnitNamespace.UnitTest1`. |
-| `dotnet test --filter FullyQualifiedName!=TUnitNamespace.UnitTest1.TestMethod1` | Runs all tests except `TUnitNamespace.UnitTest1.TestMethod1`. |
-| `dotnet test --filter Category=CategoryA` | Runs tests that are annotated with `[Category("CategoryA")]`. |
-| `dotnet test --filter Priority=2` | Runs tests that have `[Property("Priority", "2")]`. |
+| `dotnet test --treenode-filter "/*/*/*/*Method*"` | Runs tests whose method name contains `Method`. |
+| `dotnet test --treenode-filter "/*/*/*/TestMethod1"` | Runs tests whose name is `TestMethod1`. |
+| `dotnet test --treenode-filter "/*/TUnitNamespace/UnitTest1/*"` | Runs all tests in class `TUnitNamespace.UnitTest1`. |
+| `dotnet test --treenode-filter "/**[Category=CategoryA]"` | Runs tests that are annotated with `[Category("CategoryA")]`. |
+| `dotnet test --treenode-filter "/**[Priority=2]"` | Runs tests that have `[Property("Priority", "2")]`. |
 
 In the code example, the `[Property]` and `[Category]` attributes can be used for filtering.
 
 Examples using the conditional operators `|` and `&`:
 
-To run tests that have `UnitTest1` in their <xref:System.Reflection.Module.FullyQualifiedName> **or** have a `Category` of `"CategoryA"`.
+To run tests that have `UnitTest1` in their class name **or** have a `Category` of `"CategoryA"`.
 
 ```dotnetcli
-dotnet test --filter "FullyQualifiedName~UnitTest1|Category=CategoryA"
+dotnet test --treenode-filter "(/*/*/UnitTest1/*)|/**[Category=CategoryA]"
 ```
 
-To run tests that have `UnitTest1` in their <xref:System.Reflection.Module.FullyQualifiedName> **and** have a `Category` of `"CategoryA"`.
+To run tests that are in class `UnitTest1` **and** have a `Category` of `"CategoryA"`.
 
 ```dotnetcli
-dotnet test --filter "FullyQualifiedName~UnitTest1&Category=CategoryA"
+dotnet test --treenode-filter "(/*/*/UnitTest1/*)&/**[Category=CategoryA]"
 ```
 
-To run tests that have either a <xref:System.Reflection.Module.FullyQualifiedName> containing `UnitTest1` **and** have a `Category` of `"CategoryA"` **or** have a `Property` with `"Priority"` of `"2"`.
+To run tests that have either class `UnitTest1` **and** `Category` of `"CategoryA"` **or** have a `Property` with `"Priority"` of `"2"`.
 
 ```dotnetcli
-dotnet test --filter "(FullyQualifiedName~UnitTest1&Category=CategoryA)|Priority=2"
+dotnet test --treenode-filter "((/*/*/UnitTest1/*)&/**[Category=CategoryA])|/**[Priority=2]"
 ```
 
 :::zone-end

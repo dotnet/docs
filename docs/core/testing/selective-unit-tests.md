@@ -31,7 +31,8 @@ dotnet test --filter <Expression>
   | -------------- | -------------------- |
   | MSTest         | `FullyQualifiedName`<br>`Name`<br>`ClassName`<br>`Priority`<br>`TestCategory` |
   | xUnit          | `FullyQualifiedName`<br>`DisplayName`<br>`Traits` |
-  | Nunit          | `FullyQualifiedName`<br>`Name`<br>`Priority`<br>`TestCategory` |
+  | NUnit          | `FullyQualifiedName`<br>`Name`<br>`Priority`<br>`TestCategory` |
+  | TUnit          | `FullyQualifiedName`<br>`Name`<br>`Category`<br>`Property` |
 
 * **Operators**
 
@@ -229,6 +230,65 @@ dotnet test --filter "(FullyQualifiedName~UnitTest1&TestCategory=CategoryA)|Prio
 ```
 
 For more information, see [TestCase filter](https://github.com/Microsoft/vstest-docs/blob/main/docs/filter.md).
+
+:::zone-end
+:::zone pivot="tunit"
+
+## TUnit examples
+
+```csharp
+using TUnit.Core;
+
+namespace TUnitNamespace
+{
+    public class UnitTest1
+    {
+        [Test, Property("Priority", "1"), Category("CategoryA")]
+        public async Task TestMethod1()
+        {
+        }
+
+        [Test, Property("Priority", "2")]
+        public async Task TestMethod2()
+        {
+        }
+    }
+}
+```
+
+| Expression | Result |
+|--|--|
+| `dotnet test --filter Method` | Runs tests whose <xref:System.Reflection.Module.FullyQualifiedName> contains `Method`. |
+| `dotnet test --filter Name~TestMethod1` | Runs tests whose name contains `TestMethod1`. |
+| `dotnet test --filter FullyQualifiedName~TUnitNamespace.UnitTest1` | Runs tests that are in class `TUnitNamespace.UnitTest1`. |
+| `dotnet test --filter FullyQualifiedName!=TUnitNamespace.UnitTest1.TestMethod1` | Runs all tests except `TUnitNamespace.UnitTest1.TestMethod1`. |
+| `dotnet test --filter Category=CategoryA` | Runs tests that are annotated with `[Category("CategoryA")]`. |
+| `dotnet test --filter Priority=2` | Runs tests that have `[Property("Priority", "2")]`. |
+
+In the code example, the `[Property]` and `[Category]` attributes can be used for filtering.
+
+Examples using the conditional operators `|` and `&`:
+
+To run tests that have `UnitTest1` in their <xref:System.Reflection.Module.FullyQualifiedName> **or** have a `Category` of `"CategoryA"`.
+
+```dotnetcli
+dotnet test --filter "FullyQualifiedName~UnitTest1|Category=CategoryA"
+```
+
+To run tests that have `UnitTest1` in their <xref:System.Reflection.Module.FullyQualifiedName> **and** have a `Category` of `"CategoryA"`.
+
+```dotnetcli
+dotnet test --filter "FullyQualifiedName~UnitTest1&Category=CategoryA"
+```
+
+To run tests that have either a <xref:System.Reflection.Module.FullyQualifiedName> containing `UnitTest1` **and** have a `Category` of `"CategoryA"` **or** have a `Property` with `"Priority"` of `"2"`.
+
+```dotnetcli
+dotnet test --filter "(FullyQualifiedName~UnitTest1&Category=CategoryA)|Priority=2"
+```
+
+> [!NOTE]
+> When running TUnit tests with Microsoft.Testing.Platform mode, the standard `dotnet test --filter` syntax is supported. Make sure you have the Microsoft.Testing.Platform mode enabled in your `global.json` file. For more information, see [Testing with dotnet test](unit-testing-with-dotnet-test.md).
 
 :::zone-end
 

@@ -169,4 +169,48 @@ public void InvalidPrice_ShouldThrowExceptionWithCorrectMessage()
 
 :::image type="content" source="media/stryker-final-report.png" lightbox="media/stryker-final-report.png" alt-text="Stryker final report":::
 
+## Using mutation testing with TUnit
+
+Mutation testing with Stryker.NET works with TUnit. The examples above can be written using TUnit's async testing syntax:
+
+```csharp
+[Test]
+public async Task ApplyDiscountCorrectly()
+{
+    decimal price = 100;
+    decimal discountPercent = 10;
+
+    var calculator = new PriceCalculator();
+
+    var result = calculator.CalculatePrice(price, discountPercent);
+
+    await Assert.That(result).IsEqualTo(90.00m);
+}
+
+[Test]
+public async Task InvalidDiscountPercent_ShouldThrowException()
+{
+    var calculator = new PriceCalculator();
+
+    await Assert.That(() => calculator.CalculatePrice(100, -1))
+        .Throws<ArgumentException>();
+    await Assert.That(() => calculator.CalculatePrice(100, 101))
+        .Throws<ArgumentException>();
+}
+
+[Test]
+public async Task InvalidPrice_ShouldThrowExceptionWithCorrectMessage()
+{
+    var calculator = new PriceCalculator();
+
+    var exception = await Assert.That(() => calculator.CalculatePrice(0, 10))
+        .Throws<ArgumentException>();
+
+    await Assert.That(exception.Message)
+        .IsEqualTo("Price must be greater than zero.");
+}
+```
+
+For more information about TUnit, see [Unit testing C# with TUnit](unit-testing-csharp-with-tunit.md).
+
 Mutation testing helps to find opportunities to improve tests that make them more reliable. It forces you to check not only the 'happy path', but also complex boundary cases, reducing the likelihood of bugs in production.

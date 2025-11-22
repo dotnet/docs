@@ -13,6 +13,9 @@ This article lists and explains all Microsoft.Testing.Platform extensions relate
 
 You can use the code coverage feature to determine what proportion of your project's code is being tested by coded tests such as unit tests. To effectively guard against bugs, your tests should exercise or *cover* a large proportion of your code.
 
+> [!NOTE]
+> These code coverage extensions work with all testing frameworks built on Microsoft.Testing.Platform, including MSTest, NUnit, xUnit, and TUnit. For TUnit-specific code coverage examples, see [Using code coverage with TUnit](unit-testing-code-coverage.md#using-code-coverage-with-tunit).
+
 ## Microsoft code coverage
 
 Microsoft Code Coverage analysis is possible for both managed (CLR) and unmanaged (native) code. Both static and dynamic instrumentation are supported. This extension is shipped as part of [Microsoft.Testing.Extensions.CodeCoverage](https://nuget.org/packages/Microsoft.Testing.Extensions.CodeCoverage) NuGet package.

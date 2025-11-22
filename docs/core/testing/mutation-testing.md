@@ -203,11 +203,9 @@ public async Task InvalidPrice_ShouldThrowExceptionWithCorrectMessage()
 {
     var calculator = new PriceCalculator();
 
-    var exception = await Assert.That(() => calculator.CalculatePrice(0, 10))
-        .Throws<ArgumentException>();
-
-    await Assert.That(exception.Message)
-        .IsEqualTo("Price must be greater than zero.");
+    await Assert.That(() => calculator.CalculatePrice(0, 10))
+        .Throws<ArgumentException>()
+        .WithMessage("Price must be greater than zero.");
 }
 ```
 

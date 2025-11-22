@@ -88,7 +88,6 @@ The following instructions provide the steps to create the test solution. See [C
 
 * The preceding command:
   * Creates the *PrimeService.Tests* project in the *PrimeService.Tests* directory. The test project uses [TUnit](https://tunit.dev/) as the test library.
-  * TUnit uses source generation for test discovery.
   * Configures the test runner by adding the `TUnit` package to the project file.
 
 * Add the test project to the solution file by running the following command:
@@ -174,7 +173,7 @@ Namespace PrimeService.Tests
 End Namespace
 ```
 
-The `[Test]` attribute marks a method as a test that's run by the test runner. TUnit uses source generation to discover tests at compile time.
+The `[Test]` attribute marks a method as a test that's run by the test runner.
 
 From the *PrimeService.Tests* folder, run `dotnet test`. The [dotnet test](../tools/dotnet-test.md) command builds both projects and runs the tests. The TUnit test runner uses Microsoft.Testing.Platform to execute the tests.
 

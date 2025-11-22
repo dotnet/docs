@@ -10,6 +10,9 @@ ms.date: 08/26/2024
 
 This article lists and explains all Microsoft.Testing.Platform extensions related to the terminal output.
 
+> [!NOTE]
+> These output extensions work with all testing frameworks built on Microsoft.Testing.Platform, including MSTest, NUnit, xUnit, and TUnit.
+
 ## Terminal test reporter
 
 Terminal test reporter is the default implementation of status and progress reporting to the terminal (console).

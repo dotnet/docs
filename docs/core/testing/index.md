@@ -72,7 +72,14 @@ For more information, see the following resources:
 
 #### TUnit
 
-[TUnit](https://thomhurst.github.io/TUnit/) is entirely built on top of Microsoft.Testing.Platform and doesn't support VSTest. For more information, refer to TUnit documentation.
+[TUnit](https://tunit.dev/) is a testing framework for .NET that is built entirely on top of Microsoft.Testing.Platform and doesn't support VSTest. TUnit uses source generation for test discovery and runs tests in parallel by default.
+
+For more information, see the following resources:
+
+- [TUnit official documentation](https://tunit.dev/)
+- [Unit testing with C#](unit-testing-csharp-with-tunit.md)
+- [Unit testing with F#](unit-testing-fsharp-with-tunit.md)
+- [Unit testing with Visual Basic](unit-testing-visual-basic-with-tunit.md)
 
 #### xUnit.net
 

@@ -91,6 +91,37 @@ To order tests explicitly, NUnit provides an [`OrderAttribute`](https://docs.nun
 :::code language="csharp" source="snippets/order-unit-tests/csharp/NUnit.TestProject/ByOrder.cs":::
 
 :::zone-end
+:::zone pivot="tunit"
+
+## Order by dependency
+
+TUnit provides a `[DependsOn]` attribute to control test execution order through explicit dependencies. When a test depends on another, TUnit ensures the prerequisite test completes before executing the dependent test. This approach allows you to maintain test parallelism for independent tests while enforcing order where necessary.
+
+:::code language="csharp" source="snippets/order-unit-tests/csharp/TUnit.TestProject/ByDependency.cs":::
+
+### Behavior
+
+* **Failure handling** - By default, if a dependency fails, the dependent test is skipped. You can override this behavior by setting `ProceedOnFailure = true` on the `DependsOnAttribute`.
+* **Accessing dependent test context** - You can retrieve data from a prerequisite test's context using the `GetTests` method on the `TestContext` object.
+* **Multiple dependencies** - You can apply multiple `[DependsOn]` attributes to a single test to create complex dependency chains.
+
+### Handling method overloads
+
+When depending on overloaded test methods, specify the parameter types explicitly:
+
+```csharp
+[Test]
+[DependsOn(nameof(SetupTest), [typeof(string), typeof(int)])]
+public async Task DependentTest()
+{
+    // This test runs after SetupTest(string, int) completes
+}
+```
+
+> [!NOTE]
+> While `[DependsOn]` provides ordering capabilities, tests should ideally be self-contained, isolated, and side-effect free. Reserve dependency ordering for scenarios where independent tests are impractical, such as deployment pipelines or expensive multi-step workflows.
+
+:::zone-end
 
 ## Next Steps
 

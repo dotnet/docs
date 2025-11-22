@@ -10,6 +10,9 @@ ms.date: 04/10/2024
 
 This article lists and explains all Microsoft.Testing.Platform extensions related to the test report capability.
 
+> [!NOTE]
+> These test report extensions work with all testing frameworks built on Microsoft.Testing.Platform, including MSTest, NUnit, xUnit, and TUnit.
+
 A test report is a file that contains information about the execution and outcome of the tests.
 
 ## Visual Studio test reports

@@ -91,6 +91,9 @@ Due to these issues, .NET has introduced a new `dotnet test` mode specifically d
 
 To address the issues encountered when running `dotnet test` with MTP in VSTest mode, .NET introduced a new mode in the .NET 10 SDK that's specifically designed for MTP.
 
+> [!NOTE]
+> TUnit is built exclusively on Microsoft.Testing.Platform and doesn't support VSTest mode. When using TUnit, you must use the MTP mode of `dotnet test` as described in this section. For more information about TUnit, see [Unit testing C# with TUnit](unit-testing-csharp-with-tunit.md).
+
 To enable this mode, add the following configuration to your `global.json` file:
 
 ```json

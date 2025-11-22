@@ -293,6 +293,95 @@ After running this command, an HTML file represents the generated report.
 
 :::image type="content" source="media/test-report.png" lightbox="media/test-report.png" alt-text="Unit test-generated report":::
 
+## Using code coverage with TUnit
+
+Code coverage tools like Coverlet and ReportGenerator work with TUnit projects. TUnit is built on Microsoft.Testing.Platform and supports the same code coverage workflows as other .NET testing frameworks.
+
+### Creating a TUnit test project with code coverage
+
+To create a TUnit test project with code coverage support, use the TUnit project template:
+
+```dotnetcli
+dotnet new install TUnit.Templates
+dotnet new tunit -n TUnit.Coverlet.Test
+```
+
+Add the project reference to your class library:
+
+```dotnetcli
+dotnet add TUnit.Coverlet.Test\TUnit.Coverlet.Test.csproj reference Numbers\Numbers.csproj
+```
+
+Add the Coverlet NuGet package (if using .NET 9 SDK or earlier, use `dotnet add package` instead):
+
+```dotnetcli
+cd TUnit.Coverlet.Test && dotnet package add coverlet.msbuild && cd ..
+```
+
+### TUnit test example
+
+TUnit tests use async/await syntax:
+
+```csharp
+using TUnit.Assertions;
+using TUnit.Assertions.Extensions;
+using TUnit.Core;
+using System.Numbers;
+
+public class PrimeServiceTests
+{
+    [Test]
+    public async Task IsPrime_InputIs1_ReturnFalse()
+    {
+        var primeService = new PrimeService();
+
+        bool result = primeService.IsPrime(1);
+
+        await Assert.That(result).IsFalse();
+    }
+
+    [Test]
+    [Arguments(2)]
+    [Arguments(3)]
+    [Arguments(5)]
+    [Arguments(7)]
+    public async Task IsPrime_PrimesLessThan10_ReturnTrue(int value)
+    {
+        var primeService = new PrimeService();
+
+        bool result = primeService.IsPrime(value);
+
+        await Assert.That(result).IsTrue();
+    }
+}
+```
+
+### Running code coverage with TUnit
+
+Code coverage works the same way with TUnit as with other frameworks. Since TUnit requires Microsoft.Testing.Platform mode, ensure your `global.json` includes:
+
+```json
+{
+    "test": {
+        "runner": "Microsoft.Testing.Platform"
+    }
+}
+```
+
+Run tests with code coverage using the same commands:
+
+```dotnetcli
+dotnet test --collect:"XPlat Code Coverage"
+```
+
+Or with MSBuild integration:
+
+```dotnetcli
+dotnet test /p:CollectCoverage=true
+```
+
+The generated coverage reports work with ReportGenerator just like xUnit, MSTest, or NUnit projects. For more information about TUnit, see [Unit testing C# with TUnit](unit-testing-csharp-with-tunit.md).
+
 ## See also
 
 - [Visual Studio unit test code coverage](/visualstudio/test/using-code-coverage-to-determine-how-much-code-is-being-tested)

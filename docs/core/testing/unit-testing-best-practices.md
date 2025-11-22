@@ -453,6 +453,24 @@ public void GetDiscountedPrice_OnTuesday_ReturnsHalfPrice()
 
 Now the test suite has full control over the `DateTime.Now` value, and can stub any value when calling into the method.
 
+## Async testing patterns
+
+When writing async tests, use async/await patterns consistently to avoid common pitfalls like `.Result` or `.Wait()` that can cause deadlocks. Most testing frameworks support async test methods.
+
+Example with async assertions:
+
+```csharp
+[Test]
+public async Task User_IsValid_ReturnsTrue()
+{
+    var user = new User { Name = "John" };
+
+    await Assert.That(user.IsValid()).IsTrue();
+}
+```
+
+Frameworks that support async tests include MSTest, NUnit, xUnit, and TUnit. Each framework provides attributes for test organization such as categories, properties, and metadata for filtering and grouping tests. These features support the "Isolated" and "Repeatable" characteristics of good unit tests described earlier in this article.
+
 ## Related links
 
 - [Unit testing code coverage](unit-testing-code-coverage.md)

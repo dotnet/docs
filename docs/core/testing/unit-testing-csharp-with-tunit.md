@@ -85,10 +85,7 @@ The following instructions provide the steps to create the test solution. See [C
   dotnet new tunit -o PrimeService.Tests
   ```
 
-  The preceding command creates the *PrimeService.Tests* project in the *PrimeService.Tests* directory. The test project uses [TUnit](https://tunit.dev/) as the test library. TUnit uses source generation for test discovery. The template configures the test runner by adding the following `<PackageReference />` elements to the project file:
-
-  * `TUnit`
-  * `TUnit.Engine`
+  The preceding command creates the *PrimeService.Tests* project in the *PrimeService.Tests* directory. The test project uses [TUnit](https://tunit.dev/) as the test library. TUnit uses source generation for test discovery. The template configures the test runner by adding the `TUnit` package to the project file.
 
 * Add the test project to the solution file by running the following command:
 

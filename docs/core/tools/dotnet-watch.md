@@ -63,15 +63,15 @@ As an alternative to disabling response compression, manually add the browser re
 
 ## Options
 
-[!INCLUDE [artifacts-path](../../../includes/cli-artifacts-path.md)]
+- [!INCLUDE [artifacts-path](../../../includes/cli-artifacts-path.md)]
 
-[!INCLUDE [disable-build-servers](../../../includes/cli-disable-build-servers.md)]
+- [!INCLUDE [disable-build-servers](../../../includes/cli-disable-build-servers.md)]
 
 - **`--list`**
 
   Lists all discovered files without starting the watcher.
 
-[!INCLUDE [no-self-contained](../../../includes/cli-no-self-contained.md)]
+- [!INCLUDE [no-self-contained](../../../includes/cli-no-self-contained.md)]
 
 - **`--no-hot-reload`**
 
@@ -85,7 +85,7 @@ As an alternative to disabling response compression, manually add the browser re
 
   Specifies the path of the project file to run (folder only or including the project file name). If not specified, it defaults to the current directory.
 
-[!INCLUDE [self-contained](../../../includes/cli-self-contained.md)]
+- [!INCLUDE [self-contained](../../../includes/cli-self-contained.md)]
 
 - **`-q|--quiet`**
 
@@ -103,7 +103,7 @@ As an alternative to disabling response compression, manually add the browser re
 
   The [double-dash option ('--')](../../standard/commandline/syntax.md#the----token) can be used to delimit `dotnet watch` options from arguments that will be passed to the child process. Its use is optional. When the double-dash option isn't used, `dotnet watch` considers the first unrecognized argument to be the beginning of arguments that it should pass into the child `dotnet` process.
 
-[!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](../../../includes/cli-help.md)]
 
 ## Environment variables
 

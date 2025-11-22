@@ -104,9 +104,9 @@ The `dotnet nuget sign` command signs all the packages matching the first argume
 
    URL to an RFC 3161 timestamping server.
 
-[!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
+- [!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
 
-[!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](../../../includes/cli-help.md)]
 
 ## Examples
 

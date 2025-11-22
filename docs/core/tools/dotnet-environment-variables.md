@@ -1,16 +1,35 @@
 ---
 title: .NET environment variables
 description: Learn about the environment variables that you can use to configure the .NET SDK, .NET CLI, and .NET runtime.
-ms.date: 11/08/2023
+ms.date: 11/20/2025
 ---
 
 # .NET environment variables
 
-**This article applies to:** ✔️ .NET 6 SDK and later versions
-
 In this article, you'll learn about the environment variables used by .NET. Some environment variables are used by the .NET runtime, while others are only used by the .NET SDK and .NET CLI. Some environment variables are used by all three components.
 
 ## .NET runtime environment variables
+
+This section defines the following environment variables:
+
+- [`DOTNET_SYSTEM_NET_HTTP_*`](#dotnet_system_net_http_)
+- [`DOTNET_SYSTEM_GLOBALIZATION_*`](#dotnet_system_globalization_)
+- [`DOTNET_SYSTEM_GLOBALIZATION_USENLS`](#dotnet_system_globalization_usenls)
+- [`DOTNET_SYSTEM_NET_SOCKETS_*`](#dotnet_system_net_sockets_)
+- [`DOTNET_SYSTEM_NET_DISABLEIPV6`](#dotnet_system_net_disableipv6)
+- [`DOTNET_SYSTEM_NET_HTTP_USESOCKETSHTTPHANDLER`](#dotnet_system_net_http_usesocketshttphandler)
+- [`DOTNET_RUNNING_IN_CONTAINER` and `DOTNET_RUNNING_IN_CONTAINERS`](#dotnet_running_in_container-and-dotnet_running_in_containers)
+- [`DOTNET_SYSTEM_CONSOLE_ALLOW_ANSI_COLOR_REDIRECTION`](#dotnet_system_console_allow_ansi_color_redirection)
+- [`DOTNET_SYSTEM_DIAGNOSTICS` and related variables](#dotnet_system_diagnostics-and-related-variables)
+- [`DOTNET_DiagnosticPorts`](#dotnet_diagnosticports)
+- [`DOTNET_DefaultDiagnosticPortSuspend`](#dotnet_defaultdiagnosticportsuspend)
+- [`DOTNET_EnableDiagnostics`](#dotnet_enablediagnostics)
+- [`DOTNET_EnableDiagnostics_IPC`](#dotnet_enablediagnostics_ipc)
+- [`DOTNET_EnableDiagnostics_Debugger`](#dotnet_enablediagnostics_debugger)
+- [`DOTNET_EnableDiagnostics_Profiler`](#dotnet_enablediagnostics_profiler)
+- [EventPipe variables](#eventpipe-variables)
+
+For more information about configuring the .NET runtime, see [.NET runtime configuration settings](../runtime-config/index.md).
 
 ### `DOTNET_SYSTEM_NET_HTTP_*`
 
@@ -162,6 +181,43 @@ See [EventPipe environment variables](../diagnostics/eventpipe.md#trace-using-en
 - `DOTNET_EventPipeOutputStreaming`: When set to `1`, enables streaming to the output file while the app is running. By default trace information is accumulated in a circular buffer and the contents are written at app shutdown.
 
 ## .NET SDK and CLI environment variables
+
+This section describes the following environment variables:
+
+- [`DOTNET_ROOT`, `DOTNET_ROOT(x86)`, `DOTNET_ROOT_X86`, `DOTNET_ROOT_X64`](#dotnet_root-dotnet_rootx86-dotnet_root_x86-dotnet_root_x64)
+- [`DOTNET_HOST_PATH`](#dotnet_host_path)
+- [`DOTNET_LAUNCH_PROFILE`](#dotnet_launch_profile)
+- [`NUGET_PACKAGES`](#nuget_packages)
+- [`DOTNET_SERVICING`](#dotnet_servicing)
+- [`DOTNET_NOLOGO`](#dotnet_nologo)
+- [`DOTNET_CLI_PERF_LOG`](#dotnet_cli_perf_log)
+- [`DOTNET_GENERATE_ASPNET_CERTIFICATE`](#dotnet_generate_aspnet_certificate)
+- [`DOTNET_ADD_GLOBAL_TOOLS_TO_PATH`](#dotnet_add_global_tools_to_path)
+- [`DOTNET_CLI_TELEMETRY_OPTOUT`](#dotnet_cli_telemetry_optout)
+- [`DOTNET_SKIP_FIRST_TIME_EXPERIENCE`](#dotnet_skip_first_time_experience)
+- [`DOTNET_MULTILEVEL_LOOKUP`](#dotnet_multilevel_lookup)
+- [`DOTNET_ROLL_FORWARD`](#dotnet_roll_forward)
+- [`DOTNET_ROLL_FORWARD_TO_PRERELEASE`](#dotnet_roll_forward_to_prerelease)
+- [`DOTNET_CLI_FORCE_UTF8_ENCODING`](#dotnet_cli_force_utf8_encoding)
+- [`DOTNET_CLI_UI_LANGUAGE`](#dotnet_cli_ui_language)
+- [`DOTNET_DISABLE_GUI_ERRORS`](#dotnet_disable_gui_errors)
+- [`DOTNET_ADDITIONAL_DEPS`](#dotnet_additional_deps)
+- [`DOTNET_RUNTIME_ID`](#dotnet_runtime_id)
+- [`DOTNET_SHARED_STORE`](#dotnet_shared_store)
+- [`DOTNET_STARTUP_HOOKS`](#dotnet_startup_hooks)
+- [`DOTNET_BUNDLE_EXTRACT_BASE_DIR`](#dotnet_bundle_extract_base_dir)
+- [`DOTNET_CLI_HOME`](#dotnet_cli_home)
+- [`DOTNET_CLI_CONTEXT_*`](#dotnet_cli_context_)
+- [`DOTNET_CLI_WORKLOAD_UPDATE_NOTIFY_DISABLE`](#dotnet_cli_workload_update_notify_disable)
+- [`DOTNET_CLI_WORKLOAD_UPDATE_NOTIFY_INTERVAL_HOURS`](#dotnet_cli_workload_update_notify_interval_hours)
+- [`DOTNET_SKIP_WORKLOAD_INTEGRITY_CHECK`](#dotnet_skip_workload_integrity_check)
+- [`DOTNET_TOOLS_ALLOW_MANIFEST_IN_ROOT`](#dotnet_tools_allow_manifest_in_root)
+- [`DOTNET_HOST_TRACE`](#dotnet_host_trace)
+- [`COREHOST_TRACE`](#corehost_trace)
+- [`SuppressNETCoreSdkPreviewMessage`](#suppressnetcoresdkpreviewmessage)
+- [Configure MSBuild in the .NET CLI](#configure-msbuild-in-the-net-cli)
+- [`DOTNET_NEW_PREFERRED_LANG`](#dotnet_new_preferred_lang)
+- [`dotnet watch` environment variables](#dotnet-watch-environment-variables)
 
 ### `DOTNET_ROOT`, `DOTNET_ROOT(x86)`, `DOTNET_ROOT_X86`, `DOTNET_ROOT_X64`
 

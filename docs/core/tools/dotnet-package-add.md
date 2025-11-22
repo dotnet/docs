@@ -142,9 +142,9 @@ Scenario 4: `<PackageReference>` does not exist in the project file, `<PackageVe
 
   Adds a package reference only when targeting a specific [framework](../../standard/frameworks.md).
 
-[!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](../../../includes/cli-help.md)]
 
-[!INCLUDE [interactive](../../../includes/cli-interactive.md)]
+- [!INCLUDE [interactive](../../../includes/cli-interactive.md)]
 
 - **`-n|--no-restore`**
 

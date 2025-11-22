@@ -2,6 +2,6 @@
 ms.date: 08/12/2021
 ms.topic: include
 ---
-- **`--include-previews`**
+**`--include-previews`**
 
-  Allows prerelease workload manifests.
+Allows prerelease workload manifests.

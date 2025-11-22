@@ -70,15 +70,11 @@ Starting with .NET SDK 6.0.100, installed template packages are available in lat
 
   Allows installing template packages from the specified sources even if they would override a template package from another source. Available since .NET SDK 7.0.100.
 
-- **`-h|--help`**
+- [!INCLUDE [help](../../../includes/cli-help.md)]
 
-  Prints out help for the install command. Available since .NET SDK 7.0.100.
+- [!INCLUDE [interactive](../../../includes/cli-interactive.md)]
 
-[!INCLUDE [interactive](../../../includes/cli-interactive-5-0.md)]
-
-- **`-v|--verbosity <LEVEL>`**
-
-  Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, and `diag[nostic]`. Available since .NET SDK 7.0.100.
+- [!INCLUDE [verbosity](../../../includes/cli-verbosity.md)]
 
 ## Examples
 

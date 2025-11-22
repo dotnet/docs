@@ -78,9 +78,9 @@ In .NET 10 and later versions, the command also outputs the package's content ha
 
   ❌ indicates details that are **not** displayed. ✔️ indicates details that are displayed.
 
-[!INCLUDE [configfile](../../../includes/cli-configfile.md)]
+- [!INCLUDE [configfile](../../../includes/cli-configfile.md)]
 
-[!INCLUDE [help](../../../includes/cli-help.md)]
+- [!INCLUDE [help](../../../includes/cli-help.md)]
 
 ## Examples
 

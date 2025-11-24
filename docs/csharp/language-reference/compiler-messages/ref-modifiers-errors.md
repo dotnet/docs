@@ -30,6 +30,8 @@ f1_keywords:
   - "CS8338"
   - "CS8373"
   - "CS8388"
+  - "CS8977"
+  - "CS8986"
   - "CS8987"
   - "CS9061"
   - "CS9062"
@@ -41,12 +43,6 @@ f1_keywords:
   - "CS9074"
   - "CS9101"
   - "CS9102"
-  - "CS9104"
-  - "CS9104"
-  - "CS9104"
-  - "CS9104"
-  - "CS9104"
-  - "CS9104"
   - "CS9104"
   - "CS9190"
   - "CS9191"
@@ -91,6 +87,14 @@ helpviewer_keywords:
   - "CS8373"
   - "CS8388"
   - "CS8977"
+  - "CS8986"
+  - "CS8987"
+  - "CS9061"
+  - "CS9062"
+  - "CS9063"
+  - "CS9065"
+  - "CS9066"
+  - "CS9072"
   - "CS9073"
   - "CS9074"
   - "CS9101"
@@ -267,7 +271,7 @@ The `unscoped` qualifier on `ref` parameters isn't allowed in some locations:
 
 To correct these errors:
 
-- Remove the `unscoped` modifier or the <xref:System.Runtime.CompilerServices.UnscopedRefAttribute?displayProperty=nameWithType> attribute from struct constructors and init-only members. These members have special initialization semantics where the compiler must ensure that any references don't outlive the initialization phase, and allowing unscoped references would violate the guarantee that initialization completes before the struct becomes fully accessible (**CS9101**).
+- Remove the `unscoped` modifier or the <xref:System.Diagnostics.CodeAnalysis.UnscopedRefAttribute?displayProperty=nameWithType> attribute from struct constructors and init-only members. These members have special initialization semantics where the compiler must ensure that any references don't outlive the initialization phase, and allowing unscoped references would violate the guarantee that initialization completes before the struct becomes fully accessible (**CS9101**).
 - Remove the `unscoped` modifier from interface implementation methods when the corresponding interface method doesn't have it. The unscoped characteristic affects the method's contract regarding reference lifetime guarantees, and implementations must maintain the same contract as the interface they're implementing to ensure callers can rely on consistent lifetime behavior regardless of which implementation is invoked (**CS9102**).
 
 For more information about scoped and unscoped references, see [Method parameters](../keywords/method-parameters.md) and the [low-level struct improvements](~/_csharplang/proposals/csharp-11.0/low-level-struct-improvements.md) feature specification.

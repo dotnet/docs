@@ -8,7 +8,7 @@ ms.date: 05/16/2016
 A *type abbreviation* is an alias or alternate name for a type.
 
 > [!NOTE]
-> Despite the name "type abbreviation," this feature allows you to create alternate names that can be either shorter or longer than the original type name. While the most common usage is to abbreviate long type names or create simpler names for type applications with specified generic arguments, you can also use type abbreviations to create longer, more descriptive names that improve code readability.
+> The "type abbreviation" feature allows you to create alternate names that are either shorter or longer than the original type name. It's common to abbreviate long type names or create simpler names for type applications with specific generic arguments. You can use type abbreviations to create longer, more descriptive names that improve code readability.
 
 ## Syntax
 

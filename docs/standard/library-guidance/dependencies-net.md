@@ -11,14 +11,14 @@ When building libraries that target multiple .NET versions, choosing dependency 
 
 Library authors face challenges when deciding which version of a .NET dependency to reference. Newer versions have more API and features, but may require a local redistribution increasing servicing responsibilities of the library and size of the application.  The decision impacts:
 
-- **Friction of updates** on older runtimes.  Friction might be more changes than are desired by the library directly referenced.  This could be the set of changes introduced between major versions of a dependency, the application size due to more app-local dependencies, the application startup performance due to using app-local dependencies without pre-generated native images, etc.
-- **Engineering cost** in maintaining the solution.  Here engineering cost is the cost of doing work in the latest codebase.  This might be managing more complex projects with conditions, the total number of dependencies that need to be updated regularly, the cost of maintaining local source to account for missing features in older dependencies, dealing with ifdefs around inconsistent API/features across versions, etc. 
+- **Friction of updates** on older runtimes.  Friction of updates are any of the cost associated with taking a new version of a libary.  This could be the set of changes introduced between major versions of a dependency, the application size due to more app-local dependencies, the application startup performance due to using app-local dependencies without pre-generated native images, etc.
+- **Development cost** in maintaining the solution.  Here development cost is the cost of doing work in the latest codebase.  This might be managing more complex projects with conditions, the total number of dependencies that need to be updated regularly, the cost of maintaining local source to account for missing features in older dependencies (polyfills), dealing with ifdefs around inconsistent API/features across versions, etc. 
 - **Servicing cost** in managing supported releases.  Here servicing cost is the ongoing cost in keeping release branches building, up to date, and compliant with all supported build tools.
 
 This guidance provides options, tradeoffs, and a decision matrix to help you choose the best approach.
 ✔️ DO be deliberate in choosing a dependency policy for your library
 ✔️ DO remove out of support target frameworks from your package.
-✔️ CONSIDER choosing an approach that minimizes engineering costs and adjusting based on customer feedback
+✔️ CONSIDER choosing an approach that minimizes development costs and adjusting based on customer feedback
 ✔️ CONSIDER changing your approach through the lifecycle of your library
 ❌ DO NOT assume any policy is incorrect, all policies are technically sound and supported with different tradeoffs for consumption
 
@@ -58,7 +58,7 @@ Reference different dependency versions per Target Framework Moniker (TFM).  Don
 
 **Cons**
 
-- Reduced API available to library which may lead to more complex implementations (polyfills).  Polyfills increase the total cost of engineering and servicing.
+- Reduced API available to library which may lead to more complex implementations (polyfills).  Polyfills increase the total cost of devlopment and servicing.
 - Slows innovation in libraries.
 - Greater complexity of infrastructure to maintain seperate dependency sets per target framework.  Central packagge management and dependabot can be be configured to work with this, but it's challenging to get it right.
 
@@ -66,7 +66,9 @@ Reference different dependency versions per Target Framework Moniker (TFM).  Don
 
 ### **Option 3: Branching**
 
-Reference the latest supported version of the dependency across all target frameworks, but branch your library in sync with target frameworks.  This is the same as Option 1, but each time a new framework is added, a new major version / branch is created to allow for updating the major version of dependencies and adding the new target framework.
+Reference the latest supported version of the dependency across all target frameworks, but create a new release branch your when you change major versions of dependencies.  This is the same as Option 1, but retaining a supported branch allows consumers to choose between staying on older supported packages or getting new features.
+
+❌ AVOID using branching as a way to remove support for in-support frameworks as this removes the feature/support choice for users.
 
 **Pros**
 
@@ -84,7 +86,7 @@ Reference the latest supported version of the dependency across all target frame
 
 ## **Decision matrix**
 
-| Strategy                              | Update Friction  | Engineering Cost |  Servicing Cost  |
+| Strategy                              | Update Friction  | Development Cost |  Servicing Cost  |
 |---------------------------------------|------------------|------------------|------------------|
 | Latest Supported Versions (Option 1)  | Moderate         | Low              | Moderate         |
 | TFM-Specific Versions (Option 2)      | Low              | High             | Low / Moderate   |
@@ -95,7 +97,7 @@ Reference the latest supported version of the dependency across all target frame
 ## **Key tradeoffs**
 
 - **Friction vs. Innovation:** Latest versions offer new features but have more friction for existing applications on older runtimes.
-- **Engineering cost:** Configuring multiple dependency groups, dependency updates for those, and managing API gaps can all accumulate to slow down innovation in a fast moving library.
+- **Development cost:** Configuring multiple dependency groups, dependency updates for those, and managing API gaps can all accumulate to slow down innovation in a fast moving library.
 - **Servicing cost:** More package dependencies means more updates.  More branches mean more concurrent builds that need to stay healthy. Additional code in the form of polyfills means more LOC with potential bugs.
 
 ---

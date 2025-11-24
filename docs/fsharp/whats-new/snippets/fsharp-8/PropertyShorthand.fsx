@@ -1,8 +1,9 @@
-// Property shorthand examples
+// <Types>
 type Person = {Name : string; Age : int}
 let people = [ {Name = "Joe"; Age = 20} ; {Name = "Will"; Age = 30} ; {Name = "Joe"; Age = 51}]
+// </Types>
 
-// Before F# 8
+// <Before>
 let beforeThisFeature = 
     people 
     |> List.distinctBy (fun x -> x.Name)
@@ -10,10 +11,11 @@ let beforeThisFeature =
     |> List.map (fun (x,y) -> y)
     |> List.map (fun x -> x.Head.Name)
     |> List.sortBy (fun x -> x.ToString())
+// </Before>
 
 printfn "Before: %A" beforeThisFeature
 
-// With F# 8
+// <After>
 let possibleNow = 
     people 
     |> List.distinctBy _.Name
@@ -21,12 +23,14 @@ let possibleNow =
     |> List.map snd
     |> List.map _.Head.Name
     |> List.sortBy _.ToString()
+// </After>
 
 printfn "After: %A" possibleNow
 
-// Standalone lambda functions
+// <Standalone>
 let ageAccessor : Person -> int = _.Age
 let getNameLength = _.Name.Length
+// </Standalone>
 
 printfn "Age accessor: %d" (ageAccessor people[0])
 printfn "Name length: %d" (getNameLength people[0])

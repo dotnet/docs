@@ -1,6 +1,6 @@
-// Static let in discriminated unions
 open FSharp.Reflection
 
+// <StaticLet>
 type AbcDU = A | B | C
     with   
         static let namesAndValues = 
@@ -13,6 +13,7 @@ type AbcDU = A | B | C
         static member TryParse text = 
             let cnt = System.Threading.Interlocked.Increment(&cnt)
             stringMap.TryGetValue text, sprintf "Parsed %i" cnt
+// </StaticLet>
 
 // Test the functionality
 let result1 = AbcDU.TryParse "A"

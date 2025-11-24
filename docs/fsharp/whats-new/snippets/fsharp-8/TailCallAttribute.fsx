@@ -1,18 +1,18 @@
-// TailCall attribute examples
-
-// This produces a warning - not tail recursive
+// <Classic>
 [<TailCall>]
 let rec factorialClassic n =
     match n with
     | 0u | 1u -> 1u
     | _ -> n * (factorialClassic (n - 1u))
+// </Classic>
 
-// This is tail recursive - no warning
+// <Accumulator>
 [<TailCall>]
 let rec factorialWithAcc n accumulator = 
     match n with
     | 0u | 1u -> accumulator
     | _ -> factorialWithAcc (n - 1u) (n * accumulator)
+// </Accumulator>
 
 // Test both
 let result1 = factorialClassic 5u

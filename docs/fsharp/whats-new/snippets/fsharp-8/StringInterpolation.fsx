@@ -1,18 +1,20 @@
-// Extended string interpolation syntax
 let classAttr = "item-panel"
 
-// Before F# 8 - braces must be doubled
+// <Before>
 let cssOld = $""".{classAttr}:hover {{background-color: #eee;}}"""
+// </Before>
 printfn "CSS Old: %s" cssOld
 
-// With F# 8 - multiple $ signs to define interpolation level
+// <After>
 let cssNew = $$""".{{classAttr}}:hover {background-color: #eee;}"""
+// </After>
 printfn "CSS New: %s" cssNew
 
-// HTML templating with triple $$$
+// <Template>
 let templateNew = $$$"""
 <div class="{{{classAttr}}}">
   <p>{{title}}</p>
 </div>
 """
+// </Template>
 printfn "Template: %s" templateNew

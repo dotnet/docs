@@ -21,37 +21,17 @@ F# 8 introduces a succinct notation for simple lambda functions that access prop
 
 **Before F# 8:**
 
-```fsharp
-type Person = {Name : string; Age : int}
-let people = [ {Name = "Joe"; Age = 20} ; {Name = "Will"; Age = 30} ; {Name = "Joe"; Age = 51}]
+:::code language="fsharp" source="snippets/fsharp-8/PropertyShorthand.fsx" id="Types":::
 
-let beforeThisFeature = 
-    people 
-    |> List.distinctBy (fun x -> x.Name)
-    |> List.groupBy (fun x -> x.Age)
-    |> List.map (fun (x,y) -> y)
-    |> List.map (fun x -> x.Head.Name)
-    |> List.sortBy (fun x -> x.ToString())
-```
+:::code language="fsharp" source="snippets/fsharp-8/PropertyShorthand.fsx" id="Before":::
 
 **With F# 8:**
 
-```fsharp
-let possibleNow = 
-    people 
-    |> List.distinctBy _.Name
-    |> List.groupBy _.Age
-    |> List.map snd
-    |> List.map _.Head.Name
-    |> List.sortBy _.ToString()
-```
+:::code language="fsharp" source="snippets/fsharp-8/PropertyShorthand.fsx" id="After":::
 
 This shorthand works for property access, nested property access, method calls, and indexers. You can also define standalone lambda functions:
 
-```fsharp
-let ageAccessor : Person -> int = _.Age
-let getNameLength = _.Name.Length
-```
+:::code language="fsharp" source="snippets/fsharp-8/PropertyShorthand.fsx" id="Standalone":::
 
 ### Nested record field copy and update
 
@@ -59,30 +39,17 @@ F# 8 extends the copy-and-update syntax for nested records, eliminating the need
 
 **Before F# 8:**
 
-```fsharp
-type SteeringWheel = { Type: string }
-type CarInterior = { Steering: SteeringWheel; Seats: int }
-type Car = { Interior: CarInterior; ExteriorColor: string option }
+:::code language="fsharp" source="snippets/fsharp-8/NestedRecordUpdate.fsx" id="Types":::
 
-let beforeThisFeature x = 
-    { x with Interior = { x.Interior with 
-                            Steering = {x.Interior.Steering with Type = "yoke"}
-                            Seats = 5
-                        }
-    }
-```
+:::code language="fsharp" source="snippets/fsharp-8/NestedRecordUpdate.fsx" id="Before":::
 
 **With F# 8:**
 
-```fsharp
-let withTheFeature x = { x with Interior.Steering.Type = "yoke"; Interior.Seats = 5 }
-```
+:::code language="fsharp" source="snippets/fsharp-8/NestedRecordUpdate.fsx" id="After":::
 
 This syntax also works for anonymous records:
 
-```fsharp
-let alsoWorksForAnonymous (x:Car) = {| x with Interior.Seats = 7; Price = 99_999 |}
-```
+:::code language="fsharp" source="snippets/fsharp-8/NestedRecordUpdate.fsx" id="Anonymous":::
 
 ### while!
 
@@ -127,26 +94,15 @@ F# 8 improves support for interpolated strings, taking inspiration from C# inter
 
 **Before F# 8:**
 
-```fsharp
-let classAttr = "item-panel"
-let cssOld = $""".{classAttr}:hover {{background-color: #eee;}}"""
-```
+:::code language="fsharp" source="snippets/fsharp-8/StringInterpolation.fsx" id="Before":::
 
 **With F# 8:**
 
-```fsharp
-let cssNew = $$""".{{classAttr}}:hover {background-color: #eee;}"""
-```
+:::code language="fsharp" source="snippets/fsharp-8/StringInterpolation.fsx" id="After":::
 
 This is especially useful for HTML templating languages:
 
-```fsharp
-let templateNew = $$$"""
-<div class="{{{classAttr}}}">
-  <p>{{title}}</p>
-</div>
-"""
-```
+:::code language="fsharp" source="snippets/fsharp-8/StringInterpolation.fsx" id="Template":::
 
 For more details, see [New syntax for string interpolation in F# 8](https://devblogs.microsoft.com/dotnet/new-syntax-for-string-interpolation-in-fsharp/).
 
@@ -170,17 +126,15 @@ let renderedText = sprintf fullFormat 0.25 0.75
 
 Numeric literals can now be expressed using existing operators and other literals. The compiler evaluates the expression at compile time.
 
-```fsharp
-let [<Literal>] bytesInKB = 2f ** 10f
-let [<Literal>] bytesInMB = bytesInKB * bytesInKB
-let [<Literal>] bytesInGB = 1 <<< 30
-let [<Literal>] customBitMask = 0b01010101uy
-let [<Literal>] inverseBitMask = ~~~ customBitMask
-```
+:::code language="fsharp" source="snippets/fsharp-8/LiteralArithmetic.fsx" id="Literals":::
 
 Supported operators:
 - Numeric types: `+`, `-`, `*`, `/`, `%`, `&&&`, `|||`, `<<<`, `>>>`, `^^^`, `~~~`, `**`
 - Booleans: `not`, `&&`, `||`
+
+The feature also works for enum values:
+
+:::code language="fsharp" source="snippets/fsharp-8/LiteralArithmetic.fsx" id="Enums":::
 
 ### Type constraint intersection syntax
 
@@ -263,25 +217,9 @@ type Foo =
 
 Interfaces can now declare and implement concrete static members (not to be confused with static abstract members from F# 7).
 
-**Before F# 8:**
-
-```fsharp
-[<Interface>]
-type IDemoableOld =
-    abstract member Show: string -> unit
-
-module IDemoableOld =
-    let autoFormat(a) = sprintf "%A" a
-```
-
 **With F# 8:**
 
-```fsharp
-[<Interface>]
-type IDemoable =
-    abstract member Show: string -> unit
-    static member AutoFormat(a) = sprintf "%A" a
-```
+:::code language="fsharp" source="snippets/fsharp-8/StaticInInterfaces.fsx" id="Interface":::
 
 ### Static let in discriminated unions, records, structs, and types without primary constructors
 
@@ -292,38 +230,13 @@ F# 8 enables `static let`, `static let mutable`, `static do`, and `static member
 - Structs (including `[<Struct>]` unions and records)
 - Types without primary constructors
 
-```fsharp
-open FSharp.Reflection
-
-type AbcDU = A | B | C
-    with   
-        static let namesAndValues = 
-            FSharpType.GetUnionCases(typeof<AbcDU>) 
-            |> Array.map (fun c -> c.Name, FSharpValue.MakeUnion (c,[||]) :?> AbcDU)
-        static let stringMap = namesAndValues |> dict
-        static let mutable cnt = 0
-
-        static do printfn "Init done! We have %i cases" stringMap.Count
-        static member TryParse text = 
-            let cnt = System.Threading.Interlocked.Increment(&cnt)
-            stringMap.TryGetValue text, sprintf "Parsed %i" cnt
-```
+:::code language="fsharp" source="snippets/fsharp-8/StaticLetInDU.fsx" id="StaticLet":::
 
 ### `try-with` within `seq{}`, `[]`, and `[||]` collection expressions
 
 Exception handling is now supported within collection builders.
 
-```fsharp
-let sum =
-    [ for x in [0;1] do       
-            try          
-                yield 1              
-                yield (10/x)    
-                yield 100  
-            with _ ->
-                yield 1000 ]
-    |> List.sum
-```
+:::code language="fsharp" source="snippets/fsharp-8/TryWithInCollections.fsx" id="TryWith":::
 
 This yields the list `[1;1000;1;10;100]`, which sums to 1112.
 
@@ -335,21 +248,9 @@ F# 8 adds many new and improved diagnostic messages.
 
 Use the `[<TailCall>]` attribute to explicitly state your intention of defining a tail-recursive function. The compiler warns you if your function makes non-tail-recursive calls.
 
-```fsharp
-[<TailCall>]
-let rec factorialClassic n =
-    match n with
-    | 0u | 1u -> 1u
-    | _ -> n * (factorialClassic (n - 1u))
-// This produces a warning
+:::code language="fsharp" source="snippets/fsharp-8/TailCallAttribute.fsx" id="Classic":::
 
-[<TailCall>]
-let rec factorialWithAcc n accumulator = 
-    match n with
-    | 0u | 1u -> accumulator
-    | _ -> factorialWithAcc (n - 1u) (n * accumulator)
-// This is a tail call and does NOT produce a warning
-```
+:::code language="fsharp" source="snippets/fsharp-8/TailCallAttribute.fsx" id="Accumulator":::
 
 ### Diagnostics on static classes
 

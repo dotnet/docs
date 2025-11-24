@@ -1,8 +1,9 @@
-// Static members in interfaces
+// <Interface>
 [<Interface>]
 type IDemoable =
     abstract member Show: string -> unit
     static member AutoFormat(a) = sprintf "%A" a
+// </Interface>
 
 // Example implementation
 type MyType() =

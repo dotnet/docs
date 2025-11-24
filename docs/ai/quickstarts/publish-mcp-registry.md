@@ -63,7 +63,7 @@ Use this reference to understand more about the fields:
 | name                | `io.github.contoso/data-mcp`           | Unique identifier for the MCP Server, namespaced using reverse DNS names, **case sensitive**                |
 | version             | `0.1.0-beta`                           | Version of the MCP Server listing<br>Consider using the same version as the MCP Server package on NuGet.org |
 | description         | `Access Contoso data in your AI agent` | Description of your MCP Server, up to 100 characters                                                        |
-| title               | `Contoso Data`                         | Optional: short human readable title, up to 100 characters                                                  |
+| title               | `Contoso Data`                         | Optional: short human-readable title, up to 100 characters                                                  |
 | websiteUrl          | `https://contoso.com/docs/mcp`         | Optional: URL to the server's homepage, documentation, or project website                                   |
 | packages identifier | `Contoso.Data.Mcp`                     | The ID of your MCP Server package on NuGet.org                                                              |
 | packages version    | `0.1.0-beta`                           | The version of your MCP Server package on NuGet.org                                                         |

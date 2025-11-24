@@ -1,7 +1,7 @@
 ---
 title: "Built-in types"
 description: "Learn C# built-in value and reference types"
-ms.date: 03/07/2025
+ms.date: 11/24/2025
 helpviewer_keywords:
   - "types [C#], built-in"
   - "built-in C# types"
@@ -62,7 +62,7 @@ The C# language includes specialized rules for the <xref:System.Span`1?displayPr
 - From `System.ReadOnlySpan<E>` to `System.ReadOnlySpan<U>`, when `E` has a covariance conversion or an identity conversion to `U`
 - From `string` to `System.ReadOnlySpan<char>`
 
-The compiler never ignores any user defined conversion where an applicable *implicit span conversion* exists. Implicit span conversions can be applied to the first argument of [extension methods](../../programming-guide/classes-and-structs/extension-methods.md), the parameter with the `this` modifier. Implicit span conversions aren't considered for method group conversions.
+The compiler never ignores any user defined conversion where an applicable *implicit span conversion* exists. Implicit span conversions can be applied to the first argument of [extension members](../../programming-guide/classes-and-structs/extension-methods.md), the parameter with the `this` modifier. Implicit span conversions aren't considered for method group conversions.
 
 ## See also
 

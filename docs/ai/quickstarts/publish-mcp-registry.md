@@ -5,6 +5,7 @@ ms.date: 11/17/2025
 ms.topic: quickstart
 author: joelverhagen
 zone_pivot_groups: operating-systems-set-one
+ai-usage: ai-assisted
 ---
 
 # Publish an MCP Server on NuGet.org to the Official MCP Registry

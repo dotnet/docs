@@ -223,7 +223,7 @@ This script can be leveraged in a CI/CD pipeline to ensure the next step (publis
    tar xf 'mcp-publisher_darwin_amd64.tar.gz'
 
    # For macOS ARM64
-   tar xf 'mcp-publisher_darwin_amd64.tar.gz'
+   tar xf 'mcp-publisher_darwin_arm64.tar.gz'
    ```
 
    ::: zone-end

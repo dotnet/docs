@@ -57,7 +57,7 @@ You apply one of the following modifiers to a parameter declaration to pass argu
 - [`ref readonly`](#ref-readonly-modifier): The argument must be initialized before calling the method. The method can't assign a new value to the parameter.
 - [`in`](#in-parameter-modifier): The argument must be initialized before calling the method. The method can't assign a new value to the parameter. The compiler might create a temporary variable to hold a copy of the argument to `in` parameters.
 
-A parameter that is passed by reference is a *reference variable*. It doesn't have its own value. Instead, it refers to a different variable called its *referrent*. Reference variables can be [ref reassigned](../operators/assignment-operator.md#ref-assignment), which changes its referrent.
+A parameter that is passed by reference is a *reference variable*. It doesn't have its own value. Instead, it refers to a different variable called its *referent*. Reference variables can be [ref reassigned](../operators/assignment-operator.md#ref-assignment), which changes its referent.
 
 Members of a class can't have signatures that differ only by `ref`, `ref readonly`, `in`, or `out`. A compiler error occurs if the only difference between two members of a type is that one of them has a `ref` parameter and the other has an `out`, `ref readonly`, or `in` parameter. However, methods can be overloaded when one method has a `ref`, `ref readonly`, `in`, or `out` parameter and the other has a parameter that is passed by value, as shown in the following example. In other situations that require signature matching, such as hiding or overriding, `in`, `ref`, `ref readonly`, and `out` are part of the signature and don't match each other.
 

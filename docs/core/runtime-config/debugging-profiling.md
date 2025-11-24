@@ -35,9 +35,9 @@ This article details the settings you can use to configure .NET debugging and pr
 
 - Specifies the GUID of the profiler to load into the currently running process.
 
-| | Setting name | Values |
-| - | - | - |
-| **runtimeconfig.json** | N/A | N/A |
+|                          | Setting name                            | Values        |
+|--------------------------|-----------------------------------------|---------------|
+| **runtimeconfig.json**   | N/A                                     | N/A           |
 | **Environment variable** | `CORECLR_PROFILER` or `DOTNET_PROFILER` | *string-guid* |
 
 ## Profiler location
@@ -49,11 +49,11 @@ Once profiling is enabled, the profiler can be loaded in two ways: with environm
 - Specifies the path to the profiler DLL to load into the currently running process (or 32-bit or 64-bit process).
 - If more than one variable is set, the bitness-specific variables take precedence. They specify which bitness of profiler to load.
 
-| | Setting name | Values |
-| - | - | - |
-| **Environment variable** | `CORECLR_PROFILER_PATH` or `DOTNET_PROFILER_PATH` | *string-path* |
-| **Environment variable** | `CORECLR_PROFILER_PATH_32` or `DOTNET_PROFILER_PATH_32` | *string-path* |
-| **Environment variable** | `CORECLR_PROFILER_PATH_64` or `DOTNET_PROFILER_PATH_64` | *string-path* |
+|                          | Setting name                                                  | Values        |
+|--------------------------|---------------------------------------------------------------|---------------|
+| **Environment variable** | `CORECLR_PROFILER_PATH` or `DOTNET_PROFILER_PATH`             | *string-path* |
+| **Environment variable** | `CORECLR_PROFILER_PATH_32` or `DOTNET_PROFILER_PATH_32`       | *string-path* |
+| **Environment variable** | `CORECLR_PROFILER_PATH_64` or `DOTNET_PROFILER_PATH_64`       | *string-path* |
 | **Environment variable** | `CORECLR_PROFILER_PATH_ARM32` or `DOTNET_PROFILER_PATH_ARM32` | *string-path* |
 | **Environment variable** | `CORECLR_PROFILER_PATH_ARM64` or `DOTNET_PROFILER_PATH_ARM64` | *string-path* |
 

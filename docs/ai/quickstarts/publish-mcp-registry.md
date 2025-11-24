@@ -182,7 +182,7 @@ This script can be leveraged in a CI/CD pipeline to ensure the next step (publis
 1. Download the `mcp-publisher-*.tar.gz` file from the Official MCP Registry GitHub repository that matches your CPU architecture.
    ::: zone pivot="os-windows"
    - Windows x64: [mcp-publisher_windows_amd64.tar.gz](https://github.com/modelcontextprotocol/registry/releases/latest/download/mcp-publisher_windows_amd64.tar.gz)
-   - Windows Arm64: [mcp-publisher_windows_arm64.tar.gz](https://github.com/modelcontextprotocol/registry/releases/latest/download/mcp-publisher_windows_amd64.tar.gz)
+   - Windows Arm64: [mcp-publisher_windows_arm64.tar.gz](https://github.com/modelcontextprotocol/registry/releases/latest/download/mcp-publisher_windows_arm64.tar.gz)
    ::: zone-end
    ::: zone pivot="os-linux"
    - Linux x64: [mcp-publisher_linux_amd64.tar.gz](https://github.com/modelcontextprotocol/registry/releases/latest/download/mcp-publisher_linux_amd64.tar.gz)

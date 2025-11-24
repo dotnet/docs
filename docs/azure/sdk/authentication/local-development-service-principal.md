@@ -38,4 +38,4 @@ During local development, environment variables are set with the application ser
 
 [!INCLUDE [auth-set-environment-variables](~/azure-dev-docs-pr/articles/includes/authentication/includes/auth-set-environment-variables.md)]
 
-[!INCLUDE [Implement Service Principal](<~/azure-dev-docs-pr/articles/includes/authentication/includes/implement-service-principal.md>)]
+[!INCLUDE [Implement Service Principal](../includes/implement-service-principal.md)]

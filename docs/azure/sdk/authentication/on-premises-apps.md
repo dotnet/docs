@@ -68,4 +68,4 @@ Next, determine what roles (permissions) your app needs on what resources and as
 
 [!INCLUDE [auth-set-environment-variables](~/azure-dev-docs-pr/articles/includes/authentication/includes/auth-set-environment-variables.md)]
 
-[!INCLUDE [implement-service-principal](~/azure-dev-docs-pr/articles/includes/authentication/includes/implement-service-principal.md)]
+[!INCLUDE [implement-service-principal](../includes/implement-service-principal.md)]

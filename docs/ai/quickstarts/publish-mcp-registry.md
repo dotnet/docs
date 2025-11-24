@@ -154,7 +154,7 @@ Because your README.md now has an `mcp-name` declared in it, publish the latest 
 
 NuGet.org performs validations against your package before making it available so you must wait to publish your MCP server to the Official MCP Registry since it verifies that the package is accessible.
 
-To wait for your package to become available, either continue to periodically refresh the package details page on NuGet.org until the validating message disappears, or by use the following PowerShell script to poll for availability.
+To wait for your package to become available, either continue to periodically refresh the package details page on NuGet.org until the validating message disappears, or use the following PowerShell script to poll for availability.
 
 ```powershell
 $id = "<your NuGet package ID here>".ToLowerInvariant()

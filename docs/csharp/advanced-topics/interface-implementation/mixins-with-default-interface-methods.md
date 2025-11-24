@@ -40,7 +40,7 @@ Some of these extended capabilities could be emulated in devices that support th
 
 Default interface members provide a better solution for this scenario than extension members. Class authors can control which interfaces they choose to implement. Those interfaces they choose are available as methods. In addition, because default interface methods are virtual by default, the method dispatch always chooses the implementation in the class.
 
-Let's create the code that demonstrates these differences.
+Let's create the code to demonstrate these differences.
 
 ## Create interfaces
 
@@ -106,7 +106,7 @@ The following code in your `Main` method creates each light type in sequence and
 
 ## How the compiler determines best implementation
 
-This scenario shows a base interface without any implementations. Adding a method into the `ILight` interface introduces new complexities. The language rules governing default interface methods minimize the effect on the concrete classes that implement multiple derived interfaces. Let's enhance the original interface with a new method that shows how that changes its use. Every indicator light can report its power status as an enumerated value:
+This scenario shows a base interface without any implementations. Adding a method into the `ILight` interface introduces new complexities. The language rules governing default interface methods minimize the effect on the concrete classes that implement multiple derived interfaces. Let's enhance the original interface with a new method to show how that changes its use. Every indicator light can report its power status as an enumerated value:
 
 :::code language="csharp" source="./snippets/mixins-with-default-interface-methods/ILight.cs" id="SnippetPowerStatus":::
 

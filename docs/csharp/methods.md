@@ -22,7 +22,7 @@ Methods are declared in a `class`, `record`, or `struct` by specifying:
 - The method name.
 - Any method parameters. Method parameters are enclosed in parentheses and are separated by commas. Empty parentheses indicate that the method requires no parameters.
 
-These parts together comprise the method signature.
+These parts together form the method signature.
 
 > [!IMPORTANT]
 > A return type of a method isn't part of the signature of the method for the purposes of method overloading. However, it's part of the signature of the method when determining the compatibility between a delegate and the method that it points to.

@@ -118,7 +118,7 @@ foreach (var item in collection) { }
 ```
 
 > [!NOTE]
-> The compiler infers `var` declarations as nullable reference types, depending on whether the [nullable aware context](../../language-reference/builtin-types/nullable-reference-types.md) is enabled and whether the type of an initialization expression is a reference type.
+> The type of a `var` declaration can be inferred by the compiler as a nullable reference type, depending on whether the [nullable aware context](../../language-reference/builtin-types/nullable-reference-types.md) is enabled and whether the type of an initialization expression is a reference type.
 > For more information, see [Implicitly-typed local variables](./declarations.md#implicitly-typed-local-variables).
 
 You can also explicitly specify the type of an iteration variable, as the following code shows:

@@ -47,7 +47,7 @@ C# allows implicit conversions from the literal value `0` to any enum type, and 
 
 :::code language="csharp" source="snippets/shared/EnumType.cs" id="SnippetZeroConversions":::
 
-In the preceding example, both `port1` and `port2` are assigned to the value `0`, but `GpioPort` has no member with that value. The <xref:System.Enum.IsDefined%2A?displayProperty=nameWithType> method confirms that 0 is an invalid enum value.
+In the preceding example, both `port1` and `port2` are assigned to the value `0`, but `GpioPort` has no member with that value. The <xref:System.Enum.IsDefined%2A?displayProperty=nameWithType> method confirms these are invalid enum values.
 
 This implicit conversion exists because the 0-bit pattern is the default for all struct types, including all enum types. However, it can introduce bugs in your code. To avoid these issues:
 
@@ -67,7 +67,7 @@ For more information and examples, see the <xref:System.FlagsAttribute?displayPr
 
 ## The System.Enum type and enum constraint
 
-The <xref:System.Enum?displayProperty=nameWithType> type is the abstract base class of all enumeration types. It provides many methods to get information about an enumeration type and its values. For more information and examples, see the <xref:System.Enum?displayProperty=nameWithType> API reference page.
+The <xref:System.Enum?displayProperty=nameWithType> type is the abstract base class of all enumeration types. It provides a number of methods to get information about an enumeration type and its values. For more information and examples, see the <xref:System.Enum?displayProperty=nameWithType> API reference page.
 
 You can use `System.Enum` in a base class constraint (that is known as the [enum constraint](../../programming-guide/generics/constraints-on-type-parameters.md#enum-constraints)) to specify that a type parameter is an enumeration type. Any enumeration type also satisfies the `struct` constraint, which is used to specify that a type parameter is a non-nullable value type.
 

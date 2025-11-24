@@ -1,7 +1,7 @@
 ---
 title: "Deconstruction expression - extract properties or fields from a tuple or other type"
 description: "Learn about deconstruction expressions: expressions that extract individual properties or fields from a tuple or user defined type into discrete expressions."
-ms.date: 11/24/2024
+ms.date: 11/24/2025
 ---
 # Deconstruction expression - Extract properties of fields from a tuple or other user-defined type
 

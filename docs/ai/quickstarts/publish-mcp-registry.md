@@ -118,7 +118,7 @@ The Official MCP Registry verifies that your MCP Server package references the `
 
 ## Publish your MCP Server package to NuGet.org
 
-Because your README now has an `mcp-name` declared in it, publish the latest package to NuGet.org.
+Because your README.md now has an `mcp-name` declared in it, publish the latest package to NuGet.org.
 
 1. If needed, update your package version and the respective version strings in your `server.json`.
 2. Pack your project so the latest README version is contained.

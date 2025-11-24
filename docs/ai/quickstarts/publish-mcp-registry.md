@@ -102,7 +102,7 @@ The Official MCP Registry verifies that your MCP Server package references the `
    ```
 
    ::: zone-end
-3. Add the following line to your README. It can be anywhere, since it will be invisible (an HTML comment).
+3. Add the following line to your README.md. Since it is enclosed in an HTML comment, it can be anywhere and won't be rendered.
 
    ```markdown
    <!-- mcp-name: [name property from the server.json] -->

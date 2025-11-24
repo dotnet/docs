@@ -262,8 +262,8 @@ For more information about where reference variables are allowed, see [Method pa
 
 The `unscoped` qualifier on `ref` parameters isn't allowed in some locations:
 
-- **CS9101**:  *UnscopedRefAttribute can only be applied to struct instance or virtual interface methods and properties, and cannot be applied to constructors or  or init-only members.*
-- **CS9102**:  *UnscopedRefAttribute cannot be applied to an interface implementation because implemented member doesn't have this attribute..*
+- **CS9101**:  *UnscopedRefAttribute can only be applied to struct instance or virtual interface methods and properties, and cannot be applied to constructors or init-only members.*
+- **CS9102**:  *UnscopedRefAttribute cannot be applied to an interface implementation because implemented member doesn't have this attribute.*
 
 To correct these errors:
 

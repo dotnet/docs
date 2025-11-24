@@ -18,7 +18,6 @@ f1_keywords:
   - "CS9089"
   - "CS9090"
   - "CS9091"
-  - "CS9091"
   - "CS9092"
   - "CS9093"
   - "CS9094"
@@ -145,7 +144,7 @@ Warnings:
 To resolve these errors:
 
 - Restructure your code so that the source variable in a ref assignment has an escape scope at least as wide as the destination variable, which ensures the destination reference remains valid for its entire lifetime and prevents dangling references (**CS8374**, **CS9085**).
-- When a variable can only escape the method through a return statement, don't assign it to a `ref` variables accessed through other means. Examples include storing in fields or returning through ref parameters. Those actions violate the restriction that the source can only be used in return statements (**CS9079**, **CS9093**).
+- When a variable can only escape the method through a return statement, don't assign it to `ref` variables accessed through other means. Examples include storing in fields or returning through ref parameters. Those actions violate the restriction that the source can only be used in return statements (**CS9079**, **CS9093**).
 - For ref assignments involving value escape scopes, ensure the source's value escape scope isn't wider than the destination's, because a mismatch would allow you to assign narrower-scoped values through the destination reference, potentially creating references to short-lived values (**CS9096**, **CS9097**).
 
 For more information about ref safety rules, see the article on [ref returns](../statements/jump-statements.md#ref-returns) and the C# standard section on [ref safe contexts](~/_csharpstandard/standard/variables.md#972-ref-safe-contexts).

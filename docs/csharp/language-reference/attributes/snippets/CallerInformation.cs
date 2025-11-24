@@ -56,13 +56,13 @@ internal class CallerInformation
 public static class Extensions
 {
     // <ExtensionMethod>
-    extension(IEnumerable<T> sequence)
+    extension<T>(IEnumerable<T> sequence)
     {
-        public static IEnumerable<T> Sample<T>(int frequency, 
+        public IEnumerable<T> Sample(int frequency, 
             [CallerArgumentExpression(nameof(sequence))] string? message = null)
         {
             if (sequence.Count() < frequency)
-                throw new ArgumentException($"Expression doesn't have enough elements: {message}", nameof(sequence));
+                throw new InvalidOperationException($"Expression doesn't have enough elements: {message}");
             int i = 0;
             foreach (T item in sequence)
             {

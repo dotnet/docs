@@ -114,7 +114,7 @@ The Official MCP Registry verifies that your MCP Server package references the `
    <!-- mcp-name: io.github.contoso/data-mcp -->
    ```
 
-4. Save the README file.
+4. Save the README.md file.
 
 ## Publish your MCP Server package to NuGet.org
 

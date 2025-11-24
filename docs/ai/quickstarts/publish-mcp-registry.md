@@ -79,7 +79,7 @@ The `name` field has two parts, separated by a forward slash `/`. The first part
 
 The Official MCP Registry verifies that your MCP Server package references the `name` specified in your `server.json` file.
 
-1. If you haven't already, add a README to your MCP Server NuGet package. See [how to do this in your project file](/nuget/reference/msbuild-targets#packagereadmefile).
+1. If you haven't already, add a README.md to your MCP Server NuGet package. See [how to do this in your project file](/nuget/reference/msbuild-targets#packagereadmefile).
 2. Open the README.md used by your NuGet package.
    ::: zone pivot="os-windows"
 

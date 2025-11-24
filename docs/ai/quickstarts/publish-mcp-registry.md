@@ -186,7 +186,7 @@ This script can be leveraged in a CI/CD pipeline to ensure the next step (publis
    ::: zone-end
    ::: zone pivot="os-linux"
    - Linux x64: [mcp-publisher_linux_amd64.tar.gz](https://github.com/modelcontextprotocol/registry/releases/latest/download/mcp-publisher_linux_amd64.tar.gz)
-   - Linux Arm64: [mcp-publisher_linux_amd64.tar.gz](https://github.com/modelcontextprotocol/registry/releases/latest/download/mcp-publisher_linux_amd64.tar.gz)
+   - Linux Arm64: [mcp-publisher_linux_arm64.tar.gz](https://github.com/modelcontextprotocol/registry/releases/latest/download/mcp-publisher_linux_arm64.tar.gz)
    ::: zone-end
    ::: zone pivot="os-macos"
    - macOS x64: [mcp-publisher_darwin_amd64.tar.gz](https://github.com/modelcontextprotocol/registry/releases/latest/download/mcp-publisher_darwin_amd64.tar.gz)

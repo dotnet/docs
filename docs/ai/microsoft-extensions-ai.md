@@ -15,23 +15,3 @@ Microsoft.Extensions.AI is a set of core .NET libraries developed in collaborati
 
 This article introduces the libraries and provides guidance on both existing and experimental functionality.
 
-## Overview
-
-The Microsoft.Extensions.AI libraries enable:
-
-- Consistent APIs for AI services
-- Cross-provider compatibility
-- Middleware pipelines for telemetry, caching, tooling, etc.
-- Familiar .NET dependency injection patterns
-
-## Installation
-
-Install the main packages from NuGet:
-
-```bash
-dotnet add package Microsoft.Extensions.AI
-dotnet add package Microsoft.Extensions.AI.Abstractions
-// TODO: Add Chat Reduction example
-// TODO: Add Tool Reduction example
-// TODO: Add Image Generation example
-// TODO: Add Data Ingestion example

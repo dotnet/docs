@@ -61,7 +61,7 @@ mpgo -Scenario <packageName> -AppID <appId> -Timeout <seconds>
 
 ## Remarks
 
- You can use both `-AssemblyList` and `- AssemblyListFile` multiple times on the command line.
+ You can use both `-AssemblyList` and `-AssemblyListFile` multiple times on the command line.
 
  If you do not specify full path names when specifying assemblies, Mpgo.exe looks in the current directory. If you specify an incorrect path, Mpgo.exe displays an error message but continues to generate data for other assemblies. If you specify an assembly that is not loaded during the training scenario, no training data is generated for that assembly.
 

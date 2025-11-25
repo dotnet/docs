@@ -147,11 +147,11 @@ Complete the following steps:
 
     - A `DefaultAzureCredential` instance optimized for local development. This example sets environment variable `AZURE_TOKEN_CREDENTIALS` to `dev`. For more information, see [Exclude a credential type category](credential-chains.md#exclude-a-credential-type-category).
 
-    :::code language="csharp" source="../snippets/authentication/local-dev-account/Program.cs" id="snippet_DefaultAzureCredentialDev":::
+      :::code language="csharp" source="../snippets/authentication/local-dev-account/Program.cs" id="snippet_DefaultAzureCredentialDev":::
 
     - An instance of a credential corresponding to a specific development tool, such as `VisualStudioCredential`.
 
-     :::code language="csharp" source="../snippets/authentication/local-dev-account/Program.cs" id="snippet_VisualStudioCredential":::
+      :::code language="csharp" source="../snippets/authentication/local-dev-account/Program.cs" id="snippet_VisualStudioCredential":::
 
-        > [!TIP]
-        > If your team uses multiple development tools to authenticate to Azure, use `DefaultAzureCredential` instead of a specific development tool credential.
+    > [!TIP]
+    > When your team uses multiple development tools to authenticate with Azure, prefer a local development-optimized instance of `DefaultAzureCredential` over tool-specific credentials.

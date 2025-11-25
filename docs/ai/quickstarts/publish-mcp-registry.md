@@ -10,7 +10,7 @@ ai-usage: ai-assisted
 
 # Publish an MCP Server on NuGet.org to the Official MCP Registry
 
-In this quickstart, you will publish your NuGet-based local MCP Server to the [Official MCP Registry](https://github.com/modelcontextprotocol/registry/blob/main/docs/explanations/ecosystem-vision.md).
+In this quickstart, you publish your NuGet-based local MCP Server to the [Official MCP Registry](https://github.com/modelcontextprotocol/registry/blob/main/docs/explanations/ecosystem-vision.md).
 
 > [!NOTE]
 > This guide focuses on publishing **local MCP servers** packaged with NuGet that use the stdio transport. The Official MCP Registry also supports **remote MCP servers** that use HTTP transports. While the `server.json` publishing process is similar for remote servers, their configuration differs as they don't require package managers. Remote servers can be implemented in any language since implementation details are transparent to consumers. See [an Azure Functions code sample for a .NET remote MCP server](/samples/azure-samples/remote-mcp-functions-dotnet/remote-mcp-functions-dotnet/).

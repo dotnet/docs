@@ -137,20 +137,21 @@ Complete the following steps:
     dotnet add package Microsoft.Extensions.Azure
     ```
 
-1. In `Program.cs`, complete the following steps:
-    1. Add `using` directives for the `Azure.Identity` and `Microsoft.Extensions.Azure` namespaces.
-    1. Register the Azure service client using the corresponding `Add`-prefixed extension method.
+1. In `Program.cs`, add `using` directives for the `Azure.Identity` and `Microsoft.Extensions.Azure` namespaces.
 
-       Azure services are accessed using specialized client classes from the Azure SDK client libraries. Register these client types so you can access them through dependency injection across your app.
+1. Register the Azure service client using the corresponding `Add`-prefixed extension method.
 
-    1. Pass a `TokenCredential` instance to the `UseCredential` method. A couple common `TokenCredential` examples include:
-        - A `DefaultAzureCredential` instance optimized for local development. This example sets environment variable `AZURE_TOKEN_CREDENTIALS` to `dev`. For more information, see [Exclude a credential type category](credential-chains.md#exclude-a-credential-type-category).
+    Azure services are accessed using specialized client classes from the Azure SDK client libraries. Register these client types so you can access them through dependency injection across your app.
 
-            :::code language="csharp" source="../snippets/authentication/local-dev-account/Program.cs" id="snippet_DefaultAzureCredentialDev":::
+1. Pass a `TokenCredential` instance to the `UseCredential` method. A couple common `TokenCredential` examples include:
 
-        - An instance of a credential corresponding to a specific development tool, such as `VisualStudioCredential`.
+    - A `DefaultAzureCredential` instance optimized for local development. This example sets environment variable `AZURE_TOKEN_CREDENTIALS` to `dev`. For more information, see [Exclude a credential type category](credential-chains.md#exclude-a-credential-type-category).
 
-            :::code language="csharp" source="../snippets/authentication/local-dev-account/Program.cs" id="snippet_VisualStudioCredential":::
+    :::code language="csharp" source="../snippets/authentication/local-dev-account/Program.cs" id="snippet_DefaultAzureCredentialDev":::
+
+    - An instance of a credential corresponding to a specific development tool, such as `VisualStudioCredential`.
+
+     :::code language="csharp" source="../snippets/authentication/local-dev-account/Program.cs" id="snippet_VisualStudioCredential":::
 
         > [!TIP]
         > If your team uses multiple development tools to authenticate to Azure, use `DefaultAzureCredential` instead of a specific development tool credential.

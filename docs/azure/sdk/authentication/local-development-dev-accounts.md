@@ -130,7 +130,7 @@ The [Azure Identity library](/dotnet/api/azure.identity?view=azure-dotnet&preser
 
 Complete the following steps:
 
-1. Install the [Azure.Identity](https://www.nuget.org/packages/Azure.Identity) and the [Microsoft.Extensions.Azure](https://www.nuget.org/packages/Microsoft.Extensions.Azure) packages in your project:
+1. Add references to the [Azure.Identity](https://www.nuget.org/packages/Azure.Identity) and the [Microsoft.Extensions.Azure](https://www.nuget.org/packages/Microsoft.Extensions.Azure) packages in your project:
 
     ```dotnetcli
     dotnet add package Azure.Identity

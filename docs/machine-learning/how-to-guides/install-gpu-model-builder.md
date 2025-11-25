@@ -27,8 +27,10 @@ Learn how to install the GPU drivers to use your GPU with Model Builder.
 - NVIDIA developer account. If you don't have one, [create a free account](https://developer.nvidia.com/developer-program).
 - Install dependencies:
 
-  - Install [CUDA **v11.8 or later**](https://developer.nvidia.com/cuda-downloads).  
-    > ⚠️ **Important:** Using older CUDA versions such as 10.1 may cause *"no kernel found"* or similar errors when running object detection models in Model Builder.  
+  - Install [CUDA **v11.8 or later**](https://developer.nvidia.com/cuda-downloads).
+
+    > [!NOTE]
+    > Using older CUDA versions such as 10.1 may cause *"no kernel found"* or similar errors when running object detection models in Model Builder.  
     > CUDA 11.8 or newer provides better compatibility with the TensorFlow GPU runtime used by Model Builder.
 
   - Install the corresponding **cuDNN** library version for your installed CUDA version from the [cuDNN archive](https://developer.nvidia.com/rdp/cudnn-archive).  
@@ -37,7 +39,9 @@ Learn how to install the GPU drivers to use your GPU with Model Builder.
     to  
     `\<YOUR_DRIVE>\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.x\bin`.
 
-> ✅ **Tip:** You cannot have multiple versions of cuDNN installed simultaneously. Ensure only one version matching your CUDA installation is present in your system path.
+    > [!TIP]
+    > You cannot have multiple versions of cuDNN installed simultaneously.  
+    > Ensure only one version matching your CUDA installation is present in your system path.
 
 ---
 

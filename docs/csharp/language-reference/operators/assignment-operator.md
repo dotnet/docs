@@ -43,7 +43,7 @@ In the preceding example, the [local reference variable](../statements/declarati
 
 The left-hand operand of `ref` assignment can be a [local reference variable](../statements/declarations.md#reference-variables), a [`ref` field](../builtin-types/ref-struct.md#ref-fields), and a [`ref`](../keywords/ref.md), [`out`](../keywords/method-parameters.md#out-parameter-modifier), or [`in`](../keywords/method-parameters.md#in-parameter-modifier) method parameter. Both operands must be of the same type.
 
-A `ref` assignment means that a reference variable has a different referrent. It's no longer referring to its previous referrent. Using `ref =` on a `ref` parameter means the parameter no longer refers to its argument. Any actions that modify the state of the object after ref reassigning it make those modifications to the new item. For example, consider the following method:
+A `ref` assignment means that a reference variable has a different referent. It's no longer referring to its previous referent. Using `ref =` on a `ref` parameter means the parameter no longer refers to its argument. Any actions that modify the state of the object after ref reassigning it make those modifications to the new item. For example, consider the following method:
 
 :::code language="csharp" source="snippets/shared/AssignmentOperator.cs" id="SnippetRefReassignAndModify":::
 

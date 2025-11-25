@@ -16,7 +16,7 @@ Running `dotnet test --collect:"Code Coverage"` now disables dynamic native inst
 
 ## Previous behavior
 
-Previously, dynamic native instrumentation was enabled by default and used a fallback for native modules when static native instrumentation couldn't be used. This behavior is described in [Static and dynamic native instrumentation](/visualstudio/test/customizing-code-coverage-analysis?view=vs-2022#static-and-dynamic-native-instrumentation).
+Previously, dynamic native instrumentation was enabled by default and used a fallback for native modules when static native instrumentation couldn't be used. This behavior is described in [Static and dynamic native instrumentation](/visualstudio/test/customizing-code-coverage-analysis#static-and-dynamic-native-instrumentation).
 
 ```bash
 dotnet test --collect:"Code Coverage"

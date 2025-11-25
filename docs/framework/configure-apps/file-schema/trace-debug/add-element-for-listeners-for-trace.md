@@ -78,7 +78,9 @@ Adds a listener to the **Listeners** collection.
 |<xref:System.Diagnostics.EventLogTraceListener?displayProperty=nameWithType>|The name of the name of an existing event log source.|  
 |<xref:System.Diagnostics.EventSchemaTraceListener?displayProperty=nameWithType>|The name of the file that the <xref:System.Diagnostics.EventSchemaTraceListener> writes to.|  
 |<xref:System.Diagnostics.TextWriterTraceListener?displayProperty=nameWithType>|The name of the file that the <xref:System.Diagnostics.TextWriterTraceListener> writes to.|  
-|<xref:System.Diagnostics.XmlWriterTraceListener?displayProperty=nameWithType>|The name of the file that the <xref:System.Diagnostics.XmlWriterTraceListener> writes to.|  
+|<xref:System.Diagnostics.XmlWriterTraceListener?displayProperty=nameWithType>|The name of the file that the <xref:System.Diagnostics.XmlWriterTraceListener> writes to.|
+|xref:System.Diagnostics.DefaultTraceListener?displayProperty=nameWithType|The default trace listener that outputs messages to the Visual Studio Output window or debugger. This listener is automatically included in the `Trace.Listeners` collection unless explicitly removed in the configuration.|
+
   
 ## Example  
 

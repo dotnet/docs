@@ -2,6 +2,7 @@
 title: dotnet project convert command
 description: The 'dotnet project convert' command converts a file-based program to a project-based program.
 ms.date: 10/25/2025
+ai-usage: ai-assisted
 ---
 # dotnet project convert
 

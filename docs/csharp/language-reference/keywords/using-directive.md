@@ -116,7 +116,7 @@ By eliminating the need to explicitly reference the <xref:System.Math> class eac
 
 `using static` imports only accessible static members and nested types declared in the specified type. Inherited members aren't imported. You can import from any named type with a `using static` directive, including Visual Basic modules. If F# top-level functions appear in metadata as static members of a named type whose name is a valid C# identifier, then the F# functions can be imported.
 
-`using static` makes extension members declared in the specified type available for extension method lookup. However, the names of the extension members aren't imported into scope for unqualified reference in code.
+`using static` makes extension members declared in the specified type available for extension member lookup. However, the names of the extension members aren't imported into scope for unqualified reference in code.
 
 Methods with the same name imported from different types by different `using static` directives in the same compilation unit or namespace form a method group. Overload resolution within these method groups follows normal C# rules.
 

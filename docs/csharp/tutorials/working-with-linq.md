@@ -4,7 +4,6 @@ description: This tutorial teaches you how to generate sequences with LINQ, writ
 ms.date: 11/25/2025
 ms.subservice: csharp-linq
 ---
-
 # Work with Language-Integrated Query (LINQ)
 
 ## Introduction
@@ -29,7 +28,7 @@ This tutorial has multiple steps. After each step, you can run the application a
 
 ## Create the Application
 
-The first step is to create a new application. Open a command prompt and create a new directory for your application. Make that the current directory. Type the command `dotnet new console` at the command prompt. This creates the starter files for a basic "Hello World" application.
+The first step is to create a new application. Open a command prompt and create a new directory for your application. Make that the current directory. Type the command `dotnet new console -o LinqFaroShuffle` at the command prompt. This creates the starter files for a basic "Hello World" application.
 
 If you've never used C# before, [this tutorial](console-teleprompter.md) explains the structure of a C# program. You can read that and then return here to learn more about LINQ.
 
@@ -38,13 +37,13 @@ If you've never used C# before, [this tutorial](console-teleprompter.md) explain
 > [!TIP]
 > For this tutorial, you can organize your code in a namespace called `LinqFaroShuffle` to match the sample code, or you can use the default global namespace. If you choose to use a namespace, make sure all your classes and methods are consistently within the same namespace, or add appropriate `using` statements as needed.
 
-Now that you have all of the references that you'll need, consider what constitutes a deck of cards. Commonly, a deck of playing cards has four suits, and each suit has thirteen values. Normally, you might consider creating a `Card` class right off the bat and populating a collection of `Card` objects by hand. With LINQ, you can be more concise than the usual way of dealing with creating a deck of cards. Instead of creating a `Card` class, you can create two sequences to represent suits and ranks, respectively. You'll create a really simple pair of [*iterator methods*](../iterators.md#enumeration-sources-with-iterator-methods) that will generate the ranks and suits as <xref:System.Collections.Generic.IEnumerable%601>s of strings:
+Consider what constitutes a deck of cards. Commonly, a deck of playing cards has four suits, and each suit has thirteen values. Normally, you might consider creating a `Card` class right off the bat and populating a collection of `Card` objects by hand. With LINQ, you can be more concise than the usual way of dealing with creating a deck of cards. Instead of creating a `Card` class, you can create two sequences to represent suits and ranks, respectively. You'll create a really simple pair of [*iterator methods*](../iterators.md#enumeration-sources-with-iterator-methods) that will generate the ranks and suits as <xref:System.Collections.Generic.IEnumerable%601>s of strings:
 
 :::code source="snippets/console-linq/InterimSteps.cs" id="StepOne":::
 
 Place these underneath the `Console.WriteLine` statement in your `Program.cs` file. These two methods both utilize the `yield return` syntax to produce a sequence as they run. The compiler builds an object that implements <xref:System.Collections.Generic.IEnumerable%601> and generates the sequence of strings as they are requested.
 
-Now, use these iterator methods to create the deck of cards. You'll place the LINQ query in our `Main` method. Here's a look at it:
+Now, use these iterator methods to create the deck of cards. You'll place the LINQ query at the top of the `Program.cs` file. Here's a look at it:
 
 :::code source="snippets/console-linq/InterimSteps.cs" id="StepTwo":::
 
@@ -79,14 +78,15 @@ Give your extension methods a new home by adding a new *static* class file to yo
 > [!NOTE]
 > If you're using an editor other than Visual Studio (such as Visual Studio Code), you might need to add `using LinqFaroShuffle;` to the top of your _Program.cs_ file for the extension methods to be accessible. Visual Studio automatically adds this using statement, but other editors might not.
 
-TODO:REWRITE FOR NEW EXTENSIONS
-Look at the method signature for a moment, specifically the parameters:
+The `extension` container specifies the type being extended. It `extension` node declares the type and name of the *receiver parameter* for all members inside the `extension` container. In this example, you're extending `IEnumerable<T>`, and the parameter is named `sequence`.
+
+Extension member declarations appear as though they are members of the receiver type:
 
 ```csharp
-public static IEnumerable<T> InterleaveSequenceWith<T> (this IEnumerable<T> first, IEnumerable<T> second)
+public IEnumerable<T> InterleaveSequenceWith(IEnumerable<T> second)
 ```
 
-You can see the addition of the `this` modifier on the first argument to the method. That means you call the method as though it were a member method of the type of the first argument. This method declaration also follows a standard idiom where the input and output types are `IEnumerable<T>`. That practice enables LINQ methods to be chained together to perform more complex queries.
+ThatYou call the method as though it were a member method of the extended type. This method declaration also follows a standard idiom where the input and output types are `IEnumerable<T>`. That practice enables LINQ methods to be chained together to perform more complex queries.
 
 Naturally, since you split the deck into halves, you'll need to join those halves together. In code, this means you'll be enumerating both of the sequences you acquired through <xref:System.Linq.Enumerable.Take%2A> and <xref:System.Linq.Enumerable.Skip%2A> at once, *`interleaving`* the elements, and creating one sequence: your now-shuffled deck of cards. Writing a LINQ method that works with two sequences requires that you understand how <xref:System.Collections.Generic.IEnumerable%601> works.
 

@@ -124,7 +124,7 @@ Connect-AzAccount -UseDeviceAuthentication
 
 ## Authenticate to Azure services from your app
 
-The [Azure Identity library](/dotnet/api/azure.identity?view=azure-dotnet&preserve-view=true) provides *credentials*&mdash;implementations of <xref:Azure.Core.TokenCredential> that support different scenarios and Microsoft Entra authentication flows. The steps ahead demonstrate how to use <xref:Azure.Identity.DefaultAzureCredential> or a specific development tool credential when working with user accounts locally.
+The [Azure Identity library](/dotnet/api/azure.identity?view=azure-dotnet&preserve-view=true) provides implementations of <xref:Azure.Core.TokenCredential> that support various scenarios and Microsoft Entra authentication flows. The steps ahead demonstrate how to use <xref:Azure.Identity.DefaultAzureCredential> or a specific development tool credential when working with user accounts locally.
 
 ### Implement the code
 
@@ -143,7 +143,7 @@ Complete the following steps:
 
     Azure services are accessed using specialized client classes from the Azure SDK client libraries. Register these client types so you can access them through dependency injection across your app.
 
-1. Pass a `TokenCredential` instance to the `UseCredential` method. A couple common `TokenCredential` examples include:
+1. Pass a `TokenCredential` instance to the `UseCredential` method. Common `TokenCredential` examples include:
 
     - A `DefaultAzureCredential` instance optimized for local development. This example sets environment variable `AZURE_TOKEN_CREDENTIALS` to `dev`. For more information, see [Exclude a credential type category](credential-chains.md#exclude-a-credential-type-category).
 

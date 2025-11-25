@@ -30,14 +30,14 @@ This makes the transition seamless, from a single file to a fully functional, bu
 
 The command performs the following operations:
 
-1. Creates a new directory named after the input file (without extension)
-2. Generates a *.csproj* file with appropriate SDK and properties
-3. Moves the source code to a file with the same name as the input file
-4. Removes `#:` directives from the source code
-5. Translates `#:sdk` directives: the first `#:sdk` directive becomes the `<Project Sdk="Sdk.Id">` or `<Project Sdk="Sdk.Id/version">` attribute, and any additional `#:sdk` directives become `<Sdk Name="Sdk.Id" />` or `<Sdk Name="Sdk.Id" Version="version" />` elements
-6. Translates `#:package` directives to `<PackageReference>` elements in the project file
-7. Translates `#:property` directives to MSBuild properties in the project file
-8. Sets appropriate MSBuild properties based on the SDK and framework detected
+1. Creates a new directory named after the input file (without extension).
+2. Generates a *.csproj* file with appropriate SDK and properties.
+3. Moves the source code to a file with the same name as the input file.
+4. Removes `#:` directives from the source code.
+5. Translates `#:sdk` directives: the first `#:sdk` directive becomes the `<Project Sdk="Sdk.Id">` or `<Project Sdk="Sdk.Id/version">` attribute, and any additional `#:sdk` directives become `<Sdk Name="Sdk.Id" />` or `<Sdk Name="Sdk.Id" Version="version" />` elements.
+6. Translates `#:package` directives to `<PackageReference>` elements in the project file.
+7. Translates `#:property` directives to MSBuild properties in the project file.
+8. Sets appropriate MSBuild properties based on the SDK and framework detected.
 
 ## Arguments
 
@@ -134,5 +134,5 @@ The command performs the following operations:
 - [dotnet build](dotnet-build.md)
 - [dotnet run](dotnet-run.md)
 - [dotnet publish](dotnet-publish.md)
-- [Build file-based C# apps](../../csharp/fundamentals/tutorials/file-based-programs.md)
+- [Tutorial: Build file-based C# programs](../../csharp/fundamentals/tutorials/file-based-programs.md)
 

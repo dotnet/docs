@@ -9,9 +9,7 @@ ai-usage: ai-assisted
 
 # Tutorial: Build file-based C# programs
 
-*File-based apps* are programs contained within a single `*.cs` file that are built and run without a corresponding project (`*.csproj`) file. File-based apps are ideal for learning C# because they have less complexity: The entire program is stored in a single file. File-based apps are also useful for building command line utilities. On Unix platforms, file-based apps can be run using `#!` (shebang) [directives](../../language-reference/preprocessor-directives.md)
-.
-
+*File-based apps* are programs contained within a single `*.cs` file that are built and run without a corresponding project (`*.csproj`) file. File-based apps are ideal for learning C# because they have less complexity: The entire program is stored in a single file. File-based apps are also useful for building command line utilities. On Unix platforms, file-based apps can be run using `#!` (shebang) [directives](../../language-reference/preprocessor-directives.md).
 In this tutorial, you:
 
 > [!div class="checklist"]

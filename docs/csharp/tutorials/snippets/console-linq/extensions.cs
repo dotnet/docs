@@ -1,15 +1,13 @@
-﻿using System.Collections.Generic;
-using System.IO;
+﻿namespace LinqFaroShuffle;
 
-namespace LinqFaroShuffle
+public static class CardExtensions
 {
-    public static class Extensions
+    extension<T>(IEnumerable<T> sequence)
     {
-        #region snippet1
-        public static IEnumerable<T> InterleaveSequenceWith<T>
-            (this IEnumerable<T> first, IEnumerable<T> second)
+        // <snippet1>
+        public IEnumerable<T> InterleaveSequenceWith(IEnumerable<T> second)
         {
-            var firstIter = first.GetEnumerator();
+            var firstIter = sequence.GetEnumerator();
             var secondIter = second.GetEnumerator();
 
             while (firstIter.MoveNext() && secondIter.MoveNext())
@@ -18,13 +16,12 @@ namespace LinqFaroShuffle
                 yield return secondIter.Current;
             }
         }
-        #endregion
+        // </snippet1>
 
-        #region snippet2
-        public static bool SequenceEquals<T>
-            (this IEnumerable<T> first, IEnumerable<T> second)
+        // <snippet2>
+        public bool SequenceEquals(IEnumerable<T> second)
         {
-            var firstIter = first.GetEnumerator();
+            var firstIter = sequence.GetEnumerator();
             var secondIter = second.GetEnumerator();
 
             while ((firstIter?.MoveNext() == true) && secondIter.MoveNext())
@@ -37,11 +34,10 @@ namespace LinqFaroShuffle
 
             return true;
         }
-        #endregion
+        // </snippet2>
 
-        #region snippet3
-        public static IEnumerable<T> LogQuery<T>
-            (this IEnumerable<T> sequence, string tag)
+        // <snippet3>
+        public IEnumerable<T> LogQuery(string tag)
         {
             // File.AppendText creates a new file if the file doesn't exist.
             using (var writer = File.AppendText("debug.log"))
@@ -51,6 +47,6 @@ namespace LinqFaroShuffle
 
             return sequence;
         }
-        #endregion
+        // </snippet3>
     }
 }

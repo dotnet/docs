@@ -136,4 +136,3 @@ The command performs the following operations:
 - [dotnet run](dotnet-run.md)
 - [dotnet publish](dotnet-publish.md)
 - [Tutorial: Build file-based C# programs](../../csharp/fundamentals/tutorials/file-based-programs.md)
-

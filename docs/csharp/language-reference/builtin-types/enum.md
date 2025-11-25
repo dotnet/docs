@@ -47,7 +47,7 @@ C# allows implicit conversions from the literal value `0` to any enum type, and 
 
 :::code language="csharp" source="snippets/shared/EnumType.cs" id="SnippetZeroConversions":::
 
-In the preceding example, both `port1` and `port2` are assigned to the value `0`, but `GpioPort` has no member with that value. The <xref:System.Enum.IsDefined%2A?displayProperty=nameWithType> method confirms these are invalid enum values.
+In the preceding example, both `port1` and `port2` are assigned the value `0`, but `GpioPort` has no member with that value. The <xref:System.Enum.IsDefined%2A?displayProperty=nameWithType> method confirms these are invalid enum values.
 
 This implicit conversion exists because the 0-bit pattern is the default for all struct types, including all enum types. However, it can introduce bugs in your code. To avoid these issues:
 

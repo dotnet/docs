@@ -78,7 +78,7 @@ Create a new <xref:Microsoft.CodeAnalysis.CSharp.Syntax.UsingDirectiveSyntax> no
 
 Run the program and look carefully at the output. The `newUsing` hasn't been placed in the root tree. The original tree hasn't been changed.
 
-Add the following code using the <xref:Microsoft.CodeAnalysis.SyntaxNodeExtensions.ReplaceNode%2A> extension member to create a new tree. The new tree is the result of replacing the existing import with the updated `newUsing` node. You assign this new tree to the existing `root` variable:
+Add the following code using the <xref:Microsoft.CodeAnalysis.SyntaxNodeExtensions.ReplaceNode%2A> extension method to create a new tree. The new tree is the result of replacing the existing import with the updated `newUsing` node. You assign this new tree to the existing `root` variable:
 
 [!code-csharp[create a new root tree](../../../../samples/snippets/csharp/roslyn-sdk/SyntaxTransformationQuickStart/ConstructionCS/Program.cs#TransformTree "Create the transformed root tree with the replaced namespace")]
 

@@ -83,7 +83,7 @@ The `foreach` statement executes a statement or a block of statements for each e
 
 The `foreach` statement isn't limited to those types. You can use it with an instance of any type that satisfies the following conditions:
 
-- A type has the public parameterless `GetEnumerator` method. The `GetEnumerator` method can be a type's [extension member](../../programming-guide/classes-and-structs/extension-methods.md).
+- A type has the public parameterless `GetEnumerator` method. The `GetEnumerator` method can be an [extension method](../../programming-guide/classes-and-structs/extension-methods.md).
 - The return type of the `GetEnumerator` method has the public `Current` property and the public parameterless `MoveNext` method whose return type is `bool`.
 
 The following example uses the `foreach` statement with an instance of the <xref:System.Span%601?displayProperty=nameWithType> type, which doesn't implement any interfaces:
@@ -104,10 +104,10 @@ You can use the `await foreach` statement to consume an asynchronous stream of d
 
 You can also use the `await foreach` statement with an instance of any type that satisfies the following conditions:
 
-- A type has the public parameterless `GetAsyncEnumerator` method. That method can be a type's [extension member](../../programming-guide/classes-and-structs/extension-methods.md).
+- A type has the public parameterless `GetAsyncEnumerator` method. That method can be an [extension member](../../programming-guide/classes-and-structs/extension-methods.md).
 - The return type of the `GetAsyncEnumerator` method has the public `Current` property and the public parameterless `MoveNextAsync` method whose return type is [`Task<bool>`](xref:System.Threading.Tasks.Task%601), [`ValueTask<bool>`](xref:System.Threading.Tasks.ValueTask%601), or any other awaitable type whose awaiter's `GetResult` method returns a `bool` value.
 
-By default, stream elements are processed in the captured context. If you want to disable capturing of the context, use the <xref:System.Threading.Tasks.TaskAsyncEnumerableExtensions.ConfigureAwait%2A?displayProperty=nameWithType> extension member. For more information about synchronization contexts and capturing the current context, see [Consuming the Task-based asynchronous pattern](../../../standard/asynchronous-programming-patterns/consuming-the-task-based-asynchronous-pattern.md). For more information about asynchronous streams, see the [Asynchronous streams tutorial](../../asynchronous-programming/generate-consume-asynchronous-stream.md).
+By default, stream elements are processed in the captured context. If you want to disable capturing of the context, use the <xref:System.Threading.Tasks.TaskAsyncEnumerableExtensions.ConfigureAwait%2A?displayProperty=nameWithType> extension method. For more information about synchronization contexts and capturing the current context, see [Consuming the Task-based asynchronous pattern](../../../standard/asynchronous-programming-patterns/consuming-the-task-based-asynchronous-pattern.md). For more information about asynchronous streams, see the [Asynchronous streams tutorial](../../asynchronous-programming/generate-consume-asynchronous-stream.md).
 
 ### Type of an iteration variable
 

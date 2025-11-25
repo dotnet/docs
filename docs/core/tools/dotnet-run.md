@@ -18,7 +18,7 @@ dotnet run [<applicationArguments>]
   [-a|--arch <ARCHITECTURE>] [--artifacts-path <ARTIFACTS_DIR>]
   [-c|--configuration <CONFIGURATION>] [-e|--environment <KEY=VALUE>]
   [--file <FILE_PATH>] [-f|--framework <FRAMEWORK>] [--force] [--interactive]
-  [--launch-profile <NAME>] [--no-build] [--no-dependencies]
+  [-lp|--launch-profile <NAME>] [--no-build] [--no-dependencies]
   [--no-launch-profile] [--no-restore] [--os <OS>] [--project <PATH>]
   [-r|--runtime <RUNTIME_IDENTIFIER>] [--tl:[auto|on|off]]
   [-v|--verbosity <LEVEL>] [[--] [application arguments]]
@@ -120,7 +120,6 @@ To run the application, the `dotnet run` command resolves the dependencies of th
   > [!NOTE]
   > The `-lp` shortcut is equivalent to `--launch-profile`.  
   > Both options specify which launch profile from *launchSettings.json* to use when running the app.
-
 
 - **`--no-build`**
 

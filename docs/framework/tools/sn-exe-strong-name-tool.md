@@ -62,7 +62,7 @@ sn [-quiet][option [parameter(s)]]
 |`-TSc assembly container`|Test-signs the signed or partially signed *assembly* with the key pair in the key container *container*.|
 |`-v assembly`|Verifies the strong name in *assembly*, where *assembly* is the name of a file that contains an assembly manifest.|
 |`-vf assembly`|Verifies the strong name in *assembly.* Unlike the **-v** option, **-vf** forces verification even if it is disabled using the **-Vr** option.|
-|`-Vk regfile.reg assembly [userlist] [infile]`|Creates a registration entries (.reg) file you can use to register the specified assembly for verification skipping. The rules for assembly naming that apply to the **-Vr** option apply to **–Vk** as well. For information about the *userlist* and *infile* options, see the **–Vr** option.|
+|`-Vk regfile.reg assembly [userlist] [infile]`|Creates a registration entries (.reg) file you can use to register the specified assembly for verification skipping. The rules for assembly naming that apply to the **-Vr** option apply to **-Vk** as well. For information about the *userlist* and *infile* options, see the **-Vr** option.|
 |`-Vl`|Lists current settings for strong-name verification on this computer.|
 |`-Vr  assembly [userlist] [infile]`|Registers *assembly* for verification skipping. Optionally, you can specify a comma-separated list of user names the skip verification should apply to. If you specify *infile*, verification remains enabled, but the public key in *infile* is used in verification operations. You can specify *assembly* in the form *\*, strongname* to register all assemblies with the specified strong name. For *strongname*, specify the string of hexadecimal digits representing the tokenized form of the public key. See the **-t** and **-T** options to display the public key token. **Caution:**  Use this option only during development. Adding an assembly to the skip verification list creates a security vulnerability. A malicious assembly could use the fully specified assembly name (assembly name, version, culture, and public key token) of the assembly added to the skip verification list to fake its identity. This would allow the malicious assembly to also skip verification.|
 |`-Vu  assembly`|Unregisters *assembly* for verification skipping. The same rules for assembly naming that apply to **-Vr** apply to **-Vu**.|
@@ -74,10 +74,10 @@ sn [-quiet][option [parameter(s)]]
 
 ## Remarks
 
- The **-R** and **–Rc** options are useful with assemblies that have been delay-signed. In this scenario, only the public key has been set at compile time and signing is performed later, when the private key is known.
+ The **-R** and **-Rc** options are useful with assemblies that have been delay-signed. In this scenario, only the public key has been set at compile time and signing is performed later, when the private key is known.
 
 > [!NOTE]
-> For parameters (for example, –**Vr)** that write to protected resources such as the registry, run SN.exe as an administrator.
+> For parameters (for example, -**Vr)** that write to protected resources such as the registry, run SN.exe as an administrator.
 
 The Strong Name tool assumes that public/private key pairs are generated with the `AT_SIGNATURE` algorithm identifier. Public/private key pairs generated with the `AT_KEYEXCHANGE` algorithm generate an error.
 

@@ -80,7 +80,7 @@ You can't use the previous parameter modifiers in the following kinds of methods
 - Async methods, which you define by using the [async](async.md) modifier.
 - Iterator methods, which include a [yield return](../statements/yield.md) or `yield break` statement.
 
-[Extension methods](../../programming-guide/classes-and-structs/extension-methods.md) also have restrictions on the use of these argument keywords:
+[Extension members](../../programming-guide/classes-and-structs/extension-methods.md) also have restrictions on the use of these argument keywords:
 
 - The `out` keyword can't be used on the first argument of an extension method.
 - The `ref` keyword can't be used on the first argument of an extension method when the argument isn't a `struct`, or a generic type not constrained to be a struct.

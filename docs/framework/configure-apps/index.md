@@ -67,7 +67,7 @@ This article describes the syntax of configuration files and provides informatio
 
  The name and location of the application configuration file depend on the app's host, which can be one of the following:
 
-- Executable–hosted app.
+- Executable-hosted app.
 
   These apps have two configuration files: a source configuration file, which is modified by the developer during development, and an output file that's distributed with the app.
 

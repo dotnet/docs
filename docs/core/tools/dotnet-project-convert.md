@@ -16,7 +16,7 @@ ai-usage: ai-assisted
 
 ```dotnetcli
 dotnet project convert <FILE> [--dry-run] [--force] [--interactive]
-    [-o|--output <OUTPUT_DIRECTORY>] [-h|--help]
+    [-o|--output <OUTPUT_DIRECTORY>]
 
 dotnet project convert -h|--help
 ```
@@ -42,7 +42,7 @@ The command performs the following operations:
 
 ## Arguments
 
-- **`FILE`**
+- `FILE`
 
   The path to the file-based program to convert. The file must be a C# source file (typically with a *.cs* extension).
 

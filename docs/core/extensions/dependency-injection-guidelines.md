@@ -139,9 +139,16 @@ The following third-party containers can be used with ASP.NET Core apps:
 
 ## Thread safety
 
-Create thread-safe singleton services. If a singleton service has a dependency on a transient service, the transient service may also require thread safety depending on how it's used by the singleton.
+Create thread-safe singleton services. If a singleton service has a dependency on a transient service, the transient service may also require thread safety depending on how it's used by the singleton. The factory method of a singleton service, such as the second argument to [AddSingleton\<TService>(IServiceCollection, Func\<IServiceProvider,TService>)](xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton%2A), doesn't need to be thread-safe. Like a type (`static`) constructor, it's guaranteed to be called only once by a single thread.
 
-The factory method of a singleton service, such as the second argument to [AddSingleton\<TService>(IServiceCollection, Func\<IServiceProvider,TService>)](xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionServiceExtensions.AddSingleton%2A), doesn't need to be thread-safe. Like a type (`static`) constructor, it's guaranteed to be called only once by a single thread.
+Additionally, the process of **resolving services** from the built-in .NET dependency injection (DI) container is **thread-safe**.  
+Once an `IServiceProvider` or `IServiceScope` has been built, it's safe to resolve services concurrently from multiple threads.
+
+> [!NOTE]
+> Thread safety of the DI container itself only guarantees that constructing and resolving services is safe.  
+> It doesn't make the resolved service instances themselves thread-safe.  
+> Any service (especially singletons) that holds shared mutable state must implement its own synchronization logic if accessed concurrently.
+
 
 ## Recommendations
 

@@ -68,7 +68,7 @@ Rework the highlighted section so the focus is on how to correct each error. Thi
 
 ## Verify error messages
 
-For every line in this table, verify that the error message associated with this error code matches the verbatim text in CSharpResources.resx. You can find the mapping using ErrorCodes.cs:
+For every line in this list, verify that the error message associated with this error code matches the verbatim text in CSharpResources.resx. You can find the mapping using ErrorCodes.cs:
 
 1. Find that number as a constant in `ErrorCodes.cs`.
 2. Locate the corresponding `data` element in CSharpResources.resx. The `name` atttribute should match the number of the constant.

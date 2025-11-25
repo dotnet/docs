@@ -234,7 +234,7 @@ This script can be leveraged in a CI/CD pipeline to ensure the next step (publis
 
 ## Publish to the Official MCP Registry
 
-The Official MCP Registry has different authentication mechanisms based on the namespace MCP Server's `name`. In this guide, we are using a namespace based on GitHub (`io.github.<your GitHub username>/*`) so GitHub authentication must be used. See the [registry documentation for information on other authentication modes](https://github.com/modelcontextprotocol/registry/blob/main/docs/modelcontextprotocol-io/authentication.mdx) which unlock other namespaces.
+The Official MCP Registry has different authentication mechanisms based on the namespace MCP Server's `name`. In this guide, we are using a namespace based on GitHub (`io.github.<your GitHub username>/*`) so GitHub authentication must be used. See the [registry documentation for information on other authentication modes](https://github.com/modelcontextprotocol/registry/blob/main/docs/modelcontextprotocol-io/authentication.mdx), which unlock other namespaces.
 
 1. Log in using GitHub interactive authentication.
    ::: zone pivot="os-windows"

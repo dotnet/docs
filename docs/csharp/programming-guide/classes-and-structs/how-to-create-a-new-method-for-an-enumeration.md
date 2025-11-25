@@ -1,7 +1,7 @@
 ---
 title: "How to create a new method for an enumeration"
 description: Learn how to use extension methods to add functionality to an enum in C#. This example shows an extension method called Passing for an enum called Grades.
-ms.date: 04/17/2025
+ms.date: 11/25/2025
 helpviewer_keywords: 
   - "enumerations [C#]"
   - "extension methods [C#], for enums"

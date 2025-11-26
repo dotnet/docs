@@ -1,7 +1,7 @@
 ---
 title: Create mixin types using default interface methods
 description: Using default interface members you can extend interfaces with optional default implementations for implementors.
-ms.date: 07/31/2024
+ms.date: 11/24/2025
 ---
 # Tutorial: Mix functionality in when creating classes using interfaces with default interface methods
 
@@ -19,13 +19,13 @@ In this tutorial, you learn how to:
 
 You need to set up your machine to run .NET, including the C# compiler. The C# compiler is available with [Visual Studio 2022](https://visualstudio.microsoft.com/downloads), or the [.NET SDK](https://dotnet.microsoft.com/download/dotnet).
 
-## Limitations of extension methods
+## Limitations of extensions
 
-One way you can implement behavior that appears as part of an interface is to define [extension methods](../../programming-guide/classes-and-structs/extension-methods.md) that provide the default behavior. Interfaces declare a minimum set of members while providing a greater surface area for any class that implements that interface. For example, the extension methods in <xref:System.Linq.Enumerable> provide the implementation for any sequence to be the source of a LINQ query.
+One way you can implement behavior that appears as part of an interface is to define [extension members](../../programming-guide/classes-and-structs/extension-methods.md) that provide the default behavior. Interfaces declare a minimum set of members while providing a greater surface area for any class that implements that interface. For example, the extension members in <xref:System.Linq.Enumerable> provide the implementation for any sequence to be the source of a LINQ query.
 
-Extension methods are resolved at compile time, using the declared type of the variable. Classes that implement the interface can provide a better implementation for any extension method. Variable declarations must match the implementing type to enable the compiler to choose that implementation. When the compile-time type matches the interface, method calls resolve to the extension method. Another concern with extension methods is that those methods are accessible wherever the class containing the extension methods is accessible. Classes can't declare if they should or shouldn't provide features declared in extension methods.
+Extension members are resolved at compile time, using the declared type of the variable. Classes that implement the interface can provide a better implementation for any extension member. Variable declarations must match the implementing type to enable the compiler to choose that implementation. When the compile-time type matches the interface, method calls resolve to the extension member. Another concern with extension members is that those members are accessible wherever the class containing the extension member is accessible. Classes can't declare if they should or shouldn't provide features declared in extension members.
 
-You can declare the default implementations as interface methods. Then, every class automatically uses the default implementation. Any class that can provide a better implementation can override the interface method definition with a better algorithm. In one sense, this technique sounds similar to how you could use [extension methods](../../programming-guide/classes-and-structs/extension-methods.md).
+You can declare the default implementations as interface methods. Then, every class automatically uses the default implementation. Any class that can provide a better implementation can override the interface method definition with a better algorithm. In one sense, this technique sounds similar to how you could use [extension members](../../programming-guide/classes-and-structs/extension-methods.md).
 
 In this article, you learn how default interface implementations enable new scenarios.
 
@@ -38,7 +38,7 @@ Consider a home automation application. You probably have many different types o
 
 Some of these extended capabilities could be emulated in devices that support the minimal set. That indicates providing a default implementation. For those devices that have more capabilities built in, the device software would use the native capabilities. For other lights, they could choose to implement the interface and use the default implementation.
 
-Default interface members provide a better solution for this scenario than extension methods. Class authors can control which interfaces they choose to implement. Those interfaces they choose are available as methods. In addition, because default interface methods are virtual by default, the method dispatch always chooses the implementation in the class.
+Default interface members provide a better solution for this scenario than extension members. Class authors can control which interfaces they choose to implement. Those interfaces they choose are available as methods. In addition, because default interface methods are virtual by default, the method dispatch always chooses the implementation in the class.
 
 Let's create the code to demonstrate these differences.
 

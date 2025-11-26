@@ -211,7 +211,7 @@ If a method takes an array as a parameter and modifies the value of individual e
 
 :::code language="csharp" source="snippets/methods/returnarray1.cs" id="snippet101":::
 
-## Extension methods
+## Extension members
 
 Ordinarily, there are two ways to add a method to an existing type:
 

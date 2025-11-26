@@ -62,7 +62,7 @@ MDbg [ProgramName[arguments]] [options]
 |**o**[**ut**]|Moves to the end of the current function.|
 |**pa**[**th**] [*pathName*]|Searches the specified path for the source files if the location in the binaries is not available.|
 |**p**[**rint**] [*var*] &#124; [`-d`]|Prints all variables in scope (**print**), prints the specified variable (**print** *var*), or prints the debugger variables (**print**`-d`).|
-|**printe**[**xception**] [*-r*]|Prints the last exception on the current thread. Use the `–r` (recursive) option to traverse the `InnerException` property on the exception object to get information about the entire chain of exceptions.|
+|**printe**[**xception**] [*-r*]|Prints the last exception on the current thread. Use the `-r` (recursive) option to traverse the `InnerException` property on the exception object to get information about the entire chain of exceptions.|
 |**pro**[**cessenum**]|Displays the active processes.|
 |**q**[**uit**] [*exitcode*]|Quits the MDbg.exe shell, optionally specifying the process exit code.|
 |**re**[**sume**] [`*` &#124; [`~`]*threadNumber*]|Resumes the current thread or the thread specified by the *threadNumber* parameter.<br /><br /> If the *threadNumber* parameter is specified as `*` or if the thread number starts with `~`, the command applies to all threads except the one specified by *threadNumber*.<br /><br /> Resuming a non-suspended thread has no effect.|

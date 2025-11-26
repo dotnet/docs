@@ -8,11 +8,9 @@ ms.topic: concept-article
 ai-usage: ai-assisted
 ---
 
-# Data Ingestion
+# Data ingestion
 
-## What is data ingestion?
-
-Data ingestion is the process of collecting, reading, and preparing data from different sources such as files, databases, APIs, or cloud services so it can be used in downstream applications. In practice, this follows the familiar Extract-Transform-Load (ETL) workflow:
+Data ingestion is the process of collecting, reading, and preparing data from different sources such as files, databases, APIs, or cloud services so it can be used in downstream applications. In practice, this process follows the Extract-Transform-Load (ETL) workflow:
 
 - **Extract** data from its original source, whether that is a PDF, Word document, audio file, or web API.
 - **Transform** the data by cleaning, chunking, enriching, or converting formats.
@@ -28,27 +26,27 @@ Your chatbot needs to understand and search through thousands of documents to pr
 
 This is where data ingestion becomes critical. You need to extract text from different file formats, break large documents into smaller chunks that fit within AI model limits, enrich the content with metadata, generate embeddings for semantic search, and store everything in a way that enables fast retrieval. Each step requires careful consideration of how to preserve the original meaning and context.
 
-## What is Microsoft.Extensions.DataIngestion?
+## The Microsoft.Extensions.DataIngestion library
 
-[Microsoft.Extensions.DataIngestion](https://www.nuget.org/packages/Microsoft.Extensions.DataIngestion) provides foundational .NET components for data ingestion. It enables developers to read, process, and prepare documents for AI and machine learning workflows, especially Retrieval-Augmented Generation (RAG) scenarios.
+The [📦 Microsoft.Extensions.DataIngestion package](https://www.nuget.org/packages/Microsoft.Extensions.DataIngestion) provides foundational .NET components for data ingestion. It enables developers to read, process, and prepare documents for AI and machine learning workflows, especially Retrieval-Augmented Generation (RAG) scenarios.
 
-With these building blocks, developers can create robust, flexible, and intelligent data ingestion pipelines tailored for their application needs:
+With these building blocks, you can create robust, flexible, and intelligent data ingestion pipelines tailored for your application needs:
 
-- **Unified document representation:** Represent any file type (PDF, Image, Microsoft Word, etc.) in a consistent format that works well with large language models.
+- **Unified document representation:** Represent any file type (for example, PDF, Image, or Microsoft Word) in a consistent format that works well with large language models.
 - **Flexible data ingestion:** Read documents from both cloud services and local sources using multiple built-in readers, making it easy to bring in data from wherever it lives.
 - **Built-in AI enhancements:** Automatically enrich content with summaries, sentiment analysis, keyword extraction, and classification, preparing your data for intelligent workflows.
 - **Customizable chunking strategies:** Split documents into chunks using token-based, section-based, or semantic-aware approaches, so you can optimize for your retrieval and analysis needs.
 - **Production-ready storage:** Store processed chunks in popular vector databases and document stores, with support for embedding generation, making your pipelines ready for real-world scenarios.
-- **End-to-end pipeline composition:** Chain together readers, processors, chunkers, and writers with the `IngestionPipeline` API, reducing boilerplate and making it easy to build, customize, and extend complete workflows.
+- **End-to-end pipeline composition:** Chain together readers, processors, chunkers, and writers with the <xref:Microsoft.Extensions.DataIngestion.IngestionPipeline`1> API, reducing boilerplate and making it easy to build, customize, and extend complete workflows.
 - **Performance and scalability:** Designed for scalable data processing, these components can handle large volumes of data efficiently, making them suitable for enterprise-grade applications.
 
-All of these components are open and extensible by design. You can add custom logic, new connectors, and extend the system to support emerging AI scenarios. By standardizing how documents are represented, processed, and stored, .NET developers can build reliable, scalable, and maintainable data pipelines without reinventing the wheel for every project.
+All of these components are open and extensible by design. You can add custom logic and new connectors, and extend the system to support emerging AI scenarios. By standardizing how documents are represented, processed, and stored, .NET developers can build reliable, scalable, and maintainable data pipelines without "reinventing the wheel" for every project.
 
-### Building on stable foundations
+### Built on stable foundations
 
 ![Data Ingestion Architecture Diagram](../media/data-ingestion/DataIngestion.png)
 
-These new data ingestion building blocks are built on top of proven and extensible components in the .NET ecosystem, ensuring reliability, interoperability, and seamless integration with existing AI workflows:
+These data ingestion building blocks are built on top of proven and extensible components in the .NET ecosystem, ensuring reliability, interoperability, and seamless integration with existing AI workflows:
 
 - **Microsoft.ML.Tokenizers:** Tokenizers provide the foundation for chunking documents based on tokens. This enables precise splitting of content, which is essential for preparing data for large language models and optimizing retrieval strategies.
 - **Microsoft.Extensions.AI:** This set of libraries powers enrichment transformations using large language models. It enables features like summarization, sentiment analysis, keyword extraction, and embedding generation, making it easy to enhance your data with intelligent insights.
@@ -58,24 +56,24 @@ In addition to familiar patterns and tools, these abstractions build on already 
 
 ## Data ingestion building blocks
 
-The [Microsoft.Extensions.DataIngestion](https://www.nuget.org/packages/Microsoft.Extensions.DataIngestion) library is built around several key components that work together to create a complete data processing pipeline. Let's explore each component and how they fit together.
+The [Microsoft.Extensions.DataIngestion](https://www.nuget.org/packages/Microsoft.Extensions.DataIngestion) library is built around several key components that work together to create a complete data processing pipeline. This section explores each component and how they fit together.
 
-### Documents and Document Readers
+### Documents and document readers
 
-At the foundation of the library is the `IngestionDocument` type, which provides a unified way to represent any file format without losing important information. The `IngestionDocument` is Markdown-centric because large language models work best with Markdown formatting.
+At the foundation of the library is the <xref:Microsoft.Extensions.DataIngestion.IngestionDocument> type, which provides a unified way to represent any file format without losing important information. `IngestionDocument` is Markdown-centric because large language models work best with Markdown formatting.
 
-The `IngestionDocumentReader` abstraction handles loading documents from various sources, whether local files or streams. A few readers are available:
+The <xref:Microsoft.Extensions.DataIngestion.IngestionDocumentReader> abstraction handles loading documents from various sources, whether local files or streams. A few readers are available:
 
 - **[MarkItDown](https://www.nuget.org/packages/Microsoft.Extensions.DataIngestion.MarkItDown)**
-- **[Markdown](https://www.nuget.org/packages/Microsoft.Extensions.DataIngestion.Markdig/)**
+- **[Markdig](https://www.nuget.org/packages/Microsoft.Extensions.DataIngestion.Markdig/)**
 
-We're actively working on adding more readers (including **LlamaParse** and **Azure Document Intelligence**).
+More readers (including **LlamaParse** and **Azure Document Intelligence**) will be added in the future.
 
 This design means you can work with documents from different sources using the same consistent API, making your code more maintainable and flexible.
 
-### Document Processing
+### Document processing
 
-Document processors apply transformations at the document level to enhance and prepare content. The library currently provides `ImageAlternativeTextEnricher` class as a built-in processor that uses large language models to generate descriptive alternative text for images within documents.
+Document processors apply transformations at the document level to enhance and prepare content. The library provides the <xref:Microsoft.Extensions.DataIngestion.ImageAlternativeTextEnricher> class as a built-in processor that uses large language models to generate descriptive alternative text for images within documents.
 
 ### Chunks and Chunking Strategies
 

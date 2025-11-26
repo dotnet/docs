@@ -12,7 +12,7 @@ ai-usage: ai-assisted
 
 In this quickstart, you publish your NuGet-based local MCP server to the [Official MCP Registry](https://github.com/modelcontextprotocol/registry/blob/main/docs/explanations/ecosystem-vision.md).
 
-The Official MCP Registry is an upstream data source for MCP ecosystem. The [GitHub MCP Registry](https://github.com/mcp) will soon use the Official MCP Registry as a source of MCP server listings. 
+The Official MCP Registry is an upstream data source for MCP ecosystem. The [GitHub MCP Registry](https://github.com/mcp) will soon use the Official MCP Registry as a source of MCP server listings.
 
 > [!NOTE]
 > This guide focuses on publishing **local MCP servers** packaged with NuGet. The Official MCP Registry also supports **remote MCP servers**. While the `server.json` publishing process is similar for remote servers, their configuration requires a URL instead of a package manager reference. Remote servers can be implemented in any language. For an example, see [an Azure Functions code sample for a .NET remote MCP server](/samples/azure-samples/remote-mcp-functions-dotnet/remote-mcp-functions-dotnet/).

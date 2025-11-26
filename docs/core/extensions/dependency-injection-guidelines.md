@@ -149,7 +149,6 @@ Once an `IServiceProvider` or `IServiceScope` has been built, it's safe to resol
 > It doesn't make the resolved service instances themselves thread-safe.  
 > Any service (especially singletons) that holds shared mutable state must implement its own synchronization logic if accessed concurrently.
 
-
 ## Recommendations
 
 - `async/await` and `Task` based service resolution isn't supported. Because C# doesn't support asynchronous constructors, use asynchronous methods after synchronously resolving the service.

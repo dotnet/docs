@@ -199,6 +199,7 @@ Some services might support automatically creating a conversation ID for a reque
 If you don't know ahead of time whether the service is stateless or stateful, you can check the response <xref:Microsoft.Extensions.AI.ChatResponse.ConversationId> and act based on its value. If it's set, then that value is propagated to the options and the history is cleared so as to not resend the same history again. If the response `ConversationId` isn't set, then the response message is added to the history so that it's sent back to the service on the next turn.
 
 :::code language="csharp" source="snippets/microsoft-extensions-ai/ConsoleAI.StatelessStateful/Program.cs" id="Snippet4":::
+
 #### Chat reduction (experimental)
 
 > [!IMPORTANT]

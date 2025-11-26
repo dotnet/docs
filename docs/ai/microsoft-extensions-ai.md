@@ -214,7 +214,6 @@ Chat reduction helps manage conversation history by limiting the number of messa
 
 Tool reduction helps manage large tool catalogs by trimming them based on relevance to the current conversation context. The <xref:Microsoft.Extensions.AI.IToolReductionStrategy> interface defines strategies for reducing the number of tools sent to the model. The library provides implementations like <xref:Microsoft.Extensions.AI.EmbeddingToolReductionStrategy> that ranks tools by embedding similarity to the conversation. Use the <xref:Microsoft.Extensions.AI.ChatClientBuilderToolReductionExtensions.UseToolReduction*> extension method to add tool reduction to your chat client pipeline.
 
-
 ### The `IEmbeddingGenerator` interface
 
 The <xref:Microsoft.Extensions.AI.IEmbeddingGenerator`2> interface represents a generic generator of embeddings. For the generic type parameters, `TInput` is the type of input values being embedded, and `TEmbedding` is the type of generated embedding, which inherits from the <xref:Microsoft.Extensions.AI.Embedding> class.

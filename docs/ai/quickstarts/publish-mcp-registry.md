@@ -1,6 +1,6 @@
 ---
-title: Quickstart - Publish a .NET MCP Server to the MCP Registry
-description: Learn how to publish your NuGet-based MCP Server to the Official MCP Registry, including creating a server.json manifest, updating your package README, and using the MCP Publisher tool.
+title: Quickstart - Publish a .NET MCP server to the MCP Registry
+description: Learn how to publish your NuGet-based MCP server to the Official MCP Registry, including creating a server.json manifest, updating your package README, and using the MCP Publisher tool.
 ms.date: 11/17/2025
 ms.topic: quickstart
 author: joelverhagen
@@ -8,22 +8,24 @@ zone_pivot_groups: operating-systems-set-one
 ai-usage: ai-assisted
 ---
 
-# Publish an MCP Server on NuGet.org to the Official MCP Registry
+# Publish an MCP server on NuGet.org to the Official MCP Registry
 
-In this quickstart, you publish your NuGet-based local MCP Server to the [Official MCP Registry](https://github.com/modelcontextprotocol/registry/blob/main/docs/explanations/ecosystem-vision.md).
+In this quickstart, you publish your NuGet-based local MCP server to the [Official MCP Registry](https://github.com/modelcontextprotocol/registry/blob/main/docs/explanations/ecosystem-vision.md).
+
+The Official MCP Registry is an upstream data source for MCP ecosystem. The [GitHub MCP Registry](https://github.com/mcp) will soon use the Official MCP Registry as a source of MCP server listings. 
 
 > [!NOTE]
-> This guide focuses on publishing **local MCP servers** packaged with NuGet that use the stdio transport. The Official MCP Registry also supports **remote MCP servers** that use HTTP transports. While the `server.json` publishing process is similar for remote servers, their configuration differs as they don't require package managers. Remote servers can be implemented in any language since implementation details are transparent to consumers. For an example, see [an Azure Functions code sample for a .NET remote MCP server](/samples/azure-samples/remote-mcp-functions-dotnet/remote-mcp-functions-dotnet/).
+> This guide focuses on publishing **local MCP servers** packaged with NuGet. The Official MCP Registry also supports **remote MCP servers**. While the `server.json` publishing process is similar for remote servers, their configuration requires a URL instead of a package manager reference. Remote servers can be implemented in any language. For an example, see [an Azure Functions code sample for a .NET remote MCP server](/samples/azure-samples/remote-mcp-functions-dotnet/remote-mcp-functions-dotnet/).
 
 ## Prerequisites
 
 - A [GitHub account](https://github.com/join)
 - [Visual Studio Code](https://code.visualstudio.com/)
-- Your MCP Server is packaged with NuGet and published to NuGet.org ([quickstart](./build-mcp-server.md)).
+- Your MCP server is packaged with NuGet and published to NuGet.org ([quickstart](./build-mcp-server.md)).
 
 ## Create a server.json manifest file
 
-*If you used the NuGet MCP Server quickstart and `mcpserver` project template, you can skip this step.*
+*If you used the NuGet MCP server quickstart and `mcpserver` project template, you can skip this step.*
 
 1. Navigate to your MCP server's source directory and create a new `server.json` file.
    ::: zone pivot="os-windows"
@@ -62,24 +64,24 @@ In this quickstart, you publish your NuGet-based local MCP Server to the [Offici
 
 Use this reference to understand more about the fields:
 
-| Property            | Example                                | Purpose                                                                                                     |
-| ------------------- | -------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| name                | `io.github.contoso/data-mcp`           | Unique identifier for the MCP Server, namespaced using reverse DNS names, **case sensitive**                |
-| version             | `0.1.0-beta`                           | Version of the MCP Server listing<br>Consider using the same version as the MCP Server package on NuGet.org |
-| description         | `Access Contoso data in your AI agent` | Description of your MCP Server, up to 100 characters                                                        |
-| title               | `Contoso Data`                         | Optional: short human-readable title, up to 100 characters                                                  |
-| websiteUrl          | `https://contoso.com/docs/mcp`         | Optional: URL to the server's homepage, documentation, or project website                                   |
-| packages identifier | `Contoso.Data.Mcp`                     | The ID of your MCP Server package on NuGet.org                                                              |
-| packages version    | `0.1.0-beta`                           | The version of your MCP Server package on NuGet.org                                                         |
-| repository url      | `https://github.com/contoso/data-mcp`  | Optional: GitHub repository URL                                                                             |
+| Property                | Example                                | Purpose                                                                                                     |
+| ----------------------- | -------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| `name`                  | `io.github.contoso/data-mcp`           | Unique identifier for the MCP server, namespaced using reverse DNS names, **case sensitive**                |
+| `version`               | `0.1.0-beta`                           | Version of the MCP server listing<br>Consider using the same version as the MCP server package on NuGet.org |
+| `description`           | `Access Contoso data in your AI agent` | Description of your MCP server, up to 100 characters                                                        |
+| `title`                 | `Contoso Data`                         | Optional: short human-readable title, up to 100 characters                                                  |
+| `websiteUrl`            | `https://contoso.com/docs/mcp`         | Optional: URL to the server's homepage, documentation, or project website                                   |
+| `packages` `identifier` | `Contoso.Data.Mcp`                     | The ID of your MCP server package on NuGet.org                                                              |
+| `packages` `version`    | `0.1.0-beta`                           | The version of your MCP server package on NuGet.org                                                         |
+| `repository` `url`      | `https://github.com/contoso/data-mcp`  | Optional: GitHub repository URL                                                                             |
 
-The `name` field has two parts, separated by a forward slash `/`. The first part is a namespace based off of a reverse DNS name. The authentication method you use in later steps will give you access to a specific namespace. For example, using GitHub-based authentication will give you access to `io.github.<your GitHub username>/*`.  The second part, after the forward slash, is a custom identifier for your server within the namespace. Think of this much like a NuGet package ID. It should be unchanging and descriptive of your MCP server. Using your GitHub repository name is a reasonable option if you only have one MCP Server published from that repository.
+The `name` field has two parts, separated by a forward slash `/`. The first part is a namespace based off of a reverse DNS name. The authentication method you use in later steps will give you access to a specific namespace. For example, using GitHub-based authentication will give you access to `io.github.<your GitHub username>/*`.  The second part, after the forward slash, is a custom identifier for your server within the namespace. Think of this much like a NuGet package ID. It should be unchanging and descriptive of your MCP server. Using your GitHub repository name is a reasonable option if you only have one MCP server published from that repository.
 
 ## Update your package README
 
-The Official MCP Registry verifies that your MCP Server package references the `name` specified in your `server.json` file.
+The Official MCP Registry verifies that your MCP server package references the `name` specified in your `server.json` file.
 
-1. If you haven't already, add a README.md to your MCP Server NuGet package. See [how to do this in your project file](/nuget/reference/msbuild-targets#packagereadmefile).
+1. If you haven't already, add a README.md to your MCP server NuGet package. See [how to do this in your project file](/nuget/reference/msbuild-targets#packagereadmefile).
 2. Open the README.md used by your NuGet package.
    ::: zone pivot="os-windows"
 
@@ -116,7 +118,7 @@ The Official MCP Registry verifies that your MCP Server package references the `
 
 4. Save the README.md file.
 
-## Publish your MCP Server package to NuGet.org
+## Publish your MCP server package to NuGet.org
 
 Because your README.md now has an `mcp-name` declared in it, publish the latest package to NuGet.org.
 
@@ -234,7 +236,7 @@ This script can be leveraged in a CI/CD pipeline to ensure the next step (publis
 
 ## Publish to the Official MCP Registry
 
-The Official MCP Registry has different authentication mechanisms based on the namespace MCP Server's `name`. In this guide, we are using a namespace based on GitHub (`io.github.<your GitHub username>/*`) so GitHub authentication must be used. See the [registry documentation for information on other authentication modes](https://github.com/modelcontextprotocol/registry/blob/main/docs/modelcontextprotocol-io/authentication.mdx), which unlock other namespaces.
+The Official MCP Registry has different authentication mechanisms based on the namespace MCP server's `name`. In this guide, we are using a namespace based on GitHub (`io.github.<your GitHub username>/*`) so GitHub authentication must be used. See the [registry documentation for information on other authentication modes](https://github.com/modelcontextprotocol/registry/blob/main/docs/modelcontextprotocol-io/authentication.mdx), which unlock other namespaces.
 
 1. Log in using GitHub interactive authentication.
    ::: zone pivot="os-windows"
@@ -284,11 +286,11 @@ The Official MCP Registry has different authentication mechanisms based on the n
    ```
 
    ::: zone-end
-3. When the command succeeds, you can verify that your MCP Server is published by going to the [registry home page](https://registry.modelcontextprotocol.io/) and searching for your server name.
+3. When the command succeeds, you can verify that your MCP server is published by going to the [registry home page](https://registry.modelcontextprotocol.io/) and searching for your server name.
 
 ## Related content
 
-- [Build and publish an MCP Server to NuGet.org](./build-mcp-server.md)
+- [Build and publish an MCP server to NuGet.org](./build-mcp-server.md)
 - [Publish a NuGet package](/nuget/nuget-org/publish-a-package)
-- [Conceptual: MCP Servers in NuGet Packages](/nuget/concepts/nuget-mcp)
+- [Conceptual: MCP servers in NuGet Packages](/nuget/concepts/nuget-mcp)
 - [Get started with .NET AI and the Model Context Protocol](../get-started-mcp.md)

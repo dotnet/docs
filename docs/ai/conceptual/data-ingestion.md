@@ -75,14 +75,14 @@ This design means you can work with documents from different sources using the s
 
 Document processors apply transformations at the document level to enhance and prepare content. The library provides the <xref:Microsoft.Extensions.DataIngestion.ImageAlternativeTextEnricher> class as a built-in processor that uses large language models to generate descriptive alternative text for images within documents.
 
-### Chunks and Chunking Strategies
+### Chunks and chunking strategies
 
 Once you have a document loaded, you typically need to break it down into smaller pieces called chunks. Chunks represent subsections of a document that can be efficiently processed, stored, and retrieved by AI systems. This chunking process is essential for retrieval-augmented generation scenarios where you need to find the most relevant pieces of information quickly.
 
 The library provides several chunking strategies to fit different use cases:
 
 - **Header-based chunking** to split on headers.
-- **Section-based chunking** to split on sections (example: pages).
+- **Section-based chunking** to split on sections (for example, pages).
 - **Semantic-aware chunking** to preserve complete thoughts.
 
 These chunking strategies build on the Microsoft.ML.Tokenizers library to intelligently split text into appropriately sized pieces that work well with large language models. The right chunking strategy depends on your document types and how you plan to retrieve information.
@@ -97,7 +97,7 @@ IngestionChunkerOptions options = new(tokenizer)
 IngestionChunker<string> chunker = new HeaderChunker(options);
 ```
 
-### Chunk Processing and Enrichment
+### Chunk processing and enrichment
 
 After documents are split into chunks, you can apply processors to enhance and enrich the content. Chunk processors work on individual pieces and can perform:
 
@@ -106,11 +106,11 @@ After documents are split into chunks, you can apply processors to enhance and e
 
 These processors use [Microsoft.Extensions.AI.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.AI.Abstractions) to leverage large language models for intelligent content transformation, making your chunks more useful for downstream AI applications.
 
-### Document Writer and Storage
+### Document writer and storage
 
-The `IngestionChunkWriter<T>` stores processed chunks into a data store for later retrieval. Using Microsoft.Extensions.AI and [Microsoft.Extensions.VectorData.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.VectorData.Abstractions), the library provides the `VectorStoreWriter<T>` class that supports storing chunks in any vector store supported by Microsoft.Extensions.VectorData.
+<xref:Microsoft.Extensions.DataIngestion.IngestionChunkWriter`1> stores processed chunks into a data store for later retrieval. Using Microsoft.Extensions.AI and [Microsoft.Extensions.VectorData.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.VectorData.Abstractions), the library provides the <xref:Microsoft.Extensions.DataIngestion.VectorStoreWriter`1> class that supports storing chunks in any vector store supported by Microsoft.Extensions.VectorData.
 
-This includes popular options like [Qdrant](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.Qdrant), [SQL Server](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.SqlServer), [CosmosDB](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.CosmosNoSQL), [MongoDB](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.MongoDB), [ElasticSearch](https://www.nuget.org/packages/Elastic.SemanticKernel.Connectors.Elasticsearch), and many more. The writer can also automatically generate embeddings for your chunks using Microsoft.Extensions.AI, making them ready for semantic search and retrieval scenarios.
+Vectore stores include popular options like [Qdrant](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.Qdrant), [SQL Server](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.SqlServer), [CosmosDB](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.CosmosNoSQL), [MongoDB](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.MongoDB), [ElasticSearch](https://www.nuget.org/packages/Elastic.SemanticKernel.Connectors.Elasticsearch), and many more. The writer can also automatically generate embeddings for your chunks using Microsoft.Extensions.AI, readying them for semantic search and retrieval scenarios.
 
 ```csharp
 OpenAIClient openAIClient = new(
@@ -132,9 +132,9 @@ using SqliteVectorStore vectorStore = new(
 using VectorStoreWriter<string> writer = new(vectorStore, dimensionCount: 1536);
 ```
 
-### Document Processing Pipeline
+### Document processing pipeline
 
-The `IngestionPipeline<T>` API allows you to chain together the various data ingestion components into a complete workflow. You can combine:
+The <xref:Microsoft.Extensions.DataIngestion.IngestionPipeline`1> API allows you to chain together the various data ingestion components into a complete workflow. You can combine:
 
 - **Readers** to load documents from various sources.
 - **Processors** to transform and enrich document content.
@@ -156,4 +156,4 @@ await foreach (var result in pipeline.ProcessAsync(new DirectoryInfo("."), searc
 }
 ```
 
-A single document ingestion failure should not fail the whole pipeline, that is why the `IngestionPipeline.ProcessAsync` implements partial success by returning `IAsyncEnumerable<IngestionResult>`. The caller is responsible for handling any failures (for example, by re-trying failed documents or stopping on first error).
+A single document ingestion failure shouldn't fail the whole pipeline. That's why <xref:Microsoft.Extensions.DataIngestion.IngestionPipeline`1.ProcessAsync*?displayProperty=nameWithType> implements partial success by returning `IAsyncEnumerable<IngestionResult>`. The caller is responsible for handling any failures (for example, by retrying failed documents or stopping on first error).

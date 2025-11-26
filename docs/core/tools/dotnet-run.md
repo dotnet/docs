@@ -117,7 +117,6 @@ To run the application, the `dotnet run` command resolves the dependencies of th
   Launch profiles are defined in the *launchSettings.json* file and are typically named `Development`, `Staging`, or `Production`.  
   For more information, see [Working with multiple environments](/aspnet/core/fundamentals/environments).
 
-
 - **`--no-build`**
 
   Doesn't build the project before running. It also implicitly sets the `--no-restore` flag.

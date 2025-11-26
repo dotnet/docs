@@ -99,6 +99,34 @@ When you configure an option, you specify the option name including the prefix:
 :::code language="csharp" source="snippets/define-symbols/csharp/Program.cs" id="defineoptions" :::
 
 To add an option to a command and recursively to all of its subcommands, use the `System.CommandLine.Symbol.Recursive` property.
+### Global options and verbosity
+
+Some command-line tools define *global options* that apply to all commands and subcommands.  
+For example, the .NET CLI provides a global `--verbosity` (short form `-v`) option to control the level of output detail.
+
+You can define a global option by adding it to the root command so that it’s available to all subcommands:
+
+```csharp
+using System.CommandLine;
+
+var verbosityOption = new Option<string>(
+    aliases: new[] { "-v", "--verbosity" },
+    description: "Set the verbosity level (quiet, minimal, normal, detailed, diagnostic)")
+{
+    Arity = ArgumentArity.ZeroOrOne
+};
+
+var rootCommand = new RootCommand("Sample app");
+rootCommand.AddGlobalOption(verbosityOption);
+
+rootCommand.SetHandler((string verbosity) =>
+{
+    verbosity ??= "diagnostic"; // Treat bare "-v" as Diagnostic
+    Console.WriteLine($"Verbosity set to: {verbosity}");
+}, verbosityOption);
+
+rootCommand.Invoke(args);
+
 
 ### Required Options
 

@@ -111,15 +111,12 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 
 - [!INCLUDE [interactive](../../../includes/cli-interactive.md)]
 
-- **`--launch-profile <NAME>` | `-lp <NAME>`**
+- **``-lp|--launch-profile <NAME>``**
 
   Specifies the name of the launch profile (if any) to use when launching the application.  
   Launch profiles are defined in the *launchSettings.json* file and are typically named `Development`, `Staging`, or `Production`.  
   For more information, see [Working with multiple environments](/aspnet/core/fundamentals/environments).
 
-  > [!NOTE]
-  > The `-lp` shortcut is equivalent to `--launch-profile`.  
-  > Both options specify which launch profile from *launchSettings.json* to use when running the app.
 
 
 - **`--no-build`**

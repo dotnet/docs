@@ -27,9 +27,7 @@ There are two main scenarios for populating the properties depending on whether 
 
 - When the *\*.deps.json* file is present, it's parsed to populate the probing properties.
 - When the *\*.deps.json* file isn't present, the application's directory is assumed to contain all the dependencies. The directory's contents are used to populate the probing properties.
-
 Additionally, the *\*.deps.json* files for any referenced frameworks are similarly parsed.
-
 The environment variable `DOTNET_ADDITIONAL_DEPS` can be used to add additional dependencies.  `dotnet.exe` also contains an optional `--additional-deps` parameter to set this value on application startup.
 > [!NOTE]
 > The `DOTNET_ADDITIONAL_DEPS` environment variable and the `--additional-deps` command-line option are **ignored for self-contained applications**.  

@@ -400,8 +400,8 @@
 | Content Safety Extension Embedded Text | NuGet [1.0.0](https://www.nuget.org/packages/Azure.AI.ContentSafety.Extension.Embedded.Text/1.0.0)<br>NuGet [1.0.1-beta.4](https://www.nuget.org/packages/Azure.AI.ContentSafety.Extension.Embedded.Text/1.0.1-beta.4) |  |  |
 | Cosmos DB Fault Injection | NuGet [1.0.0-beta.0](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.FaultInjection/1.0.0-beta.0) |  |  |
 | DotNetty | NuGet [0.7.6](https://www.nuget.org/packages/DotNetty.Common/0.7.6) |  |  |
-| Functions Extension MCP | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Extensions.Mcp/1.0.0) |  |  |
-| Functions Worker Extension MCP | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Mcp/1.0.0) |  |  |
+| Functions Extension MCP | NuGet [1.1.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Extensions.Mcp/1.1.0) |  |  |
+| Functions Worker Extension MCP | NuGet [1.1.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Mcp/1.1.0) |  |  |
 | Functions Worker Extension MySQL | NuGet [1.0.129](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.MySql/1.0.129) |  |  |
 | HTTP ASPNETCore Analyzers | NuGet [1.0.4](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Http.AspNetCore.Analyzers/1.0.4) |  |  |
 | IoT Operations MQTT | NuGet [0.11.0](https://www.nuget.org/packages/Azure.Iot.Operations.Mqtt/0.11.0) |  |  |
@@ -420,13 +420,13 @@
 | System Net Client Model | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/System.Net.ClientModel/1.0.0-beta.1) |  |  |
 | Unknown Display Name | NuGet [0.13.0](https://www.nuget.org/packages/Azure.Iot.Operations.Connector/0.13.0) |  |  |
 | Unknown Display Name | NuGet [0.1.0](https://www.nuget.org/packages/Azure.Iot.Operations.Templates/0.1.0) |  |  |
-| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp/1.0.0)<br>NuGet [2.0.0-beta.6](https://www.nuget.org/packages/Azure.Mcp/2.0.0-beta.6) |  |  |
-| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.linux-arm64/1.0.0)<br>NuGet [2.0.0-beta.6](https://www.nuget.org/packages/Azure.Mcp.linux-arm64/2.0.0-beta.6) |  |  |
-| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.linux-x64/1.0.0)<br>NuGet [2.0.0-beta.6](https://www.nuget.org/packages/Azure.Mcp.linux-x64/2.0.0-beta.6) |  |  |
-| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.osx-arm64/1.0.0)<br>NuGet [2.0.0-beta.6](https://www.nuget.org/packages/Azure.Mcp.osx-arm64/2.0.0-beta.6) |  |  |
-| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.osx-x64/1.0.0)<br>NuGet [2.0.0-beta.6](https://www.nuget.org/packages/Azure.Mcp.osx-x64/2.0.0-beta.6) |  |  |
-| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.win-arm64/1.0.0)<br>NuGet [2.0.0-beta.6](https://www.nuget.org/packages/Azure.Mcp.win-arm64/2.0.0-beta.6) |  |  |
-| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.win-x64/1.0.0)<br>NuGet [2.0.0-beta.6](https://www.nuget.org/packages/Azure.Mcp.win-x64/2.0.0-beta.6) |  |  |
+| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp/1.0.0)<br>NuGet [2.0.0-beta.7](https://www.nuget.org/packages/Azure.Mcp/2.0.0-beta.7) |  |  |
+| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.linux-arm64/1.0.0)<br>NuGet [2.0.0-beta.7](https://www.nuget.org/packages/Azure.Mcp.linux-arm64/2.0.0-beta.7) |  |  |
+| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.linux-x64/1.0.0)<br>NuGet [2.0.0-beta.7](https://www.nuget.org/packages/Azure.Mcp.linux-x64/2.0.0-beta.7) |  |  |
+| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.osx-arm64/1.0.0)<br>NuGet [2.0.0-beta.7](https://www.nuget.org/packages/Azure.Mcp.osx-arm64/2.0.0-beta.7) |  |  |
+| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.osx-x64/1.0.0)<br>NuGet [2.0.0-beta.7](https://www.nuget.org/packages/Azure.Mcp.osx-x64/2.0.0-beta.7) |  |  |
+| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.win-arm64/1.0.0)<br>NuGet [2.0.0-beta.7](https://www.nuget.org/packages/Azure.Mcp.win-arm64/2.0.0-beta.7) |  |  |
+| Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Mcp.win-x64/1.0.0)<br>NuGet [2.0.0-beta.7](https://www.nuget.org/packages/Azure.Mcp.win-x64/2.0.0-beta.7) |  |  |
 | Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Monitor.Query.Logs/1.0.0) |  |  |
 | Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Monitor.Query.Metrics/1.0.0) |  |  |
 | Unknown Display Name | NuGet [0.1.4-preview.2](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Aot/0.1.4-preview.2) |  |  |

@@ -490,7 +490,7 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
 
 - **`--max-parallel-test-modules <NUMBER>`**
 
-  Specifies the maximum number of test modules that can run in parallel. The default is `Environment.ProcessorCount`.
+  Specifies the maximum number of test modules that can run in parallel. The default is <xref:System.Environment.ProcessorCount?displayProperty=nameWithType>.
 
 - [!INCLUDE [arch](../../../includes/cli-arch.md)]
 

@@ -2,14 +2,14 @@
 description: "Learn more about: <sectionGroup> element for <configSections>"
 title: "<sectionGroup> element for <configSections>"
 ms.date: "05/01/2017"
-f1_keywords: 
+f1_keywords:
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/configSections/sectionGroup"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "sectionGroup Element"
   - "<sectionGroup> Element"
 ms.assetid: 6c27f9e2-809c-4bc9-aca9-72f90360e7a3
 ---
-# \<sectionGroup> element for \<configSections>
+# `<sectionGroup>` element for \<configSections>
 
 Defines a namespace for configuration sections.
 
@@ -29,13 +29,13 @@ Defines a namespace for configuration sections.
 
 |           | Description |
 | --------- | ----------- |
-| **name**  | Required attribute.<br><br>Specifies the name of the section group you are defining. |
+| `name`  | Required attribute.<br><br>Specifies the name of the section group you are defining. |
 
 ## Parent element
 
 |     | Description |
 | --- | ----------- |
-| [**\<configSections>** Element](configsections-element-for-configuration.md) | Contains configuration section and namespace declarations. |
+| [`<configSections>` Element](configsections-element-for-configuration.md) | Contains configuration section and namespace declarations. |
 
 ## Child elements
 
@@ -45,7 +45,7 @@ Defines a namespace for configuration sections.
 
 ## Remarks
 
-Declaring a section group creates a container tag for configuration sections and ensures that there are no naming conflicts with configuration sections defined by someone else. You can nest **\<sectionGroup>** elements within each other.
+Declaring a section group creates a container tag for configuration sections and ensures that there are no naming conflicts with configuration sections defined by someone else. You can nest `<sectionGroup>` elements within each other.
 
 ## Example
 

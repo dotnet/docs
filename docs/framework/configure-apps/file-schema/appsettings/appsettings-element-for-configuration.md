@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "<appSettings> Element"
 ms.assetid: 39694cc4-6b84-45a6-9329-385a0d8b48fe
 ---
-# \<appSettings> element for \<configuration>
+# `<appSettings>` element for \<configuration>
 
 Contains custom application settings. This is a predefined configuration section provided by the .NET Framework.
 
@@ -28,13 +28,13 @@ Contains custom application settings. This is a predefined configuration section
 
 |           | Description |
 | --------- | ----------- |
-| **file**  | Optional attribute.<br><br>Specifies a relative path to an external file containing custom application configuration settings. The specified file contains the same kind of settings that are specified in the **\<add>**, **\<remove>**, and **\<clear>** elements and uses the same key/value pair format as those elements.<br><br>The path specified is relative to the main configuration file. For a Windows Forms application, this is the binary folder (such as */bin/debug*), not the location of the application configuration file. For Web Forms applications, the path is relative to the application root, where the *web.config* file is located.<br><br>The runtime ignores the attribute if the specified file can't be found. |
+| `file`  | Optional attribute.<br><br>Specifies a relative path to an external file containing custom application configuration settings. The specified file contains the same kind of settings that are specified in the `<add>`, **\<remove>**, and `<clear>` elements and uses the same key/value pair format as those elements.<br><br>The path specified is relative to the main configuration file. For a Windows Forms application, this is the binary folder (such as */bin/debug*), not the location of the application configuration file. For Web Forms applications, the path is relative to the application root, where the *web.config* file is located.<br><br>The runtime ignores the attribute if the specified file can't be found. |
 
 ## Parent element
 
 |     | Description |
 | --- | ----------- |
-| [**\<configuration>** Element](../configuration-element.md) | The root element in every configuration file used by the common language runtime and .NET Framework applications. |
+| [`<configuration>` Element](../configuration-element.md) | The root element in every configuration file used by the common language runtime and .NET Framework applications. |
 
 ## Child elements
 
@@ -46,11 +46,11 @@ Contains custom application settings. This is a predefined configuration section
 
 ## Remarks
 
-The **\<appSettings>** element stores custom application configuration information, such as database connection strings, file paths, XML Web service URLs, or any other custom configuration information for an application. The key/value pairs specified in the **\<appSettings>** element are accessed in code using the <xref:System.Configuration.ConfigurationSettings> class.
+The `<appSettings>` element stores custom application configuration information, such as database connection strings, file paths, XML Web service URLs, or any other custom configuration information for an application. The key/value pairs specified in the `<appSettings>` element are accessed in code using the <xref:System.Configuration.ConfigurationSettings> class.
 
-You can use the **file** attribute in the **\<appSettings>** element of the *Web.config* and application configuration files. This attribute specifies a configuration file that provides additional settings or overrides the settings specified in the **\<appSettings>** element. The **file** attribute can be used in source control team development scenarios, such as when a user wants to override the project settings specified in an application configuration file.
+You can use the `file` attribute in the `<appSettings>` element of the *Web.config* and application configuration files. This attribute specifies a configuration file that provides additional settings or overrides the settings specified in the `<appSettings>` element. The `file` attribute can be used in source control team development scenarios, such as when a user wants to override the project settings specified in an application configuration file.
 
-Configuration files specified by the **file** attribute must have a root node of **\<appSettings>** rather than **\<configuration>**.
+Configuration files specified by the `file` attribute must have a root node of `<appSettings>` rather than **\<configuration>**.
 
 ## Example
 

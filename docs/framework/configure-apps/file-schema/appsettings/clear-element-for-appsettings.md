@@ -2,14 +2,14 @@
 description: "Learn more about: <clear> element for <appSettings>"
 title: "<clear> element for <appSettings>"
 ms.date: "05/01/2017"
-f1_keywords: 
+f1_keywords:
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/appSettings/clear"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "clear Element"
   - "<clear> Element"
 ms.assetid: 6d18c7be-27db-438b-8fb5-765d396b0b7b
 ---
-# \<clear> element for \<appSettings>
+# `<clear>` element for \<appSettings>
 
 Clears custom application settings.
 

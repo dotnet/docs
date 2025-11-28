@@ -6,41 +6,41 @@ ms.assetid: 3c6017b6-0c4f-4192-bd67-9515f5d1ec82
 ---
 # \<behaviors> of workflow
 
-This element contains the **serviceBehaviors** collection.  Each element in the collection defines behavior elements consumed by workflow services. Each behavior element is identified by its unique **name** attribute.  
-  
+This element contains the `serviceBehaviors` collection.  Each element in the collection defines behavior elements consumed by workflow services. Each behavior element is identified by its unique `name` attribute.
+
 [**\<configuration>**](../configuration-element.md)\
 &nbsp;&nbsp;[**\<system.ServiceModel>**](system-servicemodel-of-workflow.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;**\<behaviors>**  
-  
-## Syntax  
-  
-```xml  
-<behaviors>  
-  <serviceBehaviors>  
-  </serviceBehaviors>  
-</behaviors>  
-```  
-  
-## Attributes and Elements  
+&nbsp;&nbsp;&nbsp;&nbsp;**\<behaviors>**
 
- The following sections describe attributes, child elements, and parent elements.  
-  
-### Attributes  
+## Syntax
 
- None  
-  
-### Child Elements  
-  
-|Element|Description|  
-|-------------|-----------------|  
-|[\<serviceBehaviors>](servicebehaviors-of-workflow.md)|This configuration section represents all the behaviors defined for a specific workflow service.|  
-  
-### Parent Elements  
-  
-|Element|Description|  
-|-------------|-----------------|  
-|[\<system.serviceModel>](../wcf/system-servicemodel.md)|The root element of all workflow configuration elements.|  
-  
+```xml
+<behaviors>
+  <serviceBehaviors>
+  </serviceBehaviors>
+</behaviors>
+```
+
+## Attributes and Elements
+
+ The following sections describe attributes, child elements, and parent elements.
+
+### Attributes
+
+ None
+
+### Child Elements
+
+|Element|Description|
+|-------------|-----------------|
+|[\<serviceBehaviors>](servicebehaviors-of-workflow.md)|This configuration section represents all the behaviors defined for a specific workflow service.|
+
+### Parent Elements
+
+|Element|Description|
+|-------------|-----------------|
+|[\<system.serviceModel>](../wcf/system-servicemodel.md)|The root element of all workflow configuration elements.|
+
 ## See also
 
 - <xref:System.ServiceModel.Configuration.BehaviorsSection>

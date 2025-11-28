@@ -2,14 +2,14 @@
 description: "Learn more about: <remove> element for <appSettings>"
 title: "<remove> element for <appSettings>"
 ms.date: "05/01/2017"
-f1_keywords: 
+f1_keywords:
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/appSettings/remove"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "remove Element"
   - "<remove> Element"
 ms.assetid: 218c4464-e007-4539-803f-7c8b0a909fd8
 ---
-# \<remove> element for \<appSettings>
+# `<remove>` element for \<appSettings>
 
 Removes custom application settings.
 
@@ -29,7 +29,7 @@ Removes custom application settings.
 
 |         | Description |
 | ------- | ----------- |
-| **key** | Required attribute.<br><br>Specifies the name of the key to remove. |
+| `key` | Required attribute.<br><br>Specifies the name of the key to remove. |
 
 ### Parent element
 

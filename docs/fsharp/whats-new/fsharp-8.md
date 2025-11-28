@@ -129,6 +129,7 @@ Numeric literals can now be expressed using existing operators and other literal
 :::code language="fsharp" source="snippets/fsharp-8/LiteralArithmetic.fsx" id="Literals":::
 
 Supported operators:
+
 - Numeric types: `+`, `-`, `*`, `/`, `%`, `&&&`, `|||`, `<<<`, `>>>`, `^^^`, `~~~`, `**`
 - Booleans: `not`, `&&`, `||`
 

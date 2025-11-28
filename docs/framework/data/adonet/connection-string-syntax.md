@@ -50,7 +50,7 @@ The syntax for a <xref:System.Data.SqlClient.SqlConnection> connection string is
 
 ### Windows authentication with SqlClient
 
- Each of the following forms of syntax uses Windows Authentication to connect to the **AdventureWorks** database on a local server.
+ Each of the following forms of syntax uses Windows Authentication to connect to the `AdventureWorks` database on a local server.
 
 ```csharp
 "Persist Security Info=False;Integrated Security=true;
@@ -148,7 +148,7 @@ Provider=Microsoft.Jet.OLEDB.4.0;Data Source=d:\Northwind.mdb;Jet OLEDB:System D
 ```
 
 > [!IMPORTANT]
-> It is possible to supply connection information for an **OleDbConnection** in a Universal Data Link (UDL) file; however you should avoid doing so. UDL files are not encrypted, and expose connection string information in clear text. Because a UDL file is an external file-based resource to your application, it cannot be secured using .NET Framework. UDL files are not supported for **SqlClient**.
+> It is possible to supply connection information for an `OleDbConnection` in a Universal Data Link (UDL) file; however you should avoid doing so. UDL files are not encrypted, and expose connection string information in clear text. Because a UDL file is an external file-based resource to your application, it cannot be secured using .NET Framework. UDL files are not supported for **SqlClient**.
 
 [!INCLUDE [managed-identities](../../../includes/managed-identities.md)]
 

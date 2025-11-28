@@ -18,7 +18,7 @@ All statistical values gathered are on a per-connection basis.
 
 ## Statistical Values Available
 
- Currently there are 18 different items available from the Microsoft SQL Server provider. The number of items available can be accessed via the **Count** property of the <xref:System.Collections.IDictionary> interface reference returned by <xref:System.Data.SqlClient.SqlConnection.RetrieveStatistics%2A>. All of the counters for provider statistics use the common language runtime <xref:System.Int64> type (**long** in C# and Visual Basic), which is 64 bits wide. The maximum value of the **int64** data type, as defined by the **int64.MaxValue** field, is ((2^63)-1)). When the values for the counters reach this maximum value, they should no longer be considered accurate. This means that **int64.MaxValue**-1((2^63)-2) is effectively the greatest valid value for any statistic.
+ Currently there are 18 different items available from the Microsoft SQL Server provider. The number of items available can be accessed via the `Count` property of the <xref:System.Collections.IDictionary> interface reference returned by <xref:System.Data.SqlClient.SqlConnection.RetrieveStatistics%2A>. All of the counters for provider statistics use the common language runtime <xref:System.Int64> type (**long** in C# and Visual Basic), which is 64 bits wide. The maximum value of the **int64** data type, as defined by the **int64.MaxValue** field, is ((2^63)-1)). When the values for the counters reach this maximum value, they should no longer be considered accurate. This means that **int64.MaxValue**-1((2^63)-2) is effectively the greatest valid value for any statistic.
 
 > [!NOTE]
 > A dictionary is used for returning provider statistics because the number, names and order of the returned statistics may change in the future. Applications should not rely on a specific value being found in the dictionary, but should instead check whether the value is there and branch accordingly.
@@ -51,7 +51,7 @@ All statistical values gathered are on a per-connection basis.
  The following console application shows how to enable statistics on a connection, retrieve four individual statistic values, and write them out to the console window.
 
 > [!NOTE]
-> The following example uses the sample **AdventureWorks** database included with SQL Server. The connection string provided in the sample code assumes the database is installed and available on the local computer. Modify the connection string as necessary for your environment.
+> The following example uses the sample `AdventureWorks` database included with SQL Server. The connection string provided in the sample code assumes the database is installed and available on the local computer. Modify the connection string as necessary for your environment.
 
 ```vb
 Option Strict On
@@ -206,7 +206,7 @@ namespace CS_Stats_Console_GetValue
  The following console application shows how to enable statistics on a connection, retrieve all available statistic values using the enumerator, and write them to the console window.
 
 > [!NOTE]
-> The following example uses the sample **AdventureWorks** database included with SQL Server. The connection string provided in the sample code assumes the database is installed and available on the local computer. Modify the connection string as necessary for your environment.
+> The following example uses the sample `AdventureWorks` database included with SQL Server. The connection string provided in the sample code assumes the database is installed and available on the local computer. Modify the connection string as necessary for your environment.
 
 ```vb
 Option Strict On

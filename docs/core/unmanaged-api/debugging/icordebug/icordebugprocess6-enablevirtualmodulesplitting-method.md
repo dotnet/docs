@@ -42,11 +42,11 @@ The modules found in a container.
 regular modules
 Modules that were not merged at build time. They are neither container modules nor sub-modules.
 
-Both container modules and sub-modules are represented by ICorDebugModule interface objects. However, the behavior of the interface is slightly different in each case, as the \<x-ref to section> section describes.
+Both container modules and sub-modules are represented by `ICorDebugModule` interface objects. However, the behavior of the interface is slightly different in each case.
 
 ## Modules and assemblies
 
-Multi-module assemblies are not supported for assembly merging scenarios, so there is a one-to-one relationship between a module and an assembly. Each ICorDebugModule object, regardless of whether it represents a container module or a sub-module, has a corresponding ICorDebugAssembly object. The [ICorDebugModule::GetAssembly](icordebugmodule-getassembly-method.md) method converts from the module to the assembly. To map in the other direction, the [ICorDebugAssembly::EnumerateModules](icordebugassembly-enumeratemodules-method.md) method enumerates only 1 module. Because assembly and module form a tightly coupled pair in this case, the terms assembly and module become largely interchangeable.
+Multi-module assemblies are not supported for assembly merging scenarios, so there is a one-to-one relationship between a module and an assembly. Each `ICorDebugModule` object, regardless of whether it represents a container module or a sub-module, has a corresponding ICorDebugAssembly object. The [ICorDebugModule::GetAssembly](icordebugmodule-getassembly-method.md) method converts from the module to the assembly. To map in the other direction, the [ICorDebugAssembly::EnumerateModules](icordebugassembly-enumeratemodules-method.md) method enumerates only 1 module. Because assembly and module form a tightly coupled pair in this case, the terms assembly and module become largely interchangeable.
 
 ## Behavioral differences
 
@@ -102,7 +102,7 @@ The following table shows how virtual module splitting affects the behavior of o
 |[ICorDebugClass::GetModule](icordebugclass-getmodule-method.md)|Returns the sub-module this class was originally defined in.|Returns the container module this class was merged into.|
 |ICorDebugModuleDebugEvent::GetModule|Returns the container module that was loaded. Sub-modules are not given load events regardless of this setting.|Returns the container module that was loaded.|
 |[ICorDebugAppDomain::EnumerateAssemblies](icordebugappdomain-enumerateassemblies-method.md)|Returns a list of sub-assemblies and regular assemblies; no container assemblies are included. **Note:**  If any container assembly is missing symbols, none of its sub-assemblies will be enumerated. If any regular assembly is missing symbols, it may or may not be enumerated.|Returns a list of container assemblies and regular assemblies; no sub-assemblies are included. **Note:**  If any regular assembly is missing symbols, it may or may not be enumerated.|
-|[ICorDebugCode::GetCode](icordebugcode-getcode-method.md) (when referring to IL code only)|Returns IL that would be valid in a pre-merge assembly image. Specifically, any inline metadata tokens will correctly be TypeRef or MemberRef tokens when the types being referred to are not defined in the virtual module containing the IL. These TypeRef or MemberRef tokens can be looked up in the [IMetaDataImport](../../metadata/interfaces/imetadataimport-interface.md) object for the corresponding virtual ICorDebugModule object.|Returns the IL in the post-merge assembly image.|
+|[ICorDebugCode::GetCode](icordebugcode-getcode-method.md) (when referring to IL code only)|Returns IL that would be valid in a pre-merge assembly image. Specifically, any inline metadata tokens will correctly be TypeRef or MemberRef tokens when the types being referred to are not defined in the virtual module containing the IL. These TypeRef or MemberRef tokens can be looked up in the [IMetaDataImport](../../metadata/interfaces/imetadataimport-interface.md) object for the corresponding virtual `ICorDebugModule` object.|Returns the IL in the post-merge assembly image.|
 
 ## Requirements
 

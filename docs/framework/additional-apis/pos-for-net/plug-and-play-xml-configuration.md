@@ -16,9 +16,9 @@ To support these cases, Microsoft Point of Service for .NET (POS for .NET) speci
 
 A Plug and Play configuration file must begin with a top-level node named **PointOfServiceConfig** and have the attribute **Version** to indicate the XML version of the file.
 
-Following that, there may be any number of **ServiceObject** subnodes. Each service object node must include **Type** and **Name** attributes to indicate the POS device type and name of the Service Object. These two fields will be matched against available Service Objects to determine which, if any, should be associated with devices specified in the subnode **HardwareId**. There is also an optional attribute on the **ServiceObject** node, **Override**. If this attribute is set, then the device associations in the XML file overrides those contained in the assembly.
+Following that, there may be any number of **ServiceObject** subnodes. Each service object node must include `Type` and `Name` attributes to indicate the POS device type and name of the Service Object. These two fields will be matched against available Service Objects to determine which, if any, should be associated with devices specified in the subnode **HardwareId**. There is also an optional attribute on the **ServiceObject** node, `Override`. If this attribute is set, then the device associations in the XML file overrides those contained in the assembly.
 
-The **ServiceObject** node contains subnodes with the name **HardwareId**, which have **From** and **To** attributes. The contents of these attributes are the same as would be found in the **HardwareId** attribute in a Service Object assembly and specify the range of hardware IDs to associate with the Service Object.
+The **ServiceObject** node contains subnodes with the name **HardwareId**, which have `From` and `To` attributes. The contents of these attributes are the same as would be found in the `HardwareId` attribute in a Service Object assembly and specify the range of hardware IDs to associate with the Service Object.
 
 ## Example
 
@@ -35,17 +35,17 @@ The example shows a typical XML Plug and Play configuration file.
 
 ## Hardware ID Precedence
 
-If the **Override** attribute on the **ServiceObject** node is set, then the device association specified in the XML takes precedence, and any **HardwareId** attribute on the Service Object will be discarded.
+If the `Override` attribute on the **ServiceObject** node is set, then the device association specified in the XML takes precedence, and any `HardwareId` attribute on the Service Object will be discarded.
 
-If the **Override** attribute is not set, then neither the XML nor the **HardwareId** has precedence. Instead, **PosExplorer** associates the union of all specified devices with the Service Object.
+If the `Override` attribute is not set, then neither the XML nor the **HardwareId** has precedence. Instead, **PosExplorer** associates the union of all specified devices with the Service Object.
 
 ## See Also
 
-#### Tasks
+### Tasks
 
 - [Adding Plug and Play Support](adding-plug-and-play-support.md)
 
-#### Concepts
+### Concepts
 
 - [Plug and Play Support](plug-and-play-support.md)
 - [POS for .NET Registry Settings](pos-for-net-registry-settings.md)

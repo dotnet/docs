@@ -2,15 +2,15 @@
 description: "Learn more about: Custom element for SingleTagSectionHandler"
 title: "Custom element for SingleTagSectionHandler"
 ms.date: "05/01/2017"
-f1_keywords: 
+f1_keywords:
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/sectionName"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "custom element"
 ms.assetid: e62056c6-b351-40eb-afc0-cc13fc44e45e
 ---
 # Custom element for SingleTagSectionHandler
 
-Defines settings in a custom configuration section that is defined by a \<section> element and uses the <xref:System.Configuration.SingleTagSectionHandler> class.
+Defines settings in a custom configuration section that is defined by a `<section>` element and uses the <xref:System.Configuration.SingleTagSectionHandler> class.
 
 [**\<configuration>**](configuration-element.md)\
 &nbsp;&nbsp;*\<sectionName>*
@@ -37,11 +37,11 @@ None
 
 ## Remarks
 
-The **\<sectionName>** element is a custom element defined by a [**\<section>**](section-element.md) tag in the [**\<configSections>**](configsections-element-for-configuration.md) element. The configuration system returns a <xref:System.Collections.IDictionary> object when you call <xref:System.Configuration.Configuration.GetSection(System.String)?displayProperty=nameWithType>.
+The `<sectionName>` element is a custom element defined by a [**\<section>**](section-element.md) tag in the [**\<configSections>**](configsections-element-for-configuration.md) element. The configuration system returns a <xref:System.Collections.IDictionary> object when you call <xref:System.Configuration.Configuration.GetSection(System.String)?displayProperty=nameWithType>.
 
 ## Example
 
-The following example declares a custom element called **\<sampleSection>** that contains settings read by the <xref:System.Configuration.SingleTagSectionHandler> class:
+The following example declares a custom element called `<sampleSection>` that contains settings read by the <xref:System.Configuration.SingleTagSectionHandler> class:
 
 ```xml
 <configuration>

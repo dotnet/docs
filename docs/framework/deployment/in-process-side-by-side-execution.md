@@ -58,7 +58,7 @@ Starting with the .NET Framework 4, you can use in-process side-by-side hosting 
 
      .NET Framework versions installed: An earlier version of the .NET Framework and the .NET Framework 4.
 
-     What to do: In the [application configuration file](../configure-apps/index.md) in the application directory, use the [\<startup> element](../configure-apps/file-schema/startup/startup-element.md) and the [\<supportedRuntime> element](../configure-apps/file-schema/startup/supportedruntime-element.md) set as follows:
+     What to do: In the [application configuration file](../configure-apps/index.md) in the application directory, use the [`<startup>` element](../configure-apps/file-schema/startup/startup-element.md) and the [`<supportedRuntime>` element](../configure-apps/file-schema/startup/supportedruntime-element.md) set as follows:
 
     ```xml
     <configuration>
@@ -174,5 +174,5 @@ int _tmain(int argc, _TCHAR* argv[])
 
 ## See also
 
-- [\<startup> Element](../configure-apps/file-schema/startup/startup-element.md)
-- [\<supportedRuntime> Element](../configure-apps/file-schema/startup/supportedruntime-element.md)
+- [`<startup>` Element](../configure-apps/file-schema/startup/startup-element.md)
+- [`<supportedRuntime>` Element](../configure-apps/file-schema/startup/supportedruntime-element.md)

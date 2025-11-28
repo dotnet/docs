@@ -1,77 +1,86 @@
 ---
-title: Microsoft.Testing.Platform services overview
-description: Learn about the Microsoft.Testing.Platform available services.
+title: Microsoft.Testing.Platform services reference
+description: Comprehensive reference for services provided by Microsoft.Testing.Platform, including configuration, logging, message bus, and more.
 author: MarcoRossignoli
 ms.author: mrossignoli
-ms.date: 07/11/2024
+ms.date: 11/27/2025
+ai-usage: ai-assisted
 ---
 
-# Microsoft.Testing.Platform Services
+# Microsoft.Testing.Platform services reference
 
-The testing platform offers valuable services to both the testing framework and extension points. These services cater to common needs such as accessing the configuration, parsing and retrieving command-line arguments, obtaining the logging factory, and accessing the logging system, among others. `IServiceProvider` implements the _service locator pattern_ for the testing platform.
+Microsoft.Testing.Platform provides services to test frameworks and extensions through dependency injection. Services handle common needs like configuration, logging, command-line parsing, and inter-component communication.
 
-The `IServiceProvider` is derived directly from the base class library.
+All services are accessed through `IServiceProvider`, which implements the service locator pattern.
+
+## Access services
+
+Services are provided to your components through factory methods:
 
 ```csharp
-namespace System
-{
-    public interface IServiceProvider
+// In test framework registration
+builder.RegisterTestFramework(
+    serviceProvider =>
     {
-        object? GetService(Type serviceType);
-    }
+        // Access services here
+        var config = serviceProvider.GetConfiguration();
+        var logger = serviceProvider.GetLoggerFactory().CreateLogger("MyFramework");
+        
+        return new MyTestFrameworkCapabilities();
+    },
+    (capabilities, serviceProvider) =>
+    {
+        // Or access services here
+        return new MyTestFramework(capabilities, serviceProvider);
+    });
+
+// In extension registration
+builder.TestHost.AddDataConsumer(
+    serviceProvider =>
+    {
+        // Access services in extension factory
+        var messageBus = serviceProvider.GetMessageBus();
+        var commandLine = serviceProvider.GetCommandLineOptions();
+        
+        return new MyDataConsumer(messageBus, commandLine);
+    });
+```
+
+## Service locator APIs
+
+The base `IServiceProvider` interface from .NET BCL:
+
+```csharp
+public interface IServiceProvider
+{
+    object? GetService(Type serviceType);
 }
 ```
 
-The testing platform offers handy extension methods to access well-known service objects. All these methods are housed in a static class within the `Microsoft.Testing.Platform.Services` namespace.
+Platform extension methods for typed access:
 
 ```csharp
 public static class ServiceProviderExtensions
 {
-    public static TService GetRequiredService<TService>(
-        this IServiceProvider provider)
-
-    public static TService? GetService<TService>(
-        this IServiceProvider provider)
-
-    public static IMessageBus GetMessageBus(
-        this IServiceProvider serviceProvider)
-
-    public static IConfiguration GetConfiguration(
-        this IServiceProvider serviceProvider)
-
-    public static ICommandLineOptions GetCommandLineOptions(
-        this IServiceProvider serviceProvider)
-
-    public static ILoggerFactory GetLoggerFactory(
-        this IServiceProvider serviceProvider)
-
-    public static IOutputDevice GetOutputDevice(
-        this IServiceProvider serviceProvider)
-
-    // ... and more
+    // Generic service access
+    public static TService GetRequiredService<TService>(this IServiceProvider provider);
+    public static TService? GetService<TService>(this IServiceProvider provider);
+    
+    // Platform-specific services
+    public static IMessageBus GetMessageBus(this IServiceProvider provider);
+    public static IConfiguration GetConfiguration(this IServiceProvider provider);
+    public static ICommandLineOptions GetCommandLineOptions(this IServiceProvider provider);
+    public static ILoggerFactory GetLoggerFactory(this IServiceProvider provider);
+    public static IOutputDevice GetOutputDevice(this IServiceProvider provider);
+    public static IPlatformInformation GetPlatformInformation(this IServiceProvider provider);
 }
 ```
 
-Most of the registration factories exposed by extension points provide access to the `IServiceProvider`: For example, when [registering the testing framework](./microsoft-testing-platform-architecture-extensions.md#register-a-testing-framework), the `IServiceProvider` is passed as a parameter to the factory method.
+## IConfiguration service
 
-```csharp
-ITestApplicationBuilder RegisterTestFramework(
-    Func<IServiceProvider, ITestFrameworkCapabilities> capabilitiesFactory,
-    Func<ITestFrameworkCapabilities, IServiceProvider, ITestFramework> adapterFactory);
-```
+Provides access to configuration settings from JSON files and environment variables.
 
-In the preceding code, both the `capabilitiesFactory` and the `adapterFactory` supply the `IServiceProvider` as a parameter.
-
-## The `IConfiguration` service
-
-The `IConfiguration` interface can be retrieved using the [`IServiceProvider`](#microsofttestingplatform-services) and provides access to the configuration settings for the testing framework and any extension points. By default, these configurations are loaded from:
-
-* Environment variables
-* A JSON file named `[assemblyName].testingplatformconfig.json` located near the entry point assembly.
-
-**The order of precedence is maintained, which means that if a configuration is found in the environment variables, the JSON file will not be processed.**
-
-The interface is a straightforward key-value pair of strings:
+### Interface
 
 ```csharp
 public interface IConfiguration
@@ -80,75 +89,147 @@ public interface IConfiguration
 }
 ```
 
-### JSON configuration file
+### Configuration sources
 
-The JSON file follows a hierarchical structure. To access child properties, you need to use the `:` separator. For example, consider a configuration for a potential testing framework like:
+Configuration is loaded in order of precedence (first match wins):
+
+1. **Environment variables** (highest priority)
+2. **JSON configuration file**: `[assemblyname].testingplatformconfig.json`
+
+### Access configuration
+
+```csharp
+public class MyTestFramework : ITestFramework
+{
+    private readonly IConfiguration _config;
+    
+    public MyTestFramework(IServiceProvider serviceProvider)
+    {
+        _config = serviceProvider.GetConfiguration();
+        
+        // Read settings
+        var timeout = _config["MyFramework:DefaultTimeout"];
+        var parallelism = _config["MyFramework:MaxParallelism"];
+    }
+}
+```
+
+### JSON configuration format
+
+Configuration files use hierarchical JSON. Access nested properties with `:` separator:
+
+**File**: `MyTests.testingplatformconfig.json`
 
 ```json
 {
-  "CustomTestingFramework": {
-    "DisableParallelism": true
+  "MyTestFramework": {
+    "DefaultTimeout": "30s",
+    "MaxParallelism": 4,
+    "Retry": {
+      "Enabled": true,
+      "MaxAttempts": 3
+    }
   }
 }
 ```
 
-The code snippet would look something like this:
+**Access in code**:
 
 ```csharp
-IServiceProvider serviceProvider = null; // Get the service provider...
-
-var configuration = serviceProvider.GetConfiguration();
-
-if (bool.TryParse(configuration["CustomTestingFramework:DisableParallelism"], out var value) && value is true)
-{
-    // ...
-}
+var timeout = _config["MyTestFramework:DefaultTimeout"];           // "30s"
+var parallelism = _config["MyTestFramework:MaxParallelism"];       // "4"
+var retryEnabled = _config["MyTestFramework:Retry:Enabled"];       // "true"
+var maxAttempts = _config["MyTestFramework:Retry:MaxAttempts"];    // "3"
 ```
 
-In the case of an array, such as:
+### Array configuration
+
+Arrays use zero-based indices:
 
 ```json
 {
-  "CustomTestingFramework": {
-    "Engine": [
-      "ThreadPool",
-      "CustomThread"
+  "MyFramework": {
+    "IncludedCategories": [
+      "Unit",
+      "Integration",
+      "E2E"
     ]
   }
 }
 ```
 
-The syntax to access to the fist element ("ThreadPool") is:
-
 ```csharp
-IServiceProvider serviceProvider = null; // Get the service provider...
-
-var configuration = serviceProvider.GetConfiguration();
-
-var fistElement = configuration["CustomTestingFramework:Engine:0"];
+var first = _config["MyFramework:IncludedCategories:0"];   // "Unit"
+var second = _config["MyFramework:IncludedCategories:1"];  // "Integration"
 ```
 
-### Environment variables
+### Environment variable configuration
 
-The `:` separator doesn't work with environment variable hierarchical keys on all platforms. `__`, the double underscore, is:
+Use double underscore `__` instead of `:` for hierarchical keys:
 
-* Supported by all platforms. For example, the `:` separator is not supported by [Bash](https://linuxhint.com/bash-environment-variables/), but `__` is.
-* Automatically replaced by a `:`
+**Windows**:
 
-For instance, the environment variable can be set as follows (This example is applicable for Windows):
+```cmd
+setx MyFramework__DefaultTimeout=60s
+setx MyFramework__MaxParallelism=8
+```
+
+**Linux/macOS**:
 
 ```bash
-setx CustomTestingFramework__DisableParallelism=True
+export MyFramework__DefaultTimeout=60s
+export MyFramework__MaxParallelism=8
 ```
 
-You can choose not to use the environment variable configuration source when creating the `ITestApplicationBuilder`:
+> [!NOTE]
+> Double underscore (`__`) is supported on all platforms. Single colon (`:`) doesn't work in environment variable names on some systems.
+
+### Disable environment variable configuration
 
 ```csharp
-var options = new TestApplicationOptions();
-
-options.Configuration.ConfigurationSources.RegisterEnvironmentVariablesConfigurationSource = false;
+var options = new TestApplicationOptions
+{
+    Configuration =
+    {
+        ConfigurationSources =
+        {
+            RegisterEnvironmentVariablesConfigurationSource = false
+        }
+    }
+};
 
 var builder = await TestApplication.CreateBuilderAsync(args, options);
+```
+
+### Best practices
+
+**DO**:
+
+- Use hierarchical naming for settings
+- Prefix settings with your framework/extension name
+- Document expected configuration keys
+- Provide defaults for all settings
+- Parse and validate configuration early
+
+**Example**:
+
+```csharp
+private readonly TimeSpan _timeout;
+private readonly int _maxParallelism;
+
+public MyTestFramework(IServiceProvider serviceProvider)
+{
+    var config = serviceProvider.GetConfiguration();
+    
+    // Parse with defaults
+    _timeout = TimeSpan.TryParse(
+        config["MyFramework:DefaultTimeout"], 
+        out var t) ? t : TimeSpan.FromSeconds(30);
+    
+    _maxParallelism = int.TryParse(
+        config["MyFramework:MaxParallelism"], 
+        out var p) && p > 0 ? p : Environment.ProcessorCount;
+}
 ```
 
 ## The `ICommandLineOptions` service

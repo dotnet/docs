@@ -31,7 +31,7 @@ Consider the following example project file:
 
     <!--
       Displays error on console in addition to the log file. Note that this feature comes with a performance impact.
-      For more information, visit https://learn.microsoft.com/dotnet/core/testing/microsoft-testing-platform-integration-dotnet-test#show-failure-per-test
+      For more information, visit https://learn.microsoft.com/dotnet/core/testing/microsoft-testing-platform-run-tests#dotnet-test
       -->
     <TestingPlatformShowTestsFailure>true</TestingPlatformShowTestsFailure>
 

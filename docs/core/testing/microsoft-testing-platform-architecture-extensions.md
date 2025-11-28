@@ -1,57 +1,143 @@
 ---
-title: Microsoft.Testing.Platform extensions architecture overview
-description: Learn about how to extend Microsoft.Testing.Platform.
+title: Build extensions for Microsoft.Testing.Platform
+description: Learn how to build custom extensions that enhance Microsoft.Testing.Platform with features like custom reports, code coverage, and monitoring.
 author: MarcoRossignoli
 ms.author: mrossignoli
-ms.date: 07/11/2024
+ms.date: 11/27/2025
+ai-usage: ai-assisted
 ---
 
-# Microsoft.Testing.Platform extensibility
+# Build extensions for Microsoft.Testing.Platform
 
-Microsoft.Testing.Platform consists of a [testing framework](#test-framework-extension) and any number of [extensions](#other-extensibility-points) that can operate *in-process* or *out-of-process*.
+Microsoft.Testing.Platform is built on a flexible extension model that allows you to add custom functionality to the testing experience. Extensions can:
 
-As outlined in the [architecture](./microsoft-testing-platform-architecture.md) section, Microsoft.Testing.Platform is designed to accommodate a variety of scenarios and extensibility points. The primary and essential extension is undoubtedly the [testing framework](#test-framework-extension) that your tests will utilize. Failing to register this results in startup error. **The [testing framework](#test-framework-extension) is the sole mandatory extension required to execute a testing session.**
+- Process test results to generate reports
+- Add command-line options for configuration
+- Monitor test execution for hangs or crashes
+- Collect code coverage or performance metrics
+- Implement custom logging or diagnostic features
 
-To support scenarios such as generating test reports, code coverage, retrying failed tests, and other potential features, you need to provide a mechanism that allows other extensions to work in conjunction with the [testing framework](#test-framework-extension) to deliver these features not inherently provided by the [testing framework](#test-framework-extension) itself.
+This article explains how to build extensions that integrate with the platform.
 
-In essence, the [testing framework](#test-framework-extension) is the primary extension that supplies information about each test that makes up the test suite. It reports whether a specific test has succeeded, failed, skipped, and can provide additional information about each test, such as a human-readable name (referred to as the display name), the source file, and the line where our test begins, among other things.
+> [!TIP]
+> For building a test framework (the core component that discovers and runs tests), see [Build a test framework](microsoft-testing-platform-architecture-testframework.md).
 
-The extensibility point enables the utilization of information provided by the [testing framework](#test-framework-extension) to generate new artifacts or to enhance existing ones with additional features. A commonly used extension is the TRX report generator, which subscribes to the [TestNodeUpdateMessage](#the-testnodeupdatemessage-data) and generates an XML report file from it.
+> [!NOTE]
+> Complete working examples are available in the [Microsoft Test Framework repository](https://github.com/microsoft/testfx/tree/main/samples/public/TestingPlatformExamples).
 
-As discussed in the [architecture](./microsoft-testing-platform-architecture.md), there are certain extension points that *cannot* operate within the same process as the [testing framework](#test-framework-extension). The reasons typically include:
+## Extension types overview
 
-* The need to modify the *environment variables* of the *test host*. Acting within the test host process itself is *too late*.
-* The requirement to *monitor* the process from the outside because the *test host*, where tests and user code run, might have some *user code bugs* that render the process itself *unstable*, leading to potential *hangs* or *crashes*. In such cases, the extension would crash or hang along with the *test host* process.
+Extensions fall into two categories based on where they run:
 
-Due to these reasons, the extension points are categorized into two types:
+### In-process extensions
 
-1. *In-process extensions*: These extensions operate within the same process as the [testing framework](#test-framework-extension).
+In-process extensions run inside the test host process alongside your tests. They have direct access to test execution but are affected if the test host crashes.
 
-    You can register *in-process extensions* via the `ITestApplicationBuilder.TestHost` property:
+**Use cases:**
 
-    ```csharp
-    // ...
+- Generate test reports (TRX, HTML, JSON)
+- Consume and aggregate test results
+- Add custom command-line options
+- Implement test retry logic
+- Collect telemetry
+
+**Register via:**
+
+```csharp
+builder.TestHost.AddXXX(...)
+```
+
+### Out-of-process extensions
+
+Out-of-process extensions run in a separate process (the test host controller) that monitors the test host. They remain stable even if the test host crashes.
+
+**Use cases:**
+
+- Collect code coverage (requires environment setup)
+- Detect and report hangs
+- Monitor resource usage
+- Implement crash recovery
+- Set environment variables before tests run
+
+**Register via:**
+
+```csharp
+builder.TestHostControllers.AddXXX(...)
+```
+
+### Dual-context extensions
+
+Some extensions work in both contexts. They're registered once but can be used from either in-process or out-of-process contexts.
+
+**Examples:**
+
+- Command-line option providers
+- Configuration providers
+
+**Register via:**
+
+```csharp
+builder.CommandLine.AddProvider(...)
+```
+
+## Quick start: Build your first extension
+
+Here's a minimal example of a data consumer extension that logs test results:
+
+```csharp
+using Microsoft.Testing.Platform.Extensions;
+using Microsoft.Testing.Platform.Extensions.TestHost;
+using Microsoft.Testing.Platform.Extensions.Messages;
+
+internal class SimpleTestLogger : IDataConsumer, ITestHostExtension
+{
+    // IExtension members - required for all extensions
+    public string Uid => "SimpleTestLogger";
+    public string Version => "1.0.0";
+    public string DisplayName => "Simple Test Logger";
+    public string Description => "Logs test results to console";
+    
+    public Task<bool> IsEnabledAsync() => Task.FromResult(true);
+    
+    // IDataConsumer members
+    public Type[] DataTypesConsumed => new[] { typeof(TestNodeUpdateMessage) };
+    
+    public Task ConsumeAsync(
+        IDataProducer dataProducer, 
+        IData value, 
+        CancellationToken cancellationToken)
+    {
+        if (value is TestNodeUpdateMessage testUpdate)
+        {
+            var testNode = testUpdate.TestNode;
+            var state = testNode.Properties.Single<TestNodeStateProperty>();
+            
+            Console.WriteLine($"Test: {testNode.DisplayName} - Status: {state.GetType().Name}");
+        }
+        
+        return Task.CompletedTask;
+    }
+}
+
+// Register the extension
+public static async Task<int> Main(string[] args)
+{
     var builder = await TestApplication.CreateBuilderAsync(args);
-    builder.TestHost.AddXXX(...);
-    // ...
-    ```
+    
+    // Register test framework (required)
+    builder.RegisterTestFramework(/* ... */);
+    
+    // Register our custom extension
+    builder.TestHost.AddDataConsumer(sp => new SimpleTestLogger());
+    
+    using var app = await builder.BuildAsync();
+    return await app.RunAsync();
+}
+```
 
-1. *Out-of-process extensions*: These extensions function in a separate process, allowing them to monitor the test host without being influenced by the test host itself.
+## The IExtension base interface
 
-    You can register *out-of-process extensions* via the `ITestApplicationBuilder.TestHostControllers`.
-
-    ```csharp
-    var builder = await TestApplication.CreateBuilderAsync(args);
-    builder.TestHostControllers.AddXXX(...);
-    ```
-
-    Lastly, some extensions are designed to function in both scenarios. These common extensions behave identically in both *hosts*. You can register these extensions either through the *TestHost* and *TestHostController* interfaces or directly at the `ITestApplicationBuilder` level. An example of such an extension is the [ICommandLineOptionsProvider](#the-icommandlineoptionsprovider-extensions).
-
-## The `IExtension` interface
-
-The `IExtension` interface serves as the foundational interface for all extensibility points within the testing platform. It's primarily used to obtain descriptive information about the extension and, most importantly, to enable or disable the extension itself.
-
-Consider the following `IExtension` interface:
+All extensions must implement the `IExtension` interface:
 
 ```csharp
 public interface IExtension
@@ -64,41 +150,45 @@ public interface IExtension
 }
 ```
 
-* `Uid`: Represents the unique identifier for the extension. It's crucial to choose a unique value for this string to avoid conflicts with other extensions.
+### Implementation guidelines
 
-* `Version`: Represents the version of the interface. Requires [**semantic versioning**](https://semver.org/).
+**Uid** (Unique identifier):
 
-* `DisplayName`: A user-friendly name representation that will appear in logs and when you request information using the `--info` command line option.
+- Must be unique across all extensions
+- Use reverse domain notation: `"com.mycompany.myextension"`
+- Avoid conflicts with built-in or third-party extensions
 
-* `Description`: The description of the extension, that appears when you request information using the `--info` command line option.
+**Version**:
 
-* `IsEnabledAsync()`: This method is invoked by the testing platform when the extension is being instantiated. If the method returns `false`, the extension will be excluded. This method typically makes decisions based on the [configuration file](./microsoft-testing-platform-architecture-services.md#the-iconfiguration-service) or some [custom command line options](./microsoft-testing-platform-architecture-services.md#the-icommandlineoptions-service). Users often specify `--customExtensionOption` in the command line to opt into the extension itself.
+- Must follow [semantic versioning](https://semver.org/) (major.minor.patch)
+- Example: `"1.0.0"`, `"2.1.3"`
 
-## Test framework extension
+**DisplayName**:
 
-The test framework is the primary extension that provides the testing platform with the ability to discover and execute tests. The test framework is responsible for communicating the results of the tests back to the testing platform. The test framework is the only mandatory extension required to execute a testing session.
+- Human-readable name shown in logs and `--info` output
+- Keep it concise: "TRX Report Generator"
 
-### Register a testing framework
+**Description**:
 
-This section explains how to register the test framework with the testing platform. You register only one testing framework per test application builder using the `TestApplication.RegisterTestFramework` API as shown in [Microsoft.Testing.Platform architecture](./microsoft-testing-platform-architecture.md) documentation.
+- Brief explanation shown with `--info` option
+- Describe what the extension does: "Generates Visual Studio TRX format test reports"
 
-The registration API is defined as follows:
+**IsEnabledAsync()**:
+
+- Return `true` to enable the extension, `false` to disable
+- Use for conditional activation based on configuration or command-line options
+- Called when the extension is instantiated
+
+Example:
 
 ```csharp
-ITestApplicationBuilder RegisterTestFramework(
-    Func<IServiceProvider, ITestFrameworkCapabilities> capabilitiesFactory,
-    Func<ITestFrameworkCapabilities, IServiceProvider, ITestFramework> adapterFactory);
+public async Task<bool> IsEnabledAsync()
+{
+    // Enable based on command-line option
+    var options = _serviceProvider.GetCommandLineOptions();
+    return options.IsOptionSet("enable-custom-logger");
+}
 ```
-
-The `RegisterTestFramework` API expects two factories:
-
-1. `Func<IServiceProvider, ITestFrameworkCapabilities>`: This is a delegate that accepts an object implementing the [`IServiceProvider`](./microsoft-testing-platform-architecture-services.md) interface and returns an object implementing the [`ITestFrameworkCapabilities`](./microsoft-testing-platform-architecture-capabilities.md) interface. The [`IServiceProvider`](./microsoft-testing-platform-architecture-services.md#the-imessagebus-service) provides access to platform services such as configurations, loggers, and command line arguments.
-
-    The [`ITestFrameworkCapabilities`](./microsoft-testing-platform-architecture-capabilities.md) interface is used to announce the capabilities supported by the testing framework to the platform and extensions. It allows the platform and extensions to interact correctly by implementing and supporting specific behaviors. For a better understanding of the [concept of capabilities](./microsoft-testing-platform-architecture-capabilities.md), refer to the respective section.
-
-1. `Func<ITestFrameworkCapabilities, IServiceProvider, ITestFramework>`: This is a delegate that takes in an [ITestFrameworkCapabilities](./microsoft-testing-platform-architecture-capabilities.md) object, which is the instance returned by the `Func<IServiceProvider, ITestFrameworkCapabilities>`, and an [IServiceProvider](./microsoft-testing-platform-architecture-services.md#the-imessagebus-service) to provide access to platform services once more. The expected return object is one that implements the [ITestFramework](#test-framework-extension) interface. The `ITestFramework` serves as the execution engine that discovers and runs tests, and then communicates the results back to the testing platform.
-
-The need for the platform to separate the creation of the [`ITestFrameworkCapabilities`](./microsoft-testing-platform-architecture-capabilities.md) and the creation of the [ITestFramework](#test-framework-extension) is an optimization to avoid creating the test framework if the supported capabilities are not sufficient to execute the current testing session.
 
 Consider the following user code example, which demonstrates a test framework registration that returns an empty capability set:
 

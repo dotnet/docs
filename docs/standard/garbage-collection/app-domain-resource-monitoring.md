@@ -23,7 +23,7 @@ ARM can be enabled in four ways: by supplying a configuration file when the comm
 
 As soon as ARM is enabled, it begins collecting data on all application domains in the process.If an application domain was created before ARM is enabled, cumulative data starts when ARM is enabled, not when the application domain was created.Once it is enabled, ARM cannot be disabled.
 
-- You can enable ARM at CLR startup by adding the [\<appDomainResourceMonitoring>](../../framework/configure-apps/file-schema/runtime/appdomainresourcemonitoring-element.md) element to the configuration file, and setting the `enabled` attribute to `true`. A value of `false` (the default) means only that ARM is not enabled at startup; you can activate it later by using one of the other activation mechanisms.
+- You can enable ARM at CLR startup by adding the [`<appDomainResourceMonitoring>`](../../framework/configure-apps/file-schema/runtime/appdomainresourcemonitoring-element.md) element to the configuration file, and setting the `enabled` attribute to `true`. A value of `false` (the default) means only that ARM is not enabled at startup; you can activate it later by using one of the other activation mechanisms.
 
 - The host can enable ARM by requesting the [ICLRAppDomainResourceMonitor](../../framework/unmanaged-api/hosting/iclrappdomainresourcemonitor-interface.md) hosting interface. Once this interface is successfully obtained, ARM is enabled.
 
@@ -85,5 +85,5 @@ If you use the unmanaged hosting API, your host must pass the CLR an implementat
 
 - <xref:System.AppDomain.MonitoringIsEnabled%2A?displayProperty=nameWithType>
 - [ICLRAppDomainResourceMonitor Interface](../../framework/unmanaged-api/hosting/iclrappdomainresourcemonitor-interface.md)
-- [\<appDomainResourceMonitoring>](../../framework/configure-apps/file-schema/runtime/appdomainresourcemonitoring-element.md)
+- [`<appDomainResourceMonitoring>`](../../framework/configure-apps/file-schema/runtime/appdomainresourcemonitoring-element.md)
 - [CLR ETW Events](../../framework/performance/clr-etw-events.md)

@@ -4,74 +4,74 @@ title: "<clear> Element for schemeSettings (Uri Settings)"
 ms.date: "03/30/2017"
 ms.assetid: 65098332-ce61-4542-ab8d-e7dc0257d31f
 ---
-# \<clear> Element for schemeSettings (Uri Settings)
+# `<clear>` Element for schemeSettings (Uri Settings)
 
-Clears all existing scheme settings.  
+Clears all existing scheme settings.
 
 [**\<configuration>**](../configuration-element.md)\
 &nbsp;&nbsp;[**\<uri>**](uri-element-uri-settings.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;[**\<schemeSettings>**](schemesettings-element-uri-settings.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<clear>**
 
-## Syntax  
-  
-```xml  
-<clear/>  
-```  
-  
-## Attributes and Elements  
+## Syntax
 
- The following sections describe attributes, child elements, and parent elements.  
-  
-### Attributes  
+```xml
+<clear/>
+```
 
- None.  
-  
-### Child Elements  
+## Attributes and Elements
 
- None.  
-  
-### Parent Elements  
-  
-|Element|Description|  
-|-------------|-----------------|  
-|[\<schemeSettings> Element (Uri Settings)](schemesettings-element-uri-settings.md)|Specifies how a <xref:System.Uri> will be parsed for specific schemes.|  
-  
-## Remarks  
+ The following sections describe attributes, child elements, and parent elements.
 
- By default, the <xref:System.Uri?displayProperty=nameWithType> class un-escapes percent encoded path delimiters before executing path compression. This was implemented as a security mechanism against attacks like the following:  
-  
- `http://www.contoso.com/..%2F..%2F/Windows/System32/cmd.exe?/c+dir+c:\`  
-  
- If this URI gets passed down to modules not handling percent encoded characters correctly, it could result in the following command being executed by the server:  
-  
- `c:\Windows\System32\cmd.exe /c dir c:\`  
-  
- For this reason, <xref:System.Uri?displayProperty=nameWithType> class first un-escapes path delimiters and then applies path compression. The result of passing the malicious URL above to <xref:System.Uri?displayProperty=nameWithType> class constructor results in the following URI:  
-  
- `http://www.microsoft.com/Windows/System32/cmd.exe?/c+dir+c:\`  
-  
- This default behavior can be modified to not un-escape percent encoded path delimiters using the schemeSettings configuration option for a specific scheme.  
-  
-## Configuration Files  
+### Attributes
 
- This element can be used in the application configuration file or the machine configuration file (Machine.config).  
-  
-## Example  
+ None.
 
- The following example shows a configuration used by the <xref:System.Uri> class that clears all scheme settings and then adds support for not escaping percent-encoded path delimiters for the http scheme.  
-  
-```xml  
-<configuration>  
-  <uri>  
-    <schemeSettings>  
-      <clear/>  
-      <add name="http" genericUriParserOptions="DontUnescapePathDotsAndSlashes"/>  
-    </schemeSettings>  
-  </uri>  
-</configuration>  
-```  
-  
+### Child Elements
+
+ None.
+
+### Parent Elements
+
+|Element|Description|
+|-------------|-----------------|
+|[\<schemeSettings> Element (Uri Settings)](schemesettings-element-uri-settings.md)|Specifies how a <xref:System.Uri> will be parsed for specific schemes.|
+
+## Remarks
+
+ By default, the <xref:System.Uri?displayProperty=nameWithType> class un-escapes percent encoded path delimiters before executing path compression. This was implemented as a security mechanism against attacks like the following:
+
+ `http://www.contoso.com/..%2F..%2F/Windows/System32/cmd.exe?/c+dir+c:\`
+
+ If this URI gets passed down to modules not handling percent encoded characters correctly, it could result in the following command being executed by the server:
+
+ `c:\Windows\System32\cmd.exe /c dir c:\`
+
+ For this reason, <xref:System.Uri?displayProperty=nameWithType> class first un-escapes path delimiters and then applies path compression. The result of passing the malicious URL above to <xref:System.Uri?displayProperty=nameWithType> class constructor results in the following URI:
+
+ `http://www.microsoft.com/Windows/System32/cmd.exe?/c+dir+c:\`
+
+ This default behavior can be modified to not un-escape percent encoded path delimiters using the schemeSettings configuration option for a specific scheme.
+
+## Configuration Files
+
+ This element can be used in the application configuration file or the machine configuration file (Machine.config).
+
+## Example
+
+ The following example shows a configuration used by the <xref:System.Uri> class that clears all scheme settings and then adds support for not escaping percent-encoded path delimiters for the http scheme.
+
+```xml
+<configuration>
+  <uri>
+    <schemeSettings>
+      <clear/>
+      <add name="http" genericUriParserOptions="DontUnescapePathDotsAndSlashes"/>
+    </schemeSettings>
+  </uri>
+</configuration>
+```
+
 ## See also
 
 - <xref:System.Configuration.SchemeSettingElement?displayProperty=nameWithType>

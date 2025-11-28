@@ -39,7 +39,7 @@ Even if you're satisfied with your current MSTest setup, upgrading to MSTest v3 
 By upgrading, you're setting up your tests to be faster, more reliable, and adaptable to future .NET developments, positioning your project for long-term success and easier maintenance.
 
 > [!TIP]
-> After migrating to MSTest v3, consider taking a further step and migrate to MSTest v3. For more information, see [Migrate from MSTest v3 to v4](./unit-testing-mstest-migration-v3-v4.md).
+> After migrating to MSTest v3, consider taking a further step and migrate to MSTest v4. For more information, see [Migrate from MSTest v3 to v4](./unit-testing-mstest-migration-v3-v4.md).
 
 ## Migration steps
 

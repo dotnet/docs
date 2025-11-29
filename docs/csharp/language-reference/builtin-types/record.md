@@ -124,7 +124,7 @@ To implement value equality, the compiler synthesizes several methods, including
 
 * An override of <xref:System.Object.GetHashCode?displayProperty=nameWithType>. This method can be declared explicitly.
 
-* Overrides of [operator `==`](../operators/equality-operators#equality-operator-) and [operator `!=`](../operators/equality-operators#inequality-operator-). It's an error if the operators are declared explicitly.
+* Overrides of [operator `==`](../operators/equality-operators.md#equality-operator-) and [operator `!=`](../operators/equality-operators.md#inequality-operator-). It's an error if the operators are declared explicitly.
 
 * If the record type is derived from a base record type, `protected override Type EqualityContract { get; };`. This property can be declared explicitly. For more information, see [Equality in inheritance hierarchies](#equality-in-inheritance-hierarchies).
 

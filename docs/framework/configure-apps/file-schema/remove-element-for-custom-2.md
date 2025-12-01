@@ -2,14 +2,14 @@
 description: "Learn more about: <remove> element for NameValueSectionHandler and DictionarySectionHandler"
 title: "<remove> element for NameValueSectionHandler and DictionarySectionHandler"
 ms.date: "05/01/2017"
-f1_keywords: 
+f1_keywords:
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/sectionName/remove"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "remove Element"
   - "<remove> Element"
 ms.assetid: 8d8af7f5-26c9-4db9-bbe4-b2a4e6949568
 ---
-# \<remove> element for NameValueSectionHandler and DictionarySectionHandler
+# `<remove>` element for NameValueSectionHandler and DictionarySectionHandler
 
 Removes a previously defined setting.
 
@@ -27,13 +27,13 @@ Removes a previously defined setting.
 
 |           | Description |
 | --------- | ----------- |
-| **key**   | Required attribute.<br><br>Specifies the name of the setting to remove. |
+| `key`   | Required attribute.<br><br>Specifies the name of the setting to remove. |
 
 ## Parent element
 
 | Element | Description |
 | ------- | ------------|
-| [**\<sectionName>** Element](custom-element-2.md) | Defines settings for custom configuration sections that use the <xref:System.Configuration.NameValueSectionHandler> and <xref:System.Configuration.DictionarySectionHandler> classes. |
+| [`<sectionName>` Element](custom-element-2.md) | Defines settings for custom configuration sections that use the <xref:System.Configuration.NameValueSectionHandler> and <xref:System.Configuration.DictionarySectionHandler> classes. |
 
 ## Child elements
 
@@ -41,13 +41,13 @@ None
 
 ## Remarks
 
-You can use the **\<remove>** element to remove settings from your application that were defined at a higher level in the configuration file hierarchy.
+You can use the `<remove>` element to remove settings from your application that were defined at a higher level in the configuration file hierarchy.
 
 ## Example
 
-The following example shows how to use the **\<remove>** element in an application configuration file to remove settings previously defined in the machine configuration file.
+The following example shows how to use the `<remove>` element in an application configuration file to remove settings previously defined in the machine configuration file.
 
-The following machine configuration file code declares the section **\<mySection>** and adds two settings, `key1` and `key2`, to it:
+The following machine configuration file code declares the section `<mySection>` and adds two settings, `key1` and `key2`, to it:
 
 ```xml
 <!-- Machine.config file -->

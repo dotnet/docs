@@ -17,7 +17,7 @@ Namespace TryGetTypeInfoExamples
                 Console.WriteLine($"Kind: {typeInfo.Kind}")
                 
                 ' Use the type info for serialization
-                Dim product As New Product("Widget", 19.99D)
+                Dim product As New Product("Widget", 19.99@)
                 Dim json As String = JsonSerializer.Serialize(product, typeInfo.Type, options)
                 Console.WriteLine($"Serialized: {json}")
             Else

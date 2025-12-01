@@ -58,7 +58,7 @@ public static string GetDisplayName(MethodInfo methodInfo, object[] data)
 {
     return string.Format("{0} ({1})", methodInfo.Name, string.Join(",", data));
 }
-
+```
 
 ## How to fix violations
 

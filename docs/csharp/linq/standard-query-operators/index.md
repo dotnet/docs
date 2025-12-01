@@ -80,7 +80,7 @@ Language-Integrated Query (LINQ) isn't only about retrieving data. It's also a p
 - Create output sequences whose elements consist of the results of operations performed on the source data.
 - Create output sequences in a different format. For example, you can transform data from SQL rows or text files into XML.
 
-You can combine these transformations in various ways in the same query. Furthermore, you can use the output sequence of one query as the input sequence for a new query. The following example transforms objects in an in-memory data structure into XML elements.
+You combine these transformations in various ways in the same query. Furthermore, you can use the output sequence of one query as the input sequence for a new query. The following example transforms objects in an in-memory data structure into XML elements.
 
 :::code language="csharp" source="./snippets/standard-query-operators/IndexExamples.cs" id="XmlTransformation":::
 

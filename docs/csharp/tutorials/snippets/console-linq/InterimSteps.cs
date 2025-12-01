@@ -53,7 +53,6 @@ internal class InterimSteps
 
     private void StartShuffling()
     {
-        // <StepThree>
         var startingDeck = from s in Suits()
                            from r in Ranks()
                            select (Suit: s, Rank: r);
@@ -66,7 +65,6 @@ internal class InterimSteps
 
         var top = startingDeck.Take(26);
         var bottom = startingDeck.Skip(26);
-        // </StepThree>
 
         // <StepFive>
         var shuffledDeck = top.InterleaveSequenceWith(bottom);
@@ -85,7 +83,7 @@ internal class InterimSteps
                            from r in Ranks()
                            select (Suit: s, Rank: r);
 
-        // Display each card that we've generated and placed in startingDeck in the console
+        // Display each card generated and placed in startingDeck in the console
         foreach (var card in startingDeck)
         {
             Console.WriteLine(card);
@@ -97,7 +95,7 @@ internal class InterimSteps
         var shuffledDeck = top.InterleaveSequenceWith(bottom);
 
         var times = 0;
-        // We can re-use the shuffle variable from earlier, or you can make a new one
+        // Re-use the shuffle variable from earlier, or you can make a new one
         shuffledDeck = startingDeck;
         do
         {

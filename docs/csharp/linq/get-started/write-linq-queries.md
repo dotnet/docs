@@ -45,7 +45,7 @@ Write most queries with *query syntax* to create *query expressions*. The follow
 
 :::code language="csharp" source="./snippets/SnippetApp/WriteLinqQueries.cs" id="write_linq_queries_1":::
 
-The type of the queries is <xref:System.Collections.Generic.IEnumerable%601>. You can write all of these queries using [`var`](../../language-reference/statements/declarations.md#implicitly-typed-local-variables) as shown in the following example:
+The type of the queries is <xref:System.Collections.Generic.IEnumerable%601>. All of these queries can be written using [`var`](../../language-reference/statements/declarations.md#implicitly-typed-local-variables) as shown in the following example:
 
 `var query = from num in numbers...`
 

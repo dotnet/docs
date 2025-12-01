@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <OutputType>Library</OutputType>
+    <RootNamespace>VisualBasicSnippets</RootNamespace>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+
+  <!-- Exclude all VB files from compilation as they are code snippets, not a complete application -->
+  <ItemGroup>
+    <Compile Remove="**/*.vb" />
+  </ItemGroup>
+  
+  <!-- Include VB files as content for documentation purposes -->
+  <ItemGroup>
+    <Content Include="**/*.vb" />
+  </ItemGroup>
+
+</Project>

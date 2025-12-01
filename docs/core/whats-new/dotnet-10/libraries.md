@@ -5,6 +5,9 @@ titleSuffix: ""
 ms.date: 11/07/2025
 ai-usage: ai-assisted
 ms.update-cycle: 3650-days
+dev_langs:
+  - "csharp"
+  - "vb"
 ---
 
 # What's new in .NET libraries for .NET 10
@@ -273,10 +276,39 @@ This new API is already used in <xref:System.Text.Json.Nodes.JsonObject> and imp
 
 ## Serialization
 
+- [Retrieve JsonTypeInfo contract metadata](#retrieve-jsontypeinfo-contract-metadata)
 - [Allow specifying ReferenceHandler in `JsonSourceGenerationOptions`](#allow-specifying-referencehandler-in-jsonsourcegenerationoptions)
 - [Option to disallow duplicate JSON properties](#option-to-disallow-duplicate-json-properties)
 - [Strict JSON serialization options](#strict-json-serialization-options)
 - [PipeReader support for JSON serializer](#pipereader-support-for-json-serializer)
+
+### Retrieve JsonTypeInfo contract metadata
+
+.NET 10 introduces two new methods on <xref:System.Text.Json.JsonSerializerOptions> that make it easier to retrieve type contract metadata:
+
+- <xref:System.Text.Json.JsonSerializerOptions.GetTypeInfo(System.Type)?displayProperty=nameWithType> gets the <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfo> contract metadata resolved by the current <xref:System.Text.Json.JsonSerializerOptions> instance for the specified type.
+- <xref:System.Text.Json.JsonSerializerOptions.TryGetTypeInfo(System.Type,System.Text.Json.Serialization.Metadata.JsonTypeInfo@)?displayProperty=nameWithType> tries to get the <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfo> contract metadata without throwing an exception if the type isn't supported.
+
+These methods are useful when working with source-generated contexts, custom type info resolvers, or reflection-based serialization. The returned metadata can be downcast to <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfo`1> and used with the relevant <xref:System.Text.Json.JsonSerializer> overloads.
+
+#### GetTypeInfo
+
+The <xref:System.Text.Json.JsonSerializerOptions.GetTypeInfo(System.Type)?displayProperty=nameWithType> method retrieves the contract metadata for a type. It throws an exception if the type isn't valid for serialization or if the type resolver can't resolve the metadata.
+
+:::code language="csharp" source="../snippets/dotnet-10/csharp/GetTypeInfoExample.cs" id="GetTypeInfoExample":::
+:::code language="vb" source="../snippets/dotnet-10/vb/GetTypeInfoExample.vb" id="GetTypeInfoExample":::
+
+#### TryGetTypeInfo
+
+The <xref:System.Text.Json.JsonSerializerOptions.TryGetTypeInfo(System.Type,System.Text.Json.Serialization.Metadata.JsonTypeInfo@)?displayProperty=nameWithType> method provides a safer alternative to `GetTypeInfo`. It returns `true` if the contract metadata is resolved successfully, and `false` otherwise. This method is particularly useful when you're unsure if a type is supported or when working with user-provided types.
+
+:::code language="csharp" source="../snippets/dotnet-10/csharp/TryGetTypeInfoExample.cs" id="TryGetTypeInfoExample":::
+:::code language="vb" source="../snippets/dotnet-10/vb/TryGetTypeInfoExample.vb" id="TryGetTypeInfoExample":::
+
+The `TryGetTypeInfo` method is especially useful in source-generated contexts where you want to avoid duplication in generated methods. Instead of generating separate handling logic for each type, you can write:
+
+:::code language="csharp" source="../snippets/dotnet-10/csharp/TryGetTypeInfoSourceGen.cs" id="TryGetTypeInfoSourceGen":::
+:::code language="vb" source="../snippets/dotnet-10/vb/TryGetTypeInfoSourceGen.vb" id="TryGetTypeInfoSourceGen":::
 
 ### Allow specifying ReferenceHandler in `JsonSourceGenerationOptions`
 

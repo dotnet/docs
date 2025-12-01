@@ -35,9 +35,9 @@ internal class InterimSteps
         // <StepTwo>
         var startingDeck = from s in Suits()
                            from r in Ranks()
-                           select  (Suit: s, Rank: r);
+                           select (Suit: s, Rank: r);
         
-        // Display each card that we've generated and placed in startingDeck in the console
+        // Display each card that's generated and placed in startingDeck
         foreach (var card in startingDeck)
         {
             Console.WriteLine(card);
@@ -58,7 +58,7 @@ internal class InterimSteps
                            from r in Ranks()
                            select (Suit: s, Rank: r);
 
-        // Display each card that we've generated and placed in startingDeck in the console
+        // Display each card that's generated and placed in startingDeck
         foreach (var card in startingDeck)
         {
             Console.WriteLine(card);
@@ -175,5 +175,3 @@ public static class CardExtensions
     }
 }
 // </StepFour>
-
-

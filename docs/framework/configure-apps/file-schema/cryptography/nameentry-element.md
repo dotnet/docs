@@ -35,7 +35,7 @@ Maps a class name to a friendly algorithm name, which allows one class to have m
 |Attribute|Description|
 |---------------|-----------------|
 |**name**|Required attribute.<br /><br /> Specifies the friendly name of the algorithm that the cryptography class implements.|
-|**class**|Required attribute.<br /><br /> Specifies the value for the `name` attribute in the [\<cryptoClass>](cryptoclass-element.md) element.|
+|`class`|Required attribute.<br /><br /> Specifies the value for the `name` attribute in the [\<cryptoClass>](cryptoclass-element.md) element.|
 
 ### Child Elements
 

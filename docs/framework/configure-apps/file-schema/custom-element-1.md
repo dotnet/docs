@@ -37,7 +37,7 @@ None
 
 ## Remarks
 
-The `<sectionName>` element is a custom element defined by a [**\<section>**](section-element.md) tag in the [**\<configSections>**](configsections-element-for-configuration.md) element. The configuration system returns a <xref:System.Collections.IDictionary> object when you call <xref:System.Configuration.Configuration.GetSection(System.String)?displayProperty=nameWithType>.
+The `<sectionName>` element is a custom element defined by a [`<section>`](section-element.md) tag in the [`<configSections>`](configsections-element-for-configuration.md) element. The configuration system returns a <xref:System.Collections.IDictionary> object when you call <xref:System.Configuration.Configuration.GetSection(System.String)?displayProperty=nameWithType>.
 
 ## Example
 

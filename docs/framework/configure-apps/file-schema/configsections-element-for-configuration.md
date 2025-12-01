@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "<configSections> Element"
 ms.assetid: 9f963c1b-dc3f-4220-a8b6-2dd7a5a8e039
 ---
-# `<configSections>` element for \<configuration>
+# `<configSections>` element for `<configuration>`
 
 Contains configuration section and namespace declarations.
 

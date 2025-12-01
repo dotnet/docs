@@ -34,8 +34,8 @@ Maps an ASN.1 object identifier (OID) to a friendly name.
 
 |Attribute|Description|
 |---------------|-----------------|
-|**OID**|Required attribute.<br /><br /> Specifies the ASN.1 OID corresponding to the algorithm implemented by your class.|
-|**name**|Required attribute.<br /><br /> Specifies the value for the `name` attribute in the [\<nameEntry>](nameentry-element.md) tag.|
+|`OID`|Required attribute.<br /><br /> Specifies the ASN.1 OID corresponding to the algorithm implemented by your class.|
+|`name`|Required attribute.<br /><br /> Specifies the value for the `name` attribute in the [\<nameEntry>](nameentry-element.md) tag.|
 
 ### Child Elements
 

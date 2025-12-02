@@ -13,7 +13,7 @@ ms.topic: reference
 Determines the serialization mode of <xref:System.DateTime> objects.
 
  `<configuration>`
-\<dateTimeSerialization>
+`<dateTimeSerialization>`
 
 ## Syntax
 

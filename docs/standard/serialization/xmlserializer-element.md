@@ -13,7 +13,7 @@ ms.topic: reference
 Specifies whether an additional check of progress of the <xref:System.Xml.Serialization.XmlSerializer> is done.
 
  `<configuration>`
-\<system.xml.serialization>
+ `<system.xml.serialization>`
 
 ## Syntax
 

@@ -2,14 +2,14 @@
 description: "Learn more about: <add> element for <appSettings>"
 title: "<add> element for <appSettings>"
 ms.date: "05/01/2017"
-f1_keywords: 
+f1_keywords:
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/appSettings/add"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "add Element"
   - "<add> Element"
 ms.assetid: 8734efdc-00f6-4a65-bba6-084c5bc65246
 ---
-# \<add> element for \<appSettings>
+# `<add>` element for \<appSettings>
 
 Adds a custom application setting.
 
@@ -29,8 +29,8 @@ Adds a custom application setting.
 
 |           | Description |
 | --------- | ----------- |
-| **key**   | Required attribute.<br><br>Specifies the name of the key to add. |
-| **value** | Required attribute.<br><br>Specifies the value of the key to add. |
+| `key`   | Required attribute.<br><br>Specifies the name of the key to add. |
+| `value` | Required attribute.<br><br>Specifies the value of the key to add. |
 
 ## Parent element
 

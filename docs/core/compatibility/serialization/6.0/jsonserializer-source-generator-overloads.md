@@ -5,7 +5,7 @@ ms.date: 09/10/2021
 ---
 # New JsonSerializer source generator overloads
 
-The `System.Text.Json` source generator feature added new overloads to <xref:System.Text.Json.JsonSerializer> that accept pre-generated type information via <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfo%601> or <xref:System.Text.Json.Serialization.JsonSerializerContext>. These overloads provide a performance optimization over pre-existing overloads that take <xref:System.Text.Json.JsonSerializerOptions> instances and perform run-time reflection. All of these parameter types are reference types for which you can pass `null`. The following example shows the method-signature patterns for both approaches:
+The `System.Text.Json` source generator feature added new overloads to <xref:System.Text.Json.JsonSerializer> that accept pre-generated type information via <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfo%601> or <xref:System.Text.Json.Serialization.JsonSerializerContext>. These overloads provide a performance optimization over pre-existing overloads that take <xref:System.Text.Json.JsonSerializerOptions> instances and perform runtime reflection. All of these parameter types are reference types for which you can pass `null`. The following example shows the method-signature patterns for both approaches:
 
 Pre-existing reflection/`JsonSerializerOptions`-based overloads:
 

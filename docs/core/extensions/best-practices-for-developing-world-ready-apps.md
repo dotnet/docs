@@ -55,7 +55,7 @@ This section describes the best practices to follow when developing world-ready 
 
 1. Do not put non-localizable resources into the resource-only DLLs. This confuses translators.
 
-1. Do not use composite strings that are built at run time from concatenated phrases. Composite strings are difficult to localize because they often assume an English grammatical order that does not apply to all languages.
+1. Do not use composite strings that are built at runtime from concatenated phrases. Composite strings are difficult to localize because they often assume an English grammatical order that does not apply to all languages.
 
 1. Avoid ambiguous constructs such as "Empty Folder" where the strings can be translated differently depending on the grammatical roles of the string components. For example, "empty" can be either a verb or an adjective, which can lead to different translations in languages such as Italian or French.
 

@@ -61,7 +61,7 @@ The following table shows the APIs and parameter names that changed. In addition
 
 If you encounter a compiler error due to a parameter name change, update the parameter name accordingly.
 
-If you use run-time reflection to inspect methods and took a dependency on the parameter names, update the code to use the new parameter names.
+If you use runtime reflection to inspect methods and took a dependency on the parameter names, update the code to use the new parameter names.
 
 ## Affected APIs
 

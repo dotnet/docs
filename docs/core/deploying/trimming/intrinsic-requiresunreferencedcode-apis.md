@@ -10,7 +10,7 @@ ms.date: 09/13/2024
 
 Under normal circumstances, calling APIs annotated with <xref:System.Diagnostics.CodeAnalysis.RequiresUnreferencedCodeAttribute> in an app published with trimming triggers warning [IL2026 (Members attributed with RequiresUnreferencedCode may break when trimming)](trim-warnings/il2026.md). APIs that trigger the warning might not behave correctly in a trimmed deployment.
 
-Some APIs annotated `[RequiresUnreferencedCode]` can still be used without triggering the warning if they're called in a specific pattern. When used as part of a pattern, the call to the API can be statically analyzed by the compiler, does not generate a warning, and behaves as expected at run time.
+Some APIs annotated `[RequiresUnreferencedCode]` can still be used without triggering the warning if they're called in a specific pattern. When used as part of a pattern, the call to the API can be statically analyzed by the compiler, does not generate a warning, and behaves as expected at runtime.
 
 ## MethodInfo.MakeGenericMethod(Type[]) method
 

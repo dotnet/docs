@@ -144,14 +144,14 @@ In this case, the trim analysis keeps public methods of <xref:System.Tuple>, and
 It's better to resolve warnings by expressing the intent of your code using `[RequiresUnreferencedCode]` and `DynamicallyAccessedMembers` when possible. However, in some cases, you might be interested in enabling trimming of a library that uses patterns that can't be expressed with those attributes, or without refactoring existing code. This section describes some advanced ways to resolve trim analysis warnings.
 
 > [!WARNING]
-> These techniques might change the behavior or your code or result in run time exceptions if used incorrectly.
+> These techniques might change the behavior or your code or result in runtime exceptions if used incorrectly.
 
 ### UnconditionalSuppressMessage
 
 Consider code that:
 
 * The intent can't be expressed with the annotations.
-* Generates a warning but doesn't represent a real issue at run time.
+* Generates a warning but doesn't represent a real issue at runtime.
 
 The warnings can be suppressed by <xref:System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute>. This is similar to `SuppressMessageAttribute`, but it's persisted in IL and respected during trim analysis.
 
@@ -181,7 +181,7 @@ The [`[DynamicDependency]`](xref:System.Diagnostics.CodeAnalysis.DynamicDependen
 
 :::code language="csharp" source="~/docs/core/deploying/trimming/snippets/MyLibrary/Class1.cs" id="snippet_AD4" highlight="1":::
 
-Without `DynamicDependency`, trimming might remove `Helper` from `MyAssembly` or remove `MyAssembly` completely if it's not referenced elsewhere, producing a warning that indicates a possible failure at run time. The attribute ensures that `Helper` is kept.
+Without `DynamicDependency`, trimming might remove `Helper` from `MyAssembly` or remove `MyAssembly` completely if it's not referenced elsewhere, producing a warning that indicates a possible failure at runtime. The attribute ensures that `Helper` is kept.
 
 The attribute specifies the members to keep via a `string` or via `DynamicallyAccessedMemberTypes`. The type and assembly are either implicit in the attribute context, or explicitly specified in the attribute (by `Type`, or by `string`s for the type and assembly name).
 

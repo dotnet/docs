@@ -219,7 +219,7 @@ The serializer has built-in support for the following additional types.
 - Additional diagnostics (such as [SYSLIB1034](../../../fundamentals/syslib-diagnostics/syslib1034.md) and [SYSLIB1039](../../../fundamentals/syslib-diagnostics/syslib1039.md)).
 - Don't include types of ignored or inaccessible properties.
 - Support for nesting `JsonSerializerContext` declarations within arbitrary type kinds.
-- Support for compiler-generated or *unspeakable* types in weakly typed source generation scenarios. Since compiler-generated types can't be explicitly specified by the source generator, <xref:System.Text.Json?displayProperty=fullName> now performs nearest-ancestor resolution at run time. This resolution determines the most appropriate supertype with which to serialize the value.
+- Support for compiler-generated or *unspeakable* types in weakly typed source generation scenarios. Since compiler-generated types can't be explicitly specified by the source generator, <xref:System.Text.Json?displayProperty=fullName> now performs nearest-ancestor resolution at runtime. This resolution determines the most appropriate supertype with which to serialize the value.
 - New converter type `JsonStringEnumConverter<TEnum>`. The existing <xref:System.Text.Json.Serialization.JsonStringEnumConverter> class isn't supported in Native AOT. You can annotate your enum types as follows:
 
   ```csharp

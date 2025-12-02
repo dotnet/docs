@@ -49,7 +49,7 @@ The best course of action is to migrate away from `BinaryFormatter` due to its s
 If you must suppress the errors, you can do so by following the guidelines in the [original obsoletion article](../5.0/binaryformatter-serialization-obsolete.md#recommended-action). You can also disable the error project-wide by setting a project property that converts the error back to a warning (to match the .NET 5/6 behavior).
 
 > [!WARNING]
-> Setting this property might change host behavior. See [\<EnableUnsafeBinaryFormatterSerialization> property](#enableunsafebinaryformatterserialization-property).
+> Setting this property might change host behavior. See [`<EnableUnsafeBinaryFormatterSerialization>` property](#enableunsafebinaryformatterserialization-property).
 
 ```csharp
 <PropertyGroup>
@@ -61,7 +61,7 @@ If you must suppress the errors, you can do so by following the guidelines in th
 > [!NOTE]
 > If your project compiles with "warnings as errors" enabled, compilation will still fail. (This matches the behavior that shipped in the .NET 5 and .NET 6 SDKs.) If that's the case, you'll still need to suppress the `SYSLIB0011` warning in source or in your project file's `<NoWarn>` element.
 
-### \<EnableUnsafeBinaryFormatterSerialization> property
+### `<EnableUnsafeBinaryFormatterSerialization>` property
 
 The `<EnableUnsafeBinaryFormatterSerialization` property was introduced in .NET 5. With .NET 7, the behavior of this switch has changed to control *both compilation and host* run-time behavior. The meaning of this switch differs based on the project type, as described in the following table.
 

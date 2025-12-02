@@ -17,11 +17,11 @@ Using Windows Communication Foundation (WCF), the service can specify how a clie
 
 2. Open the XML configuration file. If you use the Svcutil.exe tool, the default name of the file is Output.config.
 
-3. Find the **\<security>** element with the **mode** attribute (**\<security mode =**`MessageOrTransport`**>** where `MessageOrTransport` is set to one of the security modes.
+3. Find the **\<security>** element with the `mode` attribute (**\<security mode =**`MessageOrTransport`**>** where `MessageOrTransport` is set to one of the security modes.
 
 4. Find the child element that matches the mode value. For example, if the mode is set to **Message**, find the **\<message>** element contained in the **\<security>** element.
 
-5. Note the value assigned to the **clientCredentialType** attribute. The actual value depends on which mode is used, transport or message.
+5. Note the value assigned to the `clientCredentialType` attribute. The actual value depends on which mode is used, transport or message.
 
 The following XML code shows configuration for a client using message security and requiring a certificate to authenticate the client.
 

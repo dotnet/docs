@@ -6,49 +6,49 @@ ms.assetid: 9f9ba96d-9f89-4f65-bb2f-6860879f4393
 ---
 # Side-by-Side Execution in ADO.NET
 
-Side-by-side execution in the .NET Framework is the ability to execute an application on a computer that has multiple versions of the .NET Framework installed, exclusively using the version for which the application was compiled. For detailed information about configuring side-by-side execution, see [Side-by-Side Execution](../../deployment/side-by-side-execution.md).  
-  
- An application compiled by using one version of the .NET Framework can run on a different version of the .NET Framework. However, we recommend that you compile a version of the application for each installed version of the .NET Framework, and run them separately. In either scenario, you should be aware of changes in ADO.NET between releases that can affect the forward compatibility or backward compatibility of your application.  
-  
-## Forward Compatibility and Backward Compatibility  
+Side-by-side execution in the .NET Framework is the ability to execute an application on a computer that has multiple versions of the .NET Framework installed, exclusively using the version for which the application was compiled. For detailed information about configuring side-by-side execution, see [Side-by-Side Execution](../../deployment/side-by-side-execution.md).
 
- Forward compatibility means that an application can be compiled with an earlier version of the .NET Framework, but will still run successfully on a later version of the .NET Framework. ADO.NET code written for the .NET Framework version 1.1 is forward compatible with later versions.  
-  
- Backward compatibility means that an application is compiled for a newer version of the .NET Framework, but continues to run on earlier versions of the .NET Framework without any loss of functionality. Of course, this will not be the case for features introduced in a new version of the .NET Framework.  
-  
-## The .NET Framework Data Provider for ODBC  
+ An application compiled by using one version of the .NET Framework can run on a different version of the .NET Framework. However, we recommend that you compile a version of the application for each installed version of the .NET Framework, and run them separately. In either scenario, you should be aware of changes in ADO.NET between releases that can affect the forward compatibility or backward compatibility of your application.
+
+## Forward Compatibility and Backward Compatibility
+
+ Forward compatibility means that an application can be compiled with an earlier version of the .NET Framework, but will still run successfully on a later version of the .NET Framework. ADO.NET code written for the .NET Framework version 1.1 is forward compatible with later versions.
+
+ Backward compatibility means that an application is compiled for a newer version of the .NET Framework, but continues to run on earlier versions of the .NET Framework without any loss of functionality. Of course, this will not be the case for features introduced in a new version of the .NET Framework.
+
+## The .NET Framework Data Provider for ODBC
 
  Starting with version 1.1, the .NET Framework Data Provider for ODBC (<xref:System.Data.Odbc>) is included as a part of the .NET Framework.
-  
- If you have an application developed for the .NET Framework version 1.0 that uses the ODBC data provider to connect to your data source, and you want to run that application on the .NET Framework version 1.1 or a later version, you must update the namespace for the ODBC data provider to **System.Data.Odbc**. You then must recompile it for the newer version of the .NET Framework.  
-  
- If you have an application developed for the .NET Framework version 2.0 or later that uses the ODBC data provider to connect to your data source, and you want to run that application on .NET Framework version 1.0, you must download the ODBC data provider and install it on the .NET Framework version 1.0 system. You then must change the namespace for the ODBC data provider to **Microsoft.Data.Odbc**, and recompile the application for .NET Framework version 1.0.  
-  
-## The .NET Framework Data Provider for Oracle  
+
+ If you have an application developed for the .NET Framework version 1.0 that uses the ODBC data provider to connect to your data source, and you want to run that application on the .NET Framework version 1.1 or a later version, you must update the namespace for the ODBC data provider to **System.Data.Odbc**. You then must recompile it for the newer version of the .NET Framework.
+
+ If you have an application developed for the .NET Framework version 2.0 or later that uses the ODBC data provider to connect to your data source, and you want to run that application on .NET Framework version 1.0, you must download the ODBC data provider and install it on the .NET Framework version 1.0 system. You then must change the namespace for the ODBC data provider to **Microsoft.Data.Odbc**, and recompile the application for .NET Framework version 1.0.
+
+## The .NET Framework Data Provider for Oracle
 
  Starting with version 1.1, the .NET Framework Data Provider for Oracle (<xref:System.Data.OracleClient>) is included as a part of the .NET Framework.
-  
- If you have an application developed for the .NET Framework version 2.0 or later that uses the data provider to connect to your data source, and you want to run that application on .NET Framework version 1.0, you must download the data provider and install it on the .NET Framework version 1.0 system.  
-  
+
+ If you have an application developed for the .NET Framework version 2.0 or later that uses the data provider to connect to your data source, and you want to run that application on .NET Framework version 1.0, you must download the data provider and install it on the .NET Framework version 1.0 system.
+
 ## Code Access Security
-  
- Starting with .NET Framework version 2.0, all of the .NET Framework data providers can be used in partially trusted zones. In addition, a new security feature was added to the .NET Framework data providers in .NET Framework version 1.1. This feature enables you to restrict what connection strings can be used in a particular security zone. You can also disable the use of blank passwords for a particular security zone. For more information, see [Code Access Security and ADO.NET](code-access-security.md).  
-  
- Because each installation of .NET Framework has a separate Security.config file, there are no compatibility issues with security settings. However, if your application depends on the additional security capabilities of ADO.NET included in .NET Framework version 1.1 and later, you will not be able to distribute it to a version 1.0 system.  
-  
+
+ Starting with .NET Framework version 2.0, all of the .NET Framework data providers can be used in partially trusted zones. In addition, a new security feature was added to the .NET Framework data providers in .NET Framework version 1.1. This feature enables you to restrict what connection strings can be used in a particular security zone. You can also disable the use of blank passwords for a particular security zone. For more information, see [Code Access Security and ADO.NET](code-access-security.md).
+
+ Because each installation of .NET Framework has a separate Security.config file, there are no compatibility issues with security settings. However, if your application depends on the additional security capabilities of ADO.NET included in .NET Framework version 1.1 and later, you will not be able to distribute it to a version 1.0 system.
+
 ## SqlCommand Execution
-  
-In .NET Framework version 1.1 and later, <xref:System.Data.SqlClient.SqlCommand.ExecuteReader%2A> only executes a command in the context of the **sp_executesql** stored procedure if the command contains parameters, which provides a performance benefit. As a result, if a command affecting the state of the connection is included in a non-parameterized command, it modifies the state of the connection for all subsequent commands executed while the connection is open.  
-  
+
+In .NET Framework version 1.1 and later, <xref:System.Data.SqlClient.SqlCommand.ExecuteReader%2A> only executes a command in the context of the `sp_executesql` stored procedure if the command contains parameters, which provides a performance benefit. As a result, if a command affecting the state of the connection is included in a non-parameterized command, it modifies the state of the connection for all subsequent commands executed while the connection is open.
+
 Consider the following batch of commands executed in a call to <xref:System.Data.SqlClient.SqlCommand.ExecuteReader%2A>.
 
 ```sql
-SET NOCOUNT ON;  
-SELECT * FROM dbo.Customers;  
-```  
-  
+SET NOCOUNT ON;
+SELECT * FROM dbo.Customers;
+```
+
 `NOCOUNT` will remain `ON` for any subsequent commands executed while the connection is open.
-  
+
 ## See also
 
 - [ADO.NET Overview](ado-net-overview.md)

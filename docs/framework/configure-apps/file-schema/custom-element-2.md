@@ -35,7 +35,7 @@ None
 
 ## Remarks
 
-The **\<sectionName>** element is a custom element defined by a **\<section>** tag in the **\<configSections>** element.
+The `<sectionName>` element is a custom element defined by a `<section>` tag in the `<configSections>` element.
 
 The following table shows the type of object the ConfigurationSettings.GetConfig method returns for each configuration section handler:
 
@@ -48,7 +48,7 @@ The following table shows the type of object the ConfigurationSettings.GetConfig
 
 The following example shows how to declare sections that use the <xref:System.Configuration.DictionarySectionHandler> and <xref:System.Configuration.NameValueSectionHandler> classes.
 
-The first custom element is **\<dictionarySample>**, which contains settings read by the <xref:System.Configuration.DictionarySectionHandler> class in the `System.dll` assembly. The second custom element is **\<mySection>**, which contains settings read by the <xref:System.Configuration.NameValueSectionHandler> class in the `System.dll` assembly.
+The first custom element is `<dictionarySample>`, which contains settings read by the <xref:System.Configuration.DictionarySectionHandler> class in the `System.dll` assembly. The second custom element is `<mySection>`, which contains settings read by the <xref:System.Configuration.NameValueSectionHandler> class in the `System.dll` assembly.
 
 ```xml
 <configuration>

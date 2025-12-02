@@ -2,7 +2,7 @@
 title: What's obsolete in .NET Framework
 description: See how the .NET Framework class library marks members as obsolete. Understand the ObsoleteAttribute attribute, how to handle obsolete types and members, and more.
 ms.date: 04/26/2023
-helpviewer_keywords: 
+helpviewer_keywords:
   - "obsolete [.NET Framework]"
   - "what's obsolete [.NET Framework]"
   - "deprecated [.NET Framework]"
@@ -77,4 +77,4 @@ To target a specific version of .NET Framework, assign one of the following stri
 
 ## See also
 
-- [\<supportedRuntime> Element](../configure-apps/file-schema/startup/supportedruntime-element.md)
+- [`<supportedRuntime>` Element](../configure-apps/file-schema/startup/supportedruntime-element.md)

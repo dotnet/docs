@@ -2,21 +2,21 @@
 description: "Learn more about: <startup> element"
 title: "<startup> element"
 ms.date: "03/30/2017"
-f1_keywords: 
+f1_keywords:
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/startup"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#startup"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "container tags, <startup> element"
   - "<startup> element"
   - "startup element"
 ms.assetid: 536acfd8-f827-452f-838a-e14fa3b87621
 ---
-# \<startup> element
+# `<startup>` element
 
 Specifies common language runtime startup information.
 
-[**\<configuration>**](../configuration-element.md)  
-&nbsp;&nbsp;**\<startup>**  
+[**\<configuration>**](../configuration-element.md)
+&nbsp;&nbsp;**\<startup>**
 
 ## Syntax
 
@@ -46,7 +46,7 @@ Specifies common language runtime startup information.
 
 |Element|Description|
 |-------------|-----------------|
-|[\<requiredRuntime>](requiredruntime-element.md)|Specifies that the application supports only version 1.0 of the common language runtime. Applications built with runtime version 1.1 or later should use the **\<supportedRuntime>** element.|
+|[\<requiredRuntime>](requiredruntime-element.md)|Specifies that the application supports only version 1.0 of the common language runtime. Applications built with runtime version 1.1 or later should use the `<supportedRuntime>` element.|
 |[\<supportedRuntime>](supportedruntime-element.md)|Specifies which versions of the common language runtime the application supports.|
 
 ### Parent elements
@@ -57,7 +57,7 @@ Specifies common language runtime startup information.
 
 ## Remarks
 
- The **\<supportedRuntime>** element should be used by all applications built using version 1.1 or later of the runtime. Applications built to support only version 1.0 of the runtime must use the **\<requiredRuntime>** element.
+ The `<supportedRuntime>` element should be used by all applications built using version 1.1 or later of the runtime. Applications built to support only version 1.0 of the runtime must use the `<requiredRuntime>` element.
 
 ## The useLegacyV2RuntimeActivationPolicy attribute
 

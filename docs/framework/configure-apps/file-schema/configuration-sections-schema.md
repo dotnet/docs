@@ -2,7 +2,7 @@
 description: "Learn more about: Configuration sections schema"
 title: "Configuration sections schema"
 ms.date: "05/02/2017"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "configuration settings [.NET Framework], custom"
   - "schema configuration settings"
   - "configuration sections [.NET Framework]"
@@ -23,8 +23,8 @@ The configuration sections schema contains elements that define custom settings 
 |     | Description |
 | --- | ----------- |
 | [**\<configSections>**](configsections-element-for-configuration.md) | Contains configuration section and namespace declarations. |
-| [**\<section>** for **\<configSections>** and **\<sectionGroup>**](section-element.md) | Contains a configuration section declaration. |
-| [**\<sectionGroup>** for **\<configSections>**](sectiongroup-element-for-configsections.md) | Defines a namespace for configuration sections. |
+| [`<section>` for `<configSections>` and `<sectionGroup>`](section-element.md) | Contains a configuration section declaration. |
+| [`<sectionGroup>` for `<configSections>`](sectiongroup-element-for-configsections.md) | Defines a namespace for configuration sections. |
 
 <a name="dep"></a>
 

@@ -196,7 +196,7 @@ Because the main assembly that contains an app's default resources is separate f
 
 For more information about versioning support for satellite assemblies, see the article [Retrieving Resources](/dotnet/framework/resources/retrieving-resources-in-desktop-apps).
 
-### \<satelliteassemblies> configuration file node
+### `<satelliteassemblies>` configuration file node
 
 > [!NOTE]
 > This section is specific to .NET Framework apps.

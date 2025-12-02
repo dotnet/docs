@@ -203,7 +203,7 @@ To run a test, navigate to **Test Explorer**, select the test (or tests) to run.
   ```
 
   > [!NOTE]
-  > The supporting for Microsoft.Testing.Platform in `DotNetCoreCLI` was added in [2.263.0](https://github.com/microsoft/azure-pipelines-tasks/pull/21315) version of the task.
+  > Support for Microsoft.Testing.Platform in `DotNetCoreCLI` was added in [2.263.0](https://github.com/microsoft/azure-pipelines-tasks/pull/21315) version of the task.
 
 ---
 

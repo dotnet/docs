@@ -28,7 +28,7 @@ If the <xref:System.Transactions> transaction never requires escalation, when th
 If the <xref:System.Transactions> transaction needs to be escalated (e.g., to support multiple RMs), <xref:System.Transactions> informs the resource manager by calling the <xref:System.Transactions.ITransactionPromoter.Promote%2A> method on the <xref:System.Transactions.ITransactionPromoter> interface, from which the <xref:System.Transactions.IPromotableSinglePhaseNotification> interface derives. The resource manager then converts the transaction internally from a local transaction (which does not require logging) to a transaction object that is capable of participating in a DTC transaction, and associates it with the work already done. When the transaction is asked to commit, the transaction manager still sends the <xref:System.Transactions.IPromotableSinglePhaseNotification.SinglePhaseCommit%2A> notification to the resource manager, which commits the distributed transaction that it created during escalation.
 
 > [!NOTE]
-> The **TransactionCommitted** traces (that are generated when a Commit is invoked on the escalated transaction) contain the activity ID of the DTC transaction.
+> The `TransactionCommitted` traces (that are generated when a Commit is invoked on the escalated transaction) contain the activity ID of the DTC transaction.
 
 For more information on management escalation, see [Transaction Management Escalation](transaction-management-escalation.md).
 

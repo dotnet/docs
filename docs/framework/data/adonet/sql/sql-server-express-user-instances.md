@@ -19,7 +19,7 @@ SQL Server Express Edition supports the user instance feature, which is only ava
 
 ## Enable User Instances
 
- To generate user instances, a parent instance of SQL Server Express must be running. User instances are enabled by default when SQL Server Express is installed, and they can be explicitly enabled or disabled by a system administrator executing the **sp_configure** system stored procedure on the parent instance.
+ To generate user instances, a parent instance of SQL Server Express must be running. User instances are enabled by default when SQL Server Express is installed, and they can be explicitly enabled or disabled by a system administrator executing the `sp_configure` system stored procedure on the parent instance.
 
 ```sql
 -- Enable user instances.
@@ -117,14 +117,14 @@ private static void OpenSqlConnection()
 
 ## Lifetime of a User Instance Connection
 
- Unlike versions of SQL Server that run as a service, SQL Server Express instances do not need to be manually started and stopped. Each time a user logs in and connects to a user instance, the user instance is started if it is not already running. User instance databases have the `AutoClose` option set so that the database is automatically shut down after a period of inactivity. The sqlservr.exe process that is started is kept running for a limited time-out period after the last connection to the instance is closed, so it does not need to be restarted if another connection is opened before the time-out has expired. The user instance automatically shuts down if no new connection opens before that time-out period has expired. A system administrator on the parent instance can set the duration of the time-out period for a user instance by using **sp_configure** to change the **user instance timeout** option. The default is 60 minutes.
+ Unlike versions of SQL Server that run as a service, SQL Server Express instances do not need to be manually started and stopped. Each time a user logs in and connects to a user instance, the user instance is started if it is not already running. User instance databases have the `AutoClose` option set so that the database is automatically shut down after a period of inactivity. The sqlservr.exe process that is started is kept running for a limited time-out period after the last connection to the instance is closed, so it does not need to be restarted if another connection is opened before the time-out has expired. The user instance automatically shuts down if no new connection opens before that time-out period has expired. A system administrator on the parent instance can set the duration of the time-out period for a user instance by using `sp_configure` to change the **user instance timeout** option. The default is 60 minutes.
 
 > [!NOTE]
 > If `Min Pool Size` is used in the connection string with a value greater than zero, the connection pooler will always maintain a few opened connections, and the user instance will not automatically shut down.
 
 ## How User Instances Work
 
- The first time a user instance is generated for each user, the **master** and **msdb** system databases are copied from the Template Data folder to a path under the user's local application data repository directory for exclusive use by the user instance. This path is typically `C:\Documents and Settings\<UserName>\Local Settings\Application Data\Microsoft\Microsoft SQL Server Data\SQLEXPRESS`. When a user instance starts up, the **tempdb**, log, and trace files are also written to this directory. A name is generated for the instance, which is guaranteed to be unique for each user.
+ The first time a user instance is generated for each user, the `master` and `msdb` system databases are copied from the Template Data folder to a path under the user's local application data repository directory for exclusive use by the user instance. This path is typically `C:\Documents and Settings\<UserName>\Local Settings\Application Data\Microsoft\Microsoft SQL Server Data\SQLEXPRESS`. When a user instance starts up, the **tempdb**, log, and trace files are also written to this directory. A name is generated for the instance, which is guaranteed to be unique for each user.
 
  By default all members of the Windows Builtin\Users group are granted permissions to connect on the local instance as well as read and execute permissions on the SQL Server binaries. Once the credentials of the calling user hosting the user instance have been verified, that user becomes the `sysadmin` on that instance. Only shared memory is enabled for user instances, which means that only operations on the local machine are possible.
 

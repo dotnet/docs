@@ -62,7 +62,7 @@ The following options are valid for *.exe*, *.dll*, and *.winmd* files for file 
 |**/classlist**|Includes a list of classes defined in the module.|
 |**/forward**|Uses forward class declaration.|
 |**/headers**|Includes file header information in the output.|
-|**/item:** `class`[**::** `member`[`(sig`]]|Disassembles the following depending upon the argument supplied:<br /><br /> -   Disassembles the specified `class`.<br />-   Disassembles the specified `member` of the `class`.<br />-   Disassembles the `member` of the `class` with the specified signature `sig`. The format of `sig` is:<br />     [`instance`] `returnType`(`parameterType1`, `parameterType2`, …, `parameterTypeN`)<br />     `Note` In the .NET Framework versions 1.0 and 1.1, `sig` must be followed by a closing parenthesis: `(sig)`. Starting with the Net Framework 2.0 the closing parenthesis must be omitted: `(sig`.|
+|**/item:** `class`[**::** `member`[`(sig`]]|Disassembles the following depending upon the argument supplied:<br /><br /> -   Disassembles the specified `class`.<br />-   Disassembles the specified `member` of the `class`.<br />-   Disassembles the `member` of the `class` with the specified signature `sig`. The format of `sig` is:<br />     [`instance`] `returnType`(`parameterType1`, `parameterType2`, …, `parameterTypeN`).|
 |**/noil**|Suppresses IL assembly code output.|
 |**/stats**|Includes statistics on the image.|
 |**/typelist**|Produces the full list of types, to preserve type ordering in a round trip.|
@@ -160,7 +160,7 @@ The following command disassembles the method `MyMethod` within the class `MyCla
 ildasm /item:MyClass::MyMethod MyFile.exe /text
 ```
 
-In the previous example, there could be several methods named `MyMethod` with different signatures. The following command disassembles the instance method `MyMethod` with the return type of `void` and the parameter types **int32** and **string**.
+In the previous example, there could be several methods named `MyMethod` with different signatures. The following command disassembles the instance method `MyMethod` with the return type of `void` and the parameter types `int32` and `string`.
 
 ```console
 ildasm /item:"MyClass::MyMethod(instance void(int32,string)" MyFile.exe /text

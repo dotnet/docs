@@ -46,7 +46,7 @@ Reports all the installed versions of the common language runtime (CLR) on the c
 Lets you configure the CorFlags section of the header of a portable executable (PE) image.
 
 [Fuslogvw.exe (Assembly Binding Log Viewer)](fuslogvw-exe-assembly-binding-log-viewer.md)\
-Displays information about assembly binds to help you diagnose why the .NET Framework cannot locate an assembly at run time.
+Displays information about assembly binds to help you diagnose why the .NET Framework cannot locate an assembly at runtime.
 
 [Gacutil.exe (Global Assembly Cache Tool)](gacutil-exe-gac-tool.md)\
 Lets you view and manipulate the contents of the global assembly cache and download cache.

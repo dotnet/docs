@@ -21,7 +21,7 @@ Embedding connection strings in your application's code can lead to security vul
 
  Connection strings can be stored as key/value pairs in the `connectionStrings` section of the `configuration` element of an application configuration file. Child elements include **add**, **clear**, and **remove**.
 
- The following configuration file fragment demonstrates the schema and syntax for storing a connection string. The `name` attribute is a name that you provide to uniquely identify a connection string so that it can be retrieved at run time. The `providerName` is the invariant name of the .NET Framework data provider, which is registered in the machine.config file.
+ The following configuration file fragment demonstrates the schema and syntax for storing a connection string. The `name` attribute is a name that you provide to uniquely identify a connection string so that it can be retrieved at runtime. The `providerName` is the invariant name of the .NET Framework data provider, which is registered in the machine.config file.
 
 ```xml
 <?xml version='1.0' encoding='utf-8'?>
@@ -36,11 +36,11 @@ Embedding connection strings in your application's code can lead to security vul
 ```
 
 > [!NOTE]
-> You can save part of a connection string in a configuration file and use the <xref:System.Data.Common.DbConnectionStringBuilder> class to complete it at run time. This is useful in scenarios where you do not know elements of the connection string ahead of time, or when you don't want to save sensitive information in a configuration file. For more information, see [Connection String Builders](connection-string-builders.md).
+> You can save part of a connection string in a configuration file and use the <xref:System.Data.Common.DbConnectionStringBuilder> class to complete it at runtime. This is useful in scenarios where you do not know elements of the connection string ahead of time, or when you don't want to save sensitive information in a configuration file. For more information, see [Connection String Builders](connection-string-builders.md).
 
 ### Use External Configuration Files
 
- External configuration files are separate files that contain a fragment of a configuration file consisting of a single section. The external configuration file is then referenced by the main configuration file. Storing the `connectionStrings` section in a physically separate file is useful in situations where connection strings might be edited after the application is deployed. For example, the standard ASP.NET behavior is to restart an application domain when configuration files are modified, which results in state information being lost. However, modifying an external configuration file does not cause an application restart. External configuration files are not limited to ASP.NET; they can also be used by Windows applications. In addition, file access security and permissions can be used to restrict access to external configuration files. Working with external configuration files at run time is transparent, and requires no special coding.
+ External configuration files are separate files that contain a fragment of a configuration file consisting of a single section. The external configuration file is then referenced by the main configuration file. Storing the `connectionStrings` section in a physically separate file is useful in situations where connection strings might be edited after the application is deployed. For example, the standard ASP.NET behavior is to restart an application domain when configuration files are modified, which results in state information being lost. However, modifying an external configuration file does not cause an application restart. External configuration files are not limited to ASP.NET; they can also be used by Windows applications. In addition, file access security and permissions can be used to restrict access to external configuration files. Working with external configuration files at runtime is transparent, and requires no special coding.
 
  To store connection strings in an external configuration file, create a separate file that contains only the `connectionStrings` section. Do not include any additional elements, sections, or attributes. This example shows the syntax for an external configuration file.
 
@@ -63,7 +63,7 @@ Embedding connection strings in your application's code can lead to security vul
 
 ## Retrieve Connection Strings at Run Time
 
-.NET Framework 2.0 introduced new classes in the <xref:System.Configuration> namespace to simplify retrieving connection strings from configuration files at run time. You can programmatically retrieve a connection string by name or by provider name.
+.NET Framework 2.0 introduced new classes in the <xref:System.Configuration> namespace to simplify retrieving connection strings from configuration files at runtime. You can programmatically retrieve a connection string by name or by provider name.
 
 > [!NOTE]
 > The **machine.config** file also contains a `connectionStrings` section, which contains connection strings used by Visual Studio. When retrieving connection strings by provider name from the **app.config** file in a Windows application, the connection strings in **machine.config** get loaded first, and then the entries from **app.config**. Adding `clear` immediately after the `connectionStrings` element removes all inherited references from the data structure in memory, so that only the connection strings defined in the local **app.config** file are considered.
@@ -73,7 +73,7 @@ Embedding connection strings in your application's code can lead to security vul
  Starting with .NET Framework 2.0, <xref:System.Configuration.ConfigurationManager> is used when working with configuration files on the local computer, replacing the deprecated <xref:System.Configuration.ConfigurationSettings> class. <xref:System.Web.Configuration.WebConfigurationManager> is used to work with ASP.NET configuration files. It is designed to work with configuration files on a Web server, and allows programmatic access to configuration file sections such as **system.web**.
 
 > [!NOTE]
-> Accessing configuration files at run time requires granting permissions to the caller; the required permissions depend on the type of application, configuration file, and location. For more information, see <xref:System.Web.Configuration.WebConfigurationManager> for ASP.NET applications, and <xref:System.Configuration.ConfigurationManager> for Windows applications.
+> Accessing configuration files at runtime requires granting permissions to the caller; the required permissions depend on the type of application, configuration file, and location. For more information, see <xref:System.Web.Configuration.WebConfigurationManager> for ASP.NET applications, and <xref:System.Configuration.ConfigurationManager> for Windows applications.
 
  You can use the <xref:System.Configuration.ConnectionStringSettingsCollection> to retrieve connection strings from application configuration files. It contains a collection of <xref:System.Configuration.ConnectionStringSettings> objects, each of which represents a single entry in the `connectionStrings` section. Its properties map to connection string attributes, allowing you to retrieve a connection string by specifying the name or the provider name.
 
@@ -123,7 +123,7 @@ Embedding connection strings in your application's code can lead to security vul
 </connectionStrings>
 ```
 
- When the encrypted connection string is retrieved at run time, .NET Framework uses the specified provider to decrypt the `CipherValue` and make it available to your application. You do not need to write any additional code to manage the decryption process.
+ When the encrypted connection string is retrieved at runtime, .NET Framework uses the specified provider to decrypt the `CipherValue` and make it available to your application. You do not need to write any additional code to manage the decryption process.
 
 ### Protected Configuration Providers
 

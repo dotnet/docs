@@ -52,7 +52,7 @@ In this connection string:
 - The `|DataDirectory|` substitution string enclosed in the pipe symbols refers to the data directory of the application opening the connection and provides a relative path indicating the location of the .mdf and .ldf database and log files. If you want to locate these files elsewhere, you must provide the full path to the files.
 
 > [!NOTE]
-> You can also use the <xref:System.Data.SqlClient.SqlConnectionStringBuilder.UserInstance?displayProperty=nameWithType> and <xref:System.Data.SqlClient.SqlConnectionStringBuilder.AttachDBFilename?displayProperty=nameWithType> properties to build a connection string at run time.
+> You can also use the <xref:System.Data.SqlClient.SqlConnectionStringBuilder.UserInstance?displayProperty=nameWithType> and <xref:System.Data.SqlClient.SqlConnectionStringBuilder.AttachDBFilename?displayProperty=nameWithType> properties to build a connection string at runtime.
 
 [!INCLUDE [managed-identities](../../../../includes/managed-identities.md)]
 
@@ -76,7 +76,7 @@ Initial Catalog=Northwind;
 > [!NOTE]
 > <xref:System.Data.SqlClient> resolves the substitution strings into full paths against the local computer file system. Therefore, remote server, HTTP, and UNC path names are not supported. An exception is thrown when the connection is opened if the server is not located on the local computer.
 
- When the <xref:System.Data.SqlClient.SqlConnection> is opened, it is redirected from the default SQL Server Express instance to a run-time initiated instance running under the caller's account.
+ When the <xref:System.Data.SqlClient.SqlConnection> is opened, it is redirected from the default SQL Server Express instance to a runtime initiated instance running under the caller's account.
 
 > [!NOTE]
 > It may be necessary to increase the <xref:System.Data.SqlClient.SqlConnection.ConnectionTimeout%2A> value since user instances may take longer to load than regular instances.
@@ -137,7 +137,7 @@ private static void OpenSqlConnection()
 
 ## User Instance Scenarios
 
- User instances provide developers of database applications with a SQL Server data store that does not depend on developers having administrative accounts on their development computers. User instances are based on the Access/Jet model, where the database application simply connects to a file, and the user automatically has full permissions on all of the database objects without needing the intervention of a system administrator to grant permissions. It is intended to work in situations where the user is running under a least-privilege user account (LUA) and does not have administrative privileges on the server or local machine, yet needs to create database objects and applications. User instances allow users to create instances at run time that run under the user's own security context, and not in the security context of a more privileged system service.
+ User instances provide developers of database applications with a SQL Server data store that does not depend on developers having administrative accounts on their development computers. User instances are based on the Access/Jet model, where the database application simply connects to a file, and the user automatically has full permissions on all of the database objects without needing the intervention of a system administrator to grant permissions. It is intended to work in situations where the user is running under a least-privilege user account (LUA) and does not have administrative privileges on the server or local machine, yet needs to create database objects and applications. User instances allow users to create instances at runtime that run under the user's own security context, and not in the security context of a more privileged system service.
 
 > [!IMPORTANT]
 > User instances should only be used in scenarios where all the applications using it are fully trusted.

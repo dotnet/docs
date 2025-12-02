@@ -4,7 +4,7 @@ description: Review the marshalCleanupError managed debugging assistant (MDA), w
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "cleanup operations"
-  - "marshaling, run-time errors"
+  - "marshaling, runtime errors"
   - "managed debugging assistants (MDAs), marshalling"
   - "MDAs (managed debugging assistants), marshalling"
   - "marshaling cleanup error"

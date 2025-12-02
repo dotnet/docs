@@ -57,7 +57,7 @@ newVersion="new assembly version"/>
 
 ## Remarks
 
- When you build a .NET Framework application against a strong-named assembly, the application uses that version of the assembly at run time by default, even if a new version is available. However, you can configure the application to run against a newer version of the assembly. For details on how the runtime uses these files to determine which assembly version to use, see [How the Runtime Locates Assemblies](../../../deployment/how-the-runtime-locates-assemblies.md).
+ When you build a .NET Framework application against a strong-named assembly, the application uses that version of the assembly at runtime by default, even if a new version is available. However, you can configure the application to run against a newer version of the assembly. For details on how the runtime uses these files to determine which assembly version to use, see [How the Runtime Locates Assemblies](../../../deployment/how-the-runtime-locates-assemblies.md).
 
  You can redirect more than one assembly version by including multiple `bindingRedirect` elements in a `dependentAssembly` element. You can also redirect from a newer version to an older version of the assembly.
 

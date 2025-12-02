@@ -26,4 +26,4 @@ Demonstrates how to limit the amount of memory used to buffer large messages sen
 Demonstrates how to build a custom protocol channel to use HTTP cookies for session management.
 
  [Custom Message Interceptor](custom-message-interceptor.md)
-Demonstrates how to implement a custom binding element that creates channel factories and channel listeners to intercept all incoming and outgoing messages at a particular point in the run-time stack.
+Demonstrates how to implement a custom binding element that creates channel factories and channel listeners to intercept all incoming and outgoing messages at a particular point in the runtime stack.

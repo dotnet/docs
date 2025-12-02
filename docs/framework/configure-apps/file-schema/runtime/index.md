@@ -114,7 +114,7 @@ Runtime settings are used by the common language runtime to configure applicatio
 |[\<memoryCache>](memorycache-element-cache-settings.md)|Defines an element that is used to configure a cache that is based on the <xref:System.Runtime.Caching.MemoryCache> class.|
 |[\<namedCaches>](namedcaches-element-cache-settings.md)|Contains a collection of configuration settings for the `namedCache` instance.|
 |[\<NetFx40_LegacySecurityPolicy>](netfx40-legacysecuritypolicy-element.md)|Specifies whether the runtime uses legacy code access security (CAS) policy.|
-|[\<NetFx40_PInvokeStackResilience>](netfx40-pinvokestackresilience-element.md)|Specifies whether the runtime automatically fixes incorrect platform invoke declarations at run time, at the cost of slower transitions between managed and unmanaged code.|
+|[\<NetFx40_PInvokeStackResilience>](netfx40-pinvokestackresilience-element.md)|Specifies whether the runtime automatically fixes incorrect platform invoke declarations at runtime, at the cost of slower transitions between managed and unmanaged code.|
 |[\<NetFx45_CultureAwareComparerGetHashCode_LongStrings>](netfx45-cultureawarecomparergethashcode-longstrings-element.md)|Specifies whether the runtime uses a fixed amount of memory to calculate hash codes for the <xref:System.StringComparer.GetHashCode%2A?displayProperty=nameWithType> method.|
 |[\<PreferComInsteadOfManagedRemoting>](prefercominsteadofmanagedremoting-element.md)|Specifies that the runtime will use COM interop instead of remoting across application domain boundaries.|
 |[\<probing>](probing-element.md)|Specifies subdirectories that the runtime searches when loading assemblies.|

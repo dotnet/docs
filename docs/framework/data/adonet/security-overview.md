@@ -58,7 +58,7 @@ Code access security (CAS) is a mechanism that helps limit the access that code 
 
 - Enables code to demand that its callers possess a digital signature, thus allowing only callers from a particular organization or site to call the protected code.
 
-- Enforces restrictions on code at run time by comparing the granted permissions of every caller on the call stack to the permissions that callers must have.
+- Enforces restrictions on code at runtime by comparing the granted permissions of every caller on the call stack to the permissions that callers must have.
 
 To minimize the amount of damage that can occur if an attack succeeds, choose a security context for your code that grants access only to the resources it needs to get its work done and no more.
 

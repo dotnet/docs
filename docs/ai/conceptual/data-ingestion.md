@@ -16,7 +16,7 @@ Data ingestion is the process of collecting, reading, and preparing data from di
 - **Transform** the data by cleaning, chunking, enriching, or converting formats.
 - **Load** the data into a destination like a database, vector store, or AI model for retrieval and analysis.
 
-For AI and machine learning scenarios, especially Retrieval-Augmented Generation (RAG), data ingestion is not just about moving data. It is about making data usable for intelligent applications. This means representing documents in a way that preserves their structure and meaning, splitting them into manageable chunks, enriching them with metadata or embeddings, and storing them so they can be retrieved quickly and accurately.
+For AI and machine learning scenarios, especially Retrieval-Augmented Generation (RAG), data ingestion is not just about converting data from one format to another. It is about making data usable for intelligent applications. This means representing documents in a way that preserves their structure and meaning, splitting them into manageable chunks, enriching them with metadata or embeddings, and storing them so they can be retrieved quickly and accurately.
 
 ## Why data ingestion matters for AI applications
 
@@ -28,7 +28,7 @@ This is where data ingestion becomes critical. You need to extract text from dif
 
 ## The Microsoft.Extensions.DataIngestion library
 
-The [📦 Microsoft.Extensions.DataIngestion package](https://www.nuget.org/packages/Microsoft.Extensions.DataIngestion) provides foundational .NET components for data ingestion. It enables developers to read, process, and prepare documents for AI and machine learning workflows, especially Retrieval-Augmented Generation (RAG) scenarios.
+The [📦 Microsoft.Extensions.DataIngestion package](https://www.nuget.org/packages/Microsoft.Extensions.DataIngestion) provides foundational .NET building blocks for data ingestion. It enables developers to read, process, and prepare documents for AI and machine learning workflows, especially Retrieval-Augmented Generation (RAG) scenarios.
 
 With these building blocks, you can create robust, flexible, and intelligent data ingestion pipelines tailored for your application needs:
 

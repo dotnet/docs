@@ -107,6 +107,26 @@ The preceding configuration assigns a default of `true` to the following propert
 
 These analyzers help to ensure that a library is compatible with Native AOT.
 
+### Verify referenced assemblies are AOT-compatible
+
+When you enable AOT analysis for a library, you can optionally enable verification that all referenced assemblies are also marked as AOT-compatible by setting the `VerifyReferenceAotCompatibility` property to `true`:
+
+```xml
+<PropertyGroup>
+  <IsAotCompatible>true</IsAotCompatible>
+  <VerifyReferenceAotCompatibility>true</VerifyReferenceAotCompatibility>
+</PropertyGroup>
+```
+
+When this property is enabled, the analyzer warns about any referenced assemblies that don't have the `IsAotCompatible` metadata. This helps ensure that all dependencies in your project are compatible with Native AOT. The warning that's emitted is [IL3058](warnings/il3058.md).
+
+This verification is opt-in because:
+
+- Not all AOT-compatible libraries have been updated to include the `IsAotCompatible` metadata.
+- The warning can be noisy if you have many dependencies that work correctly with Native AOT but aren't explicitly marked as such.
+
+Consider enabling this verification when you want to ensure that all your dependencies are explicitly marked as AOT-compatible by their authors.
+
 ## Native debug information
 
 By default, Native AOT publishing produces debug information in a separate file:

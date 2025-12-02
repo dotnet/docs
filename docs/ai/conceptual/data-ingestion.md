@@ -3,7 +3,7 @@ title: Data ingestion
 description: Introduction to data ingestion
 author: luisquintanilla
 ms.author: luquinta
-ms.date: 11/11/2025
+ms.date: 12/02/2025
 ms.topic: concept-article
 ai-usage: ai-assisted
 ---

@@ -109,7 +109,7 @@ These analyzers help to ensure that a library is compatible with Native AOT.
 
 ### Verify referenced assemblies are AOT-compatible
 
-When you enable AOT analysis for a library, you can optionally enable verification that all referenced assemblies are also marked as AOT-compatible by setting the `VerifyReferenceAotCompatibility` property to `true`:
+When you enable AOT analysis for a library, you can optionally enable verification that all referenced assemblies are also annotated for AOT-compatibility by setting the `VerifyReferenceAotCompatibility` property to `true`:
 
 ```xml
 <PropertyGroup>
@@ -118,12 +118,15 @@ When you enable AOT analysis for a library, you can optionally enable verificati
 </PropertyGroup>
 ```
 
-When this property is enabled, the analyzer warns about any referenced assemblies that don't have the `IsAotCompatible` metadata. This helps ensure that all dependencies in your project are compatible with Native AOT. The warning that's emitted is [IL3058](warnings/il3058.md).
+When this property is enabled, the analyzer warns about any referenced assemblies that don't have the `IsAotCompatible` metadata. This helps ensure that all dependencies in your project are annotated for Native AOT compatibility. The warning that's emitted is [IL3058](warnings/il3058.md).
 
 This verification is opt-in because:
 
 - Not all AOT-compatible libraries have been updated to include the `IsAotCompatible` metadata.
 - The warning can be noisy if you have many dependencies that work correctly with Native AOT but aren't explicitly marked as such.
+
+> [!NOTE]
+> The `IsAotCompatible` assembly metadata was introduced in .NET 10. Libraries that were published targeting earlier versions of .NET won't have this attribute, even if they were built with `<IsAotCompatible>true</IsAotCompatible>`.
 
 Consider enabling this verification when you want to ensure that all your dependencies are explicitly marked as AOT-compatible by their authors.
 

@@ -43,7 +43,7 @@ To generate trim warnings without marking the project as trim-compatible, use `<
 
 #### Verify referenced assemblies are trim-compatible
 
-When you enable trim analysis for a library, you can optionally enable verification that all referenced assemblies are also marked as trim-compatible by setting the `VerifyReferenceTrimCompatibility` property to `true`:
+When you enable trim analysis for a library, you can optionally enable verification that all referenced assemblies are also annotated for trim-compatibility by setting the `VerifyReferenceTrimCompatibility` property to `true`:
 
 ```xml
 <PropertyGroup>
@@ -52,7 +52,7 @@ When you enable trim analysis for a library, you can optionally enable verificat
 </PropertyGroup>
 ```
 
-When this property is enabled, the analyzer warns about any referenced assemblies that don't have the `IsTrimmable` metadata. This helps ensure that all dependencies in your project are compatible with trimming. The warning that's emitted is [IL2125](trim-warnings/il2125.md).
+When this property is enabled, the analyzer warns about any referenced assemblies that don't have the `IsTrimmable` metadata. This helps ensure that all dependencies in your project are annotated for trim compatibility. The warning that's emitted is [IL2125](trim-warnings/il2125.md).
 
 This verification is opt-in because:
 

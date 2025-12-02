@@ -23,7 +23,7 @@ dotnet build [<PROJECT>|<SOLUTION>|<FILE>] [-a|--arch <ARCHITECTURE>]
     [-p|--property:<PROPERTYNAME>=<VALUE>] [-r|--runtime <RUNTIME_IDENTIFIER>]
     [--sc|--self-contained] [--source <SOURCE>]
     [--tl:[auto|on|off]] [ --ucr|--use-current-runtime]
-    [-v|--verbosity <LEVEL>] [--version-suffix <VERSION_SUFFIX>]
+    [-v|--verbosity <LEVEL>] [-bl|--binaryLogger:<FILE>] [--version-suffix <VERSION_SUFFIX>]
 
 dotnet build -h|--help
 ```
@@ -80,6 +80,19 @@ Running `dotnet build` is equivalent to running `dotnet msbuild -restore`; howev
 - [!INCLUDE [arch](../../../includes/cli-arch.md)]
 
 - [!INCLUDE [artifacts-path](../../../includes/cli-artifacts-path.md)]
+
+- **`-bl|--binaryLogger:<FILE>`**
+
+  Enables the binary logger and optionally specifies the output file name.  
+  If no file name is provided, the default is `msbuild.binlog` in the current directory.
+
+  The binary log contains detailed build information and can be opened with the
+  [MSBuild Structured Log Viewer](https://msbuildlog.com).
+
+  ```dotnetcli
+  dotnet build --bl
+  dotnet build --bl:build-log.binlog
+  ```
 
 - [!INCLUDE [configuration](../../../includes/cli-configuration.md)]
 
@@ -193,3 +206,4 @@ Running `dotnet build` is equivalent to running `dotnet msbuild -restore`; howev
   ```dotnetcli
   dotnet build -p:Version=1.2.3.4
   ```
+

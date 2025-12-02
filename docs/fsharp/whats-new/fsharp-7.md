@@ -14,7 +14,7 @@ F# 7 is available in .NET 7. You can download the latest .NET SDK from the [.NET
 
 ## Static abstract members in interfaces
 
-[Static abstract members in interfaces](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/tutorials/static-virtual-interface-members) is a new feature of .NET 7. One notable application is [generic math](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/tutorials/static-virtual-interface-members#generic-math).
+[Static abstract members in interfaces](/dotnet/csharp/advanced-topics/interface-implementation/static-virtual-interface-members) is a new feature of .NET 7. One notable application is [generic math](/dotnet/csharp/advanced-topics/interface-implementation/static-virtual-interface-members#generic-math). These links lead to C# documentation, where this feature is also documented.
 
 F# 7 adds the ability to declare, call, and implement static abstract members in interfaces.
 

@@ -92,11 +92,11 @@ Follow the preceding pattern for multiple libraries. To see trim analysis warnin
 
 ## Multi-targeting for trimming
 
-When preparing libraries for trimming, we recommend multi-targeting to at least `net6.0` because that's the earliest TargetFramework where we support the trim analyzer. Use the `IsTargetFrameworkCompatible` MSBuild function to conditionally enable `IsTrimmable` for `net6.0` and above:
+When preparing libraries for trimming, if your library targets any framework earlier than `net6.0` (such as `netstandard2.0` or `net472`), you should also multi-target to `net6.0` to ensure that apps targeting `net6.0` or above get a version of your library that supports the trim analyzer. Use the `IsTargetFrameworkCompatible` MSBuild function to conditionally enable `IsTrimmable` for `net6.0` and above:
 
 ```xml
 <PropertyGroup>
-  <TargetFrameworks>netstandard2.0;net8.0</TargetFrameworks>
+  <TargetFrameworks>netstandard2.0;net6.0</TargetFrameworks>
   <IsTrimmable Condition="$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net6.0'))">true</IsTrimmable>
 </PropertyGroup>
 ```

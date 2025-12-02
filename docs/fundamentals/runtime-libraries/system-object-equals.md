@@ -23,7 +23,7 @@ The type of comparison between the current instance and the `obj` parameter depe
 
 - If the current instance is a value type, the <xref:System.Object.Equals(System.Object)> method tests for value equality. Value equality means the following:
 
-  - The two objects are of the same type. As the following example shows, a <xref:System.Byte> object that has a value of 12 does not equal an <xref:System.Int32> object that has a value of 12, because the two objects have different run-time types.
+  - The two objects are of the same type. As the following example shows, a <xref:System.Byte> object that has a value of 12 does not equal an <xref:System.Int32> object that has a value of 12, because the two objects have different runtime types.
 
     :::code language="csharp" source="./snippets/System/Object/Equals/csharp/equals_val1.cs" interactive="try-dotnet-method" id="Snippet3":::
     :::code language="fsharp" source="./snippets/System/Object/Equals/fsharp/equals_val1.fs" id="Snippet3":::
@@ -136,7 +136,7 @@ The following example shows a `Point` class that overrides the <xref:System.Obje
 
 The `Point.Equals` method checks to make sure that the `obj` argument is not **null** and that it references an instance of the same type as this object. If either check fails, the method returns `false`.
 
-The `Point.Equals` method calls the <xref:System.Object.GetType%2A> method to determine whether the run-time types of the two objects are identical. If the method used a check of the form `obj is Point` in C# or `TryCast(obj, Point)` in Visual Basic, the check would return `true` in cases where `obj` is an instance of a derived class of `Point`, even though `obj` and the current instance are not of the same run-time type. Having verified that both objects are of the same type, the method casts `obj` to type `Point` and returns the result of comparing the instance fields of the two objects.
+The `Point.Equals` method calls the <xref:System.Object.GetType%2A> method to determine whether the runtime types of the two objects are identical. If the method used a check of the form `obj is Point` in C# or `TryCast(obj, Point)` in Visual Basic, the check would return `true` in cases where `obj` is an instance of a derived class of `Point`, even though `obj` and the current instance are not of the same runtime type. Having verified that both objects are of the same type, the method casts `obj` to type `Point` and returns the result of comparing the instance fields of the two objects.
 
 In `Point3D.Equals`, the inherited `Point.Equals` method, which overrides <xref:System.Object.Equals(System.Object)?displayProperty=nameWithType>, is invoked before anything else is done. Because `Point3D` is a sealed class (`NotInheritable` in Visual Basic), a check in the form `obj is Point` in C# or `TryCast(obj, Point)` in Visual Basic is adequate to ensure that `obj` is a `Point3D` object. If it is a `Point3D` object, it is cast to a `Point` object and passed to the base class implementation of <xref:System.Object.Equals%2A>. Only when the inherited `Point.Equals` method returns `true` does the method compare the `z` instance fields introduced in the derived class.
 
@@ -152,4 +152,4 @@ Some languages such as C# and Visual Basic support operator overloading. When a 
 :::code language="fsharp" source="./snippets/System/Object/Equals/fsharp/equals4.fs" id="Snippet1":::
 :::code language="vb" source="./snippets/System/Object/Equals/vb/equals4.vb" id="Snippet1":::
 
-Because `Complex` is a value type, it cannot be derived from. Therefore, the override to <xref:System.Object.Equals(System.Object)> method need not call <xref:System.Object.GetType%2A> to determine the precise run-time type of each object, but can instead use the `is` operator in C# or the `TypeOf` operator in Visual Basic to check the type of the `obj` parameter.
+Because `Complex` is a value type, it cannot be derived from. Therefore, the override to <xref:System.Object.Equals(System.Object)> method need not call <xref:System.Object.GetType%2A> to determine the precise runtime type of each object, but can instead use the `is` operator in C# or the `TypeOf` operator in Visual Basic to check the type of the `obj` parameter.

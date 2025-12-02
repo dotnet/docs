@@ -20,14 +20,14 @@ helpviewer_keywords:
   - "PropertyInfo class, reflection"
   - "type browsers"
   - "reflection"
-  - "discovering type information at run time"
+  - "discovering type information at runtime"
   - "type system, reflection"
 ms.assetid: d1a58e7f-fb39-4d50-bf84-e3b8f9bf9775
 ---
 
 # Reflection in .NET
 
-The classes in the <xref:System.Reflection> namespace, together with <xref:System.Type?displayProperty=nameWithType>, enable you to obtain information about loaded [assemblies](../../standard/assembly/index.md) and the types defined within them, such as [classes](../../standard/base-types/common-type-system.md#classes), [interfaces](../../standard/base-types/common-type-system.md#interfaces), and value types (that is, [structures](../../standard/base-types/common-type-system.md#structures) and [enumerations](../../standard/base-types/common-type-system.md#enumerations)). You can also use reflection to create type instances at run time, and to invoke and access them.
+The classes in the <xref:System.Reflection> namespace, together with <xref:System.Type?displayProperty=nameWithType>, enable you to obtain information about loaded [assemblies](../../standard/assembly/index.md) and the types defined within them, such as [classes](../../standard/base-types/common-type-system.md#classes), [interfaces](../../standard/base-types/common-type-system.md#interfaces), and value types (that is, [structures](../../standard/base-types/common-type-system.md#structures) and [enumerations](../../standard/base-types/common-type-system.md#enumerations)). You can also use reflection to create type instances at runtime, and to invoke and access them.
 
 [Assemblies](../../standard/assembly/index.md) contain modules, modules contain types, and types contain members. Reflection provides objects that encapsulate assemblies, modules, and types. You can use reflection to dynamically create an instance of a type, bind the type to an existing object, or get the type from an existing object. You can then invoke the type's methods or access its fields and properties. Typical uses of reflection include the following:
 
@@ -41,7 +41,7 @@ The classes in the <xref:System.Reflection> namespace, together with <xref:Syste
 - Use <xref:System.Reflection.ParameterInfo> to discover information such as a parameter's name, data type, whether a parameter is an input or output parameter, and the position of the parameter in a method signature.
 - Use <xref:System.Reflection.CustomAttributeData> to discover information about custom attributes when you are working in the <xref:System.Reflection.MetadataLoadContext> or reflection-only context (.NET Framework). <xref:System.Reflection.CustomAttributeData> allows you to examine attributes without creating instances of them.
 
-The classes of the <xref:System.Reflection.Emit> namespace provide a specialized form of reflection that enables you to build types at run time.
+The classes of the <xref:System.Reflection.Emit> namespace provide a specialized form of reflection that enables you to build types at runtime.
 
 Reflection can also be used to create *type browsers*, which enable users to select types and then view the information about those types.
 

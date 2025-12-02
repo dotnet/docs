@@ -12,6 +12,6 @@ The non-generic <xref:System.Text.Json.Serialization.JsonStringEnumConverter> re
 
 ## Workarounds
 
-Use <xref:System.Text.Json.Serialization.JsonStringEnumConverter%601> instead, which doesn't require run-time code generation.
+Use <xref:System.Text.Json.Serialization.JsonStringEnumConverter%601> instead, which doesn't require runtime code generation.
 
 [!INCLUDE [suppress-syslib-warning](includes/suppress-source-generator-diagnostics.md)]

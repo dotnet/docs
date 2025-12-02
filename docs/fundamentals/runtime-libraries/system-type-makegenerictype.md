@@ -11,7 +11,7 @@ dev_langs:
 
 [!INCLUDE [context](includes/context.md)]
 
-The <xref:System.Type.MakeGenericType%2A> method allows you to write code that assigns specific types to the type parameters of a generic type definition, thus creating a <xref:System.Type> object that represents a particular constructed type. You can use this <xref:System.Type> object to create run-time instances of the constructed type.
+The <xref:System.Type.MakeGenericType%2A> method allows you to write code that assigns specific types to the type parameters of a generic type definition, thus creating a <xref:System.Type> object that represents a particular constructed type. You can use this <xref:System.Type> object to create runtime instances of the constructed type.
 
 Types constructed with <xref:System.Type.MakeGenericType%2A> can be open, that is, some of their type arguments can be type parameters of enclosing generic methods or types. You might use such open constructed types when you emit dynamic assemblies. For example, consider the classes `Base` and `Derived` in the following code.
 

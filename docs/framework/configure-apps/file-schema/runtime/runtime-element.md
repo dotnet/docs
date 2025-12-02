@@ -11,7 +11,7 @@ helpviewer_keywords:
   - "container tags, <runtime> element"
 ms.assetid: 1eb2fae3-de4b-45b6-852f-517c39b751bd
 ---
-# \<runtime> Element
+# `<runtime>` Element
 
 Provides information used by the common language runtime to configure applications.
 

@@ -681,7 +681,7 @@ You can specify a file with settings when you use the `collect` command. The set
         <!--
         Additional paths to search for .pdb (symbol) files. Symbols must be found for modules to be instrumented.
         If .pdb files are in the same folder as the .dll or .exe files, they are automatically found. Otherwise, specify them here.
-        Note that searching for symbols increases code coverage runtime. So keep this small and local.
+        Note that searching for symbols increases code coverage run time. So keep this small and local.
         -->
         <SymbolSearchPaths>
             <Path>C:\Users\User\Documents\Visual Studio 2012\Projects\ProjectX\bin\Debug</Path>

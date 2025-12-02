@@ -5,13 +5,13 @@ ms.date: 12/02/2025
 ai-usage: ai-assisted
 ---
 
-# ToolCommandName is not set for non tool packages
+# `ToolCommandName` not set for non-tool packages
 
 The `ToolCommandName` property is no longer set automatically for all projects during build or package operations. It's now only set when `PackAsTool` is set to `true`, indicating that the project is a .NET tool package.
 
 ## Version introduced
 
-.NET 10 RC 1
+.NET 10
 
 ## Previous behavior
 

@@ -176,9 +176,7 @@ items:
                 href: sdk/10.0/nu1015-packagereference-version.md
               - name: PrunePackageReference privatizes direct prunable references
                 href: sdk/10.0/prune-packagereference-privateassets.md
-              - name: SHA-1 fingerprint support deprecated in dotnet nuget sign
-                href: sdk/10.0/dotnet-nuget-sign-sha1-deprecated.md
-              - name: ToolCommandName is not set for non tool packages
+              - name: `ToolCommandName` not set for non-tool packages
                 href: sdk/10.0/toolcommandname-not-set.md
           - name: Serialization
             items:

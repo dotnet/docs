@@ -207,7 +207,7 @@ This article explains how to create a multifile assembly and provides code that 
 
    At the command prompt, type the following command:
 
-   `al` \<*module name*> \<*module name*> … **/main:**\<*method name*> **/out:**\<*file name*> **/target:**\<*assembly file type*>
+   `al` \<*module name*> \<*module name*> … `/main:`\<*method name*> `/out:`\<*file name*> `/target:`\<*assembly file type*>
 
    In this command, the *module name* arguments specify the name of each module to include in the assembly. The `/main:` option specifies the method name that is the assembly's entry point. The `/out:` option specifies the name of the output file, which contains assembly metadata. The `/target:` option specifies that the assembly is a console application executable (*.exe*) file, a Windows executable (*.win*) file, or a library (*.lib*) file.
 

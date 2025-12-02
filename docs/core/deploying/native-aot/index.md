@@ -109,7 +109,7 @@ These analyzers help to ensure that a library is compatible with Native AOT.
 
 ### Verify referenced assemblies are AOT-compatible
 
-When you enable AOT analysis for a library, you can optionally enable verification that all referenced assemblies are also annotated for AOT-compatibility by setting the `VerifyReferenceAotCompatibility` property to `true`:
+When you enable AOT analysis for a library, you can optionally enable verification that all referenced assemblies are also annotated for AOT compatibility by setting the `VerifyReferenceAotCompatibility` property to `true`:
 
 ```xml
 <PropertyGroup>

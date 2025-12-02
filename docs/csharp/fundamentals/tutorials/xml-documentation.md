@@ -67,7 +67,7 @@ You now cycle through the build warnings to add concise, useful documentation to
 1. For methods that return a value, add `<returns>` with a short description of what callers receive. Avoid repeating the method name or managed type.
 1. Work with the `BankAccount` base class first.
 
-Your version should looks something like the following code:
+Your version should look something like the following code:
 
 :::code language="csharp" source="./snippets/xml-documentation/BankAccount.cs":::
 
@@ -98,7 +98,7 @@ If you derive from `BankAccount` (for example, a `SavingsAccount` that applies i
 
 After you finish documenting the public surface, build one final time to confirm there are no remaining CS1591 warnings. Your project now produces useful IntelliSense and a structured XML file ready for publishing workflows.
 
-You can see the full annotated sample in [the source folder](https://github.com/dotnet/docs/tree/main/docs/csharp/fundamentals/tutorials/snippets/xml-documentation) of our repository on [GitHub](https://github.com/dotnet/docs).
+You can see the full annotated sample in [the source folder](https://github.com/dotnet/docs/tree/main/docs/csharp/fundamentals/tutorials/snippets/xml-documentation) of the [dotnet/docs](https://github.com/dotnet/docs) repository on GitHub.
 
 ## Build output from comments
 

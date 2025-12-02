@@ -193,7 +193,7 @@ To run a test, navigate to **Test Explorer**, select the test (or tests) to run.
       script: 'dotnet test' # add command-line options as needed
   ```
 
-- Run using `DotNetCoreCLI` Azure task with test command (requires that you have [`global.json`](../tools/global.json) file in repository root that specifies Microsoft.Testing.Platform as the test runner):
+- Run using `DotNetCoreCLI` Azure task with test command (requires that you have [`global.json`](../tools/global-json.md) file in repository root that specifies Microsoft.Testing.Platform as the test runner):
 
   ```yml
   - task: DotNetCoreCLI@2

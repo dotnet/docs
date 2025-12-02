@@ -109,12 +109,12 @@ These analyzers help to ensure that a library is compatible with Native AOT.
 
 ### Multi-targeting for AOT compatibility
 
-When preparing libraries for AOT compatibility, if your library targets any framework earlier than `net6.0` (such as `netstandard2.0` or `net472`), you should also multi-target to `net6.0` to ensure that apps targeting `net6.0` or above get a version of your library that supports the AOT analyzers. Use the `IsTargetFrameworkCompatible` MSBuild function to conditionally enable `IsAotCompatible` for `net6.0` and above:
+When preparing libraries for AOT compatibility, if your library targets any framework earlier than `net8.0` (such as `netstandard2.0` or `net472`), you should also multi-target to `net8.0` to ensure that apps targeting `net8.0` or above get a version of your library that supports the AOT analyzers. Use the `IsTargetFrameworkCompatible` MSBuild function to conditionally enable `IsAotCompatible` for `net8.0` and above:
 
 ```xml
 <PropertyGroup>
-  <TargetFrameworks>netstandard2.0;net6.0</TargetFrameworks>
-  <IsAotCompatible Condition="$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net6.0'))">true</IsAotCompatible>
+  <TargetFrameworks>netstandard2.0;net8.0</TargetFrameworks>
+  <IsAotCompatible Condition="$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net8.0'))">true</IsAotCompatible>
 </PropertyGroup>
 ```
 

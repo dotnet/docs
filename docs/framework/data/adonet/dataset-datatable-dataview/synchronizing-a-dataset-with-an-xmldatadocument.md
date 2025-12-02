@@ -7,7 +7,7 @@ dev_langs:
   - "vb"
 ms.assetid: fbc96fa9-b5d1-4f97-b099-c89b0e14ce2c
 ---
-# Synchronizing a DataSet with an XmlDataDocument
+# Synchronize a DataSet with an XmlDataDocument
 
 This section demonstrates one step in the processing of a purchase order, using a strongly typed <xref:System.Data.DataSet> synchronized with an <xref:System.Xml.XmlDataDocument>. The examples that follow create a `DataSet` with a minimized schema that matches only a portion of the source XML document. The examples use an `XmlDataDocument` to preserve the fidelity of the source XML document, enabling the `DataSet` to be used to expose a subset of the XML document.
 
@@ -52,7 +52,7 @@ This section demonstrates one step in the processing of a purchase order, using 
       <ShipAddress>Hauptstr. 31</ShipAddress>
       <ShipCity>Bern</ShipCity>
       <ShipPostalCode>3012</ShipPostalCode>
-      <ShipCountry>Switzerland</ShipCountry>
+      <ShipCountryOrRegion>Switzerland</ShipCountryOrRegion>
     </Orders>
     <CompanyName>Chop-suey Chinese</CompanyName>
     <ContactName>Yang Wang</ContactName>
@@ -60,7 +60,7 @@ This section demonstrates one step in the processing of a purchase order, using 
     <Address>Hauptstr. 29</Address>
     <City>Bern</City>
     <PostalCode>3012</PostalCode>
-    <Country>Switzerland</Country>
+    <CountryOrRegion>Switzerland</CountryOrRegion>
     <Phone>0452-076545</Phone>
   </Customers>
   <Shippers>
@@ -153,9 +153,9 @@ This section demonstrates one step in the processing of a purchase order, using 
 </xs:schema>
 ```
 
- Notice that only information from the `OrderDetails` and `Products` elements of the original XML document are included in the schema for the **DataSet**. Synchronizing the `DataSet` with an `XmlDataDocument` ensures that the elements not included in the `DataSet` will persist with the XML document.
+ Notice that only information from the `OrderDetails` and `Products` elements of the original XML document is included in the schema for the **DataSet**. Synchronizing the `DataSet` with an `XmlDataDocument` ensures that the elements not included in the `DataSet` will persist with the XML document.
 
- With the strongly typed `DataSet` generated from the XML Schema (with a namespace of **Northwind.FillOrder**), a portion of the original XML document can be exposed by synchronizing the `DataSet` with the `XmlDataDocument` loaded from the source XML document. Notice that the `DataSet` generated from the schema contains structure but no data. The data is filled in when you load the XML into the **XmlDataDocument**. If you attempt to load an `XmlDataDocument` that has been synchronized with a `DataSet` that already contains data, an exception will be thrown.
+ With the strongly typed `DataSet` generated from the XML Schema (with a namespace of **Northwind.FillOrder**), a portion of the original XML document can be exposed by synchronizing the `DataSet` with the `XmlDataDocument` loaded from the source XML document. The `DataSet` generated from the schema contains structure but no data. The data is filled in when you load the XML into the **XmlDataDocument**. If you attempt to load an `XmlDataDocument` that has been synchronized with a `DataSet` that already contains data, an exception is thrown.
 
  After the `DataSet` (and the **XmlDataDocument**) has been updated, the `XmlDataDocument` can then write out the modified XML document with the elements ignored by the `DataSet` still intact, as shown below. In the purchase order scenario, after the order items have been filled, the modified XML document can then be passed on to the next step in the order process, perhaps to the company's shipping department.
 

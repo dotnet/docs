@@ -156,7 +156,7 @@ typedef struct _WIN32_FIND_DATA
 } WIN32_FIND_DATA, *PWIN32_FIND_DATA;
 ```
 
-In this sample, the `FindData` class contains a corresponding data member for each element of the original structure and the embedded structure. In place of two original character buffers, the class substitutes strings. `MarshalAsAttribute` sets the <xref:System.Runtime.InteropServices.UnmanagedType> enumeration to **ByValTStr**, which is used to identify the inline, fixed-length character arrays that appear within the unmanaged structures.
+In this sample, the `FindData` class contains a corresponding data member for each element of the original structure and the embedded structure. In place of two original character buffers, the class substitutes strings. `MarshalAsAttribute` sets the <xref:System.Runtime.InteropServices.UnmanagedType> enumeration to `ByValTStr`, which is used to identify the inline, fixed-length character arrays that appear within the unmanaged structures.
 
 The `NativeMethods` class contains a managed prototype of the `FindFirstFile` method, which passes the `FindData` class as a parameter. The parameter must be declared with the <xref:System.Runtime.InteropServices.InAttribute> and <xref:System.Runtime.InteropServices.OutAttribute> attributes because classes, which are reference types, are passed as In parameters by default.
 
@@ -184,7 +184,7 @@ The Unions sample uses the following unmanaged function, shown with its original
     void TestUnion(MYUNION u, int type);
     ```
 
-[PinvokeLib.dll](marshalling-data-with-platform-invoke.md#pinvokelibdll) is a custom unmanaged library that contains an implementation for the previously listed function and two unions, `MYUNION` and **MYUNION2**. The unions contain the following elements:
+[PinvokeLib.dll](marshalling-data-with-platform-invoke.md#pinvokelibdll) is a custom unmanaged library that contains an implementation for the previously listed function and two unions, `MYUNION` and `MYUNION2`. The unions contain the following elements:
 
 ```cpp
 union MYUNION

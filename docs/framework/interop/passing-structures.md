@@ -19,7 +19,7 @@ Many unmanaged functions expect you to pass, as a parameter to the function, mem
 |-------------------------|---------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
 |`DoWork(MyType x);`<br /><br /> Demands zero levels of indirection.|`DoWork(ByVal x As MyType)` <br /> `DoWork(MyType x)`<br /><br /> Adds zero levels of indirection.|Not possible because there is already one level of indirection.|
 |`DoWork(MyType* x);`<br /><br /> Demands one level of indirection.|`DoWork(ByRef x As MyType)` <br /> `DoWork(ref MyType x)`<br /><br /> Adds one level of indirection.|`DoWork(ByVal x As MyType)` <br /> `DoWork(MyType x)`<br /><br /> Adds zero levels of indirection.|
-|`DoWork(MyType** x);`<br /><br /> Demands two levels of indirection.|Not possible because `ByRef` **ByRef** or `ref` `ref` cannot be used.|`DoWork(ByRef x As MyType)` <br /> `DoWork(ref MyType x)`<br /><br /> Adds one level of indirection.|
+|`DoWork(MyType** x);`<br /><br /> Demands two levels of indirection.|Not possible because `ByRef ByRef` or `ref ref` cannot be used.|`DoWork(ByRef x As MyType)` <br /> `DoWork(ref MyType x)`<br /><br /> Adds one level of indirection.|
 
  The table describes the following guidelines for platform invoke declarations:
 

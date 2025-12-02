@@ -134,6 +134,42 @@ dotnet-gcdump collect [-h|--help] [-p|--process-id <pid>] [-o|--output <gcdump-f
 > [!NOTE]
 > To collect a GC dump using `dotnet-gcdump`, it needs to be run as the same user as the user running target process or as root. Otherwise, the tool will fail to establish a connection with the target process.
 
+### Examples
+
+- Collect a GC dump from a process with process ID 1902:
+
+  ```dotnetcli
+  > dotnet-gcdump collect --process-id 1902
+  Writing gcdump to './20250601_121500_1902.gcdump'...
+      Finished writing 5763432 bytes.
+  ```
+
+- Collect a GC dump from a process with process ID 1902 and save it to a custom path:
+
+  ```dotnetcli
+  > dotnet-gcdump collect --process-id 1902 --output ./myapp-dump.gcdump
+  Writing gcdump to './myapp-dump.gcdump'...
+      Finished writing 5763432 bytes.
+  ```
+
+- Collect a GC dump from a process by name with verbose output:
+
+  ```dotnetcli
+  > dotnet-gcdump collect --name my-aspnet-server --verbose
+  [20:54:11] Starting gcdump collection...
+  [20:54:11] Triggering GC...
+  [20:54:12] Writing gcdump to './20250601_121500_1902.gcdump'...
+      Finished writing 5763432 bytes.
+  ```
+
+- Collect a GC dump with a custom timeout of 60 seconds:
+
+  ```dotnetcli
+  > dotnet-gcdump collect --process-id 1902 --timeout 60
+  Writing gcdump to './20250601_121500_1902.gcdump'...
+      Finished writing 5763432 bytes.
+  ```
+
 ## `dotnet-gcdump ps`
 
 Lists the dotnet processes that GC dumps can be collected for. dotnet-gcdump 6.0.320703 and later, also display the command-line arguments that each process was started with, if available.
@@ -178,6 +214,32 @@ dotnet-gcdump report [-h|--help] [-p|--process-id <pid>] [-t|--report-type <Heap
 - **`-t|--report-type <HeapStat>`**
 
   The type of report to generate. Available options: heapstat (default).
+
+### Examples
+
+- Generate a heap statistics report from a previously created `.gcdump` file:
+
+  ```dotnetcli
+  > dotnet-gcdump report ./20250601_121500_1902.gcdump
+  ```
+
+  The output displays type statistics:
+
+  ```output
+            Size (Bytes) Count       Type
+          ============== =====       ====
+          1,603,588,000  22,000,000  System.String
+            201,096,000   2,010,000  System.Byte[]
+            100,000,000   1,000,000  System.Char[]
+             50,000,000     500,000  System.Object[]
+             25,000,000     250,000  MyApp.Customer
+  ```
+
+- Generate a heap statistics report from a running process with process ID 1902:
+
+  ```dotnetcli
+  > dotnet-gcdump report --process-id 1902
+  ```
 
 ## Troubleshoot
 

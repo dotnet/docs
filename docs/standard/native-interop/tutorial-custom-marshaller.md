@@ -19,7 +19,7 @@ All source code used in this tutorial is available in the [dotnet/samples reposi
 
 ## Overview of the `LibraryImport` source generator
 
-The [`System.Runtime.InteropServices.LibraryImportAttribute`][api_libraryimportattribute] type is the user entry point for a source generator introduced in .NET 7. This source generator is designed to generate all marshalling code at compile time instead of at run time. Entry points have historically been specified using `DllImport`, but that approach comes with costs that may not always be acceptable&mdash;for more information, see [P/Invoke source generation][pinvoke_source_generation]. The `LibraryImport` source generator can generate all marshalling code and remove the run-time generation requirement intrinsic to `DllImport`.
+The [`System.Runtime.InteropServices.LibraryImportAttribute`][api_libraryimportattribute] type is the user entry point for a source generator introduced in .NET 7. This source generator is designed to generate all marshalling code at compile time instead of at runtime. Entry points have historically been specified using `DllImport`, but that approach comes with costs that may not always be acceptable&mdash;for more information, see [P/Invoke source generation][pinvoke_source_generation]. The `LibraryImport` source generator can generate all marshalling code and remove the runtime generation requirement intrinsic to `DllImport`.
 
 To express the details needed to generated marshalling code both for the runtime and for users to customize for their own types, several types are needed. The following types are used throughout this tutorial:
 

@@ -13,9 +13,9 @@ First introduced in .NET Framework 2.0, generics are essentially a "code templat
 
 To understand why generics are useful, let's take a look at a specific class before and after adding generics: <xref:System.Collections.ArrayList>. In .NET Framework 1.0, the `ArrayList` elements were of type <xref:System.Object>. Any element added to the collection was silently converted into an `Object`. The same would happen when reading elements from the list. This process is known as [boxing and unboxing](../csharp/programming-guide/types/boxing-and-unboxing.md), and it impacts performance. Aside from performance, however, there's no way to determine the type of data in the list at compile time, which makes for some fragile code. Generics solve this problem by defining the type of data each instance of list will contain. For example, you can only add integers to `List<int>` and only add Persons to `List<Person>`.
 
-Generics are also available at run time. The runtime knows what type of data structure you're using and can store it in memory more efficiently.
+Generics are also available at runtime. The runtime knows what type of data structure you're using and can store it in memory more efficiently.
 
-The following example is a small program that illustrates the efficiency of knowing the data structure type at run time:
+The following example is a small program that illustrates the efficiency of knowing the data structure type at runtime:
 
 ```csharp
   using System;

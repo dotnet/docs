@@ -15,7 +15,7 @@ ms.date: 09/24/2025
 
 ```dotnetcli
 dotnet build [<PROJECT>|<SOLUTION>|<FILE>] [-a|--arch <ARCHITECTURE>]
-    [--artifacts-path <ARTIFACTS_DIR>]
+    [--artifacts-path <ARTIFACTS_DIR>]  [-bl|--binaryLogger:<FILE>]
     [-c|--configuration <CONFIGURATION>] [--disable-build-servers]
     [-f|--framework <FRAMEWORK>] [--force] [--interactive]
     [--no-dependencies] [--no-incremental] [--no-restore] [--nologo]
@@ -23,7 +23,7 @@ dotnet build [<PROJECT>|<SOLUTION>|<FILE>] [-a|--arch <ARCHITECTURE>]
     [-p|--property:<PROPERTYNAME>=<VALUE>] [-r|--runtime <RUNTIME_IDENTIFIER>]
     [--sc|--self-contained] [--source <SOURCE>]
     [--tl:[auto|on|off]] [ --ucr|--use-current-runtime]
-    [-v|--verbosity <LEVEL>] [-bl|--binaryLogger:<FILE>] [--version-suffix <VERSION_SUFFIX>]
+    [-v|--verbosity <LEVEL>] [--version-suffix <VERSION_SUFFIX>]
 
 dotnet build -h|--help
 ```
@@ -90,8 +90,8 @@ Running `dotnet build` is equivalent to running `dotnet msbuild -restore`; howev
   [MSBuild Structured Log Viewer](https://msbuildlog.com).
 
   ```dotnetcli
-  dotnet build --bl
-  dotnet build --bl:build-log.binlog
+  dotnet build -bl
+  dotnet build -bl:build-log.binlog
   ```
 
 - [!INCLUDE [configuration](../../../includes/cli-configuration.md)]
@@ -206,4 +206,3 @@ Running `dotnet build` is equivalent to running `dotnet msbuild -restore`; howev
   ```dotnetcli
   dotnet build -p:Version=1.2.3.4
   ```
-

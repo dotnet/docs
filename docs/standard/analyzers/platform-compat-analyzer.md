@@ -37,7 +37,7 @@ The platform compatibility analyzer is one of the Roslyn code quality analyzers.
   - If the platform is a [subset of another platform](#platform-inclusion), the attribute implies that the superset platform is also unsupported. For example, `[UnsupportedOSPlatform("iOS")]` implies that the API is unsupported on `iOS` and also on its superset platform, `MacCatalyst`.
   - The analyzer produces a **warning** only if the `platform` is effective for the call site:
     - **Warns** if the project targets the platform that's attributed as unsupported (for example, if the API is attributed with `[UnsupportedOSPlatform("windows")]` and the call site targets `<TargetFramework>net5.0-windows</TargetFramework>`).
-    - **Warns** if the project is multi-targeted and the `platform` is included in the default [MSBuild `<SupportedPlatform>`](https://github.com/dotnet/sdk/blob/main/src/Tasks/Microsoft.NET.Build.Tasks/targets/Microsoft.NET.SupportedPlatforms.props) items group, or the `platform` is manually included within the `MSBuild` \<SupportedPlatform> items group:
+    - **Warns** if the project is multi-targeted and the `platform` is included in the default [MSBuild `<SupportedPlatform>`](https://github.com/dotnet/sdk/blob/main/src/Tasks/Microsoft.NET.Build.Tasks/targets/Microsoft.NET.SupportedPlatforms.props) items group, or the `platform` is manually included within the `MSBuild` `<SupportedPlatform>` items group:
 
       ```xml
       <ItemGroup>

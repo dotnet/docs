@@ -40,17 +40,17 @@ Each property should only be set once, but some settings allow multiple, comma-s
 
 The order of the properties is not important.
 
-## \<kind> values
+## `<kind>` values
 
 **\<kind>** specifies which kind of entity is being defined&mdash;naming rule, symbol group, or naming style&mdash;and must be one of the following:
 
-| To set a property for | Use the \<kind> value | Example |
+| To set a property for | Use the `<kind>` value | Example |
 | --- | --- | -- |
 | Naming rule | `dotnet_naming_rule` | `dotnet_naming_rule.types_should_be_pascal_case.severity = suggestion` |
 | Symbol group | `dotnet_naming_symbols` | `dotnet_naming_symbols.interface.applicable_kinds = interface` |
 | Naming style | `dotnet_naming_style` | `dotnet_naming_style.pascal_case.capitalization = pascal_case` |
 
-## \<entityName>
+## `<entityName>`
 
 **\<entityName>** is a descriptive name you choose that associates multiple property settings into a single definition. For example, the following properties produce two symbol group definitions, `interface` and `types`, each of which has two properties set on it.
 
@@ -62,7 +62,7 @@ dotnet_naming_symbols.types.applicable_kinds = class, struct, interface, enum, d
 dotnet_naming_symbols.types.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
 ```
 
-## \<propertyName> and \<propertyValue>
+## `<propertyName>` and `<propertyValue>`
 
 Each kind of entity&mdash;[naming rule](#naming-rule-properties), [symbol group](#symbol-group-properties), or [naming style](#naming-style-properties)&mdash;has its own supported properties, as described in the following sections.
 

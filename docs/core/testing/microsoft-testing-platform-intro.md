@@ -175,7 +175,7 @@ To run a test, navigate to **Test Explorer**, select the test (or tests) to run.
 
 ### [Continuous integration (CI)](#tab/continuous-integration)
 
-- To run a single test project in CI, add one step for each test executable that you wish to run, such as this on Azure DevOps:
+- To run a single test project in CI, add one step for each test executable that you wish to run, such as the following on Azure DevOps:
 
   ```yml
   - task: CmdLine@2
@@ -184,7 +184,7 @@ To run a test, navigate to **Test Explorer**, select the test (or tests) to run.
       script: '.\Contoso.MyTests\bin\Debug\net8.0\Contoso.MyTests.exe'
   ```
 
-- Run `dotnet test` command manually, similar to the typical local workflow:
+- Run the `dotnet test` command manually, similar to the typical local workflow:
 
   ```yml
   - task: CmdLine@2
@@ -193,7 +193,7 @@ To run a test, navigate to **Test Explorer**, select the test (or tests) to run.
       script: 'dotnet test' # add command-line options as needed
   ```
 
-- Run using `DotNetCoreCLI` Azure task with test command (requires that you have [`global.json`](../tools/global-json.md) file in repository root that specifies Microsoft.Testing.Platform as the test runner):
+- Run using the `DotNetCoreCLI` Azure task with test command (requires that you have [`global.json`](../tools/global-json.md) file in repository root that specifies Microsoft.Testing.Platform as the test runner):
 
   ```yml
   - task: DotNetCoreCLI@2

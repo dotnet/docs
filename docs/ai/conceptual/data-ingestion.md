@@ -44,7 +44,7 @@ All of these components are open and extensible by design. You can add custom lo
 
 ### Built on stable foundations
 
-![Data Ingestion Architecture Diagram](../media/data-ingestion/DataIngestion.png)
+![Data Ingestion Architecture Diagram](../media/data-ingestion/dataingestion.png)
 
 These data ingestion building blocks are built on top of proven and extensible components in the .NET ecosystem, ensuring reliability, interoperability, and seamless integration with existing AI workflows:
 

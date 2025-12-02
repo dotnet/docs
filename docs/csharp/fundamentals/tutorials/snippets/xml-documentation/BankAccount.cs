@@ -163,8 +163,6 @@ public class BankAccount
         return report.ToString();
     }
 
-    // Added for OO tutorial:
-
     /// <summary>
     /// Performs month-end processing for the account. This virtual method can be overridden in derived classes
     /// to implement specific month-end behaviors such as interest calculations, fee assessments, or statement generation.

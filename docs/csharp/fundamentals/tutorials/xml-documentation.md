@@ -1,7 +1,7 @@
 ---
 title: Generate XML documentation from your source code
 description: "Learn to add `///` comments that generate XML documentation directly from your source code. Learn which tags are available and how to add documentation blocks to types and members."
-ms.topic: tutorial  #Don't change.
+ms.topic: tutorial
 ms.date: 10/14/2025
 ai-usage: ai-assisted
 #customer intent: As a developer, I want to generate XML documentation comments so that other developers can use my code successfully.
@@ -50,7 +50,9 @@ Build the project now. You see warnings for any public members that are missing 
 </doc>
 ```
 
-With the file in place, start adding targeted XML comments and immediately verify how each one appears in the generated output.
+With the file in place, start adding targeted XML comments and immediately verify how each one appears in the generated output. Start with the `Transaction` record type:
+
+:::code language="csharp" source="./snippets/xml-documentation/transaction.cs":::
 
 ## Add documentation comments
 
@@ -64,6 +66,10 @@ You now cycle through the build warnings to add concise, useful documentation to
 1. For methods that can throw, add `<exception>` tags for each intentional exception type. Describe the condition that triggers it. Don't document exceptions thrown by argument validation helpers unless they're part of the public contract.
 1. For methods that return a value, add `<returns>` with a short description of what callers receive. Avoid repeating the method name or managed type.
 1. Work with the `BankAccount` base class first.
+
+Your version should looks something like the following code:
+
+:::code language="csharp" source="./snippets/xml-documentation/BankAccount.cs":::
 
 When you're done, open the regenerated XML file and confirm that each member appears with your new elements. A trimmed portion might look like this:
 
@@ -83,18 +89,16 @@ When you're done, open the regenerated XML file and confirm that each member app
 
 ## Use `<inheritdoc/>` in derived classes
 
-If you derive from `BankAccount` (for example, a `SavingsAccount` that applies interest), you can inherit base documentation instead of copying it. Add a self-closing `<inheritdoc/>` element inside the derived member's documentation block. You can still append more elements (such as extra `<remarks>` details) after `<inheritdoc/>` to document the specialized behavior.
+If you derive from `BankAccount` (for example, a `SavingsAccount` that applies interest), you can inherit base documentation instead of copying it. Add a self-closing `<inheritdoc/>` element inside the derived member's documentation block. You can still append more elements (such as extra `<remarks>` details) after `<inheritdoc/>` to document the specialized behavior:
 
-```csharp
-/// <inheritdoc/>
-/// <remarks>Adds monthly interest during month-end processing.</remarks>
-public class SavingsAccount : BankAccount { /* ... */ }
-```
+:::code language="csharp" source="./snippets/xml-documentation/InterestEarningAccount.cs" id="InterestEarningAccountComments":::
 
 > [!NOTE]
 > `<inheritdoc/>` reduces duplication and helps maintain consistency when you update base type documentation later.
 
 After you finish documenting the public surface, build one final time to confirm there are no remaining CS1591 warnings. Your project now produces useful IntelliSense and a structured XML file ready for publishing workflows.
+
+You can see the full annotated sample in [the source folder](https://github.com/dotnet/docs/tree/main/docs/csharp/fundamentals/tutorials/snippets/xml-documentation) of our repository on [GitHub](https://github.com/dotnet/docs).
 
 ## Build output from comments
 

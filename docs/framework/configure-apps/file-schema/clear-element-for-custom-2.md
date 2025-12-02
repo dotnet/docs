@@ -2,14 +2,14 @@
 description: "Learn more about: <clear> element for NameValueSectionHandler and DictionarySectionHandler"
 title: "<clear> element for NameValueSectionHandler and DictionarySectionHandler"
 ms.date: "05/01/2017"
-f1_keywords: 
+f1_keywords:
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/sectionName/clear"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "clear Element"
   - "<clear> Element"
 ms.assetid: ff2294ec-fb82-4b0c-933e-ae185433fc7b
 ---
-# \<clear> element for NameValueSectionHandler and DictionarySectionHandler
+# `<clear>` element for NameValueSectionHandler and DictionarySectionHandler
 
 Clears all previously defined settings in a section.
 
@@ -31,7 +31,7 @@ None
 
 |     | Description |
 | --- | ------------|
-| [**\<sectionName>** Element](custom-element-2.md) | Defines settings for custom configuration sections that use the <xref:System.Configuration.NameValueSectionHandler> and <xref:System.Configuration.DictionarySectionHandler> classes. |
+| [`<sectionName>` Element](custom-element-2.md) | Defines settings for custom configuration sections that use the <xref:System.Configuration.NameValueSectionHandler> and <xref:System.Configuration.DictionarySectionHandler> classes. |
 
 ## Child elements
 
@@ -39,13 +39,13 @@ None
 
 ## Remarks
 
-You can use the **\<clear>** element to remove all settings from your application that were defined at a higher level in the configuration file hierarchy.
+You can use the `<clear>` element to remove all settings from your application that were defined at a higher level in the configuration file hierarchy.
 
 ## Example
 
-This example defines a machine configuration file and an application configuration file and shows how to use the **\<clear>** element in an application configuration file to clear sections previously defined in the machine configuration file.
+This example defines a machine configuration file and an application configuration file and shows how to use the `<clear>` element in an application configuration file to clear sections previously defined in the machine configuration file.
 
-The following machine configuration file code declares the section **\<mySection>**:
+The following machine configuration file code declares the section `<mySection>`:
 
 ```xml
 <!-- Machine.config file -->
@@ -60,7 +60,7 @@ The following machine configuration file code declares the section **\<mySection
 </configuration>
 ```
 
-The following application configuration file code removes all settings from **\<mySection>**. The application cannot retrieve any of the settings that were declared in the in the **\<mySection>** section of the machine configuration file.
+The following application configuration file code removes all settings from `<mySection>`. The application cannot retrieve any of the settings that were declared in the in the `<mySection>` section of the machine configuration file.
 
 ```xml
 <!-- Application configuration file -->

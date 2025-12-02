@@ -45,7 +45,7 @@ You can use the `<clear>` element to remove all settings from your application t
 
 This example defines a machine configuration file and an application configuration file and shows how to use the `<clear>` element in an application configuration file to clear sections previously defined in the machine configuration file.
 
-The following machine configuration file code declares the section **\<mySection>**:
+The following machine configuration file code declares the section `<mySection>`:
 
 ```xml
 <!-- Machine.config file -->

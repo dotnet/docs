@@ -53,7 +53,7 @@ Contains trace switches and the level where the trace switches are set.
 
 ## Example
 
- The following example shows how to use the `<switch>` element to set the `General` trace switch to the <xref:System.Diagnostics.TraceLevel> level, and enable the `Data` Boolean trace switch.
+ The following example shows how to use the `<switches>` element to set the `General` trace switch to the <xref:System.Diagnostics.TraceLevel> level, and enable the `Data` Boolean trace switch.
 
 ```xml
 <configuration>

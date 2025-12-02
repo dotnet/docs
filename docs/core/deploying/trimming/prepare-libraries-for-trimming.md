@@ -37,7 +37,7 @@ Setting the MSBuild property `IsTrimmable` to `true` marks the assembly as "trim
 * Is considered compatible with trimming.
 * Shouldn't generate trim-related warnings when building. When used in a trimmed app, the assembly has its unused members trimmed in the final output.
 
-The `IsTrimmable` property defaults to `true` when configuring a project as AOT-compatible with `<IsAotCompatible>true</IsAotCompatible>`. For more information, see [AOT-compatibility analyzers](../native-aot/index.md#aot-compatibility-analyzers). When using `IsAotCompatible` in a multi-targeted project, apply the same multi-targeting guidance as for `IsTrimmable` (see [Multi-targeting for trimming](#multi-targeting-for-trimming)).
+The `IsTrimmable` property defaults to `true` when configuring a project as AOT-compatible with `<IsAotCompatible>true</IsAotCompatible>`. For more information, see [AOT-compatibility analyzers](../native-aot/index.md#aot-compatibility-analyzers).
 
 To generate trim warnings without marking the project as trim-compatible, use `<EnableTrimAnalyzer>true</EnableTrimAnalyzer>` rather than `<IsTrimmable>true</IsTrimmable>`.
 

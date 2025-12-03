@@ -54,7 +54,7 @@ If `System.Linq.Async` is consumed indirectly via another package, avoid ambigui
   </PackageReference>
   ```
 
-  Use this configuration only if you're certain no dependencies require System.Linq.Async at run time.
+  Use this configuration only if you're certain no dependencies require System.Linq.Async at runtime.
 
 Most consuming code should be compatible without changes, but some call sites might need updates to refer to newer names and signatures. For example, a `Select` call like `e.Select(i => i * 2)` will work the same before and after. However, the call `e.SelectAwait(async (int i, CancellationToken ct) => i * 2)` will need to be changed to use `Select` instead of `SelectAwait`, as in `e.Select(async (int i, CancellationToken ct) => i * 2)`.
 

@@ -1,6 +1,6 @@
 ---
 title: Garbage collector config settings
-description: Learn about run-time settings for configuring how the garbage collector manages memory for .NET apps.
+description: Learn about runtime settings for configuring how the garbage collector manages memory for .NET apps.
 ms.date: 08/09/2024
 ---
 # Runtime configuration options for garbage collection
@@ -11,7 +11,7 @@ Settings are arranged into groups on this page. The settings within each group a
 
 > [!NOTE]
 >
-> - These configurations are only read by the runtime when the GC is initialized (usually this means during the process startup time). If you change an environment variable when a process is already running, the change won't be reflected in that process. Settings that can be changed through APIs at run time, such as [latency level](../../standard/garbage-collection/latency.md), are omitted from this page.
+> - These configurations are only read by the runtime when the GC is initialized (usually this means during the process startup time). If you change an environment variable when a process is already running, the change won't be reflected in that process. Settings that can be changed through APIs at runtime, such as [latency level](../../standard/garbage-collection/latency.md), are omitted from this page.
 > - Because GC is per process, it rarely ever makes sense to set these configurations at the machine level. For example, you wouldn't want every .NET process on a machine to use server GC or the same heap hard limit.
 > - For number values, use decimal notation for settings in the *runtimeconfig.json* or *runtimeconfig.template.json* file and hexadecimal notation for environment variable settings. For hexadecimal values, you can specify them with or without the "0x" prefix.
 > - If you're using the environment variables, .NET 6 and later versions standardize on the prefix `DOTNET_` instead of `COMPlus_`. However, the `COMPlus_` prefix continues to work. If you're using a previous version of the .NET runtime, you should still use the `COMPlus_` prefix, for example, `COMPlus_gcServer`.
@@ -244,7 +244,7 @@ To use a standalone garbage collector instead of the default GC implementation, 
 - Specifies the threshold size, in bytes, that causes objects to go on the large object heap (LOH).
 - The default threshold is 85,000 bytes.
 - The value you specify must be larger than the default threshold.
-- The value might be capped by the runtime to the maximum possible size for the current configuration. You can inspect the value in use at run time through the <xref:System.GC.GetConfigurationVariables?displayProperty=nameWithType> API.
+- The value might be capped by the runtime to the maximum possible size for the current configuration. You can inspect the value in use at runtime through the <xref:System.GC.GetConfigurationVariables?displayProperty=nameWithType> API.
 
 | | Setting name | Values | Version introduced |
 | - | - | - | - |

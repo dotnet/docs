@@ -203,7 +203,7 @@ The code size reduction is small, but if the loop runs for a nontrivial number o
 
 One of .NET's goals for the JIT compiler's inliner is to remove as many restrictions that block a method from being inlined as possible. .NET 9 enables inlining of:
 
-- Shared generics that require run-time lookups.
+- Shared generics that require runtime lookups.
 
   As an example, consider the following methods:
 
@@ -212,9 +212,9 @@ One of .NET's goals for the JIT compiler's inliner is to remove as many restrict
   static bool Callee<T>() => typeof(T) == typeof(int);
   ```
 
-  When `T` is a reference type like `string`, the runtime creates *shared generics*, which are special instantiations of `Test` and `Callee` that are shared by all ref-type `T` types. To make this work, the runtime builds dictionaries that map generic types to internal types. These dictionaries are specialized per generic type (or per generic method), and are accessed at run time to obtain information about `T` and types that depend on `T`. Historically, code compiled just-in-time was only capable of performing these run-time lookups against the root method's dictionary. This meant the JIT compiler couldn't inline `Callee` into `Test`&mdash;there was no way for the inlined code from `Callee` to access the proper dictionary, even though both methods were instantiated over the same type.
+  When `T` is a reference type like `string`, the runtime creates *shared generics*, which are special instantiations of `Test` and `Callee` that are shared by all ref-type `T` types. To make this work, the runtime builds dictionaries that map generic types to internal types. These dictionaries are specialized per generic type (or per generic method), and are accessed at runtime to obtain information about `T` and types that depend on `T`. Historically, code compiled just-in-time was only capable of performing these runtime lookups against the root method's dictionary. This meant the JIT compiler couldn't inline `Callee` into `Test`&mdash;there was no way for the inlined code from `Callee` to access the proper dictionary, even though both methods were instantiated over the same type.
 
-  .NET 9 has lifted this restriction by freely enabling run-time type lookups in callees, meaning the JIT compiler can now inline methods like `Callee` into `Test`.
+  .NET 9 has lifted this restriction by freely enabling runtime type lookups in callees, meaning the JIT compiler can now inline methods like `Callee` into `Test`.
 
   Suppose we call `Test<string>` in another method. In pseudocode, the inlining looks like this:
 
@@ -238,7 +238,7 @@ One of .NET's goals for the JIT compiler's inliner is to remove as many restrict
 
 ### PGO improvements: Type checks and casts
 
-.NET 8 enabled [dynamic profile-guided optimization (PGO)](../../runtime-config/compilation.md#profile-guided-optimization) by default. NET 9 expands the JIT compiler's PGO implementation to profile more code patterns. When tiered compilation is enabled, the JIT compiler already inserts instrumentation into your program to profile its behavior. When it recompiles with optimizations, the compiler leverages the profile it built at run time to make decisions specific to the current run of your program. In .NET 9, the JIT compiler uses PGO data to improve the performance of *type checks*.
+.NET 8 enabled [dynamic profile-guided optimization (PGO)](../../runtime-config/compilation.md#profile-guided-optimization) by default. NET 9 expands the JIT compiler's PGO implementation to profile more code patterns. When tiered compilation is enabled, the JIT compiler already inserts instrumentation into your program to profile its behavior. When it recompiles with optimizations, the compiler leverages the profile it built at runtime to make decisions specific to the current run of your program. In .NET 9, the JIT compiler uses PGO data to improve the performance of *type checks*.
 
 Determining the type of an object requires a call into the runtime, which comes with a performance penalty. When the type of an object needs to be checked, the JIT compiler emits this call for the sake of correctness (compilers usually cannot rule out any possibilities, even if they seem improbable). However, if PGO data suggests an object is likely to be a specific type, the JIT compiler now emits a *fast path* that cheaply checks for that type, and falls back on the slow path of calling into the runtime only if necessary.
 
@@ -307,7 +307,7 @@ The use of `size` in the call to `Sse2.ShiftRightLogical128BitLane` can be subst
 
 ### Constant folding for floating point and SIMD operations
 
-*Constant folding* is an existing optimization in the JIT compiler. *Constant folding* refers to the replacement of expressions that can be computed at compile time with the constants they evaluate to, thus eliminating computations at run time. .NET 9 adds new constant-folding capabilities:
+*Constant folding* is an existing optimization in the JIT compiler. *Constant folding* refers to the replacement of expressions that can be computed at compile time with the constants they evaluate to, thus eliminating computations at runtime. .NET 9 adds new constant-folding capabilities:
 
 - For floating-point binary operations, where one of the operands is a constant:
   - `x + NaN` is now folded into `NaN`.

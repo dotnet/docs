@@ -18,7 +18,7 @@ To accurately reflect nullability, the `[MemberNotNullWhen()]` attribute is appl
 
 ## Previous behavior
 
-Previously, the <xref:Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch> constructor accepted `null` for the `stem` parameter without any compile-time or run-time warnings or errors.
+Previously, the <xref:Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch> constructor accepted `null` for the `stem` parameter without any compile-time or runtime warnings or errors.
 
 ```csharp
 // Allowed in previous versions.
@@ -29,7 +29,7 @@ The <xref:Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch.Stem?displayP
 
 ## New behavior
 
-Starting in .NET 10, passing a `null` or possibly-null value to the `stem` argument in the <xref:Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch> constructor yields a compile-time warning. And, if `null` is passed in, a run-time <xref:System.ArgumentNullException> is thrown.
+Starting in .NET 10, passing a `null` or possibly-null value to the `stem` argument in the <xref:Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch> constructor yields a compile-time warning. And, if `null` is passed in, a runtime <xref:System.ArgumentNullException> is thrown.
 
 The <xref:Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch.Stem?displayProperty=nameWithType> property is now annotated to indicate that the value won't be null if `IsSuccessful` is `true`.
 

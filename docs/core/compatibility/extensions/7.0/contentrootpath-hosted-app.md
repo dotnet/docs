@@ -9,7 +9,7 @@ The <xref:Microsoft.Extensions.Hosting.IHostEnvironment.ContentRootPath?displayP
 
 When a Windows process (either application or service) is launched without specifying a working directory, the working directory of the process that [created it](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessa) is used. The working directory of Windows Shell or *services.exe* is *%windir%\system32* (or the `System` special folder). When either of those processes launches a hosted app, the `ContentRootPath` property is set to *%windir%\system32*.
 
-This behavior is confusing and causes hosted applications to fail, because the application tries to load files from the *%windir%\system32* directory, but it doesn't exist. For example, the *appsettings.json* file is not found at run time and the settings aren't applied.
+This behavior is confusing and causes hosted applications to fail, because the application tries to load files from the *%windir%\system32* directory, but it doesn't exist. For example, the *appsettings.json* file is not found at runtime and the settings aren't applied.
 
 Starting with .NET 7, when a hosted application is launched with the current directory set to the `System` special folder, it defaults the `ContentRootPath` property to <xref:System.AppContext.BaseDirectory?displayProperty=nameWithType>.
 

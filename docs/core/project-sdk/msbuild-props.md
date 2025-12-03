@@ -478,9 +478,9 @@ This property is useful if you run `dotnet publish` on a solution file, as it al
 
 ### PreserveCompilationContext
 
-The `PreserveCompilationContext` property allows a built or published application to compile more code at run time using the same settings that were used at build time. The assemblies referenced at build time will be copied into the *ref* subdirectory of the output directory. The names of the reference assemblies are stored in the application's *.deps.json* file along with the options passed to the compiler. You can retrieve this information using the <xref:Microsoft.Extensions.DependencyModel.DependencyContext.CompileLibraries?displayProperty=nameWithType> and <xref:Microsoft.Extensions.DependencyModel.DependencyContext.CompilationOptions?displayProperty=nameWithType> properties.
+The `PreserveCompilationContext` property allows a built or published application to compile more code at runtime using the same settings that were used at build time. The assemblies referenced at build time will be copied into the *ref* subdirectory of the output directory. The names of the reference assemblies are stored in the application's *.deps.json* file along with the options passed to the compiler. You can retrieve this information using the <xref:Microsoft.Extensions.DependencyModel.DependencyContext.CompileLibraries?displayProperty=nameWithType> and <xref:Microsoft.Extensions.DependencyModel.DependencyContext.CompilationOptions?displayProperty=nameWithType> properties.
 
-This functionality is mostly used internally by ASP.NET Core MVC and Razor pages to support run-time compilation of Razor files.
+This functionality is mostly used internally by ASP.NET Core MVC and Razor pages to support runtime compilation of Razor files.
 
 ```xml
 <PropertyGroup>
@@ -525,7 +525,7 @@ This property is an enablement flag for several other properties that control wh
 
 ### PublishReferencesDocumentationFiles
 
-When this property is `true`, XML documentation files for the project's references are copied to the publish directory, instead of just run-time assets like DLL files. This property defaults to `true`.
+When this property is `true`, XML documentation files for the project's references are copied to the publish directory, instead of just runtime assets like DLL files. This property defaults to `true`.
 
 ### PublishRelease
 

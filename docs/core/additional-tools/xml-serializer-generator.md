@@ -83,7 +83,7 @@ The following instructions show you how to use XML Serializer Generator in a .NE
    dotnet run
    ```
 
-   The app automatically loads and uses the pre-generated serializers at run time.
+   The app automatically loads and uses the pre-generated serializers at runtime.
 
    > [!TIP]
    > [`dotnet run`](../tools/dotnet-run.md) calls [`dotnet build`](../tools/dotnet-build.md) to ensure that the build targets have been built, and then calls `dotnet <assembly.dll>` to run the target application.

@@ -171,7 +171,7 @@ For each log record, the algorithm checks:
 
 ### Change buffer filtering rules in a running app
 
-Both [global buffering](#global-buffering) and [per-request buffering](#per-request-buffering) support run-time configuration updates via the <xref:Microsoft.Extensions.Options.IOptionsMonitor%601> interface. If you're using a configuration provider that supports reloads—such as the [File Configuration Provider](configuration-providers.md#file-configuration-provider)—you can update filtering rules at run time without restarting the application.
+Both [global buffering](#global-buffering) and [per-request buffering](#per-request-buffering) support runtime configuration updates via the <xref:Microsoft.Extensions.Options.IOptionsMonitor%601> interface. If you're using a configuration provider that supports reloads—such as the [File Configuration Provider](configuration-providers.md#file-configuration-provider)—you can update filtering rules at runtime without restarting the application.
 
 For example, you can start your application with the following _appsettings.json_, which enables log buffering for logs with the <xref:Microsoft.Extensions.Logging.LogLevel.Information?displayProperty=nameWithType> level and category starting with `PerRequestLogBufferingFileBased.`:
 
@@ -187,7 +187,7 @@ The new rules are applied automatically. For example, with the preceding configu
 
 Log buffering offers a trade-off between memory usage and log storage costs. Buffering logs in memory allows you to:
 
-1. Selectively emit logs based on run-time conditions.
+1. Selectively emit logs based on runtime conditions.
 1. Drop unnecessary logs without writing them to storage.
 
 However, be mindful of the memory consumption, especially in high-throughput applications. Configure appropriate buffer size limits to prevent excessive memory usage.

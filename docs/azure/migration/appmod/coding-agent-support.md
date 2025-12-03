@@ -159,7 +159,7 @@ This article shows you how to migrate .NET apps using **GitHub Copilot app moder
 
     Visit [Create a custom agent profile in a repository on GitHub](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent/create-custom-agents#creating-a-custom-agent-profile-in-a-repository-on-github) for more information.
 
-### Migrate your .NET application to Azure
+### Migrate the .NET application to Azure
 
 1. Open the [Agents panel](https://github.com/copilot/agents).
 1. Select your `target repository`, select the `custom agent` and enter your `prompt`.
@@ -186,7 +186,7 @@ This article shows you how to migrate .NET apps using **GitHub Copilot app moder
 
     :::image type="content" source="./media/coding-agent/migrate-completion.png" lightbox="./media/coding-agent/migrate-completion.png" alt-text="Screenshot of .NET migrate completion in Coding Agent.":::
 
-### Deploy your .NET application to Azure
+### Deploy the .NET application to Azure
 
 After migration, deploy directly from Coding Agent using a prompt such as:
 

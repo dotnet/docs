@@ -99,7 +99,7 @@ Use these guidelines to determine which TFM to use in your app:
 
 #### OS version in TFMs
 
-You can also specify an optional OS version at the end of an OS-specific TFM, for example, `net8.0-ios17.2`. The version indicates which APIs are available to your app or library. It doesn't control the OS version that your app or library supports at run time. It's used to select the reference assemblies that your project compiles against, and to select assets from NuGet packages. Think of this version as the "platform version" or "OS API version" to disambiguate it from the run-time OS version.
+You can also specify an optional OS version at the end of an OS-specific TFM, for example, `net8.0-ios17.2`. The version indicates which APIs are available to your app or library. It doesn't control the OS version that your app or library supports at runtime. It's used to select the reference assemblies that your project compiles against, and to select assets from NuGet packages. Think of this version as the "platform version" or "OS API version" to disambiguate it from the runtime OS version.
 
 The .NET SDK is designed to be able to support newly released APIs for an individual platform without a new version of the base TFM. This enables you to access platform-specific functionality without waiting for a major release of .NET. You can gain access to these newly released APIs by incrementing the platform version in the TFM. For example, if the Android platform added API level 34 APIs in a .NET 8.0.x SDK update, you could access them by using the TFM `net8.0-android34.0`.
 
@@ -130,7 +130,7 @@ If your app references a package that has multiple assets for different TFMs, th
 
 #### Support older OS versions
 
-Although a platform-specific app or library is compiled against APIs from a specific version of that OS, you can make it compatible with earlier OS versions by adding the `SupportedOSPlatformVersion` property to your project file. The `SupportedOSPlatformVersion` property indicates the minimum OS version required to run your app or library. If you don't explicitly specify this minimum run-time OS version in the project, it defaults to the platform version from the TFM.
+Although a platform-specific app or library is compiled against APIs from a specific version of that OS, you can make it compatible with earlier OS versions by adding the `SupportedOSPlatformVersion` property to your project file. The `SupportedOSPlatformVersion` property indicates the minimum OS version required to run your app or library. If you don't explicitly specify this minimum runtime OS version in the project, it defaults to the platform version from the TFM.
 
 For your app to run correctly on an older OS version, it can't call APIs that don't exist on that version of the OS. However, you can add guards around calls to newer APIs so they are only called when running on a version of the OS that supports them. This pattern allows you to design your app or library to support running on older OS versions while taking advantage of newer OS functionality when running on newer OS versions.
 

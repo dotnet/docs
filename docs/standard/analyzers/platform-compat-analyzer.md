@@ -216,11 +216,11 @@ The following code snippet shows how you can combine attributes to set the right
 
 The recommended way to deal with these diagnostics is to make sure you only call platform-specific APIs when running on an appropriate platform. Following are the options you can use to address the warnings; choose whichever is most appropriate for your situation:
 
-- **Guard the call**. You can achieve this by conditionally calling the code at run time. Check whether you're running on a desired `Platform` by using one of platform-check methods, for example, `OperatingSystem.Is<Platform>()` or `OperatingSystem.Is<Platform>VersionAtLeast(int major, int minor = 0, int build = 0, int revision = 0)`. [Example](#guard-platform-specific-apis-with-guard-methods).
+- **Guard the call**. You can achieve this by conditionally calling the code at runtime. Check whether you're running on a desired `Platform` by using one of platform-check methods, for example, `OperatingSystem.Is<Platform>()` or `OperatingSystem.Is<Platform>VersionAtLeast(int major, int minor = 0, int build = 0, int revision = 0)`. [Example](#guard-platform-specific-apis-with-guard-methods).
 
 - **Mark the call site as platform-specific**. You can also choose to mark your own APIs as being platform-specific, thus effectively just forwarding the requirements to your callers. Mark the containing method or type or the entire assembly with the same attributes as the referenced platform-dependent call. [Examples](#mark-call-site-as-platform-specific).
 
-- **Assert the call site with platform check**. If you don't want the overhead of an additional `if` statement at run time, use <xref:System.Diagnostics.Debug.Assert(System.Boolean)?displayProperty=nameWithType>. [Example](#assert-the-call-site-with-platform-check).
+- **Assert the call site with platform check**. If you don't want the overhead of an additional `if` statement at runtime, use <xref:System.Diagnostics.Debug.Assert(System.Boolean)?displayProperty=nameWithType>. [Example](#assert-the-call-site-with-platform-check).
 
 - **Delete the code**. Generally not what you want because it means you lose fidelity when your code is used by Windows users. For cases where a cross-platform alternative exists, you're likely better off using that over platform-specific APIs.
 

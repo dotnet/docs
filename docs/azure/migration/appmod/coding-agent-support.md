@@ -155,17 +155,6 @@ This article shows you how to migrate .NET apps using **GitHub Copilot app moder
 
     ```
 
-    Then use the custom agent in one of the following ways:
-    - Using the slash command in interactive mode to select from the list of available custom agents:
-      ```cli
-        /agent
-      ```
-      :::image type="content" source="./media/select-custom-agent.png" lightbox="./media/select-custom-agent.png" alt-text="Screenshot of selecting .NET migration custom agent in Copilot CLI.":::
-    - Calling out to custom agent directly in a prompt:
-      ```cli
-        Use the dotnet modernization agent to migrate this application from local File IO to use Azure Blob Storage.
-      ```
-
 ### Migrate your .NET application to Azure
 
 1. Open the [Agents panel](https://github.com/copilot/agents). Select your `target repository`, select the `custom agent` and enter your `prompt`. After you submit it, Copilot starts a new session and opens a new pull request. It appears in the list below the prompt box. Copilot works on the task and adds you as a reviewer when it finishes, triggering a notification.

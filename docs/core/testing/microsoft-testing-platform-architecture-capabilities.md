@@ -1,126 +1,389 @@
 ---
-title: Microsoft.Testing.Platform capabilities overview
-description: Learn about Microsoft.Testing.Platform capabilities concept.
+title: Microsoft.Testing.Platform capabilities system
+description: Learn how the capabilities system enables feature negotiation and version-independent compatibility in Microsoft.Testing.Platform.
 author: MarcoRossignoli
 ms.author: mrossignoli
-ms.date: 07/11/2024
+ms.date: 11/27/2025
+ai-usage: ai-assisted
 ---
 
-# Microsoft.Testing.Platform capabilities
+# Microsoft.Testing.Platform capabilities system
 
-In the context of Microsoft.Testing.Platform, a *capability* refers to the *potential to perform a specific action or provide specific information*. It's a means for the testing framework and extensions to *declare* their *ability* to *operate* in a certain manner or provide specific information to the *requesters*.
+The capabilities system is a core mechanism in Microsoft.Testing.Platform that enables components to discover and negotiate features at runtime. A *capability* represents the *ability to perform a specific action or provide specific information*.
 
-The *requesters* can be any component involved in a test session, such as the platform, an extension, or the testing framework itself.
+## Why capabilities matter
 
-The primary objective of the capability system is to facilitate effective communication among the components involved in a test session, enabling them to exchange information and meet their respective needs accurately.
+The capabilities system solves several key challenges in building extensible testing platforms:
 
-## Guided example
+- **Feature discovery**: Extensions can query what features a test framework supports before using them
+- **Graceful degradation**: Extensions continue working even when optional features aren't available
+- **Version compatibility**: Different versions of components work together based on mutual understanding
+- **No breaking changes**: New features can be added without breaking existing code
 
-Let's consider a hypothetical example to demonstrate the necessity of a capability system.
+## How capabilities work
 
-> [!NOTE]
-> This example is purely for illustrative purposes and isn't currently implemented within Microsoft.Testing.Platform or any testing framework.
-
-Imagine a situation where you have an extension that requires the testing framework to execute no more than one test at a time. Furthermore, after each test, the extension needs to know the CPU usage for that specific test.
-
-To accommodate the preceding scenario, you need to inquire from the testing framework if:
-
-1. It has the capability to execute only one test at a time.
-2. It can provide information regarding the amount of CPU consumed by each test.
-
-How can the extension determine if the testing framework has the ability to operate in this mode and provide CPU usage information for a test session? In Microsoft.Testing.Platform, this capability is represented by an implementation the `Microsoft.Testing.Platform.Capabilities.ICapability` interface:
+Components declare capabilities they support, and other components query for those capabilities before using features:
 
 ```csharp
-// Base capabilities contracts
+// Extension queries test framework capabilities
+var capabilities = serviceProvider.GetRequiredService<ITestFrameworkCapabilities>();
+var parallelism = capabilities.GetCapability<IDisableParallelismCapability>();
 
+if (parallelism?.CanDisableParallelism == true)
+{
+    // Feature is supported, use it
+    parallelism.Enable();
+}
+else
+{
+    // Feature not available, fallback or disable extension
+    return false;
+}
+```
+
+## Capability interfaces
+
+The capability system is built on simple marker interfaces:
+
+```csharp
+// Base capability marker
 public interface ICapability
 {
 }
 
+// Container for capabilities
 public interface ICapabilities<TCapability>
     where TCapability : ICapability
 {
     IReadOnlyCollection<TCapability> Capabilities { get; }
 }
+```
 
-// Specific testing framework capabilities
+### Test framework capabilities
 
-public interface ITestFrameworkCapabilities : ICapabilities<ITestFrameworkCapability>
+Test frameworks declare their capabilities using specialized interfaces:
+
+```csharp
+// Base for all test framework capabilities
+public interface ITestFrameworkCapability : ICapability
 {
 }
 
-public interface ITestFrameworkCapability : ICapability
+// Container for test framework capabilities
+public interface ITestFrameworkCapabilities : ICapabilities<ITestFrameworkCapability>
 {
 }
 ```
 
-As you can see, the `ICapability` interface is a *marker* interface because it can represent *any capability*, and the actual implementation will be context dependent. You'll also observe the `ITestFrameworkCapability`, which inherits from `ICapability` to classify the capability. The capability system's generic nature allows for convenient grouping by context. The `ITestFrameworkCapability` groups all the capabilities implemented by the [testing framework](./microsoft-testing-platform-architecture-extensions.md#create-a-testing-framework). The `ICapabilities<TCapability>` interface reveals the *set* of all capabilities implemented by an extension. Similarly, for the base one, there's a context-specific testing framework called `ITestFrameworkCapabilities`. The `ITestFrameworkCapabilities` is provided to the platform during the [testing framework registration](./microsoft-testing-platform-architecture-extensions.md#register-a-testing-framework) process.
+You provide these when [registering your test framework](microsoft-testing-platform-architecture-testframework.md#register-a-test-framework):
 
-To create a capability that addresses the aforementioned scenario, you define it as follows:
+```csharp
+builder.RegisterTestFramework(
+    serviceProvider => new MyTestFrameworkCapabilities(),
+    (capabilities, serviceProvider) => new MyTestFramework(capabilities, serviceProvider));
+```
+
+## Example: Designing a capability
+
+Let's design a capability for a hypothetical scenario where an extension needs a test framework to:
+
+1. Run tests one at a time (disable parallelism)
+2. Provide CPU usage information for each test
+
+### Define the capability interface
 
 ```csharp
 public interface IDisableParallelismCapability : ITestFrameworkCapability
 {
+    // Query support
     bool CanDisableParallelism { get; }
     bool CanProvidePerTestCpuConsumption { get; }
+    
+    // Activate the feature
     void Enable();
 }
 ```
 
-If the testing framework implements this interface, at runtime, the following can be queried:
-
-* Verify if the testing framework has the ability to turn off parallelism `CanDisableParallelism = true`.
-* Determine if the testing framework can supply CPU usage data `CanProvidePerTestCPUConsumption = true`.
-* Request the testing adapter to activate this mode by invoking the `Enable()` method before the test session commences.
-
-The hypothetical code fragment inside the extension could be something like:
+### Implement in the test framework
 
 ```csharp
-IServiceProvider provider = null; // TODO: Get IServiceProvider.
-var capabilities = serviceProvider.GetRequiredService<ITestFrameworkCapabilities>();
-
-// Utilize the `GetCapability` API to search for the specific capability to query.
-var capability = capabilities.GetCapability<IDisableParallelismCapability>();
-if (capability is null)
+internal class MyTestFrameworkCapabilities : ITestFrameworkCapabilities
 {
-    // Capability not supported...
+    public IReadOnlyCollection<ITestFrameworkCapability> Capabilities =>
+    [
+        new DisableParallelismCapability()
+    ];
 }
-else
-{
-    capability.Enable();
-    if (capability.CanDisableParallelism)
-    {
-        // Do something...
-    }
 
-    if (capability.CanProvidePerTestCpuConsumption)
+internal class DisableParallelismCapability : IDisableParallelismCapability
+{
+    private bool _enabled;
+    
+    public bool CanDisableParallelism => true;
+    public bool CanProvidePerTestCpuConsumption => true;
+    
+    public void Enable()
     {
-        // Do something...
+        _enabled = true;
+        // Configure test framework for sequential execution
+    }
+    
+    public bool IsEnabled => _enabled;
+}
+```
+
+### Query and use in an extension
+
+```csharp
+public class CpuMonitorExtension : IDataConsumer
+{
+    private readonly IDisableParallelismCapability? _parallelismCapability;
+    
+    public CpuMonitorExtension(IServiceProvider serviceProvider)
+    {
+        var capabilities = serviceProvider.GetRequiredService<ITestFrameworkCapabilities>();
+        
+        // Query for the capability
+        _parallelismCapability = capabilities.GetCapability<IDisableParallelismCapability>();
+    }
+    
+    public async Task<bool> IsEnabledAsync()
+    {
+        // Only enable if framework supports our requirements
+        if (_parallelismCapability is null)
+        {
+            Console.WriteLine("Test framework doesn't support CPU monitoring");
+            return false;
+        }
+        
+        if (!_parallelismCapability.CanDisableParallelism)
+        {
+            Console.WriteLine("Cannot disable parallelism - CPU monitoring may be inaccurate");
+        }
+        
+        if (_parallelismCapability.CanProvidePerTestCpuConsumption)
+        {
+            _parallelismCapability.Enable();
+            return true;
+        }
+        
+        return false;
+    }
+    
+    // ... IDataConsumer implementation
+}
+```
+
+## Built-in platform capabilities
+
+The platform provides several built-in capabilities that test frameworks can implement.
+
+### IBannerMessageOwnerCapability
+
+Allows test frameworks to provide custom banner messages instead of the platform default.
+
+```csharp
+public interface IBannerMessageOwnerCapability : ITestFrameworkCapability
+{
+    Task<string?> GetBannerMessageAsync();
+}
+```
+
+**When to use**: When your test framework wants to display custom branding or version information at startup.
+
+**Example implementation**:
+
+```csharp
+internal class MyBannerCapability : IBannerMessageOwnerCapability
+{
+    private readonly IPlatformInformation _platformInfo;
+    
+    public MyBannerCapability(IPlatformInformation platformInfo)
+    {
+        _platformInfo = platformInfo;
+    }
+    
+    public Task<string?> GetBannerMessageAsync()
+    {
+        return Task.FromResult<string?>(
+            $"MyTestFramework v2.0.0 on {_platformInfo.Name} {_platformInfo.Version}");
     }
 }
 ```
 
-The preceding example illustrates how the capability infrastructure enables a powerful mechanism for communicating abilities between the components involved in a test session. While the sample demonstrates a capability specifically designed for the testing framework, any component can expose and implement extensions that inherit from `ICapability`.
+> [!TIP]
+> Use the [`IPlatformInformation` service](microsoft-testing-platform-architecture-services.md#the-iplatforminformation-service) to access platform details when building your banner.
 
-It's evident that not all details can be communicated through an interface. Considering the previous example, what should the extension expect if the `CanProvidePerTestCpuConsumption` is supported? What kind of custom information is expected to be transmitted via the [IMessageBus](./microsoft-testing-platform-architecture-services.md#the-imessagebus-service) by the testing framework? The solution is **documentation of the capability**. It's the responsibility of the capability *owner* to design, ship, and document it as clearly as possible to assist implementors who want to effectively *collaborate* with the extension that requires the specific capability.
+## Capability ownership and distribution
 
-For instance, the TRX report extension enables the testing framework to implement the necessary capability to accurately generate a TRX report. The extension to register is included in the <https://www.nuget.org/packages/Microsoft.Testing.Extensions.TrxReport> NuGet package, but the capability to implement is found in the *contract only*<https://www.nuget.org/packages/Microsoft.Testing.Extensions.TrxReport.Abstractions> NuGet package.
+When you design a custom capability:
 
-In conclusion, let's summarize the primary aspects of the capability system:
+### 1. Define the capability contract
 
-* It's essential for facilitating clear and stable communication between components.
-* All capabilities should inherit from `ICapability` or an interface that inherits from it, and are exposed through a collection with the `ICapabilities` interface.
-* It aids in the evolution of features without causing breaking changes. If a certain capability isn't supported, appropriate action can be taken.
-* The responsibility of designing, shipping, and documenting the usage of a capability lies with the *capability owner*. Microsoft.Testing.Platform can also *own* a capability in the same way as any other extension.
+Create a separate "abstractions" package containing only the capability interfaces:
 
-## Framework capabilities
+```
+MyExtension.Abstractions
+└── IMyCustomCapability.cs
+```
 
-The platform exposes a specialized interface named `ITestFrameworkCapability` that is the base of all capabilities exposed for test frameworks. These capabilities are provided when [registering the test framework to the platform](./microsoft-testing-platform-architecture-extensions.md#register-a-testing-framework).
+This allows test frameworks to reference only the contract without pulling in your entire extension.
 
-### `IBannerMessageOwnerCapability`
+### 2. Document the capability thoroughly
 
-An optional [test framework capability](#framework-capabilities) that allows the test framework to provide the banner message to the platform. If the message is `null` or if the capability is n't present, the platform will use its default banner message.
+Your capability documentation should include:
 
-This capability implementation allows you to abstract away the various conditions that the test framework may need to consider when deciding whether or not the banner message should be displayed.
+- **Purpose**: What feature does this capability enable?
+- **Requirements**: What must the test framework do to support it?
+- **Data contracts**: What messages should be published to `IMessageBus`?
+- **Activation**: How and when should `Enable()` be called?
+- **Examples**: Working code samples
 
-The platform exposes the [`IPlatformInformation` service](./microsoft-testing-platform-architecture-services.md#the-iplatforminformation-service) to provide some information about the platform that could be useful when building your custom banner message.
+### 3. Version the capability
+
+Follow semantic versioning for capability interfaces:
+
+- **Major version**: Breaking changes to the interface
+- **Minor version**: New optional members (with default implementations if possible)
+- **Patch version**: Documentation updates
+
+### 4. Example: TRX Report Capability
+
+The TRX report extension demonstrates this pattern:
+
+**Contract package**: `Microsoft.Testing.Extensions.TrxReport.Abstractions`
+
+- Contains capability interfaces
+- Referenced by test frameworks
+
+**Implementation package**: `Microsoft.Testing.Extensions.TrxReport`
+
+- Contains the actual extension
+- Referenced by test projects
+
+## Querying capabilities
+
+Extensions query capabilities from the service provider:
+
+```csharp
+public class MyExtension : IDataConsumer
+{
+    private readonly ITestFrameworkCapabilities _frameworkCapabilities;
+    
+    public MyExtension(IServiceProvider serviceProvider)
+    {
+        // Get test framework capabilities
+        _frameworkCapabilities = serviceProvider
+            .GetRequiredService<ITestFrameworkCapabilities>();
+    }
+    
+    public async Task<bool> IsEnabledAsync()
+    {
+        // Query for a specific capability
+        var capability = _frameworkCapabilities.GetCapability<IMyCapability>();
+        
+        if (capability is null)
+        {
+            // Capability not supported
+            Console.WriteLine("MyCapability not supported by test framework");
+            return false;
+        }
+        
+        // Check specific features
+        if (!capability.SupportsFeatureX)
+        {
+            Console.WriteLine("Feature X not supported - using fallback");
+        }
+        
+        // Enable the capability
+        capability.Enable();
+        return true;
+    }
+}
+```
+
+## Best practices
+
+### For capability designers
+
+**DO**:
+
+- Design capabilities as simple, focused interfaces
+- Use boolean properties to indicate feature support
+- Provide an `Enable()` method for activating features
+- Document expected `IMessageBus` message types
+- Create separate abstractions packages
+- Include working examples in documentation
+
+**DON'T**:
+
+- Include implementation details in capability interfaces
+- Create overly complex capability hierarchies
+- Make assumptions about how features will be used
+- Break capability interfaces in minor versions
+
+### For test framework authors
+
+**DO**:
+
+- Implement capabilities your framework naturally supports
+- Return empty collections if no capabilities are supported
+- Document which capabilities you implement
+- Test capability interactions thoroughly
+- Respect capability contracts for message bus data
+
+**DON'T**:
+
+- Implement capabilities you can't fully support
+- Break capability contracts
+- Assume all extensions query capabilities
+
+### For extension authors
+
+**DO**:
+
+- Always check if capabilities exist before using them
+- Provide fallback behavior when capabilities are missing
+- Use `IsEnabledAsync()` to disable gracefully when requirements aren't met
+- Document which capabilities your extension requires
+- Test with test frameworks that don't support your capabilities
+
+**DON'T**:
+
+- Assume capabilities are always present
+- Fail hard when capabilities are missing
+- Query capabilities in performance-critical paths
+- Modify capability objects after `Enable()` is called
+
+## Capability discovery
+
+Users can discover available capabilities using the `--info` command:
+
+```bash
+./MyTests.exe --info
+```
+
+This displays all registered extensions and their capabilities, helping users understand what features are available.
+
+## Summary
+
+The capabilities system enables:
+
+- **Loose coupling**: Components communicate through well-defined contracts
+- **Version independence**: Different versions work together
+- **Graceful degradation**: Extensions adapt to available features
+- **Extensibility**: New features without breaking changes
+
+Key principles:
+
+1. Capabilities represent potential, not requirements
+2. Extensions query before using features
+3. Missing capabilities shouldn't break execution
+4. Documentation is critical for capability adoption
+
+## See also
+
+- [Architecture overview](microsoft-testing-platform-architecture-overview.md)
+- [Build a test framework](microsoft-testing-platform-architecture-testframework.md)
+- [Build extensions](microsoft-testing-platform-extensions.md)
+- [Platform services](microsoft-testing-platform-architecture-services.md)

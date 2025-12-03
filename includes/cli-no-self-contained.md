@@ -4,4 +4,4 @@ ms.topic: include
 ---
 **`--no-self-contained`**
 
-Publish your application as a framework dependent application. A compatible .NET runtime must be installed on the target machine to run your application.
+Publish your application as a framework-dependent application. A compatible .NET runtime must be installed on the target machine to run your application.

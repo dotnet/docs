@@ -339,7 +339,8 @@ The following settings apply to all flavors of the GC:
 
 ### Heap hard limit percent
 
-- Specifies the heap hard limit as a percentage of the total physical memory. If the process is running in a memory-constrained environment, that is, inside a container with a specified memory limit, the container limit is considered the total physical memory. If in a memory-constrained environment, the default value is 75%.
+- Specifies the heap hard limit as a percentage of total physical memory.
+- If the process runs inside an environment (e.g., a container) with a set memory limit, that limit is treated as the total physical memory. In such environments, the default value is 75%.
 - This setting only applies to 64-bit computers.
 - This setting is ignored if the [Per-object-heap hard limits](#per-object-heap-hard-limits) are configured or the [heap hard limit](#heap-hard-limit) is configured.
 

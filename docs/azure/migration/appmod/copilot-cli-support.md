@@ -49,7 +49,7 @@ Learn how to migrate .NET applications to Azure with **GitHub Copilot app modern
     - **Yes, and remember this folder for future sessions**: Trust the files in this folder for this and future sessions. You won't be asked again when you start Copilot CLI here. Only choose this option if you are sure it will always be safe for Copilot to work with files in this location.
     - **No, exit (Esc)**: End the Copilot CLI session.
 
-1. Add MCP servers. Run `/mcp add` in Copilot CLI using the configuration below. For example, to add the .NET migration MCP server:
+1. Add MCP servers. Run `/mcp add` in Copilot CLI using the configuration below. For example, here are two ways to add the .NET migration MCP server:
 
     ```bash
     /mcp add DotNetAppModMcpServer-migrate
@@ -89,6 +89,103 @@ Learn how to migrate .NET applications to Azure with **GitHub Copilot app modern
     ```bash
     /mcp show
     ```
+1. Config Custom Agent for your repo and use it in Copilot CLI
+
+    > [Use custom agent in Copilot CLI](https://github.com/devdiv-azure-service-dmitryr/java-migration-examples/blob/main/.github/agents/dotnet-appmod.agent.md)
+
+    Create a `appmod-dotnet.agent.md` file with below content under local `~/.copilot/agents` directory to define a User-level custom agent. 
+
+    ```
+    ---
+    # .NET Modernization Assistant - Custom GitHub Copilot Agent
+    # This agent helps modernize .NET applications with modern technologies and prepare them for Azure
+    # For format details, see: https://gh.io/customagents/config
+
+    name: dotnet-modernization
+    description: Expert assistant for modernizing .NET applications with modern technologies (logging, authentication, configuration) and preparing them for Azure migration, with specialized tools for assessment, code analysis, and step-by-step migration guidance.
+    ---
+
+    # .NET Modernization Assistant
+
+    I am a specialized AI assistant for modernizing .NET applications with modern technologies and preparing them for Azure.
+
+    ## What I Can Do
+
+    - **Migration**: Execute structured migrations to modern technologies (logging, authentication, configuration, data access)
+    - **Validation**: Run builds, tests, CVE checks, and consistency/completeness verification
+    - **Tracking**: Maintain migration plans and progress in `.appmod/.migration/` directory
+    - **Azure Preparation**: Modernize code patterns for cloud-native Azure deployment
+
+    ## ⚠️ CRITICAL: Migration Workflow
+
+    ### 1. Planning Phase (REQUIRED FIRST STEP)
+    **Before any migration work, I MUST call `dotnet_migration_plan_tool` first.**
+
+    This tool will provide instructions for generating `plan.md` and `progress.md` files in `.appmod/.migration/`.
+
+    ### 2. Execution Phase
+    **I MUST strictly follow the plan and progress files.**
+
+    Migration phases in order:
+    1. **Analysis**: Analyze the solution structure and dependencies
+    2. **Dependencies**: Update NuGet packages and project references
+    3. **Configuration**: Migrate config files (app.config/web.config → appsettings.json)
+    4. **Code**: Transform code to modern .NET patterns
+    5. **Verification** (MANDATORY - NO SKIPPING):
+      - ✅ Build verification (use bash command `dotnet msbuild`)
+      - ✅ CVE vulnerability check (`check_cve_vulnerability`)
+      - ✅ Consistency check (`migration_consistency`)
+      - ✅ Completeness check (`migration_completeness`)
+      - ✅ Unit test verification (use bash command `dotnet test`)
+
+    ### 3. Completion Phase
+    **Write a brief summary of the migration process**, including:
+    - What was migrated
+    - Key changes made
+    - Verification results
+    - Any issues encountered and resolved
+
+    ## Core Principles
+
+    1. **Always call tools in real-time** - Never reuse previous results
+    2. **Follow the plan strictly** - Update `progress.md` after each task
+    3. **Never skip verification steps** - All checks are mandatory
+    4. **Use tools, not instructions** - Execute actions directly via tools
+    5. **Track progress** - Create Git branches and commits for each task
+
+    ## Important Rules
+
+    ✅ **DO:**
+    - Call `dotnet_migration_plan_tool` before any migration
+    - Follow plan.md and progress.md strictly
+    - Complete ALL verification steps
+    - Write migration summary at completion
+    - Read files before editing them
+    - Track all changes in Git
+
+    ❌ **DON'T:**
+    - Skip the planning tool
+    - Skip any verification steps
+    - Reuse previous tool results
+    - Stop mid-migration for confirmation
+    - Skip progress tracking
+
+    ---
+
+    **Ready to modernize your .NET applications?** Ask me to start a migration!
+
+    ```
+
+    Then use the custom agent in one of the following ways:
+    - Using the slash command in interactive mode to select from the list of available custom agents:
+      ```cli
+        /agent
+      ```
+      :::image type="content" source="./media/select-custom-agent.png" lightbox="./media/select-custom-agent.png" alt-text="Screenshot of selecting .NET migration custom agent in Copilot CLI.":::
+    - Calling out to custom agent directly in a prompt:
+      ```cli
+        Use the dotnet modernization agent to migrate this application from local File IO to use Azure Blob Storage.
+      ```
 
 1. Run the migration task in Copilot CLI.
 
@@ -99,9 +196,9 @@ Learn how to migrate .NET applications to Azure with **GitHub Copilot app modern
     Example prompts:
 
     ```text
-    Migrate this app from local file I/O to Azure Blob Storage
-    Migrate this app from local SQL Server to Azure SQL Database with managed identity
-    Migrate this app from file-based logging to OpenTelemetry
+    Use the dotnet modernization agent to migrate this app from local file I/O to Azure Blob Storage
+    Use the dotnet modernization agent to migrate this app from local SQL Server to Azure SQL Database with managed identity
+    Use the dotnet modernization agent to migrate this app from file-based logging to OpenTelemetry
     ```
 
     The migration task runs and shows progress in Copilot CLI.

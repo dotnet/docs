@@ -69,11 +69,12 @@ This article shows you how to migrate .NET apps using **GitHub Copilot app moder
 
     > [Creating a custom agent profile in a repository on GitHub](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent/create-custom-agents#creating-a-custom-agent-profile-in-a-repository-on-github)
 
-    - Navigate to the agents tab at https://github.com/copilot/agents.
-    - Using the dropdown menu in the prompt box, select the repository you want to create the custom agent profile in.
-    - Optionally, select the branch you want to create the agent profile in. The default is the main branch.
-    - Click Copilot Icon, then click `+ Create an agent`. This will open a template agent profile called `my-agent.agent.md` in the `.github/agents` directory of your target repository.
-    - Paste the content below to the template profile and rename it to `appmod-dotnet.agent.md`. Commit the file to the repository and merge it into the default branch. Go back to the agents tab and refresh the page if needed. Your custom agent will now appear in the dropdown when you click  in the prompt box.
+    - Go to the agents tab at <https://github.com/copilot/agents>.
+    - In the prompt box, open the dropdown, and select the repository where you want to create the custom agent profile.
+    - (Optional) Select the branch where you want to create the agent profile. The default is the main branch.
+    - Select the **Copilot** icon, then select **+ Create an agent**. This action opens a template agent profile named `my-agent.agent.md` in the `.github/agents` directory of your target repository.
+    - Paste the content below into the template, and rename the file to `appmod-dotnet.agent.md`. Commit the file, and merge it into the default branch. Return to the agents tab, and refresh the page if needed. Your custom agent appears in the dropdown when you open the agent selector in the prompt box.
+
     ```
     ---
     # .NET Modernization Assistant - Custom GitHub Copilot Agent

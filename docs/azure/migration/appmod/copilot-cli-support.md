@@ -89,11 +89,10 @@ Learn how to migrate .NET applications to Azure with **GitHub Copilot app modern
     ```bash
     /mcp show
     ```
-1. Config Custom Agent for your repo and use it in Copilot CLI
+
+1. Configure a Custom Agent for your repo and use it in Copilot CLI. Create a file in the local `~/.copilot/agents` directory named `appmod-dotnet.agent.md`. Add the following content to define a User-level custom agent.
 
     > [Use custom agent in Copilot CLI](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli#use-custom-agents)
-
-    Create a `appmod-dotnet.agent.md` file with below content under local `~/.copilot/agents` directory to define a User-level custom agent. 
 
     ```
     ---

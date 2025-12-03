@@ -91,7 +91,7 @@ Learn how to migrate .NET applications to Azure with **GitHub Copilot app modern
     ```
 1. Config Custom Agent for your repo and use it in Copilot CLI
 
-    > [Use custom agent in Copilot CLI](https://github.com/devdiv-azure-service-dmitryr/java-migration-examples/blob/main/.github/agents/dotnet-appmod.agent.md)
+    > [Use custom agent in Copilot CLI](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli#use-custom-agents)
 
     Create a `appmod-dotnet.agent.md` file with below content under local `~/.copilot/agents` directory to define a User-level custom agent. 
 

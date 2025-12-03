@@ -207,7 +207,7 @@ To retrieve the known vulnerability dataset from the NuGet.org central registry,
 </packageSources>
 ```
 
-NuGet.org is the only package source that provides a vulnerability dataset for NuGet to run auditing with, however, NuGet audits any source as long as the source provides the [`VulnerabilityInfo` resource](/nuget/api/vulnerability-info).
+NuGet.org is the only package source that provides a vulnerability dataset for NuGet auditing. However, NuGet audits any source as long as the source provides the [`VulnerabilityInfo` resource](/nuget/api/vulnerability-info).
 
 You can configure the level at which auditing will fail by setting the `<NuGetAuditLevel>` MSBuild property. Possible values are `low`, `moderate`, `high`, and `critical`. For example if you only want to see moderate, high, and critical advisories, you can set the property to `moderate`.
 

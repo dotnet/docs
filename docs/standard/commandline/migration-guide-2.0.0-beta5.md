@@ -11,8 +11,6 @@ helpviewer_keywords:
 
 # System.CommandLine 2.0.0-beta5+ migration guide
 
-[!INCLUDE [scl-preview](./includes/preview.md)]
-
 The main focus for the 2.0.0-beta5 release was to improve the APIs and take a step toward releasing a stable version of System.CommandLine. The APIs have been simplified and made more coherent and consistent with the [Framework design guidelines](../design-guidelines/index.md). This article describes the breaking changes that were made in 2.0.0-beta5 and 2.0.0-beta7, and the reasoning behind them.
 
 ## Renaming

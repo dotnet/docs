@@ -65,21 +65,122 @@ This article shows you how to migrate .NET apps using **GitHub Copilot app moder
 1. (Optional) If environment variables are required, set them under **Environment → Copilot** in the settings. These variables initialize automatically the first time an agentic task is invoked in this repository.
 1. Save the MCP configuration.
 
+1. Config Custom Agent for your repo and use it in Copilot Coding Agent
+
+    > [Creating a custom agent profile in a repository on GitHub](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent/create-custom-agents#creating-a-custom-agent-profile-in-a-repository-on-github)
+
+    - Navigate to the agents tab at https://github.com/copilot/agents.
+    - Using the dropdown menu in the prompt box, select the repository you want to create the custom agent profile in.
+    - Optionally, select the branch you want to create the agent profile in. The default is the main branch.
+    - Click Copilot Icon, then click `+ Create an agent`. This will open a template agent profile called `my-agent.agent.md` in the `.github/agents` directory of your target repository.
+    - Paste the content below to the template profile and rename it to `appmod-dotnet.agent.md`. Commit the file to the repository and merge it into the default branch. Go back to the agents tab and refresh the page if needed. Your custom agent will now appear in the dropdown when you click  in the prompt box.
+    ```
+    ---
+    # .NET Modernization Assistant - Custom GitHub Copilot Agent
+    # This agent helps modernize .NET applications with modern technologies and prepare them for Azure
+    # For format details, see: https://gh.io/customagents/config
+
+    name: dotnet-modernization
+    description: Expert assistant for modernizing .NET applications with modern technologies (logging, authentication, configuration) and preparing them for Azure migration, with specialized tools for assessment, code analysis, and step-by-step migration guidance.
+    ---
+
+    # .NET Modernization Assistant
+
+    I am a specialized AI assistant for modernizing .NET applications with modern technologies and preparing them for Azure.
+
+    ## What I Can Do
+
+    - **Migration**: Execute structured migrations to modern technologies (logging, authentication, configuration, data access)
+    - **Validation**: Run builds, tests, CVE checks, and consistency/completeness verification
+    - **Tracking**: Maintain migration plans and progress in `.appmod/.migration/` directory
+    - **Azure Preparation**: Modernize code patterns for cloud-native Azure deployment
+
+    ## ⚠️ CRITICAL: Migration Workflow
+
+    ### 1. Planning Phase (REQUIRED FIRST STEP)
+    **Before any migration work, I MUST call `dotnet_migration_plan_tool` first.**
+
+    This tool will provide instructions for generating `plan.md` and `progress.md` files in `.appmod/.migration/`.
+
+    ### 2. Execution Phase
+    **I MUST strictly follow the plan and progress files.**
+
+    Migration phases in order:
+    1. **Analysis**: Analyze the solution structure and dependencies
+    2. **Dependencies**: Update NuGet packages and project references
+    3. **Configuration**: Migrate config files (app.config/web.config → appsettings.json)
+    4. **Code**: Transform code to modern .NET patterns
+    5. **Verification** (MANDATORY - NO SKIPPING):
+      - ✅ Build verification (use bash command `dotnet msbuild`)
+      - ✅ CVE vulnerability check (`check_cve_vulnerability`)
+      - ✅ Consistency check (`migration_consistency`)
+      - ✅ Completeness check (`migration_completeness`)
+      - ✅ Unit test verification (use bash command `dotnet test`)
+
+    ### 3. Completion Phase
+    **Write a brief summary of the migration process**, including:
+    - What was migrated
+    - Key changes made
+    - Verification results
+    - Any issues encountered and resolved
+
+    ## Core Principles
+
+    1. **Always call tools in real-time** - Never reuse previous results
+    2. **Follow the plan strictly** - Update `progress.md` after each task
+    3. **Never skip verification steps** - All checks are mandatory
+    4. **Use tools, not instructions** - Execute actions directly via tools
+    5. **Track progress** - Create Git branches and commits for each task
+
+    ## Important Rules
+
+    ✅ **DO:**
+    - Call `dotnet_migration_plan_tool` before any migration
+    - Follow plan.md and progress.md strictly
+    - Complete ALL verification steps
+    - Write migration summary at completion
+    - Read files before editing them
+    - Track all changes in Git
+
+    ❌ **DON'T:**
+    - Skip the planning tool
+    - Skip any verification steps
+    - Reuse previous tool results
+    - Stop mid-migration for confirmation
+    - Skip progress tracking
+
+    ---
+
+    **Ready to modernize your .NET applications?** Ask me to start a migration!
+
+    ```
+
+    Then use the custom agent in one of the following ways:
+    - Using the slash command in interactive mode to select from the list of available custom agents:
+      ```cli
+        /agent
+      ```
+      :::image type="content" source="./media/select-custom-agent.png" lightbox="./media/select-custom-agent.png" alt-text="Screenshot of selecting .NET migration custom agent in Copilot CLI.":::
+    - Calling out to custom agent directly in a prompt:
+      ```cli
+        Use the dotnet modernization agent to migrate this application from local File IO to use Azure Blob Storage.
+      ```
+
 ### Migrate your .NET application to Azure
 
-To migrate your .NET application to Azure, describe your migration scenario in the agent prompt. For example:
+1. Open the [Agents panel](https://github.com/copilot/agents). Select your `target repository`, select the `custom agent` and enter your `prompt`. After you submit it, Copilot starts a new session and opens a new pull request. It appears in the list below the prompt box. Copilot works on the task and adds you as a reviewer when it finishes, triggering a notification.
 
-```text
-Migrate this project from local file I/O to Azure Blob Storage
-Migrate this project from local SQL Server to Azure SQL Database with managed identity
-Migrate this project from file-based logging to OpenTelemetry
-```
+    :::image type="content" source="./media/coding-agent/select-custom-agent.png" lightbox="./media/coding-agent/select-custom-agent.png" alt-text="Screenshot of .NET migrate task input in Coding Agent.":::
+
+    Here are some prompt examples for your reference:
+
+    ```text
+    Migrate this project from local file I/O to Azure Blob Storage
+    Migrate this project from local SQL Server to Azure SQL Database with managed identity
+    Migrate this project from file-based logging to OpenTelemetry
+    ```
 
 For details on predefined migration tasks, see [migration tasks](predefined-tasks.md).
-
-1. Open the Agents panel and enter your prompt. After you submit it, Copilot starts a new session and opens a new pull request. It appears in the list below the prompt box. Copilot works on the task and adds you as a reviewer when it finishes, triggering a notification.
-
-    :::image type="content" source="./media/coding-agent/migrate-input.png" lightbox="./media/coding-agent/migrate-input.png" alt-text="Screenshot of .NET migrate task input in Coding Agent.":::
 
 1. After the migration starts, monitor the progress:
 

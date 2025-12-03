@@ -1,5 +1,5 @@
 ---
-title: Data collections - Introductory interactive tutorial
+title: Data collections - Introductory tutorial
 description: In this tutorial, you use your browser to learn about C# collections. You write C# code and see the results of compiling and running your code directly in the browser.
 ms.date: 03/07/2025
 ---
@@ -7,17 +7,15 @@ ms.date: 03/07/2025
 
 This introductory tutorial provides an introduction to the C# language and the basics of the  class.
 
-This tutorial teaches you C# interactively, using your browser to write C# code and see the results of compiling and running your code. It contains a series of lessons that create, modify, and explore collections and arrays. You work primarily with the <xref:System.Collections.Generic.List%601> class.
+This tutorial teaches you C#. You write C# code and see the results of compiling and running that code. It contains a series of lessons that create, modify, and explore collections and arrays. You work primarily with the <xref:System.Collections.Generic.List%601> class.
+
+<< TODO Create the app>>
 
 ## A basic list example
 
-> [!TIP]
->
-> When a code snippet block includes the "Run" button, that button opens the interactive window, or replaces the existing code in the interactive window. When the snippet doesn't include a "Run" button, you can copy the code and add it to the current interactive window.
+Add the following code to your source file. Replace `<name>` with your name. Then, type `dotnet run` to run the code:
 
-Run the following code in the interactive window. Replace `<name>` with your name and select **Run**:
-
-:::code language="csharp" interactive="try-dotnet-method" source="./snippets/ListCollection/Program.cs" id="BasicList":::
+:::code language="csharp" source="./snippets/ListCollection/Program.cs" id="BasicList":::
 
 You created a list of strings, added three names to that list, and printed the names in all CAPS. You're using concepts that you learned in earlier tutorials to loop through the list.
 
@@ -43,7 +41,7 @@ You're not allowed to access past the end of the list. You can check how long th
 
 :::code language="csharp" source="./snippets/ListCollection/Program.cs" id="Property":::
 
-Select **Run** again to see the results. In C#, indices start at 0, so the largest valid index is one less than the number of items in the list.
+Type `dotnet run` again to see the results. In C#, indices start at 0, so the largest valid index is one less than the number of items in the list.
 
 For more information about indices, see the [Explore indexes and ranges](../../tutorials/ranges-indexes.md) article.
 
@@ -61,15 +59,15 @@ The items in your list can be sorted as well. The <xref:System.Collections.Gener
 
 ## Lists of other types
 
-You've been using the `string` type in lists so far. Let's make a <xref:System.Collections.Generic.List%601> using a different type. Let's build a set of numbers. Delete the code you wrote so far, and replace it with the following code:
+You've been using the `string` type in lists so far. Let's make a <xref:System.Collections.Generic.List%601> using a different type. Let's build a set of numbers. Add the following code at the end of your source file:
 
-:::code language="csharp" interactive="try-dotnet-method" source="./snippets/ListCollection/Program.cs" id="CreateList":::
+:::code language="csharp" source="./snippets/ListCollection/Program.cs" id="CreateList":::
 
 That creates a list of integers, and sets the first two integers to the value 1. The *Fibonacci Sequence*, a sequence of numbers, starts with two 1's. Each next Fibonacci number is found by taking the sum of the previous two numbers. Add this code:
 
 :::code language="csharp" source="./snippets/ListCollection/Program.cs" id="Fibonacci":::
 
-Press **Run** to see the results.
+Type `dotnet run` to see the results.
 
 ## Challenge
 
@@ -80,13 +78,13 @@ Did you come up with something like this?
 <!-- markdownlint-disable MD033 -->
 <details>
 
-:::code language="csharp" interactive="try-dotnet-method" source="./snippets/ListCollection/Program.cs" id="Answer":::
+:::code language="csharp" source="./snippets/ListCollection/Program.cs" id="Answer":::
 
 With each iteration of the loop, you're taking the last two integers in the list, summing them, and adding that value to the list. The loop repeats until you added 20 items to the list.
 </details>
 <!-- markdownlint-disable MD033 -->
 
-You completed the list interactive tutorial, the final introduction to C# interactive tutorial. You can visit the [.NET site](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro) to download the .NET SDK, create a project on your machine, and keep coding. The "Next steps" section brings you back to these tutorials. Or, you can continue with the [Explore object oriented programming with classes and objects](../../fundamentals/tutorials/classes.md) tutorial.
+You completed the list tutorial. You can continue with the [Pattern matching](./pattern-matching.md) tutorial.
 
 You can learn more about [.NET collections](../../../standard/collections/index.md) in the following articles:
 

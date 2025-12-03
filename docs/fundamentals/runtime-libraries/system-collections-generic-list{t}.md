@@ -25,7 +25,7 @@ The <xref:System.Collections.Generic.List%601> is not guaranteed to be sorted. Y
 
 Elements in this collection can be accessed using an integer index. Indexes in this collection are zero-based.
 
-**.NET Framework only:** For very large <xref:System.Collections.Generic.List%601> objects, you can increase the maximum capacity to 2 billion elements on a 64-bit system by setting the `enabled` attribute of the [`<gcAllowVeryLargeObjects>`](../../framework/configure-apps/file-schema/runtime/gcallowverylargeobjects-element.md) configuration element to `true` in the run-time environment.
+**.NET Framework only:** For very large <xref:System.Collections.Generic.List%601> objects, you can increase the maximum capacity to 2 billion elements on a 64-bit system by setting the `enabled` attribute of the [`<gcAllowVeryLargeObjects>`](../../framework/configure-apps/file-schema/runtime/gcallowverylargeobjects-element.md) configuration element to `true` in the runtime environment.
 
 <xref:System.Collections.Generic.List%601> accepts `null` as a valid value for reference types and allows duplicate elements.
 

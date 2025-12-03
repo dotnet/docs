@@ -49,13 +49,15 @@ Learn how to migrate .NET applications to Azure with **GitHub Copilot app modern
     - **Yes, and remember this folder for future sessions**: Trust the files in this folder for this and future sessions. You won't be asked again when you start Copilot CLI here. Only choose this option if you are sure it will always be safe for Copilot to work with files in this location.
     - **No, exit (Esc)**: End the Copilot CLI session.
 
-1. Add MCP servers. Run `/mcp add` in Copilot CLI using the configuration below. For example, here are two ways to add the .NET migration MCP server:
+### Add the MCP Server
 
-    ```bash
+1. Run `/mcp add` in Copilot CLI using the configuration below. For example, here are two ways to add the .NET migration MCP server:
+
+    ```text
     /mcp add DotNetAppModMcpServer-migrate
     ```
 
-    Fill the fields as follows:
+1. Fill the fields as follows:
 
     - Server Type: Local
     - Command: `dnx Microsoft.AppModernization.McpServer.DotNet.Migration --yes --source https://api.nuget.org/v3/index.json`
@@ -84,17 +86,19 @@ Learn how to migrate .NET applications to Azure with **GitHub Copilot app modern
     }
     ```
 
-    Run `/mcp show` to confirm the MCP server configuration.
+1. Run `/mcp show` to confirm the MCP server configuration.
 
-    ```bash
+    ```text
     /mcp show
     ```
 
-1. Configure a Custom Agent for your repo and use it in Copilot CLI. Create a file in the local `~/.copilot/agents` directory named `appmod-dotnet.agent.md`. Add the following content to define a User-level custom agent.
+### Configure a custom agent
 
-    > [Use custom agent in Copilot CLI](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli#use-custom-agents)
+1. Create a file in the local `~/.copilot/agents` directory named `appmod-dotnet.agent.md`. Add the following content to define a User-level custom agent.
 
-    ```
+    For more information, visit [Use custom agents in Copilot CLI](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli#use-custom-agents).
+
+    ```text
     ---
     # .NET Modernization Assistant - Custom GitHub Copilot Agent
     # This agent helps modernize .NET applications with modern technologies and prepare them for Azure
@@ -175,38 +179,47 @@ Learn how to migrate .NET applications to Azure with **GitHub Copilot app modern
 
     ```
 
-    Then use the custom agent in one of the following ways:
+    Use the custom agent in one of the following ways:
+
     - Using the slash command in interactive mode to select from the list of available custom agents:
-      ```cli
-        /agent
+
+      ```text
+      /agent
       ```
+
       :::image type="content" source="./media/select-custom-agent.png" lightbox="./media/select-custom-agent.png" alt-text="Screenshot of selecting .NET migration custom agent in Copilot CLI.":::
+
     - Calling out to custom agent directly in a prompt:
-      ```cli
-        Use the dotnet modernization agent to migrate this application from local File IO to use Azure Blob Storage.
+
+      ```text
+      Use the dotnet modernization agent to migrate this application from local File IO to use Azure Blob Storage.
       ```
 
-1. Run the migration task in Copilot CLI.
+### Run the migration task in Copilot CLI.
 
-    Describe your migration scenario in Copilot CLI to migrate your .NET app to Azure.
-    Use a prompt like *migrate from X to Y* for any migration task.
-    Copilot CLI supports predefined migration scenarios that follow Microsoft best practices. For details, see [migration tasks](predefined-tasks.md).
+Describe your migration scenario in Copilot CLI to migrate your .NET app to Azure. Use a prompt like:
 
-    Example prompts:
+```text
+*migrate from X to Y* for any migration task
+```
 
-    ```text
-    Use the dotnet modernization agent to migrate this app from local file I/O to Azure Blob Storage
-    Use the dotnet modernization agent to migrate this app from local SQL Server to Azure SQL Database with managed identity
-    Use the dotnet modernization agent to migrate this app from file-based logging to OpenTelemetry
-    ```
+Copilot CLI supports predefined migration scenarios that follow Microsoft best practices. For details, see [migration tasks](predefined-tasks.md).
 
-    The migration task runs and shows progress in Copilot CLI.
+Example prompts:
 
-    :::image type="content" source="./media/migrate-details.png" lightbox="./media/migrate-details.png" alt-text="Screenshot of a .NET migration task progress details in Copilot CLI.":::
+```text
+Use the dotnet modernization agent to migrate this app from local file I/O to Azure Blob Storage
+Use the dotnet modernization agent to migrate this app from local SQL Server to Azure SQL Database with managed identity
+Use the dotnet modernization agent to migrate this app from file-based logging to OpenTelemetry
+```
 
-    After migration, view the summary:
+The migration task runs and shows progress in Copilot CLI.
 
-    :::image type="content" source="./media/migrate-summary.png" lightbox="./media/migrate-summary.png" alt-text="Screenshot of the .NET migration summary in Copilot CLI.":::
+:::image type="content" source="./media/migrate-details.png" lightbox="./media/migrate-details.png" alt-text="Screenshot of a .NET migration task progress details in Copilot CLI.":::
+
+After migration, view the summary:
+
+:::image type="content" source="./media/migrate-summary.png" lightbox="./media/migrate-summary.png" alt-text="Screenshot of the .NET migration summary in Copilot CLI.":::
 
 ## Provide feedback
 

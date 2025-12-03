@@ -300,7 +300,7 @@ The following settings apply to all flavors of the GC:
 
 - The heap hard limit is defined as the maximum commit size, in bytes, for the GC heap and GC bookkeeping.
 - This setting only applies to 64-bit computers.
-- If this limit isn't configured but the process is running in a memory-constrained environment, that is, inside a container with a specified memory limit, a default value is set. That default is the greater of 20 MB or 75% of the memory limit on the container.
+- If this limit isn't configured but the process is running in a memory-constrained environment, that is, inside a container with a specified memory limit, a default value is set. That default is the greater of 20 MB or the [heap hard limit percent](#heap-hard-limit-percent) of the memory limit on the container.
 - This setting is ignored if the [Per-object-heap hard limits](#per-object-heap-hard-limits) are configured.
 
 | | Setting name | Values | Version introduced |

@@ -49,7 +49,7 @@ In an application consisting entirely of managed code, the common language runti
 
  When a safe array is imported from a type library to a .NET assembly, the array is converted to a one-dimensional array of a known type (such as **int**). The same type conversion rules that apply to parameters also apply to array elements. For example, a safe array of `BSTR` types becomes a managed array of strings and a safe array of variants becomes a managed array of objects. The `SAFEARRAY` element type is captured from the type library and saved in the `SAFEARRAY` value of the <xref:System.Runtime.InteropServices.UnmanagedType> enumeration.
 
- Because the rank and bounds of the safe array cannot be determined from the type library, the rank is assumed to equal 1 and the lower bound is assumed to equal 0. The rank and bounds must be defined in the managed signature produced by the [Type Library Importer (Tlbimp.exe)](../tools/tlbimp-exe-type-library-importer.md). If the rank passed to the method at run time differs, a <xref:System.Runtime.InteropServices.SafeArrayRankMismatchException> is thrown. If the type of the array passed at run time differs, a <xref:System.Runtime.InteropServices.SafeArrayTypeMismatchException> is thrown. The following example shows safe arrays in managed and unmanaged code.
+ Because the rank and bounds of the safe array cannot be determined from the type library, the rank is assumed to equal 1 and the lower bound is assumed to equal 0. The rank and bounds must be defined in the managed signature produced by the [Type Library Importer (Tlbimp.exe)](../tools/tlbimp-exe-type-library-importer.md). If the rank passed to the method at runtime differs, a <xref:System.Runtime.InteropServices.SafeArrayRankMismatchException> is thrown. If the type of the array passed at runtime differs, a <xref:System.Runtime.InteropServices.SafeArrayTypeMismatchException> is thrown. The following example shows safe arrays in managed and unmanaged code.
 
  **Unmanaged signature**
 
@@ -184,9 +184,9 @@ void New3(ref String ar);
 
 |Managed array type|Exported as|
 |------------------------|-----------------|
-|**ELEMENT_TYPE_SZARRAY** **\<** *type* **>**|<xref:System.Runtime.InteropServices.UnmanagedType> **.SafeArray(** *type* **)**<br /><br /> **UnmanagedType.LPArray**<br /><br /> Type is provided in the signature. Rank is always 1, lower bound is always 0. Size is always known at run time.|
-|**ELEMENT_TYPE_ARRAY** **\<** *type* **>** **\<** *rank* **>**[**\<** *bounds* **>**]|**UnmanagedType.SafeArray(** *type* **)**<br /><br /> **UnmanagedType.LPArray**<br /><br /> Type, rank, bounds are provided in the signature. Size is always known at run time.|
-|**ELEMENT_TYPE_CLASS** **\<**<xref:System.Array?displayProperty=nameWithType>**>**|**UT_Interface**<br /><br /> **UnmanagedType.SafeArray(** *type* **)**<br /><br /> Type, rank, bounds, and size are always known at run time.|
+|**ELEMENT_TYPE_SZARRAY** **\<** *type* **>**|<xref:System.Runtime.InteropServices.UnmanagedType> **.SafeArray(** *type* **)**<br /><br /> **UnmanagedType.LPArray**<br /><br /> Type is provided in the signature. Rank is always 1, lower bound is always 0. Size is always known at runtime.|
+|**ELEMENT_TYPE_ARRAY** **\<** *type* **>** **\<** *rank* **>**[**\<** *bounds* **>**]|**UnmanagedType.SafeArray(** *type* **)**<br /><br /> **UnmanagedType.LPArray**<br /><br /> Type, rank, bounds are provided in the signature. Size is always known at runtime.|
+|**ELEMENT_TYPE_CLASS** **\<**<xref:System.Array?displayProperty=nameWithType>**>**|**UT_Interface**<br /><br /> **UnmanagedType.SafeArray(** *type* **)**<br /><br /> Type, rank, bounds, and size are always known at runtime.|
 
  There is a limitation in OLE Automation relating to arrays of structures that contain LPSTR or LPWSTR.  Therefore, `String` fields have to be marshalled as **UnmanagedType.BSTR**. Otherwise, an exception will be thrown.
 
@@ -213,7 +213,7 @@ HRESULT New([in] SAFEARRAY( long ) ar);
 HRESULT New([in] SAFEARRAY( BSTR ) ar);
 ```
 
- The rank of the safe arrays is always 1 and the lower bound is always 0. The size is determined at run time by the size of the managed array being passed.
+ The rank of the safe arrays is always 1 and the lower bound is always 0. The size is determined at runtime by the size of the managed array being passed.
 
  The array can also be marshalled as a C-style array by using the <xref:System.Runtime.InteropServices.MarshalAsAttribute> attribute. For example:
 
@@ -272,7 +272,7 @@ HRESULT New([in] SAFEARRAY( long ) ar);
 HRESULT New([in] SAFEARRAY( BSTR ) ar);
 ```
 
- The rank, size, and bounds of the safe arrays are determined at run time by the characteristics of the managed array.
+ The rank, size, and bounds of the safe arrays are determined at runtime by the characteristics of the managed array.
 
  The array can also be marshalled as a C-style array by applying the <xref:System.Runtime.InteropServices.MarshalAsAttribute> attribute. For example:
 

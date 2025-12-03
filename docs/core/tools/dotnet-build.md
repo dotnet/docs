@@ -15,7 +15,7 @@ ms.date: 09/24/2025
 
 ```dotnetcli
 dotnet build [<PROJECT>|<SOLUTION>|<FILE>] [-a|--arch <ARCHITECTURE>]
-    [--artifacts-path <ARTIFACTS_DIR>]
+    [--artifacts-path <ARTIFACTS_DIR>]  [-bl|--binaryLogger:<FILE>]
     [-c|--configuration <CONFIGURATION>] [--disable-build-servers]
     [-f|--framework <FRAMEWORK>] [--force] [--interactive]
     [--no-dependencies] [--no-incremental] [--no-restore] [--nologo]
@@ -80,6 +80,19 @@ Running `dotnet build` is equivalent to running `dotnet msbuild -restore`; howev
 - [!INCLUDE [arch](../../../includes/cli-arch.md)]
 
 - [!INCLUDE [artifacts-path](../../../includes/cli-artifacts-path.md)]
+
+- **`-bl|--binaryLogger:<FILE>`**
+
+  Enables the binary logger and optionally specifies the output file name.  
+  If no file name is provided, the default is `msbuild.binlog` in the current directory.
+
+  The binary log contains detailed build information and can be opened with the
+  [MSBuild Structured Log Viewer](https://msbuildlog.com).
+
+  ```dotnetcli
+  dotnet build -bl
+  dotnet build -bl:build-log.binlog
+  ```
 
 - [!INCLUDE [configuration](../../../includes/cli-configuration.md)]
 

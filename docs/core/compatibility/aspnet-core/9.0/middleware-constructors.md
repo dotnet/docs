@@ -1,12 +1,12 @@
 ---
 title: "Breaking change: Middleware types with multiple constructors"
-description: Learn about the breaking change in ASP.NET Core 9 where having multiple constructors in a middleware type can cause an exception at run time.
+description: Learn about the breaking change in ASP.NET Core 9 where having multiple constructors in a middleware type can cause an exception at runtime.
 ms.date: 11/6/2024
 ---
 
 # Middleware types with multiple constructors
 
-Previously, when a middleware type with multiple satisfiable constructors was instantiated from the dependency injection container, the one with the most parameters was used. Now that only happens if the dependency injection container implements <xref:Microsoft.Extensions.DependencyInjection.IServiceProviderIsService>. If it doesn't, an exception is thrown at run time.
+Previously, when a middleware type with multiple satisfiable constructors was instantiated from the dependency injection container, the one with the most parameters was used. Now that only happens if the dependency injection container implements <xref:Microsoft.Extensions.DependencyInjection.IServiceProviderIsService>. If it doesn't, an exception is thrown at runtime.
 
 ## Version introduced
 

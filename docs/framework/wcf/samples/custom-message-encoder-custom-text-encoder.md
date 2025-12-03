@@ -179,7 +179,7 @@ public class CustomTextMessageEncoderFactory : MessageEncoderFactory
 
 ## Message Encoding Binding Element
 
-The binding elements allow the configuration of the WCF run-time stack. To use the custom message encoder in a WCF application, a binding element is required that creates the message encoder factory with the appropriate settings at the appropriate level in the run-time stack.
+The binding elements allow the configuration of the WCF runtime stack. To use the custom message encoder in a WCF application, a binding element is required that creates the message encoder factory with the appropriate settings at the appropriate level in the runtime stack.
 
 The `CustomTextMessageBindingElement` derives from the <xref:System.ServiceModel.Channels.BindingElement> base class and inherits from the <xref:System.ServiceModel.Channels.MessageEncodingBindingElement> class. This allows other WCF components to recognize this binding element as being a message encoding binding element. The implementation of <xref:System.ServiceModel.Channels.MessageEncodingBindingElement.CreateMessageEncoderFactory%2A> returns an instance of the matching message encoder factory with appropriate settings.
 

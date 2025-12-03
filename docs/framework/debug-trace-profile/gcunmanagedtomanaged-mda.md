@@ -10,7 +10,7 @@ helpviewer_keywords:
   - "threading [.NET Framework], garbage collection"
   - "managed debugging assistants (MDAs), garbage collection"
   - "threading [.NET Framework], managed debugging assistants"
-  - "garbage collection, run-time errors"
+  - "garbage collection, runtime errors"
   - "unmanaged to managed garbage collection"
 ms.assetid: 103eb3a3-1cf0-4406-8a9a-a7798fdc22d1
 ---

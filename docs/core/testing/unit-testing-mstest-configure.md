@@ -54,7 +54,7 @@ The following runsettings entries let you configure how MSTest behaves.
 </TestRunParameters>
 ```
 
-Test run parameters provide a way to define variables and values that are available to the tests at run time. Access the parameters using the MSTest <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.Properties%2A?displayProperty=nameWithType> property:
+Test run parameters provide a way to define variables and values that are available to the tests at runtime. Access the parameters using the MSTest <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.Properties%2A?displayProperty=nameWithType> property:
 
 ```csharp
 private string _appUrl;
@@ -79,7 +79,7 @@ Each element of the file is optional because it has a default value.
 <?xml version="1.0" encoding="utf-8"?>
 <RunSettings>
 
-  <!-- Parameters used by tests at run time -->
+  <!-- Parameters used by tests at runtime -->
   <TestRunParameters>
     <Parameter name="webAppUrl" value="http://localhost" />
     <Parameter name="webAppUserName" value="Admin" />

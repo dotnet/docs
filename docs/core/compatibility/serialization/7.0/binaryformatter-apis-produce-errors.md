@@ -63,18 +63,18 @@ If you must suppress the errors, you can do so by following the guidelines in th
 
 ### `<EnableUnsafeBinaryFormatterSerialization>` property
 
-The `<EnableUnsafeBinaryFormatterSerialization` property was introduced in .NET 5. With .NET 7, the behavior of this switch has changed to control *both compilation and host* run-time behavior. The meaning of this switch differs based on the project type, as described in the following table.
+The `<EnableUnsafeBinaryFormatterSerialization` property was introduced in .NET 5. With .NET 7, the behavior of this switch has changed to control *both compilation and host* runtime behavior. The meaning of this switch differs based on the project type, as described in the following table.
 
 | Type of project | Property set to `true` | Property set to `false` | Property omitted |
 | - | - | - | - |
 | Library/shared component<sup>1</sup> | The affected APIs are obsolete as warning. Compilation will succeed unless you have "warnings as errors" enabled for your application or you've suppressed the `SYSLIB0011` warning code. | The affected APIs are obsolete as error, and calls from your code to those APIs will fail at compile time unless the error is suppressed. | (Same as for `false`.) |
-| Blazor and MAUI apps<sup>2</sup> | Calls to `BinaryFormatter` will fail at run time. | Calls to `BinaryFormatter` will fail at run time. | Calls to `BinaryFormatter` will fail at run time. |
+| Blazor and MAUI apps<sup>2</sup> | Calls to `BinaryFormatter` will fail at runtime. | Calls to `BinaryFormatter` will fail at runtime. | Calls to `BinaryFormatter` will fail at runtime. |
 | ASP.NET app | The affected APIs are obsolete as warning. Compilation will succeed unless you have "warnings as errors" enabled for your application or you've suppressed the `SYSLIB0011` warning code. The runtime will *allow* calls to `BinaryFormatter`, regardless of whether the call originates from your code or from a dependency that you consume. | The affected APIs are obsolete as error, and calls from your code to those APIs will fail at compile time unless the error is suppressed. The runtime will *forbid* calls to `BinaryFormatter`, regardless of whether the call originates from your code or from a dependency that you consume. | (Same as for `false`.) |
 | Desktop apps and all other app types | The affected APIs are obsolete as warning. Compilation will succeed unless you have "warnings as errors" enabled for your application or you've suppressed the `SYSLIB0011` warning code. The runtime will *allow* calls to `BinaryFormatter`, regardless of whether the call originates from your code or from a dependency that you consume. | The affected APIs are obsolete as error, and calls from your code to those APIs will fail at compile time unless the error is suppressed. The runtime will *forbid* calls to `BinaryFormatter`, regardless of whether the call originates from your code or from a dependency that you consume. | The affected APIs are obsolete as error, and calls from your code to those APIs will fail at compile time unless the error is suppressed. The runtime will *allow* calls to `BinaryFormatter`, regardless of whether the call originates from your code or from a dependency that you consume. |
 
-<sup>1</sup>Runtime policy is controlled by the app host. Calls into `BinaryFormatter` might still fail at run time even if `<EnableUnsafeBinaryFormatterSerialization>` is set to `true` within your library's project file. Libraries can't override the app host's runtime policy.
+<sup>1</sup>Runtime policy is controlled by the app host. Calls into `BinaryFormatter` might still fail at runtime even if `<EnableUnsafeBinaryFormatterSerialization>` is set to `true` within your library's project file. Libraries can't override the app host's runtime policy.
 
-<sup>2</sup>The Blazor and MAUI runtimes forbid calls to `BinaryFormatter`. Regardless of any value you set for `<EnableUnsafeBinaryFormatterSerialization>`, the calls will fail at run time. Don't call these APIs from Blazor or MAUI applications or from libraries intended to be consumed by Blazor or MAUI apps.
+<sup>2</sup>The Blazor and MAUI runtimes forbid calls to `BinaryFormatter`. Regardless of any value you set for `<EnableUnsafeBinaryFormatterSerialization>`, the calls will fail at runtime. Don't call these APIs from Blazor or MAUI applications or from libraries intended to be consumed by Blazor or MAUI apps.
 
 ## Affected APIs
 

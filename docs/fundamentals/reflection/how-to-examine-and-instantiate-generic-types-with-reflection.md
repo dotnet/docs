@@ -59,7 +59,7 @@ You can create a <xref:System.Type> object that represents a constructed type by
 
 ## Construct an instance of a generic type
 
-A generic type is like a template. You cannot create instances of it unless you specify real types for its generic type parameters. To do this at run time, using reflection, requires the <xref:System.Type.MakeGenericType%2A> method.
+A generic type is like a template. You cannot create instances of it unless you specify real types for its generic type parameters. To do this at runtime, using reflection, requires the <xref:System.Type.MakeGenericType%2A> method.
 
 1. Get a <xref:System.Type> object that represents the generic type. The following code gets the generic type <xref:System.Collections.Generic.Dictionary%602> in two different ways: by using the <xref:System.Type.GetType%28System.String%29?displayProperty=nameWithType> method overload with a string describing the type, and by calling the <xref:System.Type.GetGenericTypeDefinition%2A> method on the constructed type `Dictionary\<String, Example>` (`Dictionary(Of String, Example)` in Visual Basic). The <xref:System.Type.MakeGenericType%2A> method requires a generic type definition.
 

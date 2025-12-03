@@ -192,7 +192,7 @@ public enum LargeNumbers: ulong
 {
     a = 9223372036854775808
 }
-// At run time, the following code will fail.
+// At runtime, the following code will fail.
 xmlSerializer mySerializer=new XmlSerializer(typeof(LargeNumbers));
 ```
 

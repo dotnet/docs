@@ -182,7 +182,7 @@ For more information, see the [`try-convert` GitHub repository](https://github.c
 
 ### Platform compatibility analyzer
 
-The [Platform compatibility analyzer](../../standard/analyzers/platform-compat-analyzer.md) analyzes whether or not you're using an API that throws a <xref:System.PlatformNotSupportedException> at run time. Although finding one of these APIs is unlikely if you're moving from .NET Framework 4.7.2 or higher, it's good to check. For more information about APIs that throw exceptions on .NET, see [APIs that always throw exceptions on .NET Core](../compatibility/unsupported-apis.md).
+The [Platform compatibility analyzer](../../standard/analyzers/platform-compat-analyzer.md) analyzes whether or not you're using an API that throws a <xref:System.PlatformNotSupportedException> at runtime. Although finding one of these APIs is unlikely if you're moving from .NET Framework 4.7.2 or higher, it's good to check. For more information about APIs that throw exceptions on .NET, see [APIs that always throw exceptions on .NET Core](../compatibility/unsupported-apis.md).
 
 For more information, see [Platform compatibility analyzer](../../standard/analyzers/platform-compat-analyzer.md).
 

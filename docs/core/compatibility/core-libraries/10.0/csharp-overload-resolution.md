@@ -14,7 +14,7 @@ In C# 13 and earlier, an extension method taking a `ReadOnlySpan<T>` or `Span<T>
 
 ## New behavior
 
-In C# 14 and later, methods with `ReadOnlySpan<T>` or `Span<T>` parameters can participate in type inference or be used as extension methods in more scenarios. This makes span-based methods like the ones from the `System.MemoryExtensions` class bind in more scenarios, including inside Expression lambdas where they will cause run-time exceptions when compiled with interpretation.
+In C# 14 and later, methods with `ReadOnlySpan<T>` or `Span<T>` parameters can participate in type inference or be used as extension methods in more scenarios. This makes span-based methods like the ones from the `System.MemoryExtensions` class bind in more scenarios, including inside Expression lambdas where they will cause runtime exceptions when compiled with interpretation.
 
 ## Version introduced
 

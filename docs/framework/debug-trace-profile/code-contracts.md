@@ -39,7 +39,7 @@ For tools and detailed instructions for using code contracts, see [Code Contract
 
 ## Preconditions
 
-You can express preconditions by using the <xref:System.Diagnostics.Contracts.Contract.Requires%2A?displayProperty=nameWithType> method. Preconditions specify state when a method is invoked. They are generally used to specify valid parameter values. All members that are mentioned in preconditions must be at least as accessible as the method itself; otherwise, the precondition might not be understood by all callers of a method. The condition must have no side-effects. The run-time behavior of failed preconditions is determined by the runtime analyzer.
+You can express preconditions by using the <xref:System.Diagnostics.Contracts.Contract.Requires%2A?displayProperty=nameWithType> method. Preconditions specify state when a method is invoked. They are generally used to specify valid parameter values. All members that are mentioned in preconditions must be at least as accessible as the method itself; otherwise, the precondition might not be understood by all callers of a method. The condition must have no side-effects. The runtime behavior of failed preconditions is determined by the runtime analyzer.
 
 For example, the following precondition expresses that parameter `x` must be non-null.
 
@@ -72,7 +72,7 @@ Note that the condition in the preceding test is a negated precondition. (The ac
 
 ## Postconditions
 
-Postconditions are contracts for the state of a method when it terminates. The postcondition is checked just before exiting a method. The run-time behavior of failed postconditions is determined by the runtime analyzer.
+Postconditions are contracts for the state of a method when it terminates. The postcondition is checked just before exiting a method. The runtime behavior of failed postconditions is determined by the runtime analyzer.
 
 Unlike preconditions, postconditions may reference members with less visibility. A client may not be able to understand or make use of some of the information expressed by a postcondition using private state, but this does not affect the client's ability to use the method correctly.
 
@@ -164,7 +164,7 @@ protected void ObjectInvariant ()
 }
 ```
 
-Invariants are conditionally defined by the CONTRACTS_FULL preprocessor symbol. During run-time checking, invariants are checked at the end of each public method. If an invariant mentions a public method in the same class, the invariant check that would normally happen at the end of that public method is disabled. Instead, the check occurs only at the end of the outermost method call to that class. This also happens if the class is re-entered because of a call to a method on another class. Invariants are not checked for an object finalizer and an <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> implementation.
+Invariants are conditionally defined by the CONTRACTS_FULL preprocessor symbol. During runtime checking, invariants are checked at the end of each public method. If an invariant mentions a public method in the same class, the invariant check that would normally happen at the end of that public method is disabled. Instead, the check occurs only at the end of the outermost method call to that class. This also happens if the class is re-entered because of a call to a method on another class. Invariants are not checked for an object finalizer and an <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> implementation.
 
 <a name="usage_guidelines"></a>
 

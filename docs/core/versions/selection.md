@@ -174,7 +174,7 @@ Then the resolved version is as follows in each case:
 
 ## Self-contained deployments include the selected runtime
 
-You can publish an application as a [**self-contained distribution**](../deploying/index.md#self-contained-deployment). This approach bundles the .NET runtime and libraries with your application. Self-contained deployments don't have a dependency on runtime environments. Runtime version selection occurs at publishing time, not run time.
+You can publish an application as a [**self-contained distribution**](../deploying/index.md#self-contained-deployment). This approach bundles the .NET runtime and libraries with your application. Self-contained deployments don't have a dependency on runtime environments. Runtime version selection occurs at publishing time, not runtime.
 
 The *restore* event that occurs when publishing selects the latest patch version of the given runtime family. For example, `dotnet publish` selects .NET 5.0.3 if it's the latest patch version in the .NET 5 runtime family. The target framework (including the latest installed security patches) is packaged with the application.
 

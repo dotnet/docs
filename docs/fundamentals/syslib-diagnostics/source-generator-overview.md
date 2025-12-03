@@ -118,7 +118,7 @@ The following table provides an index to the `SYSLIB1XXX` diagnostics in .NET 6 
 | [SYSLIB1096][1096] | Use `GeneratedComInterfaceAttribute` instead of `ComImportAttribute` to generate COM marshalling code at compile time. |
 | [SYSLIB1097][1097] | This type implements at least one type with the `GeneratedComInterfaceAttribute` attribute. Add the `GeneratedComClassAttribute` to enable passing this type to COM and exposing the COM interfaces for the types with the `GeneratedComInterfaceAttribute` from objects of this type. |
 | [SYSLIB1098][1098] | .NET COM hosting with `EnableComHosting` only supports built-in COM interop. It does not support source-generated COM interop with `GeneratedComInterfaceAttribute`. |
-| [SYSLIB1099][1099] | COM Interop APIs on `System.Runtime.InteropServices.Marshal` do not support source-generated COM and will fail at run time. |
+| [SYSLIB1099][1099] | COM Interop APIs on `System.Runtime.InteropServices.Marshal` do not support source-generated COM and will fail at runtime. |
 | [SYSLIB1100][1100] | Configuration binding generator: Type is not supported. |
 | [SYSLIB1101][1101] | Configuration binding generator: Property on type is not supported. |
 | [SYSLIB1102][1102] | Configuration binding generator: Project's language version must be at least C# 12. |

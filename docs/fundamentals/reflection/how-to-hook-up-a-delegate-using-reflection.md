@@ -34,7 +34,7 @@ When you use reflection to load and run assemblies, you can't use language featu
    [!code-csharp[HookUpDelegate#5](../../../samples/snippets/csharp/VS_Snippets_CLR/HookUpDelegate/cs/source.cs#5)]
    [!code-vb[HookUpDelegate#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HookUpDelegate/vb/source.vb#5)]
 
-4. Get a <xref:System.Reflection.MethodInfo> object representing the method that handles the event. The complete program code in the Example section later in this article contains a method that matches the signature of the <xref:System.EventHandler> delegate, which handles the <xref:System.Windows.Forms.Control.Click> event, but you can also generate dynamic methods at run time. For details, see the accompanying procedure, for generating an event handler at run time by using a dynamic method.
+4. Get a <xref:System.Reflection.MethodInfo> object representing the method that handles the event. The complete program code in the Example section later in this article contains a method that matches the signature of the <xref:System.EventHandler> delegate, which handles the <xref:System.Windows.Forms.Control.Click> event, but you can also generate dynamic methods at runtime. For details, see the accompanying procedure, for generating an event handler at runtime by using a dynamic method.
 
    [!code-csharp[HookUpDelegate#6](../../../samples/snippets/csharp/VS_Snippets_CLR/HookUpDelegate/cs/source.cs#6)]
    [!code-vb[HookUpDelegate#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HookUpDelegate/vb/source.vb#6)]
@@ -54,9 +54,9 @@ When you use reflection to load and run assemblies, you can't use language featu
    [!code-csharp[HookUpDelegate#12](../../../samples/snippets/csharp/VS_Snippets_CLR/HookUpDelegate/cs/source.cs#12)]
    [!code-vb[HookUpDelegate#12](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HookUpDelegate/vb/source.vb#12)]
 
-## Generate an event handler at run time by using a dynamic method
+## Generate an event handler at runtime by using a dynamic method
 
-1. Event-handler methods can be generated at run time, using lightweight dynamic methods and reflection emit. To construct an event handler, you need the return type and parameter types of the delegate. These can be obtained by examining the delegate's `Invoke` method. The following code uses the `GetDelegateReturnType` and `GetDelegateParameterTypes` methods to obtain this information. The code for these methods can be found in the Example section later in this article.
+1. Event-handler methods can be generated at runtime, using lightweight dynamic methods and reflection emit. To construct an event handler, you need the return type and parameter types of the delegate. These can be obtained by examining the delegate's `Invoke` method. The following code uses the `GetDelegateReturnType` and `GetDelegateParameterTypes` methods to obtain this information. The code for these methods can be found in the Example section later in this article.
 
    It is not necessary to name a <xref:System.Reflection.Emit.DynamicMethod>, so the empty string can be used. In the following code, the last argument associates the dynamic method with the current type, giving the delegate access to all the public and private members of the `Example` class.
 
@@ -80,7 +80,7 @@ When you use reflection to load and run assemblies, you can't use language featu
 
 ## Example
 
-The following code example shows how to hook up an existing method to an event using reflection, and also how to use the <xref:System.Reflection.Emit.DynamicMethod> class to emit a method at run time and hook it up to an event.
+The following code example shows how to hook up an existing method to an event using reflection, and also how to use the <xref:System.Reflection.Emit.DynamicMethod> class to emit a method at runtime and hook it up to an event.
 
 [!code-csharp[HookUpDelegate#1](../../../samples/snippets/csharp/VS_Snippets_CLR/HookUpDelegate/cs/source.cs#1)]
 [!code-vb[HookUpDelegate#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HookUpDelegate/vb/source.vb#1)]

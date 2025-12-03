@@ -9,7 +9,7 @@ ai-usage: ai-assisted
 
 .NET 6 introduces the `LoggerMessageAttribute` type. This attribute is part of the `Microsoft.Extensions.Logging` namespace, and when used, it source-generates performant logging APIs. The source-generation logging support is designed to deliver a highly usable and highly performant logging solution for modern .NET applications. The auto-generated source code relies on the <xref:Microsoft.Extensions.Logging.ILogger> interface in conjunction with <xref:Microsoft.Extensions.Logging.LoggerMessage.Define%2A?displayProperty=nameWithType> functionality.
 
-The source generator is triggered when `LoggerMessageAttribute` is used on `partial` logging methods. When triggered, it's either able to autogenerate the implementation of the `partial` methods it's decorating, or produce compile-time diagnostics with hints about proper usage. The compile-time logging solution is considerably faster at run time than existing logging approaches. It achieves this by eliminating boxing, temporary allocations, and copies to the maximum extent possible.
+The source generator is triggered when `LoggerMessageAttribute` is used on `partial` logging methods. When triggered, it's either able to autogenerate the implementation of the `partial` methods it's decorating, or produce compile-time diagnostics with hints about proper usage. The compile-time logging solution is considerably faster at runtime than existing logging approaches. It achieves this by eliminating boxing, temporary allocations, and copies to the maximum extent possible.
 
 ## Basic usage
 

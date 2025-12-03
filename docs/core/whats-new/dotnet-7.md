@@ -117,7 +117,7 @@ For more information, see [Central package management](/nuget/consume-packages/C
 
 ## P/Invoke source generation
 
-.NET 7 introduces a source generator for platform invokes (P/Invokes) in C#. The source generator looks for <xref:System.Runtime.InteropServices.LibraryImportAttribute> on `static`, `partial` methods to trigger compile-time source generation of marshalling code. By generating the marshalling code at compile time, no IL stub needs to be generated at run time, as it does when using <xref:System.Runtime.InteropServices.DllImportAttribute>. The source generator improves application performance and also allows the app to be ahead-of-time (AOT) compiled. For more information, see [Source generation for platform invokes](../../standard/native-interop/pinvoke-source-generation.md) and [Use custom marshallers in source-generated P/Invokes](../../standard/native-interop/tutorial-custom-marshaller.md).
+.NET 7 introduces a source generator for platform invokes (P/Invokes) in C#. The source generator looks for <xref:System.Runtime.InteropServices.LibraryImportAttribute> on `static`, `partial` methods to trigger compile-time source generation of marshalling code. By generating the marshalling code at compile time, no IL stub needs to be generated at runtime, as it does when using <xref:System.Runtime.InteropServices.DllImportAttribute>. The source generator improves application performance and also allows the app to be ahead-of-time (AOT) compiled. For more information, see [Source generation for platform invokes](../../standard/native-interop/pinvoke-source-generation.md) and [Use custom marshallers in source-generated P/Invokes](../../standard/native-interop/tutorial-custom-marshaller.md).
 
 ## Related releases
 

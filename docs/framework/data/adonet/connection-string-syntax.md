@@ -23,7 +23,7 @@ Each .NET Framework data provider has a `Connection` object that inherits from <
 - <xref:System.Data.Odbc.OdbcConnectionStringBuilder>
 - <xref:System.Data.OracleClient.OracleConnectionStringBuilder>
 
- The connection string builders allow you to construct syntactically valid connection strings at run time, so you do not have to manually concatenate connection string values in your code. For more information, see [Connection String Builders](connection-string-builders.md).
+ The connection string builders allow you to construct syntactically valid connection strings at runtime, so you do not have to manually concatenate connection string values in your code. For more information, see [Connection String Builders](connection-string-builders.md).
 
 ## Windows authentication
 
@@ -131,7 +131,7 @@ You can also set the <xref:System.Data.SqlClient.SqlConnectionStringBuilder.Data
 
 ## OleDb connection strings
 
- The <xref:System.Data.OleDb.OleDbConnection.ConnectionString%2A> property of a <xref:System.Data.OleDb.OleDbConnection> allows you to get or set a connection string for an OLE DB data source, such as Microsoft Access. You can also create an `OleDb` connection string at run time by using the <xref:System.Data.OleDb.OleDbConnectionStringBuilder> class.
+ The <xref:System.Data.OleDb.OleDbConnection.ConnectionString%2A> property of a <xref:System.Data.OleDb.OleDbConnection> allows you to get or set a connection string for an OLE DB data source, such as Microsoft Access. You can also create an `OleDb` connection string at runtime by using the <xref:System.Data.OleDb.OleDbConnectionStringBuilder> class.
 
 ### OleDb connection string syntax
 

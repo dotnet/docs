@@ -25,7 +25,7 @@ To connect to Microsoft SQL Server, use the <xref:System.Data.SqlClient.SqlConne
 
 ## Connect to SQL Server
 
- The .NET Framework Data Provider for SQL Server supports a connection string format that is similar to the OLE DB (ADO) connection string format. For valid string format names and values, see the <xref:System.Data.SqlClient.SqlConnection.ConnectionString%2A> property of the <xref:System.Data.SqlClient.SqlConnection> object. You can also use the <xref:System.Data.SqlClient.SqlConnectionStringBuilder> class to create syntactically valid connection strings at run time. For more information, see [Connection String Builders](connection-string-builders.md).
+ The .NET Framework Data Provider for SQL Server supports a connection string format that is similar to the OLE DB (ADO) connection string format. For valid string format names and values, see the <xref:System.Data.SqlClient.SqlConnection.ConnectionString%2A> property of the <xref:System.Data.SqlClient.SqlConnection> object. You can also use the <xref:System.Data.SqlClient.SqlConnectionStringBuilder> class to create syntactically valid connection strings at runtime. For more information, see [Connection String Builders](connection-string-builders.md).
 
  The following code example demonstrates how to create and open a connection to a SQL Server database.
 
@@ -62,7 +62,7 @@ using (SqlConnection connection = new SqlConnection(connectionString))
 
 - The **URL**, **Remote Provider**, and **Remote Server** keywords are not supported.
 
- For more information about OLE DB connection strings, see the <xref:System.Data.OleDb.OleDbConnection.ConnectionString%2A> article. You can also use the <xref:System.Data.OleDb.OleDbConnectionStringBuilder> to create connection strings at run time.
+ For more information about OLE DB connection strings, see the <xref:System.Data.OleDb.OleDbConnection.ConnectionString%2A> article. You can also use the <xref:System.Data.OleDb.OleDbConnectionStringBuilder> to create connection strings at runtime.
 
 > [!NOTE]
 > The `OleDbConnection` object does not support setting or retrieving dynamic properties specific to an OLE DB provider. Only properties that can be passed in the connection string for the OLE DB provider are supported.

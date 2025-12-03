@@ -2,10 +2,10 @@
 title: "Retrieve resources in .NET apps"
 description: Retrieve resources in .NET apps. Package resources for the default (neutral) culture with the main assembly and create a satellite assembly for each culture.
 ms.date: 03/13/2023
-dev_langs: 
+dev_langs:
  - "csharp"
  - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
  - "deploying applications [.NET Framework], resources"
  - "resource files, deploying"
  - "resource files, packaging"
@@ -29,7 +29,7 @@ When you work with localized resources in .NET apps, you should ideally package 
 
 ## Retrieve resources from assemblies
 
-The <xref:System.Resources.ResourceManager> class provides access to resources at run time. You use the <xref:System.Resources.ResourceManager.GetString%2A?displayProperty=nameWithType> method to retrieve string resources and the <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=nameWithType> or <xref:System.Resources.ResourceManager.GetStream%2A?displayProperty=nameWithType> method to retrieve non-string resources. Each method has two overloads:
+The <xref:System.Resources.ResourceManager> class provides access to resources at runtime. You use the <xref:System.Resources.ResourceManager.GetString%2A?displayProperty=nameWithType> method to retrieve string resources and the <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=nameWithType> or <xref:System.Resources.ResourceManager.GetStream%2A?displayProperty=nameWithType> method to retrieve non-string resources. Each method has two overloads:
 
 - An overload whose single parameter is a string that contains the name of the resource. The method attempts to retrieve that resource for the current culture. For more information, see the <xref:System.Resources.ResourceManager.GetString%28System.String%29>, <xref:System.Resources.ResourceManager.GetObject%28System.String%29>, and <xref:System.Resources.ResourceManager.GetStream%28System.String%29> methods.
 

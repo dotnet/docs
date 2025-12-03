@@ -5,7 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords:
   - "signatures, platform invoke"
   - "MDAs (managed debugging assistants), platform invoke"
-  - "platform invoke, run-time errors"
+  - "platform invoke, runtime errors"
   - "platform invoke log"
   - "PInvokeLog MDA"
   - "managed debugging assistants (MDAs), platform invoke"

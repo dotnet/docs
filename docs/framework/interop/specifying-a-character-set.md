@@ -56,7 +56,7 @@ The <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet?displayPrope
 
  <xref:System.Runtime.InteropServices.CharSet.Auto>
 
-- Platform invoke chooses between ANSI and Unicode formats at run time, based on the target platform.
+- Platform invoke chooses between ANSI and Unicode formats at runtime, based on the target platform.
 
 ## Specify a character set in Visual Basic
 

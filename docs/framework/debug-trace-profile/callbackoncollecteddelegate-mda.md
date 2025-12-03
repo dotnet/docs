@@ -12,7 +12,7 @@ helpviewer_keywords:
   - "callbackOnCollectedDelegate MDA"
   - "managed debugging assistants (MDAs), garbage collection"
   - "call back collected delegates"
-  - "garbage collection, run-time errors"
+  - "garbage collection, runtime errors"
   - "delegates [.NET Framework], garbage collection"
 ms.assetid: 398b0ce0-5cc9-4518-978d-b8263aa21e5b
 ---

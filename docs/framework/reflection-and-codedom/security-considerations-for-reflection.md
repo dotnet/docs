@@ -84,7 +84,7 @@ For example, suppose you grant an application domain Internet permissions plus <
 
 - Assembly A can use reflection to access private members of assembly B, because the grant set of assembly B does not include any permissions that A has not been granted.
 
-- Assembly A cannot use reflection to access private members of .NET Framework assemblies such as mscorlib.dll, because mscorlib.dll is fully trusted and therefore has permissions that have not been granted to assembly A. A <xref:System.MemberAccessException> is thrown when code access security walks the stack at run time.
+- Assembly A cannot use reflection to access private members of .NET Framework assemblies such as mscorlib.dll, because mscorlib.dll is fully trusted and therefore has permissions that have not been granted to assembly A. A <xref:System.MemberAccessException> is thrown when code access security walks the stack at runtime.
 
 ## Serialization
 

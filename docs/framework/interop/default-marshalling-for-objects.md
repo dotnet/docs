@@ -115,7 +115,7 @@ When an object is exposed to COM as an interface, that interface is the class in
 
 ## Marshalling Object to Variant
 
-When an object is marshalled to a variant, the internal variant type is determined at run time, based on the following rules:
+When an object is marshalled to a variant, the internal variant type is determined at runtime, based on the following rules:
 
 - If the object reference is null (**Nothing** in Visual Basic), the object is marshalled to a variant of type **VT_EMPTY**.
 
@@ -206,7 +206,7 @@ The wrapper classes are defined in the <xref:System.Runtime.InteropServices> nam
 
 ### Marshalling the IConvertible Interface to Variant
 
-Types other than those listed in the previous section can control how they are marshalled by implementing the <xref:System.IConvertible> interface. If the object implements the `IConvertible` interface, the COM variant type is determined at run time by the value of the <xref:System.TypeCode> enumeration returned from the <xref:System.IConvertible.GetTypeCode%2A?displayProperty=nameWithType> method.
+Types other than those listed in the previous section can control how they are marshalled by implementing the <xref:System.IConvertible> interface. If the object implements the `IConvertible` interface, the COM variant type is determined at runtime by the value of the <xref:System.TypeCode> enumeration returned from the <xref:System.IConvertible.GetTypeCode%2A?displayProperty=nameWithType> method.
 
 The following table shows the possible values for the `TypeCode` enumeration and the corresponding COM variant type for each value.
 

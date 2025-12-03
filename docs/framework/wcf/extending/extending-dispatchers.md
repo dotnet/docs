@@ -58,7 +58,7 @@ There a number of reasons to extend the dispatcher:
 
 - Custom Error Handling. Users can control how both local errors are processed and how faults are communicated back to clients. This can be implemented using the <xref:System.ServiceModel.Dispatcher.IErrorHandler> interfaces.
 
-- Custom Authorization Behaviors. Users can implement custom access control by extending the Contract or Operation run-time pieces and adding security checks based upon the tokens present in the message. This can be accomplished using either the message interceptor or parameter interceptor interfaces. For examples, see [Security Extensibility](../samples/security-extensibility.md).
+- Custom Authorization Behaviors. Users can implement custom access control by extending the Contract or Operation runtime pieces and adding security checks based upon the tokens present in the message. This can be accomplished using either the message interceptor or parameter interceptor interfaces. For examples, see [Security Extensibility](../samples/security-extensibility.md).
 
   > [!CAUTION]
   > Because altering security properties has the potential to compromise the security of WCF applications, it is strongly recommended that you undertake security-related modifications with care and test thoroughly prior to deployment.
@@ -103,7 +103,7 @@ Duplex clients (clients that implement a callback contract specified by a duplex
 
 ### Using the DispatchOperation Class
 
-The <xref:System.ServiceModel.Dispatcher.DispatchOperation> class is the location for run-time modifications and the insertion point for custom extensions that are scoped to only one service operation. (To modify service run-time behavior for all messages in a contract, use the <xref:System.ServiceModel.Dispatcher.DispatchRuntime> class.)
+The <xref:System.ServiceModel.Dispatcher.DispatchOperation> class is the location for runtime modifications and the insertion point for custom extensions that are scoped to only one service operation. (To modify service runtime behavior for all messages in a contract, use the <xref:System.ServiceModel.Dispatcher.DispatchRuntime> class.)
 
 Install <xref:System.ServiceModel.Dispatcher.DispatchOperation> modifications using a custom service behavior object.
 

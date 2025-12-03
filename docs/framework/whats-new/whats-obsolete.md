@@ -23,7 +23,7 @@ ms.assetid: d356a43a-73df-4ae2-a457-b9628074c7cd
 
 In addition to indicating that a type or a type member is obsolete, <xref:System.ObsoleteAttribute> defines how the compiler handles source code that includes that type or member. The compiler can compile the code but emit a warning message, or it can treat the use of the type or member as an error. In the first case, the code can successfully compile, but a warning message indicates that the type or member is obsolete. In the second case, compilation fails.
 
-Even if compilation produces an error instead of a warning message, <xref:System.ObsoleteAttribute> does not affect run-time behavior. That is, applications that use the type or member and that have compiled successfully will always run successfully. Only the attempt to recompile an application that uses the type or member fails.
+Even if compilation produces an error instead of a warning message, <xref:System.ObsoleteAttribute> does not affect runtime behavior. That is, applications that use the type or member and that have compiled successfully will always run successfully. Only the attempt to recompile an application that uses the type or member fails.
 
 ## How to handle obsolete types and members
 

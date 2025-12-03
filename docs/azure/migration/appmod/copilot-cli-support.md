@@ -94,7 +94,8 @@ Learn how to migrate .NET applications to Azure with **GitHub Copilot app modern
 
 ### Configure a custom agent
 
-1. Create a file in the local `~/.copilot/agents` directory named `appmod-dotnet.agent.md`. Add the following content to define a User-level custom agent.
+1. Create a file in the local `~/.copilot/agents` directory named `appmod-dotnet.agent.md`.
+1. Add the following content to define a User-level custom agent.
 
     For more information, visit [Use custom agents in Copilot CLI](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli#use-custom-agents).
 

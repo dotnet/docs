@@ -34,7 +34,7 @@ This article shows you how to migrate .NET apps using **GitHub Copilot app moder
         dotnet --info
     ```
 
-## Get started
+## Add the MCP Server
 
 1. Go to **Settings** for the target repository you want to modernize (admin access required).
 1. Select **Copilot**, then select **Coding Agent**.
@@ -73,7 +73,7 @@ This article shows you how to migrate .NET apps using **GitHub Copilot app moder
 1. Select the **Copilot** icon, then select **+ Create an agent**. This action opens a template agent profile named `my-agent.agent.md` in the `.github/agents` directory of your target repository.
 1. Paste the content below into the template, and rename the file to `appmod-dotnet.agent.md`. Commit the file, and merge it into the default branch. Return to the agents tab, and refresh the page if needed. Your custom agent appears in the dropdown when you open the agent selector in the prompt box.
 
-Visit [Create a custom agent profile in a repository on GitHub](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent/create-custom-agents#creating-a-custom-agent-profile-in-a-repository-on-github) for more information.
+    Visit [Create a custom agent profile in a repository on GitHub](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent/create-custom-agents#creating-a-custom-agent-profile-in-a-repository-on-github) for more information.
 
 ```
 ---
@@ -170,7 +170,7 @@ Migration phases in order:
     Migrate this project from file-based logging to OpenTelemetry
     ```
 
-For details on predefined migration tasks, see [migration tasks](predefined-tasks.md).
+    For details on predefined migration tasks, see [migration tasks](predefined-tasks.md).
 
 1. After the migration starts, monitor the progress:
 

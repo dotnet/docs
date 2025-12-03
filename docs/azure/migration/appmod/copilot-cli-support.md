@@ -196,7 +196,7 @@ Learn how to migrate .NET applications to Azure with **GitHub Copilot app modern
       Use the dotnet modernization agent to migrate this application from local File IO to use Azure Blob Storage.
       ```
 
-### Run the migration task in Copilot CLI.
+### Run the migration task in Copilot CLI
 
 Describe your migration scenario in Copilot CLI to migrate your .NET app to Azure. Use a prompt like:
 

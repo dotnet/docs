@@ -155,7 +155,7 @@ This article shows you how to migrate .NET apps using **GitHub Copilot app moder
     ```
 
 1. Commit the file, and merge it into the default branch.
-1. Return to the agents tab, and refresh the page if needed. Your custom agent appears in the dropdown when you open the agent selector in the prompt box. 
+1. Return to the agents tab, and refresh the page if needed. Your custom agent appears in the dropdown when you open the agent selector in the prompt box.
 
     Visit [Create a custom agent profile in a repository on GitHub](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent/create-custom-agents#creating-a-custom-agent-profile-in-a-repository-on-github) for more information.
 

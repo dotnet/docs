@@ -289,7 +289,7 @@ let len (str: string | null) =
 Similarly, you can use new dedicated nullability related [patterns](./active-patterns.md):
 
 ```fsharp
-let let str =       // str is inferred to be `string | null`
+let len str =       // str is inferred to be `string | null`
     match str with
     | Null -> -1
     | NonNull (s: string) -> s.Length

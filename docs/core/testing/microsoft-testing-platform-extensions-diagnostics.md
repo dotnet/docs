@@ -64,15 +64,15 @@ To configure the hang dump file generation, use the following options:
 
 ### Considerations for macOS
 
-Taking dumps when running on macOS can be problematic. If you found that a dump has started to be taken, but never finishes, in CI environments where you don't have direct access to the machine, this most likely means that macOS showed a popup asking for authentication and is waiting for you to type password, which is not feasible to do in such environments. The issue might also manifest as an error similar to the following:
+Taking dumps when running on macOS can be problematic. If you found that a dump has started to be taken, but never finishes, in CI environments where you don't have direct access to the machine, this most likely means that macOS showed a popup asking for authentication and is waiting for you to type a password, which is not feasible to do in such environments. The issue might also manifest as an error similar to the following:
 
 ```output
 [createdump] This failure may be because createdump or the application is not properly signed and entitled.
 ```
 
-To workaround this, there are two options:
+To work around this, there are two options:
 
-- Set `UseAppHost` MSBuild property to false, which will cause the managed assembly to run under `dotnet` instead of the apphost executable. However, this doesn't work for xunit.v3. See [xunit/xunit#3432 GitHub issues](https://github.com/xunit/xunit/issues/3432).
+- Set `UseAppHost` MSBuild property to false, which will cause the managed assembly to run under `dotnet` instead of the apphost executable. However, this doesn't work for xunit.v3. See [xunit/xunit#3432 GitHub issue](https://github.com/xunit/xunit/issues/3432).
 - Apply a workaround similar to the following:
 
   ```xml

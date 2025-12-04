@@ -61,3 +61,45 @@ To configure the hang dump file generation, use the following options:
 | `-⁠-hangdump-filename` | Specifies the file name of the dump. |
 | `--hangdump-timeout` | Specifies the timeout after which the dump is generated. The timeout value is specified in one of the following formats:<br/>`1.5h`, `1.5hour`, `1.5hours`<br/>`90m`, `90min`, `90minute`, `90minutes`<br/>`5400s`, `5400sec`, `5400second`, `5400seconds`. Defaults to `30m` (30 minutes). |
 | `--hangdump-type` | Specifies the type of the dump. Valid values are `Mini`, `Heap`, `Triage`, `Full`. Defaults as `Full`. For more information, see [Types of mini dumps](../diagnostics/collect-dumps-crash.md#types-of-mini-dumps). |
+
+### Considerations for macOS
+
+Taking dumps when running on macOS can be problematic. If you found that a dump has started to be taken, but never finishes, in CI environments where you don't have direct access to the machine, this most likely means that macOS showed a popup asking for authentication and is waiting for you to type password, which is not feasible to do in such environments. The issue might also manifest as an error similar to the following:
+
+```output
+[createdump] This failure may be because createdump or the application is not properly signed and entitled.
+```
+
+To workaround this, there are two options:
+
+- Set `UseAppHost` MSBuild property to false, which will cause the managed assembly to run under `dotnet` instead of the apphost executable. However, this doesn't work for xunit.v3. See [xunit/xunit#3432 GitHub issues](https://github.com/xunit/xunit/issues/3432).
+- Apply a workaround similar to the following:
+
+  ```xml
+  <Target Name="WorkaroundMacOSDumpIssue" AfterTargets="Build" Condition="$([MSBuild]::IsOSPlatform('OSX')) AND '$(UseAppHost)' != 'false' AND '$(OutputType)' == 'Exe' AND '$(TargetFramework)' != '' AND '$(RunCommand)' != '' AND '$(RunCommand)' != 'dotnet'" AND '$(IsTestingPlatformApplication)'=='true'>
+    <Exec Command="codesign --sign - --force --entitlements '$(MSBuildThisFileDirectory)mtp-test-entitlements.plist' '$(RunCommand)'" />
+  </Target>
+  ```
+
+  and the contents of `mtp-test-entitlements.plist` should be:
+
+  ```xml
+  <?xml version="1.0" encoding="UTF-8"?>
+  <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+  <plist version="1.0">
+      <dict>
+      <key>com.apple.security.cs.allow-jit</key>
+          <true/>
+      <key>com.apple.security.cs.allow-dyld-environment-variables</key>
+          <true/>
+      <key>com.apple.security.cs.disable-library-validation</key>
+          <true/>
+      <key>com.apple.security.cs.debugger</key>
+          <true/>
+      <key>com.apple.security.get-task-allow</key>
+          <true/>
+      </dict>
+  </plist>
+  ```
+
+  The MSBuild target above can be placed in Directory.Build.targets so that it applies to all projects.

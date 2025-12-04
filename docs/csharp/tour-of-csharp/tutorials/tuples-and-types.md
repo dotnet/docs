@@ -15,30 +15,30 @@ TODO: Create sample.
 
 *Tuples* are an ordered sequence of values with a fixed length. Each element of a tuple has a type and an optional name. The following code declares a tuple that represents a 2D point. Copy the following code to your file and type `dotnet run`.
 
-:::code language="csharp" source="./snippets/TuplesAndTypes/Program.cs" id="CreateTuple":::
+:::code language="csharp" source="./snippets/TuplesAndTypes/tuples-types.cs" id="CreateTuple":::
 
 > [!TIP]
 > As you explore C# (or any programming language), you make mistakes when you write code. The **compiler** finds those errors and reports them to you. When the output contains error messages, look closely at the example code and your code to see what to fix. That exercise helps you learn the structure of C# code. You can also ask Copilot to find differences or spot any mistakes.
 
 You can reassign any member of a tuple. Add the following code after the existing code. Type `dotnet run` again to see the results.
 
-:::code language="csharp" source="./snippets/TuplesAndTypes/Program.cs" id="Modify":::
+:::code language="csharp" source="./snippets/TuplesAndTypes/tuples-types.cs" id="Modify":::
 
 You can also create a new tuple that's a modified copy of the original using a `with` expression. Add the following code after the existing code and type `dotnet run` to see the results:
 
-:::code language="csharp" source="./snippets/TuplesAndTypes/Program.cs" id="Wither":::
+:::code language="csharp" source="./snippets/TuplesAndTypes/tuples-types.cs" id="Wither":::
 
 The tuple `pt2` contains the `X` value of `pt` (6), and `pt2.Y` is 10.
 
 Tuples are structural types. In other words, tuple types don't have names like `string` or `int`. A tuple type is defined by the number of members, referred to as *arity*, and the types of those members. The member names are for convenience. You can assign a tuple to a tuple with the same arity and types even if the members have different names. You can add the following code after the code you already wrote and try it:
 
-:::code language="csharp" source="./snippets/TuplesAndTypes/Program.cs" id="NamedAssignment":::
+:::code language="csharp" source="./snippets/TuplesAndTypes/tuples-types.cs" id="NamedAssignment":::
 
 The variable `subscript` has two members, both of which are integers. Both `subscript` and `pt` represent instances of the same tuple type: a tuple containing 2 `int` members.
 
 Tuples are easy to create: You declare multiple members enclosed in parentheses. All the following declare different tuples of different arities and member types. Add the following code to create new tuple types:
 
-:::code language="csharp" source="./snippets/TuplesAndTypes/Program.cs" id="TupleTypes":::
+:::code language="csharp" source="./snippets/TuplesAndTypes/tuples-types.cs" id="TupleTypes":::
 
 While tuples are easy to create, they're limited in their capabilities. Tuple types don't have names, so you can't convey meaning to the set of values. Tuple types can't add behavior. C# has other kinds of types you can create when your type defines behavior.
 
@@ -48,27 +48,27 @@ Tuples are great for those times when you want multiple values in the same struc
 
 The following code declares and uses a `record` type to represent a `Point`:
 
-:::code language="csharp" source="./snippets/TuplesAndTypes/Program.cs" id="PointRecord":::
+:::code language="csharp" source="./snippets/TuplesAndTypes/tuples-types.cs" id="PointRecord":::
 
 The preceding code must be at the bottom of your source file. Type declarations like `record` declarations must follow executable statements in a file-based app.
 
 Add the following code preceding the `record` declaration:
 
-:::code language="csharp" source="./snippets/TuplesAndTypes/Program.cs" id="UsePointRecord":::
+:::code language="csharp" source="./snippets/TuplesAndTypes/tuples-types.cs" id="UsePointRecord":::
 
 The `record` declaration is a single line of code for the `Point` type that stores the values `X` and `Y` in readonly properties. You use the name `Point` wherever you use that type. Properly named types, like `Point`, provide information about how the type is used. The additional code shows how to use a `with` expression to create a new point that's a modified copy of the existing point. The line `pt4 = pt3 with { Y = 10 }` says "`pt4` has the same values as `pt3` except that `Y` is assigned to 10." You can add any number of properties to change in a single `with` expression.
 
 The preceding `record` declaration is a single line of code that ends in `;`. You can add behavior to a `record` type by declaring *members*. A record member can be a function, or more data elements. The members of a type are in the type declaration, between `{` and  `}` characters. Delete the `;` and add the following lines of code after the `record` declaration:
 
-:::code language="csharp" source="./snippets/TuplesAndTypes/Program.cs" id="AddSlopeMethod":::
+:::code language="csharp" source="./snippets/TuplesAndTypes/tuples-types.cs" id="AddSlopeMethod":::
 
 Then, add the following code before the `record` declaration, after the line containing the `with` expression:
 
-:::code language="csharp" source="./snippets/TuplesAndTypes/Program.cs" id="UseSlope":::
+:::code language="csharp" source="./snippets/TuplesAndTypes/tuples-types.cs" id="UseSlope":::
 
 You added formality to the *tuple* representing an `X` and `Y` value. You made it a `record` that defined a named type, and included a member to calculate the slope. A `record` type is a shorthand for a `record class`: A `class` type that includes extra behavior. You can modify the `Point` type to make it a `record struct` as well:
 
-:::code language="csharp" source="./snippets/TuplesAndTypes/Program.cs" id="RecordStructPoint":::
+:::code language="csharp" source="./snippets/TuplesAndTypes/tuples-types.cs" id="RecordStructPoint":::
 
 A `record struct` is a `struct` type that includes the extra behavior added to all `record` types.
 

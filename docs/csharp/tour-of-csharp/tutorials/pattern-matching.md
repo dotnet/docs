@@ -15,7 +15,7 @@ The preceding tutorials demonstrated built-in types and types you define as tupl
 
 All the examples in this tutorial use text input that represents a series of bank transactions as comma separated values (CSV) input. In each of the samples you can match the record against a pattern using either an `is` or `switch` expression. This first example splits each line on the `,` character and then *matches* the first string field against the value "DEPOSIT" or "WITHDRAWAL" using an `is` expression. When it matches, the transaction amount is added or deducted from the current account balance. To see it work, add the following code to your source file. Then, type `dotnet run` in the console window.
 
-:::code language="csharp" source="./snippets/PatternMatching/Program.cs" id="FirstExample":::
+:::code language="csharp" source="./snippets/PatternMatching/patterns.cs" id="FirstExample":::
 
 Examine the output. You can see that each line is processed by comparing the value of the text in the first field. The preceding sample could be similarly constructed using the `==` operator to test that two `string` values are equal. Comparing a variable to a constant is a basic building block for pattern matching. Let's explore more of the building blocks that are part of pattern matching.
 
@@ -23,15 +23,15 @@ Examine the output. You can see that each line is processed by comparing the val
 
 Another common use for pattern matching is to match on the values of an `enum` type. This next sample processes the input records to create a *tuple* where the first value is an `enum` value that notes a deposit or a withdrawal. The second value is the value of the transaction. Add the following code to the end of your source file. It defines the `TransactionType` enumeration:
 
-:::code language="csharp" source="./snippets/PatternMatching/Program.cs" id="TransactionTypeEnum":::
+:::code language="csharp" source="./snippets/PatternMatching/patterns.cs" id="TransactionTypeEnum":::
 
 Next, add a function to parse a bank transaction into a tuple that holds the transaction type and the value of the transaction. Add the following code before your declaration of the `TransactionType` enum:
 
-:::code language="csharp" source="./snippets/PatternMatching/Program.cs" id="ParseTransaction":::
+:::code language="csharp" source="./snippets/PatternMatching/patterns.cs" id="ParseTransaction":::
 
 Next, add a new loop to process the transaction data using the `TransactionType` enumeration you declared:
 
-:::code language="csharp" source="./snippets/PatternMatching/Program.cs" id="EnumPatternMatch":::
+:::code language="csharp" source="./snippets/PatternMatching/patterns.cs" id="EnumPatternMatch":::
 
 The preceding example also uses an `if` statement to check the value of an `enum` expression. Another form of pattern matching uses a `switch` expression. Let's explore that syntax and how you can use it.
 
@@ -52,7 +52,7 @@ else
 
 The `else if` clause never matches because every number less than 10 is also less than 20. The `switch` expression ensures both of those characteristics are met, which results in fewer bugs in your apps. Let's try it and experiment. Copy the following code. Replace the two `if` statements in your `foreach` loop with the `switch` expression you copied. After you've modified the code, type `dotnet run` to run the new sample.
 
-:::code language="csharp" source="./snippets/PatternMatching/Program.cs" id="SwitchEnumValue":::
+:::code language="csharp" source="./snippets/PatternMatching/patterns.cs" id="SwitchEnumValue":::
 
 When you run the code, you see that it works the same. To demonstrate *subsumption*, reorder the switch arms as shown in the following snippet:
 
@@ -73,15 +73,15 @@ The compiler issues a warning if the expression tested in a `switch` expression 
 
 To finish this tutorial, let's explore one more building block to pattern matching: the *type pattern*. A *type pattern* tests an expression at run time to see if it's the specified type. You can use a type test with either an `is` expression or a `switch` expression. Let's modify the current sample in two ways. First, instead of a tuple, let's build `Deposit` and `Withdrawal` record types that represent the transactions. Add the following declarations just at the end of the your code file:
 
-:::code language="csharp" source="./snippets/PatternMatching/Program.cs" id="RecordDeclarations":::
+:::code language="csharp" source="./snippets/PatternMatching/patterns.cs" id="RecordDeclarations":::
 
 Next, add this method just before the declaration of the `TransactionType` enumeration. It parses the text and return a series of records:
 
-:::code language="csharp" source="./snippets/PatternMatching/Program.cs" id="ParseToRecord":::
+:::code language="csharp" source="./snippets/PatternMatching/patterns.cs" id="ParseToRecord":::
 
 Finally, add the following code after the last `foreach` loop:
 
-:::code language="csharp" source="./snippets/PatternMatching/Program.cs" id="TypePattern":::
+:::code language="csharp" source="./snippets/PatternMatching/patterns.cs" id="TypePattern":::
 
 Then, type `dotnet run` to see the results. This final version tests the input against a *type*.
 

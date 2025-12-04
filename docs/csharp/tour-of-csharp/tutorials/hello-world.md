@@ -13,7 +13,7 @@ TODO:  `dotnet new` or create a file.
 
 Type the following code in your new `cs` file:
 
-:::code language="csharp" source="./snippets/HelloWorld/Program.cs" id="HelloWorld":::
+:::code language="csharp" source="./snippets/HelloWorld/hello-world.cs" id="HelloWorld":::
 
 TODO: To run the program, type `dotnet run` (or) `dotnet file.cs` at the command prompt. Congratulations! You ran your first C# program. It's a simple program that prints the message "Hello World!" It used the <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> method to print that message. `Console` is a type that represents the console window. `WriteLine` is a method of the `Console` type that prints a line of text to that text console.
 
@@ -29,7 +29,7 @@ Your first program printed the `string` "Hello World!" on the screen.
 
 Your first program is limited to printing one message. You can write more useful programs by using *variables*. A *variable* is a symbol you can use to run the same code with different values. Let's try it! Start with the following code:
 
-:::code language="csharp" source="./snippets/HelloWorld/Program.cs" id="Variables":::
+:::code language="csharp" source="./snippets/HelloWorld/hello-world.cs" id="Variables":::
 
 The first line declares a variable, `aFriend`, and assigns it a value, "Bill". The second line prints the name.
 
@@ -38,13 +38,13 @@ You can assign different values to any variable you declare. You can change the 
 > [!IMPORTANT]
 > Don't delete the declaration of `aFriend`. Add the following code at the end of the preceding code:
 
-:::code language="csharp" source="./snippets/HelloWorld/Program.cs" id="Assignment":::
+:::code language="csharp" source="./snippets/HelloWorld/hello-world.cs" id="Assignment":::
 
 Notice that the same line of code prints two different messages, based on the value stored in the `aFriend` variable.
 
 You might notice that the word "Hello" was missing in the last two messages. Let's fix that now. Modify the lines that print the message to the following code:
 
-:::code language="csharp" source="./snippets/HelloWorld/Program.cs" id="ConcatMessage":::
+:::code language="csharp" source="./snippets/HelloWorld/hello-world.cs" id="ConcatMessage":::
 
 TODO: Run the app again using `dotnet run` (or) `dotnet file.cs` to see the results.
 
@@ -54,7 +54,7 @@ This process is called [String interpolation](../../language-reference/tokens/in
 
 If you add a `$` before the opening quote of the string, you can then include variables, like `aFriend`, inside the string between curly braces. Give it a try:
 
-:::code language="csharp" source="./snippets/HelloWorld/Program.cs" id="Interpolation":::
+:::code language="csharp" source="./snippets/HelloWorld/hello-world.cs" id="Interpolation":::
 
 TODO: Run the app again using `dotnet run` (or) `dotnet file.cs` to see the results. Instead of "Hello {aFriend}", the message should be "Hello Maira".
 
@@ -64,11 +64,11 @@ Your last edit was our first look at what you can do with strings. Let's explore
 
 You're not limited to a single variable between the curly braces. Try the following code at the bottom of your app:
 
-:::code language="csharp" source="./snippets/HelloWorld/Program.cs" id="WorkWithStrings":::
+:::code language="csharp" source="./snippets/HelloWorld/hello-world.cs" id="WorkWithStrings":::
 
 Strings are more than a collection of letters. You can find the length of a string using `Length`. `Length` is a **property** of a string and it returns the number of characters in that string. Add the following code at the bottom of your app:
 
-:::code language="csharp" source="./snippets/HelloWorld/Program.cs" id="Properties":::
+:::code language="csharp" source="./snippets/HelloWorld/hello-world.cs" id="Properties":::
 
 > [!TIP]
 >
@@ -81,7 +81,7 @@ You've been using a *method*, <xref:System.Console.WriteLine%2A?displayProperty=
 Suppose your strings have leading or trailing spaces that you don't want to display. You want to **trim** the spaces from the strings.
 The <xref:System.String.Trim%2A> method and related methods <xref:System.String.TrimStart%2A> and <xref:System.String.TrimEnd%2A> do that work. You can just use those methods to remove leading and trailing spaces. Try the following code:
 
-:::code language="csharp" source="./snippets/HelloWorld/Program.cs" id="Trim":::
+:::code language="csharp" source="./snippets/HelloWorld/hello-world.cs" id="Trim":::
 
 The square brackets `[` and `]` help visualize what the `Trim`, `TrimStart,` and, `TrimEnd` methods do. The brackets show where whitespace starts and ends.
 
@@ -91,17 +91,17 @@ This sample reinforces a couple of important concepts for working with strings. 
 
 There are other methods available to work with a string. For example, you probably used a search and replace command in an editor or word processor before. The <xref:System.String.Replace%2A> method does something similar in a string. It searches for a substring and replaces it with different text. The <xref:System.String.Replace%2A> method takes two **parameters**. These parameters are the strings between the parentheses. The first string is the text to search for. The second string is the text to replace it with. Try it for yourself. Add this code. Type it in to see the hints as you start typing `.Re` after the `sayHello` variable:
 
-:::code language="csharp" source="./snippets/HelloWorld/Program.cs" id="Replace":::
+:::code language="csharp" source="./snippets/HelloWorld/hello-world.cs" id="Replace":::
 
 Two other useful methods make a string ALL CAPS or all lower case. Try the following code. Type it in to see how **IntelliSense** provides hints as you start to type `To`:
 
-:::code language="csharp" source="./snippets/HelloWorld/Program.cs" id="UpperLower":::
+:::code language="csharp" source="./snippets/HelloWorld/hello-world.cs" id="UpperLower":::
 
 ## Search strings
 
 The other part of a *search and replace* operation is to find text in a string. You can use the  <xref:System.String.Contains%2A> method for searching. It tells you if a string contains a substring inside it. Try the following code to explore <xref:System.String.Contains%2A>:
 
-:::code language="csharp" source="./snippets/HelloWorld/Program.cs" id="SearchStrings":::
+:::code language="csharp" source="./snippets/HelloWorld/hello-world.cs" id="SearchStrings":::
 
 The <xref:System.String.Contains%2A> method returns a *boolean* value which tells you if the string you were searching for was found. A *boolean* stores either a `true` or a `false` value. When displayed as text output, they're capitalized: `True` and `False`, respectively. You learn more about *boolean* values in a later lesson.
 
@@ -120,7 +120,7 @@ Did you come up with something like the following (expand to see the answer):
 <!-- markdownlint-disable MD033 -->
 <details>
 
-:::code language="csharp" source="./snippets/HelloWorld/Program.cs" id="Challenge":::
+:::code language="csharp" source="./snippets/HelloWorld/hello-world.cs" id="Challenge":::
 </details>
 <!-- markdownlint-enable MD033 -->
 

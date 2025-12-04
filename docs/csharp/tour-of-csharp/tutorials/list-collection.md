@@ -15,7 +15,7 @@ This tutorial teaches you C#. You write C# code and see the results of compiling
 
 Add the following code to your source file. Replace `<name>` with your name. Then, type `dotnet run` to run the code:
 
-:::code language="csharp" source="./snippets/ListCollection/Program.cs" id="BasicList":::
+:::code language="csharp" source="./snippets/ListCollection/list.cs" id="BasicList":::
 
 You created a list of strings, added three names to that list, and printed the names in all CAPS. You're using concepts that you learned in earlier tutorials to loop through the list.
 
@@ -29,17 +29,17 @@ The collection you created uses the <xref:System.Collections.Generic.List%601> t
 
 One important aspect of this <xref:System.Collections.Generic.List%601> type is that it can grow or shrink, enabling you to add or remove elements. You can see the results by modifying the contents after you displayed its contents. Add the following code after the code you already wrote (the loop that prints the contents):
 
-:::code language="csharp" source="./snippets/ListCollection/Program.cs" id="ModifyList":::
+:::code language="csharp" source="./snippets/ListCollection/list.cs" id="ModifyList":::
 
 You added two more names to the end of the list. You also removed one as well. The output from this block of code shows the initial contents, then prints a blank line and the new contents.
 
 The <xref:System.Collections.Generic.List%601> enables you to reference individual items by **index** as well. You access items using the `[` and `]` tokens. Add the following code after what you already wrote and try it:
 
-:::code language="csharp" source="./snippets/ListCollection/Program.cs" id="Indexers":::
+:::code language="csharp" source="./snippets/ListCollection/list.cs" id="Indexers":::
 
 You're not allowed to access past the end of the list. You can check how long the list is using the <xref:System.Collections.Generic.List%601.Count%2A> property. Add the following code:
 
-:::code language="csharp" source="./snippets/ListCollection/Program.cs" id="Property":::
+:::code language="csharp" source="./snippets/ListCollection/list.cs" id="Property":::
 
 Type `dotnet run` again to see the results. In C#, indices start at 0, so the largest valid index is one less than the number of items in the list.
 
@@ -49,23 +49,23 @@ For more information about indices, see the [Explore indexes and ranges](../../t
 
 Our samples use relatively small lists, but your applications might often create lists with many more elements, sometimes numbering in the thousands. To find elements in these larger collections, you need to search the list for different items. The <xref:System.Collections.Generic.List%601.IndexOf%2A> method searches for an item and returns the index of the item. If the item isn't in the list, `IndexOf` returns `-1`. Try it to see how it works. Add the following code after what you wrote so far:
 
-:::code language="csharp" source="./snippets/ListCollection/Program.cs" id="Search":::
+:::code language="csharp" source="./snippets/ListCollection/list.cs" id="Search":::
 
 You might not know if an item is in the list, so you should always check the index returned by <xref:System.Collections.Generic.List%601.IndexOf%2A>. If it's `-1`, the item wasn't found.
 
 The items in your list can be sorted as well. The <xref:System.Collections.Generic.List%601.Sort%2A> method sorts all the items in the list in their normal order (alphabetically for strings). Add this code and run again:
 
-:::code language="csharp" source="./snippets/ListCollection/Program.cs" id="Sort":::
+:::code language="csharp" source="./snippets/ListCollection/list.cs" id="Sort":::
 
 ## Lists of other types
 
 You've been using the `string` type in lists so far. Let's make a <xref:System.Collections.Generic.List%601> using a different type. Let's build a set of numbers. Add the following code at the end of your source file:
 
-:::code language="csharp" source="./snippets/ListCollection/Program.cs" id="CreateList":::
+:::code language="csharp" source="./snippets/ListCollection/list.cs" id="CreateList":::
 
 That creates a list of integers, and sets the first two integers to the value 1. The *Fibonacci Sequence*, a sequence of numbers, starts with two 1's. Each next Fibonacci number is found by taking the sum of the previous two numbers. Add this code:
 
-:::code language="csharp" source="./snippets/ListCollection/Program.cs" id="Fibonacci":::
+:::code language="csharp" source="./snippets/ListCollection/list.cs" id="Fibonacci":::
 
 Type `dotnet run` to see the results.
 
@@ -78,7 +78,7 @@ Did you come up with something like this?
 <!-- markdownlint-disable MD033 -->
 <details>
 
-:::code language="csharp" source="./snippets/ListCollection/Program.cs" id="Answer":::
+:::code language="csharp" source="./snippets/ListCollection/list.cs" id="Answer":::
 
 With each iteration of the loop, you're taking the last two integers in the list, summing them, and adding that value to the list. The loop repeats until you added 20 items to the list.
 </details>

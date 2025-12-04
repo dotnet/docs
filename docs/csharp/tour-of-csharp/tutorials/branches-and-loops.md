@@ -9,9 +9,9 @@ This tutorial teaches you how to write C# code that examines variables and chang
 
 TODO:  Build an app, create a file.
 
-Open *Program.cs* in your favorite editor, and replace the contents with the following code:
+Open *branches-loops.cs* in your favorite editor, and replace the contents with the following code:
 
-:::code language="csharp" source="./snippets/BranchesAndLoops/Program.cs" id="FirstIf":::
+:::code language="csharp" source="./snippets/BranchesAndLoops/branches-loops.cs" id="FirstIf":::
 
 Try this code by typing `dotnet run` in your console window. You should see the message "The answer is greater than 10." printed to your console. Modify the declaration of `b` so that the sum is less than 10:
 
@@ -30,7 +30,7 @@ This first sample shows the power of `if` and Boolean types. A *Boolean* is a va
 
 To execute different code in both the true and false branches, you create an `else` branch that executes when the condition is false. Try an `else` branch. Add the last two lines in the following code snippet (you should already have the first four):
 
-:::code language="csharp" source="./snippets/BranchesAndLoops/Program.cs" id="IfAndElse":::
+:::code language="csharp" source="./snippets/BranchesAndLoops/branches-loops.cs" id="IfAndElse":::
 
 The statement following the `else` keyword executes only when the condition being tested is `false`. Combining `if` and `else` with Boolean conditions provides all the power you need to handle both a `true` and a `false` condition.
 
@@ -39,14 +39,14 @@ The statement following the `else` keyword executes only when the condition bein
 
 Because indentation isn't significant, you need to use `{` and `}` to indicate when you want more than one statement to be part of the block that executes conditionally. C# programmers typically use those braces on all `if` and `else` clauses. The following example is the same as what you created. Modify your code above to match the following code:
 
-:::code language="csharp" source="./snippets/BranchesAndLoops/Program.cs" id="IncludeBraces":::
+:::code language="csharp" source="./snippets/BranchesAndLoops/branches-loops.cs" id="IncludeBraces":::
 
 > [!TIP]
 > Through the rest of this tutorial, the code samples all include the braces, following accepted practices.
 
 You can test more complicated conditions. Add the following code after the code you've written so far:
 
-:::code language="csharp" source="./snippets/BranchesAndLoops/Program.cs" id="ComplexConditions":::
+:::code language="csharp" source="./snippets/BranchesAndLoops/branches-loops.cs" id="ComplexConditions":::
 
 The `==` symbol tests for *equality*. Using `==` distinguishes the test for equality from assignment, which you saw in `a = 5`.
 
@@ -54,13 +54,13 @@ The `&&` represents "and". It means both conditions must be true to execute the 
 
 You can also use  `||` to represent "or". Add the following code after what you've written so far:
 
-:::code language="csharp" source="./snippets/BranchesAndLoops/Program.cs" id="UseOr":::
+:::code language="csharp" source="./snippets/BranchesAndLoops/branches-loops.cs" id="UseOr":::
 
 Modify the values of `a`, `b`, and `c` and switch between `&&` and `||` to explore. You gain more understanding of how the `&&` and `||` operators work.
 
 You finished the first step. Before you start the next section, let's move the current code into a separate method. That makes it easier to start working with a new example. Put the existing code in a method called `ExploreIf()`. Call it from the top of your program. When you finished those changes, your code should look like the following:
 
-:::code language="csharp" source="./snippets/BranchesAndLoops/Program.cs" id="Refactor":::
+:::code language="csharp" source="./snippets/BranchesAndLoops/branches-loops.cs" id="Refactor":::
 
 Comment out the call to `ExploreIf()`. It will make the output less cluttered as you work in this section:
 
@@ -74,7 +74,7 @@ The `//` starts a **comment** in C#. Comments are any text you want to keep in y
 
 Another important concept to create larger programs is **loops**. You use loops to repeat statements that you want executed more than once. Add this code after the call to `ExploreIf`:
 
-:::code language="csharp" source="./snippets/BranchesAndLoops/Program.cs" id="WhileLoop":::
+:::code language="csharp" source="./snippets/BranchesAndLoops/branches-loops.cs" id="WhileLoop":::
 
 The `while` statement checks a condition and executes the statement following the `while`. It repeats checking the condition and executing those statements until the condition is false.
 
@@ -85,7 +85,7 @@ There's one other new operator in this example. The `++` after the `counter` var
 
 The `while` loop tests the condition before executing the code following the `while`. The `do` ... `while` loop executes the code first, and then checks the condition. The *do while* loop is shown in the following code:
 
-:::code language="csharp" source="./snippets/BranchesAndLoops/Program.cs" id="DoLoop":::
+:::code language="csharp" source="./snippets/BranchesAndLoops/branches-loops.cs" id="DoLoop":::
 
 This `do` loop and the earlier `while` loop produce the same output.
 
@@ -95,7 +95,7 @@ Let's move on to one last loop statement.
 
 Another common loop statement that you see in C# code is the `for` loop. Try this code:
 
-:::code language="csharp" source="./snippets/BranchesAndLoops/Program.cs" id="ForLoop":::
+:::code language="csharp" source="./snippets/BranchesAndLoops/branches-loops.cs" id="ForLoop":::
 
 The preceding `for` loop does the same work as the `while` loop and the `do` loop you already used. The `for` statement has three parts that control how it works:
 
@@ -118,15 +118,15 @@ A `while`, `do`, or `for` loop can be nested inside another loop to create a mat
 
 One `for` loop can generate the rows:
 
-:::code language="csharp" source="./snippets/BranchesAndLoops/Program.cs" id="Rows":::
+:::code language="csharp" source="./snippets/BranchesAndLoops/branches-loops.cs" id="Rows":::
 
 Another loop can generate the columns:
 
-:::code language="csharp" source="./snippets/BranchesAndLoops/Program.cs" id="Columns":::
+:::code language="csharp" source="./snippets/BranchesAndLoops/branches-loops.cs" id="Columns":::
 
 You can nest one loop inside the other to form pairs:
 
-:::code language="csharp" source="./snippets/BranchesAndLoops/Program.cs" id="Nested":::
+:::code language="csharp" source="./snippets/BranchesAndLoops/branches-loops.cs" id="Nested":::
 
 You can see that the outer loop increments once for each full run of the inner loop. Reverse the row and column nesting, and see the changes for yourself. When you're done, place the code from this section in a method called `ExploreLoops()`.
 
@@ -145,7 +145,7 @@ Did you come up with something like this?
 <!-- markdownlint-disable MD033 -->
 <details>
 
-:::code language="csharp" source="./snippets/BranchesAndLoops/Program.cs" id="Challenge":::
+:::code language="csharp" source="./snippets/BranchesAndLoops/branches-loops.cs" id="Challenge":::
 </details>
 <!-- markdownlint-enable MD033 -->
 

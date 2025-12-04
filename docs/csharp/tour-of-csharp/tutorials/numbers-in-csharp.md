@@ -15,9 +15,9 @@ Create a directory named *numbers-quickstart*. Make it the current directory and
 dotnet new console -n NumbersInCSharp -o .
 ```
 
-Open *Program.cs* in your favorite editor, and replace the contents of the file with the following code:
+Open *numbers.cs* in your favorite editor, and replace the contents of the file with the following code:
 
-:::code language="csharp" source="./snippets/NumbersInCsharp/Program.cs" id="Addition":::
+:::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="Addition":::
 Addition
 
 Run this code by typing `dotnet run` in your command window.
@@ -30,7 +30,7 @@ You've seen one of the fundamental math operations with integers. The `int` type
 
 Start by exploring those different operations. Add these lines after the line that writes the value of `c`:
 
-:::code language="csharp" source="./snippets/NumbersInCsharp/Program.cs" id="OtherOperations":::
+:::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="OtherOperations":::
 
 Run this code by typing `dotnet run` in your command window.
 
@@ -78,23 +78,23 @@ The `//` starts a **comment** in C#. Comments are any text you want to keep in y
 
 The C# language defines the precedence of different mathematics operations with rules consistent with the rules you learned in mathematics. Multiplication and division take precedence over addition and subtraction. Explore that by adding the following code after the call to `WorkWithIntegers()`, and executing `dotnet run`:
 
-:::code language="csharp" source="./snippets/NumbersInCsharp/Program.cs" id="Precedence":::
+:::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="Precedence":::
 
 The output demonstrates that the multiplication is performed before the addition.
 
 You can force a different order of operation by adding parentheses around the operation or operations you want performed first. Add the following lines and run again:
 
-:::code language="csharp" source="./snippets/NumbersInCsharp/Program.cs" id="Parentheses":::
+:::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="Parentheses":::
 
 Explore more by combining many different operations. Add something like the following lines. Try `dotnet run` again.
 
-:::code language="csharp" source="./snippets/NumbersInCsharp/Program.cs" id="CompoundExpression":::
+:::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="CompoundExpression":::
 
 You may have noticed an interesting behavior for integers. Integer division always produces an integer result, even when you'd expect the result to include a decimal or fractional portion.
 
 If you haven't seen this behavior, try the following code:
 
-:::code language="csharp" source="./snippets/NumbersInCsharp/Program.cs" id="Truncation":::
+:::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="Truncation":::
 
 Type `dotnet run` again to see the results.
 
@@ -151,15 +151,15 @@ void OrderPrecedence()
 
 That last sample showed you that integer division truncates the result. You can get the **remainder** by using the **remaimnder** operator, the `%` character. Try the following code after the method call to `OrderPrecedence()`:
 
-:::code language="csharp" source="./snippets/NumbersInCsharp/Program.cs" id="QuotientAndRemainder":::
+:::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="QuotientAndRemainder":::
 
 The C# integer type differs from mathematical integers in one other way: the `int` type has minimum and maximum limits. Try the following code to see those limits:
 
-:::code language="csharp" source="./snippets/NumbersInCsharp/Program.cs" id="MinAndMax":::
+:::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="MinAndMax":::
 
 If a calculation produces a value that exceeds those limits, you have an **underflow** or **overflow** condition. The answer appears to wrap from one limit to the other. To see an example, add these two lines to your code:
 
-:::code language="csharp" source="./snippets/NumbersInCsharp/Program.cs" id="Overflow":::
+:::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="Overflow":::
 
 Notice that the answer is very close to the minimum (negative) integer. It's the same as `min + 2`. The addition operation **overflowed** the allowed values for integers. The answer is a large negative number because an overflow "wraps around" from the largest possible integer value to the smallest.
 
@@ -169,19 +169,19 @@ There are other numeric types with different limits and precision that you would
 
 The `double` numeric type represents a double-precision floating point number. Those terms may be new to you. A **floating point** number is useful to represent non-integral numbers that may be very large or small in magnitude. **Double-precision** is a relative term that describes the number of binary digits used to store the value. **Double precision** numbers have twice the number of binary digits as **single-precision**. On modern computers, it's more common to use double precision than single precision numbers. **Single precision** numbers are declared using the `float` keyword. Let's explore. Add the following code and see the result:
 
-:::code language="csharp" source="./snippets/NumbersInCsharp/Program.cs" id="FloatingPoint":::
+:::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="FloatingPoint":::
 
 Notice that the answer includes the decimal portion of the quotient. Try a slightly more complicated expression with doubles. You can use the following values, or substitute other numbers:
 
-:::code language="csharp" source="./snippets/NumbersInCsharp/Program.cs" id="ChangeDoubleValues":::
+:::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="ChangeDoubleValues":::
 
 The range of a double value is much greater than integer values. Try the following code below what you've written so far:
 
-:::code language="csharp" source="./snippets/NumbersInCsharp/Program.cs" id="MinMax":::
+:::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="MinMax":::
 
 These values are printed in scientific notation. The number to the left of the `E` is the significand. The number to the right is the exponent, as a power of 10. Just like decimal numbers in math, doubles in C# can have rounding errors. Try this code:
 
-:::code language="csharp" source="./snippets/NumbersInCsharp/Program.cs" id="RoundingError":::
+:::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="RoundingError":::
 
 You know that `0.3` is `3/10` and not exactly the same as `1/3`. Similarly, `0.33` is `33/100`. That value is closer to `1/3`, but still not exact. No matter how many decimal places you add, a rounding error remains.
 
@@ -193,13 +193,13 @@ Try other calculations with large numbers, small numbers, multiplication, and di
 
 You've seen the basic numeric types in C#: integers and doubles. There's one other type to learn: the `decimal` type. The `decimal` type has a smaller range but greater precision than `double`. Let's take a look:
 
-:::code language="csharp" source="./snippets/NumbersInCsharp/Program.cs" id="Decimal":::
+:::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="Decimal":::
 
 There's one other type to learn: the `decimal` type. The `decimal` type has a smaller range but greater precision than `double`. Let's take a look:
 
 Notice that the range is smaller than the `double` type. You can see the greater precision with the decimal type by trying the following code:
 
-:::code language="csharp" source="./snippets/NumbersInCsharp/Program.cs" id="Precision":::
+:::code language="csharp" source="./snippets/NumbersInCsharp/numbers.cs" id="Precision":::
 
 Notice that the math using the decimal type has more digits to the right of the decimal point.
 
@@ -220,7 +220,7 @@ Once you try it, open the details pane to see how you did:
 <!-- markdownlint-disable MD033 -->
 <details>
 
-:::code language="csharp" interactive="try-dotnet-method" source="./snippets/NumbersInCsharp/Program.cs" id="Challenge":::
+:::code language="csharp" interactive="try-dotnet-method" source="./snippets/NumbersInCsharp/numbers.cs" id="Challenge":::
 </details>
 <!-- markdownlint-enable MD033 -->
 

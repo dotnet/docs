@@ -96,7 +96,7 @@ When preparing libraries for trimming, if your library targets any framework ear
 
 ```xml
 <PropertyGroup>
-  <TargetFrameworks>netstandard2.0;net6.0;net9.0</TargetFrameworks>
+  <TargetFrameworks>netstandard2.0;net6.0;net10.0</TargetFrameworks>
   <IsTrimmable Condition="$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net6.0'))">true</IsTrimmable>
 </PropertyGroup>
 ```

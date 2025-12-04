@@ -113,7 +113,7 @@ When preparing libraries for AOT compatibility, if your library targets any fram
 
 ```xml
 <PropertyGroup>
-  <TargetFrameworks>netstandard2.0;net8.0;net9.0</TargetFrameworks>
+  <TargetFrameworks>netstandard2.0;net8.0;net10.0</TargetFrameworks>
   <IsAotCompatible Condition="$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net8.0'))">true</IsAotCompatible>
 </PropertyGroup>
 ```

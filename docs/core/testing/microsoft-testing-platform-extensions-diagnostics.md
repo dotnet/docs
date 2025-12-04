@@ -76,7 +76,7 @@ To workaround this, there are two options:
 - Apply a workaround similar to the following:
 
   ```xml
-  <Target Name="WorkaroundMacOSDumpIssue" AfterTargets="Build" Condition="$([MSBuild]::IsOSPlatform('OSX')) AND '$(UseAppHost)' != 'false' AND '$(OutputType)' == 'Exe' AND '$(TargetFramework)' != '' AND '$(RunCommand)' != '' AND '$(RunCommand)' != 'dotnet'" AND '$(IsTestingPlatformApplication)'=='true'>
+  <Target Name="WorkaroundMacOSDumpIssue" AfterTargets="Build" Condition="$([MSBuild]::IsOSPlatform('OSX')) AND '$(UseAppHost)' != 'false' AND '$(OutputType)' == 'Exe' AND '$(TargetFramework)' != '' AND '$(RunCommand)' != '' AND '$(RunCommand)' != 'dotnet' AND '$(IsTestingPlatformApplication)'=='true'">
     <Exec Command="codesign --sign - --force --entitlements '$(MSBuildThisFileDirectory)mtp-test-entitlements.plist' '$(RunCommand)'" />
   </Target>
   ```

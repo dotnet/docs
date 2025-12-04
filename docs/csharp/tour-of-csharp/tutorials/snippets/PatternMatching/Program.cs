@@ -75,7 +75,7 @@ foreach (var transaction in TransactionRecords(bankRecords))
     Console.WriteLine($"{transaction.type} => Parsed Amount: {transaction.amount}, New Balance: {currentBalance}");
 }
 
-// <UseRecords>
+// <TypePattern>
 currentBalance = 0.0;
 
 foreach (var transaction in TransactionRecordType(bankRecords))
@@ -88,7 +88,7 @@ foreach (var transaction in TransactionRecordType(bankRecords))
     };
     Console.WriteLine($" {transaction} => New Balance: {currentBalance}");
 }
-// </UseRecords>
+// </TypePattern>
 
 // <ParseTransaction>
 static IEnumerable<(TransactionType type, double amount)> TransactionRecords(string inputText)

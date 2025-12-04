@@ -9,8 +9,6 @@ This tutorial teaches you about the numeric types in C#. You write small amounts
 
 ## Explore integer math
 
-## Explore integer math
-
 Create a directory named *numbers-quickstart*. Make it the current directory and run the following command:
 
 ```dotnetcli

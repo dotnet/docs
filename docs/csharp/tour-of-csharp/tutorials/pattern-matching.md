@@ -52,7 +52,7 @@ else
 
 The `else if` clause never matches because every number less than 10 is also less than 20. The `switch` expression ensures both of those characteristics are met, which results in fewer bugs in your apps. Let's try it and experiment. Copy the following code. Replace the two `if` statements in your `foreach` loop with the `switch` expression you copied. After you've modified the code, type `dotnet run` to run the new sample.
 
-:::code language="csharp" source="./snippets/PatternMatching/EnumSwitchExample.cs" id="SwitchEnumValue":::
+:::code language="csharp" source="./snippets/PatternMatching/Program.cs" id="SwitchEnumValue":::
 
 When you run the code, you see that it works the same. To demonstrate *subsumption*, reorder the switch arms as shown in the following snippet:
 
@@ -73,15 +73,15 @@ The compiler issues a warning if the expression tested in a `switch` expression 
 
 To finish this tutorial, let's explore one more building block to pattern matching: the *type pattern*. A *type pattern* tests an expression at run time to see if it's the specified type. You can use a type test with either an `is` expression or a `switch` expression. Let's modify the current sample in two ways. First, instead of a tuple, let's build `Deposit` and `Withdrawal` record types that represent the transactions. Add the following declarations just at the end of the your code file:
 
-:::code language="csharp" source="./snippets/PatternMatching/FinalExampleProgram.cs" id="RecordDeclarations":::
+:::code language="csharp" source="./snippets/PatternMatching/Program.cs" id="RecordDeclarations":::
 
 Next, add this method just before the declaration of the `TransactionType` enumeration. It parses the text and return a series of records:
 
-:::code language="csharp" source="./snippets/PatternMatching/FinalExampleProgram.cs" id="ParseToRecord":::
+:::code language="csharp" source="./snippets/PatternMatching/Program.cs" id="ParseToRecord":::
 
 Finally, add the following code after the last `foreach` loop:
 
-:::code language="csharp" source="./snippets/PatternMatching/FinalExampleProgram.cs" id="TypePattern":::
+:::code language="csharp" source="./snippets/PatternMatching/Program.cs" id="TypePattern":::
 
 Then, type `dotnet run` to see the results. This final version tests the input against a *type*.
 

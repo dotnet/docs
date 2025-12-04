@@ -48,27 +48,27 @@ Tuples are great for those times when you want multiple values in the same struc
 
 The following code declares and uses a `record` type to represent a `Point`:
 
-:::code language="csharp" source="./snippets/TuplesAndTypes/PointEvolution.cs" id="PointRecord":::
+:::code language="csharp" source="./snippets/TuplesAndTypes/Program.cs" id="PointRecord":::
 
 The preceding code must be at the bottom of your source file. Type declarations like `record` declarations must follow executable statements in a file-based app.
 
 Add the following code preceding the `record` declaration:
 
-:::code language="csharp" source="./snippets/TuplesAndTypes/PointEvolution.cs" id="UsePointRecord":::
+:::code language="csharp" source="./snippets/TuplesAndTypes/Program.cs" id="UsePointRecord":::
 
 The `record` declaration is a single line of code for the `Point` type that stores the values `X` and `Y` in readonly properties. You use the name `Point` wherever you use that type. Properly named types, like `Point`, provide information about how the type is used. The additional code shows how to use a `with` expression to create a new point that's a modified copy of the existing point. The line `pt4 = pt3 with { Y = 10 }` says "`pt4` has the same values as `pt3` except that `Y` is assigned to 10." You can add any number of properties to change in a single `with` expression.
 
 The preceding `record` declaration is a single line of code that ends in `;`. You can add behavior to a `record` type by declaring *members*. A record member can be a function, or more data elements. The members of a type are in the type declaration, between `{` and  `}` characters. Delete the `;` and add the following lines of code after the `record` declaration:
 
-:::code language="csharp" source="./snippets/TuplesAndTypes/PointStruct.cs" id="AddSlopeMethod":::
+:::code language="csharp" source="./snippets/TuplesAndTypes/Program.cs" id="AddSlopeMethod":::
 
 Then, add the following code before the `record` declaration, after the line containing the `with` expression:
 
-:::code language="csharp" source="./snippets/TuplesAndTypes/PointStruct.cs" id="UseSlope":::
+:::code language="csharp" source="./snippets/TuplesAndTypes/Program.cs" id="UseSlope":::
 
 You added formality to the *tuple* representing an `X` and `Y` value. You made it a `record` that defined a named type, and included a member to calculate the slope. A `record` type is a shorthand for a `record class`: A `class` type that includes extra behavior. You can modify the `Point` type to make it a `record struct` as well:
 
-:::code language="csharp" source="./snippets/TuplesAndTypes/PointStruct.cs" id="RecordStructPoint":::
+:::code language="csharp" source="./snippets/TuplesAndTypes/Program.cs" id="RecordStructPoint":::
 
 A `record struct` is a `struct` type that includes the extra behavior added to all `record` types.
 

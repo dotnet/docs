@@ -170,7 +170,7 @@ public class LoanApp
 }
 ```
 
-To get the DispId of an interface member at run time, COM clients can call **IDispatch.GetIdsOfNames**. To invoke a method on the interface, pass the returned DispId as an argument to **IDispatch.Invoke**.
+To get the DispId of an interface member at runtime, COM clients can call **IDispatch.GetIdsOfNames**. To invoke a method on the interface, pass the returned DispId as an argument to **IDispatch.Invoke**.
 
 ### Restrict using the dual interface option for the class interface.
 

@@ -103,7 +103,7 @@ In C#, you can use two versions of the same assembly in a single application. Fo
 |[Assembly placement](../../framework/app-domains/assembly-placement.md)|Where to locate assemblies.|
 |[Assemblies and side-by-side execution](side-by-side-execution.md)|Use multiple versions of the runtime or an assembly simultaneously.|
 |[Emit dynamic methods and assemblies](../../fundamentals/reflection/emitting-dynamic-methods-and-assemblies.md)|How to create dynamic assemblies.|
-|[How the runtime locates assemblies](../../framework/deployment/how-the-runtime-locates-assemblies.md)|How the .NET Framework resolves assembly references at run time.|
+|[How the runtime locates assemblies](../../framework/deployment/how-the-runtime-locates-assemblies.md)|How the .NET Framework resolves assembly references at runtime.|
 
 ## Reference
 

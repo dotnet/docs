@@ -11,8 +11,6 @@ helpviewer_keywords:
 ---
 # Tutorial: Get started with System.CommandLine
 
-[!INCLUDE [scl-preview](./includes/preview.md)]
-
 This tutorial shows how to create a .NET command-line app that uses the [`System.CommandLine` library](index.md). You'll begin by creating a simple root command that has one option. Then you'll build on that base, creating a more complex app that contains multiple subcommands and different options for each command.
 
 In this tutorial, you learn how to:

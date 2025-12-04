@@ -228,9 +228,9 @@ Finally, you can use the inline group element `(?n:)` to suppress automatic capt
 > [!NOTE]
 > Where possible, use [source-generated regular expressions](regular-expression-source-generators.md) instead of compiling regular expressions using the <xref:System.Text.RegularExpressions.RegexOptions.Compiled?displayProperty=nameWithType> option. Source generation can help your app start faster, run more quickly and be more trimmable. To learn when source generation is possible, see [When to use it](regular-expression-source-generators.md#when-to-use-it).
 
-By default, regular expressions in .NET are interpreted. When a <xref:System.Text.RegularExpressions.Regex> object is instantiated or a static <xref:System.Text.RegularExpressions.Regex> method is called, the regular expression pattern is parsed into a set of custom opcodes, and an interpreter uses these opcodes to run the regular expression. This involves a tradeoff: the cost of initializing the regular expression engine is minimized at the expense of run-time performance.
+By default, regular expressions in .NET are interpreted. When a <xref:System.Text.RegularExpressions.Regex> object is instantiated or a static <xref:System.Text.RegularExpressions.Regex> method is called, the regular expression pattern is parsed into a set of custom opcodes, and an interpreter uses these opcodes to run the regular expression. This involves a tradeoff: the cost of initializing the regular expression engine is minimized at the expense of runtime performance.
 
-You can use compiled instead of interpreted regular expressions by using the <xref:System.Text.RegularExpressions.RegexOptions.Compiled?displayProperty=nameWithType> option. In this case, when a pattern is passed to the regular expression engine, it is parsed into a set of opcodes and then converted to common intermediate language (CIL), which can be passed directly to the common language runtime. Compiled regular expressions maximize run-time performance at the expense of initialization time.
+You can use compiled instead of interpreted regular expressions by using the <xref:System.Text.RegularExpressions.RegexOptions.Compiled?displayProperty=nameWithType> option. In this case, when a pattern is passed to the regular expression engine, it is parsed into a set of opcodes and then converted to common intermediate language (CIL), which can be passed directly to the common language runtime. Compiled regular expressions maximize runtime performance at the expense of initialization time.
 
 > [!NOTE]
 > A regular expression can be compiled only by supplying the <xref:System.Text.RegularExpressions.RegexOptions.Compiled?displayProperty=nameWithType> value to the `options` parameter of a <xref:System.Text.RegularExpressions.Regex> class constructor or a static pattern-matching method. It's not available as an inline option.
@@ -266,9 +266,9 @@ However, in the following cases, white-space characters in a regular expression 
 
 - White space isn't allowed within a character sequence that introduces a language element. For example:
 
-  - The language element `(?:`*subexpression*`)` represents a noncapturing group, and the `(?:` portion of the element can't have embedded spaces. The pattern `(? :`*subexpression*`)` throws an <xref:System.ArgumentException> at run time because the regular expression engine can't parse the pattern, and the pattern `( ?:`*subexpression*`)` fails to match *subexpression*.
+  - The language element `(?:`*subexpression*`)` represents a noncapturing group, and the `(?:` portion of the element can't have embedded spaces. The pattern `(? :`*subexpression*`)` throws an <xref:System.ArgumentException> at runtime because the regular expression engine can't parse the pattern, and the pattern `( ?:`*subexpression*`)` fails to match *subexpression*.
 
-  - The language element `\p{`*name*`}`, which represents a Unicode category or named block, can't include embedded spaces in the `\p{` portion of the element. If you do include a white space, the element throws an <xref:System.ArgumentException> at run time.
+  - The language element `\p{`*name*`}`, which represents a Unicode category or named block, can't include embedded spaces in the `\p{` portion of the element. If you do include a white space, the element throws an <xref:System.ArgumentException> at runtime.
 
 Enabling this option helps simplify regular expressions that are often difficult to parse and to understand. It improves readability, and makes it possible to document a regular expression.
 

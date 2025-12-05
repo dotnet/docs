@@ -80,7 +80,7 @@ In the preceding `MyClass.DoWork` method, a `MetricTags` object is populated wit
 
 ## Specifying units
 
-You can optionally specify a unit of measurement for your metrics using the `Unit` parameter. This helps provide context about what the metric measures (e.g., "seconds", "bytes", "requests"). The unit is passed to the underlying <xref:System.Diagnostics.Metrics.Meter> when creating the instrument.
+You can optionally specify a unit of measurement for your metrics using the `Unit` parameter. This helps provide context about what the metric measures (for example, "seconds", "bytes", and "requests"). The unit is passed to the underlying <xref:System.Diagnostics.Metrics.Meter> when creating the instrument.
 
 The following code demonstrates how to use the generator with primitive types with units specified:
 

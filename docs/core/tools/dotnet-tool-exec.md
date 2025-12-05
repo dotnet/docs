@@ -81,9 +81,7 @@ This command also exists in two other forms for easier use
 
   Allows prerelease packages to be selected when resolving the version to install.
 
-- **`--source <SOURCE>`**
-
-  Specifies the source for NuGet packages. This source replaces all NuGet package sources.
+- [!INCLUDE [source](../../../includes/cli-tool-source.md)]
 
 - [!INCLUDE [verbosity](../../../includes/cli-verbosity-normal.md)]
 

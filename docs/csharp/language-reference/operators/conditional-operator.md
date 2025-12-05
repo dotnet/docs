@@ -14,7 +14,7 @@ helpviewer_keywords:
 
 The conditional operator `?:`, also known as the ternary conditional operator, evaluates a Boolean expression and returns the result of one of the two expressions, depending on whether the Boolean expression evaluates to `true` or `false`, as the following example shows:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/ConditionalOperator.cs" id="BasicExample":::
+:::code language="csharp" source="snippets/shared/ConditionalOperator.cs" id="BasicExample":::
 
 As the preceding example shows, the syntax for the conditional operator is as follows:
 
@@ -53,7 +53,7 @@ a ? b : (c ? d : e)
 
 A conditional ref expression conditionally returns a variable reference, as the following example shows:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/ConditionalOperator.cs" id="ConditionalRef":::
+:::code language="csharp" source="snippets/shared/ConditionalOperator.cs" id="ConditionalRef":::
 
 You can [`ref` assign](assignment-operator.md#ref-assignment) the result of a conditional ref expression, use it as a [reference return](../statements/jump-statements.md#ref-returns) or pass it as a `ref`, `out`, `in`, or `ref readonly` [method parameter](../keywords/method-parameters.md#reference-parameters). You can also assign to the result of a conditional ref expression, as the preceding example shows.
 

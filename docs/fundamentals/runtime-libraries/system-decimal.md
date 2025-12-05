@@ -13,13 +13,13 @@ dev_langs:
 
 The <xref:System.Decimal> value type represents decimal numbers ranging from positive 79,228,162,514,264,337,593,543,950,335 to negative 79,228,162,514,264,337,593,543,950,335. The default value of a `Decimal` is 0. The <xref:System.Decimal> value type is appropriate for financial calculations that require large numbers of significant integral and fractional digits and no round-off errors. The <xref:System.Decimal> type does not eliminate the need for rounding. Rather, it minimizes errors due to rounding. For example, the following code produces a result of 0.9999999999999999999999999999 instead of 1.
 
-:::code language="csharp" source="./snippets/System/Decimal/Overview/csharp/DecimalDivision_46630_1.cs" interactive="try-dotnet-method" id="Snippet1":::
+:::code language="csharp" source="./snippets/System/Decimal/Overview/csharp/DecimalDivision_46630_1.cs" id="Snippet1":::
 :::code language="fsharp" source="./snippets/System/Decimal/Overview/fsharp/DecimalDivision_46630_1.fs" id="Snippet1":::
 :::code language="vb" source="./snippets/System/Decimal/Overview/vb/DecimalDivision_46630_1.vb" id="Snippet1":::
 
 When the result of the division and multiplication is passed to the <xref:System.Math.Round%2A> method, the result suffers no loss of precision, as the following code shows.
 
-:::code language="csharp" source="./snippets/System/Decimal/Overview/csharp/DecimalDivision_46630_1.cs" interactive="try-dotnet-method" id="Snippet2":::
+:::code language="csharp" source="./snippets/System/Decimal/Overview/csharp/DecimalDivision_46630_1.cs" id="Snippet2":::
 :::code language="fsharp" source="./snippets/System/Decimal/Overview/fsharp/DecimalDivision_46630_1.fs" id="Snippet2":::
 :::code language="vb" source="./snippets/System/Decimal/Overview/vb/DecimalDivision_46630_1.vb" id="Snippet2":::
 

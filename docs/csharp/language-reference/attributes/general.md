@@ -33,7 +33,7 @@ The `Conditional` attribute makes the execution of a method dependent on a prepr
 
 In the following example, `Conditional` is applied to a method to enable or disable the display of program-specific diagnostic information:
 
-:::code language="csharp" source="snippets/trace.cs" interactive="try-dotnet" :::
+:::code language="csharp" source="snippets/trace.cs" :::
 
 If the `TRACE_ON` identifier isn't defined, the trace output isn't displayed. Explore for yourself in the interactive window.
 
@@ -59,7 +59,7 @@ The `Obsolete` attribute marks a code element as no longer recommended for use. 
 
 In the following example, the `Obsolete` attribute is applied to class `A` and to method `B.OldMethod`. Because the second argument of the attribute constructor applied to `B.OldMethod` is set to `true`, this method causes a compiler error, whereas using class `A` produces a warning. Calling `B.NewMethod`, however, produces no warning or error. For example, when you use it with the previous definitions, the following code generates two warnings and one error:
 
-:::code language="csharp" source="snippets/ObsoleteExample.cs" ID="Snippet1" interactive="try-dotnet" :::
+:::code language="csharp" source="snippets/ObsoleteExample.cs" ID="Snippet1" :::
 
 The string provided as the first argument to the attribute constructor is displayed as part of the warning or error. Two warnings for class `A` are generated: one for the declaration of the class reference, and one for the class constructor. The `Obsolete` attribute can be used without arguments, but including an explanation what to use instead is recommended. You can use constant string interpolation and the `nameof` operator to ensure the names match:
 

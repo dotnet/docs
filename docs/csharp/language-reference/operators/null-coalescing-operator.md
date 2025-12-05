@@ -47,17 +47,17 @@ The `??` and `??=` operators can be useful in the following scenarios:
 
 - In expressions with the [null-conditional operators `?.` and `?[]`](member-access-operators.md#null-conditional-operators--and-), you can use the `??` operator to provide an alternative expression to evaluate in case the result of the expression with null-conditional operations is `null`:
 
-  :::code language="csharp" source="snippets/shared/NullCoalescingOperator.cs" id="WithNullConditional" interactive="try-dotnet-method":::
+  :::code language="csharp" source="snippets/shared/NullCoalescingOperator.cs" id="WithNullConditional":::
 
 - When you work with [nullable value types](../builtin-types/nullable-value-types.md) and need to provide a value of an underlying value type, use the `??` operator to specify the value to provide in case a nullable type value is `null`:
 
-  :::code language="csharp" source="snippets/shared/NullCoalescingOperator.cs" id="WithNullableTypes" interactive="try-dotnet-method":::
+  :::code language="csharp" source="snippets/shared/NullCoalescingOperator.cs" id="WithNullableTypes":::
 
   Use the <xref:System.Nullable%601.GetValueOrDefault?displayProperty=nameWithType> method if the value to be used when a nullable type value is `null` should be the default value of the underlying value type.
 
 - You can use a [`throw` expression](../statements/exception-handling-statements.md#the-throw-expression) as the right-hand operand of the `??` operator to make the argument-checking code more concise:
 
-  :::code language="csharp" source="snippets/shared/NullCoalescingOperator.cs" id="WithThrowExpression" interactive="try-dotnet-method":::
+  :::code language="csharp" source="snippets/shared/NullCoalescingOperator.cs" id="WithThrowExpression":::
 
   The preceding example also demonstrates how to use [expression-bodied members](../../programming-guide/statements-expressions-operators/expression-bodied-members.md) to define a property.
 

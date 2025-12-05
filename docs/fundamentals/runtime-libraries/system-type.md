@@ -47,7 +47,7 @@ The <xref:System.Type> object associated with a particular type can be obtained 
 
   The following example calls the <xref:System.Object.GetType%2A?displayProperty=nameWithType> method to determine the runtime type of each object in an object array.
 
-  :::code language="csharp" source="./snippets/System/Type/Overview/csharp/GetType1.cs" interactive="try-dotnet-method" id="Snippet2":::
+  :::code language="csharp" source="./snippets/System/Type/Overview/csharp/GetType1.cs" id="Snippet2":::
   :::code language="fsharp" source="./snippets/System/Type/Overview/fsharp/GetType1.fs" id="Snippet2":::
   :::code language="vb" source="./snippets/System/Type/Overview/vb/GetType1.vb" id="Snippet2":::
 
@@ -79,6 +79,6 @@ The <xref:System.Type> object associated with a particular type can be obtained 
 
 A <xref:System.Type> object that represents a type is unique; that is, two <xref:System.Type> object references refer to the same object if and only if they represent the same type. This allows for comparison of <xref:System.Type> objects using reference equality. The following example compares the <xref:System.Type> objects that represent a number of integer values to determine whether they are of the same type.
 
-:::code language="csharp" source="./snippets/System/Type/Overview/csharp/Equals1.cs" interactive="try-dotnet-method" id="Snippet3":::
+:::code language="csharp" source="./snippets/System/Type/Overview/csharp/Equals1.cs" id="Snippet3":::
 :::code language="fsharp" source="./snippets/System/Type/Overview/fsharp/Equals1.fs" id="Snippet3":::
 :::code language="vb" source="./snippets/System/Type/Overview/vb/Equals1.vb" id="Snippet3":::

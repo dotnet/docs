@@ -21,7 +21,7 @@ You can instantiate a <xref:System.String> object in the following ways:
 
 - By assigning a string literal to a <xref:System.String> variable. This is the most commonly used method for creating a string. The following example uses assignment to create several strings. Note that in C# and F#, because the backslash (\\) is an escape character, literal backslashes in a string must be escaped or the entire string must be @-quoted.
 
-  :::code language="csharp" source="./snippets/System/String/Overview/csharp/program.cs" interactive="try-dotnet-method" id="Snippet1":::
+  :::code language="csharp" source="./snippets/System/String/Overview/csharp/program.cs" id="Snippet1":::
   :::code language="fsharp" source="./snippets/System/String/Overview/fsharp/program.fs" id="Snippet1":::
   :::code language="vb" source="./snippets/System/String/Overview/vb/instantiate1.vb" id="Snippet1":::
 
@@ -33,13 +33,13 @@ You can instantiate a <xref:System.String> object in the following ways:
 
 - By using the string concatenation operator (+ in C# and F#, and & or + in Visual Basic) to create a single string from any combination of <xref:System.String> instances and string literals. The following example illustrates the use of the string concatenation operator.
 
-  :::code language="csharp" source="./snippets/System/String/Overview/csharp/program.cs" interactive="try-dotnet-method" id="Snippet3":::
+  :::code language="csharp" source="./snippets/System/String/Overview/csharp/program.cs" id="Snippet3":::
   :::code language="fsharp" source="./snippets/System/String/Overview/fsharp/program.fs" id="Snippet3":::
   :::code language="vb" source="./snippets/System/String/Overview/vb/instantiate1.vb" id="Snippet3":::
 
 - By retrieving a property or calling a method that returns a string. The following example uses the methods of the <xref:System.String> class to extract a substring from a larger string.
 
-  :::code language="csharp" source="./snippets/System/String/Overview/csharp/program.cs" interactive="try-dotnet-method" id="Snippet4":::
+  :::code language="csharp" source="./snippets/System/String/Overview/csharp/program.cs" id="Snippet4":::
   :::code language="fsharp" source="./snippets/System/String/Overview/fsharp/program.fs" id="Snippet4":::
   :::code language="vb" source="./snippets/System/String/Overview/vb/instantiate1.vb" id="Snippet4":::
 
@@ -66,7 +66,7 @@ A single <xref:System.Char> object usually represents a single code point; that 
 
 - A Unicode supplementary code point (a surrogate pair) is represented by a <xref:System.Char> object whose code point is a high surrogate followed by a <xref:System.Char> object whose code point is a low surrogate. The code units of high surrogates range from U+D800 to U+DBFF. The code units of low surrogates range from U+DC00 to U+DFFF. Surrogate pairs are used to represent characters in the 16 Unicode supplementary planes. The following example creates a surrogate character and passes it to the <xref:System.Char.IsSurrogatePair(System.Char%2CSystem.Char)?displayProperty=nameWithType> method to determine whether it is a surrogate pair.
 
-  :::code language="csharp" source="./snippets/System/String/Overview/csharp/surrogate1.cs" interactive="try-dotnet-method" id="Snippet3":::
+  :::code language="csharp" source="./snippets/System/String/Overview/csharp/surrogate1.cs" id="Snippet3":::
   :::code language="fsharp" source="./snippets/System/String/Overview/fsharp/surrogate1.fs" id="Snippet3":::
   :::code language="vb" source="./snippets/System/String/Overview/vb/surrogate1.vb" id="Snippet3":::
 
@@ -104,19 +104,19 @@ An index is the position of a <xref:System.Char> object (not a Unicode character
 
 The <xref:System.String.Chars%2A> property lets you access individual <xref:System.Char> objects by their index position in the string. Because the <xref:System.String.Chars%2A> property is the default property (in Visual Basic) or the indexer (in C# and F#), you can access the individual <xref:System.Char> objects in a string by using code such as the following. This code looks for white space or punctuation characters in a string to determine how many words the string contains.
 
-:::code language="csharp" source="./snippets/System/String/Overview/csharp/index11.cs" interactive="try-dotnet-method" id="Snippet4":::
+:::code language="csharp" source="./snippets/System/String/Overview/csharp/index11.cs" id="Snippet4":::
 :::code language="fsharp" source="./snippets/System/String/Overview/fsharp/index11.fs" id="Snippet4":::
 :::code language="vb" source="./snippets/System/String/Overview/vb/index1.vb" id="Snippet4":::
 
 Because the <xref:System.String> class implements the <xref:System.Collections.IEnumerable> interface, you can also iterate through the <xref:System.Char> objects in a string by using a `foreach` construct, as the following example shows.
 
-:::code language="csharp" source="./snippets/System/String/Overview/csharp/index2.cs" interactive="try-dotnet-method" id="Snippet5":::
+:::code language="csharp" source="./snippets/System/String/Overview/csharp/index2.cs" id="Snippet5":::
 :::code language="fsharp" source="./snippets/System/String/Overview/fsharp/index2.fs" id="Snippet5":::
 :::code language="vb" source="./snippets/System/String/Overview/vb/index2.vb" id="Snippet5":::
 
 Consecutive index values might not correspond to consecutive Unicode characters, because a Unicode character might be encoded as more than one <xref:System.Char> object. In particular, a string may contain multi-character units of text that are formed by a base character followed by one or more combining characters or by surrogate pairs. To work with Unicode characters instead of <xref:System.Char> objects, use the <xref:System.Globalization.StringInfo?displayProperty=nameWithType> and <xref:System.Globalization.TextElementEnumerator> classes, or the <xref:System.String.EnumerateRunes%2A?displayProperty=nameWithType> method and the <xref:System.Text.Rune> struct. The following example illustrates the difference between code that works with <xref:System.Char> objects and code that works with Unicode characters. It compares the number of characters or text elements in each word of a sentence. The string includes two sequences of a base character followed by a combining character.
 
-:::code language="csharp" source="./snippets/System/String/Overview/csharp/index3.cs" interactive="try-dotnet-method" id="Snippet6":::
+:::code language="csharp" source="./snippets/System/String/Overview/csharp/index3.cs" id="Snippet6":::
 :::code language="fsharp" source="./snippets/System/String/Overview/fsharp/index3.fs" id="Snippet6":::
 :::code language="vb" source="./snippets/System/String/Overview/vb/index3.vb" id="Snippet6":::
 

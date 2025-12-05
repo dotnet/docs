@@ -22,13 +22,13 @@ Types frequently override the <xref:System.Object.ToString%2A?displayProperty=na
 
 The default implementation of the <xref:System.Object.ToString%2A> method returns the fully qualified name of the type of the <xref:System.Object>, as the following example shows.
 
-:::code language="csharp" source="./snippets/System/Object/ToString/csharp/tostring1.cs" interactive="try-dotnet-method" id="Snippet1":::
+:::code language="csharp" source="./snippets/System/Object/ToString/csharp/tostring1.cs" id="Snippet1":::
 :::code language="fsharp" source="./snippets/System/Object/ToString/fsharp/tostring1.fs" id="Snippet1":::
 :::code language="vb" source="./snippets/System/Object/ToString/vb/tostring1.vb" id="Snippet1":::
 
 Because <xref:System.Object> is the base class of all reference types in .NET, this behavior is inherited by reference types that do not override the <xref:System.Object.ToString%2A> method. The following example illustrates this. It defines a class named `Object1` that accepts the default implementation of all <xref:System.Object> members. Its <xref:System.Object.ToString%2A> method returns the object's fully qualified type name.
 
-:::code language="csharp" source="./snippets/System/Object/ToString/csharp/tostring2.cs" interactive="try-dotnet" id="Snippet2":::
+:::code language="csharp" source="./snippets/System/Object/ToString/csharp/tostring2.cs" id="Snippet2":::
 :::code language="fsharp" source="./snippets/System/Object/ToString/fsharp/tostring2.fs" id="Snippet2":::
 :::code language="vb" source="./snippets/System/Object/ToString/vb/tostring2.vb" id="Snippet2":::
 
@@ -36,7 +36,7 @@ Because <xref:System.Object> is the base class of all reference types in .NET, t
 
 Types commonly override the <xref:System.Object.ToString%2A?displayProperty=nameWithType> method to return a string that represents the object instance. For example, the base types such as <xref:System.Char>, <xref:System.Int32>, and <xref:System.String> provide <xref:System.Object.ToString%2A> implementations that return the string form of the value that the object represents. The following example defines a class, `Object2`, that overrides the <xref:System.Object.ToString%2A> method to return the type name along with its value.
 
-:::code language="csharp" source="./snippets/System/Object/ToString/csharp/tostring3.cs" interactive="try-dotnet" id="Snippet3":::
+:::code language="csharp" source="./snippets/System/Object/ToString/csharp/tostring3.cs" id="Snippet3":::
 :::code language="fsharp" source="./snippets/System/Object/ToString/fsharp/tostring3.fs" id="Snippet3":::
 :::code language="vb" source="./snippets/System/Object/ToString/vb/tostring3.vb" id="Snippet3":::
 
@@ -58,7 +58,7 @@ In addition to overriding the parameterless <xref:System.Object.ToString?display
 
 The following example overloads the `ToString` method to return a result string that includes the value of various fields of an `Automobile` class. It defines four format strings: G, which returns the model name and year; D, which returns the model name, year, and number of doors; C, which returns the model name, year, and number of cylinders; and A, which returns a string with all four field values.
 
-:::code language="csharp" source="./snippets/System/Object/ToString/csharp/tostringoverload1.cs" interactive="try-dotnet" id="Snippet4":::
+:::code language="csharp" source="./snippets/System/Object/ToString/csharp/tostringoverload1.cs" id="Snippet4":::
 :::code language="fsharp" source="./snippets/System/Object/ToString/fsharp/tostringoverload1.fs" id="Snippet4":::
 :::code language="vb" source="./snippets/System/Object/ToString/vb/tostringoverload1.vb" id="Snippet4":::
 
@@ -74,7 +74,7 @@ For more information on format strings and culture-sensitive formatting, see [Fo
 
 Because a type inherits the default <xref:System.Object.ToString%2A?displayProperty=nameWithType> method, you may find its behavior undesirable and want to change it. This is particularly true of arrays and collection classes. While you may expect the `ToString` method of an array or collection class to display the values of its members, it instead displays the type fully qualified type name, as the following example shows.
 
-:::code language="csharp" source="./snippets/System/Object/ToString/csharp/array1.cs" interactive="try-dotnet-method" id="Snippet6":::
+:::code language="csharp" source="./snippets/System/Object/ToString/csharp/array1.cs" id="Snippet6":::
 :::code language="fsharp" source="./snippets/System/Object/ToString/fsharp/array1.fs" id="Snippet6":::
 :::code language="vb" source="./snippets/System/Object/ToString/vb/array1.vb" id="Snippet6":::
 
@@ -89,7 +89,7 @@ You have several options to produce the result string that you'd like.
 
   The following example defines a wrapper class for the <xref:System.Collections.Generic.List%601> class. It overrides the <xref:System.Object.ToString%2A?displayProperty=nameWithType> method to display the value of each method of the collection rather than the fully qualified type name.
 
-  :::code language="csharp" source="./snippets/System/Object/ToString/csharp/customize1.cs" interactive="try-dotnet" id="Snippet7":::
+  :::code language="csharp" source="./snippets/System/Object/ToString/csharp/customize1.cs" id="Snippet7":::
   :::code language="fsharp" source="./snippets/System/Object/ToString/fsharp/customize1.fs" id="Snippet7":::
   :::code language="vb" source="./snippets/System/Object/ToString/vb/customize1.vb" id="Snippet7":::
 
@@ -97,7 +97,7 @@ You have several options to produce the result string that you'd like.
 
   The following example defines two methods that extend the <xref:System.Collections.Generic.List%601> class: a parameterless `ToString2` method, and a `ToString` method with a <xref:System.String> parameter that represents a format string.
 
-  :::code language="csharp" source="./snippets/System/Object/ToString/csharp/customize2.cs" interactive="try-dotnet" id="Snippet8":::
+  :::code language="csharp" source="./snippets/System/Object/ToString/csharp/customize2.cs" id="Snippet8":::
   :::code language="fsharp" source="./snippets/System/Object/ToString/fsharp/customize2.fs" id="Snippet8":::
   :::code language="vb" source="./snippets/System/Object/ToString/vb/customize2.vb" id="Snippet8":::
 

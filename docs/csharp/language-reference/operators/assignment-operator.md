@@ -37,7 +37,7 @@ Beginning with C# 14, the left hand side of a value assignment can include a [nu
 
 *Ref assignment* `= ref` makes its left-hand operand an alias to the right-hand operand, as the following example demonstrates:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/AssignmentOperator.cs" id="SnippetRefAssignment":::
+:::code language="csharp" source="snippets/shared/AssignmentOperator.cs" id="SnippetRefAssignment":::
 
 In the preceding example, the [local reference variable](../statements/declarations.md#reference-variables) `arrayElement` is initialized as an alias to the first array element. Then, it's `ref` reassigned to refer to the last array element. As it's an alias, when you update its value with an ordinary assignment operator `=`, the corresponding array element is also updated.
 

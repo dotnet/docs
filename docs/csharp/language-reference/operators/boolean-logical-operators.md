@@ -50,7 +50,7 @@ For operands of the [integral numeric types](../builtin-types/integral-numeric-t
 
 The unary prefix `!` operator computes logical negation of its operand. That is, it produces `true`, if the operand evaluates to `false`, and `false`, if the operand evaluates to `true`:
 
-:::code interactive="try-dotnet-method" language="csharp" source="snippets/shared/BooleanLogicalOperators.cs" id="Negation":::
+:::code language="csharp" source="snippets/shared/BooleanLogicalOperators.cs" id="Negation":::
 
 The unary postfix `!` operator is the [null-forgiving operator](null-forgiving.md).
 
@@ -62,7 +62,7 @@ The `&` operator always evaluates both operands. When the left-hand operand eval
 
 In the following example, the right-hand operand of the `&` operator is a method call, which is performed regardless of the value of the left-hand operand:
 
-:::code interactive="try-dotnet-method" language="csharp" source="snippets/shared/BooleanLogicalOperators.cs" id="And":::
+:::code language="csharp" source="snippets/shared/BooleanLogicalOperators.cs" id="And":::
 
 The [conditional logical AND operator](#conditional-logical-and-operator-) `&&` also computes the logical AND of its operands, but doesn't evaluate the right-hand operand if the left-hand operand evaluates to `false`.
 
@@ -72,7 +72,7 @@ For operands of the [integral numeric types](../builtin-types/integral-numeric-t
 
 The `^` operator computes the logical exclusive OR, also known as the logical XOR, of its operands. The result of `x ^ y` is `true` if `x` evaluates to `true` and `y` evaluates to `false`, or `x` evaluates to `false` and `y` evaluates to `true`. Otherwise, the result is `false`. That is, for the `bool` operands, the `^` operator computes the same result as the [inequality operator](equality-operators.md#inequality-operator-) `!=`.
 
-:::code interactive="try-dotnet-method" language="csharp" source="snippets/shared/BooleanLogicalOperators.cs" id="Xor":::
+:::code language="csharp" source="snippets/shared/BooleanLogicalOperators.cs" id="Xor":::
 
 For operands of the [integral numeric types](../builtin-types/integral-numeric-types.md), the `^` operator computes the [bitwise logical exclusive OR](bitwise-and-shift-operators.md#logical-exclusive-or-operator-) of its operands.
 
@@ -84,7 +84,7 @@ The `|` operator always evaluates both operands. When the left-hand operand eval
 
 In the following example, the right-hand operand of the `|` operator is a method call, which is performed regardless of the value of the left-hand operand:
 
-:::code interactive="try-dotnet-method" language="csharp" source="snippets/shared/BooleanLogicalOperators.cs" id="Or":::
+:::code language="csharp" source="snippets/shared/BooleanLogicalOperators.cs" id="Or":::
 
 The [conditional logical OR operator](#conditional-logical-or-operator-) `||` also computes the logical OR of its operands, but doesn't evaluate the right-hand operand if the left-hand operand evaluates to `true`.
 
@@ -96,7 +96,7 @@ The conditional logical AND operator `&&`, also known as the "short-circuiting" 
 
 In the following example, the right-hand operand of the `&&` operator is a method call, which isn't performed if the left-hand operand evaluates to `false`:
 
-:::code interactive="try-dotnet-method" language="csharp" source="snippets/shared/BooleanLogicalOperators.cs" id="ConditionalAnd":::
+:::code language="csharp" source="snippets/shared/BooleanLogicalOperators.cs" id="ConditionalAnd":::
 
 The [logical AND operator](#logical-and-operator-) `&` also computes the logical AND of its operands, but always evaluates both operands.
 
@@ -106,7 +106,7 @@ The conditional logical OR operator `||`, also known as the "short-circuiting" l
 
 In the following example, the right-hand operand of the `||` operator is a method call, which isn't performed if the left-hand operand evaluates to `true`:
 
-:::code interactive="try-dotnet-method" language="csharp" source="snippets/shared/BooleanLogicalOperators.cs" id="ConditionalOr":::
+:::code language="csharp" source="snippets/shared/BooleanLogicalOperators.cs" id="ConditionalOr":::
 
 The [logical OR operator](#logical-or-operator-) `|` also computes the logical OR of its operands, but always evaluates both operands.
 
@@ -136,7 +136,7 @@ The behavior of those operators differs from the typical operator behavior with 
 
 You can also use the `!` and `^` operators with `bool?` operands, as the following example shows:
 
-:::code interactive="try-dotnet-method" language="csharp" source="snippets/shared/BooleanLogicalOperators.cs" id="WithNullableBoolean":::
+:::code language="csharp" source="snippets/shared/BooleanLogicalOperators.cs" id="WithNullableBoolean":::
 
 The conditional logical operators `&&` and `||` don't support `bool?` operands.
 
@@ -158,7 +158,7 @@ Except that `x` is only evaluated once.
 
 The `&`, `|`, and `^` operators support compound assignment, as the following example shows:
 
-:::code interactive="try-dotnet-method" language="csharp" source="snippets/shared/BooleanLogicalOperators.cs" id="CompoundAssignment":::
+:::code language="csharp" source="snippets/shared/BooleanLogicalOperators.cs" id="CompoundAssignment":::
 
 > [!NOTE]
 > The conditional logical operators `&&` and `||` don't support compound assignment.
@@ -176,7 +176,7 @@ The following list orders logical operators starting from the highest precedence
 
 Use parentheses, `()`, to change the order of evaluation imposed by operator precedence:
 
-:::code interactive="try-dotnet-method" language="csharp" source="snippets/shared/BooleanLogicalOperators.cs" id="Precedence":::
+:::code language="csharp" source="snippets/shared/BooleanLogicalOperators.cs" id="Precedence":::
 
 For the complete list of C# operators ordered by precedence level, see the [Operator precedence](index.md#operator-precedence) section of the [C# operators](index.md) article.
 

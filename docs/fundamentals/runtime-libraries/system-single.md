@@ -27,7 +27,7 @@ The <xref:System.Single> data type stores single-precision floating-point values
 
 Just as decimal fractions are unable to precisely represent some fractional values (such as 1/3 or <xref:System.Math.PI?displayProperty=nameWithType>), binary fractions are unable to represent some fractional values. For example, 2/10, which is represented precisely by .2 as a decimal fraction, is represented by .0011111001001100 as a binary fraction, with the pattern "1100" repeating to infinity. In this case, the floating-point value provides an imprecise representation of the number that it represents. Performing additional mathematical operations on the original floating-point value often increases its lack of precision. For example, if you compare the results of multiplying .3 by 10 and adding .3 to .3 nine times, you will see that addition produces the less precise result, because it involves eight more operations than multiplication. Note that this disparity is apparent only if you display the two <xref:System.Single> values by using the "R" [standard numeric format string](../../standard/base-types/standard-numeric-format-strings.md), which, if necessary, displays all 9 digits of precision supported by the <xref:System.Single> type.
 
-:::code language="csharp" source="./snippets/System/Single/Overview/csharp/representation1.cs" interactive="try-dotnet" id="Snippet3":::
+:::code language="csharp" source="./snippets/System/Single/Overview/csharp/representation1.cs" id="Snippet3":::
 :::code language="fsharp" source="./snippets/System/Single/Overview/fsharp/representation1.fs" id="Snippet3":::
 :::code language="vb" source="./snippets/System/Single/Overview/vb/representation1.vb" id="Snippet3":::
 
@@ -35,7 +35,7 @@ Because some numbers cannot be represented exactly as fractional binary values, 
 
 All floating-point numbers have a limited number of significant digits, which also determines how accurately a floating-point value approximates a real number. A <xref:System.Single> value has up to 7 decimal digits of precision, although a maximum of 9 digits is maintained internally. This means that some floating-point operations may lack the precision to change a floating-point value. The following example defines a large single-precision floating-point value, and then adds the product of <xref:System.Single.Epsilon?displayProperty=nameWithType> and one quadrillion to it. However, the product is too small to modify the original floating-point value. Its least significant digit is thousandths, whereas the most significant digit in the product is 10<sup>-30</sup>.
 
-:::code language="csharp" source="./snippets/System/Single/Overview/csharp/representation2.cs" interactive="try-dotnet" id="Snippet4":::
+:::code language="csharp" source="./snippets/System/Single/Overview/csharp/representation2.cs" id="Snippet4":::
 :::code language="fsharp" source="./snippets/System/Single/Overview/fsharp/representation2.fs" id="Snippet4":::
 :::code language="vb" source="./snippets/System/Single/Overview/vb/representation2.vb" id="Snippet4":::
 
@@ -43,7 +43,7 @@ The limited precision of a floating-point number has several consequences:
 
 - Two floating-point numbers that appear equal for a particular precision might not compare equal because their least significant digits are different. In the following example, a series of numbers are added together, and their total is compared with their expected total. Although the two values appear to be the same, a call to the `Equals` method indicates that they are not.
 
-  :::code language="csharp" source="./snippets/System/Single/Overview/csharp/precisionlist3.cs" interactive="try-dotnet" id="Snippet6":::
+  :::code language="csharp" source="./snippets/System/Single/Overview/csharp/precisionlist3.cs" id="Snippet6":::
   :::code language="fsharp" source="./snippets/System/Single/Overview/fsharp/precisionlist3.fs" id="Snippet6":::
   :::code language="vb" source="./snippets/System/Single/Overview/vb/precisionlist3.vb" id="Snippet6":::
 
@@ -65,7 +65,7 @@ The limited precision of a floating-point number has several consequences:
 
 - <xref:System.Single> values have less precision than <xref:System.Double> values. A <xref:System.Single> value that is converted to a seemingly equivalent <xref:System.Double> often does not equal the <xref:System.Double> value because of differences in precision. In the following example, the result of identical division operations is assigned to a <xref:System.Double> value and a <xref:System.Single> value. After the <xref:System.Single> value is cast to a <xref:System.Double>, a comparison of the two values shows that they are unequal.
 
-  :::code language="csharp" source="./snippets/System/Double/Overview/csharp/precisionlist1.cs" interactive="try-dotnet" id="Snippet5":::
+  :::code language="csharp" source="./snippets/System/Double/Overview/csharp/precisionlist1.cs" id="Snippet5":::
   :::code language="fsharp" source="./snippets/System/Double/Overview/fsharp/precisionlist1.fs" id="Snippet5":::
   :::code language="vb" source="./snippets/System/Double/Overview/vb/precisionlist1.vb" id="Snippet5":::
 
@@ -75,13 +75,13 @@ The limited precision of a floating-point number has several consequences:
 
 To be considered equal, two <xref:System.Single> values must represent identical values. However, because of differences in precision between values, or because of a loss of precision by one or both values, floating-point values that are expected to be identical often turn out to be unequal due to differences in their least significant digits. As a result, calls to the <xref:System.Single.Equals%2A> method to determine whether two values are equal, or calls to the <xref:System.Single.CompareTo%2A> method to determine the relationship between two <xref:System.Single> values, often yield unexpected results. This is evident in the following example, where two apparently equal <xref:System.Single> values turn out to be unequal, because the first value has 7 digits of precision, whereas the second value has 9.
 
-:::code language="csharp" source="./snippets/System/Single/Overview/csharp/comparison1.cs" interactive="try-dotnet" id="Snippet9":::
+:::code language="csharp" source="./snippets/System/Single/Overview/csharp/comparison1.cs" id="Snippet9":::
 :::code language="fsharp" source="./snippets/System/Single/Overview/fsharp/comparison1.fs" id="Snippet9":::
 :::code language="vb" source="./snippets/System/Single/Overview/vb/comparison1.vb" id="Snippet9":::
 
 Calculated values that follow different code paths and that are manipulated in different ways often prove to be unequal. In the following example, one <xref:System.Single> value is squared, and then the square root is calculated to restore the original value. A second <xref:System.Single> is multiplied by 3.51 and squared before the square root of the result is divided by 3.51 to restore the original value. Although the two values appear to be identical, a call to the <xref:System.Single.Equals%28System.Single%29> method indicates that they are not equal. Using the "G9" standard format string to return a result string that displays all the significant digits of each <xref:System.Single> value shows that the second value is .0000000000001 less than the first.
 
-:::code language="csharp" source="./snippets/System/Single/Overview/csharp/comparison2.cs" interactive="try-dotnet" id="Snippet10":::
+:::code language="csharp" source="./snippets/System/Single/Overview/csharp/comparison2.cs" id="Snippet10":::
 :::code language="fsharp" source="./snippets/System/Single/Overview/fsharp/comparison2.fs" id="Snippet10":::
 :::code language="vb" source="./snippets/System/Single/Overview/vb/comparison2.vb" id="Snippet10":::
 
@@ -89,7 +89,7 @@ In cases where a loss of precision is likely to affect the result of a compariso
 
 - Call the <xref:System.Math.Round%2A?displayProperty=nameWithType> method to ensure that both values have the same precision. The following example modifies a previous example to use this approach so that two fractional values are equivalent.
 
-  :::code language="csharp" source="./snippets/System/Single/Overview/csharp/comparison3.cs" interactive="try-dotnet" id="Snippet11":::
+  :::code language="csharp" source="./snippets/System/Single/Overview/csharp/comparison3.cs" id="Snippet11":::
   :::code language="fsharp" source="./snippets/System/Single/Overview/fsharp/comparison3.fs" id="Snippet11":::
   :::code language="vb" source="./snippets/System/Single/Overview/vb/comparison3.vb" id="Snippet11":::
 
@@ -102,7 +102,7 @@ In cases where a loss of precision is likely to affect the result of a compariso
 
   The following example uses the latter approach to define an `IsApproximatelyEqual` method that tests the relative difference between two values. It also contrasts the result of calls to the `IsApproximatelyEqual` method and the <xref:System.Single.Equals%28System.Single%29> method.
 
-  :::code language="csharp" source="./snippets/System/Single/Overview/csharp/comparison4.cs" interactive="try-dotnet" id="Snippet12":::
+  :::code language="csharp" source="./snippets/System/Single/Overview/csharp/comparison4.cs" id="Snippet12":::
   :::code language="fsharp" source="./snippets/System/Single/Overview/fsharp/comparison4.fs" id="Snippet12":::
   :::code language="vb" source="./snippets/System/Single/Overview/vb/comparison4.vb" id="Snippet12":::
 
@@ -112,13 +112,13 @@ Operations with floating-point values do not throw exceptions, unlike operations
 
 - If the result of a floating-point operation is too small for the destination format, the result is zero. This can occur when two very small floating-point numbers are multiplied, as the following example shows.
 
-  :::code language="csharp" source="./snippets/System/Single/Overview/csharp/exceptional1.cs" interactive="try-dotnet" id="Snippet1":::
+  :::code language="csharp" source="./snippets/System/Single/Overview/csharp/exceptional1.cs" id="Snippet1":::
   :::code language="fsharp" source="./snippets/System/Single/Overview/fsharp/exceptional1.fs" id="Snippet1":::
   :::code language="vb" source="./snippets/System/Single/Overview/vb/exceptional1.vb" id="Snippet1":::
 
 - If the magnitude of the result of a floating-point operation exceeds the range of the destination format, the result of the operation is <xref:System.Single.PositiveInfinity> or <xref:System.Single.NegativeInfinity>, as appropriate for the sign of the result. The result of an operation that overflows <xref:System.Single.MaxValue?displayProperty=nameWithType> is <xref:System.Single.PositiveInfinity>, and the result of an operation that overflows <xref:System.Single.MinValue?displayProperty=nameWithType> is <xref:System.Single.NegativeInfinity>, as the following example shows.
 
-  :::code language="csharp" source="./snippets/System/Single/Overview/csharp/exceptional2.cs" interactive="try-dotnet" id="Snippet2":::
+  :::code language="csharp" source="./snippets/System/Single/Overview/csharp/exceptional2.cs" id="Snippet2":::
   :::code language="fsharp" source="./snippets/System/Single/Overview/fsharp/exceptional2.fs" id="Snippet2":::
   :::code language="vb" source="./snippets/System/Single/Overview/vb/exceptional2.vb" id="Snippet2":::
 
@@ -218,6 +218,6 @@ The <xref:System.Single> structure and related types provide methods to perform 
 
   The problem of precision most frequently affects <xref:System.Single> values that are converted to <xref:System.Double> values. In the following example, two values produced by identical division operations are unequal, because one of the values is a single-precision floating point value that is converted to a <xref:System.Double>.
 
-  :::code language="csharp" source="./snippets/System/Single/Overview/csharp/precisionlist1.cs" interactive="try-dotnet" id="Snippet5":::
+  :::code language="csharp" source="./snippets/System/Single/Overview/csharp/precisionlist1.cs" id="Snippet5":::
   :::code language="fsharp" source="./snippets/System/Single/Overview/fsharp/precisionlist1.fs" id="Snippet5":::
   :::code language="vb" source="./snippets/System/Single/Overview/vb/precisionlist1.vb" id="Snippet5":::

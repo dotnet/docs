@@ -10,18 +10,18 @@ helpviewer_keywords:
 
 The `delegate` operator creates an anonymous method that can be converted to a delegate type. An anonymous method can be converted to types such as <xref:System.Action?displayProperty=nameWithType> and <xref:System.Func%601?displayProperty=nameWithType> types used as arguments to many methods.
 
-[!code-csharp-interactive[anonymous method](snippets/shared/DelegateOperator.cs#AnonymousMethod)]
+[!code-csharp[anonymous method](snippets/shared/DelegateOperator.cs#AnonymousMethod)]
 
 > [!NOTE]
 > Lambda expressions provide a more concise and expressive way to create an anonymous function. Use the [=> operator](lambda-operator.md) to construct a lambda expression:
 >
-> [!code-csharp-interactive[lambda expression](snippets/shared/DelegateOperator.cs#Lambda)]
+> [!code-csharp[lambda expression](snippets/shared/DelegateOperator.cs#Lambda)]
 >
 > For more information about features of lambda expressions, for example, capturing outer variables, see [Lambda expressions](lambda-expressions.md).
 
 When you use the `delegate` operator, you might omit the parameter list. If you do that, the created anonymous method can be converted to a delegate type with any list of  parameters, as the following example shows:
 
-[!code-csharp-interactive[no parameter list](snippets/shared/DelegateOperator.cs#WithoutParameterList)]
+[!code-csharp[no parameter list](snippets/shared/DelegateOperator.cs#WithoutParameterList)]
 
 That's the only functionality of anonymous methods not supported by lambda expressions. In all other cases, a lambda expression is a preferred way to write inline code. You can use [discards](../../fundamentals/functional/discards.md) to specify two or more input parameters of an anonymous method that aren't used by the method:
 

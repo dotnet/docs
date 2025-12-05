@@ -37,7 +37,7 @@ A second class named `Example` contains the code that creates the delegates.
 - A delegate of type `D1`, representing an open instance method, is created for the instance method `M1`. An instance must be passed when the delegate is invoked.
 - A delegate of type `D2`, representing an open static method, is created for the static method `M2`.
 
-:::code language="csharp" source="./snippets/System/Delegate/CreateDelegate/csharp/openClosedOver.cs" interactive="try-dotnet" id="Snippet1":::
+:::code language="csharp" source="./snippets/System/Delegate/CreateDelegate/csharp/openClosedOver.cs" id="Snippet1":::
 :::code language="fsharp" source="./snippets/System/Delegate/CreateDelegate/fsharp/openClosedOver.fs" id="Snippet1":::
 :::code language="vb" source="./snippets/System/Delegate/CreateDelegate/vb/openClosedOver.vb" id="Snippet1":::
 
@@ -94,7 +94,7 @@ A third class named `Example` contains the code that creates the delegates.
 - Delegates are created for static method `M3` of type `C` and type `F`; these are open static delegates.
 - Finally, delegates are created for static method `M4` of type `C` and type `F`; each method has the declaring type as its first argument, and an instance of the type is supplied, so the delegates are closed over their first arguments. Method `M4` of type `C` displays the `ID` properties of the bound instance and of the argument.
 
-:::code language="csharp" source="./snippets/System/Delegate/CreateDelegate/csharp/source.cs" interactive="try-dotnet" id="Snippet1":::
+:::code language="csharp" source="./snippets/System/Delegate/CreateDelegate/csharp/source.cs" id="Snippet1":::
 :::code language="fsharp" source="./snippets/System/Delegate/CreateDelegate/fsharp/source.fs" id="Snippet1":::
 :::code language="vb" source="./snippets/System/Delegate/CreateDelegate/vb/source1.vb" id="Snippet1":::
 

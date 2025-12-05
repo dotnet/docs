@@ -14,7 +14,7 @@ helpviewer_keywords:
 
 A `nameof` expression produces the name of a variable, type, or member as the string constant. A `nameof` expression is evaluated at compile time and has no effect at run time. When the operand is a type or a namespace, the produced name isn't [fully qualified](~/_csharpstandard/standard/basic-concepts.md#783-fully-qualified-names). The following example shows the use of a `nameof` expression:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/NameOfOperator.cs" id="Examples":::
+:::code language="csharp" source="snippets/shared/NameOfOperator.cs" id="Examples":::
 
 The preceding example using `List<>` is supported in C# 14 and later. You can use a `nameof` expression to make the argument-checking code more maintainable:
 
@@ -28,7 +28,7 @@ A `nameof` expression with a parameter is useful when you use the [nullable anal
 
 When the operand is a [verbatim identifier](../tokens/verbatim.md), the `@` character isn't part of the name, as the following example shows:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/NameOfOperator.cs" id="Verbatim":::
+:::code language="csharp" source="snippets/shared/NameOfOperator.cs" id="Verbatim":::
 
 ## C# language specification
 

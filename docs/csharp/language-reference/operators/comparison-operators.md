@@ -37,25 +37,25 @@ The [`==` and `!=` operators](equality-operators.md) check if their operands are
 
 The `<` operator returns `true` if its left-hand operand is less than its right-hand operand, `false` otherwise:
 
-[!code-csharp-interactive[less than example](snippets/shared/ComparisonOperators.cs#Less)]
+[!code-csharp[less than example](snippets/shared/ComparisonOperators.cs#Less)]
 
 ## Greater than operator >
 
 The `>` operator returns `true` if its left-hand operand is greater than its right-hand operand, `false` otherwise:
 
-[!code-csharp-interactive[greater than example](snippets/shared/ComparisonOperators.cs#Greater)]
+[!code-csharp[greater than example](snippets/shared/ComparisonOperators.cs#Greater)]
 
 ## Less than or equal operator \<=
 
 The `<=` operator returns `true` if its left-hand operand is less than or equal to its right-hand operand, `false` otherwise:
 
-[!code-csharp-interactive[less than or equal example](snippets/shared/ComparisonOperators.cs#LessOrEqual)]
+[!code-csharp[less than or equal example](snippets/shared/ComparisonOperators.cs#LessOrEqual)]
 
 ## Greater than or equal operator >=
 
 The `>=` operator returns `true` if its left-hand operand is greater than or equal to its right-hand operand, `false` otherwise:
 
-[!code-csharp-interactive[greater than or equal example](snippets/shared/ComparisonOperators.cs#GreaterOrEqual)]
+[!code-csharp[greater than or equal example](snippets/shared/ComparisonOperators.cs#GreaterOrEqual)]
 
 ## Operator overloadability
 

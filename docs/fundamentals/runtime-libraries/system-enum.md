@@ -88,7 +88,7 @@ The <xref:System.Enum> class also includes a <xref:System.Enum.ToObject%2A> meth
 
 When converting an integer to an enumeration value, it is possible to assign a value that is not actually a member of the enumeration. To prevent this, you can pass the integer to the <xref:System.Enum.IsDefined%2A> method before performing the conversion. The following example uses this method to determine whether the elements in an array of integer values can be converted to `ArrivalStatus` values.
 
-:::code language="csharp" source="./snippets/System/Enum/Overview/csharp/classconversion1.cs" interactive="try-dotnet" id="Snippet7":::
+:::code language="csharp" source="./snippets/System/Enum/Overview/csharp/classconversion1.cs" id="Snippet7":::
 :::code language="fsharp" source="./snippets/System/Enum/Overview/fsharp/classconversion1.fs" id="Snippet7":::
 :::code language="vb" source="./snippets/System/Enum/Overview/vb/classconversion1.vb" id="Snippet7":::
 
@@ -182,7 +182,7 @@ Because enumeration types are defined by language structures, such as `enum` (C#
 
 In the following example, the `Grades` enumeration represents the possible letter grades that a student may receive in a class. An extension method named `Passing` is added to the `Grades` type so that each instance of that type now "knows" whether it represents a passing grade or not.      The `Extensions` class also contains a static read-write variable that defines the minimum passing grade. The return value of the `Passing` extension method reflects the current value of that variable.
 
-:::code language="csharp" source="./snippets/System/Enum/Overview/csharp/Extensions.cs" interactive="try-dotnet" id="Snippet18":::
+:::code language="csharp" source="./snippets/System/Enum/Overview/csharp/Extensions.cs" id="Snippet18":::
 :::code language="fsharp" source="./snippets/System/Enum/Overview/fsharp/Extensions.fs" id="Snippet18":::
 :::code language="vb" source="./snippets/System/Enum/Overview/vb/Extensions.vb" id="Snippet18":::
 
@@ -190,6 +190,6 @@ In the following example, the `Grades` enumeration represents the possible lette
 
 The following example demonstrates using an enumeration to represent named values and another enumeration to represent named bit fields.
 
-:::code language="csharp" source="./snippets/System/Enum/Overview/csharp/EnumMain.cs" interactive="try-dotnet" id="Snippet1":::
+:::code language="csharp" source="./snippets/System/Enum/Overview/csharp/EnumMain.cs" id="Snippet1":::
 :::code language="fsharp" source="./snippets/System/Enum/Overview/fsharp/EnumMain.fs" id="Snippet1":::
 :::code language="vb" source="./snippets/System/Enum/Overview/vb/EnumMain.vb" id="Snippet1":::

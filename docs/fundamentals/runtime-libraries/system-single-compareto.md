@@ -19,7 +19,7 @@ Although an object whose value is <xref:System.Single.NaN> is not considered equ
 
 The `value` parameter must be `null` or an instance of <xref:System.Single>; otherwise, an exception is thrown. Any instance of <xref:System.Single>, regardless of its value, is considered greater than `null`.
 
-:::code language="csharp" source="./snippets/System/Single/CompareTo/csharp/compareto3.cs" interactive="try-dotnet" id="Snippet2":::
+:::code language="csharp" source="./snippets/System/Single/CompareTo/csharp/compareto3.cs" id="Snippet2":::
 :::code language="fsharp" source="./snippets/System/Single/CompareTo/fsharp/compareto3.fs" id="Snippet2":::
 :::code language="vb" source="./snippets/System/Single/CompareTo/vb/compareto3.vb" id="Snippet2":::
 
@@ -29,7 +29,7 @@ This method is implemented to support the <xref:System.IComparable> interface.
 
 This method implements the <xref:System.IComparable%601?displayProperty=nameWithType> interface and performs slightly better than the <xref:System.Single.CompareTo(System.Object)?displayProperty=nameWithType> overload because it doesn't have to convert the `value` parameter to an object.
 
-:::code language="csharp" source="./snippets/System/Single/CompareTo/csharp/compareto2.cs" interactive="try-dotnet" id="Snippet1":::
+:::code language="csharp" source="./snippets/System/Single/CompareTo/csharp/compareto2.cs" id="Snippet1":::
 :::code language="fsharp" source="./snippets/System/Single/CompareTo/fsharp/compareto2.fs" id="Snippet1":::
 :::code language="vb" source="./snippets/System/Single/CompareTo/vb/compareto2.vb" id="Snippet1":::
 

@@ -38,7 +38,7 @@ For a list of initial property values for an instance of <xref:System.InvalidCas
 
 You directly or indirectly call a primitive type's <xref:System.IConvertible> implementation that does not support a particular conversion. For example, trying to convert a <xref:System.Boolean> value to a <xref:System.Char> or a <xref:System.DateTime> value to an <xref:System.Int32> throws an <xref:System.InvalidCastException> exception. The following example calls both the <xref:System.Boolean.System%23IConvertible%23ToChar%2A?displayProperty=nameWithType> and <xref:System.Convert.ToChar%28System.Boolean%29?displayProperty=nameWithType> methods to convert a <xref:System.Boolean> value to a <xref:System.Char>. In both cases, the method call throws an <xref:System.InvalidCastException> exception.
 
-:::code language="csharp" source="./snippets/System/InvalidCastException/Overview/csharp/iconvertible1.cs" interactive="try-dotnet" id="Snippet2":::
+:::code language="csharp" source="./snippets/System/InvalidCastException/Overview/csharp/iconvertible1.cs" id="Snippet2":::
 :::code language="fsharp" source="./snippets/System/InvalidCastException/Overview/fsharp/iconvertible1.fs" id="Snippet2":::
 :::code language="vb" source="./snippets/System/InvalidCastException/Overview/vb/iconvertible1.vb" id="Snippet2":::
 
@@ -62,7 +62,7 @@ In most cases, because the conversion is not supported, there is no workaround.
 
 You're downcasting, that is, trying to convert an instance of a base type to one of its derived types. In the following example, trying to convert a `Person` object to a `PersonWithID` object fails.
 
-:::code language="csharp" source="./snippets/System/InvalidCastException/Overview/csharp/basetoderived1.cs" interactive="try-dotnet" id="Snippet1":::
+:::code language="csharp" source="./snippets/System/InvalidCastException/Overview/csharp/basetoderived1.cs" id="Snippet1":::
 :::code language="fsharp" source="./snippets/System/InvalidCastException/Overview/fsharp/basetoderived1.fs" id="Snippet1":::
 :::code language="vb" source="./snippets/System/InvalidCastException/Overview/vb/basetoderived1.vb" id="Snippet1":::
 
@@ -90,7 +90,7 @@ You're trying to convert a value or an object to its string representation by us
 
 To successfully convert an instance of any type to its string representation, call its `ToString` method, as the following example does. The `ToString` method is always present, since the <xref:System.Object.ToString%2A> method is defined by the <xref:System.Object> class and therefore is either inherited or overridden by all managed types.
 
-:::code language="csharp" source="./snippets/System/InvalidCastException/Overview/csharp/ToString2.cs" interactive="try-dotnet" id="Snippet5":::
+:::code language="csharp" source="./snippets/System/InvalidCastException/Overview/csharp/ToString2.cs" id="Snippet5":::
 :::code language="fsharp" source="./snippets/System/InvalidCastException/Overview/fsharp/ToString2.fs" id="Snippet5":::
 
 ## Visual Basic 6.0 migration

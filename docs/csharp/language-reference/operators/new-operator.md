@@ -16,11 +16,11 @@ The `new` operator creates a new instance of a type. You can also use the `new` 
 
 To create a new instance of a type, you typically invoke one of the [constructors](../../programming-guide/classes-and-structs/constructors.md) of that type using the `new` operator:
 
-[!code-csharp-interactive[invoke constructor](snippets/shared/NewOperator.cs#Constructor)]
+[!code-csharp[invoke constructor](snippets/shared/NewOperator.cs#Constructor)]
 
 You can use an [object or collection initializer](../../programming-guide/classes-and-structs/object-and-collection-initializers.md) with the `new` operator to instantiate and initialize an object in one statement, as the following example shows:
 
-[!code-csharp-interactive[constructor with initializer](snippets/shared/NewOperator.cs#ConstructorWithInitializer)]
+[!code-csharp[constructor with initializer](snippets/shared/NewOperator.cs#ConstructorWithInitializer)]
 
 ### Target-typed `new`
 
@@ -36,11 +36,11 @@ If a target type of a `new` expression is unknown (for example, when you use the
 
 You also use the `new` operator to create an array instance, as the following example shows:
 
-[!code-csharp-interactive[create array](snippets/shared/NewOperator.cs#Array)]
+[!code-csharp[create array](snippets/shared/NewOperator.cs#Array)]
 
 Use array initialization syntax to create an array instance and populate it with elements in one statement. The following example shows various ways how you can do that:
 
-[!code-csharp-interactive[initialize array](snippets/shared/NewOperator.cs#ArrayInitialization)]
+[!code-csharp[initialize array](snippets/shared/NewOperator.cs#ArrayInitialization)]
 
 For more information about arrays, see [Arrays](../builtin-types/arrays.md).
 
@@ -48,7 +48,7 @@ For more information about arrays, see [Arrays](../builtin-types/arrays.md).
 
 To create an instance of an [anonymous type](../../fundamentals/types/anonymous-types.md), use the `new` operator and object initializer syntax:
 
-[!code-csharp-interactive[anonymous type](snippets/shared/NewOperator.cs#AnonymousType)]
+[!code-csharp[anonymous type](snippets/shared/NewOperator.cs#AnonymousType)]
 
 ## Destruction of type instances
 

@@ -13,7 +13,7 @@ This tutorial shows you how to use [string interpolation](../language-reference/
 
 To identify a string literal as an interpolated string, prepend it with the `$` symbol. You can embed any valid C# expression that returns a value in an interpolated string. In the following example, as soon as an expression is evaluated, its result is converted into a string and included in a result string:
 
-:::code language="csharp" interactive="try-dotnet-method" source="./snippets/StringInterpolation/Program.cs" id="General":::
+:::code language="csharp" source="./snippets/StringInterpolation/Program.cs" id="General":::
 
 As the example shows, you include an expression in an interpolated string by enclosing it with braces:
 
@@ -41,7 +41,7 @@ To specify a format string supported by the type of the expression result, follo
 
 The following example shows how to specify standard and custom format strings for expressions that produce date and time or numeric results:
 
-:::code language="csharp" interactive="try-dotnet-method" source="./snippets/StringInterpolation/Program.cs" id="FormatString":::
+:::code language="csharp" source="./snippets/StringInterpolation/Program.cs" id="FormatString":::
 
 For more information, see the [Format string component](../../standard/base-types/composite-formatting.md#format-string-component) section of the [Composite formatting](../../standard/base-types/composite-formatting.md) article.
 
@@ -55,7 +55,7 @@ To specify the minimum field width and the alignment of the formatted expression
 
 The following code sample uses the minimum field width to create a tabular output:
 
-:::code language="csharp" interactive="try-dotnet-method" source="./snippets/StringInterpolation/Program.cs" id="AlignmentString":::
+:::code language="csharp" source="./snippets/StringInterpolation/Program.cs" id="AlignmentString":::
 
 If the *width* value is positive, the formatted expression result is right-aligned; if negative, it's left-aligned. Remove the `-` signs before the width specifier and run the sample again to see the results.
 
@@ -67,7 +67,7 @@ If you need to specify both width and a format string, start with the width comp
 
 The following example shows how to specify width and alignment, and uses pipe characters ("|") to delimit text fields:
 
-:::code language="csharp" interactive="try-dotnet-method" source="./snippets/StringInterpolation/Program.cs" id="AlignmentAndFormatString":::
+:::code language="csharp" source="./snippets/StringInterpolation/Program.cs" id="AlignmentAndFormatString":::
 
 As the example output shows, if the length of the formatted expression result exceeds specified field width, the *width* value is ignored.
 
@@ -83,7 +83,7 @@ To include a brace, "{" or "}", in a result string, use two braces, "{{" or "}}"
 
 The following example shows how to include braces in a result string and construct a verbatim interpolated string:
 
-:::code language="csharp" interactive="try-dotnet-method" source="./snippets/StringInterpolation/Program.cs" id="Escapes":::
+:::code language="csharp" source="./snippets/StringInterpolation/Program.cs" id="Escapes":::
 
 You can use [interpolated raw string literals](../language-reference/tokens/interpolated.md#interpolated-raw-string-literals).
 
@@ -91,7 +91,7 @@ You can use [interpolated raw string literals](../language-reference/tokens/inte
 
 As the colon (":") has special meaning in an item with an interpolation expression, in order to use a [conditional operator](../language-reference/operators/conditional-operator.md) in an expression, enclose it in parentheses, as the following example shows:
 
-:::code language="csharp" interactive="try-dotnet-method" source="./snippets/StringInterpolation/Program.cs" id="ConditionalOperator":::
+:::code language="csharp" source="./snippets/StringInterpolation/Program.cs" id="ConditionalOperator":::
 
 ## How to create a culture-specific result string with string interpolation
 

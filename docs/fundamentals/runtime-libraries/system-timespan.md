@@ -26,25 +26,25 @@ You can instantiate a <xref:System.TimeSpan> value in a number of ways:
 
 - By calling its implicit parameterless constructor. This creates an object whose value is <xref:System.TimeSpan.Zero?displayProperty=nameWithType>, as the following example shows.
 
-  :::code language="csharp" source="./snippets/System/TimeSpan/Overview/csharp/instantiate1.cs" interactive="try-dotnet-method" id="Snippet2":::
+  :::code language="csharp" source="./snippets/System/TimeSpan/Overview/csharp/instantiate1.cs" id="Snippet2":::
   :::code language="fsharp" source="./snippets/System/TimeSpan/Overview/fsharp/instantiate1.fs" id="Snippet2":::
   :::code language="vb" source="./snippets/System/TimeSpan/Overview/vb/instantiate1.vb" id="Snippet2":::
 
 - By calling one of its explicit constructors. The following example initializes a <xref:System.TimeSpan> value to a specified number of hours, minutes, and seconds.
 
-  :::code language="csharp" source="./snippets/System/TimeSpan/Overview/csharp/instantiate1.cs" interactive="try-dotnet-method" id="Snippet3":::
+  :::code language="csharp" source="./snippets/System/TimeSpan/Overview/csharp/instantiate1.cs" id="Snippet3":::
   :::code language="fsharp" source="./snippets/System/TimeSpan/Overview/fsharp/instantiate1.fs" id="Snippet3":::
   :::code language="vb" source="./snippets/System/TimeSpan/Overview/vb/instantiate1.vb" id="Snippet3":::
 
 - By calling a method or performing an operation that returns a <xref:System.TimeSpan> value. For example, you can instantiate a <xref:System.TimeSpan> value that represents the interval between two date and time values, as the following example shows.
 
-  :::code language="csharp" source="./snippets/System/TimeSpan/Overview/csharp/instantiate1.cs" interactive="try-dotnet-method" id="Snippet4":::
+  :::code language="csharp" source="./snippets/System/TimeSpan/Overview/csharp/instantiate1.cs" id="Snippet4":::
   :::code language="fsharp" source="./snippets/System/TimeSpan/Overview/fsharp/instantiate1.fs" id="Snippet4":::
   :::code language="vb" source="./snippets/System/TimeSpan/Overview/vb/instantiate1.vb" id="Snippet4":::
 
   You can also initialize a <xref:System.TimeSpan> object to a zero time value in this way, as the following example shows.
 
-  :::code language="csharp" source="./snippets/System/TimeSpan/Overview/csharp/zero1.cs" interactive="try-dotnet-method" id="Snippet6":::
+  :::code language="csharp" source="./snippets/System/TimeSpan/Overview/csharp/zero1.cs" id="Snippet6":::
   :::code language="fsharp" source="./snippets/System/TimeSpan/Overview/fsharp/zero1.fs" id="Snippet6":::
   :::code language="vb" source="./snippets/System/TimeSpan/Overview/vb/zero1.vb" id="Snippet6":::
 
@@ -52,7 +52,7 @@ You can instantiate a <xref:System.TimeSpan> value in a number of ways:
 
 - By parsing the string representation of a <xref:System.TimeSpan> value. You can use the <xref:System.TimeSpan.Parse%2A> and <xref:System.TimeSpan.TryParse%2A> methods to convert strings that contain time intervals to <xref:System.TimeSpan> values. The following example uses the <xref:System.TimeSpan.Parse%2A> method to convert an array of strings to <xref:System.TimeSpan> values.
 
-  :::code language="csharp" source="./snippets/System/TimeSpan/Overview/csharp/instantiate1.cs" interactive="try-dotnet-method" id="Snippet5":::
+  :::code language="csharp" source="./snippets/System/TimeSpan/Overview/csharp/instantiate1.cs" id="Snippet5":::
   :::code language="fsharp" source="./snippets/System/TimeSpan/Overview/fsharp/instantiate1.fs" id="Snippet5":::
   :::code language="vb" source="./snippets/System/TimeSpan/Overview/vb/instantiate1.vb" id="Snippet5":::
 
@@ -74,7 +74,7 @@ Beginning with .NET Framework 4, the <xref:System.TimeSpan> structure supports c
 
 In some cases, code that successfully formats <xref:System.TimeSpan> values in .NET Framework 3.5 and earlier versions fails in .NET Framework 4. This is most common in code that calls a [<TimeSpan_LegacyFormatMode> element](../../framework/configure-apps/file-schema/runtime/timespan-legacyformatmode-element.md) method to format a <xref:System.TimeSpan> value with a format string. The following example successfully formats a <xref:System.TimeSpan> value in .NET Framework 3.5 and earlier versions, but throws an exception in .NET Framework 4 and later versions. Note that it attempts to format a <xref:System.TimeSpan> value by using an unsupported format specifier, which is ignored in .NET Framework 3.5 and earlier versions.
 
-:::code language="csharp" source="./snippets/System/TimeSpan/Overview/csharp/legacycode1.cs" interactive="try-dotnet-method" id="Snippet1":::
+:::code language="csharp" source="./snippets/System/TimeSpan/Overview/csharp/legacycode1.cs" id="Snippet1":::
 :::code language="fsharp" source="./snippets/System/TimeSpan/Overview/fsharp/legacycode1.fs" id="Snippet1":::
 :::code language="vb" source="./snippets/System/TimeSpan/Overview/vb/legacycode1.vb" id="Snippet1":::
 

@@ -84,7 +84,7 @@ You can eliminate the exception in one of two ways, depending on your applicatio
 
 - If elements must be added to the collection while iterating it, you can iterate it by index using the `for` (`for..to` in F#) statement instead of `foreach`, `for...in`, or `For Each`. The following example uses the for statement to add the square of numbers in the collection to the collection.
 
-  :::code language="csharp" source="./snippets/System/InvalidOperationException/Overview/csharp/Other/Iterating2.cs" interactive="try-dotnet" id="Snippet2":::
+  :::code language="csharp" source="./snippets/System/InvalidOperationException/Overview/csharp/Other/Iterating2.cs" id="Snippet2":::
   :::code language="fsharp" source="./snippets/System/InvalidOperationException/Overview/fsharp/Iterating2.fs" id="Snippet2":::
   :::code language="vb" source="./snippets/System/InvalidOperationException/Overview/vb/Other/Iterating2.vb" id="Snippet2":::
 
@@ -92,7 +92,7 @@ You can eliminate the exception in one of two ways, depending on your applicatio
 
 - If it is not necessary to add elements to the collection while iterating it, you can store the elements to be added in a temporary collection that you add when iterating the collection has finished. The following example uses this approach to add the square of numbers in a collection to a temporary collection, and then to combine the collections into a single array object.
 
-  :::code language="csharp" source="./snippets/System/InvalidOperationException/Overview/csharp/Other/Iterating3.cs" interactive="try-dotnet" id="Snippet3":::
+  :::code language="csharp" source="./snippets/System/InvalidOperationException/Overview/csharp/Other/Iterating3.cs" id="Snippet3":::
   :::code language="fsharp" source="./snippets/System/InvalidOperationException/Overview/fsharp/Iterating3.fs" id="Snippet3":::
   :::code language="vb" source="./snippets/System/InvalidOperationException/Overview/vb/Other/Iterating3.vb" id="Snippet3":::
 
@@ -110,7 +110,7 @@ You can eliminate the exception in any of three ways:
 
   The following example uses this approach to provide an <xref:System.IComparable%601> implementation for the `Person` class. You can still call the collection or array's general sorting method and, as the output from the example shows, the collection sorts successfully.
 
-  :::code language="csharp" source="./snippets/System/InvalidOperationException/Overview/csharp/Other/List_Sort2.cs" interactive="try-dotnet" id="Snippet13":::
+  :::code language="csharp" source="./snippets/System/InvalidOperationException/Overview/csharp/Other/List_Sort2.cs" id="Snippet13":::
   :::code language="fsharp" source="./snippets/System/InvalidOperationException/Overview/fsharp/List_Sort2.fs" id="Snippet13":::
   :::code language="vb" source="./snippets/System/InvalidOperationException/Overview/vb/Other/List_Sort2.vb" id="Snippet13":::
 
@@ -118,7 +118,7 @@ You can eliminate the exception in any of three ways:
 
   The following example uses the approach by developing a custom `PersonComparer` class that is used to sort `Person` collections. It then passes an instance of this class to the <xref:System.Collections.Generic.List%601.Sort%28System.Collections.Generic.IComparer%7B%600%7D%29?displayProperty=nameWithType> method.
 
-  :::code language="csharp" source="./snippets/System/InvalidOperationException/Overview/csharp/Other/List_Sort3.cs" interactive="try-dotnet" id="Snippet14":::
+  :::code language="csharp" source="./snippets/System/InvalidOperationException/Overview/csharp/Other/List_Sort3.cs" id="Snippet14":::
   :::code language="fsharp" source="./snippets/System/InvalidOperationException/Overview/fsharp/List_Sort3.fs" id="Snippet14":::
   :::code language="vb" source="./snippets/System/InvalidOperationException/Overview/vb/Other/List_Sort3.vb" id="Snippet14":::
 
@@ -134,7 +134,7 @@ You can eliminate the exception in any of three ways:
 
   The following example uses the approach by defining a  `PersonComparison` method that matches the  <xref:System.Comparison%601> delegate signature. It then passes this delegate to the <xref:System.Collections.Generic.List%601.Sort%28System.Comparison%7B%600%7D%29?displayProperty=nameWithType> method.
 
-  :::code language="csharp" source="./snippets/System/InvalidOperationException/Overview/csharp/Other/List_Sort4.cs" interactive="try-dotnet" id="Snippet15":::
+  :::code language="csharp" source="./snippets/System/InvalidOperationException/Overview/csharp/Other/List_Sort4.cs" id="Snippet15":::
   :::code language="fsharp" source="./snippets/System/InvalidOperationException/Overview/fsharp/List_Sort4.fs" id="Snippet15":::
   :::code language="vb" source="./snippets/System/InvalidOperationException/Overview/vb/Other/List_Sort4.vb" id="Snippet15":::
 
@@ -155,7 +155,7 @@ To prevent the exception:
 
 The following example does both to avoid the  <xref:System.InvalidOperationException> exception.
 
-:::code language="csharp" source="./snippets/System/InvalidOperationException/Overview/csharp/Other/Nullable2.cs" interactive="try-dotnet" id="Snippet5":::
+:::code language="csharp" source="./snippets/System/InvalidOperationException/Overview/csharp/Other/Nullable2.cs" id="Snippet5":::
 :::code language="fsharp" source="./snippets/System/InvalidOperationException/Overview/fsharp/Nullable2.fs" id="Snippet5":::
 :::code language="vb" source="./snippets/System/InvalidOperationException/Overview/vb/Other/Nullable2.vb" id="Snippet5":::
 
@@ -195,7 +195,7 @@ The following example uses the <xref:System.Linq.Enumerable.Average%2A?displayPr
 
 The exception can be eliminated by calling the <xref:System.Linq.Enumerable.Any%2A> method to determine whether the sequence contains any elements before calling the method that processes the sequence, as the following example shows.
 
-:::code language="csharp" source="./snippets/System/InvalidOperationException/Overview/csharp/Other/Enumerable2.cs" interactive="try-dotnet" id="Snippet7":::
+:::code language="csharp" source="./snippets/System/InvalidOperationException/Overview/csharp/Other/Enumerable2.cs" id="Snippet7":::
 :::code language="fsharp" source="./snippets/System/InvalidOperationException/Overview/fsharp/Enumerable2.fs" id="Snippet7":::
 :::code language="vb" source="./snippets/System/InvalidOperationException/Overview/vb/Other/Enumerable2.vb" id="Snippet7":::
 
@@ -214,7 +214,7 @@ You can call the <xref:System.Linq.Enumerable.FirstOrDefault%2A?displayProperty=
 
 The following example calls the  <xref:System.Linq.Enumerable.FirstOrDefault%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2CSystem.Boolean%7D%29?displayProperty=nameWithType> method to prevent the <xref:System.InvalidOperationException> exception thrown in the previous example.
 
-:::code language="csharp" source="./snippets/System/InvalidOperationException/Overview/csharp/Other/Enumerable4.cs" interactive="try-dotnet" id="Snippet9":::
+:::code language="csharp" source="./snippets/System/InvalidOperationException/Overview/csharp/Other/Enumerable4.cs" id="Snippet9":::
 :::code language="fsharp" source="./snippets/System/InvalidOperationException/Overview/fsharp/Enumerable4.fs" id="Snippet9":::
 :::code language="vb" source="./snippets/System/InvalidOperationException/Overview/vb/Other/Enumerable4.vb" id="Snippet9":::
 

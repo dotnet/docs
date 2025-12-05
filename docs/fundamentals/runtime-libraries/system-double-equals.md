@@ -23,13 +23,13 @@ Consult your programming language's documentation to determine if its compiler p
 
 The <xref:System.Double.Equals%2A> method should be used with caution, because two apparently equivalent values can be unequal due to the differing precision of the two values. The following example reports that the <xref:System.Double> value .333333 and the <xref:System.Double> value returned by dividing 1 by 3 are unequal.
 
-:::code language="csharp" source="./snippets/System/Double/Epsilon/csharp/Equals_25051.cs" interactive="try-dotnet-method" id="Snippet1":::
+:::code language="csharp" source="./snippets/System/Double/Epsilon/csharp/Equals_25051.cs" id="Snippet1":::
 :::code language="fsharp" source="./snippets/System/Double/Epsilon/fsharp/Equals_25051.fs" id="Snippet1":::
 :::code language="vb" source="./snippets/System/Double/Epsilon/vb/Equals_25051.vb" id="Snippet1":::
 
 Rather than comparing for equality, one technique involves defining an acceptable relative margin of difference between two values (such as .001% of one of the values). If the absolute value of the difference between the two values is less than or equal to that margin, the difference is likely to be due to differences in precision and, therefore, the values are likely to be equal. The following example uses this technique to compare .33333 and 1/3, the two <xref:System.Double> values that the previous code example found to be unequal. In this case, the values are equal.
 
-:::code language="csharp" source="./snippets/System/Double/Epsilon/csharp/Equals_25051.cs" interactive="try-dotnet-method" id="Snippet2":::
+:::code language="csharp" source="./snippets/System/Double/Epsilon/csharp/Equals_25051.cs" id="Snippet2":::
 :::code language="fsharp" source="./snippets/System/Double/Epsilon/fsharp/Equals_25051.fs" id="Snippet2":::
 :::code language="vb" source="./snippets/System/Double/Epsilon/vb/Equals_25051.vb" id="Snippet2":::
 
@@ -38,7 +38,7 @@ Rather than comparing for equality, one technique involves defining an acceptabl
 
 A second technique involves comparing the difference between two floating-point numbers with some absolute value. If the difference is less than or equal to that absolute value, the numbers are equal. If it's greater, the numbers are not equal. One alternative is to arbitrarily select an absolute value. That's problematic, however, because an acceptable margin of difference depends on the magnitude of the <xref:System.Double> values. A second alternative takes advantage of a design feature of the floating-point format: The difference between the integer representation of two floating-point values indicates the number of possible floating-point values that separates them. For example, the difference between 0.0 and <xref:System.Double.Epsilon> is 1, because <xref:System.Double.Epsilon> is the smallest representable value when working with a <xref:System.Double> whose value is zero. The following example uses this technique to compare .33333 and 1/3, which are the two <xref:System.Double> values that the previous code example with the <xref:System.Double.Equals(System.Double)> method found to be unequal. The example uses the <xref:System.BitConverter.DoubleToInt64Bits%2A?displayProperty=nameWithType> method to convert a double-precision floating-point value to its integer representation. The example declares the values as equal if there are no possible floating-point values between their integer representations.
 
-:::code language="csharp" source="./snippets/System/Double/Equals/csharp/equalsabs1.cs" interactive="try-dotnet" id="Snippet1":::
+:::code language="csharp" source="./snippets/System/Double/Equals/csharp/equalsabs1.cs" id="Snippet1":::
 :::code language="fsharp" source="./snippets/System/Double/Equals/fsharp/equalsabs1.fs" id="Snippet1":::
 :::code language="vb" source="./snippets/System/Double/Equals/vb/equalsabs1.vb" id="Snippet1":::
 

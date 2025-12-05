@@ -38,15 +38,15 @@ Here are some other kinds of expressions that C# provides:
 
 - [Interpolated string expressions](../tokens/interpolated.md) that provide convenient syntax to create formatted strings:
 
-  [!code-csharp-interactive[interpolated string](snippets/shared/Overview.cs#InterpolatedString)]
+  [!code-csharp[interpolated string](snippets/shared/Overview.cs#InterpolatedString)]
 
 - [Lambda expressions](lambda-expressions.md) that allow you to create anonymous functions:
 
-  [!code-csharp-interactive[lambda expression](snippets/shared/Overview.cs#Lambda)]
+  [!code-csharp[lambda expression](snippets/shared/Overview.cs#Lambda)]
 
 - [Query expressions](../keywords/query-keywords.md) that allow you to use query capabilities directly in C#:
 
-  [!code-csharp-interactive[query expression](snippets/shared/Overview.cs#Query)]
+  [!code-csharp[query expression](snippets/shared/Overview.cs#Query)]
 
 You can use an [expression body definition](../../programming-guide/statements-expressions-operators/expression-bodied-members.md) to provide a concise definition for a method, constructor, property, indexer, or finalizer.
 

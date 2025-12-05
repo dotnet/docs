@@ -199,7 +199,7 @@ Starting in .NET 8, `dotnet restore` includes NuGet security auditing. This audi
 
 To opt out of the security auditing, set the `<NuGetAudit>` MSBuild property to `false` in your project file.
 
-Starting in .NET 9, [`auditSources`](/nuget/reference/nuget-config-file#auditsources) can be used in addition to [`packageSources`](/nuget/reference/nuget-config-file#packagesources) to get vulnerability data. If no audit sources are provided, `dotnet restore` uses package sources instead. NuGet audits any source as long as the source provides the [`VulnerabilityInfo` resource](/nuget/api/vulnerability-info).
+To get vulnerability data, starting in .NET 9, you can use [`auditSources`](/nuget/reference/nuget-config-file#auditsources) in addition to [`packageSources`](/nuget/reference/nuget-config-file#packagesources). If no audit sources are provided, `dotnet restore` uses package sources instead. NuGet audits any source as long as the source provides the [`VulnerabilityInfo` resource](/nuget/api/vulnerability-info).
 
 To list NuGet.org as an audit source, define the following in the *nuget.config* file:
 

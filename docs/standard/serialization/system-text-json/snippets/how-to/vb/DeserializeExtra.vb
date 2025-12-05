@@ -61,7 +61,7 @@ Namespace DeserializeExtra
 
             If weatherForecast?.TemperatureRanges IsNot Nothing Then
                 For Each temperatureRange As KeyValuePair(Of String, HighLowTemps) In weatherForecast.TemperatureRanges
-                    Console.WriteLine($"TemperatureRange: {temperatureRange.Key}, {temperatureRange.Value.Low} - {temperatureRange.Value.High}")
+                    Console.WriteLine($"TemperatureRange: {temperatureRange.Key} is {temperatureRange.Value.Low} to {temperatureRange.Value.High}")
                 Next
             End If
 
@@ -75,14 +75,16 @@ Namespace DeserializeExtra
     End Class
 
 End Namespace
-' output:
+
+' Output:
+'
 'Date: 8/1/2019 12:00:00 AM -07:00
 'TemperatureCelsius: 25
 'Summary: Hot
 'DateAvailable: 8/1/2019 12:00:00 AM -07:00
 'DateAvailable: 8/2/2019 12:00:00 AM -07:00
-'TemperatureRange: Cold, -10 - 20
-'TemperatureRange: Hot, 20 - 60
+'TemperatureRange: Cold is -10 to 20
+'TemperatureRange: Hot is 20 to 60
 'SummaryWord: Cool
 'SummaryWord: Windy
 'SummaryWord: Humid

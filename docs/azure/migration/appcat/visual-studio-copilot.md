@@ -17,7 +17,7 @@ Azure Migrate application and code assessment for .NET integrates with the GitHu
 
 ## Prerequisites
 
-- Install [Visual Studio 2022](https://visualstudio.microsoft.com/vs/) version 17.10 or later
+- Install [Visual Studio](https://visualstudio.microsoft.com/vs/)
 - [Install GitHub Copilot for Visual Studio extension](visual-studio.md)
 - [Install a version of .NET](https://dotnet.microsoft.com/download) that supports the app you're trying to migrate
 - [Scan your application in Visual Studio](visual-studio.md) to use Copilot conversational analysis. Copilot relies on a completed scan report to provide suggestions.

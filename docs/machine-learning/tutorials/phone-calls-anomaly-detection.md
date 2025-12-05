@@ -21,15 +21,15 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 ## Prerequisites
 
-* [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/) with the ".NET Desktop Development" workload installed.
+* [Visual Studio 2022 or later](https://visualstudio.microsoft.com/downloads/) with the **.NET Desktop Development** workload installed.
 
 * [The phone-calls.csv dataset](https://github.com/dotnet/machinelearning-samples/blob/main/samples/csharp/getting-started/AnomalyDetection_PhoneCalls/SrEntireDetection/Data/phone-calls.csv).
 
 ## Create a console application
 
-1. Create a C# **Console Application** called "PhoneCallsAnomalyDetection". Click the **Next** button.
+1. Create a C# **Console Application** called "PhoneCallsAnomalyDetection". Select **Next**.
 
-2. Choose .NET 8 as the framework to use. Click the **Create** button.
+2. Choose .NET 8 as the target framework. Select **Create**.
 
 3. Create a directory named *Data* in your project to save your data set files.
 

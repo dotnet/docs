@@ -18,7 +18,7 @@ The Native AOT deployment model uses an ahead-of-time compiler to compile IL to 
 
 # [Windows](#tab/windows)
 
-[Visual Studio 2022](https://visualstudio.microsoft.com/vs/), including the **Desktop development with C++** workload with all default components.
+[Visual Studio](https://visualstudio.microsoft.com/vs/), including the **Desktop development with C++** workload with all default components.
 
 # [Alpine](#tab/linux-alpine)
 

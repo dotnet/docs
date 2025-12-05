@@ -28,7 +28,7 @@ To complete this tutorial:
 - Your favorite code editor.
 
 > [!TIP]
-> Need to install a code editor? Try [Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)!
+> Need to install a code editor? Try [Visual Studio](https://aka.ms/vsdownload?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link)!
 
 The following instructions show you how to use XML Serializer Generator in a .NET Core console application.
 

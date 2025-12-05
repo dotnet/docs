@@ -188,7 +188,7 @@ Many developers understand the risks of static cling and global state, but will 
 ASP.NET Core is built around having methods and classes declare their dependencies, requesting them as arguments. ASP.NET applications are typically set up in _Program.cs_ or in a `Startup` class.
 
 > [!NOTE]
-> Configuring apps completely in _Program.cs_ is the default approach for .NET 6 (and later) and Visual Studio 2022 apps. Project templates have been updated to help you get started with this new approach. ASP.NET Core projects can still use a `Startup` class, if desired.
+> Configuring apps completely in _Program.cs_ is the default approach for .NET 6 (and later) and Visual Studio 2022 (and later) apps. Project templates have been updated to help you get started with this new approach. ASP.NET Core projects can still use a `Startup` class, if desired.
 
 #### Configure services in _Program.cs_
 

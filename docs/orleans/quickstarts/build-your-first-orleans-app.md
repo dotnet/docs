@@ -21,8 +21,8 @@ At the end of the quickstart, you have an app that creates and handles redirects
 
 # [Visual Studio](#tab/visual-studio)
 
-- [.NET 8.0 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
-- [Visual Studio 2022](https://visualstudio.microsoft.com/) with the ASP.NET and web development workload
+- [.NET 8.0 SDK or later](https://dotnet.microsoft.com/download/dotnet)
+- [Visual Studio 2022 or later](https://visualstudio.microsoft.com/) with the **ASP.NET and web development** workload
 
 # [Visual Studio Code](#tab/visual-studio-code)
 
@@ -34,7 +34,7 @@ At the end of the quickstart, you have an app that creates and handles redirects
 
 # [Visual Studio](#tab/visual-studio)
 
-1. Start Visual Studio 2022 and select **Create a new project**.
+1. Start Visual Studio and select **Create a new project**.
 
 1. On the **Create a new project** dialog, select **ASP.NET Core Web API**, and then select **Next**.
 

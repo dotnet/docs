@@ -18,7 +18,7 @@ dotnet tool exec <PACKAGE_NAME>[@<VERSION>]
     [--allow-roll-forward] [-a|--arch <ARCHITECTURE>]
     [--add-source <SOURCE>] [--configfile <FILE>] [--disable-parallel]
     [--framework <FRAMEWORK>] [--ignore-failed-sources] [--interactive]
-    [--no-http-cache] [--prerelease]
+    [--no-http-cache] [--prerelease] [--source <SOURCE>]
     [-v|--verbosity <LEVEL>]
     [--] [<tool-arguments>...]
 
@@ -80,6 +80,8 @@ This command also exists in two other forms for easier use
 - **`--prerelease`**
 
   Allows prerelease packages to be selected when resolving the version to install.
+
+- [!INCLUDE [source](../../../includes/cli-tool-source.md)]
 
 - [!INCLUDE [verbosity](../../../includes/cli-verbosity-normal.md)]
 

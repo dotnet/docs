@@ -18,7 +18,7 @@ dotnet tool install <PACKAGE_NAME> -g|--global
     [--allow-downgrade] [--allow-roll-forward] [-a|--arch <ARCHITECTURE>]
     [--add-source <SOURCE>] [--configfile <FILE>] [--disable-parallel]
     [--framework <FRAMEWORK>] [--ignore-failed-sources] [--interactive]
-    [--no-cache] [--prerelease]
+    [--no-cache] [--prerelease] [--source <SOURCE>]
     [--tool-manifest <PATH>] [-v|--verbosity <LEVEL>]
     [--version <VERSION_NUMBER>]
 
@@ -26,7 +26,7 @@ dotnet tool install <PACKAGE_NAME> --tool-path <PATH>
     [--allow-downgrade] [--allow-roll-forward] [-a|--arch <ARCHITECTURE>]
     [--add-source <SOURCE>] [--configfile <FILE>] [--disable-parallel]
     [--framework <FRAMEWORK>] [--ignore-failed-sources] [--interactive]
-    [--no-cache] [--prerelease]
+    [--no-cache] [--prerelease] [--source <SOURCE>]
     [--tool-manifest <PATH>] [-v|--verbosity <LEVEL>]
     [--version <VERSION_NUMBER>]
 
@@ -35,7 +35,7 @@ dotnet tool install <PACKAGE_NAME> [--local]
     [--add-source <SOURCE>] [--configfile <FILE>]
     [--create-manifest-if-needed] [--disable-parallel]
     [--framework <FRAMEWORK>] [--ignore-failed-sources] [--interactive]
-    [--no-cache] [--prerelease]
+    [--no-cache] [--prerelease] [--source <SOURCE>]
     [--tool-manifest <PATH>] [-v|--verbosity <LEVEL>]
     [--version <VERSION_NUMBER>]
 
@@ -141,9 +141,7 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 
   Specifies that the installation is user wide. Can't be combined with the `--tool-path` option. Omitting both `--global` and `--tool-path` specifies a local tool installation.
 
-- **`--source <SOURCE>`**
-
-  Specifies the source for NuGet packages. This source replaces all NuGet package sources.
+- [!INCLUDE [source](../../../includes/cli-tool-source.md)]
 
 - [!INCLUDE [help](../../../includes/cli-help.md)]
 

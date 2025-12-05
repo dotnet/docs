@@ -295,6 +295,93 @@ After running this command, an HTML file represents the generated report.
 
 :::image type="content" source="media/test-report.png" lightbox="media/test-report.png" alt-text="Unit test-generated report":::
 
+## Using code coverage with TUnit
+
+TUnit is built on Microsoft.Testing.Platform and uses Microsoft.Testing.Extensions.CodeCoverage for code coverage.
+
+### Creating a TUnit test project with code coverage
+
+To create a TUnit test project with code coverage support:
+
+```dotnetcli
+dotnet new install TUnit.Templates
+dotnet new tunit -n TUnit.CodeCoverage.Test
+```
+
+Add the project reference to your class library:
+
+```dotnetcli
+dotnet add TUnit.CodeCoverage.Test\TUnit.CodeCoverage.Test.csproj reference Numbers\Numbers.csproj
+```
+
+Add the Microsoft.Testing.Extensions.CodeCoverage package:
+
+```dotnetcli
+dotnet add TUnit.CodeCoverage.Test package Microsoft.Testing.Extensions.CodeCoverage
+```
+
+### TUnit test example
+
+```csharp
+using TUnit.Assertions;
+using TUnit.Assertions.Extensions;
+using TUnit.Core;
+using System.Numbers;
+
+public class PrimeServiceTests
+{
+    [Test]
+    public async Task IsPrime_InputIs1_ReturnFalse()
+    {
+        var primeService = new PrimeService();
+
+        bool result = primeService.IsPrime(1);
+
+        await Assert.That(result).IsFalse();
+    }
+
+    [Test]
+    [Arguments(2)]
+    [Arguments(3)]
+    [Arguments(5)]
+    [Arguments(7)]
+    public async Task IsPrime_PrimesLessThan10_ReturnTrue(int value)
+    {
+        var primeService = new PrimeService();
+
+        bool result = primeService.IsPrime(value);
+
+        await Assert.That(result).IsTrue();
+    }
+}
+```
+
+### Running code coverage with TUnit
+
+Since TUnit requires Microsoft.Testing.Platform mode, ensure your `global.json` includes:
+
+```json
+{
+    "test": {
+        "runner": "Microsoft.Testing.Platform"
+    }
+}
+```
+
+Run tests with code coverage:
+
+```dotnetcli
+dotnet test --coverage
+```
+
+This generates a `.coverage` file in the `TestResults` directory. To generate reports in other formats:
+
+```dotnetcli
+dotnet test --coverage --coverage-output-format cobertura
+```
+
+For more information about TUnit, see [Unit testing C# with TUnit](unit-testing-csharp-with-tunit.md).
+
 ## See also
 
 - [Visual Studio unit test code coverage](/visualstudio/test/using-code-coverage-to-determine-how-much-code-is-being-tested)

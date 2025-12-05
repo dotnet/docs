@@ -83,7 +83,7 @@ This command also exists in two other forms for easier use
 
 - **`--source <SOURCE>`**
 
-  Replaces all NuGet package sources to use during installation with the provided source.
+  Specifies the source for NuGet packages. This source replaces all NuGet package sources.
 
 - [!INCLUDE [verbosity](../../../includes/cli-verbosity-normal.md)]
 

@@ -46,12 +46,6 @@ dotnet add package OpenTelemetry.Instrumentation.AspNetCore
 dotnet add package OpenTelemetry.Instrumentation.Http
 ```
 
-> [!NOTE]
-> The `OpenTelemetry.Exporter.Prometheus.AspNetCore` package is currently in pre-release. You must include the `--prerelease` flag when adding it via the command line, or check "Include prerelease" in the NuGet Package Manager in Visual Studio or your IDE.
-
-> [!WARNING]
-> The Prometheus exporter is still under development due to a dependency on the experimental [Prometheus and OpenMetrics Compatibility](https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/compatibility/prometheus_and_openmetrics.md) specification. This package can undergo breaking changes before stable release. For production environments, consider using [OpenTelemetry.Exporter.OpenTelemetryProtocol](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/src/OpenTelemetry.Exporter.OpenTelemetryProtocol/README.md) instead. For more information, see [Getting Started with Prometheus and Grafana](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/docs/metrics/getting-started-prometheus-grafana/README.md).
-
 ## 5. Configure OpenTelemetry with the correct providers
 
 :::code language="csharp" source="snippets/OTel-Prometheus-Grafana-Jaeger/csharp/Program.cs" id="Snippet_OTEL":::

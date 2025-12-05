@@ -1,7 +1,7 @@
 ---
 title: "How to concatenate multiple strings"
 description: There are multiple ways to concatenate strings in C#. Learn the options and the reasons behind different choices.
-ms.date: 02/18/2025
+ms.date: 12/05/2025
 helpviewer_keywords: 
   - "joining strings [C#]"
   - "concatenating strings [C#]"
@@ -72,15 +72,21 @@ This option can cause more allocations than other methods for concatenating coll
 
 ## Use AI to concatenate strings
 
-You can use AI tools, such as GitHub Copilot, to generate C# code to concatenate multiple strings. You can customize the prompt to specify strings and the method to use per your requirements.
+You can use AI tools, such as GitHub Copilot, to generate C# code to concatenate strings. You can customize the prompt to specify the output format, variables, and the method to use per your requirements.
 
-The following text shows an example prompt for Copilot Chat:
+Here's an example Copilot Chat prompt:
 
 ```copilot-prompt
-Generate C# code to use String.Format to build an output string "Hi x, today's date is y. You are z years old." where x is "John",  y is today's date and z is the birthdate January 1, 2000. The final string should show date in the full format mm/dd/yyyy. Show output.
+Generate C# code to use String.Format to build an output string:
+"Hello [name], today's date is [current date]. You have [count] new notifications."
+Use variables for: name is "John", date is today's date, and notification count is 3.
+Format the date as mm/dd/yyyy.
+Show the output.
 ```
 
-GitHub Copilot is powered by AI, so surprises and mistakes are possible. For more information, see [Copilot FAQs](https://aka.ms/copilot-general-use-faqs).
+Review Copilot's suggestions before applying them.
+
+For more information, see [Copilot FAQs](https://aka.ms/copilot-general-use-faqs).
 
 ## See also
 

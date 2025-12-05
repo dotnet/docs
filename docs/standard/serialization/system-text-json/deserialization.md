@@ -12,7 +12,6 @@ helpviewer_keywords:
   - "deserialization"
 ms.topic: concept-article
 ms.custom: copilot-scenario-highlight
-#customer intent: As a developer, I want to learn how to use System.Text.Json to deserialize JSON data.
 ---
 
 # How to read JSON as .NET objects (deserialize)
@@ -105,5 +104,6 @@ For more information about GitHub Copilot, see GitHub's [FAQs](https://github.co
 
 ## See also
 
+- [How to deserialize to an interface](https://gist.github.com/tonysneed/5e7988516b081d454cde95b5d729e1af)
 - [GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states)
 - [GitHub Copilot in Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview)

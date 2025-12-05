@@ -199,15 +199,18 @@ Starting in .NET 8, `dotnet restore` includes NuGet security auditing. This audi
 
 To opt out of the security auditing, set the `<NuGetAudit>` MSBuild property to `false` in your project file.
 
-To retrieve the known vulnerability dataset from the NuGet.org central registry, define the following in the *nuget.config* file:
+Starting in .NET 9, [`auditSources`](/nuget/reference/nuget-config-file#auditsources) can be used in addition to [`packageSources`](/nuget/reference/nuget-config-file#packagesources) to get vulnerability data. If no audit sources are provided, `dotnet restore` uses package sources instead. NuGet audits any source as long as the source provides the [`VulnerabilityInfo` resource](/nuget/api/vulnerability-info).
+
+To list NuGet.org as an audit source, define the following in the *nuget.config* file:
 
 ```xml
-<packageSources>
-    <add key="nuget.org" value="https://api.nuget.org/v3/index.json" protocolVersion="3" />
-</packageSources>
+<configuration>
+    <auditSources>
+        <clear />
+        <add key="nuget.org" value="https://api.nuget.org/v3/index.json" />
+    </auditSources>
+</configuration>
 ```
-
-NuGet.org is the only package source that provides a vulnerability dataset for NuGet auditing. However, NuGet audits any source as long as the source provides the [`VulnerabilityInfo` resource](/nuget/api/vulnerability-info).
 
 You can configure the level at which auditing will fail by setting the `<NuGetAuditLevel>` MSBuild property. Possible values are `low`, `moderate`, `high`, and `critical`. For example if you only want to see moderate, high, and critical advisories, you can set the property to `moderate`.
 

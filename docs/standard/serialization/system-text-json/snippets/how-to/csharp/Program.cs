@@ -13,7 +13,7 @@ public class Program
         //SerializeBasic.Program.Main();
         //SerializeWithGenericParameter.Program.Main();
         //SerializeWriteIndented.Program.Main();
-        SerializeExtra.Program.Main();
+        //SerializeExtra.Program.Main();
         //DeserializeExtra.Program.Main();
 
         //Console.WriteLine("\n============================= Roundtrip to UTF-8 byte array\n");

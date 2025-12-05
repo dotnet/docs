@@ -40,4 +40,4 @@ Ensure that global test fixture methods follow the required layout.
 
 ## When to suppress warnings
 
-Don't suppress warnings from this rule. Invalid global test fixture methods will not execute at run-time.
+Don't suppress warnings from this rule. Invalid global test fixture methods will not execute at runtime.

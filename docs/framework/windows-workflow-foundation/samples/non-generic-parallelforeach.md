@@ -45,7 +45,7 @@ Body (optional)\
 The <xref:System.Activities.ActivityAction> of type <xref:System.Object>, which is executed for each element in the collection. Each individual element is passed into the Body through its Argument property.
 
 Values (optional)\
-The collection of elements that are iterated over. Ensuring that all elements of the collection are of compatible types is done at run-time.
+The collection of elements that are iterated over. Ensuring that all elements of the collection are of compatible types is done at runtime.
 
 CompletionCondition (optional)\
 The <xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A> property is evaluated after any iteration completes. If it evaluates to `true`, then the scheduled pending iterations are canceled. If this property is not set, all activities in the Branches collection execute until completion.
